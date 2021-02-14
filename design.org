@@ -15,6 +15,10 @@
 - response length
 
 * Playground Settings
+** Stop Sequences
+Text to append after the user's input to
+format the model for a response.
+
 ** Inject Start Text
 Text to append after the user's input to
 format the model for a response.
