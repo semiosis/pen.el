@@ -16,6 +16,8 @@
 
 * Playground Settings
 ** Inject Start Text
+Text to append after the user's input to
+format the model for a response.
 
 ** Inject Restart Text
 Text to append after the model's generation to continue the patterned structure.
