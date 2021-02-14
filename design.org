@@ -20,3 +20,9 @@ Toggle token highlighting which indicates how
 likely a token was to be generated. Helps to
 debug a given generation, or see alternative
 options for a token.
+
++ States
+  - Off
+  - Most likely
+  - Least likely
+  - Full spectrum
