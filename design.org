@@ -16,8 +16,10 @@
 
 * Playground Settings
 ** Stop Sequences
-Text to append after the user's input to
-format the model for a response.
+Up to four sequences where the API will
+step generating further tokens. The
+returned text will not contain the step
+sequence.
 
 ** Inject Start Text
 Text to append after the user's input to
