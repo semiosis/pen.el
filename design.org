@@ -15,7 +15,20 @@
 - response length
 
 * Playground Settings
-** Best of (Value from 1-20)
+** Frequency Penalty
+How much to penalize new tokens
+based on their existing frequency in the
+text so far. Decreases the model's
+likelihood to repeat the same line
+1urertiatirh.
+
+** Presence Penalty
+How muoh to penalize new tokens
+based on whether they.r appear in the
+text so far. Increases the model's
+likelihood to talk about new topics.
+
+** Best of (Value from 1-20, Default: 1)
 Generates multiple completions server-side,
 and displays only the best. Streaming only
 works when set to 1.
