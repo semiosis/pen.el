@@ -15,6 +15,9 @@
 - response length
 
 * Playground Settings
+** Inject Restart Text
+Text to append after the model's generation to continue the patterned structure.
+
 ** Show Probabilities
 Toggle token highlighting which indicates how
 likely a token was to be generated. Helps to
