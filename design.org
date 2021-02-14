@@ -15,6 +15,15 @@
 - response length
 
 * Playground Settings
+** Best of
+Generates multiple completions server-
+side, and displays onlyr the best.
+Streaming onlllr works when set to 1.
+Since it acts as a multiplier on the
+number of completions; this parameters
+can eat into 1your token quota infer!"r
+quickly - use caution!
+
 ** Stop Sequences
 Up to four sequences where the API will
 step generating further tokens. The
