@@ -15,6 +15,8 @@
 - response length
 
 * Playground Settings
+** Engine
+
 ** Frequency Penalty
 How much to penalize new tokens
 based on their existing frequency in the
