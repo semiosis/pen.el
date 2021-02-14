@@ -1,0 +1,15 @@
+* TODO [#A] Make an emacs package which is an openai api playground
+** Plan out what I need to make it, focus on making it and make it
+*** What do I *need*
+**** Control panel -- use transient for this, or some kind of buffer-local settings/configuration?
++ Acquired [1/2]
+  - [-] Spin button for toggling a value
+
+*** What do I _have_
+  - [X] Right click menu
+
+** I need to be able to query the API with emacs lisp to enumerate/exhaust lists of things
+
+** I need control panels
+- engine
+- response length
