@@ -14,6 +14,14 @@
 - engine
 - response length
 
+* Comint? No.
+* Don't use comint for the playground
+Simply make some elisp functions for completing text.
+Select the text then use a binding to complete it.
+This is the basic function.
+It will send a request for more text.
+The region selected should not deselect.
+
 * Playground Settings
 ** Engine
 
