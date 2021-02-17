@@ -25,6 +25,8 @@ The region selected should not deselect.
 * Objectives
 ** Design useful prompts
 ** Fast design/feedback loop (using emacs)
+** Create =String->String= functions based on prompts
+** 
 
 * Playground Settings
 ** Engine
