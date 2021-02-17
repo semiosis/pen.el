@@ -1,5 +1,5 @@
 * Setup
-** Set the =openai= API key
+** Set the =openai= API key using emacs' =custom=
 #+BEGIN_SRC text -n :async :results verbatim code
   M-x customize-group
 #+END_SRC
