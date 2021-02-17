@@ -27,5 +27,7 @@ creation, development, discovery and usage of prompts in your emacs.
   (openai-prompt-mode 1)
 #+END_SRC
 
+** Default Key Bindings
+
 ** Appendix
 [[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
