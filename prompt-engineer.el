@@ -27,6 +27,7 @@
         ;; Send request and replace the text
         )))
 
+
 ;; (define-key prompt-engineer-mode-map (kbd "<up>") 'pem-generate)
 ;; (define-key prompt-engineer-mode-map (kbd "<down>") (lm (tsk "C-n")))
 ;; (define-key prompt-engineer-mode-map (kbd "<right>") (lm (tsk "M-3")))

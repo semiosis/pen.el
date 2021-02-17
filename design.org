@@ -22,6 +22,9 @@ This is the basic function.
 It will send a request for more text.
 The region selected should not deselect.
 
+* Objectives
+** Compose useful prompts
+
 * Playground Settings
 ** Engine
 
