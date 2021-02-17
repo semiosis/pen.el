@@ -1,5 +1,3 @@
-* TODO Wish Melee a good sleep
-
 * =openai= CLI
 ** =api=
 *** These are the commands
