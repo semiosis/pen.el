@@ -148,3 +148,35 @@ implicit bias
     based on context (e.g. opposition to
     programs that help certain groups,
     probabilities about roles).
+
+openai-ft
+    [cli command]
+
+    Run a fine-tuning job using OpenAI
+    finetuning API.
+
+    py -36 i openai-finetune
+
+openai-ft-classification
+    [cli command]
+
+    Run a classification fine-tuning job using
+    OpenAI finetuning API
+
+    py -36 i openai-finetune
+
+openai-ft-events
+    [cli command]
+
+    List the events for a batch-mode
+    fine-tuning run.
+
+    py -36 i openai-finetune
+
+openai-ft-report
+    [cli command]
+
+    List the events for a batch-mode
+    fine-tuning run.
+
+    py -36 i openai-finetune
