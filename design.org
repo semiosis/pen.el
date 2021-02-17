@@ -26,7 +26,7 @@ The region selected should not deselect.
 ** Design useful prompts
 ** Fast design/feedback loop (using emacs)
 ** Create =String->String= functions based on prompts
-** 
+*** Attempt to make a 'name-generator'
 
 * Playground Settings
 ** Engine
