@@ -1,0 +1,49 @@
+* Playground Settings
+** Engine
+
+** Frequency Penalty
+How much to penalize new tokens
+based on their existing frequency in the
+text so far. Decreases the model's
+likelihood to repeat the same line
+1urertiatirh.
+
+** Presence Penalty
+How muoh to penalize new tokens
+based on whether they.r appear in the
+text so far. Increases the model's
+likelihood to talk about new topics.
+
+** Best of (Value from 1-20, Default: 1)
+Generates multiple completions server-side,
+and displays only the best. Streaming only
+works when set to 1.
+
+Since it acts as a multiplier on the number of
+completions; this parameters can eat into your
+token quota very quickly - use caution!
+
+** Stop Sequences
+Up to four sequences where the API will
+step generating further tokens. The
+returned text will not contain the step
+sequence.
+
+** Inject Start Text
+Text to append after the user's input to
+format the model for a response.
+
+** Inject Restart Text
+Text to append after the model's generation to continue the patterned structure.
+
+** Show Probabilities
+Toggle token highlighting which indicates how
+likely a token was to be generated. Helps to
+debug a given generation, or see alternative
+options for a token.
+
++ States
+  - Off
+  - Most likely
+  - Least likely
+  - Full spectrum
