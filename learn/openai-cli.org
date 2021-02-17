@@ -2,3 +2,7 @@
 #+BEGIN_SRC sh -n :sps bash :async :results none
   egr openai api engines.generate
 #+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  openai api engines.generate -h |pavs
+#+END_SRC
