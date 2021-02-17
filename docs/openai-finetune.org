@@ -1,0 +1,194 @@
+* =openai-finetune=
+** =openai-ft=
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  openai-ft --help 1>&2
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+usage: openai-ft [-h] [-b API_BASE] [-k API_KEY] [-o ORGANIZATION] [-v] [-t TRAIN] [--val VAL] [--log-path LOG_PATH] [--num-epochs NUM_EPOCHS] [--batch-size BATCH_SIZE] [--val-batch-size VAL_BATCH_SIZE] [-s SCALE] [--max-tokens MAX_TOKENS]
+                 [--encoding ENCODING] [--completions-every COMPLETIONS_EVERY] [--num-completions NUM_COMPLETIONS] [--completion-tokens COMPLETION_TOKENS] [--completion-temperature COMPLETION_TEMPERATURE] [--completion-prompt COMPLETION_PROMPT]
+                 [--snapshots-every SNAPSHOTS_EVERY] [--output OUTPUT] [-d DESCRIPTION] [--plan PLAN] [-m MODEL] [-e ENGINE] [--no-stream] [--no-pack-context] [--pack-overlap PACK_OVERLAP] [--terminator TERMINATOR]
+                 [--terminator-weight TERMINATOR_WEIGHT] [--classification] [--plan-output-file PLAN_OUTPUT_FILE]
+
+Run a fine-tuning job using OpenAI finetuning API
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -b API_BASE, --api-base API_BASE
+                        What API base url to use.
+  -k API_KEY, --api-key API_KEY
+                        What API key to use.
+  -o ORGANIZATION, --organization ORGANIZATION
+                        Which organization to run as (will use your default organization if not specified)
+  -v, --verbose         Set verbosity.
+  -t TRAIN, --train TRAIN
+                        Comma-separated list of files to train on
+  --val VAL             Comma-separated list of files to evaluate on
+  --log-path LOG_PATH   Directory to write logs to
+  --num-epochs NUM_EPOCHS
+                        The number of epochs to run over training set.
+  --batch-size BATCH_SIZE
+                        How many examples to have in each step.
+  --val-batch-size VAL_BATCH_SIZE
+                        How many examples to have in each val step.
+  -s SCALE, --scale SCALE
+                        How much to scale the update size by
+  --max-tokens MAX_TOKENS
+                        Set the max number of tokens in each training example
+  --encoding ENCODING   Set the encoding used in this plan
+  --completions-every COMPLETIONS_EVERY
+                        Generate completions every COMPLETIONS_EVERY fine-tuning steps. Use -1 to not generate completions throughout training. Default: 100
+  --num-completions NUM_COMPLETIONS
+                        Generatate this many completions each time completions are generated. Default: 5
+  --completion-tokens COMPLETION_TOKENS
+                        Generatate this many tokens per completion. Default: 128
+  --completion-temperature COMPLETION_TEMPERATURE
+                        Generatate this many tokens per completion. Default: 0.4
+  --completion-prompt COMPLETION_PROMPT
+                        Prompt for completions
+  --snapshots-every SNAPSHOTS_EVERY
+                        Save snapshots every SNAPSHOTS_EVERY fine-tuning steps. Default: 100
+  --output OUTPUT       Save fine-tuning file to a local path
+  -d DESCRIPTION, --description DESCRIPTION
+                        A description for the Plan
+  --plan PLAN, -p PLAN  Plan id (start a job using this plan instead of creating a new plan)
+  -m MODEL, --model MODEL
+                        What model to run with
+  -e ENGINE, --engine ENGINE
+                        What engine to run with (will run synchronously)
+  --no-stream           Whether to stream back results
+  --no-pack-context     Disable packing multple samples into the context (enabled by default). Packing into context allows batch size to be roughly constant (which helps optimization, and makes use of hardware more efficiently). Disable only when you
+                        have a strong reason to.
+  --pack-overlap PACK_OVERLAP
+                        When packing context, this parameter determines what to do with the samples that did not fit into the context. When 0 or above, the next sample in the minibatch will start `overlap` prior to where previous sample ended. When
+                        negative, the cut-off part of the sample will be discarded (default). Positive values are useful when dealing with strings longer than max context size - these strings will be sliced with overlap.
+  --terminator TERMINATOR
+                        Add this to the end of the sample. Needed when generating completions of varying length. Do not use for classification etc when completion has a fixed length, or when terminator tokens are explicitly present in the data. Set to
+                        '' to disable. Default: <|endoftext|>
+  --terminator-weight TERMINATOR_WEIGHT
+                        Loss weight of the terminator (see explanation for --terminator). Default: 1.0
+  --classification, -c  Fine-tune for classification - changes some defaults and data processing settings
+  --plan-output-file PLAN_OUTPUT_FILE
+#+end_src
+
+** =openai-ft-classification=
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  openai-ft-classification --help 1>&2
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+usage: openai-ft-classification [-h] [-b API_BASE] [-k API_KEY] [-o ORGANIZATION] [-v] [-t TRAIN] [--val VAL] [--log-path LOG_PATH] [--num-epochs NUM_EPOCHS] [--batch-size BATCH_SIZE] [--val-batch-size VAL_BATCH_SIZE] [-s SCALE]
+                                [--max-tokens MAX_TOKENS] [--encoding ENCODING] [--completions-every COMPLETIONS_EVERY] [--num-completions NUM_COMPLETIONS] [--completion-tokens COMPLETION_TOKENS] [--completion-temperature COMPLETION_TEMPERATURE]
+                                [--completion-prompt COMPLETION_PROMPT] [--snapshots-every SNAPSHOTS_EVERY] [--output OUTPUT] [-d DESCRIPTION] [--plan PLAN] [-m MODEL] [-e ENGINE] [--no-stream] [--no-pack-context] [--pack-overlap PACK_OVERLAP]
+                                [--terminator TERMINATOR] [--terminator-weight TERMINATOR_WEIGHT] [--classification] [--plan-output-file PLAN_OUTPUT_FILE]
+
+Run a classification fine-tuning job using OpenAI finetuning API
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -b API_BASE, --api-base API_BASE
+                        What API base url to use.
+  -k API_KEY, --api-key API_KEY
+                        What API key to use.
+  -o ORGANIZATION, --organization ORGANIZATION
+                        Which organization to run as (will use your default organization if not specified)
+  -v, --verbose         Set verbosity.
+  -t TRAIN, --train TRAIN
+                        Comma-separated list of files to train on
+  --val VAL             Comma-separated list of files to evaluate on
+  --log-path LOG_PATH   Directory to write logs to
+  --num-epochs NUM_EPOCHS
+                        The number of epochs to run over training set.
+  --batch-size BATCH_SIZE
+                        How many examples to have in each step.
+  --val-batch-size VAL_BATCH_SIZE
+                        How many examples to have in each val step.
+  -s SCALE, --scale SCALE
+                        How much to scale the update size by
+  --max-tokens MAX_TOKENS
+                        Set the max number of tokens in each training example
+  --encoding ENCODING   Set the encoding used in this plan
+  --completions-every COMPLETIONS_EVERY
+                        Generate completions every COMPLETIONS_EVERY fine-tuning steps. Use -1 to not generate completions throughout training. Default: 0
+  --num-completions NUM_COMPLETIONS
+                        Generatate this many completions each time completions are generated. Default: 5
+  --completion-tokens COMPLETION_TOKENS
+                        Generatate this many tokens per completion. Default: 128
+  --completion-temperature COMPLETION_TEMPERATURE
+                        Generatate this many tokens per completion. Default: 0.4
+  --completion-prompt COMPLETION_PROMPT
+                        Prompt for completions
+  --snapshots-every SNAPSHOTS_EVERY
+                        Save snapshots every SNAPSHOTS_EVERY fine-tuning steps. Default: 10
+  --output OUTPUT       Save fine-tuning file to a local path
+  -d DESCRIPTION, --description DESCRIPTION
+                        A description for the Plan
+  --plan PLAN, -p PLAN  Plan id (start a job using this plan instead of creating a new plan)
+  -m MODEL, --model MODEL
+                        What model to run with
+  -e ENGINE, --engine ENGINE
+                        What engine to run with (will run synchronously)
+  --no-stream           Whether to stream back results
+  --no-pack-context     Disable packing multple samples into the context (enabled by default). Packing into context allows batch size to be roughly constant (which helps optimization, and makes use of hardware more efficiently). Disable only when you
+                        have a strong reason to.
+  --pack-overlap PACK_OVERLAP
+                        When packing context, this parameter determines what to do with the samples that did not fit into the context. When 0 or above, the next sample in the minibatch will start `overlap` prior to where previous sample ended. When
+                        negative, the cut-off part of the sample will be discarded (default). Positive values are useful when dealing with strings longer than max context size - these strings will be sliced with overlap.
+  --terminator TERMINATOR
+                        Add this to the end of the sample. Needed when generating completions of varying length. Do not use for classification etc when completion has a fixed length, or when terminator tokens are explicitly present in the data. Set to
+                        '' to disable. Default:
+  --terminator-weight TERMINATOR_WEIGHT
+                        Loss weight of the terminator (see explanation for --terminator). Default: 1.0
+  --classification, -c  Fine-tune for classification - changes some defaults and data processing settings
+  --plan-output-file PLAN_OUTPUT_FILE
+#+end_src
+
+** =openai-ft-events=
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  openai-ft-events --help 1>&2
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+usage: openai-ft-events [-h] --run RUN [-b API_BASE] [-k API_KEY] [-o ORGANIZATION] [-v]
+
+List the events for a batch-mode fine-tuning run
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --run RUN, -r RUN     Run id
+  -b API_BASE, --api-base API_BASE
+                        What API base url to use.
+  -k API_KEY, --api-key API_KEY
+                        What API key to use.
+  -o ORGANIZATION, --organization ORGANIZATION
+                        Which organization to run as (will use your default organization if not specified)
+  -v, --verbose         Set verbosity.
+#+end_src
+
+** =openai-ft-report=
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  openai-ft-report --help 1>&2
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+usage: openai-ft-report [-h] --run RUN [--update-every UPDATE_EVERY] [-b API_BASE] [-k API_KEY] [-o ORGANIZATION] [-v]
+
+List the events for a batch-mode fine-tuning run
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --run RUN, -r RUN     Run id
+  --update-every UPDATE_EVERY, -u UPDATE_EVERY
+                        Update notebook every this many steps. Set to negative value to update only after processing the entire run. Default: -1
+  -b API_BASE, --api-base API_BASE
+                        What API base url to use.
+  -k API_KEY, --api-key API_KEY
+                        What API key to use.
+  -o ORGANIZATION, --organization ORGANIZATION
+                        Which organization to run as (will use your default organization if not specified)
+  -v, --verbose         Set verbosity.
+#+end_src
