@@ -1,4 +1,5 @@
 * =openai= CLI
+** =api=
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   openai api -h
 #+END_SRC
