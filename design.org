@@ -30,6 +30,7 @@ The region selected should not deselect.
 ** Compatibility with DeepAI
 https://deepai.org/machine-learning-model/text-generator
 ** Use in both Messenger and IRC
+** Pre-defined search functions for finding new prompts online
 
 * Playground Settings
 ** Engine
