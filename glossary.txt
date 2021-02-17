@@ -1,6 +1,8 @@
 prompt description
 prompt description file
 prompt description YAML
+    [prompt-engineer-mode] 
+
     A yaml containing the definition of an
     individual prompt.
 
@@ -62,3 +64,30 @@ prompt description YAML
       Max value: 1
 
 chaining
+    [prompt engineering]
+
+    API results into one another: The results
+    of one API call can be processed and fed
+    back into another API call with a
+    different prompt to expand the potential
+    capabilities of a workflow.
+    
+context-stuffing
+    [prompt engineering]
+
+    With only 2048 tokens, you need to make
+    use of your real estate by providing
+    instructions and making implicit
+    information explicit.
+
+benchmarking
+    [prompt engineering]
+
+    A single prompt getting a good response
+    once might be enough for your use case,
+    but generally we want to know how well
+    different solutions hold up on a variety
+    of use cases.
+    
+    Also important to understand where prompts
+    designs outperform others.
