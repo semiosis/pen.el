@@ -1,4 +1,4 @@
-* =prompt-engineer-mode=
+* =prompt-engineer-mode= (=PEn=)
 
 Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
 creation, development, discovery and usage of prompts in your usage of emacs.

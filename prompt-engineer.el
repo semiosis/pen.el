@@ -7,7 +7,7 @@
   "Mode for working with language models in your  buffers."
   :global t
   :init-value t
-  :lighter " ai"
+  :lighter " pen"
   :keymap prompt-engineer-mode-map)
 
 ;; (define-globalized-mode global-prompt-engineer-mode prompt-engineer-mode prompt-engineer-mode)
@@ -15,11 +15,11 @@
 ;; TODO Make a shell script for querying the OpenAI API
 ;; $SCRIPTS/openai-curl
 
-;; TODO pem-generate
+;; TODO pen-generate
 ;; This function streams text onto the end of the currently selected region accordig to the current prompt settings
 
 
-(defun pem-generate ()
+(defun pen-generate ()
   "This function streams text onto the end of the currently selected region accordig to the current prompt settings"
   (interactive)
   (if (region-active-p)
@@ -28,7 +28,7 @@
         )))
 
 
-;; (define-key prompt-engineer-mode-map (kbd "<up>") 'pem-generate)
+;; (define-key prompt-engineer-mode-map (kbd "<up>") 'pen-generate)
 ;; (define-key prompt-engineer-mode-map (kbd "<down>") (lm (tsk "C-n")))
 ;; (define-key prompt-engineer-mode-map (kbd "<right>") (lm (tsk "M-3")))
 
@@ -52,22 +52,22 @@
   :group 'prompt-engineer
   :initialize #'custom-initialize-default)
 
-(defvar-local pem-engine nil)
+(defvar-local pen-engine nil)
 
-(defvar-local pem-frequency-penalty nil
+(defvar-local pen-frequency-penalty nil
   "If your completion is filled with lots of\nrepetition you can increase this setting\nto prevent that from happening.\n\nHow much to penalize new tokens based on\ntheir existing frequency in the text so\nfar.\n\nDecreases the model's likelihood to repeat\nthe same line verbatim (the same text).\n\nThe likelihood of the same/similar lines\nbeing repeated in a completion.\n\nSet it high to avoid repetition.\n\nHowever, it could make sense to lower this\nvalue if writing lyrics for a song's\nchorus.")
 
-(defvar-local pem-presence-penalty nil)
+(defvar-local pen-presence-penalty nil)
 
-(defvar-local pem-best-of nil)
+(defvar-local pen-best-of nil)
 
-(defvar-local pem-stop-sequences nil)
+(defvar-local pen-stop-sequences nil)
 
-(defvar-local pem-inject-start-text nil)
+(defvar-local pen-inject-start-text nil)
 
-(defvar-local pem-inject-restart-text nil)
+(defvar-local pen-inject-restart-text nil)
 
-(defvar-local pem-show-probabilities nil)
+(defvar-local pen-show-probabilities nil)
 ;; + States
 ;;   - Off
 ;;   - Most likely

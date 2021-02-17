@@ -66,11 +66,32 @@ prompt description YAML
 chaining
     [prompt engineering]
 
+    http://gptprompts.wikidot.com/chaining:chaining
+
     API results into one another: The results
     of one API call can be processed and fed
     back into another API call with a
     different prompt to expand the potential
     capabilities of a workflow.
+    
+While OpenAI API has a lot of capabilities on its own, it is limited to 2000 characters per prompt. This puts a need to be
+able to determine optimal types of prompt selection and examples included in the prompt for complex queries. Rather than try
+to do everything at once, subtasks can be delegated to different API calls with subtask-optimized prompts.
+
+I don't know if there's a better term for this, so I'm tentatively calling this behavior chaining and can change this if it
+turns out there's a better name.
+
+Chaining ends up boiling down into a couple different tasks. First, you need to figure out what a prompt is actually asking
+for. To do this you can decompose the task into its component parts and figure out the sort of prompts you need to query to
+answer the parts http://gptprompts.wikidot.com/chaining:using-the-fringe.
+
+For each of those sub-parts, you need to be able to figure out how to optimize the prompt so that it optimizes the answer
+via context stuffing http://gptprompts.wikidot.com/context-stuffing.
+
+However, during all of this, you want to make sure that you're ensuring that the API is in compliance with safety practices
+for your task http://gptprompts.wikidot.com/safety.
+
+page revision: 9, last edited: 06 Aug 2020 16:09
     
 context-stuffing
     [prompt engineering]
