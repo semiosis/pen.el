@@ -38,10 +38,10 @@ https://github.com/cabhijith/GPT-3_Docs
   py -36 i openai-finetune
 #+END_SRC
 
-$SCRIPTS/openai-ft
-$SCRIPTS/openai-ft-classification
-$SCRIPTS/openai-ft-events
-$SCRIPTS/openai-ft-report
+e:openai-ft
+e:openai-ft-classification
+e:openai-ft-events
+e:openai-ft-report
 
 $MYGIT/cabhijith/GPT-3_Docs
 
