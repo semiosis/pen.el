@@ -24,7 +24,7 @@ The region selected should not deselect.
 
 * Objectives
 ** Design useful prompts
-** Fast feedback loop (using emacs)
+** Fast design/feedback loop (using emacs)
 
 * Playground Settings
 ** Engine
