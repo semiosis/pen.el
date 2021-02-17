@@ -34,7 +34,14 @@ https://deepai.org/machine-learning-model/text-generator
 ** [#A] Fine-tuning -- This is the killer feature that the OpenAI playground can't do
 https://github.com/cabhijith/GPT-3_Docs
 
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  py -36 i openai-finetune
+#+END_SRC
+
 $SCRIPTS/openai-ft
+$SCRIPTS/openai-ft-classification
+$SCRIPTS/openai-ft-events
+$SCRIPTS/openai-ft-report
 
 $MYGIT/cabhijith/GPT-3_Docs
 
