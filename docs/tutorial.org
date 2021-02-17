@@ -4,4 +4,8 @@
   M-x customize-group
 #+END_SRC
 
-openai-key-location
+*** =pen-openai-key=
+Setting this variable will ask you where you
+would like to store your key.
+
+Make it a secure location.
