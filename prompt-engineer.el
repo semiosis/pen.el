@@ -46,8 +46,15 @@
 ;;    ("T" "Pull specific tag (sps)" my-docker-pull-specific-tag)
 ;;    ("N" "Pull a new image" dockerage-pull-one)])
 
-;; This key will be set
+;; This key will be set upon setting pen-openai-key-location
 (defcustom pen-openai-key ""
+  "OpenAI API key"
+  :type 'string
+  :group 'prompt-engineer
+  :initialize #'custom-initialize-default)
+
+;; This location will be set upon setting pen-openai-key
+(defcustom pen-openai-key-location ""
   "OpenAI API key"
   :type 'string
   :group 'prompt-engineer

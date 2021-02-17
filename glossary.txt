@@ -64,7 +64,7 @@ prompt description YAML
       Max value: 1
 
 chaining
-    [prompt engineering]
+    [#prompt engineering]
 
     http://gptprompts.wikidot.com/chaining:chaining
 
@@ -116,7 +116,7 @@ chaining
     http://gptprompts.wikidot.com/safety.
     
 context-stuffing
-    [prompt engineering]
+    [#prompt engineering]
 
     With only 2048 tokens, you need to make
     use of your real estate by providing
@@ -124,7 +124,7 @@ context-stuffing
     information explicit.
 
 benchmarking
-    [prompt engineering]
+    [#prompt engineering]
 
     A single prompt getting a good response
     once might be enough for your use case,
@@ -134,3 +134,17 @@ benchmarking
     
     Also important to understand where prompts
     designs outperform others.
+
+explicit bias
+    [#ai safety]
+
+    Where output is clearly toxic (cursing,
+    slander).
+
+implicit bias
+    [#ai safety]
+
+    Where the policy from the output changes
+    based on context (e.g. opposition to
+    programs that help certain groups,
+    probabilities about roles).
