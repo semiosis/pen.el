@@ -46,7 +46,8 @@
 ;;    ("T" "Pull specific tag (sps)" my-docker-pull-specific-tag)
 ;;    ("N" "Pull a new image" dockerage-pull-one)])
 
-(defcustom openai-key ""
+;; This key will be set
+(defcustom pen-openai-key ""
   "OpenAI API key"
   :type 'string
   :group 'prompt-engineer

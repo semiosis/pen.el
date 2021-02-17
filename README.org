@@ -3,7 +3,10 @@
 Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
 creation, development, discovery and usage of prompts in your usage of emacs.
 
-It is meant for the purpose of prompt-engineering.
+- Create elisp functions based on GPT-3 prompts
+- Chain GPT-3 queries together using keyboard macros and functions
+- Interactively query, generate and transfrom both prose and code
+- Use GPT-3 as a search engine within emacs
 
 ** Works with
 - OpenAI API (GPT-3)
@@ -23,3 +26,6 @@ It is meant for the purpose of prompt-engineering.
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
   (openai-prompt-mode 1)
 #+END_SRC
+
+** Appendix
+[[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
