@@ -20,3 +20,16 @@ The region selected should not deselect.
       available, with the stream terminated by a
       data: DONE message.
 #+END_SRC
+
+* Setup
+** DISCARD Set the =openai= API key using emacs' =custom=?
+   CLOSED: [2021-02-17 Wed 20:17]
+#+BEGIN_SRC text -n :async :results verbatim code
+  M-x customize-group
+#+END_SRC
+
+This is too dodgy. Instead, ask the user to
+set the key in the user's environment.
+
+Demonstrate how to make a wrapper script in
+order to do this.
