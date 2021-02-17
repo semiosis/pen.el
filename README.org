@@ -1,1 +1,19 @@
-* 
+* =prompt-engineerer-mode=
+
+=prompt-engineer-mode= is a global minor mode for emacs that facilitates the
+creation, development, discovery and usage of prompts in your usage of emacs.
+
+It is meant for the purpose of prompt-engineering.
+
+** Works with
+- OpenAI API (GPT-3)
+  - https://beta.openai.com/
+- openai-server (GPT-2)
+  - https://github.com/shawwn/openai-server
+- DeepAI API
+
+** Usage
+
+*** Enable =prompt-engineerer-mode= globally (on all buffers)
+
+(openai-prompt-mode 1)
