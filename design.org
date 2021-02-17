@@ -31,6 +31,9 @@ The region selected should not deselect.
 https://deepai.org/machine-learning-model/text-generator
 ** Use in both Messenger and IRC
 ** Pre-defined search functions for finding new prompts online
+** Fine-tuning
+https://github.com/cabhijith/GPT-3_Docs
+$MYGIT/cabhijith/GPT-3_Docs
 
 * Playground Settings
 ** Engine
