@@ -1,2 +1,2 @@
-"89156a25fdf32238a4ac065e8b6a161935d961f7"
-#s(undo-tree [nil ([nil (#1=[nil nil ((2 . 3)) nil (24617 7732 772157 642000) 0 nil]) ((1 . 2) (t 24617 7731 786295 86000)) nil (24617 7732 772168 755000) 0 nil]) nil nil (24617 7730 606615 893000) 0 (:register 1)] #1# 24 2 nil)
+"fe78e8d4960ab1883c326a0b00cafb5b49b2afa1"
+#s(undo-tree [nil (#1=[nil nil ((452 . 542) (#("(openai-prompt-mode 1)" 0 22 (fontified t wrap-prefix "")) . -452) (undo-tree-id0 . -22) (undo-tree-id1 . -22) (undo-tree-id2 . -22) (undo-tree-id3 . -22) (undo-tree-id4 . 1) (undo-tree-id5 . -22) (undo-tree-id6 . 22) (undo-tree-id7 . -1) (undo-tree-id8 . -22) (undo-tree-id9 . -22) (undo-tree-id10 . -22) (undo-tree-id11 . -22) (undo-tree-id12 . -22) (undo-tree-id13 . -22) (undo-tree-id14 . -22) (undo-tree-id15 . -22) (undo-tree-id16 . -22) (undo-tree-id17 . -22) 474 (t 24620 37687 805164 685000)) nil (24620 42134 83658 973000) 0 nil]) nil nil (24620 38052 870730 767000) 0 (:register 94)] #1# 198 1 nil)

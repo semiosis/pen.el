@@ -16,4 +16,6 @@ It is meant for the purpose of prompt-engineering.
 
 *** Enable =prompt-engineerer-mode= globally (on all buffers)
 
-(openai-prompt-mode 1)
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (openai-prompt-mode 1)
+#+END_SRC
