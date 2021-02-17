@@ -24,8 +24,7 @@ loaded from this file.
 *** Alternatively, create a wrapper script around =openai= and export the key
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   #!/bin/bash
-  export TTY
-  
+
   export OPENAI_API_KEY="$(cat $HOME/.myrc.yaml | yq -r '.openai_api_key')"
   
   /usr/local/bin/openai "$@"
