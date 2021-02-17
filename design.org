@@ -14,6 +14,17 @@
 - engine
 - response length
 
+* Implementation
+** Backend
+*** =openai= command from =pip=
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  py -36 i openai
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  openai --help
+#+END_SRC
+
 * Comint? No.
 ** Don't use comint for the playground
 Simply make some elisp functions for completing text.
