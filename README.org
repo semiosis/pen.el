@@ -28,6 +28,9 @@ creation, development, discovery and usage of prompts in your emacs.
 #+END_SRC
 
 ** Default Key Bindings
+| key binding    | description    |
+|----------------+----------------|
+| <kbd>SPC</kbd> | =pen-generate= |
 
 ** Appendix
 [[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
