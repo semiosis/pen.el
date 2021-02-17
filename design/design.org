@@ -22,6 +22,7 @@
 
 * Objectives
 ** Design useful prompts
+** Chaining
 ** Fast design/feedback loop (using emacs)
 ** Create =String->String= functions based on prompts
 *** Attempt to make a 'name-generator' and create the name of the Tomato Bear
