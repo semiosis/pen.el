@@ -41,7 +41,7 @@ e:openai-ft-classification
 e:openai-ft-events
 e:openai-ft-report
 
-$MYGIT/cabhijith/GPT-3_Docs
+https://github.com/cabhijith/GPT-3_Docs/tree/master/GPT-3_Docs
 
 ** Work with
 - OpenAI API (GPT-3)
