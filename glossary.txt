@@ -1,0 +1,62 @@
+prompt description
+prompt description file
+prompt description YAML
+    A yaml containing the definition of an
+    individual prompt.
+
+    Parameters:
+    - model
+      [string]
+
+    - prompt
+      [string]
+
+    - Best of
+      [int]
+
+      Recommended value: 1
+      Min value: 1
+      Max value: 20
+
+    - Frequency Penalty
+      [float]
+
+      Default value: 0
+      Min value: 0
+      Max value: 1
+
+    - top-p
+      [float]
+
+      Recommended value: 1
+      Max value: 1
+      Min value: 0
+
+    - temperature
+      [float]
+
+      Recommended value: 0.9 
+      Min value: 0
+      Max value: 1
+
+    - restart sequence
+      [string]
+
+    - start sequence
+      [string]
+
+    - stop sequences
+      [list of strings]
+
+    - response length
+      [int]
+
+      Min value: 64
+      Max value: 2048
+
+    - presence penalty
+      [float]
+
+      Default value: 0
+      Min value: 0
+      Max value: 1

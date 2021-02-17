@@ -1,0 +1,3 @@
+* TODO Rather than manually adding these and other prompts, generate prompt definition files for all of these
+- https://github.com/wgryc/gpt3-prompts/blob/master/analogies.md
+- https://www.notion.so/OpenAI-API-Community-Examples-ce088785e541498698c1895798e67664
