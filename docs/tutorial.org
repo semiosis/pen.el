@@ -13,3 +13,5 @@ This is in plain text, but better than storing
 directly within an emacs variable.
 
 Make it a secure location.
+
+*** =pen-openai-key=
