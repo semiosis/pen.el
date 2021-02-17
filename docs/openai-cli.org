@@ -1,5 +1,23 @@
 * =openai= CLI
 ** =api=
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  engines.list
+  engines.get
+  engines.update
+  engines.generate
+  engines.search
+  completions.create
+  snapshots.list
+  snapshots.create
+  snapshots.get
+  snapshots.delete
+  tags.create
+  tags.get
+  tags.delete
+  tags.list
+#+END_SRC
+
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   openai api -h
 #+END_SRC
