@@ -42,3 +42,11 @@ e:openai-ft-events
 e:openai-ft-report
 
 $MYGIT/cabhijith/GPT-3_Docs
+
+** Work with
+- OpenAI API (GPT-3)
+  - https://beta.openai.com/
+- =openai-server= (GPT-2)
+  - https://github.com/shawwn/openai-server
+  - Requires tensorflow 1
+- DeepAI API
