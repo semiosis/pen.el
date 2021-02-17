@@ -29,6 +29,7 @@ The region selected should not deselect.
 *** Attempt to make a 'name-generator' and create the name of the Tomato Bear
 ** Compatibility with DeepAI
 https://deepai.org/machine-learning-model/text-generator
+** Use in both Messenger and IRC
 
 * Playground Settings
 ** Engine
