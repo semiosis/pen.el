@@ -21,7 +21,7 @@ This variable is automatically set when setting =pen-openai-key=, but if you
 choose to set =pen-openai-key-location= instead, =pen-openai-key= will be
 loaded from this file.
 
-*** Alternatively, create a wrapper script around =openai=
+*** Alternatively, create a wrapper script around =openai= and export the key
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   #!/bin/bash
   export TTY
