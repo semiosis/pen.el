@@ -15,12 +15,19 @@
 ;; TODO Make a shell script for querying the OpenAI API
 ;; $SCRIPTS/openai-curl
 
-;; TODO oai-generate
+;; TODO pem-generate
 ;; This function streams text onto the end of the currently selected region accordig to the current prompt settings
 
 
+(defun pem-generate ()
+  "This function streams text onto the end of the currently selected region accordig to the current prompt settings"
+  (interactive)
+  (if (region-active-p)
+      (let ((r (selected)))
+        ;; Send request and replace the text
+        )))
 
-;; (define-key prompt-engineer-mode-map (kbd "<up>") 'oai-generate)
+;; (define-key prompt-engineer-mode-map (kbd "<up>") 'pem-generate)
 ;; (define-key prompt-engineer-mode-map (kbd "<down>") (lm (tsk "C-n")))
 ;; (define-key prompt-engineer-mode-map (kbd "<right>") (lm (tsk "M-3")))
 
