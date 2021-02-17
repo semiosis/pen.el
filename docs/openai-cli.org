@@ -1,0 +1,18 @@
+* =openai= CLI
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  openai api -h
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+usage: openai api [-h]
+                  {engines.list,engines.get,engines.update,engines.generate,engines.search,completions.create,snapshots.list,snapshots.create,snapshots.get,snapshots.delete,tags.create,tags.get,tags.delete,tags.list}
+                  ...
+
+positional arguments:
+  {engines.list,engines.get,engines.update,engines.generate,engines.search,completions.create,snapshots.list,snapshots.create,snapshots.get,snapshots.delete,tags.create,tags.get,tags.delete,tags.list}
+                        All API subcommands
+
+optional arguments:
+  -h, --help            show this help message and exit
+#+end_src
