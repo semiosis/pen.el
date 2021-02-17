@@ -3,10 +3,10 @@
 *** Customization -- use built-in
 *** Control panel -- use transient for this, or some kind of buffer-local settings/configuration?
 *** UI components
-+ Acquired [0/2]
++ Acquired [1/2]
   - [ ] Spin button for toggling a value
     - This would've been nice. But I will work without it.
-  - [ ] Right click menu
+  - [X] Right click menu
     - I'm not sure yet what the utility is here yet.
 
 ** I need to be able to query the API with emacs lisp to enumerate/exhaust lists of things
