@@ -16,6 +16,9 @@ creation, development, discovery and usage of prompts in your emacs.
   - https://github.com/shawwn/openai-server
   - Requires tensorflow 1
 - DeepAI API
+  - https://deepai.org/
+- OpenAI API (GPT-4)
+  - https://beta.openai.com/
 
 ** Requirements
 *** =openai= =pip= library and command
