@@ -1,5 +1,6 @@
 * Design
 ** What do I *need*
+*** Customization -- use built-in
 *** Control panel -- use transient for this, or some kind of buffer-local settings/configuration?
 + Acquired [1/2]
   - [-] Spin button for toggling a value
