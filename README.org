@@ -10,6 +10,7 @@ creation, development, discovery and usage of prompts in your emacs.
   - Search the internet
   - Search documents
     - https://beta.openai.com/docs/introduction/semantic-search
+    - https://gpttools.com/semanticsearch
 
 ** Works with
 - OpenAI API (GPT-3)
