@@ -9,6 +9,11 @@ It is meant for the purpose of prompt-engineering.
 - OpenAI API (GPT-3)
   - https://beta.openai.com/
 
+** Requirements
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  pip3 install openai
+#+END_SRC
+
 ** Usage
 
 *** Enable =prompt-engineerer-mode= globally (on all buffers)
