@@ -32,7 +32,10 @@ creation, development, discovery and usage of prompts in your emacs.
 *** Enable =prompt-engineerer-mode= globally (on all buffers)
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (openai-prompt-mode 1)
+  (prompt-engineer-mode 1)
+
+  ;; Alternatively
+  (pen-mode 1)
 #+END_SRC
 
 ** Default Key Bindings
