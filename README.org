@@ -1,4 +1,4 @@
-* =prompt-engineerer-mode=
+* =prompt-engineer-mode=
 
 =prompt-engineer-mode= is a global minor mode for emacs that facilitates the
 creation, development, discovery and usage of prompts in your usage of emacs.
