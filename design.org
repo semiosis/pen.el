@@ -26,7 +26,7 @@ The region selected should not deselect.
 ** Design useful prompts
 ** Fast design/feedback loop (using emacs)
 ** Create =String->String= functions based on prompts
-*** Attempt to make a 'name-generator'
+*** Attempt to make a 'name-generator' and create the name of the Tomato Bear
 
 * Playground Settings
 ** Engine
