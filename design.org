@@ -9,8 +9,6 @@
   - [X] Right click menu
     - I'm not sure yet what the utility is here yet.
 
-** I need to be able to query the API with emacs lisp to enumerate/exhaust lists of things
-
 ** I need control panels
 - engine
 - response length
