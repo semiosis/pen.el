@@ -7,6 +7,8 @@ creation, development, discovery and usage of prompts in your emacs.
 - Chain GPT-3 queries together using keyboard macros and functions
 - Interactively query, generate and transfrom both prose and code
 - Use GPT-3 as a search engine within emacs
+  - Search the internet
+  - Search documents
 
 ** Works with
 - OpenAI API (GPT-3)
