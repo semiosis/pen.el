@@ -5,13 +5,18 @@
 #+END_SRC
 
 *** =pen-openai-key=
-Setting this variable will ask you where you
-would like to store your key on your
-filesystem.
+Setting this variable will save your key to the file specified by
+=pen-openai-key-location=.
 
-This is in plain text, but better than storing
-directly within an emacs variable.
+If =pen-openai-key-location= is not set then it will ask you to name that path first.
+
+The =pen-openai-key= is stored in plain text, but that's better than storing
+directly within an emacs variable as we can't guarantee you keep your emacs
+repository private.
 
 Make it a secure location.
 
-*** =pen-openai-key=
+*** =pen-openai-key-location=
+This variable is automatically set when setting =pen-openai-key=, but if you
+choose to set =pen-openai-key-location= instead, =pen-openai-key= will be
+loaded from this file.
