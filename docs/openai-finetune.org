@@ -1,4 +1,6 @@
 * =openai-finetune=
+** =openai-ft=
+*** Example
 #+BEGIN_SRC sh -n :sps bash :async :results none
   openai-ft \
       -t reddit-cleanjokes-train.jsonl \
@@ -10,7 +12,7 @@
       --num-epochs 5
 #+END_SRC
 
-** =openai-ft=
+*** Help
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   openai-ft --help 1>&2
 #+END_SRC
