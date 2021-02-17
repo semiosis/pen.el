@@ -9,6 +9,7 @@ creation, development, discovery and usage of prompts in your emacs.
 - Use GPT-3 as a search engine within emacs
   - Search the internet
   - Search documents
+    - https://beta.openai.com/docs/introduction/semantic-search
 
 ** Works with
 - OpenAI API (GPT-3)
