@@ -6,3 +6,5 @@
 #+BEGIN_SRC sh -n :sps bash :async :results none
   openai api engines.generate -h |pavs
 #+END_SRC
+
+https://www.twilio.com/blog/openai-gpt-3-chatbot-python-twilio-sms
