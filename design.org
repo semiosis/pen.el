@@ -34,6 +34,8 @@ https://deepai.org/machine-learning-model/text-generator
 ** [#A] Fine-tuning -- This is the killer feature that the OpenAI playground can't do
 https://github.com/cabhijith/GPT-3_Docs
 
+$SCRIPTS/openai-ft
+
 $MYGIT/cabhijith/GPT-3_Docs
 
 * Playground Settings
