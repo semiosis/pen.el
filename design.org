@@ -9,10 +9,6 @@
   - [X] Right click menu
     - I'm not sure yet what the utility is here yet.
 
-** I need control panels
-- engine
-- response length
-
 * Implementation
 ** Backend
 *** =openai= command from =pip=
