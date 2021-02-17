@@ -1,6 +1,23 @@
 * =openai= CLI
 ** =api=
 *** These are the commands
+| subcommand         | description |
+|--------------------+-------------|
+| engines.list       |             |
+| engines.get        |             |
+| engines.update     |             |
+| engines.generate   |             |
+| engines.search     |             |
+| completions.create |             |
+| snapshots.list     |             |
+| snapshots.create   |             |
+| snapshots.get      |             |
+| snapshots.delete   |             |
+| tags.create        |             |
+| tags.get           |             |
+| tags.delete        |             |
+| tags.list          |             |
+
 #+BEGIN_SRC text -n :async :results verbatim code
   engines.list
   engines.get
