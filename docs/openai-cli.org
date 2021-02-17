@@ -30,3 +30,114 @@ usage: openai api [-h]
 openai api: error: invalid choice: 'engines' (choose from 'engines.list', 'engines.get', 'engines.update', 'engines.generate', 'engines.search', 'completions.create', 'snapshots.list', 'snapshots.create', 'snapshots.get', 'snapshots.delete', 'tags.create', 'tags.get', 'tags.delete', 'tags.list')
 #+end_src
 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  oci openai api engines.list
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+{
+  "data": [
+    {
+      "created": null,
+      "id": "ada",
+      "max_replicas": null,
+      "object": "engine",
+      "owner": "openai",
+      "permissions": null,
+      "ready": true,
+      "ready_replicas": null,
+      "replicas": null
+    },
+    {
+      "created": null,
+      "id": "babbage",
+      "max_replicas": null,
+      "object": "engine",
+      "owner": "openai",
+      "permissions": null,
+      "ready": true,
+      "ready_replicas": null,
+      "replicas": null
+    },
+    {
+      "created": null,
+      "id": "content-filter-alpha-c4",
+      "max_replicas": null,
+      "object": "engine",
+      "owner": "openai",
+      "permissions": null,
+      "ready": true,
+      "ready_replicas": null,
+      "replicas": null
+    },
+    {
+      "created": null,
+      "id": "content-filter-dev",
+      "max_replicas": null,
+      "object": "engine",
+      "owner": "openai",
+      "permissions": null,
+      "ready": true,
+      "ready_replicas": null,
+      "replicas": null
+    },
+    {
+      "created": null,
+      "id": "curie",
+      "max_replicas": null,
+      "object": "engine",
+      "owner": "openai",
+      "permissions": null,
+      "ready": true,
+      "ready_replicas": null,
+      "replicas": null
+    },
+    {
+      "created": null,
+      "id": "curie-instruct-beta",
+      "max_replicas": null,
+      "object": "engine",
+      "owner": "openai",
+      "permissions": null,
+      "ready": true,
+      "ready_replicas": null,
+      "replicas": null
+    },
+    {
+      "created": null,
+      "id": "cursing-filter-v6",
+      "max_replicas": null,
+      "object": "engine",
+      "owner": "openai",
+      "permissions": null,
+      "ready": true,
+      "ready_replicas": null,
+      "replicas": null
+    },
+    {
+      "created": null,
+      "id": "davinci",
+      "max_replicas": null,
+      "object": "engine",
+      "owner": "openai",
+      "permissions": null,
+      "ready": true,
+      "ready_replicas": null,
+      "replicas": null
+    },
+    {
+      "created": null,
+      "id": "davinci-instruct-beta",
+      "max_replicas": null,
+      "object": "engine",
+      "owner": "openai",
+      "permissions": null,
+      "ready": true,
+      "ready_replicas": null,
+      "replicas": null
+    }
+  ],
+  "object": "list"
+}
+#+end_src
