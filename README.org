@@ -11,6 +11,11 @@ creation, development, discovery and usage of prompts in your emacs.
 ** Works with
 - OpenAI API (GPT-3)
   - https://beta.openai.com/
+*** Planned
+- =openai-server= (GPT-2)
+  - https://github.com/shawwn/openai-server
+  - Requires tensorflow 1
+- DeepAI API
 
 ** Requirements
 *** =openai= =pip= library and command
