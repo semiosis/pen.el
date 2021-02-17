@@ -23,7 +23,8 @@ It will send a request for more text.
 The region selected should not deselect.
 
 * Objectives
-** Compose useful prompts
+** Design useful prompts
+** Fast feedback loop (using emacs)
 
 * Playground Settings
 ** Engine
