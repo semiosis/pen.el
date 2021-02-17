@@ -3,3 +3,5 @@
 #+BEGIN_SRC text -n :async :results verbatim code
   M-x customize-group
 #+END_SRC
+
+openai-key-location
