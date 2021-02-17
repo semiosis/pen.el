@@ -1,3 +1,5 @@
+;; gy -E "openai api engines.generate -h | pavs"
+
 (defvar prompt-engineer-mode-map (make-sparse-keymap)
   "Keymap for `prompt-engineer-mode'.")
 ;; (makunbound 'prompt-engineer-mode)
