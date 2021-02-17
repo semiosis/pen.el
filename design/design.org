@@ -23,6 +23,10 @@
 * Objectives
 ** Design useful prompts
 ** Chaining
+http://gptprompts.wikidot.com/chaining:chaining
+
+I will do this by composing functions.
+
 ** Fast design/feedback loop (using emacs)
 ** Create =String->String= functions based on prompts
 *** Attempt to make a 'name-generator' and create the name of the Tomato Bear
