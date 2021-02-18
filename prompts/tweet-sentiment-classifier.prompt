@@ -28,6 +28,7 @@ prompt: |+
       Tweet: "This new music video blew my mind"
       
       Sentiment:
+engine: "davinci"
 temperature: 0.7
 response-length: 64
 top-p: 1
