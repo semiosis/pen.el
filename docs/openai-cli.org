@@ -41,6 +41,8 @@ https://openbase.com/js/tensorfork-openai-api/documentation
   tags.list
 #+END_SRC
 
+*** What is the difference between =engines.generate= and =completions.create=
+
 *** Help
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   openai api -h
