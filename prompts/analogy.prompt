@@ -15,11 +15,11 @@ prompt: |+
     
     <1> are like <2> in that
 engine: "davinci"
-temperature: 0.5
+temperature: 0.9
 max-tokens: 100
 top-p: 1
 frequency-penalty: 0.2
-presence-penalty: 0.0
+presence-penalty: 0.4
 best-of: 1
 stop-sequences:
   - "\n"
