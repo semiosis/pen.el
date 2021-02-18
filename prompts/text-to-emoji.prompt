@@ -1,0 +1,22 @@
+prompt: |+
+    Transformers: 🚗🤖
+    Wonder Woman: 👸🏻👸🏼👸🏽👸🏾👸🏿
+    Spider-Man: 🕸🕷🕸🕸🕷🕸
+    Winner the Pooh: 🐻🐼🐻
+    The Godfather: 👨👩👧🕵👲💥
+    Game of Thrones: 🏹🗡🗡🏹
+    <1>:
+engine: "davinci"
+temperature: 0.5
+max-tokens: 100
+top-p: 1
+frequency-penalty: 0.2
+presence-penalty: 0.2
+best-of: 1
+stop-sequences:
+  - "\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+varnames:
+  - "passage"

@@ -105,6 +105,11 @@
   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/summarize-for-2nd-grader.prompt")))
     (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
 
+(defun pen-obfuscate-language (input)
+  (interactive (list (my/selected-text)))
+  (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/obfuscate-language.prompt")))
+    (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
+
 (defun pen-make-analogy (former latter)
   (interactive (list (read-string-hist "analogy participant: ")
                      (read-string-hist "analogy participant: ")))
