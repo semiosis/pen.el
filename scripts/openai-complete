@@ -1,0 +1,86 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+first_arg="$1"
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    # The stdin can be the first argument
+    set -- "$@" "$(cat | chomp)"
+fi
+
+test -f "$first_arg" || exit
+shift
+
+prompt="$(cat "$first_arg" | yq -r ".prompt // empty")"
+stop_sequence="$(cat "$first_arg" | yq ".\"stop-sequences\"[0] // empty" | uq | qne)"
+temperature="$(cat "$first_arg" | yq -r ".\"temperature\" // empty")"
+engine="$(cat "$first_arg" | yq -r ".\"engine\" // empty")"
+max_tokens="$(cat "$first_arg" | yq -r ".\"max-tokens\" // empty")"
+top_p="$(cat "$first_arg" | yq -r ".\"top-p\" // empty")"
+
+test -n "$prompt" || exit 0
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -e) {
+        engine="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${engine:="ada"}"
+: "${temperature:="0.6"}"
+: "${max_tokens:="64"}"
+
+: "${sub_completions:="1"}"
+
+i=1
+for var in "$@"
+do
+    var="$(printf -- "%s" "$var" | uq | chomp)"
+    prompt="$(p "$prompt" | template -$i "$var")"
+    ((i++))
+done
+
+prompt_fp="$(printf -- "%s" "$prompt" | chomp | tf)"
+
+# printf -- "%s\n" "$prompt" | tv
+
+prompt="$(p "$prompt" | qne)"
+
+IFS= read -r -d '' SHCODE <<HEREDOC
+openai api \
+    completions.create \
+    -e "$engine" \
+    -t "$temperature" \
+    -M "$max_tokens" \
+    -n "$sub_completions" \
+    $(
+        if test -n "$stop_sequence"; then
+            printf -- "%s" "--stop \"$stop_sequence\""
+        fi
+    ) \
+    -p "$prompt"
+HEREDOC
+
+response_fp="$(eval "$SHCODE" | uq | s chomp | tf txt)"
+
+prompt_bytes="$(cat "$prompt_fp" | wc -c)"
+response_bytes="$(cat "$response_fp" | wc -c)"
+
+tail -c +$((prompt_bytes + 2)) "$response_fp"
+
+# echo "$prompt_fp"
+# echo "$response_fp"
+
+# pl "$SHCODE" | pavs
