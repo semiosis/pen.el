@@ -22,7 +22,7 @@ frequency-penalty: 0.2
 presence-penalty: 0.4
 best-of: 1
 stop-sequences:
-  - "\n"
+  - "\n\n"
 inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
