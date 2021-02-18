@@ -17,3 +17,5 @@ pem-stop-sequences	prompt-engineer.el	/^(defvar-local pem-stop-sequences nil)$/;
 prompt-engineer-mode	prompt-engineer.el	/^(define-minor-mode prompt-engineer-mode$/;"	f
 prompt-engineer-mode	prompt-engineer.el	/^(defvar-local prompt-engineer-mode nil)$/;"	f
 prompt-engineer-mode-map	prompt-engineer.el	/^(defvar prompt-engineer-mode-map (make-sparse-keymap)$/;"	f
+prompt_complete	scripts/completions.sh	/^prompt_complete() {$/;"	f
+stdin_exists	scripts/completions.sh	/^stdin_exists() {$/;"	f
