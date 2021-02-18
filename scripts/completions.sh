@@ -21,6 +21,7 @@ stdin_exists() {
 
 stdin_exists || exit 0
 
+# openai api completions.create -h | vs +/"-n N,"
 prompt_complete() {
     \
     openai api \
