@@ -1,5 +1,8 @@
 * =openai= CLI
 ** Unoffical documentation and examples
+This is for the =openai-server= but the more examples the merrier.
+https://github.com/shawwn/openai-server
+
 https://openbase.com/js/tensorfork-openai-api/documentation
 
 ** =api=
