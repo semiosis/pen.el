@@ -1,4 +1,4 @@
-* Comint? No.
+* comint major mode
 ** Don't use comint for the playground
 Simply make some elisp functions for completing text.
 Select the text then use a binding to complete it.
