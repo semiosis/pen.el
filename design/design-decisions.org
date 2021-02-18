@@ -16,6 +16,8 @@ language-powered applications.
 - =openai= does not have a lot of documentation
 - =chronology= appears to be not ready for use and is strictly a python library
 
+** Use =openai=
+
 * Stream from API
 ** Don't stream for the moment
 #+BEGIN_SRC text -n :async :results verbatim code
