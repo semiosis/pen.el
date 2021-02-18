@@ -36,7 +36,7 @@ frequency-penalty: 0
 presence-penalty: 0
 best-of: 1
 stop-sequences:
-  - "hi"
+  - "###"
 inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
