@@ -40,7 +40,7 @@ prompt_complete() {
 prompt="$(cat)"
 while true
 do
-  prompt="$(openai api completions.create -e davinci -t 0.6 -M 32 -n 1 -p "$prompt")"
+    prompt="$(prompt_complete "$prompt")"
   printf "\033c"
   #echo '----------'
   echo "$prompt"
