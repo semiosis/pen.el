@@ -24,6 +24,7 @@ stdin_exists || exit 0
 # openai api completions.create -h | vs +/"-n N,"
 prompt_complete() {
     prompt="$1"
+    test -n "$prompt" || return 0
 
     openai api \
     completions.create \
