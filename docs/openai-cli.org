@@ -1,4 +1,7 @@
 * =openai= CLI
+** Unoffical documentation and examples
+https://openbase.com/js/tensorfork-openai-api/documentation
+
 ** =api=
 *** These are the commands
 | subcommand         | description |
