@@ -21,13 +21,13 @@
 ;; This function streams text onto the end of the currently selected region accordig to the current prompt settings
 
 
-(defun pen-generate ()
-  "This function streams text onto the end of the currently selected region accordig to the current prompt settings"
-  (interactive)
-  (if (region-active-p)
-      (let ((r (selected)))
-        ;; Send request and replace the text
-        )))
+;; (defun pen-generate ()
+;;   "This function streams text onto the end of the currently selected region accordig to the current prompt settings"
+;;   (interactive)
+;;   (if (region-active-p)
+;;       (let ((r (selected)))
+;;         ;; Send request and replace the text
+;;         )))
 
 
 ;; (define-key prompt-engineer-mode-map (kbd "<up>") 'pen-generate)
@@ -78,6 +78,9 @@
 (defvar-local pen-inject-restart-text nil)
 
 (defvar-local pen-show-probabilities nil)
+
+(defvar-local pen-prompt-directory nil)
+
 ;; + States
 ;;   - Off
 ;;   - Most likely
@@ -116,5 +119,14 @@
   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/analogy.prompt")))
     (etv (sn (concat "openai-complete " (q prompt-fp) " " (q former) " "
                      (q latter) " | chomp")))))
+
+
+(defun pen-generate-prompt-functions ()
+  "Generate prompt functions for the files in the prompts directory"
+  (interactive)
+  (let ((paths
+         (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*")))
+    (cl-loop for buf in (buffer-list) collect (buffer-file-name buf))))
+
 
 (provide 'my-openai)
