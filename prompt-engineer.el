@@ -84,6 +84,39 @@
 ;;   - Least likely
 ;;   - Full spectrum
 
+(defun load-prompts ()
+
+  )
+
 (provide 'prompt-engineer-mode)
+
+
+(defun pen-tweet-sentiment-classifier (input)
+  (interactive (list (my/selected-text)))
+  (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/tweet-sentiment-classifier.prompt"))
+         ;; (prompt (sor (chomp (sn "cat $MYGIT/mullikine/prompt-engineer-mode/prompts/tweet-sentiment-classifier.prompt | yq -r .prompt"))))
+         (output (if input (sor (chomp (sn (concat "openai-complete " (q prompt-fp) " " (q input))))))))
+    ;; (if output
+    ;;     (setq output (sor (s-replace-regexp (etv (concat "^" (unregexify prompt))) "" output))))
+    (if output
+        (if (interactive-p)
+            (message output)
+          output))))
+
+(defun pen-summarise-for-second-grader (input)
+  (interactive (list (my/selected-text)))
+  (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/summarize-for-2nd-grader.prompt"))
+         ;; (prompt (sor (chomp (sn "cat $MYGIT/mullikine/prompt-engineer-mode/prompts/tweet-sentiment-classifier.prompt | yq -r .prompt"))))
+         ;; (output (if input (sor (chomp (sn (concat "openai-complete " (q prompt-fp) " " (q input)))))))
+         )
+
+    (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))
+    ;; (if output
+    ;;     (setq output (sor (s-replace-regexp (etv (concat "^" (unregexify prompt))) "" output))))
+    ;; (if output
+    ;;     (if (interactive-p)
+    ;;         (message output)
+    ;;       output))
+    ))
 
 (provide 'my-openai)
