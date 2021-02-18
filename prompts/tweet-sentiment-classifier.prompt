@@ -1,29 +1,41 @@
-This is a tweet sentiment classifier
-
-Tweet: "I loved the new Batman movie!"
-
-Sentiment: Positive
-
-###
-
-Tweet: "I hate it when my phone battery dies."
-
-Sentiment: Negative
-
-###
-
-Tweet: "My day has been 👍"
-
-Sentiment: Positive
-
-###
-
-Tweet: "This is the link to the article"
-
-Sentiment: Neutral
-
-###
-
-Tweet: "This new music video blew my mind"
-
-Sentiment:
+prompt: |+
+      This is a tweet sentiment classifier
+      
+      Tweet: "I loved the new Batman movie!"
+      
+      Sentiment: Positive
+      
+      ###
+      
+      Tweet: "I hate it when my phone battery dies."
+      
+      Sentiment: Negative
+      
+      ###
+      
+      Tweet: "My day has been 👍"
+      
+      Sentiment: Positive
+      
+      ###
+      
+      Tweet: "This is the link to the article"
+      
+      Sentiment: Neutral
+      
+      ###
+      
+      Tweet: "This new music video blew my mind"
+      
+      Sentiment:
+temperature: 0.7
+response-length: 64
+top-p: 1
+frequency-penalty: 0
+presence-penalty: 0
+best-of: 1
+stop-sequences:
+  - "hi"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
