@@ -1,2 +1,5 @@
 * Fake server
 https://github.com/shawwn/openai-server
+
+* =openai= vs =chronology=
+https://github.com/OthersideAI/chronology
