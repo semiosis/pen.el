@@ -6,6 +6,15 @@ This is the basic function.
 It will send a request for more text.
 The region selected should not deselect.
 
+* =openai-python= vs =chronology=
+https://github.com/OthersideAI/chronology/
+
+Chronology is a library that enables users of
+OpenAI's GPT-3 LM to more easily build complex
+language-powered applications.
+
+** Appears to be not ready for use
+
 * Stream from API
 ** Don't stream for the moment
 #+BEGIN_SRC text -n :async :results verbatim code
