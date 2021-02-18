@@ -25,7 +25,7 @@ prompt: |+
       
       ###
       
-      Tweet: "This new music video blew my mind"
+      Tweet: "%{1}"
       
       Sentiment:
 engine: "davinci"
@@ -40,3 +40,5 @@ stop-sequences:
 inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
+varnames:
+  - "tweet"
