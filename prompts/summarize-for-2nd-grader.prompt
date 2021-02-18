@@ -1,0 +1,21 @@
+prompt: |+
+  My second grader asked me what this passage means:
+  ###
+  %{1}
+  ###
+  I rephrased it for him, in plain language a second grader can understand:
+  ###
+engine: "davinci"
+temperature: 0.5
+max-tokens: 100
+top-p: 1
+frequency-penalty: 0.2
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+  - "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+varnames:
+  - "passage"
