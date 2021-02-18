@@ -12,6 +12,8 @@ creation, development, discovery and usage of prompts in your emacs.
     - https://beta.openai.com/docs/introduction/semantic-search
     - https://gpttools.com/semanticsearch
 
+# [![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/14)
+
 #+BEGIN_EXPORT html
 <a title="asciinema recording" href="https://asciinema.org/a/TcXY3n2musmKPvRbr9sNnsrJc" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/TcXY3n2musmKPvRbr9sNnsrJc.svg" /></a>
 #+END_EXPORT
