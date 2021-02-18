@@ -13,7 +13,8 @@ Chronology is a library that enables users of
 OpenAI's GPT-3 LM to more easily build complex
 language-powered applications.
 
-** Appears to be not ready for use
+- =openai= does not have a lot of documentation
+- =chronology= appears to be not ready for use and is strictly a python library
 
 * Stream from API
 ** Don't stream for the moment
