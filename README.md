@@ -13,7 +13,7 @@ creation, development, discovery and usage of prompts to a language model.
         -   <https://gpttools.com/semanticsearch>
 
 | License |
-+---------+
+| ------- |
 | GPL-3   |
 
 [![asciicast](https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi.png)](https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi)
