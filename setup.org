@@ -1,4 +1,4 @@
-* plugin setup
+* Pre-requisites
 ** Install =emacs-yamlmod=
 https://github.com/perfectayush/emacs-yamlmod
 
