@@ -42,6 +42,14 @@
   The hen is
 #+END_SRC
 
+** Creating some analogies
+Strawberries are like the ocean because:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  both are systems whose properties are best 
+  appreciated from a distance.
+#+END_SRC
+
 * =prompt-engineer-mode= (=PEn=)
 
 Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
