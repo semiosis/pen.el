@@ -57,6 +57,9 @@ creation, development, discovery and usage of prompts to a language model.
 |----------------+----------------|
 | <kbd>SPC</kbd> | =pen-generate= |
 
+*** prompts
+https://github.com/mullikine/prompts/
+
 ** Current progress
 + Implementation [1/1]
   - [X] emacs-lisp functions are generated from YAML =.prompt= files
