@@ -41,5 +41,5 @@ stop-sequences:
 inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
-varnames:
-  - "tweet"
+vars:
+- "tweet"
