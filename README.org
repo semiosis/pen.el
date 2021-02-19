@@ -1,27 +1,3 @@
-* Testing out =pem=
-** Make some =is like a= analogies
-
-
-** Summarizing the process of cracking an egg
-The egg is cracked open with a sharp object.
-The egg white and yolk come out.
-The egg is cracked open again.
-
-** How to crack an egg
-The cracking of the egg involves the
-separation of the eggshell from the egg yolk.
-
-This can be accomplished by inserting a
-pointed object into the egg and rotating this
-object until a chink is formed.
-
-This chink is then enlarged until the shell is
-fully breached.
-
-Once breached, the egg white and yolk are free
-to be removed, and the process can be repeated
-with another egg.
-
 * =prompt-engineer-mode= (=PEn=)
 
 Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
