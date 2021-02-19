@@ -13,7 +13,7 @@ emacs.
 *** Quality-assurance check / filter
 Specify a cli command which takes the API
 output as stdin and outputs a transformed
-string.
+string (or empty string for failure).
 
 - If the API output (script input) fails a pattern matching check, then output empty string (indicates failure).
 - Example, take the first sentence.
