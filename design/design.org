@@ -10,13 +10,13 @@ scripts which can be used to post-process the
 output of the prompt before it's sent to
 emacs.
 
-*** Quality-assurance check
+*** Quality-assurance check / filter
 Specify a cli command which takes the API
-output as stdin and outputs a boolean (0 or 1
-exit code).
+output as stdin and outputs a transformed
+string.
 
-*** Transformation
-i.e. Selc
+- If the API output (script input) fails a pattern matching check, then output empty string (indicates failure).
+- Example, take the first sentence.
 
 ** What do I *need*
 *** Customization -- use built-in
