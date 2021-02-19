@@ -4,6 +4,16 @@
 **** Filter
 - Replaces the current text with the prompt output.
 
+** Postprocessing
+Specify in the prompt descriptions filter
+scripts which can be used to post-process the
+output of the prompt before it's sent to
+emacs.
+
+*** Quality-assurance check
+*** Transformation
+i.e. Selc
+
 ** What do I *need*
 *** Customization -- use built-in
 *** Control panel -- use transient for this, or some kind of buffer-local settings/configuration?
