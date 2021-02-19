@@ -100,31 +100,31 @@
 (provide 'prompt-engineer-mode)
 
 
-(defun pen-tweet-sentiment-classifier (input)
-  (interactive (list (my/selected-text)))
-  (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/tweet-sentiment-classifier.prompt"))
-         (output (if input (sor (chomp (sn (concat "openai-complete " (q prompt-fp) " " (q input))))))))
-    (if output
-        (if (interactive-p)
-            (message output)
-          output))))
+;; (defun pen-tweet-sentiment-classifier (input)
+;;   (interactive (list (my/selected-text)))
+;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/tweet-sentiment-classifier.prompt"))
+;;          (output (if input (sor (chomp (sn (concat "openai-complete " (q prompt-fp) " " (q input))))))))
+;;     (if output
+;;         (if (interactive-p)
+;;             (message output)
+;;           output))))
 
-(defun pen-summarise-for-second-grader (input)
-  (interactive (list (my/selected-text)))
-  (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/summarize-for-2nd-grader.prompt")))
-    (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
+;; (defun pen-summarise-for-second-grader (input)
+;;   (interactive (list (my/selected-text)))
+;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/summarize-for-2nd-grader.prompt")))
+;;     (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
 
-(defun pen-obfuscate-language (input)
-  (interactive (list (my/selected-text)))
-  (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/obfuscate-language.prompt")))
-    (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
+;; (defun pen-obfuscate-language (input)
+;;   (interactive (list (my/selected-text)))
+;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/obfuscate-language.prompt")))
+;;     (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
 
-(defun pen-make-analogy (former latter)
-  (interactive (list (read-string-hist "analogy participant: ")
-                     (read-string-hist "analogy participant: ")))
-  (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/analogy.prompt")))
-    (etv (sn (concat "openai-complete " (q prompt-fp) " " (q former) " "
-                     (q latter) " | chomp")))))
+;; (defun pen-make-analogy (former latter)
+;;   (interactive (list (read-string-hist "analogy participant: ")
+;;                      (read-string-hist "analogy participant: ")))
+;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/analogy.prompt")))
+;;     (etv (sn (concat "openai-complete " (q prompt-fp) " " (q former) " "
+;;                      (q latter) " | chomp")))))
 
 
 (never
@@ -181,6 +181,7 @@
                                                              (list " "
                                                                    (list 'q (str2sym vs))))))))))))
                (message (concat "pen-mode: Loaded prompt function " func-name))))))
+(pen-generate-prompt-functions)
 
 
 (provide 'my-openai)
