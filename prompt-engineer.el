@@ -137,25 +137,34 @@
 
 (defalias 'cll 'cl-loop)
 
+
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory"
   (interactive)
   (let ((paths
-         (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*")))
+         (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*.prompt")))
     (cl-loop for path in paths do
              ;; results in a hash table
              (let* ((yaml (yamlmod-read-file path))
                     (title (ht-get yaml "title"))
                     (title-slug (slugify title))
-                    (vars (vector2list (ht-get yaml "varnames")))
+                    (vars (vector2list (ht-get yaml "vars")))
                     (var-slugs (mapcar 'slugify vars))
+                    (var-syms (mapcar 'str2sym var-slugs))
                     (func-name (concat "pen-" title-slug))
                     (iargs (cl-loop for v in vars collect `(read-string-hist ,(concat v ": ")))))
                ;; var names will have to be slugged, too
                (eval
-                `(defun ,func-name ,var-slugs
-                   (interactive ,iargs)
-                   (etv (chomp (sn ,(list "openai-complete " ,(s-join " \" \" " (mapcar (lambda (vs) var-slugs))) " | chomp"))))))))))
+                `(defun ,(str2sym func-name) ,var-syms
+                   (interactive ,(cons 'list iargs))
+                   (etv (chomp (sn ,(flatten-once
+                                     (list
+                                      (list 'concat "openai-complete " (q path))
+                                      (flatten-once (cl-loop for vs in var-slugs collect
+                                                             (list " "
+                                                                   (list 'q (str2sym vs)))))
+                                      (list " | chomp"))))))))
+               (message (concat "pen-mode: Loaded prompt function " func-name))))))
 
 
 (provide 'my-openai)
