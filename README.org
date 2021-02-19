@@ -57,7 +57,7 @@ creation, development, discovery and usage of prompts to a language model.
 |----------------+----------------|
 | <kbd>SPC</kbd> | =pen-generate= |
 
-*** prompts
+*** Free prompts to use
 https://github.com/mullikine/prompts/
 
 ** Current progress
