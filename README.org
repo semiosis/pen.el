@@ -50,6 +50,8 @@ Strawberries are like the ocean because:
   appreciated from a distance.
 #+END_SRC
 
+Ok... We can adjust the analogy =.prompt= file.
+
 * =prompt-engineer-mode= (=PEn=)
 
 Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
