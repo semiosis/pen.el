@@ -124,6 +124,7 @@
 (defset my-prompt-test (yamlmod-read-file (car (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*"))))
 (ht-get my-prompt-test "title")
 (ht-get my-prompt-test "vars")
+(mapcar 'slugify (ht-get my-prompt-test "vars"))
 
 (describe-hash 'my-prompt-test)
 
@@ -143,7 +144,8 @@
              (let* ((yaml (yamlmod-read-file path))
                     (title (ht-get yaml "title"))
                     (title-slug (slugify title))
-                    (vars (ht-get yaml "varnames")))
+                    (vars (ht-get yaml "varnames"))
+                    (var-slugs (mapcar 'slugify vars)))
                ;; var names will have to be slugged, too
                (buffer-file-name path)))))
 

@@ -20,4 +20,4 @@ inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
 vars:
-  - "passage"
+  - "movie title"
