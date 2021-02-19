@@ -43,14 +43,26 @@
 #+END_SRC
 
 ** Creating some analogies
-Strawberries are like the ocean because:
+*** Strawberries are like the ocean because:
 
 #+BEGIN_SRC text -n :async :results verbatim code
   both are systems whose properties are best 
   appreciated from a distance.
 #+END_SRC
 
+*** Strawberries are like the ocean because:
 Ok... We can adjust the analogy =.prompt= file.
+
+I have adjusted it with a temperature of 0.7
+so it can get really creative, and also
+adjusted the presence penalty to make it a bit
+more verbose.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+both need to be protected from pollution.
+#+END_SRC
+
+I actually really like this one.
 
 * =prompt-engineer-mode= (=PEn=)
 

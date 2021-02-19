@@ -16,12 +16,12 @@ prompt: |+
     
     <1> are like <2> in that
 engine: "davinci"
-temperature: 0.5
+temperature: 0.7
 max-tokens: 100
 top-p: 1
 frequency-penalty: 0.2
 # If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.4
+presence-penalty: 0.6
 best-of: 1
 stop-sequences:
   - "\n\n"
