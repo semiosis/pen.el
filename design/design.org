@@ -1,4 +1,9 @@
 * Design
+** Interactive functionality
+*** Function types
+**** Filter
+- Replaces the current text with the prompt output.
+
 ** What do I *need*
 *** Customization -- use built-in
 *** Control panel -- use transient for this, or some kind of buffer-local settings/configuration?
