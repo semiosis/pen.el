@@ -11,6 +11,10 @@ output of the prompt before it's sent to
 emacs.
 
 *** Quality-assurance check
+Specify a cli command which takes the API
+output as stdin and outputs a boolean (0 or 1
+exit code).
+
 *** Transformation
 i.e. Selc
 
