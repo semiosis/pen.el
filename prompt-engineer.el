@@ -126,9 +126,9 @@
   (interactive)
   (let ((paths
          (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*")))
-    (cl-loop for path in paths do (progn
-                                    
-                                    (buffer-file-name path)))))
+    (cl-loop for path in paths do
+     (let (())
+       (buffer-file-name path)))))
 
 
 (provide 'my-openai)
