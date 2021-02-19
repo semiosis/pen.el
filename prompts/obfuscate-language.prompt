@@ -1,3 +1,4 @@
+name: complicated explanation
 prompt: |+
   The human asks the AI to make a simple description more complicated. The AI responds by writing a verbose response full of jargon to explain a simple concept.
   

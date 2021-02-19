@@ -121,6 +121,10 @@
                      (q latter) " | chomp")))))
 
 
+(defset my-prompt-test (yamlmod-read-file (car (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*"))))
+
+(describe-hash 'my-prompt-test)
+
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory"
   (interactive)
@@ -128,7 +132,8 @@
          (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*")))
     (cl-loop for path in paths do
              ;; results in a hash table
-             (let ((yaml (yamlmod-read-file path)))
+             (let* ((yaml (yamlmod-read-file path))
+                    (title (ht-get yaml "name")))
                (buffer-file-name path)))))
 
 
