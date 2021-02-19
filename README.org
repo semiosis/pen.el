@@ -1,7 +1,7 @@
 * =prompt-engineer-mode= (=PEn=)
 
 Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
-creation, development, discovery and usage of prompts in your emacs.
+creation, development, discovery and usage of prompts to a language model.
 
 - Create elisp functions based on GPT-3 prompts
 - Chain GPT-3 queries together using keyboard macros and functions
