@@ -121,12 +121,13 @@
                      (q latter) " | chomp")))))
 
 
-(defset my-prompt-test (yamlmod-read-file (car (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*"))))
-(ht-get my-prompt-test "title")
-(cl-loop for v in (vector2list (ht-get my-prompt-test "vars")) collect `(read-string-hist ,(concat v ": ")))
-(mapcar 'slugify (ht-get my-prompt-test "vars"))
+(never
+ (defset my-prompt-test (yamlmod-read-file (car (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*"))))
+ (ht-get my-prompt-test "title")
+ (cl-loop for v in (vector2list (ht-get my-prompt-test "vars")) collect `(read-string-hist ,(concat v ": ")))
+ (mapcar 'slugify (ht-get my-prompt-test "vars"))
 
-(describe-hash 'my-prompt-test)
+ (describe-hash 'my-prompt-test))
 
 (defun pen-interactively-generate-prompt ()
   "A wizard for quickly building a prompt"
