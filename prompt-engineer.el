@@ -123,7 +123,7 @@
 
 (defset my-prompt-test (yamlmod-read-file (car (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*"))))
 (ht-get my-prompt-test "title")
-(ht-get my-prompt-test "vars")
+(cl-loop for v in (vector2list (ht-get my-prompt-test "vars")) collect `(read-string-hist ,(concat v ": ")))
 (mapcar 'slugify (ht-get my-prompt-test "vars"))
 
 (describe-hash 'my-prompt-test)
@@ -144,10 +144,15 @@
              (let* ((yaml (yamlmod-read-file path))
                     (title (ht-get yaml "title"))
                     (title-slug (slugify title))
-                    (vars (ht-get yaml "varnames"))
-                    (var-slugs (mapcar 'slugify vars)))
+                    (vars (vector2list (ht-get yaml "varnames")))
+                    (var-slugs (mapcar 'slugify vars))
+                    (func-name (concat "pen-" title-slug))
+                    (iargs (cl-loop for v in vars collect `(read-string-hist ,(concat v ": ")))))
                ;; var names will have to be slugged, too
-               (buffer-file-name path)))))
+               (eval
+                `(defun ,func-name ,var-slugs
+                   (interactive iargs)
+                   (etv (sn (concat "openai-complete " ,(s-join " " (mapcar 'q var-slugs)) " | chomp")))))))))
 
 
 (provide 'my-openai)
