@@ -1,3 +1,47 @@
+* Using =pen=
+** _How to crack an egg_ -- The obfuscated version
+#+BEGIN_SRC text -n :async :results verbatim code
+  In order to understand the process of how to
+  crack an egg, one must first understand the
+  egg itself.
+  
+  Eggs are oval objects which are comprised of
+  the remnants of expired cellular tissue, as
+  the human body is comprised.
+  
+  The origin of the egg can be traced back to
+  the reproductive organ of a female bird.
+  
+  Once the egg is laid, it is then incubated, a
+  process which can take several weeks.
+  
+  The term “founders” refers in this case to a
+  period where the human
+#+END_SRC
+
+*** Now let's summarize that paragraph for a 2nd grader.
+#+BEGIN_SRC text -n :async :results verbatim code
+  An egg is a small round object that comes from
+  a hen.
+  
+  It is made of the stuff that comes out of the
+  hen's butt.
+  
+  The egg is like the human body, because the
+  body is also made of the stuff that comes out
+  of the butt.
+  
+  The egg is incubated for a few weeks.
+  
+  This means that it is kept warm so it can
+  grow.
+  
+  The egg is like a human baby, because a human
+  baby is also kept warm so it can grow.
+  
+  The hen is
+#+END_SRC
+
 * =prompt-engineer-mode= (=PEn=)
 
 Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
