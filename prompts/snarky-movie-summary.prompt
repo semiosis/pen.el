@@ -1,3 +1,4 @@
+title: "snarky movie summary"
 prompt: |+
   Movie: Lord of the Rings
   Snarky summary: Group spends 9 hours returning jewlery
@@ -24,5 +25,5 @@ stop-sequences:
 inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
-varnames:
-  - "title"
+vars:
+  - "movie title"
