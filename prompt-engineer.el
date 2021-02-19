@@ -135,6 +135,8 @@
   (interactive)
   (let* ((meta (read-string "Meta description (The human asks the AI to etc.)\":")))))
 
+(defalias 'cll 'cl-loop)
+
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory"
   (interactive)
@@ -152,8 +154,8 @@
                ;; var names will have to be slugged, too
                (eval
                 `(defun ,func-name ,var-slugs
-                   (interactive iargs)
-                   (etv (sn (concat "openai-complete " ,(s-join " " (mapcar 'q var-slugs)) " | chomp")))))))))
+                   (interactive ,iargs)
+                   (etv (chomp (sn ,(list "openai-complete " ,(s-join " \" \" " (mapcar (lambda (vs) var-slugs))) " | chomp"))))))))))
 
 
 (provide 'my-openai)
