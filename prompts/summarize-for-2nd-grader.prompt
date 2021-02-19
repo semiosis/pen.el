@@ -1,3 +1,4 @@
+title: "eli5 explain like I'm five"
 prompt: |+
   My second grader asked me what this passage means:
   ###
@@ -17,5 +18,5 @@ stop-sequences:
 inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
-varnames:
+vars:
   - "passage"
