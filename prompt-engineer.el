@@ -162,8 +162,7 @@
                                       (list 'concat "openai-complete " (q path))
                                       (flatten-once (cl-loop for vs in var-slugs collect
                                                              (list " "
-                                                                   (list 'q (str2sym vs)))))
-                                      (list " | chomp"))))))))
+                                                                   (list 'q (str2sym vs))))))))))))
                (message (concat "pen-mode: Loaded prompt function " func-name))))))
 
 
