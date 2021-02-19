@@ -54,28 +54,14 @@ creation, development, discovery and usage of prompts in your emacs.
 | <kbd>SPC</kbd> | =pen-generate= |
 
 ** Current progress
-#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (defun pen-tweet-sentiment-classifier (input)
-    (interactive (list (my/selected-text)))
-    (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/tweet-sentiment-classifier.prompt"))
-           (output (if input (sor (chomp (sn (concat "openai-complete " (q prompt-fp) " " (q input))))))))
-      (if output
-          (if (interactive-p)
-              (message output)
-            output))))
-  
-  (defun pen-summarise-for-second-grader (input)
-    (interactive (list (my/selected-text)))
-    (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/summarize-for-2nd-grader.prompt")))
-      (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
-  
-  (defun pen-make-analogy (former latter)
-    (interactive (list (read-string-hist "analogy participant: ")
-                       (read-string-hist "analogy participant: ")))
-    (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/analogy.prompt")))
-      (etv (sn (concat "openai-complete " (q prompt-fp) " " (q former) " "
-                       (q latter) " | chomp")))))
-#+END_SRC
++ Implementation [1/1]
+  - [X] emacs-lisp functions are generated from YAML =.prompt= files
++ Design [1/1]
+  - [X] Default behaviour of generated functions
+    - [X] First argument may be selection
+    - [ ]If selection then text is replaced by default
++ Portability [0/1]
+  - [-] Use built-in elisp functions
 
 ** Appendix
 [[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
