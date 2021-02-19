@@ -1,3 +1,4 @@
+title: "movie title to emoji"
 prompt: |+
     Transformers: 🚗🤖
     Wonder Woman: 👸🏻👸🏼👸🏽👸🏾👸🏿
@@ -18,5 +19,5 @@ stop-sequences:
 inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
-varnames:
+vars:
   - "passage"
