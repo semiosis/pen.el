@@ -127,8 +127,9 @@
   (let ((paths
          (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*")))
     (cl-loop for path in paths do
-     (let (())
-       (buffer-file-name path)))))
+             ;; results in a hash table
+             (let ((yaml (yamlmod-read-file path)))
+               (buffer-file-name path)))))
 
 
 (provide 'my-openai)
