@@ -62,6 +62,12 @@
   :group 'prompt-engineer
   :initialize #'custom-initialize-default)
 
+(defcustom pen-prompt-directory ""
+  "Directory where .prompt files are located"
+  :type 'string
+  :group 'prompt-engineer
+  :initialize #'custom-initialize-default)
+
 (defvar-local pen-engine nil)
 
 (defvar-local pen-frequency-penalty nil
@@ -79,7 +85,7 @@
 
 (defvar-local pen-show-probabilities nil)
 
-(defvar-local pen-prompt-directory nil)
+(setq pen-prompt-directory "/home/shane/source/git/mullikine/prompt-engineer-mode/prompts/")
 
 ;; + States
 ;;   - Off
@@ -152,7 +158,18 @@
                     (var-slugs (mapcar 'slugify vars))
                     (var-syms (mapcar 'str2sym var-slugs))
                     (func-name (concat "pen-" title-slug))
-                    (iargs (cl-loop for v in vars collect `(read-string-hist ,(concat v ": ")))))
+                    (iargs (let ((iteration 0))
+                             (cl-loop for v in vars do
+                                      (progn
+                                        (setq iteration (+ 1 iteration))
+                                        (message (str iteration)))
+                                      collect
+                                      (if (equal 1 iteration)
+                                          ;; The first argument may be captured through selection
+                                          `(if (selectionp)
+                                               (my/selected-text)
+                                             (read-string-hist ,(concat v ": ")))
+                                        `(read-string-hist ,(concat v ": ")))))))
                ;; var names will have to be slugged, too
                (eval
                 `(defun ,(str2sym func-name) ,var-syms
