@@ -40,8 +40,6 @@ creation, development, discovery and usage of prompts to a language model.
     1  pip3 install openai
 
 
-<a id="org452533d"></a>
-
 ### `openai` API key
 
 
