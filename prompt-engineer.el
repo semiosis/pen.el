@@ -85,7 +85,7 @@
 
 (defvar-local pen-show-probabilities nil)
 
-(setq pen-prompt-directory "/home/shane/source/git/mullikine/prompt-engineer-mode/prompts")
+(setq pen-prompt-directory "/home/shane/source/git/mullikine/prompts/prompts")
 
 ;; + States
 ;;   - Off
@@ -148,7 +148,7 @@
   "Generate prompt functions for the files in the prompts directory"
   (interactive)
   (let ((paths
-         (glob (concat pen-prompt-directory "/*.prompt"))))
+         (-non-nil (mapcar 'sor (glob (concat pen-prompt-directory "/*.prompt"))))))
     (cl-loop for path in paths do
              ;; results in a hash table
              (let* ((yaml (yamlmod-read-file path))
