@@ -1,0 +1,3 @@
+[submodule "prompts"]
+	path = prompts
+	url = https://github.com/mullikine/prompts
