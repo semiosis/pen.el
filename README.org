@@ -56,6 +56,8 @@ via sets of examples.
 
 https://github.com/mullikine/examplary
 
+** Demonstration
+
 # [![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/14)
 
 #+BEGIN_EXPORT html
