@@ -56,6 +56,11 @@ via sets of examples.
 
 https://github.com/mullikine/examplary
 
+** Prompts
+This is the repository containing my personal curation of GPT-3 prompts.
+
+https://github.com/mullikine/prompts/
+
 ** Demonstration
 
 # [![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/14)
