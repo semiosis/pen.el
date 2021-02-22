@@ -67,11 +67,11 @@ creation, development, discovery and usage of prompts to a language model.
 
 -   Implementation <code>[1/1]</code>
     -   [X] emacs-lisp functions are generated from YAML `.prompt` files
--   Design <code>[1/2]</code>
+-   Design <code>[2/2]</code>
     -   [X] Default behaviour of generated functions
         -   [X] First argument may be selection
         -   [ ]If selection then text is replaced by default
-    -   [ ] Generate functions of composed prompts
+    -   [X] Generate functions of composed prompts
     -   Development workflow
     -   Search workflow
 -   Portability <code>[0/1]</code>
