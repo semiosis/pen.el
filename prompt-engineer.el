@@ -202,7 +202,9 @@
   (let ((f (fz pen-prompt-functions)))
     (if f
         (call-interactively (str2sym f)))))
+(defalias 'camille-complete 'pen-run-prompt-function)
 
+;; Camille-complete (because I press SPC to replace
 (define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
 (define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
 
