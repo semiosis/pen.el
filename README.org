@@ -43,7 +43,7 @@ enhancing an emacs-based messenger client with
 GPT-3 capabilities, such as emoji generation.
 
 *** Pen Conversation Mode
-=prompt-conversation-mode= is a major mode designed to make facilitate
+=prompt-conversation-mode= is a major mode designed to facilitate
 ongoing conversation with a prompt-based GPT-3 chatbot.
 
 ** DSLs
