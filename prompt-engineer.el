@@ -144,6 +144,9 @@
 (defalias 'cll 'cl-loop)
 
 
+(defvar pen-prompt-functions nil)
+
+
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory"
   (interactive)
@@ -171,21 +174,34 @@
                                              (read-string-hist ,(concat v ": ")))
                                         `(read-string-hist ,(concat v ": ")))))))
                ;; var names will have to be slugged, too
-               (eval
-                `(defun ,(str2sym func-name) ,var-syms
-                   (interactive ,(cons 'list iargs))
-                   (etv (chomp (sn ,(flatten-once
-                                     (list
-                                      (list 'concat "openai-complete " (q path))
-                                      (flatten-once (cl-loop for vs in var-slugs collect
-                                                             (list " "
-                                                                   (list 'q (str2sym vs))))))))))))
+               (add-to-list 'pen-prompt-functions
+                            (eval
+                             `(defun ,(str2sym func-name) ,var-syms
+                                (interactive ,(cons 'list iargs))
+                                (etv (chomp (sn ,(flatten-once
+                                                  (list
+                                                   (list 'concat "openai-complete " (q path))
+                                                   (flatten-once (cl-loop for vs in var-slugs collect
+                                                                          (list " "
+                                                                                (list 'q (str2sym vs)))))))))))))
                (message (concat "pen-mode: Loaded prompt function " func-name))))))
 (pen-generate-prompt-functions)
 
 
 (define-derived-mode prompt-description-mode yaml-mode "Prompt"
   "Prompt description mode")
+
+(define-key global-map (kbd "H-TAB") 'pen-generate-prompt-functions)
+
+
+(defun pen-run-prompt-function ()
+  (interactive)
+  (let ((f (fz pen-prompt-functions)))
+    (if f
+        (call-interactively (str2sym f)))))
+
+(define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
+(define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
 
 
 (provide 'my-openai)
