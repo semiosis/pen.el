@@ -69,11 +69,12 @@ https://github.com/mullikine/prompts/
 ** Current progress
 + Implementation [1/1]
   - [X] emacs-lisp functions are generated from YAML =.prompt= files
-+ Design [1/2]
++ Design [2/2]
   - [X] Default behaviour of generated functions
     - [X] First argument may be selection
     - [ ]If selection then text is replaced by default
-  - [ ] Generate functions of composed prompts
+  - [X] Generate functions of composed prompts
+  - [ ] Generate prompts from interactive keyboard macros
   - Development workflow
   - Search workflow
 + Portability [0/1]
