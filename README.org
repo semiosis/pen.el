@@ -20,7 +20,7 @@ creation, development, discovery and usage of prompts to a language model.
   - Programmatically navigate GPT-3
   - Create useful prompts
   - Prototype NLP tasks with GPT-3
-  - Substitute external tools for prototypes
+    - Substitute external tools for prototypes
 
 # [![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/14)
 
