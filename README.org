@@ -1,4 +1,4 @@
-* =prompt-engineer-mode= (=PEn=)
+* =pen.el= : A package for prompt engineering in emacs
 
 Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
 creation, development, discovery and usage of prompts to a language model.
@@ -52,7 +52,7 @@ creation, development, discovery and usage of prompts to a language model.
 *** Enable =prompt-engineerer-mode= globally (on all buffers)
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (prompt-engineer-mode 1)
+  (pen-mode 1)
 
   ;; Alternatively
   (pen-mode 1)
@@ -181,7 +181,7 @@ I actually really like this one.
       (read-string-hist "analogy participant: ")))
     (let*
         ((prompt-fp
-          (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/analogy.prompt")))
+          (umn "$MYGIT/mullikine/pen-mode/prompts/analogy.prompt")))
       (etv
        (sn
         (concat "openai-complete "

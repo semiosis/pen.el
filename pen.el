@@ -1,18 +1,21 @@
+;; TODO Make the keybindings map to pen-mode-map
+;; TODO Rename pen-mode to pen-mode -- it's far more convenient
+
 ;; gy -E "openai api engines.generate -h | pavs"
 
-(defvar prompt-engineer-mode-map (make-sparse-keymap)
-  "Keymap for `prompt-engineer-mode'.")
-;; (makunbound 'prompt-engineer-mode)
-(defvar-local prompt-engineer-mode nil)
+(defvar pen-mode-map (make-sparse-keymap)
+  "Keymap for `pen-mode'.")
+;; (makunbound 'pen-mode)
+(defvar-local pen-mode nil)
 
-(define-minor-mode prompt-engineer-mode
+(define-minor-mode pen-mode
   "Mode for working with language models in your  buffers."
   :global t
   :init-value t
   :lighter " pen"
-  :keymap prompt-engineer-mode-map)
+  :keymap pen-mode-map)
 
-;; (define-globalized-mode global-prompt-engineer-mode prompt-engineer-mode prompt-engineer-mode)
+;; (define-globalized-mode global-pen-mode pen-mode pen-mode)
 
 ;; TODO Make a shell script for querying the OpenAI API
 ;; $SCRIPTS/openai-curl
@@ -30,11 +33,11 @@
 ;;         )))
 
 
-;; (define-key prompt-engineer-mode-map (kbd "<up>") 'pen-generate)
-;; (define-key prompt-engineer-mode-map (kbd "<down>") (lm (tsk "C-n")))
-;; (define-key prompt-engineer-mode-map (kbd "<right>") (lm (tsk "M-3")))
+;; (define-key pen-mode-map (kbd "<up>") 'pen-generate)
+;; (define-key pen-mode-map (kbd "<down>") (lm (tsk "C-n")))
+;; (define-key pen-mode-map (kbd "<right>") (lm (tsk "M-3")))
 
-(prompt-engineer-mode 1)
+(pen-mode 1)
 
 ;; TODO Create a transient mode for quickly setting prompt settings
 
@@ -97,12 +100,12 @@
 
   )
 
-(provide 'prompt-engineer-mode)
+(provide 'pen-mode)
 
 
 ;; (defun pen-tweet-sentiment-classifier (input)
 ;;   (interactive (list (my/selected-text)))
-;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/tweet-sentiment-classifier.prompt"))
+;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/pen-mode/prompts/tweet-sentiment-classifier.prompt"))
 ;;          (output (if input (sor (chomp (sn (concat "openai-complete " (q prompt-fp) " " (q input))))))))
 ;;     (if output
 ;;         (if (interactive-p)
@@ -111,24 +114,24 @@
 
 ;; (defun pen-summarise-for-second-grader (input)
 ;;   (interactive (list (my/selected-text)))
-;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/summarize-for-2nd-grader.prompt")))
+;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/pen-mode/prompts/summarize-for-2nd-grader.prompt")))
 ;;     (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
 
 ;; (defun pen-obfuscate-language (input)
 ;;   (interactive (list (my/selected-text)))
-;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/obfuscate-language.prompt")))
+;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/pen-mode/prompts/obfuscate-language.prompt")))
 ;;     (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
 
 ;; (defun pen-make-analogy (former latter)
 ;;   (interactive (list (read-string-hist "analogy participant: ")
 ;;                      (read-string-hist "analogy participant: ")))
-;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/prompt-engineer-mode/prompts/analogy.prompt")))
+;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/pen-mode/prompts/analogy.prompt")))
 ;;     (etv (sn (concat "openai-complete " (q prompt-fp) " " (q former) " "
 ;;                      (q latter) " | chomp")))))
 
 
 (never
- (defset my-prompt-test (yamlmod-read-file (car (glob "$MYGIT/mullikine/prompt-engineer-mode/prompts/*"))))
+ (defset my-prompt-test (yamlmod-read-file (car (glob "$MYGIT/mullikine/pen-mode/prompts/*"))))
  (ht-get my-prompt-test "title")
  (cl-loop for v in (vector2list (ht-get my-prompt-test "vars")) collect `(read-string-hist ,(concat v ": ")))
  (mapcar 'slugify (ht-get my-prompt-test "vars"))
@@ -137,7 +140,7 @@
 
 (defun pen-interactively-generate-prompt ()
   "A wizard for quickly building a prompt"
-  ;; $MYGIT/mullikine/prompt-engineer-mode/prompts/obfuscate-language.prompt
+  ;; $MYGIT/mullikine/pen-mode/prompts/obfuscate-language.prompt
   (interactive)
   (let* ((meta (read-string "Meta description (The human asks the AI to etc.)\":")))))
 
@@ -207,6 +210,5 @@
 ;; Camille-complete (because I press SPC to replace
 (define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
 (define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
-
 
 (provide 'my-openai)
