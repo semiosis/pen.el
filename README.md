@@ -1,4 +1,4 @@
-# `pen-mode` (`PEn`)
+# `pen.el` (`PEn`)
 
 Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
 creation, development, discovery and usage of prompts to a language model.
@@ -57,10 +57,10 @@ creation, development, discovery and usage of prompts to a language model.
 
 ### Enable `prompt-engineerer-mode` globally (on all buffers)
 
-    1  (pen-mode 1)
+    1  (pen.el 1)
     2  
     3  ;; Alternatively
-    4  (pen-mode 1)
+    4  (pen.el 1)
 
 
 ## Current progress
@@ -186,7 +186,7 @@ I actually really like this one.
     26      (read-string-hist "analogy participant: ")))
     27    (let*
     28        ((prompt-fp
-    29          (umn "$MYGIT/mullikine/pen-mode/prompts/analogy.prompt")))
+    29          (umn "$MYGIT/mullikine/pen.el/prompts/analogy.prompt")))
     30      (etv
     31       (sn
     32        (concat "openai-complete "

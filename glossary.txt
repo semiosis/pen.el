@@ -2,7 +2,7 @@ prompt description
 prompt description file
 prompt description YAML
 .prompt
-    [#pen-mode] 
+    [#pen.el] 
 
     A yaml containing the definition of an
     individual prompt.

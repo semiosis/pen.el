@@ -88,10 +88,10 @@ https://github.com/mullikine/examplary
 *** Enable =prompt-engineerer-mode= globally (on all buffers)
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (pen-mode 1)
+  (pen.el 1)
 
   ;; Alternatively
-  (pen-mode 1)
+  (pen.el 1)
 #+END_SRC
 
 ** Default Key Bindings
@@ -217,7 +217,7 @@ I actually really like this one.
       (read-string-hist "analogy participant: ")))
     (let*
         ((prompt-fp
-          (umn "$MYGIT/mullikine/pen-mode/prompts/analogy.prompt")))
+          (umn "$MYGIT/mullikine/pen.el/prompts/analogy.prompt")))
       (etv
        (sn
         (concat "openai-complete "
