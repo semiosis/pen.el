@@ -1,4 +1,4 @@
-* =pen.el= : A package for _prompt engineering_ in emacs
+* =pen.el= : _prompt engineering_ in emacs
 =pen.el= facilitates the creation,
 development, discovery and usage of prompts to
 a Language Model such as GPT-3.
