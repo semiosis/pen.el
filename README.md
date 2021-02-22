@@ -16,6 +16,12 @@ creation, development, discovery and usage of prompts to a language model.
 | ------- |
 | GPL-3   |
 
+- Goals
+  - Programmatically navigate GPT-3
+  - Create useful prompts
+  - Prototype NLP tasks with GPT-3
+    - Substitute external tools for prototypes
+
 [![asciicast](https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi.png)](https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi)
 
 ## Works with
