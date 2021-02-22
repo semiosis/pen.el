@@ -191,7 +191,10 @@
 (define-derived-mode prompt-description-mode yaml-mode "Prompt"
   "Prompt description mode")
 
-(define-key global-map (kbd "H-TAB") 'pen-generate-prompt-functions)
+
+;; (define-key global-map (kbd "H-TAB") nil)
+(define-key global-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
+(define-key global-map (kbd "H-TAB r") 'pen-run-prompt-function)
 
 
 (defun pen-run-prompt-function ()
