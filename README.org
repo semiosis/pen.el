@@ -58,7 +58,9 @@ via sets of examples.
 https://github.com/mullikine/examplary
 
 ** Prompts
-This is the repository containing my personal curation of GPT-3 prompts that are formatted for =pen.el=.
+This is the repository containing my personal
+curation of GPT-3 prompts that are formatted
+for =pen.el= and =examplary=.
 
 https://github.com/mullikine/prompts/
 
