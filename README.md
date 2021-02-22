@@ -47,9 +47,10 @@ which are expected.
 enhancing an emacs-based messenger client with
 GPT-3 capabilities, such as emoji generation.
 
-### Pen Chatbot Mode
+### Pen Conversation Mode
+`prompt-conversation-mode` is a major mode designed to make facilitate
+ongoing conversation with a prompt-based GPT-3 chatbot.
 
-`prompt-chatbot-mode` is a major mode based on text
 
 ## DSLs
 
