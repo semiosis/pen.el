@@ -1,4 +1,4 @@
-# `pen.el` : A package for <span class="underline">prompt engineering</span> in emacs
+# `pen.el` : <span class="underline">Prompt engineering</span> in emacs
 
 `pen.el` facilitates the creation,
 development, discovery and usage of prompts to
