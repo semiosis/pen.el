@@ -1,7 +1,7 @@
 * =pen.el= : _Prompt engineering_ in emacs
 =pen.el= facilitates the creation,
 development, discovery and usage of prompts to
-a Language Model such as GPT-3.
+a LM such as GPT-3.
 
 - Create elisp functions based on GPT-3 prompts
 - Chain GPT-3 queries together using keyboard macros and functions
