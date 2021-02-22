@@ -1,7 +1,8 @@
-# `pen.el` (`PEn`)
+# `pen.el` : A package for <span class="underline">prompt engineering</span> in emacs
 
-Prompt-Engineer Mode is a global minor mode for emacs that facilitates the
-creation, development, discovery and usage of prompts to a language model.
+`pen.el` facilitates the creation,
+development, discovery and usage of prompts to
+a Language Model such as GPT-3.
 
 -   Create elisp functions based on GPT-3 prompts
 -   Chain GPT-3 queries together using keyboard macros and functions
@@ -15,20 +16,63 @@ creation, development, discovery and usage of prompts to a language model.
 | License |
 | ------- |
 | GPL-3   |
+ 
+-   Goals
+    -   Programmatically navigate GPT-3
+    -   Create useful prompts
+    -   Prototype NLP tasks with GPT-3
+        -   Substitute external tools for prototypes
 
-- Goals
-  - Programmatically navigate GPT-3
-  - Create useful prompts
-  - Prototype NLP tasks with GPT-3
-    - Substitute external tools for prototypes
+## Modes
+
+### Prompt-Engineering Minor Mode
+
+`prompt-engineering-mode` is a global minor
+mode for emacs that provides keybindings for
+creating and executing prompts generally
+across emacs.
+
+### Prompt Description Major Mode
+
+`prompt-description-mode` is a major mode for
+editing `.prompt` files.
+
+The `.prompt` file format is based on YAML and
+an associated schema, which defines the keys
+which are expected.
+
+### Pen Messenger Minor Mode
+
+`pen-messenger-mode` is a minor mode for
+enhancing an emacs-based messenger client with
+GPT-3 capabilities, such as emoji generation.
+
+### Pen Chatbot Mode
+
+`prompt-chatbot-mode` is a major mode based on text
+
+## DSLs
+
+### `examplary`
+
+Examplary is a Domain Specific Language, or
+set of macros embedded in lisp which
+facilitate the integration of prompts as
+functions into the language, the
+composition of them, the generation of prompts
+via sets of examples.
+
+<https://github.com/mullikine/examplary>
+
+## Demonstration
 
 [![asciicast](https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi.png)](https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi)
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi.svg" /></a> -->
 
 ## Works with
 
 -   OpenAI API (GPT-3)
     -   <https://beta.openai.com/>
-
 
 ### Planned
 
@@ -40,20 +84,16 @@ creation, development, discovery and usage of prompts to a language model.
 -   OpenAI API (GPT-4)
     -   <https://beta.openai.com/>
 
-
 ## Requirements
-
 
 ### `openai` `pip` library and command
 
     1  pip3 install openai
 
-
 ### `openai` API key
 
 
 ## Usage
-
 
 ### Enable `prompt-engineerer-mode` globally (on all buffers)
 
@@ -62,6 +102,11 @@ creation, development, discovery and usage of prompts to a language model.
     3  ;; Alternatively
     4  (pen.el 1)
 
+## Default Key Bindings
+
+### Free prompts to use
+
+<https://github.com/mullikine/prompts/>
 
 ## Current progress
 
@@ -72,6 +117,7 @@ creation, development, discovery and usage of prompts to a language model.
         -   [X] First argument may be selection
         -   [ ]If selection then text is replaced by default
     -   [X] Generate functions of composed prompts
+    -   [ ] Generate prompts from interactive keyboard macros
     -   Development workflow
     -   Search workflow
 -   Portability <code>[0/1]</code>
@@ -107,8 +153,6 @@ creation, development, discovery and usage of prompts to a language model.
     15  The term “founders” refers in this case to a
     16  period where the human
 
-
-<a id="orgca7d14c"></a>
 
 ### Now let's summarize that paragraph for a 2nd grader.
 
@@ -204,4 +248,3 @@ I actually really like this one.
     44    (pen-make-analogy)
     45  modifier-cache
     46    ((0 . pen-make-analogy))
-
