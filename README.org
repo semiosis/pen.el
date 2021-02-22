@@ -18,7 +18,7 @@ creation, development, discovery and usage of prompts to a language model.
 
 + Goals
   - Programmatically navigate GPT-3
-  - create useful prompts, substitute prompts and external tools for NLP tasks
+  - Create useful prompts, substitute prompts and external tools for NLP tasks
 
 # [![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/14)
 
