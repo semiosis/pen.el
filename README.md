@@ -51,6 +51,9 @@ GPT-3 capabilities, such as emoji generation.
 `prompt-conversation-mode` is a major mode designed to make facilitate
 ongoing conversation with a prompt-based GPT-3 chatbot.
 
+### Training Mode
+#### Fine-tuning
+- http://github.com/mullikine/fine-tuning-gpt-3
 
 ## DSLs
 
