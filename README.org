@@ -47,6 +47,8 @@ GPT-3 capabilities, such as emoji generation.
 ongoing conversation with a prompt-based GPT-3 chatbot.
 
 *** Training Mode
+The goal of this mode is to facilitate the workflow of training on OpenAI's API.
+
 **** Fine-tuning
 - http://github.com/mullikine/fine-tuning-gpt-3
 
