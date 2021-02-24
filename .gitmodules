@@ -1,3 +1,6 @@
 [submodule "prompts"]
 	path = prompts
 	url = https://github.com/mullikine/prompts
+[submodule "fine-tuning"]
+	path = fine-tuning
+	url = https://github.com/mullikine/fine-tuning-gpt-3
