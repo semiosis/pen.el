@@ -48,7 +48,7 @@ ongoing conversation with a prompt-based GPT-3 chatbot.
 
 *** Training Mode
 **** Fine-tuning
-http://github.com/mullikine/fine-tuning-gpt-3
+- http://github.com/mullikine/fine-tuning-gpt-3
 
 ** DSLs
 *** =examplary=
