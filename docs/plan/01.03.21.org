@@ -23,6 +23,9 @@
 - tags (tag list)
   - prompt-manipulation
     - This flag specifies that this prompt is intended for modifying prompts. That makes it easy to search for.
+- similar
+  - This could be used for benchmarking.
+    It's a list of other prompts which attempt to perform the same task.
 ** prompts
 - generate prompt
   - allegory
