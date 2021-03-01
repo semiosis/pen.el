@@ -3,7 +3,7 @@
 ** features
 - calculate approximate cost and N API calls
 - Estimate factuality
-  - Extract facts, display N/M for how many facts were extracted and their orientation M.
+  - Extract facts, display N/M for how many facts were extracted (N) and their orientation (M).
 
 * TODO todo
 - start committing my prompts to a database
