@@ -110,7 +110,7 @@ Haskell functions (including the 'have a good day' monad.
 - loop
   - This would be useful for generating more cost-effective prompts.
 
-* =pentext=
+* =pentext= (old)
 Not sure what the use case is here currently.
 
 - This is a document format that contains and evaluates to the document as it is meant to be viewed.
