@@ -1,5 +1,7 @@
 # `pen.el` : Paint in prose
+
 ## <span class="underline">Prompt engineering</span> in emacs
+
 `pen.el` facilitates the creation,
 development, discovery and usage of prompts to
 a Language Model such as GPT-3.
