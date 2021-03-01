@@ -14,21 +14,23 @@
   - generate command from vim description
 - =.prompt= key for flag (design pattern)
   - For fuzzy searching
-- recipe generation
-  - request ingredients via interactive function
-  - brownie generator
 - python generators
 - reversible flag should generate 2 functions
-- musical tones
 - parameterise
   - these were the parameterise
   - these are the new params
   - e.g. change this text from about X to about Y.
     - This is useful for prototyping prompts
+** =.prompt= key flags
+  - completer context N tokens prior
+** prompts
+- mediate
+- activity given some interests
 - code-gen
   - sh
   - python
   - vim
-- prompt for an activity given some interests
-- prompt key flags
-  - completer context N tokens prior
+- musical tones
+- recipe generation
+  - request ingredients via interactive function
+  - brownie generator
