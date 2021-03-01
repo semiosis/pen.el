@@ -95,7 +95,9 @@
 - generated text should retain information on what generated it
 
 * Meta-text
-- new text format for specifying all transformation functions as well as input and output. Memoised - results embedded in format
+- new text format for specifying all
+  transformation functions as well as input and
+  output. Memoised - results embedded in format
 
 * =examplary=
 - blends prompts
