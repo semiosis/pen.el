@@ -57,6 +57,8 @@ The goal of this mode is to facilitate the workflow of training on OpenAI's API.
 #### Fine-tuning
 - http://github.com/mullikine/fine-tuning-gpt-3
 
+[[./fine-tuning/puns/README.org]]
+
 ## DSLs
 
 ### `examplary`

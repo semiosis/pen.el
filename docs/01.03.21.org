@@ -42,3 +42,17 @@
 - Search for lyrics
 
 * =pen.el=
+- emulate filter script
+- bisect parameters
+  - parameter search
+- construct prompt
+  - command that generated it
+    - pick a pattern, generate prompt
+      - fuzzy select the pattern
+- tabulated list mode for prompt functions
+- gantt chart
+- diagram of components ecosystem
+- prompt database / prompthub
+  - create github repo with your own prompts
+- document design mode
+  - structure a document using parameters, sentiment

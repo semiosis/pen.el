@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+camille-complete	pen.el	/^(defalias 'camille-complete 'pen-run-prompt-function)$/;"	f
+cll	pen.el	/^(defalias 'cll 'cl-loop)$/;"	f
+global-map	pen.el	/^(define-key global-map (kbd "H-TAB g") 'pen-generate-prompt-functions)$/;"	f
+global-map	pen.el	/^(define-key global-map (kbd "H-TAB r") 'pen-run-prompt-function)$/;"	f
+load-prompts	pen.el	/^(defun load-prompts ()$/;"	f
+pen-best-of	pen.el	/^(defvar-local pen-best-of nil)$/;"	f
+pen-engine	pen.el	/^(defvar-local pen-engine nil)$/;"	f
+pen-frequency-penalty	pen.el	/^(defvar-local pen-frequency-penalty nil$/;"	f
+pen-generate-prompt-functions	pen.el	/^(defun pen-generate-prompt-functions ()$/;"	f
+pen-inject-restart-text	pen.el	/^(defvar-local pen-inject-restart-text nil)$/;"	f
+pen-inject-start-text	pen.el	/^(defvar-local pen-inject-start-text nil)$/;"	f
+pen-interactively-generate-prompt	pen.el	/^(defun pen-interactively-generate-prompt ()$/;"	f
+pen-openai-key	pen.el	/^(defcustom pen-openai-key ""$/;"	f
+pen-openai-key-location	pen.el	/^(defcustom pen-openai-key-location ""$/;"	f
+pen-presence-penalty	pen.el	/^(defvar-local pen-presence-penalty nil)$/;"	f
+pen-prompt-directory	pen.el	/^(defcustom pen-prompt-directory ""$/;"	f
+pen-prompt-functions	pen.el	/^(defvar pen-prompt-functions nil)$/;"	f
+pen-run-prompt-function	pen.el	/^(defun pen-run-prompt-function ()$/;"	f
+pen-show-probabilities	pen.el	/^(defvar-local pen-show-probabilities nil)$/;"	f
+pen-stop-sequences	pen.el	/^(defvar-local pen-stop-sequences nil)$/;"	f
+pen.el	pen.el	/^(define-minor-mode pen.el$/;"	f
+pen.el	pen.el	/^(defvar-local pen.el nil)$/;"	f
+pen.el-map	pen.el	/^(defvar pen.el-map (make-sparse-keymap)$/;"	f
+prompt-description-mode	pen.el	/^(define-derived-mode prompt-description-mode yaml-mode "Prompt"$/;"	f
+selected-keymap	pen.el	/^(define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)$/;"	f
+selected-keymap	pen.el	/^(define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)$/;"	f
+stdin_exists	scripts/openai-complete	/^stdin_exists() {$/;"	f
