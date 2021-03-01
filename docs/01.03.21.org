@@ -25,3 +25,10 @@
   - these are the new params
   - e.g. change this text from about X to about Y.
     - This is useful for prototyping prompts
+- code-gen
+  - sh
+  - python
+  - vim
+- prompt for an activity given some interests
+- prompt key flags
+  - completer context N tokens prior
