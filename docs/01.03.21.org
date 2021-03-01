@@ -4,7 +4,6 @@
 - i should start pseudocoding in haskell
 
 * Prompt ideas
-
 - generate prompt
   - allegory
 - =.prompt= key for what command generalised it.
