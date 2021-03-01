@@ -1,3 +1,5 @@
+* =pen.el= Paint in prose
+
 * perspective
 - haskell is very important to be using while working with prompts
 - haskell should be easy to debug once i am familiar
