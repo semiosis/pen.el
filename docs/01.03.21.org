@@ -119,9 +119,6 @@ Based on racket.
 - It allows for re-evaluation.
 - The use-case is templates.
 
-* =text=
-- A document format for generating prompts.
-
 * =pentex=
 Latex library similar to =pentext=.
 
