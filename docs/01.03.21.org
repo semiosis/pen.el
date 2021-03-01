@@ -12,8 +12,6 @@
   - generate description from vim command
 - vim command generation
   - generate command from vim description
-- =.prompt= key for flag (design pattern)
-  - For fuzzy searching
 - python generators
 - reversible flag should generate 2 functions
 - parameterise
@@ -23,6 +21,8 @@
     - This is useful for prototyping prompts
 ** =.prompt= key flags
   - completer context N tokens prior
+  - =.prompt= key for flag (design pattern)
+    - For fuzzy searching
 ** prompts
 - mediate
 - activity given some interests
