@@ -1,3 +1,8 @@
+* perspective
+- haskell is very important to be using while working with prompts
+- haskell should be easy to debug once i am familiar
+- i should start pseudocoding in haskell
+
 * Prompt ideas
 - translate morse code
 - generate prompt
@@ -7,3 +12,12 @@
   - generate description from vim command
 - vim command generation
   - generate command from vim description
+- =.prompt= key for flag (design pattern)
+  - For fuzzy searching
+- recipe generation
+  - request ingredients via interactive function
+  - brownie generator
+- python generators
+- reversible flag should generate 2 functions
+- musical tones
+- parameterise
