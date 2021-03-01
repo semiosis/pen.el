@@ -15,7 +15,7 @@
 - reversible:
   - prompt should generate 2 functions
 ** prompts
-- parameterise
+- parameterise - a prompt for working on prompts
   - these were the parameterise
   - these are the new params
   - e.g. change this text from about X to about Y.
