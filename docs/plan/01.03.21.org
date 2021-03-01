@@ -5,7 +5,7 @@
   - Extract facts, display N/M for how many facts were extracted (N) and their orientation (M).
 
 * TODO todo
-- start committing my prompts to a database
+- Start committing my prompts to a database
 
 * perspective
 - haskell is very important to be using while working with prompts
