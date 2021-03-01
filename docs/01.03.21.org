@@ -95,7 +95,8 @@
 Haskell functions (including the 'have a good day' monad.
 
 * =filters=
-- Maintain a filters function repository like =semiosis/prompts=
+- Maintain a filters function repository like =semiosis/prompts=.
+  - This should be used in the same project
   - Filters may take parameters as prompts do.
   - Requires a filter descrioption format
     - Call it =.filter=.
