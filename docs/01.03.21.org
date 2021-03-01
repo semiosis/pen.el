@@ -21,3 +21,6 @@
 - reversible flag should generate 2 functions
 - musical tones
 - parameterise
+  - these were the parameterise
+  - these are the new params
+  - e.g. change this text from about X to about Y.
