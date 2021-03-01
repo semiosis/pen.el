@@ -13,16 +13,16 @@
 - vim command generation
   - generate command from vim description
 - python generators
-- reversible flag should generate 2 functions
+
 - parameterise
   - these were the parameterise
   - these are the new params
   - e.g. change this text from about X to about Y.
     - This is useful for prototyping prompts
 ** =.prompt= key flags
-  - completer context N tokens prior
-  - =.prompt= key for flag (design pattern)
-    - For fuzzy searching
+- completer context N tokens prior
+- reversible:
+  - prompt should generate 2 functions
 ** prompts
 - mediate
 - activity given some interests
