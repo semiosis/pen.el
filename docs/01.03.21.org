@@ -14,6 +14,9 @@
   - the name of a prompt which does approximately the opposite
 - reversible:
   - prompt should generate 2 functions
+- tags
+  - prompt-manipulation
+    - This flag specifies that this prompt is intended for modifying prompts. That makes it easy to search for.
 ** prompts
 - parameterise - a prompt for working on prompts
   - these were the parameterise
