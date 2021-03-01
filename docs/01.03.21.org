@@ -123,3 +123,12 @@ Based on racket.
 Latex library similar to =pentext=.
 
 ** TODO Investigate the ease of this
+
+* Mantras
+- Designing prompts is more important than prototyping applicaitons.
+
+* Goals
+- Generate prose/code from objectives/description
+- Understand prose/code in terms of X.
+- Construct/paint in prose.
+- Dockerise in emacs.
