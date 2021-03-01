@@ -133,7 +133,7 @@ benchmarking
     different solutions hold up on a variety
     of use cases.
     
-    Also important to understand where prompts
+    Also important to understand where prompt
     designs outperform others.
 
 explicit bias
