@@ -8,11 +8,6 @@
 - generate prompt
   - allegory
 - =.prompt= key for what command generalised it.
-- vim command description
-  - generate description from vim command
-- vim command generation
-  - generate command from vim description
-- python generators
 - parameterise
   - these were the parameterise
   - these are the new params
@@ -20,9 +15,16 @@
     - This is useful for prototyping prompts
 ** =.prompt= key flags
 - completer context N tokens prior
+- reverse prompt
+  - the name of a prompt which does approximately the opposite
 - reversible:
   - prompt should generate 2 functions
 ** prompts
+- vim command description
+  - generate description from vim command
+- vim command generation
+  - generate command from vim description
+- python generators
 - mediate
 - activity given some interests
 - code-gen
