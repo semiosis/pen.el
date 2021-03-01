@@ -42,6 +42,11 @@
   - request ingredients via interactive function
   - brownie generator
 - Search for lyrics
+- next step for high level strategy
+  - context
+  - i did X
+  - i did Y
+  - This seemed like a good next step
 
 * =pen.el=
 - emulate filter script
