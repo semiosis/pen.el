@@ -100,3 +100,11 @@ Haskell functions (including the 'have a good day' monad.
   - Filters may take parameters as prompts do.
   - Requires a filter descrioption format
     - Call it =.filter=.
+
+* =pentext=
+- A document format for generating prompts.
+
+* =pentex=
+Latex library similar to =pentext=.
+
+** TODO Investigate the ease of this
