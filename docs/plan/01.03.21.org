@@ -50,6 +50,15 @@
 - surrealism art idea generator
 - abstract art idea generator
 - come up with lists of things - useful for further searches
+- wisdom perspective
+- reverse figlet - ascii-text art to text
+- describe something
+- make into figurative imagery
+- un-figurative-imagerize
+- find word for phrase
+  - like a thesaurus but reduces
+  - a reducing thesaurus
+- taglist for prompt format
 
 * =pen.el=
 - emulate filter script
