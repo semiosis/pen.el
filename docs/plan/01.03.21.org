@@ -47,6 +47,9 @@
   - i did X
   - i did Y
   - This seemed like a good next step
+- surrealism art idea generator
+- abstract art idea generator
+- come up with lists of things - useful for further searches
 
 * =pen.el=
 - emulate filter script
