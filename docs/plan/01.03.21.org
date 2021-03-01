@@ -1,5 +1,8 @@
 * =pen.el= Paint in prose
 
+* TODO todo
+- start committing my prompts to a database
+
 * perspective
 - haskell is very important to be using while working with prompts
 - haskell should be easy to debug once i am familiar
@@ -15,7 +18,7 @@
   - the name of a prompt which does approximately the opposite
 - reversible:
   - prompt should generate 2 functions
-- tags
+- tags (tag list)
   - prompt-manipulation
     - This flag specifies that this prompt is intended for modifying prompts. That makes it easy to search for.
 ** prompts
