@@ -9,9 +9,7 @@
 - i should start pseudocoding in haskell
 
 * Prompt ideas
-- generate prompt
-  - allegory
-- =.prompt= key for what command generalised it.
+** format
 ** =.prompt= key flags
 - completer context N tokens prior
 - reverse prompt
@@ -22,6 +20,9 @@
   - prompt-manipulation
     - This flag specifies that this prompt is intended for modifying prompts. That makes it easy to search for.
 ** prompts
+- generate prompt
+  - allegory
+- =.prompt= key for what command generalised it.
 - parameterise - a prompt for working on prompts
   - these were the parameterise
   - these are the new params
