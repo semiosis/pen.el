@@ -66,3 +66,28 @@
 
 * Meta-text
 - new text format for specifying all transformation functions as well as input and output. Memoised - results embedded in format
+
+* =examplary=
+- blends prompts
+  - not merely compose
+    - styles; e.g. figlet text style as emoji
+- allegory
+  - prompt tepmlate
+    - generate the prompt
+
+* =examplary.el=
+- prototype examplary with this
+- descrbe pattern
+- generate pattern
+- reversible (describe/gen)
+- describe entire applications
+  - CV-builder
+- validate results
+
+* =mullikine/prompt-engineering-patterns=
+- describe
+- generate
+- This is the design for design patterns
+
+* =examplary.hs=
+Haskell functions (including the 'have a good day' monad.
