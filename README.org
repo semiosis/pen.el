@@ -1,7 +1,4 @@
 * =pen.el= : Paint in prose
-** NLP pipelines
-- Spacy pipeline generation
-
 ** _Prompt engineering_ in emacs
 =pen.el= facilitates the creation,
 development, discovery and usage of prompts to
@@ -58,6 +55,9 @@ API.
 - http://github.com/mullikine/fine-tuning-gpt-3
 
 [[./fine-tuning/puns/README.org]]
+
+** NLP pipelines
+- Spacy pipeline generation
 
 ** DSLs
 *** =examplary=
