@@ -55,4 +55,14 @@
 - prompt database / prompthub
   - create github repo with your own prompts
 - document design mode
-  - structure a document using parameters, sentiment
+  - structure a document using parameters, sentiment, etc. and generate the text
+- analyse a document
+- =pen-company-complete=
+  - have a binding, like Deep TabNine and a default prompt, and prompt selection
+- parameter sets
+  - select settings suitable for different types of prompts
+- custom seq2seq command, rather than OpenAI API
+- generated text should retain information on what generated it
+
+* Meta-text
+- new text format for specifying all transformation functions as well as input and output. Memoised - results embedded in format
