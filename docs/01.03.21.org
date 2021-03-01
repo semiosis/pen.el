@@ -2,3 +2,6 @@
 - translate morse code
 - generate prompt
   - allegory
+- =.prompt= key for what command generalised it.
+- vim command description
+  - generate description from vim command
