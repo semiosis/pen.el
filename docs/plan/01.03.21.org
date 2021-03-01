@@ -1,5 +1,4 @@
 * =pen.el= Paint in prose
-
 ** features
 - calculate approximate cost and N API calls
 - Estimate factuality
