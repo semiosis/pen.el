@@ -29,6 +29,7 @@
   - generate command from vim description
 - python generators
 - mediate
+  - Generates a compromise.
 - activity given some interests
 - code-gen
   - sh
@@ -38,3 +39,4 @@
 - recipe generation
   - request ingredients via interactive function
   - brownie generator
+- Search for lyrics
