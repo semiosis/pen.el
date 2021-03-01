@@ -13,7 +13,6 @@
 - vim command generation
   - generate command from vim description
 - python generators
-
 - parameterise
   - these were the parameterise
   - these are the new params
