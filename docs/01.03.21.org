@@ -4,15 +4,10 @@
 - i should start pseudocoding in haskell
 
 * Prompt ideas
-- translate morse code
+
 - generate prompt
   - allegory
 - =.prompt= key for what command generalised it.
-- parameterise
-  - these were the parameterise
-  - these are the new params
-  - e.g. change this text from about X to about Y.
-    - This is useful for prototyping prompts
 ** =.prompt= key flags
 - completer context N tokens prior
 - reverse prompt
@@ -20,6 +15,12 @@
 - reversible:
   - prompt should generate 2 functions
 ** prompts
+- parameterise
+  - these were the parameterise
+  - these are the new params
+  - e.g. change this text from about X to about Y.
+    - This is useful for prototyping prompts
+- translate morse code
 - vim command description
   - generate description from vim command
 - vim command generation
