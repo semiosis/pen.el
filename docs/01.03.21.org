@@ -5,3 +5,5 @@
 - =.prompt= key for what command generalised it.
 - vim command description
   - generate description from vim command
+- vim command generation
+  - generate command from vim description
