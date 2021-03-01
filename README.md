@@ -1,5 +1,5 @@
-# `pen.el` : <span class="underline">Prompt engineering</span> in emacs
-
+# `pen.el` : Paint in prose
+## <span class="underline">Prompt engineering</span> in emacs
 `pen.el` facilitates the creation,
 development, discovery and usage of prompts to
 a Language Model such as GPT-3.
@@ -23,16 +23,16 @@ a Language Model such as GPT-3.
     -   Prototype NLP tasks with GPT-3
         -   Substitute external tools for prototypes
 
-## Modes
+### Modes
 
-### Prompt-Engineering Minor Mode
+#### Prompt-Engineering Minor Mode
 
 `prompt-engineering-mode` is a global minor
 mode for emacs that provides keybindings for
 creating and executing prompts generally
 across emacs.
 
-### Prompt Description Major Mode
+#### Prompt Description Major Mode
 
 `prompt-description-mode` is a major mode for
 editing `.prompt` files.
@@ -41,20 +41,20 @@ The `.prompt` file format is based on YAML and
 an associated schema, which defines the keys
 which are expected.
 
-### Pen Messenger Minor Mode
+#### Pen Messenger Minor Mode
 
 `pen-messenger-mode` is a minor mode for
 enhancing an emacs-based messenger client with
 GPT-3 capabilities, such as emoji generation.
 
-### Pen Conversation Mode
+#### Pen Conversation Mode
 `prompt-conversation-mode` is a major mode designed to make facilitate
 ongoing conversation with a prompt-based GPT-3 chatbot.
 
-### Training Mode
+#### Training Mode
 The goal of this mode is to facilitate the workflow of training on OpenAI's API.
 
-#### Fine-tuning
+##### Fine-tuning
 - http://github.com/mullikine/fine-tuning-gpt-3
 
 [[./fine-tuning/puns/README.org]]
