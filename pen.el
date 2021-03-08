@@ -1,6 +1,3 @@
-;; TODO Make the keybindings map to pen.el-map
-;; TODO Rename pen.el to pen.el -- it's far more convenient
-
 ;; gy -E "openai api engines.generate -h | pavs"
 
 (defvar pen.el-map (make-sparse-keymap)
@@ -88,7 +85,7 @@
 
 (defvar-local pen-show-probabilities nil)
 
-(setq pen-prompt-directory "/home/shane/source/git/mullikine/prompts/prompts")
+(setq pen-prompt-directory "/home/shane/source/git/semiosis/prompts/prompts")
 
 ;; + States
 ;;   - Off
@@ -151,7 +148,8 @@
 
 
 (defun pen-generate-prompt-functions ()
-  "Generate prompt functions for the files in the prompts directory"
+  "Generate prompt functions for the files in the prompts directory
+Function names are prefixed with pen-pf- for easy searching"
   (interactive)
   (let ((paths
          (-non-nil (mapcar 'sor (glob (concat pen-prompt-directory "/*.prompt"))))))
@@ -160,34 +158,46 @@
              (let* ((yaml (yamlmod-read-file path))
                     (title (ht-get yaml "title"))
                     (title-slug (slugify title))
+                    (doc (ht-get yaml "doc"))
                     (vars (vector2list (ht-get yaml "vars")))
+                    (examples (vector2list (ht-get yaml "examples")))
                     (var-slugs (mapcar 'slugify vars))
                     (var-syms (mapcar 'str2sym var-slugs))
-                    (func-name (concat "pen-" title-slug))
+                    (func-name (concat "pen-pf-" title-slug))
                     (iargs (let ((iteration 0))
-                             (cl-loop for v in vars do
+                             (cl-loop for v in vars
+                                      collect
+                                      (let ((example (nth iteration examples)))
+                                        (if (equal 0 iteration)
+                                            ;; The first argument may be captured through selection
+                                            `(if (selectionp)
+                                                 (my/selected-text)
+                                               (read-string-hist ,(concat v ": ") ,example))
+                                          `(read-string-hist ,(concat v ": ") ,example)))
+                                      do
                                       (progn
                                         (setq iteration (+ 1 iteration))
-                                        (message (str iteration)))
-                                      collect
-                                      (if (equal 1 iteration)
-                                          ;; The first argument may be captured through selection
-                                          `(if (selectionp)
-                                               (my/selected-text)
-                                             (read-string-hist ,(concat v ": ")))
-                                        `(read-string-hist ,(concat v ": ")))))))
+                                        (message (str iteration)))))))
                ;; var names will have to be slugged, too
                (add-to-list 'pen-prompt-functions
                             (eval
                              `(defun ,(str2sym func-name) ,var-syms
+                                ,(sor doc title)
                                 (interactive ,(cons 'list iargs))
-                                (etv (chomp (sn ,(flatten-once
-                                                  (list
-                                                   (list 'concat "openai-complete " (q path))
-                                                   (flatten-once (cl-loop for vs in var-slugs collect
-                                                                          (list " "
-                                                                                (list 'q (str2sym vs)))))))))))))
-               (message (concat "pen.el: Loaded prompt function " func-name))))))
+                                (let ((result
+                                       (chomp (sn ,(flatten-once
+                                                    (list
+                                                     (list 'concat "openai-complete " (q path))
+                                                     (flatten-once (cl-loop for vs in var-slugs collect
+                                                                            (list " "
+                                                                                  (list 'q (str2sym vs)))))))))))
+                                  (if (interactive-p)
+                                      (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
+                                              (not (selectedp)))
+                                          (etv result)
+                                        (replace-region result))
+                                    result)))))
+               (message (concat "pen-mode: Loaded prompt function " func-name))))))
 (pen-generate-prompt-functions)
 
 
@@ -197,8 +207,15 @@
 
 ;; (define-key global-map (kbd "H-TAB") nil)
 (define-key global-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
-(define-key global-map (kbd "H-TAB r") 'pen-run-prompt-function)
 
+
+
+(defun pen-filter-with-prompt-function ()
+  (interactive)
+  (let ((f (fz pen-prompt-functions)))
+    (if f
+        (filter-selected-region-through-function (str2sym f)))))
+(define-key global-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
 
 (defun pen-run-prompt-function ()
   (interactive)
@@ -206,9 +223,11 @@
     (if f
         (call-interactively (str2sym f)))))
 (defalias 'camille-complete 'pen-run-prompt-function)
+(define-key global-map (kbd "H-TAB r") 'pen-run-prompt-function)
 
 ;; Camille-complete (because I press SPC to replace
 (define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
 (define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
 
 (provide 'my-openai)
+(provide 'pen)
