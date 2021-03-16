@@ -172,7 +172,10 @@ Function names are prefixed with pen-pf- for easy searching"
                                             ;; The first argument may be captured through selection
                                             `(if (selectionp)
                                                  (my/selected-text)
-                                               (read-string-hist ,(concat v ": ") ,example))
+                                               (if (> (length (str2lines ,example)) 1)
+                                                   (tvipe ;; ,(concat v ": ")
+                                                    ,example)
+                                                 (read-string-hist ,(concat v ": ") ,example)))
                                           `(read-string-hist ,(concat v ": ") ,example)))
                                       do
                                       (progn
@@ -228,6 +231,42 @@ Function names are prefixed with pen-pf- for easy searching"
 ;; Camille-complete (because I press SPC to replace
 (define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
 (define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
+
+;; TODO Make a function for permuting the tuples of monotonically increasing length all starting with the first element
+
+;; TODO Generate a list of completion symbols
+;; This should be a permutation of n-nmax tokens of a single response from openai
+;; TODO In future, suggest alternative completions from openai
+(defun company-pen-filetype--candidates (prefix)
+  (let* ((preceding-text (str (buffer-substring (point) (max 1 (- (point) 1000)))))
+        (response (pen-pf-generic-file-type-completion (detect-language) preceding-text))
+        ;; Take only the first line for starters
+        (line (car (str2lines response)))
+        (res (str2list (snc "monotonically-increasing-tuple-permutations.py" line))))
+    ;; Generate a list
+    ;; (setq res '("testing" "testing123"))
+    res))
+
+(defun company-pen--grab-symbol ()
+  (buffer-substring (point) (save-excursion (skip-syntax-backward "w_.")
+                                            (point))))
+
+(defun company-pen-filetype--prefix ()
+  "Grab prefix at point."
+  (or (company-pen--grab-symbol)
+      'stop))
+
+(defun company-pen-filetype (command &optional arg &rest ignored)
+  (interactive (list 'interactive))
+  (cl-case command
+    (interactive (company-begin-backend 'company-pen-filetype))
+    (prefix (company-pen-filetype--prefix))
+    (candidates (company-pen-filetype--candidates arg))
+    ;; TODO doc-buffer may contain info on the completion in the future
+    ;; (doc-buffer (company-pen-filetype--doc-buffer arg))
+    ;; TODO annotation may contain the probability in the future
+    ;; (annotation (company-pen-filetype--annotation arg))
+    ))
 
 (provide 'my-openai)
 (provide 'pen)
