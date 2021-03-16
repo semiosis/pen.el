@@ -239,13 +239,14 @@ Function names are prefixed with pen-pf- for easy searching"
 ;; TODO In future, suggest alternative completions from openai
 (defun company-pen-filetype--candidates (prefix)
   (let* ((preceding-text (str (buffer-substring (point) (max 1 (- (point) 1000)))))
-        (response (pen-pf-generic-file-type-completion (detect-language) preceding-text))
-        ;; Take only the first line for starters
-        (line (car (str2lines response)))
-        (res (str2list (snc "monotonically-increasing-tuple-permutations.py" line))))
+         (response (pen-pf-generic-file-type-completion (detect-language) preceding-text))
+         ;; Take only the first line for starters
+         (line (car (str2lines response)))
+         (res (str2list (snc "monotonically-increasing-tuple-permutations.py" line))))
     ;; Generate a list
     ;; (setq res '("testing" "testing123"))
-    res))
+    (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
+            res)))
 
 (defun company-pen--grab-symbol ()
   (buffer-substring (point) (save-excursion (skip-syntax-backward "w_.")
@@ -267,6 +268,15 @@ Function names are prefixed with pen-pf- for easy searching"
     ;; TODO annotation may contain the probability in the future
     ;; (annotation (company-pen-filetype--annotation arg))
     ))
+
+(require 'company)
+(defun my-completion-at-point ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (call-interactively 'company-pen-filetype)
+    (call-interactively 'completion-at-point)))
+
+(define-key global-map (kbd "M-~") #'my-completion-at-point)
 
 (provide 'my-openai)
 (provide 'pen)
