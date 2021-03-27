@@ -241,14 +241,16 @@ Function names are prefixed with pen-pf- for easy searching"
   (let* ((preceding-text (str (buffer-substring (point) (max 1 (- (point) 1000)))))
          (response (pen-pf-generic-file-type-completion (detect-language) preceding-text))
          ;; Take only the first line for starters
-         (line (car (str2lines response)))
+         ;; Do not only take the first line. That's kinda useless.
+         ;; (line (car (str2lines response)))
+         ;; (line response)
          (res
           (if (>= (prefix-numeric-value current-prefix-arg) 8)
               (list response)
             ;; Just generate a few
             ;; (pen-pf-generic-file-type-completion (detect-language) preceding-text)
             ;; (pen-pf-generic-file-type-completion (detect-language) preceding-text))
-            (str2lines (snc "monotonically-increasing-tuple-permutations.py" line)))))
+            (str2lines (snc "monotonically-increasing-tuple-permutations.py" (car (str2lines response)))))))
     ;; Generate a list
     ;; (setq res '("testing" "testing123"))
     (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
@@ -283,6 +285,16 @@ Function names are prefixed with pen-pf- for easy searching"
     (call-interactively 'completion-at-point)))
 
 (define-key global-map (kbd "M-~") #'my-completion-at-point)
+
+
+(defun pen-complete-long ()
+  (interactive)
+  (let* ((preceding-text (str (buffer-substring (point) (max 1 (- (point) 1000)))))
+         (response (pen-pf-generic-file-type-completion (detect-language) preceding-text)))
+    (tv response)))
+
+(define-key global-map (kbd "H-P") 'pen-complete-long)
+
 
 (provide 'my-openai)
 (provide 'pen)
