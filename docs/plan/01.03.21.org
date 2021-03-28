@@ -144,6 +144,8 @@ Haskell functions (including the 'have a good day' monad.
 This is a text format that is designed for easy editing, like normal text.
 Based on racket.
 
+https://github.com/semiosis/scribble
+
 - This is a document format that contains and evaluates to the document as it is meant to be viewed.
 - It also contains annotations for the transformations, inputs and outputs of those transformations.
 - It allows for re-evaluation.
