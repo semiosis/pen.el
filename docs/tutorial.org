@@ -8,7 +8,7 @@
 Setting this variable will save your key to the file specified by
 =pen-openai-key-location=.
 
-If =pen-openai-key-location= is not set then it will ask you to name that path first.
+If =pen-openai-key-location= is not set then it wil<l ask you to name that path first.
 
 The =pen-openai-key= is stored in plain text, but that's better than storing
 directly within an emacs variable as we can't guarantee you keep your emacs
