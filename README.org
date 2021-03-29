@@ -88,7 +88,11 @@ https://github.com/mullikine/prompts/
 ** Works with
 - OpenAI API (GPT-3)
   - https://beta.openai.com/
-*** Planned
+** Incorporate other backends will be incorporated
+- =contentyze=
+  - http://gpt.contentyze.com/
+- =GPT-Neo=
+  - https://github.com/EleutherAI/gpt-neo
 - =openai-server= (GPT-2)
   - https://github.com/shawwn/openai-server
   - Requires tensorflow 1
