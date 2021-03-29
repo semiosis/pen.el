@@ -186,7 +186,10 @@ Function names are prefixed with pen-pf- for easy searching"
                                         (message (str iteration)))))))
                ;; var names will have to be slugged, too
 
-               (cl-loop for a in alias-slugs do (defalias a func-sym))
+               (cl-loop for a in alias-slugs do
+                        (progn
+                          (defalias a func-sym)
+                          (add-to-list 'pen-prompt-functions a)))
 
                (add-to-list 'pen-prompt-functions
                             ;; These are getting added to a list
