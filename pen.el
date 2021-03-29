@@ -144,8 +144,11 @@
 (defalias 'cll 'cl-loop)
 
 
-(defvar pen-prompt-functions nil)
+(defset pen-prompt-functions nil)
 
+
+;; Bools return a string
+;; (ht-get (yamlmod-read-file "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/subtopic-generation.prompt") "cache")
 
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory
@@ -159,12 +162,17 @@ Function names are prefixed with pen-pf- for easy searching"
                     (title (ht-get yaml "title"))
                     (title-slug (slugify title))
                     (doc (ht-get yaml "doc"))
+                    (cache (let ((c (ht-get yaml "cache")))
+                             (and (sor c)
+                                  (string-equal c "on"))))
                     (vars (vector2list (ht-get yaml "vars")))
                     (aliases (vector2list (ht-get yaml "aliases")))
                     (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
                     (examples (vector2list (ht-get yaml "examples")))
                     (var-slugs (mapcar 'slugify vars))
-                    (var-syms (mapcar 'str2sym var-slugs))
+                    (var-syms (append
+                               (mapcar 'str2sym var-slugs)
+                               '(:key ci-update)))
                     (func-name (concat "pen-pf-" title-slug))
                     (func-sym (str2sym func-name))
                     (iargs (let ((iteration 0))
@@ -186,24 +194,32 @@ Function names are prefixed with pen-pf- for easy searching"
                                         (message (str iteration)))))))
                ;; var names will have to be slugged, too
 
-               (cl-loop for a in alias-slugs do
-                        (progn
-                          (defalias a func-sym)
-                          (add-to-list 'pen-prompt-functions a)))
+               (if alias-slugs
+                   (cl-loop for a in alias-slugs do
+                            (progn
+                              (defalias a func-sym)
+                              (add-to-list 'pen-prompt-functions a))))
 
                (add-to-list 'pen-prompt-functions
                             ;; These are getting added to a list
                             (eval
-                             `(defun ,func-sym ,var-syms
+                             `(cl-defun ,func-sym ,var-syms
                                 ,(sor doc title)
                                 (interactive ,(cons 'list iargs))
                                 (let ((result
-                                       (chomp (sn ,(flatten-once
-                                                    (list
-                                                     (list 'concat "openai-complete " (q path))
-                                                     (flatten-once (cl-loop for vs in var-slugs collect
-                                                                            (list " "
-                                                                                  (list 'q (str2sym vs)))))))))))
+                                       (chomp
+                                        (sn
+                                         ,(flatten-once
+                                           (list
+                                            (list 'concat
+                                                  (if cache
+                                                      "oci "
+                                                    "")
+                                                  "openai-complete "
+                                                  (q path))
+                                            (flatten-once (cl-loop for vs in var-slugs collect
+                                                                   (list " "
+                                                                         (list 'q (str2sym vs)))))))))))
                                   (if (interactive-p)
                                       (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
                                               (not (selectedp)))
