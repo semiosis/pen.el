@@ -1,5 +1,6 @@
 * Incorporate other backends
 http://gpt.contentyze.com/
+https://github.com/EleutherAI/gpt-neo
 
 * Generate an ASCII pen as a logo
 ** Ask Melee to make it into a surreal pen later on?
