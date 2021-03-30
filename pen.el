@@ -170,9 +170,10 @@ Function names are prefixed with pen-pf- for easy searching"
                     (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
                     (examples (vector2list (ht-get yaml "examples")))
                     (var-slugs (mapcar 'slugify vars))
-                    (var-syms (append
-                               (mapcar 'str2sym var-slugs)
-                               '(:key ci-update)))
+                    ;; (var-syms (append
+                    ;;            (mapcar 'str2sym var-slugs)
+                    ;;            '(:key ci-update)))
+                    (var-syms (mapcar 'str2sym var-slugs))
                     (func-name (concat "pen-pf-" title-slug))
                     (func-sym (str2sym func-name))
                     (iargs (let ((iteration 0))
@@ -203,7 +204,7 @@ Function names are prefixed with pen-pf- for easy searching"
                (add-to-list 'pen-prompt-functions
                             ;; These are getting added to a list
                             (eval
-                             `(cl-defun ,func-sym ,var-syms
+                             `(defun ,func-sym ,var-syms
                                 ,(sor doc title)
                                 (interactive ,(cons 'list iargs))
                                 (let ((result
