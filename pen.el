@@ -173,6 +173,7 @@ Function names are prefixed with pen-pf- for easy searching"
                     (cache (yaml-test yaml "cache"))
                     (needs-work (yaml-test yaml "needs-work"))
                     (disabled (yaml-test yaml "disabled"))
+                    (prefer-external (yaml-test yaml "prefer-external"))
                     (vars (vector2list (ht-get yaml "vars")))
                     (aliases (vector2list (ht-get yaml "aliases")))
                     (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
