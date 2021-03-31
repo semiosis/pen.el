@@ -147,6 +147,14 @@
 (defset pen-prompt-functions nil)
 
 
+(defun yaml-test (yaml key)
+  (if (and yaml
+           (sor key))
+      (let ((c (ht-get yaml key)))
+        (and (sor c)
+             (string-equal c "on")))))
+
+
 ;; Bools return a string
 ;; (ht-get (yamlmod-read-file "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/subtopic-generation.prompt") "cache")
 
