@@ -162,9 +162,9 @@ Function names are prefixed with pen-pf- for easy searching"
                     (title (ht-get yaml "title"))
                     (title-slug (slugify title))
                     (doc (ht-get yaml "doc"))
-                    (cache (let ((c (ht-get yaml "cache")))
-                             (and (sor c)
-                                  (string-equal c "on"))))
+                    (cache (let ((c (ht-get yaml "cache"))) (and (sor c) (string-equal c "on"))))
+                    (needs-work (let ((c (ht-get yaml "needs-work"))) (and (sor c) (string-equal c "on"))))
+                    (disabled (let ((c (ht-get yaml "disabled"))) (and (sor c) (string-equal c "on"))))
                     (vars (vector2list (ht-get yaml "vars")))
                     (aliases (vector2list (ht-get yaml "aliases")))
                     (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
@@ -201,32 +201,33 @@ Function names are prefixed with pen-pf- for easy searching"
                               (defalias a func-sym)
                               (add-to-list 'pen-prompt-functions a))))
 
-               (add-to-list 'pen-prompt-functions
-                            ;; These are getting added to a list
-                            (eval
-                             `(defun ,func-sym ,var-syms
-                                ,(sor doc title)
-                                (interactive ,(cons 'list iargs))
-                                (let ((result
-                                       (chomp
-                                        (sn
-                                         ,(flatten-once
-                                           (list
-                                            (list 'concat
-                                                  (if cache
-                                                      "oci "
-                                                    "")
-                                                  "openai-complete "
-                                                  (q path))
-                                            (flatten-once (cl-loop for vs in var-slugs collect
-                                                                   (list " "
-                                                                         (list 'q (str2sym vs)))))))))))
-                                  (if (interactive-p)
-                                      (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
-                                              (not (selectedp)))
-                                          (etv result)
-                                        (replace-region result))
-                                    result)))))
+               (if (not needs-work)
+                   (add-to-list 'pen-prompt-functions
+                                ;; These are getting added to a list
+                                (eval
+                                 `(defun ,func-sym ,var-syms
+                                    ,(sor doc title)
+                                    (interactive ,(cons 'list iargs))
+                                    (let ((result
+                                           (chomp
+                                            (sn
+                                             ,(flatten-once
+                                               (list
+                                                (list 'concat
+                                                      (if cache
+                                                          "oci "
+                                                        "")
+                                                      "openai-complete "
+                                                      (q path))
+                                                (flatten-once (cl-loop for vs in var-slugs collect
+                                                                       (list " "
+                                                                             (list 'q (str2sym vs)))))))))))
+                                      (if (interactive-p)
+                                          (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
+                                                  (not (selectedp)))
+                                              (etv result)
+                                            (replace-region result))
+                                        result))))))
                (message (concat "pen-mode: Loaded prompt function " func-name))))))
 (pen-generate-prompt-functions)
 
@@ -242,14 +243,14 @@ Function names are prefixed with pen-pf- for easy searching"
 
 (defun pen-filter-with-prompt-function ()
   (interactive)
-  (let ((f (fz pen-prompt-functions)))
+  (let ((f (fz pen-prompt-functions nil nil "pen filter: ")))
     (if f
         (filter-selected-region-through-function (str2sym f)))))
 (define-key global-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
 
 (defun pen-run-prompt-function ()
   (interactive)
-  (let ((f (fz pen-prompt-functions)))
+  (let ((f (fz pen-prompt-functions nil nil "pen run: ")))
     (if f
         (call-interactively (str2sym f)))))
 (defalias 'camille-complete 'pen-run-prompt-function)
