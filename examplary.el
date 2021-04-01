@@ -10,7 +10,7 @@
 ;; e:$MYGIT/mullikine/elisp-playground/pen.el
 
 
-(load (concat emacsdir "/config/examplary-library.el"))
+(my-load "$MYGIT/semiosis/pen.el/examplary-library.el")
 (require 'examplary-library)
 
 (provide 'examplary)
