@@ -297,7 +297,7 @@ Function names are prefixed with pen-pf- for easy searching"
       (call-interactively 'company-pen-filetype)
     (call-interactively 'completion-at-point)))
 
-(define-key global-map (kbd "M-~") #'my-completion-at-point)
+(define-key global-map (kbd "M-1") #'my-completion-at-point)
 
 
 (defun pen-complete-long ()
