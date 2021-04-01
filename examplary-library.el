@@ -1,4 +1,4 @@
-(defun org-brain-asktutor (question)
+(defun examplary-asktutor (question)
   (interactive (list (read-string-hist (concat "asktutor about " (pen-topic) ": "))))
   (let ((cname (org-brain-current-name))
         (pname (org-brain-parent-name)))
