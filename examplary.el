@@ -1,4 +1,6 @@
 (require 'pen)
+
+(load (concat emacsdir "/config/examplary-core.el"))
 (require 'examplary-core)
 
 ;; Running the function generates a prompt
