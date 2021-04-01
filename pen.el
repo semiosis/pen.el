@@ -93,38 +93,8 @@
 ;;   - Least likely
 ;;   - Full spectrum
 
-(defun load-prompts ()
-
-  )
-
-(provide 'pen.el)
 
 
-;; (defun pen-tweet-sentiment-classifier (input)
-;;   (interactive (list (my/selected-text)))
-;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/pen.el/prompts/tweet-sentiment-classifier.prompt"))
-;;          (output (if input (sor (chomp (sn (concat "openai-complete " (q prompt-fp) " " (q input))))))))
-;;     (if output
-;;         (if (interactive-p)
-;;             (message output)
-;;           output))))
-
-;; (defun pen-summarise-for-second-grader (input)
-;;   (interactive (list (my/selected-text)))
-;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/pen.el/prompts/summarize-for-2nd-grader.prompt")))
-;;     (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
-
-;; (defun pen-obfuscate-language (input)
-;;   (interactive (list (my/selected-text)))
-;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/pen.el/prompts/obfuscate-language.prompt")))
-;;     (region-pipe (concat "openai-complete " (q prompt-fp) " " (q input) " | chomp"))))
-
-;; (defun pen-make-analogy (former latter)
-;;   (interactive (list (read-string-hist "analogy participant: ")
-;;                      (read-string-hist "analogy participant: ")))
-;;   (let* ((prompt-fp (umn "$MYGIT/mullikine/pen.el/prompts/analogy.prompt")))
-;;     (etv (sn (concat "openai-complete " (q prompt-fp) " " (q former) " "
-;;                      (q latter) " | chomp")))))
 
 
 (never
@@ -338,6 +308,8 @@ Function names are prefixed with pen-pf- for easy searching"
 
 (define-key global-map (kbd "H-P") 'pen-complete-long)
 
+(my-load "$MYGIT/semiosis/pen.el/pen-core.el")
+(require 'pen-core)
 
 (defun pen-topic (&optional short)
   "Determine the topic used for pen functions"
