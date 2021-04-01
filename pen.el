@@ -162,82 +162,85 @@
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pen-pf- for easy searching"
   (interactive)
-  (let ((paths
-         (-non-nil (mapcar 'sor (glob (concat pen-prompt-directory "/*.prompt"))))))
-    (cl-loop for path in paths do
-             ;; results in a hash table
-             (let* ((yaml (yamlmod-read-file path))
-                    (title (ht-get yaml "title"))
-                    (title-slug (slugify title))
-                    (doc (ht-get yaml "doc"))
-                    (cache (yaml-test yaml "cache"))
-                    (needs-work (yaml-test yaml "needs-work"))
-                    (disabled (yaml-test yaml "disabled"))
-                    (prefer-external (yaml-test yaml "prefer-external"))
-                    (vars (vector2list (ht-get yaml "vars")))
-                    (aliases (vector2list (ht-get yaml "aliases")))
-                    (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
-                    (examples (vector2list (ht-get yaml "examples")))
-                    (var-slugs (mapcar 'slugify vars))
-                    ;; (var-syms (append
-                    ;;            (mapcar 'str2sym var-slugs)
-                    ;;            '(:key ci-update)))
-                    (var-syms (mapcar 'str2sym var-slugs))
-                    (func-name (concat "pen-pf-" title-slug))
-                    (func-sym (str2sym func-name))
-                    (iargs (let ((iteration 0))
-                             (cl-loop for v in vars
-                                      collect
-                                      (let ((example (nth iteration examples)))
-                                        (if (equal 0 iteration)
-                                            ;; The first argument may be captured through selection
-                                            `(if (selectionp)
-                                                 (my/selected-text)
-                                               (if (> (length (str2lines ,example)) 1)
-                                                   (tvipe ;; ,(concat v ": ")
-                                                    ,example)
-                                                 (read-string-hist ,(concat v ": ") ,example)))
-                                          `(read-string-hist ,(concat v ": ") ,example)))
-                                      do
-                                      (progn
-                                        (setq iteration (+ 1 iteration))
-                                        (message (str iteration)))))))
-               ;; var names will have to be slugged, too
+  (noupd
+   (let ((paths
+          (-non-nil (mapcar 'sor (glob (concat pen-prompt-directory "/*.prompt"))))))
+     (cl-loop for path in paths do
+              ;; results in a hash table
+              (let* ((yaml (yamlmod-read-file path))
+                     (title (ht-get yaml "title"))
+                     (title-slug (slugify title))
+                     (doc (ht-get yaml "doc"))
+                     (cache (yaml-test yaml "cache"))
+                     (needs-work (yaml-test yaml "needs-work"))
+                     (disabled (yaml-test yaml "disabled"))
+                     (prefer-external (yaml-test yaml "prefer-external"))
+                     (vars (vector2list (ht-get yaml "vars")))
+                     (aliases (vector2list (ht-get yaml "aliases")))
+                     (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
+                     (examples (vector2list (ht-get yaml "examples")))
+                     (var-slugs (mapcar 'slugify vars))
+                     ;; (var-syms (append
+                     ;;            (mapcar 'str2sym var-slugs)
+                     ;;            '(:key ci-update)))
+                     (var-syms (mapcar 'str2sym var-slugs))
+                     (func-name (concat "pen-pf-" title-slug))
+                     (func-sym (str2sym func-name))
+                     (iargs (let ((iteration 0))
+                              (cl-loop for v in vars
+                                       collect
+                                       (let ((example (nth iteration examples)))
+                                         (if (equal 0 iteration)
+                                             ;; The first argument may be captured through selection
+                                             `(if (selectionp)
+                                                  (my/selected-text)
+                                                (if (> (length (str2lines ,example)) 1)
+                                                    (tvipe ;; ,(concat v ": ")
+                                                     ,example)
+                                                  (read-string-hist ,(concat v ": ") ,example)))
+                                           `(read-string-hist ,(concat v ": ") ,example)))
+                                       do
+                                       (progn
+                                         (setq iteration (+ 1 iteration))
+                                         (message (str iteration)))))))
+                ;; var names will have to be slugged, too
 
-               (if alias-slugs
-                   (cl-loop for a in alias-slugs do
-                            (progn
-                              (defalias a func-sym)
-                              (add-to-list 'pen-prompt-functions a))))
+                (if alias-slugs
+                    (cl-loop for a in alias-slugs do
+                             (progn
+                               (defalias a func-sym)
+                               (add-to-list 'pen-prompt-functions a))))
 
-               (if (not needs-work)
-                   (add-to-list 'pen-prompt-functions
-                                ;; These are getting added to a list
-                                (eval
-                                 `(defun ,func-sym ,var-syms
-                                    ,(sor doc title)
-                                    (interactive ,(cons 'list iargs))
-                                    (let ((result
-                                           (chomp
-                                            (sn
-                                             ,(flatten-once
-                                               (list
-                                                (list 'concat
-                                                      (if cache
-                                                          "oci "
-                                                        "")
-                                                      "openai-complete "
-                                                      (q path))
-                                                (flatten-once (cl-loop for vs in var-slugs collect
-                                                                       (list " "
-                                                                             (list 'q (str2sym vs)))))))))))
-                                      (if (interactive-p)
-                                          (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
-                                                  (not (selectedp)))
-                                              (etv result)
-                                            (replace-region result))
-                                        result))))))
-               (message (concat "pen-mode: Loaded prompt function " func-name))))))
+                (if (not needs-work)
+                    (add-to-list 'pen-prompt-functions
+                                 ;; These are getting added to a list
+                                 (eval
+                                  `(defun ,func-sym ,var-syms
+                                     ,(sor doc title)
+                                     (interactive ,(cons 'list iargs))
+                                     (let* ((sh-update
+                                             (or sh-update (>= (prefix-numeric-value current-prefix-arg) 4)))
+                                            (result
+                                             (chomp
+                                              (sn
+                                               ,(flatten-once
+                                                 (list
+                                                  (list 'concat
+                                                        (if cache
+                                                            "oci "
+                                                          "")
+                                                        "openai-complete "
+                                                        (q path))
+                                                  (flatten-once (cl-loop for vs in var-slugs collect
+                                                                         (list " "
+                                                                               (list 'q (str2sym vs)))))))))))
+                                       (if (interactive-p)
+                                           (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
+                                                   (not (selectedp)))
+                                               (etv result)
+                                             (replace-region result))
+                                         result))))))
+                (message (concat "pen-mode: Loaded prompt function " func-name)))))))
 (pen-generate-prompt-functions)
 
 
@@ -331,6 +334,22 @@ Function names are prefixed with pen-pf- for easy searching"
     (tv response)))
 
 (define-key global-map (kbd "H-P") 'pen-complete-long)
+
+
+(defun pen-topic ()
+  "Determine the topic used for pen functions"
+  (interactive)
+
+  (let ((topic
+         (cond ((major-mode-p 'org-brain-visualize-mode)
+                (progn (require 'my-org-brain)
+                       (org-brain-pf-topic)))
+               (t
+                (let ((current-prefix-arg '(4))) ; C-u
+                  (get-path))))))
+    (if (interactive-p)
+        (etv topic)
+      topic)))
 
 
 (provide 'my-openai)
