@@ -1,5 +1,8 @@
 * Generate an ASCII pen as a logo
 ** Ask Melee to make it into a surreal pen later on?
 
-* Make a way to define prompts by YAML
+* DONE Make a way to define prompts by YAML
+  CLOSED: [2021-04-01 Thu 18:59]
 ** Create the schema
+
+* 
