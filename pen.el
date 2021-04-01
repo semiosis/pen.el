@@ -290,9 +290,26 @@ Function names are prefixed with pen-pf- for easy searching"
     ;; (annotation (company-pen-filetype--annotation arg))
     ))
 
+
+
+;; TODO Generate arbitrarily many company completion functions 
+
+(defun defcompletion-engine (completion-function)
+
+  )
+
+
+(defvar my-completion-engine 'company-pen-filetype)
+
+(defvar my-completion-engines `(company-pen-filetype
+                                completion-at-point
+                                ,(defcompletion-engine
+                                   'pen-pf-tldr-summarization)))
+
 (require 'company)
 (defun my-completion-at-point ()
   (interactive)
+  (call-interactively 'completion-at-point)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (call-interactively 'company-pen-filetype)
     (call-interactively 'completion-at-point)))
