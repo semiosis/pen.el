@@ -3,6 +3,6 @@
 
 * DONE Make a way to define prompts by YAML
   CLOSED: [2021-04-01 Thu 18:59]
-** Create the schema
+** Create the schema -- use either schemastore or simply yasnippet
 
 * 
