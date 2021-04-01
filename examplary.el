@@ -9,7 +9,6 @@
 
 ;; e:$MYGIT/mullikine/elisp-playground/pen.el
 
-
 (my-load "$MYGIT/semiosis/pen.el/examplary-library.el")
 (require 'examplary-library)
 
