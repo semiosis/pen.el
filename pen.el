@@ -321,7 +321,7 @@ Function names are prefixed with pen-pf- for easy searching"
                        (org-brain-pf-topic short)))
                (t
                 (let ((current-prefix-arg '(4))) ; C-u
-                  ;; Consider getting topic keywords from visual text
+                  ;; Consider getting topic keywords from visible text
                   (get-path))))))
     (if (interactive-p)
         (etv topic)
