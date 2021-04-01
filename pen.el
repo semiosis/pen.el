@@ -279,7 +279,10 @@ Function names are prefixed with pen-pf- for easy searching"
 ;; TODO In future, suggest alternative completions from openai
 (defun company-pen-filetype--candidates (prefix)
   (let* ((preceding-text (str (buffer-substring (point) (max 1 (- (point) 1000)))))
-         (response (pen-pf-generic-file-type-completion (detect-language) preceding-text))
+         (endspace)
+         (preceding-text-endspaceremoved)
+         (response
+          (pen-pf-generic-file-type-completion (detect-language) preceding-text))
          ;; Take only the first line for starters
          ;; Do not only take the first line. That's kinda useless.
          ;; (line (car (str2lines response)))
