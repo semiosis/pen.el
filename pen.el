@@ -281,6 +281,7 @@ Function names are prefixed with pen-pf- for easy searching"
 
 
 
+
 (defun company-pen-filetype (command &optional arg &rest ignored)
   (interactive (list 'interactive))
   (cl-case command
