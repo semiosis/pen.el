@@ -151,6 +151,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (aliases (vector2list (ht-get yaml "aliases")))
                      (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
                      (examples (vector2list (ht-get yaml "examples")))
+                     (preprocessors (vector2list (ht-get yaml "pen-preprocessors")))
                      (var-slugs (mapcar 'slugify vars))
                      ;; (var-syms (append
                      ;;            (mapcar 'str2sym var-slugs)
@@ -208,9 +209,10 @@ Function names are prefixed with pen-pf- for easy searching"
                                                           "")
                                                         "openai-complete "
                                                         (q path))
-                                                  (flatten-once (cl-loop for vs in var-slugs collect
-                                                                         (list " "
-                                                                               (list 'q (str2sym vs)))))))))))
+                                                  (flatten-once
+                                                   (cl-loop for vs in var-slugs collect
+                                                            (list " "
+                                                                  (list 'q (str2sym vs)))))))))))
                                        (if (interactive-p)
                                            (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
                                                    (not (selectedp)))
