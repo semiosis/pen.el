@@ -336,14 +336,14 @@ Function names are prefixed with pen-pf- for easy searching"
 (define-key global-map (kbd "H-P") 'pen-complete-long)
 
 
-(defun pen-topic ()
+(defun pen-topic (&optional short)
   "Determine the topic used for pen functions"
   (interactive)
 
   (let ((topic
          (cond ((major-mode-p 'org-brain-visualize-mode)
                 (progn (require 'my-org-brain)
-                       (org-brain-pf-topic)))
+                       (org-brain-pf-topic short)))
                (t
                 (let ((current-prefix-arg '(4))) ; C-u
                   (get-path))))))
