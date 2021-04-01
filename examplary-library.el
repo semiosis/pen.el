@@ -1,16 +1,3 @@
-(require 'pen)
-
-
-;; Running the function generates a prompt
-
-;; Use a hash table for the data structure?
-
-;; e:$MYGIT/mullikine/elisp-playground/pen.el
-
-
-(load (concat emacsdir "/config/examplary-library.el"))
-(require 'examplary-library)
-
 (defun org-brain-asktutor (question)
   (interactive (list (read-string-hist (concat "asktutor about " (pen-topic) ": "))))
   (let ((cname (org-brain-current-name))
@@ -27,4 +14,4 @@
     (etv (eval
           `(ci (snc "ttp" (pen-pf-generic-tutor-for-any-topic ,cname ,pname ,question)))))))
 
-(provide 'examplary)
+(provide 'examplary-libary)
