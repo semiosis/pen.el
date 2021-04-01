@@ -1,5 +1,3 @@
-
-
 (defun examplary-asktutor (broader-topic specific-topic question)
   (interactive (list
                 (read-string-hist (concat "(xlr) ask tutor about " (pen-topic t) ": "))

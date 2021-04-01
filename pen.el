@@ -115,6 +115,8 @@
 
 
 (defset pen-prompt-functions nil)
+;; Metadata about prompt functions -- save the hash table here 
+(defset pen-prompt-functions-meta nil)
 
 
 (defun yaml-test (yaml key)
@@ -154,6 +156,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      ;;            (mapcar 'str2sym var-slugs)
                      ;;            '(:key ci-update)))
                      (var-syms (mapcar 'str2sym var-slugs))
+                     (pen-defaults (vector2list (ht-get yaml "pen-defaults")))
+                     (completion (yaml-test yaml "completion"))
                      (func-name (concat "pen-pf-" title-slug))
                      (func-sym (str2sym func-name))
                      (iargs (let ((iteration 0))
@@ -173,6 +177,9 @@ Function names are prefixed with pen-pf- for easy searching"
                                        (progn
                                          (setq iteration (+ 1 iteration))
                                          (message (str iteration)))))))
+
+                (add-to-list 'pen-prompt-functions-meta yaml)
+
                 ;; var names will have to be slugged, too
 
                 (if alias-slugs
@@ -247,8 +254,9 @@ Function names are prefixed with pen-pf- for easy searching"
 ;; TODO Generate a list of completion symbols
 ;; This should be a permutation of n-nmax tokens of a single response from openai
 ;; TODO In future, suggest alternative completions from openai
+;; Make this into 2 functions
 (defun company-pen-filetype--candidates (prefix)
-  (let* ((preceding-text (str (buffer-substring (point) (max 1 (- (point) 1000)))))
+  (let* ((preceding-text (pen-preceding-text))
          (endspace)
          (preceding-text-endspaceremoved)
          (response
@@ -269,14 +277,7 @@ Function names are prefixed with pen-pf- for easy searching"
     (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
             res)))
 
-(defun company-pen--grab-symbol ()
-  (buffer-substring (point) (save-excursion (skip-syntax-backward "w_.")
-                                            (point))))
 
-(defun company-pen-filetype--prefix ()
-  "Grab prefix at point."
-  (or (company-pen--grab-symbol)
-      'stop))
 
 (defun company-pen-filetype (command &optional arg &rest ignored)
   (interactive (list 'interactive))
@@ -294,10 +295,8 @@ Function names are prefixed with pen-pf- for easy searching"
 
 ;; TODO Generate arbitrarily many company completion functions 
 
-(defun defcompletion-engine (completion-function)
-
-  )
-
+;; Go over all the pen functions and automatically create completion functions
+;; From the ones that have "completion: on"
 
 (defvar my-completion-engine 'company-pen-filetype)
 
@@ -305,6 +304,21 @@ Function names are prefixed with pen-pf- for easy searching"
                                 completion-at-point
                                 ,(defcompletion-engine
                                    'pen-pf-tldr-summarization)))
+
+(never
+ (ht-keys (car pen-prompt-functions-meta))
+ (ht-get (car pen-prompt-functions-meta) "title")
+
+
+ (cl-loop for pf-ht in pen-prompt-functions-meta do
+          (message (ht-get pf-ht "title")))
+
+ (cl-loop for pf-ht in pen-prompt-functions-meta do
+          (if ;; (string-equal "Generic file type completion" (ht-get pf-ht "title"))
+              (yaml-test pf-ht "completion" )
+              (message (ht-get pf-ht "title"))
+            ;; (message (ht-get pf-ht "title"))
+            )))
 
 (require 'company)
 (defun my-completion-at-point ()
@@ -329,36 +343,11 @@ Function names are prefixed with pen-pf- for easy searching"
 (my-load "$MYGIT/semiosis/pen.el/pen-core.el")
 (require 'pen-core)
 
-(defun pen-topic (&optional short)
-  "Determine the topic used for pen functions"
-  (interactive)
+(my-load "$MYGIT/semiosis/pen.el/pen-company.el")
+(require 'pen-company)
 
-  (let ((topic
-         (cond ((major-mode-p 'org-brain-visualize-mode)
-                (progn (require 'my-org-brain)
-                       (org-brain-pf-topic short)))
-               (t
-                (let ((current-prefix-arg '(4))) ; C-u
-                  ;; Consider getting topic keywords from visible text
-                  (get-path))))))
-    (if (interactive-p)
-        (etv topic)
-      topic)))
-
-(defun pen-broader-topic ()
-  "Determine the topic used for pen functions"
-  (interactive)
-
-  (let ((topic
-         (cond ((major-mode-p 'org-brain-visualize-mode)
-                (progn (require 'my-org-brain)
-                       (org-brain-pf-topic short)))
-               (t
-                (let ((current-prefix-arg '(4))) ; C-u
-                  (get-path))))))
-    (if (interactive-p)
-        (etv topic)
-      topic)))
+(my-load "$MYGIT/semiosis/pen.el/pen-library.el")
+(require 'pen-library)
 
 
 (define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
