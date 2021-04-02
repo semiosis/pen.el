@@ -5,6 +5,7 @@
 # expand-env: ((yas-indent-line 'fixed))
 # --
 title: "${1:title}"
+# future-titles: ""
 doc: "Given ... ${1:title}"
 # aims: |+
 # - More abstractive rewording
@@ -13,7 +14,11 @@ prompt: |+
     ${2:contents}
     
     <1> are like <2> in that
+# myrc will select the completion engine using my config.
+# This may be openi-complete or something else
 engine: "myrc"
+# if nothing is selected in myrc and openapi-complete is used
+# by default, then openai should select this engine.
 preferred-openai-engine: "davinci"
 # 0.0 = /r/hadastroke
 # 1.0 = /r/iamveryrandom
@@ -41,6 +46,7 @@ vars:
 examples:
 - "boysenberries"
 - "strawberries"
+# Completion is for generating a company-mode completion function
 # completion: on
 # # default values for pen -- evaled
 # # This is useful for completion commands.
@@ -52,6 +58,7 @@ examples:
 pen-preprocessors:
 - "pen-pf-correct-grammar"
 # # A preprocessor filters the var at that position
+# the current implementation of preprocessors is kinda slow and will add ~100ml per variable
 # # This may be useful to distinguish a block of text, for example
 # preprocessors:
 # - "sed 's/^/- /"
@@ -60,12 +67,15 @@ chomp-start: on
 chomp-end: off
 prefer-external: on
 external: ""
+# Enable running conversation
 conversation-mode: no
+# Replace selected text
 filter: no
 # Keep stitching together until reaching this limit
 # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
 stitch-max: 0
 needs-work: no
+n-test-runs: 5
 # Prompt function aliases
 # aliases:
 # - "asktutor"
