@@ -139,7 +139,6 @@ Function names are prefixed with pen-pf- for easy searching"
           (-non-nil (mapcar 'sor (glob (concat pen-prompt-directory "/*.prompt"))))))
      (cl-loop for path in paths do
               ;; results in a hash table
-              (ignore-errors
               (let* ((yaml (yamlmod-read-file path))
                      (title (ht-get yaml "title"))
                      (title-slug (slugify title))
@@ -224,7 +223,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                (etv result)
                                              (replace-region result))
                                          result))))))
-                (message (concat "pen-mode: Loaded prompt function " func-name))))))))
+                (message (concat "pen-mode: Loaded prompt function " func-name)))))))
 (pen-generate-prompt-functions)
 
 
