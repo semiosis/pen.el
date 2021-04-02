@@ -167,7 +167,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      (iargs (let ((iteration 0))
                               (cl-loop for v in vars
                                        collect
-                                       (let ((example (nth iteration examples)))
+                                       (let ((example (try (nth iteration examples)
+                                                           "")))
                                          (message (concat (str iteration) ": " example))
                                          (if (equal 0 iteration)
                                              ;; The first argument may be captured through selection
