@@ -6,6 +6,8 @@
 # --
 title: "${1:title}"
 # future-titles: ""
+# aims: |+
+# - More abstractive rewording
 doc: "Given ... ${1:title}"
 # aims: |+
 # - More abstractive rewording
@@ -14,6 +16,10 @@ prompt: |+
     ${2:contents}
     
     <1> are like <2> in that
+# # Additional transformation of prompt after the template
+# prompt-filter: "sed -z 's/\\s\\+$//'"
+# # Trailing whitespace is always removed
+# prompt-remove-trailing-whitespace: on
 # myrc will select the completion engine using my config.
 # This may be openi-complete or something else
 engine: "myrc"

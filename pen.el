@@ -170,10 +170,12 @@ Function names are prefixed with pen-pf- for easy searching"
                                              ;; The first argument may be captured through selection
                                              `(if (selectionp)
                                                   (my/selected-text)
-                                                (if (> (length (str2lines ,example)) 1)
-                                                    (tvipe ;; ,(concat v ": ")
-                                                     ,example)
-                                                  (read-string-hist ,(concat v ": ") ,example)))
+                                                (progn
+                                                  ;; ,(message example)
+                                                  (if ,(> (length (str2lines example)) 1)
+                                                      (tvipe ;; ,(concat v ": ")
+                                                       ,example)
+                                                    (read-string-hist ,(concat v ": ") ,example))))
                                            `(read-string-hist ,(concat v ": ") ,example)))
                                        do
                                        (progn
