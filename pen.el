@@ -217,9 +217,9 @@ Function names are prefixed with pen-pf- for easy searching"
                                                             (list " "
                                                                   (list 'q (str2sym vs)))))))))))
                                        (if (interactive-p)
-                                           (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
-                                                   (not (selectedp))
-                                                   (not filter))
+                                           (if (or ,(not filter)
+                                                   (>= (prefix-numeric-value current-prefix-arg) 4)
+                                                   (not (selectedp)))
                                                (etv result)
                                              (replace-region result))
                                          result))))))
