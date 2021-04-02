@@ -139,6 +139,7 @@ Function names are prefixed with pen-pf- for easy searching"
           (-non-nil (mapcar 'sor (glob (concat pen-prompt-directory "/*.prompt"))))))
      (cl-loop for path in paths do
               ;; results in a hash table
+              (ignore-errors
               (let* ((yaml (yamlmod-read-file path))
                      (title (ht-get yaml "title"))
                      (title-slug (slugify title))
@@ -219,7 +220,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                (etv result)
                                              (replace-region result))
                                          result))))))
-                (message (concat "pen-mode: Loaded prompt function " func-name)))))))
+                (message (concat "pen-mode: Loaded prompt function " func-name))))))))
 (pen-generate-prompt-functions)
 
 
@@ -257,12 +258,18 @@ Function names are prefixed with pen-pf- for easy searching"
 ;; This should be a permutation of n-nmax tokens of a single response from openai
 ;; TODO In future, suggest alternative completions from openai
 ;; Make this into 2 functions
+
+
 (defun company-pen-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
-         (endspace)
-         (preceding-text-endspaceremoved)
+         ;; (trailing_ws_pat "[ \t\n]*\\'")
+         ;; (original_whitespace (regex-match-string trailing_ws_pat preceding-text))
+         ;; (endspace)
+         ;; (preceding-text-endspaceremoved)
          (response
-          (pen-pf-generic-file-type-completion (detect-language) preceding-text))
+          (->>
+           preceding-text
+           (pen-pf-generic-file-type-completion (detect-language))))
          ;; Take only the first line for starters
          ;; Do not only take the first line. That's kinda useless.
          ;; (line (car (str2lines response)))
@@ -283,9 +290,9 @@ Function names are prefixed with pen-pf- for easy searching"
 
 
 (defun company-pen-filetype (command &optional arg &rest ignored)
-  (interactive (list 'interactive))
+  (interactive (list 'is-interactive))
   (cl-case command
-    (interactive (company-begin-backend 'company-pen-filetype))
+    (is-interactive (company-begin-backend 'company-pen-filetype))
     (prefix (company-pen-filetype--prefix))
     (candidates (company-pen-filetype--candidates arg))
     ;; TODO doc-buffer may contain info on the completion in the future
@@ -303,10 +310,10 @@ Function names are prefixed with pen-pf- for easy searching"
 
 (defvar my-completion-engine 'company-pen-filetype)
 
-(defvar my-completion-engines `(company-pen-filetype
-                                completion-at-point
-                                ,(defcompletion-engine
-                                   'pen-pf-tldr-summarization)))
+;; (defvar my-completion-engines `(company-pen-filetype
+;;                                 completion-at-point
+;;                                 ,(defcompletion-engine
+;;                                    'pen-pf-tldr-summarization)))
 
 (never
  (ht-keys (car pen-prompt-functions-meta))
