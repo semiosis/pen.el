@@ -138,6 +138,8 @@ Function names are prefixed with pen-pf- for easy searching"
    (let ((paths
           (-non-nil (mapcar 'sor (glob (concat pen-prompt-directory "/*.prompt"))))))
      (cl-loop for path in paths do
+              (message (concat "pen-mode: Loading .prompt file " path))
+
               ;; results in a hash table
               (let* ((yaml (yamlmod-read-file path))
                      (title (ht-get yaml "title"))
@@ -166,12 +168,12 @@ Function names are prefixed with pen-pf- for easy searching"
                               (cl-loop for v in vars
                                        collect
                                        (let ((example (nth iteration examples)))
+                                         (message (concat (str iteration) ": " example))
                                          (if (equal 0 iteration)
                                              ;; The first argument may be captured through selection
                                              `(if (selectionp)
                                                   (my/selected-text)
                                                 (progn
-                                                  ;; ,(message example)
                                                   (if ,(> (length (str2lines example)) 1)
                                                       (tvipe ;; ,(concat v ": ")
                                                        ,example)
@@ -181,6 +183,8 @@ Function names are prefixed with pen-pf- for easy searching"
                                        (progn
                                          (setq iteration (+ 1 iteration))
                                          (message (str iteration)))))))
+
+                
 
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
