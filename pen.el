@@ -170,7 +170,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                        (let ((example (or (sor (nth iteration examples)
                                                                "")
                                                           "")))
-                                         (message (concat "Example " (str iteration) ": " example))
+                                         (message "%s" (concat "Example " (str iteration) ": " example))
                                          (if (equal 0 iteration)
                                              ;; The first argument may be captured through selection
                                              `(if (selectionp)
