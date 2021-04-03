@@ -167,9 +167,10 @@ Function names are prefixed with pen-pf- for easy searching"
                      (iargs (let ((iteration 0))
                               (cl-loop for v in vars
                                        collect
-                                       (let ((example (try (nth iteration examples)
-                                                           "")))
-                                         (message (concat (str iteration) ": " example))
+                                       (let ((example (or (sor (nth iteration examples)
+                                                               "")
+                                                          "")))
+                                         (message (concat "Example " (str iteration) ": " example))
                                          (if (equal 0 iteration)
                                              ;; The first argument may be captured through selection
                                              `(if (selectionp)
@@ -184,8 +185,6 @@ Function names are prefixed with pen-pf- for easy searching"
                                        (progn
                                          (setq iteration (+ 1 iteration))
                                          (message (str iteration)))))))
-
-                
 
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
