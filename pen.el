@@ -223,9 +223,9 @@ Function names are prefixed with pen-pf- for easy searching"
                                                                   (list 'q (str2sym vs)))))))))))
                                        (if (interactive-p)
                                            (cond
-                                            ((and (not filter)
+                                            ((and ,(not filter)
                                                   (selectedp)
-                                                  completion)
+                                                  ,completion)
                                              (replace-region (concat (selection) result)))
                                             ((or ,(not filter)
                                                  (>= (prefix-numeric-value current-prefix-arg) 4)
