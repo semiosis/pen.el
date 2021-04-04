@@ -86,3 +86,5 @@ n-test-runs: 5
 # aliases:
 # - "asktutor"
 # postprocessor: "sed 's/- //' | uniqnosort"
+# # Run it n times and combine the output
+# n-collate: 10
