@@ -188,8 +188,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                          (setq iteration (+ 1 iteration))
                                          (message (str iteration)))))))
 
-                (setq n-collate (or n-collate
-                                    1))
+                (setq n-collate (or n-collate 1))
 
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
