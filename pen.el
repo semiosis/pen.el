@@ -190,7 +190,7 @@ Function names are prefixed with pen-pf- for easy searching"
 
                 (setq n-collate (sor n-collate
                                      "1"))
-                (setq (string-to-int n-collate))
+                (setq n-collate (string-to-int n-collate))
 
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
