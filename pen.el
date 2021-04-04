@@ -151,6 +151,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (prefer-external (yaml-test yaml "prefer-external"))
                      (filter (yaml-test yaml "filter"))
                      (completion (yaml-test yaml "completion"))
+                     (n-collate (sor (yaml-test yaml "n-collate")))
                      (vars (vector2list (ht-get yaml "vars")))
                      (aliases (vector2list (ht-get yaml "aliases")))
                      (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
@@ -187,6 +188,10 @@ Function names are prefixed with pen-pf- for easy searching"
                                          (setq iteration (+ 1 iteration))
                                          (message (str iteration)))))))
 
+                (setq n-collate (sor n-collate
+                                     "1"))
+                (setq (string-to-int n-collate))
+
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
                 ;; var names will have to be slugged, too
@@ -208,19 +213,23 @@ Function names are prefixed with pen-pf- for easy searching"
                                              (or sh-update (>= (prefix-numeric-value current-prefix-arg) 4)))
                                             (result
                                              (chomp
-                                              (sn
-                                               ,(flatten-once
-                                                 (list
-                                                  (list 'concat
-                                                        (if cache
-                                                            "oci "
-                                                          "")
-                                                        "openai-complete "
-                                                        (q path))
-                                                  (flatten-once
-                                                   (cl-loop for vs in var-slugs collect
-                                                            (list " "
-                                                                  (list 'q (str2sym vs)))))))))))
+                                              (mapconcat 'identity
+                                                         (cl-loop for i in (seq 1 n-collate)
+                                                                  collect
+                                                                  (sn
+                                                                   ,(flatten-once
+                                                                     (list
+                                                                      (list 'concat
+                                                                            (if cache
+                                                                                "oci "
+                                                                              "")
+                                                                            "openai-complete "
+                                                                            (q path))
+                                                                      (flatten-once
+                                                                       (cl-loop for vs in var-slugs collect
+                                                                                (list " "
+                                                                                      (list 'q (str2sym vs)))))))))
+                                                         ""))))
                                        (if (interactive-p)
                                            (cond
                                             ((and ,(not filter)
