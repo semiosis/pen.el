@@ -151,7 +151,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (prefer-external (yaml-test yaml "prefer-external"))
                      (filter (yaml-test yaml "filter"))
                      (completion (yaml-test yaml "completion"))
-                     (n-collate (sor (yaml-test yaml "n-collate")))
+                     (n-collate (yaml-test yaml "n-collate"))
                      (vars (vector2list (ht-get yaml "vars")))
                      (aliases (vector2list (ht-get yaml "aliases")))
                      (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
