@@ -212,7 +212,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                             (result
                                              (chomp
                                               (mapconcat 'identity
-                                                         (cl-loop for i in (seq 1 n-collate)
+                                                         (cl-loop for i in (seq 1 ,n-collate)
                                                                   collect
                                                                   (sn
                                                                    ,(flatten-once
