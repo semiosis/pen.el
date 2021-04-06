@@ -103,7 +103,7 @@ prompt additionally for EXTRA-AG-ARGS."
 
 (defun fz-pen-counsel ()
   (interactive)
-  (mu (let* ((pfp (fz (snc "cd $MYGIT/semiosis/prompts/prompts; find . -maxdepth 1 -mindepth 1 -type f | sed 's/..//'")
+  (mu (let* ((pfp (fz (snc "cd $MYGIT/semiosis/prompts/prompts; find . -maxdepth 1 -mindepth 1 -type f | sed -e 's/..//' -e 's/\\.prompt$//'")
                       nil
                       nil
                       "pen list: "))
