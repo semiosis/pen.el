@@ -12,6 +12,10 @@ doc: "Given ... ${1:title}"
 # aims: |+
 # - More abstractive rewording
 prompt-version: 1
+# <:pp> defines a point where the following
+# text is concatenated before the postprocessor
+# is run.
+# <1>, <2> etc. are where variables are substituted
 prompt: |+
     ${2:contents}
     
@@ -37,6 +41,9 @@ frequency-penalty: 0.5
 # If I make presence-penalty 0 then it will get very terse
 presence-penalty: 0.0
 best-of: 1
+# Only the first one will be used by the API,
+# but the completer script will use the others.
+# Currently the API can only accept one stop-sequence, but that may change.
 stop-sequences:
 # - "\\n"
 # - "\\n\\n"
