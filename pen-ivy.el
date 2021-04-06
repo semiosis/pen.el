@@ -103,8 +103,8 @@ prompt additionally for EXTRA-AG-ARGS."
 
 (defun fz-pen-counsel ()
   (interactive)
-  (mu (snc "cd $MYGIT/semiosis/prompts/prompts; find . -maxdepth 1 -mindepth 1 -type f | sed 's/..//'"))
-  (gen-counsel-function "loop openai-complete -s pick-up-line.prompt" 'etv))
+  (let ((pfp (mu (snc "cd $MYGIT/semiosis/prompts/prompts; find . -maxdepth 1 -mindepth 1 -type f | sed 's/..//'"))))
+    (gen-counsel-function (concat "loop openai-complete -s " (q pfp)) 'etv)))
 
 
 (provide 'pen-ivy)
