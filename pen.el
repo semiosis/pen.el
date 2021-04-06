@@ -374,6 +374,9 @@ Function names are prefixed with pen-pf- for easy searching"
 (my-load "$MYGIT/semiosis/pen.el/pen-core.el")
 (require 'pen-core)
 
+(my-load "$MYGIT/semiosis/pen.el/pen-ivy.el")
+(require 'pen-ivy)
+
 (my-load "$MYGIT/semiosis/pen.el/pen-company.el")
 (require 'pen-company)
 
