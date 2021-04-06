@@ -101,7 +101,7 @@ prompt additionally for EXTRA-AG-ARGS."
 ;; (gen-counsel-generator-function "openai-complete pick-up-line.prompt")
 
 
-(gen-counsel-function "loop openai-complete pick-up-line.prompt" 'etv)
+(gen-counsel-function "loop openai-complete -s pick-up-line.prompt" 'etv)
 
 
 (provide 'pen-ivy)
