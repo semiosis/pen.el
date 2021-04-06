@@ -42,6 +42,7 @@
   (let ((funsym (str2sym (concat "counsel-generated-" (slugify cmd))))
         (histvarsym (str2sym (concat "counsel-generated-" (slugify cmd) "-histvar")))
         (cmdstr (concat cmd " %s")))
+    (eval (defvar ,histvarsym))
     `(cl-defun ,funsym (&optional initial-input initial-directory extra-ag-args ag-prompt
                                   &key caller &key histvar)
        "Run an arbitrary external shell command in the current directory. Select from the results.
@@ -80,7 +81,8 @@ prompt additionally for EXTRA-AG-ARGS."
                                       default-directory)))
            (ivy-read (or ag-prompt
                          (concat prog-name ": "))
-                     ,(gen-counsel-generator-function cmd)
+                     ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
+                     (gen-counsel-generator-function ,cmd)
                      :initial-input initial-input
                      :dynamic-collection t
                      :keymap counsel-ag-map
@@ -89,8 +91,8 @@ prompt additionally for EXTRA-AG-ARGS."
                      :require-match t
                      :caller (or caller 'counsel-ag)))))))
 
-(gen-counsel-function "counsel-ag-cmd")
-
+(gen-counsel-generator-function "counsel-ag-cmd")
+(gen-counsel-function "counsel-ag-cmd" 'etv)
 
 
 (provide 'pen-ivy)
