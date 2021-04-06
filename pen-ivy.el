@@ -39,7 +39,7 @@ NEEDLE is the search string."
                                                                  (funcall (if (listp ,cmdstr) #'identity
                                                                             #'shell-quote-argument)
                                                                           string))
-                                     " | cat"))
+                                     " %s | cat"))
             nil))))))
 
 ;; (never
@@ -97,6 +97,7 @@ prompt additionally for EXTRA-AG-ARGS."
 ;; (gen-counsel-generator-function "counsel-ag-cmd")
 ;; (gen-counsel-function "counsel-ag-cmd" 'etv)
 
+(gen-counsel-generator-function "openai-complete pick-up-line.prompt")
 (gen-counsel-generator-function "openai-complete pick-up-line.prompt")
 (gen-counsel-function "openai-complete pick-up-line.prompt" 'etv)
 
