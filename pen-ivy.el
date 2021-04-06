@@ -59,7 +59,7 @@ NEEDLE is the search string."
   (let ((funsym (str2sym (concat "counsel-generated-" (slugify cmd))))
         (histvarsym (str2sym (concat "counsel-generated-" (slugify cmd) "-histvar")))
         (cmdstr (concat cmd " %s")))
-    (message (conact "hist sym: " (sym2str histvarsym)))
+    (message (concat "hist sym: " (sym2str histvarsym)))
     (eval `(defvar ,histvarsym nil))
     `(cl-defun ,funsym (&optional initial-input initial-directory extra-ag-args ag-prompt
                                   &key caller &key histvar)
