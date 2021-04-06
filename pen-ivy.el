@@ -92,8 +92,8 @@ prompt additionally for EXTRA-AG-ARGS."
                    :require-match t
                    :caller (or caller ',funsym))))))
 
-(gen-counsel-generator-function "counsel-ag-cmd")
-(gen-counsel-function "counsel-ag-cmd" 'etv)
+;; (gen-counsel-generator-function "counsel-ag-cmd")
+;; (gen-counsel-function "counsel-ag-cmd" 'etv)
 
 (gen-counsel-generator-function "openai-complete pick-up-line.prompt")
 (gen-counsel-function "openai-complete pick-up-line.prompt" 'etv)
