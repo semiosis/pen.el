@@ -61,35 +61,21 @@ prompt additionally for EXTRA-AG-ARGS."
        (if (not histvar)
            (setq histvar ,histvarsym))
 
-       (setq counsel-ag-command counsel-ag-base-command)
-       (setq counsel--regex-look-around counsel--grep-tool-look-around)
-       (counsel-require-program counsel-ag-command)
-       (let ((prog-name (car (if (listp counsel-ag-command) counsel-ag-command
-                               (split-string counsel-ag-command))))
-             (arg (prefix-numeric-value current-prefix-arg)))
-         (when (>= arg 4)
-           (setq initial-directory
-                 (or initial-directory
-                     (my/pwd))))
-         (when (>= arg 16)
-           (setq extra-ag-args
-                 (or extra-ag-args
-                     (read-from-minibuffer (format "%s args: " prog-name)))))
-         (setq counsel-ag-command (counsel--format-ag-command (or extra-ag-args "") "%s"))
-         (let ((default-directory (or initial-directory
-                                      (counsel--git-root)
-                                      default-directory)))
-           (ivy-read (or ag-prompt
-                         (concat prog-name ": "))
-                     ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
-                     (gen-counsel-generator-function ,cmd)
-                     :initial-input initial-input
-                     :dynamic-collection t
-                     :keymap counsel-ag-map
-                     :history histvar
-                     :action ,action
-                     :require-match t
-                     :caller (or caller 'counsel-ag)))))))
+       (setq counsel--regex-look-around nil)
+
+       (let ((default-directory (or initial-directory
+                                    (counsel--git-root)
+                                    default-directory)))
+         (ivy-read (concat ,cmd ": ")
+                   ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
+                   (gen-counsel-generator-function ,cmd)
+                   :initial-input initial-input
+                   :dynamic-collection t
+                   :keymap counsel-ag-map
+                   :history histvar
+                   :action ,action
+                   :require-match t
+                   :caller (or caller 'counsel-ag))))))
 
 (gen-counsel-generator-function "counsel-ag-cmd")
 (gen-counsel-function "openai-complete very-witty-pick-up-lines.prompt" 'etv)
