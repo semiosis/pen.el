@@ -25,4 +25,15 @@
                                               string)))
             nil))))))
 
+(never
+ (ivy-read "testing:"
+           (counsel-fz-function-openai-complete-very-witty-pick-up-lines-prompt "tea")
+           :initial-input initial-input
+           :dynamic-collection t
+           :keymap counsel-ag-map
+           :history histvar
+           :action 'etv
+           :require-match t
+           :caller (or caller 'counsel-ag)))
+
 (provide 'pen-ivy)
