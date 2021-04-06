@@ -95,8 +95,8 @@ prompt additionally for EXTRA-AG-ARGS."
 (gen-counsel-generator-function "counsel-ag-cmd")
 (gen-counsel-function "counsel-ag-cmd" 'etv)
 
-(gen-counsel-generator-function "openai-complete very-witty-pick-up-lines.prompt")
-(gen-counsel-function "openai-complete very-witty-pick-up-lines.prompt" 'etv)
+(gen-counsel-generator-function "openai-complete pick-up-line.prompt")
+(gen-counsel-function "openai-complete pick-up-line.prompt" 'etv)
 
 
 (provide 'pen-ivy)
