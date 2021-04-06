@@ -42,7 +42,7 @@
   (let ((funsym (str2sym (concat "counsel-generated-" (slugify cmd))))
         (histvarsym (str2sym (concat "counsel-generated-" (slugify cmd) "-histvar")))
         (cmdstr (concat cmd " %s")))
-    (eval (defvar ,histvarsym))
+    (eval `(defvar ,histvarsym nil))
     `(cl-defun ,funsym (&optional initial-input initial-directory extra-ag-args ag-prompt
                                   &key caller &key histvar)
        "Run an arbitrary external shell command in the current directory. Select from the results.
@@ -92,6 +92,7 @@ prompt additionally for EXTRA-AG-ARGS."
                      :caller (or caller 'counsel-ag)))))))
 
 (gen-counsel-generator-function "counsel-ag-cmd")
+(gen-counsel-function "openai-complete very-witty-pick-up-lines.prompt" 'etv)
 (gen-counsel-function "counsel-ag-cmd" 'etv)
 
 
