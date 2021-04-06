@@ -107,5 +107,7 @@ prompt additionally for EXTRA-AG-ARGS."
              (cf (eval `(gen-counsel-function ,(concat "loop openai-complete -s " (q pfp)) 'etv))))
         (call-interactively cf))))
 
+(define-key my-mode-map (kbd "H-s") 'fz-pen-counsel)
+
 
 (provide 'pen-ivy)
