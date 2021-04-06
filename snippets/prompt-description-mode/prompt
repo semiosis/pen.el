@@ -47,7 +47,9 @@ best-of: 1
 stop-sequences:
 # - "\\n"
 # - "\\n\\n"
-- "###"
+# 2 hashes is more reliable as a stop sequence because
+# sometimes the generation morphs from ### to ##
+- "##"
 inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
