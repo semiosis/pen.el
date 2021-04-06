@@ -1,4 +1,4 @@
-;; This is for
+;; This is for multiline selection
 
 ;; counsel-ag-function
 
