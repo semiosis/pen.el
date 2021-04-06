@@ -34,12 +34,12 @@ NEEDLE is the search string."
           (let* ((default-directory (ivy-state-directory ivy-last))
                  (switches (concat (car command-args))))
             (counsel--async-command (concat
-                                     (my-counsel--format-command ,cmd
+                                     (my-counsel--format-command ,cmdstr
                                                                  switches
                                                                  (funcall (if (listp ,cmdstr) #'identity
                                                                             #'shell-quote-argument)
                                                                           string))
-                                     " %s | cat"))
+                                     " | cat"))
             nil))))))
 
 ;; (never
