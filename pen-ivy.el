@@ -59,7 +59,7 @@ prompt additionally for EXTRA-AG-ARGS."
        (interactive)
 
        (if (not histvar)
-           (setq histvar ,histvarsym))
+           (setq histvar ',histvarsym))
 
        (setq counsel--regex-look-around nil)
 
@@ -75,7 +75,7 @@ prompt additionally for EXTRA-AG-ARGS."
                    :history histvar
                    :action ,action
                    :require-match t
-                   :caller (or caller 'counsel-ag))))))
+                   :caller (or caller ',funsym))))))
 
 (gen-counsel-generator-function "counsel-ag-cmd")
 (gen-counsel-function "counsel-ag-cmd" 'etv)
