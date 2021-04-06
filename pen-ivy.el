@@ -78,6 +78,7 @@ prompt additionally for EXTRA-AG-ARGS."
                    :caller (or caller 'counsel-ag))))))
 
 (gen-counsel-generator-function "counsel-ag-cmd")
+(gen-counsel-generator-function "openai-complete very-witty-pick-up-lines.prompt")
 (gen-counsel-function "openai-complete very-witty-pick-up-lines.prompt" 'etv)
 (gen-counsel-function "counsel-ag-cmd" 'etv)
 
