@@ -2,7 +2,7 @@
 
 ;; This creates imaginary editing modes with:
 ;; - linter,
-;; - indenter,
+;; - indenter/reformatter,
 ;; - code completion,
 ;; - interpreter
 

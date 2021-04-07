@@ -100,6 +100,10 @@ quality-script: "my-quality-checker-for-this-prompt.sh"
 validation-script: "my-validator-for-this-prompt.sh"
 # Enable running conversation
 conversation-mode: no
+# This is the name of an external database-driven pretext generator.
+# It would typically summarize and fact extract from history.
+# It then passes the pretext to the new prompt.
+# conversation-pretext-generator: "human-conversation"
 # Replace selected text
 filter: no
 # Keep stitching together until reaching this limit
