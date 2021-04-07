@@ -383,6 +383,9 @@ Function names are prefixed with pen-pf- for easy searching"
 (my-load "$MYGIT/semiosis/pen.el/pen-library.el")
 (require 'pen-library)
 
+(my-load "$MYGIT/semiosis/pen.el/imaginary.el")
+(require 'imaginary)
+
 
 (define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
 (define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
