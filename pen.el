@@ -383,6 +383,9 @@ Function names are prefixed with pen-pf- for easy searching"
 (my-load "$MYGIT/semiosis/pen.el/pen-library.el")
 (require 'pen-library)
 
+(load (concat emacsdir "/config/examplary.el"))
+(require 'examplary)
+
 (my-load "$MYGIT/semiosis/pen.el/imaginary.el")
 (require 'imaginary)
 
