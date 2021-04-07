@@ -6,5 +6,4 @@
 ;; - code completion,
 ;; - interpreter
 
-
 (provide 'imaginary)
