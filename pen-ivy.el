@@ -93,7 +93,10 @@ prompt additionally for EXTRA-AG-ARGS."
                    :history histvar
                    :action ,action
                    :require-match t
-                   :caller (or caller ',funsym))))))
+                   :caller
+                   (or caller ',funsym)
+                   ;; (or caller 'counsel-ag)
+                   )))))
 
 ;; (gen-counsel-generator-function "counsel-ag-cmd")
 ;; (gen-counsel-function "counsel-ag-cmd" 'etv)
