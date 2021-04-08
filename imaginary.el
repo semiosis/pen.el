@@ -6,4 +6,6 @@
 ;; - code completion,
 ;; - interpreter
 
+;; interpreter should use comint
+
 (provide 'imaginary)
