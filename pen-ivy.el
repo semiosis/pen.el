@@ -98,11 +98,12 @@ prompt additionally for EXTRA-AG-ARGS."
          ;;           ;; (or caller 'counsel-ag)
          ;;           )
          (completing-read (concat ,cmd ": ")
-                   ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
-                   (gen-counsel-generator-function ,cmd)
-                   :initial-input initial-input
-                   :hist histvar
-                   :require-match t)))))
+                          ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
+                          (gen-counsel-generator-function ,cmd)
+                          nil
+                          t
+                          initial-input
+                          histvar)))))
 
 ;; (gen-counsel-generator-function "counsel-ag-cmd")
 ;; (gen-counsel-function "counsel-ag-cmd" 'etv)
