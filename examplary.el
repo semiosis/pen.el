@@ -1,4 +1,4 @@
-(require 'pen)
+;; (require 'pen)
 
 (my-load "$MYGIT/semiosis/pen.el/examplary-core.el")
 (require 'examplary-core)
