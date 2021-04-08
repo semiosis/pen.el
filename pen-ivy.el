@@ -84,26 +84,30 @@ prompt additionally for EXTRA-AG-ARGS."
        (let ((default-directory (or initial-directory
                                     (counsel--git-root)
                                     default-directory)))
-         ;; (ivy-read (concat ,cmd ": ")
-         ;;           ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
-         ;;           (gen-counsel-generator-function ,cmd)
-         ;;           :initial-input initial-input
-         ;;           :dynamic-collection t
-         ;;           :keymap counsel-ag-map
-         ;;           :history histvar
-         ;;           :action ,action
-         ;;           :require-match t
-         ;;           :caller
-         ;;           (or caller ',funsym)
-         ;;           ;; (or caller 'counsel-ag)
-         ;;           )
-         (completing-read (concat ,cmd ": ")
-                          ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
-                          (gen-counsel-generator-function ,cmd)
-                          nil
-                          t
-                          initial-input
-                          histvar)))))
+
+         (ivy-read (concat ,cmd ": ")
+                   ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
+                   (gen-counsel-generator-function ,cmd)
+                   :initial-input initial-input
+                   :dynamic-collection t
+                   :keymap counsel-ag-map
+                   :history histvar
+                   :action ,action
+                   :require-match t
+                   :caller
+                   (or caller ',funsym)
+                   ;; (or caller 'counsel-ag)
+                   )
+
+         ;; Sadly, this doesn't do anything
+         ;; (completing-read (concat ,cmd ": ")
+         ;;                  ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
+         ;;                  (gen-counsel-generator-function ,cmd)
+         ;;                  nil
+         ;;                  t
+         ;;                  initial-input
+         ;;                  histvar)
+         ))))
 
 ;; (gen-counsel-generator-function "counsel-ag-cmd")
 ;; (gen-counsel-function "counsel-ag-cmd" 'etv)
