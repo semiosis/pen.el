@@ -163,7 +163,13 @@ Function names are prefixed with pen-pf- for easy searching"
                      ;; (var-syms (append
                      ;;            (mapcar 'str2sym var-slugs)
                      ;;            '(:key ci-update)))
-                     (var-syms (mapcar 'str2sym var-slugs))
+                     (var-syms
+                      (let ((ss (mapcar 'str2sym var-slugs)))
+                        (if (and (sor prettifier)
+                                 prettifier)
+                            (setq ss (append ss '(:key prettify)))
+                            )
+                        ss))
                      (pen-defaults (vector2list (ht-get yaml "pen-defaults")))
                      (completion (yaml-test yaml "completion"))
                      (func-name (concat "pen-pf-" title-slug))
@@ -206,7 +212,7 @@ Function names are prefixed with pen-pf- for easy searching"
                     (add-to-list 'pen-prompt-functions
                                  ;; These are getting added to a list
                                  (eval
-                                  `(defun ,func-sym ,var-syms
+                                  `(cl-defun ,func-sym ,var-syms
                                      ,(sor doc title)
                                      (interactive ,(cons 'list iargs))
                                      (let* ((sh-update
