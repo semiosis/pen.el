@@ -6,6 +6,8 @@
 # --
 in-development: yes
 title: "${1:title}"
+todo:
+design-patterns:
 # future-titles: ""
 # aims: |+
 # - More abstractive rewording
