@@ -189,7 +189,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                 (progn
                                                   (if ,(> (length (str2lines example)) 1)
                                                       (tvipe ;; ,(concat v ": ")
-                                                       ,example)
+                                                       ,example) 
                                                     (read-string-hist ,(concat v ": ") ,example))))
                                            `(read-string-hist ,(concat v ": ") ,example)))
                                        do
@@ -225,9 +225,10 @@ Function names are prefixed with pen-pf- for easy searching"
                                                                   collect
                                                                   (sn
                                                                    (concat
-                                                                    (if prettify
-                                                                        "PRETTY_PRINT=y "
-                                                                      "")
+                                                                    ,(if (sor prettifier)
+                                                                         '(if prettify
+                                                                             "PRETTY_PRINT=y "
+                                                                            ""))
                                                                     ,(flatten-once
                                                                       (list
                                                                        (list 'concat
