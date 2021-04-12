@@ -8,6 +8,8 @@ in-development: yes
 title: "${1:title}"
 todo:
 design-patterns:
+issues:
+# - "It appears to not have a large effective window"
 # future-titles: ""
 # aims: |+
 # - More abstractive rewording
