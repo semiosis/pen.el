@@ -150,6 +150,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      (disabled (yaml-test yaml "disabled"))
                      (prefer-external (yaml-test yaml "prefer-external"))
                      (filter (yaml-test yaml "filter"))
+                     ;; Don't actually use this. But I can toggle to use the prettifier with a bool
+                     (prettifier (yaml-test yaml "prettifier"))
                      (completion (yaml-test yaml "completion"))
                      (n-collate (ht-get yaml "n-collate"))
                      (vars (vector2list (ht-get yaml "vars")))
