@@ -169,7 +169,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                  prettifier)
                             (setq ss (append ss '(:key prettify)))
                           )
-                        (setq ss (append ss '(:key prettify)))
+                        ;; (setq ss (append ss '(:key prettify)))
                         ss))
                      (pen-defaults (vector2list (ht-get yaml "pen-defaults")))
                      (completion (yaml-test yaml "completion"))
