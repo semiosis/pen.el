@@ -130,6 +130,7 @@
 ;; Bools return a string
 ;; (ht-get (yamlmod-read-file "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/subtopic-generation.prompt") "cache")
 
+;; (pen-pf-define-word-for-glossary "glum" :prettify t)
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pen-pf- for easy searching"
@@ -167,9 +168,7 @@ Function names are prefixed with pen-pf- for easy searching"
                       (let ((ss (mapcar 'str2sym var-slugs)))
                         (message (concat "_" prettifier))
                         (if (sor prettifier)
-                            (tv "dljsfd")
-                          ;; (setq ss (append ss '(:key prettify)))
-                          )
+                            (setq ss (append ss '(:key prettify))))
                         ;; (setq ss (append ss '(:key prettify)))
                         ss))
                      (pen-defaults (vector2list (ht-get yaml "pen-defaults")))
