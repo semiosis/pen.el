@@ -4,6 +4,7 @@
 # key: pr
 # expand-env: ((yas-indent-line 'fixed))
 # --
+in-development: yes
 title: "${1:title}"
 # future-titles: ""
 # aims: |+
@@ -16,12 +17,16 @@ prompt-version: 1
 # text is concatenated before the postprocessor
 # is run.
 # <1>, <2> etc. are where variables are substituted
+# <1> is special because it may be the current selection
+# <2> May be inferred from <1> via a prompt.
+# This way, a function can be curried/beta-reduced to a function of 1 argument.
 prompt: |+
     ${2:contents}
     
     <1> are like <2> in that
 problems:
-- "Struggles with the latter columns."
+# Put problems directly after the prompt because the prompt is a multiline string.
+# - "Struggles with the latter columns."
 # # Additional transformation of prompt after the template
 # prompt-filter: "sed -z 's/\\s\\+$//'"
 # # Trailing whitespace is always removed
@@ -52,9 +57,9 @@ stop-sequences:
 # 2 hashes is more reliable as a stop sequence because
 # sometimes the generation morphs from ### to ##
 - "##"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+# inject-start-text: yes
+# inject-restart-text: yes
+# show-probabilities: off
 # Cache the function by default when running the prompt function
 cache: on
 vars:
@@ -63,6 +68,7 @@ vars:
 examples:
 - "boysenberries"
 - "strawberries"
+# test-output: "both are types of berry"
 # Completion is for generating a company-mode completion function
 # completion: on
 # # default values for pen -- evaled
