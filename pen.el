@@ -157,7 +157,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (n-collate (ht-get yaml "n-collate"))
                      (vars (vector2list (ht-get yaml "vars")))
                      (aliases (vector2list (ht-get yaml "aliases")))
-                     (alias-slugs (mapcar 'str2sym (mapcar 'slugify aliases)))
+                     (alias-slugs (mapcar 'str2sym (mapcar (lambda (s) (concat "pen-pf-" s)) (mapcar 'slugify aliases))))
                      (examples (vector2list (ht-get yaml "examples")))
                      (preprocessors (vector2list (ht-get yaml "pen-preprocessors")))
                      (var-slugs (mapcar 'slugify vars))
