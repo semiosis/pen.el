@@ -11,6 +11,14 @@
 ;; (tv (save-excursion (ntimes 5 (call-interactively 'previous-line)) (message (str (point)))))
 
 
+(defun get-point-start-of-nth-previous-line (n)
+  (save-excursion
+    (ntimes n (ignore-errors (previous-line)))
+    (beginning-of-line)
+    (point)))
+
+
+
 (defun pen-surrounding-text (&optional window-line-size)
   (if (not window-line-size)
       (setq window-line-size 20))
