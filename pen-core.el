@@ -27,9 +27,9 @@
   (if (not window-line-size)
       (setq window-line-size 20))
   (let ((window-line-radius (/ window-line-size 2)))
-    (str (buffer-substring (- (point)
-                              (get-point-start-of-nth-previous-line window-line-radius)
-                              10) (max 1 (- (point) 1000))))))
+    (str (buffer-substring
+          (get-point-start-of-nth-previous-line window-line-radius)
+          (get-point-start-of-nth-next-line window-line-radius)))))
 
 (ntimes 5 (message "hi"))
 
