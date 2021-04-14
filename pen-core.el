@@ -26,11 +26,10 @@
 (defun pen-surrounding-text (&optional window-line-size)
   (if (not window-line-size)
       (setq window-line-size 20))
-  (str (buffer-substring (- (point)
-                            (save-excursion
-                              (ntimes window-line-size (previous-line))
-                              (point))
-                            10) (max 1 (- (point) 1000)))))
+  (let ((window-line-radius (/ window-line-size 2)))
+    (str (buffer-substring (- (point)
+                              (get-point-start-of-nth-previous-line window-line-radius)
+                              10) (max 1 (- (point) 1000))))))
 
 (ntimes 5 (message "hi"))
 
