@@ -13,7 +13,7 @@
 
 (defun get-point-start-of-nth-previous-line (n)
   (save-excursion
-    `(eval (expand-macro `(ntimes ,,n (ignore-errors (previous-line)))))
+    `(eval (expand-macro `(ntimes ,n (ignore-errors (previous-line)))))
     (beginning-of-line)
     (point)))
 
