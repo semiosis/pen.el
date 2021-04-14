@@ -189,7 +189,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                 (progn
                                                   (if ,(> (length (str2lines example)) 1)
                                                       (tvipe ;; ,(concat v ": ")
-                                                       ,example) 
+                                                       ,example)
                                                     (read-string-hist ,(concat v ": ") ,example))))
                                            `(read-string-hist ,(concat v ": ") ,example)))
                                        do
@@ -227,7 +227,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                                    (concat
                                                                     ,(if (sor prettifier)
                                                                          '(if prettify
-                                                                             "PRETTY_PRINT=y "
+                                                                              "PRETTY_PRINT=y "
                                                                             ""))
                                                                     ,(flatten-once
                                                                       (list
@@ -244,10 +244,11 @@ Function names are prefixed with pen-pf- for easy searching"
                                                          ""))))
                                        (if (interactive-p)
                                            (cond
-                                            ((and ,(not filter)
-                                                  (selectedp)
-                                                  ,completion)
+                                            ((and ,filter
+                                                  (selectedp))
                                              (replace-region (concat (selection) result)))
+                                            (,completion
+                                             (etv result))
                                             ((or ,(not filter)
                                                  (>= (prefix-numeric-value current-prefix-arg) 4)
                                                  (not (selectedp)))
