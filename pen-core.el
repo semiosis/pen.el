@@ -17,6 +17,12 @@
     (beginning-of-line)
     (point)))
 
+(defun get-point-start-of-nth-next-line (n)
+  (save-excursion
+    (eval `(expand-macro (ntimes ,n (ignore-errors (next-line)))))
+    (beginning-of-line)
+    (point)))
+
 
 
 (defun pen-surrounding-text (&optional window-line-size)
