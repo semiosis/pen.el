@@ -31,6 +31,4 @@
           (get-point-start-of-nth-previous-line window-line-radius)
           (get-point-start-of-nth-next-line window-line-radius)))))
 
-(ntimes 5 (message "hi"))
-
 (provide 'pen-core)
