@@ -23,8 +23,6 @@
     (beginning-of-line)
     (point)))
 
-
-
 (defun pen-surrounding-text (&optional window-line-size)
   (if (not window-line-size)
       (setq window-line-size 20))
