@@ -6,6 +6,8 @@
 # --
 in-development: yes
 title: "${1:title}"
+## heading-name is for document-generation-mode 
+# heading-name: "This is a summary of the above text"
 todo:
 design-patterns:
 # future-titles: ""
@@ -61,6 +63,8 @@ stop-sequences:
 # 2 hashes is more reliable as a stop sequence because
 # sometimes the generation morphs from ### to ##
 - "##"
+# This is an open-ended prompt (it doesn't have a definite ending point)
+# - "#######"
 # inject-start-text: yes
 # inject-restart-text: yes
 # show-probabilities: off
