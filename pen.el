@@ -311,12 +311,14 @@ Function names are prefixed with pen-pf- for easy searching"
          ;; (line (car (str2lines response)))
          ;; (line response)
          (res
-          (if (>= (prefix-numeric-value current-prefix-arg) 8)
-              (list response)
-            ;; Just generate a few
-            ;; (pen-pf-generic-file-type-completion (detect-language) preceding-text)
-            ;; (pen-pf-generic-file-type-completion (detect-language) preceding-text))
-            (str2lines (snc "monotonically-increasing-tuple-permutations.py" (car (str2lines response)))))))
+          (list response)
+          ;; (if (>= (prefix-numeric-value current-prefix-arg) 8)
+          ;;     (list response)
+          ;;   ;; Just generate a few
+          ;;   ;; (pen-pf-generic-file-type-completion (detect-language) preceding-text)
+          ;;   ;; (pen-pf-generic-file-type-completion (detect-language) preceding-text))
+          ;;   (str2lines (snc "monotonically-increasing-tuple-permutations.py" (car (str2lines response)))))
+          ))
     ;; Generate a list
     ;; (setq res '("testing" "testing123"))
     (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
