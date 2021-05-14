@@ -12,7 +12,7 @@
     (point)))
 
 (defun pen-preceding-text-line ()
-  (str (buffer-substring (point) (max 1 (- (point) 1000)))))
+  (str (buffer-substring (point) (max 1 (beginning-of-line-point)))))
 
 
 ;; TODO Figure out how to get the previous line start of line points
