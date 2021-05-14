@@ -186,12 +186,14 @@ Function names are prefixed with pen-pf- for easy searching"
                                              ;; The first argument may be captured through selection
                                              `(if (selectionp)
                                                   (my/selected-text)
-                                                (progn
-                                                  (if ,(> (length (str2lines example)) 1)
-                                                      (tvipe ;; ,(concat v ": ")
-                                                       ,example)
-                                                    (read-string-hist ,(concat v ": ") ,example))))
-                                           `(read-string-hist ,(concat v ": ") ,example)))
+                                                (if ,(> (length (str2lines example)) 1)
+                                                    (tvipe ;; ,(concat v ": ")
+                                                     ,example)
+                                                  (read-string-hist ,(concat v ": ") ,example)))
+                                           `(if ,(> (length (str2lines example)) 1)
+                                                (tvipe ;; ,(concat v ": ")
+                                                 ,example)
+                                              (read-string-hist ,(concat v ": ") ,example))))
                                        do
                                        (progn
                                          (setq iteration (+ 1 iteration))
@@ -217,7 +219,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                      ,(sor doc title)
                                      (interactive ,(cons 'list iargs))
                                      (let* ((sh-update
-                                             (or sh-update (>= (prefix-numeric-value current-prefix-arg) 4)))
+                                             (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
                                             (result
                                              (chomp
                                               (mapconcat 'identity
@@ -311,6 +313,11 @@ Function names are prefixed with pen-pf- for easy searching"
          ;; (line (car (str2lines response)))
          ;; (line response)
          (res
+          ;; (cl-loop
+          ;;  for i from 1 to 3 collect
+          ;;  (->>
+          ;;   preceding-text
+          ;;   (pen-pf-generic-file-type-completion (detect-language))))
           (list response)
           ;; (if (>= (prefix-numeric-value current-prefix-arg) 8)
           ;;     (list response)
@@ -410,7 +417,6 @@ Function names are prefixed with pen-pf- for easy searching"
 (define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
 (define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
 (define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
-
 
 (provide 'my-openai)
 (provide 'pen)

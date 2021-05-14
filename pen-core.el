@@ -6,6 +6,14 @@
 (defun pen-preceding-text ()
   (str (buffer-substring (point) (max 1 (- (point) 1000)))))
 
+(defun beginning-of-line-point ()
+  (save-excursion
+    (beginning-of-line)
+    (point)))
+
+(defun pen-preceding-text-line ()
+  (str (buffer-substring (point) (max 1 (- (point) 1000)))))
+
 
 ;; TODO Figure out how to get the previous line start of line points
 ;; (tv (save-excursion (ntimes 5 (call-interactively 'previous-line)) (message (str (point)))))
