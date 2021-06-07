@@ -225,6 +225,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                               (mapconcat 'identity
                                                          (cl-loop for i in (number-sequence ,n-collate)
                                                                   collect
+                                                                  (ns (concat "update? " (str sh-update)))
                                                                   (sn
                                                                    (concat
                                                                     ,(if (sor prettifier)
