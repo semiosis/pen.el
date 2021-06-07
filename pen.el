@@ -226,7 +226,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                          (cl-loop for i in (number-sequence ,n-collate)
                                                                   collect
                                                                   (progn
-                                                                    (ns (concat "update? " (str sh-update)))
+                                                                    ;; (ns (concat "update? " (str sh-update)))
                                                                     (sn
                                                                      (concat
                                                                       ,(if (sor prettifier)
