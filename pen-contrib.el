@@ -13,4 +13,9 @@
                    (my/thing-at-point)))))
   (pen-pf-asktutor bl bl query))
 
+;; v:pen-ask-documentation 
+(defun pen-ask-documentation ()
+
+  )
+
 (provide 'pen-contrib)

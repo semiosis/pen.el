@@ -282,8 +282,9 @@ Function names are prefixed with pen-pf- for easy searching"
 
 (defun pen-run-prompt-function ()
   (interactive)
-  (let ((f (fz pen-prompt-functions nil nil "pen run: "))
-        (sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+  (let* ((sh-update (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+         (f (fz pen-prompt-functions nil nil "pen run: ")))
+    ;; (ns (concat "sh-update: " (str sh-update)))
     (if f
         (call-interactively (str2sym f)))))
 (defalias 'camille-complete 'pen-run-prompt-function)
