@@ -27,5 +27,6 @@
                 (fz pen-doc-queries
                     nil nil
                     "pen-ask-documentation: "))))
+;; (s-format "hello ${query}" '(query . "thereE"))
 
 (provide 'pen-contrib)
