@@ -16,14 +16,16 @@
 
 (defset pen-doc-queries
   '(
-    "What is '$query' and what how is it used?"
-    "What are some examples of using '$query'?"
-    "What are some alternatives to using '$query'?"))
+    "What is '${query}' and what how is it used?"
+    "What are some examples of using '${query}'?"
+    "What are some alternatives to using '${query}'?"))
 
 ;; v:pen-ask-documentation 
-(defun pen-ask-documentation (query)
-  (interactive (list (fz pen-doc-queries
-                         nil nil
-                         "pen-ask-documentation: "))))
+(defun pen-ask-documentation (thing query)
+  (interactive (list
+                (let ((qs (mapcar 's-lex-format pen-doc-queries))))
+                (fz pen-doc-queries
+                    nil nil
+                    "pen-ask-documentation: "))))
 
 (provide 'pen-contrib)
