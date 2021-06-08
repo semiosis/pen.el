@@ -29,6 +29,6 @@
                     "pen-ask-documentation: "))))
 ;; (s-format "hello ${query}" 'aget '(query . "thereE"))
 
-(s-format "hello ${query}" 'assoc '((query . "thereE")))
+(s-format "hello ${query}" 'aget '(("query" . "thereE")))
 
 (provide 'pen-contrib)
