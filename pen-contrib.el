@@ -21,8 +21,9 @@
     "What are some alternatives to using '$query'?"))
 
 ;; v:pen-ask-documentation 
-(defun pen-ask-documentation ()
-
-  )
+(defun pen-ask-documentation (query)
+  (interactive (list (fz pen-doc-queries
+                         nil nil
+                         "pen-ask-documentation: "))))
 
 (provide 'pen-contrib)
