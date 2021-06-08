@@ -31,12 +31,7 @@
                "pen-ask-documentation: ")))
      (list
       thing
-      query))
-
-   (list
-    (fz pen-doc-queries
-        nil nil
-        "pen-ask-documentation: "))))
+      query))))
 ;; (s-format "hello ${query}" 'aget '(query . "thereE"))
 
 ;; (s-format "hello ${query}" 'aget '(("query" . "thereE")))
