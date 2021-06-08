@@ -13,6 +13,13 @@
                    (my/thing-at-point)))))
   (pen-pf-asktutor bl bl query))
 
+
+(defset pen-doc-queries
+  '(
+    "What is '$query' and what how is it used?"
+    "What are some examples of using '$query'?"
+    "What are some alternatives to using '$query'?"))
+
 ;; v:pen-ask-documentation 
 (defun pen-ask-documentation ()
 
