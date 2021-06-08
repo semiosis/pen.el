@@ -23,7 +23,7 @@
 ;; v:pen-ask-documentation 
 (defun pen-ask-documentation (thing query)
   (interactive (list
-                (let ((qs (mapcar 's-lex-format pen-doc-queries))))
+                (let ((qs (mapcar (lambda (s) (eval ,(s-lex-format s))) pen-doc-queries))))
                 (fz pen-doc-queries
                     nil nil
                     "pen-ask-documentation: "))))
