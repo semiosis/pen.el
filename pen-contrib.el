@@ -24,9 +24,9 @@
 (defun pen-ask-documentation (thing query)
   (interactive
    (let* ((thing (my/thing-at-point))
-          (qs (mapcar (lambda (s) (message (s-format s 'aget `(("query" . ,thing))))) pen-doc-queries))
+          (qs (mapcar (lambda (s) (s-format s 'aget `(("query" . ,thing)))) pen-doc-queries))
           (query
-           (fz pen-doc-queries
+           (fz qs
                nil nil
                "pen-ask-documentation: ")))
      (list
