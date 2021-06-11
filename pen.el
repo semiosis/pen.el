@@ -179,6 +179,13 @@
    ;;  ("F" "Instant fixup"  magit-commit-instant-fixup)
    ;;  ("S" "Instant squash" magit-commit-instant-squash)]
    ]
+
+  ;; If I specify the body (below), then I
+  ;; need to call transient-setup with the name
+  ;; of this transient.
+  ;; If I do not specify the body below, then
+  ;; the transient can be called but non-
+  ;; interactively only.
   (interactive)
   (if-let ((buffer (magit-commit-message-buffer)))
       (switch-to-buffer buffer)
