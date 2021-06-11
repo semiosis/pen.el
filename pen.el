@@ -371,9 +371,9 @@ is updated:
 ;;     (transient-setup 'magit-commit)))
 
 
-;; It must wrap the current function to:
-;; - obtain the current function name
-;; - obtain the current function arguments
+;; Put it inside a function, like an interactive.
+;; It should only run when the function has been called interactively.
+;; It would be extremely tricky to get transient to work synchronously
 
 ;; (pen-pf-define-word-for-glossary "glum" :prettify t)
 (defun pen-generate-prompt-functions ()
