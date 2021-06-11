@@ -181,6 +181,10 @@ is updated:
 (defun pen-edit-function-prompt ()
   (interactive))
 
+(defun configure-prompt-function-show-arguments ()
+  (interactive)
+  (etv (pps (transient-args 'configure-prompt-function))))
+
 ;; This should let me reconfigure the parameters of a prompt function.
 ;; This should be persistent.
 ;; Therefore, a prompt function should have some persistent state.
@@ -206,7 +210,8 @@ is updated:
    ]
   [["Run"
     ;; ("r" "Run"         pen-transient-run)
-    ("r" "Run"         a/beep)]
+    ("r" "Run"         a/beep)
+    ("s" "Show arguments" configure-prompt-function-show-arguments)]
    ["Edit"
     ("e" "edit prompt"         pen-edit-function-prompt)
     ;; (6 "n" "Reshelve"     magit-commit-reshelve)
