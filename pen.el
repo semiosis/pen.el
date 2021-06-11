@@ -203,6 +203,12 @@ is updated:
   (interactive)
   (etv (pps (transient-args 'configure-prompt-function))))
 
+
+;; I've already streamlined tranient quite a lot.
+;; I should just use this.
+;; j:create-my-transient
+
+
 ;; This should let me reconfigure the parameters of a prompt function.
 ;; This should be persistent.
 ;; Therefore, a prompt function should have some persistent state.
