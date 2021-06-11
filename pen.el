@@ -199,6 +199,72 @@ is updated:
 (defun pen-edit-function-prompt ()
   (interactive))
 
+
+;; prefix with - to invert i.e. -inurl:
+(defset prompt-function-params
+  (list
+   "repo"
+   "extension"
+   "path"
+   "filename"
+   "followers"
+   "language"
+   "license"))
+
+(defun prompt-function-transient-search (&optional args)
+  (interactive
+   (list (transient-args 'prompt-function)))
+  (etv args))
+
+(create-my-transient "prompt-function" prompt-function-params 'prompt-function-transient-search '-search-with-keywords)
+
+
+;; Base on create-my-transient
+(defun transient-configurator (name kvps searchfun kwsearchfun &optional keywordonly)
+  (let ((sym (str2sym (concat name "-transient")))
+        (args
+         (vconcat (list "Arguments")
+                  (append
+                   ;; (let ((c 0))
+                   ;;   (cl-loop for p in google-key-value-predicates do (setq c (1+ c))
+                   ;;            collect
+                   ;;            (list ;; (concat "-" (str c))
+                   ;;             (str c) p (concat "--" p "="))
+                   ;;            collect
+                   ;;            (list ;; (concat "-" (str c))
+                   ;;             (concat "-" (str c)) (concat "not" p) (concat "--not-" p "=")))
+                   ;;   (concat "-" (str c)))
+                   (let ((c 0))
+                     (cl-loop for p in kvps do (setq c (1+ c)) collect (list (str c) p (concat "--" p "="))))
+                   (let ((c 0))
+                     (cl-loop for p in kvps do (setq c (1+ c)) collect (list (concat "-" (str c)) (concat "not" p) (concat "--not-" p "="))))
+                   ;; (list (list "k" "keywords" "--keywords="))
+                   )))
+        (actions
+         (vconcat
+          (if keywordonly
+              (list "Actions"
+                    (list "k" "Search with keywords" kwsearchfun))
+            (list "Actions"
+                  (list "s" "Search" searchfun)
+                  (list "k" "Search with keywords" kwsearchfun))))))
+    (eval `(define-transient-command ,sym ()
+             ,(concat (s-capitalize name) " transient")
+             ,args
+             ,actions))))
+
+
+;; Make it automatic and only work with strings.
+
+
+(defun test-configurable-function ()
+  (interactive)
+
+  (transient-let
+   ;; Call test-configurable-function
+   'test-configurable-function
+   ))
+
 (defun configure-prompt-function-show-arguments ()
   (interactive)
   (etv (pps (transient-args 'configure-prompt-function))))
@@ -305,6 +371,10 @@ is updated:
 ;;     (transient-setup 'magit-commit)))
 
 
+;; TODO Add all parameters to the
+;; It must wrap the current function to
+;; - obtain the current function name
+;; - obtain the current function arguments
 
 ;; (pen-pf-define-word-for-glossary "glum" :prettify t)
 (defun pen-generate-prompt-functions ()
