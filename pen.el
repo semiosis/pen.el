@@ -178,6 +178,24 @@ is updated:
                    args)))
 
 
+;; Here are some infix commands which let you specify values
+(transient-define-argument magit-log:-n ()
+  :description "Limit number of commits"
+  :class 'transient-option
+  ;; For historic reasons (and because it easy to guess what "-n"
+  ;; stands for) this is the only argument where we do not use the
+  ;; long argument ("--max-count").
+  :shortarg "-n"
+  :argument "-n"
+  :reader 'transient-read-number-N+)
+
+(transient-define-argument magit:--author ()
+  :description "Limit to author"
+  :class 'transient-option
+  :key "-A"
+  :argument "--author="
+  :reader 'magit-transient-read-person)
+
 (defun pen-edit-function-prompt ()
   (interactive))
 
