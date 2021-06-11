@@ -130,6 +130,58 @@
 ;; Bools return a string
 ;; (ht-get (yamlmod-read-file "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/subtopic-generation.prompt") "cache")
 
+(transient-define-argument magit:--gpg-sign ()
+  :description "Sign using gpg"
+  :class 'transient-option
+  :shortarg "-S"
+  :argument "--gpg-sign="
+  :allow-empty t
+  :reader 'magit-read-gpg-signing-key)
+
+(transient-define-argument magit:--author ()
+  :description "Limit to author"
+  :class 'transient-option
+  :key "-A"
+  :argument "--author="
+  :reader 'magit-transient-read-person)
+
+;; This should let me reconfigure the parameters of a prompt function.
+;; This should be persistent.
+;; Therefore, a prompt function should have some persistent state.
+;; Used my serialised hash tables for persistent state.
+;; Make this appear when I run a prompt function after pressing H-u
+(define-transient-command configure-prompt-function ()
+  "Configure the parameters of a prompt function."
+  ;; :info-manual "(magit)Initiating a Commit"
+  ;; :man-page "git-commit"
+  ["Arguments"
+   ("-l" "n-collate"   ("-a" "--all"))
+   ("-h" "cache"                     "--cache")
+   ("-v" "Show diff of changes to be committed"   ("-v" "--verbose"))
+   ("-n" "Disable hooks"                          ("-n" "--no-verify"))
+   ("-R" "Claim authorship and reset author date" "--reset-author")
+   (magit:--author :description "Override the author")
+   (7 "-D" "Override the author date" "--date=" transient-read-date)
+   ("-s" "Add Signed-off-by line"                 ("-s" "--signoff"))
+   (5 magit:--gpg-sign)
+   (magit-commit:--reuse-message)]
+  [["Run"
+    ("r" "Run"         pen-transient-run)]
+   ["Edit"
+    ("e" "edit prompt"         pen-edit-function-prompt)
+    ;; (6 "n" "Reshelve"     magit-commit-reshelve)
+    ]
+   ;; [""
+   ;;  ("F" "Instant fixup"  magit-commit-instant-fixup)
+   ;;  ("S" "Instant squash" magit-commit-instant-squash)]
+   ]
+  (interactive)
+  (if-let ((buffer (magit-commit-message-buffer)))
+      (switch-to-buffer buffer)
+    (transient-setup 'magit-commit)))
+
+
+
 ;; (pen-pf-define-word-for-glossary "glum" :prettify t)
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory
@@ -323,6 +375,7 @@ Function names are prefixed with pen-pf- for easy searching"
           ;;   preceding-text
           ;;   (pen-pf-generic-file-type-completion (detect-language))))
           (list response)
+          ;; j:monotonically-increasing-tuple-permutations
           ;; (if (>= (prefix-numeric-value current-prefix-arg) 8)
           ;;     (list response)
           ;;   ;; Just generate a few
@@ -335,20 +388,6 @@ Function names are prefixed with pen-pf- for easy searching"
     (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
             res)))
 
-
-
-
-(defun company-pen-filetype (command &optional arg &rest ignored)
-  (interactive (list 'is-interactive))
-  (cl-case command
-    (is-interactive (company-begin-backend 'company-pen-filetype))
-    (prefix (company-pen-filetype--prefix))
-    (candidates (company-pen-filetype--candidates arg))
-    ;; TODO doc-buffer may contain info on the completion in the future
-    ;; (doc-buffer (company-pen-filetype--doc-buffer arg))
-    ;; TODO annotation may contain the probability in the future
-    ;; (annotation (company-pen-filetype--annotation arg))
-    ))
 
 
 
@@ -391,11 +430,30 @@ Function names are prefixed with pen-pf- for easy searching"
 (define-key global-map (kbd "M-1") #'company-pen-filetype)
 
 
-(defun pen-complete-long ()
-  (interactive)
-  (let* ((preceding-text (str (buffer-substring (point) (max 1 (- (point) 1000)))))
-         (response (pen-pf-generic-file-type-completion (detect-language) preceding-text)))
-    (tv response)))
+(defun pen-complete-long (preceding-text &optional tv)
+  (interactive (list (str (buffer-substring (point) (max 1 (- (point) 1000))))
+                     t))
+  (let* ((response (pen-pf-generic-file-type-completion (detect-language) preceding-text)))
+    (if tv
+        (tv response)
+      response)))
+
+
+;; This should have many options and return a list of completions
+;; It should be used in company-mode
+;; j_company-pen-filetype
+(defun pen-company-complete-generate (preceding-text)
+
+  )
+
+
+(defun pen-completions-line (preceding-text &optional tv)
+  (interactive (list (pen-preceding-text-line)
+                     t))
+  (let* ((response (pen-pf-generic-file-type-completion (detect-language) preceding-text)))
+    (if tv
+        (tv response)
+      response)))
 
 (define-key global-map (kbd "H-P") 'pen-complete-long)
 

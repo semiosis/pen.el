@@ -12,6 +12,18 @@
   ""
   `(let (())))
 
+;; (defun company-pen-filetype (command &optional arg &rest ignored)
+;;   (interactive (list 'is-interactive))
+;;   (cl-case command
+;;     (is-interactive (company-begin-backend 'company-pen-filetype))
+;;     (prefix (company-pen-filetype--prefix))
+;;     (candidates (company-pen-filetype--candidates arg))
+;;     ;; TODO doc-buffer may contain info on the completion in the future
+;;     ;; (doc-buffer (company-pen-filetype--doc-buffer arg))
+;;     ;; TODO annotation may contain the probability in the future
+;;     ;; (annotation (company-pen-filetype--annotation arg))
+;;     ))
+
 (defun company-pen-filetype (command &optional arg &rest ignored)
   (interactive (list 'is-interactive))
   (cl-case command
