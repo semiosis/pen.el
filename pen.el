@@ -160,13 +160,17 @@
    ("-v" "Show diff of changes to be committed"   ("-v" "--verbose"))
    ("-n" "Disable hooks"                          ("-n" "--no-verify"))
    ("-R" "Claim authorship and reset author date" "--reset-author")
-   (magit:--author :description "Override the author")
-   (7 "-D" "Override the author date" "--date=" transient-read-date)
+   ;; (magit:--author :description "Override the author")
+   ;; (7 "-D" "Override the author date" "--date=" transient-read-date)
    ("-s" "Add Signed-off-by line"                 ("-s" "--signoff"))
-   (5 magit:--gpg-sign)
-   (magit-commit:--reuse-message)]
+
+   ;; What is the leading number for? - It may be the prefix
+   ;; (5 magit:--gpg-sign)
+   ;; (magit-commit:--reuse-message)
+   ]
   [["Run"
-    ("r" "Run"         pen-transient-run)]
+    ;; ("r" "Run"         pen-transient-run)
+    ("r" "Run"         a/beep)]
    ["Edit"
     ("e" "edit prompt"         pen-edit-function-prompt)
     ;; (6 "n" "Reshelve"     magit-commit-reshelve)
@@ -175,6 +179,48 @@
    ;;  ("F" "Instant fixup"  magit-commit-instant-fixup)
    ;;  ("S" "Instant squash" magit-commit-instant-squash)]
    ]
+  (interactive)
+  (if-let ((buffer (magit-commit-message-buffer)))
+      (switch-to-buffer buffer)
+    ;; this must be the name of the define-transient-command I am defining
+    (transient-setup 'configure-prompt-function)))
+
+
+(define-transient-command magit-commit ()
+  "Create a new commit or replace an existing commit."
+  :info-manual "(magit)Initiating a Commit"
+  :man-page "git-commit"
+  ["Arguments"
+   ("-a" "Stage all modified and deleted files"   ("-a" "--all"))
+   ("-e" "Allow empty commit"                     "--allow-empty")
+   ("-v" "Show diff of changes to be committed"   ("-v" "--verbose"))
+   ("-n" "Disable hooks"                          ("-n" "--no-verify"))
+   ("-R" "Claim authorship and reset author date" "--reset-author")
+   (magit:--author :description "Override the author")
+   (7 "-D" "Override the author date" "--date=" transient-read-date)
+   ("-s" "Add Signed-off-by line"                 ("-s" "--signoff"))
+   (5 magit:--gpg-sign)
+   (magit-commit:--reuse-message)]
+  [["Create"
+    ("c" "Commit"         magit-commit-create)
+    ("i" "Instant commit" magit-commit-instant)
+    ("t" "Instant add commit" magit-commit-instant)]
+   ["Edit HEAD"
+    ("e" "Extend"         magit-commit-extend)
+    ("w" "Reword"         magit-commit-reword)
+    ("a" "Amend"          magit-commit-amend)
+    (6 "n" "Reshelve"     magit-commit-reshelve)]
+   ["Edit"
+    ("f" "Fixup"          magit-commit-fixup)
+    ("s" "Squash"         magit-commit-squash)
+    ("A" "Augment"        magit-commit-augment)
+    (6 "x" "Absorb changes" magit-commit-absorb)]
+   [""
+    ("F" "Instant fixup"  magit-commit-instant-fixup)
+    ("S" "Instant squash" magit-commit-instant-squash)]]
+  ;; If I specify the body (below), then I
+  ;; need to call transient-setup with the name
+  ;; of this transient
   (interactive)
   (if-let ((buffer (magit-commit-message-buffer)))
       (switch-to-buffer buffer)
@@ -442,9 +488,7 @@ Function names are prefixed with pen-pf- for easy searching"
 ;; This should have many options and return a list of completions
 ;; It should be used in company-mode
 ;; j_company-pen-filetype
-(defun pen-company-complete-generate (preceding-text)
-
-  )
+(defun pen-company-complete-generate (preceding-text))
 
 
 (defun pen-completions-line (preceding-text &optional tv)
