@@ -372,7 +372,7 @@ is updated:
 
 
 ;; TODO Add all parameters to the
-;; It must wrap the current function to
+;; It must wrap the current function to:
 ;; - obtain the current function name
 ;; - obtain the current function arguments
 
