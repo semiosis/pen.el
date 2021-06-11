@@ -218,6 +218,7 @@
    [""
     ("F" "Instant fixup"  magit-commit-instant-fixup)
     ("S" "Instant squash" magit-commit-instant-squash)]]
+
   ;; If I specify the body (below), then I
   ;; need to call transient-setup with the name
   ;; of this transient
