@@ -373,7 +373,8 @@ is updated:
 
 ;; Put it inside a function, like an interactive.
 ;; It should only run when the function has been called interactively.
-;; It would be extremely tricky to get transient to work synchronously
+;; It would be extremely tricky to get transient to work synchronously.
+;; So I can't do that.
 
 ;; (pen-pf-define-word-for-glossary "glum" :prettify t)
 (defun pen-generate-prompt-functions ()
