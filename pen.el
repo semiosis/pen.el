@@ -224,6 +224,9 @@ is updated:
   ;; interactively only.
   (interactive)
   (transient-setup 'configure-prompt-function)
+
+  ;; Conditional logic may be placed here
+
   ;; (if-let ((buffer (magit-commit-message-buffer)))
   ;;     (switch-to-buffer buffer)
   ;;   ;; this must be the name of the define-transient-command I am defining
