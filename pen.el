@@ -145,6 +145,42 @@
   :argument "--author="
   :reader 'magit-transient-read-person)
 
+(defun magit-commit-reshelve (date update-author &optional args)
+  "Change the committer date and possibly the author date of `HEAD'.
+
+The current time is used as the initial minibuffer input and the
+original author or committer date is available as the previous
+history element.
+
+Both the author and the committer dates are changes, unless one
+of the following is true, in which case only the committer date
+is updated:
+- You are not the author of the commit that is being reshelved.
+- The command was invoked with a prefix argument.
+- Non-interactively if UPDATE-AUTHOR is nil."
+  (interactive
+   (let ((update-author (and (magit-rev-author-p "HEAD")
+                             (not current-prefix-arg))))
+     (push (magit-rev-format (if update-author "%ad" "%cd") "HEAD"
+                             (concat "--date=format:%F %T %z"))
+           magit--reshelve-history)
+     (list (read-string (if update-author
+                            "Change author and committer dates to: "
+                          "Change committer date to: ")
+                        (cons (format-time-string "%F %T %z") 17)
+                        'magit--reshelve-history)
+           update-author
+           (magit-commit-arguments))))
+  (let ((process-environment process-environment))
+    (push (concat "GIT_COMMITTER_DATE=" date) process-environment)
+    (magit-run-git "commit" "--amend" "--no-edit"
+                   (and update-author (concat "--date=" date))
+                   args)))
+
+
+(defun pen-edit-function-prompt ()
+  (interactive))
+
 ;; This should let me reconfigure the parameters of a prompt function.
 ;; This should be persistent.
 ;; Therefore, a prompt function should have some persistent state.
@@ -187,52 +223,54 @@
   ;; the transient can be called but non-
   ;; interactively only.
   (interactive)
-  (if-let ((buffer (magit-commit-message-buffer)))
-      (switch-to-buffer buffer)
-    ;; this must be the name of the define-transient-command I am defining
-    (transient-setup 'configure-prompt-function)))
+  (transient-setup 'configure-prompt-function)
+  ;; (if-let ((buffer (magit-commit-message-buffer)))
+  ;;     (switch-to-buffer buffer)
+  ;;   ;; this must be the name of the define-transient-command I am defining
+  ;;   (transient-setup 'configure-prompt-function))
+  )
 
 
-(define-transient-command magit-commit ()
-  "Create a new commit or replace an existing commit."
-  :info-manual "(magit)Initiating a Commit"
-  :man-page "git-commit"
-  ["Arguments"
-   ("-a" "Stage all modified and deleted files"   ("-a" "--all"))
-   ("-e" "Allow empty commit"                     "--allow-empty")
-   ("-v" "Show diff of changes to be committed"   ("-v" "--verbose"))
-   ("-n" "Disable hooks"                          ("-n" "--no-verify"))
-   ("-R" "Claim authorship and reset author date" "--reset-author")
-   (magit:--author :description "Override the author")
-   (7 "-D" "Override the author date" "--date=" transient-read-date)
-   ("-s" "Add Signed-off-by line"                 ("-s" "--signoff"))
-   (5 magit:--gpg-sign)
-   (magit-commit:--reuse-message)]
-  [["Create"
-    ("c" "Commit"         magit-commit-create)
-    ("i" "Instant commit" magit-commit-instant)
-    ("t" "Instant add commit" magit-commit-instant)]
-   ["Edit HEAD"
-    ("e" "Extend"         magit-commit-extend)
-    ("w" "Reword"         magit-commit-reword)
-    ("a" "Amend"          magit-commit-amend)
-    (6 "n" "Reshelve"     magit-commit-reshelve)]
-   ["Edit"
-    ("f" "Fixup"          magit-commit-fixup)
-    ("s" "Squash"         magit-commit-squash)
-    ("A" "Augment"        magit-commit-augment)
-    (6 "x" "Absorb changes" magit-commit-absorb)]
-   [""
-    ("F" "Instant fixup"  magit-commit-instant-fixup)
-    ("S" "Instant squash" magit-commit-instant-squash)]]
+;; (define-transient-command magit-commit ()
+;;   "Create a new commit or replace an existing commit."
+;;   :info-manual "(magit)Initiating a Commit"
+;;   :man-page "git-commit"
+;;   ["Arguments"
+;;    ("-a" "Stage all modified and deleted files"   ("-a" "--all"))
+;;    ("-e" "Allow empty commit"                     "--allow-empty")
+;;    ("-v" "Show diff of changes to be committed"   ("-v" "--verbose"))
+;;    ("-n" "Disable hooks"                          ("-n" "--no-verify"))
+;;    ("-R" "Claim authorship and reset author date" "--reset-author")
+;;    (magit:--author :description "Override the author")
+;;    (7 "-D" "Override the author date" "--date=" transient-read-date)
+;;    ("-s" "Add Signed-off-by line"                 ("-s" "--signoff"))
+;;    (5 magit:--gpg-sign)
+;;    (magit-commit:--reuse-message)]
+;;   [["Create"
+;;     ("c" "Commit"         magit-commit-create)
+;;     ("i" "Instant commit" magit-commit-instant)
+;;     ("t" "Instant add commit" magit-commit-instant)]
+;;    ["Edit HEAD"
+;;     ("e" "Extend"         magit-commit-extend)
+;;     ("w" "Reword"         magit-commit-reword)
+;;     ("a" "Amend"          magit-commit-amend)
+;;     (6 "n" "Reshelve"     magit-commit-reshelve)]
+;;    ["Edit"
+;;     ("f" "Fixup"          magit-commit-fixup)
+;;     ("s" "Squash"         magit-commit-squash)
+;;     ("A" "Augment"        magit-commit-augment)
+;;     (6 "x" "Absorb changes" magit-commit-absorb)]
+;;    [""
+;;     ("F" "Instant fixup"  magit-commit-instant-fixup)
+;;     ("S" "Instant squash" magit-commit-instant-squash)]]
 
-  ;; If I specify the body (below), then I
-  ;; need to call transient-setup with the name
-  ;; of this transient
-  (interactive)
-  (if-let ((buffer (magit-commit-message-buffer)))
-      (switch-to-buffer buffer)
-    (transient-setup 'magit-commit)))
+;;   ;; If I specify the body (below), then I
+;;   ;; need to call transient-setup with the name
+;;   ;; of this transient
+;;   (interactive)
+;;   (if-let ((buffer (magit-commit-message-buffer)))
+;;       (switch-to-buffer buffer)
+;;     (transient-setup 'magit-commit)))
 
 
 
