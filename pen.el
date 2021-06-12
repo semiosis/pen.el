@@ -256,6 +256,12 @@ is updated:
 
 ;; Make it automatic and only work with strings.
 
+;; It is a macro which I place inside a function as a call and expands into code.
+;; That code checks to see if transient
+;; variables fro this function are defined and if
+;; so it applies/sets the names in the current
+;; scope to those values.
+
 
 (defun test-configurable-function ()
   (interactive)
