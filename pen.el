@@ -264,15 +264,17 @@ is updated:
 ;; scope to those values.
 ;; It can't just be a call because the called function must exist.
 ;; That is, unless I create an error. Don't do that.
+;; It's too complicated. I can't build this right now.
+;; Manually make it.
 
 
-(defun test-configurable-function ()
-  (interactive)
+;; (defun test-configurable-function ()
+;;   (interactive)
 
-  (transient-let
-   ;; Call test-configurable-function
-   'test-configurable-function
-   ))
+;;   (transient-let
+;;    ;; Call test-configurable-function
+;;    'test-configurable-function
+;;    ))
 
 (defun configure-prompt-function-show-arguments ()
   (interactive)
