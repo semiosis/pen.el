@@ -265,7 +265,8 @@ is updated:
 ;; It can't just be a call because the called function must exist.
 ;; That is, unless I create an error. Don't do that.
 ;; It's too complicated. I can't build this right now.
-;; Manually make it.
+;; Manually make it first.
+;; Abandon this for the moment. It's too complex. 
 
 
 ;; (defun test-configurable-function ()
