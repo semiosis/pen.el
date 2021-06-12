@@ -263,7 +263,7 @@ is updated:
 ;; so it applies/sets the names in the current
 ;; scope to those values.
 ;; It can't just be a call because the called function must exist.
-;; That is, unless I create an error. 
+;; That is, unless I create an error. Don't do that.
 
 
 (defun test-configurable-function ()
