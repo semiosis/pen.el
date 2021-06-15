@@ -478,6 +478,23 @@ Function names are prefixed with pen-pf- for easy searching"
                                      (interactive ,(cons 'list iargs))
                                      (let* ((sh-update
                                              (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+                                            (shcmd (concat
+                                                    ,(if (sor prettifier)
+                                                         '(if prettify
+                                                              "PRETTY_PRINT=y "
+                                                            ""))
+                                                    ,(flatten-once
+                                                      (list
+                                                       (list 'concat
+                                                             (if cache
+                                                                 "oci "
+                                                               "")
+                                                             "openai-complete "
+                                                             (q path))
+                                                       (flatten-once
+                                                        (cl-loop for vs in var-slugs collect
+                                                                 (list " "
+                                                                       (list 'q (str2sym vs)))))))))
                                             (result
                                              (chomp
                                               (mapconcat 'identity
@@ -485,24 +502,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                                   collect
                                                                   (progn
                                                                     ;; (ns (concat "update? " (str sh-update)))
-                                                                    (sn
-                                                                     (concat
-                                                                      ,(if (sor prettifier)
-                                                                           '(if prettify
-                                                                                "PRETTY_PRINT=y "
-                                                                              ""))
-                                                                      ,(flatten-once
-                                                                        (list
-                                                                         (list 'concat
-                                                                               (if cache
-                                                                                   "oci "
-                                                                                 "")
-                                                                               "openai-complete "
-                                                                               (q path))
-                                                                         (flatten-once
-                                                                          (cl-loop for vs in var-slugs collect
-                                                                                   (list " "
-                                                                                         (list 'q (str2sym vs)))))))))))
+                                                                    (sn shcmd)))
                                                          ""))))
                                        (if (interactive-p)
                                            (cond
