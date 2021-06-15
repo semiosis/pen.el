@@ -502,10 +502,10 @@ Function names are prefixed with pen-pf- for easy searching"
                                                                   collect
                                                                   (progn
                                                                     ;; (ns (concat "update? " (str sh-update)))
-                                                                    (sn shcmd)))
+                                                                    (message (concat ,func-name " query " (int-to-string i)))
+                                                                    (sn shcmd)
+                                                                    (message (concat ,func-name " done " (int-to-string i)))))
                                                          ""))))
-
-                                       (message (concat "running " ,func-name))
                                        (if (interactive-p)
                                            (cond
                                             ((and ,filter
