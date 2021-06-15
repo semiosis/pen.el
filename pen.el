@@ -504,6 +504,8 @@ Function names are prefixed with pen-pf- for easy searching"
                                                                     ;; (ns (concat "update? " (str sh-update)))
                                                                     (sn shcmd)))
                                                          ""))))
+
+                                       (message (concat "running " ,func-name))
                                        (if (interactive-p)
                                            (cond
                                             ((and ,filter
