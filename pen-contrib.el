@@ -38,7 +38,11 @@
 
 
 ;; "OS which have a bash-like shell of some kind installed"
-(defset list-of-sh-operating-systems '("GNU Guix System"
+(defset list-of-sh-operating-systems '(
+                                       ;;  There has been a name change
+                                       ;; That's why this is giving bad results
+                                       ;; "GNU Guix System"
+                                       "GUIX"
                                        "NixOS"
                                        "Ubuntu 20.04"
                                        "Arch Linux"))
