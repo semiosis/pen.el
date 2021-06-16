@@ -43,6 +43,7 @@
                                        ;; That's why this is giving bad results
                                        ;; "GNU Guix System"
                                        "GuixSD"
+                                       "Alpine Linux"
                                        "NixOS"
                                        "Ubuntu 20.04"
                                        "Arch Linux"))
