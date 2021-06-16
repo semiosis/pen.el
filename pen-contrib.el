@@ -44,6 +44,8 @@
                                        ;; "GNU Guix System"
                                        "GuixSD"
                                        "Alpine Linux"
+                                       "RHEL Red Hat Enterprise Linux"
+                                       "Amazon Linux 2"
                                        "NixOS"
                                        "Ubuntu 20.04"
                                        "Arch Linux"))
