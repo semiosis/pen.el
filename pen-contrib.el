@@ -44,7 +44,8 @@
                                        "Arch Linux"))
 
 (defun nlsh-os (os)
-  (interactive (list (fz list-of-sh-operating-systems)))
+  (interactive (list (fz list-of-sh-operating-systems
+                         nil nil "nlsh-os: ")))
   (comint-quick (cmd "nlsh-os" os)))
 
 (provide 'pen-contrib)
