@@ -42,7 +42,7 @@
                                        ;;  There has been a name change
                                        ;; That's why this is giving bad results
                                        ;; "GNU Guix System"
-                                       "GUIX"
+                                       "GuixSD"
                                        "NixOS"
                                        "Ubuntu 20.04"
                                        "Arch Linux"))
