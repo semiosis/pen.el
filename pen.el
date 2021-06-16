@@ -408,6 +408,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (needs-work (yaml-test yaml "needs-work"))
                      (disabled (yaml-test yaml "disabled"))
                      (prefer-external (yaml-test yaml "prefer-external"))
+                     (conversation-mode (yaml-test yaml "conversation-mode"))
                      (filter (yaml-test yaml "filter"))
                      ;; Don't actually use this. But I can toggle to use the prettifier with a bool
                      (prettifier (ht-get yaml "prettifier"))
@@ -476,51 +477,53 @@ Function names are prefixed with pen-pf- for easy searching"
                                   `(cl-defun ,func-sym ,var-syms
                                      ,(sor doc title)
                                      (interactive ,(cons 'list iargs))
-                                     (let* ((sh-update
-                                             (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
-                                            (shcmd (concat
-                                                    ,(if (sor prettifier)
-                                                         '(if prettify
-                                                              "PRETTY_PRINT=y "
-                                                            ""))
-                                                    ,(flatten-once
-                                                      (list
-                                                       (list 'concat
-                                                             (if cache
-                                                                 "oci "
-                                                               "")
-                                                             "openai-complete "
-                                                             (q path))
-                                                       (flatten-once
-                                                        (cl-loop for vs in var-slugs collect
-                                                                 (list " "
-                                                                       (list 'q (str2sym vs)))))))))
-                                            (result
-                                             (chomp
-                                              (mapconcat 'identity
-                                                         (cl-loop for i in (number-sequence ,n-collate)
-                                                                  collect
-                                                                  (progn
-                                                                    ;; (ns (concat "update? " (str sh-update)))
-                                                                    (message (concat ,func-name " query " (int-to-string i) "..."))
-                                                                    (let ((ret (sn shcmd)))
-                                                                      (message (concat ,func-name " done " (int-to-string i)))
-                                                                      ret)))
-                                                         ""))))
-                                       (if (interactive-p)
-                                           (cond
-                                            ((and ,filter
-                                                  (selectedp))
-                                             (replace-region (concat (selection) result)))
-                                            (,completion
-                                             (etv result))
-                                            ((or ,(not filter)
-                                                 (>= (prefix-numeric-value current-prefix-arg) 4)
-                                                 (not (selectedp)))
-                                             (etv result))
-                                            (t
-                                             (replace-region result)))
-                                         result))))))
+                                     (if conversation-mode
+                                         (yn "Start comint?")
+                                       (let* ((sh-update
+                                               (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+                                              (shcmd (concat
+                                                      ,(if (sor prettifier)
+                                                           '(if prettify
+                                                                "PRETTY_PRINT=y "
+                                                              ""))
+                                                      ,(flatten-once
+                                                        (list
+                                                         (list 'concat
+                                                               (if cache
+                                                                   "oci "
+                                                                 "")
+                                                               "openai-complete "
+                                                               (q path))
+                                                         (flatten-once
+                                                          (cl-loop for vs in var-slugs collect
+                                                                   (list " "
+                                                                         (list 'q (str2sym vs)))))))))
+                                              (result
+                                               (chomp
+                                                (mapconcat 'identity
+                                                           (cl-loop for i in (number-sequence ,n-collate)
+                                                                    collect
+                                                                    (progn
+                                                                      ;; (ns (concat "update? " (str sh-update)))
+                                                                      (message (concat ,func-name " query " (int-to-string i) "..."))
+                                                                      (let ((ret (sn shcmd)))
+                                                                        (message (concat ,func-name " done " (int-to-string i)))
+                                                                        ret)))
+                                                           ""))))
+                                         (if (interactive-p)
+                                             (cond
+                                              ((and ,filter
+                                                    (selectedp))
+                                               (replace-region (concat (selection) result)))
+                                              (,completion
+                                               (etv result))
+                                              ((or ,(not filter)
+                                                   (>= (prefix-numeric-value current-prefix-arg) 4)
+                                                   (not (selectedp)))
+                                               (etv result))
+                                              (t
+                                               (replace-region result)))
+                                           result)))))))
                 (message (concat "pen-mode: Loaded prompt function " func-name)))))))
 (pen-generate-prompt-functions)
 

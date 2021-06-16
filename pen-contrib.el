@@ -36,4 +36,15 @@
 
 ;; (s-format "hello ${query}" 'aget '(("query" . "thereE")))
 
+
+;; "OS which have a bash-like shell of some kind installed"
+(defset list-of-sh-operating-systems '("GNU Guix System"
+                                       "NixOS"
+                                       "Ubuntu 20.04"
+                                       "Arch Linux"))
+
+(defun nlsh-os (os)
+  (interactive (list (fz list-of-sh-operating-systems)))
+  (comint-quick (cmd "nlsh-os" os)))
+
 (provide 'pen-contrib)

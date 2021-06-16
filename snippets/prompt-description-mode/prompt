@@ -8,6 +8,8 @@ in-development: yes
 title: "${1:title}"
 ## heading-name is for document-generation-mode 
 # heading-name: "This is a summary of the above text"
+# ideas:
+# - It may be better to check output in the postprocessor than ask GPT-3 to be the predicate
 todo:
 design-patterns:
 # future-titles: ""
@@ -28,6 +30,11 @@ prompt: |+
     ${2:contents}
     
     <1> are like <2> in that
+# The last variable is used as the conversation-mode variable
+# For conversation-mode
+repeater: |+
+    Input: {}
+    Output:
 problems:
 # Put problems directly after the prompt because the prompt is a multiline string.
 # - "Struggles with the latter columns."
@@ -115,6 +122,7 @@ validation-script:
 # If the output is accurate, the validation script returns exit code 1.
 # The input is 2 arguments each containing output
 # validation-script: "my-validator-for-this-prompt.sh"
+# The last variable is used as the conversation-mode variable
 # Enable running conversation
 conversation-mode: no
 # This is the name of an external database-driven pretext generator.
