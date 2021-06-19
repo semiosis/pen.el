@@ -47,6 +47,7 @@
                                        "RHEL Red Hat Enterprise Linux"
                                        "Amazon Linux 2"
                                        "NixOS"
+                                       "macOS"
                                        "Ubuntu 20.04"
                                        "Arch Linux"))
 
