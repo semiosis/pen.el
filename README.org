@@ -91,6 +91,8 @@ https://github.com/mullikine/prompts/
 ** Other backends will be incorporated
 - =contentyze=
   - http://gpt.contentyze.com/
+- =GPT-J=
+  - https://github.com/kingoflolz/mesh-transformer-jax
 - =GPT-Neo=
   - https://github.com/EleutherAI/gpt-neo
 - =openai-server= (=GPT-2=)
