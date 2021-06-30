@@ -1,0 +1,2 @@
+** NLP pipelines
+- Spacy pipeline generation

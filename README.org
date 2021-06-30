@@ -1,4 +1,4 @@
-* ⊙ =pen.el= : Paint in prose
+* =pen.el= : Paint in prose
 ** _Prompt engineering_ in emacs
 =pen.el= facilitates the creation,
 development, discovery and usage of prompts to
@@ -69,20 +69,6 @@ GPT-j is the future of code generation using pen.el, most likely.
 
 + Links
 https://towardsdatascience.com/cant-access-gpt-3-here-s-gpt-j-its-open-source-cousin-8af86a638b11
-
-** NLP pipelines
-- Spacy pipeline generation
-
-** DSLs
-*** =examplary=
-Examplary is a Domain Specific Language, or
-set of macros embedded in lisp which
-facilitate the integration of prompts as
-functions into the language, the
-composition of them, the generation of prompts
-via sets of examples.
-
-https://github.com/semiosis/examplary
 
 ** Prompts
 This is the repository containing my personal
@@ -208,3 +194,14 @@ http://github.com/semiosis/pen.el/blob/master/imaginary.el
 - http://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai-api.txt
 - http://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
 - http://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
+
+** Related projects
+*** =examplary=
+Examplary is a Domain Specific Language, or
+set of macros embedded in lisp which
+facilitate the integration of prompts as
+functions into the language, the
+composition of them, the generation of prompts
+via sets of examples.
+
+https://github.com/semiosis/examplary
