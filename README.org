@@ -181,7 +181,11 @@ https://github.com/semiosis/prompts/
 [[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
 
 **** Glossaries
-- 
+- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineer-mode.txt
+- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineering.txt
+- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai-api.txt
+- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
+- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
 
 * Using =pen=
 https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
