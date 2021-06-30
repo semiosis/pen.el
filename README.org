@@ -56,34 +56,6 @@ This article was written by my amazing dopplegänger, =|:ϝ∷¦ϝ=, in advance 
 
 I credit =|:ϝ∷¦ϝ= for writing this into existence!
 
-*** Modes
-**** Prompt-Engineering Minor Mode
-=prompt-engineering-mode= is a global minor
-mode for emacs that provides keybindings for
-creating and executing prompts generally
-across emacs.
-
-**** Prompt Description Major Mode
-=prompt-description-mode= is a major mode for
-editing =.prompt= files.
-
-The =.prompt= file format is based on YAML and
-an associated schema, which defines the keys
-which are expected.
-
-**** Pen Messenger Minor Mode
-=pen-messenger-mode= is a minor mode for
-enhancing an emacs-based messenger client with
-GPT-3 capabilities, such as emoji generation.
-
-**** Pen Conversation Mode
-=prompt-conversation-mode= is a major mode designed to facilitate
-ongoing conversation with a prompt-based GPT-3 chatbot.
-
-**** GPT-3 Training Mode
-The goal of this mode is to facilitate the workflow of training on OpenAI's
-API.
-
 ***** Fine-tuning
 ****** The process of fine-tuning should be automated with emacs
 - http://github.com/mullikine/fine-tuning-gpt-3
