@@ -133,10 +133,13 @@ https://github.com/semiosis/prompt-tests
 #+END_SRC
 *** =openai= API key
 
-** 
+** Any missing functions available here
+https://github.com/semiosis/shane-emacs-config-dump
+
+Please ask for membership to the org to get
+access to this.
 
 ** Usage
-
 *** Enable =prompt-engineerer-mode= globally (on all buffers)
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
