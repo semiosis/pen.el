@@ -85,9 +85,18 @@ The goal of this mode is to facilitate the workflow of training on OpenAI's
 API.
 
 ***** Fine-tuning
+****** The process of fine-tuning should be automated with emacs
 - http://github.com/mullikine/fine-tuning-gpt-3
 
+****** Fine-tuned models result in better domain-specific completion
+CoPilot has been fine-tuned specifically on public domain GitHub code but so has GPT-j, the EleutherAI alternative.
+
+GPT-j is the future of code generation using pen.el, most likely.
+
 [[./fine-tuning/puns/README.org]]
+
++ Links
+https://towardsdatascience.com/cant-access-gpt-3-here-s-gpt-j-its-open-source-cousin-8af86a638b11
 
 ** NLP pipelines
 - Spacy pipeline generation
@@ -197,121 +206,3 @@ https://github.com/semiosis/prompts/
 - http://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai-api.txt
 - http://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
 - http://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
-
-* Using =pen=
-https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
-
-** _How to crack an egg_ -- The obfuscated version
-#+BEGIN_SRC text -n :async :results verbatim code
-  In order to understand the process of how to
-  crack an egg, one must first understand the
-  egg itself.
-  
-  Eggs are oval objects which are comprised of
-  the remnants of expired cellular tissue, as
-  the human body is comprised.
-  
-  The origin of the egg can be traced back to
-  the reproductive organ of a female bird.
-  
-  Once the egg is laid, it is then incubated, a
-  process which can take several weeks.
-  
-  The term “founders” refers in this case to a
-  period where the human
-#+END_SRC
-
-*** Now let's summarize that paragraph for a 2nd grader.
-#+BEGIN_SRC text -n :async :results verbatim code
-  An egg is a small round object that comes from
-  a hen.
-  
-  It is made of the stuff that comes out of the
-  hen's butt.
-  
-  The egg is like the human body, because the
-  body is also made of the stuff that comes out
-  of the butt.
-  
-  The egg is incubated for a few weeks.
-  
-  This means that it is kept warm so it can
-  grow.
-  
-  The egg is like a human baby, because a human
-  baby is also kept warm so it can grow.
-  
-  The hen is
-#+END_SRC
-
-** Creating some analogies
-*** Strawberries are like the ocean because:
-
-#+BEGIN_SRC text -n :async :results verbatim code
-  both are systems whose properties are best 
-  appreciated from a distance.
-#+END_SRC
-
-*** Strawberries are like the ocean because:
-Ok... We can adjust the analogy =.prompt= file.
-
-I have adjusted it with a temperature of 0.7
-so it can get really creative, and also
-adjusted the presence penalty to make it a bit
-more verbose.
-
-#+BEGIN_SRC text -n :async :results verbatim code
-both need to be protected from pollution.
-#+END_SRC
-
-I actually really like this one.
-
-** This is the generated analogy function
-#+BEGIN_SRC text -n :async :results verbatim code
-  pen-make-analogy is an interactive function defined in my-openai.el.
-
-  Signature
-  (pen-make-analogy FORMER LATTER)
-
-  Key Bindings
-  This command is not in any keymaps.
-
-  References
-  pen-make-analogy is unused in my-openai.el.
-
-  Find all references Find callees
-
-  Debugging
-  Enable tracing
-  Disassemble Forget
-
-  Source Code
-  ;; Defined in ~/source/git/config/emacs/config/my-openai.el
-  ;; Could not find source code, showing raw function object.
-  (lambda
-    (former latter)
-    (interactive
-     (list
-      (read-string-hist "analogy participant: ")
-      (read-string-hist "analogy participant: ")))
-    (let*
-        ((prompt-fp
-          (umn "$MYGIT/mullikine/pen.el/prompts/analogy.prompt")))
-      (etv
-       (sn
-        (concat "openai-complete "
-                (q prompt-fp)
-                " "
-                (q former)
-                " "
-                (q latter)
-                " | chomp")))))
-
-  Symbol Properties
-  event-symbol-element-mask
-    (pen-make-analogy 0)
-  event-symbol-elements
-    (pen-make-analogy)
-  modifier-cache
-    ((0 . pen-make-analogy))
-#+END_SRC
