@@ -117,7 +117,7 @@ https://github.com/semiosis/prompts/
 - OpenAI API (=GPT-4=)
   - https://beta.openai.com/
 
-*** Testing GPT-3 prompts without a key
+** Testing GPT-3 prompts without a key
 Pushing your own branch will run tests.
 
 https://github.com/semiosis/prompts
@@ -132,6 +132,8 @@ https://github.com/semiosis/prompt-tests
   pip3 install openai
 #+END_SRC
 *** =openai= API key
+
+** 
 
 ** Usage
 
