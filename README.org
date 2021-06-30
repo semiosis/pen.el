@@ -191,8 +191,6 @@ https://github.com/semiosis/prompts/
 - https://mullikine.github.io/posts/explainshell-with-gpt-3/
 - https://mullikine.github.io/tags/gpt/
 
-[[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
-
 **** Glossaries
 - http://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineer-mode.txt
 - http://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineering.txt
