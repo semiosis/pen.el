@@ -101,14 +101,14 @@ functions into the language, the
 composition of them, the generation of prompts
 via sets of examples.
 
-https://github.com/mullikine/examplary
+https://github.com/semiosis/examplary
 
 ** Prompts
 This is the repository containing my personal
 curation of GPT-3 prompts that are formatted
 for =pen.el= and =examplary=.
 
-https://github.com/mullikine/prompts/
+https://github.com/semiosis/prompts/
 
 ** Demonstration
 
@@ -160,7 +160,7 @@ https://github.com/mullikine/prompts/
 | <kbd>SPC</kbd> | =pen-generate= |
 
 *** Free prompts to use
-https://github.com/mullikine/prompts/
+https://github.com/semiosis/prompts/
 
 ** Current progress
 + Implementation [1/1]
@@ -177,6 +177,7 @@ https://github.com/mullikine/prompts/
   - [-] Use built-in elisp functions
 
 ** Appendix
+*** Reading material
 [[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
 
 * Using =pen=
