@@ -122,9 +122,9 @@ Pushing your own branch will run tests.
 
 https://github.com/semiosis/prompts
 
-https://github.com/semiosis/prompt-tests
+Output will go here:
 
-Output will go here
+https://github.com/semiosis/prompt-tests
 
 ** Requirements
 *** =openai= =pip= library and command
