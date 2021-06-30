@@ -1,0 +1,1149 @@
+<|endoftext|>
+    The document separator that the model sees
+    during training, so if a prompt is not
+    specified the model will generate as if
+    from the beginning of a new document.
+
+casetext
+    [#semantic search]
+    [#openai-api]
+
+    Automates litigation tasks to help
+    attorneys efficiently provide high-quality
+    representation, offering a comprehensive
+    legal research platform used by over 5,500
+    law firms.
+    
+    The platform includes CARA A.I.,
+    technology that automates critical legal
+    research tasks, and Compose, a first-of-
+    its-kind technology that automates
+    substantive elements of litigation.
+    
+    With OpenAI’s technology, Casetext seeks
+    to enhance their semantic search
+    capabilities, which has the potential to
+    save lawyers hundreds of hours in
+    research.
+
+Algolia
+    [#semantic search]
+    [#openai-api]
+
+    Offers highly relevant, fast search to
+    everyone with a website, mobile app, or
+    voice app.
+    
+    Combining OpenAI’s API with Algolia’s
+    advanced search technology allows
+    Algolia’s customers to provide their
+    customers with NL semantic search, so they
+    can better understand questions and
+    connect searchers with results that are
+    both relevant and fast.
+    
+    OpenAI helps Algolia answer more complex
+    queries than ever before, trimming down
+    the prediction time to around 100ms.
+    
+    This keeps Algolia from having to do a lot
+    of work to cache and serve answers to its
+    customers.
+    
+    With OpenAI, Algolia was able to answer
+    complex NL questions accurately 4x as
+    often as it was using BERT.
+
+Search Plugin
+    [#semantic search]
+    [#chrome]
+    [#openai-api]
+
+    The API identifies relevant content for NL
+    queries without using keywords.
+    
+    Here the API has been integrated into a
+    browser plugin that lets users find
+    answers on web page by typing in a
+    question.
+
+Chat
+    [openai-api]
+
+    Enables fast, complex and consistent NL
+    discussions.
+    
+    With a brief prompt, the API generates
+    dialogues spanning a range of topics, from
+    space travel to history.
+
+AI Channels
+    [#openai-api]
+    [social network]
+
+    For people and artificial intelligence
+    agents.
+    
+    AI Channels lets you interact with AI
+    agents that can help you generate ideas,
+    recommend books and movies, tell
+    interactive stories or participate in a
+    round table discussion with your friends
+    and the greatest minds in history where
+    you can ask a virtual Albert Einstein to
+    explain relativity or get writing tips
+    from Jane Austen.
+
+Customer Service
+    [openai-api]
+
+    Leveraging search and chat capabilities,
+    the API generates natural dialogue to
+    quickly give customers relevant
+    information.
+    
+    Through semantic text comprehension, the
+    API can offer a range of analytics and
+    productivity tools to better serve
+    customers.
+
+MessageBird
+    [#openai-api]
+    [#customer service]
+    [#nlp]
+    [#marketing]
+
+    Provides an omnichannel platform-as-a-
+    service to better support customers
+    through its Inbox product -- which
+    integrates with the top communications
+    platforms.
+    
+    With OpenAI’s technology, MessageBird is
+    developing automated grammar and spelling
+    tools as well as predictive text to
+    augment Inbox’s already powerful AI
+    capabilities.
+
+Sapling Intelligence
+    [#openai-api]
+    [#customer service]
+    [#nlp]
+    [#marketing]
+
+    An AI writing assistant for customer-
+    facing teams.
+    
+    Sapling sits on top of CRMs and messaging
+    platforms to help agents more efficiently
+    compose personalized responses.
+    
+    Managers gain conversational insights to
+    coach and prepare teams.
+    
+    Sapling was developed by former ML
+    researchers at Berkeley, Stanford, and
+    Google, and assists customer-facing teams
+    serving startups as well as Fortune 500
+    clients.
+    
+    Sapling works on most B2B helpdesk and
+    sales engagement chat platforms through a
+    browser integration.
+    
+    Using the OpenAI API's semantic search
+    feature, we developed a KB search feature
+    that assists agents by suggesting chat
+    responses, improving the customer
+    experience for sales and support teams.
+
+Generation
+    [openai-api]
+
+    The API can generate complex and
+    consistent NL, and enables use cases like
+    creative writing.
+
+AI Dungeon
+    [#openai-api]
+    [#nlg]
+    [#nlp]
+
+    An AI-powered text adventure where every
+    response is determined by an AI LM.
+    
+    Typically, for these types of games, the
+    developer must preprogram a decision tree
+    and text options for the user to select
+    from.
+    
+    AI Dungeon is the first of its kind in
+    which any story option is possible, and
+    the AI adapts the adventure to the users’
+    input.
+    
+    The game sees 20-25,000 daily users.
+    
+    Initially built on GPT-2, after moving to
+    OpenAI’s new technology accessible through
+    the API, AI Dungeon has seen a significant
+    increase in user engagement and
+    subscriptions.
+    
+    Users have reported positively on the
+    speed and quality of conversations, and
+    subscriptions for the game have increased
+    nearly 25%.
+    
+    AI Dungeon hopes to expand AI’s use in
+    gaming to make for richer experiences
+    during gameplay (particularly with non-
+    playable characters (NPCs)).
+
+AI Weirdness
+    [#openai-api]
+    [#nlg]
+    [#nlp]
+
+    A popular science blog by Janelle Shane,
+    author of
+        You Look Like a Thing and I Love You:
+            How Artificial Intelligence Works
+            and Why it's Making the World a
+            Weirder Place.
+    
+    She writes about the successes and
+    sometimes amusing failures of various ML
+    algorithms.
+    
+    Using the OpenAI API, she iterated with
+    creative ideas for her blog posts and
+    tweets.
+
+Replika
+    [#openai-api]
+    [#nlg]
+    [#nlp]
+
+    An AI companion, uses our API to AB test
+    extensively and has seen their customers’
+    happiness ratings improve by 20 or more
+    percentage points.
+    
+    They saw ratings hover around 60% with
+    their original, in-house tech — this
+    improved by 7-8% with GPT-2 — and is now
+    in the 80-90% range with the API.
+
+Productivity Tools
+    [openai-api]
+
+    The API allows for parsing text into
+    spreadsheet tables, summarizing email
+    discussions, expanding content from bullet
+    points, and more.
+
+Quizlet
+    [#openai-api]
+    [#productivity]
+    [#nlp]
+
+    Quizlet is a global learning platform that
+    provides engaging study tools to help
+    people practice and master whatever they
+    are learning.
+    
+    Every month, over 50 million people across
+    130 countries use Quizlet to study any
+    subject imaginable for school, work or as
+    part of their personal interests.
+    
+    Combining cognitive science and ML,
+    Quizlet guides students through adaptive
+    study activities to confidently reach
+    their learning goals, with over a billion
+    questions answered each week.
+    
+    A popular use of Quizlet is to learn
+    vocabulary faster.
+    
+    To enable a deeper understanding than rote
+    memorization, Quizlet is building upon
+    OpenAI’s powerful text generation
+    capabilities to automatically generate
+    examples of how each vocabulary word can
+    be used in a sentence.
+    
+    By combining OpenAI’s technology with the
+    in-depth work and research Quizlet is
+    doing with ML, Quizlet will be able to
+    develop example sentences for people
+    studying vocabulary and languages, the way
+    a tutor does, to help students integrate
+    their knowledge in a fun way and test
+    themselves more comprehensively.
+    
+    Using the latest in NLP technologies
+    allows Quizlet to build toward the future
+    of an AI-powered tutor in your pocket.
+
+Art of Problem Solving
+AoPS
+    [#openai-api]
+    [#education]
+    [#nlp]
+
+    Helping to effectively prepare the next
+    generation of STEM professionals through
+    engaging online instruction, at a time
+    when the traditional nature of in-person
+    education is being challenged.
+    
+    AoPS is breaking enrollment records across
+    all their programs due to an onslaught of
+    parents searching for at-home learning
+    options for the first time.
+    
+    By delivering faster and more accurate
+    student feedback, AoPS can help students
+    improve their mathematical problem-solving
+    skills and their delivery in explaining
+    their answers.
+    
+    Among the students AoPS have trained are
+    nearly all the members of the US
+    International Math Olympiad team for the
+    past 10 years and a number of the
+    researchers / developers at OpenAI.
+    
+    By leveraging OpenAI’s technology, AoPS is
+    empowering its human teachers as they
+    evaluate students’ work and provide
+    feedback on the accuracy, language and
+    mastery of their solutions.
+    
+    AoPS continues to train OpenAI’s API on
+    existing feedback from expert teachers,
+    and are using it to quickly generate a
+    first draft of feedback on a student’s
+    work for the grader to refine and then
+    send.
+    
+    The teacher’s final version is also shared
+    back with the API to help improve it even
+    further, and the teachers themselves are
+    charged with evaluating the tool and
+    deciding how widely it gets used.
+    
+    AoPS is currently testing the technology
+    and seeing promising initial results.
+    
+    In the near term, AoPS believes that with
+    OpenAI’s technology, students will be able
+    to receive same-day feedback on their work
+    while improving quality of feedback.
+
+Natural Language Shell
+    [#openai-api]
+    [#productivity]
+    [#nlp]
+    [#semanticsearch]
+    [#codegen]
+
+    Here we show how the API can be used to
+    translate natural language to unix
+    commands, using a handful of
+    representative examples.
+
+Spreadsheets
+    [#openai-api]
+    [#data]
+    [#nlp]
+
+    In this example, we show how the API
+    generates a table with suggested
+    categories to make it easier to extract
+    and organize information.
+
+Code Completion
+    [#openai-api]
+    [#productivity]
+    [#nlp]
+    [#semanticsearch]
+    [#codegen]
+
+    With the API we can generate useful and
+    context-aware code suggestions. After
+    fine-tuning with code from thousands of
+    Open Source GitHub repositories, the API
+    completes code based on function names and
+    comments.
+
+Content Comprehension
+    [openai-api]
+
+    The API can be used to build tools to help
+    individuals consume content more
+    efficiently.
+
+Koko
+    [#openai-api]
+    [#nlp]
+    [#nlu]
+
+    An online mental health intervention that
+    has reached nearly two million people,
+    mostly adolescents.
+    
+    The platform started as a clinical trial
+    at MIT and is based on the concept of
+    crowdsourced cognitive therapy.
+    
+    Unlike traditional peer support platforms,
+    all interactions on the service are
+    supported and augmented by AI.
+    
+    Koko is using OpenAI’s technology to
+    enhance its AI capabilities and improve
+    its ability to keep users safe.
+    
+    Using the API, Koko can automatically
+    identify users in acute states of crisis
+    and route them to specialized services
+    (such as the National Suicide Prevention
+    Lifeline).
+    
+    This builds on Koko’s existing work in
+    this area, in collaboration with Harvard
+    University, and allows them to scale the
+    service more broadly.
+    
+    This partnership is especially important
+    now, given the staggering rise in reported
+    mental health symptoms following the onset
+    of Covid-19.
+    
+    With OpenAI, Koko’s text-based classifiers
+    improved substantially, without
+    preprocessing.
+    
+    The F1 score of its crisis classifier went
+    up from .76 to .86, and the accuracy went
+    up to 96%.
+    
+    In the future, this capability could help
+    peer supporters work faster and more
+    efficiently, in addition to many other
+    therapeutic use cases.
+
+Ross Intelligence
+    [#openai-api]
+    [#nlp]
+    [#nlu]
+
+    Founded in 2015, ROSS Intelligence
+    ("ROSS") is the industry-leading AI-driven
+    legal research provider.
+    
+    ROSS's easy-to-use legal research platform
+    leverages proprietary AI technology to
+    help lawyers conduct more thorough
+    research in a fraction of the time.
+    
+    ROSS is funded by tier-one investors,
+    including Comcast Ventures and
+    Y-Combinator, and was recognized by the
+    American Bar Association as "an example of
+    how artificial intelligence can be used to
+    improve the delivery of legal services."
+    
+    ROSS is using the API to better search
+    through legal authority and synthesize law
+    so that legal professionals can provide
+    sound and timely advice to their clients.
+
+Summarization
+    [#openai-api]
+    [#nlp]
+    [#nlu]
+
+    Through its pattern recognition and
+    generative capabilities, the API can
+    transform dense text into simplified
+    summaries.
+    
+    Here, we show the API summarizing an NDA
+    into content that's accessible at a 2nd-
+    grade reading level.
+
+Polyglot
+    [openai-api]
+
+    While the API today works best in English,
+    it also works quite well in other
+    languages.
+    
+    The API can be used for tasks such as
+    translation or chat with users in their
+    preferred language.
+
+Translation
+    [#openai-api]
+    [#nlp]
+
+    In this example we show how the API can be
+    used to translate a sentence into another
+    language, with only a couple of sentence
+    pairs as context.
+
+fine-tune
+fine-tuning
+finetuning
+openai-finetune
+    [NLP]
+
+    Fine Tuning has been the most common
+    approach in recent years and involves
+    updating the weights of a pre-trained
+    model by training on a supervised dataset
+    specific to the desired task.
+    
+    Typically thousands to hundreds of
+    thousands of labeled examples are used.
+    
+    The main advantage of fine-tuning is
+    strong performance on many benchmarks.
+    
+    The main disadvantages are the need for a
+    new large dataset for every task, the
+    potential for poor generalization out-of-
+    distribution, and the potential to exploit
+    spurious features of the training data,
+    potentially resulting in an unfair
+    comparison with human performance.
+    
+    In this paper, we do not fine-tune GPT-3
+    because our focus is on task-agnostic
+    performance, but GPT-3 can be fine-tuned
+    in principle.
+
+    https://www.gwern.net/GPT-3#finetuning
+
+    To help a language model like GPT-3
+    perform more specialized tasks you can
+    train it with additional data (like a
+    programming language, domain specific
+    terminology or special classifications.)
+
+    - training/inference of fine-tuned models
+      https://github.com/cabhijith/GPT-3_Docs/blob/master/Fine-Tune.md
+
+    https://news.ycombinator.com/item?id=23723687
+
+    Fine tuning GPT-3 is one of the biggest
+    challenges, because it's behind an API.
+    
+    The weights aren't available to
+    researchers, so we can't make it do
+    anything it doesn't already do.
+    
+    What caught my attention, though, is that
+    supposedly OpenAI is working on a way to
+    support fine-tuning.
+    
+    If you think about the logistics of that,
+    it's a very interesting challenge.
+    
+    The situation is this: 240GB of weights,
+    as a webservice.
+    
+    Each fine-tuning session results in
+    another copy of 240GB.
+    
+    So it clearly doesn't scale --
+    
+    1TB per 4 users isn't exactly efficient.
+    
+    Except, not quite.
+    
+    You can solve this by adding additional
+    layers, which you then fine-tune.
+    
+    So the base model is 240GB or whatever,
+    and the extra layers morph the output to
+    do what you want.
+    
+    Think of it as a GPT-3 with a GPT-2 1.5B
+    stuck on the end of it.
+    
+    It's a neat idea, because theoretically
+    you'd get two models out of it
+    
+    : you can "break off" the end of the fine-
+    tuned model, and you end up with the
+    original model.
+    
+    So it would be very modular.
+    
+    Are there other models that you can "break
+    apart" to get different sub-models?
+    
+    Sort of like adding slots that give a
+    model different capabilities.
+
+engine
+    The different GPT-3 models the API is able
+    to access:
+    - Ada,
+    - Babbage,
+    - Curie, and
+    - Davinci.
+
+Ada
+    [#OpenAI API]
+    [engine]
+
+    Usually the fastest model and can perform
+    tasks like parsing text, address
+    correction and certain kinds of
+    classification tasks that don’t require
+    too much nuance. Ada’s performance can
+    often be improved by providing more
+    context.
+
+API
+    [#OpenAI API]
+
+    The term used to describe the model as a
+    service platform provided by OpenAI that
+    allows developers to interact with and
+    build applications with GPT-3.
+
+Best Of
+    [#OpenAI API]
+    [API setting]
+
+    Recommended value: 1
+    Min value: 1
+    Max value: 20
+
+    Generates multiple completions server-side
+    and displays on the best.
+
+    How many completions to generate on the
+    server side and display the best one.
+
+    Bump it up to 3 or more for question-
+    answer, translation or summarization.
+
+Babbage
+    [#OpenAI API]
+    [engine]
+
+    Can perform straightforward tasks like
+    simple classification.
+    
+    It’s also quite capable when it comes to
+    Semantic Search ranking how well documents
+    match up with search queries.
+
+Curie
+    [#OpenAI API]
+    [engine]
+
+    Extremely powerful, yet very fast.
+    
+    While Davinci is stronger when it comes to
+    analyzing complicated text, Curie is quite
+    capable for many nuanced tasks like
+    sentiment classification and
+    summarization.
+    
+    Curie is also quite good at answering
+    questions and performing Q&A and as a
+    general service chatbot.
+
+Davinci
+    [#OpenAI API]
+    [engine]
+
+    Davinci is the most capable engine and can
+    perform any task the other models can
+    perform and often with less instruction.
+    
+    For applications requiring a lot of
+    understanding of the content, like
+    summarization for a specific audience and
+    content creative generation, Davinci is
+    going to produce the best results.
+
+Echo
+    [#OpenAI API]
+    [API setting]
+
+    An API setting that will concatenate the
+    prompt and the response sent back from the
+    API if set to “True”.
+
+Frequency Penalty
+    [#OpenAI API]
+    [API setting]
+
+    Floating point value.
+
+    Default value: 0
+    min value: 0
+    max value: 1
+
+    If your completion is filled with lots of
+    repetition you can increase this setting
+    to prevent that from happening.
+
+    How much to penalize new tokens based on
+    their existing frequency in the text so
+    far.
+
+    Decreases the model's likelihood to repeat
+    the same line verbatim (the same text).
+
+    The likelihood of the same/similar lines
+    being repeated in a completion.
+    
+    Set it high to avoid repetition.
+    
+    However, it could make sense to lower this
+    value if writing lyrics for a song's
+    chorus.
+
+gpt-3
+    gpt-3 stands for generative pre-trained
+    transformer 3.
+    
+    it's a lm with 175 billion parameters that
+    makes predictions about what should come
+    next in a sequence of text.
+
+logprobs
+    [#openai api]
+    [api setting]
+
+    Include the log probabilities on the
+    logprobs most likely tokens, as well the
+    chosen tokens.
+    
+    For example, if logprobs is 10, the api
+    will return a list of the 10 most likely
+    tokens.
+    
+    The api will always return the logprob of
+    the sampled token, so there may be up to
+    logprobs+1 elements in the response.
+
+max tokens
+max_tokens
+    [#openai api]
+    [api setting]
+
+    Determines the maximum
+    number of tokens that should be used in
+    the generated response.
+
+    Output token length.
+
+model
+    A model is a collection of trained
+    parameters that can perform a function
+    like predicting text, images or other
+    data.
+
+playground
+    a no-code browser-based interface for the
+    api that lets users experiment with
+    prompts and settings.
+
+presence penalty
+    [#openai api]
+    [api setting]
+
+    default value: 0
+    min value: 0
+    max value: 1
+
+    Indicates how much to favor new tokens in
+    the response text.
+    
+    This increases the likelihood of the model
+    to talk about new topics.
+    
+    Useful in cases where you want the model
+    to be more wide-ranging.
+
+    Seems similar to Frequency Penalty, but is
+    actually used to determine how likely the
+    completion will jump to new topics.
+    
+    Value of 0.4
+        Set somewhere in the middle means that
+        the completion shares a similar theme
+        overall but can still sometimes jump
+        to new topics.
+
+response length
+    [#openai api]
+    [playground setting]
+    [gpt-3 prompt setting]
+
+    min value: 64
+    max value: 2048
+
+    Determines the maximum number of tokens
+    that should be used in the generated
+    response.
+
+    Controls the approximate length of model
+    completions, in words.
+    
+    The maximum number of tokens to
+    generate.
+
+    Requests can use up to 2048 tokens shared
+    between prompt and completion.
+
+    One token is roughly 4 characters for
+    normal English text).
+
+stop sequences
+    [#OpenAI API]
+    [API setting]
+
+    The characters or line breaks used to tell
+    the model to stop generating response
+    text.
+
+    When it sees this symbol, stop generating
+    completions so it doesn't just trail off.
+
+    The API will continue generating the
+    sequence of text until it generates this.
+
+start sequence
+    [#OpenAI API]
+    [API setting]
+
+    [GPT-3 prompt setting]
+
+    Tells the model what to start the
+    completion with -- you can make this.
+
+restart sequence
+    [#OpenAI API]
+    [API setting]
+
+    [GPT-3 prompt setting]
+
+    Tells the model when to restart the
+    sequence.
+
+semantic search
+    [#OpenAI API]
+    [API function]
+
+    Allows you to search for documents related
+    to an input query.
+
+    The API results a list of scores
+    indicating which documents were most
+    closely related.
+
+    Allows searching over documents based on
+    the natural-language meaning of queries
+    rather than keyword matching.
+
+    This is how it works:
+        /media/sdc1$MYGIT/openai/openai-python/examples/semanticsearch/README.md
+
+        The following usage will run a client-
+        side semantic search.
+        
+        This formats each document into a
+        prompt asking the API for the
+        document's relevance, and then post-
+        processes the logprobs to derive
+        relevance scores:
+            ./semanticsearch.py -q 'positive emotion' -d happy -d sad
+
+show probabilities
+    [#OpenAI API]
+    [playground setting]
+
+    Highlights the probability of a generated
+    token.
+
+Stream
+    [#OpenAI API]
+    [API setting]
+
+    Whether to stream back partial progress.
+
+    If set, tokens will be sent as data-only
+    server-sent events as they become
+    available, with the stream terminated by a
+    data: DONE message.
+
+tokens
+    A sequence of characters that the model
+    breaks text into and generates responses
+    from.
+    
+    On average a token is equal to four
+    letters or whitespace characters.
+
+prompt
+    The text sent to the api. the model uses
+    the prompt to generate a prediction of
+    what text should follow next.
+
+    Writing out instructions with guiding
+    examples.
+
+    Show the AI a few examples of what you'd
+    like it to do.
+
+sampling temperature
+temperature
+    [#OpenAI API]
+    [API setting]
+    [GPT-3 prompt setting]
+    [GPT hyperparameter]
+    [#GPT]
+
+    0.9 recommended value.
+    min value: 0
+    max value: 1
+
+    0: deterministic, (not random)
+    1: creative, max random
+
+    https://towardsdatascience.com/how-to-sample-from-language-models-682bceb97277
+
+    openai api engines.generate -h | vs +/"-t TEMPERATURE"
+
+    Controls token randomness.
+
+    Higher values means the model will take
+    more risks.
+    
+    Try 0.9 for more creative applications,
+    and 0 (argmax sampling) for ones with a
+    well-defined answer.
+    
+    A lower setting results in less random
+    completions a higher setting is less
+    deterministic and repetitive.
+    
+    Lower settings are generally better for
+    classification tasks and higher settings
+    for more open-ended responses.
+
+    Float value controlling randomness in
+    boltzmann distribution.
+    
+    Lower temperature results in less random
+    completions.
+    
+    As the temperature approaches zero, the
+    model will become deterministic and
+    repetitive.
+    
+    Higher temperature results in more random
+    completions.
+
+    How much creative liberty the model has.
+
+    The lower the value, the less creative
+    liberty it has.
+
+    Controls the randomness of the completion.
+    
+    Setting it to a high value ensures that a
+    completely different response is returned
+    even if a prompt is reused.
+    
+    If an idempotent response is desired
+    instead, set this to zero.
+
+nucleus sampling
+top p sampling
+    To address this problem, the authors
+    propose top p sampling, aka nucleus
+    sampling, in which we compute the
+    cumulative distribution and cut off as
+    soon as the CDF exceeds P.
+    
+    In the broad distribution example above,
+    it may take the top 100 tokens to exceed
+    top_p = .9.
+    
+    In the narrow distribution, we may already
+    exceed top_p = .9
+    
+    with just hot and warm in our sample
+    distribution.
+    
+    In this way, we still avoid sampling
+    egregiously wrong tokens, but preserve
+    variety when the highest scoring tokens
+    have low confidence.
+
+    A method of determining which tokens to
+    use that looks at the combined probability
+    of groups of tokens.
+
+    See "Top P".
+
+Top P
+    [#OpenAI API]
+    [API setting]
+    [GPT-3 prompt setting]
+    [GPT hyperparameter]
+    [#GPT]
+
+    Floating point value.
+
+    Max value: 1
+    Recommended value: 1
+    Min value: 0
+    
+    https://towardsdatascience.com/how-to-sample-from-language-models-682bceb97277
+
+    Diversity via nucleus sampling.
+
+    Cuts off tokens below a certain
+    probability threshold.
+
+    We generally recommend keeping it set to
+    around 1.
+
+    Similar to temperature, this is an API
+    setting that controls the diversity of
+    tokens considered using nucleus sampling.
+    
+    A lower setting results in less random
+    completions a higher setting is less
+    deterministic and repetitive.
+    
+    Lower settings are generally better for
+    classification tasks and higher settings
+    for more open-ended responses.
+
+    Controls diversity via nucleus sampling:
+    1.5 means half of all likelihood-weighted
+    options are considered.
+
+    See "nucleus sampling".
+
+openai-ft
+    [cli command]
+
+    Run a fine-tuning job using OpenAI
+    finetuning API.
+
+    py -36 i openai-finetune
+
+openai-ft-classification
+    [cli command]
+
+    Run a classification fine-tuning job using
+    OpenAI finetuning API
+
+    py -36 i openai-finetune
+
+openai-ft-events
+    [cli command]
+
+    List the events for a batch-mode
+    fine-tuning run.
+
+    py -36 i openai-finetune
+
+openai-ft-report
+    [cli command]
+
+    List the events for a batch-mode
+    fine-tuning run.
+
+    py -36 i openai-finetune
+
+branch
+
+snapshot
+    [branch]
+
+    A snapshot is a created from a branch.
+
+    Parameters:
+    - engine
+      specified when creating the snapshot
+    - branch
+      specified when creating the snapshot
+    - description
+      specified when creating the snapshot
+
+openai snapshots
+    [subcommand]
+
+    Commands
+    - list
+    - create
+
+Top k sampling
+    Sorting by probability and zero-ing out
+    the probabilities for anything below the
+    kth token.
+    
+    It appears to improve quality by removing
+    the tail and making it less likely to go
+    off topic.
+    
+    But in some cases, there really are many
+    words we could sample from reasonably
+    (broad distribution below), and in some
+    cases there arent (narrow distribution
+    below).
+
+openai engines
+engines
+    [subcommand]
+
+    - list
+    - get
+    - update
+    - generate
+
+openai completions
+completions
+    [subcommand]
+
+    - create
+
+openai
+    [cli command]
+
+    Subcommands:
+    - engines.list
+    - engines.get
+    - engines.update
+    - engines.generate
+    - engines.search
+    - completions.create
+    - snapshots.list
+    - snapshots.create
+    - snapshots.get
+    - snapshots.delete
+    - tags.create
+    - tags.get
+    - tags.delete
+    - tags.list
+
+plan
+    openai-ft-classification -h | vs +/" plan"

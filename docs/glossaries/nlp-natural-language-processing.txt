@@ -1,0 +1,3120 @@
+$NOTES/ws/linguistics/glossary.txt
+
+http://learnthesewordsfirst.com/about/what-is-a-multi-layer-dictionary.html
+https://github.com/explosion/spaCy/blob/master/spacy/glossary.py
+
+extractive keyphrase system
+
+abstractive keyphrase system
+
+subword
+    Something in-between a word and a
+    character.
+
+IE
+information extraction
+    https://web.stanford.edu/~jurafsky/slp3/17.pdf
+
+    Extracting limited kinds of semantic
+    content from text.
+
+    Turns the unstructured information
+    extraction information embedded in texts
+    into structured data, for example for
+    populating a relational database to enable
+    further processing.
+
+    Steps
+    -   Find the proper names or named
+        entities in a text.
+    -   The task of named entity recognition
+        (NER) is to find each named entity
+        recognition mention of a named entity
+        in the text and label its type.
+
+terminology extraction
+automatic keyphrase extraction
+keyphrase extraction
+    http://bdewilde.github.io/blog/2014/09/23/intro-to-automatic-keyphrase-extraction/
+
+    Extraction of important topical words and
+    phrases from documents.
+
+    Suffers from poor performance relative to
+    many other core NLP tasks, partly because
+    there’s no objectively “correct” set of
+    keyphrases for a given document.
+
+    Two steps
+    -   A set of words and phrases that could
+        convey the topical content of a
+        document are identified, then
+    -   these candidates are scored/ranked and
+        the “best” are selected as a
+        document’s keyphrases.
+
+Named entity recognition
+Named-entity recognition
+NER
+entity identification
+named entity identification
+Named-entity extraction
+entity chunking
+entity extraction
+    [#information extraction]
+    [task]
+
+    Identify/locate and classify the names of
+    people, organisations, locations and other
+    entities within text.
+
+    Locate and classify named entity mentions
+    in unstructured text into pre-defined
+    categories.
+
+    Example:
+    - Categorise all the named entities in
+      this unstructured text. Organise them
+      under the categories:
+      - organisation
+      - person
+
+    A subtask of information extraction that
+    seeks to locate and classify named
+    entities mentioned in unstructured text
+    into pre-defined categories such as person
+    names, organizations, locations, medical
+    codes, time expressions, quantities,
+    monetary values, percentages, etc.
+
+    Involves extracting key information,
+    called entities, from blocks of text.
+
+    These entities are words or series of
+    words that are classified into categories
+    (i.e. person, location, company, food).
+
+    Hence, the two main parts of NER are
+    entity detection and entity
+    categorization.
+
+    Detect and label named entities.
+
+    Helps you easily identify the key elements
+    in a text, like names of people, places,
+    brands, monetary values, and more.
+    
+    Extracting the main entities in a text
+    helps sort unstructured data and detect
+    important information, which is crucial if
+    you have to deal with large datasets.
+
+bag-of-words
+bag-of-words model
+BoW
+BoW model
+    https://ryanong.co.uk/2020/01/03/day-3-word-embeddings/
+
+    A simplifying representation used in NLP
+    and IR.
+    
+    In this model, a text (such as a sentence
+    or a document) is represented as the bag
+    (multiset) of its words, disregarding
+    grammar and even word order but keeping
+    multiplicity.
+
+Byte Pair Encoding
+BPE
+    [subword algorithm]
+
+    https://en.wikipedia.org/wiki/Byte_pair_encoding
+
+    Byte pair encoding or digram coding is a
+    simple form of data compression in which
+    the most common pair of consecutive bytes
+    of data is replaced with a byte that does
+    not occur within that data.
+    
+    A table of the replacements is required to
+    rebuild the original data.
+
+    A simple data compression algorithm first
+    introduced in 1994 supercharging almost
+    all advanced NLP models of today
+    (including BERT).
+
+    https://medium.com/@makcedward/how-subword-helps-on-your-nlp-model-83dd1b836f46
+
+    vim +/"\"\"\"Byte pair encoding utilities\"\"\"" "$MYGIT/mullikine/gpt-2/src/encoder.py"
+
+    Used to build a subword dictionary.
+
+    $MYGIT/openai/GPT-3-Encoder/vocab.bpe
+
+Schemata
+    Cognitive structures representing generic
+    knowledge, i.e. structures which do not
+    contain information about particular
+    entities, instances or events, but rather
+    about their general form.
+
+ontology
+    An ontology encompasses a representation,
+    formal naming and definition of the
+    categories, properties and relations
+    between the concepts, data and entities
+    that substantiate one, many or all domains
+    of discourse.
+
+semantic repository
+    An engine similar to a database management
+    systems (DBMS) that permits the storage,
+    querying and handling of structured data.
+    
+    In addition, a semantic repository uses
+    ontologies as semantic schemata to
+    automatically reason about the queried
+    data.
+    
+    Semantic repositories make use of generic
+    and flexible physical data models, such as
+    graphs.
+    
+    This permits them to quickly read and
+    implement new metadata schemata or
+    ontologies.
+    
+    As a result, semantic repositories provide
+    better incorporation of assorted data as
+    well as more analytical power.
+    
+    However, these kinds of repositories are
+    still in the early stages of their
+    development.
+
+Natural language processing
+NLP
+Computational linguistics
+    One of the most important technologies of
+    the information age.
+    
+    Applications of NLP are everywhere because
+    people communicate almost everything in
+    language:
+    - web search,
+    - advertising,
+    - emails,
+    - customer service,
+    - language translation,
+    - virtual agents,
+    - medical reports, etc.
+    
+    DL and NN approaches have obtained very
+    high performance across many different NLP
+    tasks, using single end-to-end neural
+    models that do not require traditional,
+    task-specific feature engineering.
+
+    An interdisciplinary field concerned with
+    the statistical or rule-based modeling of
+    NL from a computational perspective, as
+    well as the study of appropriate
+    computational approaches to linguistic
+    questions.
+    
+Minimum Edit Distance
+    ewwlinks +/"Minimum edit distance for finding string distance" "http://www.exploredatabase.com/2020/03/minimum-edit-distance-for-finding-distance-between-strings.html"
+
+    2 types:
+    - basic minimum edit distance
+    - Levenshtein distance
+
+basic minimum edit distance
+    [minimum edit distance]
+
+    The cost for each operation is 1. That is,
+    insertion cost = deletion cost =
+    substitution cost = 1
+
+Levenshtein distance
+    [minimum edit distance]
+
+    The cost for insertion and deletion will
+    be 1 2 for substitution (substitution is
+    considered as a combination of delete and
+    insert) 
+
+Stylometry
+Stylometics
+    The application of the study of linguistic
+    style, usually to written language, but it
+    has successfully been applied to music and
+    to fine-art paintings as well.
+
+    Examples:
+    - prevalence of adjectives,
+    - subordinate clauses, and
+    - compound sentences
+
+Word2Vec
+    A group of models that tries to represent
+    each word in a large text as a vector in a
+    space of N dimensions (which we will call
+    features) making similar words also be
+    close to each other.
+
+    One of the most popular framework for
+    mapping word representation to a vector
+    space using a large corpus of text.
+
+Skip-Gram
+Word2Vec Skip-Gram
+    [#word2vec]
+    [model]
+    [architecture]
+
+    One of the models in the Word2Vec group of
+    models.
+
+    Takes a word as input and predicts its
+    context.
+
+    Intuition
+        Skip-gram takes every word in a large
+        corpora (we will call it the focus
+        word) and also takes one-by-one the
+        words that surround it within a
+        defined ‘window’ to then feed a NN
+        that after training will predict the
+        probability for each word to actually
+        appear in the window around the focus
+        word.
+
+
+    Model predict context from inner word.
+
+    Model uses the current word to predict the
+    surrounding window of context words.
+
+    Key point:
+        Weighs nearby context words more
+        heavily than more distant context
+        words.
+
+Continuous Bag of Words
+CBOW
+    [architecture]
+
+    Model predict inner word from context.
+
+    Model predicts the current word from a
+    window of surrounding context words.
+
+    Key point:
+        The order of context words does not
+        influence prediction (bag-of-words
+        assumption).
+
+CBOW vs skip-gram
+    CBOW is faster while skip-gram is slower
+    but does a better job for infrequent
+    words.
+
+Natural-language understanding
+NLU
+natural-language interpretation
+NLI
+    [#natural-language processing]
+
+    Deals with machine reading comprehension.
+    
+    Considered an AI-hard problem.
+
+Benford's law
+Newcomb-Benford law
+law of anomalous numbers
+first-digit law
+    An observation about the frequency
+    distribution of leading digits in many
+    real-life sets of numerical data.
+
+TextBlob
+    [python library]
+
+    An intuitive interface to NLTK.
+    
+    Gentle learning curve while boasting a
+    surprising amount of functionality.
+
+    $NOTES/ws/nlp-natural-language-processing/scratch/textblob/example-textblob-sentiment-analysis.py
+
+Whole Word Masking
+    [#BERT]
+    [technique]
+    - May 31st, 2019
+
+Whole Word Masking Model
+
+SuperGLUE
+    [benchmark tasks]
+
+    Thu Aug 15 20:25:11 NZST 2019
+
+    Facebook AI Research, together with
+    Google’s DeepMind, University of
+    Washington, and New York University, today
+    introduced SuperGLUE, a series of
+    benchmark tasks to measure the performance
+    of modern, high performance language-
+    understanding AI.
+
+    https://super.gluebenchmark.com
+
+semantic map 
+    We create visualizations of keyword and
+    sentence relationships so the user can
+    extract meaningful concepts quickly and
+    efficiently.
+
+WordPiece
+    [subword algorithm]
+
+    https://medium.com/@makcedward/how-subword-helps-on-your-nlp-model-83dd1b836f46
+
+Unigram Language Model
+    [subword algorithm]
+
+    https://medium.com/@makcedward/how-subword-helps-on-your-nlp-model-83dd1b836f46
+
+SentencePiece
+    [subword algorithm]
+
+    https://medium.com/@makcedward/how-subword-helps-on-your-nlp-model-83dd1b836f46
+
+useful datasets
+    [subword algorithm]
+
+    https://aclweb.org/anthology/papers/D/D18/D18-2029/
+
+Universal Sentence Encoder (USE) for English
+    One of the most downloaded pre-trained
+    text modules in Tensorflow Hub c. 2019.
+
+Natural-language generation
+NLG
+    A software process that transforms
+    structured data into plain-English
+    content.
+    
+    It can be used to produce long form
+    content for organizations to automate
+    custom reports, as well as produce custom
+    content for a web or mobile application.
+    
+    It can also be used to generate short
+    blurbs of text in interactive
+    conversations (a chatbot) which might even
+    be read out loud by a text-to-speech
+    system.
+
+gensim
+    [python library]
+
+    Topic modeling for humans.
+
+    - topic modeling
+    - document indexing
+    - similarity retrieval
+    with large corpora
+    
+    Target audience is the NLP and IR
+    community.
+    
+        rifle "$MYGIT/RaRe-Technologies/gensim/docs/notebooks/FastText_Tutorial.ipynb"
+        sp "$MYGIT/RaRe-Technologies/gensim/docs/notebooks/FastText_Tutorial.py"
+
+        rifle "$MYGIT/RaRe-Technologies/gensim/docs/notebooks/Poincare Tutorial.ipynb"
+        sp "$MYGIT/RaRe-Technologies/gensim/docs/notebooks/Poincare Tutorial.py"
+
+FastText
+    A library for text classification and
+    representation.
+
+sentential
+    Relating to a sentence.
+
+contextual similarity vs semantic similarity
+    https://www.tandfonline.com/doi/abs/10.1080/01690969108406936#:~:text=Semantic%20similarity%20is%20estimated%20by,and%20the%20discriminability%20of%20contexts.
+
+contextual similarity
+    If the representation has more contextual
+    similarity that means it is a more
+    expressive representation.
+
+    Examples:
+    - word vectors
+      They are similar in representation.
+      This means you can do algebra with them.
+    - emacs
+      When everything is represented in a
+      grid, this means you can compose and
+      apply the same operations to many
+      things that exist within the
+      representation.
+
+    ewwlinks +/"Contextual Similarity" "http://webcache.googleusercontent.com/search?q=cache:https://medium.com/deeper-learning/glossary-of-deep-learning-word-embedding-f90c3cec34ca"
+
+semantic similarity
+    (of two words or word vectors)
+
+    Methods:
+    - Euclidean distance
+    - Cosine similarity
+
+    Sometimes, the nearest neighbors according
+    to this metric reveal rare but relevant
+    words that lie outside an average human's
+    vocabulary.
+
+GloVe
+    (coined from Global Vectors)
+
+    A model for distributed word
+    representation.
+    
+    The model is an unsupervised learning
+    algorithm for obtaining vector
+    representations for words.
+    
+    This is achieved by mapping words into a
+    meaningful space where the distance
+    between words is related to semantic
+    similarity
+
+word embedding
+    Types:
+    - distributional word embeddings
+    - contextualised word embeddings
+
+    types:
+    - Word2Vec (2013)
+    - GloVe (2014)
+    - FastText (2017)
+    - ELMo (2018)
+
+distributional word embeddings
+fixed Word Embeddings
+    https://ryanong.co.uk/2020/01/03/day-3-word-embeddings/
+
+    Better than BoW.
+
+    Each word has only one vector
+    representation that’s formed during the
+    training phase and this vector
+    representation is used for the same word
+    in different context.
+
+    Three popular types:
+    - Word2Vec (2013),
+    - GloVe (2014), and
+    - FastText (2017).
+
+contextualised word embeddings
+    Types:
+    - ELMo
+    - ...
+
+    Better than:
+    - distributional word embeddings.
+
+    Distributional word embeddings means that
+    each word has only one vector
+    representation that’s formed during the
+    training phase and this vector
+    representation is used for the same word
+    in different context.
+    
+    However, as we know, the same word in
+    different contexts has different meanings.
+    
+    Therefore, it makes more sense for the
+    vector representation of the same word to
+    be different depending on the context of
+    which it appears in.
+    
+    To address this, contextualised word
+    embeddings such as ELMo (2018) was
+    introduced, whereby word embeddings of the
+    same word can change depending on the
+    context it appears in.
+
+popular NLP / IR algorithms
+    Examples:
+    - Latent Semantic Analysis (LSA/LSI/SVD)
+    - Latent Dirichlet Allocation (LDA)
+    - Random Projections (RP)
+    - Hierarchical Dirichlet Process (HDP)
+    - word2vec deep learning
+
+    Gensim can run these multi-core and on clusters.
+
+Poincaré Embeddings
+    https://rare-technologies.com/implementing-poincare-embeddings/
+    https://nbviewer.jupyter.org/github/RaRe-Technologies/gensim/blob/develop/docs/notebooks/Poincare%20Tutorial.ipynb
+
+    Facebook AI Research
+    # This finds it
+    arxiv-lookup "Embeddings for Learning Hierarchical"
+    # This does not find it
+    arxiv-lookup "Poincaré Embeddings"
+    # This does find it
+    arxiv-lookup "Poincaré Embeddings for Learning Hierarchical"
+
+    arxiv-summary http://arxiv.org/abs/1705.08039v2
+
+Algorithms based on overall summarization
+    e.g. bag-of-words
+    
+    Not powerful enough to capture the
+    sequential nature of text.
+    
+n-grams
+    Struggled to model general context and
+    suffered severely from a curse of
+    dimensionality.
+
+HMM-based models
+    Had trouble overcoming sequential and
+    dimensionality.  due to memorylessness.
+
+gazetteer
+    A list of place names.
+    
+    A geographical index or dictionary.
+
+NLU
+Natural Language Understanding
+    Words need to be translated into a
+    machine-readable description of what they
+    meant.
+
+Sentiment analysis
+    Interpret the meaning of larger text units
+    by the semantic composition of smaller
+    elements.
+
+Text units
+    [in order of size]
+
+    - stories
+    - arguments
+    - facts
+    - descriptive terms
+    - entities
+
+3 critical concepts in NLP
+    - text embeddings
+      (vector representations of strings)
+
+    - machine translation
+      (using neural networks to translate
+      languages)
+
+    - dialogue & conversation
+      (tech that can hold conversations with
+      humans in real time)
+
+Which model architecture to use?
+    Depends on the task.
+
+    There is no single model architecture with
+    consistent state-of-the-art results across
+    tasks.
+
+Question Answering
+    [task]
+
+    Use "Strongly Supervised End-to-End Memory Networks".
+
+Sentiment Analysis
+    [task]
+
+    Use "Tree-LSTM".
+    
+The Dynamic Memory Network
+    Performs well consistently across multiple
+    domains.
+    - Question Answering
+    - Sentiment Analysis
+    - Sequence Tagging
+
+morphology
+    The study of the forms of things.
+
+    The study of words, how they are formed,
+    and their relationship to other words in
+    the same language.
+    
+    It analyzes the structure of words and
+    parts of words, such as:
+    - stems
+    - root words
+    - prefixes
+    - suffixes
+
+syntax
+    The set of rules, principles, and
+    processes that govern the structure of
+    sentences in a given language
+    
+    For example,
+    - word order
+
+logical semantics
+    The study of meaning in formal and natural
+    languages using logic as an instrument.
+
+Recursive Neural Networks
+    Good for
+    - describing language
+
+    The main assumption for Recursive Neural
+    Net development is such that recursion is
+    a natural way for describing language.
+
+    Perfect for settings that have a nested
+    hierarchy and an intrinsic recursive
+    structure.
+
+LASER
+Language-Agnostic SEntence Representations
+    A toolkit.
+    $HOME/source/git/facebookresearch/LASER
+    https://news.ycombinator.com/item?id=18970112
+
+    Provides:
+    - Universal, language-agnostic sentence
+      embeddings
+
+    Uses:
+    - Zero-shot transfer across 93 languages
+    - strong results in cross-lingual document
+      classification (MLDoc corpus)
+
+    Maps a sentence in any language to a point
+    in a high-dimensional space with the goal
+    that the same statement in any language
+    will end up in the same neighborhood.
+
+bert-as-a-service
+    [repository]
+
+    This repository allows for serving BERT
+    models for remote clients over TCP.
+
+pooling strategy
+
+spaCy
+    While it’s possible to solve some problems
+    starting from only the raw characters,
+    it’s usually better to use linguistic
+    knowledge to add useful information.
+    That’s exactly what spaCy is designed to
+    do:
+        you put in raw text, and get back a
+        Doc object, that comes with a variety
+        of annotations.
+
+    After tokenization, spaCy can parse and
+    tag a given Doc.
+
+Spatial Role Labeling
+    https://www.cs.tulane.edu/~pkordjam/SpRL.htm
+
+    Side note:
+        Combined problog with spacy
+        $MYGIT/mmxgn/sprl-spacy/README.md
+
+    One of the essential functions of natural
+    language is to talk about spatial
+    relationships between objects.
+
+    Linguistic constructs can express highly
+    complex, relational structures of objects,
+    spatial relations between them, and
+    patterns of motion through space relative
+    to some reference point.
+
+    Understanding such spatial utterances is a
+    problem in many areas, including robotics,
+    navigation, traffic management, and query
+    answering systems.
+
+    Learning how to map this information onto
+    a formal representation from text is a
+    challenging problem.
+
+    The task of spatial role labeling
+    introduces an annotation scheme proposed
+    that is language-independent and
+    facilitates the application of machine
+    learning techniques.
+
+    The framework consists of a set of spatial
+    roles based on the theory of holistic
+    spatial semantics with the intent of
+    covering all aspects of spatial concepts,
+    including both static and dynamic spatial
+    relations.
+
+    Let us illustrate the spatial role
+    labeling task with the following example:
+
+    Example:
+        For the sentence:
+
+            Give me the gray book on the big table.
+
+        Spatial role labeling results in the
+        following output:
+
+            Give me [the gray book]TRAJECTOR [on]SPATIAL_INDICATOR [the big table]LANDMARK.
+
+    Labels:
+    - trajector
+    - spatial indicator
+      (often a preposition) establishes the
+      type of spatial relation
+    - landmark
+
+    The phrase headed by the token book is
+    referring to a trajector object, the
+    phrase headed by the token table is
+    referring to the role of a landmark and
+    these are related by the spatial
+    expression on denoted as spatial
+    indicator.
+
+ELMo
+Embeddings from Language Models
+
+    https://medium.com/saarthi-ai/elmo-for-contextual-word-embedding-for-text-classification-24c9693b0045?fbclid=IwAR3HuuVeTw9jV8s0r_amQw33WH-wLKObHJzVgtA_9lP6EV1gnCkuKLH_66Q
+
+    Uses bi-directional LSTM in training, so
+    that its language model not only
+    understands the next word, but also the
+    previous word in the sentence.
+
+    Contains
+    - 2-layer bidirectional LSTM backbone
+    - residual connection is added between the
+      first and second layers.
+
+    Salient features
+    - ELMo word representations are purely
+      character-based.
+
+      This allows the network to use
+      morphological clues to form robust
+      representations for out-of-vocabulary
+      tokens unseen during training.
+
+    - Unlike other word embeddings, it
+      generates word vectors on run time.
+
+    - It gives embedding of anything you put
+      in — characters, words, sentences,
+      paragraphs, but it is built for sentence
+      embeddings in mind.
+
+    You can apply ELMo to almost any NLP
+    pipeline, and it will work like a charm.
+    - text classification
+    - NER
+    
+fine tuning on a specific text classification task
+    BERT, LASER, FASTTEXT, ELMO
+
+contextual model
+    Word embeddings are generated based on the
+    context of the word’s use in a sentence,
+    and thus a single word can have multiple
+    embeddings.
+    
+    For example, BERT would produce different
+    embeddings for Mercury in the following
+    two sentences:
+    
+    “Mercury is visible in the night sky” and
+    “Mercury is often confused with Hermes,
+    the fleet-footed messenger of Greek gods. ”
+
+ParlAI
+    http://parl.ai
+
+    Pronounced "par-lay".
+    
+    A python framework for sharing, training
+    and testing dialogue models, from open-
+    domain chitchat to VQA (Visual Question
+    Answering).
+
+Universal Dependencies
+UD
+    [framework]
+    
+    https://universaldependencies.org/
+    
+    For cross-linguistically consistent
+    grammatical annotation and an open
+    community effort with over 200
+    contributors producing more than 100
+    treebanks in over 70 languages.
+
+    Used in:
+         https://stanfordnlp.github.io/stanfordnlp/
+
+StanfordNLP 0.2.0
+    [Python NLP Library]
+
+    For Many Human Languages.
+
+    https://stanfordnlp.github.io/stanfordnlp/
+
+language tasks
+    - question answering
+    - reading comprehension
+    - summarization
+    - translation
+
+Factors Related with Sentiment Analysis
+    - Polarity
+    - Subjectivity
+    - Intensity
+    - Author
+
+Polarity
+    [#sentiment analysis]
+
+    Defines the phase of emotions expressed in
+    the analyzed sentence.
+    
+    It ranges from -1 to 1 and goes like:
+
+    * Very Positive
+    * Positive
+    * Neutral
+    * Negative
+    * Very Negative
+
+    On account of polarity the emotion and
+    sentiment of the writer can be easily
+    described.
+    
+    For example a person has written a review
+    for some hotel as "Very bad service and
+    staff".
+    
+    Suppose the polarity of this sentence
+    would be -0.56.
+    
+    It is clear from the values that it is a
+    negative emotion and against the brand
+    image of Hotel.
+    
+    This way polarity could easily determine
+    the end sentiment.
+
+Subjectivity
+    [#sentiment analysis]
+
+    ewwlinks +/"Subjectivity" "https://www.presentslide.in/2019/08/sentiment-analysis-textblob-library.html"
+
+    Polarity alone is not enough to deal with
+    complex text sentences.
+    
+    Sometimes the sentence needs more
+    attribute analysis to check weather it is
+    describing features or opinions on some
+    object.
+
+Intensity
+    [#sentiment analysis]
+
+    Along with the polarity and subjectivity
+    another important factor is intensity.
+    
+    It defines how strong or weak the emotion
+    is with respect to the context.
+
+Author
+    [#sentiment analysis]
+
+    The person who has the ownership for that
+    text or who has written the text content.
+    
+    The content may be a review, conversation,
+    social media chat, feedback or response.
+    
+    This helps in managing a structured way
+    for assigning expressions to a single
+    entity.
+
+syntactic aggregation.
+    [#NLG]
+    [Subtask of NLG]
+
+    pydoc3.7 nlglib.aggregation | tvd
+
+    For example, 'Roman is programming.' and
+    'Roman is singing' can be put together to
+    create 'Roman is programming and singing.'
+
+surface realisation
+    [#NLG]
+    [Subtask of NLG]
+
+    https://en.wikipedia.org/wiki/Realization_(linguistics)
+
+    pydoc3.7 nlglib.realisation
+
+    Involves creating an actual text in a
+    human language (English, French, etc.)
+    from a syntactic representation.
+
+NLU
+    Takes up the understanding of the data
+    based on grammar, the context in which it
+    was said and decide on intent and
+    entities.
+
+NLP
+    Converts a text into structured data or,
+    oppositely, automatically turning data
+    into prose.
+
+NLG
+    Generates a text based on structured data.
+
+    3 stages in the NLG process:
+    
+    1. Document planning:
+       Deciding what is to be said and
+       creating an abstract document that
+       outlines the structure of the
+       information to be presented.
+    
+    2. Microplanning:
+       Generation of referring expressions,
+       word choice, and aggregation to flesh
+       out the document specifications.
+    
+    3. Realisation:
+       Converting the abstract document
+       specifications to a real text, using
+       domain knowledge about syntax,
+       morphology, etc.
+
+Sequence Modeling
+    State of the art:
+    - RNN,
+    - LSTM, and
+    - RNN with GRU
+
+    Problems:
+    - language modeling
+    - machine translation
+
+Google Neural Machine Translation
+GNMT
+    [Seq2seq model]
+
+    Learns a mapping from an input text to an
+    output text.
+
+seq2seq vs lstm
+    seq2seq contains 2 LSTMs + at attention.
+
+    https://xin-xia.github.io/publication/icpc182.pdf?fbclid=IwAR3-1V_kkn1LAIgiuoL4ScwIaAYHEU2xdACVXxblnz2Kc_4mS2AMzoMo4mQ
+
+controlled natural language
+    A subset of standard English with a
+    restricted syntax and restricted semantics
+    described by a small set of construction
+    and interpretation rules.
+
+Attempto Controlled English
+ACE
+    [controlled natural language]
+
+    https://en.wikipedia.org/wiki/Attempto_Controlled_English
+
+    Can serve as knowledge representation,
+    specification, and query language, and is
+    intended for professionals who want to use
+    formal notations and formal methods, but
+    may not be familiar with them.
+    
+    Though ACE appears perfectly natural – it
+    can be read and understood by any speaker
+    of English – it is in fact a formal
+    language.
+    
+    ACE and its related tools have been used
+    in the fields of software specifications,
+    theorem proving, text summaries,
+    ontologies, rules, querying, medical
+    documentation and planning.
+
+    Examples:
+    - Every woman is a human.
+    - A woman is a human.
+    - A man tries-on a new tie. If the tie
+      pleases his wife then the man buys it.
+
+Chinking
+    [#NLTK]
+
+    A part of the chunking process with NLP
+    with NLTK.
+    
+    A chink is what we wish to remove from the
+    chunk.
+
+SOTA Language Model examples
+    - ERNIE
+    - BERT
+    - ALBERT
+    - ELMO
+    - LASER
+    - FASTTEXT
+    - GPT
+
+ERNIE
+Enhanced Representation through kNowledge IntEgration
+    Baidu has released ERNIE.
+
+    https://medium.com/syncedreview/baidus-ernie-tops-google-s-bert-in-chinese-nlp-tasks-d6a42b49223d
+
+Spoken Language Processing
+    The subfield of NLP concerned with spoken
+    language.
+
+Interspeech
+    [conference]
+
+    https://interspeech2019.org/
+
+    Conference on Spoken Language Processing.
+
+lemma
+    A root form of the word.
+
+stopword
+    A common word that may be filtered out.
+
+sentence boundary detection
+SBD
+sentence segmentation
+
+sentencizer
+    [#spaCy]
+
+    Performs sentence segmentation.
+
+non-destructive tokenization
+    [principle]
+
+    The tokens, sentences, etc., are simply
+    indexes into a long array.
+    
+    In other words, they don’t carve the text
+    stream into little pieces.
+    
+    So each sentence is a span with a start
+    and an end index into the document array.
+
+summarisation
+    [#NLP]
+
+    2 types:
+    - abstractive
+    - extractive
+
+TextRank
+    [summarization algorithm]
+    - graph-based
+    - extractive
+    - unsupervised
+
+    https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/
+
+    Example:
+        from gensim.summarization import summarize
+        
+    What the difference between TextRank and
+    PageRank?
+
+    The simple answer:
+        PageRank is for webpage ranking, and
+        TextRank is for text ranking.
+    
+    The webpage in PageRank is the text in
+    TextRank, so the basic idea is the same.
+
+Extractive Summarization
+    Rely on extracting several parts, such as
+    phrases and sentences, from a piece of
+    text and stack them together to create a
+    summary.
+    
+    Therefore, identifying the right sentences
+    for summarization is of utmost importance
+    in an extractive method.
+
+    2 types of tasks:
+    - generic summarization
+    - query relevant summarization
+
+generic summarization
+    [task of extractive summarization]
+
+    Focuses on obtaining a generic summary or
+    abstract of the collection (whether
+    documents, or sets of images, or videos,
+    news stories etc.). 
+
+query relevant summarization
+query-based summarization
+    [task of extractive summarization]
+
+    Summarizes objects specific to a query.
+
+Abstractive Summarization
+    Use advanced NLP techniques to generate an
+    entirely new summary.
+    
+    Some parts of this summary may not even
+    appear in the original text.
+
+natural language engineering
+    [academic journal]
+
+    A bimonthly peer-reviewed academic journal
+    published by Cambridge University Press
+    which covers research and software in
+    NLP.
+
+    Bridge the gap between traditional
+    computational linguistics research and the
+    implementation of practical applications
+    with potential real-world use.
+
+discourse coherence
+coherence
+    [#discourse analysis]
+
+    The term used to describe the way a text establishes links in
+    meaning within and between sentences.
+
+    Definition:
+        http://www.academypublication.com/issues/past/jltr/vol05/02/27.pdf
+
+Keywords extraction
+    One of the most common technique to
+    summarize information from the text.
+    
+    In some cases, keywords are not only
+    single words but phrases, or even phrases
+    where words are not directly connected to
+    each other.
+
+UNIfied pre-trained Language Model
+UniLM
+    Alternative to bidirectional LM (e.g.
+    BERT).
+
+    Completes unidirectional, seq2seq, and
+    bidirectional prediction tasks and which
+    can be fine-tuned for both NLU and
+    generation.
+
+    SOTA 19.10.19
+    - abstract summarization
+    - generative QA
+    - LG data sets
+
+WebText
+    [dataset]
+
+    The OpenAI researchers crawled it from the
+    internet as part of research into GPT-2.
+
+Text segmentation
+    The process of dividing written text into
+    meaningful units, such as words,
+    sentences, or topics.
+    
+    The term applies both to mental processes
+    used by humans when reading text, and to
+    artificial processes implemented in
+    computers, which are the subject of NLP.
+
+Text segmentation model
+    It is a model. Therefore it's made to be
+    able to generalise on unseen natural text.
+
+Dendrogram
+    Hierarchical plot of similarities.
+
+Sentence breaking
+sentence boundary disambiguation
+
+Grammatical analysis
+grammatical parse
+    The process of correlating the line
+    sequence of lexemes (words) of the
+    language with its formal grammar.
+    
+    The result of this is usually a parse tree
+    or an abstract syntactical tree.
+    
+    For grammatical parsing of computer
+    languages context-free grammars are used.
+
+Parsing
+    Determine the parse tree (grammatical
+    analysis) of a given sentence.
+    
+    The grammar for NLs is ambiguous and
+    typical sentences have multiple possible
+    analyses.
+    
+    In fact, perhaps surprisingly, for a
+    typical sentence there may be thousands of
+    potential parses (most of which will seem
+    completely nonsensical to a human).
+    
+    There are two primary types of parsing,
+    Dependency Parsing and Constituency
+    Parsing.
+    
+    Dependency Parsing focuses on the
+    relationships between words in a sentence
+    (marking things like Primary Objects and
+    predicates), whereas Constituency Parsing
+    focuses on building out the Parse Tree
+    using a Probabilistic Context-Free Grammar
+    (PCFG).
+    
+    See also: Stochastic grammar.
+
+stochastic grammar
+    A grammar framework with a probabilistic
+    notion of grammaticality:
+
+    - Stochastic context-free grammar
+    - Statistical parsing
+    - Data-oriented parsing
+    - Hidden Markov model
+    - Estimation theory
+
+Morphological segmentation
+    Separate words into individual morphemes
+    and identify the class of the morphemes.
+    
+    The difficulty of this task depends
+    greatly on the complexity of the
+    morphology (i.e. the structure of words)
+    of the language being considered.
+    
+    English has fairly simple morphology,
+    especially inflectional morphology, and
+    thus it is often possible to ignore this
+    task entirely and simply model all
+    possible forms of a word (e.g. "open,
+    opens, opened, opening") as separate
+    words.
+    
+    In languages such as Turkish or Meitei, a
+    highly agglutinated Indian language,
+    however, such an approach is not possible,
+    as each dictionary entry has thousands of
+    possible word forms.
+
+morpheme
+    The smallest meaningful unit in a
+    language.
+    
+    A morpheme is not identical to a word.
+    
+    The main difference between them is that a
+    morpheme sometimes does not stand alone,
+    but a word, by definition, always stands
+    alone.
+    
+    The linguistics field of study dedicated
+    to morphemes is called morphology.
+
+pretraining
+pretrained
+pre-training
+language model pretraining
+pretrained language model
+pre-training language representations
+    [technique]
+
+    We train a general-purpose “language
+    understanding” model on a large text
+    corpus (like Wikipedia), and then use that
+    model for downstream NLP tasks that we
+    care about (like question answering).
+
+    https://towardsdatascience.com/from-word-embeddings-to-pretrained-language-models-a-new-age-in-nlp-part-2-e9af9a0bdcd10
+
+    Teaches ML systems contextualized text
+    representations by having them predict
+    words based on their contexts.
+
+language modeling objective
+    GPT-2 has a very conventional training
+    objective.
+
+Masked Language Models
+MLM
+    [LM training objective]
+
+    The training objective used for BERT.
+
+Next Sentence Prediction
+NSP
+    Predicting whether a pair of sentences is
+    continuous.
+
+BERT
+Bidirectional Encoder Representations from Transformers
+    [model]
+    - contextual
+    - late 2018
+    - can do transfer learning
+
+    Uses MLM and NSP to learn text
+    representation.
+    
+    MLM is a way to mask some tokens and using
+    the rest of tokens to predict the masked
+    token.
+        
+    open https://towardsdatascience.com/breaking-bert-down-430461f60efb
+    open https://www.kdnuggets.com/2019/09/bert-changing-nlp-landscape.html
+
+    ewwlinks +/"a new language representation model called BERT" "https://www.topbots.com/most-important-ai-nlp-research/?fbclid=IwAR13D2E2metFFXeRpYPG6FHtJGvxTlAH04jZpAM2OePeet993xjBz5zjZSY"
+
+    vim +/"## What is BERT?" "$MYGIT/google-research/bert/README.md"
+
+    "Bidirectional" refers to its ability to
+    understand language ambiguity. 
+
+    Separates itself from other training
+    models by learning the relationships
+    between sentences and accurately applying
+    those to pretrain deep neural networks.    
+
+    https://arxiv.org/abs/1906.04341
+
+    What Makes BERT so Amazing?
+    - BERT is a contextual model
+
+      Word embeddings are generated based on
+      the context of the word’s use in a
+      sentence, and thus a single word can
+      have multiple embeddings. For example,
+      BERT would produce different embeddings
+      for Mercury in the following two
+      sentences: “Mercury is visible in the
+      night sky” and “Mercury is often
+      confused with Hermes, the fleet-footed
+      messenger of Greek gods.”
+
+    - BERT enables transfer learning
+    
+      This is referred to as “NLP’s ImageNet
+      Moment.” Google has pre-trained BERT on
+      Wikipedia, and this pre-trained model
+      can now be used on other more specific
+      datasets like a customer support bot for
+      your company. And remember this
+      pre-training is expensive, which you can
+      now skip. So, your starting point is a
+      smart model (trained on general human
+      speech) not just an algorithm in need of
+      training.
+
+    - BERT can be fine-tuned cheaply and
+      quickly on a small set of
+      domain-specific data and will yield more
+      accurate results than by training on
+      these same domain-s
+
+    Bidirectional
+        BERT is naturally bidirectional.
+    Generalizable
+        Pre-trained BERT model can be
+        fine-tuned easily for downstream NLP
+        task.
+    High-Performance
+        Fine-tuned BERT models beat
+        state-of-the- art results for many NLP
+        tasks.
+    Universal
+        Trained on Wikipedia + BookCorpus. No
+        special dataset needed.
+
+    The GPT2, and some later models like
+    TransformerXL and XLNet are auto-
+    regressive in nature. BERT is not. That is
+    a trade off. In losing auto-regression,
+    BERT gained the ability to incorporate the
+    context on both sides of a word to gain
+    better results. XLNet brings back
+    autoregression while finding an
+    alternative way to incorporate the context
+    on both sides.
+
+hard labels
+one-hot labels
+    All the probability is concentrated in the
+    ground-truth value.
+
+    [vs sparse labels]
+
+sparse labels
+    Every word can be
+    assigned its own probability.
+
+    Sparse predictions are more informative
+    than hard labels.
+
+Sparse Labels vs One-hot labels
+    https://lh4.googleusercontent.com/ZoaRoo-dWpdIx7iCmbEICmFcOPJLuVC2fc_Pau6akiBbLG6ad-IczRXgKHhnMXDuCXJbmxRU8ucPUJXH18B-cLUTvWekxqQn3cJTaybv3RGK8_5U0lxL8ZOeT6UalyelYBFpxTiL
+    https://blog.floydhub.com/knowledge-distillation/
+
+    With hard labels, all the probability is
+    concentrated in the ground-truth value,
+    while for sparse labels every word can be
+    assigned its own probability.
+
+Static data masking
+SDM
+    Permanently replaces sensitive data by
+    altering data at rest within database
+    copies being provisioned to DevOps
+    environments.
+    
+Dynamic data masking
+DDM
+    
+    Aims to temporarily hide or replace
+    sensitive data in transit leaving the
+    original at-rest data intact and
+    unaltered.
+
+RoBERTa
+    Performs better than BERT by applying the
+    following adjustments:
+    - Using dynamic masking pattern
+      BERT use static masking pattern
+    - Replacing the next sentence prediction
+      training objective
+
+Natural Language Inference
+    The task of determining whether a
+    “hypothesis” is:
+    - true (entailment),
+    - false (contradiction), or
+    - undetermined (neutral)
+    given a “premise”.
+
+    Contradiction
+    a) A man inspects the uniform of a figure
+       in some East Asian country.
+    b) The man is sleeping.
+
+    Neutral
+    a) An older and younger man smiling.
+    b) Two men are smiling and laughing at the
+       cats playing on the floor.
+
+    Entailment
+    a) A soccer game with multiple males
+       playing.
+    b) Some men are playing a sport.
+
+discourse segmentation
+    https://www.aclweb.org/anthology/D18-1116/
+    https://vimeo.com/306361340
+
+elementary discourse units
+EDU
+
+discourse parsing
+
+discourse
+    Cohesion and coherence are necessary
+    components of effectively organised and
+    meaningful discourse.
+    - cohesion
+    - coherence
+
+discourse cohesion
+    Contrasts with coherence.
+
+    Cohesion is the term used to describe the
+    grammatical means by which sentences and
+    paragraphes are linked and relationships
+    between them established.
+
+discourse coherence
+    Contrasts with cohesion.
+    
+    Coherence is the term used to describe the
+    way a text establishes links in meaning
+    within and between sentences.
+    
+    Essentially coherence is concerned with
+    the content of a text, the meaning it is
+    attempting to convey.
+    
+    When texts are not coherent, they do not
+    make sense or they make it difficult for
+    the reader to follow and understand.
+
+    For example:
+    - extended metaphor
+
+extended metaphor
+    An extended metaphor, also known as a
+    conceit or sustained metaphor, is an
+    author’s exploitation of a single metaphor
+    or analogy at length through multiple
+    linked tenors, vehicles, and grounds
+    throughout a poem or story.
+
+Plug and Play Language Model
+PPLM
+    https://github.com/huggingface/transformers/tree/master/examples/ppl
+
+ALBERT
+    A Lite BERT for Self-Supervised Learning
+    of Language Representations.
+
+    https://ai.googleblog.com/2019/12/albert-lite-bert-for-self-supervised.html
+
+conllu
+CoNLL-U Parser
+    Parses a CoNLL-U formatted string into a
+    nested python dictionary.
+    
+    CoNLL-U is often the output of NLP tasks.
+
+    $MYGIT/bplank/bilstm-aux/data/da-ud-dev.conllu
+
+    bash -c "le conllu"
+
+Transformer
+    Not only improved performance in sentence-
+    by- sentence translation, but could be
+    used to generate entire Wikipedia articles
+    through multi-document summarization.
+    
+    This is possible because the context
+    window used by Transformer extends to
+    thousands of words.
+    
+    With such a large context window,
+    Transformer could be used for applications
+    beyond text, including pixels or musical
+    notes, enabling it to be used to generate
+    music and images.
+
+locality-sensitive-hashing
+LSH
+
+Reformer
+    [Transformer model]
+
+    Designed to handle context windows of up
+    to 1 million words, all on a single
+    accelerator and using only 16GB of memory.
+    
+    It combines two crucial techniques to
+    solve the problems of attention and memory
+    allocation that limit Transformer’s
+    application to long context windows.
+    
+    Reformer uses LSH to reduce the complexity
+    of attending over long sequences and
+    reversible residual layers to more
+    efficiently use the memory available.
+
+    Algorithm:
+        Takes in an input sequence of keys,
+        where each key is a vector
+        representing individual words (or
+        pixels, in the case of images) in the
+        first layer and larger contexts in
+        subsequent layers.
+        
+        LSH is applied to the sequence, after
+        which the keys are sorted by their
+        hash and chunked.
+        
+        Attention is applied only within a
+        single chunk and its immediate
+        neighbors.
+
+Reversible layers
+    ewwlinks +/"Reversible layers:" "https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html"
+
+    (A) In a standard residual network, the
+    activations from each layer are used to
+    update the inputs into the next layer.
+
+    (B) In a reversible network, two sets of
+    activations are maintained, only one of
+    which is updated after each layer.
+
+    (C) This approach enables running the
+    network in reverse in order to recover
+    all intermediate values.  
+
+Generative Pre-trained Transformer 3
+GPT-3
+GPT3
+    An autoregressive language model that uses
+    deep learning to produce human-like text.
+
+Generative Pre-trained Transformer 2
+GPT-2
+GPT2
+    A large transformer-based language model
+    with 1.5 billion parameters, trained on a
+    dataset of 8 million web pages.
+
+    Trained with a simple objective: predict
+    the next word, given all of the previous
+    words within some text.
+
+    The diversity of the dataset causes this
+    simple goal to contain naturally occurring
+    demonstrations of many tasks across
+    diverse domains.
+
+    Direct scale-up of GPT, with more than 10X
+    the parameters and trained on more than
+    10X the amount of data.
+
+    Displays a broad set of capabilities,
+    including the ability to generate
+    conditional synthetic text samples of
+    unprecedented quality, where we prime the
+    model with an input and have it generate a
+    lengthy continuation.
+
+    Outperforms other language models trained
+    on specific domains (like Wikipedia, news,
+    or books) without needing to use these
+    domain- specific training datasets.
+
+    On language tasks like question answering,
+    reading comprehension, summarization, and
+    translation, GPT-2 begins to learn these
+    tasks from the raw text, using no task-
+    specific training data.
+
+    While scores on these downstream tasks are
+    far from state-of-the-art, they suggest
+    that the tasks can benefit from
+    unsupervised techniques, given sufficient
+    (unlabeled) data and compute.
+
+    Like a char-RNN with a predictive loss.
+
+    Uses the transformer.
+
+    ewwlinks +/"GPT-2: Contends" "https://blog.floydhub.com/knowledge-distillation/"
+
+    Contends SOTA with XLNet on LG tasks,
+    depending on the length of the previous
+    context.
+    
+    It also uses Attention, but each instance
+    can only access information from the words
+    before.
+    
+    This makes it possible for it to work in a
+    generative context, where the following
+    words are unknown at inference time, but
+    hinders its performance at language
+    comprehension compared to bidirectional
+    models.
+
+Generative Pre-trained Transformer
+GPT
+    “Generative” means the model was trained
+    to predict (or “generate”) the next token
+    in a sequence of tokens in an unsupervised
+    way.
+
+Language modeling
+    String words together appropriately in
+    small, grammatically correct sentences
+    which make sense.
+
+    One part of quantifying how well the
+    machine understands language.
+
+    The task of determining the probability of
+    a given sequence of words occurring in a
+    sentence.
+
+Smooth Inverse Frequency
+SIF
+    [weighting scheme]
+
+    sp +/"from fse.models import sif" "$MYGIT/GiovanniStephens/word2vec-sif/semantic_search.py"
+
+cognitive grammar
+    A cognitive approach to language developed
+    by Ronald Langacker, which hypothesizes
+    that grammar, semantics, and lexicon exist
+    on a continuum instead of as separate
+    processes altogether.
+    
+    This approach to language was one of the
+    first projects of cognitive linguistics.
+    
+    In this system, grammar is not a formal
+    system operating independently of meaning.
+    
+    Rather, grammar is itself meaningful and
+    inextricable from semantics.
+    
+    Construction grammar is a similar foci of
+    cognitive approaches to grammar.
+    
+    While cognitive grammar emphasizes the
+    study of the cognitive principles that
+    give rise to linguistic organization,
+    construction grammar aims to provide a
+    more descriptively and formally detailed
+    account of the linguistic units that
+    comprise a particular language.
+    
+    Langacker first explicates the system of
+    cognitive grammar in his seminal, two-
+    volume work Foundations of Cognitive
+    Grammar.
+    
+    Volume one is titled "Theoretical
+    Prerequisites", and it explores
+    Langacker's hypothesis that grammar may be
+    deconstructed into patterns that come
+    together in order to represent concepts.
+    
+    This volume concentrates on the broad
+    scope of language especially in terms of
+    the relationship between grammar and
+    semantics.
+    
+    Volume two is titled "Descriptive
+    Application", as it moves beyond the first
+    volume to elaborate on the ways in which
+    Langacker's previously described theories
+    may be applied.
+    
+    Langacker invites his reader to utilize
+    the tools presented in Foundations' first
+    volume in a wide range of, mainly English,
+    grammatical situations.
+
+Pattern-Exploiting Training (PET)
+    [#fine-tuning]
+
+    PET is a technique for fine-tuning a pre-
+    trained LM that generates additional
+    "soft-labeled" training data from
+    unlabeled examples.
+
+    This helps the model improve performance
+    in "few-shot" scenarios, such as NLP
+    benchmarks which have very few labeled
+    examples for fine-tuning.
+
+    Using PET, the researchers fine-tuned an
+    ALBERT Transformer model and achieved an
+    average score of 76.8 on the SuperGLUE
+    benchmark, compared to GPT-3's 71.8.
+
+    https://www.infoq.com/news/2020/10/training-exceeds-gpt3/
+
+    arxiv-summary  https://arxiv.org/abs/2001.07676
+
+    Abstract:
+
+    Some NLP tasks can be solved in a fully
+    unsupervised fashion by providing a
+    pretrained LM with "task descriptions" in
+    NL (e.g., Radford et al., 2019). While
+    this approach underperforms its supervised
+    counterpart, we show in this work that the
+    two ideas can be combined: We introduce
+    Pattern-Exploiting Training (PET), a semi-
+    supervised training procedure that
+    reformulates input examples as cloze-style
+    phrases to help LMs understand a given
+    task. These phrases are then used to
+    assign soft labels to a large set of
+    unlabeled examples. Finally, regular
+    supervised training is performed on the
+    resulting training set. For several tasks
+    and languages, PET outperforms both
+    supervised training and unsupervised
+    approaches in low-resource settings by a
+    large margin. 
+
+RAKE
+Rapid Automatic Keyword Extraction
+    [keyword extraction algorithm]
+
+    v +/"# Implementation of RAKE - Rapid Automatic Keyword Extraction algorithm" "$MYGIT/zelandiya/RAKE-tutorial/rake.py"
+
+    https://github.com/zelandiya/RAKE-tutorial
+
+    Based on the observations that keywords
+    frequently contain multiple words with
+    standard punctuation or stop words or we
+    can say function words (and, of,
+    the, etc.) with minimum lexical meaning.
+
+    http://webcache.googleusercontent.com/search?q=cache:https://medium.com/datadriveninvestor/rake-rapid-automatic-keyword-extraction-algorithm-f4ec17b2886c
+
+CC
+Coordinating conjunction
+    A word that joins two elements of equal
+    grammatical rank and syntactic importance.
+    
+    They can join two verbs, two nouns, two
+    adjectives, two phrases, or two
+    independent clauses.
+    
+    The seven coordinating conjunctions are
+    for, and, nor, but, or, yet, and so.
+
+CD
+Cardinal number
+
+DT
+Determiner
+
+EX
+Existential there
+
+FW
+Foreign word
+
+IN
+    Preposition or subordinating conjunction
+
+JJ
+Adjective
+
+JJR
+    Adjective, comparative
+
+JJS
+    Adjective, superlative
+
+LS
+    List item marker
+
+MD
+    Modal
+
+NN
+    Noun, singular or mass
+
+NNS
+    Noun, plural
+
+NNP
+    Proper noun, singular
+
+NNPS
+    Proper noun, plural
+
+PDT
+Predeterminer
+
+POS
+Possessive ending
+
+PRP
+Personal pronoun
+
+PRP$
+Possessive pronoun
+
+RB
+Adverb
+
+RBR
+    Adverb, comparative
+
+RBS
+    Adverb, superlative
+
+RP
+    Particle
+
+SYM
+    Symbol
+
+TO
+    to
+
+UH
+    Interjection
+
+VB
+    Verb, base form
+
+VBD
+    Verb, past tense
+
+VBG
+    Verb, gerund or present participle
+
+VBN
+    Verb, past participle
+
+VBP
+    Verb, non-3rd person singular present
+
+VBZ
+    Verb, 3rd person singular present
+
+WDT
+Wh-determiner
+
+WP
+Wh-pronoun
+
+WP$
+Possessive wh-pronoun
+
+WRB
+    Wh-adverb
+
+ADV
+    [spacy]
+
+PART
+    [spacy]
+
+VERB
+    [spacy]
+
+DET
+    [spacy]
+
+NOUN
+    [spacy]
+
+out-of-vocabulary
+OOV
+    A limitation of word embeddings are that,
+    they are learned by the NL Model
+    (word2vec, GloVe and the like) and
+    therefore words must have been seen in the
+    training data before, in order to have an
+    embedding.
+
+    There are ways to handle OOV words and
+    create embeddings for them.
+
+    https://medium.com/@shabeelkandi/handling-out-of-vocabulary-words-in-natural-language-processing-based-on-context-4bbba16214d5
+
+    https://medium.com/@makcedward/how-subword-helps-on-your-nlp-model-83dd1b836f46
+
+polar word
+opinion word
+    A word with a sentiment orientation.
+
+sentiment lexicon
+    Contains sentiment values.
+
+    A collection of words (also known as polar
+    or opinion words) associated with their
+    sentiment orientation, that is, positive
+    or negative.
+
+    Examples of positive sentiment words are
+    wonderful, beautiful, and amazing.
+
+Lexical
+    Relating to the words or vocabulary of a
+    language.
+
+Lexical Database
+    Possible uses:
+    - Groups words into sets of synonyms.
+    - Records a number of relations among the
+      synsets or their members.
+
+WordNet
+    A lexical database.
+
+synset
+    A set of synonyms.
+
+tokenizer
+    Segment into tokens.
+
+tagger
+    Assign part-of-speech tags.
+
+parser
+    Assign dependency labels.
+
+textcat
+    Assign document labels.
+
+sentiment
+sentiment analysis
+opinion mining
+emotion AI
+    A sub-field of NLP that tries to identify
+    and extract opinions within a given text
+    across blogs, reviews, social media,
+    forums, news etc.
+
+Systemic Functional Linguistics
+SFL
+
+linguistic appraisal analysis
+appraisal
+    [#SFL]
+
+    Refers to the ways that writers or
+    speakers express approval or disapproval
+    for things, people, behaviour or ideas.
+    
+    Language users build relationships with
+    their interlocutors by expressing such
+    positions.
+
+name alias
+synoname
+    'synonames' is a library.
+
+    https://github.com/alephdata/synonames
+
+    It generates aliases for human names
+    across cultural environments.
+    
+    Names often have different spellings in
+    different languages and cultures - for
+    example, Alexander can also be Alexandr or
+    Oleksandr.
+    
+    This repository reads a data dump from
+    Wikidata to filter out every human name
+    from every language edition of Wikipedia
+    and map them across language editions.
+    
+Part-of-speech
+POS
+Part-of-speech Tagging
+POS Tagging
+    Assigning word types to tokens, like verb
+    or noun.
+
+model-tuning
+fine-tuning
+    [#NLP]
+
+    Take a pre-trained model and update the
+    weights for the new domain; typically only
+    retraining that few layers and/or using
+    lower learning rates.
+
+    "Retrain FastText model with our domain
+    specific vocabulary."
+
+    https://www.gwern.net/GPT-3#finetuning
+
+    To help a language model like GPT-3
+    perform more specialized tasks you can
+    train it with additional data (like a
+    programming language, domain specific
+    terminology or special classifications.)
+
+Classification
+Sequence Classification
+Text Classification
+    Subtasks:
+    - Automated Essay Scoring
+    - Age Suitability Prediction
+    - Natural Language Inference
+    - Paraphrase Identification
+    - Review Scoring
+    - Semantic Textual Similarity
+    - Sentence Embedding
+    - Sentiment Analysis
+    - Zero-shot Topic Classification
+
+Sequence Tagging
+    [task]
+
+    Use "Bidirectional LSTM-CRF".
+
+    Subtasks:
+    
+    - Contextualized Embedding
+    - Dependency Parsing
+    - Fill-in-the-blank
+    - Machine Reading Comprehension
+    - Named Entity Recognition
+    - Part-of-Speech Tagging
+    - Semantic Role Labeling
+
+Sequance to sequance
+Seq2Seq
+    [model]
+    [task]
+
+    Traditional machine translation is
+    basically based on Seq2Seq.
+    
+    Follows a classical encoder decoder
+    structure.
+
+    Divided into the encoder layer and the
+    decoder layer, and is composed of RNN or
+    RNN variants (LSTM, GRU, etc.).
+
+    Learns a mapping from an input text to an
+    output text.
+
+    egr seq2seq vs lstm
+
+    Three components,
+    - Encoder (LSTM),
+    - Decoder (LSTM), and
+    - Attention
+      Used to use recurrent layers.
+      Now attention is all you need.
+
+    Subtasks:
+    - Constituency Parsing
+    - Grammatical Error Correction
+    - Grapheme-to-Phoneme
+    - Phoneme-to-Grapheme
+    - Machine Translation
+    - Paraphrase Generation
+    - Question Generation
+    - Text Summarization
+    - Word Sense Disambiguation
+
+NLP Tasks
+    Misc subtasks:
+    - Automatic Speech Recognition
+    - Image Captioning
+    - Collocation
+    - Lemmatization
+    - Morphological Inflection
+    - Optical Character Recognition
+    - Speech Synthesis
+    - Tokenization
+    - Word Translation
+    - Word Embedding
+
+segment-level classification
+segment classification
+    Each segment will have one label, for
+    example, a classifier which categorises a
+    movie review as good or bad.
+
+    There is only one output label for the
+    entire input sequence.
+
+token-level classification
+token classification
+    Each token will be given a label, for
+    example a part-of-speech tagger will
+    classify each word as one particular part
+    of speech.
+
+    Each token (element in the sequence) will
+    have a corresponding label in the output.
+
+Latent Dirichlet allocation
+LDA
+    A generative statistical model that allows
+    sets of observations to be explained by
+    unobserved groups that explain why some
+    parts of the data are similar.
+    
+    For example, if observations are words
+    collected into documents, it posits that
+    each document is a mixture of a small
+    number of topics and that each word's
+    presence is attributable to one of the
+    document's topics.
+    
+    LDA is an example of a topic model and
+    belongs to the ML toolbox and in wider
+    sense to the artificial intelligence
+    toolbox.
+
+    [[https://www.youtube.com/watch?v=3mHy4OSyRf0][LDA Topic Models - YouTube]]
+
+topic modelling
+topic model
+    [NLP task]
+
+    A type of statistical model for
+    discovering the abstract "topics" that
+    occur in a collection of documents.
+    
+    Topic modeling is a frequently used text-
+    mining tool for discovery of hidden
+    semantic structures in a text body.
+
+embeddings
+    vim +/"vectors = np.load('dataset\/glove.6B.300d.npy')" "$MYGIT/mullikine/codenames/codenames.py"
+
+    'npy' files.
+
+context vector
+    [word vector embedding]
+
+    The hidden state from the last unit is
+    known as the 'context vector'.
+
+    This contains information about the input
+    sequence.
+
+    See "word vector":
+        vim +/"word vector" "$NOTES/glossary.txt"
+
+word vector
+word vector embedding
+    Obtained using two methods (both involving
+    Neural Networks):
+    - Skip Gram, and
+    - Common Bag Of Words (CBOW)
+
+    Limitations:
+    - they presume incorrectly that a word’s
+      meaning is relatively stable across
+      sentences.
+
+      Polysemy abounds, and we must beware of
+      massive differences in meaning for a
+      single word:
+        e.g.
+        - lit (an adjective that describes
+        something burning) and lit (an
+        abbreviation for literature); or get
+        (a verb for obtaining) and get (an
+        animal’s offspring).
+
+    The optimal dimensionality of word
+    embeddings is mostly task-dependent:
+    - a smaller dimensionality works better
+      for more syntactic tasks such as named
+      entity recognition or part-of-speech
+      (POS) tagging, while
+    - a larger dimensionality is more useful
+      for more semantic tasks such as
+      sentiment analysis.
+
+    Fixed-length vector representations.
+
+    Useful for document retrieval and word
+    sense disambiguation.
+
+    Motivated by four goals:
+    - Capture “similarity of use” among words
+      “car” is similar to “auto”, but not
+      similar to “hippopotamus”.
+    - Quickly find constituent objects
+      eg., documents that contain specified words.
+    - Generate context vectors automatically
+      from an unlabeled corpus.
+    - Use context vectors as input to standard
+      learning algorithms.
+
+    Lack, however, a natural way to represent
+    syntax, discourse, or logic.
+
+    Accommodating all these capabilities into
+    a “Grand Unified Representation” is, we
+    maintain, a prerequisite for solving the
+    most difficult problems in Artificial
+    Intelligence, including natural language
+    understanding.
+
+    The dot product of the CV for “car” with
+    CV’s of documents containing “car” to be
+    larger than the dot product of the CV for
+    “car”.
+
+distributed representations
+    A way of mapping or encoding information
+    to some physical medium such as a memory
+    or neural network.
+
+autoencoding models
+    See MLM
+
+autoregressive models
+    See CLM
+
+CLM
+causal language modeling
+    A pretraining task where the model reads
+    the texts in order and has to predict the
+    next word.
+    
+    It’s usually done by reading the whole
+    sentence but using a mask inside the model
+    to hide the future tokens at a certain
+    timestep.
+
+deep learning: 
+    Machine learning algorithms which uses
+    neural networks with several layers.
+
+MLM
+Masked language modeling
+    A pretraining task where the model sees a
+    corrupted version of the texts, usually
+    done by masking some tokens randomly, and
+    has to predict the original text.
+
+multimodal
+    A task that combines texts with another
+    kind of inputs (for instance images).
+
+NLG
+Natural language generation
+    All tasks related to generating text (for
+    instance talk with transformers,
+    translation).
+
+NLP
+Natural language processing
+    A generic way to say “deal with texts”.
+
+NLU
+Natural language understanding
+    All tasks related to understanding what is
+    in a text (for instance classifying the
+    whole text, individual words).
+
+pretrained model
+    A model that has been pretrained on some
+    data (for instance all of Wikipedia).
+    Pretraining methods involve a
+    self-supervised objective, which can be
+    reading the text and trying to predict the
+    next word (see CLM) or masking some words
+    and trying to predict them (see MLM).
+
+RNN
+Recurrent neural network
+    A type of model that uses a loop over a
+    layer to process texts.
+
+self-attention
+    Each element of the input finds out which
+    other elements of the input they should
+    attend to.
+
+self-attention layer
+    [#transformer]
+
+    A layer that helps the encoder look at
+    other words in the input sentence as it
+    encodes a specific word.
+
+seq2seq
+sequence-to-sequence
+    Models that generate a new sequence from
+    an input, like translation models, or
+    summarization models (such as Bart or T5).
+
+token
+    A part of a sentence, usually a word, but
+    can also be a subword (non-common words
+    are often split in subwords) or a
+    punctuation symbol.
+
+transformer
+    Self-attention based deep learning model
+    architecture.
+
+contrastive pre-training
+    Pre-training methods are becoming more and
+    more popular over the last few years and
+    have revolutionized NLP.
+    
+    The model starts off with contrastive pre-
+    training where image text pairs are
+    matched with the similarity from a batch
+    of images.
+    
+    This is done using an image encoder and a
+    text encoder.
+    
+    Contrastive pre-training attempts to learn
+    noise invariant sequence representations
+    which encourage consistency between the
+    learned representations and the original
+    sequence.
+    
+    They got the inspiration from VirTex which
+    is a pretraining approach using
+    semantically dense captions to learn
+    visual representations.
+    
+    This approach has been shown to surpass
+    other supervised approaches such as
+    classic high-end ImageNet networks.
+
+    See "contrastive learning".
+
+Text simplification
+    An operation used in NLP to modify,
+    enhance, classify or otherwise process an
+    existing corpus of human-readable text in
+    such a way that the grammar and structure
+    of the prose is greatly simplified, while
+    the underlying meaning and information
+    remains the same.
+    
+    Text simplification is an important area
+    of research, because natural human
+    languages ordinarily contain large
+    vocabularies and complex compound
+    constructions that are not easily
+    processed through automation.
+    
+    In terms of reducing language diversity,
+    semantic compression can be employed to
+    limit and simplify a set of words used in
+    given texts.
+
+language model
+LM
+statistical language model
+    Requires
+    - word embeddings
+
+    Provides
+    - Language modeling
+
+    Metrics
+    - Predict the next word in the sentence
+
+    Traning involves learning the likelihood
+    of occurrence of a word based on the
+    previous sequence of words used in the
+    text.
+
+    Can be operated at:
+    - character level,
+    - n-gram level,
+    - sentence level, or even
+    - paragraph level.
+
+    A probability distribution over sequences
+    of words.
+    
+    Given such a sequence, say of length m, it
+    assigns a probability to the whole
+    sequence.
+    
+    The language model provides context to
+    distinguish between words and phrases that
+    sound similar.
+
+    http://stephantul.github.io/python/pytorch/2020/09/18/fast_topk/
+
+    An LM is a statistical mechanism that
+    tries to predict a token, usually a word,
+    given some context.
+    
+    As a statistical mechanism, it thus
+    defines a probability distribution over a
+    fixed vocabulary V.
+    
+    The context is usually other tokens from
+    V, and usually consists of the preceding
+    tokens.
+    
+    So, at a given time-step, a LM produces a
+    vector of probabilities over the entire
+    vocabulary.
+    
+    Given the true targets, we can then assess
+    the quality of the LM by, for example,
+    calculating the cross entropy.
+
+position encoding
+    [#transformer]
+
+    https://kazemnejad.com/blog/transformer_architecture_positional_encoding/
+    
+activity recognition
+    NLG: The ability for a computer to
+    recognize what a user is doing, such as
+    typing on a keyboard, moving the mouse,
+    etc.
+
+adversarial planner
+    [#game theory]
+
+    https://arxiv.org/pdf/1601.06108
+
+adversarial planning
+    [#game theory]
+
+    https://arxiv.org/pdf/1601.06108
+
+agent communication language
+    Proposed by the Foundation for Intelligent
+    Physical Agents, is a proposed standard
+    language for agent communications.
+    
+    Knowledge Query and Manipulation Language
+    is another proposed standard.
+
+anomaly
+anomaly detection
+    [#data mining]
+
+    Referred to the identification of items or
+    events that do not conform to an expected
+    pattern or to other items present in a
+    dataset.
+    
+    Typically, these anomalous items have the
+    potential of getting translated into some
+    kind of problems such as structural
+    defects, errors or frauds.
+
+argument mining
+    [#NLP]
+
+    The goal of argument mining is the
+    automatic extraction and identification of
+    argumentative structures from NL text with
+    the aid of computer programs.
+
+argumentation
+
+
+attack planning
+
+
+author identification
+authorship identification
+    Identify authors from their writings.
+
+author name disambiguation
+    A type of disambiguation and record
+    linkage applied to the names of individual
+    people. The process could, for example,
+    distinguish individuals with the name
+    "John Smith".
+
+author recognition
+
+
+automated complexity analysis
+    https://arxiv.org/abs/1102.3129
+
+
+automated theorem proving
+
+
+automatic subject classification
+
+
+automatic text annotation
+
+
+c4isr
+
+
+causal relation extraction
+
+
+combinatory categorial grammar
+
+
+computational philology
+    http://martinweisser.org/publications/comp_phil.pdf
+
+    A newly emerging course of studies at
+    German universities.
+    
+    It combines aspects of ‘traditional’
+    teaching and research in Language and
+    Computing, Computer-Aided Language
+    Learning and multimedial presentation and
+    publishing of linguistic data.
+    
+    The following chapter will present an
+    overview as to which aspects of
+    information technology (IT) and
+    linguistics may be relevant in the design
+    of a course in Computational Philology,
+    and which problems may be expected in
+    teaching linguists about many aspects of
+    IT they may be somewhat unused to.
+    
+    The chapter is to a large extent based on
+    experiences from a course that has already
+    been taught at Chemnitz University of
+    Technology (TUC) in the summer semester
+    2005.
+
+concept extraction
+
+
+conditional planning
+
+
+conll
+
+
+content analysis
+
+
+content filtering
+
+
+controlled english to logic translation
+
+
+corporate memory
+
+
+cough recognition
+
+
+coughing recognition
+
+
+data privacy lab
+
+
+data scrubber
+
+
+deep learning
+
+
+definition extraction
+
+
+definitional question answering
+
+
+deidentification
+
+
+dialog act recognition
+
+
+discourse parsing
+
+
+document structure analysis
+
+
+dynamic epistemic logic
+
+
+email classification
+
+
+emotion detection
+
+
+emotion detection from audio
+
+
+entity classification
+
+
+entity recognition
+
+
+entity resolution
+
+
+event extraction
+
+
+example-based machine translation
+
+
+facebook client
+
+
+fact extraction
+
+
+general game playing
+
+
+general video game playing
+
+
+grammar correction
+
+
+grammar induction
+
+
+grammar learning
+
+
+grammatical inference
+
+
+hypothesis generation
+
+
+inductive logic programming
+
+
+inductive programming
+
+
+intelligent agent
+
+
+intelligent software agent
+
+
+intent analysis
+
+
+intention extraction
+
+
+iso 24617-2
+
+
+kbc
+
+
+kbp
+
+
+knowledge-based machine translation
+
+
+knowledge base acceleration
+
+
+knowledge discovery
+
+
+link detection
+
+
+machine reading
+
+
+machine translation
+
+
+mathematical knowledge management
+
+
+medical device access
+
+
+multiagent planning
+
+
+name resolution
+
+
+named entity classification
+
+
+named entity recognition
+
+
+natural language understanding
+
+
+neural network text
+
+
+news filtering
+
+
+object recognition
+
+
+ontology learning
+
+
+paragraph splitter
+
+
+pattern mining
+
+
+pddl
+
+
+penn treebank tagger
+
+
+philology
+
+
+plan recognition
+
+
+planning
+
+
+practical reasoning
+
+
+prediction market
+
+
+program understanding
+
+
+prolog
+
+
+prolog machine translation
+
+
+prolog translation memory
+
+
+psychoanalysis
+
+
+puccini planner
+
+
+question answering
+
+
+quote extraction
+
+
+recognizing textual entailment
+
+
+recommendation engine
+
+
+recommender system
+
+
+record linkage
+
+
+relation extraction
+
+
+resume analysis
+
+
+resume information extraction
+
+
+rule-based machine translation
+
+
+satisfiability modulo theories
+
+
+semantic annotation
+    The process of tagging documents with
+    relevant concepts.
+    
+    The documents are enriched with metadata:
+    references that link the content to
+    concepts, described in a knowledge graph.
+    
+    This makes unstructured content easier to
+    find, interpret and reuse.
+
+
+semantic labelling
+
+
+semantic markup
+
+
+semantic role labelling
+
+
+semantic text annotation
+
+
+softbot
+
+
+software agent
+
+
+statistical trend detection
+
+
+story generation
+
+
+story writing software
+
+
+streaming text clustering
+
+
+teamcore
+
+
+text analysis
+
+
+text clustering
+
+
+text extraction
+
+
+text mining
+
+
+text summarization
+
+
+time management add adhd
+
+
+topic detection and tracking
+
+
+topic gisting
+
+
+translation memory
+
+
+trend detection
+
+
+virtual agent
+
+
+virtual agents
+
+anaphora
+    The use of an expression whose
+    interpretation depends upon another
+    expression in context (its antecedent or
+    postcedent).
+    
+    In a narrower sense, anaphora is the use
+    of an expression that depends specifically
+    upon an antecedent expression and thus is
+    contrasted with cataphora, which is the
+    use of an expression that depends upon a
+    postcedent expression.
+    
+    The anaphoric (referring) term is called
+    an anaphor.
+    
+    For example, in the sentence Sally
+    arrived, but nobody saw her, the pronoun
+    her is an anaphor, referring back to the
+    antecedent Sally.
+
+anaphora resolution
+    There are many theories that attempt to
+    prove how anaphors are related and trace
+    back to their antecedents, with centering
+    theory (Grosz, Joshi, and Weinstein 1983)
+    being one of them.
+    
+    Taking the computational theory of mind
+    view of language, centering theory gives a
+    computational analysis of underlying
+    antecedents.
+    
+    In their original theory, Grosz, Joshi, &
+    Weinstein (1983) propose that some
+    discourse entities in utterances are more
+    "central" than others, and this degree of
+    centrality imposes constraints on what can
+    be the antecedent.
+
+    In the theory, there are different types
+    of centers: forward facing, backwards
+    facing, and preferred.
+
+    Forward facing centers
+        A ranked list of discourse entities in
+        an utterance. The ranking is debated,
+        some focusing on theta relations
+        (Yıldırım et al. 2004) and some
+        providing definitive lists.
+
+    Backwards facing center
+        The highest ranked discourse entity in the previous utterance.
+
+    Preferred center
+        The highest ranked discourse entity in
+        the previous utterance realised in the
+        current utterance.
+
+word sense disambiguation
+word-sense disambiguation
+WSD
+    An open problem in computational
+    linguistics concerned with identifying
+    which sense of a word is used in a
+    sentence.
+    
+    The solution to this issue impacts other
+    computer-related writing, such as
+    discourse, improving relevance of search
+    engines, anaphora resolution, coherence,
+    and inference.
+
+word sense induction
+word-sense induction
+discrimination
+    An open problem of NLP, which concerns
+    the automatic identification of the
+    senses of a word.
