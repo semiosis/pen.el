@@ -181,7 +181,7 @@ https://github.com/semiosis/prompts/
 [[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
 
 **** Glossaries
-- http://github.com/mullikine/notes/blob/master/ws/prompt-engineering/glossary.txt
+- 
 
 * Using =pen=
 https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
