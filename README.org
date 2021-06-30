@@ -117,7 +117,10 @@ https://github.com/semiosis/prompts/
 - OpenAI API (=GPT-4=)
   - https://beta.openai.com/
 
-** Testing GPT-3 prompts without a key
+** Contributors
+Please make an issue to this repository to ask for membership.
+
+*** Testing GPT-3 prompts without a key
 Pushing your own branch will run tests.
 
 https://github.com/semiosis/prompts
@@ -126,18 +129,18 @@ Output will go here:
 
 https://github.com/semiosis/prompt-tests
 
+*** Any missing functions available here
+https://github.com/semiosis/shane-emacs-config-dump
+
+Please ask for membership to the org to get
+access to this.
+
 ** Requirements
 *** =openai= =pip= library and command
 #+BEGIN_SRC sh -n :sps bash :async :results none
   pip3 install openai
 #+END_SRC
 *** =openai= API key
-
-** Any missing functions available here
-https://github.com/semiosis/shane-emacs-config-dump
-
-Please ask for membership to the org to get
-access to this.
 
 ** Usage
 *** Enable =prompt-engineerer-mode= globally (on all buffers)
