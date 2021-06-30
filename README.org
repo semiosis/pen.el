@@ -93,11 +93,13 @@ https://github.com/semiosis/prompts/
 
 ** Demonstration
 
+https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
+
 # [![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/14)
 
-#+BEGIN_EXPORT html
-<a title="asciinema recording" href="https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi.svg" /></a>
-#+END_EXPORT
+# #+BEGIN_EXPORT html
+# <a title="asciinema recording" href="https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi.svg" /></a>
+# #+END_EXPORT
 
 ** Works with
 - OpenAI API (=GPT-3=)
