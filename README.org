@@ -178,6 +178,19 @@ https://github.com/semiosis/prompts/
 
 ** Appendix
 *** Prompt engineering
+**** Learning material
+- https://generative.ink/posts/methods-of-prompt-programming/
+- https://mullikine.github.io/posts/creating-a-playground-for-gpt-3-in-emacs/
+**** Examples of usage
+- https://mullikine.github.io/posts/gpt-3-assistants-for-emacs-modes/
+- https://mullikine.github.io/posts/nlsh-natural-language-shell/
+- https://mullikine.github.io/posts/translating-with-gpt-3-and-emacs/
+- https://mullikine.github.io/posts/generating-pickup-lines-with-gpt-3/
+- https://mullikine.github.io/posts/autocompleting-anything-with-gpt-3-in-emacs/
+- https://mullikine.github.io/posts/context-menus-based-on-gpt-3/
+- https://mullikine.github.io/posts/explainshell-with-gpt-3/
+- https://mullikine.github.io/tags/gpt/
+
 [[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
 
 **** Glossaries
