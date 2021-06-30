@@ -177,6 +177,11 @@ https://github.com/semiosis/prompts/
   - [-] Use built-in elisp functions
 
 ** Appendix
+*** My emacs config
+https://github.com/semiosis/shane-emacs-config-dump
+
+There may be my own functions I have used in the =pen.el= package here.
+
 *** Reading material
 [[https://www.google.com/search?q=prompt+engineering+gpt][Prompt Engineering]]
 
