@@ -1,2 +1,8 @@
 ** NLP pipelines
 - Spacy pipeline generation
+
+** Ontology connection
+- Datomic Cloud
+
+** Examplary DSL generation
+https://github.com/semiosis/examplary/
