@@ -118,10 +118,7 @@ Output will go here:
 https://github.com/semiosis/prompt-tests
 
 *** Any missing functions available here
-https://github.com/semiosis/shane-emacs-config-dump
-
-Please ask for membership to the org to get
-access to this.
+https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 
 ** Requirements
 *** =openai= =pip= library and command
