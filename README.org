@@ -171,6 +171,12 @@ https://github.com/semiosis/prompts/
 **** Learning material
 - https://generative.ink/posts/methods-of-prompt-programming/
 - https://mullikine.github.io/posts/creating-a-playground-for-gpt-3-in-emacs/
+
+**** Direction
+This project is moving to being an editing fractal/lens for GPT.
+
+- https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/
+
 **** Examples of usage
 - https://mullikine.github.io/posts/gpt-3-assistants-for-emacs-modes/
 - https://mullikine.github.io/posts/nlsh-natural-language-shell/
