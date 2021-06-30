@@ -1,4 +1,4 @@
-* =pen.el= : Paint in prose
+* ⊙ =pen.el= : Paint in prose
 ** _Prompt engineering_ in emacs
 =pen.el= facilitates the creation,
 development, discovery and usage of prompts to
