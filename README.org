@@ -182,6 +182,7 @@ This is the most important part of the editor.
 http://github.com/semiosis/pen.el/blob/master/imaginary.el
 
 **** Examples of usage
+- https://semiosis.github.io/posts/gpt-3-for-building-mind-maps-with-an-ai-tutor-for-any-topic/
 - https://mullikine.github.io/posts/gpt-3-assistants-for-emacs-modes/
 - https://mullikine.github.io/posts/nlsh-natural-language-shell/
 - https://mullikine.github.io/posts/translating-with-gpt-3-and-emacs/
