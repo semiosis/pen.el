@@ -269,4 +269,8 @@ This appears to strip ansi codes.
               (call-interactively 'cua-exchange-point-and-mark)))))))
 (defalias 'filter-selection 'filter-selected-region-through-function)
 
+(defmacro ntimes (n &rest body)
+  (cons 'progn (flatten-once
+                (cl-loop for i from 1 to n collect body))))
+
 (provide 'pen-support)
