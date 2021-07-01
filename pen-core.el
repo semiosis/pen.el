@@ -11,15 +11,7 @@
     (beginning-of-line)
     (point)))
 
-(defun clean-repl (&optional input)
-  (interactive (list (pen-preceding-text-line)))
 
-  (let ((ret
-         (snc "clean-repl" input)))
-    (if (interactive-p)
-        (xc ret)
-      ret)))
-(defalias 'clean-prompt 'clean-repl)
 
 (defun pen-preceding-text-line ()
   (cond
