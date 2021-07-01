@@ -40,7 +40,6 @@ NEEDLE is the search string."
               " | cat"))
             nil))))))
 
-
 (defmacro gen-counsel-function (cmd action)
   ""
   (let ((funsym (intern (concat "counsel-generated-" (slugify cmd))))
@@ -71,19 +70,18 @@ prompt additionally for EXTRA-AG-ARGS."
                                     (counsel--git-root)
                                     default-directory)))
 
-         (ivy-read (concat ,cmd ": ")
-                   ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
-                   (gen-counsel-generator-function ,cmd)
-                   :initial-input initial-input
-                   :dynamic-collection t
-                   :keymap counsel-ag-map
-                   :history histvar
-                   :action ,action
-                   :require-match t
-                   :caller
-                   (or caller ',funsym)
-                   ;; (or caller 'counsel-ag)
-                   )))))
+         (ivy-read
+          (concat ,cmd ": ")
+          (gen-counsel-generator-function ,cmd)
+          :initial-input initial-input
+          :dynamic-collection t
+          :keymap counsel-ag-map
+          :history histvar
+          :action ,action
+          :require-match t
+          :caller
+          (or caller ',funsym)
+          )))))
 
 
 (defun fz-pen-counsel ()
