@@ -1,6 +1,7 @@
 ;;; pen.el --- Prompt Engineering functions
 
 (require 'pen-support)
+(require 'dash)
 
 (defvar pen.el-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
