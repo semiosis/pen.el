@@ -206,8 +206,8 @@ This appears to strip ansi codes.
 (defun glob (pattern &optional dir)
   (split-string (cl-sn (concat "glob -b " (q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
 
-(defun my-new-buffer-frame (&optional contents bufname mode nodisplay)
-  "Create a new frame with a new empty buffer."
+(defun new-buffer-from-string (&optional contents bufname mode nodisplay)
+  "Create a new untitled buffer from a string."
   (interactive)
   (if (not bufname)
       (setq bufname "*untitled*"))
@@ -220,8 +220,6 @@ This appears to strip ansi codes.
       (beginning-of-buffer)
       (if mode (call-function mode)))
     buffer))
-(defalias 'new-buffer-from-string 'my-new-buffer-frame)
-(defalias 'nbfs 'my-new-buffer-frame)
 (defun new-buffer-from-o (o)
   (new-buffer-from-string
    (if (stringp o)
