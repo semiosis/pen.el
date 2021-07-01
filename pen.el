@@ -8,6 +8,7 @@
 (require 'pp)
 (require 'cl-macs)
 (require 'helm)
+(require 'company)
 
 (defvar pen.el-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
@@ -212,7 +213,6 @@ Function names are prefixed with pen-pf- for easy searching"
 
 (defvar my-completion-engine 'company-pen-filetype)
 
-(require 'company)
 (defun my-completion-at-point ()
   (interactive)
   (call-interactively 'completion-at-point)
@@ -220,9 +220,7 @@ Function names are prefixed with pen-pf- for easy searching"
       (call-interactively 'company-pen-filetype)
     (call-interactively 'completion-at-point)))
 
-;; (define-key global-map (kbd "M-1") #'my-completion-at-point)
 (define-key global-map (kbd "M-1") #'company-pen-filetype)
-
 
 (defun pen-complete-long (preceding-text &optional tv)
   (interactive (list (str (buffer-substring (point) (max 1 (- (point) 1000))))
