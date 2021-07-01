@@ -113,7 +113,7 @@ This appears to strip ansi codes.
     (let ((exps
            (sh-construct-exports
             (-filter 'identity
-                     (list (list "PATH" (concat "$SCRIPTS:" (getenv "PATH")))
+                     (list (list "PATH" (getenv "PATH"))
                            (if (and (variable-p 'sh-update) (eval 'sh-update))
                                (list "UPDATE" "y")))))))
       (setq final_cmd (concat exps "; ( cd " (e/q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))
