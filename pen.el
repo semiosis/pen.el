@@ -221,7 +221,7 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-ivy.el
 (require 'pen-ivy)
 
-(my-load "$MYGIT/semiosis/pen.el/pen-company.el")
+;; http://github.com/semiosis/pen.el/blob/master/pen-company.el
 (require 'pen-company)
 
 (my-load "$MYGIT/semiosis/pen.el/pen-library.el")
