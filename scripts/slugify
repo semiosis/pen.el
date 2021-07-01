@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -keep-slashes|-ks) {
+        KEEP_SLASHES=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+good_chars="a-zA-Z0-9"
+
+if test "$KEEP_SLASHES" = "y"; then
+    good_chars+="/"
+fi
+
+iconv -t ascii//TRANSLIT | sed -r "s/[^$good_chars]+/-/g" | sed -r "s/^-+\|-+$//g" | tr A-Z a-z
