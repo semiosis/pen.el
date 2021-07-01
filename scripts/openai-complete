@@ -1,8 +1,6 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
-
 first_arg="$1"
 
 stdin_exists() {
@@ -79,8 +77,3 @@ prompt_bytes="$(cat "$prompt_fp" | wc -c)"
 response_bytes="$(cat "$response_fp" | wc -c)"
 
 tail -c +$((prompt_bytes + 2)) "$response_fp"
-
-# echo "$prompt_fp"
-# echo "$response_fp"
-
-# pl "$SHCODE" | pavs
