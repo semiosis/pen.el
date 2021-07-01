@@ -182,4 +182,7 @@ This appears to strip ansi codes.
    (use-region-p)
    (evil-visual-state-p)))
 
+(defun glob (pattern &optional dir)
+  (split-string (cl-sn (concat "glob -b " (q pattern) " 2>/dev/null") :stdin nil :dir (umn dir) :chomp t) "\n" ))
+
 (provide 'pen-support)
