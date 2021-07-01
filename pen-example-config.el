@@ -10,3 +10,10 @@
 
 (require 'pen)
 (pen 1)
+
+(defalias 'camille-complete 'pen-run-prompt-function)
+(define-key global-map (kbd "H-TAB r") 'pen-run-prompt-function)
+
+;; Camille-complete (because I press SPC to replace
+(define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
+(define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
