@@ -137,6 +137,7 @@ This appears to strip ansi codes.
     (if b_output-return-code
         (setq output (str b_exit_code)))
     output))
+(defalias 'sn 'sh-notty)
 
 (defun snc (cmd &optional stdin)
   "sn chomp"
