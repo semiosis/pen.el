@@ -1,12 +1,9 @@
 #!/bin/bash
 
-BASHGLOB=y
-if test "$BASHGLOB" = "y"; then
-    shopt -s nullglob
-    shopt -s globstar
+shopt -s nullglob
+shopt -s globstar
 
-    cmd="eval printf -- \"%s\\\\\\n\" $(aqf "$1")"
-fi
+cmd="eval printf -- \"%s\\\\\\n\" $(aqf "$1")"
 
 out="$(eval "$cmd")"
 
