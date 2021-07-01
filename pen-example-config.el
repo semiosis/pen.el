@@ -54,3 +54,6 @@
 ;; Camille-complete (because I press SPC to replace
 (define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
 (define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
+(define-key global-map (kbd "M-1") #'company-pen-filetype)
+(define-key global-map (kbd "H-P") 'pen-complete-long)
+(define-key global-map (kbd "H-TAB g") 'pen-generate-prompt-functions)

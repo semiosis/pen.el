@@ -169,13 +169,9 @@ Function names are prefixed with pen-pf- for easy searching"
                                              (replace-region result)))
                                          result))))))
                 (message (concat "pen-mode: Loaded prompt function " func-name)))))))
+
+;; Initial load of prompt functions
 (pen-generate-prompt-functions)
-
-
-;; (define-key global-map (kbd "H-TAB") nil)
-(define-key global-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
-
-
 
 (defun pen-filter-with-prompt-function ()
   (interactive)
@@ -209,8 +205,6 @@ Function names are prefixed with pen-pf- for easy searching"
       (call-interactively 'company-pen-filetype)
     (call-interactively 'completion-at-point)))
 
-(define-key global-map (kbd "M-1") #'company-pen-filetype)
-
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
 May use to generate code from comments."
@@ -221,21 +215,6 @@ May use to generate code from comments."
         (etv response)
       response)))
 
-;; This should have many options and return a list of completions
-;; It should be used in company-mode
-;; j_company-pen-filetype
-(defun pen-company-complete-generate (preceding-text))
-
-
-(defun pen-completions-line (preceding-text &optional tv)
-  (interactive (list (pen-preceding-text-line)
-                     t))
-  (let* ((response (pen-pf-generic-file-type-completion (detect-language) preceding-text)))
-    (if tv
-        (tv response)
-      response)))
-
-(define-key global-map (kbd "H-P") 'pen-complete-long)
 
 (my-load "$MYGIT/semiosis/pen.el/pen-core.el")
 (require 'pen-core)
