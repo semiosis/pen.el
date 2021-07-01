@@ -11,8 +11,6 @@
     (beginning-of-line)
     (point)))
 
-
-
 (defun pen-preceding-text-line ()
   (cond
    (major-mode-p 'term-mode))
