@@ -59,6 +59,29 @@ Takes into account the current file name."
 (defalias 'e/q 'e/escape-string)
 (defalias 'q 'e/escape-string)
 
+(defun e/chomp (str)
+  "Chomp (remove tailing newline from) STR."
+  (replace-regexp-in-string "\n\\'" "" str))
+(defalias 'chomp 'e/chomp)
+
+(defun get-string-from-file (filePath)
+  "Return filePath's file content."
+  (with-temp-buffer
+    (insert-file-contents filePath)
+    (buffer-string)))
+
+(defun str (thing)
+  "Converts object or string to an unformatted string."
+
+  (if thing
+      (if (stringp thing)
+          (substring-no-properties thing)
+        (progn
+          (setq thing (format "%s" thing))
+          (set-text-properties 0 (length thing) nil thing)
+          thing))
+    ""))
+
 (defun sh-notty (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
 This appears to strip ansi codes.
@@ -94,8 +117,6 @@ This appears to strip ansi codes.
                            (if (and (variable-p 'sh-update) (eval 'sh-update))
                                (list "UPDATE" "y")))))))
       (setq final_cmd (concat exps "; ( cd " (e/q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))
-
-    (message-no-echo "%s" (concat "sh-notty: " (mnm final_cmd)))
 
     (if detach
         (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (e/q final_cmd) " &")))
