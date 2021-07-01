@@ -163,9 +163,6 @@ Function names are prefixed with pen-pf- for easy searching"
                 (message (concat "pen-mode: Loaded prompt function " func-name)))))))
 (pen-generate-prompt-functions)
 
-(define-derived-mode prompt-description-mode yaml-mode "Prompt"
-  "Prompt description mode")
-
 
 ;; (define-key global-map (kbd "H-TAB") nil)
 (define-key global-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
