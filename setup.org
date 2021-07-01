@@ -9,3 +9,6 @@ https://github.com/perfectayush/emacs-yamlmod
         (add-to-list 'load-path "/home/shane/source/git/config/emacs/manual-packages/emacs-yamlmod")
         (require 'yamlmod)))
 #+END_SRC
+
+** Add scripts to PATH
+https://github.com/semiosis/pen.el/tree/master/scripts
