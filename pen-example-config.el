@@ -57,3 +57,4 @@
 (define-key global-map (kbd "M-1") #'company-pen-filetype)
 (define-key global-map (kbd "H-P") 'pen-complete-long)
 (define-key global-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
+(define-key my-mode-map (kbd "H-s") 'fz-pen-counsel)
