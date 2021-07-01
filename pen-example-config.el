@@ -24,6 +24,7 @@
                 (add-event-modifier "H-" e))))))
 
 ;; These bindings will allow you to use Space Cadet keyboard modifiers
+;; https://mullikine.github.io/posts/add-super-and-hyper-to-terminal-emacs/
 ;; C-M-6 = Super (s-)
 ;; C-M-\ = Hyper (H-)
 ;; Pen.el will make use of H-
