@@ -3,7 +3,7 @@
 shopt -s nullglob
 shopt -s globstar
 
-cmd="eval printf -- \"%s\\\\\\n\" $(aqf "$1")"
+cmd="eval printf -- \"%s\\\\\\n\" $(cmd "$1")"
 
 out="$(eval "$cmd")"
 
