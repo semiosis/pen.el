@@ -128,4 +128,14 @@ This appears to strip ansi codes.
         (substring slug 0 (- length 1))
       slug)))
 
+(defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props)
+  (cl-fz
+   list
+   :initial-input input
+   :full-frame b_full-frame
+   :prompt prompt
+   :must-match must-match
+   :select-only-match select-only-match
+   :add-props add-props))
+
 (provide 'pen-support)
