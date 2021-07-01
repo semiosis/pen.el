@@ -10,6 +10,8 @@
 (require 'helm)
 (require 'company)
 
+(defvar my-completion-engine 'company-pen-filetype)
+
 (defvar pen.el-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
 ;; (makunbound 'pen.el)
@@ -21,8 +23,6 @@
   :init-value t
   :lighter " pen"
   :keymap pen.el-map)
-
-(pen 1)
 
 (defcustom pen-prompt-directory ""
   "Directory where .prompt files are located"
@@ -210,8 +210,6 @@ Function names are prefixed with pen-pf- for easy searching"
     (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
             res)))
 
-
-(defvar my-completion-engine 'company-pen-filetype)
 
 (defun my-completion-at-point ()
   (interactive)

@@ -1,3 +1,5 @@
+;; Ensure that you have yamlmod
+
 ;; https://github.com/perfectayush/emacs-yamlmod
 (if module-file-suffix
     (progn
@@ -5,3 +7,6 @@
       (add-to-list 'load-path "/home/shane/source/git/config/emacs/manual-packages/emacs-yamlmod")
       (require 'yamlmod)
       (require 'yamlmod-wrapper)))
+
+(require 'pen)
+(pen 1)

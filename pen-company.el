@@ -7,7 +7,6 @@
   (or (company-pen--grab-symbol)
       'stop))
 
-
 (defun company-pen-filetype (command &optional arg &rest ignored)
   (interactive (list 'is-interactive))
   (cl-case command
