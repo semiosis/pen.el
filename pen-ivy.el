@@ -1,8 +1,3 @@
-;; This is for multiline selection of candidates
-;; I need a dynamic collection for openai completion results
-
-;; j:counsel-ag-function
-
 (defun my-counsel--format-command (cmd extra-args needle)
   "Construct a complete `counsel-ag-command' as a string.
 EXTRA-ARGS is a string of the additional arguments.
@@ -22,7 +17,7 @@ NEEDLE is the search string."
 ;; In this case, it may be the first argument to a gpt3 prompt function
 (defmacro gen-counsel-generator-function (cmd)
   ""
-  (let ((funsym (str2sym (concat "counsel-generator-function-" (slugify cmd))))
+  (let ((funsym (intern (concat "counsel-generator-function-" (slugify cmd))))
         (cmdstr (concat cmd " %s")))
     `(defun ,funsym (string)
        ,(concat "Run " cmd " in the current directory with STRING argument. Do this to generate candidates for ivy.")
@@ -42,24 +37,12 @@ NEEDLE is the search string."
                                      " | cat"))
             nil))))))
 
-;; (never
-;;  (ivy-read "testing:"
-;;            (counsel-fz-function-openai-complete-very-witty-pick-up-lines-prompt "tea")
-;;            ;; :initial-input initial-input
-;;            :dynamic-collection t
-;;            :keymap counsel-ag-map
-;;            ;; :history histvar
-;;            :action 'etv
-;;            :require-match t
-;;            ;; :caller (or caller 'counsel-ag)
-;;            ))
 
 (defmacro gen-counsel-function (cmd action)
   ""
-  (let ((funsym (str2sym (concat "counsel-generated-" (slugify cmd))))
-        (histvarsym (str2sym (concat "counsel-generated-" (slugify cmd) "-histvar")))
+  (let ((funsym (intern (concat "counsel-generated-" (slugify cmd))))
+        (histvarsym (intern (concat "counsel-generated-" (slugify cmd) "-histvar")))
         (cmdstr (concat cmd " %s")))
-    (message (concat "hist sym: " (sym2str histvarsym)))
     (eval `(defvar ,histvarsym nil))
     `(cl-defun ,funsym (&optional initial-input initial-directory extra-ag-args ag-prompt
                                   &key caller &key histvar)
@@ -97,22 +80,7 @@ prompt additionally for EXTRA-AG-ARGS."
                    :caller
                    (or caller ',funsym)
                    ;; (or caller 'counsel-ag)
-                   )
-
-         ;; Sadly, this doesn't do anything
-         ;; (completing-read (concat ,cmd ": ")
-         ;;                  ;; ,(macro-expand `(gen-counsel-generator-function ,,cmd))
-         ;;                  (gen-counsel-generator-function ,cmd)
-         ;;                  nil
-         ;;                  t
-         ;;                  initial-input
-         ;;                  histvar)
-         ))))
-
-;; (gen-counsel-generator-function "counsel-ag-cmd")
-;; (gen-counsel-function "counsel-ag-cmd" 'etv)
-;; (gen-counsel-generator-function "openai-complete pick-up-line.prompt")
-;; (gen-counsel-generator-function "openai-complete pick-up-line.prompt")
+                   )))))
 
 
 (defun fz-pen-counsel ()

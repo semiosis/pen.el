@@ -215,11 +215,10 @@ May use to generate code from comments."
         (etv response)
       response)))
 
-
-(my-load "$MYGIT/semiosis/pen.el/pen-core.el")
+;; http://github.com/semiosis/pen.el/blob/master/pen-core.el
 (require 'pen-core)
 
-(my-load "$MYGIT/semiosis/pen.el/pen-ivy.el")
+;; http://github.com/semiosis/pen.el/blob/master/pen-ivy.el
 (require 'pen-ivy)
 
 (my-load "$MYGIT/semiosis/pen.el/pen-company.el")
