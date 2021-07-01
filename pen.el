@@ -187,7 +187,6 @@ Function names are prefixed with pen-pf- for easy searching"
   (interactive)
   (let* ((sh-update (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
          (f (fz pen-prompt-functions nil nil "pen run: ")))
-    ;; (ns (concat "sh-update: " (str sh-update)))
     (if f
         (call-interactively (intern f)))))
 

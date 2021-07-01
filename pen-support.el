@@ -244,4 +244,24 @@ This appears to strip ansi codes.
 (defun flatten-once (list-of-lists)
   (apply #'append list-of-lists))
 
+(defun filter-selected-region-through-function (fun)
+  (let* ((start (if (selected) (region-beginning) (point-min)))
+         (end (if (selected) (region-end) (point-max)))
+         (doreverse (and (selected) (< (point) (mark))))
+         (removed (delete-and-extract-region start end))
+         (replacement (str (ptw fun (str removed))))
+         (replacement-len (length (str replacement))))
+    (if buffer-read-only (new-buffer-from-string replacement)
+      (progn
+        (insert replacement)
+        (let ((end-point (point))
+              (start-point (- (point) replacement-len)))
+          (push-mark start-point)
+          (goto-char end-point)
+          (setq deactivate-mark nil)
+          (activate-mark)
+          (if doreverse
+              (call-interactively 'cua-exchange-point-and-mark)))))))
+(defalias 'filter-selection 'filter-selected-region-through-function)
+
 (provide 'pen-support)
