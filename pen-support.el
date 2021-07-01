@@ -174,7 +174,7 @@ This appears to strip ansi codes.
        ((fboundp 'clojure-mode-funcs) (setq list (funcall list)))))
 
   (if (stringp list)
-      (setq list (string2list list)))
+      (setq list (split-string list "\n")))
 
   (if (and select-only-match (eq (length list) 1))
       (car list)
