@@ -75,7 +75,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (pen-defaults (vector2list (ht-get yaml "pen-defaults")))
                      (completion (pen-yaml-test yaml "completion"))
                      (func-name (concat "pen-pf-" title-slug))
-                     (func-sym (str2sym func-name))
+                     (func-sym (intern func-name))
                      (iargs (let ((iteration 0))
                               (cl-loop for v in vars
                                        collect
@@ -85,13 +85,13 @@ Function names are prefixed with pen-pf- for easy searching"
                                          (message "%s" (concat "Example " (str iteration) ": " example))
                                          (if (equal 0 iteration)
                                              ;; The first argument may be captured through selection
-                                             `(if (selectionp)
+                                             `(if (selected)
                                                   (my/selected-text)
-                                                (if ,(> (length (str2lines example)) 1)
+                                                (if ,(> (length (s-lines example)) 1)
                                                     (tvipe ;; ,(concat v ": ")
                                                      ,example)
                                                   (read-string-hist ,(concat v ": ") ,example)))
-                                           `(if ,(> (length (str2lines example)) 1)
+                                           `(if ,(> (length (s-lines example)) 1)
                                                 (tvipe ;; ,(concat v ": ")
                                                  ,example)
                                               (read-string-hist ,(concat v ": ") ,example))))
@@ -136,7 +136,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                        (flatten-once
                                                         (cl-loop for vs in var-slugs collect
                                                                  (list " "
-                                                                       (list 'q (str2sym vs)))))))))
+                                                                       (list 'q (intern vs)))))))))
                                             (result
                                              (chomp
                                               (mapconcat 'identity
@@ -152,13 +152,13 @@ Function names are prefixed with pen-pf- for easy searching"
                                        (if (interactive-p)
                                            (cond
                                             ((and ,filter
-                                                  (selectedp))
+                                                  (selected))
                                              (replace-region (concat (selection) result)))
                                             (,completion
                                              (etv result))
                                             ((or ,(not filter)
                                                  (>= (prefix-numeric-value current-prefix-arg) 4)
-                                                 (not (selectedp)))
+                                                 (not (selected)))
                                              (etv result))
                                             (t
                                              (replace-region result)))
@@ -176,7 +176,7 @@ Function names are prefixed with pen-pf- for easy searching"
   (interactive)
   (let ((f (fz pen-prompt-functions nil nil "pen filter: ")))
     (if f
-        (filter-selected-region-through-function (str2sym f)))))
+        (filter-selected-region-through-function (intern f)))))
 (define-key global-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
 
 (defun pen-run-prompt-function ()
@@ -185,7 +185,7 @@ Function names are prefixed with pen-pf- for easy searching"
          (f (fz pen-prompt-functions nil nil "pen run: ")))
     ;; (ns (concat "sh-update: " (str sh-update)))
     (if f
-        (call-interactively (str2sym f)))))
+        (call-interactively (intern f)))))
 
 (defalias 'camille-complete 'pen-run-prompt-function)
 (define-key global-map (kbd "H-TAB r") 'pen-run-prompt-function)

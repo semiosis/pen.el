@@ -177,4 +177,9 @@ This appears to strip ansi codes.
    :select-only-match select-only-match
    :add-props add-props))
 
+(defun selected ()
+  (or
+   (use-region-p)
+   (evil-visual-state-p)))
+
 (provide 'pen-support)
