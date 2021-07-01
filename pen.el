@@ -183,6 +183,7 @@ Function names are prefixed with pen-pf- for easy searching"
     ;; (ns (concat "sh-update: " (str sh-update)))
     (if f
         (call-interactively (str2sym f)))))
+
 (defalias 'camille-complete 'pen-run-prompt-function)
 (define-key global-map (kbd "H-TAB r") 'pen-run-prompt-function)
 
@@ -190,55 +191,18 @@ Function names are prefixed with pen-pf- for easy searching"
 (define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
 (define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
 
-;; TODO Make a function for permuting the tuples of monotonically increasing length all starting with the first element
-
-;; TODO Generate a list of completion symbols
-;; This should be a permutation of n-nmax tokens of a single response from openai
-;; TODO In future, suggest alternative completions from openai
-;; Make this into 2 functions
-
 
 (defun company-pen-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
-         ;; (trailing_ws_pat "[ \t\n]*\\'")
-         ;; (original_whitespace (regex-match-string trailing_ws_pat preceding-text))
-         ;; (endspace)
-         ;; (preceding-text-endspaceremoved)
          (response
           (->>
-           preceding-text
-           (pen-pf-generic-file-type-completion (detect-language))))
-         ;; Take only the first line for starters
-         ;; Do not only take the first line. That's kinda useless.
-         ;; (line (car (str2lines response)))
-         ;; (line response)
+              preceding-text
+            (pen-pf-generic-file-type-completion (detect-language))))
          (res
-          ;; (cl-loop
-          ;;  for i from 1 to 3 collect
-          ;;  (->>
-          ;;   preceding-text
-          ;;   (pen-pf-generic-file-type-completion (detect-language))))
-          (list response)
-          ;; j:monotonically-increasing-tuple-permutations
-          ;; (if (>= (prefix-numeric-value current-prefix-arg) 8)
-          ;;     (list response)
-          ;;   ;; Just generate a few
-          ;;   ;; (pen-pf-generic-file-type-completion (detect-language) preceding-text)
-          ;;   ;; (pen-pf-generic-file-type-completion (detect-language) preceding-text))
-          ;;   (str2lines (snc "monotonically-increasing-tuple-permutations.py" (car (str2lines response)))))
-          ))
-    ;; Generate a list
-    ;; (setq res '("testing" "testing123"))
+          (list response)))
     (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
             res)))
 
-
-
-
-;; TODO Generate arbitrarily many company completion functions 
-
-;; Go over all the pen functions and automatically create completion functions
-;; From the ones that have "completion: on"
 
 (defvar my-completion-engine 'company-pen-filetype)
 
