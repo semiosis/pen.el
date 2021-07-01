@@ -2,6 +2,7 @@
 
 (require 'pen-support)
 (require 'dash)
+(require 'ht)
 
 (defvar pen.el-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
