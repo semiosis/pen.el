@@ -3,6 +3,8 @@
 (require 'pen-support)
 (require 'dash)
 (require 'ht)
+(require 'helm)
+(require 'ivy)
 
 (defvar pen.el-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
