@@ -128,6 +128,45 @@ This appears to strip ansi codes.
         (substring slug 0 (- length 1))
       slug)))
 
+(cl-defun cl-fz (list &key prompt &key full-frame &key initial-input &key must-match &key select-only-match &key hist-var &key add-props)
+          (if (and (not hist-var)
+                   (sor prompt))
+              (setq hist-var (str2sym (concat "histvar-fz-" (slugify prompt)))))
+
+          (setq prompt (sor prompt ":"))
+
+          (if (not (re-match-p " $" prompt))
+              (setq prompt (concat prompt " ")))
+
+          (if (eq (type list) 'symbol)
+              (cond
+                ((variable-p 'clojure-mode-funcs) (setq list (eval list)))
+                ((function-p 'clojure-mode-funcs) (setq list (funcall list)))))
+
+          (if (stringp list)
+              (setq list (string2list list)))
+
+          (if (and select-only-match (eq (length list) 1))
+              (car list)
+              (progn
+                (setq prompt (or prompt ":"))
+                (let ((helm-full-frame full-frame)
+                      (completion-extra-properties nil))
+
+                  (if add-props
+                      (setq completion-extra-properties
+                            (append
+                             completion-extra-properties
+                             add-props)))
+
+                  (if (and (listp (car list)))
+                      (setq completion-extra-properties
+                            (append
+                             '(:annotation-function fz-completion-second-of-tuple-annotation-function)
+                             completion-extra-properties)))
+
+                  (completing-read prompt list nil must-match initial-input hist-var)))))
+
 (defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props)
   (cl-fz
    list
