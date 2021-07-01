@@ -89,9 +89,10 @@ prompt additionally for EXTRA-AG-ARGS."
   (mu (let* ((pfp
               (fz
                (snc
-                "cd "
-                (q pen-prompt-directory)
-                "; find . -maxdepth 1 -mindepth 1 -type f | sed -e 's/..//' -e 's/\\.prompt$//'")
+                (concat
+                 "cd "
+                 (q pen-prompt-directory)
+                 "; find . -maxdepth 1 -mindepth 1 -type f | sed -e 's/..//' -e 's/\\.prompt$//'"))
                 nil
                 nil
                 "pen list: "))
