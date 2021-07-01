@@ -82,29 +82,30 @@ Function names are prefixed with pen-pf- for easy searching"
                      (completion (pen-yaml-test yaml "completion"))
                      (func-name (concat "pen-pf-" title-slug))
                      (func-sym (intern func-name))
-                     (iargs (let ((iteration 0))
-                              (cl-loop for v in vars
-                                       collect
-                                       (let ((example (or (sor (nth iteration examples)
-                                                               "")
-                                                          "")))
-                                         (message "%s" (concat "Example " (str iteration) ": " example))
-                                         (if (equal 0 iteration)
-                                             ;; The first argument may be captured through selection
-                                             `(if (selected)
-                                                  (my/selected-text)
-                                                (if ,(> (length (s-lines example)) 1)
-                                                    (tvipe ;; ,(concat v ": ")
-                                                     ,example)
-                                                  (read-string-hist ,(concat v ": ") ,example)))
-                                           `(if ,(> (length (s-lines example)) 1)
-                                                (tvipe ;; ,(concat v ": ")
-                                                 ,example)
-                                              (read-string-hist ,(concat v ": ") ,example))))
-                                       do
-                                       (progn
-                                         (setq iteration (+ 1 iteration))
-                                         (message (str iteration)))))))
+                     (iargs
+                      (let ((iteration 0))
+                        (cl-loop for v in vars
+                                 collect
+                                 (let ((example (or (sor (nth iteration examples)
+                                                         "")
+                                                    "")))
+                                   (message "%s" (concat "Example " (str iteration) ": " example))
+                                   (if (equal 0 iteration)
+                                       ;; The first argument may be captured through selection
+                                       `(if (selected)
+                                            (my/selected-text)
+                                          (if ,(> (length (s-lines example)) 1)
+                                              (tvipe ;; ,(concat v ": ")
+                                               ,example)
+                                            (read-string-hist ,(concat v ": ") ,example)))
+                                     `(if ,(> (length (s-lines example)) 1)
+                                          (tvipe ;; ,(concat v ": ")
+                                           ,example)
+                                        (read-string-hist ,(concat v ": ") ,example))))
+                                 do
+                                 (progn
+                                   (setq iteration (+ 1 iteration))
+                                   (message (str iteration)))))))
 
                 (setq n-collate (or n-collate 1))
 
