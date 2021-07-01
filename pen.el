@@ -7,7 +7,6 @@
 (require 'ivy)
 (require 'pp)
 (require 'cl-macs)
-(require 'evil)
 (require 'helm)
 
 (defvar pen.el-map (make-sparse-keymap)
