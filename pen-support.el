@@ -206,4 +206,32 @@ This appears to strip ansi codes.
 (defun glob (pattern &optional dir)
   (split-string (cl-sn (concat "glob -b " (q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
 
+(defun my-new-buffer-frame (&optional contents bufname mode nodisplay)
+  "Create a new frame with a new empty buffer."
+  (interactive)
+  (if (not bufname)
+      (setq bufname "*untitled*"))
+  (let ((buffer (generate-new-buffer bufname)))
+    (set-buffer-major-mode buffer)
+    (if (not nodisplay)
+        (display-buffer buffer '(display-buffer-same-window . nil)))
+    (with-current-buffer buffer
+      (if contents (insert (str contents)))
+      (beginning-of-buffer)
+      (if mode (call-function mode)))
+    buffer))
+(defalias 'new-buffer-from-string 'my-new-buffer-frame)
+(defalias 'nbfs 'my-new-buffer-frame)
+(defun new-buffer-from-o (o)
+  (new-buffer-from-string
+   (if (stringp o)
+       o
+     (pp-to-string o))))
+(defun etv (o)
+  "Returns the object. This is a way to see the contents of a variable while not interrupting the flow of code.
+ Example:
+ (message (etv \"shane\"))"
+  (new-buffer-from-o o)
+  o)
+
 (provide 'pen-support)
