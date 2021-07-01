@@ -6,6 +6,7 @@
 (require 'helm)
 (require 'ivy)
 (require 'pp)
+(require 'cl-macs)
 
 (defvar pen.el-map (make-sparse-keymap)
   "Keymap for `pen.el'.")

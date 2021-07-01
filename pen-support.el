@@ -232,4 +232,7 @@ This appears to strip ansi codes.
   (new-buffer-from-o o)
   o)
 
+(defun flatten-once (list-of-lists)
+  (apply #'append list-of-lists))
+
 (provide 'pen-support)
