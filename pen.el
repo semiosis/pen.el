@@ -1,3 +1,5 @@
+;;; pen.el --- Prompt Engineering functions
+
 ;; gy -E "openai api engines.generate -h | pavs"
 
 (defvar pen.el-map (make-sparse-keymap)
