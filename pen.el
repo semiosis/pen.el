@@ -22,7 +22,6 @@
   :group 'prompt-engineer
   :initialize #'custom-initialize-default)
 
-
 (defset pen-prompt-functions nil)
 (defset pen-prompt-functions-meta nil)
 

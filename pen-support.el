@@ -4,4 +4,22 @@
   `(progn (defvar ,symbol ,documentation)
           (setq ,symbol ,value)))
 
+(defun string-empty-or-nil-p (s)
+  (or (not s)
+      (string-empty-p s)))
+
+(defun string-not-empty-nor-nil-p (s)
+  (not (string-empty-or-nil-p s)))
+
+(defun string-first-nonnil-nonempty-string (&rest ss)
+  "Get the first non-nil string."
+  (let ((result))
+    (catch 'bbb
+      (dolist (p ss)
+        (if (string-not-empty-nor-nil-p p)
+            (progn
+              (setq result p)
+              (throw 'bbb result)))))
+    result))
+
 (provide 'pen-support)
