@@ -16,7 +16,6 @@
    (major-mode-p 'term-mode))
   (str (buffer-substring (point) (max 1 (beginning-of-line-point)))))
 
-
 ;; TODO Figure out how to get the previous line start of line points
 ;; (tv (save-excursion (ntimes 5 (call-interactively 'previous-line)) (message (str (point)))))
 
