@@ -2,16 +2,17 @@
   "Construct a complete `counsel-ag-command' as a string.
 EXTRA-ARGS is a string of the additional arguments.
 NEEDLE is the search string."
-  (counsel--format cmd
-                   (if (listp cmd)
-                       (if (string-match " \\(--\\) " extra-args)
-                           (counsel--format
-                            (split-string (replace-match "%s" t t extra-args 1))
-                            needle)
-                         (nconc (split-string extra-args) needle))
-                     (if (string-match " \\(--\\) " extra-args)
-                         (replace-match needle t t extra-args 1)
-                       (concat extra-args " " needle)))))
+  (counsel--format
+   cmd
+   (if (listp cmd)
+       (if (string-match " \\(--\\) " extra-args)
+           (counsel--format
+            (split-string (replace-match "%s" t t extra-args 1))
+            needle)
+         (nconc (split-string extra-args) needle))
+     (if (string-match " \\(--\\) " extra-args)
+         (replace-match needle t t extra-args 1)
+       (concat extra-args " " needle)))))
 
 ;; The cmd takes a single string which is the search
 ;; In this case, it may be the first argument to a gpt3 prompt function
