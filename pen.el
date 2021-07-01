@@ -1,5 +1,7 @@
 ;;; pen.el --- Prompt Engineering functions
 
+(require 'pen-support)
+
 (defvar pen.el-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
 ;; (makunbound 'pen.el)
@@ -20,8 +22,8 @@
   :group 'prompt-engineer
   :initialize #'custom-initialize-default)
 
+
 (defset pen-prompt-functions nil)
-;; Metadata about prompt functions -- save the hash table here 
 (defset pen-prompt-functions-meta nil)
 
 (defun pen-yaml-test (yaml key)
