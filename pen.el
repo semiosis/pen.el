@@ -212,13 +212,14 @@ Function names are prefixed with pen-pf- for easy searching"
 (define-key global-map (kbd "M-1") #'company-pen-filetype)
 
 (defun pen-complete-long (preceding-text &optional tv)
+  "Long-form completion. This will generate lots of text.
+May use to generate code from comments."
   (interactive (list (str (buffer-substring (point) (max 1 (- (point) 1000))))
                      t))
   (let* ((response (pen-pf-generic-file-type-completion (detect-language) preceding-text)))
     (if tv
-        (tv response)
+        (etv response)
       response)))
-
 
 ;; This should have many options and return a list of completions
 ;; It should be used in company-mode
