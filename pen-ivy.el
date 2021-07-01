@@ -28,13 +28,15 @@ NEEDLE is the search string."
             (ivy-more-chars))
           (let* ((default-directory (ivy-state-directory ivy-last))
                  (switches (concat (car command-args))))
-            (counsel--async-command (concat
-                                     (my-counsel--format-command ,cmdstr
-                                                                 switches
-                                                                 (funcall (if (listp ,cmdstr) #'identity
-                                                                            #'shell-quote-argument)
-                                                                          string))
-                                     " | cat"))
+            (counsel--async-command
+             (concat
+              (my-counsel--format-command
+               ,cmdstr
+               switches
+               (funcall (if (listp ,cmdstr) #'identity
+                          #'shell-quote-argument)
+                        string))
+              " | cat"))
             nil))))))
 
 
