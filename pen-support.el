@@ -138,6 +138,10 @@ This appears to strip ansi codes.
         (setq output (str b_exit_code)))
     output))
 
+(defun snc (cmd &optional stdin)
+  "sn chomp"
+  (chomp (sn cmd stdin)))
+
 (defun slugify (input &optional joinlines length)
   "Slugify input"
   (interactive)
