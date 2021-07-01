@@ -149,44 +149,53 @@ This appears to strip ansi codes.
         (substring slug 0 (- length 1))
       slug)))
 
+(defun fz-completion-second-of-tuple-annotation-function (s)
+  (let ((item (assoc s minibuffer-completion-table)))
+    (when item
+      ;; (concat " # " (second item))
+      (cond
+       ((listp item) (concat " # " (second item)))
+       ((stringp item) "")
+       (t "")))))
+
 (cl-defun cl-fz (list &key prompt &key full-frame &key initial-input &key must-match &key select-only-match &key hist-var &key add-props)
-          (if (and (not hist-var)
-                   (sor prompt))
-              (setq hist-var (intern (concat "histvar-fz-" (slugify prompt)))))
+  (if (and (not hist-var)
+           (sor prompt))
+      (setq hist-var (intern (concat "histvar-fz-" (slugify prompt)))))
 
-          (setq prompt (sor prompt ":"))
+  (setq prompt (sor prompt ":"))
 
-          (if (not (re-match-p " $" prompt))
-              (setq prompt (concat prompt " ")))
+  (if (not (re-match-p " $" prompt))
+      (setq prompt (concat prompt " ")))
 
-          (if (eq (type-of list) 'symbol)
-              (cond
-                ((variable-p 'clojure-mode-funcs) (setq list (eval list)))
-                ((fboundp 'clojure-mode-funcs) (setq list (funcall list)))))
+  (if (eq (type-of list) 'symbol)
+      (cond
+       ((variable-p 'clojure-mode-funcs) (setq list (eval list)))
+       ((fboundp 'clojure-mode-funcs) (setq list (funcall list)))))
 
-          (if (stringp list)
-              (setq list (string2list list)))
+  (if (stringp list)
+      (setq list (string2list list)))
 
-          (if (and select-only-match (eq (length list) 1))
-              (car list)
-              (progn
-                (setq prompt (or prompt ":"))
-                (let ((helm-full-frame full-frame)
-                      (completion-extra-properties nil))
+  (if (and select-only-match (eq (length list) 1))
+      (car list)
+    (progn
+      (setq prompt (or prompt ":"))
+      (let ((helm-full-frame full-frame)
+            (completion-extra-properties nil))
 
-                  (if add-props
-                      (setq completion-extra-properties
-                            (append
-                             completion-extra-properties
-                             add-props)))
+        (if add-props
+            (setq completion-extra-properties
+                  (append
+                   completion-extra-properties
+                   add-props)))
 
-                  (if (and (listp (car list)))
-                      (setq completion-extra-properties
-                            (append
-                             '(:annotation-function fz-completion-second-of-tuple-annotation-function)
-                             completion-extra-properties)))
+        (if (and (listp (car list)))
+            (setq completion-extra-properties
+                  (append
+                   '(:annotation-function fz-completion-second-of-tuple-annotation-function)
+                   completion-extra-properties)))
 
-                  (completing-read prompt list nil must-match initial-input hist-var)))))
+        (completing-read prompt list nil must-match initial-input hist-var)))))
 
 (defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props)
   (cl-fz
