@@ -191,7 +191,6 @@ Function names are prefixed with pen-pf- for easy searching"
     (if f
         (call-interactively (intern f)))))
 
-
 (defun company-pen-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
          (response
@@ -202,7 +201,6 @@ Function names are prefixed with pen-pf- for easy searching"
           (list response)))
     (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
             res)))
-
 
 (defun my-completion-at-point ()
   (interactive)
