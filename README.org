@@ -79,7 +79,10 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 # <a title="asciinema recording" href="https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi.svg" /></a>
 # #+END_EXPORT
 
-** Works with
+** Compatability
+*** Operating systems
+- Ubuntu
+*** Language models
 - OpenAI API (=GPT-3=)
   - https://beta.openai.com/
 ** Other backends will be incorporated
