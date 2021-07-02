@@ -6,7 +6,8 @@
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
 ;; I would like to disable the yaml lsp server for .prompt files.
-;; At least, until a schema for it is made in schemastore
+;; At least, until a schema for it is made in schemastore.
+;; http://www.schemastore.org/json/
 (defun maybe-lsp ()
   "Maybe run lsp."
   (interactive)
