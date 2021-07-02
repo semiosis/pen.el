@@ -1,6 +1,4 @@
 * =pen.el= (_Prompt engineering_ in emacs)
-This project is not yet ready for =melpa=.
-
 =Pen= facilitates the creation,
 development, discovery and usage of prompts to
 a Language Model such as =OpenAI='s =GPT-3= or =EleutherAI='s =GPT-j=.
