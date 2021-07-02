@@ -17,7 +17,6 @@
 
 (defvar pen-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
-;; (makunbound 'pen.el)
 (defvar-local pen.el nil)
 
 (define-minor-mode pen
