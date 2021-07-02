@@ -52,7 +52,7 @@
           Connect to more emacs packages : b8, after b7 , 20d
           Real-time completion of tokens with interrupt : b9, after b8, 20d
           Multiversal viewer : b10, after b9, 20d
-          Stage 3   :s3, 2021-12-12, 120d
+          Stage 3  :s3, 2021-12-12, 120d
           Incorporate OpenAI Codex model : c1, 2021-12-12, 1d
 #+END_SRC
 
