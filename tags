@@ -6,6 +6,20 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 HEREDOC	scripts/lm-complete	/^IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
 HEREDOC	scripts/openai-complete	/^IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
+command	scripts/nlsh.py	/^    command = result.choices[0]["text"].strip()$/;"	v
+command	scripts/nlsh.py	/^    command = spy.b(postprocessor, command)[0]$/;"	v
+data	scripts/nlsh.py	/^    data = f.read()$/;"	v
+filename	scripts/nlsh.py	/^filename = "$PROMPTS\/nlsh-arch-linux-bash.prompt"$/;"	v
+ogprompt	scripts/nlsh.py	/^ogprompt = ogprompt.replace("<1>", os)$/;"	v
+ogprompt	scripts/nlsh.py	/^ogprompt = yaml.load(data)["prompt"]$/;"	v
 org-brain-pf-topic	pen-brain.el	/^(defun org-brain-pf-topic (&optional short)$/;"	f
+os	scripts/nlsh.py	/^os = sys.argv[1]$/;"	v
+postprocessor	scripts/nlsh.py	/^postprocessor = yaml.load(data)["postprocessor"].strip()$/;"	v
+prompt	scripts/nlsh.py	/^    prompt = ogprompt.rstrip() + "\\n" + template.format(request).rstrip()$/;"	v
+prompt	scripts/nlsh.py	/^    prompt = prompt.strip() + " " + command + "\\n###\\n"$/;"	v
+request	scripts/nlsh.py	/^    request = input(click.style("nlsh> ", "red", bold=True))$/;"	v
+result	scripts/nlsh.py	/^    result = openai.Completion.create($/;"	v
+spy	scripts/nlsh.py	/^import shanepy as spy$/;"	I
 stdin_exists	scripts/lm-complete	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/openai-complete	/^stdin_exists() {$/;"	f
+template	scripts/nlsh.py	/^template = yaml.load(data)["repeater"]$/;"	v
