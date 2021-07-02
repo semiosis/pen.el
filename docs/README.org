@@ -26,7 +26,7 @@ gantt
         Create a bunch of prompts     :a3, 2021-03-30, 30d
         Integrate helm, ivy and counsel     :a4, 2021-04-30, 30d
         Integrate org-brain     :a5, 2021-05-30, 30d
-        Use elisp for portability     :a2, 2021-07-02, 1d
+        Use elisp for portability     :b2, 2021-07-02, 1d
         Dockerize Pen     :after a2  , 2d
         Select backend interface in emacs     :after a2  , 2d
         section Stage 2
