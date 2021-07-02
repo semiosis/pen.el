@@ -303,4 +303,30 @@ when s is a string, set the clipboard to s"
       (shell-command-to-string "xsel --clipboard --output"))))
 (defalias 'xc)
 
+(defun completing-read-hist (prompt &optional initial-input histvar default-value)
+  "read-string but with history."
+  (if (not histvar)
+      (setq histvar (intern (concat "completing-read-hist-" (slugify prompt)))))
+
+  (setq prompt (sor prompt ":"))
+
+  (if (not (re-match-p " $" prompt))
+      (setq prompt (concat prompt " ")))
+
+  (initvar histvar)
+  (if (and (not initial-input)
+           (listp histvar))
+      (setq initial-input (first histvar)))
+  (eval `(progn
+           (let ((inhibit-quit t))
+             (or (with-local-quit
+                   (let ((completion-styles
+                          '(basic))
+                         (s (str (my-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil))))
+
+                     (setq ,histvar (seq-uniq ,histvar 'string-equal))
+                     s))
+                 "")))))
+(defalias 'read-string-hist 'completing-read-hist)
+
 (provide 'pen-support)
