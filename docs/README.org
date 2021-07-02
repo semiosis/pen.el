@@ -21,13 +21,13 @@ gantt
         title Project timeline
         dateFormat  YYYY-MM-DD
         section Stage 1
-        Stage 1    :a1, 2021-03-01, 90d
+        Stage 1    :s1, 2021-03-01, 90d
         Generate elisp functions from YAML    :a1, 2021-03-01, 90d
         Use elisp for portability     :a2, 2021-07-02, 1d
         Dockerize Pen     :after a2  , 2d
         Select backend interface in emacs     :after a2  , 2d
         section Stage 2
-        Stage 2      :2021-07-12  , 90d
+        Stage 2   :s2, 2021-07-12, 90d
         Connect arbitrary prompts repositories :b1, 2021-07-10, 2d
         Generations stored in Datomic :after a2  , 2d
         section Andrew
