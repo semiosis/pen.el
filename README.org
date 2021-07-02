@@ -151,6 +151,9 @@ https://github.com/semiosis/prompts/
   - [ ] Generate prompts from interactive keyboard macros
   - Development workflow
   - Search workflow
+    - Semantic search for =straight.el=
+    - Semantic search for =nixos.el=
+    - Semantic concordance for =KJV bible=
 + Portability [1/1]
   - [X] Use built-in elisp functions
 
