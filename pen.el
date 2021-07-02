@@ -227,12 +227,6 @@ May use to generate code from comments."
 (my-load "$MYGIT/semiosis/pen.el/pen-library.el")
 (require 'pen-library)
 
-(load (concat emacsdir "/config/examplary.el"))
-(require 'examplary)
-
-(my-load "$MYGIT/semiosis/pen.el/imaginary.el")
-(require 'imaginary)
-
 (my-load "$MYGIT/semiosis/pen.el/pen-contrib.el")
 (require 'pen-contrib)
 
