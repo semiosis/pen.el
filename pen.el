@@ -12,6 +12,7 @@
 (require 'helm)
 (require 'company)
 (require 'selected)
+(require 'pcsv)
 
 (defvar my-completion-engine 'company-pen-filetype)
 
