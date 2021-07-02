@@ -109,9 +109,9 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 Please make an issue to this repository to ask for membership.
 
 *** 
-$MYGIT/semiosis/pen.el/installation.org
+[[./installation.org]]
 
-*** Discord
+*** Discord channel
 860104344900599839
 
 *** Testing GPT-3 prompts without a key
