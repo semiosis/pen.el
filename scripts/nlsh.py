@@ -1,6 +1,9 @@
 #!/usr/bin/env python3.8
 # -*- coding: utf-8 -*-
 
+# This script is for running nlsh
+# https://mullikine.github.io/posts/nlsh-natural-language-shell/
+
 import sys
 import yaml
 
