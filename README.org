@@ -124,10 +124,12 @@ https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 *** =openai= API key
 
 ** Usage
-*** Enable =prompt-engineerer-mode= globally (on all buffers)
+*** Enable =pen-mode= globally (on all buffers)
+
+http://github.com/semiosis/pen.el/blob/master/pen-example-config.el
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (pen.el 1)
+  (pen 1)
 #+END_SRC
 
 ** Default Key Bindings
