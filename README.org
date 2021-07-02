@@ -162,7 +162,7 @@ https://github.com/semiosis/prompts/
     - [ ] Select backend interface in emacs
       - [ ] Shell interface to OpenAI to python
       - [ ] GPT-j interface
-    - [ ] Dockerize
+    - [ ] Dockerize Pen
       - https://github.com/semiosis/pen-docker/
 + Stage 2
   - [ ] Generations stored in Datomic
