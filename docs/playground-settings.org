@@ -1,7 +1,8 @@
 * Playground Settings
 These are the official playground settings of the OpenAI Advanced Playground for GPT-3.
 
-+ Also, here is a glossary :: http://github.com/semiosis/pen.el/blob/master/glossary.txt
++ Also, here are some glossaries :: http://github.com/semiosis/pen.el/blob/master/glossary.txt
+  https://github.com/semiosis/glossaries-gh/blob/master/openai-api.txt
 
 ** Engine
 
@@ -9,8 +10,7 @@ These are the official playground settings of the OpenAI Advanced Playground for
 How much to penalize new tokens
 based on their existing frequency in the
 text so far. Decreases the model's
-likelihood to repeat the same line
-1urertiatirh.
+likelihood to repeat the same line.
 
 ** Presence Penalty
 How muoh to penalize new tokens
