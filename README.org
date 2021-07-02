@@ -66,6 +66,8 @@ https://github.com/semiosis/prompts/
 *** Todo
 **** Fine-tuning pipeline
 [[./todo/fine-tuning.org]]
+**** =imaginary-mode=
+http://github.com/semiosis/pen.el/blob/master/todo/imaginary-mode.org
 
 ** Demonstration
 https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
