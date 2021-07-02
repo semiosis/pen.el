@@ -153,6 +153,8 @@ https://github.com/semiosis/prompts/
 ** Current progress
 + Implementation [1/1]
   - [X] emacs-lisp functions are generated from YAML =.prompt= files
++ Docker
+  - [ ] This is in progress.
 + Design [2/3]
   - [X] Default behaviour of generated functions
     - [X] First argument may be selection
