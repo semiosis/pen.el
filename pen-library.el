@@ -1,4 +1,5 @@
 (require 'pen-brain)
+(require 'sx)
 
 (defun get-path-semantic ()
   (interactive)
