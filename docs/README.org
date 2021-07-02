@@ -22,6 +22,7 @@
     - https://github.com/semiosis/pen.vim
   - [ ] Standalone application based in emacs, available through a web browser
     - https://github.com/semiosis/pen
+    - https://github.com/semiosis/pen-docker
 
 + Use mermaid for Gantt chart in emacs :: [[https://mullikine.github.io/posts/review-of-mermaid-markdownish-syntax-for-generating-flowcharts-digrams/][Review of 'mermaid - flowcharts, diagrams, etc.' // Bodacious Blog]]
   https://mermaid-js.github.io/mermaid-live-editor/
