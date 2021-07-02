@@ -1,6 +1,6 @@
 * Pen project timeline
-+ Stage 1
-  + Implementation [2/2]
++ Stage 1 - This is a dockerized =pen.el= that makes use of both GPT-3 and GPT-j.
+  + Implementation [2/4]
     - [X] emacs-lisp functions are generated from YAML =.prompt= files
     - [X] Use built-in elisp functions for portability
     - [ ] Select backend interface in emacs
@@ -8,8 +8,9 @@
       - [ ] GPT-j interface
     - [ ] Dockerize Pen
       - https://github.com/semiosis/pen-docker/
-+ Stage 2
++ Stage 2 - This is a collaborative =pen.el= with an exploration tool like loom (https://github.com/socketteer/loom)
   - [ ] Generations stored in Datomic
+    - https://semiosis.github.io/posts/representing-multiverses-with-datomic/
   - [ ] Prompts stored in Datomic
   - [ ] Make use of arbitrarily many git repositories that store prompts
 
@@ -43,18 +44,6 @@
 [[file:project-timeline.png]]
 
 [[./project-timeline.png]]
-
-** _Stage 1_
-This is a dockerized =pen.el= that makes use of both GPT-3 and GPT-j.
-
-** _Stage 2_
-This is a collaborative =pen.el= with an exploration tool like loom.
-
-https://github.com/socketteer/loom
-
-Store prompts in Datomic.
-
-https://semiosis.github.io/posts/representing-multiverses-with-datomic/
 
 ** Design
 + Completed [ ]
