@@ -28,11 +28,11 @@ gantt
         Integrate org-brain     :a5, 2021-05-30, 30d
         Use elisp for portability     :b2, 2021-07-02, 1d
         Dockerize Pen   :b4,  :after b3  , 5d
-        Select backend interface in emacs     :after b4  , 2d
+        Select backend interface in emacs  b5:,  :after b4  , 2d
         section Stage 2
         Stage 2   :s2, 2021-07-12, 90d
-        Connect arbitrary prompts repositories :b1, 2021-07-10, 20d
-        Generations stored in Datomic :after b1 , 20d
+        Connect arbitrary prompts repositories :b6, :after b5, 20d
+        Generations stored in Datomic :b7, :after b6 , 20d
 #+END_SRC
 
 #+RESULTS:
