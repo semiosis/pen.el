@@ -1,0 +1,101 @@
+* Fine-tuning GPT-3 to generate puns
+** Application
+*** Size of dataset
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  cat $MYGIT/taivop/joke-dataset/reddit_jokes.json | jq -r 'length'
+#+END_SRC
+
+*** Average length of each joke
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  cat $MYGIT/taivop/joke-dataset/reddit_jokes.json | jq -r '.[].body|length'| jq -s add/length
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+204.60585547382976
+#+end_src
+
+** Aims
+*** Train GPT-3 to continue on sequences of puns
+
+*** Train GPT-3 to speak in puns
+
+** Training
+*** Data
+| format  |
+|---------|
+| =jsonl= |
+
+**** Sources
+- https://github.com/taivop/joke-dataset
+
+**** Naive approach
+#+BEGIN_SRC python -n :i python3.6 :async :results verbatim code
+  [{"data" : "joke set 1"},
+   {"data": "joke set 2"}
+#+END_SRC
+
+**** Better approach
++ =text_list= :: One element resembles a _prompt_ and the other its _completion_.
+
+The prompt is a set of jokes followed by more set of jokes of the same type.
+
++ Data sets
+  - =train_puns.jsonl=
+  - =test_puns.jsonl=
+
+#+BEGIN_SRC python -n :i python3.6 :async :results verbatim code
+  [{'data': {'text_list': ["Starting of joke set 1", "Remaining of joke set 1"], 'loss_weights': [0.3, 0.7]}},
+   {'data': {'text_list': ['Starting of joke set 2", "Remaining of joke set 2"], 'loss_weights': [0.3, 0.7]}}]
+#+END_SRC
+
+The loss weights are set such that the
+completion is given more importance (=0.7=)
+than the prompt (=0.3=).
+
+***** Prompt
+A random number of jokes.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  What do you call a guy with no arms and no legs sitting at your doorstep? Matt.
+  What do you call a guy with no arms or legs floating in your pool? Bob.
+  What do you call a guy with no arms or legs hanging off your wall? Art.
+#+END_SRC
+
+***** Completion
+#+BEGIN_SRC text -n :async :results verbatim code
+  What do you call somebody with no body and no nose? Nobody knows
+  What do you call a guy with no arms or legs? Names.
+  What do you call a cow with no legs? Ground Beef. 
+#+END_SRC
+
+***** Training command
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  openai-ft \
+      -t data/train_puns.jsonl \
+      --val data/test_puns.jsonl \
+      --num-epochs 1 \
+      -e $(myrc .openai_training_engine_name) \
+      -m ada \
+      --batch-size 2 \
+      --val-batch-size 1 \
+      --snapshots-every 15 \
+      --num-completions 1 \
+      --completions-every 2 \
+      -s 0.01 \
+      --log-path logs \
+      -v
+#+END_SRC
+
+***** Hyperparameters
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  v +/"I initially trained it" "$MYGIT/cabhijith/GPT-3_Docs/examples_finetuning/harry.md"
+#+END_SRC
+
++ TODO
+  - Test different learning rates
+
+To avoid over-fitting (using the same characters), using a lower learning rate (i.e. =0.01=).
+
+** TODO Testing
+List prompt and completion.
