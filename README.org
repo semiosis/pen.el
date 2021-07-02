@@ -127,9 +127,7 @@ https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 *** Enable =pen-mode= globally (on all buffers)
 - http://github.com/semiosis/pen.el/blob/master/pen-example-config.el
 
-#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (pen 1)
-#+END_SRC
+[[./pen-example-config.el]]
 
 ** Default Key Bindings
 | key binding    | description    |
