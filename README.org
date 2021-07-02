@@ -161,15 +161,6 @@ https://github.com/semiosis/prompts/
 - https://generative.ink/posts/methods-of-prompt-programming/
 - https://mullikine.github.io/posts/creating-a-playground-for-gpt-3-in-emacs/
 
-**** Future Direction
-This project is moving to being an editing fractal/lens for GPT.
-
-- https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/
-
-This is the most important part of the editor.
-
-http://github.com/semiosis/pen.el/blob/master/imaginary.el
-
 **** Examples of usage
 - https://semiosis.github.io/posts/gpt-3-for-building-mind-maps-with-an-ai-tutor-for-any-topic/
 - https://mullikine.github.io/posts/gpt-3-assistants-for-emacs-modes/
