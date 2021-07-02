@@ -138,7 +138,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                              (if cache
                                                                  "OAI_CACHE=y "
                                                                "")
-                                                             "openai-complete "
+                                                             "lm-complete "
                                                              (pen-q path))
                                                        (flatten-once
                                                         (cl-loop for vs in var-slugs collect
