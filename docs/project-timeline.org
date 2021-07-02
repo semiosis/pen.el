@@ -11,5 +11,4 @@ gantt
         another task      : 24d
 #+END_SRC
 
-#+RESULTS:
-[[file:project-timeline.png]]
+[[./project-timeline.png]]
