@@ -167,6 +167,7 @@ https://github.com/semiosis/prompts/
 + Stage 2
   - [ ] Generations stored in Datomic
   - [ ] Prompts stored in Datomic
+  - [ ] Make use of arbitrarily many git repositories that store prompts
 
 ** Appendix
 *** Prompt engineering
