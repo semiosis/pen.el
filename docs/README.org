@@ -27,8 +27,8 @@ gantt
         Integrate helm, ivy and counsel     :a4, 2021-04-30, 30d
         Integrate org-brain     :a5, 2021-05-30, 30d
         Use elisp for portability     :b2, 2021-07-02, 1d
-        Dockerize Pen     :after b3  , 5d
-        Select backend interface in emacs     :after b3  , 2d
+        Dockerize Pen   :b4,  :after b3  , 5d
+        Select backend interface in emacs     :after b4  , 2d
         section Stage 2
         Stage 2   :s2, 2021-07-12, 90d
         Connect arbitrary prompts repositories :b1, 2021-07-10, 20d
