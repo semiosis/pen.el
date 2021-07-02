@@ -1,0 +1,8 @@
+* Future Direction
+This project is moving to being an editing fractal/lens for GPT.
+
+- https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/
+
+This is the most important part of the editor.
+
+http://github.com/semiosis/pen.el/blob/master/imaginary.el
