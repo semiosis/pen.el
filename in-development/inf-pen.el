@@ -225,8 +225,7 @@ Most of this is borrowed from python.el")
   (interactive (list (inf-pen-fz-contacts-and-threads)))
 
   (let ((history
-         ;; (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (q contact))))
-         (s-replace-regexp "\r+" "" (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (q contact) " 1000000"))))))
+         (s-replace-regexp "\r+" "" (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (pen-q contact) " 1000000"))))))
     (with-current-buffer (evipe history)
       (end-of-buffer)
       (beginning-of-line-or-indentation)))
@@ -239,9 +238,9 @@ Most of this is borrowed from python.el")
 ;;   (interactive (let ((contact (inf-pen-fz-contacts-and-threads))) (list contact (read-string (concat "Send to " contact ": ")))))
 
 ;;   (let ((sentout
-;;          ;; (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (q contact))))
-;;          ;; (s-replace-regexp "\r+" "" (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "message " (q contact) " " message))))
-;;          (inf-pen-get-result-from-inf (concat "message " (q contact) " " message))))
+;;          ;; (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (pen-q contact))))
+;;          ;; (s-replace-regexp "\r+" "" (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "message " (pen-q contact) " " message))))
+;;          (inf-pen-get-result-from-inf (concat "message " (pen-q contact) " " message))))
 ;;     (evipe sentout))
 ;;   ;; (let ((contact (inf-pen-fz-contacts)))
 ;;   ;;   (evipe )
@@ -255,9 +254,9 @@ Most of this is borrowed from python.el")
 ;;                 (read-string "m: ")))
 
 ;;   (let ((sentout
-;;          (inf-pen-get-result-from-inf (concat "file " (q contact)
+;;          (inf-pen-get-result-from-inf (concat "file " (pen-q contact)
 ;;                                                  " "
-;;                                                  (q fp) " " message))))
+;;                                                  (pen-q fp) " " message))))
 ;;     (evipe sentout)))
 
 ;; (defun s-filter-lines (pred s)
@@ -300,7 +299,7 @@ Most of this is borrowed from python.el")
 ;;   (interactive (list (fz (inf-pen-recent-contacts-sh)) (read-string "m: ")))
 
 ;;   (let ((sentout
-;;          (inf-pen-get-result-from-inf (concat "message " (q contact) " " message))))
+;;          (inf-pen-get-result-from-inf (concat "message " (pen-q contact) " " message))))
 ;;     (evipe sentout)))
 
 (provide 'inf-pen)
