@@ -1,5 +1,7 @@
 #!/bin/bash
-export TTY
+
+# TODO Environment variable to cache openai requests
+# OAI_CACHE=
 
 first_arg="$1"
 
@@ -8,7 +10,6 @@ stdin_exists() {
 }
 
 if stdin_exists; then
-    # The stdin can be the first argument
     set -- "$@" "$(cat | chomp)"
 fi
 
