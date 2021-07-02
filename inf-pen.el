@@ -115,19 +115,6 @@ With argument, position cursor at end of buffer."
 
 (defvar inf-pen-buffer)
 
-;; (defvar inf-pen-auto-completion-setup-code
-;;   "function INFMONGO__getCompletions(prefix) {
-;;       shellAutocomplete(prefix);
-;;       return(__autocomplete__.join(\";\"));
-;;   }"
-;;   "Code executed in inferior ii to setup autocompletion.")
-
-;; (defun inf-pen-setup-autocompletion ()
-;;   "Function executed to setup autocompletion in inf-pen."
-;;   (comint-send-string (get-buffer-process inf-pen-buffer) inf-pen-auto-completion-setup-code)
-;;   (comint-send-string (get-buffer-process inf-pen-buffer) "\n")
-;;   (define-key inf-pen-mode-map "\t" 'complete-symbol))
-
 (defvar inf-pen-prompt "\n> \\|\n.+> "
   "String used to match inf-pen prompt.")
 
@@ -170,26 +157,7 @@ process in `inf-pen--shell-output-buffer'.  It signals the function
 
 (defun inf-pen-shell-completion-complete-at-point ()
   "Perform completion at point in inferior-ii.
-Most of this is borrowed from python.el"
-  ;; (let* ((start
-  ;;         (save-excursion
-  ;;           (with-syntax-table js-mode-syntax-table
-  ;;             (let* ((syntax-list (append (string-to-syntax ".")
-	;; 				  (string-to-syntax "_")
-	;; 				  (string-to-syntax "w"))))
-  ;;               (while (member
-  ;;                       (car (syntax-after (1- (point)))) syntax-list)
-  ;;                 (skip-syntax-backward ".w_")
-  ;;                 (when (or (equal (char-before) ?\))
-  ;;                           (equal (char-before) ?\"))
-  ;;                   (forward-char -1)))
-  ;;               (point)))))
-  ;;        (end (point)))
-  ;;   (list start end
-  ;;         (completion-table-dynamic
-  ;;          (apply-partially
-  ;;           #'inf-pen-get-completions-at-point))))
-  )
+Most of this is borrowed from python.el")
 
 (defun inf-pen-get-completions-at-point (prefix)
   "Get completions for PREFIX using inf-pen."
@@ -206,13 +174,6 @@ Most of this is borrowed from python.el"
 ;;;###autoload
 (define-derived-mode inf-pen-mode comint-mode "Inferior ii mode"
   (make-local-variable 'font-lock-defaults)
-  ;; (setq font-lock-defaults (list js--font-lock-keywords))
-
-  ;; (make-local-variable 'syntax-propertize-function)
-  ;; (setq syntax-propertize-function #'js-syntax-propertize)
-
-  ;; (add-hook 'before-change-functions #'js--flush-caches t t)
-  ;; (js--update-quick-match-re)
 
   (add-to-list (make-local-variable 'comint-dynamic-complete-functions)
                'inf-pen-shell-completion-complete-at-point)
@@ -226,7 +187,6 @@ Most of this is borrowed from python.el"
   (interactive)
   (let ((contact
          (chomp (fz (inf-pen-fz-contacts-sh)))))
-    ;; (xc contact t)
     contact))
 
 (defun inf-pen-fz-threads-sh ()
