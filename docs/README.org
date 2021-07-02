@@ -49,7 +49,9 @@
           Incorporate semantic search : b12, 2021-07-12, 20d
           Connect arbitrary prompts repositories : b6, 2021-07-12, 20d
           Generations stored in Datomic : b7, after b6, 20d
+          straight.el : b13, after b6, 20d
           Connect to more emacs packages : b8, after b7 , 20d
+          melpa : b14, after b7 , 20d
           Real-time completion of tokens with interrupt : b9, after b8, 20d
           Multiversal viewer : b10, after b9, 20d
           section Stage 3
