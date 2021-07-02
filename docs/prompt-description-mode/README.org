@@ -1,0 +1,10 @@
+* Prompt Description Mode
+
+[[./prompts-tablist.png]]
+
+https://github.com/semiosis/pen.el/blob/master/pen-prompt-description.el
+
+** Prompts
++ Prompts repository :: http://github.com/semiosis/prompts
+
++ Glossary :: http://github.com/semiosis/glossaries-gh/blob/master/prompt-engineering.txt
