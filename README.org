@@ -66,7 +66,6 @@ https://github.com/semiosis/prompts/
 ** Documentation
 - [[./docs][Documentation directory]]
   - [[./docs/playground-settings.org][OpenAI Playground Settings]]
-  - [[./docs/README.org][OpenAI Playground Settings]]
   - [[./docs/README.org][Project timeline and design]]
 
 ** Demonstration
