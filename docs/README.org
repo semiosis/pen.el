@@ -1,3 +1,6 @@
+* Project full picture and timeline
++ Full picture :: [[./docs/design/full-picture.org]]
+
 *** Future features
 **** A pipeline for fine-tuning
 ***** GPT-3
