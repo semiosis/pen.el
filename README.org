@@ -148,6 +148,8 @@ https://github.com/semiosis/prompts/
 ** Current progress
 [[./docs/design/full-picture.org]]
 
+[[./docs/project-timeline.org]]
+
 + Stage 1
   + Implementation [2/2]
     - [X] emacs-lisp functions are generated from YAML =.prompt= files
