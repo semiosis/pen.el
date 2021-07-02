@@ -362,4 +362,7 @@ when s is a string, set the clipboard to s"
                  "")))))
 (defalias 'read-string-hist 'completing-read-hist)
 
+(defun vector2list (v)
+  (append v nil))
+
 (provide 'pen-support)
