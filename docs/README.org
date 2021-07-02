@@ -1,12 +1,16 @@
 * Project full picture and timeline
-+ Full picture :: [[./docs/design/full-picture.org]]
+** Gantt chart (milestones)
+[[./docs/project-timeline.org]]
 
-*** Future features
-**** A pipeline for fine-tuning
-***** GPT-3
+** Full picture
+[[./design/full-picture.org]]
+
+** Future features
+*** A pipeline for fine-tuning
+**** GPT-3
 - [[./docs/todo/fine-tuning.org]]
 - https://github.com/semiosis/fine-tuning-gpt-3/
-**** =imaginary-mode=
+*** =imaginary-mode=
 - http://github.com/semiosis/pen.el/blob/master/docs/todo/imaginary-mode.org
   - [[./docs/todo/imaginary-mode.org]]
 - https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/
