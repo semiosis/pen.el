@@ -97,7 +97,9 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 - [-] OpenAI API (=GPT-4=)
   - https://beta.openai.com/
 
-** Contributors
+** Contributing
+[[./CONTRIBUTING.org]]
+
 Please make an issue to this repository to ask
 for membership to the organisation.
 
