@@ -282,4 +282,27 @@ This appears to strip ansi codes.
    (iedit-mode
     (iedit-current-occurrence-string))))
 
+(defun xc (&optional s silent)
+  "xclip (clipboard)
+when s is nil, return current contents of clipboard
+when s is a string, set the clipboard to s"
+  (interactive)
+  (if (and
+       s
+       (not (stringp s)))
+      (setq s (pps s)))
+  (if (not (empty-string-p s))
+      (kill-new s)
+    (if (selected-p)
+        (progn
+          ;; Reselecting the region sucks
+          (progn
+            (setq s (selection))
+            (call-interactively 'kill-ring-save)))))
+  (if s
+      (if (not silent) (message "%s" (concat "Copied: " s)))
+    (progn
+      (shell-command-to-string "xsel --clipboard --output"))))
+(defalias 'xc)
+
 (provide 'pen-support)
