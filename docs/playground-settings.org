@@ -1,4 +1,8 @@
 * Playground Settings
+These are the official playground settings of the OpenAI Advanced Playground for GPT-3.
+
++ Also, here is a glossary :: http://github.com/semiosis/pen.el/blob/master/glossary.txt
+
 ** Engine
 
 ** Frequency Penalty
