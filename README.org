@@ -65,8 +65,9 @@ https://github.com/semiosis/prompts/
 
 ** Documentation
 - [[./docs][Documentation directory]]
-  - [[./docs/in-development][Currently in development]]
   - [[./docs/playground-settings.org][OpenAI Playground Settings]]
+  - [[./docs/README.org][OpenAI Playground Settings]]
+  - [[./docs/README.org][Project timeline and design]]
 
 ** Demonstration
 https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
@@ -144,11 +145,6 @@ Please email me if you would like to use my key for this project.
 
 *** Free prompts to use
 https://github.com/semiosis/prompts/
-
-** Current progress
-+ Project timeline and design :: [[./docs/README.org]]
-
----
 
 ** Appendix
 *** Prompt engineering
