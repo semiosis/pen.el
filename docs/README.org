@@ -60,7 +60,7 @@
     - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
   - [X] Generate functions of composed prompts
   - [ ] Generate prompts from interactive keyboard macros
-  - [ ] Development workflow
+  - [ ] Prompt development workflow
   - [ ] Prompt Catalogue tablist
   - [ ] Search workflow
     - Semantic search for =straight.el=
