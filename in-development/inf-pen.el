@@ -196,7 +196,6 @@ Most of this is borrowed from python.el")
   (interactive)
   (let ((contact
          (chomp (fz (inf-pen-fz-threads-sh)))))
-    ;; (xc contact t)
     contact))
 
 (defun inf-pen-fz-contacts-and-threads-sh ()

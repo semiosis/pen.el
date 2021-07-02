@@ -272,7 +272,7 @@ This appears to strip ansi codes.
     (iedit-current-occurrence-string))))
 
 (defun xc (&optional s silent)
-  "xclip (clipboard)
+  "emacs kill-ring, xclip copy
 when s is nil, return current contents of clipboard
 when s is a string, set the clipboard to s"
   (interactive)
