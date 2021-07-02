@@ -51,6 +51,7 @@
 (defalias 'camille-complete 'pen-run-prompt-function)
 
 ;; Camille-complete (because I press SPC to replace
+(require 'selected)
 (define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
 (define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
 (define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
