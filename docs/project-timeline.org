@@ -1,6 +1,7 @@
 * Pen project timeline
 + Use mermaid for Gantt chart :: [[https://mullikine.github.io/posts/review-of-mermaid-markdownish-syntax-for-generating-flowcharts-digrams/][Review of 'mermaid - flowcharts, diagrams, etc.' // Bodacious Blog]]
   https://mermaid-js.github.io/mermaid-live-editor/
+
 #+BEGIN_SRC mermaid :results raw :file project-timeline.png
 gantt
         title Project timeline
