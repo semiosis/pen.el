@@ -1,5 +1,19 @@
 * Pen project timeline
-+ Use mermaid for Gantt chart :: [[https://mullikine.github.io/posts/review-of-mermaid-markdownish-syntax-for-generating-flowcharts-digrams/][Review of 'mermaid - flowcharts, diagrams, etc.' // Bodacious Blog]]
++ Stage 1
+  + Implementation [2/2]
+    - [X] emacs-lisp functions are generated from YAML =.prompt= files
+    - [X] Use built-in elisp functions for portability
+    - [ ] Select backend interface in emacs
+      - [ ] Shell interface to OpenAI to python
+      - [ ] GPT-j interface
+    - [ ] Dockerize Pen
+      - https://github.com/semiosis/pen-docker/
++ Stage 2
+  - [ ] Generations stored in Datomic
+  - [ ] Prompts stored in Datomic
+  - [ ] Make use of arbitrarily many git repositories that store prompts
+
++ Use mermaid for Gantt chart in emacs :: [[https://mullikine.github.io/posts/review-of-mermaid-markdownish-syntax-for-generating-flowcharts-digrams/][Review of 'mermaid - flowcharts, diagrams, etc.' // Bodacious Blog]]
   https://mermaid-js.github.io/mermaid-live-editor/
 
 #+BEGIN_SRC mermaid :results raw :file project-timeline.png
