@@ -81,27 +81,27 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 
 ** Compatability
 *** Operating systems
-- Linux/Ubuntu
+- [X] Linux/Ubuntu
 *** Language models
-- OpenAI API (=GPT-3=)
+- [X] OpenAI API (=GPT-3=)
   - https://beta.openai.com/
-** Other backends will be incorporated
-- =contentyze=
-  - http://gpt.contentyze.com/
-- =GPT-J=
+- [-] =GPT-J=
   - https://github.com/kingoflolz/mesh-transformer-jax
-- =GPT-Neo=
+- [-] =contentyze=
+  - http://gpt.contentyze.com/
+- [-] =GPT-Neo=
   - https://github.com/EleutherAI/gpt-neo
-- =openai-server= (=GPT-2=)
+- [-] =openai-server= (=GPT-2=)
   - https://github.com/shawwn/openai-server
   - Requires tensorflow 1
-- =DeepAI= API
+- [-] =DeepAI= API
   - https://deepai.org/
-- OpenAI API (=GPT-4=)
+- [-] OpenAI API (=GPT-4=)
   - https://beta.openai.com/
 
 ** Contributors
-Please make an issue to this repository to ask for membership to the organisation.
+Please make an issue to this repository to ask
+for membership to the organisation.
 
 *** Installation
 [[./installation.org]]
