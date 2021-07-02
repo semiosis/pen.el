@@ -5,6 +5,12 @@ These are the official playground settings of the OpenAI Advanced Playground for
   https://github.com/semiosis/glossaries-gh/blob/master/openai-api.txt
 
 ** Engine
+The different GPT-3 models the API is able
+to access:
+- Ada,
+- Babbage,
+- Curie, and
+- Davinci.
 
 ** Frequency Penalty
 How much to penalize new tokens
