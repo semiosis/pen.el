@@ -122,6 +122,7 @@ https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
   pip3 install openai
 #+END_SRC
 *** =openai= API key
+Please email me if you would like to use my key for this project.
 
 ** Usage
 *** Enable =pen-mode= globally (on all buffers)
