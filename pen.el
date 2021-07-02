@@ -179,7 +179,6 @@ Function names are prefixed with pen-pf- for easy searching"
     (if f
         (filter-selected-region-through-function (intern f)))))
 
-
 (defun pen-run-prompt-function ()
   (interactive)
   (let* ((sh-update (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
