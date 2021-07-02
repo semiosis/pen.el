@@ -23,6 +23,7 @@ gantt
         section Stage 1
         Generate elisp functions from YAML           :a1, 2021-03-01, 30d
         Use elisp for portability     :a1, 2021-07-02, 1d
+        Dockerize Pen     :after a1  , 2d
         Select backend interface in emacs     :after a1  , 2d
         section Stage 2
         Task in sec      :2014-01-12  , 12d
