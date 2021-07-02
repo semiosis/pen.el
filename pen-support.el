@@ -376,7 +376,7 @@ when s is a string, set the clipboard to s"
   (interactive)
   (let ((lang
          (if (not detect)
-             (sed "s/-mode$//" (current-major-mode-string))
+             (s-replace-regexp "-mode$" "" (current-major-mode-string))
            (str (language-detection-string
                  (if buffer-not-selection
                      (buffer-string)
