@@ -1,6 +1,10 @@
 * Future Direction
 This project is moving to being an editing fractal/lens for GPT.
 
+The emacs structure and primitives are
+preserved while the LM provides imaginary
+languages.
+
 - https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/
 
 This is the most important part of the editor.
