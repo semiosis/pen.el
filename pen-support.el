@@ -365,6 +365,13 @@ when s is a string, set the clipboard to s"
 (defun vector2list (v)
   (append v nil))
 
+(defun region-or-buffer-string ()
+  (interactive)
+  (if (or (region-active-p) (eq evil-state 'visual))
+      (str (buffer-substring (region-beginning) (region-end)))
+    (str (buffer-substring (point-min) (point-max)))))
+(defalias 'selection-or-buffer-string 'region-or-buffer-string)
+
 (defun detect-language (&optional detect buffer-not-selection)
   "Returns the language of the buffer or selection."
   (interactive)
