@@ -223,12 +223,12 @@ This appears to strip ansi codes.
       (beginning-of-buffer)
       (if mode (call-function mode)))
     buffer))
+(defalias 'nbfs 'new-buffer-from-string)
 (defun new-buffer-from-o (o)
   (new-buffer-from-string
    (if (stringp o)
        o
      (pp-to-string o))))
-(defalias 'nbfs 'new-buffer-from-string)
 (defun etv (o)
   "Returns the object. This is a way to see the contents of a variable while not interrupting the flow of code.
  Example:
