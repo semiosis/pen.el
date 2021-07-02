@@ -10,8 +10,8 @@
   (setq cmdtype (or cmdtype "term"))
   (let* ((cmdslug (slugify (str cmd)))
          (modestr (concat cmdslug "-" cmdtype "-mode"))
-         (modesym (str2sym modestr))
-         (mapsym (str2sym (concat modestr "-map"))))
+         (modesym (intern modestr))
+         (mapsym (intern (concat modestr "-map"))))
     `(progn
        (defvar ,mapsym (make-sparse-keymap)
          ,(concat "Keymap for `" modestr "'."))
