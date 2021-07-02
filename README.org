@@ -106,6 +106,10 @@ for membership to the organisation.
 *** =openai= API key
 Please email me if you would like to use my key for this project.
 
+You will need to be inducted into the project.
+
+You may select from one of the roles/tasks.
+
 *** Installation
 [[./installation.org]]
 
