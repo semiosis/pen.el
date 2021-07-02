@@ -44,7 +44,7 @@
           Select backend interface in emacs :crit, after b3, 2d
           section Stage 2
           Stage 2  :s2, 2021-07-12, 120d
-          Prompt Catalog : b6a, 2021-07-12, 20d
+l          Prompt Catalog : b6a, 2021-07-12, 20d
           Imaginary interpreter + imaginary-mode : b11, 2021-07-12, 20d
           Incorporate semantic search : b12, 2021-07-12, 20d
           Connect arbitrary prompts repositories : b6, 2021-07-12, 20d
