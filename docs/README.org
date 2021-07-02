@@ -44,7 +44,8 @@
           Select backend interface in emacs :crit, after b3, 2d
           section Stage 2
           Stage 2  :s2, 2021-07-12, 120d
-          Prompt Cataloge : b6a, 2021-07-12, 20d
+          Prompt Catalog : b6a, 2021-07-12, 20d
+          Imaginary interpreter + imaginary-mode : b10, after b9, 20d
           Connect arbitrary prompts repositories : b6, 2021-07-12, 20d
           Generations stored in Datomic : b7, after b6, 20d
           Connect to more emacs packages : b8, after b7 , 20d
