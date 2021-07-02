@@ -231,5 +231,8 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-contrib.el
 (require 'pen-contrib)
 
+;; http://github.com/semiosis/pen.el/blob/master/pen-prompt-description.el
+(require 'pen-prompt-description)
+
 (provide 'my-openai)
 (provide 'pen)
