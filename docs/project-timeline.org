@@ -1,7 +1,7 @@
 * Project timeline
 #+BEGIN_SRC mermaid :results raw :file project-timeline.png
 gantt
-        title A Gantt Diagram
+        title Project timeline
         dateFormat  YYYY-MM-DD
         section Section
         A task           :a1, 2014-01-01, 30d
