@@ -365,4 +365,34 @@ when s is a string, set the clipboard to s"
 (defun vector2list (v)
   (append v nil))
 
+(defun mode-to-lang (&optional modesym)
+  (if (not modesym)
+      (setq modesym major-mode))
+  (s-replace-regexp "-mode$" "" (symbol-name modesym)))
+
+(defun lang-to-mode (&optional langstr)
+  (if (not langstr)
+      (setq langstr (current-lang)))
+  (intern (concat langstr "-mode")))
+
+(defun get-ext-for-lang (langstr)
+  (get-ext-for-mode (lang-to-mode langstr)))
+
+(defun get-ext-for-mode (&optional m)
+  (interactive)
+  (if (not m) (setq m major-mode))
+
+  (cond ((eq major-mode 'json-mode) "json")
+        ((eq major-mode 'python-mode) "py")
+        ((eq major-mode 'fundamental-mode) "txt")
+        (t (try (let ((result (e/chomp (s-replace-regexp "^\." "" (scrape "\\.[a-z0-9A-Z]+" (car (rassq m auto-mode-alist)))))))
+                  (setq result (cond ((string-equal result "pythonrc") "py")
+                                     (t result)))
+
+                  (if (called-interactively-p)
+                      (message result)
+                    result))
+                "txt"))))
+(defalias 'get-path-ext-from-mode-alist 'get-ext-for-mode)
+
 (provide 'pen-support)
