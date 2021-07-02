@@ -295,10 +295,8 @@ when s is a string, set the clipboard to s"
       (kill-new s)
     (if (selected-p)
         (progn
-          ;; Reselecting the region sucks
-          (progn
-            (setq s (selection))
-            (call-interactively 'kill-ring-save)))))
+          (setq s (selection))
+          (call-interactively 'kill-ring-save))))
   (if s
       (if (not silent) (message "%s" (concat "Copied: " s)))
     (progn
