@@ -21,7 +21,7 @@ gantt
 [[./project-timeline.png]]
 
 ** _Stage 1_
-This is a dockerized =pen.el= that makes use of GPT-3 and GPT-j.
+This is a dockerized =pen.el= that makes use of both GPT-3 and GPT-j.
 
 ** _Stage 2_
 This is a collaborative =pen.el= with an exploration tool like loom.
