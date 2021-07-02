@@ -1,4 +1,4 @@
-#!/usr/bin/env mypython
+#!/usr/bin/env python3.8
 # -*- coding: utf-8 -*-
 
 import sys
