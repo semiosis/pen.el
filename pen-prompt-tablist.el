@@ -95,8 +95,8 @@
           (with-current-buffer
               b
             (if (sor wd) (cd wd))
-            (let ((modefun (str2sym (concat (slugify (or modename cmd-or-csv-path)) "-tablist-mode"))))
-              (if (function-p modefun)
+            (let ((modefun (intern (concat (slugify (or modename cmd-or-csv-path)) "-tablist-mode"))))
+              (if (fboundp modefun)
                   (funcall modefun)))
             b)
         (error "tablist not created")
