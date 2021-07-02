@@ -370,7 +370,6 @@ when s is a string, set the clipboard to s"
   (if (or (region-active-p) (eq evil-state 'visual))
       (str (buffer-substring (region-beginning) (region-end)))
     (str (buffer-substring (point-min) (point-max)))))
-(defalias 'selection-or-buffer-string 'region-or-buffer-string)
 
 (defun detect-language (&optional detect buffer-not-selection)
   "Returns the language of the buffer or selection."
@@ -381,7 +380,7 @@ when s is a string, set the clipboard to s"
            (str (language-detection-string
                  (if buffer-not-selection
                      (buffer-string)
-                   (selection-or-buffer-string)))))))
+                   (region-or-buffer-string)))))))
 
     (if (string-equal "rustic" lang) (setq lang "rust"))
     (if (string-equal "clojurec" lang) (setq lang "clojure"))
