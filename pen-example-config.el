@@ -63,6 +63,7 @@
 (define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
 
 (require 'org-brain)
+(require 'pen-brain)
 (define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
 (define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
 (define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
