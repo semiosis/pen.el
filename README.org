@@ -146,28 +146,10 @@ Please email me if you would like to use my key for this project.
 https://github.com/semiosis/prompts/
 
 ** Current progress
-
-+ Full picture :: [[./docs/design/full-picture.org]]
-
----
-
-+ Gantt chart and additional project information :: [[./docs/project-timeline.org]]
++ Project timeline and design :: [[./docs/README.org]]
 
 ---
 
-+ Stage 1
-  + Implementation [2/2]
-    - [X] emacs-lisp functions are generated from YAML =.prompt= files
-    - [X] Use built-in elisp functions for portability
-    - [ ] Select backend interface in emacs
-      - [ ] Shell interface to OpenAI to python
-      - [ ] GPT-j interface
-    - [ ] Dockerize Pen
-      - https://github.com/semiosis/pen-docker/
-+ Stage 2
-  - [ ] Generations stored in Datomic
-  - [ ] Prompts stored in Datomic
-  - [ ] Make use of arbitrarily many git repositories that store prompts
 
 ** Appendix
 *** Prompt engineering
