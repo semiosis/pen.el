@@ -15,6 +15,7 @@
   - [ ] Prompt Catalogue
     - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
   - [ ] Make use of arbitrarily many git repositories that store prompts
+    - Load a repository such as this: https://github.com/semiosis/prompts
 + Stage 3
   - [ ] Incorporate OpenAI's Codex model, which should be available at this stage.
 
