@@ -1,0 +1,76 @@
+#!/bin/bash
+export TTY
+
+# This script loops the script given as arguments
+# For example:
+# # Every second, output "hi"
+# $ loop -s 1 echo hi
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -m|-ml) {
+        delay="$2"
+        delay="$((60 * $delay))"
+        shift
+        shift
+    }
+    ;;
+
+    -m1) {
+        delay="60"
+        shift
+    }
+    ;;
+
+    -s|-sl) {
+        delay="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -s1) {
+        delay=1
+        shift
+    }
+    ;;
+
+    -a1|-awk1) {
+        a1=y
+        shift
+    }
+    ;;
+
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    -v) {
+        VERBOSE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
+
+while :; do
+    test "$VERBOSE" = "y" && printf -- "%s\n" "$CMD" 2>/dev/null
+    if test "$a1" = "y"; then
+        eval "$CMD" | awk 1
+    else
+        eval "$CMD"
+    fi
+    if test -n "$delay"; then
+        test "$VERBOSE" = "y" && printf -- "%s\n" "sleep $delay" 1>&2
+        sleep "$delay"
+    fi
+done

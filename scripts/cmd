@@ -1,1 +1,13 @@
-cmd-posix
+#!/bin/sh
+export TTY
+
+# This also handles unicode correctly
+
+cmd() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+    done | sed 's/ $//'
+}
+
+cmd "$@"
