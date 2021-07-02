@@ -7,6 +7,7 @@
 (require 'helm)
 (require 'ivy)
 (require 'pp)
+(require 's)
 (require 'cl-macs)
 (require 'helm)
 (require 'company)
