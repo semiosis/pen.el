@@ -13,7 +13,7 @@
 
 (defvar my-completion-engine 'company-pen-filetype)
 
-(defvar pen.el-map (make-sparse-keymap)
+(defvar pen-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
 ;; (makunbound 'pen.el)
 (defvar-local pen.el nil)
@@ -23,7 +23,7 @@
   :global t
   :init-value t
   :lighter " pen"
-  :keymap pen.el-map)
+  :keymap pen-map)
 
 (defcustom pen-prompt-directory ""
   "Directory where .prompt files are located"
