@@ -24,4 +24,15 @@ gantt
 This is a dockerized =pen.el= that makes use of GPT-3 and GPT-j.
 
 ** _Stage 2_
-This is =pen.el= with 
+This is a collaborative =pen.el= with an exploration tool like loom.
+
+https://github.com/socketteer/loom
+
+Store prompts in Datomic.
+
+https://semiosis.github.io/posts/representing-multiverses-with-datomic/
+
++ Stage 2
+  - [ ] Generations stored in Datomic
+  - [ ] Prompts stored in Datomic
+  - [ ] Make use of arbitrarily many git repositories that store prompts
