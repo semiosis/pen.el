@@ -1,7 +1,5 @@
 * =pen.el= (_Prompt engineering_ in emacs)
-_This project is not yet ready for =melpa=, but is being developed._
-
----
+This project is not yet ready for =melpa=.
 
 =Pen= facilitates the creation,
 development, discovery and usage of prompts to
