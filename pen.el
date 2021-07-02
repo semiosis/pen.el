@@ -93,7 +93,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                    (if (equal 0 iteration)
                                        ;; The first argument may be captured through selection
                                        `(if (selected)
-                                            (my/selected-text)
+                                            (pen-selected-text)
                                           (if ,(> (length (s-lines example)) 1)
                                               (tvipe ;; ,(concat v ": ")
                                                ,example)

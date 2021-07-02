@@ -273,4 +273,13 @@ This appears to strip ansi codes.
   (cons 'progn (flatten-once
                 (cl-loop for i from 1 to n collect body))))
 
+(defun pen-selected-text ()
+  "Just give me the selected text as a string. If it's empty, then nothing was selected. region-active-p does not work for evil selection."
+  (interactive)
+  (cond
+   ((or (region-active-p) (eq evil-state 'visual))
+    (str (buffer-substring (region-beginning) (region-end))))
+   (iedit-mode
+    (iedit-current-occurrence-string))))
+
 (provide 'pen-support)
