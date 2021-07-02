@@ -224,10 +224,10 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-company.el
 (require 'pen-company)
 
-(my-load "$MYGIT/semiosis/pen.el/pen-library.el")
+;; http://github.com/semiosis/pen.el/blob/master/pen-library.el
 (require 'pen-library)
 
-(my-load "$MYGIT/semiosis/pen.el/pen-contrib.el")
+;; http://github.com/semiosis/pen.el/blob/master/pen-contrib.el
 (require 'pen-contrib)
 
 (define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
