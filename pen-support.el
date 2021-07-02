@@ -4,16 +4,6 @@
   `(progn (defvar ,symbol ,documentation)
           (setq ,symbol ,value)))
 
-(defun message-no-echo (format-string &rest args)
-  (let ((inhibit-read-only t))
-    (with-current-buffer (messages-buffer)
-      (goto-char (point-max))
-      (when (not (bolp))
-        (insert "\n"))
-      (insert (apply 'format format-string args))
-      (when (not (bolp))
-        (insert "\n")))))
-
 (defun string-empty-or-nil-p (s)
   (or (not s)
       (string-empty-p s)))
