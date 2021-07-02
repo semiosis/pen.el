@@ -61,7 +61,7 @@
   - [X] Generate functions of composed prompts
   - [ ] Generate prompts from interactive keyboard macros
   - [ ] Prompt development workflow
-  - [ ] Prompt Catalogue tablist
+  - [ ] Prompt catalogue tablist
   - [ ] Search workflow
     - Semantic search for =straight.el=
     - Semantic search for =nixos.el=
