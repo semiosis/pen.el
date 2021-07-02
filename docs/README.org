@@ -17,22 +17,26 @@
   https://mermaid-js.github.io/mermaid-live-editor/
 
 #+BEGIN_SRC mermaid :results raw :file project-timeline.png
-gantt
-        title Project timeline
-        dateFormat  YYYY-MM-DD
-        section Stage 1
-        Stage 1    :s1, 2021-03-01, 120d
-        Generate elisp functions from YAML    :a1, 2021-03-01, 30d
-        Create a bunch of prompts     :a3, 2021-03-30, 30d
-        Integrate helm, ivy and counsel     :a4, 2021-04-30, 30d
-        Integrate org-brain     :a5, 2021-05-30, 30d
-        Use elisp for portability     :b2, 2021-07-02, 1d
-        Dockerize Pen   :b4,  :after b3  , 5d
-        Select backend interface in emacs  b5:,  :after b4, 2d
-        section Stage 2
-        Stage 2   :s2, 2021-07-12, 120d
-        Connect arbitrary prompts repositories :b6, :after s2, 20d
-        Generations stored in Datomic :b7, :after b6 , 20d
+  gantt
+          title Project timeline
+          dateFormat  YYYY-MM-DD
+          section Stage 1
+          Stage 1  :done, :s1, 2021-03-01, 120d
+          Generate elisp functions from YAML  :done,  :a1, 2021-03-01, 30d
+          Create a bunch of prompts  :done,   :a3, 2021-03-30, 30d
+          Integrate helm, ivy and counsel  :done,   :a4, 2021-04-30, 30d
+          Integrate org-brain  :done,   :a5, 2021-05-30, 30d
+          Use elisp for portability :done,  :b2, 2021-07-02, 2d
+          Dockerize Pen : crit, b3, after b2 , 5d
+          Convert shell to Python : crit, b4, after b2 , 14d
+          Select backend interface in emacs :crit, after b3, 2d
+          section Stage 2
+          Stage 2  :s2, 2021-07-12, 120d
+          Connect arbitrary prompts repositories : b6, 2021-07-12, 20d
+          Generations stored in Datomic :after b6 , 20d
+          Connect to more emacs packages :after b6 , 20d
+          Real-time completion of tokens with interrupt :after b6 , 20d
+          Multiversal viewer :after b6 , 20d
 #+END_SRC
 
 #+RESULTS:
