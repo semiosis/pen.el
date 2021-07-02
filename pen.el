@@ -230,9 +230,5 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-contrib.el
 (require 'pen-contrib)
 
-(define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
-(define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
-(define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
-
 (provide 'my-openai)
 (provide 'pen)
