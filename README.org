@@ -151,7 +151,7 @@ https://github.com/semiosis/prompts/
 
 ---
 
-+ Gantt chart :: [[./docs/project-timeline.org]]
++ Gantt chart and additional project information :: [[./docs/project-timeline.org]]
 
 ---
 
