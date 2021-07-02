@@ -108,6 +108,12 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 ** Contributors
 Please make an issue to this repository to ask for membership.
 
+*** 
+$MYGIT/semiosis/pen.el/installation.org
+
+*** Discord
+860104344900599839
+
 *** Testing GPT-3 prompts without a key
 Pushing your own branch will run tests.
 
