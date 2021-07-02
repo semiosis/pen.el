@@ -132,7 +132,7 @@ https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 ** Default Key Bindings
 | key binding    | description    |
 |----------------+----------------|
-| <kbd>SPC</kbd> | =pen-generate= |
+| <kbd>SPC</kbd> | =pen-run-prompt-function= |
 
 *** Free prompts to use
 https://github.com/semiosis/prompts/
