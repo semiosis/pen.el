@@ -23,7 +23,8 @@ gantt
         section Stage 1
         Stage 1    :s1, 2021-03-01, 90d
         Generate elisp functions from YAML    :a1, 2021-03-01, 30d
-        Integrate helm, ivy and counsel     :a3, 2021-03-30, 30d
+        Create a bunch of prompts     :a3, 2021-03-30, 30d
+        Integrate helm, ivy and counsel     :a4, 2021-04-30, 30d
         Use elisp for portability     :a2, 2021-07-02, 1d
         Dockerize Pen     :after a2  , 2d
         Select backend interface in emacs     :after a2  , 2d
