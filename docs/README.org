@@ -58,7 +58,7 @@
     - [ ]If selection then text is replaced by default
   - [X] Prompt Catalogue tablist prototype
     - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
-  - [X] Generate funxctions of composed prompts
+  - [X] Generate functions of composed prompts
   - [ ] Generate prompts from interactive keyboard macros
   - [ ] Development workflow
   - [ ] Prompt Catalogue tablist
