@@ -15,3 +15,6 @@
 
 ** Add scripts to PATH
 - https://github.com/semiosis/pen.el/tree/master/scripts
+
+** Example emacs config
+[[./pen-example-config.el]]
