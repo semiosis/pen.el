@@ -1,0 +1,25 @@
+* Roles
+** Developing speculative documentation
+- What's next?
+
+** Developing prompts
+https://github.com/semiosis/prompts/blob/master/snippets/prompt-description-mode/prompt
+
+*** Creating prompt blueprints
+This is just creating the prompt without testing and without
+implementation.
+
+*** Implementing prompts
+
+*** Augmenting other emacs packages
+
+*** Developing the schema for prompt description files
+
+** Writing emacs lisp
+
+*** Prompts composition
+
+*** The =Imaginary Interpreter= (=ii=) and =imaginary-mode=
+This is a programming/writing environment without any parsers,
+interpreters or refactoring tools save for the language model, relying
+solely on prompts.
