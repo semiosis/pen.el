@@ -81,7 +81,7 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 
 ** Compatability
 *** Operating systems
-- Ubuntu
+- Linux/Ubuntu
 *** Language models
 - OpenAI API (=GPT-3=)
   - https://beta.openai.com/
