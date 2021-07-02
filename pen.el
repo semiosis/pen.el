@@ -10,6 +10,7 @@
 (require 'cl-macs)
 (require 'helm)
 (require 'company)
+(require 'selected)
 
 (defvar my-completion-engine 'company-pen-filetype)
 
