@@ -1,12 +1,4 @@
 * Setup
-** Requirements
-*** =openai= =pip= library and command
-#+BEGIN_SRC sh -n :sps bash :async :results none
-  pip3 install openai
-#+END_SRC
-*** =openai= API key
-Please email me if you would like to use my key for this project.
-
 ** Set the =openai= API key using emacs' =custom=
 #+BEGIN_SRC text -n :async :results verbatim code
   M-x customize-group

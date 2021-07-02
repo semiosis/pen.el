@@ -1,4 +1,11 @@
 * Dependencies
+** =openai= =pip= library and command
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  pip3 install openai
+#+END_SRC
+*** =openai= API key
+Please email me if you would like to use my key for this project.
+
 ** Install =emacs-yamlmod=
 - https://github.com/perfectayush/emacs-yamlmod
 
