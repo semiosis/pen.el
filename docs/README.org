@@ -28,9 +28,8 @@ gantt
         Select backend interface in emacs     :after a2  , 2d
         section Stage 2
         Stage 2   :s2, 2021-07-12, 90d
-        Connect arbitrary prompts repositories :b1, 2021-07-10, 2d
-        Generations stored in Datomic :after a2  , 2d
-        section Andrew
+        Connect arbitrary prompts repositories :b1, 2021-07-10, 10d
+        Generations stored in Datomic :after a2  , 10d
 #+END_SRC
 
 #+RESULTS:
