@@ -143,7 +143,7 @@ https://github.com/semiosis/prompts/
 ** Current progress
 + Implementation [1/1]
   - [X] emacs-lisp functions are generated from YAML =.prompt= files
-+ Design [2/2]
++ Design [2/3]
   - [X] Default behaviour of generated functions
     - [X] First argument may be selection
     - [ ]If selection then text is replaced by default
@@ -151,8 +151,8 @@ https://github.com/semiosis/prompts/
   - [ ] Generate prompts from interactive keyboard macros
   - Development workflow
   - Search workflow
-+ Portability [0/1]
-  - [-] Use built-in elisp functions
++ Portability [1/1]
+  - [X] Use built-in elisp functions
 
 ** Appendix
 *** Prompt engineering
