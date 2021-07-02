@@ -60,6 +60,8 @@
 (define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
 (define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
+
+(require 'org-brain)
 (define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
 (define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
 (define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
