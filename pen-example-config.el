@@ -58,5 +58,6 @@
 (define-key pen-map (kbd "H-P") 'pen-complete-long)
 (define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
+(define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
 
 (setq pen-prompt-directory "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts")

@@ -178,7 +178,7 @@ Function names are prefixed with pen-pf- for easy searching"
   (let ((f (fz pen-prompt-functions nil nil "pen filter: ")))
     (if f
         (filter-selected-region-through-function (intern f)))))
-(define-key global-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
+
 
 (defun pen-run-prompt-function ()
   (interactive)
