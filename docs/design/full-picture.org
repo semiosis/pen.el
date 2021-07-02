@@ -1,0 +1,11 @@
++ Design [ ]
+  - [X] Default behaviour of generated functions
+    - [X] First argument may be selection
+    - [ ]If selection then text is replaced by default
+  - [X] Generate funxctions of composed prompts
+  - [ ] Generate prompts from interactive keyboard macros
+  - Development workflow
+  - Search workflow
+    - Semantic search for =straight.el=
+    - Semantic search for =nixos.el=
+    - Semantic concordance for =KJV bible=

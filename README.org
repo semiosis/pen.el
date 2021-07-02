@@ -64,7 +64,9 @@ for =pen.el= and =examplary=.
 https://github.com/semiosis/prompts/
 
 ** Documentation
-https://github.com/semiosis/pen.el/tree/master/docs
+- [[./docs][Documentation directory]]
+  - [[./docs/in-development][Currently in development]]
+  - [[./docs/playground-settings.org][OpenAI Playground Settings]]
 
 ** Demonstration
 https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
@@ -144,24 +146,20 @@ Please email me if you would like to use my key for this project.
 https://github.com/semiosis/prompts/
 
 ** Current progress
-+ Implementation [1/1]
-  - [X] emacs-lisp functions are generated from YAML =.prompt= files
-+ Docker
-  - [ ] This is in progress.
-    - https://github.com/semiosis/pen-docker/
-+ Design [2/3]
-  - [X] Default behaviour of generated functions
-    - [X] First argument may be selection
-    - [ ]If selection then text is replaced by default
-  - [X] Generate funxctions of composed prompts
-  - [ ] Generate prompts from interactive keyboard macros
-  - Development workflow
-  - Search workflow
-    - Semantic search for =straight.el=
-    - Semantic search for =nixos.el=
-    - Semantic concordance for =KJV bible=
-+ Portability [1/1]
-  - [X] Use built-in elisp functions
+[[./docs/design/full-picture.org]]
+
++ Stage 1
+  + Implementation [2/2]
+    - [X] emacs-lisp functions are generated from YAML =.prompt= files
+    - [X] Use built-in elisp functions for portability
+    - [ ] Select backend interface in emacs
+      - [ ] Shell interface to OpenAI to python
+      - [ ] GPT-j interface
+    - [ ] Dockerize
+      - https://github.com/semiosis/pen-docker/
++ Stage 2
+  - [ ] Generations stored in Datomic
+  - [ ] Prompts stored in Datomic
 
 ** Appendix
 *** Prompt engineering

@@ -1,4 +1,4 @@
-* Playground Settings
+* OpenAI Playground Settings
 These are the official playground settings of the OpenAI Advanced Playground for GPT-3.
 
 + Also, here are some glossaries :: http://github.com/semiosis/pen.el/blob/master/glossary.txt
