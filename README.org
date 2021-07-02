@@ -1,12 +1,12 @@
 * =pen.el= (_Prompt engineering_ in emacs)
 =Pen= facilitates the creation,
 development, discovery and usage of prompts to
-a Language Model such as GPT-3.
+a Language Model such as =OpenAI='s =GPT-3= or =EleutherAI='s =GPT-j=.
 
-- Create elisp functions based on GPT-3 prompts
-- Chain GPT-3 queries together using keyboard macros and functions
+- Create elisp functions based on GPT-3 and other "Language Model" prompts
+- Chain prompts together using keyboard macros and functions
 - Interactively query, generate and transfrom both prose and code
-- Use GPT-3 as a search engine within emacs
+- Use the Language Model as a search engine and a semantic search engine within emacs
   - Search the internet
   - Search documents
     - https://beta.openai.com/docs/introduction/semantic-search
