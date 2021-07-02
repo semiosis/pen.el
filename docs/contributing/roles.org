@@ -1,4 +1,8 @@
 * Roles
+Please choose an area to work on from the following list, from the project timeline, or from your own speculation.
+
+https://github.com/semiosis/pen.el/tree/master/docs
+
 ** Developing speculative documentation
 - What's next?
 
