@@ -66,7 +66,8 @@ https://github.com/semiosis/prompts/
 ** Documentation
 https://github.com/semiosis/pen.el/tree/master/docs
 **** Fine-tuning pipeline
-[[./docs/todo/fine-tuning.org]]
+- [[./docs/todo/fine-tuning.org]]
+- https://github.com/semiosis/fine-tuning-gpt-3/
 **** =imaginary-mode=
 - http://github.com/semiosis/pen.el/blob/master/docs/todo/imaginary-mode.org
   - [[./docs/todo/imaginary-mode.org]]
