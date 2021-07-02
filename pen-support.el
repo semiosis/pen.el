@@ -303,6 +303,51 @@ when s is a string, set the clipboard to s"
       (shell-command-to-string "xsel --clipboard --output"))))
 (defalias 'xc)
 
+(defun pen-ivy-completing-read (prompt collection
+                                       &optional predicate require-match initial-input
+                                       history def inherit-input-method)
+  "This is like ivy-completing-read but it does not escape +"
+  (let ((handler
+         (and (< ivy-completing-read-ignore-handlers-depth (minibuffer-depth))
+              (assq this-command ivy-completing-read-handlers-alist))))
+    (if handler
+        (let ((completion-in-region-function #'completion--in-region)
+              (ivy-completing-read-ignore-handlers-depth (1+ (minibuffer-depth))))
+          (funcall (cdr handler)
+                   prompt collection
+                   predicate require-match
+                   initial-input history
+                   def inherit-input-method))
+      ;; See the doc of `completing-read'.
+      (when (consp history)
+        (when (numberp (cdr history))
+          (setq initial-input (nth (1- (cdr history))
+                                   (symbol-value (car history)))))
+        (setq history (car history)))
+      (when (consp def)
+        (setq def (car def)))
+      (let ((str (ivy-read
+                  prompt collection
+                  :predicate predicate
+                  :require-match (when (and collection require-match)
+                                   require-match)
+                  :initial-input (cond ((consp initial-input)
+                                        (car initial-input))
+                                       (t
+                                        initial-input))
+                  :preselect def
+                  :def def
+                  :history history
+                  :keymap nil
+                  :dynamic-collection ivy-completing-read-dynamic-collection
+                  :extra-props '(:caller ivy-completing-read)
+                  :caller (if (and collection (symbolp collection))
+                              collection
+                            this-command))))
+        (if (string= str "")
+            (or def "")
+          str)))))
+
 (defun completing-read-hist (prompt &optional initial-input histvar default-value)
   "read-string but with history."
   (if (not histvar)
@@ -322,7 +367,7 @@ when s is a string, set the clipboard to s"
              (or (with-local-quit
                    (let ((completion-styles
                           '(basic))
-                         (s (str (my-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil))))
+                         (s (str (pen-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil))))
 
                      (setq ,histvar (seq-uniq ,histvar 'string-equal))
                      s))
