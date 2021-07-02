@@ -365,6 +365,21 @@ when s is a string, set the clipboard to s"
 (defun vector2list (v)
   (append v nil))
 
+(defun detect-language (&optional detect buffer-not-selection)
+  "Returns the language of the buffer or selection."
+  (interactive)
+  (let ((lang
+         (if (not detect)
+             (sed "s/-mode$//" (current-major-mode-string))
+           (str (language-detection-string
+                 (if buffer-not-selection
+                     (buffer-string)
+                   (selection-or-buffer-string)))))))
+
+    (if (string-equal "rustic" lang) (setq lang "rust"))
+    (if (string-equal "clojurec" lang) (setq lang "clojure"))
+    lang))
+
 (defun mode-to-lang (&optional modesym)
   (if (not modesym)
       (setq modesym major-mode))
@@ -372,7 +387,7 @@ when s is a string, set the clipboard to s"
 
 (defun lang-to-mode (&optional langstr)
   (if (not langstr)
-      (setq langstr (current-lang)))
+      (setq langstr (detect-language)))
   (intern (concat langstr "-mode")))
 
 (defun get-ext-for-lang (langstr)

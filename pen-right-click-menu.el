@@ -112,21 +112,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     (unless nowait
       (popup-delete menu))))
 
-(defun detect-language (&optional detect buffer-not-selection)
-  "Returns the language of the buffer or selection."
-  (interactive)
-  (let ((lang
-         (if (not detect)
-             (sed "s/-mode$//" (current-major-mode-string))
-           (str (language-detection-string
-                 (if buffer-not-selection
-                     (buffer-string)
-                   (selection-or-buffer-string)))))))
-
-    (if (string-equal "rustic" lang) (setq lang "rust"))
-    (if (string-equal "clojurec" lang) (setq lang "clojure"))
-    lang))
-
 (defun gpt-test-haskell ()
   (let ((lang
          ;; (pen-pf-test-if-text-is-haskell (selection))
