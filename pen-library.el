@@ -1,3 +1,5 @@
+(require 'pen-brain)
+
 (defun get-path-semantic ()
   (interactive)
   (cond
