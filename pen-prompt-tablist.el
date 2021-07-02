@@ -3,7 +3,7 @@
 
 (defvar pen-prompts-tablist-data-command "oci prompts-details -csv")
 
-(defvar pen-prompts-tablist-meta ("prompts" t "30 30 20 10 15 15 15 10"))
+(defvar pen-prompts-tablist-meta '("prompts" t "30 30 20 10 15 15 15 10"))
 
 (defmacro defcmdmode (cmd &optional cmdtype)
   (setq cmd (str cmd))
