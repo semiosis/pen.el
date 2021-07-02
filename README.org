@@ -103,6 +103,9 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 Please make an issue to this repository to ask
 for membership to the organisation.
 
+*** =openai= API key
+Please email me if you would like to use my key for this project.
+
 *** Installation
 [[./installation.org]]
 
