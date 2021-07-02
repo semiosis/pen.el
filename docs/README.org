@@ -20,7 +20,7 @@
   - [ ] Incorporate OpenAI's Codex model, which should be available at this stage.
   - [ ] vim
     - https://github.com/semiosis/pen.vim
-  - [ ] Standalone application based in emacs
+  - [ ] Standalone application based in emacs, available through a web browser
     - https://github.com/semiosis/pen
 
 + Use mermaid for Gantt chart in emacs :: [[https://mullikine.github.io/posts/review-of-mermaid-markdownish-syntax-for-generating-flowcharts-digrams/][Review of 'mermaid - flowcharts, diagrams, etc.' // Bodacious Blog]]
