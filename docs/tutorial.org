@@ -29,3 +29,17 @@ loaded from this file.
   
   /usr/local/bin/openai "$@"
 #+END_SRC
+
+* Usage
+** Enable =pen-mode= globally (on all buffers)
+- http://github.com/semiosis/pen.el/blob/master/pen-example-config.el
+
+[[./pen-example-config.el]]
+
+* Default Key Bindings
+| key binding    | description    |
+|----------------+----------------|
+| <kbd>SPC</kbd> | =pen-run-prompt-function= |
+
+** Free prompts to use
+https://github.com/semiosis/prompts/
