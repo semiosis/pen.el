@@ -1,9 +1,0 @@
---privileged
---env "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR"
---env DBUS_SESSION_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS"
---rm
---env "DISPLAY=:0"
--v /usr/share/fonts:/usr/share/fonts
---network host
--ti
-emacs
