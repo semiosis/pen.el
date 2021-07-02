@@ -1,4 +1,6 @@
 * =pen.el= (_Prompt engineering_ in emacs)
+_This project is not yet ready for =melpa=, but is being developed._
+
 =Pen= facilitates the creation,
 development, discovery and usage of prompts to
 a Language Model such as =OpenAI='s =GPT-3= or =EleutherAI='s =GPT-j=.
@@ -17,7 +19,7 @@ a Language Model such as =OpenAI='s =GPT-3= or =EleutherAI='s =GPT-j=.
 | =GPL-3= |
 
 + Goals
-  - Programmatically navigate GPT-3, GPT-j and future language models
+  - Programmatically navigate =GPT-3=, =GPT-j= and future language models
   - Create useful prompts
   - Prototype NLP tasks by creating prompts
     - Substitute external tools for prototypes
