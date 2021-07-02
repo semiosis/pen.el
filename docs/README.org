@@ -13,6 +13,7 @@
     - https://semiosis.github.io/posts/representing-multiverses-with-datomic/
   - [ ] Prompts stored in Datomic
   - [ ] Prompt Catalogue
+    - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
   - [ ] Make use of arbitrarily many git repositories that store prompts
 + Stage 3
   - [ ] Incorporate OpenAI's Codex model, which should be available at this stage.
