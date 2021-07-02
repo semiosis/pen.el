@@ -1,8 +1,8 @@
-***** Fine-tuning
-****** The process of fine-tuning should be automated with emacs
+* Fine-tuning pipeline
+** The process of fine-tuning should be automated with emacs
 - http://github.com/mullikine/fine-tuning-gpt-3
 
-****** Fine-tuned models result in better domain-specific completion
+** Fine-tuned models result in better domain-specific completion
 CoPilot has been fine-tuned specifically on public domain GitHub code but so has GPT-j, the EleutherAI alternative.
 
 GPT-j is the future of code generation using pen.el, most likely.
