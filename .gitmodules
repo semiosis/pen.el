@@ -1,6 +1,6 @@
 [submodule "prompts"]
 	path = prompts
 	url = https://github.com/mullikine/prompts
-[submodule "docker"]
-	path = docker
+[submodule "pen-docker"]
+	path = pen-docker
 	url = https://github.com/semiosis/pen-docker
