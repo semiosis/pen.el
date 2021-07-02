@@ -43,11 +43,10 @@ Takes into account the current file name."
   `(progn (let* ((inhibit-message t))
             ,@body)))
 
-(defun e/escape-string (&rest strings)
+(defun pen-q (&rest strings)
   (let ((print-escape-newlines t))
     (s-join " " (mapcar 'prin1-to-string strings))))
-(defalias 'e/q 'e/escape-string)
-(defalias 'q 'e/escape-string)
+(defalias 'pen-q 'e/escape-string)
 
 (defun e/chomp (str)
   "Chomp (remove tailing newline from) STR."
@@ -106,10 +105,10 @@ This appears to strip ansi codes.
                      (list (list "PATH" (getenv "PATH"))
                            (if (and (variable-p 'sh-update) (eval 'sh-update))
                                (list "UPDATE" "y")))))))
-      (setq final_cmd (concat exps "; ( cd " (e/q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))
+      (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))
 
     (if detach
-        (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (e/q final_cmd) " &")))
+        (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &")))
 
     (shut-up-c
      (if (not stdin)
@@ -208,7 +207,7 @@ This appears to strip ansi codes.
    (evil-visual-state-p)))
 
 (defun glob (pattern &optional dir)
-  (split-string (cl-sn (concat "glob -b " (q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
+  (split-string (cl-sn (concat "glob -b " (pen-q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
 
 (defun new-buffer-from-string (&optional contents bufname mode nodisplay)
   "Create a new untitled buffer from a string."
@@ -291,7 +290,6 @@ when s is a string, set the clipboard to s"
       (if (not silent) (message "%s" (concat "Copied: " s)))
     (progn
       (shell-command-to-string "xsel --clipboard --output"))))
-(defalias 'xc)
 
 (defun pen-ivy-completing-read (prompt collection
                                        &optional predicate require-match initial-input

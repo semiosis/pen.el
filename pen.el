@@ -138,11 +138,11 @@ Function names are prefixed with pen-pf- for easy searching"
                                                                  "OAI_CACHE=y "
                                                                "")
                                                              "openai-complete "
-                                                             (q path))
+                                                             (pen-q path))
                                                        (flatten-once
                                                         (cl-loop for vs in var-slugs collect
                                                                  (list " "
-                                                                       (list 'q (intern vs)))))))))
+                                                                       (list 'pen-q (intern vs)))))))))
                                             (result
                                              (chomp
                                               (mapconcat 'identity

@@ -225,7 +225,7 @@ Most of this is borrowed from python.el")
   (interactive (list (inf-pen-fz-contacts-and-threads)))
 
   (let ((history
-         (s-replace-regexp "\r+" "" (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (q contact) " 1000000"))))))
+         (s-replace-regexp "\r+" "" (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (pen-q contact) " 1000000"))))))
     (with-current-buffer (evipe history)
       (end-of-buffer)
       (beginning-of-line-or-indentation))))

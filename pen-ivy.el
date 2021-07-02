@@ -91,12 +91,12 @@ prompt additionally for EXTRA-AG-ARGS."
                (snc
                 (concat
                  "cd "
-                 (q pen-prompt-directory)
+                 (pen-q pen-prompt-directory)
                  "; find . -maxdepth 1 -mindepth 1 -type f | sed -e 's/..//' -e 's/\\.prompt$//'"))
                 nil
                 nil
                 "pen list: "))
-             (cf (eval `(gen-counsel-function ,(concat "loop openai-complete -s " (q pfp)) 'etv))))
+             (cf (eval `(gen-counsel-function ,(concat "loop openai-complete -s " (pen-q pfp)) 'etv))))
         (call-interactively cf))))
 
 (provide 'pen-ivy)
