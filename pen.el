@@ -95,12 +95,10 @@ Function names are prefixed with pen-pf- for easy searching"
                                        `(if (selected)
                                             (pen-selected-text)
                                           (if ,(> (length (s-lines example)) 1)
-                                              (tvipe ;; ,(concat v ": ")
-                                               ,example)
+                                              (etv ,example)
                                             (read-string-hist ,(concat v ": ") ,example)))
                                      `(if ,(> (length (s-lines example)) 1)
-                                          (tvipe ;; ,(concat v ": ")
-                                           ,example)
+                                          (etv ,example)
                                         (read-string-hist ,(concat v ": ") ,example))))
                                  do
                                  (progn
@@ -136,7 +134,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                       (list
                                                        (list 'concat
                                                              (if cache
-                                                                 "oci "
+                                                                 "OAI_CACHE=y "
                                                                "")
                                                              "openai-complete "
                                                              (q path))
