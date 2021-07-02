@@ -1,0 +1,31 @@
+#!/bin/sh
+
+tee -a /root/.emacs <<HEREDOC
+;; load emacs 24's package system. Add MELPA repository.
+(when (>= emacs-major-version 24)
+  (require 'package)
+(package-initialize)
+   
+;;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+;;(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
+;;(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+;;(add-to-list 'package-archives '("gnu" . "http://elpa.zilongshanren.com/gnu/"))
+;;(add-to-list 'package-archives '("SC" . "http://joseito.republika.pl/sunrise-commander/"))
+(add-to-list 'package-archives '("melpa" . "http://elpa.zilongshanren.com/melpa/"))
+
+;; Fix HTTP1/1.1 problems
+(setq url-http-attempt-keepalives nil)
+
+;; (package-refresh-contents)
+
+;;(package-install 'docker)
+;;(package-install 'tablist)
+)
+
+;;(package-install 'docker)
+;;(package-install 'tablist)
+HEREDOC
+
+echo "(setq x-alt-keysym 'meta)" >> /root/.emacs
+
+apk add ttf-dejavu
