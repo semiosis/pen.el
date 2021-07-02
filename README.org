@@ -146,9 +146,14 @@ Please email me if you would like to use my key for this project.
 https://github.com/semiosis/prompts/
 
 ** Current progress
-[[./docs/design/full-picture.org]]
 
-[[./docs/project-timeline.org]]
++ Full picture :: [[./docs/design/full-picture.org]]
+
+---
+
++ Gantt chart :: [[./docs/project-timeline.org]]
+
+---
 
 + Stage 1
   + Implementation [2/2]
