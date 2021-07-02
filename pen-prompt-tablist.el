@@ -1,5 +1,6 @@
 (require 'tabulated-list)
 (require 'tablist)
+(require 'pcsv)
 
 (defvar pen-prompts-tablist-data-command "oci prompts-details -csv")
 
