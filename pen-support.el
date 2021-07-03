@@ -76,7 +76,6 @@ Takes into account the current file name."
 (defun pen-q (&rest strings)
   (let ((print-escape-newlines t))
     (s-join " " (mapcar 'prin1-to-string strings))))
-(defalias 'pen-q 'e/escape-string)
 
 (defun e/chomp (str)
   "Chomp (remove tailing newline from) STR."
@@ -237,7 +236,7 @@ This appears to strip ansi codes.
    (evil-visual-state-p)))
 
 (defun glob (pattern &optional dir)
-  (split-string (cl-sn (concat "glob -b " (pen-q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
+  (split-string (cl-sn (concat "pen-glob  (pen-q pattern)" " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
 
 (defun new-buffer-from-string (&optional contents bufname mode nodisplay)
   "Create a new untitled buffer from a string."
