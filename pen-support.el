@@ -8,8 +8,6 @@
   "Try to run a thing. Run something else if it fails."
   `(try-cascade '(,@list-of-alternatives)))
 
-;; TODO Ensure that if the last one errors, I still get an error
-;; This is probably better written as a recursive function
 (defun try-cascade (list-of-alternatives)
   "Try to run a thing. Run something else if it fails."
   ;; (list2str list-of-alternatives)
