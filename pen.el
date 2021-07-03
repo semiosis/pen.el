@@ -30,7 +30,7 @@
 (defcustom pen-prompt-directory ""
   "Directory where .prompt files are located"
   :type 'string
-  :group 'prompt-engineer
+  :group 'pen
   :initialize #'custom-initialize-default)
 
 (defset pen-prompt-functions nil)

@@ -1,6 +1,12 @@
 ;; This is for everything outside of core pen stuff
 ;; i.e. applications built on pen.el
 
+(defcustom pen-nlsh-histdir ""
+  "Directory where history files for nlsh"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defvar pen-tutor-common-questions
   '("What is <1:q> used for?"
     "What are some good learning materials"))
@@ -51,13 +57,20 @@
   (setq comint-input-ring-file-name history-file)
   (comint-read-input-ring 'silent))
 
+(defun new-script-from-arguments (cmd &optional dir)
+  (sh-notty (concat "export TTY=; "
+                    (if dir (concat " CWD=" (q dir) " ")
+                      "")
+                    " nsfa -E " (q cmd)) nil (or dir (cwd))))
+(defalias 'nsfa 'new-script-from-arguments)
+
 (defun comint-quick (cmd &optional dir)
   (interactive (list (read-string-hist "comint-quick: ")))
   (let* ((slug (slugify cmd))
          (buf (make-comint slug (nsfa cmd dir))))
     (with-current-buffer buf
       (switch-to-buffer buf)
-      (turn-on-comint-history (concat "/home/shane/notes/programs/comint/history/" slug)))))
+      (turn-on-comint-history (concat pen-nlsh-histdir slug)))))
 
 (defun nlsh-os (os)
   (interactive (list (fz list-of-sh-operating-systems

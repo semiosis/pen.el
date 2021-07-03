@@ -69,3 +69,4 @@
 (define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
 
 (setq pen-prompt-directory "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts")
+(setq pen-nlsh-histdir "/home/shane/notes/programs/comint/history/")
