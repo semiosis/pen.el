@@ -1,3 +1,29 @@
+(defmacro try-cascade-sugar (&rest list-of-alternatives)
+       "Try to run a thing. Run something else if it fails."
+       `(try-cascade '(,@list-of-alternatives)))
+
+;; TODO Ensure that if the last one errors, I still get an error
+;; This is probably better written as a recursive function
+(defun try-cascade (list-of-alternatives)
+  "Try to run a thing. Run something else if it fails."
+  ;; (list2str list-of-alternatives)
+
+  (let* ((failed t)
+         (result
+          (catch 'bbb
+            (dolist (p list-of-alternatives)
+              ;; (message "%s" (list2str p))
+              (let ((result nil))
+                (tryelse
+                 (progn
+                   (setq result (eval p))
+                   (setq failed nil)
+                   (throw 'bbb result))
+                 result))))))
+    (if failed
+        (error "Nothing in try succeeded")
+      result)))
+
 (defmacro defset (symbol value &optional documentation)
   "Instead of doing a defvar and a setq, do this. [[http://ergoemacs.org/emacs/elisp_defvar_problem.html][ergoemacs.org/emacs/elisp_defvar_problem.html]]"
 
