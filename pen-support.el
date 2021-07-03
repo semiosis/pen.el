@@ -236,7 +236,7 @@ This appears to strip ansi codes.
    (evil-visual-state-p)))
 
 (defun glob (pattern &optional dir)
-  (split-string (cl-sn (concat "pen-glob  (pen-q pattern)" " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
+  (split-string (cl-sn (concat "pen-glob " (pen-q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
 
 (defun new-buffer-from-string (&optional contents bufname mode nodisplay)
   "Create a new untitled buffer from a string."
