@@ -32,10 +32,6 @@
      (list
       thing
       query))))
-;; (s-format "hello ${query}" 'aget '(query . "thereE"))
-
-;; (s-format "hello ${query}" 'aget '(("query" . "thereE")))
-
 
 ;; "OS which have a bash-like shell of some kind installed"
 (defset list-of-sh-operating-systems '(
@@ -50,6 +46,18 @@
                                        "macOS"
                                        "Ubuntu 20.04"
                                        "Arch Linux"))
+
+(defun turn-on-comint-history (history-file)
+  (setq comint-input-ring-file-name history-file)
+  (comint-read-input-ring 'silent))
+
+(defun comint-quick (cmd &optional dir)
+  (interactive (list (read-string-hist "comint-quick: ")))
+  (let* ((slug (slugify cmd))
+         (buf (make-comint slug (nsfa cmd dir))))
+    (with-current-buffer buf
+      (switch-to-buffer buf)
+      (turn-on-comint-history (concat "/home/shane/notes/programs/comint/history/" slug)))))
 
 (defun nlsh-os (os)
   (interactive (list (fz list-of-sh-operating-systems

@@ -25,7 +25,7 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 #+BEGIN_SRC text -n :async :results verbatim code
   Imagine that you hold a powerful and versatile pen, whose ink flows forth in
   branching variations of all possible expressions: every story, every theory,
-  poem and every lie that humanity has ever told, and the vast interstices of
+  every poem and every lie that humanity has ever told, and the vast interstices of
   their latent space. You hold this pen to the sky and watch with intense
   curiosity as your ink flows upwards in tiny streaks, arcing outwards and
   downwards to trace a fractal pattern across the sky. You watch as the branching
