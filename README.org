@@ -104,7 +104,7 @@ Please make an issue to this repository to ask
 for membership to the organisation.
 
 *** =openai= API key
-Please email me if you would like to use my key for this project.
+Please use your own key.
 
 You will need to be inducted into the project.
 
@@ -120,9 +120,9 @@ You may select from one of the roles/tasks.
 860104344900599839
 
 *** Testing GPT-3 prompts without a key
-Please email me if you would like to use my key for this project.
-
 You may test prompts without a key using the =prompts= repository.
+
+I have suspended the automatic tests pending review from OpenAI.
 
 Pushing your own branch will run tests.
 
