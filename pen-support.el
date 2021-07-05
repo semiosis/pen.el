@@ -267,6 +267,18 @@ This appears to strip ansi codes.
 (defun flatten-once (list-of-lists)
   (apply #'append list-of-lists))
 
+(defun s-preserve-trailing-whitespace (s-new s-old)
+  "Return s-new but with the same amount of trailing whitespace as s-old."
+  (let* ((trailing_ws_pat "[ \t\n]*\\'")
+         (original_whitespace (regex-match-string trailing_ws_pat s-old))
+         (new_result (concat (replace-regexp-in-string trailing_ws_pat "" s-new) original_whitespace)))
+    new_result))
+
+(defun preserve-trailing-whitespace (fun s)
+  "Run a string filter command, but preserve the amount of trailing whitespace. (ptw 'awk1 \"hi\")"
+  (s-preserve-trailing-whitespace (apply fun (list s)) s))
+(defalias 'ptw 'preserve-trailing-whitespace)
+
 (defun filter-selected-region-through-function (fun)
   (let* ((start (if (selected) (region-beginning) (point-min)))
          (end (if (selected) (region-end) (point-max)))
