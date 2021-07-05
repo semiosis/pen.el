@@ -13,9 +13,7 @@
 
   (if (not (buffer-file-name))
       (write-file
-       (chomp
-        (eval
-         `(b tf ,(get-ext-for-mode major-mode)))))))
+       (make-temp-file nil nil (concat "." (get-ext-for-mode major-mode))))))
 
 (defun f-realpath (path &optional dir)
   (if path
