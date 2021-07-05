@@ -77,10 +77,9 @@ Takes into account the current file name."
   (let ((print-escape-newlines t))
     (s-join " " (mapcar 'prin1-to-string strings))))
 
-(defun e/chomp (str)
+(defun chomp (str)
   "Chomp (remove tailing newline from) STR."
   (replace-regexp-in-string "\n\\'" "" str))
-(defalias 'chomp 'e/chomp)
 
 (defun get-string-from-file (filePath)
   "Return filePath's file content."
