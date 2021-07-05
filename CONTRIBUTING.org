@@ -19,8 +19,6 @@ You may select from one of the roles/tasks or suggest one yourself.
 860104344900599839
 
 *** Testing GPT-3 prompts without a key
-Please email me if you would like to use my key for this project.
-
 You may test prompts without a key using the =prompts= repository.
 
 Pushing your own branch will run tests.
