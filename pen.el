@@ -138,7 +138,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                       (list
                                                        (list 'concat
                                                              (if cache
-                                                                 "OAI_CACHE=y "
+                                                                 "LM_COMPLETE_CACHE=y "
                                                                "")
                                                              "lm-complete "
                                                              (pen-q path))
