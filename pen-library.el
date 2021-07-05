@@ -58,7 +58,7 @@
                         (save-temp-if-no-file))
                     (let ((p (full-path)))
                       (if (stringp p)
-                          (e/chomp p)))))))
+                          (chomp p)))))))
     (if (interactive-p)
         (my/copy path)
       path)))

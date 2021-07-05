@@ -77,6 +77,29 @@ Takes into account the current file name."
   (let ((print-escape-newlines t))
     (s-join " " (mapcar 'prin1-to-string strings))))
 
+(defun list2str (&rest l)
+  "join the string representation of elements of a given list into a single string with newline delimiters"
+  (if (equalp 1 (length l))
+      (setq l (car l)))
+  (mapconcat 'identity (mapcar 'str l) "\n"))
+
+(defun scrape (re s &optional delim)
+  "Return a list of matches of re within s.
+delim is used to guarantee the function returns multiple matches per line
+(etv (scrape \"\\b\\w+\\b\" (buffer-string) \" +\"))"
+  (if delim
+      (setq s (list2str (s-split delim s))))
+  (list2str
+   (-flatten
+    (cl-loop
+     for
+     line
+     in
+     (s-split "\n" (str s))
+     collect
+     (if (string-match-p re line)
+         (s-replace-regexp (concat "^.*\\(" re "\\).*") "\\1" line))))))
+
 (defun chomp (str)
   "Chomp (remove tailing newline from) STR."
   (replace-regexp-in-string "\n\\'" "" str))
@@ -312,6 +335,8 @@ This appears to strip ansi codes.
    (iedit-mode
     (iedit-current-occurrence-string))))
 
+(defalias 'pps 'pp-to-string)
+
 (defun xc (&optional s silent)
   "emacs kill-ring, xclip copy
 when s is nil, return current contents of clipboard
@@ -412,6 +437,10 @@ when s is a string, set the clipboard to s"
       (str (buffer-substring (region-beginning) (region-end)))
     (str (buffer-substring (point-min) (point-max)))))
 
+(defun current-major-mode-string ()
+  "Get the current major mode as a string."
+  (str major-mode))
+
 (defun detect-language (&optional detect buffer-not-selection)
   "Returns the language of the buffer or selection."
   (interactive)
@@ -447,7 +476,7 @@ when s is a string, set the clipboard to s"
   (cond ((eq major-mode 'json-mode) "json")
         ((eq major-mode 'python-mode) "py")
         ((eq major-mode 'fundamental-mode) "txt")
-        (t (try (let ((result (e/chomp (s-replace-regexp "^\." "" (scrape "\\.[a-z0-9A-Z]+" (car (rassq m auto-mode-alist)))))))
+        (t (try (let ((result (chomp (s-replace-regexp "^\." "" (scrape "\\.[a-z0-9A-Z]+" (car (rassq m auto-mode-alist)))))))
                   (setq result (cond ((string-equal result "pythonrc") "py")
                                      (t result)))
 
