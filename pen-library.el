@@ -82,7 +82,7 @@
                       (if (stringp p)
                           (chomp p)))))))
     (if (interactive-p)
-        (my/copy path)
+        (xc path)
       path)))
 
 (defun get-path-nocreate ()

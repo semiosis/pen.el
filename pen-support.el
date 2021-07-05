@@ -287,9 +287,6 @@ This appears to strip ansi codes.
   (new-buffer-from-o o)
   o)
 
-(defun flatten-once (list-of-lists)
-  (apply #'append list-of-lists))
-
 (defun s-preserve-trailing-whitespace (s-new s-old)
   "Return s-new but with the same amount of trailing whitespace as s-old."
   (let* ((trailing_ws_pat "[ \t\n]*\\'")
