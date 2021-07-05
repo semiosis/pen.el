@@ -8,6 +8,28 @@
     (org-brain-pf-topic))
    (t (org-brain-pf-topic))))
 
+(defun save-temp-if-no-file ()
+  (interactive)
+
+  (if (not (buffer-file-name))
+      (write-file
+       (chomp
+        (eval
+         `(b tf ,(get-ext-for-mode major-mode)))))))
+
+(defun buffer-file-path ()
+  (if (major-mode-enabled 'eww-mode)
+      (or (eww-current-url)
+          eww-followed-link)
+    (try (s/rp (or (buffer-file-name)
+                   (and (string-match-p "~" (buffer-name))
+                        (concat (vc-get-top-level) "/" (sed "s/\\.~.*//" (buffer-name))))
+                   ;; (concat (s/chomp (b vc get-top-level)) "/" (buffer-name))
+                   (error "no file for buffer")
+                   ))
+         nil)))
+(defalias 'full-path 'buffer-file-path)
+
 ;; This is usually used programmatically to get a single path name
 (defun get-path (&optional soft no-create-path for-clipboard semantic-path)
   "Get path for buffer. semantic-path means a path suitable for google/nl searching"

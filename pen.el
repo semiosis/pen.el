@@ -2,6 +2,7 @@
 
 (require 'pen-support)
 (require 'dash)
+(require 'projectile)
 (require 'iedit)
 (require 'ht)
 (require 'helm)
