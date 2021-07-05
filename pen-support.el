@@ -399,6 +399,13 @@ when s is a string, set the clipboard to s"
             (or def "")
           str)))))
 
+(defmacro initvar (symbol &optional value)
+  "defvar while ignoring errors"
+  (let ((sym (eval symbol)))
+    `(progn (ignore-errors (defvar ,sym nil))
+            ;; (ignore-errors (defvar ,symbol nil))
+            (if ,value (setq ,symbol ,value)))))
+
 (defun completing-read-hist (prompt &optional initial-input histvar default-value)
   "read-string but with history."
   (if (not histvar)
