@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# TODO Implement LM_COMPLETE_CACHE
+
 sn="$(basename "$0")"
 
 yq() {
