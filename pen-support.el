@@ -104,7 +104,7 @@ delim is used to guarantee the function returns multiple matches per line
   "Chomp (remove tailing newline from) STR."
   (replace-regexp-in-string "\n\\'" "" str))
 
-(defun get-string-from-file (filePath)
+(defun slurp-file (filePath)
   "Return filePath's file content."
   (with-temp-buffer
     (insert-file-contents filePath)
@@ -168,11 +168,11 @@ This appears to strip ansi codes.
        (with-temp-buffer
          (insert stdin)
          (shell-command-on-region (point-min) (point-max) final_cmd output_buffer))))
-    (setq output (get-string-from-file tf))
+    (setq output (slurp-file tf))
     (if chomp
         (setq output (chomp output)))
     (progn
-      (defset b_exit_code (get-string-from-file tf_exit_code)))
+      (defset b_exit_code (slurp-file tf_exit_code)))
 
     (if b_output-return-code
         (setq output (str b_exit_code)))
