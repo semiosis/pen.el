@@ -17,16 +17,18 @@
         (eval
          `(b tf ,(get-ext-for-mode major-mode)))))))
 
+(defun f-realpath (path &optional dir)
+  (if path
+      (chomp (sh-notty (concat "realpath " (q path) " 2>/dev/null") nil dir))))
+
 (defun buffer-file-path ()
   (if (major-mode-enabled 'eww-mode)
       (or (eww-current-url)
           eww-followed-link)
-    (try (s/rp (or (buffer-file-name)
-                   (and (string-match-p "~" (buffer-name))
-                        (concat (vc-get-top-level) "/" (sed "s/\\.~.*//" (buffer-name))))
-                   ;; (concat (s/chomp (b vc get-top-level)) "/" (buffer-name))
-                   (error "no file for buffer")
-                   ))
+    (try (f-realpath (or (buffer-file-name)
+                         (and (string-match-p "~" (buffer-name))
+                              (concat (projectile-project-root) (sed "s/\\.~.*//" (buffer-name))))
+                         (error "no file for buffer")))
          nil)))
 (defalias 'full-path 'buffer-file-path)
 
@@ -40,7 +42,7 @@
                        (>= (prefix-numeric-value current-prefix-arg) 4)))
 
   "If it's just for the clipboard then we can copy"
-  ;; (xc-m (s/rp (buffer-file-name)))
+  ;; (xc-m (f-realpath (buffer-file-name)))
   (let ((path
          (or (and (eq major-mode 'Info-mode)
                   (if soft
