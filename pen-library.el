@@ -1,12 +1,16 @@
 (require 'pen-brain)
 (require 'sx)
 
+(defun f-basename (path)
+  (snc (cmd "basename" path)))
+
 (defun get-path-semantic ()
   (interactive)
   (cond
    ((major-mode-enabled 'org-brain-visualize-mode)
     (org-brain-pf-topic))
-   (t (org-brain-pf-topic))))
+   (is-glossary-file (f-basename (buffer-path)))
+   (t (buffer-language))))
 
 (defun save-temp-if-no-file ()
   (interactive)
