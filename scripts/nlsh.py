@@ -4,6 +4,9 @@
 # This script is for running nlsh
 # https://mullikine.github.io/posts/nlsh-natural-language-shell/
 
+from shanepy import *
+import shanepy
+
 import sys
 import yaml
 
@@ -14,7 +17,7 @@ if not len(sys.argv) > 1:
 
 os = sys.argv[1]
 
-filename = "$PROMPTS/nlsh-arch-linux-bash.prompt"
+filename = "/home/shane/source/git/semiosis/prompts/prompts/nlsh-shell-for-given-os.prompt"
 
 with open(filename) as f:
     data = f.read()
@@ -38,7 +41,7 @@ def b(c, inputstring="", timeout=0):
     If I wan't to use tty programs, then use a ttyize/ttyify script.
     echo hi | ttyify vim | cat"""
 
-    c = xv(c)
+    #  c = xc(c)
 
     p = subprocess.Popen(
         c,
