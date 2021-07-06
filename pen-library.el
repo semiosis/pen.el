@@ -4,12 +4,16 @@
 (defun f-basename (path)
   (snc (cmd "basename" path)))
 
+(defun f-mant (path)
+  (snc (cmd "mant" path)))
+
 (defun get-path-semantic ()
   (interactive)
   (cond
    ((major-mode-enabled 'org-brain-visualize-mode)
     (org-brain-pf-topic))
-   (is-glossary-file (f-basename (buffer-path)))
+   ((is-glossary-file (f-basename (get-path)))
+    (f-mant (f-basename (get-path))))
    (t (buffer-language))))
 
 (defun save-temp-if-no-file ()
