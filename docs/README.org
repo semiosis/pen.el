@@ -51,6 +51,7 @@
           Generations stored in Datomic : b7, after b6, 20d
           straight.el : b13, after b6, 5d
           Connect to more emacs packages : b8, after b7 , 20d
+          Select from huggingface transformers : b15, after b7 , 20d
           melpa : b14, after b7 , 5d
           Real-time completion of tokens with interrupt : b9, after b8, 20d
           Multiversal viewer : b10, after b9, 20d
