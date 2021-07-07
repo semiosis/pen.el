@@ -237,4 +237,8 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-prompt-description.el
 (require 'pen-prompt-description)
 
+;; TODO
+(require 'pen-ocean)
+(require 'pen-huggingface)
+
 (provide 'pen)
