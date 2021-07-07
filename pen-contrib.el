@@ -16,7 +16,7 @@
                  (list
                   (read-string-hist
                    (concat "asktutor (" bl "): ")
-                   (my/thing-at-point)))))
+                   (pen-thing-at-point)))))
   (pen-pf-asktutor bl bl query))
 
 
@@ -29,7 +29,7 @@
 ;; v:pen-ask-documentation 
 (defun pen-ask-documentation (thing query)
   (interactive
-   (let* ((thing (my/thing-at-point))
+   (let* ((thing (pen-thing-at-point))
           (qs (mapcar (lambda (s) (s-format s 'aget `(("query" . ,thing)))) pen-doc-queries))
           (query
            (fz qs

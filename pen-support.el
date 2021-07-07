@@ -355,6 +355,7 @@ This appears to strip ansi codes.
    (iedit-mode
     (iedit-current-occurrence-string))))
 
+(defalias 'selection 'pen-selected-text)
 (defalias 'pps 'pp-to-string)
 
 (defun xc (&optional s silent)
@@ -512,5 +513,24 @@ when s is a string, set the clipboard to s"
                     result))
                 "txt"))))
 (defalias 'get-path-ext-from-mode-alist 'get-ext-for-mode)
+
+
+(defun pen-thing-at-point (&optional only-if-selected)
+  (interactive)
+
+  (if (and only-if-selected
+           (not mark-active))
+      nil
+    (if (or mark-active
+            iedit-mode)
+        (pen-selected-text)
+      (str
+       (or (thing-at-point 'symbol)
+           (thing-at-point 'sexp)
+           (let ((s (str (thing-at-point 'char))))
+             (if (string-equal s "\n")
+                 ""
+               s))
+           "")))))
 
 (provide 'pen-support)
