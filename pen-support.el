@@ -1,3 +1,7 @@
+(defun variable-p (s)
+  (and (not (eq s nil))
+       (boundp s)))
+
 (defmacro upd (&rest body)
   `(let ((sh-update t)) ,@body))
 
