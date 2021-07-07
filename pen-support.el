@@ -355,7 +355,6 @@ This appears to strip ansi codes.
    (iedit-mode
     (iedit-current-occurrence-string))))
 
-(defalias 'selection 'pen-selected-text)
 (defalias 'pps 'pp-to-string)
 
 (defun xc (&optional s silent)
@@ -371,7 +370,7 @@ when s is a string, set the clipboard to s"
       (kill-new s)
     (if (selected-p)
         (progn
-          (setq s (selection))
+          (setq s (pen-selected-text))
           (call-interactively 'kill-ring-save))))
   (if s
       (if (not silent) (message "%s" (concat "Copied: " s)))

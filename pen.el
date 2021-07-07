@@ -163,7 +163,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                            (cond
                                             ((and ,filter
                                                   mark-active)
-                                             (replace-region (concat (selection) result)))
+                                             (replace-region (concat (pen-selected-text) result)))
                                             (,completion
                                              (etv result))
                                             ((or ,(not filter)
