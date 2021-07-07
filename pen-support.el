@@ -141,9 +141,6 @@ This appears to strip ansi codes.
       (setq dir (get-dir)))
 
   (let ((default-directory dir))
-    (if (not b_no_unminimise)
-        (setq cmd (umn cmd)))
-
     (if b_unbuffer
         (setq cmd (concat "unbuffer -p " cmd)))
 

@@ -8,23 +8,74 @@ HEREDOC	scripts/lm-complete	/^    IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
 HEREDOC	scripts/lm-complete	/^    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC$/;"	h
 HEREDOC	scripts/openai-complete	/^IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
 b	scripts/nlsh.py	/^def b(c, inputstring="", timeout=0):$/;"	f
+chomp	pen-support.el	/^(defun chomp (str)$/;"	f
 command	scripts/nlsh.py	/^    command = b(postprocessor, command)[0]$/;"	v
 command	scripts/nlsh.py	/^    command = result.choices[0]["text"].strip()$/;"	v
+completing-read-hist	pen-support.el	/^(defun completing-read-hist (prompt &optional initial-input histvar default-value)$/;"	f
+current-major-mode-string	pen-support.el	/^(defun current-major-mode-string ()$/;"	f
+cwd	pen-support.el	/^(defun cwd ()$/;"	f
 data	scripts/nlsh.py	/^    data = f.read()$/;"	v
+defset	pen-support.el	/^(defmacro defset (symbol value &optional documentation)$/;"	f
+detect-language	pen-support.el	/^(defun detect-language (&optional detect buffer-not-selection)$/;"	f
+etv	pen-support.el	/^(defun etv (o)$/;"	f
 filename	scripts/nlsh.py	/^filename = "\/home\/shane\/source\/git\/semiosis\/prompts\/prompts\/nlsh-shell-for-given-os.prom/;"	v
+filter-selected-region-through-function	pen-support.el	/^(defun filter-selected-region-through-function (fun)$/;"	f
+filter-selection	pen-support.el	/^(defalias 'filter-selection 'filter-selected-region-through-function)$/;"	f
+fz	pen-support.el	/^(defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props)$/;"	f
+fz-completion-second-of-tuple-annotation-function	pen-support.el	/^(defun fz-completion-second-of-tuple-annotation-function (s)$/;"	f
+get-dir	pen-support.el	/^(defun get-dir ()$/;"	f
+get-ext-for-lang	pen-support.el	/^(defun get-ext-for-lang (langstr)$/;"	f
+get-ext-for-mode	pen-support.el	/^(defun get-ext-for-mode (&optional m)$/;"	f
+get-path-ext-from-mode-alist	pen-support.el	/^(defalias 'get-path-ext-from-mode-alist 'get-ext-for-mode)$/;"	f
 get_stop_sequences	scripts/lm-complete	/^get_stop_sequences() {$/;"	f
+glob	pen-support.el	/^(defun glob (pattern &optional dir)$/;"	f
+initvar	pen-support.el	/^(defmacro initvar (symbol &optional value)$/;"	f
+lang-to-mode	pen-support.el	/^(defun lang-to-mode (&optional langstr)$/;"	f
+list2str	pen-support.el	/^(defun list2str (&rest l)$/;"	f
+mode-to-lang	pen-support.el	/^(defun mode-to-lang (&optional modesym)$/;"	f
+nbfs	pen-support.el	/^(defalias 'nbfs 'new-buffer-from-string)$/;"	f
+new-buffer-from-o	pen-support.el	/^(defun new-buffer-from-o (o)$/;"	f
+new-buffer-from-string	pen-support.el	/^(defun new-buffer-from-string (&optional contents bufname mode nodisplay)$/;"	f
+noupd	pen-support.el	/^(defmacro noupd (&rest body)$/;"	f
+ntimes	pen-support.el	/^(defmacro ntimes (n &rest body)$/;"	f
 oci	scripts/lm-complete	/^oci() {$/;"	f
 ogprompt	scripts/nlsh.py	/^ogprompt = ogprompt.replace("<1>", os)$/;"	v
 ogprompt	scripts/nlsh.py	/^ogprompt = yaml.load(data)["prompt"]$/;"	v
 org-brain-pf-topic	pen-brain.el	/^(defun org-brain-pf-topic (&optional short)$/;"	f
 os	scripts/nlsh.py	/^os = sys.argv[1]$/;"	v
+pen-ivy-completing-read	pen-support.el	/^(defun pen-ivy-completing-read (prompt collection$/;"	f
+pen-q	pen-support.el	/^(defun pen-q (&rest strings)$/;"	f
+pen-selected-text	pen-support.el	/^(defun pen-selected-text ()$/;"	f
+pen-sn	pen-support.el	/^(defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbu/;"	f
+pen-snc	pen-support.el	/^(defun pen-snc (cmd &optional stdin)$/;"	f
 postprocessor	scripts/nlsh.py	/^postprocessor = yaml.load(data)["postprocessor"].strip()$/;"	v
+pps	pen-support.el	/^(defalias 'pps 'pp-to-string)$/;"	f
+preserve-trailing-whitespace	pen-support.el	/^(defun preserve-trailing-whitespace (fun s)$/;"	f
 prompt	scripts/nlsh.py	/^    prompt = ogprompt.rstrip() + "\\n" + template.format(request).rstrip()$/;"	v
 prompt	scripts/nlsh.py	/^    prompt = prompt.strip() + " " + command + "\\n###\\n"$/;"	v
+ptw	pen-support.el	/^(defalias 'ptw 'preserve-trailing-whitespace)$/;"	f
+read-string-hist	pen-support.el	/^(defalias 'read-string-hist 'completing-read-hist)$/;"	f
+region-or-buffer-string	pen-support.el	/^(defun region-or-buffer-string ()$/;"	f
 repl_run	scripts/lm-complete	/^repl_run() {$/;"	f
 request	scripts/nlsh.py	/^    request = input(click.style("nlsh> ", "red", bold=True))$/;"	v
 result	scripts/nlsh.py	/^    result = openai.Completion.create($/;"	v
+s-preserve-trailing-whitespace	pen-support.el	/^(defun s-preserve-trailing-whitespace (s-new s-old)$/;"	f
+scrape	pen-support.el	/^(defun scrape (re s &optional delim)$/;"	f
+selected	pen-support.el	/^(defun selected ()$/;"	f
+shut-up-c	pen-support.el	/^(defmacro shut-up-c (&rest body)$/;"	f
+slugify	pen-support.el	/^(defun slugify (input &optional joinlines length)$/;"	f
+slurp-file	pen-support.el	/^(defun slurp-file (filePath)$/;"	f
 stdin_exists	scripts/lm-complete	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/openai-complete	/^stdin_exists() {$/;"	f
+str	pen-support.el	/^(defun str (thing)$/;"	f
+string-empty-or-nil-p	pen-support.el	/^(defun string-empty-or-nil-p (s)$/;"	f
+string-first-nonnil-nonempty-string	pen-support.el	/^(defun string-first-nonnil-nonempty-string (&rest ss)$/;"	f
+string-not-empty-nor-nil-p	pen-support.el	/^(defun string-not-empty-nor-nil-p (s)$/;"	f
 template	scripts/nlsh.py	/^template = yaml.load(data)["repeater"]$/;"	v
+try	pen-support.el	/^(defmacro try (&rest list-of-alternatives)$/;"	f
+try-cascade	pen-support.el	/^(defun try-cascade (list-of-alternatives)$/;"	f
+tryelse	pen-support.el	/^(defmacro tryelse (thing &optional otherwise)$/;"	f
+upd	pen-support.el	/^(defmacro upd (&rest body)$/;"	f
+vector2list	pen-support.el	/^(defun vector2list (v)$/;"	f
+xc	pen-support.el	/^(defun xc (&optional s silent)$/;"	f
 yq	scripts/lm-complete	/^yq() {$/;"	f
