@@ -40,9 +40,10 @@
           Integrate org-brain  :done,   :a5, 2021-05-30, 30d
           Use elisp for portability :done,  :b2, 2021-07-02, 2d
           Dockerize Pen : active, b3, after b2 , 5d
-          Excise Pen from emacs.d: active, b3, after b2 , 5d
-          Deploy Pen to straight.el: active, b3, after b2 , 5d
-          Convert shell to Python : active, b4, after b2 , 14d
+          Excise Pen from emacs.d: active, b3.1, after b2 , 5d
+          Deploy Pen to straight.el: active, b3.2, after b2 , 5d
+          Convert shell to Python : active, b4, after b2 , 5d
+          Incorportate OpenAI parameters from loom : active, b4, after b2 , 5d
           Select backend interface in emacs :crit, after b3, 2d
           section Stage 2
           Stage 2  :s2, 2021-07-12, 120d
