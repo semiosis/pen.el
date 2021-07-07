@@ -1,5 +1,6 @@
 ;;; pen.el --- Prompt Engineering functions
 
+;; For string-empty-p
 (require 'subr-x)
 (require 'pen-support)
 (require 'pen-global-prefix)
