@@ -4,8 +4,6 @@
 (defmacro noupd (&rest body)
   `(let ((sh-update nil)) ,@body))
 
-
-
 (defmacro tryelse (thing &optional otherwise)
   "Try to run a thing. Run something else if it fails."
   `(condition-case
