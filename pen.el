@@ -1,7 +1,7 @@
 ;;; pen.el --- Prompt Engineering functions
 
-(require 'pen-global-prefix)
 (require 'pen-support)
+(require 'pen-global-prefix)
 (require 'dash)
 (require 'projectile)
 (require 'iedit)
