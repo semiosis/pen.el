@@ -61,6 +61,7 @@
               (setq result p)
               (throw 'bbb result)))))
     result))
+(defalias 'sor 'string-first-nonnil-nonempty-string)
 
 (defun cwd ()
   "Gets the current working directory"
