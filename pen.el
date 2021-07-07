@@ -152,7 +152,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                                   collect
                                                                   (progn
                                                                     (message (concat ,func-name " query " (int-to-string i) "..."))
-                                                                    (let ((ret (sn shcmd)))
+                                                                    (let ((ret (pen-sn shcmd)))
                                                                       (message (concat ,func-name " done " (int-to-string i)))
                                                                       ret)))
                                                          ""))))

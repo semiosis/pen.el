@@ -88,7 +88,7 @@ prompt additionally for EXTRA-AG-ARGS."
   (interactive)
   (mu (let* ((pfp
               (fz
-               (snc
+               (pen-snc
                 (concat
                  "cd "
                  (pen-q pen-prompt-directory)

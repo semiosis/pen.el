@@ -58,7 +58,7 @@
   (comint-read-input-ring 'silent))
 
 (defun new-script-from-arguments (cmd &optional dir)
-  (sh-notty (concat "export TTY=; "
+  (pen-sn (concat "export TTY=; "
                     (if dir (concat " CWD=" (q dir) " ")
                       "")
                     " nsfa -E " (q cmd)) nil (or dir (cwd))))

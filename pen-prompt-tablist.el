@@ -90,7 +90,7 @@
               (try (mapcar 'string-to-int (uncmd col-sizes-string))))))
 
     (let ((b (cond ((sor path) (tablist-buffer-from-csv-string (cat path) has-header col-sizes))
-                   ((sor cmd) (tablist-buffer-from-csv-string (sn cmd) has-header col-sizes)))))
+                   ((sor cmd) (tablist-buffer-from-csv-string (pen-sn cmd) has-header col-sizes)))))
       (if b
           (with-current-buffer
               b

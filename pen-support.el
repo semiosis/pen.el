@@ -128,7 +128,7 @@ delim is used to guarantee the function returns multiple matches per line
           thing))
     ""))
 
-(defun sh-notty (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
+(defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
 This appears to strip ansi codes.
 \(sh) does not."
@@ -183,25 +183,22 @@ This appears to strip ansi codes.
     (if b_output-return-code
         (setq output (str b_exit_code)))
     output))
-(defalias 'sn 'sh-notty)
 
-(cl-defun cl-sh-notty (cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)
+(cl-defun pen-cl-sn (cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)
   (interactive)
+  (pen-sn cmd stdin dir nil detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code))
 
-  (sh-notty cmd stdin dir nil detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code))
-(defalias 'cl-sn 'cl-sh-notty)
-
-(defun snc (cmd &optional stdin)
+(defun pen-snc (cmd &optional stdin)
   "sn chomp"
-  (chomp (sn cmd stdin)))
+  (chomp (pen-sn cmd stdin)))
 
 (defun slugify (input &optional joinlines length)
   "Slugify input"
   (interactive)
   (let ((slug
          (if joinlines
-             (sn "tr '\n' - | slugify" input)
-           (sn "slugify" input))))
+             (pen-sn "tr '\n' - | slugify" input)
+           (pen-sn "slugify" input))))
     (if length
         (substring slug 0 (- length 1))
       slug)))
@@ -270,7 +267,7 @@ This appears to strip ansi codes.
    (evil-visual-state-p)))
 
 (defun glob (pattern &optional dir)
-  (split-string (cl-sn (concat "pen-glob " (pen-q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
+  (split-string (pen-cl-sn (concat "pen-glob " (pen-q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
 
 (defun new-buffer-from-string (&optional contents bufname mode nodisplay)
   "Create a new untitled buffer from a string."

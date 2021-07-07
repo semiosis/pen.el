@@ -2,10 +2,10 @@
 (require 'sx)
 
 (defun f-basename (path)
-  (snc (cmd "basename" path)))
+  (pen-snc (cmd "basename" path)))
 
 (defun f-mant (path)
-  (snc (cmd "mant" path)))
+  (pen-snc (cmd "mant" path)))
 
 (defun get-path-semantic ()
   (interactive)
@@ -25,7 +25,7 @@
 
 (defun f-realpath (path &optional dir)
   (if path
-      (chomp (sh-notty (concat "realpath " (q path) " 2>/dev/null") nil dir))))
+      (chomp (pen-sn (concat "realpath " (q path) " 2>/dev/null") nil dir))))
 
 (defun buffer-file-path ()
   (if (major-mode-enabled 'eww-mode)

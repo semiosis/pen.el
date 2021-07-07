@@ -181,7 +181,7 @@ Most of this is borrowed from python.el")
   (use-local-map inf-pen-mode-map))
 
 (defun inf-pen-fz-contacts-sh ()
-  (sn "dos2unix | sed -e 1d -e \\$d -e \\$d" (inf-pen-get-result-from-inf "contacts")))
+  (pen-sn "dos2unix | sed -e 1d -e \\$d -e \\$d" (inf-pen-get-result-from-inf "contacts")))
 
 (defun inf-pen-fz-contacts ()
   (interactive)
@@ -190,7 +190,7 @@ Most of this is borrowed from python.el")
     contact))
 
 (defun inf-pen-fz-threads-sh ()
-  (sn "dos2unix | sed -e 1d -e \\$d" (inf-pen-get-result-from-inf "threads")))
+  (pen-sn "dos2unix | sed -e 1d -e \\$d" (inf-pen-get-result-from-inf "threads")))
 
 (defun inf-pen-fz-threads ()
   (interactive)
@@ -199,7 +199,7 @@ Most of this is borrowed from python.el")
     contact))
 
 (defun inf-pen-fz-contacts-and-threads-sh ()
-  (sn "sort | uniq"
+  (pen-sn "sort | uniq"
       (concat (awk1 (inf-pen-fz-contacts-sh))
               (awk1 (inf-pen-fz-threads-sh))
               "Shane Mulligan\n")))
@@ -224,7 +224,7 @@ Most of this is borrowed from python.el")
   (interactive (list (inf-pen-fz-contacts-and-threads)))
 
   (let ((history
-         (s-replace-regexp "\r+" "" (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (pen-q contact) " 1000000"))))))
+         (s-replace-regexp "\r+" "" (pen-sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (pen-q contact) " 1000000"))))))
     (with-current-buffer (evipe history)
       (end-of-buffer)
       (beginning-of-line-or-indentation)))
@@ -237,8 +237,8 @@ Most of this is borrowed from python.el")
 ;;   (interactive (let ((contact (inf-pen-fz-contacts-and-threads))) (list contact (read-string (concat "Send to " contact ": ")))))
 
 ;;   (let ((sentout
-;;          ;; (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (pen-q contact))))
-;;          ;; (s-replace-regexp "\r+" "" (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "message " (pen-q contact) " " message))))
+;;          ;; (pen-sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "history " (pen-q contact))))
+;;          ;; (s-replace-regexp "\r+" "" (pen-sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "message " (pen-q contact) " " message))))
 ;;          (inf-pen-get-result-from-inf (concat "message " (pen-q contact) " " message))))
 ;;     (evipe sentout))
 ;;   ;; (let ((contact (inf-pen-fz-contacts)))
@@ -266,7 +266,7 @@ Most of this is borrowed from python.el")
 ;;    "\n"))
 
 ;; (defun extract-name-from-recent-item (s)
-;;   ;; (sn "sed \"s/^[^ ]\\+ \\(.*\\) \(.*/\\1/\"" s)
+;;   ;; (pen-sn "sed \"s/^[^ ]\\+ \\(.*\\) \(.*/\\1/\"" s)
 ;;   (sed "s/^\\[[0-9]\\+\\] //" (sed "s/ (.*//" s))
 ;;   ;; (sed "s/^\\[[0-9]\\+\\] //" s))
 ;;   )
@@ -287,7 +287,7 @@ Most of this is borrowed from python.el")
 
 ;; (defun inf-pen-recent-sh ()
 ;;   (let ((sentout
-;;          (s-replace-regexp "\r+" "" (sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "recent 1000000"))))))
+;;          (s-replace-regexp "\r+" "" (pen-sn "dos2unix | sed -e 1d" (inf-pen-get-result-from-inf (concat "recent 1000000"))))))
 ;;     sentout))
 
 ;; (defun inf-pen-recent ()
