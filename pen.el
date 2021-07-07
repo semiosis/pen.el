@@ -96,7 +96,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                    (message "%s" (concat "Example " (str iteration) ": " example))
                                    (if (equal 0 iteration)
                                        ;; The first argument may be captured through selection
-                                       `(if (selected)
+                                       `(if mark-active
                                             (pen-selected-text)
                                           (if ,(> (length (s-lines example)) 1)
                                               (etv ,example)
@@ -160,13 +160,13 @@ Function names are prefixed with pen-pf- for easy searching"
                                        (if (interactive-p)
                                            (cond
                                             ((and ,filter
-                                                  (selected))
+                                                  mark-active)
                                              (replace-region (concat (selection) result)))
                                             (,completion
                                              (etv result))
                                             ((or ,(not filter)
                                                  (>= (prefix-numeric-value current-prefix-arg) 4)
-                                                 (not (selected)))
+                                                 (not mark-active))
                                              (etv result))
                                             (t
                                              (replace-region result)))

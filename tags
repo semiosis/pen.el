@@ -7,10 +7,11 @@
 HEREDOC	scripts/lm-complete	/^    IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
 HEREDOC	scripts/lm-complete	/^    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC$/;"	h
 HEREDOC	scripts/openai-complete	/^IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
+b	scripts/nlsh.py	/^def b(c, inputstring="", timeout=0):$/;"	f
+command	scripts/nlsh.py	/^    command = b(postprocessor, command)[0]$/;"	v
 command	scripts/nlsh.py	/^    command = result.choices[0]["text"].strip()$/;"	v
-command	scripts/nlsh.py	/^    command = spy.b(postprocessor, command)[0]$/;"	v
 data	scripts/nlsh.py	/^    data = f.read()$/;"	v
-filename	scripts/nlsh.py	/^filename = "$PROMPTS\/nlsh-arch-linux-bash.prompt"$/;"	v
+filename	scripts/nlsh.py	/^filename = "\/home\/shane\/source\/git\/semiosis\/prompts\/prompts\/nlsh-shell-for-given-os.prom/;"	v
 get_stop_sequences	scripts/lm-complete	/^get_stop_sequences() {$/;"	f
 oci	scripts/lm-complete	/^oci() {$/;"	f
 ogprompt	scripts/nlsh.py	/^ogprompt = ogprompt.replace("<1>", os)$/;"	v
@@ -23,7 +24,6 @@ prompt	scripts/nlsh.py	/^    prompt = prompt.strip() + " " + command + "\\n###\\
 repl_run	scripts/lm-complete	/^repl_run() {$/;"	f
 request	scripts/nlsh.py	/^    request = input(click.style("nlsh> ", "red", bold=True))$/;"	v
 result	scripts/nlsh.py	/^    result = openai.Completion.create($/;"	v
-spy	scripts/nlsh.py	/^import shanepy as spy$/;"	I
 stdin_exists	scripts/lm-complete	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/openai-complete	/^stdin_exists() {$/;"	f
 template	scripts/nlsh.py	/^template = yaml.load(data)["repeater"]$/;"	v
