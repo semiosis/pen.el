@@ -88,6 +88,7 @@
 
 ** Appendix
 + Posthuman AI Market on Ocean Protocol :: https://port.oceanprotocol.com/t/posthuman-ai-market-v1-1-luci-integration/675
++ Butterfly :: https://github.com/paradoxxxzero/butterfly
 
 ** Future features
 *** A pipeline for fine-tuning
