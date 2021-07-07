@@ -52,7 +52,6 @@
           Incorporate semantic search : b12, 2021-07-12, 20d
           Connect arbitrary prompts repositories : b6, 2021-07-12, 20d
           Generations stored in Datomic : b7, after b6, 20d
-          straight.el : b13, after b6, 5d
           Connect to more emacs packages : b8, after b7 , 20d
           Select from huggingface transformers : b15, after b7 , 20d
           melpa : b14, after b7 , 5d
@@ -61,7 +60,7 @@
           section Stage 3
           Stage 3  :s3, 2021-12-12, 120d
           Incorporate OpenAI Codex model : c1, 2021-12-12, 1d
-          Incorporate Ocean protocol and Posthuman AI Market : c1, 2021-12-12, 20d
+          Incorporate Ocean protocol and Posthuman AI Market : c2, 2021-12-12, 20d
 #+END_SRC
 
 #+RESULTS:
