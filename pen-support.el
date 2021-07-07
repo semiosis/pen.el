@@ -4,6 +4,8 @@
 (defmacro noupd (&rest body)
   `(let ((sh-update nil)) ,@body))
 
+
+
 (defmacro tryelse (thing &optional otherwise)
   "Try to run a thing. Run something else if it fails."
   `(condition-case
@@ -184,6 +186,12 @@ This appears to strip ansi codes.
         (setq output (str b_exit_code)))
     output))
 (defalias 'sn 'sh-notty)
+
+(cl-defun cl-sh-notty (cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)
+  (interactive)
+
+  (sh-notty cmd stdin dir nil detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code))
+(defalias 'cl-sn 'cl-sh-notty)
 
 (defun snc (cmd &optional stdin)
   "sn chomp"
