@@ -10,6 +10,8 @@ Please email me if you would like to use my key for this project.
 ** Debian 10
 [[./scripts/setup.sh]]
 
+** Emacs =.emacs= / =init.el=
+
 ** Add scripts to PATH
 - https://github.com/semiosis/pen.el/tree/master/scripts
 
