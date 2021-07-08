@@ -41,10 +41,6 @@
     (setq pen-current-lighter newlighter)
     newlighter))
 
-
-
-
-
 (define-minor-mode pen
   "Mode for working with language models in your buffers."
   :global t
