@@ -1,6 +1,6 @@
-This is tested on Debian 10 and Ubuntu 20.04.
-
 * Installation
+These setup instructions are designed for Debian 10 and Ubuntu 20.04.
+
 ** =OpenAI= API key
 You will need your own OpenAI API key.
 
