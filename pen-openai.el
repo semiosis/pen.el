@@ -1,5 +1,8 @@
 ;; This is for prompt file creation
 
+;; Model list taken from loom
+;; https://github.com/socketteer/loom/blob/main/model.py
+
 (defset openai-models
   (list
    "ada"
@@ -12,6 +15,7 @@
    "instruct-curie-beta"
    "instruct-davinci-beta"))
 
+;; Defaults taken from loom
 ;; https://github.com/socketteer/loom/blob/main/model.py#L40
 
 (defset default-generation-settings
