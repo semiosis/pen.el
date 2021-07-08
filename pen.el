@@ -30,7 +30,8 @@
   "Mode for working with language models in your  buffers."
   :global t
   :init-value t
-  :lighter " pen"
+  ;; zone plate
+  :lighter "⊚"
   :keymap pen-map)
 
 (defset pen-prompt-functions nil)
