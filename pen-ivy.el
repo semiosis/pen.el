@@ -86,17 +86,17 @@ prompt additionally for EXTRA-AG-ARGS."
 
 (defun fz-pen-counsel ()
   (interactive)
-  (mu (let* ((pfp
-              (fz
-               (pen-snc
-                (concat
-                 "cd "
-                 (pen-q pen-prompt-directory)
-                 "; find . -maxdepth 1 -mindepth 1 -type f | sed -e 's/..//' -e 's/\\.prompt$//'"))
-                nil
-                nil
-                "pen list: "))
-             (cf (eval `(gen-counsel-function ,(concat "loop lm-complete -s " (pen-q pfp)) 'etv))))
-        (call-interactively cf))))
+  (let* ((pfp
+          (fz
+           (pen-snc
+            (concat
+             "cd "
+             (pen-q pen-prompt-directory)
+             "; find . -maxdepth 1 -mindepth 1 -type f | sed -e 's/..//' -e 's/\\.prompt$//'"))
+           nil
+           nil
+           "pen list: "))
+         (cf (eval `(gen-counsel-function ,(concat "loop lm-complete -s " (pen-q pfp)) 'etv))))
+    (call-interactively cf)))
 
 (provide 'pen-ivy)
