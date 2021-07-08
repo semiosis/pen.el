@@ -17,6 +17,8 @@ completing-read-hist	pen-support.el	/^(defun completing-read-hist (prompt &optio
 current-major-mode-string	pen-support.el	/^(defun current-major-mode-string ()$/;"	f
 cwd	pen-support.el	/^(defun cwd ()$/;"	f
 data	scripts/nlsh.py	/^    data = f.read()$/;"	v
+default_generation_settings	pen-openai.el	/^(defset default_generation_settings$/;"	f
+default_visualization_settings	pen-openai.el	/^(defset default_visualization_settings$/;"	f
 defset	pen-support.el	/^(defmacro defset (symbol value &optional documentation)$/;"	f
 detect-language	pen-support.el	/^(defun detect-language (&optional detect buffer-not-selection)$/;"	f
 etv	pen-support.el	/^(defun etv (o)$/;"	f
@@ -42,6 +44,7 @@ noupd	pen-support.el	/^(defmacro noupd (&rest body)$/;"	f
 ntimes	pen-support.el	/^(defmacro ntimes (n &rest body)$/;"	f
 ogprompt	scripts/nlsh.py	/^ogprompt = ogprompt.replace("<1>", os)$/;"	v
 ogprompt	scripts/nlsh.py	/^ogprompt = yaml.load(data)["prompt"]$/;"	v
+openai-models	pen-openai.el	/^(defset openai-models$/;"	f
 org-brain-pf-topic	pen-brain.el	/^(defun org-brain-pf-topic (&optional short)$/;"	f
 os	scripts/nlsh.py	/^os = sys.argv[1]$/;"	v
 pen-ivy-completing-read	pen-support.el	/^(defun pen-ivy-completing-read (prompt collection$/;"	f
