@@ -82,6 +82,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (doc (ht-get yaml "doc"))
                      (cache (pen-yaml-test yaml "cache"))
                      (needs-work (pen-yaml-test yaml "needs-work"))
+                     (in-development (pen-yaml-test yaml "in-development"))
                      (disabled (pen-yaml-test yaml "disabled"))
                      (prefer-external (pen-yaml-test yaml "prefer-external"))
                      (conversation-mode (pen-yaml-test yaml "conversation-mode"))
@@ -141,7 +142,9 @@ Function names are prefixed with pen-pf- for easy searching"
                                (defalias a func-sym)
                                (add-to-list 'pen-prompt-functions a))))
 
-                (if (not needs-work)
+                (if (and
+                     (not needs-work)
+                     (not in-development))
                     (add-to-list 'pen-prompt-functions
                                  (eval
                                   `(cl-defun ,func-sym ,var-syms
