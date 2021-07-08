@@ -16,7 +16,7 @@ apt install autoconf texinfo gnutls30 gnutls28-dev pkg-config
 (
 cd emacs
 git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
-make -j10
+make
 )
 
 # rustc and cargo are for building emacs-yamlmod
