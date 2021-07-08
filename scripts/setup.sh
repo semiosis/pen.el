@@ -33,7 +33,7 @@ apt install moreutils
 (
 mkdir -p ~/.emacs.d
 cd ~/.emacs.d
-git clone "https://github.com/semiosis/prompts"
+test -d prompts || git clone "https://github.com/semiosis/prompts"
 )
 
 # rustc and cargo are for building emacs-yamlmod
