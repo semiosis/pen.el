@@ -29,20 +29,20 @@
 (defvar pen-current-lighter " ⊚")
 (defun pen-compose-mode-line ()
   ;; Only change every second
-  (let ((m (mod (second (org-time-since 0)) 10))
-        (newlighter
-         (cond
-          ((eq 0 m) " ★")
-          ((eq 1 m) " ○")
-          ((eq 2 m) " ◎")
-          ((eq 3 m) " ⊙")
-          ((eq 4 m) " ⊚")
-          ((eq 5 m) " ◎")
-          ((eq 6 m) " ⊙")
-          ((eq 7 m) " ⊚")
-          ((eq 8 m) " ◎")
-          ((eq 9 m) " ☆")
-          (t " ⊚"))))
+  (let* ((m (mod (second (org-time-since 0)) 10))
+         (newlighter
+          (cond
+           ((eq 0 m) " ☆")
+           ((eq 1 m) " ○")
+           ((eq 2 m) " ◎")
+           ((eq 3 m) " ⊙")
+           ((eq 4 m) " ⊚")
+           ((eq 5 m) " ◎")
+           ((eq 6 m) " ⊙")
+           ((eq 7 m) " ⊚")
+           ((eq 8 m) " ◎")
+           ((eq 9 m) " ○")
+           (t " ⊚"))))
     (setq pen-current-lighter newlighter)
     newlighter))
 
