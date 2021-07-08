@@ -34,6 +34,9 @@ pip install openai
 # For lm-complete.sh
 pip install yq
 
+# For tidy-prompt
+pip intall python-json2yaml
+
 # For Pen.el
 ## slugify
 agi libc-bin
