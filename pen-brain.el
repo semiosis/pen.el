@@ -73,8 +73,7 @@
   (interactive (list (read-string-hist (concat "asktutor about " (pen-topic) ": "))))
   (let ((topic (org-brain-current-topic)))
 
-    (setq topic
-          )
+    (setq topic)
 
     (let ((answer
            (eval
