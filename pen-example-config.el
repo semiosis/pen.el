@@ -40,7 +40,7 @@
 ;; https://github.com/perfectayush/emacs-yamlmod
 (if module-file-suffix
     (progn
-      (module-load (concat (getenv "YAMLMOD_PATH") "/target/release/yamlmod.so"))
+      (module-load (concat (getenv "YAMLMOD_PATH") "/target/release/libyamlmod.so"))
       (add-to-list 'load-path (getenv "YAMLMOD_PATH"))
       (require 'yamlmod)
       (require 'yamlmod-wrapper)))
