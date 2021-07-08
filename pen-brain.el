@@ -35,6 +35,9 @@
   (interactive)
   (call-interactively 'pen-topic))
 
+;; TODO Clean this up.
+;; I don't want org-template-gen involved.
+;; I also don't want to use extensions to org-brain that I have made.
 (defun org-brain-describe-topic ()
   (interactive)
 
