@@ -1,10 +1,7 @@
-* Dependencies
-** =openai= =pip= library and command
-#+BEGIN_SRC sh -n :sps bash :async :results none
-  pip3 install openai
-#+END_SRC
+This is tested on Debian 10 and Ubuntu 20.04.
 
-*** =OpenAI= API key
+* Installation
+** =OpenAI= API key
 You will need your own OpenAI API key.
 
 ** Debian 10
@@ -22,7 +19,11 @@ See above =init.el= file for an example of where to place your config.
 [[./pen-example-config.el]]
 
 ** Running =pen.el=
+This is tested on Debian 10 and Ubuntu 20.04.
+
 [[./scripts/run.sh]]
 
-** Add scripts to PATH
+*** Add scripts to PATH
+=pen.el= calls
+
 - https://github.com/semiosis/pen.el/tree/master/scripts
