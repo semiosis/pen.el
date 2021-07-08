@@ -66,8 +66,8 @@
               (with-current-buffer cb
                 (revert-buffer))))))))
 
-;; TODO Fix this
-;; Consider including ttp, actually.
+;; TODO Fix this.
+;; Replace ttp with a much simpler thing.
 ;; I want to incorporate spacy at some point anyway.
 (defun org-brain-asktutor (question)
   (interactive (list (read-string-hist (concat "asktutor about " (pen-topic) ": "))))
