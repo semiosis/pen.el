@@ -283,6 +283,9 @@ This appears to strip ansi codes.
 (defun glob (pattern &optional dir)
   (split-string (pen-cl-sn (concat "pen-glob " (pen-q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
 
+(defun flatten-once (list-of-lists)
+  (apply #'append list-of-lists))
+
 (defun new-buffer-from-string (&optional contents bufname mode nodisplay)
   "Create a new untitled buffer from a string."
   (interactive)
