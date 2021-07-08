@@ -28,6 +28,7 @@
 
 (defvar pen-current-lighter " ⊚")
 (defun pen-compose-mode-line ()
+  ;; Only change every second
   (if (eq 0 (mod (second (org-time-since 0)) 2))
       (let ((newlighter
              (cond
