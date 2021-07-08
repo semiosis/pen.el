@@ -29,12 +29,12 @@
 (defvar pen-current-lighter " ⊚")
 (defun pen-compose-mode-line ()
   (cond
-   ((string-equal " ⊚") " ⊙")
-   ((string-equal " ⊙") " ⊚")
+   ((string-equal pen-current-lighter " ⊚") " ⊙")
+   ((string-equal pen-current-lighter " ⊙") " ⊚")
    (t " ⊚")))
 
 (define-minor-mode pen
-  "Mode for working with language models in your  buffers."
+  "Mode for working with language models in your buffers."
   :global t
   :init-value t
   ;; zone plate
