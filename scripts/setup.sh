@@ -24,6 +24,7 @@ make
 
 # For lm-complete
 apt install python-pip
+pip install openai
 
 # For Pen.el
 ## slugify
