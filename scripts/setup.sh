@@ -22,6 +22,9 @@ git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
 make
 )
 
+# For lm-complete
+apt install python-pip
+
 # For Pen.el
 ## slugify
 api install libc-bin
