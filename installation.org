@@ -15,9 +15,11 @@ This is the base requirements for a vanilla emacs.
 
 [[./init.el]]
 
+*** Configure =pen.el=
+See above =init.el= file for where to place your config.
+
+**** Example emacs config
+[[./pen-example-config.el]]
+
 ** Add scripts to PATH
 - https://github.com/semiosis/pen.el/tree/master/scripts
-
-* Configure =pen.el=
-** Example emacs config
-[[./pen-example-config.el]]
