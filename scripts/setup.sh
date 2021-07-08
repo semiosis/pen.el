@@ -11,6 +11,7 @@ apt install clang libclang1
 test -d emacs || git clone "https://github.com/emacs-mirror/emacs"
 
 # For building emacs
+# --with-modules is required to load emacs-yamlmod
 apt install autoconf texinfo gnutls30 gnutls28-dev pkg-config
 
 (
