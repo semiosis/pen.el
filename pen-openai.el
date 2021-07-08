@@ -12,4 +12,4 @@
    "instruct-curie-beta"
    "instruct-davinci-beta"))
 
-(provide 'my-openai-models)
+(provide 'my-openai)
