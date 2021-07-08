@@ -532,4 +532,18 @@ when s is a string, set the clipboard to s"
                s))
            "")))))
 
+(defmacro pen-mu (&rest body)
+  "This unminimises the code"
+  (let* ((codestring (pp-to-string body))
+         (ucodestring (umn codestring))
+         (newcode (my-eval-string (concat "'" ucodestring))))
+    `(progn ,@newcode)))
+
+(defmacro pen-mm (&rest body)
+  "This minimises the code"
+  (let* ((codestring (pp-to-string body))
+         (mcodestring (mnm codestring))
+         (newcode (my-eval-string (concat "'" mcodestring))))
+    `(progn ,@newcode)))
+
 (provide 'pen-support)
