@@ -233,7 +233,7 @@ This appears to strip ansi codes.
 
   (setq prompt (sor prompt ":"))
 
-  (if (not (re-match-p " $" prompt))
+  (if (not (string-match " $" prompt))
       (setq prompt (concat prompt " ")))
 
   (if (eq (type-of list) 'symbol)
@@ -436,7 +436,7 @@ when s is a string, set the clipboard to s"
 
   (setq prompt (sor prompt ":"))
 
-  (if (not (re-match-p " $" prompt))
+  (if (not (string-match " $" prompt))
       (setq prompt (concat prompt " ")))
 
   (initvar histvar)
