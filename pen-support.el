@@ -535,4 +535,6 @@ when s is a string, set the clipboard to s"
                s))
            "")))))
 
+(defalias 'second 'cadr)
+
 (provide 'pen-support)
