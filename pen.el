@@ -31,7 +31,7 @@
   :global t
   :init-value t
   ;; zone plate
-  :lighter "⊚"
+  :lighter " ⊚"
   :keymap pen-map)
 
 (defset pen-prompt-functions nil)
