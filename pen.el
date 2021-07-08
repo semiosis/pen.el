@@ -26,12 +26,19 @@
   "Keymap for `pen.el'.")
 (defvar-local pen.el nil)
 
+(defvar pen-current-lighter " ⊚")
+(defun pen-compose-mode-line ()
+  (cond
+   ((string-equal " ⊚") " ⊙")
+   ((string-equal " ⊙") " ⊚")
+   (t " ⊚")))
+
 (define-minor-mode pen
   "Mode for working with language models in your  buffers."
   :global t
   :init-value t
   ;; zone plate
-  :lighter " ⊚"
+  :lighter (:eval (pen-compose-mode-line))
   :keymap pen-map)
 
 (defset pen-prompt-functions nil)
