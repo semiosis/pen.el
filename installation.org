@@ -10,9 +10,6 @@ Please email me if you would like to use my key for this project.
 ** Debian 10
 [[./scripts/setup.sh]]
 
-** Ensure you have the following tools installed
-- http://github.com/semiosis/pen.el/blob/master/setup-dependencies.sh
-
 ** Add scripts to PATH
 - https://github.com/semiosis/pen.el/tree/master/scripts
 
