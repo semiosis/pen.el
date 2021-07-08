@@ -157,9 +157,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                                     ,(flatten-once
                                                       (list
                                                        (list 'concat
-                                                             (if cache
-                                                                 "LM_COMPLETE_CACHE=y "
-                                                               "")
+                                                             (sh-construct-envs `(("LM_CACHE" ,(if cache "y" ""))))
                                                              "lm-complete "
                                                              (pen-q path))
                                                        (flatten-once
