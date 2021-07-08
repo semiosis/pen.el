@@ -29,20 +29,22 @@
 (defvar pen-current-lighter " ⊚")
 (defun pen-compose-mode-line ()
   ;; Only change every second
-  (if (eq 0 (mod (second (org-time-since 0)) 2))
-      (let ((newlighter
-             (cond
-              ((string-equal pen-current-lighter " ☆") " ★")
-              ((string-equal pen-current-lighter " ★") " ○")
-              ((string-equal pen-current-lighter " ○") " ◎")
-              ((string-equal pen-current-lighter " ◎") " ●")
-              ((string-equal pen-current-lighter " ●") " ⊙")
-              ((string-equal pen-current-lighter " ⊙") " ⊚")
-              ((string-equal pen-current-lighter " ⊚") " ☆")
-              (t " ⊚"))))
-        (setq pen-current-lighter newlighter)
-        newlighter)
-    pen-current-lighter))
+  (let ((m (mod (second (org-time-since 0)) 10))
+        (newlighter
+         (cond
+          ((eq 0 m) " ★")
+          ((eq 1 m) " ○")
+          ((eq 2 m) " ◎")
+          ((eq 3 m) " ⊙")
+          ((eq 4 m) " ⊚")
+          ((eq 5 m) " ◎")
+          ((eq 6 m) " ⊙")
+          ((eq 7 m) " ⊚")
+          ((eq 8 m) " ◎")
+          ((eq 9 m) " ☆")
+          (t " ⊚"))))
+    (setq pen-current-lighter newlighter)
+    newlighter))
 
 (define-minor-mode pen
   "Mode for working with language models in your buffers."
