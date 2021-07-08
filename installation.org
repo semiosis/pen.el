@@ -4,8 +4,8 @@
   pip3 install openai
 #+END_SRC
 
-*** =openai= API key
-You will need your own key.
+*** =OpenAI= API key
+You will need your own OpenAI API key.
 
 ** Debian 10
 [[./scripts/setup.sh]]
