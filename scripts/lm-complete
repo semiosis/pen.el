@@ -1,8 +1,13 @@
 #!/bin/bash
 export TTY
 
+# Request to cache completions
 export LM_CACHE
+
+# Update caches (would override LM_CACHE)
 export UPDATE
+
+# Request the pretty printer if the prompt specifies one
 export PRETTY_PRINT
 
 # Initial implementation is in sh
