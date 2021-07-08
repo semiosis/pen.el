@@ -1,5 +1,9 @@
 #!/bin/bash
 export TTY
 
+export LM_CACHE
+export UPDATE
+export PRETTY_PRINT
+
 # Initial implementation is in sh
 lm-complete.sh
