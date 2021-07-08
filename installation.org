@@ -5,7 +5,7 @@
 #+END_SRC
 
 *** =openai= API key
-Please email me if you would like to use my key for this project.
+You will need your own key.
 
 ** Debian 10
 [[./scripts/setup.sh]]
