@@ -28,10 +28,13 @@
 
 (defvar pen-current-lighter " ⊚")
 (defun pen-compose-mode-line ()
-  (cond
-   ((string-equal pen-current-lighter " ⊚") " ⊙")
-   ((string-equal pen-current-lighter " ⊙") " ⊚")
-   (t " ⊚")))
+  (let ((newlighter
+         (cond
+          ((string-equal pen-current-lighter " ⊚") " ⊙")
+          ((string-equal pen-current-lighter " ⊙") " ⊚")
+          (t " ⊚"))))
+    (setq pen-current-lighter newlighter)
+    newlighter))
 
 (define-minor-mode pen
   "Mode for working with language models in your buffers."
