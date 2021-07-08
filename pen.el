@@ -175,9 +175,6 @@ Function names are prefixed with pen-pf- for easy searching"
                                          result))))))
                 (message (concat "pen-mode: Loaded prompt function " func-name)))))))
 
-;; Initial load of prompt functions
-(pen-generate-prompt-functions)
-
 (defun pen-filter-with-prompt-function ()
   (interactive)
   (let ((f (fz pen-prompt-functions nil nil "pen filter: ")))
