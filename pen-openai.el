@@ -20,7 +20,6 @@
     ("top-p" . 1)
     ("response-length" . 100)
     ("prompt-length" . 6000)
-    ("janus" . false)
     ("adaptive" . false)
     ("model" . "davinci")
     ("memory" . "")))
@@ -33,7 +32,6 @@
     ("textsize" . 10)
     ("horizontal" . true)
     ("displaytext" . true)
-    ("showbuttons" . true)
-))
+    ("showbuttons" . true)))
 
 (provide 'my-openai)
