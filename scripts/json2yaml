@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+test -f "$HOME/local/bin/json2yaml" && : "${bin:="$HOME/local/bin/json2yaml"}"
+
+test -f "$bin" || py i python-json2yaml &>/dev/null
+
+"$bin" -
+
+# ruby -ryaml -rjson -e 'puts YAML.dump(JSON.parse(STDIN.read))'
