@@ -54,7 +54,7 @@ printf -- "%s" "Output: $out" | awk 1
 
 while read -ep "$prompt: " -r line; do
 # while read -r line < <(readln "$prompt"); do
-# chomp it
+# pen-chomp it
 line="$(printf -- "%s" "$line" | sed -z "s/^\\s*$//")"
 if test -z "$line"; then
     echo -n "$prompt: "

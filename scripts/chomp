@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Remove surrounding whitespace
+
+in="$(cat)"
+printf -- "%s" "$in"

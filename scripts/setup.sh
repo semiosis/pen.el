@@ -2,17 +2,21 @@
 
 # Debian10 installation
 
+agi() {
+    apt install -y "$@"
+}
+
 cd ~
-apt install git python vim emacs mosh curl make
+agi git python vim emacs mosh curl make
 
 # For emacs-yamlmod
-apt install clang libclang1
+agi clang libclang1
 
 test -d emacs || git clone "https://github.com/emacs-mirror/emacs"
 
 # For building emacs
 # --with-modules is required to load emacs-yamlmod
-apt install autoconf texinfo gnutls30 gnutls28-dev pkg-config
+agi autoconf texinfo gnutls30 gnutls28-dev pkg-config
 
 (
 cd emacs
@@ -22,17 +26,21 @@ git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
 make
 )
 
+agi python-pip
+
 # For lm-complete
-apt install python-pip
 pip install openai
+
+# For lm-complete.sh
+pip install yq
 
 # For Pen.el
 ## slugify
-api install libc-bin
+agi libc-bin
 ## unbuffer
-apt install expect
+agi expect
 ## sponge
-apt install moreutils
+agi moreutils
 
 (
 mkdir -p ~/.emacs.d

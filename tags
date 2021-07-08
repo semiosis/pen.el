@@ -4,11 +4,13 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-HEREDOC	scripts/lm-complete	/^    IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
-HEREDOC	scripts/lm-complete	/^    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC$/;"	h
+HEREDOC	scripts/lm-complete.sh	/^    IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
+HEREDOC	scripts/lm-complete.sh	/^    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC$/;"	h
 HEREDOC	scripts/openai-complete	/^IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
+agi	scripts/setup.sh	/^agi() {$/;"	f
 b	scripts/nlsh.py	/^def b(c, inputstring="", timeout=0):$/;"	f
 chomp	pen-support.el	/^(defun chomp (str)$/;"	f
+chomp	scripts/lib.sh	/^chomp() {$/;"	f
 command	scripts/nlsh.py	/^    command = b(postprocessor, command)[0]$/;"	v
 command	scripts/nlsh.py	/^    command = result.choices[0]["text"].strip()$/;"	v
 completing-read-hist	pen-support.el	/^(defun completing-read-hist (prompt &optional initial-input histvar default-value)$/;"	f
@@ -27,7 +29,7 @@ get-dir	pen-support.el	/^(defun get-dir ()$/;"	f
 get-ext-for-lang	pen-support.el	/^(defun get-ext-for-lang (langstr)$/;"	f
 get-ext-for-mode	pen-support.el	/^(defun get-ext-for-mode (&optional m)$/;"	f
 get-path-ext-from-mode-alist	pen-support.el	/^(defalias 'get-path-ext-from-mode-alist 'get-ext-for-mode)$/;"	f
-get_stop_sequences	scripts/lm-complete	/^get_stop_sequences() {$/;"	f
+get_stop_sequences	scripts/lm-complete.sh	/^get_stop_sequences() {$/;"	f
 glob	pen-support.el	/^(defun glob (pattern &optional dir)$/;"	f
 initvar	pen-support.el	/^(defmacro initvar (symbol &optional value)$/;"	f
 lang-to-mode	pen-support.el	/^(defun lang-to-mode (&optional langstr)$/;"	f
@@ -38,7 +40,6 @@ new-buffer-from-o	pen-support.el	/^(defun new-buffer-from-o (o)$/;"	f
 new-buffer-from-string	pen-support.el	/^(defun new-buffer-from-string (&optional contents bufname mode nodisplay)$/;"	f
 noupd	pen-support.el	/^(defmacro noupd (&rest body)$/;"	f
 ntimes	pen-support.el	/^(defmacro ntimes (n &rest body)$/;"	f
-oci	scripts/lm-complete	/^oci() {$/;"	f
 ogprompt	scripts/nlsh.py	/^ogprompt = ogprompt.replace("<1>", os)$/;"	v
 ogprompt	scripts/nlsh.py	/^ogprompt = yaml.load(data)["prompt"]$/;"	v
 org-brain-pf-topic	pen-brain.el	/^(defun org-brain-pf-topic (&optional short)$/;"	f
@@ -56,7 +57,7 @@ prompt	scripts/nlsh.py	/^    prompt = prompt.strip() + " " + command + "\\n###\\
 ptw	pen-support.el	/^(defalias 'ptw 'preserve-trailing-whitespace)$/;"	f
 read-string-hist	pen-support.el	/^(defalias 'read-string-hist 'completing-read-hist)$/;"	f
 region-or-buffer-string	pen-support.el	/^(defun region-or-buffer-string ()$/;"	f
-repl_run	scripts/lm-complete	/^repl_run() {$/;"	f
+repl_run	scripts/lm-complete.sh	/^repl_run() {$/;"	f
 request	scripts/nlsh.py	/^    request = input(click.style("nlsh> ", "red", bold=True))$/;"	v
 result	scripts/nlsh.py	/^    result = openai.Completion.create($/;"	v
 s-preserve-trailing-whitespace	pen-support.el	/^(defun s-preserve-trailing-whitespace (s-new s-old)$/;"	f
@@ -65,8 +66,9 @@ selected	pen-support.el	/^(defun selected ()$/;"	f
 shut-up-c	pen-support.el	/^(defmacro shut-up-c (&rest body)$/;"	f
 slugify	pen-support.el	/^(defun slugify (input &optional joinlines length)$/;"	f
 slurp-file	pen-support.el	/^(defun slurp-file (filePath)$/;"	f
-stdin_exists	scripts/lm-complete	/^stdin_exists() {$/;"	f
+stdin_exists	scripts/lm-complete.sh	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/openai-complete	/^stdin_exists() {$/;"	f
+stdin_exists	scripts/tidy-prompt	/^stdin_exists() {$/;"	f
 str	pen-support.el	/^(defun str (thing)$/;"	f
 string-empty-or-nil-p	pen-support.el	/^(defun string-empty-or-nil-p (s)$/;"	f
 string-first-nonnil-nonempty-string	pen-support.el	/^(defun string-first-nonnil-nonempty-string (&rest ss)$/;"	f
@@ -78,4 +80,4 @@ tryelse	pen-support.el	/^(defmacro tryelse (thing &optional otherwise)$/;"	f
 upd	pen-support.el	/^(defmacro upd (&rest body)$/;"	f
 vector2list	pen-support.el	/^(defun vector2list (v)$/;"	f
 xc	pen-support.el	/^(defun xc (&optional s silent)$/;"	f
-yq	scripts/lm-complete	/^yq() {$/;"	f
+yq	scripts/lm-complete.sh	/^yq() {$/;"	f
