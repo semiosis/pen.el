@@ -35,6 +35,32 @@
   (interactive)
   (call-interactively 'pen-topic))
 
+(defun org-brain-current-topic (&optional for-external-searching)
+  (interactive)
+  (let ((cname (org-brain-current-name))
+        (pname (org-brain-parent-name))
+        (path (mapcar 'org-brain-name-from-list-maybe (append (org-brain-parents org-brain--vis-entry) (list org-brain--vis-entry))))
+        (topic))
+
+    (setq topic
+          (cond
+           ((org-brain-at-child-of-index) cname)
+           ((org-brain-at-top-index) "general knowledge")
+           (t "general knowledge")))
+
+    (setq path
+          (if for-external-searching
+              (org-brain-remove-irrelevant-names-from-path path)
+            path))
+
+    (let ((topic (chomp (apply 'cmd path))))
+      (if (not (sor topic))
+          (setq topic "general knowledge"))
+
+      (if (interactive-p)
+          (etv topic)
+        topic))))
+
 ;; TODO Clean this up.
 ;; I don't want org-template-gen involved.
 ;; I also don't want to use extensions to org-brain that I have made.
@@ -73,15 +99,8 @@
   (interactive (list (read-string-hist (concat "asktutor about " (pen-topic) ": "))))
   (let ((topic (org-brain-current-topic)))
 
-    (setq topic)
-
     (let ((answer
-           (eval
-            `(ci (snc "ttp" (pen-pf-generic-tutor-for-any-topic
-                             ,topic
-                             ;; ,cname
-                             ;; ,pname
-                             ,question))))))
+           (snc "ttp" (pen-pf-generic-tutor-for-any-topic topic question))))
       (if (interactive-p)
           (etv answer)
         answer))))
