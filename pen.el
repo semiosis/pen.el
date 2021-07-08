@@ -179,7 +179,7 @@ Function names are prefixed with pen-pf- for easy searching"
 
 (defun pen-run-prompt-function ()
   (interactive)
-  (let* ((pen-sh-update (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+  (let* ((pen-sh-update (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
          (f (fz pen-prompt-functions nil nil "pen run: ")))
     (if f
         (call-interactively (intern f)))))
