@@ -1,6 +1,10 @@
 #!/bin/bash
 export TTY
 
+# This is a bash pipeline command for standardising a prompt
+# Example:
+# cat grammar-correction.prompt | tidy-prompt | sponge grammar-correction.prompt
+
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }

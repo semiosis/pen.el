@@ -7,4 +7,6 @@ test -f "$bin" || py i python-json2yaml &>/dev/null
 
 "$bin" -
 
+# The ruby way has nicer output but I didn't want to introduce ruby as another
+# dependency.
 # ruby -ryaml -rjson -e 'puts YAML.dump(JSON.parse(STDIN.read))'
