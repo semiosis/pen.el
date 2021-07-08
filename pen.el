@@ -9,6 +9,7 @@
 (require 'iedit)
 (require 'ht)
 (require 'helm)
+(require 'memoize)
 (require 'ivy)
 (require 'pp)
 (require 's)
