@@ -30,6 +30,10 @@ apt install expect
 ## sponge
 apt install moreutils
 
+mkdir -p ~/.emacs.d
+cd ~/.emacs.d
+git clone "https://github.com/semiosis/prompts"
+
 # rustc and cargo are for building emacs-yamlmod
 # Debian GNU/Linux 10 does not have the required version of rustc
 # rustc 1.41.1 will not build emacs-yaml
