@@ -21,5 +21,8 @@ See above =init.el= file for an example of where to place your config.
 **** Example emacs config
 [[./pen-example-config.el]]
 
+** Running =pen.el=
+[[./scripts/run.sh]]
+
 ** Add scripts to PATH
 - https://github.com/semiosis/pen.el/tree/master/scripts
