@@ -36,7 +36,7 @@ cd ~/.emacs.d
 test -d prompts || git clone "https://github.com/semiosis/prompts"
 )
 
-mkdir -p "/root/.emacs.d/comint-history/"
+mkdir -p "/root/.emacs.d/comint-history"
 
 # rustc and cargo are for building emacs-yamlmod
 # Debian GNU/Linux 10 does not have the required version of rustc
