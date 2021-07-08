@@ -19,6 +19,14 @@ git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
 make
 )
 
+# For Pen.el
+## slugify
+api install libc-bin
+## unbuffer
+apt install expect
+## sponge
+apt install moreutils
+
 # rustc and cargo are for building emacs-yamlmod
 # Debian GNU/Linux 10 does not have the required version of rustc
 # rustc 1.41.1 will not build emacs-yaml
