@@ -68,7 +68,7 @@
 
 ;; TODO Fix this.
 ;; Replace ttp with a much simpler thing.
-;; I want to incorporate spacy at some point anyway.
+;; I want to incorporate spaCy at some point anyway.
 (defun org-brain-asktutor (question)
   (interactive (list (read-string-hist (concat "asktutor about " (pen-topic) ": "))))
   (let ((topic (org-brain-current-topic)))
