@@ -20,18 +20,6 @@
     ("top-p" . 1)
     ("response-length" . 100)
     ("prompt-length" . 6000)
-    ("adaptive" . false)
-    ("model" . "davinci")
-    ("memory" . "")))
-
-(defset default-visualization-settings
-        '(
-    ("textwidth" . 450)
-    ("leafdist" . 200)
-    ("leveldistance" . 150)
-    ("textsize" . 10)
-    ("horizontal" . true)
-    ("displaytext" . true)
-    ("showbuttons" . true)))
+    ("model" . "davinci")))
 
 (provide 'pen-openai)
