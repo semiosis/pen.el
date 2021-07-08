@@ -7,6 +7,9 @@
 *** =openai= API key
 Please email me if you would like to use my key for this project.
 
+** Debian 10
+[[./scripts/setup.sh]]
+
 ** Install =emacs-yamlmod=
 - https://github.com/perfectayush/emacs-yamlmod
 
