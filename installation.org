@@ -24,6 +24,6 @@ This is tested on Debian 10 and Ubuntu 20.04.
 [[./scripts/run.sh]]
 
 *** Add scripts to PATH
-=pen.el= calls
+=pen.el= requires some external scripts to be in the path.
 
 - https://github.com/semiosis/pen.el/tree/master/scripts
