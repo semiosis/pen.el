@@ -34,4 +34,4 @@
     ("displaytext" . true)
     ("showbuttons" . true)))
 
-(provide 'my-openai)
+(provide 'pen-openai)
