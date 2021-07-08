@@ -3,10 +3,10 @@
        (boundp s)))
 
 (defmacro upd (&rest body)
-  `(let ((sh-update t)) ,@body))
+  `(let ((pen-sh-update t)) ,@body))
 
 (defmacro noupd (&rest body)
-  `(let ((sh-update nil)) ,@body))
+  `(let ((pen-sh-update nil)) ,@body))
 
 (defmacro tryelse (thing &optional otherwise)
   "Try to run a thing. Run something else if it fails."
@@ -162,8 +162,8 @@ This appears to strip ansi codes.
         (setq cmd (concat "unbuffer -p " cmd)))
 
     (if (or
-         (and (variable-p 'sh-update)
-              (eval 'sh-update))
+         (and (variable-p 'pen-sh-update)
+              (eval 'pen-sh-update))
          (>= (prefix-numeric-value current-global-prefix-arg) 16))
         (setq cmd (concat "upd " cmd)))
 
@@ -174,7 +174,7 @@ This appears to strip ansi codes.
            (sh-construct-exports
             (-filter 'identity
                      (list (list "PATH" (getenv "PATH"))
-                           (if (and (variable-p 'sh-update) (eval 'sh-update))
+                           (if (and (variable-p 'pen-sh-update) (eval 'sh-update))
                                (list "UPDATE" "y")))))))
       (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))
 

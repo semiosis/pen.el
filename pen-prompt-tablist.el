@@ -104,7 +104,7 @@
 
 (defun pen-prompts-tablist-start ()
   (interactive)
-  (let* ((sh-update (>= (prefix-numeric-value current-global-prefix-arg) 16)))
+  (let* ((pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 16)))
     (apply 'create-tablist (cons pen-prompts-tablist-data-command pen-prompts-tablist-meta))))
 
 (provide 'pen-tablist)

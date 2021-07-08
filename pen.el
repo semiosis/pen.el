@@ -17,6 +17,8 @@
 (require 'selected)
 (require 'pcsv)
 
+(require 'pen-custom)
+
 (defvar my-completion-engine 'company-pen-filetype)
 
 (defvar pen-map (make-sparse-keymap)
@@ -29,12 +31,6 @@
   :init-value t
   :lighter " pen"
   :keymap pen-map)
-
-(defcustom pen-prompt-directory ""
-  "Directory where .prompt files are located"
-  :type 'string
-  :group 'pen
-  :initialize #'custom-initialize-default)
 
 (defset pen-prompt-functions nil)
 (defset pen-prompt-functions-meta nil)
@@ -129,8 +125,8 @@ Function names are prefixed with pen-pf- for easy searching"
                                   `(cl-defun ,func-sym ,var-syms
                                      ,(sor doc title)
                                      (interactive ,(cons 'list iargs))
-                                     (let* ((sh-update
-                                             (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+                                     (let* ((pen-sh-update
+                                             (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
                                             (shcmd (concat
                                                     ,(if (sor prettifier)
                                                          '(if prettify
@@ -183,7 +179,7 @@ Function names are prefixed with pen-pf- for easy searching"
 
 (defun pen-run-prompt-function ()
   (interactive)
-  (let* ((sh-update (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+  (let* ((pen-sh-update (or sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
          (f (fz pen-prompt-functions nil nil "pen run: ")))
     (if f
         (call-interactively (intern f)))))
