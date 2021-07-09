@@ -2,6 +2,9 @@
 
 # Debian10 installation
 
+export EMACSD=$HOME/.emacs.d
+mkdir -p "$EMACSD"
+
 agi() {
     apt install -y "$@"
 }
@@ -46,12 +49,11 @@ agi expect
 agi moreutils
 
 (
-mkdir -p ~/.emacs.d
 cd ~/.emacs.d
 test -d prompts || git clone "https://github.com/semiosis/prompts"
 )
 
-mkdir -p "/root/.emacs.d/comint-history"
+mkdir -p "$EMACSD/comint-history"
 
 # rustc and cargo are for building emacs-yamlmod
 # Debian GNU/Linux 10 does not have the required version of rustc
@@ -59,6 +61,6 @@ mkdir -p "/root/.emacs.d/comint-history"
 # rustc 1.51.0 will build it
 rustc --version | grep -q " 1.5" || curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-cd ~/.emacs.d/emacs-yamlmod
+cd "$EMACSD/emacs-yamlmod"
 source $HOME/.cargo/env
 make
