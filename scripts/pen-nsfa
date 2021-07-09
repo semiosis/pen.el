@@ -5,10 +5,10 @@
 # This will return the path to a new script in
 # the =tmp= directory which when executed will
 # execute =echo hi=.
-# 
+#
 # =pen-nsfa= is used by =comint-quick=, which
 # will is used to create =comint= modes for, for example, =nlsh=.
-# 
+#
 # See =nlsh-os=.
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
