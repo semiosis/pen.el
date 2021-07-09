@@ -5,8 +5,6 @@
 # or:
 # echo French | openai-complete.sh translate-to.prompt Goodnight
 
-sn="$(basename "$0")"
-
 yq() {
     command yq "$@" 2>/dev/null
 }
