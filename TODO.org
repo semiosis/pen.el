@@ -1,3 +1,5 @@
+- Construct/template the final prompt
+  v +/"finalprompt" "$HOME/source/git/semiosis/pen.el/pen.el"
 - Use emacs' prompts hash table to generate the csv
   This way the catalog will open instantaneously.
   - Delete prompts-details
