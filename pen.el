@@ -146,54 +146,59 @@ Function names are prefixed with pen-pf- for easy searching"
                 (if (and
                      (not needs-work)
                      (not in-development))
-                    (add-to-list 'pen-prompt-functions
-                                 (eval
-                                  `(cl-defun ,func-sym ,var-syms
-                                     ,(sor doc title)
-                                     (interactive ,(cons 'list iargs))
-                                     (let* ((pen-sh-update
-                                             (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
-                                            (shcmd (concat
-                                                    (if (sor prettifier)
-                                                        (concat
-                                                         (sh-construct-envs `(("DO_PRETTY_PRINT" ,(if prettify "y" ""))))
-                                                         " ")
-                                                      "")
-                                                    ,(flatten-once
-                                                      (list
-                                                       (list 'concat
-                                                             (sh-construct-envs `(("LM_CACHE" ,(if cache "y" ""))))
-                                                             " lm-complete "
-                                                             (pen-q path))
-                                                       (flatten-once
-                                                        (cl-loop for vs in var-slugs collect
-                                                                 (list " "
-                                                                       (list 'pen-q (intern vs)))))))))
-                                            (result
-                                             (chomp
-                                              (mapconcat 'identity
-                                                         (cl-loop for i in (number-sequence ,n-collate)
-                                                                  collect
-                                                                  (progn
-                                                                    (message (concat ,func-name " query " (int-to-string i) "..."))
-                                                                    (let ((ret (pen-sn shcmd)))
-                                                                      (message (concat ,func-name " done " (int-to-string i)))
-                                                                      ret)))
-                                                         ""))))
-                                       (if (interactive-p)
-                                           (cond
-                                            ((and ,filter
-                                                  mark-active)
-                                             (replace-region (concat (pen-selected-text) result)))
-                                            (,completion
-                                             (etv result))
-                                            ((or ,(not filter)
-                                                 (>= (prefix-numeric-value current-prefix-arg) 4)
-                                                 (not mark-active))
-                                             (etv result))
-                                            (t
-                                             (replace-region result)))
-                                         result))))))
+                    (let ((funcsym
+                           (eval
+                            `(cl-defun ,func-sym ,var-syms
+                               ,(sor doc title)
+                               (interactive ,(cons 'list iargs))
+                               (let* ((pen-sh-update
+                                       (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+                                      (shcmd (concat
+                                              (if (sor prettifier)
+                                                  (concat
+                                                   (sh-construct-envs `(("DO_PRETTY_PRINT" ,(if prettify "y" ""))))
+                                                   " ")
+                                                "")
+                                              ,(flatten-once
+                                                (list
+                                                 (list 'concat
+                                                       (sh-construct-envs `(("LM_CACHE" ,(if cache "y" ""))))
+                                                       " lm-complete "
+                                                       (pen-q path))
+                                                 (flatten-once
+                                                  (cl-loop for vs in var-slugs collect
+                                                           (list " "
+                                                                 (list 'pen-q (intern vs)))))))))
+                                      (result
+                                       (chomp
+                                        (mapconcat 'identity
+                                                   (cl-loop for i in (number-sequence ,n-collate)
+                                                            collect
+                                                            (progn
+                                                              (message (concat ,func-name " query " (int-to-string i) "..."))
+                                                              (let ((ret (pen-sn shcmd)))
+                                                                (message (concat ,func-name " done " (int-to-string i)))
+                                                                ret)))
+                                                   ""))))
+                                 (if (interactive-p)
+                                     (cond
+                                      ((and ,filter
+                                            mark-active)
+                                       (replace-region (concat (pen-selected-text) result)))
+                                      (,completion
+                                       (etv result))
+                                      ((or ,(not filter)
+                                           (>= (prefix-numeric-value current-prefix-arg) 4)
+                                           (not mark-active))
+                                       (etv result))
+                                      (t
+                                       (replace-region result)))
+                                   result))))))
+                      (add-to-list 'pen-prompt-functions funcsym)
+                      ;; Using memoization here is  the more efficient way to memoize.
+                      ;; TODO I'll sort it out later. I want an updating mechanism.
+                      ;; (if cache (memoize funcsym))
+                      ))
                 (message (concat "pen-mode: Loaded prompt function " func-name)))))))
 
 (defun pen-filter-with-prompt-function ()
