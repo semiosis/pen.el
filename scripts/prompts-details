@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# TODO Use emacs' prompts hash table to generate the csv
+# This way the catalog will open instantaneously.
+
 # Make a csv of information from a given prompts directory
 # This is for the prompts catalogue.
 

@@ -10,6 +10,7 @@ HEREDOC	scripts/openai-complete	/^IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
 HEREDOC	scripts/openai-complete.sh	/^    IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
 HEREDOC	scripts/openai-complete.sh	/^    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC$/;"	h
 HEREDOC	scripts/pen-nsfa	/^IFS= read -r -d '' scriptcode <<'HEREDOC'$/;"	h
+HEREDOC	scripts/prompts-details	/^IFS= read -r -d '' jqsrc <<HEREDOC$/;"	h
 HEREDOC	scripts/prompts-details-get-row	/^IFS= read -r -d '' jqsrc <<HEREDOC$/;"	h
 agi	scripts/setup.sh	/^agi() {$/;"	f
 b	scripts/nlsh.py	/^def b(c, inputstring="", timeout=0):$/;"	f
@@ -69,6 +70,7 @@ pps	pen-support.el	/^(defalias 'pps 'pp-to-string)$/;"	f
 preserve-trailing-whitespace	pen-support.el	/^(defun preserve-trailing-whitespace (fun s)$/;"	f
 prompt	scripts/nlsh.py	/^    prompt = ogprompt.rstrip() + "\\n" + template.format(request).rstrip()$/;"	v
 prompt	scripts/nlsh.py	/^    prompt = prompt.strip() + " " + command + "\\n###\\n"$/;"	v
+prompts-details-get-row	scripts/prompts-details	/^prompts-details-get-row() {$/;"	f
 ptw	pen-support.el	/^(defalias 'ptw 'preserve-trailing-whitespace)$/;"	f
 read-string-hist	pen-support.el	/^(defalias 'read-string-hist 'completing-read-hist)$/;"	f
 region-or-buffer-string	pen-support.el	/^(defun region-or-buffer-string ()$/;"	f

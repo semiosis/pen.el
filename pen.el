@@ -77,14 +77,13 @@
     prompt
     cache
     collation-postprocessor completion
-    vars aliases alias-slugs
-    examples preprocessors var-slugs
-    var-syms func-name))
+    vars aliases alias-slugs))
 
 (defun define-prompt-function (func-name func-sym var-syms doc
-                               title iargs prettify
-                               cache path var-slugs n-collate
-                               filter completion)
+                                         title iargs prettify
+                                         prettifier
+                                         cache path var-slugs n-collate
+                                         filter completion)
   (eval
    `(cl-defun ,func-sym ,var-syms
       ,(sor doc title)
@@ -162,7 +161,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (in-development (pen-yaml-test yaml "in-development"))
 
                      ;; internals
-                     (prompt (ht-get prompt "doc"))
+                     (prompt (ht-get yaml "prompt"))
                      (prefer-external (pen-yaml-test yaml "prefer-external"))
                      (conversation-mode (pen-yaml-test yaml "conversation-mode"))
                      (filter (pen-yaml-test yaml "filter"))
@@ -238,7 +237,7 @@ Function names are prefixed with pen-pf- for easy searching"
                 (if (not in-development)
                     (let ((funcsym (define-prompt-function
                                      func-name func-sym var-syms doc
-                                     title iargs prettify
+                                     title iargs prettify prettifier
                                      cache path var-slugs n-collate
                                      filter completion)))
                       (add-to-list 'pen-prompt-functions funcsym)

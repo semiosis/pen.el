@@ -37,11 +37,8 @@ agi python-pip
 # For lm-complete
 pip install openai
 
-# For lm-complete.sh and prompts-details
-pip install yq
-
 # For tidy-prompt
-pip intall python-json2yaml
+pip install yq python-json2yaml
 
 # For Pen.el
 ## slugify

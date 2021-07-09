@@ -1,0 +1,4 @@
+- Use emacs' prompts hash table to generate the csv
+  This way the catalog will open instantaneously.
+  - Delete prompts-details
+    $MYGIT/semiosis/pen.el/scripts/prompts-details
