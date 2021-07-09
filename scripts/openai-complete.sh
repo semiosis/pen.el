@@ -103,7 +103,7 @@ fi
 # The preprocessors must be loaded into memory, not simply used because the conversation-mode input may need preprocessing
 if test -n "$haspreprocessors"; then
     # readarray is bash 4
-    readarray -t pps < <(cat "$prompt_fp" | yq -r "(.preprocessors[] |= @base64) .preprocessors[] // empty" | awk1)
+    readarray -t pps < <(cat "$prompt_fp" | yq -r "(.preprocessors[] |= @base64) .preprocessors[] // empty" | awk 1)
 
     # This is slow. I should use a different language
     eval "set -- $(
