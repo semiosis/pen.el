@@ -57,17 +57,16 @@
   (setq comint-input-ring-file-name history-file)
   (comint-read-input-ring 'silent))
 
-(defun new-script-from-arguments (cmd &optional dir)
-  (pen-sn (concat "export TTY=; "
-                    (if dir (concat " CWD=" (q dir) " ")
-                      "")
-                    " nsfa -E " (q cmd)) nil (or dir (cwd))))
-(defalias 'nsfa 'new-script-from-arguments)
+(defun pen-nsfa (cmd &optional dir)
+  (pen-sn (concat
+           (if dir (concat " CWD=" (q dir) " ")
+             "")
+           " pen-nsfa -E " (q cmd)) nil (or dir (cwd))))
 
 (defun comint-quick (cmd &optional dir)
   (interactive (list (read-string-hist "comint-quick: ")))
   (let* ((slug (slugify cmd))
-         (buf (make-comint slug (nsfa cmd dir))))
+         (buf (make-comint slug (pen-nsfa cmd dir))))
     (with-current-buffer buf
       (switch-to-buffer buf)
       (turn-on-comint-history (concat pen-nlsh-histdir slug)))))
