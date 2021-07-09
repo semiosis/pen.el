@@ -81,7 +81,7 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 *** Operating systems
 - [X] Linux/Ubuntu/Debian
   - Tested on Ubuntu 20.04 and Debian 10
-*** Language models
+*** Language models and APIs
 - [X] OpenAI API (=GPT-3=)
   - https://beta.openai.com/
 - [-] =GPT-j= 6b
