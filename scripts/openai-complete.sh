@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Example of usage:
+# export OPENAI_API_KEY
 # openai-complete.sh translate-to.prompt French Goodnight
 # or:
 # echo French | openai-complete.sh translate-to.prompt Goodnight

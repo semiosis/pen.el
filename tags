@@ -15,7 +15,6 @@ agi	scripts/setup.sh	/^agi() {$/;"	f
 b	scripts/nlsh.py	/^def b(c, inputstring="", timeout=0):$/;"	f
 chomp	pen-support.el	/^(defun chomp (str)$/;"	f
 chomp	scripts/lib.sh	/^chomp() {$/;"	f
-ci	scripts/lm-complete	/^ci() {$/;"	f
 cmd	scripts/cmd	/^cmd() {$/;"	f
 cmdd	scripts/cmd-doublequote	/^cmdd() {$/;"	f
 cmdd	scripts/cmdd	/^cmdd() {$/;"	f

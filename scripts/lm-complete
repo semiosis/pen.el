@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Example of usage:
+# export PEN_PROMPTS_DIR=$MYGIT/semiosis/prompts
 # lm-complete translate-to.prompt French Goodnight
 # or:
 # echo French | lm-complete translate-to.prompt Goodnight
