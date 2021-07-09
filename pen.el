@@ -185,6 +185,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      (design-patterns (vector2list (ht-get yaml "design-patterns")))
                      (todo (vector2list (ht-get yaml "todo")))
                      (aims (vector2list (ht-get yaml "aims")))
+                     (past-versions (vector2list (ht-get yaml "past-versions")))
+                     (external-related (vector2list (ht-get yaml "external-related")))
                      (related-prompts (vector2list (ht-get yaml "related-prompts")))
                      (future-titles (vector2list (ht-get yaml "future-titles")))
 
