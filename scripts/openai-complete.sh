@@ -20,6 +20,10 @@ get_stop_sequences() {
     yq -r "(.\"stop-sequences\"[] |= @base64) .\"stop-sequences\"[] // empty" | awk 1 | base64 -d
 }
 
+pen-yq-test() {
+    grep -qP "^$key: true"
+}
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -cmode) {
@@ -227,12 +231,12 @@ cat
 HEREDOC
 
     tail -c +$gen_pos "$response_fp" | {
-        if ( exec 0</dev/null; cat "$prompt_fp" | yq-test chomp-start; ); then
+        if ( exec 0</dev/null; cat "$prompt_fp" | pen-yq-test chomp-start; ); then
             sed -z 's/^\n\+//' | sed -z 's/^\s\+//'
         else
             cat
         fi |
-            if ( exec 0</dev/null; cat "$prompt_fp" | yq-test chomp-end; ); then
+            if ( exec 0</dev/null; cat "$prompt_fp" | pen-yq-test chomp-end; ); then
                 sed -z 's/\n\+$//' | sed -z 's/\s\+$//'
             else
                 cat

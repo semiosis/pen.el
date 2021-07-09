@@ -4,5 +4,8 @@ export TTY
 key="$1"
 test -n "$key" || exit 255
 
-out="$(yq -r ".$(aqf-nice "$key")")"
-test "$out" = true
+# Fast approximation
+grep -qP "^$key: true"
+
+# out="$(yq -r ".$(cmdd "$key")")"
+# test "$out" = true

@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # cmdd - print the arguments given to this script and use double quotes
-# This is a fast-ish approximation
+# This is a fast-ish approximation but doesn't properly escape backslashes and inner double-quotes.
 
 cmdd() {
     for var in "$@"
     do
-        printf "\"%s\" ";
+        printf "\"%s\" " "$var";
     done | sed 's/ $//'
 }
 
