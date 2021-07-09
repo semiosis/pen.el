@@ -53,6 +53,6 @@ fi
 find . -mindepth 1 -maxdepth 1 -name '*.prompt' -type f | sed 's=^./==' | awk 1 | while IFS=$'\n' read -r prompt_file_path; do
 (
     exec 0</dev/null
-    prompts-details-get-row "$prompt_file_path" | sed 's/,,/,_,/g'
-) | awk 1
+    prompts-details-get-row "$prompt_file_path"
+) | awk 1 | sed 's/,,/,_,/g'
 done

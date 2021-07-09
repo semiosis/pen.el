@@ -34,7 +34,7 @@ agi python-pip
 # For lm-complete
 pip install openai
 
-# For lm-complete.sh
+# For lm-complete.sh and prompts-details
 pip install yq
 
 # For tidy-prompt
