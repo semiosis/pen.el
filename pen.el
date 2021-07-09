@@ -157,7 +157,11 @@ Function names are prefixed with pen-pf- for easy searching"
                      (title-slug (slugify title))
                      (aliases (vector2list (ht-get yaml "aliases")))
                      (alias-slugs (mapcar 'intern (mapcar (lambda (s) (concat "pen-pf-" s)) (mapcar 'slugify aliases))))
+
+                     ;; lm-complete
                      (cache (pen-yaml-test yaml "cache"))
+                     (lm-command (or (ht-get yaml "lm-command")
+                                     "openai-complete.sh"))
 
                      (in-development (pen-yaml-test yaml "in-development"))
 
@@ -236,12 +240,11 @@ Function names are prefixed with pen-pf- for easy searching"
                                (add-to-list 'pen-prompt-functions a))))
 
                 (if (not in-development)
-                    (let ((funcsym
-                           (define-prompt-function
-                             func-name func-sym var-syms doc
-                             title iargs prettify
-                             cache path var-slugs n-collate
-                             filter completion)))
+                    (let ((funcsym (define-prompt-function
+                                     func-name func-sym var-syms doc
+                                     title iargs prettify
+                                     cache path var-slugs n-collate
+                                     filter completion)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.

@@ -6,6 +6,8 @@
 # or:
 # echo French | openai-complete.sh translate-to.prompt Goodnight
 
+# OPENAI_API_KEY="insert key here and uncomment this line"
+
 test -n "$OPENAI_API_KEY" || {
     echo "OPENAI_API_KEY not given to script" 1>&2
     exit 1
