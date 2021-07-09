@@ -89,6 +89,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (filter (pen-yaml-test yaml "filter"))
                      ;; Don't actually use this. But I can toggle to use the prettifier with a bool
                      (prettifier (ht-get yaml "prettifier"))
+                     (collation-postprocessor (ht-get yaml "pen-collation-postprocessor"))
                      (completion (pen-yaml-test yaml "completion"))
                      (n-collate (ht-get yaml "n-collate"))
                      (vars (vector2list (ht-get yaml "vars")))
