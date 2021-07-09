@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+os="$1"
+shift
+
+export USE_CONVERSATION_MODE=y
+rlwrap openai-complete.sh nlsh-shell-for-given-os.prompt "$os"

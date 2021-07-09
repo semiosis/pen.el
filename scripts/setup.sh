@@ -12,6 +12,9 @@ agi() {
 cd ~
 agi git python vim emacs mosh curl make
 
+# For nlsh and ii
+agi rlwrap
+
 # For emacs-yamlmod
 agi clang libclang1
 
