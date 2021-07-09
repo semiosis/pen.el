@@ -11,4 +11,4 @@ export UPDATE
 export PRETTY_PRINT
 
 # Initial implementation is in sh
-lm-complete.sh
+openai-complete.sh
