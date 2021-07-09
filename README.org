@@ -99,6 +99,8 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
   - https://deepai.org/machine-learning-model/text-generator
 - [-] OpenAI API (=GPT-4=)
   - https://beta.openai.com/
+- [-] PostHuman AI Market (Ocean Blockchain)
+  - https://port.oceanprotocol.com/t/posthuman-ai-market-v1-1-luci-integration/675
 
 ** Contributing
 [[./CONTRIBUTING.org]]
