@@ -26,6 +26,7 @@
 (package-install 'pcsv)
 (package-install 'sx)
 
-(add-to-list 'load-path "/root/.emacs.d/pen.el")
-(load "/root/.emacs.d/pen.el/pen.el")
-(load "/root/.emacs.d/pen.el/pen-example-config.el")
+(let ((pendir (concat (getenv "EMACSD") "/pen.el")))
+  (add-to-list 'load-path pendir)
+  (load (concat pendir "/pen.el"))
+  (load (concat pendir "/pen-example-config.el")))
