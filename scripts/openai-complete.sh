@@ -18,8 +18,6 @@ get_stop_sequences() {
         wrlp -E "base64 -d | uq | qne"
 }
 
-# exec 3>&2
-
 # Keep at top
 oargs=("$@")
 
@@ -46,8 +44,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -s) {
         silence=y
-        # exec 2>/dev/null
-        shift
+          shift
     }
     ;;
 
@@ -55,8 +52,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 export PRETTY_PRINT
-
-# set -xv
 
 : "${NOCACHE:="n"}"
 
@@ -85,10 +80,6 @@ fi
 
 test -f "$prompt_fp" || exit
 
-# set -f; IFS='|' data=($(curl '......' | jq -r '.data |
-#     map([.absoluteNumber, .airedEpisodeNumber, .episodeName, .overview] |
-#     join("|")) | join("\n")')); set +f
-
 # https://stackoverflow.com/questions/44111831/bash-read-multi-line-string-into-multiple-variables
 
 # Can only be a single character, so use something rare
@@ -114,9 +105,6 @@ fi
 
 # The preprocessors must be loaded into memory, not simply used because the conversation-mode input may need preprocessing
 if test -n "$haspreprocessors"; then
-    # yq -r "(.preprocessors[] |= @base64) .preprocessors[] // empty" | awk1
-    # | wrlp -E "base64-decode-string"
-
     # readarray is bash 4
     readarray -t pps < <(cat "$prompt_fp" | yq -r "(.preprocessors[] |= @base64) .preprocessors[] // empty" | awk1)
 
@@ -125,8 +113,7 @@ if test -n "$haspreprocessors"; then
     i=1
     for pp in "${pps[@]}"
     do
-        pp="$(printf -- "%s" "$pp" | base64-decode-string)"
-        echo "$pp" | hls blue 1>&2
+        pp="$(printf -- "%s" "$pp" | base64 -d)"
 
         eval val="\$$i"
 
@@ -149,13 +136,7 @@ fi
 # This is OK now because I have 'myeval'
 first_stop_sequence="$(printf -- "%s" "$first_stop_sequence" | qne)"
 
-# prompt="$(cat "$prompt_fp" | yq -r ".prompt // empty")"
-# # stop_sequence="$(cat "$prompt_fp" | yq ".\"stop-sequences\"[0] // empty" | uq | qne)"
 stop_sequences="$(cat "$prompt_fp" | get_stop_sequences 2>/dev/null)"
-# temperature="$(cat "$prompt_fp" | yq -r ".\"temperature\" // empty")"
-# engine="$(cat "$prompt_fp" | yq -r ".\"engine\" // empty")"
-# max_tokens="$(cat "$prompt_fp" | yq -r ".\"max-tokens\" // empty")"
-# top_p="$(cat "$prompt_fp" | yq -r ".\"top-p\" // empty")"
 
 test -n "$prompt" || exit 0
 
@@ -196,7 +177,6 @@ if test "$USE_CONVERSATION_MODE" = "y"; then
 fi
 
 repl_run() {
-
     # Choose to reset after each entry.
     # I should do this by default because of the prompt size.
     # It can't grow beyond a particular length.
@@ -218,28 +198,8 @@ repl_run() {
     gen_pos="$(grep "<:pp>" --byte-offset "$prompt_prompt_fp" | cut -d : -f 1)"
     sed -i 's/<:pp>//' "$prompt_prompt_fp"
 
-    # printf -- "%s\n" "$prompt" | tv
-
-    # prompt="$(p "$prompt" | bs '$!' | qne)"
-
-    # qne will break emojis
-    # emojis work again
-
-    # Do not escape whitespace for openai api command
-    # It's evalled in this bash script. So I'm escaping for that
-    # | qne. It breaks unicode
-    # can't use unq
     prompt="$(cat "$prompt_prompt_fp" | bs '$`"!')"
-    # prompt="$(p "$prompt" | bs '$`"' | sed -z 's/\n/\\n/g')"
 
-    # exit 1
-
-    ## #  Can't cache at this level
-    ## * TODO Fix 'ci'. It's breaking lm-complete because it's transforming the '\n' --stop
-    ## $SCRIPTS/ci
-    ## =cmd-nice= will turn a newline into "\n"
-    ## =cmd= will remove the newline entirely
-    # myeval
     IFS= read -r -d '' SHCODE <<HEREDOC
 openai api \
     completions.create \
@@ -249,21 +209,7 @@ openai api \
     -n "$sub_completions" \
     $(
         if test -n "$first_stop_sequence"; then
-            # printf -- "%s" " --stop $(aqf "$first_stop_sequence")"
-
-            # The newline must go in verbatim, which means it needs
-            # to be interpreted in the printf
-            # printf -- " --stop \"$first_stop_sequence\""
-
-            printf -- "%s" " --stop $(aqf "$first_stop_sequence")"
-
-            # eval "$(cmd printf -- "%s" " --stop \"$first_stop_sequence\"")"
-
-            # multiple doesn't work
-
-            # printf -- "%s$delim" "$first_stop_sequence" | while IFS="$delim" read -r line; do
-                # printf -- "%s" " --stop $(aqf "$line")"
-            # done
+            printf -- "%s" " --stop $(cmd "$first_stop_sequence")"
         fi
     ) \
     -p "$prompt"
@@ -276,20 +222,10 @@ HEREDOC
 
     export UPDATE=y
 
-    # response_fp="$(eval "$SHCODE" | uq | s pen-chomp | tf txt)"
-
     response_fp="$(sh "$shfp" | uq | s pen-chomp | tf txt)"
-
-    # Only record the history if the command actually queried the API
-    ( hs "$(basename "$0")" "${oargs[@]}" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
     prompt_bytes="$(cat "$prompt_prompt_fp" | wc -c)"
     response_bytes="$(cat "$response_fp" | wc -c)"
-
-    # it may not be a good idea to remove starting whitespace if I want to complete in emacs
-    # tail -c +$((prompt_bytes + 1)) "$response_fp" | sed -z 's/^\s\+//;s/^\r\+//;s/^\n\+//'
-    # tail -c +$((prompt_bytes + 1)) "$response_fp" | sed -z 's/^\r\+//;s/^\n\+//'
-    # Don't remove whitespace at all
 
     : "${gen_pos:="$((prompt_bytes + 1))"}"
 
@@ -303,16 +239,8 @@ $(
 cat
 HEREDOC
 
-    # printf -- "%s\n" "$stop_sequence_trimmer" | tv &>/dev/null
-
-    cat "$response_fp" | hc "$(basename "$0")-response" "${oargs[@]}" "#" "<==" "$(ps -o comm= $PPID)" &>/dev/null
-
     tail -c +$gen_pos "$response_fp" | {
-        # This will get slow
-        # I should be working in clojure or racket I think
-
         if ( exec 0</dev/null; cat "$prompt_fp" | yq-test chomp-start; ); then
-            # exec 0</dev/null ns hi
             sed -z 's/^\n\+//' | sed -z 's/^\s\+//'
         else
             cat
@@ -325,14 +253,12 @@ HEREDOC
                 eval "$stop_sequence_trimmer"
             } | {
                 if test -n "$postprocessor"; then
-                    # echo "'$postprocessor'" | hls green 1>&2
                     eval "$postprocessor"
                 else
                     cat
                 fi
             } |
                 if test "$PRETTY_PRINT" = y && test -n "$prettifier"; then
-                    # echo "'$prettifier'" | hls green 1>&2
                     eval "$prettifier"
                 else
                     cat
@@ -342,29 +268,17 @@ HEREDOC
     return 0
 }
 
-# echo "$@"
-# exit
-
 if test "$USE_CONVERSATION_MODE" = y && test "$conversation_mode" = "true"; then
     inputargpos="$(( $# + 1 ))"
 
-    echo -n "$rlprompt> " | hls red 1>&2
     while IFS=$'\n' read -r line; do
         out="$(repl_run "$@" "$line" | awk 1)"
         printf -- "%s\n" "$out"
 
         prompt+="$out\n$first_stop_sequence\n"
         prompt+="$repeater"
-        echo -n "$rlprompt> " | hls red 1>&2
     done
 else
-    repl_run "$@" | hc "$(basename "$0")" "${oargs[@]}" "#" "<==" "$(ps -o comm= $PPID)" | {
-        # exec 3>&2
-        pavs
+    repl_run "$@" pavs
     }
 fi
-
-# echo "$prompt_fp"
-# echo "$response_fp"
-
-# pl "$SHCODE" | pavs
