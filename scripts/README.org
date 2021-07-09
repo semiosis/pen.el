@@ -1,5 +1,10 @@
 * Scripts
 ** Currently in use
+*** =slugify= - "slugify" the input string
+Make kebab-case and ascii-only.
+
+This is used to create lisp function names.
+
 *** =chomp= - Remove surrounding whitespace
 
 *** =wrlp= - While Read Line Pipe
