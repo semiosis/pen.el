@@ -37,6 +37,13 @@ stream of continuations to =fz-pen-counsel=.
 
 *** =pen-nsfa= - new script from args
 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pen-nsfa echo hi
+#+END_SRC
+
+This will return a new script in the =tmp=
+directory which when run wil call =echo hi=.
+
 *** =tidy-prompt=
 This is a bash pipeline command for standardising a prompt
 
