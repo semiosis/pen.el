@@ -9,19 +9,32 @@ https://github.com/semiosis/pen.el/tree/master/docs
 ** Developing prompts
 https://github.com/semiosis/prompts/blob/master/snippets/prompt-description-mode/prompt
 
-*** Creating prompt blueprints
-This is just creating the prompt without testing and without
-implementation.
+*** Coming up with prompt ideas
+
+*** Connecting completion backends
+- [-] =GPT-j= 6b
+  - https://github.com/kingoflolz/mesh-transformer-jax
+  - https://minimaxir.com/2021/06/gpt-j-6b/
+- [-] =contentyze= API
+  - http://gpt.contentyze.com/
+  - https://medium.com/contentyze/text-generation-api-609c1d52cff1
+- [-] =GPT-Neo= 6b
+  - https://github.com/EleutherAI/gpt-neo
+- [-] =openai-server= (=GPT-2=)
+  - https://github.com/shawwn/openai-server
+  - Requires tensorflow 1
+- [-] =DeepAI= API
+  - https://deepai.org/machine-learning-model/text-generator
+- [-] OpenAI API (=GPT-4=)
+  - https://beta.openai.com/
+- [-] PostHuman AI Market (Ocean Blockchain)
+  - https://port.oceanprotocol.com/t/posthuman-ai-market-v1-1-luci-integration/675
 
 *** Implementing prompts
 
-*** Augmenting other emacs packages
+*** Augmenting other emacs packages with prompt functions
 
-*** Developing the schema for prompt description files
-
-** Writing emacs lisp
-
-*** Prompts composition
+*** Developing/extending the schema for prompt description files
 
 *** The =Imaginary Interpreter= (=ii=) and =imaginary-mode=
 This is a programming/writing environment without any parsers,
