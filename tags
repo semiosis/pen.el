@@ -84,3 +84,4 @@ upd	pen-support.el	/^(defmacro upd (&rest body)$/;"	f
 vector2list	pen-support.el	/^(defun vector2list (v)$/;"	f
 xc	pen-support.el	/^(defun xc (&optional s silent)$/;"	f
 yq	scripts/lm-complete.sh	/^yq() {$/;"	f
+yq	scripts/openai	/^yq() {$/;"	f
