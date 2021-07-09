@@ -40,7 +40,8 @@ prompt="$(p "$prompt")"
 
 mkdir -p "$NOTES/programs/ii"
 
-ext="$(get-ext-for-lang "$lang")"
+# Let emacs provide both the ext and the lang via environment variables
+# ext="$(get-ext-for-lang "$lang")"
 id="$$"
 transcript_fp="$NOTES/programs/ii/${lang}-${id}.${ext}"
 touch "$transcript_fp"

@@ -6,36 +6,30 @@
 # or:
 # echo French | lm-complete translate-to.prompt Goodnight
 
+test -n "$PEN_LM_COMMAND" || {
+    echo "PEN_LM_COMMAND not supplied"
+    exit 1
+}
+
 # This file expects the PEN_PROMPTS_DIR
 
 # Update caches (would override LM_CACHE)
-export UPDATE
-
-# Request the pretty printer if the prompt specifies one
-export DO_PRETTY_PRINT
+if "$UPDATE" = y; then
+    LM_CACHE=
+fi
 
 # if LM_CACHE==y then pen.el has indicated this should be cached/memoised.
 # This is handled by `pen-ci`
 export LM_CACHE
-
-prompt_file_path="$1"
-test -z "$prompt_file_path" || {
-    echo Could not find "$prompt_file_path" in 
-    exit 1
-}
 
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
 if stdin_exists; then
-    prompt_file_path="$1"
-    shift
-
     # stdin becomes the first argument after the .prompt path
-    set -- "$prompt_file_path" "$(cat)" "$@"
+    set -- "$(cat)" "$@"
 fi
 
-# TODO Handle other backend completers here
 # pen-ci will possibly cache/memoize the command
-pen-ci openai-complete.sh "$@"
+pen-ci "$PEN_LM_COMMAND" "$@"
