@@ -1,12 +1,12 @@
 - Construct/template the final prompt
-  v +/"finalprompt" "$HOME/source/git/semiosis/pen.el/pen.el"
+  sp +/"finalprompt" "$HOME/source/git/semiosis/pen.el/pen.el"
 - Use emacs' prompts hash table to generate the csv
   This way the catalog will open instantaneously.
   - Delete prompts-details
     $MYGIT/semiosis/pen.el/scripts/prompts-details
 - Add functions to company-mode if they are specified as such
-  v +/";; TODO Add to company-mode completion functions" "$HOME/source/git/semiosis/pen.el/pen.el"
+  sp +/";; TODO Add to company-mode completion functions" "$HOME/source/git/semiosis/pen.el/pen.el"
 - collation-postprocessor
-  v +/"collation-postprocessor" "$HOME/source/git/semiosis/pen.el/pen.el"
+  sp +/"collation-postprocessor" "$HOME/source/git/semiosis/pen.el/pen.el"
 - Send max-tokens temperature top-p to lm-complete as environment variables
-  v +/"max-tokens temperature top-p" "$HOME/source/git/semiosis/pen.el/pen.el"
+  sp +/"max-tokens temperature top-p" "$HOME/source/git/semiosis/pen.el/pen.el"
