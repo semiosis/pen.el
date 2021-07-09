@@ -154,7 +154,6 @@ esac; done
 
 : "${sub_completions:="1"}"
 
-
 ogprompt="$prompt"
 
 prompt_prompt_fp="$(printf -- "%s" "$prompt" | pen-chomp | tf)"
@@ -275,5 +274,5 @@ if test "$USE_CONVERSATION_MODE" = y && test "$conversation_mode" = "true"; then
         prompt+="$repeater"
     done
 else
-    repl_run "$@" pavs
+    repl_run "$@"
 fi
