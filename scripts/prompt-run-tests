@@ -1,0 +1,101 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# git-repo-for-each-branch-do "https://github.com/semiosis/prompts/" "$MYGIT/semiosis/prompt-tests/run-tests"| v
+
+# sp +/"in-development: yes" "$MYGIT/semiosis/prompts/prompts/theme-chimera.prompt"
+
+test -d "prompts" || exit 1
+
+cd prompts
+
+for fp in *; do
+    if ! { test -f "$fp" && pl "$fp" | grep -q -P '\.prompt$'; }; then
+        continue
+    fi
+
+    echo "$fp" | udl | hls purple
+    delim="¬"
+    IFS="$delim" read -r -d$'\1' version title external n < <(
+        cat "$fp" | yq -r '[."prompt-version",.title,.external,."n-test-runs"] | join("'$delim'")')
+
+    version="$(printf -- "%s" "$version" | sed -z 's/^\n$//')"
+    n="$(printf -- "%s" "$n" | sed -z 's/^\n$//')"
+    : "${version:="0"}"
+    : "${n:="5"}"
+
+    rdir=$MYGIT/semiosis/prompt-tests/results
+    rfdir=$MYGIT/semiosis/prompt-tests/results-filename
+
+    branch="$(vc branch)"
+    dir1="$rdir/$branch"
+    dir2="$rfdir/$branch"
+
+    if test -n "$branch" && ! test "$branch" = master; then
+        if ! test -d "$dir1"; then
+            cp -a "$rdir/master" "$dir1"
+        fi
+
+        if ! test -d "$dir2"; then
+            cp -a "$rfdir/master" "$dir2"
+        fi
+    fi
+
+    mkdir -p "$dir1"
+    mkdir -p "$dir2"
+
+    slug="$(printf -- "%s\n" "$title" | tr '\n' ' ' | sed 's/ $//' | slugify)"
+    nbn="${slug}-v${version}.jsonl"
+
+    testfp="$dir1/$nbn"
+
+    if ! test "$UPDATE" = y; then
+        test -f "$testfp" && continue
+    fi
+
+    eval "set -- $(cat "$fp" | yq ".examples // empty | .[]" | s join ' ')"
+
+    rm -f "$testfp"
+    touch "$testfp"
+
+    for (( i = 0; i < ${n}; i++ )); do
+        echo Running "$i/$n" | hls orange
+
+        IFS="$delim" read -r -d$'\1' RESULT < <(upd openai-complete "$fp" "$@")
+
+        if test -n "$external"; then
+            IFS="$delim" read -r -d$'\1' TRUTH < <("$external" "$@")
+        fi
+
+        export RESULT
+        export TRUTH
+        export TITLE="$title"
+        export VERSION="$version"
+
+        # Deep learning Accuracy vs Loss
+        # Accuracy: How often it's correct in terms of a fraction
+        # Loss: How much error from a single trial
+
+        # Precision: How often it's correct
+        # The closeness of the measurements to each other.
+
+        jq -n -c '{ output: env.RESULT, title: env.TITLE, truth: env.TRUTH, version: env.VERSION }' >> "$testfp"
+        continue
+    done
+
+    (
+        fn="$(basename "$fp")"
+        mant="${fn%.*}"
+
+        cd "$dir2"
+
+        rm -f "${mant}.jsonl"
+        cp -af "$testfp" "${mant}.jsonl"
+    )
+done
+
+cd $MYGIT/semiosis/prompt-tests/
+git add -A .
+git commit -m "$(k f8)"
+vc p

@@ -44,6 +44,9 @@ For example:
 It's used to loop =lm-complete= to provide a
 stream of continuations to =fz-pen-counsel=.
 
+*** =prompt-run-tests=
+This script is run on the testing server.
+
 *** =pen-nsfa= - new script from args
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code

@@ -177,6 +177,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (collation-postprocessor (ht-get yaml "pen-collation-postprocessor"))
                      (completion (pen-yaml-test yaml "completion"))
                      (n-collate (ht-get yaml "n-collate"))
+                     (n-test-runs (ht-get yaml "n-test-runs"))
 
                      ;; API
                      (max-tokens (ht-get yaml "max-tokens"))
