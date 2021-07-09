@@ -1,5 +1,9 @@
 * Scripts
 ** Currently in use
+*** =openai-complete.sh= - Wrapper around the =openai= command
+
+It requires OPENAI_API_KEY to be provided as an environment variable.
+
 *** =slugify= - "slugify" the input string
 Make kebab-case and ascii-only.
 

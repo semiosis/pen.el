@@ -6,6 +6,11 @@
 # or:
 # echo French | openai-complete.sh translate-to.prompt Goodnight
 
+test -n "$OPENAI_API_KEY" || {
+    echo "OPENAI_API_KEY not given to script" 1>&2
+    exit 1
+}
+
 # Print without newline
 p() {
     for (( i = 1; i < $#; i++ )); do
