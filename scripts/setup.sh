@@ -10,7 +10,7 @@ agi() {
 }
 
 cd ~
-agi git python vim emacs mosh curl make
+agi git python vim emacs mosh curl make xsel
 
 # For nlsh and ii
 agi rlwrap
