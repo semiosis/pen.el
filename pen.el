@@ -65,25 +65,17 @@
           (and (sor c)
                (string-equal c "on"))))))
 
-;; Q: How to send arrays to bash?
-;; A: Delimit
-(defvar 'pen-export-flags
-  '(conversation-mode
-    completion))
-
-(defvar 'pen-export-variables
-  '(max-tokens
-    temperature
-    prompt
-    cache))
-
-;; This is just so I get syntax highlighting for defpf in emacs
-(defmacro defpf (&rest body)
-  `(define-prompt-function
-     ,@body))
-
-(defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion)
-  (let ((finalprompt))
+(defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
+                                         max-tokens temperature top-p)
+  (let ((finalprompt)
+        (exports
+         (sh-construct-envs `(("PEN_MAX_TOKENS" ,max-tokens)
+                              ("PEN_TEMPERATURE" ,temperature)
+                              ("PEN_TOP_P" ,top-p)
+                              ("PEN_PROMPT" ,finalprompt)
+                              ("PEN_CACHE" ,cache)
+                              ("PEN_CONVERSATION_MODE" ,(if conversation-mode "y" ""))
+                              ("PEN_COMPLETION" ,(if completion "y" ""))))))
     (eval
      `(cl-defun ,func-sym ,var-syms
         ,doc
@@ -179,6 +171,7 @@ Function names are prefixed with pen-pf- for easy searching"
 
                      ;; API
                      (max-tokens (ht-get yaml "max-tokens"))
+                     (top-p (ht-get yaml "top-p"))
                      (temperature (ht-get yaml "temperature"))
 
                      ;; docs
@@ -281,7 +274,8 @@ Function names are prefixed with pen-pf- for easy searching"
                                      func-name func-sym var-syms doc
                                      prompt iargs prettifier
                                      cache path var-slugs n-collate
-                                     filter completion)))
+                                     filter completion
+                                     max-tokens temperature top-p)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
