@@ -1,8 +1,9 @@
-#!/bin/bash
-export TTY
+#!/bin/sh
 
-# This will be used for imaginary-mode
-# It's used to remove the prompt from a generation and copy the actual line of code.
+# This will be used for imaginary-mode.
+
+# It's used to remove the REPL prompt (not LM prompt) from a generation
+# and copy the actual line of code.
 
 sed -e 's/^Prelude> //' \
     -e 's/^Prelude.*> //' \

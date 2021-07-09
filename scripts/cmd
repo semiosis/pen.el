@@ -1,7 +1,6 @@
 #!/bin/sh
-export TTY
 
-# This also handles unicode correctly
+# cmd - print the arguments given to this script
 
 cmd() {
     for var in "$@"

@@ -1,0 +1,32 @@
+* Scripts
+** Currently in use
+*** =chomp= - Remove surrounding whitespace
+
+*** =wrlp= - While Read Line Pipe
+This script is a lot like xargs but pipes input linewise through a command.
+
+*** =awk 1= is used to ensure that input and output text finishes with a
+newline.
+
+*** =clean-repl=
+This will be used for imaginary-mode
+
+It's used to remove the REPL prompt (not LM prompt) from a generation
+and copy the actual line of code.
+
+*** =cmd=
+Print the arguments given to this script.
+
+*** =json2yaml= - This converts json to yaml
+- stdin is json
+- stdout is yaml
+
+** In-development
+*** =get-ext-for-lang=
+Given the name of a language, return the associated file extension.
+
+This is used for imaginary interpreter when saving generations to a
+file.
+*** =ii= - imaginary interpreter
+This is a REPL, which given a the name of a programming language will
+provide imaginary interaction.
