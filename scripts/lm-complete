@@ -23,5 +23,15 @@ ci() {
     fi
 }
 
+prompt_file_path="$1"
+test -z "$prompt_file_path" || {
+    echo Could not find "$prompt_file_path" in 
+    exit 1
+}
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
 # TODO Handle other backend completers here
-ci openai-complete.sh
+ci openai-complete.sh "$@"

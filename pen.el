@@ -156,7 +156,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                             (shcmd (concat
                                                     (if (sor prettifier)
                                                         (concat
-                                                         (sh-construct-envs `(("PRETTY_PRINT" ,(if prettify "y" ""))))
+                                                         (sh-construct-envs `(("DO_PRETTY_PRINT" ,(if prettify "y" ""))))
                                                          " ")
                                                       "")
                                                     ,(flatten-once

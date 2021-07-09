@@ -17,9 +17,12 @@ chomp	pen-support.el	/^(defun chomp (str)$/;"	f
 chomp	scripts/lib.sh	/^chomp() {$/;"	f
 ci	scripts/lm-complete	/^ci() {$/;"	f
 cmd	scripts/cmd	/^cmd() {$/;"	f
+cmdd	scripts/cmd-doublequote	/^cmdd() {$/;"	f
+cmdd	scripts/cmdd	/^cmdd() {$/;"	f
 command	scripts/nlsh.py	/^    command = b(postprocessor, command)[0]$/;"	v
 command	scripts/nlsh.py	/^    command = result.choices[0]["text"].strip()$/;"	v
 completing-read-hist	pen-support.el	/^(defun completing-read-hist (prompt &optional initial-input histvar default-value)$/;"	f
+create_variables	scripts/yaml.sh	/^create_variables() {$/;"	f
 current-major-mode-string	pen-support.el	/^(defun current-major-mode-string ()$/;"	f
 cwd	pen-support.el	/^(defun cwd ()$/;"	f
 data	scripts/nlsh.py	/^    data = f.read()$/;"	v
@@ -54,11 +57,14 @@ ogprompt	scripts/nlsh.py	/^ogprompt = yaml.load(data)["prompt"]$/;"	v
 openai-models	pen-openai.el	/^(defset openai-models$/;"	f
 org-brain-pf-topic	pen-brain.el	/^(defun org-brain-pf-topic (&optional short)$/;"	f
 os	scripts/nlsh.py	/^os = sys.argv[1]$/;"	v
+p	scripts/openai-complete.sh	/^p() {$/;"	f
+parse_yaml	scripts/yaml.sh	/^parse_yaml() {$/;"	f
 pen-ivy-completing-read	pen-support.el	/^(defun pen-ivy-completing-read (prompt collection$/;"	f
 pen-q	pen-support.el	/^(defun pen-q (&rest strings)$/;"	f
 pen-selected-text	pen-support.el	/^(defun pen-selected-text ()$/;"	f
 pen-sn	pen-support.el	/^(defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbu/;"	f
 pen-snc	pen-support.el	/^(defun pen-snc (cmd &optional stdin)$/;"	f
+pen-yq-test	scripts/openai-complete.sh	/^pen-yq-test() {$/;"	f
 postprocessor	scripts/nlsh.py	/^postprocessor = yaml.load(data)["postprocessor"].strip()$/;"	v
 pps	pen-support.el	/^(defalias 'pps 'pp-to-string)$/;"	f
 preserve-trailing-whitespace	pen-support.el	/^(defun preserve-trailing-whitespace (fun s)$/;"	f
@@ -77,9 +83,9 @@ selected	pen-support.el	/^(defun selected ()$/;"	f
 shut-up-c	pen-support.el	/^(defmacro shut-up-c (&rest body)$/;"	f
 slugify	pen-support.el	/^(defun slugify (input &optional joinlines length)$/;"	f
 slurp-file	pen-support.el	/^(defun slurp-file (filePath)$/;"	f
+stdin_exists	scripts/lm-complete	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/lm-complete.sh	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/openai-complete	/^stdin_exists() {$/;"	f
-stdin_exists	scripts/openai-complete.sh	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/tidy-prompt	/^stdin_exists() {$/;"	f
 str	pen-support.el	/^(defun str (thing)$/;"	f
 string-empty-or-nil-p	pen-support.el	/^(defun string-empty-or-nil-p (s)$/;"	f
@@ -89,7 +95,9 @@ template	scripts/nlsh.py	/^template = yaml.load(data)["repeater"]$/;"	v
 try	pen-support.el	/^(defmacro try (&rest list-of-alternatives)$/;"	f
 try-cascade	pen-support.el	/^(defun try-cascade (list-of-alternatives)$/;"	f
 tryelse	pen-support.el	/^(defmacro tryelse (thing &optional otherwise)$/;"	f
+unset_variables	scripts/yaml.sh	/^unset_variables() {$/;"	f
 upd	pen-support.el	/^(defmacro upd (&rest body)$/;"	f
+variables=	scripts/yaml.sh	/^  variables=()$/;"	f
 vector2list	pen-support.el	/^(defun vector2list (v)$/;"	f
 xc	pen-support.el	/^(defun xc (&optional s silent)$/;"	f
 yq	scripts/lm-complete.sh	/^yq() {$/;"	f

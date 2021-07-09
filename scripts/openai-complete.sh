@@ -5,12 +5,20 @@
 # or:
 # echo French | openai-complete.sh translate-to.prompt Goodnight
 
-yq() {
-    command yq "$@" 2>/dev/null
+# Print without newline
+p() {
+    for (( i = 1; i < $#; i++ )); do
+        eval ARG=\${$i}
+        printf -- "%s " "$ARG"
+    done
+    eval ARG=\${$i}
+    printf -- "%s" "$ARG"
 }
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+# pip install yq
+# See `setup.sh`
+yq() {
+    command yq "$@" 2>/dev/null
 }
 
 # TODO Ensure these are properly escaped, but efficiently
