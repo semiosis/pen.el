@@ -10,6 +10,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+: ${CWD:="$(pwd)"}
+
 if test "$DO_EXEC" = "y"; then
     CMD="$1"
 else
@@ -19,12 +21,9 @@ fi
 slug="$(echo "$CMD" | tr -d '\n' | slugify | cut -c -40)"
 
 tf_new_script="/tmp/nsfa-$slug.sh"
-echo "$tf_new_script" | ds -s last-nsfa
 rm -f "$tf_new_script"
 
 IFS= read -r -d '' scriptcode <<'HEREDOC'
-: ${TTY:="$(tm-tty)"}
-export TTY
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null;
 HEREDOC
 
@@ -32,7 +31,7 @@ printf -- "%s\n" "$scriptcode" >> "$tf_new_script"
 export PATH=$HOME/scripts:$PATH
 
 if test -n "$CWD" && test -d "$CWD"; then
-    cmd-nice cd "$CWD" | awk 1 >> "$tf_new_script"
+    cmd cd "$CWD" | awk 1 >> "$tf_new_script"
 fi
 
 printf -- "%s\n" "$CMD" >> "$tf_new_script"

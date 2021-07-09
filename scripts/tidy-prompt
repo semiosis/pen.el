@@ -1,5 +1,4 @@
-#!/bin/bash
-export TTY
+#!/bin/sh
 
 # This is a bash pipeline command for standardising a prompt
 # Example:
