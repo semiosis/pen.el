@@ -79,21 +79,24 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 
 ** Compatability
 *** Operating systems
-- [X] Linux/Ubuntu
+- [X] Linux/Ubuntu/Debian
+  - Tested on Ubuntu 20.04 and Debian 10
 *** Language models
 - [X] OpenAI API (=GPT-3=)
   - https://beta.openai.com/
-- [-] =GPT-J=
+- [-] =GPT-j= 6b
   - https://github.com/kingoflolz/mesh-transformer-jax
-- [-] =contentyze=
+  - https://minimaxir.com/2021/06/gpt-j-6b/
+- [-] =contentyze= API
   - http://gpt.contentyze.com/
-- [-] =GPT-Neo=
+  - https://medium.com/contentyze/text-generation-api-609c1d52cff1
+- [-] =GPT-Neo= 6b
   - https://github.com/EleutherAI/gpt-neo
 - [-] =openai-server= (=GPT-2=)
   - https://github.com/shawwn/openai-server
   - Requires tensorflow 1
 - [-] =DeepAI= API
-  - https://deepai.org/
+  - https://deepai.org/machine-learning-model/text-generator
 - [-] OpenAI API (=GPT-4=)
   - https://beta.openai.com/
 
