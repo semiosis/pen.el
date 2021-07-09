@@ -10,6 +10,6 @@
   - https://github.com/shawwn/openai-server
   - Requires tensorflow 1
 - =DeepAI= API
-  - https://deepai.org/
+  - https://deepai.org/machine-learning-model/text-generator
 - OpenAI API (=GPT-4=)
   - https://beta.openai.com/
