@@ -10,13 +10,10 @@ stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
+# TODO Ensure these are properly escaped, but efficiently
 get_stop_sequences() {
-    yq -r "(.\"stop-sequences\"[] |= @base64) .\"stop-sequences\"[] // empty" |
-        wrlp -E "base64 -d | uq | qne"
+    yq -r "(.\"stop-sequences\"[] |= @base64) .\"stop-sequences\"[] // empty" | awk 1 | base64 -d
 }
-
-# Keep at top
-oargs=("$@")
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
