@@ -1,0 +1,2 @@
+* Automatically a generate commit message using the LM
+- Rewrite pen.el commit messages.
