@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# Like UNIX uniq but does not sort.
+
+awk '!seen[$0] {print} {++seen[$0]}'
