@@ -158,11 +158,12 @@ https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 - https://mullikine.github.io/tags/gpt/
 
 **** Glossaries
-- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineer-mode.txt
-- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineering.txt
-- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai-api.txt
-- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
-- http://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
+- https://github.com/semiosis/pen.el/blob/master/glossary.txt
+- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineer-mode.txt
+- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineering.txt
+- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai-api.txt
+- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
+- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
 
 ** Related projects
 *** =examplary=
