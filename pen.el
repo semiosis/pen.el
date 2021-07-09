@@ -65,6 +65,80 @@
           (and (sor c)
                (string-equal c "on"))))))
 
+;; Q: How to send arrays to bash?
+;; A: Delimit
+(defvar 'pen-export-flags
+  '(conversation-mode
+    completion
+    vars
+    examples preprocessors var-slugs
+    func-name))
+
+(defvar 'pen-export-variables
+  '(title
+    title-slug
+    max-tokens
+    temperature
+    doc cache needs-work
+    disabled
+    prettifier
+    collation-postprocessor completion
+    vars aliases alias-slugs
+    examples preprocessors var-slugs
+    var-syms func-name))
+
+(defun define-prompt-function (func-name func-sym var-syms doc
+                               title iargs prettify
+                               cache path var-slugs n-collate
+                               filter completion)
+  (eval
+   `(cl-defun ,func-sym ,var-syms
+      ,(sor doc title)
+      (interactive ,(cons 'list iargs))
+      (let* ((pen-sh-update
+              (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+             (shcmd (concat
+                     (if (sor prettifier)
+                         (concat
+                          (sh-construct-envs `(("DO_PRETTY_PRINT" ,(if prettify "y" ""))))
+                          " ")
+                       "")
+                     ,(flatten-once
+                       (list
+                        (list 'concat
+                              (sh-construct-envs `(("LM_CACHE" ,(if cache "y" ""))))
+                              " lm-complete "
+                              (pen-q path))
+                        (flatten-once
+                         (cl-loop for vs in var-slugs collect
+                                  (list " "
+                                        (list 'pen-q (intern vs)))))))))
+             (result
+              (chomp
+               (mapconcat 'identity
+                          (cl-loop for i in (number-sequence ,n-collate)
+                                   collect
+                                   (progn
+                                     (message (concat ,func-name " query " (int-to-string i) "..."))
+                                     (let ((ret (pen-sn shcmd)))
+                                       (message (concat ,func-name " done " (int-to-string i)))
+                                       ret)))
+                          ""))))
+        (if (interactive-p)
+            (cond
+             ((and ,filter
+                   mark-active)
+              (replace-region (concat (pen-selected-text) result)))
+             (,completion
+              (etv result))
+             ((or ,(not filter)
+                  (>= (prefix-numeric-value current-prefix-arg) 4)
+                  (not mark-active))
+              (etv result))
+             (t
+              (replace-region result)))
+          result)))))
+
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pen-pf- for easy searching"
@@ -77,24 +151,42 @@ Function names are prefixed with pen-pf- for easy searching"
 
               ;; results in a hash table
               (let* ((yaml (yamlmod-read-file path))
+
+                     ;; function
                      (title (ht-get yaml "title"))
                      (title-slug (slugify title))
-                     (doc (ht-get yaml "doc"))
+                     (aliases (vector2list (ht-get yaml "aliases")))
+                     (alias-slugs (mapcar 'intern (mapcar (lambda (s) (concat "pen-pf-" s)) (mapcar 'slugify aliases))))
                      (cache (pen-yaml-test yaml "cache"))
-                     (needs-work (pen-yaml-test yaml "needs-work"))
+
                      (in-development (pen-yaml-test yaml "in-development"))
-                     (disabled (pen-yaml-test yaml "disabled"))
+
+                     ;; internals
+                     (prompt (ht-get prompt "doc"))
                      (prefer-external (pen-yaml-test yaml "prefer-external"))
                      (conversation-mode (pen-yaml-test yaml "conversation-mode"))
                      (filter (pen-yaml-test yaml "filter"))
-                     ;; Don't actually use this. But I can toggle to use the prettifier with a bool
+                     ;; Don't actually use this.
+                     ;; But I can toggle to use the prettifier with a bool
                      (prettifier (ht-get yaml "prettifier"))
                      (collation-postprocessor (ht-get yaml "pen-collation-postprocessor"))
                      (completion (pen-yaml-test yaml "completion"))
                      (n-collate (ht-get yaml "n-collate"))
+
+                     ;; API
+                     (max-tokens (ht-get yaml "max-tokens"))
+                     (temperature (ht-get yaml "temperature"))
+
+                     ;; docs
+                     (doc (ht-get yaml "doc"))
+                     (problems (vector2list (ht-get yaml "problems")))
+                     (design-patterns (vector2list (ht-get yaml "design-patterns")))
+                     (todo (vector2list (ht-get yaml "todo")))
+                     (aims (vector2list (ht-get yaml "aims")))
+                     (future-titles (vector2list (ht-get yaml "future-titles")))
+
+                     ;; variables
                      (vars (vector2list (ht-get yaml "vars")))
-                     (aliases (vector2list (ht-get yaml "aliases")))
-                     (alias-slugs (mapcar 'intern (mapcar (lambda (s) (concat "pen-pf-" s)) (mapcar 'slugify aliases))))
                      (examples (vector2list (ht-get yaml "examples")))
                      (preprocessors (vector2list (ht-get yaml "pen-preprocessors")))
                      (var-slugs (mapcar 'slugify vars))
@@ -143,57 +235,13 @@ Function names are prefixed with pen-pf- for easy searching"
                                (defalias a func-sym)
                                (add-to-list 'pen-prompt-functions a))))
 
-                (if (and
-                     (not needs-work)
-                     (not in-development))
+                (if (not in-development)
                     (let ((funcsym
-                           (eval
-                            `(cl-defun ,func-sym ,var-syms
-                               ,(sor doc title)
-                               (interactive ,(cons 'list iargs))
-                               (let* ((pen-sh-update
-                                       (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
-                                      (shcmd (concat
-                                              (if (sor prettifier)
-                                                  (concat
-                                                   (sh-construct-envs `(("DO_PRETTY_PRINT" ,(if prettify "y" ""))))
-                                                   " ")
-                                                "")
-                                              ,(flatten-once
-                                                (list
-                                                 (list 'concat
-                                                       (sh-construct-envs `(("LM_CACHE" ,(if cache "y" ""))))
-                                                       " lm-complete "
-                                                       (pen-q path))
-                                                 (flatten-once
-                                                  (cl-loop for vs in var-slugs collect
-                                                           (list " "
-                                                                 (list 'pen-q (intern vs)))))))))
-                                      (result
-                                       (chomp
-                                        (mapconcat 'identity
-                                                   (cl-loop for i in (number-sequence ,n-collate)
-                                                            collect
-                                                            (progn
-                                                              (message (concat ,func-name " query " (int-to-string i) "..."))
-                                                              (let ((ret (pen-sn shcmd)))
-                                                                (message (concat ,func-name " done " (int-to-string i)))
-                                                                ret)))
-                                                   ""))))
-                                 (if (interactive-p)
-                                     (cond
-                                      ((and ,filter
-                                            mark-active)
-                                       (replace-region (concat (pen-selected-text) result)))
-                                      (,completion
-                                       (etv result))
-                                      ((or ,(not filter)
-                                           (>= (prefix-numeric-value current-prefix-arg) 4)
-                                           (not mark-active))
-                                       (etv result))
-                                      (t
-                                       (replace-region result)))
-                                   result))))))
+                           (define-prompt-function
+                             func-name func-sym var-syms doc
+                             title iargs prettify
+                             cache path var-slugs n-collate
+                             filter completion)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
