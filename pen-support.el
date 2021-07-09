@@ -1,30 +1,3 @@
-;; https://gist.github.com/PhilHudson/cf882c673599221d42b2
-(defun pen-shell-escaper (matched-text)
-  "Return replacement text for MATCHED-TEXT when shell-escaping.
-See `pen-shell-escape'."
-  (cond
-   ;; Already escaped?
-   ((string= matched-text "\\'")
-    "’")
-   ;; Leading?
-   ((string= matched-text "'")
-    "’")
-   ((string-match "\\(.\\)'" matched-text)
-    (concat
-     (match-string 1 matched-text)
-     "’"))
-   ;; TODO whitespace, *, ?, {, }, (, ), [, ]
-   (t
-    matched-text)))
-
-;; https://gist.github.com/PhilHudson/cf882c673599221d42b2
-(defun pen-shell-escape (string)
-  "Make STRING safe to pass to a shell command."
-  (replace-regexp-in-string
-   ".?'"
-   #'pen-shell-escaper
-   (replace-regexp-in-string "\n" " " string)))
-
 (defun variable-p (s)
   (and (not (eq s nil))
        (boundp s)))
