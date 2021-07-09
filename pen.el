@@ -262,6 +262,10 @@ Function names are prefixed with pen-pf- for easy searching"
 
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
+                (if completion
+                    ;; TODO Add to company-mode completion functions
+                    )
+
                 ;; var names will have to be slugged, too
 
                 (if alias-slugs
