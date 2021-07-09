@@ -40,7 +40,8 @@ stream of continuations to =fz-pen-counsel=.
 *** =tidy-prompt=
 This is a bash pipeline command for standardising a prompt
 
-# Example:
+Example:
+
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   cat grammar-correction.prompt | tidy-prompt | sponge grammar-correction.prompt
 #+END_SRC
