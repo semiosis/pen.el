@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# cmdd - print the arguments given to this script and use double quotes
+# This is a fast-ish approximation
+
+cmdd() {
+    for var in "$@"
+    do
+        printf "\"%s\" ";
+    done | sed 's/ $//'
+}
+
+cmdd "$@"
