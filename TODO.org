@@ -10,3 +10,4 @@
   sp +/"collation-postprocessor" "$HOME/source/git/semiosis/pen.el/pen.el"
 - Send max-tokens temperature top-p to lm-complete as environment variables
   sp +/"max-tokens temperature top-p" "$HOME/source/git/semiosis/pen.el/pen.el"
+- select error messages and ask what they mean
