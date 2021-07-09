@@ -21,6 +21,20 @@ Print the arguments given to this script.
 - stdin is json
 - stdout is yaml
 
+This is used by =tidy-prompt=.
+
+*** =loop=
+This script loops the script given as arguments
+
+For example:
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  # Every second, output "hi"
+  loop -s 1 echo hi
+#+END_SRC
+
+It's used to loop =lm-complete= to provide a
+stream of continuations to =fz-pen-counsel=.
+
 ** In-development
 *** =get-ext-for-lang=
 Given the name of a language, return the associated file extension.

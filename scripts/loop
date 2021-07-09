@@ -1,5 +1,4 @@
-#!/bin/bash
-export TTY
+#!/bin/sh
 
 # This script loops the script given as arguments
 # For example:
