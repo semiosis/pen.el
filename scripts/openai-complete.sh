@@ -213,7 +213,7 @@ HEREDOC
 
     export UPDATE=y
 
-    response_fp="$(sh "$shfp" | uq | s pen-chomp | tf txt)"
+    response_fp="$(sh "$shfp" | uq | pen-chomp | tf txt)"
 
     prompt_bytes="$(cat "$prompt_prompt_fp" | wc -c)"
     response_bytes="$(cat "$response_fp" | wc -c)"
