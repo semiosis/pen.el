@@ -41,7 +41,7 @@ IFS= read -r -d '' jqsrc <<HEREDOC
 HEREDOC
 
 prompt_file_path="$1"
-echo "$prompt_file_path,"
+echo -n "$prompt_file_path,"
 
 cat "$prompt_file_path" | yq -r "$jqsrc"
 }
