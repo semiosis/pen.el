@@ -80,7 +80,7 @@
     vars aliases alias-slugs))
 
 (defun define-prompt-function (func-name func-sym var-syms doc
-                                         title iargs prettify
+                                         title iargs
                                          prettifier
                                          cache path var-slugs n-collate
                                          filter completion)
@@ -237,7 +237,7 @@ Function names are prefixed with pen-pf- for easy searching"
                 (if (not in-development)
                     (let ((funcsym (define-prompt-function
                                      func-name func-sym var-syms doc
-                                     title iargs prettify prettifier
+                                     title iargs prettifier
                                      cache path var-slugs n-collate
                                      filter completion)))
                       (add-to-list 'pen-prompt-functions funcsym)
