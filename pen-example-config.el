@@ -68,8 +68,8 @@
 (define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
 (define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
 
-(setq pen-prompt-directory "/root/.emacs.d/prompts/prompts")
-(setq pen-nlsh-histdir "/root/.emacs.d/comint-history/")
+(setq pen-prompt-directory (concat (getenv "EMACSD") "/prompts/prompts"))
+(setq pen-nlsh-histdir (concat (getenv "EMACSD") "/comint-history/"))
 
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)
