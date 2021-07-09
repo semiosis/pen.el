@@ -64,6 +64,11 @@ Example:
   cat grammar-correction.prompt | tidy-prompt | sponge grammar-correction.prompt
 #+END_SRC
 
+*** =prompts-details=
+Make a csv of information from a given prompts directory for the prompts catalogue.
+
+A very slow script. Will require re-implementation.
+
 ** In-development
 *** =get-ext-for-lang=
 Given the name of a language, return the associated file extension.
