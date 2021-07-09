@@ -151,7 +151,8 @@ delim is used to guarantee the function returns multiple matches per line
 (defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
 This appears to strip ansi codes.
-\(sh) does not."
+\(sh) does not.
+This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .prompt files"
   (interactive)
 
   (if (not cmd)
@@ -177,6 +178,7 @@ This appears to strip ansi codes.
            (sh-construct-exports
             (-filter 'identity
                      (list (list "PATH" (getenv "PATH"))
+                           (list "PEN_PROMPTS_DIR" pen-prompt-directory)
                            (if (and (variable-p 'pen-sh-update) (eval 'pen-sh-update))
                                (list "UPDATE" "y")))))))
       (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))

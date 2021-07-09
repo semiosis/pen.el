@@ -5,6 +5,8 @@
 # or:
 # echo French | lm-complete translate-to.prompt Goodnight
 
+# This file expects the PEN_PROMPTS_DIR
+
 # Update caches (would override LM_CACHE)
 export UPDATE
 
