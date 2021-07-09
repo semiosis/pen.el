@@ -80,7 +80,6 @@
     vars aliases alias-slugs))
 
 (defun define-prompt-function (func-name func-sym var-syms doc
-                                         title
                                          prompt
                                          iargs
                                          prettifier
@@ -89,7 +88,7 @@
   (let ((finalprompt))
     (eval
      `(cl-defun ,func-sym ,var-syms
-        ,(sor doc title)
+        ,doc
         (interactive ,(cons 'list iargs))
         (let* ((pen-sh-update
                 (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
@@ -134,6 +133,10 @@
                (t
                 (replace-region result)))
             result))))))
+
+(defun pen-list-to-orglist (l)
+  (mapconcat 'identity (mapcar (lambda (s) (concat "- " s)) l)
+             "\n"))
 
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory
@@ -180,7 +183,6 @@ Function names are prefixed with pen-pf- for easy searching"
                      (temperature (ht-get yaml "temperature"))
 
                      ;; docs
-                     (doc (ht-get yaml "doc"))
                      (problems (vector2list (ht-get yaml "problems")))
                      (design-patterns (vector2list (ht-get yaml "design-patterns")))
                      (todo (vector2list (ht-get yaml "todo")))
@@ -189,6 +191,32 @@ Function names are prefixed with pen-pf- for easy searching"
                      (external-related (vector2list (ht-get yaml "external-related")))
                      (related-prompts (vector2list (ht-get yaml "related-prompts")))
                      (future-titles (vector2list (ht-get yaml "future-titles")))
+                     (doc (mapconcat
+                           'identity
+                           (-filter-not-empty-string
+                            (list (ht-get yaml "doc")
+                                  (if design-patterns
+                                      (concat "design-patterns:"
+                                              (pen-list-to-orglist design-patterns)))
+                                  (if todo
+                                      (concat "todo:"
+                                              (pen-list-to-orglist todo)))
+                                  (if aims
+                                      (concat "aims:"
+                                              (pen-list-to-orglist aims)))
+                                  (if past-versions
+                                      (concat "past-versions:"
+                                              (pen-list-to-orglist past-versions)))
+                                  (if external-related
+                                      (concat "external-related:"
+                                              (pen-list-to-orglist external-related)))
+                                  (if related-prompts
+                                      (concat "related-prompts:"
+                                              (pen-list-to-orglist related-prompts)))
+                                  (if future-titles
+                                      (concat "future-titles:"
+                                              (pen-list-to-orglist future-titles)))))
+                           "\n"))
 
                      ;; variables
                      (vars (vector2list (ht-get yaml "vars")))
@@ -246,7 +274,7 @@ Function names are prefixed with pen-pf- for easy searching"
                          (sor title))
                     (let ((funcsym (define-prompt-function
                                      func-name func-sym var-syms doc
-                                     title prompt iargs prettifier
+                                     prompt iargs prettifier
                                      cache path var-slugs n-collate
                                      filter completion)))
                       (add-to-list 'pen-prompt-functions funcsym)
