@@ -1,0 +1,15 @@
+#!/bin/sh
+
+cache_file_path="/tmp/pen-$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify).txt"
+
+# ci means "cache it"
+
+if test "$LM_CACHE" = "y"; then
+    if test -f "$cache_file_path"; then
+        cat "$cache_file_path"
+    else
+        "$@" > "$cache_file_path"
+    fi
+else
+    "$@"
+fi

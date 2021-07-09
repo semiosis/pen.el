@@ -13,17 +13,9 @@ export UPDATE
 # Request the pretty printer if the prompt specifies one
 export DO_PRETTY_PRINT
 
-# TODO Implement this function.
-# LM_CACHE (Request to cache completions, that should happen here)
-# pen.el has indicated this should be cached/memoised.
-# ci (cache it)
-ci() {
-    if test "$LM_CACHE" = "y"; then
-        "$@"
-    else
-        "$@"
-    fi
-}
+# if LM_CACHE==y then pen.el has indicated this should be cached/memoised.
+# This is handled by `pen-ci`
+export LM_CACHE
 
 prompt_file_path="$1"
 test -z "$prompt_file_path" || {
@@ -35,5 +27,14 @@ stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
+if stdin_exists; then
+    prompt_file_path="$1"
+    shift
+
+    # stdin becomes the first argument after the .prompt path
+    set -- "$prompt_file_path" "$(cat)" "$@"
+fi
+
 # TODO Handle other backend completers here
-ci openai-complete.sh "$@"
+# pen-ci will possibly cache/memoize the command
+pen-ci openai-complete.sh "$@"
