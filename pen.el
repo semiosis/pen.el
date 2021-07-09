@@ -102,6 +102,7 @@ Function names are prefixed with pen-pf- for easy searching"
                       (let ((ss (mapcar 'intern var-slugs)))
                         (message (concat "_" prettifier))
                         (if (sor prettifier)
+                            ;; Add to the function definition the prettify key if the .prompt file specifies a prettifier
                             (setq ss (append ss '(&key prettify))))
                         ss))
                      (pen-defaults (vector2list (ht-get yaml "pen-defaults")))
@@ -153,15 +154,16 @@ Function names are prefixed with pen-pf- for easy searching"
                                      (let* ((pen-sh-update
                                              (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
                                             (shcmd (concat
-                                                    ,(if (sor prettifier)
-                                                         '(if prettify
-                                                              "PRETTY_PRINT=y "
-                                                            ""))
+                                                    (if (sor prettifier)
+                                                        (concat
+                                                         (sh-construct-envs `(("PRETTY_PRINT" ,(if prettify "y" ""))))
+                                                         " ")
+                                                      "")
                                                     ,(flatten-once
                                                       (list
                                                        (list 'concat
                                                              (sh-construct-envs `(("LM_CACHE" ,(if cache "y" ""))))
-                                                             "lm-complete "
+                                                             " lm-complete "
                                                              (pen-q path))
                                                        (flatten-once
                                                         (cl-loop for vs in var-slugs collect
