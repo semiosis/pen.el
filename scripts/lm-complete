@@ -9,7 +9,7 @@
 export UPDATE
 
 # Request the pretty printer if the prompt specifies one
-export PRETTY_PRINT
+export DO_PRETTY_PRINT
 
 # TODO Implement this function.
 # LM_CACHE (Request to cache completions, that should happen here)

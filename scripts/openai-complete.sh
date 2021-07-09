@@ -29,14 +29,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -nc) {
-        NOCACHE=y
-        shift
-    }
-    ;;
-
     -pp) {
-        PRETTY_PRINT=y
+        DO_PRETTY_PRINT=y
         shift
     }
     ;;
@@ -50,9 +44,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-export PRETTY_PRINT
-
-: "${NOCACHE:="n"}"
+export DO_PRETTY_PRINT
 
 if test -n "$1"; then
     prompt_fp="$1"
@@ -253,7 +245,7 @@ HEREDOC
                     cat
                 fi
             } |
-                if test "$PRETTY_PRINT" = y && test -n "$prettifier"; then
+                if test "$DO_PRETTY_PRINT" = y && test -n "$prettifier"; then
                     eval "$prettifier"
                 else
                     cat
