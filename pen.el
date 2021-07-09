@@ -75,9 +75,7 @@
   '(max-tokens
     temperature
     prompt
-    cache
-    collation-postprocessor completion
-    vars aliases alias-slugs))
+    cache))
 
 ;; This is just so I get syntax highlighting for defpf in emacs
 (defmacro defpf (&rest body)

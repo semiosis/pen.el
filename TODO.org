@@ -4,3 +4,5 @@
     $MYGIT/semiosis/pen.el/scripts/prompts-details
 - Add functions to company-mode if they are specified as such
   v +/";; TODO Add to company-mode completion functions" "$HOME/source/git/semiosis/pen.el/pen.el"
+- collation-postprocessor
+  v +/"collation-postprocessor" "$HOME/source/git/semiosis/pen.el/pen.el"
