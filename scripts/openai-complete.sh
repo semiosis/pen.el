@@ -1,7 +1,4 @@
 #!/bin/bash
-export TTY
-
-# TODO Implement LM_COMPLETE_CACHE
 
 sn="$(basename "$0")"
 
@@ -280,5 +277,4 @@ if test "$USE_CONVERSATION_MODE" = y && test "$conversation_mode" = "true"; then
     done
 else
     repl_run "$@" pavs
-    }
 fi
