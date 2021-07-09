@@ -1,8 +1,11 @@
 #!/bin/bash
-export TTY
-# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
 
-cd "$PROMPTS"
+# Make a csv of information from a given prompts directory
+# This is for the prompts catalogue.
+
+test -d "$PROMPT_DIR" || exit 1
+
+cd "$PROMPT_DIR"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -15,17 +18,41 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+# Get a csv row of details for one .prompt file
+# Read prompt file from stdin
+prompts-details-get-row() {
+IFS= read -r -d '' jqsrc <<HEREDOC
+[
+.title,
+(
+.vars | (
+           if type == "array"
+           then join(":")
+           else .
+           end
+         )
+),
+.filter,
+.conversation,
+.external,
+.["needs-work"],
+.["in-development"]
+] | @csv
+HEREDOC
+
+prompt_file_path="$1"
+echo "$prompt_file_path,"
+
+cat "$prompt_file_path" | yq -r "$jqsrc"
+}
+
 if test "$to_csv" = "y"; then
     echo filename,title,vars,filter,conversation,external,in development,needs work;
 fi
 
-find . -mindepth 1 -maxdepth 1 -name '*.prompt' -type f | sed 's=^./==' | awk1 | while IFS=$'\n' read -r line; do
+find . -mindepth 1 -maxdepth 1 -name '*.prompt' -type f | sed 's=^./==' | awk 1 | while IFS=$'\n' read -r prompt_file_path; do
 (
     exec 0</dev/null
-    echo "$line" | hls green 1>&2
-    echo -n "$line,"
-    # oci -E "cat $(aqf "$line") | yq -r \"[.title,(.vars | join(\\\":\\\")),.filter,.conversation,.external,.[\\\"in-development\\\"]] | @csv\""
-    eval "cat $(aqf "$line") | VERBOSE=y prompts-details-get-row" |
-        sed 's/,,/,_,/g'
+    prompts-details-get-row "$prompt_file_path" | sed 's/,,/,_,/g'
 ) | awk 1
-done | pavs
+done

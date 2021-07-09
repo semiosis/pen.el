@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Get a csv row of details for one .prompt file
+
+IFS= read -r -d '' jqsrc <<HEREDOC
+[
+.title,
+(
+.vars | (
+           if type == "array"
+           then join(":")
+           else .
+           end
+         )
+),
+.filter,
+.conversation,
+.external,
+.["needs-work"],
+.["in-development"]
+] | @csv
+HEREDOC
+
+yq -r "$jqsrc"
