@@ -196,7 +196,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                    result))))))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is  the more efficient way to memoize.
-                      ;; TODO I'll sort it out later. I want an updating mechanism.
+                      ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
                       ;; (if cache (memoize funcsym))
                       ))
                 (message (concat "pen-mode: Loaded prompt function " func-name)))))))
