@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# pen-nsfa - new script from args
+
+# This will return the path to a new script in
+# the =tmp= directory which when executed will
+# execute =echo hi=.
+# 
+# =pen-nsfa= is used by =comint-quick=, which
+# will is used to create =comint= modes for, for example, =nlsh=.
+# 
+# See =nlsh-os=.
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -E) {
         DO_EXEC=y
@@ -23,6 +34,7 @@ slug="$(echo "$CMD" | tr -d '\n' | slugify | cut -c -40)"
 tf_new_script="/tmp/nsfa-$slug.sh"
 rm -f "$tf_new_script"
 
+# stty stop and undef are used to prevent C-s from hanging the program.
 IFS= read -r -d '' scriptcode <<'HEREDOC'
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null;
 HEREDOC
