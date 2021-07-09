@@ -232,7 +232,7 @@ Function names are prefixed with pen-pf- for easy searching"
                             ;; Add to the function definition the prettify key if the .prompt file specifies a prettifier
                             (setq ss (append ss '(&key prettify))))
                         ss))
-                     (pen-defaults (vector2list (ht-get yaml "pen-defaults")))
+                     (var-defaults (vector2list (ht-get yaml "var-defaults")))
                      (func-name (concat "pen-pf-" title-slug))
                      (func-sym (intern func-name))
                      (iargs

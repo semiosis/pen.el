@@ -1,3 +1,10 @@
+prompt function
+    Each .prompt file generates a function in
+    emacs lisp.
+
+    This generated function I will refer to as
+    a prompt function.
+
 nucleus sampling
 top p sampling
     To address this problem, the authors
