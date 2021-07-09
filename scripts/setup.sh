@@ -40,6 +40,9 @@ pip install yq
 # For tidy-prompt
 pip intall python-json2yaml
 
+# For base64
+agi coreutils
+
 # For Pen.el
 ## slugify
 agi libc-bin

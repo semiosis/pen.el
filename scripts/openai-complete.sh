@@ -15,7 +15,7 @@ stdin_exists() {
 
 get_stop_sequences() {
     yq -r "(.\"stop-sequences\"[] |= @base64) .\"stop-sequences\"[] // empty" |
-        wrlp -E "base64-decode-string | uq | qne"
+        wrlp -E "base64 -d | uq | qne"
 }
 
 # exec 3>&2

@@ -1,14 +1,23 @@
 #!/bin/bash
 export TTY
 
-# Request to cache completions
-export LM_CACHE
-
 # Update caches (would override LM_CACHE)
 export UPDATE
 
 # Request the pretty printer if the prompt specifies one
 export PRETTY_PRINT
 
-# Initial implementation is in sh
-openai-complete.sh
+# TODO Implement this function.
+# LM_CACHE (Request to cache completions, that should happen here)
+# pen.el has indicated this should be cached/memoised.
+# ci (cache it)
+ci() {
+    if test "$LM_CACHE" = "y"; then
+        "$@"
+    else
+        "$@"
+    fi
+}
+
+# TODO Handle other backend completers here
+ci openai-complete.sh

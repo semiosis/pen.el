@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# While Read Line Pipe
+# --------------------
+# This script is a lot like xargs
+# awk 1 is used to ensure that input and output text finishes with a newline
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -E) {
+        thecmd="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+awk 1 | {
+    if test -n "$thecmd"; then
+        while IFS=$'\n' read -r line; do
+            printf -- "%s" "$line" | eval "$thecmd" | awk 1
+        done
+    else
+        while IFS=$'\n' read -r line; do
+            printf -- "%s" "$line" | "$@" | awk 1
+        done
+    fi
+}
