@@ -10,7 +10,7 @@
 (defun get-path-semantic ()
   (interactive)
   (cond
-   ((major-mode-enabled 'org-brain-visualize-mode)
+   ((derived-mode-p 'org-brain-visualize-mode)
     (org-brain-pf-topic))
    ((is-glossary-file (f-basename (get-path)))
     (f-mant (f-basename (get-path))))
