@@ -1,5 +1,9 @@
-#!/bin/bash
-export TTY
+#!/bin/sh
+
+# Example of usage:
+# lm-complete translate-to.prompt French Goodnight
+# or:
+# echo French | lm-complete translate-to.prompt Goodnight
 
 # Update caches (would override LM_CACHE)
 export UPDATE

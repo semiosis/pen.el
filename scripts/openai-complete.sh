@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Example of usage:
+# openai-complete.sh translate-to.prompt French Goodnight
+# or:
+# echo French | openai-complete.sh translate-to.prompt Goodnight
+
 sn="$(basename "$0")"
 
 yq() {
@@ -49,10 +54,7 @@ export PRETTY_PRINT
 
 : "${NOCACHE:="n"}"
 
-if ! test "$sn" = lm-complete; then
-    prompt_fp="$sn"
-    prompt_fp="$(p "$prompt_fp" | sed 's/^oai-//')"
-elif test -n "$1"; then
+if test -n "$1"; then
     prompt_fp="$1"
     shift
 fi
