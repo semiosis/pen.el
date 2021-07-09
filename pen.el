@@ -160,6 +160,7 @@ Function names are prefixed with pen-pf- for easy searching"
 
                      ;; lm-complete
                      (cache (pen-yaml-test yaml "cache"))
+                     ;; openai-complete.sh is the default LM completion command
                      (lm-command (or (ht-get yaml "lm-command")
                                      "openai-complete.sh"))
 
