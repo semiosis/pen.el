@@ -79,12 +79,12 @@
     collation-postprocessor completion
     vars aliases alias-slugs))
 
-(defun define-prompt-function (func-name func-sym var-syms doc
-                                         prompt
-                                         iargs
-                                         prettifier
-                                         cache path var-slugs n-collate
-                                         filter completion)
+;; This is just so I get syntax highlighting for defpf in emacs
+(defmacro defpf (&rest body)
+  `(define-prompt-function
+     ,@body))
+
+(defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion)
   (let ((finalprompt))
     (eval
      `(cl-defun ,func-sym ,var-syms
@@ -274,7 +274,7 @@ Function names are prefixed with pen-pf- for easy searching"
                          (sor func-name)
                          func-sym
                          (sor title))
-                    (let ((funcsym (define-prompt-function
+                    (let ((funcsym (defpf
                                      func-name func-sym var-syms doc
                                      prompt iargs prettifier
                                      cache path var-slugs n-collate
