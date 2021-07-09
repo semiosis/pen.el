@@ -8,6 +8,9 @@
 
 # OPENAI_API_KEY="insert key here and uncomment this line"
 
+echo "$@"
+exit 0
+
 test -n "$OPENAI_API_KEY" || {
     echo "OPENAI_API_KEY not given to script" 1>&2
     exit 1

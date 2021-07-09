@@ -69,19 +69,13 @@
 ;; A: Delimit
 (defvar 'pen-export-flags
   '(conversation-mode
-    completion
-    vars
-    examples preprocessors var-slugs
-    func-name))
+    completion))
 
 (defvar 'pen-export-variables
-  '(title
-    title-slug
-    max-tokens
+  '(max-tokens
     temperature
-    doc cache needs-work
-    disabled
-    prettifier
+    prompt
+    cache
     collation-postprocessor completion
     vars aliases alias-slugs
     examples preprocessors var-slugs
