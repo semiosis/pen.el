@@ -85,7 +85,7 @@
              (vals
               (cl-loop
                for tp in
-               (-zip-fill nil ,var-syms ,preprocessors)
+               (-zip-fill nil ',var-syms ',preprocessors)
                collect
                (let ((sym (car tp))
                      (pp (cdr tp))
