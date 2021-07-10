@@ -152,7 +152,9 @@ delim is used to guarantee the function returns multiple matches per line
                  (concat
                   (car tp)
                   "="
-                  (pen-q (cadr tp))))))))
+                  (if (cadr tp)
+                      (pen-q (cadr tp))
+                    "")))))))
 
 (defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
