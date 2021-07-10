@@ -2,9 +2,8 @@
 
 # Example of usage:
 # export PEN_PROMPTS_DIR=$MYGIT/semiosis/prompts
-# lm-complete translate-to.prompt French Goodnight
-# or:
-# echo French | lm-complete translate-to.prompt Goodnight
+# Export PEN_ environment variables
+# lm-complete
 
 test -n "$PEN_LM_COMMAND" || {
     echo "PEN_LM_COMMAND not supplied"

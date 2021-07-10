@@ -2,9 +2,8 @@
 
 # Example of usage:
 # export OPENAI_API_KEY
-# openai-complete.sh translate-to.prompt French Goodnight
-# or:
-# echo French | openai-complete.sh translate-to.prompt Goodnight
+# Export PEN_ environment variables
+# openai-complete.sh
 
 # OPENAI_API_KEY="insert key here and uncomment this line"
 
