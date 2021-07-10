@@ -27,7 +27,7 @@
 (package-install 'sx)
 
 (let ((pendir (concat (getenv "EMACSD") "/pen.el")))
-  (add-to-list 'load-path pendir)
-  (add-to-list 'load-path (concat pendir "/in-development"))
-  (load (concat pendir "/pen.el"))
-  (load (concat pendir "/pen-example-config.el")))
+  (add-to-list 'load-path (concat pendir "/src"))
+  (add-to-list 'load-path (concat pendir "/src/in-development"))
+  (load (concat pendir "/src/pen.el"))
+  (load (concat pendir "/src/pen-example-config.el")))
