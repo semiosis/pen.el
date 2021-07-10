@@ -14,7 +14,7 @@
     - https://semiosis.github.io/posts/representing-multiverses-with-datomic/
   - [ ] Prompts stored in Datomic
   - [ ] Auto-installer
-  - [ ] Dockerized Web-facing Emacs
+  - [ ] Dockerized Web-facing Emacs application
   - [ ] Prompt Catalogue
     - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
   - [ ] Make use of arbitrarily many git repositories that store prompts
@@ -50,6 +50,7 @@
           section Stage 2
           Stage 2  :s2, 2021-07-12, 120d
           Prompt Catalog : b6a, 2021-07-12, 20d
+          Dockerized Web-facing Emacs application : b6c, 2021-07-12, 20d
           Create prompt-description-mode schema in schemastore : b6b, 2021-07-12, 20d
           lm-complete (backend completer) : b6b, 2021-07-12, 20d
           Imaginary interpreter + imaginary-mode : b11, 2021-07-12, 20d
