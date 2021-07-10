@@ -68,13 +68,13 @@
 (define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
 (define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
 
-(setq pen-prompt-directory (concat (getenv "EMACSD") "/prompts/prompts"))
+(setq pen-prompt-repo-dir (concat (getenv "EMACSD") "/prompts"))
+(setq pen-prompt-directory (concat pen-prompt-repo-dir "/prompts"))
 (setq pen-nlsh-histdir (concat (getenv "EMACSD") "/comint-history/"))
 
 (defun find-prompt-repos (&optional recursion-depth)
   (interactive)
-  (cat pen-prompt-directory)
-  )
+  (etv (pps (str2list (e/cat (concat pen-prompt-repo-dir "/prompt-repositories.txt"))))))
 
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)
