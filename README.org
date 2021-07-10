@@ -7,7 +7,7 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 - Share and discover prompts
   - http://github.com/semiosis/prompts/blob/master/README.org
   - http://github.com/semiosis/prompts/blob/master/prompt-repositories.txt
-- Chain prompts together using keyboard macros and functions
+- Chain prompt functions together using keyboard macros and functions
 - Interactively query, generate and transfrom both prose and code
 - Use the LM as a search engine and a semantic search engine within emacs
   - Search the internet
