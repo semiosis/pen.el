@@ -3,6 +3,10 @@
 development, discovery and usage of prompts to
 a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 
+| License |
+|---------|
+| =GPL-3= |
+
 - Create elisp functions based on "Language Model" prompts
 - Share and discover prompts (=P2P=)
   - http://github.com/semiosis/prompts/blob/master/README.org
@@ -15,16 +19,12 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
     - https://beta.openai.com/docs/introduction/semantic-search
     - https://gpttools.com/semanticsearch
 
-| License |
-|---------|
-| =GPL-3= |
-
-+ Goals
-  - Programmatically navigate =GPT-3=, =GPT-j= and future language models
-  - Peer-to-peer
-  - Create useful prompts
-  - Prototype NLP tasks by creating prompts
-    - Substitute external tools for prototypes
+** Goals
+- Programmatically navigate =GPT-3=, =GPT-j= and future language models
+- Peer-to-peer
+- Create useful prompts
+- Prototype NLP tasks by creating prompts
+  - Substitute external tools for prototypes
 
 ** Vision
 At its heart, emacs is an operating system
