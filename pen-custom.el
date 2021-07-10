@@ -11,4 +11,10 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-prompt-discovery-recursion-depth ""
+  "The number of git repositories deep that pen.el will go looking"
+  :type 'integer
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (provide 'pen-custom)

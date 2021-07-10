@@ -72,9 +72,11 @@
 (setq pen-prompt-directory (concat pen-prompt-repo-dir "/prompts"))
 (setq pen-nlsh-histdir (concat (getenv "EMACSD") "/comint-history/"))
 
+(setq pen-prompt-discovery-recursion-depth 5)
+
 (defun find-prompt-repos (&optional recursion-depth)
-  (interactive)
-  (etv (pps (str2list (e/cat (concat pen-prompt-repo-dir "/prompt-repositories.txt"))))))
+  (interactive (list 5))
+  (etv (pps (pen-str2list (e/cat (concat pen-prompt-repo-dir "/prompt-repositories.txt"))))))
 
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)
