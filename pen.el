@@ -71,12 +71,13 @@
      ,@body))
 
 (defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
-                                         lm-command max-tokens temperature top-p)
+                                         lm-command stop-sequences stop-sequence max-tokens temperature top-p)
   (let* ((finalprompt)
          (exports
           (sh-construct-envs `(("PEN_LM_COMMAND" ,lm-command)
                                ("PEN_MAX_TOKENS" ,max-tokens)
                                ("PEN_TEMPERATURE" ,temperature)
+                               ("PEN_STOP_SEQUENCE" ,stop-sequence)
                                ("PEN_TOP_P" ,top-p)
                                ("PEN_PROMPT" ,finalprompt)
                                ("PEN_CACHE" ,cache)))))
@@ -178,6 +179,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      (max-tokens (ht-get yaml "max-tokens"))
                      (top-p (ht-get yaml "top-p"))
                      (temperature (ht-get yaml "temperature"))
+                     (stop-sequences (vector2list (ht-get yaml "stop-sequences")))
+                     (stop-sequence (if stop-sequences (car stop-sequences)))
 
                      ;; docs
                      (problems (vector2list (ht-get yaml "problems")))
@@ -281,6 +284,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                      prompt iargs prettifier
                                      cache path var-slugs n-collate
                                      filter completion lm-command
+                                     stop-sequences stop-sequence
                                      max-tokens temperature top-p)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
