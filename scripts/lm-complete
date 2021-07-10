@@ -11,6 +11,20 @@ test -n "$PEN_LM_COMMAND" || {
     exit 1
 }
 
+: "${PEN_MAX_TOKENS:="60"}"
+: "${PEN_TEMPERATURE:="0.8"}"
+: "${PEN_TOP_P:="1"}"
+: "${PEN_PROMPT:="Once upon a time"}"
+: "${PEN_CONVERSATION_MODE:="n"}"
+: "${PEN_COMPLETION:="n"}"
+
+export PEN_MAX_TOKENS
+export PEN_TEMPERATURE
+export PEN_TOP_P
+export PEN_PROMPT
+export PEN_CONVERSATION_MODE
+export PEN_COMPLETION
+
 # This file expects the PEN_PROMPTS_DIR
 
 # Update caches (would override LM_CACHE)
