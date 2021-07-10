@@ -79,6 +79,7 @@ I credit =|:ϝ∷¦ϝ= for writing this into existence!
 ** Source code
 - [[./src][emacs lisp]]
 - [[./scripts][supplementary commands]]
+- prompts (see below)
 
 ** Prompts
 This is the repository containing my personal
