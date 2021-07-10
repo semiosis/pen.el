@@ -13,6 +13,8 @@
   - [ ] Generations stored in Datomic
     - https://semiosis.github.io/posts/representing-multiverses-with-datomic/
   - [ ] Prompts stored in Datomic
+  - [ ] Auto-installer
+  - [ ] Dockerized Web Service
   - [ ] Prompt Catalogue
     - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
   - [ ] Make use of arbitrarily many git repositories that store prompts
