@@ -7,32 +7,31 @@ prompt function
 
 nucleus sampling
 top p sampling
-    To address this problem, the authors
-    propose top p sampling, aka nucleus
-    sampling, in which we compute the
-    cumulative distribution and cut off as
-    soon as the CDF exceeds P.
+    Compute the cumulative distribution and
+    cut off as soon as the CDF exceeds P.
     
-    In the broad distribution example above,
-    it may take the top 100 tokens to exceed
-    top_p = .9.
+    Example:
+        In a broad distribution, it may take
+        the top 100 tokens to exceed top_p =
+        .9.
+        
+        In a narrow distribution, we may
+        already exceed top_p = .9.
     
-    In the narrow distribution, we may already
-    exceed top_p = .9
-    
-    with just hot and warm in our sample
-    distribution.
-    
-    In this way, we still avoid sampling
-    egregiously wrong tokens, but preserve
-    variety when the highest scoring tokens
-    have low confidence.
+    Still avoid sampling egregiously wrong
+    tokens, but preserve variety when the
+    highest scoring tokens have low
+    confidence.
 
     A method of determining which tokens to
     use that looks at the combined probability
     of groups of tokens.
 
     See "Top P".
+
+    v +/"Nucleus sampling" "$MYGIT/mullikine/gpt-2/src/sample.py"
+
+    https://arxiv.org/pdf/1904.09751.pdf
 
 Top P
     [#OpenAI API]
