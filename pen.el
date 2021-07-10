@@ -89,17 +89,9 @@
                 (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
                (shcmd (concat
                        ,exports " "
-                       (if (sor ,prettifier)
-                           (concat
-                            (sh-construct-envs `(("DO_PRETTY_PRINT" ,(if prettify "y" ""))))
-                            " ")
-                         "")
                        ,(flatten-once
                          (list
-                          (list 'concat
-                                (sh-construct-envs `(("LM_CACHE" ,(if cache "y" ""))))
-                                " lm-complete "
-                                finalprompt)
+                          (concat "lm-complete " finalprompt)
                           (flatten-once
                            (cl-loop for vs in var-slugs collect
                                     (list " "
@@ -112,6 +104,9 @@
                                      (progn
                                        (message (concat ,func-name " query " (int-to-string i) "..."))
                                        (let ((ret (pen-sn shcmd)))
+                                         (if (and (sor ,prettifier)
+                                                  prettify)
+                                             (setq ret (pen-sn ,prettifier ret)))
                                          (message (concat ,func-name " done " (int-to-string i)))
                                          ret)))
                             ""))))
@@ -179,7 +174,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      (max-tokens (ht-get yaml "max-tokens"))
                      (top-p (ht-get yaml "top-p"))
                      (temperature (ht-get yaml "temperature"))
-                     (stop-sequences (vector2list (ht-get yaml "stop-sequences")))
+                     (stop-sequences (or (vector2list (ht-get yaml "stop-sequences"))
+                                         (list "\n")))
                      (stop-sequence (if stop-sequences (car stop-sequences)))
 
                      ;; docs
