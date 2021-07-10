@@ -22,6 +22,23 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
   - Prototype NLP tasks by creating prompts
     - Substitute external tools for prototypes
 
+** Vision
+At its heart, emacs is an operating system
+based on a =tty=, which is a text stream.
+
+emacs supports a text-only mode. This makes it
+ideally suited for training a LM such as a GPT
+(Generative Pre-trained Transformer).
+
+emacs lisp provides a skeleton on which NLP
+functions can built around. Ultimately, emacs
+will become a fractal in the latent space of a future LM (language model).
+A graphical editor would not benefit from this effect until much later on.
+
+Between here and now we can write prompt
+functions to help preserve emacs.
+
+** Origins
 #+BEGIN_SRC text -n :async :results verbatim code
   Imagine that you hold a powerful and versatile pen, whose ink flows forth in
   branching variations of all possible expressions: every story, every theory,

@@ -10,6 +10,7 @@
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
     echo "PEN_LM_COMMAND:\"$PEN_LM_COMMAND\""
+    echo "PEN_ENGINE:\"$PEN_ENGINE\""
     echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
     echo "PEN_STOP_SEQUENCE:\"$PEN_STOP_SEQUENCE\""
     echo "PEN_TOP_P:\"$PEN_TOP_P\""
@@ -26,42 +27,10 @@ test -n "$OPENAI_API_KEY" || {
 # Bash by default will remove trailing whitespace for command substitution
 PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT")"
 
-if test "$engine" = myrc; then
-    engine="$(myrc .default_openai_api_engine)"
-fi
+# Default for OpenAI is davinci
+: "${PEN_ENGINE:="davinci"}"
+: "${PEN_ENGINE:="curie"}"
 
-# The preprocessors must be loaded into memory, not simply used because the conversation-mode input may need preprocessing
-if test -n "$haspreprocessors"; then
-    # readarray is bash 4
-    readarray -t pps < <(cat "$prompt_fp" | yq -r "(.preprocessors[] |= @base64) .preprocessors[] // empty" | awk 1)
-
-    # This is slow. I should use a different language
-    eval "set -- $(
-    i=1
-    for pp in "${pps[@]}"
-    do
-        pp="$(printf -- "%s" "$pp" | base64 -d)"
-
-        eval val="\$$i"
-
-        if ! test "$pp" = "null"; then
-            val="$(printf -- "%s" "$val" | eval "$pp")"
-        fi
-
-        printf "'%s' " "$(printf %s "$val" | sed "s/'/'\\\\''/g")";
-        i="$((i + 1))"
-    done | sed 's/ $//'
-    )"
-fi
-
-: "${engine:="$(myrc .default_openai_api_engine)"}"
-
-: "${preferred_openai_engine:="davinci"}"
-: "${engine:="$preferred_openai_engine"}"
-: "${engine:="davinci"}"
-
-# This is OK now because I have 'myeval'
-first_stop_sequence="$(printf -- "%s" "$first_stop_sequence" | qne)"
 
 stop_sequences="$(cat "$prompt_fp" | get_stop_sequences 2>/dev/null)"
 
