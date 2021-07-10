@@ -74,9 +74,12 @@
 
 (setq pen-prompt-discovery-recursion-depth 5)
 
-(defun find-prompt-repos (&optional recursion-depth)
+;; (url-hexify-string "github.com/semiosis/prompts")
+
+(defun find-prompt-repos (url &optional recursion-depth)
   (interactive (list 5))
-  (etv (pps (pen-str2list (e/cat (concat pen-prompt-repo-dir "/prompt-repositories.txt"))))))
+  (cl-loop for url in (pen-str2list (e/cat (concat pen-prompt-repo-dir "/prompt-repositories.txt")))
+           collect ))
 
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)
