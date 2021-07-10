@@ -209,16 +209,16 @@ Function names are prefixed with pen-pf- for easy searching"
                             (list
                              title
                              (ht-get yaml "doc")
-                             (if design-patterns (concat "design-patterns:\n" (pen-list-to-orglist design-patterns)))
-                             (if todo (concat "todo:" (pen-list-to-orglist todo)))
-                             (if aims (concat "aims:" (pen-list-to-orglist aims)))
-                             (if notes (concat "notes:" (pen-list-to-orglist notes)))
-                             (if past-versions (concat "past-versions:\n" (pen-list-to-orglist past-versions)))
-                             (if external-related (concat "external-related\n:" (pen-list-to-orglist external-related)))
-                             (if related-prompts (concat "related-prompts:\n" (pen-list-to-orglist related-prompts)))
-                             (if future-titles (concat "future-titles:\n" (pen-list-to-orglist future-titles)))
-                             (if preprocessors (concat "preprocessors:\n" (pen-list-to-orglist preprocessors)))
-                             (if postprocessor (concat "postprocessor:\n" (pen-list-to-orglist (list postprocessor))))))
+                             (if design-patterns (concat "\ndesign-patterns:\n" (pen-list-to-orglist design-patterns)))
+                             (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
+                             (if aims (concat "\naims:" (pen-list-to-orglist aims)))
+                             (if notes (concat "\nnotes:" (pen-list-to-orglist notes)))
+                             (if past-versions (concat "\npast-versions:\n" (pen-list-to-orglist past-versions)))
+                             (if external-related (concat "\nexternal-related\n:" (pen-list-to-orglist external-related)))
+                             (if related-prompts (concat "\nrelated-prompts:\n" (pen-list-to-orglist related-prompts)))
+                             (if future-titles (concat "\nfuture-titles:\n" (pen-list-to-orglist future-titles)))
+                             (if preprocessors (concat "\npreprocessors:\n" (pen-list-to-orglist preprocessors)))
+                             (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))))
                            "\n"))
 
                      ;; variables
