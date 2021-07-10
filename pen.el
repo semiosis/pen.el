@@ -71,10 +71,11 @@
      ,@body))
 
 (defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
-                                         max-tokens temperature top-p)
+                                         lm-command max-tokens temperature top-p)
   (let* ((finalprompt)
          (exports
-          (sh-construct-envs `(("PEN_MAX_TOKENS" ,max-tokens)
+          (sh-construct-envs `(("PEN_LM_COMMAND" ,lm-command)
+                               ("PEN_MAX_TOKENS" ,max-tokens)
                                ("PEN_TEMPERATURE" ,temperature)
                                ("PEN_TOP_P" ,top-p)
                                ("PEN_PROMPT" ,finalprompt)
@@ -87,11 +88,11 @@
                 (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
                (shcmd (concat
                        ,exports " "
-                       ,(if (sor prettifier)
+                       (if (sor ,prettifier)
                            (concat
                             (sh-construct-envs `(("DO_PRETTY_PRINT" ,(if prettify "y" ""))))
                             " ")
-                          "")
+                         "")
                        ,(flatten-once
                          (list
                           (list 'concat
@@ -279,7 +280,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                      func-name func-sym var-syms doc
                                      prompt iargs prettifier
                                      cache path var-slugs n-collate
-                                     filter completion
+                                     filter completion lm-command
                                      max-tokens temperature top-p)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
