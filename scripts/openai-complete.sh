@@ -31,6 +31,11 @@ test -n "$OPENAI_API_KEY" || {
 # Bash by default will remove trailing whitespace for command substitution
 PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT")"
 
+tf_prompt="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
+trap "rm \"$tf_prompt\" 2>/dev/null" 0
+
+prompt_bytes="$(cat "$tf_prompt" | wc -c)"
+
 # Default for OpenAI is davinci
 : "${PEN_ENGINE:="davinci"}"
 : "${PEN_ENGINE:="curie"}"
@@ -45,6 +50,9 @@ test -n "$prompt" || {
 : "${PEN_TOP_P:="1"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 
+tf_response="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
+trap "rm \"$tf_response\" 2>/dev/null" 0
+
 # Will it complain if PEN_STOP_SEQUENCE is empty?
 openai api \
     completions.create \
@@ -53,68 +61,32 @@ openai api \
     -M "$PEN_MAX_TOKENS" \
     -n "$PEN_N_COMPLETIONS" \
     --stop "$PEN_STOP_SEQUENCE" \
-    -p "$PEN_PROMPT"
+    -p "$PEN_PROMPT" > "$tf_response"
 
-    shfp="$(printf -- "%s\n" "$SHCODE" | sed -z 's/\n\+$//' | sed -z "s/\\n/\\\n/g" | tf sh)"
+response_bytes="$(cat "$tf_response" | wc -c)"
 
-    export UPDATE=y
-
-    response_fp="$(sh "$shfp" | uq | pen-chomp | tf txt)"
-
-    prompt_bytes="$(cat "$prompt_prompt_fp" | wc -c)"
-    response_bytes="$(cat "$response_fp" | wc -c)"
-
-    : "${gen_pos:="$((prompt_bytes + 1))"}"
-
-    seddelim=%
-    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC
-$(
-    printf -- "%s\n" "$stop_sequences" | while IFS=$'\n' read -r s; do
-        printf -- "%s" "sed -z 's${seddelim}${s}.*${seddelim}${seddelim}' |"
-    done
-)
-cat
-HEREDOC
-
-    tail -c +$gen_pos "$response_fp" | {
-        if ( exec 0</dev/null; cat "$prompt_fp" | pen-yq-test chomp-start; ); then
-            sed -z 's/^\n\+//' | sed -z 's/^\s\+//'
+tail -c +$gen_pos "$response_fp" | {
+    if ( exec 0</dev/null; cat "$prompt_fp" | pen-yq-test chomp-start; ); then
+        sed -z 's/^\n\+//' | sed -z 's/^\s\+//'
+    else
+        cat
+    fi |
+        if ( exec 0</dev/null; cat "$prompt_fp" | pen-yq-test chomp-end; ); then
+            sed -z 's/\n\+$//' | sed -z 's/\s\+$//'
         else
             cat
-        fi |
-            if ( exec 0</dev/null; cat "$prompt_fp" | pen-yq-test chomp-end; ); then
-                sed -z 's/\n\+$//' | sed -z 's/\s\+$//'
+        fi | {
+            eval "$stop_sequence_trimmer"
+        } | {
+            if test -n "$postprocessor"; then
+                eval "$postprocessor"
             else
                 cat
-            fi | {
-                eval "$stop_sequence_trimmer"
-            } | {
-                if test -n "$postprocessor"; then
-                    eval "$postprocessor"
-                else
-                    cat
-                fi
-            } |
-                if test "$DO_PRETTY_PRINT" = y && test -n "$prettifier"; then
-                    eval "$prettifier"
-                else
-                    cat
-                fi
-    }
-
-    return 0
+            fi
+        } |
+            if test "$DO_PRETTY_PRINT" = y && test -n "$prettifier"; then
+                eval "$prettifier"
+            else
+                cat
+            fi
 }
-
-if test "$USE_CONVERSATION_MODE" = y && test "$conversation_mode" = "true"; then
-    inputargpos="$(( $# + 1 ))"
-
-    while IFS=$'\n' read -r line; do
-        out="$(repl_run "$@" "$line" | awk 1)"
-        printf -- "%s\n" "$out"
-
-        prompt+="$out\n$first_stop_sequence\n"
-        prompt+="$repeater"
-    done
-else
-    repl_run "$@"
-fi
