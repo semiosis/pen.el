@@ -80,6 +80,7 @@
       ,doc
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
+             ;; preprocess the values of the parameters
              (vals
               (cl-loop
                for tp in
@@ -91,6 +92,7 @@
                  (if pp
                      (sn pp initval)
                    initval))))
+             ;; template the parameters into the prompt
              (i 1)
              (final-prompt
               (progn
@@ -99,8 +101,10 @@
                  (setq final-prompt (string-replace (format "<%d>" i) val final-prompt))
                  (setq i (+ 1 i)))
                 final-prompt))
+             ;; check for cache update
              (pen-sh-update
               (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+             ;; construct the full command
              (shcmd
               (concat
                ;; All parameters are sent as environment variables
@@ -122,6 +126,7 @@
              ;;   for vs in ',var-syms
              ;;   collect
              ;;   ))
+             ;; run the completion command and collect the result
              (result
               (chomp
                (mapconcat
