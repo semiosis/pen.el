@@ -148,13 +148,17 @@ delim is used to guarantee the function returns multiple matches per line
     'identity
     (cl-loop for tp in varval-tuples
              collect
-             (if tp
-                 (concat
-                  (car tp)
-                  "="
-                  (if (cadr tp)
-                      (pen-q (cadr tp))
-                    "")))))))
+             (let ((lhs (car tp))
+                   (rhs (cadr tp)))
+               (if tp
+                   (concat
+                    lhs
+                    "="
+                    (if rhs
+                        (if (booleanp rhs)
+                            "y"
+                          (pen-q rhs))
+                      ""))))))))
 
 (defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
