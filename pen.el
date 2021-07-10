@@ -26,6 +26,7 @@
   "Keymap for `pen.el'.")
 (defvar-local pen.el nil)
 
+;; Zone plate for Laria
 (defvar pen-current-lighter " ⊚")
 (defun pen-compose-mode-line ()
   ;; Only change every second
