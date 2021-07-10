@@ -87,9 +87,9 @@
                for tp in
                (-zip-fill nil ',var-syms ',preprocessors)
                collect
-               (let ((sym (car tp))
-                     (pp (cdr tp))
-                     (initval (eval sym)))
+               (let* ((sym (car tp))
+                      (pp (cdr tp))
+                      (initval (eval sym)))
                  (if pp
                      (sn pp initval)
                    initval))))
