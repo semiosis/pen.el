@@ -74,7 +74,8 @@
 (defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
                                          lm-command stop-sequences stop-sequence max-tokens temperature top-p engine
                                          chomp-start chomp-end
-                                         preprocessors postprocessor)
+                                         preprocessors postprocessor
+                                         n-completions)
   (eval
    `(cl-defun ,func-sym ,var-syms
       ,doc
@@ -121,7 +122,8 @@
                   ("PEN_STOP_SEQUENCE" ,,stop-sequence)
                   ("PEN_TOP_P" ,,top-p)
                   ;; ("PEN_PROMPT" ,finalprompt)
-                  ("PEN_CACHE" ,,cache)))
+                  ("PEN_CACHE" ,,cache)
+                  ("PEN_N_COMPLETIONS" ,,n-completions)))
                " "
                "lm-complete"))
              ;; http://cl-cookbook.sourceforge.net/loop.html
@@ -144,6 +146,7 @@
                    (let ((ret (pen-sn shcmd)))
                      (if (and (sor ,prettifier)
                               prettify)
+                         ;; TODO Also handle PEN_N_COMPLETIONS
                          (setq ret (pen-sn ,prettifier ret)))
                      (message (concat ,func-name " done " (int-to-string i)))
                      ret)))
