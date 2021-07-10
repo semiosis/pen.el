@@ -97,6 +97,10 @@ Takes into account the current file name."
   (let ((print-escape-newlines t))
     (s-join " " (mapcar 'prin1-to-string strings))))
 
+(defun pen-str2list (s)
+  "Convert a newline delimited string to list."
+  (split-string s "\n"))
+
 (defun list2str (&rest l)
   "join the string representation of elements of a given list into a single string with newline delimiters"
   (if (equalp 1 (length l))
