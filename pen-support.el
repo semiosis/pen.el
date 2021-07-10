@@ -1,3 +1,9 @@
+(defun e/cat (path)
+  "Return the contents of FILENAME."
+  (with-temp-buffer
+    (insert-file-contents path)
+    (buffer-string)))
+
 (defun variable-p (s)
   (and (not (eq s nil))
        (boundp s)))
