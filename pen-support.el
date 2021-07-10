@@ -144,12 +144,15 @@ delim is used to guarantee the function returns multiple matches per line
 (defun sh-construct-envs (varval-tuples)
   (s-join
    " "
-   (cl-loop for tp in varval-tuples
-            collect
-            (concat
-             (car tp)
-             "="
-             (pen-q (cadr tp))))))
+   (-filter
+    'identity
+    (cl-loop for tp in varval-tuples
+             collect
+             (if tp
+                 (concat
+                  (car tp)
+                  "="
+                  (pen-q (cadr tp))))))))
 
 (defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
