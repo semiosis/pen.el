@@ -1,0 +1,245 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/d5bcb52b/
+"prompts"	src/pen-prompt-tablist.el	/^(defcmdmode "prompts" "tablist")$/;"	f
+-filter-not-empty-string	src/pen-support.el	/^(defun -filter-not-empty-string (l)$/;"	f
+HEREDOC	scripts/openai-complete.sh	/^    IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
+HEREDOC	scripts/openai-complete.sh	/^    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC$/;"	h
+HEREDOC	scripts/pen-nsfa	/^IFS= read -r -d '' scriptcode <<'HEREDOC'$/;"	h
+HEREDOC	scripts/prompts-details	/^IFS= read -r -d '' jqsrc <<HEREDOC$/;"	h
+add-event-modifier	src/pen-example-config.el	/^(defun add-event-modifier (string e)$/;"	f
+agi	scripts/setup.sh	/^agi() {$/;"	f
+b	scripts/nlsh.py	/^def b(c, inputstring="", timeout=0):$/;"	f
+beginning-of-line-point	src/pen-core.el	/^(defun beginning-of-line-point ()$/;"	f
+buffer-file-path	src/pen-library.el	/^(defun buffer-file-path ()$/;"	f
+camille-complete	src/pen-example-config.el	/^(defalias 'camille-complete 'pen-run-prompt-function)$/;"	f
+chomp	src/pen-support.el	/^(defun chomp (str)$/;"	f
+cmd	scripts/cmd	/^cmd() {$/;"	f
+cmdd	scripts/cmdd	/^cmdd() {$/;"	f
+comint-quick	src/pen-contrib.el	/^(defun comint-quick (cmd &optional dir)$/;"	f
+command	scripts/nlsh.py	/^    command = b(postprocessor, command)[0]$/;"	v
+command	scripts/nlsh.py	/^    command = result.choices[0]["text"].strip()$/;"	v
+command-execute	src/pen-global-prefix.el	/^(defun command-execute (cmd &optional record-flag keys special)$/;"	f
+company-pen--grab-symbol	src/pen-company.el	/^(defun company-pen--grab-symbol ()$/;"	f
+company-pen-filetype	src/pen-company.el	/^(defun company-pen-filetype (command &optional arg &rest ignored)$/;"	f
+company-pen-filetype--candidates	src/pen.el	/^(defun company-pen-filetype--candidates (prefix)$/;"	f
+company-pen-filetype--prefix	src/pen-company.el	/^(defun company-pen-filetype--prefix ()$/;"	f
+completing-read-hist	src/pen-support.el	/^(defun completing-read-hist (prompt &optional initial-input histvar default-value)$/;"	f
+create-tablist	src/pen-prompt-tablist.el	/^(defun create-tablist (cmd-or-csv-path &optional modename has-header col-sizes-string wd)$/;"	f
+current-global-prefix-arg	src/pen-global-prefix.el	/^(defset current-global-prefix-arg nil)$/;"	f
+current-major-mode-string	src/pen-support.el	/^(defun current-major-mode-string ()$/;"	f
+cwd	src/pen-support.el	/^(defun cwd ()$/;"	f
+data	scripts/nlsh.py	/^    data = f.read()$/;"	v
+default-generation-settings	src/pen-openai.el	/^(defset default-generation-settings$/;"	f
+defcmdmode	src/pen-prompt-tablist.el	/^(defmacro defcmdmode (cmd &optional cmdtype)$/;"	f
+define-prompt-function	src/pen.el	/^(defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache pat/;"	f
+defpf	src/pen.el	/^(defmacro defpf (&rest body)$/;"	f
+defset	src/pen-support.el	/^(defmacro defset (symbol value &optional documentation)$/;"	f
+detect-language	src/pen-support.el	/^(defun detect-language (&optional detect buffer-not-selection)$/;"	f
+e/cat	src/pen-support.el	/^(defun e\/cat (path)$/;"	f
+etv	src/pen-support.el	/^(defun etv (o)$/;"	f
+examplary-asktutor	in-development/examplary-library.el	/^(defun examplary-asktutor (broader-topic specific-topic question)$/;"	f
+f-basename	src/pen-library.el	/^(defun f-basename (path)$/;"	f
+f-mant	src/pen-library.el	/^(defun f-mant (path)$/;"	f
+f-realpath	src/pen-library.el	/^(defun f-realpath (path &optional dir)$/;"	f
+filename	scripts/nlsh.py	/^filename = "\/home\/shane\/source\/git\/semiosis\/prompts\/prompts\/nlsh-shell-for-given-os.prom/;"	v
+filter-selected-region-through-function	src/pen-support.el	/^(defun filter-selected-region-through-function (fun)$/;"	f
+filter-selection	src/pen-support.el	/^(defalias 'filter-selection 'filter-selected-region-through-function)$/;"	f
+find-prompt-repos	in-development/pen-discovery.el	/^(defun find-prompt-repos (url &optional recursion-depth)$/;"	f
+flatten-once	src/pen-support.el	/^(defun flatten-once (list-of-lists)$/;"	f
+full-path	src/pen-library.el	/^(defalias 'full-path 'buffer-file-path)$/;"	f
+function-key-map	src/pen-example-config.el	/^(define-key function-key-map (kbd "C-M-6") 'superify) ;For GUI$/;"	f
+function-key-map	src/pen-example-config.el	/^(define-key function-key-map (kbd "C-M-\\\\") 'hyperify)$/;"	f
+function-key-map	src/pen-example-config.el	/^(define-key function-key-map (kbd "C-M-^") 'superify)$/;"	f
+function-key-map	src/pen-example-config.el	/^(define-key function-key-map (kbd "C-^") 'superify)$/;"	f
+fz	src/pen-support.el	/^(defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props)$/;"	f
+fz-completion-second-of-tuple-annotation-function	src/pen-support.el	/^(defun fz-completion-second-of-tuple-annotation-function (s)$/;"	f
+fz-pen-counsel	src/pen-ivy.el	/^(defun fz-pen-counsel ()$/;"	f
+gen-counsel-function	src/pen-ivy.el	/^(defmacro gen-counsel-function (cmd action)$/;"	f
+gen-counsel-generator-function	src/pen-ivy.el	/^(defmacro gen-counsel-generator-function (cmd)$/;"	f
+get-dir	src/pen-support.el	/^(defun get-dir ()$/;"	f
+get-ext-for-lang	src/pen-support.el	/^(defun get-ext-for-lang (langstr)$/;"	f
+get-ext-for-mode	src/pen-support.el	/^(defun get-ext-for-mode (&optional m)$/;"	f
+get-path	src/pen-library.el	/^(defun get-path (&optional soft no-create-path for-clipboard semantic-path)$/;"	f
+get-path-ext-from-mode-alist	src/pen-support.el	/^(defalias 'get-path-ext-from-mode-alist 'get-ext-for-mode)$/;"	f
+get-path-nocreate	src/pen-library.el	/^(defun get-path-nocreate ()$/;"	f
+get-path-semantic	src/pen-library.el	/^(defun get-path-semantic ()$/;"	f
+get-point-start-of-nth-next-line	src/pen-core.el	/^(defun get-point-start-of-nth-next-line (n)$/;"	f
+get-point-start-of-nth-previous-line	src/pen-core.el	/^(defun get-point-start-of-nth-previous-line (n)$/;"	f
+glob	src/pen-support.el	/^(defun glob (pattern &optional dir)$/;"	f
+global-argument	src/pen-global-prefix.el	/^(defun global-argument ()$/;"	f
+global-argument--description	src/pen-global-prefix.el	/^(defun global-argument--description ()$/;"	f
+global-argument--mode	src/pen-global-prefix.el	/^(defun global-argument--mode ()$/;"	f
+global-argument--preserve	src/pen-global-prefix.el	/^(defun global-argument--preserve ()$/;"	f
+global-argument-map	src/pen-global-prefix.el	/^(defset global-argument-map$/;"	f
+global-argument-more	src/pen-global-prefix.el	/^(defun global-argument-more (arg)$/;"	f
+global-digit-argument	src/pen-global-prefix.el	/^(defun global-digit-argument (arg)$/;"	f
+global-map	src/pen-example-config.el	/^(define-key global-map (kbd "C-M-6") nil)             ;For GUI$/;"	f
+global-map	src/pen-example-config.el	/^(define-key global-map (kbd "C-M-\\\\") nil) ;Ensure that this bindings isnt taken$/;"	f
+global-map	src/pen-global-prefix.el	/^(define-key global-map (kbd "H-$") 'test-global-prefix)$/;"	f
+global-map	src/pen-global-prefix.el	/^(define-key global-map (kbd "H-u") 'global-argument)$/;"	f
+global-negative-argument	src/pen-global-prefix.el	/^(defun global-negative-argument (arg)$/;"	f
+global-prefix-arg	src/pen-global-prefix.el	/^(defset global-prefix-arg nil)$/;"	f
+global-prefix-command--last-echo	src/pen-global-prefix.el	/^(defset global-prefix-command--last-echo nil)$/;"	f
+global-prefix-command--needs-update	src/pen-global-prefix.el	/^(defset global-prefix-command--needs-update nil)$/;"	f
+global-prefix-command-echo-keystrokes-functions	src/pen-global-prefix.el	/^(defset global-prefix-command-echo-keystrokes-functions nil$/;"	f
+global-prefix-command-preserve-state	src/pen-global-prefix.el	/^(defun global-prefix-command-preserve-state ()$/;"	f
+global-prefix-command-preserve-state-hook	src/pen-global-prefix.el	/^(defset global-prefix-command-preserve-state-hook nil$/;"	f
+global-prefix-command-update	src/pen-global-prefix.el	/^(defun global-prefix-command-update ()$/;"	f
+gpt-test-haskell	src/pen-right-click-menu.el	/^(defun gpt-test-haskell ()$/;"	f
+hyperify	src/pen-example-config.el	/^(defun hyperify (prompt)$/;"	f
+ii-send-buffer	in-development/inf-pen.el	/^(defun ii-send-buffer ()$/;"	f
+ii-send-buffer-and-go	in-development/inf-pen.el	/^(defun ii-send-buffer-and-go ()$/;"	f
+ii-send-last-sexp	in-development/inf-pen.el	/^(defun ii-send-last-sexp ()$/;"	f
+ii-send-last-sexp-and-go	in-development/inf-pen.el	/^(defun ii-send-last-sexp-and-go ()$/;"	f
+ii-send-region	in-development/inf-pen.el	/^(defun ii-send-region (start end)$/;"	f
+ii-send-region-and-go	in-development/inf-pen.el	/^(defun ii-send-region-and-go (start end)$/;"	f
+inf-pen	in-development/inf-pen.el	/^(defgroup inf-pen nil$/;"	f
+inf-pen	in-development/inf-pen.el	/^(defun inf-pen (cmd &optional dont-switch-p)$/;"	f
+inf-pen--shell-output-buffer	in-development/inf-pen.el	/^(defvar inf-pen--shell-output-buffer "")$/;"	f
+inf-pen--shell-output-filter	in-development/inf-pen.el	/^(defun inf-pen--shell-output-filter (string)$/;"	f
+inf-pen--shell-output-filter-in-progress	in-development/inf-pen.el	/^(defvar inf-pen--shell-output-filter-in-progress nil)$/;"	f
+inf-pen-buffer	in-development/inf-pen.el	/^(defvar inf-pen-buffer)$/;"	f
+inf-pen-command	in-development/inf-pen.el	/^(defcustom inf-pen-command "ii"$/;"	f
+inf-pen-fz-contacts	in-development/inf-pen.el	/^(defun inf-pen-fz-contacts ()$/;"	f
+inf-pen-fz-contacts-and-threads	in-development/inf-pen.el	/^(defun inf-pen-fz-contacts-and-threads ()$/;"	f
+inf-pen-fz-contacts-and-threads-sh	in-development/inf-pen.el	/^(defun inf-pen-fz-contacts-and-threads-sh ()$/;"	f
+inf-pen-fz-contacts-sh	in-development/inf-pen.el	/^(defun inf-pen-fz-contacts-sh ()$/;"	f
+inf-pen-fz-threads	in-development/inf-pen.el	/^(defun inf-pen-fz-threads ()$/;"	f
+inf-pen-fz-threads-sh	in-development/inf-pen.el	/^(defun inf-pen-fz-threads-sh ()$/;"	f
+inf-pen-get-completions-at-point	in-development/inf-pen.el	/^(defun inf-pen-get-completions-at-point (prefix)$/;"	f
+inf-pen-get-result-from-inf	in-development/inf-pen.el	/^(defun inf-pen-get-result-from-inf (code)$/;"	f
+inf-pen-history	in-development/inf-pen.el	/^(defun inf-pen-history (contact)$/;"	f
+inf-pen-mode	in-development/inf-pen.el	/^(define-derived-mode inf-pen-mode comint-mode "Inferior ii mode"$/;"	f
+inf-pen-mode-hook	in-development/inf-pen.el	/^(defcustom inf-pen-mode-hook nil$/;"	f
+inf-pen-mode-map	in-development/inf-pen.el	/^(defvar inf-pen-mode-map$/;"	f
+inf-pen-prompt	in-development/inf-pen.el	/^(defvar inf-pen-prompt "\\n> \\\\|\\n.+> "$/;"	f
+inf-pen-shell-completion-complete-at-point	in-development/inf-pen.el	/^(defun inf-pen-shell-completion-complete-at-point ()$/;"	f
+initvar	src/pen-support.el	/^(defmacro initvar (symbol &optional value)$/;"	f
+internal-echo-keystrokes-prefix	src/pen-global-prefix.el	/^(defun internal-echo-keystrokes-prefix ()$/;"	f
+lang-to-mode	src/pen-support.el	/^(defun lang-to-mode (&optional langstr)$/;"	f
+list-of-sh-operating-systems	src/pen-contrib.el	/^(defset list-of-sh-operating-systems '($/;"	f
+list2str	src/pen-support.el	/^(defun list2str (&rest l)$/;"	f
+maybe-lsp	src/pen-prompt-description.el	/^(defun maybe-lsp ()$/;"	f
+mode-to-lang	src/pen-support.el	/^(defun mode-to-lang (&optional modesym)$/;"	f
+my-completion-at-point	src/pen.el	/^(defun my-completion-at-point ()$/;"	f
+my-completion-engine	src/pen.el	/^(defvar my-completion-engine 'company-pen-filetype)$/;"	f
+my-counsel--format-command	src/pen-ivy.el	/^(defun my-counsel--format-command (cmd extra-args needle)$/;"	f
+nbfs	src/pen-support.el	/^(defalias 'nbfs 'new-buffer-from-string)$/;"	f
+new-buffer-from-o	src/pen-support.el	/^(defun new-buffer-from-o (o)$/;"	f
+new-buffer-from-string	src/pen-support.el	/^(defun new-buffer-from-string (&optional contents bufname mode nodisplay)$/;"	f
+nlsh-os	src/pen-contrib.el	/^(defun nlsh-os (os)$/;"	f
+noupd	src/pen-support.el	/^(defmacro noupd (&rest body)$/;"	f
+ntimes	src/pen-support.el	/^(defmacro ntimes (n &rest body)$/;"	f
+ogprompt	scripts/nlsh.py	/^ogprompt = ogprompt.replace("<1>", os)$/;"	v
+ogprompt	scripts/nlsh.py	/^ogprompt = yaml.load(data)["prompt"]$/;"	v
+openai-models	src/pen-openai.el	/^(defset openai-models$/;"	f
+org-brain-asktutor	src/pen-brain.el	/^(defun org-brain-asktutor (question)$/;"	f
+org-brain-current-brain	src/pen-brain.el	/^(defun org-brain-current-brain ()$/;"	f
+org-brain-describe-topic	src/pen-brain.el	/^(defun org-brain-describe-topic ()$/;"	f
+org-brain-is-index-name	src/pen-brain.el	/^(defun org-brain-is-index-name (s)$/;"	f
+org-brain-parent-name	src/pen-brain.el	/^(defun org-brain-parent-name ()$/;"	f
+org-brain-pf-topic	src/pen-brain.el	/^(defun org-brain-pf-topic (&optional short)$/;"	f
+org-brain-show-topic	src/pen-brain.el	/^(defun org-brain-show-topic ()$/;"	f
+org-brain-visualize-mode-map	src/pen-example-config.el	/^(define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)$/;"	f
+org-brain-visualize-mode-map	src/pen-example-config.el	/^(define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)$/;"	f
+org-brain-visualize-mode-map	src/pen-example-config.el	/^(define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)$/;"	f
+os	scripts/nlsh.py	/^os = sys.argv[1]$/;"	v
+pen	src/pen.el	/^(define-minor-mode pen$/;"	f
+pen-ask-documentation	src/pen-contrib.el	/^(defun pen-ask-documentation (thing query)$/;"	f
+pen-broader-topic	src/pen-library.el	/^(defun pen-broader-topic ()$/;"	f
+pen-complete-long	src/pen.el	/^(defun pen-complete-long (preceding-text &optional tv)$/;"	f
+pen-compose-mode-line	src/pen.el	/^(defun pen-compose-mode-line ()$/;"	f
+pen-current-lighter	src/pen.el	/^(defvar pen-current-lighter " ⊚")$/;"	f
+pen-doc-queries	src/pen-contrib.el	/^(defset pen-doc-queries$/;"	f
+pen-filter-with-prompt-function	src/pen.el	/^(defun pen-filter-with-prompt-function ()$/;"	f
+pen-generate-prompt-functions	src/pen.el	/^(defun pen-generate-prompt-functions ()$/;"	f
+pen-ivy-completing-read	src/pen-support.el	/^(defun pen-ivy-completing-read (prompt collection$/;"	f
+pen-list-to-orglist	src/pen.el	/^(defun pen-list-to-orglist (l)$/;"	f
+pen-map	src/pen-example-config.el	/^(define-key pen-map (kbd "H-P") 'pen-complete-long)$/;"	f
+pen-map	src/pen-example-config.el	/^(define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)$/;"	f
+pen-map	src/pen-example-config.el	/^(define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)$/;"	f
+pen-map	src/pen-example-config.el	/^(define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)$/;"	f
+pen-map	src/pen-example-config.el	/^(define-key pen-map (kbd "H-s") 'fz-pen-counsel)$/;"	f
+pen-map	src/pen-example-config.el	/^(define-key pen-map (kbd "M-1") #'company-pen-filetype)$/;"	f
+pen-map	src/pen.el	/^(defvar pen-map (make-sparse-keymap)$/;"	f
+pen-nlsh-histdir	src/pen-contrib.el	/^(defcustom pen-nlsh-histdir ""$/;"	f
+pen-nsfa	src/pen-contrib.el	/^(defun pen-nsfa (cmd &optional dir)$/;"	f
+pen-org-brain-current-topic	src/pen-brain.el	/^(defun pen-org-brain-current-topic (&optional for-external-searching)$/;"	f
+pen-preceding-text	src/pen-core.el	/^(defun pen-preceding-text ()$/;"	f
+pen-preceding-text-line	src/pen-core.el	/^(defun pen-preceding-text-line ()$/;"	f
+pen-prompt-directory	src/pen-custom.el	/^(defcustom pen-prompt-directory ""$/;"	f
+pen-prompt-discovery-recursion-depth	src/pen-custom.el	/^(defcustom pen-prompt-discovery-recursion-depth ""$/;"	f
+pen-prompt-functions	src/pen.el	/^(defset pen-prompt-functions nil)$/;"	f
+pen-prompt-functions-meta	src/pen.el	/^(defset pen-prompt-functions-meta nil)$/;"	f
+pen-prompt-library-dir	src/pen-custom.el	/^(defcustom pen-prompt-library-dir ""$/;"	f
+pen-prompts-tablist-data-command	src/pen-prompt-tablist.el	/^(defvar pen-prompts-tablist-data-command "oci prompts-details -csv")$/;"	f
+pen-prompts-tablist-meta	src/pen-prompt-tablist.el	/^(defvar pen-prompts-tablist-meta '("prompts" t "30 30 20 10 15 15 15 10"))$/;"	f
+pen-prompts-tablist-start	src/pen-prompt-tablist.el	/^(defun pen-prompts-tablist-start ()$/;"	f
+pen-q	src/pen-support.el	/^(defun pen-q (&rest strings)$/;"	f
+pen-run-prompt-function	src/pen.el	/^(defun pen-run-prompt-function ()$/;"	f
+pen-selected-text	src/pen-support.el	/^(defun pen-selected-text ()$/;"	f
+pen-sh-update	src/pen-custom.el	/^(defcustom pen-sh-update ""$/;"	f
+pen-sn	src/pen-support.el	/^(defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbu/;"	f
+pen-snc	src/pen-support.el	/^(defun pen-snc (cmd &optional stdin)$/;"	f
+pen-str2list	src/pen-support.el	/^(defun pen-str2list (s)$/;"	f
+pen-surrounding-text	src/pen-core.el	/^(defun pen-surrounding-text (&optional window-line-size)$/;"	f
+pen-thing-at-point	src/pen-support.el	/^(defun pen-thing-at-point (&optional only-if-selected)$/;"	f
+pen-topic	src/pen-library.el	/^(defun pen-topic (&optional short)$/;"	f
+pen-tutor-common-questions	src/pen-contrib.el	/^(defvar pen-tutor-common-questions$/;"	f
+pen-tutor-mode-assist	src/pen-contrib.el	/^(defun pen-tutor-mode-assist (query)$/;"	f
+pen-yaml-test	src/pen.el	/^(defun pen-yaml-test (yaml key)$/;"	f
+pen.el	src/pen.el	/^(defvar-local pen.el nil)$/;"	f
+popup-max-height	src/pen-right-click-menu.el	/^(defset popup-max-height 30)$/;"	f
+postprocessor	scripts/nlsh.py	/^postprocessor = yaml.load(data)["postprocessor"].strip()$/;"	v
+pps	src/pen-support.el	/^(defalias 'pps 'pp-to-string)$/;"	f
+preserve-trailing-whitespace	src/pen-support.el	/^(defun preserve-trailing-whitespace (fun s)$/;"	f
+prompt	scripts/nlsh.py	/^    prompt = ogprompt.rstrip() + "\\n" + template.format(request).rstrip()$/;"	v
+prompt	scripts/nlsh.py	/^    prompt = prompt.strip() + " " + command + "\\n###\\n"$/;"	v
+prompt-description-mode	src/pen-prompt-description.el	/^(define-derived-mode prompt-description-mode yaml-mode "Prompt"$/;"	f
+prompts-details-get-row	scripts/prompts-details	/^prompts-details-get-row() {$/;"	f
+ptw	src/pen-support.el	/^(defalias 'ptw 'preserve-trailing-whitespace)$/;"	f
+pull-prompt-repos	in-development/pen-discovery.el	/^(defun pull-prompt-repos ()$/;"	f
+read-string-hist	src/pen-support.el	/^(defalias 'read-string-hist 'completing-read-hist)$/;"	f
+region-or-buffer-string	src/pen-support.el	/^(defun region-or-buffer-string ()$/;"	f
+repl_run	scripts/openai-complete.sh	/^repl_run() {$/;"	f
+request	scripts/nlsh.py	/^    request = input(click.style("nlsh> ", "red", bold=True))$/;"	v
+result	scripts/nlsh.py	/^    result = openai.Completion.create($/;"	v
+s-preserve-trailing-whitespace	src/pen-support.el	/^(defun s-preserve-trailing-whitespace (s-new s-old)$/;"	f
+save-temp-if-no-file	src/pen-library.el	/^(defun save-temp-if-no-file ()$/;"	f
+scrape	src/pen-support.el	/^(defun scrape (re s &optional delim)$/;"	f
+second	src/pen-support.el	/^(defalias 'second 'cadr)$/;"	f
+selected	src/pen-support.el	/^(defun selected ()$/;"	f
+selected-keymap	src/pen-example-config.el	/^(define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)$/;"	f
+selected-keymap	src/pen-example-config.el	/^(define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)$/;"	f
+sh-construct-envs	src/pen-support.el	/^(defun sh-construct-envs (varval-tuples)$/;"	f
+sh-construct-exports	src/pen-support.el	/^(defun sh-construct-exports (varval-tuples)$/;"	f
+shut-up-c	src/pen-support.el	/^(defmacro shut-up-c (&rest body)$/;"	f
+slugify	src/pen-support.el	/^(defun slugify (input &optional joinlines length)$/;"	f
+slurp-file	src/pen-support.el	/^(defun slurp-file (filePath)$/;"	f
+sor	src/pen-support.el	/^(defalias 'sor 'string-first-nonnil-nonempty-string)$/;"	f
+start-ii	in-development/inf-pen.el	/^(defun start-ii ()$/;"	f
+start-ii-if-not-started	in-development/inf-pen.el	/^(defun start-ii-if-not-started ()$/;"	f
+start-ii-if-not-started-wait	in-development/inf-pen.el	/^(defun start-ii-if-not-started-wait ()$/;"	f
+stdin_exists	scripts/tidy-prompt	/^stdin_exists() {$/;"	f
+str	src/pen-support.el	/^(defun str (thing)$/;"	f
+string-empty-or-nil-p	src/pen-support.el	/^(defun string-empty-or-nil-p (s)$/;"	f
+string-first-nonnil-nonempty-string	src/pen-support.el	/^(defun string-first-nonnil-nonempty-string (&rest ss)$/;"	f
+string-not-empty-nor-nil-p	src/pen-support.el	/^(defun string-not-empty-nor-nil-p (s)$/;"	f
+superify	src/pen-example-config.el	/^(defun superify (prompt)$/;"	f
+switch-to-inf-pen	in-development/inf-pen.el	/^(defun switch-to-inf-pen (eob-p)$/;"	f
+tablist-buffer-from-csv-string	src/pen-prompt-tablist.el	/^(defun tablist-buffer-from-csv-string (csvstring &optional has-header col-sizes)$/;"	f
+template	scripts/nlsh.py	/^template = yaml.load(data)["repeater"]$/;"	v
+test-global-prefix	src/pen-global-prefix.el	/^(defun test-global-prefix ()$/;"	f
+try	src/pen-support.el	/^(defmacro try (&rest list-of-alternatives)$/;"	f
+try-cascade	src/pen-support.el	/^(defun try-cascade (list-of-alternatives)$/;"	f
+tryelse	src/pen-support.el	/^(defmacro tryelse (thing &optional otherwise)$/;"	f
+turn-on-comint-history	src/pen-contrib.el	/^(defun turn-on-comint-history (history-file)$/;"	f
+upd	src/pen-support.el	/^(defmacro upd (&rest body)$/;"	f
+variable-p	src/pen-support.el	/^(defun variable-p (s)$/;"	f
+vector2list	src/pen-support.el	/^(defun vector2list (v)$/;"	f
+xc	src/pen-support.el	/^(defun xc (&optional s silent)$/;"	f

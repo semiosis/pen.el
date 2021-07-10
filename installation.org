@@ -23,13 +23,13 @@ There is an example of one way to provide the key.
 ** Emacs =.emacs= / =init.el=
 This is the base requirements for a vanilla emacs.
 
-[[./init.el]]
+[[./src/init.el]]
 
 *** Configure =pen.el=
 See above =init.el= file for an example of where to place your config.
 
 **** Example emacs config
-[[./pen-example-config.el]]
+[[./src/pen-example-config.el]]
 
 ** Running =pen.el=
 This is tested on Debian 10 and Ubuntu 20.04.
