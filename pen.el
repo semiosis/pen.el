@@ -211,6 +211,9 @@ Function names are prefixed with pen-pf- for easy searching"
                              (if aims
                                  (concat "aims:"
                                          (pen-list-to-orglist aims)))
+                             (if notes
+                                 (concat "notes:"
+                                         (pen-list-to-orglist notes)))
                              (if past-versions
                                  (concat "past-versions:"
                                          (pen-list-to-orglist past-versions)))
