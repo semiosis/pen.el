@@ -86,12 +86,12 @@
         (let* ((pen-sh-update
                 (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
                (shcmd (concat
-                       exports " "
-                       (if (sor prettifier)
+                       ,exports " "
+                       ,(if (sor prettifier)
                            (concat
                             (sh-construct-envs `(("DO_PRETTY_PRINT" ,(if prettify "y" ""))))
                             " ")
-                         "")
+                          "")
                        ,(flatten-once
                          (list
                           (list 'concat
