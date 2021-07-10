@@ -81,8 +81,8 @@
              (final-prompt
               (progn
                 (cl-loop
-                 for vs in ,var-slugs do
-                 (setq final-prompt (string-replace (format "<%d>" i) vs final-prompt)))
+                 for vs in ',var-syms do
+                 (setq final-prompt (string-replace (format "<%d>" i) (eval vs) final-prompt)))
                 final-prompt))
              (pen-sh-update
               (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
