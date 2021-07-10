@@ -196,7 +196,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (problems (vector2list (ht-get yaml "problems")))
                      (design-patterns (vector2list (ht-get yaml "design-patterns")))
                      (todo (vector2list (ht-get yaml "todo")))
-                     (notes (ht-get yaml "notes"))
+                     (notes (vector2list (ht-get yaml "notes")))
                      (aims (vector2list (ht-get yaml "aims")))
                      (past-versions (vector2list (ht-get yaml "past-versions")))
                      (external-related (vector2list (ht-get yaml "external-related")))
