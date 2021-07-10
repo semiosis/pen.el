@@ -4,7 +4,7 @@ development, discovery and usage of prompts to
 a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 
 - Create elisp functions based on "Language Model" prompts
-- Share and discover prompts
+- Share and discover prompts (=P2P=)
   - http://github.com/semiosis/prompts/blob/master/README.org
   - http://github.com/semiosis/prompts/blob/master/prompt-repositories.txt
 - Chain prompt functions together using keyboard macros and functions
