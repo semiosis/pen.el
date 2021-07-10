@@ -13,4 +13,4 @@ git reset --hard origin/master;
 git pull
 
 cd
-./run
+./run.sh
