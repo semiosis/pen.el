@@ -45,66 +45,17 @@ test -n "$prompt" || {
 : "${PEN_TOP_P:="1"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 
-ogprompt="$prompt"
-
-prompt_prompt_fp="$(printf -- "%s" "$prompt" | pen-chomp | tf)"
-
-if test "$USE_CONVERSATION_MODE" = "y"; then
-    i=1
-    for var in "$@"
-    do
-        # Ensure that nothing is chomped from the arguments
-        printf -- "%s" "${var}" | uq -f | IFS= read -r -d '' var
-        rlprompt="$(p "$rlprompt" | template -$i "$var")"
-
-        # cmd-nice template -$i "$var"
-        ((i++))
-    done
-fi
-
-repl_run() {
-    # Choose to reset after each entry.
-    # I should do this by default because of the prompt size.
-    # It can't grow beyond a particular length.
-    prompt="$ogprompt"
-
-    i=1
-    for var in "$@"
-    do
-        # Ensure that nothing is chomped from the arguments
-        printf -- "%s" "${var}" | uq -f | IFS= read -r -d '' var
-        prompt="$(p "$prompt" | template -$i "$var")"
-
-        # cmd-nice template -$i "$var"
-        ((i++))
-    done
-
-    printf -- "%s" "$prompt" | pen-chomp > "$prompt_prompt_fp"
-
-    gen_pos="$(grep "<:pp>" --byte-offset "$prompt_prompt_fp" | cut -d : -f 1)"
-    sed -i 's/<:pp>//' "$prompt_prompt_fp"
-
-    prompt="$(cat "$prompt_prompt_fp" | bs '$`"!')"
-
-    IFS= read -r -d '' SHCODE <<HEREDOC
+# Will it complain if PEN_STOP_SEQUENCE is empty?
 openai api \
     completions.create \
-    -e "$engine" \
-    -t "$temperature" \
-    -M "$max_tokens" \
-    -n "$sub_completions" \
-    $(
-        if test -n "$first_stop_sequence"; then
-            printf -- "%s" " --stop $(cmd "$first_stop_sequence")"
-        fi
-    ) \
-    -p "$prompt"
-HEREDOC
+    -e "$PEN_ENGINE" \
+    -t "$PEN_TEMPERATURE" \
+    -M "$PEN_MAX_TOKENS" \
+    -n "$PEN_N_COMPLETIONS" \
+    --stop "$PEN_STOP_SEQUENCE" \
+    -p "$PEN_PROMPT"
 
     shfp="$(printf -- "%s\n" "$SHCODE" | sed -z 's/\n\+$//' | sed -z "s/\\n/\\\n/g" | tf sh)"
-
-    # printf -- "%s\n" "$SHCODE" | tv
-    # exit 1
 
     export UPDATE=y
 
