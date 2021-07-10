@@ -77,8 +77,8 @@ in collaboration with GPT-3 using [[https://github.com/socketteer/loom][Loom]].
 I credit =|:ϝ∷¦ϝ= for writing this into existence!
 
 ** Source code
-- [[./src][emacs lisp]]
-- [[./scripts][supplementary commands]]
+- [[./src][./src (emacs lisp)]]
+- [[./scripts][./scripts (supplementary commands)]]
 - prompts (see below)
 
 ** Prompts
