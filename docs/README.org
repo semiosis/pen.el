@@ -14,7 +14,7 @@
     - https://semiosis.github.io/posts/representing-multiverses-with-datomic/
   - [ ] Prompts stored in Datomic
   - [ ] Auto-installer
-  - [ ] Dockerized Web Service
+  - [ ] Dockerized Web-facing Emacs
   - [ ] Prompt Catalogue
     - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
   - [ ] Make use of arbitrarily many git repositories that store prompts
