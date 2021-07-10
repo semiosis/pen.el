@@ -4,6 +4,7 @@
     - [X] emacs-lisp functions are generated from YAML =.prompt= files
     - [X] Use built-in elisp functions for portability
     - [ ] Prompt discovery
+      - http://github.com/semiosis/prompts/blob/master/README.org
       - http://github.com/semiosis/prompts/blob/master/prompt-repositories.txt
     - [ ] Select backend interface in emacs
       - [ ] Shell interface to OpenAI to python
