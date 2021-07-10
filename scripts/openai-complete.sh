@@ -35,27 +35,15 @@ PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT")"
 : "${PEN_ENGINE:="davinci"}"
 : "${PEN_ENGINE:="curie"}"
 
-stop_sequences="$(cat "$prompt_fp" | get_stop_sequences 2>/dev/null)"
+test -n "$prompt" || {
+    echo No prompt given
+    exit 1
+}
 
-test -n "$prompt" || exit 0
-
-while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-    "") { shift; }; ;;
-    -e) {
-        engine="$2"
-        shift
-        shift
-    }
-;;
-
-*) break;
-esac; done
-
-: "${engine:="ada"}"
-: "${temperature:="0.6"}"
-: "${max_tokens:="64"}"
-
-: "${sub_completions:="1"}"
+: "${PEN_MAX_TOKENS:="60"}"
+: "${PEN_TEMPERATURE:="0.8"}"
+: "${PEN_TOP_P:="1"}"
+: "${PEN_N_COMPLETIONS:="1"}"
 
 ogprompt="$prompt"
 
