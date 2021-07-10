@@ -51,6 +51,9 @@
 (defun string-not-empty-nor-nil-p (s)
   (not (string-empty-or-nil-p s)))
 
+(defun -filter-not-empty-string (l)
+  (-filter 'string-not-empty-nor-nil-p l))
+
 (defun string-first-nonnil-nonempty-string (&rest ss)
   "Get the first non-nil string."
   (let ((result))
