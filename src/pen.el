@@ -80,7 +80,7 @@
       ,doc
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
-             
+
              ;; preprocess the values of the parameters
              (vals
               (cl-loop
