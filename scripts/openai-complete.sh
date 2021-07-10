@@ -8,14 +8,15 @@
 
 # OPENAI_API_KEY="insert key here and uncomment this line"
 
-echo "PEN_PROMPT:\"$PEN_PROMPT\""
-echo "PEN_LM_COMMAND:\"$PEN_LM_COMMAND\""
-echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
-echo "PEN_STOP_SEQUENCE:\"$PEN_STOP_SEQUENCE\""
-echo "PEN_TOP_P:\"$PEN_TOP_P\""
-echo "PEN_CACHE:\"$PEN_CACHE\""
-echo hi
-exit 0
+if test "$PEN_DEBUG" = "y"; then
+    echo "PEN_PROMPT:\"$PEN_PROMPT\""
+    echo "PEN_LM_COMMAND:\"$PEN_LM_COMMAND\""
+    echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
+    echo "PEN_STOP_SEQUENCE:\"$PEN_STOP_SEQUENCE\""
+    echo "PEN_TOP_P:\"$PEN_TOP_P\""
+    echo "PEN_CACHE:\"$PEN_CACHE\""
+    exit 1
+fi
 
 test -n "$OPENAI_API_KEY" || {
     echo "OPENAI_API_KEY not given to script" 1>&2
