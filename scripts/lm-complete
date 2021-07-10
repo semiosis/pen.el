@@ -2,7 +2,7 @@
 
 # Example of usage:
 # export PEN_PROMPTS_DIR=$MYGIT/semiosis/prompts
-# Export PEN_ environment variables
+# export PEN_PROMPT="Once upon a time"
 # lm-complete
 
 test -n "$PEN_LM_COMMAND" || {

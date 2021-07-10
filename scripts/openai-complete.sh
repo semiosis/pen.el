@@ -2,7 +2,7 @@
 
 # Example of usage:
 # export OPENAI_API_KEY
-# Export PEN_ environment variables
+# export PEN_ environment variables
 # openai-complete.sh
 
 # OPENAI_API_KEY="insert key here and uncomment this line"
