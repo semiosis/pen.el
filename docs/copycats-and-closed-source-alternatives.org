@@ -1,0 +1,5 @@
+* Copycats and closed-source alternatives
++ Pen aims to be the tool you use instead of paying for one of these:
+  - https://copilot.github.com/
+  - https://conversion.ai/
+  - https://deepai.org/machine-learning-model/text-generator
