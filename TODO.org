@@ -1,4 +1,4 @@
-- Work
+- Current Work
   - Construct/template the final prompt
     sp +/"finalprompt" "$HOME/source/git/semiosis/pen.el/pen.el"
   - Use emacs' prompts hash table to generate the csv
@@ -15,3 +15,14 @@
 - Features
   - Select error messages and ask what they mean
   - Correct spelling and grammar in conversations over =erc= and other =emacs= chat modes.
+
+- Far future features
+  - Build a database of NLP tasks and synchronize them (perhaps in the form of prompts)
+    - Initially use GitHub
+    - Later switch from merely prompts to include other sources
+      - API calls
+      - AWS Lambdas
+  - Ratings for prompts / NLP tasks
+    - Use Datomic
+  - Retain all generations
+    - Use Datomic
