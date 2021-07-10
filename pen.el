@@ -72,7 +72,8 @@
 
 (defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
                                          lm-command stop-sequences stop-sequence max-tokens temperature top-p
-                                         chomp-start chomp-end)
+                                         chomp-start chomp-end
+                                         preprocessors postprocessor)
   (eval
    `(cl-defun ,func-sym ,var-syms
       ,doc
@@ -283,7 +284,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                      stop-sequences stop-sequence
                                      max-tokens temperature top-p
                                      chomp-start chomp-end
-                                     preprocessors)))
+                                     preprocessors postprocessor)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
