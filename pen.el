@@ -65,6 +65,11 @@
           (and (sor c)
                (string-equal c "on"))))))
 
+;; This is just so I get syntax highlighting for defpf in emacs
+(defmacro defpf (&rest body)
+  `(define-prompt-function
+     ,@body))
+
 (defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
                                          max-tokens temperature top-p)
   (let ((finalprompt)
