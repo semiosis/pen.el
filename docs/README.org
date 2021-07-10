@@ -1,9 +1,9 @@
 * Pen project timeline
 + Stage 1 - This is a dockerized =pen.el= that makes use of both GPT-3 and GPT-j.
-  + Implementation [3/5]
+  + Implementation [2/5]
     - [X] emacs-lisp functions are generated from YAML =.prompt= files
     - [X] Use built-in elisp functions for portability
-    - [X] Prompt discovery
+    - [ ] Prompt discovery
       - http://github.com/semiosis/prompts/blob/master/README.org
       - http://github.com/semiosis/prompts/blob/master/prompt-repositories.txt
     - [ ] Select backend interface in emacs
@@ -44,6 +44,7 @@
           Integrate helm, ivy and counsel  :done,   :a4, 2021-04-30, 30d
           Integrate org-brain  :done,   :a5, 2021-05-30, 30d
           Use elisp for portability :done,  :b2, 2021-07-02, 2d
+          Prompt discovery :done,  :b5, 2021-07-02, 2d
           Dockerize Pen : active, b3, after b2 , 5d
           Excise Pen from emacs.d: active, b3.1, after b2 , 5d
           Deploy Pen to straight.el: active, b3.2, after b2 , 5d
