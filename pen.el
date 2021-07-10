@@ -72,15 +72,13 @@
 
 (defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
                                          max-tokens temperature top-p)
-  (let ((finalprompt)
-        (exports
-         (sh-construct-envs `(("PEN_MAX_TOKENS" ,max-tokens)
-                              ("PEN_TEMPERATURE" ,temperature)
-                              ("PEN_TOP_P" ,top-p)
-                              ("PEN_PROMPT" ,finalprompt)
-                              ("PEN_CACHE" ,cache)
-                              ("PEN_CONVERSATION_MODE" ,(if conversation-mode "y" ""))
-                              ("PEN_COMPLETION" ,(if completion "y" ""))))))
+  (let* ((finalprompt)
+         (exports
+          (sh-construct-envs `(("PEN_MAX_TOKENS" ,max-tokens)
+                               ("PEN_TEMPERATURE" ,temperature)
+                               ("PEN_TOP_P" ,top-p)
+                               ("PEN_PROMPT" ,finalprompt)
+                               ("PEN_CACHE" ,cache)))))
     (eval
      `(cl-defun ,func-sym ,var-syms
         ,doc
@@ -260,8 +258,9 @@ Function names are prefixed with pen-pf- for easy searching"
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
                 (if completion
+                    nil
                     ;; TODO Add to company-mode completion functions
-                    )
+                  )
 
                 ;; var names will have to be slugged, too
 

@@ -15,26 +15,22 @@ test -n "$PEN_LM_COMMAND" || {
 : "${PEN_TEMPERATURE:="0.8"}"
 : "${PEN_TOP_P:="1"}"
 : "${PEN_PROMPT:="Once upon a time"}"
-: "${PEN_CONVERSATION_MODE:="n"}"
-: "${PEN_COMPLETION:="n"}"
 
 export PEN_MAX_TOKENS
 export PEN_TEMPERATURE
 export PEN_TOP_P
 export PEN_PROMPT
-export PEN_CONVERSATION_MODE
-export PEN_COMPLETION
 
 # This file expects the PEN_PROMPTS_DIR
 
-# Update caches (would override LM_CACHE)
+# Update caches (would override PEN_CACHE)
 if "$UPDATE" = y; then
-    LM_CACHE=
+    PEN_CACHE=
 fi
 
-# if LM_CACHE==y then pen.el has indicated this should be cached/memoised.
+# if PEN_CACHE==y then pen.el has indicated this should be cached/memoised.
 # This is handled by `pen-ci`
-export LM_CACHE
+export PEN_CACHE
 
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
