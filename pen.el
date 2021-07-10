@@ -175,6 +175,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      (completion (pen-yaml-test yaml "completion"))
                      (chomp-start (pen-yaml-test yaml "chomp-start"))
                      (chomp-end (pen-yaml-test yaml "chomp-end"))
+                     (preprocessors (vector2list (ht-get yaml "preprocessors")))
+                     (postprocessor (ht-get yaml "postprocessor"))
                      (n-collate (ht-get yaml "n-collate"))
                      (n-test-runs (ht-get yaml "n-test-runs"))
 
@@ -278,7 +280,8 @@ Function names are prefixed with pen-pf- for easy searching"
                                      filter completion lm-command
                                      stop-sequences stop-sequence
                                      max-tokens temperature top-p
-                                     chomp-start chomp-end)))
+                                     chomp-start chomp-end
+                                     preprocessors)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
