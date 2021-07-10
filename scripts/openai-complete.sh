@@ -18,8 +18,12 @@ if test "$PEN_DEBUG" = "y"; then
     exit 1
 fi
 
+if test -s $HOME/.pen/openai_api_key; then
+    : "${OPENAI_API_KEY:="$(cat $HOME/.pen/openai_api_key)"}"
+fi
+
 test -n "$OPENAI_API_KEY" || {
-    echo "OPENAI_API_KEY not given to script" 1>&2
+    echo "OPENAI_API_KEY not given to script"
     exit 1
 }
 
@@ -30,7 +34,6 @@ PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT")"
 # Default for OpenAI is davinci
 : "${PEN_ENGINE:="davinci"}"
 : "${PEN_ENGINE:="curie"}"
-
 
 stop_sequences="$(cat "$prompt_fp" | get_stop_sequences 2>/dev/null)"
 
