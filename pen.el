@@ -202,30 +202,14 @@ Function names are prefixed with pen-pf- for easy searching"
                             (list
                              title
                              (ht-get yaml "doc")
-                             (if design-patterns
-                                 (concat "design-patterns:"
-                                         (pen-list-to-orglist design-patterns)))
-                             (if todo
-                                 (concat "todo:"
-                                         (pen-list-to-orglist todo)))
-                             (if aims
-                                 (concat "aims:"
-                                         (pen-list-to-orglist aims)))
-                             (if notes
-                                 (concat "notes:"
-                                         (pen-list-to-orglist notes)))
-                             (if past-versions
-                                 (concat "past-versions:"
-                                         (pen-list-to-orglist past-versions)))
-                             (if external-related
-                                 (concat "external-related:"
-                                         (pen-list-to-orglist external-related)))
-                             (if related-prompts
-                                 (concat "related-prompts:"
-                                         (pen-list-to-orglist related-prompts)))
-                             (if future-titles
-                                 (concat "future-titles:"
-                                         (pen-list-to-orglist future-titles)))))
+                             (if design-patterns (concat "design-patterns:" (pen-list-to-orglist design-patterns)))
+                             (if todo (concat "todo:" (pen-list-to-orglist todo)))
+                             (if aims (concat "aims:" (pen-list-to-orglist aims)))
+                             (if notes (concat "notes:" (pen-list-to-orglist notes)))
+                             (if past-versions (concat "past-versions:" (pen-list-to-orglist past-versions)))
+                             (if external-related (concat "external-related:" (pen-list-to-orglist external-related)))
+                             (if related-prompts (concat "related-prompts:" (pen-list-to-orglist related-prompts)))
+                             (if future-titles (concat "future-titles:" (pen-list-to-orglist future-titles)))))
                            "\n"))
 
                      ;; variables
