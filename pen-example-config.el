@@ -68,18 +68,15 @@
 (define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
 (define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
 
+;; Prompts discovery
+;; This is where discovered prompts repositories are placed
+(setq pen-prompt-library-dir (concat (getenv "EMACSD") "/prompts-library"))
+(setq pen-prompt-discovery-recursion-depth 5)
+
+;; Personal prompts repository
 (setq pen-prompt-repo-dir (concat (getenv "EMACSD") "/prompts"))
 (setq pen-prompt-directory (concat pen-prompt-repo-dir "/prompts"))
 (setq pen-nlsh-histdir (concat (getenv "EMACSD") "/comint-history/"))
-
-(setq pen-prompt-discovery-recursion-depth 5)
-
-;; (url-hexify-string "github.com/semiosis/prompts")
-
-(defun find-prompt-repos (url &optional recursion-depth)
-  (interactive (list 5))
-  (cl-loop for url in (pen-str2list (e/cat (concat pen-prompt-repo-dir "/prompt-repositories.txt")))
-           collect ))
 
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)

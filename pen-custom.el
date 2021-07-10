@@ -11,6 +11,12 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-prompt-library-dir ""
+  "The directory where prompts repositories are stored"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-prompt-discovery-recursion-depth ""
   "The number of git repositories deep that pen.el will go looking"
   :type 'integer
