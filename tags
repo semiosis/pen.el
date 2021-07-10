@@ -84,7 +84,6 @@ selected	pen-support.el	/^(defun selected ()$/;"	f
 shut-up-c	pen-support.el	/^(defmacro shut-up-c (&rest body)$/;"	f
 slugify	pen-support.el	/^(defun slugify (input &optional joinlines length)$/;"	f
 slurp-file	pen-support.el	/^(defun slurp-file (filePath)$/;"	f
-stdin_exists	scripts/lm-complete	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/lm-complete.sh	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/openai-complete	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/tidy-prompt	/^stdin_exists() {$/;"	f

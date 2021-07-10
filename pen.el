@@ -72,22 +72,30 @@
 
 (defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
                                          lm-command stop-sequences stop-sequence max-tokens temperature top-p)
-  (let* ((finalprompt)
-         (exports
+  (let* ((exports
           (sh-construct-envs `(("PEN_LM_COMMAND" ,lm-command)
                                ("PEN_MAX_TOKENS" ,max-tokens)
                                ("PEN_TEMPERATURE" ,temperature)
                                ("PEN_STOP_SEQUENCE" ,stop-sequence)
                                ("PEN_TOP_P" ,top-p)
-                               ("PEN_PROMPT" ,finalprompt)
+                               ;; ("PEN_PROMPT" ,finalprompt)
                                ("PEN_CACHE" ,cache)))))
     (eval
      `(cl-defun ,func-sym ,var-syms
         ,doc
         (interactive ,(cons 'list iargs))
-        (let* ((pen-sh-update
+        (let* ((final-prompt ,prompt)
+               (i 1)
+               (final-prompt
+                (progn
+                  (cl-loop
+                   for vs in ,var-slugs do
+                   (setq final-prompt (string-replace (format "<%d>" i) vs final-prompt)))
+                  final-prompt))
+               (pen-sh-update
                 (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
                (shcmd (concat
+                       (sh-construct-envs (list (list "PEN_PROMPT" pen-prompt)))
                        ,exports " "
                        ,(flatten-once
                          (list
