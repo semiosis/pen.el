@@ -211,7 +211,9 @@ Function names are prefixed with pen-pf- for easy searching"
                              (if past-versions (concat "past-versions:" (pen-list-to-orglist past-versions)))
                              (if external-related (concat "external-related:" (pen-list-to-orglist external-related)))
                              (if related-prompts (concat "related-prompts:" (pen-list-to-orglist related-prompts)))
-                             (if future-titles (concat "future-titles:" (pen-list-to-orglist future-titles)))))
+                             (if future-titles (concat "future-titles:" (pen-list-to-orglist future-titles)))
+                             (if preprocessors (concat "preprocessors:" (pen-list-to-orglist preprocessors)))
+                             (if postprocessor (concat "postprocessor:" (pen-list-to-orglist postprocessor)))))
                            "\n"))
 
                      ;; variables
