@@ -172,6 +172,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      (prettifier (ht-get yaml "prettifier"))
                      (collation-postprocessor (ht-get yaml "pen-collation-postprocessor"))
                      (completion (pen-yaml-test yaml "completion"))
+                     (chomp-start (pen-yaml-test yaml "chomp-start"))
+                     (chomp-end (pen-yaml-test yaml "chomp-end"))
                      (n-collate (ht-get yaml "n-collate"))
                      (n-test-runs (ht-get yaml "n-test-runs"))
 
