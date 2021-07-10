@@ -95,6 +95,7 @@
                (sh-construct-envs
                 `(("PEN_PROMPT" ,final-prompt)
                   ("PEN_LM_COMMAND" ,,lm-command)
+                  ("PEN_ENGINE" ,,lm-command)
                   ("PEN_MAX_TOKENS" ,,max-tokens)
                   ("PEN_TEMPERATURE" ,,temperature)
                   ("PEN_STOP_SEQUENCE" ,,stop-sequence)
@@ -182,6 +183,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (n-test-runs (ht-get yaml "n-test-runs"))
 
                      ;; API
+                     (engine (ht-get yaml "engine"))
                      (max-tokens (ht-get yaml "max-tokens"))
                      (top-p (ht-get yaml "top-p"))
                      (temperature (ht-get yaml "temperature"))

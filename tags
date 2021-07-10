@@ -7,8 +7,6 @@
 HEREDOC	scripts/lm-complete.sh	/^    IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
 HEREDOC	scripts/lm-complete.sh	/^    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC$/;"	h
 HEREDOC	scripts/openai-complete	/^IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
-HEREDOC	scripts/openai-complete.sh	/^    IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
-HEREDOC	scripts/openai-complete.sh	/^    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC$/;"	h
 HEREDOC	scripts/pen-nsfa	/^IFS= read -r -d '' scriptcode <<'HEREDOC'$/;"	h
 HEREDOC	scripts/prompts-details	/^IFS= read -r -d '' jqsrc <<HEREDOC$/;"	h
 HEREDOC	scripts/prompts-details-get-row	/^IFS= read -r -d '' jqsrc <<HEREDOC$/;"	h
@@ -41,7 +39,6 @@ get-ext-for-lang	pen-support.el	/^(defun get-ext-for-lang (langstr)$/;"	f
 get-ext-for-mode	pen-support.el	/^(defun get-ext-for-mode (&optional m)$/;"	f
 get-path-ext-from-mode-alist	pen-support.el	/^(defalias 'get-path-ext-from-mode-alist 'get-ext-for-mode)$/;"	f
 get_stop_sequences	scripts/lm-complete.sh	/^get_stop_sequences() {$/;"	f
-get_stop_sequences	scripts/openai-complete.sh	/^get_stop_sequences() {$/;"	f
 glob	pen-support.el	/^(defun glob (pattern &optional dir)$/;"	f
 initvar	pen-support.el	/^(defmacro initvar (symbol &optional value)$/;"	f
 lang-to-mode	pen-support.el	/^(defun lang-to-mode (&optional langstr)$/;"	f
@@ -57,14 +54,12 @@ ogprompt	scripts/nlsh.py	/^ogprompt = yaml.load(data)["prompt"]$/;"	v
 openai-models	pen-openai.el	/^(defset openai-models$/;"	f
 org-brain-pf-topic	pen-brain.el	/^(defun org-brain-pf-topic (&optional short)$/;"	f
 os	scripts/nlsh.py	/^os = sys.argv[1]$/;"	v
-p	scripts/openai-complete.sh	/^p() {$/;"	f
 parse_yaml	scripts/yaml.sh	/^parse_yaml() {$/;"	f
 pen-ivy-completing-read	pen-support.el	/^(defun pen-ivy-completing-read (prompt collection$/;"	f
 pen-q	pen-support.el	/^(defun pen-q (&rest strings)$/;"	f
 pen-selected-text	pen-support.el	/^(defun pen-selected-text ()$/;"	f
 pen-sn	pen-support.el	/^(defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbu/;"	f
 pen-snc	pen-support.el	/^(defun pen-snc (cmd &optional stdin)$/;"	f
-pen-yq-test	scripts/openai-complete.sh	/^pen-yq-test() {$/;"	f
 postprocessor	scripts/nlsh.py	/^postprocessor = yaml.load(data)["postprocessor"].strip()$/;"	v
 pps	pen-support.el	/^(defalias 'pps 'pp-to-string)$/;"	f
 preserve-trailing-whitespace	pen-support.el	/^(defun preserve-trailing-whitespace (fun s)$/;"	f
@@ -75,7 +70,6 @@ ptw	pen-support.el	/^(defalias 'ptw 'preserve-trailing-whitespace)$/;"	f
 read-string-hist	pen-support.el	/^(defalias 'read-string-hist 'completing-read-hist)$/;"	f
 region-or-buffer-string	pen-support.el	/^(defun region-or-buffer-string ()$/;"	f
 repl_run	scripts/lm-complete.sh	/^repl_run() {$/;"	f
-repl_run	scripts/openai-complete.sh	/^repl_run() {$/;"	f
 request	scripts/nlsh.py	/^    request = input(click.style("nlsh> ", "red", bold=True))$/;"	v
 result	scripts/nlsh.py	/^    result = openai.Completion.create($/;"	v
 s-preserve-trailing-whitespace	pen-support.el	/^(defun s-preserve-trailing-whitespace (s-new s-old)$/;"	f
@@ -102,4 +96,3 @@ vector2list	pen-support.el	/^(defun vector2list (v)$/;"	f
 xc	pen-support.el	/^(defun xc (&optional s silent)$/;"	f
 yq	scripts/lm-complete.sh	/^yq() {$/;"	f
 yq	scripts/openai	/^yq() {$/;"	f
-yq	scripts/openai-complete.sh	/^yq() {$/;"	f
