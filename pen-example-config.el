@@ -76,6 +76,8 @@
 ;; Personal prompts repository
 (setq pen-prompt-repo-dir (concat (getenv "EMACSD") "/prompts"))
 (setq pen-prompt-directory (concat pen-prompt-repo-dir "/prompts"))
+
+;; nlsh
 (setq pen-nlsh-histdir (concat (getenv "EMACSD") "/comint-history/"))
 
 ;; Initial load of prompt functions
