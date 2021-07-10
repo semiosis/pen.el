@@ -110,6 +110,8 @@ https://asciinema.org/a/t7ATnFpnfzBp0yicIlGCt6eXi
 *** Language models and APIs
 - [X] OpenAI API (=GPT-3=)
   - https://beta.openai.com/
+- [ ] Huggingface Hub
+  - https://github.com/huggingface/huggingface_hub 
 - [-] =GPT-j= 6b
   - https://github.com/kingoflolz/mesh-transformer-jax
   - https://minimaxir.com/2021/06/gpt-j-6b/
@@ -201,3 +203,9 @@ composition of them, the generation of prompts
 via sets of examples.
 
 https://github.com/semiosis/examplary
+
+*** =lm-complete=
+lm-complete is a language completer that aims
+to  a bunch of alternative completion
+
+https://github.com/semiosis/lm-complete
