@@ -71,7 +71,7 @@
      ,@body))
 
 (defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
-                                         lm-command stop-sequences stop-sequence max-tokens temperature top-p
+                                         lm-command stop-sequences stop-sequence max-tokens temperature top-p engine
                                          chomp-start chomp-end
                                          preprocessors postprocessor)
   (eval
@@ -95,7 +95,7 @@
                (sh-construct-envs
                 `(("PEN_PROMPT" ,final-prompt)
                   ("PEN_LM_COMMAND" ,,lm-command)
-                  ("PEN_ENGINE" ,,lm-command)
+                  ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS" ,,max-tokens)
                   ("PEN_TEMPERATURE" ,,temperature)
                   ("PEN_STOP_SEQUENCE" ,,stop-sequence)
@@ -284,7 +284,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                      cache path var-slugs n-collate
                                      filter completion lm-command
                                      stop-sequences stop-sequence
-                                     max-tokens temperature top-p
+                                     max-tokens temperature top-p engine
                                      chomp-start chomp-end
                                      preprocessors postprocessor)))
                       (add-to-list 'pen-prompt-functions funcsym)
