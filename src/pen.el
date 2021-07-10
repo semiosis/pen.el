@@ -105,20 +105,38 @@
                   ("PEN_CACHE" ,,cache)))
                " "
                "lm-complete"))
+             (vals
+              (cl-loop
+               for tp in
+               (-zip-fill nil ,var-syms ,preprocessors)
+               collect
+               (let ((sym (car tp))
+                     (pp (cdr tp))
+                     (initval (eval sym)))
+                 (if pp
+                     (sn pp initval)
+                   initval))))
+             ;; http://cl-cookbook.sourceforge.net/loop.html
+             ;; (var-vals
+             ;;  (cl-loop
+             ;;   for vs in ',var-syms
+             ;;   collect
+             ;;   ))
              (result
               (chomp
                (mapconcat
                 'identity
-                (cl-loop for i in (number-sequence ,n-collate)
-                         collect
-                         (progn
-                           (message (concat ,func-name " query " (int-to-string i) "..."))
-                           (let ((ret (pen-sn shcmd)))
-                             (if (and (sor ,prettifier)
-                                      prettify)
-                                 (setq ret (pen-sn ,prettifier ret)))
-                             (message (concat ,func-name " done " (int-to-string i)))
-                             ret)))
+                (cl-loop
+                 for i in (number-sequence ,n-collate)
+                 collect
+                 (progn
+                   (message (concat ,func-name " query " (int-to-string i) "..."))
+                   (let ((ret (pen-sn shcmd)))
+                     (if (and (sor ,prettifier)
+                              prettify)
+                         (setq ret (pen-sn ,prettifier ret)))
+                     (message (concat ,func-name " done " (int-to-string i)))
+                     ret)))
                 ""))))
         (if (interactive-p)
             (cond
