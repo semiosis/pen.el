@@ -26,6 +26,8 @@ and copy the actual line of code.
 *** =cmd=
 Print the arguments given to this script.
 
+https://mullikine.github.io/posts/missing-posix-shell-functions-cmd-and-myeval/
+
 *** =json2yaml= - This converts json to yaml
 - stdin is json
 - stdout is yaml
