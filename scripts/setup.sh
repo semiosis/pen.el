@@ -53,6 +53,8 @@ cd ~/.emacs.d
 test -d prompts || git clone "https://github.com/semiosis/prompts"
 )
 
+ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
+
 mkdir -p "$EMACSD/comint-history"
 
 # rustc and cargo are for building emacs-yamlmod
