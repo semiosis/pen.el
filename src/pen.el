@@ -80,12 +80,23 @@
       ,doc
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
+             (vals
+              (cl-loop
+               for tp in
+               (-zip-fill nil ,var-syms ,preprocessors)
+               collect
+               (let ((sym (car tp))
+                     (pp (cdr tp))
+                     (initval (eval sym)))
+                 (if pp
+                     (sn pp initval)
+                   initval))))
              (i 1)
              (final-prompt
               (progn
                 (cl-loop
-                 for vs in ',var-syms do
-                 (setq final-prompt (string-replace (format "<%d>" i) (eval vs) final-prompt))
+                 for val in vals do
+                 (setq final-prompt (string-replace (format "<%d>" i) val final-prompt))
                  (setq i (+ 1 i)))
                 final-prompt))
              (pen-sh-update
@@ -105,17 +116,6 @@
                   ("PEN_CACHE" ,,cache)))
                " "
                "lm-complete"))
-             (vals
-              (cl-loop
-               for tp in
-               (-zip-fill nil ,var-syms ,preprocessors)
-               collect
-               (let ((sym (car tp))
-                     (pp (cdr tp))
-                     (initval (eval sym)))
-                 (if pp
-                     (sn pp initval)
-                   initval))))
              ;; http://cl-cookbook.sourceforge.net/loop.html
              ;; (var-vals
              ;;  (cl-loop
