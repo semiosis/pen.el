@@ -14,6 +14,7 @@ agi	scripts/setup.sh	/^agi() {$/;"	f
 b	scripts/nlsh.py	/^def b(c, inputstring="", timeout=0):$/;"	f
 beginning-of-line-point	src/pen-core.el	/^(defun beginning-of-line-point ()$/;"	f
 buffer-file-path	src/pen-library.el	/^(defun buffer-file-path ()$/;"	f
+build-on-root-debian10	Makefile	/^build-on-root-debian10:$/;"	t
 camille-complete	src/pen-example-config.el	/^(defalias 'camille-complete 'pen-run-prompt-function)$/;"	f
 chomp	src/pen-support.el	/^(defun chomp (str)$/;"	f
 cmd	scripts/cmd	/^cmd() {$/;"	f
@@ -32,6 +33,7 @@ current-global-prefix-arg	src/pen-global-prefix.el	/^(defset current-global-pref
 current-major-mode-string	src/pen-support.el	/^(defun current-major-mode-string ()$/;"	f
 cwd	src/pen-support.el	/^(defun cwd ()$/;"	f
 data	scripts/nlsh.py	/^    data = f.read()$/;"	v
+default	Makefile	/^default:$/;"	t
 default-generation-settings	src/pen-openai.el	/^(defset default-generation-settings$/;"	f
 defcmdmode	src/pen-prompt-tablist.el	/^(defmacro defcmdmode (cmd &optional cmdtype)$/;"	f
 define-prompt-function	src/pen.el	/^(defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache pat/;"	f
@@ -206,6 +208,7 @@ prompt-description-mode	src/pen-prompt-description.el	/^(define-derived-mode pro
 prompts-details-get-row	scripts/prompts-details	/^prompts-details-get-row() {$/;"	f
 ptw	src/pen-support.el	/^(defalias 'ptw 'preserve-trailing-whitespace)$/;"	f
 pull-prompt-repos	in-development/pen-discovery.el	/^(defun pull-prompt-repos ()$/;"	f
+push-docker	Makefile	/^push-docker:$/;"	t
 read-string-hist	src/pen-support.el	/^(defalias 'read-string-hist 'completing-read-hist)$/;"	f
 region-or-buffer-string	src/pen-support.el	/^(defun region-or-buffer-string ()$/;"	f
 request	scripts/nlsh.py	/^    request = input(click.style("nlsh> ", "red", bold=True))$/;"	v
