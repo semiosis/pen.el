@@ -1,5 +1,4 @@
 #!/bin/bash
-export TTY
 
 # Like UNIX uniq but does not sort.
 

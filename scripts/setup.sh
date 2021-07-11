@@ -67,7 +67,7 @@ rustc --version | grep -q " 1.5" || curl --proto '=https' --tlsv1.2 -sSf https:/
 (
 cd "$EMACSD/emacs-yamlmod"
 source $HOME/.cargo/env
-make || :
+make -j 4 || :
 )
 
 (
