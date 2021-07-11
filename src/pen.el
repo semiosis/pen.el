@@ -120,7 +120,7 @@
               (concat
                ;; All parameters are sent as environment variables
                (sh-construct-envs
-                `(("PEN_PROMPT" ,final-prompt)
+                `(("PEN_PROMPT" ,(escape "\\" final-prompt))
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS" ,,max-tokens)
@@ -324,7 +324,7 @@ Function names are prefixed with pen-pf- for easy searching"
 
                 (if completion
                     nil
-                    ;; TODO Add to company-mode completion functions
+                  ;; TODO Add to company-mode completion functions
                   )
 
                 ;; var names will have to be slugged, too
