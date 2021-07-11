@@ -76,7 +76,7 @@
                                          lm-command stop-sequences stop-sequence max-tokens temperature top-p engine
                                          no-trim-start no-trim-end
                                          preprocessors postprocessor
-                                         n-completions)
+                                         prompt-filter n-completions)
   (eval
    `(cl-defun ,func-sym ,var-syms
       ,doc
@@ -245,6 +245,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (no-trim-end (pen-yaml-test yaml "no-trim-end"))
                      (examples (vector2list (ht-get yaml "examples")))
                      (preprocessors (vector2list (ht-get yaml "preprocessors")))
+                     (prompt-filter  (ht-get yaml "prompt-filter "))
                      (postprocessor (ht-get yaml "postprocessor"))
                      (n-collate (or (ht-get yaml "n-collate")
                                     1))
@@ -287,6 +288,7 @@ Function names are prefixed with pen-pf- for easy searching"
                              (if future-titles (concat "\nfuture-titles:\n" (pen-list-to-orglist future-titles)))
                              (if examples (concat "\nexamples:\n" (pen-list-to-orglist examples)))
                              (if preprocessors (concat "\npreprocessors:\n" (pen-list-to-orglist preprocessors)))
+                             (if prompt-filter  (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter ))))
                              (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))))
                            "\n"))
 
@@ -356,7 +358,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                      max-tokens temperature top-p engine
                                      no-trim-start no-trim-end
                                      preprocessors postprocessor
-                                     n-completions)))
+                                     prompt-filter n-completions)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
