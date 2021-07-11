@@ -179,15 +179,16 @@
                    (sor ,prettifier))
                   (pen-sn ,prettifier result)
                 result))
-             
-             (result
-              (progn
-                (cl-loop
-                 for stsq in ,stop-sequences do
-                 (let ((matchpos (string-search stsq result)))
-                   (if matchpos
-                       (setq stsq (s-truncate matchpos result "")))))
-                result)))
+
+             ;; (result
+             ;;  (progn
+             ;;    (cl-loop
+             ;;     for stsq in ,stop-sequences do
+             ;;     (let ((matchpos (string-search stsq result)))
+             ;;       (if matchpos
+             ;;           (setq stsq (s-truncate matchpos result "")))))
+             ;;    result))
+             )
         (if (interactive-p)
             (cond
              ((and ,filter
