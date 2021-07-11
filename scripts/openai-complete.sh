@@ -7,6 +7,10 @@
 
 # OPENAI_API_KEY="insert key here and uncomment this line"
 
+openai() {
+    python3 `which openai` "$@"
+}
+
 p () {
     {
         i=1
