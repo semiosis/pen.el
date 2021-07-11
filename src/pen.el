@@ -177,7 +177,7 @@
              ;;           (setq stsq (s-truncate matchpos result "")))))
              ;;    result))
 
-             (result (car results)))
+             (result (cl-fz results :prompt (concat ,func-name ": ") :select-only-match t)))
         (if (interactive-p)
             (cond
              ((and ,filter
