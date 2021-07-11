@@ -1,6 +1,9 @@
 * Installation
 These setup instructions are designed for Debian 10 and Ubuntu 20.04.
 
+** Tutorial
+https://mullikine.github.io/posts/pen-tutorial/
+
 ** =OpenAI= API key
 You will need your own OpenAI API key.
 
