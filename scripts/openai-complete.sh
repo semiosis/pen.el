@@ -88,15 +88,18 @@ PEN_PROMPT="$(p "$PEN_PROMPT")"
 # This is designed to not trim whitespace from the ends of the stop sequence
 IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE");typeset -p PEN_STOP_SEQUENCE &>/dev/null
 
+{
+    env
 # Will it complain if PEN_STOP_SEQUENCE is empty?
-openai api \
+cmd openai api \
     completions.create \
     -e "$PEN_ENGINE" \
     -t "$PEN_TEMPERATURE" \
     -M "$PEN_MAX_TOKENS" \
     -n "$PEN_N_COMPLETIONS" \
     --stop "$PEN_STOP_SEQUENCE" \
-    -p "$PEN_PROMPT" > "$tf_response"
+    -p "$PEN_PROMPT" 
+} > "$tf_response"
 
 : "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
 

@@ -5,8 +5,6 @@
 # export PEN_PROMPT="Once upon a time"
 # lm-complete
 
-tmux splitw "echo $PEN_LM_COMMAND | vim -"
-
 test -n "$PEN_LM_COMMAND" || {
     echo "PEN_LM_COMMAND not supplied"
     exit 1
