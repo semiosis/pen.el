@@ -1,4 +1,4 @@
-#!/bin/bash
+#ja!/bin/bash
 
 # Debian8 installation
 
