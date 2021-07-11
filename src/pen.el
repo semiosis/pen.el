@@ -166,19 +166,19 @@
                 result))
 
              (result
-              (tv (if (and ,postprocessor
-                           (sor ,postprocessor))
-                      (pen-sn ,postprocessor result)
-                    result)))
+              (if (and ,postprocessor
+                       (sor ,postprocessor))
+                  (pen-sn ,postprocessor result)
+                result))
 
              (result
-              (if (and
-                   (varexists 'prettify)
-                   prettify
-                   ,prettifier
-                   (sor ,prettifier))
-                  (pen-sn ,prettifier result)
-                result))
+              (tv (if (and
+                       (varexists 'prettify)
+                       prettify
+                       ,prettifier
+                       (sor ,prettifier))
+                      (pen-sn ,prettifier result)
+                    result)))
 
              (i 1)
              (result
