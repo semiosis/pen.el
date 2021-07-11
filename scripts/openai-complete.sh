@@ -62,12 +62,12 @@ if test -s $HOME/.pen/openai_api_key; then
     : "${OPENAI_API_KEY:="$(cat $HOME/.pen/openai_api_key)"}"
 fi
 
-export OPENAI_API_KEY
-
 test -n "$OPENAI_API_KEY" || {
     echo "OPENAI_API_KEY not given to script"
     exit 1
 }
+
+export OPENAI_API_KEY
 
 # tf_prompt="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
 # trap "rm \"$tf_prompt\" 2>/dev/null" 0
