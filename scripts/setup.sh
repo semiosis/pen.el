@@ -51,6 +51,7 @@ agi moreutils
 (
 cd ~/.emacs.d
 test -d prompts || git clone "https://github.com/semiosis/prompts"
+test -d emacs-yamlmod || git clone "https://github.com/perfectayush/emacs-yamlmod"
 )
 
 ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
@@ -61,8 +62,10 @@ mkdir -p "$EMACSD/comint-history"
 # Debian GNU/Linux 10 does not have the required version of rustc
 # rustc 1.41.1 will not build emacs-yaml
 # rustc 1.51.0 will build it
-rustc --version | grep -q " 1.5" || curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustc --version | grep -q " 1.5" || curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
+(
 cd "$EMACSD/emacs-yamlmod"
 source $HOME/.cargo/env
 make || :
+)
