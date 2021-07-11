@@ -10,7 +10,7 @@ agi() {
 }
 
 cd ~
-agi git python vim emacs mosh curl make xsel
+agi git python3 vim emacs mosh curl make xsel
 
 # For nlsh and ii
 agi rlwrap
@@ -32,7 +32,7 @@ git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
 make
 )
 
-agi python-pip
+agi python3-pip
 
 # For lm-complete
 pip3 install openai
