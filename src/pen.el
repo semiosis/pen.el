@@ -121,7 +121,7 @@
               (concat
                ;; All parameters are sent as environment variables
                (sh-construct-envs
-                `(("PEN_PROMPT" ,(string-replace "\\" "" final-prompt))
+                `(("PEN_PROMPT" ,(qne final-prompt))
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS" ,,max-tokens)
