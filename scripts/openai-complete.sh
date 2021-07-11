@@ -31,7 +31,11 @@ openai_results_split() {
     cd "$td"
 
     if cat "$completions_fp" | grep -q -P '^===== Completion [0-9]+ =====$'; then
-        csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}'
+        csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}' &>/dev/null
+        for fp in *; do
+            sed -i 1d "$fp"
+            tail -c "+$(( PEN_END_POS + 1 ))" "$fp" | sponge "$fp"
+        done
     else
         cat "$completions_fp" > splitfile_0.txt
     fi
@@ -102,7 +106,5 @@ results_dir="$(openai_results_split "$tf_response")"
 # The API returns the entire prompt + completion
 # Which seems a little bit wasteful.
 # That may change.
-
-# tail -c "+$(( PEN_END_POS + 1 ))" "$tf_response"
 
 echo "$results_dir"
