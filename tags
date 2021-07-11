@@ -226,6 +226,8 @@ sor	src/pen-support.el	/^(defalias 'sor 'string-first-nonnil-nonempty-string)$/;
 start-ii	in-development/inf-pen.el	/^(defun start-ii ()$/;"	f
 start-ii-if-not-started	in-development/inf-pen.el	/^(defun start-ii-if-not-started ()$/;"	f
 start-ii-if-not-started-wait	in-development/inf-pen.el	/^(defun start-ii-if-not-started-wait ()$/;"	f
+stdin_exists	scripts/pen-s	/^stdin_exists() {$/;"	f
+stdin_exists	scripts/s	/^stdin_exists() {$/;"	f
 stdin_exists	scripts/tidy-prompt	/^stdin_exists() {$/;"	f
 str	src/pen-support.el	/^(defun str (thing)$/;"	f
 string-empty-or-nil-p	src/pen-support.el	/^(defun string-empty-or-nil-p (s)$/;"	f

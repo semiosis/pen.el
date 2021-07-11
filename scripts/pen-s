@@ -1,0 +1,260 @@
+#!/bin/bash
+
+# Turn all my filters into lisp.
+
+# String and stream operations.
+# Especially manipluations.
+# Related: $HOME/scripts/c
+
+sn="$(basename "$0")"
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+case "$sn" in
+    field|all-caps|caps|uppercase|uc|lc|wrl*|wrla|wrla1|awrl) {
+        f="$sn"
+    }
+    ;;
+
+    repeat-string) {
+        f=rs
+    }
+    ;;
+
+    *) {
+        f="$1"
+        shift
+    }
+esac
+
+case "$f" in
+    indent) {
+        level="$1"; : ${level:="1"}
+        # printf -- "%s\n" "$level"
+        r="$(zsh -c "printf '\t%.0s' {1..$level}")"
+
+        sed -u "s/^/${r}/"
+    }
+    ;;
+
+    all-caps|caps|uppercase|uc) {
+        tr '[:lower:]' '[:upper:]'
+    }
+    ;;
+
+    split) {
+        delim="$1"
+        : ${delim:=" "}
+
+        sed -e "s/./&$delim/g" -e "s/$delim\$//"
+    }
+    ;;
+
+    join) {
+        delim="$1"
+        : ${delim:=" "}
+
+        sed -z "s~\n~$delim~g" | sed "s/$delim\$//"
+        # tr '\n' ' '
+    }
+    ;;
+
+    one-of) {
+        input="$(cat)"
+        finds="$1"
+
+        matches="$(pl "$input" | sed -n "/^$finds\$/p")"
+        [ -n "$matches" ]
+
+        exit $?
+    }
+    ;;
+
+    lc) {
+        tr '[:upper:]' '[:lower:]'
+    }
+    ;;
+
+    random-line) {
+        awk 'BEGIN { "date +%N" | getline seed; srand(seed) } { l[NR]=$0 } END { print l[int(rand() * NR + 1)] }'
+    }
+    ;;
+
+    rs|repeat-string) {
+        count="$1"
+        shift
+
+        : ${count:="1"}
+
+        if stdin_exists; then
+            IFS= read -rd '' input < <(cat /dev/stdin)
+        else
+            input="$1"
+        fi
+
+        for (( i = 0; i < count; i++ )); do
+            printf -- "%s" "$input"
+        done
+    }
+    ;;
+
+    capsent|capitalize-sentences) {
+        sed 's/[a-z]\+/\u&/'
+    }
+    ;;
+
+    cap|capitalize) {
+        sed 's/[^ _-]*/\u&/g'
+    }
+    ;;
+
+    rl|repeat-lines) {
+        n="$1"; : ${n:="1"}
+
+        awk 1 | awk '{while (c++<'$n') printf $0}'
+    }
+    ;;
+
+    q|quote) {
+        q
+    }
+    ;;
+
+    wrl*) {
+        case "$f" in
+            *1) {
+                newline=y
+            }
+            ;;
+
+            *)
+        esac
+
+        : ${newline:="n"}
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -l|-1) {
+                newline=y
+                shift
+            }
+            ;;
+            
+            -n) {
+                newline=n
+                shift
+            }
+            ;;
+            
+            -E) {
+                CMD="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if test "$newline" = "y"; then
+            awk 1 | while IFS=$'\n' read -r line; do
+                # echo "'$line'" 1>&2
+                # printf "%s" "$line" | eval "$CMD"
+                printf -- "%s" "$line" | {
+                    if test -n "$CMD"; then
+                        eval "$CMD"
+                    else
+                        "$@"
+                    fi
+                }
+                echo
+            done
+        else
+            awk 1 | while IFS=$'\n' read -r line; do
+                # echo "'$line'" 1>&2
+                # printf "%s" "$line" | eval "$CMD"
+                printf -- "%s" "$line" | {
+                    if test -n "$CMD"; then
+                        eval "$CMD"
+                    else
+                        "$@"
+                    fi
+                }
+            done
+        fi
+    }
+    ;;
+
+    chomp|chomp-last-line)
+        perl -pe 'chomp if eof'
+    ;;
+
+    lf|last_field) {
+        awk '{print $NF}'
+    }
+    ;;
+
+    field|col|column) {
+        delim='[ \t\n]+'
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -d) {
+                delim="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        field="$1"
+        awk -F "$delim" '{print $'$field'}'
+    }
+    ;;
+
+    sort-anum|sort-alphanumeric) {
+        sort -b -d
+    }
+    ;;
+
+    uniq) {
+        awk '!seen[$0] {print} {++seen[$0]}'
+    }
+    ;;
+
+    dedup) { # without reordering / sorting
+        awk '{print(NR"\t"$0)}' | sort -t$'\t' -k2,2 | uniq -u --skip-fields 1 | sort -k1,1 -t$'\t' | cut -f2 -d$'\t'
+    }
+    ;;
+
+    rf|remove_field) {
+        field="$1"
+        ofs=" \t "
+        awk -F' *\t *' -v myofs="$ofs" 'BEGIN{OFS=myofs}{$'$field' = ""; print $0}'
+    }
+    ;;
+
+    summary|summarize) {
+        exec 2>/dev/null
+
+        summarize
+    }
+    ;;
+
+    testf|test_function) {
+        opt="$1"
+        shift
+        case "$opt" in
+            rf|remove_field) {
+                echo -e "Apple\tBanana\tCantaloupe" | s rf 2
+            }
+            ;;
+            *)
+        esac
+    }
+    ;;
+
+    *)
+esac
+# $HOME/dump
