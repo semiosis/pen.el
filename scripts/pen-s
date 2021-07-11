@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# Turn all my filters into lisp.
-
-# String and stream operations.
-# Especially manipluations.
-# Related: $HOME/scripts/c
+# A string preprocessor/postprocessor library for pen.el
 
 sn="$(basename "$0")"
 
@@ -57,18 +53,6 @@ case "$f" in
         : ${delim:=" "}
 
         sed -z "s~\n~$delim~g" | sed "s/$delim\$//"
-        # tr '\n' ' '
-    }
-    ;;
-
-    one-of) {
-        input="$(cat)"
-        finds="$1"
-
-        matches="$(pl "$input" | sed -n "/^$finds\$/p")"
-        [ -n "$matches" ]
-
-        exit $?
     }
     ;;
 
@@ -122,73 +106,6 @@ case "$f" in
     }
     ;;
 
-    wrl*) {
-        case "$f" in
-            *1) {
-                newline=y
-            }
-            ;;
-
-            *)
-        esac
-
-        : ${newline:="n"}
-        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-            -l|-1) {
-                newline=y
-                shift
-            }
-            ;;
-            
-            -n) {
-                newline=n
-                shift
-            }
-            ;;
-            
-            -E) {
-                CMD="$2"
-                shift
-                shift
-            }
-            ;;
-
-            *) break;
-        esac; done
-
-        if test "$newline" = "y"; then
-            awk 1 | while IFS=$'\n' read -r line; do
-                # echo "'$line'" 1>&2
-                # printf "%s" "$line" | eval "$CMD"
-                printf -- "%s" "$line" | {
-                    if test -n "$CMD"; then
-                        eval "$CMD"
-                    else
-                        "$@"
-                    fi
-                }
-                echo
-            done
-        else
-            awk 1 | while IFS=$'\n' read -r line; do
-                # echo "'$line'" 1>&2
-                # printf "%s" "$line" | eval "$CMD"
-                printf -- "%s" "$line" | {
-                    if test -n "$CMD"; then
-                        eval "$CMD"
-                    else
-                        "$@"
-                    fi
-                }
-            done
-        fi
-    }
-    ;;
-
-    chomp|chomp-last-line)
-        perl -pe 'chomp if eof'
-    ;;
-
     lf|last_field) {
         awk '{print $NF}'
     }
@@ -235,26 +152,5 @@ case "$f" in
     }
     ;;
 
-    summary|summarize) {
-        exec 2>/dev/null
-
-        summarize
-    }
-    ;;
-
-    testf|test_function) {
-        opt="$1"
-        shift
-        case "$opt" in
-            rf|remove_field) {
-                echo -e "Apple\tBanana\tCantaloupe" | s rf 2
-            }
-            ;;
-            *)
-        esac
-    }
-    ;;
-
     *)
 esac
-# $HOME/dump
