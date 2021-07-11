@@ -31,8 +31,6 @@ if test "$UPDATE" = y; then
     PEN_CACHE=
 fi
 
-PEN_CACHE=y
-
 # It's already broken. Happens in sn
 # printf -- "%s" "$PEN_PROMPT" | tv &>/dev/null
 
