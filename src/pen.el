@@ -159,27 +159,27 @@
                 "")))
 
              (result
-              (if chomp-start
+              (if ,chomp-start
                   (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result)
                 result))
 
              (result
-              (if chomp-end
+              (if ,chomp-end
                   (pen-sn "sed -z 's/\\n\\+$//' | sed -z 's/\\s\\+$//'" result)
                 result))
 
              (result
-              (if (and postprocessor
-                       (sor postprocessor))
-                  (pen-sn postprocessor result)
+              (if (and ,postprocessor
+                       (sor ,postprocessor))
+                  (pen-sn ,postprocessor result)
                 result))
 
              (result
               (if (and
                    prettify
-                   prettifier
-                   (sor prettifier))
-                  (pen-sn prettifier result)
+                   ,prettifier
+                   (sor ,prettifier))
+                  (pen-sn ,prettifier result)
                 result)))
         (if (interactive-p)
             (cond
