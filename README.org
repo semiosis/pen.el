@@ -19,6 +19,9 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
     - https://beta.openai.com/docs/introduction/semantic-search
     - https://gpttools.com/semanticsearch
 
+** Tutorials
++ Tutorial for how to use =pen.el= :: [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
+
 ** Goals
 - Programmatically navigate =GPT-3=, =GPT-j= and future language models
 - Peer-to-peer
