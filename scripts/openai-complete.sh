@@ -102,7 +102,7 @@ openai api \
     -M "$PEN_MAX_TOKENS" \
     -n "$PEN_N_COMPLETIONS" \
     --stop "$PEN_STOP_SEQUENCE" \
-    -p "$PEN_PROMPT" | tee /tmp/yo.txt > "$tf_response"
+    -p "$PEN_PROMPT" > "$tf_response"
 
 : "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
 
