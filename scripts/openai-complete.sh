@@ -20,6 +20,25 @@ p () {
     } | sed 's/\\n/\n/g'
 }
 
+openai_results_split() {
+    completions_fp="$1"
+    test -f "$completions_fp" || exit 1
+
+    completions_fp="$(realpath "$completions_fp")"
+
+    td="$(mktemp -d)"
+
+    cd "$td"
+
+    if cat "$completions_fp" | grep -q -P '^===== Completion [0-9]+ =====$'; then
+        csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}'
+    else
+        cat "$completions_fp" > splitfile_0.txt
+    fi
+
+    echo "$td"
+}
+
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
     echo "PEN_LM_COMMAND:\"$PEN_LM_COMMAND\""
@@ -75,10 +94,15 @@ openai api \
     --stop "$PEN_STOP_SEQUENCE" \
     -p "$PEN_PROMPT" > "$tf_response"
 
+: "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
+
+export "$PEN_END_POS"
+results_dir="$(openai_results_split "$tf_response")"
+
 # The API returns the entire prompt + completion
 # Which seems a little bit wasteful.
 # That may change.
 
-: "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
+# tail -c "+$(( PEN_END_POS + 1 ))" "$tf_response"
 
-tail -c "+$(( PEN_END_POS + 1 ))" "$tf_response"
+echo "$results_dir"
