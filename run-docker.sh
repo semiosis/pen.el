@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --rm -v "$(pwd):/$(pwd | slugify)" -w "/root" -ti --entrypoint= semiosis:pen.el ./run.sh
+docker run --rm -v "$(pwd):/$(pwd | slugify)" -w "/root" -ti --entrypoint= semiosis/pen.el ./run.sh
