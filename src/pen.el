@@ -121,7 +121,8 @@
               (concat
                ;; All parameters are sent as environment variables
                (sh-construct-envs
-                `(("PEN_PROMPT" ,(escape "\\" (qne final-prompt)))
+                ;; This is a bit of a hack for \n in prompts
+                `(("PEN_PROMPT" ,(string-replace "\\n" "\\\\\\n" final-prompt))
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS" ,,max-tokens)
