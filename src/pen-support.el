@@ -196,6 +196,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (setq tf (make-temp-file "elisp_bash"))
     (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
 
+    ;; (if (string-match "lm-complete" cmd)
+    ;;     (my/nil (tv cmd)))
+
     (let ((exps
            (sh-construct-exports
             (-filter 'identity
@@ -208,7 +211,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (if detach
         (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &")))
 
-    ;; (message (concat "sn: " final_cmd))
+    (if (string-match "lm-complete" final_cmd)
+        (my/nil (tv (concat "SHANE: " final_cmd))))
 
     (shut-up-c
      (if (not stdin)
