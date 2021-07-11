@@ -1,6 +1,6 @@
-#ja!/bin/bash
+#!/bin/bash
 
-# Debian8 installation
+# Debian10 installation
 
 export EMACSD=$HOME/.emacs.d
 mkdir -p "$EMACSD"
@@ -22,7 +22,7 @@ test -d emacs || git clone "https://github.com/emacs-mirror/emacs"
 
 # For building emacs
 # --with-modules is required to load emacs-yamlmod
-agi autoconf texinfo gnutls-bin libgnutls28-dev pkg-config
+agi autoconf texinfo libgnutls30 libgnutls28-dev pkg-config
 
 (
 cd /root/emacs
