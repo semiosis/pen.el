@@ -240,7 +240,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (preprocessors (vector2list (ht-get yaml "preprocessors")))
                      (postprocessor (ht-get yaml "postprocessor"))
                      (n-collate (or (ht-get yaml "n-collate")
-                                    2))
+                                    1))
                      (n-completions (or (ht-get yaml "n-completions")
                                         5))
                      (n-test-runs (ht-get yaml "n-test-runs"))
