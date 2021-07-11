@@ -172,24 +172,24 @@
                 result))
 
              (result
-              (tv (if (and
-                       (varexists 'prettify)
-                       prettify
-                       ,prettifier
-                       (sor ,prettifier))
-                      (pen-sn ,prettifier result)
-                    result)))
+              (if (and
+                   (varexists 'prettify)
+                   prettify
+                   ,prettifier
+                   (sor ,prettifier))
+                  (pen-sn ,prettifier result)
+                result))
 
              (i 1)
              (result
-              (progn
-                (cl-loop
-                 for stsq in stop-sequences do
-                 (let ((matchpos (string-search stsq result)))
-                   (if matchpos
-                       (setq stsq (s-truncate matchpos result ""))))
-                 (setq i (+ 1 i)))
-                result)))
+              (tv (progn
+                    (cl-loop
+                     for stsq in stop-sequences do
+                     (let ((matchpos (string-search stsq result)))
+                       (if matchpos
+                           (setq stsq (s-truncate matchpos result ""))))
+                     (setq i (+ 1 i)))
+                    result))))
         (if (interactive-p)
             (cond
              ((and ,filter
