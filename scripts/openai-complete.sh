@@ -107,4 +107,7 @@ results_dir="$(openai_results_split "$tf_response")"
 # Which seems a little bit wasteful.
 # That may change.
 
+# jsonl output would be nice but jq is an extra dependency I don't want.
+# Alternatively, can could make it linewise.
+
 echo "$results_dir"
