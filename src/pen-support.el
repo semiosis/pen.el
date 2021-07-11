@@ -211,8 +211,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (if detach
         (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &")))
 
-    (if (string-match "lm-complete" final_cmd)
-        (my/nil (tv (concat "SHANE: " final_cmd))))
+    ;; (if (string-match "lm-complete" final_cmd)
+    ;;     (my/nil (tv (concat "SHANE: " final_cmd))))
 
     (shut-up-c
      (if (not stdin)
