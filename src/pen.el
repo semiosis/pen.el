@@ -166,10 +166,10 @@
                 result))
 
              (result
-              (if (and ,postprocessor
-                       (sor ,postprocessor))
-                  (pen-sn ,postprocessor result)
-                result))
+              (tv (if (and ,postprocessor
+                           (sor ,postprocessor))
+                      (pen-sn ,postprocessor result)
+                    result)))
 
              (result
               (if (and
