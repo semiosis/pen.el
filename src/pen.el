@@ -157,12 +157,14 @@
 
              (result
               (if (not ,no-trim-start)
-                  (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result)
+                  ;; (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result)
+                  (s-trim-left result)
                 result))
 
              (result
               (if (not ,no-trim-end)
-                  (pen-sn "sed -z 's/\\n\\+$//' | sed -z 's/\\s\\+$//'" result)
+                  ;; (pen-sn "sed -z 's/\\n\\+$//' | sed -z 's/\\s\\+$//'" result)
+                  (s-trim-right result)
                 result))
 
              (result
