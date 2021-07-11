@@ -7,8 +7,6 @@
 !_TAG_PROGRAM_VERSION	0.0.0	/d5bcb52b/
 "prompts"	src/pen-prompt-tablist.el	/^(defcmdmode "prompts" "tablist")$/;"	f
 -filter-not-empty-string	src/pen-support.el	/^(defun -filter-not-empty-string (l)$/;"	f
-HEREDOC	scripts/openai-complete.sh	/^    IFS= read -r -d '' SHCODE <<HEREDOC$/;"	h
-HEREDOC	scripts/openai-complete.sh	/^    IFS= read -r -d '' stop_sequence_trimmer <<HEREDOC$/;"	h
 HEREDOC	scripts/pen-nsfa	/^IFS= read -r -d '' scriptcode <<'HEREDOC'$/;"	h
 HEREDOC	scripts/prompts-details	/^IFS= read -r -d '' jqsrc <<HEREDOC$/;"	h
 add-event-modifier	src/pen-example-config.el	/^(defun add-event-modifier (string e)$/;"	f
@@ -206,7 +204,6 @@ ptw	src/pen-support.el	/^(defalias 'ptw 'preserve-trailing-whitespace)$/;"	f
 pull-prompt-repos	in-development/pen-discovery.el	/^(defun pull-prompt-repos ()$/;"	f
 read-string-hist	src/pen-support.el	/^(defalias 'read-string-hist 'completing-read-hist)$/;"	f
 region-or-buffer-string	src/pen-support.el	/^(defun region-or-buffer-string ()$/;"	f
-repl_run	scripts/openai-complete.sh	/^repl_run() {$/;"	f
 request	scripts/nlsh.py	/^    request = input(click.style("nlsh> ", "red", bold=True))$/;"	v
 result	scripts/nlsh.py	/^    result = openai.Completion.create($/;"	v
 s-preserve-trailing-whitespace	src/pen-support.el	/^(defun s-preserve-trailing-whitespace (s-new s-old)$/;"	f

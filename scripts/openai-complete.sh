@@ -51,6 +51,8 @@ test -n "$PEN_PROMPT" || {
 tf_response="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
 trap "rm \"$tf_response\" 2>/dev/null" 0
 
+# printf -- "%s\n" "$PEN_PROMPT" | tv &>/dev/null
+
 # Will it complain if PEN_STOP_SEQUENCE is empty?
 openai api \
     completions.create \
@@ -67,4 +69,6 @@ openai api \
 
 : "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
 
-tail -c "+$PEN_END_POS" "$response_fp"
+tail -c "+$(( PEN_END_POS + 1 ))" "$tf_response"
+
+# cat "$tf_response"

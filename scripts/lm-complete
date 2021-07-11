@@ -27,7 +27,7 @@ export PEN_END_POS
 # This file expects the PEN_PROMPTS_DIR
 
 # Update caches (would override PEN_CACHE)
-if "$UPDATE" = y; then
+if test "$UPDATE" = y; then
     PEN_CACHE=
 fi
 
