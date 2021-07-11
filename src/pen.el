@@ -140,33 +140,31 @@
              ;;   ))
 
              ;; run the completion command and collect the result
-             (resultsdir
-              (chomp
-               (mapconcat
-                'identity
-                (cl-loop
-                 for i in (number-sequence ,n-collate)
-                 collect
-                 (progn
-                   (message (concat ,func-name " query " (int-to-string i) "..."))
-                   ;; TODO Also handle PEN_N_COMPLETIONS
-                   (let ((ret (pen-sn shcmd)))
-                     (message (concat ,func-name " done " (int-to-string i)))
-                     ret)))
-                "")))
+             (resultsdirs
+              (cl-loop
+               for i in (number-sequence ,n-collate)
+               collect
+               (progn
+                 (message (concat ,func-name " query " (int-to-string i) "..."))
+                 ;; TODO Also handle PEN_N_COMPLETIONS
+                 (let ((ret (pen-sn shcmd)))
+                   (message (concat ,func-name " done " (int-to-string i)))
+                   ret))))
 
              (results
-              (->> (glob (concat resultsdir "/*"))
-                (mapcar 'e/cat)
-                (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
-                (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))
-                (mapcar (lambda (r) (if (and ,postprocessor (sor ,postprocessor)) (pen-sn ,postprocessor r) r)))
-                (mapcar (lambda (r) (if (and (variable-p 'prettify)
-                                             prettify
-                                             ,prettifier
-                                             (sor ,prettifier))
-                                        (pen-sn ,prettifier r)
-                                      r)))))
+              (cl-loop for rd in resultsdirs
+                       collect
+                       (->> (glob (concat rd "/*"))
+                         (mapcar 'e/cat)
+                         (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
+                         (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))
+                         (mapcar (lambda (r) (if (and ,postprocessor (sor ,postprocessor)) (pen-sn ,postprocessor r) r)))
+                         (mapcar (lambda (r) (if (and (variable-p 'prettify)
+                                                      prettify
+                                                      ,prettifier
+                                                      (sor ,prettifier))
+                                                 (pen-sn ,prettifier r)
+                                               r))))))
 
              ;; (result
              ;;  (progn
