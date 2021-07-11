@@ -140,7 +140,7 @@
              ;;   ))
 
              ;; run the completion command and collect the result
-             (result
+             (resultsdir
               (chomp
                (mapconcat
                 'identity
@@ -155,32 +155,32 @@
                      ret)))
                 "")))
 
-             (result
-              (if (not ,no-trim-start)
-                  ;; (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result)
-                  (s-trim-left result)
-                result))
-
-             (result
-              (if (not ,no-trim-end)
-                  ;; (pen-sn "sed -z 's/\\n\\+$//' | sed -z 's/\\s\\+$//'" result)
-                  (s-trim-right result)
-                result))
-
-             (result
-              (if (and ,postprocessor
-                       (sor ,postprocessor))
-                  (pen-sn ,postprocessor result)
-                result))
-
-             (result
-              (if (and
-                   (variable-p 'prettify)
-                   prettify
-                   ,prettifier
-                   (sor ,prettifier))
-                  (pen-sn ,prettifier result)
-                result))
+             (results
+              (->> (glob (concat resultsdir "/*"))
+                (mapcar 'cat)
+                (mapcar (lambda (r)
+                          (if (not ,no-trim-start)
+                              ;; (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result)
+                              (s-trim-left r)
+                            r)))
+                (mapcar (lambda (r)
+                          (if (not ,no-trim-end)
+                              ;; (pen-sn "sed -z 's/\\n\\+$//' | sed -z 's/\\s\\+$//'" result)
+                              (s-trim-right r)
+                            r)))
+                (mapcar (lambda (r)
+                          (if (and ,postprocessor
+                                   (sor ,postprocessor))
+                              (pen-sn ,postprocessor r)
+                            r)))
+                (mapcar (lambda (r)
+                          (if (and
+                               (variable-p 'prettify)
+                               prettify
+                               ,prettifier
+                               (sor ,prettifier))
+                              (pen-sn ,prettifier r)
+                            r)))))
 
              ;; (result
              ;;  (progn
@@ -190,7 +190,8 @@
              ;;       (if matchpos
              ;;           (setq stsq (s-truncate matchpos result "")))))
              ;;    result))
-             )
+
+             (result (car results)))
         (if (interactive-p)
             (cond
              ((and ,filter
