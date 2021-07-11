@@ -105,6 +105,11 @@
                  (setq i (+ 1 i)))
                 final-prompt))
 
+             (prompt-end-pos (or (string-search "<:pp>" prompt)
+                                 (length final-prompt)))
+
+             (final-prompt (string-replace "<:pp>" "" final-prompt))
+
              ;; check for cache update
              (pen-sh-update
               (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
@@ -123,7 +128,8 @@
                   ("PEN_TOP_P" ,,top-p)
                   ;; ("PEN_PROMPT" ,finalprompt)
                   ("PEN_CACHE" ,,cache)
-                  ("PEN_N_COMPLETIONS" ,,n-completions)))
+                  ("PEN_N_COMPLETIONS" ,,n-completions)
+                  ("PEN_END_POS" ,,prompt-end-pos)))
                " "
                "lm-complete"))
              ;; http://cl-cookbook.sourceforge.net/loop.html
