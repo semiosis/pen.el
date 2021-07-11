@@ -7,19 +7,6 @@
 
 # OPENAI_API_KEY="insert key here and uncomment this line"
 
-p () {
-    {
-        i=1
-        while [ "$i" -lt "$#" ]; do
-            eval ARG=\${$i}
-            printf -- "%s " "$ARG"
-            i=$((i + 1))
-        done
-        eval ARG=\${$i}
-        printf -- "%s" "$ARG"
-    } | sed 's/\\n/\n/g'
-}
-
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
     echo "PEN_LM_COMMAND:\"$PEN_LM_COMMAND\""
@@ -39,10 +26,6 @@ test -n "$OPENAI_API_KEY" || {
     echo "OPENAI_API_KEY not given to script"
     exit 1
 }
-
-# The prompt is always chomped for OpenAI
-# Bash by default will remove trailing whitespace for command substitution
-# PEN_PROMPT="$(p "$PEN_PROMPT")"
 
 # tf_prompt="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
 # trap "rm \"$tf_prompt\" 2>/dev/null" 0
@@ -64,8 +47,6 @@ test -n "$PEN_PROMPT" || {
 tf_response="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
 trap "rm \"$tf_response\" 2>/dev/null" 0
 
-# printf -- "%s\n" "$PEN_PROMPT" | tv &>/dev/null
-
 # Will it complain if PEN_STOP_SEQUENCE is empty?
 openai api \
     completions.create \
@@ -83,5 +64,3 @@ openai api \
 : "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
 
 tail -c "+$(( PEN_END_POS + 1 ))" "$tf_response"
-
-# cat "$tf_response"
