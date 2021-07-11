@@ -122,7 +122,10 @@
                ;; All parameters are sent as environment variables
                (sh-construct-envs
                 ;; This is a bit of a hack for \n in prompts
-                `(("PEN_PROMPT" ,(escape "\\" (escape "$" (str (string-replace "\\n" "<pen-notnewline>" final-prompt)))))
+                `(("PEN_PROMPT" ,(str
+                                  (->> final-prompt
+                                    (string-replace "\\n" "<pen-notnewline>")
+                                    (string-replace "$" "<pen-dollar>"))))
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS" ,,max-tokens)
