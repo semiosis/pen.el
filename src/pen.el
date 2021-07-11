@@ -149,13 +149,9 @@
                  collect
                  (progn
                    (message (concat ,func-name " query " (int-to-string i) "..."))
-                   (let ((ret (pen-sn shcmd)))
-                     (if (and (sor ,prettifier)
-                              prettify)
-                         ;; TODO Also handle PEN_N_COMPLETIONS
-                         (setq ret (pen-sn ,prettifier ret)))
-                     (message (concat ,func-name " done " (int-to-string i)))
-                     ret)))
+                   ;; TODO Also handle PEN_N_COMPLETIONS
+                   (message (concat ,func-name " done " (int-to-string i)))
+                   (pen-sn shcmd)))
                 "")))
 
              (result
