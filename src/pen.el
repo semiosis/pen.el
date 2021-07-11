@@ -122,6 +122,7 @@
                ;; All parameters are sent as environment variables
                (sh-construct-envs
                 ;; This is a bit of a hack for \n in prompts
+                ;; See `pen-restore-chars`
                 `(("PEN_PROMPT" ,(str
                                   (->> final-prompt
                                     (string-replace "\\n" "<pen-notnewline>")
