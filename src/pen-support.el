@@ -200,7 +200,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
          (and (variable-p 'pen-sh-update)
               (eval 'pen-sh-update))
          (>= (prefix-numeric-value current-global-prefix-arg) 16))
-        (setq cmd (concat "upd " cmd)))
+        (setq cmd (concat "export UPDATE=y; " cmd)))
 
     (setq tf (make-temp-file "elisp_bash"))
     (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
