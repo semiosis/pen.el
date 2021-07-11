@@ -25,6 +25,7 @@
 (package-install 'yasnippet)
 (package-install 'pcsv)
 (package-install 'sx)
+(package-install 'pcre2el)
 
 (let ((pendir (concat (getenv "EMACSD") "/pen.el")))
   (add-to-list 'load-path (concat pendir "/src"))
