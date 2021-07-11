@@ -141,15 +141,15 @@
 
              ;; run the completion command and collect the result
              (resultsdirs
-              (cl-loop
-               for i in (number-sequence ,n-collate)
-               collect
-               (progn
-                 (message (concat ,func-name " query " (int-to-string i) "..."))
-                 ;; TODO Also handle PEN_N_COMPLETIONS
-                 (let ((ret (pen-sn shcmd)))
-                   (message (concat ,func-name " done " (int-to-string i)))
-                   ret))))
+              (tv (cl-loop
+                   for i in (number-sequence ,n-collate)
+                   collect
+                   (progn
+                     (message (concat ,func-name " query " (int-to-string i) "..."))
+                     ;; TODO Also handle PEN_N_COMPLETIONS
+                     (let ((ret (pen-sn shcmd)))
+                       (message (concat ,func-name " done " (int-to-string i)))
+                       ret)))))
 
              (results
               (cl-loop for rd in resultsdirs
@@ -346,8 +346,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                      max-tokens temperature top-p engine
                                      no-trim-start no-trim-end
                                      preprocessors postprocessor
-                                     n-completions
-                                     )))
+                                     n-completions)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
