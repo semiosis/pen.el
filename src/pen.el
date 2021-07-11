@@ -105,7 +105,7 @@
                  (setq i (+ 1 i)))
                 final-prompt))
 
-             (prompt-end-pos (or (string-search "<:pp>" prompt)
+             (prompt-end-pos (or (string-search "<:pp>" ,prompt)
                                  (length final-prompt)))
 
              (final-prompt (string-replace "<:pp>" "" final-prompt))
@@ -118,18 +118,18 @@
              (shcmd
               (concat
                ;; All parameters are sent as environment variables
-               (sh-construct-envs
-                `(("PEN_PROMPT" ,final-prompt)
-                  ("PEN_LM_COMMAND" ,,lm-command)
-                  ("PEN_ENGINE" ,,engine)
-                  ("PEN_MAX_TOKENS" ,,max-tokens)
-                  ("PEN_TEMPERATURE" ,,temperature)
-                  ("PEN_STOP_SEQUENCE" ,,stop-sequence)
-                  ("PEN_TOP_P" ,,top-p)
-                  ;; ("PEN_PROMPT" ,finalprompt)
-                  ("PEN_CACHE" ,,cache)
-                  ("PEN_N_COMPLETIONS" ,,n-completions)
-                  ("PEN_END_POS" ,,prompt-end-pos)))
+               (tv (sh-construct-envs
+                    `(("PEN_PROMPT" ,final-prompt)
+                      ("PEN_LM_COMMAND" ,,lm-command)
+                      ("PEN_ENGINE" ,,engine)
+                      ("PEN_MAX_TOKENS" ,,max-tokens)
+                      ("PEN_TEMPERATURE" ,,temperature)
+                      ("PEN_STOP_SEQUENCE" ,,stop-sequence)
+                      ("PEN_TOP_P" ,,top-p)
+                      ;; ("PEN_PROMPT" ,finalprompt)
+                      ("PEN_CACHE" ,,cache)
+                      ("PEN_N_COMPLETIONS" ,,n-completions)
+                      ("PEN_END_POS" ,prompt-end-pos))))
                " "
                "lm-complete"))
              ;; http://cl-cookbook.sourceforge.net/loop.html
@@ -141,19 +141,19 @@
 
              ;; run the completion command and collect the result
              (result
-              (chomp
-               (mapconcat
-                'identity
-                (cl-loop
-                 for i in (number-sequence ,n-collate)
-                 collect
-                 (progn
-                   (message (concat ,func-name " query " (int-to-string i) "..."))
-                   ;; TODO Also handle PEN_N_COMPLETIONS
-                   (let ((ret (pen-sn shcmd)))
-                     (message (concat ,func-name " done " (int-to-string i)))
-                     ret)))
-                "")))
+              (tv (chomp
+                   (mapconcat
+                    'identity
+                    (cl-loop
+                     for i in (number-sequence ,n-collate)
+                     collect
+                     (progn
+                       (message (concat ,func-name " query " (int-to-string i) "..."))
+                       ;; TODO Also handle PEN_N_COMPLETIONS
+                       (let ((ret (pen-sn shcmd)))
+                         (message (concat ,func-name " done " (int-to-string i)))
+                         ret)))
+                    ""))))
 
              (result
               (if ,chomp-start
@@ -173,6 +173,7 @@
 
              (result
               (if (and
+                   (varexists 'prettify)
                    prettify
                    ,prettifier
                    (sor ,prettifier))
@@ -251,6 +252,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      (preprocessors (vector2list (ht-get yaml "preprocessors")))
                      (postprocessor (ht-get yaml "postprocessor"))
                      (n-collate (ht-get yaml "n-collate"))
+                     (n-completions (or (ht-get yaml "n-completions")
+                                        1))
                      (n-test-runs (ht-get yaml "n-test-runs"))
 
                      ;; API
@@ -357,7 +360,9 @@ Function names are prefixed with pen-pf- for easy searching"
                                      stop-sequences stop-sequence
                                      max-tokens temperature top-p engine
                                      chomp-start chomp-end
-                                     preprocessors postprocessor)))
+                                     preprocessors postprocessor
+                                     n-completions
+                                     )))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
