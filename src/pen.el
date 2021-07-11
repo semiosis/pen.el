@@ -187,7 +187,9 @@
               (progn
                 (cl-loop
                  for stsq in stop-sequences do
-                 (setq result (s-replace-regexp (concat (unregexify stsq) ".*") "" final-prompt))
+                 (let ((matchpos (string-search stsq result)))
+                   (if matchpos
+                       (setq stsq (s-truncate matchpos result ""))))
                  (setq i (+ 1 i)))
                 result)))
         (if (interactive-p)
