@@ -284,6 +284,7 @@ Function names are prefixed with pen-pf- for easy searching"
                              (if external-related (concat "\nexternal-related\n:" (pen-list-to-orglist external-related)))
                              (if related-prompts (concat "\nrelated-prompts:\n" (pen-list-to-orglist related-prompts)))
                              (if future-titles (concat "\nfuture-titles:\n" (pen-list-to-orglist future-titles)))
+                             (if examples (concat "\nexamples:\n" (pen-list-to-orglist examples)))
                              (if preprocessors (concat "\npreprocessors:\n" (pen-list-to-orglist preprocessors)))
                              (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))))
                            "\n"))
