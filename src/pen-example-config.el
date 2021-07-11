@@ -85,7 +85,7 @@
 
 ;; For docker
 (if (not (variable-p 'user-home-directory))
-    (defvar user-home-directory))
+    (defvar user-home-directory nil))
 (setq user-home-directory (or user-home-directory "/root"))
 
 ;; Automatically check if OpenAI key exists and ask for it otherwise
