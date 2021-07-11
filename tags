@@ -136,6 +136,7 @@ ntimes	src/pen-support.el	/^(defmacro ntimes (n &rest body)$/;"	f
 ogprompt	scripts/nlsh.py	/^ogprompt = ogprompt.replace("<1>", os)$/;"	v
 ogprompt	scripts/nlsh.py	/^ogprompt = yaml.load(data)["prompt"]$/;"	v
 openai-models	src/pen-openai.el	/^(defset openai-models$/;"	f
+openai_results_split	scripts/openai-complete.sh	/^openai_results_split() {$/;"	f
 org-brain-asktutor	src/pen-brain.el	/^(defun org-brain-asktutor (question)$/;"	f
 org-brain-current-brain	src/pen-brain.el	/^(defun org-brain-current-brain ()$/;"	f
 org-brain-describe-topic	src/pen-brain.el	/^(defun org-brain-describe-topic ()$/;"	f
