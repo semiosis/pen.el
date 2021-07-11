@@ -157,30 +157,16 @@
 
              (results
               (->> (glob (concat resultsdir "/*"))
-                (mapcar 'cat)
-                (mapcar (lambda (r)
-                          (if (not ,no-trim-start)
-                              ;; (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result)
-                              (s-trim-left r)
-                            r)))
-                (mapcar (lambda (r)
-                          (if (not ,no-trim-end)
-                              ;; (pen-sn "sed -z 's/\\n\\+$//' | sed -z 's/\\s\\+$//'" result)
-                              (s-trim-right r)
-                            r)))
-                (mapcar (lambda (r)
-                          (if (and ,postprocessor
-                                   (sor ,postprocessor))
-                              (pen-sn ,postprocessor r)
-                            r)))
-                (mapcar (lambda (r)
-                          (if (and
-                               (variable-p 'prettify)
-                               prettify
-                               ,prettifier
-                               (sor ,prettifier))
-                              (pen-sn ,prettifier r)
-                            r)))))
+                (mapcar 'e/cat)
+                (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
+                (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))
+                (mapcar (lambda (r) (if (and ,postprocessor (sor ,postprocessor)) (pen-sn ,postprocessor r) r)))
+                (mapcar (lambda (r) (if (and (variable-p 'prettify)
+                                             prettify
+                                             ,prettifier
+                                             (sor ,prettifier))
+                                        (pen-sn ,prettifier r)
+                                      r)))))
 
              ;; (result
              ;;  (progn
