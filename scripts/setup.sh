@@ -22,10 +22,10 @@ test -d emacs || git clone "https://github.com/emacs-mirror/emacs"
 
 # For building emacs
 # --with-modules is required to load emacs-yamlmod
-agi autoconf texinfo gnutls30 gnutls28-dev pkg-config
+agi autoconf texinfo gnutls-bin libgnutls28-dev pkg-config
 
 (
-cd emacs
+cd /root/emacs
 git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
 ./autogen.sh
 ./configure -with-all --without-makeinfo --with-modules
