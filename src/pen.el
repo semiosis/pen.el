@@ -237,9 +237,10 @@ Function names are prefixed with pen-pf- for easy searching"
                      (no-trim-end (pen-yaml-test yaml "no-trim-end"))
                      (preprocessors (vector2list (ht-get yaml "preprocessors")))
                      (postprocessor (ht-get yaml "postprocessor"))
-                     (n-collate (ht-get yaml "n-collate"))
+                     (n-collate (or (ht-get yaml "n-collate")
+                                    2))
                      (n-completions (or (ht-get yaml "n-completions")
-                                        3))
+                                        5))
                      (n-test-runs (ht-get yaml "n-test-runs"))
 
                      ;; API
