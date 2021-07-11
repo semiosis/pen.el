@@ -20,6 +20,8 @@ p () {
     } | sed 's/\\n/\n/g' | pen-restore-chars
 }
 
+tmux splitw "echo $OPENAI_API_KEY | vim -"
+
 openai_results_split() {
     completions_fp="$1"
     test -f "$completions_fp" || exit 1
