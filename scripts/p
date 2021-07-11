@@ -2,6 +2,7 @@
 
 # POSIX-compliant
 
+{
 i=1
 while [ "$i" -lt "$#" ]; do
     eval ARG=\${$i}
@@ -10,3 +11,4 @@ while [ "$i" -lt "$#" ]; do
 done
 eval ARG=\${$i}
 printf -- "%s" "$ARG"
+} | sed 's/\\n/\n/g'

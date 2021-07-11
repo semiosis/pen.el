@@ -7,6 +7,19 @@
 
 # OPENAI_API_KEY="insert key here and uncomment this line"
 
+p () {
+    {
+        i=1
+        while [ "$i" -lt "$#" ]; do
+            eval ARG=\${$i}
+            printf -- "%s " "$ARG"
+            i=$((i + 1))
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG"
+    } | sed 's/\\n/\n/g'
+}
+
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
     echo "PEN_LM_COMMAND:\"$PEN_LM_COMMAND\""
@@ -29,7 +42,7 @@ test -n "$OPENAI_API_KEY" || {
 
 # The prompt is always chomped for OpenAI
 # Bash by default will remove trailing whitespace for command substitution
-PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT")"
+# PEN_PROMPT="$(p "$PEN_PROMPT")"
 
 # tf_prompt="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
 # trap "rm \"$tf_prompt\" 2>/dev/null" 0
