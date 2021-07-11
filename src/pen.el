@@ -220,7 +220,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (title (ht-get yaml "title"))
                      (title-slug (slugify title))
                      (aliases (vector2list (ht-get yaml "aliases")))
-                     (alias-slugs (mapcar 'intern (mapcar (lambda (s) (concat "pen-pf-" s)) (mapcar 'slugify aliases))))
+                     (alias-slugs (mapcar 'intern (mapcar (lambda (s) (concat pen-prompt-function-prefix s)) (mapcar 'slugify aliases))))
 
                      ;; lm-complete
                      (cache (pen-yaml-test yaml "cache"))
@@ -303,7 +303,7 @@ Function names are prefixed with pen-pf- for easy searching"
                             (setq ss (append ss '(&key prettify))))
                         ss))
                      (var-defaults (vector2list (ht-get yaml "var-defaults")))
-                     (func-name (concat "pen-pf-" title-slug))
+                     (func-name (concat pen-prompt-function-prefix title-slug))
                      (func-sym (intern func-name))
                      (iargs
                       (let ((iteration 0))
