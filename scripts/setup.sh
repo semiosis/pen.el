@@ -28,7 +28,7 @@ agi autoconf texinfo gnutls-bin libgnutls28-dev pkg-config
 cd /root/emacs
 git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
 ./autogen.sh
-./configure -with-all --without-makeinfo --with-modules
+./configure -with-all --without-makeinfo --with-modules --with-gnutls=yes
 make
 )
 
@@ -74,3 +74,5 @@ make || :
 cd "$EMACSD"
 test -d "pen.el" || git clone "https://github.com/semiosis/pen.el"
 )
+
+ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
