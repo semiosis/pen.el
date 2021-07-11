@@ -73,7 +73,7 @@
 
 (defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
                                          lm-command stop-sequences stop-sequence max-tokens temperature top-p engine
-                                         chomp-start chomp-end
+                                         no-trim-start no-trim-end
                                          preprocessors postprocessor
                                          n-completions)
   (eval
@@ -156,12 +156,12 @@
                 "")))
 
              (result
-              (if ,chomp-start
+              (if ,no-trim-start
                   (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result)
                 result))
 
              (result
-              (if ,chomp-end
+              (if ,no-trim-end
                   (pen-sn "sed -z 's/\\n\\+$//' | sed -z 's/\\s\\+$//'" result)
                 result))
 
@@ -246,8 +246,8 @@ Function names are prefixed with pen-pf- for easy searching"
                      (prettifier (ht-get yaml "prettifier"))
                      (collation-postprocessor (ht-get yaml "pen-collation-postprocessor"))
                      (completion (pen-yaml-test yaml "completion"))
-                     (chomp-start (pen-yaml-test yaml "chomp-start"))
-                     (chomp-end (pen-yaml-test yaml "chomp-end"))
+                     (no-trim-start (pen-yaml-test yaml "no-trim-start"))
+                     (no-trim-end (pen-yaml-test yaml "no-trim-end"))
                      (preprocessors (vector2list (ht-get yaml "preprocessors")))
                      (postprocessor (ht-get yaml "postprocessor"))
                      (n-collate (ht-get yaml "n-collate"))
@@ -358,7 +358,7 @@ Function names are prefixed with pen-pf- for easy searching"
                                      filter completion lm-command
                                      stop-sequences stop-sequence
                                      max-tokens temperature top-p engine
-                                     chomp-start chomp-end
+                                     no-trim-start no-trim-end
                                      preprocessors postprocessor
                                      n-completions
                                      )))
