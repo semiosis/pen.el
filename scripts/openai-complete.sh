@@ -38,7 +38,7 @@ PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT")"
 : "${PEN_ENGINE:="davinci"}"
 : "${PEN_ENGINE:="curie"}"
 
-test -n "$prompt" || {
+test -n "$PEN_PROMPT" || {
     echo No prompt given
     exit 1
 }
