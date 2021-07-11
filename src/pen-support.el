@@ -1,3 +1,14 @@
+(require 'pcre2el)
+
+(defun pcre-replace-string (pat rep s &rest body)
+  "Replace pat with rep in s and return the result.
+The string replace part is still a regular emacs replacement pattern, not PCRE"
+  (eval `(replace-regexp-in-string (pcre-to-elisp pat ,@body) rep s)))
+
+(defun qne (string)
+  "Like q but without the end quotes"
+  (pcre-replace-string "\"(.*)\"" "\\1" (e/q string)))
+
 (defun e/cat (path)
   "Return the contents of FILENAME."
   (with-temp-buffer
