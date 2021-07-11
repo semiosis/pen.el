@@ -9,4 +9,4 @@ WORKDIR /root
 
 RUN ./setup.sh
 
-CMD ["./run.sh"] 
+CMD ["./run.sh"]
