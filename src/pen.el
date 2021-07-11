@@ -150,8 +150,9 @@
                  (progn
                    (message (concat ,func-name " query " (int-to-string i) "..."))
                    ;; TODO Also handle PEN_N_COMPLETIONS
-                   (message (concat ,func-name " done " (int-to-string i)))
-                   (pen-sn shcmd)))
+                   (let ((ret (pen-sn shcmd)))
+                     (message (concat ,func-name " done " (int-to-string i)))
+                     ret)))
                 "")))
 
              (result
