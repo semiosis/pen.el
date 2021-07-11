@@ -156,7 +156,31 @@
                          (setq ret (pen-sn ,prettifier ret)))
                      (message (concat ,func-name " done " (int-to-string i)))
                      ret)))
-                ""))))
+                "")))
+
+             (result
+              (if chomp-start
+                  (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result)
+                result))
+
+             (result
+              (if chomp-end
+                  (pen-sn "sed -z 's/\\n\\+$//' | sed -z 's/\\s\\+$//'" result)
+                result))
+
+             (result
+              (if (and postprocessor
+                       (sor postprocessor))
+                  (pen-sn postprocessor result)
+                result))
+
+             (result
+              (if (and
+                   prettify
+                   prettifier
+                   (sor prettifier))
+                  (pen-sn prettifier result)
+                result)))
         (if (interactive-p)
             (cond
              ((and ,filter
