@@ -135,6 +135,7 @@ noupd	src/pen-support.el	/^(defmacro noupd (&rest body)$/;"	f
 ntimes	src/pen-support.el	/^(defmacro ntimes (n &rest body)$/;"	f
 ogprompt	scripts/nlsh.py	/^ogprompt = ogprompt.replace("<1>", os)$/;"	v
 ogprompt	scripts/nlsh.py	/^ogprompt = yaml.load(data)["prompt"]$/;"	v
+openai	scripts/openai-complete.sh	/^openai() {$/;"	f
 openai-models	src/pen-openai.el	/^(defset openai-models$/;"	f
 openai_results_split	scripts/openai-complete.sh	/^openai_results_split() {$/;"	f
 org-brain-asktutor	src/pen-brain.el	/^(defun org-brain-asktutor (question)$/;"	f
