@@ -110,4 +110,6 @@ results_dir="$(openai_results_split "$tf_response")"
 # jsonl output would be nice but jq is an extra dependency I don't want.
 # Alternatively, can could make it linewise.
 
+tmux splitw "echo $results_dir | vim -"
+
 echo "$results_dir"
