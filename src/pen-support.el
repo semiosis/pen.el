@@ -84,7 +84,7 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
 (defun cwd ()
   "Gets the current working directory"
   (interactive)
-  (substring (shut-up-c (pwd)) 10))
+  (f-expand (substring (shut-up-c (pwd)) 10)))
 
 (defun get-dir ()
   "Gets the directory of the current buffer's file. But this could be different from emacs' working directory.
