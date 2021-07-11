@@ -82,3 +82,10 @@
 
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)
+
+(let ((penconfdir (f-join user-home-directory ".pen"))
+      (pen-openai-key-file-path (f-join user-home-directory ".pen" "openai_api_key")))
+  (if (not (f-dir-p penconfdir)
+           (f-mkdir penconfdir)))
+  (if (f-file-p pen-openai-key-file-path))
+  )
