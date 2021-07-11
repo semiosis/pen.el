@@ -31,10 +31,8 @@ test -n "$OPENAI_API_KEY" || {
 # Bash by default will remove trailing whitespace for command substitution
 PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT")"
 
-tf_prompt="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
-trap "rm \"$tf_prompt\" 2>/dev/null" 0
-
-prompt_bytes="$(cat "$tf_prompt" | wc -c)"
+# tf_prompt="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
+# trap "rm \"$tf_prompt\" 2>/dev/null" 0
 
 # Default for OpenAI is davinci
 : "${PEN_ENGINE:="davinci"}"
@@ -63,30 +61,10 @@ openai api \
     --stop "$PEN_STOP_SEQUENCE" \
     -p "$PEN_PROMPT" > "$tf_response"
 
-response_bytes="$(cat "$tf_response" | wc -c)"
+# The API returns the entire prompt + completion
+# Which seems a little bit wasteful.
+# That may change.
 
-tail -c +$gen_pos "$response_fp" | {
-    if ( exec 0</dev/null; cat "$prompt_fp" | pen-yq-test chomp-start; ); then
-        sed -z 's/^\n\+//' | sed -z 's/^\s\+//'
-    else
-        cat
-    fi |
-        if ( exec 0</dev/null; cat "$prompt_fp" | pen-yq-test chomp-end; ); then
-            sed -z 's/\n\+$//' | sed -z 's/\s\+$//'
-        else
-            cat
-        fi | {
-            eval "$stop_sequence_trimmer"
-        } | {
-            if test -n "$postprocessor"; then
-                eval "$postprocessor"
-            else
-                cat
-            fi
-        } |
-            if test "$DO_PRETTY_PRINT" = y && test -n "$prettifier"; then
-                eval "$prettifier"
-            else
-                cat
-            fi
-}
+: "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
+
+tail -c "+$PEN_END_POS" "$response_fp"
