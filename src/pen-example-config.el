@@ -83,6 +83,7 @@
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)
 
+;; Automatically check if OpenAI key exists and ask for it otherwise
 (let ((penconfdir (f-join user-home-directory ".pen"))
       (pen-openai-key-file-path (f-join user-home-directory ".pen" "openai_api_key")))
   (if (not (f-dir-p penconfdir))
