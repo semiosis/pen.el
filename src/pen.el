@@ -175,7 +175,7 @@
 
              (result
               (if (and
-                   (varexists 'prettify)
+                   (variable-p 'prettify)
                    prettify
                    ,prettifier
                    (sor ,prettifier))
