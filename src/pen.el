@@ -182,14 +182,14 @@
 
              (i 1)
              (result
-              (tv (progn
-                    (cl-loop
-                     for stsq in stop-sequences do
-                     (let ((matchpos (string-search stsq result)))
-                       (if matchpos
-                           (setq stsq (s-truncate matchpos result ""))))
-                     (setq i (+ 1 i)))
-                    result))))
+              (progn
+                (cl-loop
+                 for stsq in (tv stop-sequences) do
+                 (let ((matchpos (string-search stsq result)))
+                   (if matchpos
+                       (setq stsq (s-truncate matchpos result ""))))
+                 (setq i (+ 1 i)))
+                result)))
         (if (interactive-p)
             (cond
              ((and ,filter
