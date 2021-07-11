@@ -98,12 +98,13 @@
              ;; template the parameters into the prompt
              (i 1)
              (final-prompt
-              (progn
-                (cl-loop
-                 for val in vals do
-                 (setq final-prompt (string-replace (format "<%d>" i) val final-prompt))
-                 (setq i (+ 1 i)))
-                final-prompt))
+              (chomp
+               (progn
+                 (cl-loop
+                  for val in vals do
+                  (setq final-prompt (string-replace (format "<%d>" i) val final-prompt))
+                  (setq i (+ 1 i)))
+                 final-prompt)))
 
              (prompt-end-pos (or (string-search "<:pp>" ,prompt)
                                  (length final-prompt)))
@@ -119,7 +120,7 @@
               (concat
                ;; All parameters are sent as environment variables
                (sh-construct-envs
-                `(("PEN_PROMPT" ,(chomp final-prompt))
+                `(("PEN_PROMPT" ,final-prompt)
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS" ,,max-tokens)
