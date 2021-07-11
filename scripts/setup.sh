@@ -49,7 +49,7 @@ agi expect
 agi moreutils
 
 (
-cd ~/.emacs.d
+cd "$EMACSD"
 test -d prompts || git clone "https://github.com/semiosis/prompts"
 test -d emacs-yamlmod || git clone "https://github.com/perfectayush/emacs-yamlmod"
 )
@@ -68,4 +68,9 @@ rustc --version | grep -q " 1.5" || curl --proto '=https' --tlsv1.2 -sSf https:/
 cd "$EMACSD/emacs-yamlmod"
 source $HOME/.cargo/env
 make || :
+)
+
+(
+cd "$EMACSD"
+test -d "pen.el" || git clone "https://github.com/semiosis/pen.el"
 )
