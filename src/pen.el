@@ -118,18 +118,18 @@
              (shcmd
               (concat
                ;; All parameters are sent as environment variables
-               (tv (sh-construct-envs
-                    `(("PEN_PROMPT" ,final-prompt)
-                      ("PEN_LM_COMMAND" ,,lm-command)
-                      ("PEN_ENGINE" ,,engine)
-                      ("PEN_MAX_TOKENS" ,,max-tokens)
-                      ("PEN_TEMPERATURE" ,,temperature)
-                      ("PEN_STOP_SEQUENCE" ,,stop-sequence)
-                      ("PEN_TOP_P" ,,top-p)
-                      ;; ("PEN_PROMPT" ,finalprompt)
-                      ("PEN_CACHE" ,,cache)
-                      ("PEN_N_COMPLETIONS" ,,n-completions)
-                      ("PEN_END_POS" ,prompt-end-pos))))
+               (sh-construct-envs
+                `(("PEN_PROMPT" ,(chomp final-prompt))
+                  ("PEN_LM_COMMAND" ,,lm-command)
+                  ("PEN_ENGINE" ,,engine)
+                  ("PEN_MAX_TOKENS" ,,max-tokens)
+                  ("PEN_TEMPERATURE" ,,temperature)
+                  ("PEN_STOP_SEQUENCE" ,,stop-sequence)
+                  ("PEN_TOP_P" ,,top-p)
+                  ;; ("PEN_PROMPT" ,finalprompt)
+                  ("PEN_CACHE" ,,cache)
+                  ("PEN_N_COMPLETIONS" ,,n-completions)
+                  ("PEN_END_POS" ,prompt-end-pos)))
                " "
                "lm-complete"))
              ;; http://cl-cookbook.sourceforge.net/loop.html
@@ -141,19 +141,19 @@
 
              ;; run the completion command and collect the result
              (result
-              (tv (chomp
-                   (mapconcat
-                    'identity
-                    (cl-loop
-                     for i in (number-sequence ,n-collate)
-                     collect
-                     (progn
-                       (message (concat ,func-name " query " (int-to-string i) "..."))
-                       ;; TODO Also handle PEN_N_COMPLETIONS
-                       (let ((ret (pen-sn shcmd)))
-                         (message (concat ,func-name " done " (int-to-string i)))
-                         ret)))
-                    ""))))
+              (chomp
+               (mapconcat
+                'identity
+                (cl-loop
+                 for i in (number-sequence ,n-collate)
+                 collect
+                 (progn
+                   (message (concat ,func-name " query " (int-to-string i) "..."))
+                   ;; TODO Also handle PEN_N_COMPLETIONS
+                   (let ((ret (pen-sn shcmd)))
+                     (message (concat ,func-name " done " (int-to-string i)))
+                     ret)))
+                "")))
 
              (result
               (if ,chomp-start
