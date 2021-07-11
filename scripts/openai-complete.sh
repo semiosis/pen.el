@@ -101,6 +101,8 @@ cmd openai api \
     -p "$PEN_PROMPT" 
 } > "$tf_response"
 
+tmux neww "vim $tf_response"
+
 : "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
 
 export "$PEN_END_POS"
