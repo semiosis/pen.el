@@ -254,7 +254,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (postprocessor (ht-get yaml "postprocessor"))
                      (n-collate (ht-get yaml "n-collate"))
                      (n-completions (or (ht-get yaml "n-completions")
-                                        1))
+                                        3))
                      (n-test-runs (ht-get yaml "n-test-runs"))
 
                      ;; API
