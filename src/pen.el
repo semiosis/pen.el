@@ -180,6 +180,15 @@
                    ,prettifier
                    (sor ,prettifier))
                   (pen-sn ,prettifier result)
+                result))
+
+             (i 1)
+             (result
+              (progn
+                (cl-loop
+                 for stsq in stop-sequences do
+                 (setq result (s-replace-regexp (concat (unregexify stsq) ".*") "" final-prompt))
+                 (setq i (+ 1 i)))
                 result)))
         (if (interactive-p)
             (cond
