@@ -60,8 +60,9 @@ test -n "$PEN_PROMPT" || {
 tf_response="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
 trap "rm \"$tf_response\" 2>/dev/null" 0
 
-# This actually evaluates the newlines
+# This actually evaluates the newlines, but it also trims the prompt at the ends
 PEN_PROMPT="$(p "$PEN_PROMPT")"
+# This is designed to not trim whitespace from the ends of the stop sequence
 IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE");typeset -p PEN_STOP_SEQUENCE &>/dev/null
 
 # Will it complain if PEN_STOP_SEQUENCE is empty?
