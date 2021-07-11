@@ -126,7 +126,6 @@
                   ("PEN_TEMPERATURE" ,,temperature)
                   ("PEN_STOP_SEQUENCE" ,,stop-sequence)
                   ("PEN_TOP_P" ,,top-p)
-                  ;; ("PEN_PROMPT" ,finalprompt)
                   ("PEN_CACHE" ,,cache)
                   ("PEN_N_COMPLETIONS" ,,n-completions)
                   ("PEN_END_POS" ,prompt-end-pos)))
