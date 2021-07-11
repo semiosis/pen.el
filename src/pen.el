@@ -157,7 +157,9 @@
 
              (result
               (if ,chomp-start
-                  (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result)
+                  (progn
+                    (tv "hi")
+                    (pen-sn "sed -z 's/^\\n\\+//' | sed -z 's/^\\s\\+//'" result))
                 result))
 
              (result
