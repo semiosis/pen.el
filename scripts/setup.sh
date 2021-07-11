@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Debian10 installation
+# Debian8 installation
 
 export EMACSD=$HOME/.emacs.d
 mkdir -p "$EMACSD"
