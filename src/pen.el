@@ -141,19 +141,19 @@
 
              ;; run the completion command and collect the result
              (result
-              (chomp
-               (mapconcat
-                'identity
-                (cl-loop
-                 for i in (number-sequence ,n-collate)
-                 collect
-                 (progn
-                   (message (concat ,func-name " query " (int-to-string i) "..."))
-                   ;; TODO Also handle PEN_N_COMPLETIONS
-                   (let ((ret (pen-sn shcmd)))
-                     (message (concat ,func-name " done " (int-to-string i)))
-                     ret)))
-                "")))
+              (etv (chomp
+                    (mapconcat
+                     'identity
+                     (cl-loop
+                      for i in (number-sequence ,n-collate)
+                      collect
+                      (progn
+                        (message (concat ,func-name " query " (int-to-string i) "..."))
+                        ;; TODO Also handle PEN_N_COMPLETIONS
+                        (let ((ret (pen-sn shcmd)))
+                          (message (concat ,func-name " done " (int-to-string i)))
+                          ret)))
+                     ""))))
 
              (result
               (if (not ,no-trim-start)
