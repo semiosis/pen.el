@@ -62,6 +62,7 @@ trap "rm \"$tf_response\" 2>/dev/null" 0
 
 # This actually evaluates the newlines
 PEN_PROMPT="$(p "$PEN_PROMPT")"
+IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE");typeset -p PEN_STOP_SEQUENCE &>/dev/null
 
 # Will it complain if PEN_STOP_SEQUENCE is empty?
 openai api \

@@ -147,6 +147,7 @@ org-brain-visualize-mode-map	src/pen-example-config.el	/^(define-key org-brain-v
 org-brain-visualize-mode-map	src/pen-example-config.el	/^(define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)$/;"	f
 org-brain-visualize-mode-map	src/pen-example-config.el	/^(define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)$/;"	f
 os	scripts/nlsh.py	/^os = sys.argv[1]$/;"	v
+p	scripts/openai-complete.sh	/^p () {$/;"	f
 p	scripts/p	/^p () {$/;"	f
 pen	src/pen.el	/^(define-minor-mode pen$/;"	f
 pen-ask-documentation	src/pen-contrib.el	/^(defun pen-ask-documentation (thing query)$/;"	f
