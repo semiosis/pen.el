@@ -47,12 +47,12 @@ functions can built around. Ultimately, emacs
 will become a fractal in the latent space of a future LM (language model).
 A graphical editor would not benefit from this effect until much later on.
 
-=emacs= could become *the* vehicle for
-controllable text generation, or has the
-potential to become that, only actually
-surpassed when the imaginary programming
-environment is normal and other interfaces can
-be prompted into existence.
+=emacs= could, if supported, become *the*
+vehicle for controllable text generation, or
+has the potential to become that, only
+actually surpassed when the imaginary
+programming environment is normal and other
+interfaces can be prompted into existence.
 
 Between then and now we can write prompt
 functions to help preserve emacs.
