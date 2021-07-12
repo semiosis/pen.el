@@ -7,14 +7,12 @@ https://semiosis.github.io/posts/pen-tutorial/
 ** =OpenAI= API key
 You will need your own OpenAI API key.
 
-The shell command =openai-complete.sh= requires OPENAI_API_KEY to be
+The shell command =openai-complete.sh= requires =OPENAI_API_KEY= to be
 provided to at as an environment variable.
 
 It's up to you to provide this to the script.
 
 [[./scripts/openai-complete.sh]]
-
-There is an example of one way to provide the key.
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   # OPENAI_API_KEY="insert key here and uncomment this line"
