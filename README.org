@@ -19,6 +19,10 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
     - https://beta.openai.com/docs/introduction/semantic-search
     - https://gpttools.com/semanticsearch
 
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  docker pull semiosis/pen.el:latest
+#+END_SRC
+
 ** Tutorials
 - [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
 
