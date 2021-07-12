@@ -20,7 +20,6 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
     - https://gpttools.com/semanticsearch
 
 #+BEGIN_SRC sh -n :sps bash :async :results none
-  # Try it out
   docker run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
 #+END_SRC
 
