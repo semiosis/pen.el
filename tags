@@ -40,7 +40,6 @@ define-prompt-function	src/pen.el	/^(defun define-prompt-function (func-name fun
 defpf	src/pen.el	/^(defmacro defpf (&rest body)$/;"	f
 defset	src/pen-support.el	/^(defmacro defset (symbol value &optional documentation)$/;"	f
 detect-language	src/pen-support.el	/^(defun detect-language (&optional detect buffer-not-selection)$/;"	f
-docker	Makefile	/^	docker pull semiosis\/pen.el:latest$/;"	t
 e/cat	src/pen-support.el	/^(defun e\/cat (path)$/;"	f
 etv	src/pen-support.el	/^(defun etv (o)$/;"	f
 examplary-asktutor	in-development/examplary-library.el	/^(defun examplary-asktutor (broader-topic specific-topic question)$/;"	f
@@ -208,7 +207,6 @@ prompt	scripts/nlsh.py	/^    prompt = prompt.strip() + " " + command + "\\n###\\
 prompt-description-mode	src/pen-prompt-description.el	/^(define-derived-mode prompt-description-mode yaml-mode "Prompt"$/;"	f
 prompts-details-get-row	scripts/prompts-details	/^prompts-details-get-row() {$/;"	f
 ptw	src/pen-support.el	/^(defalias 'ptw 'preserve-trailing-whitespace)$/;"	f
-pull	Makefile	/^	docker pull semiosis\/pen.el:latest$/;"	t
 pull-docker	Makefile	/^pull-docker:$/;"	t
 pull-prompt-repos	in-development/pen-discovery.el	/^(defun pull-prompt-repos ()$/;"	f
 push-docker	Makefile	/^push-docker:$/;"	t
@@ -216,6 +214,7 @@ read-string-hist	src/pen-support.el	/^(defalias 'read-string-hist 'completing-re
 region-or-buffer-string	src/pen-support.el	/^(defun region-or-buffer-string ()$/;"	f
 request	scripts/nlsh.py	/^    request = input(click.style("nlsh> ", "red", bold=True))$/;"	v
 result	scripts/nlsh.py	/^    result = openai.Completion.create($/;"	v
+run-docker	Makefile	/^run-docker:$/;"	t
 s-preserve-trailing-whitespace	src/pen-support.el	/^(defun s-preserve-trailing-whitespace (s-new s-old)$/;"	f
 save-temp-if-no-file	src/pen-library.el	/^(defun save-temp-if-no-file ()$/;"	f
 scrape	src/pen-support.el	/^(defun scrape (re s &optional delim)$/;"	f
@@ -223,7 +222,6 @@ second	src/pen-support.el	/^(defalias 'second 'cadr)$/;"	f
 selected	src/pen-support.el	/^(defun selected ()$/;"	f
 selected-keymap	src/pen-example-config.el	/^(define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)$/;"	f
 selected-keymap	src/pen-example-config.el	/^(define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)$/;"	f
-semiosis/pen.el	Makefile	/^	docker pull semiosis\/pen.el:latest$/;"	t
 sh-construct-envs	src/pen-support.el	/^(defun sh-construct-envs (varval-tuples)$/;"	f
 sh-construct-exports	src/pen-support.el	/^(defun sh-construct-exports (varval-tuples)$/;"	f
 shut-up-c	src/pen-support.el	/^(defmacro shut-up-c (&rest body)$/;"	f
