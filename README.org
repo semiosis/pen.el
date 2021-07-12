@@ -34,6 +34,9 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 - Prototype NLP tasks by creating prompts
   - Substitute external tools for prototypes
 - Bring about the editor that replaces =pen.el=
+  - An editor based solely on LM queries (an imaginary IDE)
+    - See [[https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/][Imaginary programming with GPT-3 =::= semiosis]]
+    - Versioned by blockchain
 
 ** Vision
 At its heart, emacs is an operating system
