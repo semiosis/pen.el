@@ -51,7 +51,8 @@ A graphical editor would not benefit from this effect until much later on.
 controllable text generation, or has the
 potential to become that, only actually
 surpassed when the imaginary programming
-environment is normal.
+environment is normal and other interfaces can
+be prompted into existence.
 
 Between then and now we can write prompt
 functions to help preserve emacs.
