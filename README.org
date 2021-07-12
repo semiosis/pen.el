@@ -47,7 +47,7 @@ functions can built around. Ultimately, emacs
 will become a fractal in the latent space of a future LM (language model).
 A graphical editor would not benefit from this effect until much later on.
 
-=emacs= could just be *the* vehicle for
+=emacs= could become *the* vehicle for
 controllable text generation, or has the
 potential to become that, only actually
 surpassed when the imaginary programming
