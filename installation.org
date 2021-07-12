@@ -1,5 +1,5 @@
 * Installation
-These setup instructions are designed for Debian 10.
+These setup instructions are designed for Debian 10 or Ubuntu 20.04.
 
 ** Tutorial
 https://semiosis.github.io/posts/pen-tutorial/
@@ -16,22 +16,28 @@ It's up to you to provide this to the script.
 
 Alternatively, the script will look for it here =$HOME/.pen/openai_api_key=.
 
-** Debian 10
+** Setup script for a Debian 10 docker image
 [[./scripts/setup.sh]]
 
+Adjust this script for your own installation.
+
 ** Emacs =.emacs= / =init.el=
-This is the base requirements for a vanilla emacs.
+The following emacs init file contains the
+base requirements to run =pen.el= in a vanilla
+emacs.
 
 [[./src/init.el]]
 
 *** Configure =pen.el=
-See above =init.el= file for an example of where to place your config.
+See the above =init.el= file for an example of
+where to load your config (after all
+dependencies are loaded).
 
 **** Example emacs config
 [[./src/pen-example-config.el]]
 
 ** Running =pen.el=
-This is tested on Debian 10 and Ubuntu 20.04.
+This is tested to run on a Debian 10 docker image.
 
 [[./scripts/run.sh]]
 
