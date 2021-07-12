@@ -8,7 +8,7 @@ build-on-root-debian10:
 
 run-docker:
 	docker pull semiosis/pen.el:latest
-	docker run --rm -v "$(pwd):/$(pwd | scripts/slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+	docker run --rm -v "$(shell pwd):/$(shell pwd | scripts/slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh
 
 pull-docker:
 	docker pull semiosis/pen.el:latest
