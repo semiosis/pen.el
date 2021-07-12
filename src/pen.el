@@ -245,7 +245,6 @@ Function names are prefixed with pen-pf- for easy searching"
                      (no-trim-end (pen-yaml-test yaml "no-trim-end"))
                      (examples (vector2list (ht-get yaml "examples")))
                      (preprocessors (vector2list (ht-get yaml "preprocessors")))
-                     (var-defaults (vector2list (ht-get yaml "var-defaults")))
                      (prompt-filter  (ht-get yaml "prompt-filter "))
                      (postprocessor (ht-get yaml "postprocessor"))
                      (n-collate (or (ht-get yaml "n-collate")

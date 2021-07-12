@@ -33,6 +33,7 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 - Create useful prompts
 - Prototype NLP tasks by creating prompts
   - Substitute external tools for prototypes
+- Bring about the editor that replaces =pen.el=
 
 ** Vision
 At its heart, emacs is an operating system
