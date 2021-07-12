@@ -20,8 +20,8 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
     - https://gpttools.com/semanticsearch
 
 #+BEGIN_SRC sh -n :sps bash :async :results none
-  docker pull semiosis/pen.el:latest
-  docker run --rm -v "$(shell pwd):/$(shell pwd | scripts/slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+  # Try it out
+  docker run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
 #+END_SRC
 
 ** Tutorials
@@ -228,3 +228,16 @@ lm-complete is a language completer that aims
 to  a bunch of alternative completion
 
 https://github.com/semiosis/lm-complete
+
+** Alternative docker invocations
+This will check out the code and give access
+to the =slugify= script so you can share the
+current directory to work with within the
+docker container.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  cd ~/.emacs.d/
+  git clone "https://github.com/semiosis/pen.el"
+  cd pen.el
+  docker run --rm -v "$(shell pwd):/$(shell pwd | scripts/slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+#+END_SRC
