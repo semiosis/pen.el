@@ -1,5 +1,5 @@
 * Installation
-These setup instructions are designed for Debian 10 and Ubuntu 20.04.
+These setup instructions are designed for Debian 10.
 
 ** Tutorial
 https://semiosis.github.io/posts/pen-tutorial/
@@ -14,9 +14,7 @@ It's up to you to provide this to the script.
 
 [[./scripts/openai-complete.sh]]
 
-#+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  # OPENAI_API_KEY="insert key here and uncomment this line"
-#+END_SRC
+Alternatively, the script will look for it here =$HOME/.pen/openai_api_key=.
 
 ** Debian 10
 [[./scripts/setup.sh]]
