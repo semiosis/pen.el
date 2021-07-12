@@ -1,0 +1,37 @@
+* Set up GPT-j
+https://github.com/kingoflolz/mesh-transformer-jax/network/members
+
+** TODO Mirror huggingface
+$DUMP/programs/httrack/mirrors
+
+$DUMP/programs/httrack/mirrors/https-huggingface-co-transformers-
+$DUMP/programs/httrack/mirrors/https-transformer-huggingface-co-
+
+** This worked for python3.8
+https://github.com/finetuneanon/transformers
+
+It's a fork of huggingface transformers with some new thing in it.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  msudo pip install "git+git://github.com/finetuneanon/transformers.git#egg=transformers"
+#+END_SRC
+
+*** I can check out the gpt-j branch
+$MYGIT/finetuneanon/transformers
+
+** This worked
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  cd "$HOME"; gdown "https://drive.google.com/uc?id=1VXXCMR_ETxOd3rxG4eXxS4-QA5NekB3H"
+#+END_SRC
+
+=$HOME/neo_6b.tar=
+
+So the neo_6b, is that j?
+
+How do I use the tar file?
+
+Look on huggingface for documentation.
+
+Should I download the entire huggingface website and then search it?
+
+** So now that I have it, what do I do with it?
