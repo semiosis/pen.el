@@ -49,12 +49,10 @@ openai_results_split() {
 
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
-    echo "PEN_LM_COMMAND:\"$PEN_LM_COMMAND\""
     echo "PEN_ENGINE:\"$PEN_ENGINE\""
     echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
     echo "PEN_STOP_SEQUENCE:\"$PEN_STOP_SEQUENCE\""
     echo "PEN_TOP_P:\"$PEN_TOP_P\""
-    echo "PEN_CACHE:\"$PEN_CACHE\""
     exit 1
 fi
 
