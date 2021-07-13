@@ -1,4 +1,7 @@
 (require 'package)
+
+(prefer-coding-system 'utf-8)
+
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Enable ssl
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
