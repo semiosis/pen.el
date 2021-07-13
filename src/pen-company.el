@@ -39,13 +39,13 @@
    ((>= (prefix-numeric-value current-prefix-arg) 16)
     (setq pen-company-selected-backends
           (list
-           (str2sym (fz pen-company-all-backends
+           (intern (fz pen-company-all-backends
                         nil nil "pen-company-complete select:")))))
    ((>= (prefix-numeric-value current-prefix-arg) 4)
     (setq pen-company-selected-backends
           (-uniq
            (cons
-            (str2sym (fz pen-company-all-backends
+            (intern (fz pen-company-all-backends
                          nil nil "pen-company-complete add:"))
             pen-company-selected-backends))))
    (t (let ((company-backends pen-company-selected-backends))
