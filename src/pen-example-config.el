@@ -104,7 +104,7 @@
 (xterm-mouse-mode)
 (require 'mouse)
 (xterm-mouse-mode t)
-(defun track-mouse (e))
+;; (defun track-mouse (e))
 
 ;; Automatically check if OpenAI key exists and ask for it otherwise
 (let ((penconfdir (f-join user-home-directory ".pen"))
