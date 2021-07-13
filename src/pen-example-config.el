@@ -100,6 +100,12 @@
 (setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
 (add-hook 'after-init-hook 'global-company-mode)
 
+(require 'xt-mouse)
+(xterm-mouse-mode)
+(require 'mouse)
+(xterm-mouse-mode t)
+(defun track-mouse (e))
+
 ;; Automatically check if OpenAI key exists and ask for it otherwise
 (let ((penconfdir (f-join user-home-directory ".pen"))
       (pen-openai-key-file-path (f-join user-home-directory ".pen" "openai_api_key")))
