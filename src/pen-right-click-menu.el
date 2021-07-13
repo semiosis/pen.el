@@ -130,4 +130,4 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("asktutor" :call pen-tutor-mode-assist :if (major-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y))))
 
-(require 'pen-right-click-menu)
+(provide 'pen-right-click-menu)
