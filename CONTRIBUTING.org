@@ -32,7 +32,6 @@ https://github.com/semiosis/prompt-tests
 *** Any missing functions available here
 https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 
-
 ** Contributors
 Thank you =@Samin= and =@erik= for the
 =booste= API support in integrating GPT-j.
