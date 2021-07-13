@@ -445,6 +445,9 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-prompt-description.el
 (require 'pen-prompt-description)
 
+;; http://github.com/semiosis/pen.el/blob/master/pen-automamtic-coding-system.el
+(require 'pen-automamtic-coding-system)
+
 ;; TODO
 (require 'pen-openai)
 (require 'pen-ocean)
