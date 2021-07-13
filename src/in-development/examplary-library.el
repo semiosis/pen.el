@@ -3,6 +3,6 @@
                 (read-string-hist (concat "(xlr) ask tutor about " (pen-topic t) ": "))
                 (read-string-hist (concat "(xlr) ask tutor about " (pen-broader-topic t) ": "))))
   (etv (eval
-        `(ci (pen-snc "ttp" (pen-pf-generic-tutor-for-any-topic ,cname ,pname ,question))))))
+        `(ci (pen-snc "ttp" (pf-generic-tutor-for-any-topic ,cname ,pname ,question))))))
 
 (provide 'examplary-library)

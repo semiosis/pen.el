@@ -100,7 +100,7 @@
   (let ((topic (pen-org-brain-current-topic)))
 
     (let ((answer
-           (snc "ttp" (pen-pf-generic-tutor-for-any-topic topic question))))
+           (snc "ttp" (pf-generic-tutor-for-any-topic topic question))))
       (if (interactive-p)
           (etv answer)
         answer))))

@@ -209,7 +209,7 @@
 
 (defun pen-generate-prompt-functions ()
   "Generate prompt functions for the files in the prompts directory
-Function names are prefixed with pen-pf- for easy searching"
+Function names are prefixed with pf- for easy searching"
   (interactive)
   (noupd
    (let ((paths
@@ -395,7 +395,7 @@ Function names are prefixed with pen-pf- for easy searching"
          (response
           (->>
               preceding-text
-            (pen-pf-generic-file-type-completion (detect-language))))
+            (pf-generic-file-type-completion (detect-language))))
          (res
           (list response)))
     (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
@@ -413,7 +413,7 @@ Function names are prefixed with pen-pf- for easy searching"
 May use to generate code from comments."
   (interactive (list (str (buffer-substring (point) (max 1 (- (point) 1000))))
                      t))
-  (let* ((response (pen-pf-generic-file-type-completion (detect-language) preceding-text)))
+  (let* ((response (pf-generic-file-type-completion (detect-language) preceding-text)))
     (if tv
         (etv response)
       response)))
