@@ -5,6 +5,18 @@
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defcustom pen-default-lm-command "openai-complete.sh"
+  "Default LM completer script"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-override-lm-command nil
+  "Override LM completer script"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-prompt-function-prefix "pf-"
   "Prefix string to prepend to prompt function names"
   :type 'string
