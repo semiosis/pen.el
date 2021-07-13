@@ -249,7 +249,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (no-trim-end (pen-yaml-test yaml "no-trim-end"))
                      (examples (vector2list (ht-get yaml "examples")))
                      (preprocessors (vector2list (ht-get yaml "preprocessors")))
-                     (prompt-filter  (ht-get yaml "prompt-filter "))
+                     (prompt-filter (ht-get yaml "prompt-filter "))
                      (postprocessor (ht-get yaml "postprocessor"))
                      (n-collate (or (ht-get yaml "n-collate")
                                     1))
@@ -292,7 +292,7 @@ Function names are prefixed with pen-pf- for easy searching"
                              (if future-titles (concat "\nfuture-titles:\n" (pen-list-to-orglist future-titles)))
                              (if examples (concat "\nexamples:\n" (pen-list-to-orglist examples)))
                              (if preprocessors (concat "\npreprocessors:\n" (pen-list-to-orglist preprocessors)))
-                             (if prompt-filter  (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter ))))
+                             (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
                              (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))))
                            "\n"))
 
@@ -313,26 +313,33 @@ Function names are prefixed with pen-pf- for easy searching"
                      (func-sym (intern func-name))
                      (iargs
                       (let ((iteration 0))
-                        (cl-loop for v in vars
-                                 collect
-                                 (let ((example (or (sor (nth iteration examples)
-                                                         "")
-                                                    "")))
-                                   (message "%s" (concat "Example " (str iteration) ": " example))
-                                   (if (equal 0 iteration)
-                                       ;; The first argument may be captured through selection
-                                       `(if mark-active
-                                            (pen-selected-text)
-                                          (if ,(> (length (s-lines example)) 1)
-                                              (etv ,example)
-                                            (read-string-hist ,(concat v ": ") ,example)))
-                                     `(if ,(> (length (s-lines example)) 1)
-                                          (etv ,example)
-                                        (read-string-hist ,(concat v ": ") ,example))))
-                                 do
-                                 (progn
-                                   (setq iteration (+ 1 iteration))
-                                   (message (str iteration)))))))
+                        (cl-loop
+                         for tp in (-zip-fill nil var-syms var-defaults)
+                         collect
+                         (let ((example (or (sor (nth iteration examples)
+                                                 "")
+                                            ""))
+                               (v (car tp))
+                               (d (cdr tp)))
+                           (message "%s" (concat "Example " (str iteration) ": " example))
+                           (if (and
+                                (equal 0 iteration)
+                                (not d))
+                               ;; The first argument may be captured through selection
+                               `(if mark-active
+                                    (pen-selected-text)
+                                  (if ,(> (length (s-lines example)) 1)
+                                      (etv ,example)
+                                    (read-string-hist ,(concat v ": ") ,example)))
+                             `(if ,(> (length (s-lines example)) 1)
+                                  (etv ,example)
+                                (if d
+                                    (eval d)
+                                  (read-string-hist ,(concat v ": ") ,example)))))
+                         do
+                         (progn
+                           (setq iteration (+ 1 iteration))
+                           (message (str iteration)))))))
 
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
