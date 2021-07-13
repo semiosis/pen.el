@@ -53,4 +53,6 @@
             (message (str (car company-backends))))
         (call-interactively 'company-complete)))))
 
+(define-key global-map (kbd "H-TAB c") 'pen-company-complete)
+
 (provide 'pen-company)
