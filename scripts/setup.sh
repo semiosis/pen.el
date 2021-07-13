@@ -77,4 +77,4 @@ test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
 
 ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
 
-emacs -nw --eval "(kill-emacs)"
+unbuffer emacs -nw --eval "(kill-emacs)"
