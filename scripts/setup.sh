@@ -9,7 +9,7 @@ agi() {
     apt install -y "$@"
 }
 
-cd ~
+cd
 agi git python3 vim emacs mosh curl make xsel
 
 # For nlsh and ii
@@ -68,6 +68,12 @@ rustc --version | grep -q " 1.5" || curl --proto '=https' --tlsv1.2 -sSf https:/
 cd "$EMACSD/emacs-yamlmod"
 source $HOME/.cargo/env
 make -j 4 || :
+)
+
+# This is kinda optional but will give you a web-facing Pen
+(
+cd
+git clone "https://github.com/paradoxxxzero/butterfly"
 )
 
 (
