@@ -108,4 +108,4 @@
 
 ;; Automatically check if OpenAI key exists and ask for it otherwise
 (call-interactively 'pen-add-key-openai)
-(call-interactively 'pen-add-key-booste)
+;; (call-interactively 'pen-add-key-booste)
