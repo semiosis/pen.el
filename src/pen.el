@@ -334,7 +334,7 @@ Function names are prefixed with pen-pf- for easy searching"
                              `(if ,(> (length (s-lines example)) 1)
                                   (etv ,example)
                                 (if d
-                                    (eval d)
+                                    (eval-string d)
                                   (read-string-hist ,(concat v ": ") ,example)))))
                          do
                          (progn

@@ -1,3 +1,7 @@
+(defun eval-string (string)
+  "Evaluate elisp code stored in a string."
+  (eval (car (read-from-string (format "(progn %s)" string)))))
+
 (defun pcre-replace-string (pat rep s &rest body)
   "Replace pat with rep in s and return the result.
 The string replace part is still a regular emacs replacement pattern, not PCRE"
