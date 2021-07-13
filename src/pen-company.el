@@ -40,7 +40,7 @@
     (setq pen-company-selected-backends
           (list
            (intern (fz pen-company-all-backends
-                        nil nil "pen-company-complete select:")))))
+                       nil nil "pen-company-complete select:")))))
    ((>= (prefix-numeric-value current-prefix-arg) 4)
     (setq pen-company-selected-backends
           (-uniq
