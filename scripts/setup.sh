@@ -12,6 +12,9 @@ agi() {
 cd
 agi git python3 vim emacs mosh curl make xsel locales
 
+locale-gen en_IN.utf-8
+export LANG=en_US
+
 # For nlsh and ii
 agi rlwrap
 
