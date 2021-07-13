@@ -433,6 +433,9 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-contrib.el
 (require 'pen-contrib)
 
+;; http://github.com/semiosis/pen.el/blob/master/pen-selected.el
+(require 'pen-selected)
+
 ;; http://github.com/semiosis/pen.el/blob/master/pen-right-click-menu.el
 (require 'pen-right-click-menu)
 
