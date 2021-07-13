@@ -169,7 +169,7 @@
                          (->> (glob (concat rd "/*"))
                            (mapcar 'e/cat)
                            (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
-                           (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-) r)))
+                           (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right) r)))
                            (mapcar (lambda (r) (if (and ,postprocessor (sor ,postprocessor)) (pen-sn ,postprocessor r) r)))
                            (mapcar (lambda (r) (if (and (variable-p 'prettify)
                                                         prettify
