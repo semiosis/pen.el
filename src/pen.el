@@ -72,8 +72,12 @@
   `(define-prompt-function
      ,@body))
 
-(defun define-prompt-function (func-name func-sym var-syms doc prompt iargs prettifier cache path var-slugs n-collate filter completion
-                                         lm-command stop-sequences stop-sequence max-tokens temperature top-p engine
+(defun define-prompt-function (func-name func-sym var-syms var-defaults
+                                         doc prompt iargs prettifier
+                                         cache path var-slugs n-collate
+                                         filter completion lm-command
+                                         stop-sequences stop-sequence
+                                         max-tokens temperature top-p engine
                                          no-trim-start no-trim-end
                                          preprocessors postprocessor
                                          prompt-filter n-completions)
@@ -350,8 +354,8 @@ Function names are prefixed with pen-pf- for easy searching"
                          func-sym
                          (sor title))
                     (let ((funcsym (defpf
-                                     func-name func-sym var-syms doc
-                                     prompt iargs prettifier
+                                     func-name func-sym var-syms var-defaults
+                                     doc prompt iargs prettifier
                                      cache path var-slugs n-collate
                                      filter completion lm-command
                                      stop-sequences stop-sequence
