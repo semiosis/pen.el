@@ -1,0 +1,27 @@
+(defun pen-add-key-booste ()
+  (interactive)
+  (let ((penconfdir (f-join user-home-directory ".pen"))
+        (pen-booste-key-file-path (f-join user-home-directory ".pen" "booste_api_key")))
+    (if (not (f-dir-p penconfdir))
+        (f-mkdir penconfdir))
+    (if (not (f-file-p pen-booste-key-file-path))
+        (let ((key (read-passwd "booste key: ")))
+          (if (sor key)
+              (progn
+                (f-touch pen-booste-key-file-path)
+                (f-write-text key 'utf-8 pen-booste-key-file-path)))))))
+
+(defun pen-add-key-openai ()
+  (interactive)
+  (let ((penconfdir (f-join user-home-directory ".pen"))
+        (pen-openai-key-file-path (f-join user-home-directory ".pen" "openai_api_key")))
+    (if (not (f-dir-p penconfdir))
+        (f-mkdir penconfdir))
+    (if (not (f-file-p pen-openai-key-file-path))
+        (let ((key (read-passwd "OpenAI key: ")))
+          (if (sor key)
+              (progn
+                (f-touch pen-openai-key-file-path)
+                (f-write-text key 'utf-8 pen-openai-key-file-path)))))))
+
+(provide 'pen-configure)
