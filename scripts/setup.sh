@@ -73,7 +73,7 @@ make -j 4 || :
 # This is kinda optional but will give you a web-facing Pen
 (
 cd
-git clone "https://github.com/paradoxxxzero/butterfly"
+git clone --depth 1 "https://github.com/paradoxxxzero/butterfly"
 )
 
 (
