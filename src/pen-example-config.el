@@ -88,6 +88,18 @@
     (defvar user-home-directory nil))
 (setq user-home-directory (or user-home-directory "/root"))
 
+;; Company
+(setq company-auto-complete nil)
+(setq company-auto-complete-chars '())
+(setq company-minimum-prefix-length 0)
+(setq company-idle-delay 0)
+(setq company-minimum-prefix-length 1)
+(setq company-tooltip-limit 20) ; bigger popup window
+(setq company-idle-delay 0.3)  ; decrease delay before autocompletion popup shows
+(setq company-echo-delay 0)    ; remove annoying blinking
+(setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; Automatically check if OpenAI key exists and ask for it otherwise
 (let ((penconfdir (f-join user-home-directory ".pen"))
       (pen-openai-key-file-path (f-join user-home-directory ".pen" "openai_api_key")))
