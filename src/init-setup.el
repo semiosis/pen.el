@@ -9,6 +9,8 @@
 ;; Install dependencies
 (package-install 'org-brain)
 (package-install 'dash)
+(package-install 'popup)
+(package-install 'right-click-context)
 (package-install 'projectile)
 (package-install 'iedit)
 (package-install 'ht)

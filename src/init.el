@@ -10,6 +10,8 @@
 ;; Require dependencies
 (require 'org-brain)
 (require 'dash)
+(require 'popup)
+(require 'right-click-context)
 (require 'projectile)
 (require 'iedit)
 (require 'ht)
