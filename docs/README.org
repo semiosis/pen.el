@@ -1,6 +1,6 @@
 * Pen project timeline
 + Stage 1 - This is a dockerized =pen.el= that makes use of both GPT-3 and GPT-j.
-  + Implementation [2/5]
+  + Implementation [3/5]
     - [X] emacs-lisp functions are generated from YAML =.prompt= files
     - [X] Use built-in elisp functions for portability
     - [ ] Prompt discovery
@@ -10,7 +10,7 @@
       - [ ] Shell interface to OpenAI to python
       - [ ] GPT-j interface
         - [[./gpt-j.org]]
-    - [ ] Dockerize Pen
+    - [X] Dockerize Pen
       - https://github.com/semiosis/pen-docker/
 + Stage 2 - This is a collaborative =pen.el= with an exploration tool like loom (https://github.com/socketteer/loom)
   - [ ] Generations stored in Datomic
