@@ -169,7 +169,7 @@
                          (->> (glob (concat rd "/*"))
                            (mapcar 'e/cat)
                            (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
-                           (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))
+                           (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-) r)))
                            (mapcar (lambda (r) (if (and ,postprocessor (sor ,postprocessor)) (pen-sn ,postprocessor r) r)))
                            (mapcar (lambda (r) (if (and (variable-p 'prettify)
                                                         prettify
@@ -432,6 +432,12 @@ May use to generate code from comments."
 
 ;; http://github.com/semiosis/pen.el/blob/master/pen-contrib.el
 (require 'pen-contrib)
+
+;; http://github.com/semiosis/pen.el/blob/master/pen-right-click-menu.el
+(require 'pen-right-click-menu)
+
+;; http://github.com/semiosis/pen.el/blob/master/pen-mouse.el
+(require 'pen-mouse)
 
 ;; http://github.com/semiosis/pen.el/blob/master/pen-prompt-description.el
 (require 'pen-prompt-description)

@@ -114,8 +114,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (defun gpt-test-haskell ()
   (let ((lang
-         ;; (pen-pf-test-if-text-is-haskell (pen-selected-text))
-         ;; Using 
          (detect-language (pen-selected-text))))
     (message (concat "Language:" lang))
     (istr-match-p "Haskell" (message lang))))
@@ -126,3 +124,5 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("GPT-3: Convert Haskell to Clojure" :call pen-pf-translate-haskell-to-clojure :if (gpt-test-haskell))
         ("pen (code)"
          ("asktutor" :call pen-tutor-mode-assist :if (major-mode-p 'prog-mode)))))
+
+(require 'pen-right-click-menu)
