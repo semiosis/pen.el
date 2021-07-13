@@ -442,6 +442,9 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-mouse.el
 (require 'pen-mouse)
 
+;; http://github.com/semiosis/pen.el/blob/master/pen-configure.el
+(require 'pen-configure)
+
 ;; http://github.com/semiosis/pen.el/blob/master/pen-prompt-description.el
 (require 'pen-prompt-description)
 
