@@ -18,7 +18,7 @@ agi rlwrap
 # For emacs-yamlmod
 agi clang libclang1
 
-test -d emacs || git clone "https://github.com/emacs-mirror/emacs"
+test -d emacs || git clone --depth 1 "https://github.com/emacs-mirror/emacs"
 
 # For building emacs
 # --with-modules is required to load emacs-yamlmod
@@ -50,8 +50,8 @@ agi moreutils
 
 (
 cd "$EMACSD"
-test -d prompts || git clone "https://github.com/semiosis/prompts"
-test -d emacs-yamlmod || git clone "https://github.com/perfectayush/emacs-yamlmod"
+test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
+test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
 
 ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
@@ -72,7 +72,7 @@ make -j 4 || :
 
 (
 cd "$EMACSD"
-test -d "pen.el" || git clone "https://github.com/semiosis/pen.el"
+test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
 )
 
 ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
