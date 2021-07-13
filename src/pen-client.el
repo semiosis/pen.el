@@ -2,6 +2,6 @@
 
 ;; e:pen-server.el
 
-;; ../scripts/gpt-neo-client.py
+;; e:../scripts/gpt-neo-client.py
 
 (provide 'pen-client)
