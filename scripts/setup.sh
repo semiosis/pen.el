@@ -54,7 +54,7 @@ test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
 test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
 
-ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
+ln -sf ~/.emacs.d/pen.el/src/init-setup.el ~/.emacs
 
 mkdir -p "$EMACSD/comint-history"
 
@@ -87,3 +87,5 @@ ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
 export TERM=xterm
 unbuffer emacs -nw --eval "(kill-emacs)"
 )
+
+ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
