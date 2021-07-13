@@ -28,7 +28,7 @@
     ;; pen-complete-long
     company-org-block))
 
-(defset pen-company-selected-backends '(pen-complete-long))
+(defset pen-company-selected-backends '(pen-company-filetype))
 
 (defun pen-company-complete ()
   (interactive)
@@ -54,5 +54,6 @@
         (call-interactively 'company-complete)))))
 
 (define-key global-map (kbd "H-TAB c") 'pen-company-complete)
+(define-key global-map (kbd "H-TAB l") 'pen-complete-long)
 
 (provide 'pen-company)
