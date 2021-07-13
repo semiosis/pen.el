@@ -230,8 +230,10 @@ Function names are prefixed with pf- for easy searching"
                      (cache (pen-yaml-test yaml "cache"))
                      ;; openai-complete.sh is the default LM completion command
                      ;; but the .prompt may specify a different one
-                     (lm-command (or (ht-get yaml "lm-command")
-                                     "openai-complete.sh"))
+                     (lm-command (or
+                                  pen-override-lm-command
+                                  (ht-get yaml "lm-command")
+                                  pen-default-lm-command))
 
                      (in-development (pen-yaml-test yaml "in-development"))
 
