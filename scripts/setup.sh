@@ -85,6 +85,7 @@ test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
 )
 
 (
+export LANG=en_US
 export TERM=xterm
 unbuffer emacs -nw --eval "(kill-emacs)"
 )

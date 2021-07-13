@@ -4,7 +4,7 @@
 
 # export PEN_DEBUG=y
 
-# export LANG=en_US
+export LANG=en_US
 
 export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
