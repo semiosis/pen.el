@@ -1,6 +1,8 @@
 (require 'pen-brain)
 (require 'sx)
 
+(defalias 's-replace-regexp 'replace-regexp-in-string)
+
 (defun f-basename (path)
   (pen-snc (cmd "basename" path)))
 
