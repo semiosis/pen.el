@@ -212,6 +212,8 @@ https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
 
 ** Related projects
+I may need help with these projects.
+
 *** =examplary=
 Examplary is a Domain Specific Language, or
 set of macros embedded in lisp which
@@ -223,10 +225,18 @@ via sets of examples.
 https://github.com/semiosis/examplary
 
 *** =lm-complete=
-lm-complete is a language completer that aims
-to  a bunch of alternative completion
+=lm-complete= is a language completer that aims
+to unify a bunch of alternative completion under one umbrella.
 
 https://github.com/semiosis/lm-complete
+
+**** This book by Mark Watson provides some reasonable blueprints
+https://leanpub.com/clojureai
+
+*** =sentext=: A DSL that encodes provenience
+- Encode into the text the origin of the text
+
+https://github.com/semiosis/sentext
 
 ** Alternative docker invocations
 This will check out the code and give access
