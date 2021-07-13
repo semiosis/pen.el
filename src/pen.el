@@ -314,7 +314,7 @@ Function names are prefixed with pen-pf- for easy searching"
                      (iargs
                       (let ((iteration 0))
                         (cl-loop
-                         for tp in (-zip-fill nil var-syms var-defaults)
+                         for tp in (-zip-fill nil var-slugs var-defaults)
                          collect
                          (let ((example (or (sor (nth iteration examples)
                                                  "")
@@ -333,8 +333,8 @@ Function names are prefixed with pen-pf- for easy searching"
                                     (read-string-hist ,(concat v ": ") ,example)))
                              `(if ,(> (length (s-lines example)) 1)
                                   (etv ,example)
-                                (if d
-                                    (eval-string (str d))
+                                (if ,d
+                                    (eval-string ,(str d))
                                   (read-string-hist ,(concat v ": ") ,example)))))
                          do
                          (progn
