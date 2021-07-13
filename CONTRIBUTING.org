@@ -34,4 +34,7 @@ https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 
 ** Contributors
 Thank you =@Samin= and =@erik= for the
-=booste= API support in integrating GPT-j.
+=booste= API support in integrating a free to
+use GPT-2.
+
+Please visit https://www.booste.io/ to get your key.
