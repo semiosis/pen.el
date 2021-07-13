@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # A string preprocessor/postprocessor library for pen.el
+# With an emphasis on string transformations, rather than characters.
 
 sn="$(basename "$0")"
 
