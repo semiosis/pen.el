@@ -112,17 +112,22 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     (unless nowait
       (popup-delete menu))))
 
+;; Example
 (defun gpt-test-haskell ()
   (let ((lang
          (detect-language (pen-selected-text))))
     (message (concat "Language:" lang))
     (istr-match-p "Haskell" (message lang))))
 
-;; Here is an example of a GPT-3 right click menu 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity)
-        ("GPT-3: Convert Haskell to Clojure" :call pen-pf-translate-haskell-to-clojure :if (gpt-test-haskell))
+        ("pen: translate" :call pf-translate-from-world-language-x-to-y)
+        ("pen: transpile" :call pf-transpile-from-programming-language-x-to-y)
+        ("pen (prose)"
+         ("pick up line" :call pen-tutor-mode-assist :if (major-mode-p 'prog-mode))
+         ("translate" :call pf-translate-from-world-language-x-to-y))
         ("pen (code)"
-         ("asktutor" :call pen-tutor-mode-assist :if (major-mode-p 'prog-mode)))))
+         ("asktutor" :call pen-tutor-mode-assist :if (major-mode-p 'prog-mode))
+         ("transpile" :call pf-transpile-from-programming-language-x-to-y))))
 
 (require 'pen-right-click-menu)
