@@ -28,7 +28,7 @@
     ("model" . "davinci")))
 
 (defun pen-openai-list-engines ()
-  (str2list
+  (pen-str2list
    (snc "pen-openai api engines.list | jq -r '.data[].id'")))
 (memoize 'pen-openai-list-engines)
 
