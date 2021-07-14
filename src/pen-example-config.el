@@ -70,14 +70,14 @@
 
 ;; Prompts discovery
 ;; This is where discovered prompts repositories are placed
-(setq pen-prompts-library-directory (concat user-emacs-directory "/prompts-library"))
+(setq pen-prompts-library-directory (f-join user-emacs-directory "prompts-library"))
 ;; This is how many repositories deep pen will look for new prompts repositories that are linked to eachother
 (setq pen-prompt-discovery-recursion-depth 5)
 ;; Personal prompts repository
-(setq pen-prompts-directory (concat user-emacs-directory "/prompts"))
+(setq pen-prompts-directory (f-join user-emacs-directory "prompts"))
 
 ;; nlsh
-(setq pen-nlsh-histdir (concat user-emacs-directory "/comint-history/"))
+(setq pen-nlsh-histdir (f-join user-emacs-directory "comint-history/"))
 
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)
