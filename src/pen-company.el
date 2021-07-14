@@ -30,6 +30,8 @@
 
 (defset pen-company-selected-backends '(pen-company-filetype))
 
+;; TODO
+
 ;; TODO: Encode where the text came from into the emacs buffer using emacs text properties
 (defun pen-company-complete ()
   (interactive)
