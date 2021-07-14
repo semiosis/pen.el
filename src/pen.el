@@ -400,7 +400,9 @@ Function names are prefixed with pf- for easy searching"
   "Long-form completion. This will generate lots of text.
 May use to generate code from comments."
   (interactive (list (pen-preceding-text) t))
-  (let* ((response (pf-generic-file-type-completion (detect-language) preceding-text)))
+  (let* ((max-tokens 200)
+         (stop-sequence "##long complete##")
+         (response (pf-generic-file-type-completion (detect-language) preceding-text)))
     (if tv
         (etv response)
       response)))
