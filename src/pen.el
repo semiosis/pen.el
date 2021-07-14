@@ -125,9 +125,9 @@
 
              (final-prompt (string-replace "<:pp>" "" final-prompt))
 
-             (final-prompt (if prompt-filter
-                               (pen-sn prompt-filter final-prompt)
-                             prompt-filter))
+             (final-prompt (if ,prompt-filter
+                               (pen-sn ,prompt-filter final-prompt)
+                             ,prompt-filter))
 
              ;; check for cache update
              (pen-sh-update
