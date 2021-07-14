@@ -8,6 +8,7 @@
 ;; (package-refresh-contents)
 
 ;; Require dependencies
+(require 'shut-up)
 (require 'org-brain)
 (require 'dash)
 (require 'popup)
