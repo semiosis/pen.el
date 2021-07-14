@@ -85,9 +85,8 @@
    `(cl-defun ,func-sym ,var-syms
       ,doc
       (interactive ,(cons 'list iargs))
+      (snc "tee -a /tmp/mylog.txt" ,func-name)
       (let* ((final-prompt ,prompt)
-
-             (snc "tee -a /tmp/mylog.txt" ,func-name)
              ;; preprocess the values of the parameters
              (vals
               (cl-loop
