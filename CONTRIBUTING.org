@@ -15,6 +15,16 @@ You may select from one of the roles/tasks or suggest one yourself.
 
 [[./docs/contributing/roles.org]]
 
+**** Prompt Engineering
+https://github.com/orgs/semiosis/teams/prompt-engineering
+
+Creating prompts.
+
+**** Contrib
+https://github.com/orgs/semiosis/teams/prompt-engineering
+
+Extending emacs packages with prompt functions.
+
 *** Discord channel
 860104344900599839
 
