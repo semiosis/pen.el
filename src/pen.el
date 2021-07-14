@@ -87,6 +87,7 @@
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
 
+             (snc "tee -a /tmp/mylog.txt" ,func-name)
              ;; preprocess the values of the parameters
              (vals
               (cl-loop
@@ -94,7 +95,7 @@
                (-zip-fill nil ',var-syms ',preprocessors)
                collect
                (let* ((sym (car tp))
-                      (pp (cdr tp))
+                      (pp (snc "tee -a /tmp/mylog.txt" (cdr tp)))
                       (initval (eval sym)))
                  (if pp
                      (sn pp initval)
@@ -294,7 +295,7 @@ Function names are prefixed with pf- for easy searching"
                              (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
                              (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))))
                            "\n"))
-                     
+
                      ;; variables
                      (vars (vector2list (ht-get yaml "vars")))
                      (examples (vector2list (ht-get yaml "examples")))
