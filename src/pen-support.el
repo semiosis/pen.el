@@ -2,8 +2,8 @@
 ;; Debugger entered--Lisp error: (void-function make-closure)
 ;; in f-join.
 ;; It's happening for all f functions.
-(defun pen-f-join (&rest strings)
-  (s-join "/" strings))
+;; (defun pen-f-join (&rest strings)
+;;   (s-join "/" strings))
 
 (defun pen-write-to-file (stdin file_path)
   (ignore-errors (with-temp-buffer
