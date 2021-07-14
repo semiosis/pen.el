@@ -387,7 +387,11 @@ Function names are prefixed with pf- for easy searching"
 
 (defun pen-filter-with-prompt-function ()
   (interactive)
-  (let ((f (fz pen-prompt-functions nil nil "pen filter: ")))
+  (let ((f (fz
+            (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                pen-prompt-functions
+              pen-prompt-filter-functions)
+            nil nil "pen filter: ")))
     (if f
         (filter-selected-region-through-function (intern f)))))
 
