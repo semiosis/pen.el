@@ -87,6 +87,7 @@
   (->> s
     ;; (string-replace ";" "<pen-semicolon>")
     (string-replace "\"" "<pen-doublequote>")
+    (string-replace ":" "<pen-colon>")
     (string-replace "'" "<pen-singlequote>")
     (string-replace "`" "<pen-backtick>")
     (string-replace "\\n" "<pen-notnewline>")
