@@ -1,3 +1,9 @@
+;; To work around an issue with
+;; Debugger entered--Lisp error: (void-function make-closure)
+;; in f-join
+(defun pen-f-join (&rest strings)
+  (s-join "/" strings))
+
 (defun pen-write-to-file (stdin file_path)
   (ignore-errors (with-temp-buffer
                    (insert stdin)
