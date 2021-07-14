@@ -368,9 +368,6 @@ Function names are prefixed with pf- for easy searching"
 
                 ;; var names will have to be slugged, too
 
-                (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
-                (if completion (add-to-list 'pen-prompt-completion-functions funcsym))
-
                 (if alias-slugs
                     (cl-loop for a in alias-slugs do
                              (progn
@@ -387,6 +384,9 @@ Function names are prefixed with pf- for easy searching"
                          (sor title))
                     (let ((funcsym (define-prompt-function)))
                       (add-to-list 'pen-prompt-functions funcsym)
+                      (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
+                      (if completion (add-to-list 'pen-prompt-completion-functions funcsym))
+
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
                       ;; (if cache (memoize funcsym))
