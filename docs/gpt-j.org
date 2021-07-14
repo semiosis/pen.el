@@ -1,6 +1,0 @@
-* Setup commands
-#+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  pip install "git+git://github.com/finetuneanon/transformers.git#egg=transformers"
-  pip install gdown
-  gdown "https://drive.google.com/uc?id=1VXXCMR_ETxOd3rxG4eXxS4-QA5NekB3H"
-#+END_SRC
