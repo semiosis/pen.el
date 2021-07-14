@@ -69,7 +69,7 @@
          (buf (make-comint slug (pen-nsfa cmd dir))))
     (with-current-buffer buf
       (switch-to-buffer buf)
-      (turn-on-comint-history (concat pen-nlsh-histdir slug)))))
+      (turn-on-comint-history (f-join pen-nlsh-histdir slug)))))
 
 (defun nlsh-os (os)
   (interactive (list (fz list-of-sh-operating-systems
