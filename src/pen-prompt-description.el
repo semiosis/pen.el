@@ -10,6 +10,8 @@
 ;; TODO Use pcase
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Destructuring-with-pcase-Patterns.html
 (defun pen-create-prompt (tuple)
-  (interactive (list (pen-select-completion-backend))))
+  (interactive (list (pen-select-completion-backend)))
+  (pcase-let ((`(,title ,script ,engine-list ,available) tuple))
+    (etv available)))
 
 (provide 'pen-prompt-description)
