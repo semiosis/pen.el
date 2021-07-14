@@ -33,28 +33,33 @@
 ;; TODO: Encode where the text came from into the emacs buffer using emacs text properties
 (defun pen-company-complete ()
   (interactive)
-  ;; C-u should add to the backends
-  ;; C-u C-u should erase the backends and select a new one
 
-  (cond
-   ((>= (prefix-numeric-value current-prefix-arg) 16)
-    (setq pen-company-selected-backends
-          (list
-           (intern (fz pen-company-all-backends
-                       nil nil "pen-company-complete select:")))))
-   ((>= (prefix-numeric-value current-prefix-arg) 4)
-    (setq pen-company-selected-backends
-          (-uniq
-           (cons
-            (intern (fz pen-company-all-backends
-                        nil nil "pen-company-complete add:"))
-            pen-company-selected-backends))))
-   (t (let ((company-backends pen-company-selected-backends))
-        (if (equal (length company-backends) 1)
-            (message (str (car company-backends))))
-        (call-interactively 'company-complete)))))
+  (let ((company-backends pen-company-selected-backends))
+    (if (equal (length company-backends) 1)
+        (message (str (car company-backends))))
+    (call-interactively 'company-complete)))
+
+(defun pen-company-complete-choose ()
+  (interactive)
+
+  (setq pen-company-selected-backends
+        (list
+         (intern (fz pen-company-all-backends
+                     nil nil "pen-company-complete select:")))))
+
+(defun pen-company-complete-add ()
+  (interactive)
+
+  (setq pen-company-selected-backends
+        (-uniq
+         (cons
+          (intern (fz pen-company-all-backends
+                      nil nil "pen-company-complete add:"))
+          pen-company-selected-backends))))
 
 (define-key global-map (kbd "H-TAB c") 'pen-company-complete)
+(define-key global-map (kbd "H-TAB f") 'pen-company-complete-choose)
+(define-key global-map (kbd "H-TAB a") 'pen-company-complete-add)
 (define-key global-map (kbd "H-TAB l") 'pen-complete-long)
 
 (provide 'pen-company)
