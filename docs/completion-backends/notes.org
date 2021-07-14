@@ -1,7 +1,5 @@
-** Works with
 - OpenAI API (=GPT-3=)
   - https://beta.openai.com/
-** Other backends will be incorporated
 - =GPT-J=
   - https://github.com/kingoflolz/mesh-transformer-jax
 - =GPT-Neo=
