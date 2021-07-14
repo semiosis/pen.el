@@ -274,6 +274,7 @@ Function names are prefixed with pf- for easy searching"
                      (external-related (vector2list (ht-get yaml "external-related")))
                      (related-prompts (vector2list (ht-get yaml "related-prompts")))
                      (future-titles (vector2list (ht-get yaml "future-titles")))
+
                      (doc (mapconcat
                            'identity
                            (-filter-not-empty-string
@@ -293,11 +294,9 @@ Function names are prefixed with pf- for easy searching"
                              (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
                              (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))))
                            "\n"))
-
                      ;; variables
                      (vars (vector2list (ht-get yaml "vars")))
                      (examples (vector2list (ht-get yaml "examples")))
-                     (preprocessors (vector2list (ht-get yaml "pen-preprocessors")))
                      (var-slugs (mapcar 'slugify vars))
                      (var-syms
                       (let ((ss (mapcar 'intern var-slugs)))
