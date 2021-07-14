@@ -162,6 +162,7 @@
                 `(("PEN_PROMPT" ,(tv (str
                                       (->> final-prompt
                                         (string-replace "\"" "<pen-doublequote>")
+                                        (string-replace "\"" "<pen-singlequote>")
                                         (string-replace "`" "<pen-backtick>")
                                         (string-replace "\\n" "<pen-notnewline>")
                                         (string-replace "$" "<pen-dollar>")))))
