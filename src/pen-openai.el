@@ -3,7 +3,7 @@
 ;; Model list taken from loom
 ;; https://github.com/socketteer/loom/blob/main/model.py
 
-;; Use pen-openai-list-engines
+;; Use (pen-openai-list-engines)
 (defset openai-models
   (list
    "ada"
