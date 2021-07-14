@@ -110,17 +110,16 @@
               ;; manually run interactive expressions
               ;; when they exist.
               (if (not (interactive-p))
-                  (cl-loop
-                   for tp in
-                   (-zip-fill nil ',var-syms ',iargs)
-                   collect
-                   (let* ((sym (car tp))
-                          (iarg (cdr tp))
-                          (initval (eval sym)))
-                     (if (and (not initval)
-                              iarg)
-                         (eval iarg)
-                       initval)))
+                  (progn
+                    (cl-loop
+                     for sym in ',var-syms
+                     for iarg in ',iargs
+                     collect
+                     (let* ((initval (eval sym)))
+                       (if (and (not initval)
+                                iarg)
+                           (eval iarg)
+                         initval))))
                 vals))
 
              ;; preprocess the values of the parameters
