@@ -348,6 +348,7 @@ Function names are prefixed with pf- for easy searching"
                              (if future-titles (concat "\nfuture-titles:\n" (pen-list-to-orglist future-titles)))
                              (if examples (concat "\nexamples:\n" (pen-list-to-orglist examples)))
                              (if preprocessors (concat "\npreprocessors:\n" (pen-list-to-orglist preprocessors)))
+                             (if var-defaults (concat "\nvar-defaults:\n" (pen-list-to-orglist var-defaults)))
                              (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
                              (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))))
                            "\n"))
