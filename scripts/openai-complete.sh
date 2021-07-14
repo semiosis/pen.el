@@ -6,10 +6,7 @@
 # openai-complete.sh
 
 # OPENAI_API_KEY="insert key here and uncomment this line"
-
-openai() {
-    python3 `which openai` "$@"
-}
+export OPENAI_API_KEY
 
 p () {
     {
@@ -56,17 +53,6 @@ if test "$PEN_DEBUG" = "y"; then
     exit 1
 fi
 
-if test -s $HOME/.pen/openai_api_key; then
-    : "${OPENAI_API_KEY:="$(cat $HOME/.pen/openai_api_key)"}"
-fi
-
-test -n "$OPENAI_API_KEY" || {
-    echo "OPENAI_API_KEY not given to script"
-    exit 1
-}
-
-export OPENAI_API_KEY
-
 # tf_prompt="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
 # trap "rm \"$tf_prompt\" 2>/dev/null" 0
 
@@ -93,7 +79,7 @@ PEN_PROMPT="$(p "$PEN_PROMPT")"
 IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE");typeset -p PEN_STOP_SEQUENCE &>/dev/null
 
 # Will it complain if PEN_STOP_SEQUENCE is empty?
-openai api \
+pen-openai api \
     completions.create \
     -e "$PEN_ENGINE" \
     -t "$PEN_TEMPERATURE" \

@@ -4,5 +4,19 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-export OPENAI_API_KEY="$(myrc .openai_api_key)"
+if test -s $HOME/.pen/openai_api_key; then
+    : "${OPENAI_API_KEY:="$(cat $HOME/.pen/openai_api_key)"}"
+fi
+
+test -n "$OPENAI_API_KEY" || {
+    echo "OPENAI_API_KEY not given to script"
+    exit 1
+}
+
+export OPENAI_API_KEY
+
+openai() {
+    python3 `which openai` "$@"
+}
+
 openai "$@"
