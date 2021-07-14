@@ -1,7 +1,7 @@
 ;; To work around an issue with
 ;; Debugger entered--Lisp error: (void-function make-closure)
 ;; in f-join.
-;; It's happening for all f functions.
+;; It's happening for all f functions on pen-debian.
 ;; Try recompiling emacs
 ;; (defun pen-f-join (&rest strings)
 ;;   (s-join "/" strings))
