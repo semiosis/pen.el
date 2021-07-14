@@ -28,6 +28,8 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 
 ** Goals
 - Programmatically navigate =GPT-3=, =GPT-j= and future language models
+- Encode provenance of text via text properties and a DSL
+  - https://github.com/semiosis/sentext
 - Peer-to-peer
 - Create useful prompts
 - Prototype NLP tasks by creating prompts
