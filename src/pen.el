@@ -125,6 +125,10 @@
 
              (final-prompt (string-replace "<:pp>" "" final-prompt))
 
+             (final-prompt (if prompt-filter
+                               (pen-sn prompt-filter final-prompt)
+                             prompt-filter))
+
              ;; check for cache update
              (pen-sh-update
               (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
@@ -270,7 +274,7 @@ Function names are prefixed with pf- for easy searching"
                      (no-trim-end (pen-yaml-test yaml "no-trim-end"))
                      (examples (vector2list (ht-get yaml "examples")))
                      (preprocessors (vector2list (ht-get yaml "preprocessors")))
-                     (prompt-filter (ht-get yaml "prompt-filter "))
+                     (prompt-filter (ht-get yaml "prompt-filter"))
                      (postprocessor (ht-get yaml "postprocessor"))
                      (n-collate (or (ht-get yaml "n-collate")
                                     1))
