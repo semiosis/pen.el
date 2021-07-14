@@ -83,6 +83,14 @@
         (etv (pps funs))
       funs)))
 
+(defun pen-encode-string (s)
+  (->> s
+    (string-replace "\"" "<pen-doublequote>")
+    (string-replace "'" "<pen-singlequote>")
+    (string-replace "`" "<pen-backtick>")
+    (string-replace "\\n" "<pen-notnewline>")
+    (string-replace "$" "<pen-dollar>")))
+
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
@@ -136,7 +144,7 @@
                  (cl-loop
                   for val in vals do
                   (setq final-prompt (string-replace (format "<%d>" i) val final-prompt))
-                  (setq  i (+ 1 i)))
+                  (setq i (+ 1 i)))
                  final-prompt)))
 
              (prompt-end-pos (or (string-search "<:pp>" ,prompt)
@@ -159,13 +167,7 @@
                (sh-construct-envs
                 ;; This is a bit of a hack for \n in prompts
                 ;; See `pen-restore-chars`
-                `(("PEN_PROMPT" ,(tv (str
-                                      (->> final-prompt
-                                        (string-replace "\"" "<pen-doublequote>")
-                                        (string-replace "'" "<pen-singlequote>")
-                                        (string-replace "`" "<pen-backtick>")
-                                        (string-replace "\\n" "<pen-notnewline>")
-                                        (string-replace "$" "<pen-dollar>")))))
+                `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS"
@@ -175,10 +177,11 @@
                       ,max-tokens))
                   ("PEN_TEMPERATURE" ,,temperature)
                   ("PEN_STOP_SEQUENCE"
-                   ,(if (variable-p 'stop-sequence)
-                        ;; Make overridable
-                        (eval 'stop-sequence)
-                      ,stop-sequence))
+                   ,(pen-encode-string
+                     (str (if (variable-p 'stop-sequence)
+                              ;; Make overridable
+                              (eval 'stop-sequence)
+                            ,stop-sequence))))
                   ("PEN_TOP_P" ,,top-p)
                   ("PEN_CACHE" ,,cache)
                   ("PEN_N_COMPLETIONS" ,,n-completions)
