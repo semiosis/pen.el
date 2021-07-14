@@ -39,7 +39,7 @@ care."
          (funcslugdata (if (< 150 (length funcpps))
                            (md5 funcpps)
                          funcpps))
-         (funcslug (slugify (s-join "-" (str2list funcslugdata))))
+         (funcslug (slugify (s-join "-" (pen-str2list funcslugdata))))
          (tablename (concat "table-" funcslug))
          (timeoutsname (concat "timeouts-" funcslug))
          (table (make-or-load-hash-table tablename '(:test equal)))
