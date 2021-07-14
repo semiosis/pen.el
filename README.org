@@ -32,7 +32,7 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
   - https://github.com/semiosis/pentext
 - Peer-to-peer
 - Integrate =pen.el= with many other emacs packages
-  - http://github.com/mullikine/pen.el-contrib
+  - http://github.com/semiosis/pen.el-contrib
 - Create, use and maintain useful prompts
 - Prototype NLP tasks by creating prompts
   - Substitute external tools for prototypes
