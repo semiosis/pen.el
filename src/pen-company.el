@@ -30,6 +30,7 @@
 
 (defset pen-company-selected-backends '(pen-company-filetype))
 
+;; * TODO Encode where the text came from into the emacs buffer using emacs text properties
 (defun pen-company-complete ()
   (interactive)
   ;; C-u should add to the backends
@@ -46,7 +47,7 @@
           (-uniq
            (cons
             (intern (fz pen-company-all-backends
-                         nil nil "pen-company-complete add:"))
+                        nil nil "pen-company-complete add:"))
             pen-company-selected-backends))))
    (t (let ((company-backends pen-company-selected-backends))
         (if (equal (length company-backends) 1)
