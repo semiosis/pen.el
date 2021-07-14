@@ -368,8 +368,8 @@ Function names are prefixed with pf- for easy searching"
 
                 ;; var names will have to be slugged, too
 
-                (if filter (add-to-list 'pen-prompt-filter-functions a))
-                (if completion (add-to-list 'pen-prompt-completion-functions a))
+                (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
+                (if completion (add-to-list 'pen-prompt-completion-functions funcsym))
 
                 (if alias-slugs
                     (cl-loop for a in alias-slugs do
