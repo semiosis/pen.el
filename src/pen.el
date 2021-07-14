@@ -127,7 +127,7 @@
 
              (final-prompt (if ,prompt-filter
                                (pen-sn ,prompt-filter final-prompt)
-                             ,prompt-filter))
+                             final-prompt))
 
              ;; check for cache update
              (pen-sh-update
