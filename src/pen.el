@@ -57,6 +57,8 @@
   :keymap pen-map)
 
 (defset pen-prompt-functions nil)
+(defset pen-prompt-filter-functions nil)
+(defset pen-prompt-completion-functions nil)
 (defset pen-prompt-functions-meta nil)
 
 (defun pen-yaml-test (yaml key)
@@ -219,6 +221,8 @@ Function names are prefixed with pf- for easy searching"
   (interactive)
 
   (setq pen-prompt-functions nil)
+  (setq pen-prompt-filter-functions nil)
+  (setq pen-prompt-completion-functions nil)
   (setq pen-prompt-functions-meta nil)
 
   (noupd
@@ -357,18 +361,17 @@ Function names are prefixed with pf- for easy searching"
 
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
-                (if completion
-                    nil
-                  ;; TODO Add to company-mode completion functions
-                  )
-
                 ;; var names will have to be slugged, too
 
                 (if alias-slugs
                     (cl-loop for a in alias-slugs do
                              (progn
                                (defalias a func-sym)
-                               (add-to-list 'pen-prompt-functions a))))
+                               (add-to-list 'pen-prompt-functions a)
+                               (if filter
+                                   (add-to-list 'pen-prompt-filter-functions a))
+                               (if completion
+                                   (add-to-list 'pen-prompt-completion-functions a)))))
 
                 (if (and (not in-development)
                          (sor func-name)
