@@ -159,11 +159,12 @@
                (sh-construct-envs
                 ;; This is a bit of a hack for \n in prompts
                 ;; See `pen-restore-chars`
-                `(("PEN_PROMPT" ,(str
-                                  (->> final-prompt
-                                    (string-replace "`" "<pen-backtick>")
-                                    (string-replace "\\n" "<pen-notnewline>")
-                                    (string-replace "$" "<pen-dollar>"))))
+                `(("PEN_PROMPT" ,(tv (str
+                                      (->> final-prompt
+                                        (string-replace "\"" "<pen-doublequote>")
+                                        (string-replace "`" "<pen-backtick>")
+                                        (string-replace "\\n" "<pen-notnewline>")
+                                        (string-replace "$" "<pen-dollar>")))))
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS"
