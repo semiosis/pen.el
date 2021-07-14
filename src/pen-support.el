@@ -1,3 +1,9 @@
+(defun pen-write-to-file (stdin file_path)
+  (ignore-errors (with-temp-buffer
+                   (insert stdin)
+                   (delete-file file_path)
+                   (write-file file_path))))
+
 (defun eval-string (string)
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))
