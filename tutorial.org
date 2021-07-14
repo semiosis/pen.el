@@ -1,7 +1,4 @@
 #+TITLE: Pen Tutorial
-#+DATE: <2021-07-11>
-#+AUTHOR: Shane Mulligan
-#+KEYWORDS: gpt emacs pen
 
 ** Summary
 This is a tutorial for how to use =pen.el=.
