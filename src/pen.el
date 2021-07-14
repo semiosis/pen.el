@@ -218,7 +218,7 @@
                                                      r)))
                                (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
                                (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r))))
-                           (shut-up (message "Try UPDATE=y or debugging")))))))
+                           (list (message "Try UPDATE=y or debugging")))))))
 
              ;; (result
              ;;  (progn
