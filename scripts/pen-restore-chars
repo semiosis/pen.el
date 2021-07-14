@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Can probably take back out the semicolon
+# -e "s/<pen-semicolon>/;/g" \
+
 # cat
 sed -e "s/<pen-notnewline>/\\\\n/g" \
     -e "s/<pen-dollar>/\$/g" \
