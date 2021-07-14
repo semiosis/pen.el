@@ -70,7 +70,7 @@
 
 ;; Prompts discovery
 ;; This is where discovered prompts repositories are placed
-(setq pen-prompt-library-dir (concat user-emacs-directory "/prompts-library"))
+(setq pen-prompts-library-directory (concat user-emacs-directory "/prompts-library"))
 ;; This is how many repositories deep pen will look for new prompts repositories that are linked to eachother
 (setq pen-prompt-discovery-recursion-depth 5)
 ;; Personal prompts repository

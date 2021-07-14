@@ -29,7 +29,7 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-prompt-library-dir (concat user-emacs-directory "/prompts-library")
+(defcustom pen-prompts-library-directory (concat user-emacs-directory "/prompts-library")
   "The directory where prompts repositories are stored"
   :type 'string
   :group 'pen
