@@ -69,13 +69,19 @@
 
 (defun pen-list-filter-functions ()
   (interactive)
-  (etv (pps (-filter (lambda (y) (pen-yaml-test y "filter"))
-                     pen-prompt-functions-meta))))
+  (let ((funs (-filter (lambda (y) (pen-yaml-test y "filter"))
+                       pen-prompt-functions-meta)))
+    (if (interactive-p)
+        (etv (pps funs))
+      funs)))
 
-(defun pen-list-completer-functions ()
+(defun pen-list-completion-functions ()
   (interactive)
-  (etv (pps (-filter (lambda (y) (pen-yaml-test y "completion"))
-                     pen-prompt-functions-meta))))
+  (let ((funs (-filter (lambda (y) (pen-yaml-test y "completion"))
+                       pen-prompt-functions-meta)))
+    (if (interactive-p)
+        (etv (pps funs))
+      funs)))
 
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
