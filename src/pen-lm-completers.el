@@ -11,6 +11,8 @@
                  (flatten-once
                   (loop for trip in pen-completion-backends collect
                         (pen-cartesian-product (list (car trip)) (list (nth 1 trip)) (nth 2 trip)))))))
-    (fz options)))
+    (fz
+     options
+     nil nil "pen completion backend: ")))
 
 (provide 'pen-lm-completers)
