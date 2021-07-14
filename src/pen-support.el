@@ -4,6 +4,18 @@
                    (delete-file file_path)
                    (write-file file_path))))
 
+(defun pen-cartesian-product (&rest ls)
+  (let* ((len (length ls))
+         (result (cond
+                  ((not ls) nil)
+                  ((equal 1 len) ls)
+                  (t
+                   (-reduce 'cartesian-product-2 ls)))))
+    (if (< 2 len)
+        (mapcar (lambda (l) (unsnd l (- len 2)))
+                result)
+      result)))
+
 (defun eval-string (string)
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))
