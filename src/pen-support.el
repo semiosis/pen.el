@@ -419,7 +419,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (str (buffer-substring (region-beginning) (region-end))))
    (iedit-mode
     (iedit-current-occurrence-string))
-   (read-string "pen-selected-text: ")))
+   (t (read-string "pen-selected-text: "))))
 
 (defalias 'pps 'pp-to-string)
 
