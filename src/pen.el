@@ -151,7 +151,8 @@
              (final-prompt (string-replace "<:pp>" "" final-prompt))
 
              (final-prompt (if ,prompt-filter
-                               (pen-snc ,prompt-filter final-prompt)
+                               (sor (pen-snc ,prompt-filter final-prompt)
+                                    (concat "prompt-filter " ,prompt-filter " failed."))
                              final-prompt))
 
              ;; check for cache update
