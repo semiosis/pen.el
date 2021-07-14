@@ -74,7 +74,7 @@
 ;; This is how many repositories deep pen will look for new prompts repositories that are linked to eachother
 (setq pen-prompt-discovery-recursion-depth 5)
 ;; Personal prompts repository
-(setq pen-prompt-repo-dir (concat user-emacs-directory "/prompts"))
+(setq pen-prompts-directory (concat user-emacs-directory "/prompts"))
 
 ;; nlsh
 (setq pen-nlsh-histdir (concat user-emacs-directory "/comint-history/"))

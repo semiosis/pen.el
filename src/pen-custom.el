@@ -23,7 +23,7 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-prompt-repo-dir (concat user-emacs-directory "/prompts")
+(defcustom pen-prompts-directory (concat user-emacs-directory "/prompts")
   "Personal prompt respository"
   :type 'string
   :group 'pen
@@ -35,7 +35,7 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-completer-directory (concat user-emacs-directory "/completers")
+(defcustom pen-completers-directory (concat user-emacs-directory "/completers")
   "Directory where personal .completer files are located"
   :type 'string
   :group 'pen
