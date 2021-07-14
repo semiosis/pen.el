@@ -186,6 +186,7 @@
                   ("PEN_N_COMPLETIONS" ,,n-completions)
                   ("PEN_END_POS" ,prompt-end-pos)))
                " "
+               ;; Currently always updating
                "upd lm-complete"))
 
              ;; run the completion command and collect the result
