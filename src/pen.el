@@ -87,7 +87,6 @@
                (-zip-fill nil ',var-syms ',preprocessors)
                collect
                (let* ((sym (car tp))
-                      (pp (snc "tee -a /tmp/mylog.txt" (cdr tp)))
                       (initval (eval sym)))
                  (if pp
                      (sn pp initval)
