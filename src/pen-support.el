@@ -2,6 +2,7 @@
 ;; Debugger entered--Lisp error: (void-function make-closure)
 ;; in f-join.
 ;; It's happening for all f functions.
+;; Try recompiling emacs
 ;; (defun pen-f-join (&rest strings)
 ;;   (s-join "/" strings))
 
