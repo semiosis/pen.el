@@ -91,7 +91,7 @@ prompt additionally for EXTRA-AG-ARGS."
            (pen-snc
             (concat
              "cd "
-             (pen-q pen-prompt-directory)
+             (pen-q (concat pen-prompt-repo-dir "/prompts"))
              "; find . -maxdepth 1 -mindepth 1 -type f | sed -e 's/..//' -e 's/\\.prompt$//'"))
            nil
            nil

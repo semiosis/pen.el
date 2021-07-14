@@ -235,7 +235,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
            (sh-construct-exports
             (-filter 'identity
                      (list (list "PATH" (getenv "PATH"))
-                           (list "PEN_PROMPTS_DIR" pen-prompt-directory)
+                           (list "PEN_PROMPTS_DIR" (concat pen-prompt-repo-dir "/prompts"))
                            (if (and (variable-p 'pen-sh-update) (eval 'pen-sh-update))
                                (list "UPDATE" "y")))))))
       (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))

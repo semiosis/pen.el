@@ -29,26 +29,14 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-prompt-directory (concat pen-prompt-repo-dir "/prompts")
-  "Directory where personal .prompt files are located"
-  :type 'string
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
 (defcustom pen-prompt-library-dir (concat user-emacs-directory "/prompts-library")
   "The directory where prompts repositories are stored"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-completer-directory user-emacs-directory
-  "Directory where .completer files are located"
-  :type 'string
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
-(defcustom pen-completer-library-dir (concat pen-completer-directory "/completers")
-  "The directory where completers repositories are stored"
+(defcustom pen-completer-directory (concat user-emacs-directory "/completers")
+  "Directory where personal .completer files are located"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)

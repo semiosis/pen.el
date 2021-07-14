@@ -207,7 +207,8 @@ Function names are prefixed with pf- for easy searching"
   (interactive)
   (noupd
    (let ((paths
-          (-non-nil (mapcar 'sor (glob (concat pen-prompt-directory "/*.prompt"))))))
+          (-non-nil
+           (mapcar 'sor (glob (concat pen-prompt-repo-dir "/prompts" "/*.prompt"))))))
      (cl-loop for path in paths do
               (message (concat "pen-mode: Loading .prompt file " path))
 
