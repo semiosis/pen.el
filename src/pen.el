@@ -129,14 +129,13 @@
                   ("PEN_MAX_TOKENS"
                    ,(if (variable-p 'max-tokens)
                         ;; Make overridable
-                        (tv (eval 'max-tokens))
-                      ,max-tokens)
-                   )
+                        (eval 'max-tokens)
+                      ,max-tokens))
                   ("PEN_TEMPERATURE" ,,temperature)
                   ("PEN_STOP_SEQUENCE"
                    ,(if (variable-p 'stop-sequence)
                        ;; Make overridable
-                        (tv (eval 'stop-sequence))
+                        (eval 'stop-sequence)
                       ,stop-sequence))
                   ("PEN_TOP_P" ,,top-p)
                   ("PEN_CACHE" ,,cache)
