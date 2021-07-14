@@ -21,7 +21,7 @@
 
 (require 'pen-custom)
 
-(defvar my-completion-engine 'company-pen-filetype)
+(defvar my-completion-engine 'pen-company-filetype)
 
 (defvar pen-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
@@ -395,14 +395,14 @@ Function names are prefixed with pf- for easy searching"
             (pf-generic-file-type-completion (detect-language))))
          (res
           (list response)))
-    (mapcar (lambda (s) (concat (company-pen-filetype--prefix) s))
+    (mapcar (lambda (s) (concat (pen-company-filetype--prefix) s))
             res)))
 
 (defun my-completion-at-point ()
   (interactive)
   (call-interactively 'completion-at-point)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
-      (call-interactively 'company-pen-filetype)
+      (call-interactively 'pen-company-filetype)
     (call-interactively 'completion-at-point)))
 
 (defun pen-complete-long (preceding-text &optional tv)
