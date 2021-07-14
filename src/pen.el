@@ -67,25 +67,18 @@
           (and (sor c)
                (string-equal c "on"))))))
 
-;; This is just so I get syntax highlighting for defpf in emacs
-(defmacro defpf (&rest body)
-  `(define-prompt-function
-     ,@body))
-
-(defun define-prompt-function (func-name func-sym var-syms var-defaults
-                                         doc prompt iargs prettifier
-                                         cache path var-slugs n-collate
-                                         filter completion lm-command
-                                         stop-sequences stop-sequence
-                                         max-tokens temperature top-p engine
-                                         no-trim-start no-trim-end
-                                         preprocessors postprocessor
-                                         prompt-filter n-completions)
+;; Use lexical scope. It's more reliable than lots of params.
+;; Expected variables:
+;; (func-name func-sym var-syms var-defaults doc prompt
+;;  iargs prettifier cache path var-slugs n-collate
+;;  filter completion lm-command stop-sequences stop-sequence max-tokens
+;;  temperature top-p engine no-trim-start no-trim-end preprocessors
+;;  postprocessor prompt-filter n-completions)
+(defun define-prompt-function ()
   (eval
    `(cl-defun ,func-sym ,var-syms
       ,doc
       (interactive ,(cons 'list iargs))
-      (snc "tee -a /tmp/mylog.txt" ,func-name)
       (let* ((final-prompt ,prompt)
              ;; preprocess the values of the parameters
              (vals
@@ -358,16 +351,7 @@ Function names are prefixed with pf- for easy searching"
                          (sor func-name)
                          func-sym
                          (sor title))
-                    (let ((funcsym (defpf
-                                     func-name func-sym var-syms var-defaults
-                                     doc prompt iargs prettifier
-                                     cache path var-slugs n-collate
-                                     filter completion lm-command
-                                     stop-sequences stop-sequence
-                                     max-tokens temperature top-p engine
-                                     no-trim-start no-trim-end
-                                     preprocessors postprocessor
-                                     prompt-filter n-completions)))
+                    (let ((funcsym (define-prompt-function)))
                       (add-to-list 'pen-prompt-functions funcsym)
                       ;; Using memoization here is the more efficient way to memoize.
                       ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
