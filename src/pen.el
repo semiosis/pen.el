@@ -387,7 +387,7 @@ Function names are prefixed with pf- for easy searching"
     (if f
         (call-interactively (intern f)))))
 
-(defun company-pen-filetype--candidates (prefix)
+(defun pen-company-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
          (response
           (->>
