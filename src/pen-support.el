@@ -16,6 +16,10 @@
                 result)
       result)))
 
+(defun pp-oneline (l)
+  (chomp (replace-regexp-in-string "\n +" " " (pp l))))
+(defalias 'pp-ol 'pp-oneline)
+
 (defun eval-string (string)
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))

@@ -7,9 +7,10 @@
 (defun pen-select-completion-backend ()
   (interactive)
   (let ((options
-         (flatten-once
-          (loop for trip in pen-completion-backends collect
-                (pen-cartesian-product (list (car trip)) (list (nth 1 trip)) (nth 2 trip))))))
+         (mapcar 'pp-ol
+                 (flatten-once
+                  (loop for trip in pen-completion-backends collect
+                        (pen-cartesian-product (list (car trip)) (list (nth 1 trip)) (nth 2 trip)))))))
     (fz options)))
 
 (provide 'pen-lm-completers)
