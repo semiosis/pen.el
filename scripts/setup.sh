@@ -33,7 +33,9 @@ git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
 ./autogen.sh
 ./configure -with-all --without-makeinfo --with-modules --with-gnutls=yes
 make
+make install
 )
+rm -rf /root/emacs
 
 agi python3-pip
 
