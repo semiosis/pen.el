@@ -1,6 +1,7 @@
 ;; To work around an issue with
 ;; Debugger entered--Lisp error: (void-function make-closure)
-;; in f-join
+;; in f-join.
+;; It's happening for all f functions.
 (defun pen-f-join (&rest strings)
   (s-join "/" strings))
 
