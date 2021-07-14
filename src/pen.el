@@ -340,34 +340,33 @@ Function names are prefixed with pf- for easy searching"
                      (func-sym (intern func-name))
                      (iargs
                       (let ((iteration 0))
-                        (append '(&optional)
-                         (cl-loop
-                          for tp in (-zip-fill nil var-slugs var-defaults)
-                          collect
-                          (let ((example (or (sor (nth iteration examples)
-                                                  "")
-                                             ""))
-                                (v (car tp))
-                                (d (cdr tp)))
-                            (message "%s" (concat "Example " (str iteration) ": " example))
-                            (if (and
-                                 (equal 0 iteration)
-                                 (not d))
-                                ;; The first argument may be captured through selection
-                                `(if mark-active
-                                     (pen-selected-text)
-                                   (if ,(> (length (s-lines example)) 1)
-                                       (etv ,example)
-                                     (read-string-hist ,(concat v ": ") ,example)))
-                              `(if ,(> (length (s-lines example)) 1)
-                                   (etv ,example)
-                                 (if ,d
-                                     (eval-string ,(str d))
-                                   (read-string-hist ,(concat v ": ") ,example)))))
-                          do
-                          (progn
-                            (setq iteration (+ 1 iteration))
-                            (message (str iteration))))))))
+                        (cl-loop
+                            for tp in (-zip-fill nil var-slugs var-defaults)
+                            collect
+                            (let ((example (or (sor (nth iteration examples)
+                                                    "")
+                                               ""))
+                                  (v (car tp))
+                                  (d (cdr tp)))
+                              (message "%s" (concat "Example " (str iteration) ": " example))
+                              (if (and
+                                   (equal 0 iteration)
+                                   (not d))
+                                  ;; The first argument may be captured through selection
+                                  `(if mark-active
+                                       (pen-selected-text)
+                                     (if ,(> (length (s-lines example)) 1)
+                                         (etv ,example)
+                                       (read-string-hist ,(concat v ": ") ,example)))
+                                `(if ,(> (length (s-lines example)) 1)
+                                     (etv ,example)
+                                   (if ,d
+                                       (eval-string ,(str d))
+                                     (read-string-hist ,(concat v ": ") ,example)))))
+                            do
+                            (progn
+                              (setq iteration (+ 1 iteration))
+                              (message (str iteration)))))))
 
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
