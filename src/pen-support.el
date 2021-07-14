@@ -3,7 +3,7 @@
 ;; in f-join.
 ;; It's happening for all f functions on pen-debian.
 ;; Try recompiling emacs
-;; (defun pen-f-join (&rest strings)
+;; (defun f-join (&rest strings)
 ;;   (s-join "/" strings))
 
 (defun pen-write-to-file (stdin file_path)

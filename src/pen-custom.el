@@ -23,19 +23,19 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-prompts-directory (pen-f-join user-emacs-directory "prompts")
+(defcustom pen-prompts-directory (f-join user-emacs-directory "prompts")
   "Personal prompt respository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-prompts-library-directory (pen-f-join user-emacs-directory "prompts-library")
+(defcustom pen-prompts-library-directory (f-join user-emacs-directory "prompts-library")
   "The directory where prompts repositories are stored"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-completers-directory (pen-f-join user-emacs-directory "completers")
+(defcustom pen-completers-directory (f-join user-emacs-directory "completers")
   "Directory where personal .completer files are located"
   :type 'string
   :group 'pen
