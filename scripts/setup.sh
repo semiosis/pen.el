@@ -50,6 +50,7 @@ agi libc-bin
 agi expect
 ## sponge
 agi moreutils
+agi jq
 
 (
 cd "$EMACSD"

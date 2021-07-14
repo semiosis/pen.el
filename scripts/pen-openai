@@ -1,8 +1,4 @@
 #!/bin/bash
-export TTY
-# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
-
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 if test -s $HOME/.pen/openai_api_key; then
     : "${OPENAI_API_KEY:="$(cat $HOME/.pen/openai_api_key)"}"
