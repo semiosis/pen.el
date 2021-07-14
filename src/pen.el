@@ -161,7 +161,7 @@
                 ;; See `pen-restore-chars`
                 `(("PEN_PROMPT" ,(str
                                   (->> final-prompt
-                                    (string-replace "`" "<pen-notnewline>")
+                                    (string-replace "`" "<pen-backtick>")
                                     (string-replace "\\n" "<pen-notnewline>")
                                     (string-replace "$" "<pen-dollar>"))))
                   ("PEN_LM_COMMAND" ,,lm-command)
