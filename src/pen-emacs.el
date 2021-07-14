@@ -151,4 +151,4 @@ or specify any other coding system (and risk losing\n\
     (set-window-configuration window-configuration)
     coding-system))
 
-(provide 'pen-automamtic-coding-system)
+(provide 'pen-emacs)
