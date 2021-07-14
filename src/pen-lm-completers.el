@@ -8,10 +8,13 @@
     ("EleutherAI GPT-NeoX" "gpt-neox-complete.sh" ("175B"))
     ("booste" "booste" ("GPT2" "GPT2-XL"))))
 
+(provide 'pen-lm-completers)
+
 (defun pen-select-completion-backend ()
   (interactive)
   (let* ((options
           (mapcar
+           ;; 'list2cmd
            'pp-ol
            (flatten-once
             (loop for trip in pen-completion-backends collect
@@ -25,5 +28,3 @@
                nil nil "pen completion backend: ")))
     (if sel
         (eval-string (concat "'" sel)))))
-
-(provide 'pen-lm-completers)
