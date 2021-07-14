@@ -217,6 +217,10 @@
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
   (interactive)
+
+  (setq pen-prompt-functions nil)
+  (setq pen-prompt-functions-meta nil)
+
   (noupd
    (let ((paths
           (-non-nil
