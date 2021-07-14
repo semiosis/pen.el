@@ -126,15 +126,20 @@
                                     (string-replace "$" "<pen-dollar>"))))
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
-                  ("PEN_MAX_TOKENS" (if (variable-p 'max-tokens)
-                                        ;; Make overridable
-                                        (eval 'max-tokens)
-                                      ,,max-tokens))
+                  ("PEN_MAX_TOKENS"
+                   ,,max-tokens
+                   ;; (if (variable-p 'max-tokens)
+                   ;;     ;; Make overridable
+                   ;;     (eval 'max-tokens)
+                   ;;   ,,max-tokens)
+                   )
                   ("PEN_TEMPERATURE" ,,temperature)
-                  ("PEN_STOP_SEQUENCE" (if (variable-p 'stop-sequence)
-                                           ;; Make overridable
-                                           (eval 'stop-sequence)
-                                         ,,stop-sequence))
+                  ("PEN_STOP_SEQUENCE" ,,stop-sequence
+                   ;; (if (variable-p 'stop-sequence)
+                   ;;     ;; Make overridable
+                   ;;     (eval 'stop-sequence)
+                   ;;   ,,stop-sequence)
+                   )
                   ("PEN_TOP_P" ,,top-p)
                   ("PEN_CACHE" ,,cache)
                   ("PEN_N_COMPLETIONS" ,,n-completions)
@@ -400,8 +405,8 @@ Function names are prefixed with pf- for easy searching"
   "Long-form completion. This will generate lots of text.
 May use to generate code from comments."
   (interactive (list (pen-preceding-text) t))
-  (let ((max-tokens 200)
-        (stop-sequence "##long complete##")
+  (let (;; (max-tokens 200)
+        ;; (stop-sequence "##long complete##")
         (response (pf-generic-file-type-completion (detect-language) preceding-text)))
     (if tv
         (etv response)
