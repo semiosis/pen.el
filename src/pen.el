@@ -126,9 +126,15 @@
                                     (string-replace "$" "<pen-dollar>"))))
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
-                  ("PEN_MAX_TOKENS" ,,max-tokens)
+                  ("PEN_MAX_TOKENS" (if (variable-p 'max-tokens)
+                                        ;; Make overridable
+                                        ,max-tokens
+                                      ,,max-tokens))
                   ("PEN_TEMPERATURE" ,,temperature)
-                  ("PEN_STOP_SEQUENCE" ,,stop-sequence)
+                  ("PEN_STOP_SEQUENCE" (if (variable-p 'stop-sequence)
+                                           ;; Make overridable
+                                           ,stop-sequence
+                                         ,,stop-sequence))
                   ("PEN_TOP_P" ,,top-p)
                   ("PEN_CACHE" ,,cache)
                   ("PEN_N_COMPLETIONS" ,,n-completions)
