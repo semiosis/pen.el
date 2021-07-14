@@ -1,8 +1,8 @@
-;; http://github.com/semiosis/prompts
+;; http://github.com/semiosis/completers
 
-(define-derived-mode prompt-description-mode yaml-mode "Prompt"
-  "Prompt description mode")
+(define-derived-mode completer-description-mode yaml-mode "Completer"
+  "Completer description mode")
 
-(add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
+(add-to-list 'auto-mode-alist '("\\.completer\\'" . completer-description-mode))
 
-(provide 'pen-prompt-description)
+(provide 'pen-completer-description)
