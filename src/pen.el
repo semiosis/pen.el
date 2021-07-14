@@ -333,7 +333,7 @@ Function names are prefixed with pf- for easy searching"
                         (message (concat "_" prettifier))
                         (if (sor prettifier)
                             ;; Add to the function definition the prettify key if the .prompt file specifies a prettifier
-                            (setq ss (append ss '(&key prettify))))
+                            (setq ss (append '(&optional) ss '(&key prettify))))
                         ss))
                      (var-defaults (vector2list (ht-get yaml "var-defaults")))
                      (func-name (concat pen-prompt-function-prefix title-slug))
