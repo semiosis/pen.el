@@ -120,20 +120,19 @@
                                 iarg)
                            (eval iarg)
                          initval))))
-                vals))
+                (loop for v in ',var-syms collect (eval v))))
 
              ;; preprocess the values of the parameters
              (vals
               (cl-loop
                for tp in
-               (-zip-fill nil ',var-syms ',preprocessors)
+               (-zip-fill nil vals ',preprocessors)
                collect
-               (let* ((sym (car tp))
-                      (pp (cdr tp))
-                      (initval (eval sym)))
+               (let* ((v (car tp))
+                      (pp (cdr tp)))
                  (if pp
-                     (pen-sn pp initval)
-                   initval))))
+                     (pen-sn pp v)
+                   v))))
 
              ;; template the parameters into the prompt
              (i 1)
