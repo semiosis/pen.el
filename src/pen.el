@@ -142,12 +142,6 @@
                   ("PEN_END_POS" ,prompt-end-pos)))
                " "
                "lm-complete"))
-             ;; http://cl-cookbook.sourceforge.net/loop.html
-             ;; (var-vals
-             ;;  (cl-loop
-             ;;   for vs in ',var-syms
-             ;;   collect
-             ;;   ))
 
              ;; run the completion command and collect the result
              (resultsdirs
