@@ -79,6 +79,11 @@ care."
                                         (try (remhash args ,table)
                                              (message ,(concat "timer for memoized " funcslug " failed"))))) ,timeouts)))))))))
 
+(defun ignore-errors-around-advice (proc &rest args)
+  (ignore-errors
+    (let ((res (apply proc args)))
+      res)))
+
 ;; Re-memoize these
 (advice-add 'memoize-restore :around #'ignore-errors-around-advice)
 (advice-add 'memoize :around #'ignore-errors-around-advice)
