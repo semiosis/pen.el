@@ -92,7 +92,7 @@
 ;;  postprocessor prompt-filter n-completions)
 (defun define-prompt-function ()
   (eval
-   `(cl-defun ,func-sym ,var-syms
+   `(cl-defun ,func-sym ,(append '&optional var-syms)
       ,doc
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
