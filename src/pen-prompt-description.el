@@ -10,7 +10,9 @@
 ;; TODO Use pcase
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Destructuring-with-pcase-Patterns.html
 (defun pen-create-prompt ()
-  (pcase-let ((`(,title ,script ,engine-list ,available) (pen-select-completion-backend)))
+  (pcase-let ((`(,title ,script ,engine-list ,available) (pen-select-completion-backend))
+              ;; Suggest other parameters based on existing prompts in personal repository?
+              )
     (etv available)))
 
 (provide 'pen-prompt-description)
