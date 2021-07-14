@@ -85,6 +85,7 @@
 
 (defun pen-encode-string (s)
   (->> s
+    ;; (string-replace ";" "<pen-semicolon>")
     (string-replace "\"" "<pen-doublequote>")
     (string-replace "'" "<pen-singlequote>")
     (string-replace "`" "<pen-backtick>")
