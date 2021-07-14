@@ -63,8 +63,8 @@ case "$opt" in
     } ;;
 
     anum|alphanum|alphanumeric) {
-        sed 's/[^a-zA-Z0-9]\+/ /g' }
-    ;;
+        sed 's/[^a-zA-Z0-9]\+/ /g'
+    } ;;
 
     nosymbol) {
         sed 's/[^a-zA-Z0-9_-]\+/ /g'
