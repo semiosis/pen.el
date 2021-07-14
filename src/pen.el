@@ -395,6 +395,7 @@ Function names are prefixed with pf- for easy searching"
   (let ((f (fz
             (if (>= (prefix-numeric-value current-prefix-arg) 4)
                 pen-prompt-functions
+              ;; (pen-list-filter-functions)
               pen-prompt-filter-functions)
             nil nil "pen filter: ")))
     (if f
