@@ -29,5 +29,6 @@
 (defun pen-openai-list-engines ()
   (str2list
    (snc "pen-openai api engines.list | jq -r '.data[].id'")))
+(memoize 'pen-openai-list-engines)
 
 (provide 'pen-openai)
