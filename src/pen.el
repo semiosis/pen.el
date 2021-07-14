@@ -96,6 +96,25 @@
       ,doc
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
+
+             (vals
+              ;; If not called interactively then
+              ;; manually run interactive expressions
+              ;; when they exist.
+              (if (not (interactive-p))
+                  (cl-loop
+                   for tp in
+                   (-zip-fill nil ',var-syms ',iargs)
+                   collect
+                   (let* ((sym (car tp))
+                          (iarg (cdr tp))
+                          (initval (eval sym)))
+                     (if (and (not initval)
+                              iarg)
+                         (eval iarg)
+                       initval)))
+                vals))
+
              ;; preprocess the values of the parameters
              (vals
               (cl-loop
@@ -117,7 +136,7 @@
                  (cl-loop
                   for val in vals do
                   (setq final-prompt (string-replace (format "<%d>" i) val final-prompt))
-                  (setq i (+ 1 i)))
+                  (setq  i (+ 1 i)))
                  final-prompt)))
 
              (prompt-end-pos (or (string-search "<:pp>" ,prompt)
