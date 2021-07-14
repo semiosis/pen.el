@@ -65,10 +65,7 @@
   (ignore-errors
     (if (and yaml
              (sor key))
-        (let ((c (ht-get yaml key)))
-          (and (sor c)
-               (or (string-equal c "on")
-                   (string-equal c "true")))))))
+        (ht-get yaml key))))
 
 (defun pen-list-filter-functions ()
   (interactive)
