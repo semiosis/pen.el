@@ -5,7 +5,11 @@
   `(("OpenAI GPT-3" "openai-complete.sh" ,(pen-openai-list-engines))))
 
 (defun pen-select-completion-backend ()
-  (loop for trip in pen-completion-backends collect
-        (pen-cartesian-product (list (car trip)) (list (nth 1 trip)) (nth 2 trip))))
+  (interactive)
+  (let ((options
+         (flatten-once
+          (loop for trip in pen-completion-backends collect
+                (pen-cartesian-product (list (car trip)) (list (nth 1 trip)) (nth 2 trip))))))
+    (fz options)))
 
 (provide 'pen-lm-completers)
