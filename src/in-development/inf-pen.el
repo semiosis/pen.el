@@ -181,7 +181,7 @@ Most of this is borrowed from python.el")
   (use-local-map inf-pen-mode-map))
 
 (defun inf-pen-fz-contacts-sh ()
-  (pen-sn "dos2unix | sed -e 1d -e \\$d -e \\$d" (inf-pen-get-result-from-inf "contacts")))
+  (pen-snd "dos2unix | sed -e 1d -e \\$d -e \\$d" (inf-pen-get-result-from-inf "contacts")))
 
 (defun inf-pen-fz-contacts ()
   (interactive)

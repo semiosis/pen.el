@@ -450,8 +450,8 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-lm-completers.el
 (require 'pen-lm-completers)
 
-;; http://github.com/semiosis/pen.el/blob/master/pen-automamtic-coding-system.el
-(require 'pen-automamtic-coding-system)
+;; http://github.com/semiosis/pen.el/blob/master/pen-emacs.el
+(require 'pen-emacs)
 
 ;; TODO
 (require 'pen-openai)
