@@ -1,3 +1,5 @@
+;; Fix the UTF coding system
+
 (defun select-safe-coding-system-interactively (from to codings unsafe
                                                      &optional rejected default)
   "Select interactively a coding system for the region FROM ... TO.
