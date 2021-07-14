@@ -127,19 +127,16 @@
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS"
-                   ,,max-tokens
-                   ;; (if (variable-p 'max-tokens)
-                   ;;     ;; Make overridable
-                   ;;     (eval 'max-tokens)
-                   ;;   ,,max-tokens)
-                   )
+                   ,(if (variable-p 'max-tokens)
+                       ;; Make overridable
+                       (eval 'max-tokens)
+                      ,max-tokens))
                   ("PEN_TEMPERATURE" ,,temperature)
-                  ("PEN_STOP_SEQUENCE" ,,stop-sequence
-                   ;; (if (variable-p 'stop-sequence)
-                   ;;     ;; Make overridable
-                   ;;     (eval 'stop-sequence)
-                   ;;   ,,stop-sequence)
-                   )
+                  ("PEN_STOP_SEQUENCE"
+                   ,(if (variable-p 'stop-sequence)
+                       ;; Make overridable
+                       (eval 'stop-sequence)
+                      ,stop-sequence))
                   ("PEN_TOP_P" ,,top-p)
                   ("PEN_CACHE" ,,cache)
                   ("PEN_N_COMPLETIONS" ,,n-completions)
