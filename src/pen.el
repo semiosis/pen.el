@@ -122,7 +122,8 @@
                                 iarg)
                            (eval iarg)
                          initval))))
-                (loop for v in ,var-syms collect (eval v))))
+                (progn
+                  (loop for v in ',var-syms (until (eq v '&key)) collect (eval v)))))
 
              ;; preprocess the values of the parameters
              (vals
