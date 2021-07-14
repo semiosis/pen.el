@@ -329,6 +329,8 @@ Function names are prefixed with pf- for easy searching"
                      (related-prompts (vector2list (ht-get yaml "related-prompts")))
                      (future-titles (vector2list (ht-get yaml "future-titles")))
 
+                     (var-defaults (vector2list (ht-get yaml "var-defaults")))
+
                      (doc (mapconcat
                            'identity
                            (-filter-not-empty-string
@@ -364,38 +366,37 @@ Function names are prefixed with pf- for easy searching"
                             ;; Add to the function definition the prettify key if the .prompt file specifies a prettifier
                             (setq ss (append ss '(&key prettify))))
                         ss))
-                     (var-defaults (vector2list (ht-get yaml "var-defaults")))
                      (func-name (concat pen-prompt-function-prefix title-slug))
                      (func-sym (intern func-name))
                      (iargs
                       (let ((iteration 0))
                         (cl-loop
-                            for tp in (-zip-fill nil var-slugs var-defaults)
-                            collect
-                            (let ((example (or (sor (nth iteration examples)
-                                                    "")
-                                               ""))
-                                  (v (car tp))
-                                  (d (cdr tp)))
-                              (message "%s" (concat "Example " (str iteration) ": " example))
-                              (if (and
-                                   (equal 0 iteration)
-                                   (not d))
-                                  ;; The first argument may be captured through selection
-                                  `(if mark-active
-                                       (pen-selected-text)
-                                     (if ,(> (length (s-lines example)) 1)
-                                         (etv ,example)
-                                       (read-string-hist ,(concat v ": ") ,example)))
-                                `(if ,(> (length (s-lines example)) 1)
-                                     (etv ,example)
-                                   (if ,d
-                                       (eval-string ,(str d))
-                                     (read-string-hist ,(concat v ": ") ,example)))))
-                            do
-                            (progn
-                              (setq iteration (+ 1 iteration))
-                              (message (str iteration)))))))
+                         for tp in (-zip-fill nil var-slugs var-defaults)
+                         collect
+                         (let ((example (or (sor (nth iteration examples)
+                                                 "")
+                                            ""))
+                               (v (car tp))
+                               (d (cdr tp)))
+                           (message "%s" (concat "Example " (str iteration) ": " example))
+                           (if (and
+                                (equal 0 iteration)
+                                (not d))
+                               ;; The first argument may be captured through selection
+                               `(if mark-active
+                                    (pen-selected-text)
+                                  (if ,(> (length (s-lines example)) 1)
+                                      (etv ,example)
+                                    (read-string-hist ,(concat v ": ") ,example)))
+                             `(if ,(> (length (s-lines example)) 1)
+                                  (etv ,example)
+                                (if ,d
+                                    (eval-string ,(str d))
+                                  (read-string-hist ,(concat v ": ") ,example)))))
+                         do
+                         (progn
+                           (setq iteration (+ 1 iteration))
+                           (message (str iteration)))))))
 
                 (add-to-list 'pen-prompt-functions-meta yaml)
 
