@@ -305,6 +305,8 @@ Function names are prefixed with pf- for easy searching"
                              (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
                              (if aims (concat "\naims:" (pen-list-to-orglist aims)))
                              (if notes (concat "\nnotes:" (pen-list-to-orglist notes)))
+                             (if filter (concat "\nfilter: on"))
+                             (if completion (concat "\ncompletion: on"))
                              (if past-versions (concat "\npast-versions:\n" (pen-list-to-orglist past-versions)))
                              (if external-related (concat "\nexternal-related\n:" (pen-list-to-orglist external-related)))
                              (if related-prompts (concat "\nrelated-prompts:\n" (pen-list-to-orglist related-prompts)))
