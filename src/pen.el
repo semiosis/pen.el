@@ -90,7 +90,7 @@
                       (pp (cdr tp))
                       (initval (eval sym)))
                  (if pp
-                     (sn pp initval)
+                     (pen-sn pp initval)
                    initval))))
 
              ;; template the parameters into the prompt
