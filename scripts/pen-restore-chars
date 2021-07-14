@@ -3,4 +3,4 @@
 # cat
 sed -e "s/<pen-notnewline>/\\\\n/g" \
     -e "s/<pen-dollar>/\$/g" \
-    -e "s/<pen-backtick>/\$/g"
+    -e "s/<pen-backtick>/\`/g"
