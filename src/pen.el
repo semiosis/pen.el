@@ -123,7 +123,7 @@
                            (eval iarg)
                          initval))))
                 ;; Don't include &key pretty
-                (loop for v in ',var-syms until (eq v '&key) collect (eval v))))
+                (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v))))
 
              ;; preprocess the values of the parameters
              (vals
