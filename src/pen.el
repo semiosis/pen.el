@@ -409,8 +409,7 @@ Function names are prefixed with pf- for easy searching"
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
 May use to generate code from comments."
-  (interactive (list (str (buffer-substring (point) (max 1 (- (point) 1000))))
-                     t))
+  (interactive (list (pen-preceding-text) t))
   (let* ((response (pf-generic-file-type-completion (detect-language) preceding-text)))
     (if tv
         (etv response)
