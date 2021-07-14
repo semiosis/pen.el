@@ -122,7 +122,7 @@
                                 iarg)
                            (eval iarg)
                          initval))))
-                (tv (pps (loop for v in ',var-syms (until (eq v '&key)) collect (eval v))))))
+                (tv (pps (loop for v in ',var-syms until (eq v '&key) collect (eval v))))))
 
              ;; preprocess the values of the parameters
              (vals
