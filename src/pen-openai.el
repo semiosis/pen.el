@@ -26,4 +26,8 @@
     ("prompt-length" . 6000)
     ("model" . "davinci")))
 
+(defun pen-openai-list-engines ()
+  (str2list
+   (snc "pen-openai api engines.list | jq -r '.data[].id'")))
+
 (provide 'pen-openai)
