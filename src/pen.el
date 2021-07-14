@@ -167,7 +167,7 @@
                (sh-construct-envs
                 ;; This is a bit of a hack for \n in prompts
                 ;; See `pen-restore-chars`
-                `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
+                `(("PEN_PROMPT" ,(pen-encode-string (tv final-prompt)))
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS"
