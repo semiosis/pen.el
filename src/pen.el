@@ -137,13 +137,13 @@
              ;; template the parameters into the prompt
              (i 1)
              (final-prompt
-              (chomp
-               (progn
-                 (cl-loop
-                  for val in vals do
-                  (setq final-prompt (string-replace (format "<%d>" i) val final-prompt))
-                  (setq i (+ 1 i)))
-                 final-prompt)))
+              (tv (chomp
+                   (progn
+                     (cl-loop
+                      for val in vals do
+                      (setq final-prompt (string-replace (format "<%d>" i) val final-prompt))
+                      (setq i (+ 1 i)))
+                     final-prompt))))
 
              (prompt-end-pos (or (string-search "<:pp>" ,prompt)
                                  (length final-prompt)))
