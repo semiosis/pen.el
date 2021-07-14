@@ -450,6 +450,9 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-prompt-description.el
 (require 'pen-prompt-description)
 
+;; http://github.com/semiosis/pen.el/blob/master/pen-lm-completers.el
+(require 'pen-lm-completers)
+
 ;; http://github.com/semiosis/pen.el/blob/master/pen-automamtic-coding-system.el
 (require 'pen-automamtic-coding-system)
 
