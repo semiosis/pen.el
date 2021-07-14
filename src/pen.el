@@ -65,7 +65,18 @@
              (sor key))
         (let ((c (ht-get yaml key)))
           (and (sor c)
-               (string-equal c "on"))))))
+               (or (string-equal c "on")
+                   (string-equal c "true")))))))
+
+(defun pen-list-filter-functions ()
+  (interactive)
+  (etv (pps (-filter (lambda (y) (pen-yaml-test y "filter"))
+                     pen-prompt-functions-meta))))
+
+(defun pen-list-completer-functions ()
+  (interactive)
+  (etv (pps (-filter (lambda (y) (pen-yaml-test y "completion"))
+                     pen-prompt-functions-meta))))
 
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
@@ -134,7 +145,7 @@
                   ("PEN_TEMPERATURE" ,,temperature)
                   ("PEN_STOP_SEQUENCE"
                    ,(if (variable-p 'stop-sequence)
-                       ;; Make overridable
+                        ;; Make overridable
                         (eval 'stop-sequence)
                       ,stop-sequence))
                   ("PEN_TOP_P" ,,top-p)
