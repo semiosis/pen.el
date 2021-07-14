@@ -162,32 +162,32 @@
 
              ;; construct the full command
              (shcmd
-              (concat
-               ;; All parameters are sent as environment variables
-               (sh-construct-envs
-                ;; This is a bit of a hack for \n in prompts
-                ;; See `pen-restore-chars`
-                `(("PEN_PROMPT" ,(pen-encode-string (tv final-prompt)))
-                  ("PEN_LM_COMMAND" ,,lm-command)
-                  ("PEN_ENGINE" ,,engine)
-                  ("PEN_MAX_TOKENS"
-                   ,(if (variable-p 'max-tokens)
-                        ;; Make overridable
-                        (eval 'max-tokens)
-                      ,max-tokens))
-                  ("PEN_TEMPERATURE" ,,temperature)
-                  ("PEN_STOP_SEQUENCE"
-                   ,(pen-encode-string
-                     (str (if (variable-p 'stop-sequence)
-                              ;; Make overridable
-                              (eval 'stop-sequence)
-                            ,stop-sequence))))
-                  ("PEN_TOP_P" ,,top-p)
-                  ("PEN_CACHE" ,,cache)
-                  ("PEN_N_COMPLETIONS" ,,n-completions)
-                  ("PEN_END_POS" ,prompt-end-pos)))
-               " "
-               "lm-complete"))
+              (tvv (concat
+                    ;; All parameters are sent as environment variables
+                    (sh-construct-envs
+                     ;; This is a bit of a hack for \n in prompts
+                     ;; See `pen-restore-chars`
+                     `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
+                       ("PEN_LM_COMMAND" ,,lm-command)
+                       ("PEN_ENGINE" ,,engine)
+                       ("PEN_MAX_TOKENS"
+                        ,(if (variable-p 'max-tokens)
+                             ;; Make overridable
+                             (eval 'max-tokens)
+                           ,max-tokens))
+                       ("PEN_TEMPERATURE" ,,temperature)
+                       ("PEN_STOP_SEQUENCE"
+                        ,(pen-encode-string
+                          (str (if (variable-p 'stop-sequence)
+                                   ;; Make overridable
+                                   (eval 'stop-sequence)
+                                 ,stop-sequence))))
+                       ("PEN_TOP_P" ,,top-p)
+                       ("PEN_CACHE" ,,cache)
+                       ("PEN_N_COMPLETIONS" ,,n-completions)
+                       ("PEN_END_POS" ,prompt-end-pos)))
+                    " "
+                    "lm-complete")))
 
              ;; run the completion command and collect the result
              (resultsdirs
