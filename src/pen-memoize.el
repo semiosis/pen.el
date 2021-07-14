@@ -4,6 +4,8 @@
 
 (defset pen-ht-cache-dir (concat user-emacs-directory "/ht-cache"))
 
+(f-mkdir pen-ht-cache-dir)
+
 (defun pen-ht-cache-slug-fp (name)
   (concat pen-ht-cache-dir "/" "persistent-hash-" (slugify name) ".elht"))
 

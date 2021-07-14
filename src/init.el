@@ -31,8 +31,6 @@
 (require 'sx)
 (require 'pcre2el)
 
-(f-mkdir (concat user-emacs-directory "/ht-cache"))
-
 (let ((pendir (concat (getenv "EMACSD") "/pen.el")))
   (add-to-list 'load-path (concat pendir "/src"))
   (add-to-list 'load-path (concat pendir "/src/in-development"))
