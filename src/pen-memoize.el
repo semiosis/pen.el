@@ -11,7 +11,7 @@
   (let* ((n (pen-ht-cache-slug-fp name))
          (nswap (concat n ".swap")))
     (if ht
-        (progn (shut-up (write-to-file (prin1-to-string ht) nswap))
+        (progn (shut-up (pen-write-to-file (prin1-to-string ht) nswap))
                (rename-file nswap n t))
       (if (f-exists-p n)
           (let ((r (find-file-noselect n)))
