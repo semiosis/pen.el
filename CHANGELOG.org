@@ -13,6 +13,9 @@ First successful docker run.
 ** 15.07.21
 New docker image.
 
-+ Fixed:
++ Fixes:
   - unicode prompts
   - =company-mode=
+
++ Improvements:
+  - 
