@@ -9,6 +9,9 @@ only need to have docker installed and an
 
 #+BEGIN_SRC sh -n :sps bash :async :results none
   docker run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+
+  # And to update the image
+  docker pull semiosis/pen.el:latest
 #+END_SRC
 
 + Project code :: https://github.com/semiosis/pen.el/
@@ -20,14 +23,16 @@ and latest updates, please install from master
 branch. Docker support coming. =GPT-j= also in
 the works.
 
-** Default Key bindings
-| kb        | f                                 |                                                                        |
-|-----------+-----------------------------------+------------------------------------------------------------------------|
-| =H-TAB g= | =pen-generate-prompt-functions=   | This reloads the prompt functions                                      |
-| =H-TAB r= | =pen-run-prompt-function=         | Running a prompt function like this will not insert text or replace it |
-| =M-1=     | =pen-company-filetype=            | This completes the current line                                        |
-| =SPC=     | =pen-run-prompt-function=         | When text is selected, will run with that text as first argument       |
-| =H-TAB l= | =pen-complete-long=               | This is a multiline completion                                         |
+** Basic Key bindings
+| kb        | f                                 |                                                                                    |
+|-----------+-----------------------------------+------------------------------------------------------------------------------------|
+| =H-TAB g= | =pen-generate-prompt-functions=   | This reloads the prompt functions.                                                 |
+| =H-TAB r= | =pen-run-prompt-function=         | Running a prompt function like this will not insert text or replace it.            |
+| =M-1=     | =pen-company-filetype=            | This completes the current line.                                                   |
+| =H-TAB s= | =pen-filter-with-prompt-function= | This filters the text through a prompt function specifically designed for this.    |
+| =H-TAB c= | =pen-company-complete=            | Select a prompt function as the completer for =company-mode= and complete with it. |
+| =SPC=     | =pen-run-prompt-function=         | When text is selected, will run with that text as first argument.                  |
+| =H-TAB l= | =pen-complete-long=               | This is a multiline completion.                                                    |
 
 =H= is the Hyper key, which works similar to Escape, Meta, Alt, Control or Shift that is present on the Space Cadet Keyboard.
 
@@ -65,8 +70,6 @@ More company bindings.
 
 | kb        | f                                 |                                                 |
 |-----------+-----------------------------------+-------------------------------------------------|
-| =H-TAB s= | =pen-filter-with-prompt-function= | This filters the text through a prompt function |
-| =H-TAB c= | =pen-company-complete=            | This runs the company completer.                |
 | =H-TAB f= | =pen-company-complete-choose=     | Select a single completer. Remove others.       |
 | =H-TAB a= | =pen-company-complete-add=        | Add other completers to the completer list      |
 
@@ -497,6 +500,14 @@ requested.
 <!-- <a title="asciinema recording" href="https://asciinema.org/a/lG511sKyJPjhwtn98IPbSZjYx" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/lG511sKyJPjhwtn98IPbSZjYx.svg" /></a> -->
 <!-- Play on the blog -->
 <script src="https://asciinema.org/a/lG511sKyJPjhwtn98IPbSZjYx.js" id="asciicast-lG511sKyJPjhwtn98IPbSZjYx" async></script>
+#+END_EXPORT
+
+** An assistant for any major mode
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/MS8xMQfLoExEVyh4Nqu9fX49b" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/MS8xMQfLoExEVyh4Nqu9fX49b.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/MS8xMQfLoExEVyh4Nqu9fX49b.js" id="asciicast-MS8xMQfLoExEVyh4Nqu9fX49b" async></script>
 #+END_EXPORT
 
 ** Current Development
