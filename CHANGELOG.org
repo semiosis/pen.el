@@ -20,3 +20,6 @@ New docker image.
 + Improvements:
   - function documentation
   - optional parameters for prompt functions
+
++ Contrib:
+  - asktutor (tutor for any mode)
