@@ -11,13 +11,14 @@
   '("What is <1:q> used for?"
     "What are some good learning materials"))
 
-(defun pen-tutor-mode-assist (query)
+(defun pen-tutor-mode-assist (&optional query)
   (interactive (let* ((bl (buffer-language t t)))
                  (list
                   (read-string-hist
                    (concat "asktutor (" bl "): ")
                    (pen-thing-at-point)))))
-  (pen-pf-asktutor bl bl query))
+  (let ((bl (buffer-language t t)))
+    (pf-asktutor bl bl query)))
 
 
 (defset pen-doc-queries
