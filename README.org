@@ -21,6 +21,9 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 
 #+BEGIN_SRC sh -n :sps bash :async :results none
   docker run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+
+  # And to update the image
+  docker pull semiosis/pen.el:latest
 #+END_SRC
 
 [[./pen-ghen.png]]
