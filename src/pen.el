@@ -97,8 +97,9 @@
   (let ((b (new-buffer-from-string haystack))
         (pos (string-search needle haystack)))
     (with-current-buffer b
-      (position-bytes pos)
-      (kill-buffer b))))
+      (let ((y (position-bytes pos)))
+        (kill-buffer b)
+        y))))
 
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
@@ -157,7 +158,7 @@
 
              ;; This gives string position, not byte position
              ;; (string-search "s" "ガムツリshane")
-             (prompt-end-pos (or (string-search "<:pp>" ,prompt)
+             (prompt-end-pos (or (byte-string-search "<:pp>" ,prompt)
                                  (length final-prompt)))
 
              (final-prompt (string-replace "<:pp>" "" final-prompt))
