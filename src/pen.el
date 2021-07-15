@@ -161,7 +161,8 @@
              ;; This gives string position, not byte position
              ;; (string-search "s" "ガムツリshane")
              (prompt-end-pos (or (byte-string-search "<:pp>" ,prompt)
-                                 (length final-prompt)))
+                                 ;; (length final-prompt)
+                                 (string-bytes final-prompt)))
 
              (final-prompt (string-replace "<:pp>" "" final-prompt))
 
