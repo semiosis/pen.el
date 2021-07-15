@@ -102,7 +102,7 @@ You may also press =SPC= while some text is selected to run a prompt function.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
   title: Get language
-  prompt-version: 1
+  version: 1
   doc: This prompt detects the language
   notes:
   - "It appears that combining ### with Input: Output: has no improvement"
@@ -322,7 +322,7 @@ var-defaults:
 #+BEGIN_SRC yaml -n :async :results verbatim code
   ---
   title: Translate from English to
-  prompt-version: 2
+  version: 2
   doc: This prompt translates English text to any world langauge
   issues:
   - I think the unicode characters may be multibyte causing issues with completion
@@ -375,7 +375,7 @@ to transform the prompt before sending to the
 #+BEGIN_SRC yaml -n :async :results verbatim code
   ---
   title: Translate from world language X to Y
-  prompt-version: 2
+  version: 2
   doc: This prompt translates English text to any world langauge
   issues:
   - I think the unicode characters may be multibyte causing issues with completion

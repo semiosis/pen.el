@@ -18,7 +18,7 @@ for fp in *; do
     echo "$fp" | udl | hls purple
     delim="¬"
     IFS="$delim" read -r -d$'\1' version title external n < <(
-        cat "$fp" | yq -r '[."prompt-version",.title,.external,."n-test-runs"] | join("'$delim'")')
+        cat "$fp" | yq -r '[."version",.title,.external,."n-test-runs"] | join("'$delim'")')
 
     version="$(printf -- "%s" "$version" | sed -z 's/^\n$//')"
     n="$(printf -- "%s" "$n" | sed -z 's/^\n$//')"
