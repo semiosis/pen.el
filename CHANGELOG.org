@@ -18,4 +18,5 @@ New docker image.
   - =company-mode=
 
 + Improvements:
-  - 
+  - function documentation
+  - optional parameters for prompt functions
