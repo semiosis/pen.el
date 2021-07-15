@@ -93,13 +93,22 @@
     (string-replace "\\n" "<pen-notnewline>")
     (string-replace "$" "<pen-dollar>")))
 
-(defun byte-string-search (needle haystack)
-  (let ((b (new-buffer-from-string haystack))
-        (pos (string-search needle haystack)))
-    (with-current-buffer b
-      (let ((y (position-bytes pos)))
-        (kill-buffer b)
-        y))))
+(defalias 'byte-string-search
+  (function
+   (lambda
+     (needle haystack)
+     "get byte position or needing in haystack"
+     (let
+         ((b
+           (new-buffer-from-string haystack))
+          (pos
+           (string-search needle haystack)))
+       (with-current-buffer b
+         (let
+             ((y
+               (position-bytes pos)))
+           (kill-buffer b)
+           y))))))
 
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
