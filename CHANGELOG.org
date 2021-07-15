@@ -1,15 +1,16 @@
-* 07.07.21
+* Change Log
+** 07.07.21
 The project has been excised from my main emacs.d.
 
 Now the plan is to incorporate the backend of loom so the completions are faster and there is less reliance on shell scripts.
 
-* 08.07.21
+** 08.07.21
 A zone plate has been chosen as the minor-mode lighter. This is because |:ϝ∷¦ϝ likes zone plates and also used it as the logo to loom.
 
-* 12.07.21
+** 12.07.21
 First successful docker run.
 
-* 15.07.21
+** 15.07.21
 New docker image.
 
 - =company-mode=
