@@ -31,7 +31,7 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 ** Goals
 - Programmatically navigate =GPT-3=, =GPT-j= and future language models
 - Encode provenance of text via text properties and a DSL and allow for re-evaluation
-  - https://github.com/semiosis/pentext
+  - https://github.com/semiosis/ink
 - Peer-to-peer
 - Integrate =pen.el= with many other emacs packages
   - http://github.com/semiosis/pen.el-contrib
@@ -239,10 +239,10 @@ https://github.com/semiosis/lm-complete
 **** This book by Mark Watson provides some reasonable blueprints
 https://leanpub.com/clojureai
 
-*** =pentext=: A DSL that encodes provenience
+*** =ink=: A DSL that encodes provenience
 - Encode into the text the origin of the text
 
-https://github.com/semiosis/pentext
+https://github.com/semiosis/ink
 
 ** Using =Pen.el= to create prompts for generating images
 https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/
