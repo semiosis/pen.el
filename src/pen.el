@@ -504,6 +504,9 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-ivy.el
 (require 'pen-ivy)
 
+;; http://github.com/semiosis/pen.el/blob/master/pen-ink.el
+(require 'pen-ink)
+
 ;; http://github.com/semiosis/pen.el/blob/master/pen-company.el
 (require 'pen-company)
 
