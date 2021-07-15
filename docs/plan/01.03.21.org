@@ -131,7 +131,7 @@ Haskell functions (including the 'have a good day' monad.
   - Requires a filter descrioption format
     - Call it =.filter=.
 
-* =ink= - new file format
+* =ink.el= - new file format
 - Generate prompts with templates.
 - This is a templating format.
 - The template is emacs macros and functions which expand to generate the document.
@@ -140,7 +140,7 @@ Haskell functions (including the 'have a good day' monad.
 - loop
   - This would be useful for generating more cost-effective prompts.
 
-* =ink= - new file format
+* =ink.el= - new file format
 This is a text format that is designed for easy editing, like normal text.
 Based on racket.
 
@@ -152,7 +152,7 @@ https://github.com/semiosis/scribble
 - The use-case is templates.
 
 * =pentex=
-Latex library similar to =ink=.
+Latex library similar to =ink.el=.
 
 ** TODO Investigate the ease of this
 

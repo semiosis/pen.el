@@ -1,3 +1,3 @@
-;; https://github.com/semiosis/ink
+;; https://github.com/semiosis/ink.el
 
 (provide 'pen-ink)

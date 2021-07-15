@@ -16,8 +16,8 @@
   - Select error messages and ask what they mean
   - Correct spelling and grammar in conversations over =erc= and other =emacs= chat modes.
   - Encode where the text came from into the emacs buffer using emacs text properties
-    - This is for =ink=
-      - https://github.com/semiosis/ink
+    - This is for =ink.el=
+      - https://github.com/semiosis/ink.el
 
 - Far future features
   - Build a database of NLP tasks and synchronize them (perhaps in the form of prompts)
