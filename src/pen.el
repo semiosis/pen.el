@@ -101,7 +101,10 @@
         (with-current-buffer b
           (let ((y (position-bytes pos)))
             (kill-buffer b)
-            y)))))
+            y))
+      (progn
+        (kill-buffer b)
+        nil))))
 
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
