@@ -23,6 +23,8 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
   docker run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
 #+END_SRC
 
+[[./pen-ghen.png]]
+
 ** Tutorials
 - [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
 
@@ -241,6 +243,9 @@ https://leanpub.com/clojureai
 - Encode into the text the origin of the text
 
 https://github.com/semiosis/pentext
+
+** Using =Pen.el= to create prompts for generating images
+https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/
 
 ** Alternative docker invocations
 This will check out the code and give access

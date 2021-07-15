@@ -61,7 +61,8 @@ along with this program.  If not, see @uref{http://www.gnu.org/licenses/}.
 
 Installation
 
-* Using in a package::
+* Self-contained Docker::
+* External Dependencies::
 * Syntax highlighting of pen functions::
 
 Functions
@@ -113,12 +114,28 @@ Alternatively, you can just dump @verb{~pen.el~} or
 @verb{~pen-functional.el~} in your load path somewhere.
 
 @menu
-* Using in a package::
+* Self-contained Docker::
+* External Dependencies::
 * Syntax highlighting of pen functions::
 @end menu
 
-@node Using in a package
-@section Using in a package
+@node Self-contained Docker
+@section Self-contained Docker
+
+Add this to the big comment block at the top:
+
+@lisp
+;; Package-Requires: ((pen "2.12.1"))
+@end lisp
+
+@noindent To get function combinators:
+
+@lisp
+;; Package-Requires: ((pen "2.12.1") (pen-functional "1.2.0") (emacs "24"))
+@end lisp
+
+@node External Dependencies
+@section External Dependencies
 
 Add this to the big comment block at the top:
 
