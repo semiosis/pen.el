@@ -148,6 +148,8 @@
                   (setq i (+ 1 i)))
                  final-prompt)))
 
+             ;; This gives string position, not byte position
+             ;; (string-search "s" "ガムツリshane")
              (prompt-end-pos (or (string-search "<:pp>" ,prompt)
                                  (length final-prompt)))
 
