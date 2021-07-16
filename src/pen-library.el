@@ -1,4 +1,4 @@
-(require 'pen-brain)
+(require 'pen-org-brain)
 (require 'sx)
 
 (defalias 's-replace-regexp 'replace-regexp-in-string)

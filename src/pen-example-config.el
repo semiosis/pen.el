@@ -64,10 +64,12 @@
 
 (require 'pen-contrib)
 ;; from contrib
-(require 'pen-brain)
+(require 'pen-org-brain)
 (define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
 (define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
 (define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
+
+(require 'pen-org-roam)
 
 ;; Prompts discovery
 ;; This is where discovered prompts repositories are placed
