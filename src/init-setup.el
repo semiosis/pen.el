@@ -36,7 +36,7 @@
   (add-to-list 'load-path (concat pendir "/src"))
   (add-to-list 'load-path (concat pendir "/src/in-development"))
   (load (concat pendir "/src/pen.el"))
-  ;; package installs for contrib
+  ;; package installs for contrib to be done here
   (load (concat pendir "/src/init-setup-contrib.el"))
   (load (concat pendir "/src/pen-contrib.el"))
   (load (concat pendir "/src/pen-example-config.el")))
