@@ -34,19 +34,23 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 - [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
 
 ** Goals
+- Peer-to-peer sharing of prompts
+  - https://github.com/semiosis/prompts/
 - Programmatically navigate =GPT-3=, =GPT-j= and future language models
 - Encode provenance of text via text properties and a DSL and allow for re-evaluation
   - https://github.com/semiosis/ink.el
-- Peer-to-peer
 - Integrate =pen.el= with many other emacs packages
-  - http://github.com/semiosis/pen.el-contrib
+  - http://github.com/semiosis/pen-contrib.el
 - Create, use and maintain useful prompts
 - Prototype NLP tasks by creating prompts
   - Substitute external tools for prototypes
+  - https://github.com/semiosis/examplary
 - Bring about the editor that replaces =pen.el=
   - An editor based solely on LM queries (an imaginary IDE)
     - See [[https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/][Imaginary programming with GPT-3 =::= semiosis]]
     - Versioned by blockchain
+- Consolidate language models
+  - https://github.com/semiosis/lm-complete
 
 ** Vision
 At its heart, emacs is an operating system
