@@ -26,7 +26,9 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
   docker pull semiosis/pen.el:latest
 #+END_SRC
 
-[[./pen-ghen.png]]
+/The pen of imagination./
+
+[[./the_pen_of_imagination.png]]
 
 ** Tutorials
 - [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
