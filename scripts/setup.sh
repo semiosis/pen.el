@@ -88,6 +88,11 @@ test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
 )
 
 (
+    cd "$EMACSD"
+    test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el-contrib"
+)
+
+(
 export TERM=xterm
 unbuffer emacs -nw --eval "(kill-emacs)"
 )
