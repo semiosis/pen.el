@@ -11,7 +11,6 @@
 
 ;; Install dependencies
 (package-install 'shut-up)
-(package-install 'org-brain)
 (package-install 'dash)
 (package-install 'popup)
 (package-install 'right-click-context)
