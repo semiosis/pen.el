@@ -62,8 +62,6 @@
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
 (define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
 
-(require 'org-brain)
-
 (require 'pen-contrib)
 ;; from contrib
 (require 'pen-brain)
