@@ -77,4 +77,9 @@
                          nil nil "nlsh-os: ")))
   (comint-quick (cmd "nlsh-os" os)))
 
+(defun pen-nano-mode ()
+  "Simplify the editing experience"
+
+  )
+
 (provide 'pen-contrib)
