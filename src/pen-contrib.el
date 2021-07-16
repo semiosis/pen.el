@@ -2,10 +2,10 @@
 ;; i.e. applications built on pen.el
 
 (require 'pen-handle)
-(provide 'pen-nlsh)
-(provide 'pen-nano)
-(provide 'pen-org-brain)
-(provide 'pen-org-roam)
+(require 'pen-nlsh)
+(require 'pen-nano)
+(require 'pen-org-brain)
+(require 'pen-org-roam)
 
 (defvar pen-tutor-common-questions
   '("What is <1:q> used for?"
