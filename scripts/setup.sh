@@ -88,8 +88,8 @@ test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
 )
 
 (
-    cd "$EMACSD"
-    test -d "pen-contrib.el" || git clone --depth 1 "https://github.com/semiosis/pen-contrib.el"
+cd "$EMACSD"
+test -d "pen-contrib.el" || git clone --depth 1 "https://github.com/semiosis/pen-contrib.el"
 )
 
 (
