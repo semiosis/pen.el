@@ -63,7 +63,6 @@ Installation
 
 * Self-contained Docker::
 * External Dependencies::
-* Syntax highlighting of pen functions::
 
 Functions
 
@@ -116,7 +115,6 @@ Alternatively, you can just dump @verb{~pen.el~} or
 @menu
 * Self-contained Docker::
 * External Dependencies::
-* Syntax highlighting of pen functions::
 @end menu
 
 @node Self-contained Docker
@@ -147,16 +145,6 @@ Add this to the big comment block at the top:
 
 @lisp
 ;; Package-Requires: ((pen "2.12.1") (pen-functional "1.2.0") (emacs "24"))
-@end lisp
-
-@node Syntax highlighting of pen functions
-@section Syntax highlighting of pen functions
-
-Font lock of pen functions in emacs lisp buffers is now optional.
-Include this in your emacs settings to get syntax highlighting:
-
-@lisp
-(eval-after-load 'pen '(pen-enable-font-lock))
 @end lisp
 
 @node Functions
