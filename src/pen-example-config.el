@@ -132,7 +132,6 @@
 
 (define-key pen-map (kbd "M-p") 'pen-super-newb-dired-prompts)
 (define-key pen-map (kbd "M-s") 'pen-super-newb-scratch)
-
 (define-key pen-map (kbd "M-r") 'pen-run-prompt-function)
 (define-key pen-map (kbd "M-1") #'pen-company-filetype)
 (define-key pen-map (kbd "M-l") 'pen-complete-long)
