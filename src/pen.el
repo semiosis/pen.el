@@ -547,7 +547,6 @@ May use to generate code from comments."
 (require 'pen-emacs)
 
 ;; TODO
-(require 'pen-openai)
 (require 'pen-ocean)
 (require 'pen-huggingface)
 

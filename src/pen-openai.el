@@ -1,3 +1,5 @@
+(require 'openai-api)
+
 ;; This is for prompt file creation and more direct access to the openai-api
 
 ;; Model list taken from loom
