@@ -544,4 +544,6 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-emacs.el
 (require 'pen-emacs)
 
+(add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
+
 (provide 'pen)
