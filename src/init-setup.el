@@ -25,6 +25,7 @@
 (package-install 'memoize)
 (package-install 'ivy)
 (package-install 'counsel)
+(package-install 'yaml-mode)
 (package-install 'pp)
 (package-install 's)
 (package-install 'f)
