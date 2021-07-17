@@ -6,6 +6,7 @@
 (require 'pen-global-prefix)
 (require 'dash)
 (require 'projectile)
+(require 'transient)
 (require 'iedit)
 (require 'ht)
 (require 'helm)
