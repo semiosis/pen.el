@@ -35,7 +35,7 @@
       (pendir (concat (getenv "EMACSD") "/pen.el"))
       (contribdir (concat (getenv "EMACSD") "/pen-contrib.el")))
   (add-to-list 'load-path (concat openaidir "/src"))
-  (load (concat openaidir "/src/openai-api.el"))
+  (load (concat openaidir "/openai-api.el"))
   (add-to-list 'load-path (concat pendir "/src"))
   (load (concat pendir "/src/pen.el"))
   (add-to-list 'load-path (concat pendir "/src/in-development"))
