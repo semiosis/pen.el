@@ -45,18 +45,6 @@
       (require 'yamlmod)
       (require 'yamlmod-wrapper)))
 
-(let ((openaidir (concat (getenv "EMACSD") "/openai-api.el"))
-      (pendir (concat (getenv "EMACSD") "/pen.el"))
-      (contribdir (concat (getenv "EMACSD") "/pen-contrib.el")))
-  (add-to-list 'load-path (concat openaidir "/src"))
-  (load (concat openaidir "/openai-api.el"))
-  (add-to-list 'load-path (concat pendir "/src"))
-  (load (concat pendir "/src/pen.el"))
-  (add-to-list 'load-path (concat pendir "/src/in-development"))
-  (add-to-list 'load-path (concat contribdir "/src"))
-  (load (concat pendir "/src/pen-contrib.el"))
-
-  (load (concat pendir "/src/pen-example-config.el")))
 
 (require 'pen)
 (pen 1)
