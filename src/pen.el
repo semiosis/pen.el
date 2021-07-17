@@ -520,9 +520,6 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-library.el
 (require 'pen-library)
 
-;; http://github.com/semiosis/pen.el/blob/master/pen-contrib.el
-(require 'pen-contrib)
-
 ;; http://github.com/semiosis/pen.el/blob/master/pen-selected.el
 (require 'pen-selected)
 
@@ -543,7 +540,7 @@ May use to generate code from comments."
 
 ;; http://github.com/semiosis/pen.el/blob/master/pen-lm-completers.el
 (require 'pen-lm-completers)
-
+ 
 ;; http://github.com/semiosis/pen.el/blob/master/pen-emacs.el
 (require 'pen-emacs)
 
