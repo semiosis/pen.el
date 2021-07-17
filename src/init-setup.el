@@ -11,6 +11,8 @@
 
 ;; Install dependencies
 (package-install 'shut-up)
+;; For org-roam
+(package-install 'emacsql)
 (package-install 'org-brain)
 (package-install 'dash)
 (package-install 'popup)
