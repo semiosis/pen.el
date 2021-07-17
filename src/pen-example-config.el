@@ -137,6 +137,7 @@
 (define-key pen-map (kbd "M-l") 'pen-complete-long)
 (define-key pen-map (kbd "M-g") 'pen-generate-prompt-functions)
 (define-key pen-map (kbd "M-c") 'fz-pen-counsel)
+(define-key pen-map (kbd "M-m") 'right-click-context-menu)
 (define-key selected-keymap (kbd "TAB") 'pen-filter-with-prompt-function)
 
 (package-install 'ivy)
