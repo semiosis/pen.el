@@ -22,6 +22,7 @@
 (package-install 'helm)
 (package-install 'memoize)
 (package-install 'ivy)
+(package-install 'counsel)
 (package-install 'pp)
 (package-install 's)
 (package-install 'f)
