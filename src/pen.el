@@ -498,6 +498,12 @@ May use to generate code from comments."
 ;; http://github.com/semiosis/pen.el/blob/master/pen-core.el
 (require 'pen-core)
 
+;; http://github.com/semiosis/pen.el/blob/master/pen-openai.el
+(require 'pen-openai)
+
+;; http://github.com/semiosis/pen.el/blob/master/pen-copilot.el
+(require 'pen-copilot)
+
 ;; http://github.com/semiosis/pen.el/blob/master/pen-memoize.el
 (require 'pen-memoize)
 
