@@ -120,8 +120,6 @@
 ;; (call-interactively 'pen-add-key-booste)
 
 ;; Simplify the experience -- Super newb mode
-(ignore-errors (switch-to-buffer "*scratch*"))
-
 (defun pen-super-newb-dired-prompts ()
   (interactive)
   (dired pen-prompts-directory))
@@ -129,6 +127,8 @@
 (defun pen-super-newb-scratch ()
   (interactive)
   (switch-to-buffer "*scratch*"))
+
+(pen-super-newb-scratch)
 
 (defvar pen-super-noob-mode t)
 
