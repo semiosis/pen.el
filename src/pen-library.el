@@ -1,4 +1,3 @@
-(require 'pen-org-brain)
 (require 'sx)
 
 (defalias 's-replace-regexp 'replace-regexp-in-string)
@@ -9,6 +8,7 @@
 (defun f-mant (path)
   (pen-snc (cmd "mant" path)))
 
+;; The semantic path needs to be an association list, and add to that with contrib plugins
 (defun get-path-semantic ()
   (interactive)
   (cond
