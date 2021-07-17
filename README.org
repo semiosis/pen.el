@@ -253,6 +253,11 @@ https://leanpub.com/clojureai
 
 https://github.com/semiosis/ink.el
 
+*** =openai-api.el=
+- An interface for emacs to the OpenAI API.
+
+https://github.com/semiosis/openai-api.el
+
 ** Using =Pen.el= to create prompts for generating images
 https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/
 
