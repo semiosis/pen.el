@@ -54,6 +54,8 @@ agi expect
 agi moreutils
 agi jq
 
+mkdir -p /root/org-roam
+
 (
 cd "$EMACSD"
 test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
