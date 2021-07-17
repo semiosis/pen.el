@@ -128,7 +128,7 @@
 
 (defun pen-super-newb-scratch ()
   (interactive)
-  (dired pen-prompts-directory))
+  (switch-to-buffer "*scratch*"))
 
 (defvar pen-super-noob-mode t)
 
