@@ -41,6 +41,7 @@
   (load (concat pendir "/src/pen.el"))
   (add-to-list 'load-path (concat pendir "/src/in-development"))
   (add-to-list 'load-path (concat contribdir "/src"))
-  (load (concat pendir "/src/pen-contrib.el"))
+  (load (concat contribdir "/src/init-setup.el"))
+  (load (concat contribdir "/src/pen-contrib.el"))
 
   (load (concat pendir "/src/pen-example-config.el")))
