@@ -10,6 +10,8 @@
 
   ;; Require dependencies
   (require 'shut-up)
+  ;; For org-roam
+  (require 'emacsql)
   (require 'org-brain)
   (require 'dash)
   (require 'popup)
