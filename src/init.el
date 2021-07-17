@@ -14,6 +14,7 @@
 (require 'popup)
 (require 'right-click-context)
 (require 'projectile)
+(require 'transient)
 (require 'iedit)
 (require 'ht)
 (require 'helm)
