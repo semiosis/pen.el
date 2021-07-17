@@ -118,3 +118,14 @@
 ;; Automatically check if OpenAI key exists and ask for it otherwise
 (call-interactively 'pen-add-key-openai)
 ;; (call-interactively 'pen-add-key-booste)
+
+;; Simplify the experience
+(ignore-errors (switch-to-buffer "*scratch*"))
+
+(define-key pen-map (kbd "M-r") 'pen-run-prompt-function)
+(define-key pen-map (kbd "M-1") #'pen-company-filetype)
+(define-key pen-map (kbd "M-l") 'pen-complete-long)
+(define-key pen-map (kbd "TAB") 'pen-complete-long)
+(define-key pen-map (kbd "M-g") 'pen-generate-prompt-functions)
+(define-key pen-map (kbd "M-c") 'fz-pen-counsel)
+(define-key selected-keymap (kbd "TAB") 'pen-filter-with-prompt-function)
