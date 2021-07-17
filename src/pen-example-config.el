@@ -1,3 +1,9 @@
+(let ((pendir (concat (getenv "EMACSD") "/pen.el"))
+      (contribdir (concat (getenv "EMACSD") "/pen-contrib.el")))
+  (add-to-list 'load-path (concat pendir "/src"))
+  (add-to-list 'load-path (concat contribdir "/src"))
+  (add-to-list 'load-path (concat pendir "/src/in-development")))
+
 ;; Add Hyper and Super
 (defun add-event-modifier (string e)
   (let ((symbol (if (symbolp e) e (car e))))
