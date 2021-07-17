@@ -103,7 +103,7 @@
   (interactive)
 
   (let ((topic
-         (cond ((major-mode-p 'org-brain-visualize-mode)
+         (cond ((derived-mode-p 'org-brain-visualize-mode)
                 (progn (require 'my-org-brain)
                        (org-brain-pf-topic short)))
                (t

@@ -615,9 +615,9 @@ when s is a string, set the clipboard to s"
   "Maybe run lsp."
   (interactive)
   (cond
-   ((major-mode-p 'prompt-description-mode)
+   ((derived-mode-p 'prompt-description-mode)
     (message "Disabled lsp for prompts"))
-   ((major-mode-p 'completer-description-mode)
+   ((derived-mode-p 'completer-description-mode)
     (message "Disabled lsp for completers"))
    (t (call-interactively 'lsp))))
 
