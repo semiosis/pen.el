@@ -21,6 +21,7 @@
   (require 'helm)
   (require 'memoize)
   (require 'ivy)
+  (require 'counsel)
   (require 'pp)
   (require 's)
   (require 'f)
