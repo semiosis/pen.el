@@ -24,6 +24,7 @@
   (require 'memoize)
   (require 'ivy)
   (require 'counsel)
+  (require 'yaml-mode)
   (require 'pp)
   (require 's)
   (require 'f)
