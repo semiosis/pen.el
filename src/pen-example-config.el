@@ -119,8 +119,19 @@
 (call-interactively 'pen-add-key-openai)
 ;; (call-interactively 'pen-add-key-booste)
 
-;; Simplify the experience
+;; Simplify the experience -- Super newb mode
 (ignore-errors (switch-to-buffer "*scratch*"))
+
+(defun pen-super-newb-dired-prompts ()
+  (interactive)
+  (dired pen-prompts-directory))
+
+(defun pen-super-newb-scratch ()
+  (interactive)
+  (dired pen-prompts-directory))
+
+(define-key pen-map (kbd "M-p") 'pen-super-newb-dired-prompts)
+(define-key pen-map (kbd "M-s") 'pen-super-newb-scratch)
 
 (define-key pen-map (kbd "M-r") 'pen-run-prompt-function)
 (define-key pen-map (kbd "M-1") #'pen-company-filetype)
