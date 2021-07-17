@@ -11,6 +11,7 @@
 
 ;; Install dependencies
 (package-install 'shut-up)
+(package-install 'brain)
 (package-install 'dash)
 (package-install 'popup)
 (package-install 'right-click-context)
