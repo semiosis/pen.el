@@ -26,7 +26,7 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
   docker pull semiosis/pen.el:latest
 #+END_SRC
 
-/The pen of imagination./
+/The pen of imagination - |:ϝ∷¦ϝ./
 
 [[./the_pen_of_imagination.png]]
 
