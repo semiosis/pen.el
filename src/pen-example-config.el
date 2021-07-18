@@ -136,16 +136,7 @@
 (defvar pen-super-noob-mode t)
 
 (if pen-super-noob-mode
-    (progn
-      (define-key pen-map (kbd "M-p") 'pen-super-newb-dired-prompts)
-      (define-key pen-map (kbd "M-s") 'pen-super-newb-scratch)
-      (define-key pen-map (kbd "M-r") 'pen-run-prompt-function)
-      (define-key pen-map (kbd "M-TAB") 'pen-company-filetype)
-      (define-key pen-map (kbd "M-l") 'pen-complete-long)
-      (define-key pen-map (kbd "M-g") 'pen-generate-prompt-functions)
-      (define-key pen-map (kbd "M-c") 'fz-pen-counsel)
-      (define-key pen-map (kbd "M-m") 'right-click-context-menu)
-      (define-key selected-keymap (kbd "TAB") 'pen-filter-with-prompt-function)))
+    (pen-acolyte-minor-mode.el t))
 
 (package-install 'ivy)
 (require 'ivy)
