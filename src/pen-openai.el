@@ -18,7 +18,7 @@
    "instruct-curie-beta"
    "instruct-davinci-beta"))
 
-;; Or is it davinci-instruct-beta?
+;; Or is it davinci-instruct-beta ?
 
 ;; Defaults taken from loom
 ;; https://github.com/socketteer/loom/blob/main/model.py#L40
