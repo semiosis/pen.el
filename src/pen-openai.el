@@ -39,6 +39,7 @@
         (etv (pen-list2str engines))
       engines)))
 (memoize 'pen-openai-list-engines)
+;; (memoize-restore 'pen-openai-list-engines)
 
 
 (provide 'pen-openai)
