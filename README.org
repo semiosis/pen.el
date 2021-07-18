@@ -5,7 +5,7 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 
 | License | Discord server invite       |
 |---------+-----------------------------|
-| =GPL-3= | https://discord.gg/HH6PY27d |
+| =GPL-3= | https://discord.gg/GQQbbVqK |
 
 - Create elisp functions based on "Language Model" prompts
 - Share and discover prompts (=P2P=)
