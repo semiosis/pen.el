@@ -185,7 +185,7 @@
 
              ;; construct the full command
              (shcmd
-              (pen-message-no-echo
+              (pen-log
                (concat
                 ;; All parameters are sent as environment variables
                 (sh-construct-envs
