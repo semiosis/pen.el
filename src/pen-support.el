@@ -6,6 +6,27 @@
 ;; (defun f-join (&rest strings)
 ;;   (s-join "/" strings))
 
+(defun pen-messages-buffer ()
+  "Return the \"*Messages*\" buffer.
+If it does not exist, create it and switch it to `messages-buffer-mode'."
+  (or (get-buffer "*Messages*")
+      (with-current-buffer (get-buffer-create "*Messages*")
+        (messages-buffer-mode)
+        (current-buffer))))
+
+(defun pen-message-no-echo (format-string &rest args)
+  (let ((inhibit-read-only t))
+    (with-current-buffer (pen-messages-buffer)
+      (goto-char (point-max))
+      (when (not (bolp))
+        (insert "\n"))
+      (insert (apply 'format format-string args))
+      (when (not (bolp))
+        (insert "\n"))))
+  ;; (let ((minibuffer-message-timeout 0))
+  ;;   (message format-string args))
+  )
+
 (defun pen-write-to-file (stdin file_path)
   (ignore-errors (with-temp-buffer
                    (insert stdin)
