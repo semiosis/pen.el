@@ -116,7 +116,7 @@
 ;;  postprocessor prompt-filter n-completions)
 (defun define-prompt-function ()
   (eval
-   `(cl-defun ,func-sym ,(append '(&optional) var-syms)
+   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result))
       ,doc
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
@@ -249,21 +249,25 @@
              ;;           (setq stsq (s-truncate matchpos result "")))))
              ;;    result))
 
-             (result (cl-fz results :prompt (concat ,func-name ": ") :select-only-match t)))
-        (if (interactive-p)
-            (cond
-             ((and ,filter
-                   mark-active)
-              (replace-region (concat (pen-selected-text) result)))
-             (,completion
-              (etv result))
-             ((or ,(not filter)
-                  (>= (prefix-numeric-value current-prefix-arg) 4)
-                  (not mark-active))
-              (etv result))
-             (t
-              (replace-region result)))
-          result)))))
+             (result (if no-select-result
+                         (length results)
+                       (cl-fz results :prompt (concat ,func-name ": ") :select-only-match t))))
+        (if no-select-result
+            results
+          (if (interactive-p)
+              (cond
+               ((and ,filter
+                     mark-active)
+                (replace-region (concat (pen-selected-text) result)))
+               (,completion
+                (etv result))
+               ((or ,(not filter)
+                    (>= (prefix-numeric-value current-prefix-arg) 4)
+                    (not mark-active))
+                (etv result))
+               (t
+                (replace-region result)))
+            result))))))
 
 (defun pen-list-to-orglist (l)
   (mapconcat 'identity (mapcar (lambda (s) (concat "- " s)) l)
