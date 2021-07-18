@@ -136,7 +136,9 @@
 (defvar pen-super-noob-mode t)
 
 (if pen-super-noob-mode
-    (pen-acolyte-minor-mode.el t))
+    (global-pen-acolyte-minor-mode t))
+
+(define-key global-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
 
 (package-install 'ivy)
 (require 'ivy)
