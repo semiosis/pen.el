@@ -69,13 +69,13 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
 
 (defun try-cascade (list-of-alternatives)
   "Try to run a thing. Run something else if it fails."
-  ;; (list2str list-of-alternatives)
+  ;; (pen-list2str list-of-alternatives)
 
   (let* ((failed t)
          (result
           (catch 'bbb
             (dolist (p list-of-alternatives)
-              ;; (message "%s" (list2str p))
+              ;; (message "%s" (pen-list2str p))
               (let ((result nil))
                 (tryelse
                  (progn
@@ -144,7 +144,7 @@ Takes into account the current file name."
   "Convert a newline delimited string to list."
   (split-string s "\n"))
 
-(defun list2str (&rest l)
+(defun pen-list2str (&rest l)
   "join the string representation of elements of a given list into a single string with newline delimiters"
   (if (equalp 1 (length l))
       (setq l (car l)))
@@ -155,8 +155,8 @@ Takes into account the current file name."
 delim is used to guarantee the function returns multiple matches per line
 (etv (scrape \"\\b\\w+\\b\" (buffer-string) \" +\"))"
   (if delim
-      (setq s (list2str (s-split delim s))))
-  (list2str
+      (setq s (pen-list2str (s-split delim s))))
+  (pen-list2str
    (-flatten
     (cl-loop
      for
