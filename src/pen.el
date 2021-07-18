@@ -516,53 +516,23 @@ May use to generate code from comments."
         (etv response)
       response)))
 
-;; http://github.com/semiosis/pen.el/blob/master/pen-core.el
 (require 'pen-core)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-openai.el
 (require 'pen-openai)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-copilot.el
 (require 'pen-copilot)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-memoize.el
 (require 'pen-memoize)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-ivy.el
 (require 'pen-ivy)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-ink.el
 (require 'pen-ink)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-company.el
 (require 'pen-company)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-library.el
 (require 'pen-library)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-selected.el
 (require 'pen-selected)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-right-click-menu.el
 (require 'pen-right-click-menu)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-mouse.el
 (require 'pen-mouse)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-configure.el
 (require 'pen-configure)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-prompt-description.el
 (require 'pen-prompt-description)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-completer-description.el
 (require 'pen-completer-description)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-lm-completers.el
 (require 'pen-lm-completers)
-
-;; http://github.com/semiosis/pen.el/blob/master/pen-emacs.el
 (require 'pen-emacs)
+(require 'pen-acolyte-minor-mode)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
