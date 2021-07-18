@@ -472,11 +472,12 @@ Function names are prefixed with pf- for easy searching"
 (defun pen-company-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
          (response
-          (->>
+          (-->
               preceding-text
-            (pf-generic-file-type-completion (detect-language))))
+            (pf-generic-file-type-completion (detect-language) it :no-select-result t)))
          (res
-          (list response)))
+          response))
+
     (mapcar (lambda (s) (concat (pen-company-filetype--prefix) s))
             res)))
 
