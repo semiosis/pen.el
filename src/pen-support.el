@@ -27,6 +27,9 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   ;;   (message format-string args))
   )
 
+(defun pen-log (s)
+  (pen-message-no-echo "%s\\n" s))
+
 (defun pen-write-to-file (stdin file_path)
   (ignore-errors (with-temp-buffer
                    (insert stdin)
