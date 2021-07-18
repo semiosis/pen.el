@@ -200,7 +200,7 @@
                           (eval 'max-tokens)
                         ,max-tokens)
                       vals))
-                   ("PEN_TEMPERATURE" ,,temperature)
+                   ("PEN_TEMPERATURE" ,(pen-expand-template ,temperature))
                    ("PEN_STOP_SEQUENCE"
                     ,(pen-encode-string
                       (str (if (variable-p 'stop-sequence)
