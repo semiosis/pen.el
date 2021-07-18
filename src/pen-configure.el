@@ -11,17 +11,16 @@
                 (f-touch pen-booste-key-file-path)
                 (f-write-text key 'utf-8 pen-booste-key-file-path)))))))
 
-(defun pen-add-key-openai ()
-  (interactive)
+(defun pen-add-key-openai (key)
+  (interactive (list (read-passwd "OpenAI key: ")))
   (let ((penconfdir (f-join user-home-directory ".pen"))
         (pen-openai-key-file-path (f-join user-home-directory ".pen" "openai_api_key")))
     (if (not (f-dir-p penconfdir))
         (f-mkdir penconfdir))
     (if (not (f-file-p pen-openai-key-file-path))
-        (let ((key (read-passwd "OpenAI key: ")))
-          (if (sor key)
-              (progn
-                (f-touch pen-openai-key-file-path)
-                (f-write-text key 'utf-8 pen-openai-key-file-path)))))))
+        (if (sor key)
+            (progn
+              (f-touch pen-openai-key-file-path)
+              (f-write-text key 'utf-8 pen-openai-key-file-path))))))
 
 (provide 'pen-configure)
