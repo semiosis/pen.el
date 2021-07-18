@@ -1,6 +1,4 @@
-#+TITLE: Pen Tutorial
-
-** Summary
+** Pen Tutorial
 This is a tutorial for how to use =pen.el=.
 
 The following command starts =pen.el=. You
@@ -14,18 +12,46 @@ only need to have docker installed and an
   docker pull semiosis/pen.el:latest
 #+END_SRC
 
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  # For windows
+  docker.exe run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+
+  # You may need winpty
+  git clone https://github.com/rprichard/winpty
+  winpty docker.exe run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+#+END_SRC
+
 + Project code :: https://github.com/semiosis/pen.el/
 
-+ Join discord :: https://discord.gg/HH6PY27d
++ Join discord :: https://discord.gg/GQQbbVqK
+
+[[./wizard4.png]]
 
 For =GPT-neo=, =GPT-2= and =booste= support,
 and latest updates, please install from master
 branch. Docker support coming. =GPT-j= also in
 the works.
 
-** Basic Key bindings
+** =Acolyte Mode= - Key bindings for emacs noobs
+These are enabled by default with the docker image.
+
+| kb                       |                                                                                 |
+|--------------------------+---------------------------------------------------------------------------------|
+| =Alt-p=                  | Open the prompts directory in dired                                             |
+| =Alt-t=                  | Start writing in an empty file                                                  |
+| =Alt-s=                  | Save file                                                                       |
+| =Alt-r=                  | Running a prompt function like this will not insert text or replace it.         |
+| =Alt-TAB=                | This completes the current line.                                                |
+| =Alt-l= (little L)       | Multiline (long) completion.                                                    |
+| =Alt-g=                  | This reloads the prompt functions.                                              |
+| =Alt-m=                  | Right click menu                                                                |
+| Select text then =Alt-f= | This filters the text through a prompt function specifically designed for this. |
+| =Spacebar=               | When text is selected, will run with that text as first argument.               |
+
+** Key bindings for emacs wizards (also enabled in docker)
 | kb        | f                                 |                                                                                    |
 |-----------+-----------------------------------+------------------------------------------------------------------------------------|
+| =H-.=     | =global-pen-acolyte-minor-mode=   | This toggles Acolyte mode.                                                         |
 | =H-TAB g= | =pen-generate-prompt-functions=   | This reloads the prompt functions.                                                 |
 | =H-TAB r= | =pen-run-prompt-function=         | Running a prompt function like this will not insert text or replace it.            |
 | =M-1=     | =pen-company-filetype=            | This completes the current line.                                                   |
@@ -50,6 +76,8 @@ I like =Hyper= because you're writing =hyperreality=.
       reality, especially in technologically
       advanced postmodern societies.
 #+END_SRC
+
++ Imagining =Pen.el= :: [[https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/][Imagery for Pen.el with CLIP and inspired from Myst: The Book of Atrus // Bodacious Blog]]
 
 *** How to run =H-TAB r= for emacs noobies
 
@@ -325,7 +353,7 @@ var-defaults:
 #+BEGIN_SRC yaml -n :async :results verbatim code
   ---
   title: Translate from English to
-  version: 2
+  prompt-version: 2
   doc: This prompt translates English text to any world langauge
   issues:
   - I think the unicode characters may be multibyte causing issues with completion
