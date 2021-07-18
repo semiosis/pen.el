@@ -48,3 +48,5 @@
 (define-key pen-acolyte-minor-mode-map (kbd "M-c") 'fz-pen-counsel)
 (define-key pen-acolyte-minor-mode-map (kbd "M-m") 'right-click-context-menu)
 (define-key pen-acolyte-minor-mode-map (kbd "M-f") 'pen-filter-with-prompt-function)
+
+(provide 'pen-acolyte-minor-mode)
