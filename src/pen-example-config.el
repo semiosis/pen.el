@@ -68,6 +68,7 @@
 (define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
 (define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
+(define-key pen-map (kbd "H-n") 'global-pen-acolyte-minor-mode-toggle)
 
 (require 'pen-contrib)
 ;; from contrib
