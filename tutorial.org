@@ -1,4 +1,4 @@
-** Pen Tutorial
+* Pen Tutorial
 This is a tutorial for how to use =pen.el=.
 
 The following command starts =pen.el=. You
