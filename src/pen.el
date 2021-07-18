@@ -472,9 +472,15 @@ Function names are prefixed with pf- for easy searching"
 (defun pen-company-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
          (response
-          (-->
-              preceding-text
-            (pf-generic-file-type-completion (detect-language) it :no-select-result t)))
+          (if (>= (prefix-numeric-value current-prefix-arg) 4)
+              (let ((max-tokens 200)
+                    (stop-sequence "##long complete##"))
+                (-->
+                    preceding-text
+                  (pf-generic-file-type-completion (detect-language) it :no-select-result t)))
+            (-->
+                preceding-text
+              (pf-generic-file-type-completion (detect-language) it :no-select-result t))))
          (res
           response))
 
