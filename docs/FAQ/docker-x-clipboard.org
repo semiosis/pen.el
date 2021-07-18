@@ -14,6 +14,6 @@ In this style
 http://github.com/semiosis/pen.el/blob/master/Dockerfile
 BUT
 There might be an easier way than this
-I think maybe using xterm-paste instead of Xorg clipboard is easier
+I think maybe using =xterm-paste= instead of Xorg clipboard is easier
 i think it's shift and right click -- not sure
 I'll try to reproduce
