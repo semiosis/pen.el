@@ -107,6 +107,16 @@
         (kill-buffer b)
         nil))))
 
+(defun pen-expand-template (s vals)
+  (let ((i 1))
+    (chomp
+     (progn
+       (cl-loop
+        for val in vals do
+        (setq s (string-replace (format "<%d>" i) val s))
+        (setq i (+ 1 i)))
+       s))))
+
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
@@ -154,13 +164,7 @@
              ;; template the parameters into the prompt
              (i 1)
              (final-prompt
-              (chomp
-               (progn
-                 (cl-loop
-                  for val in vals do
-                  (setq final-prompt (string-replace (format "<%d>" i) val final-prompt))
-                  (setq i (+ 1 i)))
-                 final-prompt)))
+              (pen-expand-template final-prompt vals))
 
              ;; This gives string position, not byte position
              ;; (string-search "s" "ガムツリshane")
@@ -190,10 +194,11 @@
                   ("PEN_LM_COMMAND" ,,lm-command)
                   ("PEN_ENGINE" ,,engine)
                   ("PEN_MAX_TOKENS"
-                   ,(if (variable-p 'max-tokens)
-                        ;; Make overridable
-                        (eval 'max-tokens)
-                      ,max-tokens))
+                   (pen-expand-template
+                    ,(if (variable-p 'max-tokens)
+                         (eval 'max-tokens)
+                       ,max-tokens)
+                    vals))
                   ("PEN_TEMPERATURE" ,,temperature)
                   ("PEN_STOP_SEQUENCE"
                    ,(pen-encode-string
