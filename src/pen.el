@@ -262,6 +262,8 @@
             results
           (if (interactive-p)
               (cond
+               (,insertion
+                (insert result))
                ((and ,filter
                      mark-active)
                 (replace-region (concat (pen-selected-text) result)))
@@ -326,6 +328,7 @@ Function names are prefixed with pf- for easy searching"
                      (prettifier (ht-get yaml "prettifier"))
                      (collation-postprocessor (ht-get yaml "pen-collation-postprocessor"))
                      (completion (pen-yaml-test yaml "completion"))
+                     (insertion (pen-yaml-test yaml "insertion"))
                      (no-trim-start (or (pen-yaml-test yaml "no-trim-start")
                                         (pen-yaml-test yaml "completion")))
                      (no-trim-end (pen-yaml-test yaml "no-trim-end"))
