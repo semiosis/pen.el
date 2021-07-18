@@ -1,0 +1,19 @@
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  docker run --privileged --env "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR" --env DBUS_SESSION_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS" --rm --env "DISPLAY=:0" --network host -ti "$image" emacs
+#+END_SRC
+
+I have some docker commands in my scripts repo for generating docker invocations for various things lol
+That's how to share host Xorg
+and will share the clipboard. However you may also need to export the ENV var inside the docker file for the X server
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  vim +/"ENV LANG en_US.UTF-8" "$MYGIT/semiosis/pen.el/Dockerfile"
+#+END_SRC
+
+In this style
+http://github.com/semiosis/pen.el/blob/master/Dockerfile
+BUT
+There might be an easier way than this
+I think maybe using xterm-paste instead of Xorg clipboard is easier
+i think it's shift and right click -- not sure
+I'll try to reproduce
