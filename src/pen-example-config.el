@@ -87,7 +87,7 @@
 (setq pen-prompt-discovery-recursion-depth 5)
 
 ;; Personal prompts repository
-(let ((hostpromptsdir (f-join user-emacs-directory "host" "prompts")))
+(let ((hostpromptsdir (f-join user-emacs-directory "host" "prompts" "prompts")))
   (if (f-directory-p hostpromptsdir)
       (setq pen-prompts-directory hostpromptsdir)
     (setq pen-prompts-directory (f-join user-emacs-directory "prompts"))))
