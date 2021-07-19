@@ -88,7 +88,8 @@
 ;; Personal prompts repository
 (let ((hostpromptsdir (f-join user-emacs-directory "host" "prompts")))
   (if (f-directory-p hostpromptsdir)
-      (setq pen-prompts-directory hostpromptsdir)))
+      (setq pen-prompts-directory hostpromptsdir)
+    (setq pen-prompts-directory (f-join user-emacs-directory "prompts"))))
 
 ;; nlsh
 (setq pen-nlsh-histdir (f-join user-emacs-directory "comint-history"))
