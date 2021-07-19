@@ -133,9 +133,6 @@
 ;; defvar this in your own config and load first to disable
 (defvar pen-init-with-acolyte-mode t)
 
-;; This is also necessary for the first buffer opened
-(pen-acolyte-minor-mode t)
-
 (if pen-init-with-acolyte-mode
     (global-pen-acolyte-minor-mode t))
 
@@ -145,6 +142,7 @@
 
 (setq message-log-max 20000)
 
+(right-click-context-mode t)
 (pen-acolyte-scratch)
 
 (let ((pen-openai-key-file-path (f-join user-home-directory ".pen" "openai_api_key")))
