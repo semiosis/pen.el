@@ -45,7 +45,7 @@
 
   (if (f-directory-p openaihostdir)
       (setq openaidir openaihostdir))
-  (add-to-list 'load-path (concat openaidir "/src"))
+  (add-to-list 'load-path openaidir)
   (require 'openai-api)
 
   (if (f-directory-p penhostdir)
