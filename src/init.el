@@ -37,14 +37,25 @@
 (require 'pcre2el)
 
 (let ((openaidir (concat (getenv "EMACSD") "/openai-api.el"))
+      (openaihostdir (concat (getenv "EMACSD") "/host/openai-api.el"))
       (pendir (concat (getenv "EMACSD") "/pen.el"))
-      (contribdir (concat (getenv "EMACSD") "/pen-contrib.el")))
-  (add-to-list 'load-path (concat openaidir "/src"))
-  (load (concat openaidir "/openai-api.el"))
-  (add-to-list 'load-path (concat pendir "/src"))
-  (load (concat pendir "/src/pen.el"))
+      (penhostdir (concat (getenv "EMACSD") "/host/pen.el"))
+      (contribdir (concat (getenv "EMACSD") "/pen-contrib.el"))
+      (contribhostdir (concat (getenv "EMACSD") "/host/pen-contrib.el")))
+
+  (if (f-directory-p openaihostdir)
+      (add-to-list 'load-path (concat openaihostdir "/src"))
+    (add-to-list 'load-path (concat openaidir "/src")))
+  (require 'openai-api)
+
+  (if (f-directory-p penhostdir)
+      (add-to-list 'load-path (concat penhostdir "/src"))
+    (add-to-list 'load-path (concat pendir "/src")))
+  (require 'pen)
+
   (add-to-list 'load-path (concat pendir "/src/in-development"))
   (add-to-list 'load-path (concat contribdir "/src"))
+
   (load (concat contribdir "/src/init-setup.el"))
   (load (concat contribdir "/src/pen-contrib.el"))
 
