@@ -196,9 +196,9 @@
                    ("PEN_ENGINE" ,,engine)
                    ("PEN_MAX_TOKENS"
                     ,(pen-expand-template
-                      (if (variable-p 'max-tokens)
-                          (eval 'max-tokens)
-                        ,max-tokens)
+                      (str (if (variable-p 'max-tokens)
+                               (eval 'max-tokens)
+                             ,max-tokens))
                       vals))
                    ("PEN_TEMPERATURE" ,(pen-expand-template (str ,temperature) vals))
                    ("PEN_STOP_SEQUENCE"
