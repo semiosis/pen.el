@@ -50,12 +50,12 @@
       (contribdir (concat (getenv "EMACSD") "/pen-contrib.el"))
       (contribhostdir (concat (getenv "EMACSD") "/host/pen-contrib.el")))
 
-  (if (f-directory-p openaihostdir)
+  (if (f-directory-p (concat openaihostdir "/src"))
       (setq openaidir openaihostdir))
   (add-to-list 'load-path openaidir)
   (require 'openai-api)
 
-  (if (f-directory-p penhostdir)
+  (if (f-directory-p (concat penhostdir "/src"))
       (setq pendir penhostdir))
   (add-to-list 'load-path (concat pendir "/src"))
   (require 'pen)
