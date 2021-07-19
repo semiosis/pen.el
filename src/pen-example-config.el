@@ -131,9 +131,10 @@
 
 (pen-super-newb-scratch)
 
-(defvar pen-super-noob-mode t)
+;; defvar this in your own config and load first to disable
+(defvar pen-init-with-acolyte-mode t)
 
-(if pen-super-noob-mode
+(if pen-init-with-acolyte-mode
     (global-pen-acolyte-minor-mode t))
 
 (define-key global-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
