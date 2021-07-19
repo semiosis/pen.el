@@ -7,6 +7,8 @@
 
 ;; (package-refresh-contents)
 
+(defvar org-roam-v2-ack t)
+
 ;; Require dependencies
 (require 'shut-up)
 ;; For org-roam
