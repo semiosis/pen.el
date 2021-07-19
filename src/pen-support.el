@@ -6,6 +6,12 @@
 ;; (defun f-join (&rest strings)
 ;;   (s-join "/" strings))
 
+(defun url-found-p (url)
+  "Return non-nil if URL is found, i.e. HTTP 200."
+  (with-current-buffer (url-retrieve-synchronously url nil t 5)
+    (prog1 (eq url-http-response-status 200)
+      (kill-buffer))))
+
 (defun ecurl (url)
   (with-current-buffer (url-retrieve-synchronously url t t 5)
     (goto-char (point-min))
