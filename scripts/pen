@@ -8,8 +8,8 @@ test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
 test -d "pen.el" && : "${PENEL_DIR:="pen.el"}"
 : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
 
-test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
-: "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
+# test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
+# : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
 
 IFS= read -r -d '' shcode <<HEREDOC
     docker run \
