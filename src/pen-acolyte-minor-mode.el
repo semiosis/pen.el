@@ -12,8 +12,8 @@
 
 ;; Please use H-. to toggle acolyte mode
 
-(define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-super-newb-dired-prompts)
-(define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-super-newb-scratch)
+(define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-acolyte-dired-prompts)
+(define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-acolyte-scratch)
 (define-key pen-acolyte-minor-mode-map (kbd "M-s") 'save-buffer)
 (define-key pen-acolyte-minor-mode-map (kbd "M-r") 'pen-run-prompt-function)
 (define-key pen-acolyte-minor-mode-map (kbd "M-TAB") 'pen-company-filetype)

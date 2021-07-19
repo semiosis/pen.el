@@ -121,15 +121,15 @@
 ;; (defun track-mouse (e))
 
 ;; Simplify the experience -- Super newb mode
-(defun pen-super-newb-dired-prompts ()
+(defun pen-acolyte-dired-prompts ()
   (interactive)
   (dired pen-prompts-directory))
 
-(defun pen-super-newb-scratch ()
+(defun pen-acolyte-scratch ()
   (interactive)
   (switch-to-buffer "*scratch*"))
 
-(pen-super-newb-scratch)
+(pen-acolyte-scratch)
 
 ;; defvar this in your own config and load first to disable
 (defvar pen-init-with-acolyte-mode t)
