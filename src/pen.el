@@ -445,20 +445,22 @@ Function names are prefixed with pf- for easy searching"
                                (if completion
                                    (add-to-list 'pen-prompt-completion-functions a)))))
 
-                (if (and (not in-development)
-                         (sor func-name)
-                         func-sym
-                         (sor title))
-                    (let ((funcsym (define-prompt-function)))
-                      (add-to-list 'pen-prompt-functions funcsym)
-                      (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
-                      (if completion (add-to-list 'pen-prompt-completion-functions funcsym))
+                (try
+                 (progn
+                   (if (and (not in-development)
+                            (sor func-name)
+                            func-sym
+                            (sor title))
+                       (let ((funcsym (define-prompt-function)))
+                         (add-to-list 'pen-prompt-functions funcsym)
+                         (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
+                         (if completion (add-to-list 'pen-prompt-completion-functions funcsym))
 
-                      ;; Using memoization here is the more efficient way to memoize.
-                      ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
-                      ;; (if cache (memoize funcsym))
-                      ))
-                (message (concat "pen-mode: Loaded prompt function " func-name)))))))
+                         ;; Using memoization here is the more efficient way to memoize.
+                         ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
+                         ;; (if cache (memoize funcsym))
+                         )))
+                 (message (concat "pen-mode: Loaded prompt function " func-name))))))))
 
 (defun pen-filter-with-prompt-function ()
   (interactive)
