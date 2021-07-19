@@ -63,3 +63,5 @@
   (load (concat contribdir "/src/pen-contrib.el"))
 
   (load (concat pendir "/src/pen-example-config.el")))
+
+(pen-acolyte-minor-mode t)
