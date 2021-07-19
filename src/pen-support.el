@@ -460,7 +460,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
           (setq deactivate-mark nil)
           (activate-mark)
           (if doreverse
-              (call-interactively 'cua-exchange-point-and-mark)))))))
+              (cua-exchange-point-and-mark nil)))))))
 (defalias 'filter-selection 'filter-selected-region-through-function)
 
 (defmacro ntimes (n &rest body)
