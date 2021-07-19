@@ -120,13 +120,6 @@
 (xterm-mouse-mode t)
 ;; (defun track-mouse (e))
 
-(let ((envkey (getenv "OPENAI_API_KEY")))
-  (if (sor envkey)
-      (pen-add-key-openai envkey)
-    ;; Automatically check if OpenAI key exists and ask for it otherwise
-    (call-interactively 'pen-add-key-openai)))
-;; (call-interactively 'pen-add-key-booste)
-
 ;; Simplify the experience -- Super newb mode
 (defun pen-super-newb-dired-prompts ()
   (interactive)
@@ -148,3 +141,10 @@
 (package-install 'ivy)
 (require 'ivy)
 (ivy-mode 1)
+
+(let ((envkey (getenv "OPENAI_API_KEY")))
+  (if (sor envkey)
+      (pen-add-key-openai envkey)
+    ;; Automatically check if OpenAI key exists and ask for it otherwise
+    (call-interactively 'pen-add-key-openai)))
+;; (call-interactively 'pen-add-key-booste)
