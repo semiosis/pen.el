@@ -155,4 +155,6 @@
           ;; Automatically check if OpenAI key exists and ask for it otherwise
           (call-interactively 'pen-add-key-openai)))))
 
+(add-hook 'after-init-hook 'pen-acolyte-scratch)
+
 ;; (call-interactively 'pen-add-key-booste)
