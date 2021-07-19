@@ -17,3 +17,5 @@ GPT-3 generation by =The Joker=.
 bindings for people who do not know emacs and
 for people who want to hack on prompts
 extremely quickly.
+
+I secretly use =Acolyte Minor Mode=.
