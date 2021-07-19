@@ -142,6 +142,8 @@
 (require 'ivy)
 (ivy-mode 1)
 
+(setq message-log-max 20000)
+
 (let ((envkey (getenv "OPENAI_API_KEY")))
   (if (sor envkey)
       (pen-add-key-openai envkey)
