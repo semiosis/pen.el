@@ -557,7 +557,8 @@ when s is a string, set the clipboard to s"
   (if (not (string-match " $" prompt))
       (setq prompt (concat prompt " ")))
 
-  (initvar histvar)
+  (if (not (variable-p histvar))
+            (eval `(defvar ,histvar nil)))
   (if (and (not initial-input)
            (listp histvar))
       (setq initial-input (first histvar)))
