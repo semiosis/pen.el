@@ -10,7 +10,6 @@
 ;;;###autoload
 (define-globalized-minor-mode global-pen-acolyte-minor-mode pen-acolyte-minor-mode pen-acolyte-minor-mode)
 
-
 (define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-super-newb-dired-prompts)
 (define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-super-newb-scratch)
 (define-key pen-acolyte-minor-mode-map (kbd "M-s") 'save-buffer)
