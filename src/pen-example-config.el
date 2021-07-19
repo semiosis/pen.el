@@ -85,13 +85,10 @@
 ;; This is how many repositories deep pen will look for new prompts repositories that are linked to eachother
 (setq pen-prompt-discovery-recursion-depth 5)
 
-(let ((promptsdir (f-join user-emacs-directory "prompts"))
-      (hostpromptsdir (f-join user-emacs-directory "host" "prompts"))))
-(if (f-directory-p openaihostdir)
-    (setq openaidir openaihostdir))
-
 ;; Personal prompts repository
-(setq pen-prompts-directory (f-join user-emacs-directory "prompts"))
+(let ((hostpromptsdir (f-join user-emacs-directory "host" "prompts")))
+  (if (f-directory-p hostpromptsdir)
+      (setq pen-prompts-directory hostpromptsdir)))
 
 ;; nlsh
 (setq pen-nlsh-histdir (f-join user-emacs-directory "comint-history"))
