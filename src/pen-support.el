@@ -6,6 +6,16 @@
 ;; (defun f-join (&rest strings)
 ;;   (s-join "/" strings))
 
+(defun ecurl (url)
+  (with-current-buffer (url-retrieve-synchronously url t t 5)
+    (goto-char (point-min))
+    (re-search-forward "^$")
+    (delete-region (point) (point-min))
+    (kill-line)
+    (let ((result (buffer2string (current-buffer))))
+      (kill-buffer)
+      result)))
+
 (defun pen-messages-buffer ()
   "Return the \"*Messages*\" buffer.
 If it does not exist, create it and switch it to `messages-buffer-mode'."

@@ -533,6 +533,7 @@ May use to generate code from comments."
 (require 'pen-lm-completers)
 (require 'pen-emacs)
 (require 'pen-acolyte-minor-mode)
+(require 'pen-gptprompts)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
