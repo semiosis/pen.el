@@ -69,6 +69,7 @@
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
 (define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
 (define-key pen-map (kbd "H-n") 'global-pen-acolyte-minor-mode-toggle)
+(define-key pen-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
 
 (require 'pen-contrib)
 ;; from contrib
@@ -136,8 +137,6 @@
 
 (if pen-init-with-acolyte-mode
     (global-pen-acolyte-minor-mode t))
-
-(define-key global-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
 
 (package-install 'ivy)
 (require 'ivy)
