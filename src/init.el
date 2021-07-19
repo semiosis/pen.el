@@ -11,6 +11,7 @@
 (require 'shut-up)
 ;; For org-roam
 (require 'emacsql)
+(require 'org-roam)
 (require 'org-brain)
 (require 'dash)
 (require 'popup)
