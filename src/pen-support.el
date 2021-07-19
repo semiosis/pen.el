@@ -424,6 +424,13 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (new-buffer-from-o o)
   o)
 
+(defun regex-match-string-1 (pat s)
+  "Get first match from substring"
+  (save-match-data
+    (and (string-match pat s)
+         (match-string-no-properties 0 s))))
+(defalias 'regex-match-string 'regex-match-string-1)
+
 (defun s-preserve-trailing-whitespace (s-new s-old)
   "Return s-new but with the same amount of trailing whitespace as s-old."
   (let* ((trailing_ws_pat "[ \t\n]*\\'")
