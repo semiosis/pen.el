@@ -544,6 +544,9 @@ when s is a string, set the clipboard to s"
             ;; (ignore-errors (defvar ,symbol nil))
             (if ,value (setq ,symbol ,value)))))
 
+;; To get around an annoying error message
+(defvar histvar nil)
+
 (defun completing-read-hist (prompt &optional initial-input histvar default-value)
   "read-string but with history."
   (if (not histvar)
