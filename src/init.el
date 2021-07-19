@@ -68,5 +68,7 @@
 
   (load (concat pendir "/src/pen-example-config.el")))
 
+(right-click-context-mode t)
+
 (pen-acolyte-minor-mode t)
 (pen-acolyte-scratch)
