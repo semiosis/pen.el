@@ -130,10 +130,11 @@
   (interactive)
   (switch-to-buffer "*scratch*"))
 
-(pen-acolyte-scratch)
-
 ;; defvar this in your own config and load first to disable
 (defvar pen-init-with-acolyte-mode t)
+
+;; This is also necessary for the first buffer opened
+(pen-acolyte-minor-mode t)
 
 (if pen-init-with-acolyte-mode
     (global-pen-acolyte-minor-mode t))
@@ -144,9 +145,14 @@
 
 (setq message-log-max 20000)
 
-(let ((envkey (getenv "OPENAI_API_KEY")))
-  (if (sor envkey)
-      (pen-add-key-openai envkey)
-    ;; Automatically check if OpenAI key exists and ask for it otherwise
-    (call-interactively 'pen-add-key-openai)))
+(pen-acolyte-scratch)
+
+(let ((pen-openai-key-file-path (f-join user-home-directory ".pen" "openai_api_key")))
+  (if (not (f-file-p pen-openai-key-file-path))
+      (let ((envkey (getenv "OPENAI_API_KEY")))
+        (if (sor envkey)
+            (pen-add-key-openai envkey)
+          ;; Automatically check if OpenAI key exists and ask for it otherwise
+          (call-interactively 'pen-add-key-openai)))))
+
 ;; (call-interactively 'pen-add-key-booste)
