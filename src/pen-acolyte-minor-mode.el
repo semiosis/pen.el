@@ -10,33 +10,6 @@
 ;;;###autoload
 (define-globalized-minor-mode global-pen-acolyte-minor-mode pen-acolyte-minor-mode pen-acolyte-minor-mode)
 
-;; code for toggling global-pen-acolyte-minor-mode
-(defun see (data &optional duration)
- ""
- (interactive)
- (message (prin1-to-string data))
- (sit-for (if duration duration 2.0))
- data)
-
-(defun global-pen-acolyte-minor-mode-toggle ()
- ""
- (interactive)
- (if global-pen-acolyte-minor-mode
-  (global-pen-acolyte-minor-mode-off)
-  (global-pen-acolyte-minor-mode-on)))
-
-(defun global-pen-acolyte-minor-mode-on ()
- ""
- (interactive)
- (global-pen-acolyte-minor-mode 1)
- (see "turned on global pen-acolyte-minor mode"))
-
-(defun global-pen-acolyte-minor-mode-off ()
- ""
- (interactive)
- (global-pen-acolyte-minor-mode 0)
- (see "turned on global pen-acolyte-minor mode")
-
 
 (define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-super-newb-dired-prompts)
 (define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-super-newb-scratch)

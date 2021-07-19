@@ -62,7 +62,7 @@ prompt additionally for EXTRA-AG-ARGS."
        (interactive)
 
        (if (not histvar)
-           (setq histvar ',histvarsym))
+           (defset histvar ',histvarsym))
 
        (setq counsel--regex-look-around nil)
 
