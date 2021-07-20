@@ -80,12 +80,12 @@ The last element in the list is the output/return value"
     (if (not examples)
         (if gen
             (setq examples
-                  (list (apply
-                         gen
-                         (pen-one-get-example-of (car args))
-                         n-generate)))
+                  (mapcar 'list (apply
+                                 gen
+                                 (pen-one-get-example-of (car args))
+                                 n-generate)))
           (setq examples
-                (list (pf-list-of "1" (car args) :no-select-result t)))))
+                (mapcar 'list (pf-list-of "1" (car args) :no-select-result t)))))
 
     ;; (etv (pps examples))
     ;; Add outputs to examples if there is a filter
@@ -98,7 +98,10 @@ The last element in the list is the output/return value"
                      ((and (eq 1 (length ex))
                            filter)
                       (list (car ex)
-                            (apply filter (list (tv (car ex))))))))))
+                            (apply filter (list (car ex)))))
+                     ;; (t
+                     ;;  (list (str (length ex)) (pps filter)))
+                     ))))
 
     (if task (plist-put data :task task))
 
