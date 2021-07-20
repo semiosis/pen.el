@@ -9,6 +9,8 @@
 
 (defmacro defprompt (args &rest data)
   "defprompt
+This macro generates a yaml and returns its prompt function.
+
 If args has an arity of 1, it is a generation
 If args has an arity of 2, it is a conversion/transformation
 
