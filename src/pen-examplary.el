@@ -36,6 +36,7 @@ args is a lot like haskell args
 It's a list of the arguments.
 The last element in the list is the output/return value"
   (setq args (mapcar 'str args))
+
   (let* ((task (plist-get data :task))
          (gen (plist-get data :gen))
          (filter (plist-get data :filter))
@@ -48,12 +49,12 @@ The last element in the list is the output/return value"
         (setq task
               (cond
                ((eq 1 (length args))
-                (concat "generate " (symbol-name (car args))))
+                (concat "generate " (car args)))
                ((eq 2 (length args))
                 (concat "convert "
-                        (symbol-name (car args))
+                        (car args)
                         " to "
-                        (symbol-name (cadr args))))
+                        (cadr args)))
                (t nil))))
 
     ;; If gen is a shell script, convert it to an elisp function
