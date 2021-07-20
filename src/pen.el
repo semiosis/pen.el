@@ -248,7 +248,7 @@
                                (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))
                                (mapcar (lambda (r)
                                          (cl-loop
-                                          for stsq in ,stop-sequences do
+                                          for stsq in ',stop-sequences do
                                           (let ((matchpos (string-search stsq r)))
                                             (if matchpos
                                                 (setq r (s-truncate matchpos r "")))))
