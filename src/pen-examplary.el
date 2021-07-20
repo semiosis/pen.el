@@ -1,4 +1,4 @@
-(require 'pen-yq)
+(require 'pen-yaml)
 
 ;; TODO
 ;; - Resort to =yq= to generate =yaml= since nothing exists yet for =yamlmod=
