@@ -141,19 +141,19 @@
               ;; manually run interactive expressions
               ;; when they exist.
               (mapcar 'str
-               (if (not (interactive-p))
-                   (progn
-                     (cl-loop
-                      for sym in ',var-syms
-                      for iarg in ',iargs
-                      collect
-                      (let* ((initval (eval sym)))
-                        (if (and (not initval)
-                                 iarg)
-                            (eval iarg)
-                          initval))))
-                 ;; Don't include &key pretty
-                 (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v)))))
+                      (if (not (interactive-p))
+                          (progn
+                            (cl-loop
+                             for sym in ',var-syms
+                             for iarg in ',iargs
+                             collect
+                             (let* ((initval (eval sym)))
+                               (if (and (not initval)
+                                        iarg)
+                                   (eval iarg)
+                                 initval))))
+                        ;; Don't include &key pretty
+                        (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v)))))
 
              ;; preprocess the values of the parameters
              (vals
@@ -245,17 +245,15 @@
                                                        (pen-sn ,prettifier r)
                                                      r)))
                                (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
-                               (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r))))
+                               (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))
+                               (mapcar (lambda (r)
+                                         (cl-loop
+                                          for stsq in ,stop-sequences do
+                                          (let ((matchpos (string-search stsq r)))
+                                            (if matchpos
+                                                (setq r (s-truncate matchpos r "")))))
+                                         r)))
                            (list (message "Try UPDATE=y or debugging")))))))
-
-             ;; (result
-             ;;  (progn
-             ;;    (cl-loop
-             ;;     for stsq in ,stop-sequences do
-             ;;     (let ((matchpos (string-search stsq result)))
-             ;;       (if matchpos
-             ;;           (setq stsq (s-truncate matchpos result "")))))
-             ;;    result))
 
              (result (if no-select-result
                          (length results)
