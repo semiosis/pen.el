@@ -2,6 +2,7 @@
 ;; TODO Use native elisp
 
 ;; (yaml2json (cat "$PROMPTS/analogy.prompt"))
+;; (etv (json2yaml (yaml2json (cat "$PROMPTS/translate-to.prompt"))))
 
 (defun yaml2json (yaml-in)
   (snc "yq ." yaml-in))

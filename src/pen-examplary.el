@@ -87,17 +87,18 @@ The last element in the list is the output/return value"
           (setq examples
                 (list (pf-list-of "1" (car args) :no-select-result t)))))
 
+    ;; (etv (pps examples))
     ;; Add outputs to examples if there is a filter
-    (if (and filter
-             examples)
-        (setq examples
-              (loop for ex in examples
-                    collect
-                    (cond
-                     ((and (eq 1 (length ex))
-                           filter)
-                      (list (car ex)
-                            (apply filter (list (car ex)))))))))
+    ;; (if (and filter
+    ;;          examples)
+    ;;     (setq examples
+    ;;           (loop for ex in examples
+    ;;                 collect
+    ;;                 (cond
+    ;;                  ((and (eq 1 (length ex))
+    ;;                        filter)
+    ;;                   (list (car ex)
+    ;;                         (apply filter (list (car ex)))))))))
 
     (if task (plist-put data :task task))
 
