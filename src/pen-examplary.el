@@ -41,9 +41,9 @@
 
 ;; Convert lines to regex
 (defprompt lines regex
-  ;; Generate examples with this
-  :external "grex"
-  ;; An external command to filter
+  ;; Generate input with this
+  :sh-gen "examplary-edit-generator shane"
+  ;; An external command to filter input examples and generate output examples
   :sh-filter "grex"
   ;; An emacs function that filters
   ;; :filter 'grex
