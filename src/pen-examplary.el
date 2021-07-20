@@ -44,7 +44,9 @@ The last element in the list is the output/return value"
          (filter orig-filter)
          (examples (plist-get data :examples))
          (lm-command (plist-get data :lm-command))
-         (engine (plist-get data :engine)))
+         (engine (plist-get data :engine))
+         (orig-prompt (plist-get data :prompt))
+         (prompt orig-prompt))
 
     ;; If task (metaprompt) doesn't exist, infer it
     (if (not task)
@@ -107,6 +109,8 @@ The last element in the list is the output/return value"
 
     (if (and gen (not orig-gen)) (plist-put data :gen gen))
     (if (and filter (not orig-filter)) (plist-put data :filter filter))
+
+    (if (and prompt (not orig-prompt)) (plist-put data :prompt prompt))
 
     (if examples (plist-put data :examples examples))
     ;;    (plist-put data :lm-command lm-command)
