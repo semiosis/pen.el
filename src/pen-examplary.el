@@ -1,5 +1,5 @@
 ;; TODO
-;; TODO Resort to =yq= to generate =yaml= since nothing exists yet for =yamlmod=
+;; - Resort to =yq= to generate =yaml= since nothing exists yet for =yamlmod=
 
 ;; defprompt should generate a yaml file
 ;; The entire YAML file.
