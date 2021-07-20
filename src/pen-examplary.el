@@ -1,3 +1,7 @@
+;; Perspective:
+;; Create the language according to speculation and future need.
+;; Combine with APIs and LMs according to what they need.
+
 ;; TODO It's important to implement single example prompts
 ;; I can then search for a multi-example prompt
 
