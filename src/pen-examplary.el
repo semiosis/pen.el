@@ -127,8 +127,8 @@ The last element in the list is the output/return value"
                     (list2str
                      (mapcar
                       (lambda (ex)
-                        (list2str (list (concat "Input:" (car ex))
-                                        (concat "Output:" (cadr ex))))))))
+                        (list2str (list (concat "Input:" (pen-onelineify (car ex)))
+                                        (concat "Output:" (pen-onelineify) (cadr ex))))))))
                  ""))
 
     (if examples (plist-put data :examples examples))
