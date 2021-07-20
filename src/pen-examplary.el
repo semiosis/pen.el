@@ -86,13 +86,13 @@ The last element in the list is the output/return value"
     (if (and filter
              examples)
         (setq examples
-              (loop for ex in examples do
-                    (collect
-                     (cond
-                      ((and (eq 1 (length ex))
-                            filter)
-                       `(list (car ex)
-                              (apply filter (car ex)))))))))
+              (loop for ex in examples
+                    collect
+                    (cond
+                     ((and (eq 1 (length ex))
+                           filter)
+                      (list (car ex)
+                            (apply filter (car ex))))))))
 
     (plist-put data :task task)
     (plist-put data :gen gen)
