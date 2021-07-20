@@ -45,7 +45,7 @@
 
     ;; Generate examples if none
     (if (not examples)
-        (setq (loop for i from 1 to 5)))
+        (setq (loop for i from 1 to n-generate)))
 
     ;; Add outputs to examples if there is a filter
     (loop for ex in examples do
