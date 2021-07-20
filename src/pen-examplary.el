@@ -69,7 +69,8 @@ The last element in the list is the output/return value"
           (pf-list-of "1" (car args) :no-select-result t)))
 
     ;; Add outputs to examples if there is a filter
-    (if filter
+    (if (and filter
+             examples)
         (setq examples
               (loop for ex in examples do
                     (collect
