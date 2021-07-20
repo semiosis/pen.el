@@ -126,6 +126,7 @@ The last element in the list is the output/return value"
               (eq 2 (length (car examples))))
          (progn
            ;; Firstly, ensure that the prompt function un-onelinerises the output
+           (plist-put data :task nil)
            (plist-put data :examples examples)
            (plist-put data :stop-sequences '("Input:"))
            (concat
