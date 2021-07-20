@@ -78,12 +78,12 @@ The last element in the list is the output/return value"
     (if (not examples)
         (if gen
             (setq examples
-                  (apply
-                   gen
-                   (pen-one-get-example-of (car args))
-                   n-generate))
+                  (list (apply
+                         gen
+                         (pen-one-get-example-of (car args))
+                         n-generate)))
           (setq examples
-                (pf-list-of "1" (car args) :no-select-result t))))
+                (list (pf-list-of "1" (car args) :no-select-result t)))))
 
     ;; Add outputs to examples if there is a filter
     (if (and filter
