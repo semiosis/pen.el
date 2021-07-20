@@ -45,13 +45,6 @@
 (defun examplary-edit-generator (initial n)
   (pen-str2list (snc (concat (cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
 
-;; If :gen or :filter is a string then it refers to an external shell script
-;; If :gen or :filter is a symbol then it refers to a function.
-
-;; :gen (An elisp function or external command to generate input examples)
-;; :filter (An elisp function or external command to filter input examples and generate output examples)
-;; :task (may also be used as a metaprompt. also used to define a function)
-
 ;; Convert lines to regex
 (defprompt lines regex
   :task "Convert lines to regex"
@@ -64,19 +57,5 @@
   :examples '(("example 1\nexample2")
               ("example 2\nexample3" "^example [23]$")
               ("pi4\npi5" "^pi[45]$" "pi4\npi5")))
-
-;; (etv (plist-get (expand-macro '(defprompt lines regex
-;;                                  :external "grex"
-;;                                  ;; The task may also be used as a metaprompt.
-;;                                  :task "Convert lines to regex"
-;;                                  :examples '(("example 1\nexample2" "^example [12]$")
-;;                                              ("example 2\nexample3" "^example [23]$")
-;;                                              ("pi4\npi5" "^pi[45]$"))
-;;                                  :counterexamples '())) :external))
-
-;; Only use as many examples as required by the model
-
-(defmodel gpt3
-  :n-examples 3)
 
 (provide 'pen-examplary)
