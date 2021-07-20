@@ -106,10 +106,7 @@ The last element in the list is the output/return value"
     )
 
   (etv (pps data))
-  nil
-  ;; (etv (plist-get :external data))
-  ;; `(,@data)
-  )
+  nil)
 
 ;; https://github.com/pemistahl/grex
 (defun grex (in)
