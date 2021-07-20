@@ -14,16 +14,38 @@
 ;; It's not a great name as there is no strict part which could be considered.
 ;; And a metaprompt may be further divided ad infinitum.
 
+;; (defmacro defprompt (inputtype outputtype &rest data)
+;;   ""
+;;   `(,@data))
+
 (defmacro defprompt (inputtype outputtype &rest data)
   ""
-  `(,@data))
+  (let ((external (plist-get data :external))
+        (task (plist-get data :task))
+        (examples (plist-get data :examples)))
+    (loop for ex in examples do
+          (cond
+           ((eq 1 (length ex)) body)))
+    )
+
+  nil
+  ;; (etv (plist-get :external data))
+  ;; `(,@data)
+  )
 
 ;; TODO Start with an input/output prompt
+
+(defun grex (in)
+  (snc "grex" in))
 
 ;; Convert lines to regex
 (defprompt lines regex
   ;; Generate examples with this
   :external "grex"
+  ;; An external command to filter
+  :sh-filter "grex"
+  ;; An emacs function that filters
+  ;; :filter 'grex
   ;; The task may also be used as a metaprompt.
   :task "Convert lines to regex"
   ;; The third argument (if supplied) should be incorrect output (a counterexample).
