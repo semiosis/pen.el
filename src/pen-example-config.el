@@ -88,7 +88,7 @@
 
 ;; Personal prompts repository
 (let ((hostpromptsdir (f-join user-emacs-directory "host" "prompts")))
-  (if (f-directory-p hostpromptsdir)
+  (if (f-directory-p (f-join hostpromptsdir "prompts"))
       (setq pen-prompts-directory hostpromptsdir)
     (setq pen-prompts-directory (f-join user-emacs-directory "prompts"))))
 
