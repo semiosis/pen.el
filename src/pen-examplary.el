@@ -2,7 +2,8 @@
 ;; The entire YAML file.
 
 ;; args is a lot like haskell args
-;; The last one is the output
+;; It's a list of the arguments. 
+;; The last element in the list is the output/return value
 (defmacro defprompt (args &rest data)
   ""
   (let* ((task (plist-get data :task))
