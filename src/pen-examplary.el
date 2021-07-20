@@ -118,18 +118,19 @@ The last element in the list is the output/return value"
     (if (and gen (not orig-gen)) (plist-put data :gen gen))
     (if (and filter (not orig-filter)) (plist-put data :filter filter))
 
-    (plist-put data :prompt
-               (if (and task
-                        examples
-                        (eq 2 (length (car examples))))
-                   (concat
-                    task "\n"
-                    (list2str
-                     (mapcar
-                      (lambda (ex)
-                        (list2str (list (concat "Input:" (pen-onelineify (car ex)))
-                                        (concat "Output:" (pen-onelineify (cadr ex)))))))))
-                 ""))
+    (plist-put
+     data :prompt
+     (if (and task
+              examples
+              (eq 2 (length (car examples))))
+         (concat
+          task "\n"
+          (list2str
+           (mapcar
+            (lambda (ex)
+              (list2str (list (concat "Input:" (pen-onelineify (car ex)))
+                              (concat "Output:" (pen-onelineify (cadr ex)))))))))
+       ""))
 
     (if examples (plist-put data :examples examples))
     ;;    (plist-put data :lm-command lm-command)
