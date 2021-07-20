@@ -6,14 +6,15 @@
 ;; The input to the output if the prompt has an arity of 2 (i.e. conversion)
 (defvar n-generate 5)
 
-;; If args has an arity of 1, it is a generation
-;; If args has an arity of 2, it is a conversion/transformation
 
-;; args is a lot like haskell args
-;; It's a list of the arguments.
-;; The last element in the list is the output/return value
 (defmacro defprompt (args &rest data)
-  ""
+  "defprompt
+If args has an arity of 1, it is a generation
+If args has an arity of 2, it is a conversion/transformation
+
+args is a lot like haskell args
+It's a list of the arguments.
+The last element in the list is the output/return value"
   (let* ((task (plist-get data :task))
          (gen (plist-get data :gen))
          (filter (plist-get data :filter))
