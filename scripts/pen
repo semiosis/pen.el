@@ -76,6 +76,8 @@ test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
 
 # yn "Pull docker image?" && docker pull semiosis/pen.el:latest
 
+docker pull semiosis/pen.el:latest
+
 test -d "$PROMPTS_DIR" && yn "Pull prompts repo?" && (
     cd "$PROMPTS_DIR"
     git pull
