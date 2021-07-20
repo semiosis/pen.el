@@ -3,8 +3,11 @@
 
 ;; n-generate:
 ;; Number of examples to generate by default from
-;; The input to the output of the prompt has an arity of 2 (i.e. conversion)
+;; The input to the output if the prompt has an arity of 2 (i.e. conversion)
 (defvar n-generate 5)
+
+;; If args has an arity of 1, it is a generation
+;; If args has an arity of 2, it is a conversion/transformation
 
 ;; args is a lot like haskell args
 ;; It's a list of the arguments.
@@ -48,10 +51,15 @@
         (setq (loop for i from 1 to n-generate)))
 
     ;; Add outputs to examples if there is a filter
-    (loop for ex in examples do
-          (cond
-           ((and (eq 1 (length ex))
-                 filter) body))))
+    (if filter
+        (setq examples
+              (loop for ex in examples do
+                    (collect
+                     (cond
+                      ((and (eq 1 (length ex))
+                            filter)
+                       `(list (car ex)
+                              (apply filter (car ex))))))))))
 
   nil
   ;; (etv (plist-get :external data))
