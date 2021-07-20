@@ -25,10 +25,10 @@
   :external "grex"
   ;; The task may also be used as a metaprompt.
   :task "Convert lines to regex"
+  ;; The third argument (if supplied) should be incorrect output.
   :examples '(("example 1\nexample2" "^example [12]$")
               ("example 2\nexample3" "^example [23]$")
-              ("pi4\npi5" "^pi[45]$"))
-  :counterexamples '())
+              ("pi4\npi5" "^pi[45]$")))
 
 ;; (etv (plist-get (expand-macro '(defprompt lines regex
 ;;                                  :external "grex"
