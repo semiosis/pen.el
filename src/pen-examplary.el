@@ -39,10 +39,14 @@
 (defun grex (in)
   (snc "grex" in))
 
+(defun examplary-edit-generator (initial n)
+  (pen-str2list (snc (concat (cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
+
 ;; Convert lines to regex
 (defprompt lines regex
   ;; Generate input with this
   :sh-gen "examplary-edit-generator shane"
+  :gen 'examplary-edit-generator
   ;; An external command to filter input examples and generate output examples
   :sh-filter "grex"
   ;; An emacs function that filters
