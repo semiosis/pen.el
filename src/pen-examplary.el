@@ -18,7 +18,8 @@
 (defun pen-save-prompt (prompt-plist)
   ;; (json-encode-alist)
   ;; (json2yaml (json-encode-plist '(:task "my task" :gen "my gen")))
-  (json2yaml (json-encode-plist prompt-plist)))
+  (let ((fp (plist-get prompt-plist :task)))
+    (json2yaml (json-encode-plist prompt-plist))))
 
 (defmacro defprompt (args &rest data)
   "defprompt
