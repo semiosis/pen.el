@@ -66,7 +66,7 @@ The last element in the list is the output/return value"
                    gen
                    (pen-one-get-example-of "brand of soda")
                    n-generate))
-          (pf-list-of "1" thing-type :no-select-result t)))
+          (pf-list-of "1" (car args) :no-select-result t)))
 
     ;; Add outputs to examples if there is a filter
     (if filter
