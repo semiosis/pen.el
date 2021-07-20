@@ -46,6 +46,7 @@
 (defprompt lines regex
   ;; Generate input with this
   :sh-gen "examplary-edit-generator shane"
+  ;; This takes a number for the amount of examples we wish to generate
   :gen 'examplary-edit-generator
   ;; An external command to filter input examples and generate output examples
   :sh-filter "grex"
