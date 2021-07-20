@@ -118,6 +118,7 @@ The last element in the list is the output/return value"
     (if (and gen (not orig-gen)) (plist-put data :gen gen))
     (if (and filter (not orig-filter)) (plist-put data :filter filter))
 
+    ;; Rules to build the prompt
     (plist-put
      data :prompt
      (if (and task
