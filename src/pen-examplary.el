@@ -140,7 +140,15 @@ The last element in the list is the output/return value"
   :lm-command "openai-complete.sh")
 
 
-(defprompt ("short lines of code" regex)
-  :filter "grex")
+;; so this is a prompt that takes a single input, which is a multiline string
+;; and prodduces a regex for it
+;; "short lines of code" will generate the first column
+;; and filter runs over that to generate the 2nd column
+;; then because it's binary, it will create a task which says "convert short lines of code into regex"
+;; I think my goal is to make it so that designing prompts is always a simple binary function
+;; with minimal inputs
+;; i think i can do this by encoding all the design patterns into examplary
+;; and inferring fields that arent present
+(defprompt ("short lines of code" regex) :filter "grex")
 
 (provide 'pen-examplary)
