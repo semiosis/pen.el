@@ -35,6 +35,7 @@ If args has an arity of 2, it is a conversion/transformation
 args is a lot like haskell args
 It's a list of the arguments.
 The last element in the list is the output/return value"
+  (setq args (mapcar 'str args))
   (let* ((task (plist-get data :task))
          (gen (plist-get data :gen))
          (filter (plist-get data :filter))
@@ -94,13 +95,13 @@ The last element in the list is the output/return value"
     ;;                      (list (car ex)
     ;;                            (apply filter (car ex))))))))
     ;;
-       (plist-put data :task task)
-       (plist-put data :gen gen)
+    (plist-put data :task task)
+    (plist-put data :gen gen)
     ;;    (plist-put data :filter filter)
     ;;    (plist-put data :examples examples)
     ;;    (plist-put data :lm-command lm-command)
     ;;    (plist-put data :engine engine)
-       )
+    )
 
   (etv (pps data))
   nil
@@ -117,7 +118,7 @@ The last element in the list is the output/return value"
   (pen-str2list (snc (concat (cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
 
 ;; Convert lines to regex
-(defprompt (lines regex)
+(defprompt ("lines of code" regex)
   ;; :task "Convert lines to regex"
   ;; Generate input with this
   ;; :gen "examplary-edit-generator shane"
