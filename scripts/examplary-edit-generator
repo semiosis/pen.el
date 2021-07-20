@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+line="$1"
+test -n "$line" || exit 1
+
+echo "$line"
+while :; do
+    line="$(printf "%s\n" "$line" | sed "s/./&\\n/g" | sort -R | sed -z "s/\\n//g")"
+    echo "$line"
+done
