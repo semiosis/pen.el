@@ -92,8 +92,16 @@ The last element in the list is the output/return value"
                       ((and (eq 1 (length ex))
                             filter)
                        `(list (car ex)
-                              (apply filter (car ex))))))))))
+                              (apply filter (car ex)))))))))
 
+    (plist-put data :task task)
+    (plist-put data :gen gen)
+    (plist-put data :filter filter)
+    (plist-put data :examples examples)
+    (plist-put data :lm-command lm-command)
+    (plist-put data :engine engine))
+
+  (etv data)
   nil
   ;; (etv (plist-get :external data))
   ;; `(,@data)
