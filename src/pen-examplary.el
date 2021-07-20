@@ -89,16 +89,16 @@ The last element in the list is the output/return value"
 
     ;; (etv (pps examples))
     ;; Add outputs to examples if there is a filter
-    ;; (if (and filter
-    ;;          examples)
-    ;;     (setq examples
-    ;;           (loop for ex in examples
-    ;;                 collect
-    ;;                 (cond
-    ;;                  ((and (eq 1 (length ex))
-    ;;                        filter)
-    ;;                   (list (car ex)
-    ;;                         (apply filter (list (car ex)))))))))
+    (if (and filter
+             examples)
+        (setq examples
+              (loop for ex in examples
+                    collect
+                    (cond
+                     ((and (eq 1 (length ex))
+                           filter)
+                      (list (car ex)
+                            (apply filter (list (tv (car ex))))))))))
 
     (if task (plist-put data :task task))
 
@@ -110,7 +110,7 @@ The last element in the list is the output/return value"
     ;;    (plist-put data :engine engine)
     )
 
-  (etv (plist2yaml data))
+  (tv (plist2yaml data))
   nil)
 
 ;; https://github.com/pemistahl/grex
