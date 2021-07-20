@@ -59,11 +59,14 @@ The last element in the list is the output/return value"
                          (snc ,filter in)))))
 
     ;; Generate examples if none
-    (if (and (not examples)
-             gen)
-        (setq examples
-              (apply gen
-                     (car (pf-ship-came-into-harbour-carrying-several-x "1" "brand of soda" :no-select-result t)) n-generate)))
+    (if (not examples)
+        (if gen
+            (setq examples
+                  (apply
+                   gen
+                   (pen-one-get-example-of "brand of soda")
+                   n-generate))
+          (pf-list-of "1" thing-type :no-select-result t)))
 
     ;; Add outputs to examples if there is a filter
     (if filter
