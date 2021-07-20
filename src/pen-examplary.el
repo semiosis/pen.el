@@ -26,7 +26,9 @@ The last element in the list is the output/return value"
   (let* ((task (plist-get data :task))
          (gen (plist-get data :gen))
          (filter (plist-get data :filter))
-         (examples (plist-get data :examples)))
+         (examples (plist-get data :examples))
+         (lm-command (plist-get data :lm-command))
+         (engine (plist-get data :engine)))
 
     ;; If task (metaprompt) doesn't exist, infer it
     (if (not task)
