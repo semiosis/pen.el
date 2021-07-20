@@ -127,7 +127,7 @@ The last element in the list is the output/return value"
          (progn
            ;; Firstly, ensure that the prompt function un-onelinerises the output
            (plist-put data :examples examples)
-           (plist-put data :stop-sequences '("Input"))
+           (plist-put data :stop-sequences '("Input:"))
            (concat
             task "\n\n"
             (list2str
