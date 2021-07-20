@@ -124,12 +124,18 @@
 ;;  filter completion lm-command stop-sequences stop-sequence max-tokens
 ;;  temperature top-p engine no-trim-start no-trim-end preprocessors
 ;;  postprocessor prompt-filter n-completions)
+;; post
 (defun define-prompt-function ()
   (eval
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result))
       ,doc
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
+
+             (final-max-tokens
+              (str (if (variable-p 'max-tokens)
+                       (eval 'max-tokens)
+                     max-tokens)))
 
              (vals
               ;; If not called interactively then
@@ -195,11 +201,7 @@
                    ("PEN_LM_COMMAND" ,,lm-command)
                    ("PEN_ENGINE" ,,engine)
                    ("PEN_MAX_TOKENS"
-                    ,(pen-expand-template
-                      (str (if (variable-p 'max-tokens)
-                               (eval 'max-tokens)
-                             ,max-tokens))
-                      vals))
+                    ,(pen-expand-template final-max-tokens vals))
                    ("PEN_TEMPERATURE" ,(pen-expand-template (str ,temperature) vals))
                    ("PEN_STOP_SEQUENCE"
                     ,(pen-encode-string
@@ -471,8 +473,9 @@ Function names are prefixed with pf- for easy searching"
               pen-prompt-filter-functions)
             nil nil "pen filter: ")))
     (if f
-        (call-interactively (intern f))
-        ;; (filter-selected-region-through-function (intern f))
+        (let ((filter t))
+          (call-interactively (intern f)))
+      ;; (filter-selected-region-through-function (intern f))
       )))
 
 (defun pen-run-prompt-function ()
