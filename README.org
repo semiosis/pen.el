@@ -206,6 +206,7 @@ https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 **** Learning material
 - https://generative.ink/posts/methods-of-prompt-programming/
 - https://mullikine.github.io/posts/creating-a-playground-for-gpt-3-in-emacs/
+- https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/
 
 **** Examples of usage
 - https://semiosis.github.io/posts/gpt-3-for-building-mind-maps-with-an-ai-tutor-for-any-topic/
