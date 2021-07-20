@@ -50,8 +50,7 @@
 
 ;; :gen (An elisp function or external command to generate input examples)
 ;; :filter (An elisp function or external command to filter input examples and generate output examples)
-
-;; :task (may also be used as a metaprompt)
+;; :task (may also be used as a metaprompt. also used to define a function)
 
 ;; Convert lines to regex
 (defprompt lines regex
