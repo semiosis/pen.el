@@ -543,6 +543,7 @@ May use to generate code from comments."
 ;; For debugging
 (require 'pen-messages)
 (require 'pen-yq)
+;; (require 'pen-examplary)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
