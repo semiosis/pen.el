@@ -24,4 +24,4 @@
    ("example 2\nexample3" "^example [23]$")
    ("pi4\npi5" "^pi[45]$")))
 
-(provide 'examplary)
+(provide 'pen-examplary)
