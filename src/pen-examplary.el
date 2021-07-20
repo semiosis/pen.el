@@ -124,13 +124,16 @@ The last element in the list is the output/return value"
      (if (and task
               examples
               (eq 2 (length (car examples))))
-         (concat
-          task "\n"
-          (list2str
-           (mapcar
-            (lambda (ex)
-              (list2str (list (concat "Input:" (pen-onelineify (car ex)))
-                              (concat "Output:" (pen-onelineify (cadr ex)))))))))
+         (progn
+           ;; Firstly, ensure that the prompt un-onelinerises it
+           (plist-put data :examples examples)
+           (concat
+            task "\n"
+            (list2str
+             (mapcar
+              (lambda (ex)
+                (list2str (list (concat "Input:" (pen-onelineify (car ex)))
+                                (concat "Output:" (pen-onelineify (cadr ex))))))))))
        ""))
 
     ;; Examples is used for something else in the prompt
