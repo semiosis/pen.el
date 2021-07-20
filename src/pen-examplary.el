@@ -25,6 +25,14 @@
 ;; - eenerate a plist
 ;; - export the plist to yaml
 
+(defun pen-onelineify (s)
+  (snc "sed -z 's/\\n/\\\\n/g'" s))
+
+(defun pen-unonelineify (s)
+  (snc "sed -z 's/\\\\n/\\n/g'" s))
+
+;; (pen-unonelineify (pen-onelineify "hello\nshane"))
+
 (defmacro defprompt (args &rest data)
   "defprompt
 This macro generates a yaml and returns its prompt function.
@@ -110,7 +118,18 @@ The last element in the list is the output/return value"
     (if (and gen (not orig-gen)) (plist-put data :gen gen))
     (if (and filter (not orig-filter)) (plist-put data :filter filter))
 
-    (if (and prompt (not orig-prompt)) (plist-put data :prompt prompt))
+    (plist-put data :prompt
+               (if (and task
+                        examples
+                        (eq 2 (length (car examples))))
+                   (concat
+                    task "\n"
+                    (list2str
+                     (mapcar
+                      (lambda (ex)
+                        (list2str (list (concat "Input:" (car ex))
+                                        (concat "Output:" (cadr ex))))))))
+                 ""))
 
     (if examples (plist-put data :examples examples))
     ;;    (plist-put data :lm-command lm-command)
