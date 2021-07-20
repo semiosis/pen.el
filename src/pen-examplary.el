@@ -132,8 +132,8 @@ The last element in the list is the output/return value"
             (list2str
              (mapcar
               (lambda (ex)
-                (list2str (list (concat "Input:" (chomp (pen-onelineify (car ex))))
-                                (concat "Output:" (chomp (pen-onelineify (cadr ex)))))))
+                (list2str (list (concat "Input:" (pen-onelineify (car ex)))
+                                (concat "Output:" (pen-onelineify (cadr ex))))))
               examples))))
        ""))
 
