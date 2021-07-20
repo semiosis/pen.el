@@ -128,7 +128,7 @@ The last element in the list is the output/return value"
            ;; Firstly, ensure that the prompt function un-onelinerises the output
            (plist-put data :examples examples)
            (concat
-            task "\n"
+            task "\n\n"
             (list2str
              (mapcar
               (lambda (ex)
