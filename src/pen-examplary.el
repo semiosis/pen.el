@@ -45,16 +45,16 @@
 (defun examplary-edit-generator (initial n)
   (pen-str2list (snc (concat (cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
 
-;; the :gen function may be generated
 ;; If :gen or :filter is a string then it refers to an external shell script
 ;; If :gen or :filter is a symbol then it refers to a function.
 
 ;; :gen (An elisp function or external command to generate input examples)
 ;; :filter (An elisp function or external command to filter input examples and generate output examples)
 
+;; :task (may also be used as a metaprompt)
+
 ;; Convert lines to regex
 (defprompt lines regex
-  ;; The task may also be used as a metaprompt.
   :task "Convert lines to regex"
   ;; Generate input with this
   ;; :gen "examplary-edit-generator shane"
