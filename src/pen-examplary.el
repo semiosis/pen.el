@@ -1,6 +1,11 @@
 ;; defprompt should generate a yaml file
 ;; The entire YAML file.
 
+;; n-generate:
+;; Number of examples to generate by default from
+;; The input to the output of the prompt has an arity of 2 (i.e. conversion)
+(defvar n-generate 5)
+
 ;; args is a lot like haskell args
 ;; It's a list of the arguments.
 ;; The last element in the list is the output/return value
