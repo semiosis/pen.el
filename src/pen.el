@@ -135,7 +135,7 @@
              (final-max-tokens
               (str (if (variable-p 'max-tokens)
                        (eval 'max-tokens)
-                     max-tokens)))
+                     ,max-tokens)))
 
              (vals
               ;; If not called interactively then
