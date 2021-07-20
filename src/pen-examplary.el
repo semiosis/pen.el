@@ -37,4 +37,9 @@
               ("pi4\npi5" "^pi[45]$"))
   :counterexamples '())
 
+;; Only use as many examples as required by the model
+
+(defmodel gpt3
+  :n-examples 3)
+
 (provide 'pen-examplary)
