@@ -13,15 +13,15 @@
 
     (if (not task)
         (setq task
-         (cond
-          ((eq 1 (length args))
-           (concat "generate " (symbol-name (car args))))
-          ((eq 2 (length args))
-           (concat "convert "
-                   (symbol-name (car args))
-                   " to "
-                   (symbol-name (cadr args))))
-          (t nil))))
+              (cond
+               ((eq 1 (length args))
+                (concat "generate " (symbol-name (car args))))
+               ((eq 2 (length args))
+                (concat "convert "
+                        (symbol-name (car args))
+                        " to "
+                        (symbol-name (cadr args))))
+               (t nil))))
 
     (if (stringp gen)
         (setq gen (eval
@@ -39,6 +39,8 @@
                          (snc ,filter in)))))
 
     ;; Generate examples if none
+    (if (not examples)
+        (setq (loop for i from 1 to 5)))
 
     ;; Add outputs to examples if there is a filter
     (loop for ex in examples do
