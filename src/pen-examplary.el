@@ -9,6 +9,9 @@
 ;; The input to the output if the prompt has an arity of 2 (i.e. conversion)
 (defvar n-generate 5)
 
+;; (pen-one-get-example-of "car manufacturer")
+(defun pen-one-get-example-of (thing-type)
+  (car (pf-list-of "1" thing-type :no-select-result t)))
 
 (defmacro defprompt (args &rest data)
   "defprompt
@@ -25,6 +28,7 @@ The last element in the list is the output/return value"
          (filter (plist-get data :filter))
          (examples (plist-get data :examples)))
 
+    ;; If task (metaprompt) doesn't exist, infer it
     (if (not task)
         (setq task
               (cond
@@ -37,6 +41,7 @@ The last element in the list is the output/return value"
                         (symbol-name (cadr args))))
                (t nil))))
 
+    ;; If gen is a shell script, convert it to an elisp function
     (if (stringp gen)
         (setq gen (eval
                    `(lambda (initial n)
@@ -47,14 +52,18 @@ The last element in the list is the output/return value"
                          "| head -n "
                          (str n))))))))
 
+    ;; If gen is a shell pipeline string, convert it to an elisp function
     (if (stringp filter)
         (setq filter (eval
                       `(lambda (in)
                          (snc ,filter in)))))
 
     ;; Generate examples if none
-    (if (not examples)
-        (setq (loop for i from 1 to n-generate)))
+    (if (and (not examples)
+             gen)
+        (setq examples
+              (apply gen
+                     (car (pf-ship-came-into-harbour-carrying-several-x "1" "brand of soda" :no-select-result t)) n-generate)))
 
     ;; Add outputs to examples if there is a filter
     (if filter
