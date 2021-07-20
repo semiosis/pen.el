@@ -328,8 +328,6 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
         (substring slug 0 (- length 1))
       slug)))
 
-(define-key mode-map (kbd "key") )
-
 (defun fz-completion-second-of-tuple-annotation-function (s)
   (let ((item (assoc s minibuffer-completion-table)))
     (when item
