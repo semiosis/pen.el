@@ -2,13 +2,26 @@
   ""
   (let* ((task (plist-get data :task))
          (gen (plist-get data :gen))
-         (sh-gen (plist-get data :sh-gen))
          (filter (plist-get data :filter))
-         (sh-filter (plist-get data :s-filter))
          (examples (plist-get data :examples)))
+
+    (if (stringp gen)
+        (setq gen (eval
+                   `(lambda (initial n)
+                      (pen-str2list (snc (concat (cmd ,gen initial) "| head -n " (str n))))))))
+
+    (if (stringp filter)
+        (setq filter (eval
+                      `(lambda (in)
+                         (snc ,filter in)))))
+
+    ;; Generate examples if none
+
+    ;; Add outputs to examples if there is a filter
     (loop for ex in examples do
           (cond
-           ((and (eq 1 (length ex))) body))))
+           ((and (eq 1 (length ex))
+                 filter) body))))
 
   nil
   ;; (etv (plist-get :external data))
