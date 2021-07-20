@@ -16,8 +16,8 @@
   (car (pf-list-of "1" thing-type :no-select-result t)))
 
 (defun pen-save-prompt (prompt-properties)
-
-  )
+  ;; (json-encode-alist)
+  (json2yaml (json-encode-plist '(:task "my task" :gen "my gen"))))
 
 (defmacro defprompt (args &rest data)
   "defprompt
