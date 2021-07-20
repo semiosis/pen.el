@@ -9,6 +9,10 @@
 ;; TODO counterexamples
 ;; TODO tasks
 
+;; The initial characters of the prompt have more weight than the latter.
+;; A 'metaprompt' may be designed which is the initial part of the prompt.
+;; It's not a great name for it, but it's ok.
+
 (defmacro defprompt (&rest body)
   ""
   `(progn ,@body))
@@ -21,6 +25,7 @@
 (defalias 'defex 'defexample)
 
 (defprompt lines->regex (:external "grex")
+  :task
   (("example 1\nexample2" "^example [12]$")
    ("example 2\nexample3" "^example [23]$")
    ("pi4\npi5" "^pi[45]$"))
