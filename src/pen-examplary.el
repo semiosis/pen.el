@@ -95,7 +95,7 @@ The last element in the list is the output/return value"
                      ((and (eq 1 (length ex))
                            filter)
                       (list (car ex)
-                            (apply filter (car ex))))))))
+                            (apply filter (list (car ex)))))))))
 
     (if task (plist-put data :task task))
     (if gen (plist-put data :gen gen))
