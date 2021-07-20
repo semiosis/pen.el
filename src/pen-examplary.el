@@ -137,8 +137,8 @@ The last element in the list is the output/return value"
                                 (concat "Output:" (pen-onelineify (cadr ex))))))
               examples))
             "Input:<1>"
-            "Output:"))
-       ""))
+            "Output:")
+           "")))
 
     ;; Examples is used for something else in the prompt
     (if examples (plist-put data :examples examples))
