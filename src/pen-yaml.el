@@ -9,4 +9,7 @@
 (defun json2yaml (json-in)
   (snc "json2yaml" json-in))
 
+(defun plist2yaml (plist)
+  (json2yaml (json-encode-plist plist)))
+
 (provide 'pen-yaml)
