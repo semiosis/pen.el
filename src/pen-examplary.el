@@ -15,14 +15,11 @@
 (defun pen-one-get-example-of (thing-type)
   (car (pf-list-of "1" thing-type :no-select-result t)))
 
-(defun plist2yaml (plist)
-  (json2yaml (json-encode-plist plist)))
-
 (defun pen-save-prompt (prompt-plist)
   ;; (json-encode-alist)
   ;; (json2yaml (json-encode-plist '(:task "my task" :gen "my gen")))
   (let ((fp (slugify (plist-get prompt-plist :task))))
-    (json2yaml (json-encode-plist prompt-plist))))
+    (plist2yaml prompt-plist)))
 
 ;; TODO Steps
 ;; - eenerate a plist
