@@ -79,10 +79,16 @@ test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
 set -v
 docker pull semiosis/pen.el:latest
 
-test -d "$PROMPTS_DIR" && yn "Pull prompts repo?" && (
-    cd "$PROMPTS_DIR"
-    git pull
-)
+if test -d "$PROMPTS_DIR"; then
+    yn "Pull prompts repo?" && (
+        cd "$PROMPTS_DIR"
+        git pull
+    )
+else
+    yn "Clone prompts repo here?" && (
+        git clone "http://github.com/semiosis/prompts"
+    )
+fi
 
 test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
     cd "$PENEL_DIR"
