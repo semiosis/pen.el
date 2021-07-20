@@ -134,7 +134,8 @@ The last element in the list is the output/return value"
               (lambda (ex)
                 (list2str (list (concat "Input:" (pen-onelineify (car ex)))
                                 (concat "Output:" (pen-onelineify (cadr ex))))))
-              examples))))
+              examples))
+            "Input:"))
        ""))
 
     ;; Examples is used for something else in the prompt
