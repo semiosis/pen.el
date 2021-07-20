@@ -12,9 +12,16 @@
          (examples (plist-get data :examples)))
 
     (if (not task)
-        (cond
-         ((eq 1 (length args)))
-         ((eq 2 (length args)))))
+        (setq task
+         (cond
+          ((eq 1 (length args))
+           (concat "generate " (symbol-name (car args))))
+          ((eq 2 (length args))
+           (concat "convert "
+                   (symbol-name (car args))
+                   " to "
+                   (symbol-name (cadr args))))
+          (t nil))))
 
     (if (stringp gen)
         (setq gen (eval
