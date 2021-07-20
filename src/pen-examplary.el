@@ -125,7 +125,7 @@ The last element in the list is the output/return value"
               examples
               (eq 2 (length (car examples))))
          (progn
-           ;; Firstly, ensure that the prompt un-onelinerises it
+           ;; Firstly, ensure that the prompt function un-onelinerises the output
            (plist-put data :examples examples)
            (concat
             task "\n"
