@@ -7,4 +7,4 @@
 (defun json2yaml (json-in)
   (snc "json2yaml" json-in))
 
-(provide 'pen-yq)
+(provide 'pen-yaml)
