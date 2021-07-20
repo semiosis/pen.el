@@ -15,6 +15,10 @@
 (defun pen-one-get-example-of (thing-type)
   (car (pf-list-of "1" thing-type :no-select-result t)))
 
+(defun pen-save-prompt (prompt-properties)
+
+  )
+
 (defmacro defprompt (args &rest data)
   "defprompt
 This macro generates a yaml and returns its prompt function.
