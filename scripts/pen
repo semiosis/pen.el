@@ -82,7 +82,7 @@ docker pull semiosis/pen.el:latest
 if test -d "$PROMPTS_DIR"; then
     yn "Pull prompts repo?" && (
         cd "$PROMPTS_DIR"
-        git pull
+        git pull origin/master
     )
 else
     yn "Clone prompts repo here?" && (
@@ -92,7 +92,7 @@ fi
 
 test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
     cd "$PENEL_DIR"
-    git pull
+    git pull origin/master
 )
 
 IFS= read -r -d '' shcode <<HEREDOC
