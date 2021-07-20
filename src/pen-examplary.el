@@ -25,13 +25,16 @@
   "pi4\npi5" "^pi[45]$")
 (defalias 'defex 'defexample)
 
-(defprompt lines->regex (:external "grex")
-  :task
-  (("example 1\nexample2" "^example [12]$")
-   ("example 2\nexample3" "^example [23]$")
-   ("pi4\npi5" "^pi[45]$"))
-  (("example 1\nexample2" "^example [12]$")
-   ("example 2\nexample3" "^example [23]$")
-   ("pi4\npi5" "^pi[45]$")))
+;; TODO Start with an input/output prompt
+
+;; Convert lines to regex
+(defprompt lines regex
+  :external "grex"
+  ;; The task may also be used as a metaprompt.
+  :task "Convert lines to regex"
+  :examples '(("example 1\nexample2" "^example [12]$")
+              ("example 2\nexample3" "^example [23]$")
+              ("pi4\npi5" "^pi[45]$"))
+  :counterexamples '())
 
 (provide 'pen-examplary)
