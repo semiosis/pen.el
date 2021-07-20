@@ -1,12 +1,19 @@
 ;; defprompt should generate a yaml file
 ;; The entire YAML file.
 
-(defmacro defprompt (inputtype outputtype &rest data)
+;; args is a lot like haskell args
+;; The last one is the output
+(defmacro defprompt (args &rest data)
   ""
   (let* ((task (plist-get data :task))
          (gen (plist-get data :gen))
          (filter (plist-get data :filter))
          (examples (plist-get data :examples)))
+
+    (if (not task)
+        (cond
+         ((eq 1 (length task)))
+         ((eq 2 (length task)))))
 
     (if (stringp gen)
         (setq gen (eval
@@ -40,7 +47,7 @@
   (pen-str2list (snc (concat (cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
 
 ;; Convert lines to regex
-(defprompt lines regex
+(defprompt (lines regex)
   :task "Convert lines to regex"
   ;; Generate input with this
   ;; :gen "examplary-edit-generator shane"
