@@ -542,6 +542,7 @@ May use to generate code from comments."
 (require 'pen-gptprompts)
 ;; For debugging
 (require 'pen-messages)
+(require 'pen-yq)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
