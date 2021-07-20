@@ -38,8 +38,10 @@ The last element in the list is the output/return value"
   (setq args (mapcar 'str args))
 
   (let* ((task (plist-get data :task))
-         (gen (plist-get data :gen))
-         (filter (plist-get data :filter))
+         (orig-gen (plist-get data :gen))
+         (gen orig-gen)
+         (orig-filter (plist-get data :filter))
+         (filter orig-filter)
          (examples (plist-get data :examples))
          (lm-command (plist-get data :lm-command))
          (engine (plist-get data :engine)))
@@ -98,14 +100,16 @@ The last element in the list is the output/return value"
                             (apply filter (list (car ex)))))))))
 
     (if task (plist-put data :task task))
-    (if gen (plist-put data :gen gen))
-    (if filter (plist-put data :filter filter))
+
+    (if (and gen (not orig-gen)) (plist-put data :gen gen))
+    (if (and filter (not orig-filter)) (plist-put data :filter filter))
+
     (if examples (plist-put data :examples examples))
     ;;    (plist-put data :lm-command lm-command)
     ;;    (plist-put data :engine engine)
     )
 
-  (etv (pps data))
+  (etv (plist2yaml data))
   nil)
 
 ;; https://github.com/pemistahl/grex
