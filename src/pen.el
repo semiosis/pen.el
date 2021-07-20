@@ -140,19 +140,20 @@
               ;; If not called interactively then
               ;; manually run interactive expressions
               ;; when they exist.
-              (if (not (interactive-p))
-                  (progn
-                    (cl-loop
-                     for sym in ',var-syms
-                     for iarg in ',iargs
-                     collect
-                     (let* ((initval (eval sym)))
-                       (if (and (not initval)
-                                iarg)
-                           (eval iarg)
-                         initval))))
-                ;; Don't include &key pretty
-                (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v))))
+              (mapcar 'str
+               (if (not (interactive-p))
+                   (progn
+                     (cl-loop
+                      for sym in ',var-syms
+                      for iarg in ',iargs
+                      collect
+                      (let* ((initval (eval sym)))
+                        (if (and (not initval)
+                                 iarg)
+                            (eval iarg)
+                          initval))))
+                 ;; Don't include &key pretty
+                 (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v)))))
 
              ;; preprocess the values of the parameters
              (vals

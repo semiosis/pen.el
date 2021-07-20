@@ -66,42 +66,43 @@ The last element in the list is the output/return value"
                          "| head -n "
                          (str n))))))))
 
-    ;; If gen is a shell pipeline string, convert it to an elisp function
-    (if (stringp filter)
-        (setq filter (eval
-                      `(lambda (in)
-                         (snc ,filter in)))))
+    ;;    ;; If gen is a shell pipeline string, convert it to an elisp function
+    ;;    (if (stringp filter)
+    ;;        (setq filter (eval
+    ;;                      `(lambda (in)
+    ;;                         (snc ,filter in)))))
+    ;;
+    ;;    ;; Generate examples if none
+    ;;    (if (not examples)
+    ;;        (if gen
+    ;;            (setq examples
+    ;;                  (apply
+    ;;                   gen
+    ;;                   (pen-one-get-example-of (car args))
+    ;;                   n-generate))
+    ;;          (pf-list-of "1" (car args) :no-select-result t)))
+    ;;
+    ;;    ;; Add outputs to examples if there is a filter
+    ;;    (if (and filter
+    ;;             examples)
+    ;;        (setq examples
+    ;;              (loop for ex in examples
+    ;;                    collect
+    ;;                    (cond
+    ;;                     ((and (eq 1 (length ex))
+    ;;                           filter)
+    ;;                      (list (car ex)
+    ;;                            (apply filter (car ex))))))))
+    ;;
+       (plist-put data :task task)
+       (plist-put data :gen gen)
+    ;;    (plist-put data :filter filter)
+    ;;    (plist-put data :examples examples)
+    ;;    (plist-put data :lm-command lm-command)
+    ;;    (plist-put data :engine engine)
+       )
 
-    ;; Generate examples if none
-    (if (not examples)
-        (if gen
-            (setq examples
-                  (apply
-                   gen
-                   (pen-one-get-example-of (car args))
-                   n-generate))
-          (pf-list-of "1" (car args) :no-select-result t)))
-
-    ;; Add outputs to examples if there is a filter
-    (if (and filter
-             examples)
-        (setq examples
-              (loop for ex in examples
-                    collect
-                    (cond
-                     ((and (eq 1 (length ex))
-                           filter)
-                      (list (car ex)
-                            (apply filter (car ex))))))))
-
-    (plist-put data :task task)
-    (plist-put data :gen gen)
-    (plist-put data :filter filter)
-    (plist-put data :examples examples)
-    (plist-put data :lm-command lm-command)
-    (plist-put data :engine engine))
-
-  (etv data)
+  (etv (pps data))
   nil
   ;; (etv (plist-get :external data))
   ;; `(,@data)
@@ -117,7 +118,7 @@ The last element in the list is the output/return value"
 
 ;; Convert lines to regex
 (defprompt (lines regex)
-  :task "Convert lines to regex"
+  ;; :task "Convert lines to regex"
   ;; Generate input with this
   ;; :gen "examplary-edit-generator shane"
   :gen 'examplary-edit-generator
