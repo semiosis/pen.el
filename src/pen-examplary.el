@@ -13,8 +13,8 @@
 
     (if (not task)
         (cond
-         ((eq 1 (length task)))
-         ((eq 2 (length task)))))
+         ((eq 1 (length args)))
+         ((eq 2 (length args)))))
 
     (if (stringp gen)
         (setq gen (eval
