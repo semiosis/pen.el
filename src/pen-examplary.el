@@ -26,7 +26,12 @@
     (if (stringp gen)
         (setq gen (eval
                    `(lambda (initial n)
-                      (pen-str2list (snc (concat (cmd ,gen initial) "| head -n " (str n))))))))
+                      (pen-str2list
+                       (snc
+                        (concat
+                         (cmd ,gen initial)
+                         "| head -n "
+                         (str n))))))))
 
     (if (stringp filter)
         (setq filter (eval
