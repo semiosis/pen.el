@@ -1,5 +1,68 @@
 #!/bin/bash
 
+yn () {
+    y_chars="Yy"
+    n_chars="Nn"
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        -N|-carefully) {
+            allowed_re="^[YN]$"
+            shift
+        }
+        ;;
+
+        -y|-y-chars) {
+            y_chars="$2"
+            shift
+            shift
+        }
+        ;;
+
+        -n|-n-chars) {
+            n_chars="$2"
+            shift
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
+    allowed_re="^[${y_chars}/${n_chars}]$"
+
+    message="$@"
+
+    : ${message:="Are you sure?"}
+
+    exec 1>&2
+
+    echo
+    message="$(printf -- "%s" "$message")"
+    echo -e " $message"
+    echo
+
+    allowed_re="$(printf -- "%s" "$allowed_re")"
+    allowed_re_color="$(printf -- "%s" "$allowed_re")"
+
+    if test "$YN_DEFAULT" = "y"; then
+        echo y
+        exit 0
+    fi
+
+    if test "$YN_DEFAULT" = "n"; then
+        echo n
+        exit 1
+    fi
+
+    while :; do
+        read -p " $allowed_re_color: " -n 1 -r
+        echo
+        [[ $REPLY =~ $allowed_re ]] && break
+    done
+    echo
+
+    [[ $REPLY =~ ^[$y_chars]$ ]]
+}
+
 test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 : "${PROMPTS_DIR:="$(read -ep "PROMPTS_DIR (leave empty to use docker): ")"}"
@@ -10,6 +73,18 @@ test -d "pen.el" && : "${PENEL_DIR:="pen.el"}"
 
 test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
 : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
+
+# yn "Pull docker image?" && docker pull semiosis/pen.el:latest
+
+test -d "$PROMPTS_DIR" && yn "Pull prompts repo?" && (
+    cd "$PROMPTS_DIR"
+    git pull
+)
+
+test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
+    cd "$PENEL_DIR"
+    git pull
+)
 
 IFS= read -r -d '' shcode <<HEREDOC
     docker run \
