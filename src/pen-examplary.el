@@ -140,7 +140,7 @@ The last element in the list is the output/return value"
   :lm-command "openai-complete.sh")
 
 
-(defprompt ("lines of code" regex)
+(defprompt ("short lines of code" regex)
   :filter "grex")
 
 (provide 'pen-examplary)
