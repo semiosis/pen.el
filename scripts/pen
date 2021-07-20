@@ -65,11 +65,11 @@ yn () {
 
 test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
-: "${PROMPTS_DIR:="$(read -ep "PROMPTS_DIR (leave empty to use docker): ")"}"
+# : "${PROMPTS_DIR:="$(read -ep "PROMPTS_DIR (leave empty to use docker): ")"}"
 
 test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
 test -d "pen.el" && : "${PENEL_DIR:="pen.el"}"
-: "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
+# : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
 
 test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
 : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
@@ -97,6 +97,7 @@ test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
 
 IFS= read -r -d '' shcode <<HEREDOC
     docker run \
+        $(test -n "$OPENAI_API_KEY" && printf -- "%s " -e "OPENAI_API_KEY:$OPENAI_API_KEY" ) \
         $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
         $(test -n "$PROMPTS_DIR" && printf -- "%s " -v "$PROMPTS_DIR:/root/.emacs.d/host/prompts" ) \
         $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
