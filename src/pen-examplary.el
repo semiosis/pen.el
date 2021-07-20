@@ -11,7 +11,8 @@
 
 ;; The initial characters of the prompt have more weight than the latter.
 ;; A 'metaprompt' may be designed which is the initial part of the prompt.
-;; It's not a great name for it, but it's ok.
+;; It's not a great name as there is no strict part which could be considered.
+;; And a metaprompt may be further divided ad infinitum.
 
 (defmacro defprompt (&rest body)
   ""
