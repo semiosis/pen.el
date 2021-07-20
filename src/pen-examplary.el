@@ -66,7 +66,7 @@ The last element in the list is the output/return value"
             (setq examples
                   (apply
                    gen
-                   (pen-one-get-example-of "brand of soda")
+                   (pen-one-get-example-of (car args))
                    n-generate))
           (pf-list-of "1" (car args) :no-select-result t)))
 
