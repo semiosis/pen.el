@@ -133,6 +133,7 @@ The last element in the list is the output/return value"
                               (concat "Output:" (pen-onelineify (cadr ex)))))))))
        ""))
 
+    ;; Examples is used for something else in the prompt
     (if examples (plist-put data :examples examples))
     ;;    (plist-put data :lm-command lm-command)
     ;;    (plist-put data :engine engine)
