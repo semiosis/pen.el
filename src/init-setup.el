@@ -28,6 +28,7 @@
 (package-install 'counsel)
 (package-install 'yaml-mode)
 (package-install 'pp)
+(package-install 'yaml)
 (package-install 's)
 (package-install 'f)
 ;; builtin
