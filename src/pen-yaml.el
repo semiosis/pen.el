@@ -8,6 +8,9 @@
 
 ;; (etv (ht-get (yaml-parse-string "key1: value1\nkey2: value2") 'key1))
 
+(defun yaml-parse-file (fp)
+  (yaml-parse-string (cat fp)))
+
 (defun yaml2json (yaml-in)
   (snc "yq ." yaml-in))
 
