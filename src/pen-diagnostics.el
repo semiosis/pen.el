@@ -19,6 +19,6 @@
     ;; (plist-put plist :testkey (pen-diagnostics-test-key))
 
     ;; (etv (plist2yaml plist))
-    (nbfs (pps plist) "pen diagnostics" 'yaml-mode)))
+    (nbfs (plist2yaml plist) "pen diagnostics" 'yaml-mode)))
 
 (provide 'pen-diagnostics)
