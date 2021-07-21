@@ -20,6 +20,8 @@ design patterns and minimal inputs and
 description. It does this by weaving prompt
 functions into each other.
 
+It's completely free, libre and open-source.
+
 | License | Discord server invite       |
 |---------+-----------------------------|
 | =GPL-3= | https://discord.gg/GQQbbVqK |
