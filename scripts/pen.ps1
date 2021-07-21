@@ -20,7 +20,6 @@ If(!(test-path $prompts_dir))
 }
 
 docker.exe run `
-  -v "$HOME/.pen:/root/.pen" `
-  --directory "$project_root\lisp" `
-  --directory "$project_root\langs" `
-  --eval "(progn (require 'tree-sitter-langs) (tree-sitter-langs-ensure '$lang))"
+  -v "$pen_config_dir:/root/.pen" `
+  -v "$prompts_dir:/root/.emacs.d/host/prompts" `
+  -ti --entrypoint= semiosis/pen.el:latest ./run.sh
