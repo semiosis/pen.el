@@ -13,10 +13,10 @@ If(!(test-path $openai_api_key_file))
 }
 
 $here = $PSScriptRoot
-$pen_config_dir = "$HOME\.pen"
-If(!(test-path $pen_config_dir))
+$prompts_dir = "$here\prompts"
+If(!(test-path $prompts_dir))
 {
-    New-Item -ItemType Directory -Force -Path $pen_config_dir
+    git clone "https://github.com/semiosis/prompts"
 }
 
 docker.exe run `
