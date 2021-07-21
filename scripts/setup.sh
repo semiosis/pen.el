@@ -54,6 +54,8 @@ agi expect
 agi moreutils
 agi jq
 
+agi tmux
+
 mkdir -p /root/org-roam
 
 (
