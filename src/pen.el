@@ -139,7 +139,7 @@
              (final-stop-sequences
               (if (variable-p 'stop-sequences)
                   (eval 'stop-sequences)
-                ,stop-sequences))
+                ',stop-sequences))
 
              (vals
               ;; If not called interactively then
