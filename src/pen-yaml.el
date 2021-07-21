@@ -1,4 +1,5 @@
-;; the elisp library is slower and less reliable than the module
+;; The elisp library is slower and less reliable than the module,
+;; so don't use it at the moment.
 (require 'yaml)
 
 ;; pen-yq interfaces with yq to generate yaml
