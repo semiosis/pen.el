@@ -63,11 +63,11 @@ yn () {
     [[ $REPLY =~ ^[$y_chars]$ ]]
 }
 
-test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
+# test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 # : "${PROMPTS_DIR:="$(read -ep "PROMPTS_DIR (leave empty to use docker): ")"}"
 
-test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
+# test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
 test -d "pen.el" && : "${PENEL_DIR:="pen.el"}"
 # : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
 
@@ -96,6 +96,10 @@ test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
     cd "$PENEL_DIR"
     git pull origin master
 )
+
+if test -d "$PROMPTS_DIR"; then
+    PROMPTS_DIR="$(realpath "$PROMPTS_DIR")"
+fi
 
 IFS= read -r -d '' shcode <<HEREDOC
     docker run \
