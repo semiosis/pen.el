@@ -1,7 +1,24 @@
 * =pen.el= (_Prompt engineering_ in emacs)
-=Pen= facilitates the creation,
+=Pen.el= integrates language models into emacs by
+generating functions that can be used
+interactively or non-interactively and in a
+variety of configurable ways.
+
+=Pen.el= is Google search, stackoverflow, Grammarly,
+Copilot, =conversion.ai=, mind mapping
+software (based on GPT-3) etc. all rolled into
+one package and allows you to extend emacs
+with GPT wherever your mind takes you.
+
+=Pen.el= facilitates the creation,
 development, discovery and usage of prompts to
 a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
+
+=Pen.el's= domain specific language =examplary= also helps
+you to generate your own prompts using known
+design patterns and minimal inputs and
+descrioption. It does this by weaving prompt
+functions into each other.
 
 | License | Discord server invite       |
 |---------+-----------------------------|
