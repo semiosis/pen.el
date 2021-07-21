@@ -17,7 +17,7 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
 =Pen.el's= domain specific language =examplary= also helps
 you to generate your own prompts using known
 design patterns and minimal inputs and
-descrioption. It does this by weaving prompt
+description. It does this by weaving prompt
 functions into each other.
 
 | License | Discord server invite       |
