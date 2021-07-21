@@ -32,6 +32,7 @@
 (require 'counsel)
 (require 'yaml-mode)
 (require 'pp)
+(require 'init)
 (require 's)
 (require 'f)
 ;; builtin
