@@ -137,9 +137,9 @@
                      ,max-tokens)))
 
              (final-stop-sequences
-              (str (if (variable-p 'stop-sequences)
-                       (eval 'stop-sequences)
-                     ,max-tokens)))
+              (if (variable-p 'stop-sequences)
+                  (eval 'stop-sequences)
+                ,stop-sequences))
 
              (vals
               ;; If not called interactively then
