@@ -90,6 +90,8 @@ else
     )
 fi
 
+test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
+
 test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
     cd "$PENEL_DIR"
     git pull origin master
