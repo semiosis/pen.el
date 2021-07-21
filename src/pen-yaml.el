@@ -1,6 +1,6 @@
 ;; The elisp library is slower and less reliable than the module,
 ;; so don't use it at the moment.
-(require 'yaml)
+;; (require 'yaml)
 
 ;; pen-yq interfaces with yq to generate yaml
 ;; TODO Use native elisp
@@ -10,8 +10,8 @@
 
 ;; (etv (ht-get (yaml-parse-string "key1: value1\nkey2: value2") 'key1))
 
-(defun yaml-parse-file (fp)
-  (yaml-parse-string (cat fp)))
+;; (defun yaml-parse-file (fp)
+;;   (yaml-parse-string (cat fp)))
 
 (defun yaml2json (yaml-in)
   (snc "yq ." yaml-in))
