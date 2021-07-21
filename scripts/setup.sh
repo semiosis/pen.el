@@ -86,7 +86,7 @@ git clone --depth 1 "https://github.com/paradoxxxzero/butterfly"
 
 (
 cd
-git clone --depth 1"https://github.com/syl20bnr/spacemacs"
+git clone --depth 1 "https://github.com/syl20bnr/spacemacs"
 )
 
 (
