@@ -289,7 +289,7 @@
   (mapconcat 'identity (mapcar (lambda (s) (concat "- " s)) l)
              "\n"))
 
-(defun pen-generate-prompt-functions ()
+(defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
   (interactive)
@@ -301,8 +301,9 @@ Function names are prefixed with pf- for easy searching"
 
   (noupd
    (let ((paths
-          (-non-nil
-           (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt"))))))
+          (or paths
+              (-non-nil
+               (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))))
      (cl-loop for path in paths do
               (message (concat "pen-mode: Loading .prompt file " path))
 
