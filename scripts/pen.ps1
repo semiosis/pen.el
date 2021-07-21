@@ -1,7 +1,6 @@
 # run docker with volume
 
-# realpath of directory
-# Resolve-Path
+# resolvepath of directory
 
 function docker-run {
 docker.exe
