@@ -13,6 +13,12 @@ If(!(test-path $openai_api_key_file))
 }
 
 $here = $PSScriptRoot
+$pen_config_dir = "$HOME\.pen"
+If(!(test-path $pen_config_dir))
+{
+    New-Item -ItemType Directory -Force -Path $pen_config_dir
+}
+
 docker.exe run `
   -v "$HOME/.pen:/root/.pen" `
   --directory "$project_root\lisp" `
