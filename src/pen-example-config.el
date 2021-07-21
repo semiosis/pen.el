@@ -1,5 +1,5 @@
-(let ((pendir (concat (getenv "EMACSD") "/pen.el"))
-      (contribdir (concat (getenv "EMACSD") "/pen-contrib.el")))
+(let ((pendir (concat user-emacs-directory "/pen.el"))
+      (contribdir (concat user-emacs-directory "/pen-contrib.el")))
   (add-to-list 'load-path (concat pendir "/src"))
   (add-to-list 'load-path (concat contribdir "/src"))
   (add-to-list 'load-path (concat pendir "/src/in-development")))

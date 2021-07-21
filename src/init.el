@@ -43,12 +43,12 @@
 (require 'sx)
 (require 'pcre2el)
 
-(let ((openaidir (concat (getenv "EMACSD") "/openai-api.el"))
-      (openaihostdir (concat (getenv "EMACSD") "/host/openai-api.el"))
-      (pendir (concat (getenv "EMACSD") "/pen.el"))
-      (penhostdir (concat (getenv "EMACSD") "/host/pen.el"))
-      (contribdir (concat (getenv "EMACSD") "/pen-contrib.el"))
-      (contribhostdir (concat (getenv "EMACSD") "/host/pen-contrib.el")))
+(let ((openaidir (concat user-emacs-directory "/openai-api.el"))
+      (openaihostdir (concat user-emacs-directory "/host/openai-api.el"))
+      (pendir (concat user-emacs-directory "/pen.el"))
+      (penhostdir (concat user-emacs-directory "/host/pen.el"))
+      (contribdir (concat user-emacs-directory "/pen-contrib.el"))
+      (contribhostdir (concat user-emacs-directory "/host/pen-contrib.el")))
 
   (if (f-directory-p (concat openaihostdir "/src"))
       (setq openaidir openaihostdir))
