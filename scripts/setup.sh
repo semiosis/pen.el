@@ -85,6 +85,11 @@ git clone --depth 1 "https://github.com/paradoxxxzero/butterfly"
 )
 
 (
+cd
+git clone --depth 1"https://github.com/syl20bnr/spacemacs"
+)
+
+(
 cd "$EMACSD"
 test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
 )
