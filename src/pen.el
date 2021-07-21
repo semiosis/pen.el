@@ -263,6 +263,8 @@
              (result (if no-select-result
                          (length results)
                        (cl-fz results :prompt (concat ,func-name ": ") :select-only-match t))))
+
+        (etv (pps final-stop-sequences))
         (if no-select-result
             results
           (if (interactive-p)
