@@ -515,7 +515,8 @@ May use to generate code from comments."
   (let ((response
          ;; overrides
          (let ((max-tokens 200)
-               (stop-sequence "##long complete##"))
+               (stop-sequence "##long complete##")
+               (stop-sequences '("##long complete##")))
            (pf-generic-file-type-completion (detect-language) preceding-text))))
     (if tv
         (etv response)
