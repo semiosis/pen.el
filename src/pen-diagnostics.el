@@ -6,7 +6,9 @@
       output)))
 
 (defun pen-diagnostics-test ()
+  (let* ((plist)
+         (testkey (pen-diagnostics-test-key)))
 
-  )
+    (etv (plist2yaml (plist-put :testkey testkey)))))
 
 (provide 'pen-diagnostics)

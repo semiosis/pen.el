@@ -673,4 +673,10 @@ when s is a string, set the clipboard to s"
     (message "Disabled lsp for completers"))
    (t (call-interactively 'lsp))))
 
+(defun pen-onelineify (s)
+  (snc "sed -z 's/\\n/\\\\n/g'" s))
+
+(defun pen-unonelineify (s)
+  (snc "sed -z 's/\\\\n/\\n/g'" s))
+
 (provide 'pen-support)

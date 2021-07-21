@@ -25,12 +25,6 @@
 ;; - eenerate a plist
 ;; - export the plist to yaml
 
-(defun pen-onelineify (s)
-  (snc "sed -z 's/\\n/\\\\n/g'" s))
-
-(defun pen-unonelineify (s)
-  (snc "sed -z 's/\\\\n/\\n/g'" s))
-
 ;; (pen-unonelineify (pen-onelineify "hello\nshane"))
 
 (defmacro defprompt (args &rest data)
