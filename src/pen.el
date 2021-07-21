@@ -510,7 +510,7 @@ Function names are prefixed with pf- for easy searching"
     (mapcar (lambda (s) (concat (pen-company-filetype--prefix) s))
             res)))
 
-(defun my-completion-at-point ()
+(defun pen-completion-at-point ()
   (interactive)
   (call-interactively 'completion-at-point)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)

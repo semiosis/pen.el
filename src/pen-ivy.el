@@ -1,4 +1,4 @@
-(defun my-counsel--format-command (cmd extra-args needle)
+(defun pen-counsel--format-command (cmd extra-args needle)
   "Construct a complete `counsel-ag-command' as a string.
 EXTRA-ARGS is a string of the additional arguments.
 NEEDLE is the search string."
@@ -16,7 +16,7 @@ NEEDLE is the search string."
 
 ;; The cmd takes a single string which is the search
 ;; In this case, it may be the first argument to a gpt3 prompt function
-(defmacro gen-counsel-generator-function (cmd)
+(defmacro pen-gen-counsel-generator-function (cmd)
   ""
   (let ((funsym (intern (concat "counsel-generator-function-" (slugify cmd))))
         (cmdstr (concat cmd " %s")))
@@ -31,7 +31,7 @@ NEEDLE is the search string."
                  (switches (concat (car command-args))))
             (counsel--async-command
              (concat
-              (my-counsel--format-command
+              (pen-counsel--format-command
                ,cmdstr
                switches
                (funcall (if (listp ,cmdstr) #'identity
@@ -72,7 +72,7 @@ prompt additionally for EXTRA-AG-ARGS."
 
          (ivy-read
           (concat ,cmd ": ")
-          (gen-counsel-generator-function ,cmd)
+          (pen-gen-counsel-generator-function ,cmd)
           :initial-input initial-input
           :dynamic-collection t
           :keymap counsel-ag-map
