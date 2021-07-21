@@ -264,8 +264,8 @@
                          (length results)
                        (cl-fz results :prompt (concat ,func-name ": ") :select-only-match t))))
 
-        (tv (pps final-stop-sequences))
-        (tv "Hi")
+        ;; (tv (pps final-stop-sequences))
+        ;; (tv "Hi")
         (if no-select-result
             results
           (if (interactive-p)
