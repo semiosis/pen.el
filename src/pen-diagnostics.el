@@ -9,6 +9,9 @@
         (etv output)
       output)))
 
+;; Use =cl= when dealing with plists in emacs
+;; (cl-remf
+
 (defun pen-diagnostics-test ()
   (interactive)
   (let* ((plist '(:testkey nil))
