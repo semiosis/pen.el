@@ -101,6 +101,10 @@ if test -d "$PROMPTS_DIR"; then
     PROMPTS_DIR="$(realpath "$PROMPTS_DIR")"
 fi
 
+if test -d "$PEN_CONFIG_DIR"; then
+    PEN_CONFIG_DIR="$(realpath "$PEN_CONFIG_DIR")"
+fi
+
 IFS= read -r -d '' shcode <<HEREDOC
     docker run \
         $(test -n "$OPENAI_API_KEY" && printf -- "%s " -e "OPENAI_API_KEY:$OPENAI_API_KEY" ) \
