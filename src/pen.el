@@ -518,16 +518,20 @@ Function names are prefixed with pf- for easy searching"
       (call-interactively 'pen-company-filetype)
     (call-interactively 'completion-at-point)))
 
+(defmacro pen-long-complete (&rest body)
+  "This wraps around a pen function calls to make them complete long"
+  `(let ((max-tokens 200)
+         (stop-sequence "##long complete##")
+         (stop-sequences '("##long complete##")))
+     ,@body))
+
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
 May use to generate code from comments."
   (interactive (list (pen-preceding-text) t))
   (let ((response
-         ;; overrides
-         (let ((max-tokens 200)
-               (stop-sequence "##long complete##")
-               (stop-sequences '("##long complete##")))
-           (pf-generic-file-type-completion (detect-language) preceding-text))))
+         (pen-long-complete
+          (pf-generic-file-type-completion (detect-language) preceding-text))))
     (if tv
         (etv response)
       response)))
