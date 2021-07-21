@@ -14,11 +14,10 @@
 
 (defun pen-diagnostics-test ()
   (interactive)
-  (let* ((plist '(:testkey nil))
-         (testkey "yo" ;; (pen-diagnostics-test-key)
-                  ))
+  (let* ((plist '(:testkey (pen-diagnostics-test-key))))
 
-    (plist-put plist :testkey "hi")
+    ;; (plist-put plist :testkey (pen-diagnostics-test-key))
+
     ;; (etv (plist2yaml plist))
     (etv (pps plist))))
 
