@@ -7,6 +7,7 @@
 
 ;; Use (pen-openai-list-engines)
 (defset openai-models
+  ;; codex
   (list
    "ada"
    "babbage"
