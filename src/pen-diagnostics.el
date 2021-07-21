@@ -14,7 +14,7 @@
 
 (defun pen-diagnostics-test ()
   (interactive)
-  (let* ((plist '(:testkey (pen-diagnostics-test-key))))
+  (let* ((plist `(:testkey ,(pen-diagnostics-test-key))))
 
     ;; (plist-put plist :testkey (pen-diagnostics-test-key))
 
