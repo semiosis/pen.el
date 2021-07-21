@@ -496,12 +496,10 @@ Function names are prefixed with pf- for easy searching"
   (let* ((preceding-text (pen-preceding-text))
          (response
           (if (>= (prefix-numeric-value current-prefix-arg) 4)
-              (let ((max-tokens 200)
-                    (stop-sequence "##long complete##")
-                    (stop-sequences '("##long complete##")))
-                (-->
-                    preceding-text
-                  (pf-generic-file-type-completion (detect-language) it :no-select-result t)))
+              (pen-long-complete
+               (-->
+                   preceding-text
+                 (pf-generic-file-type-completion (detect-language) it :no-select-result t)))
             (-->
                 preceding-text
               (pf-generic-file-type-completion (detect-language) it :no-select-result t))))
