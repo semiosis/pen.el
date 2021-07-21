@@ -1,0 +1,13 @@
+Q: How do I change the API key?
+
+A: While in emacs,
+   type "Ctrl-X Ctrl-F"
+   then type "~/.pen/openai_api_key" and press Enter.
+   that opens the key file
+
+   backspace the line to remove it.
+
+   Type in the new key.
+
+   When you're done,
+   save the file by typing "Ctrl-X Ctrl-S"
