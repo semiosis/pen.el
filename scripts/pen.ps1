@@ -19,7 +19,7 @@ $prompts_dir = "$here" | Join-Path -ChildPath 'prompts'
 Write-Host $prompts_dir
 If(!(test-path $prompts_dir))
 {
-    git clone "https://github.com/semiosis/prompts"
+    git.exe clone "https://github.com/semiosis/prompts"
 }
 
 docker.exe run `
