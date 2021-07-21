@@ -525,6 +525,13 @@ Function names are prefixed with pf- for easy searching"
          (stop-sequences '("##long complete##")))
      ,@body))
 
+(defmacro pen-line-complete (&rest body)
+  "This wraps around a pen function calls to make them complete line only"
+  `(let ((max-tokens 100)
+         (stop-sequence "\n")
+         (stop-sequences '("\n")))
+     ,@body))
+
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
 May use to generate code from comments."
