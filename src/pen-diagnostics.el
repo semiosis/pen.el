@@ -9,7 +9,7 @@
   (let* ((plist)
          (testkey (pen-diagnostics-test-key)))
 
-    (plist-put plist :testkey testkey) 
+    (plist-put plist :testkey testkey)
     (etv (plist2yaml plist))))
 
 (provide 'pen-diagnostics)
