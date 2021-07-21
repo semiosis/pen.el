@@ -1,8 +1,8 @@
-(let ((pendir (concat user-emacs-directory "/pen.el"))
-      (contribdir (concat user-emacs-directory "/pen-contrib.el")))
-  (add-to-list 'load-path (concat pendir "/src"))
-  (add-to-list 'load-path (concat contribdir "/src"))
-  (add-to-list 'load-path (concat pendir "/src/in-development")))
+(let ((pendir (f-join user-emacs-directory "pen.el"))
+      (contribdir (f-join user-emacs-directory "pen-contrib.el")))
+  (add-to-list 'load-path (f-join pendir "src"))
+  (add-to-list 'load-path (f-join contribdir "src"))
+  (add-to-list 'load-path (f-join pendir "src/in-development")))
 
 ;; Add Hyper and Super
 (defun add-event-modifier (string e)
