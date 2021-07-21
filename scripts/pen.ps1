@@ -20,6 +20,6 @@ If(!(test-path $prompts_dir))
 }
 
 docker.exe run `
-  -v "$pen_config_dir:/root/.pen" `
-  -v "$prompts_dir:/root/.emacs.d/host/prompts" `
+  -v "${pen_config_dir}:/root/.pen" `
+  -v "${prompts_dir}:/root/.emacs.d/host/prompts" `
   -ti --entrypoint= semiosis/pen.el:latest ./run.sh
