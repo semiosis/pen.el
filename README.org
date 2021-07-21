@@ -19,11 +19,12 @@ a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
     - https://beta.openai.com/docs/introduction/semantic-search
     - https://gpttools.com/semanticsearch
 
-#+BEGIN_SRC sh -n :sps bash :async :results none
-  docker run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
-
-  # And to update the image
-  docker pull semiosis/pen.el:latest
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  git clone "https://github.com/semiosis/pen.el"
+  git clone "https://github.com/semiosis/prompts"
+  mkdir ~/.pen
+  echo "sk-<openai key here>" > ~/.pen/openai_api_key
+  ./pen.el/scripts/pen
 #+END_SRC
 
 /The pen of imagination - |:ϝ∷¦ϝ./
