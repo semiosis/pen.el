@@ -27,7 +27,7 @@ openai_results_split() {
 
     completions_fp="$(realpath "$completions_fp")"
 
-    td="$(mktemp -d)"
+    td="$(mktemp -d -p ~/.pen/results)"
 
     cd "$td"
 
