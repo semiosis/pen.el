@@ -86,8 +86,8 @@ care."
     (let ((res (apply proc args)))
       res)))
 
-;; Re-memoize these
-(advice-add 'memoize-restore :around #'ignore-errors-around-advice)
-(advice-add 'memoize :around #'ignore-errors-around-advice)
+;; This would break emacs
+;; (memoize-restore 'ignore-errors-around-advice)
+;; (memoize 'ignore-errors-around-advice)
 
 (provide 'pen-memoize)
