@@ -94,6 +94,11 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
   (and (not (eq s nil))
        (boundp s)))
 
+;; For docker
+(if (not (variable-p 'user-home-directory))
+    (defvar user-home-directory nil))
+(setq user-home-directory (or user-home-directory "/root"))
+
 (defmacro upd (&rest body)
   `(let ((pen-sh-update t)) ,@body))
 
