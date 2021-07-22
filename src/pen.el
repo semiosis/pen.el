@@ -122,6 +122,7 @@
   (pen-snc cmd))
 
 (memoize 'pen-prompt-snc)
+;; (memoize-restore 'pen-prompt-snc)
 
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
