@@ -565,7 +565,7 @@ May use to generate code from comments."
 (require 'pen-yaml)
 (require 'pen-glossary)
 (require 'pen-diagnostics)
-;; (require 'pen-examplary)
+(require 'pen-examplary)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
