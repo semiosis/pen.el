@@ -274,21 +274,18 @@
             results
           (if (interactive-p)
               (cond
-               ;; Filter takes priority over insertion
-               ((or ,(not filter)
-                    (>= (prefix-numeric-value current-prefix-arg) 4)
-                    (not mark-active))
+               ((>= (prefix-numeric-value current-prefix-arg) 4)
                 (etv result))
-               ;; Insertion is for prompts for which a new buffer is not necessary
-               (,insertion
-                (insert result))
+               ;; Filter takes priority over insertion
                ((and ,filter
                      mark-active)
                 (replace-region (concat (pen-selected-text) result)))
-               (,completion
-                (etv result))
+               ;; Insertion is for prompts for which a new buffer is not necessary
+               ((or ,insertion
+                    ,completion)
+                (insert result))
                (t
-                (replace-region result)))
+                (etv result)))
             result))))))
 
 (defun pen-list-to-orglist (l)
