@@ -11,8 +11,8 @@
 ;; The input to the output if the prompt has an arity of 2 (i.e. conversion)
 (defvar n-generate 5)
 
-;; (pen-one-get-example-of "car manufacturer")
-(defun pen-one-get-example-of (thing-type)
+;; (pen-get-one-example-of "car manufacturer")
+(defun pen-get-one-example-of (thing-type)
   (car (pf-list-of "1" thing-type :no-select-result t)))
 
 (defun pen-save-prompt (prompt-plist)
@@ -86,7 +86,7 @@ The last element in the list is the output/return value"
             (setq examples
                   (mapcar 'list (apply
                                  gen
-                                 (pen-one-get-example-of (car args))
+                                 (pen-get-one-example-of (car args))
                                  n-generate)))
           (setq examples
                 (mapcar 'list (pf-list-of "1" (car args) :no-select-result t)))))
