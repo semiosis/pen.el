@@ -5,6 +5,8 @@
 # export PEN_PROMPT="Once upon a time"
 # lm-complete
 
+mkdir -p ~/.pen/results
+
 test -n "$PEN_LM_COMMAND" || {
     echo "PEN_LM_COMMAND not supplied"
     exit 1

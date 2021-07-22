@@ -8,8 +8,6 @@
 # OPENAI_API_KEY="insert key here and uncomment this line"
 export OPENAI_API_KEY
 
-mkdir -p ~/.pen/results
-
 p () {
     {
         i=1
