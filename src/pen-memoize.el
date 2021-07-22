@@ -3,7 +3,7 @@
 
 ;; These changes are required to allow persistent caching on disk
 
-(defvar pen-ht-cache-dir (concat user-emacs-directory "/ht-cache"))
+(defvar pen-ht-cache-dir (concat penconfdir "/ht-cache"))
 
 (f-mkdir pen-ht-cache-dir)
 
