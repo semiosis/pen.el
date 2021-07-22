@@ -10,7 +10,7 @@
 (defun pen-ht-cache-slug-fp (name)
   (concat pen-ht-cache-dir "/" "persistent-hash-" (slugify name) ".elht"))
 
-(defun pen-ht-cache (name &optional ht)
+(defun ht-cache (name &optional ht)
   (let* ((n (pen-ht-cache-slug-fp name))
          (nswap (concat n ".swap")))
     (if ht
@@ -23,12 +23,12 @@
                   (kill-buffer r)
                   ret)))))))
 
-(defun pen-ht-cache-delete (name)
+(defun ht-cache-delete (name)
   (f-delete (pen-ht-cache-slug-fp name) t))
 
 (defun make-or-load-hash-table (name args)
   (progn
-    (or (pen-ht-cache name)
+    (or (ht-cache name)
         (apply 'make-hash-table args))))
 
 (defun memoize--wrap (func timeout)
@@ -61,7 +61,7 @@ care."
                                                         'MEMOIZE_NIL)
                                                     ,table)))
                                (if (featurep 'hashtable-print-readable)
-                                   (pen-ht-cache ,tablename ,table))
+                                   (ht-cache ,tablename ,table))
                                newret))))
                 (if (equal ret 'MEMOIZE_NIL)
                     (setq ret nil))
