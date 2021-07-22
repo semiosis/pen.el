@@ -82,4 +82,7 @@ care."
                                         (try (remhash args ,table)
                                              (message ,(concat "timer for memoized " funcslug " failed"))))) ,timeouts)))))))))
 
+(advice-add 'memoize-restore :around #'ignore-errors-around-advice)
+(advice-add 'memoize :around #'ignore-errors-around-advice)
+
 (provide 'pen-memoize)
