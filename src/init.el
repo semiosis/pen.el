@@ -43,6 +43,7 @@
 (require 'pcsv)
 (require 'sx)
 (require 'pcre2el)
+(require 'cua-base)
 
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
       (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))
