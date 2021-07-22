@@ -39,6 +39,7 @@
 (package-install 'pcsv)
 (package-install 'sx)
 (package-install 'pcre2el)
+(package-install 'helpful)
 
 (let ((pendir (concat user-emacs-directory "/pen.el"))
       (contribdir (concat user-emacs-directory "/pen-contrib.el")))
