@@ -151,4 +151,7 @@
 
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
 
+(memoize-restore 'pen-prompt-snc)
+(memoize 'pen-prompt-snc)
+
 ;; (call-interactively 'pen-add-key-booste)

@@ -121,9 +121,6 @@
   "This is like pen-snc but it will memoize the function. resultnumber is necessary because we want n unique results per function"
   (pen-snc cmd))
 
-(memoize 'pen-prompt-snc)
-;; (memoize-restore 'pen-prompt-snc)
-
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
