@@ -52,6 +52,11 @@ It's completely free, libre and open-source.
 ** Tutorials
 - [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
 
+** Special features
+- Generations are store on the host in the =~/.pen/results= directory
+- Prompt functions are cached on the host in the =~/.pen/ht-cache= directory
+  - This means that repeating the same commands / prompts inside =pen= will be instantaneous and persist between docker invocations
+
 ** Goals
 - Peer-to-peer sharing of prompts
   - https://github.com/semiosis/prompts/
