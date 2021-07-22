@@ -146,7 +146,7 @@
 (right-click-context-mode t)
 (pen-acolyte-scratch)
 
-(let ((pen-openai-key-file-path (f-join user-home-directory ".pen" "openai_api_key")))
+(let ((pen-openai-key-file-path (f-join penconfdir "openai_api_key")))
   (if (not (f-file-p pen-openai-key-file-path))
       (let ((envkey (getenv "OPENAI_API_KEY")))
         (if (sor envkey)

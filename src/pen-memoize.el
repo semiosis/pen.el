@@ -1,8 +1,9 @@
 (require 'memoize)
+(require 'pen-configure)
 
 ;; These changes are required to allow persistent caching on disk
 
-(defset pen-ht-cache-dir (concat user-emacs-directory "/ht-cache"))
+(defvar pen-ht-cache-dir (concat user-emacs-directory "/ht-cache"))
 
 (f-mkdir pen-ht-cache-dir)
 
