@@ -1,8 +1,19 @@
-An eisenhower matrix advisory chatbot is definitely possible. One just has to
-realise that it's based on a stochastic language model of the past and the
-language model must be continually updated to remain useful.  But those
-language models are typically based on open domain data and are empirical
-rather than anecdotal models. In the future we'll have to fine-tune our
-personal language model on specific datasets which are not open-domain.  To
-retain your own data and train your own model is to protect your metaphysical
-invariant or your (residual self image) to use a term from the matrix.
+An eisenhower matrix advisory chatbot is
+definitely possible.
+
+One just has to realise that it's based on a
+stochastic LM of the past and the LM must be
+continually updated to remain useful.
+
+But those LMs are typically based on open
+domain data and are empirical rather than
+anecdotal models.
+
+In the future we'll have to fine-tune our
+personal LM on specific datasets which are not
+open-domain.
+
+To retain your own data and train your own
+model is to protect your metaphysical
+invariant or your (residual self image) to use
+a term from the matrix.
