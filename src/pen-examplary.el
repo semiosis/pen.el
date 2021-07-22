@@ -152,8 +152,7 @@ The last element in the list is the output/return value"
 (defun examplary-edit-generator (initial n)
   (pen-str2list (snc (concat (cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
 
-(defun pen-examplary-test ()
-  (interactive)
+(never
   ;; so this is a prompt that takes a single input, which is a multiline string
   ;; and prodduces a regex for it
   ;; "short lines of code" will generate the first column
