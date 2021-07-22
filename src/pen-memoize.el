@@ -26,12 +26,12 @@
 (defun pen-ht-cache-delete (name)
   (f-delete (pen-ht-cache-slug-fp name) t))
 
-(defun pen-make-or-load-hash-table (name args)
+(defun make-or-load-hash-table (name args)
   (progn
     (or (pen-ht-cache name)
         (apply 'make-hash-table args))))
 
-(defun pen-memoize--wrap (func timeout)
+(defun memoize--wrap (func timeout)
   "Return the memoized version of FUNC.
 TIMEOUT specifies how long the values last from last access. A
 nil timeout will cause the values to never expire, which will
@@ -45,8 +45,8 @@ care."
          (funcslug (slugify (s-join "-" (pen-str2list funcslugdata))))
          (tablename (concat "table-" funcslug))
          (timeoutsname (concat "timeouts-" funcslug))
-         (table (pen-make-or-load-hash-table tablename '(:test equal)))
-         (timeouts (pen-make-or-load-hash-table timeoutsname '(:test equal))))
+         (table (make-or-load-hash-table tablename '(:test equal)))
+         (timeouts (make-or-load-hash-table timeoutsname '(:test equal))))
     (eval
      `(lambda (&rest args)
         (let ((value (gethash args ,table)))
