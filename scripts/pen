@@ -63,46 +63,59 @@ yn () {
     [[ $REPLY =~ ^[$y_chars]$ ]]
 }
 
-test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
-test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
-# : "${PROMPTS_DIR:="$(read -ep "PROMPTS_DIR (leave empty to use docker): ")"}"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -Q) {
+        vanilla=y
+        shift
+    }
+    ;;
 
-test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
-test -d "pen.el" && : "${PENEL_DIR:="pen.el"}"
-# : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
+    *) break;
+esac; done
 
-test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
-: "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
+if ! test "$vanilla" = "y"; then
+    test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
+    test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
+    # : "${PROMPTS_DIR:="$(read -ep "PROMPTS_DIR (leave empty to use docker): ")"}"
 
-# yn "Pull docker image?" && docker pull semiosis/pen.el:latest
+    test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
+    test -d "pen.el" && : "${PENEL_DIR:="pen.el"}"
+    # : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
 
-set -v
-# docker pull semiosis/pen.el:latest
+    test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
+    : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
 
-if test -d "$PROMPTS_DIR"; then
-    yn "Pull prompts repo?" && (
-        cd "$PROMPTS_DIR"
+    # yn "Pull docker image?" && docker pull semiosis/pen.el:latest
+
+    set -v
+    # docker pull semiosis/pen.el:latest
+
+    if test -d "$PROMPTS_DIR"; then
+        yn "Pull prompts repo?" && (
+            cd "$PROMPTS_DIR"
+            git pull origin master
+        )
+    else
+        yn "Clone prompts repo here?" && (
+            git clone "http://github.com/semiosis/prompts"
+        )
+    fi
+
+    test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
+
+    test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
+        cd "$PENEL_DIR"
         git pull origin master
     )
-else
-    yn "Clone prompts repo here?" && (
-        git clone "http://github.com/semiosis/prompts"
-    )
-fi
 
-test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
+    if test -d "$PROMPTS_DIR"; then
+        PROMPTS_DIR="$(realpath "$PROMPTS_DIR")"
+    fi
 
-test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
-    cd "$PENEL_DIR"
-    git pull origin master
-)
-
-if test -d "$PROMPTS_DIR"; then
-    PROMPTS_DIR="$(realpath "$PROMPTS_DIR")"
-fi
-
-if test -d "$PEN_CONFIG_DIR"; then
-    PEN_CONFIG_DIR="$(realpath "$PEN_CONFIG_DIR")"
+    if test -d "$PEN_CONFIG_DIR"; then
+        PEN_CONFIG_DIR="$(realpath "$PEN_CONFIG_DIR")"
+    fi
 fi
 
 IFS= read -r -d '' shcode <<HEREDOC
