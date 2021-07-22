@@ -117,6 +117,12 @@
         (setq i (+ 1 i)))
        s))))
 
+(defun pen-prompt-snc (cmd resultnumber)
+  "This is like pen-snc but it will memoize the function. resultnumber is necessary because we want n unique results per function"
+  (pen-snc cmd))
+
+(memoize 'pen-prompt-snc)
+
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
@@ -230,7 +236,7 @@
                (progn
                  (message (concat ,func-name " query " (int-to-string i) "..."))
                  ;; TODO Also handle PEN_N_COMPLETIONS
-                 (let ((ret (pen-snc shcmd)))
+                 (let ((ret (pen-prompt-snc shcmd i)))
                    (message (concat ,func-name " done " (int-to-string i)))
                    ret))))
 
