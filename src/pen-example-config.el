@@ -99,11 +99,6 @@
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)
 
-;; For docker
-(if (not (variable-p 'user-home-directory))
-    (defvar user-home-directory nil))
-(setq user-home-directory (or user-home-directory "/root"))
-
 ;; Company
 (setq company-auto-complete nil)
 (setq company-auto-complete-chars '())
