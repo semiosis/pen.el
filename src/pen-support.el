@@ -479,7 +479,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   "Just give me the selected text as a string. If it's empty, then nothing was selected. region-active-p does not work for evil selection."
   (interactive)
   (cond
-   ((or (region-active-p) (eq evil-state 'visual))
+   ((or (region-active-p)
+        (eq evil-state 'visual))
     (str (buffer-substring (region-beginning) (region-end))))
    (iedit-mode
     (iedit-current-occurrence-string))

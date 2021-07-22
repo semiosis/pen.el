@@ -279,7 +279,8 @@
                ;; Filter takes priority over insertion
                ((and ,filter
                      mark-active)
-                (replace-region (concat (pen-selected-text) result)))
+                ;; (replace-region (concat (pen-selected-text) result))
+                (replace-region result))
                ;; Insertion is for prompts for which a new buffer is not necessary
                ((or ,insertion
                     ,completion)
