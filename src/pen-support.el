@@ -686,4 +686,28 @@ when s is a string, set the clipboard to s"
 (defun pen-unonelineify (s)
   (snc "sed -z 's/\\\\n/\\n/g'" s))
 
+(defun replace-region (s)
+  "Apply the function to the selected region. The function must accept a string and return a string."
+  (let ((rstart (if (region-active-p) (region-beginning) (point-min)))
+        (rend (if (region-active-p) (region-end) (point-max)))
+        (was_selected (selected-p))
+        (deactivate-mark nil))
+
+    (if buffer-read-only
+        (progn
+          (message "buffer is readonly. placing in temp buffer")
+          (nbfs s))
+      (progn
+        (let ((doreverse (< (point) (mark))))
+          (delete-region
+           rstart
+           rend)
+          (insert s)
+
+          (if doreverse
+              (call-interactively 'cua-exchange-point-and-mark)))
+
+        (if (not was_selected)
+            (deselect))))))
+
 (provide 'pen-support)
