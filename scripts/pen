@@ -63,10 +63,21 @@ yn () {
     [[ $REPLY =~ ^[$y_chars]$ ]]
 }
 
+vanilla=
+use_pen_config=y
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -Q) {
         vanilla=y
+        use_pen_config=n
+        shift
+    }
+    ;;
+
+    -q) {
+        vanilla=y
+        use_pen_config=y
         shift
     }
     ;;
@@ -82,9 +93,6 @@ if ! test "$vanilla" = "y"; then
     test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
     test -d "pen.el" && : "${PENEL_DIR:="pen.el"}"
     # : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
-
-    test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
-    : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
 
     # yn "Pull docker image?" && docker pull semiosis/pen.el:latest
 
@@ -112,6 +120,13 @@ if ! test "$vanilla" = "y"; then
     if test -d "$PROMPTS_DIR"; then
         PROMPTS_DIR="$(realpath "$PROMPTS_DIR")"
     fi
+
+fi
+
+if test "$use_pen_config" = "y"; then
+    test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
+    : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
+
 
     if test -d "$PEN_CONFIG_DIR"; then
         PEN_CONFIG_DIR="$(realpath "$PEN_CONFIG_DIR")"
