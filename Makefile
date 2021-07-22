@@ -1,14 +1,14 @@
 #!/bin/bash
 
 default:
-	./src/run.sh
+	./scripts/run.sh
 
 build-on-root-debian10:
-	./src/setup.sh
+	./scripts/setup.sh
 
 run-docker:
 	docker pull semiosis/pen.el:latest
-	./src/run-pen-docker.sh
+	./scripts/run-pen-docker.sh
 
 pull-docker:
 	docker pull semiosis/pen.el:latest
