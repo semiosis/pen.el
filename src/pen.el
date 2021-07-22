@@ -274,16 +274,18 @@
             results
           (if (interactive-p)
               (cond
+               ;; Filter takes priority over insertion
+               ((or ,(not filter)
+                    (>= (prefix-numeric-value current-prefix-arg) 4)
+                    (not mark-active))
+                (etv result))
+               ;; Insertion is for prompts for which a new buffer is not necessary
                (,insertion
                 (insert result))
                ((and ,filter
                      mark-active)
                 (replace-region (concat (pen-selected-text) result)))
                (,completion
-                (etv result))
-               ((or ,(not filter)
-                    (>= (prefix-numeric-value current-prefix-arg) 4)
-                    (not mark-active))
                 (etv result))
                (t
                 (replace-region result)))
