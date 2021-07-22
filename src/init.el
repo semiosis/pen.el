@@ -32,6 +32,7 @@
 (require 'counsel)
 (require 'yaml-mode)
 (require 'pp)
+(package-install 'yaml)
 (require 'yaml)
 (require 's)
 (require 'f)
