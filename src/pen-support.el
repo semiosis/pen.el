@@ -709,6 +709,6 @@ when s is a string, set the clipboard to s"
               (call-interactively 'cua-exchange-point-and-mark)))
 
         (if (not was_selected)
-            (deselect))))))
+            (deactivate-mark))))))
 
 (provide 'pen-support)
