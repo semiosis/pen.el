@@ -1,0 +1,2 @@
+- prompt functions are memoized to disk
+  - to update the memoization, prefix the command with =H-u=
