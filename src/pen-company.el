@@ -9,6 +9,10 @@
 
 (defun pen-company-filetype (command &optional arg &rest ignored)
   (interactive (list 'is-interactive))
+
+  (if (not company-mode)
+      (company-mode 1))
+
   (cl-case command
     (is-interactive (company-begin-backend 'pen-company-filetype))
     (prefix (pen-company-filetype--prefix))
