@@ -23,15 +23,15 @@
                   (kill-buffer r)
                   ret)))))))
 
-(defun my-ht-cache-delete (name)
+(defun pen-ht-cache-delete (name)
   (f-delete (pen-ht-cache-slug-fp name) t))
 
-(defun make-or-load-hash-table (name args)
+(defun pen-make-or-load-hash-table (name args)
   (progn
     (or (pen-ht-cache name)
         (apply 'make-hash-table args))))
 
-(defun memoize--wrap (func timeout)
+(defun pen-memoize--wrap (func timeout)
   "Return the memoized version of FUNC.
 TIMEOUT specifies how long the values last from last access. A
 nil timeout will cause the values to never expire, which will
@@ -45,8 +45,8 @@ care."
          (funcslug (slugify (s-join "-" (pen-str2list funcslugdata))))
          (tablename (concat "table-" funcslug))
          (timeoutsname (concat "timeouts-" funcslug))
-         (table (make-or-load-hash-table tablename '(:test equal)))
-         (timeouts (make-or-load-hash-table timeoutsname '(:test equal))))
+         (table (pen-make-or-load-hash-table tablename '(:test equal)))
+         (timeouts (pen-make-or-load-hash-table timeoutsname '(:test equal))))
     (eval
      `(lambda (&rest args)
         (let ((value (gethash args ,table)))
@@ -81,14 +81,5 @@ care."
                                         ;; It would probably be better to alert and ignore
                                         (try (remhash args ,table)
                                              (message ,(concat "timer for memoized " funcslug " failed"))))) ,timeouts)))))))))
-
-(defun ignore-errors-around-advice (proc &rest args)
-  (ignore-errors
-    (let ((res (apply proc args)))
-      res)))
-
-;; This would break emacs
-;; (memoize-restore 'ignore-errors-around-advice)
-;; (memoize 'ignore-errors-around-advice)
 
 (provide 'pen-memoize)
