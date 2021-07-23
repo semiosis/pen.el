@@ -1,0 +1,3 @@
+* Licences for software used in this project
+** jq
+http://www.unicode.org/copyright.html#License
