@@ -1,6 +1,6 @@
 (require 'pen-yaml)
 
-;; TODO Create data for fine-tuning.
+;; TODO Create data for fine-tuning. This is just generating training examples.
 ;; Recommend having at least a couple hundred examples. In general,
 ;; we've found that each doubling of the dataset size leads to a linear increase in model quality.
 
