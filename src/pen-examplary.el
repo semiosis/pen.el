@@ -1,5 +1,9 @@
 (require 'pen-yaml)
 
+;; TODO Create data for fine-tuning.
+;; Recommend having at least a couple hundred examples. In general,
+;; we've found that each doubling of the dataset size leads to a linear increase in model quality.
+
 ;; TODO
 ;; - Resort to =yq= to generate =yaml= since nothing exists yet for =yamlmod=
 
