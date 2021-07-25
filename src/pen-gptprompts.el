@@ -25,6 +25,8 @@
 
 (defun pen-gptprompts-list-prompts ()
   ;; url-found-p
+  ;; TODO Add pagination
+  ;; https://gptprompts.org/prompts?page=1&format=json
   (ecurl "https://gptprompts.org/prompts?format=json"))
 
 (defun pen-json-test ()
