@@ -1,5 +1,7 @@
 (require 'pen-yaml)
 
+;; xl can be the prefix for examplary
+
 ;; TODO Create data for fine-tuning. This is just generating training examples.
 ;; Recommend having at least a couple hundred examples. In general,
 ;; we've found that each doubling of the dataset size leads to a linear increase in model quality.
@@ -7,7 +9,7 @@
 ;; TODO
 ;; - Resort to =yq= to generate =yaml= since nothing exists yet for =yamlmod=
 
-;; defprompt should generate a yaml file
+;; xl-defprompt should generate a yaml file
 ;; The entire YAML file.
 
 ;; n-generate:
@@ -31,8 +33,8 @@
 
 ;; (pen-unonelineify (pen-onelineify "hello\nshane"))
 
-(defmacro defprompt (args &rest data)
-  "defprompt
+(defmacro xl-defprompt (args &rest data)
+  "xl-defprompt
 This macro generates a yaml and returns its prompt function.
 
 If args has an arity of 1, it is a generation
@@ -166,11 +168,11 @@ The last element in the list is the output/return value"
   ;; with minimal inputs
   ;; i think i can do this by encoding all the design patterns into examplary
   ;; and inferring fields that arent present
-  (defprompt ("short lines of code" regex) :filter "grex")
+ (xl-defprompt ("short lines of code" regex) :filter "grex")
 
   ;; Convert lines to regex
   ;; This is a macro so no need to escape things, yet
-  (defprompt ("lines of code" regex)
+  (xl-defprompt ("lines of code" regex)
     ;; :task "Convert lines to regex"
     ;; Generate input with this
     ;; :gen "examplary-edit-generator shane"
