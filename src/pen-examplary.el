@@ -33,6 +33,12 @@
 
 ;; (pen-unonelineify (pen-onelineify "hello\nshane"))
 
+(defvar pen-language-models '())
+
+(defmacro defprompt (language-model-id)
+  ""
+  `(progn ,@body))
+
 (defmacro xl-defprompt (args &rest data)
   "xl-defprompt
 This macro generates a yaml and returns its prompt function.
