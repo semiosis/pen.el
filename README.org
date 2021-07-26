@@ -60,6 +60,17 @@ It's completely free, libre and open-source.
     - All is required is to cache the results of prompt functions
     - In total, prompts are p2p and the cached generations are also p2p. This creates a stable imaginary programming environment
 
+** Quick example of a prompt function
+The =car= is used because there are multiple
+results in a list =no-select-result= means
+there is no implicit interactive fuzzy
+selection. If you leave it out it will ask you
+to select one of the results.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (message (car (pf-asktutor "emacs" "key bindings" "How do I quit?" :no-select-result t)))
+#+END_SRC
+
 ** Goals
 - Peer-to-peer sharing of prompts
   - https://github.com/semiosis/prompts/
