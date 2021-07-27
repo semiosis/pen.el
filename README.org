@@ -83,25 +83,33 @@ rubiks cube.
 
 Here is an example of asking about VSCode.
 
-#+BEGIN_SRC emacs-lisp -n :async :results verbatim raw
-  (list2str (pf-asktutor "vscode" "packages" "What are some useful packages?" :no-select-result t))
-#+END_SRC
-
 Keep in mind, with EleutherAI GPT models, they
 can be run offline and in private.
 
-#+RESULTS:
-"Here are some useful packages.
-You can install them with the \"ext install\" command.
-I have heard excellent things about vscode-tools. It is a set of extremely useful functions to aid with things like debugging, publishing, and git integration.
-The package is maintained by Albert Zeyer.
-I have also heard great things about vscode-icons. This package adds all of the icons you have been missing throughout the editor.
-I have heard that this package can greatly improve your performance with large files.
-Here is a list of the most popular packages developed by the Code Packages community.
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim raw
+  (list2str (pen-long-complete (pf-asktutor "vscode" "packages" "What are some useful packages?" :no-select-result t)))
+#+END_SRC
 
-The best way to learn about a package is to try it in action, so I recommend installing it and trying it out!
-Have a look at the vscode marketplace or search it for the package name to get started.
-Here are some useful packages:
+#+RESULTS:
+"You may find useful the following packages:
+snippets-extension,
+vscode-icons,
+vscode-icons-mono,
+vscode-icons-monochrome,
+json-schema-formatter,
+vscode-icons-circles,
+vscode-icons-circles-small,
+vscode-icons-flaticon,
+vscode-icons-contrib,
+vscode-icons-contrib-monochrome,
+vscode-logos,
+vscode-icons-sketch,
+vscode-icons-pill,
+vscode-icons-punchcard-3d,
+vscode-icons-punchcard,
+vscode-icons-punchcard-platinum,
+vscode-icons-vscode,
+vscode-icons-vsc
 "
 
 ** Goals
