@@ -112,6 +112,8 @@ vscode-icons-vscode,
 vscode-icons-vsc
 "
 
+=pen-long-complete= overrides the =stop-sequences= and =max-tokens= for any prompt function.
+
 ** Goals
 - Peer-to-peer sharing of prompts
   - https://github.com/semiosis/prompts/
