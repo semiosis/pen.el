@@ -15,7 +15,7 @@
 - Features
   - loom for emacs
     - stream into emacs a tree of tokens from OpenAI
-l     - collect logprobs as well as words
+      - collect logprobs as well as words
     - having loom features will 
   - Select error messages and ask what they mean
   - Correct spelling and grammar in conversations over =erc= and other =emacs= chat modes.
