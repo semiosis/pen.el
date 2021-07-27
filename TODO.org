@@ -18,6 +18,7 @@
       - collect logprobs as well as words
     - having loom features will enable real time streaming of tokens into emacs
       - And enable downstream search
+  - integration with 3rd party loom-like OpenAI API clients
   - Select error messages and ask what they mean
   - Correct spelling and grammar in conversations over =erc= and other =emacs= chat modes.
   - Encode where the text came from into the emacs buffer using emacs text properties
