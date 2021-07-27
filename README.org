@@ -87,6 +87,9 @@ Here is an example of asking about VSCode.
   (list2str (pf-asktutor "vscode" "packages" "What are some useful packages?" :no-select-result t))
 #+END_SRC
 
+Keep in mind, with EleutherAI GPT models, they
+can be run offline and in private.
+
 #+RESULTS:
 "Here are some useful packages.
 You can install them with the \"ext install\" command.
