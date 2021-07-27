@@ -60,6 +60,8 @@ It's completely free, libre and open-source.
     - All is required is to cache the results of prompt functions
     - In total, prompts are p2p and the cached generations are also p2p. This creates a stable imaginary programming environment
 
++ Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
+
 ** Quick example of using a prompt function
 The =car= is used because there are multiple
 results in a list =no-select-result= means
