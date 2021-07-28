@@ -176,11 +176,6 @@
                      (pen-sn pp v)
                    v))))
 
-             ;; template the parameters into the prompt
-             (i 1)
-             (final-prompt
-              (pen-expand-template final-prompt vals))
-
              (final-prompt (if ,repeater
                                (if (< 0 (length vals))
                                    (concat (pen-awk1 final-prompt)
@@ -188,6 +183,11 @@
                                  (concat (pen-awk1 final-prompt)
                                          ,repeater))
                              final-prompt))
+
+             ;; template the parameters into the prompt
+             (i 1)
+             (final-prompt
+              (pen-expand-template final-prompt vals))
 
              (final-prompt (if ,prompt-filter
                                (sor (pen-snc ,prompt-filter final-prompt)
