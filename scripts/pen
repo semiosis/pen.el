@@ -128,6 +128,10 @@ if ! test "$vanilla" = "y"; then
 fi
 
 if test "$use_pen_config" = "y"; then
+    if ! test -d "$HOME/.pen" && yn "Create ~/.pen on host (store API keys and generations)?"; then
+        mkdir -p "$HOME/.pen"
+    fi
+
     test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
     : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
 
