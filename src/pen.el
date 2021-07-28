@@ -190,7 +190,7 @@
              (final-prompt (string-replace "<:pp>" "" final-prompt))
 
              (final-prompt (if ,repeater
-                               (concat (awk1 final-prompt) ,repeater)
+                               (concat (pen-awk1 final-prompt) ,repeater)
                              final-prompt))
 
              (final-prompt (if ,prompt-filter
