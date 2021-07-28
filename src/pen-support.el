@@ -680,13 +680,17 @@ when s is a string, set the clipboard to s"
     (message "Disabled lsp for prompts"))
    ((derived-mode-p 'completer-description-mode)
     (message "Disabled lsp for completers"))
-   (t (call-interactively 'lsp))))
+   (t
+    (call-interactively 'lsp))))
+
+(defun pen-awk1 (s)
+  (pen-snc "awk 1" s))
 
 (defun pen-onelineify (s)
-  (snc "pen-s onelineify" s))
+  (pen-snc "pen-s onelineify" s))
 
 (defun pen-unonelineify (s)
-  (snc "pen-s unonelineify" s))
+  (pen-snc "pen-s unonelineify" s))
 
 (defun replace-region (s)
   "Apply the function to the selected region. The function must accept a string and return a string."

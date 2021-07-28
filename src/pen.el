@@ -135,7 +135,7 @@
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
 
-             (final-max-tokens
+             (max-tokens
               (str (if (variable-p 'max-tokens)
                        (eval 'max-tokens)
                      ,max-tokens)))
@@ -188,6 +188,10 @@
                                  (string-bytes final-prompt)))
 
              (final-prompt (string-replace "<:pp>" "" final-prompt))
+
+             (final-prompt (if ,repeater
+                               (concat (awk1 final-prompt) ,repeater)
+                             final-prompt))
 
              (final-prompt (if ,prompt-filter
                                (sor (pen-snc ,prompt-filter final-prompt)
@@ -333,6 +337,7 @@ Function names are prefixed with pf- for easy searching"
 
                      ;; internals
                      (prompt (ht-get yaml "prompt"))
+                     (repeater (ht-get yaml "repeater"))
                      (prefer-external (pen-yaml-test yaml "prefer-external"))
                      (conversation-mode (pen-yaml-test yaml "conversation-mode"))
                      (filter (pen-yaml-test yaml "filter"))
