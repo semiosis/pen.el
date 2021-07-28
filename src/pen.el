@@ -192,7 +192,7 @@
              (final-prompt (if ,repeater
                                (if (< 0 (length vals))
                                    (concat (pen-awk1 final-prompt)
-                                           (string-replace "{}" (str (car vals)) ,repeater))
+                                           (string-replace "{}" (str (car (last vals))) ,repeater))
                                  (concat (pen-awk1 final-prompt)
                                          ,repeater))
                              final-prompt))
