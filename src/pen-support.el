@@ -684,7 +684,7 @@ when s is a string, set the clipboard to s"
     (call-interactively 'lsp))))
 
 (defun pen-awk1 (s)
-  (pen-snc "awk 1" s))
+  (pen-sn "awk 1" s))
 
 (defun pen-onelineify (s)
   (pen-snc "pen-s onelineify" s))
