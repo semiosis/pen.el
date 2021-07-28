@@ -135,7 +135,7 @@
       (interactive ,(cons 'list iargs))
       (let* ((final-prompt ,prompt)
 
-             (max-tokens
+             (final-max-tokens
               (str (if (variable-p 'max-tokens)
                        (eval 'max-tokens)
                      ,max-tokens)))
