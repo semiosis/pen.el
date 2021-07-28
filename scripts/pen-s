@@ -153,5 +153,15 @@ case "$f" in
     }
     ;;
 
+    onelineify) {
+        sed -z 's/\n/\\n/g'
+    }
+    ;;
+
+    unonelineify) {
+        sed -z 's/\\n/\n/g'
+    }
+    ;;
+
     *)
 esac
