@@ -683,10 +683,10 @@ when s is a string, set the clipboard to s"
    (t (call-interactively 'lsp))))
 
 (defun pen-onelineify (s)
-  (snc "s onelineify" s))
+  (snc "pen-s onelineify" s))
 
 (defun pen-unonelineify (s)
-  (snc "s unonelineify" s))
+  (snc "pen-s unonelineify" s))
 
 (defun replace-region (s)
   "Apply the function to the selected region. The function must accept a string and return a string."
