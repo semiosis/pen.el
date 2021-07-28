@@ -181,14 +181,6 @@
              (final-prompt
               (pen-expand-template final-prompt vals))
 
-             ;; This gives string position, not byte position
-             ;; (string-search "s" "ガムツリshane")
-             (prompt-end-pos (or (byte-string-search "<:pp>" ,prompt)
-                                 ;; (length final-prompt)
-                                 (string-bytes final-prompt)))
-
-             (final-prompt (string-replace "<:pp>" "" final-prompt))
-
              (final-prompt (if ,repeater
                                (if (< 0 (length vals))
                                    (concat (pen-awk1 final-prompt)
@@ -201,6 +193,14 @@
                                (sor (pen-snc ,prompt-filter final-prompt)
                                     (concat "prompt-filter " ,prompt-filter " failed."))
                              final-prompt))
+
+             ;; This gives string position, not byte position
+             ;; (string-search "s" "ガムツリshane")
+             (prompt-end-pos (or (byte-string-search "<:pp>" ,prompt)
+                                 ;; (length final-prompt)
+                                 (string-bytes final-prompt)))
+
+             (final-prompt (string-replace "<:pp>" "" final-prompt))
 
              ;; check for cache update
              (pen-sh-update
