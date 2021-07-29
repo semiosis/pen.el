@@ -130,6 +130,20 @@
 ;;  postprocessor prompt-filter n-completions)
 ;; (let ((max-tokens 1)) (funcall (cl-defun yo () (etv max-tokens))))
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
+
+(defun pen-test-closure ()
+  (etv (if (variable-p 'n-collate)
+           (eval 'n-collate)
+         5)))
+
+;; It works in code
+(defun pen-test-closure2 ()
+  (let ((n-collate 1)) (pen-test-closure)))
+
+;; But not in the M-: minibuffer
+(comment
+ (let ((n-collate 1)) (pen-test-closure)))
+
 (defun define-prompt-function ()
   (eval
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result))
