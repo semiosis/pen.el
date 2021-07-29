@@ -134,14 +134,14 @@
       ,doc
       (interactive ,(cons 'list iargs))
       (let* ((final-n-collate
-              (str (if (variable-p 'n-collate)
-                       (eval 'n-collate)
-                     ,n-collate)))
+              (if (variable-p 'n-collate)
+                  (eval 'n-collate)
+                ,n-collate))
 
              (final-n-completions
-              (str (if (variable-p 'n-completions)
-                       (eval 'n-completions)
-                     ,n-completions)))
+              (if (variable-p 'n-completions)
+                  (eval 'n-completions)
+                ,n-completions))
 
              (final-prompt ,prompt)
              (final-max-tokens
