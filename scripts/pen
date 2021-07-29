@@ -33,7 +33,7 @@ case "$sn" in
 
     *) {
         CMD="$(cmd-nice "$@")"
-        set -- -e "($sn $CMD :no-select-result t)"
+        set -- -e "(car ($sn $CMD :no-select-result t))"
         HAS_TTY=n
         batch=y
         docker_cmd=exec
