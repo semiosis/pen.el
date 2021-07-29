@@ -1,5 +1,19 @@
 #!/bin/bash
 
+cmd() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+    done | sed 's/ $//'
+}
+
+cmd-nice() {
+    for var in "$@"
+    do
+        printf '"%s" ' "$(printf %s "$var" | sed 's/"/\\"/g')";
+    done | sed 's/ $//'
+}
+
 sn="$(basename "$0")"
 
 if test "$sn" = pen && test "$#" -eq 0 && test -n "$(docker ps --filter "name=pen" | sed 1d)"; then
@@ -17,15 +31,16 @@ case "$sn" in
     }
     ;;
 
-    *)
+    *) {
+        CMD="$(cmd-nice "$@")"
+        set -- -e "($sn $CMD :no-select-result t)"
+        HAS_TTY=n
+        batch=y
+        docker_cmd=exec
+        remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
+    }
+    ;;
 esac
-
-cmd() {
-    for var in "$@"
-    do
-        printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
-    done | sed 's/ $//'
-}
 
 docker_cmd=run
 remote_cmd=./run.sh
