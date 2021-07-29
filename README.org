@@ -127,7 +127,7 @@ vscode-icons-vsc
 
 *** Then run a prompt function
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  pen -e '(progn (car (pf-list-of 5 "tennis players" :no-select-result t)))'
+  pen -e '(car (pf-list-of 5 "tennis players" :no-select-result t))'
 #+END_SRC
 
 #+RESULTS:
