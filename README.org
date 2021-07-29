@@ -119,6 +119,26 @@ vscode-icons-vsc
 
 =pen-long-complete= overrides the =stop-sequences= and =max-tokens= for any prompt function.
 
+** Running a prompt function from the host
+*** Firstly, start a server
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pen
+#+END_SRC
+
+*** Then run a prompt function
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pen -e '(progn (car (pf-list-of 5 "tennis players" :no-select-result t)))'
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Elena Dementieva
+Roger Federer
+Marat Safin
+Anastasia Myskina
+Andre Agassi
+#+end_src
+
 ** Goals
 - Peer-to-peer sharing of prompts
   - https://github.com/semiosis/prompts/
