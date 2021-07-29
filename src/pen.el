@@ -602,13 +602,13 @@ Function names are prefixed with pf- for easy searching"
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
 May use to generate code from comments."
-  (interactive (list (pen-preceding-text) t))
+  (interactive (list (pen-preceding-text) nil))
   (let ((response
          (pen-long-complete
           (pf-generic-file-type-completion (detect-language) preceding-text))))
     (if tv
         (etv response)
-      response)))
+      (insert response))))
 
 (require 'pen-core)
 (require 'pen-openai)
