@@ -509,7 +509,7 @@ Function names are prefixed with pf- for easy searching"
   (let* ((preceding-text (pen-preceding-text))
          (response
           (if (>= (prefix-numeric-value current-prefix-arg) 4)
-              (pen-long-complete
+              (pen-long-complete-nongreedy
                (-->
                    preceding-text
                  (pf-generic-file-type-completion (detect-language) it :no-select-result t)))
