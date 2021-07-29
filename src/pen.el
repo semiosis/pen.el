@@ -605,7 +605,8 @@ May use to generate code from comments."
   (interactive (list (pen-preceding-text) nil))
   (let ((response
          (pen-long-complete
-          (if (derived-mode-p 'prog-mode)
+          (if (and (derived-mode-p 'prog-mode)
+                   (not (string-equal (buffer-name) "*scratch*")))
               (pf-generic-file-type-completion (detect-language) preceding-text)
             (pf-generic-completion-50-tokens-max-hash preceding-text)))))
     (if tv
