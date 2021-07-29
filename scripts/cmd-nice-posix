@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+cmd-nice() {
+    for var in "$@"
+    do
+        printf '"%s" ' "$(printf %s "$var" | sed 's/"/\\"/g')";
+    done | sed 's/ $//'
+}
+
+cmd-nice "$@"
