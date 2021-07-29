@@ -14,4 +14,4 @@ CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
 # emacs -nw --debug-init
-emacsclient - a "" -t -e "$CMD"
+emacsclient -a "" -e "$CMD"
