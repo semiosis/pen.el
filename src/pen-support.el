@@ -716,6 +716,13 @@ when s is a string, set the clipboard to s"
         (if (not was_selected)
             (deactivate-mark))))))
 
+(defun write-to-file (stdin file_path)
+  ;; The ignore-errors is needed for babel for some reason
+  (ignore-errors (with-temp-buffer
+                   (insert stdin)
+                   (delete-file file_path)
+                   (write-file file_path))))
+
 (defmacro pen-eval-for-host (&rest body)
   `(let ((result (progn ,@body)))
      (if result
