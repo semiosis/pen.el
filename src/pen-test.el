@@ -20,6 +20,6 @@
               )
           (pf-asktutor "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t)))
 
- ;; When n-completions is set, it breaks
+ ;;  n-completions is set to 1, it breaks
  (eval `(let ((n-completions 1))
           (pf-asktutor "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))))

@@ -141,9 +141,9 @@
                 ,n-collate))
 
              (final-n-completions
-              (if (variable-p 'n-completions)
-                  (eval 'n-completions)
-                ,n-completions))
+              (str (if (variable-p 'n-completions)
+                       (eval 'n-completions)
+                     ,n-completions)))
 
              (final-prompt ,prompt)
 
