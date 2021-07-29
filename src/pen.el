@@ -538,36 +538,35 @@ Function names are prefixed with pf- for easy searching"
 ;;   (let ((alpha (or alpha 100)))
 ;;     (message (str alpha))))
 
-(defmacro pen-long-complete (&rest body)
-  "This wraps around a pen function calls to make them complete long"
-  `(let ((max-tokens 200)
-         (stop-sequence "##long complete##")
-         (stop-sequences '("##long complete##")))
+(defmacro single-generation (&rest body)
+  "This wraps around pen function calls to make them complete long"
+  `(let ((n-collate 1)
+         (n-completions 1))
      ,@body))
 
 (defmacro pen-long-complete (&rest body)
-  "This wraps around a pen function calls to make them complete long"
+  "This wraps around pen function calls to make them complete long"
   `(let ((max-tokens 200)
          (stop-sequence "##long complete##")
          (stop-sequences '("##long complete##")))
      ,@body))
 
 (defmacro pen-long-complete-nongreedy (&rest body)
-  "This wraps around a pen function calls to make them complete long"
+  "This wraps around pen function calls to make them complete long"
   `(let ((max-tokens 200)
          (stop-sequence (or stop-sequence "##long complete##"))
          (stop-sequences (or stop-sequences '("##long complete##"))))
      ,@body))
 
 (defmacro pen-line-complete (&rest body)
-  "This wraps around a pen function calls to make them complete line only"
+  "This wraps around pen function calls to make them complete line only"
   `(let ((max-tokens 100)
          (stop-sequence "\n")
          (stop-sequences '("\n")))
      ,@body))
 
 (defmacro pen-line-complete-nongreedy (&rest body)
-  "This wraps around a pen function calls to make them complete line only"
+  "This wraps around pen function calls to make them complete line only"
   `(let ((max-tokens 100)
          (stop-sequence (or stop-sequence "\n"))
          (stop-sequences (or stop-sequences '("\n"))))
