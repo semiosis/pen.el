@@ -555,7 +555,7 @@ Function names are prefixed with pf- for easy searching"
   `(eval
     `(let ((n-collate 1)
            (n-completions 1))
-       ,',@body)))
+       ',,@body)))
 
 ;; This wasn't sufficient. To make it work from the Host interop and from the minibuffer, I need eval
 (comment
