@@ -133,8 +133,17 @@
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result))
       ,doc
       (interactive ,(cons 'list iargs))
-      (let* ((final-prompt ,prompt)
+      (let* ((final-n-collate
+              (str (if (variable-p 'n-collate)
+                       (eval 'n-collate)
+                     ,n-collate)))
 
+             (final-n-completions
+              (str (if (variable-p 'n-completions)
+                       (eval 'n-completions)
+                     ,n-completions)))
+
+             (final-prompt ,prompt)
              (final-max-tokens
               (str (if (variable-p 'max-tokens)
                        (eval 'max-tokens)
@@ -228,7 +237,7 @@
                              ,stop-sequence))))
                    ("PEN_TOP_P" ,,top-p)
                    ("PEN_CACHE" ,,cache)
-                   ("PEN_N_COMPLETIONS" ,,n-completions)
+                   ("PEN_N_COMPLETIONS" ,final-n-completions)
                    ("PEN_END_POS" ,prompt-end-pos)))
                 " "
                 ;; Currently always updating
@@ -237,7 +246,7 @@
              ;; run the completion command and collect the result
              (resultsdirs
               (cl-loop
-               for i in (number-sequence 1 ,n-collate)
+               for i in (number-sequence 1 final-n-collate)
                collect
                (progn
                  (message (concat ,func-name " query " (int-to-string i) "..."))
