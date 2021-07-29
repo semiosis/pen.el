@@ -53,6 +53,9 @@ It's completely free, libre and open-source.
 - [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
 
 ** Special features
+- Client/server model
+  - Connect multiple clients to Pen.el
+  - Run prompt functions from the host.
 - Generations are store on the host in the =~/.pen/results= directory
 - Prompt functions are cached on the host in the =~/.pen/ht-cache= directory
   - This means that repeating the same commands / prompts inside =pen= will be instantaneous and persist between docker invocations
@@ -60,7 +63,7 @@ It's completely free, libre and open-source.
     - All is required is to cache the results of prompt functions
     - In total, prompts are p2p and the cached generations are also p2p. This creates a stable imaginary programming environment
 
-+ Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
+- Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
 
 ** Quick example of using a prompt function
 The =car= is used because there are multiple
