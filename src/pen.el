@@ -539,7 +539,7 @@ Function names are prefixed with pf- for easy searching"
 ;;     (message (str alpha))))
 
 (defmacro single-generation (&rest body)
-  "This wraps around pen function calls to make them complete long"
+  "This wraps around pen function calls to make them only create one generation"
   `(let ((n-collate 1)
          (n-completions 1))
      ,@body))
