@@ -21,6 +21,11 @@ if test "$sn" = pen && test "$#" -eq 0 && test -n "$(docker ps --filter "name=pe
 fi
 
 case "$sn" in
+    pen) {
+        :
+    }
+    ;;
+
     penc) {
         set -- -c "$@"
     }
