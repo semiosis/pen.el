@@ -2,10 +2,6 @@
 
 sn="$(basename "$0")"
 
-if test "$sn" = pen && test -n "$(docker ps --filter "name=pen" | sed 1d)"; then
-    sn=penc
-fi
-
 case "$sn" in
     penc) {
         set -- -c "$@"
@@ -19,6 +15,11 @@ case "$sn" in
 
     *)
 esac
+
+if test "$sn" = pen && test -n "$(docker ps --filter "name=pen" | sed 1d)"; then
+    sn=penc
+    set -- -c "$@"
+fi
 
 cmd() {
     for var in "$@"
