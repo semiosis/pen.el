@@ -513,7 +513,7 @@ Function names are prefixed with pf- for easy searching"
                (-->
                    preceding-text
                  (pf-generic-file-type-completion (detect-language) it :no-select-result t)))
-            (pen-line-complete
+            (pen-line-complete-nongreedy
              (-->
                  preceding-text
                (pf-generic-file-type-completion (detect-language) it :no-select-result t)))))
