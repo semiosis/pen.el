@@ -20,7 +20,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -e) {
         HAS_TTY=n
+        batch=y
         docker_cmd=exec
+        error_silent=y
         remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
         shift
     }
@@ -132,23 +134,27 @@ if ! test "$vanilla" = "y"; then
     # set -v
     # docker pull semiosis/pen.el:latest
 
-    if test -d "$PROMPTS_DIR"; then
-        yn "Pull prompts repo?" && (
-            cd "$PROMPTS_DIR"
-            git pull origin master
-        )
-    else
-        yn "Clone prompts repo here?" && (
-            git clone "http://github.com/semiosis/prompts"
-        )
+    if ! test "$batch" = "y"; then
+        if test -d "$PROMPTS_DIR"; then
+            yn "Pull prompts repo?" && (
+                cd "$PROMPTS_DIR"
+                git pull origin master
+            )
+        else
+            yn "Clone prompts repo here?" && (
+                git clone "http://github.com/semiosis/prompts"
+            )
+        fi
     fi
 
     test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
-    test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
-        cd "$PENEL_DIR"
-        git pull origin master
-    )
+    if ! test "$batch" = "y"; then
+        test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
+            cd "$PENEL_DIR"
+            git pull origin master
+        )
+    fi
 
     if test -d "$PROMPTS_DIR"; then
         PROMPTS_DIR="$(realpath "$PROMPTS_DIR")"
@@ -157,16 +163,25 @@ if ! test "$vanilla" = "y"; then
 fi
 
 if test "$use_pen_config" = "y"; then
-    if ! test -d "$HOME/.pen" && yn "Create ~/.pen on host (store API keys and generations)?"; then
-        mkdir -p "$HOME/.pen"
+    if ! test "$batch" = "y"; then
+        if ! test -d "$HOME/.pen" && yn "Create ~/.pen on host (store API keys and generations)?"; then
+            mkdir -p "$HOME/.pen"
+        fi
     fi
 
     test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
-    : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
+
+    if ! test "$batch" = "y"; then
+        : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
+    fi
 
     if test -d "$PEN_CONFIG_DIR"; then
         PEN_CONFIG_DIR="$(realpath "$PEN_CONFIG_DIR")"
     fi
+fi
+
+if test "$error_silent" = "y"; then
+    exec 2>/dev/null
 fi
 
 case "$docker_cmd" in
