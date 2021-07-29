@@ -530,6 +530,11 @@ Function names are prefixed with pf- for easy searching"
       (call-interactively 'pen-company-filetype)
     (call-interactively 'completion-at-point)))
 
+;; This results in 50
+;; (let ((alpha 50))
+;;   (let ((alpha (or alpha 100)))
+;;     (message (str alpha))))
+
 (defmacro pen-long-complete (&rest body)
   "This wraps around a pen function calls to make them complete long"
   `(let ((max-tokens 200)
