@@ -1,5 +1,12 @@
 #!/bin/bash
 
+cmd() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+    done | sed 's/ $//'
+}
+
 docker_cmd=run
 remote_cmd=./run.sh
 
@@ -22,7 +29,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         HAS_TTY=n
         batch=y
         docker_cmd=exec
-        error_silent=y
         remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
         shift
     }
@@ -180,10 +186,6 @@ if test "$use_pen_config" = "y"; then
     fi
 fi
 
-if test "$error_silent" = "y"; then
-    exec 2>/dev/null
-fi
-
 case "$docker_cmd" in
     run) {
 IFS= read -r -d '' shcode <<HEREDOC
@@ -201,11 +203,12 @@ HEREDOC
     ;;
 
     exec) {
+        evalcommand="$(cmd "$(cmd eval "$(cmd "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
     # --user "$(id -u):$(id -g)"
     docker "$docker_cmd" \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
-        pen "$remote_cmd" "$@"
+        pen bash -c $evalcommand
 HEREDOC
     }
     ;;
