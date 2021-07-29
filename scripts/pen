@@ -3,6 +3,12 @@
 docker_cmd=run
 remote_cmd=./run.sh
 
+is_tty() { [ -t 1 ]; }
+
+if is_tty; then
+    HAS_TTY=y
+fi
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -c) {
@@ -13,6 +19,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -e) {
+        HAS_TTY=n
         docker_cmd=exec
         remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
         shift
@@ -173,7 +180,8 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$PROMPTS_DIR" && printf -- "%s " -v "$PROMPTS_DIR:/root/.emacs.d/host/prompts" ) \
         $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
         $(test -n "$OPENAI_API_EL_DIR" && printf -- "%s " -v "$OPENAI_API_EL_DIR:/root/.emacs.d/host/openai-api.el" ) \
-        -ti --entrypoint= --name=pen semiosis/pen.el:latest "$remote_cmd" "$@"
+        $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
+        --entrypoint= --name=pen semiosis/pen.el:latest "$remote_cmd" "$@"
 HEREDOC
     }
     ;;
@@ -182,7 +190,8 @@ HEREDOC
 IFS= read -r -d '' shcode <<HEREDOC
     # --user "$(id -u):$(id -g)"
     docker "$docker_cmd" \
-        -ti pen "$remote_cmd" "$@"
+        $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
+        pen "$remote_cmd" "$@"
 HEREDOC
     }
     ;;
