@@ -31,7 +31,9 @@ openai_results_split() {
 
     cd "$td"
 
-    if cat "$completions_fp" | grep -q -P '^===== Completion [0-9]+ =====$'; then
+    if test "$PEN_N_COMPLETIONS" = 1; then
+        tail -c "+$(( PEN_END_POS + 1 ))" "$completions_fp" > response.txt
+    elif cat "$completions_fp" | grep -q -P '^===== Completion [0-9]+ =====$'; then
         csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}' &>/dev/null
         for fp in *; do
             sed -i 1d "$fp"
