@@ -194,7 +194,7 @@ Takes into account the current file name."
 
 (defun pen-list2str (&rest l)
   "join the string representation of elements of a given list into a single string with newline delimiters"
-  (if (equalp 1 (length l))
+  (if (cl-equalp 1 (length l))
       (setq l (car l)))
   (mapconcat 'identity (mapcar 'str l) "\n"))
 
