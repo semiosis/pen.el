@@ -26,7 +26,21 @@ stdin_exists() {
 
 case "$sn" in
     pen) {
-        :
+        if printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
+            pfname="$1"
+            shift
+
+            if stdin_exists; then
+                set -- "$(cat)" "$@"
+            fi
+
+            CMD="$(cmd-nice "$@")"
+            set -- -e "(pen-list2str ($sn $CMD :no-select-result t))"
+            HAS_TTY=n
+            batch=y
+            docker_cmd=exec
+            remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
+        fi
     }
     ;;
 
