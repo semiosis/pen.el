@@ -144,6 +144,7 @@
                 ,n-completions))
 
              (final-prompt ,prompt)
+
              (final-max-tokens
               (str (if (variable-p 'max-tokens)
                        (eval 'max-tokens)
