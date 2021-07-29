@@ -552,37 +552,51 @@ Function names are prefixed with pf- for easy searching"
 
 (defmacro pen-single-generation (&rest body)
   "This wraps around pen function calls to make them only create one generation"
-  `(let ((n-collate 1)
-         (n-completions 1))
-     ,@body))
+  `(eval
+    `(let ((n-collate 1)
+           (n-completions 1))
+       ,',@body)))
+
+;; This wasn't sufficient. To make it work from the Host interop and from the minibuffer, I need eval
+(comment
+ (defmacro pen-long-complete (&rest body)
+   "This wraps around pen function calls to make them complete long"
+   `(let ((max-tokens 200)
+          (stop-sequence "##long complete##")
+          (stop-sequences '("##long complete##")))
+      ,@body)))
 
 (defmacro pen-long-complete (&rest body)
   "This wraps around pen function calls to make them complete long"
-  `(let ((max-tokens 200)
-         (stop-sequence "##long complete##")
-         (stop-sequences '("##long complete##")))
-     ,@body))
+  `(eval
+    `(let ((max-tokens 200)
+           (stop-sequence "##long complete##")
+           (stop-sequences '("##long complete##")))
+       ,',@body)))
 
 (defmacro pen-long-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete long"
-  `(let ((max-tokens 200)
-         (stop-sequence (or stop-sequence "##long complete##"))
-         (stop-sequences (or stop-sequences '("##long complete##"))))
-     ,@body))
+  `(eval
+    `(let ((max-tokens 200)
+           (stop-sequence (or stop-sequence "##long complete##"))
+           (stop-sequences (or stop-sequences '("##long complete##"))))
+       ,',@body)))
 
 (defmacro pen-line-complete (&rest body)
   "This wraps around pen function calls to make them complete line only"
-  `(let ((max-tokens 100)
-         (stop-sequence "\n")
-         (stop-sequences '("\n")))
-     ,@body))
+  `(eval
+    (let ((max-tokens 100)
+          (stop-sequence "\n")
+          (stop-sequences '("\n")))
+      ,',@body)))
 
 (defmacro pen-line-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete line only"
-  `(let ((max-tokens 100)
-         (stop-sequence (or stop-sequence "\n"))
-         (stop-sequences (or stop-sequences '("\n"))))
-     ,@body))
+  `(eval
+    (let ((max-tokens 100)
+          (stop-sequence (or stop-sequence "\n"))
+          (stop-sequences (or stop-sequences '("\n"))))
+      ,',@body)))
 
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
