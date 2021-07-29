@@ -20,6 +20,14 @@ if test "$sn" = pen && test "$#" -eq 0 && test -n "$(docker ps --filter "name=pe
     sn=penc
 fi
 
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    set -- "$(cat)" "$@"
+fi
+
 case "$sn" in
     pen) {
         :
