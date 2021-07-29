@@ -545,6 +545,13 @@ Function names are prefixed with pf- for easy searching"
          (stop-sequences '("##long complete##")))
      ,@body))
 
+(defmacro pen-long-complete (&rest body)
+  "This wraps around a pen function calls to make them complete long"
+  `(let ((max-tokens 200)
+         (stop-sequence "##long complete##")
+         (stop-sequences '("##long complete##")))
+     ,@body))
+
 (defmacro pen-long-complete-nongreedy (&rest body)
   "This wraps around a pen function calls to make them complete long"
   `(let ((max-tokens 200)
