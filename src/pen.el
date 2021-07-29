@@ -605,7 +605,9 @@ May use to generate code from comments."
   (interactive (list (pen-preceding-text) nil))
   (let ((response
          (pen-long-complete
-          (pf-generic-file-type-completion (detect-language) preceding-text))))
+          (if (major-mode-p 'prog-mode)
+              (pf-generic-file-type-completion (detect-language) preceding-text)
+            (pf-generic-completion-50-tokens-max-hash preceding-text)))))
     (if tv
         (etv response)
       (insert response))))
