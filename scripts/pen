@@ -19,6 +19,7 @@ fi
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -c) {
+        batch=y
         docker_cmd=exec
         remote_cmd=./.emacs.d/pen.el/scripts/newframe.sh
         shift
