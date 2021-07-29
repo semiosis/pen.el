@@ -1,5 +1,21 @@
 #!/bin/bash
 
+sn="$(basename "$0")"
+
+case "$sn" in
+    penc) {
+        set -- -c "$@"
+    }
+    ;;
+
+    pene) {
+        set -- -e "$@"
+    }
+    ;;
+
+    *)
+esac
+
 cmd() {
     for var in "$@"
     do
