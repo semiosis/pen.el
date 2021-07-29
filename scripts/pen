@@ -35,7 +35,7 @@ case "$sn" in
             fi
 
             CMD="$(cmd-nice "$@")"
-            set -- -e "(pen-list2str ($sn $CMD :no-select-result t))"
+            set -- -e "(pen-list2str ($pfname $CMD :no-select-result t))"
             HAS_TTY=n
             batch=y
             docker_cmd=exec
