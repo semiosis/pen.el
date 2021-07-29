@@ -125,7 +125,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("pen: transpile" :call pf-transpile-from-programming-language-x-to-y)
         ("pen (prose)"
          ("pick up line" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
-         ("translate" :call pf-translate-from-world-language-x-to-y))
+         ("translate" :call pf-translate-from-world-language-x-to-y)
+         ("tldr" :call pf-tldr-summarization)
+         ("eli5" :call pf-eli5-explain-like-i-m-five)
+         ("vexate" :call pf-complicated-explanation-of-how-to-x))
         ("pen (code)"
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y))))
