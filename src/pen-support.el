@@ -716,4 +716,11 @@ when s is a string, set the clipboard to s"
         (if (not was_selected)
             (deactivate-mark))))))
 
+(defmacro pen-eval-for-host (&rest body)
+  `(let ((result (progn ,@body)))
+     (if result
+         (write-to-file (str result) "/tmp/eval-output.txt")
+       (write-to-file "" "/tmp/eval-output.txt"))
+     nil))
+
 (provide 'pen-support)
