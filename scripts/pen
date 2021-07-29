@@ -35,6 +35,7 @@ case "$sn" in
             fi
 
             CMD="$(cmd-nice "$@")"
+            # set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t)))"
             set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t)))"
             HAS_TTY=n
             batch=y
