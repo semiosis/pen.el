@@ -558,7 +558,6 @@ Function names are prefixed with pf- for easy searching"
        ,',@body)))
 
 ;; This wasn't sufficient. To make it work from the Host interop and from the minibuffer, I need eval
-;; Other strange behaviour is happening when I use eval 
 (comment
  (defmacro pen-long-complete (&rest body)
    "This wraps around pen function calls to make them complete long"
