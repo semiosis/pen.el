@@ -128,6 +128,7 @@
 ;;  filter completion lm-command stop-sequences stop-sequence max-tokens
 ;;  temperature top-p engine no-trim-start no-trim-end preprocessors
 ;;  postprocessor prompt-filter n-completions)
+;; (let ((max-tokens 1)) (funcall (cl-defun yo () (etv max-tokens))))
 (defun define-prompt-function ()
   (eval
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result))
