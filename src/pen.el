@@ -440,9 +440,12 @@ Function names are prefixed with pf- for easy searching"
                                ;; The first argument may be captured through selection
                                `(if mark-active
                                     (pen-selected-text)
-                                  (if ,(> (length (s-lines example)) 1)
-                                      (etv ,example)
-                                    (read-string-hist ,(concat v ": ") ,example)))
+                                  (read-string-hist ,(concat v ": ") ,example)
+                                  ;; TODO Find a way to do multiline entry
+                                  ;; (if ,(> (length (s-lines example)) 1)
+                                  ;;     (multiline-reader ,example)
+                                  ;;   (read-string-hist ,(concat v ": ") ,example))
+                                  )
                              `(if ,(> (length (s-lines example)) 1)
                                   (etv ,example)
                                 (if ,d
