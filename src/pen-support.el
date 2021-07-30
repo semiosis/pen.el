@@ -740,12 +740,13 @@ when s is a string, set the clipboard to s"
                 (pen-selected-text)
                 :no-select-result t)))
 
-    (if (variable-p))
-    (fz
-     langs
-     nil
-     nil
-     "Pen From language: "
-     nil nil)))
+    (if (pen-var-value-maybe 'pen-single-generation-b)
+        (car langs)
+        (fz
+         langs
+         nil
+         nil
+         "Pen From language: "
+         nil nil))))
 
 (provide 'pen-support)
