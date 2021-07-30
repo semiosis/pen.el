@@ -57,6 +57,16 @@ case "$sn" in
     }
     ;;
 
+    penl) {
+        set -- -e '(pen-list2str pen-prompt-functions)'
+    }
+    ;;
+
+    penz) {
+        set -- -e '(pen-list2str pen-prompt-functions)' | fzf
+    }
+    ;;
+
     *) {
         if stdin_exists; then
             set -- "$(cat)" "$@"
