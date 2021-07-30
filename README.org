@@ -57,6 +57,9 @@ It's completely free, libre and open-source.
 
 [[./the_pen_of_imagination.png]]
 
+** Thesis
+https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
+
 ** Tutorials
 - [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
 
