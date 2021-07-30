@@ -42,7 +42,15 @@ It's completely free, libre and open-source.
   git clone "https://github.com/semiosis/prompts"
   mkdir ~/.pen
   echo "sk-<openai key here>" > ~/.pen/openai_api_key
-  ./pen.el/scripts/pen
+
+  # Add the scripts to the PATH
+  echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
+
+  # Source your .profile
+  . ~/.profile
+
+  # Run pen
+  pen
 #+END_SRC
 
 /The pen of imagination - |:ϝ∷¦ϝ./
