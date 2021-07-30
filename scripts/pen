@@ -224,7 +224,7 @@ if ! test "$vanilla" = "y"; then
     # yn "Pull docker image?" && docker pull semiosis/pen.el:latest
 
     # set -v
-    # docker pull semiosis/pen.el:latest
+    docker pull semiosis/pen.el:latest
 
     if ! test "$batch" = "y"; then
         if test -d "$PROMPTS_DIR"; then
