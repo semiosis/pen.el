@@ -553,7 +553,8 @@ Function names are prefixed with pf- for easy searching"
 (defmacro pen-single-generation (&rest body)
   "This wraps around pen function calls to make them only create one generation"
   `(eval
-    `(let ((n-collate 1)
+    `(let ((pen-single-generation-b t)
+           (n-collate 1)
            (n-completions 1))
        ,',@body)))
 
