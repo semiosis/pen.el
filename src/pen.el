@@ -136,21 +136,18 @@
       ,doc
       (interactive ,(cons 'list iargs))
       (let* ((final-n-collate
-              (if (variable-p 'n-collate)
-                  (eval 'n-collate)
-                ,n-collate))
+              (or (pen-var-value-maybe 'n-collate)
+                  ,n-collate))
 
              (final-n-completions
-              (str (if (variable-p 'n-completions)
-                       (eval 'n-completions)
-                     ,n-completions)))
+              (str (or (pen-var-value-maybe 'n-completions)
+                       ,n-completions)))
 
              (final-prompt ,prompt)
 
              (final-max-tokens
-              (str (if (variable-p 'max-tokens)
-                       (eval 'max-tokens)
-                     ,max-tokens)))
+              (str (or (pen-var-value-maybe 'max-tokens)
+                       ,max-tokens)))
 
              (final-stop-sequences
               (if (variable-p 'stop-sequences)
