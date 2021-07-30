@@ -730,4 +730,16 @@ when s is a string, set the clipboard to s"
        (write-to-file "" "/tmp/eval-output.txt"))
      nil))
 
+(defun pen-detect-language-ask ()
+  (interactive)
+
+  (fz
+   (pf-get-language
+    (pen-selected-text)
+    :no-select-result t)
+   nil
+   nil
+   "Pen From language: "
+   nil t))
+
 (provide 'pen-support)
