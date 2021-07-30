@@ -67,6 +67,11 @@ case "$sn" in
     }
     ;;
 
+    penq) {
+        set -- -e "(kill-emacs)"
+    }
+    ;;
+
     penz) {
         set -- -e '(pen-list2str pen-prompt-functions)' | fzf
     }
