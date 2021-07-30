@@ -150,9 +150,8 @@
                        ,max-tokens)))
 
              (final-stop-sequences
-              (if (variable-p 'stop-sequences)
-                  (eval 'stop-sequences)
-                ',stop-sequences))
+              (or (pen-var-value-maybe 'stop-sequences)
+                  ',stop-sequences))
 
              (vals
               ;; If not called interactively then
