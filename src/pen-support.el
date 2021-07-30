@@ -740,6 +740,6 @@ when s is a string, set the clipboard to s"
    nil
    nil
    "Pen From language: "
-   nil t))
+   nil nil))
 
 (provide 'pen-support)
