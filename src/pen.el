@@ -135,7 +135,11 @@
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result))
       ,doc
       (interactive ,(cons 'list iargs))
-      (let* ((final-n-collate
+      (let* (
+             ;; I may take advantage of the bash cache in future
+             (pen-update t)
+
+             (final-n-collate
               (or (pen-var-value-maybe 'n-collate)
                   ,n-collate))
 
