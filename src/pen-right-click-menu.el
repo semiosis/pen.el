@@ -128,6 +128,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("translate" :call pf-translate-from-world-language-x-to-y)
          ("tldr" :call pf-tldr-summarization)
          ("eli5" :call pf-eli5-explain-like-i-m-five)
+         ("correct grammar" :call pf-correct-grammar :if (selectedp))
+         ("correct grammar 2" :call pf-correct-grammar-2 :if (selectedp))
          ("vexate" :call pf-complicated-explanation-of-how-to-x))
         ("pen (code)"
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
