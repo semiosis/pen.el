@@ -398,6 +398,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
    (use-region-p)
    (evil-visual-state-p)))
 (defalias 'selected-p 'selected)
+(defalias 'selection 'selected)
 
 (defun glob (pattern &optional dir)
   (split-string (pen-cl-sn (concat "pen-glob " (pen-q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
