@@ -288,6 +288,8 @@ if test "$use_pen_config" = "y"; then
     fi
 fi
 
+rp="$(realpath "$0")"
+
 case "$docker_cmd" in
     run) {
 IFS= read -r -d '' shcode <<HEREDOC
@@ -310,7 +312,7 @@ IFS= read -r -d '' shcode <<HEREDOC
     # --user "$(id -u):$(id -g)"
     docker "$docker_cmd" \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
-        pen bash -c $evalcommand
+        $rp bash -c $evalcommand
 HEREDOC
     }
     ;;
@@ -318,8 +320,20 @@ HEREDOC
     *)
 esac
 
+hn="$(hostname)"
+xtbin="$(command -v xterm)"
+
+case "$hn" in
+    mele) {
+        xtbin=/usr/bin/xterm
+    }
+    ;;
+
+    *)
+esac
+
 if ! test "$use_tty" = y && test -n "$DISPLAY" && command -v xterm &>/dev/null; then
-    xterm -fs 16 -e "$shcode" & disown
+    "$xtbin" -fs 16 -e "$shcode" & disown
 elif test "$use_tty" = y && is_tty; then
     eval "$shcode"
 fi
