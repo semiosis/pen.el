@@ -338,7 +338,11 @@ esac
 if test "$use_tty" = y; then
     eval "$shcode"
 elif ( test "$sn" = penc || test "$sn" = pen ) && ! test "$use_tty" = y && test -n "$DISPLAY" && command -v xterm &>/dev/null; then
-    "$xtbin" -fs 16 -e "$shcode" & disown
+    if ! test "$use_tty" = n; then
+        "$xtbin" -fs 16 -e "$shcode" & disown
+    else
+        eval "$shcode"
+    fi
 else
     eval "$shcode"
 fi
