@@ -519,15 +519,22 @@ Function names are prefixed with pf- for easy searching"
 (defun pen-company-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
          (response
-          (if (>= (prefix-numeric-value current-prefix-arg) 4)
-              (pen-long-complete-nongreedy
-               (-->
-                   preceding-text
-                 (pen-complete-function it :no-select-result t)))
+          (cond
+           ((>= (prefix-numeric-value current-prefix-arg) 16)
+            (pen-word-complete-nongreedy
+             (-->
+                 preceding-text
+               (pen-complete-function it :no-select-result t))))
+           ((>= (prefix-numeric-value current-prefix-arg) 4)
+            (pen-long-complete-nongreedy
+             (-->
+                 preceding-text
+               (pen-complete-function it :no-select-result t))))
+           (t
             (pen-line-complete-nongreedy
              (-->
                  preceding-text
-               (pen-complete-function it :no-select-result t)))))
+               (pen-complete-function it :no-select-result t))))))
          (res
           response))
 
