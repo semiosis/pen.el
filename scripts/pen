@@ -45,6 +45,8 @@ case "$sn" in
             pfname="$1"
             shift
 
+            use_tty=y
+
             if stdin_exists; then
                 set -- "$(cat)" "$@"
             fi
