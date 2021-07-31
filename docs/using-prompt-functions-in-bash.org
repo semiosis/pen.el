@@ -24,6 +24,13 @@
 (pf-code-one-liners-from-natural-language &optional LANGUAGE TASK &key NO-SELECT-RESULT)
 #+end_src
 
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/CdmhI44EThh6QBi4sGoHEggUX" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/CdmhI44EThh6QBi4sGoHEggUX.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/CdmhI44EThh6QBi4sGoHEggUX.js" id="asciicast-CdmhI44EThh6QBi4sGoHEggUX" async></script>
+#+END_EXPORT
+
 ** Caching is default
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   pene '(car (pf-list-of 7 "tennis players" :no-select-result t))' | vim -
