@@ -134,6 +134,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("vexate" :call pf-correct-english-spelling-and-grammar :if (selectedp)))
         ("pen (code)"
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
-         ("transpile" :call pf-transpile-from-programming-language-x-to-y))))
+         ("transpile" :call pf-transpile-from-programming-language-x-to-y)
+         ("add comments" :call pf-annotate-code-with-commentary))))
 
 (provide 'pen-right-click-menu)
