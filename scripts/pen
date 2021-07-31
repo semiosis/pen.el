@@ -339,7 +339,7 @@ if test "$use_tty" = y; then
     eval "$shcode"
 elif command -v xterm &>/dev/null && test "$use_tty" = n; then
     "$xtbin" -fs 16 -e "$shcode" & disown
-elif ( test "$sn" = penc || test "$sn" = pen ) && ! test "$use_tty" = y && test -n "$DISPLAY" && command -v xterm &>/dev/null && yn "Use xterm?"; then
+elif ( test "$sn" = penc || test "$sn" = pen ) && ! test "$use_tty" = y && test -n "$DISPLAY" && command -v xterm &>/dev/null && ( ! test "$HAS_TTY"=y || yn "Use xterm?" ); then
     "$xtbin" -fs 16 -e "$shcode" & disown
 else
     eval "$shcode"
