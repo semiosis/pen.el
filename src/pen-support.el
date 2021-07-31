@@ -761,9 +761,13 @@ when s is a string, set the clipboard to s"
           (append
            ;; TODO Make it so I can feed values into prompt functions
            ;; So, for example, I can use them inside the prompt fuzzy-finder
-           (pf-get-language
-            (pen-selected-text)
-            :no-select-result t)
+           (let ((context (sor
+                           (pen-selected-text t)
+                           (pen-preceding-text))))
+             (if context
+                 (pf-get-language
+                  context
+                  :no-select-result t)))
            (list (pen-detect-language t)
                  (pen-detect-language t t))))))
 
