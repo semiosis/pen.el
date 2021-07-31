@@ -99,5 +99,24 @@ Steffi Graf
 <script src="https://asciinema.org/a/ZK3goXrWfSU83KEVxStVCZyF2.js" id="asciicast-ZK3goXrWfSU83KEVxStVCZyF2" async></script>
 #+END_EXPORT
 
+** You may also use prompt functions this way
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pen pf-nlsh "arch linux" "install python package"
+#+END_SRC
+
+Another way to update is to prefix =upd=.
+
+I'm going to deliberately request an ambiguous command "open an image".
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  upd pen pf-nlsh "arch linux" "open an image"
+#+END_SRC
+
+You may also use the =UPDATE= environment variable.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  UPDATE=y pen pf-nlsh "arch linux" "open an image"
+#+END_SRC
+
 ** See also
 - https://mullikine.github.io/posts/pen-el-host-interop-and-client-server/
