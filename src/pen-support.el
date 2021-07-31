@@ -669,6 +669,17 @@ when s is a string, set the clipboard to s"
                s))
            "")))))
 
+(defun pen-thing-at-point-ask (&optional prompt)
+  (interactive)
+  (let ((thing (sor (pen-thing-at-point))))
+    (if (not thing)
+        (setq thing (read-string-hist
+                     (concat
+                      (or (sor prompt "pen-thing-at-point-ask")
+                          "")
+                      ": "))))
+    thing))
+
 (defalias 'second 'cadr)
 
 ;; I would like to disable the yaml lsp server for .prompt files.
