@@ -36,4 +36,59 @@
           (get-point-start-of-nth-previous-line window-line-radius)
           (get-point-start-of-nth-next-line window-line-radius)))))
 
+(defun pen-thing-at-point (&optional only-if-selected)
+  (interactive)
+
+  (if (and only-if-selected
+           (not mark-active))
+      nil
+    (if (or mark-active
+            iedit-mode)
+        (pen-selected-text)
+      (str
+       (or (thing-at-point 'symbol)
+           (thing-at-point 'sexp)
+           (let ((s (str (thing-at-point 'char))))
+             (if (string-equal s "\n")
+                 ""
+               s))
+           "")))))
+
+(defun pen-thing-at-point-ask (&optional prompt)
+  (interactive)
+  (let ((thing (sor (pen-thing-at-point))))
+    (if (not thing)
+        (setq thing (read-string-hist
+                     (concat
+                      (or (sor prompt "pen-thing-at-point-ask")
+                          "")
+                      ": "))))
+    thing))
+
+(defun pen-detect-language-ask ()
+  (interactive)
+  (let ((langs
+         (-uniq-u
+          (append
+           ;; TODO Make it so I can feed values into prompt functions
+           ;; So, for example, I can use them inside the prompt fuzzy-finder
+           (let ((context (sor
+                           (pen-selected-text t)
+                           (pen-preceding-text))))
+             (if context
+                 (pf-get-language
+                  context
+                  :no-select-result t)))
+           (list (pen-detect-language t)
+                 (pen-detect-language t t))))))
+
+    (if (pen-var-value-maybe 'pen-single-generation-b)
+        (car langs)
+      (fz
+       langs
+       nil
+       nil
+       "Pen From language: "
+       nil nil))))
+
 (provide 'pen-core)

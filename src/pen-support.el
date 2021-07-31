@@ -651,36 +651,6 @@ when s is a string, set the clipboard to s"
                 "txt"))))
 (defalias 'get-path-ext-from-mode-alist 'get-ext-for-mode)
 
-
-(defun pen-thing-at-point (&optional only-if-selected)
-  (interactive)
-
-  (if (and only-if-selected
-           (not mark-active))
-      nil
-    (if (or mark-active
-            iedit-mode)
-        (pen-selected-text)
-      (str
-       (or (thing-at-point 'symbol)
-           (thing-at-point 'sexp)
-           (let ((s (str (thing-at-point 'char))))
-             (if (string-equal s "\n")
-                 ""
-               s))
-           "")))))
-
-(defun pen-thing-at-point-ask (&optional prompt)
-  (interactive)
-  (let ((thing (sor (pen-thing-at-point))))
-    (if (not thing)
-        (setq thing (read-string-hist
-                     (concat
-                      (or (sor prompt "pen-thing-at-point-ask")
-                          "")
-                      ": "))))
-    thing))
-
 (defalias 'second 'cadr)
 
 ;; I would like to disable the yaml lsp server for .prompt files.
@@ -765,31 +735,5 @@ when s is a string, set the clipboard to s"
     (cl-loop for key being the hash-keys of table
              unless (> (gethash key table) 1)
              collect key)))
-
-(defun pen-detect-language-ask ()
-  (interactive)
-  (let ((langs
-         (-uniq-u
-          (append
-           ;; TODO Make it so I can feed values into prompt functions
-           ;; So, for example, I can use them inside the prompt fuzzy-finder
-           (let ((context (sor
-                           (pen-selected-text t)
-                           (pen-preceding-text))))
-             (if context
-                 (pf-get-language
-                  context
-                  :no-select-result t)))
-           (list (pen-detect-language t)
-                 (pen-detect-language t t))))))
-
-    (if (pen-var-value-maybe 'pen-single-generation-b)
-        (car langs)
-      (fz
-       langs
-       nil
-       nil
-       "Pen From language: "
-       nil nil))))
 
 (provide 'pen-support)
