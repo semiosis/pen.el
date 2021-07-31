@@ -757,6 +757,7 @@ when s is a string, set the clipboard to s"
   (let ((langs
          (-uniq-u
           (append
+           ;; TODO Make it so I can feed values into prompt functions
            (pf-get-language
             (pen-selected-text)
             :no-select-result t)
