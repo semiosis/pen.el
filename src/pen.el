@@ -296,7 +296,9 @@
                ((and ,filter
                      mark-active)
                 ;; (replace-region (concat (pen-selected-text) result))
-                (replace-region result))
+                (if (sor result)
+                    (replace-region result)
+                  (error "pen filter returned empty string")))
                ;; Insertion is for prompts for which a new buffer is not necessary
                ((or ,insertion
                     ,completion)
