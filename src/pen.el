@@ -603,16 +603,19 @@ Function names are prefixed with pf- for easy searching"
                               '("\n"))))
       ,',@body)))
 
+(defun pen-complete-function (preceding-text)
+  (if (and (derived-mode-p 'prog-mode)
+           (not (string-equal (buffer-name) "*scratch*")))
+      (pf-generic-file-type-completion (detect-language) preceding-text)
+    (pf-generic-completion-50-tokens-max-hash preceding-text)))
+
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
 May use to generate code from comments."
   (interactive (list (pen-preceding-text) nil))
   (let ((response
          (pen-long-complete
-          (if (and (derived-mode-p 'prog-mode)
-                   (not (string-equal (buffer-name) "*scratch*")))
-              (pf-generic-file-type-completion (detect-language) preceding-text)
-            (pf-generic-completion-50-tokens-max-hash preceding-text)))))
+          (pen-complete-function preceding-text))))
     (if tv
         (etv response)
       (insert response))))
