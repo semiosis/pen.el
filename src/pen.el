@@ -138,7 +138,7 @@
       (let* (
              ;; I may take advantage of the external cache in future
              ;; But for now, it will always update
-             (do-pen-update t)
+             ;; (do-pen-update t)
 
              (final-n-collate
               (or (pen-var-value-maybe 'n-collate)
