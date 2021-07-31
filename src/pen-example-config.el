@@ -65,6 +65,8 @@
 
 (define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
 (define-key pen-map (kbd "M-1") #'pen-company-filetype)
+(define-key pen-map (kbd "M-2") #'pen-company-filetype-word)
+(define-key pen-map (kbd "M-3") #'pen-company-filetype-long)
 (define-key pen-map (kbd "H-P") 'pen-complete-long)
 (define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
