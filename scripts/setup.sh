@@ -109,6 +109,11 @@ test -d "openai-api.el" || git clone --depth 1 "https://github.com/semiosis/open
 
 (
 cd "$EMACSD"
+test -d "huggingface.el" || git clone --depth 1 "http://github.com/mullikine/huggingface.el"
+)
+
+(
+cd "$EMACSD"
 test -d "pen-contrib.el" || git clone --depth 1 "https://github.com/semiosis/pen-contrib.el"
 )
 
