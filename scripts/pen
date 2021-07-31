@@ -104,7 +104,12 @@ case "$sn" in
     ;;
 
     penh) {
-        set -- -e "(helpful--signature '$1)"
+        if test "$#" -eq 0; then
+            fun="$(penz)"
+        else
+            fun="$1"
+        fi
+        set -- -e "(helpful--signature '$fun)"
     }
     ;;
 
