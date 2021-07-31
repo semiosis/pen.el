@@ -126,12 +126,12 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("pen (prose)"
          ("pick up line" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("translate" :call pf-translate-from-world-language-x-to-y)
-         ("tldr" :call pf-tldr-summarization :if (selectedp))
-         ("eli5" :call pf-eli5-explain-like-i-m-five :if (selectedp))
-         ("correct grammar" :call pf-correct-grammar :if (selectedp))
-         ("correct grammar 2" :call pf-correct-grammar-2 :if (selectedp))
-         ("vexate" :call pf-complicated-explanation-of-how-to-x :if (selectedp))
-         ("vexate" :call pf-correct-english-spelling-and-grammar :if (selectedp)))
+         ("tldr" :call pf-tldr-summarization :if (selected-p))
+         ("eli5" :call pf-eli5-explain-like-i-m-five :if (selected-p))
+         ("correct grammar" :call pf-correct-grammar :if (selected-p))
+         ("correct grammar 2" :call pf-correct-grammar-2 :if (selected-p))
+         ("vexate" :call pf-complicated-explanation-of-how-to-x :if (selected-p))
+         ("vexate" :call pf-correct-english-spelling-and-grammar :if (selected-p)))
         ("pen (code)"
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y)
