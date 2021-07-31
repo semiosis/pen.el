@@ -136,7 +136,8 @@
       ,doc
       (interactive ,(cons 'list iargs))
       (let* (
-             ;; I may take advantage of the bash cache in future
+             ;; I may take advantage of the external cache in future
+             ;; But for now, it will always update
              (pen-update t)
 
              (final-n-collate
