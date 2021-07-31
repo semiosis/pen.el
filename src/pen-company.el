@@ -18,6 +18,11 @@
     (prefix (pen-company-filetype--prefix))
     (candidates (pen-company-filetype--candidates arg))))
 
+(defun pen-company-filetype-words (command &optional arg &rest ignored)
+  (interactive (list 'is-interactive))
+  (let ((current-prefix-arg '(64)))
+    (pen-company-filetype command arg)))
+
 (defun pen-company-filetype-word (command &optional arg &rest ignored)
   (interactive (list 'is-interactive))
   (let ((current-prefix-arg '(16)))
