@@ -475,8 +475,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (cons 'progn (flatten-once
                 (cl-loop for i from 1 to n collect body))))
 
-(defun pen-selected-text ()
-  "Just give me the selected text as a string. If it's empty, then nothing was selected. region-active-p does not work for evil selection."
+(defun pen-selected-text (&optional ignore-no-selection)
+  "Just give me the selected text as a string. If it's empty, then nothing was selected.
+region-active-p does not work for evil selection."
   (interactive)
   (cond
    ((or (region-active-p)
@@ -484,6 +485,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (str (buffer-substring (region-beginning) (region-end))))
    (iedit-mode
     (iedit-current-occurrence-string))
+   (ignore-no-selection nil)
    (t (read-string "pen-selected-text: "))))
 
 (defalias 'pps 'pp-to-string)
@@ -758,6 +760,7 @@ when s is a string, set the clipboard to s"
          (-uniq-u
           (append
            ;; TODO Make it so I can feed values into prompt functions
+           ;; So, for example, I can use them inside the prompt fuzzy-finder
            (pf-get-language
             (pen-selected-text)
             :no-select-result t)
