@@ -137,7 +137,7 @@
       (interactive ,(cons 'list iargs))
       (let* (
              ;; Keep in mind this both updates memoization and the bash cache
-             ;; (do-pen-update t)
+             (do-pen-update (pen-var-value-maybe 'do-pen-update))
 
              (final-n-collate
               (or (pen-var-value-maybe 'n-collate)
@@ -574,7 +574,7 @@ Function names are prefixed with pf- for easy searching"
 (defmacro pen-update (&rest body)
   "This wraps around pen function calls to make them update the memoization"
   `(eval
-    `(let ((pen-update t))
+    `(let ((do-pen-update t))
        ,',@body)))
 
 (defmacro pen-single-generation (&rest body)
