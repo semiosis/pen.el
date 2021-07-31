@@ -69,7 +69,7 @@ case "$sn" in
             CMD="$(cmd-nice "$@")"
 
             if test "$UPDATE" = y; then
-                set -- -e "(pen-list2str (pen-single-generation (ht-cache-delete \"table-$pfname\") (memoize-restore '$pfname) (memoize '$pfname) ($pfname $CMD :no-select-result t)))"
+                set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t))))"
             else
                 set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t)))"
             fi
@@ -146,6 +146,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         docker_cmd=exec
         remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
         shift
+
+        if test "$UPDATE" = "y"; then
+            last_arg="${@: -1}"
+            test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+
+            set -- "$@" "(pen-update $last_arg)"
+        fi
     }
     ;;
 
