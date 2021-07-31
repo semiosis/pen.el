@@ -22,6 +22,7 @@
 (require 'org-roam)
 (require 'org-brain)
 (require 'dash)
+(require 'evil)
 (require 'popup)
 (require 'right-click-context)
 (require 'projectile)
