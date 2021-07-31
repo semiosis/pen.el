@@ -135,6 +135,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("pen (code)"
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y)
-         ("add comments" :call pf-annotate-code-with-commentary))))
+         ("add comments" :call pf-annotate-code-with-commentary))
+        ("word/term"
+         ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (derived-mode-p 'prog-mode)))))
 
 (provide 'pen-right-click-menu)
