@@ -4,7 +4,9 @@ Run =pen= in a terminal.
 
 ** Open a terminal
 
-** 
+** List out the prompt functions
+
+** Get help for a specific prompt function
 
 ** Caching is default
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
