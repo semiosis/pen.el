@@ -520,6 +520,22 @@ Function names are prefixed with pf- for easy searching"
   (let* ((preceding-text (pen-preceding-text))
          (response
           (cond
+           ((>= (prefix-numeric-value current-prefix-arg) 64)
+            (pen-words-complete-nongreedy
+             (-->
+                 preceding-text
+               (pen-complete-function it :no-select-result t))))
+           ((>= (prefix-numeric-value current-prefix-arg) 4)
+            (pen-long-complete-nongreedy
+             (-->
+                 preceding-text
+               (pen-complete-function it :no-select-result t))))
+           (t
+            (pen-line-complete-nongreedy
+             (-->
+                 preceding-text
+               (pen-complete-function it :no-select-result t)))))
+          (cond
            ((>= (prefix-numeric-value current-prefix-arg) 16)
             (pen-word-complete-nongreedy
              (-->
@@ -570,15 +586,17 @@ Function names are prefixed with pf- for easy searching"
           (stop-sequences '("##long complete##")))
       ,@body)))
 
-(defmacro pen-word-complete (&rest body)
+(defmacro pen-words-complete (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
     `(let ((max-tokens 5)
            (stop-sequence "##long complete##")
-           (stop-sequences '("##long complete##")))
+           (stop-sequences '("##long complete##"))
+           (n-collate 1)
+           (n-completions 10))
        ,',@body)))
 
-(defmacro pen-word-complete-nongreedy (&rest body)
+(defmacro pen-words-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
     `(let ((max-tokens 5)
@@ -587,7 +605,33 @@ Function names are prefixed with pf- for easy searching"
                               "##long complete##"))
            (stop-sequences (or (and (variable-p 'stop-sequences)
                                     (eval 'stop-sequences))
-                               '("##long complete##"))))
+                               '("##long complete##")))
+           (n-collate 1)
+           (n-completions 10))
+       ,',@body)))
+
+(defmacro pen-word-complete (&rest body)
+  "This wraps around pen function calls to make them complete long"
+  `(eval
+    `(let ((max-tokens 1)
+           (stop-sequence "##long complete##")
+           (stop-sequences '("##long complete##"))
+           (n-collate 1)
+           (n-completions 20))
+       ,',@body)))
+
+(defmacro pen-word-complete-nongreedy (&rest body)
+  "This wraps around pen function calls to make them complete long"
+  `(eval
+    `(let ((max-tokens 1)
+           (stop-sequence (or (and (variable-p 'stop-sequence)
+                                   (eval 'stop-sequence))
+                              "##long complete##"))
+           (stop-sequences (or (and (variable-p 'stop-sequences)
+                                    (eval 'stop-sequences))
+                               '("##long complete##")))
+           (n-collate 1)
+           (n-completions 20))
        ,',@body)))
 
 (defmacro pen-long-complete (&rest body)
