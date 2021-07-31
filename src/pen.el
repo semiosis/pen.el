@@ -563,6 +563,26 @@ Function names are prefixed with pf- for easy searching"
           (stop-sequences '("##long complete##")))
       ,@body)))
 
+(defmacro pen-word-complete (&rest body)
+  "This wraps around pen function calls to make them complete long"
+  `(eval
+    `(let ((max-tokens 5)
+           (stop-sequence "##long complete##")
+           (stop-sequences '("##long complete##")))
+       ,',@body)))
+
+(defmacro pen-word-complete-nongreedy (&rest body)
+  "This wraps around pen function calls to make them complete long"
+  `(eval
+    `(let ((max-tokens 5)
+           (stop-sequence (or (and (variable-p 'stop-sequence)
+                                   (eval 'stop-sequence))
+                              "##long complete##"))
+           (stop-sequences (or (and (variable-p 'stop-sequences)
+                                    (eval 'stop-sequences))
+                               '("##long complete##"))))
+       ,',@body)))
+
 (defmacro pen-long-complete (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
@@ -570,7 +590,6 @@ Function names are prefixed with pf- for easy searching"
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##")))
        ,',@body)))
-
 (defmacro pen-long-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
