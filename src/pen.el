@@ -603,11 +603,11 @@ Function names are prefixed with pf- for easy searching"
                               '("\n"))))
       ,',@body)))
 
-(defun pen-complete-function (preceding-text)
+(defun pen-complete-function (preceding-text &rest args)
   (if (and (derived-mode-p 'prog-mode)
            (not (string-equal (buffer-name) "*scratch*")))
-      (pf-generic-file-type-completion (detect-language) preceding-text)
-    (pf-generic-completion-50-tokens-max-hash preceding-text)))
+      (eval `(pf-generic-file-type-completion (detect-language) preceding-text ,@args))
+    (eval `(pf-generic-completion-50-tokens-max-hash preceding-text ,@args))))
 
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
