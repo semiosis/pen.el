@@ -127,6 +127,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (interactive)
   (identity body))
 
+;; TODO Call multiple other context menus by upper predicate
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("pen: translate" :call pf-translate-from-world-language-x-to-y)
