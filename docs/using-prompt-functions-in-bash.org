@@ -10,9 +10,19 @@
 <script src="https://asciinema.org/a/Q2YQw5OnTGFSfJ6t4baoQYb5G.js" id="asciicast-Q2YQw5OnTGFSfJ6t4baoQYb5G" async></script>
 #+END_EXPORT
 
-** List out the prompt functions
+** List out the prompt functions and get help
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  penl | fzf
+#+END_SRC
 
-** Get help for a specific prompt function
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  penh pf-code-one-liners-from-natural-language
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+(pf-code-one-liners-from-natural-language &optional LANGUAGE TASK &key NO-SELECT-RESULT)
+#+end_src
 
 ** Caching is default
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
