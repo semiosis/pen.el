@@ -3,6 +3,15 @@
 # TODO Add ability to share a file or directory with the host
 # docker run --rm -v "$(pwd):/$(pwd | slugify)" -w "/$(pwd | slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh  
 
+is_tty() { [ -t 1 ]; }
+
+if is_tty; then
+    HAS_TTY=y
+else
+    HAS_TTY=n
+    batch=y
+fi
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -tty|-nw) {
@@ -108,12 +117,6 @@ esac
 
 : "${docker_cmd:="run"}"
 remote_cmd=./run.sh
-
-is_tty() { [ -t 1 ]; }
-
-if is_tty; then
-    HAS_TTY=y
-fi
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
