@@ -139,6 +139,10 @@
              ;; Keep in mind this both updates memoization and the bash cache
              (do-pen-update (pen-var-value-maybe 'do-pen-update))
 
+             (cache
+              (and (not do-pen-update)
+                   (pen-var-value-maybe 'cache)))
+
              (final-n-collate
               (or (pen-var-value-maybe 'n-collate)
                   ,n-collate))
@@ -224,7 +228,7 @@
                (s-join
                 " "
                 (list
-                 ;;; This actually interfered with the memoization!
+;;; This actually interfered with the memoization!
                  ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
                  ;;   (if updval
                  ;;       (concat
@@ -249,7 +253,7 @@
                                 (eval 'stop-sequence)
                               ,stop-sequence))))
                     ("PEN_TOP_P" ,,top-p)
-                    ("PEN_CACHE" ,,cache)
+                    ("PEN_CACHE" ,cache)
                     ("PEN_N_COMPLETIONS" ,final-n-completions)
                     ("PEN_END_POS" ,prompt-end-pos)))
                  ;; Currently always updating
