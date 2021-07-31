@@ -92,6 +92,12 @@ case "$sn" in
     }
     ;;
 
+    penu) {
+        UPDATE=y
+        set -- -e "$@"
+    }
+    ;;
+
     penl) {
         set -- -e '(pen-list2str pen-prompt-functions)'
     }
