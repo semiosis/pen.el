@@ -115,7 +115,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 ;; Example
 (defun gpt-test-haskell ()
   (let ((lang
-         (detect-language (pen-selected-text))))
+         (pen-detect-language (pen-selected-text))))
     (message (concat "Language:" lang))
     (istr-match-p "Haskell" (message lang))))
 

@@ -603,7 +603,7 @@ when s is a string, set the clipboard to s"
   "Get the current major mode as a string."
   (str major-mode))
 
-(defun detect-language (&optional detect buffer-not-selection)
+(defun pen-detect-language (&optional detect buffer-not-selection)
   "Returns the language of the buffer or selection."
   (interactive)
   (let ((lang
@@ -625,7 +625,7 @@ when s is a string, set the clipboard to s"
 
 (defun lang-to-mode (&optional langstr)
   (if (not langstr)
-      (setq langstr (detect-language)))
+      (setq langstr (pen-detect-language)))
   (intern (concat langstr "-mode")))
 
 (defun get-ext-for-lang (langstr)
@@ -734,22 +734,42 @@ when s is a string, set the clipboard to s"
   (if (variable-p sym)
       (eval sym)))
 
+(defun -uniq-u (l &optional testfun)
+  "Return a copy of LIST with all non-unique elements removed."
+
+  (if (not testfun)
+      (setq testfun 'equal))
+
+  ;; Here, contents-hash is some kind of symbol which is set
+
+  (setq testfun (define-hash-table-test 'contents-hash testfun 'sxhash-equal))
+
+  (let ((table (make-hash-table :test 'contents-hash)))
+    (cl-loop for string in l do
+             (puthash string (1+ (gethash string table 0))
+                      table))
+    (cl-loop for key being the hash-keys of table
+             unless (> (gethash key table) 1)
+             collect key)))
+
 (defun pen-detect-language-ask ()
   (interactive)
-  (let ((langs (pf-get-language
-                (pen-selected-text)
-                :no-select-result t))
-        (detected (if (selected-p)
-                      (detect-language t)
-                    (detect-language t t))))
+  (let ((langs
+         (-uniq-u
+          (append
+           (pf-get-language
+            (pen-selected-text)
+            :no-select-result t)
+           (list (pen-detect-language t)
+                 (pen-detect-language t t))))))
 
     (if (pen-var-value-maybe 'pen-single-generation-b)
         (car langs)
-        (fz
-         langs
-         nil
-         nil
-         "Pen From language: "
-         nil nil))))
+      (fz
+       langs
+       nil
+       nil
+       "Pen From language: "
+       nil nil))))
 
 (provide 'pen-support)
