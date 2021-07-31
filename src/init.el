@@ -22,6 +22,7 @@
 (require 'org-roam)
 (require 'org-brain)
 (require 'dash)
+(package-install 'evil)
 (require 'evil)
 (require 'popup)
 (require 'right-click-context)
