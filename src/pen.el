@@ -217,30 +217,36 @@
              ;; construct the full command
              (shcmd
               (pen-log
-               (concat
-                ;; All parameters are sent as environment variables
-                (sh-construct-envs
-                 ;; This is a bit of a hack for \n in prompts
-                 ;; See `pen-restore-chars`
-                 `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
-                   ("PEN_LM_COMMAND" ,,lm-command)
-                   ("PEN_ENGINE" ,,engine)
-                   ("PEN_MAX_TOKENS"
-                    ,(pen-expand-template final-max-tokens vals))
-                   ("PEN_TEMPERATURE" ,(pen-expand-template (str ,temperature) vals))
-                   ("PEN_STOP_SEQUENCE"
-                    ,(pen-encode-string
-                      (str (if (variable-p 'stop-sequence)
-                               ;; Make overridable
-                               (eval 'stop-sequence)
-                             ,stop-sequence))))
-                   ("PEN_TOP_P" ,,top-p)
-                   ("PEN_CACHE" ,,cache)
-                   ("PEN_N_COMPLETIONS" ,final-n-completions)
-                   ("PEN_END_POS" ,prompt-end-pos)))
+               (s-join
                 " "
-                ;; Currently always updating
-                "upd lm-complete")))
+                (list
+                 (let ((updval (pen-var-value-maybe 'pen-update)))
+                   (if updval
+                       (s-join
+                        " " (list "export"
+                                  (sh-construct-envs "UPDATE" "y")))))
+                 ;; All parameters are sent as environment variables
+                 (sh-construct-envs
+                  ;; This is a bit of a hack for \n in prompts
+                  ;; See `pen-restore-chars`
+                  `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
+                    ("PEN_LM_COMMAND" ,,lm-command)
+                    ("PEN_ENGINE" ,,engine)
+                    ("PEN_MAX_TOKENS"
+                     ,(pen-expand-template final-max-tokens vals))
+                    ("PEN_TEMPERATURE" ,(pen-expand-template (str ,temperature) vals))
+                    ("PEN_STOP_SEQUENCE"
+                     ,(pen-encode-string
+                       (str (if (variable-p 'stop-sequence)
+                                ;; Make overridable
+                                (eval 'stop-sequence)
+                              ,stop-sequence))))
+                    ("PEN_TOP_P" ,,top-p)
+                    ("PEN_CACHE" ,,cache)
+                    ("PEN_N_COMPLETIONS" ,final-n-completions)
+                    ("PEN_END_POS" ,prompt-end-pos)))
+                 ;; Currently always updating
+                 "lm-complete"))))
 
              ;; run the completion command and collect the result
              (resultsdirs
