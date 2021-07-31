@@ -1,8 +1,14 @@
 * Using prompt functions in bash
-** Start the server on the host
-Run =pen= in a terminal.
+** Start the server on the host and open a separate terminal elsewhere
+- Run =pen= in a terminal.
+- Open a terminal
 
-** Open a terminal
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/Q2YQw5OnTGFSfJ6t4baoQYb5G" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/Q2YQw5OnTGFSfJ6t4baoQYb5G.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/Q2YQw5OnTGFSfJ6t4baoQYb5G.js" id="asciicast-Q2YQw5OnTGFSfJ6t4baoQYb5G" async></script>
+#+END_EXPORT
 
 ** List out the prompt functions
 
