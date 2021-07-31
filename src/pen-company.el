@@ -20,13 +20,13 @@
 
 (defun pen-company-filetype-word (command &optional arg &rest ignored)
   (interactive (list 'is-interactive))
-  (let ((current-prefix-arg '(16))
-        (pen-company-filetype command arg))))
+  (let ((current-prefix-arg '(16)))
+    (pen-company-filetype command arg)))
 
 (defun pen-company-filetype-long (command &optional arg &rest ignored)
   (interactive (list 'is-interactive))
-  (let ((current-prefix-arg '(4))
-        (pen-company-filetype command arg))))
+  (let ((current-prefix-arg '(4)))
+    (pen-company-filetype command arg)))
 
 (defset pen-company-all-backends
   '(
