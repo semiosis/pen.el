@@ -18,11 +18,10 @@
 ;; For org-roam
 (require 'emacsql)
 (require 'guess-language)
-(require 'detect-language)
+(require 'language-detection)
 (require 'org-roam)
 (require 'org-brain)
 (require 'dash)
-(package-install 'evil)
 (require 'evil)
 (require 'popup)
 (require 'right-click-context)
