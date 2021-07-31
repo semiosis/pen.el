@@ -138,7 +138,7 @@
       (let* (
              ;; I may take advantage of the external cache in future
              ;; But for now, it will always update
-             (pen-update t)
+             (do-pen-update t)
 
              (final-n-collate
               (or (pen-var-value-maybe 'n-collate)
@@ -225,7 +225,7 @@
                (s-join
                 " "
                 (list
-                 (let ((updval (pen-var-value-maybe 'pen-update)))
+                 (let ((updval (pen-var-value-maybe 'do-pen-update)))
                    (if updval
                        (concat
                         "export "
@@ -571,6 +571,14 @@ Function names are prefixed with pf- for easy searching"
 ;; (let ((alpha 50))
 ;;   (let ((alpha (or alpha 100)))
 ;;     (message (str alpha))))
+
+(defmacro pen-update (&rest body)
+  "This wraps around pen function calls to make them update the memoization"
+  `(eval
+    `(let ((pen-update t)
+           (n-collate 1)
+           (n-completions 1))
+       ,',@body)))
 
 (defmacro pen-single-generation (&rest body)
   "This wraps around pen function calls to make them only create one generation"
