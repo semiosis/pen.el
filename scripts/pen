@@ -114,7 +114,8 @@ case "$sn" in
     ;;
 
     penz) {
-        set -- -e '(pen-list2str pen-prompt-functions)' | fzf
+        fuzzy=y
+        set -- -e '(pen-list2str pen-prompt-functions)'
     }
     ;;
 
@@ -351,4 +352,8 @@ HEREDOC
     *)
 esac
 
-eval "$shcode"
+if test "$fuzzy" = "y"; then
+    eval "$shcode" | fzf
+else
+    eval "$shcode"
+fi
