@@ -92,5 +92,12 @@ Arantxa Sánchez Vicario
 Steffi Graf
 #+end_src
 
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/ZK3goXrWfSU83KEVxStVCZyF2" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/ZK3goXrWfSU83KEVxStVCZyF2.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/ZK3goXrWfSU83KEVxStVCZyF2.js" id="asciicast-ZK3goXrWfSU83KEVxStVCZyF2" async></script>
+#+END_EXPORT
+
 ** See also
 - https://mullikine.github.io/posts/pen-el-host-interop-and-client-server/
