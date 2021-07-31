@@ -16,6 +16,10 @@
 (define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-acolyte-scratch)
 (define-key pen-acolyte-minor-mode-map (kbd "M-s") 'save-buffer)
 (define-key pen-acolyte-minor-mode-map (kbd "M-r") 'pen-run-prompt-function)
+(define-key pen-acolyte-minor-mode-map (kbd "M-1") #'pen-company-filetype-word)
+(define-key pen-acolyte-minor-mode-map (kbd "M-2") #'pen-company-filetype-words)
+(define-key pen-acolyte-minor-mode-map (kbd "M-3") #'pen-company-filetype-line)
+(define-key pen-acolyte-minor-mode-map (kbd "M-4") #'pen-company-filetype-long)
 
 ;; M-TAB
 (define-key pen-acolyte-minor-mode-map (kbd "M-TAB") 'pen-company-filetype)
