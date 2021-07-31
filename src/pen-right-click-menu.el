@@ -119,6 +119,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     (message (concat "Language:" lang))
     (istr-match-p "Haskell" (message lang))))
 
+(defun pen-word-clickable ()
+  (or (not (selected-p))
+      (= 1 (length (s-split " " (selection))))))
+
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity)
         ("pen: translate" :call pf-translate-from-world-language-x-to-y)
@@ -137,6 +141,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("transpile" :call pf-transpile-from-programming-language-x-to-y)
          ("add comments" :call pf-annotate-code-with-commentary))
         ("word/term"
-         ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (derived-mode-p 'prog-mode)))))
+         ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (pen-word-clickable))
+         ("define word" :call pf-define-word-for-glossary :if (pen-word-clickable)))))
 
 (provide 'pen-right-click-menu)
