@@ -6,7 +6,6 @@ Run =pen= in a terminal.
 
 ** 
 
-
 ** Caching is default
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   pene '(car (pf-list-of 7 "tennis players" :no-select-result t))' | vim -
