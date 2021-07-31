@@ -58,13 +58,39 @@ Katharina Kruger
 *** =pen-update=
 This updates the disk memoization.
 
+You may use =pene= (or =pen -e=) and specify
+=pen-update= manually, or you may use =penu=
+(=pen -u=) which has a default =pen-update=.
+
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   pene '(car (pen-update (pf-list-of 7 "tennis players" :no-select-result t)))'
 #+END_SRC
 
-#+BEGIN_SRC sh -n :sps bash :async :results none
-  penu '(car (pf-list-of 7 "tennis players" :no-select-result t))' | vim -
-#+END_SRC/
+#+RESULTS:
+#+begin_src bash
+Andre Agassi
+Billie Jean King
+Samantha Stosur
+Roger Federer
+Andy Murray
+Juan Martín del Potro
+Ivo Karlović
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  penu '(car (pf-list-of 7 "tennis players" :no-select-result t))'
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Evonne Goolagong
+John McEnroe
+Chris Evert
+Martina Navratilova
+Patty Schnyder
+Arantxa Sánchez Vicario
+Steffi Graf
+#+end_src
 
 ** See also
 - https://mullikine.github.io/posts/pen-el-host-interop-and-client-server/
