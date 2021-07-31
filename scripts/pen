@@ -224,6 +224,7 @@ if ! test "$vanilla" = "y"; then
     # yn "Pull docker image?" && docker pull semiosis/pen.el:latest
 
     # set -v
+    echo docker pull semiosis/pen.el:latest
     docker pull semiosis/pen.el:latest
 
     if ! test "$batch" = "y"; then
