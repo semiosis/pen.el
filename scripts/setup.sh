@@ -86,6 +86,12 @@ cd
 git clone --depth 1 "https://github.com/paradoxxxzero/butterfly"
 )
 
+# I want huggingface transformers and I'm going to use clojure to access them
+(
+cd
+git clone --depth 1 "http://github.com/semiosis/huggingface-clj"
+)
+
 (
 cd
 git clone --depth 1 "https://github.com/syl20bnr/spacemacs"
