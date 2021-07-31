@@ -3,6 +3,17 @@
 # TODO Add ability to share a file or directory with the host
 # docker run --rm -v "$(pwd):/$(pwd | slugify)" -w "/$(pwd | slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh  
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -tty|-nw) {
+        use_tty=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 cmd() {
     for var in "$@"
     do
@@ -103,12 +114,6 @@ fi
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -tty|-nw) {
-        use_tty=y
-        shift
-    }
-    ;;
-
     -c) {
         batch=y
         docker_cmd=exec
