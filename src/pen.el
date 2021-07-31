@@ -574,9 +574,7 @@ Function names are prefixed with pf- for easy searching"
 (defmacro pen-update (&rest body)
   "This wraps around pen function calls to make them update the memoization"
   `(eval
-    `(let ((pen-update t)
-           (n-collate 1)
-           (n-completions 1))
+    `(let ((pen-update t))
        ,',@body)))
 
 (defmacro pen-single-generation (&rest body)
