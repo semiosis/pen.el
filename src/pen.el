@@ -229,7 +229,7 @@
                    (if updval
                        (s-join
                         " " (list "export"
-                                  (sh-construct-envs "UPDATE" "y")))))
+                                  (sh-construct-envs '(("UPDATE" "y")))))))
                  ;; All parameters are sent as environment variables
                  (sh-construct-envs
                   ;; This is a bit of a hack for \n in prompts
