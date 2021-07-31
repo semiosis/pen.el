@@ -17,6 +17,8 @@
 (require 'shut-up)
 ;; For org-roam
 (require 'emacsql)
+(require 'guess-language)
+(require 'detect-language)
 (require 'org-roam)
 (require 'org-brain)
 (require 'dash)

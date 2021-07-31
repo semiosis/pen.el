@@ -13,6 +13,8 @@
 (package-install 'shut-up)
 ;; For org-roam
 (package-install 'emacsql)
+(package-install 'guess-language)
+(package-install 'detect-language)
 (package-install 'org-roam)
 (package-install 'org-brain)
 (package-install 'dash)

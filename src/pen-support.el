@@ -738,7 +738,8 @@ when s is a string, set the clipboard to s"
   (interactive)
   (let ((langs (pf-get-language
                 (pen-selected-text)
-                :no-select-result t)))
+                :no-select-result t))
+        (detected (detect-language)))
 
     (if (pen-var-value-maybe 'pen-single-generation-b)
         (car langs)
