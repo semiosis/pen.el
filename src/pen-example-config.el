@@ -157,4 +157,6 @@
 (memoize-restore 'pen-prompt-snc)
 (memoize 'pen-prompt-snc)
 
+(require 'evil)
+
 ;; (call-interactively 'pen-add-key-booste)
