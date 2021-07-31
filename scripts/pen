@@ -29,6 +29,7 @@ cmd-nice() {
 }
 
 sn="$(basename "$0")"
+bn="$(basename "$0")"
 
 if test "$sn" = pen && test "$#" -eq 0 && test -n "$(docker ps --filter "name=pen" | sed 1d)"; then
     sn=penc
@@ -312,7 +313,7 @@ IFS= read -r -d '' shcode <<HEREDOC
     # --user "$(id -u):$(id -g)"
     docker "$docker_cmd" \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
-        $rp bash -c $evalcommand
+        pen bash -c $evalcommand
 HEREDOC
     }
     ;;
