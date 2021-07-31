@@ -31,6 +31,19 @@
     (or (ht-cache name)
         (apply 'make-hash-table args))))
 
+
+
+(defun memoize-update-call (func args)
+  (let* ((funcpps (pps func))
+         (funcslugdata (if (< 150 (length funcpps))
+                           (md5 funcpps)
+                         funcpps))
+         (funcslug (slugify (s-join "-" (pen-str2list funcslugdata))))
+         (tablename (concat "table-" funcslug))
+         (table (make-or-load-hash-table tablename '(:test equal)))))
+  (remhash args table))
+
+
 (defun memoize--wrap (func timeout)
   "Return the memoized version of FUNC.
 TIMEOUT specifies how long the values last from last access. A
@@ -53,6 +66,7 @@ care."
           (unwind-protect
               ;; (or value (puthash args (apply ,func args) ,table))
               (let ((ret (or (and
+                              (pen-var-value-maybe 'pen-update)
                               (not (>= (prefix-numeric-value current-global-prefix-arg) 4))
                               value)
                              ;; Add to the hash table and save the hash table
