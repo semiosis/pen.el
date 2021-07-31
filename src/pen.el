@@ -582,7 +582,7 @@ Function names are prefixed with pf- for easy searching"
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
-           (n-completions 10))
+           (n-completions 20))
        ,',@body)))
 
 (defmacro pen-words-complete-nongreedy (&rest body)
@@ -606,7 +606,7 @@ Function names are prefixed with pf- for easy searching"
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
-           (n-completions 20))
+           (n-completions 40))
        ,',@body)))
 
 (defmacro pen-word-complete-nongreedy (&rest body)
@@ -646,8 +646,8 @@ Function names are prefixed with pf- for easy searching"
   "This wraps around pen function calls to make them complete line only"
   `(eval
     `(let ((max-tokens 100)
-          (stop-sequence "\n")
-          (stop-sequences '("\n")))
+           (stop-sequence "\n")
+           (stop-sequences '("\n")))
        ,',@body)))
 
 (defmacro pen-line-complete-nongreedy (&rest body)
