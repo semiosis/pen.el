@@ -65,18 +65,19 @@ care."
         (let ((value (gethash args ,table)))
           (unwind-protect
               ;; (or value (puthash args (apply ,func args) ,table))
-              (let ((ret (or (and
-                              (pen-var-value-maybe 'do-pen-update)
-                              (not (>= (prefix-numeric-value current-global-prefix-arg) 4))
-                              value)
-                             ;; Add to the hash table and save the hash table
-                             (let ((newret (puthash args
-                                                    (or (apply ,func args)
-                                                        'MEMOIZE_NIL)
-                                                    ,table)))
-                               (if (featurep 'hashtable-print-readable)
-                                   (ht-cache ,tablename ,table))
-                               newret))))
+              (let ((ret (or
+                          (and
+                           (not (pen-var-value-maybe 'do-pen-update))
+                           (not (>= (prefix-numeric-value current-global-prefix-arg) 4))
+                           value)
+                          ;; Add to the hash table and save the hash table
+                          (let ((newret (puthash args
+                                                 (or (apply ,func args)
+                                                     'MEMOIZE_NIL)
+                                                 ,table)))
+                            (if (featurep 'hashtable-print-readable)
+                                (ht-cache ,tablename ,table))
+                            newret))))
                 (if (equal ret 'MEMOIZE_NIL)
                     (setq ret nil))
                 ret)
