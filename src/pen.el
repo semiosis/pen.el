@@ -525,17 +525,6 @@ Function names are prefixed with pf- for easy searching"
              (-->
                  preceding-text
                (pen-complete-function it :no-select-result t))))
-           ((>= (prefix-numeric-value current-prefix-arg) 4)
-            (pen-long-complete-nongreedy
-             (-->
-                 preceding-text
-               (pen-complete-function it :no-select-result t))))
-           (t
-            (pen-line-complete-nongreedy
-             (-->
-                 preceding-text
-               (pen-complete-function it :no-select-result t)))))
-          (cond
            ((>= (prefix-numeric-value current-prefix-arg) 16)
             (pen-word-complete-nongreedy
              (-->
