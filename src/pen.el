@@ -222,7 +222,7 @@
              (pen-sh-update
               (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
 
-             ;; Now that all values are loaded, re-template them
+             ;; Now that all values are loaded, re-template them so I can base values on other values
 
              ;; construct the full command
              (shcmd
