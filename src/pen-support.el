@@ -14,6 +14,9 @@
   ;; (pen-snc (cmd "mant" path))
   (s-replace-regexp "\\..*" "" (f-basename path)))
 
+
+(defalias 're-match-p 'string-match)
+
 (defun is-glossary-file (&optional fp)
   ;; This path works also with info
   (setq fp (or fp (get-path)))
