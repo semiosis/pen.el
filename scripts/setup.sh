@@ -45,6 +45,8 @@ pip3 install openai
 # For tidy-prompt
 pip3 install yq python-json2yaml
 
+pip3 install aixapi
+
 # For Pen.el
 ## slugify
 agi libc-bin
