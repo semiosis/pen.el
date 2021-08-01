@@ -808,16 +808,18 @@ when s is a string, set the clipboard to s"
 (defun pen-extract-keywords ()
   (interactive)
 
-  (nbfs
-   (pps
-    (str2lines
-     (snc
-      (concat
-       "printf -- '%s\n' "
-       ;; It doesn't always generate keywords, so it's not very reliable
-       (pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t))
-       ;; (pf-keyword-extraction (pen-selected-text) :no-select-result t)
-       )))))
-  nil 'emacs-lisp-mode)
+  (etv (pps (pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t))))
+  ;; (nbfs
+  ;;  (pps
+  ;;   (str2lines
+  ;;    (snc
+  ;;     (concat
+  ;;      "printf -- '%s\n' "
+  ;;      ;; It doesn't always generate keywords, so it's not very reliable
+  ;;      (pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t))
+  ;;      ;; (pf-keyword-extraction (pen-selected-text) :no-select-result t)
+  ;;      )))))
+  ;; nil 'emacs-lisp-mode
+  )
 
 (provide 'pen-support)
