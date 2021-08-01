@@ -473,11 +473,14 @@ Function names are prefixed with pf- for easy searching"
                                   ;;     (multiline-reader ,example)
                                   ;;   (read-string-hist ,(concat v ": ") ,example))
                                   )
-                             `(if ,(> (length (s-lines example)) 1)
-                                  (etv ,example)
-                                (if ,d
-                                    (eval-string ,(str d))
-                                  (read-string-hist ,(concat v ": ") ,example)))))
+                             ;; `(if ,(> (length (s-lines example)) 1)
+                             ;;      (etv ,example)
+                             ;;    (if ,d
+                             ;;        (eval-string ,(str d))
+                             ;;      (read-string-hist ,(concat v ": ") ,example)))
+                             `(if ,d
+                                  (eval-string ,(str d))
+                                (read-string-hist ,(concat v ": ") ,example))))
                          do
                          (progn
                            (setq iteration (+ 1 iteration))
