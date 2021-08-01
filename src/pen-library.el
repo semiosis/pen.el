@@ -118,13 +118,20 @@
                   ;; Consider getting topic keywords from visible text
                   (get-path nil t)))
                (semantic-only
-                (pen-single-generation
-                 (pf-keyword-extraction
-                  (pen-words 40 (pen-selection-or-surrounding-context))
-                  :no-select-result no-select-result
-                  ;; :no-select-result t
-                  ;; (pen-surrounding-text)
-                  ))))))
+                (if no-select-result
+                    (pen-single-generation
+                     (car
+                      (pf-keyword-extraction
+                       (pen-words 40 (pen-selection-or-surrounding-context))
+                       :no-select-result no-select-result
+                       ;; :no-select-result t
+                       ;; (pen-surrounding-text)
+                       )))
+                  (pf-keyword-extraction
+                   (pen-words 40 (pen-selection-or-surrounding-context))
+                   ;; :no-select-result t
+                   ;; (pen-surrounding-text)
+                   ))))))
 
     (setq topic
           (cond
