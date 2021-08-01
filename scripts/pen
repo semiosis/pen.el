@@ -309,7 +309,7 @@ if ! test "$vanilla" = "y"; then
 
     if ! test "$batch" = "y"; then
         if test -d "$PROMPTS_DIR"; then
-            yn "Pull prompts repo?" && (
+            yn "Pull prompts repo? (recommended)" && (
                 cd "$PROMPTS_DIR"
                 git pull origin master
             )
