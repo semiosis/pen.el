@@ -36,6 +36,7 @@
           (get-point-start-of-nth-previous-line window-line-radius)
           (get-point-start-of-nth-next-line window-line-radius)))))
 
+;; Great for NLP tasks such as keyword extraction
 (defun pen-selection-or-surrounding-context ()
   (let ((context
          (if (selected-p)
