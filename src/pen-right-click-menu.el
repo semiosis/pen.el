@@ -131,7 +131,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y)
          ("add comments" :call pf-annotate-code-with-commentary))
-        ("word/term >" :call rcm-term :if (pen-word-clickable))
+        ("> word/term" :call rcm-term :if (pen-word-clickable))
         ("keywords/classify" :call pen-extract-keywords)))
 
 (defmacro def-right-click-menu (name
