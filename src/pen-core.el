@@ -36,6 +36,10 @@
           (get-point-start-of-nth-previous-line window-line-radius)
           (get-point-start-of-nth-next-line window-line-radius)))))
 
+(defun pen-words (&optional n input)
+  (setq n (or n 5))
+  (s-join " " (-take n (s-split-words input))))
+
 ;; Great for NLP tasks such as keyword extraction
 (defun pen-selection-or-surrounding-context ()
   (let ((context
