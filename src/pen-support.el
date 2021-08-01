@@ -801,4 +801,9 @@ when s is a string, set the clipboard to s"
   (interactive (list (pen-thing-at-point-ask)))
   (message (lm-define term t (pen-topic t t))))
 
+(defun pen-extract-keywords ()
+  (interactive)
+
+  (etv (pf-keyword-extraction (pen-selected-text))))
+
 (provide 'pen-support)
