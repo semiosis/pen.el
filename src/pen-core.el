@@ -77,23 +77,23 @@
                s))
            "")))))
 
-(defun pen-thing-at-point-ask (&optional prompt)
+(defun pen-thing-at-point-ask (&optional prompt prefer-not-to-ask)
   "thing at point or ask"
   (interactive)
   ;; If selected, definitely use
   ;; If not selected, verify
   (let ((sel (selection))
         (thing (sor (pen-thing-at-point))))
-    (if sel
-        sel
-      (setq thing
-            (read-string-hist
-             (concat
-              (or (sor prompt "pen-thing-at-point-ask")
-                  "")
-              ": ")
-             thing)))
-    thing))
+    (cond
+     (sel sel)
+     ((and prefer-not-to-ask
+           thing) thing)
+     (t (read-string-hist
+         (concat
+          (or (sor prompt "pen-thing-at-point-ask")
+              "")
+          ": ")
+         thing)))))
 
 (defun pen-detect-language-ask ()
   (interactive)
