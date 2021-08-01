@@ -19,7 +19,10 @@
 
 (defun is-glossary-file (&optional fp)
   ;; This path works also with info
-  (setq fp (or fp (get-path)))
+  (setq fp (or fp
+               (get-path)
+               ""))
+
   (or
    (re-match-p "glossary\\.txt$" fp)
    (re-match-p "words\\.txt$" fp)
