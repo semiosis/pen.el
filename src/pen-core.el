@@ -47,10 +47,14 @@
              (pen-selected-text)
            (pen-surrounding-context))))
     ;; Correcting the spelling and grammer helps massively
-    (car
-     (pf-correct-english-spelling-and-grammar
-      (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-snc "pen-c context-chars" context))
-      :no-select-result t))))
+    ;; But it's slow
+    (pen-snc "sed -z -e 's/\\s\\+/ /g' -e 's/^\\s*//' -e 's/\\s*$//'"
+             (pen-snc "pen-c context-chars" context))
+    ;; (car
+    ;;  (pf-correct-english-spelling-and-grammar
+    ;;   (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-snc "pen-c context-chars" context))
+    ;;   :no-select-result t))
+    ))
 
 (defun pen-surrounding-context ()
   (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-surrounding-text)))
