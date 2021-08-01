@@ -366,10 +366,12 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
        ((stringp item) "")
        (t "")))))
 
-(cl-defun cl-fz (list &key prompt &key full-frame &key initial-input &key must-match &key select-only-match &key hist-var &key add-props)
-  (if (and (not hist-var)
-           (sor prompt))
-      (setq hist-var (intern (concat "histvar-fz-" (slugify prompt)))))
+(cl-defun cl-fz (list &key prompt &key full-frame &key initial-input &key must-match &key select-only-match &key hist-var &key add-props &key no-hist)
+  (if no-hist
+      (setq hist-var nil)
+      (if (and (not hist-var)
+               (sor prompt))
+          (setq hist-var (intern (concat "histvar-fz-" (slugify prompt))))))
 
   (setq prompt (sor prompt ":"))
 
@@ -414,7 +416,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
    :must-match must-match
    :select-only-match select-only-match
    :add-props add-props
-   :hist-var hist-var))
+   :hist-var hist-var
+   :no-hist no-hist))
 
 (defun selected ()
   (or

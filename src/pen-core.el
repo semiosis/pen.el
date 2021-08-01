@@ -119,6 +119,6 @@
        nil
        nil
        "Pen From language: "
-       nil nil nil nil))))
+       nil nil nil nil t))))
 
 (provide 'pen-core)
