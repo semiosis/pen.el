@@ -18,7 +18,7 @@ HEREDOC
 
 printf -- "%s\n" "$banner" 1>&2
 echo
-echo Version 0.5
+echo Version 0.1
 
 IFS= read -r -d '' txt <<HEREDOC
 Pen is under heavy development.
