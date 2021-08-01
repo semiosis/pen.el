@@ -814,8 +814,9 @@ when s is a string, set the clipboard to s"
      (snc
       (concat
        "printf -- '%s\n' "
-       (eval
-        `(pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t)))))))
-   nil 'emacs-lisp-mode))
+       ;; It doesn't always generate keywords
+       ;; (pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t))
+       (pf-keyword-extraction (pen-selected-text) :no-select-result t))))))
+  nil 'emacs-lisp-mode)
 
 (provide 'pen-support)
