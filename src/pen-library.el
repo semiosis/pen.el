@@ -117,7 +117,8 @@
 
     (setq topic
           (cond
-           ((string-equal topic "solidity") "solidity, ethereum")))
+           ((string-equal topic "solidity") "solidity, ethereum")
+           (t topic)))
 
     (if (interactive-p)
         (etv topic)
