@@ -119,6 +119,7 @@
                   (get-path nil t)))
                (semantic-only
                 (pf-keyword-extraction
+                 (pen-words 40 (pen-selection-or-surrounding-context))
                  ;; (pen-surrounding-text)
                  )))))
 
