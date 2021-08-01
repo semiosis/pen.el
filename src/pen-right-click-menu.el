@@ -127,9 +127,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (interactive)
   (identity body))
 
+;; j:add-to-glossary-file-for-buffer
 (defun pen-define (term)
   (interactive (list (pen-thing-at-point-ask)))
-  (lm-define term t (pen-topic t t)))
+  (message (lm-define term t (pen-topic t t))))
 
 ;; TODO Call multiple other context menus by upper predicate
 (setq right-click-context-global-menu-tree
