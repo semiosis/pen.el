@@ -133,6 +133,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("add comments" :call pf-annotate-code-with-commentary))
         ("word/term"
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (pen-word-clickable))
-         ("define word" :call pen-define :if (pen-word-clickable)))))
+         ("define word" :call pen-define :if (pen-word-clickable)))
+        ("keywords/classify"
+         :call pen-extract-keywords)))
 
 (provide 'pen-right-click-menu)
