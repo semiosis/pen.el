@@ -407,7 +407,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
         (completing-read prompt list nil must-match initial-input hist-var)))))
 
-(defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props hist-var)
+(defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props hist-var no-hist)
   (cl-fz
    list
    :initial-input input
