@@ -509,7 +509,13 @@ region-active-p does not work for evil selection."
     (iedit-current-occurrence-string))
    (ignore-no-selection nil)
    (t (read-string "pen-selected-text: "))))
-(defalias 'selection 'pen-selected-text)
+
+(defun pen-selected-text-ignore-no-selection ()
+  "Just give me the selected text as a string. If it's empty, then nothing was selected. region-active-p does not work for evil selection."
+  (interactive)
+  (pen-selected-text))
+
+(defalias 'selection 'pen-selected-text-ignore-no-selection)
 
 (defalias 'pps 'pp-to-string)
 
