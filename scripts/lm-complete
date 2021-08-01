@@ -19,6 +19,7 @@ test -n "$PEN_LM_COMMAND" || {
 : "${PEN_N_COMPLETIONS:="1"}"
 : "${PEN_END_POS:="$(printf -- "%s" "$PEN_PROMPT" | wc -c)"}"
 
+export PEN_LM_KEY
 export PEN_MAX_TOKENS
 export PEN_TEMPERATURE
 export PEN_TOP_P
