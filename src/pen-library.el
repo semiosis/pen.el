@@ -6,7 +6,8 @@
   (pen-snc (cmd "basename" path)))
 
 (defun f-mant (path)
-  (pen-snc (cmd "mant" path)))
+  ;; (pen-snc (cmd "mant" path))
+  (s-replace-regexp "\\..*" "" (f-basename path)))
 
 ;; The semantic path needs to be an association list, and add to that with contrib plugins
 (defun get-path-semantic ()
