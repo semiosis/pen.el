@@ -74,7 +74,10 @@
            "")))))
 
 (defun pen-thing-at-point-ask (&optional prompt)
+  "thing at point or ask"
   (interactive)
+  ;; If selected, definitely use
+  ;; If not selected, verify
   (let ((thing (sor (pen-thing-at-point))))
     (if (not thing)
         (setq thing (read-string-hist
