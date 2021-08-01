@@ -118,7 +118,7 @@
        langs
        nil
        nil
-       "Pen From language: "
+       "Pen detected language: "
        nil nil nil nil t))))
 
 (provide 'pen-core)
