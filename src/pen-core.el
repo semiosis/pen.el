@@ -36,15 +36,15 @@
           (get-point-start-of-nth-previous-line window-line-radius)
           (get-point-start-of-nth-next-line window-line-radius)))))
 
-(defun pen-surrounding-context ()
-  (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-surrounding-text)))
-
 (defun pen-selection-or-surrounding-context ()
   (let ((context
          (if (selected-p)
              (pen-selected-text)
            (pen-surrounding-context))))
     (pen-snc "sed -z 's/\\s\\+/ /g'" (snc "pen-c context-chars" context))))
+
+(defun pen-surrounding-context ()
+  (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-surrounding-text)))
 
 (defun pen-thing-at-point (&optional only-if-selected)
   (interactive)
