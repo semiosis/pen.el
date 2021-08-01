@@ -222,6 +222,8 @@
              (pen-sh-update
               (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
 
+             ;; Now that all values are loaded, re-template them
+
              ;; construct the full command
              (shcmd
               (pen-log
