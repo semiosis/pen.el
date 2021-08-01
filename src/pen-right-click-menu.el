@@ -115,9 +115,9 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 ;; TODO Call multiple other context menus by upper predicate
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
-        ("pen: translate" :call pf-translate-from-world-language-x-to-y)
-        ("pen: transpile" :call pf-transpile-from-programming-language-x-to-y)
-        ("pen (prose)"
+        ("translate" :call pf-translate-from-world-language-x-to-y)
+        ("transpile" :call pf-transpile-from-programming-language-x-to-y)
+        ("prose"
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (selected-p))
          ("translate" :call pf-translate-from-world-language-x-to-y)
          ("tldr" :call pf-tldr-summarization :if (selected-p))
@@ -127,14 +127,32 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("vexate" :call pf-complicated-explanation-of-how-to-x :if (selected-p))
          ("correct English spelling and grammar" :call pf-correct-english-spelling-and-grammar :if (selected-p))
          ("define term" :call pen-define :if (selected-p)))
-        ("pen (code)"
+        ("code"
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y)
          ("add comments" :call pf-annotate-code-with-commentary))
-        ("word/term"
-         ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (pen-word-clickable))
-         ("define word" :call pen-define :if (pen-word-clickable)))
-        ("keywords/classify"
-         :call pen-extract-keywords)))
+        ("word/term >" :call rcm-term :if (pen-word-clickable))
+        ("keywords/classify" :call pen-extract-keywords)))
+
+(defmacro def-right-click-menu (name
+                                ;; predicates
+                                popup)
+  "Create a right click menu."
+  `(defun ,name ()
+     "Open Right Click Context menu."
+     (interactive)
+     (let ((popup-menu-keymap (copy-sequence popup-menu-keymap)))
+       ;; (define-key popup-menu-keymap [mouse-3] #'right-click-context--click-menu-popup)
+       (define-key popup-menu-keymap [mouse-3] #'right-click-popup-close)
+       (define-key popup-menu-keymap (kbd "C-g") #'right-click-popup-close)
+       (let ((value (popup-cascade-menu (right-click-context--build-menu-for-popup-el ,popup nil))))
+         (when value
+           (if (symbolp value)
+               (call-interactively value t)
+             (eval value)))))))
+
+(def-right-click-menu rcm-term
+  '(("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (pen-word-clickable))
+    ("define word" :call pen-define :if (pen-word-clickable))))
 
 (provide 'pen-right-click-menu)
