@@ -17,6 +17,8 @@ IFS= read -r -d '' banner <<HEREDOC
 HEREDOC
 
 printf -- "%s\n" "$banner" 1>&2
+echo
+echo Version 0.5
 
 IFS= read -r -d '' txt <<HEREDOC
 Pen is under heavy development.
