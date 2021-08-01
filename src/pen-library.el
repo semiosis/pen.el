@@ -118,7 +118,9 @@
                   ;; Consider getting topic keywords from visible text
                   (get-path nil t)))
                (semantic-only
-                (pf-keyword-extraction (pen-surrounding-text))))))
+                (pf-keyword-extraction
+                 ;; (pen-surrounding-text)
+                 )))))
 
     (setq topic
           (cond
