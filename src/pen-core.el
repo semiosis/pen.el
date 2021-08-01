@@ -44,7 +44,7 @@
          (if (selected-p)
              (pen-selected-text)
            (pen-surrounding-context))))
-    (snc "pen-c context-chars" (pen-snc "sed -z 's/\\s\\+/ /g'" context))))
+    (pen-snc "sed -z 's/\\s\\+/ /g'" (snc "pen-c context-chars" context))))
 
 (defun pen-thing-at-point (&optional only-if-selected)
   (interactive)
