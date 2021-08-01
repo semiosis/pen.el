@@ -296,7 +296,7 @@ if ! test "$vanilla" = "y"; then
     test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
     if ! test "$batch" = "y"; then
-        test -d "$PENEL_DIR" && yn "Pull pen.el repo?" && (
+        test -d "$PENEL_DIR" && yn "Pull pen.el repo? (recommended)" && (
             cd "$PENEL_DIR"
             git pull origin master
         )
