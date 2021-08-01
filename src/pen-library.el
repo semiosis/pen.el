@@ -135,7 +135,8 @@
 
     (setq topic
           (cond
-           ((derived-mode-p 'prog-mode) (concat (detect-language) " " topic))
+           ((derived-mode-p 'prog-mode)
+            (concat (detect-language) " " topic))
            ((string-equal topic "solidity") "solidity, ethereum")
            (t topic)))
 
