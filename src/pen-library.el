@@ -31,8 +31,10 @@
   (if path
       (chomp (pen-sn (concat "realpath " (q path) " 2>/dev/null") nil dir))))
 
+(defalias 'major-mode-enabled 'derived-mode-p)
+
 (defun buffer-file-path ()
-  (if (major-mode-enabled 'eww-mode)
+  (if (derived-mode-p 'eww-mode)
       (or (eww-current-url)
           eww-followed-link)
     (try (f-realpath (or (buffer-file-name)
