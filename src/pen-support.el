@@ -781,4 +781,24 @@ when s is a string, set the clipboard to s"
               (etv def)
             def)))))
 
+;; Example
+(defun gpt-test-haskell ()
+  (let ((lang
+         (pen-detect-language (pen-selected-text))))
+    (message (concat "Language:" lang))
+    (istr-match-p "Haskell" (message lang))))
+
+(defun pen-word-clickable ()
+  (or (not (selected-p))
+      (= 1 (length (s-split " " (selection))))))
+
+(defun identity-command (&optional body)
+  (interactive)
+  (identity body))
+
+;; j:add-to-glossary-file-for-buffer
+(defun pen-define (term)
+  (interactive (list (pen-thing-at-point-ask)))
+  (message (lm-define term t (pen-topic t t))))
+
 (provide 'pen-support)

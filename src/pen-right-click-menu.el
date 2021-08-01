@@ -112,26 +112,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     (unless nowait
       (popup-delete menu))))
 
-;; Example
-(defun gpt-test-haskell ()
-  (let ((lang
-         (pen-detect-language (pen-selected-text))))
-    (message (concat "Language:" lang))
-    (istr-match-p "Haskell" (message lang))))
-
-(defun pen-word-clickable ()
-  (or (not (selected-p))
-      (= 1 (length (s-split " " (selection))))))
-
-(defun identity-command (&optional body)
-  (interactive)
-  (identity body))
-
-;; j:add-to-glossary-file-for-buffer
-(defun pen-define (term)
-  (interactive (list (pen-thing-at-point-ask)))
-  (message (lm-define term t (pen-topic t t))))
-
 ;; TODO Call multiple other context menus by upper predicate
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
