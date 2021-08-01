@@ -108,14 +108,15 @@
 
   (let ((topic
          (cond ((is-glossary-file)
-                (f-mant (f-basename (buffer-file-path))))
+                (f-mant (f-basename (or (buffer-file-path)
+                                        ""))))
                ((derived-mode-p 'org-brain-visualize-mode)
                 (progn (require 'my-org-brain)
                        (org-brain-pf-topic short)))
                (t
                 (let ((current-prefix-arg '(4))) ; C-u
                   ;; Consider getting topic keywords from visible text
-                  (get-path))))))
+                  (get-path nil t))))))
 
     (setq topic
           (cond
