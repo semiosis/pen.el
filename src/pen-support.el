@@ -513,7 +513,7 @@ region-active-p does not work for evil selection."
 (defun pen-selected-text-ignore-no-selection ()
   "Just give me the selected text as a string. If it's empty, then nothing was selected. region-active-p does not work for evil selection."
   (interactive)
-  (pen-selected-text))
+  (pen-selected-text t))
 
 (defalias 'selection 'pen-selected-text-ignore-no-selection)
 
