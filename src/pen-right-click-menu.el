@@ -127,6 +127,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (interactive)
   (identity body))
 
+(defun pen-define (term)
+  (interactive (list (pen-selected-text)))
+  (lm-define term t (pen-topic t)))
+
 ;; TODO Call multiple other context menus by upper predicate
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
@@ -141,13 +145,13 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("correct grammar 2" :call pf-correct-grammar-2 :if (selected-p))
          ("vexate" :call pf-complicated-explanation-of-how-to-x :if (selected-p))
          ("correct English spelling and grammar" :call pf-correct-english-spelling-and-grammar :if (selected-p))
-         ("define term" :call pf-define-word-for-glossary :if (selected-p)))
+         ("define term" :call pen-define :if (selected-p)))
         ("pen (code)"
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y)
          ("add comments" :call pf-annotate-code-with-commentary))
         ("word/term"
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (pen-word-clickable))
-         ("define word" :call pf-define-word-for-glossary :if (pen-word-clickable)))))
+         ("define word" :call pen-define :if (pen-word-clickable)))))
 
 (provide 'pen-right-click-menu)
