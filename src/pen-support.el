@@ -798,7 +798,7 @@ when s is a string, set the clipboard to s"
 
 ;; j:add-to-glossary-file-for-buffer
 (defun pen-define (term)
-  (interactive (list (pen-thing-at-point-ask)))
+  (interactive (list (pen-thing-at-point-ask "word" t)))
   (message (lm-define term t (pen-topic t t))))
 
 (defun pen-extract-keywords ()
