@@ -82,12 +82,13 @@
         (thing (sor (pen-thing-at-point))))
     (if sel
         sel
-      (if (not thing)
-          (setq thing (read-string-hist
-                       (concat
-                        (or (sor prompt "pen-thing-at-point-ask")
-                            "")
-                        ": ")))))
+      (setq thing
+            (read-string-hist
+             (concat
+              (or (sor prompt "pen-thing-at-point-ask")
+                  "")
+              ": ")
+             thing)))
     thing))
 
 (defun pen-detect-language-ask ()
