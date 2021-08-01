@@ -327,6 +327,10 @@ fi
 
 rp="$(realpath "$0")"
 
+if test -d "$PEN_CONFIG_DIR"; then
+    mkdir -p "$PEN_CONFIG_DIR/documents"
+fi
+
 case "$docker_cmd" in
     run) {
 IFS= read -r -d '' shcode <<HEREDOC
