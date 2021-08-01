@@ -128,7 +128,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (identity body))
 
 (defun pen-define (term)
-  (interactive (list (pen-selected-text)))
+  (interactive (list (pen-thing-at-point-ask)))
   (lm-define term t (pen-topic t t)))
 
 ;; TODO Call multiple other context menus by upper predicate
