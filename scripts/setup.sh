@@ -53,6 +53,7 @@ agi expect
 ## sponge
 agi moreutils
 agi jq
+agi neovim
 
 agi tmux
 
