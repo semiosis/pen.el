@@ -121,6 +121,7 @@
                 (pen-single-generation
                  (pf-keyword-extraction
                   (pen-words 40 (pen-selection-or-surrounding-context))
+                  :no-select-result no-select-result
                   ;; :no-select-result t
                   ;; (pen-surrounding-text)
                   ))))))
