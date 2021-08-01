@@ -121,8 +121,9 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("translate" :call pf-translate-from-world-language-x-to-y)
         ("transpile" :call pf-transpile-from-programming-language-x-to-y)
         ("prose"
-         ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (selected-p))
+         ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic)
          ("translate" :call pf-translate-from-world-language-x-to-y)
+         ("paraphrase" :call pf-paraphrase)
          ("tldr" :call pf-tldr-summarization :if (selected-p))
          ("eli5" :call pf-eli5-explain-like-i-m-five :if (selected-p))
          ("correct grammar" :call pf-correct-grammar :if (selected-p))
