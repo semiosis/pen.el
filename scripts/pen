@@ -21,7 +21,7 @@ echo
 echo Version 0.1
 
 IFS= read -r -d '' txt <<HEREDOC
-Pen is under heavy development.
+Pen is under continual development.
 If something is broken, try pulling.
 If it's still broken, try again in a day.
 If it's still broken, please make an issue on GitHub.
