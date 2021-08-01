@@ -12,6 +12,8 @@
 
 ;; Please use H-. to toggle acolyte mode
 
+;; TODO Create a hydra instead of using acolyte-mode
+
 (define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-acolyte-dired-prompts)
 (define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-acolyte-scratch)
 (define-key pen-acolyte-minor-mode-map (kbd "M-s") 'save-buffer)
