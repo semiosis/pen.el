@@ -41,11 +41,11 @@
   (s-join " " (-take n (s-split-words input))))
 
 ;; Great for NLP tasks such as keyword extraction
-(defun pen-selection-or-surrounding-context ()
+(defun pen-selection-or-surrounding-context (&optional window-line-size)
   (let ((context
          (if (selected-p)
              (pen-selected-text)
-           (pen-surrounding-context))))
+           (pen-surrounding-context window-line-size))))
     ;; Correcting the spelling and grammer helps massively
     ;; But it's slow
     (pen-snc "sed -z -e 's/\\s\\+/ /g' -e 's/^\\s*//' -e 's/\\s*$//'"
@@ -56,8 +56,8 @@
     ;;   :no-select-result t))
     ))
 
-(defun pen-surrounding-context ()
-  (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-surrounding-text)))
+(defun pen-surrounding-context (&optional window-line-size)
+  (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-surrounding-text window-line-size)))
 
 (defun pen-thing-at-point (&optional only-if-selected)
   (interactive)
