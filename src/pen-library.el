@@ -114,6 +114,11 @@
                 (let ((current-prefix-arg '(4))) ; C-u
                   ;; Consider getting topic keywords from visible text
                   (get-path))))))
+
+    (setq topic
+          (cond
+           ((string-equal topic "solidity") "solidity, ethereum")))
+
     (if (interactive-p)
         (etv topic)
       topic)))
