@@ -125,7 +125,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("correct grammar 2" :call pf-correct-grammar-2 :if (selected-p))
          ("vexate" :call pf-complicated-explanation-of-how-to-x :if (selected-p))
          ("correct English spelling and grammar" :call pf-correct-english-spelling-and-grammar :if (selected-p))
-         ("define term" :call pen-define :if (selected-p)))
+         ("define term" :call pen-define :if (selected-p))
+         ("bullet points" :call pf-meeting-bullet-points-to-summary :if (selected-p)))
         ("code"
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y)
