@@ -159,4 +159,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   '(("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (pen-word-clickable))
     ("define word" :call pen-define :if (pen-word-clickable))))
 
+(define-key pen-map (kbd "H-m") 'right-click-context-click-menu)
+
 (provide 'pen-right-click-menu)
