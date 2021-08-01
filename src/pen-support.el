@@ -758,4 +758,21 @@ when s is a string, set the clipboard to s"
              unless (> (gethash key table) 1)
              collect key)))
 
+(defun lm-define (term &optional prepend-lm-warning topic)
+  (interactive)
+  (let* ((final-topic
+          (if topic
+              (concat " in the context of " topic)
+            ""))
+         (def
+          (pf-define-word (concat term final-topic))))
+
+    (if (sor def)
+        (progn
+          (if prepend-lm-warning
+              (setq def (concat "NLG: " def)))
+          (if (interactive-p)
+              (etv def)
+            def)))))
+
 (provide 'pen-support)
