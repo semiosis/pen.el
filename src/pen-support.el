@@ -20,7 +20,7 @@
 (defun is-glossary-file (&optional fp)
   ;; This path works also with info
   (setq fp (or fp
-               (get-path)
+               (get-path nil t)
                ""))
 
   (or
