@@ -95,8 +95,11 @@
           ": ")
          thing)))))
 
-(defun pen-detect-language-ask ()
+(defun pen-detect-language-ask (&optional prompt)
   (interactive)
+  (if (not prompt)
+      (setq prompt "Pen detected language"))
+  (setq prompt (concat prompt ": "))
   (let ((langs
          (-uniq-u
           (append
@@ -118,7 +121,7 @@
        langs
        nil
        nil
-       "Pen detected language: "
+       prompt
        nil nil nil nil t))))
 
 (provide 'pen-core)
