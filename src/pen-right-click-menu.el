@@ -129,7 +129,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (defun pen-define (term)
   (interactive (list (pen-selected-text)))
-  (lm-define term t (pen-topic t)))
+  (lm-define term t (pen-topic t t)))
 
 ;; TODO Call multiple other context menus by upper predicate
 (setq right-click-context-global-menu-tree

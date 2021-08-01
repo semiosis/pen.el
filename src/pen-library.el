@@ -102,7 +102,7 @@
 (defun get-path-nocreate ()
   (get-path nil t))
 
-(defun pen-topic (&optional short)
+(defun pen-topic (&optional short semantic-only)
   "Determine the topic used for pen functions"
   (interactive)
 
@@ -113,7 +113,7 @@
                ((derived-mode-p 'org-brain-visualize-mode)
                 (progn (require 'my-org-brain)
                        (org-brain-pf-topic short)))
-               (t
+               ((not semantic-only)
                 (let ((current-prefix-arg '(4))) ; C-u
                   ;; Consider getting topic keywords from visible text
                   (get-path nil t))))))
