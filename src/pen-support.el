@@ -804,9 +804,11 @@ when s is a string, set the clipboard to s"
 (defun pen-extract-keywords ()
   (interactive)
 
-  (etv (str2lines
-        (snc
-         (concat
-          "printf -- '%s\n' " (pf-keyword-extraction (pen-selected-text)))))))
+  (etv
+   (pps
+    (str2lines
+     (snc
+      (concat
+       "printf -- '%s\n' " (pf-keyword-extraction (pen-selected-text))))))))
 
 (provide 'pen-support)
