@@ -49,7 +49,7 @@
     ;; Correcting the spelling and grammer helps massively
     (car
      (pf-correct-english-spelling-and-grammar
-      (pen-snc "sed -z 's/\\s\\+/ /g'" (snc "pen-c context-chars" context))
+      (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-snc "pen-c context-chars" context))
       :no-select-result t))))
 
 (defun pen-surrounding-context ()

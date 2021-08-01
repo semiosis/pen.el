@@ -15,10 +15,10 @@
 ;;   (yaml-parse-string (cat fp)))
 
 (defun yaml2json (yaml-in)
-  (snc "yq ." yaml-in))
+  (pen-snc "yq ." yaml-in))
 
 (defun json2yaml (json-in)
-  (snc "json2yaml" json-in))
+  (pen-snc "json2yaml" json-in))
 
 (defun plist2yaml (plist)
   (json2yaml (json-encode-plist plist)))

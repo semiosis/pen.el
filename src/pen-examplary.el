@@ -80,7 +80,7 @@ The last element in the list is the output/return value"
         (setq gen (eval
                    `(lambda (initial n)
                       (pen-str2list
-                       (snc
+                       (pen-snc
                         (concat
                          (cmd ,gen initial)
                          "| head -n "
@@ -90,7 +90,7 @@ The last element in the list is the output/return value"
     (if (stringp filter)
         (setq filter (eval
                       `(lambda (in)
-                         (snc ,filter in)))))
+                         (pen-snc ,filter in)))))
 
     ;; Generate examples if none
     (if (not examples)
@@ -158,11 +158,11 @@ The last element in the list is the output/return value"
 
 ;; https://github.com/pemistahl/grex
 (defun grex (in)
-  (snc "grex" in))
+  (pen-snc "grex" in))
 
 ;; A gen function must take an initial value and a number for how many to generate
 (defun examplary-edit-generator (initial n)
-  (pen-str2list (snc (concat (cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
+  (pen-str2list (pen-snc (concat (cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
 
 (comment
  ;; so this is a prompt that takes a single input, which is a multiline string
