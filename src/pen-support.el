@@ -809,7 +809,7 @@ when s is a string, set the clipboard to s"
     (str2lines
      (snc
       (concat
-       "printf -- '%s\n' " (pf-keyword-extraction (pen-selected-text) :no-select-result t)))))
+       "printf -- '%s\n' " (pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t))))))
    nil 'emacs-lisp-mode))
 
 (provide 'pen-support)
