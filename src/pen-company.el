@@ -1,7 +1,3 @@
-;; This was interfering with completion
-(setq company-backends '())
-
-
 (defun pen-company-grab-symbol ()
   (buffer-substring (point) (save-excursion (skip-syntax-backward "w_.")
                                             (point))))
