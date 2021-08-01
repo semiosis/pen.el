@@ -163,12 +163,16 @@ case "$f" in
     }
     ;;
 
-    list2args) {
+    commalist2list) {
         sed -z -e "s/^\\s*//" -e "s/\\s*$//" |
         sed -z -e "s/, /\\n/g" -e "s/,$//" |
-            uniqnosort |
-            sed -e 's/^/"/' -e 's/$/"/' |
-            pen-s join ' '
+            uniqnosort
+    }
+    ;;
+
+    list2args) {
+        sed -e 's/^/"/' -e 's/$/"/' |
+        pen-s join ' '
     }
     ;;
 
