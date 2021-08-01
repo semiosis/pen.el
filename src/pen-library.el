@@ -102,7 +102,7 @@
 (defun get-path-nocreate ()
   (get-path nil t))
 
-(defun pen-topic (&optional short semantic-only)
+(cl-defun pen-topic (&optional short semantic-only &key no-select-result)
   "Determine the topic used for pen functions"
   (interactive)
 
@@ -118,10 +118,12 @@
                   ;; Consider getting topic keywords from visible text
                   (get-path nil t)))
                (semantic-only
-                (pf-keyword-extraction
-                 (pen-words 40 (pen-selection-or-surrounding-context))
-                 ;; (pen-surrounding-text)
-                 )))))
+                (pen-single-generation
+                 (pf-keyword-extraction
+                  (pen-words 40 (pen-selection-or-surrounding-context))
+                  ;; :no-select-result t
+                  ;; (pen-surrounding-text)
+                  ))))))
 
     (setq topic
           (cond
