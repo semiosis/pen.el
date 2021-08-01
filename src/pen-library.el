@@ -122,13 +122,13 @@
                     (pen-single-generation
                      (car
                       (pf-keyword-extraction
-                       (pen-words 40 (pen-selection-or-surrounding-context 5))
+                       (pen-words 40 (pen-selection-or-surrounding-context 10))
                        :no-select-result no-select-result
                        ;; :no-select-result t
                        ;; (pen-surrounding-text)
                        )))
                   (pf-keyword-extraction
-                   (pen-words 40 (pen-selection-or-surrounding-context 5))
+                   (pen-words 40 (pen-selection-or-surrounding-context 10))
                    ;; :no-select-result t
                    ;; (pen-surrounding-text)
                    ))))))
