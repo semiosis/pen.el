@@ -106,7 +106,7 @@
 
   (let ((topic
          (cond ((is-glossary-file)
-                (s-replace-regexp "\\..*" "" (f-basename (buffer-file-path))))
+                (f-mant (f-basename (buffer-file-path))))
                ((derived-mode-p 'org-brain-visualize-mode)
                 (progn (require 'my-org-brain)
                        (org-brain-pf-topic short)))

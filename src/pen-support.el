@@ -6,6 +6,14 @@
 ;; (defun f-join (&rest strings)
 ;;   (s-join "/" strings))
 
+(defun f-basename (path)
+  ;; (pen-snc (cmd "basename" path))
+  (s-replace-regexp ".*/" "" path))
+
+(defun f-mant (path)
+  ;; (pen-snc (cmd "mant" path))
+  (s-replace-regexp "\\..*" "" (f-basename path)))
+
 (defun url-found-p (url)
   "Return non-nil if URL is found, i.e. HTTP 200."
   (with-current-buffer (url-retrieve-synchronously url nil t 5)
