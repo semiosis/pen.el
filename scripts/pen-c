@@ -70,6 +70,10 @@ case "$opt" in
         sed 's/[^a-zA-Z0-9_-]\+/ /g'
     } ;;
 
+    context-chars) {
+        sed 's/[^a-zA-Z0-9_. -]\+/ /g'
+    } ;;
+
     char-frequency) {
         awk -f $HOME/var/smulliga/source/git/acmeism/RosettaCodeData/Task/Letter-frequency/AWK/letter-frequency.awk
     } ;;
