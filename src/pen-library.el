@@ -103,7 +103,9 @@
   (interactive)
 
   (let ((topic
-         (cond ((derived-mode-p 'org-brain-visualize-mode)
+         (cond ((is-glossary-file)
+                (s-replace-regexp "\\..*" "" (f-basename (buffer-file-path))))
+               ((derived-mode-p 'org-brain-visualize-mode)
                 (progn (require 'my-org-brain)
                        (org-brain-pf-topic short)))
                (t
