@@ -3,7 +3,8 @@
 (defalias 's-replace-regexp 'replace-regexp-in-string)
 
 (defun f-basename (path)
-  (pen-snc (cmd "basename" path)))
+  ;; (pen-snc (cmd "basename" path))
+  (s-replace-regexp ".*/" "" path))
 
 (defun f-mant (path)
   ;; (pen-snc (cmd "mant" path))
