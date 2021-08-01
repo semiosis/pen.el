@@ -78,13 +78,16 @@
   (interactive)
   ;; If selected, definitely use
   ;; If not selected, verify
-  (let ((thing (sor (pen-thing-at-point))))
-    (if (not thing)
-        (setq thing (read-string-hist
-                     (concat
-                      (or (sor prompt "pen-thing-at-point-ask")
-                          "")
-                      ": "))))
+  (let ((sel (selection))
+        (thing (sor (pen-thing-at-point))))
+    (if sel
+        sel
+      (if (not thing)
+          (setq thing (read-string-hist
+                       (concat
+                        (or (sor prompt "pen-thing-at-point-ask")
+                            "")
+                        ": ")))))
     thing))
 
 (defun pen-detect-language-ask ()
