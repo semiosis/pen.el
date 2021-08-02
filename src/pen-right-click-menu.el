@@ -120,6 +120,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
       `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y)
         ("transpile" :call pf-transpile-from-programming-language-x-to-y)
+        ("explain error" :call pf-explain-error)
         ("prose"
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic)
          ("translate" :call pf-translate-from-world-language-x-to-y :if (selected-p))
