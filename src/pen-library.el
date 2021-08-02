@@ -113,11 +113,12 @@
                ((derived-mode-p 'org-brain-visualize-mode)
                 (progn (require 'my-org-brain)
                        (org-brain-pf-topic short)))
-               ((not semantic-only)
-                (let ((current-prefix-arg '(4))) ; C-u
-                  ;; Consider getting topic keywords from visible text
-                  (get-path nil t)))
-               (semantic-only
+               ;; File path is not a good topic
+               ;; ((not semantic-only)
+               ;;  (let ((current-prefix-arg '(4))) ; C-u
+               ;;    ;; Consider getting topic keywords from visible text
+               ;;    (get-path nil t)))
+               (t
                 (if no-select-result
                     (pen-single-generation
                      (car
