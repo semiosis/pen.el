@@ -17,6 +17,7 @@
 (define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-acolyte-dired-prompts)
 (define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-acolyte-scratch)
 (define-key pen-acolyte-minor-mode-map (kbd "M-s") 'save-buffer)
+(define-key pen-acolyte-minor-mode-map (kbd "M-L") 'pen-show-last-prompt)
 (define-key pen-acolyte-minor-mode-map (kbd "M-r") 'pen-run-prompt-function)
 (define-key pen-acolyte-minor-mode-map (kbd "M-1") #'pen-company-filetype-word)
 (define-key pen-acolyte-minor-mode-map (kbd "M-2") #'pen-company-filetype-words)
