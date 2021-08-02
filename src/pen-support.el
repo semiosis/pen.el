@@ -844,4 +844,10 @@ when s is a string, set the clipboard to s"
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
             ("$HOME" user-home-directory))))
 
+(defun pen-topic-ask (&optional prompt)
+  (setq prompt (sor prompt "pen-topic-ask"))
+  (read-string-hist
+   (concat prompt ": ")
+   (pen-batch (pen-topic t))))
+
 (provide 'pen-support)
