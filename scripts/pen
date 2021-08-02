@@ -143,6 +143,13 @@ case "$sn" in
     ;;
 
     penh) {
+        if test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
+            fun="$1"
+            shift
+
+            set -- "pf-$fun" "$@"
+        fi
+
         show_banner=n
         if test "$#" -eq 0; then
             fun="$(penz)"
