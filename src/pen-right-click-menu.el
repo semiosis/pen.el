@@ -122,6 +122,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("transpile" :call pf-transpile-from-programming-language-x-to-y)
         ("explain error" :call pf-explain-error)
         ("prose"
+         ("Cancel" :call identity-command)
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic)
          ("translate" :call pf-translate-from-world-language-x-to-y :if (selected-p))
          ("paraphrase" :call pf-paraphrase :if (selected-p))
@@ -134,6 +135,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("define term" :call pen-define :if (selected-p))
          ("bullet points -> first-hand account" :call pf-meeting-bullet-points-to-summary :if (selected-p)))
         ("code"
+         ("Cancel" :call identity-command)
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y)
          ("add comments" :call pf-annotate-code-with-commentary))
