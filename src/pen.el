@@ -114,7 +114,7 @@
      (progn
        (cl-loop
         for val in vals do
-        (setq s (string-replace (format "<%d>" i) val s))
+        (setq s (string-replace (format "<%d>" i) (chomp val) s))
         (setq i (+ 1 i)))
        s))))
 
