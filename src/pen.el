@@ -383,17 +383,31 @@
     (etv
      (pps keys))))
 
+(defun pen-prompt-test-merge ()
+  (mu
+   (ht-merge
+    (pen-prompt-file-load "$PROMPTS/davinci.prompt")
+    (pen-prompt-file-load "$PROMPTS/generic-completion-50-tokens.prompt"))))
+
 ;; pdf is prompt description file
 ;; also, check for a key which specifies that a prompt is only for templating
 ;; if it doesn't exist, then set not-template
 (defun pen-prompt-file-load (fp)
-  (let* ((yaml (yamlmod-read-file path))
-         (incl-name (ht-get yaml "include")))
-    (setq yaml
-          (ht-merge (if (sor incl-name)
-                        (pen-prompt-file-load incl-name))
-                    ;; The last is overriding
-                    yaml))
+  (let* ((yaml (yamlmod-read-file fp))
+         (incl-name (sor (ht-get yaml "include")))
+         (incl-fp (if (sor incl-name)
+                      (f-join
+                       pen-prompts-directory
+                       "prompts"
+                       (concat (slugify incl-name) ".prompt"))))
+         (incl-yaml (if (and (sor incl-name)
+                             (f-file-p incl-fp))
+                        (pen-prompt-file-load incl-fp))))
+    (if incl-yaml
+        (setq yaml
+              (ht-merge incl-yaml
+                        ;; The last is overriding
+                        yaml)))
     yaml))
 
 (defun pen-generate-prompt-functions (&optional paths)
@@ -418,7 +432,7 @@ Function names are prefixed with pf- for easy searching"
               ;; ht-merge
 
               ;; results in a hash table
-              (let* ((yaml (yamlmod-read-file path))
+              (let* ((yaml (pen-prompt-file-load path))
 
                      ;; function
                      (title (ht-get yaml "title"))
