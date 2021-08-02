@@ -164,6 +164,8 @@
               (str (or (pen-var-value-maybe 'n-completions)
                        ,n-completions)))
 
+             (subprompts ,subprompts)
+
              (final-prompt ,prompt)
 
              (final-max-tokens
@@ -384,6 +386,7 @@ Function names are prefixed with pf- for easy searching"
 
                      ;; internals
                      (prompt (ht-get yaml "prompt"))
+                     (subprompts (ht-get yaml "subprompts"))
                      (is-info (ht-get yaml "is-info"))
                      (repeater (ht-get yaml "repeater"))
                      (prefer-external (pen-yaml-test yaml "prefer-external"))
