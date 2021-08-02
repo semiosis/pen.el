@@ -142,7 +142,7 @@
   (pen-snc cmd))
 
 (defun tee (fp input)
-  (sn (cmd "tee" fp) input))
+  (pen-sn (cmd "tee" fp) input))
 
 (defun pen-log-final-prompt (prompt)
   (if (f-directory-p penconfdir)
