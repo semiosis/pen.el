@@ -128,7 +128,7 @@
         (let ((key (str (car kv)))
               (val (str (cdr kv))))
           (setq s (string-replace (format "<%s>" key) val s))
-          (setq s (string-replace (format "<%d>" i) val s))
+          ;; (setq s (string-replace (format "<%d>" i) val s))
           (setq i (+ 1 i))))
        s))))
 
@@ -143,6 +143,17 @@
   (if (f-directory-p penconfdir)
       (tee (f-join penconfdir "last-final-prompt.txt") prompt))
   prompt)
+
+(defun test-subprompts ()
+  (interactive)
+  (let ((l (vector2list
+            (ht-get
+             (yamlmod-load (cat (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic.prompt")))
+             "subprompts"))))
+    (etv
+     (pps
+      ;; (ht-merge (car l) (second l))
+      (ht->alist (-reduce 'ht-merge l))))))
 
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
@@ -180,6 +191,10 @@
                        ,n-completions)))
 
              (subprompts ,subprompts)
+
+             (subprompts
+              (if subprompts
+                  (ht->alist (-reduce 'ht-merge (vector2list subprompts)))))
 
              (final-prompt ,prompt)
 
@@ -240,6 +255,8 @@
               (pen-expand-template-keyvals final-prompt var-keyvals))
              (final-prompt
               (pen-expand-template-keyvals final-prompt var-keyvals-slugged))
+             (final-prompt
+              (pen-expand-template-keyvals final-prompt subprompts))
 
              (final-prompt
               (pen-log-final-prompt
