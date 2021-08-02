@@ -151,6 +151,11 @@
               (and (not do-pen-update)
                    (pen-var-value-maybe 'cache)))
 
+             (final-is-info
+              (or (pen-var-value-maybe 'do-etv)
+                  (pen-var-value-maybe 'is-info)
+                  ,is-info))
+
              (final-n-collate
               (or (pen-var-value-maybe 'n-collate)
                   ,n-collate))
@@ -317,7 +322,8 @@
             results
           (if (interactive-p)
               (cond
-               ((>= (prefix-numeric-value current-prefix-arg) 4)
+               ((or final-is-info
+                    (>= (prefix-numeric-value current-prefix-arg) 4))
                 (etv result))
                ;; Filter takes priority over insertion
                ((and ,filter
@@ -378,6 +384,7 @@ Function names are prefixed with pf- for easy searching"
 
                      ;; internals
                      (prompt (ht-get yaml "prompt"))
+                     (is-info (ht-get yaml "is-info"))
                      (repeater (ht-get yaml "repeater"))
                      (prefer-external (pen-yaml-test yaml "prefer-external"))
                      (conversation-mode (pen-yaml-test yaml "conversation-mode"))
