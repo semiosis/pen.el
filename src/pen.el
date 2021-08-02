@@ -118,6 +118,11 @@
         (setq i (+ 1 i)))
        s))))
 
+(defun pen-test-expand-keyvals ()
+  (interactive)
+  (etv (pen-expand-template-keyvals " <y> <thing> " '(("thing" . "yo")
+                                                      ("y" . "n")))))
+
 (defun pen-expand-template-keyvals (s keyvals)
   "expand template from alist"
   (let ((i 1))
@@ -250,13 +255,13 @@
 
              ;; template the parameters into the prompt
              (final-prompt
-              (pen-expand-template final-prompt vals))
+              (pen-expand-template-keyvals final-prompt subprompts))
              (final-prompt
-              (pen-expand-template-keyvals final-prompt var-keyvals))
+              (pen-expand-template final-prompt vals))
              (final-prompt
               (pen-expand-template-keyvals final-prompt var-keyvals-slugged))
              (final-prompt
-              (pen-expand-template-keyvals final-prompt subprompts))
+              (pen-expand-template-keyvals final-prompt var-keyvals))
 
              (final-prompt
               (pen-log-final-prompt
