@@ -132,7 +132,7 @@
         for kv in keyvals do
         (let ((key (str (car kv)))
               (val (str (cdr kv))))
-          (setq s (string-replace (format "<%s>" key) val s))
+          (setq s (string-replace (format "<%s>" key) (chomp val) s))
           ;; (setq s (string-replace (format "<%d>" i) val s))
           (setq i (+ 1 i))))
        s))))
