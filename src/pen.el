@@ -141,8 +141,14 @@
   "This is like pen-snc but it will memoize the function. resultnumber is necessary because we want n unique results per function"
   (pen-snc cmd))
 
+(defun pen-list2cmd (l)
+  (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))))
+
+(defun pen-cmd (&rest args)
+  (pen-list2cmd args))
+
 (defun tee (fp input)
-  (pen-sn (cmd "tee" fp) input))
+  (pen-sn (pen-cmd "tee" fp) input))
 
 (defun pen-log-final-prompt (prompt)
   (if (f-directory-p penconfdir)
