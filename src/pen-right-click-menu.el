@@ -116,6 +116,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (interactive)
   (pf-translate-from-world-language-x-to-y phrase))
 
+(defun pen-asktutor ()
+
+  )
+
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y)

@@ -832,10 +832,10 @@ May use to generate code from comments."
 (defun pen-cmd-q (&rest args)
   (s-join " " (mapcar 'pen-q (mapcar 'str args))))
 
-(defun pen-compose-cli-command ()
+(defun pen-compose-cli-command (funname)
   "This composes a command to run on the CLI"
-  (interactive)
-  (let* ((f (fz pen-prompt-functions nil nil "pen compose cli command: "))
+  (interactive (list (fz pen-prompt-functions nil nil "pen compose cli command: ")))
+  (let* ((f funname)
          (sig (eval-string
                (concat
                 "(apply 'pen-cmd-q '"
