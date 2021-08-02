@@ -715,7 +715,7 @@ May use to generate code from comments."
 (defun pen-compose-cli-command ()
   "This composes a command to run on the CLI"
   (interactive)
-  (let* ((f (fz pen-prompt-functions nil nil "pen run: "))
+  (let* ((f (fz pen-prompt-functions nil nil "pen compose cli command: "))
          (sig (eval-string
                (concat
                 "(apply 'pen-cmd-q '"
