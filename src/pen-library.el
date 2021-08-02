@@ -106,33 +106,36 @@
   "Determine the topic used for pen functions"
   (interactive)
 
-  (let ((topic
-         (cond ((is-glossary-file)
-                (f-mant (f-basename (or (buffer-file-path)
-                                        ""))))
-               ((derived-mode-p 'org-brain-visualize-mode)
-                (progn (require 'my-org-brain)
-                       (org-brain-pf-topic short)))
-               ;; File path is not a good topic
-               ;; ((not semantic-only)
-               ;;  (let ((current-prefix-arg '(4))) ; C-u
-               ;;    ;; Consider getting topic keywords from visible text
-               ;;    (get-path nil t)))
-               (t
-                (if no-select-result
-                    (pen-single-generation
-                     (car
-                      (pf-keyword-extraction
-                       (pen-words 40 (pen-selection-or-surrounding-context 10))
-                       :no-select-result no-select-result
-                       ;; :no-select-result t
-                       ;; (pen-surrounding-text)
-                       )))
-                  (pf-keyword-extraction
-                   (pen-words 40 (pen-selection-or-surrounding-context 10))
-                   ;; :no-select-result t
-                   ;; (pen-surrounding-text)
-                   ))))))
+  (let* ((no-select-result
+          (or no-select-result
+              (pen-var-value-maybe 'do-pen-batch)))
+         (topic
+          (cond ((is-glossary-file)
+                 (f-mant (f-basename (or (buffer-file-path)
+                                         ""))))
+                ((derived-mode-p 'org-brain-visualize-mode)
+                 (progn (require 'my-org-brain)
+                        (org-brain-pf-topic short)))
+                ;; File path is not a good topic
+                ;; ((not semantic-only)
+                ;;  (let ((current-prefix-arg '(4))) ; C-u
+                ;;    ;; Consider getting topic keywords from visible text
+                ;;    (get-path nil t)))
+                (t
+                 (if no-select-result
+                     (pen-single-generation
+                      (car
+                       (pf-keyword-extraction
+                        (pen-words 40 (pen-selection-or-surrounding-context 10))
+                        :no-select-result no-select-result
+                        ;; :no-select-result t
+                        ;; (pen-surrounding-text)
+                        )))
+                   (pf-keyword-extraction
+                    (pen-words 40 (pen-selection-or-surrounding-context 10))
+                    ;; :no-select-result t
+                    ;; (pen-surrounding-text)
+                    ))))))
 
     (setq topic
           (cond
