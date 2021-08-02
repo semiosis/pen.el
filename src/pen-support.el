@@ -833,6 +833,17 @@ when s is a string, set the clipboard to s"
               ,@newtups))))
 (defalias 'seds 'do-substitutions)
 
+(defun pen-mnm (input)
+  "Minimise string."
+  ;; (sh-notty "mnm" input)
+  (if input
+      (seds (umn input)
+            ((f-join pen-prompts-directory "prompts") "$PROMPTS")
+            (user-emacs-directory "$EMACSD")
+            (penconfdir "$PEN")
+            ((f-join user-emacs-directory "pen.el") "$PENEL")
+            (user-home-directory "$HOME"))))
+
 (defun pen-umn (input)
   "Unminimise string."
   (if input
