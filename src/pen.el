@@ -126,7 +126,7 @@
 
 (defun pen-log-final-prompt (prompt)
   (if (f-directory-p penconfdir)
-      (tee (f-join penconfdir "last-final-prompt.txt")))
+      (tee (f-join penconfdir "last-final-prompt.txt") prompt))
   prompt)
 
 ;; Use lexical scope. It's more reliable than lots of params.
@@ -211,7 +211,7 @@
              ;; template the parameters into the prompt
              (i 1)
              (final-prompt
-              (pen-expand-template final-prompt vals))
+              (pen-log-final-prompt (pen-expand-template final-prompt vals)))
 
              (final-prompt (if ,prompt-filter
                                (sor (pen-snc ,prompt-filter final-prompt)
