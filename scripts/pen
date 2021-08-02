@@ -77,9 +77,20 @@ stdin_exists() {
 
 case "$sn" in
     pen|penf) {
-        if test "$sn" = penf || printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
+        if test "$sn" = penf; then
+            if test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
+                fun="$1"
+                shift
+
+                set -- "pf-$fun" "$@"
+            fi
             sn="pen"
 
+        fi
+
+        fun="$1"
+
+        if printf -- "%s\n" "$fun" | grep -q -P '^pf-'; then
             show_banner=n
 
             pfname="$1"
