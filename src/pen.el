@@ -121,6 +121,14 @@
   "This is like pen-snc but it will memoize the function. resultnumber is necessary because we want n unique results per function"
   (pen-snc cmd))
 
+(defun tee (fp input)
+  (sn (cmd "tee" fp) input))
+
+(defun pen-log-final-prompt (prompt)
+  (if (f-directory-p penconfdir)
+      (tee (f-join penconfdir "last-final-prompt.txt")))
+  prompt)
+
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
