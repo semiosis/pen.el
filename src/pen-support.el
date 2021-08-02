@@ -850,4 +850,8 @@ when s is a string, set the clipboard to s"
    (concat prompt ": ")
    (pen-batch (pen-topic t))))
 
+(defun pen-show-last-prompt ()
+  (interactive)
+  (etv (f-read (f-join penconfdir "last-final-prompt.txt"))))
+
 (provide 'pen-support)
