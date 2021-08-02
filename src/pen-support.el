@@ -822,4 +822,29 @@ when s is a string, set the clipboard to s"
   ;; nil 'emacs-lisp-mode
   )
 
+(defun s-replace-regexp-thread (s1 s2 s3)
+  (s-replace-regexp s1 s2 s3 t))
+
+(defmacro do-substitutions (str &rest tups)
+  ""
+  (let* ((newtups (mapcar (lambda (tup) (cons 's-replace-regexp-thread tup)) tups)))
+    `(progn (->>
+                ,str
+              ,@newtups))))
+(defalias 'seds 'do-substitutions)
+
+(defun pen-umn (input)
+  "Unminimise string."
+  ;; (sh-notty "umn" input nil nil nil t)
+  (if input
+      (seds input
+            ("~/" user-home-directory)
+            ("$PROMPTS" (f-join pen-prompts-directory "prompts"))
+            ("$EMACSD" user-emacs-directory)
+            ("$PEN" penconfdir)
+            ("$PEN" penconfdir)
+            ("$HOME" user-home-directory)))
+  ;; b_umn must be t
+  )
+
 (provide 'pen-support)

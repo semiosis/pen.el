@@ -41,7 +41,7 @@
   '(
     ;; pf-generic-file-type-completion
     ;; pf-generic-completion-200-tokens-max
-    ;; pf-generic-completion-50-tokens-max-hash
+    ;; pf-generic-completion-50-tokens
     ;; pf-shell-bash-terminal-command-completion
     pen-company-filetype
     company-complete

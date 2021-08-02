@@ -108,6 +108,7 @@
         nil))))
 
 (defun pen-expand-template (s vals)
+  "expand template from list"
   (let ((i 1))
     (chomp
      (progn
@@ -115,6 +116,20 @@
         for val in vals do
         (setq s (string-replace (format "<%d>" i) val s))
         (setq i (+ 1 i)))
+       s))))
+
+(defun pen-expand-template-keyvals (s keyvals)
+  "expand template from alist"
+  (let ((i 1))
+    (chomp
+     (progn
+       (cl-loop
+        for kv in keyvals do
+        (let ((key (str (car kv)))
+              (val (str (cdr kv))))
+          (setq s (string-replace (format "<%s>" key) val s))
+          (setq s (string-replace (format "<%d>" i) val s))
+          (setq i (+ 1 i))))
        s))))
 
 (defun pen-prompt-snc (cmd resultnumber)
@@ -346,6 +361,20 @@
   (mapconcat 'identity (mapcar (lambda (s) (concat "- " s)) l)
              "\n"))
 
+(defun test-subprompts ()
+  (interactive)
+  (let* ((subprompts
+          (vector2list
+           (ht-get
+            (yamlmod-load
+             (cat
+              (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic.prompt")))
+            "subprompts")))
+         (keys (type (car (vector2list subprompts)))))
+
+    (etv
+     (pps keys))))
+
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
@@ -386,7 +415,10 @@ Function names are prefixed with pf- for easy searching"
 
                      ;; internals
                      (prompt (ht-get yaml "prompt"))
-                     (subprompts (ht-get yaml "subprompts"))
+                     (subprompts
+                      (let ((subprompts (ht-get yaml "subprompts")))
+                        (if subprompts
+                            (vector2list subprompts))))
                      (is-info (ht-get yaml "is-info"))
                      (repeater (ht-get yaml "repeater"))
                      (prefer-external (pen-yaml-test yaml "prefer-external"))
@@ -720,7 +752,7 @@ Function names are prefixed with pf- for easy searching"
   (if (and (derived-mode-p 'prog-mode)
            (not (string-equal (buffer-name) "*scratch*")))
       (eval `(pf-generic-file-type-completion (pen-detect-language) preceding-text ,@args))
-    (eval `(pf-generic-completion-50-tokens-max-hash preceding-text ,@args))))
+    (eval `(pf-generic-completion-50-tokens preceding-text ,@args))))
 
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
