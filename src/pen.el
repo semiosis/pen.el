@@ -470,10 +470,7 @@ Function names are prefixed with pf- for easy searching"
 
                      ;; internals
                      (prompt (ht-get yaml "prompt"))
-                     (subprompts
-                      (let ((subprompts (ht-get yaml "subprompts")))
-                        (if subprompts
-                            (vector2list subprompts))))
+                     (subprompts (ht-get yaml "subprompts"))
                      (is-info (ht-get yaml "is-info"))
                      (repeater (ht-get yaml "repeater"))
                      (prefer-external (pen-yaml-test yaml "prefer-external"))
