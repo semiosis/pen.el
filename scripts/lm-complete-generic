@@ -5,10 +5,27 @@
 # export PEN_ environment variables
 # openai-complete.sh
 
-# OPENAI_API_KEY="insert key here and uncomment this line"
+sn="$(basename "$0")"
 
-: "${OPENAI_API_KEY:="$PEN_LM_KEY"}"
-export OPENAI_API_KEY
+case "$sn" in
+    aix-complete.sh) {
+        completer_sn=pen-aix
+        : "${AIX_API_KEY:="$PEN_LM_KEY"}"
+        export AIX_API_KEY
+    }
+    ;;
+
+    openai-complete.sh|openai-*|*) {
+        completer_sn=pen-openai
+        : "${OPENAI_API_KEY:="$PEN_LM_KEY"}"
+        export OPENAI_API_KEY
+
+        # Default for OpenAI is davinci
+        : "${PEN_ENGINE:="davinci"}"
+        : "${PEN_ENGINE:="curie"}"
+    }
+    ;;
+esac
 
 p () {
     {
@@ -57,7 +74,7 @@ if test "$PEN_DEBUG" = "y"; then
     exit 1
 fi
 
-# tf_prompt="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
+# tf_prompt="$(mktemp -t "lm_results_XXXXXX.txt" 2>/dev/null)"
 # trap "rm \"$tf_prompt\" 2>/dev/null" 0
 
 # Default for OpenAI is davinci
@@ -74,7 +91,7 @@ test -n "$PEN_PROMPT" || {
 : "${PEN_TOP_P:="1"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 
-tf_response="$(mktemp -t "openai_api_XXXXXX.txt" 2>/dev/null)"
+tf_response="$(mktemp -t "lm_results_XXXXXX.txt" 2>/dev/null)"
 trap "rm \"$tf_response\" 2>/dev/null" 0
 
 # This actually evaluates the newlines, but it also trims the prompt at the ends
@@ -83,14 +100,22 @@ PEN_PROMPT="$(p "$PEN_PROMPT")"
 IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE");typeset -p PEN_STOP_SEQUENCE &>/dev/null
 
 # Will it complain if PEN_STOP_SEQUENCE is empty?
-pen-openai api \
-    completions.create \
-    -e "$PEN_ENGINE" \
-    -t "$PEN_TEMPERATURE" \
-    -M "$PEN_MAX_TOKENS" \
-    -n "$PEN_N_COMPLETIONS" \
-    --stop "$PEN_STOP_SEQUENCE" \
-    -p "$PEN_PROMPT" > "$tf_response"
+
+case "$sn" in
+    openai-complete.sh|openai-*|*) {
+        "$completer_sn" api \
+            completions.create \
+            -e "$PEN_ENGINE" \
+            -t "$PEN_TEMPERATURE" \
+            -M "$PEN_MAX_TOKENS" \
+            -n "$PEN_N_COMPLETIONS" \
+            --stop "$PEN_STOP_SEQUENCE" \
+            -p "$PEN_PROMPT" > "$tf_response"
+    }
+    ;;
+
+    *)
+esac
 
 : "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
 

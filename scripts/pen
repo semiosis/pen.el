@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# TODO Add ability to share a file or entiry directory with the host -- this would only work for docker run though
+# TODO Add ability to share a file or entire directory with the host -- this would only work for docker run though
 # But file sharing could work with the client if I use a hardlink to the ~/.pen/documents directory
 # docker run --rm -v "$(pwd):/$(pwd | slugify)" -w "/$(pwd | slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh  
 
@@ -16,20 +16,13 @@ IFS= read -r -d '' banner <<HEREDOC
               [0;1;35;95mPr[0;1;31;91mom[0;1;33;93mpt[0m [0;1;32;92mE[0;1;36;96mng[0;1;34;94min[0;1;35;95mee[0;1;31;91mri[0;1;33;93mng[0m [0;1;32;92mi[0;1;36;96mn[0m [0;1;34;94mEm[0;1;35;95mac[0;1;31;91ms[0m
 HEREDOC
 
-printf -- "%s\n" "$banner" 1>&2
-echo
-echo Version 0.1
-
-IFS= read -r -d '' txt <<HEREDOC
+IFS= read -r -d '' info_txt <<HEREDOC
 Pen is under continual development.
 If something is broken, try pulling.
 If it's still broken, try again in a day.
 If it's still broken, please make an issue on GitHub.
 https://github.com/semiosis/pen.el/
 HEREDOC
-
-printf -- "%s\n" "$txt" 1>&2
-echo 1>&2
 
 is_tty() { [ -t 1 ]; }
 
@@ -85,6 +78,8 @@ stdin_exists() {
 case "$sn" in
     pen) {
         if printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
+            show_banner=n
+
             pfname="$1"
             shift
 
@@ -116,22 +111,26 @@ case "$sn" in
     ;;
 
     pene) {
+        show_banner=n
         set -- -e "$@"
     }
     ;;
 
     penu) {
+        show_banner=n
         UPDATE=y
         set -- -e "$@"
     }
     ;;
 
     penl) {
+        show_banner=n
         set -- -e '(pen-list2str pen-prompt-functions)'
     }
     ;;
 
     penh) {
+        show_banner=n
         if test "$#" -eq 0; then
             fun="$(penz)"
         else
@@ -142,17 +141,20 @@ case "$sn" in
     ;;
 
     penq) {
+        show_banner=n
         set -- -e "(kill-emacs)"
     }
     ;;
 
     penz) {
+        show_banner=n
         fuzzy=y
         set -- -e '(pen-list2str pen-prompt-functions)'
     }
     ;;
 
     *) {
+        show_banner=n
         if stdin_exists; then
             set -- "$(cat)" "$@"
         fi
@@ -166,6 +168,17 @@ case "$sn" in
     }
     ;;
 esac
+
+{
+if ! test "$show_banner" = n; then
+    printf -- "%s\n" "$banner"
+    echo
+    echo Version 0.1
+
+    printf -- "%s\n" "$info_txt"
+    echo
+fi
+} 1>&2
 
 : "${docker_cmd:="run"}"
 remote_cmd=./run.sh
