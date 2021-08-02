@@ -230,8 +230,8 @@
                                          ,repeater))
                              final-prompt))
 
-             (var-keyvals (-zip vars vals))
-             (var-keyvals-slugged (-zip var-slugs vals))
+             (var-keyvals (-zip ,vars vals))
+             (var-keyvals-slugged (-zip ,var-slugs vals))
 
              ;; template the parameters into the prompt
              (final-prompt
