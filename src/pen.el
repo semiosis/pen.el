@@ -383,6 +383,12 @@
     (etv
      (pps keys))))
 
+;; pdf is prompt description file
+;; also, check for a key which specifies that a prompt is only for templating
+(defun pen-prompt-file-merge (previous-pdf fp)
+  (let* ((yaml (yamlmod-read-file path))
+         (inc (ht-get yaml "include")))))
+
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
@@ -400,6 +406,9 @@ Function names are prefixed with pf- for easy searching"
                (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))))
      (cl-loop for path in paths do
               (message (concat "pen-mode: Loading .prompt file " path))
+
+              ;; Do a recursive prompt merge from includes
+              ;; ht-merge
 
               ;; results in a hash table
               (let* ((yaml (yamlmod-read-file path))
