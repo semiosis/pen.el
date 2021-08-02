@@ -230,15 +230,23 @@
                                          ,repeater))
                              final-prompt))
 
-             ;; template the parameters into the prompt
-             (i 1)
-             (final-prompt
-              (pen-log-final-prompt (pen-expand-template final-prompt vals)))
+             (var-keyvals (-zip vars vals))
+             (var-keyvals-slugged (-zip var-slugs vals))
 
-             (final-prompt (if ,prompt-filter
-                               (sor (pen-snc ,prompt-filter final-prompt)
-                                    (concat "prompt-filter " ,prompt-filter " failed."))
-                             final-prompt))
+             ;; template the parameters into the prompt
+             (final-prompt
+              (pen-expand-template final-prompt vals))
+             (final-prompt
+              (pen-expand-template-keyvals final-prompt var-keyvals))
+             (final-prompt
+              (pen-expand-template-keyvals final-prompt var-keyvals-slugged))
+
+             (final-prompt
+              (pen-log-final-prompt
+               (if ,prompt-filter
+                   (sor (pen-snc ,prompt-filter final-prompt)
+                        (concat "prompt-filter " ,prompt-filter " failed."))
+                 final-prompt)))
 
              ;; This gives string position, not byte position
              ;; (string-search "s" "ガムツリshane")
