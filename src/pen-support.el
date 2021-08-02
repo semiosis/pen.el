@@ -835,16 +835,13 @@ when s is a string, set the clipboard to s"
 
 (defun pen-umn (input)
   "Unminimise string."
-  ;; (sh-notty "umn" input nil nil nil t)
   (if input
       (seds input
             ("~/" user-home-directory)
             ("$PROMPTS" (f-join pen-prompts-directory "prompts"))
             ("$EMACSD" user-emacs-directory)
             ("$PEN" penconfdir)
-            ("$PEN" penconfdir)
-            ("$HOME" user-home-directory)))
-  ;; b_umn must be t
-  )
+            ("$PENEL" (f-join user-emacs-directory "pen.el"))
+            ("$HOME" user-home-directory))))
 
 (provide 'pen-support)
