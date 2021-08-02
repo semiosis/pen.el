@@ -160,7 +160,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
              (eval value)))))))
 
 (def-right-click-menu rcm-term
-  '(("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (pen-word-clickable))
+  '(("Cancel" :call identity-command)
+    ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (pen-word-clickable))
     ("define word" :call pen-define :if (pen-word-clickable))))
 
 (define-key pen-map (kbd "H-m") 'right-click-context-menu)
