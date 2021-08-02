@@ -385,9 +385,16 @@
 
 ;; pdf is prompt description file
 ;; also, check for a key which specifies that a prompt is only for templating
-(defun pen-prompt-file-merge (previous-pdf fp)
+;; if it doesn't exist, then set not-template
+(defun pen-prompt-file-load (fp)
   (let* ((yaml (yamlmod-read-file path))
-         (inc (ht-get yaml "include")))))
+         (incl-name (ht-get yaml "include")))
+    (setq yaml
+          (ht-merge (if (sor incl-name)
+                        (pen-prompt-file-load incl-name))
+                    ;; The last is overriding
+                    yaml))
+    yaml))
 
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
