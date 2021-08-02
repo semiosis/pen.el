@@ -709,6 +709,25 @@ May use to generate code from comments."
         (etv response)
       (insert response))))
 
+(defun pen-cmd-q (&rest args)
+  (s-join " " (mapcar 'pen-q (mapcar 'str args))))
+
+(defun pen-compose-cli-command ()
+  "This composes a command to run on the CLI"
+  (interactive)
+  (let* ((f (fz pen-prompt-functions nil nil "pen run: "))
+         (sig (eval-string
+               (concat
+                "(apply 'pen-cmd-q '"
+                (string-replace
+                 " &optional" ""
+                 (s-replace-regexp
+                  " &key.*" ")"
+                  (helpful--signature (intern f))))
+                ")"))))
+    (if f
+        (xc (concat "pen " sig)))))
+
 (require 'pen-core)
 (require 'pen-openai)
 (require 'pen-copilot)
