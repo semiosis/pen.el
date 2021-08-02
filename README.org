@@ -62,6 +62,8 @@ https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
 
 ** Tutorials
 - [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
+- https://mullikine.github.io/tags/pen/
+  - Many articles on Pen
 
 ** Special features
 - Client/server model
