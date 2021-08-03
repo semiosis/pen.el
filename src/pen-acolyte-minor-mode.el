@@ -19,10 +19,14 @@
 (defun pen-delete-frame ()
   (interactive)
   (cond
-   ((= (length (frame-list)) 1)
-    (if (yn "Quit Pen?")
-        (delete-frame)))
-   (t (delete-frame))))
+   (t (if (yn "Close Pen frame?")
+          (delete-frame)))
+   ;; I need a better way of checking for the main frame
+   ;; ((= (length (frame-list)) 1)
+   ;;  (if (yn "Quit Pen?")
+   ;;      (delete-frame)))
+   ;; (t (delete-frame))
+   ))
 
 (define-key pen-acolyte-minor-mode-map (kbd "M-q") 'pen-delete-frame)
 (define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-acolyte-dired-prompts)
