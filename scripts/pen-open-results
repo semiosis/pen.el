@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo chown -R $USER:$USER ~/.pen
+xdg-open ~/.pen/results
