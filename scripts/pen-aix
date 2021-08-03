@@ -33,9 +33,7 @@ if __name__ == "__main__":
     example_instance = AIXInterface(aix_resource)
 
     prompt_completion = example_instance.prompt_completion()
-    gpt_response = str(prompt_completion.get("data", dict()).get("text"))
-
-    print("-" * 250)
+    gpt_response = str(prompt_completion.get("data", dict()).get(os.environ.get["PEN_PROMPT"]))
 
     print(gpt_response)
 <
