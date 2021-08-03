@@ -1,5 +1,7 @@
 #!/bin/bash
 
+stty stop undef; stty start undef
+
 # Debian10 run Pen
 
 # export PEN_DEBUG=y
