@@ -12,6 +12,8 @@ case "$sn" in
         completer_sn=pen-aix
         : "${AIX_API_KEY:="$PEN_LM_KEY"}"
         export AIX_API_KEY
+
+        : "${PEN_ENGINE:="GPT-J-6B"}"
     }
     ;;
 
@@ -90,6 +92,11 @@ test -n "$PEN_PROMPT" || {
 : "${PEN_TEMPERATURE:="0.8"}"
 : "${PEN_TOP_P:="1"}"
 : "${PEN_N_COMPLETIONS:="1"}"
+
+export PEN_MAX_TOKENS
+export PEN_TEMPERATURE
+export PEN_TOP_P
+export PEN_STOP_SEQUENCE
 
 tf_response="$(mktemp -t "lm_results_XXXXXX.txt" 2>/dev/null)"
 trap "rm \"$tf_response\" 2>/dev/null" 0
