@@ -9,7 +9,7 @@
 
     ("EleutherAI GPT-J API from AIX"
      "aix-complete.sh"
-     ("6B")
+     ("GPT-J-6B")
      "available")
 
     ("EleutherAI GPT-J"
