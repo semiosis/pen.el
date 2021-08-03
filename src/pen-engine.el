@@ -4,4 +4,6 @@
 ;; It should also provide redundancy
 ;; Detect what engines are available and select one
 
+(require 'pen-configure)
+
 (provide 'pen-engine)
