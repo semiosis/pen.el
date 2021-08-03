@@ -1,5 +1,7 @@
 #!/bin/bash
 
+: "${OPENAI_API_KEY:="$PEN_LM_KEY"}"
+
 if test -s $HOME/.pen/openai_api_key; then
     : "${OPENAI_API_KEY:="$(cat $HOME/.pen/openai_api_key)"}"
 fi

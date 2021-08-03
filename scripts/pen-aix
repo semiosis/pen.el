@@ -1,5 +1,7 @@
 #!/bin/bash
 
+: "${AIX_API_KEY:="$PEN_LM_KEY"}"
+
 if test -s $HOME/.pen/aix_api_key; then
     : "${AIX_API_KEY:="$(cat $HOME/.pen/aix_api_key)"}"
 fi
