@@ -156,6 +156,14 @@
           ;; Automatically check if OpenAI key exists and ask for it otherwise
           (call-interactively 'pen-add-key-openai)))))
 
+(let ((pen-aix-key-file-path (f-join penconfdir "aix_api_key")))
+  (if (not (f-file-p pen-aix-key-file-path))
+      (let ((envkey (getenv "AIX_API_KEY")))
+        (if (sor envkey)
+            (pen-add-key-aix envkey)
+          ;; Automatically check if Aix key exists and ask for it otherwise
+          (call-interactively 'pen-add-key-aix)))))
+
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
 
 (memoize-restore 'pen-prompt-snc)
