@@ -14,6 +14,17 @@
 
 ;; TODO Create a hydra instead of using acolyte-mode
 
+(defalias 'yn 'yes-or-no-p)
+
+(defun pen-delete-frame ()
+  (interactive)
+  (cond
+   ((= (length (frame-list)) 1)
+    (if (yn "Quit Pen?")
+        (delete-frame)))
+   (t (delete-frame))))
+
+(define-key pen-acolyte-minor-mode-map (kbd "M-q") 'pen-delete-frame)
 (define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-acolyte-dired-prompts)
 (define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-acolyte-scratch)
 (define-key pen-acolyte-minor-mode-map (kbd "M-s") 'save-buffer)
