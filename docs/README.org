@@ -22,10 +22,9 @@
     - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
   - [ ] Make use of arbitrarily many git repositories that store prompts
     - Load a repository such as this: https://github.com/semiosis/prompts
-  - [ ] pen.el core
   - [ ] Quinification
     - Allow Pen to interface with a dockerized version of itself
-      - This way, =pen.el= may be easily turned into a melpa package and installed into emacs without
+      - This way, =pen.el= may be easily turned into a melpa package and installed into people's emacs configs without risk
 + Stage 3
   - [ ] Incorporate OpenAI's Codex model, which should be available at this stage.
   - [ ] vim
