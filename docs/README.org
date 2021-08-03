@@ -1,14 +1,14 @@
 * Pen project timeline
 + Stage 1 - This is a dockerized =pen.el= that makes use of both GPT-3 and GPT-j.
-  + Implementation [3/5]
+  + Implementation [4/5]
     - [X] emacs-lisp functions are generated from YAML =.prompt= files
     - [X] Use built-in elisp functions for portability
     - [ ] Prompt discovery
       - http://github.com/semiosis/prompts/blob/master/README.org
       - http://github.com/semiosis/prompts/blob/master/prompt-repositories.txt
-    - [ ] Select backend interface in emacs
-      - [ ] Shell interface to OpenAI to python
-      - [ ] GPT-j interface
+    - [X] Select backend interface in emacs
+      - [X] Shell interface to OpenAI to python
+      - [X] GPT-j interface
         - [[./gpt-j.org]]
     - [X] Dockerize Pen
       - https://github.com/semiosis/pen-docker/
@@ -16,12 +16,14 @@
   - [ ] Generations stored in Datomic
     - https://semiosis.github.io/posts/representing-multiverses-with-datomic/
   - [ ] Prompts stored in Datomic
-  - [ ] Auto-installer
+  - [X] Auto-installer
   - [ ] Dockerized Web-facing Emacs application
   - [ ] Prompt Catalogue
     - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
   - [ ] Make use of arbitrarily many git repositories that store prompts
     - Load a repository such as this: https://github.com/semiosis/prompts
+  - [ ] Quinification
+    - Allow Pen.el to interface with a dockerized version of itself
 + Stage 3
   - [ ] Incorporate OpenAI's Codex model, which should be available at this stage.
   - [ ] vim
