@@ -3,37 +3,9 @@
 from aixapi import AIxResource
 import os
 
-
-class AIXInterface:
-    __resource = None
-
-    def __init__(self, resource):
-        """
-        Initializes an instance of AIXInterface.
-        Initialize the class and then call one of the functions.
-        :param resource: an instance of AIxResource
-        """
-        assert type(resource) == AIxResource
-        self.__resource = resource
-
-    def prompt_completion(self):
-        """
-        Sends a simple push notification.
-        :return: the result of the call to push
-        """
-        response = self.__resource.compose("Hello!")
-        return response
-
+# Get your API Key at apps.aixsolutionsgroup.com
 
 if __name__ == "__main__":
-    # Get your API Key at apps.aixsolutionsgroup.com
-    api_key = os.environ.get["AIX_API_KEY"]
+    api_key = os.environ.get("AIX_API_KEY")
     aix_resource = AIxResource(api_key)
-
-    example_instance = AIXInterface(aix_resource)
-
-    prompt_completion = example_instance.prompt_completion()
-    gpt_response = str(prompt_completion.get("data", dict()).get(os.environ.get["PEN_PROMPT"]))
-
-    print(gpt_response)
-<
+    print(str(aix_resource.compose(os.environ.get("PEN_PROMPT")).get("data", dict()).get("text")))
