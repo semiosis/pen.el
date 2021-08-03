@@ -93,6 +93,7 @@ test -n "$PEN_PROMPT" || {
 : "${PEN_TOP_P:="1"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 
+export PEN_ENGINE
 export PEN_MAX_TOKENS
 export PEN_TEMPERATURE
 export PEN_TOP_P
