@@ -40,6 +40,8 @@
 (define-key pen-acolyte-minor-mode-map (kbd "M-4") #'pen-company-filetype-long)
 (define-key pen-acolyte-minor-mode-map (kbd "M-j") #'pf-gpt-j)
 (define-key pen-acolyte-minor-mode-map (kbd "M-u") 'global-argument)
+(define-key pen-acolyte-minor-mode-map (kbd "M-o") 'pen-add-key-openai)
+(define-key pen-acolyte-minor-mode-map (kbd "M-a") 'pen-add-key-aix)
 
 ;; M-TAB
 (define-key pen-acolyte-minor-mode-map (kbd "M-TAB") 'pen-company-filetype)
