@@ -1,4 +1,5 @@
 #!/bin/bash
 
-sudo chown -R $USER:$USER ~/.pen
+test -d ~/.pen && sudo chown -R $USER:$USER ~/.pen
+mkdir -p ~/.pen/results
 xdg-open ~/.pen/results
