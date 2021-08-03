@@ -15,7 +15,7 @@ if __name__ == "__main__":
             aix_resource.compose(
                 os.environ.get("PEN_PROMPT"),
                 response_length=int(os.environ.get("PEN_MAX_TOKENS")),
-a                top_p=float(os.environ.get("PEN_TOP_P")),
+                top_p=float(os.environ.get("PEN_TOP_P")),
                 temperature=float(os.environ.get("PEN_TEMPERATURE")),
                 stop_sequence=os.environ.get("PEN_STOP_SEQUENCE"),
             )
