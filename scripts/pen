@@ -203,6 +203,17 @@ fi
 : "${docker_cmd:="run"}"
 remote_cmd=./run.sh
 
+opt="$1"
+case "$opt" in
+    uninstall) {
+        set -xv
+        sudo rm -irf ~/.pen
+    }
+    ;;
+
+    *)
+esac
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -c) {
