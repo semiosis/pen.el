@@ -42,11 +42,9 @@ It's completely free, libre and open-source.
 [[./docs/images/the_pen_of_imagination.png]]
 
 ** Information
-*** Supported language models
-- [[./docs/compatibility-and-interoperatbility.org]]
+- Supported language models :: - [[./docs/compatibility-and-interoperatbility.org]]
 
-*** Thesis
-https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
+- Thesis :: https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
 
 - Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
 
