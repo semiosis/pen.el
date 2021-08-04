@@ -307,7 +307,7 @@ You may select from one of the roles/tasks.
 *** Installation
 [[./installation.org]]
 
-** Appendix
+** Information and Learning Material
 *** Prompt engineering
 **** Learning material
 - https://generative.ink/posts/methods-of-prompt-programming/
