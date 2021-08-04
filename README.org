@@ -306,7 +306,7 @@ You may select from one of the roles/tasks.
 - https://mullikine.github.io/posts/creating-a-playground-for-gpt-3-in-emacs/
 - https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/
 
-**** Examples of usage
+**** Demos and examples of usage
 - https://mullikine.github.io/posts/pen-el-the-first-ide-for-eleutherai-and-openai/
 - https://mullikine.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
 - https://mullikine.github.io/posts/how-to-use-pen-el-to-autocomplete-your-code/
