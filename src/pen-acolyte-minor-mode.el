@@ -29,6 +29,7 @@
    ))
 
 (define-key pen-acolyte-minor-mode-map (kbd "M-q") 'pen-delete-frame)
+(define-key pen-acolyte-minor-mode-map (kbd "M-Q") 'kill-emacs)
 (define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-acolyte-dired-prompts)
 (define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-acolyte-scratch)
 (define-key pen-acolyte-minor-mode-map (kbd "M-s") 'save-buffer)
