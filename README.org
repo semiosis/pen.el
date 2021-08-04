@@ -307,12 +307,6 @@ You may select from one of the roles/tasks.
 *** Installation
 [[./installation.org]]
 
-*** Discord channel
-860104344900599839
-
-*** Any missing functions available here
-https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
-
 ** Appendix
 *** Prompt engineering
 **** Learning material
