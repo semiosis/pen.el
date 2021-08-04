@@ -1,0 +1,31 @@
+** Related projects
+I would love some help with these projects! :)
+
+*** =examplary=
+Examplary is a Domain Specific Language, or
+set of macros embedded in lisp which
+facilitate the integration of prompts as
+functions into the language, the
+composition of them, the generation of prompts
+via sets of examples.
+
+https://github.com/semiosis/examplary
+
+*** =lm-complete=
+=lm-complete= is a language completer that aims
+to unify a bunch of alternative completion under one umbrella.
+
+https://github.com/semiosis/lm-complete
+
+**** This book by Mark Watson provides some reasonable blueprints
+https://leanpub.com/clojureai
+
+*** =ink.el=: A DSL that encodes provenience
+- Encode into the text the origin of the text
+
+https://github.com/semiosis/ink.el
+
+*** =openai-api.el=
+- An interface for emacs to the OpenAI API.
+
+https://github.com/semiosis/openai-api.el
