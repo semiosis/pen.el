@@ -33,7 +33,7 @@
          (query (pen-cl-sn (concat "gen-github-query " (mapconcat 'pen-q args " ") " " (string-or keywords "main")) :chomp t)))
     (eegh query)))
 
-(defset github-key-value-predicates
+(defset pen-github-key-value-predicates
   ;; prefix with - to invert i.e. -inurl:
   (list ;; "ext"
    "repo"
@@ -44,7 +44,7 @@
    "language"
    "license"))
 
-(pen-create-transient "github" github-key-value-predicates 'github-transient-search 'github-transient-search-with-keywords t)
+(pen-create-transient "github" pen-github-key-value-predicates 'github-transient-search 'github-transient-search-with-keywords t)
 (define-key pen-map (kbd "H-? h") 'github-transient)
 
 (provide 'pen-transient)
