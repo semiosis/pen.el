@@ -108,7 +108,7 @@ The following is an example of asking about VSCode.
 
 Keep in mind, EleutherAI GPT models can be run
 offline and in private if you have the storage
-capacity, memory or video card memory to run them.
+capacity, memory and video card memory to run them.
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim raw
   (list2str (pen-long-complete (pf-asktutor "vscode" "packages" "What are some useful packages?" :no-select-result t)))
