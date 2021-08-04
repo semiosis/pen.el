@@ -94,10 +94,19 @@
     (string-replace "\\n" "<pen-notnewline>")
     (string-replace "$" "<pen-dollar>")))
 
+;; This is necessary because the string-search
+;; command is not available in emacs27
+(defun pen-string-search (needle haystack &optional start-pos)
+  (setq start-pos (or start-pos 0))
+  (let ((results (s-matched-positions-all needle haystack)))
+    (cl-loop for tp in results
+             if (>= (car tp) start-pos)
+             return (car tp))))
+
 (defun byte-string-search (needle haystack)
   "get byte position or needing in haystack"
   (let ((b (new-buffer-from-string haystack))
-        (pos (string-search needle haystack)))
+        (pos (pen-string-search needle haystack)))
     (if pos
         (with-current-buffer b
           (let ((y (position-bytes pos)))
@@ -362,7 +371,7 @@
                                (mapcar (lambda (r)
                                          (cl-loop
                                           for stsq in final-stop-sequences do
-                                          (let ((matchpos (string-search stsq r)))
+                                          (let ((matchpos (pen-string-search stsq r)))
                                             (if matchpos
                                                 (setq r (s-truncate matchpos r "")))))
                                          r)))
