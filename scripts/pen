@@ -1,6 +1,8 @@
 #!/bin/bash
 
+{
 stty stop undef; stty start undef
+} 2>/dev/null
 
 # TODO Add ability to share a file or entire directory with the host -- this would only work for docker run though
 # But file sharing could work with the client if I use a hardlink to the ~/.pen/documents directory
