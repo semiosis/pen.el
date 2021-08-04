@@ -95,8 +95,9 @@ to select one of the results.
 GPT-3 can automate emacs by combining prompts
 with code. For example, you may parse the
 results of the above function to automate
-workflow, or even to play tetris, or with a
-rubiks cube.
+a workflow.
+
+You could even try to play tetris, or with a rubiks cube.
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
   (message (scrape "(Right|Left)" (car (pf-asktutor "tetris" "strategies" "Should I place the L brick right?" :no-select-result t))))
