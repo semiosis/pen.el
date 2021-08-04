@@ -8,7 +8,10 @@ variety of configurable ways.
 Copilot, =conversion.ai=, mind mapping
 software (based on GPT-3) etc. all rolled into
 one package and allows you to extend emacs
-with GPT wherever your mind takes you.
+with GPT wherever your mind takes you. It's a
+LM that can generate multiversal continuations
+from within and extrapolating from the
+training set domain that it was trained on.
 
 =Pen.el= facilitates the creation,
 development, discovery and usage of prompts to
