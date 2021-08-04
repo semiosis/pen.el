@@ -81,6 +81,17 @@ stdin_exists() {
 
 case "$sn" in
     pen|penf) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -all) {
+                all=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
         if test "$sn" = penf; then
             if test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
                 fun="$1"
@@ -108,10 +119,18 @@ case "$sn" in
 
             CMD="$(cmd-nice "$@")"
 
-            if test "$UPDATE" = y; then
-                set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t))))"
+            if test "$all" = "y"; then
+                if test "$UPDATE" = y; then
+                    set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t))))"
+                else
+                    set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t)))"
+                fi
             else
-                set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t)))"
+                if test "$UPDATE" = y; then
+                    set -- -e "(pen-list2str (pen-update ($pfname $CMD :no-select-result t)))"
+                else
+                    set -- -e "(pen-list2str ($pfname $CMD :no-select-result t))"
+                fi
             fi
 
             HAS_TTY=n
