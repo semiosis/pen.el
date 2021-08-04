@@ -1,4 +1,4 @@
-* =pen.el= (_Prompt engineering_ in emacs)
+* =Pen.el= (_Prompt engineering_ in emacs)
 =Pen.el= integrates language models into emacs by
 generating functions that can be used
 interactively or non-interactively and in a
