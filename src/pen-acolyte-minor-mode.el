@@ -19,6 +19,8 @@
 (defun pen-delete-frame ()
   (interactive)
   (cond
+   ((>= (prefix-numeric-value current-global-prefix-arg) 4)
+    (pen-kill-emacs))
    (t (if (yn "Close Pen frame?")
           (delete-frame)))
    ;; I need a better way of checking for the main frame
