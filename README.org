@@ -92,9 +92,9 @@ to select one of the results.
   (message (car (pf-asktutor "emacs" "key bindings" "How do I quit?" :no-select-result t)))
 #+END_SRC
 
-GPT-3 can automate emacs by combining prompts
-with code. For example, you may parse the
-results of the above function to automate
+GPT models can automate emacs by combining
+prompts with code. For example, you may parse
+the results of the above function to automate
 a workflow.
 
 You could even try to play tetris, or with a rubiks cube.
