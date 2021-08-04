@@ -292,7 +292,6 @@ https://github.com/semiosis/prompts/
 
 **** Glossaries
 - https://github.com/semiosis/pen.el/blob/master/glossary.txt
-- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineer-mode.txt
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineering.txt
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai-api.txt
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
