@@ -310,19 +310,6 @@ You may select from one of the roles/tasks.
 *** Discord channel
 860104344900599839
 
-*** Testing GPT-3 prompts without a key
-You may test prompts without a key using the =prompts= repository.
-
-I have suspended the automatic tests pending review from OpenAI.
-
-Pushing your own branch will run tests.
-
-https://github.com/semiosis/prompts
-
-Output will go here:
-
-https://github.com/semiosis/prompt-tests
-
 *** Any missing functions available here
 https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 
