@@ -86,13 +86,13 @@
 
 (defun pen-encode-string (s)
   (->> s
-    ;; (string-replace ";" "<pen-semicolon>")
-    (string-replace "\"" "<pen-doublequote>")
-    (string-replace ":" "<pen-colon>")
-    (string-replace "'" "<pen-singlequote>")
-    (string-replace "`" "<pen-backtick>")
-    (string-replace "\\n" "<pen-notnewline>")
-    (string-replace "$" "<pen-dollar>")))
+    ;; (pen-string-replace ";" "<pen-semicolon>")
+    (pen-string-replace "\"" "<pen-doublequote>")
+    (pen-string-replace ":" "<pen-colon>")
+    (pen-string-replace "'" "<pen-singlequote>")
+    (pen-string-replace "`" "<pen-backtick>")
+    (pen-string-replace "\\n" "<pen-notnewline>")
+    (pen-string-replace "$" "<pen-dollar>")))
 
 ;; This is necessary because the string-search
 ;; command is not available in emacs27
@@ -102,6 +102,27 @@
     (cl-loop for tp in results
              if (>= (car tp) start-pos)
              return (car tp))))
+
+(defun pen-string-replace (fromstring tostring instring)
+  "Replace FROMSTRING with TOSTRING in INSTRING each time it occurs."
+  (declare (pure t))
+  (when (equal fromstring "")
+    (signal 'wrong-length-argument fromstring))
+  (let ((start 0)
+        (result nil)
+        pos)
+    (while (setq pos (pen-string-search fromstring instring start))
+      (unless (= start pos)
+        (push (substring instring start pos) result))
+      (push tostring result)
+      (setq start (+ pos (length fromstring))))
+    (if (null result)
+        ;; No replacements were done, so just return the original string.
+        instring
+      ;; Get any remaining bit.
+      (unless (= start (length instring))
+        (push (substring instring start) result))
+      (apply #'concat (nreverse result)))))
 
 (defun byte-string-search (needle haystack)
   "get byte position or needing in haystack"
@@ -123,7 +144,7 @@
      (progn
        (cl-loop
         for val in vals do
-        (setq s (string-replace (format "<%d>" i) (chomp val) s))
+        (setq s (pen-string-replace (format "<%d>" i) (chomp val) s))
         (setq i (+ 1 i)))
        s))))
 
@@ -141,8 +162,8 @@
         for kv in keyvals do
         (let ((key (str (car kv)))
               (val (str (cdr kv))))
-          (setq s (string-replace (format "<%s>" key) (chomp val) s))
-          ;; (setq s (string-replace (format "<%d>" i) val s))
+          (setq s (pen-string-replace (format "<%s>" key) (chomp val) s))
+          ;; (setq s (pen-string-replace (format "<%d>" i) val s))
           (setq i (+ 1 i))))
        s))))
 
@@ -263,7 +284,7 @@
              (final-prompt (if ,repeater
                                (if (< 0 (length vals))
                                    (concat (pen-awk1 final-prompt)
-                                           (string-replace "{}" (str (car (last vals))) ,repeater))
+                                           (pen-string-replace "{}" (str (car (last vals))) ,repeater))
                                  (concat (pen-awk1 final-prompt)
                                          ,repeater))
                              final-prompt))
@@ -294,7 +315,7 @@
                                  ;; (length final-prompt)
                                  (string-bytes final-prompt)))
 
-             (final-prompt (string-replace "<:pp>" "" final-prompt))
+             (final-prompt (pen-string-replace "<:pp>" "" final-prompt))
 
              ;; check for cache update
              (pen-sh-update
@@ -851,7 +872,7 @@ May use to generate code from comments."
          (sig (eval-string
                (concat
                 "(apply 'pen-cmd-q '"
-                (string-replace
+                (pen-string-replace
                  " &optional" ""
                  (s-replace-regexp
                   " &key.*" ")"
