@@ -1,4 +1,4 @@
-(defun create-my-transient (name kvps searchfun kwsearchfun &optional keywordonly)
+(defun pen-create-transient (name kvps searchfun kwsearchfun &optional keywordonly)
   (let ((sym (intern (concat name "-transient")))
         (args
          (vconcat (list "Arguments")
@@ -33,7 +33,18 @@
          (query (cl-sn (concat "gen-github-query " (mapconcat 'q args " ") " " (string-or keywords "main")) :chomp t)))
     (eegh query)))
 
-(create-my-transient "github" github-key-value-predicates 'github-transient-search 'github-transient-search-with-keywords t)
+(defset github-key-value-predicates
+  ;; prefix with - to invert i.e. -inurl:
+  (list ;; "ext"
+   "repo"
+   "extension"
+   "path"
+   "filename"
+   "followers"
+   "language"
+   "license"))
+
+(pen-create-transient "github" github-key-value-predicates 'github-transient-search 'github-transient-search-with-keywords t)
 (define-key global-map (kbd "H-? h") 'github-transient)
 
 (provide 'pen-transient)
