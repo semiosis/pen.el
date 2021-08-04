@@ -589,16 +589,17 @@ Function names are prefixed with pf- for easy searching"
                                             ""))
                                (varslug (car tp))
                                (default (nth 1 tp))
-                               (n (nth 1 tp)))
+                               (varname (nth 2 tp))
+                               (default-readstring-cmd "(read-string-hist (concat title \" \" varname \": \") example)" ))
                            (message "%s" (concat "Example " (str iteration) ": " example))
                            (if (and
                                 (equal 0 iteration)
-                                (not d))
+                                (not default))
                                ;; The first argument may be captured through selection
                                `(if mark-active
                                     (pen-selected-text)
-                                  (let ((varname)))
-                                  (read-string-hist ,(concat v ": ") ,example)
+                                  
+                                  (read-string-hist ,(concat varslug ": ") ,example)
                                   ;; TODO Find a way to do multiline entry
                                   ;; (if ,(> (length (s-lines example)) 1)
                                   ;;     (multiline-reader ,example)

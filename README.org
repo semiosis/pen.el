@@ -258,12 +258,11 @@ https://github.com/semiosis/prompts/
 *** Prompt engineering
 **** Learning material
 - https://generative.ink/posts/methods-of-prompt-programming/
-- https://mullikine.github.io/posts/creating-a-playground-for-gpt-3-in-emacs/
+- https://mullikine.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
 - https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/
 
 **** Demos and examples of usage
 - https://mullikine.github.io/posts/pen-el-the-first-ide-for-eleutherai-and-openai/
-- https://mullikine.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
 - https://mullikine.github.io/posts/how-to-use-pen-el-to-autocomplete-your-code/
 - https://mullikine.github.io/posts/gpt-3-for-building-mind-maps-with-an-ai-tutor-for-any-topic/
 - https://mullikine.github.io/posts/gpt-3-assistants-for-emacs-modes/
@@ -274,6 +273,7 @@ https://github.com/semiosis/prompts/
 - https://mullikine.github.io/posts/context-menus-based-on-gpt-3/
 - https://mullikine.github.io/posts/explainshell-with-gpt-3/
 - https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/
+- https://mullikine.github.io/posts/creating-a-playground-for-gpt-3-in-emacs/
 - https://mullikine.github.io/tags/pen/
 - https://mullikine.github.io/tags/gpt/
 
