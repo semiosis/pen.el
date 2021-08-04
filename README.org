@@ -16,6 +16,8 @@ It's completely free, libre and open-source.
 | =GPL-3= | https://discord.gg/6wP4MwCM |
 
 ** Quick installation
++ Longer guide here :: [[./docs/installation.org]]
+
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   git clone "https://github.com/semiosis/pen.el"
   git clone "https://github.com/semiosis/prompts"
@@ -291,25 +293,6 @@ https://github.com/semiosis/prompts/
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
 
-** Contributing
-[[./CONTRIBUTING.org]]
-
-Please make an issue to this repository to ask
-for membership to the organisation.
-
-*** =openai= API key
-Please use your own key.
-
-You will need to be inducted into the project.
-
-*** Roles
-You may select from one of the roles/tasks.
-
-[[./docs/contributing/roles.org]]
-
-*** Installation
-[[./docs/installation.org]]
-
 ** Related projects
 I would love some help with these projects! :)
 
@@ -384,3 +367,6 @@ docker container.
   - https://beta.openai.com/
 - [-] PostHuman AI Market (Ocean Blockchain)
   - https://port.oceanprotocol.com/t/posthuman-ai-market-v1-1-luci-integration/675
+
+** Contributing
+[[./CONTRIBUTING.org]]
