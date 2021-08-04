@@ -30,7 +30,7 @@ It's completely free, libre and open-source.
   - http://github.com/semiosis/prompts/blob/master/README.org
   - http://github.com/semiosis/prompts/blob/master/prompt-repositories.txt
 - Chain prompt functions together using keyboard macros and functions
-- Interactively query, generate and transfrom both prose and code
+- Interactively query, generate and transform both prose and code
 - Use the LM as a search engine and a semantic search engine within emacs
   - Search the internet
   - Search documents
