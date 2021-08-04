@@ -315,7 +315,10 @@ You may select from one of the roles/tasks.
 - https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/
 
 **** Examples of usage
-- https://semiosis.github.io/posts/gpt-3-for-building-mind-maps-with-an-ai-tutor-for-any-topic/
+- https://mullikine.github.io/posts/pen-el-the-first-ide-for-eleutherai-and-openai/
+- https://mullikine.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
+- https://mullikine.github.io/posts/how-to-use-pen-el-to-autocomplete-your-code/
+- https://mullikine.github.io/posts/gpt-3-for-building-mind-maps-with-an-ai-tutor-for-any-topic/
 - https://mullikine.github.io/posts/gpt-3-assistants-for-emacs-modes/
 - https://mullikine.github.io/posts/nlsh-natural-language-shell/
 - https://mullikine.github.io/posts/translating-with-gpt-3-and-emacs/
@@ -324,6 +327,7 @@ You may select from one of the roles/tasks.
 - https://mullikine.github.io/posts/context-menus-based-on-gpt-3/
 - https://mullikine.github.io/posts/explainshell-with-gpt-3/
 - https://mullikine.github.io/tags/gpt/
+- https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/
 
 **** Glossaries
 - https://github.com/semiosis/pen.el/blob/master/glossary.txt
@@ -366,7 +370,7 @@ https://github.com/semiosis/ink.el
 https://github.com/semiosis/openai-api.el
 
 ** Using =Pen.el= to create prompts for generating images
-https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/
+
 
 ** Alternative docker invocations
 This will check out the code and give access
