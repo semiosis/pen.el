@@ -193,8 +193,9 @@
              ;; Keep in mind this both updates memoization and the bash cache
              (do-pen-update (pen-var-value-maybe 'do-pen-update))
 
-             (pen-sh-update (or (pen-var-value-maybe 'pen-sh-update)
-                                do-pen-update))
+             (pen-sh-update (or
+                             (pen-var-value-maybe 'pen-sh-update)
+                             do-pen-update))
 
              (cache
               (and (not do-pen-update)
