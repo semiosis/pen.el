@@ -41,7 +41,8 @@ It's completely free, libre and open-source.
 
 [[./docs/images/the_pen_of_imagination.png]]
 
-** Info
+** Information
+*** Supported language models
 - [[./docs/compatibility-and-interoperatbility.org]]
 
 *** Thesis
