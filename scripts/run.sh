@@ -1,6 +1,6 @@
 #!/bin/bash
 
-stty stop undef; stty start undef
+stty stop undef 2>/dev/null; stty start undef 2>/dev/null
 
 # Debian10 run Pen
 
