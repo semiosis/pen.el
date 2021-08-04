@@ -42,14 +42,12 @@ It's completely free, libre and open-source.
 ** Thesis
 https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
 
+- Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
+
 ** Tutorials
 - [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
 - https://mullikine.github.io/tags/pen/
   - Many articles on Pen
-
-** Special features
-
-- Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
 
 ** Further introduction
 =Pen.el= is Google search, stackoverflow,
