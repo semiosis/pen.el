@@ -1,5 +1,6 @@
 ;; emacs/share/emacs/28.0.50/lisp/subr.el.gz
 
+;; This is probably from emacs 28
 (defun string-replace (fromstring tostring instring)
   "Replace FROMSTRING with TOSTRING in INSTRING each time it occurs."
   (declare (pure t))
@@ -20,3 +21,6 @@
       (unless (= start (length instring))
         (push (substring instring start) result))
       (apply #'concat (nreverse result)))))
+
+;; Also, mouse configs dont work with emacs 27
+;; http://github.com/semiosis/pen.el/blob/master/src/pen-mouse.el
