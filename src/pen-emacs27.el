@@ -10,7 +10,7 @@
              return (car tp))))
 
 ;; This is probably from emacs 28
-(defun pen-string-replace (fromstring tostring instring)
+(defun string-replace (fromstring tostring instring)
   "Replace FROMSTRING with TOSTRING in INSTRING each time it occurs."
   (declare (pure t))
   (when (equal fromstring "")
