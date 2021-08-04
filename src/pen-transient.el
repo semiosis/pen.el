@@ -20,13 +20,13 @@
              ,args
              ,actions))))
 
-(defun github-transient-search (&optional args)
+(defun pen-github-transient-search (&optional args)
   (interactive
    (list (transient-args 'github-transient)))
   (let ((query (pen-cl-sn (concat "gen-github-query " (mapconcat 'pen-q args " ") " main") :chomp t)))
     (eegh query)))
 
-(defun github-transient-search-with-keywords (&optional args)
+(defun pen-github-transient-search-with-keywords (&optional args)
   (interactive
    (list (transient-args 'github-transient)))
   (let* ((keywords (read-string-hist "gh keywords:"))
@@ -44,7 +44,7 @@
    "language"
    "license"))
 
-(pen-create-transient "github" pen-github-key-value-predicates 'github-transient-search 'github-transient-search-with-keywords t)
+(pen-create-transient "github" pen-github-key-value-predicates 'pen-github-transient-search 'pen-github-transient-search-with-keywords t)
 (define-key pen-map (kbd "H-? h") 'github-transient)
 
 (provide 'pen-transient)
