@@ -1,10 +1,15 @@
 * Installation
 These setup instructions are designed for Debian 10 or Ubuntu 20.04.
 
+** Dependencies
+- emacs 28
+
 ** Tutorial
 https://semiosis.github.io/posts/pen-tutorial/
 
-** =OpenAI= API key
+** =AIx= API key (for GPT-J-6b)
+
+** =OpenAI= API key (for GPT-3)
 You will need your own OpenAI API key.
 
 The shell command =openai-complete.sh= requires =OPENAI_API_KEY= to be
