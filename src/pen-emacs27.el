@@ -24,3 +24,27 @@
 
 ;; Also, mouse configs dont work with emacs 27
 ;; http://github.com/semiosis/pen.el/blob/master/src/pen-mouse.el
+
+(defun string-search (needle haystack &optional start-pos)
+  (setq start-pos (or start-pos 0))
+  (let ((results (s-matched-positions-all needle haystack)))
+    (cl-loop for tp in results
+             if (>= (car tp) start-pos)
+             return (car tp))))
+
+(defun string-search-beta (needle haystack &optional start-pos)
+  (setq start-pos (or start-pos 0))
+  (let ((results (s-matched-positions-all needle haystack)))
+    (cl-loop for tp in results
+             if (>= (car tp) start-pos)
+             return (car tp))))
+
+(defun string-search-test ()
+  (interactive)
+  ;; (etv (string-search-beta "shane" "is shane cool"))
+  (etv (string-search-beta "shane" "is shane cool" 3)))
+
+(defun string-search-test ()
+  (interactive)
+  ;; (etv (string-search-beta "shane" "is shane cool"))
+  (etv (string-search "shane" "is shane cool" 3)))
