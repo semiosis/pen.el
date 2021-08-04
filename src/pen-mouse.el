@@ -1,5 +1,7 @@
 (require 'mwheel)
 
+;; This breaks from emacs27
+
 (defun mouse-wheel-scroll-more (event)
   "Increase or decrease the height of the default face according to the EVENT."
   (interactive (list last-input-event))
