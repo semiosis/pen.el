@@ -247,7 +247,8 @@ in collaboration with GPT-3 using
   - https://generative.ink/posts/pen/
   - [[https://github.com/socketteer/loom][GitHub - socketteer/loom: Multiversal tree writing interface for human-AI collaboration]]
 
-I credit =|:ϝ∷¦ϝ= for writing Pen.el into existence, but also for encouragement!
+I credit =|:ϝ∷¦ϝ= for writing Pen.el into
+existence, but also for her encouragement and help!
 
 ** Source code
 - [[./src][./src (emacs lisp)]]
