@@ -193,9 +193,9 @@
              ;; Keep in mind this both updates memoization and the bash cache
              (do-pen-update (pen-var-value-maybe 'do-pen-update))
 
-             (pen-sh-update (or
-                             (pen-var-value-maybe 'pen-sh-update)
-                             do-pen-update))
+             (pen-sh-update (tv (or
+                                 (pen-var-value-maybe 'pen-sh-update)
+                                 do-pen-update)))
 
              (cache
               (and (not do-pen-update)
@@ -582,13 +582,14 @@ Function names are prefixed with pf- for easy searching"
                      (iargs
                       (let ((iteration 0))
                         (cl-loop
-                         for tp in (-zip-fill nil var-slugs var-defaults)
+                         for tp in (-zip-fill nil var-slugs var-defaults vars)
                          collect
                          (let ((example (or (sor (nth iteration examples)
                                                  "")
                                             ""))
-                               (v (car tp))
-                               (d (cdr tp)))
+                               (varslug (car tp))
+                               (default (nth 1 tp))
+                               (n (nth 1 tp)))
                            (message "%s" (concat "Example " (str iteration) ": " example))
                            (if (and
                                 (equal 0 iteration)
@@ -596,6 +597,7 @@ Function names are prefixed with pf- for easy searching"
                                ;; The first argument may be captured through selection
                                `(if mark-active
                                     (pen-selected-text)
+                                  (let ((varname)))
                                   (read-string-hist ,(concat v ": ") ,example)
                                   ;; TODO Find a way to do multiline entry
                                   ;; (if ,(> (length (s-lines example)) 1)
