@@ -47,7 +47,7 @@ It's completely free, libre and open-source.
   echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
 
   # Add this to prevent C-s from freezing the terminal
-  echo "stty stop undef; stty start undef" | tee -a ~/.zshrc >> ~/.bashrc
+  echo "stty stop undef 2>/dev/null; stty start undef 2>/dev/null" | tee -a ~/.zshrc >> ~/.bashrc
 
   # Source your .profile
   . ~/.profile
