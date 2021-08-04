@@ -318,8 +318,9 @@ You may select from one of the roles/tasks.
 - https://mullikine.github.io/posts/autocompleting-anything-with-gpt-3-in-emacs/
 - https://mullikine.github.io/posts/context-menus-based-on-gpt-3/
 - https://mullikine.github.io/posts/explainshell-with-gpt-3/
-- https://mullikine.github.io/tags/gpt/
 - https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/
+- https://mullikine.github.io/tags/pen/
+- https://mullikine.github.io/tags/gpt/
 
 **** Glossaries
 - https://github.com/semiosis/pen.el/blob/master/glossary.txt
