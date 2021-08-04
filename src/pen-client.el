@@ -1,6 +1,6 @@
-;; TODO Connect to clients
+;; TODO Connect to LM clients
 
-;; e:pen-server.el
+;; e:pen-lm-server.el
 ;; e:../scripts/gpt-neo-client.py
 
-(provide 'pen-client)
+(provide 'pen-lm-client)
