@@ -1,0 +1,23 @@
+* Instructions for integrating Pen.el into your own emacs config
+go through setup.sh, and make sure you have the dependencies
+Ensure your current emacs has module support
+
+You can know if your emacs has modele support by running module-file-suffix
+If the minibuffer responds with ".so" you're good
+If you get nil then you need to compile emacs with module support or find a binary that has module support
+You have to install yamlmod (instructions for compiling are inside setup.sh)
+
+evaluate the variable =module-file-suffix= in your M-: repl
+
+Good
+You have module support
+Just follow instructions for installing the remaining packages in setup.sh
+once you've done that, you have 2 more files: init-setup.el and init.el
+if you look inside init-setup.el, all it does really is install a bunch of packages into your emacs
+all you have to do is install the packages
+then in your .spacemacs at the end of the config you have to run the stuff inside init.el
+everything inside init.el from require dependencies down to the bottom of the file
+has to go into your own emacs configuration
+After you've done this, you've got pen integrated into emacs
+but you still have to follow the tutorial instructions
+https://semiosis.github.io/posts/pen-tutorial/
