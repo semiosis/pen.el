@@ -21,8 +21,12 @@ It's completely free, libre and open-source.
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   git clone "https://github.com/semiosis/pen.el"
   git clone "https://github.com/semiosis/prompts"
-  mkdir ~/.pen
+
+  mkdir -p ~/.pen
+
+  # Put in your keys, or do not, it's up to you!
   echo "sk-<openai key here>" > ~/.pen/openai_api_key
+  echo "<aix key here>" > ~/.pen/aix_api_key
 
   # Add the scripts to the PATH
   echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
