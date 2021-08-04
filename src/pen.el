@@ -872,6 +872,7 @@ May use to generate code from comments."
 (require 'pen-glossary)
 (require 'pen-diagnostics)
 (require 'pen-examplary)
+(require 'pen-transient)
 (require 'pen-engine)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
