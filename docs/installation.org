@@ -8,6 +8,9 @@ These setup instructions are designed for Debian 10 or Ubuntu 20.04.
 https://semiosis.github.io/posts/pen-tutorial/
 
 ** =AIx= API key (for GPT-J-6b)
+Get your key.
+
+https://apps.aixsolutionsgroup.com/
 
 ** =OpenAI= API key (for GPT-3)
 You will need your own OpenAI API key.
