@@ -37,6 +37,7 @@ It's completely free, libre and open-source.
     - https://beta.openai.com/docs/introduction/semantic-search
     - https://gpttools.com/semanticsearch
 
+** Quick installation
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   git clone "https://github.com/semiosis/pen.el"
   git clone "https://github.com/semiosis/prompts"
