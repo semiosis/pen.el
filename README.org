@@ -136,9 +136,8 @@ vscode-icons-vscode,
 vscode-icons-vsc
 "
 
-=pen-long-complete= overrides the =stop-
-sequences= and =max-tokens= for any prompt
-function.
+=pen-long-complete= overrides the =stop-sequences=
+and =max-tokens= for any prompt function.
 
 ** Running a prompt function from the host
 *** Firstly, start a server
