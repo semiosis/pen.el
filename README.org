@@ -4,14 +4,15 @@ generating functions that can be used
 interactively or non-interactively and in a
 variety of configurable ways.
 
-=Pen.el= is Google search, stackoverflow, Grammarly,
-Copilot, =conversion.ai=, mind mapping
-software (based on GPT-3) etc. all rolled into
-one package and allows you to extend emacs
-with GPT wherever your mind takes you. It's a
-LM that can generate multiversal continuations
-from within and extrapolating from the
-training set domain that it was trained on.
+=Pen.el= is Google search, stackoverflow,
+Grammarly, Copilot, =conversion.ai=, mind
+mapping software (based on GPT-3) etc. all
+rolled into one package and allows you to
+extend emacs with GPT wherever your mind takes
+you. It's a LM (LM) that can generate
+multiversal continuations of text according to
+probability from the data that it was trained
+on.
 
 =Pen.el= facilitates the creation,
 development, discovery and usage of prompts to
