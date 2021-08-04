@@ -302,7 +302,7 @@ You may select from one of the roles/tasks.
 [[./docs/contributing/roles.org]]
 
 *** Installation
-[[./installation.org]]
+[[./docs/installation.org]]
 
 ** Related projects
 I would love some help with these projects! :)
