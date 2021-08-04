@@ -238,8 +238,10 @@ functions to help preserve emacs.
   clouds swirling around you.
 #+END_SRC
 
-This article was written by my amazing dopplegänger, =|:ϝ∷¦ϝ=, in advance and
-in collaboration with GPT-3 using [[https://github.com/socketteer/loom][Loom]].
+This article was written by my amazing
+dopplegänger, =|:ϝ∷¦ϝ= (Laria), in advance and
+in collaboration with GPT-3 using
+[[https://github.com/socketteer/loom][Loom]].
 
 + Pen and Loom:
   - https://generative.ink/posts/pen/
