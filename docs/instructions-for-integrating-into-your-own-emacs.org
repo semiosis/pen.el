@@ -21,3 +21,5 @@ has to go into your own emacs configuration
 After you've done this, you've got pen integrated into emacs
 but you still have to follow the tutorial instructions
 https://semiosis.github.io/posts/pen-tutorial/
+
+** A lightweight =pen.el= package is in the works, which will dockerize all dependencies
