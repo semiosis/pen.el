@@ -1,28 +1,13 @@
 * =Pen.el= (_Prompt engineering_ in emacs)
-=Pen.el= integrates language models into emacs by
-generating functions that can be used
+=Pen.el= integrates LMs (language models) such as OpenAI's
+=GPT-3= or EleutherAI's =GPT-j= into emacs by
+generating functions from prompts that map emacs's corners
+loosely onto LMs. These functions can be used
 interactively or non-interactively and in a
 variety of configurable ways.
 
-=Pen.el= is Google search, stackoverflow,
-Grammarly, Copilot, =conversion.ai=, mind
-mapping software (based on GPT-3) etc. all
-rolled into one package and allows you to
-extend emacs with GPT wherever your mind takes
-you. It's a LM (Language Model) that can generate
-multiversal continuations of text according to
-probability from the data that it was trained
-on.
-
-=Pen.el= facilitates the creation,
-development, discovery and usage of prompts to
-a Language Model such as OpenAI's =GPT-3= or EleutherAI's =GPT-j=.
-
-=Pen.el's= domain specific language =examplary= also helps
-you to generate your own prompts using known
-design patterns and minimal inputs and
-description. It does this by weaving prompt
-functions into each other.
+=Pen.el= also facilitates the creation,
+development, discovery and usage of prompts.
 
 It's completely free, libre and open-source.
 
@@ -85,6 +70,23 @@ https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
     - In total, prompts are p2p and the cached generations are also p2p. This creates a stable imaginary programming environment
 
 - Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
+
+** Further introduction
+=Pen.el= is Google search, stackoverflow,
+Grammarly, Copilot, =conversion.ai=, mind
+mapping software (based on GPT-3) etc. all
+rolled into one package and allows you to
+extend emacs with GPT wherever your mind takes
+you. It's a LM (Language Model) that can generate
+multiversal continuations of text according to
+probability from the data that it was trained
+on.
+
+=Pen.el's= domain specific language =examplary= also helps
+you to generate your own prompts using known
+design patterns and minimal inputs and
+description. It does this by weaving prompt
+functions into each other.
 
 ** Quick example of using a prompt function
 The =car= is used because there are multiple
