@@ -70,11 +70,11 @@ https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
 
 ** Special features
 - Client/server model
-  - Connect multiple clients to Pen.el
+  - Connect multiple clients to =Pen.el=
   - Run prompt functions from the host.
 - Generations are store on the host in the =~/.pen/results= directory
 - Prompt functions are cached on the host in the =~/.pen/ht-cache= directory
-  - This means that repeating the same commands / prompts inside =pen= will be instantaneous and persist between docker invocations
+  - This means that repeating the same commands / prompts inside /pen/ will be instantaneous and persist between docker invocations
   - This also means that a collaborative programming model based on the results of queries is now possible
     - All is required is to cache the results of prompt functions
     - In total, prompts are p2p and the cached generations are also p2p. This creates a stable imaginary programming environment
