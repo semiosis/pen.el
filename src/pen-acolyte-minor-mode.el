@@ -28,8 +28,14 @@
    ;; (t (delete-frame))
    ))
 
+(defun pen-kill-emacs ()
+  (interactive)
+  (cond
+   (t (if (yn "Quit emacs?")
+          (kill-emacs)))))
+
 (define-key pen-acolyte-minor-mode-map (kbd "M-q") 'pen-delete-frame)
-(define-key pen-acolyte-minor-mode-map (kbd "M-Q") 'kill-emacs)
+(define-key pen-acolyte-minor-mode-map (kbd "M-Q") 'pen-kill-emacs)
 (define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-acolyte-dired-prompts)
 (define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-acolyte-scratch)
 (define-key pen-acolyte-minor-mode-map (kbd "M-s") 'save-buffer)
