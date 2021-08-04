@@ -45,6 +45,6 @@
    "license"))
 
 (pen-create-transient "github" github-key-value-predicates 'github-transient-search 'github-transient-search-with-keywords t)
-(define-key global-map (kbd "H-? h") 'github-transient)
+(define-key pen-map (kbd "H-? h") 'github-transient)
 
 (provide 'pen-transient)
