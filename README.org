@@ -253,52 +253,6 @@ https://github.com/semiosis/prompts/
   - [[./docs/playground-settings.org][OpenAI Playground Settings]]
   - [[./docs/README.org][Project timeline and design]]
 
-** Compatability
-*** Operating systems
-- [X] Linux/Ubuntu/Debian
-  - Tested on Ubuntu 20.04 and Debian 10
-*** Language models and APIs
-- [X] OpenAI API (=GPT-3=)
-  - https://beta.openai.com/
-- [ ] Huggingface Hub
-  - https://github.com/huggingface/huggingface_hub 
-- [-] =GPT-j= 6b
-  - https://github.com/kingoflolz/mesh-transformer-jax
-  - https://minimaxir.com/2021/06/gpt-j-6b/
-- [-] =contentyze= API
-  - http://gpt.contentyze.com/
-  - https://medium.com/contentyze/text-generation-api-609c1d52cff1
-- [-] =GPT-Neo= 6b
-  - https://github.com/EleutherAI/gpt-neo
-- [-] =openai-server= (=GPT-2=)
-  - https://github.com/shawwn/openai-server
-  - Requires tensorflow 1
-- [-] =DeepAI= API
-  - https://deepai.org/machine-learning-model/text-generator
-- [-] OpenAI API (=GPT-4=)
-  - https://beta.openai.com/
-- [-] PostHuman AI Market (Ocean Blockchain)
-  - https://port.oceanprotocol.com/t/posthuman-ai-market-v1-1-luci-integration/675
-
-** Contributing
-[[./CONTRIBUTING.org]]
-
-Please make an issue to this repository to ask
-for membership to the organisation.
-
-*** =openai= API key
-Please use your own key.
-
-You will need to be inducted into the project.
-
-*** Roles
-You may select from one of the roles/tasks.
-
-[[./docs/contributing/roles.org]]
-
-*** Installation
-[[./installation.org]]
-
 ** Information and Learning Material
 *** Prompt engineering
 **** Learning material
@@ -329,6 +283,25 @@ You may select from one of the roles/tasks.
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai-api.txt
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
+
+** Contributing
+[[./CONTRIBUTING.org]]
+
+Please make an issue to this repository to ask
+for membership to the organisation.
+
+*** =openai= API key
+Please use your own key.
+
+You will need to be inducted into the project.
+
+*** Roles
+You may select from one of the roles/tasks.
+
+[[./docs/contributing/roles.org]]
+
+*** Installation
+[[./installation.org]]
 
 ** Related projects
 I would love some help with these projects! :)
@@ -377,3 +350,30 @@ docker container.
   cd pen.el
   docker run --rm -v "$(shell pwd):/$(shell pwd | scripts/slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh
 #+END_SRC
+
+** Compatability / Interoperability
+*** Operating systems
+- [X] Linux/Ubuntu/Debian
+  - Tested on Ubuntu 20.04 and Debian 10
+*** Language models and APIs
+- [X] OpenAI API (=GPT-3=)
+  - https://beta.openai.com/
+- [ ] Huggingface Hub
+  - https://github.com/huggingface/huggingface_hub 
+- [X] =GPT-j= 6b
+  - https://github.com/kingoflolz/mesh-transformer-jax
+  - https://minimaxir.com/2021/06/gpt-j-6b/
+- [-] =contentyze= API
+  - http://gpt.contentyze.com/
+  - https://medium.com/contentyze/text-generation-api-609c1d52cff1
+- [-] =GPT-Neo= 6b
+  - https://github.com/EleutherAI/gpt-neo
+- [-] =openai-server= (=GPT-2=)
+  - https://github.com/shawwn/openai-server
+  - Requires tensorflow 1
+- [-] =DeepAI= API
+  - https://deepai.org/machine-learning-model/text-generator
+- [-] OpenAI API (=GPT-4=)
+  - https://beta.openai.com/
+- [-] PostHuman AI Market (Ocean Blockchain)
+  - https://port.oceanprotocol.com/t/posthuman-ai-market-v1-1-luci-integration/675
