@@ -825,7 +825,7 @@ Function names are prefixed with pf- for easy searching"
           (stop-sequences (or (and (variable-p 'stop-sequences)
                                    (eval 'stop-sequences))
                               '("\n"))))
-      ,',@body)))
+       ,',@body)))
 
 (defun pen-complete-function (preceding-text &rest args)
   (if (and (derived-mode-p 'prog-mode)
