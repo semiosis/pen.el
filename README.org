@@ -77,7 +77,7 @@ design patterns and minimal inputs and
 description. It does this by weaving prompt
 functions into each other.
 
-** Features
+** Features - The possibilities are literally endless
 - Share and discover prompts (=P2P=)
   - http://github.com/semiosis/prompts/blob/master/README.org
   - http://github.com/semiosis/prompts/blob/master/prompt-repositories.txt
@@ -88,6 +88,7 @@ functions into each other.
   - Search documents
     - https://beta.openai.com/docs/introduction/semantic-search
     - https://gpttools.com/semanticsearch
+- ad infinitum...
 
 ** Quick example of using a prompt function
 The =car= is used because there are multiple
