@@ -193,9 +193,9 @@
              ;; Keep in mind this both updates memoization and the bash cache
              (do-pen-update (pen-var-value-maybe 'do-pen-update))
 
-             (pen-sh-update (tv (or
-                                 (pen-var-value-maybe 'pen-sh-update)
-                                 do-pen-update)))
+             (pen-sh-update (or
+                             (pen-var-value-maybe 'pen-sh-update)
+                             do-pen-update))
 
              (cache
               (and (not do-pen-update)
@@ -598,7 +598,8 @@ Function names are prefixed with pf- for easy searching"
                                ;; The first argument may be captured through selection
                                `(if mark-active
                                     (pen-selected-text)
-                                  
+                                  ;; (eval-string default-readstring-cmd)
+                                  ;; (read-string-hist ,(concat varslug ": ") ,example)
                                   (read-string-hist ,(concat varslug ": ") ,example)
                                   ;; TODO Find a way to do multiline entry
                                   ;; (if ,(> (length (s-lines example)) 1)
@@ -610,9 +611,9 @@ Function names are prefixed with pf- for easy searching"
                              ;;    (if ,d
                              ;;        (eval-string ,(str d))
                              ;;      (read-string-hist ,(concat v ": ") ,example)))
-                             `(if ,d
-                                  (eval-string ,(str d))
-                                (read-string-hist ,(concat v ": ") ,example))))
+                             `(if ,default
+                                  (eval-string ,(str default))
+                                (read-string-hist ,(concat varname ": ") ,example))))
                          do
                          (progn
                            (setq iteration (+ 1 iteration))

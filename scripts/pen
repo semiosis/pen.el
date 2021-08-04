@@ -79,6 +79,11 @@ stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
+if test "$sn" = pena; then
+    sn=penf
+    all=y
+fi
+
 case "$sn" in
     pen|penf) {
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -121,15 +126,15 @@ case "$sn" in
 
             if test "$all" = "y"; then
                 if test "$UPDATE" = y; then
-                    set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t))))"
-                else
-                    set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t)))"
-                fi
-            else
-                if test "$UPDATE" = y; then
                     set -- -e "(pen-list2str (pen-update ($pfname $CMD :no-select-result t)))"
                 else
                     set -- -e "(pen-list2str ($pfname $CMD :no-select-result t))"
+                fi
+            else
+                if test "$UPDATE" = y; then
+                    set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t))))"
+                else
+                    set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t)))"
                 fi
             fi
 
