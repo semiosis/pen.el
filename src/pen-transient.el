@@ -23,14 +23,14 @@
 (defun github-transient-search (&optional args)
   (interactive
    (list (transient-args 'github-transient)))
-  (let ((query (cl-sn (concat "gen-github-query " (mapconcat 'q args " ") " main") :chomp t)))
+  (let ((query (pen-cl-sn (concat "gen-github-query " (mapconcat 'pen-q args " ") " main") :chomp t)))
     (eegh query)))
 
 (defun github-transient-search-with-keywords (&optional args)
   (interactive
    (list (transient-args 'github-transient)))
   (let* ((keywords (read-string-hist "gh keywords:"))
-         (query (cl-sn (concat "gen-github-query " (mapconcat 'q args " ") " " (string-or keywords "main")) :chomp t)))
+         (query (pen-cl-sn (concat "gen-github-query " (mapconcat 'pen-q args " ") " " (string-or keywords "main")) :chomp t)))
     (eegh query)))
 
 (defset github-key-value-predicates
