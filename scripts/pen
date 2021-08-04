@@ -331,11 +331,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if ! test "$vanilla" = "y"; then
-    test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
+    test -n "$MYGIT" && test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
     test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
     # : "${PROMPTS_DIR:="$(read -ep "PROMPTS_DIR (leave empty to use docker): ")"}"
 
-    test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
+    test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
     test -d "pen.el" && : "${PENEL_DIR:="pen.el"}"
     # : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
 
