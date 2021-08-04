@@ -9,7 +9,7 @@ Grammarly, Copilot, =conversion.ai=, mind
 mapping software (based on GPT-3) etc. all
 rolled into one package and allows you to
 extend emacs with GPT wherever your mind takes
-you. It's a LM (LM) that can generate
+you. It's a LM (Language Model) that can generate
 multiversal continuations of text according to
 probability from the data that it was trained
 on.
