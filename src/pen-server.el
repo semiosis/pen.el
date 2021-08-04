@@ -1,6 +1,6 @@
 ;; TODO Start and manage servers
 
-;; e:pen-client.el
+;; e:pen-lm-client.el
 ;; e:../scripts/gpt-neo-client.py
 
-(provide 'pen-server)
+(provide 'pen-lm-server)
