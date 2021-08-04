@@ -37,13 +37,14 @@ It's completely free, libre and open-source.
   pen
 #+END_SRC
 
-- [[./docs/compatibility-and-interoperatbility.org]]
-
 /The pen of imagination - |:ϝ∷¦ϝ./
 
 [[./docs/images/the_pen_of_imagination.png]]
 
-** Thesis
+** Info
+- [[./docs/compatibility-and-interoperatbility.org]]
+
+*** Thesis
 https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
 
 - Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
@@ -317,7 +318,7 @@ https://github.com/semiosis/lm-complete
 **** This book by Mark Watson provides some reasonable blueprints
 https://leanpub.com/clojureai
 
-*** =ink.el=: A DSL that encodes provenience
+*** =ink.el=: A DSL that encodes provenance
 - Encode into the text the origin of the text
 
 https://github.com/semiosis/ink.el
@@ -326,21 +327,6 @@ https://github.com/semiosis/ink.el
 - An interface for emacs to the OpenAI API.
 
 https://github.com/semiosis/openai-api.el
-
-** Using =Pen.el= to create prompts for generating images
-
-** Alternative docker invocations
-This will check out the code and give access
-to the =slugify= script so you can share the
-current directory to work with within the
-docker container.
-
-#+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  cd ~/.emacs.d/
-  git clone "https://github.com/semiosis/pen.el"
-  cd pen.el
-  docker run --rm -v "$(shell pwd):/$(shell pwd | scripts/slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh
-#+END_SRC
 
 ** Contributing
 - [[./CONTRIBUTING.org]]
