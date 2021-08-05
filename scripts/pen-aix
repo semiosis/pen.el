@@ -27,14 +27,14 @@ export PEN_N_COMPLETIONS
 
 : "${PEN_N_COMPLETIONS:="4"}"
 
-sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed "s/\\/\\\\/g")"
+sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
 # pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
 
 if test "$PEN_N_COMPLETIONS" = 1; then
     {
     printf -- "%s" "$PEN_PROMPT"
-    pen-aix.py "$@" # | sed -z "s~${sedstop}.*~~"
+    pen-aix.py "$@" | sed -z "s~${sedstop}$~~"
     } | tee /tmp/aix.txt
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
@@ -42,7 +42,7 @@ else
         # The openai api will add the prompt. So emulate it
         {
         printf -- "%s" "$PEN_PROMPT"
-        pen-aix.py "$@" # | sed -z "s~${sedstop}.*~~"
+        pen-aix.py "$@" | sed -z "s~${sedstop}$~~"
         } | awk 1
     done | tee /tmp/aix.txt
 fi
