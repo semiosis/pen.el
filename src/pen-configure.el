@@ -6,9 +6,9 @@
   (interactive (list (read-string "service: ")))
   (let* ((key-path (f-join user-home-directory ".pen" (format "%s_api_key" service-name)))
          (maybe-key (if (f-file-p key-path)
-                        (chomp (f-read key-path)))))
+                        (chomp (str (f-read key-path))))))
     (if maybe-key
-        (read-string (format "update %s key: " service-name) (str maybe-key))
+        (read-string (format "update %s key: " service-name) maybe-key)
       (read-string (format "%s key: " service-name)))))
 
 (defun pen-add-key (service-name key)
