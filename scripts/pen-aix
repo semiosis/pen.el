@@ -19,4 +19,4 @@ export PEN_TEMPERATURE
 export PEN_TOP_P
 export PEN_STOP_SEQUENCE
 
-pen-aix.py "$@"
+pen-aix.py "$@" | sed -z "s/\\s*$//"
