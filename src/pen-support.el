@@ -771,7 +771,7 @@ when s is a string, set the clipboard to s"
 (defun lm-define (term &optional prepend-lm-warning topic)
   (interactive)
   (let* ((final-topic
-          (if topic
+          (if (sor topic)
               (concat " in the context of " topic)
             ""))
          (def
