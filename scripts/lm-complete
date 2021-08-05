@@ -41,13 +41,13 @@ fi
 # This is handled by `pen-ci`
 export PEN_CACHE
 
-if  ! test -s $HOME/.pen/aix_api_key; then
+if ! test -s $HOME/.pen/aix_api_key; then
     PEN_LM_COMMAND=openai-complete.sh
 fi
 
 case "$PEN_LM_COMMAND" in
     aix-complete.sh) {
-        if  ! test -s $HOME/.pen/aix_api_key; then
+        if ! test -s $HOME/.pen/aix_api_key; then
             PEN_LM_COMMAND=openai-complete.sh
             export PEN_ENGINE=davinci
         fi
@@ -55,7 +55,7 @@ case "$PEN_LM_COMMAND" in
     ;;
 
     openai-complete.sh) {
-        if  ! test -s $HOME/.pen/openai_api_key; then
+        if ! test -s $HOME/.pen/openai_api_key; then
             PEN_LM_COMMAND=aix-complete.sh
             export PEN_ENGINE=GPT-J-6B
         fi
