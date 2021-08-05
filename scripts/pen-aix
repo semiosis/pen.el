@@ -32,7 +32,8 @@ export PEN_N_COMPLETIONS
 if test "$PEN_N_COMPLETIONS" = 1; then
     {
     printf -- "%s" "$PEN_PROMPT"
-    pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~" } | awk 1
+    pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
+    } | tee /tmp/aix.txt
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
         echo "===== Completion $i ====="
@@ -41,5 +42,5 @@ else
         printf -- "%s" "$PEN_PROMPT"
         pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
         } | awk 1
-    done
+    done | tee /tmp/aix.txt
 fi
