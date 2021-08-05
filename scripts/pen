@@ -87,6 +87,7 @@ fi
 case "$sn" in
     penf) {
         test "$#" -eq 0 && sn=penl
+        penl_strip_pf=y
     }
     ;;
 
@@ -484,8 +485,16 @@ HEREDOC
     *)
 esac
 
+pen_eval() {
+    if test "$penl_strip_pf" = "y"; then
+        eval "$@" | sed 's/^pf-//'
+    else
+        eval "$@"
+    fi
+}
+
 if test "$fuzzy" = "y"; then
-    eval "$shcode" | fzf
+    pen_eval "$shcode" | fzf
 else
-    eval "$shcode"
+    pen_eval "$shcode"
 fi
