@@ -1,6 +1,6 @@
 * =Pen.el= (_Prompt engineering_ in emacs)
 =Pen.el= integrates LMs (language models) such as OpenAI's
-=GPT-3= or EleutherAI's =GPT-j= into emacs by
+=GPT-3= or EleutherAI's =GPT-J= into emacs by
 generating functions from prompts that map emacs's corners
 loosely onto LMs. These functions can be used
 interactively or non-interactively and in a
