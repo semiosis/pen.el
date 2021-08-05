@@ -86,8 +86,13 @@ fi
 
 case "$sn" in
     penf) {
-        test "$#" -eq 0 && sn=penl
-        penl_strip_pf=y
+        if test "$#" -eq 0; then
+            sn=penl
+            penl_strip_pf=y
+        elif test "$#" -eq 1; then
+            sn=penh
+            penl_strip_pf=y
+        fi
     }
     ;;
 
