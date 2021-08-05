@@ -31,9 +31,6 @@ sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
 # pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
 
-# It's too slow otherwise
-PEN_N_COMPLETIONS=1
-
 if test "$PEN_N_COMPLETIONS" = 1; then
     {
     printf -- "%s" "$PEN_PROMPT"

@@ -63,5 +63,12 @@ case "$PEN_LM_COMMAND" in
     ;;
 esac
 
+case "$PEN_LM_COMMAND" in
+    aix-complete.sh) {
+        export PEN_N_COMPLETIONS=1
+    }
+    ;;
+esac
+
 # pen-ci will possibly cache/memoize the command
 pen-ci "$PEN_LM_COMMAND"
