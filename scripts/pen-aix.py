@@ -23,3 +23,4 @@ if __name__ == "__main__":
             .get("text")
         )
     )
+    print(os.environ.get("PEN_MAX_TOKENS"))
