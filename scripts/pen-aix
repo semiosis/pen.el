@@ -30,8 +30,9 @@ export PEN_N_COMPLETIONS
 # pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
 
 if test "$PEN_N_COMPLETIONS" = 1; then
-    pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~" | awk 1
-
+    {
+    printf -- "%s" "$PEN_PROMPT"
+    pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~" } | awk 1
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
         echo "===== Completion $i ====="
