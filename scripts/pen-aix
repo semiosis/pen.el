@@ -41,4 +41,4 @@ else
         pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~" 
         } | awk 1
     done
-fi | tv
+fi
