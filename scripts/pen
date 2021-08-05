@@ -85,6 +85,15 @@ if test "$sn" = pena; then
 fi
 
 case "$sn" in
+    penf) {
+        test "$#" -eq 0 && sn=penl
+    }
+    ;;
+
+    *)
+esac
+
+case "$sn" in
     pen|penf) {
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             "") { shift; }; ;;
