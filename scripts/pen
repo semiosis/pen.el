@@ -108,22 +108,22 @@ case "$sn" in
 
         if test "$sn" = penf; then
             if test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
+                fun="pf-$1"
+                shift
+            else
                 fun="$1"
                 shift
-
-                set -- "pf-$fun" "$@"
             fi
             sn="pen"
-
+        else
+            fun="$1"
+            shift
         fi
-
-        fun="$1"
-
+        
         if printf -- "%s\n" "$fun" | grep -q -P '^pf-'; then
             show_banner=n
 
-            pfname="$1"
-            shift
+            pfname="$fun"
 
             use_tty=y
 
