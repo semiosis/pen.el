@@ -16,7 +16,7 @@
   (cond
    ((derived-mode-p 'org-brain-visualize-mode)
     (org-brain-pf-topic))
-   ((is-glossary-file (f-basename (get-path)))
+   ((pen-is-glossary-file (f-basename (get-path)))
     (f-mant (f-basename (get-path))))
    (t (buffer-language))))
 
@@ -110,7 +110,7 @@
                    (or no-select-result
                        (pen-var-value-maybe 'do-pen-batch)))
                  (topic
-                   (cond ((is-glossary-file)
+                   (cond ((pen-is-glossary-file)
                           (pen-get-glossary-topic
                            (or (buffer-file-path)
                                "")))
@@ -132,11 +132,11 @@
                                  ;; :no-select-result t
                                  ;; (pen-surrounding-text)
                                  )))
-                            (pf-keyword-extraction
-                             (pen-words 40 (pen-selection-or-surrounding-context 10))
-                             ;; :no-select-result t
-                             ;; (pen-surrounding-text)
-                             )))
+                              (pf-keyword-extraction
+                               (pen-words 40 (pen-selection-or-surrounding-context 10))
+                               ;; :no-select-result t
+                               ;; (pen-surrounding-text)
+                               )))
                          (t ""))))
 
             (setq topic
@@ -148,7 +148,7 @@
 
             (if (interactive-p)
                 (etv topic)
-              topic)))
+                topic)))
 
 (defun pen-broader-topic ()
   "Determine the topic used for pen functions"
