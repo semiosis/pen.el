@@ -30,7 +30,13 @@
 
 (defun pen-get-glossary-topic (&optional fp)
   (if (pen-is-glossary-file)
-      (f-mant (f-basename (f-dirname (buffer-file-name))))))
+      (cond
+       ((or
+         (re-match-p "glossary\\.txt$" fp)
+         (re-match-p "words\\.txt$" fp))
+        (f-mant (f-basename (f-dirname (buffer-file-name)))))
+       (t
+        (f-mant (f-basename (buffer-file-name)))))))
 
 (defun url-found-p (url)
   "Return non-nil if URL is found, i.e. HTTP 200."
