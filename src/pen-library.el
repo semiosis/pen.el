@@ -16,8 +16,8 @@
   (cond
    ((derived-mode-p 'org-brain-visualize-mode)
     (org-brain-pf-topic))
-   ((pen-is-glossary-file (f-basename (get-path)))
-    (f-mant (f-basename (get-path))))
+   ((pen-is-glossary-file (get-path))
+    (pen-get-glossary-topic (get-path)))
    (t (buffer-language))))
 
 (defun save-temp-if-no-file ()
