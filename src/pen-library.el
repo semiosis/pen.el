@@ -111,8 +111,9 @@
                        (pen-var-value-maybe 'do-pen-batch)))
                  (topic
                    (cond ((is-glossary-file)
-                          (f-mant (f-basename (or (buffer-file-path)
-                                                  ""))))
+                          (pen-get-glossary-topic
+                           (or (buffer-file-path)
+                               "")))
                          ((derived-mode-p 'org-brain-visualize-mode)
                           (progn (require 'my-org-brain)
                                  (org-brain-pf-topic short)))

@@ -17,7 +17,7 @@
 
 (defalias 're-match-p 'string-match)
 
-(defun is-glossary-file (&optional fp)
+(defun pen-is-glossary-file (&optional fp)
   ;; This path works also with info
   (setq fp (or fp
                (get-path nil t)
@@ -27,6 +27,10 @@
    (re-match-p "glossary\\.txt$" fp)
    (re-match-p "words\\.txt$" fp)
    (re-match-p "glossaries/.*\\.txt$" fp)))
+
+(defun pen-get-glossary-topic (&optional fp)
+  (if (pen-is-glossary-file)
+      (f-mant (f-basename (f-dirname (buffer-file-name))))))
 
 (defun url-found-p (url)
   "Return non-nil if URL is found, i.e. HTTP 200."
