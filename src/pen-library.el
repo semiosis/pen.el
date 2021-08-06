@@ -110,10 +110,8 @@
                    (or no-select-result
                        (pen-var-value-maybe 'do-pen-batch)))
                  (topic
-                   (cond ((pen-is-glossary-file)
-                          (pen-get-glossary-topic
-                           (or (buffer-file-path)
-                               "")))
+                   (cond ((pen-is-glossary-file (buffer-file-path))
+                          (get-path-semantic))
                          ((derived-mode-p 'org-brain-visualize-mode)
                           (progn (require 'my-org-brain)
                                  (org-brain-pf-topic short)))
@@ -148,7 +146,7 @@
 
             (if (interactive-p)
                 (etv topic)
-                topic)))
+              topic)))
 
 (defun pen-broader-topic ()
   "Determine the topic used for pen functions"
