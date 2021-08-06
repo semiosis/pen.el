@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+glossdir=$HOME/.pen/glossaries
+
+mkdir -p "$glossdir"
+
+find "$glossdir" -maxdepth 1 -name '*.txt' -a \( -type f -o -type l \)
