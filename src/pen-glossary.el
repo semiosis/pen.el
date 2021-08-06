@@ -2,11 +2,14 @@
   ;; This should be made optional, since it may be slow
   (snc "pen-pretty-paragraph" s))
 
-(defun pen-add-to-glossary-file-for-buffer (term &optional take-first definition)
+(defun pen-list-glossary-files ()
+  (s-lines (cl-sn "pen-list-glossary-files" :chomp t)))
+
+(defun pen-add-to-glossary (term &optional take-first definition)
   "C-u will allow you to add to any glossary file"
   (interactive (let ((s (pen-thing-at-point-ask)))
                  (if (not (sor s))
-                     (setq s (read-string-hist "add glossary term: ")))
+                     (setq s (read-string-hist "glossary term to add: ")))
                  (list s)))
   (deactivate-mark)
   (if (not definition)
@@ -19,18 +22,18 @@
            (pen-umn (or
                      (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
                               (not (local-variable-p 'glossary-files)))
-                          (pen-umn (fz (pen-mnm (pen-list2str (list-glossary-files)))
-                                       nil nil "add-to-glossary-file-for-buffer glossary: ")))
+                          (pen-umn (fz (pen-mnm (pen-list2str (pen-list-glossary-files)))
+                                       nil nil "glossary to add to: ")))
                      (and
                       (local-variable-p 'glossary-files)
                       (if take-first
                           (car glossary-files)
                         (pen-umn (fz (pen-mnm (pen-list2str glossary-files))
                                      "$HOME/glossaries/"
-                                     nil "add-to-glossary-file-for-buffer glossary: "))))
+                                     nil "glossary to add to: "))))
                      (pen-umn (fz (pen-mnm (pen-list2str (list "$HOME/glossaries/glossary.txt")))
                                   "$HOME/glossaries/"
-                                  nil "add-to-glossary-file-for-buffer glossary: ")))))))
+                                  nil "glossary to add to: ")))))))
     (with-current-buffer
         (find-file fp)
       (progn
