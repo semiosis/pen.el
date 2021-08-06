@@ -890,13 +890,13 @@ May use to generate code from comments."
 (require 'pen-messages)
 (require 'pen-yaml)
 (require 'pen-glossary)
+(require 'pen-localization)
 (require 'pen-diagnostics)
 (require 'pen-examplary)
 (require 'pen-transient)
 (require 'pen-engine)
 ;; Allow Pen.el to use a docker container containing Pen.el as its engine.
 (require 'pen-quineserver)
-(require 'pen-localization)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
