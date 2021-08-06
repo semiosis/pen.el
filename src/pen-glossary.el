@@ -2,7 +2,7 @@
   ;; This should be made optional, since it may be slow
   (snc "pen-pretty-paragraph" s))
 
-(defun pen-list-glossary-files ()
+(defun pen-list-glossary-filespen-list-glossary-files ()
   (s-lines (cl-sn "pen-list-glossary-files" :chomp t)))
 
 (defun pen-add-to-glossary (term &optional take-first definition)
