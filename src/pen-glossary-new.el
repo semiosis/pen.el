@@ -1,8 +1,3 @@
-;; penify
-;; cat $MYGIT/semiosis/pen.el/src/pen-glossary-new.el | scrape "\(def[a-z]+ [^ ()]+" | cut -d ' ' -f 2 | v
-;; %!awk '{ print length, $0 }' | sort -n -s | cut -d" " -f2- | tac | uniqnosort
-;; %s/.*/-e "s\/\\([^a-z-]\\)\\(&[^a-z-]\\)\/\\1pen-\\2\/g" \\
-
 (require 'my-regex)
 (require 'my-lists)
 
