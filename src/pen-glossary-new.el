@@ -533,7 +533,7 @@ Use my position list code. Make it use rosie lang and external software."
   (if b
       (buffer-substring (button-start b) (button-end b))))
 
-(defalias pen-'list-all-pen-glossary-files 'pen-list-pen-glossary-files)
+(defalias 'pen-list-all-pen-glossary-files 'pen-list-pen-glossary-files)
 
 (defun pen-other-glossaries-not-added-yet ()
   (let ((all-glossary-files (pen-list-pen-glossary-files)))
@@ -655,7 +655,7 @@ Use my position list code. Make it use rosie lang and external software."
   (interactive)
   (let ((imenu-create-index-function #'button-cloud-create-imenu-index))
     (helm-imenu)))
-(defalias pen-'glossary-button-imenu 'pen-button-imenu)
+(defalias 'pen-glossary-button-imenu 'pen-button-imenu)
 
 (defun pen-byte-to-marker (byte)
   (set-marker (make-marker) byte))
@@ -974,7 +974,7 @@ Use my position list code. Make it use rosie lang and external software."
   (interactive "r")
   (message "(pen-remove-all-glossary-buttons)")
   (pen-remove-glossary-buttons-over-region (point-min) (point-max)))
-(defalias pen-'clear-glossary-buttons 'pen-remove-all-glossary-buttons)
+(defalias 'pen-clear-glossary-buttons 'pen-remove-all-glossary-buttons)
 
 (defset pen-my-buttonize-hook '())
 
@@ -1104,7 +1104,7 @@ Use my position list code. Make it use rosie lang and external software."
         b
       nil))
   (button-at-point))
-(defalias pen-'glossary-button-at-point-p 'pen-glossary-button-at-point)
+(defalias 'pen-glossary-button-at-point-p 'pen-glossary-button-at-point)
 
 (defun pen-my-button-get-link (b)
   (cond
