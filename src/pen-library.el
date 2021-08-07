@@ -18,8 +18,6 @@
     (org-brain-pf-topic))
    ((pen-is-glossary-file (get-path))
     (pen-get-glossary-topic (get-path)))
-   ((pen-is-glossary-file (get-path))
-    (pen-get-glossary-topic (get-path)))
    (t (pen-detect-language))))
 
 (defun save-temp-if-no-file ()
