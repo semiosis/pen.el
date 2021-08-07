@@ -809,7 +809,10 @@ Function names are prefixed with pf- for easy searching"
                (list `(n-completions 3)
                      ;; Also, ensure n-collate = 1 because
                      ;; n-completions may be emulated with collate 
-                     `(n-collate 1)))))))
+                     `(n-collate 1)))
+           (if pen-force-gpt-j-aix
+               (list `(lm-command "aix-complete.sh")
+                     `(engine "GPT-J-6B")))))))
     `(eval
       `(let ,',overrides
          ,',@body))))
