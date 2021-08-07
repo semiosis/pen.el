@@ -177,7 +177,7 @@
     (setq topic
           (cond
            ((derived-mode-p 'prog-mode)
-            (s-join " " (-filter-not-empty-string (list (sor (pen-detect-language)) (sor topic)))))
+            (s-join " " (-filter-not-empty-string (list (sor (str (pen-detect-language))) (sor topic)))))
            ((string-equal topic "solidity") "solidity, ethereum")
            (t topic)))
 
