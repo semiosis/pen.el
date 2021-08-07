@@ -228,7 +228,7 @@ case "$sn" in
         HAS_TTY=n
         batch=y
         docker_cmd=exec
-        remote_cmd=bash
+        # remote_cmd=bash
     }
     ;;
 
