@@ -48,6 +48,8 @@ pip3 install yq python-json2yaml
 # For AIX API
 pip3 install aixapi requests
 
+pip3 install huggingface_hub
+
 # For Pen.el
 ## slugify
 agi libc-bin
