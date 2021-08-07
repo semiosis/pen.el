@@ -867,8 +867,8 @@ when s is a string, set the clipboard to s"
   ;; nil 'emacs-lisp-mode
   )
 
-(defun s-replace-regexp-thread (regex pre string)
-  (s-replace-regexp regex pre string t))
+(defun s-replace-regexp-thread (regex rep string)
+  (s-replace-regexp regex rep string t))
 
 (defmacro do-substitutions (str &rest tups)
   ""
