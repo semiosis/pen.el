@@ -9,7 +9,7 @@
 
 (defun pen-add-to-glossary (term &optional take-first definition)
   "C-u will allow you to add to any glossary file"
-  (interactive (let ((s (pen-thing-at-point-ask)))
+  (interactive (let ((s (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-thing-at-point-ask))))
                  (if (not (sor s))
                      (setq s (read-string-hist "glossary term to add: ")))
                  (list s)))

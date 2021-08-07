@@ -64,7 +64,8 @@
 (require 'selected)
 (define-key selected-keymap (kbd "SPC") 'pen-run-prompt-function)
 (define-key selected-keymap (kbd "M-SPC") 'pen-run-prompt-function)
-(define-key selected-keymap (kbd "A") 'pf-define-word-for-glossary)
+;; (define-key selected-keymap (kbd "A") 'pf-define-word-for-glossary)
+(define-key selected-keymap (kbd "A") 'pen-add-to-glossary)
 
 (define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
 (define-key pen-map (kbd "H-1") #'pen-company-filetype-word)
