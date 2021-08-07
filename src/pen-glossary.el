@@ -9,7 +9,7 @@
 
 (defun pen-add-to-glossary (term &optional take-first definition)
   "C-u will allow you to add to any glossary file"
-  (interactive (let ((s (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-thing-at-point-ask))))
+  (interactive (let ((s (rx/chomp (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-thing-at-point-ask)))))
                  (if (not (sor s))
                      (setq s (read-string-hist "glossary term to add: ")))
                  (list s)))
@@ -47,11 +47,13 @@
               (end-of-line))
           (progn
             (end-of-buffer)
+            (if (not (looking-at "^$"))
+                (newline))
             (newline)
-            (newline)
-            (insert term)))
+            (insert (chomp term))))
         (newline)
         (if (sor definition)
+            ;; Do not chomp the start
             (insert (chomp (pen-pretty-paragraph (concat "    " definition))))
           (insert "    ")))
       (current-buffer))))

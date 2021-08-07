@@ -251,6 +251,14 @@ delim is used to guarantee the function returns multiple matches per line
   "Chomp (remove tailing newline from) STR."
   (replace-regexp-in-string "\n\\'" "" str))
 
+(defun rx/chomp (str)
+  "Chomp leading and tailing whitespace from STR."
+  (replace-regexp-in-string
+   (rx (or (: bos (* (any " \t\n")))
+           (: (* (any " \t\n")) eos)))
+   ""
+   str))
+
 (defun slurp-file (filePath)
   "Return filePath's file content."
   (with-temp-buffer

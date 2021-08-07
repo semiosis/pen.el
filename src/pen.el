@@ -153,6 +153,8 @@
 
 (defun pen-prompt-snc (cmd resultnumber)
   "This is like pen-snc but it will memoize the function. resultnumber is necessary because we want n unique results per function"
+  (if (f-directory-p penconfdir)
+      (tee (f-join penconfdir "last-final-command.txt") cmd))
   (pen-snc cmd))
 
 (defun pen-list2cmd (l)
@@ -191,18 +193,6 @@ I onelineify and unonelineify in order to preserve newlines and prevent infinite
      (pen-expand-template-keyvals it var-keyvals)
      (pen-unonelineify it)))
 
-(defun test-template ()
-  (interactive)
-  (etv
-   (pps
-    (let ((subprompts)
-          (vals)
-          (var-keyvals-slugged)
-          (var-keyvals))
-      (cl-loop for stsq in '("###")
-               collect
-               (pen-expand-template-in-define-prompt-function stsq))))))
-
 (defun test-template-newlines ()
   (interactive)
   (--> "\n"
@@ -210,6 +200,24 @@ I onelineify and unonelineify in order to preserve newlines and prevent infinite
     (pen-expand-template-keyvals it '((:myval "hi")))
     (pen-expand-template it '("a" "bee"))
     (pen-unonelineify it)))
+
+(defun test-template ()
+  (interactive)
+  (etv
+   (pps
+    (let ((subprompts '((meta . "and")
+                        (intra . "and the")))
+          (vals '("Something" "upon" "us"))
+          (var-keyvals-slugged
+           '(("my-name" . "Shane")))
+          (var-keyvals
+           '(("my name" . "Shane"))))
+      (cl-loop for stsq in '("###" "\n"
+                             "Alpha <meta> Omega"
+                             "First <intra> last"
+                             "Once <2> a time, <my name>")
+               collect
+               (pen-expand-template-in-define-prompt-function stsq))))))
 
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
