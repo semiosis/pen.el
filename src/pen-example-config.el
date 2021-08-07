@@ -100,6 +100,12 @@
       (setq pen-prompts-directory hostpromptsdir)
     (setq pen-prompts-directory (f-join user-emacs-directory "prompts"))))
 
+;; Personal glossaries repository
+(let ((hostglossariesdir (f-join user-emacs-directory "host" "glossaries")))
+  (if (f-directory-p (f-join hostglossariesdir "glossaries"))
+      (setq pen-glossaries-directory hostglossariesdir)
+    (setq pen-glossaries-directory (f-join user-emacs-directory "glossaries"))))
+
 ;; nlsh
 (setq pen-nlsh-histdir (f-join user-emacs-directory "comint-history"))
 

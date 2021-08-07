@@ -29,6 +29,12 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-glossaries-directory (f-join user-emacs-directory "glossaries")
+  "Personal glossary respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-prompts-library-directory (f-join user-emacs-directory "prompts-library")
   "The directory where prompts repositories are stored"
   :type 'string

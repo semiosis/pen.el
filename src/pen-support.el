@@ -847,7 +847,7 @@ when s is a string, set the clipboard to s"
   "Minimise string."
   ;; (sh-notty "mnm" input)
   (if input
-      (seds (umn input)
+      (seds (pen-umn input)
             ((f-join pen-prompts-directory "prompts") "$PROMPTS")
             (user-emacs-directory "$EMACSD")
             (penconfdir "$PEN")
