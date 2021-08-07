@@ -587,13 +587,16 @@ Function names are prefixed with pf- for easy searching"
                      (max-tokens (ht-get yaml "max-tokens"))
                      (top-p (ht-get yaml "top-p"))
                      (temperature (ht-get yaml "temperature"))
-                     (stop-sequences (or (vector2list (ht-get yaml "stop-sequences"))
-                                         (list "\n")))
-                     (stop-sequence (if stop-sequences (car stop-sequences)))
+                     (stop-sequences
+                      (or (vector2list (ht-get yaml "stop-sequences"))
+                          (list "\n")))
+                     (stop-sequence
+                      (if stop-sequences (car stop-sequences)))
 
-                     (stop-patterns (or (vector2list (ht-get yaml "stop-patterns"))
-                                        ;; By default, stop when you see ^Input
-                                        (list "^Input:")))
+                     (stop-patterns
+                      (or (vector2list (ht-get yaml "stop-patterns"))
+                          ;; By default, stop when you see ^Input
+                          (list "^Input:")))
 
                      ;; docs
                      (problems (vector2list (ht-get yaml "problems")))
