@@ -1,16 +1,27 @@
+(defun pen-diagnostics-show-status ()
+  (get-path-semantic)
+
+  )
+
+(defun pen-diagnostics-test ()
+  (interactive)
+  (let* ((plist `(:testkey ,(pen-diagnostics-test-key)
+                           :semantic-path ,(get-path-semantic))))
+    (nbfs (plist2yaml plist) "pen diagnostics" 'yaml-mode)))
+
 (defun pen-diagnostics-test-key ()
   (interactive)
   (let* ((aix-key (pen-snc "cat ~/.pen/aix_api_key"))
          (aix-cmd
-          (tv (concat
-               (sh-construct-envs `(("AIX_API_KEY" ,aix-key)
-                                    ("PEN_PROMPT" "Once upon a time")
-                                    ("PEN_MAX_TOKENS" "60")
-                                    ("PEN_ENGINE" "GPT-J-6B")
-                                    ("PEN_TOP_P" "1.0")
-                                    ("PEN_STOP_SEQUENCE" "###")))
-               " "
-               "pen-aix")))
+          (concat
+           (sh-construct-envs `(("AIX_API_KEY" ,aix-key)
+                                ("PEN_PROMPT" "Once upon a time")
+                                ("PEN_MAX_TOKENS" "60")
+                                ("PEN_ENGINE" "GPT-J-6B")
+                                ("PEN_TOP_P" "1.0")
+                                ("PEN_STOP_SEQUENCE" "###")))
+           " "
+           "pen-aix"))
          (output (concat
                   "openai keytest: "
                   (pen-onelineify
