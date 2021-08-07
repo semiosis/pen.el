@@ -1,6 +1,9 @@
 (defun pen-diagnostics-show-context ()
   (interactive)
-  (let* ((plist `(:semantic-path ,(get-path-semantic))))
+  (let* ((plist (list
+                 :semantic-path (get-path-semantic)
+                 :last-final-command (snc "cat ~/.pen/last-final-command.txt")
+                 :last-final-prompt (snc "cat ~/.pen/last-final-prompt.txt"))))
     (nbfs (plist2yaml plist) "pen context" 'yaml-mode)))
 
 (defun pen-diagnostics-test-key ()
