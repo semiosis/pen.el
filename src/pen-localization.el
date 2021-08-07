@@ -1,5 +1,5 @@
 ;; It's important to be able to understand all the user prompts in Pen.el
 
-;; Rather than
+;; All strings should be associated with a base language model
 
 (provide 'pen-localization)
