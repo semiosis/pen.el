@@ -77,4 +77,10 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-user-agent "emacs/pen"
+  "User Agent for self identification"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (provide 'pen-custom)
