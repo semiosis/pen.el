@@ -1,0 +1,59 @@
+#!/bin/bash
+export TTY
+
+postprocess() {
+    # Consider using grammar correcting prompt function here instead
+    sed "s/I 'm/I'm/g"
+}
+
+# corpus=15 # english 2012
+# corpus=16 # english fiction
+# corpus=26 # english 2019
+
+: "${corpus:="$(myrc .google_ngrams_corpus | cut -d ' ' -f 1)"}"
+: "${corpus:="26"}"
+
+start=1800
+end=2020
+# end=1899
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -c) {
+        corpus="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -y) {
+        start="$2"
+        end="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -s) {
+        start="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -e) {
+        end="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+awk1 | while IFS=$'\n' read -r line; do
+    {
+        phrase="$line"
+        oci curl -s "https://books.google.com/ngrams/json?content=$(echo "$phrase" | urlencode | sed 's/%2A/*/g')&year_start=$start&year_end=$end&corpus=$corpus&smoothing=3" | jq -r .[].ngram | htmldecode.sh | postprocess
+    } 0</dev/null
+done | sed -u 1d | pavs
