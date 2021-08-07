@@ -52,7 +52,7 @@
             (insert term)))
         (newline)
         (if (sor definition)
-            (insert (pen-pretty-paragraph (concat "    " definition)))
+            (insert (chomp (pen-pretty-paragraph (concat "    " definition))))
           (insert "    ")))
       (current-buffer))))
 
