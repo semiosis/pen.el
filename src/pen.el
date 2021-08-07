@@ -215,7 +215,7 @@ I onelineify and unonelineify in order to preserve newlines and prevent infinite
       (cl-loop for stsq in '("###" "\n"
                              "Alpha <meta> Omega"
                              "First <intra> last"
-                             "Once <2> a time, <my name>")
+                             "Once <2> a time, <my name> said...\n")
                collect
                (pen-expand-template-in-define-prompt-function stsq))))))
 
