@@ -177,7 +177,7 @@
       (ht->alist (-reduce 'ht-merge l))))))
 
 (defmacro pen-expand-template-in-define-prompt-function (string-sym)
-  ""
+  "Expand templates. This macro works inside define-prompt-function."
   `(--> ,string-sym
      (pen-expand-template-keyvals it subprompts)
      (pen-expand-template it vals)
@@ -214,14 +214,6 @@
               (or (pen-var-value-maybe 'do-etv)
                   (pen-var-value-maybe 'is-info)
                   ,is-info))
-
-             (final-n-collate
-              (or (pen-var-value-maybe 'n-collate)
-                  ,n-collate))
-
-             (final-n-completions
-              (str (or (pen-var-value-maybe 'n-completions)
-                       ,n-completions)))
 
              (subprompts ,subprompts)
 
@@ -273,23 +265,46 @@
              (var-keyvals (-zip ',vars vals))
              (var-keyvals-slugged (-zip ',var-slugs vals))
 
-             ;; template the parameters into the prompt
-             (final-prompt
-              (pen-expand-template-in-define-prompt-function final-prompt))
+             ;; n-collate currently isn't template expanded
+             (final-n-collate
+              (or (pen-var-value-maybe 'n-collate)
+                  ,n-collate))
 
-             ;; The max tokens may be templated in via variable
+             (final-n-completions
+              (pen-expand-template-in-define-prompt-function
+               (str (or (pen-var-value-maybe 'n-completions)
+                        ,n-completions))))
+
+             ;; The max tokens may be templated in via variable or even a subprompt
              (final-max-tokens
               (pen-expand-template-in-define-prompt-function
                (str (or (pen-var-value-maybe 'max-tokens)
                         ,max-tokens))))
 
+             (final-temperature
+              (pen-expand-template-in-define-prompt-function
+               (str (or (pen-var-value-maybe 'temperature)
+                        ,temperature))))
+
+             (final-top-p
+              (pen-expand-template-in-define-prompt-function
+               (str (or (pen-var-value-maybe 'top-p)
+                        ,top-p))))
+
              (final-stop-sequences
-              (or (pen-var-value-maybe 'stop-sequences)
-                  ',stop-sequences))
+              (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
+                                       ',stop-sequences)
+                       collect
+                       (pen-expand-template-in-define-prompt-function stsq)))
 
              (final-stop-patterns
               (or (pen-var-value-maybe 'stop-patterns)
                   ',stop-patterns))
+
+             (final-stop-sequence
+              (pen-expand-template-in-define-prompt-function
+               (str (or (pen-var-value-maybe 'stop-sequence)
+                        ,stop-sequence))))
 
              (final-prompt
               (pen-expand-template-in-define-prompt-function final-prompt))
@@ -336,16 +351,10 @@
                   `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
                     ("PEN_LM_COMMAND" ,,lm-command)
                     ("PEN_ENGINE" ,,engine)
-                    ("PEN_MAX_TOKENS"
-                     ,(pen-expand-template final-max-tokens vals))
-                    ("PEN_TEMPERATURE" ,(pen-expand-template (str ,temperature) vals))
-                    ("PEN_STOP_SEQUENCE"
-                     ,(pen-encode-string
-                       (str (if (variable-p 'stop-sequence)
-                                ;; Make overridable
-                                (eval 'stop-sequence)
-                              ,stop-sequence))))
-                    ("PEN_TOP_P" ,,top-p)
+                    ("PEN_MAX_TOKENS" ,final-max-tokens)
+                    ("PEN_TEMPERATURE" ,final-temperature)
+                    ("PEN_STOP_SEQUENCE" ,(final-stop-sequence final-stop-sequence))
+                    ("PEN_TOP_P" ,final-top-p)
                     ("PEN_CACHE" ,cache)
                     ("PEN_N_COMPLETIONS" ,final-n-completions)
                     ("PEN_END_POS" ,prompt-end-pos)))
