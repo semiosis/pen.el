@@ -118,7 +118,8 @@ if test "$sn" = pen && \
     test -d "$PEN_CONFIG_DIR/documents"; then
 
     bn="$(basename "$1")"
-    ln -f "$1" "$PEN_CONFIG_DIR/documents/$bn"
+    rp="$(realpath "$bn")"
+    ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
     shift
 
     sn=penc
