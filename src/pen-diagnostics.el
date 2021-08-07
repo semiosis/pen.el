@@ -4,7 +4,7 @@
                  :semantic-path (get-path-semantic)
                  :last-final-command (snc "cat ~/.pen/last-final-command.txt")
                  :last-final-prompt (snc "cat ~/.pen/last-final-prompt.txt"))))
-    (nbfs (plist2yaml plist) "pen context" 'yaml-mode)))
+    (find-file (pen-tf "pen context" (plist2yaml plist) "yaml"))))
 
 (defun pen-diagnostics-test-key ()
   (interactive)
