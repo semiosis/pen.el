@@ -119,14 +119,16 @@
 
 (defun pen-expand-template (s vals)
   "expand template from list"
-  (let ((i 1))
-    (chomp
-     (progn
-       (cl-loop
-        for val in vals do
-        (setq s (string-replace (format "<%d>" i) (chomp val) s))
-        (setq i (+ 1 i)))
-       s))))
+  (if vals
+      (let ((i 1))
+        (chomp
+         (progn
+           (cl-loop
+            for val in vals do
+            (setq s (string-replace (format "<%d>" i) (chomp val) s))
+            (setq i (+ 1 i)))
+           s)))
+    s))
 
 (defun pen-test-expand-keyvals ()
   (interactive)
@@ -135,17 +137,19 @@
 
 (defun pen-expand-template-keyvals (s keyvals)
   "expand template from alist"
-  (let ((i 1))
-    (chomp
-     (progn
-       (cl-loop
-        for kv in keyvals do
-        (let ((key (str (car kv)))
-              (val (str (cdr kv))))
-          (setq s (string-replace (format "<%s>" key) (chomp val) s))
-          ;; (setq s (string-replace (format "<%d>" i) val s))
-          (setq i (+ 1 i))))
-       s))))
+  (if keyvals
+      (let ((i 1))
+        (chomp
+         (progn
+           (cl-loop
+            for kv in keyvals do
+            (let ((key (str (car kv)))
+                  (val (str (cdr kv))))
+              (setq s (string-replace (format "<%s>" key) (chomp val) s))
+              ;; (setq s (string-replace (format "<%d>" i) val s))
+              (setq i (+ 1 i))))
+           s)))
+    s))
 
 (defun pen-prompt-snc (cmd resultnumber)
   "This is like pen-snc but it will memoize the function. resultnumber is necessary because we want n unique results per function"
@@ -177,12 +181,35 @@
       (ht->alist (-reduce 'ht-merge l))))))
 
 (defmacro pen-expand-template-in-define-prompt-function (string-sym)
-  "Expand templates. This macro works inside define-prompt-function."
+  "Expand templates. This macro works inside define-prompt-function.
+I onelineify and unonelineify in order to preserve newlines and prevent infinite loop processing stop sequences"
   `(--> ,string-sym
+     (pen-onelineify it)
      (pen-expand-template-keyvals it subprompts)
      (pen-expand-template it vals)
      (pen-expand-template-keyvals it var-keyvals-slugged)
-     (pen-expand-template-keyvals it var-keyvals)))
+     (pen-expand-template-keyvals it var-keyvals)
+     (pen-unonelineify it)))
+
+(defun test-template ()
+  (interactive)
+  (etv
+   (pps
+    (let ((subprompts)
+          (vals)
+          (var-keyvals-slugged)
+          (var-keyvals))
+      (cl-loop for stsq in '("###")
+               collect
+               (pen-expand-template-in-define-prompt-function stsq))))))
+
+(defun test-template-newlines ()
+  (interactive)
+  (--> "\n"
+    (pen-onelineify it)
+    (pen-expand-template-keyvals it '((:myval "hi")))
+    (pen-expand-template it '("a" "bee"))
+    (pen-unonelineify it)))
 
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
@@ -353,7 +380,7 @@
                     ("PEN_ENGINE" ,,engine)
                     ("PEN_MAX_TOKENS" ,final-max-tokens)
                     ("PEN_TEMPERATURE" ,final-temperature)
-                    ("PEN_STOP_SEQUENCE" ,(final-stop-sequence final-stop-sequence))
+                    ("PEN_STOP_SEQUENCE" ,final-stop-sequence)
                     ("PEN_TOP_P" ,final-top-p)
                     ("PEN_CACHE" ,cache)
                     ("PEN_N_COMPLETIONS" ,final-n-completions)

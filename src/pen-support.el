@@ -716,7 +716,7 @@ when s is a string, set the clipboard to s"
   (pen-snc "pen-s onelineify" s))
 
 (defun pen-unonelineify (s)
-  (pen-snc "pen-s unonelineify" s))
+  (pen-sn "pen-s unonelineify" s))
 
 (defun replace-region (s)
   "Apply the function to the selected region. The function must accept a string and return a string."
