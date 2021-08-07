@@ -796,6 +796,14 @@ Function names are prefixed with pf- for easy searching"
     `(let ((do-pen-batch t))
        ,',@body)))
 
+(defmacro pen-force-custom (&rest body)
+  "This forces various settings depending on customizations such as pen-force-single-collation"
+  `(eval
+    `(let ((pen-single-generation-b t)
+           (n-collate 1)
+           (n-completions 1))
+       ,',@body)))
+
 (defmacro pen-single-generation (&rest body)
   "This wraps around pen function calls to make them only create one generation"
   `(eval
