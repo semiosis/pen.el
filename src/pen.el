@@ -812,7 +812,10 @@ Function names are prefixed with pf- for easy searching"
                      `(n-collate 1)))
            (if pen-force-gpt-j-aix
                (list `(lm-command "aix-complete.sh")
-                     `(engine "GPT-J-6B")))))))
+                     `(engine "GPT-J-6B")))
+           (if pen-force-openai
+               (list `(lm-command "openai-complete.sh")
+                     `(engine "davinci")))))))
     `(eval
       `(let ,',overrides
          ,',@body))))

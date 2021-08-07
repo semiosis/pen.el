@@ -71,4 +71,10 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-force-openai nil
+  "Forcing use GPT-3 from OpenAI"
+  :type 'boolean
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (provide 'pen-custom)
