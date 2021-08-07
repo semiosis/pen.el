@@ -12,7 +12,7 @@
 
 ;; The semantic path needs to be an association list, and add to that with contrib plugins
 ;; The semantic path / topic should always be visible or accessible
-;; This way, 
+;; This way, it's easy to correct problems
 (defun get-path-semantic ()
   (interactive)
   (cond
