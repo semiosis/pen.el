@@ -592,7 +592,8 @@ Function names are prefixed with pf- for easy searching"
                      (stop-sequence (if stop-sequences (car stop-sequences)))
 
                      (stop-patterns (or (vector2list (ht-get yaml "stop-patterns"))
-                                        (list "\n")))
+                                        ;; By default, stop when you see ^Input
+                                        (list "^Input:")))
 
                      ;; docs
                      (problems (vector2list (ht-get yaml "problems")))
