@@ -145,7 +145,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("add comments" :call pf-annotate-code-with-commentary))
         ("> word/term" :call rcm-term :if (pen-word-clickable))
         ("keywords/classify" :call pen-extract-keywords)
-        ("define term" :call pen-define)))
+        ("define for glossary" :call pen-add-to-glossary)))
 
 (defmacro def-right-click-menu (name
                                 ;; predicates
