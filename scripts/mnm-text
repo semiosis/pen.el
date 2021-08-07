@@ -1,0 +1,36 @@
+#!/bin/bash
+export TTY
+
+sed -e 's/machine learning/ML/Ig' \
+    -e 's/artificial neural network/ANN/Ig' \
+    -e 's/natural language processing/NLP/Ig' \
+    -e 's/natural language generation/NLG/Ig' \
+    -e 's/natural language understanding/NLU/Ig' \
+    -e 's/artificial general intelligence/AGI/Ig' \
+    -e 's/natural language/NL/Ig' \
+    -e 's/fully qualified/FQ/Ig' \
+    -e 's/continuous integration/CI/Ig' \
+    -e 's/amazon web services/AWS/Ig' \
+    -e 's/language generation/LG/Ig' \
+    -e 's/language model/LM/Ig' \
+    -e 's/knowledge base/KB/Ig' \
+    -e 's/knowledge graph/KG/Ig' \
+    -e 's/computer vision/CV/Ig' \
+    -e 's/reinforcement learning/RL/Ig' \
+    -e 's/deep learning/DL/Ig' \
+    -e 's/TensorFlow/TF/Ig' \
+    -e 's/neural network/NN/gI' \
+    -e 's/feed.\?forward/FF/Ig' \
+    -e 's/Virtual Machine/VM/gI' \
+    -e 's/Resource Description Framework/RDF/gI' \
+    -e 's/state.of.the.art/SOTA/gI' \
+    -e 's/Kubernetes/k8s/gI' \
+    -e 's/question answering/QA/gI' \
+    -e 's/computer science/CS/gI' \
+    -e 's/information retrieval/IR/gI' \
+    -e 's/sequence.to.sequence/seq2seq/gI' \
+    -e 's/Kullback-\?Leibler/KL/gI' \
+    -e 's/Consumer-Driven Contract/CDC/gI' \
+    -e 's/original equipment manufacturer/OEM/gI' \
+    -e 's/Gradient Descent/GD/Ig' |
+sed -e 's/out.of.the.box/built-in/gI'

@@ -1,5 +1,30 @@
 #!/bin/bash
 
-# TODO Segment sentences and tidy
+# Segment sentences and tidy
 
-cat
+# This is also different from tpp in that it respects a leading '-' in
+# checklists.
+
+width="$1"
+# : ${width:="38"} # phone
+: ${width:="46"}
+
+tf_input="$(pen-tf)"
+trap "rm \"$tf_input\" 2>/dev/null" 0
+
+cat > "$tf_input"
+
+initalwhitespace="$(cat "$tf_input" | sed -n "1s/^\(^- \)\?\(\s\+\).*/\2/p")"
+whitespacewidth="$(printf -- "%s" "$initalwhitespace" | wc -c)"
+width="$(( width - whitespacewidth ))"
+
+cat "$tf_input" |
+    sed 's/ / /g' |
+    pen-acronymise |
+    sed 's/^\(\s\+\)//' |
+    pen-s join ' ' |
+    wrlp -E "pen-wrap $width; echo" |
+    sed 's/^\s\+$//' |
+    sed "s/\s\+/ /g" |
+    sed '${/^$/d;}' |
+    sed "s/^/$initalwhitespace/"

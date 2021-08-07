@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mktemp -t "tf_XXXXXXX" 2>/dev/null || :

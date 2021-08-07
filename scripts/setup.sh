@@ -65,6 +65,7 @@ mkdir -p /root/org-roam
 (
 cd "$EMACSD"
 test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
+test -d glossaries || git clone --depth 1 "https://github.com/semiosis/glossaries"
 test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
 
