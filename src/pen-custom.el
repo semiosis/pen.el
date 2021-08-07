@@ -60,7 +60,7 @@
   :initialize #'custom-initialize-default)
 
 (defcustom pen-force-few-completions nil
-  "Forcing only few completions will speed up Pen.el"
+  "Forcing only few completions will speed up Pen.el, but not by much usually"
   :type 'boolean
   :group 'pen
   :initialize #'custom-initialize-default)
