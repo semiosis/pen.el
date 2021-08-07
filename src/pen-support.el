@@ -14,6 +14,13 @@
   ;; (pen-snc (cmd "mant" path))
   (s-replace-regexp "\\..*" "" (f-basename path)))
 
+(defun pen-tf (template &optional input)
+  "Create a temporary file."
+  (let ((fp (snc (concat "mktemp -p /tmp " (q (concat "XXXX" (slugify template)))))))
+    (if (and (sor fp)
+             (sor input))
+        (shut-up (write-to-file input fp)))
+    fp))
 
 (defalias 're-match-p 'string-match)
 
