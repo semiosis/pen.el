@@ -121,7 +121,11 @@ if test "$sn" = pen && \
     ln -f "$1" "$PEN_CONFIG_DIR/documents/$bn"
     shift
 
-    set -- -e "(find-file $(cmd-nice "/root/.pen/documents/$bn")"
+    sn=penc
+
+    # set -- -e "(find-file $(cmd-nice "/root/.pen/documents/$bn")"
+
+    set -- "/root/.pen/documents/$bn"
 fi
 
 if test "$sn" = pen && test "$1" = -e; then
@@ -320,8 +324,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -c) {
         batch=y
         docker_cmd=exec
-        remote_cmd=./.emacs.d/pen.el/scripts/newframe.sh
+
         shift
+
+        CMD="$(cmd-nice "$@")"
+        : ${CMD:="$(cmd-nice "$@")"}
+
+        remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
+
+        # Shift all so it doesn't do -e here
+        # shift "$#"
     }
     ;;
 

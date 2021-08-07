@@ -10,4 +10,4 @@ export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 
-emacsclient -a "" -t
+emacsclient -a "" -t "$@"
