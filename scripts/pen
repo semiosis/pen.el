@@ -117,7 +117,8 @@ if test "$sn" = pen && \
     test -f "$1" && \
     test -d "$PEN_CONFIG_DIR/documents"; then
 
-    rp="$(realpath "$bn")"
+    rp="$(realpath "$1")"
+    bn="$(basename "$rp")"
     ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
     shift
 
