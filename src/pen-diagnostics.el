@@ -1,13 +1,7 @@
-(defun pen-diagnostics-show-status ()
-  (get-path-semantic)
-
-  )
-
-(defun pen-diagnostics-test ()
+(defun pen-diagnostics-show-context ()
   (interactive)
-  (let* ((plist `(:testkey ,(pen-diagnostics-test-key)
-                           :semantic-path ,(get-path-semantic))))
-    (nbfs (plist2yaml plist) "pen diagnostics" 'yaml-mode)))
+  (let* ((plist `(:semantic-path ,(get-path-semantic))))
+    (nbfs (plist2yaml plist) "pen context" 'yaml-mode)))
 
 (defun pen-diagnostics-test-key ()
   (interactive)
