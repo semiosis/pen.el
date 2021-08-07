@@ -65,4 +65,10 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-force-gpt-j-aix nil
+  "Forcing use GPT-J"
+  :type 'boolean
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (provide 'pen-custom)
