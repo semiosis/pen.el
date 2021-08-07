@@ -656,19 +656,38 @@ when s is a string, set the clipboard to s"
   "Get the current major mode as a string."
   (str major-mode))
 
-(defun pen-detect-language (&optional detect buffer-not-selection)
+(defun pen-string-to-buffer (string)
+  "temporary buffer from string"
+  (with-temp-buffer
+    (insert string)))
+
+(defun pen-detect-language (&optional detect buffer-not-selection world programming)
   "Returns the language of the buffer or selection."
   (interactive)
-  (let ((lang
-         (if (not detect)
-             (s-replace-regexp "-mode$" "" (current-major-mode-string))
-           (str (language-detection-string
-                 (if buffer-not-selection
-                     (buffer-string)
-                   (region-or-buffer-string)))))))
+
+  (let* ((text (if buffer-not-selection
+                   (buffer-string)
+                 (region-or-buffer-string)))
+         (buf (nbfs text))
+         (mode-lang (and (not detect)
+                         (s-replace-regexp "-mode$" "" (current-major-mode-string))))
+         (mode-lang
+          (cond
+           ((string-equal "fundamental" mode-lang) nil)
+           ((string-equal "lisp-interaction" mode-lang) nil)
+           (t mode-lang)))
+         (programming-lang (and (not world)
+                                (sor (language-detection-string text))))
+         (world-lang (and (not programming-lang)
+                          (sor (with-current-buffer buf
+                                 (insert text)
+                                 (guess-language-buffer)))))
+         (lang (sor mode-lang programming-lang world-lang)))
 
     (if (string-equal "rustic" lang) (setq lang "rust"))
     (if (string-equal "clojurec" lang) (setq lang "clojure"))
+
+    (kill-buffer buf)
     lang))
 
 (defun mode-to-lang (&optional modesym)

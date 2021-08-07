@@ -20,7 +20,7 @@
     (pen-get-glossary-topic (get-path)))
    ((pen-is-glossary-file (get-path))
     (pen-get-glossary-topic (get-path)))
-   (t (buffer-language))))
+   (t (pen-detect-language))))
 
 (defun save-temp-if-no-file ()
   (interactive)
