@@ -49,6 +49,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -d) {
+        DEBUG=y
+        shift
+    }
+    ;;
+
     -u) {
         UPDATE=y
         shift
@@ -225,10 +231,15 @@ case "$sn" in
     ;;
 
     pensh) {
-        HAS_TTY=n
+        # HAS_TTY=y
         batch=y
+        use_tty=y
         docker_cmd=exec
-        # remote_cmd=bash
+
+        firstarg="$1"
+        shift
+
+        remote_cmd="$firstarg"
     }
     ;;
 
@@ -484,7 +495,6 @@ fi
 
 case "$docker_cmd" in
     run) {
-
 IFS= read -r -d '' shcode <<HEREDOC
     # --user "$(id -u):$(id -g)"
     docker "$docker_cmd" \
@@ -500,13 +510,11 @@ HEREDOC
     }
     ;;
 
+    # --user "$(id -u):$(id -g)"
     exec) {
         evalcommand="$(cmd "$(cmd eval "$(cmd "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-    # --user "$(id -u):$(id -g)"
-    docker "$docker_cmd" \
-        $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
-        pen bash -c $evalcommand
+docker "$docker_cmd" $(test "$HAS_TTY" = y && printf -- "%s " -ti ) pen bash -c $evalcommand
 HEREDOC
     }
     ;;
@@ -515,6 +523,12 @@ HEREDOC
 esac
 
 pen_eval() {
+    if test "$DEBUG" = "y"; then
+        firstarg="cmd-nice $1"
+        shift
+        set -- "$firstarg" "$@"
+    fi
+
     if test "$penl_strip_pf" = "y"; then
         eval "$@" | sed 's/^pf-//'
     else
