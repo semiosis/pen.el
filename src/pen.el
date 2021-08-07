@@ -231,6 +231,10 @@
               (or (pen-var-value-maybe 'stop-sequences)
                   ',stop-sequences))
 
+             (final-stop-patterns
+              (or (pen-var-value-maybe 'stop-patterns)
+                  ',stop-patterns))
+
              (vals
               ;; If not called interactively then
               ;; manually run interactive expressions
@@ -374,6 +378,13 @@
                                          (cl-loop
                                           for stsq in final-stop-sequences do
                                           (let ((matchpos (pen-string-search stsq r)))
+                                            (if matchpos
+                                                (setq r (s-truncate matchpos r "")))))
+                                         r))
+                               (mapcar (lambda (r)
+                                         (cl-loop
+                                          for stpat in final-stop-patterns do
+                                          (let ((matchpos (re-match-p stpat r)))
                                             (if matchpos
                                                 (setq r (s-truncate matchpos r "")))))
                                          r)))
@@ -528,6 +539,9 @@ Function names are prefixed with pf- for easy searching"
                      (stop-sequences (or (vector2list (ht-get yaml "stop-sequences"))
                                          (list "\n")))
                      (stop-sequence (if stop-sequences (car stop-sequences)))
+
+                     (stop-patterns (or (vector2list (ht-get yaml "stop-patterns"))
+                                        (list "\n")))
 
                      ;; docs
                      (problems (vector2list (ht-get yaml "problems")))
