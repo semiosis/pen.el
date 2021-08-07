@@ -81,6 +81,10 @@
 (define-key pen-map (kbd "H-:") 'pen-compose-cli-command)
 (define-key pen-map (kbd "H-x") 'pen-diagnostics-show-context)
 
+;; Most main pen commands should be under hyperspace
+;; hyperspace x
+(define-key pen-map (kbd "H-SPC x") 'pen-diagnostics-show-context)
+
 (require 'pen-contrib)
 ;; from contrib
 (require 'pen-org-brain)
