@@ -11,7 +11,7 @@
   (s-replace-regexp "\\..*" "" (f-basename path)))
 
 ;; The semantic path needs to be an association list, and add to that with contrib plugins
-;; The semantic path should always be visible or accessible
+;; The semantic path / topic should always be visible or accessible
 ;; This way, 
 (defun get-path-semantic ()
   (interactive)
