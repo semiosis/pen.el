@@ -797,12 +797,26 @@ Function names are prefixed with pf- for easy searching"
        ,',@body)))
 
 (defmacro pen-force-custom (&rest body)
-  "This forces various settings depending on customizations such as pen-force-single-collation"
-  `(eval
-    `(let ((pen-single-generation-b t)
-           (n-collate 1)
-           (n-completions 1))
-       ,',@body)))
+  "This forces various settings depending on customizations"
+  (let ((overrides
+         (flatten-once
+          (list
+           (if pen-force-single-collation
+               (list `(pen-single-generation-b t)
+                     `(n-collate 1)))
+           (if pen-force-few-completions
+               (list `(n-completions 3)
+                     ;; Also, ensure n-collate = 1 because
+                     ;; n-completions may be emulated with collate 
+                     `(n-collate 1)))))))
+    `(eval
+      `(let ,',overrides
+         ,',@body))))
+
+(defun pen-force-custom-test ()
+  (interactive)
+  (etv
+   (pen-force-custom (message (str (pen-var-value-maybe 'n-collate))))))
 
 (defmacro pen-single-generation (&rest body)
   "This wraps around pen function calls to make them only create one generation"

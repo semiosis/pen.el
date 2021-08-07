@@ -56,13 +56,13 @@
 (defcustom pen-force-single-collation nil
   "Forcing only one collation will speed up Pen.el"
   :type 'boolean
-  :group 'hyperparameters
+  :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-force-few-completions nil
   "Forcing only few completions will speed up Pen.el"
   :type 'boolean
-  :group 'hyperparameters
+  :group 'pen
   :initialize #'custom-initialize-default)
 
 (provide 'pen-custom)
