@@ -176,6 +176,14 @@
       ;; (ht-merge (car l) (second l))
       (ht->alist (-reduce 'ht-merge l))))))
 
+(defmacro pen-expand-template-in-define-prompt-function (string-sym)
+  ""
+  `(--> ,string-sym
+     (pen-expand-template-keyvals it subprompts)
+     (pen-expand-template it vals)
+     (pen-expand-template-keyvals it var-keyvals-slugged)
+     (pen-expand-template-keyvals it var-keyvals)))
+
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
@@ -223,18 +231,6 @@
 
              (final-prompt ,prompt)
 
-             (final-max-tokens
-              (str (or (pen-var-value-maybe 'max-tokens)
-                       ,max-tokens)))
-
-             (final-stop-sequences
-              (or (pen-var-value-maybe 'stop-sequences)
-                  ',stop-sequences))
-
-             (final-stop-patterns
-              (or (pen-var-value-maybe 'stop-patterns)
-                  ',stop-patterns))
-
              (vals
               ;; If not called interactively then
               ;; manually run interactive expressions
@@ -279,13 +275,24 @@
 
              ;; template the parameters into the prompt
              (final-prompt
-              (pen-expand-template-keyvals final-prompt subprompts))
+              (pen-expand-template-in-define-prompt-function final-prompt))
+
+             ;; The max tokens may be templated in via variable
+             (final-max-tokens
+              (pen-expand-template-in-define-prompt-function
+               (str (or (pen-var-value-maybe 'max-tokens)
+                        ,max-tokens))))
+
+             (final-stop-sequences
+              (or (pen-var-value-maybe 'stop-sequences)
+                  ',stop-sequences))
+
+             (final-stop-patterns
+              (or (pen-var-value-maybe 'stop-patterns)
+                  ',stop-patterns))
+
              (final-prompt
-              (pen-expand-template final-prompt vals))
-             (final-prompt
-              (pen-expand-template-keyvals final-prompt var-keyvals-slugged))
-             (final-prompt
-              (pen-expand-template-keyvals final-prompt var-keyvals))
+              (pen-expand-template-in-define-prompt-function final-prompt))
 
              (final-prompt
               (pen-log-final-prompt
