@@ -1,8 +1,8 @@
-;; http://github.com/semiosis/completers
+;; http://github.com/semiosis/engines
 
-(define-derived-mode completer-description-mode yaml-mode "Completer"
-  "Completer description mode")
+(define-derived-mode engine-description-mode yaml-mode "Engine"
+  "Engine description mode")
 
-(add-to-list 'auto-mode-alist '("\\.completer\\'" . completer-description-mode))
+(add-to-list 'auto-mode-alist '("\\.engine\\'" . engine-description-mode))
 
-(provide 'pen-completer-description)
+(provide 'pen-engine-description)
