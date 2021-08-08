@@ -7,6 +7,8 @@
 # temperature=float(os.environ.get("PEN_TEMPERATURE")),
 # stop_sequence=os.environ.get("PEN_STOP_SEQUENCE"),
 
+# https://api-inference.huggingface.co/docs/python/html/detailed_parameters.html#text-generation-task
+
 import json
 import os
 import requests
@@ -25,4 +27,4 @@ def query(payload):
     return json.loads(response.content.decode("utf-8"))
 
 
-print(query(PEN_PROMPT)
+print(query(PEN_PROMPT)[0].get("generated_text"))
