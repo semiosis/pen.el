@@ -132,6 +132,11 @@ case "$sn" in
     }
     ;;
 
+    hf-complete.sh) {
+        "$completer_sn" > "$tf_response"
+    }
+    ;;
+
     openai-complete.sh|openai-*|*) {
         "$completer_sn" api \
             completions.create \

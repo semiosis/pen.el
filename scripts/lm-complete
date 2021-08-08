@@ -73,6 +73,16 @@ case "$PEN_LM_COMMAND" in
         export PEN_N_COMPLETIONS=1
     }
     ;;
+
+    hf-complete.sh) {
+        # It's too slow otherwise
+
+        if test "$PEN_MODE" = summarize; then
+            # This is to ensure it's properly truncated
+            export PEN_N_COMPLETIONS=1
+        fi
+    }
+    ;;
 esac
 
 # pen-ci will possibly cache/memoize the command
