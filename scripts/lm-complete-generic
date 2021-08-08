@@ -17,6 +17,15 @@ case "$sn" in
     }
     ;;
 
+    hf-complete.sh) {
+        completer_sn=pen-hf
+        : "${HF_API_KEY:="$PEN_LM_KEY"}"
+        export HF_API_KEY
+
+        : "${PEN_ENGINE:="gpt2"}"
+    }
+    ;;
+
     openai-complete.sh|openai-*|*) {
         completer_sn=pen-openai
         : "${OPENAI_API_KEY:="$PEN_LM_KEY"}"
