@@ -242,6 +242,7 @@
                   (do-pen-update (pen-var-value-maybe 'do-pen-update))
 
                   (pen-sh-update (or
+                                  (>= (prefix-numeric-value current-global-prefix-arg) 4)
                                   (pen-var-value-maybe 'pen-sh-update)
                                   do-pen-update))
 
@@ -362,10 +363,6 @@
                                       (string-bytes final-prompt)))
 
                   (final-prompt (string-replace "<:pp>" "" final-prompt))
-
-                  ;; check for cache update
-                  (pen-sh-update
-                   (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
 
                   ;; Now that all values are loaded, re-template them so I can base values on other values
 
