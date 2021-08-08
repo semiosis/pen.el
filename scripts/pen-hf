@@ -1,0 +1,48 @@
+#!/bin/bash
+
+: "${HF_API_KEY:="$PEN_LM_KEY"}"
+
+if test -s $HOME/.pen/hf_api_key; then
+    : "${HF_API_KEY:="$(cat $HOME/.pen/hf_api_key)"}"
+fi
+
+test -n "$HF_API_KEY" || {
+    echo "HF_API_KEY not given to script"
+    exit 1
+}
+
+export HF_API_KEY
+
+if test "$PEN_N_COMPLETIONS" -gt 4; then
+    PEN_N_COMPLETIONS=4
+fi
+
+export PEN_PROMPT
+export PEN_ENGINE
+export PEN_MAX_TOKENS
+export PEN_TEMPERATURE
+export PEN_TOP_P
+export PEN_STOP_SEQUENCE
+export PEN_N_COMPLETIONS
+
+: "${PEN_N_COMPLETIONS:="4"}"
+
+sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
+
+# pen-hf.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
+
+if test "$PEN_N_COMPLETIONS" = 1; then
+    {
+    printf -- "%s" "$PEN_PROMPT"
+    pen-hf.py "$@" | sed -z "s~${sedstop}$~~"
+    } | tee /tmp/hf.txt
+else
+    for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
+        echo "===== Completion $i ====="
+        # The openai api will add the prompt. So emulate it
+        {
+        printf -- "%s" "$PEN_PROMPT"
+        pen-hf.py "$@" | sed -z "s~${sedstop}$~~"
+        } | awk 1
+    done | tee /tmp/hf.txt
+fi
