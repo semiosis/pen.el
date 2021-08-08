@@ -1,12 +1,5 @@
 #!/usr/bin/python3
 
-# model=os.environ.get("PEN_ENGINE"),
-# os.environ.get("PEN_PROMPT"),
-# response_length=int(os.environ.get("PEN_MAX_TOKENS")),
-# top_p=float(),
-# temperature=float(os.environ.get("PEN_TEMPERATURE")),
-# stop_sequence=os.environ.get("PEN_STOP_SEQUENCE"),
-
 # https://api-inference.huggingface.co/docs/python/html/detailed_parameters.html#text-generation-task
 
 import json
