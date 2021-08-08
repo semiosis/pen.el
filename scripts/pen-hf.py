@@ -9,6 +9,8 @@
 
 # https://api-inference.huggingface.co/docs/python/html/detailed_parameters.html#text-generation-task
 
+from shanepy import *
+
 import json
 import os
 import requests
