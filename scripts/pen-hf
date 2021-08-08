@@ -33,7 +33,7 @@ sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
 if test "$PEN_N_COMPLETIONS" = 1; then
     {
-    printf -- "%s" "$PEN_PROMPT"
+    # printf -- "%s" "$PEN_PROMPT"
     pen-hf.py "$@" | sed -z "s~${sedstop}$~~"
     } | tee /tmp/hf.txt
 else
@@ -41,7 +41,7 @@ else
         echo "===== Completion $i ====="
         # The openai api will add the prompt. So emulate it
         {
-        printf -- "%s" "$PEN_PROMPT"
+        # printf -- "%s" "$PEN_PROMPT"
         pen-hf.py "$@" | sed -z "s~${sedstop}$~~"
         } | awk 1
     done | tee /tmp/hf.txt
