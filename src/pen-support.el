@@ -696,7 +696,7 @@ when s is a string, set the clipboard to s"
     (if (string-equal "clojurec" lang) (setq lang "clojure"))
 
     (kill-buffer buf)
-    lang))
+    (str lang)))
 
 (defun mode-to-lang (&optional modesym)
   (if (not modesym)
