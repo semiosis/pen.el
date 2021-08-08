@@ -821,7 +821,10 @@ Function names are prefixed with pf- for easy searching"
                      `(engine "GPT-J-6B")))
            (if pen-force-openai
                (list `(lm-command "openai-complete.sh")
-                     `(engine "davinci")))))))
+                     `(engine "davinci")))
+           (if pen-force-hf
+               (list `(lm-command "hf-complete.sh")
+                     `(engine "gpt2")))))))
     `(eval
       `(let ,',overrides
          ,',@body))))
