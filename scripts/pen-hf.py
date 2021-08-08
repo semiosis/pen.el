@@ -43,6 +43,7 @@ ret = query(
             and int(os.environ.get("PEN_N_COMPLETIONS")),
             "return_full_text": False,
         },
+        "options": {"wait_for_model": True},
     }
 )
 
