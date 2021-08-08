@@ -176,6 +176,14 @@
           ;; Automatically check if Aix key exists and ask for it otherwise
           (call-interactively 'pen-add-key-aix)))))
 
+(let ((pen-hf-key-file-path (f-join penconfdir "hf_api_key")))
+  (if (not (f-file-p pen-hf-key-file-path))
+      (let ((envkey (getenv "HF_API_KEY")))
+        (if (sor envkey)
+            (pen-add-key-hf envkey)
+          ;; Automatically check if Hf key exists and ask for it otherwise
+          (call-interactively 'pen-add-key-hf)))))
+
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
 
 (memoize-restore 'pen-prompt-snc)
