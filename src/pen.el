@@ -335,6 +335,11 @@
                     (str (or (pen-var-value-maybe 'top-p)
                              ,top-p))))
 
+                  (final-top-k
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'top-k)
+                             ,top-k))))
+
                   (final-stop-sequences
                    (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
                                             ',stop-sequences)
@@ -396,6 +401,7 @@
                          ("PEN_MODE" ,final-mode)
                          ("PEN_STOP_SEQUENCE" ,final-stop-sequence)
                          ("PEN_TOP_P" ,final-top-p)
+                         ("PEN_TOP_K" ,final-top-k)
                          ("PEN_CACHE" ,cache)
                          ("PEN_N_COMPLETIONS" ,final-n-completions)
                          ("PEN_END_POS" ,prompt-end-pos)))
@@ -594,6 +600,7 @@ Function names are prefixed with pf- for easy searching"
                        (model (ht-get yaml "model"))
                        (max-tokens (ht-get yaml "max-tokens"))
                        (top-p (ht-get yaml "top-p"))
+                       (top-k (ht-get yaml "top-k"))
                        (temperature (ht-get yaml "temperature"))
                        (stop-sequences
                         (or (vector2list (ht-get yaml "stop-sequences"))
