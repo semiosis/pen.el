@@ -28,6 +28,8 @@ export PEN_TOP_K
 export PEN_PROMPT
 export PEN_N_COMPLETIONS
 export PEN_END_POS
+# The mode is the 'hypertask. e.g. summarize, generate'
+export PEN_MODE
 
 # This file expects the PEN_PROMPTS_DIR
 
