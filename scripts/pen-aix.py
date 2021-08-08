@@ -5,7 +5,7 @@ import os
 
 # Get your API Key at apps.aixsolutionsgroup.com
 
-# model=os.environ.get("PEN_ENGINE"),
+# model=os.environ.get("PEN_MODEL"),
 
 if __name__ == "__main__":
     api_key = os.environ.get("AIX_API_KEY")

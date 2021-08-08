@@ -7,11 +7,11 @@ import os
 import requests
 
 API_TOKEN = os.environ.get("HF_API_KEY")
-PEN_ENGINE = os.environ.get("PEN_ENGINE")
+PEN_MODEL = os.environ.get("PEN_MODEL")
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
 PEN_MODE = os.environ.get("PEN_MODE")
 
-API_URL = f"https://api-inference.huggingface.co/models/{PEN_ENGINE}"
+API_URL = f"https://api-inference.huggingface.co/models/{PEN_MODEL}"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
 

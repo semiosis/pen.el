@@ -30,6 +30,7 @@
     ("prompt-length" . 6000)
     ("model" . "davinci")))
 
+;; OpenAI calls models 'engines'. But I want to use the term 'engine' to mean (API + model)
 (defun pen-openai-list-engines ()
   (let ((engines
          (pen-str2list

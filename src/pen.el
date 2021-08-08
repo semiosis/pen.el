@@ -215,7 +215,7 @@
 ;; (func-name func-sym var-syms var-defaults doc prompt
 ;;  iargs prettifier cache path var-slugs n-collate
 ;;  filter completion lm-command stop-sequences stop-sequence max-tokens
-;;  temperature top-p engine no-trim-start no-trim-end preprocessors
+;;  temperature top-p model no-trim-start no-trim-end preprocessors
 ;;  postprocessor prompt-filter n-completions)
 ;; (let ((max-tokens 1)) (funcall (cl-defun yo () (etv max-tokens))))
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
@@ -390,7 +390,7 @@
                        ;; See `pen-restore-chars`
                        `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
                          ("PEN_LM_COMMAND" ,,lm-command)
-                         ("PEN_ENGINE" ,,engine)
+                         ("PEN_MODEL" ,,model)
                          ("PEN_MAX_TOKENS" ,final-max-tokens)
                          ("PEN_TEMPERATURE" ,final-temperature)
                          ("PEN_MODE" ,final-mode)
@@ -591,7 +591,7 @@ Function names are prefixed with pf- for easy searching"
                        (n-test-runs (ht-get yaml "n-test-runs"))
 
                        ;; API
-                       (engine (ht-get yaml "engine"))
+                       (model (ht-get yaml "model"))
                        (max-tokens (ht-get yaml "max-tokens"))
                        (top-p (ht-get yaml "top-p"))
                        (temperature (ht-get yaml "temperature"))
@@ -629,7 +629,7 @@ Function names are prefixed with pf- for easy searching"
                                (if design-patterns (concat "\ndesign-patterns:\n" (pen-list-to-orglist design-patterns)))
                                (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
                                (if aims (concat "\naims:" (pen-list-to-orglist aims)))
-                               (if engine (concat "\nengine: " engine))
+                               (if model (concat "\nengine: " model))
                                (if notes (concat "\nnotes:" (pen-list-to-orglist notes)))
                                (if filter (concat "\nfilter: on"))
                                (if completion (concat "\ncompletion: on"))
@@ -821,13 +821,13 @@ Function names are prefixed with pf- for easy searching"
                      `(n-collate 1)))
            (if pen-force-gpt-j-aix
                (list `(lm-command "aix-complete.sh")
-                     `(engine "GPT-J-6B")))
+                     `(model "GPT-J-6B")))
            (if pen-force-openai
                (list `(lm-command "openai-complete.sh")
-                     `(engine "davinci")))
+                     `(model "davinci")))
            (if pen-force-hf
                (list `(lm-command "hf-complete.sh")
-                     `(engine "gpt2")))))))
+                     `(model "gpt2")))))))
     `(eval
       `(let ,',overrides
          ,',@body))))
@@ -1006,7 +1006,7 @@ May use to generate code from comments."
 (require 'pen-examplary)
 (require 'pen-transient)
 (require 'pen-engine)
-;; Allow Pen.el to use a docker container containing Pen.el as its engine.
+;; Allow Pen.el to use a docker container containing Pen.el as its 'engine'.
 (require 'pen-quineserver)
 (require 'pen-fun)
 

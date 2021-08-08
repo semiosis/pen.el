@@ -18,7 +18,7 @@ if test "$PEN_N_COMPLETIONS" -gt 4; then
 fi
 
 export PEN_PROMPT
-export PEN_ENGINE
+export PEN_MODEL
 export PEN_MAX_TOKENS
 export PEN_TEMPERATURE
 export PEN_TOP_P

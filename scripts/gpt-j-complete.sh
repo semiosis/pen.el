@@ -49,7 +49,7 @@ openai_results_split() {
 
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
-    echo "PEN_ENGINE:\"$PEN_ENGINE\""
+    echo "PEN_MODEL:\"$PEN_MODEL\""
     echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
     echo "PEN_STOP_SEQUENCE:\"$PEN_STOP_SEQUENCE\""
     echo "PEN_TOP_P:\"$PEN_TOP_P\""
@@ -71,8 +71,8 @@ export OPENAI_API_KEY
 # trap "rm \"$tf_prompt\" 2>/dev/null" 0
 
 # Default for OpenAI is davinci
-: "${PEN_ENGINE:="davinci"}"
-: "${PEN_ENGINE:="curie"}"
+: "${PEN_MODEL:="davinci"}"
+: "${PEN_MODEL:="curie"}"
 
 test -n "$PEN_PROMPT" || {
     echo No prompt given
@@ -95,7 +95,7 @@ IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE");typeset -p PEN_ST
 # Will it complain if PEN_STOP_SEQUENCE is empty?
 openai api \
     completions.create \
-    -e "$PEN_ENGINE" \
+    -e "$PEN_MODEL" \
     -t "$PEN_TEMPERATURE" \
     -M "$PEN_MAX_TOKENS" \
     -n "$PEN_N_COMPLETIONS" \

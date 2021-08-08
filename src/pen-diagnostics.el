@@ -16,7 +16,7 @@
            (sh-construct-envs `(("AIX_API_KEY" ,aix-key)
                                 ("PEN_PROMPT" "Once upon a time")
                                 ("PEN_MAX_TOKENS" "60")
-                                ("PEN_ENGINE" "GPT-J-6B")
+                                ("PEN_MODEL" "GPT-J-6B")
                                 ("PEN_TOP_P" "1.0")
                                 ("PEN_STOP_SEQUENCE" "###")))
            " "

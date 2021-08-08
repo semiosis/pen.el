@@ -53,7 +53,7 @@ case "$PEN_LM_COMMAND" in
     aix-complete.sh) {
         if ! test -s $HOME/.pen/aix_api_key; then
             PEN_LM_COMMAND=openai-complete.sh
-            export PEN_ENGINE=davinci
+            export PEN_MODEL=davinci
         fi
     }
     ;;
@@ -61,7 +61,7 @@ case "$PEN_LM_COMMAND" in
     openai-complete.sh) {
         if ! test -s $HOME/.pen/openai_api_key; then
             PEN_LM_COMMAND=aix-complete.sh
-            export PEN_ENGINE=GPT-J-6B
+            export PEN_MODEL=GPT-J-6B
         fi
     }
     ;;

@@ -13,7 +13,7 @@ case "$sn" in
         : "${AIX_API_KEY:="$PEN_LM_KEY"}"
         export AIX_API_KEY
 
-        : "${PEN_ENGINE:="GPT-J-6B"}"
+        : "${PEN_MODEL:="GPT-J-6B"}"
     }
     ;;
 
@@ -22,7 +22,7 @@ case "$sn" in
         : "${HF_API_KEY:="$PEN_LM_KEY"}"
         export HF_API_KEY
 
-        : "${PEN_ENGINE:="gpt2"}"
+        : "${PEN_MODEL:="gpt2"}"
     }
     ;;
 
@@ -32,8 +32,8 @@ case "$sn" in
         export OPENAI_API_KEY
 
         # Default for OpenAI is davinci
-        : "${PEN_ENGINE:="davinci"}"
-        : "${PEN_ENGINE:="curie"}"
+        : "${PEN_MODEL:="davinci"}"
+        : "${PEN_MODEL:="curie"}"
     }
     ;;
 esac
@@ -79,7 +79,7 @@ openai_results_split() {
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
     echo "PEN_CACHE:\"$PEN_CACHE\""
-    echo "PEN_ENGINE:\"$PEN_ENGINE\""
+    echo "PEN_MODEL:\"$PEN_MODEL\""
     echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
     echo "PEN_STOP_SEQUENCE:\"$PEN_STOP_SEQUENCE\""
     echo "PEN_REPETITION_PENALTY:\"$PEN_REPETITION_PENALTY\""
@@ -92,8 +92,8 @@ fi
 # trap "rm \"$tf_prompt\" 2>/dev/null" 0
 
 # Default for OpenAI is davinci
-: "${PEN_ENGINE:="davinci"}"
-: "${PEN_ENGINE:="curie"}"
+: "${PEN_MODEL:="davinci"}"
+: "${PEN_MODEL:="curie"}"
 
 test -n "$PEN_PROMPT" || {
     echo No prompt given
@@ -106,7 +106,7 @@ test -n "$PEN_PROMPT" || {
 : "${PEN_N_COMPLETIONS:="1"}"
 
 export PEN_LM_KEY
-export PEN_ENGINE
+export PEN_MODEL
 export PEN_MAX_TOKENS
 export PEN_TEMPERATURE
 export PEN_TOP_P
@@ -140,7 +140,7 @@ case "$sn" in
     openai-complete.sh|openai-*|*) {
         "$completer_sn" api \
             completions.create \
-            -e "$PEN_ENGINE" \
+            -e "$PEN_MODEL" \
             -t "$PEN_TEMPERATURE" \
             -M "$PEN_MAX_TOKENS" \
             -n "$PEN_N_COMPLETIONS" \

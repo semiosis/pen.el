@@ -168,7 +168,7 @@
                        ;; See `pen-restore-chars`
                        `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
                          ("PEN_LM_COMMAND" ,,lm-command)
-                         ("PEN_ENGINE" ,,engine)
+                         ("PEN_MODEL" ,,model)
                          ("PEN_MAX_TOKENS" ,final-max-tokens)
                          ("PEN_TEMPERATURE" ,final-temperature)
                          ("PEN_STOP_SEQUENCE" ,final-stop-sequence)

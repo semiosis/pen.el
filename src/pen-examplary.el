@@ -58,7 +58,7 @@ The last element in the list is the output/return value"
          (filter orig-filter)
          (examples (plist-get data :examples))
          (lm-command (plist-get data :lm-command))
-         (engine (plist-get data :engine))
+         (model (plist-get data :model))
          (orig-prompt (plist-get data :prompt))
          (prompt orig-prompt))
 
@@ -150,7 +150,7 @@ The last element in the list is the output/return value"
     ;; Examples is used for something else in the prompt
     (if examples (plist-put data :examples examples))
     ;;    (plist-put data :lm-command lm-command)
-    ;;    (plist-put data :engine engine)
+    ;;    (plist-put data :model model)
     )
 
   (tv (plist2yaml data))
