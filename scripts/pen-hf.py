@@ -27,4 +27,5 @@ def query(payload):
     return json.loads(response.content.decode("utf-8"))
 
 
-print(query(PEN_PROMPT)[0].get("generated_text"))
+print(query({"inputs": PEN_PROMPT}))
+# [0].get("generated_text"))
