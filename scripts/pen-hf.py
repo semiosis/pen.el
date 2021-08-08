@@ -46,8 +46,11 @@ ret = query(
     }
 )
 
-# return_full_text
-if len(ret) == 1:
+from shanepy import *
+
+if len(ret) == 1 and ret.get("error"):
+    print(ret.get("error"))
+elif len(ret) == 1:
     print(ret[0].get("generated_text"))
 elif len(ret) > 1:
     for i in range(len(ret)):
