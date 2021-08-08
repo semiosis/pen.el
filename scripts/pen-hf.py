@@ -46,8 +46,6 @@ ret = query(
     }
 )
 
-from shanepy import *
-
 if len(ret) == 1 and ret.get("error"):
     print(ret.get("error"))
 elif len(ret) == 1:
