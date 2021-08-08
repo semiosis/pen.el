@@ -5,7 +5,7 @@
 ** Language models and APIs
 - [X] OpenAI API (=GPT-3=)
   - https://beta.openai.com/
-- [ ] Huggingface Hub
+- [X] Huggingface Hub
   - https://github.com/huggingface/huggingface_hub 
 - [X] =GPT-j= 6b
   - https://github.com/kingoflolz/mesh-transformer-jax
