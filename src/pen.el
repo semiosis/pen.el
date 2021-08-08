@@ -629,7 +629,7 @@ Function names are prefixed with pf- for easy searching"
                                (if design-patterns (concat "\ndesign-patterns:\n" (pen-list-to-orglist design-patterns)))
                                (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
                                (if aims (concat "\naims:" (pen-list-to-orglist aims)))
-                               (if model (concat "\nengine: " model))
+                               (if model (concat "\nmodel: " model))
                                (if notes (concat "\nnotes:" (pen-list-to-orglist notes)))
                                (if filter (concat "\nfilter: on"))
                                (if completion (concat "\ncompletion: on"))
