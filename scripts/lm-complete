@@ -15,6 +15,7 @@ test -n "$PEN_LM_COMMAND" || {
 : "${PEN_MAX_TOKENS:="60"}"
 : "${PEN_TEMPERATURE:="0.8"}"
 : "${PEN_TOP_P:="1"}"
+: "${PEN_TOP_K:="10"}"
 : "${PEN_PROMPT:="Once upon a time"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 : "${PEN_END_POS:="$(printf -- "%s" "$PEN_PROMPT" | wc -c)"}"
