@@ -34,4 +34,8 @@
   (interactive (list (pen-read-service-key "aix")))
   (pen-add-key "aix" key))
 
+(defun pen-add-key-hf (key)
+  (interactive (list (pen-read-service-key "hf")))
+  (pen-add-key "hf" key))
+
 (provide 'pen-configure)
