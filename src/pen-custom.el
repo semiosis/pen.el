@@ -65,6 +65,10 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+
+;; Forcing engines is not generally recommended
+;; I should really make a tree of engines which can act as fall-backs
+
 (defcustom pen-force-gpt-j-aix nil
   "Forcing use GPT-J from AIx"
   :type 'boolean
@@ -82,6 +86,8 @@
   :type 'boolean
   :group 'pen
   :initialize #'custom-initialize-default)
+
+
 
 (defcustom pen-user-agent "emacs/pen"
   "User Agent for self identification"
