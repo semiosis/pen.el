@@ -46,10 +46,10 @@ ret = query(
     }
 )
 
-if len(ret) == 1 and ret.get("error"):
-    print(ret.get("error"))
-elif len(ret) == 1:
+if len(ret) == 1 and type(ret) is list:
     print(ret[0].get("generated_text"))
+elif len(ret) == 1 and type(ret) is dict and ret.get("error"):
+    print(ret.get("error"))
 elif len(ret) > 1:
     for i in range(len(ret)):
         # This is made automatically by hf. Also, it starts at 1
