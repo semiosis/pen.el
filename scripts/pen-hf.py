@@ -48,5 +48,6 @@ if len(ret) == 1:
     print(ret[0].get("generated_text"))
 elif len(ret) > 1:
     for i in range(len(ret)):
-        print(f"===== Completion {i} =====")
+        # This is made automatically by hf. Also, it starts at 1
+        # print(f"===== Completion {i} =====")
         print(ret[i].get("generated_text"))
