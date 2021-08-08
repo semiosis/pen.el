@@ -82,7 +82,9 @@ if test "$PEN_DEBUG" = "y"; then
     echo "PEN_ENGINE:\"$PEN_ENGINE\""
     echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
     echo "PEN_STOP_SEQUENCE:\"$PEN_STOP_SEQUENCE\""
+    echo "PEN_REPETITION_PENALTY:\"$PEN_REPETITION_PENALTY\""
     echo "PEN_TOP_P:\"$PEN_TOP_P\""
+    echo "PEN_TOP_K:\"$PEN_TOP_K\""
     exit 1
 fi
 
@@ -108,7 +110,9 @@ export PEN_ENGINE
 export PEN_MAX_TOKENS
 export PEN_TEMPERATURE
 export PEN_TOP_P
+export PEN_TOP_K
 export PEN_STOP_SEQUENCE
+export PEN_REPETITION_PENALTY
 export PEN_CACHE
 
 tf_response="$(mktemp -t "lm_results_XXXXXX.txt" 2>/dev/null)"
