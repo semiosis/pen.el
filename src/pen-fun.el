@@ -6,4 +6,8 @@
   ;; Perhaps use an IPA translator
   (replace-regexp-in-string "[aeiou]" "oob" s))
 
+(defun pen-oob-test ()
+  (interactive)
+  (etv (pen-oob "To be or not to be, that is the question.")))
+
 (provide 'pen-fun)
