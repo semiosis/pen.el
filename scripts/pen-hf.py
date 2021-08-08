@@ -15,6 +15,7 @@ import requests
 
 API_TOKEN = os.environ.get("HF_API_KEY")
 PEN_ENGINE = os.environ.get("PEN_ENGINE")
+PEN_PROMPT = os.environ.get("PEN_PROMPT")
 
 API_URL = f"https://api-inference.huggingface.co/models/{PEN_ENGINE}"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
@@ -28,7 +29,7 @@ def query(payload):
 
 ret = query(
     {
-        "inputs": os.environ.get("PEN_PROMPT"),
+        "inputs": PEN_PROMPT,
         "parameters": {
             "top_k": os.environ.get("PEN_TOP_K") and int(os.environ.get("PEN_TOP_K")),
             "top_p": os.environ.get("PEN_TOP_P") and float(os.environ.get("PEN_TOP_P")),
@@ -40,14 +41,16 @@ ret = query(
             and int(os.environ.get("PEN_MAX_TOKENS")),
             "num_return_sequences": os.environ.get("PEN_N_COMPLETIONS")
             and int(os.environ.get("PEN_N_COMPLETIONS")),
+            "return_full_text": False,
         },
     }
 )
 
+# return_full_text
 if len(ret) == 1:
     print(ret[0].get("generated_text"))
 elif len(ret) > 1:
     for i in range(len(ret)):
         # This is made automatically by hf. Also, it starts at 1
-        # print(f"===== Completion {i} =====")
-        print(ret[i].get("generated_text"))
+        print(f"===== Completion {i} =====")
+        print(PEN_PROMPT + ret[i].get("generated_text"))
