@@ -974,6 +974,7 @@ May use to generate code from comments."
 
 (require 'pen-core)
 (require 'pen-openai)
+(require 'pen-hf)
 (require 'pen-copilot)
 (require 'pen-memoize)
 (require 'pen-ivy)
