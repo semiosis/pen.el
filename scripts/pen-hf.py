@@ -13,6 +13,7 @@ import requests
 
 API_TOKEN = os.environ.get("HF_API_KEY")
 PEN_ENGINE = os.environ.get("PEN_ENGINE")
+PEN_PROMPT = os.environ.get("PEN_PROMPT")
 
 API_URL = f"https://api-inference.huggingface.co/models/{PEN_ENGINE}"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
@@ -24,4 +25,4 @@ def query(payload):
     return json.loads(response.content.decode("utf-8"))
 
 
-print(query("Can you please let us know more details about your "))
+print(query(PEN_PROMPT)
