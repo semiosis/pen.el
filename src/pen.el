@@ -992,7 +992,7 @@ May use to generate code from comments."
 (require 'pen-mouse)
 (require 'pen-configure)
 (require 'pen-prompt-description)
-(require 'pen-completer-description)
+(require 'pen-engine-description)
 (require 'pen-lm-completers)
 (require 'pen-emacs)
 (require 'pen-acolyte-minor-mode)
