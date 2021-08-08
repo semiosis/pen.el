@@ -7,7 +7,7 @@
   - https://beta.openai.com/
 - [X] Huggingface Hub
   - https://github.com/huggingface/huggingface_hub 
-- [X] =GPT-j= 6b
+- [X] =GPT-j= 6b via AIx
   - https://github.com/kingoflolz/mesh-transformer-jax
   - https://minimaxir.com/2021/06/gpt-j-6b/
 - [-] =contentyze= API
