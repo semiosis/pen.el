@@ -325,6 +325,10 @@
                    (expand-template
                     (str (or (pen-var-value-maybe 'temperature)
                              ,temperature))))
+                  (final-mode
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'mode)
+                             ,mode))))
 
                   (final-top-p
                    (expand-template
@@ -389,6 +393,7 @@
                          ("PEN_ENGINE" ,,engine)
                          ("PEN_MAX_TOKENS" ,final-max-tokens)
                          ("PEN_TEMPERATURE" ,final-temperature)
+                         ("PEN_MODE" ,final-mode)
                          ("PEN_STOP_SEQUENCE" ,final-stop-sequence)
                          ("PEN_TOP_P" ,final-top-p)
                          ("PEN_CACHE" ,cache)
@@ -559,6 +564,7 @@ Function names are prefixed with pf- for easy searching"
 
                        ;; internals
                        (prompt (ht-get yaml "prompt"))
+                       (mode (ht-get yaml "mode"))
                        (subprompts (ht-get yaml "subprompts"))
                        (is-info (ht-get yaml "is-info"))
                        (repeater (ht-get yaml "repeater"))
