@@ -248,7 +248,7 @@ case "$sn" in
     }
     ;;
 
-    penweb) {
+    penw) {
         butterfly.server.py --host=localhost --port=57575 --unsecure --shell=pen
         exit "$?"
     ;;
