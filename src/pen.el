@@ -382,14 +382,18 @@
                                     (pen-yas-expand-string final-prompt)
                                   final-prompt))
 
+                  (final-prompt (chomp final-prompt))
+
                   ;; This gives string position, not byte position
                   ;; (string-search "s" "ガムツリshane")
 
-                  (prompt-end-pos (tv (or (byte-string-search "<:pp>" final-prompt)
-                                          ;; (length final-prompt)
-                                          (string-bytes (tv final-prompt)))))
+                  (prompt-end-pos (or (byte-string-search "<:pp>" final-prompt)
+                                      ;; (length final-prompt)
+                                      (string-bytes final-prompt)))
 
                   (final-prompt (string-replace "<:pp>" "" final-prompt))
+
+                  (final-prompt (chomp final-prompt))
 
                   ;; Now that all values are loaded, re-template them so I can base values on other values
 
