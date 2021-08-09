@@ -250,6 +250,10 @@
                    (and (not do-pen-update)
                         (pen-var-value-maybe 'cache)))
 
+                  (final-flags
+                   (or (pen-var-value-maybe 'flags)
+                       ,flags))
+
                   (final-is-info
                    (or (pen-var-value-maybe 'do-etv)
                        (pen-var-value-maybe 'is-info)
@@ -425,6 +429,7 @@
                          ("PEN_STOP_SEQUENCE" ,final-stop-sequence)
                          ("PEN_TOP_P" ,final-top-p)
                          ("PEN_TOP_K" ,final-top-k)
+                         ("PEN_FLAGS" ,flags)
                          ("PEN_CACHE" ,cache)
                          ("PEN_N_COMPLETIONS" ,final-n-completions)
                          ("PEN_END_POS" ,prompt-end-pos)))
@@ -594,6 +599,7 @@ Function names are prefixed with pf- for easy searching"
                        ;; internals
                        (prompt (ht-get yaml "prompt"))
                        (mode (ht-get yaml "mode"))
+                       (flags (ht-get yaml "flags"))
                        (subprompts (ht-get yaml "subprompts"))
                        (is-info (ht-get yaml "is-info"))
                        (start-yas (ht-get yaml "start-yas"))
