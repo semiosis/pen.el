@@ -282,6 +282,7 @@ https://github.com/semiosis/prompts/
 - https://generative.ink/posts/methods-of-prompt-programming/
 - https://mullikine.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
 - https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/
+- https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
 
 **** Demos and examples of usage
 - https://mullikine.github.io/posts/pen-el-the-first-ide-for-eleutherai-and-openai/
