@@ -256,8 +256,8 @@
                        ,is-info))
 
                   (final-start-yas
-                   (or(pen-var-value-maybe 'start-yas)
-                      ,start-yas))
+                   (or (pen-var-value-maybe 'start-yas)
+                       ,start-yas))
 
                   (final-end-yas
                    (or (pen-var-value-maybe 'yas)
