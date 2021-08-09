@@ -10,4 +10,8 @@
          " #.*" ""
          script)))))
 
+(defun pen-pretty-paragraph ()
+  (interactive)
+  (pen-filter-shellscript "pen-pretty-paragraph"))
+
 (provide 'pen-filters)
