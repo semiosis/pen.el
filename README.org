@@ -76,6 +76,7 @@ functions into each other.
 
 ** Features - The possibilities are limitless
 - Runs as a web application
+  - [[./docs/images/pen-chrome.png]]
 - Client/server model
   - Connect multiple clients to =Pen.el=
   - Run prompt functions from the host.
