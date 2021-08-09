@@ -160,6 +160,7 @@ results_dir="$(openai_results_split "$tf_response")"
 # The API returns the entire prompt + completion
 # Which seems a little bit wasteful.
 # That may change.
+# sp +/"^Echo" "$NOTES/ws/openai/api/glossary.txt"
 
 # jsonl output would be nice but jq is an extra dependency I don't want.
 # Alternatively, can could make it linewise.
