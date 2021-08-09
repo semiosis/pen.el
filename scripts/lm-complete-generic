@@ -80,6 +80,7 @@ if test "$PEN_DEBUG" = "y"; then
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
     echo "PEN_CACHE:\"$PEN_CACHE\""
     echo "PEN_MODEL:\"$PEN_MODEL\""
+    echo "PEN_FLAGS:\"$PEN_FLAGS\""
     echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
     echo "PEN_STOP_SEQUENCE:\"$PEN_STOP_SEQUENCE\""
     echo "PEN_REPETITION_PENALTY:\"$PEN_REPETITION_PENALTY\""
@@ -107,6 +108,7 @@ test -n "$PEN_PROMPT" || {
 
 export PEN_LM_KEY
 export PEN_MODEL
+export PEN_FLAGS
 export PEN_MAX_TOKENS
 export PEN_TEMPERATURE
 export PEN_TOP_P
