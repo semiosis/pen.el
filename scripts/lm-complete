@@ -28,7 +28,9 @@ export PEN_TOP_K
 export PEN_PROMPT
 export PEN_N_COMPLETIONS
 export PEN_END_POS
-# The mode is the 'hypertask. e.g. summarize, generate'. empty is generate
+# Each PEN_LM_COMMAND script may take a 'mode'. For example, summarization.
+# Sometimes the mode must be specified because there may be multiple API interfaces.
+# For pen-hf.py, the mode could be "summarize", but the mode shouldn't be confused with a task
 export PEN_MODE
 
 # This file expects the PEN_PROMPTS_DIR
