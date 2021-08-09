@@ -33,10 +33,17 @@ sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
 # Interestingly, AIx has this issue where the start of the response is stripped
 
+pen_aix() {
+    if printf -- "%s\n" "$PEN_FLAGS" | grep -q -P '<aix-begin-newline>'; then
+        echo
+    fi
+    pen-aix.py "$@" 
+}
+
 if test "$PEN_N_COMPLETIONS" = 1; then
     {
     printf -- "%s" "$PEN_PROMPT"
-    pen-aix.py "$@" | tv | sed -z "s~${sedstop}$~~"
+    pen_aix "$@" | sed -z "s~${sedstop}$~~"
     } | tee /tmp/aix.txt
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
@@ -44,7 +51,7 @@ else
         # The openai api will add the prompt. So emulate it
         {
         printf -- "%s" "$PEN_PROMPT"
-        pen-aix.py "$@" | sed -z "s~${sedstop}$~~"
+        pen_aix "$@" | sed -z "s~${sedstop}$~~"
         } | awk 1
     done | tee /tmp/aix.txt
 fi
