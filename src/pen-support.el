@@ -41,14 +41,15 @@
   (let ((m major-mode)
         (b (new-buffer-from-string
             ys)))
-    (with-current-buffer b
-      (let ((s))
-        (funcall m)
-        (yas-minor-mode 1)
-        (yas-expand-snippet (buffer-string) (point-min) (point-max))
-        (setq s (buffer-string))
-        (kill-buffer b)
-        s))))
+    (str
+     (with-current-buffer b
+       (let ((s))
+         (funcall m)
+         (yas-minor-mode 1)
+         (yas-expand-snippet (buffer-string) (point-min) (point-max))
+         (setq s (buffer-string))
+         (kill-buffer b)
+         s)))))
 
 (defun pen-get-glossary-topic (&optional fp)
   (if (pen-is-glossary-file)
