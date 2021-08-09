@@ -31,10 +31,12 @@ sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
 # pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
 
+# Interestingly, AIx has this issue where the start of the response is stripped
+
 if test "$PEN_N_COMPLETIONS" = 1; then
     {
     printf -- "%s" "$PEN_PROMPT"
-    pen-aix.py "$@" | sed -z "s~${sedstop}$~~"
+    pen-aix.py "$@" | tv | sed -z "s~${sedstop}$~~"
     } | tee /tmp/aix.txt
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
