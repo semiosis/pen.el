@@ -256,6 +256,7 @@ case "$sn" in
             echo Could not find butterfly
         fi
         exit "$?"
+    }
     ;;
 
     pene) {
