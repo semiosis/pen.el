@@ -4,6 +4,7 @@
 
 # export PEN_DEBUG=y
 
+# export TERM=xterm-256color
 export LANG=en_US
 
 export EMACSD=/root/.emacs.d

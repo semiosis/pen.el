@@ -18,7 +18,7 @@ butterfly.server.py \
     --host=0.0.0.0 \
     --port=57575 \
     --unsecure \
-    --cmd="$HOME/.emacs.d/pen.el/scripts/newframe.sh" \
+    --cmd="bash -l $HOME/.emacs.d/pen.el/scripts/newframe.sh" \
     --shell=bash \
     --i-hereby-declare-i-dont-want-any-security-whatsoever
 
