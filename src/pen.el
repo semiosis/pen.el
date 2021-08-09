@@ -573,6 +573,8 @@ Function names are prefixed with pf- for easy searching"
                        (mode (ht-get yaml "mode"))
                        (subprompts (ht-get yaml "subprompts"))
                        (is-info (ht-get yaml "is-info"))
+                       (start-yas (ht-get yaml "start-yas"))
+                       (end-yas (ht-get yaml "end-yas"))
                        (repeater (ht-get yaml "repeater"))
                        (prefer-external (pen-yaml-test yaml "prefer-external"))
                        (conversation-mode (pen-yaml-test yaml "conversation-mode"))
