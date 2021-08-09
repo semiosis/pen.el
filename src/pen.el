@@ -256,8 +256,8 @@
                        ,is-info))
 
                   (final-start-yas
-                   (or (pen-var-value-maybe 'start-yas)
-                       ,start-yas))
+                   (pen-var-value-maybe 'start-yas)
+                   ,start-yas)
 
                   (final-end-yas
                    (or (pen-var-value-maybe 'yas)
@@ -271,10 +271,6 @@
                        (ht->alist (-reduce 'ht-merge (vector2list subprompts)))))
 
                   (final-prompt ,prompt)
-
-                  (final-prompt (if final-start-yas
-                                    (pen-yas-expand-string final-prompt)
-                                  final-prompt))
 
                   (vals
                    ;; If not called interactively then
@@ -377,10 +373,6 @@
                         (sor (pen-snc ,prompt-filter final-prompt)
                              (concat "prompt-filter " ,prompt-filter " failed."))
                       final-prompt)))
-
-                  ;; (final-prompt (if final-end-yas
-                  ;;                   (pen-yas-expand-string final-prompt)
-                  ;;                 final-prompt))
 
                   ;; This gives string position, not byte position
                   ;; (string-search "s" "ガムツリshane")
