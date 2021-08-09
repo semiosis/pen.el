@@ -37,7 +37,7 @@ pen_aix() {
     if printf -- "%s\n" "$PEN_FLAGS" | grep -q -P '<aix-begin-newline>'; then
         echo
     fi
-    pen-aix.py "$@" 
+    pen-aix.py "$@"
 }
 
 if test "$PEN_N_COMPLETIONS" = 1; then
