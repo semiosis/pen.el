@@ -76,6 +76,8 @@ description. It does this by weaving prompt
 functions into each other.
 
 ** Features - The possibilities are limitless
+- Controllable prompt generation with YASnippet
+  - https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
 - Runs as a web application
   - [[./docs/images/pen-chrome.png]]
 - Client/server model
