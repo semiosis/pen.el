@@ -382,6 +382,7 @@
                                     (pen-yas-expand-string final-prompt)
                                   final-prompt))
 
+                  ;; This is vital. Newlines at the end will break completion
                   (final-prompt (chomp final-prompt))
 
                   ;; This gives string position, not byte position
