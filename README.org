@@ -27,6 +27,7 @@ It's completely free, libre and open-source.
   # Put in your keys, or do not, it's up to you!
   echo "sk-<openai key here>" > ~/.pen/openai_api_key
   echo "<aix key here>" > ~/.pen/aix_api_key
+  echo "<hf key here>" > ~/.pen/hf_api_key
 
   # Add the scripts to the PATH
   echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
