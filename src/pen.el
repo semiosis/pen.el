@@ -93,6 +93,7 @@
     (string-replace ":" "<pen-colon>")
     (string-replace "'" "<pen-singlequote>")
     (string-replace "`" "<pen-backtick>")
+    (string-replace "!" "<pen-bang")
     (string-replace "\\n" "<pen-notnewline>")
     (string-replace "$" "<pen-dollar>")))
 
