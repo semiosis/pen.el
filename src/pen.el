@@ -255,6 +255,15 @@
                        (pen-var-value-maybe 'is-info)
                        ,is-info))
 
+                  (final-start-yas
+                   (pen-var-value-maybe 'start-yas)
+                   ,start-yas)
+
+                  (final-end-yas
+                   (or (pen-var-value-maybe 'yas)
+                       (pen-var-value-maybe 'end-yas)
+                       ,end-yas))
+
                   (subprompts ,subprompts)
 
                   (subprompts
@@ -574,6 +583,7 @@ Function names are prefixed with pf- for easy searching"
                        (subprompts (ht-get yaml "subprompts"))
                        (is-info (ht-get yaml "is-info"))
                        (start-yas (ht-get yaml "start-yas"))
+                       (yas (ht-get yaml "yas"))
                        (end-yas (ht-get yaml "end-yas"))
                        (repeater (ht-get yaml "repeater"))
                        (prefer-external (pen-yaml-test yaml "prefer-external"))
