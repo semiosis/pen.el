@@ -249,7 +249,12 @@ case "$sn" in
     ;;
 
     penw) {
-        butterfly.server.py --host=localhost --port=57575 --unsecure --shell=pen
+        if test -d "$HOME/butterfly"; then
+            cd "$HOME/butterfly"
+            butterfly.server.py --host=localhost --port=57575 --unsecure --shell=pen
+        else
+            echo Could not find butterfly
+        fi
         exit "$?"
     ;;
 
