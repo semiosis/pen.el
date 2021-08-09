@@ -38,18 +38,19 @@
 
 (defun pen-yas-expand-string (ys)
   (interactive)
-  (let ((m major-mode)
-        (b (new-buffer-from-string
-            ys)))
-    (str
-     (with-current-buffer b
-       (let ((s))
-         (funcall m)
-         (yas-minor-mode 1)
-         (yas-expand-snippet (buffer-string) (point-min) (point-max))
-         (setq s (buffer-string))
-         (kill-buffer b)
-         s)))))
+  (save-excursion
+    (let ((m major-mode)
+          (b (new-buffer-from-string
+              ys)))
+      (str
+       (with-current-buffer b
+         (let ((s))
+           (funcall m)
+           (yas-minor-mode 1)
+           (yas-expand-snippet (buffer-string) (point-min) (point-max))
+           (setq s (buffer-string))
+           (kill-buffer b)
+           s))))))
 
 (defun pen-get-glossary-topic (&optional fp)
   (if (pen-is-glossary-file)
