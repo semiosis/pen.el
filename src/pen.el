@@ -254,6 +254,13 @@
                    (or (pen-var-value-maybe 'flags)
                        ,flags))
 
+                  (final-flags
+                   (if final-flags
+                       (mapconcat
+                        (lambda (s) (concat "<" s ">"))
+                        (vector2list final-flags)
+                        " ")))
+
                   (final-is-info
                    (or (pen-var-value-maybe 'do-etv)
                        (pen-var-value-maybe 'is-info)
@@ -429,7 +436,7 @@
                          ("PEN_STOP_SEQUENCE" ,final-stop-sequence)
                          ("PEN_TOP_P" ,final-top-p)
                          ("PEN_TOP_K" ,final-top-k)
-                         ("PEN_FLAGS" ,flags)
+                         ("PEN_FLAGS" ,final-flags)
                          ("PEN_CACHE" ,cache)
                          ("PEN_N_COMPLETIONS" ,final-n-completions)
                          ("PEN_END_POS" ,prompt-end-pos)))
