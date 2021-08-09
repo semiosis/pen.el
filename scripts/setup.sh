@@ -27,16 +27,6 @@ test -d emacs || git clone --depth 1 "https://github.com/emacs-mirror/emacs"
 # --with-modules is required to load emacs-yamlmod
 agi autoconf texinfo libgnutls30 libgnutls28-dev pkg-config
 
-(
-cd /root/emacs
-git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
-./autogen.sh
-./configure -with-all --without-makeinfo --with-modules --with-gnutls=yes
-make
-make install
-)
-rm -rf /root/emacs
-
 agi python3-pip
 
 # For lm-complete
@@ -87,6 +77,16 @@ cd "$EMACSD/emacs-yamlmod"
 source $HOME/.cargo/env
 make -j 4 || :
 )
+
+(
+    cd /root/emacs
+    git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
+    ./autogen.sh
+    ./configure -with-all --without-makeinfo --with-modules --with-gnutls=yes
+    make
+    make install
+)
+rm -rf /root/emacs
 
 # This is kinda optional but will give you a web-facing Pen
 agi libssl-dev
