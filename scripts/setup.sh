@@ -89,9 +89,11 @@ make -j 4 || :
 )
 
 # This is kinda optional but will give you a web-facing Pen
+agi libssl-dev
 (
 cd
 git clone --depth 1 "https://github.com/paradoxxxzero/butterfly"
+pip3 install butterfly
 )
 
 # I want huggingface transformers and I'm going to use clojure to access them
