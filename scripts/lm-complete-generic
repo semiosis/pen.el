@@ -161,6 +161,7 @@ results_dir="$(openai_results_split "$tf_response")"
 # Which seems a little bit wasteful.
 # That may change.
 # sp +/"^Echo" "$NOTES/ws/openai/api/glossary.txt"
+# It's the openai cli which doesn't yet have an echo parameter
 
 # jsonl output would be nice but jq is an extra dependency I don't want.
 # Alternatively, can could make it linewise.
