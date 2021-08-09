@@ -272,6 +272,10 @@
 
                   (final-prompt ,prompt)
 
+                  (final-prompt (if final-start-yas
+                                    (pen-yas-expand-string final-prompt)
+                                  final-prompt))
+
                   (vals
                    ;; If not called interactively then
                    ;; manually run interactive expressions
@@ -381,6 +385,10 @@
                                       (string-bytes final-prompt)))
 
                   (final-prompt (string-replace "<:pp>" "" final-prompt))
+
+                  (final-prompt (if final-end-yas
+                                    (pen-yas-expand-string final-prompt)
+                                  final-prompt))
 
                   ;; Now that all values are loaded, re-template them so I can base values on other values
 
