@@ -433,7 +433,7 @@
                          ("PEN_MAX_TOKENS" ,final-max-tokens)
                          ("PEN_TEMPERATURE" ,final-temperature)
                          ("PEN_MODE" ,final-mode)
-                         ("PEN_STOP_SEQUENCE" ,final-stop-sequence)
+                         ("PEN_STOP_SEQUENCE" ,(pen-encode-string final-stop-sequence))
                          ("PEN_TOP_P" ,final-top-p)
                          ("PEN_TOP_K" ,final-top-k)
                          ("PEN_FLAGS" ,final-flags)
