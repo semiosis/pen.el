@@ -1057,6 +1057,7 @@ May use to generate code from comments."
 (require 'pen-quineserver)
 (require 'pen-fun)
 (require 'pen-yasnippet)
+(require 'pen-filters)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
