@@ -12,7 +12,15 @@ export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 
-butterfly.server.py --host=localhost --port=57575 --unsecure --shell=pen &
+# This should be 'pen' if on the host but 'emacs -nwemacsclient -a "" -t' if inside docker
+butterfly.server.py \
+    --login=False \
+    --host=0.0.0.0 \
+    --port=57575 \
+    --unsecure \
+    --cmd="$HOME/.emacs.d/pen.el/scripts/newframe.sh" \
+    --shell=bash \
+    --i-hereby-declare-i-dont-want-any-security-whatsoever
 
 mkdir -p ~/.pen/ht-cache
 
