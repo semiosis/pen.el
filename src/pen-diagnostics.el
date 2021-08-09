@@ -2,8 +2,8 @@
   (interactive)
   (let* ((plist (list
                  :semantic-path (get-path-semantic)
-                 :last-final-command (snc "cat ~/.pen/last-final-command.txt")
-                 :last-final-prompt (snc "cat ~/.pen/last-final-prompt.txt")
+                 :last-final-command (pen-snc "cat ~/.pen/last-final-command.txt")
+                 :last-final-prompt (pen-snc "cat ~/.pen/last-final-prompt.txt")
                  :pen-force-gpt-j-aix pen-force-gpt-j-aix
                  :pen-force-openai pen-force-openai)))
     (find-file (pen-tf "pen context" (plist2yaml plist) "yaml"))))

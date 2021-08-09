@@ -17,7 +17,7 @@
 (defun pen-tf (template &optional input ext)
   "Create a temporary file."
   (setq ext (or ext "txt"))
-  (let ((fp (snc (concat "mktemp -p /tmp " (pen-q (concat "XXXX" (slugify template) "." ext))))))
+  (let ((fp (pen-snc (concat "mktemp -p /tmp " (pen-q (concat "XXXX" (slugify template) "." ext))))))
     (if (and (sor fp)
              (sor input))
         (shut-up (write-to-file input fp)))
