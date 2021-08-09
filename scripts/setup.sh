@@ -21,8 +21,6 @@ agi rlwrap
 # For emacs-yamlmod
 agi clang libclang1
 
-test -d emacs || git clone --depth 1 "https://github.com/emacs-mirror/emacs"
-
 # For building emacs
 # --with-modules is required to load emacs-yamlmod
 agi autoconf texinfo libgnutls30 libgnutls28-dev pkg-config
@@ -76,6 +74,13 @@ rustc --version | grep -q " 1.5" || curl --proto '=https' --tlsv1.2 -sSf https:/
 cd "$EMACSD/emacs-yamlmod"
 source $HOME/.cargo/env
 make -j 4 || :
+)
+
+# I need the tree entire tree, to get the commit I want
+# So can't use --depth 1
+(
+cd
+test -d emacs || git clone "https://github.com/emacs-mirror/emacs"
 )
 
 (
