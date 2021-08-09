@@ -14,9 +14,8 @@ export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 
 (
     cd "$HOME/butterfly"
-    butterfly.server.py --host=localhost --port=57575 --unsecure --shell=pen
+    ./butterfly.server.py --host=localhost --port=57575 --unsecure --shell=pen
 ) &
-
 
 # emacs -nw --debug-init
 emacsclient -a "" -t

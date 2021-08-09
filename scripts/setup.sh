@@ -130,4 +130,10 @@ export TERM=xterm
 unbuffer emacs -nw --eval "(kill-emacs)"
 )
 
+(
+cd
+ln -sf /root/.emacs.d/pen.el/scripts/setup.sh
+ln -sf /root/.emacs.d/pen.el/scripts/run.sh
+)
+
 ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
