@@ -927,11 +927,16 @@ when s is a string, set the clipboard to s"
   (interactive)
   (etv (f-read (f-join penconfdir "last-final-prompt.txt"))))
 
+(defun pen-set-major-mode (name)
+  (funcall (cond ((string= name "shell-mode") 'sh-mode)
+                 ((string= name "emacslisp-mode") 'common-lisp-mode)
+                 (t (intern name)))))
+
 (defun pen-guess-major-mode-set (&optional lang)
   "Guesses which major mode this file should have and set it."
   (interactive)
   (if (not lang)
-      (setq lang (language-detection-string (buffer-contents))))
-  (set-major-mode (concat (str lang) "-mode")))
+      (setq lang (language-detection-string (buffer-string))))
+  (pen-set-major-mode (concat (str lang) "-mode")))
 
 (provide 'pen-support)
