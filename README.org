@@ -84,6 +84,7 @@ functions into each other.
 - Client/server model
   - Connect multiple clients to =Pen.el=
   - Run prompt functions from the host.
+- Dockerized Emacs uses Spacemacs by default
 - Generations are store on the host in the =~/.pen/results= directory
 - Prompt functions are cached on the host in the =~/.pen/ht-cache= directory
   - This means that repeating the same commands / prompts inside /pen/ will be instantaneous and persist between docker invocations
