@@ -83,11 +83,24 @@ cd
 test -d emacs || git clone "https://github.com/emacs-mirror/emacs"
 )
 
+apt install libx11-dev
+apt install libgtk2.0-dev
+apt install libjpeg-dev
+apt install libxpm-dev
+apt install libpng-dev
+apt install libpng16-16
+apt install libgif-dev
+apt install libtiff-dev
+apt install libgnutls28-dev
+apt install libjansson-dev
+apt install imagemagick-6.q16 libmagick++-6-headers libmagick++-dev
+apt install libgtk-3-0 libgtk-3-dev
+
 (
     cd /root/emacs
     git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
     ./autogen.sh
-    ./configure -with-all --without-makeinfo --with-modules --with-gnutls=yes
+    ./configure --with-all --with-x-toolkit=yes --without-makeinfo --with-modules --with-gnutls=yes
     make
     make install
 )

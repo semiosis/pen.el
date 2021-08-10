@@ -26,4 +26,9 @@ butterfly.server.py \
 mkdir -p ~/.pen/ht-cache
 
 # emacs -nw --debug-init
-emacsclient -a "" -t
+
+if test -n "$DISPLAY"; then
+    emacsclient -c -a "" ~/.pen
+else
+    emacsclient -a "" -t
+fi

@@ -49,6 +49,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -gui|-X) {
+        use_gui=y
+        shift
+    }
+    ;;
+
     -d) {
         DEBUG=y
         shift
@@ -504,6 +510,13 @@ if ! test "$vanilla" = "y"; then
 
 fi
 
+# TODO Solve permissions issues with the host ~/.pen directory
+
+# --env "USER=$USER" \
+# --env "GROUP=$USER" \
+# --env "USER_ID=1000" \
+# --env "GROUP_ID=1000" \
+
 case "$docker_cmd" in
     run) {
 IFS= read -r -d '' shcode <<HEREDOC
@@ -516,8 +529,36 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$GLOSSARIES_DIR" && printf -- "%s " -v "$GLOSSARIES_DIR:/root/.emacs.d/host/glossaries" ) \
         $(test -n "$OPENAI_API_EL_DIR" && printf -- "%s " -v "$OPENAI_API_EL_DIR:/root/.emacs.d/host/openai-api.el" ) \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
+        $(
+            if test "$use_gui"; then
+        cmd --privileged \
+        --env COLORFGBG \
+        --env DISPLAY \
+        --env EMAIL \
+        --env GIT_AUTHOR_EMAIL \
+        --env GIT_AUTHOR_NAME \
+        --env GIT_COMMITTER_EMAIL \
+        --env GIT_COMMITTER_NAME \
+        --env SSH_AUTH_SOCK \
+        --env TERM \
+        --env "TIMEZONE=UTC" \
+        --env "VIDEO_GROUP_ID=44" \
+        -v /dev/dri:/dev/dri \
+        -v /dev/shm:/dev/shm \
+        -v /tmp/.X11-unix:/tmp/.X11-unix \
+        -v /run/user/1000/keyring/ssh:/run/user/1000/keyring/ssh \
+        "--cap-add=SYS_PTRACE" \
+        "--cap-add=SYS_ADMIN" \
+        "--cap-add=NET_ADMIN" \
+        --ulimit "rtprio=100:100" \
+        --network host \
+        -v /var/log/coredumps:/var/log/coredumps \
         --expose 57575 -p 57575:57575 \
-        --entrypoint= --name=pen semiosis/pen.el:latest "$remote_cmd" "$@"
+        --entrypoint= --name=pen semiosis/pen.el:latest "$remote_cmd"
+            else
+                cmd --expose 57575 -p 57575:57575 --entrypoint= --name=pen semiosis/pen.el:latest "$remote_cmd"
+            fi
+        )
 HEREDOC
     }
     ;;
