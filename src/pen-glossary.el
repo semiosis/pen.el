@@ -2,6 +2,11 @@
   ;; This should be made optional, since it may be slow
   (pen-snc "pen-pretty-paragraph" s))
 
+(defun pen-pretty-paragraph-selected ()
+  (interactive)
+  ;; This should be made optional, since it may be slow
+  (pen-filter-shellscript "pen-pretty-paragraph"))
+
 (defun pen-list-glossary-files ()
   (let ((glist (sor (pen-cl-sn "pen-list-glossary-files" :chomp t))))
     (if glist
