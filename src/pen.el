@@ -274,6 +274,7 @@
                   (final-end-yas
                    (or (pen-var-value-maybe 'yas)
                        (pen-var-value-maybe 'end-yas)
+                       ,yas
                        ,end-yas))
 
                   (subprompts ,subprompts)
