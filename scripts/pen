@@ -329,8 +329,7 @@ esac
 if ! test "$show_banner" = n; then
     printf -- "%s\n" "$banner"
     echo
-    echo Version: 0.1
-    echo Licence: GPL-3
+    echo Version: 0.1, License: GPL-3
     echo
     printf -- "%s\n" "$info_txt"
     echo
