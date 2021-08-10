@@ -575,7 +575,7 @@ when s is a string, set the clipboard to s"
        s
        (not (stringp s)))
       (setq s (pps s)))
-  (if (not (empty-string-p s))
+  (if (not (s-blank? s))
       (kill-new s)
     (if (selected-p)
         (progn
