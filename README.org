@@ -80,6 +80,7 @@ functions into each other.
   - https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
 - Runs as a web application
   - [[./docs/images/pen-chrome.png]]
+- Dockerized Emacs GUI with full clipboard support to the host
 - Client/server model
   - Connect multiple clients to =Pen.el=
   - Run prompt functions from the host.
