@@ -153,3 +153,13 @@ ln -sf /root/.emacs.d/pen.el/scripts/run.sh
 )
 
 ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
+
+apt install wget
+
+(
+cd
+wget "https://nodejs.org/dist/v14.17.4/node-v14.17.4-linux-x64.tar.xz"
+tar Jxf node-v14.17.4-linux-x64.tar.xz
+export PATH=node-v14.17.4-linux-x64/bin:$PATH
+npm install xterm
+)
