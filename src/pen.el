@@ -767,6 +767,7 @@ Function names are prefixed with pf- for easy searching"
                              func-sym
                              (sor title))
                         ;; Unfortunately, this doesn't catch rust panics from yamlmod
+                        ;; So I need a tool to validate before loading
                         (try
                          (let ((funcsym (define-prompt-function)))
                            (if funcsym
