@@ -13,6 +13,9 @@ export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 
+# for ttyd
+export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
+
 # This should be 'pen' if on the host but 'emacs -nwemacsclient -a "" -t' if inside docker
 butterfly.server.py \
     --login=False \
