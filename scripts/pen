@@ -55,6 +55,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nogui|-noX) {
+        use_gui=n
+        shift
+    }
+    ;;
+
     -d) {
         DEBUG=y
         shift
@@ -544,7 +550,6 @@ IFS= read -r -d '' shcode <<HEREDOC
         -v /dev/dri:/dev/dri \
         -v /dev/shm:/dev/shm \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
-        -v /run/user/1000/keyring/ssh:/run/user/1000/keyring/ssh \
         "--cap-add=SYS_PTRACE" \
         "--cap-add=SYS_ADMIN" \
         "--cap-add=NET_ADMIN" \
