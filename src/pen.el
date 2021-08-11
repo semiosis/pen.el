@@ -766,6 +766,7 @@ Function names are prefixed with pf- for easy searching"
                              (sor func-name)
                              func-sym
                              (sor title))
+                        ;; Unfortunately, this doesn't catch rust panics from yamlmod
                         (try
                          (let ((funcsym (define-prompt-function)))
                            (if funcsym
