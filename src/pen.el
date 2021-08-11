@@ -579,6 +579,7 @@ Function names are prefixed with pf- for easy searching"
             (or ,paths
                 (-non-nil
                  (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))))
+       (setq pen-prompt-functions-failed '())
        (cl-loop for path in paths do
                 (message (concat "pen-mode: Loading .prompt file " path))
 
@@ -765,19 +766,26 @@ Function names are prefixed with pf- for easy searching"
                              (sor func-name)
                              func-sym
                              (sor title))
-                        (let ((funcsym (define-prompt-function)))
-                          (if funcsym
-                              (progn
-                                (add-to-list 'pen-prompt-functions funcsym)
-                                (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
-                                (if completion (add-to-list 'pen-prompt-completion-functions funcsym)))
-                            (add-to-list 'pen-prompt-functions-failed func-sym))
+                        (try
+                         (let ((funcsym (define-prompt-function)))
+                           (if funcsym
+                               (progn
+                                 (add-to-list 'pen-prompt-functions funcsym)
+                                 (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
+                                 (if completion (add-to-list 'pen-prompt-completion-functions funcsym)))
+                             (add-to-list 'pen-prompt-functions-failed func-sym))
 
-                          ;; Using memoization here is the more efficient way to memoize.
-                          ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
-                          ;; (if cache (memoize funcsym))
-                          )))
-                  (message (concat "pen-mode: Loaded prompt function " func-name))))))))
+                           ;; Using memoization here is the more efficient way to memoize.
+                           ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
+                           ;; (if cache (memoize funcsym))
+                           )
+                         (add-to-list 'pen-prompt-functions-failed func-sym))))
+                  (message (concat "pen-mode: Loaded prompt function " func-name))))
+       (if pen-prompt-functions-failed
+           (progn
+             (message "failed:")
+             (message (pen-list2str pen-prompt-functions-failed))
+             (message (concat (str (length pen-prompt-functions-failed) " failed")))))))))
 
 (defun pen-filter-with-prompt-function ()
   (interactive)
