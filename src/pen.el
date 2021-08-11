@@ -645,7 +645,8 @@ Function names are prefixed with pf- for easy searching"
                        (temperature (ht-get yaml "temperature"))
                        (stop-sequences
                         (or (vector2list (ht-get yaml "stop-sequences"))
-                            (list "\n")))
+                            ;; (list "\n")
+                            (list "###<long>###")))
                        (stop-sequence
                         (if stop-sequences (car stop-sequences)))
 
