@@ -195,6 +195,7 @@
 
 ;; Multiline fuzzy-finder doesn't work too well with helm
 ;; Helm breaks each entry up into more lines
+;; I should make the magit completions selector anyway
 (ivy-mode 1)
 
 ;; (call-interactively 'pen-add-key-booste)
