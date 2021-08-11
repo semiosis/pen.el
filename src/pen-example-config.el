@@ -193,4 +193,8 @@
 
 (require 'evil)
 
+;; Multiline fuzzy-finder doesn't work too well with helm
+;; Helm breaks each entry up into more lines
+(ivy-mode 1)
+
 ;; (call-interactively 'pen-add-key-booste)
