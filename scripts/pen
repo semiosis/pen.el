@@ -41,7 +41,8 @@ sn="$(basename "$0")"
 bn="$(basename "$0")"
 rp="$(realpath "$0")"
 
-use_gui=y
+PEN_USE_GUI=y
+share_x=y
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -51,14 +52,22 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -gui|-X) {
-        use_gui=y
+    -gui) {
+        PEN_USE_GUI=y
+        share_x=y
+        shift
+    }
+    ;;
+
+    -X) {
+        share_x=y
         shift
     }
     ;;
 
     -nogui|-noX|-safe) {
-        use_gui=n
+        PEN_USE_GUI=n
+        share_x=n
         shift
     }
     ;;
@@ -526,14 +535,20 @@ fi
 # --env "GROUP_ID=1000" \
 
 if ! test -n "$DISPLAY"; then
-    use_gui=n
+    PEN_USE_GUI=n
 fi
 
-if test "$use_gui" = "y"; then
-    cmd-nice xhost +
+if test -n "$DISPLAY"; then
+    cmd-nice xhost + | awk 1 1>&2
     xhost +
-    export PEN_USE_GUI=y
+
+    echo
+    echo If this fails, try running pen with -nogui
+    echo " pen -nogui"
+    echo
 fi
+
+export PEN_USE_GUI
 
 case "$docker_cmd" in
     run) {
