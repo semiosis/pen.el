@@ -86,6 +86,13 @@
         (thing (sor (pen-thing-at-point))))
     (cond
      (sel sel)
+     ((not sel)
+      (read-string-hist
+       (concat
+        (or (sor prompt "pen-thing-at-point-ask")
+            "")
+        ": ")
+       thing))
      ((and prefer-not-to-ask
            thing) thing)
      (t (read-string-hist
