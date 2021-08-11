@@ -101,6 +101,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if ! test "$share_x" = "y"; then
+    export DISPLAY=
+fi
+
 cmd() {
     for var in "$@"
     do
@@ -543,8 +547,8 @@ if test -n "$DISPLAY"; then
     xhost +
 
     echo
-    echo If this fails, try running pen with -nogui
-    echo " pen -nogui"
+    echo If this fails, try running pen with -noX
+    echo " pen -noX"
     echo
 fi
 
