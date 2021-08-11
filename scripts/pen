@@ -41,6 +41,8 @@ sn="$(basename "$0")"
 bn="$(basename "$0")"
 rp="$(realpath "$0")"
 
+use_gui=y
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -tty|-nw) {
@@ -523,7 +525,15 @@ fi
 # --env "USER_ID=1000" \
 # --env "GROUP_ID=1000" \
 
-xhost +
+if ! test -n "$DISPLAY"; then
+    use_gui=n
+fi
+
+if test "$use_gui" = "y"; then
+    cmd-nice xhost +
+    xhost +
+    export PEN_USE_GUI=y
+fi
 
 case "$docker_cmd" in
     run) {
@@ -538,11 +548,12 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$OPENAI_API_EL_DIR" && printf -- "%s " -v "$OPENAI_API_EL_DIR:/root/.emacs.d/host/openai-api.el" ) \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
         --env TERM \
-        $(if ! test "$use_gui" = n; then
+        $(if test -n "$DISPLAY"; then
         cmd --privileged \
         --env COLORFGBG \
         -e DISPLAY=${DISPLAY} \
         --env EMAIL \
+        --env PEN_USE_GUI \
         --env GIT_AUTHOR_EMAIL \
         --env GIT_AUTHOR_NAME \
         --env GIT_COMMITTER_EMAIL \
