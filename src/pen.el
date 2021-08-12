@@ -650,6 +650,11 @@ Function names are prefixed with pf- for easy searching"
                          (or (vector2list (ht-get yaml "stop-sequences"))
                              ;; (list "\n")
                              (list "###<long>###")))
+                        (suggest-p
+                         (or (vector2list (ht-get yaml "suggest-p"))
+                             (list t)))
+                        ;; These are automatically turned into prompt functions
+                        (nl-suggest-p (vector2list (ht-get yaml "nl-suggest-p")))
                         (stop-sequence
                          (if stop-sequences (car stop-sequences)))
 
