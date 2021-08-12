@@ -542,20 +542,21 @@ if ! test -n "$DISPLAY"; then
     PEN_USE_GUI=n
 fi
 
-if test -n "$DISPLAY"; then
-    cmd-nice xhost + | awk 1 1>&2
-    xhost +
-
-    echo
-    echo If this fails, try running pen with -noX
-    echo " pen -noX"
-    echo
-fi
-
 export PEN_USE_GUI
 
 case "$docker_cmd" in
     run) {
+
+    if test -n "$DISPLAY"; then
+        cmd-nice xhost + | awk 1 1>&2
+        xhost +
+
+        echo
+        echo If this fails, try running pen with -noX
+        echo " pen -noX"
+        echo
+    fi
+
 IFS= read -r -d '' shcode <<HEREDOC
     # --user "$(id -u):$(id -g)"
     docker "$docker_cmd" \
