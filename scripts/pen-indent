@@ -1,0 +1,11 @@
+#!/bin/bash
+
+d="$1"
+: ${d:="4"}
+
+if [ "$d" -lt "0" ]; then
+    d="$(printf -- "%s" "$d" | cut -d - -f 2)"
+    sed "s/^$(echo -n ' ' | pen-s rs $d)//"
+else
+    sed "s/^/$(echo -n ' ' | pen-s rs $d)/"
+fi
