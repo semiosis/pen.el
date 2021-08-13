@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+export UPDATE=y
+
+question="$1"
+: "${question:="Why is the sky blue?"}"
+response="$question"
+echo "$response"
+echo "But why, Mr Feynman?"
+while :; do
+    response="$(pen -u pf-richard-feynman-explains "$question")"
+    echo "$response"
+
+    next_question="$(pen -u pf-one-sentence-summary "$response")"
+    while test -z "$next_question"; do
+        next_question="$(pen -u pf-one-sentence-summary "$response")"
+    done
+    
+    # TODO Accumulate the one-sentence summaries.
+    first_sentence="$(p "$next_question" | sed 's/\..*//' | sed 's/$/./')"
+
+    question="$next_question"
+    test -n "$next_question" && echo "($next_question)"
+    echo "But why, Mr Feynman?"
+    echo
+done
