@@ -564,6 +564,15 @@
                         yaml)))
     yaml))
 
+(defun pen-prompt-test-examples ()
+  (interactive)
+  (etv
+   (vector2list
+    (ht-get
+     (mu
+      (pen-prompt-file-load "$PROMPTS/funny-riddle.prompt"))
+     "examples"))))
+
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
@@ -630,7 +639,10 @@ Function names are prefixed with pf- for easy searching"
                         (no-trim-start (or (pen-yaml-test yaml "no-trim-start")
                                            (pen-yaml-test yaml "completion")))
                         (no-trim-end (pen-yaml-test yaml "no-trim-end"))
-                        (examples (vector2list (ht-get yaml "examples")))
+                        (examples-list (vector2list (ht-get yaml "examples")))
+                        (examples
+                         (if (vectorp (car examples-list))
+                             (vector2list (car examples-list))))
                         (preprocessors (vector2list (ht-get yaml "preprocessors")))
                         (prompt-filter (ht-get yaml "prompt-filter"))
                         (postprocessor (ht-get yaml "postprocessor"))
