@@ -642,7 +642,8 @@ Function names are prefixed with pf- for easy searching"
                         (examples-list (vector2list (ht-get yaml "examples")))
                         (examples
                          (if (vectorp (car examples-list))
-                             (vector2list (car examples-list))))
+                             (vector2list (car examples-list))
+                           examples-list))
                         (preprocessors (vector2list (ht-get yaml "preprocessors")))
                         (prompt-filter (ht-get yaml "prompt-filter"))
                         (postprocessor (ht-get yaml "postprocessor"))
