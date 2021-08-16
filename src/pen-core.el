@@ -43,7 +43,7 @@
 ;; Great for NLP tasks such as keyword extraction
 (defun pen-selection-or-surrounding-context (&optional window-line-size)
   (let ((context
-         (if (selected-p)
+         (if (pen-selected-p)
              (pen-selected-text)
            (pen-surrounding-context window-line-size))))
     ;; Correcting the spelling and grammer helps massively

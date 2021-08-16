@@ -477,11 +477,11 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
    :hist-var hist-var
    :no-hist no-hist))
 
-(defun selected ()
+(defun pen-selected ()
   (or
    (use-region-p)
    (evil-visual-state-p)))
-(defalias 'selected-p 'selected)
+(defalias 'pen-selected-p 'pen-selected)
 
 (defun glob (pattern &optional dir)
   (split-string (pen-cl-sn (concat "pen-glob " (pen-q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
@@ -536,9 +536,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 (defalias 'ptw 'preserve-trailing-whitespace)
 
 (defun filter-selected-region-through-function (fun)
-  (let* ((start (if (selected) (region-beginning) (point-min)))
-         (end (if (selected) (region-end) (point-max)))
-         (doreverse (and (selected) (< (point) (mark))))
+  (let* ((start (if (pen-selected) (region-beginning) (point-min)))
+         (end (if (pen-selected) (region-end) (point-max)))
+         (doreverse (and (pen-selected) (< (point) (mark))))
          (removed (delete-and-extract-region start end))
          (replacement (str (ptw fun (str removed))))
          (replacement-len (length (str replacement))))
@@ -592,7 +592,7 @@ when s is a string, set the clipboard to s"
       (setq s (pps s)))
   (if (not (s-blank? s))
       (kill-new s)
-    (if (selected-p)
+    (if (pen-selected-p)
         (progn
           (setq s (pen-selected-text))
           (call-interactively 'kill-ring-save))))
@@ -789,7 +789,7 @@ when s is a string, set the clipboard to s"
   "Apply the function to the selected region. The function must accept a string and return a string."
   (let ((rstart (if (region-active-p) (region-beginning) (point-min)))
         (rend (if (region-active-p) (region-end) (point-max)))
-        (was_selected (selected-p))
+        (was_selected (pen-selected-p))
         (deactivate-mark nil))
 
     (if buffer-read-only
@@ -870,7 +870,7 @@ when s is a string, set the clipboard to s"
     (istr-match-p "Haskell" (message lang))))
 
 (defun pen-word-clickable ()
-  (or (not (selected-p))
+  (or (not (pen-selected-p))
       (= 1 (length (s-split " " (pen-selection))))))
 
 (defun identity-command (&optional body)
