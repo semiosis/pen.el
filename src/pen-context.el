@@ -59,7 +59,7 @@
                  ,expr))))))
 
 (defalias 'pen-context-pen-func-for-expression
-  (apply-partially 'pen-func-for-expression "my-context-predicate"))
+  (apply-partially 'pen-func-for-expression "pen-contextp"))
 
 (defun pen-compile-context-tuple (context-tuple)
   (let ((pred-funcs (mapcar 'pen-context-pen-func-for-expression (car context-tuple))))
