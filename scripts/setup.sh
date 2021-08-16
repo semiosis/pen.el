@@ -121,11 +121,14 @@ cd
 git clone --depth 1 "https://github.com/syl20bnr/spacemacs"
 )
 
+apt install libreadline-dev
+apt install libbsd-dev
 (
 cd
 git clone --depth 1 "https://gitlab.com/rosie-pattern-language/rosie"
 cd rosie
 make
+make install
 )
 
 (
