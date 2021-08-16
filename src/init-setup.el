@@ -18,6 +18,7 @@
 (package-install 'org-roam)
 (package-install 'org-brain)
 (package-install 'dash)
+(package-install 'flyspell)
 (package-install 'evil)
 (package-install 'popup)
 (package-install 'right-click-context)
