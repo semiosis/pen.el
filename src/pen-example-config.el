@@ -121,6 +121,9 @@
 ;; nlsh
 (setq pen-nlsh-histdir (f-join user-emacs-directory "comint-history"))
 
+;; Initial load of engines 
+(pen-load-engines)
+
 ;; Initial load of prompt functions
 (pen-generate-prompt-functions)
 
