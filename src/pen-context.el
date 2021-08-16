@@ -16,7 +16,6 @@
   (if (not p) (setq p (point)))
   (str (buffer-substring p (save-excursion (goto-char p) (line-end-position)))))
 
-;; (save-excursion (end-of-line)(point))
 (defun pen-rpl-at-point (rpl)
   (let* ((output (chomp (pen-sn (concat "rosie grep -o subs " (pen-q rpl)) (pen-string-at-point))))
          (matches (and (not (string-empty-p output)) (pen-str2list output))))
@@ -31,8 +30,7 @@
 (defun pen-buffer-cron-lines ()
   (sor (pen-snc "pen-scrape \"((?:[0-9,/-]+|\\\\*)\\\\s+){4}(?:[0-9]+|\\\\*)\"" (buffer-string))))
 
-;; I should probably redesign this
- (progn
+(progn
   (defset pen-context-tuples
     `((((major-mode-p 'emacs-lisp-mode)
         (pen-rpl-at-point-p "net.ipv4"))
