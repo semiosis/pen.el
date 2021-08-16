@@ -1,3 +1,4 @@
+* Features
 ** NLP pipelines
 - Spacy pipeline generation
 
@@ -6,3 +7,8 @@
 
 ** Examplary DSL generation
 https://github.com/semiosis/examplary/
+
+** Prolog FFI
+$NOTES/ws/pen-el/prolog/lowercase.c
+
+This requires recompilation of swipl.
