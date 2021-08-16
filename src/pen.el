@@ -604,6 +604,8 @@
 ;; (etv (ht-get pen-engines "OpenAI Davinci"))
 
 (defun pen-load-engines (&optional paths)
+  (interactive)
+
   (setq pen-engines (make-hash-table :test 'equal))
   (setq pen-engines-failed '())
   (noupd
