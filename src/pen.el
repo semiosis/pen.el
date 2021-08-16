@@ -568,6 +568,24 @@
                         yaml)))
     yaml))
 
+(defun pen-engine-file-load (fp)
+  (let* ((yaml (yamlmod-read-file fp))
+         (incl-name (sor (ht-get yaml "include")))
+         (incl-fp (if (sor incl-name)
+                      (f-join
+                       pen-engines-directory
+                       "engines"
+                       (concat (slugify incl-name) ".engine"))))
+         (incl-yaml (if (and (sor incl-name)
+                             (f-file-p incl-fp))
+                        (pen-engine-file-load incl-fp))))
+    (if incl-yaml
+        (setq yaml
+              (ht-merge incl-yaml
+                        ;; The last is overriding
+                        yaml)))
+    yaml))
+
 (defun pen-prompt-test-examples ()
   (interactive)
   (etv
@@ -580,9 +598,37 @@
 (defvar pen-engines '()
   "pen-engines are basically templates which will be merged with the corresponding prompts")
 
-(defun pen-load-engines (&optional paths)
+(defvar pen-engines-failed '())
 
-  )
+(defun pen-load-engines (&optional paths)
+  (setq pen-engines '())
+  (setq pen-engines-failed '())
+  (noupd
+   (eval
+    `(let ((paths
+            (or ,paths
+                (-non-nil
+                 (mapcar 'sor (glob (concat pen-engines-directory "/engines" "/*.engine")))))))
+       (cl-loop for path in paths do
+                (message (concat "pen-mode: Loading .engine file " path))
+
+                ;; Do a recursive engine merge from includes
+                ;; ht-merge
+
+                ;; results in a hash table
+                (try
+                 (let* ((yaml (pen-engine-file-load path))
+
+                        ;; function
+                        (title (ht-get yaml "title")))
+                   (message (concat "pen-mode: Loaded engine " title))
+                   (add-to-list 'pen-engines path))
+                 (add-to-list 'pen-engines-failed path)))
+       (if pen-engines-failed
+           (progn
+             (message "failed:")
+             (message (pen-list2str pen-engines-failed))
+             (message (concat (str (length pen-engines-failed)) " failed"))))))))
 
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
