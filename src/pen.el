@@ -725,9 +725,6 @@ Function names are prefixed with pf- for easy searching"
                         (n-test-runs (ht-get yaml "n-test-runs"))
 
                         ;; API
-                        (model (ht-get yaml "model"))
-                        (min-tokens (ht-get yaml "min-tokens"))
-                        (max-tokens (ht-get yaml "max-tokens"))
                         (engine
                          (let* ((engine-title (ht-get yaml "engine"))
                                 (engine (if (and
@@ -737,6 +734,9 @@ Function names are prefixed with pf- for easy searching"
                            (if engine
                                (setq yaml (ht-merge yaml engine)))
                            engine-title))
+                        (model (ht-get yaml "model"))
+                        (min-tokens (ht-get yaml "min-tokens"))
+                        (max-tokens (ht-get yaml "max-tokens"))
                         (top-p (ht-get yaml "top-p"))
                         (top-k (ht-get yaml "top-k"))
                         (temperature (ht-get yaml "temperature"))
