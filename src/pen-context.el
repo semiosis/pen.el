@@ -98,14 +98,25 @@
   (setq context-pred-funcs '())
   (setq context-tuples-compiled '()))
 
-;; Defining a function this way is not optimal
-(defalias 'context-func-for-expression
-  (slime-curry 'func-for-expression "my-context-predicate"))
+(defun pen-hash-expression (expr)
+  (sha1 (str expr)))
 
-;; (context-func-for-expression '(message "yo"))
+(defun pen-func-for-expression (nameprefix expr &optional update slugify-input)
+  (let* ((funcsym (intern (concat nameprefix "-" (if slugify-input
+                                                      (slugify slugify-input)
+                                                   (pen-hash-expression expr))))))
+    (if (and (not update) (fboundp funcsym))
+        funcsym
+      (eval `(progn
+               (defun ,funcsym ()
+                 (ignore-errors (memoize-by-buffer-contents ',funcsym))
+                 ,expr))))))
+
+(defalias 'pen-context-pen-func-for-expression
+  (apply-partially 'pen-func-for-expression "my-context-predicate"))
 
 (defun pen-compile-context-tuple (context-tuple)
-  (let ((pred-funcs (mapcar 'context-func-for-expression (car context-tuple))))
+  (let ((pred-funcs (mapcar 'pen-context-pen-func-for-expression (car context-tuple))))
     ;; A list of functions and a list of calls
     (list pred-funcs (-drop 1 context-tuple))))
 
@@ -114,7 +125,7 @@
   (setq context-preds (-distinct (flatten-once (cl-loop for tup in pen-context-tuples collect (car tup)))))
 
   ;; Go through and make functions first -- a little unnecessary
-  (setq context-pred-funcs (cl-loop for pred in context-preds collect (context-func-for-expression pred)))
+  (setq context-pred-funcs (cl-loop for pred in context-preds collect (pen-context-pen-func-for-expression pred)))
 
   (setq context-tuples-compiled (cl-loop for tup in pen-context-tuples collect (pen-compile-context-tuple tup))))
 (pen-build-context-functions)
