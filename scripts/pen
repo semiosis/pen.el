@@ -518,7 +518,7 @@ if ! test "$vanilla" = "y"; then
         fi
     fi
 
-    test -d "engines" && : "${engines_DIR:="engines"}"
+    test -d "engines" && : "${ENGINES_DIR:="engines"}"
 
     if ! test "$batch" = "y"; then
         if test -d "$PROMPTS_DIR"; then
