@@ -595,13 +595,16 @@
       (pen-prompt-file-load "$PROMPTS/funny-riddle.prompt"))
      "examples"))))
 
-(defvar pen-engines '()
+;; This is a hash table
+(defvar pen-engines (make-hash-table :test 'equal)
   "pen-engines are basically templates which will be merged with the corresponding prompts")
 
 (defvar pen-engines-failed '())
 
+;; (etv (ht-get pen-engines "OpenAI Davinci"))
+
 (defun pen-load-engines (&optional paths)
-  (setq pen-engines '())
+  (setq pen-engines (make-hash-table :test 'equal))
   (setq pen-engines-failed '())
   (noupd
    (eval
@@ -622,7 +625,7 @@
                         ;; function
                         (title (ht-get yaml "title")))
                    (message (concat "pen-mode: Loaded engine " title))
-                   (add-to-list 'pen-engines path))
+                   (ht-set pen-engines title yaml))
                  (add-to-list 'pen-engines-failed path)))
        (if pen-engines-failed
            (progn
