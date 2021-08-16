@@ -1,6 +1,7 @@
 ;; https://github.com/semiosis/ink.el
 
 (defun ink-encode (text &optional engine language topic)
+  (interactive (list (pen-selection)))
   (if (not engine)
       (setq engine "OpenAI GPT-3"))
   (if (not language)

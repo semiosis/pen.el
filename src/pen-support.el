@@ -577,7 +577,7 @@ region-active-p does not work for evil selection."
   (interactive)
   (pen-selected-text t))
 
-(defalias 'selection 'pen-selected-text-ignore-no-selection)
+(defalias 'pen-selection 'pen-selected-text-ignore-no-selection)
 
 (defalias 'pps 'pp-to-string)
 
@@ -871,7 +871,7 @@ when s is a string, set the clipboard to s"
 
 (defun pen-word-clickable ()
   (or (not (selected-p))
-      (= 1 (length (s-split " " (selection))))))
+      (= 1 (length (s-split " " (pen-selection))))))
 
 (defun identity-command (&optional body)
   (interactive)

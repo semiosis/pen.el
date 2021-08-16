@@ -82,7 +82,7 @@
   (interactive)
   ;; If selected, definitely use
   ;; If not selected, verify
-  (let ((sel (selection))
+  (let ((sel (pen-selection))
         (thing (sor (pen-thing-at-point))))
     (cond
      (sel sel)

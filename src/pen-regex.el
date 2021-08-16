@@ -41,7 +41,7 @@
         (sel))
     (save-excursion-and-region-reliably
      (pen-my-select-regex-at-point re)
-     (setq sel (selection))
+     (setq sel (pen-selection))
      (let ((m (mark)))
        (goto-char m)
        (setq found (looking-at-p re))))
@@ -79,7 +79,7 @@
 
 (defun pen-string-in-region-p (s)
   (if (use-region-p)
-      (let ((bs (selection)))
+      (let ((bs (pen-selection)))
         (if (stringp bs)
             (re-sensitive
              (pen-string-match-literal s bs))))))
@@ -93,7 +93,7 @@
 (defalias 'str-in-buffer-p 'pen-string-in-buffer-p)
 
 (defun pen-istring-in-region-p (s)
-  (istring-match-literal s (sor (selection) "")))
+  (istring-match-literal s (sor (pen-selection) "")))
 (defalias 'istr-in-region-p 'pen-istring-in-region-p)
 
 (defun pen-istring-in-buffer-p (s)
@@ -102,7 +102,7 @@
 
 (defun pen-istr-in-region-or-path-p (s)
   (let ((p (get-path-nocreate))
-        (rs (sor (selection) "")))
+        (rs (sor (pen-selection) "")))
     (if (and (stringp s)
              (stringp rs))
         (or (istring-match-literal s rs)
@@ -131,7 +131,7 @@
 
 (defun pen-ire-in-region-p (s)
   (if (use-region-p)
-      (let ((bs (selection)))
+      (let ((bs (pen-selection)))
         (if (stringp bs)
             (pen-string-match-insensitive s bs)))))
 
@@ -142,7 +142,7 @@
 
 (defun pen-re-in-region-or-path-p (s)
   (let ((p (get-path-nocreate))
-        (rs (sor (selection) "")))
+        (rs (sor (pen-selection) "")))
     (re-sensitive
      (or (and (stringp s) (stringp rs) (string-match s rs))
          (and (stringp s) (stringp p) (string-match s p))))))
@@ -156,7 +156,7 @@
 
 (defun pen-ire-in-region-or-path-p (s)
   (let ((p (get-path-nocreate))
-        (rs (sor (selection) "")))
+        (rs (sor (pen-selection) "")))
     (re-insensitive
      (or (and (stringp s) (stringp rs) (string-match s rs))
          (and (stringp s) (stringp p) (string-match s p))))))

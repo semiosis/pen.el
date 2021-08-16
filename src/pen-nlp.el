@@ -39,7 +39,7 @@
   (interactive)
   (if mark-active
       (let* ((query (if mark-active
-                        (selection)))
+                        (pen-selection)))
              (reformulated-query (if (string-match-p "\\*" query)
                                      query
                                    (let ((wildcard-word (fz (split-string query " " t)
