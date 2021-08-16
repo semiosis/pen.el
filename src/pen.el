@@ -356,6 +356,10 @@
                    (expand-template
                     (str (or (pen-var-value-maybe 'mode)
                              ,mode))))
+                  (final-model
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'model)
+                             ,model))))
 
                   (final-top-p
                    (expand-template
@@ -432,7 +436,7 @@
                        ;; See `pen-restore-chars`
                        `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
                          ("PEN_LM_COMMAND" ,,lm-command)
-                         ("PEN_MODEL" ,,model)
+                         ("PEN_MODEL" ,final-model)
                          ("PEN_MAX_TOKENS" ,final-max-tokens)
                          ("PEN_TEMPERATURE" ,final-temperature)
                          ("PEN_MODE" ,final-mode)
@@ -654,6 +658,7 @@ Function names are prefixed with pf- for easy searching"
                         (n-test-runs (ht-get yaml "n-test-runs"))
 
                         ;; API
+                        (engine (ht-get yaml "engine"))
                         (model (ht-get yaml "model"))
                         (max-tokens (ht-get yaml "max-tokens"))
                         (top-p (ht-get yaml "top-p"))
