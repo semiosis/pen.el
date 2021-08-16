@@ -1,4 +1,10 @@
 * Docker
+** Alternative images
+| image name               | purpose        |
+|--------------------------+----------------|
+| =semiosis/pen.el:stable= | Stable version |
+| =semiosis/pen.el:latest= | Latest version |
+
 ** Alternative docker invocations
 This will check out the code and give access
 to the =slugify= script so you can share the
