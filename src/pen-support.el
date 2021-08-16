@@ -290,6 +290,21 @@ delim is used to guarantee the function returns multiple matches per line
     (insert-file-contents filePath)
     (buffer-string)))
 
+(defun pen-find-thing (thing)
+  (interactive)
+  (if (stringp thing)
+      (setq thing (intern thing)))
+  (try (find-function thing)
+       (find-variable thing)
+       (find-face-definition thing)
+       t))
+(defalias 'pen-j 'pen-find-thing)
+(defalias 'pen-ft 'pen-find-thing)
+
+(defmacro pen-lm (&rest body)
+  "Interactive lambda with no arguments."
+  `(lambda () (interactive) ,@body))
+
 (defun str (thing)
   "Converts object or string to an unformatted string."
 

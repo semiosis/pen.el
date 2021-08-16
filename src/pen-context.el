@@ -37,7 +37,7 @@
     (etv (pen-sed "s/^\"//;s/\"$//" (pen-scrape "\"[^\"]*\"" (pen-snc (concat "elinks-dump-chrome " (pen-q (concat "https://crontab.guru/#" tab)))))))))
 
 ;; I should probably redesign this
-(progn
+ (progn
   (defset pen-context-tuples
     `((((major-mode-p 'emacs-lisp-mode)
         (rpl-at-point-p "net.ipv4"))
@@ -154,14 +154,14 @@
          (sel (if fz-input
                   (fz fz-input nil nil "suggest-funcs: "))))
     (if sel
-        (let ((selsym (str2sym sel)))
+        (let ((selsym (intern sel)))
           (if (and (function-p selsym) (commandp selsym))
               (call-interactively selsym)
             (call-function selsym))))))
 
 (define-key global-map (kbd "M-4 M-4") 'pen-suggest-funcs)
 (define-key global-map (kbd "<help> G") 'pen-suggest-funcs)
-(define-key global-map (kbd "M-4 >") (lm (find-thing 'pen-context-tuples)))
-(define-key global-map (kbd "M-4 M->") (lm (find-thing 'pen-context-tuples)))
+(define-key global-map (kbd "M-4 >") (pen-lm (pen-find-thing 'pen-context-tuples)))
+(define-key global-map (kbd "M-4 M->") (pen-lm (pen-find-thing 'pen-context-tuples)))
 
 (provide 'pen-context)
