@@ -10,7 +10,7 @@
 
 
 
-;; (etv (plist-get (macroexpand '(defprompt lines regex
+;; (pen-etv (plist-get (macroexpand '(defprompt lines regex
 ;;                                  :external "grex"
 ;;                                  ;; The task may also be used as a metaprompt.
 ;;                                  :task "Convert lines to regex"

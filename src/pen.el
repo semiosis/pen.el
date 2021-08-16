@@ -76,7 +76,7 @@
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "filter"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
-        (etv (pps funs))
+        (pen-etv (pps funs))
       funs)))
 
 (defun pen-list-completion-functions ()
@@ -84,7 +84,7 @@
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "completion"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
-        (etv (pps funs))
+        (pen-etv (pps funs))
       funs)))
 
 (defun pen-encode-string (s)
@@ -135,7 +135,7 @@
 
 (defun pen-test-expand-keyvals ()
   (interactive)
-  (etv (pen-expand-template-keyvals " <y> <thing> " '(("thing" . "yo")
+  (pen-etv (pen-expand-template-keyvals " <y> <thing> " '(("thing" . "yo")
                                                       ("y" . "n")))))
 
 (defun pen-expand-template-keyvals (s keyvals)
@@ -180,7 +180,7 @@
             (ht-get
              (yamlmod-load (cat (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic.prompt")))
              "subprompts"))))
-    (etv
+    (pen-etv
      (pps
       ;; (ht-merge (car l) (second l))
       (ht->alist (-reduce 'ht-merge l))))))
@@ -196,7 +196,7 @@
 (comment
  (defun test-template ()
    (interactive)
-   (etv
+   (pen-etv
     (pps
      (let ((subprompts '((meta . "and")
                          (intra . "and the")))
@@ -219,7 +219,7 @@
 ;;  filter completion lm-command stop-sequences stop-sequence max-tokens
 ;;  temperature top-p model no-trim-start no-trim-end preprocessors
 ;;  postprocessor prompt-filter n-completions)
-;; (let ((max-tokens 1)) (funcall (cl-defun yo () (etv max-tokens))))
+;; (let ((max-tokens 1)) (funcall (cl-defun yo () (pen-etv max-tokens))))
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
 (defun define-prompt-function ()
   (eval
@@ -513,7 +513,7 @@
                    (cond
                     ((or final-is-info
                          (>= (prefix-numeric-value current-prefix-arg) 4))
-                     (etv result))
+                     (pen-etv result))
                     ;; Filter takes priority over insertion
                     ((and ,filter
                           mark-active)
@@ -526,7 +526,7 @@
                          ,completion)
                      (insert result))
                     (t
-                     (etv result)))
+                     (pen-etv result)))
                  result)))))))))
 
 (defun pen-list-to-orglist (l)
@@ -544,7 +544,7 @@
             "subprompts")))
          (keys (type (car (vector2list subprompts)))))
 
-    (etv
+    (pen-etv
      (pps keys))))
 
 (defun pen-prompt-test-merge ()
@@ -594,7 +594,7 @@
 
 (defun pen-prompt-test-examples ()
   (interactive)
-  (etv
+  (pen-etv
    (type
     (car
      (vector2list
@@ -609,7 +609,7 @@
 
 (defvar pen-engines-failed '())
 
-;; (etv (ht-get pen-engines "OpenAI Davinci"))
+;; (pen-etv (ht-get pen-engines "OpenAI Davinci"))
 
 (defun pen-load-engines (&optional paths)
   (interactive)
@@ -835,7 +835,7 @@ Function names are prefixed with pf- for easy searching"
                                      ;;   (read-string-hist ,(concat v ": ") ,example))
                                      )
                                 ;; `(if ,(> (length (s-lines example)) 1)
-                                ;;      (etv ,example)
+                                ;;      (pen-etv ,example)
                                 ;;    (if ,d
                                 ;;        (eval-string ,(str d))
                                 ;;      (read-string-hist ,(concat v ": ") ,example)))
@@ -996,7 +996,7 @@ Function names are prefixed with pf- for easy searching"
 
 (defun pen-force-custom-test ()
   (interactive)
-  (etv
+  (pen-etv
    (pen-force-custom (message (str (pen-var-value-maybe 'n-collate))))))
 
 (defmacro pen-single-generation (&rest body)
@@ -1118,7 +1118,7 @@ May use to generate code from comments."
          (pen-long-complete
           (pen-complete-function preceding-text))))
     (if tv
-        (etv response)
+        (pen-etv response)
       (insert response))))
 
 (defun pen-cmd-q (&rest args)

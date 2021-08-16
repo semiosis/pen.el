@@ -1,5 +1,5 @@
 (defun pen-test-closure ()
-  (etv (if (variable-p 'n-collate)
+  (pen-etv (if (variable-p 'n-collate)
            (eval 'n-collate)
          5)))
 ;; It works in code

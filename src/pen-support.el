@@ -258,7 +258,7 @@ Takes into account the current file name."
 (defun scrape (re s &optional delim)
   "Return a list of matches of re within s.
 delim is used to guarantee the function returns multiple matches per line
-(etv (scrape \"\\b\\w+\\b\" (buffer-string) \" +\"))"
+(pen-etv (scrape \"\\b\\w+\\b\" (buffer-string) \" +\"))"
   (if delim
       (setq s (pen-list2str (s-split delim s))))
   (pen-list2str
@@ -509,10 +509,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
    (if (stringp o)
        o
      (pp-to-string o))))
-(defun etv (o)
+(defun pen-etv (o)
   "Returns the object. This is a way to see the contents of a variable while not interrupting the flow of code.
  Example:
- (message (etv \"shane\"))"
+ (message (pen-etv \"shane\"))"
   (new-buffer-from-o o)
   o)
 
@@ -859,7 +859,7 @@ when s is a string, set the clipboard to s"
           (if prepend-lm-warning
               (setq def (concat "NLG: " def)))
           (if (interactive-p)
-              (etv def)
+              (pen-etv def)
             def)))))
 
 ;; Example
@@ -885,7 +885,7 @@ when s is a string, set the clipboard to s"
 (defun pen-extract-keywords ()
   (interactive)
 
-  (etv (pps (pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t))))
+  (pen-etv (pps (pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t))))
   ;; (nbfs
   ;;  (pps
   ;;   (str2lines
@@ -940,7 +940,7 @@ when s is a string, set the clipboard to s"
 
 (defun pen-show-last-prompt ()
   (interactive)
-  (etv (f-read (f-join penconfdir "last-final-prompt.txt"))))
+  (pen-etv (f-read (f-join penconfdir "last-final-prompt.txt"))))
 
 (defun pen-set-major-mode (name)
   (funcall (cond ((string= name "shell-mode") 'sh-mode)

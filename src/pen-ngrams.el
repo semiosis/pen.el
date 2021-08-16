@@ -24,7 +24,7 @@
          ;;                     (or corpus 26))))
          ))
     (if (interactive-p)
-        (etv ngrams)
+        (pen-etv ngrams)
       ngrams)))
 
  ;; | pen-htmldecode | postprocess

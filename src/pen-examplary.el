@@ -103,7 +103,7 @@ The last element in the list is the output/return value"
           (setq examples
                 (mapcar 'list (pf-list-of "1" (car args) :no-select-result t)))))
 
-    ;; (etv (pps examples))
+    ;; (pen-etv (pps examples))
     ;; Add outputs to examples if there is a filter
     (if (and filter
              examples)

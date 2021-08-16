@@ -188,7 +188,7 @@
            (t topic)))
 
     (if (interactive-p)
-        (etv topic)
+        (pen-etv topic)
       topic)))
 
 (defun pen-broader-topic ()
@@ -197,7 +197,7 @@
 
   (let ((topic (get-path nil nil nil t)))
     (if (interactive-p)
-        (etv topic)
+        (pen-etv topic)
       topic)))
 
 (provide 'pen-library)

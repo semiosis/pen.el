@@ -941,7 +941,7 @@ Use my position list code. Make it use rosie lang and external software."
           (if prepend-lm-warning
               (setq def (concat "NLG: " def)))
           (if (interactive-p)
-              (etv def)
+              (pen-etv def)
             def)))))
 
 (define-key global-map (kbd "H-i") 'pen-add-glossaries-to-buffer)

@@ -10,7 +10,7 @@
 
 (defun pen-oob-test ()
   (interactive)
-  (etv (pen-oob "To be or not to be, that is the question.")))
+  (pen-etv (pen-oob "To be or not to be, that is the question.")))
 
 (defun pen-piglatin-word (w)
   (cond

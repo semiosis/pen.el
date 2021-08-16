@@ -96,7 +96,7 @@ prompt additionally for EXTRA-AG-ARGS."
            nil
            nil
            "pen list: "))
-         (cf (eval `(gen-counsel-function ,(concat "loop lm-complete -s " (pen-q pfp)) 'etv))))
+         (cf (eval `(gen-counsel-function ,(concat "loop lm-complete -s " (pen-q pfp)) 'pen-etv))))
     (call-interactively cf)))
 
 (provide 'pen-ivy)

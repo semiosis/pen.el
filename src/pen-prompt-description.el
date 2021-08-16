@@ -17,6 +17,6 @@
               ;; Suggest other parameters based on existing prompts in personal repository?
               )
     ;; Encode into snippet value extractors for the wizard
-    (etv available)))
+    (pen-etv available)))
 
 (provide 'pen-prompt-description)

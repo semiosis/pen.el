@@ -236,7 +236,7 @@
                    (cond
                     ((or final-is-info
                          (>= (prefix-numeric-value current-prefix-arg) 4))
-                     (etv result))
+                     (pen-etv result))
                     ;; Filter takes priority over insertion
                     ((and ,filter
                           mark-active)
@@ -249,6 +249,6 @@
                          ,completion)
                      (insert result))
                     (t
-                     (etv result)))
+                     (pen-etv result)))
                  result))))))))
   func-sym)

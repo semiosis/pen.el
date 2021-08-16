@@ -30,7 +30,7 @@
                   "aix keytest: "
                   (pen-onelineify (pen-snc aix-cmd)))))
     (if (interactive-p)
-        (etv output)
+        (pen-etv output)
       output)))
 
 ;; Use =cl= when dealing with plists in emacs
@@ -42,7 +42,7 @@
 
     ;; (plist-put plist :testkey (pen-diagnostics-test-key))
 
-    ;; (etv (plist2yaml plist))
+    ;; (pen-etv (plist2yaml plist))
     (nbfs (plist2yaml plist) "pen diagnostics" 'yaml-mode)))
 
 (provide 'pen-diagnostics)

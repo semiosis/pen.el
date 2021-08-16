@@ -7,9 +7,9 @@
 ;; TODO Use native elisp
 
 ;; (yaml2json (cat "$PROMPTS/analogy.prompt"))
-;; (etv (json2yaml (yaml2json (cat "$PROMPTS/translate-to.prompt"))))
+;; (pen-etv (json2yaml (yaml2json (cat "$PROMPTS/translate-to.prompt"))))
 
-;; (etv (ht-get (yaml-parse-string "key1: value1\nkey2: value2") 'key1))
+;; (pen-etv (ht-get (yaml-parse-string "key1: value1\nkey2: value2") 'key1))
 
 ;; (defun yaml-parse-file (fp)
 ;;   (yaml-parse-string (cat fp)))

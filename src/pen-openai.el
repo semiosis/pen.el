@@ -36,7 +36,7 @@
          (pen-str2list
           (pen-snc "pen-openai api engines.list | jq -r '.data[].id'"))))
     (if (interactive-p)
-        (etv (pen-list2str engines))
+        (pen-etv (pen-list2str engines))
       engines)))
 (memoize 'pen-openai-list-engines)
 ;; (memoize-restore 'pen-openai-list-engines)
