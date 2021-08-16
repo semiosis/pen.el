@@ -1,6 +1,10 @@
 ;; https://github.com/semiosis/ink.el
 
-;; *( is so it will work in YAML
+;; *( is so it will work in YAML. However, it
+;; still requires escaping, so now it's just to
+;; differentiate from regular text properties,
+;; but the differentiation serves no useful
+;; purpose.
 
 (defun ink-encode (text &optional engine language topic)
   (interactive (list
