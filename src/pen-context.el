@@ -103,7 +103,7 @@
         (let ((selsym (intern sel)))
           (if (and (function-p selsym) (commandp selsym))
               (call-interactively selsym)
-            (call-function selsym))))))
+            (funcall selsym))))))
 
 (defun pen-edit-context ()
   (interactive)

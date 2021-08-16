@@ -501,7 +501,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (with-current-buffer buffer
       (if contents (insert (str contents)))
       (beginning-of-buffer)
-      (if mode (call-function mode)))
+      (if mode (funcall mode)))
     buffer))
 (defalias 'nbfs 'new-buffer-from-string)
 (defun new-buffer-from-o (o)
