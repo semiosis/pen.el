@@ -595,11 +595,13 @@
 (defun pen-prompt-test-examples ()
   (interactive)
   (etv
-   (vector2list
-    (ht-get
-     (mu
-      (pen-prompt-file-load "$PROMPTS/funny-riddle.prompt"))
-     "examples"))))
+   (type
+    (car
+     (vector2list
+      (ht-get
+       (mu
+        (pen-prompt-file-load "$PROMPTS/funny-riddle.prompt"))
+       "examples"))))))
 
 ;; This is a hash table
 (defvar pen-engines (make-hash-table :test 'equal)
@@ -647,6 +649,7 @@ Function names are prefixed with pf- for easy searching"
   (interactive)
 
   (setq pen-prompt-functions nil)
+  (setq pen-prompts-failed nil)
   (setq pen-prompt-filter-functions nil)
   (setq pen-prompt-completion-functions nil)
   (setq pen-prompt-functions-meta nil)
@@ -729,8 +732,8 @@ Function names are prefixed with pf- for easy searching"
                          (let* ((engine-title (ht-get yaml "engine"))
                                 (engine (if (and
                                              engine-title
-                                             pen-engines
-                                             (ht-get pen-engines engine-title)))))
+                                             pen-engines)
+                                            (ht-get pen-engines engine-title))))
                            (if engine
                                (setq yaml (ht-merge yaml engine)))
                            engine-title))
@@ -794,7 +797,6 @@ Function names are prefixed with pf- for easy searching"
 
                         ;; variables
                         (vars (vector2list (ht-get yaml "vars")))
-                        (examples (vector2list (ht-get yaml "examples")))
                         (var-slugs (mapcar 'slugify vars))
                         (var-syms
                          (let ((ss (mapcar 'intern var-slugs)))
