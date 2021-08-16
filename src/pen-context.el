@@ -31,11 +31,6 @@
 (defun pen-buffer-cron-lines ()
   (sor (pen-snc "pen-scrape \"((?:[0-9,/-]+|\\\\*)\\\\s+){4}(?:[0-9]+|\\\\*)\"" (buffer-string))))
 
-(defun pen-crontab-guru (tab)
-  (interactive (list (fz (pen-buffer-cron-lines) (if (selected-p) (pen-thing-at-point)))))
-  (let ((tab (pen-sed "s/\\s\\+/_/g" tab)))
-    (etv (pen-sed "s/^\"//;s/\"$//" (pen-scrape "\"[^\"]*\"" (pen-snc (concat "elinks-dump-chrome " (pen-q (concat "https://crontab.guru/#" tab)))))))))
-
 ;; I should probably redesign this
  (progn
   (defset pen-context-tuples
@@ -47,10 +42,6 @@
             (major-mode-p 'markdown-mode))
         (pen-rpl-at-line-p "net.email"))
        (pen-copy-email-here))
-      (((pen-buffer-cron-lines))
-       (pen-crontab-guru))
-      (((flyspell-overlay-here-p))
-       (flyspell-auto-correct-word find-anagrams))
       (((f-exists-p "project.clj"))
        (cider-switch-to-repl-buffer))
       (((widget-at (point)))
@@ -105,6 +96,7 @@
   (setq context-pred-funcs (cl-loop for pred in context-preds collect (pen-context-pen-func-for-expression pred)))
 
   (setq context-tuples-compiled (cl-loop for tup in pen-context-tuples collect (pen-compile-context-tuple tup))))
+
 (pen-build-context-functions)
 
 (defun pen-suggest-funcs-unmemoize ()
@@ -136,9 +128,9 @@
               (call-interactively selsym)
             (call-function selsym))))))
 
-(define-key global-map (kbd "M-4 M-4") 'pen-suggest-funcs)
-(define-key global-map (kbd "<help> G") 'pen-suggest-funcs)
-(define-key global-map (kbd "M-4 >") (pen-lm (pen-find-thing 'pen-context-tuples)))
-(define-key global-map (kbd "M-4 M->") (pen-lm (pen-find-thing 'pen-context-tuples)))
+(define-key pen-map (kbd "M-4 M-4") 'pen-suggest-funcs)
+(define-key pen-map (kbd "<help> G") 'pen-suggest-funcs)
+(define-key pen-map (kbd "M-4 >") (pen-lm (pen-find-thing 'pen-context-tuples)))
+(define-key pen-map (kbd "M-4 M->") (pen-lm (pen-find-thing 'pen-context-tuples)))
 
 (provide 'pen-context)
