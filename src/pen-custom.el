@@ -29,6 +29,12 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-engines-directory (f-join user-emacs-directory "engines")
+  "Personal engine respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-glossaries-directory (f-join user-emacs-directory "glossaries")
   "Personal glossary respository"
   :type 'string

@@ -577,6 +577,13 @@
       (pen-prompt-file-load "$PROMPTS/funny-riddle.prompt"))
      "examples"))))
 
+(defvar pen-engines '()
+  "pen-engines are basically templates which will be merged with the corresponding prompts")
+
+(defun pen-load-engines (&optional paths)
+
+  )
+
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"

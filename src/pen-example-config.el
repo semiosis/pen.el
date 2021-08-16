@@ -106,6 +106,12 @@
       (setq pen-prompts-directory hostpromptsdir)
     (setq pen-prompts-directory (f-join user-emacs-directory "prompts"))))
 
+;; Personal engines repository
+(let ((hostenginesdir (f-join user-emacs-directory "host" "engines")))
+  (if (f-directory-p (f-join hostenginesdir "engines"))
+      (setq pen-engines-directory hostenginesdir)
+    (setq pen-engines-directory (f-join user-emacs-directory "engines"))))
+
 ;; Personal glossaries repository
 (let ((hostglossariesdir (f-join user-emacs-directory "host" "glossaries")))
   (if (f-directory-p (f-join hostglossariesdir "glossaries"))
