@@ -342,6 +342,11 @@
                     (str (or (pen-var-value-maybe 'n-completions)
                              ,n-completions))))
 
+                  (final-min-tokens
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'min-tokens)
+                             ,min-tokens))))
+
                   ;; The max tokens may be templated in via variable or even a subprompt
                   (final-max-tokens
                    (expand-template
@@ -437,6 +442,7 @@
                        `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
                          ("PEN_LM_COMMAND" ,,lm-command)
                          ("PEN_MODEL" ,final-model)
+                         ("PEN_MIN_TOKENS" ,final-min-tokens)
                          ("PEN_MAX_TOKENS" ,final-max-tokens)
                          ("PEN_TEMPERATURE" ,final-temperature)
                          ("PEN_MODE" ,final-mode)
@@ -716,9 +722,18 @@ Function names are prefixed with pf- for easy searching"
                         (n-test-runs (ht-get yaml "n-test-runs"))
 
                         ;; API
-                        (engine (ht-get yaml "engine"))
                         (model (ht-get yaml "model"))
+                        (min-tokens (ht-get yaml "min-tokens"))
                         (max-tokens (ht-get yaml "max-tokens"))
+                        (engine
+                         (let* ((engine-title (ht-get yaml "engine"))
+                                (engine (if (and
+                                             engine-title
+                                             pen-engines
+                                             (ht-get pen-engines engine-title)))))
+                           (if engine
+                               (setq yaml (ht-merge yaml engine)))
+                           engine-title))
                         (top-p (ht-get yaml "top-p"))
                         (top-k (ht-get yaml "top-k"))
                         (temperature (ht-get yaml "temperature"))
