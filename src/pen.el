@@ -174,17 +174,6 @@
       (tee (f-join penconfdir "last-final-prompt.txt") prompt))
   prompt)
 
-(defun test-subprompts ()
-  (interactive)
-  (let ((l (vector2list
-            (ht-get
-             (yamlmod-load (cat (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic.prompt")))
-             "subprompts"))))
-    (pen-etv
-     (pps
-      ;; (ht-merge (car l) (second l))
-      (ht->alist (-reduce 'ht-merge l))))))
-
 (defun test-template-newlines ()
   (interactive)
   (--> "\n"
@@ -546,6 +535,17 @@
 
     (pen-etv
      (pps keys))))
+
+(defun test-subprompts-2 ()
+  (interactive)
+  (let ((l (vector2list
+            (ht-get
+             (yamlmod-load (cat (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic.prompt")))
+             "subprompts"))))
+    (pen-etv
+     (pps
+      ;; (ht-merge (car l) (second l))
+      (ht->alist (-reduce 'ht-merge l))))))
 
 (defun pen-prompt-test-merge ()
   (mu

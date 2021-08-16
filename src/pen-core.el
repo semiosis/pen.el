@@ -6,7 +6,7 @@
 (defun pen-preceding-text ()
   (str (buffer-substring (point) (max 1 (- (point) 1000)))))
 
-(defun beginning-of-line-point ()
+(defun pen-beginning-of-line-point ()
   (save-excursion
     (beginning-of-line)
     (point)))
@@ -14,7 +14,7 @@
 (defun pen-preceding-text-line ()
   (cond
    (derived-mode-p 'term-mode))
-  (str (buffer-substring (point) (max 1 (beginning-of-line-point)))))
+  (str (buffer-substring (point) (max 1 (pen-beginning-of-line-point)))))
 
 (defun get-point-start-of-nth-previous-line (n)
   (save-excursion
