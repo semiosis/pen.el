@@ -122,6 +122,11 @@ git clone --depth 1 "https://github.com/syl20bnr/spacemacs"
 )
 
 (
+cd
+git clone --depth 1 "https://gitlab.com/rosie-pattern-language/rosie"
+)
+
+(
 cd "$EMACSD"
 test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
 )
