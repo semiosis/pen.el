@@ -2,14 +2,14 @@
 ;; I must start creating and get very good at emacs lisp.
 
 (defun rpl-at-line-p (rpl)
-  (let* ((output (chomp (sn (concat "rosie grep -o subs " (q rpl)) (thing-at-point 'line t))))
-         (matches (str2list output))
+  (let* ((output (chomp (pen-sn (concat "rosie grep -o subs " (pen-q rpl)) (thing-at-point 'line t))))
+         (matches (pen-str2list output))
          (n (length matches)))
     (and (not (string-empty-p output)) (> n 0))))
 
 (defun rpl-at-line (rpl)
-  (let* ((output (chomp (sn (concat "rosie grep -o subs " (q rpl)) (thing-at-point 'line t))))
-         (matches (str2list output)))
+  (let* ((output (chomp (pen-sn (concat "rosie grep -o subs " (pen-q rpl)) (thing-at-point 'line t))))
+         (matches (pen-str2list output)))
     matches))
 
 (defun string-at-point (&optional p)
@@ -18,18 +18,12 @@
 
 ;; (save-excursion (end-of-line)(point))
 (defun rpl-at-point (rpl)
-  (let* ((output (chomp (sn (concat "rosie grep -o subs " (q rpl)) (string-at-point))))
-         (matches (and (not (string-empty-p output)) (str2list output))))
+  (let* ((output (chomp (pen-sn (concat "rosie grep -o subs " (pen-q rpl)) (string-at-point))))
+         (matches (and (not (string-empty-p output)) (pen-str2list output))))
     matches))
 
 (defun rpl-at-point-p (rpl)
-  (< 0 (length (rpl-at-point rpl)))
-  ;; (let* ((output (chomp (sn (concat "rosie grep -o subs " (q rpl)) (thing-at-point 'sexp t))))
-  ;;        (matches (str2list output))
-  ;;        (n (length matches)))
-  ;;   (and (not (string-empty-p output)) (> n 0)))
-  )
-
+  (< 0 (length (rpl-at-point rpl))))
 
 ;; TODO Make it without the tree system first
 ;; Maybe the solution will fall out of that
@@ -45,13 +39,13 @@
 (df copy-email-here (xc (first (rpl-at-line "net.email"))))
 
 (defun buffer-cron-lines ()
-  (sor (snc "scrape \"((?:[0-9,/-]+|\\\\*)\\\\s+){4}(?:[0-9]+|\\\\*)\"" (buffer-string))))
+  (sor (pen-snc "scrape \"((?:[0-9,/-]+|\\\\*)\\\\s+){4}(?:[0-9]+|\\\\*)\"" (buffer-string))))
 
 (defun crontab-guru (tab)
   (interactive (list (fz (buffer-cron-lines) (if (selectionp) (my/thing-at-point)))))
   (let ((tab (sed "s/\\s\\+/_/g" tab)))
     ;; (chrome (concat "https://crontab.guru/#" tab))
-    (etv (sed "s/^\"//;s/\"$//" (scrape "\"[^\"]*\"" (snc (concat "elinks-dump-chrome " (q (concat "https://crontab.guru/#" tab)))))))))
+    (etv (sed "s/^\"//;s/\"$//" (scrape "\"[^\"]*\"" (pen-snc (concat "elinks-dump-chrome " (pen-q (concat "https://crontab.guru/#" tab)))))))))
 
 
 (defun my-start-process (command)
@@ -80,7 +74,7 @@
        ,(dff (eww (concat "http://reddit.com/" (regex-at-point-p "r/[a-z]+")))))
       (((major-mode-p 'eww-mode))
        (eww-open-browsh))
-      (((string-equal "Haskell" (snc "onefetch --output json | jq -r \".dominantLanguage\"")))
+      (((string-equal "Haskell" (pen-snc "onefetch --output json | jq -r \".dominantLanguage\"")))
        ,(list (dff (sps "ghcid"))))
       (((or (string-match-p "/glossary.txt$" (or (get-path-nocreate) ""))
             (string-match-p "/home/shane/glossaries/.*\\.txt$" (or (get-path-nocreate) ""))))
