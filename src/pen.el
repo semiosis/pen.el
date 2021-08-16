@@ -655,6 +655,8 @@ Function names are prefixed with pf- for easy searching"
   (setq pen-prompt-functions-meta nil)
   (setq pen-prompt-functions-failed nil)
 
+  (pen-load-engines)
+
   (noupd
    (eval
     `(let ((paths
@@ -1115,8 +1117,8 @@ Function names are prefixed with pf- for easy searching"
 (defun pen-complete-function (preceding-text &rest args)
   (if (and (derived-mode-p 'prog-mode)
            (not (string-equal (buffer-name) "*scratch*")))
-      (eval `(pf-generic-file-type-completion (pen-detect-language) preceding-text ,@args))
-    (eval `(pf-generic-completion-50-tokens preceding-text ,@args))))
+      (eval `(pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args))
+    (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
 
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
