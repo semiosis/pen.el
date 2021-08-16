@@ -92,7 +92,6 @@
                     '()))))
 
     (cl-loop for f in context-pred-funcs do (ignore-errors (memoize-restore f)))
-    ;; (etv (pps suggestions))
     (remove nil (-distinct (-flatten suggestions)))))
 
 (defun pen-suggest-funcs ()
