@@ -139,6 +139,12 @@
             r))
      code)))
 
+(defun pen-ask (thing &optional prompt)
+  (interactive)
+  (read-string-hist (or prompt
+                        (concat "pen-ask: "))
+                    thing))
+
 (cl-defun pen-topic (&optional short semantic-only &key no-select-result)
   "Determine the topic used for pen functions"
   (interactive)

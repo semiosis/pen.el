@@ -20,7 +20,7 @@
                  (list s)))
   (deactivate-mark)
   (if (not definition)
-      (setq definition (lm-define term t (pen-topic t))))
+      (setq definition (lm-define term t (pen-ask (pen-topic t) "topic: "))))
 
   (let* ((cb (current-buffer))
          (all-glossaries-fp (pen-mnm (pen-list2str (pen-list-glossary-files))))
