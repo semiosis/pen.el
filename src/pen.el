@@ -653,6 +653,7 @@ Function names are prefixed with pf- for easy searching"
   (setq pen-prompt-filter-functions nil)
   (setq pen-prompt-completion-functions nil)
   (setq pen-prompt-functions-meta nil)
+  (setq pen-prompt-functions-failed nil)
 
   (noupd
    (eval
@@ -660,7 +661,6 @@ Function names are prefixed with pf- for easy searching"
             (or ,paths
                 (-non-nil
                  (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))))
-       (setq pen-prompt-functions-failed '())
        (cl-loop for path in paths do
                 (message (concat "pen-mode: Loading .prompt file " path))
 
@@ -672,7 +672,11 @@ Function names are prefixed with pf- for easy searching"
                  (let* ((yaml (pen-prompt-file-load path))
 
                         ;; function
+                        (task-ink (ht-get yaml "task"))
+                        (task (ink-decode task-ink))
                         (title (ht-get yaml "title"))
+                        (title (sor title
+                                    task))
                         (title-slug (slugify title))
                         (aliases (vector2list (ht-get yaml "aliases")))
                         (alias-slugs (mapcar 'intern (mapcar (lambda (s) (concat pen-prompt-function-prefix s)) (mapcar 'slugify aliases))))
@@ -781,6 +785,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
                                 (if aims (concat "\naims:" (pen-list-to-orglist aims)))
                                 (if model (concat "\nmodel: " model))
+                                (if task (concat "\ntask: " task))
                                 (if notes (concat "\nnotes:" (pen-list-to-orglist notes)))
                                 (if filter (concat "\nfilter: on"))
                                 (if completion (concat "\ncompletion: on"))

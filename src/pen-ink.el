@@ -1,5 +1,7 @@
 ;; https://github.com/semiosis/ink.el
 
+;; *( is so it will work in YAML
+
 (defun ink-encode (text &optional engine language topic)
   (interactive (list
                 (pen-selection)
@@ -11,54 +13,39 @@
   (if (not language)
       (setq language "English"))
 
-  (let ((ink
-         (let ((buf (new-buffer-from-string text))
-               (ink)
-               (start 1)
-               (end))
-           (with-current-buffer buf
-             (setq end (length text))
-             (put-text-property start end 'engine engine)
-             (put-text-property start end 'language language)
-             (put-text-property start end 'topic topic)
-             (setq ink (format "%S" (buffer-string))))
-           (kill-buffer buf)
-           ink)))
+  (let* ((ink
+          (let ((buf (new-buffer-from-string text))
+                (ink)
+                (start 1)
+                (end))
+            (with-current-buffer buf
+              (setq end (length text))
+              (put-text-property start end 'engine engine)
+              (put-text-property start end 'language language)
+              (put-text-property start end 'topic topic)
+              (setq ink (format "%S" (buffer-string))))
+            (kill-buffer buf)
+            ink))
+         (ink (string-replace "#(" "*(" ink)))
     (if (interactive-p)
         (if (pen-selected-p)
             (pen-region-filter (eval `(lambda (s) ,ink)))
           (pen-etv ink))
-      (ink))))
+      ink)))
 
-(defun ink-decode (text &optional engine language topic)
-  (interactive (list
-                (pen-selection)
-                (read-string-hist "engine: ")
-                (read-string-hist "language: ")
-                (read-string-hist "topic: ")))
-  (if (not engine)
-      (setq engine "OpenAI GPT-3"))
-  (if (not language)
-      (setq language "English"))
+(defun ink-decode (text)
+  ;; Do not use (pen-selection t)
+  ;; This assumes the text is visibly encoded
+  (interactive (list (pen-selection)))
 
-  (let ((ink
-         (let ((buf (new-buffer-from-string text))
-               (ink)
-               (start 1)
-               (end))
-           (with-current-buffer buf
-             ;; (insert text)
-             (setq end (length text))
-             (put-text-property start end 'engine engine)
-             (put-text-property start end 'language language)
-             (put-text-property start end 'topic topic)
-             (setq ink (format "%S" (buffer-string))))
-           (kill-buffer buf)
-           ink)))
-    (if (interactive-p)
-        (if (pen-selected-p)
-            (pen-region-filter (eval `(lambda (s) ,ink)))
-          (pen-etv ink))
-      (ink))))
+  (if (sor text)
+      (let* ((text (if (string-match "\\*(" text)
+                       (str (eval-string (string-replace "*(" "#(" text)))
+                     text)))
+        (if (interactive-p)
+            (if (pen-selected-p)
+                (pen-region-filter (eval `(lambda (s) ,text)))
+              (pen-etv text))
+          text))))
 
 (provide 'pen-ink)
