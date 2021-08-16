@@ -25,41 +25,20 @@
 (defun rpl-at-point-p (rpl)
   (< 0 (length (rpl-at-point rpl))))
 
-;; TODO Make it without the tree system first
-;; Maybe the solution will fall out of that
-
-;; (rpl-at-point-p "net.ipv4")
-
-;; TODO Create some problog predicates
-;; TODO Create some predicates based on NLP parsers that look for things like sentiment
-
-;; Here is an IP address 192.168.1.1
-
 (df copy-ip-here (xc (first (rpl-at-point "net.ipv4"))))
 (df copy-email-here (xc (first (rpl-at-line "net.email"))))
 
 (defun buffer-cron-lines ()
-  (sor (pen-snc "scrape \"((?:[0-9,/-]+|\\\\*)\\\\s+){4}(?:[0-9]+|\\\\*)\"" (buffer-string))))
+  (sor (pen-snc "pen-scrape \"((?:[0-9,/-]+|\\\\*)\\\\s+){4}(?:[0-9]+|\\\\*)\"" (buffer-string))))
 
 (defun crontab-guru (tab)
-  (interactive (list (fz (buffer-cron-lines) (if (selectionp) (my/thing-at-point)))))
-  (let ((tab (sed "s/\\s\\+/_/g" tab)))
-    ;; (chrome (concat "https://crontab.guru/#" tab))
-    (etv (sed "s/^\"//;s/\"$//" (scrape "\"[^\"]*\"" (pen-snc (concat "elinks-dump-chrome " (pen-q (concat "https://crontab.guru/#" tab)))))))))
-
-
-(defun my-start-process (command)
-  (interactive (list (read-string-hist "command: ")))
-  (with-current-buffer
-      (switch-to-buffer command)
-    (start-process
-     command
-     (current-buffer)
-     command)))
+  (interactive (list (fz (buffer-cron-lines) (if (selected-p) (pen-thing-at-point)))))
+  (let ((tab (pen-sed "s/\\s\\+/_/g" tab)))
+    (etv (pen-sed "s/^\"//;s/\"$//" (pen-scrape "\"[^\"]*\"" (pen-snc (concat "elinks-dump-chrome " (pen-q (concat "https://crontab.guru/#" tab)))))))))
 
 ;; I should probably redesign this
 (progn
-  (defset context-tuples
+  (defset pen-context-tuples
     `((((major-mode-p 'emacs-lisp-mode)
         (rpl-at-point-p "net.ipv4"))
        (copy-ip-here))
@@ -79,14 +58,6 @@
       (((or (string-match-p "/glossary.txt$" (or (get-path-nocreate) ""))
             (string-match-p "/home/shane/glossaries/.*\\.txt$" (or (get-path-nocreate) ""))))
        (reload-glossary-and-generate-buttons))
-      (((f-directory-p ".git"))
-       ;; This wont work
-       ;; (compile "git-convert-master-to-main")
-       ;; writing 'list' is needed because an invocation is required, not a symbol
-       ,(list (dff (my-start-process "git-convert-master-to-main"))
-              ;; This doesn't work
-              ;; (dff (call-process "git-convert-master-to-main"))
-              ))
       (((or (major-mode-p 'org-mode)
             (major-mode-p 'text-mode)
             (major-mode-p 'markdown-mode))
@@ -122,17 +93,10 @@
         github1s
         chrome-github-actions))
       (((vc-url))
-       (chrome-git-url))
-      ;; (((or (major-mode-p 'python-mode)
-      ;;       (major-mode-p 'text-mode)))
-      ;;  (reload-glossary-reopen-and-generate-buttons))
-      ))
+       (chrome-git-url))))
   (setq context-preds '())
   (setq context-pred-funcs '())
-  (setq context-tuples-compiled '())
-
-  ;; (build-context-functions)
-  )
+  (setq context-tuples-compiled '()))
 
 ;; Defining a function this way is not optimal
 (defalias 'context-func-for-expression
@@ -140,26 +104,26 @@
 
 ;; (context-func-for-expression '(message "yo"))
 
-(defun compile-context-tuple (context-tuple)
+(defun pen-compile-context-tuple (context-tuple)
   (let ((pred-funcs (mapcar 'context-func-for-expression (car context-tuple))))
     ;; A list of functions and a list of calls
     (list pred-funcs (-drop 1 context-tuple))))
 
-(defun build-context-functions ()
+(defun pen-build-context-functions ()
   (interactive)
-  (setq context-preds (-distinct (flatten-once (cl-loop for tup in context-tuples collect (car tup)))))
+  (setq context-preds (-distinct (flatten-once (cl-loop for tup in pen-context-tuples collect (car tup)))))
 
   ;; Go through and make functions first -- a little unnecessary
   (setq context-pred-funcs (cl-loop for pred in context-preds collect (context-func-for-expression pred)))
 
-  (setq context-tuples-compiled (cl-loop for tup in context-tuples collect (compile-context-tuple tup))))
-(build-context-functions)
+  (setq context-tuples-compiled (cl-loop for tup in pen-context-tuples collect (pen-compile-context-tuple tup))))
+(pen-build-context-functions)
 
-(defun suggest-funcs-unmemoize ()
+(defun pen-suggest-funcs-unmemoize ()
   (interactive)
   (cl-loop for f in context-pred-funcs do (ignore-errors (memoize-restore f))))
 
-(defun suggest-funcs-collect ()
+(defun pen-suggest-funcs-collect ()
   (cl-loop for f in context-pred-funcs do (ignore-errors (memoize-orig f)))
 
   (let ((suggestions
@@ -173,10 +137,9 @@
     ;; (etv (pps suggestions))
     (remove nil (-distinct (-flatten suggestions)))))
 
-(defun suggest-funcs ()
+(defun pen-suggest-funcs ()
   (interactive)
-  ;; (suggest-funcs-collect)
-  (let* ((fz-input (suggest-funcs-collect))
+  (let* ((fz-input (pen-suggest-funcs-collect))
          (sel (if fz-input
                   (fz fz-input nil nil "suggest-funcs: "))))
     (if sel
@@ -185,10 +148,9 @@
               (call-interactively selsym)
             (call-function selsym))))))
 
-(define-key global-map (kbd "M-4 M-4") 'suggest-funcs)
-(define-key global-map (kbd "<help> G") 'suggest-funcs)
-(define-key global-map (kbd "M-4 >") (lm (find-thing 'context-tuples)))
-(define-key global-map (kbd "M-4 M->") (lm (find-thing 'context-tuples)))
-
+(define-key global-map (kbd "M-4 M-4") 'pen-suggest-funcs)
+(define-key global-map (kbd "<help> G") 'pen-suggest-funcs)
+(define-key global-map (kbd "M-4 >") (lm (find-thing 'pen-context-tuples)))
+(define-key global-map (kbd "M-4 M->") (lm (find-thing 'pen-context-tuples)))
 
 (provide 'pen-context)

@@ -939,4 +939,18 @@ when s is a string, set the clipboard to s"
       (setq lang (language-detection-string (buffer-string))))
   (pen-set-major-mode (concat (str lang) "-mode")))
 
+(defmacro df (name &rest body)
+  "Named interactive lambda with no arguments"
+  `(defun ,name ()
+     (interactive)
+     ,@body))
+
+(defun pen-sed (command stdin)
+  "wrapper around sed"
+  (interactive)
+  (setq stdin (str stdin))
+
+  (setq command (concat "sed '" (str command) "'"))
+  (pen-sn command stdin))
+
 (provide 'pen-support)
