@@ -55,10 +55,16 @@ pip3 install problog
 
 mkdir -p /root/org-roam
 
+# test -d "huggingface.el" || git clone --depth 1 "http://github.com/mullikine/huggingface.el"
+
 (
 cd "$EMACSD"
 test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
 test -d engines || git clone --depth 1 "https://github.com/semiosis/engines"
+test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
+test -d "ink.el" || git clone --depth 1 "https://github.com/semiosis/ink.el"
+test -d "openai-api.el" || git clone --depth 1 "https://github.com/semiosis/openai-api.el"
+test -d "pen-contrib.el" || git clone --depth 1 "https://github.com/semiosis/pen-contrib.el"
 test -d glossaries || git clone --depth 1 "https://github.com/semiosis/glossaries"
 test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
@@ -132,26 +138,6 @@ git clone --depth 1 "https://gitlab.com/rosie-pattern-language/rosie"
 cd rosie
 make
 make install
-)
-
-(
-cd "$EMACSD"
-test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
-)
-
-(
-cd "$EMACSD"
-test -d "openai-api.el" || git clone --depth 1 "https://github.com/semiosis/openai-api.el"
-)
-
-(
-cd "$EMACSD"
-test -d "huggingface.el" || git clone --depth 1 "http://github.com/mullikine/huggingface.el"
-)
-
-(
-cd "$EMACSD"
-test -d "pen-contrib.el" || git clone --depth 1 "https://github.com/semiosis/pen-contrib.el"
 )
 
 (
