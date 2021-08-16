@@ -1,0 +1,12 @@
+#!/bin/bash
+
+pat="$1"
+pathpat="$2"
+
+{
+if test -n "$pathpat"; then
+    find . -type f -name "${pathpat}" -exec cat1 {} \;
+else
+    find . -type f -exec cat1 {} \;
+fi
+} | pen-scrape "$pat"

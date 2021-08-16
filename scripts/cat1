@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# used just like cat except it guarantees a newline at the end of each
+# file given
+
+exec 0</dev/null
+
+for f in "$@"
+do
+    if test -f "$f"; then   
+        cat "$f" | awk 1
+    fi
+done

@@ -1,0 +1,51 @@
+#!/bin/bash
+export TTY
+
+# cd "$MYGIT/simuons/rules_clojure"; scrape "bazel.*" .
+
+# * PCRE lookaround
+# | q(?!u) | u does not follow q  |
+# | q(?=u) | u follows q          |
+# | (?!a)b | a does not precede b |
+# | (?=a)b | a precedes b         |
+
+# elinks-dump "https://ahrefs.com/blog/google-advanced-search-operators/" | scrape '[a-z-]+:(?!$)(?=[^ ]|$)' | sort | uniq | v
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -r) {
+        recursive_search=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$recursive_search" = "y"; then
+    pen-scrape-r "$@"
+    exit $?
+fi
+
+if test "$#" -eq 2; then
+    if test -f "$2"; then
+        test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+
+        cat "$2" | pen-scrape "$@"
+    elif test -d "$2"; then
+        test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+
+        find . -type f -exec cat {} \; | pen-scrape "$@"
+    fi
+    exit $?
+fi
+
+{
+if test "$#" -eq "1"; then
+    # grep -Po "$1"
+    scrape-words-from-string.pl -r "$1"
+else
+    # grep -Po "$1"
+    scrape-words-from-string.pl
+fi
+} | sed '/^$/d'
