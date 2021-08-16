@@ -55,7 +55,7 @@ pip3 install problog
 
 mkdir -p /root/org-roam
 
-# test -d "huggingface.el" || git clone --depth 1 "http://github.com/mullikine/huggingface.el"
+# test -d "huggingface.el" || git clone --depth 1 "http://github.com/semiosis/huggingface.el"
 
 (
 cd "$EMACSD"
