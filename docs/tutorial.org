@@ -454,14 +454,14 @@ to transform the prompt before sending to the
 Prompt functions automatically 'curry' when
 you leave out their arguments.
 
-Here is an example, =pf-translate-from-world-language-x-to-y=:
+Here is an example, =pf-translate-from-world-language-x-to-y/3=:
 
 #+BEGIN_SRC text -n :async :results verbatim code
-  pf-translate-from-world-language-x-to-y is an interactive function
+  pf-translate-from-world-language-x-to-y/3 is an interactive function
   defined in pen-example-config.el.
 
   Signature
-  (pf-translate-from-world-language-x-to-y &optional FROM-LANGUAGE TO-LANGUAGE PHRASE)
+  (pf-translate-from-world-language-x-to-y/3 &optional FROM-LANGUAGE TO-LANGUAGE PHRASE)
 
   Documentation
   Translate from world language X to Y
@@ -495,7 +495,7 @@ the user for input.
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
   ;; Leave out all arguments to be prompted for each argument
-  (pf-translate-from-world-language-x-to-y)
+  (pf-translate-from-world-language-x-to-y/3)
 #+END_SRC
 
 The following default functions / expressions
@@ -516,7 +516,7 @@ as the first parameter, but the others will be
 requested.
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (pf-translate-from-world-language-x-to-y "French")
+  (pf-translate-from-world-language-x-to-y/3 "French")
 #+END_SRC
 
 #+BEGIN_SRC text -n :async :results verbatim code

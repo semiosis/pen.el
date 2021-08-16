@@ -856,7 +856,7 @@ when s is a string, set the clipboard to s"
               (concat " in the context of " topic)
             ""))
          (def
-          (pf-define-word (concat term final-topic))))
+          (pf-define-word/1 (concat term final-topic))))
 
     (if (sor def)
         (progn
@@ -889,7 +889,7 @@ when s is a string, set the clipboard to s"
 (defun pen-extract-keywords ()
   (interactive)
 
-  (pen-etv (pps (pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t))))
+  (pen-etv (pps (pen-single-generation (pf-keyword-extraction/1 (pen-selected-text) :no-select-result t))))
   ;; (nbfs
   ;;  (pps
   ;;   (str2lines
@@ -897,8 +897,8 @@ when s is a string, set the clipboard to s"
   ;;     (concat
   ;;      "printf -- '%s\n' "
   ;;      ;; It doesn't always generate keywords, so it's not very reliable
-  ;;      (pen-single-generation (pf-keyword-extraction (pen-selected-text) :no-select-result t))
-  ;;      ;; (pf-keyword-extraction (pen-selected-text) :no-select-result t)
+  ;;      (pen-single-generation (pf-keyword-extraction/1 (pen-selected-text) :no-select-result t))
+  ;;      ;; (pf-keyword-extraction/1 (pen-selected-text) :no-select-result t)
   ;;      )))))
   ;; nil 'emacs-lisp-mode
   )

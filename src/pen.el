@@ -220,7 +220,7 @@
 ;;  temperature top-p model no-trim-start no-trim-end preprocessors
 ;;  postprocessor prompt-filter n-completions)
 ;; (let ((max-tokens 1)) (funcall (cl-defun yo () (pen-etv max-tokens))))
-;; (let ((max-tokens 1)) (funcall 'pf-asktutor "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
+;; (let ((max-tokens 1)) (funcall 'pf-asktutor/3 "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
 (defun define-prompt-function ()
   (eval
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result))
@@ -679,7 +679,6 @@ Function names are prefixed with pf- for easy searching"
                                     task))
                         (title-slug (slugify title))
                         (aliases (vector2list (ht-get yaml "aliases")))
-                        (alias-slugs (mapcar 'intern (mapcar (lambda (s) (concat pen-prompt-function-prefix s)) (mapcar 'slugify aliases))))
 
                         ;; lm-complete
                         (cache (pen-yaml-test yaml "cache"))
@@ -810,8 +809,12 @@ Function names are prefixed with pf- for easy searching"
                                ;; Add to the function definition the prettify key if the .prompt file specifies a prettifier
                                (setq ss (append ss '(&key prettify))))
                            ss))
-                        (func-name (concat pen-prompt-function-prefix title-slug))
+                        (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length vars))))
                         (func-sym (intern func-name))
+                        (alias-slugs (mapcar 'intern
+                                             (mapcar
+                                              (lambda (s) (concat pen-prompt-function-prefix s "/" (str (length vars))))
+                                              (mapcar 'slugify aliases))))
                         (iargs
                          (let ((iteration 0))
                            (cl-loop

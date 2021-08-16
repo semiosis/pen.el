@@ -39,10 +39,10 @@
 
 (defset pen-company-all-backends
   '(
-    ;; pf-generic-file-type-completion
-    ;; pf-generic-completion-200-tokens-max
-    ;; pf-generic-completion-50-tokens
-    ;; pf-shell-bash-terminal-command-completion
+    ;; pf-generic-file-type-completion/2
+    ;; pf-generic-completion-200-tokens-max/1
+    ;; pf-generic-completion-50-tokens/1
+    ;; pf-shell-bash-terminal-command-completion/1
     pen-company-filetype
     company-complete
     company-tabnine

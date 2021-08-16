@@ -113,7 +113,7 @@ selection. If you leave it out it will ask you
 to select one of the results.
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (message (car (pf-asktutor "emacs" "key bindings" "How do I quit?" :no-select-result t)))
+  (message (car (pf-asktutor/3 "emacs" "key bindings" "How do I quit?" :no-select-result t)))
 #+END_SRC
 
 GPT models can automate emacs by combining
@@ -125,7 +125,7 @@ You could even try to play tetris, or with a rubiks cube.
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
   ;; hypothetical example
-  (message (scrape "(Right|Left)" (car (pf-asktutor "tetris" "strategies" "Should I place the L brick right?" :no-select-result t))))
+  (message (scrape "(Right|Left)" (car (pf-asktutor/3 "tetris" "strategies" "Should I place the L brick right?" :no-select-result t))))
 #+END_SRC
 
 The following is an example of asking about VSCode.
@@ -135,7 +135,7 @@ offline and in private if you have the storage
 capacity, memory and video card memory to run them.
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim raw
-  (list2str (pen-long-complete (pf-asktutor "vscode" "packages" "What are some useful packages?" :no-select-result t)))
+  (list2str (pen-long-complete (pf-asktutor/3 "vscode" "packages" "What are some useful packages?" :no-select-result t)))
 #+END_SRC
 
 #+RESULTS:
@@ -171,7 +171,7 @@ and =max-tokens= for any prompt function.
 
 *** Then run a prompt function
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  pen -e '(car (pf-list-of 5 "tennis players" :no-select-result t))'
+  pen -e '(car (pf-list-of/2 5 "tennis players" :no-select-result t))'
 #+END_SRC
 
 #+RESULTS:

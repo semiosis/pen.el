@@ -19,7 +19,7 @@
 
 ;; (pen-get-one-example-of "car manufacturer")
 (defun pen-get-one-example-of (thing-type)
-  (car (pf-list-of "1" thing-type :no-select-result t)))
+  (car (pf-list-of/2 "1" thing-type :no-select-result t)))
 
 (defun pen-save-prompt (prompt-plist)
   ;; (json-encode-alist)
@@ -101,7 +101,7 @@ The last element in the list is the output/return value"
                                  (pen-get-one-example-of (car args))
                                  n-generate)))
           (setq examples
-                (mapcar 'list (pf-list-of "1" (car args) :no-select-result t)))))
+                (mapcar 'list (pf-list-of/2 "1" (car args) :no-select-result t)))))
 
     ;; (pen-etv (pps examples))
     ;; Add outputs to examples if there is a filter

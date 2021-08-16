@@ -114,7 +114,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (defun pen-translate (&optional phrase)
   (interactive)
-  (pen-etv (pf-translate-from-world-language-x-to-y phrase)))
+  (pen-etv (pf-translate-from-world-language-x-to-y/3 phrase)))
 
 (defun pen-asktutor ()
 
@@ -122,29 +122,29 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
-        ("translate" :call pf-translate-from-world-language-x-to-y)
-        ("transpile" :call pf-transpile-from-programming-language-x-to-y)
-        ("explain error" :call pf-explain-error)
+        ("translate" :call pf-translate-from-world-language-x-to-y/3)
+        ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
+        ("explain error" :call pf-explain-error/3)
         ("prose"
          ("Cancel" :call identity-command)
-         ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic)
-         ("translate" :call pf-translate-from-world-language-x-to-y :if (pen-selected-p))
-         ("paraphrase" :call pf-paraphrase :if (pen-selected-p))
-         ("tldr" :call pf-tldr-summarization :if (pen-selected-p))
-         ("eli5" :call pf-eli5-explain-like-i-m-five :if (pen-selected-p))
-         ("correct grammar" :call pf-correct-grammar :if (pen-selected-p))
-         ("correct grammar 2" :call pf-correct-grammar-2 :if (pen-selected-p))
-         ("vexate" :call pf-complicated-explanation-of-how-to-x :if (pen-selected-p))
-         ("correct English spelling and grammar" :call pf-correct-english-spelling-and-grammar :if (pen-selected-p))
+         ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
+         ("translate" :call pf-translate-from-world-language-x-to-y/3 :if (pen-selected-p))
+         ("paraphrase" :call pf-paraphrase/1 :if (pen-selected-p))
+         ("tldr" :call pf-tldr-summarization/1 :if (pen-selected-p))
+         ("eli5" :call pf-eli5-explain-like-i-m-five/1 :if (pen-selected-p))
+         ("correct grammar" :call pf-correct-grammar/1 :if (pen-selected-p))
+         ("correct grammar 2" :call pf-correct-grammar-2/1 :if (pen-selected-p))
+         ("vexate" :call pf-complicated-explanation-of-how-to-x/1 :if (pen-selected-p))
+         ("correct English spelling and grammar" :call pf-correct-english-spelling-and-grammar/1 :if (pen-selected-p))
          ("define term" :call pen-define :if (pen-selected-p))
-         ("bullet points -> first-hand account" :call pf-meeting-bullet-points-to-summary :if (pen-selected-p)))
+         ("bullet points -> first-hand account" :call pf-meeting-bullet-points-to-summary/1 :if (pen-selected-p)))
         ("code"
          ("Cancel" :call identity-command)
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
-         ("transpile" :call pf-transpile-from-programming-language-x-to-y)
-         ("add comments" :call pf-annotate-code-with-commentary)
-         ("generate from description" :call pf-code-generator-from-description)
-         ("generate regex for above" :call pf-gpt-j-generate-regex))
+         ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
+         ("add comments" :call pf-annotate-code-with-commentary/2)
+         ("generate from description" :call pf-code-generator-from-description/1)
+         ("generate regex for above" :call pf-gpt-j-generate-regex/2))
         ("> word/term" :call rcm-term :if (pen-word-clickable))
         ("keywords/classify" :call pen-extract-keywords)
         ("define for glossary" :call pen-add-to-glossary)))
@@ -168,7 +168,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (def-right-click-menu rcm-term
   '(("Cancel" :call identity-command)
-    ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic :if (pen-word-clickable))
+    ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1 :if (pen-word-clickable))
     ("define word" :call pen-define :if (pen-word-clickable))))
 
 (define-key pen-map (kbd "H-m") 'right-click-context-menu)

@@ -51,7 +51,7 @@
     (pen-snc "sed -z -e 's/\\s\\+/ /g' -e 's/^\\s*//' -e 's/\\s*$//'"
              (pen-snc "pen-c context-chars" context))
     ;; (car
-    ;;  (pf-correct-english-spelling-and-grammar
+    ;;  (pf-correct-english-spelling-and-grammar/1
     ;;   (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-snc "pen-c context-chars" context))
     ;;   :no-select-result t))
     ))
@@ -116,7 +116,7 @@
                            (pen-selected-text t)
                            (pen-preceding-text))))
              (if context
-                 (pf-get-language
+                 (pf-get-language/1
                   context
                   :no-select-result t)))
            (list (pen-detect-language t)

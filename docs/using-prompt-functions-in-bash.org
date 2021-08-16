@@ -16,12 +16,12 @@
 #+END_SRC
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  penh pf-code-one-liners-from-natural-language
+  penh pf-code-one-liners-from-natural-language/2
 #+END_SRC
 
 #+RESULTS:
 #+begin_src bash
-(pf-code-one-liners-from-natural-language &optional LANGUAGE TASK &key NO-SELECT-RESULT)
+(pf-code-one-liners-from-natural-language/2 &optional LANGUAGE TASK &key NO-SELECT-RESULT)
 #+end_src
 
 #+BEGIN_EXPORT html
@@ -33,7 +33,7 @@
 
 ** Caching is default
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  pene '(car (pf-list-of 7 "tennis players" :no-select-result t))'
+  pene '(car (pf-list-of/2 7 "tennis players" :no-select-result t))'
 #+END_SRC
 
 #+RESULTS:
@@ -63,7 +63,7 @@ You may use =pene= (or =pen -e=) and specify
 (=pen -u=) which has a default =pen-update=.
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  pene '(car (pen-update (pf-list-of 7 "tennis players" :no-select-result t)))'
+  pene '(car (pen-update (pf-list-of/2 7 "tennis players" :no-select-result t)))'
 #+END_SRC
 
 #+RESULTS:
@@ -78,7 +78,7 @@ Ivo Karlović
 #+end_src
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  penu '(car (pf-list-of 7 "tennis players" :no-select-result t))'
+  penu '(car (pf-list-of/2 7 "tennis players" :no-select-result t))'
 #+END_SRC
 
 #+RESULTS:
@@ -101,7 +101,7 @@ Steffi Graf
 
 ** You may also use prompt functions this way
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  pen pf-nlsh "arch linux" "install python package"
+  pen pf-nlsh/2 "arch linux" "install python package"
 #+END_SRC
 
 #+RESULTS:
@@ -114,7 +114,7 @@ Another way to update is to prefix =upd=.
 I'm going to deliberately request an ambiguous command "open an image".
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  upd pen pf-nlsh "arch linux" "open an image"
+  upd pen pf-nlsh/2 "arch linux" "open an image"
 #+END_SRC
 
 #+RESULTS:
@@ -129,7 +129,7 @@ eog foo.png
 You may also use the =UPDATE= environment variable.
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  UPDATE=y pen pf-nlsh "arch linux" "open an image"
+  UPDATE=y pen pf-nlsh/2 "arch linux" "open an image"
 #+END_SRC
 
 #+RESULTS:
