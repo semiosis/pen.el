@@ -53,15 +53,7 @@
       (((minor-mode-p subnetscan-tablist-mode))
        (server-suggest-subnet-scan))
       (((org-brain-headline-at-point))
-       (org-brain-this-headline-to-file))
-      (((string-match-p "/README.\\(md\\|org\\)$" (or (get-path-nocreate) "")))
-       (license-templates-new-file))
-      (((github-url))
-       (github-surf
-        github1s
-        chrome-github-actions))
-      (((vc-url))
-       (chrome-git-url))))
+       (org-brain-this-headline-to-file))))
   (setq context-preds '())
   (setq context-pred-funcs '())
   (setq context-tuples-compiled '()))
@@ -128,9 +120,13 @@
               (call-interactively selsym)
             (call-function selsym))))))
 
-(define-key pen-map (kbd "M-4 M-4") 'pen-suggest-funcs)
-(define-key pen-map (kbd "<help> G") 'pen-suggest-funcs)
-(define-key pen-map (kbd "M-4 >") (pen-lm (pen-find-thing 'pen-context-tuples)))
-(define-key pen-map (kbd "M-4 M->") (pen-lm (pen-find-thing 'pen-context-tuples)))
+(defun edit-pen-context ()
+  (interactive)
+  (pen-find-thing 'pen-context-tuples))
+
+(define-key pen-map (kbd "H-TAB t") 'pen-suggest-funcs)
+(define-key pen-map (kbd "<H-tab> t") 'pen-suggest-funcs)
+(define-key pen-map (kbd "H-TAB T") 'edit-pen-context)
+(define-key pen-map (kbd "<H-tab> T") 'edit-pen-context)
 
 (provide 'pen-context)
