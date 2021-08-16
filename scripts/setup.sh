@@ -50,6 +50,9 @@ agi neovim
 
 agi tmux
 
+agi swi-prolog-nox
+pip3 install problog
+
 mkdir -p /root/org-roam
 
 (
