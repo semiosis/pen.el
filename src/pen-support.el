@@ -104,6 +104,12 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   (pen-message-no-echo "%s\\n" s)
   s)
 
+(defun pen-alist-setcdr (alist-symbol key value)
+  "Set KEY to VALUE in alist ALIST-SYMBOL."
+  (set alist-symbol
+       (cons (cons key value)
+             (assq-delete-all key (eval alist-symbol)))))
+
 (defun pen-write-to-file (stdin file_path)
   (ignore-errors (with-temp-buffer
                    (insert stdin)

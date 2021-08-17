@@ -6,16 +6,31 @@
 ;; but the differentiation serves no useful
 ;; purpose.
 
-(defun ink-encode (text &optional engine language topic)
-  (interactive (list
-                (pen-selection)
-                (read-string-hist "engine: ")
-                (read-string-hist "language: ")
-                (read-string-hist "topic: ")))
-  (if (not engine)
-      (setq engine "OpenAI GPT-3"))
-  (if (not language)
-      (setq language "English"))
+(defun ink-encode (text &optional data)
+  (interactive (list (pen-selection) pen-last-prompt-data))
+
+  (let* ((text (or
+                text
+                (pen-selection)))
+         (data (or data
+                   pen-last-prompt-data)))
+
+    (if (interactive-p)
+        (progn
+          (pen-alist-setcdr
+           'data "PEN_ENGINE"
+           (read-string-hist "engine: " (cdr (assoc "PEN_ENGINE" data))))
+          (pen-alist-setcdr
+           'data "PEN_LANGUAGE"
+           (read-string-hist "language: " (cdr (assoc "PEN_LANGUAGE" data))))
+          (pen-alist-setcdr
+           'data "PEN_TOPIC"
+           (read-string-hist "topic: " (cdr (assoc "PEN_TOPIC" data)))))))
+
+  (if (not (cdr (assoc "PEN_ENGINE" data)))
+      (pen-alist-setcdr 'data "PEN_ENGINE" "OpenAI GPT-3"))
+  (if (not (cdr (assoc "PEN_LANGUAGE" data)))
+      (pen-alist-setcdr 'data "PEN_LANGUAGE" "English"))
 
   (let* ((ink
           (let ((buf (new-buffer-from-string text))
@@ -24,9 +39,11 @@
                 (end))
             (with-current-buffer buf
               (setq end (length text))
-              (put-text-property start end 'engine engine)
-              (put-text-property start end 'language language)
-              (put-text-property start end 'topic topic)
+              (loop for p in data do
+                    (let ((key (car p))
+                          (val (cdr p)))
+                      (message key)
+                      (put-text-property start end key val)))
               (setq ink (format "%S" (buffer-string))))
             (kill-buffer buf)
             ink))
