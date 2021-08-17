@@ -108,7 +108,7 @@
              if (>= (car tp) start-pos)
              return (car tp))))
 
-(defun byte-pos ()
+(defun pen-byte-pos ()
   (position-bytes (point)))
 
 (defun byte-string-search (needle haystack)
