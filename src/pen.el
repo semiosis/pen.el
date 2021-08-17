@@ -298,6 +298,10 @@
                        (pen-var-value-maybe 'is-info)
                        ,is-info))
 
+                  (final-new-document
+                   (or (pen-var-value-maybe 'new-document)
+                       ,new-document))
+
                   (final-start-yas
                    (or (pen-var-value-maybe 'start-yas)
                        ,start-yas))
@@ -748,6 +752,7 @@ Function names are prefixed with pf- for easy searching"
                         (flags (ht-get yaml "flags"))
                         (subprompts (ht-get yaml "subprompts"))
                         (is-info (ht-get yaml "is-info"))
+                        (new-document (ht-get yaml "new-document"))
                         (start-yas (ht-get yaml "start-yas"))
                         (yas (ht-get yaml "yas"))
                         (end-yas (ht-get yaml "end-yas"))
