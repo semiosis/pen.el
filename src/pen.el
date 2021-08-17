@@ -108,6 +108,9 @@
              if (>= (car tp) start-pos)
              return (car tp))))
 
+(defun byte-pos ()
+  (position-bytes (point)))
+
 (defun byte-string-search (needle haystack)
   "get byte position or needing in haystack"
   (let ((b (new-buffer-from-string haystack))
