@@ -256,7 +256,7 @@
                            (pen-expand-template-keyvals it var-keyvals-slugged)
                            (pen-expand-template-keyvals it var-keyvals)
                            (pen-unonelineify it))))
-           (setq pen-last-prompt-data nil)
+           (setq pen-last-prompt-data '((face . ink-generated)))
            (let* (
                   ;; Keep in mind this both updates memoization and the bash cache
                   (do-pen-update (pen-var-value-maybe 'do-pen-update))
@@ -546,20 +546,20 @@
                    (cond
                     ((or final-is-info
                          (>= (prefix-numeric-value current-prefix-arg) 4))
-                     (pen-etv result))
+                     (pen-etv (ink-decode (ink-propertise result))))
                     ;; Filter takes priority over insertion
                     ((and ,filter
                           mark-active)
                      ;; (replace-region (concat (pen-selected-text) result))
                      (if (sor result)
-                         (replace-region result)
+                         (replace-region (ink-propertise result))
                        (error "pen filter returned empty string")))
                     ;; Insertion is for prompts for which a new buffer is not necessary
                     ((or ,insertion
                          ,completion)
-                     (insert result))
+                     (insert (ink-propertise result)))
                     (t
-                     (pen-etv result)))
+                     (pen-etv (ink-propertise result))))
                  result)))))))))
 
 (defun pen-list-to-orglist (l)
@@ -1162,8 +1162,8 @@ Function names are prefixed with pf- for easy searching"
 (defun pen-complete-function (preceding-text &rest args)
   (if (and (derived-mode-p 'prog-mode)
            (not (string-equal (buffer-name) "*scratch*")))
-      (eval `(pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args))
-    (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
+      (eval `(ink-propertise (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)))
+    (eval `(ink-propertise (pf-generic-completion-50-tokens/1 preceding-text ,@args)))))
 
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
