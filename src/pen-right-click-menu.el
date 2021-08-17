@@ -120,9 +120,20 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
   )
 
+;; TODO Make this work for the prompt name, too
 (defun pen-go-to-prompt-for-ink ()
   (interactive)
   (find-file (lax-plist-get (text-properties-at (point)) "PEN_PROMPT_PATH")))
+
+(defun pen-go-to-engine-for-ink ()
+  (interactive)
+  (pen-goto-engine (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")))
+
+(defun pen-goto-engine (engine)
+  (ignore-errors
+    (let* ((e (ht-get pen-engines "OpenAI Davinci"))
+           (path (ht-get e "path")))
+      (find-file path))))
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
@@ -130,6 +141,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
         ("explain error" :call pf-explain-error/3)
         ("go to prompt for text" :call pen-go-to-prompt-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_PROMPT_PATH")))
+        ("go to engine for text" :call pen-go-to-engine-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")))
         ("prose"
          ("Cancel" :call identity-command)
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)

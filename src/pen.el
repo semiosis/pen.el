@@ -690,6 +690,7 @@
 
                         ;; function
                         (title (ht-get yaml "title")))
+                   (ht-set yaml "path" path)
                    (message (concat "pen-mode: Loaded engine " title))
                    (ht-set pen-engines title yaml))
                  (add-to-list 'pen-engines-failed path)))
