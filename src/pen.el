@@ -201,6 +201,10 @@
                 collect
                 (expand-template stsq)))))))
 
+;; The LM may also send more info to this after the prompt has executed.
+;; All this data will go into the Ink properties
+(defvar pen-last-prompt-data '())
+
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
@@ -410,6 +414,25 @@
 
                   ;; Now that all values are loaded, re-template them so I can base values on other values
 
+                  (data
+                   (let ((data
+                          `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
+                            ("PEN_LM_COMMAND" ,,lm-command)
+                            ("PEN_MODEL" ,final-model)
+                            ("PEN_MIN_TOKENS" ,final-min-tokens)
+                            ("PEN_MAX_TOKENS" ,final-max-tokens)
+                            ("PEN_TEMPERATURE" ,final-temperature)
+                            ("PEN_MODE" ,final-mode)
+                            ("PEN_STOP_SEQUENCE" ,(pen-encode-string final-stop-sequence))
+                            ("PEN_TOP_P" ,final-top-p)
+                            ("PEN_TOP_K" ,final-top-k)
+                            ("PEN_FLAGS" ,final-flags)
+                            ("PEN_CACHE" ,cache)
+                            ("PEN_N_COMPLETIONS" ,final-n-completions)
+                            ("PEN_END_POS" ,prompt-end-pos))))
+                     (setq pen-last-prompt-data data)
+                     data))
+
                   ;; construct the full command
                   (shcmd
                    (pen-log
@@ -428,20 +451,7 @@
                       (sh-construct-envs
                        ;; This is a bit of a hack for \n in prompts
                        ;; See `pen-restore-chars`
-                       `(("PEN_PROMPT" ,(pen-encode-string final-prompt))
-                         ("PEN_LM_COMMAND" ,,lm-command)
-                         ("PEN_MODEL" ,final-model)
-                         ("PEN_MIN_TOKENS" ,final-min-tokens)
-                         ("PEN_MAX_TOKENS" ,final-max-tokens)
-                         ("PEN_TEMPERATURE" ,final-temperature)
-                         ("PEN_MODE" ,final-mode)
-                         ("PEN_STOP_SEQUENCE" ,(pen-encode-string final-stop-sequence))
-                         ("PEN_TOP_P" ,final-top-p)
-                         ("PEN_TOP_K" ,final-top-k)
-                         ("PEN_FLAGS" ,final-flags)
-                         ("PEN_CACHE" ,cache)
-                         ("PEN_N_COMPLETIONS" ,final-n-completions)
-                         ("PEN_END_POS" ,prompt-end-pos)))
+                       data)
                       ;; Currently always updating
                       "lm-complete"))))
 
