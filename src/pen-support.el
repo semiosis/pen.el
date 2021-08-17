@@ -505,7 +505,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (if (not nodisplay)
         (display-buffer buffer '(display-buffer-same-window . nil)))
     (with-current-buffer buffer
-      (if contents (insert (str contents)))
+      (if contents
+          (if (stringp contents)
+              (insert contents)
+            (insert (str contents))))
       (beginning-of-buffer)
       (if mode (funcall mode)))
     buffer))
