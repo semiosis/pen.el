@@ -256,6 +256,7 @@
                            (pen-expand-template-keyvals it var-keyvals-slugged)
                            (pen-expand-template-keyvals it var-keyvals)
                            (pen-unonelineify it))))
+           (setq pen-last-prompt-data nil)
            (let* (
                   ;; Keep in mind this both updates memoization and the bash cache
                   (do-pen-update (pen-var-value-maybe 'do-pen-update))
@@ -268,6 +269,14 @@
                   (cache
                    (and (not do-pen-update)
                         (pen-var-value-maybe 'cache)))
+
+                  (final-path
+                   (let ((fpath
+                          (or (pen-var-value-maybe 'path)
+                              ,path)))
+                     (setq pen-last-prompt-data
+                           (asoc-merge pen-last-prompt-data (list (cons "PEN_PROMPT_PATH" fpath))))
+                     fpath))
 
                   (final-flags
                    (or (pen-var-value-maybe 'flags)
@@ -454,7 +463,8 @@
                             ("PEN_CACHE" . ,cache)
                             ("PEN_N_COMPLETIONS" . ,final-n-completions)
                             ("PEN_END_POS" . ,prompt-end-pos))))
-                     (setq pen-last-prompt-data data)
+                     (setq pen-last-prompt-data
+                           (asoc-merge pen-last-prompt-data data))
                      data))
 
                   ;; construct the full command
@@ -706,6 +716,7 @@ Function names are prefixed with pf- for easy searching"
                 ;; results in a hash table
                 (try
                  (let* ((yaml (pen-prompt-file-load path))
+                        (path path)
 
                         ;; function
                         (task-ink (ht-get yaml "task"))
