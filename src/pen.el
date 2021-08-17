@@ -20,6 +20,7 @@
 (require 'selected)
 (require 'pcsv)
 (require 'pcre2el)
+(require 'asoc)
 
 (require 'pen-custom)
 
@@ -256,7 +257,10 @@
                            (pen-expand-template-keyvals it var-keyvals-slugged)
                            (pen-expand-template-keyvals it var-keyvals)
                            (pen-unonelineify it))))
-           (setq pen-last-prompt-data '((face . ink-generated)))
+           (setq pen-last-prompt-data '((face . ink-generated)
+                                        ;; This is necessary because most modes
+                                        ;; do not allow allow you to change the faces.
+                                        ("INK_TYPE" . "generated")))
            (let* (
                   ;; Keep in mind this both updates memoization and the bash cache
                   (do-pen-update (pen-var-value-maybe 'do-pen-update))
@@ -1162,8 +1166,8 @@ Function names are prefixed with pf- for easy searching"
 (defun pen-complete-function (preceding-text &rest args)
   (if (and (derived-mode-p 'prog-mode)
            (not (string-equal (buffer-name) "*scratch*")))
-      (eval `(ink-propertise (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)))
-    (eval `(ink-propertise (pf-generic-completion-50-tokens/1 preceding-text ,@args)))))
+      (eval `(pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args))
+    (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
 
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
@@ -1173,8 +1177,8 @@ May use to generate code from comments."
          (pen-long-complete
           (pen-complete-function preceding-text))))
     (if tv
-        (pen-etv response)
-      (insert response))))
+        (pen-etv (ink-propertise response))
+      (insert (ink-propertise response)))))
 
 (defun pen-cmd-q (&rest args)
   (s-join " " (mapcar 'pen-q (mapcar 'str args))))
