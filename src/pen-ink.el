@@ -233,6 +233,8 @@
 
 (defun ink-decode-source-buffer ()
   (interactive)
+  ;; TODO Go over a buffer and add face text properties / overlays
+  ;; For whenever ink-type is found.
   (if (eq major-mode 'ink-source-mode)
       (let* ((s (ink-decode (buffer-string)))
              (fp (buffer-file-name))
