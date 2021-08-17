@@ -553,6 +553,7 @@
                (if is-interactive
                    (cond
                     ((or final-is-info
+                         final-new-document
                          (>= (prefix-numeric-value current-prefix-arg) 4))
                      (pen-etv (ink-decode (ink-propertise result))))
                     ;; Filter takes priority over insertion
