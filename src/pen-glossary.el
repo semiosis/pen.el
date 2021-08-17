@@ -19,48 +19,54 @@
                      (setq s (read-string-hist "glossary term to add: ")))
                  (list s)))
   (deactivate-mark)
-  (if (not definition)
-      (setq definition (lm-define term t (pen-ask (pen-topic t) "topic: "))))
+  (let ((NLG))
+    (if (not definition)
+        (progn
+          (setq definition (lm-define term t (pen-ask (pen-topic t) "topic: ")))
+          (if definition
+              (setq NLG t))))
 
-  (let* ((cb (current-buffer))
-         (all-glossaries-fp (pen-mnm (pen-list2str (pen-list-glossary-files))))
-         (fp
-          (if (pen-is-glossary-file)
-              (buffer-file-name)
-            (pen-umn (or
-                      (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
-                               (not (local-variable-p 'glossary-files)))
-                           (pen-umn (fz all-glossaries-fp
-                                        nil nil "glossary to add to: ")))
-                      (and
-                       (local-variable-p 'glossary-files)
-                       (if take-first
-                           (car glossary-files)
-                         (pen-umn (fz (pen-mnm (pen-list2str glossary-files))
-                                      "$HOME/glossaries/"
-                                      nil "glossary to add to: "))))
-                      (pen-umn (fz (pen-mnm (pen-list2str (list "$HOME/glossaries/glossary.txt")))
-                                   "$HOME/glossaries/"
-                                   nil "glossary to add to: ")))))))
-    (with-current-buffer
-        (find-file fp)
-      (progn
-        (if (save-excursion
-              (beginning-of-line)
-              (looking-at-p (concat "^" (pen-unregexify term) "$")))
+    (let* ((cb (current-buffer))
+           (all-glossaries-fp (pen-mnm (pen-list2str (pen-list-glossary-files))))
+           (fp
+            (if (pen-is-glossary-file)
+                (buffer-file-name)
+              (pen-umn (or
+                        (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
+                                 (not (local-variable-p 'glossary-files)))
+                             (pen-umn (fz all-glossaries-fp
+                                          nil nil "glossary to add to: ")))
+                        (and
+                         (local-variable-p 'glossary-files)
+                         (if take-first
+                             (car glossary-files)
+                           (pen-umn (fz (pen-mnm (pen-list2str glossary-files))
+                                        "$HOME/glossaries/"
+                                        nil "glossary to add to: "))))
+                        (pen-umn (fz (pen-mnm (pen-list2str (list "$HOME/glossaries/glossary.txt")))
+                                     "$HOME/glossaries/"
+                                     nil "glossary to add to: ")))))))
+      (with-current-buffer
+          (find-file fp)
+        (progn
+          (if (save-excursion
+                (beginning-of-line)
+                (looking-at-p (concat "^" (pen-unregexify term) "$")))
+              (progn
+                (end-of-line))
             (progn
-              (end-of-line))
-          (progn
-            (end-of-buffer)
-            (if (not (looking-at "^$"))
-                (newline))
-            (newline)
-            (insert (chomp term))))
-        (newline)
-        (if (sor definition)
-            ;; Do not chomp the start
-            (insert (chomp (pen-pretty-paragraph (concat "    " definition))))
-          (insert "    ")))
-      (current-buffer))))
+              (end-of-buffer)
+              (if (not (looking-at "^$"))
+                  (newline))
+              (newline)
+              (insert (chomp term))))
+          (newline)
+          (if (sor definition)
+              ;; Do not chomp the start
+              (if NLG
+                  (insert (ink-propertise (chomp (pen-pretty-paragraph (concat "    " definition)))))
+                (insert (chomp (pen-pretty-paragraph (concat "    " definition)))))
+            (insert "    ")))
+        (current-buffer)))))
 
 (provide 'pen-glossary)

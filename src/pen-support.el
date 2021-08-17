@@ -867,7 +867,7 @@ when s is a string, set the clipboard to s"
     (if (sor def)
         (progn
           (if prepend-lm-warning
-              (setq def (concat "NLG: " def)))
+              (setq def (concat "NLG: " (ink-propertise def))))
           (if (interactive-p)
               (pen-etv def)
             def)))))
