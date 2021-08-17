@@ -107,7 +107,8 @@ apt install libgtk-3-0 libgtk-3-dev
 
 (
     cd /root/emacs
-    git checkout 0a5e9cf2622a0282d56cc150af5a94b5d5fd71be
+    # Has object-intervals
+    git checkout df882c9701
     ./autogen.sh
     ./configure --with-all --with-x-toolkit=yes --without-makeinfo --with-modules --with-gnutls=yes
     make
