@@ -973,6 +973,18 @@ Function names are prefixed with pf- for easy searching"
     (if f
         (call-interactively (intern f)))))
 
+;; This is where I need to propertise company completions
+;; Unfortunately, it requires me to duplicate a whole lot of company code
+(defun pen-company--insert-candidate (candidate)
+  (when (> (length candidate) 0)
+    (setq candidate (substring-no-properties candidate))
+    ;; XXX: Return value we check here is subject to change.
+    (if (eq (company-call-backend 'ignore-case) 'keep-prefix)
+        (insert (ink-propertise (company-strip-prefix candidate)))
+      (unless (equal company-prefix candidate)
+        (delete-region (- (point) (length company-prefix)) (point))
+        (insert (ink-propertise candidate))))))
+
 (defun pen-company-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
          (response
@@ -1000,7 +1012,9 @@ Function names are prefixed with pf- for easy searching"
          (res
           response))
 
-    (mapcar (lambda (s) (concat (pen-company-filetype--prefix) s))
+    (mapcar (lambda (s)
+              (concat (pen-company-filetype--prefix)
+                      s))
             res)))
 
 (defun pen-completion-at-point ()
@@ -1166,6 +1180,7 @@ Function names are prefixed with pf- for easy searching"
 (defun pen-complete-function (preceding-text &rest args)
   (if (and (derived-mode-p 'prog-mode)
            (not (string-equal (buffer-name) "*scratch*")))
+      ;; Can't put ink-propertise here
       (eval `(pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args))
     (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
 
