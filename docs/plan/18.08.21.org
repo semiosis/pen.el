@@ -1,0 +1,18 @@
+I think it'd be really cool to make libraries
+which use Pen.el as the final prompting
+interface.
+
+Sounds really inefficient but I think it'll
+still be super powerful Then Pen.el can
+basically handle all the authentication and
+interweaving of prompts and people can use
+their fancy languages.
+
+without needing APIs etc.
+
+I'm thinking this because I'd like interop
+with prolog for starters but also it'd be
+really useful to model particular things in
+other languages
+
+https://programming-idioms.org/idiom/182/quine-program/2664/haskell
