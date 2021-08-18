@@ -428,6 +428,10 @@
                    (or (pen-var-value-maybe 'stop-patterns)
                        ',stop-patterns))
 
+                  (final-split-patterns
+                   (or (pen-var-value-maybe 'split-patterns)
+                       ',split-patterns))
+
                   (final-stop-sequence
                    (expand-template
                     (str (or (pen-var-value-maybe 'stop-sequence)
@@ -523,8 +527,13 @@
                      (cl-loop for rd in resultsdirs
                               collect
                               (if (sor rd)
-                                  (->> (glob (concat rd "/*"))
-                                    (mapcar 'e/cat)
+                                  (->> (-flatten
+                                        (->> (glob (concat rd "/*"))
+                                          (mapcar 'e/cat)
+                                          (mapcar (lambda (r)
+                                                    (cl-loop
+                                                     for stpat in final-split-patterns collect
+                                                     (s-split stpat r))))))
                                     (mapcar (lambda (r)
                                               (cl-loop
                                                for stsq in final-stop-sequences do
@@ -826,6 +835,12 @@ Function names are prefixed with pf- for easy searching"
                          (or (vector2list (ht-get yaml "stop-patterns"))
                              ;; By default, stop when you see ^Input
                              (list "^Input:")))
+
+                        (split-patterns
+                         (or (vector2list (ht-get yaml "split-patterns"))
+                             nil
+                             ;; (list "\n")
+                             ))
 
                         ;; docs
                         (problems (vector2list (ht-get yaml "problems")))
