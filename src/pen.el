@@ -254,12 +254,12 @@
          (cl-macrolet ((expand-template
                         (string-sym)
                         `(--> ,string-sym
-                           (pen-onelineify it)
-                           (pen-expand-template-keyvals it subprompts)
-                           (pen-expand-template it vals)
-                           (pen-expand-template-keyvals it var-keyvals-slugged)
-                           (pen-expand-template-keyvals it var-keyvals)
-                           (pen-unonelineify it))))
+                           (pen-onelineify-safe it)
+                          (pen-expand-template-keyvals it subprompts)
+                          (pen-expand-template it vals)
+                          (pen-expand-template-keyvals it var-keyvals-slugged)
+                          (pen-expand-template-keyvals it var-keyvals)
+                          (pen-unonelineify-safe it))))
            (setq pen-last-prompt-data '((face . ink-generated)
                                         ;; This is necessary because most modes
                                         ;; do not allow allow you to change the faces.
@@ -428,9 +428,15 @@
                    (or (pen-var-value-maybe 'stop-patterns)
                        ',stop-patterns))
 
+                  ;; These happen before the postprocessing
                   (final-split-patterns
                    (or (pen-var-value-maybe 'split-patterns)
                        ',split-patterns))
+
+                  ;; These happen after the postprocessing
+                  (final-end-split-patterns
+                   (or (pen-var-value-maybe 'end-split-patterns)
+                       ',end-split-patterns))
 
                   (final-stop-sequence
                    (expand-template
@@ -527,39 +533,56 @@
                      (cl-loop for rd in resultsdirs
                               collect
                               (if (sor rd)
-                                  (->> (-flatten
-                                        (->> (glob (concat rd "/*"))
-                                          (mapcar 'e/cat)
-                                          (mapcar (lambda (r)
-                                                    (if final-split-patterns
-                                                        (cl-loop
-                                                         for stpat in final-split-patterns collect
-                                                         (s-split stpat r))
-                                                      (list r))))))
-                                    (mapcar (lambda (r)
-                                              (cl-loop
-                                               for stsq in final-stop-sequences do
-                                               (let ((matchpos (pen-string-search stsq r)))
-                                                 (if matchpos
-                                                     (setq r (s-truncate matchpos r "")))))
-                                              r))
-                                    (mapcar (lambda (r)
-                                              (cl-loop
-                                               for stpat in final-stop-patterns do
-                                               (let ((matchpos (re-match-p stpat r)))
-                                                 (if matchpos
-                                                     (setq r (s-truncate matchpos r "")))))
-                                              r))
-                                    (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
-                                                            (pen-sn final-postprocessor r) r)))
-                                    (mapcar (lambda (r) (if (and (variable-p 'prettify)
-                                                                 prettify
-                                                                 ,prettifier
-                                                                 (sor ,prettifier))
-                                                            (pen-sn ,prettifier r)
-                                                          r)))
-                                    (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
-                                    (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r))))
+                                  (let* ((processed-results
+                                          (-flatten
+                                           (->> (glob (concat rd "/*"))
+                                             (mapcar 'e/cat)
+                                             (mapcar
+                                              (lambda (r)
+                                                (if final-split-patterns
+                                                    (cl-loop
+                                                     for stpat in final-split-patterns collect
+                                                     (s-split stpat r))
+                                                  (list r)))))))
+                                         (processed-results
+                                          (->> processed-results
+                                            (mapcar (lambda (r)
+                                                      (cl-loop
+                                                       for stsq in final-stop-sequences do
+                                                       (let ((matchpos (pen-string-search stsq r)))
+                                                         (if matchpos
+                                                             (setq r (s-truncate matchpos r "")))))
+                                                      r))
+                                            (mapcar (lambda (r)
+                                                      (cl-loop
+                                                       for stpat in final-stop-patterns do
+                                                       (let ((matchpos (re-match-p stpat r)))
+                                                         (if matchpos
+                                                             (setq r (s-truncate matchpos r "")))))
+                                                      r))
+                                            (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
+                                                                    (pen-sn final-postprocessor r)
+                                                                  r)))
+                                            (mapcar (lambda (r) (if (and (variable-p 'prettify)
+                                                                         prettify
+                                                                         ,prettifier
+                                                                         (sor ,prettifier))
+                                                                    (pen-sn ,prettifier r)
+                                                                  r)))
+                                            (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
+                                            (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
+                                         (processed-results
+                                          (-flatten
+                                           (->> processed-results
+                                             (mapcar
+                                              (lambda (r)
+                                                (if final-end-split-patterns
+                                                    (cl-loop
+                                                     for stpat in final-end-split-patterns collect
+                                                     (s-split stpat r))
+                                                  (list r)))))))
+                                         )
+                                    processed-results)
                                 (list (message "Try UPDATE=y or debugging")))))))
 
                   (result (if no-select-result
@@ -840,6 +863,12 @@ Function names are prefixed with pf- for easy searching"
 
                         (split-patterns
                          (or (vector2list (ht-get yaml "split-patterns"))
+                             nil
+                             ;; (list "\n")
+                             ))
+
+                        (end-split-patterns
+                         (or (vector2list (ht-get yaml "end-split-patterns"))
                              nil
                              ;; (list "\n")
                              ))

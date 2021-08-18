@@ -798,6 +798,12 @@ when s is a string, set the clipboard to s"
 (defun pen-unonelineify (s)
   (pen-sn "pen-s unonelineify" s))
 
+(defun pen-onelineify-safe (s)
+  (pen-snc "pen-s onelineify-safe" s))
+
+(defun pen-unonelineify-safe (s)
+  (pen-sn "pen-s unonelineify-safe" s))
+
 (defun replace-region (s)
   "Apply the function to the selected region. The function must accept a string and return a string."
   (let ((rstart (if (region-active-p) (region-beginning) (point-min)))
