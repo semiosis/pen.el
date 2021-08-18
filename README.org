@@ -176,6 +176,9 @@ and =max-tokens= for any prompt function.
 
   # Simpler invocation
   penf list-of 5 "tennis players"
+
+  # Get a new list with -u for update
+  penf -u list-of 5 "tennis players"
 #+END_SRC
 
 #+BEGIN_SRC text -n :async :results verbatim code
@@ -185,6 +188,10 @@ and =max-tokens= for any prompt function.
   Anastasia Myskina
   Andre Agassi
 #+END_SRC
+
+There are many other ways to run prompt
+functions and interop for more languages is
+underway.
 
 ** Goals
 - Peer-to-peer sharing of prompts
