@@ -394,10 +394,12 @@
                    (expand-template
                     (str (or (pen-var-value-maybe 'temperature)
                              ,temperature))))
+
                   (final-mode
                    (expand-template
                     (str (or (pen-var-value-maybe 'mode)
                              ,mode))))
+
                   (final-model
                    (expand-template
                     (str (or (pen-var-value-maybe 'model)
@@ -1113,7 +1115,7 @@ Function names are prefixed with pf- for easy searching"
            (if pen-force-few-completions
                (list `(n-completions 3)
                      ;; Also, ensure n-collate = 1 because
-                     ;; n-completions may be emulated with collate 
+                     ;; n-completions may be emulated with collate
                      `(n-collate 1)))
            (if pen-force-gpt-j-aix
                (list `(lm-command "aix-complete.sh")
