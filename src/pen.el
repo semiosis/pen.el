@@ -72,6 +72,12 @@
              (sor key))
         (ht-get yaml key))))
 
+(defun pen-translate-prompt ()
+  "Select a prompt file and translate it."
+  (interactive)
+  (let ((fname (fz pen-prompt-functions nil nil "pen translate prompt: "))))
+  (ht-values pen-prompts))
+
 (defun pen-list-filter-functions ()
   (interactive)
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "filter"))
@@ -765,6 +771,10 @@ Otherwise, it will be a shell expression template")
              (message (pen-list2str pen-engines-failed))
              (message (concat (str (length pen-engines-failed)) " failed"))))))))
 
+(defun pen-list-prompt-paths ()
+  (-non-nil
+   (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))
+
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
@@ -782,9 +792,7 @@ Function names are prefixed with pf- for easy searching"
   (noupd
    (eval
     `(let ((paths
-            (or ,paths
-                (-non-nil
-                 (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))))
+            (or ,paths (pen-list-prompt-paths))))
        (cl-loop for path in paths do
                 (message (concat "pen-mode: Loading .prompt file " path))
 
@@ -1000,7 +1008,7 @@ Function names are prefixed with pf- for easy searching"
                               (setq iteration (+ 1 iteration))
                               (message (str iteration)))))))
 
-                   (ht-set pen-prompts title yaml)
+                   (ht-set pen-prompts func-sym yaml)
                    (add-to-list 'pen-prompt-functions-meta yaml)
 
                    ;; var names will have to be slugged, too
@@ -1031,8 +1039,7 @@ Function names are prefixed with pf- for easy searching"
                            ;; Using memoization here is the more efficient way to memoize.
                            ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
                            ;; (if cache (memoize funcsym))
-                           )
-                       ))
+                           )))
                    (message (concat "pen-mode: Loaded prompt function " func-name)))
                  (add-to-list 'pen-prompts-failed path)))
        (if pen-prompt-functions-failed
