@@ -410,6 +410,20 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   "sn chomp"
   (chomp (pen-sn cmd stdin)))
 
+(defun pen-sne (cmd &optional stdin &rest args)
+  "Returns the exit code."
+  (defset b_exit_code nil)
+
+  (progn
+    (apply 'pen-sn (append (list cmd stdin) args))
+    (string-to-int b_exit_code)))
+
+;; (pen-snq "grep hi" "hi")
+;; (pen-snq "grep hi" "yo")
+(defun pen-snq (cmd &optional stdin &rest args)
+  (let ((code (apply 'pen-sne (append (list cmd stdin) args))))
+    (equal code 0)))
+
 (defun slugify (input &optional joinlines length)
   "Slugify input"
   (interactive)
