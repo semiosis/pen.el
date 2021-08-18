@@ -140,8 +140,9 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
         ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
         ("explain error" :call pf-explain-error/3)
-        ("go to prompt for text" :call pen-go-to-prompt-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_PROMPT_PATH")))
-        ("go to engine for text" :call pen-go-to-engine-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")))
+        ("> ink" :call rcm-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_MODEL")
+                                        (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")
+                                        (lax-plist-get (text-properties-at (point)) "PEN_LM_COMMAND")))
         ("prose"
          ("Cancel" :call identity-command)
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
@@ -187,6 +188,11 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   '(("Cancel" :call identity-command)
     ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1 :if (pen-word-clickable))
     ("define word" :call pen-define :if (pen-word-clickable))))
+
+(def-right-click-menu rcm-ink
+  '(("Cancel" :call identity-command)
+    ("go to prompt for text" :call pen-go-to-prompt-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_PROMPT_PATH")))
+    ("go to engine for text" :call pen-go-to-engine-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")))))
 
 (define-key pen-map (kbd "H-m") 'right-click-context-menu)
 
