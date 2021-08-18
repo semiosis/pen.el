@@ -77,13 +77,40 @@
   (interactive)
   (let* ((fname (fz pen-prompt-functions nil nil "pen translate prompt: "))
          (yaml (ht-get pen-prompts fname))
-         (lang (ht-get yaml "language"))
-         (lang (or lang (read-string-hist ".prompt Origin Language: ")))
-         (translator (ht-get yaml "translator"))
-         (tolang (read-string-hist ".prompt Destination Language: ")))
+         (prompt (ht-get yaml "prompt"))
+         (topic (ht-get yaml "topic"))
+         (from-lang (ht-get yaml "language"))
+         (from-lang (or from-lang (read-string-hist ".prompt Origin Language: ")))
+         (tolang (read-string-hist ".prompt Destination Language: "))
+         (translator (let ((tlr (ht-get yaml "translator")))
+                       (if (and
+                            (sor tlr)
+                            (not (string-match "^(" tlr)))
+                           ;; if it's a shell script, convert it to elisp
+                           (setq tlr
+                                 (format
+                                  "(pen-sn %s)"
+                                  (pen-q
+                                   (pen-expand-template-keyvals
+                                    tlr
+                                    '(("from-language" . (pen-q from-lang))
+                                      ("from language" . (pen-q from-lang))
+                                      ("to-language" . (pen-q to-lang))
+                                      ("to language" . (pen-q to-lang))
+                                      ("topic" . (pen-q topic))
+                                      ("prompt" . (pen-q prompt))))))))
+                       tlr))
+         (translator (or translator
+                         (fz pen-translators nil nil "Select a prompt translator: ")))
+         (translator (pen-eval-string
+                      (concat "'" translator)))
+         (newprompt
+          (if translator
+              (ht-get yaml "newprompt")))
+         )
     ;; (ht-get pen-prompts "pf-define-word/1")
     ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
-    (etv lang)))
+    (etv translator)))
 
 (defun pen-list-filter-functions ()
   (interactive)
@@ -682,7 +709,8 @@
 (defvar pen-prompts (make-hash-table :test 'equal)
   "A hash table containing loaded prompts")
 
-(defvar pen-translators nil
+(defvar pen-translators
+  '("(wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))")
   "A list of translators that can be used to translate prompts.
 These may be string representations of emacs lisp if beginning with '('.
 Otherwise, it will be a shell expression template")

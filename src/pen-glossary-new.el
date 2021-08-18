@@ -340,8 +340,8 @@
   (-filter (lambda (e) (not (member (third e) pen-glossary-blacklist)))
            (glossary-sort-tuples
             (if fp
-                (my-eval-string (sn (concat "list-glossary-terms-for-elisp " (q fp))))
-              (my-eval-string (sn "list-glossary-terms-for-elisp"))))))
+                (pen-eval-string (sn (concat "list-glossary-terms-for-elisp " (q fp))))
+              (pen-eval-string (sn "list-glossary-terms-for-elisp"))))))
 
 (defun pen-glossary-sort-tuples (tuples)
   (sort
@@ -457,7 +457,7 @@ Use my position list code. Make it use rosie lang and external software."
         (let* ((button-line (umn (fz (mnm (pp-map-line buttons-here))
                                      nil nil "pen-glossary-candidate-button-pressed: ")))
                (button-tuple (if button-line
-                                 (my-eval-string (concat "'" button-line))))
+                                 (pen-eval-string (concat "'" button-line))))
                (selected-button (if button-tuple
                                     (car (-filter (lambda (li) (and (equal (first button-tuple) (button-get li 'glossarypath))
                                                                (equal (cadr button-tuple) (button-get li 'byteoffset))
@@ -490,7 +490,7 @@ Use my position list code. Make it use rosie lang and external software."
         (let* ((button-line (umn (fz (mnm (pp-map-line buttons-here))
                                      nil nil "pen-glossary-button-pressed: ")))
                (button-tuple (if button-line
-                                 (my-eval-string (concat "'" button-line))))
+                                 (pen-eval-string (concat "'" button-line))))
                (selected-button (if button-tuple
                                     (car (-filter (lambda (li) (and (equal (first button-tuple) (button-get li 'glossarypath))
                                                                (equal (cadr button-tuple) (button-get li 'byteoffset))
@@ -892,7 +892,7 @@ Use my position list code. Make it use rosie lang and external software."
          (button-line (if tups
                           (umn (fz (mnm (pp-map-line tups)) nil nil nil nil t))))
          (button-tuple (if button-line
-                           (my-eval-string (concat "'" button-line)))))
+                           (pen-eval-string (concat "'" button-line)))))
     (if button-tuple
         (progn
           (deactivate-mark)

@@ -431,6 +431,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   "sn chomp"
   (chomp (pen-sn cmd stdin)))
 
+(defun pen-eval-string (string)
+  "Evaluate elisp code stored in a string."
+  (eval (car (read-from-string (format "(progn %s)" string)))))
+
 ;; (wrlp "hi\nshane" (tv))
 ;; (etv (wrlp "hi\nshane" (chomp)))
 ;; (type (wrlp "hi\n\nshane" (etv)))
