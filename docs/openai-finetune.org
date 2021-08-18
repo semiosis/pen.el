@@ -186,7 +186,8 @@ optional arguments:
   --plan-output-file PLAN_OUTPUT_FILE
 #+end_src
 
-** =openai-ft-classification=
+** DISCARD =openai-ft-classification=
+   CLOSED: [2021-08-18 Wed 14:18]
 *** Deprecated
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   openai-ft-classification --help 1>&2
