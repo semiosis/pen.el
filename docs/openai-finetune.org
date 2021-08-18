@@ -1,4 +1,14 @@
 * =openai-finetune=
+** new
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pen-openai api fine_tunes.create --help
+#+END_SRC
+
+** deprecated
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  pyf openai-finetune
+#+END_SRC
+
 ** =openai-ft=
 *** Example
 #+BEGIN_SRC sh -n :sps bash :async :results none
