@@ -443,7 +443,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                    (eval
                     `(->> l
                        ,form))
-                 "_"))))
+                 l))))
     (if nojoin
         `(quote ,ret)
       (s-join "\n" ret))))
