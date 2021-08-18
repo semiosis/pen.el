@@ -72,6 +72,15 @@
              (sor key))
         (ht-get yaml key))))
 
+(defun pen-test-translate-prompt ()
+  (let
+      ((from-language "English")
+       (to-language "French")
+       (topic "Dictionary")
+       (prompt "Glossary of terms.\n\nossified\nDefinition: Turn into bone or bony tissue.\n\n<1>\nDefinition:\n"))
+    (fwrlp prompt
+           '(pf-translate-from-world-language-x-to-y/3 from-language to-language))))
+
 (defun pen-translate-prompt ()
   "Select a prompt file and translate it."
   (interactive)
@@ -81,7 +90,7 @@
          (topic (ht-get yaml "topic"))
          (from-lang (ht-get yaml "language"))
          (from-lang (or from-lang (read-string-hist ".prompt Origin Language: ")))
-         (tolang (read-string-hist ".prompt Destination Language: "))
+         (to-lang (read-string-hist ".prompt Destination Language: "))
          (translator (let ((tlr (ht-get yaml "translator")))
                        (if (and
                             (sor tlr)
@@ -89,7 +98,7 @@
                            ;; if it's a shell script, convert it to elisp
                            (setq tlr
                                  (format
-                                  "(pen-sn %s)"
+                                  "(pen-sn %s prompt)"
                                   (pen-q
                                    (pen-expand-template-keyvals
                                     tlr
@@ -106,11 +115,17 @@
                       (concat "'" translator)))
          (newprompt
           (if translator
-              (ht-get yaml "newprompt")))
-         )
+              ;; Unfortunately, both the macro and function versions of wrlp lose
+              ;; access to the below scope, so I must solve that problem
+              (tv
+               `(let ((from-language ,from-lang)
+                      (to-language ,to-lang)
+                      (topic ,topic)
+                      (prompt ,prompt))
+                  ,translator)))))
     ;; (ht-get pen-prompts "pf-define-word/1")
     ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
-    (etv translator)))
+    (etv newprompt)))
 
 (defun pen-list-filter-functions ()
   (interactive)

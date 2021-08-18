@@ -440,16 +440,34 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 ;; (type (wrlp "hi\n\nshane" (etv)))
 ;; (type (wrlp "hi\n\nshane" (etv) t))
 ;; (wrlp "hi\n\nshane" (identity))
-(defmacro wrlp (s form &optional nojoin)
-  (let ((ret
-         (loop for l in (s-split "\n" s) collect
-               (if (sor l)
-                   (eval
-                    `(->> l
-                       ,form))
-                 l))))
+(defmacro mwrlp (s form &optional nojoin)
+  ;; The (eval s) undoes the macroishness of the s arg
+  (let* ((sval (eval s))
+         (ret
+          (loop for l in (s-split "\n" sval) collect
+                (if (sor l)
+                    ;; This is needed to access form.
+                    ;; Unfortunately this occludes dynamic scope.
+                    (eval
+                     `(->> ,l
+                        ,form))
+                  l))))
     (if nojoin
-        `(quote ,ret)
+        `',ret
+      (s-join "\n" ret))))
+(defalias 'wrlp 'mwrlp)
+
+(defun fwrlp (s form &optional nojoin)
+  "Function version of wrlp"
+  (let* ((ret
+          (loop for l in (s-split "\n" s) collect
+                (if (sor l)
+                    (eval
+                     `(->> ,l
+                        ,form))
+                  l))))
+    (if nojoin
+        ret
       (s-join "\n" ret))))
 
 (defun pen-sne (cmd &optional stdin &rest args)
