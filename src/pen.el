@@ -589,16 +589,11 @@
                                                   (list r)))))))
                                          (processed-results
                                           (->> processed-results
-                                            (-filter (lambda (r)
-                                                       (pen-snq )))
-                                            (mapcar
+                                            (-filter
                                              (lambda (r)
-                                               (if final-end-split-patterns
-                                                   (cl-loop
-                                                    for stpat in final-end-split-patterns collect
-                                                    (s-split stpat r))
-                                                 (list r))))))
-                                         )
+                                               (or
+                                                (not final-validator)
+                                                (pen-snq final-validator r)))))))
                                     processed-results)
                                 (list (message "Try UPDATE=y or debugging")))))))
 
@@ -837,7 +832,7 @@ Function names are prefixed with pf- for easy searching"
                              (vector2list (car examples-list))
                            examples-list))
                         (preprocessors (vector2list (ht-get yaml "preprocessors")))
-                        (validator (vector2list (ht-get yaml "validator")))
+                        (validator (ht-get yaml "validator"))
                         (prompt-filter (ht-get yaml "prompt-filter"))
                         (postprocessor (ht-get yaml "postprocessor"))
                         (n-collate (or (ht-get yaml "n-collate")
