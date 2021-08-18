@@ -531,9 +531,11 @@
                                         (->> (glob (concat rd "/*"))
                                           (mapcar 'e/cat)
                                           (mapcar (lambda (r)
-                                                    (cl-loop
-                                                     for stpat in final-split-patterns collect
-                                                     (s-split stpat r))))))
+                                                    (if final-split-patterns
+                                                        (cl-loop
+                                                         for stpat in final-split-patterns collect
+                                                         (s-split stpat r))
+                                                      (list r))))))
                                     (mapcar (lambda (r)
                                               (cl-loop
                                                for stsq in final-stop-sequences do
