@@ -193,7 +193,9 @@ There are many other ways to run prompt
 functions and interop for more languages is
 underway.
 
-** Goals
+** Mission and Gols
+Pen.el aims to be the best tool for prompt engineering.
+
 - Peer-to-peer sharing of prompts
   - https://github.com/semiosis/prompts/
 - Integrate arbitrarily many language models and language model protocols
