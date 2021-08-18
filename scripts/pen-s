@@ -169,13 +169,14 @@ case "$f" in
     }
     ;;
 
+    # These are more reversible
     onelineify-safe) {
-        sed -z 's/\n/\\n/g'
+        pen-encode-string | sed -z 's/\n/\\n/g'
     }
     ;;
 
     unonelineify-safe) {
-        sed -z 's/\\n/\n/g'
+        sed -z 's/\\n/\n/g' | pen-decode-string
     }
     ;;
 

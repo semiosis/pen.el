@@ -5,7 +5,7 @@
 
 # cat
 sed -e "s/\\\\n/<pen-notnewline>/g" \
-    -e "s/\$/<pen-dollar>/g" \
+    -e "s/\\$/<pen-dollar>/g" \
     -e "s/\`/<pen-backtick>/g" \
     -e "s/!/<pen-bang>/g" \
     -e "s/\"/<pen-doublequote>/g" \
