@@ -900,10 +900,10 @@ Function names are prefixed with pf- for easy searching"
                              ))
 
                         (translator
-                         (let ((t (ht-get yaml "translator")))
-                           (if (sor t)
-                               (add-to-list 'pen-translators t))
-                           t))
+                         (let ((tr (ht-get yaml "translator")))
+                           (if (sor tr)
+                               (add-to-list 'pen-translators tr))
+                           tr))
 
                         ;; docs
                         (problems (vector2list (ht-get yaml "problems")))
@@ -1000,6 +1000,7 @@ Function names are prefixed with pf- for easy searching"
                               (setq iteration (+ 1 iteration))
                               (message (str iteration)))))))
 
+                   (ht-set pen-prompts title yaml)
                    (add-to-list 'pen-prompt-functions-meta yaml)
 
                    ;; var names will have to be slugged, too
