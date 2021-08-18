@@ -621,12 +621,12 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-test-f (fp)
   (eq (progn (sn (concat "test -f " (q fp)))
-             (string-to-int b_exit_code))
+             (string-to-number b_exit_code))
       0))
 
 (defun pen-test-d (fp)
   (eq (progn (sn (concat "test -d " (q fp)))
-             (string-to-int b_exit_code))
+             (string-to-number b_exit_code))
       0))
 
 (defun pen-glossary-path-p (&optional fp)

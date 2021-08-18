@@ -235,6 +235,10 @@ case "$sn" in
                 set -- "$(cat)" "$@"
             fi
 
+            if ! printf -- "%s\n" "$pfname" | grep -q -P '/[0-9]*'; then
+                pfname="$pfname/$#"
+            fi
+
             CMD="$(cmd-nice "$@")"
 
             if test "$all" = "y"; then

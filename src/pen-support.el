@@ -416,7 +416,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
   (progn
     (apply 'pen-sn (append (list cmd stdin) args))
-    (string-to-int b_exit_code)))
+    (string-to-number b_exit_code)))
 
 ;; (pen-snq "grep hi" "hi")
 ;; (pen-snq "grep hi" "yo")
