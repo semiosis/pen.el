@@ -187,6 +187,7 @@ optional arguments:
 #+end_src
 
 ** =openai-ft-classification=
+*** Deprecated
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   openai-ft-classification --help 1>&2
 #+END_SRC
