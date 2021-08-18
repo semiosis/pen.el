@@ -899,7 +899,11 @@ Function names are prefixed with pf- for easy searching"
                              ;; (list "\n")
                              ))
 
-                        (translator (ht-get yaml "translator"))
+                        (translator
+                         (let ((t (ht-get yaml "translator")))
+                           (if (sor t)
+                               (add-to-list 'pen-translators t))
+                           t))
 
                         ;; docs
                         (problems (vector2list (ht-get yaml "problems")))
