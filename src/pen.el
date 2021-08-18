@@ -412,6 +412,7 @@
                    (expand-template
                     (str (or (pen-var-value-maybe 'top-k)
                              ,top-k))))
+
                   (final-postprocessor
                    (expand-template
                     (str (or (pen-var-value-maybe 'postprocessor)
@@ -538,8 +539,8 @@
                                                  (if matchpos
                                                      (setq r (s-truncate matchpos r "")))))
                                               r))
-                                    (mapcar (lambda (r) (if (and ,final-postprocessor (sor ,final-postprocessor))
-                                                            (pen-sn ,final-postprocessor r) r)))
+                                    (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
+                                                            (pen-sn final-postprocessor r) r)))
                                     (mapcar (lambda (r) (if (and (variable-p 'prettify)
                                                                  prettify
                                                                  ,prettifier
