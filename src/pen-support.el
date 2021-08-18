@@ -410,6 +410,14 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   "sn chomp"
   (chomp (pen-sn cmd stdin)))
 
+(defmacro wrlp (s form &optional nojoin)
+  (let ((ret
+         (loop for l in (s-split "\n" s) collect
+               (eval form))))
+    (if nojoin
+        ret
+      (s-join "\n" ret))))
+
 (defun pen-sne (cmd &optional stdin &rest args)
   "Returns the exit code."
   (defset b_exit_code nil)

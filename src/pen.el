@@ -450,6 +450,11 @@
                     (str (or (pen-var-value-maybe 'stop-sequence)
                              ,stop-sequence))))
 
+                  (final-translator
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'translator)
+                             ,translator))))
+
                   (final-prompt
                    (expand-template final-prompt))
 
