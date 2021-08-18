@@ -75,8 +75,11 @@
 (defun pen-translate-prompt ()
   "Select a prompt file and translate it."
   (interactive)
-  (let ((fname (fz pen-prompt-functions nil nil "pen translate prompt: "))))
-  (ht-values pen-prompts))
+  (let* ((fname (fz pen-prompt-functions nil nil "pen translate prompt: "))
+         (yaml (ht-get pen-prompts fname)))
+    ;; (ht-get pen-prompts "pf-define-word/1")
+    ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
+    (etv yaml)))
 
 (defun pen-list-filter-functions ()
   (interactive)
@@ -964,10 +967,11 @@ Function names are prefixed with pf- for easy searching"
                            ss))
                         (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length vars))))
                         (func-sym (intern func-name))
-                        (alias-slugs (mapcar 'intern
-                                             (mapcar
-                                              (lambda (s) (concat pen-prompt-function-prefix s "/" (str (length vars))))
-                                              (mapcar 'slugify aliases))))
+                        (alias-names
+                         (mapcar
+                          (lambda (s) (concat pen-prompt-function-prefix s "/" (str (length vars))))
+                          (mapcar 'slugify aliases)))
+                        (alias-slugs (mapcar 'intern alias-names))
                         (iargs
                          (let ((iteration 0))
                            (cl-loop
@@ -1008,7 +1012,9 @@ Function names are prefixed with pf- for easy searching"
                               (setq iteration (+ 1 iteration))
                               (message (str iteration)))))))
 
-                   (ht-set pen-prompts func-sym yaml)
+                   (ht-set pen-prompts func-name yaml)
+                   (loop for an in alias-names do
+                         (ht-set pen-prompts an yaml))
                    (add-to-list 'pen-prompt-functions-meta yaml)
 
                    ;; var names will have to be slugged, too
