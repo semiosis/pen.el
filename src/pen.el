@@ -498,7 +498,7 @@
                     (s-join
                      " "
                      (list
-;;; This actually interfered with the memoization!
+                      ;; ;; This actually interfered with the memoization!
                       ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
                       ;;   (if updval
                       ;;       (concat
