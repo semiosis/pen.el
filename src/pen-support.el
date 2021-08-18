@@ -435,6 +435,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 ;; (etv (wrlp "hi\nshane" (chomp)))
 ;; (type (wrlp "hi\n\nshane" (etv)))
 ;; (type (wrlp "hi\n\nshane" (etv) t))
+;; (wrlp "hi\n\nshane" (identity))
 (defmacro wrlp (s form &optional nojoin)
   (let ((ret
          (loop for l in (s-split "\n" s) collect
