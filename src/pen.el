@@ -76,10 +76,15 @@
   "Select a prompt file and translate it."
   (interactive)
   (let* ((fname (fz pen-prompt-functions nil nil "pen translate prompt: "))
-         (yaml (ht-get pen-prompts fname)))
+         (yaml (ht-get pen-prompts fname))
+         (lang (sor (ht-get yaml "language")
+                    ;; TODO Language detect
+                    (read-string-hist ".prompt Origin Language: ")))
+         (translator (ht-get yaml "translator"))
+         (tolang (read-string-hist ".prompt Destination Language: ")))
     ;; (ht-get pen-prompts "pf-define-word/1")
     ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
-    (etv yaml)))
+    (etv lang)))
 
 (defun pen-list-filter-functions ()
   (interactive)

@@ -226,6 +226,27 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
     result))
 (defalias 'sor 'string-first-nonnil-nonempty-string)
 
+(defmacro generic-or (p &rest items)
+  "Return the first element of ITEMS that does not fail p.
+ITEMS will be evaluated in normal `or' order."
+  `(generic-or-1 ,p (list ,@items)))
+
+(defun generic-or-1 (p items)
+  (let (item)
+    (while items
+      (setq item (pop items))
+      (if (call-function p item)
+          (setq item nil)
+        (setq items nil)))
+    item))
+
+;; The macro implementation also has the problem of evaluating all strings first
+(defmacro str-or (&rest strings)
+  "Return the first element of STRINGS that is a non-blank string.
+STRINGS will be evaluated in normal `or' order."
+  `(generic-or-1 'string-empty-or-nil-p (list ,@strings)))
+(defalias 'msor 'str-or)
+
 (defun cwd ()
   "Gets the current working directory"
   (interactive)
@@ -410,10 +431,14 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   "sn chomp"
   (chomp (pen-sn cmd stdin)))
 
+;; (wrlp "hi\nshane" (tv))
+;; (etv (wrlp "hi\nshane" (chomp)))
 (defmacro wrlp (s form &optional nojoin)
   (let ((ret
          (loop for l in (s-split "\n" s) collect
-               (eval form))))
+               (eval
+                `(->> l
+                   ,form)))))
     (if nojoin
         ret
       (s-join "\n" ret))))
