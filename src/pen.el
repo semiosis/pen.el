@@ -447,11 +447,10 @@
                    (expand-template final-prompt))
 
                   (final-prompt
-                   (pen-log-final-prompt
-                    (if ,prompt-filter
-                        (sor (pen-snc ,prompt-filter final-prompt)
-                             (concat "prompt-filter " ,prompt-filter " failed."))
-                      final-prompt)))
+                   (if ,prompt-filter
+                       (sor (pen-snc ,prompt-filter final-prompt)
+                            (concat "prompt-filter " ,prompt-filter " failed."))
+                     final-prompt))
 
                   (final-prompt (if final-end-yas
                                     (pen-yas-expand-string final-prompt)
@@ -469,7 +468,7 @@
 
                   (final-prompt (string-replace "<:pp>" "" final-prompt))
 
-                  (final-prompt (chomp final-prompt))
+                  (final-prompt (pen-log-final-prompt (chomp final-prompt)))
 
                   ;; Now that all values are loaded, re-template them so I can base values on other values
 
