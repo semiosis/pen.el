@@ -13,6 +13,107 @@
 #+END_SRC
 
 *** Help
+**** Current
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pen-openai api fine_tunes.create --help
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+usage: openai api fine_tunes.create [-h] -t TRAINING_FILE
+                                    [-v VALIDATION_FILE]
+                                    [--no_check_if_files_exist]
+                                    [-m MODEL] [--no_follow]
+                                    [--n_epochs N_EPOCHS]
+                                    [--batch_size BATCH_SIZE]
+                                    [--learning_rate_multiplier LEARNING_RATE_MULTIPLIER]
+                                    [--use_packing] [--no_packing]
+                                    [--prompt_loss_weight PROMPT_LOSS_WEIGHT]
+                                    [--compute_classification_metrics]
+                                    [--classification_n_classes CLASSIFICATION_N_CLASSES]
+                                    [--classification_positive_class CLASSIFICATION_POSITIVE_CLASS]
+                                    [--classification_betas CLASSIFICATION_BETAS [CLASSIFICATION_BETAS ...]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t TRAINING_FILE, --training_file TRAINING_FILE
+                        JSONL file containing prompt-completion
+                        examples for training. This can be the ID
+                        of a file uploaded through the OpenAI API
+                        (e.g. file-abcde12345) or a local file
+                        path.
+  -v VALIDATION_FILE, --validation_file VALIDATION_FILE
+                        JSONL file containing prompt-completion
+                        examples for validation. This can be the
+                        ID of a file uploaded through the OpenAI
+                        API (e.g. file-abcde12345) or a local file
+                        path.
+  --no_check_if_files_exist
+                        If this argument is set and training_file
+                        or validation_file are file paths,
+                        immediately upload them. If this argument
+                        is not set, check if they may be
+                        duplicates of already uploaded files
+                        before uploading, based on file name and
+                        file size.
+  -m MODEL, --model MODEL
+                        The model to start fine-tuning from
+  --no_follow           If set, returns immediately after creating
+                        the job. Otherwise, streams events and
+                        waits for the job to complete.
+  --n_epochs N_EPOCHS   The number of epochs to train the model
+                        for. An epoch refers to one full cycle
+                        through the training dataset.
+  --batch_size BATCH_SIZE
+                        The batch size to use for training. The
+                        batch size is the number of training
+                        examples used to train a single forward
+                        and backward pass.
+  --learning_rate_multiplier LEARNING_RATE_MULTIPLIER
+                        The learning rate multiplier to use for
+                        training. The fine-tuning learning rate is
+                        determined by the original learning rate
+                        used for pretraining multiplied by this
+                        value
+  --use_packing         On classification tasks, we recommend not
+                        setting this flag. On all other tasks, we
+                        recommend setting it. When set, we pack as
+                        many prompt-completion pairs as possible
+                        into each training example. This greatly
+                        increases the speed of a fine-tuning job,
+                        often without negatively affecting model
+                        performance.
+  --no_packing          Disables the packing flag (see
+                        --use_packing for description)
+  --prompt_loss_weight PROMPT_LOSS_WEIGHT
+                        The weight to use for the prompt loss. The
+                        optimum value here depends depends on your
+                        use case. This determines how much the
+                        model prioritizes learning from prompt
+                        tokens vs learning from completion tokens
+  --compute_classification_metrics
+                        If set, we calculate classification-
+                        specific metrics such as accuracy and F-1
+                        score using the validation set at the end
+                        of every epoch.
+  --classification_n_classes CLASSIFICATION_N_CLASSES
+                        The number of classes in a classification
+                        task. This parameter is required for
+                        multiclass classification
+  --classification_positive_class CLASSIFICATION_POSITIVE_CLASS
+                        The positive class in binary
+                        classification. This parameter is needed
+                        to generate precision, recall and F-1
+                        metrics when doing binary classification
+  --classification_betas CLASSIFICATION_BETAS [CLASSIFICATION_BETAS ...]
+                        If this is provided, we calculate F-beta
+                        scores at the specified beta values. The
+                        F-beta score is a generalization of F-1
+                        score. This is only used for binary
+                        classification.
+#+end_src
+
+**** Deprecated
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   openai-ft --help 1>&2
 #+END_SRC
