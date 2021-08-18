@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Can probably take back out the semicolon
+# -e "s/<pen-semicolon>/;/g" \
+
+# cat
+sed -e "s/\\\\n/<pen-notnewline>/g" \
+    -e "s/\$/<pen-dollar>/g" \
+    -e "s/\`/<pen-backtick>/g" \
+    -e "s/!/<pen-bang>/g" \
+    -e "s/\"/<pen-doublequote>/g" \
+    -e "s/:/<pen-colon>/g" \
+    -e "s/'/<pen-singlequote>/g"

@@ -158,12 +158,23 @@ case "$f" in
     }
     ;;
 
+    # onelineify and unonelineify are not entirely reversible. They're just meant for prompt design
     onelineify) {
         sed -z 's/\n/\\n/g'
     }
     ;;
 
     unonelineify) {
+        sed -z 's/\\n/\n/g'
+    }
+    ;;
+
+    onelineify-safe) {
+        sed -z 's/\n/\\n/g'
+    }
+    ;;
+
+    unonelineify-safe) {
         sed -z 's/\\n/\n/g'
     }
     ;;
