@@ -666,6 +666,14 @@
     (pen-prompt-file-load "$PROMPTS/davinci.prompt")
     (pen-prompt-file-load "$PROMPTS/generic-completion-50-tokens.prompt"))))
 
+(defvar pen-prompts (make-hash-table :test 'equal)
+  "A hash table containing loaded prompts")
+
+(defvar pen-translators nil
+  "A list of translators that can be used to translate prompts.
+These may be string representations of emacs lisp if beginning with '('.
+Otherwise, it will be a shell expression template")
+
 ;; pdf is prompt description file
 ;; also, check for a key which specifies that a prompt is only for templating
 ;; if it doesn't exist, then set not-template
@@ -890,6 +898,8 @@ Function names are prefixed with pf- for easy searching"
                              nil
                              ;; (list "\n")
                              ))
+
+                        (translator (ht-get yaml "translator"))
 
                         ;; docs
                         (problems (vector2list (ht-get yaml "problems")))
