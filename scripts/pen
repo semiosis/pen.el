@@ -237,9 +237,9 @@ case "$sn" in
 
             if test "$all" = "y"; then
                 if test "$UPDATE" = y; then
-                    set -- -e "(pen-list2str (pen-update ($pfname $CMD :no-select-result t)))"
+                    set -- -e "(json-encode-list (pen-update ($pfname $CMD :no-select-result t)))"
                 else
-                    set -- -e "(pen-list2str ($pfname $CMD :no-select-result t))"
+                    set -- -e "(json-encode-list ($pfname $CMD :no-select-result t))"
                 fi
             else
                 if test "$UPDATE" = y; then
