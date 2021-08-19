@@ -196,7 +196,7 @@
     (let ((lst (ink-list-all-bad-properties (buffer-string))))
       (-interleave lst (make-list (length lst) nil)))))
 
- ;; (etv (pps (ink-list-all-properties (buffer-string))))
+ ;; (pen-etv (pps (ink-list-all-properties (buffer-string))))
  (defun ink-list-all-bad-properties (s)
    (-filter
     (lambda (e)

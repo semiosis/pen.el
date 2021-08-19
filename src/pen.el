@@ -79,10 +79,10 @@
        (to-language "French")
        (topic "Dictionary")
        (prompt "Glossary of terms.\n\nossified\nDefinition: Turn into bone or bony tissue.\n\n<1>\nDefinition:\n"))
-    ;; (etv
+    ;; (pen-etv
     ;;  (eval
     ;;   `(pen-single-generation (wrlp ,prompt (pf-translate-from-world-language-x-to-y/3 ,from-language ,to-language)))))
-    (etv (pen-single-generation (wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))))))
+    (pen-etv (pen-single-generation (wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))))))
 
 (defun pen-translate-prompt ()
   "Select a prompt file and translate it."
@@ -128,7 +128,7 @@
                   (pen-single-generation ,translator))))))
     ;; (ht-get pen-prompts "pf-define-word/1")
     ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
-    (etv newprompt)))
+    (pen-etv newprompt)))
 
 (defun pen-list-filter-functions ()
   (interactive)
@@ -273,7 +273,7 @@
 (defun pen-test-alist-to-list ()
   (interactive)
 
-  (etv
+  (pen-etv
    (pps
     (pen-alist-to-list
      '(("PEN_PROMPT" . "Once upon a time")
@@ -285,7 +285,7 @@
   (let ((al '(("PEN_PROMPT" . "Once upon a time")
               ("PEN_ENGINE" . "OpenAI Davinci"))))
     (pen-alist-setcdr 'al "PEN_PROMPT" "In a far away land")
-    (etv
+    (pen-etv
      (pps
       (cdr
        (assoc "PEN_PROMPT"

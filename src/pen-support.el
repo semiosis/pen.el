@@ -436,9 +436,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (eval (car (read-from-string (format "(progn %s)" string)))))
 
 ;; (wrlp "hi\nshane" (tv))
-;; (etv (wrlp "hi\nshane" (chomp)))
-;; (type (wrlp "hi\n\nshane" (etv)))
-;; (type (wrlp "hi\n\nshane" (etv) t))
+;; (pen-etv (wrlp "hi\nshane" (chomp)))
+;; (type (wrlp "hi\n\nshane" (pen-etv)))
+;; (type (wrlp "hi\n\nshane" (pen-etv) t))
 ;; (wrlp "hi\n\nshane" (identity))
 (defmacro mwrlp (s form &optional nojoin)
   ;; The (eval s) undoes the macroishness of the s arg
