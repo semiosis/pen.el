@@ -73,13 +73,16 @@
         (ht-get yaml key))))
 
 (defun pen-test-translate-prompt ()
+  (interactive)
   (let
       ((from-language "English")
        (to-language "French")
        (topic "Dictionary")
        (prompt "Glossary of terms.\n\nossified\nDefinition: Turn into bone or bony tissue.\n\n<1>\nDefinition:\n"))
-    (fwrlp prompt
-           '(pf-translate-from-world-language-x-to-y/3 from-language to-language))))
+    ;; (etv
+    ;;  (eval
+    ;;   `(pen-single-generation (wrlp ,prompt (pf-translate-from-world-language-x-to-y/3 ,from-language ,to-language)))))
+    (etv (pen-single-generation (wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))))))
 
 (defun pen-translate-prompt ()
   "Select a prompt file and translate it."
@@ -117,12 +120,12 @@
           (if translator
               ;; Unfortunately, both the macro and function versions of wrlp lose
               ;; access to the below scope, so I must solve that problem
-              (tv
+              (eval
                `(let ((from-language ,from-lang)
                       (to-language ,to-lang)
                       (topic ,topic)
                       (prompt ,prompt))
-                  ,translator)))))
+                  (pen-single-generation ,translator))))))
     ;; (ht-get pen-prompts "pf-define-word/1")
     ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
     (etv newprompt)))

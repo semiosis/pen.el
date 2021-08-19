@@ -449,7 +449,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                     ;; This is needed to access form.
                     ;; Unfortunately this occludes dynamic scope.
                     (eval
-                     `(->> ,l
+                     `(-> ,l
                         ,form))
                   l))))
     (if nojoin
@@ -463,7 +463,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
           (loop for l in (s-split "\n" s) collect
                 (if (sor l)
                     (eval
-                     `(->> ,l
+                     `(-> ,l
                         ,form))
                   l))))
     (if nojoin
