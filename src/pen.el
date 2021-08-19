@@ -85,7 +85,7 @@
     (pen-etv (pen-single-generation (wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))))))
 
 (defun pen-translate-prompt ()
-  "Select a prompt file and translate it."
+  "Select a prompt file and translate it. Reconstruct the entire yaml."
   (interactive)
   (let* ((fname (fz pen-prompt-functions nil nil "pen translate prompt: "))
          (yaml (ht-get pen-prompts fname))
