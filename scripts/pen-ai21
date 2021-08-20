@@ -47,8 +47,8 @@ pen_ai21() {
               \"maxTokens\": $PEN_MAX_TOKENS,
               \"stopSequences\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
               \"topKReturn\": $PEN_TOP_K,
-              \"temperature\": $PEN_TEMPERATURE"
-             }"'
+              \"temperature\": $PEN_TEMPERATURE
+             }"
 }
 
 if test "$PEN_N_COMPLETIONS" = 1; then
