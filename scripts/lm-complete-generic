@@ -8,6 +8,16 @@
 sn="$(basename "$0")"
 
 case "$sn" in
+    ai21-complete.sh) {
+        completer_sn=pen-ai21
+        : "${AIX_API_KEY:="$PEN_LM_KEY"}"
+        export AIX_API_KEY
+
+        : "${PEN_MODEL:="j1-jumbo"}"
+        : "${PEN_MODEL:="j1-large"}"
+    }
+    ;;
+
     aix-complete.sh) {
         completer_sn=pen-aix
         : "${AIX_API_KEY:="$PEN_LM_KEY"}"

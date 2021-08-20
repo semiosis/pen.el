@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# Simply put the stdin into quotes
+
+input_fp="$(cat | tf txt)"
+
+IN="$(cat)" jq -n 'env.IN'

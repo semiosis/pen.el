@@ -54,6 +54,14 @@ if ! test -s $HOME/.pen/aix_api_key; then
 fi
 
 case "$PEN_LM_COMMAND" in
+    ai21-complete.sh) {
+        if ! test -s $HOME/.pen/ai21_api_key; then
+            PEN_LM_COMMAND=openai-complete.sh
+            export PEN_MODEL=davinci
+        fi
+    }
+    ;;
+
     aix-complete.sh) {
         if ! test -s $HOME/.pen/aix_api_key; then
             PEN_LM_COMMAND=openai-complete.sh
@@ -72,6 +80,12 @@ case "$PEN_LM_COMMAND" in
 esac
 
 case "$PEN_LM_COMMAND" in
+    ai21-complete.sh) {
+        # It's too slow otherwise
+        export PEN_N_COMPLETIONS=1
+    }
+    ;;
+
     aix-complete.sh) {
         # It's too slow otherwise
         export PEN_N_COMPLETIONS=1

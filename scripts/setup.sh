@@ -9,6 +9,10 @@ agi() {
     apt install -y "$@"
 }
 
+pyf( {
+    pip3 install "$@"
+}
+
 cd
 agi git python3 vim emacs mosh curl make xsel locales
 
@@ -28,15 +32,15 @@ agi autoconf texinfo libgnutls30 libgnutls28-dev pkg-config
 agi python3-pip
 
 # For lm-complete
-pip3 install openai
+pyf openai
 
 # For tidy-prompt
-pip3 install yq python-json2yaml
+pyf yq python-json2yaml
 
 # For AIX API
-pip3 install aixapi requests
+pyf aixapi requests
 
-pip3 install huggingface_hub
+pyf huggingface_hub
 
 # For Pen.el
 ## slugify
@@ -47,11 +51,12 @@ agi expect
 agi moreutils
 agi jq
 agi neovim
+pyf jsonnet
 
 agi tmux
 
 agi swi-prolog-nox
-pip3 install problog
+pyf problog
 
 mkdir -p /root/org-roam
 
@@ -118,7 +123,7 @@ rm -rf /root/emacs
 
 # This is kinda optional but will give you a web-facing Pen
 agi libssl-dev
-pip3 install butterfly
+pyf butterfly
 
 # I want huggingface transformers and I'm going to use clojure to access them
 (
