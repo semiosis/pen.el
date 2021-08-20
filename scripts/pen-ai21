@@ -13,10 +13,6 @@ test -n "$AI21_API_KEY" || {
 
 export AI21_API_KEY
 
-if test "$PEN_N_COMPLETIONS" -gt 4; then
-    PEN_N_COMPLETIONS=4
-fi
-
 export PEN_PROMPT
 export PEN_MODEL
 export PEN_MAX_TOKENS
