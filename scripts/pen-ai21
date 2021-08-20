@@ -39,7 +39,10 @@ pen_ai21() {
         echo
     fi
 
-    curl https://api.ai21.com/studio/v1/j1-large/complete \
+    # cmd-nice-jq is very slow. Find a faster, reliable solution.
+    # Or use python
+
+    curl "https://api.ai21.com/studio/v1/$PEN_MODEL/complete" \
          -H 'Content-Type: application/json' \
          -H "Authorization: Bearer $AI21_API_KEY" \
          -X POST \
