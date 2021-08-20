@@ -1,17 +1,17 @@
 #!/bin/bash
 
-: "${AIX_API_KEY:="$PEN_LM_KEY"}"
+: "${AI21_API_KEY:="$PEN_LM_KEY"}"
 
-if test -s $HOME/.pen/aix_api_key; then
-    : "${AIX_API_KEY:="$(cat $HOME/.pen/aix_api_key)"}"
+if test -s $HOME/.pen/ai21_api_key; then
+    : "${AI21_API_KEY:="$(cat $HOME/.pen/ai21_api_key)"}"
 fi
 
-test -n "$AIX_API_KEY" || {
-    echo "AIX_API_KEY not given to script"
+test -n "$AI21_API_KEY" || {
+    echo "AI21_API_KEY not given to script"
     exit 1
 }
 
-export AIX_API_KEY
+export AI21_API_KEY
 
 if test "$PEN_N_COMPLETIONS" -gt 4; then
     PEN_N_COMPLETIONS=4
@@ -30,23 +30,23 @@ export PEN_N_COMPLETIONS
 
 sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
-# pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
+# pen-ai21.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
 
-# Interestingly, AIx has this issue where the start of the response is stripped
+# Interestingly, ai21 has this issue where the start of the response is stripped
 
 pen_ai21() {
-    if printf -- "%s\n" "$PEN_FLAGS" | grep -q -P '<aix-begin-newline>'; then
+    if printf -- "%s\n" "$PEN_FLAGS" | grep -q -P '<ai21-begin-newline>'; then
         echo
     fi
 
     curl https://api.ai21.com/studio/v1/j1-large/complete \
          -H 'Content-Type: application/json' \
-         -H 'Authorization: Bearer YOUR_API_KEY' \
+         -H "Authorization: Bearer $AI21_API_KEY" \
          -X POST \
-         -d "{\"prompt\": $(cmd "$PEN_PROMPT"),
+         -d "{\"prompt\": $(cmd-nice-jq "$PEN_PROMPT"),
               \"numResults\": $PEN_N_COMPLETIONS,
               \"maxTokens\": $PEN_MAX_TOKENS,
-              \"stopSequences\": [$(cmd-nice-posix "$PEN_STOP_SEQUENCE")],
+              \"stopSequences\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
               \"topKReturn\": $PEN_TOP_K,
               \"temperature\": $PEN_TEMPERATURE"
              }"'
@@ -56,7 +56,7 @@ if test "$PEN_N_COMPLETIONS" = 1; then
     {
     printf -- "%s" "$PEN_PROMPT"
     pen_ai21 "$@" | sed -z "s~${sedstop}$~~"
-    } | tee /tmp/aix.txt
+    } | tee /tmp/ai21.txt
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
         echo "===== Completion $i ====="
@@ -65,5 +65,5 @@ else
         printf -- "%s" "$PEN_PROMPT"
         pen_ai21 "$@" | sed -z "s~${sedstop}$~~"
         } | awk 1
-    done | tee /tmp/aix.txt
+    done | tee /tmp/ai21.txt
 fi

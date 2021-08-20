@@ -1,10 +1,11 @@
 #!/bin/bash
 export TTY
 
-# Simply put the stdin into quotes
+cmd-nice-jq() {
+    for var in "$@"
+    do
+        printf '%s ' "$(printf %s "$var" | pen-q-jq)";
+    done | sed 's/ $//'
+}
 
-IFS= read -rd '' IN < <(cat);typeset -p IN &>/dev/null
-
-export IN
-
-jq -n 'env.IN'
+cmd-nice-jq "$@"
