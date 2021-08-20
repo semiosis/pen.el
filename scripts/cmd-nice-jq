@@ -3,6 +3,8 @@ export TTY
 
 # Simply put the stdin into quotes
 
-input_fp="$(cat | tf txt)"
+IFS= read -rd '' IN < <(cat);typeset -p IN &>/dev/null
 
-IN="$(cat)" jq -n 'env.IN'
+export IN
+
+jq -n 'env.IN'
