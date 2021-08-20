@@ -81,8 +81,7 @@ esac
 
 case "$PEN_LM_COMMAND" in
     ai21-complete.sh) {
-        # It's too slow otherwise
-        export PEN_N_COMPLETIONS=1
+        :
     }
     ;;
 
