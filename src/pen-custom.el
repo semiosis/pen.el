@@ -75,6 +75,12 @@
 ;; Forcing engines is not generally recommended
 ;; I should really make a tree of engines which can act as fall-backs
 
+(defcustom pen-force-gpt-j-ai21 nil
+  "Forcing use j1-jumbo from AI21"
+  :type 'boolean
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-force-gpt-j-aix nil
   "Forcing use GPT-J from AIx"
   :type 'boolean

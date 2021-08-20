@@ -142,8 +142,14 @@ Reconstruct the entire yaml for a different language."
                 (new-topic (translate (ht-get yaml "topic")))
                 ;; is there a mapcar for macros?
                 (new-vars (loop for v in vars collect
-                               (translate v)))
-                (new-var-slugs (mapcar 'slugify new-vars)))
+                                (translate v)))
+                (new-var-slugs (mapcar 'slugify new-vars))
+                (new-prompt
+                 (final-stop-sequences
+                  (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
+                                           ',stop-sequences)
+                           collect
+                           (pen-expand-template-keyvals prompt stsq)))))
             (pen-etv new-prompt)))
       ;; (ht-get pen-prompts "pf-define-word/1")
       ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)

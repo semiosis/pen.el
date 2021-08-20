@@ -30,6 +30,10 @@
   (interactive (list (pen-read-service-key "openai")))
   (pen-add-key "openai" key))
 
+(defun pen-add-key-ai21 (key)
+  (interactive (list (pen-read-service-key "ai21")))
+  (pen-add-key "ai21" key))
+
 (defun pen-add-key-aix (key)
   (interactive (list (pen-read-service-key "aix")))
   (pen-add-key "aix" key))
