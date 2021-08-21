@@ -38,7 +38,7 @@ pen_ai21() {
     # cmd-nice-jq is very slow. Find a faster, reliable solution.
     # Or use python
 
-    curl "https://api.ai21.com/studio/v1/$PEN_MODEL/complete" \
+    cmd curl "https://api.ai21.com/studio/v1/$PEN_MODEL/complete" \
          -H 'Content-Type: application/json' \
          -H "Authorization: Bearer $AI21_API_KEY" \
          -X POST \
@@ -48,8 +48,13 @@ pen_ai21() {
               \"stopSequences\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
               \"topKReturn\": $PEN_TOP_K,
               \"temperature\": $PEN_TEMPERATURE
-             }"
+             }" | tv
 }
+
+pen_ai21 "$@"
+exit
+
+# jq -r '.completions[3].data.text'
 
 if test "$PEN_N_COMPLETIONS" = 1; then
     {

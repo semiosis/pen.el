@@ -1,0 +1,7 @@
+PowerShell 7.1.3
+Copyright (c) Microsoft Corporation.
+
+https://aka.ms/powershell
+Type 'help' to get help.
+
+PS /home/shane/notes>

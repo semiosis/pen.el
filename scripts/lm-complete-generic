@@ -139,6 +139,11 @@ IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE");typeset -p PEN_ST
 # Will it complain if PEN_STOP_SEQUENCE is empty?
 
 case "$sn" in
+    ai21-complete.sh) {
+        "$completer_sn" > "$tf_response"
+    }
+    ;;
+
     aix-complete.sh) {
         "$completer_sn" > "$tf_response"
     }
@@ -149,7 +154,7 @@ case "$sn" in
     }
     ;;
 
-    openai-complete.sh|openai-*|*) {
+    openai-complete.sh|openai-*) {
         "$completer_sn" api \
             completions.create \
             -e "$PEN_MODEL" \
@@ -161,7 +166,10 @@ case "$sn" in
     }
     ;;
 
-    *)
+    *) {
+        "$completer_sn" > "$tf_response"
+    }
+    ;;
 esac
 
 : "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
