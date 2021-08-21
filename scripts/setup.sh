@@ -66,6 +66,7 @@ mkdir -p /root/org-roam
 cd "$EMACSD"
 test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
 test -d engines || git clone --depth 1 "https://github.com/semiosis/engines"
+test -d interpreters || git clone --depth 1 "https://github.com/semiosis/interpreters"
 test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
 test -d "ink.el" || git clone --depth 1 "https://github.com/semiosis/ink.el"
 test -d "openai-api.el" || git clone --depth 1 "https://github.com/semiosis/openai-api.el"
