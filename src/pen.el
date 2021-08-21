@@ -901,6 +901,10 @@ Otherwise, it will be a shell expression template")
              (message (pen-list2str pen-engines-failed))
              (message (concat (str (length pen-engines-failed)) " failed"))))))))
 
+(defun pen-organise-prompts ()
+  (interactive))
+
+;; TODO Obsolete this function and merge with prompts
 (defun pen-load-interpreters (&optional paths)
   (interactive)
 
