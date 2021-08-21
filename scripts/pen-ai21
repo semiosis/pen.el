@@ -38,7 +38,7 @@ pen_ai21() {
     # cmd-nice-jq is very slow. Find a faster, reliable solution.
     # Or use python
 
-    cmd curl "https://api.ai21.com/studio/v1/$PEN_MODEL/complete" \
+    curl "https://api.ai21.com/studio/v1/$PEN_MODEL/complete" \
          -H 'Content-Type: application/json' \
          -H "Authorization: Bearer $AI21_API_KEY" \
          -X POST \
@@ -48,26 +48,15 @@ pen_ai21() {
               \"stopSequences\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
               \"topKReturn\": $PEN_TOP_K,
               \"temperature\": $PEN_TEMPERATURE
-             }" | tv
+             }"
 }
 
-pen_ai21 "$@"
-exit
+pen_ai21 "$@" > /tmp/ai21-temp.txt
 
-# jq -r '.completions[3].data.text'
-
-if test "$PEN_N_COMPLETIONS" = 1; then
+for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
+    echo "===== Completion $i ====="
     {
     printf -- "%s" "$PEN_PROMPT"
-    pen_ai21 "$@" | sed -z "s~${sedstop}$~~"
-    } | tee /tmp/ai21.txt
-else
-    for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
-        echo "===== Completion $i ====="
-        # The openai api will add the prompt. So emulate it
-        {
-        printf -- "%s" "$PEN_PROMPT"
-        pen_ai21 "$@" | sed -z "s~${sedstop}$~~"
-        } | awk 1
-    done | tee /tmp/ai21.txt
-fi
+    cat /tmp/ai21-temp.txt | jq -r ".completions[$((i - 1))].data.text"
+    } | awk 1
+done | tee /tmp/ai21.txt
