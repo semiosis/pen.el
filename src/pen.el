@@ -827,6 +827,24 @@ Otherwise, it will be a shell expression template")
                         yaml-ht)))
     yaml-ht))
 
+(defun pen-ii-file-load (fp)
+  (let* ((yaml-ht (yamlmod-read-file fp))
+         (incl-name (sor (ht-get yaml-ht "include")))
+         (incl-fp (if (sor incl-name)
+                      (f-join
+                       pen-iis-directory
+                       "iis"
+                       (concat (slugify incl-name) ".ii"))))
+         (incl-yaml (if (and (sor incl-name)
+                             (f-file-p incl-fp))
+                        (pen-ii-file-load incl-fp))))
+    (if incl-yaml
+        (setq yaml-ht
+              (ht-merge incl-yaml
+                        ;; The last is overriding
+                        yaml-ht)))
+    yaml-ht))
+
 (defun pen-prompt-test-examples ()
   (interactive)
   (pen-etv

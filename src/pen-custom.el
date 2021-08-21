@@ -35,6 +35,12 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-interpreters-directory (f-join user-emacs-directory "interpreters")
+  "Personal interpreter respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-glossaries-directory (f-join user-emacs-directory "glossaries")
   "Personal glossary respository"
   :type 'string
