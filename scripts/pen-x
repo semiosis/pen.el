@@ -1,18 +1,7 @@
 #!/bin/bash
 
-aqf() { aqf-real "$@"; }
-cmd() { cmd-nice "$@"; }
-
 : ${TTY:="$(tm-tty)"}
 export TTY
-
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
-
-# Consider using this
-# man expect-lite
-
-# Related: scripts using x
-# $HOME/scripts/xs
 
 stdin_exists() {
     ! [ -t 0 ]
@@ -23,32 +12,16 @@ if stdin_exists; then
     exec <`tm-tty`
 fi
 
-# example 1: this adds and starts a git commit message
-# x -m "\`" -m t -m e -m v -i
-
 PANE_ID="$(tmux display-message -p -t $TMUX_PANE '#{pane_id}' 2>/dev/null)"
 WIN_ID="$(tmux display-message -p -t $TMUX_PANE '#{window_id}' 2>/dev/null)"
 
 SHELL=zsh
 
 input_filter() {
-    # I don't want to escape \n
     sed 's/\([[`;$"]\)/\\\1/g'
 
-    # qne
-    # cat
     return 0
 }
-
-# -tmc is evil.
-
-# Examples
-# x -nto -e » -s "pti3\n" -e "In" -s "%matplotlib tk\n" -i
-# x -nto -sh "pti3" -e "In [" -scc c -s yo -scc m -i
-# x -tmc pti3 -nto -e "In [" -scc c -s yo -scc m -i
-# x -h -d -tmc pti3 -nto -e "In [" -scc c -s "%matplotlib tk\n" -scc m -e "In [" -i
-# x -h -d -tmc pti3 -nto -e "In [" -scc c -s "%matplotlib tk\n" -scc m -e "In [" -a
-# x -d -tmc htop -e running -a
 
 export TMUX=
 
@@ -141,16 +114,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         # save args
         args=("$@")
 
-        eval "set -- $(cmd "$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
+        eval "set -- $(cmd-jq "$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
         command_terms=("$@")
-        INIT_SPAWN="$(cmd "$@")"
+        INIT_SPAWN="$(cmd-jq "$@")"
 
         # restore args
         set -- "${args[@]}"
 
-        eval "set -- $(cmd "$@" | sed -e "s/.*-- //")"
+        eval "set -- $(cmd-jq "$@" | sed -e "s/.*-- //")"
 
-        # cmd "$@"
+        # cmd-jq "$@"
         # echo "$#"
         # exit 0
 
@@ -309,7 +282,7 @@ HEREDOC
 script_append "$expect_script"
 
 # script_append "set SHELL \"\$env(SHELL)\""
-script_append "set SHELL $(aqf "$SHELL")"
+script_append "set SHELL $(cmd-jq "$SHELL")"
 # script_append "spawn -noecho \"\$env(SHELL)\""
 
 # Shell must always be a real shell
@@ -357,7 +330,7 @@ if test "$uses_tmux" = "y"; then
         # This way I can run the script after printing it to stdout
 
         # if test "$respawn_outer" = "y"; then
-        script_append "spawn \"tmux\" \"respawn-pane\" \"-t\" \"$tmux_session_qne\" \"-k\" $(aqf "$tmux_command" | bs '][')"
+        script_append "spawn \"tmux\" \"respawn-pane\" \"-t\" \"$tmux_session_qne\" \"-k\" $(cmd-jq "$tmux_command" | bs '][')"
         # fi
 
         # script_append "sleep 0.5"
@@ -375,7 +348,7 @@ if test "$uses_tmux" = "y"; then
     fi
 elif test "$INIT_SPAWN" = "zsh"; then
     # script_append "spawn \"\$env(SHELL)\""
-    script_append "spawn $(aqf "$INIT_SPAWN")"
+    script_append "spawn $(cmd-jq "$INIT_SPAWN")"
     script_append "expect -exact \"»\""
 else
     if test -n "$tfstdin" && test -n "$INIT_SPAWN"; then
@@ -394,7 +367,7 @@ else
     # script_append "spawn \"\$SHELL\""
     # This is required if I want to spawn this way:
     # x -cd "$(pwd)" -sh "racket -iI racket" -e ">" -i
-    script_append "spawn $(aqf "$INIT_SPAWN")"
+    script_append "spawn $(cmd-jq "$INIT_SPAWN")"
 
     # script_append "expect -exact \"\r\""
 fi
@@ -973,7 +946,7 @@ if ! test "$DRY_RUN" = "y"; then
         tmux attach -t "$tmux_session"
     elif test "$print_output" = "y"; then
         tm catp "$tmux_session"
-        # cmd tm catp "$tmux_session"
+        # cmd-jq tm catp "$tmux_session"
         tmux kill-session -t "$tmux_session"
     elif test "$uses_tmux" = "y"; then
         tmux swap-pane -s "$tmux_session:1.0" -t "$PANE_ID" \; kill-session -t "$tmux_session"
