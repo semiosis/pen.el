@@ -5,7 +5,7 @@
 ** Language models and APIs
 - [X] OpenAI API (=GPT-3=)
   - https://beta.openai.com/
-- [X] AI21
+- [X] AI21 (=j1-jumbo=, etc.)
   - https://www.ai21.com/
 - [X] Huggingface Hub
   - https://github.com/huggingface/huggingface_hub 
