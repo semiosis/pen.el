@@ -832,7 +832,7 @@ Otherwise, it will be a shell expression template")
          (incl-name (sor (ht-get yaml-ht "include")))
          (incl-fp (if (sor incl-name)
                       (f-join
-                       pen-iis-directory
+                       pen-interpreters-directory
                        "interpreters"
                        (concat (slugify incl-name) ".ii"))))
          (incl-yaml (if (and (sor incl-name)
@@ -924,8 +924,13 @@ Otherwise, it will be a shell expression template")
 
                         ;; function
                         (language (ht-get yaml-ht "language"))
-                        (title (or (ht-get yaml-ht "title")
-                                   language)))
+                        (task (ht-get yaml-ht "task"))
+                        (title (pen-expand-template-keyvals
+                                (or (ht-get yaml-ht "title")
+                                    (sor task)
+                                    (and (sor language)
+                                         (concat "Imagine a " language " interpreter")))
+                                `(("language" . ,language)))))
                    (ht-set yaml-ht "path" path)
                    (message (concat "pen-mode: Loaded interpreter " title))
                    (ht-set pen-interpreters title yaml-ht))
@@ -953,6 +958,7 @@ Function names are prefixed with pf- for easy searching"
   (setq pen-prompt-functions-failed nil)
 
   (pen-load-engines)
+  (pen-load-interpreters)
 
   (noupd
    (eval
