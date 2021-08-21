@@ -920,7 +920,7 @@ Otherwise, it will be a shell expression template")
 
                 ;; results in a hash table
                 (try
-                 (let* ((yaml-ht (pen-interpreter-file-load path))
+                 (let* ((yaml-ht (pen-ii-file-load path))
 
                         ;; function
                         (language (ht-get yaml-ht "language"))
