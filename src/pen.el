@@ -862,6 +862,10 @@ Otherwise, it will be a shell expression template")
 
 (defvar pen-engines-failed '())
 
+(defvar pen-interpreters (make-hash-table :test 'equal)
+  "pen-interpreters are specialised prompts ")
+(defvar pen-interpreters-failed '())
+
 ;; (pen-etv (ht-get pen-engines "OpenAI Davinci"))
 
 (defun pen-load-engines (&optional paths)
@@ -909,7 +913,7 @@ Otherwise, it will be a shell expression template")
                 (-non-nil
                  (mapcar 'sor (glob (concat pen-interpreters-directory "/interpreters" "/*.ii")))))))
        (cl-loop for path in paths do
-                (message (concat "pen-mode: Loading .interpreter file " path))
+                (message (concat "pen-mode: Loading .ii file " path))
 
                 ;; Do a recursive interpreter merge from includes
                 ;; ht-merge
@@ -919,7 +923,9 @@ Otherwise, it will be a shell expression template")
                  (let* ((yaml-ht (pen-interpreter-file-load path))
 
                         ;; function
-                        (title (ht-get yaml-ht "title")))
+                        (language (ht-get yaml-ht "language"))
+                        (title (or (ht-get yaml-ht "title")
+                                   language)))
                    (ht-set yaml-ht "path" path)
                    (message (concat "pen-mode: Loaded interpreter " title))
                    (ht-set pen-interpreters title yaml-ht))
