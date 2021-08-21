@@ -186,7 +186,7 @@ case "$sn" in
             if test "$#" -eq 0; then
                 sn=penl
                 penl_strip_pf=y
-            elif test "$#" -eq 1; then
+            elif test "$#" -ge 1 && ! printf -- "%s\n" "$1" | grep -Pq "/$(( $# - 1 ))\$"; then
                 sn=penh
                 penl_strip_pf=y
             fi
@@ -317,6 +317,14 @@ case "$sn" in
             shift
 
             set -- "pf-$fun" "$@"
+        fi
+
+        if test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '/[0-9]'; then
+            if test "$#" -gt 0; then
+                fun="$(penl | grep "^$1/" | head -n 1)"
+            else
+                fun="$(penl | grep "^$1/$#" | head -n 1)"
+            fi
         fi
 
         show_banner=n

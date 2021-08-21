@@ -1,0 +1,76 @@
+#!/bin/bash
+export TTY
+
+# Imaginary interpreter
+
+# For the real one-line interpreter, see:
+# iol
+
+# For the imaginary one-line interpreter, see:
+# iiol
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+
+    -p) {
+        prompt="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -nl) {
+        nl="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+lang="$1"
+test -n "$lang" || exit 1
+
+: "${prompt:="${lang}"}"
+
+: "${nl:="; "}"
+
+prompt="$(p "$prompt")"
+
+mkdir -p "$NOTES/programs/ii"
+
+# Let emacs provide both the ext and the lang via environment variables
+# ext="$(get-ext-for-lang "$lang")"
+id="$$"
+transcript_fp="$NOTES/programs/ii/${lang}-${id}.${ext}"
+touch "$transcript_fp"
+
+read -ep "$prompt: " -r line
+# read -r line < <(readln "$prompt")
+line="$(printf -- "%s\n" "$line" | sed "s/$nl/\\n/g")"
+printf -- "%s" "$line" | awk 1 >> "$transcript_fp"
+out="$(iiol "$lang" "$line")"
+printf -- "%s" "Output: $out" | awk 1
+
+while read -ep "$prompt: " -r line; do
+# while read -r line < <(readln "$prompt"); do
+# pen-chomp it
+line="$(printf -- "%s" "$line" | sed -z "s/^\\s*$//")"
+if test -z "$line"; then
+    echo -n "$prompt: "
+    tail -n 1 "$transcript_fp"
+fi
+(
+    exec 0</dev/null
+    multiline="$(printf -- "%s\n" "$line" | sed "s/$nl/\\n/g")"
+    if test -n "$multiline"; then
+        printf -- "%s" "$multiline" | awk 1 >> "$transcript_fp"
+    fi
+
+    # out="$(upd icj -id "$$" "$lang" "$multiline")"
+
+    out="$(upd icj -id "$$" "$lang" | cat)"
+    printf -- "%s" "Output: $out" | awk 1
+)
+done
