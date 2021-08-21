@@ -833,7 +833,7 @@ Otherwise, it will be a shell expression template")
          (incl-fp (if (sor incl-name)
                       (f-join
                        pen-iis-directory
-                       "iis"
+                       "interpreters"
                        (concat (slugify incl-name) ".ii"))))
          (incl-yaml (if (and (sor incl-name)
                              (f-file-p incl-fp))
