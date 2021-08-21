@@ -66,11 +66,11 @@
 (defset pen-prompt-completion-functions nil)
 (defset pen-prompt-functions-meta nil)
 
-(defun pen-yaml-test (yaml key)
+(defun pen-yaml-test (yaml-ht key)
   (ignore-errors
-    (if (and yaml
+    (if (and yaml-ht
              (sor key))
-        (ht-get yaml key))))
+        (ht-get yaml-ht key))))
 
 (defun pen-test-translate-prompt ()
   (interactive)
@@ -89,7 +89,7 @@
 
 (defun pen-translate-prompt ()
   "Select a prompt file and translate it.
-Reconstruct the entire yaml for a different language."
+Reconstruct the entire yaml-ht for a different language."
   (interactive)
 
   (cl-macrolet ((translate
@@ -99,17 +99,22 @@ Reconstruct the entire yaml for a different language."
                           (to-language ,to-lang)
                           (topic ,topic)
                           (input ,,input))
-                      (pen-single-generation ,translator)))))
+                      (if input
+                          (pen-single-generation ,translator))))))
     (let* ((fname (fz pen-prompt-functions nil nil "pen translate prompt: "))
-           (yaml (ht-get pen-prompts fname))
-           (prompt (ht-get yaml "prompt"))
-           (topic (ht-get yaml "topic"))
-           (vars (vector2list (ht-get yaml "vars")))
+           (yaml-ht (ht-get pen-prompts fname))
+           (prompt (ht-get yaml-ht "prompt"))
+           (title (ht-get yaml-ht "title"))
+           (task (ht-get yaml-ht "task"))
+           (doc (ht-get yaml-ht "doc"))
+           (topic (ht-get yaml-ht "topic"))
+           (vars (vector2list (ht-get yaml-ht "vars")))
            (var-slugs (mapcar 'slugify vars))
-           (from-lang (ht-get yaml "language"))
+           (examples-list (vector2list (ht-get yaml-ht "examples")))
+           (from-lang (ht-get yaml-ht "language"))
            (from-lang (or from-lang (read-string-hist ".prompt Origin Language: ")))
            (to-lang (read-string-hist ".prompt Destination Language: "))
-           (translator (let ((tlr (ht-get yaml "translator")))
+           (translator (let ((tlr (ht-get yaml-ht "translator")))
                          (if (and
                               (sor tlr)
                               (not (string-match "^(" tlr)))
@@ -135,22 +140,42 @@ Reconstruct the entire yaml for a different language."
                         (concat "'" translator))))
 
       (if translator
-          (let ((new-prompt (translate prompt))
-                (new-title (translate (ht-get yaml "title")))
-                (new-task (translate (ht-get yaml "task")))
-                (new-doc (translate (ht-get yaml "doc")))
-                (new-topic (translate (ht-get yaml "topic")))
-                ;; is there a mapcar for macros?
-                (new-vars (loop for v in vars collect
-                                (translate v)))
-                (new-var-slugs (mapcar 'slugify new-vars))
-                (new-prompt
-                 (final-stop-sequences
-                  (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
-                                           ',stop-sequences)
-                           collect
-                           (pen-expand-template-keyvals prompt stsq)))))
-            (pen-etv new-prompt)))
+          (let* ((new-prompt (translate prompt))
+                 (new-title (translate title))
+                 (new-task (translate task))
+                 (new-topic (translate topic))
+                 (new-doc (translate doc))
+                 ;; is there a mapcar for macros?
+                 (new-vars (loop for v in vars collect
+                                 (translate v)))
+                 ;; (new-var-slugs (mapcar 'slugify new-vars))
+                 (new-examples
+                  (if (vectorp (car examples-list))
+                      (mapcar
+                       (lambda (v)
+                         (loop for e in (vector2list v) collect
+                               (translate e)))
+                       examples-list)
+                    (loop for e in examples-list collect
+                          (translate e))))
+                 (new-prompt
+                  (pen-expand-template-keyvals
+                   new-prompt
+                   (-zip vars (mapcar (lambda (s) (format "<%s>" s)) new-vars))))
+                 (newht (let ((h (make-hash-table :test 'equal)))
+                          (ht-set h "prompt" new-prompt)
+                          (ht-set h "title" new-title)
+                          (ht-set h "task" new-task)
+                          (ht-set h "doc" new-doc)
+                          (ht-set h "examples" new-examples)
+                          (ht-set h "topic" new-topic)
+                          (ht-set h "vars" new-vars)
+                          (ht-merge yaml-ht h)))
+                 (newyaml (plist2yaml (ht->plist newht))))
+            (new-buffer-from-string
+             newyaml
+             "*new prompt*"
+             'prompt-description-mode)))
       ;; (ht-get pen-prompts "pf-define-word/1")
       ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
       )))
@@ -223,7 +248,12 @@ Reconstruct the entire yaml for a different language."
 (defun pen-test-expand-keyvals ()
   (interactive)
   (pen-etv (pen-expand-template-keyvals " <y> <thing> " '(("thing" . "yo")
-                                                      ("y" . "n")))))
+                                                          ("y" . "n")))))
+
+(defun pen-test-expand-zip-two-lists ()
+  (interactive)
+  (pen-etv (pen-expand-template-keyvals " <y> <thing> "
+                                        (-zip '("thing" "y") '("yo" "n")))))
 
 (defun pen-expand-template-keyvals (s keyvals)
   "expand template from alist"
@@ -762,8 +792,8 @@ Otherwise, it will be a shell expression template")
 ;; also, check for a key which specifies that a prompt is only for templating
 ;; if it doesn't exist, then set not-template
 (defun pen-prompt-file-load (fp)
-  (let* ((yaml (yamlmod-read-file fp))
-         (incl-name (sor (ht-get yaml "include")))
+  (let* ((yaml-ht (yamlmod-read-file fp))
+         (incl-name (sor (ht-get yaml-ht "include")))
          (incl-fp (if (sor incl-name)
                       (f-join
                        pen-prompts-directory
@@ -773,15 +803,15 @@ Otherwise, it will be a shell expression template")
                              (f-file-p incl-fp))
                         (pen-prompt-file-load incl-fp))))
     (if incl-yaml
-        (setq yaml
+        (setq yaml-ht
               (ht-merge incl-yaml
                         ;; The last is overriding
-                        yaml)))
-    yaml))
+                        yaml-ht)))
+    yaml-ht))
 
 (defun pen-engine-file-load (fp)
-  (let* ((yaml (yamlmod-read-file fp))
-         (incl-name (sor (ht-get yaml "include")))
+  (let* ((yaml-ht (yamlmod-read-file fp))
+         (incl-name (sor (ht-get yaml-ht "include")))
          (incl-fp (if (sor incl-name)
                       (f-join
                        pen-engines-directory
@@ -791,11 +821,11 @@ Otherwise, it will be a shell expression template")
                              (f-file-p incl-fp))
                         (pen-engine-file-load incl-fp))))
     (if incl-yaml
-        (setq yaml
+        (setq yaml-ht
               (ht-merge incl-yaml
                         ;; The last is overriding
-                        yaml)))
-    yaml))
+                        yaml-ht)))
+    yaml-ht))
 
 (defun pen-prompt-test-examples ()
   (interactive)
@@ -835,13 +865,13 @@ Otherwise, it will be a shell expression template")
 
                 ;; results in a hash table
                 (try
-                 (let* ((yaml (pen-engine-file-load path))
+                 (let* ((yaml-ht (pen-engine-file-load path))
 
                         ;; function
-                        (title (ht-get yaml "title")))
-                   (ht-set yaml "path" path)
+                        (title (ht-get yaml-ht "title")))
+                   (ht-set yaml-ht "path" path)
                    (message (concat "pen-mode: Loaded engine " title))
-                   (ht-set pen-engines title yaml))
+                   (ht-set pen-engines title yaml-ht))
                  (add-to-list 'pen-engines-failed path)))
        (if pen-engines-failed
            (progn
@@ -879,137 +909,137 @@ Function names are prefixed with pf- for easy searching"
 
                 ;; results in a hash table
                 (try
-                 (let* ((yaml (pen-prompt-file-load path))
+                 (let* ((yaml-ht (pen-prompt-file-load path))
                         (path path)
 
                         ;; function
-                        (task-ink (ht-get yaml "task"))
+                        (task-ink (ht-get yaml-ht "task"))
                         (task (ink-decode task-ink))
-                        (title (ht-get yaml "title"))
+                        (title (ht-get yaml-ht "title"))
                         (title (sor title
                                     task))
                         (title-slug (slugify title))
-                        (aliases (vector2list (ht-get yaml "aliases")))
+                        (aliases (vector2list (ht-get yaml-ht "aliases")))
 
                         ;; lm-complete
-                        (cache (pen-yaml-test yaml "cache"))
+                        (cache (pen-yaml-test yaml-ht "cache"))
                         ;; openai-complete.sh is the default LM completion command
                         ;; but the .prompt may specify a different one
                         (lm-command (or
                                      pen-override-lm-command
-                                     (ht-get yaml "lm-command")
+                                     (ht-get yaml-ht "lm-command")
                                      pen-default-lm-command))
 
-                        (in-development (pen-yaml-test yaml "in-development"))
+                        (in-development (pen-yaml-test yaml-ht "in-development"))
 
                         ;; internals
-                        (prompt (ht-get yaml "prompt"))
-                        (mode (ht-get yaml "mode"))
-                        (flags (ht-get yaml "flags"))
-                        (subprompts (ht-get yaml "subprompts"))
-                        (is-info (ht-get yaml "is-info"))
-                        (new-document (ht-get yaml "new-document"))
-                        (start-yas (ht-get yaml "start-yas"))
-                        (yas (ht-get yaml "yas"))
-                        (end-yas (ht-get yaml "end-yas"))
-                        (repeater (ht-get yaml "repeater"))
-                        (prefer-external (pen-yaml-test yaml "prefer-external"))
-                        (conversation-mode (pen-yaml-test yaml "conversation-mode"))
-                        (filter (pen-yaml-test yaml "filter"))
+                        (prompt (ht-get yaml-ht "prompt"))
+                        (mode (ht-get yaml-ht "mode"))
+                        (flags (ht-get yaml-ht "flags"))
+                        (subprompts (ht-get yaml-ht "subprompts"))
+                        (is-info (ht-get yaml-ht "is-info"))
+                        (new-document (ht-get yaml-ht "new-document"))
+                        (start-yas (ht-get yaml-ht "start-yas"))
+                        (yas (ht-get yaml-ht "yas"))
+                        (end-yas (ht-get yaml-ht "end-yas"))
+                        (repeater (ht-get yaml-ht "repeater"))
+                        (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
+                        (conversation-mode (pen-yaml-test yaml-ht "conversation-mode"))
+                        (filter (pen-yaml-test yaml-ht "filter"))
                         ;; Don't actually use this.
                         ;; But I can toggle to use the prettifier with a bool
-                        (prettifier (ht-get yaml "prettifier"))
-                        (collation-postprocessor (ht-get yaml "pen-collation-postprocessor"))
-                        (completion (pen-yaml-test yaml "completion"))
-                        (insertion (pen-yaml-test yaml "insertion"))
-                        (no-trim-start (or (pen-yaml-test yaml "no-trim-start")
-                                           (pen-yaml-test yaml "completion")))
-                        (no-trim-end (pen-yaml-test yaml "no-trim-end"))
-                        (examples-list (vector2list (ht-get yaml "examples")))
+                        (prettifier (ht-get yaml-ht "prettifier"))
+                        (collation-postprocessor (ht-get yaml-ht "pen-collation-postprocessor"))
+                        (completion (pen-yaml-test yaml-ht "completion"))
+                        (insertion (pen-yaml-test yaml-ht "insertion"))
+                        (no-trim-start (or (pen-yaml-test yaml-ht "no-trim-start")
+                                           (pen-yaml-test yaml-ht "completion")))
+                        (no-trim-end (pen-yaml-test yaml-ht "no-trim-end"))
+                        (examples-list (vector2list (ht-get yaml-ht "examples")))
                         (examples
                          (if (vectorp (car examples-list))
                              (vector2list (car examples-list))
                            examples-list))
-                        (preprocessors (vector2list (ht-get yaml "preprocessors")))
-                        (validator (ht-get yaml "validator"))
-                        (prompt-filter (ht-get yaml "prompt-filter"))
-                        (postprocessor (ht-get yaml "postprocessor"))
-                        (n-collate (or (ht-get yaml "n-collate")
+                        (preprocessors (vector2list (ht-get yaml-ht "preprocessors")))
+                        (validator (ht-get yaml-ht "validator"))
+                        (prompt-filter (ht-get yaml-ht "prompt-filter"))
+                        (postprocessor (ht-get yaml-ht "postprocessor"))
+                        (n-collate (or (ht-get yaml-ht "n-collate")
                                        1))
-                        (n-completions (or (ht-get yaml "n-completions")
+                        (n-completions (or (ht-get yaml-ht "n-completions")
                                            5))
-                        (n-test-runs (ht-get yaml "n-test-runs"))
+                        (n-test-runs (ht-get yaml-ht "n-test-runs"))
 
                         ;; API
                         (engine
-                         (let* ((engine-title (ht-get yaml "engine"))
+                         (let* ((engine-title (ht-get yaml-ht "engine"))
                                 (engine (if (and
                                              engine-title
                                              pen-engines)
                                             (ht-get pen-engines engine-title))))
                            (if engine
-                               (setq yaml (ht-merge yaml engine)))
+                               (setq yaml-ht (ht-merge yaml-ht engine)))
                            engine-title))
-                        (model (ht-get yaml "model"))
-                        (min-tokens (ht-get yaml "min-tokens"))
-                        (max-tokens (ht-get yaml "max-tokens"))
-                        (top-p (ht-get yaml "top-p"))
-                        (top-k (ht-get yaml "top-k"))
-                        (temperature (ht-get yaml "temperature"))
+                        (model (ht-get yaml-ht "model"))
+                        (min-tokens (ht-get yaml-ht "min-tokens"))
+                        (max-tokens (ht-get yaml-ht "max-tokens"))
+                        (top-p (ht-get yaml-ht "top-p"))
+                        (top-k (ht-get yaml-ht "top-k"))
+                        (temperature (ht-get yaml-ht "temperature"))
                         (stop-sequences
-                         (or (vector2list (ht-get yaml "stop-sequences"))
+                         (or (vector2list (ht-get yaml-ht "stop-sequences"))
                              ;; (list "\n")
                              (list "###<long>###")))
                         (suggest-p
-                         (or (vector2list (ht-get yaml "suggest-p"))
+                         (or (vector2list (ht-get yaml-ht "suggest-p"))
                              (list t)))
                         ;; These are automatically turned into prompt functions
-                        (nl-suggest-p (vector2list (ht-get yaml "nl-suggest-p")))
+                        (nl-suggest-p (vector2list (ht-get yaml-ht "nl-suggest-p")))
                         (stop-sequence
                          (if stop-sequences (car stop-sequences)))
 
                         (stop-patterns
-                         (or (vector2list (ht-get yaml "stop-patterns"))
+                         (or (vector2list (ht-get yaml-ht "stop-patterns"))
                              ;; By default, stop when you see ^Input
                              (list "^Input:")))
 
                         (split-patterns
-                         (or (vector2list (ht-get yaml "split-patterns"))
+                         (or (vector2list (ht-get yaml-ht "split-patterns"))
                              nil
                              ;; (list "\n")
                              ))
 
                         (end-split-patterns
-                         (or (vector2list (ht-get yaml "end-split-patterns"))
+                         (or (vector2list (ht-get yaml-ht "end-split-patterns"))
                              nil
                              ;; (list "\n")
                              ))
 
                         (translator
-                         (let ((tr (ht-get yaml "translator")))
+                         (let ((tr (ht-get yaml-ht "translator")))
                            (if (sor tr)
                                (add-to-list 'pen-translators tr))
                            tr))
 
                         ;; docs
-                        (problems (vector2list (ht-get yaml "problems")))
-                        (design-patterns (vector2list (ht-get yaml "design-patterns")))
-                        (todo (vector2list (ht-get yaml "todo")))
-                        (notes (vector2list (ht-get yaml "notes")))
-                        (aims (vector2list (ht-get yaml "aims")))
-                        (past-versions (vector2list (ht-get yaml "past-versions")))
-                        (external-related (vector2list (ht-get yaml "external-related")))
-                        (related-prompts (vector2list (ht-get yaml "related-prompts")))
-                        (future-titles (vector2list (ht-get yaml "future-titles")))
+                        (problems (vector2list (ht-get yaml-ht "problems")))
+                        (design-patterns (vector2list (ht-get yaml-ht "design-patterns")))
+                        (todo (vector2list (ht-get yaml-ht "todo")))
+                        (notes (vector2list (ht-get yaml-ht "notes")))
+                        (aims (vector2list (ht-get yaml-ht "aims")))
+                        (past-versions (vector2list (ht-get yaml-ht "past-versions")))
+                        (external-related (vector2list (ht-get yaml-ht "external-related")))
+                        (related-prompts (vector2list (ht-get yaml-ht "related-prompts")))
+                        (future-titles (vector2list (ht-get yaml-ht "future-titles")))
 
-                        (var-defaults (vector2list (ht-get yaml "var-defaults")))
+                        (var-defaults (vector2list (ht-get yaml-ht "var-defaults")))
 
                         (doc (mapconcat
                               'identity
                               (-filter-not-empty-string
                                (list
                                 title
-                                (ht-get yaml "doc")
+                                (ht-get yaml-ht "doc")
                                 (concat "\npath:\n" (pen-list-to-orglist (list path)))
                                 (if design-patterns (concat "\ndesign-patterns:\n" (pen-list-to-orglist design-patterns)))
                                 (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
@@ -1031,7 +1061,7 @@ Function names are prefixed with pf- for easy searching"
                               "\n"))
 
                         ;; variables
-                        (vars (vector2list (ht-get yaml "vars")))
+                        (vars (vector2list (ht-get yaml-ht "vars")))
                         (var-slugs (mapcar 'slugify vars))
                         (var-syms
                          (let ((ss (mapcar 'intern var-slugs)))
@@ -1087,10 +1117,10 @@ Function names are prefixed with pf- for easy searching"
                               (setq iteration (+ 1 iteration))
                               (message (str iteration)))))))
 
-                   (ht-set pen-prompts func-name yaml)
+                   (ht-set pen-prompts func-name yaml-ht)
                    (loop for an in alias-names do
-                         (ht-set pen-prompts an yaml))
-                   (add-to-list 'pen-prompt-functions-meta yaml)
+                         (ht-set pen-prompts an yaml-ht))
+                   (add-to-list 'pen-prompt-functions-meta yaml-ht)
 
                    ;; var names will have to be slugged, too
 
