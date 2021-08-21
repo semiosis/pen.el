@@ -897,6 +897,39 @@ Otherwise, it will be a shell expression template")
              (message (pen-list2str pen-engines-failed))
              (message (concat (str (length pen-engines-failed)) " failed"))))))))
 
+(defun pen-load-interpreters (&optional paths)
+  (interactive)
+
+  (setq pen-interpreters (make-hash-table :test 'equal))
+  (setq pen-interpreters-failed '())
+  (noupd
+   (eval
+    `(let ((paths
+            (or ,paths
+                (-non-nil
+                 (mapcar 'sor (glob (concat pen-interpreters-directory "/interpreters" "/*.ii")))))))
+       (cl-loop for path in paths do
+                (message (concat "pen-mode: Loading .interpreter file " path))
+
+                ;; Do a recursive interpreter merge from includes
+                ;; ht-merge
+
+                ;; results in a hash table
+                (try
+                 (let* ((yaml-ht (pen-interpreter-file-load path))
+
+                        ;; function
+                        (title (ht-get yaml-ht "title")))
+                   (ht-set yaml-ht "path" path)
+                   (message (concat "pen-mode: Loaded interpreter " title))
+                   (ht-set pen-interpreters title yaml-ht))
+                 (add-to-list 'pen-interpreters-failed path)))
+       (if pen-interpreters-failed
+           (progn
+             (message "failed:")
+             (message (pen-list2str pen-interpreters-failed))
+             (message (concat (str (length pen-interpreters-failed)) " failed"))))))))
+
 (defun pen-list-prompt-paths ()
   (-non-nil
    (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))
