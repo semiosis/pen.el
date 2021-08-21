@@ -1,0 +1,22 @@
+#+BEGIN_SRC text -n :async :results verbatim code
+  File Edit Options Buffers Tools Lisp-Interaction Help
+  ;; This buffer is for text that is not saved, and for Lisp evaluation.
+  ;; To create a file, visit it with C-x C-f and enter text in its buffer.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  -UUU:----F1  *scratch*      All L4     (Lisp Interaction ElDoc) ---------------
+  Quit
+#+END_SRC
