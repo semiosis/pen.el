@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Whoa, this was really bad. It broke the tty command.
+# exec 0</dev/null
+
+# I also haven't yet tried simply specifying /dev/tty, although I'm
+# unsure how to test it, and tty might do it
+
+# ls -la /proc/$$/fd/2 | grep -q pty && exec <&2;
+
+{
+    test -n "$TTY" && echo "$TTY"
+} || {
+    ttymaybe="$(tty 2>&1)"
+    # echo "$ttymaybe $?" 1>&2
+    if [[ "${ttymaybe:0:1}" == "/" ]]; then
+        printf -- "%s\n" "$ttymaybe"
+        :
+    else
+        false
+    fi
+} || {
+   # Not sure if this always succeeds
+   # It does work though, when it works, even if tty above has forgotten
+   # If I have problems then remove it I guess, but then 
+   # test on:
+   # term-mode cr $NOTES/ws/problog/scratch/scratch.problog
+   # eipe2 is broken now
+    {
+       exec 5>/dev/tty && echo /dev/tty
+       # This properly hides the error and the fallback works correctly
+       # Test from "buffer-name": "*slime-repl sbcl*"
+       # (b sph eww "https://blog.miguelgrinberg.com/post/how-to-make-python-wait")
+    } 2>/dev/null
+} || {
+    TTY="$(tmux display-message -p '#{pane_tty}')"
+    echo "$TTY"
+}
