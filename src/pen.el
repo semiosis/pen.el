@@ -437,9 +437,15 @@ Reconstruct the entire yaml-ht for a different language."
                        ,yas
                        ,end-yas))
 
-                  (subprompts ,subprompts)
+                  (final-var-defaults
+                   (or (pen-var-value-maybe 'var-defaults)
+                       ,var-defaults))
 
-                  (subprompts
+                  (final-subprompts
+                   (or (pen-var-value-maybe 'subprompts)
+                       ,subprompts))
+
+                  (subprompts-al
                    (if subprompts
                        (ht->alist (-reduce 'ht-merge (vector2list subprompts)))))
 
@@ -467,6 +473,19 @@ Reconstruct the entire yaml-ht for a different language."
                                       initval))))
                              ;; Don't include &key pretty
                              (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v)))))
+
+                  (vals
+                   (cl-loop
+                    for tp in (-zip-fill nil vals final-var-defaults)
+                    collect
+                    (if (and (not (sor (car tp)))
+                             (sor (cdr tp)))
+                        ;; TODO if a val is empty, apply the default with the subprompts in scope
+                        `(eval
+                          `(pen-let-keyvals
+                            ',',subprompts-al
+                            (eval-string ,,(str (cdr tp)))))
+                      (cdr (tp)))))
 
                   ;; preprocess the values of the parameters
                   (vals
@@ -725,9 +744,9 @@ Reconstruct the entire yaml-ht for a different language."
                                 (list (message "Try UPDATE=y or debugging")))))))
 
                   (results (if final-include-prompt
-                              (mapcar
-                                   (lambda (s) (concat final-prompt s))
-                                   results)
+                               (mapcar
+                                (lambda (s) (concat final-prompt s))
+                                results)
                              results))
 
                   (result (if no-select-result
