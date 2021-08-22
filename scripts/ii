@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Imaginary interpreter
+# Bash version.
 
 lang="$1"
 test -n "$lang" || exit 1

@@ -65,6 +65,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # No generation/query
+    -nogen|-n) {
+        no_gen=y
+        shift
+    }
+    ;;
+
     -gui) {
         PEN_USE_GUI=y
         share_x=y
@@ -249,17 +256,23 @@ case "$sn" in
                 include_prompt=nil
             fi
 
+            if test "$nogen" = "y"; then
+                no_gen=t
+            else
+                no_gen=nil
+            fi
+
             if test "$all" = "y"; then
                 if test "$UPDATE" = y; then
-                    set -- -e "(json-encode-list (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt)))"
+                    set -- -e "(json-encode-list (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen)))"
                 else
-                    set -- -e "(json-encode-list ($pfname $CMD :no-select-result t :include-prompt $include_prompt))"
+                    set -- -e "(json-encode-list ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen))"
                 fi
             else
                 if test "$UPDATE" = y; then
-                    set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt))))"
+                    set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen))))"
                 else
-                    set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t :include-prompt $include_prompt)))"
+                    set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen)))"
                 fi
             fi
 
