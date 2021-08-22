@@ -12,7 +12,6 @@ echo
 user_prompt="Input: "
 
 lang_lc="$(printf -- "%s" "$lang" | tr '[:upper:]' '[:lower:]')"
-set -x
 
 fun="$(penl | grep -P "imagine-a-${lang_lc}-interpreter/2")"
 
@@ -29,4 +28,4 @@ prompt_the_lm() {
 }
 
 prompt_the_lm
-prompt_the_lm "5 + 5"
+# prompt_the_lm "5 + 5"
