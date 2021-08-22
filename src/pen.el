@@ -422,6 +422,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'include-prompt)
                        ,include-prompt))
 
+                  (final-no-gen
+                   (or (pen-var-value-maybe 'no-gen)
+                       ,no-gen))
+
                   (final-interpreter
                    (or (pen-var-value-maybe 'interpreter)
                        ,interpreter))
@@ -1028,6 +1032,7 @@ Function names are prefixed with pf- for easy searching"
                         (yas (ht-get yaml-ht "yas"))
                         (end-yas (ht-get yaml-ht "end-yas"))
                         (include-prompt (ht-get yaml-ht "include-prompt"))
+                        (no-gen (ht-get yaml-ht "no-gen"))
                         (repeater (ht-get yaml-ht "repeater"))
                         (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
                         (interpreter (pen-yaml-test yaml-ht "interpreter"))
