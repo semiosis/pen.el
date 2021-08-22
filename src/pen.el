@@ -439,15 +439,15 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-var-defaults
                    (or (pen-var-value-maybe 'var-defaults)
-                       ,var-defaults))
+                       ',var-defaults))
 
                   (final-subprompts
                    (or (pen-var-value-maybe 'subprompts)
                        ,subprompts))
 
                   (subprompts-al
-                   (if subprompts
-                       (ht->alist (-reduce 'ht-merge (vector2list subprompts)))))
+                   (if final-subprompts
+                       (ht->alist (-reduce 'ht-merge (vector2list final-subprompts)))))
 
                   (final-prompt ,prompt)
 
@@ -474,18 +474,18 @@ Reconstruct the entire yaml-ht for a different language."
                              ;; Don't include &key pretty
                              (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v)))))
 
-                  (vals
-                   (cl-loop
-                    for tp in (-zip-fill nil vals final-var-defaults)
-                    collect
-                    (if (and (not (sor (car tp)))
-                             (sor (cdr tp)))
-                        ;; TODO if a val is empty, apply the default with the subprompts in scope
-                        `(eval
-                          `(pen-let-keyvals
-                            ',',subprompts-al
-                            (eval-string ,,(str (cdr tp)))))
-                      (cdr (tp)))))
+                  ;; (vals
+                  ;;  (cl-loop
+                  ;;   for tp in (-zip-fill nil vals final-var-defaults)
+                  ;;   collect
+                  ;;   (if (and (not (sor (car tp)))
+                  ;;            (sor (cdr tp)))
+                  ;;       ;; TODO if a val is empty, apply the default with the subprompts in scope
+                  ;;       `(eval
+                  ;;         `(pen-let-keyvals
+                  ;;           ',',subprompts-al
+                  ;;           (eval-string ,,(str (cdr tp)))))
+                  ;;     (cdr (tp)))))
 
                   ;; preprocess the values of the parameters
                   (vals
