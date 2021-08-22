@@ -902,7 +902,12 @@ Otherwise, it will be a shell expression template")
              (message (concat (str (length pen-engines-failed)) " failed"))))))))
 
 (defun pen-organise-prompts ()
-  (interactive))
+  (interactive)
+  (let ((paths
+         (-non-nil
+          (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt"))))))
+       (cl-loop for path in paths do
+                (message (concat "pen-mode: Loading .prompt file " path)))))
 
 ;; TODO Obsolete this function and merge with prompts
 (defun pen-load-interpreters (&optional paths)
