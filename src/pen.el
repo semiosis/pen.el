@@ -992,7 +992,6 @@ Function names are prefixed with pf- for easy searching"
                         (title (sor title
                                     task))
                         (title-slug (slugify title))
-                        (aliases (vector2list (ht-get yaml-ht "aliases")))
 
                         ;; lm-complete
                         (cache (pen-yaml-test yaml-ht "cache"))
@@ -1147,11 +1146,6 @@ Function names are prefixed with pf- for easy searching"
                            ss))
                         (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length vars))))
                         (func-sym (intern func-name))
-                        (alias-names
-                         (mapcar
-                          (lambda (s) (concat pen-prompt-function-prefix s "/" (str (length vars))))
-                          (mapcar 'slugify aliases)))
-                        (alias-slugs (mapcar 'intern alias-names))
                         (iargs
                          (let ((iteration 0))
                            (cl-loop
@@ -1199,23 +1193,9 @@ Function names are prefixed with pf- for easy searching"
 
                    (ht-set yaml-ht "path" path)
                    (ht-set pen-prompts func-name yaml-ht)
-                   (loop for an in alias-names do
-                         (ht-set pen-prompts an yaml-ht))
                    (add-to-list 'pen-prompt-functions-meta yaml-ht)
 
                    ;; var names will have to be slugged, too
-
-                   (if alias-slugs
-                       (cl-loop for a in alias-slugs do
-                                (progn
-                                  (defalias a func-sym)
-                                  (add-to-list 'pen-prompt-functions a)
-                                  (if interpreter
-                                      (add-to-list 'pen-prompt-interpreter-functions a))
-                                  (if filter
-                                      (add-to-list 'pen-prompt-filter-functions a))
-                                  (if completion
-                                      (add-to-list 'pen-prompt-completion-functions a)))))
 
                    (progn
                      (if (and (not in-development)

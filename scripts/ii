@@ -1,4 +1,28 @@
 #!/bin/bash
-export TTY
 
 # Imaginary interpreter
+
+lang="$1"
+test -n "$lang" || exit 1
+shift
+
+echo Imaginary Interpreter for "$lang"
+echo
+
+user_prompt="Input: "
+
+lang="$(printf -- "%s" "$lang" | tr '[:upper:]' '[:lower:]')"
+
+fun="$(penl | grep -q -P "imagine-a-$lang-interpreter/2")"
+
+prompt_the_lm() {
+    user_input="$1"
+
+    if test -n "$fun"; then
+        penf -p -u "$fun"
+    else
+        penf -p -u pf-generic-interpreter/2
+    fi
+}
+
+penf -p -u imagine-a-python-interpreter/2 "" "5 + 5"
