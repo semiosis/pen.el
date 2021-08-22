@@ -701,7 +701,7 @@ Reconstruct the entire yaml-ht for a different language."
                                             (mapcar (lambda (r)
                                                       (cl-loop
                                                        for stsq in final-stop-sequences do
-                                                       (let ((matchpos (pen-string-search (unregexify stsq) r)))
+                                                       (let ((matchpos (pen-string-search (regexp-quote stsq) r)))
                                                          (if matchpos
                                                              (setq r (s-truncate matchpos r "")))))
                                                       r))
