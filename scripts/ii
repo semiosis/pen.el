@@ -10,8 +10,6 @@ shift
 test -n "$MYGIT" && test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
-user_prompt="Input: "
-
 lang_lc="$(p "$lang" | tr '[:upper:]' '[:lower:]')"
 
 fun="$(penl | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
