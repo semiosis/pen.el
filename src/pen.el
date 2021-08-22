@@ -565,6 +565,11 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'postprocessor)
                              ,postprocessor))))
 
+                  (final-postpostprocessor
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'postpostprocessor)
+                             ,postpostprocessor))))
+
                   (final-stop-sequences
                    (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
                                             ',stop-sequences)
@@ -745,6 +750,15 @@ Reconstruct the entire yaml-ht for a different language."
                   (results (if final-include-prompt
                                (mapcar
                                 (lambda (s) (concat final-prompt s))
+                                results)
+                             results))
+
+                  ;; Avoid using this. Factor it out.
+                  (results (if final-postpostprocessor
+                               (mapcar
+                                (lambda (r) (if (and final-postpostprocessor (sor final-postpostprocessor))
+                                                (pen-sn final-postpostprocessor r)
+                                              r))
                                 results)
                              results))
 
@@ -1037,6 +1051,7 @@ Function names are prefixed with pf- for easy searching"
                         (validator (ht-get yaml-ht "validator"))
                         (prompt-filter (ht-get yaml-ht "prompt-filter"))
                         (postprocessor (ht-get yaml-ht "postprocessor"))
+                        (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
                         (n-collate (or (ht-get yaml-ht "n-collate")
                                        1))
                         (n-completions (or (ht-get yaml-ht "n-completions")
