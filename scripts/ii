@@ -11,18 +11,21 @@ echo
 
 user_prompt="Input: "
 
-lang="$(printf -- "%s" "$lang" | tr '[:upper:]' '[:lower:]')"
+lang_lc="$(printf -- "%s" "$lang" | tr '[:upper:]' '[:lower:]')"
+set -x
 
-fun="$(penl | grep -q -P "imagine-a-$lang-interpreter/2")"
+fun="$(penl | grep -P "imagine-a-${lang_lc}-interpreter/2")"
+
+memory=
 
 prompt_the_lm() {
     user_input="$1"
 
     if test -n "$fun"; then
-        penf -p -u "$fun"
+        penf -p -u "$fun" "$memory" "$user_input"
     else
-        penf -p -u pf-generic-interpreter/2
+        penf -p -u pf-generic-interpreter/3 "$memory" "$user_input" "$lang"
     fi
 }
 
-penf -p -u imagine-a-python-interpreter/2 "" "5 + 5"
+prompt_the_lm "5 + 5"
