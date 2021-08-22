@@ -197,6 +197,11 @@ case "$f" in
         sed -z -e "s/\s*\$//" -e "s/\n*\$//"
     }
     ;;
+    
+    generic-interpreter-tidy-result) {
+        pen-s remove-trailing-whitespace | { awk 1; echo -n "Input: "; }
+    }
+    ;;
 
     python-gen-next-user-prompt) {
         awk 1 | tac |
