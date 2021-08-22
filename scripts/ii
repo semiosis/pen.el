@@ -41,9 +41,9 @@ prompt_the_lm() {
     fi
 }
 
-read -ep "${kickstarter} " -r user_input
-
-prompt_the_lm "$user_input"
+while read -ep "${kickstarter} " -r user_input; do
+    prompt_the_lm "$user_input"
+done
 
 p () {
     {
