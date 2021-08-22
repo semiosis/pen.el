@@ -45,7 +45,6 @@ p "${kickstarter} "
 memory="${kickstarter} "
 
 while read -e -r user_input; do
-    memory+="$user_input"
     gen="$(prompt_the_lm "$user_input" | chomp)"
     p "$gen"
     memory+="$gen"
