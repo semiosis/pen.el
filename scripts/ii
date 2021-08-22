@@ -25,7 +25,7 @@ fi
 
 test -n "$path" && test -f "$path" || exit 1
 
-IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter' | sed "s/<language>/$lang/g" | sed -z -e "s/\s*\$//" -e "s/\n*\$//");typeset -p kickstarter &>/dev/null
+IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter' | sed "s/<language>/$lang/g" | pen-s remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
 
 memory=
 
