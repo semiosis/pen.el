@@ -60,6 +60,7 @@
   :keymap pen-map)
 
 (defset pen-prompt-functions nil)
+(defset pen-prompt-interpreter-functions nil)
 (defset pen-prompt-filter-functions nil)
 (defset pen-prompt-functions-failed nil)
 (defset pen-prompts-failed nil)
@@ -1173,6 +1174,8 @@ Function names are prefixed with pf- for easy searching"
                                 (progn
                                   (defalias a func-sym)
                                   (add-to-list 'pen-prompt-functions a)
+                                  (if interpreter
+                                      (add-to-list 'pen-prompt-interpreter-functions a))
                                   (if filter
                                       (add-to-list 'pen-prompt-filter-functions a))
                                   (if completion
