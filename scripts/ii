@@ -43,6 +43,7 @@ p "${kickstarter} "
 memory="${kickstarter} "
 
 while read -e -r user_input; do
+    # The prompt functions are not perfect and we want to coerce the output to the form we want
     gen="$(prompt_the_lm "$user_input" | chomp | sed -z 's/^\n\+//')"
     memory+="$user_input\n"
     p "$gen"
