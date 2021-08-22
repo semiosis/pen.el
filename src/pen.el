@@ -369,11 +369,11 @@ Reconstruct the entire yaml-ht for a different language."
                         (string-sym)
                         `(--> ,string-sym
                            (pen-onelineify-safe it)
-                          (pen-expand-template-keyvals it subprompts)
-                          (pen-expand-template it vals)
-                          (pen-expand-template-keyvals it var-keyvals-slugged)
-                          (pen-expand-template-keyvals it var-keyvals)
-                          (pen-unonelineify-safe it))))
+                           (pen-expand-template-keyvals it subprompts-al)
+                           (pen-expand-template it vals)
+                           (pen-expand-template-keyvals it var-keyvals-slugged)
+                           (pen-expand-template-keyvals it var-keyvals)
+                           (pen-unonelineify-safe it))))
            (setq pen-last-prompt-data '((face . ink-generated)
                                         ;; This is necessary because most modes
                                         ;; do not allow allow you to change the faces.
@@ -474,18 +474,18 @@ Reconstruct the entire yaml-ht for a different language."
                              ;; Don't include &key pretty
                              (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v)))))
 
-                  ;; (vals
-                  ;;  (cl-loop
-                  ;;   for tp in (-zip-fill nil vals final-var-defaults)
-                  ;;   collect
-                  ;;   (if (and (not (sor (car tp)))
-                  ;;            (sor (cdr tp)))
-                  ;;       ;; TODO if a val is empty, apply the default with the subprompts in scope
-                  ;;       `(eval
-                  ;;         `(pen-let-keyvals
-                  ;;           ',',subprompts-al
-                  ;;           (eval-string ,,(str (cdr tp)))))
-                  ;;     (cdr (tp)))))
+                  (vals
+                   (cl-loop
+                    for tp in (-zip-fill nil vals final-var-defaults)
+                    collect
+                    (if (and (not (sor (car tp)))
+                             (sor (cdr tp)))
+                        ;; TODO if a val is empty, apply the default with the subprompts in scope
+                        `(eval
+                          `(pen-let-keyvals
+                            ',',subprompts-al
+                            (eval-string ,,(str (cdr tp)))))
+                      (car tp))))
 
                   ;; preprocess the values of the parameters
                   (vals
