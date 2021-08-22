@@ -1225,6 +1225,19 @@ Function names are prefixed with pf- for easy searching"
       ;; (filter-selected-region-through-function (intern f))
       )))
 
+(defun pen-start-imaginary-interpreter ()
+  (interactive)
+  (let ((f (fz
+            (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                pen-prompt-functions
+              pen-prompt-interpreter-functions)
+            nil nil "pen interpreter: ")))
+    (if f
+        (let ((filter t))
+          (call-interactively (intern f)))
+      ;; (filter-selected-region-through-function (intern f))
+      )))
+
 (defun pen-run-prompt-function ()
   (interactive)
   (let* ((pen-sh-update
