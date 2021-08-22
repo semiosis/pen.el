@@ -193,7 +193,7 @@ case "$f" in
     }
     ;;
 
-    remove-trailing-whitespace() {
+    remove-trailing-whitespace) {
         sed -z -e "s/\s*\$//" -e "s/\n*\$//"
     }
     ;;
