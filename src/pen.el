@@ -481,10 +481,10 @@ Reconstruct the entire yaml-ht for a different language."
                     (if (and (not (sor (car tp)))
                              (sor (cdr tp)))
                         ;; TODO if a val is empty, apply the default with the subprompts in scope
-                        `(eval
-                          `(pen-let-keyvals
-                            ',',subprompts-al
-                            (eval-string ,,(str (cdr tp)))))
+                        (eval
+                         `(pen-let-keyvals
+                           ',subprompts-al
+                           (eval-string ,(str (cdr tp)))))
                       (car tp))))
 
                   ;; preprocess the values of the parameters
