@@ -193,5 +193,12 @@ case "$f" in
     }
     ;;
 
+    python-gen-next-user-prompt) {
+        awk 1 | tac |
+            perl -pe "s/(^Out\\[)(\\d+)(.*)/'In [' . (1 + \$2) . ']: ' . \"\\n\" . \$1 . \$2 . \$3/ge if 1 .. 1" |
+            tac
+    }
+    ;;
+
     *)
 esac
