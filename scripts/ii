@@ -28,4 +28,5 @@ prompt_the_lm() {
     fi
 }
 
+prompt_the_lm
 prompt_the_lm "5 + 5"
