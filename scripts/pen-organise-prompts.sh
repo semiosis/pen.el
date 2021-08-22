@@ -2,9 +2,10 @@
 export TTY
 
 # This is obsolete
-# For 2 reasons:
+# For reasons:
 # - task may be in ink
 # - task may be templated
+# - does not take into account arity. file name should contain arity
 
 for fp in *.prompt; do 
     name="$(cat "$fp" | yq -r ".title // empty" | slugify)"
