@@ -189,7 +189,7 @@ case "$f" in
 
     list2args) {
         sed -e 's/^/"/' -e 's/$/"/' |
-        pen-s join ' '
+        pen-str join ' '
     }
     ;;
 
@@ -199,7 +199,7 @@ case "$f" in
     ;;
     
     generic-interpreter-tidy-result) {
-        pen-s remove-trailing-whitespace | { awk 1; echo -n "Input: "; }
+        pen-str remove-trailing-whitespace | { awk 1; echo -n "Input: "; }
     }
     ;;
 

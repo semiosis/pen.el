@@ -22,7 +22,7 @@ cat "$tf_input" |
     sed 's/ / /g' |
     pen-acronymise |
     sed 's/^\(\s\+\)//' |
-    pen-s join ' ' |
+    pen-str join ' ' |
     sed 's/ \+/ /g' |
     pen-segment-sentences |
     wrlp -E "pen-wrap $width; echo" |

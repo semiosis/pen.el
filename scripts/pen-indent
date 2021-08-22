@@ -5,7 +5,7 @@ d="$1"
 
 if [ "$d" -lt "0" ]; then
     d="$(printf -- "%s" "$d" | cut -d - -f 2)"
-    sed "s/^$(echo -n ' ' | pen-s rs $d)//"
+    sed "s/^$(echo -n ' ' | pen-str rs $d)//"
 else
-    sed "s/^/$(echo -n ' ' | pen-s rs $d)/"
+    sed "s/^/$(echo -n ' ' | pen-str rs $d)/"
 fi

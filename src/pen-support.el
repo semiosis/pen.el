@@ -867,16 +867,16 @@ when s is a string, set the clipboard to s"
   (pen-sn "awk 1" s))
 
 (defun pen-onelineify (s)
-  (pen-snc "pen-s onelineify" s))
+  (pen-snc "pen-str onelineify" s))
 
 (defun pen-unonelineify (s)
-  (pen-sn "pen-s unonelineify" s))
+  (pen-sn "pen-str unonelineify" s))
 
 (defun pen-onelineify-safe (s)
-  (pen-snc "pen-s onelineify-safe" s))
+  (pen-snc "pen-str onelineify-safe" s))
 
 (defun pen-unonelineify-safe (s)
-  (pen-sn "pen-s unonelineify-safe" s))
+  (pen-sn "pen-str unonelineify-safe" s))
 
 (defun replace-region (s)
   "Apply the function to the selected region. The function must accept a string and return a string."
