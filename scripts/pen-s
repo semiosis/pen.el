@@ -204,9 +204,13 @@ case "$f" in
     ;;
 
     python-gen-next-user-prompt) {
-        awk 1 | tac |
-            perl -pe "s/(^Out\\[)(\\d+)(.*)/'In [' . (1 + \$2) . ']: ' . \"\\n\" . \$1 . \$2 . \$3/ge if 1 .. 1" |
-            tac
+        IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
+
+        prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^In \\[/{s/^In \\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
+        new_prompt_number="$(( prompt_number + 1 ))"
+
+        printf -- "%s" "$in" | awk 1
+        echo -n "In [$new_prompt_number]: "
     }
     ;;
 

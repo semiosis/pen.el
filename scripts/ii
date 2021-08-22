@@ -47,6 +47,7 @@ while read -e -r user_input; do
     memory+="$user_input\n"
     p "$gen"
     memory+="$gen"
+    p "$memory" > "/tmp/memory.txt"
 done
 
 p () {
