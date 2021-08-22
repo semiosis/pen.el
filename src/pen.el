@@ -358,7 +358,7 @@ Reconstruct the entire yaml-ht for a different language."
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor/3 "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
 (defun define-prompt-function ()
   (eval
-   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt))
+   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen))
       ,doc
       (interactive ,(cons 'list iargs))
       ;; force-custom, unfortunately disables call-interactively
