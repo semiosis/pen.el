@@ -52,6 +52,19 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -all|-a) {
+        all=y
+        shift
+    }
+    ;;
+
+    # Show prompt
+    -prompt|-p) {
+        prompt=y
+        shift
+    }
+    ;;
+
     -gui) {
         PEN_USE_GUI=y
         share_x=y
@@ -199,17 +212,6 @@ esac
 
 case "$sn" in
     pen|penf) {
-        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-            "") { shift; }; ;;
-            -all) {
-                all=y
-                shift
-            }
-            ;;
-
-            *) break;
-        esac; done
-
         if test "$sn" = penf; then
             if test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
                 fun="pf-$1"
@@ -241,17 +243,23 @@ case "$sn" in
 
             CMD="$(cmd-nice "$@")"
 
+            if test "$prompt" = "y"; then
+                include_prompt=t
+            else
+                include_prompt=nil
+            fi
+
             if test "$all" = "y"; then
                 if test "$UPDATE" = y; then
-                    set -- -e "(json-encode-list (pen-update ($pfname $CMD :no-select-result t)))"
+                    set -- -e "(json-encode-list (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt)))"
                 else
-                    set -- -e "(json-encode-list ($pfname $CMD :no-select-result t))"
+                    set -- -e "(json-encode-list ($pfname $CMD :no-select-result t :include-prompt $include_prompt))"
                 fi
             else
                 if test "$UPDATE" = y; then
-                    set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t))))"
+                    set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt))))"
                 else
-                    set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t)))"
+                    set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t :include-prompt $include_prompt)))"
                 fi
             fi
 
