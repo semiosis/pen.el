@@ -204,19 +204,18 @@ case "$f" in
     ;;
 
     ruby-gen-next-user-prompt) {
-        IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
+        IFS= read -rd '' in < <(cat | tee /tmp/ruby-gen-next-user-prompt);typeset -p in &>/dev/null
 
-        prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^2.7.0 :/{s/^2.7.0 :\\([0-9]*\\) .*/\\1/p;q}")"
-        echo "$prompt_number"
-        new_prompt_number="$(printf "%03d" $(( prompt_number + 1 )))"
+        prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^2.7.0 :/{s/^2.7.0 :\\([0-9]*\\).*/\\1/p;q}")"
+        new_prompt_number="$(printf "%03d" $(( prompt_number )))"
 
-        printf -- "%s" "$in" | awk 1
+        printf -- "%s" "$in" | awk 1 | sed '$d'
         echo -n "2.7.0 :$new_prompt_number > "
     }
     ;;
 
     python-gen-next-user-prompt) {
-        IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
+        IFS= read -rd '' in < <(cat | tee /tmp/python-gen-next-user-prompt);typeset -p in &>/dev/null
 
         prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
         new_prompt_number="$(( prompt_number + 1 ))"

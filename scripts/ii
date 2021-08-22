@@ -43,7 +43,7 @@ p "${kickstarter} "
 memory="${kickstarter} "
 
 while read -e -r user_input; do
-    gen="$(prompt_the_lm "$user_input" | chomp)"
+    gen="$(prompt_the_lm "$user_input" | chomp | sed -z 's/^\n\+//')"
     memory+="$user_input\n"
     p "$gen"
     memory+="$gen"
