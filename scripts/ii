@@ -1,20 +1,33 @@
 #!/bin/bash
 
 # Imaginary interpreter
-# Bash version.
+# Version 2.0, bash
 
 lang="$1"
 test -n "$lang" || exit 1
 shift
 
-echo Imaginary Interpreter for "$lang"
-echo
+test -n "$MYGIT" && test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
+test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
 user_prompt="Input: "
 
-lang_lc="$(printf -- "%s" "$lang" | tr '[:upper:]' '[:lower:]')"
+lang_lc="$(p "$lang" | tr '[:upper:]' '[:lower:]')"
 
-fun="$(penl | grep -P "imagine-a-${lang_lc}-interpreter/2")"
+fun="$(penl | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
+default_fun=generic-interpreter/3
+
+file_fun="$fun"
+: "${file_fun:="$default_fun"}"
+
+if test -n "$file_fun"; then
+    fn="$(p "$file_fun" | tr -s / -)"
+    path="$PROMPTS_DIR/prompts/${fn}.prompt"
+fi
+
+test -n "$path" && test -f "$path" || exit 1
+
+IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter' | sed "s/<language>/$lang/g" | sed -z -e "s/\s*\$//" -e "s/\n*\$//");typeset -p kickstarter &>/dev/null
 
 memory=
 
@@ -28,5 +41,19 @@ prompt_the_lm() {
     fi
 }
 
-prompt_the_lm
-# prompt_the_lm "5 + 5"
+read -ep "${kickstarter} " -r user_input
+
+prompt_the_lm "$user_input"
+
+p () {
+    {
+        i=1
+        while [ "$i" -lt "$#" ]; do
+            eval ARG=\${$i}
+            printf -- "%s " "$ARG"
+            i=$((i + 1))
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG"
+    } | sed 's/\\n/\n/g'
+}
