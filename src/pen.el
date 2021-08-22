@@ -909,6 +909,8 @@ Otherwise, it will be a shell expression template")
                   (path (ht-get yaml-ht "path"))
                   (dn (f-dirname path))
                   (fn (f-basename path))
+                  (newfn (s-replace-regexp "^pf-" "" (concat (slugify yaml-key) ".prompt")))
+                  (newpath (f-join dn newfn))
 
                   ;; function
                   (task-ink (ht-get yaml-ht "task"))
@@ -917,7 +919,11 @@ Otherwise, it will be a shell expression template")
                   (title (sor title
                               task))
                   (title-slug (slugify title)))
-             (message path)))
+             (if (and (f-exists-p path)
+                      (not (f-exists-p newpath)))
+                 (f-move path
+                         newpath))
+             (message newfn)))
   ;; (let ((paths
   ;;        (-non-nil
   ;;         (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt"))))))
@@ -1003,7 +1009,14 @@ Function names are prefixed with pf- for easy searching"
 
                         ;; function
                         (task-ink (ht-get yaml-ht "task"))
+                        (language (ht-get yaml-ht "language"))
                         (task (ink-decode task-ink))
+                        (task (if (and (sor task)
+                                       (sor language))
+                                  (pen-expand-template-keyvals
+                                   task
+                                   `(("language" . ,language)))
+                                task))
                         (title (ht-get yaml-ht "title"))
                         (title (sor title
                                     task))
