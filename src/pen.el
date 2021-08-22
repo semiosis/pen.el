@@ -358,7 +358,7 @@ Reconstruct the entire yaml-ht for a different language."
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor/3 "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
 (defun define-prompt-function ()
   (eval
-   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result))
+   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt))
       ,doc
       (interactive ,(cons 'list iargs))
       ;; force-custom, unfortunately disables call-interactively
@@ -418,6 +418,10 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-new-document
                    (or (pen-var-value-maybe 'new-document)
                        ,new-document))
+
+                  (final-include-prompt
+                   (or (pen-var-value-maybe 'include-prompt)
+                       ,include-prompt))
 
                   (final-interpreter
                    (or (pen-var-value-maybe 'interpreter)
@@ -720,6 +724,12 @@ Reconstruct the entire yaml-ht for a different language."
                                     processed-results)
                                 (list (message "Try UPDATE=y or debugging")))))))
 
+                  (results (if final-include-prompt
+                              (mapcar
+                                   (lambda (s) (concat final-prompt s))
+                                   results)
+                             results))
+
                   (result (if no-select-result
                               (length results)
                             (cl-fz results :prompt (concat ,func-name ": ") :select-only-match t))))
@@ -985,6 +995,7 @@ Function names are prefixed with pf- for easy searching"
                         (start-yas (ht-get yaml-ht "start-yas"))
                         (yas (ht-get yaml-ht "yas"))
                         (end-yas (ht-get yaml-ht "end-yas"))
+                        (include-prompt (ht-get yaml-ht "include-prompt"))
                         (repeater (ht-get yaml-ht "repeater"))
                         (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
                         (interpreter (pen-yaml-test yaml-ht "interpreter"))
