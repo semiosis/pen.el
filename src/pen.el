@@ -763,7 +763,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   ;; Avoid using this. Factor it out.
                   (results (if (and (not no-gen)
-                                    final-postpostprocessor)
+                                    (sor final-postpostprocessor))
                                (mapcar
                                 (lambda (r) (if (and final-postpostprocessor (sor final-postpostprocessor))
                                                 (pen-sn final-postpostprocessor r)
