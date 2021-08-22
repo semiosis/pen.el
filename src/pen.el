@@ -779,7 +779,7 @@ Reconstruct the entire yaml-ht for a different language."
     (pen-prompt-file-load "$PROMPTS/davinci.prompt")
     (pen-prompt-file-load "$PROMPTS/generic-completion-50-tokens.prompt"))))
 
-(defvar pen-prompts (make-hash-table :test 'equal)
+(defset pen-prompts (make-hash-table :test 'equal)
   "A hash table containing loaded prompts")
 
 (defset pen-translators
@@ -907,6 +907,8 @@ Otherwise, it will be a shell expression template")
   (cl-loop for yaml-key in (ht-keys pen-prompts) do
            (let* ((yaml-ht (ht-get pen-prompts yaml-key))
                   (path (ht-get yaml-ht "path"))
+                  (dn (f-dirname path))
+                  (fn (f-basename path))
 
                   ;; function
                   (task-ink (ht-get yaml-ht "task"))
@@ -979,6 +981,7 @@ Function names are prefixed with pf- for easy searching"
   (setq pen-prompt-completion-functions nil)
   (setq pen-prompt-functions-meta nil)
   (setq pen-prompt-functions-failed nil)
+  (setq pen-prompts (make-hash-table :test 'equal))
 
   (pen-load-engines)
   (pen-load-interpreters)
@@ -1203,7 +1206,7 @@ Function names are prefixed with pf- for easy searching"
                               (setq iteration (+ 1 iteration))
                               (message (str iteration)))))))
 
-                   (ht-set yaml-yt "path" path)
+                   (ht-set yaml-ht "path" path)
                    (ht-set pen-prompts func-name yaml-ht)
                    (loop for an in alias-names do
                          (ht-set pen-prompts an yaml-ht))
