@@ -1190,6 +1190,7 @@ Function names are prefixed with pf- for easy searching"
                            (if funcsym
                                (progn
                                  (add-to-list 'pen-prompt-functions funcsym)
+                                 (if interpreter (add-to-list 'pen-prompt-interpreter-functions funcsym))
                                  (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
                                  (if completion (add-to-list 'pen-prompt-completion-functions funcsym)))
                              (add-to-list 'pen-prompt-functions-failed func-sym))

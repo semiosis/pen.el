@@ -78,6 +78,7 @@
 (define-key pen-map (kbd "<H-tab> g") 'pen-generate-prompt-functions)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
 (define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
+(define-key pen-map (kbd "H-TAB i") 'pen-start-imaginary-interpreter)
 (define-key pen-map (kbd "<H-tab> s") 'pen-filter-with-prompt-function)
 (define-key pen-map (kbd "H-n") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
