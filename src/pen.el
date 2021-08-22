@@ -982,6 +982,7 @@ Function names are prefixed with pf- for easy searching"
                         (end-yas (ht-get yaml-ht "end-yas"))
                         (repeater (ht-get yaml-ht "repeater"))
                         (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
+                        (interpreter (pen-yaml-test yaml-ht "interpreter"))
                         (conversation (pen-yaml-test yaml-ht "conversation"))
                         (filter (pen-yaml-test yaml-ht "filter"))
                         ;; Don't actually use this.
