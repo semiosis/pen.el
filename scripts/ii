@@ -35,9 +35,9 @@ prompt_the_lm() {
     user_input="$1"
 
     if test -n "$fun"; then
-        penf -p -u "$fun" "$memory" "$user_input"
+        penf -u "$fun" "$memory" "$user_input"
     else
-        penf -p -u pf-generic-interpreter/3 "$memory" "$user_input" "$lang"
+        penf -u pf-generic-interpreter/3 "$memory" "$user_input" "$lang"
     fi
 }
 
