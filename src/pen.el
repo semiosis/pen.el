@@ -418,6 +418,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'new-document)
                        ,new-document))
 
+                  (final-interpreter
+                   (or (pen-var-value-maybe 'interpreter)
+                       ,interpreter))
+
                   (final-start-yas
                    (or (pen-var-value-maybe 'start-yas)
                        ,start-yas))
