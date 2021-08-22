@@ -1061,4 +1061,19 @@ when s is a string, set the clipboard to s"
   (setq command (concat "sed '" (str command) "'"))
   (pen-sn command stdin))
 
+;; (alist2pairs '(("hi" . "yo") ("my day" . "is good")))
+(defun alist2pairs (al)
+  (mapcar (lambda (e)
+            (list (str2sym (slugify (car e))) (cdr e)))
+          al))
+
+(defmacro pen-let-keyvals (keyvals &rest body)
+  `(let ,(alist2pairs (eval keyvals))
+     ,@body))
+
+;; (pen-let-keyvals '(("hi" . "yo") ("my day" . "is good")) my-day)
+(defun pen-test-let-keyvals ()
+  (interactive)
+  (pen-let-keyvals '(("hi" . "yo") ("my day" . "is good")) hi))
+
 (provide 'pen-support)
