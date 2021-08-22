@@ -115,12 +115,6 @@
       (setq pen-engines-directory hostenginesdir)
     (setq pen-engines-directory (f-join user-emacs-directory "engines"))))
 
-;; Personal interpreters repository
-(let ((hostinterpretersdir (f-join user-emacs-directory "host" "interpreters")))
-  (if (f-directory-p (f-join hostinterpretersdir "interpreters"))
-      (setq pen-interpreters-directory hostinterpretersdir)
-    (setq pen-interpreters-directory (f-join user-emacs-directory "interpreters"))))
-
 ;; Personal glossaries repository
 (let ((hostglossariesdir (f-join user-emacs-directory "host" "glossaries")))
   (if (f-directory-p (f-join hostglossariesdir "glossaries"))
