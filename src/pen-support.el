@@ -1064,7 +1064,7 @@ when s is a string, set the clipboard to s"
 ;; (alist2pairs '(("hi" . "yo") ("my day" . "is good")))
 (defun alist2pairs (al)
   (mapcar (lambda (e)
-            (list (str2sym (slugify (car e))) (cdr e)))
+            (list (intern (slugify (car e))) (cdr e)))
           al))
 
 (defmacro pen-let-keyvals (keyvals &rest body)
@@ -1075,5 +1075,38 @@ when s is a string, set the clipboard to s"
 (defun pen-test-let-keyvals ()
   (interactive)
   (pen-let-keyvals '(("hi" . "yo") ("my day" . "is good")) hi))
+
+(defun pen-subprompts-to-alist (ht)
+  (ht->alist (-reduce 'ht-merge (vector2list ht))))
+
+(defun pen-test-kickstarter ()
+  (eval
+   `(pen-let-keyvals
+     '(("kickstarter" . "Python 3.8.5 (default, Jan 27 2021, 15:41:15)\nType 'copyright', 'credits' or 'license' for more information\nIPython 7.21.0 -- An enhanced Interactive Python. Type '?' for help.\n\nIn [1]: <expression>\nOut\n"))
+     (if "kickstarter"
+         (eval-string "kickstarter")
+       (read-string-hist "history: " "In [1]:")))))
+
+(defun pen-test-kickstarter-2 ()
+  (let
+      ((kickstarter "Python 3.8.5 (default, Jan 27 2021, 15:41:15)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.21.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: <expression>
+Out
+"))
+    (if "kickstarter"
+        (eval-string "kickstarter")
+      (read-string-hist "history: " "In [1]:"))))
+
+(comment
+ (defun pen-test-kickstarter-3 ()
+   `(eval
+     `(pen-let-keyvals
+       ',',(pen-subprompts-to-alist subprompts)
+       (if ,,default
+           (eval-string ,,(str default))
+         (read-string-hist ,,(concat varname ": ") ,,example))))))
 
 (provide 'pen-support)

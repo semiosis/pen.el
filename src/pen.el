@@ -770,7 +770,7 @@ Reconstruct the entire yaml-ht for a different language."
            (ht-get
             (yamlmod-load
              (cat
-              (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic.prompt")))
+              (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic-3.prompt")))
             "subprompts")))
          (keys (type (car (vector2list subprompts)))))
 
@@ -781,7 +781,7 @@ Reconstruct the entire yaml-ht for a different language."
   (interactive)
   (let ((l (vector2list
             (ht-get
-             (yamlmod-load (cat (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic.prompt")))
+             (yamlmod-load (cat (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic-3.prompt")))
              "subprompts"))))
     (pen-etv
      (pps
@@ -927,6 +927,7 @@ Otherwise, it will be a shell expression template")
 (defun pen-list-prompt-paths ()
   (-non-nil
    (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))
+
 
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
@@ -1164,9 +1165,14 @@ Function names are prefixed with pf- for easy searching"
                                 ;;    (if ,d
                                 ;;        (eval-string ,(str d))
                                 ;;      (read-string-hist ,(concat v ": ") ,example)))
-                                `(if ,default
-                                     (eval-string ,(str default))
-                                   (read-string-hist ,(concat varname ": ") ,example))))
+
+                                ;; subprompts are available as variables to var-defaults
+                                `(eval
+                                  `(pen-let-keyvals
+                                    ',',(pen-subprompts-to-alist subprompts)
+                                    (if ,,default
+                                        (eval-string ,,(str default))
+                                      (read-string-hist ,,(concat varname ": ") ,,example))))))
                             do
                             (progn
                               (setq iteration (+ 1 iteration))
