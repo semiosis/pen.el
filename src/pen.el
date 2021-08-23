@@ -1401,12 +1401,15 @@ Function names are prefixed with pf- for easy searching"
                      ;; Also, ensure n-collate = 1 because
                      ;; n-completions may be emulated with collate
                      `(n-collate 1)))
-           (if pen-force-gpt-j-aix
+           (if pen-force-aix
                (list `(lm-command "aix-complete.sh")
                      `(model "GPT-J-6B")))
            (if pen-force-openai
                (list `(lm-command "openai-complete.sh")
                      `(model "davinci")))
+           (if pen-force-ai21
+               (list `(lm-command "ai21-complete.sh")
+                     `(model "j1-jumbo")))
            (if pen-force-hf
                (list `(lm-command "hf-complete.sh")
                      `(model "gpt2")))))))

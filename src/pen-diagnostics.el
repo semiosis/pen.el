@@ -4,8 +4,10 @@
                  :semantic-path (get-path-semantic)
                  :last-final-command (pen-snc "cat ~/.pen/last-final-command.txt")
                  :last-final-prompt (pen-snc "cat ~/.pen/last-final-prompt.txt")
-                 :pen-force-gpt-j-aix pen-force-gpt-j-aix
-                 :pen-force-openai pen-force-openai)))
+                 :pen-force-ai21 pen-force-ai21
+                 :pen-force-aix pen-force-aix
+                 :pen-force-openai pen-force-openai
+                 :pen-force-hf pen-force-hf)))
     (find-file (pen-tf "pen context" (plist2yaml plist) "yaml"))))
 
 (defun pen-diagnostics-test-key ()
