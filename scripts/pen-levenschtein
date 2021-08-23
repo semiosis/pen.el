@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -l|-loss) {
+        calculate_loss=y
+        shift
+    }
+    ;;
+
+    -s|-similarity) {
+        calculate_loss=y
+        calculate_similarity=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+test -f $MYGIT/wooorm/levenshtein/levenshtein || (
+    cd "$(gc "https://github.com/wooorm/levenshtein")"
+    make
+) &>/dev/null
+
+result="$($MYGIT/wooorm/levenshtein/levenshtein "$@")"
+
+if test "$calculate_loss" = "y"; then
+    fullstr="$@"
+    bytes="$(printf -- "%s" "$fullstr" | sed -z -e "s/\\n*//g" -e "s/\\s*//g" | wc -c)"
+
+    if test "$calculate_similarity" = "y"; then
+        similarity="$(echo "scale=6; 1 - ($result / $bytes)" | bc | awk '{printf "%f", $0}')"
+        printf -- "%s\n" "$similarity"
+    else
+        loss="$(echo "scale=6; $result / $bytes" | bc | awk '{printf "%f", $0}')"
+        printf -- "%s\n" "$loss"
+    fi
+else
+    printf -- "%s\n" "$result"
+fi

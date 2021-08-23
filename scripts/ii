@@ -12,7 +12,15 @@ test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
 lang_lc="$(p "$lang" | tr '[:upper:]' '[:lower:]')"
 
+set -o pipefail
+
 fun="$(penl | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
+
+if ! test "$?" = 0; then
+    echo "pen much be running" 1>&2
+    exit 1
+fi
+
 default_fun=generic-interpreter/3
 
 file_fun="$fun"
