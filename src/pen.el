@@ -570,6 +570,11 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'mode)
                              ,mode))))
 
+                  (final-lm-command
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'lm-command)
+                             ,lm-command))))
+
                   (final-model
                    (expand-template
                     (str (or (pen-var-value-maybe 'model)
@@ -657,7 +662,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (data
                    (let ((data
                           `(("PEN_PROMPT" . ,(pen-encode-string final-prompt))
-                            ("PEN_LM_COMMAND" . ,,lm-command)
+                            ("PEN_LM_COMMAND" . ,final-lm-command)
                             ("PEN_MODEL" . ,final-model)
                             ("PEN_ENGINE_MIN_TOKENS" . ,final-engine-min-tokens)
                             ("PEN_ENGINE_MAX_TOKENS" . ,final-engine-max-tokens)
@@ -1402,16 +1407,20 @@ Function names are prefixed with pf- for easy searching"
                      ;; n-completions may be emulated with collate
                      `(n-collate 1)))
            (if pen-force-aix
-               (list `(lm-command "aix-complete.sh")
+               (list `(engine "AIx GPT-J-6B")
+                     `(lm-command "aix-complete.sh")
                      `(model "GPT-J-6B")))
            (if pen-force-openai
-               (list `(lm-command "openai-complete.sh")
+               (list `(engine "OpenAI Davinci")
+                     `(lm-command "openai-complete.sh")
                      `(model "davinci")))
            (if pen-force-ai21
-               (list `(lm-command "ai21-complete.sh")
+               (list `(engine "AI21 J1-Jumbo")
+                     `(lm-command "ai21-complete.sh")
                      `(model "j1-jumbo")))
            (if pen-force-hf
-               (list `(lm-command "hf-complete.sh")
+               (list `(engine "HuggingFace GPT-2")
+                     `(lm-command "hf-complete.sh")
                      `(model "gpt2")))))))
     `(eval
       `(let ,',overrides
