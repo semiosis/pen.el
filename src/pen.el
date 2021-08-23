@@ -570,6 +570,13 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'mode)
                              ,mode))))
 
+                  ;; TODO Consider overriding model and lm-command again
+                  ;; based on this value
+                  (final-engine
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'engine)
+                             ,engine))))
+
                   (final-lm-command
                    (expand-template
                     (str (or (pen-var-value-maybe 'lm-command)
