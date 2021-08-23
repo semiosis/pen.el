@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     model = os.environ.get("PEN_MODEL")
 
-    # GPT-J-6B is the default
+    # GPT-J-6B is the default and will break when supplied
     if model == "GPT-J-6B":
         model = None
 
