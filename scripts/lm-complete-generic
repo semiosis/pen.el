@@ -87,6 +87,7 @@ openai_results_split() {
 }
 
 if test "$PEN_DEBUG" = "y"; then
+    echo "PEN_USER_AGENT:\"$PEN_USER_AGENT\""
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
     echo "PEN_CACHE:\"$PEN_CACHE\""
     echo "PEN_MODEL:\"$PEN_MODEL\""
@@ -122,6 +123,7 @@ test -n "$PEN_PROMPT" || {
 : "${PEN_TOP_P:="1"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 
+export PEN_USER_AGENT
 export PEN_LM_KEY
 export PEN_MODEL
 export PEN_FLAGS
