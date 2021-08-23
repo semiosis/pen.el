@@ -55,12 +55,19 @@ p "${kickstarter} "
 memory="${kickstarter} "
 
 while read -e -r user_input; do
+    if test "$user_input" = "!!"; then
+        memory="$last_memory"
+        user_input="$last_user_input"
+    fi
+
     # The prompt functions are not perfect and we want to coerce the output to the form we want
     gen="$(prompt_the_lm "$user_input" | chomp | sed -z 's/^\n\+//')"
+    last_memory="$memory"
     memory+="$user_input\n"
     p "$gen"
     memory+="$gen"
     p "$memory" > "/tmp/memory.txt"
+    last_user_input="$user_input"
 done
 
 p () {

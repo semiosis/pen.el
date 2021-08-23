@@ -225,5 +225,15 @@ case "$f" in
     }
     ;;
 
+    newline-if-empty) {
+        IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
+        if test -z "$in"; then
+            echo
+        else
+            printf -- "%s" "$in"
+        fi
+    }
+    ;;
+
     *)
 esac
