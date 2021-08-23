@@ -350,6 +350,23 @@ Reconstruct the entire yaml-ht for a different language."
 (defun pen-str2num (s)
   (if s (string-to-number (str s))))
 
+(defun pen-hard-bound (val min max)
+  (setq val (sor (str val)))
+  (setq min (sor (str min)))
+  (setq max (sor (str max)))
+
+  (if val (setq val (string-to-number val)))
+  (if min (setq min (string-to-number min)))
+  (if max (setq max (string-to-number max)))
+
+  (if (and val min (< val min))
+      (setq val min))
+
+  (if (and val max (> val max))
+      (setq val max))
+
+  val)
+
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
@@ -551,9 +568,19 @@ Reconstruct the entire yaml-ht for a different language."
                      (str (or (pen-var-value-maybe 'max-tokens)
                               ,max-tokens)))))
 
-                  ;; TODO Perform additional max/min check here
-                  (final-min-tokens (str final-min-tokens))
-                  (final-max-tokens (str final-max-tokens))
+                  ;; min-tokens is not really adjustable
+                  ;; without enough tokens to run a prompt, it should fail
+                  ;; TODO Make a hard fail here
+                  ;; TODO Make a distinction between min and max generated tokens
+                  ;; and min and max prompt tokens
+                  (final-min-tokens (pen-hard-bound
+                                     final-min-tokens
+                                     final-engine-min-tokens
+                                     final-engine-max-tokens) )
+                  (final-max-tokens (pen-hard-bound
+                                     final-max-tokens
+                                     final-engine-min-tokens
+                                     final-engine-max-tokens))
 
                   (final-temperature
                    (expand-template
