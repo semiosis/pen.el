@@ -40,6 +40,9 @@ memory=
 prompt_the_lm() {
     user_input="$1"
 
+    # TODO Use pena because I want better results
+    # Rather, make a penc (pen collect) and use that
+
     if test -n "$fun"; then
         penf -u "$fun" "$memory" "$user_input"
     else
