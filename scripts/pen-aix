@@ -46,7 +46,7 @@ pen_aix() {
 if test "$PEN_N_COMPLETIONS" = 1; then
     {
     printf -- "%s" "$PEN_PROMPT"
-    pen_aix "$@" | sed -z "s~${sedstop}$~~"
+    pen_aix "$@" | tee /tmp/aix-temp.txt | sed -z "s~${sedstop}$~~"
     } | tee /tmp/aix.txt
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
@@ -54,7 +54,7 @@ else
         # The openai api will add the prompt. So emulate it
         {
         printf -- "%s" "$PEN_PROMPT"
-        pen_aix "$@" | sed -z "s~${sedstop}$~~"
+        pen_aix "$@" | tee /tmp/aix-temp.txt | sed -z "s~${sedstop}$~~"
         } | awk 1
     done | tee /tmp/aix.txt
 fi

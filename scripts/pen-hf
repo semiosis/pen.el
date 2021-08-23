@@ -34,5 +34,5 @@ sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
 {
 # printf -- "%s" "$PEN_PROMPT"
-pen-hf.py "$@" | sed -z "s~${sedstop}$~~"
+pen-hf.py "$@" | tee /tmp/aix-temp.txt | sed -z "s~${sedstop}$~~"
 } | tee /tmp/hf.txt
