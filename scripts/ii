@@ -14,12 +14,13 @@ lang_lc="$(p "$lang" | tr '[:upper:]' '[:lower:]')"
 
 set -o pipefail
 
-fun="$(penl | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
-
+funs="$(penl)"
 if ! test "$?" = 0; then
-    echo "pen much be running" 1>&2
+    echo "pen must be running" 1>&2
     exit 1
 fi
+
+fun="$(p "$funs" | awk 1 | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
 
 default_fun=generic-interpreter/3
 
