@@ -8,6 +8,8 @@
                  :pen-force-aix pen-force-aix
                  :pen-force-openai pen-force-openai
                  :pen-force-hf pen-force-hf
+                 :lm-complete-stderr (pen-snc (pen-cmd "cat" "/tmp/lm-complete-stderr.txt"))
+                 :lm-complete-stdout (pen-snc (pen-cmd "cat" "/tmp/lm-complete-stdout.txt"))
                  :openai-last-output (pen-snc (pen-cmd "cat" "/tmp/openai-temp.txt"))
                  :hf-last-output (pen-snc (pen-cmd "cat" "/tmp/hf-temp.txt"))
                  :aix-last-output (pen-snc (pen-cmd "cat" "/tmp/aix-temp.txt"))
