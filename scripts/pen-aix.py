@@ -35,6 +35,12 @@ if __name__ == "__main__":
     api_key = os.environ.get("AIX_API_KEY")
     aix_resource = AIxResource(api_key)
 
+    model = os.environ.get("PEN_MODEL")
+
+    # GPT-J-6B is the default
+    if model == "GPT-J-6B":
+        model = None
+
     print(
         str(
             aix_resource.compose(
@@ -45,10 +51,7 @@ if __name__ == "__main__":
                 top_k = final_top_k,
                 temperature = final_temperature,
                 stop_sequence = final_stop_sequence,
-
-                # Don't supply the model.
-                # There is currently a hard default: GPT-J-6B
-                #  custom_model_id = os.environ.get("PEN_MODEL"),
+                custom_model_id = model,
             )
             .get("data", dict())
             .get("text")
