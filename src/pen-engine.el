@@ -6,4 +6,7 @@
 
 (require 'pen-configure)
 
+;; TODO Make it so
+;; - If a prompt requests more tokens than the engine can provide, find an appropriate engine
+
 (provide 'pen-engine)
