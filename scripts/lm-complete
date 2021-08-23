@@ -114,4 +114,5 @@ case "$PEN_LM_COMMAND" in
 esac
 
 # pen-ci will possibly cache/memoize the command
-pen-ci "$PEN_LM_COMMAND"
+pen-ci "$PEN_LM_COMMAND" 2>/tmp/lm-complete-stderr.txt >/tmp/lm-complete-stdout.txt
+cat /tmp/lm-complete-stdout.txt
