@@ -17,13 +17,17 @@ def hard_bound(x, lower_lim, upper_lim):
 
 # Get your API Key at apps.aixsolutionsgroup.com
 
-max_tokens = os.environ.get("PEN_MAX_TOKENS") and float(os.environ.get("PEN_MAX_TOKENS"))
-min_tokens = os.environ.get("PEN_MIN_TOKENS") and float(os.environ.get("PEN_MIN_TOKENS"))
-engine_max_tokens = os.environ.get("PEN_ENGINE_MAX_TOKENS") and float(os.environ.get("PEN_ENGINE_MAX_TOKENS"))
-engine_min_tokens = os.environ.get("PEN_ENGINE_MIN_TOKENS") and float(os.environ.get("PEN_ENGINE_MIN_TOKENS"))
+max_tokens = os.environ.get("PEN_MAX_TOKENS") and int(os.environ.get("PEN_MAX_TOKENS"))
+min_tokens = os.environ.get("PEN_MIN_TOKENS") and int(os.environ.get("PEN_MIN_TOKENS"))
+engine_max_tokens = os.environ.get("PEN_ENGINE_MAX_TOKENS") and int(os.environ.get("PEN_ENGINE_MAX_TOKENS"))
+engine_min_tokens = os.environ.get("PEN_ENGINE_MIN_TOKENS") and int(os.environ.get("PEN_ENGINE_MIN_TOKENS"))
 
 max_tokens = hard_bound(max_tokens, engine_min_tokens, engine_max_tokens)
 min_tokens = hard_bound(min_tokens, engine_min_tokens, engine_max_tokens)
+
+print(engine_min_tokens)
+#  print(str(min_tokens))
+exit(0)
 
 if __name__ == "__main__":
     api_key = os.environ.get("AIX_API_KEY")

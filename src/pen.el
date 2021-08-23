@@ -347,6 +347,9 @@ Reconstruct the entire yaml-ht for a different language."
        (assoc "PEN_PROMPT"
               al))))))
 
+(defun pen-str2num (s)
+  (if s (string-to-number (str s))))
+
 ;; Use lexical scope. It's more reliable than lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
@@ -524,25 +527,36 @@ Reconstruct the entire yaml-ht for a different language."
                              ,n-completions))))
 
                   (final-engine-min-tokens
-                   (expand-template
-                    (str (or (pen-var-value-maybe 'engine-min-tokens)
-                             ,engine-min-tokens))))
+                   (pen-str2num
+                    (expand-template
+                     (str (or (pen-var-value-maybe 'engine-min-tokens)
+                              ,engine-min-tokens)))))
 
                   (final-engine-max-tokens
-                   (expand-template
-                    (str (or (pen-var-value-maybe 'engine-max-tokens)
-                             ,engine-max-tokens))))
+                   (pen-str2num
+                    (expand-template
+                     (str (or (pen-var-value-maybe 'engine-max-tokens)
+                              ,engine-max-tokens)))))
 
                   (final-min-tokens
-                   (expand-template
-                    (str (or (pen-var-value-maybe 'min-tokens)
-                             ,min-tokens))))
+                   (pen-str2num
+                    (expand-template
+                     (str (or (pen-var-value-maybe 'min-tokens)
+                              ,min-tokens)))))
 
                   ;; The max tokens may be templated in via variable or even a subprompt
                   (final-max-tokens
-                   (expand-template
-                    (str (or (pen-var-value-maybe 'max-tokens)
-                             ,max-tokens))))
+                   (pen-str2num
+                    (expand-template
+                     (str (or (pen-var-value-maybe 'max-tokens)
+                              ,max-tokens)))))
+
+                  ;; TODO Perform additional max/min check here
+
+                  (min-tokens (str min-tokens))
+                  (max-tokens (str max-tokens))
+                  (final-min-tokens (str final-min-tokens))
+                  (final-max-tokens (str final-max-tokens))
 
                   (final-temperature
                    (expand-template
@@ -1157,6 +1171,10 @@ Function names are prefixed with pf- for easy searching"
                                 (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
                                 (if aims (concat "\naims:" (pen-list-to-orglist aims)))
                                 (if model (concat "\nmodel: " model))
+                                (if min-tokens (concat "\nmin-tokens: " (str min-tokens)))
+                                (if max-tokens (concat "\nmax-tokens: " (str max-tokens)))
+                                (if engine-min-tokens (concat "\nengine-min-tokens: " (str engine-min-tokens)))
+                                (if engine-max-tokens (concat "\nengine-max-tokens: " (str engine-max-tokens)))
                                 (if task (concat "\ntask: " task))
                                 (if notes (concat "\nnotes:" (pen-list-to-orglist notes)))
                                 (if filter (concat "\nfilter: on"))
