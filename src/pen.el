@@ -670,6 +670,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_TOP_K" . ,final-top-k)
                             ("PEN_FLAGS" . ,final-flags)
                             ("PEN_CACHE" . ,cache)
+                            ("PEN_USER_AGENT" . ,pen-user-agent)
                             ("PEN_N_COMPLETIONS" . ,final-n-completions)
                             ("PEN_END_POS" . ,prompt-end-pos))))
                      (setq pen-last-prompt-data
