@@ -12,7 +12,10 @@ test -n "$PEN_LM_COMMAND" || {
     exit 1
 }
 
+: "${PEN_MIN_TOKENS:="20"}"
 : "${PEN_MAX_TOKENS:="60"}"
+: "${PEN_ENGINE_MIN_TOKENS:="20"}"
+: "${PEN_ENGINE_MAX_TOKENS:="60"}"
 : "${PEN_TEMPERATURE:="0.8"}"
 : "${PEN_TOP_P:="1"}"
 : "${PEN_TOP_K:="10"}"
@@ -22,7 +25,10 @@ test -n "$PEN_LM_COMMAND" || {
 
 export PEN_USER_AGENT=emacs/pen
 export PEN_LM_KEY
+export PEN_MIN_TOKENS
 export PEN_MAX_TOKENS
+export PEN_ENGINE_MIN_TOKENS
+export PEN_ENGINE_MAX_TOKENS
 export PEN_TEMPERATURE
 export PEN_TOP_P
 export PEN_TOP_K
