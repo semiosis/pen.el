@@ -552,9 +552,6 @@ Reconstruct the entire yaml-ht for a different language."
                               ,max-tokens)))))
 
                   ;; TODO Perform additional max/min check here
-
-                  (min-tokens (str min-tokens))
-                  (max-tokens (str max-tokens))
                   (final-min-tokens (str final-min-tokens))
                   (final-max-tokens (str final-max-tokens))
 
@@ -950,10 +947,10 @@ Otherwise, it will be a shell expression template")
                  (let* ((yaml-ht (pen-engine-file-load path))
 
                         ;; function
-                        (title (ht-get yaml-ht "title")))
+                        (engine-title (ht-get yaml-ht "engine-title")))
                    (ht-set yaml-ht "path" path)
-                   (message (concat "pen-mode: Loaded engine " title))
-                   (ht-set pen-engines title yaml-ht))
+                   (message (concat "pen-mode: Loaded engine " engine-title))
+                   (ht-set pen-engines engine-title yaml-ht))
                  (add-to-list 'pen-engines-failed path)))
        (if pen-engines-failed
            (progn
@@ -1026,6 +1023,16 @@ Function names are prefixed with pf- for easy searching"
                  (let* ((yaml-ht (pen-prompt-file-load path))
                         (path path)
 
+                        (engine
+                         (let* ((engine-title (ht-get yaml-ht "engine"))
+                                (engine (if (and
+                                             engine-title
+                                             pen-engines)
+                                            (ht-get pen-engines engine-title))))
+                           (if engine
+                               (setq yaml-ht (ht-merge yaml-ht engine)))
+                           engine-title))
+
                         ;; function
                         (task-ink (ht-get yaml-ht "task"))
                         (language (ht-get yaml-ht "language"))
@@ -1095,15 +1102,7 @@ Function names are prefixed with pf- for easy searching"
                         (n-test-runs (ht-get yaml-ht "n-test-runs"))
 
                         ;; API
-                        (engine
-                         (let* ((engine-title (ht-get yaml-ht "engine"))
-                                (engine (if (and
-                                             engine-title
-                                             pen-engines)
-                                            (ht-get pen-engines engine-title))))
-                           (if engine
-                               (setq yaml-ht (ht-merge yaml-ht engine)))
-                           engine-title))
+
                         (model (ht-get yaml-ht "model"))
                         (min-tokens (ht-get yaml-ht "min-tokens"))
                         (max-tokens (ht-get yaml-ht "max-tokens"))
@@ -1170,6 +1169,8 @@ Function names are prefixed with pf- for easy searching"
                                 (if design-patterns (concat "\ndesign-patterns:\n" (pen-list-to-orglist design-patterns)))
                                 (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
                                 (if aims (concat "\naims:" (pen-list-to-orglist aims)))
+                                (if engine (concat "\nengine: " engine))
+                                (if lm-command (concat "\nlm-command: " lm-command))
                                 (if model (concat "\nmodel: " model))
                                 (if min-tokens (concat "\nmin-tokens: " (str min-tokens)))
                                 (if max-tokens (concat "\nmax-tokens: " (str max-tokens)))
