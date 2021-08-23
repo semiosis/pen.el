@@ -1498,6 +1498,36 @@ Function names are prefixed with pf- for easy searching"
       (eval `(pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args))
     (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
 
+(defun pen-complete-word (preceding-text &optional tv)
+  "Word completion"
+  (interactive (list (pen-preceding-text) nil))
+  (let ((response
+         (pen-word-complete
+          (pen-complete-function preceding-text))))
+    (if tv
+        (pen-etv (ink-propertise response))
+      (insert (ink-propertise response)))))
+
+(defun pen-complete-words (preceding-text &optional tv)
+  "Words completion"
+  (interactive (list (pen-preceding-text) nil))
+  (let ((response
+         (pen-words-complete
+          (pen-complete-function preceding-text))))
+    (if tv
+        (pen-etv (ink-propertise response))
+      (insert (ink-propertise response)))))
+
+(defun pen-complete-line (preceding-text &optional tv)
+  "Line completion"
+  (interactive (list (pen-preceding-text) nil))
+  (let ((response
+         (pen-line-complete
+          (pen-complete-function preceding-text))))
+    (if tv
+        (pen-etv (ink-propertise response))
+      (insert (ink-propertise response)))))
+
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
 May use to generate code from comments."
