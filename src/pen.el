@@ -538,10 +538,21 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'n-collate)
                        ,n-collate))
 
+                  (final-engine-max-n-completions
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'engine-max-n-completions)
+                             ,engine-max-n-completions))))
+
                   (final-n-completions
                    (expand-template
                     (str (or (pen-var-value-maybe 'n-completions)
                              ,n-completions))))
+
+                  (final-engine-max-generated-tokens
+                   (pen-str2num
+                    (expand-template
+                     (str (or (pen-var-value-maybe 'engine-max-generated-tokens)
+                              ,engine-max-generated-tokens)))))
 
                   (final-engine-min-tokens
                    (pen-str2num
@@ -712,6 +723,8 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_CACHE" . ,cache)
                             ("PEN_USER_AGENT" . ,pen-user-agent)
                             ("PEN_N_COMPLETIONS" . ,final-n-completions)
+                            ("PEN_ENGINE_MAX_N_COMPLETIONS" . ,final-engine-max-n-completions)
+                            ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
                             ("PEN_END_POS" . ,prompt-end-pos))))
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data data))
@@ -1137,6 +1150,12 @@ Function names are prefixed with pf- for easy searching"
                         (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
                         (n-collate (or (ht-get yaml-ht "n-collate")
                                        1))
+                        (engine-max-generated-tokens
+                         (or (ht-get yaml-ht "engine-max-generated-tokens")
+                             256))
+                        (engine-max-n-completions
+                         (or (ht-get yaml-ht "engine-max-n-completions")
+                             10))
                         (n-completions (or (ht-get yaml-ht "n-completions")
                                            5))
                         (n-test-runs (ht-get yaml-ht "n-test-runs"))

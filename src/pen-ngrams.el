@@ -1,5 +1,5 @@
 (defun pen-ngrams-postprocess (s)
-  (snc "sed \"s/I 'm/I'm/g\"" s))
+  (pen-snc "sed \"s/I 'm/I'm/g\"" s))
 
 (defset pen-corpora '((15 "english 2012")
                       (16 "english fiction")
@@ -12,13 +12,13 @@
                      26))
   (let ((ngrams
          (ecurl (format "https://books.google.com/ngrams/json?content=%s&year_start=%s&year_end=%s&corpus=%s&smoothing=3"
-                        (snc "sed 's/%2A/*/g'" (url-encode-url phrase))
+                        (pen-snc "sed 's/%2A/*/g'" (url-encode-url phrase))
                         (or year-start "1800")
                         (or year-end "2020")
                         (or corpus 26)))
-         ;; (snc "jq -r .[].ngram"
+         ;; (pen-snc "jq -r .[].ngram"
          ;;      (ecurl (format "https://books.google.com/ngrams/json?content=%s&year_start=%s&year_end=%s&corpus=%s&smoothing=3"
-         ;;                     (snc "sed 's/%2A/*/g'" (url-encode-url phrase))
+         ;;                     (pen-snc "sed 's/%2A/*/g'" (url-encode-url phrase))
          ;;                     (or year-start "1800")
          ;;                     (or year-end "2020")
          ;;                     (or corpus 26))))

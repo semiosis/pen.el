@@ -982,7 +982,7 @@ when s is a string, set the clipboard to s"
   ;; (nbfs
   ;;  (pps
   ;;   (str2lines
-  ;;    (snc
+  ;;    (pen-snc
   ;;     (concat
   ;;      "printf -- '%s\n' "
   ;;      ;; It doesn't always generate keywords, so it's not very reliable

@@ -141,6 +141,8 @@ export PEN_STOP_SEQUENCE
 export PEN_REPETITION_PENALTY
 export PEN_CACHE
 export PEN_MODE
+export PEN_ENGINE_MAX_GENERATED_TOKENS
+export PEN_ENGINE_MAX_N_COMPLETIONS
 
 tf_response="$(mktemp -t "lm_results_XXXXXX.txt" 2>/dev/null)"
 trap "rm \"$tf_response\" 2>/dev/null" 0

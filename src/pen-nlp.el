@@ -4,7 +4,7 @@
   (if (string-match "^[^*]+$" query)
       (setq query (concat query " *")))
 
-  (let ((res (s-lines (snc "ngram-complete" query))))
+  (let ((res (s-lines (pen-snc "ngram-complete" query))))
     (if (interactive-p)
         (xc (fz res
                 nil nil "ngram-suggest copy: "))
@@ -13,7 +13,7 @@
 (defun gen-google-ngram-queries (s i)
   (-filter-not-empty-string
    (str2list
-    (snc
+    (pen-snc
      (concat
       "echo "
       (q s)

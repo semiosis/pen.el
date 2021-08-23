@@ -8,10 +8,10 @@
                  :pen-force-aix pen-force-aix
                  :pen-force-openai pen-force-openai
                  :pen-force-hf pen-force-hf
-                 :openai-last-output (snc (cmd "cat" "/tmp/openai-temp.txt"))
-                 :hf-last-output (snc (cmd "cat" "/tmp/hf-temp.txt"))
-                 :aix-last-output (snc (cmd "cat" "/tmp/aix-temp.txt"))
-                 :ai21-last-output (snc (cmd "cat" "/tmp/ai21-temp.txt")))))
+                 :openai-last-output (pen-snc (pen-cmd "cat" "/tmp/openai-temp.txt"))
+                 :hf-last-output (pen-snc (pen-cmd "cat" "/tmp/hf-temp.txt"))
+                 :aix-last-output (pen-snc (pen-cmd "cat" "/tmp/aix-temp.txt"))
+                 :ai21-last-output (pen-snc (pen-cmd "cat" "/tmp/ai21-temp.txt")))))
     (find-file (pen-tf "pen context" (plist2yaml plist) "yaml"))))
 
 (defun pen-diagnostics-test-key ()
