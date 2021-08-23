@@ -576,7 +576,8 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-min-tokens (pen-hard-bound
                                      final-min-tokens
                                      final-engine-min-tokens
-                                     final-engine-max-tokens) )
+                                     final-engine-max-tokens))
+
                   (final-max-tokens (pen-hard-bound
                                      final-max-tokens
                                      final-engine-min-tokens
