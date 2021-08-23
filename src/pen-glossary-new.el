@@ -934,7 +934,7 @@ Use my position list code. Make it use rosie lang and external software."
               (concat " in the context of " topic)
             ""))
          (def
-          (pf-define-word/1 (concat term final-topic))))
+          (pf-define-word-for-glossary/1 (concat term final-topic))))
 
     (if (sor def)
         (progn

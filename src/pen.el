@@ -177,7 +177,7 @@ Reconstruct the entire yaml-ht for a different language."
              newyaml
              "*new prompt*"
              'prompt-description-mode)))
-      ;; (ht-get pen-prompts "pf-define-word/1")
+      ;; (ht-get pen-prompts "pf-define-word-for-glossary/1")
       ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
       )))
 

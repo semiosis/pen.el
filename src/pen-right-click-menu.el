@@ -195,5 +195,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     ("go to engine for text" :call pen-go-to-engine-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")))))
 
 (define-key pen-map (kbd "H-m") 'right-click-context-menu)
+(define-key pen-map (kbd "C-M-z") 'right-click-context-menu)
 
 (provide 'pen-right-click-menu)
