@@ -1537,6 +1537,11 @@ Function names are prefixed with pf- for easy searching"
                       (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
                       (vals (ht-values engine)))
                  (-zip-lists keys vals)))
+           (if pen-force-openai-codex
+               (let* ((engine (ht-get pen-engines "OpenAI Codex"))
+                      (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                      (vals (ht-values engine)))
+                 (-zip-lists keys vals)))
            (if pen-force-ai21
                (let* ((engine (ht-get pen-engines "AI21 J1-Jumbo"))
                       (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
