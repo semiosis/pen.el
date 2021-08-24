@@ -929,10 +929,7 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; Insertion is for prompts for which a new buffer is not necessary
                     ((or ,insertion
                          ,completion)
-                     (if (and final-is-completion
-                              final-engine-strips-gen-starting-whitespace)
-                         (setq result (concat " " result)))
-                     (insert (ink-propertise result)))
+                     (pen-complete-insert (ink-propertise result)))
                     (t
                      (pen-etv (ink-propertise result))))
                  result)))))))))
@@ -1687,6 +1684,10 @@ Function names are prefixed with pf- for easy searching"
       (eval `(pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args))
     (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
 
+(defun pen-complete-insert (s)
+  "This is a completely useless function ,currently"
+  (insert s))
+
 (defun pen-complete-word (preceding-text &optional tv)
   "Word completion"
   (interactive (list (pen-preceding-text) nil))
@@ -1695,7 +1696,7 @@ Function names are prefixed with pf- for easy searching"
           (pen-complete-function preceding-text))))
     (if tv
         (pen-etv (ink-propertise response))
-      (insert (ink-propertise response)))))
+      (pen-complete-insert (ink-propertise response)))))
 
 (defun pen-complete-words (preceding-text &optional tv)
   "Words completion"
@@ -1705,7 +1706,7 @@ Function names are prefixed with pf- for easy searching"
           (pen-complete-function preceding-text))))
     (if tv
         (pen-etv (ink-propertise response))
-      (insert (ink-propertise response)))))
+      (pen-complete-insert (ink-propertise response)))))
 
 (defun pen-complete-line (preceding-text &optional tv)
   "Line completion"
@@ -1715,7 +1716,7 @@ Function names are prefixed with pf- for easy searching"
           (pen-complete-function preceding-text))))
     (if tv
         (pen-etv (ink-propertise response))
-      (insert (ink-propertise response)))))
+      (pen-complete-insert (ink-propertise response)))))
 
 (defun pen-complete-long (preceding-text &optional tv)
   "Long-form completion. This will generate lots of text.
@@ -1726,7 +1727,7 @@ May use to generate code from comments."
           (pen-complete-function preceding-text))))
     (if tv
         (pen-etv (ink-propertise response))
-      (insert (ink-propertise response)))))
+      (pen-complete-insert (ink-propertise response)))))
 
 (defun pen-cmd-q (&rest args)
   (s-join " " (mapcar 'pen-q (mapcar 'str args))))

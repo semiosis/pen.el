@@ -225,6 +225,24 @@ case "$f" in
     }
     ;;
 
+    has-starting-specified-whitespace) {
+        ws="$1"
+        sed -n -z "/^$(pen-qne "$ws")/p" | grep -qP .
+    }
+    ;;
+
+    if-starts-with-whitespace) {
+        ws="$1"
+        sed -n -z "/^$(pen-qne "$ws")/p"
+    }
+    ;;
+
+    remove-starting-specified-whitespace) {
+        ws="$1"
+        sed -z "s/^$(pen-qne "$ws")//"
+    }
+    ;;
+
     newline-if-empty) {
         IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
         if test -z "$in"; then

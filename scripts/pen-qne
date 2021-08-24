@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# cmd - print the arguments given to this script
+
+# https://mullikine.github.io/posts/missing-posix-shell-functions-cmd-and-myeval/
+
+cmd() {
+    for var in "$@"
+    do
+        printf "%s " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+    done | sed 's/ $//'
+}
+
+cmd "$@"
