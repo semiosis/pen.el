@@ -606,6 +606,18 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
          (match-string-no-properties 0 s))))
 (defalias 'regex-match-string 'regex-match-string-1)
 
+(defun s-trailing-whitespace (s)
+  (regex-match-string "[ \t\n]*\\'" s))
+
+(defun s-remove-trailing-newline (s)
+  (replace-regexp-in-string "\n\\'" "" s))
+
+(defun s-remove-trailing-whitespace (s)
+  (replace-regexp-in-string "[ \t\n]*\\'" "" s))
+
+(defun s-remove-starting-specified-whitespace (s ws)
+  (replace-regexp-in-string (concat "\\`" ws) "" s))
+
 (defun s-preserve-trailing-whitespace (s-new s-old)
   "Return s-new but with the same amount of trailing whitespace as s-old."
   (let* ((trailing_ws_pat "[ \t\n]*\\'")

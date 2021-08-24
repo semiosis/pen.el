@@ -438,6 +438,11 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'new-document)
                        ,new-document))
 
+                  (final-engine-whitespace-support
+                   (or
+                    (pen-var-value-maybe 'engine-whitespace-support)
+                    ,engine-whitespace-support))
+
                   (final-include-prompt
                    (or (pen-var-value-maybe 'include-prompt)
                        ,include-prompt))
@@ -548,6 +553,9 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'n-completions)
                              ,n-completions))))
 
+                  (final-n-completions
+                   (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
+
                   (final-engine-max-generated-tokens
                    (pen-str2num
                     (expand-template
@@ -648,6 +656,14 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'postpostprocessor)
                              ,postpostprocessor))))
 
+                  (final-is-completion
+                   (or (pen-var-value-maybe 'is-completion)
+                       ,is-completion))
+
+                  (final-engine-strips-gen-starting-whitespace
+                   (or (pen-var-value-maybe 'engine-strips-gen-starting-whitespace)
+                       ,engine-strips-gen-starting-whitespace))
+
                   (final-stop-sequences
                    (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
                                             ',stop-sequences)
@@ -691,19 +707,24 @@ Reconstruct the entire yaml-ht for a different language."
                                     (pen-yas-expand-string final-prompt)
                                   final-prompt))
 
-                  ;; This is vital. Newlines at the end will break completion
-                  (final-prompt (chomp final-prompt))
-
                   ;; This gives string position, not byte position
                   ;; (string-search "s" "ガムツリshane")
+
+                  (final-prompt (s-remove-trailing-newline final-prompt))
 
                   (prompt-end-pos (or (byte-string-search "<:pp>" final-prompt)
                                       ;; (length final-prompt)
                                       (string-bytes final-prompt)))
 
-                  (final-prompt (string-replace "<:pp>" "" final-prompt))
+                  (final-prompt (pen-log-final-prompt (string-replace "<:pp>" "" final-prompt)))
 
-                  (final-prompt (pen-log-final-prompt (chomp final-prompt)))
+                  (trailing-whitespace (s-trailing-whitespace final-prompt))
+
+                  ;; (test (tv (qne (s-trailing-whitespace final-prompt))))
+
+                  (final-prompt (if final-engine-whitespace-support
+                                    final-prompt
+                                  (s-remove-trailing-whitespace final-prompt)))
 
                   ;; Now that all values are loaded, re-template them so I can base values on other values
 
@@ -724,8 +745,9 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_FLAGS" . ,final-flags)
                             ("PEN_CACHE" . ,cache)
                             ("PEN_USER_AGENT" . ,pen-user-agent)
+                            ("PEN_TRAILING_WHITESPACE" . ,trailing-whitespace)
                             ("PEN_N_COMPLETIONS" . ,final-n-completions)
-                            ("PEN_ENGINE_MAX_N_COMPLETIONS" . ,final-engine-max-n-completions)
+                            ;; ("PEN_ENGINE_MAX_N_COMPLETIONS" . ,final-engine-max-n-completions)
                             ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
                             ("PEN_END_POS" . ,prompt-end-pos))))
                      (setq pen-last-prompt-data
@@ -811,8 +833,12 @@ Reconstruct the entire yaml-ht for a different language."
                                                                            (sor ,prettifier))
                                                                       (pen-sn ,prettifier r)
                                                                     r)))
+
                                               (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
-                                              (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
+                                              (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))
+
+                                              ))
+
                                            (processed-results
                                             (-flatten
                                              (->> processed-results
@@ -823,6 +849,35 @@ Reconstruct the entire yaml-ht for a different language."
                                                        for stpat in final-end-split-patterns collect
                                                        (s-split stpat r))
                                                     (list r)))))))
+
+                                           (processed-results
+                                            (->> processed-results
+                                              (-filter
+                                               (lambda (r)
+                                                 (or
+                                                  final-engine-whitespace-support
+                                                  (not (sor trailing-whitespace))
+                                                  (not (pen-snq (cmd "pen-str" "has-starting-specified-whitespace" trailing-whitespace) r)))))))
+
+                                           (processed-results
+                                            (->> processed-results
+                                              (-filter
+                                               (lambda (r)
+                                                 (if
+                                                     (not final-engine-whitespace-support)
+                                                     (concat trailing-whitespace r)
+                                                   r)))))
+
+                                           ;; (processed-results
+                                           ;;  (mapcar
+                                           ;;   (lambda (r)
+                                           ;;     (if (and (not final-engine-whitespace-support)
+                                           ;;              (sor trailing-whitespace))
+                                           ;;         (s-remove-starting-specified-whitespace r trailing-whitespace)
+                                           ;;       ;; (pen-sn (cmd "pen-str" "remove-starting-specified-whitespace" trailing-whitespace) r)
+                                           ;;       r))
+                                           ;;   processed-results))
+
                                            (processed-results
                                             (->> processed-results
                                               (-filter
@@ -874,6 +929,9 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; Insertion is for prompts for which a new buffer is not necessary
                     ((or ,insertion
                          ,completion)
+                     (if (and final-is-completion
+                              final-engine-strips-gen-starting-whitespace)
+                         (setq result (concat " " result)))
                      (insert (ink-propertise result)))
                     (t
                      (pen-etv (ink-propertise result))))
@@ -1004,7 +1062,7 @@ Otherwise, it will be a shell expression template")
 
                         ;; function
                         (engine-title (ht-get yaml-ht "engine-title")))
-                   (ht-set yaml-ht "path" path)
+                   (ht-set yaml-ht "engine-path" path)
                    (message (concat "pen-mode: Loaded engine " engine-title))
                    (ht-set pen-engines engine-title yaml-ht))
                  (add-to-list 'pen-engines-failed path)))
@@ -1098,6 +1156,7 @@ Function names are prefixed with pf- for easy searching"
                                    task
                                    `(("language" . ,language)))
                                 task))
+                        (engine-whitespace-support (ht-get yaml-ht "engine-whitespace-support"))
                         (title (ht-get yaml-ht "title"))
                         (title (sor title
                                     task))
@@ -1172,6 +1231,12 @@ Function names are prefixed with pf- for easy searching"
                         (top-p (ht-get yaml-ht "top-p"))
                         (top-k (ht-get yaml-ht "top-k"))
                         (temperature (ht-get yaml-ht "temperature"))
+
+                        ;; This is an override hint only
+                        (is-completion nil)
+
+                        (engine-strips-gen-starting-whitespace (ht-get yaml-ht "engine-strips-gen-starting-whitespace"))
+
                         (stop-sequences
                          (or (vector2list (ht-get yaml-ht "stop-sequences"))
                              ;; (list "\n")
@@ -1237,6 +1302,9 @@ Function names are prefixed with pf- for easy searching"
                                 (if max-tokens (concat "\nmax-tokens: " (str max-tokens)))
                                 (if engine-min-tokens (concat "\nengine-min-tokens: " (str engine-min-tokens)))
                                 (if engine-max-tokens (concat "\nengine-max-tokens: " (str engine-max-tokens)))
+                                (if engine-whitespace-support
+                                    (concat "\nengine-whitespace-support: yes")
+                                  (concat "\nengine-whitespace-support: no"))
                                 (if task (concat "\ntask: " task))
                                 (if notes (concat "\nnotes:" (pen-list-to-orglist notes)))
                                 (if filter (concat "\nfilter: on"))
@@ -1463,21 +1531,25 @@ Function names are prefixed with pf- for easy searching"
                      ;; n-completions may be emulated with collate
                      `(n-collate 1)))
            (if pen-force-aix
-               (list `(engine "AIx GPT-J-6B")
-                     `(lm-command "aix-complete.sh")
-                     `(model "GPT-J-6B")))
+               (let* ((engine (ht-get pen-engines "AIx GPT-J-6B"))
+                      (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                      (vals (ht-values engine)))
+                 (-zip-lists keys vals)))
            (if pen-force-openai
-               (list `(engine "OpenAI Davinci")
-                     `(lm-command "openai-complete.sh")
-                     `(model "davinci")))
+               (let* ((engine (ht-get pen-engines "OpenAI Davinci"))
+                      (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                      (vals (ht-values engine)))
+                 (-zip-lists keys vals)))
            (if pen-force-ai21
-               (list `(engine "AI21 J1-Jumbo")
-                     `(lm-command "ai21-complete.sh")
-                     `(model "j1-jumbo")))
+               (let* ((engine (ht-get pen-engines "AI21 J1-Jumbo"))
+                      (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                      (vals (ht-values engine)))
+                 (-zip-lists keys vals)))
            (if pen-force-hf
-               (list `(engine "HuggingFace GPT-2")
-                     `(lm-command "hf-complete.sh")
-                     `(model "gpt2")))))))
+               (let* ((engine (ht-get pen-engines "HuggingFace GPT-2"))
+                      (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                      (vals (ht-values engine)))
+                 (-zip-lists keys vals)))))))
     `(eval
       `(let ,',overrides
          ,',@body))))
@@ -1499,15 +1571,24 @@ Function names are prefixed with pf- for easy searching"
 (comment
  (defmacro pen-long-complete (&rest body)
    "This wraps around pen function calls to make them complete long"
-   `(let ((max-tokens 200)
+
+   ;; is-completion is just a hint as to what this function is doing
+   ;; if is-completion is specified and the engine (i.e. AIx) strips the starting whitespace
+   ;; then pen will be hinted to add some whitespace.
+   `(let ((is-completion t)
+          (max-tokens 200)
           (stop-sequence "##long complete##")
           (stop-sequences '("##long complete##")))
       ,@body)))
 
 (defmacro pen-words-complete (&rest body)
   "This wraps around pen function calls to make them complete long"
+  ;; is-completion is just a hint as to what this function is doing
+  ;; if is-completion is specified and the engine (i.e. AIx) strips the starting whitespace
+  ;; then pen will be hinted to add some whitespace.
   `(eval
-    `(let ((max-tokens 5)
+    `(let ((is-completion t)
+           (max-tokens 5)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
@@ -1515,9 +1596,10 @@ Function names are prefixed with pf- for easy searching"
        ,',@body)))
 
 (defmacro pen-words-complete-nongreedy (&rest body)
-  "This wraps around pen function calls to make them complete long"
+  "This wraps around pen function calls to make them complete words"
   `(eval
-    `(let ((max-tokens 5)
+    `(let ((is-completion t)
+           (max-tokens 5)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "##long complete##"))
@@ -1529,9 +1611,10 @@ Function names are prefixed with pf- for easy searching"
        ,',@body)))
 
 (defmacro pen-word-complete (&rest body)
-  "This wraps around pen function calls to make them complete long"
+  "This wraps around pen function calls to make them complete a single word"
   `(eval
-    `(let ((max-tokens 1)
+    `(let ((is-completion t)
+           (max-tokens 1)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
@@ -1539,9 +1622,10 @@ Function names are prefixed with pf- for easy searching"
        ,',@body)))
 
 (defmacro pen-word-complete-nongreedy (&rest body)
-  "This wraps around pen function calls to make them complete long"
+  "This wraps around pen function calls to make them complete a singel word"
   `(eval
-    `(let ((max-tokens 1)
+    `(let ((is-completion t)
+           (max-tokens 1)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "##long complete##"))
@@ -1555,7 +1639,8 @@ Function names are prefixed with pf- for easy searching"
 (defmacro pen-long-complete (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
-    `(let ((max-tokens 200)
+    `(let ((is-completion t)
+           (max-tokens 200)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##")))
        ,',@body)))
@@ -1563,7 +1648,8 @@ Function names are prefixed with pf- for easy searching"
 (defmacro pen-long-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
-    `(let ((max-tokens 200)
+    `(let ((is-completion t)
+           (max-tokens 200)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "##long complete##"))
@@ -1575,7 +1661,8 @@ Function names are prefixed with pf- for easy searching"
 (defmacro pen-line-complete (&rest body)
   "This wraps around pen function calls to make them complete line only"
   `(eval
-    `(let ((max-tokens 100)
+    `(let ((is-completion t)
+           (max-tokens 100)
            (stop-sequence "\n")
            (stop-sequences '("\n")))
        ,',@body)))
@@ -1583,13 +1670,14 @@ Function names are prefixed with pf- for easy searching"
 (defmacro pen-line-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete line only"
   `(eval
-    `(let ((max-tokens 100)
-          (stop-sequence (or (and (variable-p 'stop-sequence)
-                                  (eval 'stop-sequence))
-                             "\n"))
-          (stop-sequences (or (and (variable-p 'stop-sequences)
-                                   (eval 'stop-sequences))
-                              '("\n"))))
+    `(let ((is-completion t)
+           (max-tokens 100)
+           (stop-sequence (or (and (variable-p 'stop-sequence)
+                                   (eval 'stop-sequence))
+                              "\n"))
+           (stop-sequences (or (and (variable-p 'stop-sequences)
+                                    (eval 'stop-sequences))
+                               '("\n"))))
        ,',@body)))
 
 (defun pen-complete-function (preceding-text &rest args)
