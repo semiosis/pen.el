@@ -23,8 +23,20 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-penel-directory (f-join user-emacs-directory "pen.el")
+  "Personal pen.el respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-prompts-directory (f-join user-emacs-directory "prompts")
   "Personal prompt respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-snippets-directory (f-join user-emacs-directory "snippets")
+  "Personal snippets respository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)

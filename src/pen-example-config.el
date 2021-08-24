@@ -109,6 +109,19 @@
 ;; This is how many repositories deep pen will look for new prompts repositories that are linked to eachother
 (setq pen-prompt-discovery-recursion-depth 5)
 
+(comment
+ (openaidir (f-join user-emacs-directory "openai-api.el"))
+ (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))
+ (penhostdir (f-join user-emacs-directory "host/pen.el"))
+ (contribdir (f-join user-emacs-directory "pen-contrib.el"))
+ (contribhostdir (f-join user-emacs-directory "host/pen-contrib.el")))
+
+;; Personal pen.el repository
+(let ((hostpeneldir (f-join user-emacs-directory "host" "pen.el")))
+  (if (f-directory-p (f-join hostpeneldir "pen.el"))
+      (setq pen-penel-directory hostpeneldir)
+    (setq pen-penel-directory (f-join user-emacs-directory "pen.el"))))
+
 ;; Personal prompts repository
 (let ((hostpromptsdir (f-join user-emacs-directory "host" "prompts")))
   (if (f-directory-p (f-join hostpromptsdir "prompts"))
