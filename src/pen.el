@@ -835,9 +835,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                                     r)))
 
                                               (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
-                                              (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))
-
-                                              ))
+                                              (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
 
                                            (processed-results
                                             (-flatten
@@ -1295,6 +1293,8 @@ Function names are prefixed with pf- for easy searching"
                                 (if engine (concat "\nengine: " engine))
                                 (if lm-command (concat "\nlm-command: " lm-command))
                                 (if model (concat "\nmodel: " model))
+                                (if n-completions (concat "\nn-completions: " (str n-completions)))
+                                (if n-collate (concat "\nn-collate: " (str n-collate)))
                                 (if min-tokens (concat "\nmin-tokens: " (str min-tokens)))
                                 (if max-tokens (concat "\nmax-tokens: " (str max-tokens)))
                                 (if engine-min-tokens (concat "\nengine-min-tokens: " (str engine-min-tokens)))
@@ -1660,6 +1660,8 @@ Function names are prefixed with pf- for easy searching"
   `(eval
     `(let ((is-completion t)
            (max-tokens 100)
+           (n-completions 20)
+           (n-collate 2)
            (stop-sequence "\n")
            (stop-sequences '("\n")))
        ,',@body)))
@@ -1669,6 +1671,8 @@ Function names are prefixed with pf- for easy searching"
   `(eval
     `(let ((is-completion t)
            (max-tokens 100)
+           (n-completions 20)
+           (n-collate 2)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "\n"))
@@ -1678,6 +1682,7 @@ Function names are prefixed with pf- for easy searching"
        ,',@body)))
 
 (defun pen-complete-function (preceding-text &rest args)
+  ;; (pf-generic-completion-50-tokens/1 preceding-text)
   (if (and (derived-mode-p 'prog-mode)
            (not (string-equal (buffer-name) "*scratch*")))
       ;; Can't put ink-propertise here

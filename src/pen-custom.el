@@ -93,6 +93,12 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-force-openai-codex nil
+  "Forcing use Davinci Codex from OpenAI"
+  :type 'boolean
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-force-hf nil
   "Forcing use GPT-2 from HF"
   :type 'boolean
