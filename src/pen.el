@@ -584,15 +584,17 @@ Reconstruct the entire yaml-ht for a different language."
                   ;; TODO Make a hard fail here
                   ;; TODO Make a distinction between min and max generated tokens
                   ;; and min and max prompt tokens
-                  (final-min-tokens (pen-hard-bound
-                                     final-min-tokens
-                                     final-engine-min-tokens
-                                     final-engine-max-tokens))
+                  ;; Can't do this yet anyway, because non-specified engine max becomes 0
+                  ;; and that changes max
+                  ;; (final-min-tokens (pen-hard-bound
+                  ;;                    final-min-tokens
+                  ;;                    final-engine-min-tokens
+                  ;;                    final-engine-max-tokens))
 
-                  (final-max-tokens (pen-hard-bound
-                                     final-max-tokens
-                                     final-engine-min-tokens
-                                     final-engine-max-tokens))
+                  ;; (final-max-tokens (pen-hard-bound
+                  ;;                    final-max-tokens
+                  ;;                    final-engine-min-tokens
+                  ;;                    final-engine-max-tokens))
 
                   (final-temperature
                    (expand-template
