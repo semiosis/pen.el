@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# This will be used for imaginary-mode.
+
+# It's used to remove the REPL prompt (not LM prompt) from a generation
+# and copy the actual line of code.
+
+sed -e 's/^Prelude> //' \
+    -e 's/^Prelude.*> //' \
+    -e 's/^scala> //' \
+    -e 's/^.*[^ ]> //' \
+    -e 's/.*u=)$ //' \
+    -e 's/^.*» //' \
+    -e 's/^Break [0-9]\+ \[[0-9]\+\]> //' \
+    -e 's/^➜  ~ //' \
+    -e 's/^λ //' \
+    -e 's/^.* λ //' \
+    -e 's/^[+-] \([^ ]\)/\1/' \
+    -e 's/^> //' \
+    -e 's/^[~/a-zA-Z-]\+ \$ //' ` # eshell ` \
+    -e 's/^% //' \
+    -e 's/^>>> //' \
+    -e 's/^=> '// \
+    -e 's/^[a-z]\+=> '// \
+    -e 's/^In \[[0-9]\+\]: //' \
+    -e 's/^Eval: //' \
+    -e 's/^In\[[0-9]\+\]:= //' \
+    -e 's/^://' ` # Not nice for ghci because of things like :m, but good for vim. So put it before ghic ` \
+    -e 's/^[a-z]+> //' \
+    -e "s/^([a-z]*) .*\\$ //" \
+    -e 's/^λ> //' \
+    -e 's/^[a-z]\+@[a-z0-9-]\+:[^$]\+$ //' \
+    -e 's/^[^ ]\+% //' \
+    -e 's/ \[Unknown command\]$//'
