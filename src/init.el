@@ -22,6 +22,7 @@
 (require 'org-roam)
 (require 'org-brain)
 (require 'dash)
+(package-install 'eterm-256color)
 (require 'eterm-256color)
 ;; (require 'flyspell)
 (require 'evil)
