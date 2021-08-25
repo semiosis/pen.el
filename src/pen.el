@@ -1812,6 +1812,7 @@ May use to generate code from comments."
 (require 'pen-fun)
 (require 'pen-yasnippet)
 (require 'pen-filters)
+(require 'pen-term)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
