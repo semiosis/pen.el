@@ -181,7 +181,7 @@ Reconstruct the entire yaml-ht for a different language."
       ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
       )))
 
-(defun pen-list-filter-functions ()
+(defun pen-list-filterers ()
   (interactive)
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "filter"))
                        pen-prompt-functions-meta)))
@@ -189,9 +189,17 @@ Reconstruct the entire yaml-ht for a different language."
         (pen-etv (pps funs))
       funs)))
 
-(defun pen-list-completion-functions ()
+(defun pen-list-completers ()
   (interactive)
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "completion"))
+                       pen-prompt-functions-meta)))
+    (if (interactive-p)
+        (pen-etv (pps funs))
+      funs)))
+
+(defun pen-list-interpreters ()
+  (interactive)
+  (let ((funs (-filter (lambda (y) (pen-yaml-test y "interpreter"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
         (pen-etv (pps funs))
@@ -1416,7 +1424,7 @@ Function names are prefixed with pf- for easy searching"
   (let ((f (fz
             (if (>= (prefix-numeric-value current-prefix-arg) 4)
                 pen-prompt-functions
-              ;; (pen-list-filter-functions)
+              ;; (pen-list-filterers)
               pen-prompt-filter-functions)
             nil nil "pen filter: ")))
     (if f
@@ -1425,18 +1433,7 @@ Function names are prefixed with pf- for easy searching"
       ;; (filter-selected-region-through-function (intern f))
       )))
 
-(defun pen-start-imaginary-interpreter ()
-  (interactive)
-  (let ((f (fz
-            (if (>= (prefix-numeric-value current-prefix-arg) 4)
-                pen-prompt-functions
-              pen-prompt-interpreter-functions)
-            nil nil "pen interpreter: ")))
-    (if f
-        (let ((filter t))
-          (call-interactively (intern f)))
-      ;; (filter-selected-region-through-function (intern f))
-      )))
+
 
 (defun pen-run-prompt-function ()
   (interactive)

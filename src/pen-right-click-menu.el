@@ -135,6 +135,34 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
            (path (ht-get e "path")))
       (find-file path))))
 
+(defun pen-detect-language-context ()
+  (interactive)
+  (message (concat "Detected language: " (pf-get-language/1 (pen-preceding-text)))))
+
+;; TODO Try to detect the appropriate imaginary interpreter to start
+
+(defun pen-detect-imaginary-interpreter ()
+  ;; TODO Check for user prompt on current line first
+  ;; TODO Then do a language detect
+  (-filter (lambda (i) (istr-match-p (ht-get i "language") lang)) (pen-list-interpreters))
+  (re-match-p "^In \\[[0-9]*\\]: " (current-line-string)))
+
+(defun pen-start-imaginary-interpreter ()
+  (interactive)
+  (let ((f (fz
+            (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                pen-prompt-functions
+              pen-prompt-interpreter-functions)
+            nil nil "pen interpreter: ")))
+    (if f
+        (let ((filter t))
+          (call-interactively (intern f))))))
+
+(defun pen-start-imaginary-interpreter (lang history)
+  (interactive (list (pf-get-language/1 (pen-preceding-text))
+                     (pen-preceding-text)))
+  (sps (cmd "comint" "-E" (cmd "ii" lang history))))
+
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
@@ -165,7 +193,9 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("generate regex for above" :call pf-gpt-j-generate-regex/2))
         ("> word/term" :call rcm-term :if (pen-word-clickable))
         ("keywords/classify" :call pen-extract-keywords)
-        ("define for glossary" :call pen-add-to-glossary)))
+        ("define for glossary" :call pen-add-to-glossary)
+        ("detect language here" :call pen-detect-language-context)
+        ("start ii" :call pen-start-imaginary-interpreter)))
 
 (defmacro def-right-click-menu (name
                                 ;; predicates
