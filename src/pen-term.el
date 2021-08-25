@@ -327,11 +327,11 @@ without any interpretation."
 (add-hook 'term-mode-hook #'eterm-256color-mode)
 
 ;; Not sure why this is required for spacemacs
-(defun disable-ivy-mode ()
+(defun pen-disable-ivy-mode ()
   (interactive)
   (setq-local ivy-mode nil))
 
-(add-hook 'term-mode-hook 'disable-ivy-mode)
+(add-hook 'term-mode-hook 'pen-disable-ivy-mode)
 
 (comment
  (if (cl-search "SPACEMACS" pen-daemon-name)
