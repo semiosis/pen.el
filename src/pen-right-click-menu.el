@@ -162,10 +162,28 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         (let ((filter t))
           (call-interactively (intern f))))))
 
+(defun pen-e-sps (&optional run)
+  (interactive)
+  (split-window-sensibly)
+  (other-window 1)
+  (if run
+      (call-interactively run)))
+
+(defun pen-term-sps (&optional cmd dir)
+  (interactive)
+  (if (not dir)
+      (setq dir (cwd)))
+  (if (not cmd)
+      (progn
+        ;; (setq cmd (concat "TMUX= tmux new -c " (q dir) " -n zsh \"CWD= zsh\""))
+        (setq cmd "zsh")
+        (setq cmd (tmuxify-cmd cmd dir cmd))))
+  (pen-e-sps (lm (term-nsfa cmd nil "zsh" nil nil dir))))
+
 (defun pen-start-imaginary-interpreter (lang history)
   (interactive (list (pf-get-language/1 (pen-preceding-text))
                      (pen-preceding-text)))
-  (sps (cmd "comint" "-E" (cmd "ii" lang history))))
+  (pen-term-sps (pen-cmd "comint" "-E" (pen-cmd "ii" lang history))))
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
