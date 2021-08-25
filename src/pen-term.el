@@ -6,16 +6,6 @@
 (define-prefix-command 'pen-term-c-x)
 (define-prefix-command 'pen-term-c-c-esc)
 
-(defun pen-insert (s)
-  (interactive)
-  (cond
-   ((derived-mode-p 'term-mode)
-    (term-send-raw-string s))
-   ((derived-mode-p 'vterm-mode)
-    (vterm-insert s))
-   (t
-    (insert s))))
-
 (defun term-raw-or-kill ()
   (interactive)
   (if (not (term-check-proc (current-buffer)))

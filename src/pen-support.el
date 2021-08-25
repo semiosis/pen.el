@@ -1121,4 +1121,14 @@ Out
            (eval-string ,,(str default))
          (read-string-hist ,,(concat varname ": ") ,,example))))))
 
+(defun pen-insert (s)
+  (interactive)
+  (cond
+   ((derived-mode-p 'term-mode)
+    (term-send-raw-string s))
+   ((derived-mode-p 'vterm-mode)
+    (vterm-insert s))
+   (t
+    (insert s))))
+
 (provide 'pen-support)
