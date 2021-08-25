@@ -1,3 +1,5 @@
+(require 'term)
+
 (setq explicit-shell-file-name "/bin/bash")
 
 ;; I can't abolish C-c from all the minor modes
