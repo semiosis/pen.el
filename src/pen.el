@@ -1453,10 +1453,10 @@ Function names are prefixed with pf- for easy searching"
     (setq candidate (substring-no-properties candidate))
     ;; XXX: Return value we check here is subject to change.
     (if (eq (company-call-backend 'ignore-case) 'keep-prefix)
-        (insert (ink-propertise (company-strip-prefix candidate)))
+        (pen-insert (ink-propertise (company-strip-prefix candidate)))
       (unless (equal company-prefix candidate)
         (delete-region (- (point) (length company-prefix)) (point))
-        (insert (ink-propertise candidate))))))
+        (pen-insert (ink-propertise candidate))))))
 
 (defun pen-company-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
@@ -1696,7 +1696,7 @@ Function names are prefixed with pf- for easy searching"
 
 (defun pen-complete-insert (s)
   "This is a completely useless function ,currently"
-  (insert s))
+  (pen-insert s))
 
 (defun pen-complete-word (preceding-text &optional tv)
   "Word completion"

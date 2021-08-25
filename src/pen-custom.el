@@ -71,6 +71,12 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-ink-disabled nil
+  "Disable ink. Useful if it's breaking"
+  :type 'boolean
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-force-single-collation nil
   "Forcing only one collation will speed up Pen.el"
   :type 'boolean

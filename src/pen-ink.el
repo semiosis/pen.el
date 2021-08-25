@@ -123,68 +123,70 @@
   (interactive (list (pen-selection) pen-last-prompt-data))
 
   (if (sor text)
-      (progn
-        (let* ((text (or
-                      text
-                      (pen-selection)))
-               (data (or data
-                         pen-last-prompt-data)))
+      (if pen-ink-disabled
+          text
+          (progn
+            (let* ((text (or
+                          text
+                          (pen-selection)))
+                   (data (or data
+                             pen-last-prompt-data)))
 
-          (if (interactive-p)
-              (progn
-                (pen-alist-setcdr
-                 'data "PEN_ENGINE"
-                 (read-string-hist "engine: "
-                                   (cdr (assoc "PEN_ENGINE" data))))
-                (pen-alist-setcdr
-                 'data "PEN_LANGUAGE"
-                 (read-string-hist "language: "
-                                   (cdr (assoc "PEN_LANGUAGE" data))))
-                (pen-alist-setcdr
-                 'data "PEN_TOPIC"
-                 (read-string-hist "topic: "
-                                   (or
-                                    (cdr (assoc "PEN_TOPIC" data))
-                                    (pen-topic t)))))))
+              (if (interactive-p)
+                  (progn
+                    (pen-alist-setcdr
+                     'data "PEN_ENGINE"
+                     (read-string-hist "engine: "
+                                       (cdr (assoc "PEN_ENGINE" data))))
+                    (pen-alist-setcdr
+                     'data "PEN_LANGUAGE"
+                     (read-string-hist "language: "
+                                       (cdr (assoc "PEN_LANGUAGE" data))))
+                    (pen-alist-setcdr
+                     'data "PEN_TOPIC"
+                     (read-string-hist "topic: "
+                                       (or
+                                        (cdr (assoc "PEN_TOPIC" data))
+                                        (pen-topic t)))))))
 
-        (if (not (sor (cdr (assoc "PEN_ENGINE" data))))
-            (pen-alist-setcdr 'data "PEN_ENGINE" "OpenAI GPT-3"))
-        (if (not (sor (cdr (assoc "PEN_LANGUAGE" data))))
-            (pen-alist-setcdr 'data "PEN_LANGUAGE" "English"))
+            (if (not (sor (cdr (assoc "PEN_ENGINE" data))))
+                (pen-alist-setcdr 'data "PEN_ENGINE" "OpenAI GPT-3"))
+            (if (not (sor (cdr (assoc "PEN_LANGUAGE" data))))
+                (pen-alist-setcdr 'data "PEN_LANGUAGE" "English"))
 
-        ;; (cond
-        ;;  ((and
-        ;;    (assoc "INK_TYPE" data)
-        ;;    (string-equal
-        ;;     "generated"
-        ;;     (or (sor (cdr (assoc "INK_TYPE" data)))
-        ;;         "")))
-        ;;   (setq data (asoc-merge data '((face ink-generated)))))
-        ;;  ((and
-        ;;    (assoc "INK_TYPE" data)
-        ;;    (string-equal
-        ;;     "task"
-        ;;     (or (sor (cdr (assoc "INK_TYPE" data)))
-        ;;         "")))
-        ;;   (setq data (asoc-merge data '((face ink-task))))))
+            ;; (cond
+            ;;  ((and
+            ;;    (assoc "INK_TYPE" data)
+            ;;    (string-equal
+            ;;     "generated"
+            ;;     (or (sor (cdr (assoc "INK_TYPE" data)))
+            ;;         "")))
+            ;;   (setq data (asoc-merge data '((face ink-generated)))))
+            ;;  ((and
+            ;;    (assoc "INK_TYPE" data)
+            ;;    (string-equal
+            ;;     "task"
+            ;;     (or (sor (cdr (assoc "INK_TYPE" data)))
+            ;;         "")))
+            ;;   (setq data (asoc-merge data '((face ink-task))))))
 
-        (let* ((ink
-                (let ((ink)
-                      (start 0)
-                      (end))
-                  (setq end (length text))
-                  (loop for p in data do
-                        (let ((key (car p))
-                              (val (cdr p)))
-                          (put-text-property start end key val text)))
-                  (setq ink (format "%S" text))
-                  ink))
-               (ink ink))
-          (if (interactive-p)
-              (if (pen-selected-p)
-                  (pen-region-filter (eval `(lambda (s) ,ink)))
-                (pen-etv ink))
-            ink)))
+            (let* ((ink
+                    (let ((ink)
+                          (start 0)
+                          (end))
+                      (setq end (length text))
+                      (loop for p in data do
+                            (let ((key (car p))
+                                  (val (cdr p)))
+                              (put-text-property start end key val text)))
+                      (setq ink (format "%S" text))
+                      ink))
+                   (ink ink))
+              (if (interactive-p)
+                  (if (pen-selected-p)
+                      (pen-region-filter (eval `(lambda (s) ,ink)))
+                    (pen-etv ink))
+                ink))))
     ""))
 
 (defun ink-propertise (s)
