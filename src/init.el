@@ -22,6 +22,7 @@
 (require 'org-roam)
 (require 'org-brain)
 (require 'dash)
+(require 'eterm-256color)
 ;; (require 'flyspell)
 (require 'evil)
 (require 'popup)

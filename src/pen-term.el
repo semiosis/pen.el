@@ -333,9 +333,10 @@ without any interpretation."
 
 (add-hook 'term-mode-hook 'disable-ivy-mode)
 
-(if (cl-search "SPACEMACS" my-daemon-name)
-    (progn
-      (remove-hook 'term-mode-hook 'ansi-term-handle-close)))
+(comment
+ (if (cl-search "SPACEMACS" pen-daemon-name)
+     (progn
+       (remove-hook 'term-mode-hook 'ansi-term-handle-close))))
 
 (defun realign-term-window ()
   (interactive)

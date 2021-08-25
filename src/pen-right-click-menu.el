@@ -169,16 +169,33 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (if run
       (call-interactively run)))
 
+(defun pen-pwd ()
+  "Returns the current directory."
+  default-directory)
+
+(defun pen-tmuxify-cmd (cmd &optional dir window-name)
+  (let ((slug (slugify cmd)))
+    (setq window-name (or window-name slug))
+    (setq dir (or dir (pen-pwd)))
+    (concat "TMUX= tmux new -c " (pen-q dir) " -n " (pen-q window-name) " " (pen-q (concat "CWD= " cmd)))))
+
+(defun pen-term-nsfa (cmd &optional input modename closeframe buffer-name dir)
+  "Like term but can run a shell command."
+  (interactive (list (read-string "cmd:")))
+  (if input
+      (let ((tf (make-temp-file "pen-term-nsfa" nil nil input)))
+        (my/term (message (nsfa (message (concat "( " cmd " ) < " (pen-q tf))) dir)) closeframe modename buffer-name))
+    (my/term (nsfa cmd dir) closeframe modename buffer-name)))
+
 (defun pen-term-sps (&optional cmd dir)
   (interactive)
   (if (not dir)
       (setq dir (cwd)))
   (if (not cmd)
       (progn
-        ;; (setq cmd (concat "TMUX= tmux new -c " (q dir) " -n zsh \"CWD= zsh\""))
-        (setq cmd "zsh")
-        (setq cmd (tmuxify-cmd cmd dir cmd))))
-  (pen-e-sps (lm (term-nsfa cmd nil "zsh" nil nil dir))))
+        (setq cmd "bash")
+        (setq cmd (pen-tmuxify-cmd cmd dir cmd))))
+  (pen-e-sps (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
 
 (defun pen-start-imaginary-interpreter (lang history)
   (interactive (list (pf-get-language/1 (pen-preceding-text))
