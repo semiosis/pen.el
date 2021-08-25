@@ -205,8 +205,9 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
-        ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
+        ("transpile" :call pf-transpile/3)
         ("explain error" :call pf-explain-error/3)
+        ("> cheap" :call rcm-cheap)
         ("> ink" :call rcm-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_MODEL")
                                         (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")
                                         (lax-plist-get (text-properties-at (point)) "PEN_LM_COMMAND")))
@@ -252,6 +253,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
            (if (symbolp value)
                (call-interactively value t)
              (eval value)))))))
+
+(def-right-click-menu rcm-cheap
+  '(("Cancel" :call identity-command)
+    ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)))
 
 (def-right-click-menu rcm-term
   '(("Cancel" :call identity-command)
