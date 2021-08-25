@@ -469,6 +469,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'new-document)
                        ,new-document))
 
+                  (final-collation-temperature-stepper
+                   (or (pen-var-value-maybe 'collation-temperature-stepper)
+                       ,collation-temperature-stepper))
+
                   (final-engine-whitespace-support
                    (or
                     (pen-var-value-maybe 'engine-whitespace-support)
@@ -785,40 +789,57 @@ Reconstruct the entire yaml-ht for a different language."
                            (asoc-merge pen-last-prompt-data data))
                      data))
 
-                  ;; construct the full command
-                  (shcmd
-                   (pen-log
-                    (s-join
-                     " "
-                     (list
-                      ;; ;; This actually interfered with the memoization!
-                      ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
-                      ;;   (if updval
-                      ;;       (concat
-                      ;;        "export "
-                      ;;        (sh-construct-envs '(("UPDATE" "y")))
-                      ;;        "; ")))
-
-                      ;; All parameters are sent as environment variables
-                      (sh-construct-envs
-                       ;; This is a bit of a hack for \n in prompts
-                       ;; See `pen-restore-chars`
-                       (pen-alist-to-list data))
-                      ;; Currently always updating
-                      "lm-complete"))))
-
                   ;; run the completion command and collect the result
                   (resultsdirs
                    (if (not no-gen)
-                       (cl-loop
-                        for i in (number-sequence 1 final-n-collate)
-                        collect
-                        (progn
-                          (message (concat ,func-name " query " (int-to-string i) "..."))
-                          ;; TODO Also handle PEN_N_COMPLETIONS
-                          (let ((ret (pen-prompt-snc shcmd i)))
-                            (message (concat ,func-name " done " (int-to-string i)))
-                            ret)))))
+                       (progn
+                         (let* ((collation-data data)
+                                (collation-temperature (alist-get "PEN_TEMPERATURE" collation-data)))
+                           (cl-loop
+                            for i in (number-sequence 1 final-n-collate)
+                            collect
+                            (progn
+                              (message (concat ,func-name " query " (int-to-string i) "..."))
+                              ;; TODO Also handle PEN_N_COMPLETIONS
+                              (let* ((ret (pen-prompt-snc
+                                           (tv (pen-log
+                                                (s-join
+                                                 " "
+                                                 (list
+                                                  ;; ;; This actually interfered with the memoization!
+                                                  ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
+                                                  ;;   (if updval
+                                                  ;;       (concat
+                                                  ;;        "export "
+                                                  ;;        (sh-construct-envs '(("UPDATE" "y")))
+                                                  ;;        "; ")))
+
+                                                  ;; All parameters are sent as environment variables
+                                                  (sh-construct-envs
+                                                   ;; This is a bit of a hack for \n in prompts
+                                                   ;; See `pen-restore-chars`
+                                                   (pen-alist-to-list collation-data))
+                                                  ;; Currently always updating
+                                                  "lm-complete")))) i)))
+
+                                ;; Update the collation-temperature
+                                (if (sor final-collation-temperature-stepper)
+                                    (setq collation-temperature
+                                          (progn
+                                            (pen-alist-setcdr
+                                             'collation-data
+                                             "PEN_TEMPERATURE"
+                                             (str (let* ((newtemp
+                                                          (str
+                                                           (eval-string
+                                                            (pen-expand-template-keyvals
+                                                             "(mod* (+ <temperature> 0.1) 1)"
+                                                             `(("temperature" . ,collation-temperature)))))))
+                                                    newtemp)))
+                                            collation-data)))
+
+                                (message (concat ,func-name " done " (int-to-string i)))
+                                ret)))))))
 
                   (results
                    (if no-gen
@@ -1252,6 +1273,7 @@ Function names are prefixed with pf- for easy searching"
                         (model (ht-get yaml-ht "model"))
                         (min-tokens (ht-get yaml-ht "min-tokens"))
                         (max-tokens (ht-get yaml-ht "max-tokens"))
+                        (collation-temperature-stepper (ht-get yaml-ht "collation-temperature-stepper"))
                         (engine-min-tokens (ht-get yaml-ht "engine-min-tokens"))
                         (engine-max-tokens (ht-get yaml-ht "engine-max-tokens"))
                         (top-p (ht-get yaml-ht "top-p"))
@@ -1778,6 +1800,7 @@ May use to generate code from comments."
     (if f
         (xc (concat "pen " sig)))))
 
+(require 'pen-borrowed)
 (require 'pen-core)
 (require 'pen-openai)
 (require 'pen-hf)
