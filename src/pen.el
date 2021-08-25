@@ -794,7 +794,7 @@ Reconstruct the entire yaml-ht for a different language."
                    (if (not no-gen)
                        (progn
                          (let* ((collation-data data)
-                                (collation-temperature (alist-get "PEN_TEMPERATURE" collation-data)))
+                                (collation-temperature (alist-get "PEN_TEMPERATURE" collation-data nil nil 'equal)))
                            (cl-loop
                             for i in (number-sequence 1 final-n-collate)
                             collect
@@ -802,44 +802,43 @@ Reconstruct the entire yaml-ht for a different language."
                               (message (concat ,func-name " query " (int-to-string i) "..."))
                               ;; TODO Also handle PEN_N_COMPLETIONS
                               (let* ((ret (pen-prompt-snc
-                                           (tv (pen-log
-                                                (s-join
-                                                 " "
-                                                 (list
-                                                  ;; ;; This actually interfered with the memoization!
-                                                  ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
-                                                  ;;   (if updval
-                                                  ;;       (concat
-                                                  ;;        "export "
-                                                  ;;        (sh-construct-envs '(("UPDATE" "y")))
-                                                  ;;        "; ")))
+                                           (pen-log
+                                            (s-join
+                                             " "
+                                             (list
+                                              ;; ;; This actually interfered with the memoization!
+                                              ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
+                                              ;;   (if updval
+                                              ;;       (concat
+                                              ;;        "export "
+                                              ;;        (sh-construct-envs '(("UPDATE" "y")))
+                                              ;;        "; ")))
 
-                                                  ;; All parameters are sent as environment variables
-                                                  (sh-construct-envs
-                                                   ;; This is a bit of a hack for \n in prompts
-                                                   ;; See `pen-restore-chars`
-                                                   (pen-alist-to-list collation-data))
-                                                  ;; Currently always updating
-                                                  "lm-complete")))) i)))
-
-                                ;; Update the collation-temperature
-                                (if (sor final-collation-temperature-stepper)
-                                    (setq collation-temperature
-                                          (progn
-                                            (pen-alist-setcdr
-                                             'collation-data
-                                             "PEN_TEMPERATURE"
-                                             (str (let* ((newtemp
-                                                          (str
-                                                           (eval-string
-                                                            (pen-expand-template-keyvals
-                                                             "(mod* (+ <temperature> 0.1) 1)"
-                                                             `(("temperature" . ,collation-temperature)))))))
-                                                    newtemp)))
-                                            collation-data)))
+                                              ;; All parameters are sent as environment variables
+                                              (sh-construct-envs
+                                               ;; This is a bit of a hack for \n in prompts
+                                               ;; See `pen-restore-chars`
+                                               (pen-alist-to-list collation-data))
+                                              ;; Currently always updating
+                                              "lm-complete"))) i)))
 
                                 (message (concat ,func-name " done " (int-to-string i)))
-                                ret)))))))
+                                ret))
+                            do
+                            (try
+                             ;; Update the collation-temperature
+                             (if (sor final-collation-temperature-stepper)
+                                 (progn
+                                   (setq collation-temperature (str
+                                                                (eval-string
+                                                                 (pen-expand-template-keyvals
+                                                                  final-collation-temperature-stepper
+                                                                  `(("temperature" . ,collation-temperature))))))
+                                   (evil--add-to-alist
+                                    'collation-data
+                                    "PEN_TEMPERATURE"
+                                    collation-temperature)))
+                             (message "collation temperature stepper failed")))))))
 
                   (results
                    (if no-gen
