@@ -7,6 +7,8 @@ lang="$1"
 test -n "$lang" || exit 1
 shift
 
+memory="$2"
+
 test -n "$MYGIT" && test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
@@ -35,8 +37,6 @@ fi
 test -n "$path" && test -f "$path" || exit 1
 
 IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter' | sed "s/<language>/$lang/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
-
-memory=
 
 prompt_the_lm() {
     user_input="$1"

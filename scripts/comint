@@ -1,0 +1,39 @@
+#!/bin/bash
+export TTY
+
+# Remember that comint uses a 'dumb' terminal.
+# TERM=dumb lfe
+# Avoid using rlwrap inside comint as it messes with the user prompt
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -hs) {
+        load_hs="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd-nice "$@")"
+fi
+
+CMD="$(p "$CMD" | sed -e 's/^rlr /& notty /' -e 's/rlr notty notty/rlr notty/')"
+
+if test -n "$load_hs"; then
+    slug="$(echo "$CMD" | tr -d '\n' | slugify)"
+    hsqc -ao "$load_hs" | tac > "$NOTES/programs/comint/history/$slug"
+fi
+
+sp -e "(comint-quick $(aqf-nice "$CMD") $(aqf-nice "$(pwd -P)") $(aqf-nice "\\(In \\|Out\\)\\[[0-9]*\\]: "))"

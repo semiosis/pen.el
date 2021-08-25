@@ -135,9 +135,13 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
            (path (ht-get e "path")))
       (find-file path))))
 
-(defun pen-detect-language-context ()
+(defun pen-selected-or-preceding-context (&optional max-chars)
+  (sor (pen-selected-text t)
+       (pen-preceding-text max-chars)))
+
+(defun pen-detect-language-context (&optional max-chars)
   (interactive)
-  (message (concat "Detected language: " (pf-get-language/1 (pen-preceding-text)))))
+  (message (concat "Detected language: " (pen-ask (pf-get-language/1 (pen-selected-or-preceding-context max-chars))))))
 
 ;; TODO Try to detect the appropriate imaginary interpreter to start
 

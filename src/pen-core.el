@@ -3,8 +3,9 @@
 
 ;; So might org-brain
 
-(defun pen-preceding-text ()
-  (str (buffer-substring (point) (max 1 (- (point) 1000)))))
+(defun pen-preceding-text (&optional max-chars)
+  (setq max-chars (or max-chars 1000))
+  (str (buffer-substring (point) (max 1 (- (point) max-chars)))))
 
 (defun pen-beginning-of-line-point ()
   (save-excursion

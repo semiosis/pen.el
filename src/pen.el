@@ -241,7 +241,7 @@ Reconstruct the entire yaml-ht for a different language."
         (kill-buffer b)
         nil))))
 
-(defun pen-expand-template (s vals)
+(defun pen-expand-template (s vals &optional encode)
   "expand template from list"
   (if vals
       (let ((i 1))
@@ -249,6 +249,7 @@ Reconstruct the entire yaml-ht for a different language."
          (progn
            (cl-loop
             for val in vals do
+            (if encode (setq val (pen-encode-string val)))
             (setq s (string-replace (format "<%d>" i) (chomp val) s))
             (setq i (+ 1 i)))
            s)))
@@ -264,7 +265,7 @@ Reconstruct the entire yaml-ht for a different language."
   (pen-etv (pen-expand-template-keyvals " <y> <thing> "
                                         (-zip '("thing" "y") '("yo" "n")))))
 
-(defun pen-expand-template-keyvals (s keyvals)
+(defun pen-expand-template-keyvals (s keyvals &optional encode)
   "expand template from alist"
   (if keyvals
       (let ((i 1))
@@ -272,8 +273,11 @@ Reconstruct the entire yaml-ht for a different language."
          (progn
            (cl-loop
             for kv in keyvals do
-            (let ((key (str (car kv)))
-                  (val (str (cdr kv))))
+            (let* ((key (str (car kv)))
+                   (val (str (cdr kv)))
+                   (val (if encode
+                            (pen-encode-string val)
+                          val)))
               (setq s (string-replace (format "<%s>" key) (chomp val) s))
               ;; (setq s (string-replace (format "<%d>" i) val s))
               (setq i (+ 1 i))))
@@ -302,30 +306,46 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun test-template-newlines ()
   (interactive)
-  (--> "\n"
-    (pen-onelineify it)
-    (pen-expand-template-keyvals it '((:myval "hi")))
-    (pen-expand-template it '("a" "bee"))
-    (pen-unonelineify it)))
+  (let ((ret (--> "<a>\n"
+               (pen-onelineify it)
+               (pen-expand-template-keyvals it '((:myval "hi")))
+               (pen-expand-template it '("a" "bee"))
+               (pen-unonelineify it))))
+    (if (interactive-p)
+        (pen-etv ret)
+      ret)))
 
-(comment
- (defun test-template ()
-   (interactive)
-   (pen-etv
-    (pps
-     (let ((subprompts '((meta . "and")
+(defun test-template ()
+  (interactive)
+  (cl-macrolet ((expand-template
+                 (string-sym)
+                 `(--> ,string-sym
+                    (pen-onelineify-safe it)
+                    ;; (pen-expand-template-keyvals it subprompts-al)
+                    (pen-expand-template it vals t)
+                    (pen-expand-template-keyvals it var-keyvals-slugged t)
+                    (pen-expand-template-keyvals it var-keyvals t)
+                    (pen-unonelineify-safe it))))
+    (let* ((subprompts '((meta . "and")
                          (intra . "and the")))
-           (vals '("Something" "upon" "us"))
+           (vals `("Something" "upon" "us"
+                   ;; "   import python\n\n   from Function f\n   where f.getName().matches(\"get%\") and f.isMethod()\n   select f, \"This is a method called get...\"\n"
+                   ,(pen-snc "pen-str onelineify" "   import python\n\n   from Function f\n   where f.getName().matches(\"get%\") and f.isMethod()\n   select f, \"This is a method called get...\"\n")))
            (var-keyvals-slugged
             '(("my-name" . "Shane")))
            (var-keyvals
-            '(("my name" . "Shane"))))
-       (cl-loop for stsq in '("###" "\n"
-                              "Alpha <meta> Omega"
-                              "First <intra> last"
-                              "Once <2> a time, <my name> said...\n")
-                collect
-                (expand-template stsq)))))))
+            '(("my name" . "Shane")))
+           (ret
+            (cl-loop for stsq in '("###" "\n"
+                                   "Alpha <meta> Omega"
+                                   "First <intra> last"
+                                   "Once <2> a time, <my name> said <4>...\n")
+                     collect
+                     ;; stsq
+                     (expand-template stsq))))
+      (if (interactive-p)
+          (pen-etv (car (last ret)))
+        ret))))
 
 ;; The LM may also send more info to this after the prompt has executed.
 ;; All this data will go into the Ink properties
@@ -375,7 +395,8 @@ Reconstruct the entire yaml-ht for a different language."
 
   val)
 
-;; Use lexical scope. It's more reliable than lots of params.
+;; Use lexical scope with dynamic scope for overriding.
+;; That way is more reliable than having lots of params.
 ;; Expected variables:
 ;; (func-name func-sym var-syms var-defaults doc prompt
 ;;  iargs prettifier cache path var-slugs n-collate
@@ -396,11 +417,13 @@ Reconstruct the entire yaml-ht for a different language."
          (cl-macrolet ((expand-template
                         (string-sym)
                         `(--> ,string-sym
+                           ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
+                           ;; The t fixes this
                            (pen-onelineify-safe it)
-                           (pen-expand-template-keyvals it subprompts-al)
-                           (pen-expand-template it vals)
-                           (pen-expand-template-keyvals it var-keyvals-slugged)
-                           (pen-expand-template-keyvals it var-keyvals)
+                           (pen-expand-template-keyvals it subprompts-al t)
+                           (pen-expand-template it vals t)
+                           (pen-expand-template-keyvals it var-keyvals-slugged t)
+                           (pen-expand-template-keyvals it var-keyvals t)
                            (pen-unonelineify-safe it))))
            (setq pen-last-prompt-data '((face . ink-generated)
                                         ;; This is necessary because most modes
