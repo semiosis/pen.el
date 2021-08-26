@@ -93,7 +93,7 @@
 ;; Forcing engines is not generally recommended
 ;; I should really make a tree of engines which can act as fall-backs
 
-(defcustom pen-force-engine nil
+(defcustom pen-force-engine ""
   "Force using this engine"
   :type 'string
   :group 'pen
