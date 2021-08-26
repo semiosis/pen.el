@@ -1568,28 +1568,8 @@ Function names are prefixed with pf- for easy searching"
                      ;; Also, ensure n-collate = 1 because
                      ;; n-completions may be emulated with collate
                      `(n-collate 1)))
-           (if pen-force-aix
-               (let* ((engine (ht-get pen-engines "AIx GPT-J-6B"))
-                      (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                      (vals (ht-values engine)))
-                 (-zip-lists keys vals)))
-           (if pen-force-openai
-               (let* ((engine (ht-get pen-engines "OpenAI Davinci"))
-                      (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                      (vals (ht-values engine)))
-                 (-zip-lists keys vals)))
-           (if pen-force-openai-codex
-               (let* ((engine (ht-get pen-engines "OpenAI Codex"))
-                      (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                      (vals (ht-values engine)))
-                 (-zip-lists keys vals)))
-           (if pen-force-ai21
-               (let* ((engine (ht-get pen-engines "AI21 J1-Jumbo"))
-                      (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                      (vals (ht-values engine)))
-                 (-zip-lists keys vals)))
-           (if pen-force-hf
-               (let* ((engine (ht-get pen-engines "HuggingFace GPT-2"))
+           (if (sor pen-force-engine)
+               (let* ((engine (ht-get pen-engines pen-force-engine))
                       (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
                       (vals (ht-values engine)))
                  (-zip-lists keys vals)))))))

@@ -4,10 +4,7 @@
                  :semantic-path (get-path-semantic)
                  :last-final-command (pen-snc "cat ~/.pen/last-final-command.txt")
                  :last-final-prompt (pen-snc "cat ~/.pen/last-final-prompt.txt")
-                 :pen-force-ai21 pen-force-ai21
-                 :pen-force-aix pen-force-aix
-                 :pen-force-openai pen-force-openai
-                 :pen-force-hf pen-force-hf
+                 :pen-force-engine pen-force-engine
                  ;; :lm-complete-stderr (pen-snc (pen-cmd "cat" "/tmp/lm-complete-stderr.txt"))
                  ;; :lm-complete-stdout (pen-snc (pen-cmd "cat" "/tmp/lm-complete-stdout.txt"))
                  ;; :openai-last-output (pen-snc (pen-cmd "cat" "/tmp/openai-temp.txt"))

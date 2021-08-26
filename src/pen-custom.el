@@ -93,35 +93,22 @@
 ;; Forcing engines is not generally recommended
 ;; I should really make a tree of engines which can act as fall-backs
 
-(defcustom pen-force-ai21 nil
-  "Forcing use j1-jumbo from AI21"
-  :type 'boolean
+(defcustom pen-force-engine nil
+  "Force using this engine"
+  :type 'string
   :group 'pen
+  :options (ht-keys pen-engines)
+  :set (lambda (_sym value)
+         (set _sym (sor value)))
+  :get (lambda (_sym)
+         (eval (sor _sym nil)))
   :initialize #'custom-initialize-default)
 
-(defcustom pen-force-aix nil
-  "Forcing use GPT-J from AIx"
-  :type 'boolean
-  :group 'pen
-  :initialize #'custom-initialize-default)
+(defun pen-customize ()
+  (interactive)
+  (customize-group "pen"))
 
-(defcustom pen-force-openai nil
-  "Forcing use GPT-3 from OpenAI"
-  :type 'boolean
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
-(defcustom pen-force-openai-codex nil
-  "Forcing use Davinci Codex from OpenAI"
-  :type 'boolean
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
-(defcustom pen-force-hf nil
-  "Forcing use GPT-2 from HF"
-  :type 'boolean
-  :group 'pen
-  :initialize #'custom-initialize-default)
+(define-key pen-map (kbd "H-TAB e") 'pen-customize)
 
 (defcustom pen-user-agent "emacs/pen"
   "User Agent for self identification"
