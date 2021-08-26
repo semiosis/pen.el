@@ -9,7 +9,7 @@ agi() {
     apt install -y "$@"
 }
 
-pyf( {
+pyf() {
     pip3 install "$@"
 }
 
