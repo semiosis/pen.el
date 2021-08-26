@@ -226,4 +226,6 @@
 ;; I should make the magit completions selector anyway
 (ivy-mode 1)
 
+(define-key pen-map (kbd "H-TAB e") 'pen-customize)
+
 ;; (call-interactively 'pen-add-key-booste)

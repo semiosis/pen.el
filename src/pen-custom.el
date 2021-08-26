@@ -90,25 +90,9 @@
   :initialize #'custom-initialize-default)
 
 
-;; Forcing engines is not generally recommended
-;; I should really make a tree of engines which can act as fall-backs
-
-(defcustom pen-force-engine ""
-  "Force using this engine"
-  :type 'string
-  :group 'pen
-  :options (ht-keys pen-engines)
-  :set (lambda (_sym value)
-         (set _sym value))
-  :get (lambda (_sym)
-         (eval (sor _sym nil)))
-  :initialize #'custom-initialize-default)
-
 (defun pen-customize ()
   (interactive)
   (customize-group "pen"))
-
-(define-key pen-map (kbd "H-TAB e") 'pen-customize)
 
 (defcustom pen-user-agent "emacs/pen"
   "User Agent for self identification"
