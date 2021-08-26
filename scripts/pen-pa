@@ -1,0 +1,150 @@
+#!/bin/bash
+export TTY
+
+PEN_PAGER="less"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+# These checks appear to have done the job regarding fork bombs
+if ! is_tty; then
+    cat
+    exit $?
+fi
+
+if ! stdin_exists; then
+    exit 1
+fi
+
+pattern=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -v) {
+        PEN_PAGER=v
+        shift
+    }
+    ;;
+
+    -E) {
+        PEN_PAGER="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -e|-p) {
+        shift
+        PEN_PAGER="$(cmd "$@")"
+        shift "$#"
+    }
+    ;;
+
+    -l) {
+        PEN_PAGER="tless +F -S"
+        shift
+    }
+    ;;
+
+    -x) {
+        ext="$2"
+        shift
+        shift
+
+        PEN_PAGER="tf $ext | xa r"
+    }
+    ;;
+
+    -sp) {
+        PEN_PAGER=sp
+        shift
+    }
+    ;;
+
+    -sp) {
+        PEN_PAGER="sp"
+        shift
+    }
+    ;;
+
+    -vs) {
+        PEN_PAGER="vs"
+        shift
+    }
+    ;;
+
+    -vd) {
+        PEN_PAGER="fpvd"
+        shift
+    }
+    ;;
+
+    -ln|-lnano) {
+        PEN_PAGER="EDITOR=nano less -S"
+        shift
+    }
+    ;;
+
+    -lv) {
+        PEN_PAGER="EDITOR=v less -S"
+        shift
+    }
+    ;;
+
+    -lvs) {
+        PEN_PAGER="EDITOR=vs less -S"
+        shift
+    }
+    ;;
+
+    +/*) { # pattern
+        pattern="$(p "$opt" | mcut -d+/ -f2 | s chomp)"
+
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+last_arg="${@: -1}"
+: ${defaultcommand:="$last_arg"}
+: ${defaultcommand:="cat"}
+
+tf() {
+    ext="$1"
+    : "${ext:="txt"}"
+    fp="$(mktemp "--suffix=.${ext}")"
+    cat > "$fp"
+    echo "$fp"
+    return 0
+}
+
+pager() {
+    if is_stdout_pipe; then
+        cat
+    elif is_tty && stdin_exists; then
+        inputfp="$(tf txt)"
+        if test -s "$inputfp"; then
+            if test -n "$pattern"; then
+                cat "$inputfp" | eval "$PEN_PAGER" +/"$pattern"
+            else
+                cat "$inputfp" | eval "$PEN_PAGER"
+            fi
+        fi
+    else
+        $defaultcommand
+    fi
+}
+
+dos2unix | pager "$@"

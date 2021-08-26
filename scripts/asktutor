@@ -15,4 +15,4 @@ if ! pl "$question" | grep -q -P ".*\\?"; then
     question="${question}?"
 fi
 
-penf "generic-tutor-for-any-topic-and-subtopic" "$topic" "$in_the_context_of" "$question" | pavs
+penf "pf-asktutor/3" "$topic" "$in_the_context_of" "$question" | pavs
