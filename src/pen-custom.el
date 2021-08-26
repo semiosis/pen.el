@@ -99,7 +99,7 @@
   :group 'pen
   :options (ht-keys pen-engines)
   :set (lambda (_sym value)
-         (set _sym (sor value)))
+         (set _sym value))
   :get (lambda (_sym)
          (eval (sor _sym nil)))
   :initialize #'custom-initialize-default)
