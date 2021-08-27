@@ -1161,19 +1161,20 @@ Otherwise, it will be a shell expression template")
 
   ;; pen-libre-only
 
-  (let* ((engine-ht (ht-get pen-engines starting-engine))
-         (local (vector2list (ht-get engine-ht "local")))
-         (libre-model (vector2list (ht-get engine-ht "libre-model")))
-         (libre-dataset (vector2list (ht-get engine-ht "libre-dataset")))
-         (fallback (vector2list (ht-get engine-ht "fallback")))
-         (family (vector2list (ht-get engine-ht "engine-family")))
-         ;; This is a list of htables. convert to alist
-         (defers (vector2list (ht-get engine-ht "defer"))))
-    (loop for child in family collect
-          (let ((child-engine-ht (ht-get pen-engines child))
-                (layers (ht-get child-engine-ht "layers")))))
+  (comment
+   (let* ((engine-ht (ht-get pen-engines starting-engine))
+          (local (vector2list (ht-get engine-ht "local")))
+          (libre-model (vector2list (ht-get engine-ht "libre-model")))
+          (libre-dataset (vector2list (ht-get engine-ht "libre-dataset")))
+          (fallback (vector2list (ht-get engine-ht "fallback")))
+          (family (vector2list (ht-get engine-ht "engine-family")))
+          ;; This is a list of htables. convert to alist
+          (defers (vector2list (ht-get engine-ht "defer"))))
+     (loop for child in family collect
+           (let ((child-engine-ht (ht-get pen-engines child))
+                 (layers (ht-get child-engine-ht "layers")))))
 
-    (if defers))
+     (if defers)))
 
   ;; Select the first from family which satisfies the requirements
 
