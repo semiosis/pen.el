@@ -5,6 +5,13 @@
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defcustom pen-libre-only nil
+  "Only use libre engines"
+  :type 'boolean
+  :group 'system-custom
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
 (defcustom pen-default-lm-command "openai-complete.sh"
   "Default LM completer script"
   :type 'string

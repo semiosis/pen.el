@@ -1152,6 +1152,38 @@ Otherwise, it will be a shell expression template")
   (-non-nil
    (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))
 
+(defun pen-resolve-engine (starting-engine &optional requirements)
+  "This should resolve the engine and may run recursively to do so."
+
+  ;; Now that we have both engine and requirements, re-evaluate the engine.
+  ;; Select the first from engine family.
+  ;; following defers
+
+  ;; pen-libre-only
+
+  (let* ((engine-ht (ht-get pen-engines starting-engine))
+         (local (vector2list (ht-get engine-ht "local")))
+         (libre-model (vector2list (ht-get engine-ht "libre-model")))
+         (libre-dataset (vector2list (ht-get engine-ht "libre-dataset")))
+         (fallback (vector2list (ht-get engine-ht "fallback")))
+         (family (vector2list (ht-get engine-ht "engine-family")))
+         ;; This is a list of htables. convert to alist
+         (defers (vector2list (ht-get engine-ht "defer"))))
+    (loop for child in family collect
+          (let ((child-engine-ht (ht-get pen-engines child))
+                (layers (ht-get child-engine-ht "layers")))))
+
+    (if defers))
+
+  ;; Select the first from family which satisfies the requirements
+
+  ;; If a defer exists with those exact requirements, then defer
+
+  ;; If the current model isn't available, try
+  ;; engines descended from or lighter engines
+
+  starting-engine)
+
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
@@ -1182,6 +1214,8 @@ Function names are prefixed with pf- for easy searching"
                  (let* ((yaml-ht (pen-prompt-file-load path))
                         (path path)
 
+                        (requirements (vector2list (ht-get yaml-ht "requirements")))
+
                         (engine
                          (let* ((engine-title (ht-get yaml-ht "engine"))
                                 (engine (if (and
@@ -1191,6 +1225,8 @@ Function names are prefixed with pf- for easy searching"
                            (if engine
                                (setq yaml-ht (ht-merge yaml-ht engine)))
                            engine-title))
+
+                        (engine (pen-resolve-engine engine requirements))
 
                         ;; function
                         (task-ink (ht-get yaml-ht "task"))
