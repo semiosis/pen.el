@@ -376,7 +376,9 @@ Reconstruct the entire yaml-ht for a different language."
               al))))))
 
 (defun pen-str2num (s)
-  (if s (string-to-number (str s))))
+  (if (and s (stringp s))
+      (string-to-number (str s))
+    s))
 
 (defun pen-hard-bound (val min max)
   (setq val (sor (str val)))
@@ -607,20 +609,14 @@ Reconstruct the entire yaml-ht for a different language."
                    (pen-str2num
                     (expand-template
                      (str (or (pen-var-value-maybe 'engine-max-tokens)
-                              ,engine-max-tokens)))))
+                              ,engine-max-tokens
+                              2048)))))
 
                   (final-min-tokens
                    (pen-str2num
                     (expand-template
                      (str (or (pen-var-value-maybe 'min-tokens)
                               ,min-tokens)))))
-
-                  ;; The max tokens may be templated in via variable or even a subprompt
-                  (final-max-tokens
-                   (pen-str2num
-                    (expand-template
-                     (str (or (pen-var-value-maybe 'max-tokens)
-                              ,max-tokens)))))
 
                   ;; min-tokens is not really adjustable
                   ;; without enough tokens to run a prompt, it should fail
@@ -762,6 +758,24 @@ Reconstruct the entire yaml-ht for a different language."
                                   (s-remove-trailing-whitespace final-prompt)))
 
                   ;; Now that all values are loaded, re-template them so I can base values on other values
+
+                  (approximate-prompt-token-length
+                   (round (/ (length final-prompt) 2.7)))
+
+                  ;; The max tokens may be templated in via variable or even a subprompt
+                  (final-max-tokens
+                   (let* ((prompt-length approximate-prompt-token-length))
+                     ;; pen-str2num
+                     (eval-string (expand-template
+                                   (str (or (pen-var-value-maybe 'max-tokens)
+                                            ,max-tokens
+                                            final-engine-max-tokens))))))
+
+                  ;; Ensure that the max tokens isn't more than the sum of the token length of the prompt + requested
+                  (final-max-tokens
+                   (if (< final-engine-max-tokens (+ approximate-prompt-token-length final-max-tokens))
+                       (- final-engine-max-tokens approximate-prompt-token-length)
+                     final-max-tokens))
 
                   (data
                    (let ((data
