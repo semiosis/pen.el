@@ -1180,24 +1180,49 @@ Otherwise, it will be a shell expression template")
 
   (comment
    (let* ((engine-ht (ht-get pen-engines starting-engine))
-          (local (vector2list (ht-get engine-ht "local")))
-          (libre-model (vector2list (ht-get engine-ht "libre-model")))
-          (libre-dataset (vector2list (ht-get engine-ht "libre-dataset")))
-          (fallback (vector2list (ht-get engine-ht "fallback")))
+          (local (ht-get engine-ht "local"))
+          (libre-model (ht-get engine-ht "libre-model"))
+          (libre-dataset (ht-get engine-ht "libre-dataset"))
+          (defers (vector2list (ht-get engine-ht "defer")))
           (family (vector2list (ht-get engine-ht "engine-family")))
           ;; This is a list of htables. convert to alist
-          (defers (vector2list (ht-get engine-ht "defer")))
+          (fallbacks (vector2list (ht-get engine-ht "fallback")))
 
           ;; Start with the defers.
-          ;; If a defer exists with those exact requirements, then defer
+          ;; If a defer exists with those exact requirements, then defer.
+          ;; Choose the first that satisfies
+          ;; it (has all the requirements in the
+          ;; defer key).
 
           (defer-suggestions
-            (loop for d in (pen--htlist-to-alist defers) collect
-                  (let* ((defer-provisions (s-split "+" (car d)))
-                         (newengine (cdr d))
-                         (newengine-ht (ht-get pen-engines newengine-ht)))
-                    ;; if
-                    ))))
+            (-filter
+             'identity
+             (loop for d in (pen--htlist-to-alist defers) collect
+                   (let* ((defer-provisions (s-split "+" (car d)))
+                          (newengine (cdr d))
+                          ;; (newengine-ht (ht-get pen-engines newengine))
+                          (satisfies (-reduce-from
+                                      (lambda (a r)
+                                        (and a (-contains-p defer-provisions r)))
+                                      t
+                                      requirements)))
+                     (if satisfies
+                         newengine)))))
+
+          (family-suggestions
+           (-filter
+            'identity
+            (loop for e in family collect
+                  (let* ((newengine-ht (ht-get pen-engines e))
+                         (provides (ht-get newengine-ht "provides"))
+                         (layers (ht-get newengine-ht "layers"))
+                         (satisfies (-reduce-from
+                                     (lambda (a r)
+                                       (and a (-contains-p defer-provisions r)))
+                                     t
+                                     requirements)))
+                    (if satisfies
+                        newengine))))))
 
      ;; If this engine solves the requirements and has all the data, stop here
      ;; - if it has the appropriate speciality then select it

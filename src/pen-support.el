@@ -1155,7 +1155,7 @@ Out
 (defalias 'pen-ms 'pen-macro-sed)
 
 (defmacro pen-define-key (map kbd-expr func-sym)
-  (expand-macro
+  (macroexpand
    `(pen-ms "/H-[A-Z]\\+/{p;s/H-\\([A-Z]\\+\\)/<H-\\L\\1>/;}"
             (define-key ,map ,kbd-expr ,func-sym))))
 
