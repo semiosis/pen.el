@@ -1214,6 +1214,8 @@ Otherwise, it will be a shell expression template")
             'identity
             (loop for e in family collect
                   (let* ((newengine-ht (ht-get pen-engines e))
+                         ;; 'provides'  may also list other needs such as
+                         ;; 'speed', 'cached' or 'cheap'
                          (provides (ht-get newengine-ht "provides"))
                          (layers (ht-get newengine-ht "layers"))
                          (satisfies (-reduce-from
