@@ -11,8 +11,8 @@ development, discovery and usage of prompts.
 
 It's completely free, libre and open-source.
 
-| License | Discord server invite       |
-|---------+-----------------------------|
+| License | Discord server invite         |
+|---------+-------------------------------|
 | =GPL-3= | https://discord.gg/JwKGbAdNHR |
 
 + Demo :: https://mullikine.github.io/posts/prompt-design-with-yasnippet/
