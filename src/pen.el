@@ -1209,22 +1209,14 @@ Otherwise, it will be a shell expression template")
                      (if satisfies
                          newengine)))))
 
+          ;; Simply run this function recursively on these and collect the results
           (family-suggestions
            (-filter
             'identity
-            (loop for e in family collect
-                  (let* ((newengine-ht (ht-get pen-engines e))
-                         ;; 'provides'  may also list other needs such as
-                         ;; 'speed', 'cached' or 'cheap'
-                         (provides (ht-get newengine-ht "provides"))
-                         (layers (ht-get newengine-ht "layers"))
-                         (satisfies (-reduce-from
-                                     (lambda (a r)
-                                       (and a (-contains-p defer-provisions r)))
-                                     t
-                                     requirements)))
-                    (if satisfies
-                        newengine))))))
+            (-flatten
+             (loop for e in family collect (pen-resolve-engine
+                                            e
+                                            requirements))))))
 
      ;; If this engine solves the requirements and has all the data, stop here
      ;; - if it has the appropriate speciality then select it
