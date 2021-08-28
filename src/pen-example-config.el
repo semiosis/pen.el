@@ -67,8 +67,7 @@
 ;; (define-key selected-keymap (kbd "A") 'pf-define-word-for-glossary/1)
 (define-key selected-keymap (kbd "A") 'pen-add-to-glossary)
 
-(define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
-(define-key pen-map (kbd "<H-tab> r") 'pen-run-prompt-function)
+(pen-define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
 ;; (define-key pen-map (kbd "H-1") 'pen-company-filetype-word)
 ;; (define-key pen-map (kbd "H-2") 'pen-company-filetype-words)
 ;; (define-key pen-map (kbd "H-3") 'pen-company-filetype-line)
@@ -78,21 +77,19 @@
 (define-key pen-map (kbd "H-3") 'pen-complete-line)
 (define-key pen-map (kbd "H-4") 'pen-complete-long)
 (define-key pen-map (kbd "H-P") 'pen-complete-long)
-(define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
-(define-key pen-map (kbd "<H-tab> g") 'pen-generate-prompt-functions)
+(pen-define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
-(define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
-(define-key pen-map (kbd "<H-tab> s") 'pen-filter-with-prompt-function)
-(define-key pen-map (kbd "H-TAB i") 'pen-start-imaginary-interpreter)
-(define-key pen-map (kbd "<H-tab> i") 'pen-start-imaginary-interpreter)
+(pen-define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
+(pen-define-key pen-map (kbd "H-TAB i") 'pen-start-imaginary-interpreter)
 (define-key pen-map (kbd "H-n") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-:") 'pen-compose-cli-command)
 (define-key pen-map (kbd "H-x") 'pen-diagnostics-show-context)
+(pen-define-key pen-map (kbd "H-TAB e") 'pen-customize)
 
 ;; Most main pen commands should be under hyperspace
 ;; hyperspace x
-(define-key pen-map (kbd "H-SPC x") 'pen-diagnostics-show-context)
+(pen-define-key pen-map (kbd "H-SPC x") 'pen-diagnostics-show-context)
 
 (require 'pen-contrib)
 ;; from contrib
@@ -225,7 +222,5 @@
 ;; Helm breaks each entry up into more lines
 ;; I should make the magit completions selector anyway
 (ivy-mode 1)
-
-(define-key pen-map (kbd "H-TAB e") 'pen-customize)
 
 ;; (call-interactively 'pen-add-key-booste)

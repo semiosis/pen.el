@@ -1131,4 +1131,32 @@ Out
    (t
     (insert s))))
 
+(defun pp-oneline (l)
+  (chomp (replace-regexp-in-string "\n +" " " (pp l))))
+(defalias 'pp-ol 'pp-oneline)
+
+(defun pp-map-line (l)
+  (string-join (mapcar 'pp-oneline l) "\n"))
+
+(defun pen-sed (command stdin)
+  "wrapper around sed"
+  (interactive)
+  (setq stdin (str stdin))
+
+  (setq command (concat "sed '" (str command) "'"))
+  (pen-sn command stdin))
+
+(defmacro pen-macro-sed (expr &rest body)
+  "This transforms the code with a sed expression"
+  (let* ((codestring (pp-map-line body))
+         (ucodestring (pen-sed expr codestring))
+         (newcode (pen-eval-string (concat "'(progn " ucodestring ")"))))
+    newcode))
+(defalias 'pen-ms 'pen-macro-sed)
+
+(defmacro pen-define-key (map kbd-expr func-sym)
+  (expand-macro
+   `(pen-ms "/H-[A-Z]\\+/{p;s/H-\\([A-Z]\\+\\)/<H-\\L\\1>/;}"
+            (define-key ,map ,kbd-expr ,func-sym))))
+
 (provide 'pen-support)

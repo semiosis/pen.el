@@ -1152,6 +1152,23 @@ Otherwise, it will be a shell expression template")
   (-non-nil
    (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))
 
+(defun pen--htlist-to-alist (htlist)
+  (if (vectorp htlist)
+      (setq htlist (vector2list htlist)))
+  (mapcar
+   (lambda (e)
+     (let ((key (car (ht-keys e))))
+       (cons key
+             (ht-get e key))))
+   htlist))
+
+(defun pen--test-resolve-engine ()
+  (interactive)
+  (mu
+   (let* ((engine-ht (yamlmod-read-file "$MYGIT/semiosis/engines/engines/reasonable-defaults.engine"))
+          (defers (vector2list (ht-get engine-ht "defer"))))
+     (etv (pps (pen--htlist-to-alist defers))))))
+
 (defun pen-resolve-engine (starting-engine &optional requirements)
   "This should resolve the engine and may run recursively to do so."
 
@@ -1169,16 +1186,32 @@ Otherwise, it will be a shell expression template")
           (fallback (vector2list (ht-get engine-ht "fallback")))
           (family (vector2list (ht-get engine-ht "engine-family")))
           ;; This is a list of htables. convert to alist
-          (defers (vector2list (ht-get engine-ht "defer"))))
+          (defers (vector2list (ht-get engine-ht "defer")))
+
+          ;; Start with the defers.
+          ;; If a defer exists with those exact requirements, then defer
+
+          (defer-suggestions
+            (loop for d in (pen--htlist-to-alist defers) collect
+                  (let* ((defer-provisions (s-split "+" (car d)))
+                         (newengine (cdr d))
+                         (newengine-ht (ht-get pen-engines newengine-ht)))
+                    ;; if
+                    ))))
+
+     ;; If this engine solves the requirements and has all the data, stop here
+     ;; - if it has the appropriate speciality then select it
+     ;; - otherwise
+
+     (-reduce (lambda (c e)))
+
+     ;; Select the first from family which satisfies the requirements
+
      (loop for child in family collect
            (let ((child-engine-ht (ht-get pen-engines child))
                  (layers (ht-get child-engine-ht "layers")))))
 
      (if defers)))
-
-  ;; Select the first from family which satisfies the requirements
-
-  ;; If a defer exists with those exact requirements, then defer
 
   ;; If the current model isn't available, try
   ;; engines descended from or lighter engines
