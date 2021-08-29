@@ -1130,7 +1130,19 @@ Otherwise, it will be a shell expression template")
            (progn
              (message "failed:")
              (message (pen-list2str pen-engines-failed))
-             (message (concat (str (length pen-engines-failed)) " failed"))))))))
+             (message (concat (str (length pen-engines-failed)) " failed")))))))
+
+  ;; Redefine this because we have updated options
+  (defcustom pen-force-engine ""
+    "Force using this engine"
+    :type 'string
+    :group 'pen
+    :options (ht-keys pen-engines)
+    :set (lambda (_sym value)
+           (set _sym value))
+    :get (lambda (_sym)
+           (eval (sor _sym nil)))
+    :initialize #'custom-initialize-default))
 
 ;; (ht-get (ht-get pen-prompts "pf-emacs-ielm/1") "path")
 (defun pen-organise-prompts ()
