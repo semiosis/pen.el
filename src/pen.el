@@ -427,7 +427,7 @@ Reconstruct the entire yaml-ht for a different language."
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor/3 "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
 (defun define-prompt-function ()
   (eval
-   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen))
+   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match))
       ,doc
       (interactive ,(cons 'list iargs))
       ;; force-custom, unfortunately disables call-interactively
@@ -1043,7 +1043,8 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (result (if no-select-result
                               (length results)
-                            (cl-fz results :prompt (concat ,func-name ": ") :select-only-match t))))
+                            ;; This may insert immediately, so it's important to force selection
+                            (cl-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match))))
 
              ;; (tv (pps final-stop-sequences))
              ;; (tv "Hi")
