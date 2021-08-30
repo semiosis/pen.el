@@ -30,7 +30,7 @@
   (interactive
    (list (transient-args 'github-transient)))
   (let* ((keywords (read-string-hist "gh keywords:"))
-         (query (pen-cl-sn (concat "gen-github-query " (mapconcat 'pen-q args " ") " " (string-or keywords "main")) :chomp t)))
+         (query (pen-cl-sn (concat "gen-github-query " (mapconcat 'pen-q args " ") " " (sor keywords "main")) :chomp t)))
     (eegh query)))
 
 (defset pen-github-key-value-predicates

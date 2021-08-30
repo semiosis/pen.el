@@ -80,10 +80,10 @@
                   (dired-copy-filename-as-kill 0))
 
              (and (major-mode-enabled 'dired-mode)
-                  (string-or (and
+                  (sor (and
                               for-clipboard
                               (mapconcat 'q (dired-get-marked-files) " "))
-                             (my/pwd)))
+                             (pen-pwd)))
 
              ;; This will break on eww
              (if (and (not (eq major-mode 'org-mode))

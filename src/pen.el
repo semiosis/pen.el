@@ -1363,6 +1363,7 @@ Function names are prefixed with pf- for easy searching"
                                    `(("language" . ,language)))
                                 task))
                         (engine-whitespace-support (ht-get yaml-ht "engine-whitespace-support"))
+
                         (title (ht-get yaml-ht "title"))
                         (title (sor title
                                     task))
@@ -1420,9 +1421,9 @@ Function names are prefixed with pf- for easy searching"
                         (n-collate (or (ht-get yaml-ht "n-collate")
                                        1))
                         (n-max-collate (or (ht-get yaml-ht "n-max-collate")
-                                       1))
+                                           1))
                         (n-target (or (ht-get yaml-ht "n-target")
-                                       1))
+                                      1))
                         (engine-max-generated-tokens
                          (or (ht-get yaml-ht "engine-max-generated-tokens")
                              256))
