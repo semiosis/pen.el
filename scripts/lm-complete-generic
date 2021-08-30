@@ -149,8 +149,9 @@ export PEN_TRAILING_WHITESPACE
 tf_response="$(mktemp -t "lm_results_XXXXXX.txt" 2>/dev/null)"
 trap "rm \"$tf_response\" 2>/dev/null" 0
 
-# This actually evaluates the newlines, but it also trims the prompt at the ends
-PEN_PROMPT="$(p "$PEN_PROMPT")"
+# This evaluates the newlines without trimming the prompt at the ends
+IFS= read -rd '' PEN_PROMPT < <(p "$PEN_PROMPT");typeset -p PEN_PROMPT &>/dev/null
+
 # This is designed to not trim whitespace from the ends of the stop sequence
 IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE");typeset -p PEN_STOP_SEQUENCE &>/dev/null
 

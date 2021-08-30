@@ -265,5 +265,16 @@ case "$f" in
     }
     ;;
 
+    maybe-delete-last-line) {
+        IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
+        lines="$(printf -- "%s" "$in" | wc -l)"
+        if test "$lines" -gt 1; then
+            printf -- "%s" "$in" | sed '$d'
+        else
+            printf -- "%s" "$in"
+        fi
+    }
+    ;;
+
     *)
 esac
