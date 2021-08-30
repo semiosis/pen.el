@@ -250,21 +250,29 @@ Reconstruct the entire yaml-ht for a different language."
            (cl-loop
             for val in vals do
             (if encode (setq val (pen-encode-string val)))
-            (setq s (string-replace (format "<%d>" i) (chomp val) s))
-            (setq s (string-replace (format "<q:%d>" i) (pen-q (chomp val)) s))
+            (let ((unquoted (format "<%d>" i))
+                  (quoted (format "<q:%d>" i))
+                  (quoted2 (format "<q<pen-colon>%d>" i)))
+              (cond
+               ((re-match-p (unregexify unquoted) s)
+                (setq s (string-replace unquoted (chomp val) s)))
+               ((re-match-p (unregexify quoted) s)
+                (setq s (string-replace quoted (pen-q (chomp val)) s)))
+               ((re-match-p (unregexify quoted) s)
+                (setq s (string-replace quoted2 (pen-q (chomp val)) s)))))
             (setq i (+ 1 i)))
            s)))
     s))
 
 (defun pen-test-expand-keyvals ()
   (interactive)
-  (pen-etv (pen-expand-template-keyvals " <y> <thing> " '(("thing" . "yo")
-                                                          ("y" . "n")))))
+  (pen-etv (pen-expand-template-keyvals " <q:y> <thing> " '(("thing" . "yo")
+                                                            ("y" . "n")))))
 
 (defun pen-test-expand-zip-two-lists ()
   (interactive)
-  (pen-etv (pen-expand-template-keyvals " <y> <thing> "
-                                        (-zip '("thing" "y") '("yo" "n")))))
+  (pen-etv (pen-expand-template-keyvals " <y> <q:thing hi> "
+                                        (-zip '("thing hi" "y") '("yo" "n")))))
 
 (defun pen-expand-template-keyvals (s keyvals &optional encode)
   "expand template from alist"
@@ -279,8 +287,16 @@ Reconstruct the entire yaml-ht for a different language."
                    (val (if encode
                             (pen-encode-string val)
                           val)))
-              (setq s (string-replace (format "<%s>" key) (chomp val) s))
-              (setq s (string-replace (format "<q:%s>" key) (pen-q (chomp val)) s))
+              (let ((unquoted (format "<%s>" key))
+                    (quoted (format "<q:%s>" key))
+                    (quoted2 (format "<q<pen-colon>%s>" key)))
+                (cond
+                 ((re-match-p (unregexify unquoted) s)
+                  (setq s (string-replace unquoted (chomp val) s)))
+                 ((re-match-p (unregexify quoted) s)
+                  (setq s (string-replace quoted (pen-q (chomp val)) s)))
+                 ((re-match-p (unregexify quoted2) s)
+                  (setq s (string-replace quoted2 (pen-q (chomp val)) s)))))
               ;; (setq s (string-replace (format "<%d>" i) val s))
               (setq i (+ 1 i))))
            s)))
@@ -1100,6 +1116,10 @@ Otherwise, it will be a shell expression template")
          (incl-yaml (if (and (sor incl-name)
                              (f-file-p incl-fp))
                         (pen-prompt-file-load incl-fp))))
+    (pen-try
+     (if (and (sor incl-name)
+              (not (f-file-p incl-fp)))
+         (error (concat "Missing include file for " fp))))
     (if incl-yaml
         (setq yaml-ht
               (ht-merge incl-yaml
@@ -1537,7 +1557,9 @@ Function names are prefixed with pf- for easy searching"
                                 (if var-defaults (concat "\nvar-defaults:\n" (pen-list-to-orglist var-defaults)))
                                 (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
                                 (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))
-                                (if validator (concat "\nvalidator:\n" (pen-list-to-orglist (list validator))))))
+                                (if validator (concat "\nvalidator:\n" (pen-list-to-orglist (list validator))))
+                                (if subprompts (concat "\nsubprompts:\n" (pps subprompts)))
+                                (if prompt (concat "\nprompt:\n" prompt))))
                               "\n"))
 
                         ;; variables
