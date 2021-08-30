@@ -26,8 +26,8 @@
   '(("num-continuations" . 4)
     ("temperature" . 0.9)
     ("top-p" . 1)
-    ("response-length" . 100)
-    ("prompt-length" . 6000)
+    ;; ("response-length" . 100)
+    ;; ("prompt-length" . 4096)
     ("model" . "davinci")))
 
 ;; OpenAI calls models 'engines'. But I want to use the term 'engine' to mean (API + model)

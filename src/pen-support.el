@@ -178,6 +178,12 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
   "Try to run a thing. Run something else if it fails."
   `(try-cascade '(,@list-of-alternatives)))
 
+(defmacro pen-try (&rest list-of-alternatives)
+  "Try to run a thing. Run something else if it fails."
+  (if pen-debug
+      (car list-of-alternatives)
+    `(try-cascade '(,@list-of-alternatives))))
+
 (defun try-cascade (list-of-alternatives)
   "Try to run a thing. Run something else if it fails."
   ;; (pen-list2str list-of-alternatives)
@@ -1076,7 +1082,7 @@ when s is a string, set the clipboard to s"
 ;; (alist2pairs '(("hi" . "yo") ("my day" . "is good")))
 (defun alist2pairs (al)
   (mapcar (lambda (e)
-            (list (intern (slugify (car e))) (cdr e)))
+            (list (intern (slugify (str (car e)))) (cdr e)))
           al))
 
 (defmacro pen-let-keyvals (keyvals &rest body)
@@ -1158,5 +1164,18 @@ Out
   (macroexpand
    `(pen-ms "/H-[A-Z]\\+/{p;s/H-\\([A-Z]\\+\\)/<H-\\L\\1>/;}"
             (define-key ,map ,kbd-expr ,func-sym))))
+
+(defalias 'λ 'lambda)
+
+(defun pen-round-to-dec (n &optional decimal-count)
+  (setq decimal-count (or decimal-count 1))
+  (let ((mult (expt 10 decimal-count)))
+    (number-to-string
+     (/
+      (fround
+       (*
+        mult
+        n))
+      mult))))
 
 (provide 'pen-support)

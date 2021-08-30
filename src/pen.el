@@ -251,6 +251,7 @@ Reconstruct the entire yaml-ht for a different language."
             for val in vals do
             (if encode (setq val (pen-encode-string val)))
             (setq s (string-replace (format "<%d>" i) (chomp val) s))
+            (setq s (string-replace (format "<q:%d>" i) (pen-q (chomp val)) s))
             (setq i (+ 1 i)))
            s)))
     s))
@@ -279,6 +280,7 @@ Reconstruct the entire yaml-ht for a different language."
                             (pen-encode-string val)
                           val)))
               (setq s (string-replace (format "<%s>" key) (chomp val) s))
+              (setq s (string-replace (format "<q:%s>" key) (pen-q (chomp val)) s))
               ;; (setq s (string-replace (format "<%d>" i) val s))
               (setq i (+ 1 i))))
            s)))
@@ -510,6 +512,32 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'subprompts)
                        ,subprompts))
 
+                  ;; Pipelines are just some named shell pipelines that a specific to a prompt
+                  ;; that come with the prompt. They're not very useful. But they may also be used inside expressions.
+                  (final-pipelines
+                   (or (pen-var-value-maybe 'pipelines)
+                       ',pipelines))
+
+                  (final-expressions
+                   (or (pen-var-value-maybe 'expressions)
+                       ',expressions))
+
+                  ;; pipelines are available to expressions
+                  ;; Expressions may be used inside various prompt parameters, such as max-tokens
+                  (final-expressions
+                   (if final-expressions
+                       (mapcar (lambda (pp) (pen-expand-template-keyvals pp final-pipelines)) final-expressions)
+                     final-expressions))
+
+                  (final-preprocessors
+                   (or (pen-var-value-maybe 'preprocessors)
+                       ',preprocessors))
+
+                  (final-preprocessors
+                   (if final-preprocessors
+                       (mapcar (lambda (pp) (pen-expand-template-keyvals pp final-pipelines)) final-preprocessors)
+                     final-preprocessors))
+
                   (subprompts-al
                    (if final-subprompts
                        (ht->alist (-reduce 'ht-merge (vector2list final-subprompts)))))
@@ -556,7 +584,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (vals
                    (cl-loop
                     for tp in
-                    (-zip-fill nil vals ',preprocessors)
+                    (-zip-fill nil vals final-preprocessors)
                     collect
                     (let* ((v (car tp))
                            (pp (cdr tp)))
@@ -579,6 +607,14 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-n-collate
                    (or (pen-var-value-maybe 'n-collate)
                        ,n-collate))
+
+                  (final-n-max-collate
+                   (or (pen-var-value-maybe 'n-max-collate)
+                       ,n-max-collate))
+
+                  (final-n-target
+                   (or (pen-var-value-maybe 'n-target)
+                       ,n-target))
 
                   (final-engine-max-n-completions
                    (expand-template
@@ -802,8 +838,8 @@ Reconstruct the entire yaml-ht for a different language."
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data data))
                      data))
+                  (results)
 
-                  ;; run the completion command and collect the result
                   (resultsdirs
                    (if (not no-gen)
                        (progn
@@ -839,7 +875,7 @@ Reconstruct the entire yaml-ht for a different language."
                                 (message (concat ,func-name " done " (int-to-string i)))
                                 ret))
                             do
-                            (try
+                            (pen-try
                              ;; Update the collation-temperature
                              (if (sor final-collation-temperature-stepper)
                                  (progn
@@ -947,7 +983,16 @@ Reconstruct the entire yaml-ht for a different language."
                                                (lambda (r)
                                                  (or
                                                   (not final-validator)
-                                                  (pen-snq final-validator r)))))))
+                                                  ;; Theoretically, both a shell script and elisp should have access to prompt-length and result-length
+                                                  (let* ((al `((prompt-length . ,approximate-prompt-token-length)
+                                                               (gen-length . ,(round (/ (length r) 2.7)))))
+                                                         (valr (pen-expand-template-keyvals final-validator al)))
+                                                    (eval
+                                                     `(pen-let-keyvals
+                                                       ',al
+                                                       (if (re-match-p "^(" ,valr)
+                                                           (eval-string ,valr)
+                                                         (pen-snq ,valr ,r)))))))))))
                                       processed-results)
                                   (list (message "Try UPDATE=y or debugging"))))))))
 
@@ -1289,7 +1334,7 @@ Function names are prefixed with pf- for easy searching"
                 ;; ht-merge
 
                 ;; results in a hash table
-                (try
+                (pen-try
                  (let* ((yaml-ht (pen-prompt-file-load path))
                         (path path)
 
@@ -1366,11 +1411,17 @@ Function names are prefixed with pf- for easy searching"
                              (vector2list (car examples-list))
                            examples-list))
                         (preprocessors (vector2list (ht-get yaml-ht "preprocessors")))
+                        (pipelines (pen--htlist-to-alist (ht-get yaml-ht "pipelines")))
+                        (expressions (pen--htlist-to-alist (ht-get yaml-ht "expressions")))
                         (validator (ht-get yaml-ht "validator"))
                         (prompt-filter (ht-get yaml-ht "prompt-filter"))
                         (postprocessor (ht-get yaml-ht "postprocessor"))
                         (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
                         (n-collate (or (ht-get yaml-ht "n-collate")
+                                       1))
+                        (n-max-collate (or (ht-get yaml-ht "n-max-collate")
+                                       1))
+                        (n-target (or (ht-get yaml-ht "n-target")
                                        1))
                         (engine-max-generated-tokens
                          (or (ht-get yaml-ht "engine-max-generated-tokens")
@@ -1462,6 +1513,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if model (concat "\nmodel: " model))
                                 (if n-completions (concat "\nn-completions: " (str n-completions)))
                                 (if n-collate (concat "\nn-collate: " (str n-collate)))
+                                (if n-target (concat "\nn-target: " (str n-target)))
                                 (if min-tokens (concat "\nmin-tokens: " (str min-tokens)))
                                 (if max-tokens (concat "\nmax-tokens: " (str max-tokens)))
                                 (if engine-min-tokens (concat "\nengine-min-tokens: " (str engine-min-tokens)))
@@ -1479,9 +1531,12 @@ Function names are prefixed with pf- for easy searching"
                                 (if future-titles (concat "\nfuture-titles:\n" (pen-list-to-orglist future-titles)))
                                 (if examples (concat "\nexamples:\n" (pen-list-to-orglist examples)))
                                 (if preprocessors (concat "\npreprocessors:\n" (pen-list-to-orglist preprocessors)))
+                                (if pipelines (concat "\npipelines:\n" (pps pipelines)))
+                                (if expressions (concat "\nexpressions:\n" (pps expressions)))
                                 (if var-defaults (concat "\nvar-defaults:\n" (pen-list-to-orglist var-defaults)))
                                 (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
-                                (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))))
+                                (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))
+                                (if validator (concat "\nvalidator:\n" (pen-list-to-orglist (list validator))))))
                               "\n"))
 
                         ;; variables
@@ -1517,7 +1572,7 @@ Function names are prefixed with pf- for easy searching"
                                        (pen-selected-text)
                                      ;; (eval-string default-readstring-cmd)
                                      ;; (read-string-hist ,(concat varslug ": ") ,example)
-                                     (read-string-hist ,(concat varslug ": ") ,example)
+                                     (read-string-hist ,(concat title " " varslug ": ") ,example)
                                      ;; TODO Find a way to do multiline entry
                                      ;; (if ,(> (length (s-lines example)) 1)
                                      ;;     (multiline-reader ,example)
@@ -1535,7 +1590,7 @@ Function names are prefixed with pf- for easy searching"
                                     ',',(pen-subprompts-to-alist subprompts)
                                     (if ,,default
                                         (eval-string ,,(str default))
-                                      (read-string-hist ,,(concat varname ": ") ,,example))))))
+                                      (read-string-hist ,,(concat title " " varname ": ") ,,example))))))
                             do
                             (progn
                               (setq iteration (+ 1 iteration))

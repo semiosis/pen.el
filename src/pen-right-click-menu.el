@@ -218,7 +218,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("paraphrase" :call pf-paraphrase/1 :if (pen-selected-p))
          ("tldr" :call pf-tldr-summarization/1 :if (pen-selected-p))
          ("eli5" :call pf-eli5-explain-like-i-m-five/1 :if (pen-selected-p))
-         ("transform prose" :call pf-transform-prose/3)
+         ("transform prose" :call pf-transform-prose/2)
          ("correct grammar" :call pf-correct-grammar/1 :if (pen-selected-p))
          ("correct grammar 2" :call pf-correct-grammar-2/1 :if (pen-selected-p))
          ("vexate" :call pf-complicated-explanation-of-how-to-x/1 :if (pen-selected-p))

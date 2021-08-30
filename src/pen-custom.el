@@ -1,14 +1,21 @@
+(defcustom pen-debug nil
+  "When debug is on, try is disabled, and all errors throw an exception"
+  :type 'boolean
+  :group 'pen
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
 (defcustom pen-sh-update nil
   "Export UPDATE=y when executing sn and such"
   :type 'boolean
-  :group 'system-custom
+  :group 'pen
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-libre-only nil
   "Only use libre engines"
   :type 'boolean
-  :group 'system-custom
+  :group 'pen
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
