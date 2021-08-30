@@ -1933,10 +1933,12 @@ Function names are prefixed with pf- for easy searching"
 
 (defun pen-complete-function (preceding-text &rest args)
   ;; (pf-generic-completion-50-tokens/1 preceding-text)
-  (if (and (derived-mode-p 'prog-mode)
+  (if (and (or (derived-mode-p 'prog-mode)
+               (derived-mode-p 'term-mode))
            (not (string-equal (buffer-name) "*scratch*")))
       ;; Can't put ink-propertise here
-      (eval `(pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args))
+      (eval `(let ((engine "OpenAI Codex"))
+               (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)))
     (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
 
 (defun pen-complete-insert (s)
