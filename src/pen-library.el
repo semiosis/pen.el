@@ -201,4 +201,12 @@
         (pen-etv topic)
       topic)))
 
+(defun pen-select-function-from-nl (use-case)
+  (interactive (list (read-string "pen-select-function-from-nl use-case: ")))
+  (let* ((lang ;; (pen-detect-language-ask)
+          (read-string-hist "pen-select-function-from-nl lang: "))
+         (funs (pf-find-a-function-given-a-use-case/2 lang use-case :no-select-result t))
+         (sigs (pf-get-the-signatures-for-a-list-of-functions/2 lang (list2str funs) :no-select-result t)))
+    (xc (fz (-zip-lists funs sigs) nil nil "pen-select-function-from-nl: "))))
+
 (provide 'pen-library)
