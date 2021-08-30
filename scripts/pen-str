@@ -227,19 +227,19 @@ case "$f" in
 
     has-starting-specified-whitespace) {
         ws="$1"
-        sed -n -z "/^$(pen-qne "$ws")/p" | grep -qP .
+        sed -n -z "/^$(pen-sqne "$ws")/p" | grep -qP .
     }
     ;;
 
     if-starts-with-whitespace) {
         ws="$1"
-        sed -n -z "/^$(pen-qne "$ws")/p"
+        sed -n -z "/^$(pen-sqne "$ws")/p"
     }
     ;;
 
     remove-starting-specified-whitespace) {
         ws="$1"
-        sed -z "s/^$(pen-qne "$ws")//"
+        sed -z "s/^$(pen-sqne "$ws")//"
     }
     ;;
 
@@ -250,6 +250,18 @@ case "$f" in
         else
             printf -- "%s" "$in"
         fi
+    }
+    ;;
+
+    remove-starting-and-trailing-whitespace) {
+        sed -e 's/^\s*//' -e 's/\s*$//'
+    }
+    ;;
+
+    tidy-prose-input) {
+        pen-str join ' ' |
+            pen-str remove-starting-and-trailing-whitespace |
+            sed 's/ \+/ /g'
     }
     ;;
 

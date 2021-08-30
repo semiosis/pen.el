@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This operates on double quotes
+# This operates on single quotes, not double
 
 # cmd - print the arguments given to this script
 
@@ -31,11 +31,11 @@ if stdin_exists; then
     set -- "$in" "$@"
 fi
 
-cmd-nice-jq() {
+cmd() {
     for var in "$@"
     do
-        printf '%s ' "$(printf %s "$var" | pen-q-jq | sed -e 's/^"//' -e 's/"$//')";
+        printf "%s " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
     done | sed 's/ $//'
 }
 
-cmd-nice-jq "$@"
+cmd "$@"
