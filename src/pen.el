@@ -510,6 +510,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'interpreter)
                        ,interpreter))
 
+                  (final-inject-gen-start
+                   (or (pen-var-value-maybe 'inject-gen-start)
+                       ,inject-gen-start))
+
                   (final-start-yas
                    (or (pen-var-value-maybe 'start-yas)
                        ,start-yas))
@@ -795,11 +799,19 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-prompt (s-remove-trailing-newline final-prompt))
 
+                  (final-prompt
+                   (if (sor final-inject-gen-start)
+                       (concat final-prompt final-inject-gen-start)
+                     final-prompt))
+
                   (prompt-end-pos (or (byte-string-search "<:pp>" final-prompt)
                                       ;; (length final-prompt)
                                       (string-bytes final-prompt)))
 
-                  (final-prompt (pen-log-final-prompt (string-replace "<:pp>" "" final-prompt)))
+                  (final-prompt (string-replace "<:pp>" "" final-prompt))
+
+                  ;; pen-log-final-prompt actually chomps it
+                  (logged (pen-log-final-prompt (concat final-prompt "<END>")))
 
                   (trailing-whitespace (s-trailing-whitespace final-prompt))
 
@@ -1409,6 +1421,10 @@ Function names are prefixed with pf- for easy searching"
                         (new-document (ht-get yaml-ht "new-document"))
                         (start-yas (ht-get yaml-ht "start-yas"))
                         (yas (ht-get yaml-ht "yas"))
+
+                        ;; not normally given via .prompt. Rather, overridden
+                        (inject-gen-start (ht-get yaml-ht "inject-gen-start"))
+
                         (end-yas (ht-get yaml-ht "end-yas"))
                         (include-prompt (ht-get yaml-ht "include-prompt"))
                         (no-gen (ht-get yaml-ht "no-gen"))
@@ -1885,6 +1901,20 @@ Function names are prefixed with pf- for easy searching"
            (stop-sequences '("\n")))
        ,',@body)))
 
+(defmacro pen-lines-complete (&rest body)
+  "This wraps around pen function calls to make them complete line only"
+  `(eval
+    `(let ((is-completion t)
+           (max-tokens 50)
+           (n-completions 2)
+           (n-collate 1)
+           (inject-gen-start "\n")
+           (stop-sequence "##long complete##")
+           (stop-sequences '("##long complete##"))
+           ;; Delete the last line. But only if more than 1?
+           (postprocessor "pen-str maybe-delete-last-line"))
+       ,',@body)))
+
 (defmacro pen-line-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete line only"
   `(eval
@@ -1948,6 +1978,17 @@ May use to generate code from comments."
   (interactive (list (pen-preceding-text) nil))
   (let ((response
          (pen-long-complete
+          (pen-complete-function preceding-text))))
+    (if tv
+        (pen-etv (ink-propertise response))
+      (pen-complete-insert (ink-propertise response)))))
+
+(defun pen-complete-lines (preceding-text &optional tv)
+  "Lines-form completion. This will generate lots of text.
+May use to generate code from comments."
+  (interactive (list (pen-preceding-text) nil))
+  (let ((response
+         (pen-lines-complete
           (pen-complete-function preceding-text))))
     (if tv
         (pen-etv (ink-propertise response))
