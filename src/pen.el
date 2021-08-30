@@ -984,7 +984,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                  (or
                                                   final-engine-whitespace-support
                                                   (not (sor trailing-whitespace))
-                                                  (not (pen-snq (cmd "pen-str" "has-starting-specified-whitespace" trailing-whitespace) r)))))))
+                                                  (not (pen-snq (pen-cmd "pen-str" "has-starting-specified-whitespace" trailing-whitespace) r)))))))
 
                                            (processed-results
                                             (->> processed-results
@@ -1001,7 +1001,7 @@ Reconstruct the entire yaml-ht for a different language."
                                            ;;     (if (and (not final-engine-whitespace-support)
                                            ;;              (sor trailing-whitespace))
                                            ;;         (s-remove-starting-specified-whitespace r trailing-whitespace)
-                                           ;;       ;; (pen-sn (cmd "pen-str" "remove-starting-specified-whitespace" trailing-whitespace) r)
+                                           ;;       ;; (pen-sn (pen-cmd "pen-str" "remove-starting-specified-whitespace" trailing-whitespace) r)
                                            ;;       r))
                                            ;;   processed-results))
 

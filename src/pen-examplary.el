@@ -82,7 +82,7 @@ The last element in the list is the output/return value"
                       (pen-str2list
                        (pen-snc
                         (concat
-                         (cmd ,gen initial)
+                         (pen-cmd ,gen initial)
                          "| head -n "
                          (str n))))))))
 
@@ -162,7 +162,7 @@ The last element in the list is the output/return value"
 
 ;; A gen function must take an initial value and a number for how many to generate
 (defun examplary-edit-generator (initial n)
-  (pen-str2list (pen-snc (concat (cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
+  (pen-str2list (pen-snc (concat (pen-cmd "examplary-edit-generator" "shane") "| head -n " (str n)))))
 
 (comment
  ;; so this is a prompt that takes a single input, which is a multiline string

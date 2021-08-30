@@ -71,7 +71,7 @@
     b))
 
 (defun create-tablist (cmd-or-csv-path &optional modename has-header col-sizes-string wd)
-  "Try to create a tablist from a cmd or a csv path"
+  "Try to create a tablist from a command or a csv path"
   (interactive (list (read-string-hist "create-tablist: CMD or CSV path: ")))
 
   (setq has-header
@@ -83,14 +83,14 @@
                     (f-file-p cmd-or-csv-path)
                     (not (f-executable-p cmd-or-csv-path)))
                    cmd-or-csv-path))
-         (cmd (if (not path)
+         (command (if (not path)
                   cmd-or-csv-path))
          (col-sizes
           (if (sor col-sizes-string)
               (try (mapcar 'string-to-number (uncmd col-sizes-string))))))
 
     (let ((b (cond ((sor path) (tablist-buffer-from-csv-string (cat path) has-header col-sizes))
-                   ((sor cmd) (tablist-buffer-from-csv-string (pen-sn cmd) has-header col-sizes)))))
+                   ((sor command) (tablist-buffer-from-csv-string (pen-sn command) has-header col-sizes)))))
       (if b
           (with-current-buffer
               b

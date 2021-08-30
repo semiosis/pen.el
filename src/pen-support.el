@@ -7,11 +7,11 @@
 ;;   (s-join "/" strings))
 
 (defun f-basename (path)
-  ;; (pen-snc (cmd "basename" path))
+  ;; (pen-snc (pen-cmd "basename" path))
   (s-replace-regexp ".*/" "" path))
 
 (defun f-mant (path)
-  ;; (pen-snc (cmd "mant" path))
+  ;; (pen-snc (pen-cmd "mant" path))
   (s-replace-regexp "\\..*" "" (f-basename path)))
 
 (defun pen-tf (template &optional input ext)
