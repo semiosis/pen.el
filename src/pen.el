@@ -2048,7 +2048,6 @@ May use to generate code from comments."
 (require 'pen-engine)
 ;; Allow Pen.el to use a docker container containing Pen.el as its 'engine'.
 (require 'pen-quineserver)
-(require 'pen-fun)
 (require 'pen-yasnippet)
 (require 'pen-filters)
 (require 'pen-term)
