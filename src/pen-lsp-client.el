@@ -17,15 +17,19 @@
 
 (defvar pen-lsp--config-options `())
 
+;; Set up for text-mode currently
+
 (lsp-register-client
  (make-lsp-client :new-connection
                   (lsp-stdio-connection 'pen-lsp--server-command)
-                  :major-modes '(pen-mode)
+                  :major-modes '(text-mode)
                   :server-id 'pen
                   :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
                                       (lsp--set-configuration
                                        `(:pen ,pen-lsp--config-options))))))
+
+(add-hook 'text-mode-hook #'lsp)
 
 (provide 'pen-lsp)
 ;;; pen-lsp.el ends here
