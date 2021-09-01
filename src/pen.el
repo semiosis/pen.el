@@ -2051,6 +2051,7 @@ May use to generate code from comments."
 (require 'pen-yasnippet)
 (require 'pen-filters)
 (require 'pen-term)
+(require 'pen-lsp)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
