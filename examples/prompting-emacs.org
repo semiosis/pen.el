@@ -20,3 +20,24 @@
   -UUU:----F1  *scratch*      All L4     (Lisp Interaction ElDoc) ---------------
   Quit
 #+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  This is GNU Emacs, one component of the GNU/Linux operating system.
+  
+  GNU Emacs 28.0.50 (build 1, x86_64-pc-linux-gnu, GTK+ Version 3.24.5, cairo version 1.16.0)
+   of 2021-08-17
+  Copyright (C) 2020 Free Software Foundation, Inc.
+  
+  Authors	Many people have contributed code included in GNU Emacs
+  Contributing	How to report bugs and contribute improvements to Emacs
+  
+  GNU and Freedom	Why we developed GNU Emacs, and the GNU operating system
+  Absence of Warranty	GNU Emacs comes with ABSOLUTELY NO WARRANTY
+  Copying Conditions	Conditions for redistributing and changing Emacs
+  Getting New Versions	How to obtain the latest version of Emacs
+  Ordering Manuals	Buying printed manuals from the FSF
+  
+  Emacs Tutorial	Learn basic Emacs keystroke commands
+  Emacs Guided Tour	See an overview of Emacs features at gnu.org
+  Emacs Manual	Display the Emacs manual in Info mode
+#+END_SRC
