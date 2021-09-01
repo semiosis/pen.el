@@ -31,5 +31,8 @@
 
 (add-hook 'text-mode-hook #'lsp)
 
+;; This is for the language server to know what language I'm using
+(add-to-list 'lsp-language-id-configuration '(text-mode . "text"))
+
 (provide 'pen-lsp)
 ;;; pen-lsp.el ends here
