@@ -415,6 +415,11 @@ Reconstruct the entire yaml-ht for a different language."
 
   val)
 
+(defun pen-maybe-uniq (no-uniq lst)
+  (if no-uniq
+      lst
+    (-uniq lst)))
+
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.
 ;; Expected variables:
@@ -509,6 +514,10 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-interpreter
                    (or (pen-var-value-maybe 'interpreter)
                        ,interpreter))
+
+                  (final-no-uniq-results
+                   (or (pen-var-value-maybe 'no-uniq-results)
+                       ,no-uniq-results))
 
                   (final-inject-gen-start
                    (or (pen-var-value-maybe 'inject-gen-start)
@@ -921,7 +930,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (results
                    (if no-gen
                        '("")
-                     (-uniq
+                     (pen-maybe-uniq final-no-uniq-results
                       (flatten-once
                        (cl-loop for rd in resultsdirs
                                 collect
@@ -1432,6 +1441,7 @@ Function names are prefixed with pf- for easy searching"
                         (repeater (ht-get yaml-ht "repeater"))
                         (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
                         (interpreter (pen-yaml-test yaml-ht "interpreter"))
+                        (no-uniq-results (pen-yaml-test yaml-ht "no-uniq-results"))
                         (conversation (pen-yaml-test yaml-ht "conversation"))
                         (filter (pen-yaml-test yaml-ht "filter"))
                         ;; Don't actually use this.
