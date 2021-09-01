@@ -450,7 +450,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   ;; The (eval s) undoes the macroishness of the s arg
   (let* ((sval (eval s))
          (ret
-          (loop for l in (s-split "\n" sval) collect
+          (cl-loop for l in (s-split "\n" sval) collect
                 (if (sor l)
                     ;; This is needed to access form.
                     ;; Unfortunately this occludes dynamic scope.
@@ -466,7 +466,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 (defun fwrlp (s form &optional nojoin)
   "Function version of wrlp"
   (let* ((ret
-          (loop for l in (s-split "\n" s) collect
+          (cl-loop for l in (s-split "\n" s) collect
                 (if (sor l)
                     (eval
                      `(-> ,l

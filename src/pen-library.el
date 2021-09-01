@@ -217,7 +217,7 @@
          ;; (l (tv (list2str lines)))
          (lintings
           (list2str
-           (loop for l in lines collect
+           (cl-loop for l in lines collect
                  (progn
                    (message "%s" (concat "linting " l))
                    (car (pen-single-generation

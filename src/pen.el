@@ -147,17 +147,17 @@ Reconstruct the entire yaml-ht for a different language."
                  (new-topic (translate topic))
                  (new-doc (translate doc))
                  ;; is there a mapcar for macros?
-                 (new-vars (loop for v in vars collect
+                 (new-vars (cl-loop for v in vars collect
                                  (translate v)))
                  ;; (new-var-slugs (mapcar 'slugify new-vars))
                  (new-examples
                   (if (vectorp (car examples-list))
                       (mapcar
                        (lambda (v)
-                         (loop for e in (vector2list v) collect
+                         (cl-loop for e in (vector2list v) collect
                                (translate e)))
                        examples-list)
-                    (loop for e in examples-list collect
+                    (cl-loop for e in examples-list collect
                           (translate e))))
                  (new-prompt
                   (pen-expand-template-keyvals
@@ -370,7 +370,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defvar pen-last-prompt-data '())
 
 (defun pen-alist-to-list (al)
-  (loop for e in al collect (list (car e) (cdr e))))
+  (cl-loop for e in al collect (list (car e) (cdr e))))
 
 (defun pen-test-alist-to-list ()
   (interactive)
@@ -1310,7 +1310,7 @@ Otherwise, it will be a shell expression template")
           (defer-suggestions
             (-filter
              'identity
-             (loop for d in (pen--htlist-to-alist defers) collect
+             (cl-loop for d in (pen--htlist-to-alist defers) collect
                    (let* ((defer-provisions (s-split "+" (car d)))
                           (newengine (cdr d))
                           ;; (newengine-ht (ht-get pen-engines newengine))
@@ -1327,7 +1327,7 @@ Otherwise, it will be a shell expression template")
            (-filter
             'identity
             (-flatten
-             (loop for e in family collect (pen-resolve-engine
+             (cl-loop for e in family collect (pen-resolve-engine
                                             e
                                             requirements))))))
 
@@ -1339,7 +1339,7 @@ Otherwise, it will be a shell expression template")
 
      ;; Select the first from family which satisfies the requirements
 
-     (loop for child in family collect
+     (cl-loop for child in family collect
            (let ((child-engine-ht (ht-get pen-engines child))
                  (layers (ht-get child-engine-ht "layers")))))
 
