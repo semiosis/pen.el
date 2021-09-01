@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Example:
+# echo "hi" | pen-push 3 cmd-nice a b c d " e " f
+
+IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
+
+place="$1"
+shift
+
+test "$#" -gt 0 || exit 1
+
+case "$place" in
+    0) {
+        place=1
+        set -- "$in" "$@"
+    }
+    ;;
+
+    1) {
+        set -- "$in" "$@"
+    }
+    ;;
+
+    *) {
+        pmo="$((place - 1))"
+
+        # Not sure why yet but whitespace is trimmed
+        set -- "${@:1:$pmo}" "$in" "${@:$place}"
+    }
+    ;;
+
+    *)
+esac
+
+"$@"
