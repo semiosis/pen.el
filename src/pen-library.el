@@ -209,4 +209,19 @@
          (sigs (pf-get-the-signatures-for-a-list-of-functions/2 lang (list2str funs) :no-select-result t)))
     (xc (fz (-zip-lists funs sigs) nil nil "pen-select-function-from-nl: "))))
 
+(defun pen-imagine-awk-linting ()
+  (interactive)
+  (message "Please wait...")
+  (let* ((sel (str (pen-selection)))
+         (lines (s-lines sel))
+         ;; (l (tv (list2str lines)))
+         (lintings
+          (list2str
+           (loop for l in lines collect
+                 (progn
+                   (message "%s" (concat "linting " l))
+                   (car (pen-single-generation
+                         (pf-imagine-an-awk-linter/1 l :no-select-result t :select-only-match))))))))
+    (etv lintings)))
+
 (provide 'pen-library)

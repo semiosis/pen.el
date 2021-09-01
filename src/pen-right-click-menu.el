@@ -232,6 +232,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
          ;; ("add comments" :call pf-annotate-code-with-commentary/2)
          ("transform code" :call pf-transform-code/3)
+         ("lint awk" :call pen-imagine-awk-linting)
          ("correct the syntax" :call pf-correct-the-syntax/2)
          ("add comments" :call pf-add-comments-to-code/2)
          ("generate from description" :call pf-code-generator-from-description/1)

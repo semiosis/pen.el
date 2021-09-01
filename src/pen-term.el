@@ -86,8 +86,8 @@
 
     (while (< i 128)
       ;; if not C-c
-      (if (not (or (equalp i 3)
-                   (equalp i 24)))
+      (if (not (or (cl-equalp i 3)
+                   (cl-equalp i 24)))
           (define-key map (make-string 1 i) #'term-send-raw))
 
       (define-key map (concat "\C-c" (make-string 1 i)) 'term-send-raw)
