@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Example:
-# echo "hi" | pen-push 3 cmd-nice a b c d " e " f
+# echo "hi" | pen-push 3 cmd-nice-jq a b c d " e " f
 
 IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
 
