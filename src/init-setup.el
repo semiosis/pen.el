@@ -25,6 +25,7 @@
 (package-install 'right-click-context)
 (package-install 'projectile)
 (package-install 'transient)
+(package-install 'el-patch)
 (package-install 'lsp-mode)
 (package-install 'iedit)
 (package-install 'ht)

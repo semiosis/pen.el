@@ -29,6 +29,7 @@
 (require 'right-click-context)
 (require 'projectile)
 (require 'transient)
+(require 'el-patch)
 (require 'lsp-mode)
 (require 'iedit)
 (require 'ht)
