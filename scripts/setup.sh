@@ -177,3 +177,21 @@ cmake ..
 make && make install
 )
 
+(
+cd
+git clone "https://github.com/dieggsy/eterm-256color"
+tic -s ./eterm-256color/eterm-256color.ti
+)
+
+(
+cd
+apt install wget
+wget "https://golang.org/dl/go1.17.linux-amd64.tar.gz"
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.linux-amd64.tar.gz
+)
+
+(
+export PATH=$PATH:/usr/local/go/bin
+go get github.com/mattn/efm-langserver
+)
+# ~/go/bin/efm-langserver
