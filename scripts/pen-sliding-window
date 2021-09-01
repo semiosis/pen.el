@@ -1,0 +1,117 @@
+#!/bin/bash
+export TTY
+
+# Apply an external filter command to a sliding window using awk
+
+exec 2>/dev/null
+
+esc() {
+    # escapes \ and the chars of choice
+
+    chars="$1"
+    : ${chars:=" "}
+    chars="$(printf -- "%s" "$chars" | sed -e "s/\\\/&&/g" -e "s/\"/\\\&/g")"
+
+    sed "s_\\([$chars]\\)_\\\\\\1_g"
+}
+
+# POSIX-compliant
+p () {
+    # This is not exactly literal. It evaluates \n
+    {
+        i=1
+        while [ "$i" -lt "$#" ]; do
+            eval ARG=\${$i}
+            printf -- "%s " "$ARG"
+            i=$((i + 1))
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG"
+    } | sed 's/\\n/\n/g'
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -r|-rrs) {
+        # Remove the RS at the end
+        REMOVE_RS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# RSEP is interpreted as the string verbatim without escape characters
+# unless it is read from the first argument. p will interpret \n
+if ! test -n "$RSEP"; then
+    IFS= read -rd '' RSEP < <(p "$1");typeset -p RSEP &>/dev/null
+fi
+
+IFS= read -rd '' RSEP < <(printf -- "%s" "$RSEP" | qne);typeset -p RSEP &>/dev/null
+IFS= read -rd '' rsep_escaped < <(printf -- "%s" "$RSEP" | esc "\\");typeset -p rsep_escaped &>/dev/null
+
+filter_cmd="$2"
+window_size="$3"
+step="$4"
+
+test -n "$RSEP" || exit 1
+test -n "$filter_cmd" || exit 1
+test -n "$window_size" || exit 1
+test -n "$step" || exit 1
+
+read -r -d '' awkscript <<'HEREDOC'
+# This is a sliding window by record separator,
+# But I also might need one by byte?
+# At least I can make a line-wise and word-wise sliding window.
+# I could actually probably make it bytewise by making the RS=.
+
+# This awk program keeps a memory of the last window_size records.
+# and steps forwards 2 records at a time.
+BEGIN {
+  # Initialize the memory with the first window_size records.
+  for (i=1; i<=window_size; i++) {
+    memory[i] = $i
+  }
+}
+
+{
+  # Update the memory.
+  for (i=1; i<=window_size; i++) {
+    memory[i] = memory[i+1]
+    # print "update", i, memory[i], RS
+  }
+  memory[window_size] = $0
+
+  effective_nr = NR - window_size
+
+  if (NR >= window_size && (effective_nr % step == 0)) {
+      s = ""
+      for (i=1; i<window_size; i++) {
+          s = s memory[i] RS
+      }
+      s = s memory[window_size]
+      printf "%s", s |& cmd
+
+      close(cmd, "to");
+      $0 = "";
+
+      brs=RS
+      RS="##long read##"
+      cmd |& getline $0;
+      fflush(cmd);
+      close(cmd);
+      RS=brs
+      print; system("");
+  }
+}
+HEREDOC
+
+f="$filter_cmd | sed -z \"s/${rsep_escaped}/__RS_PLACEHOLDER__/\""
+
+gawk -v window_size="$window_size" -v step="$step" -v RS="$RSEP" -v ORS="" -v cmd="$f" -v FS=" " -v OFS=" " "$awkscript" | sed -z "s/__RS_PLACEHOLDER__/$RSEP/g" | {
+    if test "$REMOVE_RS" = "y"; then
+        sed -z "s/$RSEP//g"
+    else
+        cat
+    fi
+}

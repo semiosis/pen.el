@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+exec 2>/dev/null
+
+# Firstly, count the number of records
+# awk '/slm/ {count++} END {print count}'
+
+cat $MYGIT/semiosis/pen.el/scripts/pen-aatr | awk -v rs="\\n\\n" -v OFS="" -v window_size=4 -v step=2 -v cmd="pen-q-jq" -f $NOTES/ws/pen-el/testing/sliding-window.awk

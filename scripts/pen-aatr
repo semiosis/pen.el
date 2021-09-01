@@ -1,0 +1,113 @@
+#!/bin/bash
+export TTY
+
+# awk apply to record
+
+exec 2>/dev/null
+
+esc() {
+    # escapes \ and the chars of choice
+
+    chars="$1"
+    : ${chars:=" "}
+    chars="$(printf -- "%s" "$chars" | sed -e "s/\\\/&&/g" -e "s/\"/\\\&/g")"
+
+    sed "s_\\([$chars]\\)_\\\\\\1_g"
+}
+
+# POSIX-compliant
+p () {
+    # This is not exactly literal. It evaluates \n
+    {
+        i=1
+        while [ "$i" -lt "$#" ]; do
+            eval ARG=\${$i}
+            printf -- "%s " "$ARG"
+            i=$((i + 1))
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG"
+    } | sed 's/\\n/\n/g'
+}
+
+SELECTED_RECORD_ID=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -R) {
+        SELECTED_RECORD_ID="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -k|-irs) {
+        # Do not put RS into the filter
+        IGNORE_RS=y
+        shift
+    }
+    ;;
+
+    -r|-rrs) {
+        # Remove the RS at the end
+        REMOVE_RS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# RSEP is interpreted as the string verbatim without escape characters
+# unless it is read from the first argument. p will interpret \n
+if ! test -n "$RSEP"; then
+    IFS= read -rd '' RSEP < <(p "$1");typeset -p RSEP &>/dev/null
+fi
+
+IFS= read -rd '' RSEP < <(printf -- "%s" "$RSEP" | qne);typeset -p RSEP &>/dev/null
+IFS= read -rd '' rsep_escaped < <(printf -- "%s" "$RSEP" | esc "\\");typeset -p rsep_escaped &>/dev/null
+
+filter_cmd="$2"
+
+read -r -d '' awkscript <<'HEREDOC'
+{
+    # print NR
+    if (r == "" || NR == r) {
+        if (NR == 1) {
+            printf "%s", $0 |& cmd;
+        } else {
+            if (irs == "y") {
+                printf "%s", RS
+                printf "%s", $0 |& cmd;
+            } else {
+                printf "%s%s", RS, $0 |& cmd;
+            }
+        }
+
+        close(cmd, "to");
+
+        # This is needed because getline will not overwrite if nothing is read
+        $0 = "";
+
+        cmd |& getline $0;
+
+        fflush(cmd);
+        close(cmd);
+
+    } else {
+        if (NR > 1) {
+            print RS
+        }
+    }
+
+    print; system("");
+}
+HEREDOC
+
+f="$filter_cmd | sed -z \"s/${rsep_escaped}/__RS_PLACEHOLDER__/\""
+
+gawk -v irs="$IGNORE_RS" -v r="$SELECTED_RECORD_ID" -v RS="$RSEP" -v ORS="" -v cmd="$f" -v FS=" " -v OFS=" " "$awkscript" | sed -z "s/__RS_PLACEHOLDER__/$RSEP/g" | {
+    if test "$REMOVE_RS" = "y"; then
+        sed -z "s/$RSEP//g"
+    else
+        cat
+    fi
+}
