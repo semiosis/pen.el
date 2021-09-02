@@ -1495,8 +1495,15 @@ Function names are prefixed with pf- for easy searching"
                         ;; API
 
                         (model (ht-get yaml-ht "model"))
+
+                        ;; min-tokens and max-tokens include the prompt
                         (min-tokens (ht-get yaml-ht "min-tokens"))
                         (max-tokens (ht-get yaml-ht "max-tokens"))
+
+                        ;; min-generated-tokens and max-generated-tokens do not include the prompt
+                        (min-generated-tokens (ht-get yaml-ht "min-generated-tokens"))
+                        (max-generated-tokens (ht-get yaml-ht "max-generated-tokens"))
+
                         (collation-temperature-stepper (ht-get yaml-ht "collation-temperature-stepper"))
                         (engine-min-tokens (ht-get yaml-ht "engine-min-tokens"))
                         (engine-max-tokens (ht-get yaml-ht "engine-max-tokens"))
