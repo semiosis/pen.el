@@ -420,6 +420,17 @@ Reconstruct the entire yaml-ht for a different language."
       lst
     (-uniq lst)))
 
+
+(defvar pen-approximate-token-length-divisor 2.5)
+
+(defun pen-approximate-token-length (text)
+  (interactive (list (pen-selected-text)))
+  (let ((len
+         (round (+ (/ (length text) pen-approximate-token-length-divisor) 5))))
+    (if (interactive-p)
+        (message "%s %d" "approximate-length: " len)
+      len)))
+
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.
 ;; Expected variables:
@@ -833,7 +844,7 @@ Reconstruct the entire yaml-ht for a different language."
                   ;; Now that all values are loaded, re-template them so I can base values on other values
 
                   (approximate-prompt-token-length
-                   (round (/ (length final-prompt) 2.7)))
+                   (pen-approximate-token-length final-prompt))
 
                   ;; The max tokens may be templated in via variable or even a subprompt
                   (final-max-tokens
@@ -931,107 +942,107 @@ Reconstruct the entire yaml-ht for a different language."
                    (if no-gen
                        '("")
                      (pen-maybe-uniq final-no-uniq-results
-                      (flatten-once
-                       (cl-loop for rd in resultsdirs
-                                collect
-                                (if (sor rd)
-                                    (let* ((processed-results
-                                            (-flatten
-                                             (->> (glob (concat rd "/*"))
-                                               (mapcar 'e/cat)
-                                               (mapcar
-                                                (lambda (r)
-                                                  (if final-split-patterns
-                                                      (cl-loop
-                                                       for stpat in final-split-patterns collect
-                                                       (s-split stpat r))
-                                                    (list r)))))))
-                                           (processed-results
-                                            (->> processed-results
-                                              (mapcar (lambda (r)
-                                                        (cl-loop
-                                                         for stsq in final-stop-sequences do
-                                                         (let ((matchpos (pen-string-search (regexp-quote stsq) r)))
-                                                           (if matchpos
-                                                               (setq r (s-truncate matchpos r "")))))
-                                                        r))
-                                              (mapcar (lambda (r)
-                                                        (cl-loop
-                                                         for stpat in final-stop-patterns do
-                                                         (let ((matchpos (re-match-p stpat r)))
-                                                           (if matchpos
-                                                               (setq r (s-truncate matchpos r "")))))
-                                                        r))
-                                              (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
-                                                                      (pen-sn final-postprocessor r)
-                                                                    r)))
-                                              (mapcar (lambda (r) (if (and (variable-p 'prettify)
-                                                                           prettify
-                                                                           ,prettifier
-                                                                           (sor ,prettifier))
-                                                                      (pen-sn ,prettifier r)
-                                                                    r)))
+                                     (flatten-once
+                                      (cl-loop for rd in resultsdirs
+                                               collect
+                                               (if (sor rd)
+                                                   (let* ((processed-results
+                                                           (-flatten
+                                                            (->> (glob (concat rd "/*"))
+                                                              (mapcar 'e/cat)
+                                                              (mapcar
+                                                               (lambda (r)
+                                                                 (if final-split-patterns
+                                                                     (cl-loop
+                                                                      for stpat in final-split-patterns collect
+                                                                      (s-split stpat r))
+                                                                   (list r)))))))
+                                                          (processed-results
+                                                           (->> processed-results
+                                                             (mapcar (lambda (r)
+                                                                       (cl-loop
+                                                                        for stsq in final-stop-sequences do
+                                                                        (let ((matchpos (pen-string-search (regexp-quote stsq) r)))
+                                                                          (if matchpos
+                                                                              (setq r (s-truncate matchpos r "")))))
+                                                                       r))
+                                                             (mapcar (lambda (r)
+                                                                       (cl-loop
+                                                                        for stpat in final-stop-patterns do
+                                                                        (let ((matchpos (re-match-p stpat r)))
+                                                                          (if matchpos
+                                                                              (setq r (s-truncate matchpos r "")))))
+                                                                       r))
+                                                             (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
+                                                                                     (pen-sn final-postprocessor r)
+                                                                                   r)))
+                                                             (mapcar (lambda (r) (if (and (variable-p 'prettify)
+                                                                                          prettify
+                                                                                          ,prettifier
+                                                                                          (sor ,prettifier))
+                                                                                     (pen-sn ,prettifier r)
+                                                                                   r)))
 
-                                              (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
-                                              (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
+                                                             (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
+                                                             (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
 
-                                           (processed-results
-                                            (-flatten
-                                             (->> processed-results
-                                               (mapcar
-                                                (lambda (r)
-                                                  (if final-end-split-patterns
-                                                      (cl-loop
-                                                       for stpat in final-end-split-patterns collect
-                                                       (s-split stpat r))
-                                                    (list r)))))))
+                                                          (processed-results
+                                                           (-flatten
+                                                            (->> processed-results
+                                                              (mapcar
+                                                               (lambda (r)
+                                                                 (if final-end-split-patterns
+                                                                     (cl-loop
+                                                                      for stpat in final-end-split-patterns collect
+                                                                      (s-split stpat r))
+                                                                   (list r)))))))
 
-                                           (processed-results
-                                            (->> processed-results
-                                              (-filter
-                                               (lambda (r)
-                                                 (or
-                                                  final-engine-whitespace-support
-                                                  (not (sor trailing-whitespace))
-                                                  (not (pen-snq (pen-cmd "pen-str" "has-starting-specified-whitespace" trailing-whitespace) r)))))))
+                                                          (processed-results
+                                                           (->> processed-results
+                                                             (-filter
+                                                              (lambda (r)
+                                                                (or
+                                                                 final-engine-whitespace-support
+                                                                 (not (sor trailing-whitespace))
+                                                                 (not (pen-snq (pen-cmd "pen-str" "has-starting-specified-whitespace" trailing-whitespace) r)))))))
 
-                                           (processed-results
-                                            (->> processed-results
-                                              (-filter
-                                               (lambda (r)
-                                                 (if
-                                                     (not final-engine-whitespace-support)
-                                                     (concat trailing-whitespace r)
-                                                   r)))))
+                                                          (processed-results
+                                                           (->> processed-results
+                                                             (-filter
+                                                              (lambda (r)
+                                                                (if
+                                                                    (not final-engine-whitespace-support)
+                                                                    (concat trailing-whitespace r)
+                                                                  r)))))
 
-                                           ;; (processed-results
-                                           ;;  (mapcar
-                                           ;;   (lambda (r)
-                                           ;;     (if (and (not final-engine-whitespace-support)
-                                           ;;              (sor trailing-whitespace))
-                                           ;;         (s-remove-starting-specified-whitespace r trailing-whitespace)
-                                           ;;       ;; (pen-sn (pen-cmd "pen-str" "remove-starting-specified-whitespace" trailing-whitespace) r)
-                                           ;;       r))
-                                           ;;   processed-results))
+                                                          ;; (processed-results
+                                                          ;;  (mapcar
+                                                          ;;   (lambda (r)
+                                                          ;;     (if (and (not final-engine-whitespace-support)
+                                                          ;;              (sor trailing-whitespace))
+                                                          ;;         (s-remove-starting-specified-whitespace r trailing-whitespace)
+                                                          ;;       ;; (pen-sn (pen-cmd "pen-str" "remove-starting-specified-whitespace" trailing-whitespace) r)
+                                                          ;;       r))
+                                                          ;;   processed-results))
 
-                                           (processed-results
-                                            (->> processed-results
-                                              (-filter
-                                               (lambda (r)
-                                                 (or
-                                                  (not final-validator)
-                                                  ;; Theoretically, both a shell script and elisp should have access to prompt-length and result-length
-                                                  (let* ((al `((prompt-length . ,approximate-prompt-token-length)
-                                                               (gen-length . ,(round (/ (length r) 2.7)))))
-                                                         (valr (pen-expand-template-keyvals final-validator al)))
-                                                    (eval
-                                                     `(pen-let-keyvals
-                                                       ',al
-                                                       (if (re-match-p "^(" ,valr)
-                                                           (eval-string ,valr)
-                                                         (pen-snq ,valr ,r)))))))))))
-                                      processed-results)
-                                  (list (message "Try UPDATE=y or debugging"))))))))
+                                                          (processed-results
+                                                           (->> processed-results
+                                                             (-filter
+                                                              (lambda (r)
+                                                                (or
+                                                                 (not final-validator)
+                                                                 ;; Theoretically, both a shell script and elisp should have access to prompt-length and result-length
+                                                                 (let* ((al `((prompt-length . ,approximate-prompt-token-length)
+                                                                              (gen-length . ,(round (/ (length r) pen-approximate-token-length-divisor)))))
+                                                                        (valr (pen-expand-template-keyvals final-validator al)))
+                                                                   (eval
+                                                                    `(pen-let-keyvals
+                                                                      ',al
+                                                                      (if (re-match-p "^(" ,valr)
+                                                                          (eval-string ,valr)
+                                                                        (pen-snq ,valr ,r)))))))))))
+                                                     processed-results)
+                                                 (list (message "Try UPDATE=y or debugging"))))))))
 
                   (results
                    (if final-include-prompt
