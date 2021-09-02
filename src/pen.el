@@ -1505,8 +1505,11 @@ Function names are prefixed with pf- for easy searching"
                         (max-generated-tokens (ht-get yaml-ht "max-generated-tokens"))
 
                         (collation-temperature-stepper (ht-get yaml-ht "collation-temperature-stepper"))
+
+                        ;; engine-min-tokens and engine-max-tokens include the prompt
                         (engine-min-tokens (ht-get yaml-ht "engine-min-tokens"))
                         (engine-max-tokens (ht-get yaml-ht "engine-max-tokens"))
+
                         (top-p (ht-get yaml-ht "top-p"))
                         (top-k (ht-get yaml-ht "top-k"))
                         (temperature (ht-get yaml-ht "temperature"))
