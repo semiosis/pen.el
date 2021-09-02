@@ -1497,10 +1497,12 @@ Function names are prefixed with pf- for easy searching"
                         (model (ht-get yaml-ht "model"))
 
                         ;; min-tokens and max-tokens include the prompt
+                        ;; These values may also be inferred from max-generated-tokens + an approximation of the prompt size.
                         (min-tokens (ht-get yaml-ht "min-tokens"))
                         (max-tokens (ht-get yaml-ht "max-tokens"))
 
                         ;; min-generated-tokens and max-generated-tokens do not include the prompt
+                        ;; These values may also be inferred from max-tokens - an approximation of the prompt size.
                         (min-generated-tokens (ht-get yaml-ht "min-generated-tokens"))
                         (max-generated-tokens (ht-get yaml-ht "max-generated-tokens"))
 
