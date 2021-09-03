@@ -993,6 +993,10 @@ when s is a string, set the clipboard to s"
   (interactive (list (pen-thing-at-point-ask "word" t)))
   (message (lm-define term t (pen-topic t t :no-select-result t))))
 
+(defun pen-define-general-knowledge (term)
+  (interactive (list (pen-thing-at-point-ask "word" t)))
+  (message (lm-define term t "general knowledge")))
+
 (defun pen-extract-keywords ()
   (interactive)
 
