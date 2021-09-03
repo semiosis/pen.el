@@ -669,6 +669,12 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-n-completions
                    (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
 
+                  (final-max-generated-tokens
+                   (pen-str2num
+                    (expand-template
+                     (str (or (pen-var-value-maybe 'max-generated-tokens)
+                              ,max-generated-tokens)))))
+
                   (final-engine-max-generated-tokens
                    (pen-str2num
                     (expand-template
@@ -857,9 +863,20 @@ Reconstruct the entire yaml-ht for a different language."
 
                   ;; Ensure that the max tokens isn't more than the sum of the token length of the prompt + requested
                   (final-max-tokens
-                   (if (< final-engine-max-tokens (+ approximate-prompt-token-length final-max-tokens))
-                       (- final-engine-max-tokens approximate-prompt-token-length)
+                   (if (< final-engine-max-tokens final-max-tokens)
+                       final-engine-max-tokens
                      final-max-tokens))
+
+                  (final-max-generated-tokens
+                   (if (= 0 final-max-generated-tokens)
+                       (- final-max-tokens approximate-prompt-token-length)
+                     final-max-generated-tokens))
+
+                  (final-max-generated-tokens
+                   (pen-hard-bound
+                    final-max-generated-tokens
+                    0
+                    final-engine-max-generated-tokens))
 
                   (data
                    (let ((data
@@ -870,6 +887,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_ENGINE_MAX_TOKENS" . ,final-engine-max-tokens)
                             ("PEN_MIN_TOKENS" . ,final-min-tokens)
                             ("PEN_MAX_TOKENS" . ,final-max-tokens)
+                            ("PEN_MAX_GENERATED_TOKENS" . ,final-max-generated-tokens)
                             ("PEN_TEMPERATURE" . ,final-temperature)
                             ("PEN_MODE" . ,final-mode)
                             ("PEN_STOP_SEQUENCE" . ,(pen-encode-string final-stop-sequence))
@@ -1484,7 +1502,9 @@ Function names are prefixed with pf- for easy searching"
                                       1))
                         (engine-max-generated-tokens
                          (or (ht-get yaml-ht "engine-max-generated-tokens")
-                             256))
+                             4096
+                             ;; 256
+                             ))
                         (engine-max-n-completions
                          (or (ht-get yaml-ht "engine-max-n-completions")
                              10))
@@ -1503,6 +1523,7 @@ Function names are prefixed with pf- for easy searching"
 
                         ;; min-generated-tokens and max-generated-tokens do not include the prompt
                         ;; These values may also be inferred from max-tokens - an approximation of the prompt size.
+                        ;; The desired number of generated tokens
                         (min-generated-tokens (ht-get yaml-ht "min-generated-tokens"))
                         (max-generated-tokens (ht-get yaml-ht "max-generated-tokens"))
 
@@ -1842,7 +1863,7 @@ Function names are prefixed with pf- for easy searching"
    ;; if is-completion is specified and the engine (i.e. AIx) strips the starting whitespace
    ;; then pen will be hinted to add some whitespace.
    `(let ((is-completion t)
-          (max-tokens 200)
+          (max-generated-tokens 200)
           (stop-sequence "##long complete##")
           (stop-sequences '("##long complete##")))
       ,@body)))
@@ -1854,7 +1875,7 @@ Function names are prefixed with pf- for easy searching"
   ;; then pen will be hinted to add some whitespace.
   `(eval
     `(let ((is-completion t)
-           (max-tokens 5)
+           (max-generated-tokens 5)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
@@ -1865,7 +1886,7 @@ Function names are prefixed with pf- for easy searching"
   "This wraps around pen function calls to make them complete words"
   `(eval
     `(let ((is-completion t)
-           (max-tokens 5)
+           (max-generated-tokens 5)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "##long complete##"))
@@ -1880,7 +1901,7 @@ Function names are prefixed with pf- for easy searching"
   "This wraps around pen function calls to make them complete a single word"
   `(eval
     `(let ((is-completion t)
-           (max-tokens 1)
+           (max-generated-tokens 1)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
@@ -1891,7 +1912,7 @@ Function names are prefixed with pf- for easy searching"
   "This wraps around pen function calls to make them complete a singel word"
   `(eval
     `(let ((is-completion t)
-           (max-tokens 1)
+           (max-generated-tokens 1)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "##long complete##"))
@@ -1906,7 +1927,7 @@ Function names are prefixed with pf- for easy searching"
   "This wraps around pen function calls to make them complete long"
   `(eval
     `(let ((is-completion t)
-           (max-tokens 200)
+           (max-generated-tokens 200)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##")))
        ,',@body)))
@@ -1915,7 +1936,7 @@ Function names are prefixed with pf- for easy searching"
   "This wraps around pen function calls to make them complete long"
   `(eval
     `(let ((is-completion t)
-           (max-tokens 200)
+           (max-generated-tokens 200)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "##long complete##"))
@@ -1928,7 +1949,7 @@ Function names are prefixed with pf- for easy searching"
   "This wraps around pen function calls to make them complete line only"
   `(eval
     `(let ((is-completion t)
-           (max-tokens 100)
+           (max-generated-tokens 100)
            (n-completions 20)
            (n-collate 2)
            (stop-sequence "\n")
@@ -1939,7 +1960,7 @@ Function names are prefixed with pf- for easy searching"
   "This wraps around pen function calls to make them complete line only"
   `(eval
     `(let ((is-completion t)
-           (max-tokens 50)
+           (max-generated-tokens 50)
            (n-completions 2)
            (n-collate 1)
            (inject-gen-start "\n")
@@ -1953,7 +1974,7 @@ Function names are prefixed with pf- for easy searching"
   "This wraps around pen function calls to make them complete line only"
   `(eval
     `(let ((is-completion t)
-           (max-tokens 100)
+           (max-generated-tokens 100)
            (n-completions 20)
            (n-collate 2)
            (stop-sequence (or (and (variable-p 'stop-sequence)
