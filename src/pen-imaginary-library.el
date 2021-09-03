@@ -39,5 +39,13 @@
 (idefun double (a)
         "this function doubles its input")
 
+(defun ilist (n type-of-thing)
+  (interactive (list (read-string-hist "ilist n: ")
+                     (read-string-hist "ilist type-of-thing: ")))
+  (pen-single-generation (pf-list-of/2 (str n) (str type-of-thing) :no-select-result t)))
+
+(defun test-ilist ()
+  (interactive)
+  (etv (pps (ilist 10 "tennis players"))))
 
 (provide 'imaginary-library)
