@@ -6,12 +6,18 @@
 ;; ilambda
 ;; ifilter
 ;; itransform
+;; imacro
+
+;; idefun vs imacro
+
+;; imacro should take
 
 ;; i macro-expand?
 
 ;; Well, I could inject a macro with a value which is actually sent to the LM?
 
 ;; Make a legit imaginary programming library for emacs
+
 
 ;; Do an (ignore-errors (eval-string result)) on the result
 (defmacro ieval (&rest body)
