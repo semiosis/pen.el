@@ -225,7 +225,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("vexate" :call pf-complicated-explanation-of-how-to-x/1 :if (pen-selected-p))
          ("correct English spelling and grammar" :call pf-correct-english-spelling-and-grammar/1 :if (pen-selected-p))
          ("define term" :call pen-define :if (pen-selected-p))
-         ("define term (general knowledge)" :call pen-define-general-knowledge :if (pen-selected-p))
          ("bullet points -> first-hand account" :call pf-meeting-bullet-points-to-summary/1 :if (pen-selected-p)))
         ("code"
          ("Cancel" :call identity-command)
@@ -241,6 +240,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("> word/term" :call rcm-term :if (pen-word-clickable))
         ("keywords/classify" :call pen-extract-keywords)
         ("define for glossary" :call pen-add-to-glossary)
+        ("define term (general knowledge)" :call pen-define-general-knowledge)
         ("detect language here" :call pen-detect-language-context)
         ("start ii" :call pen-start-imaginary-interpreter)))
 
