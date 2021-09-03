@@ -62,4 +62,4 @@
    (defun double-number (x)
      (x * x))))
 
-(provide 'imaginary-library)
+(provide 'ilambda)
