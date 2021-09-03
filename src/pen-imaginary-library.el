@@ -1,3 +1,12 @@
+;; Basic imaginary programming functions
+;; Add these to the thesis
+
+;; idefun
+;; ieval
+;; ilambda
+;; ifilter
+;; itransform
+
 (defmacro ieval (&rest body)
   "imaginary eval")
 
