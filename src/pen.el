@@ -1766,8 +1766,6 @@ Function names are prefixed with pf- for easy searching"
       ;; (filter-selected-region-through-function (intern f))
       )))
 
-
-
 (defun pen-run-prompt-function ()
   (interactive)
   (let* ((pen-sh-update
