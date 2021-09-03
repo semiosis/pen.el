@@ -995,7 +995,9 @@ when s is a string, set the clipboard to s"
 
 (defun pen-define-general-knowledge (term)
   (interactive (list (pen-thing-at-point-ask "word" t)))
-  (message (lm-define term t "general knowledge")))
+  (pen-add-to-glossary term nil nil "general knowledge")
+  ;; (message (lm-define term t "general knowledge"))
+  )
 
 (defun pen-extract-keywords ()
   (interactive)

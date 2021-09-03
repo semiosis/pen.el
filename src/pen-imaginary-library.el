@@ -18,7 +18,6 @@
 
 ;; Make a legit imaginary programming library for emacs
 
-
 ;; Do an (ignore-errors (eval-string result)) on the result
 (defmacro ieval (&rest body)
   "imaginary eval")

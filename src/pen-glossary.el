@@ -12,17 +12,21 @@
     (if glist
         (s-lines glist))))
 
-(defun pen-add-to-glossary (term &optional take-first definition)
+(defun pen-add-to-glossary (term &optional take-first definition topic)
   "C-u will allow you to add to any glossary file"
   (interactive (let ((s (rx/chomp (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-thing-at-point-ask)))))
                  (if (not (sor s))
                      (setq s (read-string-hist "glossary term to add: ")))
                  (list s)))
+
+  (if (not topic)
+      (setq topic (pen-ask (pen-topic t) "topic: ")))
+
   (deactivate-mark)
   (let ((NLG))
     (if (not definition)
         (progn
-          (setq definition (lm-define term t (pen-ask (pen-topic t) "topic: ")))
+          (setq definition (lm-define term t topic))
           (if definition
               (setq NLG t))))
 
