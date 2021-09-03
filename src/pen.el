@@ -849,12 +849,12 @@ Reconstruct the entire yaml-ht for a different language."
 
                   ;; Now that all values are loaded, re-template them so I can base values on other values
 
-                  (approximate-prompt-token-length
+                  (pen-approximate-prompt-token-length
                    (pen-approximate-token-length final-prompt))
 
                   ;; The max tokens may be templated in via variable or even a subprompt
                   (final-max-tokens
-                   (let* ((prompt-length approximate-prompt-token-length))
+                   (let* ((prompt-length pen-approximate-prompt-token-length))
                      ;; pen-str2num
                      (eval-string (expand-template
                                    (str (or (pen-var-value-maybe 'max-tokens)
@@ -869,7 +869,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-max-generated-tokens
                    (if (= 0 final-max-generated-tokens)
-                       (- final-max-tokens approximate-prompt-token-length)
+                       (- final-max-tokens pen-approximate-prompt-token-length)
                      final-max-generated-tokens))
 
                   (final-max-generated-tokens
@@ -883,6 +883,7 @@ Reconstruct the entire yaml-ht for a different language."
                           `(("PEN_PROMPT" . ,(pen-encode-string final-prompt))
                             ("PEN_LM_COMMAND" . ,final-lm-command)
                             ("PEN_MODEL" . ,final-model)
+                            ("PEN_APPROXIMATE_PROMPT_LENGTH" . ,pen-approximate-prompt-token-length)
                             ("PEN_ENGINE_MIN_TOKENS" . ,final-engine-min-tokens)
                             ("PEN_ENGINE_MAX_TOKENS" . ,final-engine-max-tokens)
                             ("PEN_MIN_TOKENS" . ,final-min-tokens)
@@ -1050,7 +1051,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                                 (or
                                                                  (not final-validator)
                                                                  ;; Theoretically, both a shell script and elisp should have access to prompt-length and result-length
-                                                                 (let* ((al `((prompt-length . ,approximate-prompt-token-length)
+                                                                 (let* ((al `((prompt-length . ,pen-approximate-prompt-token-length)
                                                                               (gen-length . ,(round (/ (length r) pen-approximate-token-length-divisor)))))
                                                                         (valr (pen-expand-template-keyvals final-validator al)))
                                                                    (eval
