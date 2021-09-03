@@ -423,12 +423,18 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defvar pen-default-approximate-token-length-divisor 2.5)
 
+(defun pen-num (val)
+  (cond
+   ((stringp val)
+    (string-to-number val))
+   (t val)))
+
 (defun pen-approximate-token-length (text &optional divisor)
   (interactive (list (pen-selected-text)))
   (let ((len
          (round (+ (/ (length text)
                       (or
-                       divisor
+                       (pen-num divisor)
                        pen-default-approximate-token-length-divisor)) 5))))
     (if (interactive-p)
         (message "%s %d" "approximate-length: " len)
@@ -753,9 +759,10 @@ Reconstruct the entire yaml-ht for a different language."
                              ,model))))
 
                   (final-approximate-token-char-length
-                   (expand-template
-                    (str (or (pen-var-value-maybe 'approximate-token-char-length)
-                             ,approximate-token-char-length))))
+                   (pen-num
+                    (expand-template
+                     (str (or (pen-var-value-maybe 'approximate-token-char-length)
+                              ,approximate-token-char-length)))))
 
                   (final-top-p
                    (expand-template
@@ -860,7 +867,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (pen-approximate-prompt-token-length
                    (pen-approximate-token-length
                     final-prompt
-                    final-approximate-token-char-length))
+                    (pen-num final-approximate-token-char-length)))
 
                   ;; The max tokens may be templated in via variable or even a subprompt
                   (final-max-tokens
@@ -1064,7 +1071,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                                  (let* ((al `((prompt-length . ,pen-approximate-prompt-token-length)
                                                                               (gen-length . ,(round (/ (length r)
                                                                                                        (or
-                                                                                                        final-approximate-token-char-length
+                                                                                                        (pen-num final-approximate-token-char-length)
                                                                                                         pen-default-approximate-token-length-divisor))))))
                                                                         (valr (pen-expand-template-keyvals final-validator al)))
                                                                    (eval
