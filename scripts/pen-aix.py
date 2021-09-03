@@ -15,13 +15,16 @@ def hard_bound(x, lower_lim, upper_lim):
 if __name__ == "__main__":
     # Get your API Key at apps.aixsolutionsgroup.com
 
-    max_tokens = os.environ.get("PEN_MAX_TOKENS") and int(os.environ.get("PEN_MAX_TOKENS"))
     min_tokens = os.environ.get("PEN_MIN_TOKENS") and int(os.environ.get("PEN_MIN_TOKENS"))
-    engine_max_tokens = os.environ.get("PEN_ENGINE_MAX_TOKENS") and int(os.environ.get("PEN_ENGINE_MAX_TOKENS"))
+    max_tokens = os.environ.get("PEN_MAX_TOKENS") and int(os.environ.get("PEN_MAX_TOKENS"))
+    max_generated_tokens = os.environ.get("PEN_MAX_GENERATED_TOKENS") and int(os.environ.get("PEN_MAX_GENERATED_TOKENS"))
     engine_min_tokens = os.environ.get("PEN_ENGINE_MIN_TOKENS") and int(os.environ.get("PEN_ENGINE_MIN_TOKENS"))
+    engine_max_tokens = os.environ.get("PEN_ENGINE_MAX_TOKENS") and int(os.environ.get("PEN_ENGINE_MAX_TOKENS"))
+    engine_max_generated_tokens = os.environ.get("PEN_ENGINE_MAX_GENERATED_TOKENS") and int(os.environ.get("PEN_ENGINE_MAX_GENERATED_TOKENS"))
 
     min_tokens = hard_bound(min_tokens, engine_min_tokens, engine_max_tokens)
     max_tokens = hard_bound(max_tokens, engine_min_tokens, engine_max_tokens)
+    max_generated_tokens = hard_bound(max_generated_tokens, 0, engine_max_generated_tokens)
 
     #  vim +/"top_k: int" "$MYGIT/AIx-Solutions/aix-gpt-api/aixapi/resource.py"
 
@@ -41,12 +44,13 @@ if __name__ == "__main__":
     if model == "GPT-J-6B":
         model = None
 
+    #  token_min_length=min_tokens,
+
     print(
         str(
             aix_resource.compose(
                 os.environ.get("PEN_PROMPT"),
-                token_min_length=min_tokens,
-                token_max_length = max_tokens,
+                token_max_length = max_generated_tokens,
                 top_p = final_top_p,
                 top_k = final_top_k,
                 temperature = final_temperature,

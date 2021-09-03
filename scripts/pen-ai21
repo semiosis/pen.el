@@ -17,6 +17,7 @@ export PEN_PROMPT
 export PEN_MODEL
 export PEN_MIN_TOKENS
 export PEN_MAX_TOKENS
+export PEN_MAX_GENERATED_TOKENS
 export PEN_ENGINE_MIN_TOKENS
 export PEN_ENGINE_MAX_TOKENS
 export PEN_ENGINE_MAX_GENERATED_TOKENS
@@ -42,13 +43,15 @@ pen_ai21() {
     # cmd-nice-jq is very slow. Find a faster, reliable solution.
     # Or use python
 
+    # \"maxTokens\": $PEN_ENGINE_MAX_GENERATED_TOKENS,
+
     curl "https://api.ai21.com/studio/v1/$PEN_MODEL/complete" \
          -H 'Content-Type: application/json' \
          -H "Authorization: Bearer $AI21_API_KEY" \
          -X POST \
          -d "{\"prompt\": $(cmd-nice-jq "$PEN_PROMPT"),
               \"numResults\": $PEN_N_COMPLETIONS,
-              \"maxTokens\": $PEN_ENGINE_MAX_GENERATED_TOKENS,
+              \"maxTokens\": $PEN_MAX_GENERATED_TOKENS,
               \"stopSequences\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
               \"topKReturn\": $PEN_TOP_K,
               \"temperature\": $PEN_TEMPERATURE

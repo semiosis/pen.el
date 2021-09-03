@@ -94,6 +94,7 @@ if test "$PEN_DEBUG" = "y"; then
     echo "PEN_FLAGS:\"$PEN_FLAGS\""
     echo "PEN_MIN_TOKENS:\"$PEN_MIN_TOKENS\""
     echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
+    echo "PEN_MAX_GENERATED_TOKENS:\"$PEN_MAX_GENERATED_TOKENS\""
     echo "PEN_ENGINE_MIN_TOKENS:\"$PEN_ENGINE_MIN_TOKENS\""
     echo "PEN_ENGINE_MAX_TOKENS:\"$PEN_ENGINE_MAX_TOKENS\""
     echo "PEN_ENGINE_MAX_GENERATED_TOKENS:\"$PEN_ENGINE_MAX_GENERATED_TOKENS\""
@@ -132,6 +133,7 @@ export PEN_MODEL
 export PEN_FLAGS
 export PEN_MIN_TOKENS
 export PEN_MAX_TOKENS
+export PEN_MAX_GENERATED_TOKENS
 export PEN_ENGINE_MIN_TOKENS
 export PEN_ENGINE_MAX_TOKENS
 export PEN_TEMPERATURE
@@ -178,7 +180,7 @@ case "$sn" in
             completions.create \
             -e "$PEN_MODEL" \
             -t "$PEN_TEMPERATURE" \
-            -M "$PEN_MAX_TOKENS" \
+            -M "$PEN_MAX_GENERATED_TOKENS" \
             -n "$PEN_N_COMPLETIONS" \
             --stop "$PEN_STOP_SEQUENCE" \
             -p "$PEN_PROMPT" > "$tf_response"
