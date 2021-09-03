@@ -421,12 +421,15 @@ Reconstruct the entire yaml-ht for a different language."
     (-uniq lst)))
 
 
-(defvar pen-approximate-token-length-divisor 2.5)
+(defvar pen-default-approximate-token-length-divisor 2.5)
 
-(defun pen-approximate-token-length (text)
+(defun pen-approximate-token-length (text &optional divisor)
   (interactive (list (pen-selected-text)))
   (let ((len
-         (round (+ (/ (length text) pen-approximate-token-length-divisor) 5))))
+         (round (+ (/ (length text)
+                      (or
+                       divisor
+                       pen-default-approximate-token-length-divisor)) 5))))
     (if (interactive-p)
         (message "%s %d" "approximate-length: " len)
       len)))
@@ -749,6 +752,11 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'model)
                              ,model))))
 
+                  (final-approximate-token-char-length
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'approximate-token-char-length)
+                             ,approximate-token-char-length))))
+
                   (final-top-p
                    (expand-template
                     (str (or (pen-var-value-maybe 'top-p)
@@ -850,7 +858,9 @@ Reconstruct the entire yaml-ht for a different language."
                   ;; Now that all values are loaded, re-template them so I can base values on other values
 
                   (pen-approximate-prompt-token-length
-                   (pen-approximate-token-length final-prompt))
+                   (pen-approximate-token-length
+                    final-prompt
+                    final-approximate-token-char-length))
 
                   ;; The max tokens may be templated in via variable or even a subprompt
                   (final-max-tokens
@@ -1052,7 +1062,10 @@ Reconstruct the entire yaml-ht for a different language."
                                                                  (not final-validator)
                                                                  ;; Theoretically, both a shell script and elisp should have access to prompt-length and result-length
                                                                  (let* ((al `((prompt-length . ,pen-approximate-prompt-token-length)
-                                                                              (gen-length . ,(round (/ (length r) pen-approximate-token-length-divisor)))))
+                                                                              (gen-length . ,(round (/ (length r)
+                                                                                                       (or
+                                                                                                        final-approximate-token-char-length
+                                                                                                        pen-default-approximate-token-length-divisor))))))
                                                                         (valr (pen-expand-template-keyvals final-validator al)))
                                                                    (eval
                                                                     `(pen-let-keyvals
@@ -1435,6 +1448,10 @@ Function names are prefixed with pf- for easy searching"
                                    `(("language" . ,language)))
                                 task))
                         (engine-whitespace-support (ht-get yaml-ht "engine-whitespace-support"))
+                        (approximate-token-char-length
+                         (or
+                          (ht-get yaml-ht "approximate-token-char-length")
+                          2.5))
 
                         (title (ht-get yaml-ht "title"))
                         (title (sor title
