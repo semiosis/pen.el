@@ -47,4 +47,19 @@
   (interactive)
   (etv (pps (ilist 10 "tennis players"))))
 
+(defmacro ieval (expression &optional code)
+  (let* ((code-str (pps code))
+         (result (car
+                  (pen-single-generation
+                   (pf-imagine-evaluating-emacs-lisp/2
+                    code-str expression
+                    :no-select-result t :select-only-match t)))))
+    (eval-string result)))
+
+(defun test-ieval ()
+  (ieval
+   (double-number 5)
+   (defun double-number (x)
+     (x * x))))
+
 (provide 'imaginary-library)
