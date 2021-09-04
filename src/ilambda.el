@@ -71,8 +71,15 @@
     (list a (eval a)))
   args))
 
-(defmacro idefun (name-sym args code-or-task &optional task-or-code)
+
+;; TODO if name-sym is a string, make it the task and derive the sym 
+(defmacro idefun (name-sym args &optional code-or-task task-or-code)
   "Define an imaginary function"
+  (cond
+   ((and (stringp name-sym)
+         (not code-or-task))
+    (setq code-or-task
+          (pen-snc "unsnakecase" name-sym))))
   `(defalias ',name-sym
      (function ,(eval
                  `(ilambda ,args ,code-or-task ,task-or-code)))))
