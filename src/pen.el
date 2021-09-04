@@ -1012,10 +1012,12 @@ Reconstruct the entire yaml-ht for a different language."
                                                              (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
                                                                                      (pen-sn final-postprocessor r)
                                                                                    r)))
-                                                             (mapcar (lambda (r) (if (and (variable-p 'prettify)
-                                                                                          prettify
-                                                                                          ,prettifier
-                                                                                          (sor ,prettifier))
+                                                             (mapcar (lambda (r) (if (and
+                                                                                      (or is-interactive
+                                                                                          (and (variable-p 'prettify)
+                                                                                               prettify))
+                                                                                      ,prettifier
+                                                                                      (sor ,prettifier))
                                                                                      (pen-sn ,prettifier r)
                                                                                    r)))
 

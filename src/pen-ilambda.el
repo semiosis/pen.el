@@ -65,13 +65,39 @@
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
-;; Use a comment for the task before the call to the lambda.
-;; Return an evalled string.
-(defmacro ilambda/code (args code)
-  `(ieval
-    (double-number 5)
-    (defun double-number ,args
-      (x * x))))
+(comment
+ (mapcar
+  (lambda (a)
+    (list a (eval a)))
+  args))
+
+(defmacro ilambda/code (args code &optional task)
+  `(lambda ,args
+     `(let ((arglist
+             (mapcar
+              (lambda (a)
+                (list a (eval a)))
+              args)))
+        (ieval
+         (defun test ()
+           (let ,arglist
+             ,code))
+         (defun double-number ,args
+           (x * x))))))
+(comment
+ (defmacro ilambda/code (args code &optional task)
+   `(lambda ,args
+      `(let ((arglist
+              (mapcar
+               (lambda (a)
+                 (list a (eval a)))
+               args)))
+         (ieval
+          (defun test ()
+            (let ,arglist
+              ,code))
+          (defun double-number ,args
+            (x * x)))))))
 
 ;; Use a comment for the task before the call to the lambda.
 ;; Return an evalled string.
@@ -81,11 +107,11 @@
     (defun double-number ,args
       (x * x))))
 
-(defmacro ilambda (args code-or-task)
+(defmacro ilambda (args code-or-task &optional task)
   "define ilambda"
   ((cond
     ((stringp code-or-task)
-     `(ilambda/code ,args ,code-or-task))
+     `(ilambda/task ,args ,code-or-task ,task))
     ((listp code-or-task)
      `(ilambda/code ,args ,code-or-task)))))
 
