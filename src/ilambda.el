@@ -170,8 +170,9 @@
                                   (+ x 5))
                '(8))))
 
-(idefun double (a)
-        "this function doubles its input")
+(comment
+ (idefun double (a)
+         "this function doubles its input"))
 
 (defun ilist (n type-of-thing)
   (interactive (list (read-string-hist "ilist n: ")
