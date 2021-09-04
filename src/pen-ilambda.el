@@ -141,13 +141,14 @@
            (* x x)))))
     '(4))))
 
-(defun ilambda/code-test ()
+(defun ilambda/code-test-1 ()
   (interactive)
-  (etv (ilambda/code () (+ 5 5))))
+  (etv (ilambda/task (x) "double it")))
 
 (defun ilambda/code-test-2 ()
   (interactive)
-  (etv (mapcar (ilambda/code (x) (+ x 5))
+  (etv (mapcar (ilambda/code (x)
+                             (+ x 5))
                '(4))))
 
 (defun ilambda/code-test-3 ()
