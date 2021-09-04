@@ -71,39 +71,50 @@
     (list a (eval a)))
   args))
 
-(defmacro ilambda (args code-or-task &optional task)
+(defmacro ilambda (args code-or-task &optional task-or-code)
   "define ilambda"
-  ((cond
-    ((stringp code-or-task)
-     `(ilambda/task ,args ,code-or-task ,task))
-    ((listp code-or-task)
-     `(ilambda/code ,args ,code-or-task)))))
+  (let ((task (if (stringp code-or-task)
+                  code-or-task
+                task-or-code))
+        (code (if (listp code-or-task)
+                  code-or-task
+                task-or-code)))
+    (cond
+     ((and code
+           (sor task))
+      `(ilambda/task-code ,args ,task ,code))
+     ((sor task)
+      `(ilambda/task ,args ,task))
+     ((listp code-or-task)
+      `(ilambda/code ,args ,code)))))
 
 (defalias 'iλ 'ilambda)
 
 (defmacro ilambda/task (args task)
-  `(lambda ,args
-     (let ((vals (mapcar 'eval ',args)))
-       (eval
-        ;; imagined by an LM
-        `(ieval
-          ;; An function and a function call
-          (main ,@vals)
-          (defun main (,',@args)
-            ,,task
-            ,',code))))))
+  (let* ((slug (slugify (eval task)))
+         (fsym (intern slug)))
+    `(lambda ,args
+       (let ((vals (mapcar 'eval ',args)))
+         (eval
+          ;; imagined by an LM
+          `(ieval
+            ;; An function and a function call
+            (,',fsym ,@vals)
+            ,,(concat ";; " task)))))))
 
 (defmacro ilambda/task-code (args task code)
-  `(lambda ,args
-     (let ((vals (mapcar 'eval ',args)))
-       (eval
-        ;; imagined by an LM
-        `(ieval
-          ;; An function and a function call
-          (main ,@vals)
-          (defun main ,',args
-            ,,task
-            ,',code))))))
+  (let* ((slug (slugify (eval task)))
+         (fsym (intern slug)))
+    `(lambda ,args
+       (let ((vals (mapcar 'eval ',args)))
+         (eval
+          ;; imagined by an LM
+          `(ieval
+            ;; An function and a function call
+            (,',fsym ,@vals)
+            (defun ,',fsym ,',args
+              ,,task
+              ,',code)))))))
 
 (defmacro ilambda/code (args code)
   `(lambda ,args
@@ -143,7 +154,8 @@
 
 (defun ilambda/code-test-1 ()
   (interactive)
-  (etv (ilambda/task (x) "double it")))
+  (etv (mapcar (ilambda/task (x) "double it")
+               '(12 4))))
 
 (defun ilambda/code-test-2 ()
   (interactive)
@@ -170,12 +182,12 @@
   (interactive)
   (etv (pps (ilist 10 "tennis players"))))
 
-(defmacro ieval (expression &optional code)
-  "Imaginarily evaluate the expression, given the code and return a real result."
+(defmacro ieval (expression &optional code-sexp-or-raw)
+  "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
   (let* ((code-str
           (cond
-           ((stringp code) code)
-           ((listp code) (pps code))))
+           ((stringp code-sexp-or-raw) code-sexp-or-raw)
+           ((listp code-sexp-or-raw) (pps code-sexp-or-raw))))
          (expression-str
           (cond
            ((stringp expression) expression)
