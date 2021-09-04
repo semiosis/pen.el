@@ -65,6 +65,32 @@
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
+;; Use a comment for the task before the call to the lambda.
+;; Return an evalled string.
+(defmacro ilambda/code (args code)
+  `(ieval
+    (double-number 5)
+    (defun double-number ,args
+      (x * x))))
+
+;; Use a comment for the task before the call to the lambda.
+;; Return an evalled string.
+(defmacro ilambda/task (args task)
+  `(ieval
+    (double-number 5)
+    (defun double-number ,args
+      (x * x))))
+
+(defmacro ilambda (args code-or-task)
+  "define ilambda"
+  ((cond
+    ((stringp code-or-task)
+     `(ilambda/code ,args ,code-or-task))
+    ((listp code-or-task)
+     `(ilambda/code ,args ,code-or-task)))))
+
+(defalias 'iλ 'ilambda)
+
 (idefun double (a)
         "this function doubles its input")
 
@@ -78,11 +104,19 @@
   (etv (pps (ilist 10 "tennis players"))))
 
 (defmacro ieval (expression &optional code)
-  (let* ((code-str (pps code))
+  "Imaginarily evaluate the expression, given the code and return a real result."
+  (let* ((code-str
+          (cond
+           ((stringp code) code)
+           ((listp code) (pps code))))
+         (expression-str
+          (cond
+           ((stringp expression) expression)
+           ((listp expression) (pp-oneline expression))))
          (result (car
                   (pen-single-generation
                    (pf-imagine-evaluating-emacs-lisp/2
-                    code-str expression
+                    code-str expression-str
                     :no-select-result t :select-only-match t)))))
     (ignore-errors
       (eval-string result))))
