@@ -89,9 +89,9 @@
         `(ieval
           ;; An function and a function call
           (main ,@vals)
-          (defun main (,,@args)
+          (defun main (,',@args)
             ,,task
-            ,,code))))))
+            ,',code))))))
 
 (defmacro ilambda/task-code (args task code)
   `(lambda ,args
@@ -101,9 +101,9 @@
         `(ieval
           ;; An function and a function call
           (main ,@vals)
-          (defun main (,,@args)
+          (defun main ,',args
             ,,task
-            ,,code))))))
+            ,',code))))))
 
 (defmacro ilambda/code (args code)
   `(lambda ,args
@@ -113,8 +113,8 @@
         `(ieval
           ;; An function and a function call
           (main ,@vals)
-          (defun main (,,@args)
-            ,,code))))))
+          (defun main (,',@args)
+            ,',code))))))
 
 ;; Create the lambda to be generated first, and then create ilambda
 (comment
@@ -150,10 +150,12 @@
   (etv (mapcar (ilambda/code (x) (+ x 5))
                '(4))))
 
-(defun ilambda/code-test-2 ()
+(defun ilambda/code-test-3 ()
   (interactive)
-  (etv (mapcar (ilambda/code (x) (+ x 5))
-               '(4))))
+  (etv (mapcar (ilambda/task-code (x)
+                                  "add five"
+                                  (+ x 5))
+               '(8))))
 
 (idefun double (a)
         "this function doubles its input")
