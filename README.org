@@ -52,6 +52,8 @@ It's completely free, libre and open-source.
 ** Information
 - Supported language models :: - [[./docs/compatibility-and-interoperatbility.org]]
 
+- iλ (imaginary programming) :: https://mullikine.github.io/posts/designing-an-imaginary-programming-ip-library-for-emacs/
+
 - Thesis :: https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
 
 - Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
