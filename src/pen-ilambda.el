@@ -84,6 +84,15 @@
              ,code))
          (defun double-number ,args
            (x * x))))))
+
+(defun ilambda/code-test ()
+  (interactive)
+  (etv (ilambda/code () (+ 5 5))))
+
+(defun ilambda/code-test-2 ()
+  (interactive)
+  (etv (ilambda/code (x) (+ x 5))))
+
 (comment
  (defmacro ilambda/code (args code &optional task)
    `(lambda ,args
