@@ -79,19 +79,19 @@
          (not code-or-task))
     (progn
       (setq code-or-task name-sym)
-      (setq name-sym (slugify name-sym))))
+      (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym)))))))
    ((and (symbolp name-sym)
          (not code-or-task))
     (setq code-or-task (pen-snc "unsnakecase" (sym2str name-sym)))))
   `(defalias ',name-sym
      (function ,(eval
-                 `(ilambda ,args ,code-or-task ,task-or-code)))))
+                 `(ilambda ,args ,code-or-task ,task-or-code ,name-sym)))))
 
 (comment
  (idefun idoubleit (x)
          "double it"))
 
-(defmacro ilambda (args code-or-task &optional task-or-code)
+(defmacro ilambda (args code-or-task &optional task-or-code name-sym)
   "Define an imaginary lambda (iλ)"
   (let ((task (if (stringp code-or-task)
                   code-or-task
@@ -102,17 +102,18 @@
     (cond
      ((and code
            (sor task))
-      `(ilambda/task-code ,args ,task ,code))
+      `(ilambda/task-code ,args ,task ,code ,name-sym))
      ((sor task)
-      `(ilambda/task ,args ,task))
+      `(ilambda/task ,args ,task ,name-sym))
      ((listp code-or-task)
-      `(ilambda/code ,args ,code)))))
+      `(ilambda/code ,args ,code ,name-sym)))))
 
 (defalias 'iλ 'ilambda)
 
-(defmacro ilambda/task (args task)
-  (let* ((slug (slugify (eval task)))
-         (fsym (intern slug)))
+(defmacro ilambda/task (args task &optional name-sym)
+  (let* ((slug (s-replace-regexp "-$" "" (slugify (eval task))))
+         (fsym (or name-sym
+                   (intern slug))))
     `(lambda ,args
        (let ((vals (mapcar 'eval ',args)))
          (eval
@@ -121,6 +122,7 @@
             ;; An function and a function call
             (,',fsym ,@vals)
             ,,(concat ";; " task)))))))
+(defalias 'iλ/task 'ilambda/task)
 
 (comment
  (ilambda (n) "generate fibonacci sequence"))
@@ -139,9 +141,11 @@
             (+ 10 (car vals))))
         5)))
 
-(defmacro ilambda/task-code (args task code)
-  (let* ((slug (slugify (eval task)))
-         (fsym (intern slug)))
+(defmacro ilambda/task-code (args task code &optional name-sym)
+  (let* ((slug (s-replace-regexp "-$" "" (slugify (eval task))))
+         (fsym (or
+                name-sym
+                (intern slug))))
     `(lambda ,args
        (let ((vals (mapcar 'eval ',args)))
          (eval
@@ -152,17 +156,21 @@
             (defun ,',fsym ,',args
               ,,task
               ,',code)))))))
+(defalias 'iλ/task-code 'ilambda/task-code)
 
-(defmacro ilambda/code (args code)
-  `(lambda ,args
-     (let ((vals (mapcar 'eval ',args)))
-       (eval
-        ;; imagined by an LM
-        `(ieval
-          ;; An function and a function call
-          (main ,@vals)
-          (defun main (,',@args)
-            ,',code))))))
+(defmacro ilambda/code (args code &optional name-sym)
+  (let ((fsym (or name-sym
+                  'main)))
+    `(lambda ,args
+       (let ((vals (mapcar 'eval ',args)))
+         (eval
+          ;; imagined by an LM
+          `(ieval
+            ;; An function and a function call
+            (,',fsym ,@vals)
+            (defun ,',fsym (,',@args)
+              ,',code)))))))
+(defalias 'iλ/code 'ilambda/code)
 
 ;; Create the lambda to be generated first, and then create ilambda
 (comment
