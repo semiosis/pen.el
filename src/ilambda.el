@@ -77,8 +77,9 @@
      (function ,(eval
                  `(ilambda ,args ,code-or-task ,task-or-code)))))
 
-(idefun idoubleit (x)
-        "double it")
+(comment
+ (idefun idoubleit (x)
+         "double it"))
 
 (defmacro ilambda (args code-or-task &optional task-or-code)
   "Define an imaginary lambda (iλ)"
