@@ -205,7 +205,7 @@
                     code-str expression-str
                     :no-select-result t :select-only-match t)))))
     (ignore-errors
-      (eval-string result))))
+      (eval-string (concat "''" result)))))
 
 (defun test-ieval ()
   (ieval
