@@ -71,51 +71,6 @@
     (list a (eval a)))
   args))
 
-(defmacro ilambda/code (args code &optional task)
-  `(lambda ,args
-     `(let ((arglist
-             (mapcar
-              (lambda (a)
-                (list a (eval a)))
-              args)))
-        (ieval
-         (defun test ()
-           (let ,arglist
-             ,code))
-         (defun double-number ,args
-           (x * x))))))
-
-(defun ilambda/code-test ()
-  (interactive)
-  (etv (ilambda/code () (+ 5 5))))
-
-(defun ilambda/code-test-2 ()
-  (interactive)
-  (etv (ilambda/code (x) (+ x 5))))
-
-(comment
- (defmacro ilambda/code (args code &optional task)
-   `(lambda ,args
-      `(let ((arglist
-              (mapcar
-               (lambda (a)
-                 (list a (eval a)))
-               args)))
-         (ieval
-          (defun test ()
-            (let ,arglist
-              ,code))
-          (defun double-number ,args
-            (x * x)))))))
-
-;; Use a comment for the task before the call to the lambda.
-;; Return an evalled string.
-(defmacro ilambda/task (args task)
-  `(ieval
-    (double-number 5)
-    (defun double-number ,args
-      (x * x))))
-
 (defmacro ilambda (args code-or-task &optional task)
   "define ilambda"
   ((cond
@@ -125,6 +80,80 @@
      `(ilambda/code ,args ,code-or-task)))))
 
 (defalias 'iλ 'ilambda)
+
+(defmacro ilambda/task (args task)
+  `(lambda ,args
+     (let ((vals (mapcar 'eval ',args)))
+       (eval
+        ;; imagined by an LM
+        `(ieval
+          ;; An function and a function call
+          (main ,@vals)
+          (defun main (,,@args)
+            ,,task
+            ,,code))))))
+
+(defmacro ilambda/task-code (args task code)
+  `(lambda ,args
+     (let ((vals (mapcar 'eval ',args)))
+       (eval
+        ;; imagined by an LM
+        `(ieval
+          ;; An function and a function call
+          (main ,@vals)
+          (defun main (,,@args)
+            ,,task
+            ,,code))))))
+
+(defmacro ilambda/code (args code)
+  `(lambda ,args
+     (let ((vals (mapcar 'eval ',args)))
+       (eval
+        ;; imagined by an LM
+        `(ieval
+          ;; An function and a function call
+          (main ,@vals)
+          (defun main (,,@args)
+            ,,code))))))
+
+;; Create the lambda to be generated first, and then create ilambda
+(comment
+ (lambda (x)
+   (let ((x (eval x)))
+     (eval
+      `(ieval
+        (f ,x)
+        (defun f (x)
+          (x * x)))))))
+
+(defun test-ilambda/code ()
+  (interactive)
+  (etv
+   (mapcar
+    ;; wrapped up in a lambda
+    (lambda (x)
+      (eval
+       ;; imagined by an LM
+       `(ieval
+         ;; An function and a function call
+         (main ,x)
+         (defun main (x)
+           (* x x)))))
+    '(4))))
+
+(defun ilambda/code-test ()
+  (interactive)
+  (etv (ilambda/code () (+ 5 5))))
+
+(defun ilambda/code-test-2 ()
+  (interactive)
+  (etv (mapcar (ilambda/code (x) (+ x 5))
+               '(4))))
+
+(defun ilambda/code-test-2 ()
+  (interactive)
+  (etv (mapcar (ilambda/code (x) (+ x 5))
+               '(4))))
 
 (idefun double (a)
         "this function doubles its input")
