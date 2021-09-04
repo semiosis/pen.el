@@ -1866,6 +1866,28 @@ Function names are prefixed with pf- for easy searching"
       `(let ,',overrides
          ,',@body))))
 
+(defmacro pen-force (tups &rest body)
+  "This forces various settings depending on customizations"
+  (let ((overrides tups))
+    `(eval
+      `(let ,',overrides
+         ,',@body))))
+
+(comment
+ (idefun sha-hash-string (s))
+
+ (pen-force
+  ((temperature 0.0))
+  (sha-hash-string "sugar shane"))
+
+ (pen-force
+  ((temperature 0.9))
+  (sha-hash-string "ceiling"))
+
+ (pen-force
+  ((temperature 0.0))
+  (sha-hash-string "ceiling")))
+
 (defun pen-force-custom-test ()
   (interactive)
   (pen-etv
