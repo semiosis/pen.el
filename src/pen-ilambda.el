@@ -18,10 +18,6 @@
 
 ;; Make a legit imaginary programming library for emacs
 
-;; Do an (ignore-errors (eval-string result)) on the result
-(defmacro ieval (&rest body)
-  "imaginary eval")
-
 ;; TODO Make an elisp code evaluator based on prompting
 
 ;; TODO Make an elisp code generator based on prompting
@@ -91,7 +87,8 @@
                    (pf-imagine-evaluating-emacs-lisp/2
                     code-str expression
                     :no-select-result t :select-only-match t)))))
-    (eval-string result)))
+    (ignore-errors
+      (eval-string result))))
 
 (defun test-ieval ()
   (ieval
