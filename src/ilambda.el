@@ -187,7 +187,7 @@
 
 (defun test-ilist ()
   (interactive)
-  (etv (pps (ilist 10 "tennis players"))))
+  (etv (pps (ilist 10 "tennis players in no particular order"))))
 
 (defmacro ieval (expression &optional code-sexp-or-raw)
   "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
