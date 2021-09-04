@@ -72,14 +72,17 @@
   args))
 
 
-;; TODO if name-sym is a string, make it the task and derive the sym 
 (defmacro idefun (name-sym args &optional code-or-task task-or-code)
   "Define an imaginary function"
   (cond
    ((and (stringp name-sym)
          (not code-or-task))
-    (setq code-or-task
-          (pen-snc "unsnakecase" name-sym))))
+    (progn
+      (setq code-or-task name-sym)
+      (setq name-sym (slugify name-sym))))
+   ((and (symbolp name-sym)
+         (not code-or-task))
+    (setq code-or-task (pen-snc "unsnakecase" (sym2str name-sym)))))
   `(defalias ',name-sym
      (function ,(eval
                  `(ilambda ,args ,code-or-task ,task-or-code)))))
@@ -118,6 +121,23 @@
             ;; An function and a function call
             (,',fsym ,@vals)
             ,,(concat ";; " task)))))))
+
+(comment
+ (ilambda (n) "generate fibonacci sequence"))
+
+(defun test-generate-fib ()
+  (interactive)
+  (idefun generate-fib-sequence (n))
+  (etv (generate-fib-sequence 5)))
+
+(defun test-lambda ()
+  (interactive)
+
+  (etv (funcall
+        (lambda (n)
+          (let ((vals (mapcar 'eval '(n))))
+            (+ 10 (car vals))))
+        5)))
 
 (defmacro ilambda/task-code (args task code)
   (let* ((slug (slugify (eval task)))
@@ -212,7 +232,8 @@
                     code-str expression-str
                     :no-select-result t :select-only-match t)))))
     (ignore-errors
-      (eval-string (concat "''" result)))))
+      (setq result (eval-string (concat "''" result))))
+    result))
 
 (defun test-ieval ()
   (ieval
