@@ -71,8 +71,17 @@
     (list a (eval a)))
   args))
 
+(defmacro idefun (name-sym args code-or-task &optional task-or-code)
+  "Define an imaginary function"
+  `(defalias ',name-sym
+     (function ,(eval
+                 `(ilambda ,args ,code-or-task ,task-or-code)))))
+
+(idefun idoubleit (x)
+        "double it")
+
 (defmacro ilambda (args code-or-task &optional task-or-code)
-  "define ilambda"
+  "Define an imaginary lambda (iλ)"
   (let ((task (if (stringp code-or-task)
                   code-or-task
                 task-or-code))
@@ -169,10 +178,6 @@
                                   "add five"
                                   (+ x 5))
                '(8))))
-
-(comment
- (idefun double (a)
-         "this function doubles its input"))
 
 (defun ilist (n type-of-thing)
   (interactive (list (read-string-hist "ilist n: ")
