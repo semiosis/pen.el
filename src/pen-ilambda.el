@@ -29,11 +29,48 @@
 ;; But can be imaginarily evaluated
 
 ;; if any of these arguments are not available, infer them via prompt
-;; The macro can be expanded to create an instance of the function
-(defmacro idefun (name args docstring &rest body)
-  ""
-  (let )
-  `(progn ,@body))
+;; The macro can be expanded to create an instance of the function.
+;; idefun does not necessarily need imacro.
+(defmacro imacro/3 (name args docstr)
+  "Does not evaluate. It merely generates code."
+  (let* ((argstr (apply 'cmd (mapcar 'slugify (mapcar 'str args))))
+         (bodystr
+          (car
+           (pen-single-generation
+            (pf-imagine-an-emacs-function/3
+             name
+             argstr
+             docstr
+             :include-prompt t
+             :no-select-result t))))
+         (body (eval-string (concat "'" bodystr))))
+    `(progn ,body)))
+
+(defmacro imacro/2 (name args)
+  "Does not evaluate. It merely generates code."
+  (let* ((argstr (apply 'cmd (mapcar 'slugify (mapcar 'str args))))
+         (bodystr
+          (car
+           (pen-single-generation
+            (pf-imagine-an-emacs-function/2
+             name
+             argstr
+             :include-prompt t
+             :no-select-result t))))
+         (body (eval-string (concat "'" bodystr))))
+    `(progn ,body)))
+
+(defmacro imacro/1 (name)
+  "Does not evaluate. It merely generates code."
+  (let* ((bodystr
+          (car
+           (pen-single-generation
+            (pf-imagine-an-emacs-function/1
+             name
+             :include-prompt t
+             :no-select-result t))))
+         (body (eval-string (concat "'" bodystr))))
+    `(progn ,body)))
 
 (idefun double (a)
         "this function doubles its input")
