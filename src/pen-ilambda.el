@@ -49,7 +49,7 @@
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
-(idefun double (a)
+(idefun idouble (a)
         "this function doubles its input")
 
 (defun ilist (n type-of-thing)
