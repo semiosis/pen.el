@@ -8,6 +8,22 @@
 ;; itransform
 ;; imacro
 
+(defmacro defimacro (name &rest body)
+  "Define imacro"
+  (cond
+   ((= 0 (length body))
+    `(imacro/1
+      ,name))
+   ((= 1 (length body))
+    `(imacro/2
+      ,name
+      ,(car body)))
+   ((= 2 (length body))
+    `(imacro/3
+      ,name
+      ,(car body)
+      ,(cadr body)))))
+
 (defmacro imacro/3 (name args docstr)
   "Does not evaluate. It merely generates code."
   (let* ((argstr (apply 'cmd (mapcar 'slugify (mapcar 'str args))))
@@ -49,7 +65,7 @@
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
-(idefun idouble (a)
+(idefun double (a)
         "this function doubles its input")
 
 (defun ilist (n type-of-thing)
@@ -76,5 +92,12 @@
    (double-number 5)
    (defun double-number (x)
      (x * x))))
+
+(defun test-imacro ()
+  ;; (defimacro my/subtract)
+
+  (defimacro my/itimes (a b c)
+    "multiply three complex numbers")
+  (defimacro my/itimes (a b c)))
 
 (provide 'ilambda)
