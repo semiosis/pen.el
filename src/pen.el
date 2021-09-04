@@ -1867,7 +1867,7 @@ Function names are prefixed with pf- for easy searching"
          ,',@body))))
 
 (defmacro pen-force (tups &rest body)
-  "This forces various settings depending on customizations"
+  "This forces prompt function parameters through dynamic scope"
   (let ((overrides tups))
     `(eval
       `(let ,',overrides
