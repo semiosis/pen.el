@@ -8,25 +8,6 @@
 ;; itransform
 ;; imacro
 
-;; idefun vs imacro
-
-;; imacro should take
-
-;; i macro-expand?
-
-;; Well, I could inject a macro with a value which is actually sent to the LM?
-
-;; Make a legit imaginary programming library for emacs
-
-;; TODO Make an elisp code evaluator based on prompting
-
-;; TODO Make an elisp code generator based on prompting
-;; This should create a function, which may not necessarily work
-;; But can be imaginarily evaluated
-
-;; if any of these arguments are not available, infer them via prompt
-;; The macro can be expanded to create an instance of the function.
-;; idefun does not necessarily need imacro.
 (defmacro imacro/3 (name args docstr)
   "Does not evaluate. It merely generates code."
   (let* ((argstr (apply 'cmd (mapcar 'slugify (mapcar 'str args))))
