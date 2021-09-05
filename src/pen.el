@@ -897,7 +897,16 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (data
                    (let ((data
-                          `(("PEN_PROMPT" . ,(pen-encode-string final-prompt))
+                          ;; The prompt loses unicode here. I think I need to convert to base64 maybe
+                          ;; And if I do, put it just outside pen-encode-string
+                          `(
+                            ("PEN_PROMPT" .
+                             ;; Sort this out later
+                             ,(pen-encode-string final-prompt)
+                             ;; ,(pen-snc "base64" (pen-encode-string final-prompt))
+                             ;; ,(pen-snc "base64" final-prompt)
+                             )
+                            ;; ("PEN_PROMPT" . ,(pen-encode-string final-prompt))
                             ("PEN_LM_COMMAND" . ,final-lm-command)
                             ("PEN_MODEL" . ,final-model)
                             ("PEN_APPROXIMATE_PROMPT_LENGTH" . ,pen-approximate-prompt-token-length)
