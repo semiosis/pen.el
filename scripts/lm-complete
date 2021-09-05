@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Example of usage:
 # export PEN_PROMPTS_DIR=$MYGIT/semiosis/prompts
@@ -21,6 +21,9 @@ test -n "$PEN_LM_COMMAND" || {
 : "${PEN_TEMPERATURE:="0.8"}"
 : "${PEN_TOP_P:="1"}"
 : "${PEN_TOP_K:="10"}"
+# if test -n "$PEN_PROMPT"; then
+#     IFS= read -rd '' PEN_PROMPT < <(printf -- "%s" "$PEN_PROMPT" | base64 -d);typeset -p PEN_PROMPT &>/dev/null
+# fi
 : "${PEN_PROMPT:="Once upon a time"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 : "${PEN_ENGINE_MAX_N_COMPLETIONS:="10"}"
