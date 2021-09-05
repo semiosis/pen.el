@@ -250,12 +250,22 @@
  (itest "has 5 elements" '(a b c d)))
 
 (comment
- (itest (lambda (lambda) '(= 5 (length l))) '(a b c d)))
+ (itest (lambda (l) '(= 5 (length l))) '(a b c d)))
+
+;; TODO Have an NL predicate and also an expression predicate
+(defmacro itest (predicate value)
+  `(ieval
+    (my/test ,value)
+    (defun my/test (x)
+      (apply ,predicate
+             x))))
 
 (defun test-itest-1 ()
-  (ieval
-   (lambda (lambda) '(= 5 (length l)))
-   (defun double-number (x)
-     (x * x))))
+  (itest (lambda (l) '(= 5 (length l)))
+         '(a b c d)))
+
+(defun test-itest-2 ()
+  (itest (lambda (l) '(= 4 (length l)))
+         '(a b c d)))
 
 (provide 'ilambda)
