@@ -115,31 +115,24 @@
          (fsym (or name-sym
                    (intern slug))))
     `(lambda ,args
-       (let ((vals (mapcar 'eval ',args)))
-         (eval
-          ;; imagined by an LM
-          `(ieval
-            ;; An function and a function call
-            (,',fsym ,@vals)
-            ,,(concat ";; " task)))))))
+       (eval
+        ;; imagined by an LM
+        `(ieval
+          ;; An function and a function call
+          (,',fsym ,,@args)
+          ,,(concat ";; " task))))))
 (defalias 'iλ/task 'ilambda/task)
 
 (comment
  (ilambda (n) "generate fibonacci sequence"))
 
+(comment
+ (funcall (ilambda/task (n) "generate fibonacci sequence") 5))
+
 (defun test-generate-fib ()
   (interactive)
   (idefun generate-fib-sequence (n))
   (etv (generate-fib-sequence 5)))
-
-(defun test-lambda ()
-  (interactive)
-
-  (etv (funcall
-        (lambda (n)
-          (let ((vals (mapcar 'eval '(n))))
-            (+ 10 (car vals))))
-        5)))
 
 (defmacro ilambda/task-code (args task code &optional name-sym)
   (let* ((slug (s-replace-regexp "-$" "" (slugify (eval task))))
@@ -147,29 +140,27 @@
                 name-sym
                 (intern slug))))
     `(lambda ,args
-       (let ((vals (mapcar 'eval ',args)))
-         (eval
-          ;; imagined by an LM
-          `(ieval
-            ;; An function and a function call
-            (,',fsym ,@vals)
-            (defun ,',fsym ,',args
-              ,,task
-              ,',code)))))))
+       (eval
+        ;; imagined by an LM
+        `(ieval
+          ;; An function and a function call
+          (,',fsym ,,@args)
+          (defun ,',fsym ,',args
+            ,,task
+            ,',code))))))
 (defalias 'iλ/task-code 'ilambda/task-code)
 
 (defmacro ilambda/code (args code &optional name-sym)
   (let ((fsym (or name-sym
                   'main)))
     `(lambda ,args
-       (let ((vals (mapcar 'eval ',args)))
-         (eval
-          ;; imagined by an LM
-          `(ieval
-            ;; An function and a function call
-            (,',fsym ,@vals)
-            (defun ,',fsym (,',@args)
-              ,',code)))))))
+       (eval
+        ;; imagined by an LM
+        `(ieval
+          ;; An function and a function call
+          (,',fsym ,,@args)
+          (defun ,',fsym (,',@args)
+            ,',code))))))
 (defalias 'iλ/code 'ilambda/code)
 
 ;; Create the lambda to be generated first, and then create ilambda
