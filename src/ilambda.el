@@ -24,6 +24,10 @@
       ,(car body)
       ,(cadr body)))))
 
+(defun test-imacro-1 ()
+  (interactive)
+  (imacro/1 get-real-component-from-imaginary-number))
+
 (defmacro imacro/3 (name args docstr)
   "Does not evaluate. It merely generates code."
   (let* ((argstr (apply 'cmd (mapcar 'slugify (mapcar 'str args))))
@@ -214,7 +218,7 @@
   (interactive)
   (etv (pp-to-string (ilist 10 "tennis players in no particular order"))))
 
-(defmacro ieval (expression &optional code-sexp-or-raw)
+(defmacro ieval/m (expression &optional code-sexp-or-raw)
   "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
   (let* ((code-str
           (cond
@@ -233,11 +237,23 @@
       (setq result (eval-string (concat "''" result))))
     result))
 
-(defun test-ieval ()
-  (ieval
-   (double-number 5)
-   (defun double-number (x)
-     (x * x))))
+(defmacro ieval (expression &optional code-sexp-or-raw)
+  "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
+  (eval `(ieval/m ,expression ,code-sexp-or-raw)))
+
+(defun test-ieval-1 ()
+  (interactive)
+  (etv (ieval
+        '(double-number 5)
+        '(defun double-number (x)
+           (x * x)))))
+
+(defun test-ieval-2 ()
+  (interactive)
+  (etv (ieval/m
+        (double-number 5)
+        (defun double-number (x)
+          (x * x)))))
 
 (defun test-imacro ()
   ;; (defimacro my/subtract)
