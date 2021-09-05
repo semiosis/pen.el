@@ -120,7 +120,7 @@
     `(lambda ,args
        (eval
         ;; imagined by an LM
-        `(ieval
+        `(ieval/m
           ;; An function and a function call
           (,',fsym ,,@args)
           ,,(concat ";; " task))))))
@@ -145,7 +145,7 @@
     `(lambda ,args
        (eval
         ;; imagined by an LM
-        `(ieval
+        `(ieval/m
           ;; An function and a function call
           (,',fsym ,,@args)
           (defun ,',fsym ,',args
@@ -159,7 +159,7 @@
     `(lambda ,args
        (eval
         ;; imagined by an LM
-        `(ieval
+        `(ieval/m
           ;; An function and a function call
           (,',fsym ,,@args)
           (defun ,',fsym (,',@args)
@@ -171,7 +171,7 @@
  (lambda (x)
    (let ((x (eval x)))
      (eval
-      `(ieval
+      `(ieval/m
         (f ,x)
         (defun f (x)
           (x * x)))))))
@@ -184,7 +184,7 @@
     (lambda (x)
       (eval
        ;; imagined by an LM
-       `(ieval
+       `(ieval/m
          ;; An function and a function call
          (main ,x)
          (defun main (x)
@@ -227,7 +227,7 @@
          (expression-str
           (cond
            ((stringp expression) expression)
-           ((listp expression) (pp-oneline expression))))
+           ((listp expression) (concat "'" (pp-oneline expression)))))
          (result (car
                   (pen-single-generation
                    (pf-imagine-evaluating-emacs-lisp/2
@@ -237,7 +237,7 @@
       (setq result (eval-string (concat "''" result))))
     result))
 
-(defmacro ieval (expression &optional code-sexp-or-raw)
+(defun ieval (expression &optional code-sexp-or-raw)
   "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
   (eval `(ieval/m ,expression ,code-sexp-or-raw)))
 
@@ -269,19 +269,26 @@
  (itest (lambda (l) '(= 5 (length l))) '(a b c d)))
 
 ;; TODO Have an NL predicate and also an expression predicate
-(defmacro itest (predicate value)
+(defmacro itest/m (predicate value)
   `(ieval
-    (my/test ,value)
-    (defun my/test (x)
-      (apply ,predicate
-             x))))
+    `(my/test ,',value)
+    `(defun my/test (x)
+       (apply ,',predicate
+              x))))
+
+(defun itest (predicate value)
+  (eval `(itest/m ,predicate ,value)))
 
 (defun test-itest-1 ()
-  (itest (lambda (l) '(= 5 (length l)))
-         '(a b c d)))
+  (interactive)
+  (etv
+   (itest '(lambda (l) '(= 5 (length l)))
+          '(a b c d))))
 
 (defun test-itest-2 ()
-  (itest (lambda (l) '(= 4 (length l)))
-         '(a b c d)))
+  (interactive)
+  (etv
+   (itest/m (lambda (l) '(= 4 (length l)))
+            '(a b c d))))
 
 (provide 'ilambda)
