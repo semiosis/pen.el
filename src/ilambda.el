@@ -71,7 +71,6 @@
     (list a (eval a)))
   args))
 
-
 (defmacro idefun (name-sym args &optional code-or-task task-or-code)
   "Define an imaginary function"
   (cond
@@ -82,7 +81,7 @@
       (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym)))))))
    ((and (symbolp name-sym)
          (not code-or-task))
-    (setq code-or-task (pen-snc "unsnakecase" (sym2str name-sym)))))
+    (setq code-or-task (pen-snc "unsnakecase" (symbol-name name-sym)))))
   `(defalias ',name-sym
      (function ,(eval
                  `(ilambda ,args ,code-or-task ,task-or-code ,name-sym)))))
@@ -213,14 +212,14 @@
 
 (defun test-ilist ()
   (interactive)
-  (etv (pps (ilist 10 "tennis players in no particular order"))))
+  (etv (pp-to-string (ilist 10 "tennis players in no particular order"))))
 
 (defmacro ieval (expression &optional code-sexp-or-raw)
   "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
   (let* ((code-str
           (cond
            ((stringp code-sexp-or-raw) code-sexp-or-raw)
-           ((listp code-sexp-or-raw) (pps code-sexp-or-raw))))
+           ((listp code-sexp-or-raw) (pp-to-string code-sexp-or-raw))))
          (expression-str
           (cond
            ((stringp expression) expression)
@@ -246,5 +245,17 @@
   (defimacro my/itimes (a b c)
     "multiply three complex numbers")
   (defimacro my/itimes (a b c)))
+
+(comment
+ (itest "has 5 elements" '(a b c d)))
+
+(comment
+ (itest (lambda (lambda) '(= 5 (length l))) '(a b c d)))
+
+(defun test-itest-1 ()
+  (ieval
+   (lambda (lambda) '(= 5 (length l)))
+   (defun double-number (x)
+     (x * x))))
 
 (provide 'ilambda)
