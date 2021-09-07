@@ -1068,6 +1068,8 @@ when s is a string, set the clipboard to s"
   (pen-etv (f-read (f-join penconfdir "last-final-prompt.txt"))))
 
 (defun pen-set-major-mode (name)
+  (setq name (str name))
+
   (funcall (cond ((string= name "shell-mode") 'sh-mode)
                  ((string= name "emacslisp-mode") 'common-lisp-mode)
                  (t (intern name)))))
