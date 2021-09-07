@@ -62,7 +62,7 @@ while read -e -r user_input; do
     if test -n "$ii_input_echo_pp"; then
         IFS= read -rd '' ii_input_echo < <(printf -- "%s" "$user_input" | eval "$ii_input_echo_pp");typeset -p ii_input_echo &>/dev/null
         if test -n "$ii_input_echo"; then
-            printf -- "%s" "$ii_input_echo\n"
+            printf -- "%s\n" "$ii_input_echo"
             user_input="$user_input\n$ii_input_echo"
         fi
     fi
