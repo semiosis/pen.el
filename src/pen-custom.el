@@ -85,6 +85,12 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-force-temperature nil
+  "The temperature to force"
+  :type 'float
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-ink-disabled nil
   "Disable ink. Useful if it's breaking"
   :type 'boolean

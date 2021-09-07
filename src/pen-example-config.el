@@ -227,4 +227,7 @@
 ;; I should make the magit completions selector anyway
 (ivy-mode 1)
 
+(define-key pen-map (kbd "<f12>") 'pen-add-to-glossary)
+(define-key pen-map (kbd "<f11>") 'pen-define-general-knowledge)
+
 ;; (call-interactively 'pen-add-key-booste)
