@@ -731,6 +731,18 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'temperature)
                              ,temperature))))
 
+                  (final-default-temperature
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'default-temperature)
+                             ,default-temperature))))
+
+                  (final-temperature
+                   (if (and (sor pen-force-engine)
+                            (not pen-force-temperature)
+                            final-default-temperature)
+                       final-default-temperature
+                     final-temperature))
+
                   (final-validator
                    (expand-template
                     (str (or (pen-var-value-maybe 'validator)
@@ -1582,6 +1594,7 @@ Function names are prefixed with pf- for easy searching"
                         (top-p (ht-get yaml-ht "top-p"))
                         (top-k (ht-get yaml-ht "top-k"))
                         (temperature (ht-get yaml-ht "temperature"))
+                        (default-temperature (ht-get yaml-ht "default-temperature"))
 
                         ;; This is an override hint only
                         (is-completion nil)
@@ -1659,6 +1672,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if engine-whitespace-support
                                     (concat "\nengine-whitespace-support: yes")
                                   (concat "\nengine-whitespace-support: no"))
+                                (if inject-gen-start (concat "\ninject-gen-start: " (pps inject-gen-start)))
                                 (if task (concat "\ntask: " task))
                                 (if notes (concat "\nnotes:" (pen-list-to-orglist notes)))
                                 (if filter (concat "\nfilter: on"))
@@ -1881,8 +1895,9 @@ Function names are prefixed with pf- for easy searching"
            (if (sor pen-force-engine)
                (let* ((engine (ht-get pen-engines pen-force-engine))
                       (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                      (vals (ht-values engine)))
-                 (-zip-lists keys vals)))))))
+                      (vals (ht-values engine))
+                      (tups (-zip-lists keys vals)))
+                 tups))))))
     `(eval
       `(let ,',overrides
          ,',@body))))
@@ -2179,3 +2194,9 @@ May use to generate code from comments."
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
 (provide 'pen)
+
+(defun pen-final-loads ()
+  (load-library "pen-custom"))
+
+(add-hook 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
+          'pen-final-loads t)
