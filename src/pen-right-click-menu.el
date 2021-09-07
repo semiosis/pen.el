@@ -207,7 +207,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
         ("transpile" :call pf-transpile/3)
         ("explain error" :call pf-explain-error/3)
-        ("explain code" :call pf-explain-code/1)
+        ("explain code" :call rcm-explain-code)
         ("> cheap" :call rcm-cheap)
         ("> ink" :call rcm-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_MODEL")
                                         (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")
@@ -269,6 +269,13 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (def-right-click-menu rcm-term
   '(("Cancel" :call identity-command)
     ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1 :if (pen-word-clickable))
+    ("define word" :call pen-define :if (pen-word-clickable))))
+
+(def-right-click-menu rcm-explain-code
+  '(("Cancel" :call identity-command)
+    ("explain why code is used" :call pf-explain-why-this-code-is-used/2)
+    ("explain code given a language" :call pf-explain-code-given-a-language/2)
+    ("explain a shell command" :call pf-explain-a-shell-command/1)
     ("define word" :call pen-define :if (pen-word-clickable))))
 
 (def-right-click-menu rcm-ink
