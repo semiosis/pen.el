@@ -37,6 +37,7 @@ fi
 test -n "$path" && test -f "$path" || exit 1
 
 IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter' | sed "s/<language>/$lang/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+IFS= read -rd '' ii_input_echo_pp < <(cat "$path" | yq -r '.["ii-input-echo-pp"] // empty');typeset -p ii_input_echo_pp &>/dev/null
 
 prompt_the_lm() {
     user_input="$1"
@@ -55,10 +56,29 @@ p "${kickstarter} "
 memory="${kickstarter} "
 
 while read -e -r user_input; do
+    # echo -en "\033[1A\033[2K"
+    # echo "$user_input"
+
+    if test -n "$ii_input_echo_pp"; then
+        IFS= read -rd '' ii_input_echo < <(printf -- "%s" "$user_input" | eval "$ii_input_echo_pp");typeset -p ii_input_echo &>/dev/null
+        if test -n "$ii_input_echo"; then
+            printf -- "%s" "$ii_input_echo\n"
+            user_input="$user_input\n$ii_input_echo"
+        fi
+    fi
+
+    # printf -- "%s" "$user_input"
+
     case "$user_input" in
         "!!"|""|"!1"|"~1") {
             memory="$last_memory"
             user_input="$last_user_input"
+        }
+        ;;
+
+        "!!"*) {
+            memory="$last_memory"
+            user_input="${user_input:2}"
         }
         ;;
 
