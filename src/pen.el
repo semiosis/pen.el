@@ -678,12 +678,6 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-n-completions
                    (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
 
-                  (final-max-generated-tokens
-                   (pen-str2num
-                    (expand-template
-                     (str (or (pen-var-value-maybe 'max-generated-tokens)
-                              ,max-generated-tokens)))))
-
                   (final-engine-max-generated-tokens
                    (pen-str2num
                     (expand-template
@@ -885,6 +879,17 @@ Reconstruct the entire yaml-ht for a different language."
                    (pen-approximate-token-length
                     final-prompt
                     (pen-num final-approximate-token-char-length)))
+
+                  (final-max-generated-tokens
+                   (let* ((prompt-length pen-approximate-prompt-token-length))
+                     (pen-str2num
+                      (eval-string
+                       (expand-template
+                        (str (or (pen-var-value-maybe 'max-generated-tokens)
+                                 ,max-generated-tokens)))))))
+
+                  ;; (testme
+                  ;;  (tv final-max-generated-tokens))
 
                   ;; The max tokens may be templated in via variable or even a subprompt
                   (final-max-tokens

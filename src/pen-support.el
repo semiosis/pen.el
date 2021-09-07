@@ -838,11 +838,19 @@ when s is a string, set the clipboard to s"
 (defun mode-to-lang (&optional modesym)
   (if (not modesym)
       (setq modesym major-mode))
-  (s-replace-regexp "-mode$" "" (symbol-name modesym)))
+
+  (s-replace-regexp "-mode$" "" (symbol-name (slugify modesym))))
 
 (defun lang-to-mode (&optional langstr)
   (if (not langstr)
       (setq langstr (pen-detect-language)))
+
+  (setq langstr (slugify langstr))
+
+  (cond
+   ((string-equal "elisp" langstr)
+    (setq langstr "emacs-lisp")))
+
   (intern (concat langstr "-mode")))
 
 (defun get-ext-for-lang (langstr)
@@ -1069,7 +1077,7 @@ when s is a string, set the clipboard to s"
   (interactive)
   (if (not lang)
       (setq lang (language-detection-string (buffer-string))))
-  (pen-set-major-mode (concat (str lang) "-mode")))
+  (pen-set-major-mode (lang-to-mode lang)))
 
 (defmacro df (name &rest body)
   "Named interactive lambda with no arguments"
