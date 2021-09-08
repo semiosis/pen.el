@@ -30,7 +30,7 @@
 
 (defmacro imacro/3 (name args docstr)
   "Does not evaluate. It merely generates code."
-  (let* ((argstr (apply 'cmd (mapcar 'slugify (mapcar 'str args))))
+  (let* ((argstr (apply 'pen-cmd (mapcar 'slugify (mapcar 'str args))))
          (bodystr
           (car
            (pen-single-generation
@@ -45,7 +45,7 @@
 
 (defmacro imacro/2 (name args)
   "Does not evaluate. It merely generates code."
-  (let* ((argstr (apply 'cmd (mapcar 'slugify (mapcar 'str args))))
+  (let* ((argstr (apply 'pen-cmd (mapcar 'slugify (mapcar 'str args))))
          (bodystr
           (car
            (pen-single-generation
