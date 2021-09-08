@@ -205,15 +205,14 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (defun pen-browse-url-for-passage ()
   "Search the web, given a selection"
   (interactive)
-  (let* ((urls (pf-get-urls-for-a-passage/1))
-         (url (fz urls)))
+  (let* ((url (pf-get-urls-for-a-passage/1)))
     (eww url)))
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
         ("transpile" :call pf-transpile/3)
-        ("browse internet" :call pf-get-urls-for-a-passage/1)
+        ("browse internet" :call pen-browse-url-for-passage)
         ("explain error" :call pf-explain-error/3)
         ("> explain code" :call rcm-explain-code)
         ("> cheap" :call rcm-cheap)
