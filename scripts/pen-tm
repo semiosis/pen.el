@@ -1,0 +1,4720 @@
+#!/bin/bash
+export TTY
+
+: ${FAST:="n"}
+
+if test "$DEBUG_MODE" = "y"; then
+    set -v
+    export DEBUG_MODE=y
+fi
+
+displayedname() {
+    # display the last bit, swap with capitalized hostname if localhost
+    sed -e 's/^.*_//' -e "s/^localhost$/$(hostname | sed 's/[^ _-]*/\u&/g')/"
+}
+
+extra_exports=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -f) {
+        FAST=y
+        shift
+    }
+    ;;
+
+    -export) {
+        extra_exports+=" $2 "
+        shift
+        shift
+    }
+    ;;
+
+    -debug) {
+        set -v
+        export DEBUG_MODE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+editor() {
+    if e running; then
+        e c "$1"
+    else
+        v "$1"
+    fi
+}
+
+init-pen-tm() {
+    server="$(pen-tm-get-server)"
+
+    TMUX= tmux -L $server attach -t localhost:
+    tmux set-option -t localhost lock-after-time 36000
+    echo init
+    exit 0
+}
+
+        # pc|pipec|pipe-to-command|sf|select-filter|split-and-pipe|spp|\
+
+# DO NOT put capture in this list
+# Skip the initial options to find first command but don't shift.
+# -te -d
+for arg in "$@"; do case "$arg" in
+    # These commands enable fast by default
+    cat|cat-pane|\
+        mfz|fzf|\
+        pipe-pane|\
+        get-pane|get-session|\
+    goto-fzf|\
+    filter|\
+    man|\
+    tw|w|h|v|\
+    avy|easymotion|search|nv-wrap|capture-stdout|capture-stdout-wrap|\
+    xp|type|typeclip|\
+    cap|capp|cap-pane|capture|\
+    copy-current-line|\
+    copy-pane-command|\
+    editsession|\
+    send-keys|\
+    click|em-click|regex-find|regex-find-coord|regex-click|click-wrap|\
+    ep|edit-paste|vp|vipe-paste|\
+    edit-file|\
+    scrape-filter|\
+    scrape-things|\
+    scrapep|\
+    vipe|eipe|ised|wrto|pipe|tv|ntv|tvs|\
+    lw|previous-window|next-window|\
+    open-dirs|\
+    find-window-from-session|\
+    open-files|\
+    open-list-of-files-in-emacs|\
+    open-list-of-files-in-windows|\
+    rsp|n|notify|\
+        copy-pane-name|copy-pane-id|\
+        recent-isues|sel|select|\
+        dv|display-var|mru|most-recently-used|\
+        session-exists|target-exists|\
+        shpvs|shpv|show-pane-variable|\
+        op|shortcuts|d|dir|directories|\
+        s|src|source-files|ranger|\
+        calc|saykeyunbound|edit-x-clipboard|\
+        tnf|new-file|new-script|config) {
+
+        # config breaks if I put it in this list
+        # I'll try put it in again
+
+        FAST=y
+        break
+    }
+    ;;
+
+    nwf)
+        tmux neww zsh
+        exit 0
+    ;;
+
+    init) {
+        init-pen-tm
+        exit 0
+    }
+    ;;
+
+    -*) continue
+    ;;
+
+    *) break
+    ;;
+esac; done
+
+
+pl() {
+    printf -- "%s\n" "$@"
+    return 0
+}
+
+shell="bash; pak ."
+shell="zsh"
+
+
+# I should be writing code like this but in elisp because it is
+# self-documenting. I can then use batch-mode to actually run the
+# commands outside of elisp. However, I will have nice documentation for
+# all the commands inside of emacs.
+#
+#!/usr/bin/emacs --script
+
+# If tmux is not running then start a server.
+# tmux info | ns
+# ns "$?"
+# exit 0
+if ! test "$FAST" = y && ! tmux info &> /dev/null; then # it's important to have the tmux info check here to prevent infinite init loop
+    # ns "tmux not running..."
+    # exit 0
+    # init-pen-tm
+
+    export FORCE
+    CWD="$NOTES" tmux new -d
+    # return 0
+
+    exit 0
+fi
+
+# Usage: $0 -h
+
+invocation="$0 $@"
+
+
+# This will cause an infinite loop
+#pen-tm n "$CWD"
+
+
+# Also need to think about trapping things
+# Does everything quit gracefully when I do a C-c ?
+
+
+# Create a new system of organising tmux windows. Abstract everything.
+# Create as many abstractions around terminals and text as I can.
+# Use languages for their features.
+
+export EDITOR=v
+
+# Display is not necessary
+: ${DISPLAY:="0"}
+
+# If launched from emacs then this is different. Therefore, ensure path
+# starts like this
+
+if ! test "$FAST" = "y"; then
+    . $HOME/.shell_environment
+    . $HOME/scripts/libraries/bash-library.sh
+
+    # I was having some problems with anaconda. It was gnome-terminal
+    # PATH="$HOME/scripts:$PATH"
+else
+    PATH="$HOME/scripts:$PATH"
+    PATH="$MYGIT/semiosis/pen.el/scripts:$PATH"
+fi
+
+is_tty() { [ -t 1 ]; }
+stdout_capture_exists() { ! is_tty; }
+pager() { if is_tty; then v; else cat; fi; }
+stdin_exists() { ! [ -t 0 ]; }
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+# lit is a script that does something slightly different. as for p, maybe
+# it's ok. It's not ok
+
+# p() { printf -- "%s" "$@"; }
+# pl() { printf -- "%s\n" "$@"; }
+
+# pathmunge "$HOME/local/bin"
+# pathmunge "$HOME/scripts"
+
+# Something is adding /usr/bin to the start. Prevent that from
+# happening.
+
+# export PATH="$(lit "$PATH" | sed 's_^/usr/bin:__')"
+# export PATH=${PATH#/usr/bin:} # This does actually work. The : does not mess with it
+# lit "$PATH" >> /tmp/path.txt # This verifies it worked
+# There is more than one! Fix this in zshrc.
+
+if ! test "$FAST" = y; then
+    # # I did this in zsh. What is going on?
+    # This breaks on ubuntu 18
+    # PATH="$(printf -- "%s" "$PATH" | sed ':a;s_:/usr/bin:__g;ta'):/usr/bin"
+    # PATH="$(printf -- "%s" "$PATH" | sed ':a;s_^/usr/bin:__g;ta'):/usr/bin"
+    # PATH="$(printf -- "%s" "$PATH" | sed ':a;s_:/usr/bin$__g;ta'):/usr/bin"
+
+    # This is evil. But it was added here so the correct vim opens up.
+    # export PATH="$HOME/local/bin:$PATH"
+
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        -p) { # session that called the tmux script
+            CALLER_TARGET="$2"
+            shift
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+fi
+
+# Tmux session and pane vars are privileged.
+# If not provided by parameter or by environment, work it out. It may have been exported to us.
+if [ -n "$CALLER_TARGET" ]; then
+    CALLER_TARGET="$CALLER_TARGET"
+else
+    CALLER_TARGET="$(tmux display -p "#{session_name}")"
+    # ns "$CALLER_TARGET"
+    # pen-tm n "$CALLER_TARGET"
+    # This is bad if used by breakp because it breaks from the 0th pane.
+fi
+
+# If not provided by parameter or by environment, work it out. It may have been exported to us.
+if [ -n "$CALLER_PANE" ]; then
+    CALLER_PANE="$CALLER_PANE"
+else
+    CALLER_PANE="$(tmux display -p "#{pane_id}")"
+fi
+
+
+# I may have to break up CALLER_TARGET into session, pane and window
+# for use in different commands
+
+if ! test "$FAST" = y; then
+
+    envstring=
+    # I'm putting path in here. Is that a good idea?
+    # List of environment variables to send to the inner command:
+    # Don't set CWD here. Because if -c is used to change directory, the
+    # wrong envstring will be set
+
+    # Is it kotlin doing this?
+    # export PATH=${PATH#/usr/bin:} # kotlin prepens /usr/bin to the path. Stop this!
+
+    # export PATH=${PATH#/usr/bin:}
+
+    # ORIGINAL_DIR Used for tenets. I really need an option to supply a list of env vars which will
+
+    for e in TMUX PATH PAGER EDITOR DISPLAY PYTHONSTARTUP PYTHONPATH CALLER_TARGET PARENT_SESSION_ID PARENT_WINDOW_ID PARENT_SESSION_NAME CURRENT_SESSION_NAME ORIGINAL_DIR $extra_exports; do
+        eval val=\${$e}
+        envstring+=" $e=\"$val\" "
+    done
+    envstring="export $envstring; "
+
+fi
+
+: ${CWD:="$(pwd)"};
+# Because the folder may be deleted. i.e. git change branch
+if [ -d "$CWD" ]; then
+    cd "$CWD"
+fi
+dir="$CWD"
+
+stdin_exists && {
+    HAS_STDIN=y
+    # echo has stdin 1>&2
+}
+stdout_capture_exists && HAS_STDOUT=y
+
+. $HOME/scripts/libraries/tmux-lib.sh
+
+# tmux pane var
+tpv() {
+    # Retrieving pane variables is actually the same syntax as getting
+    # server options
+
+    TARGET=
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        -t) {
+            TARGET="$2"
+
+            shift
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+    # export TARGET
+
+    if [ -z "$TARGET" ]; then
+        TARGET="$CALLER_TARGET"
+    fi
+
+    varname="$1"
+    tmux display -t "$TARGET" -p "#{$varname}"
+    return 0
+}
+
+# Be careful with the buffering and unbuffering. It's probably best to
+# manually use them
+
+# This should be y by default or things such as the zle will break
+DETACHMENT_SENTINEL=y
+# DETACHMENT_SENTINEL=n
+PRESS_ANY_KEY_ON_ERROR=n
+# PRESS_ANY_KEY_ON_ERROR=y
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -d) {
+        DETACHMENT_SENTINEL=n
+
+        # Prevent waiting on stdin and ignore stdout
+        (  exec <`pen-tm-tty`  ) &>/dev/null # I should really check this output
+        HAS_STDIN=
+        HAS_STDOUT=n
+
+        shift
+    }
+    ;;
+
+    -w|-s)
+        DETACHMENT_SENTINEL=y; shift
+    ;;
+
+    -S) # no detachment sentinel This is different from detaching immediately. The new window is still created and switched to. But the pen-tm command will not wait for the process to end.
+        DETACHMENT_SENTINEL=n; shift
+    ;;
+
+    -te) # Use tty from piped command if possible
+        {
+        # exporting these is important
+        HAS_STDIN=
+        HAS_STDOUT=
+
+        # If not a tty but TTY is exported from outside, attach the tty
+        # pen-tm dv "$mytty"
+        if test "$mytty" = "not a tty" && ! [ -z ${TTY+x} ]; then
+            printf -- "%s\n" "Attaching tty"
+            exec 0<"$TTY"
+            exec 1>"$TTY"
+        else
+            # Otherwise, this probably has its own tty and only needs normal
+            # reattachment (maybe stdin was temporarily redirected)
+            exec <`pen-tm-tty`
+        fi
+        shift
+    }
+    ;;
+
+    -t)
+        {
+        ( exec <`pen-tm-tty` ) &>/dev/null # I should really check this output
+        HAS_STDIN=
+        HAS_STDOUT=
+        shift
+    }
+    ;;
+
+    #-tin)
+    #    exec <`pen-tm-tty`
+    #    HAS_STDIN=; shift
+    #;;
+
+    -tout) { # tty out, not stdout
+        HAS_STDOUT=; shift
+    }
+    ;;
+
+    -fout) { # Force stdout (echo hi | pen-tm -sout nw fzf)
+        HAS_STDOUT=y; shift
+    }
+    ;;
+
+    -tt) {
+        # vim +/"Not sure why I need unbuffer here" "$HOME/scripts/pen-tm"
+        # Run this command again but inside a wrapper tty. Not a great
+        # solution.
+
+        invocation="$(printf -- "%s\n" "$invocation" | sed 's/ -tt\b//')"
+
+        exec script -q --return -c "$invocation" /dev/null
+
+        exit 0
+    }
+    ;;
+
+    -u)
+        UNBUFFER_IN=y
+        UNBUFFER_OUT=y
+        shift
+    ;;
+
+    -uin) # cat | unbuffer -p [pen-tm nw]
+        UNBUFFER_IN=y; shift
+    ;;
+
+    -uout) # unbuffer [pen-tm nw]
+        UNBUFFER_OUT=y; shift
+    ;;
+
+    -b)
+        BUFFER_IN=y;
+        BUFFER_OUT=y;
+        shift
+    ;;
+
+    -bin)
+        BUFFER_IN=y; shift
+    ;;
+
+    -bout)
+        BUFFER_OUT=y; shift
+    ;;
+
+    -s)
+        SPONGE_IN=y
+        SPONGE_OUT=y
+        shift
+    ;;
+
+    -sin) { # Maybe use -i|-stdin instead
+        SPONGE_IN=y; shift
+    }
+    ;;
+
+    -I|-i|-stdin|-soak|-soak-input) {
+        # soak it up BUT put it BACK into stdin
+
+        IFS= read -rd '' input < <(cat /dev/stdin)
+        # exec < <(p "$input")
+        # exec < <<< "$input"
+
+        # xxd -p <<< "foo" # not binary safe (appends newline)
+
+        # exec < <(printf "%s" "$input")
+        exec < <(s chomp <<< "$input")
+        shift
+    }
+    ;;
+
+    -sout)
+        SPONGE_OUT=y; shift
+    ;;
+
+    -vipe)
+        VIPE_MODE_FORCE=y; shift
+    ;;
+
+    -v)
+        set -xv
+        shift
+    ;;
+
+    *)
+        break
+    ;;
+esac; done
+
+# form_command() {
+#     input="$(cat)"
+#     p -- "%s" "stty stop undef; stty start undef; $input"
+# }
+
+
+debug_mode_enabled() {
+    case "$-" in
+        *x*) true;;
+        *v*) true;;
+        *) false;;
+    esac
+}
+
+# set -xv
+# Alias 2 before we close it. So we can restore it for fzf
+exec 4>&2
+
+# This is incredibly annoying
+# if ! debug_mode_enabled; then
+#     exec 2>/dev/null
+# fi
+
+# pen-tm n "$@"
+
+# Recreate the same tmux system because it's amazing. But don't use it
+# exclusively.
+# Work on new tmux systems where things are searched for. Use fuzzy
+# search much more.
+
+# I want more search.
+# I want more NLP.
+# I want more machine-learning.
+# I want more functional programming.
+# I want abstraction where everything is tensors or working towards that.
+# I want to be able to retrospectively understand the things I am
+# writing using NLP libraries.
+# Only use abstraction this time. Build a tensorflow-based development environment.
+# To do this I need:
+#   a decent python development environment -- use spacemacs
+# While
+
+
+second_last_arg() {
+    if [ "$#" -gt "1" ]; then
+        n=$(($#-1))
+        eval ARG=\${$n}
+        pl "$ARG"
+    fi
+}
+
+last_arg() {
+    if [ "$#" -gt "0" ]; then
+        n=$(($#-0))
+        eval ARG=\${$n}
+        pl "$ARG"
+    fi
+}
+
+session_list() {
+    tmux list-sessions | sed '/^[^:]\+:/ s/^\([^:]\+\).*/\1/'
+    return 0
+}
+
+copy-line() {
+    y="$1"
+
+    # offset must be a negative number, actually
+
+    if printf -- "%s\n" "$y" | grep -q -P '^[-+]'; then
+        offset="$y"
+        y=
+    fi
+    : ${y:="$(tmux display -p "#{cursor_y}")"}
+
+    if test -n "$offset"; then
+        y="$(( y + offset ))"
+    fi
+
+    : ${y:="$(tmux display -p "#{cursor_y}")"}
+
+    pen-tm -f cat | sed -n "$((y + 1))p" | {
+        if test "$DO_FROM" = "y"; then
+            : ${x:="$(tmux display -p "#{cursor_x}")"}
+            cut -c $(( x + 1 ))-
+        else
+            # make a list of possible prompts
+            clean-repl
+        fi
+    } | xc -i -n
+}
+
+# ! test "$FAST" = "y" && tmux set -t "$CALLER_TARGET" set-remain-on-exit off
+
+f="$1"
+shift
+
+case "$f" in
+    config|fzf-config) {
+        exec 2>&4
+
+        # lit "$paths" | less
+
+        # TTY="$(tty)"
+        # export TTY
+        # exec <`pen-tm-tty`
+
+        selection="$(pen-tm-list-config | mnm | s uniq | soak | mfz -p)"
+
+        # ls -la /proc/$$/fd
+
+        ! [ -n "$selection" ] && exit 0
+
+            # pen-tm -te dv "open $selection"
+            # pen-tm n "$selection"
+            # exit 0
+
+            # p -- "%s\n" "$selection"
+            # p "open $selection" | pen-tm -tout -S nw -cin
+
+        # pen-tm -d -te -S nw -noerror "open -e $(aqf "$selection")"
+        open -e "$selection"
+
+            # pak
+            # | pen-tm -tout nw -pak "vim -"
+        exit 0
+
+        ge "$selection"
+    }
+    ;;
+
+    findrun) {
+        exec 2>&4
+        selection="$(list-executables | mfz)"
+        wp="$(which "$selection")"
+
+        # p -- "%s\n" "$wp"
+
+        pen-tm run "$wp"
+
+        # bind -n F13 neww -t localhost: -n "run" 'pen-tm findrun'
+    }
+    ;;
+
+    em-click-bg) {
+        set -m
+        pen-tm em-click &
+        disown
+    }
+    ;;
+
+    em-click) { # easymotion click
+        # Requires this patch: $HOME/notes2018/ws/pen-tm/patches/em-click.diff
+
+        cap_file="$(pen-tm cap | tf txt; sleep 0.5)"
+        if [ -s "$cap_file" ]; then
+            pen-tm -te nw -n em-click "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
+
+            x="$(cat /tmp/em-click.txt | cut -d ' ' -f 2)"
+            y="$(cat /tmp/em-click.txt | cut -d ' ' -f 1)"
+
+            if [ -n "$x" ] && [ -n "$y" ]; then
+                # notify-send "$loc"
+                x=$((x - 1))
+                y=$((y - 1))
+                # cmd pen-tm click-wrap $x $y | ns &>/dev/null
+
+                # I don't really want this sleep
+                sleep 1
+
+                pen-tm click-wrap $x $y
+            fi
+        fi
+
+        # Need to obtain coordinates here. Thene run: "pen-tm click -t %570 0 0"
+        # $HOME$VIMCONFIG/vim/pack/myplugins/start/vim-easymotion-new/autoload/vital/easymotion.vim
+
+        exit 0
+    }
+    ;;
+
+    regex-find-coord) {
+        # get coordinates
+        # pen-tm n "$f :: NOT IMPLEMENTED"
+
+        last_arg="${@: -1}"
+        regex="$last_arg"
+
+        # shift last arg
+        set -- "${@:1:$(($#-1))}"
+
+        : ${LITERAL:="n"}
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -t) {
+                TARGET="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -l) {
+                LITERAL=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        : ${TARGET:="$TMUX_PANE"}
+
+        ## for -nohist and -t
+        #CMD="$(
+        #for (( i = 1; i < $#; i++ )); do
+        #    eval ARG=\${$i}
+        #    printf -- "%s" "$ARG" | q
+        #    printf ' '
+        #done
+        #eval ARG=\${$i}
+        #printf -- "%s" "$ARG" | q
+        #)"
+
+        # eval "pen-tm -te -d capture $CMD -clean -"
+
+        if test "$LITERAL" = "y"; then
+            # eval "pen-tm cap-pane $CMD -clean -nohist" | pcre-pos.pl "$regex"
+            pen-tm cap-pane "$@" -clean -nohist | pcre-pos.pl "$regex"
+        else
+            #eval "pen-tm cap-pane $CMD -clean -nohist" | exact-pos.pl "$regex"
+            pen-tm cap-pane "$@" -clean -nohist | exact-pos.pl "$regex"
+        fi
+
+        exit 0
+    }
+    ;;
+
+    # pen-tm regex-click -t "%617" regex
+    regex-click) {
+
+        ALL=n # click everything that matches
+        LITERAL=n
+        x_offset=0
+        y_offset=0
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -t) {
+                TARGET="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -a) {
+                ALL=y
+                shift
+            }
+            ;;
+
+            -l) {
+                export LITERAL=y # for "pen-tm regex-find-coord"
+                shift
+            }
+            ;;
+
+            -x) {
+                x_offset="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -y) {
+                y_offset="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        re="$1"
+        shift
+
+        results="$(pen-tm regex-find-coord -nohist -t "$TARGET" "$re")"
+
+        # -x "$x_offset" -y "$y_offset"
+
+        if test "$ALL" = "y"; then
+            printf -- "%s\n" "$results" | awk1 | while IFS=$'\n' read -r line; do
+                printf -- "%s\n" "$line" | xargs pen-tm click -t "$TARGET"
+                sleep 0.1
+            done
+        else
+            printf -- "%s\n" "$results" | head -n 1 | xargs pen-tm click -t "$TARGET"
+        fi
+
+        exit 0
+    }
+    ;;
+
+    click-wrap) { # start wrapper and then click on it
+        swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
+        sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
+        sheight="$(( sheight + 2 ))"
+
+        server="$(pen-tm-get-server)"
+
+        # Don't use pen-tm attach, to make this faster.
+        tmux \
+            new-session -d \
+                -x "$swidth" \
+                -y "$sheight" \
+                -A \
+                -s wrap \
+                \; \
+            respawnp -k \
+                -t "wrap:1" \
+                "TMUX= tmux -L $server attach -t \"$CALLER_TARGET\""
+
+        [ -n "$1" ] && x="$1" && shift
+        [ -n "$1" ] && y="$1" && shift
+
+        # Wait for C-M-f to close
+        while tmux has-session -t ":em-click"; do
+            sleep 0.1
+        done
+
+        # sleep 1
+        pen-tm click -t "wrap:1" "$x" "$y"
+
+        # sleep 0.2
+
+        tmux kill-pane -t "wrap:1.0"
+    }
+    ;;
+
+    # recterm is obsolete
+    ttyrec-auto|recterm|ttystudio-gif|ascl|asciinema-local) {
+        swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
+        sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
+        sheight="$(( sheight + 2 ))"
+
+        caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
+
+        tmsessionname="${f}-$caller_slug-$(date-ts)"
+
+        server="$(pen-tm-get-server)"
+
+        # ttyrec-auto -- this script uses $f as the binary to call
+
+        cmd="unset TTY; x -s \"${f}\" -c m -e \"\$\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
+
+        TMUX= tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "$tmsessionname"
+
+        xt -b -E "tmux setenv -t $(aqf "$tmsessionname") WINDOWID $(aqf "\$WINDOWID") \\; respawnp -k -t $(aqf "$tmsessionname:1") $(aqf "$cmd") \\; attach -t $(aqf "$tmsessionname")"
+    }
+    ;;
+
+    ac|asciinema) {
+        # Maybe don't make it smaller.
+
+        # trap sigwinch so tmux cant get it.
+        # Start an invisible tmux that wraps the current session
+        # do something like click-wrap
+
+        swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
+        sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
+        sheight="$(( sheight + 2 ))"
+
+        caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
+
+        server="$(pen-tm-get-server)"
+
+        # echo "$CALLER_TARGET" | tv; exit 0
+
+        # cmd="bash"
+        # cmd="x -sh \"set -xv; asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t \$(aqf \"$CALLER_TARGET\")\" -c m -i"
+        # cmd="x -sh \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux -L $server attach -t \$(aqf \"$CALLER_TARGET\")\" -c m -i"
+        # cmd="x -sh \"asciinema rec\" -c m -e \"»\" -i"
+        # USE -s, not -sh. This is so the shell remains so I can copy
+        # its result
+        # DO NOT USE set -xv
+
+        cmd="unset TTY; x -s \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
+
+        tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
+
+        xt -b tmux attach -t "cinema-$caller_slug"
+    }
+    ;;
+
+    ## pen-tm click -t %570 0 0
+    #click) {
+    #    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    #        -t) {
+    #            TMUX_PANE="$2"
+    #            shift
+    #            shift
+    #        }
+    #        ;;
+
+    #        *) break;
+    #    esac; done
+
+    #    [ -n "$1" ] && x="$1" && shift
+    #    [ -n "$1" ] && y="$1" && shift
+
+    #    : ${TMUX_PANE:="$CALLER_PANE"}
+
+    #    # pen-tm cursor
+    #    if test -z "$x"; then
+    #        x="$(tmux display -t "$TMUX_PANE" -p "#{cursor_x}")"
+    #    fi
+    #    if test -z "$y"; then
+    #        y="$(tmux display -t "$TMUX_PANE" -p "#{cursor_y}")"
+    #    fi
+
+    #    ns "$TMUX_PANE $x $y" &>/dev/null
+
+    #    if [ -n "$TMUX_PANE" ] && [ -n "$x" ] && [ -n "$y" ]; then
+    #        # TODO Fix this -- it's backwards.
+    #        tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -d $y $x)"
+    #        sleep 0.2
+    #        tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -u $y $x)"
+    #    fi
+    #    exit 0
+    #}
+    #;;
+
+    # pen-tm click -t %570 0 0
+    click|mousedown|mouseup|mouseclick) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -t) {
+                TMUX_PANE="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -x) {
+                export EXTENDED_MODE=y
+                shift
+            }
+            ;;
+
+            -r) {
+                export RIGHT=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        [ -n "$1" ] && x="$1" && shift
+        [ -n "$1" ] && y="$1" && shift
+
+        : ${TMUX_PANE:="$CALLER_PANE"}
+
+        # pen-tm cursor
+        if test -z "$x"; then
+            x="$(tmux display -t "$TMUX_PANE" -p "#{cursor_x}")"
+        fi
+        if test -z "$y"; then
+            y="$(tmux display -t "$TMUX_PANE" -p "#{cursor_y}")"
+        fi
+
+        # ns "$f $TMUX_PANE $x $y" &>/dev/null
+
+        if [ -n "$TMUX_PANE" ] && [ -n "$x" ] && [ -n "$y" ]; then
+            case "$f" in
+                mousedown) {
+                    tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -d $x $y)"
+                }
+                ;;
+
+                mouseup) {
+                    tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -u $x $y)"
+                }
+                ;;
+
+                click|mouseclick) {
+                    tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -d $x $y)"
+                    sleep 0.2
+                    tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -u $x $y)"
+                }
+                ;;
+
+                *)
+            esac
+        fi
+        exit 0
+    }
+    ;;
+    
+    # mouseclick) {
+    #     pen-tm mousedown "$@"
+    #     sleep 0.2
+    #     pen-tm mouseup "$@"
+    # }
+    # ;;
+
+    goto-fzf) {
+        # jumplist -- in the future I colud have a general-purpose command panel, maybe
+
+        # I need a menu that returns something.
+        # A selection system.
+
+        # pen-tm -d spv "sh-tmux-hydra"
+
+        eval "tmux run -b $(aqf "pen-tm find-window-from-session -no-activate")"
+    }
+    ;;
+
+    start) {
+        attach=n
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -a) {
+                attach=y
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        # exit 0
+
+        # This is killing my machine with lots of infinite loops
+        # exit 0
+
+        notify-send "Starting emacs"
+
+        unbuffer e -startall
+
+        unbuffer bash -xv e -startall
+
+        # Must wait for this to finish before starting tmux sessions
+        # Although, this appears to take forever.
+        # Therefore, with 'open' only use emacs if the server is
+        # available
+
+        if ! pen-tm session-exists localhost; then
+            pen-tm ns -np -r -l -d -c "$HOME/notes" -n localhost "$shell"
+
+            # Cannot put new window creation in this function. Start is
+            # meant to be immutable so it can be called many times, when
+            # a new xterm is created.
+            # # How is this being called write?
+            # # this should open up as the folder is sourced
+            # pen-tm -d nw -d -n closh closh
+            # pen-tm -d nw -d -n hy hy
+        fi
+        pen-tm attach localhost
+    }
+    ;;
+
+    target-exists) {
+        pen-tm n "$f :: NOT FULLY IMPLEMENTED"
+
+        # Need support for checking if windows and panes exist.
+        # Use in rsp|respawn-pane) {
+
+        tmux has-session -t "$1:"
+        exit $?
+    }
+    ;;
+
+    session-exists) {
+        # session_list
+        # exit 0
+        # session_list | s one-of "$1"
+
+        # exit $?
+
+        # Must be done like this because of error code
+        sessions="$(session_list)"
+        printf -- "%s" "$sessions" | s one-of "$1"
+        exit $?
+    }
+    ;;
+
+    bp-other|bpo) { # breakp -other
+        pen-tm n "$f :: Use 'bp -o'"
+        # new_window="$(tmux neww -F "#{pane_id}" -P -s "$CALLER_PANE")"
+    }
+    ;;
+
+    bp|breakp) {
+        while :; do opt="$1"; case "$opt" in
+            -s|-save) {
+                SAVE=y
+                shift
+
+            }
+            ;;
+
+            -r|-reserve) {
+                RESERVE=y
+                shift
+
+                # bind M-b run 'tmux-breakpane.sh'
+            }
+            ;;
+
+            -o|-other) { # other panes
+                OTHER=y
+                shift
+
+                # bind M-! run 'tmux-break-other-panes.sh'
+            }
+            ;;
+
+            -E) { # other panes
+                CMD="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+
+        esac; done
+
+        if test "$OTHER" = "y"; then
+            notify-send "$CALLER_PANE"
+            win_name="$(tmux display -p "#W")"
+            new_window="$(tmux neww -F "#{window_id}" -P "echo originally: $CALLER_PANE | rosie match all.things | less -r")"
+            tmux swap-window -s "$CALLER_PANE" -t "$new_window" \; \
+                 rename-window -t "$new_window" "$win_name" \; \
+                 rename-window -t "$CALLER_PANE" "[broke$CALLER_PANE]" \; \
+                 swap-pane -s "${new_window}.0" -t "$CALLER_PANE"
+
+            exit 0
+
+        elif test "$RESERVE" = "y" || test "$SAVE" = "y"; then
+            # TODO Make it so breaking a placeholder pane should take
+            # you to the broken pane.
+
+            # Need to do completely differently
+            # Create a new window, then swap the panes.
+            # Then respawn the original pane
+
+            CALLER_PANE="$(tmux display -p "#{pane_id}")"
+            window_name="$(tmux display -p "#{window_name}")"
+
+            if printf -- "%s" "$window_name" | grep -q -P '^%'; then
+                tmux swap-pane -s "$window_name" -t "$CALLER_PANE" && \
+                    tmux kill-pane -t "$window_name"
+                tmux select-window -t "CALLER_PANE"
+                exit 0
+            fi
+
+            # If the name starts with '%' then swap the panes back to
+            # their original places
+
+            # new_pane="$(tmux neww -d -F "#{pane_id}" -P "echo placeholder for: $CALLER_PANE | rosie match all.things | less -r")"
+            new_pane="$(tmux neww -d -F "#{pane_id}" -P "echo | rosie match all.things | less -r; tmux swap-pane -s $(aqf "$new_pane") -t $(aqf "$CALLER_PANE")")"
+
+            if test -z "$CMD"; then
+                if test "$#" -gt 0; then
+                    CMD="$(cmd "$@")"
+                    : ${CMD:="$(cmd "$@")"}
+                else
+                    CMD="echo placeholder: $new_pane | rosie match all.things | less -r"
+                fi
+            fi
+            # printf -- "%s\n" "$CMD" > /tmp/hioenuth.txt
+
+            tmux swap-pane -s "$new_pane" -t "$CALLER_PANE"
+            tmux rename-window -t "$CALLER_PANE" "$new_pane"
+
+            tmux respawn-pane -k -t "$new_pane" "$CMD; tmux swap-pane -s $(aqf "$new_pane") -t $(aqf "$CALLER_PANE")" > /tmp/utehont.txt
+            # tmux respawn-pane -k -t "$new_pane" "$CMD; tmux swap-pane -s $(aqf "$new_pane") -t $(aqf "$CALLER_PANE")"
+
+            if test "$RESERVE" = "y"; then
+                tmux select-window -t "$CALLER_PANE"
+            fi
+
+            # new_pane="$(tmux break-pane -F "#{pane_id}" -P -s "$CALLER_PANE")"
+            # tmux select-window -t "$new_pane"
+            # tmux rename-window -t "$new_pane" "[broke$new_pane]"
+
+            # notify-send "reserve $CALLER_PANE $new_pane"
+            exit 0
+
+        else
+            # This does not get the current pane. How annoying!
+            #CALLER_PANE="$(tmux display -t "$CALLER_TARGET" -p "#{pane_id}")"
+
+            # This gets current pane
+            CALLER_PANE="$(tmux display -p "#{pane_id}")"
+            # pen-tm n "$CALLER_PANE"
+            # exit 0
+
+            new_window="$(tmux break-pane -F "#{pane_id}" -P -s "$CALLER_PANE")"
+            # This should be happening but it's not.
+            # Ahh, it's because pen-tm breakp uses caller_target which is
+            # not the pane. it's the session
+            tmux select-window -t "$new_window"
+            tmux rename-window -t "$new_window" "[broke$new_window]"
+        fi
+    }
+    ;;
+
+
+    # xclip → tmux
+    xc) {
+        exec 2>/dev/null
+        exec 1>/dev/null
+        #tmux load-buffer -b myclipboard =(unbuffer xc)
+        zsh --no-rcs -c "tmux load-buffer =(unbuffer xc "$@")"
+    }
+    ;;
+
+    # tmux → xclip
+    xv) {
+        # exec 2>/dev/null
+        # exec 1>/dev/null
+        zsh --no-rcs -c "tmux save-buffer - | xc "$@""
+    }
+    ;;
+
+    # I need a way to store strings into registers arbitrarily.
+    # Multiple clipboards. Use temporary files. Use xc.
+    # xc -r a
+    # xc -r something
+
+    # I need to get freaky good with shell and haskell.
+    # Keep adding abstraction.
+
+    ask) {
+        :
+        # Ask for something.
+        # Replace this with a separate program.
+
+        # Register
+        # tmux command-prompt -p man "new-window -n man-%1 \"exec m man %1\""
+    }
+    ;;
+
+    # $HOME/scripts/m
+    man) {
+        program="$1"
+        PROGRAM="$1"; : ${PROGRAM:="runit"}
+        #tmux command-prompt -p man "new-window -n man-%1 \"exec m man %1\""
+        # tmux command-prompt -p man "new-window -n man-%1 \"exec nv -2 \\\"tmux new \\\\\\\"m u %1\\\\\\\"\\\"\""
+
+        # tmux command-prompt -p man "new-window -n man-%1 \"m u %1\""
+
+
+        # tmux command-prompt -p man "splitw \"m u %1\""
+
+        tmux command-prompt -p man "splitw \"sh-man %1\""
+    }
+    ;;
+
+    # paste from x clipboard
+    xp) {
+        # x clip paste
+        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(unbuffer xc "$@")"
+        tmux paste-buffer -pr -b myclipboard
+
+        # -r do not replace LF with CR
+        # -p brackets
+    }
+    ;;
+
+    ep|edit-paste|vp|vipe-paste) {
+        # pen-tm sph "echo -n '' | vipe" | cat
+        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(pen-tm -sout sph \"echo -n '' | vipe\" | cat | s chomp)"
+        #tmux paste-buffer -pr -b myclipboard
+
+        # Don't use paste brackets
+        tmux paste-buffer -r -b myclipboard
+
+        # -r do not replace LF with CR
+        # -p brackets
+    }
+    ;;
+
+    ta) {
+        name=$(last_arg "$@")
+
+        if [ -n "$name" ]; then
+            . ~/.shell_environment
+            tmux attach -t "$name"
+        else
+            . ~/.shell_environment
+            tmux attach
+        fi
+    }
+    ;;
+
+    ta-local) {
+        ta localhost
+        exit 0
+    }
+    ;;
+
+    shpv|show-pane-variable) {
+        shpv "$1"
+    }
+    ;;
+
+    cursor) {
+        ## pen-tm is heavy
+        # pen-tm shpv "cursor_x"
+        # pen-tm shpv "cursor_y"
+        tmux display -t "$CALLER_TARGET" -p "#{cursor_x}"
+        tmux display -t "$CALLER_TARGET" -p "#{cursor_y}"
+    }
+    ;;
+
+    shpvs|show-pane-variables) {
+        shpvs
+    }
+    ;;
+
+    pns|pane-status) {
+        # tmux status
+
+        if test "$(hostname)" = "morgan"; then
+            : ${FAST:="y"}
+        fi
+
+        # It would be much nicer if I could put this into json
+        # Need DSLs for this
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -f) {
+                FAST=y
+                shift
+            }
+            ;;
+
+            -nw) {
+                makenewpane=nw
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+        
+        if test -n "$1"; then
+            export TMUX_PANE="$1"
+        fi
+
+        {
+            shpvs -t "$TMUX_PANE"
+
+            # It would make much more sense to output this stuff in
+            # something like json.
+
+            pl
+
+            pid="$(tpv -t "$TMUX_PANE" pane_pid)"
+
+            pl "pid: $pid"
+
+            pl
+
+            pl "pwd: $(pwd)"
+            echo
+
+            cmd="pstree -lAsp \"$pid\""
+            printf -- "%s" "$cmd: "
+            eval "$cmd"
+            echo
+
+            cmd="pstree -alAsp \"$pid\""
+            pl "$cmd"
+            eval "$cmd"
+            echo
+
+            if ! test "$FAST" = "y"; then
+                pl "Open files"
+                pstree -lAp "$pid" | \
+                    sed 's/\(([0-9]\+)\)/(\n\1\n/g' | \
+                    sed -n '/([0-9]\+)/ s/[^0-9]//pg' | \
+                    while read pid; do
+                        lsof -p $pid 2>/dev/null | sed 's/ \+/ /g' | cut -d ' ' -f9- | sed '1d';
+                    done | s uniq | grep -v /lib/
+            else
+                echo Fast mode enabled. Not showing open files.
+            fi
+
+            # lsof
+
+        } | mnm | {
+            if is_tty || test "$makenewpane" = "nw"; then
+                pen-tm -tout -i -S nw v
+            else
+                cat
+            fi
+        }
+
+        # Introspection on anything running in any terminal
+    }
+    ;;
+
+    xta) {
+        # just pass the -b onward
+        
+        xt_opt=
+
+        opt="$1" # it might not be opt though. it might be target
+        case "$opt" in
+            -b|-h) { xt_opt=$opt; shift; } ;;
+        esac
+
+        last_arg="${@: -1}"
+        name="$last_arg"
+        : ${name:="localhost:"}
+
+        # lit "$name" | xtv
+
+        # This needs fixing
+
+        if test "$name" = "localhost:"; then
+            cd "$NOTES"
+            export CWD="$NOTES"
+        fi
+
+        if [ -n "$name" ]; then
+            xt $xt_opt pen-tm ta "$name"
+        else
+            # xt $xt_opt pen-tm ta
+            pen-tm-attach-localhost
+        fi
+    }
+    ;;
+
+    ts) {
+        # This is run but when logging in start is also run
+        pen-tm start
+
+        pen-tm ta localhost
+    }
+    ;;
+
+    # new background session
+    nds|nbgs) {
+        server="$(pen-tm-get-server)"
+
+        unset TMUX
+
+        if [ -n "$3" ]; then
+            # name, dir, command
+            tmux new-session -d -s "$1" -c "$2" "$3"
+        elif [ -n "$2" ]; then
+            # name, dir
+            tmux new-session -d -s "$1" -c "$2"
+        elif [ -n "$1" ]; then
+            # name
+            tmux new-session -d -s "$1"
+        else
+            tmux new-session -d
+        fi
+    }
+    ;;
+
+    # This is not notify-send. It's new-session. But that isn't clear.
+    # Avoid using "pen-tm ns"
+    ns|new-s|new-session) {
+        server="$(pen-tm-get-server)"
+
+        unset TMUX
+        # set -xv
+
+        HIGHLIGHT=
+        HAS_PARENT=y # Default action is to create a subsession (but a subsession in the new-window sense)
+        RECURSIVE=n
+        ATTACH=n
+        SELECT=n
+        # TARGET=
+        force_create_session=n
+        session_name=
+        session_title=
+        : ${REPEAT_COMMAND:="n"}
+        : ${AUTO_RETRY:="n"}
+        PRESS_ANY_KEY_FINISH=y
+        REMAIN_ON_EXIT=n
+        RETRY_SLEEP=0
+        # Unfortunately, this simply creates more windows than tmux can
+        # handle atm. I don't want to disable it by default
+        : ${G_AUTOFILES:="y"} # global autofiles
+        : ${L_AUTOFILES:="y"} # local autofiles
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -a) { # Attach to the parent session
+                ATTACH="y"
+                shift
+            }
+            ;;
+
+            -f) { # if the session name already exists, use this
+                force_create_session="y"
+                shift
+            }
+            ;;
+
+            -A) {
+                G_AUTOFILES="y"
+                L_AUTOFILES="y"
+                shift
+            }
+            ;;
+
+            -w) {
+                HIGHLIGHT=warn
+                shift
+            }
+            ;;
+
+            -hlgreen) {
+                HIGHLIGHT=green
+                shift
+            }
+            ;;
+
+            -hlblue) {
+                HIGHLIGHT=blue
+                shift
+            }
+            ;;
+
+            -hldblue) {
+                HIGHLIGHT=dblue
+                shift
+            }
+            ;;
+
+            -hlred) {
+                HIGHLIGHT=red
+                shift
+            }
+            ;;
+
+            -paks|-pakstart) {
+                PRESS_ANY_KEY_START=y
+                shift
+            }
+            ;;
+
+            -na) {
+                G_AUTOFILES=n
+                L_AUTOFILES=n
+                shift
+            }
+            ;;
+
+            -s) {
+                ATTACH="y"
+                SELECT="y"
+                shift
+            }
+            ;;
+
+            -R|-repeat) {
+                REPEAT_COMMAND=y
+                PRESS_ANY_KEY_FINISH=y
+                shift
+            }
+            ;;
+
+            -A|-autoretry) {
+                REPEAT_COMMAND=y
+                PRESS_ANY_KEY_FINISH=n
+                RETRY_SLEEP=2
+                shift
+            }
+            ;;
+
+            -r|-roe) {
+                # This is evil. Use PAK
+                # REMAIN_ON_EXIT="y"
+                :
+                shift
+            }
+            ;;
+
+            -l) {
+                RECURSIVE="y"
+                shift
+            }
+            ;;
+
+            -d) {
+                SELECT="n"
+                shift
+            }
+            ;;
+
+            -np) {
+                HAS_PARENT="n"
+                shift
+            }
+            ;;
+
+            # Need to be able to specify that this session has a parent
+            # because many do not.
+
+            -t|-p) { # parent session
+                # HAS_PARENT="y"
+                TARGET="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -c) {
+                # This expands the glob
+                dir="$(eval echo -e "$2")" # expand
+                dir="$(realpath "$dir")"
+                CWD="$dir"
+                mkdir -p "$CWD"
+                cd "$CWD"
+                export CWD
+
+                envstring+="export CWD=\"$CWD\"; "
+
+                # : ${CWD:="$(pwd)"}; cd "$CWD"
+
+                shift
+                shift
+            }
+            ;;
+
+            -n) {
+                session_name="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -T|-title) {
+                session_title="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        CMD="$(
+        for (( i = 1; i < $#; i++ )); do
+            eval ARG=\${$i}
+            printf -- "%s" "$ARG" | q
+            printf ' '
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG" | q
+        )"
+
+        if [ -z "$CWD" ]; then
+            : ${CWD:="$(pwd)"}; cd "$CWD"
+        fi
+
+        d_bn="$(basename "$CWD")"
+
+        # pen-tm dv "$CWD"
+
+        if [ -z "$session_name" ]; then
+            if [ $# -gt 0 ]; then
+                session_name="$d_bn/$1"
+            else
+                session_name="$d_bn"
+            fi
+        fi
+        # lit "$session_name"
+        # exit 0
+
+        # Consider prepending CALLER_TARGET to session_name here.
+        if test "$HAS_PARENT" = "y"; then
+            # this is not always the correct PARENT_SESSION_NAME. if you
+            # call "pen-tm ns" using key bindings then it gets the
+            # grandparent
+            session_name="${PARENT_SESSION_NAME}_${session_name}"
+        fi
+
+        # Sometimes I do not want a parent session so only set this if
+        # we are forcefully finding the parent session.
+        # TARGET is the session we want to create windows and
+        # subsessions for. I think this code is outdated. Test what
+        # happens if I comment this out
+        if [ -z "$TARGET" ] && test "$HAS_PARENT" = "y"; then
+            TARGET="$CALLER_TARGET"
+
+            # Ensure this is a session name
+            TARGET="$(tmux display-message -p -t "$TARGET" '#{session_name}')"
+        fi
+
+        # pen-tm dv "$session_name $CWD"
+
+        # exec 2>&4
+
+        session_exists=n
+
+
+        # This doesn't work yet because I still need to make new-session
+        # able to be respawned
+        # if test "$REPEAT_COMMAND" = "y"; then
+        #     cmd_pre="while :; do $cmd_pre"
+        #     cmd_post="$cmd_post; done"
+        # fi
+
+
+        pen-tm -f session-exists "$session_name" && session_exists=y
+        # This log goes into the new window. Create a new pen-tm function
+        # for this.
+        if ! test "$session_exists" = "y" || test "$force_create_session" = "y"; then
+            # So we don't get an error
+            mkdir -p "$CWD"
+            displayed_name="$(printf -- "%s" "$session_name" | displayedname)"
+
+            # status-left must remain as this so capture works
+            CWD="$CWD" tmux new-session -d -s "$session_name" -c "$CWD" "zsh" \; \
+                setenv -t "$session_name" "TM_SESSION_NAME" "$session_name" \; \
+                setenv -t "$session_name" "PARENT_SESSION_ID" "$PARENT_SESSION_ID" \; \
+                setenv -t "$session_name" "PARENT_SESSION_NAME" "$PARENT_SESSION_NAME" \; \
+                setenv -t "$session_name" "PARENT_WINDOW_ID" "$PARENT_WINDOW_ID" \; \
+                setenv -t "$session_name" "CWD" "$CWD" \; \
+                set -t "$session_name" status-left "[ $displayed_name ]  "
+
+            # When I source a .tmux.sh file, this should happen
+            # automatically.
+            # No need for this
+            # export CALLER_TARGET
+
+            if test "$HAS_PARENT" = "y"; then
+                :
+                # This is excruciatingly slow
+                # if test "$REMAIN_ON_EXIT" = "y"; then
+                #     tmux set -t "$TARGET" set-remain-on-exit on
+                # else
+                #     tmux set -t "$TARGET" set-remain-on-exit off
+                # fi
+            fi
+            export CURRENT_SESSION_NAME="$session_name"
+            export PARENT_SESSION_NAME="$session_name"
+
+            if [ -n "$PARENT_SESSION_NAME" ]; then
+                PARENT_SESSION_ID="$(tmux display-message -p -t "$session_name:" '#{session_id}')"
+            fi
+            export PARENT_SESSION_ID
+
+            # I should make this more robust by using window ID instead of a
+            # name
+            if test "$RECURSIVE" = "y"; then
+                # . .tmux.sh;
+
+                # Create the subsession
+                # pen-tm ns -r -s -c ../scripts
+                # pen-tm ns -r -d -c "$CWD" -n "$session_name" "$shell"
+                # This is not where it happens. The commands are run from
+                # .tmux.sh files
+
+                # I want autofiles to happen before tmux.sh
+
+                (
+                    export TARGET="$session_name"
+                    cd "$CWD"
+
+                    test -f ".tmux-pre.sh" && source ".tmux-pre.sh"
+
+                    case "$AUTOFILES" in
+                        n) {
+                            G_AUTOFILES=n
+                            L_AUTOFILES=n
+                        }
+                        ;;
+
+                        y) {
+                            G_AUTOFILES=y
+                            L_AUTOFILES=y
+                        }
+                        ;;
+
+                        *)
+                    esac
+
+                    # DISCARD: The autofiles do not actually use full_id
+                    # because they do not launch subsessions
+
+                    # After creating the new window, I need to tell the
+                    # subsession what its window id is, because it
+                    # won't know. But this must also work for windows
+                    # created with pen-tm nw, as in .tmux.sh
+
+                    # ID_FORMAT="#{session_id}:#{window_id}.#{pane_id}"
+
+                    # Having less as a preview will prevent the recent files
+                    # from getting clogged up with .org files.
+
+                    # TODO Fix this up
+                    # Combine autofiles lists. Local first.
+                    # Get the 'set difference' to the existing window
+                    # names.
+
+                    # Do this later
+                    # existing_windows="$(tmux list-windows -F '#{window_name}')"
+                    # Don't use "s uniq", I need the "set difference".
+
+                    #  Remember there is an elisp library for common-lisp functions
+                    # (require 'cl)
+                    # (set-difference '(1 2 3) '(2 3 4))
+
+                    # Common lisp: (set-difference '(1 2 3) '(2 3 4))
+                    # unopenend_global_autofiles="$({ printf -- "%s\n" "$existing_windows"; lsautofiles -g } | s uniq)"
+
+                    # I want to combine 2 lists
+
+                    if test "$G_AUTOFILES" = "y"; then
+                        CWD="$CWD" lsautofiles -g | awk 1 | while IFS=$'\n' read -r line; do
+                            if test -f "$line"; then
+                                # full_id="$(pen-tm -d -te nw -F
+                                # "$ID_FORMAT" -P -hlgreen -R -nopakf -n "$line" -c "$CWD" "preview $(aqf "$line"); rifle \"$line\"")"
+
+                                pen-tm-open-file-green "$line"
+
+                            elif test -d "$line"; then
+                                line="$(printf -- "%s" "$line" | qne)"
+
+                                # full_id="$(pen-tm -d -te nw -F "$ID_FORMAT" -P -hlgreen -R -nopakf -n "$line" -c "$CWD" "ls \"$line\" | less -S; ranger \"$line\"")"
+
+                                # Old way: open ranger
+                                # pen-tm -d -te nw -hlgreen -R -nopakf -n "$line" -c "$CWD" "ls \"$line\" | less -S; ranger \"$line\""
+
+                                REPEAT_COMMAND=y pen-tm ns -hlred -r -l -s -c "$line"
+                            fi
+                        done
+                    fi
+
+                    if pen-tm-minimal; then
+                        test -f ".tmux-minimal.sh" && source ".tmux-minimal.sh"
+                    else
+                        test -f ".tmux.sh" && source ".tmux.sh"
+                    fi
+
+                    if test "$L_AUTOFILES" = "y"; then
+                        CWD="$CWD" lsautofiles -l | awk 1 | while IFS=$'\n' read -r line; do
+                            if test -f "$line"; then
+                                line="$(printf -- "%s" "$line" | qne)"
+                                # full_id="$(pen-tm -d -te nw -F "$ID_FORMAT" -P -hlblue -R -nopakf -n "$line" -c "$CWD" "less -S \"$line\"; rifle \"$line\"")"
+                                pen-tm -d -te nw -hldblue -R -nopakf -n "$line" -c "$CWD" "preview $(aqf "$line"); rifle \"$line\""
+                            elif test -d "$line"; then
+                                line="$(printf -- "%s" "$line" | qne)"
+                                # full_id="$(pen-tm -d -te nw -F "$ID_FORMAT" -P -hlblue -R -nopakf -n "$line" -c "$CWD" "ls \"$line\" | less -S; ranger \"$line\"")"
+
+                                # Old way: open ranger
+                                # pen-tm -d -te nw -hldblue -R -nopakf -n "$line" -c "$CWD" "ls \"$line\" | less -S; ranger \"$line\""
+
+                                REPEAT_COMMAND=y pen-tm ns -hlblue -r -l -s -c "$line"
+                            fi
+                        done
+                    fi
+
+                    # setenv -t "$session_name" "PARENT_SESSION_ID" "$PARENT_SESSION_ID" \; \
+
+                    # af="$(cat "$HOME/notes2018/programs/pen-tm/autofiles.txt")"
+
+                    # ls | awk 1 | while read -r bn; do
+                    #     printf -- "%s\n" "$af" | awk 1 | while read -r pat; do
+                    #         if printf -- "%s\n" "$rp" | grep -q -P "$pat"; then
+                    #             :
+                    #         fi
+                    #     done
+                    # done
+                )
+
+                # test -f .tmux.sh && sh .tmux.sh
+            fi
+
+            # This is the sh window. I should respawn it with a command
+            # instead
+            if [ $# -gt 0 ]; then
+                tmux respawnp -k -t "$session_name:1.0" "$CMD"
+            fi
+        fi
+
+        # lit $TARGET $session_name
+        # exit 0
+
+        tmux setenv -t "$session_name" "CWD" "$CWD"
+        # tmux kill-window "$session_name:1"
+
+        if test "$ATTACH" = "y"; then
+            cd "$CWD"
+
+            # If I want this to start the entire session again I need to
+            # create a new tmx source
+            # pen-tm -d nw $(test "$REMAIN_ON_EXIT" = "y" && p "-r") -d -t "$TARGET:" -n "$session_name" -c "$CWD" "pen-tm -f ssa \"$session_name:\""
+            # echo "pen-tm -d nw $(test \"$REMAIN_ON_EXIT\" = \"y\" && p
+            # \"-r\") -d -t \"$TARGET\" -n \"$session_name\" -c \"$CWD\"
+            # \"pen-tm attach \\\"$session_name:\\\"\""
+            # exit 0
+
+            # An extra command at the end (sleep) is required to prevent
+            # the server from crashing.
+
+            if test "$HAS_PARENT" = "y"; then
+                export HIGHLIGHT
+                roe_para="$(test "$REMAIN_ON_EXIT" = "y" && printf -- "%s" "-r")"
+                full_id="$(pen-tm -d nw -P $roe_para -d -t "$TARGET" -n "$displayed_name" -c "$CWD" "pen-tm attach $(aqf "$session_name"); sleep 0.1")"
+                # pen-tm -d nw $(test "$REMAIN_ON_EXIT" = "y" && printf -- "%s" "-r") -d -t "$TARGET" -n "$displayed_name" -c "$CWD" "pen-tm attach \"$session_name\"; sleep 0.1"
+
+                tmux setenv -t "$session_name:" "PARENT_WINDOW_ID" "$full_id"
+            else
+                pen-tm attach "$session_name"
+            fi
+
+            if test "$SELECT" = "y" && test "$HAS_PARENT" = "y"; then
+                tmux selectw -t "$TARGET:$displayed_name"
+            fi
+        fi
+
+        if test "$HAS_PARENT" = "y"; then
+            # Never use this. It's slow at hell and makes tmux unstable
+            # tmux set -t "$TARGET" set-remain-on-exit off
+            # echo "$TARGET" >> /tmp/tmux-targets.log
+            :
+        fi
+
+        exit 0
+    }
+    ;;
+
+    # Use: pen-tm-open-file-green
+    #open-file-green) {
+    #    fp="$1"
+
+    #    pen-tm -d -te nw -hlgreen -R -nopakf -n "$fp" -c "$CWD" "less -S $(aqf "$fp"); rifle $(aqf "$fp")"
+    #}
+    #;;
+
+    vt100) {
+        session_name="$1"
+
+        # This appears to not get the job done
+        export TERM=screen-2color
+
+        if [ -z "$CWD" ]; then
+            : ${CWD:="$(pwd)"}; cd "$CWD"
+        fi
+
+        pen-tm attach "$session_name" || {
+            true
+            # export TARGET="$session_name"
+            # source "$CWD/.tmux.sh"
+        }
+        exit $?
+    }
+    ;;
+
+    attach) {
+        session_name="$1"
+
+        if [ -z "$session_name" ]; then
+            session_name=localhost
+        fi
+
+        server="$(pen-tm-get-server)"
+
+        # Because, annoyingly, you can't specify an exact name
+        if pen-tm session-exists $session_name; then
+            TMUX= tmux -L $server attach -t "$session_name:" || {
+                true
+                # export TARGET="$session_name"
+                # source "$CWD/.tmux.sh"
+            }
+        elif test "$session_name" = "localhost"; then
+            pen-tm ns -r -l -d -c "$HOME/notes" -n localhost "$shell"
+            TMUX= tmux -L $server attach -t "$session_name:" || {
+            true
+        }
+    else
+            lit "session: $session_name does not exist"
+            pak c
+        fi
+        exit $?
+    }
+    ;;
+
+    ssa|source-session-attach) {
+        session_name="$1"
+
+        if [ -z "$CWD" ]; then
+            : ${CWD:="$(pwd)"}; cd "$CWD"
+        fi
+
+        pen-tm attach "$session_name" || {
+            true
+            # export TARGET="$session_name"
+            # source "$CWD/.tmux.sh"
+        }
+        exit $?
+    }
+    ;;
+
+    kp) {
+
+        # This kills everything.
+        #tmux kill-pane -t "$CALLER_TARGET"
+
+        # pen-tm n "$CALLER_TARGET $CALLER_PANE"
+
+        # This does not kill everything
+
+        if [ -n "$CALLER_PANE" ]; then
+            tmux kill-pane -t "$CALLER_PANE"
+        else
+            tmux kill-pane
+        fi
+    }
+    ;;
+
+    editsession) {
+        # env | less
+        # v .tmux.sh
+
+        {
+            test -f .tmux.sh && echo .tmux.sh
+            test -f .tmux-minimal.sh && echo .tmux-minimal.sh
+            test -f autofiles.txt && echo autofiles.txt
+            test -f $NOTES/programs/pen-tm/autofiles.txt && echo $NOTES/programs/pen-tm/autofiles.txt
+        } | s join ' ' | xargs -l1 pen-tm -f -d -te nw -args v
+
+        # pen-tm -te nw "v .tmux.sh"
+    }
+    ;;
+
+    type) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -s) {
+                delay="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        printf -- "%s" "$1" |
+        while IFS= read -N 1 char; do
+            # Just do it
+            tmux send-keys -l "$char"
+
+            if test -n "$delay"; then
+                sleep "$delay"
+            fi
+        done
+    }
+    ;;
+
+    typeclip) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -u) {
+                window_name="$2"
+                shift
+            }
+            ;;
+
+            -j) {
+                # Not sure what -j does
+                :
+
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        # At the moment, cheat and do the exact some thing as pen-tm xp
+        # I need it for moments when M-F3 is not working.
+
+        # x clip paste
+        # zsh --no-rcs -c "tmux load-buffer -b myclipboard =(unbuffer xc)"
+        # tmux paste-buffer -pr -b myclipboard
+
+        unbuffer xc | while IFS= read -N 1 char; do
+            # Don't need to check. newline
+            #if [[ "$char" == '\012' ]] ; then
+            #    tmux send-keys "Enter"
+            #else
+                # Just do it
+                tmux send-keys -l "$char"
+            #fi
+
+            # printf -- "%s" "$char"
+        done
+        exit 0
+
+        # send the keys one at a time to the terminal
+    }
+    ;;
+
+    getpane) {
+        :
+
+        # Not sure what -j does
+
+        # Should be used like this:
+        # tmux neww "TMUX_PANE=$(pen-tm getpane) some-commmand.sh"
+    }
+    ;;
+
+    runreturn) { # Am I going to delete this?
+        tf_returncode="$(mktemp -t tf_returncodeXXXXXX || echo /dev/null)"
+        trap "rm $(aqf "$tf_returncode") 2>/dev/null" 0
+
+        cmd="$1; echo \$? > $tf_returncode"
+
+        tmux neww -t "$CALLER_TARGET" "$cmd"
+
+        printf -- "%s\n" "$message"
+        # Not sure what -j does
+
+        # Should be used like this:
+        # tmux neww "TMUX_PANE=$(pen-tm getpane) some-commmand.sh"
+    }
+    ;;
+
+    nextlayout) {
+        # Not sure what -j does
+
+        tmux next-layout -t "$CALLER_TARGET"
+
+        #tmux neww "TMUX_PANE=$(pen-tm getpane) tmux-next-layout-ask.sh"
+    }
+    ;;
+
+    op|option) {
+        # Examples:
+
+        # pen-tm so default-shell
+        # pen-tm so default-shell /bin/bash
+
+        # pen-tm so synchronize-panes
+        # pen-tm so synchronize-panes 1
+
+        TMUX_OPTION="$1"
+        : ${TMUX_OPTION:="default-shell"}
+
+        OPTION_VALUE="$2"
+
+        if [ -n "$OPTION_VALUE" ]; then
+            tmux set -t "$CALLER_TARGET" $TMUX_OPTION "$OPTION_VALUE"
+        else
+            tpv "$TMUX_OPTION"
+        fi
+    }
+    ;;
+
+    editbuffer) {
+        bufdata="$(tmux save-buffer -)"
+        newdata="$(p -- "%s\n" "$bufdata" | EDITOR=v vipe)"
+
+        tmux delete-buffer
+        p -- "%s\n" "$newdata" | tmux load-buffer -
+    }
+    ;;
+
+    split|nw|neww|spv|sph|ss|new-window|rs|rsp|sps|smart|cw) {
+        # ssn="$(tmux display-message -p '#{session_name}')"
+        # set -xv
+
+        BACKGROUNDED=
+        SPLIT=
+        SMART_SPLIT=
+
+        # echo "_$HAS_STDIN" 1>&2
+        # echo "_$HAS_STDOUT" 1>&2
+        if { ! test "$HAS_STDIN" = y; } && test "$HAS_STDOUT" = y && ! test "$VIPE_MODE_FORCE" = y; then
+            # This is probably a process substitution
+            # But it could also be a vipe
+            RETURN_ID=y
+            BACKGROUNDED="-d"
+            DETACHMENT_SENTINEL=n
+            HAS_STDIN=
+            HAS_STDOUT=
+        fi
+
+        if test "$f" = "sps" || test "$f" = "smart"; then
+            SMART_SPLIT=y
+        elif test "$f" = "ss"; then
+            SUB_SESSION=y
+
+            # caveat: if you pipe into this, you don't have a tty
+            # anymore and tmux won't start. Need a workaround.
+
+            # It's breaking atm for subsessions. It's because nothing is
+            # waiting for it because the terminal is in use by the
+            # subsession and hasn't arrived at the wait command yet.
+            # DETACHMENT_SENTINEL=n
+        elif test "$f" = "split"; then
+            SPLIT=-h
+        elif test "$f" = "spv"; then
+            SPLIT=-h
+        elif test "$f" = "sph"; then
+            SPLIT=-v
+        fi
+
+        # If return code is set, it is used. If using option -d, return
+        # code is set to 0
+        if test "$DETACHMENT_SENTINEL" = "y"; then
+            RETURN_CODE=
+        else
+            RETURN_CODE=0
+        fi
+
+        # echo "$HAS_STDIN"
+        ## Why has this not here to begin with?
+        ## It breaks many things
+        #if stdin_exists; then
+        #    HAS_STDIN=y
+        #fi
+
+        : ${HIGHLIGHT:=""}
+        : ${PRESS_ANY_KEY_FINISH:=""}
+        PRESS_ANY_KEY_FINISH_KEY=f
+        FORWARD_ARGS=n
+        CHANGE_SHELL=n
+        : ${REPEAT_COMMAND:="n"}
+        REMAIN_ON_EXIT=n
+        CAT_ON_EXIT=n
+        RETRY_SLEEP=0
+        NEOVIM=n
+        NEOVIM_TMUX=n
+        : "${RETURN_ID:="n"}"
+        SILENCE=n
+        TRAPINT=y # This is so the window doesn't close if you press C-c in less
+        while :; do opt="$1"; case "$opt" in
+            -n) {
+                window_name="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -coe) {
+                CAT_ON_EXIT=y
+                shift
+            }
+            ;;
+
+            -x) {
+                debugging=y
+                shift
+            }
+            ;;
+
+            -sw) {
+                switch_to_target=y
+                shift
+            }
+            ;;
+
+            -A|-autoretry) {
+                REPEAT_COMMAND=y
+                PRESS_ANY_KEY_FINISH=n
+                RETRY_SLEEP=2
+                shift
+            }
+            ;;
+
+            -quiet|-noerror)
+                PRESS_ANY_KEY_ON_ERROR=n; shift
+            ;;
+
+            -noquiet|-error)
+                PRESS_ANY_KEY_ON_ERROR=y; shift
+            ;;
+
+            -s) {
+                session_name="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -w) {
+                HIGHLIGHT=warn
+                shift
+            }
+            ;;
+
+            -nv|-nvc) { # wrap in a neovim
+                NEOVIM=y
+                shift
+            }
+            ;;
+
+            -nvt) { # wrap in a neovim
+                NEOVIM_TMUX=y
+                shift
+            }
+            ;;
+
+            -hlred) {
+                HIGHLIGHT=red
+                shift
+            }
+            ;;
+
+            -hlgreen) {
+                HIGHLIGHT=green
+                shift
+            }
+            ;;
+
+            -hlblue) {
+                HIGHLIGHT=blue
+                shift
+            }
+            ;;
+
+            -hldblue) {
+                HIGHLIGHT=dblue
+                shift
+            }
+            ;;
+
+            -notrapint) {
+                TRAPINT=n
+                shift
+            }
+            ;;
+
+            -trapint) {
+                TRAPINT=y
+                shift
+            }
+            ;;
+
+            -safe) {
+                # wrap the command inside of another bash, so the entire
+                # terminal does not quit if bad syntax is used
+                SAFE=y
+                shift
+            }
+            ;;
+
+            -P) {
+                # Return the session,window,*pane id* of the new window created
+                RETURN_ID=y
+                shift
+            }
+            ;;
+
+            -t) {
+                TARGET="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -d|-bg) {
+                BACKGROUNDED="-d"
+                shift
+            }
+            ;;
+
+            -R|-repeat) {
+                REPEAT_COMMAND=y
+                PRESS_ANY_KEY_FINISH=y
+                shift
+            }
+            ;;
+
+            -r|-roe) {
+                # This is evil
+                # REMAIN_ON_EXIT="y"
+                REPEAT_COMMAND=y
+                PRESS_ANY_KEY_FINISH=y
+                shift
+            }
+            ;;
+
+            -sh) {
+                CHANGE_SHELL=y
+                DEFAULT_SHELL="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -silence|-q) {
+                SILENCE=y
+                shift
+            }
+            ;;
+
+            -bash) {
+                CHANGE_SHELL=y
+                DEFAULT_SHELL="bash"
+                shift
+            }
+            ;;
+
+            -p|-size-percent) {
+                split_size="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -zsh) {
+                CHANGE_SHELL=y
+                DEFAULT_SHELL="zsh"
+                shift
+            }
+            ;;
+
+            -paks|-pakstart) {
+                PRESS_ANY_KEY_START=y
+                shift
+            }
+            ;;
+
+            -pak|-pakf|-pakfinish) {
+                PRESS_ANY_KEY_FINISH=y
+                shift
+            }
+            ;;
+
+            -pakfk|-pakfinishkey) {
+                PRESS_ANY_KEY_FINISH=y
+                PRESS_ANY_KEY_FINISH_KEY="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -nopak|-nopakf|-nopakfinish) { # Used in conjunction with -R and less
+                PRESS_ANY_KEY_FINISH=n
+                shift
+            }
+            ;;
+
+            -c) {
+                # Ranger quotes its %d arguments, so I must ensure that I do not wrap %d in quotes inside ranger's rc.conf
+                dir="$(p "$2" | bs "()'")"
+                # dir="$2"
+                # This expands the glob. But why is this here?
+                # It also expands env vars
+                dir="$(eval echo -e "$dir")" # expand
+                # p "$dir" | tv &>/dev/null
+                CWD="$dir"
+                cd "$CWD"
+                export CWD
+
+                envstring+="export CWD=\"$CWD\"; "
+
+                # : ${CWD:="$(pwd)"}; cd "$CWD"
+
+                shift
+                shift
+            }
+            ;;
+
+            -tpwd) {
+                if [ -z "$TARGET" ]; then
+                    # It was using the tmux session rather than the
+                    # last process in the pane
+                    if [ -n "$TMUX_PANE" ]; then
+                        TARGET="$TMUX_PANE"
+                    else
+                        TARGET="$CALLER_TARGET"
+                    fi
+                    #if [ -n "$CURRENT_SESSION_NAME" ]; then
+                    #    TARGET="$CURRENT_SESSION_NAME"
+                    #else
+                    #    TARGET="$CALLER_TARGET"
+                    #fi
+                fi
+                # ns "$TARGET"
+
+                dir="$(tpwd -t "$TARGET")"
+                dir="$(eval echo -e "$dir")"
+                lit "$dir" > /tmp/pen-tm.txt
+                pen-tm n "$dir"
+                export CWD
+
+                shift
+            }
+            ;;
+
+            -sin) {
+                HAS_STDIN=y;
+            }
+            ;;
+
+            -rsi|-icmd|-cin|-xargs|-iargs) {
+                # These work the same now. If you provide a command,
+                # it's prefixed to the stdin. If you don't stdin is the
+                # command
+
+                STDIN_IS_COMMAND=y
+                HAS_STDIN=n
+                shift
+            }
+            ;;
+
+            -v) { # we want to be able to run v (vim)
+                SPLIT=-h
+                shift
+            }
+            ;;
+
+            -h|h) {
+                SPLIT=-v
+                shift
+            }
+            ;;
+
+            -fa|-forward-args|-fargs|-args) {
+                FORWARD_ARGS=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if [ -z "$TARGET" ]; then
+            if [ -n "$CURRENT_SESSION_NAME" ]; then
+                TARGET="$CURRENT_SESSION_NAME"
+            else
+                TARGET="$CALLER_TARGET"
+            fi
+        fi
+        # PRESS_ANY_KEY_FINISH=y
+
+        # pen-tm n "from $ssn. placing into $TARGET"
+
+        # Doesn't work. I want to be able to wait for input to finish
+        # from fzf before launching tmux.
+        # if test "$SPONGE_IN" = "y"; then
+        #     input="$(cat)"
+        #     lit "$input" >>&0
+
+        #     exec <`pen-tm-tty`
+        # fi
+
+        if test "$CHANGE_SHELL" = "y"; then
+            PREVIOUS_SHELL="$(pen-tm op default-shell)"
+            DEFAULT_SHELL="$(which "$DEFAULT_SHELL")"
+            pen-tm op default-shell "$DEFAULT_SHELL"
+        fi
+
+        : ${window_name:="new-window"}
+        # : ${session_name:="new-session"}
+
+        sentinal_string="tm_sentinal_${RANDOM}_$$"
+
+        if test "$debugging" = "y"; then
+            # cmd_pre+="set -o xtrace; "
+            cmd_pre+="set -xv; "
+        fi
+
+        # bash (set -o pipefail)
+        # zsh (setopt pipefail)
+        case "$DEFAULT_SHELL" in
+            bash) {
+                cmd_pre+="set -o pipefail; "
+                :
+            }
+            ;;
+
+            zsh) {
+                cmd_pre+="setopt pipefail; "
+                :
+            }
+            ;;
+
+            *)
+                # POSIX (no such thing). Sadly, this is tmux default
+        esac
+
+        cmd_pre="$cmd_pre stty stop undef; stty start undef; "
+        test "$PRESS_ANY_KEY_START" = "y" && cmd_pre="$cmd_pre pak s; "
+
+        if test "$HAS_STDIN" = "y"; then
+            ff0="$(ux mkfifo tm_stdin)"
+
+            if test "$BUFFER_IN" = "y"; then
+                cmd_pre="$cmd_pre buffer | "
+            fi
+
+            if test "$SPONGE_IN" = "y"; then
+                cmd_pre="$cmd_pre sponge | "
+            fi
+
+            if test "$UNBUFFER_IN" = "y"; then
+                cmd_pre="$cmd_pre unbuffer -p "
+            fi
+
+            cmd_pre="$cmd_pre cat \"$ff0\" | "
+        fi
+
+        if test "$SILENCE" = "y"; then
+            cmd_post="$cmd_post >/dev/null "
+        fi
+
+        if test "$HAS_STDOUT" = "y"; then
+            ff1="$(ux mkfifo tm_stdout)"
+
+            if test "$UNBUFFER_OUT" = "y"; then
+                cmd_pre="$cmd_pre unbuffer"
+            fi
+
+            if test "$BUFFER_OUT" = "y"; then
+                cmd_post="$cmd_post | buffer"
+            fi
+
+            if test "$SPONGE_OUT" = "y"; then
+                cmd_post="$cmd_post | sponge"
+            fi
+
+            cmd_post="$cmd_post >$ff1"
+        fi
+
+        ## Maybe change this to a fifo
+        tf_rc="$(ux tf rc txt || echo /dev/null)"
+
+        cmd_post="$cmd_post; ret=\$?; printf -- \"%s\" \$ret > \"$tf_rc\""
+
+        if test "$PRESS_ANY_KEY_FINISH" = "y"; then
+            cmd_post="$cmd_post; pak $PRESS_ANY_KEY_FINISH_KEY"
+        elif test "$PRESS_ANY_KEY_ON_ERROR" = "y"; then
+            cmd_post="$cmd_post; test \$ret -ne 0 && ( lit -n 'exit code '\$ret' => '; pak )"
+        fi
+
+        if test "$REPEAT_COMMAND" = "y"; then
+            cmd_pre="while :; do $cmd_pre"
+            if [ "$RETRY_SLEEP" -gt "0" ]; then
+                cmd_post="$cmd_post; sleep $RETRY_SLEEP; done"
+            else
+                cmd_post="$cmd_post; done"
+            fi
+        fi
+
+        if test "$CAT_ON_EXIT" = "y"; then
+            tf_capture="$(ux tf capture || echo /dev/null)"
+            trap "rm \"$tf_capture\" 2>/dev/null" 0
+        fi
+
+        if test "$DETACHMENT_SENTINEL" = "y"; then
+            if test "$CAT_ON_EXIT" = "y"; then
+                cmd_post="$cmd_post; pen-tm -te -d capture - > \"$tf_capture\""
+            fi
+
+            if ! test "$SUB_SESSION" = "y"; then
+                cmd_post="$cmd_post; tmux wait-for -S $sentinal_string; sleep 1;"
+            fi
+        fi
+
+        if test "$STDIN_IS_COMMAND" = "y"; then
+            CMD="$(cmd "$@")"
+            cmd="$CMD"
+
+            IFS= read -rd '' arguments < <(cat /dev/stdin)
+
+            cmd+=" $arguments"
+
+            # lit "$cmd"
+            # pak
+        else
+            if ! test "$FORWARD_ARGS" = "y"; then
+                # This is nasty but I have to allow it
+                # pen-tm n "$0 :: This is nasty"
+                if test -n "$2"; then
+                    cmd="$2"
+                    dir="$1"
+                elif test -n "$1"; then
+                    cmd="$1"
+                fi
+            else
+                CMD="$(cmd "$@")"
+                cmd="$CMD"
+            fi
+        fi
+
+        if test "$NEOVIM" = "y"; then
+            # cmd="nv -term $cmd"
+            cmd="nv -E -term $(aqf "$cmd")"
+        elif test "$NEOVIM_TMUX" = "y"; then
+            cmd="nvt -E $(aqf "$cmd")"
+            # cmd="nvt $cmd"
+        fi
+
+        if [ -z "$dir" ]; then
+            : ${CWD:="$(pwd)"}
+            dir="$CWD"
+        fi
+
+        if [ -z "$cmd" ]; then
+            cmd="$shell"
+        fi
+
+        if test "$switch_to_target" = "y"; then
+            pen-tm sel "$TARGET"
+        fi
+
+        envstring+="export CWD=\"$dir\"; "
+
+        # tf_exports="$(ux tf exports sh || echo /dev/null)"
+        tf_exports="$(printf -- "%s\n" "$envstring" | tf sh || echo /dev/null)"
+         # > "$tf_exports"
+
+        # This fixes eipe
+        # echo hi | pen-tm eipe | cat
+        printf -- "%s\n" "export TTY=\$(tty);" >> "$tf_exports"
+
+        # trap "rm \"$tf_exports\" 2>/dev/null" 0
+
+        fullcmd="test -f \"$tf_exports\" && . $tf_exports; ${cmd_pre} $cmd ${cmd_post}"
+        printf -- "%s\n" "$fullcmd" | ds -s pen-tm
+        # exit 0
+
+        # p "$fullcmd" | tv
+        # echo "$fullcmd"
+
+        # lit "$fullcmd"
+        # pak
+
+        # lit "$envstring ${cmd_pre} $cmd$cmd_post" 1>&2
+
+        # lit "$fullcmd" >> /tmp/cmd.txt
+        # pen-tm -d dv "$fullcmd"
+        # lit "test: $PATH" >> /tmp/path.txt
+
+        # tmux neww
+        # exit 0
+
+        # Use a python one-liner
+        # py2.7 "exit(1 if 5 > 10 else 0)"
+        # py2.7 "exit(0 if $COLUMNS / $LINES < 2.5 else 1)"; echo $?
+        if test "$SMART_SPLIT" = "y"; then
+            # if ratio of W/H < 2.5 then do an sph
+            # Can't use timeout here
+            if test-should-hsplit; then
+                SPLIT=-v
+            else
+                SPLIT=-h
+            fi
+        fi
+
+        # These commands are excruciatingly slow in nested tmux
+        # sessions. Never use them
+        # if false && ! test "$FAST" = "y"; then
+        #     if test "$REMAIN_ON_EXIT" = "y"; then
+        #         tmux set -t "$TARGET" set-remain-on-exit on
+        #     else
+        #         tmux set -t "$TARGET" set-remain-on-exit off
+        #     fi
+        # fi
+
+        # lit "$TARGET $SPLIT $BACKGROUNDED $dir $filcmd" >> /tmp/cmd.txt
+
+        ID_FORMAT="#{session_id}:#{window_id}.#{pane_id}"
+
+        if test "$SAFE" = "y"; then
+            # I think sh is equally safe as bash? maybe not?
+            
+            # couldn't use aqf here because I also needed to escape dollars
+            fullcmd="bash -c $(aqfd "$fullcmd") || pak -m 'bad syntax'"
+
+            # printf -- "%s" "$fullcmd" | tv &>/dev/null
+            # echo "$fullcmd" >> /tmp/fullcmd.txt
+        fi
+
+        # if :; then
+        #     fullcmd="PATH=\"$HOME/scripts:$PATH\"; $fullcmd"
+        # fi
+
+        if test "$TRAPINT" = "y"; then
+            fullcmd="trap '' INT; $fullcmd"
+        fi
+
+        # fullcmd="$(printf -- "%s" "$fullcmd" | bs '`' | bs '`' | bs '`')"
+        fullcmd="$(printf -- "%s" "$fullcmd" | esc '`')"
+
+        printf -- "%s\n" "$fullcmd" | ds -s tm_fullcmd
+
+        # If it's a session name then make sure it has an ending :
+        if printf -- "%s\n" "$TARGET" | grep -q -P '^[a-z_]+$'; then
+            TARGET="$TARGET:"
+        fi
+
+        # IMPORTANT -- The actual command running.
+        # respawn
+        if test "$f" = "cw"; then
+            :
+            # tmux neww
+            pen-tm breakp -s -E "$fullcmd"
+            # cmd pen-tm breakp -s -E "$fullcmd" > /tmp/yoyoht.txt
+            # eval "pen-tm breakp -s $(aqf "$fullcmd")"
+            # full_id="$(tmux respawnp -k -t "$TARGET" -t "$TARGET" "$fullcmd")"
+        elif test "$f" = "rs" || test "$f" = "rsp"; then
+            full_id="$(tmux respawnp -k -t "$TARGET" -t "$TARGET" "export TMUX=; $fullcmd")"
+        elif test "$SUB_SESSION" = "y"; then
+            server="$(pen-tm-get-server)"
+
+            unset TMUX
+            # -t "$TARGET"
+            # cmd tmux -L $server new -F "$ID_FORMAT" -P $BACKGROUNDED -s "$session_name" -n "$window_name" -c "$dir" "$fullcmd"
+            # exit 0
+
+            # -t "$TARGET"
+
+            if test -n "$session_name"; then
+                session_name_opt=" -s $session_name "
+            fi
+            
+            full_id="$(tmux -L $server new -P -F "$ID_FORMAT" -d $session_name_opt -n "$window_name" -c "$dir" "$fullcmd")"
+
+            if ! test -n "$BACKGROUNDED"; then
+                tmux -L $server attach -t "$full_id"
+            #else
+            #    echo "$full_id"
+            fi
+
+        elif test -n "$SPLIT"; then
+            if test -n "$split_size"; then
+                split_size="-p $split_size"
+            fi
+            full_id="$(tmux split -F "$ID_FORMAT" -P -t "$TARGET" $SPLIT $split_size $BACKGROUNDED -c "$dir" "$fullcmd")"
+        else
+            full_id="$(tmux neww -P -F "$ID_FORMAT" -t "$TARGET" $PARENT_SESSION $BACKGROUNDED -n "$window_name" -c "$dir" "$fullcmd")"
+            case "$HIGHLIGHT" in
+                warn) {
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227,bg=colour161]#W'
+                }
+                ;;
+
+                red) {
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160,bg=colour235]#W'
+                }
+                ;;
+
+                blue) {
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour026,bg=colour235]#W'
+                }
+                ;;
+
+                dblue) {
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour024,bg=colour233]#W'
+                }
+                ;;
+
+                green) {
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040,bg=colour235]#W'
+                }
+                ;;
+
+                *)
+            esac
+
+            ## A new window was created. Was it for a subsession? If so,
+            ## set the subsession's parent window id to the full_id
+
+            #if [ -n "$PARENT_SESSION_ID" ]; then
+            #    tmux setenv -t "$session_name" "PARENT_SESSION_ID" "$PARENT_SESSION_ID" \; \
+            #fi
+        fi
+
+        # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227,bg=colour161]#W'
+
+        # Never use these
+        # if false && ! test "$FAST" = "y"; then
+        #     tmux set -t "$TARGET" set-remain-on-exit off
+        # fi
+
+        if test "$CHANGE_SHELL" = "y"; then
+            pen-tm op default-shell "$PREVIOUS_SHELL"
+        fi
+
+        # This is done later
+        if test "$RETURN_ID" = "y"; then
+            echo "$full_id"
+        fi
+
+        if test "$HAS_STDIN" = "y"; then
+            cat > "$ff0"
+            rm "$ff0" 2>/dev/null
+        fi
+
+        if test "$HAS_STDOUT" = "y"; then
+            cat "$ff1" &
+        fi
+
+        if test "$DETACHMENT_SENTINEL" = "y"; then
+            # Don't use the sentinel if it's a subsession and it's not
+            # backgrounded. As  far as I know there is not a parameter
+            # yet for this
+            if ! test "$SUB_SESSION" = "y"; then
+                tmux wait-for "$sentinal_string"
+            fi
+        fi
+
+        if test "$CAT_ON_EXIT" = "y"; then
+            cat "$tf_capture"
+        fi
+
+        # This sleep is needed because the last it of stdout is yet to
+        # come through
+        # echo -n "hi\nyo" | pen-tm filter | cat
+        sleep 0.1
+
+        if [ -z "$RETURN_CODE" ]; then
+            RETURN_CODE="$(cat "$tf_rc")"
+            if [ -z "$RETURN_CODE" ]; then
+                RETURN_CODE=99
+            fi
+        fi
+        # echo "$RETURN_CODE"
+
+        trap "rm \"$tf_rc\" 2>/dev/null" 0
+
+        # Need to implement return code
+
+        if [ -e "$ff1" ]; then
+            rm "$ff1" 2>/dev/null
+        fi
+        # exit 0
+        exit "$RETURN_CODE"
+    }
+    ;;
+
+    refresh) {
+        tmux source-file ~/.tmux.conf
+        tmux refresh-client ~/.tmux.conf
+    }
+    ;;
+
+    cap) {
+        pen-tm -te -d capture -clean -wrap -noabort -
+    }
+    ;;
+
+    # pen-tm cap-pane -t "%617" | v
+    cap-pane|capp) {
+        pen-tm -te -d capture "$@" -clean -
+    }
+    ;;
+
+    scrape|scrape-filter) {
+        cap="$(pen-tm cap)"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-with-fzf"
+    }
+    ;;
+
+    # This isn't faster. fzf is worse than simply vim
+    scrape-things-fast) {
+        cap="$(pen-tm cap)"
+        printf -- "%s" "$cap" | filter-things.sh | pen-tm -f -S -tout nw -noerror "mfz -m | xc -i"
+    }
+    ;;
+
+    scrape-things) {
+        cap="$(pen-tm cap)"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-things"
+    }
+    ;;
+
+    lasturl) {
+        # pen-tm capp | xurls | tail -n 1 | xc -i -n
+        # pen-tm capp | xurls | pen-tm fzf | xc -i -n
+        # pen-tm capp | xurls | pen-tm fzf -1 | xc -i -n
+
+        # urls="$(pen-tm capp | xurls)"
+        urls="$(pen-tm cap | xurls | s chomp)"
+        if test "$(printf -- "%s" "$urls" | wc -l)" -gt 0; then
+            printf -- "%s" "$urls" | pen-tm fzf -1 | xc -i -n
+        else
+            unbuffer xc -i -n "$urls"
+        fi
+        # | pen-tm fzf -1 | xc -i -n
+    }
+    ;;
+
+    scrapep) {
+        cap="$(pen-tm capp)"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-with-fzf"
+    }
+    ;;
+
+    search) {
+        # pen-tm -te -d capture -clean -editor "oresp -ic isearch-forward-regexp" -wrap
+        pen-tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y orve" -wrap
+        # pen-tm -f -te -d capture -clean -editor "JUSTIFY_LEFT=y orev" -wrap
+        # pen-tm -f -te -d capture -clean -editor "JUSTIFY_LEFT=y orve" -wrap
+    }
+    ;;
+
+    visor) {
+        pen-tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y orspe -ic generate-glossary-buttons-over-buffer-force-on" -wrap
+    }
+    ;;
+
+    #search) { # Find / Search. Need hydra for this
+    #    # Cut to the chase; start using hydras immediately.
+    #    # Need to be able to use emacs hydras in vim.
+    #    # If I can do that, I can create hydras for anything. Random
+    #    # programs. Even things like vlc.
+    #    # If I simply learned elisp though, that would speed up the
+    #    # process.
+
+    #    pen-tm n "$p1 :: NOT IMPLEMENTED. Need tmux hydra"
+
+    #    # Finding terminals:
+    #    # F1 f w -- find by window name
+    #    # F1 f c -- find by content
+    #}
+    #;;
+
+    avy) {
+        # pen-tm -te -d capture -clean -editor "e -fi avy-goto-char" -wrap
+        pen-tm -f -te -d capture -clean -editor "e -fi avy-goto-char" -wrap
+    }
+    ;;
+
+    wrap) {
+        # I could've done the same thing as F9 here
+        # pen-tm -te -d capture -clean -editor "e" -wrap
+        pen-tm -f -te -d capture -clean -editor "e" -wrap
+    }
+    ;;
+
+    em|easymotion) {
+        cap_file="$(pen-tm cap | tf txt; sleep 0.5)"
+        if [ -s "$cap_file" ]; then
+            pen-tm -te -d nw -n easymotion "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2)' \"$cap_file\""
+        fi
+
+        exit 0
+    }
+    ;;
+
+    kill-other) {
+        # tmux select-pane -t :.+
+        tmux kill-pane -t :.+
+        set-tmux-hostname
+    }
+    ;;
+
+    nv-wrap) {
+        pen-tm -te -d capture -clean -wrap -nv
+    }
+    ;;
+
+    capture-stdout) { # captures the terminal and puts it to stdout
+        pen-tm -te -d capture -clean -
+    }
+    ;;
+
+    capture-stdout-wrap) { # captures the terminal including panes and puts it to stdout
+        pen-tm -te -d capture -clean -wrap -
+    }
+    ;;
+
+    capture) {
+        mkdir -p ~/programs/tmux/capture
+
+        # pen-tm n "$f :: NOT FULLY IMPLEMENTED"
+
+        # echo "$TTY" | tv &>/dev/null
+
+        # Need tmux-outside / tmux-wrap capture
+
+        x="$(tmux display -p "#{cursor_x}")"
+        y="$(tmux display -p "#{cursor_y}")"
+
+        ANSI=n
+        ANSI=y
+        DO_SEND_KEYS=n
+        SCROLLBACK=-32768
+        CAPTURE_OPTIONS=" -J "
+        EDITOR="v"
+        STDOUT= # no editor. no value relies on is_tty
+        NOABORT=n
+        while [ $# -gt 0 ]; do case $1 in
+            -a|-ansi) {
+                # printf -- "%s\n" "ansi"
+
+                ANSI=y
+
+                shift
+            }
+            ;;
+
+            -c|-clean) {
+                # printf -- "%s\n" "clean"
+
+                ANSI=n
+
+                shift
+            }
+            ;;
+
+            -tty) {
+                STDOUT=n
+
+                shift
+            }
+            ;;
+
+            -|-stdout) {
+                STDOUT=y
+
+                shift
+            }
+            ;;
+
+            -f|-filter) {
+                # like pen-tm scrape-filter but can specify cap options
+                # not using currently
+
+                # Maybe I should do some variable exports
+
+                # pen-tm cap | f filter-with-fzf
+
+                # pen-tm scrape-filter
+
+                ns disabled $1 because ambiguous
+
+                exit 0
+
+                shift
+            }
+            ;;
+
+            -p) {
+                PREVIEW=y
+
+                shift
+            }
+            ;;
+
+            -noabort) {
+                NOABORT=y
+
+                shift
+            }
+            ;;
+
+            -t) {
+                CALLER_TARGET="$2"
+                CALLER_PANE="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -nosendkeys) {
+                DO_SEND_KEYS=n
+
+                shift
+            }
+            ;;
+
+            -sendkeys) {
+                DO_SEND_KEYS=y
+
+                shift
+            }
+            ;;
+
+            -s|-session) {
+                # Take a capture of the entire session, not just the window
+
+                shift
+            }
+            ;;
+
+            -ts|-top-session) {
+                # Take a capture of the topmost session
+
+                shift
+            }
+            ;;
+
+            --pc|--preview-cmd) {
+                PREVIEW=y
+                PREVIEW_CMD=y
+
+                shift
+            }
+            ;;
+
+            -e|-emacs) {
+                EDITOR="e c"
+
+                shift
+            }
+            ;;
+
+            -editor) {
+                # EDITOR="$2 -e \"(linum-mode -1)\""
+                EDITOR="$2"
+
+                shift
+                shift
+            }
+            ;;
+
+            -nv) {
+                EDITOR="nv -c 'nmap q :q!<CR>'"
+                # EDITOR="nv"
+
+                shift
+            }
+            ;;
+
+            -v|-vim) {
+                EDITOR="v"
+
+                shift
+            }
+            ;;
+
+            -session) {
+
+                shift
+            }
+            ;;
+
+            -wrap) { # The tmux wrapper session
+                WRAP=y
+                SCROLLBACK=0
+
+                shift
+            }
+            ;;
+
+            -nohist|-nohistory) {
+                SCROLLBACK="0"
+
+                shift
+            }
+            ;;
+
+            -history) {
+                SCROLLBACK=-32768
+
+                shift
+            }
+            ;;
+
+            -b|-bottom) { # start emacs/vim at bottom of buffer
+
+                # bind M-f run -b 'tmux-capture.sh -f' # filters
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if test "$ANSI" = "y"; then
+            CAPTURE_OPTIONS+=" -e "
+            EDITOR=ansivim
+        fi
+
+        server="$(pen-tm-get-server)"
+        # echo "$server" 1>&2
+        unset TMUX
+
+        # Create temporary file
+        tf_tmcapture="$(ux tf tmcapture txt || echo /dev/null)"
+        bn="$(basename "$tf_tmcapture")"
+        np="$HOME/programs/tmux/capture/$bn"
+        mv "$tf_tmcapture" "$np"
+
+        # echo $CALLER_TARGET
+        # echo $CALLER_PANE
+
+        # echo "$WRAP" 1>&2
+        if test "$WRAP" = "y"; then
+            swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
+            sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
+            sheight="$(( sheight + 2 ))"
+
+            # inotifywait -e close_write "$np" &
+            # inotifywait -e write "$np" &
+
+            # Don't use pen-tm attach, to make this faster.
+            tmux -L $server new-session -d -x "$swidth" -y "$sheight" -A -s wrap \; respawnp -k -t "wrap:1" "TMUX= tmux -L $server attach -t \"$CALLER_TARGET\""
+
+            # 0.1 was too small
+            #sleep 0.5 # Sometimes the hanging is because you are in the minibuffer of emacs. Maybe vim is more reliable
+            # needed with lots of nesting and lag
+
+            # sleep 0.1
+            # sleep 1
+            # wait
+
+            # lit "$CALLER_TARGET $swidth $sheight $np" | tv
+
+            # More robust but the session name MUST appear in output or
+            # I'll get massive lag
+            c=0
+            # echo "$CALLER_TARGET"
+            # exit 0
+
+            grepstring="$CALLER_TARGET"
+            if test "$grepstring" = "localhost"; then
+                grepstring="$(hostname | s cap)"
+            fi
+
+            while ! grep -q "\[ $grepstring \]" "$np"; do
+                ((++c))
+                if test "$NOABORT" = "n" && [ "$c" -eq 10 ]; then
+                    notify-send "Leaving capture \"[ $grepstring ]\" because it took too long."
+                    break
+                fi
+
+                tmux -L $server capture-pane -t "wrap:1.0" \; save-buffer "$np"
+                # exit 0
+            done
+
+            tmux -L $server kill-pane -t "wrap:1.0"
+        else
+            eval "tmux -L $server capture-pane -t "$CALLER_PANE" $CAPTURE_OPTIONS -S $SCROLLBACK"
+
+            tmux -L $server save-buffer "$np"
+        fi
+
+        cat "$np" | {
+            sed -e 's/▄/ /g' \
+                -e 's/[┌┐┘└│├─┤┬┴┼]/ /g' \
+                -e 's/ ·\+$//g' \
+                -e 's/\s\+$//g' ` # remove trailing whitespace `
+
+            # piping into cat here breaks it. It creates a race
+            # condition with the outer cat, or something. Do not do
+            # this.
+            # | cat
+        } | sponge "$np"
+
+        # Too slow
+        # pen-tm -te -d nw "$EDITOR \"$np\""
+
+        #tmux neww -n capture "$EDITOR \"$np\""
+
+        if test "$STDOUT" = ""; then
+            if is_tty; then
+                STDOUT=n
+            fi
+        fi
+
+        if test "$STDOUT" = "y"; then
+            cat "$np"
+        else
+            #EDITOR=v
+            # echo "stty stop undef; stty start undef; GOTO_COLUMN=$x GOTO_LINE=$((y + 1)) $EDITOR \"$np\""
+
+            # eval `resize` &>/dev/null
+            # echo "$TTY" | tv &>/dev/null
+            # eval `pen-tm-resize` &>/dev/null
+
+            #echo "$LINES"
+            #echo "$EDITOR"
+            #echo "$GOTO_LINE"
+            #echo "$((y + 1))"
+            full_lines="$(wc -l "$np" | awk '{print $1}')"
+            #echo "$full_lines"
+            # echo "$(( full_lines - LINES ))"
+            # final_y="$(( y + (full_lines - LINES) ))"
+            final_x=$x
+            final_y="$(( y + 1 ))"
+            # echo "$final_y"
+            # exit 0
+            # wc -l "$np"
+            # $GOTO_LINE
+            # exit 0
+            # exec <\`pen-tm-tty\`; 
+            # echo "$EDITOR" | tv &>/dev/null
+            pane_id="$(tmux -L $server neww -t "$CALLER_TARGET" -F "#{pane_id}" -P -n capture "stty stop undef; stty start undef; TTY= GOTO_COLUMN=$final_x GOTO_LINE=$final_y $EDITOR \"$np\"")"
+            # sleep 1
+            # Easymotion
+
+            if test $DO_SEND_KEYS = "f" && test "$EDITOR" = "v"; then
+                tmux -L $server send-keys -t "$pane_id" "C-k"
+            else
+                :
+                # Assume is emacs
+                # tmux -L $server send-keys -t "$pane_id" "M-k"
+            fi
+
+            # tmux -L $server neww -n capture "vi \"$np\""
+
+            # pen-tm -te -d nw "ec \"$np\""
+
+
+            # tmux -L $server capture-pane -J -S -32768 | pen-tm -S -tout nw v
+            # FNAME="$BULK/programs/tmux/capture/tmux_capture$(tmux display-message -p "_#H_#S:#I(#W).#P")_date:$(date +%d.%m.%y).txt
+            # tmux save-buffer "$FNAME"
+            # tmux capture-pane -J -S -32768
+            # tmux save-buffer
+            # tmux-quit-vim.sh
+            # bind V capture-pane -J -S -32768 \; run 'FNAME="$BULK/programs/tmux/capture/tmux_capture$(tmux display-message -p "_#H_#S:#I(#W).#P")_date:$(date +%d.%m.%y).txt";
+            # rm "$FNAME"; tmux save-buffer "$FNAME" \; neww -n "vim-capture" "editor.sh -c \"ToggleBrightness\" \"$FNAME\""'
+            # bind R run 'tmux-edit-capture-full.sh'
+        fi
+    }
+    ;;
+
+    fr|free-resources) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+
+        # tmux-quit-vim.sh
+    }
+    ;;
+
+    jump) { # easymotion jump
+        pen-tm n "$f :: NOT IMPLEMENTED"
+
+        # use easymotion to jump somewhere on the screen
+
+        # I'd be remaking this. Low priority atm.
+        # I can use neovim if I want.
+
+        # I still need a wrapper tmux session that encompasses tmux
+        # localhost
+
+        # Also, I can fudge it without using neovim, though neovim was
+        # fast.
+    }
+    ;;
+
+    tnf|new-file) {
+        tf="$(u tf new txt)"
+
+        # sp tf
+
+        pen-tm -S -te nw "vim \"$tf\""
+
+        # bind N neww -t localhost_dump: vim \; run "tmux-select.sh localhost_dump: >/dev/null"
+    }
+    ;;
+
+    saykeyunbound) {
+        key="$1"; : ${key:="key"}
+        message="$2" # "new key M-T"
+
+        exec &>/dev/null
+
+        if [ -n "$message" ]; then
+            pen-tm n "$key has been unbound. $message"
+        else
+            pen-tm n "$key has been unbound"
+        fi
+    }
+    ;;
+
+    edit-x-clipboard) {
+        # This is much faster
+        pen-tm -f -te nw xce
+    }
+    ;;
+
+    # edit-x-clipboard) {
+    #     # I had to put an unbuffer before the xc or it wouldn't work in
+    #     # tmux
+    #     # This appears stable atm
+
+    #     IFS= read -rd '' output < <(xc - | pen-tm -soak -bout nw -n edit-x-clipboard vipe | cat)
+    #     # The problem was pipefail I think. vipe gives an error if you
+    #     # change it then quit without saving. This causes
+    #     # edit-x-clipboard to hang. So use capture
+
+    #     printf -- "%s" "$output" | xc
+
+    #     # xc | pen-tm -bout nw -n edit-x-clipboard vipe | xc
+
+    #     # Even like this, it often still hangs
+    #     # xc | pen-tm -bout nw -n edit-x-clipboard vipe
+    # }
+    # ;;
+
+    calc) {
+        pen-tm n "$f :: TODO: Further implemention" &>/dev/null
+
+        win calculator
+        # pen-tm -te -d nw calc
+
+        # bind ` run "tmux-calc.sh"
+    }
+    ;;
+
+    wa|wolfram-alpha) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+        exit 1
+
+        # bind '~' run "wa-ask.sh"
+    }
+    ;;
+
+    scrapep|scrape-paths) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+        exit 1
+
+        # bind J run 'tmux-scrape-path.sh'
+    }
+    ;;
+
+    r|ranger) {
+        dir="$(p "$dir" | q)"
+
+        : ${CWD:="$(pwd)"}; cd "$CWD"
+
+        export CWD
+
+        # eval "pen-tm -f -t nw -c \"$CWD\" -args ranger $CMD"
+        pen-tm -f -d -t nw -c "$CWD" -fargs ranger "$@"
+    }
+    ;;
+
+    # BSpace
+    shortcuts) {
+        paths="$(pen-tm-list-shortcuts)"
+
+        # pen-tm dv "$paths"
+        if [ -n "$paths" ]; then
+
+            # Now this is the slowest thing
+            # pen-tm -f -i nw "mfz -nm"
+            # Can substitute for mfz -nm
+
+            pl "$paths" | s uniq | pen-tm -f -i -S nw -noerror "mfz -nm" | {
+                dn="$(cat|umn)"
+                dnq="$(printf -- "%s" "$dn" | q)"
+                # dn="$(realpath "$dn")"
+                # echo "$dn" > /tmp/paths.txt
+                # exit 0
+                exec <`pen-tm-tty`
+
+                 # | u dn
+                # pen-tm -i nw v
+                # read dn # don't use read because it might hang
+                # if [ -n "$dn" ]; then
+                #    pen-tm -d -te dv "$dn"
+                #    exit 0
+                # fi
+                # exit 0
+                if [ -n "$dn" ]; then
+                    if ! [ -e "$dn" ]; then
+                        pen-tm -f -d -te dv "$dn :: No longer exists"
+                    fi
+                    export CWD="$dn"
+                    # pen-tm -f -te -d nw -c "$dn" "CWD=$dnq ranger"
+
+                    pen-tm -f -te -d nw -c "$dn" "zcd $(aqf "$dnq")"
+                fi
+                exit 0
+            }
+            exit $?
+        else
+            ns "No dirs exist anymore." &>/dev/null
+            # This opens vim directories.org
+            # If the dirs expanded no longer exist.
+            pen-tm -f -te -d dir
+        fi
+        exit 0
+    }
+    ;;
+
+    urls) {
+        pen-tm capp | xurls | tail -n 1 | xc -i -n
+        pen-tm capp | xurls | soak | sps v
+    }
+    ;;
+
+    urls-file) {
+        pen-tm -f -d -t nw pen-tm-urls
+    }
+    ;;
+
+    d|dir|directories) {
+        pen-tm -f -d -t nw pen-tm-dir
+    }
+    ;;
+
+    s|src|source-files) {
+        pen-tm -f -d -t nw pen-tm-src
+    }
+    ;;
+
+    tools) {
+        pen-tm -f -d -t nw pen-tm-tools
+    }
+    ;;
+
+    rsp|respawn-pane) {
+        pen-tm n "$f :: NEEDS WORK"
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -t) {
+                TARGET="$2"
+
+                shift
+                shift
+            }
+            ;;
+
+            -w) {
+                SET_REMAIN_ON_EXIT=y
+
+                shift
+            }
+            ;;
+
+            -f) {
+                FORCE=y
+                # kill the window with -k
+
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        CMD="$(cmd "$@")"
+
+        if test "$FORCE" = "y"; then
+            OPS+=" -f "
+        fi
+
+
+        if [ -n "$CMD" ]; then
+            tmux respawn-pane -t "$CALLER_TARGET" $OPS -k "$CMD"
+        else
+            tmux respawn-pane -t "$CALLER_TARGET" $OPS -k
+        fi
+
+
+        # For commands such as these:
+        # bind H run -b "pen-tm sel localhost:history»; tmux respawn-pane -k -t localhost:history»"
+    }
+    ;;
+
+    project-edit) {
+        pen-tm n "$f :: NOT IMPLEMENTED. Use projectile"
+        exit 1
+
+        # This was a crown thing I think. Load projectile instead.
+
+        # bind M-r neww -n project-edit "project-edit.sh"
+    }
+    ;;
+
+    copy-session-name) {
+        pen-tm n "$f :: NOT IMPLEMENTED. Need objects to represent sessions. name vs id"
+        exit 1
+
+        # Name and ID for tmux sessions will not be related anymore.
+
+        # This copies the current session name / identifier.
+        # A session will have a name and an ID.
+    }
+    ;;
+
+    n|notify) {
+        message="$1"
+
+        # Make this an xmonad, dmenu or dzen notification. I don't want
+        # to interrupt tmux.
+        # tmux display-message "$message"
+
+        #notify-send "$message"
+
+        ns "$message" &>/dev/null
+
+        # lit "$message"
+    }
+    ;;
+
+    lw|last-window) {
+        last_window_num="$(tmux list-windows -t "$CALLER_TARGET" | tail -n 1 | sed 's/\([0-9]\+\):.*/\1/')"
+        if [ -n "$last_window_num" ]; then
+            tmux select-window -t ":${last_window_num}"
+        fi
+    }
+    ;;
+
+    # This is for putting in shell scripts so I can see the value of
+    # something
+    dv|display-var) {
+        CMD="$(
+        for (( i = 1; i < $#; i++ )); do
+            eval ARG=\${$i}
+            printf -- "%s" "$ARG" | q
+            printf ' '
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG" | q
+        )"
+
+        if test "$HAS_STDIN" = "y"; then
+            message="$(cat)"
+        else
+            message="$CMD"
+        fi
+        message="$(p "$message" | q)"
+
+        # This isn't about running the dv command again, but presenting
+        # it
+        # message="$(p "pen-tm dv $message")"
+
+        pen-tm -t -d sph -pak "lit $message"
+    }
+    ;;
+
+    copy-pane-command) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -nc|-nocontect) {
+                NOCONTEXT=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if test "$NOCONTEXT" = "y"; then
+            shpv "pane_start_command" | {
+                sed -e 's/^.*start undef;\s\+//' -e 's/\s*;\s*ret=.*$//'
+            } | xc -i -n
+        else
+            shpv "pane_start_command" | xc -i -n
+        fi
+    }
+    ;;
+
+    # visor) {
+    #     keys="$(cat)"
+
+    #     tf_pane_status="$(odn ux tf pane_status || echo /dev/null)"
+    #     # trap "rm \"$tf_pane_status\" 2>/dev/null" 0
+
+    #     pane_status="$(pen-tm -d pane-status)"
+
+    #     if pl "$pane_status" | grep -q -F "\`-tpb"; then
+    #         pen-tm cat | scrape "(?<= Video ) *[^ ].*(?=     |$)" | sed 's/^ *//' > "$tf_pane_status"
+    #         pen-tm -d sph -args v "$tf_pane_status" | cat &>/dev/null
+    #     else
+    #         notify-send "visor: Nothing interesting"
+    #     fi
+    # }
+    # ;;
+
+    tput-search) { # This was the urwid program that allowed me to select different search engines
+        keys="$(cat)"
+
+        pen-tm n "$f :: NOT IMPLEMENTED"
+    }
+    ;;
+
+    efs|edit-fsnotes) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+        # edit-fs-notes...
+        :
+    }
+    ;;
+
+    gfs|get-fsnotes|fsnotes) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+        # get-fs-notes.sh...
+        :
+    }
+    ;;
+
+    show-vim-mappings) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+        # vimhelpfzf
+    }
+    ;;
+
+    find-path-from-notes) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+        # find-and-vim-path-from-notes.sh
+    }
+    ;;
+
+    find-text-in-terminals) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+
+        # bind F neww -n find-content "printf -- \"%s\\n\" \"tmux-find-content.sh \" | rtcmd"
+    }
+    ;;
+
+    search-command-copy) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+
+        # bind M-w neww "$VAS/projects/scripts/run-search-command-copy.sh"
+    }
+    ;;
+
+    ncmd|notes-commands) { # scrape out all the commands and run them. Use search for this
+        # pen-tm n "$f :: NOT IMPLEMENTED"
+
+        # Not sure why I need unbuffer here
+        # unbuffer pen-tm -t -d dv "$f :: NOT IMPLEMENTED"
+
+        # I can use -tt though
+        pen-tm -tt -d dv "$f :: NOT IMPLEMENTED"
+
+        # pen-tm -t -d sph -pak "lit \"$f :: NOT IMPLEMENTED\""
+
+        # bind M-, neww -n 'run-command' "get-notes-commands.sh | fzf-nopreview --sort --sync | xargs tmux-run-hist-command.sh"
+        # cmd=\"$(get-notes-commands.sh | LINES=20 fzf-preview --sort --sync)\"; tmux-run-hist-command.sh \"$cmd\"
+    }
+    ;;
+
+    ntv|tvs) {
+        pen-tm tv -vs "$@"
+    }
+    ;;
+
+    tv) { # just have a look at what's inside as the program is running
+        SILENCE=n
+        REMEMBER_IT=n
+        EDITOR=v
+        window_mode=sps
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -q) {
+                SILENCE=y
+                shift
+            }
+            ;;
+
+            -nv|-vs|-s) {
+                EDITOR=vs
+                shift
+            }
+            ;;
+
+            -rec) {
+                REMEMBER_IT=y
+                shift
+            }
+            ;;
+
+            -spv|-nw|-sph) {
+                window_mode="$(p "$opt" | mcut -d - -f2)"
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if test "$SILENCE" = "y"; then
+            exec &>/dev/null
+        fi
+
+        IFS= read -rd '' input < <(cat /dev/stdin)
+
+        ft="$1"
+
+        if [ -n "$ft" ]; then
+
+            tf_ft="$(ux tf ft "$ft" || echo /dev/null)"
+            # trap "rm \"$tf_ft\" 2>/dev/null" 0
+
+            printf -- "%s" "$input" > "$tf_ft"
+            pen-tm -d -tout spv -noerror "$EDITOR -nad $tf_ft"
+        else
+            printf -- "%s" "$input" | pen-tm -S -tout $window_mode -noerror "$EDITOR -nad"
+        fi
+        printf -- "%s" "$input"
+
+    }
+    ;;
+
+    # This is different to pipe-pane. It doesn't continue. It prints and
+    # exits immediately. Maybe I should combine them?
+    # This appears to not capture everything, only what is visible
+    cat|catp|cat-pane) {
+        opts=
+
+        FROM_START=n
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -a) {
+                # All, From the start of history
+                FROM_START=y
+                shift
+            }
+            ;;
+
+            -na) {
+                FROM_START=n
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        target="$1"
+
+        if test "$FROM_START" = "y"; then
+            opts+=" -p -S - "
+        fi
+
+        {
+            if [ -n "$target" ]; then
+                tmux capture-pane $opts -t "$target" \; save-buffer -
+            else
+                tmux capture-pane $opts \; save-buffer -
+            fi
+        } | {
+            erase-trailing-whitespace |
+            sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba'
+        }
+
+        exit 0
+    }
+    ;;
+
+    pp|pipe-pane) {
+        FROM_START=n
+        CONTINUE=y
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -a) {
+                # All, From the start of history
+                FROM_START=y
+                shift
+            }
+            ;;
+
+            -C|-continue) {
+                CONTINUE=y
+                shift
+            }
+            ;;
+
+            -nc|-nocontinue) {
+                CONTINUE=n
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        ff=/tmp/$$.data; trap "rm -f $ff" EXIT; mknod $ff p
+
+        target="$1"
+
+        if test "$FROM_START" = "y"; then
+            tmux capture-pane -e -p -S - -t "$target"
+        fi
+
+        if test "$CONTINUE" = "y"; then
+            if [ -n "$target" ]; then
+                tmux pipe-pane -t "$target" "cat > $ff"
+            else
+                tmux pipe-pane "cat > $ff"
+            fi
+
+            cat "$ff"
+        fi
+
+        exit 0
+    }
+    ;;
+
+    get-session) {
+        printf -- "%s" "$CALLER_TARGET"
+        exit 0
+    }
+    ;;
+
+    get-pane) {
+        printf -- "%s" "$CALLER_PANE" | ns
+
+        # tmux run will get the correct pane
+        exit 0
+    }
+    ;;
+
+    #spp|split-and-pipe) {
+    #    pen-tm n "$f :: NOT IMPLEMENTED"
+    #    lit "Not implemented"
+    #    exit 1
+
+    #    # Allows me to pipe panes through arbitrary commands.
+    #    # bind M-d run "tmux-split-and-pipe.sh 1>/dev/null 2>/dev/null"
+    #}
+    #;;
+
+    # F1 f
+    pc|pipec|pipe-to-command|sf|select-filter|split-and-pipe|spp) {
+        filter="$(set -o pipefail; cat $NOTES/ws/filters/filters.sh | pen-tm mfz | remove-hash-comments.sh)"
+        ret="$?"
+
+        # CALLER_PANE is set correctly
+
+        if ! test "$ret" -eq "130"; then
+            # lit "$CALLER_PANE $filter" | tv &>/dev/null
+
+            # unbuffer is needed so I can pipe
+            # pen-tm pp into a command without it sending a SIGPIPE and
+            # breaking the pipe.
+            # "stdbuf -i0 -o0 -e0" does not work. Need unbuffer
+            pen-tm -d spv "unbuffer pen-tm pp -a '$CALLER_PANE' | $filter; pak -m \"source pane closed\""
+            tmux select-pane -t "$CALLER_PANE"
+
+        fi
+
+        # exit "$ret"
+
+        exit 0
+    }
+    ;;
+
+    # yes | pen-tm pipe throttle-lines | cat
+    # yes | pen-tm pipe pv | cat
+    # yes | pen-tm pv | cat
+    # yes | tpv | cat
+    # cat $NOTES/ws/music/epic.el | pen-tm pipe throttle-lines | cat
+    wrto|pipe|pv) { # greedy stream (sub-linewise) through command in tmux split
+
+        : "${pipe_cmd:="$1"}"
+        : "${pipe_cmd:="$f"}"
+
+        case "$pipe_cmd" in
+            pipe) { pipe_cmd="cat"; } ;;
+
+            *)
+        esac
+
+        # The problem with this is that it reads in fully and spits out when done
+        # pen-tm -sout sps "$pipe_cmd" | cat
+
+        # TODO build it into the sps/nw options
+
+        stdinfd=/proc/$$/fd/0
+        stdoutfd=/proc/$$/fd/1
+
+        # exec 0</dev/null
+        # input_fd="/proc/$$/fd/0"; 0</dev/null cat "$input_fd" | tr y s
+
+        # I need to background this and wait
+        # 0</dev/null pen-tm sps -w "cat \"$fifo_out\" | $pipe_cmd >> \"$fifo_in\"" &>/dev/null &
+        # 0</dev/null cat "$stdinfd" > /dev/null
+        # 0</dev/null cat "$stdinfd" | $pipe_cmd
+        # 0</dev/null pen-tm sps -w "cat \"$stdinfd\" | $pipe_cmd >> \"$stdoutfd\""
+        # 0</dev/null pen-tm sps -w "cat \"$stdinfd\" | $pipe_cmd" &>/dev/null
+        # 0</dev/null pen-tm sps -w "cat \"$stdinfd\" | $pipe_cmd >> \"$stdoutfd\"" &>/dev/null
+        # 0</dev/null pen-tm sps -w "cat \"$stdinfd\" | $pipe_cmd >> \"$stdoutfd\"" &>/dev/null
+
+        0</dev/null pen-tm sps -w "cat \"$stdinfd\" | $pipe_cmd"
+    }
+    ;;
+
+    # This is like vipe
+    vipe|eipe) { # edit and continue
+        pipe_cmd="$1"; : ${pipe_cmd:="$f"}
+
+        pen-tm -sout -vipe sps "$pipe_cmd" | cat
+    }
+    ;;
+
+    yn) {
+        exec 0</dev/null
+        CMD="$(cmd "$@")"
+        : ${CMD:="$(cmd "$@")"}
+        pen-tm -te sps -bash "yn $CMD"
+        exit "$?"
+    }
+    ;;
+
+    ised) {
+        stdinfd=/proc/$$/fd/0
+        stdoutfd=/proc/$$/fd/1
+
+        0</dev/null pen-tm -te sps -w "ised $stdinfd $stdoutfd" | cat
+    }
+    ;;
+
+    sk|stream-keys|send-keys) {
+        # This also needs to stream. the stdin may not end
+        # so, while reading characters, or until the end of file
+
+        while true; do
+            line=''
+
+            while IFS= read -r -N 1 ch; do
+                case "$ch" in
+                    $'\04') got_eot=1   ;&
+                    $'\n')  break       ;;
+                    *)      line="$line$ch" ;;
+                esac
+            done
+
+            printf 'line: "%s"\n' "$line"
+
+            if (( got_eot )); then
+                break
+            fi
+        done
+
+        # keys="$(cat)"
+
+        target=
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -t) {
+                target="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        pen-tm n "$f :: NOT IMPLEMENTED"
+    }
+    ;;
+
+    monitor) {
+        pen-tm n "$f :: NOT FULLY IMPLEMENTED"
+        #pen-tm -d nw "echo 'loading htop...'; htop"
+
+        # htop is kinda slow
+        pen-tm -d nw "htop"
+    }
+    ;;
+
+    select-subsession) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+    }
+    ;;
+
+    subsession) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+        paths="$(find . -maxdepth 1 -type d)"
+        if [ -n "$paths" ]; then
+            # paths="$(pl "$paths" | s uniq | pen-tm -f -i spv "mfz" | umn | q -ftln | tr -s '\n' ' ')"
+            paths="$(pl "$paths" | s uniq | pen-tm -f -i spv -noerror "mfz" | umn)"
+            if [ -n "$paths" ]; then
+                # pl "$paths" | pen-tm -f -sin -S -i -tout spv "vim -"
+
+                # printf -- "%s\n" "$paths" | tv > /dev/null
+
+                bn="$(basename "$paths")"
+
+                # printf -- "%s\n" "$bn" | tv > /dev/null
+
+                pen-tm ns -r -l -s -c "$bn"
+            fi
+        fi
+    }
+    ;;
+
+    kass|kill-subsessions) {
+        pen-tm n "$f :: NOT IMPLEMENTED. Use data structure"
+    }
+    ;;
+
+    kss|kill-subsession) {
+        pen-tm n "$f :: NOT IMPLEMENTED. Use data structure"
+    }
+    ;;
+
+    bh|base-here) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+    }
+    ;;
+
+    bl|base-localhost) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+    }
+    ;;
+
+    os|omni-session) {
+        pen-tm n "$f :: NOT IMPLEMENTED. Can't remember what this did"
+    }
+    ;;
+
+    lkb|list-keybindings) {
+        tmux list-keys | pen-tm -S -tout nw -n tmux-key-bindings "v -c \"set ft=tmux\""
+    }
+    ;;
+
+    cr|compile-run) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+
+        # pen-tm -t spv "cr '.fnameescape(expand('%:p')).'"'
+    }
+    ;;
+
+    open-list-of-files-in-emacs) {
+        # Takes stdin. Opens all files in emacs
+
+        # This breaks stdin
+        # pen-tm n "$f :: NOT IMPLEMENTED"
+
+
+        #pen-tm -S -tout spv v
+
+        pen-tm -S -tout spv -noerror sp
+    }
+    ;;
+
+    tp|open-list-of-files-in-windows) {
+        # pen-tm -S -tout nw vipe
+
+        for var in "$@"
+        do
+            # print every argument into the stdin
+            exec < <(printf -- "%s\n" "$var")
+        done
+
+        input="$(cat)"
+
+        exec 0<&-
+        # pwd | tv
+
+        printf -- "%s" "$input" | awk 1 | umn | while read -r line; do
+            if [ -e "$line" ]; then
+                # line="$(p "$line" | qne)"
+                # bn="$(basename "$line")"
+                # pen-tm -te -d nw -n "$bn" "open -e $line"
+
+                pen-tm-open-file-blue "$line"
+            else
+                # should I not use 'ge' here?
+
+                line="$(p "$line" | scrape-files.sh | qne)" # use scrape-files because it could be an org-mode link
+                bn="$(basename "$line" | slugify)"
+
+                # open -e is also the way to open urls. rifle didn't
+                # work
+
+                pen-tm -te -d nw -n "$bn" "open -e $line"
+            fi
+        done
+    }
+    ;;
+
+    vim-open-buffer-list-in-windows) {
+        # pen-tm -S -tout nw vipe
+
+        input="$(cat)"
+        exec 0<&-
+
+        printf -- "%s" "$input" | sed '1d' | sed 's/^[^"]\+\(.*"\)[^"]\+$/\1/' | uq -ftln | umn | awk 1 | while read -r line; do
+            if [ -e "$line" ]; then
+                # line="$(p "$line" | qne)"
+                # bn="$(basename "$line")"
+                # pen-tm -te -d nw -n "$bn" "open -e $line"
+
+                pen-tm-open-file-green "$line"
+            fi
+        done
+    }
+    ;;
+
+    ngrams) {
+        # This is good-enough for the moment, but I want to capture from
+        # other windows too.
+        tmux capture-pane -t "$CALLER_TARGET" \; show-buffer\; delete-buffer
+
+        # vim +/"w=( \${(u)=\$(tmux-localhost-words.sh)} )" "$HOME/.zshrc"
+    }
+    ;;
+
+    # Get the cursor word gram
+    gram) {
+        tmux capture-pane -t "$CALLER_TARGET" \; show-buffer\; delete-buffer
+
+        pattern="$1"
+        : ${pattern:="»"}
+
+        # h="$(tmux display -p "#{pane_height}")"
+
+        y="$(tmux display -p "#{cursor_y}")"
+
+        pen-tm -f cat | sed -n "$((y + 1))p" | {
+            # make a list of possible prompts
+            clean-repl
+            #sed -e 's/^ghci> //' \
+            #    -e 's/^.*» //' \
+            #    -e 's/^Eval: //' \
+            #    -e 's/^In \[[0-9]\+\]: //' \
+            #    -e 's/^λ //' \
+            #    -e 's/^://' \
+            #    -e 's/^[^ ]\+% //' \
+            #    -e 's/ \[Unknown command\]$//'
+        } | xc -i -n
+    }
+    ;;
+
+    remote-xclip) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -r) {
+                # receive
+
+                # This overwrites our clipboard with the remote
+                # clipboard
+
+                exit 0
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        # pipe into this to send to the remote clipboard
+        # otherwise, it will cat the remote clipboard, but not save
+        # Use -r to overwrite ours with the remote
+    }
+    ;;
+
+    mru|most-recently-used) {
+        # without this, I can't pipe into vim
+        exec 2>&4
+
+        # cat "$HOME/.emacs/recentf"
+
+        list-mru -m
+
+        exit 0
+
+        # Filter the above through a files-only filter list.
+        # Need the consecutive combinations script.
+
+        # pen-tm sel localhost:mru.0; tmux respawn-pane -k -t localhost:mru.0;
+    }
+    ;;
+
+    unimplemented) {
+        p1="$1"; : ${p1:="This command is"}
+        pen-tm n "$p1 :: NOT IMPLEMENTED"
+    }
+    ;;
+
+    # This should launch a hydra. Use the same script for selecting an
+    # emacs distribution?
+    git) {
+        pen-tm n "$p1 :: NOT IMPLEMENTED"
+        pl "git status for everything below"
+        pl "I could open a hydra here or I could use lots of different ranger bindings"
+        pak
+    }
+    ;;
+
+    gist) {
+        pen-tm n "$p1 :: NOT IMPLEMENTED"
+        pl "git status for everything below"
+        pl "Use a command from the git hydra"
+
+        pl "Remotes"
+        git remote -v | f urls
+
+        pak
+    }
+    ;;
+
+    copy-pane-name) {
+        # I have to use format string because there is no 'literal'
+        # option for display-message
+
+        format_string="#{session_name}:#{window_name}.#{pane_index}"
+
+        pane_name="$(tmux display-message -p "$format_string")"
+        tmux display-message "copied pane name: $format_string"
+
+        lit "$pane_name" | xc -n
+    }
+    ;;
+
+    copy-pane-id) {
+        # I have to use format string because there is no 'literal'
+        # option for display-message
+
+        format_string="#{session_id}:#{window_id}.#{pane_id}"
+
+        pane_name="$(tmux display-message -p "$format_string")"
+        tmux display-message "copied pane id: $format_string"
+
+        p "$pane_name" | xc
+    }
+    ;;
+
+    lock) {
+        tmux lock-session -t localhost:
+    }
+    ;;
+
+    move-to-start) {
+        tmux set base-index 1 \; move-window -r \; move-window -t 0
+    }
+    ;;
+
+    move-to-end) {
+        tmux set base-index 1 \; move-window -r \; move-window -t :
+    }
+    ;;
+
+    command-history) {
+        pen-tm sel "localhost:history»" && pen-tm rsp -f -t "localhost:history»"
+    }
+    ;;
+
+    recent-isues) {
+        pen-tm sel "localhost:recent-issues»"
+        tmux respawn-pane -k -t "localhost:recent-issues»"
+    }
+    ;;
+
+    sel|select) {
+        # This even works for this:
+        # target="localhost:test.txt.0"
+
+        # For the time being, just do a really simple tmux select window
+        # If I want to implement a nested select then that will be much
+        # harder.
+
+        target="$1"
+        orig_target="$target"
+        target="$(printf -- "%s" "$target" | sed 's/\.\([^%0-9]\)/\*\1/')"
+
+        # echo "$target" | tv &>/dev/null
+
+        set -o pipefail
+        tmux select-window -t "$target" 2>/dev/null || tmux select-pane -t "$target" 2>/dev/null || {
+            # echo "could not find / disambiguate $target. using slow method..." 1>&2
+            # ns "could not find / disambiguate $target. using slow method..." 1>&2
+            re_target="$(p "$orig_target" | sed 's/\(\.[^0-9]\)/\\\1/g' | sed 's/\*/\.*/g')"
+            pen-tm-lsp.sh | grep -P "$re_target\t" | head -n 1 | sed 's/.*\t//' | xargs -l tmux select-window -t
+        } || exit 1
+
+        PARENT_PANE_ID="$(tmux show-env -t "$target" PARENT_WINDOW_ID | sed 's/.*=//')"
+        # echo "parent: $PARENT_PANE_ID" >> /tmp/pen-tm.log
+        if [ -n "$PARENT_PANE_ID" ]; then
+            pen-tm sel "$PARENT_PANE_ID"
+        fi
+
+        exit $?
+
+        # if [[ "${target}" =~ .*:.*\..* ]]; then
+            # lit "session:window.pane"
+        # elif [[ "${target}" =~ [^:]*\..* ]]; then
+            # lit "window.pane"
+        # elif [[ "${target}" =~ .*:[^.]* ]]; then
+            # lit "session:window"
+        # elif [[ "${target}" =~ [0-9]* ]]; then
+            # lit "pane"
+        # fi
+
+        target_session="${target%:*}"
+        target_windowpane="${target##*:}"
+        target_window="${target_windowpane%.*}"
+        target_pane="${target_windowpane##*.}"
+
+        # lit "${target%:*}"
+        # lit "${target##*:}"
+        # lit "${target_windowpane%.*}"
+        # lit "${target_windowpane##*.}"
+
+        pl "session: $target_session"
+        pl "window: $target_window"
+        pl "windowpane: $target_windowpane"
+        pl "pane: $target_pane"
+
+        exit 0
+    }
+    ;;
+    
+    copy-previous-line) {
+        copy-line -1
+    }
+    ;;
+
+    yank-line|copy-current-line) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -f|-from) {
+                DO_FROM=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        export DO_FROM
+
+        # $1 is empty by default
+        copy-line "$1"
+    }
+    ;;
+
+    # copy-current-line) {
+    #     pen-tm n "$f :: NOT IMPLEMENTED"
+    #     exit 1
+
+    #     pen-tm -te -d capture "$@" -clean -
+
+    #     cap_file="$(pen-tm cap | tf txt; sleep 0.5)"
+    #     if [ -s "$cap_file" ]; then
+    #         pen-tm -te nw -n em-click "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
+
+    #         x="$(cat /tmp/em-click.txt | cut -d ' ' -f 1)"
+    #         y="$(cat /tmp/em-click.txt | cut -d ' ' -f 2)"
+
+    #         if [ -n "$x" ] && [ -n "$y" ]; then
+    #             # notify-send "$loc"
+    #             x=$((x - 1))
+    #             y=$((y - 1))
+    #             pen-tm click-wrap $x $y
+    #         fi
+    #     fi
+
+    #     # Need to obtain coordinates here. Thene run: "pen-tm click -t %570 0 0"
+    #     # $HOME$VIMCONFIG/vim/pack/myplugins/start/vim-easymotion-new/autoload/vital/easymotion.vim
+
+    #     exit 0
+    # }
+    # ;;
+
+    get-last-output) {
+        pattern="$1"
+        : ${pattern:="»"}
+
+        pen-tm -f capture-stdout | remove-trailing-blank-lines | sed '/^$/d' | tac | sed -n -e 1d -e "0,/$pattern/p" | tac | sed 1d
+    }
+    ;;
+
+    edit-file) {
+        paths="$(find . -maxdepth 1 -type f | sed 's/^..//')"
+        if [ -n "$paths" ]; then
+            paths="$(pl "$paths" | s uniq | pen-tm -f -i spv -noerror "mfz -p" | umn)"
+            pl "$paths" | awk1 | while IFS=$'\n' read -r line; do
+                if test -n "$line"; then
+                    pen-tm tp "$line"
+                fi
+            done
+
+            #paths="$(pl "$paths" | s uniq | pen-tm -f -i spv -noerror "mfz -p" | umn | q -ftln | tr -s '\n' ' ')"
+            #if [ -n "$paths" ]; then
+            #    # pl "$paths" | pen-tm -f -sin -S -tout nw -noerror -xargs vim
+            #    pl "$paths" | pen-tm -f -sin -S -tout nw -noerror -xargs vim
+            #fi
+        fi
+        :
+    }
+    ;;
+
+    # bind f run -b "pen-tm find-window-from-session -no-activate"
+    find-window-from-session) {
+        # pen-tm n "$f :: NOT IMPLEMENTED"
+
+        # Maybe I should start trying to build real software in python.
+        # Design this thing. Use org-mode?
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -no-activate) { # This option allowed me to go to a window without triggering less to become vim.
+                no_activate=y
+                shift
+            }
+            ;;
+
+            -no-split) { # This option allowed me to go to a window without triggering less to become vim.
+                no_split=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        # I need trees of tmux sessions. How to do this quickly?
+
+        # tmux lsp -a -F '#{session_id}:#{window_id}:#{pane_id}'
+        #panes="$(tmux lsp -a)"
+        #panes="$(pen-tm-lsp.sh)"
+        #if [ -n "$panes" ]; then
+        #    result="$(pl "$panes" | pen-tm -f -i spv "mfz -nm")"
+
+        fzfcmd="pen-tm-lsp.sh \"${CALLER_TARGET}\" | his -i -r -f white '\.org' | his -i -r -f purple directories | his -i -r -f blue links | his -i -b red -f yellow '\(problems\)' | his -i -r -f orange '\(setup\|scripts\)' | his -i -r -f green commands | his -i -r -f yellow notes | his -i -f blue localhost | his -i -f red '\.[0-9]\+' | his -i -f purple : | mfz -A -nm | strip-ansi"
+        if test "$no_split" = "y"; then
+            result="$(eval "$fzfcmd")"
+        else
+            result="$(pen-tm -f -S spv -noerror "$fzfcmd")"
+        fi
+
+        if [ -n "$result" ]; then
+            # result="$(pl "$results" | head -n 1)"
+            full_pane_id="$(p "$result" | sed 's/.*\t//')"
+
+            #{
+            #    lit "$full_pane_id"
+            #}| tv &>/dev/null
+
+            pen-tm sel "$full_pane_id"
+            # pl "$result" | pen-tm -f -sin -S -tout spv -xargs vim
+        fi
+
+        # I first need to implement a tree or graph of tmux windows. But
+        # rather than get stuck too much in the terminal, I should be
+        # learning NLP and DL.
+    }
+    ;;
+
+    select-current) {
+        lastwin="$(tmux list-windows -t localhost_current | sed -n '$s/^\([0-9]\+\).*/\1/p')"
+        pen-tm sel "localhost_current:$lastwin"
+        exit 0
+    }
+    ;;
+
+    open-dirs) {
+        selections="$(pen-tm -s -fout spv -noerror "F find-no-git -d | mfz")"
+        if [ -n "$selections" ]; then
+            printf -- "%s\n" "$selections" | \
+            while read -r line; do
+                if [ -e "$line" ]; then
+                    line="$(p "$line" | qne)"
+                    bn="$(basename "$line")"
+                    pen-tm -te -d nw -noerror -n "$bn" "open -e $line"
+                fi
+            done
+        fi
+    }
+    ;;
+
+    open-files) {
+        # selections="$(pen-tm -s -fout spv -noerror "F find-no-git -f | mfz")"
+        selections="$(pen-tm -s -fout spv -noerror "F f | mfz")"
+        if [ -n "$selections" ]; then
+            printf -- "%s\n" "$selections" | \
+            while read -r line; do
+                if [ -e "$line" ]; then
+                    line="$(p "$line" | qne)"
+                    bn="$(basename "$line")"
+                    pen-tm -te -d nw -noerror -n "$bn" "open -e $line"
+                fi
+            done
+        fi
+    }
+    ;;
+
+    mfz|fzf) {
+        pen-tm -S -sout sps -args -noerror "$f" "$@" | cat
+        exit $?
+    }
+    ;;
+
+    less) {
+        pen-tm -S -tout spv -noerror tless 
+        exit $?
+    }
+    ;;
+
+    filter) {
+        IFS= read -rd '' input < <(cat /dev/stdin)
+
+        # Due to some mechanism, I don't understand, C-c on this will
+        # not give an error exit code
+        # Maybe the f is still running
+        # sout="$(printf -- "%s" "$input" | pen-tm spv "f filter-with-fzf | cat" | cat)"
+
+        export HAS_STDOUT
+        sout="$(set -o pipefail; printf -- "%s" "$input" | pen-tm spv -noerror "f filter-with-fzf" | cat)"
+        ret="$?"
+        # echo "$sout"
+        # echo "$ret"
+
+        if test "$ret" -eq 0; then
+            {
+                if [ -n "$sout" ]; then
+                    printf -- "%s" "$sout"
+                else
+                    printf -- "%s" "$input"
+                fi
+            } | {
+                if test "$HAS_STDOUT" = "y"; then
+                    cat
+                else
+                    # Use tv instead of vim. Helps (defun my/fwfzf)
+                    tv
+                fi
+            }
+        fi
+
+        exit "$ret"
+    }
+    ;;
+
+    # pen-tm w tpb tomorrow never dies
+    tw|w) { slug="$(echo "$@" | tr -d '\n' | slugify | cut -c -10)"; pen-tm -d nw -n "$slug" -fa "$@"; } ;;
+    h) { pen-tm -d sph -d -fa "$@"; } ;;
+    v) { pen-tm -d spv -d -fa "$@"; } ;;
+
+    template) {
+        :
+    }
+    ;;
+
+    *) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+    }
+    ;;
+
+esac
+
+exit 0

@@ -240,6 +240,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("generate regex for above" :call pf-gpt-j-generate-regex/2))
         ("> word/term" :call rcm-term :if (pen-word-clickable))
         ("keywords/classify" :call pen-extract-keywords)
+        ("get docs" :call pf-get-documentation-for-syntax-given-screen/2)
         ("define for glossary" :call pen-add-to-glossary)
         ("define term (general knowledge)" :call pen-define-general-knowledge)
         ("detect language here" :call pen-detect-language-context)
