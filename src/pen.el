@@ -967,7 +967,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (let ((approx-total-tokens-from-max-gen
                           (+ pen-approximate-prompt-token-length
                              final-max-generated-tokens)))
-                     (if (< approx-total-tokens-from-max-gen final-max-tokens)
+                     (if (and
+                          final-max-generated-tokens
+                          (< 0 final-max-generated-tokens)
+                          (< approx-total-tokens-from-max-gen final-max-tokens))
                          approx-total-tokens-from-max-gen
                        final-max-tokens)))
 
@@ -1006,7 +1009,10 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_END_POS" . ,prompt-end-pos))))
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data data))
-                     data))
+                     ;; (tv data)
+                     data
+                     ;; data
+                     ))
                   (results)
 
                   (resultsdirs
