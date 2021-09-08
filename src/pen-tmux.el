@@ -16,6 +16,7 @@ START and END can be in either order."
 
 (defun tmux-pane-capture (&optional show-buffer)
   (interactive)
+
   ;; Rather than toggle window margins, remove the window margin width from the start of each line
   (let* ((margin-width (or (car (window-margins))
                            0))
