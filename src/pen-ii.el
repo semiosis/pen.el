@@ -8,6 +8,7 @@
  (pen-one (pf-list-of/2 10 "operating systems with a command line")))
 
 ;; "OS which have a bash-like shell of some kind installed"
+;; (ci (pen-one (pf-list-of/2 10 "operating systems with a command line")))
 (defset list-of-sh-operating-systems '(
                                        ;;  There has been a name change
                                        ;; That's why this is giving bad results
@@ -42,8 +43,21 @@
       (turn-on-comint-history (f-join pen-nlsh-histdir slug)))))
 
 (defun nlsh-os (os)
-  (interactive (list (fz list-of-sh-operating-systems
-                         nil nil "nlsh-os: ")))
+  (interactive (list (fz
+                      (append
+                       '(;;  There has been a name change
+                         ;; That's why this is giving bad results
+                         ;; "GNU Guix System"
+                         "GuixSD"
+                         "Alpine Linux"
+                         "RHEL Red Hat Enterprise Linux"
+                         "Amazon Linux 2"
+                         "NixOS"
+                         "macOS"
+                         "Ubuntu 20.04"
+                         "Arch Linux")
+                       (ci (pen-one (pf-list-of/2 10 "operating systems with a command line"))))
+                      nil nil "nlsh-os: ")))
   (comint-quick (cmd "nlsh-os" os)))
 
 (provide 'pen-nlsh)

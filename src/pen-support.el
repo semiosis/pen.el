@@ -163,7 +163,22 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
 (setq user-home-directory (or user-home-directory "/root"))
 
 (defmacro upd (&rest body)
-  `(let ((pen-sh-update t)) ,@body))
+  (let ((l (eval
+            `(let ((pen-sh-update t))
+               ,@body))))
+    `',l))
+
+(comment
+ (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line")))
+ (upd (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line")))))
+
+(defun test-upd2 ()
+  (interactive)
+  (etv (pps (upd (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line")))))))
+
+(defun test-upd ()
+  (interactive)
+  (etv (pps (eval `(upd (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line"))))))))
 
 (defmacro noupd (&rest body)
   `(let ((pen-sh-update nil)) ,@body))
