@@ -274,6 +274,25 @@ Reconstruct the entire yaml-ht for a different language."
   (pen-etv (pen-expand-template-keyvals " <y> <q:thing hi> "
                                         (-zip '("thing hi" "y") '("yo" "n")))))
 
+(defun scrape-all (re input)
+  (pen-str2list (pen-snc (pen-cmd "scrape" re) input)))
+
+(defun pen-expand-macros (s)
+  (let ((scs (-filter-not-empty-string (scrape-all "<m:\\([^)]*\\)>" s))))
+    (shut-up
+      (cl-loop for sc in scs do
+               (let* ((inner sc)
+                      (inner (s-replace-regexp "^<m:" "" inner))
+                      (inner (s-replace-regexp ">$" "" inner)))
+                 (setq s (string-replace sc (pp-oneline (expand-macro (eval-string (concat "'" inner)))) s))))))
+  s
+  ;; (scrape "<m:([^)]*)>" s)
+  )
+
+(defun test-pen-expand-macros ()
+  (interactive)
+  (etv (pen-expand-macros "This is my string <m:(pen-n-words->n-tokens/m)> This is it")))
+
 (defun pen-expand-template-keyvals (s keyvals &optional encode)
   "expand template from alist"
   (if keyvals
@@ -439,6 +458,23 @@ Reconstruct the entire yaml-ht for a different language."
     (if (interactive-p)
         (message "%s %d" "approximate-length: " len)
       len)))
+
+(defun to-integer (n)
+  ;; truncate
+  ;; floor
+  (cond
+   ((stringp n) (round (string-to-number n)))
+   ((numberp n) (round n))
+   (t 0)))
+
+(defun pen-n-words->n-tokens (n-words &optional chars-per-tok chars-per-word)
+  (setq chars-per-word (or chars-per-word
+                           (pen-get-average-word-length)))
+
+  (to-integer (/ (* n-words chars-per-word) chars-per-tok)))
+
+(defmacro pen-n-words->n-tokens/m (n-words)
+  `(pen-n-words->n-tokens ,n-words (pen-num token-char-length)))
 
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.
@@ -885,12 +921,16 @@ Reconstruct the entire yaml-ht for a different language."
                     (pen-num final-approximate-token-char-length)))
 
                   (final-max-generated-tokens
-                   (let* ((prompt-length pen-approximate-prompt-token-length))
+                   (let* ((prompt-length pen-approximate-prompt-token-length)
+                          (token-char-length (pen-num final-approximate-token-char-length)))
                      (pen-str2num
                       (eval-string
+                       ;; template is expanded twice so macros can have input and output
                        (expand-template
-                        (str (or (pen-var-value-maybe 'max-generated-tokens)
-                                 ,max-generated-tokens)))))))
+                        (pen-expand-macros
+                         (expand-template
+                          (str (or (pen-var-value-maybe 'max-generated-tokens)
+                                   ,max-generated-tokens)))))))))
 
                   ;; (testme
                   ;;  (tv final-max-generated-tokens))

@@ -272,6 +272,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1 :if (pen-word-clickable))
     ("define word" :call pen-define :if (pen-word-clickable))))
 
+(def-right-click-menu rcm-generate-program
+  '(("Cancel" :call identity-command)
+    ("generate program from NL" :call pf-very-witty-pick-up-lines-for-a-topic/1 :if (pen-word-clickable))))
+
 (def-right-click-menu rcm-explain-code
   '(("Cancel" :call identity-command)
     ("explain why code is used" :call pf-explain-why-this-code-is-used/2)

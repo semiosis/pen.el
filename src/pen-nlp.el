@@ -1,3 +1,9 @@
+(defset pen-average-word-lengths
+  '(("english" . 5.1)))
+
+(defun pen-get-average-word-length ()
+  (alist-get "english" pen-average-word-lengths nil nil 'string-equal))
+
 (defun ngram-suggest (query)
   (interactive (list (read-string-hist "ngram-suggest query: ")))
 
