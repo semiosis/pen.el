@@ -894,7 +894,9 @@ when s is a string, set the clipboard to s"
 
   (cond
    ((string-equal "elisp" langstr)
-    (setq langstr "emacs-lisp")))
+    (setq langstr "emacs-lisp"))
+   ((string-equal "bash" langstr)
+    (setq langstr "sh")))
 
   (intern (concat langstr "-mode")))
 

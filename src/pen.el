@@ -926,11 +926,11 @@ Reconstruct the entire yaml-ht for a different language."
                      (pen-str2num
                       (eval-string
                        ;; template is expanded twice so macros can have input and output
-                       (expand-template
-                        (pen-expand-macros
-                         (expand-template
-                          (str (or (pen-var-value-maybe 'max-generated-tokens)
-                                   ,max-generated-tokens)))))))))
+                       (tv (expand-template
+                            (pen-expand-macros
+                             (expand-template
+                              (str (or (pen-var-value-maybe 'max-generated-tokens)
+                                       ,max-generated-tokens))))))))))
 
                   ;; (testme
                   ;;  (tv final-max-generated-tokens))
@@ -952,7 +952,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-max-generated-tokens
                    (if (or
-                        (not final-max-generated-tokens)
+                        ;; (not final-max-generated-tokens)
                         (= 0 final-max-generated-tokens))
                        (- final-max-tokens pen-approximate-prompt-token-length)
                      final-max-generated-tokens))
