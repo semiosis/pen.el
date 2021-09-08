@@ -705,6 +705,19 @@ region-active-p does not work for evil selection."
         sel
       (str sel))))
 
+;; TODO collect from tmux instead
+(defun pen-screen-text ()
+  (buffer-string))
+
+(defun pen-screen-or-selection ()
+  (let ((sel (selection)))
+    (if (sor sel)
+        sel
+      (pen-screen-text))))
+
+(defun pen-screen-or-selection-ask ()
+  (pen-ask (pen-screen-or-selection)))
+
 (defun pen-selected-text-ignore-no-selection (&optional keep-properties)
   "Just give me the selected text as a string. If it's empty, then nothing was selected. region-active-p does not work for evil selection."
   (interactive)
@@ -790,7 +803,7 @@ when s is a string, set the clipboard to s"
 (defvar histvar nil)
 
 (defun completing-read-hist (prompt &optional initial-input histvar default-value)
-  "read-string but with history."
+  "read-string but with history and newline evaluation."
   (if (not histvar)
       (setq histvar (intern (concat "completing-read-hist-" (slugify prompt)))))
 
@@ -800,16 +813,20 @@ when s is a string, set the clipboard to s"
       (setq prompt (concat prompt " ")))
 
   (if (not (variable-p histvar))
-            (eval `(defvar ,histvar nil)))
+      (eval `(defvar ,histvar nil)))
   (if (and (not initial-input)
            (listp histvar))
       (setq initial-input (first histvar)))
+
+  (setq initial-input (string-replace "\n" "\\n" initial-input))
+
   (eval `(progn
            (let ((inhibit-quit t))
              (or (with-local-quit
-                   (let ((completion-styles
-                          '(basic))
-                         (s (str (pen-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil))))
+                   (let* ((completion-styles
+                           '(basic))
+                          (s (str (pen-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil)))
+                          (s (string-replace "\\n" "\n" s)))
 
                      (setq ,histvar (seq-uniq ,histvar 'string-equal))
                      s))

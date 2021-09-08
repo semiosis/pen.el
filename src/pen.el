@@ -509,10 +509,10 @@ Reconstruct the entire yaml-ht for a different language."
                         (vector2list final-flags)
                         " ")))
 
-                  (final-is-info
+                  (final-info
                    (or (pen-var-value-maybe 'do-etv)
-                       (pen-var-value-maybe 'is-info)
-                       ,is-info))
+                       (pen-var-value-maybe 'info)
+                       ,info))
 
                   (final-new-document
                    (or (pen-var-value-maybe 'new-document)
@@ -1152,7 +1152,7 @@ Reconstruct the entire yaml-ht for a different language."
                  results
                (if is-interactive
                    (cond
-                    ((or final-is-info
+                    ((or final-info
                          final-new-document
                          (>= (prefix-numeric-value current-prefix-arg) 4))
                      (pen-etv (ink-decode (ink-propertise result))))
@@ -1522,7 +1522,7 @@ Function names are prefixed with pf- for easy searching"
                         (mode (ht-get yaml-ht "mode"))
                         (flags (ht-get yaml-ht "flags"))
                         (subprompts (ht-get yaml-ht "subprompts"))
-                        (is-info (ht-get yaml-ht "is-info"))
+                        (info (ht-get yaml-ht "info"))
                         (new-document (ht-get yaml-ht "new-document"))
                         (start-yas (ht-get yaml-ht "start-yas"))
                         (yas (ht-get yaml-ht "yas"))
@@ -1649,7 +1649,12 @@ Function names are prefixed with pf- for easy searching"
                         (problems (vector2list (ht-get yaml-ht "problems")))
                         (design-patterns (vector2list (ht-get yaml-ht "design-patterns")))
                         (todo (vector2list (ht-get yaml-ht "todo")))
-                        (notes (vector2list (ht-get yaml-ht "notes")))
+                        (notes
+                         (let* ((n (ht-get yaml-ht "notes"))
+                                (n (if (vectorp n)
+                                       (pen-list-to-orglist (vector2list (ht-get yaml-ht "notes")))
+                                     n)))
+                           n))
                         (aims (vector2list (ht-get yaml-ht "aims")))
                         (past-versions (vector2list (ht-get yaml-ht "past-versions")))
                         (external-related (vector2list (ht-get yaml-ht "external-related")))
@@ -1683,7 +1688,7 @@ Function names are prefixed with pf- for easy searching"
                                   (concat "\nengine-whitespace-support: no"))
                                 (if inject-gen-start (concat "\ninject-gen-start: " (pps inject-gen-start)))
                                 (if task (concat "\ntask: " task))
-                                (if notes (concat "\nnotes:" (pen-list-to-orglist notes)))
+                                (if notes (concat "\nnotes:" notes))
                                 (if filter (concat "\nfilter: on"))
                                 (if completion (concat "\ncompletion: on"))
                                 (if past-versions (concat "\npast-versions:\n" (pen-list-to-orglist past-versions)))
