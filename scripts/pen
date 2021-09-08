@@ -3,6 +3,8 @@
 # If mac
 # --env="DISPLAY=host.docker.internal:0"
 
+# echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
+
 yn () {
     y_chars="Yy"
     n_chars="Nn"
@@ -307,14 +309,26 @@ case "$sn" in
             use_tty=y
 
             if stdin_exists; then
-                i=1
-                for var in "$@"
-                do
-                    echo "$0"
-                    ((i++))
-                done
+                in="$(cat)"
 
-                set -- "$(cat)" "$@"
+                if test "$1" = {}; then
+                    shift
+
+                    set -- "$(cat)" "$@"
+                elif test "$#" -gt 1; then
+                    i=1
+                    for var in "$@"
+                    do
+                        h="$((i - 1))"
+                        j="$((i + 2))"
+                        if test "$var" = "{}"; then
+                            set -- "${@:1:$h}" "$in" "${@:j}"
+                        fi
+                        ((i++))
+                    done
+                else
+                    set -- "$in" "$@"
+                fi
             fi
 
             if ! printf -- "%s\n" "$pfname" | grep -q -P '/[0-9]*'; then
@@ -447,7 +461,26 @@ case "$sn" in
     *) {
         show_banner=n
         if stdin_exists; then
-            set -- "$(cat)" "$@"
+            in="$(cat)"
+
+            if test "$1" = {}; then
+                shift
+
+                set -- "$(cat)" "$@"
+            elif test "$#" -gt 1; then
+                i=1
+                for var in "$@"
+                do
+                    h="$((i - 1))"
+                    j="$((i + 2))"
+                    if test "$var" = "{}"; then
+                        set -- "${@:1:$h}" "$in" "${@:j}"
+                    fi
+                    ((i++))
+                done
+            else
+                set -- "$in" "$@"
+            fi
         fi
 
         CMD="$(cmd-nice "$@")"
