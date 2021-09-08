@@ -203,15 +203,17 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (pen-term-sps (pen-cmd "comint" "-E" (pen-cmd "ii" lang history))))
 
 (defun pen-browse-url-for-passage ()
+  "Search the web, given a selection"
   (interactive)
-  (let ((urls (pf-get-urls-for-a-passage/1))
-        (url (fz urls)))
+  (let* ((urls (pf-get-urls-for-a-passage/1))
+         (url (fz urls)))
     (eww url)))
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
         ("transpile" :call pf-transpile/3)
+        ("browse internet" :call pf-get-urls-for-a-passage/1)
         ("explain error" :call pf-explain-error/3)
         ("> explain code" :call rcm-explain-code)
         ("> cheap" :call rcm-cheap)
