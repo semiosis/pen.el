@@ -2227,7 +2227,8 @@ May use to generate code from comments."
 (provide 'pen)
 
 (defun pen-final-loads ()
-  (load-library "pen-custom"))
+  (load-library "pen-custom")
+  (load-library "pen-ii"))
 
 (add-hook 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
           'pen-final-loads t)
