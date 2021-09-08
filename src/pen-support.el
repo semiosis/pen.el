@@ -406,10 +406,13 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (if b_unbuffer
         (setq cmd (concat "unbuffer -p " cmd)))
 
-    (if (or
-         (and (variable-p 'pen-sh-update)
-              (eval 'pen-sh-update))
-         (>= (prefix-numeric-value current-global-prefix-arg) 16))
+    (if (or (or
+             (pen-var-value-maybe 'pen-sh-update)
+             (>= (prefix-numeric-value current-global-prefix-arg) 16))
+            (or
+             (and (variable-p 'sh-update)
+                  (eval 'sh-update))
+             (>= (prefix-numeric-value current-prefix-arg) 16)))
         (setq cmd (concat "export UPDATE=y; " cmd)))
 
     (setq tf (make-temp-file "elisp_bash"))
@@ -420,7 +423,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
             (-filter 'identity
                      (list (list "PATH" (getenv "PATH"))
                            (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
-                           (if (and (variable-p 'pen-sh-update) (eval 'pen-sh-update))
+                           (if (or (pen-var-value-maybe 'pen-sh-update)
+                                   (pen-var-value-maybe 'sh-update))
                                (list "UPDATE" "y")))))))
       (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))
 
