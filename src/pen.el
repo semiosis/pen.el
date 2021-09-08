@@ -455,6 +455,10 @@ Reconstruct the entire yaml-ht for a different language."
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match))
       ,doc
       (interactive ,(cons 'list iargs))
+      (setq no-select-result
+            (or no-select-result
+                (pen-var-value-maybe 'pen-no-select-result)))
+
       ;; force-custom, unfortunately disables call-interactively
       ;; i guess that it could also disable other values
       (let ((is-interactive (interactive-p)))
@@ -1933,6 +1937,26 @@ Function names are prefixed with pf- for easy searching"
   (interactive)
   (pen-etv
    (pen-force-custom (message (str (pen-var-value-maybe 'n-collate))))))
+
+;; TODO I absolutely need to be using iλ functions everywhere
+(defmacro pen-one (&rest body)
+  `(eval
+    `(let ((pen-single-generation-b t)
+           (n-collate 1)
+           (n-completions 1)
+           (pen-no-select-result t)
+           (pen-select-only-match t))
+       ,',@body)))
+
+(defmacro pen-car (&rest body)
+  `(eval
+    `(car
+      (let ((pen-single-generation-b t)
+            (n-collate 1)
+            (n-completions 1)
+            (pen-no-select-result t)
+            (pen-select-only-match t))
+        ,',@body))))
 
 (defmacro pen-single-generation (&rest body)
   "This wraps around pen function calls to make them only create one generation"
