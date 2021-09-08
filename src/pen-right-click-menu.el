@@ -202,6 +202,12 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
                      (pen-preceding-text)))
   (pen-term-sps (pen-cmd "comint" "-E" (pen-cmd "ii" lang history))))
 
+(defun pen-browse-url-for-passage ()
+  (interactive)
+  (let ((urls (pf-get-urls-for-a-passage/1))
+        (url (fz urls)))
+    (eww url)))
+
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
