@@ -311,7 +311,7 @@ case "$sn" in
                 for var in "$@"
                 do
                     echo "$0"
-                    i++
+                    ((i++))
                 done
 
                 set -- "$(cat)" "$@"
