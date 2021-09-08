@@ -5,10 +5,19 @@ export TTY
 # TERM=dumb lfe
 # Avoid using rlwrap inside comint as it messes with the user prompt
 
+user_prompt_re="\\(In \\|Out\\)\\[[0-9]*\\]: "
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -hs) {
         load_hs="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -p) {
+        user_prompt_re="$2"
         shift
         shift
     }
@@ -36,4 +45,4 @@ if test -n "$load_hs"; then
     hsqc -ao "$load_hs" | tac > "$NOTES/programs/comint/history/$slug"
 fi
 
-sp -e "(comint-quick $(aqf-nice "$CMD") $(aqf-nice "$(pwd -P)") $(aqf-nice "\\(In \\|Out\\)\\[[0-9]*\\]: "))"
+sp -e "(comint-quick $(aqf-nice "$CMD") $(aqf-nice "$(pwd -P)") $(aqf-nice "$user_prompt_re"))"

@@ -3,6 +3,24 @@
 # Imaginary interpreter
 # Version 2.0, bash
 
+use_comint=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nocomint) {
+        use_comint=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$use_comint" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+    CMD="$(cmd-nice "$@")"
+    comint -E "ii $CMD"
+    exit $?
+fi
+
 lang="$1"
 test -n "$lang" || exit 1
 shift
@@ -38,6 +56,7 @@ test -n "$path" && test -f "$path" || exit 1
 
 IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter' | sed "s/<language>/$lang/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
 IFS= read -rd '' ii_input_echo_pp < <(cat "$path" | yq -r '.["ii-input-echo-pp"] // empty');typeset -p ii_input_echo_pp &>/dev/null
+IFS= read -rd '' user_prompt_re < <(cat "$path" | yq -r '.["comint-user-prompt-regex"] // empty');typeset -p user_prompt_re &>/dev/null
 
 prompt_the_lm() {
     user_input="$1"
