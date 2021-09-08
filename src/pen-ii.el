@@ -4,6 +4,9 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(comment
+ (pen-one (pf-list-of/2 10 "operating systems with a command line")))
+
 ;; "OS which have a bash-like shell of some kind installed"
 (defset list-of-sh-operating-systems '(
                                        ;;  There has been a name change
