@@ -60,4 +60,4 @@
                       nil nil "nlsh-os: ")))
   (comint-quick (pen-cmd "nlsh" os) pen-prompts-directory))
 
-(provide 'pen-nlsh)
+(provide 'pen-ii)
