@@ -18,7 +18,7 @@
     (if (and (file-exists-p fp)
              (not b_update))
         (progn
-          (setq result (cat fp)))
+          (setq result (e/cat fp)))
       (progn
         (setq result (pp-to-string (eval exp)))
         (write-to-file (str result) fp)))
