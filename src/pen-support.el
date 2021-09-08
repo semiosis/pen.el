@@ -164,7 +164,10 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
 
 (defmacro upd (&rest body)
   (let ((l (eval
-            `(let ((pen-sh-update t))
+            `(let (;; for cacheit
+                   (pen-sh-update t)
+                   ;; for memoize
+                   (do-pen-update t))
                ,@body))))
     `',l))
 

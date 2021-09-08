@@ -67,8 +67,10 @@ care."
               ;; (or value (puthash args (apply ,func args) ,table))
               (let ((ret (or
                           (and
+                           (not (pen-var-value-maybe 'pen-sh-update))
                            (not (pen-var-value-maybe 'do-pen-update))
                            (not (>= (prefix-numeric-value current-global-prefix-arg) 4))
+                           (not (>= (prefix-numeric-value current-prefix-arg) 4))
                            value)
                           ;; Add to the hash table and save the hash table
                           (let ((newret (puthash args
