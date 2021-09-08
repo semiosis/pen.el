@@ -2267,6 +2267,7 @@ May use to generate code from comments."
 (require 'pen-cacheit)
 (require 'pen-ii)
 (require 'pen-comint)
+(require 'subr+)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 

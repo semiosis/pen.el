@@ -229,6 +229,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("bullet points -> first-hand account" :call pf-meeting-bullet-points-to-summary/1 :if (pen-selected-p)))
         ("code"
          ("Cancel" :call identity-command)
+         ("> generate program" :call rcm-generate-program)
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
          ;; ("add comments" :call pf-annotate-code-with-commentary/2)
@@ -274,7 +275,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (def-right-click-menu rcm-generate-program
   '(("Cancel" :call identity-command)
-    ("generate program from NL" :call pf-very-witty-pick-up-lines-for-a-topic/1 :if (pen-word-clickable))))
+    ("generate program from NL" :call pf-generate-program-from-nl/3)))
 
 (def-right-click-menu rcm-explain-code
   '(("Cancel" :call identity-command)
