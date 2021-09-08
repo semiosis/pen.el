@@ -78,6 +78,7 @@ prompt_the_lm() {
 p "${kickstarter} "
 memory="${kickstarter} "
 
+# Sometimes I want to read multiple lines. How?
 while read -e -r user_input; do
     # echo -en "\033[1A\033[2K"
     # echo "$user_input"
