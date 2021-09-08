@@ -2221,7 +2221,6 @@ May use to generate code from comments."
 (require 'ilambda)
 (require 'pen-cacheit)
 (require 'pen-ii)
-(require 'pen-nlsh)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
