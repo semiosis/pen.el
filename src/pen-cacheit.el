@@ -4,7 +4,7 @@
 
 (f-mkdir pen-ci-cache-dir)
 
-(defmacro pen-cacheit (exp &optional b_update)
+(defmacro pen-ci (exp &optional b_update)
   "Caches something. Saves an expression."
   (let* ((name (str exp))
          (result nil)
@@ -29,7 +29,5 @@
             )
         (setq result (read result)))
     `',result))
-
-(defalias 'pen-ci 'pen-cacheit)
 
 (provide 'pen-cacheit)
