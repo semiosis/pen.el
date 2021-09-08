@@ -926,11 +926,11 @@ Reconstruct the entire yaml-ht for a different language."
                      (pen-str2num
                       (eval-string
                        ;; template is expanded twice so macros can have input and output
-                       (tv (expand-template
-                            (pen-expand-macros
-                             (expand-template
-                              (str (or (pen-var-value-maybe 'max-generated-tokens)
-                                       ,max-generated-tokens))))))))))
+                       (expand-template
+                        (pen-expand-macros
+                         (expand-template
+                          (str (or (pen-var-value-maybe 'max-generated-tokens)
+                                   ,max-generated-tokens)))))))))
 
                   ;; (testme
                   ;;  (tv final-max-generated-tokens))
