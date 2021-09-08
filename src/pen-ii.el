@@ -58,6 +58,6 @@
                          "Arch Linux")
                        (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line"))))
                       nil nil "nlsh-os: ")))
-  (comint-quick (cmd "nlsh-os" os) pen-prompts-directory))
+  (comint-quick (cmd "nlsh" os) pen-prompts-directory))
 
 (provide 'pen-nlsh)
