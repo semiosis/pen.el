@@ -17,7 +17,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -p) {
-        user_prompt_re="$2"
+        if test -n "$2"; then
+            user_prompt_re="$2"
+        fi
         shift
         shift
     }
