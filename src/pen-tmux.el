@@ -32,4 +32,4 @@ START and END can be in either order."
             (current-buffer)))
       wincontents)))
 
-(provide 'my-tmux)
+(provide 'pen-tmux)
