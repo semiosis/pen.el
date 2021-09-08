@@ -307,6 +307,13 @@ case "$sn" in
             use_tty=y
 
             if stdin_exists; then
+                i=1
+                for var in "$@"
+                do
+                    echo "$0"
+                    i++
+                done
+
                 set -- "$(cat)" "$@"
             fi
 
