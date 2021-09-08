@@ -951,7 +951,9 @@ Reconstruct the entire yaml-ht for a different language."
                      final-max-tokens))
 
                   (final-max-generated-tokens
-                   (if (= 0 final-max-generated-tokens)
+                   (if (or
+                        (not final-max-generated-tokens)
+                        (= 0 final-max-generated-tokens))
                        (- final-max-tokens pen-approximate-prompt-token-length)
                      final-max-generated-tokens))
 
