@@ -7,6 +7,7 @@
                  :pen-force-engine pen-force-engine
                  :lm-complete-stderr (pen-snc (pen-cmd "cat" "/tmp/lm-complete-stderr.txt"))
                  :lm-complete-stdout (pen-snc (pen-cmd "cat" "/tmp/lm-complete-stdout.txt"))
+                 :lm-complete-results (pen-snc (concat "find " (pen-q (pen-snc (pen-cmd "cat" "/tmp/lm-complete-stdout.txt"))) " | while read line; do cat \$line; echo; done"))
                  :openai-last-output (pen-snc (pen-cmd "cat" "/tmp/openai-temp.txt"))
                  :hf-last-output (pen-snc (pen-cmd "cat" "/tmp/hf-temp.txt"))
                  :aix-last-output (pen-snc (pen-cmd "cat" "/tmp/aix-temp.txt"))

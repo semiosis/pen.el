@@ -20,7 +20,7 @@
         (progn
           (setq result (cat fp)))
       (progn
-        (setq result (str (eval exp)))
+        (setq result (pp-to-string (eval exp)))
         (write-to-file (str result) fp)))
     (if (or (string-match-p "^[0-9.]+$" result) ; number
             (string-match-p "^(.*)$" result)
