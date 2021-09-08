@@ -963,6 +963,14 @@ Reconstruct the entire yaml-ht for a different language."
                     0
                     final-engine-max-generated-tokens))
 
+                  (final-max-tokens
+                   (let ((approx-total-tokens-from-max-gen
+                          (+ pen-approximate-prompt-token-length
+                             final-max-generated-tokens)))
+                     (if (< approx-total-tokens-from-max-gen final-max-tokens)
+                         approx-total-tokens-from-max-gen
+                       final-max-tokens)))
+
                   (data
                    (let ((data
                           ;; The prompt loses unicode here. I think I need to convert to base64 maybe
