@@ -23,6 +23,7 @@
       ,name
       ,(car body)
       ,(cadr body)))))
+(defalias 'imacro 'defimacro)
 
 (defun test-imacro-1 ()
   (interactive)
@@ -89,6 +90,7 @@
   `(defalias ',name-sym
      (function ,(eval
                  `(ilambda ,args ,code-or-task ,task-or-code ,name-sym)))))
+(defalias 'ifun 'idefun)
 
 (comment
  (idefun idoubleit (x)
