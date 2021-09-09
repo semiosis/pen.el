@@ -696,7 +696,7 @@ region-active-p does not work for evil selection."
          (cond
           ((or (region-active-p)
                (eq evil-state 'visual))
-           (buffer-substring (region-beginning) (region-end)))
+           (buffer-substring ((region-end)gion-beginning) (region-end)))
           (iedit-mode
            (iedit-current-occurrence-string))
           (ignore-no-selection nil)
@@ -1053,6 +1053,10 @@ when s is a string, set the clipboard to s"
   (pen-add-to-glossary term nil nil "general knowledge")
   ;; (message (lm-define term t "general knowledge"))
   )
+
+(defun pen-define-detectlang (term)
+  (interactive (list (pen-thing-at-point-ask "word" t)))
+  (pen-add-to-glossary term nil nil (detect-language)))
 
 (defun pen-extract-keywords ()
   (interactive)

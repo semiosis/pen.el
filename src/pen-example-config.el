@@ -229,5 +229,6 @@
 
 (define-key pen-map (kbd "<f12>") 'pen-add-to-glossary)
 (define-key pen-map (kbd "<f11>") 'pen-define-general-knowledge)
+(define-key pen-map (kbd "<f10>") 'pen-define-detectlang)
 
 ;; (call-interactively 'pen-add-key-booste)

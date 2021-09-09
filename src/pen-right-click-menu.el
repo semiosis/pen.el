@@ -251,6 +251,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("get docs" :call pf-get-documentation-for-syntax-given-screen/2)
         ("define for glossary" :call pen-add-to-glossary)
         ("define term (general knowledge)" :call pen-define-general-knowledge)
+        ("define term (detect language)" :call pen-define-detectlang)
         ("detect language here" :call pen-detect-language-context)
         ("start ii" :call pen-start-imaginary-interpreter)))
 
