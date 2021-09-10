@@ -216,7 +216,7 @@ killed after rendering."
   (ignore-errors (rename-buffer (concat "*eww-" (short-hash (concat (car body) (str (time-to-seconds))))) "*") t)
   (recenter-top))
 
-(defun my/eww-browse-url-chrome (&rest body)
+(defun pen-eww-browse-url-chrome (&rest body)
   "Same as 'eww-browse-url' except it renames the buffer after loading."
   ;; I also want to recenter
   (interactive (list (read-string "url:")))

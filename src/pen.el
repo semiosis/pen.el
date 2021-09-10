@@ -252,12 +252,15 @@ Reconstruct the entire yaml-ht for a different language."
             (if encode (setq val (pen-encode-string val)))
             (let ((unquoted (format "<%d>" i))
                   (quoted (format "<q:%d>" i))
+                  (backslashed (format "<bs:%d>" i))
                   (quoted2 (format "<q<pen-colon>%d>" i)))
               (cond
                ((re-match-p (pen-unregexify unquoted) s)
                 (setq s (string-replace unquoted (chomp val) s)))
                ((re-match-p (pen-unregexify quoted) s)
                 (setq s (string-replace quoted (pen-q (chomp val)) s)))
+               ((re-match-p (pen-unregexify backslashed) s)
+                (setq s (string-replace backslashed (pen-snc "sed 's=.=\\\\&=g'" val) s)))
                ((re-match-p (pen-unregexify quoted) s)
                 (setq s (string-replace quoted2 (pen-q (chomp val)) s)))))
             (setq i (+ 1 i)))
@@ -308,12 +311,15 @@ Reconstruct the entire yaml-ht for a different language."
                           val)))
               (let ((unquoted (format "<%s>" key))
                     (quoted (format "<q:%s>" key))
+                    (backslashed (format "<bs:%d>" i))
                     (quoted2 (format "<q<pen-colon>%s>" key)))
                 (cond
                  ((re-match-p (pen-unregexify unquoted) s)
                   (setq s (string-replace unquoted (chomp val) s)))
                  ((re-match-p (pen-unregexify quoted) s)
                   (setq s (string-replace quoted (pen-q (chomp val)) s)))
+                 ((re-match-p (pen-unregexify backslashed) s)
+                  (setq s (string-replace backslashed (pen-snc "sed 's=.=\\\\&=g'" val) s)))
                  ((re-match-p (pen-unregexify quoted2) s)
                   (setq s (string-replace quoted2 (pen-q (chomp val)) s)))))
               ;; (setq s (string-replace (format "<%d>" i) val s))
@@ -684,6 +690,14 @@ Reconstruct the entire yaml-ht for a different language."
                     collect
                     (let* ((v (car tp))
                            (pp (cdr tp)))
+                      (if (sor final-engine-delimiter)
+                          (let ((sedcmd (concat
+                                         "sed 's/" final-engine-delimiter "/"
+                                         (pen-snc "sed 's=.=\\\\\\\\&=g'" final-engine-delimiter)
+                                         "/'")))
+                            (if (sor pp)
+                                (setq pp (concat sedcmd " | " pp))
+                              (setq pp sedcmd))))
                       (if pp
                           (pen-sn pp v)
                         v))))
