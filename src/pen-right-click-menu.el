@@ -287,10 +287,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (def-right-click-menu rcm-explain-code
   '(("Cancel" :call identity-command)
-    ("explain why code is used" :call pf-explain-why-this-code-is-used/2)
-    ("explain code given a language" :call pf-explain-code-given-a-language/2)
-    ("explain a shell command" :call pf-explain-a-shell-command/1)
-    ("define word" :call pen-define :if (pen-word-clickable))))
+    ("explain /1" :call pf-explain-some-code/1)
+    ("explain (given the language) /2" :call pf-explain-some-code/2)
+    ("Why is this code needed?" :call pf-explain-why-this-code-is-needed/2)
+    ("explain a shell command" :call pf-explain-a-shell-command/1)))
 
 (def-right-click-menu rcm-ink
   '(("Cancel" :call identity-command)
