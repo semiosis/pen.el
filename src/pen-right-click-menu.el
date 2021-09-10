@@ -202,6 +202,15 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
                      (pen-preceding-text)))
   (pen-term-sps (pen-cmd "comint" "-E" (pen-cmd "ii" lang history))))
 
+(defmacro pen-sn-true (cmd &rest sh-notty-args)
+  "Returns t if the shell command exists with 0"
+  `(let ((result (pen-sn ,cmd ,@sh-notty-args)))
+     (string-equal b_exit_code "0")))
+
+(defun url-is-404 (url)
+  "URL is 404"
+  (pen-sn-true (concat "pen-curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
+
 (defun pen-browse-url-for-passage ()
   "Search the web, given a selection"
   (interactive)
