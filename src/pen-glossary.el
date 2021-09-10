@@ -12,6 +12,71 @@
     (if glist
         (s-lines glist))))
 
+(defun pen-add-to-glossary-file-for-buffer (term &optional take-first definition)
+  "C-u will allow you to add to any glossary file"
+  (interactive (let ((s (pen-thing-at-point)))
+                 (if (not (sor s))
+                     (setq s (read-string-hist "add glossary term: ")))
+                 (list s)))
+
+  (deactivate-mark)
+  (if (not definition)
+      (setq definition
+            (pen-qa
+             -l (lm-define term t (pen-topic t))
+             -L (lm-define term t)
+             ;; -d (dictionaryapi-define term)
+             ;; -g (google-define term)
+             ;; -w (my-wiki-summary term)
+             ;; -W (my-wiki-summary (snc (cmd "redirect-wiki-term" term)))
+             -r (read-string "definition: ")
+             -m ""
+             -n "")))
+
+  (let ((cb (current-buffer))
+        ;; (gfs (if (local-variable-p 'glossary-files) glossary-files))
+        (fp
+         (if (is-glossary-file)
+             (buffer-file-name)
+           (pen-umn (or
+                     (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
+                              (not (local-variable-p 'glossary-files)))
+                          (pen-umn (fz (pen-mnm (pen-list2str (pen-list-glossary-files)))
+                                       nil nil "pen-add-to-glossary-file-for-buffer glossary: ")))
+                     (and
+                      (local-variable-p 'glossary-files)
+                      (if take-first
+                          (car glossary-files)
+                        (pen-umn (fz (pen-mnm (list2str glossary-files))
+                                     "$HOME/glossaries/"
+                                     nil "pen-add-to-glossary-file-for-buffer glossary: "))
+                        ))
+                     (pen-umn (fz (pen-mnm (pen-list2str (list "$HOME/glossaries/glossary.txt")))
+                                  "$HOME/glossaries/"
+                                  nil "pen-add-to-glossary-file-for-buffer glossary: ")))))))
+
+    (with-current-buffer
+        (find-file fp)
+      (progn
+        (if (save-excursion
+              (beginning-of-line)
+              (looking-at-p (concat "^" (pen-unregexify term) "$")))
+            (progn
+              (end-of-line))
+          (progn
+            (end-of-buffer)
+            (newline)
+            (newline)
+            (insert term)))
+        (newline)
+        (if (sor definition)
+            (insert
+             (pen-qa
+              -p (snc "pen-pretty-paragraph" (concat "    " definition))
+              -n definition))
+          (insert "    ")))
+      (current-buffer))))
+
 (defun pen-add-to-glossary (term &optional take-first definition topic)
   "C-u will allow you to add to any glossary file"
   (interactive (let ((s (rx/chomp (pen-snc "sed -z 's/\\s\\+/ /g'" (pen-thing-at-point-ask)))))
@@ -31,7 +96,7 @@
               (setq NLG t))))
 
     (let* ((cb (current-buffer))
-           (all-glossaries-fp (pen-mnm (pen-list2str (pen-list-glossary-files))))
+           (all-glossaries-fp (pen-mnm (pen-list2str (pen-pen-list-glossary-files))))
            (fp
             (if (pen-is-glossary-file)
                 (buffer-file-name)

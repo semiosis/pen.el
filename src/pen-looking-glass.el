@@ -1888,10 +1888,11 @@ element is the data blob and the second element is the content-type."
 ;; https://emacs.stackexchange.com/questions/54226/accessing-https-sites-with-mac-emacs-26-3
 ;; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
-(defun add-to-glossary-file-for-buffer () (interactive))
+;; (defun pen-add-to-glossary-file-for-buffer () (interactive))
+
 (defun glossary-add-link () (interactive))
 (define-key eww-mode-map (kbd "L") 'glossary-add-link)
-(define-key eww-mode-map (kbd "A") 'add-to-glossary-file-for-buffer)
+(define-key eww-mode-map (kbd "A") 'pen-add-to-glossary-file-for-buffer)
 
 (defun eww-reader (url)
   (interactive (list (let ((path (get-path)))

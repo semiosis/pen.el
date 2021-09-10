@@ -476,7 +476,7 @@ Use my position list code. Make it use rosie lang and external software."
          ((equal current-prefix-arg (list 4)) (setq current-prefix-arg nil))
          ((not current-prefix-arg) (setq current-prefix-arg (list 4))))
     (with-current-buffer
-        (add-to-glossary-file-for-buffer term nil (sn "oc" glossarypath)))))
+        (pen-add-to-glossary-file-for-buffer term nil (sn "oc" glossarypath)))))
 
 (defun pen-glossary-button-pressed (button)
   "When I press a glossary button, it should take me to the definition"
@@ -950,7 +950,7 @@ Use my position list code. Make it use rosie lang and external software."
 (define-key global-map (kbd "H-d") 'pen-generate-glossary-buttons-manually)
 (define-key global-map (kbd "H-Y d") 'pen-generate-glossary-buttons-manually)
 (define-key global-map (kbd "H-Y F") 'pen-go-to-glossary-file-for-buffer)
-(define-key global-map (kbd "H-Y A") 'add-to-glossary-file-for-buffer)
+(define-key global-map (kbd "H-Y A") 'pen-add-to-glossary-file-for-buffer)
 (define-key global-map (kbd "H-Y G") 'pen-glossary-reload-term-3tuples)
 (define-key global-map (kbd "H-h") 'pen-goto-glossary-definition)
 (define-key global-map (kbd "H-Y H") 'pen-goto-glossary-definition)
@@ -959,7 +959,7 @@ Use my position list code. Make it use rosie lang and external software."
 (define-key global-map (kbd "<help> C-y") 'go-to-glossary)
 (define-key global-map (kbd "H-y") 'pen-go-to-glossary-file-for-buffer)
 
-(define-key selected-keymap (kbd "A") 'add-to-glossary-file-for-buffer)
+(define-key selected-keymap (kbd "A") 'pen-add-to-glossary-file-for-buffer)
 
 (defun pen-remove-glossary-buttons-over-region (beg end)
   (interactive "r")
