@@ -206,19 +206,23 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   "Search the web, given a selection"
   (interactive)
   (let* ((url (pf-get-urls-for-a-passage/1)))
-    (eww url)))
+    (if (url-is-404 url)
+        (pf-imagine-a-website-from-a-url/1 url)
+      (eww url))))
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
         ("transpile" :call pf-transpile/3)
-        ("browse internet" :call pen-browse-url-for-passage)
+        ("search the imaginary web" :call pen-browse-url-for-passage)
         ("explain error" :call pf-explain-error/3)
         ("> explain code" :call rcm-explain-code)
         ("> cheap" :call rcm-cheap)
-        ("> ink" :call rcm-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_MODEL")
-                                        (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")
-                                        (lax-plist-get (text-properties-at (point)) "PEN_LM_COMMAND")))
+        ("> ink"
+         :call rcm-ink
+         :if (sor (lax-plist-get (text-properties-at (point)) "PEN_MODEL")
+                  (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")
+                  (lax-plist-get (text-properties-at (point)) "PEN_LM_COMMAND")))
         ("prose"
          ("Cancel" :call identity-command)
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
