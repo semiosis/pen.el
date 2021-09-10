@@ -193,5 +193,6 @@ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.linux-amd64.tar.gz
 (
 export PATH=$PATH:/usr/local/go/bin
 go get github.com/mattn/efm-langserver
+go get mvdan.cc/xurls/cmd/xurls
 )
 # ~/go/bin/efm-langserver
