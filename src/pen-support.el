@@ -804,6 +804,9 @@ when s is a string, set the clipboard to s"
 
 (defun completing-read-hist (prompt &optional initial-input histvar default-value)
   "read-string but with history and newline evaluation."
+  (setq initial-input (or initial-input
+                          ""))
+
   (if (not histvar)
       (setq histvar (intern (concat "completing-read-hist-" (slugify prompt)))))
 

@@ -505,6 +505,9 @@ Reconstruct the entire yaml-ht for a different language."
                            ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
                            ;; The t fixes this
                            (pen-onelineify-safe it)
+                           ;; TODO Replace the engine-delimiter
+                           ;; <delim>
+                           (pen-expand-template-keyvals it (list (cons "delim" final-engine-delimiter)) t)
                            (pen-expand-template-keyvals it subprompts-al t)
                            (pen-expand-template it vals t)
                            (pen-expand-template-keyvals it var-keyvals-slugged t)
@@ -537,6 +540,10 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-flags
                    (or (pen-var-value-maybe 'flags)
                        ,flags))
+
+                  (final-engine-delimiter
+                   (or (pen-var-value-maybe 'engine-delimiter)
+                       ,engine-delimiter))
 
                   (final-flags
                    (if final-flags
@@ -1590,6 +1597,9 @@ Function names are prefixed with pf- for easy searching"
                         (include-prompt (ht-get yaml-ht "include-prompt"))
                         (no-gen (ht-get yaml-ht "no-gen"))
                         (repeater (ht-get yaml-ht "repeater"))
+                        (engine-delimiter (or
+                                           (ht-get yaml-ht "engine-delimiter")
+                                           "###"))
                         (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
                         (interpreter (pen-yaml-test yaml-ht "interpreter"))
                         (no-uniq-results (pen-yaml-test yaml-ht "no-uniq-results"))
