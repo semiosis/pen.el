@@ -212,7 +212,9 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (pen-sn-true (concat "pen-curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
 
 (defun pen-lg-display-page (url)
-  (interactive (list (read-string-hist "🔍 Enter URL: ")))
+  (interactive (list (read-string-hist "🔍 Enter URL: "
+                                       (if (major-mode-p 'eww-mode)
+                                           (get-path)))))
   (let ((content (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
     (new-buffer-from-string content nil 'text-mode)))
 
