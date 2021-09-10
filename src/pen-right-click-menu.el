@@ -215,7 +215,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   "Search the web, given a selection"
   (interactive)
   (let* ((url (pf-get-urls-for-a-passage/1))
-         (sites (pf-imagine-a-website-from-a-url/1 url :no-select-result t)))
+         (sites
+          (s-join "\nNext result:\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
     (loop for pg in sites do (new-buffer-from-string pg nil 'text-mode))
     (comment
      (if (url-is-404 url)
