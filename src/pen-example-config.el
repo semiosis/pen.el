@@ -227,18 +227,18 @@
 ;; I should make the magit completions selector anyway
 (ivy-mode 1)
 
+;; https://www.emacswiki.org/emacs/TheMysteriousCaseOfShiftedFunctionKeys
+
 ;; Treat <S-f9> as a prefix key for pen
 (define-key pen-map (kbd "<S-f9> Y") 'pen-add-to-glossary)
 (define-key pen-map (kbd "<S-f9> G") 'pen-define-general-knowledge)
 (define-key pen-map (kbd "<S-f9> L") 'pen-define-detectlang)
 
-;; Unfortunately, I haven't manage to differentiate f10 from s-f10, etc.
-;; The main function keys are reserved for emacs.
 (define-key pen-map (kbd "<f12>") 'pen-add-to-glossary)
 (define-key pen-map (kbd "<f11>") 'pen-define-general-knowledge)
 (define-key pen-map (kbd "<f10>") 'pen-define-detectlang)
-(define-key pen-map (kbd "<f12>") nil)
-(define-key pen-map (kbd "<f11>") nil)
-(define-key pen-map (kbd "<f10>") nil)
+(define-key pen-map (kbd "<S-f12>") 'pen-add-to-glossary)
+(define-key pen-map (kbd "<S-f11>") 'pen-define-general-knowledge)
+(define-key pen-map (kbd "<S-f10>") 'pen-define-detectlang)
 
 ;; (call-interactively 'pen-add-key-booste)
