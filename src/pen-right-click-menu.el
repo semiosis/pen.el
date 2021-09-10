@@ -223,7 +223,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
      (if (url-is-404 url)
          (loop for pg in
                (pf-imagine-a-website-from-a-url/1 url :no-select-result t)
-               d (etv pg))
+               do (etv pg))
        (eww url)))))
 
 (setq right-click-context-global-menu-tree
