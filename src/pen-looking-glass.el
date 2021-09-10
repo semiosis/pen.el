@@ -711,8 +711,6 @@ word(s) will be searched for via `eww-search-prefix'."
 ;;   "URL is 404"
 ;;   `(sh-notty-true (concat "pen-curl-firefox -s -I " (pen-q ,url) " | grep -q \"404 Not Found\"")))
 
-
-
 (defun google-cachify (url)
   (concat "http://webcache.googleusercontent.com/search?q=cache:" (google-uncachify url)))
 
