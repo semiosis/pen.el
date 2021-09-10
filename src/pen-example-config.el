@@ -241,4 +241,13 @@
 (define-key pen-map (kbd "<S-f11>") 'pen-define-general-knowledge)
 (define-key pen-map (kbd "<S-f10>") 'pen-define-detectlang)
 
+(defset pen-fz-commands '("pen-lg-display-page"))
+
+(defun pen-run ()
+  (interactive)
+  (let ((fun (fz pen-fz-commands nil nil "pen run: ")))
+    (call-interactively fun)))
+
+(define-key pen-map (kbd "H-l") 'pen-run)
+
 ;; (call-interactively 'pen-add-key-booste)
