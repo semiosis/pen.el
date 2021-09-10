@@ -211,14 +211,17 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   "URL is 404"
   (pen-sn-true (concat "pen-curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
 
-(defun pen-browse-url-for-passage ()
+(defun pen-lg-display-page (url)
+  (interactive (list (read-string-hist "🔍 Enter URL: ")))
+  (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t)))
+
+(defun pen-browse-url-for-passage (url)
   "Search the web, given a selection"
-  (interactive)
-  (let* ((url (pf-get-urls-for-a-passage/1))
-         (sites
+  (interactive (list (pf-get-urls-for-a-passage/1)))
+  (let* ((sites
           (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
     (new-buffer-from-string sites nil 'text-mode)
-    (commen (loop for pg in sites do (new-buffer-from-string pg nil 'text-mode)))
+    (comment (loop for pg in sites do (new-buffer-from-string pg nil 'text-mode)))
     (comment
      (if (url-is-404 url)
          (loop for pg in
