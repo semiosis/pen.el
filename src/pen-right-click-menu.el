@@ -219,16 +219,20 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (defun pen-browse-url-for-passage (url)
   "Search the web, given a selection"
   (interactive (list (pf-get-urls-for-a-passage/1)))
-  (let* ((sites
-          (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
-    (new-buffer-from-string sites nil 'text-mode)
-    (comment (loop for pg in sites do (new-buffer-from-string pg nil 'text-mode)))
-    (comment
-     (if (url-is-404 url)
-         (loop for pg in
-               (pf-imagine-a-website-from-a-url/1 url :no-select-result t)
-               do (etv pg))
-       (eww url)))))
+  (pen-lg-display-page url)
+
+
+  (comment
+   (let* ((sites
+           (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
+     (new-buffer-from-string sites nil 'text-mode)
+     (comment (loop for pg in sites do (new-buffer-from-string pg nil 'text-mode)))
+     (comment
+      (if (url-is-404 url)
+          (loop for pg in
+                (pf-imagine-a-website-from-a-url/1 url :no-select-result t)
+                do (etv pg))
+        (eww url))))))
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
