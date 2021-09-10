@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -h) {
+        here=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$here" = "y"; then
+    echo "loading video..."
+    asciinema play "$@"
+else
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+    tm -d nw -sw -t localhost_current: "echo loading video...; asciinema-play -h $CMD"
+fi
