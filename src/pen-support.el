@@ -696,7 +696,7 @@ region-active-p does not work for evil selection."
          (cond
           ((or (region-active-p)
                (eq evil-state 'visual))
-           (buffer-substring ((region-end)gion-beginning) (region-end)))
+           (buffer-substring (region-beginning) (region-end)))
           (iedit-mode
            (iedit-current-occurrence-string))
           (ignore-no-selection nil)
