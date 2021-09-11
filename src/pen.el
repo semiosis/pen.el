@@ -2309,7 +2309,7 @@ May use to generate code from comments."
 (require 'pen-comint)
 (require 'pen-tty)
 (require 'pen-tmux)
-;; (require 'pen-looking-glass)
+(require 'pen-looking-glass)
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 
