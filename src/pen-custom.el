@@ -18,6 +18,10 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+;; Changing the memo prefix should also rememoize
+;; (memoize-restore 'pen-prompt-snc)
+;; (memoize 'pen-prompt-snc)
+
 (defcustom pen-libre-only nil
   "Only use libre engines"
   :type 'boolean

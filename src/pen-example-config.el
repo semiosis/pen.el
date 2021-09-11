@@ -214,6 +214,8 @@
 
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
 
+(setq pen-memo-prefix (pen-get-hostname))
+
 (memoize-restore 'pen-prompt-snc)
 (memoize 'pen-prompt-snc)
 
