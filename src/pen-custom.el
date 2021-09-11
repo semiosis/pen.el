@@ -12,6 +12,12 @@
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defcustom pen-memo-prefix (pen-get-hostname)
+  "memoize file prefix"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-libre-only nil
   "Only use libre engines"
   :type 'boolean
