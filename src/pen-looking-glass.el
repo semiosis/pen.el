@@ -12,7 +12,7 @@
 
 (require 'eww)
 (require 'cl-lib)
-(require 'eww-lnum)
+;; (require 'eww-lnum)
 (require 'pen-asciinema)
 
 (defun pen-uniqify-buffer (b)
@@ -23,18 +23,20 @@
                      (rename-buffer new-buffer-name)))
     b))
 
+;; TODO Also make one that re-renders an eww website, imaginarily
 (defun lg-render (ascii &optional url)
-  (interactive
-   (let* ((firstline (pen-snc "sed -n 1p | xurls" ascii))
-          (rest (pen-snc "sed 1d" ascii))
-          (url-to-use (or (sor url)
-                          (sor firstline)))
-          (ascii-to-use (if (sor url)
-                            ascii
-                          rest)))
-     (list ascii-to-use
-           url-to-use)))
+  (interactive (list (buffer-string)))
 
-  (pen-one (pf-generate-html-from-ascii-browser/2 url ascii)))
+  (let* ((firstline (pen-snc "sed -n 1p | xurls" ascii))
+         (rest (pen-snc "sed 1d" ascii))
+         (url-to-use (or (sor url)
+                         (sor firstline)))
+         (ascii-to-use (if (sor url)
+                           ascii
+                         rest))))
+
+  (new-buffer-from-string
+   (pen-one (pf-generate-html-from-ascii-browser/2 url ascii))
+   nil 'text-mode))
 
 (provide 'pen-looking-glass)
