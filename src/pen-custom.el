@@ -12,6 +12,14 @@
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defun pen-get-hostname ()
+  "Reliable way to get current hostname."
+  (with-temp-buffer
+    (shell-command "hostname" t)
+    (goto-char (point-max))
+    (delete-char -1)
+    (buffer-string)))
+
 (defcustom pen-memo-prefix (pen-get-hostname)
   "memoize file prefix"
   :type 'string
