@@ -19,6 +19,7 @@
   :initialize #'custom-initialize-default)
 
 ;; Changing the memo prefix should also rememoize
+;; It's like changing the database
 ;; (memoize-restore 'pen-prompt-snc)
 ;; (memoize 'pen-prompt-snc)
 
