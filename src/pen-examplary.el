@@ -1,6 +1,6 @@
 (require 'pen-yaml)
 
-(require 'pen-ilambda)
+(comment (require 'pen-ilambda))
 
 ;; xl can be the prefix for examplary
 
