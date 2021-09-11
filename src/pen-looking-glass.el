@@ -29,14 +29,14 @@
 
   (let* ((firstline (pen-snc "sed -n 1p | xurls" ascii))
          (rest (pen-snc "sed 1d" ascii))
-         (url-to-use (or (sor url)
-                         (sor firstline)))
-         (ascii-to-use (if (sor url)
-                           ascii
-                         rest))))
+         (url (or (sor url)
+                  (sor firstline)))
+         (ascii (if (sor url)
+                    ascii
+                  rest)))
 
-  (new-buffer-from-string
-   (pen-one (pf-generate-html-from-ascii-browser/2 url ascii))
-   nil 'text-mode))
+    (new-buffer-from-string
+     (pen-one (pf-generate-html-from-ascii-browser/2 url ascii))
+     nil 'text-mode)))
 
 (provide 'pen-looking-glass)
