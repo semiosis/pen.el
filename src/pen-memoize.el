@@ -16,8 +16,9 @@
     (if ht
         (progn (shut-up (pen-write-to-file (prin1-to-string ht) nswap))
                (rename-file nswap n t))
+      ;; This is the place to ensure that the file is owned by the user
       (if (f-exists-p n)
-          (let ((r (find-file-noselect n)))
+          (let ((r (find-file-literally n)))
             (if r
                 (let ((ret (read r)))
                   (kill-buffer r)
@@ -106,5 +107,8 @@ care."
 
 (advice-add 'memoize-restore :around #'ignore-errors-around-advice)
 (advice-add 'memoize :around #'ignore-errors-around-advice)
+
+(defun test-memo ()
+  (ilist 10 "tree species"))
 
 (provide 'pen-memoize)

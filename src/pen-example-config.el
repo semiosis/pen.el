@@ -217,6 +217,8 @@
 (memoize-restore 'pen-prompt-snc)
 (memoize 'pen-prompt-snc)
 
+;; (etv (pen-prompt-snc "rand" 1))
+
 (define-key pen-map (kbd "H-TAB n") 'pen-select-function-from-nl)
 (define-key pen-map (kbd "H-TAB h") 'pf-generic-tutor-for-any-topic/2)
 
