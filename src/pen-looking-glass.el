@@ -2144,4 +2144,8 @@ instead of `browse-url-new-window-flag'."
 
 (define-key eww-mode-map (kbd "M-e") 'eww-reload-cache-for-page)
 
+(defun lg-render (url ascii)
+  (interactive)
+  (pen-one (pf-generate-html-from-ascii-browser/2 url ascii)))
+
 (provide 'pen-looking-glass)
