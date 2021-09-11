@@ -5,14 +5,6 @@
 
 (defset pen-ht-cache-dir (f-join penconfdir "ht-cache"))
 
-(defun pen-get-hostname ()
-  "Reliable way to get current hostname."
-  (with-temp-buffer
-    (shell-command "hostname" t)
-    (goto-char (point-max))
-    (delete-char -1)
-    (buffer-string)))
-
 (f-mkdir pen-ht-cache-dir)
 
 (defun pen-ht-cache-slug-fp (name)
