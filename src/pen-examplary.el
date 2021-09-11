@@ -1,5 +1,7 @@
 (require 'pen-yaml)
 
+(require 'pen-ilambda)
+
 ;; xl can be the prefix for examplary
 
 ;; TODO Create data for fine-tuning. This is just generating training examples.
@@ -153,7 +155,7 @@ The last element in the list is the output/return value"
     ;;    (plist-put data :model model)
     )
 
-  (tv (plist2yaml data))
+  (etv (plist2yaml data))
   nil)
 
 ;; https://github.com/pemistahl/grex
