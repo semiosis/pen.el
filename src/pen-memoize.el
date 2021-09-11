@@ -8,7 +8,10 @@
 (f-mkdir pen-ht-cache-dir)
 
 (defun pen-ht-cache-slug-fp (name)
-  (concat pen-ht-cache-dir "/" "persistent-hash-" (slugify name) ".elht"))
+  (concat pen-ht-cache-dir "/" "persistent-hash-"
+          (or (sor pen-memo-prefix
+                   "global"))
+          (slugify name) ".elht"))
 
 (defun ht-cache (name &optional ht)
   (let* ((n (pen-ht-cache-slug-fp name))

@@ -214,6 +214,16 @@
 
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
 
+(defun pen-get-hostname ()
+  "Reliable way to get current hostname."
+  (with-temp-buffer
+    (shell-command "hostname" t)
+    (goto-char (point-max))
+    (delete-char -1)
+    (buffer-string)))
+
+(defvar pen-memo-prefix (pen-get-hostname))
+
 (memoize-restore 'pen-prompt-snc)
 (memoize 'pen-prompt-snc)
 
