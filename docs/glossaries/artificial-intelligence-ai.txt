@@ -1,0 +1,322 @@
+adversarial planner
+    NLG: An adversarial planner is an
+    artificial intelligence-based agent that
+    is looking for a specific move to beat a
+    human, opponent, adversary, competitor, or
+    competitor's strategy.
+
+eisenhower matrix
+    A simple tool for considering the long-
+    term outcomes of your daily tasks and
+    focusing on what will make you most
+    effective, not just most productive.
+    
+    It helps you visualize all your tasks in a
+    matrix of urgent/important.
+    
+    Urgent & Unimportant tasks/projects to be
+    delegated to someone else.
+
+Jürgen Schmidhuber
+    [computer scientist]
+
+    Known for his research on:
+    - ML
+    - genetic programming
+    - universal AI
+    - ANN (in particular RNN) and DL
+
+    Coined:
+    - LSTM
+    - Zuse's calculating space
+    - Gödel machines
+    - universal search
+    - theory of everything
+    - digital physics
+    - algorithmic information theory
+    - Kolmogorov complexity
+    - low-complexity art.
+
+contextualized embeddings
+    Provides additional context.
+
+contextualized word embeddings
+Contextualized Word Vectors
+    https://towardsdatascience.com/replacing-your-word-embeddings-by-contextualized-word-vectors-9508877ad65d
+
+    Provides additional context.
+
+    Benefits:
+    - neural ranking architectures can benefit.
+
+active-learning
+    ewwlinks +/"The active learning loop" "https://blog.fastforwardlabs.com/2019/04/02/a-guide-to-learning-with-limited-labeled-data.html"
+
+    The heart:
+    - A machine (the learner) that requests
+      labels for datapoints that it finds
+      particularly hard to predict.
+
+      It follows a strategy, and uses it to
+      identify these datapoints.
+
+    To evaluate the effectiveness of the
+    strategy, a simple approach for choosing
+    datapoints needs to be defined.
+
+    A good starting point is to remove the
+    intelligence of the learner; the
+    datapoints are chosen independently of
+    what the learner thinks.
+
+meta-learning
+    NLG: Learning about how to learn.
+
+    https://web.archive.org/web/20190906101832/https://blog.fastforwardlabs.com/2019/05/22/metalearners-learning-how-to-learn.html
+
+    Active learning allows us to be smart
+    about picking the right set of datapoints
+    for which to create labels.
+    
+    Done properly, this approach results in
+    models that are trained on less data
+    performing comparatively to models trained
+    on much more data.
+    
+    In the world of meta-learning, we do not
+    focus on label acquisition; rather, we
+    attempt to build a machine that learns
+    quickly from a small number of training
+    data.
+
+NMT
+Neural machine translation
+    Preprocessing
+    - Add a start and end token to each
+      sentence.
+    - Clean the sentences by removing special
+      characters.
+    - Create a word index and reverse word
+      index (dictionaries mapping from word →
+      id and id → word).
+    - Pad each sentence to a maximum length.
+
+TensorFlow Datasets
+    Provides a collection of datasets ready to
+    use with TF.
+
+    It handles downloading and preparing the
+    data and constructing a tf.data.Dataset.
+
+TensorFlow Hub
+    A library that enables transfer learning
+    by allowing the use of many machine
+    learning model for different tasks.
+
+CAD
+Computer Aided Diagnosis
+    The use of a computer generated output as
+    an assisting tool for a clinician to make
+    a diagnosis.
+
+    It is different to automated computer
+    diagnosis, where the end diagnosis is
+    based on a computer algorithm only.
+
+    Computer aided diagnosis has already been
+    used extensively within radiology, it is a
+    powerful tool as computer algorithms and
+    clinicians complement each other in a way
+    which improves the accuracy of a
+    diagnosis.
+
+Imaging data sets
+    The aggregation of an imaging data set is
+    a critical step in building AI for
+    radiology.
+
+    Used in various ways including training
+    and/or testing algorithms.
+
+    Many data sets for building convolutional
+    neural networks for image identification
+    involve at least thousands of images but
+    smaller data sets are useful for texture
+    analysis, transfer learning, and other
+    programs.
+
+thought vector
+    https://skymind.ai/wiki/thought-vectors
+
+image captioning
+
+metacognition
+    Awareness and understanding of one's own
+    thought processes.
+
+policy
+    https://blog.google/topics/ai/ai-principles/
+
+ES
+evolution strategy
+    An optimization technique based on ideas
+    of evolution.
+    
+    It belongs to the general class of
+    evolutionary computation or artificial
+    evolution methodologies.
+
+Statistical Relational Learning
+    [subdiscipline of AI and ML]
+
+    Concerned with domain models exhibiting:
+    - uncertainty
+      (which can be dealt with using
+      statistical methods)
+    - complex, relational structure.
+
+Connectionist
+    Tries to model knowledge by imitating
+    representations of the brain in the form
+    of neural networks and have been the
+    driving force behind movements such as
+    deep learning.
+
+Symbolists
+    Relies on logic to model knowledge based
+    on well-understood rules.
+
+ANN
+Artificial Neural Networks
+    Powerful function approximators capable of
+    modeling solutions to a wide variety of
+    problems, both supervised and
+    unsupervised.
+
+    ewwlinks +/"non-deterministic" "https://www.extremetech.com/extreme/215170-artificial-neural-networks-are-changing-the-world-what-are-they"
+
+Reinforcement learning
+RL
+    An area of ML concerned with how
+    intelligent agents ought to take actions
+    in an environment in order to maximize the
+    notion of cumulative reward.
+    
+    RL is one of three basic ML paradigms,
+    alongside supervised learning and
+    unsupervised learning.
+
+    Basically, it deals with learning via
+    interaction and feedback, or in other
+    words learning to solve a task by trial
+    and error, or in other-other words acting
+    in an environment and receiving rewards
+    for it.
+    
+    Essentially an agent (or several) is built
+    that can perceive and interpret the
+    environment in which is placed,
+    furthermore, it can take actions and
+    interact with it.
+
+    Example:
+        Your cat is an agent that is exposed
+        to the environment.
+        
+        The biggest characteristic of this
+        method is that there is no supervisor,
+        only a real number or reward signal.
+        
+        Two types of RL are 1) Positive 2)
+        Negative.
+
+Agent
+    The learner and the decision maker.
+
+Environment
+    Where the agent learns and decides what
+    actions to perform.
+
+Action
+    A set of actions which the agent can
+    perform.
+
+State
+    The state of the agent in the environment.
+
+Reward
+    For each action selected by the agent the
+    environment provides a reward. Usually a
+    scalar value.
+
+Policy
+    The decision-making function (control
+    strategy) of the agent, which represents a
+    mapping from situations to actions.
+
+Value function
+    Mapping from states to real numbers, where
+    the value of a state represents the
+    long-term reward achieved starting from
+    that state, and executing a particular
+    policy.
+
+Function approximator
+    Refers to the problem of inducing a
+    function from training examples. Standard
+    approximators include decision trees,
+    neural networks, and nearest-neighbor
+    methods
+
+Markov decision process
+MDP
+    A probabilistic model of a sequential
+    decision problem, where states can be
+    perceived exactly, and the current state
+    and action selected determine a
+    probability distribution on future states.
+    Essentially, the outcome of applying an
+    action to a state depends only on the
+    current action and state (and not on
+    preceding actions or states).
+
+Dynamic programming
+DP
+    Is a class of solution methods for solving
+    sequential decision problems with a
+    compositional cost structure. Richard
+    Bellman was one of the principal founders
+    of this approach.
+
+Monte Carlo methods
+    A class of methods for learning of value
+    functions, which estimates the value of a
+    state by running many trials starting at
+    that state, then averages the total
+    rewards received on those trials.
+
+Temporal Difference algorithms
+TD algorithms
+    A class of learning methods, based on the
+    idea of comparing temporally successive
+    predictions. Possibly the single most
+    fundamental idea in all of reinforcement
+    learning.
+
+Model
+    The agent's view of the environment, which
+    maps state-action pairs to probability
+    distributions over states. Note that not
+    every reinforcement learning agent uses a
+    model of its environment
+
+visio-linguistic
+    Example:
+        "visio-linguistic models"
+
+extended mind hypothesis
+    NLG: The idea that our minds are not
+    confined to our brains, but rather that
+    they extend into the external world and
+    can be affected by it.
+    
