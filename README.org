@@ -230,7 +230,7 @@ ideally suited for training a LM such as a GPT
 (Generative Pre-trained Transformer).
 
 emacs lisp provides a skeleton on which NLP
-functions can built around. Ultimately, emacs
+functions can be built around. Ultimately, emacs
 will become a fractal in the latent space of a future LM (language model).
 A graphical editor would not benefit from this effect until much later on.
 
