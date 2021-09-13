@@ -105,7 +105,8 @@ functions into each other.
 - Chain prompt functions together using keyboard macros and functions
 - Interactively query, generate and transform both prose and code
 - Use the LM as a search engine and a semantic search engine within emacs
-  - Search the internet
+  - Search the real internet and also browse the imaginary web
+    - https://semiosis.github.io/posts/the-imaginary-web-with-codex/
   - Search documents
     - https://beta.openai.com/docs/introduction/semantic-search
     - https://gpttools.com/semanticsearch
