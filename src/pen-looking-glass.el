@@ -36,7 +36,7 @@
                   rest)))
 
     (new-buffer-from-string
-     (pen-one (pf-generate-html-from-ascii-browser/2 url ascii))
+     (car (pen-one (pf-generate-html-from-ascii-browser/2 url ascii)))
      nil 'text-mode)))
 
 (provide 'pen-looking-glass)

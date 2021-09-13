@@ -90,6 +90,11 @@ case "$f" in
     }
     ;;
 
+    capveryfirst) {
+        sed -z 's/[a-zA-Z]/\u&/'
+    }
+    ;;
+
     capsent|capitalize-sentences) {
         sed 's/[a-z]\+/\u&/'
     }
