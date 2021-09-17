@@ -1122,8 +1122,14 @@ Reconstruct the entire yaml-ht for a different language."
                                                            (if matchpos
                                                                (setq r (s-truncate matchpos r "")))))
                                                         r))
+                                              ;; TODO Add multiplexing
+                                              ;; TODO in iλ? I need an imaginary map function which performs the multiplex
+                                              ;; I should add this capability manually.
+                                              ;; Or do I want an =icompose=?
                                               (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
-                                                                      (pen-sn final-postprocessor r)
+                                                                      (if (string-match "^pf-" final-postprocessor)
+                                                                          (eval `(car (pen-one (apply (str2sym ,final-postprocessor) (list ,r)))))
+                                                                        (pen-sn final-postprocessor r))
                                                                     r)))
                                               (mapcar (lambda (r) (if (or
                                                                        (and
