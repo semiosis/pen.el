@@ -221,5 +221,54 @@ This issue might be caused by:
            "No LSP server for current mode")
          major-mode major-mode major-mode))))))
 
+
+
+
+
+(defun lsp-ui-pen-diagnostics ()
+  "Show diagnostics belonging to the current line.
+Loop over flycheck errors with `flycheck-overlay-errors-in'.
+Find appropriate position for sideline overlays with `lsp-ui-sideline--find-line'.
+Push sideline overlays on `lsp-ui-sideline--ovs'."
+  (let ((buffer (current-buffer))
+        (bol (line-beginning-position))
+        (eol (line-end-position)))
+
+    (when (and (bound-and-true-p flycheck-mode)
+               (bound-and-true-p lsp-ui-sideline-mode)
+               lsp-ui-sideline-show-diagnostics
+               (eq (current-buffer) buffer))
+      (lsp-ui-sideline--delete-kind 'diagnostics)
+      (let ((results '()))
+        (dolist (e (flycheck-overlay-errors-in bol (1+ eol)))
+          (let* ((lines (--> (flycheck-error-format-message-and-id e)
+                          (split-string it "\n")
+                          (lsp-ui-sideline--split-long-lines it)))
+                 (display-lines (butlast lines (- (length lines) lsp-ui-sideline-diagnostic-max-lines)))
+                 (offset 1))
+            (dolist (line (nreverse display-lines))
+              (let* ((message (string-trim (replace-regexp-in-string "[\t ]+" " " line)))
+                     (len (length message))
+                     (level (flycheck-error-level e))
+                     (face (if (eq level 'info) 'success level))
+                     (margin (lsp-ui-sideline--margin-width))
+                     ;; (message (progn (add-face-text-property 0 len 'lsp-ui-sideline-global nil message)
+                     ;;                 (add-face-text-property 0 len face nil message)
+                     ;;                 message))
+                     )
+                (add-to-list 'results message)))))
+        (pen-list2str results)))))
+
+
+(defun pen-lsp-explain-error ()
+  (interactive)
+  (let ((error (lsp-ui-pen-diagnostics)))
+    (if (sor error)
+        (etv
+         (pf-explain-error/1
+          error)))))
+
+
+
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
