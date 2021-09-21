@@ -265,9 +265,10 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
   (let ((error (lsp-ui-pen-diagnostics)))
     (if (sor error)
         (etv
-         (pf-explain-error/3
+         (pf-explain-error/4
           (pen-detect-language-ask)
           error
+          (pen-surrounding-context)
           (rx/chomp (current-line-string)))))))
 
 
