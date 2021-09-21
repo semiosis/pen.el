@@ -241,6 +241,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
         ("transpile" :call pf-transpile/3)
         ("search the imaginary web" :call pen-browse-url-for-passage)
+        ("LSP explain error" :call pen-lsp-explain-error)
         ("explain error" :call pf-explain-error/3)
         ("> explain code" :call rcm-explain-code)
         ("> cheap" :call rcm-cheap)
