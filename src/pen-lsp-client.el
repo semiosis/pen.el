@@ -266,10 +266,10 @@ K(defun pen-lsp-explain-error ()
   (let ((error (lsp-ui-pen-diagnostics)))
     (if (sor error)
         (etv
-         (pf-explain-error/4
+         (pf-explain-error/3
           (pen-detect-language-ask)
           error
-          (pen-surrounding-context)
+          ;; (pen-surrounding-context)
           (rx/chomp (current-line-string)))))))
 
 
