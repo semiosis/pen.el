@@ -260,7 +260,8 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
         (pen-list2str results)))))
 
 
-(defun pen-lsp-explain-error ()
+
+K(defun pen-lsp-explain-error ()
   (interactive)
   (let ((error (lsp-ui-pen-diagnostics)))
     (if (sor error)
