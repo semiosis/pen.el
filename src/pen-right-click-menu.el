@@ -253,6 +253,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("Cancel" :call identity-command)
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
          ("translate" :call pf-translate-from-world-language-x-to-y/3 :if (pen-selected-p))
+         ("thesaurus" :call pf-thesaurus/1)
          ("paraphrase" :call pf-paraphrase/1 :if (pen-selected-p))
          ("tldr" :call pf-tldr-summarization/1 :if (pen-selected-p))
          ("eli5" :call pf-eli5-explain-like-i-m-five/1 :if (pen-selected-p))
