@@ -33,6 +33,7 @@
 (require 'lsp-mode)
 (require 'iedit)
 (require 'ht)
+(require 'sx)
 (require 'helm)
 (require 'memoize)
 (require 'ivy)
