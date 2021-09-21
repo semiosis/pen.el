@@ -944,14 +944,16 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-max-generated-tokens
                    (let* ((prompt-length pen-approximate-prompt-token-length)
                           (token-char-length (pen-num final-approximate-token-char-length)))
-                     (pen-str2num
-                      (eval-string
-                       ;; template is expanded twice so macros can have input and output
-                       (expand-template
-                        (pen-expand-macros
-                         (expand-template
-                          (str (or (pen-var-value-maybe 'max-generated-tokens)
-                                   ,max-generated-tokens)))))))))
+                     (or
+                      (pen-str2num
+                       (eval-string
+                        ;; template is expanded twice so macros can have input and output
+                        (expand-template
+                         (pen-expand-macros
+                          (expand-template
+                           (str (or (pen-var-value-maybe 'max-generated-tokens)
+                                    ,max-generated-tokens)))))))
+                      0)))
 
                   ;; (testme
                   ;;  (tv final-max-generated-tokens))
@@ -974,8 +976,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-max-generated-tokens
                    (if (or
                         ;; (not final-max-generated-tokens)
-                        (and final-max-generated-tokens
-                             (= 0 final-max-generated-tokens)))
+                        (= 0 final-max-generated-tokens))
                        (- final-max-tokens pen-approximate-prompt-token-length)
                      final-max-generated-tokens))
 
@@ -2317,6 +2318,25 @@ May use to generate code from comments."
 (require 'pen-tty)
 (require 'pen-tmux)
 (require 'pen-looking-glass)
+
+
+(defun pen-lsp-explain-error ()
+  (interactive)
+  (let ((error (lsp-ui-pen-diagnostics)))
+    (if (sor error)
+        (etv
+         (pf-explain-error/3
+          (pen-detect-language-ask)
+          error
+          ;; (pen-surrounding-context)
+          (rx/chomp (current-line-string)))))))
+
+(defun pen-sx-explain-error ()
+  (interactive)
+  (let ((error (lsp-ui-pen-diagnostics)))
+    (if (sor error)
+        (sx-search-lang error))))
+
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 

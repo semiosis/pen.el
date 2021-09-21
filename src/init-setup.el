@@ -29,6 +29,7 @@
 (package-install 'lsp-mode)
 (package-install 'iedit)
 (package-install 'ht)
+(package-install 'sx)
 (package-install 'helm)
 (package-install 'memoize)
 (package-install 'ivy)
