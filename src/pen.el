@@ -2331,11 +2331,6 @@ May use to generate code from comments."
           ;; (pen-surrounding-context)
           (rx/chomp (current-line-string)))))))
 
-(defun pen-sx-explain-error ()
-  (interactive)
-  (let ((error (lsp-ui-pen-diagnostics)))
-    (if (sor error)
-        (sx-search-lang error))))
 
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))

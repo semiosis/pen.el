@@ -30,9 +30,9 @@
 
 (defun sx-get-url-from-query (query)
   ;; The grep -v is to remove non-english sites
-  (fz (or (-filter-not-empty-string (str2lines (sn (concat "gl " (q query) " | grep -P \"(stackoverflow|stackexchange|serverfault).*/questions/[0-9]\" | grep -v \"\\\\.stackoverflow.com\""))))
-          (-filter-not-empty-string (str2lines (sn (concat "gl stackoverflow " (q query) " | grep -P \"(stackoverflow|stackexchange|serverfault).*/questions/[0-9]\" | grep -v \"\\\\.stackoverflow.com\"")))))
-      nil nil (concat "sx " query": ") nil t))
+  (fz (or (-filter-not-empty-string (pen-str2lines (pen-sn (concat "gl " (q query) " | grep -P \"(stackoverflow|stackexchange|serverfault).*/questions/[0-9]\" | grep -v \"\\\\.stackoverflow.com\""))))
+              (-filter-not-empty-string (pen-str2lines (pen-sn (concat "gl stackoverflow " (q query) " | grep -P \"(stackoverflow|stackexchange|serverfault).*/questions/[0-9]\" | grep -v \"\\\\.stackoverflow.com\"")))))
+      nil nil (concat "sx " query ": ") nil t))
 
 ;; TODO Make this function use sx-get-appropriate-site-and-id-from-url
 (defun sx-get-appropriate-site-and-id (query)
@@ -82,16 +82,9 @@
   (interactive (list (selection)))
   (cl-multiple-value-bind (site question id)
       (sx-get-appropriate-site-and-id query)
-    ;; (setq question (s-replace "-" " " question))
-    ;; (sx-question-get-question "emacs" 7712)
-    (sx-display-question (sx-question-get-question site (string-to-int id)))
-    (delete-other-windows)
-    ;; (sx-move-to-accepted-answer)
 
-    ;; (with-current-buffer
-    ;;     (sx-search site question)
-    ;;   (swiper question))
-    ))
+    (sx-display-question (sx-question-get-question site (string-to-int id)))
+    (delete-other-windows)))
 
 (defun sx-search-lang (query)
   (interactive
@@ -137,7 +130,7 @@
 (defun sx-from-url (url)
   (interactive (list (read-string-hist "sx url: " (thing-at-point 'url))))
   (if (re-match-p "/a/[0-9]" url)
-      (setq url (chomp (sn "fi-curl-get-redirect-maybe" url))))
+      (setq url (chomp (pen-sn "fi-curl-get-redirect-maybe" url))))
   (if (and (not (re-match-p "^https?://" url))
            (re-match-p "^[a-z]" url))
       (setq url (concat "^http://" url)))
@@ -149,24 +142,8 @@
 (define-key global-map (kbd "H-K") 'sx-search-quickly)
 (define-key global-map (kbd "H-k") 'sx-search-lang)
 
-;; (defun sx-get-appropriate-site (query)
-;;   (let* (;; (domains (str2lines (sn (concat "gl " (q query) " | sed \"s=^[^/]\\+//\\([^/]\\+\\)/.*=\\1=\""))))
-;;          (domains (str2lines (sn (concat "gl " (q query) " | grep -P \"(stackoverflow|stackexchange)\""))))
-;;          (sxmatches (seq-contains-p domains ".stackexchange.com" (lambda (a b) (cl-search b a))))
-;;          (allsxsites (sx-site-get-api-tokens))
-;;          (possiblesites (cl-loop for site in sxsites if (seq-contains-p domains (concat site ".stack") (lambda (a b) (cl-search b a))) collect site)))
-;;     (if possiblesites
-;;         (car possiblesites)
-;;       "stackoverflow")))
-
-;; (sx-get-appropriate-site "how to quit vim")
-;; (sx-get-appropriate-site "how to restart apache")
-;; (sx-get-appropriate-site "what is a function pointer in c")
-;; (sx-get-appropriate-site "how to change dns linux")
-
 (define-key sx-question-mode-map (kbd "<up>") 'previous-line-nonvisual)
 (define-key sx-question-mode-map (kbd "<down>") 'next-line-nonvisual)
-
 
 (defsetface sx-question-mode-code-block-face
   '((t :foreground "#3f5fa7"
@@ -182,24 +159,6 @@
   'mouse-action 'identity
   :supertype 'sx-button)
 
-;; This may not work because buttons are an overlay
-
-;; (defun sx-question-mode-around-advice (proc &rest args)
-;;   (let ((res (apply proc args)))
-;;     (setq font-lock-string-face nil)
-;;     res))
-;; (advice-add 'sx-question-mode :around #'sx-question-mode-around-advice)
-;; (advice-remove 'sx-question-mode #'sx-question-mode-around-advice)
-
-;; (defun sx-question-mode-mode-hook ()
-;;   (set (make-variable-buffer-local 'font-lock-string-face) nil))
-
-;; (add-hook 'sx-question-mode 'sx-question-mode-hook)
-;; (remove-hook 'sx-question-mode 'sx-question-mode-hook)
-
-
-
-
 (defun sx-get-question-url ()
   (if (major-mode-p 'sx-question-mode)
       (let ((current-prefix-arg nil))
@@ -214,9 +173,7 @@
   (interactive)
   (my/copy (sx-get-question-url)))
 
-
 (define-key sx-question-mode-map (kbd "w") 'sx-copy-question-url)
-
 
 (defun sx-button-copy-around-advice (proc &rest args)
   (if (and (>= (prefix-numeric-value current-prefix-arg) 4)
@@ -226,40 +183,12 @@
         res)))
 (advice-add 'sx-button-copy :around #'sx-button-copy-around-advice)
 
-
 (defun sx-move-to-accepted-answer ()
   (interactive)
   (if (string-match "^Accepted Answer$" (buffer-string))
       (progn
         (re-search-forward "^Accepted Answer$")
         (beginning-of-line))))
-
-;; (add-hook 'sx-question-mode-hook 'sx-move-to-accepted-answer)
-;; (remove-hook 'sx-question-mode-hook 'sx-move-to-accepted-answer)
-
-
-
-;; (defvar sx-question-mode--display-after-hook '())
-;; (defun sx-question-mode--display-after-advice (&rest args)
-;;   (run-hooks 'sx-question-mode--display-after-hook))
-
-;; (advice-add 'sx-question-mode--display :after 'sx-question-mode--display-after-advice)
-;; (advice-remove 'sx-question-mode--display 'sx-question-mode--display-after-advice)
-
-
-;; (add-hook 'sx-question-mode--display-after-hook 'run-buttonize-hook)
-;; (remove-hook 'sx-question-mode--display-after-hook 'run-buttonize-hook)
-
-;; (defvar sx-question-mode--display-buffer-after-hook '())
-;; (defun sx-question-mode--display-buffer-after-advice (&rest args)
-;;   (run-hooks 'sx-question-mode--display-buffer-after-hook))
-;; (advice-add 'sx-question-mode--display-buffer :after 'sx-question-mode--display-buffer-after-advice)
-;; (advice-remove 'sx-question-mode--display-buffer 'sx-question-mode--display-buffer-after-advice)
-
-;; (add-hook 'sx-question-mode--display-buffer-after-hook 'run-buttonize-hook)
-;; (remove-hook 'sx-question-mode--display-buffer-after-hook 'run-buttonize-hook)
-
-
 
 (defun sx-button-edit-this (text-or-marker &optional majormode)
   "Open a temp buffer populated with the string TEXT-OR-MARKER using MAJORMODE.
@@ -280,35 +209,27 @@ usually part of a code-block."
         (funcall majormode)
       (detect-language-set-mode))))
 
-
-;; (defun sx-question-mode--display-around-advice (proc &rest args)
-;;   (let ((res (apply proc args)))
-;;     (sx-move-to-accepted-answer)
-;;     res))
-;; (advice-add 'sx-question-mode--display :around #'sx-question-mode--display-around-advice)
-;; (advice-remove 'sx-question-mode--display #'sx-question-mode--display-around-advice)
-
-
-;; This has worked. It's also where I should place the answer navigation
-
-
 (defvar sx-question-mode--erase-and-print-question-after-hook '())
 (defun sx-question-mode--erase-and-print-question-after-advice (&rest args)
   (run-hooks 'sx-question-mode--erase-and-print-question-after-hook))
 (advice-add 'sx-question-mode--erase-and-print-question :after 'sx-question-mode--erase-and-print-question-after-advice)
 (add-hook 'sx-question-mode--erase-and-print-question-after-hook 'run-buttonize-hooks)
-;; (remove-hook 'sx-question-mode--erase-and-print-question-after-hook 'redraw-glossary-buttons-when-window-scrolls-or-file-is-opened)
 (add-hook 'sx-question-mode--erase-and-print-question-after-hook 'sx-move-to-accepted-answer)
-
-
-(defun sx-google-instead ()
-  (interactive)
-  (save-excursion
-    ))
 
 (define-key sx-question-mode-map (kbd "M-G") 'sx-google-instead)
 
 (setq sx-question-mode-display-buffer-function 'pop-to-buffer)
 (setq sx-question-mode-display-buffer-function 'pop-to-buffer-same-window)
+
+
+
+
+
+(defun pen-sx-explain-error ()
+  (interactive)
+  (let ((error (lsp-ui-pen-diagnostics)))
+    (if (sor error)
+        (sx-search-lang error))))
+
 
 (provide 'pen-sx)
