@@ -1,0 +1,97 @@
+#!/bin/bash
+export TTY
+
+query="$@"
+
+# ddgr can't go above 25
+nresults=25
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -n) {
+        nresults="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -tor) {
+        USETOR=y
+        shift
+    }
+    ;;
+
+    -notty) {
+        NOTTY=y
+        shift
+    }
+    ;;
+
+    -loop) {
+        LOOPTIME="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -u) {
+        UPDATE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export UPDATE
+
+search_with_googler() {
+    if test "$USETOR" = "y"; then
+        oci my-torify mypython $MYGIT/jarun/googler/googler "$@"
+    else
+        oci $MYGIT/jarun/googler/googler "$@"
+    fi
+}
+
+search_with_ddg() {
+    if test "$USETOR" = "y"; then
+        oci my-torify ddgr "$@"
+    else
+        oci ddgr "$@"
+    fi
+}
+
+search() {
+    results="$(search_with_googler -n "$nresults" --json "$@" | jq -r '.[].url')"
+    byc="$(printf -- "%s" "$results" | wc -c)"
+
+    if ! test "$byc" -gt 0; then
+        results="$(search_with_ddg -n "$nresults" --json "$@" | jq -r '.[].url')"
+        byc="$(printf -- "%s" "$results" | wc -c)"
+    fi
+
+    if test "$byc" -gt 0; then
+        printf -- "%s\n" "$results"
+    fi
+}
+
+if test -n "$LOOPTIME"; then
+    while :; do
+        search "$@"
+        sleep "$LOOPTIME"
+        echo
+    done
+else
+    {
+        search "$@"
+        # oci emacs-google-scrape-backend "$@"
+    } | head -n "$nresults" | ds last-gr | {
+        hc "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)"
+    } | {
+        if test "$NOTTY" = "y"; then
+            cat
+        else
+            pager -v
+        fi
+    }
+fi
