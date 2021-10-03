@@ -71,7 +71,10 @@
   (ignore-errors
     (if (and yaml-ht
              (sor key))
-        (ht-get yaml-ht key))))
+        (let ((v (ht-get yaml-ht key)))
+          (or (string-equal v "on")
+              (string-equal v "true")
+              (string-equal v "yes"))))))
 
 (defun pen-test-translate-prompt ()
   (interactive)
