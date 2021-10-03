@@ -23,9 +23,6 @@
 (defun plist2yaml (plist)
   (json2yaml (json-encode-plist plist)))
 
-(defun pen-load-config ()
-  (let* ((path (f-join penconfdir "pen.yaml"))
-         (yaml-ht (pen-prompt-file-load path))
-         (task-ink (ht-get yaml-ht "task")))))
+
 
 (provide 'pen-yaml)

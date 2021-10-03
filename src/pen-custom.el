@@ -257,4 +257,15 @@ widget.  If FILTER is nil, ACTION is always valid.")
 
 ;; pen-debug
 
+(defun pen-load-config ()
+  (let* ((path (f-join penconfdir "pen.yaml"))
+         (yaml-ht (yamlmod-read-file path)))
+    (setq pen-debug (ht-get yaml-ht "debug"))
+    (debug (ht-get yaml-ht "force-engine"))
+    (setq pen-libre-only (ht-get yaml-ht "libre-only"))
+    (setq pen-sh-update (ht-get yaml-ht "sh-update"))
+    (setq pen-force-single-collation (ht-get yaml-ht "force-single-collation"))
+    (setq pen-force-temperature (ht-get yaml-ht "force-temperature"))
+    (etv debug)))
+
 (provide 'pen-custom)
