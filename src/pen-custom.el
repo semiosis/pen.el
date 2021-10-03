@@ -253,4 +253,8 @@ menu is selected, and FILTER is a predicate which takes a `custom-variable'
 widget as an argument, and returns non-nil if ACTION is valid on that
 widget.  If FILTER is nil, ACTION is always valid.")
 
+(require 'pen-yaml)
+
+;; pen-debug
+
 (provide 'pen-custom)
