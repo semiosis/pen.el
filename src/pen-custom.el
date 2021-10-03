@@ -258,6 +258,7 @@ widget.  If FILTER is nil, ACTION is always valid.")
 ;; pen-debug
 
 (defun pen-load-config ()
+  (interactive)
   (let* ((path (f-join penconfdir "pen.yaml"))
          (yaml-ht (yamlmod-read-file path)))
     (setq pen-debug (pen-yaml-test yaml-ht "debug"))
@@ -268,6 +269,6 @@ widget.  If FILTER is nil, ACTION is always valid.")
     (setq pen-force-few-completions (pen-yaml-test yaml-ht "force-few-completions"))
     (setq pen-force-single-collation (pen-yaml-test yaml-ht "force-single-collation"))
     (setq pen-force-temperature (ht-get yaml-ht "force-temperature"))
-    (etv pen-ink-disabled)))
+    (etv pen-force-single-collation)))
 
 (provide 'pen-custom)
