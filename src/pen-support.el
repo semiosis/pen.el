@@ -1248,4 +1248,21 @@ Out
         n))
       mult))))
 
+(defun ignore-truthy (&rest _arguments)
+  "Do nothing and return nil.
+This function accepts any number of ARGUMENTS, but ignores them."
+  (interactive)
+  t)
+
+(defmacro auto-yes (&rest body)
+  ""
+  `(cl-letf (((symbol-function 'yes-or-no-p) #'ignore-truthy)
+             ((symbol-function 'y-or-n-p) #'ignore-truthy))
+     (progn ,@body)))
+(defmacro auto-no (&rest body)
+  ""
+  `(cl-letf (((symbol-function 'yes-or-no-p) #'ignore)
+             ((symbol-function 'y-or-n-p) #'ignore))
+     (progn ,@body)))
+
 (provide 'pen-support)

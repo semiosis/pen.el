@@ -907,7 +907,8 @@ Reconstruct the entire yaml-ht for a different language."
                      final-prompt))
 
                   (final-prompt (if final-end-yas
-                                    (pen-yas-expand-string final-prompt)
+                                    (auto-yes
+                                     (pen-yas-expand-string final-prompt))
                                   final-prompt))
 
                   ;; This gives string position, not byte position
