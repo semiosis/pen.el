@@ -1912,6 +1912,22 @@ Function names are prefixed with pf- for easy searching"
       ;; (filter-selected-region-through-function (intern f))
       )))
 
+(defun pen-run-analyser-function ()
+  "Run a prompt function which also has a results analyser. e.g. fact checker.
+But use the results-analyser."
+  (interactive)
+  (let ((f (fz
+            (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                pen-prompt-functions
+              ;; (pen-list-filterers)
+              pen-prompt-filter-functions)
+            nil nil "pen filter: ")))
+    (if f
+        (let ((filter t))
+          (call-interactively (intern f)))
+      ;; (filter-selected-region-through-function (intern f))
+      )))
+
 (defun pen-run-prompt-function ()
   (interactive)
   (let* ((pen-sh-update
