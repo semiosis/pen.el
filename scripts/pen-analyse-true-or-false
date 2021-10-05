@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+results="$(cat)"
+t="$(printf -- "%s" "$results" | awk 1 | grep -P 'True' | wc -l)"
+f="$(printf -- "%s" "$results" | awk 1 | grep -P 'False' | wc -l)"
+fr="$(bc<<< "scale=2;$t/$(( t + f ))")"
+echo "$fr"
