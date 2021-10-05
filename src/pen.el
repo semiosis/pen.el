@@ -1917,11 +1917,8 @@ Function names are prefixed with pf- for easy searching"
 But use the results-analyser."
   (interactive)
   (let ((f (fz
-            (if (>= (prefix-numeric-value current-prefix-arg) 4)
-                pen-prompt-functions
-              ;; (pen-list-filterers)
-              pen-prompt-filter-functions)
-            nil nil "pen filter: ")))
+            pen-prompt-analyser-functions
+            nil nil "pen analyser: ")))
     (if f
         (let ((filter t))
           (call-interactively (intern f)))
