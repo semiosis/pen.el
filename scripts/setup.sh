@@ -196,3 +196,5 @@ go get github.com/mattn/efm-langserver
 go get mvdan.cc/xurls/cmd/xurls
 )
 # ~/go/bin/efm-langserver
+
+apt install bc
