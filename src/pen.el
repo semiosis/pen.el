@@ -1633,7 +1633,7 @@ Function names are prefixed with pf- for easy searching"
                         (no-uniq-results (pen-yaml-test yaml-ht "no-uniq-results"))
                         (conversation (pen-yaml-test yaml-ht "conversation"))
                         (filter (pen-yaml-test yaml-ht "filter"))
-                        (results-analyser (pen-yaml-test yaml-ht "results-analyser"))
+                        (results-analyser (ht-get yaml-ht "results-analyser"))
                         ;; Don't actually use this.
                         ;; But I can toggle to use the prettifier with a bool
                         (prettifier (ht-get yaml-ht "prettifier"))
