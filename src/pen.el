@@ -1252,6 +1252,8 @@ Reconstruct the entire yaml-ht for a different language."
                          final-new-document
                          (>= (prefix-numeric-value current-prefix-arg) 4))
                      (pen-etv (ink-decode (ink-propertise result))))
+                    (final-analyse
+                     (pen-etv result))
                     ;; Filter takes priority over insertion
                     ((and ,filter
                           mark-active)
