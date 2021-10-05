@@ -588,6 +588,12 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'no-gen)
                        ,no-gen))
 
+                  (final-results-analyser
+                   (pen-var-value-maybe 'results-analyser))
+
+                  (final-analyse
+                   (pen-var-value-maybe 'analyse))
+
                   (final-interpreter
                    (or (pen-var-value-maybe 'interpreter)
                        ,interpreter))
