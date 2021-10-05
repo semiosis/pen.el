@@ -67,6 +67,7 @@
 ;; (define-key selected-keymap (kbd "A") 'pf-define-word-for-glossary/1)
 (define-key selected-keymap (kbd "A") 'pen-add-to-glossary)
 
+(pen-define-key pen-map (kbd "H-TAB j") 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
 (pen-define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
 ;; (define-key pen-map (kbd "H-1") 'pen-company-filetype-word)
 ;; (define-key pen-map (kbd "H-2") 'pen-company-filetype-words)
