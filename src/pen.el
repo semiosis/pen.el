@@ -62,6 +62,7 @@
 (defset pen-prompt-functions nil)
 (defset pen-prompt-interpreter-functions nil)
 (defset pen-prompt-filter-functions nil)
+(defset pen-prompt-analyser-functions nil)
 (defset pen-prompt-functions-failed nil)
 (defset pen-prompts-failed nil)
 (defset pen-prompt-completion-functions nil)
@@ -1538,6 +1539,7 @@ Function names are prefixed with pf- for easy searching"
   (setq pen-prompt-functions nil)
   (setq pen-prompts-failed nil)
   (setq pen-prompt-filter-functions nil)
+  (setq pen-prompt-analyser-functions nil)
   (setq pen-prompt-completion-functions nil)
   (setq pen-prompt-functions-meta nil)
   (setq pen-prompt-functions-failed nil)
@@ -1631,6 +1633,7 @@ Function names are prefixed with pf- for easy searching"
                         (no-uniq-results (pen-yaml-test yaml-ht "no-uniq-results"))
                         (conversation (pen-yaml-test yaml-ht "conversation"))
                         (filter (pen-yaml-test yaml-ht "filter"))
+                        (results-analyser (pen-yaml-test yaml-ht "results-analyser"))
                         ;; Don't actually use this.
                         ;; But I can toggle to use the prettifier with a bool
                         (prettifier (ht-get yaml-ht "prettifier"))
@@ -1782,6 +1785,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if task (concat "\ntask: " task))
                                 (if notes (concat "\nnotes:" notes))
                                 (if filter (concat "\nfilter: on"))
+                                (if results-analyser (concat "\nresults-analyser: " results-analyser))
                                 (if completion (concat "\ncompletion: on"))
                                 (if past-versions (concat "\npast-versions:\n" (pen-list-to-orglist past-versions)))
                                 (if external-related (concat "\nexternal-related\n:" (pen-list-to-orglist external-related)))
@@ -1873,6 +1877,7 @@ Function names are prefixed with pf- for easy searching"
                                  (add-to-list 'pen-prompt-functions funcsym)
                                  (if interpreter (add-to-list 'pen-prompt-interpreter-functions funcsym))
                                  (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
+                                 (if results-analyser (add-to-list 'pen-prompt-analyser-functions funcsym))
                                  (if completion (add-to-list 'pen-prompt-completion-functions funcsym)))
                              (add-to-list 'pen-prompt-functions-failed func-sym))
 
