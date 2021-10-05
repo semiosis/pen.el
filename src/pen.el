@@ -1920,7 +1920,7 @@ But use the results-analyser."
             pen-prompt-analyser-functions
             nil nil "pen analyser: ")))
     (if f
-        (let ((analyser t))
+        (let ((analyse t))
           (call-interactively (intern f)))
       ;; (filter-selected-region-through-function (intern f))
       )))
