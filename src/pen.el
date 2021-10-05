@@ -592,7 +592,9 @@ Reconstruct the entire yaml-ht for a different language."
                    (pen-var-value-maybe 'results-analyser))
 
                   (final-analyse
-                   (pen-var-value-maybe 'analyse))
+                   (and
+                    final-results-analyser
+                    (pen-var-value-maybe 'analyse)))
 
                   (final-interpreter
                    (or (pen-var-value-maybe 'interpreter)
@@ -1237,10 +1239,14 @@ Reconstruct the entire yaml-ht for a different language."
                                 results)
                              results))
 
-                  (result (if no-select-result
-                              (length results)
-                            ;; This may insert immediately, so it's important to force selection
-                            (cl-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match))))
+                  (result
+                   (if final-analyse
+                       ;; I need to do more work on this
+                       (snc final-results-analyser (pen-list2str (mapcar 'pen-onelineify results)))
+                     (if no-select-result
+                         (length results)
+                       ;; This may insert immediately, so it's important to force selection
+                       (cl-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match)))))
 
              ;; (tv (pps final-stop-sequences))
              ;; (tv "Hi")
