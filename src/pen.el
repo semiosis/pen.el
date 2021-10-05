@@ -589,7 +589,8 @@ Reconstruct the entire yaml-ht for a different language."
                        ,no-gen))
 
                   (final-results-analyser
-                   (pen-var-value-maybe 'results-analyser))
+                   (or (pen-var-value-maybe 'results-analyser)
+                       ,results-analyser))
 
                   (final-analyse
                    (and
