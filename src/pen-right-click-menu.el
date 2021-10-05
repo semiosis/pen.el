@@ -243,6 +243,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("search the imaginary web" :call pen-browse-url-for-passage)
         ("LSP explain error" :call pen-lsp-explain-error)
         ("explain error" :call pf-explain-error/2)
+        ("Complete until EOD" :call pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1 :if (pen-selected-p))
         ("> explain code" :call rcm-explain-code)
         ("> cheap" :call rcm-cheap)
         ("> ink"
