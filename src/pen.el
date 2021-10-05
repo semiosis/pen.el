@@ -1921,9 +1921,7 @@ But use the results-analyser."
             nil nil "pen analyser: ")))
     (if f
         (let ((analyse t))
-          (call-interactively (intern f)))
-      ;; (filter-selected-region-through-function (intern f))
-      )))
+          (call-interactively (intern f))))))
 
 (defun pen-run-prompt-function ()
   (interactive)
