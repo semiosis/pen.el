@@ -2141,6 +2141,15 @@ Function names are prefixed with pf- for easy searching"
            (stop-sequences '("##long complete##")))
        ,',@body)))
 
+(defmacro pen-medium-complete (&rest body)
+  "This wraps around pen function calls to make them complete long"
+  `(eval
+    `(let ((is-completion t)
+           (max-generated-tokens 100)
+           (stop-sequence "##long complete##")
+           (stop-sequences '("##long complete##")))
+       ,',@body)))
+
 (defmacro pen-long-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
@@ -2233,6 +2242,17 @@ Function names are prefixed with pf- for easy searching"
   (interactive (list (pen-preceding-text) nil))
   (let ((response
          (pen-line-complete
+          (pen-complete-function preceding-text))))
+    (if tv
+        (pen-etv (ink-propertise response))
+      (pen-complete-insert (ink-propertise response)))))
+
+(defun pen-complete-medium (preceding-text &optional tv)
+  "Long-form completion (medium length). This will generate lots of text.
+May use to generate code from comments."
+  (interactive (list (pen-preceding-text) nil))
+  (let ((response
+         (pen-medium-complete
           (pen-complete-function preceding-text))))
     (if tv
         (pen-etv (ink-propertise response))
