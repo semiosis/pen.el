@@ -59,6 +59,10 @@
   :lighter (:eval (pen-compose-mode-line))
   :keymap pen-map)
 
+;; This is a list of useful prompt functions, compound prompt functions, etc.
+;; Usually organised under right click menu
+(defset pen-editing-functions nil)
+
 (defset pen-prompt-functions nil)
 (defset pen-prompt-interpreter-functions nil)
 (defset pen-prompt-filter-functions nil)
