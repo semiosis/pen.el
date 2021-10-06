@@ -254,6 +254,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (add-to-list 'pen-editing-functions 'pf-get-an-example-of-the-usage-of-a-function/2)
 (add-to-list 'pen-editing-functions 'pen-detect-language-context)
 (add-to-list 'pen-editing-functions 'pf-get-documentation-for-syntax-given-screen/2)
+(add-to-list 'pen-editing-functions 'rcm-term)
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
