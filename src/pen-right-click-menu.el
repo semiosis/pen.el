@@ -236,6 +236,19 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
                 do (etv pg))
         (eww url))))))
 
+(add-to-list 'pen-editing-functions 'pen-lsp-explain-error)
+(add-to-list 'pen-editing-functions 'pf-explain-error/2)
+(add-to-list 'pen-editing-functions 'rcm-explain-code)
+(add-to-list 'pen-editing-functions 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
+(add-to-list 'pen-editing-functions 'pf-translate-from-world-language-x-to-y/3)
+(add-to-list 'pen-editing-functions 'pf-tldr-summarization/1)
+(add-to-list 'pen-editing-functions 'pf-clean-prose/1)
+(add-to-list 'pen-editing-functions 'pf-correct-grammar/1)
+(add-to-list 'pen-editing-functions 'rcm-generate-program)
+(add-to-list 'pen-editing-functions 'pf-transform-code/3)
+(add-to-list 'pen-editing-functions 'pf-gpt-j-generate-regex/2)
+(add-to-list 'pen-editing-functions 'pf-transpile-from-programming-language-x-to-y/3)
+
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
