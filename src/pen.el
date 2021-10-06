@@ -1942,6 +1942,15 @@ But use the results-analyser."
         (let ((analyse t))
           (call-interactively (intern f))))))
 
+(defun pen-run-editing-function ()
+  (interactive)
+  (let ((f (fz
+            pen-editing-functions
+            nil nil "pen editing function: ")))
+    (if f
+        (let ((analyse t))
+          (call-interactively (intern f))))))
+
 (defun pen-run-prompt-function ()
   (interactive)
   (let* ((pen-sh-update
