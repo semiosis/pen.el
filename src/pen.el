@@ -523,7 +523,7 @@ Reconstruct the entire yaml-ht for a different language."
                            ;; <delim>
                            (pen-expand-template-keyvals it subprompts-al t)
                            (pen-expand-template it vals t)
-                           (pen-expand-template-keyvals it (list (cons "delim" final-engine-delimiter)) t)
+                           (pen-expand-template-keyvals it (list (cons "delim" final-delimiter)) t)
                            (pen-expand-template-keyvals it var-keyvals-slugged t)
                            (pen-expand-template-keyvals it var-keyvals t)
                            (pen-unonelineify-safe it))))
@@ -558,6 +558,11 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-engine-delimiter
                    (or (pen-var-value-maybe 'engine-delimiter)
                        ,engine-delimiter))
+
+                  (final-delimiter
+                   (or (pen-var-value-maybe 'delimiter)
+                       ,delimiter
+                       final-engine-delimiter))
 
                   (final-flags
                    (if final-flags
@@ -707,10 +712,10 @@ Reconstruct the entire yaml-ht for a different language."
                     collect
                     (let* ((v (car tp))
                            (pp (cdr tp)))
-                      (if (sor final-engine-delimiter)
+                      (if (sor final-delimiter)
                           (let ((sedcmd (concat
-                                         "sed 's/" final-engine-delimiter "/"
-                                         (pen-snc "sed 's=.=\\\\\\\\&=g'" final-engine-delimiter)
+                                         "sed 's/" final-delimiter "/"
+                                         (pen-snc "sed 's=.=\\\\\\\\&=g'" final-delimiter)
                                          "/'")))
                             (if (sor pp)
                                 (setq pp (concat sedcmd " | " pp))
@@ -1647,6 +1652,9 @@ Function names are prefixed with pf- for easy searching"
                         (engine-delimiter (or
                                            (ht-get yaml-ht "engine-delimiter")
                                            "###"))
+                        (delimiter (or
+                                    (ht-get yaml-ht "delimiter")
+                                    "###"))
                         (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
                         (interpreter (pen-yaml-test yaml-ht "interpreter"))
                         (no-uniq-results (pen-yaml-test yaml-ht "no-uniq-results"))
