@@ -256,6 +256,28 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (add-to-list 'pen-editing-functions 'pf-get-documentation-for-syntax-given-screen/2)
 (add-to-list 'pen-editing-functions 'rcm-term)
 
+
+(setq right-click-context-global-menu-tree
+      `(("Cancel" :call identity)
+        ("> pen" :call rcm-pen)))
+
+(defmacro def-right-click-menu (name
+                                ;; predicates
+                                popup)
+  "Create a right click menu."
+  `(defun ,name ()
+     "Open Right Click Context menu."
+     (interactive)
+     (let ((popup-menu-keymap (copy-sequence popup-menu-keymap)))
+       ;; (define-key popup-menu-keymap [mouse-3] #'right-click-context--click-menu-popup)
+       (define-key popup-menu-keymap [mouse-3] #'right-click-popup-close)
+       (define-key popup-menu-keymap (kbd "C-g") #'right-click-popup-close)
+       (let ((value (popup-cascade-menu (right-click-context--build-menu-for-popup-el ,popup nil))))
+         (when value
+           (if (symbolp value)
+               (call-interactively value t)
+             (eval value)))))))
+
 (def-right-click-menu rcm-pen
   `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
@@ -309,27 +331,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("define term (detect language)" :call pen-define-detectlang)
         ("detect language here" :call pen-detect-language-context)
         ("start ii" :call pen-start-imaginary-interpreter)))
-
-(setq right-click-context-global-menu-tree
-      `(("Cancel" :call identity)
-        ("> pen" :call rcm-pen)))
-
-(defmacro def-right-click-menu (name
-                                ;; predicates
-                                popup)
-  "Create a right click menu."
-  `(defun ,name ()
-     "Open Right Click Context menu."
-     (interactive)
-     (let ((popup-menu-keymap (copy-sequence popup-menu-keymap)))
-       ;; (define-key popup-menu-keymap [mouse-3] #'right-click-context--click-menu-popup)
-       (define-key popup-menu-keymap [mouse-3] #'right-click-popup-close)
-       (define-key popup-menu-keymap (kbd "C-g") #'right-click-popup-close)
-       (let ((value (popup-cascade-menu (right-click-context--build-menu-for-popup-el ,popup nil))))
-         (when value
-           (if (symbolp value)
-               (call-interactively value t)
-             (eval value)))))))
+                                                            
 
 (def-right-click-menu rcm-cheap
   '(("Cancel" :call identity-command)
