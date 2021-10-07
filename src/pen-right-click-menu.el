@@ -256,8 +256,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (add-to-list 'pen-editing-functions 'pf-get-documentation-for-syntax-given-screen/2)
 (add-to-list 'pen-editing-functions 'rcm-term)
 
-(setq right-click-context-global-menu-tree
-      `(("Cancel" :call identity-command)
+(def-right-click-menu rcm-pen
+  `(("Cancel" :call identity-command)
         ("translate" :call pf-translate-from-world-language-x-to-y/3)
         ("transpile" :call pf-transpile/3)
         ("search the imaginary web" :call pen-browse-url-for-passage)
@@ -310,6 +310,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("detect language here" :call pen-detect-language-context)
         ("start ii" :call pen-start-imaginary-interpreter)))
 
+(setq right-click-context-global-menu-tree
+      `(("Cancel" :call identity)
+        ("> pen" :call rcm-pen)))
+
 (defmacro def-right-click-menu (name
                                 ;; predicates
                                 popup)
@@ -351,6 +355,9 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   '(("Cancel" :call identity-command)
     ("go to prompt for text" :call pen-go-to-prompt-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_PROMPT_PATH")))
     ("go to engine for text" :call pen-go-to-engine-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")))))
+
+;; (define-key pen-map (kbd "H-m") 'right-click-context-menu)
+;; (define-key pen-map (kbd "C-M-z") 'right-click-context-menu)
 
 (define-key pen-map (kbd "H-m") 'right-click-context-menu)
 (define-key pen-map (kbd "C-M-z") 'right-click-context-menu)
