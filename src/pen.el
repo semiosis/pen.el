@@ -271,7 +271,8 @@ Reconstruct the entire yaml-ht for a different language."
                   (slugged2 (format "<sl<pen-colon>%d>" i))
                   (backslashed (format "<bs:%d>" i))
                   (quoted2 (format "<q<pen-colon>%d>" i)))
-              (cond
+
+              (cond-all
                ((re-match-p (pen-unregexify unquoted) s)
                 (setq s (string-replace unquoted (chomp val) s)))
                ((re-match-p (pen-unregexify quoted) s)
@@ -317,6 +318,16 @@ Reconstruct the entire yaml-ht for a different language."
   (interactive)
   (etv (pen-expand-macros "This is my string <m:(pen-n-words->n-tokens/m)> This is it")))
 
+(defmacro cond-all (&rest body)
+  "Like cond, but runs all of them"
+  (let ((whens
+         (loop for c in body
+               collect
+               `(when ,(car c)
+                  ,@(cdr c)))))
+    `(progn
+       ,@whens)))
+
 (defun pen-expand-template-keyvals (s keyvals &optional encode)
   "expand template from alist"
   (if keyvals
@@ -336,7 +347,8 @@ Reconstruct the entire yaml-ht for a different language."
                     (slugged2 (format "<sl<pen-colon>%s>" key))
                     (backslashed (format "<bs:%d>" i))
                     (quoted2 (format "<q<pen-colon>%s>" key)))
-                (cond
+
+                (cond-all
                  ((re-match-p (pen-unregexify unquoted) s)
                   (setq s (string-replace unquoted (chomp val) s)))
                  ((re-match-p (pen-unregexify quoted) s)
