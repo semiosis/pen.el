@@ -268,6 +268,7 @@ Reconstruct the entire yaml-ht for a different language."
             (let ((unquoted (format "<%d>" i))
                   (quoted (format "<q:%d>" i))
                   (slugged (format "<sl:%d>" i))
+                  (slugged2 (format "<sl<pen-colon>%d>" i))
                   (backslashed (format "<bs:%d>" i))
                   (quoted2 (format "<q<pen-colon>%d>" i)))
               (cond
@@ -277,6 +278,8 @@ Reconstruct the entire yaml-ht for a different language."
                 (setq s (string-replace quoted (pen-q (chomp val)) s)))
                ((re-match-p (pen-unregexify slugged) s)
                 (setq s (string-replace slugged (slugify (chomp val)) s)))
+               ((re-match-p (pen-unregexify slugged2) s)
+                (setq s (string-replace slugged2 (slugify (chomp val)) s)))
                ((re-match-p (pen-unregexify backslashed) s)
                 (setq s (string-replace backslashed (pen-snc "sed 's=.=\\\\&=g'" val) s)))
                ((re-match-p (pen-unregexify quoted) s)
@@ -330,6 +333,7 @@ Reconstruct the entire yaml-ht for a different language."
               (let ((unquoted (format "<%s>" key))
                     (quoted (format "<q:%s>" key))
                     (slugged (format "<sl:%s>" key))
+                    (slugged2 (format "<sl<pen-colon>%s>" key))
                     (backslashed (format "<bs:%d>" i))
                     (quoted2 (format "<q<pen-colon>%s>" key)))
                 (cond
@@ -339,6 +343,8 @@ Reconstruct the entire yaml-ht for a different language."
                   (setq s (string-replace quoted (pen-q (chomp val)) s)))
                  ((re-match-p (pen-unregexify slugged) s)
                   (setq s (string-replace slugged (slugify (chomp val)) s)))
+                 ((re-match-p (pen-unregexify slugged2) s)
+                  (setq s (string-replace slugged2 (slugify (chomp val)) s)))
                  ((re-match-p (pen-unregexify backslashed) s)
                   (setq s (string-replace backslashed (pen-snc "sed 's=.=\\\\&=g'" val) s)))
                  ((re-match-p (pen-unregexify quoted2) s)
