@@ -338,7 +338,7 @@ Reconstruct the entire yaml-ht for a different language."
                  ((re-match-p (pen-unregexify quoted) s)
                   (setq s (string-replace quoted (pen-q (chomp val)) s)))
                  ((re-match-p (pen-unregexify slugged) s)
-                  (setq s (string-replace slugged (pen-q (slugify val)) s)))
+                  (setq s (string-replace slugged (pen-q (slugify (chomp val))) s)))
                  ((re-match-p (pen-unregexify backslashed) s)
                   (setq s (string-replace backslashed (pen-snc "sed 's=.=\\\\&=g'" val) s)))
                  ((re-match-p (pen-unregexify quoted2) s)
