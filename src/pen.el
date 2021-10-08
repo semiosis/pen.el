@@ -523,7 +523,7 @@ Reconstruct the entire yaml-ht for a different language."
                            ;; <delim>
                            (pen-expand-template-keyvals it subprompts-al t)
                            (pen-expand-template it vals t)
-                           (pen-expand-template-keyvals it (list (cons "delim" final-delimiter)) t)
+                           (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter))) t)
                            (pen-expand-template-keyvals it var-keyvals-slugged t)
                            (pen-expand-template-keyvals it var-keyvals t)
                            (pen-unonelineify-safe it))))
