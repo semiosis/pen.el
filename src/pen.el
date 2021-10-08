@@ -274,7 +274,7 @@ Reconstruct the entire yaml-ht for a different language."
                ((re-match-p (pen-unregexify unquoted) s)
                 (setq s (string-replace unquoted (chomp val) s)))
                ((re-match-p (pen-unregexify slugged) s)
-                (setq s (string-replace unquoted (slugify val) s)))
+                (setq s (string-replace unquoted (slugify (chomp val)) s)))
                ((re-match-p (pen-unregexify quoted) s)
                 (setq s (string-replace quoted (pen-q (chomp val)) s)))
                ((re-match-p (pen-unregexify backslashed) s)
