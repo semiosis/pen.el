@@ -10,4 +10,4 @@ sed -e "s/\\\\n/<pen-notnewline>/g" \
     -e "s/!/<pen-bang>/g" \
     -e "s/\"/<pen-doublequote>/g" \
     -e "s/:/<pen-colon>/g" \
-    -e "s/'/<pen-singlequote>/g"
+    -e "s/'/<pen-singlequote>/g" | sed -z "s/\\n\\n/<pen-dnl>/"
