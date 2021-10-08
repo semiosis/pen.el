@@ -854,6 +854,7 @@ when s is a string, set the clipboard to s"
   (with-temp-buffer
     (insert string)))
 
+;; This should also check the file extension
 (defun pen-detect-language (&optional detect buffer-not-selection world programming)
   "Returns the language of the buffer or selection."
   (interactive)
