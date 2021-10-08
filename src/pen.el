@@ -1672,10 +1672,10 @@ Function names are prefixed with pf- for easy searching"
 
                         ;; info and hover are related
                         (info (ht-get yaml-ht "info"))
-                        (info (ht-get yaml-ht "hover"))
-                        (info (ht-get yaml-ht "formatter"))
-                        (info (ht-get yaml-ht "linter"))
-                        (info (ht-get yaml-ht "action"))
+                        (hover (ht-get yaml-ht "hover"))
+                        (formatter (ht-get yaml-ht "formatter"))
+                        (linter (ht-get yaml-ht "linter"))
+                        (action (ht-get yaml-ht "action"))
 
                         (new-document (ht-get yaml-ht "new-document"))
                         (start-yas (ht-get yaml-ht "start-yas"))
