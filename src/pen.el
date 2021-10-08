@@ -580,10 +580,27 @@ Reconstruct the entire yaml-ht for a different language."
                         (vector2list final-flags)
                         " ")))
 
+                  ;; hover and info are related
                   (final-info
                    (or (pen-var-value-maybe 'do-etv)
                        (pen-var-value-maybe 'info)
                        ,info))
+
+                  (final-hover
+                   (or (pen-var-value-maybe 'hover)
+                       ,hover))
+
+                  (final-linter
+                   (or (pen-var-value-maybe 'linter)
+                       ,linter))
+
+                  (final-formatter
+                   (or (pen-var-value-maybe 'formatter)
+                       ,formatter))
+
+                  (final-action
+                   (or (pen-var-value-maybe 'action)
+                       ,action))
 
                   (final-new-document
                    (or (pen-var-value-maybe 'new-document)
@@ -728,10 +745,10 @@ Reconstruct the entire yaml-ht for a different language."
                                      ;; if the delim contains a newline,
                                      ;; because escaping \n will cause problems
                                      "cat"
-                                     (concat
-                                      "sed 's/" final-delimiter "/"
-                                      (pen-snc "sed 's=.=\\\\\\\\&=g'" final-delimiter)
-                                      "/'"))))
+                                   (concat
+                                    "sed 's/" final-delimiter "/"
+                                    (pen-snc "sed 's=.=\\\\\\\\&=g'" final-delimiter)
+                                    "/'"))))
                             (if (sor pp)
                                 (setq pp (concat sedcmd " | " pp))
                               (setq pp sedcmd))))
@@ -1652,7 +1669,14 @@ Function names are prefixed with pf- for easy searching"
                         (mode (ht-get yaml-ht "mode"))
                         (flags (ht-get yaml-ht "flags"))
                         (subprompts (ht-get yaml-ht "subprompts"))
+
+                        ;; info and hover are related
                         (info (ht-get yaml-ht "info"))
+                        (info (ht-get yaml-ht "hover"))
+                        (info (ht-get yaml-ht "formatter"))
+                        (info (ht-get yaml-ht "linter"))
+                        (info (ht-get yaml-ht "action"))
+
                         (new-document (ht-get yaml-ht "new-document"))
                         (start-yas (ht-get yaml-ht "start-yas"))
                         (yas (ht-get yaml-ht "yas"))
