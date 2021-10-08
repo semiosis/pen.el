@@ -225,4 +225,21 @@
                          (pf-imagine-an-awk-linter/1 l :no-select-result t :select-only-match))))))))
     (etv lintings)))
 
+
+;; TODO Make a prompt which detects either prose or code
+;; is-code, or is-prose, then prompt twice?
+
+
+;; TODO Make a Hyper binding for transforming prose or code using NL
+;; This should be super easy.
+(defun pen-mode-prose-or-code-p ()
+  (cond
+   (body))
+
+  )
+
+(defun pen-transform ()
+
+  )
+
 (provide 'pen-library)
