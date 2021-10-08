@@ -222,6 +222,7 @@ Reconstruct the entire yaml-ht for a different language."
     (string-replace "`" "<pen-backtick>")
     (string-replace "!" "<pen-bang>")
     (string-replace "\\n" "<pen-notnewline>")
+    (string-replace "\n\n" "<pen-dnl>")
     (string-replace "$" "<pen-dollar>")))
 
 ;; This is necessary because the string-search
