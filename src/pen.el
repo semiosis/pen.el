@@ -213,17 +213,23 @@ Reconstruct the entire yaml-ht for a different language."
         (pen-etv (pps funs))
       funs)))
 
-(defun pen-encode-string (s)
-  (->> s
-    ;; (string-replace ";" "<pen-semicolon>")
-    (string-replace "\"" "<pen-doublequote>")
-    (string-replace ":" "<pen-colon>")
-    (string-replace "'" "<pen-singlequote>")
-    (string-replace "`" "<pen-backtick>")
-    (string-replace "!" "<pen-bang>")
-    (string-replace "\\n" "<pen-notnewline>")
-    (string-replace "\n\n" "<pen-dnl>")
-    (string-replace "$" "<pen-dollar>")))
+(defun pen-encode-string (s &optional newlines)
+  (let ((encoded
+         (->> s
+           ;; (string-replace ";" "<pen-semicolon>")
+           (string-replace "\"" "<pen-doublequote>")
+           (string-replace ":" "<pen-colon>")
+           (string-replace "'" "<pen-singlequote>")
+           (string-replace "`" "<pen-backtick>")
+           (string-replace "!" "<pen-bang>")
+           (string-replace "\\n" "<pen-notnewline>")
+           (string-replace "$" "<pen-dollar>"))))
+    (if newlines
+        (setq encoded
+              (->> s
+                (string-replace "\n\n" "<pen-dnl>")
+                (string-replace "\n" "<pen-newline>"))))
+    encoded))
 
 ;; This is necessary because the string-search
 ;; command is not available in emacs27
