@@ -722,10 +722,16 @@ Reconstruct the entire yaml-ht for a different language."
                     (let* ((v (car tp))
                            (pp (cdr tp)))
                       (if (sor final-delimiter)
-                          (let ((sedcmd (concat
-                                         "sed 's/" final-delimiter "/"
-                                         (pen-snc "sed 's=.=\\\\\\\\&=g'" final-delimiter)
-                                         "/'")))
+                          (let ((sedcmd
+                                 (if (re-match-p "\n" final-delimiter)
+                                     ;; Just avoid this safety measure,
+                                     ;; if the delim contains a newline,
+                                     ;; because escaping \n will cause problems
+                                     "cat"
+                                     (concat
+                                      "sed 's/" final-delimiter "/"
+                                      (pen-snc "sed 's=.=\\\\\\\\&=g'" final-delimiter)
+                                      "/'"))))
                             (if (sor pp)
                                 (setq pp (concat sedcmd " | " pp))
                               (setq pp sedcmd))))
@@ -1051,7 +1057,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_MAX_GENERATED_TOKENS" . ,final-max-generated-tokens)
                             ("PEN_TEMPERATURE" . ,final-temperature)
                             ("PEN_MODE" . ,final-mode)
-                            ("PEN_STOP_SEQUENCE" . ,(pen-encode-string final-stop-sequence))
+                            ("PEN_STOP_SEQUENCE" . ,(pen-encode-string final-stop-sequence t))
                             ("PEN_TOP_P" . ,final-top-p)
                             ("PEN_TOP_K" . ,final-top-k)
                             ("PEN_FLAGS" . ,final-flags)
