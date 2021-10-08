@@ -329,6 +329,7 @@ Reconstruct the entire yaml-ht for a different language."
                           val)))
               (let ((unquoted (format "<%s>" key))
                     (quoted (format "<q:%s>" key))
+                    (slugged (format "<sl:%s>" key))
                     (backslashed (format "<bs:%d>" i))
                     (quoted2 (format "<q<pen-colon>%s>" key)))
                 (cond
@@ -336,6 +337,8 @@ Reconstruct the entire yaml-ht for a different language."
                   (setq s (string-replace unquoted (chomp val) s)))
                  ((re-match-p (pen-unregexify quoted) s)
                   (setq s (string-replace quoted (pen-q (chomp val)) s)))
+                 ((re-match-p (pen-unregexify slugged) s)
+                  (setq s (string-replace slugged (pen-q (chomp val)) s)))
                  ((re-match-p (pen-unregexify backslashed) s)
                   (setq s (string-replace backslashed (pen-snc "sed 's=.=\\\\&=g'" val) s)))
                  ((re-match-p (pen-unregexify quoted2) s)
