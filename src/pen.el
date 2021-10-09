@@ -2442,6 +2442,14 @@ May use to generate code from comments."
     (if f
         (xc (concat "pen " sig)))))
 
+
+;; i need access to the existing completions
+
+(defun pen-continue-prompt ()
+
+  )
+
+
 (require 'pen-borrowed)
 (require 'pen-core)
 (require 'pen-openai)
