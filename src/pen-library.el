@@ -248,7 +248,9 @@
   (interactive)
   ;; TODO detect prose/code
   ;; TODO Make it select the surrounding text so it can be transformed
-  (let ((context (pen-surrounding-text 10 t)))
+  (let ((context (if mark-active
+                     (pen-selected-text)
+                   (pen-surrounding-text 10 t))))
     (pen-filter
      (call-interactively 'pf-transform-code/3))))
 
