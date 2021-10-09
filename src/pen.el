@@ -484,7 +484,6 @@ Reconstruct the entire yaml-ht for a different language."
       lst
     (-uniq lst)))
 
-
 (defvar pen-default-approximate-token-length-divisor 2.5)
 
 (defun pen-num (val)
