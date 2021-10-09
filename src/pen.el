@@ -2181,7 +2181,10 @@ But use the results-analyser."
 (defmacro pen-filter (&rest body)
   ""
   `(eval
-    `(let ((filter t))
+    `(let ((filter t)
+           (insertion nil)
+           (info nil)
+           (completion nil))
        ,',@body)))
 
 ;; This wasn't sufficient. To make it work from the Host interop and from the minibuffer, I need eval
