@@ -235,7 +235,7 @@
 ;; It's important to stick to haskell
 
 
-;; TODO Make a Hyper binding for transforming prose or code using NL
+;; DONE Make a Hyper binding for transforming prose or code using NL
 ;; This should be super easy.
 (defun pen-mode-prose-or-code-p ()
   
@@ -246,12 +246,15 @@
 ;; I need to force this to filter
 (defun pen-transform ()
   (interactive)
-  ;; TODO detect prose/code
-  ;; TODO Make it select the surrounding text so it can be transformed
-  (let ((context (if mark-active
-                     (pen-selected-text)
-                   (pen-surrounding-text 10 t))))
-    (pen-filter
-     (call-interactively 'pf-transform-code/3))))
+  (let ((window-size (or (prefix-numeric-value current-prefix-arg)
+                         10)))
+    (let ((current-prefix-arg nil))
+      ;; TODO detect prose/code
+      ;; TODO Make it select the surrounding text so it can be transformed
+      (let ((context (if mark-active
+                         (pen-selected-text)
+                       (pen-surrounding-text window-size t))))
+        (pen-filter
+         (call-interactively 'pf-transform-code/3))))))
 
 (provide 'pen-library)
