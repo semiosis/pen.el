@@ -263,6 +263,13 @@
 
 (defun pen-insert-dwim ()
   (interactive)
-  (call-interactively 'pf-code-snippet-from-natural-language/2))
+  (let ((snippet
+         (pf-code-snippet-from-natural-language/2
+          (pen-detect-language-ask "pen-insert-dwim lang: ")
+          (read-string-hist
+           "pen-insert-dwim nl task: "))))
+    (if (>= (prefix-numeric-value current-prefix-arg) 4)
+        (etv snippet)
+      snippet)))
 
 (provide 'pen-library)
