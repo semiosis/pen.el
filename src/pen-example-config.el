@@ -259,4 +259,7 @@
 
 (define-key pen-map (kbd "H-l") 'pen-run)
 
+(define-key pen-map (kbd "H-^") 'pen-transform)
+
+
 ;; (call-interactively 'pen-add-key-booste)

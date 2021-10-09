@@ -247,7 +247,7 @@
   (interactive)
   ;; TODO detect prose/code
   ;; TODO Make it select the surrounding text so it can be transformed
-  (let ((context (pen-surrounding-context 5)))
-    (pf-transform-code/3 context)))
+  (let ((context (pen-surrounding-text 10 t)))
+    (pf-transform-code/3)))
 
 (provide 'pen-library)
