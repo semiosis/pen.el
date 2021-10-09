@@ -2190,10 +2190,14 @@ But use the results-analyser."
   ""
   `(eval
     `(let ((filter t)
-           (insertion nil)
-           (new-document nil)
-           (info nil)
-           (completion nil))
+           ;; (insertion nil)
+           (no-insertion t)
+           ;; (new-document nil)
+           (no-new-document t)
+           ;; (info nil)
+           (no-info t)
+           ;; (completion nil)
+           (no-completion t))
        ,',@body)))
 
 ;; This wasn't sufficient. To make it work from the Host interop and from the minibuffer, I need eval
