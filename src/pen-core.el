@@ -29,13 +29,20 @@
     (beginning-of-line)
     (point)))
 
-(defun pen-surrounding-text (&optional window-line-size)
+(defun pen-surrounding-text (&optional window-line-size select)
   (if (not window-line-size)
       (setq window-line-size 20))
-  (let ((window-line-radius (/ window-line-size 2)))
+  (let* ((window-line-radius (/ (+ 1 window-line-size) 2))
+         (start (get-point-start-of-nth-previous-line window-line-radius))
+         (end (get-point-start-of-nth-next-line (+ 1 window-line-radius))))
+    (if select
+        (progn
+          (set-mark start)
+          (goto-char end)
+          (activate-mark)))
     (str (buffer-substring
-          (get-point-start-of-nth-previous-line window-line-radius)
-          (get-point-start-of-nth-next-line window-line-radius)))))
+          start
+          end))))
 
 (defun pen-words (&optional n input)
   (setq n (or n 5))
