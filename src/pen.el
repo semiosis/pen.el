@@ -514,8 +514,6 @@ Reconstruct the entire yaml-ht for a different language."
    ((numberp n) (round n))
    (t 0)))
 
-
-
 (defun pen-n-words->n-tokens (n-words &optional chars-per-tok chars-per-word)
   (setq chars-per-word (or chars-per-word
                            (pen-get-average-word-length)))
