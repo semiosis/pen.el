@@ -240,6 +240,7 @@
 ;; I don't have a cheap version of this yet.
 ;; TODO I suppose I should just test for prog-mode
 (defun pen-mode-prose-or-code-p ()
+  ;; test for prog-mode
   (cond
    (body)))
 
