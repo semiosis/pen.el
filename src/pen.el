@@ -2527,7 +2527,6 @@ May use to generate code from comments."
 (require 'pen-tmux)
 (require 'pen-looking-glass)
 
-
 (defun pen-lsp-explain-error ()
   (interactive)
   (let ((error (lsp-ui-pen-diagnostics)))
@@ -2538,8 +2537,6 @@ May use to generate code from comments."
           error
           ;; (pen-surrounding-context)
           (rx/chomp (current-line-string)))))))
-
-
 
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 

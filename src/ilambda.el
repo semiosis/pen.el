@@ -220,6 +220,10 @@
   (interactive)
   (etv (pp-to-string (ilist 10 "tennis players in no particular order"))))
 
+(defun test-ilist-cs ()
+  (interactive)
+  (etv (pp-to-string (ilist 10 "computer science algorithms in no particular order"))))
+
 (defmacro ieval/m (expression &optional code-sexp-or-raw)
   "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
   (let* ((code-str
