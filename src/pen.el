@@ -606,14 +606,16 @@ Reconstruct the entire yaml-ht for a different language."
 
                   ;; hover, info and new-document are related
                   (final-info
-                   (or (pen-var-value-maybe 'do-etv)
-                       (pen-var-value-maybe 'info)
-                       ,info))
+                   (and (or (pen-var-value-maybe 'do-etv)
+                            (pen-var-value-maybe 'info)
+                            ,info)
+                        (not (pen-var-value-maybe 'no-info))))
 
                   (final-new-document
-                   (or (pen-var-value-maybe 'do-etv)
-                       (pen-var-value-maybe 'new-document)
-                       ,new-document))
+                   (and (or (pen-var-value-maybe 'do-etv)
+                            (pen-var-value-maybe 'new-document)
+                            ,new-document)
+                        (not (pen-var-value-maybe 'no-new-document))))
 
                   ;; filter, insertion, etc. are trearted a little differently
                   ;; (final-filter
@@ -1330,8 +1332,8 @@ Reconstruct the entire yaml-ht for a different language."
                          final-new-document
                          (>= (prefix-numeric-value current-prefix-arg) 4))
                      (pen-etv (ink-decode (ink-propertise result))))
-                    (final-analyse
-                     (pen-etv result))
+                    ;; (final-analyse
+                    ;;  (pen-etv result))
                     ;; Filter takes priority over insertion
                     ((and ,filter
                           mark-active)
