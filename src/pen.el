@@ -2467,7 +2467,7 @@ May use to generate code from comments."
 
 (defun pen-load-defs ()
   (interactive)
-  (let* ((fp "/home/shane/source/git/semiosis/prompts/prompts/name-a-function-1.prompt")
+  (let* ((fp "/home/shane/source/git/semiosis/prompts/prompts/guess-function-name-1.prompt")
          (yaml-ht (yamlmod-read-file fp))
          (defs (pen--htlist-to-alist (ht-get yaml-ht "defs"))))
     (etv (pps defs))))
