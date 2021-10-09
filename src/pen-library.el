@@ -229,17 +229,25 @@
 ;; TODO Make a prompt which detects either prose or code
 ;; is-code, or is-prose, then prompt twice?
 
+;; Or one prompt which returns prose, code or unknown/other
+;; This would be the better prompt
+
+;; It's important to stick to haskell
+
 
 ;; TODO Make a Hyper binding for transforming prose or code using NL
 ;; This should be super easy.
 (defun pen-mode-prose-or-code-p ()
+  
   (cond
-   (body))
+   (body)))
 
-  )
 
 (defun pen-transform ()
-
-  )
+  (interactive)
+  ;; TODO detect prose/code
+  ;; TODO Make it select the surrounding text so it can be transformed
+  (let ((context (pen-surrounding-context 5)))
+    (pf-transform-code/3 context)))
 
 (provide 'pen-library)
