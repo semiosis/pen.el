@@ -2443,7 +2443,8 @@ May use to generate code from comments."
         (xc (concat "pen " sig)))))
 
 
-;; i need access to the existing completions
+;; I need access to the existing completions.
+;; I may need to actually keep track of the inputs I have made.
 
 (defun pen-continue-prompt ()
 
