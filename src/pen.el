@@ -2183,6 +2183,7 @@ But use the results-analyser."
   `(eval
     `(let ((filter t)
            (insertion nil)
+           (new-document nil)
            (info nil)
            (completion nil))
        ,',@body)))

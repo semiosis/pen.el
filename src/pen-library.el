@@ -250,6 +250,6 @@
   ;; TODO Make it select the surrounding text so it can be transformed
   (let ((context (pen-surrounding-text 10 t)))
     (pen-filter
-     (pf-transform-code/3))))
+     (call-interactively 'pf-transform-code/3))))
 
 (provide 'pen-library)
