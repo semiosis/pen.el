@@ -646,8 +646,15 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 (defun s-remove-trailing-newline (s)
   (replace-regexp-in-string "\n\\'" "" s))
 
+(defun s-remove-leading-whitespace (s)
+  (replace-regexp-in-string "\\`[ \t\n]*" "" s))
+
 (defun s-remove-trailing-whitespace (s)
   (replace-regexp-in-string "[ \t\n]*\\'" "" s))
+
+(defun s-chompall (s)
+  (s-remove-leading-whitespace
+   (s-remove-trailing-whitespace s)))
 
 (defun s-remove-starting-specified-whitespace (s ws)
   (replace-regexp-in-string (concat "\\`" ws) "" s))

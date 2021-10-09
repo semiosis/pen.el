@@ -110,19 +110,34 @@
           ": ")
          thing)))))
 
+(defun pen-choose (options prompt)
+  (interactive)
+  (if (not prompt)
+      (setq prompt "pen-choose: "))
+
+  (if (pen-var-value-maybe 'pen-single-generation-b)
+      (car options)
+    (fz
+     options
+     nil
+     nil
+     prompt
+     nil nil nil nil t)))
+
 (defun pen-detect-language-ask (&optional prompt)
   (interactive)
   (if (not prompt)
       (setq prompt "Pen detected language"))
-  (if pen-cost-efficient
-      (pen-ask (pen-detect-language t) prompt)
-    (pen-detect-language-lm-ask prompt)))
+  (pen-choose
+   (if pen-cost-efficient
+       (if (sor (chomp (buffer-string)))
+           (pen-detect-language t)
+         (pen-detect-language))
+     (pen-detect-language-lm prompt))
+   "pen-detect-language-ask: "))
 
-(defun pen-detect-language-lm-ask (&optional prompt)
+(defun pen-detect-language-lm ()
   (interactive)
-  (if (not prompt)
-      (setq prompt "Pen detected language"))
-  (setq prompt (concat prompt ": "))
   (let ((langs
          (-uniq-u
           (append
@@ -138,14 +153,10 @@
            ;; inexpensive
            (list (pen-detect-language t)
                  (pen-detect-language t t))))))
+    langs))
 
-    (if (pen-var-value-maybe 'pen-single-generation-b)
-        (car langs)
-      (fz
-       langs
-       nil
-       nil
-       prompt
-       nil nil nil nil t))))
+(defun pen-detect-language-lm-ask (optional prompt)
+  (interactive)
+  (pen-choose  (pen-detect-language-lm) prompt))
 
 (provide 'pen-core)
