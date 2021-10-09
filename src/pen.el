@@ -117,6 +117,9 @@ Reconstruct the entire yaml-ht for a different language."
            (task (ht-get yaml-ht "task"))
            (doc (ht-get yaml-ht "doc"))
            (topic (ht-get yaml-ht "topic"))
+           ;; TODO Make vals work, too
+           (vals (pen--htlist-to-alist (vector2list (ht-get yaml-ht "vals"))))
+           ;; TODO Make vars also use pen--htlist-to-alist
            (vars (vector2list (ht-get yaml-ht "vars")))
            (var-slugs (mapcar 'slugify vars))
            (examples-list (vector2list (ht-get yaml-ht "examples")))
@@ -558,6 +561,7 @@ Reconstruct the entire yaml-ht for a different language."
                            (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t)
                            (pen-expand-template-keyvals it var-keyvals-slugged t)
                            (pen-expand-template-keyvals it var-keyvals t)
+                           (pen-expand-template-keyvals it vals t)
                            (pen-unonelineify-safe it))))
            (setq pen-last-prompt-data '((face . ink-generated)
                                         ;; This is necessary because most modes
@@ -1906,6 +1910,8 @@ Function names are prefixed with pf- for easy searching"
                                 (if prompt (concat "\nprompt:\n" prompt))))
                               "\n"))
 
+                        (vals (pen--htlist-to-alist (vector2list (ht-get yaml-ht "vals"))))
+
                         ;; variables
                         (vars (vector2list (ht-get yaml-ht "vars")))
                         (var-slugs (mapcar 'slugify vars))
@@ -2453,6 +2459,12 @@ May use to generate code from comments."
 
   )
 
+(defun pen-load-vars ()
+  (interactive)
+  (let* ((fp "/home/shane/source/git/semiosis/prompts/prompts/name-a-function-1.prompt")
+         (yaml-ht (yamlmod-read-file fp))
+         (vars (pen--htlist-to-alist (ht-get yaml-ht "vals"))))
+    (etv (pps vars))))
 
 (require 'pen-borrowed)
 (require 'pen-core)
