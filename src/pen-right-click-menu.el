@@ -215,8 +215,12 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (interactive (list (read-string-hist "🔍 Enter URL: "
                                        (if (major-mode-p 'eww-mode)
                                            (get-path)))))
-  (let ((content (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
-    (new-buffer-from-string content nil 'text-mode)))
+  (let* ((results (pf-imagine-a-website-from-a-url/1 url :no-select-result t))
+         (result (fz results nil nil "select rendering: ")))
+    (new-buffer-from-string result))
+  (comment
+   (let ((content (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
+     (new-buffer-from-string content nil 'text-mode))))
 
 (defun pen-browse-url-for-passage (url)
   "Search the web, given a selection"
