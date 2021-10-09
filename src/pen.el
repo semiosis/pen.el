@@ -229,7 +229,7 @@ Reconstruct the entire yaml-ht for a different language."
            (string-replace "$" "<pen-dollar>"))))
     (if newlines
         (setq encoded
-              (->> s
+              (->> encoded
                 (string-replace "\n\n" "<pen-dnl>")
                 (string-replace "\n" "<pen-newline>"))))
     encoded))
