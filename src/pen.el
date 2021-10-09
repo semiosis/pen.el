@@ -1632,8 +1632,6 @@ Otherwise, it will be a shell expression template")
 
   starting-engine)
 
-
-
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
