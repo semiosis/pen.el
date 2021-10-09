@@ -250,6 +250,7 @@
 (define-key pen-map (kbd "<S-f10>") 'pen-define-detectlang)
 
 (defset pen-fz-commands '(pen-lg-display-page
+                          pen-browse-url-for-passage
                           pen-add-to-glossary))
 
 (defun pen-run ()
