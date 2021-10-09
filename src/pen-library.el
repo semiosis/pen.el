@@ -237,6 +237,8 @@
 
 ;; DONE Make a Hyper binding for transforming prose or code using NL
 ;; This should be super easy.
+;; I don't have a cheap version of this yet.
+;; I suppose I should just test for prog-mode
 (defun pen-mode-prose-or-code-p ()
   (cond
    (body)))
