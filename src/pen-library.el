@@ -238,7 +238,6 @@
 ;; DONE Make a Hyper binding for transforming prose or code using NL
 ;; This should be super easy.
 (defun pen-mode-prose-or-code-p ()
-  
   (cond
    (body)))
 
