@@ -60,6 +60,20 @@
           start
           end))))
 
+(defun pen-proceeding-text (&optional proceeding-lines select)
+  (if (not proceeding-lines)
+      (setq proceeding-lines 10))
+  (let* ((start (point))
+         (end (get-point-start-of-nth-next-line (+ 1 proceeding-lines))))
+    (if select
+        (progn
+          (set-mark start)
+          (goto-char end)
+          (activate-mark)))
+    (str (buffer-substring
+          start
+          end))))
+
 (defun pen-words (&optional n input)
   (setq n (or n 5))
   (s-join " " (-take n (s-split-words input))))

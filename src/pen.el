@@ -2352,7 +2352,9 @@ But use the results-analyser."
            (not (string-equal (buffer-name) "*scratch*")))
       ;; Can't put ink-propertise here
       (eval `(let ((engine "OpenAI Codex"))
-               (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)))
+               ;; (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)
+               ;; (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-surrounding-proceeding-text) ,@args)
+               (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-text)) ,@args)))
     (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
 
 (defun pen-complete-insert (s)
