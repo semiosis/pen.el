@@ -1,3 +1,10 @@
+(defcustom pen-cost-efficient t
+  "Avoid spending money"
+  :type 'boolean
+  :group 'pen
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
 (defcustom pen-debug nil
   "When debug is on, try is disabled, and all errors throw an exception"
   :type 'boolean

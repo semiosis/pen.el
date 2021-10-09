@@ -114,7 +114,9 @@
   (interactive)
   (if (not prompt)
       (setq prompt "Pen detected language"))
-  (pen-ask (pen-detect-language) prompt))
+  (if pen-cost-efficient
+      (pen-ask (pen-detect-language t) prompt)
+    (pen-detect-language-lm-ask prompt)))
 
 (defun pen-detect-language-lm-ask (&optional prompt)
   (interactive)
@@ -133,6 +135,7 @@
                  (pf-get-language/1
                   context
                   :no-select-result t)))
+           ;; inexpensive
            (list (pen-detect-language t)
                  (pen-detect-language t t))))))
 
