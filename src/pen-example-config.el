@@ -260,5 +260,8 @@
 (define-key pen-map (kbd "H-l") 'pen-run)
 
 (define-key pen-map (kbd "H-^") 'pen-transform)
+(define-key pen-map (kbd "H-p ^") 'pen-transform)
+(define-key pen-map (kbd "H-p t") 'pen-transform)
+(define-key pen-map (kbd "H-p i") 'pen-insert-dwim)
 
 ;; (call-interactively 'pen-add-key-booste)

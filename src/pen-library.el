@@ -261,4 +261,7 @@
          (pen-filter
           (call-interactively 'pf-transform-code/3)))))))
 
+(defun pen-insert-dwim ()
+  (interactive))
+
 (provide 'pen-library)
