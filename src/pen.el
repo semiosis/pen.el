@@ -2444,7 +2444,7 @@ May use to generate code from comments."
 
 ;; I need access to the existing completions.
 ;; I may need to actually keep track of the inputs I have made.
-;; I need a database.
+;; I need a database for this.
 
 (defun pen-continue-prompt ()
 
