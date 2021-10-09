@@ -316,6 +316,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
          ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
          ;; ("add comments" :call pf-annotate-code-with-commentary/2)
+         ("guess function name" :call pf-guess-function-name/1)
          ("transform code" :call pf-transform-code/3)
          ("lint awk" :call pen-imagine-awk-linting)
          ("Example of usage" :call pf-get-an-example-of-the-usage-of-a-function/2)
@@ -331,7 +332,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("define term (detect language)" :call pen-define-detectlang)
         ("detect language here" :call pen-detect-language-context)
         ("start ii" :call pen-start-imaginary-interpreter)))
-                                                            
+
 
 (def-right-click-menu rcm-cheap
   '(("Cancel" :call identity-command)
