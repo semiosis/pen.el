@@ -2178,6 +2178,12 @@ But use the results-analyser."
            (n-completions 1))
        ,',@body)))
 
+(defmacro pen-filter (&rest body)
+  ""
+  `(eval
+    `(let ((filter t))
+       ,',@body)))
+
 ;; This wasn't sufficient. To make it work from the Host interop and from the minibuffer, I need eval
 (comment
  (defmacro pen-long-complete (&rest body)
