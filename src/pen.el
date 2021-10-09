@@ -743,6 +743,17 @@ Reconstruct the entire yaml-ht for a different language."
                                     (pen-yas-expand-string final-prompt)
                                   final-prompt))
 
+                  (final-defs
+                   (cl-loop
+                    for atp in final-defs
+                    collect
+                    (cons
+                     (car atp)
+                     (eval
+                      `(pen-let-keyvals
+                        ',subprompts-al
+                        (eval-string ,(str (cdr atp))))))))
+
                   (vals
                    ;; If not called interactively then
                    ;; manually run interactive expressions
