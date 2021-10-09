@@ -622,6 +622,10 @@ Reconstruct the entire yaml-ht for a different language."
                   ;;  (or (pen-var-value-maybe 'filter)
                   ;;      ,filter))
 
+                  (final-utilises-code
+                   (or (pen-var-value-maybe 'utilises-code)
+                       ,utilises-code))
+
                   (final-hover
                    (or (pen-var-value-maybe 'hover)
                        ,hover))
@@ -1739,6 +1743,8 @@ Function names are prefixed with pf- for easy searching"
                         (collation-postprocessor (ht-get yaml-ht "pen-collation-postprocessor"))
                         (completion (pen-yaml-test yaml-ht "completion"))
                         (insertion (pen-yaml-test yaml-ht "insertion"))
+                        ;; Is the prompt designed for an LM trained on code?
+                        (utilises-code (pen-yaml-test yaml-ht "utilises-code"))
                         (no-trim-start (or (pen-yaml-test yaml-ht "no-trim-start")
                                            (pen-yaml-test yaml-ht "completion")))
                         (no-trim-end (pen-yaml-test yaml-ht "no-trim-end"))
