@@ -242,7 +242,6 @@
   (cond
    (body)))
 
-
 ;; I need to force this to filter
 (defun pen-transform ()
   (interactive)
@@ -251,10 +250,11 @@
     (let ((current-prefix-arg nil))
       ;; TODO detect prose/code
       ;; TODO Make it select the surrounding text so it can be transformed
-      (let ((context (if mark-active
-                         (pen-selected-text)
-                       (pen-surrounding-text window-size t))))
-        (pen-filter
-         (call-interactively 'pf-transform-code/3))))))
+      (save-excursion-and-region-reliably
+       (let ((context (if mark-active
+                          (pen-selected-text)
+                        (pen-surrounding-text window-size t))))
+         (pen-filter
+          (call-interactively 'pf-transform-code/3)))))))
 
 (provide 'pen-library)
