@@ -268,10 +268,10 @@
           (pen-detect-language-ask "pen-insert-dwim lang: ")
           (read-string-hist
            "pen-insert-dwim nl task: "))))
-    (if (and
-         (interactive-p)
-         (>= (prefix-numeric-value current-prefix-arg) 4))
-        (etv snippet)
+    (if (interactivep)
+        (if (>= (prefix-numeric-value current-prefix-arg) 4)
+            (etv snippet)
+          (insert snippet))
       snippet)))
 
 (provide 'pen-library)
