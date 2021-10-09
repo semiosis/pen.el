@@ -11,6 +11,6 @@ sed -e "s/<pen-notnewline>/\\\\n/g" \
     -e "s/<pen-doublequote>/\"/g" \
     -e "s/<pen-colon>/:/g" \
     -e "s/<pen-singlequote>/'/g" \
-    -e "s/<pen-dnl>/\\n\\n/g"
+    -e "s/<pen-dnl>/\\n\\n/g" \
     -e "s/<pen-newline>/\\n/g" \
     -e "s/<pen-nl>/\\n/g"
