@@ -111,6 +111,12 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-preview-token-length 150
+  "The number of tokens to generate in order to get a preview of what to further generate"
+  :type 'integer
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-force-temperature nil
   "The temperature to force"
   :type 'float
