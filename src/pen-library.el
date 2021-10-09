@@ -262,6 +262,7 @@
           (call-interactively 'pf-transform-code/3)))))))
 
 (defun pen-insert-dwim ()
-  (interactive))
+  (interactive)
+  (call-interactively 'pf-code-snippet-from-natural-language/2))
 
 (provide 'pen-library)
