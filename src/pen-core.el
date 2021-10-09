@@ -130,7 +130,7 @@
       (setq prompt "Pen detected language"))
   (pen-choose
    (if pen-cost-efficient
-       (if (sor (chomp (buffer-string)))
+       (if (sor (s-chompall (buffer-string)))
            (pen-detect-language t)
          (pen-detect-language))
      (pen-detect-language-lm prompt))
