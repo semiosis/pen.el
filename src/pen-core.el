@@ -163,7 +163,7 @@
        (if (sor (s-chompall (buffer-string)))
            (pen-detect-language t)
          (pen-detect-language))
-     (pen-detect-language-lm prompt))
+     (pen-detect-language-lm))
    "pen-detect-language-ask: "))
 
 (defun pen-detect-language-lm ()
