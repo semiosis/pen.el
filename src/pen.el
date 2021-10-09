@@ -705,7 +705,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-defs
                    (or (pen-var-value-maybe 'defs)
-                       ,defs))
+                       ',defs))
 
                   ;; Pipelines are just some named shell pipelines that a specific to a prompt
                   ;; that come with the prompt. They're not very useful. But they may also be used inside expressions.
