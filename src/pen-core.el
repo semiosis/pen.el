@@ -114,6 +114,12 @@
   (interactive)
   (if (not prompt)
       (setq prompt "Pen detected language"))
+  (pen-ask (pen-detect-language) prompt))
+
+(defun pen-detect-language-lm-ask (&optional prompt)
+  (interactive)
+  (if (not prompt)
+      (setq prompt "Pen detected language"))
   (setq prompt (concat prompt ": "))
   (let ((langs
          (-uniq-u
