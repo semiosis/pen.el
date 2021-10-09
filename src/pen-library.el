@@ -245,12 +245,14 @@
 ;; I need to force this to filter
 (defun pen-transform ()
   (interactive)
-  (let ((window-size (or (prefix-numeric-value current-prefix-arg)
-                         10)))
-    (let ((current-prefix-arg nil))
-      ;; TODO detect prose/code
-      ;; TODO Make it select the surrounding text so it can be transformed
-      (save-excursion-and-region-reliably
+  ;; A current-prefix-arg of 1 seems to be default, so only use it if it's not 1
+  (save-excursion-and-region-reliably
+   (let ((window-size (or (and (not (equal 1 (prefix-numeric-value current-prefix-arg)))
+                               (prefix-numeric-value current-prefix-arg))
+                          10)))
+     (let ((current-prefix-arg nil))
+       ;; TODO detect prose/code
+       ;; TODO Make it select the surrounding text so it can be transformed
        (let ((context (if mark-active
                           (pen-selected-text)
                         (pen-surrounding-text window-size t))))

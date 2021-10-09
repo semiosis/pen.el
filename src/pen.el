@@ -321,10 +321,10 @@ Reconstruct the entire yaml-ht for a different language."
 (defmacro cond-all (&rest body)
   "Like cond, but runs all of them"
   (let ((whens
-         (loop for c in body
-               collect
-               `(when ,(car c)
-                  ,@(cdr c)))))
+         (cl-loop for c in body
+                  collect
+                  `(when ,(car c)
+                     ,@(cdr c)))))
     `(progn
        ,@whens)))
 

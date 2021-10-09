@@ -2135,7 +2135,7 @@ instead of `browse-url-new-window-flag'."
 
 (defun eww-open-all-links ()
   (interactive)
-  (loop for url in (str2list (buffer-links))
+  (cl-loop for url in (str2list (buffer-links))
         do (progn
              (pen-eww url)
              (sleep 2))))
