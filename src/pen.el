@@ -604,11 +604,21 @@ Reconstruct the entire yaml-ht for a different language."
                         (vector2list final-flags)
                         " ")))
 
-                  ;; hover and info are related
+                  ;; hover, info and new-document are related
                   (final-info
                    (or (pen-var-value-maybe 'do-etv)
                        (pen-var-value-maybe 'info)
                        ,info))
+
+                  (final-new-document
+                   (or (pen-var-value-maybe 'do-etv)
+                       (pen-var-value-maybe 'new-document)
+                       ,new-document))
+
+                  ;; filter, insertion, etc. are trearted a little differently
+                  ;; (final-filter
+                  ;;  (or (pen-var-value-maybe 'filter)
+                  ;;      ,filter))
 
                   (final-hover
                    (or (pen-var-value-maybe 'hover)
@@ -625,10 +635,6 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-action
                    (or (pen-var-value-maybe 'action)
                        ,action))
-
-                  (final-new-document
-                   (or (pen-var-value-maybe 'new-document)
-                       ,new-document))
 
                   (final-collation-temperature-stepper
                    (or (pen-var-value-maybe 'collation-temperature-stepper)
@@ -1997,8 +2003,8 @@ Function names are prefixed with pf- for easy searching"
               pen-prompt-filter-functions)
             nil nil "pen filter: ")))
     (if f
-        (let ((filter t))
-          (call-interactively (intern f)))
+        (pen-filter
+         (call-interactively (intern f)))
       ;; (filter-selected-region-through-function (intern f))
       )))
 
