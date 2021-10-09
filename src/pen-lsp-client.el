@@ -262,6 +262,27 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 
 
 
+(defun pen-lsp-error-list (path)
+  (if (not path)
+      (setq path (get-path)))
+  (let ((l))
+    (maphash (lambda (file diagnostic)
+               (if (string-equal path file)
+                   (dolist (diag diagnostic)
+                     (-let* (((&Diagnostic :message :severity? :source?
+                                           :range (&Range :start (&Position :line start-line))) diag)
+                             (formatted-message (or (if source? (format "%s: %s" source? message) message) "???"))
+                             (severity (or severity? 1))
+                             (line (1+ start-line))
+                             (face (cond ((= severity 1) 'error)
+                                         ((= severity 2) 'warning)
+                                         (t 'success)))
+                             (text (concat (number-to-string line)
+                                           ": "
+                                           (car (split-string formatted-message "\n")))))
+                       (add-to-list 'l text t)))))
+             (lsp-diagnostics))
+    l))
 
 
 
