@@ -281,5 +281,10 @@ case "$f" in
     }
     ;;
 
+    shell-commentify) {
+        pen-str tidy-prose-input | sed "s/\\.\$//" | pen-wrap 50 | sed "s/^/# /"
+    }
+    ;;
+
     *)
 esac
