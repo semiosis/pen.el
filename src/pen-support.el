@@ -738,7 +738,7 @@ region-active-p does not work for evil selection."
 
 (defun pen-buffer-string ()
   ""
-  ;; Trim to most relevant
+  ;; Trim to most relevant according to engine's max prompt length
   (buffer-string))
 
 (defun pen-buffer-string-or-selection ()
