@@ -267,6 +267,9 @@
 
 (defun pen-transform ()
   (interactive)
+  ;; TODO Make it so if this function is cancelled, the cursor is returned to the original place.
+  ;; That is because this function creates a region selection if nothing is selected.
+
   ;; A current-prefix-arg of 1 seems to be default, so only use it if it's not 1
   (let ((window-size (or (and (not (equal 1 (prefix-numeric-value current-prefix-arg)))
                               (prefix-numeric-value current-prefix-arg))
