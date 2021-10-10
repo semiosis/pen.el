@@ -242,25 +242,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
                 do (etv pg))
         (eww url))))))
 
-(add-to-list 'pen-editing-functions 'pen-lsp-explain-error)
-(add-to-list 'pen-editing-functions 'pf-explain-error/2)
-(add-to-list 'pen-editing-functions 'rcm-explain-code)
-(add-to-list 'pen-editing-functions 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
-(add-to-list 'pen-editing-functions 'pf-translate-from-world-language-x-to-y/3)
-(add-to-list 'pen-editing-functions 'pf-tldr-summarization/1)
-(add-to-list 'pen-editing-functions 'pf-clean-prose/1)
-(add-to-list 'pen-editing-functions 'pf-correct-grammar/1)
-(add-to-list 'pen-editing-functions 'rcm-generate-program)
-(add-to-list 'pen-editing-functions 'pf-transform-code/3)
-(add-to-list 'pen-editing-functions 'pf-gpt-j-generate-regex/2)
-(add-to-list 'pen-editing-functions 'pf-transpile-from-programming-language-x-to-y/3)
-(add-to-list 'pen-editing-functions 'pen-tutor-mode-assist)
-(add-to-list 'pen-editing-functions 'pf-thesaurus/1)
-(add-to-list 'pen-editing-functions 'pf-get-an-example-sentence-for-a-word/1)
-(add-to-list 'pen-editing-functions 'pf-get-an-example-of-the-usage-of-a-function/2)
-(add-to-list 'pen-editing-functions 'pen-detect-language-context)
-(add-to-list 'pen-editing-functions 'pf-get-documentation-for-syntax-given-screen/2)
-(add-to-list 'pen-editing-functions 'rcm-term)
 
 
 (setq right-click-context-global-menu-tree
