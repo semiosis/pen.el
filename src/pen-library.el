@@ -277,9 +277,10 @@
 (defun pen-autofix-lsp-errors ()
   (interactive)
   (let ((s (pen-buffer-string-or-selection t)))
-    (pen-filter
-     (pf-autofix-code/2
-      (pen-list2str (pen-lsp-error-list))
-      s))))
+    (save-excursion-and-region-reliably
+     (pen-filter
+      (pf-autofix-code/2
+       (pen-list2str (pen-lsp-error-list))
+       s)))))
 
 (provide 'pen-library)
