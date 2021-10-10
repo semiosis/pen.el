@@ -301,8 +301,12 @@
 (defun pen-autofix-lsp-errors ()
   (interactive)
   (let* ((s (pen-buffer-string-or-selection t))
+         (errors
+          (if (>= (prefix-numeric-value current-prefix-arg) 4)
+              (pen-list2str (pen-lsp-error-list))
+            (read-string-hist "pen-autofix-lsp-errors errors: ")))
          (fixed (pf-autofix-code/2
-                 (pen-list2str (pen-lsp-error-list))
+                 errors
                  s)))
     (pen-replace-region fixed)))
 
