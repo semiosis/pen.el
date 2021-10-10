@@ -142,7 +142,10 @@
 (setq lsp-headerline-breadcrumb-segments '(path-up-to-project file))
 
 ;; long docs in the modeline (eldoc) were annoying
+;; one of these worked
 (setq lsp-signature-render-documentation nil)
+(setq lsp-eldoc-render-all nil)
+(setq lsp-eldoc-enable-hover nil)
 
 
 (require 'el-patch)
