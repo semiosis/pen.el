@@ -245,21 +245,40 @@
    (body)))
 
 ;; I need to force this to filter
+(comment
+ (defun pen-transform ()
+   (interactive)
+   ;; (save-excursion-and-region-reliably (replace-region (selection)))
+   ;; These are actually incompatible
+
+   ;; A current-prefix-arg of 1 seems to be default, so only use it if it's not 1
+   (save-excursion-and-region-reliably
+    (let ((window-size (or (and (not (equal 1 (prefix-numeric-value current-prefix-arg)))
+                                (prefix-numeric-value current-prefix-arg))
+                           10)))
+      (let ((current-prefix-arg nil))
+        ;; TODO detect prose/code
+        ;; TODO Make it select the surrounding text so it can be transformed
+        (let ((context (if mark-active
+                           (pen-selected-text)
+                         (pen-surrounding-text window-size t))))
+          (pen-filter
+           (call-interactively 'pf-transform-code/3))))))))
+
 (defun pen-transform ()
   (interactive)
   ;; A current-prefix-arg of 1 seems to be default, so only use it if it's not 1
-  (save-excursion-and-region-reliably
-   (let ((window-size (or (and (not (equal 1 (prefix-numeric-value current-prefix-arg)))
-                               (prefix-numeric-value current-prefix-arg))
-                          10)))
-     (let ((current-prefix-arg nil))
-       ;; TODO detect prose/code
-       ;; TODO Make it select the surrounding text so it can be transformed
-       (let ((context (if mark-active
-                          (pen-selected-text)
-                        (pen-surrounding-text window-size t))))
-         (pen-filter
-          (call-interactively 'pf-transform-code/3)))))))
+  (let ((window-size (or (and (not (equal 1 (prefix-numeric-value current-prefix-arg)))
+                              (prefix-numeric-value current-prefix-arg))
+                         10)))
+    (let ((current-prefix-arg nil))
+      ;; TODO detect prose/code
+      ;; TODO Make it select the surrounding text so it can be transformed
+      (let ((context (if mark-active
+                         (pen-selected-text)
+                       (pen-surrounding-text window-size t))))
+        (replace-region
+         (call-interactively 'pf-transform-code/3))))))
 
 (defun pen-insert-dwim ()
   (interactive)
