@@ -278,6 +278,6 @@
   (interactive)
   (pf-autofix-code/2
    (pen-list2str (pen-lsp-error-list))
-   (pen-buffer-string-or-selection)))
+   (pen-buffer-string-or-selection t)))
 
 (provide 'pen-library)
