@@ -25,7 +25,7 @@
        r)))
 
 (defun pen-replace-region (s)
-  (replace-region))
+  (replace-region s))
 
 (defun pen-region-filter (func)
   "Apply the function to the selected region. The function must accept a string and return a string."
