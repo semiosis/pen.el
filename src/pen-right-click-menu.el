@@ -242,8 +242,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
                 do (etv pg))
         (eww url))))))
 
-
-
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity)
         ("> pen" :call rcm-pen)))
