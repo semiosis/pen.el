@@ -278,7 +278,9 @@
                          (pen-selected-text)
                        (pen-surrounding-text window-size t))))
         (replace-region
-         (call-interactively 'pf-transform-code/3))))))
+         (pf-transform-code/3 context nil nil)
+         ;; (call-interactively 'pf-transform-code/3)
+         )))))
 
 (defun pen-insert-dwim ()
   (interactive)
