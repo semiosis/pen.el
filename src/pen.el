@@ -2346,6 +2346,7 @@ But use the results-analyser."
            (max-generated-tokens 50)
            (n-completions 2)
            (n-collate 1)
+           (no-utilise-code t)
            (inject-gen-start "\n")
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
@@ -2376,9 +2377,11 @@ But use the results-analyser."
       ;; Can't put ink-propertise here
       (eval `(let ((engine "OpenAI Codex"))
                ;; (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-surrounding-proceeding-text) ,@args)
-               (if pen-cost-efficient
-                   (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)
-                 (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-text)) ,@args))))
+               (if (pen-var-value-maybe 'no-utilise-code)
+                   (pf-generic-file-type-completion-nocode/2 (pen-detect-language) preceding-text ,@args)
+                 (if pen-cost-efficient
+                     (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)
+                   (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-text)) ,@args)))))
     (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
 
 (defun pen-complete-insert (s)
