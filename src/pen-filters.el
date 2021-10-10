@@ -24,6 +24,9 @@
        (set-face-background 'region bg)
        r)))
 
+(defun pen-replace-region (s)
+  (replace-region))
+
 (defun pen-region-filter (func)
   "Apply the function to the selected region. The function must accept a string and return a string."
   (let ((rstart (if (region-active-p) (region-beginning) (point-min)))
@@ -32,7 +35,7 @@
     (let ((res
            (pen-flash-region
             (ptw func (buffer-substring rstart rend)))))
-      (replace-region res))))
+      (pen-replace-region res))))
 
 (defun pen-region-pipe (cmd)
   (interactive (list (read-string "shell filter:")))

@@ -1361,9 +1361,9 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; Filter takes priority over insertion
                     ((and ,filter
                           mark-active)
-                     ;; (replace-region (concat (pen-selected-text) result))
+                     ;; (pen-replace-region (concat (pen-selected-text) result))
                      (if (sor result)
-                         (replace-region (ink-propertise result))
+                         (pen-replace-region (ink-propertise result))
                        (error "pen filter returned empty string")))
                     ;; Insertion is for prompts for which a new buffer is not necessary
                     ((or ,insertion
