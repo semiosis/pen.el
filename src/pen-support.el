@@ -732,6 +732,21 @@ region-active-p does not work for evil selection."
 
 (defalias 'pen-selection 'pen-selected-text-ignore-no-selection)
 
+(defun pen-token-length-warn (s)
+  "Warn on token length, and ask to continue, in case it's high."
+  s)
+
+(defun pen-buffer-string ()
+  ""
+  ;; Trim to most relevant
+  (buffer-string))
+
+(defun pen-buffer-string-or-selection ()
+  (let ((s (if (selectedp)
+               (pen-selection)
+             (buffer-string))))
+    (pen-token-length-warn s)))
+
 (defalias 'pps 'pp-to-string)
 
 (defun xc (&optional s silent)
