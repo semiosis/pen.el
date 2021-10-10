@@ -749,7 +749,7 @@ region-active-p does not work for evil selection."
 (defun pen-buffer-string-or-selection ()
   (let ((s (if (selectedp)
                (pen-selection)
-             (buffer-string t))))
+             (pen-buffer-string t))))
     (pen-token-length-warn s)))
 
 (defalias 'pps 'pp-to-string)
