@@ -371,4 +371,12 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (define-key pen-map (kbd "H-m") 'right-click-context-menu)
 (define-key pen-map (kbd "C-M-z") 'right-click-context-menu)
 
+(defun right-click-context-menu-around-advice-remove-overlays (proc &rest args)
+  (lsp-ui-sideline--delete-ov)
+  (lsp-ui-doc-hide)
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'right-click-context-menu :around #'right-click-context-menu-around-advice-remove-overlays)
+;; (advice-remove 'right-click-context-menu #'right-click-context-menu-around-advice-remove-overlays)
+
 (provide 'pen-right-click-menu)
