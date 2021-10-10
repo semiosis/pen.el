@@ -736,9 +736,14 @@ region-active-p does not work for evil selection."
   "Warn on token length, and ask to continue, in case it's high."
   s)
 
-(defun pen-buffer-string ()
+(defun pen-buffer-string (&optional select)
   ""
   ;; Trim to most relevant according to engine's max prompt length
+  (if select
+        (progn
+          (set-mark (point-min))
+          (goto-char (point-max))
+          (activate-mark)))
   (buffer-string))
 
 (defun pen-buffer-string-or-selection ()
