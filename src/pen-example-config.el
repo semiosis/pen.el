@@ -269,6 +269,7 @@
 (define-key pen-map (kbd "H-p a") 'pf-append-to-code/3)
 (define-key pen-map (kbd "H-p n") 'pen-select-function-from-nl)
 (define-key pen-map (kbd "H-p f") 'pen-autofix-lsp-errors)
+(define-key pen-map (kbd "H-p m") 'pf-given-a-function-name-show-the-import/2)
 
 
 
