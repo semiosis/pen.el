@@ -746,10 +746,10 @@ region-active-p does not work for evil selection."
           (activate-mark)))
   (buffer-string))
 
-(defun pen-buffer-string-or-selection ()
+(defun pen-buffer-string-or-selection (&optional select)
   (let ((s (if (selectedp)
                (pen-selection)
-             (pen-buffer-string t))))
+             (pen-buffer-string select))))
     (pen-token-length-warn s)))
 
 (defalias 'pps 'pp-to-string)
