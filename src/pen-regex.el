@@ -52,6 +52,8 @@
   (set-mark (eval sym1))
   (goto-char (eval sym2)))
 
+;; (save-excursion-and-region-reliably (replace-region (selection)))
+;; These are actually incompatible
 (defmacro save-excursion-and-region-reliably (&rest body)
   `(save-excursion
      (save-region)
