@@ -264,6 +264,8 @@
 (define-key pen-map (kbd "H-p ^") 'pen-transform)
 (define-key pen-map (kbd "H-p t") 'pen-transform)
 (define-key pen-map (kbd "H-p i") 'pen-insert-snippet-from-lm)
+(define-key pen-map (kbd "H-p l") 'pf-explain-some-code/2)
+(define-key pen-map (kbd "H-p e") 'pf-get-an-example-of-the-usage-of-a-function/2)
 (define-key pen-map (kbd "H-p a") 'pf-append-to-code/3)
 (define-key pen-map (kbd "H-p n") 'pen-select-function-from-nl)
 (define-key pen-map (kbd "H-p f") 'pen-autofix-lsp-errors)
