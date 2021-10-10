@@ -141,6 +141,8 @@
 (setq lsp-ui-doc-use-childframe nil)
 (setq lsp-headerline-breadcrumb-segments '(path-up-to-project file))
 
+;; long docs in the modeline (eldoc) were annoying
+(setq lsp-signature-render-documentation nil)
 
 
 (require 'el-patch)
