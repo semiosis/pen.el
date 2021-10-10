@@ -285,13 +285,13 @@
          ;; (call-interactively 'pf-transform-code/3)
          )))))
 
-(defun pen-insert-dwim ()
+(defun pen-insert-snippet-from-lm ()
   (interactive)
   (let ((snippet
          (pf-code-snippet-from-natural-language/2
-          (pen-detect-language-ask "pen-insert-dwim lang: ")
+          (pen-detect-language-ask "pen-insert-snippet-from-lm lang: ")
           (read-string-hist
-           "pen-insert-dwim nl task: "))))
+           "pen-insert-snippet-from-lm nl task: "))))
     (if (interactive-p)
         (if (>= (prefix-numeric-value current-prefix-arg) 4)
             (etv snippet)
@@ -300,11 +300,10 @@
 
 (defun pen-autofix-lsp-errors ()
   (interactive)
-  (let ((s (pen-buffer-string-or-selection t)))
-    (save-excursion-and-region-reliably
-     (pen-filter
-      (pf-autofix-code/2
-       (pen-list2str (pen-lsp-error-list))
-       s)))))
+  (let* ((s (pen-buffer-string-or-selection t))
+         (fixed (pf-autofix-code/2
+                 (pen-list2str (pen-lsp-error-list))
+                 s)))
+    (pen-replace-region fixed)))
 
 (provide 'pen-library)
