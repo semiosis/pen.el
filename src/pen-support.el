@@ -695,6 +695,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (cons 'progn (flatten-once
                 (cl-loop for i from 1 to n collect body))))
 
+;; TODO Use this is more places
 (defun pen-read-string (prompt &optional initial-input history default-value inherit-input-method)
   (if (pen-var-value-maybe 'do-pen-batch)
       ""
