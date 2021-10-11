@@ -317,15 +317,21 @@ case "$sn" in
                     set -- "$in" "$@"
                 elif test "$#" -gt 1; then
                     i=1
+                    found=
                     for var in "$@"
                     do
                         h="$((i - 1))"
                         j="$((i + 2))"
                         if test "$var" = "{}"; then
                             set -- "${@:1:$h}" "$in" "${@:j}"
+                            found=y
                         fi
                         ((i++))
                     done
+                    if ! test "$found" = "y"; then
+                        # set -- "$@" "$in"
+                        set -- "$in" "$@"
+                    fi
                 else
                     set -- "$in" "$@"
                 fi
