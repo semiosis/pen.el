@@ -351,15 +351,15 @@ case "$sn" in
 
             if test "$all" = "y"; then
                 if test "$UPDATE" = y; then
-                    set -- -e "(json-encode-list (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen)))"
+                    set -- -e "(json-encode-list (pen-batch (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen))))"
                 else
-                    set -- -e "(json-encode-list ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen))"
+                    set -- -e "(json-encode-list (pen-batch ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen)))"
                 fi
             else
                 if test "$UPDATE" = y; then
-                    set -- -e "(pen-list2str (pen-single-generation (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen))))"
+                    set -- -e "(pen-list2str (pen-batch (pen-single-generation (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen)))))"
                 else
-                    set -- -e "(pen-list2str (pen-single-generation ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen)))"
+                    set -- -e "(pen-list2str (pen-batch (pen-single-generation ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen))))"
                 fi
             fi
 
