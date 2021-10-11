@@ -31,6 +31,7 @@
 (require 'transient)
 (require 'el-patch)
 (require 'lsp-mode)
+(require 'lsp-ui)
 (require 'iedit)
 (require 'ht)
 (require 'sx)
