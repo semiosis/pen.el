@@ -44,9 +44,9 @@ export USE_CONVERSATION_MODE=y
 while IFS=$'\n' read -p "${os_or_lang}: " -r nlcommand; do
     if test "$nlcommand" = "!!"; then
         nlcommand="$lastcmd"
-        do_update=y
+        UPDATE=y
     else
-        do_update=
+        UPDATE=
     fi
 
     (
