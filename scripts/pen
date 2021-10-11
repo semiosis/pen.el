@@ -314,7 +314,7 @@ case "$sn" in
                 if test "$1" = {}; then
                     shift
 
-                    set -- "$(cat)" "$@"
+                    set -- "$in" "$@"
                 elif test "$#" -gt 1; then
                     i=1
                     for var in "$@"
