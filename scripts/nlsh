@@ -42,11 +42,18 @@ export USE_CONVERSATION_MODE=y
 # rlwrap openai-complete.sh prompts/nlsh-2.prompt "$os_or_lang"
 
 while IFS=$'\n' read -p "${os_or_lang}: " -r nlcommand; do
-    test "$nlcommand" = "!!" && nlcommand="$lastcmd"
+    if test "$nlcommand" = "!!"; then
+        nlcommand="$lastcmd"
+        do_update=y
+    else
+        do_update=
+    fi
+
     (
-        test "$nlcommand" = "!!" && export UPDATE=y
+        test "do_update" = y && export UPDATE=y
         pena "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ".[]"
     )
+
     lastcmd="$nlcommand"
     # pena -u "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ". | map(. + \"\\n\\n\")"
 done
