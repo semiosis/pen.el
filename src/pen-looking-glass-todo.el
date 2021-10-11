@@ -605,7 +605,7 @@ Differences in #targets are ignored."
   (browsh path))
 
 (defun my-redirect (url)
-  (snc "my-redirect" url))
+  (pen-snc "my-redirect" url))
 
 (defun eww (url &optional use-chrome)
   "Fetch URL and render the page.
@@ -1754,7 +1754,7 @@ element is the data blob and the second element is the content-type."
 
 (defun dump-url-file-and-edit (url)
   (interactive (list (read-string-hist "file url: ")))
-  (e (snc (cmd "put-url-to-dump" url))))
+  (e (pen-snc (cmd "put-url-to-dump" url))))
 
 
 (defun advice-handle-url (proc &rest args)
@@ -1773,7 +1773,7 @@ element is the data blob and the second element is the content-type."
           ((-reduce (lambda (a b) (or a b))
                     (mapcar (lambda (e) (string-match-p e url))
                             eww-ff-dom-matchers))
-           (snc (cmd "sps" "ff" url))
+           (pen-snc (cmd "sps" "ff" url))
            ;; (let ((eww-use-chrome t)
            ;;       (eww-update-ci t))
            ;;   (let ((res (apply proc args)))
@@ -1955,7 +1955,7 @@ instead of `browse-url-new-window-flag'."
                  (list p)))
 
   (if (sor url)
-      (mtv (snc (cmd "summarize-page" url)))))
+      (mtv (pen-snc (cmd "summarize-page" url)))))
 
 (defun google-this-url-in-this-domain (url domain)
   (interactive (let* ((p (get-path))
@@ -2046,7 +2046,7 @@ instead of `browse-url-new-window-flag'."
   (interactive (list (url-domain (url-generic-parse-url (get-path)))))
   (mu
    (write-to-file
-    (snc "uniqnosort"
+    (pen-snc "uniqnosort"
          (concat (sn "cat \"$NOTES/programs/eww/chrome-dom-url-patterns.txt\" | awk 1")
                  (concat "http.*" url)))
     "$NOTES/programs/eww/chrome-dom-url-patterns.txt"))
@@ -2067,8 +2067,8 @@ instead of `browse-url-new-window-flag'."
                          (t (read-string-hist "wayback url: ")))))
                  (list u)))
 
-  (let ((page (snc "sed -n 's=^https*://\\([^/]*\\)\\(.*\\)=\\2=p'" url))
-        (sel (fz (snc (concat (cmd "wayback" url) " | tac"))
+  (let ((page (pen-snc "sed -n 's=^https*://\\([^/]*\\)\\(.*\\)=\\2=p'" url))
+        (sel (fz (pen-snc (concat (cmd "wayback" url) " | tac"))
                  nil nil "wayback result: ")))
 
     (if (sor sel)

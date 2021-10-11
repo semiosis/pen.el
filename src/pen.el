@@ -1340,7 +1340,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (result
                    (if final-analyse
                        ;; I need to do more work on this
-                       (snc final-results-analyser (pen-list2str (mapcar 'pen-onelineify results)))
+                       (pen-snc final-results-analyser (pen-list2str (mapcar 'pen-onelineify results)))
                      (if no-select-result
                          (length results)
                        ;; This may insert immediately, so it's important to force selection

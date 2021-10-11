@@ -28,7 +28,7 @@
              ;; -d (dictionaryapi-define term)
              ;; -g (google-define term)
              ;; -w (my-wiki-summary term)
-             ;; -W (my-wiki-summary (snc (cmd "redirect-wiki-term" term)))
+             ;; -W (my-wiki-summary (pen-snc (cmd "redirect-wiki-term" term)))
              -r (read-string "definition: ")
              -m ""
              -n "")))
@@ -72,7 +72,7 @@
         (if (sor definition)
             (insert
              (pen-qa
-              -p (snc "pen-pretty-paragraph" (concat "    " definition))
+              -p (pen-snc "pen-pretty-paragraph" (concat "    " definition))
               -n definition))
           (insert "    ")))
       (current-buffer))))
