@@ -27,6 +27,7 @@
 (package-install 'transient)
 (package-install 'el-patch)
 (package-install 'lsp-mode)
+(package-install 'lsp-ui)
 (package-install 'iedit)
 (package-install 'ht)
 (package-install 'sx)
