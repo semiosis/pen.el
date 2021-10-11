@@ -265,7 +265,7 @@
   (sps (cmd "eterm" "nlsc" os)))
 
 (defun sps-nlsh (os)
-  (interactive (list (fz (ilist 10 "most popular linux operating systems")
+  (interactive (list (fz (ilist 20 "most popular linux distributions")
                          nil nil "sps-nlsh OS: ")))
   (sps (cmd "eterm" "nlsh" os)))
 
