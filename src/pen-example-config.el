@@ -260,13 +260,13 @@
 
 (define-key pen-map (kbd "H-l") 'pen-run)
 
-(defun sps-nlsc (lang)
+(defun sps-nlsc (os)
   (interactive (list (pen-detect-language-ask)))
-  (sps (cmd "eterm" "nlsc" lang)))
+  (sps (cmd "eterm" "nlsc" os)))
 
-(defun sps-nlsh (lang)
+(defun sps-nlsh (os)
   (interactive (list (ilist "operating systems")))
-  (sps (cmd "eterm" "nlsh" lang)))
+  (sps (cmd "eterm" "nlsh" os)))
 
 (define-key pen-map (kbd "H-^") 'pen-transform)
 (define-key pen-map (kbd "H-p ^") 'pen-transform)
