@@ -17,7 +17,7 @@ if not len(sys.argv) > 1:
 
 os = sys.argv[1]
 
-filename = "/home/shane/source/git/semiosis/prompts/prompts/nlsh-shell-for-given-os.prompt"
+filename = "/home/shane/source/git/semiosis/prompts/prompts/nlsh-2.prompt"
 
 with open(filename) as f:
     data = f.read()
@@ -26,6 +26,8 @@ postprocessor = yaml.load(data)["postprocessor"].strip()
 
 ogprompt = yaml.load(data)["prompt"]
 ogprompt = ogprompt.replace("<1>", os)
+ogprompt = ogprompt.replace("<Operating System>", os)
+ogprompt = ogprompt.replace("<delim>", "###")
 
 # template doesn't need to end in a newline but template+answer must end in
 # newline
