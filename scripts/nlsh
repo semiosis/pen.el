@@ -1,3 +1,49 @@
 #!/bin/bash
+export TTY
 
-rlwrap nlsh.sh "$@"
+sn="$(basename "$0")"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -norl) {
+        norl=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# pf-code-snippet-from-natural-language/2
+# pf-nlsh/2
+
+case "$sn" in
+    nlsh) { prompt=pf-nlsh/2; } ;;
+    nlsc) { prompt=pf-code-snippet-from-natural-language/2; } ;;
+
+    *)
+esac
+
+os_or_lang="$1"
+shift
+
+test -n "$os_or_lang" || {
+    echo "Requires 1 argument: OS or lang" 1>&2
+    exit 2
+}
+
+export USE_CONVERSATION_MODE=y
+
+# rlwrap openai-complete.sh prompts/nlsh-2.prompt "$os_or_lang"
+
+rlmaybe() {
+    if test "$norl" = "y"; then
+        "$@"
+    else
+        rlrap "$@"
+    fi
+}
+
+while IFS=$'\n' read -p "${os_or_lang}: " -r nlcommand; do
+    rlmaybe pena -u "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ".[]"
+done
