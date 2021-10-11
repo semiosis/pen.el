@@ -122,7 +122,7 @@ Reconstruct the entire yaml-ht for a different language."
            ;; TODO Make vars also use pen--htlist-to-alist
            (vars (vector2list (ht-get yaml-ht "vars")))
            (var-slugs (mapcar 'slugify vars))
-           (examples-list (vector2list (ht-get yaml-ht "examples")))
+           (examples (vector2list (ht-get yaml-ht "examples")))
            (from-lang (ht-get yaml-ht "language"))
            (from-lang (or from-lang (read-string-hist ".prompt Origin Language: ")))
            (to-lang (read-string-hist ".prompt Destination Language: "))
@@ -162,13 +162,13 @@ Reconstruct the entire yaml-ht for a different language."
                                  (translate v)))
                  ;; (new-var-slugs (mapcar 'slugify new-vars))
                  (new-examples
-                  (if (vectorp (car examples-list))
+                  (if (vectorp (car examples))
                       (mapcar
                        (lambda (v)
                          (cl-loop for e in (vector2list v) collect
                                (translate e)))
-                       examples-list)
-                    (cl-loop for e in examples-list collect
+                       examples)
+                    (cl-loop for e in examples collect
                           (translate e))))
                  (new-prompt
                   (pen-expand-template-keyvals
@@ -1903,7 +1903,7 @@ Function names are prefixed with pf- for easy searching"
                                            collect
                                            (cdr atp))))
 
-                             (if (hash-table-p (car values))
+                             (if (hash-table-p (car (vector2list (car values))))
                                  (let* ((als (cl-loop
                                               for atp in vars-al
                                               collect
@@ -1934,16 +1934,16 @@ Function names are prefixed with pf- for easy searching"
                           ;; It's just the list of keys
                           (t vars-list)))
 
-                        (examples-list
+                        (examples
                          (let ((explicit-key (vector2list (ht-get yaml-ht "examples"))))
                            (if explicit-key
                                explicit-key
-                             examples-list)))
+                             examples)))
 
                         (examples
-                         (if (vectorp (car examples-list))
-                             (vector2list (car examples-list))
-                           examples-list))
+                         (if (vectorp (car examples))
+                             (vector2list (car examples))
+                           examples))
 
                         (preprocessors
                          (let ((explicit-key (vector2list (ht-get yaml-ht "preprocessors"))))
@@ -2564,6 +2564,13 @@ May use to generate code from comments."
   (let* ((fp "/home/shane/source/git/semiosis/prompts/prompts/append-to-code-3.prompt")
          (yaml-ht (yamlmod-read-file fp))
          (vars (pen--htlist-to-alist (ht-get yaml-ht "vars")))
+
+         (vals
+          (cl-loop
+           for atp in vars
+           collect
+           (car (vector2list (cdr atp)))))
+
          (keys (cl-loop
                 for atp in vars
                 collect
@@ -2591,7 +2598,7 @@ May use to generate code from comments."
            for atp in als
            collect
            (cdr (assoc "preprocessor" atp)))))
-    (etv (pps preprocessors))))
+    (etv (pps vals))))
 
 (require 'pen-borrowed)
 (require 'pen-core)
