@@ -2209,6 +2209,12 @@ But use the results-analyser."
     `(let ((do-pen-batch t))
        ,',@body)))
 
+(defmacro pen-context (n-lines-context &rest body)
+  "This wraps around pen function calls to only allow them n lines of context"
+  `(eval
+    `(let ((n-lines-context n-lines-context))
+       ,',@body)))
+
 (defmacro pen-force-custom (&rest body)
   "This forces various settings depending on customizations"
   (let ((overrides
