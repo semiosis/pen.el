@@ -14,6 +14,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if ! test "$norl" = "y"; then
+    rlwrap "$sn" -norl "$@"
+    exit $?
+fi
+
 # pf-code-snippet-from-natural-language/2
 # pf-nlsh/2
 
@@ -36,14 +41,6 @@ export USE_CONVERSATION_MODE=y
 
 # rlwrap openai-complete.sh prompts/nlsh-2.prompt "$os_or_lang"
 
-rlmaybe() {
-    if test "$norl" = "y"; then
-        "$@"
-    else
-        rlrap "$@"
-    fi
-}
-
 while IFS=$'\n' read -p "${os_or_lang}: " -r nlcommand; do
-    rlmaybe pena -u "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ".[]"
+    pena -u "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ".[]"
 done
