@@ -260,6 +260,14 @@
 
 (define-key pen-map (kbd "H-l") 'pen-run)
 
+(defun sps-nlsc (lang)
+  (interactive (list (pen-detect-language-ask)))
+  (sps (cmd "eterm" "nlsc" lang)))
+
+(defun sps-nlsh (lang)
+  (interactive (list (pen-detect-language-ask)))
+  (sps (cmd "eterm" "nlsh" lang)))
+
 (define-key pen-map (kbd "H-^") 'pen-transform)
 (define-key pen-map (kbd "H-p ^") 'pen-transform)
 (define-key pen-map (kbd "H-p t") 'pen-transform)
@@ -269,6 +277,8 @@
 (define-key pen-map (kbd "H-p e") 'pf-get-an-example-of-the-usage-of-a-function/2)
 (define-key pen-map (kbd "H-p a") 'pf-append-to-code/3)
 (define-key pen-map (kbd "H-p n") 'pen-select-function-from-nl)
+(define-key pen-map (kbd "H-p c") 'sps-nlsc)
+(define-key pen-map (kbd "H-p s") 'sps-nlsh)
 (define-key pen-map (kbd "H-p f") 'pen-autofix-lsp-errors)
 (define-key pen-map (kbd "H-p m") 'pf-given-a-function-name-show-the-import/2)
 
