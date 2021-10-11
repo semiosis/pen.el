@@ -265,7 +265,8 @@
   (sps (cmd "eterm" "nlsc" os)))
 
 (defun sps-nlsh (os)
-  (interactive (list (fz (ilist 10 "operating systems"))))
+  (interactive (list (fz (ilist 10 "linux operating systems")
+                         nil nil "sps-nlsh OS: ")))
   (sps (cmd "eterm" "nlsh" os)))
 
 (define-key pen-map (kbd "H-^") 'pen-transform)
