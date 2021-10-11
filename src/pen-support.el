@@ -695,6 +695,11 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (cons 'progn (flatten-once
                 (cl-loop for i from 1 to n collect body))))
 
+(defun pen-read-string (prompt &optional initial-input history default-value inherit-input-method)
+  (if (pen-var-value-maybe 'do-pen-batch)
+      ""
+    (read-string prompt initial-input history default-value inherit-input-method)))
+
 (defun pen-selected-text (&optional ignore-no-selection keep-properties)
   "Just give me the selected text as a string. If it's empty, then nothing was selected.
 region-active-p does not work for evil selection."
@@ -707,7 +712,7 @@ region-active-p does not work for evil selection."
           (iedit-mode
            (iedit-current-occurrence-string))
           (ignore-no-selection nil)
-          (t (read-string "pen-selected-text: ")))))
+          (t (pen-read-string "pen-selected-text: ")))))
     (if keep-properties
         sel
       (str sel))))
