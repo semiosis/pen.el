@@ -1880,7 +1880,41 @@ Function names are prefixed with pf- for easy searching"
                         (related-prompts (vector2list (ht-get yaml-ht "related-prompts")))
                         (future-titles (vector2list (ht-get yaml-ht "future-titles")))
 
-                        (var-defaults (vector2list (ht-get yaml-ht "var-defaults")))
+                        ;; variables
+                        (vars (ht-get yaml-ht "vars"))
+
+                        ;; used internally
+                        (vars-list (vector2list vars))
+
+                        (var-defaults)
+
+                        (vars
+                         (cond
+                          ;; It's a key-value
+                          ((hash-table-p (car vars-list))
+                           ;; generate vals from the values
+                           ;; and replace vars
+                           (let* ((al (pen--htlist-to-alist vars))
+                                  (keys (cl-loop
+                                         for atp in al
+                                         collect
+                                         (car atp)))
+                                  (values (cl-loop
+                                           for atp in al
+                                           collect
+                                           (cdr atp))))
+                             (setq var-defaults values)
+                             keys))
+                          ;; It's just the list of keys
+                          (t vars-list)))
+
+                        (var-defaults
+                         ;; override what was taken from vars
+                         ;; only if it exists
+                         (let ((explicit-key (vector2list (ht-get yaml-ht "var-defaults"))))
+                           (if explicit-key
+                               explicit-key
+                             var-defaults)))
 
                         (doc (mapconcat
                               'identity
@@ -1929,8 +1963,6 @@ Function names are prefixed with pf- for easy searching"
 
                         (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
 
-                        ;; variables
-                        (vars (vector2list (ht-get yaml-ht "vars")))
                         (var-slugs (mapcar 'slugify vars))
                         (var-syms
                          (let ((ss (mapcar 'intern var-slugs)))
@@ -2475,9 +2507,7 @@ May use to generate code from comments."
 ;; I may need to actually keep track of the inputs I have made.
 ;; I need a database for this.
 
-(defun pen-continue-prompt ()
-
-  )
+(defun pen-continue-prompt ())
 
 (defun pen-load-defs ()
   (interactive)
