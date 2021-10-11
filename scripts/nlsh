@@ -52,7 +52,7 @@ while IFS=$'\n' read -p "${os_or_lang}: " -r nlcommand; do
     export UPDATE
 
     pena "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ".[]"
+    # pena "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ". | map(length)[]"
 
     lastcmd="$nlcommand"
-    # pena -u "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ". | map(. + \"\\n\\n\")"
 done
