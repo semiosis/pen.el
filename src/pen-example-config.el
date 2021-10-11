@@ -265,7 +265,7 @@
   (sps (cmd "eterm" "nlsc" lang)))
 
 (defun sps-nlsh (lang)
-  (interactive (list (pen-detect-language-ask)))
+  (interactive (list (ilist "operating systems")))
   (sps (cmd "eterm" "nlsh" lang)))
 
 (define-key pen-map (kbd "H-^") 'pen-transform)
