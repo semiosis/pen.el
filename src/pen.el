@@ -1768,12 +1768,6 @@ Function names are prefixed with pf- for easy searching"
                         (no-trim-start (or (pen-yaml-test yaml-ht "no-trim-start")
                                            (pen-yaml-test yaml-ht "completion")))
                         (no-trim-end (pen-yaml-test yaml-ht "no-trim-end"))
-                        (examples-list (vector2list (ht-get yaml-ht "examples")))
-                        (examples
-                         (if (vectorp (car examples-list))
-                             (vector2list (car examples-list))
-                           examples-list))
-                        (preprocessors (vector2list (ht-get yaml-ht "preprocessors")))
                         (pipelines (pen--htlist-to-alist (ht-get yaml-ht "pipelines")))
                         (expressions (pen--htlist-to-alist (ht-get yaml-ht "expressions")))
                         (validator (ht-get yaml-ht "validator"))
@@ -1886,27 +1880,76 @@ Function names are prefixed with pf- for easy searching"
                         ;; used internally
                         (vars-list (vector2list vars))
 
+                        ;; Create the variables first
                         (var-defaults)
+                        (examples)
+                        (preprocessors)
 
+                        ;; Initialise the var-related values with
+                        ;; with what is under vars.
                         (vars
                          (cond
                           ;; It's a key-value
                           ((hash-table-p (car vars-list))
                            ;; generate vals from the values
                            ;; and replace vars
-                           (let* ((al (pen--htlist-to-alist vars))
+                           (let* ((vars-al (pen--htlist-to-alist vars))
                                   (keys (cl-loop
-                                         for atp in al
+                                         for atp in vars-al
                                          collect
                                          (car atp)))
                                   (values (cl-loop
-                                           for atp in al
+                                           for atp in vars-al
                                            collect
                                            (cdr atp))))
-                             (setq var-defaults values)
+
+                             (if (hash-table-p (car values))
+                                 (let* ((als (cl-loop
+                                              for atp in vars-al
+                                              collect
+                                              (pen--htlist-to-alist (vector2list (cdr atp)))))
+
+                                        (defaults
+                                          (cl-loop
+                                           for atp in als
+                                           collect
+                                           (cdr (assoc "default" atp))))
+
+                                        (exs
+                                         (cl-loop
+                                          for atp in als
+                                          collect
+                                          (cdr (assoc "example" atp))))
+
+                                        (pps
+                                         (cl-loop
+                                          for atp in als
+                                          collect
+                                          (cdr (assoc "preprocessor" atp)))))
+                                   (setq var-defaults defaults)
+                                   (setq examples exs)
+                                   (setq preprocessors pps))
+                               (setq var-defaults values))
                              keys))
                           ;; It's just the list of keys
                           (t vars-list)))
+
+                        (examples-list
+                         (let ((explicit-key (vector2list (ht-get yaml-ht "examples"))))
+                           (if explicit-key
+                               explicit-key
+                             examples-list)))
+
+                        (examples
+                         (if (vectorp (car examples-list))
+                             (vector2list (car examples-list))
+                           examples-list))
+
+                        (preprocessors
+                         (let ((explicit-key (vector2list (ht-get yaml-ht "preprocessors"))))
+                           (if explicit-key
+                               explicit-key
+                             preprocessors)))
 
                         (var-defaults
                          ;; override what was taken from vars
@@ -2515,6 +2558,40 @@ May use to generate code from comments."
          (yaml-ht (yamlmod-read-file fp))
          (defs (pen--htlist-to-alist (ht-get yaml-ht "defs"))))
     (etv (pps defs))))
+
+(defun pen-load-vars ()
+  (interactive)
+  (let* ((fp "/home/shane/source/git/semiosis/prompts/prompts/append-to-code-3.prompt")
+         (yaml-ht (yamlmod-read-file fp))
+         (vars (pen--htlist-to-alist (ht-get yaml-ht "vars")))
+         (keys (cl-loop
+                for atp in vars
+                collect
+                (car atp)))
+
+         (als (cl-loop
+               for atp in vars
+               collect
+               (pen--htlist-to-alist (vector2list (cdr atp)))))
+
+         (defaults
+           (cl-loop
+            for atp in als
+            collect
+            (cdr (assoc "default" atp))))
+
+         (examples
+          (cl-loop
+           for atp in als
+           collect
+           (cdr (assoc "example" atp))))
+
+         (preprocessors
+          (cl-loop
+           for atp in als
+           collect
+           (cdr (assoc "preprocessor" atp)))))
+    (etv (pps preprocessors))))
 
 (require 'pen-borrowed)
 (require 'pen-core)
