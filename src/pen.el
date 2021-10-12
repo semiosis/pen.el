@@ -2022,8 +2022,9 @@ Function names are prefixed with pf- for easy searching"
                         (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length vars))))
                         (func-sym (intern func-name))
                         (alias-names
-                         (loop for a in aliases
-                               collect (concat pen-prompt-function-prefix (slugify a) "/" (str (length vars)))))
+                         (cl-loop for a in aliases
+                                  collect
+                                  (concat pen-prompt-function-prefix (slugify a) "/" (str (length vars)))))
                         (alias-syms
                          (mapcar 'intern alias-names))
                         (iargs
@@ -2086,9 +2087,10 @@ Function names are prefixed with pf- for easy searching"
                            (if funcsym
                                (progn
                                  (add-to-list 'pen-prompt-functions funcsym)
-                                 (loop for fn in alias-syms do
+                                 (cl-loop for fn in alias-syms do
                                        (progn
-                                         (defalias fn funcsym)
+                                         (if (not (eq fn funcsym))
+                                             (defalias fn funcsym))
                                          (add-to-list 'pen-prompt-aliases fn)))
                                  (if interpreter (add-to-list 'pen-prompt-interpreter-functions funcsym))
                                  (if filter (add-to-list 'pen-prompt-filter-functions funcsym))

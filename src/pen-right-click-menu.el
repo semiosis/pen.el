@@ -234,10 +234,10 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
    (let* ((sites
            (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
      (new-buffer-from-string sites nil 'text-mode)
-     (comment (loop for pg in sites do (new-buffer-from-string pg nil 'text-mode)))
+     (comment (cl-loop for pg in sites do (new-buffer-from-string pg nil 'text-mode)))
      (comment
       (if (url-is-404 url)
-          (loop for pg in
+          (cl-loop for pg in
                 (pf-imagine-a-website-from-a-url/1 url :no-select-result t)
                 do (etv pg))
         (eww url))))))
