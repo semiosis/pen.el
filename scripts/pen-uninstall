@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker image rm semiosis/pen.el:latest
