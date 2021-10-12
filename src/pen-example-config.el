@@ -276,6 +276,10 @@
 
 (define-key pen-map (kbd "H-` t") 'pen-transform-code)
 (define-key pen-map (kbd "H-` g p") 'pf-generate-perl-command/1)
+(define-key pen-map (kbd "H-` g r") 'pf-gpt-j-generate-regex/2)
+(define-key pen-map (kbd "H-` g g") 'pf-generate-program-from-nl/3)
+
+(define-key pen-map (kbd "H-# t n") 'pf-translate-math-into-natural-language/1)
 
 (define-key pen-map (kbd "H-\" t") 'pen-transform-prose)
 ;; g is for generation
