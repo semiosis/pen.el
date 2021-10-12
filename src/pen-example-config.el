@@ -274,6 +274,9 @@
 ;; code H-`
 ;; prose H-"
 
+(define-key pen-map (kbd "H-` t") 'pen-transform)
+(define-key pen-map (kbd "H-\" t") 'pen-transform)
+
 (define-key pen-map (kbd "H-^") 'pen-transform)
 (define-key pen-map (kbd "H-p ^") 'pen-transform)
 (define-key pen-map (kbd "H-p t") 'pen-transform)
