@@ -275,6 +275,8 @@
 ;; prose H-"
 
 (define-key pen-map (kbd "H-` t") 'pen-transform-code)
+(define-key pen-map (kbd "H-` g p") 'pf-generate-perl-command/1)
+
 (define-key pen-map (kbd "H-\" t") 'pen-transform-prose)
 ;; g is for generation
 (define-key pen-map (kbd "H-\" g b") 'pf-write-a-blog-post/2)
