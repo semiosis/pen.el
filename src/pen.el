@@ -587,6 +587,7 @@ Reconstruct the entire yaml-ht for a different language."
                            ;; I also want to encode newlines into <pen-newline> and <pen-dnl>
                            ;; But only for delim
                            (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t)
+                           (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (snc "s/.$//" final-delimiter) t))) t)
                            (pen-expand-template-keyvals it var-keyvals-slugged t)
                            (pen-expand-template-keyvals it var-keyvals t)
                            (pen-expand-template-keyvals it final-defs t)
