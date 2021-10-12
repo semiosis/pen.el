@@ -242,6 +242,7 @@
 (define-key pen-map (kbd "<S-f9> Y") 'pen-add-to-glossary)
 (define-key pen-map (kbd "<S-f9> G") 'pen-define-general-knowledge)
 (define-key pen-map (kbd "<S-f9> L") 'pen-define-detectlang)
+(define-key pen-map (kbd "<S-f9> T") 'pen-define-word-for-topic)
 
 (define-key pen-map (kbd "<f12>") nil)
 (define-key pen-map (kbd "<f11>") nil)
@@ -249,6 +250,7 @@
 (define-key pen-map (kbd "<S-f12>") 'pen-add-to-glossary)
 (define-key pen-map (kbd "<S-f11>") 'pen-define-general-knowledge)
 (define-key pen-map (kbd "<S-f10>") 'pen-define-detectlang)
+(define-key pen-map (kbd "<S-f8>") 'pen-define-detectlang)
 
 (defset pen-fz-commands '(pen-lg-display-page
                           pen-browse-url-for-passage

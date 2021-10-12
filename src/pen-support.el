@@ -1095,6 +1095,11 @@ when s is a string, set the clipboard to s"
   (interactive (list (pen-thing-at-point-ask "word" t)))
   (pen-add-to-glossary term nil nil (detect-language)))
 
+(defun pen-define-word-for-topic (term topic)
+  (interactive (list (pen-thing-at-point-ask "word" t)
+                     (read-string-hist "pen define word (topic): ")))
+  (pen-add-to-glossary term nil nil topic))
+
 (defun pen-extract-keywords ()
   (interactive)
 
