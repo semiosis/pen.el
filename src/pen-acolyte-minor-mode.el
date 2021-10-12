@@ -43,7 +43,7 @@
 (define-key pen-acolyte-minor-mode-map (kbd "M-s") 'save-buffer)
 (define-key pen-acolyte-minor-mode-map (kbd "M-L") 'pen-show-last-prompt)
 (define-key pen-acolyte-minor-mode-map (kbd "M-r") 'pen-run-prompt-function)
-(define-key pen-acolyte-minor-mode-map (kbd "M-t") 'pen-run-prompt-alias)
+(define-key pen-acolyte-minor-mode-map (kbd "M-R") 'pen-run-prompt-alias)
 ;; (define-key pen-acolyte-minor-mode-map (kbd "M-1") 'pen-company-filetype-word)
 ;; (define-key pen-acolyte-minor-mode-map (kbd "M-2") 'pen-company-filetype-words)
 ;; (define-key pen-acolyte-minor-mode-map (kbd "M-3") 'pen-company-filetype-line)
