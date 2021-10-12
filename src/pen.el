@@ -2087,7 +2087,9 @@ Function names are prefixed with pf- for easy searching"
                                (progn
                                  (add-to-list 'pen-prompt-functions funcsym)
                                  (loop for fn in alias-syms do
-                                       (add-to-list 'pen-prompt-aliases fn))
+                                       (progn
+                                         (defalias fn funcsym)
+                                         (add-to-list 'pen-prompt-aliases fn)))
                                  (if interpreter (add-to-list 'pen-prompt-interpreter-functions funcsym))
                                  (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
                                  (if results-analyser (add-to-list 'pen-prompt-analyser-functions funcsym))
