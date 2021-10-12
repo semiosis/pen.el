@@ -69,6 +69,7 @@
 
 (pen-define-key pen-map (kbd "H-TAB j") 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
 (pen-define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
+(pen-define-key pen-map (kbd "H-TAB R") 'pen-run-prompt-alias)
 ;; (define-key pen-map (kbd "H-1") 'pen-company-filetype-word)
 ;; (define-key pen-map (kbd "H-2") 'pen-company-filetype-words)
 ;; (define-key pen-map (kbd "H-3") 'pen-company-filetype-line)
