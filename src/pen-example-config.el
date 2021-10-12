@@ -270,6 +270,10 @@
                          nil nil "sps-nlsh OS: ")))
   (sps (cmd "eterm" "nlsh" os)))
 
+
+;; code H-`
+;; prose H-"
+
 (define-key pen-map (kbd "H-^") 'pen-transform)
 (define-key pen-map (kbd "H-p ^") 'pen-transform)
 (define-key pen-map (kbd "H-p t") 'pen-transform)
