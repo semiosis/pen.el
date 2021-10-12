@@ -2319,6 +2319,15 @@ But use the results-analyser."
            (n-completions 1))
        ,',@body)))
 
+(defmacro pen-single-batch (&rest body)
+  ""
+  `(eval
+    `(let ((do-pen-batch t)
+           (pen-single-generation-b t)
+           (n-collate 1)
+           (n-completions 1))
+       ,',@body)))
+
 (defmacro pen-filter (&rest body)
   ""
   `(eval
