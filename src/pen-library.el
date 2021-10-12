@@ -266,6 +266,10 @@
            (call-interactively 'pf-transform-code/3))))))))
 
 (defun pen-transform ()
+  ;; pen-mode-prose-or-code-p
+  (call-interactively 'pen-transform-code))
+
+(defun pen-transform-code ()
   (interactive)
   ;; TODO Make it so if this function is cancelled, the cursor is returned to the original place.
   ;; That is because this function creates a region selection if nothing is selected.
@@ -282,6 +286,26 @@
                        (pen-surrounding-text window-size t))))
         (replace-region
          (pf-transform-code/3 context nil nil)
+         ;; (call-interactively 'pf-transform-code/3)
+         )))))
+
+(defun pen-transform-prose ()
+  (interactive)
+  ;; TODO Make it so if this function is cancelled, the cursor is returned to the original place.
+  ;; That is because this function creates a region selection if nothing is selected.
+
+  ;; A current-prefix-arg of 1 seems to be default, so only use it if it's not 1
+  (let ((window-size (or (and (not (equal 1 (prefix-numeric-value current-prefix-arg)))
+                              (prefix-numeric-value current-prefix-arg))
+                         10)))
+    (let ((current-prefix-arg nil))
+      ;; TODO detect prose/code
+      ;; TODO Make it select the surrounding text so it can be transformed
+      (let ((context (if mark-active
+                         (pen-selected-text)
+                       (pen-surrounding-text window-size t))))
+        (replace-region
+         (pf-transform-prose/2 context nil nil)
          ;; (call-interactively 'pf-transform-code/3)
          )))))
 
