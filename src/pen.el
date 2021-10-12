@@ -224,6 +224,7 @@ Reconstruct the entire yaml-ht for a different language."
            ;; (string-replace ";" "<pen-semicolon>")
            (string-replace "\"" "<pen-doublequote>")
            (string-replace ":" "<pen-colon>")
+           (string-replace "-" "<pen-dash>")
            (string-replace "'" "<pen-singlequote>")
            (string-replace "`" "<pen-backtick>")
            (string-replace "!" "<pen-bang>")
