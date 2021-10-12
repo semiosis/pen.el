@@ -305,7 +305,7 @@
                          (pen-selected-text)
                        (pen-surrounding-text window-size t))))
         (replace-region
-         (pf-transform-prose/2 context nil nil)
+         (pf-transform-prose/2 context)
          ;; (call-interactively 'pf-transform-code/3)
          )))))
 
