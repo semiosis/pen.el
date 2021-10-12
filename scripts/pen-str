@@ -281,6 +281,11 @@ case "$f" in
     }
     ;;
 
+    remove-leading-and-trailing-newlines) {
+        sed -e :a -e '/./,$!d;/^\n*$/{$d;N;};/\n$/ba'
+    }
+    ;;
+
     shell-commentify) {
         pen-str tidy-prose-input | sed "s/\\.\$//" | pen-wrap 50 | sed "s/^/# /"
     }
