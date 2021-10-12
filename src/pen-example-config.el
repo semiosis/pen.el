@@ -250,7 +250,7 @@
 (define-key pen-map (kbd "<S-f12>") 'pen-add-to-glossary)
 (define-key pen-map (kbd "<S-f11>") 'pen-define-general-knowledge)
 (define-key pen-map (kbd "<S-f10>") 'pen-define-detectlang)
-(define-key pen-map (kbd "<S-f8>") 'pen-define-detectlang)
+(define-key pen-map (kbd "<S-f8>") 'pen-define-word-for-topic)
 
 (defset pen-fz-commands '(pen-lg-display-page
                           pen-browse-url-for-passage
