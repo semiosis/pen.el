@@ -2,6 +2,8 @@
 
 # Can probably take back out the semicolon
 # -e "s/<pen-semicolon>/;/g" \
+# Can't encode dashes because it breaks slugs
+# -e "s/-/<pen-dash>/g" \
 
 # cat
 sed -e "s/\\\\n/<pen-notnewline>/g" \
