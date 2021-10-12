@@ -198,3 +198,6 @@ go get mvdan.cc/xurls/cmd/xurls
 # ~/go/bin/efm-langserver
 
 apt install bc
+
+curl -L http://cpanmin.us | perl - --sudo App::cpanminus
+cpanm --force String::Escape
