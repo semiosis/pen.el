@@ -11,7 +11,10 @@
                  :openai-last-output (pen-snc (pen-cmd "cat" "/tmp/openai-temp.txt"))
                  :hf-last-output (pen-snc (pen-cmd "cat" "/tmp/hf-temp.txt"))
                  :aix-last-output (pen-snc (pen-cmd "cat" "/tmp/aix-temp.txt"))
-                 :ai21-last-output (pen-snc (pen-cmd "cat" "/tmp/ai21-temp.txt")))))
+
+                 ;; This is usually so long it causes problems
+                 ;; :ai21-last-output (pen-snc (pen-cmd "cat" "/tmp/ai21-temp.txt"))
+                 )))
     (find-file (pen-tf "pen context" (plist2yaml plist) "yaml"))))
 
 (defun pen-diagnostics-test-key ()
