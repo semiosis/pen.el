@@ -5,6 +5,30 @@
 
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
+test_deps() {
+    (
+    set -xv
+    command -v realpath && \
+        command -v basename
+    ) 2>&1
+}
+
+ensure_dependencies() {
+    ds="$(test_deps)"
+    code="$?"
+    if ! test "$code" = 0; then
+        echo "Please ensure dependencies are installed"
+
+        for s in realpath basename; do
+            echo "https://command-not-found.com/$s"
+        done
+        
+        exit "$?"
+    fi
+}
+
+ensure_dependencies
+
 yn () {
     y_chars="Yy"
     n_chars="Nn"
@@ -106,7 +130,7 @@ else
 fi
 
 sn="$(basename "$0")"
-bn="$(basename "$0")"
+bn="$sn"
 rp="$(realpath "$0")"
 
 PEN_USE_GUI=y
