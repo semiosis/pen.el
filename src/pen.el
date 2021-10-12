@@ -64,6 +64,7 @@
 (defset pen-editing-functions nil)
 
 (defset pen-prompt-functions nil)
+(defset pen-prompt-aliases nil)
 (defset pen-prompt-interpreter-functions nil)
 (defset pen-prompt-filter-functions nil)
 (defset pen-prompt-analyser-functions nil)
@@ -123,6 +124,7 @@ Reconstruct the entire yaml-ht for a different language."
            (vars (vector2list (ht-get yaml-ht "vars")))
            (var-slugs (mapcar 'slugify vars))
            (examples (vector2list (ht-get yaml-ht "examples")))
+           (aliases (vector2list (ht-get yaml-ht "aliases")))
            (from-lang (ht-get yaml-ht "language"))
            (from-lang (or from-lang (read-string-hist ".prompt Origin Language: ")))
            (to-lang (read-string-hist ".prompt Destination Language: "))
@@ -1649,6 +1651,7 @@ Function names are prefixed with pf- for easy searching"
   (interactive)
 
   (setq pen-prompt-functions nil)
+  (setq pen-prompt-aliases nil)
   (setq pen-prompts-failed nil)
   (setq pen-prompt-filter-functions nil)
   (setq pen-prompt-analyser-functions nil)
@@ -1708,6 +1711,8 @@ Function names are prefixed with pf- for easy searching"
                         (title (sor title
                                     task))
                         (title-slug (slugify title))
+
+                        (aliases (vector2list (ht-get yaml-ht "aliases")))
 
                         ;; lm-complete
                         (cache (pen-yaml-test yaml-ht "cache"))
@@ -2016,6 +2021,11 @@ Function names are prefixed with pf- for easy searching"
                            ss))
                         (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length vars))))
                         (func-sym (intern func-name))
+                        (alias-names
+                         (loop for a in aliases
+                               collect (concat pen-prompt-function-prefix (slugify a) "/" (str (length vars)))))
+                        (alias-syms
+                         (mapcar 'intern alias-names))
                         (iargs
                          (let ((iteration 0))
                            (cl-loop
@@ -2076,6 +2086,8 @@ Function names are prefixed with pf- for easy searching"
                            (if funcsym
                                (progn
                                  (add-to-list 'pen-prompt-functions funcsym)
+                                 (loop for fn in alias-syms do
+                                       (add-to-list 'pen-prompt-aliases fn))
                                  (if interpreter (add-to-list 'pen-prompt-interpreter-functions funcsym))
                                  (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
                                  (if results-analyser (add-to-list 'pen-prompt-analyser-functions funcsym))
@@ -2138,6 +2150,14 @@ But use the results-analyser."
   (let* ((pen-sh-update
           (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
          (f (fz pen-prompt-functions nil nil "pen run: ")))
+    (if f
+        (call-interactively (intern f)))))
+
+(defun pen-run-prompt-alias ()
+  (interactive)
+  (let* ((pen-sh-update
+          (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4)))
+         (f (fz pen-prompt-aliases nil nil "pen run (aliases): ")))
     (if f
         (call-interactively (intern f)))))
 
