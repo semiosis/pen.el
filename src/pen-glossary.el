@@ -96,7 +96,7 @@
               (setq NLG t))))
 
     (let* ((cb (current-buffer))
-           (all-glossaries-fp (pen-mnm (pen-list2str (pen-pen-list-glossary-files))))
+           (all-glossaries-fp (pen-mnm (pen-list2str (pen-list-glossary-files))))
            (fp
             (if (pen-is-glossary-file)
                 (buffer-file-name)
