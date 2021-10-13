@@ -1,9 +1,12 @@
 * <2021-10-13 Wed> We need to be able to share the output of prompts for the sake of not divulging private information
-For example, listing the real contents of our current directory.
+For example, listing the real contents of our
+current directory.
 
-OK, so we want FAKE inputs a lot of the time, to avoido divulging information.
+OK, so we want FAKE inputs a lot of the time,
+to avoido divulging information.
 
-Therefore, the prompt format should allow you to specify fake inputs.
+Therefore, the prompt format should allow you
+to specify fake inputs.
 
 * Old
 ** Deployment
