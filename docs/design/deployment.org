@@ -1,2 +1,0 @@
-* Use cask to create the emacs package
-https://github.com/cask/cask
