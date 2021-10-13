@@ -978,6 +978,11 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'top-k)
                              ,top-k))))
 
+                  (final-action
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'action)
+                             ,action))))
+
                   (final-postprocessor
                    (expand-template
                     (str (or (pen-var-value-maybe 'postprocessor)
@@ -1385,6 +1390,8 @@ Reconstruct the entire yaml-ht for a different language."
                  results
                (if is-interactive
                    (cond
+                    ((sor action)
+                     (apply (intern action) result))
                     ((or final-info
                          final-new-document
                          (>= (prefix-numeric-value current-prefix-arg) 4))
@@ -1808,6 +1815,7 @@ Function names are prefixed with pf- for easy searching"
                         (expressions (pen--htlist-to-alist (ht-get yaml-ht "expressions")))
                         (validator (ht-get yaml-ht "validator"))
                         (prompt-filter (ht-get yaml-ht "prompt-filter"))
+                        (action (ht-get yaml-ht "action"))
                         (postprocessor (ht-get yaml-ht "postprocessor"))
                         (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
                         (n-collate (or (ht-get yaml-ht "n-collate")
