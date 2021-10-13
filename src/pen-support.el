@@ -1240,7 +1240,7 @@ Out
   (interactive)
   (cond
    (buffer-read-only
-    (etv s))
+    (pen-etv s))
    ((derived-mode-p 'term-mode)
     (term-send-raw-string s))
    ((derived-mode-p 'vterm-mode)
