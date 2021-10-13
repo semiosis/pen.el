@@ -553,12 +553,15 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-find-file (path)
   "Create directories and edit file"
-  (pen-snc "mkdir -p" (cmd (f-dirname path)))
+  (pen-snc (cmd "mkdir" "-p" (f-dirname path)))
   (if (re-match-p "/$" path)
       (progn
-        (pen-snc "mkdir -p" (cmd path))
+        (pen-snc (cmd "mkdir" "-p" path))
+        (f-touch path)
         (find-file path))
-    (find-file path)))
+    (progn
+      (f-touch path)
+      (find-file path))))
 
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.
@@ -1430,7 +1433,8 @@ Reconstruct the entire yaml-ht for a different language."
                        (error "pen filter returned empty string")))
                     ;; Insertion is for prompts for which a new buffer is not necessary
                     ((or ,insertion
-                         ,completion)
+                         ,completion
+                         final-is-completion)
                      (pen-complete-insert (ink-propertise result)))
                     (t
                      (pen-etv (ink-propertise result))))

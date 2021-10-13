@@ -1240,7 +1240,8 @@ Out
   (interactive)
   (cond
    (buffer-read-only
-    (pen-etv s))
+    (pen-etv s)
+    (message "buffer read only, placing in temporary buffer"))
    ((derived-mode-p 'term-mode)
     (term-send-raw-string s))
    ((derived-mode-p 'vterm-mode)
