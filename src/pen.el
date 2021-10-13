@@ -551,6 +551,15 @@ Reconstruct the entire yaml-ht for a different language."
 (defmacro pen-n-words->n-tokens/m (n-words)
   `(pen-n-words->n-tokens ,n-words (pen-num token-char-length)))
 
+(defun pen-find-file (path)
+  "Create directories and edit file"
+  (pen-snc "mkdir -p" (cmd (f-dirname path)))
+  (if (re-match-p "/$" path)
+      (progn
+        (pen-snc "mkdir -p" (cmd path))
+        (find-file path))
+    (find-file path)))
+
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.
 ;; Expected variables:
@@ -983,6 +992,11 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'action)
                              ,action))))
 
+                  (final-return-postprocessor
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'return-postprocessor)
+                             ,return-postprocessor))))
+
                   (final-postprocessor
                    (expand-template
                     (str (or (pen-var-value-maybe 'postprocessor)
@@ -1382,7 +1396,14 @@ Reconstruct the entire yaml-ht for a different language."
                      (if no-select-result
                          (length results)
                        ;; This may insert immediately, so it's important to force selection
-                       (cl-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match)))))
+                       (cl-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match))))
+
+                  (result
+                   (if (and final-return-postprocessor (sor final-return-postprocessor))
+                       (if (string-match "^pf-" final-return-postprocessor)
+                           (eval `(car (pen-one (apply (str2sym ,final-return-postprocessor) (list ,result)))))
+                         (pen-sn final-return-postprocessor result))
+                     result)))
 
              ;; (tv (pps final-stop-sequences))
              ;; (tv "Hi")
@@ -1390,8 +1411,10 @@ Reconstruct the entire yaml-ht for a different language."
                  results
                (if is-interactive
                    (cond
-                    ((sor action)
-                     (apply (intern action) result))
+                    ((sor final-action)
+                     (progn
+                       (apply (intern final-action) (list result))
+                       result))
                     ((or final-info
                          final-new-document
                          (>= (prefix-numeric-value current-prefix-arg) 4))
@@ -1774,6 +1797,8 @@ Function names are prefixed with pf- for easy searching"
                         (hover (ht-get yaml-ht "hover"))
                         (formatter (ht-get yaml-ht "formatter"))
                         (linter (ht-get yaml-ht "linter"))
+                        ;; This is both a code action and the default action
+                        ;; sp +/"^action: pen-find-file" "$HOME/source/git/semiosis/prompts/prompts/recurse-directory-4.prompt"
                         (action (ht-get yaml-ht "action"))
 
                         (new-document (ht-get yaml-ht "new-document"))
@@ -1815,7 +1840,7 @@ Function names are prefixed with pf- for easy searching"
                         (expressions (pen--htlist-to-alist (ht-get yaml-ht "expressions")))
                         (validator (ht-get yaml-ht "validator"))
                         (prompt-filter (ht-get yaml-ht "prompt-filter"))
-                        (action (ht-get yaml-ht "action"))
+                        (return-postprocessor (ht-get yaml-ht "return-postprocessor"))
                         (postprocessor (ht-get yaml-ht "postprocessor"))
                         (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
                         (n-collate (or (ht-get yaml-ht "n-collate")
