@@ -1239,6 +1239,8 @@ Out
 (defun pen-insert (s)
   (interactive)
   (cond
+   (buffer-read-only
+    (etv s))
    ((derived-mode-p 'term-mode)
     (term-send-raw-string s))
    ((derived-mode-p 'vterm-mode)
