@@ -2519,7 +2519,7 @@ But use the results-analyser."
 (defun pen-complete-function (preceding-text &rest args)
   ;; (pf-generic-completion-50-tokens/1 preceding-text)
 
-  ;; TODO Ensure privacy
+  ;; TODO Ensure privacy - pen-avoid-divulging
   (if (string-empty-p (s-chompall (buffer-string)))
       (eval `(pf-generate-the-contents-of-a-new-file/3 preceding-text nil nil ,@args))
     (if (and (or (derived-mode-p 'prog-mode)

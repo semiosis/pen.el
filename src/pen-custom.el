@@ -5,6 +5,13 @@
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defcustom pen-avoid-divulging t
+  "Avoid divulging information"
+  :type 'boolean
+  :group 'pen
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
 (defcustom pen-debug nil
   "When debug is on, try is disabled, and all errors throw an exception"
   :type 'boolean
