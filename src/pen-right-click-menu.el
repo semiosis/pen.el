@@ -266,6 +266,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 ;; TODO Generate the right-click menu from the prompt data
 ;; - The titles should match
 ;; - I need to figure out organisation
+;; - Separate into prose and code, or make tags for categories
 
 (def-right-click-menu rcm-pen
   `(("Cancel" :call identity-command)
