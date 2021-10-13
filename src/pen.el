@@ -997,6 +997,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'is-completion)
                        ,is-completion))
 
+                  (final-force-stop-sequence
+                   (or (pen-var-value-maybe 'force-stop-sequence)
+                       ,force-stop-sequence))
+
                   (final-engine-strips-gen-starting-whitespace
                    (or (pen-var-value-maybe 'engine-strips-gen-starting-whitespace)
                        ,engine-strips-gen-starting-whitespace))
@@ -1023,8 +1027,10 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-stop-sequence
                    (expand-template
-                    (str (or (pen-var-value-maybe 'stop-sequence)
-                             ,stop-sequence))))
+                    (str (or
+                          final-force-stop-sequence
+                          (pen-var-value-maybe 'stop-sequence)
+                          ,stop-sequence))))
 
                   (final-translator
                    (expand-template
@@ -1842,6 +1848,8 @@ Function names are prefixed with pf- for easy searching"
                         ;; engine-min-tokens and engine-max-tokens include the prompt
                         (engine-min-tokens (ht-get yaml-ht "engine-min-tokens"))
                         (engine-max-tokens (ht-get yaml-ht "engine-max-tokens"))
+
+                        (force-stop-sequence (ht-get yaml-ht "force-stop-sequence"))
 
                         (top-p (ht-get yaml-ht "top-p"))
                         (top-k (ht-get yaml-ht "top-k"))
