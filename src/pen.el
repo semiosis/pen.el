@@ -2510,18 +2510,22 @@ But use the results-analyser."
 
 (defun pen-complete-function (preceding-text &rest args)
   ;; (pf-generic-completion-50-tokens/1 preceding-text)
-  (if (and (or (derived-mode-p 'prog-mode)
-               (derived-mode-p 'term-mode))
-           (not (string-equal (buffer-name) "*scratch*")))
-      ;; Can't put ink-propertise here
-      (eval `(let ((engine "OpenAI Codex"))
-               ;; (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-surrounding-proceeding-text) ,@args)
-               (if (pen-var-value-maybe 'no-utilise-code)
-                   (pf-generic-file-type-completion-nocode/2 (pen-detect-language) preceding-text ,@args)
-                 (if pen-cost-efficient
-                     (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)
-                   (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-text)) ,@args)))))
-    (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))
+
+  ;; TODO Ensure privacy
+  (if (string-empty-p (s-chompall (buffer-string)))
+      (eval `(pf-generate-the-contents-of-a-new-file/3 preceding-text nil nil ,@args))
+    (if (and (or (derived-mode-p 'prog-mode)
+                 (derived-mode-p 'term-mode))
+             (not (string-equal (buffer-name) "*scratch*")))
+        ;; Can't put ink-propertise here
+        (eval `(let ((engine "OpenAI Codex"))
+                 ;; (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-surrounding-proceeding-text) ,@args)
+                 (if (pen-var-value-maybe 'no-utilise-code)
+                     (pf-generic-file-type-completion-nocode/2 (pen-detect-language) preceding-text ,@args)
+                   (if pen-cost-efficient
+                       (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)
+                     (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-text)) ,@args)))))
+      (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args)))))
 
 (defun pen-complete-insert (s)
   "This is a completely useless function ,currently"
