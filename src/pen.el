@@ -1015,6 +1015,14 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'postpostprocessor)
                              ,postpostprocessor))))
 
+                  (final-insertion
+                   (or (pen-var-value-maybe 'insertion)
+                       ,insertion))
+
+                  (final-completion
+                   (or (pen-var-value-maybe 'completion)
+                       ,completion))
+
                   (final-is-completion
                    (or (pen-var-value-maybe 'is-completion)
                        ,is-completion))
@@ -1431,10 +1439,17 @@ Reconstruct the entire yaml-ht for a different language."
                      (if (sor result)
                          (pen-replace-region (ink-propertise result))
                        (error "pen filter returned empty string")))
+
+                    ;; These are the overrides
                     ;; Insertion is for prompts for which a new buffer is not necessary
                     ((or ,insertion
                          ,completion
                          final-is-completion)
+                     (pen-complete-insert (ink-propertise result)))
+
+                    ;; These are the defaults
+                    ((or final-insertion
+                         final-completion)
                      (pen-complete-insert (ink-propertise result)))
                     (t
                      (pen-etv (ink-propertise result))))
@@ -2558,7 +2573,7 @@ But use the results-analyser."
 
   ;; TODO Ensure privacy - pen-avoid-divulging
   (if (string-empty-p (s-chompall (buffer-string)))
-      (eval `(pf-generate-the-contents-of-a-new-file/3 preceding-text nil nil ,@args))
+      (eval `(pf-generate-the-contents-of-a-new-file/5 preceding-text nil nil nil nil ,@args))
     (if (and (or (derived-mode-p 'prog-mode)
                  (derived-mode-p 'term-mode))
              (not (string-equal (buffer-name) "*scratch*")))
