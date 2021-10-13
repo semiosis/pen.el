@@ -337,7 +337,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     ("explain /1" :call pf-explain-some-code/1)
     ("explain (given the language) /2" :call pf-explain-some-code/2)
     ("Why is this code needed?" :call pf-explain-why-this-code-is-needed/2)
-    ("explain a shell command" :call pf-explain-a-shell-command/1)))
+    ("explain a shell command" :call pf-explain-a-shell-command/1)
+    ("explain a file" :call pf-explain-a-file/4)))
 
 (def-right-click-menu rcm-ink
   '(("Cancel" :call identity-command)
