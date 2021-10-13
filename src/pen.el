@@ -265,7 +265,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-boxify (s)
   "This is useful to force spelling in prompts"
-  (snc "sed 's/./\\[\\U&\\]/g'" s))
+  (pen-snc "sed 's/./\\[\\U&\\]/g'" s))
 
 (defun pen-expand-template (s vals &optional encode)
   "expand template from list"
