@@ -1241,13 +1241,17 @@ Out
   (cond
    (buffer-read-only
     (pen-etv s)
+    (call-interactively 'mark-whole-buffer)
     (message "buffer read only, placing in temporary buffer"))
    ((derived-mode-p 'term-mode)
     (term-send-raw-string s))
    ((derived-mode-p 'vterm-mode)
     (vterm-insert s))
    (t
-    (insert s))))
+    (let ((p (point)))
+      (insert s)
+      (set-mark p)
+      (activate-mark)))))
 
 (defun pp-oneline (l)
   (chomp (replace-regexp-in-string "\n +" " " (pp l))))

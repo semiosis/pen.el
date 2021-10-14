@@ -1489,7 +1489,6 @@ Reconstruct the entire yaml-ht for a different language."
                        result))
                     ((or final-info
                          final-new-document
-                         ;; I think this is because H-u also sets C-u
                          (>= (prefix-numeric-value current-prefix-arg) 4))
                      (pen-log "pen new doc")
                      (pen-etv (ink-decode (ink-propertise result))))
