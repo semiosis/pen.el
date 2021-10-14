@@ -279,6 +279,16 @@ widget.  If FILTER is nil, ACTION is always valid.")
 
 (defun pen-load-config ()
   (interactive)
+
+  (setq pen-debug t)
+  (setq pen-force-ai21 nil)
+  (setq pen-force-aix nil)
+  (setq pen-force-engine "OpenAI Codex")
+  (setq pen-force-gpt2 nil)
+  (setq pen-force-openai nil)
+  (setq pen-force-openai-codex nil)
+  (setq pen-force-temperature 0.3)
+
   (let* ((path (f-join penconfdir "pen.yaml"))
          (yaml-ht (yamlmod-read-file path)))
     (setq pen-debug (pen-yaml-test yaml-ht "debug"))
