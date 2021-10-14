@@ -212,7 +212,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-list-inserters ()
   (interactive)
-  (let ((funs (-filter (lambda (y) (pen-yaml-test y "completion"))
+  (let ((funs (-filter (lambda (y) (pen-yaml-test y "insertion"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
         (pen-etv (pps (pen--htlist-to-alist funs)))
@@ -223,7 +223,7 @@ Reconstruct the entire yaml-ht for a different language."
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "interpreter"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
-        (pen-etv (pps funs))
+        (pen-etv (pps (pen--htlist-to-alist funs)))
       funs)))
 
 (defun pen-encode-string (s &optional newlines)
