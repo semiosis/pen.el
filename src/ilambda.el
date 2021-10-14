@@ -288,18 +288,49 @@
 (defun test-itest-1 ()
   (interactive)
   (etv
-   (itest '(lambda (l) '(= 5 (length l)))
+   (itest '(lambda (l) (= 5 (length l)))
           '(a b c d))))
 
 (defun test-itest-2 ()
   (interactive)
   (etv
-   (itest/m (lambda (l) '(= 4 (length l)))
+   (itest/m (lambda (l) (= 4 (length l)))
             '(a b c d))))
 
-;; TODO Have
+(defun test-itest-3 ()
+  (interactive)
+  (etv
+   (itest/m (lambda (thing) (is-the-same-person-p "Moses also known as Moshe Rabbenu" thing))
+            "Semerkhet, the Egyptian king who ruled during the First Dynasty")))
 
-(defun iequals (predicate value)
-  (eval `(itest/m ,predicate ,value)))
+(defun test-itest-4 ()
+  (interactive)
+  (etv
+   (itest/m (lambda (thing)
+              (= "An Egyptian king who ruled during the First Dynasty"
+                 thing))
+            "Semerkhet")))
+
+(defun test-itest-4 ()
+  (interactive)
+  (etv
+   (itest/m (lambda (thing) (same-person "Moses" thing))
+            "Joseph")))
+
+(defmacro iequal/m (predicate value)
+  `(ieval
+    `(my/test ,',value)
+    `(defun my/test (x)
+       (apply ,',predicate
+              x))))
+
+(defun iequal (a b)
+  (eval `(iequal/m ,predicate ,value)))
+
+(defun test-equals-1 ()
+  (interactive)
+  (etv
+   (iequal '(lambda (l) '(= 5 (length l)))
+            '(a b c d))))
 
 (provide 'ilambda)
