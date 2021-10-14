@@ -2170,6 +2170,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if lm-command (concat "\nlm-command: " lm-command))
                                 (if model (concat "\nmodel: " model))
                                 (if n-completions (concat "\nn-completions: " (str n-completions)))
+                                (if engine-max-n-completions (concat "\nengine-max-n-completions: " (str engine-max-n-completions)))
                                 (if n-collate (concat "\nn-collate: " (str n-collate)))
                                 (if n-target (concat "\nn-target: " (str n-target)))
                                 (if min-tokens (concat "\nmin-tokens: " (str min-tokens)))
