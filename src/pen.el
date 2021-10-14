@@ -1113,7 +1113,9 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-prompt
                    (if (sor final-inject-gen-start)
-                       (concat final-prompt final-inject-gen-start)
+                       (if (re-match-p "<:pp>" final-prompt)
+                           (concat final-prompt final-inject-gen-start)
+                         (concat final-prompt "<:pp>" final-inject-gen-start))
                      final-prompt))
 
                   (prompt-end-pos (or (byte-string-search "<:pp>" final-prompt)
@@ -1344,7 +1346,10 @@ Reconstruct the entire yaml-ht for a different language."
                                                                       (pen-sn ,prettifier r)
                                                                     r)))
 
-                                              (mapcar (lambda (r) (if (not ,no-trim-start) (s-trim-left r) r)))
+                                              (mapcar (lambda (r) (if (or (not ,no-trim-start)
+                                                                          ;; (sor final-inject-gen-start)
+                                                                          )
+                                                                      (s-trim-left r) r)))
                                               (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
 
                                            (processed-results
