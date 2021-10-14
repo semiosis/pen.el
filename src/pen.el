@@ -623,7 +623,7 @@ Reconstruct the entire yaml-ht for a different language."
 ;;  postprocessor prompt-filter n-completions)
 ;; (let ((max-tokens 1)) (funcall (cl-defun yo () (pen-etv max-tokens))))
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor/3 "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
-(defun define-prompt-function ()
+K(defun define-prompt-function ()
   (eval
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match))
       ,doc
@@ -937,17 +937,17 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-n-completions
                    (progn
-                     (pen-log "(pen-var-value-maybe 'n-completions)" (pen-var-value-maybe 'n-completions))
-                     (pen-log ",n-completions" (pen-var-value-maybe ,n-completions))
+                     ;; (pen-log "(pen-var-value-maybe 'n-completions)" (pen-var-value-maybe 'n-completions))
+                     ;; (pen-log ",n-completions" (pen-var-value-maybe ,n-completions))
                      (expand-template
                       (str (or (pen-var-value-maybe 'n-completions)
                                ,n-completions)))))
 
                   (final-n-completions
                    (progn
-                     (pen-log "n-completions" final-n-completions)
-                     (pen-log "final-engine-max-n-completions" final-engine-max-n-completions)
-                     (pen-log "final-n-completions" (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
+                     ;; (pen-log "n-completions" final-n-completions)
+                     ;; (pen-log "final-engine-max-n-completions" final-engine-max-n-completions)
+                     ;; (pen-log "final-n-completions" (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
                      (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions))))
 
                   (final-engine-max-generated-tokens
