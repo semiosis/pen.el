@@ -557,21 +557,10 @@ Reconstruct the entire yaml-ht for a different language."
   (if (re-match-p "/$" path)
       (progn
         (pen-snc (cmd "mkdir" "-p" path))
-        (f-touch path)
         (find-file path))
     (progn
       (f-touch path)
       (find-file path))))
-
-(defun pen-touch-file (path)
-  "Create directories and edit file"
-  (pen-snc (cmd "mkdir" "-p" (f-dirname path)))
-  (if (re-match-p "/$" path)
-      (progn
-        (pen-snc (cmd "mkdir" "-p" path))
-        (f-touch path))
-    (progn
-      (f-touch path))))
 
 (defun pen-open-all-files (file-list)
   (interactive (read-string-hist "pen-open-all-files: "))
@@ -582,11 +571,22 @@ Reconstruct the entire yaml-ht for a different language."
               (pen-find-file path)
             (kill-buffer)))))
 
+(defun pen-touch-file (path)
+  "Create directories and edit file"
+  (pen-snc (cmd "mkdir" "-p" (f-dirname path)))
+  (if (re-match-p "/$" path)
+      (progn
+        (pen-snc (cmd "mkdir" "-p" path)))
+    (progn
+      (f-touch path))))
+
 (defun pen-touch-all-files (file-list)
-  (interactive (read-string-hist "pen-open-all-files: "))
+  (interactive (read-string-hist "pen-touch-all-files: "))
   (loop for path in (pen-str2list file-list)
         do
-        (pen-touch-file path)))
+        (progn
+          (message "%s" (concat "touching " path))
+          (pen-touch-file path))))
 
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.
@@ -2598,7 +2598,14 @@ But use the results-analyser."
 
   ;; TODO Ensure privacy - pen-avoid-divulging
   (if (string-empty-p (s-chompall (buffer-string)))
-      (eval `(pf-generate-the-contents-of-a-new-file/5 preceding-text nil nil nil nil ,@args))
+      (eval `(pf-generate-the-contents-of-a-new-file/6
+              preceding-text
+              nil
+              nil
+              nil
+              nil
+              nil
+              ,@args))
     (if (and (or (derived-mode-p 'prog-mode)
                  (derived-mode-p 'term-mode))
              (not (string-equal (buffer-name) "*scratch*")))
