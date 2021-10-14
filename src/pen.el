@@ -940,8 +940,10 @@ Reconstruct the entire yaml-ht for a different language."
                      ;; (pen-log "(pen-var-value-maybe 'n-completions)" (pen-var-value-maybe 'n-completions))
                      ;; (pen-log ",n-completions" (pen-var-value-maybe ,n-completions))
                      (expand-template
-                      (str (or (pen-var-value-maybe 'n-completions)
-                               ,n-completions)))))
+                      (str (or
+                            ;; For some reason, the override is set to 5. Debug this
+                            (pen-var-value-maybe 'n-completions)
+                            ,n-completions)))))
 
                   (final-n-completions
                    (progn
