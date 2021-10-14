@@ -1866,7 +1866,11 @@ Function names are prefixed with pf- for easy searching"
                                              pen-engines)
                                             (ht-get pen-engines engine-title))))
                            (if engine
-                               (setq yaml-ht (ht-merge yaml-ht engine)))
+                               (progn
+                                 (setq yaml-ht (ht-merge yaml-ht engine))
+                                 ;; Merge the original prompt keys back in, to override ones the engine may have set.
+                                 ;; Because colliding prompt keys are more important.
+                                 (setq yaml-ht (ht-merge yaml-ht prompt-yaml-ht))))
                            engine-title))
 
                         (engine (pen-resolve-engine engine requirements))
@@ -1971,9 +1975,8 @@ Function names are prefixed with pf- for easy searching"
                         (postprocessor (ht-get yaml-ht "postprocessor"))
                         (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
                         (n-collate
-                         (or (ht-get prompt-yaml-ht "n-collate")
-                               (ht-get yaml-ht "n-collate")
-                               1))
+                         (or (ht-get yaml-ht "n-collate")
+                             1))
                         (n-max-collate (or (ht-get yaml-ht "n-max-collate")
                                            1))
                         (n-target (or (ht-get yaml-ht "n-target")
@@ -1991,8 +1994,7 @@ Function names are prefixed with pf- for easy searching"
                            ;; (pen-log path)
                            ;; for some reason this is returning 5
                            ;; (pen-log (ht-get yaml-ht "n-completions"))
-                           (or (ht-get prompt-yaml-ht "n-completions")
-                               (ht-get yaml-ht "n-completions")
+                           (or (ht-get yaml-ht "n-completions")
                                5)))
                         (n-test-runs (ht-get yaml-ht "n-test-runs"))
 
