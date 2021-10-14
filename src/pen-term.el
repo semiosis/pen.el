@@ -216,17 +216,17 @@
   "Kill the current buffer and delete the selected window."
   (interactive)
   (let ((window-to-delete (selected-window))
-	(buffer-to-kill (current-buffer))
-	(delete-window-hook (lambda () (ignore-errors (delete-window)))))
+    (buffer-to-kill (current-buffer))
+    (delete-window-hook (lambda () (ignore-errors (delete-window)))))
     (unwind-protect
-	(progn
-	  (add-hook 'kill-buffer-hook delete-window-hook t t)
-	  (if (kill-buffer (current-buffer))
-	      (when (eq (selected-window) window-to-delete)
-		      (delete-window))))
+    (progn
+      (add-hook 'kill-buffer-hook delete-window-hook t t)
+      (if (kill-buffer (current-buffer))
+          (when (eq (selected-window) window-to-delete)
+              (delete-window))))
       (ignore-errors
        (with-current-buffer buffer-to-kill
-	       (remove-hook 'kill-buffer-hook delete-window-hook t))))))
+           (remove-hook 'kill-buffer-hook delete-window-hook t))))))
 
 (defun pen-term-kill-buffer-and-window ()
   (interactive)
@@ -285,28 +285,28 @@ without any interpretation."
   ;; loses one arg when called with -c, and newer shells (bash,  ksh) don't.
   ;; Thus we add an extra dummy argument "..", and then remove it.
   (let ((process-environment
-	       (nconc
-	        (list
-	         (format "TERM=%s" term-term-name)
-	         (format "TERMINFO=%s" data-directory)
-	         (format term-termcap-format "TERMCAP="
-		               term-term-name term-height term-width)
+           (nconc
+            (list
+             (format "TERM=%s" term-term-name)
+             (format "TERMINFO=%s" data-directory)
+             (format term-termcap-format "TERMCAP="
+                       term-term-name term-height term-width)
 
-	         (format "INSIDE_EMACS=%s,term:%s" emacs-version term-protocol-version)
-	         (format "LINES=%d" term-height)
-	         (format "COLUMNS=%d" term-width))
-	        process-environment))
-	      (process-connection-type t)
-	      (inhibit-eol-conversion t)
-	      (coding-system-for-read 'binary))
+             (format "INSIDE_EMACS=%s,term:%s" emacs-version term-protocol-version)
+             (format "LINES=%d" term-height)
+             (format "COLUMNS=%d" term-width))
+            process-environment))
+          (process-connection-type t)
+          (inhibit-eol-conversion t)
+          (coding-system-for-read 'binary))
     (when (term--bash-needs-EMACSp)
       (push (format "EMACS=%s (term:%s)" emacs-version term-protocol-version)
             process-environment))
     (apply #'start-process name buffer
-	         "/bin/sh" "-c"
-	         (format "stty stop undef; stty start undef; unset TTY; stty -nl echo rows %d columns %d sane 2>/dev/null; if [ $1 = .. ]; then shift; fi; exec \"$@\"" term-height term-width)
-	         ".."
-	         command switches)))
+             "/bin/sh" "-c"
+             (format "stty stop undef; stty start undef; unset TTY; stty -nl echo rows %d columns %d sane 2>/dev/null; if [ $1 = .. ]; then shift; fi; exec \"$@\"" term-height term-width)
+             ".."
+             command switches)))
 
 (defun disable-modes-for-term ()
   (interactive)
