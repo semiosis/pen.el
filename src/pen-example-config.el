@@ -80,6 +80,7 @@
 (define-key pen-map (kbd "H-4") 'pen-complete-lines)
 (define-key pen-map (kbd "H-5") 'pen-complete-long)
 (define-key pen-map (kbd "H-P") 'pen-complete-long)
+(define-key pen-map (kbd "H-b") 'pf-generate-the-contents-of-a-new-file/6)
 (define-key pen-map (kbd "H-TAB m") 'pen-complete-medium)
 (pen-define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
