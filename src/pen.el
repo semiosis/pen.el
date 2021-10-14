@@ -623,7 +623,7 @@ Reconstruct the entire yaml-ht for a different language."
 ;;  postprocessor prompt-filter n-completions)
 ;; (let ((max-tokens 1)) (funcall (cl-defun yo () (pen-etv max-tokens))))
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor/3 "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
-K(defun define-prompt-function ()
+(defun define-prompt-function ()
   (eval
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match))
       ,doc
