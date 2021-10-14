@@ -563,6 +563,15 @@ Reconstruct the entire yaml-ht for a different language."
       (f-touch path)
       (find-file path))))
 
+(defun pen-open-all-files (file-list)
+  (interactive (read-string-hist "pen-open-all-files: "))
+  (loop for path in (pen-str2list file-list)
+        do
+        (ignore-errors
+          (with-current-buffer
+              (pen-find-file path)
+            (kill-buffer)))))
+
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.
 ;; Expected variables:
