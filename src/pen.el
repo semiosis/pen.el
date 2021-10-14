@@ -563,6 +563,16 @@ Reconstruct the entire yaml-ht for a different language."
       (f-touch path)
       (find-file path))))
 
+(defun pen-touch-file (path)
+  "Create directories and edit file"
+  (pen-snc (cmd "mkdir" "-p" (f-dirname path)))
+  (if (re-match-p "/$" path)
+      (progn
+        (pen-snc (cmd "mkdir" "-p" path))
+        (f-touch path))
+    (progn
+      (f-touch path))))
+
 (defun pen-open-all-files (file-list)
   (interactive (read-string-hist "pen-open-all-files: "))
   (loop for path in (pen-str2list file-list)
@@ -571,6 +581,12 @@ Reconstruct the entire yaml-ht for a different language."
           (with-current-buffer
               (pen-find-file path)
             (kill-buffer)))))
+
+(defun pen-touch-all-files (file-list)
+  (interactive (read-string-hist "pen-open-all-files: "))
+  (loop for path in (pen-str2list file-list)
+        do
+        (pen-touch-file path)))
 
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.
