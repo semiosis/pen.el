@@ -218,6 +218,14 @@ Reconstruct the entire yaml-ht for a different language."
         (pen-etv (pps (pen--htlist-to-alist funs)))
       funs)))
 
+(defun pen-list-infos ()
+  (interactive)
+  (let ((funs (-filter (lambda (y) (pen-yaml-test y "info"))
+                       pen-prompt-functions-meta)))
+    (if (interactive-p)
+        (pen-etv (pps (pen--htlist-to-alist funs)))
+      funs)))
+
 (defun pen-list-interpreters ()
   (interactive)
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "interpreter"))
@@ -683,15 +691,21 @@ Reconstruct the entire yaml-ht for a different language."
 
                   ;; hover, info and new-document are related
                   (final-info
-                   (and (or (pen-var-value-maybe 'do-etv)
-                            (pen-var-value-maybe 'info)
-                            ,info)
-                        (not (pen-var-value-maybe 'no-info))))
+                   (progn
+                     (comment
+                      (pen-log (concat "(pen-var-value-maybe 'do-etv) " (str (pen-var-value-maybe 'do-etv))))
+                      (pen-log (concat "(pen-var-value-maybe 'info) " (str (pen-var-value-maybe 'info))))
+                      (pen-log (concat "',info " (str ',info)))
+                      (pen-log (concat "(not (pen-var-value-maybe 'no-info)) " (str (not (pen-var-value-maybe 'no-info))))))
+                     (and (or (pen-var-value-maybe 'do-etv)
+                              (pen-var-value-maybe 'info)
+                              ',info)
+                          (not (pen-var-value-maybe 'no-info)))))
 
                   (final-new-document
                    (and (or (pen-var-value-maybe 'do-etv)
                             (pen-var-value-maybe 'new-document)
-                            ,new-document)
+                            ',new-document)
                         (not (pen-var-value-maybe 'no-new-document))))
 
                   ;; filter, insertion, etc. are treated a little differently
@@ -701,23 +715,23 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-utilises-code
                    (or (pen-var-value-maybe 'utilises-code)
-                       ,utilises-code))
+                       ',utilises-code))
 
                   (final-hover
                    (or (pen-var-value-maybe 'hover)
-                       ,hover))
+                       ',hover))
 
                   (final-linter
                    (or (pen-var-value-maybe 'linter)
-                       ,linter))
+                       ',linter))
 
                   (final-formatter
                    (or (pen-var-value-maybe 'formatter)
-                       ,formatter))
+                       ',formatter))
 
                   (final-action
                    (or (pen-var-value-maybe 'action)
-                       ,action))
+                       ',action))
 
                   (final-collation-temperature-stepper
                    (or (pen-var-value-maybe 'collation-temperature-stepper)
@@ -732,6 +746,7 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'include-prompt)
                        ,include-prompt))
 
+                  ;; What was this?
                   (final-no-gen
                    (or (pen-var-value-maybe 'no-gen)
                        ,no-gen))
@@ -1049,16 +1064,16 @@ Reconstruct the entire yaml-ht for a different language."
                              ,postpostprocessor))))
 
                   (final-insertion
-                   (or (pen-var-value-maybe 'insertion)
-                       ,insertion))
+                   (or ',insertion
+                       (pen-var-value-maybe 'insertion)))
 
                   (final-completion
-                   (or (pen-var-value-maybe 'completion)
-                       ,completion))
+                   (or ',completion
+                       (pen-var-value-maybe 'completion)))
 
                   (final-force-completion
-                   (or (pen-var-value-maybe 'force-completion)
-                       ,force-completion))
+                   (or ',force-completion
+                       (pen-var-value-maybe 'force-completion)))
 
                   (final-force-stop-sequence
                    (or (pen-var-value-maybe 'force-stop-sequence)
@@ -1455,6 +1470,15 @@ Reconstruct the entire yaml-ht for a different language."
                      result)))
 
              ;; (tv (pps final-stop-sequences))
+             ;; (tv final-insertion)
+             (pen-log (concat
+                       "insertion: " (str (type final-insertion)) " " (str final-insertion)
+                       " "
+                       "info: " (str final-info)
+                       " "
+                       "new-document: " (str final-new-document)
+                       " "
+                       "current-prefix-arg: " (pps current-prefix-arg)))
              (if no-select-result
                  results
                (if is-interactive
@@ -1465,7 +1489,9 @@ Reconstruct the entire yaml-ht for a different language."
                        result))
                     ((or final-info
                          final-new-document
+                         ;; I think this is because H-u also sets C-u
                          (>= (prefix-numeric-value current-prefix-arg) 4))
+                     (pen-log "pen new doc")
                      (pen-etv (ink-decode (ink-propertise result))))
                     ;; (final-analyse
                     ;;  (pen-etv result))
@@ -1473,6 +1499,7 @@ Reconstruct the entire yaml-ht for a different language."
                     ((and ,filter
                           mark-active)
                      ;; (pen-replace-region (concat (pen-selected-text) result))
+                     (pen-log "pen filtering")
                      (if (sor result)
                          (pen-replace-region (ink-propertise result))
                        (error "pen filter returned empty string")))
@@ -1480,13 +1507,16 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; These are the overrides
                     ;; Insertion is for prompts for which a new buffer is not necessary
                     ((or final-force-completion)
+                     (pen-log "pen completing")
                      (pen-complete-insert (ink-propertise result)))
 
                     ;; These are the defaults
                     ((or final-insertion
                          final-completion)
+                     (pen-log "inserting")
                      (pen-complete-insert (ink-propertise result)))
                     (t
+                     (pen-log "pen defaulting")
                      (pen-etv (ink-propertise result))))
                  result)))))))))
 
@@ -1847,24 +1877,27 @@ Function names are prefixed with pf- for easy searching"
                         (subprompts (ht-get yaml-ht "subprompts"))
 
                         ;; info and hover are related
-                        (info (ht-get yaml-ht "info"))
-                        (hover (ht-get yaml-ht "hover"))
-                        (formatter (ht-get yaml-ht "formatter"))
-                        (linter (ht-get yaml-ht "linter"))
+                        (info (pen-yaml-test yaml-ht "info"))
+                        (hover (pen-yaml-test yaml-ht "hover"))
+                        (formatter (pen-yaml-test yaml-ht "formatter"))
+                        (linter (pen-yaml-test yaml-ht "linter"))
                         ;; This is both a code action and the default action
                         ;; sp +/"^action: pen-find-file" "$HOME/source/git/semiosis/prompts/prompts/recurse-directory-4.prompt"
-                        (action (ht-get yaml-ht "action"))
+                        (action (pen-yaml-test yaml-ht "action"))
 
-                        (new-document (ht-get yaml-ht "new-document"))
-                        (start-yas (ht-get yaml-ht "start-yas"))
-                        (yas (ht-get yaml-ht "yas"))
+                        (new-document (pen-yaml-test yaml-ht "new-document"))
+                        (start-yas (pen-yaml-test yaml-ht "start-yas"))
+                        (yas (pen-yaml-test yaml-ht "yas"))
 
                         ;; not normally given via .prompt. Rather, overridden
                         (inject-gen-start (ht-get yaml-ht "inject-gen-start"))
 
-                        (end-yas (ht-get yaml-ht "end-yas"))
-                        (include-prompt (ht-get yaml-ht "include-prompt"))
-                        (no-gen (ht-get yaml-ht "no-gen"))
+                        (end-yas (pen-yaml-test yaml-ht "end-yas"))
+
+                        (include-prompt (pen-yaml-test yaml-ht "include-prompt"))
+
+                        (no-gen (pen-yaml-test yaml-ht "no-gen"))
+
                         (repeater (ht-get yaml-ht "repeater"))
                         (engine-delimiter (or
                                            (ht-get yaml-ht "engine-delimiter")
@@ -2112,6 +2145,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if notes (concat "\nnotes:" notes))
                                 (if filter (concat "\nfilter: on"))
                                 (if results-analyser (concat "\nresults-analyser: " results-analyser))
+                                (if insertion (concat "\ninsertion: on"))
                                 (if completion (concat "\ncompletion: on"))
                                 (if past-versions (concat "\npast-versions:\n" (pen-list-to-orglist past-versions)))
                                 (if external-related (concat "\nexternal-related\n:" (pen-list-to-orglist external-related)))
