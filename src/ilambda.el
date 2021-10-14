@@ -297,4 +297,9 @@
    (itest/m (lambda (l) '(= 4 (length l)))
             '(a b c d))))
 
+;; TODO Have
+
+(defun iequals (predicate value)
+  (eval `(itest/m ,predicate ,value)))
+
 (provide 'ilambda)

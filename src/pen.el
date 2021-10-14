@@ -682,9 +682,9 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'flags)
                        ,flags))
 
-                  (final-engine-delimiter
-                   (or (pen-var-value-maybe 'engine-delimiter)
-                       ,engine-delimiter))
+                  (final-evaluator
+                   (or (pen-var-value-maybe 'evaluator)
+                       ,evaluator))
 
                   (final-delimiter
                    (or (pen-var-value-maybe 'delimiter)
@@ -1484,6 +1484,11 @@ Reconstruct the entire yaml-ht for a different language."
                        (if (string-match "^pf-" final-return-postprocessor)
                            (eval `(car (pen-one (apply (str2sym ,final-return-postprocessor) (list ,result)))))
                          (pen-sn final-return-postprocessor result))
+                     result))
+
+                  (result
+                   (if (and final-evaluator (sor final-evaluator))
+                       (eval-string final-evaluator)
                      result)))
 
              ;; (tv (pps final-stop-sequences))
@@ -1835,7 +1840,12 @@ Function names are prefixed with pf- for easy searching"
 
                 ;; results in a hash table
                 (pen-try
-                 (let* ((yaml-ht (pen-prompt-file-load path))
+                 (let* (
+                        ;; yaml-ht may change
+                        (yaml-ht (pen-prompt-file-load path))
+                        ;; but prompt-yaml-ht stays the same
+                        (prompt-yaml-ht yaml-ht)
+
                         (path path)
 
                         (requirements (vector2list (ht-get yaml-ht "requirements")))
@@ -1890,6 +1900,7 @@ Function names are prefixed with pf- for easy searching"
                         (prompt (ht-get yaml-ht "prompt"))
                         (mode (ht-get yaml-ht "mode"))
                         (flags (ht-get yaml-ht "flags"))
+                        (evaluator (ht-get yaml-ht "evaluator"))
                         (subprompts (ht-get yaml-ht "subprompts"))
 
                         ;; info and hover are related
@@ -1950,8 +1961,10 @@ Function names are prefixed with pf- for easy searching"
                         (return-postprocessor (ht-get yaml-ht "return-postprocessor"))
                         (postprocessor (ht-get yaml-ht "postprocessor"))
                         (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
-                        (n-collate (or (ht-get yaml-ht "n-collate")
-                                       1))
+                        (n-collate
+                         (or (ht-get prompt-yaml-ht "n-collate")
+                               (ht-get yaml-ht "n-collate")
+                               1))
                         (n-max-collate (or (ht-get yaml-ht "n-max-collate")
                                            1))
                         (n-target (or (ht-get yaml-ht "n-target")
@@ -1964,8 +1977,14 @@ Function names are prefixed with pf- for easy searching"
                         (engine-max-n-completions
                          (or (ht-get yaml-ht "engine-max-n-completions")
                              10))
-                        (n-completions (or (ht-get yaml-ht "n-completions")
-                                           5))
+                        (n-completions
+                         (progn
+                           ;; (pen-log path)
+                           ;; for some reason this is returning 5
+                           ;; (pen-log (ht-get yaml-ht "n-completions"))
+                           (or (ht-get prompt-yaml-ht "n-completions")
+                               (ht-get yaml-ht "n-completions")
+                               5)))
                         (n-test-runs (ht-get yaml-ht "n-test-runs"))
 
                         ;; API
@@ -2785,6 +2804,14 @@ May use to generate code from comments."
          (yaml-ht (yamlmod-read-file fp))
          (defs (pen--htlist-to-alist (ht-get yaml-ht "defs"))))
     (etv (pps defs))))
+
+(defun pen-load-test ()
+  (interactive)
+  (let* ((fp "/home/shane/source/git/spacemacs/prompts/prompts/test-imaginary-equivalence-2.prompt")
+         (yaml-ht (yamlmod-read-file fp))
+         ;; (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
+         (var (ht-get yaml-ht "n-completions")))
+    (etv (pps var))))
 
 (defun pen-load-vars ()
   (interactive)
