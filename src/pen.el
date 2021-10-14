@@ -199,7 +199,7 @@ Reconstruct the entire yaml-ht for a different language."
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "filter"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
-        (pen-etv (pps funs))
+        (pen-etv (pps (pen--htlist-to-alist funs)))
       funs)))
 
 (defun pen-list-completers ()
@@ -207,7 +207,15 @@ Reconstruct the entire yaml-ht for a different language."
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "completion"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
-        (pen-etv (pps funs))
+        (pen-etv (pps (pen--htlist-to-alist funs)))
+      funs)))
+
+(defun pen-list-inserters ()
+  (interactive)
+  (let ((funs (-filter (lambda (y) (pen-yaml-test y "completion"))
+                       pen-prompt-functions-meta)))
+    (if (interactive-p)
+        (pen-etv (pps (pen--htlist-to-alist funs)))
       funs)))
 
 (defun pen-list-interpreters ()
@@ -1048,9 +1056,9 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'completion)
                        ,completion))
 
-                  (final-is-completion
-                   (or (pen-var-value-maybe 'is-completion)
-                       ,is-completion))
+                  (final-force-completion
+                   (or (pen-var-value-maybe 'force-completion)
+                       ,force-completion))
 
                   (final-force-stop-sequence
                    (or (pen-var-value-maybe 'force-stop-sequence)
@@ -1447,7 +1455,6 @@ Reconstruct the entire yaml-ht for a different language."
                      result)))
 
              ;; (tv (pps final-stop-sequences))
-             ;; (tv "Hi")
              (if no-select-result
                  results
                (if is-interactive
@@ -1472,9 +1479,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                     ;; These are the overrides
                     ;; Insertion is for prompts for which a new buffer is not necessary
-                    ((or ,insertion
-                         ,completion
-                         final-is-completion)
+                    ((or final-force-completion)
                      (pen-complete-insert (ink-propertise result)))
 
                     ;; These are the defaults
@@ -1939,7 +1944,7 @@ Function names are prefixed with pf- for easy searching"
                         (default-temperature (ht-get yaml-ht "default-temperature"))
 
                         ;; This is an override hint only
-                        (is-completion nil)
+                        (force-completion nil)
 
                         (engine-strips-gen-starting-whitespace (ht-get yaml-ht "engine-strips-gen-starting-whitespace"))
 
@@ -2462,10 +2467,10 @@ But use the results-analyser."
  (defmacro pen-long-complete (&rest body)
    "This wraps around pen function calls to make them complete long"
 
-   ;; is-completion is just a hint as to what this function is doing
-   ;; if is-completion is specified and the engine (i.e. AIx) strips the starting whitespace
+   ;; force-completion is just a hint as to what this function is doing
+   ;; if force-completion is specified and the engine (i.e. AIx) strips the starting whitespace
    ;; then pen will be hinted to add some whitespace.
-   `(let ((is-completion t)
+   `(let ((force-completion t)
           (max-generated-tokens 200)
           (stop-sequence "##long complete##")
           (stop-sequences '("##long complete##")))
@@ -2473,11 +2478,11 @@ But use the results-analyser."
 
 (defmacro pen-words-complete (&rest body)
   "This wraps around pen function calls to make them complete long"
-  ;; is-completion is just a hint as to what this function is doing
-  ;; if is-completion is specified and the engine (i.e. AIx) strips the starting whitespace
+  ;; force-completion is just a hint as to what this function is doing
+  ;; if force-completion is specified and the engine (i.e. AIx) strips the starting whitespace
   ;; then pen will be hinted to add some whitespace.
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 5)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
@@ -2488,7 +2493,7 @@ But use the results-analyser."
 (defmacro pen-words-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete words"
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 5)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
@@ -2503,7 +2508,7 @@ But use the results-analyser."
 (defmacro pen-word-complete (&rest body)
   "This wraps around pen function calls to make them complete a single word"
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 1)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
@@ -2514,7 +2519,7 @@ But use the results-analyser."
 (defmacro pen-word-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete a singel word"
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 1)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
@@ -2529,7 +2534,7 @@ But use the results-analyser."
 (defmacro pen-long-complete (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 200)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##")))
@@ -2538,7 +2543,7 @@ But use the results-analyser."
 (defmacro pen-medium-complete (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 100)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##")))
@@ -2547,7 +2552,7 @@ But use the results-analyser."
 (defmacro pen-long-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 200)
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
@@ -2560,7 +2565,7 @@ But use the results-analyser."
 (defmacro pen-line-complete (&rest body)
   "This wraps around pen function calls to make them complete line only"
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 100)
            (n-completions 20)
            (n-collate 2)
@@ -2571,7 +2576,7 @@ But use the results-analyser."
 (defmacro pen-lines-complete (&rest body)
   "This wraps around pen function calls to make them complete line only"
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 50)
            (n-completions 2)
            (n-collate 1)
@@ -2586,7 +2591,7 @@ But use the results-analyser."
 (defmacro pen-line-complete-nongreedy (&rest body)
   "This wraps around pen function calls to make them complete line only"
   `(eval
-    `(let ((is-completion t)
+    `(let ((force-completion t)
            (max-generated-tokens 100)
            (n-completions 20)
            (n-collate 2)
