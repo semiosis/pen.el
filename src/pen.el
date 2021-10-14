@@ -2846,6 +2846,7 @@ May use to generate code from comments."
 (require 'pen-tty)
 (require 'pen-tmux)
 (require 'pen-looking-glass)
+(require 'pen-buffer-state)
 
 (defun pen-lsp-explain-error ()
   (interactive)
