@@ -266,6 +266,7 @@
            (call-interactively 'pf-transform-code/3))))))))
 
 (defun pen-transform ()
+  (interactive)
   ;; pen-mode-prose-or-code-p
   (call-interactively 'pen-transform-code))
 
