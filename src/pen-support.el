@@ -1236,6 +1236,10 @@ Out
            (eval-string ,,(str default))
          (read-string-hist ,,(concat varname ": ") ,,example))))))
 
+(defun pen-activate-mark ()
+  (setq deactivate-mark nil)
+  (activate-mark))
+
 (defun pen-insert (s)
   (interactive)
   (cond
@@ -1251,7 +1255,7 @@ Out
     (let ((p (point)))
       (insert s)
       (set-mark p)
-      (activate-mark)))))
+      (pen-activate-mark)))))
 
 (defun pp-oneline (l)
   (chomp (replace-regexp-in-string "\n +" " " (pp l))))
