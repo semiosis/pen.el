@@ -82,6 +82,15 @@
               (string-equal v "true")
               (string-equal v "yes"))))))
 
+(defun pen-yaml-test-off (yaml-ht key)
+  (ignore-errors
+    (if (and yaml-ht
+             (sor key))
+        (let ((v (ht-get yaml-ht key)))
+          (or (string-equal v "off")
+              (string-equal v "false")
+              (string-equal v "no"))))))
+
 (defun pen-test-translate-prompt ()
   (interactive)
   (let
@@ -708,14 +717,12 @@ Reconstruct the entire yaml-ht for a different language."
                             ',new-document)
                         (not (pen-var-value-maybe 'no-new-document))))
 
-                  ;; filter, insertion, etc. are treated a little differently
-                  ;; (final-filter
-                  ;;  (or (pen-var-value-maybe 'filter)
-                  ;;      ,filter))
-
                   (final-utilises-code
-                   (or (pen-var-value-maybe 'utilises-code)
-                       ',utilises-code))
+                   (and (or (pen-var-value-maybe 'utilises-code)
+                            ',utilises-code)
+                        (not
+                         (or (pen-var-value-maybe 'utilises-code-off)
+                             ',utilises-code-off))))
 
                   (final-hover
                    (or (pen-var-value-maybe 'hover)
@@ -1063,13 +1070,23 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'postpostprocessor)
                              ,postpostprocessor))))
 
+                  (final-filter
+                   (and (or ',filter
+                            (pen-var-value-maybe 'filter))
+                        (not (or ',filter-off
+                                 (pen-var-value-maybe 'filter-off)))))
+
                   (final-insertion
-                   (or ',insertion
-                       (pen-var-value-maybe 'insertion)))
+                   (and (or ',insertion
+                            (pen-var-value-maybe 'insertion))
+                        (not (or ',insertion-off
+                                 (pen-var-value-maybe 'insertion-off)))))
 
                   (final-completion
-                   (or ',completion
-                       (pen-var-value-maybe 'completion)))
+                   (and (or ',completion
+                            (pen-var-value-maybe 'completion))
+                        (not (or ',completion-off
+                                 (pen-var-value-maybe 'completion-off)))))
 
                   (final-force-completion
                    (or ',force-completion
@@ -1495,7 +1512,7 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; (final-analyse
                     ;;  (pen-etv result))
                     ;; Filter takes priority over insertion
-                    ((and ,filter
+                    ((and final-filter
                           mark-active)
                      ;; (pen-replace-region (concat (pen-selected-text) result))
                      (pen-log "pen filtering")
@@ -1909,6 +1926,7 @@ Function names are prefixed with pf- for easy searching"
                         (no-uniq-results (pen-yaml-test yaml-ht "no-uniq-results"))
                         (conversation (pen-yaml-test yaml-ht "conversation"))
                         (filter (pen-yaml-test yaml-ht "filter"))
+                        (filter-off (pen-yaml-test-off yaml-ht "filter"))
                         (results-analyser (ht-get yaml-ht "results-analyser"))
                         ;; Don't actually use this.
                         ;; But I can toggle to use the prettifier with a bool
@@ -1916,9 +1934,12 @@ Function names are prefixed with pf- for easy searching"
                         (fz-pretty (ht-get yaml-ht "fz-pretty"))
                         (collation-postprocessor (ht-get yaml-ht "pen-collation-postprocessor"))
                         (completion (pen-yaml-test yaml-ht "completion"))
+                        (completion-off (pen-yaml-test-off yaml-ht "completion"))
                         (insertion (pen-yaml-test yaml-ht "insertion"))
+                        (insertion-off (pen-yaml-test-off yaml-ht "insertion"))
                         ;; Is the prompt designed for an LM trained on code?
                         (utilises-code (pen-yaml-test yaml-ht "utilises-code"))
+                        (utilises-code-off (pen-yaml-test-off yaml-ht "utilises-code"))
                         (no-trim-start (or (pen-yaml-test yaml-ht "no-trim-start")
                                            (pen-yaml-test yaml-ht "completion")))
                         (no-trim-end (pen-yaml-test yaml-ht "no-trim-end"))
@@ -2143,9 +2164,12 @@ Function names are prefixed with pf- for easy searching"
                                 (if task (concat "\ntask: " task))
                                 (if notes (concat "\nnotes:" notes))
                                 (if filter (concat "\nfilter: on"))
+                                (if filter-off (concat "\nfilter-off: on"))
                                 (if results-analyser (concat "\nresults-analyser: " results-analyser))
                                 (if insertion (concat "\ninsertion: on"))
+                                (if insertion-off (concat "\ninsertion-off: on"))
                                 (if completion (concat "\ncompletion: on"))
+                                (if completion-off (concat "\ncompletion-off: on"))
                                 (if past-versions (concat "\npast-versions:\n" (pen-list-to-orglist past-versions)))
                                 (if external-related (concat "\nexternal-related\n:" (pen-list-to-orglist external-related)))
                                 (if related-prompts (concat "\nrelated-prompts:\n" (pen-list-to-orglist related-prompts)))
