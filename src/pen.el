@@ -2575,7 +2575,7 @@ But use the results-analyser."
            (max-generated-tokens 50)
            (n-completions 2)
            (n-collate 1)
-           (no-utilise-code t)
+           ;; (no-utilise-code t)
            (inject-gen-start "\n")
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
