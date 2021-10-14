@@ -694,7 +694,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ,new-document)
                         (not (pen-var-value-maybe 'no-new-document))))
 
-                  ;; filter, insertion, etc. are trearted a little differently
+                  ;; filter, insertion, etc. are treated a little differently
                   ;; (final-filter
                   ;;  (or (pen-var-value-maybe 'filter)
                   ;;      ,filter))
