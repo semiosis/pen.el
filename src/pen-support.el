@@ -100,9 +100,14 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   ;;   (message format-string args))
   )
 
-(defun pen-log (s)
-  (pen-message-no-echo "%s\\n" s)
-  s)
+(defun pen-log (&rest ss)
+  (let ((ret (s-join ", " (mapcar 'str ss))))
+    (pen-message-no-echo "%s\\n" ret))
+
+  ;; This is for backwards compatibility
+  (car ss)
+  ;; ret
+  )
 
 (defun pen-alist-setcdr (alist-symbol key value)
   "Set KEY to VALUE in alist ALIST-SYMBOL."
@@ -1027,8 +1032,12 @@ when s is a string, set the clipboard to s"
      nil))
 
 (defun pen-var-value-maybe (sym)
-  (if (variable-p sym)
-      (eval sym)))
+  (cond
+   ((symbolp sym) (if (variable-p sym)
+                      (eval sym)))
+   ((numberp sym) sym)
+   ((stringp sym) sym)
+   (t sym)))
 
 (defun -uniq-u (l &optional testfun)
   "Return a copy of LIST with all non-unique elements removed."

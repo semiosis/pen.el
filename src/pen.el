@@ -936,12 +936,19 @@ Reconstruct the entire yaml-ht for a different language."
                              ,engine-max-n-completions))))
 
                   (final-n-completions
-                   (expand-template
-                    (str (or (pen-var-value-maybe 'n-completions)
-                             ,n-completions))))
+                   (progn
+                     (pen-log "(pen-var-value-maybe 'n-completions)" (pen-var-value-maybe 'n-completions))
+                     (pen-log ",n-completions" (pen-var-value-maybe ,n-completions))
+                     (expand-template
+                      (str (or (pen-var-value-maybe 'n-completions)
+                               ,n-completions)))))
 
                   (final-n-completions
-                   (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
+                   (progn
+                     (pen-log "n-completions" final-n-completions)
+                     (pen-log "final-engine-max-n-completions" final-engine-max-n-completions)
+                     (pen-log "final-n-completions" (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
+                     (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions))))
 
                   (final-engine-max-generated-tokens
                    (pen-str2num
