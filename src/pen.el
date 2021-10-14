@@ -2462,17 +2462,17 @@ But use the results-analyser."
                      ;; Also, ensure n-collate = 1 because
                      ;; n-completions may be emulated with collate
                      `(n-collate 1)))
-           (if (sor pen-force-engine
-                    (progn
-                      (pen-log "Forcing engine:")
-                      (pen-log "Forcing engine n-completions")
-                      (pen-log "Forcing engine model")
-                      (pen-log "Forcing engine all keys etc.")
-                      (let* ((engine (ht-get pen-engines pen-force-engine))
-                             (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                             (vals (ht-values engine))
-                             (tups (-zip-lists keys vals)))
-                        tups))))))))
+           (if (sor pen-force-engine)
+               (progn
+                 (pen-log "Forcing engine:")
+                 (pen-log "Forcing engine n-completions")
+                 (pen-log "Forcing engine model")
+                 (pen-log "Forcing engine all keys etc.")
+                 (let* ((engine (ht-get pen-engines pen-force-engine))
+                        (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                        (vals (ht-values engine))
+                        (tups (-zip-lists keys vals)))
+                   tups)))))))
     `(eval
       `(let ,',overrides
          ,',@body))))
