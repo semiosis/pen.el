@@ -658,6 +658,10 @@ Reconstruct the entire yaml-ht for a different language."
                                         ;; This is necessary because most modes
                                         ;; do not allow allow you to change the faces.
                                         ("INK_TYPE" . "generated")))
+
+           ;; Many a  transformation pipeline here could benefit from transducers
+           ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
+           ;; https://github.com/FrancisMurillo/transducer.el
            (let* (;; Keep in mind this both updates memoization and the bash cache
                   (do-pen-update (pen-var-value-maybe 'do-pen-update))
 
