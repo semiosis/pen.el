@@ -2085,7 +2085,7 @@ Function names are prefixed with pf- for easy searching"
                         (stop-sequences
                          (or (vector2list (ht-get yaml-ht "stop-sequences"))
                              ;; (list "\n")
-                             (list "###<long>###")))
+                             (list "#<long>#")))
                         (suggest-p
                          (or (vector2list (ht-get yaml-ht "suggest-p"))
                              (list t)))
@@ -2102,7 +2102,7 @@ Function names are prefixed with pf- for easy searching"
                              stop-sequence
                            (progn
                              (setq stop-sequences (cons stop-sequence stop-sequences))
-                             "###<long>###")))
+                             "#<long>#")))
 
                         (force-stop-sequence
                          (if (and (sor engine-stop-sequence-validator)
@@ -2110,7 +2110,7 @@ Function names are prefixed with pf- for easy searching"
                              force-stop-sequence
                            (progn
                              (setq stop-sequences (cons force-stop-sequence stop-sequences))
-                             "###<long>###")))
+                             "#<long>#")))
 
                         (stop-patterns
                          (or (vector2list (ht-get yaml-ht "stop-patterns"))
