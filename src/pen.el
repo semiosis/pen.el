@@ -1042,6 +1042,16 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'model)
                              ,model))))
 
+                  (final-repetition-penalty
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'repetition-penalty)
+                             ,repetition-penalty))))
+
+                  (final-length-penalty
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'length-penalty)
+                             ,length-penalty))))
+
                   (final-approximate-token-char-length
                    (pen-num
                     (expand-template
@@ -1195,6 +1205,20 @@ Reconstruct the entire yaml-ht for a different language."
                     final-prompt
                     (pen-num final-approximate-token-char-length)))
 
+                  (final-min-generated-tokens
+                   (let* ((prompt-length pen-approximate-prompt-token-length)
+                          (token-char-length (pen-num final-approximate-token-char-length)))
+                     (or
+                      (pen-str2num
+                       (eval-string
+                        ;; template is expanded twice so macros can have input and output
+                        (expand-template
+                         (pen-expand-macros
+                          (expand-template
+                           (str (or (pen-var-value-maybe 'min-generated-tokens)
+                                    ,min-generated-tokens)))))))
+                      0)))
+
                   (final-max-generated-tokens
                    (let* ((prompt-length pen-approximate-prompt-token-length)
                           (token-char-length (pen-num final-approximate-token-char-length)))
@@ -1234,6 +1258,12 @@ Reconstruct the entire yaml-ht for a different language."
                        (- final-max-tokens pen-approximate-prompt-token-length)
                      final-max-generated-tokens))
 
+                  (final-min-generated-tokens
+                   (pen-hard-bound
+                    final-min-generated-tokens
+                    0
+                    final-engine-max-generated-tokens))
+
                   (final-max-generated-tokens
                    (pen-hard-bound
                     final-max-generated-tokens
@@ -1270,6 +1300,9 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_ENGINE_MAX_TOKENS" . ,final-engine-max-tokens)
                             ("PEN_MIN_TOKENS" . ,final-min-tokens)
                             ("PEN_MAX_TOKENS" . ,final-max-tokens)
+                            ("PEN_REPETITION_PENALTY" . ,final-repetition-penalty)
+                            ("PEN_LENGTH_PENALTY" . ,final-length-penalty)
+                            ("PEN_MIN_GENERATED_TOKENS" . ,final-min-generated-tokens)
                             ("PEN_MAX_GENERATED_TOKENS" . ,final-max-generated-tokens)
                             ("PEN_TEMPERATURE" . ,final-temperature)
                             ("PEN_MODE" . ,final-mode)
@@ -2005,6 +2038,8 @@ Function names are prefixed with pf- for easy searching"
                         ;; API
 
                         (model (ht-get yaml-ht "model"))
+                        (repetition-penalty (ht-get yaml-ht "repetition-penalty"))
+                        (length-penalty (ht-get yaml-ht "length-penalty"))
 
                         ;; min-tokens and max-tokens include the prompt
                         ;; These values may also be inferred from max-generated-tokens + an approximation of the prompt size.
@@ -2345,12 +2380,14 @@ Function names are prefixed with pf- for easy searching"
   "Run a prompt function which also has a results analyser. e.g. fact checker.
 But use the results-analyser."
   (interactive)
-  (let ((f (fz
-            pen-prompt-analyser-functions
-            nil nil "pen analyser: ")))
-    (if f
-        (let ((analyse t))
-          (call-interactively (intern f))))))
+  (let* ((pen-sh-update
+          (or pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 4))))
+    (let ((f (fz
+              pen-prompt-analyser-functions
+              nil nil "pen analyser: ")))
+      (if f
+          (let ((analyse t))
+            (call-interactively (intern f)))))))
 
 (defun pen-run-editing-function ()
   (interactive)
