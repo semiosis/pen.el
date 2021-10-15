@@ -2089,22 +2089,28 @@ Function names are prefixed with pf- for easy searching"
                         (suggest-p
                          (or (vector2list (ht-get yaml-ht "suggest-p"))
                              (list t)))
+
                         ;; These are automatically turned into prompt functions
                         (nl-suggest-p (vector2list (ht-get yaml-ht "nl-suggest-p")))
+
                         (stop-sequence
                          (if stop-sequences (car stop-sequences)))
 
                         (stop-sequence
                          (if (and (sor engine-stop-sequence-validator)
                                   (pen-snq engine-stop-sequence-validator stop-sequence))
-                           stop-sequence
-                           engine-delimiter))
+                             stop-sequence
+                           (progn
+                             (setq stop-sequences (cons stop-sequence stop-sequences))
+                             "###<long>###")))
 
                         (force-stop-sequence
                          (if (and (sor engine-stop-sequence-validator)
                                   (pen-snq engine-stop-sequence-validator force-stop-sequence))
-                           force-stop-sequence
-                           engine-delimiter))
+                             force-stop-sequence
+                           (progn
+                             (setq stop-sequences (cons force-stop-sequence stop-sequences))
+                             "###<long>###")))
 
                         (stop-patterns
                          (or (vector2list (ht-get yaml-ht "stop-patterns"))
