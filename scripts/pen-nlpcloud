@@ -48,7 +48,7 @@ pen_nlpcloud() {
 
     # \"maxTokens\": $PEN_ENGINE_MAX_GENERATED_TOKENS,
 
-    curl "https://api.nlpcloud.io/v1/gpu/gpt-j/generation" \
+    curl "https://api.nlpcloud.io/v1/$PEN_MODEL/generation" \
     -H "Authorization: Token $NLPCLOUD_API_KEY" \
     -H "Content-Type: application/json" \
     -X POST -d "{
