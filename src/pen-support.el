@@ -137,6 +137,8 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   (chomp (replace-regexp-in-string "\n +" " " (pp l))))
 (defalias 'pp-ol 'pp-oneline)
 
+(defalias 'type 'type-of)
+
 (defun eval-string (string)
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))
