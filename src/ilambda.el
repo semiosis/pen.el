@@ -297,11 +297,12 @@
    (itest/m (lambda (l) (= 4 (length l)))
             '(a b c d))))
 
-(defun test-itest-3 ()
-  (interactive)
-  (etv
-   (itest/m (lambda (thing) (is-the-same-person-p "Moses also known as Moshe Rabbenu" thing))
-            "Semerkhet, the Egyptian king who ruled during the First Dynasty")))
+;; Interestingly, these tests do not work very well
+;; 𝑖λ seems only suited for code when it comes to elisp
+(defun test-itest-3 () (interactive) (etv (itest/m (lambda (thing) (= "Charles Lutwidge Dodgson" thing)) "Lewis Carroll")))
+(defun test-itest-4 () (interactive) (etv (itest/m (lambda (thing) (= "J. R. R. Tolkien" thing)) "Lewis Carroll")))
+(defun test-itest-5 () (interactive) (etv (itest/m 'is-jrr-tolkien-p "Lewis Carroll")))
+(defun test-itest-6 () (interactive) (etv (itest/m 'is-jrr-tolkien-p "J. R. R. Tolkien")))
 
 (defun test-itest-4 ()
   (interactive)
