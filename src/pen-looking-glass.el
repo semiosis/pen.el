@@ -1,5 +1,5 @@
 ;; 🔍 Looking-glass
-;; “Where should I go?" -Alice. "That depends on where you want to end up." - The Cheshire Cat.”
+;; “Where should I go?" -Alice. "That depends on where you want to end up." - The Cheshire Cat.” 🐈
 
 ;; Looking-glass web-browser (based on eww)
 
