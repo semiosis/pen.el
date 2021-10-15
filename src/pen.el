@@ -21,6 +21,7 @@
 (require 'pcsv)
 (require 'pcre2el)
 (require 'asoc)
+(require 'transducer)
 
 (require 'pen-custom)
 
