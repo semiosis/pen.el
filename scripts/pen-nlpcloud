@@ -69,6 +69,8 @@ pen_nlpcloud() {
 
 pen_nlpcloud "$@" > /tmp/nlpcloud-temp.txt
 
+# The part below here is untested
+
 if test "$PEN_N_COMPLETIONS" = 1; then
     printf -- "%s" "$PEN_PROMPT"
     cat /tmp/nlpcloud-temp.txt | jq -r ".completions[$((i - 1))].data.text"
