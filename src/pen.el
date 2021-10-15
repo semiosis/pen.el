@@ -957,6 +957,12 @@ Reconstruct the entire yaml-ht for a different language."
                      ;; (pen-log "final-n-completions" (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
                      (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions))))
 
+                  (final-engine-min-generated-tokens
+                   (pen-str2num
+                    (expand-template
+                     (str (or (pen-var-value-maybe 'engine-min-generated-tokens)
+                              ,engine-min-generated-tokens)))))
+
                   (final-engine-max-generated-tokens
                    (pen-str2num
                     (expand-template
@@ -1262,13 +1268,13 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-min-generated-tokens
                    (pen-hard-bound
                     final-min-generated-tokens
-                    0
+                    final-engine-min-generated-tokens
                     final-engine-max-generated-tokens))
 
                   (final-max-generated-tokens
                    (pen-hard-bound
                     final-max-generated-tokens
-                    0
+                    final-engine-min-generated-tokens
                     final-engine-max-generated-tokens))
 
                   (final-max-tokens
@@ -1977,6 +1983,8 @@ Function names are prefixed with pf- for easy searching"
                         (no-gen (pen-yaml-test yaml-ht "no-gen"))
 
                         (repeater (ht-get yaml-ht "repeater"))
+
+                        (engine-stop-sequence-validator (ht-get yaml-ht "engine-stop-sequence-validator"))
                         (engine-delimiter (or
                                            (ht-get yaml-ht "engine-delimiter")
                                            "###"))
@@ -2019,6 +2027,9 @@ Function names are prefixed with pf- for easy searching"
                                            1))
                         (n-target (or (ht-get yaml-ht "n-target")
                                       1))
+                        (engine-min-generated-tokens
+                         (or (ht-get yaml-ht "engine-min-generated-tokens")
+                             3))
                         (engine-max-generated-tokens
                          (or (ht-get yaml-ht "engine-max-generated-tokens")
                              4096
@@ -2082,6 +2093,18 @@ Function names are prefixed with pf- for easy searching"
                         (nl-suggest-p (vector2list (ht-get yaml-ht "nl-suggest-p")))
                         (stop-sequence
                          (if stop-sequences (car stop-sequences)))
+
+                        (stop-sequence
+                         (if (and (sor engine-stop-sequence-validator)
+                                  (pen-snq engine-stop-sequence-validator stop-sequence))
+                           stop-sequence
+                           engine-delimiter))
+
+                        (force-stop-sequence
+                         (if (and (sor engine-stop-sequence-validator)
+                                  (pen-snq engine-stop-sequence-validator force-stop-sequence))
+                           force-stop-sequence
+                           engine-delimiter))
 
                         (stop-patterns
                          (or (vector2list (ht-get yaml-ht "stop-patterns"))
@@ -2980,3 +3003,6 @@ May use to generate code from comments."
 
 (add-hook 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
           'pen-final-loads t)
+
+(defun test-stop-validator ()
+  (pen-snq "sed -z 's/\\n/<newline>/g' | grep -vq \"<newline>\"" "dlf\nkjsdf"))
