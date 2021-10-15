@@ -36,6 +36,16 @@ case "$sn" in
     }
     ;;
 
+    nlpcloud-complete.sh) {
+        completer_sn=pen-nlpcloud
+        : "${NLPCLOUD_API_KEY:="$PEN_LM_KEY"}"
+        export NLPCLOUD_API_KEY
+
+        : "${PEN_MODEL:="gpt-j"}"
+        : "${PEN_MODEL:="gpu/gpt-j"}"
+    }
+    ;;
+
     openai-complete.sh|openai-*|*) {
         completer_sn=pen-openai
         : "${OPENAI_API_KEY:="$PEN_LM_KEY"}"
@@ -95,6 +105,7 @@ if test "$PEN_DEBUG" = "y"; then
     echo "PEN_APPROXIMATE_PROMPT_LENGTH:\"$PEN_APPROXIMATE_PROMPT_LENGTH\""
     echo "PEN_MIN_TOKENS:\"$PEN_MIN_TOKENS\""
     echo "PEN_MAX_TOKENS:\"$PEN_MAX_TOKENS\""
+    echo "PEN_MIN_GENERATED_TOKENS:\"$PEN_MIN_GENERATED_TOKENS\""
     echo "PEN_MAX_GENERATED_TOKENS:\"$PEN_MAX_GENERATED_TOKENS\""
     echo "PEN_ENGINE_MIN_TOKENS:\"$PEN_ENGINE_MIN_TOKENS\""
     echo "PEN_ENGINE_MAX_TOKENS:\"$PEN_ENGINE_MAX_TOKENS\""
@@ -135,6 +146,7 @@ export PEN_FLAGS
 export PEN_MIN_TOKENS
 export PEN_MAX_TOKENS
 export PEN_APPROXIMATE_PROMPT_LENGTH
+export PEN_MIN_GENERATED_TOKENS
 export PEN_MAX_GENERATED_TOKENS
 export PEN_ENGINE_MIN_TOKENS
 export PEN_ENGINE_MAX_TOKENS
@@ -143,6 +155,7 @@ export PEN_TOP_P
 export PEN_TOP_K
 export PEN_STOP_SEQUENCE
 export PEN_REPETITION_PENALTY
+export PEN_LENGTH_PENALTY
 export PEN_CACHE
 export PEN_MODE
 export PEN_ENGINE_MAX_GENERATED_TOKENS
@@ -173,6 +186,11 @@ case "$sn" in
     ;;
 
     hf-complete.sh) {
+        "$completer_sn" > "$tf_response"
+    }
+    ;;
+
+    nlpcloud-complete.sh) {
         "$completer_sn" > "$tf_response"
     }
     ;;

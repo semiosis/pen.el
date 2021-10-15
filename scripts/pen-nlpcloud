@@ -1,0 +1,96 @@
+#!/bin/bash
+
+: "${NLPCLOUD_API_KEY:="$PEN_LM_KEY"}"
+
+if test -s $HOME/.pen/nlpcloud_api_key; then
+    : "${NLPCLOUD_API_KEY:="$(cat $HOME/.pen/nlpcloud_api_key)"}"
+fi
+
+test -n "$NLPCLOUD_API_KEY" || {
+    echo "NLPCLOUD_API_KEY not given to script"
+    exit 1
+}
+
+export NLPCLOUD_API_KEY
+
+export PEN_PROMPT
+export PEN_MODEL
+export PEN_MIN_TOKENS
+export PEN_MAX_TOKENS
+export PEN_MIN_GENERATED_TOKENS
+export PEN_MAX_GENERATED_TOKENS
+export PEN_ENGINE_MIN_TOKENS
+export PEN_ENGINE_MAX_TOKENS
+export PEN_ENGINE_MAX_GENERATED_TOKENS
+export PEN_TEMPERATURE
+export PEN_TOP_P
+export PEN_TOP_K
+export PEN_STOP_SEQUENCE
+export PEN_N_COMPLETIONS
+export PEN_REPETITION_PENALTY
+export PEN_LENGTH_PENALTY
+
+: "${PEN_N_COMPLETIONS:="4"}"
+
+sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
+
+# pen-nlpcloud.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
+
+# Interestingly, nlpcloud has this issue where the start of the response is stripped
+
+pen_nlpcloud() {
+    if printf -- "%s\n" "$PEN_FLAGS" | grep -q -P '<nlpcloud-begin-newline>'; then
+        echo
+    fi
+
+    # cmd-nice-jq is very slow. Find a faster, reliable solution.
+    # Or use python
+
+    # \"maxTokens\": $PEN_ENGINE_MAX_GENERATED_TOKENS,
+
+    curl "https://api.nlpcloud.io/v1/gpu/gpt-j/generation" \
+    -H "Authorization: Token $NLPCLOUD_API_KEY" \
+    -H "Content-Type: application/json" \
+    -X POST -d "{
+        \"text\": $(cmd-nice-jq "$PEN_PROMPT"),
+        \"num_return_sequences\": $PEN_N_COMPLETIONS,
+        \"top_k\": $PEN_TOP_K,
+        \"top_p\": $PEN_TOP_P,
+        \"length_no_input\": true,
+        \"end_sequence\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
+        \"min_length\": $PEN_MIN_GENERATED_TOKENS,
+        \"max_length\": $PEN_MAX_GENERATED_TOKENS,
+        \"repetition_penalty\": $PEN_REPETITION_PENALTY,
+        \"temperature\": $PEN_TEMPERATURE
+    }"
+
+    # Apparently, there is no multiple completions
+    # https://docs.nlpcloud.io/#generation
+
+
+    curl "https://api.nlpcloud.com/studio/v1/$PEN_MODEL/complete" \
+         -H 'Content-Type: application/json' \
+         -H "Authorization: Bearer $NLPCLOUD_API_KEY" \
+         -X POST \
+         -d "{\"prompt\": $(cmd-nice-jq "$PEN_PROMPT"),
+              \"maxTokens\": $PEN_MAX_GENERATED_TOKENS,
+              \"stopSequences\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
+              \"topKReturn\": $PEN_TOP_K,
+              \"temperature\": $PEN_TEMPERATURE
+             }"
+}
+
+pen_nlpcloud "$@" > /tmp/nlpcloud-temp.txt
+
+if test "$PEN_N_COMPLETIONS" = 1; then
+    printf -- "%s" "$PEN_PROMPT"
+    cat /tmp/nlpcloud-temp.txt | jq -r ".completions[$((i - 1))].data.text"
+else
+    for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
+        echo "===== Completion $i ====="
+        {
+        printf -- "%s" "$PEN_PROMPT"
+        cat /tmp/nlpcloud-temp.txt | jq -r ".completions[$((i - 1))].data.text"
+        } | awk 1
+    done | tee /tmp/nlpcloud.txt
+fi
