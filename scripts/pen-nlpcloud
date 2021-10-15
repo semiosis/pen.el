@@ -64,20 +64,7 @@ pen_nlpcloud() {
         \"temperature\": $PEN_TEMPERATURE
     }"
 
-    # Apparently, there is no multiple completions
     # https://docs.nlpcloud.io/#generation
-
-
-    curl "https://api.nlpcloud.com/studio/v1/$PEN_MODEL/complete" \
-         -H 'Content-Type: application/json' \
-         -H "Authorization: Bearer $NLPCLOUD_API_KEY" \
-         -X POST \
-         -d "{\"prompt\": $(cmd-nice-jq "$PEN_PROMPT"),
-              \"maxTokens\": $PEN_MAX_GENERATED_TOKENS,
-              \"stopSequences\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
-              \"topKReturn\": $PEN_TOP_K,
-              \"temperature\": $PEN_TEMPERATURE
-             }"
 }
 
 pen_nlpcloud "$@" > /tmp/nlpcloud-temp.txt
