@@ -96,6 +96,28 @@ openai_results_split() {
     echo "$td"
 }
 
+nlpcloud_results_split() {
+    completions_fp="$1"
+    test -f "$completions_fp" || exit 1
+
+    completions_fp="$(realpath "$completions_fp")"
+
+    td="$(mktemp -d)"
+
+    cd "$td"
+
+    if cat "$completions_fp" | grep -q -P '^--------------$'; then
+        csplit -f splitfile_ -z "$completions_fp" "/^--------------$/" '{*}' &>/dev/null
+        for fp in *; do
+            sed -i 1d "$fp"
+        done
+    else
+        cat "$completions_fp" > splitfile_0.txt
+    fi
+
+    echo "$td"
+}
+
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_USER_AGENT:\"$PEN_USER_AGENT\""
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
@@ -213,10 +235,20 @@ case "$sn" in
     ;;
 esac
 
-: "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
+case "$sn" in
+    nlpcloud-complete.sh) {
+        results_dir="$(nlpcloud_results_split "$tf_response")"
+    }
+    ;;
 
-export PEN_END_POS
-results_dir="$(openai_results_split "$tf_response")"
+    *) {
+        : "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
+
+        export PEN_END_POS
+        results_dir="$(openai_results_split "$tf_response")"
+    }
+    ;;
+esac
 
 # The API returns the entire prompt + completion
 # Which seems a little bit wasteful.

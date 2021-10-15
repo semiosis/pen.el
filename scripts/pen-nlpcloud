@@ -29,6 +29,7 @@ export PEN_STOP_SEQUENCE
 export PEN_N_COMPLETIONS
 export PEN_REPETITION_PENALTY
 export PEN_LENGTH_PENALTY
+export PEN_TRAILING_WHITESPACE
 
 : "${PEN_N_COMPLETIONS:="4"}"
 
@@ -57,7 +58,8 @@ pen_nlpcloud() {
         \"top_k\": $PEN_TOP_K,
         \"top_p\": $PEN_TOP_P,
         \"length_no_input\": true,
-        \"end_sequence\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
+        \"remove_input\": true,
+        \"end_sequence\": $(cmd-nice-jq "$PEN_STOP_SEQUENCE"),
         \"min_length\": $PEN_MIN_GENERATED_TOKENS,
         \"max_length\": $PEN_MAX_GENERATED_TOKENS,
         \"repetition_penalty\": $PEN_REPETITION_PENALTY,
@@ -69,17 +71,9 @@ pen_nlpcloud() {
 
 pen_nlpcloud "$@" > /tmp/nlpcloud-temp.txt
 
+# This is how errors are shown
+# {"detail":"Your end_sequence token is not supported"}
+
 # The part below here is untested
 
-if test "$PEN_N_COMPLETIONS" = 1; then
-    printf -- "%s" "$PEN_PROMPT"
-    cat /tmp/nlpcloud-temp.txt | jq -r ".completions[$((i - 1))].data.text"
-else
-    for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
-        echo "===== Completion $i ====="
-        {
-        printf -- "%s" "$PEN_PROMPT"
-        cat /tmp/nlpcloud-temp.txt | jq -r ".completions[$((i - 1))].data.text"
-        } | awk 1
-    done | tee /tmp/nlpcloud.txt
-fi
+cat /tmp/nlpcloud-temp.txt | jq -r .generated_text

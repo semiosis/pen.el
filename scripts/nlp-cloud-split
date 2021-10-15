@@ -1,0 +1,35 @@
+nlpcloud_results_split() {
+    completions_fp="$1"
+    test -f "$completions_fp" || exit 1
+
+    completions_fp="$(realpath "$completions_fp")"
+
+    td="$(mktemp -d)"
+
+    cd "$td"
+
+    if cat "$completions_fp" | grep -q -P '^--------------$'; then
+        csplit -f splitfile_ -z "$completions_fp" "/^--------------$/" '{*}' &>/dev/null
+        for fp in *; do
+            sed -i 1d "$fp"
+            # tail -c "+$(( PEN_END_POS + 1 ))" "$fp" | sponge "$fp"
+        done
+    else
+        cat "$completions_fp" > splitfile_0.txt
+    fi
+
+    echo "$td"
+}
+
+# This is how errors are shown
+# {"detail":"Your end_sequence token is not supported"}
+
+# The part below here is untested
+
+tf_response="$(mktemp -t "nlpcloud_api_XXXXXX.txt" 2>/dev/null)"
+trap "rm \"$tf_response\" 2>/dev/null" 0
+
+cat /tmp/nlpcloud-temp.txt | jq -r .generated_text > "$tf_response"
+
+results_dir="$(nlpcloud_results_split "$tf_response")"
+echo "$results_dir"
