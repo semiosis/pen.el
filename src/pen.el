@@ -2101,7 +2101,8 @@ Function names are prefixed with pf- for easy searching"
                                   (pen-snq engine-stop-sequence-validator stop-sequence))
                              stop-sequence
                            (progn
-                             (setq stop-sequences (cons stop-sequence stop-sequences))
+                             (if stop-sequence
+                                 (setq stop-sequences (cons stop-sequence stop-sequences)))
                              "#<long>#")))
 
                         (force-stop-sequence
@@ -2109,7 +2110,8 @@ Function names are prefixed with pf- for easy searching"
                                   (pen-snq engine-stop-sequence-validator force-stop-sequence))
                              force-stop-sequence
                            (progn
-                             (setq stop-sequences (cons force-stop-sequence stop-sequences))
+                             (if force-stop-sequence
+                                 (setq stop-sequences (cons force-stop-sequence stop-sequences)))
                              "#<long>#")))
 
                         (stop-patterns
