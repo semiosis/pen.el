@@ -655,6 +655,7 @@ Reconstruct the entire yaml-ht for a different language."
                            (pen-expand-template-keyvals it var-keyvals t)
                            (pen-expand-template-keyvals it final-defs t)
                            (pen-unonelineify-safe it))))
+
            (setq pen-last-prompt-data '((face . ink-generated)
                                         ;; This is necessary because most modes
                                         ;; do not allow allow you to change the faces.
@@ -1568,6 +1569,8 @@ Reconstruct the entire yaml-ht for a different language."
                        "new-document: " (str final-new-document)
                        " "
                        "current-prefix-arg: " (pps current-prefix-arg)))
+
+             (pen-log (cmd (sym2str ,func-sym)))
              (if no-select-result
                  results
                (if is-interactive

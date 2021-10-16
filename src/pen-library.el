@@ -6,10 +6,12 @@
 ;;   ;; (pen-snc (pen-cmd "basename" path))
 ;;   (s-replace-regexp ".*/" "" path))
 (defalias 'f-basename 'f-filename)
-
 (defun f-mant (path)
   ;; (pen-snc (pen-cmd "mant" path))
   (s-replace-regexp "\\..*" "" (f-basename path)))
+
+(defalias 'sym2str 'symbol-name)
+(defalias 'str2sym 'intern)
 
 ;; The semantic path needs to be an association list, and add to that with contrib plugins
 ;; The semantic path / topic should always be visible or accessible
