@@ -1353,8 +1353,8 @@ Reconstruct the entire yaml-ht for a different language."
                   (tempa
                    (let ((le (pen-log (eval `(pen-cmd "penf" "-u" (sym2str ',',func-sym) ,@last-vals-exprs))))
                          (lv (pen-log (eval `(pen-cmd "penf" "-u" (sym2str ',',func-sym) ,@last-vals)))))
-                     (tee (f-join penconfdir "last-pen-command-exprs.txt"))
-                     (tee (f-join penconfdir "last-pen-command.txt"))))
+                     (tee (f-join penconfdir "last-pen-command-exprs.txt") le)
+                     (tee (f-join penconfdir "last-pen-command.txt") lv)))
 
                   (results)
 
