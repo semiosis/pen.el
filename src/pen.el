@@ -1150,6 +1150,12 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'end-split-patterns)
                        ',end-split-patterns))
 
+                  (final-engine-max-stop-sequence-size
+                   (expand-template
+                    (str (or
+                          (pen-var-value-maybe 'engine-max-stop-sequence-size)
+                          ,engine-max-stop-sequence-size))))
+
                   (final-stop-sequence
                    (expand-template
                     (str (or
@@ -1158,9 +1164,9 @@ Reconstruct the entire yaml-ht for a different language."
                           ,stop-sequence))))
 
                   (final-stop-sequence
-                   (if (sor engine-max-stop-sequence-size)
+                   (if (sor final-engine-max-stop-sequence-size)
                        (let ((l (string-to-number
-                                 engine-max-stop-sequence-size)))
+                                 final-engine-max-stop-sequence-size)))
                          (pen-log "Warning: stop sequence trimmed")
                          (s-left l final-stop-sequence))
                      final-stop-sequence))
@@ -2037,7 +2043,7 @@ Function names are prefixed with pf- for easy searching"
                                       1))
 
                         (engine-max-stop-sequence-size (or (ht-get yaml-ht "engine-max-stop-sequence-size")
-                                                   20))
+                                                           20))
 
                         (engine-min-generated-tokens
                          (or (ht-get yaml-ht "engine-min-generated-tokens")
