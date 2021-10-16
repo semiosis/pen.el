@@ -22,7 +22,7 @@
 (lsp-register-client
  (make-lsp-client :new-connection
                   (lsp-stdio-connection 'pen-lsp--server-command)
-                  :major-modes '(text-mode)
+                  :major-modes '(org-mode text-mode)
                   :server-id 'pen
                   :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
