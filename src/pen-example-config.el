@@ -307,8 +307,6 @@
 (define-key pen-map (kbd "H-p f") 'pen-autofix-lsp-errors)
 (define-key pen-map (kbd "H-p m") 'pf-given-a-function-name-show-the-import/2)
 
-
-
 (add-to-list 'pen-editing-functions 'pen-lsp-explain-error)
 (add-to-list 'pen-editing-functions 'pf-explain-error/2)
 (add-to-list 'pen-editing-functions 'rcm-explain-code)
