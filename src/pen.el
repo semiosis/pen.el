@@ -1352,8 +1352,8 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (tempa
                    (progn
-                     (pen-log (eval `(pen-cmd (sym2str ',',func-sym) ,@last-vals-exprs)))
-                     (pen-log (eval `(pen-cmd (sym2str ',',func-sym) ,@last-vals)))))
+                     (pen-log (eval `(pen-cmd "penf" "-u" (sym2str ',',func-sym) ,@last-vals-exprs)))
+                     (pen-log (eval `(pen-cmd "penf" "-u" (sym2str ',',func-sym) ,@last-vals)))))
 
                   (results)
 
