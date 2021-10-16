@@ -873,6 +873,8 @@ Reconstruct the entire yaml-ht for a different language."
                              ;; Don't include &key pretty
                              (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v)))))
 
+                  (last-vals-exprs vals)
+
                   (vals
                    (cl-loop
                     for tp in (-zip-fill nil vals final-var-defaults)
@@ -885,6 +887,8 @@ Reconstruct the entire yaml-ht for a different language."
                            ',subprompts-al
                            (eval-string ,(str (cdr tp)))))
                       (car tp))))
+
+                  (last-vals vals)
 
                   ;; preprocess the values of the parameters
                   (vals
@@ -1345,6 +1349,10 @@ Reconstruct the entire yaml-ht for a different language."
                      data
                      ;; data
                      ))
+
+                  (pen-log (eval `(cmd (sym2str ,,func-sym) ,@last-vals-exprs)))
+                  (pen-log (eval `(cmd (sym2str ,,func-sym) ,@last-vals)))
+
                   (results)
 
                   (resultsdirs
@@ -1570,7 +1578,6 @@ Reconstruct the entire yaml-ht for a different language."
                        " "
                        "current-prefix-arg: " (pps current-prefix-arg)))
 
-             (pen-log (cmd (sym2str ,func-sym)))
              (if no-select-result
                  results
                (if is-interactive
