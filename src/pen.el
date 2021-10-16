@@ -1157,6 +1157,14 @@ Reconstruct the entire yaml-ht for a different language."
                           (pen-var-value-maybe 'stop-sequence)
                           ,stop-sequence))))
 
+                  (final-stop-sequence
+                   (if (sor engine-max-stop-sequence-size)
+                       (let ((l (string-to-number
+                                 engine-max-stop-sequence-size)))
+                         (pen-log "Warning: stop sequence trimmed")
+                         (s-left l final-stop-sequence))
+                     final-stop-sequence))
+
                   (final-translator
                    (expand-template
                     (str (or (pen-var-value-maybe 'translator)
@@ -2027,6 +2035,10 @@ Function names are prefixed with pf- for easy searching"
                                            1))
                         (n-target (or (ht-get yaml-ht "n-target")
                                       1))
+
+                        (engine-max-stop-sequence-size (or (ht-get yaml-ht "engine-max-stop-sequence-size")
+                                                   20))
+
                         (engine-min-generated-tokens
                          (or (ht-get yaml-ht "engine-min-generated-tokens")
                              3))
