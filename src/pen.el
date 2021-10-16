@@ -440,7 +440,7 @@ Reconstruct the entire yaml-ht for a different language."
   (pen-sn "awk 1" s))
 
 (defun tee-a (fp input)
-  (pen-sn (pen-cmd "tee -a" fp) (awk1 input)))
+  (pen-sn (pen-cmd "tee -a" fp) (awk1 (concat "\n" input))))
 
 (defun pen-log-final-prompt (prompt)
   (if (f-directory-p penconfdir)
