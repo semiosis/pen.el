@@ -3053,3 +3053,7 @@ May use to generate code from comments."
 
 (defun test-stop-validator ()
   (pen-snq "sed -z 's/\\n/<newline>/g' | grep -vq \"<newline>\"" "dlf\nkjsdf"))
+
+(defun pen-see-pen-command-hist ()
+  (interactive)
+  (find-file (f-join penconfdir "all-pen-commands.txt")))
