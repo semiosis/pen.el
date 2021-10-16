@@ -436,6 +436,12 @@ Reconstruct the entire yaml-ht for a different language."
 (defun tee (fp input)
   (pen-sn (pen-cmd "tee" fp) input))
 
+(defun awk1 (s)
+  (pen-sn "awk 1" s))
+
+(defun tee-a (fp input)
+  (pen-sn (pen-cmd "tee -a" fp) (awk1 input)))
+
 (defun pen-log-final-prompt (prompt)
   (if (f-directory-p penconfdir)
       (tee (f-join penconfdir "last-final-prompt.txt") prompt))
