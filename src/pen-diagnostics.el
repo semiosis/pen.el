@@ -4,6 +4,8 @@
                  :semantic-path (get-path-semantic)
                  :last-final-command (pen-snc "cat ~/.pen/last-final-command.txt")
                  :last-final-prompt (pen-snc "cat ~/.pen/last-final-prompt.txt")
+                 :last-pen-command-exprs (pen-snc "cat ~/.pen/last-pen-command-exprs.txt")
+                 :last-pen-command (pen-snc "cat ~/.pen/last-pen-prompt.txt")
                  :pen-force-engine pen-force-engine
                  :lm-complete-stderr (pen-snc (pen-cmd "cat" "/tmp/lm-complete-stderr.txt"))
                  :lm-complete-stdout (pen-snc (pen-cmd "cat" "/tmp/lm-complete-stdout.txt"))
