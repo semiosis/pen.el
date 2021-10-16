@@ -421,7 +421,7 @@ Reconstruct the entire yaml-ht for a different language."
            s)))
     s))
 
-(defun pen-prompt-snc (cmd resultnumber)
+(defun pen-prompt-snc (pen-cmd resultnumber)
   "This is like pen-snc but it will memoize the function. resultnumber is necessary because we want n unique results per function"
   (if (f-directory-p penconfdir)
       (tee (f-join penconfdir "last-final-command.txt") cmd))
@@ -579,10 +579,10 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-find-file (path)
   "Create directories and edit file"
-  (pen-snc (cmd "mkdir" "-p" (f-dirname path)))
+  (pen-snc (pen-cmd "mkdir" "-p" (f-dirname path)))
   (if (re-match-p "/$" path)
       (progn
-        (pen-snc (cmd "mkdir" "-p" path))
+        (pen-snc (pen-cmd "mkdir" "-p" path))
         (find-file path))
     (progn
       (f-touch path)
@@ -599,10 +599,10 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-touch-file (path)
   "Create directories and edit file"
-  (pen-snc (cmd "mkdir" "-p" (f-dirname path)))
+  (pen-snc (pen-cmd "mkdir" "-p" (f-dirname path)))
   (if (re-match-p "/$" path)
       (progn
-        (pen-snc (cmd "mkdir" "-p" path)))
+        (pen-snc (pen-cmd "mkdir" "-p" path)))
     (progn
       (f-touch path))))
 
@@ -1350,8 +1350,10 @@ Reconstruct the entire yaml-ht for a different language."
                      ;; data
                      ))
 
-                  (pen-log (eval `(cmd (sym2str ,,func-sym) ,@last-vals-exprs)))
-                  (pen-log (eval `(cmd (sym2str ,,func-sym) ,@last-vals)))
+                  (tempa
+                   (progn
+                     (pen-log (eval `(pen-cmd (sym2str ',',func-sym) ,@last-vals-exprs)))
+                     (pen-log (eval `(pen-cmd (sym2str ',',func-sym) ,@last-vals)))))
 
                   (results)
 
