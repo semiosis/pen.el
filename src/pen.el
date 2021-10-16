@@ -421,7 +421,7 @@ Reconstruct the entire yaml-ht for a different language."
            s)))
     s))
 
-(defun pen-prompt-snc (pen-cmd resultnumber)
+(defun pen-prompt-snc (cmd resultnumber)
   "This is like pen-snc but it will memoize the function. resultnumber is necessary because we want n unique results per function"
   (if (f-directory-p penconfdir)
       (tee (f-join penconfdir "last-final-command.txt") cmd))
