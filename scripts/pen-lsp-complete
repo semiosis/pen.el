@@ -34,7 +34,7 @@ fi
 # I should just intercept a request and investigate its structure
 
 # stdin may exist and it should go into pen
-IFS= read -rd '' RESULTS < <(pena pf-generic-completion-50-tokens/1);typeset -p RESULTS &>/dev/null
+# IFS= read -rd '' RESULTS < <(pena pf-generic-completion-50-tokens/1);typeset -p RESULTS &>/dev/null
 
 # I have one result so far but make more and return JSON.
 
@@ -44,40 +44,4 @@ IFS= read -rd '' RESULTS < <(pena pf-generic-completion-50-tokens/1);typeset -p 
 
 # jq '[.[] | {label: .}]'
 
-export NAME="port->"
-export KIND=13
-
-# This shouldn't matter, I hope
-export LOCATION_URI="file:///home/shane/scripts/glob-grep.rkt"
-export LOCATION_RANGE_END_CHARACTER=8
-export LOCATION_RANGE_END_LINE=3
-export LOCATION_RANGE_START_CHARACTER=2
-export LOCATION_RANGE_START_LINE=3
-
-IFS= read -r -d '' JQ_CODE <<HEREDOC
-{
-  "jsonrpc": "2.0",
-  "id": 2896,
-  "result": [
-    {
-      "name":  env.NAME
-      "kind": env.KIND,
-      "location": {
-        "uri": env.LOCATION_URI,
-        "range": {
-          "end": {
-            "character": env.LOCATION_RANGE_END_CHARACTER,
-            "line": env.LOCATION_RANGE_END_LINE
-          },
-          "start": {
-            "character": env.LOCATION_RANGE_START_CHARACTER,
-            "line": env.LOCATION_RANGE_START_LINE
-          }
-        }
-      }
-    }
-  ]
-}
-HEREDOC
-
-jq -n "$JQ_CODE"
+pena pf-generic-completion-50-tokens/1 | jq '[.[] | {label: .}]' | tv
