@@ -2195,7 +2195,13 @@ Function names are prefixed with pf- for easy searching"
                            n))
                         (aims (vector2list (ht-get yaml-ht "aims")))
                         (past-versions (vector2list (ht-get yaml-ht "past-versions")))
-                        (external-related (vector2list (ht-get yaml-ht "external-related")))
+                        (external-related
+                         (let* ((n (ht-get yaml-ht "external-related")))
+                           (if n
+                               (cond
+                                ((stringp n) (list n))
+                                ((vectorp n) (vector2list (ht-get yaml-ht "external-related")))
+                                (t nil)))))
                         (related-prompts (vector2list (ht-get yaml-ht "related-prompts")))
                         (future-titles (vector2list (ht-get yaml-ht "future-titles")))
 
