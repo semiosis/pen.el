@@ -43,9 +43,16 @@
   :group 'lsp-pen
   :package-version '(lsp-mode . "8.0.0"))
 
+(defcustom lsp-pen-language-features-completion t
+  "Enable/disable completion."
+  :type 'boolean
+  :group 'lsp-pen
+  :package-version '(lsp-mode . "8.0.0"))
+
 (lsp-register-custom-settings
  '(("pen.languageFeatures.codeActions" lsp-pen-language-features-code-actions t)
-   ("pen.languageFeatures.executeCommand" lsp-pen-language-features-execute-command t)))
+   ("pen.languageFeatures.executeCommand" lsp-pen-language-features-execute-command t)
+   ("pen.languageFeatures.completion" lsp-pen-language-features-completion t)))
 
 ;; (defvar pen-lsp--config-options `())
 
