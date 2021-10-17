@@ -34,13 +34,15 @@ fi
 # I should just intercept a request and investigate its structure
 
 # stdin may exist and it should go into pen
-IFS= read -rd '' RESULT < <(penf pf-generic-completion-50-tokens/1);typeset -p RESULT &>/dev/null
+IFS= read -rd '' RESULTS < <(pena pf-generic-completion-50-tokens/1);typeset -p RESULTS &>/dev/null
 
 # I have one result so far but make more and return JSON.
 
 # The individual word doesn't matter at this stage.
 # Perhaps I should just calculate it from the last word in the input.
 # Yeah, I'll do that.
+
+# jq '[.[] | {label: .}]'
 
 export NAME="port->"
 export KIND=13
