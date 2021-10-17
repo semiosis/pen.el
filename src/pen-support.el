@@ -869,13 +869,19 @@ when s is a string, set the clipboard to s"
   ;; (setq initial-input (bs "\"" initial-input))
   ;; (setq initial-input (bs "\n" initial-input))
 
+  ;; (etv (completing-read-hist "test2: " "test\nt\\nest"))
+  (setq initial-input (qne initial-input))
+
   (eval `(progn
            (let ((inhibit-quit t))
              (or (with-local-quit
                    (let* ((completion-styles
                            '(basic))
                           (s (str (pen-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil)))
-                          (s (string-replace "\\n" "\n" s)))
+                          ;; (s (string-replace "\\n" "\n" s))
+
+                          ;; Using the perl script isn't ideal
+                          (s (uq s)))
 
                      (setq ,histvar (seq-uniq ,histvar 'string-equal))
                      s))
