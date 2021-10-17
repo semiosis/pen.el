@@ -1,4 +1,55 @@
 #!/bin/bash
 export TTY
 
-penf -u pf-generic-completion-50-tokens/1 "$@"
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    # 0</dev/null env | tv &>/dev/null
+    # cmd "$@" | tv &>/dev/null
+
+    input_fp="$(cat | pen-tf txt)"
+
+    if test -n "$POSITION"; then
+        line="$(echo "$POSITION" | cut -d : -f 1)"
+        col="$(echo "$POSITION" | cut -d : -f 2)"
+
+        this_line="$(( line + 1 ))"
+        next_line="$(( line + 2 ))"
+
+        sed -i "$next_line,\$d" "$input_fp"
+        sed -i "${this_line}s/^\\(.\\{$col\\}\\).*\$/\\1/" "$input_fp"
+    fi
+
+    exec < <(cat "$input_fp")
+fi
+
+# tv &>/dev/null
+# cmd "$MYGIT/semiosis/pen.el/scripts/$sn" "$@" | tv &>/dev/null
+
+# What should the output look like?
+
+# It looks like json. I have to structure the json
+# I should just intercept a request and investigate its structure
+
+# stdin may exist and it should go into pen
+IFS= read -rd '' RESULT < <("penf" pf-generic-completion-50-tokens/1);typeset -p PEN_STOP_SEQUENCE &>/dev/null
+
+# I have one result so far but make more and return JSON.
+
+# The individual word doesn't matter at this stage.
+# Perhaps I should just calculate it from the last word in the input.
+# Yeah, I'll do that.
+
+export NAME="port->"  
+export KIND=13  
+
+# This shouldn't matter, I hope
+export LOCATION_URI="file:///home/shane/scripts/glob-grep.rkt"  
+export LOCATION_RANGE_END_CHARACTER=8  
+export LOCATION_RANGE_END_LINE=3  
+export LOCATION_RANGE_START_CHARACTER=2  
+export LOCATION_RANGE_START_LINE=3  
+
+jq -n '{jsonrpc: "2.0", id: 2896, result: [{name: env.NAME, kind: env.KIND, location: {uri: env.LOCATION_URI, range: {end: {character: env.LOCATION_RANGE_END_CHARACTER, line: env.LOCATION_RANGE_END_LINE}, start: {character: env.LOCATION_RANGE_START_CHARACTER, line: env.LOCATION_RANGE_START_LINE}}}}]}'  
