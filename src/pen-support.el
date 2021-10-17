@@ -184,13 +184,15 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
  (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line")))
  (upd (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line")))))
 
-(defun test-upd2 ()
-  (interactive)
-  (etv (pps (upd (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line")))))))
+;; This was running prompt functions on load
 
-(defun test-upd ()
-  (interactive)
-  (etv (pps (eval `(upd (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line"))))))))
+;; (defun test-upd2 ()
+;;   (interactive)
+;;   (etv (pps (upd (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line")))))))
+
+;; (defun test-upd ()
+;;   (interactive)
+;;   (etv (pps (eval `(upd (pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line"))))))))
 
 (defmacro noupd (&rest body)
   `(let ((pen-sh-update nil)) ,@body))
@@ -861,7 +863,11 @@ when s is a string, set the clipboard to s"
            (listp histvar))
       (setq initial-input (first histvar)))
 
-  (setq initial-input (string-replace "\n" "\\n" initial-input))
+  ;; (etv (completing-read-hist "test: " (snc "cat $PROMPTS/generate-transformative-code.prompt | yq -r '.examples[0]'")))
+  ;; (etv (qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
+  ;; (eval-string (concat "\"" (qne "lskjdfldks\ndshi\\nslkfjof") "\""))
+  ;; (setq initial-input (bs "\"" initial-input))
+  ;; (setq initial-input (bs "\n" initial-input))
 
   (eval `(progn
            (let ((inhibit-quit t))

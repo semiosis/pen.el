@@ -1731,7 +1731,7 @@ Otherwise, it will be a shell expression template")
      (vector2list
       (ht-get
        (mu
-        (pen-prompt-file-load "$PROMPTS/funny-riddle.prompt"))
+        (pen-prompt-file-load "$PROMPTS/generate-transformative-code.prompt"))
        "examples"))))))
 
 ;; This is a hash table
