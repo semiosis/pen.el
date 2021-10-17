@@ -15,6 +15,38 @@
   ;; `(,pen-lsp-executable-path "--lib" "pen-langserver" ,@pen-lsp-server-args)
   `(,pen-lsp-executable-path ,@pen-lsp-server-args))
 
+
+;; (etv (pps (lsp-configuration-section "pylsp")))
+;; (etv (pps (lsp-configuration-section "pen")))
+
+;; Ensure these are set
+
+;; {
+;;     "initializationOptions": {
+;;         "documentFormatting": true,
+;;         "hover": true,
+;;         "documentSymbol": true,
+;;         "codeAction": true,
+;;         "completion": true
+;;     }
+;; }
+
+(defcustom lsp-pen-language-features-code-actions t
+  "Enable/disable code actions."
+  :type 'boolean
+  :group 'lsp-pen
+  :package-version '(lsp-mode . "8.0.0"))
+
+(defcustom lsp-pen-language-features-execute-command t
+  "Enable/disable execute command."
+  :type 'boolean
+  :group 'lsp-pen
+  :package-version '(lsp-mode . "8.0.0"))
+
+(lsp-register-custom-settings
+ '(("pen.languageFeatures.codeActions" lsp-pen-language-features-code-actions t)
+   ("pen.languageFeatures.executeCommand" lsp-pen-language-features-execute-command t)))
+
 (defvar pen-lsp--config-options `())
 
 ;; Set up for text-mode currently
@@ -27,7 +59,10 @@
                   :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
                                       (lsp--set-configuration
-                                       `(:pen ,pen-lsp--config-options))))))
+                                       (lsp-configuration-section "pen")
+                                       ;; (lsp-configuration-section "pen")
+                                       ;; `(:pen ,pen-lsp--config-options)
+                                       )))))
 
 (add-hook 'text-mode-hook #'lsp)
 (remove-hook 'text-mode-hook #'lsp)
