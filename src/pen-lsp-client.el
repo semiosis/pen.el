@@ -47,7 +47,7 @@
  '(("pen.languageFeatures.codeActions" lsp-pen-language-features-code-actions t)
    ("pen.languageFeatures.executeCommand" lsp-pen-language-features-execute-command t)))
 
-(defvar pen-lsp--config-options `())
+;; (defvar pen-lsp--config-options `())
 
 ;; Set up for text-mode currently
 
