@@ -850,6 +850,11 @@ when s is a string, set the clipboard to s"
 ;; To get around an annoying error message
 (defvar histvar nil)
 
+(defun uq (input)
+  "Unquotes"
+  (interactive)
+  (cl-sn "uq" :stdin input :chomp t))
+
 (defun completing-read-hist (prompt &optional initial-input histvar default-value)
   "read-string but with history and newline evaluation."
   (setq initial-input (or initial-input
