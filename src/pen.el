@@ -515,14 +515,15 @@ Reconstruct the entire yaml-ht for a different language."
                    ;; "   import python\n\n   from Function f\n   where f.getName().matches(\"get%\") and f.isMethod()\n   select f, \"This is a method called get...\"\n"
                    ,(pen-snc "pen-str onelineify" "   import python\n\n   from Function f\n   where f.getName().matches(\"get%\") and f.isMethod()\n   select f, \"This is a method called get...\"\n")))
            (var-keyvals-slugged
-            '(("my-name" . "Shane")))
+            '(("my-name" . "Shane")
+              ("output" . "OUTPUT")))
            (var-keyvals
             '(("my name" . "Shane")))
            (ret
             (cl-loop for stsq in '("###" "\n"
                                    "Alpha <meta> Omega"
                                    "First <intra> last"
-                                   "Once <2> a time, <my name> said <4>...\n")
+                                   "Once <2> a time <output>, <my name> said <4>...\n")
                      collect
                      ;; stsq
                      (expand-template stsq))))
