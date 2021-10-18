@@ -22,7 +22,7 @@
 (require 'pcre2el)
 (require 'asoc)
 (require 'transducer)
-(require 'lsp)
+(require 'lsp-mode)
 (require 'lsp-ui)
 (require 'pen-company-lsp)
 
