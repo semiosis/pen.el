@@ -334,11 +334,12 @@ case "$sn" in
             use_tty=y
 
             if stdin_exists; then
-                in="$(cat)"
+                in="$(cat | qne)"
 
                 if test "$1" = {}; then
                     shift
 
+                    # This has issues
                     set -- "$in" "$@"
                 elif test "$#" -gt 1; then
                     i=1
