@@ -148,6 +148,12 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 The string replace part is still a regular emacs replacement pattern, not PCRE"
   (eval `(replace-regexp-in-string (pcre-to-elisp pat ,@body) rep s)))
 
+(defun e/escape-string (&rest strings)
+  (let ((print-escape-newlines t))
+    (s-join " " (mapcar 'prin1-to-string strings))))
+(defalias 'e/q 'e/escape-string)
+;; (defalias 'q 'e/escape-string)
+
 (defun qne (string)
   "Like q but without the end quotes"
   (pcre-replace-string "\"(.*)\"" "\\1" (e/q string)))
