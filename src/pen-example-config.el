@@ -328,6 +328,8 @@
 (add-to-list 'pen-editing-functions 'rcm-term)
 (add-to-list 'pen-editing-functions 'pen-autofix-lsp-errors)
 
+(define-key global-map (kbd "M-2") #'company-lsp)
+
 (define-key pen-map (kbd "H-@") 'pen-see-pen-command-hist)
 
 ;; (call-interactively 'pen-add-key-booste)
