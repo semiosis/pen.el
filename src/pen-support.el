@@ -850,10 +850,10 @@ when s is a string, set the clipboard to s"
 ;; To get around an annoying error message
 (defvar histvar nil)
 
-(defun uq (input)
+(defun pen-uq (input)
   "Unquotes"
   (interactive)
-  (cl-sn "uq" :stdin input :chomp t))
+  (pen-cl-sn "uq" :stdin input :chomp t))
 
 (defun completing-read-hist (prompt &optional initial-input histvar default-value)
   "read-string but with history and newline evaluation."
@@ -892,7 +892,7 @@ when s is a string, set the clipboard to s"
                           ;; (s (string-replace "\\n" "\n" s))
 
                           ;; Using the perl script isn't ideal
-                          (s (uq s)))
+                          (s (pen-uq s)))
 
                      (setq ,histvar (seq-uniq ,histvar 'string-equal))
                      s))
