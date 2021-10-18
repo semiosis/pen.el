@@ -2623,6 +2623,18 @@ But use the results-analyser."
   (let ((overrides
          (flatten-once
           (list
+           (if (sor pen-force-engine)
+               (progn
+                 (pen-log "Forcing engine:")
+                 (pen-log "Forcing engine n-completions")
+                 (pen-log "Forcing engine model")
+                 (pen-log "Forcing engine all keys etc.")
+                 (let* ((engine (ht-get pen-engines pen-force-engine))
+                        (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                        (vals (ht-values engine))
+                        (tups (-zip-lists keys vals)))
+                   tups)))
+
            (if pen-force-temperature
                (list `(temperature pen-force-temperature)))
 
@@ -2639,23 +2651,11 @@ But use the results-analyser."
 
            (if pen-force-n-completions
                (list `(n-completions pen-force-n-completions)))
-
            (if pen-force-few-completions
                (list `(n-completions 3)
                      ;; Also, ensure n-collate = 1 because
                      ;; n-completions may be emulated with collate
-                     `(n-collate 1)))
-           (if (sor pen-force-engine)
-               (progn
-                 (pen-log "Forcing engine:")
-                 (pen-log "Forcing engine n-completions")
-                 (pen-log "Forcing engine model")
-                 (pen-log "Forcing engine all keys etc.")
-                 (let* ((engine (ht-get pen-engines pen-force-engine))
-                        (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                        (vals (ht-values engine))
-                        (tups (-zip-lists keys vals)))
-                   tups)))))))
+                     `(n-collate 1)))))))
     `(eval
       `(let ,',overrides
          ,',@body))))
