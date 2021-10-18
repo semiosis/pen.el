@@ -2,13 +2,19 @@
 
 (defalias 's-replace-regexp 'replace-regexp-in-string)
 
-;; (defun f-basename (path)
-;;   ;; (pen-snc (pen-cmd "basename" path))
-;;   (s-replace-regexp ".*/" "" path))
+(defun pen-f-basename (path)
+  ;; (pen-snc (pen-cmd "basename" path))
+  (s-replace-regexp ".*/" "" (or path
+                                 "")))
+
+(defun f-mant (path)
+  ;; (pen-snc (pen-cmd "mant" path))
+  (s-replace-regexp "\\..*" "" (pen-f-basename path)))
+
 (defalias 'f-basename 'f-filename)
 (defun f-mant (path)
   ;; (pen-snc (pen-cmd "mant" path))
-  (s-replace-regexp "\\..*" "" (f-basename path)))
+  (s-replace-regexp "\\..*" "" (pen-f-basename path)))
 
 (defalias 'sym2str 'symbol-name)
 (defalias 'str2sym 'intern)

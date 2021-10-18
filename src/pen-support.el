@@ -6,14 +6,6 @@
 ;; (defun f-join (&rest strings)
 ;;   (s-join "/" strings))
 
-(defun f-basename (path)
-  ;; (pen-snc (pen-cmd "basename" path))
-  (s-replace-regexp ".*/" "" path))
-
-(defun f-mant (path)
-  ;; (pen-snc (pen-cmd "mant" path))
-  (s-replace-regexp "\\..*" "" (f-basename path)))
-
 (defun pen-tf (template &optional input ext)
   "Create a temporary file."
   (setq ext (or ext "txt"))
@@ -59,9 +51,9 @@
        ((or
          (re-match-p "glossary\\.txt$" fp)
          (re-match-p "words\\.txt$" fp))
-        (f-mant (f-basename (f-dirname (buffer-file-name)))))
+        (f-mant (pen-f-basename (f-dirname (buffer-file-name)))))
        (t
-        (f-mant (f-basename (buffer-file-name)))))))
+        (f-mant (pen-f-basename (buffer-file-name)))))))
 
 (defun url-found-p (url)
   "Return non-nil if URL is found, i.e. HTTP 200."

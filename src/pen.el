@@ -1845,7 +1845,7 @@ Otherwise, it will be a shell expression template")
            (let* ((yaml-ht (ht-get pen-prompts yaml-key))
                   (path (ht-get yaml-ht "path"))
                   (dn (f-dirname path))
-                  (fn (f-basename path))
+                  (fn (pen-f-basename path))
                   (newfn (s-replace-regexp "^pf-" "" (concat (slugify yaml-key) ".prompt")))
                   (newpath (f-join dn newfn))
 
