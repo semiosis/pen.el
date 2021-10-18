@@ -2625,6 +2625,7 @@ But use the results-analyser."
           (list
            (if pen-force-temperature
                (list `(temperature pen-force-temperature)))
+
            (if pen-force-single-collation
                (list `(pen-single-generation-b t)
                      `(n-collate 1)))
