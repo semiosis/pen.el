@@ -89,6 +89,7 @@ functions into each other.
 - Controllable prompt generation with YASnippet
   - https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
 - Runs as a web application
+- Runs as an LSP Server using =efm-langserver=
 - Dockerized Emacs GUI with full clipboard support to the host
 - Client/server model
   - Connect multiple clients to =Pen.el=
