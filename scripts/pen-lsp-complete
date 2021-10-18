@@ -4,6 +4,8 @@ export TTY
 # Number of characters. This is a fair few.
 max_context_length=1000
 
+export UPDATE=y
+
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
@@ -50,4 +52,4 @@ fi
 
 # jq '[.[] | {label: .}]'
 
-ci pena pf-generic-completion-50-tokens/1 | jq .[] | sed -e 's/^"//' -e 's/"$//' | sed "s/\\\n/<pen-newline>/g"
+ci pena pf-generic-completion-50-tokens/1 | jq .[] | sed -e 's/^"//' -e 's/"$//' | sed "s/\\\n/<pen-nl>/g"
