@@ -274,8 +274,13 @@ Reconstruct the entire yaml-ht for a different language."
              if (>= (car tp) start-pos)
              return (car tp))))
 
+(defun pen-position-bytes (pos)
+  (if (= 0 pos)
+      0
+    (position-bytes pos)))
+
 (defun pen-byte-pos ()
-  (position-bytes (point)))
+  (pen-position-bytes (point)))
 
 (defun byte-string-search (needle haystack)
   "get byte position or needing in haystack"
@@ -283,7 +288,7 @@ Reconstruct the entire yaml-ht for a different language."
         (pos (pen-string-search needle haystack)))
     (if pos
         (with-current-buffer b
-          (let ((y (position-bytes pos)))
+          (let ((y (pen-position-bytes pos)))
             (kill-buffer b)
             y))
       (progn
@@ -294,7 +299,7 @@ Reconstruct the entire yaml-ht for a different language."
   "This is useful to force spelling in prompts"
   (pen-snc "sed 's/./\\[\\U&\\]/g'" s))
 
-(defun pen-expand-template (s vals &optional encode)
+(defun pen-expand-template (s vals &optional encode pipelines)
   "expand template from list"
   (if vals
       (let ((i 1))
@@ -303,6 +308,19 @@ Reconstruct the entire yaml-ht for a different language."
            (cl-loop
             for val in vals do
             (if encode (setq val (pen-encode-string val)))
+
+            (loop for pl
+                  in pipelines
+                  do
+                  (let ((plf (format "<%s:%i>" (car pl) i))
+                        (plf2 (format "<%s<pen-colon>%i>" (car pl) i)))
+
+                    (cond-all
+                     ((re-match-p (pen-unregexify plf) s)
+                      (setq s (string-replace plf (pen-snc (cdr pl) (chomp val)) s)))
+                     ((re-match-p (pen-unregexify plf2) s)
+                      (setq s (string-replace plf2 (pen-snc (cdr pl) (chomp val)) s))))))
+
             (let ((unquoted (format "<%d>" i))
                   (quoted (format "<q:%d>" i))
                   (quoted2 (format "<q<pen-colon>%d>" i))
@@ -375,7 +393,7 @@ Reconstruct the entire yaml-ht for a different language."
     `(progn
        ,@whens)))
 
-(defun pen-expand-template-keyvals (s keyvals &optional encode)
+(defun pen-expand-template-keyvals (s keyvals &optional encode pipelines)
   "expand template from alist"
   (if keyvals
       (let ((i 1))
@@ -388,6 +406,25 @@ Reconstruct the entire yaml-ht for a different language."
                    (val (if encode
                             (pen-encode-string val)
                           val)))
+
+              (loop for pl
+                     in pipelines
+                     do
+                     (let ((plf (format "<%s:%s>" (car pl) key))
+                           (plf2 (format "<%s<pen-colon>%s>" (car pl) key)))
+
+                       (cond-all
+                        ((re-match-p (pen-unregexify plf) s)
+                         (setq s (string-replace plf (pen-snc (cdr pl) (chomp val)) s)))
+                        ((re-match-p (pen-unregexify plf2) s)
+                         (setq s (string-replace plf2 (pen-snc (cdr pl) (chomp val)) s))))))
+
+              ;; (comment
+              ;;  (pen-cartesian-product '("foo" "bar" "baz") '("einie" "mienie" "meinie" "mo"))
+              ;;  ;; (mapcar 'car '(("hello" . "there") ("about" . "time")))
+              ;;  (mapcar 'car pipelines)
+              ;;  (car (assoc "uc" '(("uc" . "pen-str uc")))))
+
               (let ((unquoted (format "<%s>" key))
                     (quoted (format "<q:%s>" key))
                     (quoted2 (format "<q<pen-colon>%s>" key))
@@ -652,15 +689,15 @@ Reconstruct the entire yaml-ht for a different language."
                            (pen-onelineify-safe it)
                            ;; TODO Replace the engine-delimiter
                            ;; <delim>
-                           (pen-expand-template-keyvals it subprompts-al t)
-                           (pen-expand-template it vals t)
+                           (pen-expand-template-keyvals it subprompts-al t final-pipelines)
+                           (pen-expand-template it vals t )
                            ;; I also want to encode newlines into <pen-newline> and <pen-dnl>
                            ;; But only for delim
-                           (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t)
-                           (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t)
-                           (pen-expand-template-keyvals it var-keyvals-slugged t)
-                           (pen-expand-template-keyvals it var-keyvals t)
-                           (pen-expand-template-keyvals it final-defs t)
+                           (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t final-pipelines)
+                           (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
+                           (pen-expand-template-keyvals it var-keyvals-slugged t final-pipelines)
+                           (pen-expand-template-keyvals it var-keyvals t final-pipelines)
+                           (pen-expand-template-keyvals it final-defs t final-pipelines)
                            (pen-unonelineify-safe it))))
 
            (setq pen-last-prompt-data '((face . ink-generated)
@@ -815,7 +852,7 @@ Reconstruct the entire yaml-ht for a different language."
                        ',defs))
 
                   ;; Pipelines are just some named shell pipelines that a specific to a prompt
-                  ;; that come with the prompt. They're not very useful. But they may also be used inside expressions.
+                  ;; that come with the prompt.
                   (final-pipelines
                    (or (pen-var-value-maybe 'pipelines)
                        ',pipelines))
@@ -824,11 +861,18 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'expressions)
                        ',expressions))
 
-                  ;; pipelines are available to expressions
+                  ;; pipelines are available to expressions as <pipeline> expressions
+                  ;; pipelines are also available the 'expand-template' in this way <pipeline:var>
                   ;; Expressions may be used inside various prompt parameters, such as max-tokens
                   (final-expressions
                    (if final-expressions
-                       (mapcar (lambda (pp) (pen-expand-template-keyvals pp final-pipelines)) final-expressions)
+                       (mapcar (lambda (pp)
+                                 (pen-expand-template-keyvals
+                                  pp
+                                  final-pipelines
+                                  nil
+                                  final-pipelines))
+                               final-expressions)
                      final-expressions))
 
                   (final-preprocessors
@@ -837,7 +881,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-preprocessors
                    (if final-preprocessors
-                       (mapcar (lambda (pp) (pen-expand-template-keyvals pp final-pipelines)) final-preprocessors)
+                       (mapcar (lambda (pp) (pen-expand-template-keyvals pp final-pipelines nil final-pipelines)) final-preprocessors)
                      final-preprocessors))
 
                   (subprompts-al
@@ -1413,11 +1457,12 @@ Reconstruct the entire yaml-ht for a different language."
                              ;; Update the collation-temperature
                              (if (sor final-collation-temperature-stepper)
                                  (progn
-                                   (setq collation-temperature (str
-                                                                (eval-string
-                                                                 (pen-expand-template-keyvals
-                                                                  final-collation-temperature-stepper
-                                                                  `(("temperature" . ,collation-temperature))))))
+                                   (setq collation-temperature
+                                         (str
+                                          (eval-string
+                                           (pen-expand-template-keyvals
+                                            final-collation-temperature-stepper
+                                            `(("temperature" . ,collation-temperature))))))
                                    (evil--add-to-alist
                                     'collation-data
                                     "PEN_TEMPERATURE"
@@ -2950,10 +2995,13 @@ May use to generate code from comments."
 
 (defun pen-load-test ()
   (interactive)
-  (let* ((fp "/home/shane/source/git/spacemacs/prompts/prompts/test-imaginary-equivalence-2.prompt")
+  (let* (
+         ;; (fp "/home/shane/source/git/spacemacs/prompts/prompts/test-imaginary-equivalence-2.prompt")
+         (fp "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/imagine-a-man-page-1.prompt")
          (yaml-ht (yamlmod-read-file fp))
          ;; (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
-         (var (ht-get yaml-ht "n-completions")))
+         ;; (var (ht-get yaml-ht "n-completions"))
+         (var (pen--htlist-to-alist (ht-get yaml-ht "pipelines"))))
     (etv (pps var))))
 
 (defun pen-load-vars ()
