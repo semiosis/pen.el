@@ -737,6 +737,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'evaluator)
                        ,evaluator))
 
+                  (final-variadic-var
+                   (or (pen-var-value-maybe 'variadic-var)
+                       ,variadic-var))
+
                   (final-delimiter
                    (or (pen-var-value-maybe 'delimiter)
                        ,delimiter
@@ -2030,6 +2034,8 @@ Function names are prefixed with pf- for easy searching"
                         (title-slug (slugify title))
 
                         (aliases (vector2list (ht-get yaml-ht "aliases")))
+
+                        (variadic-var (vector2list (ht-get yaml-ht "variadic-var")))
 
                         ;; lm-complete
                         (cache (pen-yaml-test yaml-ht "cache"))
