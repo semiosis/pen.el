@@ -1,8 +1,8 @@
 #!/bin/bash
 export TTY
 
-# Number of characters
-max_context_length=200
+# Number of characters. This is a fair few.
+max_context_length=1000
 
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
