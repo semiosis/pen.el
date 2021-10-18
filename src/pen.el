@@ -580,8 +580,6 @@ Reconstruct the entire yaml-ht for a different language."
 
   val)
 
-
-
 (defun pen-maybe-uniq (no-uniq lst)
   (if no-uniq
       lst
@@ -2891,11 +2889,7 @@ But use the results-analyser."
   (if (string-empty-p (s-chompall (buffer-string)))
       (eval `(pf-generate-the-contents-of-a-new-file/6
               preceding-text
-              nil
-              nil
-              nil
-              nil
-              nil
+              nil nil nil nil nil
               ,@args))
     (if (and (or (derived-mode-p 'prog-mode)
                  (derived-mode-p 'term-mode))
@@ -2995,7 +2989,6 @@ May use to generate code from comments."
                 ")"))))
     (if f
         (xc (concat "pen " sig)))))
-
 
 ;; I need access to the existing completions.
 ;; I may need to actually keep track of the inputs I have made.
