@@ -61,7 +61,8 @@
 (lsp-register-client
  (make-lsp-client :new-connection
                   (lsp-stdio-connection 'pen-lsp--server-command)
-                  :major-modes '(org-mode text-mode eww-mode)
+                  :major-modes '(org-mode text-mode eww-mode
+                                          awk-mode)
                   :server-id 'pen
                   :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
@@ -338,6 +339,7 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 ;; j:company-lsp--candidates-async
 
 (add-to-list 'lsp-language-id-configuration `(org-mode . "org"))
+(add-to-list 'lsp-language-id-configuration `(awk-mode . "awk"))
 
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
