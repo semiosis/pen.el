@@ -333,5 +333,9 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 
 
 
+;; $EMACSD/manual-packages/company-lsp/company-lsp.el
+;; Sadly can't override because of lexical scope
+;; j:company-lsp--candidates-async
+
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
