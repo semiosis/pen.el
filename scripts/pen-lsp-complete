@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# Number of characters
+max_context_length=200
+
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
@@ -11,7 +14,7 @@ if stdin_exists; then
 
     input_fp="$(pen-tf txt)"
 
-    cat > "$input_fp"
+    cat | cut -c"1-$max_context_length" > "$input_fp"
 
     if test -n "$POSITION"; then
         line="$(echo "$POSITION" | cut -d : -f 1)"
