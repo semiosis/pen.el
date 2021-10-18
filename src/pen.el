@@ -672,7 +672,7 @@ Reconstruct the entire yaml-ht for a different language."
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor/3 "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
 (defun define-prompt-function ()
   (eval
-   ;; ANnoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
+   ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
    `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match variadic-var))
       ,doc
       (interactive ,(cons 'list iargs))

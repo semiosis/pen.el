@@ -365,6 +365,23 @@ case "$sn" in
 
             if ! printf -- "%s\n" "$pfname" | grep -q -P '/[0-9]*'; then
                 pfname="$pfname/$#"
+            else
+                # If the arity is specified, then take any extras and use as the variadic_arg
+
+                arity="$(printf -- "%s" "$pfname" | cut -d / -f 2)"
+                transultimate_pos="$((arity + 1))"
+
+                variadic_arg_arr=("${@:transultimate_pos}")
+                variadic_arg="$(cmd-nice "${variadic_arg_arr[@]}")"
+
+                # Only keep the regular vars
+                set -- "${@:1:$arity}"
+            fi
+
+            if test -n "$variadic_arg"; then
+                variadic_arg="'($variadic_arg)"
+            else
+                variadic_arg=nil
             fi
 
             CMD="$(cmd-nice "$@")"
@@ -381,17 +398,21 @@ case "$sn" in
                 no_gen=nil
             fi
 
+            # if test "$DEBUG" = "y"; then
+            #     echo "(json-encode-list (pen-batch (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg))))" | tv &>/dev/null
+            # fi
+
             if test "$all" = "y"; then
                 if test "$UPDATE" = y; then
-                    set -- -e "(json-encode-list (pen-batch (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen))))"
+                    set -- -e "(json-encode-list (pen-batch (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg))))"
                 else
-                    set -- -e "(json-encode-list (pen-batch ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen)))"
+                    set -- -e "(json-encode-list (pen-batch ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg)))"
                 fi
             else
                 if test "$UPDATE" = y; then
-                    set -- -e "(pen-list2str (pen-batch (pen-single-generation (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen)))))"
+                    set -- -e "(pen-list2str (pen-batch (pen-single-generation (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg)))))"
                 else
-                    set -- -e "(pen-list2str (pen-batch (pen-single-generation ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen))))"
+                    set -- -e "(pen-list2str (pen-batch (pen-single-generation ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg))))"
                 fi
             fi
 
