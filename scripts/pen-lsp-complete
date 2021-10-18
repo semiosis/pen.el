@@ -52,4 +52,4 @@ fi
 
 # jq '[.[] | {label: .}]'
 
-tv | ci pena pf-generic-completion-50-tokens/1 | jq .[] | sed -e 's/^"//' -e 's/"$//' | sed "s/\\\n/<pen-nl>/g"
+ci pena pf-generic-completion-50-tokens/1 | jq .[] | sed -e 's/^"//' -e 's/"$//' | sed "s/\\\n/<pen-nl>/g"
