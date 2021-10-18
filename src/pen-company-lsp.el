@@ -342,7 +342,7 @@ CANDIDATE is a string returned by `company-lsp--make-candidate'."
          (insert-text-format (gethash "insertTextFormat" item))
          (text-edit (gethash "textEdit" item))
          (additional-text-edits (gethash "additionalTextEdits" item)))
-    (setq insert-text (pen-unonelineify-safe insert-text)
+    (setq insert-text (pen-unonelineify-safe insert-text))
     (cond
      (text-edit
       (setq insert-text (gethash "newText" text-edit))
