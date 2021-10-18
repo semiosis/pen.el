@@ -1,8 +1,8 @@
 #!/bin/bash
 export TTY
 
-# Number of characters. This is a fair few.
-max_context_length=1000
+# Number of characters. I'm not using lsp much, so keep it reasonable
+max_context_length=300
 
 export UPDATE=y
 
