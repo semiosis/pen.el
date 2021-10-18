@@ -124,6 +124,18 @@
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-force-n-collate nil
+  ""
+  :type 'integer
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-force-n-completions nil
+  ""
+  :type 'integer
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-force-temperature nil
   "The temperature to force"
   :type 'float
@@ -132,6 +144,12 @@
 
 (defcustom pen-ink-disabled nil
   "Disable ink. Useful if it's breaking"
+  :type 'boolean
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-force-one nil
+  ""
   :type 'boolean
   :group 'pen
   :initialize #'custom-initialize-default)

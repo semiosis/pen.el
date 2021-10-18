@@ -2628,6 +2628,17 @@ But use the results-analyser."
            (if pen-force-single-collation
                (list `(pen-single-generation-b t)
                      `(n-collate 1)))
+
+           (if pen-force-one
+               (list `(n-collate 1)
+                     `(n-completions 1)))
+
+           (if pen-force-n-collate
+               (list `(n-collate pen-force-n-collations)))
+
+           (if pen-force-n-completions
+               (list `(n-completions pen-force-n-completions)))
+
            (if pen-force-few-completions
                (list `(n-completions 3)
                      ;; Also, ensure n-collate = 1 because
