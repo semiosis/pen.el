@@ -2636,7 +2636,9 @@ But use the results-analyser."
                         (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
                         (vals (ht-values engine))
                         (tups (-zip-lists keys vals)))
-                   tups)))
+                   (append
+                    `(engine ,pen-force-engine)
+                    tups))))
 
            (if pen-force-temperature
                (list `(temperature pen-force-temperature)))
@@ -2654,6 +2656,7 @@ But use the results-analyser."
 
            (if pen-force-n-completions
                (list `(n-completions pen-force-n-completions)))
+
            (if pen-force-few-completions
                (list `(n-completions 3)
                      ;; Also, ensure n-collate = 1 because
@@ -2687,8 +2690,7 @@ But use the results-analyser."
 
 (defun pen-force-custom-test ()
   (interactive)
-  (pen-etv
-   (pen-force-custom (message (str (pen-var-value-maybe 'n-collate))))))
+  (pen-etv (pen-force-custom (message (str (pen-var-value-maybe 'n-collate))))))
 
 ;; TODO I absolutely need to be using iλ functions everywhere
 (defmacro pen-one (&rest body)
