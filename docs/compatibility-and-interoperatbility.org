@@ -17,7 +17,7 @@
 - [-] =contentyze= API
   - http://gpt.contentyze.com/
   - https://medium.com/contentyze/text-generation-api-609c1d52cff1
-- [-] =GPT-Neo= 6b
+- [X] =GPT-Neo= 6b via nlpcloud
   - https://github.com/EleutherAI/gpt-neo
 - [-] =openai-server= (=GPT-2=)
   - https://github.com/shawwn/openai-server
