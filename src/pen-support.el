@@ -408,57 +408,58 @@ This appears to strip ansi codes.
 This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .prompt files"
   (interactive)
 
-  (if (not cmd)
-      (setq cmd "false"))
+  (let ((output))
+    (if (not cmd)
+        (setq cmd "false"))
 
-  (if (not dir)
-      (setq dir (get-dir)))
+    (if (not dir)
+        (setq dir (get-dir)))
 
-  (let ((default-directory dir))
-    (if b_unbuffer
-        (setq cmd (concat "unbuffer -p " cmd)))
+    (let ((default-directory dir))
+      (if b_unbuffer
+          (setq cmd (concat "unbuffer -p " cmd)))
 
-    (if (or (or
-             (pen-var-value-maybe 'pen-sh-update)
-             (>= (prefix-numeric-value current-global-prefix-arg) 16))
-            (or
-             (and (variable-p 'sh-update)
-                  (eval 'sh-update))
-             (>= (prefix-numeric-value current-prefix-arg) 16)))
-        (setq cmd (concat "export UPDATE=y; " cmd)))
+      (if (or (or
+               (pen-var-value-maybe 'pen-sh-update)
+               (>= (prefix-numeric-value current-global-prefix-arg) 16))
+              (or
+               (and (variable-p 'sh-update)
+                    (eval 'sh-update))
+               (>= (prefix-numeric-value current-prefix-arg) 16)))
+          (setq cmd (concat "export UPDATE=y; " cmd)))
 
-    (setq tf (make-temp-file "elisp_bash"))
-    (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
+      (setq tf (make-temp-file "elisp_bash"))
+      (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
 
-    (let ((exps
-           (sh-construct-exports
-            (-filter 'identity
-                     (list (list "PATH" (getenv "PATH"))
-                           (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
-                           (if (or (pen-var-value-maybe 'pen-sh-update)
-                                   (pen-var-value-maybe 'sh-update))
-                               (list "UPDATE" "y")))))))
-      (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))
+      (let ((exps
+             (sh-construct-exports
+              (-filter 'identity
+                       (list (list "PATH" (getenv "PATH"))
+                             (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
+                             (if (or (pen-var-value-maybe 'pen-sh-update)
+                                     (pen-var-value-maybe 'sh-update))
+                                 (list "UPDATE" "y")))))))
+        (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))
 
-    (if detach
-        (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &")))
+      (if detach
+          (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &")))
 
-    (shut-up-c
-     (if (not stdin)
-         (progn
-           (shell-command final_cmd output_buffer))
-       (with-temp-buffer
-         (insert stdin)
-         (shell-command-on-region (point-min) (point-max) final_cmd output_buffer))))
-    (setq output (slurp-file tf))
-    (if chomp
-        (setq output (chomp output)))
-    (progn
-      (defset b_exit_code (slurp-file tf_exit_code)))
+      (shut-up-c
+       (if (not stdin)
+           (progn
+             (shell-command final_cmd output_buffer))
+         (with-temp-buffer
+           (insert stdin)
+           (shell-command-on-region (point-min) (point-max) final_cmd output_buffer))))
+      (setq output (slurp-file tf))
+      (if chomp
+          (setq output (chomp output)))
+      (progn
+        (defset b_exit_code (slurp-file tf_exit_code)))
 
-    (if b_output-return-code
-        (setq output (str b_exit_code)))
-    output))
+      (if b_output-return-code
+          (setq output (str b_exit_code)))
+      output)))
 
 (cl-defun pen-cl-sn (cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)
   (interactive)
