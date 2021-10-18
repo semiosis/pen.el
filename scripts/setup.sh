@@ -199,5 +199,7 @@ go get mvdan.cc/xurls/cmd/xurls
 
 apt install bc
 
-curl -L http://cpanmin.us | perl - --sudo App::cpanminus
+# curl -L http://cpanmin.us | perl - --sudo App::cpanminus
+
+curl -L http://cpanmin.us | perl - App::cpanminus
 cpanm --force String::Escape
