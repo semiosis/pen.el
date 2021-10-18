@@ -22,6 +22,8 @@
 (require 'pcre2el)
 (require 'asoc)
 (require 'transducer)
+(require 'lsp)
+(require 'lsp-ui)
 (require 'pen-company-lsp)
 
 (require 'pen-custom)
