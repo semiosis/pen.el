@@ -62,10 +62,12 @@ mkdir -p /root/org-roam
 
 # test -d "huggingface.el" || git clone --depth 1 "http://github.com/semiosis/huggingface.el"
 
+mkdir -p ~/.config
 (
 cd "$EMACSD"
 test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
 test -d engines || git clone --depth 1 "https://github.com/semiosis/engines"
+test -d ~/.config/efm-langserver || git clone --depth 1 "https://github.com/semiosis/pen-efm-config" ~/.config/efm-langserver
 test -d interpreters || git clone --depth 1 "https://github.com/semiosis/interpreters"
 test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
 test -d "ink.el" || git clone --depth 1 "https://github.com/semiosis/ink.el"
@@ -203,3 +205,5 @@ apt install bc
 
 curl -L http://cpanmin.us | perl - App::cpanminus
 cpanm --force String::Escape
+
+mkdir -p ~/.config/efm-langserver
