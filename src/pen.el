@@ -3060,6 +3060,7 @@ May use to generate code from comments."
 (defun pen-final-loads ()
   (load-library "pen-custom")
   (load-library "pen-ii")
+  (load-library "pen-company-lsp")
   (pen-load-config))
 
 (add-hook 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
