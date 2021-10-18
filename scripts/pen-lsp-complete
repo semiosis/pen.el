@@ -14,7 +14,7 @@ if stdin_exists; then
 
     input_fp="$(pen-tf txt)"
 
-    cat | cut -c"1-$max_context_length" > "$input_fp"
+    cat > "$input_fp"
 
     if test -n "$POSITION"; then
         line="$(echo "$POSITION" | cut -d : -f 1)"
@@ -28,7 +28,7 @@ if stdin_exists; then
     fi
 
     # sps v "$input_fp"
-    exec < <(cat "$input_fp")
+    exec < <(cat "$input_fp" | tail -c "-$max_context_length")
 fi
 
 # tv &>/dev/null
