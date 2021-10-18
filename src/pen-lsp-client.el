@@ -337,5 +337,7 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 ;; Sadly can't override because of lexical scope
 ;; j:company-lsp--candidates-async
 
+(add-to-list 'lsp-language-id-configuration `(org-mode . "org"))
+
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
