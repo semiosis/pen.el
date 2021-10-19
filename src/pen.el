@@ -2307,8 +2307,10 @@ Function names are prefixed with pf- for easy searching"
                              "#<long>#")))
 
                         (force-stop-sequence
-                         (if force-stop-sequence
-                             (setq stop-sequences (cons force-stop-sequence stop-sequences))))
+                         (progn
+                           (if force-stop-sequence
+                               (setq stop-sequences (cons force-stop-sequence stop-sequences)))
+                           force-stop-sequence))
 
                         (stop-patterns
                          (or (vector2list (ht-get yaml-ht "stop-patterns"))
