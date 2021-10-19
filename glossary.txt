@@ -1,3 +1,9 @@
+transvariadicator
+    The variadic arg transformer.
+
+    This is an elisp function or a shell
+    command to transform the variadic arg
+
 prompt function
     Each .prompt file generates a function in
     emacs lisp.
