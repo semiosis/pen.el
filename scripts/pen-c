@@ -44,7 +44,7 @@ case "$opt" in
     s-u|strip-utf|strip-unicode) {
         iconv -c -f utf-8 -t ascii
     } ;;
-            
+
     ascify|asciify) {
         sed -e 's/▄/ /g' \
             -e 's/[┌┐┘└│├─┤┬┴┼]/ /g' \

@@ -7,8 +7,12 @@
 cmd() {
     for var in "$@"
     do
-        # trailing newlines are removed for arguments. Fix this
-        printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+        if test "$var" = '|'; then
+            printf -- "%s" '| '
+        else
+            # trailing newlines are removed for arguments. Fix this
+            printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+        fi
     done | sed 's/ $//'
 }
 
