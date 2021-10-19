@@ -2,7 +2,9 @@ transvariadicator
     The variadic arg transformer.
 
     This is an elisp function or a shell
-    command to transform the variadic arg
+    command to transform the variadic arg into
+    final text which is inserted into the
+    template.
 
 prompt function
     Each .prompt file generates a function in
