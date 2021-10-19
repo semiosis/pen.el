@@ -659,6 +659,14 @@ Reconstruct the entire yaml-ht for a different language."
           (message "%s" (concat "touching " path))
           (pen-touch-file path))))
 
+(comment
+ (etv (pps (tuplist-to-alist '((a b) (c d))))))
+(defun tuplist-to-alist (tuplist)
+  (mapcar (lambda (tup)
+            (cons (car tup) (second tup)))
+          tuplist))
+(defalias 'pen-list2alist 'tuplist-to-alist)
+
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.
 ;; Expected variables:
@@ -1067,10 +1075,57 @@ Reconstruct the entire yaml-ht for a different language."
                   ;;                    final-engine-min-tokens
                   ;;                    final-engine-max-tokens))
 
+                  ;; TODO Consider overriding model, temperature and lm-command again
+                  ;; based on this value
+                  ;; Currently, this is inert.
+                  (final-engine
+                   (expand-template
+                    (str (or
+                          ,force-engine
+                          (pen-var-value-maybe 'engine)
+                          ,engine))))
+
+                  (final-temperature)
+                  (final-lm-command)
+                  (final-lm-model)
+
+                  ;; Actually, only override model, temperature and lm-command again if force-engine is set.
+                  ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
+                  ;; Don't override final-'force'-model, etc.
+                  (final-force-engine
+                   (if (sor ,force-engine)
+                       (progn
+                         (pen-log ".prompt Forcing engine:")
+                         (pen-log ".prompt Forcing engine n-completions")
+                         (pen-log ".prompt Forcing engine model")
+                         (pen-log ".prompt Forcing engine all keys etc.")
+                         (let* ((engine (ht-get pen-engines ,force-engine))
+                                (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                                (vals (ht-values engine))
+                                (tups (-zip-lists keys vals))
+                                (al (pen-list2alist tups))
+                                (temp (cdr (assoc 'default-temperature al)))
+                                (model (cdr (assoc 'model al)))
+                                (lm-command (cdr (assoc 'lm-command al))))
+                           (if temp
+                               (setq final-temperature temp))
+                           (if model
+                               (setq final-model model))
+                           (if lm-command
+                               (setq final-lm-command lm-command))))))
+
+                  (final-force-temperature
+                   (or
+                    (pen-var-value-maybe 'force-temperature)
+                    ,force-temperature))
+
                   (final-temperature
                    (expand-template
-                    (str (or (pen-var-value-maybe 'temperature)
-                             ,temperature))))
+                    (str (or
+                          final-force-temperature
+                          final-temperature ;At this stage, could only have been set by force-engine
+                          (pen-var-value-maybe 'temperature)
+                          ,temperature))))
 
                   (final-default-temperature
                    (expand-template
@@ -1080,6 +1135,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-temperature
                    (if (and (sor pen-force-engine)
                             (not pen-force-temperature)
+                            (not ,force-temperature)
                             final-default-temperature)
                        final-default-temperature
                      final-temperature))
@@ -1094,22 +1150,31 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'mode)
                              ,mode))))
 
-                  ;; TODO Consider overriding model and lm-command again
-                  ;; based on this value
-                  (final-engine
-                   (expand-template
-                    (str (or (pen-var-value-maybe 'engine)
-                             ,engine))))
+
+                  (final-force-lm-command
+                   (or (pen-var-value-maybe 'force-lm-command)
+                       ,force-lm-command))
 
                   (final-lm-command
                    (expand-template
-                    (str (or (pen-var-value-maybe 'lm-command)
-                             ,lm-command))))
+                    (str (or
+                          final-force-lm-command
+                          final-lm-command ;At this stage, could only have been set by force-engine
+                          (pen-var-value-maybe 'lm-command)
+                          ,lm-command))))
+
+                  (final-force-model
+                   (or
+                    (pen-var-value-maybe 'force-model)
+                    ,force-model))
 
                   (final-model
                    (expand-template
-                    (str (or (pen-var-value-maybe 'model)
-                             ,model))))
+                    (str (or
+                          final-force-model
+                          final-model ;At this stage, could only have been set by force-engine
+                          (pen-var-value-maybe 'model)
+                          ,model))))
 
                   (final-repetition-penalty
                    (expand-template
@@ -1998,7 +2063,9 @@ Function names are prefixed with pf- for easy searching"
                         (requirements (vector2list (ht-get yaml-ht "requirements")))
 
                         (force-engine (ht-get yaml-ht "force-engine"))
-                        (force-temperature (vector2list (ht-get yaml-ht "force-temperature")))
+                        (force-model (ht-get yaml-ht "force-model"))
+                        (force-lm-command (ht-get yaml-ht "force-lm-command"))
+                        (force-temperature (ht-get yaml-ht "force-temperature"))
 
                         (engine
                          (let* ((engine-title
