@@ -3,7 +3,8 @@
   (let* ((plist (list
                  :semantic-path (get-path-semantic)
                  :last-final-command (pen-snc "cat ~/.pen/last-final-command.txt")
-                 :last-final-prompt (pen-snc "cat ~/.pen/last-final-prompt.txt")
+                 ;; strangely, some characters break plist2yaml plist
+                 :last-final-prompt (pen-snc "pen-c strip-unicode" (pen-snc "cat ~/.pen/last-final-prompt.txt"))
                  :last-pen-command-exprs (pen-snc "cat ~/.pen/last-pen-command-exprs.txt")
                  :last-pen-command (pen-snc "cat ~/.pen/last-pen-command.txt")
                  :pen-force-engine pen-force-engine
