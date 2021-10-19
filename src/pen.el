@@ -1,5 +1,7 @@
 ;;; pen.el --- Prompt Engineering functions
 
+(setq large-file-warning-threshold nil)
+
 ;; For string-empty-p
 (require 'subr-x)
 (require 'pen-regex)
