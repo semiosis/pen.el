@@ -1,7 +1,16 @@
-(defcustom pen-fav-programming-language nil
+(defcustom pen-fav-programming-language "Emacs Lisp"
   "By setting pen-fav-programming-language, you set a default language to translate into.
 This is useful for code-understanding when reading languages you don't understand.
 | =H-\" U= | =dff-pf-transpile-3-nil-nil-emacs-lisp-= | =pen-map=
+"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-fav-world-language "English"
+  "By setting pen-fav-world-language, you set a default language to translate into.
+This is useful for code-understanding when reading languages you don't understand.
+| =H-\" W= | =dff-pf-transpile-3-nil-nil-emacs-lisp-= | =pen-map=
 "
   :type 'string
   :group 'pen
