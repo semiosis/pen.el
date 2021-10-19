@@ -1087,7 +1087,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-temperature)
                   (final-lm-command)
-                  (final-lm-model)
+                  (final-model)
 
                   ;; Actually, only override model, temperature and lm-command again if force-engine is set.
                   ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
@@ -1169,12 +1169,21 @@ Reconstruct the entire yaml-ht for a different language."
                     ,force-model))
 
                   (final-model
-                   (expand-template
-                    (str (or
-                          final-force-model
-                          final-model ;At this stage, could only have been set by force-engine
-                          (pen-var-value-maybe 'model)
-                          ,model))))
+                   (progn
+                     (comment
+                      (tv (pps
+                           `(expand-template
+                             (str (or
+                                   ,final-force-model
+                                   ,final-model ;At this stage, could only have been set by force-engine
+                                   ,(pen-var-value-maybe 'model)
+                                   ,,model))))))
+                     (expand-template
+                      (str (or
+                            final-force-model
+                            final-model ;At this stage, could only have been set by force-engine
+                            (pen-var-value-maybe 'model)
+                            ,model)))))
 
                   (final-repetition-penalty
                    (expand-template
@@ -2708,10 +2717,10 @@ But use the results-analyser."
           (list
            (if (sor pen-force-engine)
                (progn
-                 (pen-log "Forcing engine:")
-                 (pen-log "Forcing engine n-completions")
-                 (pen-log "Forcing engine model")
-                 (pen-log "Forcing engine all keys etc.")
+                 (pen-log (concat "Custom forcing engine: " pen-force-engine))
+                 (pen-log "Custom forcing engine n-completions")
+                 (pen-log "Custom forcing engine model")
+                 (pen-log "Custom orcing engine all keys etc.")
                  (let* ((engine (ht-get pen-engines pen-force-engine))
                         (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
                         (vals (ht-values engine))
