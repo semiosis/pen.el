@@ -2642,7 +2642,7 @@ But use the results-analyser."
                         (vals (ht-values engine))
                         (tups (-zip-lists keys vals)))
                    (append
-                    `(engine ,pen-force-engine)
+                    `((engine ,pen-force-engine))
                     tups))))
 
            (if pen-force-temperature
