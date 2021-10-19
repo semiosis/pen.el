@@ -13,3 +13,6 @@ pull-docker:
 
 push-docker:
 	docker push semiosis/pen.el:latest
+
+lsp:
+	pen-build-lsp
