@@ -1997,8 +1997,14 @@ Function names are prefixed with pf- for easy searching"
 
                         (requirements (vector2list (ht-get yaml-ht "requirements")))
 
+                        (force-engine (ht-get yaml-ht "force-engine"))
+                        (force-temperature (vector2list (ht-get yaml-ht "force-temperature")))
+
                         (engine
-                         (let* ((engine-title (ht-get yaml-ht "engine"))
+                         (let* ((engine-title
+                                 (or
+                                  (ht-get yaml-ht "force-engine")
+                                  (ht-get yaml-ht "engine")))
                                 (engine (if (and
                                              engine-title
                                              pen-engines)
