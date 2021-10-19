@@ -42,7 +42,11 @@
            (let ((s))
              (funcall m)
              (yas-minor-mode 1)
-             (yas-expand-snippet (buffer-string) (point-min) (point-max))
+             (yas-expand-snippet
+              (buffer-string)
+              (point-min)
+              (point-max)
+              '((yas-indent-line 'fixed)))
              (setq s (buffer-string))
              (kill-buffer b)
              s)))))))
