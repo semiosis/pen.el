@@ -2273,19 +2273,15 @@ Function names are prefixed with pf- for easy searching"
                          (if (and (sor engine-stop-sequence-validator)
                                   (pen-snq engine-stop-sequence-validator stop-sequence))
                              stop-sequence
-                           (progn
-                             (if stop-sequence
-                                 (setq stop-sequences (cons stop-sequence stop-sequences)))
+                           (if stop-sequence
+                               (progn
+                                 (setq stop-sequences (cons stop-sequence stop-sequences))
+                                 stop-sequence)
                              "#<long>#")))
 
                         (force-stop-sequence
-                         (if (and (sor engine-stop-sequence-validator)
-                                  (pen-snq engine-stop-sequence-validator force-stop-sequence))
-                             force-stop-sequence
-                           (progn
-                             (if force-stop-sequence
-                                 (setq stop-sequences (cons force-stop-sequence stop-sequences)))
-                             "#<long>#")))
+                         (if force-stop-sequence
+                             (setq stop-sequences (cons force-stop-sequence stop-sequences))))
 
                         (stop-patterns
                          (or (vector2list (ht-get yaml-ht "stop-patterns"))
@@ -2427,6 +2423,12 @@ Function names are prefixed with pf- for easy searching"
                                 (if design-patterns (concat "\ndesign-patterns:\n" (pen-list-to-orglist design-patterns)))
                                 (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
                                 (if aims (concat "\naims:" (pen-list-to-orglist aims)))
+                                (if engine-stop-sequence-validator (concat "\nengine-stop-sequence-validator:" (str engine-stop-sequence-validator)))
+                                (if force-stop-sequence (concat "\nforce-stop-sequence:" (str force-stop-sequence)))
+                                (if force-temperature (concat "\nforce-temperature:" (str force-temperature)))
+                                (if force-model (concat "\nforce-model:" (str force-model)))
+                                (if stop-sequence (concat "\nstop-sequence:" (str stop-sequence)))
+                                (if stop-sequences (concat "\nstop-sequences:" (pen-list-to-orglist stop-sequences)))
                                 (if engine (concat "\nengine: " engine))
                                 (if lm-command (concat "\nlm-command: " lm-command))
                                 (if model (concat "\nmodel: " model))
