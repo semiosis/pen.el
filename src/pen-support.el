@@ -34,7 +34,9 @@
     (save-excursion
       (let ((m major-mode)
             (b (new-buffer-from-string
-                ys)))
+                ys
+                nil
+                'fundamental-mode)))
         (str
          (with-current-buffer b
            (let ((s))
@@ -1198,7 +1200,9 @@ when s is a string, set the clipboard to s"
   "Guesses which major mode this file should have and set it."
   (interactive)
   (if (not lang)
-      (setq lang (language-detection-string (buffer-string))))
+      (setq lang
+            (pen-detect-language-ask)))
+  ;; (setq lang (language-detection-string (buffer-string))
   (pen-set-major-mode (lang-to-mode lang)))
 
 (defmacro df (name &rest body)
