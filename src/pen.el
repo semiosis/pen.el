@@ -27,6 +27,7 @@
 (require 'lsp-mode)
 (require 'lsp-ui)
 (require 'pen-company-lsp)
+(require 'pen-nlp)
 
 (require 'pen-custom)
 
@@ -377,15 +378,21 @@ Reconstruct the entire yaml-ht for a different language."
       (cl-loop for sc in scs do
                (let* ((inner sc)
                       (inner (s-replace-regexp "^<m:" "" inner))
-                      (inner (s-replace-regexp ">$" "" inner)))
-                 (setq s (string-replace sc (pp-oneline (expand-macro (eval-string (concat "'" inner)))) s))))))
+                      (inner (etv (s-replace-regexp ">$" "" inner))))
+                 (setq s (string-replace
+                          sc
+                          (pp-oneline
+                           (expand-macro
+                            (eval-string
+                             (concat "'" inner))))
+                          s))))))
   s
   ;; (scrape "<m:([^)]*)>" s)
   )
 
 (defun test-pen-expand-macros ()
   (interactive)
-  (etv (pen-expand-macros "This is my string <m:(pen-n-words->n-tokens/m)> This is it")))
+  (pen-expand-macros "This is my string <m:(pen-n-words->n-tokens/m)> This is it"))
 
 (defmacro cond-all (&rest body)
   "Like cond, but runs all of them"
@@ -2231,6 +2238,15 @@ Function names are prefixed with pf- for easy searching"
                                5)))
                         (n-test-runs (ht-get yaml-ht "n-test-runs"))
 
+                        ;; Execute some elisp in preparation for running this function
+                        ;; This may set up elisp functions we need
+                        (elisp (ht-get yaml-ht "elisp"))
+
+                        (elisp
+                         (progn (if (sor elisp)
+                                    (eval-string elisp))
+                                elisp))
+
                         ;; API
 
                         (model (ht-get yaml-ht "model"))
@@ -2441,6 +2457,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if stop-sequence (concat "\nstop-sequence:" (str stop-sequence)))
                                 (if stop-sequences (concat "\nstop-sequences:" (pen-list-to-orglist stop-sequences)))
                                 (if engine (concat "\nengine: " engine))
+                                (if elisp (concat "\nelisp: " elisp))
                                 (if lm-command (concat "\nlm-command: " lm-command))
                                 (if model (concat "\nmodel: " model))
                                 (if n-completions (concat "\nn-completions: " (str n-completions)))
@@ -2449,6 +2466,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if n-target (concat "\nn-target: " (str n-target)))
                                 (if min-tokens (concat "\nmin-tokens: " (str min-tokens)))
                                 (if max-tokens (concat "\nmax-tokens: " (str max-tokens)))
+                                (if max-generated-tokens (concat "\nmax-generated-tokens: " (str max-generated-tokens)))
                                 (if engine-min-tokens (concat "\nengine-min-tokens: " (str engine-min-tokens)))
                                 (if engine-max-tokens (concat "\nengine-max-tokens: " (str engine-max-tokens)))
                                 (if engine-whitespace-support
