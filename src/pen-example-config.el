@@ -292,7 +292,7 @@
 ;; g is for generation
 (define-key pen-map (kbd "H-\" g b") 'pf-write-a-blog-post/2)
 ;; U is for understand
-(define-key pen-map (kbd "H-\" U") 'pf-transpile/3)
+(define-key pen-map (kbd "H-\" U") (dff (pf-transpile/3 nil nil "emacs lisp")))
 
 (define-key pen-map (kbd "H-^") 'pen-transform)
 (define-key pen-map (kbd "H-p ^") 'pen-transform)
