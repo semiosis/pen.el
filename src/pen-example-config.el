@@ -295,6 +295,7 @@
 ;; g is for generation
 (define-key pen-map (kbd "H-\" g b") 'pf-write-a-blog-post/2)
 ;; U is for understand
+(define-key pen-map (kbd "H-\" T") 'pf-transpile/3)
 (define-key pen-map (kbd "H-\" U") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
 (define-key pen-map (kbd "H-\" W") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
 
