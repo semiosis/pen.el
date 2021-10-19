@@ -378,7 +378,7 @@ Reconstruct the entire yaml-ht for a different language."
       (cl-loop for sc in scs do
                (let* ((inner sc)
                       (inner (s-replace-regexp "^<m:" "" inner))
-                      (inner (etv (s-replace-regexp ">$" "" inner))))
+                      (inner (s-replace-regexp ">$" "" inner)))
                  (setq s (string-replace
                           sc
                           (pp-oneline
