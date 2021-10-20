@@ -5,7 +5,7 @@
   (pen-strip-unicode
    (pen-snc
     (pen-cmd
-     "head" "-n" 5
+     "head" "-c" 200
      (f-join
       penconfdir
       "temp"
