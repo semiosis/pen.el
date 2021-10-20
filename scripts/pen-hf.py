@@ -21,12 +21,20 @@ headers = {"Authorization": f"Bearer {API_TOKEN}"}
 # print(API_URL)
 # exit()
 
+# import shanepy
+# import shanepy as spy
+# from shanepy import *
 
 def query(payload):
     data = json.dumps(payload)
+
+    # myembed(globals(), locals())
+
     response = requests.request("POST", API_URL, headers=headers, data=data)
+    # tv(data)
     return json.loads(response.content.decode("utf-8"))
 
+exit
 
 if PEN_MODE == "summarize":
     ret = query(
@@ -53,10 +61,6 @@ if PEN_MODE == "summarize":
 
     print(PEN_PROMPT + ret[0].get("summary_text"))
 else:
-    # from shanepy import *
-
-    # myembed(globals(), locals())
-
     ret = query(
         {
             "inputs": PEN_PROMPT,

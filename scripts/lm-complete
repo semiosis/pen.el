@@ -23,6 +23,10 @@ test -n "$PEN_LM_COMMAND" || {
     exit 1
 }
 
+test -n "$ALSO_EXPORT" || {
+    eval "export $ALSO_EXPORT"
+}
+
 : "${PEN_MIN_TOKENS:="20"}"
 : "${PEN_MAX_TOKENS:="60"}"
 : "${PEN_MIN_GENERATED_TOKENS:="10"}"
