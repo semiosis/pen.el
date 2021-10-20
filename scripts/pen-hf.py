@@ -1,6 +1,5 @@
+#!/usr/bin/python3
 #!/usr/bin/env python-trace
-
-## !/usr/bin/python3
 
 # https://api-inference.huggingface.co/docs/python/html/detailed_parameters.html#text-generation-task
 
