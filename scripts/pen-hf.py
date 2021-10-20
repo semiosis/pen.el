@@ -11,6 +11,7 @@ API_TOKEN = os.environ.get("HF_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL")
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
 PEN_MODE = os.environ.get("PEN_MODE")
+PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 
 API_URL = f"https://api-inference.huggingface.co/models/{PEN_MODEL}"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
@@ -101,10 +102,10 @@ else:
         )
 
     if len(ret) == 1 and type(ret) is list:
-        print(PEN_PROMPT + ret[0].get("generated_text"))
+        print(PEN_PROMPT + PEN_TRAILING_WHITESPACE + ret[0].get("generated_text"))
     elif len(ret) == 1 and type(ret) is dict and ret.get("error"):
         print(ret.get("error"))
     elif len(ret) > 1:
         for i in range(len(ret)):
             print(f"===== Completion {i} =====")
-            print(PEN_PROMPT + ret[i].get("generated_text"))
+            print(PEN_PROMPT + PEN_TRAILING_WHITESPACE + ret[i].get("generated_text"))
