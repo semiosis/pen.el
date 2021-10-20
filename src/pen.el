@@ -136,6 +136,7 @@ Reconstruct the entire yaml-ht for a different language."
            (topic (ht-get yaml-ht "topic"))
            ;; TODO Make vals work, too
            (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
+           (envs (pen--htlist-to-alist (ht-get yaml-ht "envs")))
            ;; TODO Make vars also use pen--htlist-to-alist
            (vars (vector2list (ht-get yaml-ht "vars")))
            (var-slugs (mapcar 'slugify vars))
@@ -874,6 +875,11 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'defs)
                        ',defs))
 
+                  (final-envs
+                   (pen--htlist-to-alist
+                    (or (pen-var-value-maybe 'envs)
+                        ',envs)))
+
                   ;; Pipelines are just some named shell pipelines that a specific to a prompt
                   ;; that come with the prompt.
                   (final-pipelines
@@ -927,6 +933,22 @@ Reconstruct the entire yaml-ht for a different language."
                       `(pen-let-keyvals
                         ',subprompts-al
                         (eval-string ,(str (cdr atp))))))))
+
+                  (final-envs
+                   (cl-loop
+                    for atp in final-envs
+                    collect
+                    (cons
+                     (car atp)
+                     (let ((val (eval
+                                 `(pen-let-keyvals
+                                   ',subprompts-al
+                                   (eval-string ,(str (cdr atp)))))))
+                       (cond
+                        ((and (booleanp val)
+                              val)
+                         "y")
+                        (t (str val)))))))
 
                   (vals
                    ;; If not called interactively then
@@ -1535,7 +1557,9 @@ Reconstruct the entire yaml-ht for a different language."
                                               (sh-construct-envs
                                                ;; This is a bit of a hack for \n in prompts
                                                ;; See `pen-restore-chars`
-                                               (pen-alist-to-list collation-data))
+                                               (append (pen-alist-to-list final-envs)
+                                                       `(("ALSO_EXPORT" ,(sh-construct-envs (pen-alist-to-list final-envs))))
+                                                       (pen-alist-to-list collation-data)))
                                               ;; Currently always updating
                                               "lm-complete"))) i)))
 
@@ -1961,9 +1985,11 @@ Otherwise, it will be a shell expression template")
       (setq htlist (vector2list htlist)))
   (mapcar
    (lambda (e)
-     (let ((key (car (ht-keys e))))
-       (cons key
-             (ht-get e key))))
+     (if (ht-p e)
+         (let ((key (car (ht-keys e))))
+           (cons key
+                 (ht-get e key)))
+       e))
    htlist))
 
 (defun pen--test-resolve-engine ()
@@ -2501,6 +2527,7 @@ Function names are prefixed with pf- for easy searching"
                               "\n"))
 
                         (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
+                        (envs (pen--htlist-to-alist (ht-get yaml-ht "envs")))
 
                         (var-slugs (mapcar 'slugify vars))
                         (var-syms
