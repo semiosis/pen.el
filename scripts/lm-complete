@@ -5,6 +5,17 @@
 # export PEN_PROMPT="Once upon a time"
 # lm-complete
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -d) {
+        LM_COMPLETE_DEBUG=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 mkdir -p ~/.pen/results
 
 test -n "$PEN_LM_COMMAND" || {
@@ -122,6 +133,10 @@ case "$PEN_LM_COMMAND" in
     ;;
 esac
 
-# pen-ci will possibly cache/memoize the command
-pen-ci "$PEN_LM_COMMAND" 2>/tmp/lm-complete-stderr.txt >/tmp/lm-complete-stdout.txt
-cat /tmp/lm-complete-stdout.txt
+if test "$LM_COMPLETE_DEBUG" = y; then
+    "$PEN_LM_COMMAND"
+else
+    ## pen-ci will possibly cache/memoize the command
+    pen-ci "$PEN_LM_COMMAND" 2>/tmp/lm-complete-stderr.txt >/tmp/lm-complete-stdout.txt
+    cat /tmp/lm-complete-stdout.txt
+fi
