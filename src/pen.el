@@ -570,6 +570,7 @@ Reconstruct the entire yaml-ht for a different language."
               al))))))
 
 (defun pen-str2num (s)
+  "Returns nil if nil"
   (if (and s (stringp s))
       (string-to-number (str s))
     s))
@@ -751,6 +752,10 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-flags
                    (or (pen-var-value-maybe 'flags)
                        ,flags))
+
+                  (final-cant-n-complete
+                   (or (pen-var-value-maybe 'cant-n-complete)
+                       ,cant-n-complete))
 
                   (final-evaluator
                    (or (pen-var-value-maybe 'evaluator)
@@ -1056,7 +1061,19 @@ Reconstruct the entire yaml-ht for a different language."
                      ;; (pen-log "n-completions" final-n-completions)
                      ;; (pen-log "final-engine-max-n-completions" final-engine-max-n-completions)
                      ;; (pen-log "final-n-completions" (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
-                     (str (pen-hard-bound final-n-completions 1 final-engine-max-n-completions))))
+                     (pen-hard-bound final-n-completions 1 final-engine-max-n-completions)))
+
+                  (final-n-collate
+                   (if (and
+                        final-cant-n-complete
+                        (sor final-n-collate)
+                        (sor final-n-completions))
+                       (setq final-n-collate
+                             (* (pen-str2num
+                                 (or final-n-collate 1))
+                                (pen-str2num
+                                 (or
+                                  final-n-completions 1))))))
 
                   (final-engine-min-generated-tokens
                    (pen-str2num
@@ -1501,7 +1518,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_CACHE" . ,cache)
                             ("PEN_USER_AGENT" . ,pen-user-agent)
                             ("PEN_TRAILING_WHITESPACE" . ,trailing-whitespace)
-                            ("PEN_N_COMPLETIONS" . ,final-n-completions)
+                            ("PEN_N_COMPLETIONS" . ,(str final-n-completions))
                             ;; ("PEN_ENGINE_MAX_N_COMPLETIONS" . ,final-engine-max-n-completions)
                             ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
                             ("PEN_END_POS" . ,prompt-end-pos))))
@@ -2298,6 +2315,8 @@ Function names are prefixed with pf- for easy searching"
 
                         (force-stop-sequence (ht-get yaml-ht "force-stop-sequence"))
 
+                        (cant-n-complete (ht-get yaml-ht "cant-n-complete"))
+
                         (top-p (ht-get yaml-ht "top-p"))
                         (top-k (ht-get yaml-ht "top-k"))
                         (temperature (ht-get yaml-ht "temperature"))
@@ -2504,6 +2523,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if task (concat "\ntask: " task))
                                 (if notes (concat "\nnotes:" notes))
                                 (if filter (concat "\nfilter: on"))
+                                (if cant-n-complete (concat "\ncant-n-complete: on"))
                                 (if filter-off (concat "\nfilter-off: on"))
                                 (if results-analyser (concat "\nresults-analyser: " results-analyser))
                                 (if insertion (concat "\ninsertion: on"))
