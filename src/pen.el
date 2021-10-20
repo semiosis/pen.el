@@ -1066,8 +1066,8 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-n-collate
                    (if (and
                         final-cant-n-complete
-                        (sor final-n-collate)
-                        (sor final-n-completions))
+                        (nor final-n-collate)
+                        (nor final-n-completions))
                        (setq final-n-collate
                              (* (pen-str2num
                                  (or final-n-collate 1))

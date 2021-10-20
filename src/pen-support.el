@@ -265,6 +265,17 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
     result))
 (defalias 'sor 'string-first-nonnil-nonempty-string)
 
+(defun nor (val)
+  "Number or"
+  (cond
+   ((and (stringp val)
+         ;; TODO Check for full string, rather that regex on a line
+         (re-match-p "^[0-9.]*$" val))
+    (pen-str2num val))
+   ((numberp val)
+    val
+    (pen-str2num val))))
+
 (defmacro generic-or (p &rest items)
   "Return the first element of ITEMS that does not fail p.
 ITEMS will be evaluated in normal `or' order."
