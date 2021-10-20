@@ -30,6 +30,7 @@
 (require 'pen-company-lsp)
 (require 'pen-nlp)
 (require 'pen-which-key)
+(require 'pen-elisp)
 
 (require 'pen-custom)
 
