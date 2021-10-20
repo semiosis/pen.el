@@ -47,15 +47,15 @@ pen_aix() {
 if test "$PEN_N_COMPLETIONS" = 1; then
     {
     printf -- "%s" "$PEN_PROMPT$PEN_TRAILING_WHITESPACE"
-    pen_aix "$@" | tee /tmp/aix-temp.txt | sed -z "s~${sedstop}$~~"
-    } | tee /tmp/aix.txt
+    pen_aix "$@" | pen-log aix-temp | sed -z "s~${sedstop}$~~"
+    } | pen-log aix
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
         echo "===== Completion $i ====="
         # The openai api will add the prompt. So emulate it
         {
         printf -- "%s" "$PEN_PROMPT$PEN_TRAILING_WHITESPACE"
-        pen_aix "$@" | tee /tmp/aix-temp.txt | sed -z "s~${sedstop}$~~"
+        pen_aix "$@" | pen-log aix-temp | sed -z "s~${sedstop}$~~"
         } | awk 1
-    done | tee /tmp/aix.txt
+    done | pen-log aix
 fi

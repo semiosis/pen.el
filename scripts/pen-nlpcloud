@@ -69,11 +69,12 @@ pen_nlpcloud() {
     # https://docs.nlpcloud.io/#generation
 }
 
-pen_nlpcloud "$@" > /tmp/nlpcloud-temp.txt
+mkdir -p ~/.pen
+pen_nlpcloud "$@" > pen-log nlpcloud-temp.txt &>/dev/null
 
 # This is how errors are shown
 # {"detail":"Your end_sequence token is not supported"}
 
 # The part below here is untested
 
-cat /tmp/nlpcloud-temp.txt | jq -r .generated_text
+cat ~/.pen/temp/nlpcloud-temp.txt | jq -r .generated_text

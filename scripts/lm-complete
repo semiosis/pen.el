@@ -133,10 +133,13 @@ case "$PEN_LM_COMMAND" in
     ;;
 esac
 
+tmpdir=~/.pen/temp
+mkdir -p "$tmpdir"
+
 if test "$LM_COMPLETE_DEBUG" = y; then
     "$PEN_LM_COMMAND"
 else
     ## pen-ci will possibly cache/memoize the command
-    pen-ci "$PEN_LM_COMMAND" 2>/tmp/lm-complete-stderr.txt >/tmp/lm-complete-stdout.txt
-    cat /tmp/lm-complete-stdout.txt
+    pen-ci "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
+    cat "$tmpdir/lm-complete-stdout.txt"
 fi

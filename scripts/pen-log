@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -30)"
+
+pendir=~/.pen
+
+if test -d "$pendir"; then
+    mkdir -p "$pendir/temp"
+    tee "$pendir/temp/${slug}.txt"
+else
+    cat
+fi

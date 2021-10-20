@@ -202,14 +202,14 @@ case "$f" in
         sed -z -e "s/\s*\$//" -e "s/\n*\$//"
     }
     ;;
-    
+
     generic-interpreter-tidy-result) {
         pen-str remove-trailing-whitespace | { awk 1; echo -n "Input: "; }
     }
     ;;
 
     ruby-gen-next-user-prompt) {
-        IFS= read -rd '' in < <(cat | tee /tmp/ruby-gen-next-user-prompt);typeset -p in &>/dev/null
+        IFS= read -rd '' in < <(cat | pen-log ruby-gen-next-user-prompt);typeset -p in &>/dev/null
 
         prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^2.7.0 :/{s/^2.7.0 :\\([0-9]*\\).*/\\1/p;q}")"
         new_prompt_number="$(printf "%03d" $(( prompt_number )))"

@@ -1,3 +1,7 @@
+#!/usr/bin/bash
+
+# This file is unused
+
 nlpcloud_results_split() {
     completions_fp="$1"
     test -f "$completions_fp" || exit 1
@@ -29,7 +33,8 @@ nlpcloud_results_split() {
 tf_response="$(mktemp -t "nlpcloud_api_XXXXXX.txt" 2>/dev/null)"
 trap "rm \"$tf_response\" 2>/dev/null" 0
 
-cat /tmp/nlpcloud-temp.txt | jq -r .generated_text > "$tf_response"
+mkdir -p ~/.pen
+cat ~/.pen/temp/nlpcloud-temp.txt | jq -r .generated_text > "$tf_response"
 
 results_dir="$(nlpcloud_results_split "$tf_response")"
 echo "$results_dir"

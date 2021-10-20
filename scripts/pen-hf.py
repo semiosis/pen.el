@@ -1,7 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/env python-trace
+
+## !/usr/bin/python3
 
 # https://api-inference.huggingface.co/docs/python/html/detailed_parameters.html#text-generation-task
-
 
 import json
 import os
@@ -14,6 +15,12 @@ PEN_MODE = os.environ.get("PEN_MODE")
 
 API_URL = f"https://api-inference.huggingface.co/models/{PEN_MODEL}"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
+
+# Test
+# PEN_PROMPT="* TODO I need more advanced text" PEN_LM_COMMAND="hf-complete.sh" PEN_MODEL="bigscience/T0pp" PEN_APPROXIMATE_PROMPT_LENGTH=18 PEN_ENGINE_MIN_TOKENS=0 PEN_ENGINE_MAX_TOKENS=2049 PEN_MIN_TOKENS=0 PEN_MAX_TOKENS=23 PEN_REPETITION_PENALTY="" PEN_LENGTH_PENALTY="" PEN_MIN_GENERATED_TOKENS=3 PEN_MAX_GENERATED_TOKENS=5 PEN_TEMPERATURE="0.3" PEN_MODE="" PEN_STOP_SEQUENCE="##long complete##" PEN_TOP_P="1" PEN_TOP_K="" PEN_FLAGS= PEN_CACHE= PEN_USER_AGENT="emacs/pen" PEN_TRAILING_WHITESPACE="" PEN_N_COMPLETIONS="10" PEN_ENGINE_MAX_GENERATED_TOKENS=4096 PEN_END_POS=32 lm-complete -d | xa find {} -type f | xa cat
+
+# print(API_URL)
+# exit()
 
 
 def query(payload):
@@ -47,6 +54,10 @@ if PEN_MODE == "summarize":
 
     print(PEN_PROMPT + ret[0].get("summary_text"))
 else:
+    from shanepy import *
+
+    myembed(globals(), locals())
+
     ret = query(
         {
             "inputs": PEN_PROMPT,
