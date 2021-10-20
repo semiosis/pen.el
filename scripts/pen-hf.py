@@ -26,6 +26,7 @@ headers = {"Authorization": f"Bearer {API_TOKEN}"}
 # from shanepy import *
 
 no_parameters = os.environ.get("NO_PARAMETERS") and ("y" == os.environ.get("NO_PARAMETERS"))
+remove_prompt_from_gen = os.environ.get("REMOVE_PROMPT_FROM_GEN") and ("y" == os.environ.get("REMOVE_PROMPT_FROM_GEN"))
 
 def query(payload):
     data = json.dumps(payload)

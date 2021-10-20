@@ -5,6 +5,7 @@
 # export PEN_PROMPT="Once upon a time"
 # lm-complete
 
+{
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -d) {
@@ -23,7 +24,7 @@ test -n "$PEN_LM_COMMAND" || {
     exit 1
 }
 
-test -n "$ALSO_EXPORT" || {
+test -n "$ALSO_EXPORT" && {
     eval "export $ALSO_EXPORT"
 }
 
@@ -139,6 +140,7 @@ esac
 
 tmpdir=~/.pen/temp
 mkdir -p "$tmpdir"
+} &>/dev/null
 
 if test "$LM_COMPLETE_DEBUG" = y; then
     "$PEN_LM_COMMAND"
