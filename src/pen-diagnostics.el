@@ -4,12 +4,14 @@
 (defun pen-tmp-preview (slug)
   (pen-strip-unicode
    (pen-snc
-    (pen-cmd
-     "head" "-c" 200
-     (f-join
-      penconfdir
-      "temp"
-      (concat (slugify slug) ".txt"))))))
+    (concat
+     (pen-cmd
+      "head" "-c" 200
+      (f-join
+       penconfdir
+       "temp"
+       (concat (slugify slug) ".txt")))
+     " | head -n 10"))))
 
 (defun pen-diagnostics-show-context ()
   (interactive)
