@@ -59,17 +59,17 @@ pen_ai21() {
              }"
 }
 
-pen_ai21 "$@" > /tmp/ai21-temp.txt
+pen_ai21 "$@" | pen-log ai21-temp &>/dev/null
 
 if test "$PEN_N_COMPLETIONS" = 1; then
     printf -- "%s" "$PEN_PROMPT"
-    cat /tmp/ai21-temp.txt | jq -r ".completions[$((i - 1))].data.text"
+    cat ~/.pen/temp/ai21-temp.txt | jq -r ".completions[$((i - 1))].data.text"
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
         echo "===== Completion $i ====="
         {
         printf -- "%s" "$PEN_PROMPT"
-        cat /tmp/ai21-temp.txt | jq -r ".completions[$((i - 1))].data.text"
+        cat ~/.pen/temp/ai21-temp.txt | jq -r ".completions[$((i - 1))].data.text"
         } | awk 1
-    done | tee /tmp/ai21.txt
+    done | pen-log ai21
 fi
