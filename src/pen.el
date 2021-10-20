@@ -26,6 +26,7 @@
 (require 'transducer)
 (require 'lsp-mode)
 (require 'lsp-ui)
+(require 'lispy)
 (require 'pen-company-lsp)
 (require 'pen-nlp)
 (require 'pen-which-key)
