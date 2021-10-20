@@ -42,6 +42,7 @@
 (require 'yaml-mode)
 (require 'pp)
 (require 'yaml)
+(require 'which-key)
 (require 's)
 (require 'f)
 ;; builtin

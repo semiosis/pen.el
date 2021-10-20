@@ -38,6 +38,7 @@
 (package-install 'yaml-mode)
 (package-install 'pp)
 (package-install 'yaml)
+(package-install 'which-key)
 (package-install 's)
 (package-install 'f)
 ;; builtin
@@ -78,6 +79,7 @@
 (require 'yaml-mode)
 (require 'pp)
 (require 'yaml)
+(require 'which-key)
 (require 's)
 (require 'f)
 ;; builtin
