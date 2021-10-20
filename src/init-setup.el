@@ -39,6 +39,7 @@
 (package-install 'pp)
 (package-install 'yaml)
 (package-install 'which-key)
+(package-install 'lispy)
 (package-install 's)
 (package-install 'f)
 ;; builtin

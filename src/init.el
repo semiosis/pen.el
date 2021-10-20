@@ -43,6 +43,7 @@
 (require 'pp)
 (require 'yaml)
 (require 'which-key)
+(require 'lispy)
 (require 's)
 (require 'f)
 ;; builtin
