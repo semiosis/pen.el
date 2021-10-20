@@ -11,6 +11,8 @@ test -n "$HF_API_KEY" || {
     exit 1
 }
 
+: "${PEN_REPETITION_PENALTY:="1.0"}"
+
 export HF_API_KEY
 
 if test "$PEN_N_COMPLETIONS" -gt 4; then
@@ -21,6 +23,7 @@ export PEN_PROMPT
 export PEN_MODEL
 export PEN_MAX_TOKENS
 export PEN_TEMPERATURE
+export PEN_REPETITION_PENALTY
 export PEN_TOP_P
 export PEN_STOP_SEQUENCE
 export PEN_N_COMPLETIONS

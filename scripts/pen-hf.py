@@ -54,9 +54,9 @@ if PEN_MODE == "summarize":
 
     print(PEN_PROMPT + ret[0].get("summary_text"))
 else:
-    from shanepy import *
+    # from shanepy import *
 
-    myembed(globals(), locals())
+    # myembed(globals(), locals())
 
     ret = query(
         {
