@@ -7,7 +7,7 @@
   - https://beta.openai.com/
 - [X] AI21 (=j1-jumbo=, etc.)
   - https://www.ai21.com/
-- [X] Huggingface Hub
+- [X] HuggingFace Hub / Inference API
   - https://github.com/huggingface/huggingface_hub 
 - [X] =GPT-j= 6b via AIx
 - [X] =GPT-j= 6b via nlpcloud
