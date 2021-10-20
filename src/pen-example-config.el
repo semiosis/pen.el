@@ -360,3 +360,5 @@
 (define-key pen-map (kbd "H-@") 'pen-see-pen-command-hist)
 
 ;; (call-interactively 'pen-add-key-booste)
+
+(add-hook 'emacs-lisp-mode-hook '(lambda () (lispy-mode 1)))
