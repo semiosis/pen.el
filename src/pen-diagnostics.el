@@ -41,8 +41,8 @@
                      :aix-last-output-fp (f-join penconfdir "temp" "aix-temp.txt")
                      :ruby-gen-next-user-prompt (f-join penconfdir "temp" "ruby-gen-next-user-prompt.txt")
                      ;; This is usually so long it causes problems
-                     ;; :ai21-last-output (pen-snc (pen-cmd "cat" "/tmp/ai21-temp.txt"))
-                     )))
+                     :ai21-last-output (pen-tmp-preview "ai21-temp")
+                     :ai21-last-output-fp (f-join penconfdir "temp" "ai21-temp.txt"))))
         (find-file (pen-tf "pen context" (plist2yaml plist) "yaml")))))
 
 (defun pen-diagnostics-test-key ()
