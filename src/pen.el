@@ -2810,6 +2810,9 @@ But use the results-analyser."
                (list `(n-collate 1)
                      `(n-completions 1)))
 
+           (if pen-force-no-uniq-results
+               (list `(no-uniq-results t)))
+
            (if pen-force-n-collate
                (list `(n-collate pen-force-n-collations)))
 

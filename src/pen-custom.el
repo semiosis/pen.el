@@ -173,6 +173,12 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-force-no-uniq-results nil
+  ""
+  :type 'boolean
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-force-one nil
   ""
   :type 'boolean
