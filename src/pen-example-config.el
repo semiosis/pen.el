@@ -276,43 +276,48 @@
   (sps (cmd "eterm" "nlsh" os)))
 
 
-;; code H-`
+;; code M-SPC c
 ;; prose H-"
 ;; math H-#
 
 (setq pen-fav-programming-language "Emacs Lisp")
 (setq pen-fav-world-language "English")
 
-(define-key pen-map (kbd "H-` t") 'pen-transform-code)
-(define-key pen-map (kbd "H-` g p") 'pf-generate-perl-command/1)
-(define-key pen-map (kbd "H-` g r") 'pf-gpt-j-generate-regex/2)
-(define-key pen-map (kbd "H-` g g") 'pf-generate-program-from-nl/3)
+(define-key pen-map (kbd "M-SPC c t") 'pen-transform-code)
+(define-key pen-map (kbd "M-SPC c g p") 'pf-generate-perl-command/1)
+(define-key pen-map (kbd "M-SPC c g r") 'pf-gpt-j-generate-regex/2)
+(define-key pen-map (kbd "M-SPC c g g") 'pf-generate-program-from-nl/3)
 
 (define-key pen-map (kbd "H-# t n") 'pf-translate-math-into-natural-language/1)
 (define-key pen-map (kbd "H-# t l") 'pf-convert-ascii-to-latex-equation/1)
 
+;; Actually, I want to run prompts this way
+;; C-M-i is the same as M-C-i. No such thing as C-M-TAB.
+(define-key global-map (kbd "M-SPC") #'indent-for-tab-command)
+
 ;; g is for generation
-(define-key pen-map (kbd "H-' g b") 'pf-write-a-blog-post/2)
+(define-key pen-map (kbd "M-SPC g b") 'pf-write-a-blog-post/2)
 ;; U is for understand
-(define-key pen-map (kbd "H-' r") 'pf-transpile/3)
-(define-key pen-map (kbd "H-' t") 'pen-transform-prose)
-(define-key pen-map (kbd "H-' u") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
-(define-key pen-map (kbd "H-' w") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
+(define-key pen-map (kbd "M-SPC r") 'pf-transpile/3)
+(define-key pen-map (kbd "M-SPC t") 'pen-transform-prose)
+(define-key pen-map (kbd "M-SPC u") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
+(define-key pen-map (kbd "M-SPC w") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
 
 (define-key pen-map (kbd "H-^") 'pen-transform)
-(define-key pen-map (kbd "H-p ^") 'pen-transform)
-(define-key pen-map (kbd "H-p t") 'pen-transform)
-(define-key pen-map (kbd "H-p i") 'pen-insert-snippet-from-lm)
-(define-key pen-map (kbd "H-p h") 'pf-how-to-use-a-function/2)
-(define-key pen-map (kbd "H-p l") 'pf-explain-some-code/2)
-(define-key pen-map (kbd "H-p e") 'pf-get-an-example-of-the-usage-of-a-function/2)
-(define-key pen-map (kbd "H-p a") (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
-(define-key pen-map (kbd "H-p A") 'pf-append-to-code/3)
-(define-key pen-map (kbd "H-p n") 'pen-select-function-from-nl)
-(define-key pen-map (kbd "H-p c") 'sps-nlsc)
-(define-key pen-map (kbd "H-p s") 'sps-nlsh)
-(define-key pen-map (kbd "H-p f") 'pen-autofix-lsp-errors)
-(define-key pen-map (kbd "H-p m") 'pf-given-a-function-name-show-the-import/2)
+(define-key pen-map (kbd "M-SPC ^") 'pen-transform)
+(define-key pen-map (kbd "M-SPC t") 'pen-transform)
+(define-key pen-map (kbd "M-SPC i") 'pen-insert-snippet-from-lm)
+(define-key pen-map (kbd "M-SPC h") 'pf-how-to-use-a-function/2)
+(define-key pen-map (kbd "M-SPC l") 'pf-explain-some-code/2)
+(define-key pen-map (kbd "M-SPC e") 'pf-get-an-example-of-the-usage-of-a-function/2)
+(define-key pen-map (kbd "M-SPC a") (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
+(define-key pen-map (kbd "M-SPC A") 'pf-append-to-code/3)
+(define-key pen-map (kbd "M-SPC n") 'pen-select-function-from-nl)
+(define-key pen-map (kbd "M-SPC N") 'sps-nlsc)
+(define-key pen-map (kbd "M-SPC c") nil)
+(define-key pen-map (kbd "M-SPC ;") 'sps-nlsh)
+(define-key pen-map (kbd "M-SPC f") 'pen-autofix-lsp-errors)
+(define-key pen-map (kbd "M-SPC m") 'pf-given-a-function-name-show-the-import/2)
 
 (add-to-list 'pen-editing-functions 'pen-lsp-explain-error)
 (add-to-list 'pen-editing-functions 'pf-explain-error/2)
