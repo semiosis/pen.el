@@ -25,6 +25,8 @@ headers = {"Authorization": f"Bearer {API_TOKEN}"}
 # import shanepy as spy
 # from shanepy import *
 
+no_parameters = os.environ.get("NO_PARAMETERS") and ("y" == os.environ.get("NO_PARAMETERS"))
+
 def query(payload):
     data = json.dumps(payload)
 
@@ -34,54 +36,68 @@ def query(payload):
     # tv(data)
     return json.loads(response.content.decode("utf-8"))
 
-exit
-
 if PEN_MODE == "summarize":
-    ret = query(
-        {
-            "inputs": PEN_PROMPT,
-            "parameters": {
-                "top_k": os.environ.get("PEN_TOP_K")
-                and int(os.environ.get("PEN_TOP_K")),
-                "top_p": os.environ.get("PEN_TOP_P")
-                and float(os.environ.get("PEN_TOP_P")),
-                "temperature": os.environ.get("PEN_TEMPERATURE")
-                and float(os.environ.get("PEN_TEMPERATURE")),
-                "repetition_penalty": os.environ.get("PEN_REPETITION_PENALTY")
-                and float(os.environ.get("PEN_REPETITION_PENALTY")),
-                # "max_new_tokens": os.environ.get("PEN_MAX_TOKENS")
-                # and int(os.environ.get("PEN_MAX_TOKENS")),
-                "num_return_sequences": os.environ.get("PEN_N_COMPLETIONS")
-                and int(os.environ.get("PEN_N_COMPLETIONS")),
-                # "return_full_text": False,
-            },
-            # "options": {"wait_for_model": True},
-        }
-    )
+    if no_parameters:
+        ret = query(
+            {
+                "inputs": PEN_PROMPT,
+                # "options": {"wait_for_model": True},
+            }
+        )
+    else:
+        ret = query(
+            {
+                "inputs": PEN_PROMPT,
+                "parameters": {
+                    "top_k": os.environ.get("PEN_TOP_K")
+                    and int(os.environ.get("PEN_TOP_K")),
+                    "top_p": os.environ.get("PEN_TOP_P")
+                    and float(os.environ.get("PEN_TOP_P")),
+                    "temperature": os.environ.get("PEN_TEMPERATURE")
+                    and float(os.environ.get("PEN_TEMPERATURE")),
+                    "repetition_penalty": os.environ.get("PEN_REPETITION_PENALTY")
+                    and float(os.environ.get("PEN_REPETITION_PENALTY")),
+                    # "max_new_tokens": os.environ.get("PEN_MAX_TOKENS")
+                    # and int(os.environ.get("PEN_MAX_TOKENS")),
+                    "num_return_sequences": os.environ.get("PEN_N_COMPLETIONS")
+                    and int(os.environ.get("PEN_N_COMPLETIONS")),
+                    # "return_full_text": False,
+                },
+                # "options": {"wait_for_model": True},
+            }
+        )
 
     print(PEN_PROMPT + ret[0].get("summary_text"))
 else:
-    ret = query(
-        {
-            "inputs": PEN_PROMPT,
-            "parameters": {
-                "top_k": os.environ.get("PEN_TOP_K")
-                and int(os.environ.get("PEN_TOP_K")),
-                "top_p": os.environ.get("PEN_TOP_P")
-                and float(os.environ.get("PEN_TOP_P")),
-                "temperature": os.environ.get("PEN_TEMPERATURE")
-                and float(os.environ.get("PEN_TEMPERATURE")),
-                "repetition_penalty": os.environ.get("PEN_REPETITION_PENALTY")
-                and float(os.environ.get("PEN_REPETITION_PENALTY")),
-                "max_new_tokens": os.environ.get("PEN_MAX_TOKENS")
-                and int(os.environ.get("PEN_MAX_TOKENS")),
-                "num_return_sequences": os.environ.get("PEN_N_COMPLETIONS")
-                and int(os.environ.get("PEN_N_COMPLETIONS")),
-                "return_full_text": False,
-            },
-            # "options": {"wait_for_model": True},
-        }
-    )
+    if no_parameters:
+        ret = query(
+            {
+                "inputs": PEN_PROMPT,
+                # "options": {"wait_for_model": True},
+            }
+        )
+    else:
+        ret = query(
+            {
+                "inputs": PEN_PROMPT,
+                "parameters": {
+                    "top_k": os.environ.get("PEN_TOP_K")
+                    and int(os.environ.get("PEN_TOP_K")),
+                    "top_p": os.environ.get("PEN_TOP_P")
+                    and float(os.environ.get("PEN_TOP_P")),
+                    "temperature": os.environ.get("PEN_TEMPERATURE")
+                    and float(os.environ.get("PEN_TEMPERATURE")),
+                    "repetition_penalty": os.environ.get("PEN_REPETITION_PENALTY")
+                    and float(os.environ.get("PEN_REPETITION_PENALTY")),
+                    "max_new_tokens": os.environ.get("PEN_MAX_TOKENS")
+                    and int(os.environ.get("PEN_MAX_TOKENS")),
+                    "num_return_sequences": os.environ.get("PEN_N_COMPLETIONS")
+                    and int(os.environ.get("PEN_N_COMPLETIONS")),
+                    "return_full_text": False,
+                },
+                # "options": {"wait_for_model": True},
+            }
+        )
 
     if len(ret) == 1 and type(ret) is list:
         print(PEN_PROMPT + ret[0].get("generated_text"))
