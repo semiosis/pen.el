@@ -408,6 +408,7 @@ Reconstruct the entire yaml-ht for a different language."
     `(progn
        ,@whens)))
 
+;; Discovering the keys is a separate issue (when generating the .prompt files)
 (defun pen-jinja-expand (s keyvals)
   (if keyvals
       (let ((i 1))
@@ -421,6 +422,7 @@ Reconstruct the entire yaml-ht for a different language."
                             (pen-encode-string val)
                           val)))
 
+              ;; oci bigscience-get-prompts | jq . | scrape "{{[^}]*}}" | v
               (loop for pl
                     in pipelines
                     do
