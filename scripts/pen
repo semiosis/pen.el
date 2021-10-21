@@ -228,7 +228,7 @@ if test "$start_shell" = "y"; then
     export DISPLAY=
     # nvt 
 
-    docker exec -it pen 'sh' '-c' '/bin/bash || /bin/zsh || sh' 
+    docker exec -it pen 'sh' '-c' '. /root/.emacs.d/pen.el/scripts/setup-term.sh; /bin/bash || /bin/zsh || sh' 
     exit "$?"
 fi
 

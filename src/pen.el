@@ -408,6 +408,71 @@ Reconstruct the entire yaml-ht for a different language."
     `(progn
        ,@whens)))
 
+(defun pen-jinja-expand (s keyvals)
+  (if keyvals
+      (let ((i 1))
+        (chomp
+         (progn
+           (cl-loop
+            for kv in keyvals do
+            (let* ((key (str (car kv)))
+                   (val (str (cdr kv)))
+                   (val (if encode
+                            (pen-encode-string val)
+                          val)))
+
+              (loop for pl
+                    in pipelines
+                    do
+                    (let ((plf (format "<%s:%s>" (car pl) key))
+                          (plf2 (format "<%s<pen-colon>%s>" (car pl) key)))
+
+                      (cond-all
+                       ((re-match-p (pen-unregexify plf) s)
+                        (setq s (string-replace plf (pen-snc (cdr pl) (chomp val)) s)))
+                       ((re-match-p (pen-unregexify plf2) s)
+                        (setq s (string-replace plf2 (pen-snc (cdr pl) (chomp val)) s))))))
+
+              ;; (comment
+              ;;  (pen-cartesian-product '("foo" "bar" "baz") '("einie" "mienie" "meinie" "mo"))
+              ;;  ;; (mapcar 'car '(("hello" . "there") ("about" . "time")))
+              ;;  (mapcar 'car pipelines)
+              ;;  (car (assoc "uc" '(("uc" . "pen-str uc")))))
+
+              (let ((unquoted (format "<%s>" key))
+                    (quoted (format "<q:%s>" key))
+                    (quoted2 (format "<q<pen-colon>%s>" key))
+                    (slugged (format "<sl:%s>" key))
+                    (slugged2 (format "<sl<pen-colon>%s>" key))
+                    (boxed (format "<bx:%s>" key))
+                    (boxed2 (format "<bx<pen-colon>%s>" key))
+                    (backslashed (format "<bs:%d>" i))
+                    (backslashed2 (format "<bs<pen-colon>%d>" i)))
+
+                (cond-all
+                 ((re-match-p (pen-unregexify unquoted) s)
+                  (setq s (string-replace unquoted (chomp val) s)))
+                 ((re-match-p (pen-unregexify quoted) s)
+                  (setq s (string-replace quoted (pen-q (chomp val)) s)))
+                 ((re-match-p (pen-unregexify quoted2) s)
+                  (setq s (string-replace quoted2 (pen-q (chomp val)) s)))
+                 ((re-match-p (pen-unregexify slugged) s)
+                  (setq s (string-replace slugged (slugify (chomp val)) s)))
+                 ((re-match-p (pen-unregexify slugged2) s)
+                  (setq s (string-replace slugged2 (slugify (chomp val)) s)))
+                 ((re-match-p (pen-unregexify boxed) s)
+                  (setq s (string-replace boxed (pen-boxify (chomp val)) s)))
+                 ((re-match-p (pen-unregexify boxed2) s)
+                  (setq s (string-replace boxed2 (pen-boxify (chomp val)) s)))
+                 ((re-match-p (pen-unregexify backslashed) s)
+                  (setq s (string-replace backslashed (pen-snc "sed 's=.=\\\\&=g'" val) s)))
+                 ((re-match-p (pen-unregexify backslashed2) s)
+                  (setq s (string-replace backslashed2 (pen-snc "sed 's=.=\\\\&=g'" val) s)))))
+              ;; (setq s (string-replace (format "<%d>" i) val s))
+              (setq i (+ 1 i))))
+           s)))
+    s))
+
 (defun pen-expand-template-keyvals (s keyvals &optional encode pipelines)
   "expand template from alist"
   (if keyvals
@@ -423,16 +488,16 @@ Reconstruct the entire yaml-ht for a different language."
                           val)))
 
               (loop for pl
-                     in pipelines
-                     do
-                     (let ((plf (format "<%s:%s>" (car pl) key))
-                           (plf2 (format "<%s<pen-colon>%s>" (car pl) key)))
+                    in pipelines
+                    do
+                    (let ((plf (format "<%s:%s>" (car pl) key))
+                          (plf2 (format "<%s<pen-colon>%s>" (car pl) key)))
 
-                       (cond-all
-                        ((re-match-p (pen-unregexify plf) s)
-                         (setq s (string-replace plf (pen-snc (cdr pl) (chomp val)) s)))
-                        ((re-match-p (pen-unregexify plf2) s)
-                         (setq s (string-replace plf2 (pen-snc (cdr pl) (chomp val)) s))))))
+                      (cond-all
+                       ((re-match-p (pen-unregexify plf) s)
+                        (setq s (string-replace plf (pen-snc (cdr pl) (chomp val)) s)))
+                       ((re-match-p (pen-unregexify plf2) s)
+                        (setq s (string-replace plf2 (pen-snc (cdr pl) (chomp val)) s))))))
 
               ;; (comment
               ;;  (pen-cartesian-product '("foo" "bar" "baz") '("einie" "mienie" "meinie" "mo"))
