@@ -139,6 +139,12 @@ share_x=y
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    sh) {
+        start_shell=y
+        shift
+    }
+    ;;
+
     -tty|-nw) {
         use_tty=y
         shift
@@ -216,6 +222,14 @@ esac; done
 
 if ! test "$share_x" = "y"; then
     export DISPLAY=
+fi
+
+if test "$start_shell" = "y"; then
+    export DISPLAY=
+    # nvt 
+
+    docker exec -it pen 'sh' '-c' '/bin/bash || /bin/zsh || sh' 
+    exit "$?"
 fi
 
 cmd() {
