@@ -20,12 +20,15 @@ prompts = []
 
 for ds in [collection.get_dataset(k) for k in collection.get_templates_count()]:
     for promptname in ds.all_template_names:
-        prompts.append((promptname, ds[promptname].jinja))
+        prompts.append({ "name": promptname, "prompt": ds[promptname].jinja})
 
 import json
 
 # Convert list of tuples to json
-json_list = [json.dumps(x) for x in prompts] 
+print(json.dumps(prompts))
 
-for j in json_list:
-    print(j)
+# # Convert list of tuples to json
+# json_list = [json.dumps(x) for x in prompts] 
+
+# for j in json_list:
+#     print(j)
