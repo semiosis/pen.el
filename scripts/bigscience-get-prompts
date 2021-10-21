@@ -1,0 +1,31 @@
+#!/usr/bin/env python3.7
+# -*- coding: utf-8 -*-
+
+# This will use huggingface key
+
+# Get an example
+from datasets import load_dataset
+# dataset = load_dataset("ag_news")
+# example = dataset["train"][0]
+
+# TODO Convert into my prompting format
+# TODO Add jinja templating to Pen.el
+
+# Prompt it
+from promptsource.templates import TemplateCollection
+# Get all the prompts
+collection = TemplateCollection()
+
+prompts = []
+
+for ds in [collection.get_dataset(k) for k in collection.get_templates_count()]:
+    for promptname in ds.all_template_names:
+        prompts.append((promptname, ds[promptname].jinja))
+
+import json
+
+# Convert list of tuples to json
+json_list = [json.dumps(x) for x in prompts] 
+
+for j in json_list:
+    print(j)
