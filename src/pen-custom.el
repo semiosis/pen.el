@@ -23,6 +23,13 @@ This is useful for code-understanding when reading languages you don't understan
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defcustom pen-force-expand-jina t
+  "Always expand jinja template in prompts"
+  :type 'boolean
+  :group 'pen
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
 (defcustom pen-cost-efficient t
   "Avoid spending money"
   :type 'boolean
