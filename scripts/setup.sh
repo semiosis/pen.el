@@ -207,3 +207,5 @@ curl -L http://cpanmin.us | perl - App::cpanminus
 cpanm --force String::Escape
 
 mkdir -p ~/.config/efm-langserver
+
+pip3 install jinja2-cli
