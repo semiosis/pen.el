@@ -1289,14 +1289,15 @@ Out
 (defun pen-insert (s)
   (interactive)
   (cond
-   (buffer-read-only
-    (pen-etv s)
-    (call-interactively 'mark-whole-buffer)
-    (message "buffer read only, placing in temporary buffer"))
    ((derived-mode-p 'term-mode)
     (term-send-raw-string s))
    ((derived-mode-p 'vterm-mode)
     (vterm-insert s))
+   ;; This must come *after* the checks to term-mode
+   (buffer-read-only
+    (pen-etv s)
+    (call-interactively 'mark-whole-buffer)
+    (message "buffer read only, placing in temporary buffer"))
    (t
     (let ((p (point)))
       (insert s)

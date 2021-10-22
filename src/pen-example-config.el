@@ -309,6 +309,7 @@
 (define-key pen-map (kbd "M-SPC e f") 'pf-get-an-example-of-the-usage-of-a-function/2)
 (define-key pen-map (kbd "M-SPC a") nil)
 (define-key pen-map (kbd "M-SPC g a") (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
+(define-key pen-map (kbd "M-SPC g n") 'pf-code-snippet-from-natural-language/2)
 (define-key pen-map (kbd "M-SPC A") 'pf-append-to-code/3)
 (define-key pen-map (kbd "M-SPC h f /") 'pen-select-function-from-nl)
 (define-key pen-map (kbd "M-SPC N") 'sps-nlsc)
