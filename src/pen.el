@@ -928,6 +928,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'inject-gen-start)
                        ,inject-gen-start))
 
+                  (final-expand-jinja
+                   (or (pen-var-value-maybe 'expand-jinja)
+                       ,expand-jinja))
+
                   (final-start-yas
                    (or (pen-var-value-maybe 'start-yas)
                        ,start-yas))
@@ -2270,6 +2274,7 @@ Function names are prefixed with pf- for easy searching"
                         (action (pen-yaml-test yaml-ht "action"))
 
                         (new-document (pen-yaml-test yaml-ht "new-document"))
+                        (expand-jinja (pen-yaml-test yaml-ht "expand-jinja"))
                         (start-yas (pen-yaml-test yaml-ht "start-yas"))
                         (yas (pen-yaml-test yaml-ht "yas"))
 
