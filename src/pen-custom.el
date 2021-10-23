@@ -17,7 +17,7 @@ This is useful for code-understanding when reading languages you don't understan
   :initialize #'custom-initialize-default)
 
 (defcustom pen-obtain-probabilities t
-  "Strip unicode from input"
+  "Also query for the probabilities, when prompting"
   :type 'boolean
   :group 'pen
   :initialize (lambda(_sym _exp)
