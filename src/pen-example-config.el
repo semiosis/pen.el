@@ -335,6 +335,9 @@
 (define-key pen-map (kbd "H-SPC c p") 'pf-imagine-a-project-template/1)
 (define-key pen-map (kbd "H-SPC c b") 'pf-generate-the-contents-of-a-new-file/6)
 
+;; complex terminal commands
+(define-key pen-map (kbd "M-SPC ` n") 'pf-next-terminal-command-from-nl/3)
+
 (add-to-list 'pen-editing-functions 'pen-lsp-explain-error)
 (add-to-list 'pen-editing-functions 'pf-explain-error/2)
 (add-to-list 'pen-editing-functions 'rcm-explain-code)

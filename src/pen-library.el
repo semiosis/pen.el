@@ -81,6 +81,9 @@
              (and (major-mode-enabled 'sx-question-mode)
                   (sx-get-question-url))
 
+             (and (major-mode-enabled 'w3m-mode)
+                  w3m-current-url)
+
              (and (major-mode-enabled 'org-brain-visualize-mode)
                   (org-brain-get-path-for-entry org-brain--vis-entry semantic-path))
 
@@ -89,9 +92,9 @@
 
              (and (major-mode-enabled 'dired-mode)
                   (sor (and
-                              for-clipboard
-                              (mapconcat 'q (dired-get-marked-files) " "))
-                             (pen-pwd)))
+                        for-clipboard
+                        (mapconcat 'q (dired-get-marked-files) " "))
+                       (pen-pwd)))
 
              ;; This will break on eww
              (if (and (not (eq major-mode 'org-mode))

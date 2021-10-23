@@ -2295,6 +2295,7 @@ Function names are prefixed with pf- for easy searching"
                                            "###"))
                         (delimiter (or
                                     (ht-get yaml-ht "delimiter")
+                                    engine-delimiter
                                     "###"))
                         (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
                         (interpreter (pen-yaml-test yaml-ht "interpreter"))
