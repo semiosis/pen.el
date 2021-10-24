@@ -145,6 +145,10 @@
   (if (not prompt)
       (setq prompt "pen-choose: "))
 
+  (let ((fnn (pen-var-value-maybe 'func-name)))
+    (if (sor fnn)
+        (setq prompt (concat fnn " ~ " prompt))))
+
   (if (pen-var-value-maybe 'pen-single-generation-b)
       (car options)
     (fz
