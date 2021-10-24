@@ -375,6 +375,7 @@
   (pen-define-key pen-map (kbd "H-TAB R") 'pen-run-prompt-alias)
   (pen-define-key pen-map (kbd "H-TAB h") 'pen-copy-from-hist)
   (pen-define-key pen-map (kbd "H-TAB k") 'pen-go-to-last-results-dir)
+  (pen-define-key pen-map (kbd "H-TAB o") 'pen-continue-from-hist)
 
   (define-key pen-map (kbd "H-^") 'pen-transform))
 
