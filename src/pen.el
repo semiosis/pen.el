@@ -769,7 +769,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
-   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match variadic-var inject-gen-start))
+   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match variadic-var inject-gen-start force-interactive))
       ,doc
       (interactive ,(cons 'list iargs))
 
@@ -779,7 +779,9 @@ Reconstruct the entire yaml-ht for a different language."
 
       ;; force-custom, unfortunately disables call-interactively
       ;; i guess that it could also disable other values
-      (let ((is-interactive (interactive-p)))
+      (let ((is-interactive
+             (or (interactive-p)
+                 force-interactive)))
         (pen-force-custom
          (cl-macrolet ((expand-template
                         (string-sym)
@@ -3446,12 +3448,14 @@ May use to generate code from comments."
                                result)))))
 
     ;; This works but I need to also force interactive
+    ;; Still buggy. Now it's chopping off the start
     (apply
      fun
      (append vals `(:inject-gen-start
                     ,(s-right
                       (- (length result) (- end-pos collect-from-pos))
-                      result))))))
+                      result)
+                    :force-interactive t)))))
 
 (comment (s-right (- (length "full text") (length "full")) "full text"))
 
