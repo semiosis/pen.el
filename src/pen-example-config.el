@@ -280,19 +280,6 @@
 (setq pen-fav-programming-language "Emacs Lisp")
 (setq pen-fav-world-language "English")
 
-;; Actually, I want to run prompts this way
-;; C-M-i is the same as M-C-i. No such thing as C-M-TAB.
-(define-key global-map (kbd "M-SPC") #'indent-for-tab-command)
-
-;; g is for generation
-(define-key pen-map (kbd "M-SPC g b") 'pf-write-a-blog-post/2)
-;; U is for understand
-(define-key pen-map (kbd "M-SPC r") 'pf-transpile/3)
-(define-key pen-map (kbd "M-SPC t") 'pen-transform-prose)
-(define-key pen-map (kbd "M-SPC u") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
-(define-key pen-map (kbd "M-SPC w") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
-
-(define-key pen-map (kbd "H-^") 'pen-transform)
 
 ;; (defun metaize-keybind (b)
 ;;   (-cx '("M-" "") (s-split " " b)))
@@ -308,9 +295,17 @@
           collect
           `((define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun)
-            (define-key pen-map (kbd ,(concat "M-SPC " bind-i)) ,fun))))))
+            (define-key pen-map (kbd ,(concat "M-SPC " bind-i)) ,fun)
+            (define-key pen-map (kbd ,(concat "M-SPC TAB " bind-i)) ,fun))))))
 (defalias 'pen-dk-easy 'pen-define-key-easy)
 
+
+;; Actually, I want to run prompts this way
+;; C-M-i is the same as M-C-i. No such thing as C-M-TAB.
+(define-key global-map (kbd "M-SPC") #'indent-for-tab-command)
+
+
+;; I could actually use codex to generate DWIM key bindings from function names
 (defun pen-define-maps ()
   (interactive)
 
@@ -333,15 +328,16 @@
   (pen-dk-easy "c n" 'pen-select-function-from-nl)
   (pen-dk-easy "c p" 'pf-imagine-a-project-template/1)
   (pen-dk-easy "c t" 'pen-transform-code)
-  (pen-dk-easy "e c" 'pf-explain-some-code/2)
-  (pen-dk-easy "e f" 'pf-get-an-example-of-the-usage-of-a-function/2)
   ;; (pen-dk-easy "e" nil)
   (pen-dk-easy "e" 'pen-customize)
+  (pen-dk-easy "e c" 'pf-explain-some-code/2)
+  (pen-dk-easy "e f" 'pf-get-an-example-of-the-usage-of-a-function/2)
   (pen-dk-easy "f" nil)
   (pen-dk-easy "g" nil)
   (pen-dk-easy "g a" (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
   (pen-dk-easy "g n" 'pf-code-snippet-from-natural-language/2)
   (pen-dk-easy "g p" 'pf-generate-perl-command/1)
+  (pen-dk-easy "g b" 'pf-write-a-blog-post/2)
   (pen-dk-easy "h f /" 'pen-select-function-from-nl)
   (pen-dk-easy "h f i" 'pf-given-a-function-name-show-the-import/2)
   (pen-dk-easy "h f u" 'pf-how-to-use-a-function/2)
@@ -362,7 +358,15 @@
   (pen-dk-easy "t" 'pen-transform)
   (pen-dk-easy "t" nil)
   (pen-dk-easy "w" 'pen-transform)
-  (pen-dk-easy "x" 'pen-diagnostics-show-context))
+  (pen-dk-easy "x" 'pen-diagnostics-show-context)
+
+  ;; U is for understand
+  (define-key pen-map (kbd "M-SPC r") 'pf-transpile/3)
+  (define-key pen-map (kbd "M-SPC t") 'pen-transform-prose)
+  (define-key pen-map (kbd "M-SPC u") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
+  (define-key pen-map (kbd "M-SPC w") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
+
+  (define-key pen-map (kbd "H-^") 'pen-transform))
 
 
 ;; Most main pen commands should be under hyperspace
