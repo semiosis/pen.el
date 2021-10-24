@@ -297,12 +297,21 @@
 
 (define-key pen-map (kbd "H-^") 'pen-transform)
 
+;; (defun metaize-keybind (b)
+;;   (-cx '("M-" "") (s-split " " b)))
+
 (defmacro pen-define-key-easy (bind fun)
   ""
-  `(progn
-     (define-key pen-map (kbd ,(concat "H-TAB " bind)) ,fun)
-     (define-key pen-map (kbd ,(concat "<H-tab> " bind)) ,fun)
-     (define-key pen-map (kbd ,(concat "M-SPC " bind)) ,fun)))
+  (append
+   '(progn)
+   (flatten-once
+    (loop for bind-i in
+          (list bind
+                (concat "M-" (s-replace-regexp " " " M-" bind)))
+          collect
+          `((define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
+            (define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun)
+            (define-key pen-map (kbd ,(concat "M-SPC " bind-i)) ,fun))))))
 (defalias 'pen-dk-easy 'pen-define-key-easy)
 
 (defun pen-define-maps ()
