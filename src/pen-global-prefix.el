@@ -201,6 +201,7 @@ These commands include \\[set-mark-command] and \\[start-kbd-macro]."
 
 (defun test-global-prefix ()
   (interactive)
+  ;; (prefix-numeric-value '(4))
   (message (concat "prefix: " (sor (str current-prefix-arg) "-")
                    ", "
                    "global prefix: " (sor (str current-global-prefix-arg) "-"))))

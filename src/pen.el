@@ -758,6 +758,9 @@ Reconstruct the entire yaml-ht for a different language."
 ;;  postprocessor prompt-filter n-completions)
 ;; (let ((max-tokens 1)) (funcall (cl-defun yo () (pen-etv max-tokens))))
 ;; (let ((max-tokens 1)) (funcall 'pf-asktutor/3 "emacs" "key bindings" "How do I kill a buffer?" :no-select-result t))
+
+;; I don't think cl-defun passes on the current-global-prefix-arg
+;; I have to extend cl-defun
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
