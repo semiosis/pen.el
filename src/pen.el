@@ -4,9 +4,9 @@
 
 ;; For string-empty-p
 (require 'subr-x)
+(require 'pen-global-prefix)
 (require 'pen-regex)
 (require 'pen-support)
-(require 'pen-global-prefix)
 (require 'dash)
 (require 'projectile)
 (require 'transient)
