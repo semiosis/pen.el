@@ -3413,7 +3413,7 @@ May use to generate code from comments."
          (al (eval-string sel))
          ;; (vals (apply 'pen-cmd (eval-string (concat "'" (cdr (assoc "PEN_VALS" al))))))
          (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
-         (result (tv (cdr (assoc "PEN_RESULT" al))))
+         (result (cdr (assoc "PEN_RESULT" al)))
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
     (apply fun (append vals `(:inject-gen-start ,result)))))
