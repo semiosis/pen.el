@@ -753,7 +753,8 @@ region-active-p does not work for evil selection."
 
 (defun test-read-string ()
   (interactive)
-  (eval `(let ((func-name "yo")) (pen-read-string "hi"))))
+  ;; (eval `(let ((func-name "yo")) (pen-read-string "hi")))
+  (let ((func-name "yo")) (pen-read-string "hi")))
 
 (defun pen-screen-or-selection ()
   (let ((sel (selection)))
