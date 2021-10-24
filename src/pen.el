@@ -951,13 +951,6 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'no-uniq-results)
                        ,no-uniq-results))
 
-                  (final-inject-gen-start
-                   (expand-template
-                    (or
-                     inject-gen-start
-                     (pen-var-value-maybe 'inject-gen-start)
-                     ,inject-gen-start)))
-
                   (final-expand-jinja
                    (or (pen-var-value-maybe 'expand-jinja)
                        ,expand-jinja))
@@ -1145,6 +1138,13 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-n-target
                    (or (pen-var-value-maybe 'n-target)
                        ,n-target))
+
+                  (final-inject-gen-start
+                   (expand-template
+                    (or
+                     inject-gen-start
+                     (pen-var-value-maybe 'inject-gen-start)
+                     ,inject-gen-start)))
 
                   (final-engine-max-n-completions
                    (expand-template
