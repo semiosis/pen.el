@@ -199,6 +199,19 @@ These commands include \\[set-mark-command] and \\[start-kbd-macro]."
 
 (define-key global-map (kbd "H-u") 'global-argument)
 
+;; interactive breaks current-global-prefix-arg
+;; No, read-string does it
+;; Also, cl-defun doesn't make a difference at all.
+(cl-defun test-cl-defun (str)
+  ;; (interactive (list (pen-read-string "hi")))
+  (interactive (list (read-string "kjlfdskf")))
+  ;; (interactive (list "fkdjlsfk"))
+  (message (concat "prefix: " (sor (str current-prefix-arg) "-")
+                   ", "
+                   "global prefix: " (sor (str current-global-prefix-arg) "-"))))
+
+(define-key pen-map (kbd "H-#") 'test-cl-defun)
+
 (defun test-global-prefix ()
   (interactive)
   ;; (prefix-numeric-value '(4))

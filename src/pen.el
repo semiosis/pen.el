@@ -761,6 +761,8 @@ Reconstruct the entire yaml-ht for a different language."
 
 ;; I don't think cl-defun passes on the current-global-prefix-arg
 ;; I have to extend cl-defun
+;; Actually, I think it's the interactive functions which are doing it
+;; That's correct, it is.
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
@@ -770,6 +772,10 @@ Reconstruct the entire yaml-ht for a different language."
       (setq no-select-result
             (or no-select-result
                 (pen-var-value-maybe 'pen-no-select-result)))
+
+      (tv (concat "prefix: " (sor (str current-prefix-arg) "-")
+                   ", "
+                   "global prefix: " (sor (str current-global-prefix-arg) "-")))
 
       ;; force-custom, unfortunately disables call-interactively
       ;; i guess that it could also disable other values
