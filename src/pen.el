@@ -952,10 +952,11 @@ Reconstruct the entire yaml-ht for a different language."
                        ,no-uniq-results))
 
                   (final-inject-gen-start
-                   (or
-                    inject-gen-start
-                    (pen-var-value-maybe 'inject-gen-start)
-                    ,inject-gen-start))
+                   (expand-template
+                    (or
+                     inject-gen-start
+                     (pen-var-value-maybe 'inject-gen-start)
+                     ,inject-gen-start)))
 
                   (final-expand-jinja
                    (or (pen-var-value-maybe 'expand-jinja)
