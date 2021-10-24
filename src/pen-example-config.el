@@ -81,13 +81,8 @@
 (define-key pen-map (kbd "H-5") 'pen-complete-long)
 (define-key pen-map (kbd "H-P") 'pen-complete-long)
 (define-key pen-map (kbd "H-b") 'pf-generate-the-contents-of-a-new-file/6)
-(define-key pen-map (kbd "H-TAB m") 'pen-complete-medium)
-(pen-define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
-(pen-define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
-(pen-define-key pen-map (kbd "H-TAB y") 'pen-run-analyser-function)
-(pen-define-key pen-map (kbd "H-TAB d") 'pen-run-editing-function)
-(pen-define-key pen-map (kbd "H-TAB i") 'pen-start-imaginary-interpreter)
+
 (define-key pen-map (kbd "H-n") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-:") 'pen-compose-cli-command)
@@ -365,8 +360,16 @@
   (pen-dk-easy "u" (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
   (pen-dk-easy "w" (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
 
+  ;; Overrides
+  (pen-define-key pen-map (kbd "H-TAB m") 'pen-complete-medium)
+  (pen-define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
+  (pen-define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
+  (pen-define-key pen-map (kbd "H-TAB y") 'pen-run-analyser-function)
+  (pen-define-key pen-map (kbd "H-TAB d") 'pen-run-editing-function)
+  (pen-define-key pen-map (kbd "H-TAB i") 'pen-start-imaginary-interpreter)
 
   (define-key pen-map (kbd "H-^") 'pen-transform))
+
 
 
 ;; Most main pen commands should be under hyperspace
