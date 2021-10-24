@@ -722,9 +722,12 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
 ;; TODO Use this is more places
 (defun pen-read-string (prompt &optional initial-input history default-value inherit-input-method)
-  (if (pen-var-value-maybe 'do-pen-batch)
-      ""
-    (read-string prompt initial-input history default-value inherit-input-method)))
+  (let ((func-name (pen-var-value-maybe 'func-name)))
+    (if (sor func-name)
+        (setq prompt (concat func-name "~" prompt)))
+    (if (pen-var-value-maybe 'do-pen-batch)
+        ""
+      (read-string prompt initial-input history default-value inherit-input-method))))
 
 (defun pen-selected-text (&optional ignore-no-selection keep-properties)
   "Just give me the selected text as a string. If it's empty, then nothing was selected.

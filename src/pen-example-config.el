@@ -358,6 +358,7 @@
   (pen-dk-easy "^" 'pen-transform)
   (pen-dk-easy "x" 'pen-diagnostics-show-context)
   (pen-dk-easy "r" 'pf-transpile/3)
+  (pen-dk-easy "L" 'pf-translate/3)
   (pen-dk-easy "t" 'pen-transform-prose)
   (pen-dk-easy "u" (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
   (pen-dk-easy "w" (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
