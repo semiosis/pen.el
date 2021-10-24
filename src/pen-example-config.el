@@ -169,10 +169,10 @@
   (switch-to-buffer "*scratch*"))
 
 ;; defvar this in your own config and load first to disable
-(defvar pen-init-with-acolyte-mode t)
+;; (defvar pen-init-with-acolyte-mode t)
 
-(if pen-init-with-acolyte-mode
-    (global-pen-acolyte-minor-mode t))
+;; (if pen-init-with-acolyte-mode
+;;     (global-pen-acolyte-minor-mode t))
 
 (package-install 'ivy)
 (require 'ivy)
