@@ -10,11 +10,11 @@ test -n "$OPENAI_API_KEY" || {
     echo "OPENAI_API_KEY not given to script"
     exit 1
 }
-
+gg0
 export OPENAI_API_KEY
 
 openai() {
     python3 `which openai` "$@"
 }
-
+;
 openai "$@" | pen-log openai-temp
