@@ -1265,26 +1265,20 @@ Reconstruct the entire yaml-ht for a different language."
                     (pen-var-value-maybe 'force-temperature)
                     ,force-temperature))
 
-                  (final-temperature
-                   (expand-template
-                    (str (or
-                          final-force-temperature
-                          final-temperature ;At this stage, could only have been set by force-engine
-                          (pen-var-value-maybe 'temperature)
-                          ,temperature))))
-
                   (final-default-temperature
                    (expand-template
                     (str (or (pen-var-value-maybe 'default-temperature)
                              ,default-temperature))))
 
                   (final-temperature
-                   (if (and (sor pen-force-engine)
-                            (not pen-force-temperature)
-                            (not ,force-temperature)
-                            final-default-temperature)
-                       final-default-temperature
-                     final-temperature))
+                   (expand-template
+                    (str (or
+                          final-force-temperature
+                          pen-force-temperature
+                          final-temperature ;At this stage, could only have been set by force-engine
+                          (pen-var-value-maybe 'temperature)
+                          ,temperature
+                          final-default-temperature))))
 
                   (final-validator
                    (expand-template
