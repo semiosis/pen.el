@@ -720,11 +720,12 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (cons 'progn (flatten-once
                 (cl-loop for i from 1 to n collect body))))
 
+;; (let ((func-name "yo")) (pen-read-string "hi"))
 ;; TODO Use this is more places
 (defun pen-read-string (prompt &optional initial-input history default-value inherit-input-method)
-  (let ((func-name (pen-var-value-maybe 'func-name)))
-    (if (sor func-name)
-        (setq prompt (concat func-name "~" prompt)))
+  (let ((fnn (pen-var-value-maybe 'func-name)))
+    (if (sor fnn)
+        (setq prompt (concat fnn "~" prompt)))
     (if (pen-var-value-maybe 'do-pen-batch)
         ""
       (read-string prompt initial-input history default-value inherit-input-method))))
@@ -749,6 +750,10 @@ region-active-p does not work for evil selection."
 ;; TODO collect from tmux instead
 (defun pen-screen-text ()
   (buffer-string))
+
+(defun test-read-string ()
+  (interactive)
+  (eval `(let ((func-name "yo")) (pen-read-string "hi"))))
 
 (defun pen-screen-or-selection ()
   (let ((sel (selection)))
