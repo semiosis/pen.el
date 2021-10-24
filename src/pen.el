@@ -806,6 +806,12 @@ Reconstruct the entire yaml-ht for a different language."
                                         ("INK_TYPE" . "generated")
                                         ("PEN_FUNCTION_NAME" . ,func-name)))
 
+           (pen-append-to-file
+            (concat
+             "\n'"
+             (pen-snc "tr -d '\\n'" (pps pen-last-prompt-data)))
+            (f-join penconfdir "prompt-hist-preselect.el"))
+
            ;; Many a  transformation pipeline here could benefit from transducers
            ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
            ;; https://github.com/FrancisMurillo/transducer.el
