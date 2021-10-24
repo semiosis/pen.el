@@ -12,6 +12,8 @@ PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE")
 PEN_STOP_SEQUENCES = os.environ.get("PEN_STOP_SEQUENCES")
 PEN_STOP_SEQUENCE = os.environ.get("PEN_STOP_SEQUENCE")
 PEN_LOGPROBS = os.environ.get("PEN_LOGPROBS")
+PEN_MAX_TOKENS = os.environ.get("PEN_MAX_TOKENS")
+PEN_MAX_GENERATED_TOKENS = os.environ.get("PEN_MAX_GENERATED_TOKENS")
 PEN_LOGIT_BIAS = os.environ.get("PEN_LOGIT_BIAS")
 
 # int(PEN_LOGPROBS)
@@ -37,6 +39,7 @@ openai.Completion.create(
      prompt=PEN_PROMPT,
      logprobs=int(PEN_LOGPROBS),
      stop=PEN_STOP_SEQUENCE,
+     max_tokens=int(PEN_MAX_GENERATED_TOKENS),
      temperature=float(PEN_TEMPERATURE))
 
 # Return probabilities
