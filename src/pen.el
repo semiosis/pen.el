@@ -1613,7 +1613,8 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_N_COMPLETIONS" . ,(str final-n-completions))
                             ;; ("PEN_ENGINE_MAX_N_COMPLETIONS" . ,final-engine-max-n-completions)
                             ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
-                            ("PEN_END_POS" . ,prompt-end-pos))))
+                            ("PEN_END_POS" . ,prompt-end-pos)
+                            ("PEN_INJECT_GEN_START" . ,final-inject-gen-start))))
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data data))
                      (setq pen-last-prompt-data
