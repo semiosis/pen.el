@@ -3419,6 +3419,7 @@ May use to generate code from comments."
          (result (cdr (assoc "PEN_RESULT" al)))
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
+    ;; (etv (pps (list orig-inject-len vals result fun)))
     (apply fun (append vals `(:inject-gen-start
                               ,(s-right
                                 (- (length result) orig-inject-len)
