@@ -2671,7 +2671,7 @@ Function names are prefixed with pf- for easy searching"
                                        (pen-selected-text)
                                      ;; (eval-string default-readstring-cmd)
                                      ;; (read-string-hist ,(concat varslug ": ") ,example)
-                                     (read-string-hist ,(concat title " (" varslug "): ") ,example)
+                                     (read-string-hist ,(concat varslug ": ") ,example)
                                      ;; TODO Find a way to do multiline entry
                                      ;; (if ,(> (length (s-lines example)) 1)
                                      ;;     (multiline-reader ,example)
@@ -2690,7 +2690,7 @@ Function names are prefixed with pf- for easy searching"
                                       ',',(pen-subprompts-to-alist subprompts)
                                       (if ,,default
                                           (eval-string ,,(str default))
-                                        (read-string-hist ,,(concat title " (" varname "): ") ,,example)))))))
+                                        (read-string-hist ,,(concat varname ": ") ,,example)))))))
                             do
                             (progn
                               (setq iteration (+ 1 iteration))
