@@ -769,9 +769,10 @@ Reconstruct the entire yaml-ht for a different language."
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
-   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match variadic-var))
+   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match variadic-var inject-gen-start))
       ,doc
       (interactive ,(cons 'list iargs))
+
       (setq no-select-result
             (or no-select-result
                 (pen-var-value-maybe 'pen-no-select-result)))
@@ -945,8 +946,10 @@ Reconstruct the entire yaml-ht for a different language."
                        ,no-uniq-results))
 
                   (final-inject-gen-start
-                   (or (pen-var-value-maybe 'inject-gen-start)
-                       ,inject-gen-start))
+                   (or
+                    inject-gen-start
+                    (pen-var-value-maybe 'inject-gen-start)
+                    ,inject-gen-start))
 
                   (final-expand-jinja
                    (or (pen-var-value-maybe 'expand-jinja)
