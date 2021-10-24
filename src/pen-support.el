@@ -997,7 +997,10 @@ when s is a string, set the clipboard to s"
   (if (not modesym)
       (setq modesym major-mode))
 
-  (s-replace-regexp "-mode$" "" (slugify (str modesym))))
+  (if (symbolp modesym)
+      (setq modesym (symbol-name modesym)))
+
+  (s-replace-regexp "-mode$" "" modesym))
 
 (defun lang-to-mode (&optional langstr)
   (if (not langstr)
