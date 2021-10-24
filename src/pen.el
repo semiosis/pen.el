@@ -1866,7 +1866,7 @@ Reconstruct the entire yaml-ht for a different language."
              ;; Now save this to a list somewhere
              (append-to-file
               (concat
-               "\n"
+               "\n'"
                (snc "tr -d '\\n'" (pps pen-last-prompt-data)))
               (f-join penconfdir "prompt-hist.el"))
 
