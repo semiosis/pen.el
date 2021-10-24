@@ -373,6 +373,7 @@
   (pen-define-key pen-map (kbd "H-TAB j") 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
   (pen-define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
   (pen-define-key pen-map (kbd "H-TAB R") 'pen-run-prompt-alias)
+  (pen-define-key pen-map (kbd "H-TAB D") 'pen-go-to-last-results-dir)
 
   (define-key pen-map (kbd "H-^") 'pen-transform))
 
