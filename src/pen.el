@@ -3419,14 +3419,18 @@ May use to generate code from comments."
          (result (cdr (assoc "PEN_RESULT" al)))
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
+    (etv (list :inject-gen-start
+               (s-right
+                (- (length result) orig-inject-len)
+                result)))
     ;; (etv (pps (list orig-inject-len vals result fun)))
     ;; (call-interactively-with-parameters )
-    (call-interactively-with-parameters
-     fun
-     (append vals `(:inject-gen-start
-                    ,(s-right
-                      (- (length result) orig-inject-len)
-                      result))))))
+    (comment (call-interactively-with-parameters
+              fun
+              (append vals `(:inject-gen-start
+                             ,(s-right
+                               (- (length result) orig-inject-len)
+                               result)))))))
 
 (comment (s-right (- (length "full text") (length "full")) "full text"))
 
