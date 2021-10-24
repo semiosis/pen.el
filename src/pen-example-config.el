@@ -67,9 +67,6 @@
 ;; (define-key selected-keymap (kbd "A") 'pf-define-word-for-glossary/1)
 (define-key selected-keymap (kbd "A") 'pen-add-to-glossary)
 
-(pen-define-key pen-map (kbd "H-TAB j") 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
-(pen-define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
-(pen-define-key pen-map (kbd "H-TAB R") 'pen-run-prompt-alias)
 ;; (define-key pen-map (kbd "H-1") 'pen-company-filetype-word)
 ;; (define-key pen-map (kbd "H-2") 'pen-company-filetype-words)
 ;; (define-key pen-map (kbd "H-3") 'pen-company-filetype-line)
@@ -345,8 +342,11 @@
   (pen-dk-easy "m" nil)
   (pen-dk-easy "m e" 'pf-translate-math-into-natural-language/1)
   (pen-dk-easy "m l" 'pf-convert-ascii-to-latex-equation/1)
+  (pen-dk-easy "d" nil)
+  (pen-dk-easy "d 1" 'pf-define-word-for-glossary/1)
+  (pen-dk-easy "d d" 'pf-define-word-for-glossary/1)
+  (pen-dk-easy "d 2" 'pf-define-word-for-glossary/2)
   (pen-dk-easy "p" nil)
-  (pen-dk-easy "p 1" 'pf-explain-some-code/1)
   (pen-dk-easy "p 2" 'pf-explain-some-code/2)
   (pen-dk-easy "p b" 'pf-explain-code-with-bulleted-docstring/1)
   (pen-dk-easy "p h" 'pf-explain-haskell-code/1)
@@ -370,6 +370,9 @@
   (pen-define-key pen-map (kbd "H-TAB y") 'pen-run-analyser-function)
   (pen-define-key pen-map (kbd "H-TAB d") 'pen-run-editing-function)
   (pen-define-key pen-map (kbd "H-TAB i") 'pen-start-imaginary-interpreter)
+  (pen-define-key pen-map (kbd "H-TAB j") 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
+  (pen-define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
+  (pen-define-key pen-map (kbd "H-TAB R") 'pen-run-prompt-alias)
 
   (define-key pen-map (kbd "H-^") 'pen-transform))
 
