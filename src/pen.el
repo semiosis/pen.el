@@ -1485,6 +1485,7 @@ Reconstruct the entire yaml-ht for a different language."
                          (concat final-prompt "<:pp>" final-inject-gen-start))
                      final-prompt))
 
+                  ;; after injecting
                   (prompt-end-pos (or (byte-string-search "<:pp>" final-prompt)
                                       ;; (length final-prompt)
                                       (string-bytes final-prompt)))
@@ -3413,10 +3414,17 @@ May use to generate code from comments."
          (al (eval-string sel))
          ;; (vals (apply 'pen-cmd (eval-string (concat "'" (cdr (assoc "PEN_VALS" al))))))
          (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
+         ;; (orig-inject-len (string-bytes (cdr (assoc "PEN_INJECT_GEN_START" al))))
+         (orig-inject-len (length (cdr (assoc "PEN_INJECT_GEN_START" al))))
          (result (cdr (assoc "PEN_RESULT" al)))
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
-    (apply fun (append vals `(:inject-gen-start ,result)))))
+    (apply fun (append vals `(:inject-gen-start
+                              ,(s-right
+                                (- (length result) orig-inject-len)
+                                result))))))
+
+(comment (s-right (- (length "full text") (length "full")) "full text"))
 
 (provide 'pen)
 
