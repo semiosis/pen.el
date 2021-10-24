@@ -291,7 +291,8 @@
           `((define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "M-SPC " bind-i)) ,fun)
-            (define-key pen-map (kbd ,(concat "M-SPC TAB " bind-i)) ,fun))))))
+            (define-key pen-map (kbd ,(concat "M-SPC TAB " bind-i)) ,fun)
+            (define-key pen-map (kbd ,(concat "M-SPC C-M-i " bind-i)) ,fun))))))
 (defalias 'pen-dk-easy 'pen-define-key-easy)
 
 
@@ -327,6 +328,7 @@
   (pen-dk-easy "e" 'pen-customize)
   (pen-dk-easy "f" nil)
   (pen-dk-easy "g" nil)
+  (pen-dk-easy "G" 'pen-generate-prompt-functions)
   (pen-dk-easy "g a" (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
   (pen-dk-easy "g n" 'pf-code-snippet-from-natural-language/2)
   (pen-dk-easy "g p" 'pf-generate-perl-command/1)
