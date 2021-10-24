@@ -800,7 +800,8 @@ Reconstruct the entire yaml-ht for a different language."
            (setq pen-last-prompt-data '((face . ink-generated)
                                         ;; This is necessary because most modes
                                         ;; do not allow allow you to change the faces.
-                                        ("INK_TYPE" . "generated")))
+                                        ("INK_TYPE" . "generated")
+                                        ("PEN_FUNCTION_NAME" . ,func-name)))
 
            ;; Many a  transformation pipeline here could benefit from transducers
            ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
@@ -1621,6 +1622,9 @@ Reconstruct the entire yaml-ht for a different language."
                      ;; data
                      ))
 
+                  (setq pen-last-prompt-data
+                        (asoc-merge pen-last-prompt-data (list (cons "PEN_VALS" (pps last-vals)))))
+
                   (tempa
                    (let ((le (pen-log (eval `(pen-cmd "penf" "-u" (sym2str ',',func-sym) ,@last-vals-exprs))))
                          (lv (pen-log (eval `(pen-cmd "penf" "-u" (sym2str ',',func-sym) ,@last-vals))))
@@ -1857,9 +1861,14 @@ Reconstruct the entire yaml-ht for a different language."
 
              ;; TODO Obtain the function name too
              (setq pen-last-prompt-data
-                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" result)
-                                                          (cons "PEN_VALS" (pps last-vals))
-                                                          (cons "PEN_FUNCTION_NAME" ,func-name))))
+                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" result))))
+
+             ;; Now save this to a list somewhere
+             (append-to-file
+              (concat
+               "\n"
+               (snc "tr -d '\\n'" (pps pen-last-prompt-data)))
+              (f-join penconfdir "prompt-hist.el"))
 
              ;; (tv (pps final-stop-sequences))
              ;; (tv final-insertion)
