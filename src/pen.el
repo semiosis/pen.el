@@ -3436,6 +3436,8 @@ May use to generate code from comments."
     ;;                   result)))))
     (comment (etv (pps (append vals `(:inject-gen-start
                                       ,result)))))
+
+    ;; Sadly, this doesn't get the parameters, for some reason
     (comment (call-interactively-with-parameters
               fun
               (append vals `(:inject-gen-start
