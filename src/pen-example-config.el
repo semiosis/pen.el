@@ -330,8 +330,6 @@
   (pen-dk-easy "c t" 'pen-transform-code)
   ;; (pen-dk-easy "e" nil)
   (pen-dk-easy "e" 'pen-customize)
-  (pen-dk-easy "e c" 'pf-explain-some-code/2)
-  (pen-dk-easy "e f" 'pf-get-an-example-of-the-usage-of-a-function/2)
   (pen-dk-easy "f" nil)
   (pen-dk-easy "g" nil)
   (pen-dk-easy "g a" (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
@@ -341,6 +339,8 @@
   (pen-dk-easy "h f /" 'pen-select-function-from-nl)
   (pen-dk-easy "h f i" 'pf-given-a-function-name-show-the-import/2)
   (pen-dk-easy "h f u" 'pf-how-to-use-a-function/2)
+  (pen-dk-easy "h c" 'pf-explain-some-code/2)
+  (pen-dk-easy "h f e" 'pf-get-an-example-of-the-usage-of-a-function/2)
   (pen-dk-easy "h" nil)
   (pen-dk-easy "i" 'pen-insert-snippet-from-lm)
   (pen-dk-easy "l" nil)
@@ -358,13 +358,13 @@
   (pen-dk-easy "t" 'pen-transform)
   (pen-dk-easy "t" nil)
   (pen-dk-easy "w" 'pen-transform)
+  (pen-dk-easy "^" 'pen-transform)
   (pen-dk-easy "x" 'pen-diagnostics-show-context)
+  (pen-dk-easy "r" 'pf-transpile/3)
+  (pen-dk-easy "t" 'pen-transform-prose)
+  (pen-dk-easy "u" (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
+  (pen-dk-easy "w" (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
 
-  ;; U is for understand
-  (define-key pen-map (kbd "M-SPC r") 'pf-transpile/3)
-  (define-key pen-map (kbd "M-SPC t") 'pen-transform-prose)
-  (define-key pen-map (kbd "M-SPC u") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
-  (define-key pen-map (kbd "M-SPC w") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
 
   (define-key pen-map (kbd "H-^") 'pen-transform))
 
