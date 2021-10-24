@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import openai
+import os
 
 API_TOKEN = os.environ.get("OPENAI_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL")
@@ -13,6 +14,8 @@ PEN_STOP_SEQUENCE = os.environ.get("PEN_STOP_SEQUENCE")
 PEN_LOGPROBS = os.environ.get("PEN_LOGPROBS")
 PEN_LOGIT_BIAS = os.environ.get("PEN_LOGIT_BIAS")
 
+# int(PEN_LOGPROBS)
+
 # Serialise the LOGIT_BIAS as json
 # It needs to arrive as a python dict
 
@@ -21,13 +24,20 @@ PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 # LOGIT_BIAS is not a big priority
 # Besides, char-level models might make this completely redundant
 
+# openai.Completion.create(
+#      engine=PEN_MODEL,
+#      prompt=PEN_PROMPT,
+#      logprobs=int(PEN_LOGPROBS),
+#      stop=PEN_STOP_SEQUENCE,
+#      temperature=float(PEN_TEMPERATURE),
+#      logit_bias={6342: -1})
+
 openai.Completion.create(
      engine=PEN_MODEL,
      prompt=PEN_PROMPT,
      logprobs=int(PEN_LOGPROBS),
      stop=PEN_STOP_SEQUENCE,
-     temperature=float(PEN_TEMPERATURE),
-     logit_bias={6342: -1})
+     temperature=float(PEN_TEMPERATURE))
 
 # Return probabilities
 # 
