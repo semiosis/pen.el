@@ -3410,7 +3410,7 @@ May use to generate code from comments."
 (defun pen-continue-from-hist ()
   (interactive)
   (let* ((fp (f-join penconfdir "prompt-hist.el"))
-         (sel (fz (pen-sn "tac" (s/awk1 (e/cat fp))) nil nil "pen-copy-from-hist: "))
+         (sel (fz (pen-sn "tac" (s/awk1 (e/cat fp))) nil nil "pen-continue-from-hist: "))
          (al (eval-string sel))
          ;; (vals (apply 'pen-cmd (eval-string (concat "'" (cdr (assoc "PEN_VALS" al))))))
          (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
@@ -3420,10 +3420,13 @@ May use to generate code from comments."
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
     ;; (etv (pps (list orig-inject-len vals result fun)))
-    (apply fun (append vals `(:inject-gen-start
-                              ,(s-right
-                                (- (length result) orig-inject-len)
-                                result))))))
+    ;; (call-interactively-with-parameters )
+    (call-interactively-with-parameters
+     fun
+     (append vals `(:inject-gen-start
+                    ,(s-right
+                      (- (length result) orig-inject-len)
+                      result))))))
 
 (comment (s-right (- (length "full text") (length "full")) "full text"))
 
