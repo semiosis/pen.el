@@ -813,14 +813,14 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; H-u -- this doesn't work with some interactive functions, such as (interactive (list (read-string "kjlfdskf")))
                     (>= (prefix-numeric-value current-global-prefix-arg) 4)
                     ;; C-u 0
-                    (>= (prefix-numeric-value current-prefix-arg) 0)
+                    (= (prefix-numeric-value current-prefix-arg) 0)
                     (pen-var-value-maybe 'do-pen-update)))
 
                   (pen-sh-update
                    (or
                     (>= (prefix-numeric-value current-global-prefix-arg) 4)
                     ;; C-u 0
-                    (>= (prefix-numeric-value current-prefix-arg) 0)
+                    (= (prefix-numeric-value current-prefix-arg) 0)
                     (pen-var-value-maybe 'pen-sh-update)
                     do-pen-update))
 
