@@ -1835,6 +1835,8 @@ Reconstruct the entire yaml-ht for a different language."
                        (eval-string final-evaluator)
                      result)))
 
+             ;; TODO here save the function that ran and the selection
+
              ;; (tv (pps final-stop-sequences))
              ;; (tv final-insertion)
              (pen-log (concat
