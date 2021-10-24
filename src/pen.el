@@ -3411,12 +3411,12 @@ May use to generate code from comments."
   (let* ((fp (f-join penconfdir "prompt-hist.el"))
          (sel (fz (pen-sn "tac" (s/awk1 (e/cat fp))) nil nil "pen-copy-from-hist: "))
          (al (eval-string sel))
-         (vals (apply 'pen-cmd (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))))
-    (xc
-     (concat
-      (cdr (assoc "PEN_FUNCTION_NAME" al))
-      " "
-      vals))))
+         ;; (vals (apply 'pen-cmd (eval-string (concat "'" (cdr (assoc "PEN_VALS" al))))))
+         (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
+         (result (tv (cdr (assoc "PEN_RESULT" al))))
+         (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
+
+    (apply fun (append vals `(:inject-gen-start ,result)))))
 
 (provide 'pen)
 
