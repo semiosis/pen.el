@@ -92,11 +92,8 @@
 (define-key pen-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-:") 'pen-compose-cli-command)
 (define-key pen-map (kbd "H-x") 'pen-diagnostics-show-context)
-(pen-define-key pen-map (kbd "H-TAB e") 'pen-customize)
 
-;; Most main pen commands should be under hyperspace
-;; hyperspace x
-(pen-define-key pen-map (kbd "H-SPC x") 'pen-diagnostics-show-context)
+
 
 (require 'pen-contrib)
 ;; from contrib
@@ -338,7 +335,8 @@
   (pen-dk-easy "c t" 'pen-transform-code)
   (pen-dk-easy "e c" 'pf-explain-some-code/2)
   (pen-dk-easy "e f" 'pf-get-an-example-of-the-usage-of-a-function/2)
-  (pen-dk-easy "e" nil)
+  ;; (pen-dk-easy "e" nil)
+  (pen-dk-easy "e" 'pen-customize)
   (pen-dk-easy "f" nil)
   (pen-dk-easy "g" nil)
   (pen-dk-easy "g a" (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
@@ -363,7 +361,13 @@
   (pen-dk-easy "p s" 'pf-explain-some-code-with-steps/1)
   (pen-dk-easy "t" 'pen-transform)
   (pen-dk-easy "t" nil)
-  (pen-dk-easy "w" 'pen-transform))
+  (pen-dk-easy "w" 'pen-transform)
+  (pen-dk-easy "x" 'pen-diagnostics-show-context))
+
+
+;; Most main pen commands should be under hyperspace
+;; hyperspace x
+
 
 (pen-define-maps)
 
