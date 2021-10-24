@@ -164,6 +164,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -inject|-i) {
+        inject_gen_start="$2"
+        shift
+        shift
+    }
+    ;;
+
     # No generation/query
     -nogen|-n) {
         no_gen=y
@@ -240,6 +247,9 @@ cmd() {
 }
 
 cmd-nice() {
+    # TODO Check for builtin
+    # cmd-nice-jq
+
     for var in "$@"
     do
         printf '"%s" ' "$(printf %s "$var" | sed 's/"/\\"/g')";
@@ -412,21 +422,27 @@ case "$sn" in
                 no_gen=nil
             fi
 
+            if test -n "$inject_gen_start"; then
+                inject_gen_start="$(cmd-nice "$inject_gen_start")"
+            else
+                inject_gen_start="nil"
+            fi
+
             # if test "$DEBUG" = "y"; then
             #     echo "(json-encode-list (pen-batch (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg))))" | tv &>/dev/null
             # fi
 
             if test "$all" = "y"; then
                 if test "$UPDATE" = y; then
-                    set -- -e "(json-encode-list (pen-batch (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg))))"
+                    set -- -e "(json-encode-list (pen-batch (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start))))"
                 else
-                    set -- -e "(json-encode-list (pen-batch ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg)))"
+                    set -- -e "(json-encode-list (pen-batch ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start)))"
                 fi
             else
                 if test "$UPDATE" = y; then
-                    set -- -e "(pen-list2str (pen-batch (pen-single-generation (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg)))))"
+                    set -- -e "(pen-list2str (pen-batch (pen-single-generation (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start)))))"
                 else
-                    set -- -e "(pen-list2str (pen-batch (pen-single-generation ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg))))"
+                    set -- -e "(pen-list2str (pen-batch (pen-single-generation ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start))))"
                 fi
             fi
 
