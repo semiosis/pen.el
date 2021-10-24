@@ -5,6 +5,12 @@
 
 ;;;; Prefix commands
 
+(defmacro defset (symbol value &optional documentation)
+  "Instead of doing a defvar and a setq, do this. [[http://ergoemacs.org/emacs/elisp_defvar_problem.html][ergoemacs.org/emacs/elisp_defvar_problem.html]]"
+
+  `(progn (defvar ,symbol ,documentation)
+          (setq ,symbol ,value)))
+
 (defset global-prefix-command--needs-update nil)
 (defset global-prefix-command--last-echo nil)
 
