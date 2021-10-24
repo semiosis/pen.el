@@ -725,7 +725,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 (defun pen-read-string (prompt &optional initial-input history default-value inherit-input-method)
   (let ((fnn (pen-var-value-maybe 'func-name)))
     (if (sor fnn)
-        (setq prompt (concat fnn "~" prompt)))
+        (setq prompt (concat fnn " ~ " prompt)))
     (if (pen-var-value-maybe 'do-pen-batch)
         ""
       (read-string prompt initial-input history default-value inherit-input-method))))
@@ -886,7 +886,7 @@ when s is a string, set the clipboard to s"
 
   (let ((fnn (pen-var-value-maybe 'func-name)))
     (if (sor fnn)
-        (setq prompt (concat fnn "~" prompt))))
+        (setq prompt (concat fnn " ~ " prompt))))
 
   (if (not histvar)
       (setq histvar (intern (concat "completing-read-hist-" (slugify prompt)))))
