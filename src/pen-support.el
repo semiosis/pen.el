@@ -884,6 +884,10 @@ when s is a string, set the clipboard to s"
   (setq initial-input (or initial-input
                           ""))
 
+  (let ((fnn (pen-var-value-maybe 'func-name)))
+    (if (sor fnn)
+        (setq prompt (concat fnn "~" prompt))))
+
   (if (not histvar)
       (setq histvar (intern (concat "completing-read-hist-" (slugify prompt)))))
 
