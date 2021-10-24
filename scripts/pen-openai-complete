@@ -12,6 +12,9 @@ PEN_STOP_SEQUENCES = os.environ.get("PEN_STOP_SEQUENCES")
 PEN_STOP_SEQUENCE = os.environ.get("PEN_STOP_SEQUENCE")
 PEN_LOGPROBS = os.environ.get("PEN_LOGPROBS")
 PEN_LOGIT_BIAS = os.environ.get("PEN_LOGIT_BIAS")
+
+# Serialise the LOGIT_BIAS as json
+
 PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 
 # LOGIT_BIAS is not a big priority
