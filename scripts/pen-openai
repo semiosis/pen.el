@@ -16,5 +16,4 @@ export OPENAI_API_KEY
 openai() {
     python3 `which openai` "$@"
 }
-;
 openai "$@" | pen-log openai-temp
