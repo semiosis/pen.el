@@ -329,6 +329,7 @@
 (define-key pen-map (kbd "M-SPC c g r") 'pf-gpt-j-generate-regex/2)
 (define-key pen-map (kbd "M-SPC c g g") 'pf-generate-program-from-nl/3)
 
+;; H-
 (define-key pen-map (kbd "H-SPC m e") 'pf-translate-math-into-natural-language/1)
 (define-key pen-map (kbd "H-SPC m l") 'pf-convert-ascii-to-latex-equation/1)
 (define-key pen-map (kbd "H-SPC c n") 'pen-select-function-from-nl)
@@ -336,6 +337,7 @@
 (define-key pen-map (kbd "H-SPC c p") 'pf-imagine-a-project-template/1)
 (define-key pen-map (kbd "H-SPC c b") 'pf-generate-the-contents-of-a-new-file/6)
 
+;; M-
 (define-key pen-map (kbd "M-SPC p s") 'pf-explain-some-code-with-steps/1)
 (define-key pen-map (kbd "M-SPC p 2") 'pf-explain-some-code/2)
 (define-key pen-map (kbd "M-SPC p 1") 'pf-explain-some-code/1)
