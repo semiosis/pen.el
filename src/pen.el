@@ -1617,13 +1617,12 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_END_POS" . ,prompt-end-pos))))
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data data))
+                     (setq pen-last-prompt-data
+                        (asoc-merge pen-last-prompt-data (list (cons "PEN_VALS" (pps last-vals)))))
                      ;; (tv data)
                      data
                      ;; data
                      ))
-
-                  (setq pen-last-prompt-data
-                        (asoc-merge pen-last-prompt-data (list (cons "PEN_VALS" (pps last-vals)))))
 
                   (tempa
                    (let ((le (pen-log (eval `(pen-cmd "penf" "-u" (sym2str ',',func-sym) ,@last-vals-exprs))))
