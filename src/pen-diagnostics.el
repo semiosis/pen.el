@@ -15,6 +15,11 @@
 
 (defun pen-diagnostics-show-context ()
   (interactive)
+
+  (let ((user (pen-snc "whoami")))
+    (if (not (string-equal "root" user))
+        (pen-sn (format "sudo chown -R %s:%s ~/.pen" user user))))
+
   (if (and (sor penconfdir)
            (f-directory-p penconfdir))
       (let* ((plist (list
