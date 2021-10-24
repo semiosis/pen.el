@@ -929,12 +929,13 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-lm-define (term &optional prepend-lm-warning topic)
   (interactive)
-  (let* ((final-topic
-          (if topic
-              (concat " in the context of " topic)
-            ""))
+  (let* (;; (final-topic
+         ;;  (if topic
+         ;;      (concat " in the context of " topic)
+         ;;    ""))
          (def
-          (pf-define-word-for-glossary/1 (concat term final-topic))))
+          ;; (pf-define-word-for-glossary/1 (concat term final-topic))
+          (pf-define-word-for-glossary/2 term topic)))
 
     (if (sor def)
         (progn

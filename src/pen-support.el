@@ -1133,12 +1133,13 @@ when s is a string, set the clipboard to s"
 
 (defun lm-define (term &optional prepend-lm-warning topic)
   (interactive)
-  (let* ((final-topic
-          (if (sor topic)
-              (concat " in the context of " topic)
-            ""))
+  (let* (;; (final-topic
+         ;;  (if (sor topic)
+         ;;      (concat " in the context of " topic)
+         ;;    ""))
          (def
-          (pf-define-word-for-glossary/1 (concat term final-topic))))
+          ;; (pf-define-word-for-glossary/1 (concat term final-topic))
+          (pf-define-word-for-glossary/2 term topic)))
 
     (if (sor def)
         (progn
