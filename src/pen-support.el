@@ -937,7 +937,7 @@ when s is a string, set the clipboard to s"
                  (region-or-buffer-string)))
          (buf (nbfs text))
          (mode-lang (and (not detect)
-                         (s-replace-regexp "-mode$" "" (current-major-mode-string))))
+                         (mode-to-lang (current-major-mode-string))))
          (mode-lang
           (cond
            ((string-equal "fundamental" mode-lang) nil)
@@ -961,7 +961,7 @@ when s is a string, set the clipboard to s"
   (if (not modesym)
       (setq modesym major-mode))
 
-  (s-replace-regexp "-mode$" "" (symbol-name (slugify modesym))))
+  (s-replace-regexp "-mode$" "" (slugify (str modesym))))
 
 (defun lang-to-mode (&optional langstr)
   (if (not langstr)
