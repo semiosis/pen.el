@@ -44,7 +44,7 @@ test -n "$ALSO_EXPORT" && {
 : "${PEN_PROMPT:="Once upon a time"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 : "${PEN_ENGINE_MAX_N_COMPLETIONS:="10"}"
-: "${PEN_END_POS:="$(printf -- "%s" "$PEN_PROMPT" | wc -c)"}"
+: "${PEN_COLLECT_FROM_POS:="$(printf -- "%s" "$PEN_PROMPT" | wc -c)"}"
 : "${PEN_USER_AGENT:="emacs/pen"}"
 
 export PEN_USER_AGENT
@@ -64,7 +64,7 @@ export PEN_PROMPT
 export PEN_FLAGS
 export PEN_N_COMPLETIONS
 export PEN_ENGINE_MAX_N_COMPLETIONS
-export PEN_END_POS
+export PEN_COLLECT_FROM_POS
 export PEN_TRAILING_WHITESPACE
 # Each PEN_LM_COMMAND script may take a 'mode'. For example, summarization.
 # Sometimes the mode must be specified because there may be multiple API interfaces.

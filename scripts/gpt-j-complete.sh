@@ -38,7 +38,7 @@ openai_results_split() {
         csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}' &>/dev/null
         for fp in *; do
             sed -i 1d "$fp"
-            tail -c "+$(( PEN_END_POS + 1 ))" "$fp" | sponge "$fp"
+            tail -c "+$(( PEN_COLLECT_FROM_POS + 1 ))" "$fp" | sponge "$fp"
         done
     else
         cat "$completions_fp" > splitfile_0.txt
@@ -102,9 +102,9 @@ openai api \
     --stop "$PEN_STOP_SEQUENCE" \
     -p "$PEN_PROMPT" > "$tf_response"
 
-: "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
+: "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -c)"}"
 
-export PEN_END_POS
+export PEN_COLLECT_FROM_POS
 results_dir="$(openai_results_split "$tf_response")"
 
 # The API returns the entire prompt + completion

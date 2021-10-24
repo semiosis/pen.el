@@ -82,12 +82,12 @@ openai_results_split() {
     cd "$td"
 
     if test "$PEN_N_COMPLETIONS" = 1; then
-        tail -c "+$(( PEN_END_POS + 1 ))" "$completions_fp" > response.txt
+        tail -c "+$(( PEN_COLLECT_FROM_POS + 1 ))" "$completions_fp" > response.txt
     elif cat "$completions_fp" | grep -q -P '^===== Completion [0-9]+ =====$'; then
         csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}' &>/dev/null
         for fp in *; do
             sed -i 1d "$fp"
-            tail -c "+$(( PEN_END_POS + 1 ))" "$fp" | sponge "$fp"
+            tail -c "+$(( PEN_COLLECT_FROM_POS + 1 ))" "$fp" | sponge "$fp"
         done
     else
         cat "$completions_fp" > splitfile_0.txt
@@ -240,15 +240,15 @@ esac
 
 case "$sn" in
     nlpcloud-complete.sh) {
-        export PEN_END_POS
+        export PEN_COLLECT_FROM_POS
         results_dir="$(nlpcloud_results_split "$tf_response")"
     }
     ;;
 
     *) {
-        : "${PEN_END_POS:="$(cat "$tf_response" | wc -c)"}"
+        : "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -c)"}"
 
-        export PEN_END_POS
+        export PEN_COLLECT_FROM_POS
         results_dir="$(openai_results_split "$tf_response")"
     }
     ;;
