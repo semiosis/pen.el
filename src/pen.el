@@ -800,12 +800,18 @@ Reconstruct the entire yaml-ht for a different language."
            ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
            ;; https://github.com/FrancisMurillo/transducer.el
            (let* (;; Keep in mind this both updates memoization and the bash cache
-                  (do-pen-update (pen-var-value-maybe 'do-pen-update))
 
-                  (pen-sh-update (or
-                                  (>= (prefix-numeric-value current-global-prefix-arg) 4)
-                                  (pen-var-value-maybe 'pen-sh-update)
-                                  do-pen-update))
+                  ;; the differences has been confused. Treat as the same
+                  (do-pen-update
+                   (or
+                    (>= (prefix-numeric-value current-global-prefix-arg) 4)
+                    (pen-var-value-maybe 'do-pen-update)))
+
+                  (pen-sh-update
+                   (or
+                    (>= (prefix-numeric-value current-global-prefix-arg) 4)
+                    (pen-var-value-maybe 'pen-sh-update)
+                    do-pen-update))
 
                   (cache
                    (and (not do-pen-update)
