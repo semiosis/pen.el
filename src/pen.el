@@ -3394,7 +3394,7 @@ May use to generate code from comments."
   (let* ((fp (f-join penconfdir "prompt-hist.el"))
          (sel (fz (pen-sn "tac" (s/awk1 (e/cat fp))) nil nil "pen-copy-from-hist: "))
          (al (eval-string sel))
-         (vals (apply 'cmd (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))))
+         (vals (apply 'pen-cmd (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))))
     (xc
      (concat
       (cdr (assoc "PEN_FUNCTION_NAME" al))
