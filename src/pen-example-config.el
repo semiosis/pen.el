@@ -335,6 +335,13 @@
 (define-key pen-map (kbd "H-SPC c p") 'pf-imagine-a-project-template/1)
 (define-key pen-map (kbd "H-SPC c b") 'pf-generate-the-contents-of-a-new-file/6)
 
+(define-key pen-map (kbd "H-SPC p s") 'pf-explain-some-code-with-steps/1)
+(define-key pen-map (kbd "H-SPC p 2") 'pf-explain-some-code/2)
+(define-key pen-map (kbd "H-SPC p 1") 'pf-explain-some-code/1)
+(define-key pen-map (kbd "H-SPC p s") 'pf-explain-solidity-code/1)
+(define-key pen-map (kbd "H-SPC p h") 'pf-explain-haskell-code/1)
+(define-key pen-map (kbd "H-SPC p b") 'pf-explain-code-with-bulleted-docstring/1)
+
 ;; complex terminal commands
 (define-key pen-map (kbd "M-SPC ` n") 'pf-next-terminal-command-from-nl/3)
 
