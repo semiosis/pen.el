@@ -3,6 +3,7 @@
 
 import openai
 import os
+import json
 
 API_TOKEN = os.environ.get("OPENAI_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL")
