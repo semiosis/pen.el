@@ -204,8 +204,8 @@ These commands include \\[set-mark-command] and \\[start-kbd-macro]."
 ;; Also, cl-defun doesn't make a difference at all.
 (cl-defun test-cl-defun (str)
   ;; (interactive (list (pen-read-string "hi")))
-  ;; (interactive (list (read-string "kjlfdskf")))
-  (interactive (list "fkdjlsfk"))
+  (interactive (list (read-string "kjlfdskf")))
+  ;; (interactive (list "fkdjlsfk"))
   (message (concat "prefix: " (sor (str current-prefix-arg) "-")
                    ", "
                    "global prefix: " (sor (str global-prefix-arg) "-")
