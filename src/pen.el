@@ -1057,12 +1057,11 @@ Reconstruct the entire yaml-ht for a different language."
                     (if (and (not (sor (car tp)))
                              (sor (cdr tp)))
                         ;; TODO if a val is empty, apply the default with the subprompts in scope
-                        (eval
-                         `(let ((func-name ,,func-name))
-                            (eval
-                             `(pen-let-keyvals
-                               ',,subprompts-al
-                               (eval-string ,,(str (cdr tp)))))))
+                        (let ((func-name ,func-name))
+                          (eval
+                           `(pen-let-keyvals
+                             ',subprompts-al
+                             (eval-string ,(str (cdr tp))))))
                       (car tp))))
 
                   (last-vals vals)
