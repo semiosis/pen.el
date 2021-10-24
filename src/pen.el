@@ -1478,19 +1478,21 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-prompt (s-remove-trailing-newline final-prompt))
 
+                  (collect-from-pos (or (byte-string-search "<:pp>" final-prompt)
+                                      ;; (length final-prompt)
+                                        (string-bytes final-prompt)))
+
                   (final-prompt
                    (if (sor final-inject-gen-start)
                        (if (re-match-p "<:pp>" final-prompt)
                            (concat final-prompt final-inject-gen-start)
                          (concat final-prompt "<:pp>" final-inject-gen-start))
                      final-prompt))
-
-                  ;; after injecting
-                  (prompt-end-pos (or (byte-string-search "<:pp>" final-prompt)
-                                      ;; (length final-prompt)
-                                      (string-bytes final-prompt)))
+                  ;; This is where to start collecting from
 
                   (final-prompt (string-replace "<:pp>" "" final-prompt))
+
+                  (end-pos (string-bytes final-prompt))
 
                   ;; pen-log-final-prompt actually chomps it
                   (logged (pen-log-final-prompt (concat final-prompt "<END>")))
@@ -1621,12 +1623,13 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_N_COMPLETIONS" . ,(str final-n-completions))
                             ;; ("PEN_ENGINE_MAX_N_COMPLETIONS" . ,final-engine-max-n-completions)
                             ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
-                            ("PEN_END_POS" . ,prompt-end-pos)
+                            ("PEN_COLLECT_FROM_POS" . ,collect-from-pos)
                             ("PEN_INJECT_GEN_START" . ,final-inject-gen-start))))
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data data))
                      (setq pen-last-prompt-data
-                        (asoc-merge pen-last-prompt-data (list (cons "PEN_VALS" (pps last-vals)))))
+                           (asoc-merge pen-last-prompt-data (list (cons "PEN_VALS" (pps last-vals))
+                                                                  (cons "PEN_END_POS" end-pos))))
                      ;; (tv data)
                      data
                      ;; data
@@ -3417,20 +3420,36 @@ May use to generate code from comments."
          ;; (orig-inject-len (string-bytes (cdr (assoc "PEN_INJECT_GEN_START" al))))
          (orig-inject-len (length (cdr (assoc "PEN_INJECT_GEN_START" al))))
          (result (cdr (assoc "PEN_RESULT" al)))
+         (collect-from-pos (or (pen-num (cdr (assoc "PEN_COLLECT_FROM_POS" al))) 0))
+         (end-pos (or (pen-num (cdr (assoc "PEN_END_POS" al))) 0))
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
-    (etv (list :inject-gen-start
-               (s-right
-                (- (length result) orig-inject-len)
-                result)))
+    (comment (etv `(list :inject-gen-start
+                         ,(s-right
+                           (- (length result) (- end-pos collect-from-pos))
+                           result))))
     ;; (etv (pps (list orig-inject-len vals result fun)))
     ;; (call-interactively-with-parameters )
+    ;; (etv (pps (append vals `(:inject-gen-start
+    ;;                 ,(s-right
+    ;;                   (- (length result) (- end-pos collect-from-pos))
+    ;;                   result)))))
+    (comment (etv (pps (append vals `(:inject-gen-start
+                                      ,result)))))
     (comment (call-interactively-with-parameters
               fun
               (append vals `(:inject-gen-start
                              ,(s-right
-                               (- (length result) orig-inject-len)
-                               result)))))))
+                               (- (length result) (- end-pos collect-from-pos))
+                               result)))))
+
+    ;; This works but I need to also force interactive
+    (apply
+     fun
+     (append vals `(:inject-gen-start
+                    ,(s-right
+                      (- (length result) (- end-pos collect-from-pos))
+                      result))))))
 
 (comment (s-right (- (length "full text") (length "full")) "full text"))
 
