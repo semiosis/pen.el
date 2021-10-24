@@ -1401,4 +1401,14 @@ This function accepts any number of ARGUMENTS, but ignores them."
              ((symbol-function 'y-or-n-p) #'ignore))
      (progn ,@body)))
 
+(defun pen-go-to-last-results-dir ()
+  (interactive)
+  (let ((user (pen-snc "whoami")))
+    (if (not (string-equal "root" user))
+        (pen-sn (format "sudo chown -R %s:%s ~/.pen" user user)))
+
+    (let ((dir
+           (s-replace-regexp "^/root/" (format "/home/%s/" user) (pen-tmp-preview "lm-complete-stdout"))))
+      (dired dir))))
+
 (provide 'pen-support)
