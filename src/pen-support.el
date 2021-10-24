@@ -156,6 +156,15 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
   "Like q but without the end quotes"
   (pcre-replace-string "\"(.*)\"" "\\1" (e/q string)))
 
+(defun pen-append-uniq-to-file (stdin file_path)
+  (pen-sn
+   (concat "cat " (pen-q file_path) " | uniqnosort | sponge " (pen-q file_path)) stdin))
+
+;; append-to-file is a builtin. I shouldn't do this
+(defun pen-append-to-file (stdin file_path)
+  (pen-sn
+   (concat "cat >> " (pen-q file_path)) stdin))
+
 (defun s/awk1 (s)
   (pen-sn "awk 1" s))
 (defun s/cat-awk1 (path &optional dir)

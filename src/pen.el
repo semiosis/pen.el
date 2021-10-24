@@ -1868,7 +1868,7 @@ Reconstruct the entire yaml-ht for a different language."
              (append-to-file
               (concat
                "\n'"
-               (snc "tr -d '\\n'" (pps pen-last-prompt-data)))
+               (pen-snc "tr -d '\\n'" (pps pen-last-prompt-data)))
               (f-join penconfdir "prompt-hist.el"))
 
              ;; (tv (pps final-stop-sequences))
