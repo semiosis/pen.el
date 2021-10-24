@@ -1837,6 +1837,10 @@ Reconstruct the entire yaml-ht for a different language."
 
              ;; TODO here save the function that ran and the selection
 
+             ;; TODO Obtain the function name too
+             (setq pen-last-prompt-data
+                           (asoc-merge pen-last-prompt-data (list (cons "PEN_PROMPT_PATH" fpath))))
+
              ;; (tv (pps final-stop-sequences))
              ;; (tv final-insertion)
              (pen-log (concat
