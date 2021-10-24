@@ -773,10 +773,6 @@ Reconstruct the entire yaml-ht for a different language."
             (or no-select-result
                 (pen-var-value-maybe 'pen-no-select-result)))
 
-      (tv (concat "prefix: " (sor (str current-prefix-arg) "-")
-                   ", "
-                   "global prefix: " (sor (str current-global-prefix-arg) "-")))
-
       ;; force-custom, unfortunately disables call-interactively
       ;; i guess that it could also disable other values
       (let ((is-interactive (interactive-p)))
