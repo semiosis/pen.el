@@ -1865,7 +1865,7 @@ Reconstruct the entire yaml-ht for a different language."
                    (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" result))))
 
              ;; Now save this to a list somewhere
-             (append-to-file
+             (pen-append-to-file
               (concat
                "\n'"
                (pen-snc "tr -d '\\n'" (pps pen-last-prompt-data)))
