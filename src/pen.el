@@ -1840,9 +1840,9 @@ Reconstruct the entire yaml-ht for a different language."
 
              ;; TODO Obtain the function name too
              (setq pen-last-prompt-data
-                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" result))))
-             (setq pen-last-prompt-data
-                   (asoc-merge pen-last-prompt-data (list (cons "PEN_FUNCTION_NAME" ,func-name))))
+                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" result)
+                                                          (cons "PEN_VALS" (pps last-vals))
+                                                          (cons "PEN_FUNCTION_NAME" ,func-name))))
 
              ;; (tv (pps final-stop-sequences))
              ;; (tv final-insertion)
@@ -2685,11 +2685,12 @@ Function names are prefixed with pf- for easy searching"
 
                                 ;; subprompts are available as variables to var-defaults
                                 `(eval
-                                  `(pen-let-keyvals
-                                    ',',(pen-subprompts-to-alist subprompts)
-                                    (if ,,default
-                                        (eval-string ,,(str default))
-                                      (read-string-hist ,,(concat title " (" varname "): ") ,,example))))))
+                                  `(let ((func-name ,,func-name))
+                                     (pen-let-keyvals
+                                      ',',(pen-subprompts-to-alist subprompts)
+                                      (if ,,default
+                                          (eval-string ,,(str default))
+                                        (read-string-hist ,,(concat title " (" varname "): ") ,,example)))))))
                             do
                             (progn
                               (setq iteration (+ 1 iteration))

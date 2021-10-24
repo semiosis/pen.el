@@ -18,6 +18,9 @@
   (if (and (sor penconfdir)
            (f-directory-p penconfdir))
       (let* ((plist (list
+                     :last-prompt-data pen-last-prompt-data
+                     :pen-prompt-functions-failed pen-prompt-functions-failed
+                     :pen-prompts-failed pen-prompts-failed
                      :semantic-path (get-path-semantic)
                      :last-final-command (pen-snc "cat ~/.pen/last-final-command.txt")
                      ;; strangely, some characters break plist2yaml plist
