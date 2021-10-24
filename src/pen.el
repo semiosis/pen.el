@@ -2,6 +2,9 @@
 
 (setq large-file-warning-threshold nil)
 
+(defvar pen-map (make-sparse-keymap)
+  "Keymap for `pen.el'.")
+
 ;; For string-empty-p
 (require 'subr-x)
 (require 'pen-global-prefix)
@@ -36,8 +39,7 @@
 
 (defvar my-completion-engine 'pen-company-filetype)
 
-(defvar pen-map (make-sparse-keymap)
-  "Keymap for `pen.el'.")
+
 (defvar-local pen.el nil)
 
 ;; Zone plate for Laria
