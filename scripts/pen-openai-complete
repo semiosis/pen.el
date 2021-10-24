@@ -8,6 +8,8 @@ PEN_MODEL = os.environ.get("PEN_MODEL")
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
 PEN_MODE = os.environ.get("PEN_MODE")
 PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE")
+PEN_STOP_SEQUENCES = os.environ.get("PEN_STOP_SEQUENCES")
+PEN_STOP_SEQUENCE = os.environ.get("PEN_STOP_SEQUENCE")
 PEN_LOGPROBS = os.environ.get("PEN_LOGPROBS")
 PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 
@@ -18,7 +20,7 @@ openai.Completion.create(
      engine=PEN_MODEL,
      prompt=PEN_PROMPT,
      logprobs=int(PEN_LOGPROBS),
-     stop="\n",
+     stop=PEN_STOP_SEQUENCE,
      temperature=float(PEN_TEMPERATURE),
      logit_bias={6342: -1})
 
