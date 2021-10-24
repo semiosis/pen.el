@@ -762,7 +762,8 @@ Reconstruct the entire yaml-ht for a different language."
 ;; I don't think cl-defun passes on the current-global-prefix-arg
 ;; I have to extend cl-defun
 ;; Actually, I think it's the interactive functions which are doing it
-;; That's correct, it is.
+;; That's correct, it is. Not possible to fix without modifying emacs c code.
+;; Instead, use C-u 0 to update cache, instead of H-u
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
@@ -809,12 +810,17 @@ Reconstruct the entire yaml-ht for a different language."
                   ;; the differences has been confused. Treat as the same
                   (do-pen-update
                    (or
+                    ;; H-u -- this doesn't work with some interactive functions, such as (interactive (list (read-string "kjlfdskf")))
                     (>= (prefix-numeric-value current-global-prefix-arg) 4)
+                    ;; C-u 0
+                    (>= (prefix-numeric-value current-prefix-arg) 0)
                     (pen-var-value-maybe 'do-pen-update)))
 
                   (pen-sh-update
                    (or
                     (>= (prefix-numeric-value current-global-prefix-arg) 4)
+                    ;; C-u 0
+                    (>= (prefix-numeric-value current-prefix-arg) 0)
                     (pen-var-value-maybe 'pen-sh-update)
                     do-pen-update))
 
