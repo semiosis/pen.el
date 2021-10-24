@@ -156,11 +156,20 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
   "Like q but without the end quotes"
   (pcre-replace-string "\"(.*)\"" "\\1" (e/q string)))
 
+(defun s/awk1 (s)
+  (pen-sn "awk 1" s))
+(defun s/cat-awk1 (path &optional dir)
+  (setq path (pen-umn path))
+  (pen-sn (concat "cat " (pen-q path) " | awk 1" " 2>/dev/null") nil dir))
 (defun e/cat (path)
   "Return the contents of FILENAME."
   (with-temp-buffer
     (insert-file-contents path)
     (buffer-string)))
+(defun s/cat (path &optional dir)
+  "cat out a file"
+  (setq path (pen-umn path))
+  (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil dir))
 
 (defmacro comment (&rest body) nil)
 
@@ -1192,7 +1201,7 @@ when s is a string, set the clipboard to s"
 
 (defun pen-mnm (input)
   "Minimise string."
-  ;; (sh-notty "mnm" input)
+  ;; (pen-sn "mnm" input)
   (if input
       (seds (pen-umn input)
             ((f-join pen-prompts-directory "prompts") "$PROMPTS")
