@@ -328,6 +328,7 @@
 (define-key pen-map (kbd "M-SPC g p") 'pf-generate-perl-command/1)
 (define-key pen-map (kbd "M-SPC c g r") 'pf-gpt-j-generate-regex/2)
 (define-key pen-map (kbd "M-SPC c g g") 'pf-generate-program-from-nl/3)
+
 (define-key pen-map (kbd "H-SPC m e") 'pf-translate-math-into-natural-language/1)
 (define-key pen-map (kbd "H-SPC m l") 'pf-convert-ascii-to-latex-equation/1)
 (define-key pen-map (kbd "H-SPC c n") 'pen-select-function-from-nl)
