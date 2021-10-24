@@ -338,26 +338,37 @@
 ;; complex terminal commands
 (define-key pen-map (kbd "M-SPC ` n") 'pf-next-terminal-command-from-nl/3)
 
-(add-to-list 'pen-editing-functions 'pen-lsp-explain-error)
-(add-to-list 'pen-editing-functions 'pf-explain-error/2)
-(add-to-list 'pen-editing-functions 'rcm-explain-code)
-(add-to-list 'pen-editing-functions 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
-(add-to-list 'pen-editing-functions 'pf-translate-from-world-language-x-to-y/3)
-(add-to-list 'pen-editing-functions 'pf-tldr-summarization/1)
-(add-to-list 'pen-editing-functions 'pf-clean-prose/1)
-(add-to-list 'pen-editing-functions 'pf-correct-grammar/1)
-(add-to-list 'pen-editing-functions 'rcm-generate-program)
-(add-to-list 'pen-editing-functions 'pf-transform-code/3)
-(add-to-list 'pen-editing-functions 'pf-gpt-j-generate-regex/2)
-(add-to-list 'pen-editing-functions 'pf-transpile-from-programming-language-x-to-y/3)
-(add-to-list 'pen-editing-functions 'pen-tutor-mode-assist)
-(add-to-list 'pen-editing-functions 'pf-thesaurus/1)
-(add-to-list 'pen-editing-functions 'pf-get-an-example-sentence-for-a-word/1)
-(add-to-list 'pen-editing-functions 'pf-get-an-example-of-the-usage-of-a-function/2)
-(add-to-list 'pen-editing-functions 'pen-detect-language-context)
-(add-to-list 'pen-editing-functions 'pf-get-documentation-for-syntax-given-screen/2)
-(add-to-list 'pen-editing-functions 'rcm-term)
-(add-to-list 'pen-editing-functions 'pen-autofix-lsp-errors)
+;; (add-to-list 'pen-editing-functions 'pen-lsp-explain-error)
+
+(setq pen-editing-functions (append pen-editing-functions
+                                    '(
+                                      pen-lsp-explain-error
+                                      pf-explain-error/2
+                                      rcm-explain-code
+                                      pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1
+                                      pf-translate-from-world-language-x-to-y/3
+                                      pf-tldr-summarization/1
+                                      pf-clean-prose/1
+                                      pf-correct-grammar/1
+                                      rcm-generate-program
+                                      pf-transform-code/3
+                                      pf-gpt-j-generate-regex/2
+                                      pf-transpile-from-programming-language-x-to-y/3
+                                      pen-tutor-mode-assist
+                                      pf-thesaurus/1
+                                      pf-get-an-example-sentence-for-a-word/1
+                                      pf-get-an-example-of-the-usage-of-a-function/2
+                                      pen-detect-language-context
+                                      pf-get-documentation-for-syntax-given-screen/2
+                                      rcm-term
+                                      pen-autofix-lsp-errors
+                                      pf-explain-why-this-code-is-needed/2
+                                      pf-explain-some-code-with-steps/1
+                                      pf-explain-some-code/2
+                                      pf-explain-some-code/1
+                                      pf-explain-solidity-code/1
+                                      pf-explain-haskell-code/1
+                                      pf-explain-code-with-bulleted-docstring/1)))
 
 (define-key global-map (kbd "M-2") #'company-lsp)
 
