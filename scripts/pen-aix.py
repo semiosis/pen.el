@@ -50,7 +50,7 @@ if __name__ == "__main__":
         str(
             aix_resource.compose(
                 os.environ.get("PEN_PROMPT"),
-                token_min_length = 0,
+                token_min_length = 1,
                 token_max_length = max_generated_tokens,
                 top_p = final_top_p,
                 top_k = final_top_k,
