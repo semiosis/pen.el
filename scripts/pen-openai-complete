@@ -3,6 +3,9 @@
 
 # https://beta.openai.com/docs/api-reference/completions/create
 
+# logprobs
+# https://blog.scottlogic.com/2021/09/01/a-primer-on-the-openai-api-2.html
+
 import openai
 import os
 import json
