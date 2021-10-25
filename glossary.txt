@@ -1,4 +1,6 @@
 transvariadicator
+    [#pen.el]
+
     The variadic arg transformer.
 
     This is an elisp function or a shell
