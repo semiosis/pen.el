@@ -30,6 +30,9 @@ if __name__ == "__main__":
     else:
         max_generated_tokens = max_tokens
 
+    # print(max_tokens)
+    # exit()
+
     #  vim +/"top_k: int" "$MYGIT/AIx-Solutions/aix-gpt-api/aixapi/resource.py"
 
     final_top_p = os.environ.get("PEN_TOP_P") and float(os.environ.get("PEN_TOP_P"))
