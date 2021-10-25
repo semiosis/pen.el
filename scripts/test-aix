@@ -17,9 +17,6 @@ if __name__ == "__main__":
 
     #  token_min_length=min_tokens,
 
-    from shanepy import *
-    myembed(globals(), locals())
-
     print(
         str(
             aix_resource.compose(
