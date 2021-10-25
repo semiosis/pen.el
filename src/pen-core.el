@@ -158,19 +158,19 @@
      prompt
      nil nil nil nil t)))
 
-(defun pen-detect-language-ask (&optional prompt)
+(defun pen-detect-language-ask (&optional prompt world)
   (interactive)
   (if (not prompt)
       (setq prompt "Pen detected language"))
   (pen-choose
    (if pen-cost-efficient
        (if (sor (s-chompall (buffer-string)))
-           (pen-detect-language t)
-         (pen-detect-language))
+           (pen-detect-language t nil world)
+         (pen-detect-language nil nil world))
      (pen-detect-language-lm))
    "pen-detect-language-ask: "))
 
-(defun pen-detect-language-lm ()
+(defun pen-detect-language-lm (&optional world)
   (interactive)
   (let ((langs
          (-uniq-u
@@ -185,12 +185,12 @@
                   context
                   :no-select-result t)))
            ;; inexpensive
-           (list (pen-detect-language t)
-                 (pen-detect-language t t))))))
+           (list (pen-detect-language t nil world)
+                 (pen-detect-language t t world))))))
     langs))
 
-(defun pen-detect-language-lm-ask (optional prompt)
+(defun pen-detect-language-lm-ask (&optional prompt world)
   (interactive)
-  (pen-choose  (pen-detect-language-lm) prompt))
+  (pen-choose  (pen-detect-language-lm world) prompt))
 
 (provide 'pen-core)
