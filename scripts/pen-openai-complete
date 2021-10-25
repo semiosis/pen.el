@@ -47,5 +47,18 @@ cs = openai.Completion.create(
      max_tokens=int(PEN_MAX_GENERATED_TOKENS),
      temperature=float(PEN_TEMPERATURE))['choices']
 
+cs[0]['text']
+cs[0]['logprobs']
+cs[0]['logprobs']['text_offset']
+cs[0]['logprobs']['token_logprobs']
+cs[0]['logprobs']['tokens']
+cs[0]['logprobs']['top_logprobs']
+cs[0]['logprobs']['top_logprobs'][0]
+cs[0]['logprobs']['top_logprobs'][0].keys()
+cs[0]['logprobs']['top_logprobs'][0].values()
+
+cs[1]['text']
+cs[1]['logprobs']
+
 # Return probabilities
 # 
