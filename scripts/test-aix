@@ -17,7 +17,7 @@ if test -z "$PEN_N_COMPLETIONS" || test "$PEN_N_COMPLETIONS" -gt 4; then
     PEN_N_COMPLETIONS=4
 fi
 
-export PEN_PROMPT="Once upon a time"
+export PEN_PROMPT="#!/usr/bin/python3\n\nfrom"
 export PEN_MODEL="GPT-J-6B"
 export PEN_MIN_TOKENS=0
 export PEN_MAX_TOKENS=409
