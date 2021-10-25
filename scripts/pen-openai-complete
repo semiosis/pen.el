@@ -59,7 +59,7 @@ cs[0]['logprobs']['top_logprobs'][0].values()
 # json
 # tv(str(cs[0]))
 sps("jq . | v", str(cs[0]))
-sps("jq . | jq-showschema | v", str(cs[0]))
+sps("jq . | jq-showschema | vs", str(cs[0]))
 # jq-showschema
 
 cs[1]['text']
