@@ -64,6 +64,7 @@ sps("jq . | jq-showschema | vs", str(cs[0]))
 
 cs[1]['text']
 cs[1]['logprobs']
+sps("jq . | jq-showschema | vs", str(cs[1]))
 
 # Return probabilities
 # 
