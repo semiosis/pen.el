@@ -27,11 +27,14 @@ if __name__ == "__main__":
 
     if engine_max_generated_tokens:
         max_generated_tokens = hard_bound(max_generated_tokens, 0, engine_max_generated_tokens)
-    else:
+
+    if not max_generated_tokens:
         max_generated_tokens = max_tokens
 
-    # print(max_tokens)
-    # exit()
+    print(min_tokens)
+    print(max_tokens)
+    print(max_generated_tokens)
+    exit()
 
     #  vim +/"top_k: int" "$MYGIT/AIx-Solutions/aix-gpt-api/aixapi/resource.py"
 
