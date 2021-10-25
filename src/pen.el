@@ -93,6 +93,7 @@
           (or (string-equal v "on")
               (string-equal v "true")
               (string-equal v "yes")
+              ;; "true" automatically becomes t
               (and (booleanp v)
                    v))))))
 
@@ -104,6 +105,7 @@
           (or (string-equal v "off")
               (string-equal v "false")
               (string-equal v "no")
+              ;; "true" automatically becomes t
               (and (booleanp v)
                    (not v)))))))
 
