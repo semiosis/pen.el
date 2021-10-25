@@ -1630,6 +1630,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_TRAILING_WHITESPACE" . ,trailing-whitespace)
                             ("PEN_N_COMPLETIONS" . ,(str final-n-completions))
                             ;; ("PEN_ENGINE_MAX_N_COMPLETIONS" . ,final-engine-max-n-completions)
+                            ("PEN_ENGINE_MIN_GENERATED_TOKENS" . ,final-engine-min-generated-tokens)
                             ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
                             ("PEN_COLLECT_FROM_POS" . ,collect-from-pos)
                             ("PEN_INJECT_GEN_START" . ,final-inject-gen-start))))
