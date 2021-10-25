@@ -38,14 +38,14 @@ PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 from shanepy import *
 myembed(globals(), locals())
 
-openai.Completion.create(
-     n=PEN_N_COMPLETIONS,
+cs = openai.Completion.create(
+     n=int(PEN_N_COMPLETIONS),
      engine=PEN_MODEL,
      prompt=PEN_PROMPT,
      logprobs=int(PEN_LOGPROBS),
      stop=PEN_STOP_SEQUENCE,
      max_tokens=int(PEN_MAX_GENERATED_TOKENS),
-     temperature=float(PEN_TEMPERATURE))
+     temperature=float(PEN_TEMPERATURE))['choices']
 
 # Return probabilities
 # 
