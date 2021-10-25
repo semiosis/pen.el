@@ -1,35 +1,62 @@
-#!/usr/bin/python3
+#!/bin/bash
 
-from aixapi import AIxResource
-import os
+: "${AIX_API_KEY:="$PEN_LM_KEY"}"
 
-if __name__ == "__main__":
-    # Get your API Key at apps.aixsolutionsgroup.com
+if test -s $HOME/.pen/aix_api_key; then
+    : "${AIX_API_KEY:="$(cat $HOME/.pen/aix_api_key)"}"
+fi
 
-    api_key = os.environ.get("AIX_API_KEY")
-    aix_resource = AIxResource(api_key)
+test -n "$AIX_API_KEY" || {
+    echo "AIX_API_KEY not given to script"
+    exit 1
+}
 
-    model = "GPT-J-6B"
+export AIX_API_KEY
 
-    # GPT-J-6B is the default and will break when supplied
-    if model == "GPT-J-6B":
-        model = None
+if test -z "$PEN_N_COMPLETIONS" || test "$PEN_N_COMPLETIONS" -gt 4; then
+    PEN_N_COMPLETIONS=4
+fi
 
-    #  token_min_length=min_tokens,
+export PEN_PROMPT="Once upon a time"
+export PEN_MODEL="GPT-J-6B"
+export PEN_MIN_TOKENS=1
+export PEN_MAX_TOKENS=5
+export PEN_ENGINE_MIN_TOKENS=64
+export PEN_ENGINE_MAX_TOKENS=2048
+export PEN_TEMPERATURE=0.8
+export PEN_TOP_P=1.0
+export PEN_TOP_K=10
+export PEN_STOP_SEQUENCE="###"
+export PEN_N_COMPLETIONS=1
+export PEN_TRAILING_WHITESPACE
 
-    print(
-        str(
-            aix_resource.compose(
-                "Once upon a time",
-                token_min_length = 5,
-                token_max_length = 5,
-                top_p = 1.0,
-                top_k = 10,
-                temperature = 0.8,
-                stop_sequence = "###",
-                custom_model_id = model,
-            )
-            .get("data", dict())
-            .get("text")
-        )
-    )
+: "${PEN_N_COMPLETIONS:="4"}"
+
+sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
+
+# pen-aix.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
+
+# Interestingly, AIx has this issue where the start of the response is stripped
+
+pen_aix() {
+    if printf -- "%s\n" "$PEN_FLAGS" | grep -q -P '<aix-begin-newline>'; then
+        echo
+    fi
+    pen-aix.py "$@"
+}
+
+if test "$PEN_N_COMPLETIONS" = 1; then
+    {
+    printf -- "%s" "$PEN_PROMPT$PEN_TRAILING_WHITESPACE"
+    pen_aix "$@" | pen-log aix-temp | sed -z "s~${sedstop}$~~"
+    } | pen-log aix
+else
+    for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
+        echo "===== Completion $i ====="
+        # The openai api will add the prompt. So emulate it
+        {
+        printf -- "%s" "$PEN_PROMPT$PEN_TRAILING_WHITESPACE"
+        pen_aix "$@" | pen-log aix-temp | sed -z "s~${sedstop}$~~"
+        } | awk 1
+    done | pen-log aix
+fi
