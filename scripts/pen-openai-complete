@@ -7,6 +7,7 @@ import json
 
 API_TOKEN = os.environ.get("OPENAI_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL") or "davinci"
+PEN_MODEL = os.environ.get("PEN_MODEL") or "davinci-codex"
 PEN_PROMPT = os.environ.get("PEN_PROMPT") or "Once upon a time"
 PEN_MODE = os.environ.get("PEN_MODE")
 PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE") or "0.8"
