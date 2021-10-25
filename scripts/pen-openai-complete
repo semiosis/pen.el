@@ -56,6 +56,11 @@ cs[0]['logprobs']['top_logprobs']
 cs[0]['logprobs']['top_logprobs'][0]
 cs[0]['logprobs']['top_logprobs'][0].keys()
 cs[0]['logprobs']['top_logprobs'][0].values()
+# json
+# tv(str(cs[0]))
+sps("jq . | v", str(cs[0]))
+sps("jq . | jq-showschema | v", str(cs[0]))
+# jq-showschema
 
 cs[1]['text']
 cs[1]['logprobs']
