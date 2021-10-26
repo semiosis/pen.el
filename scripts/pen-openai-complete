@@ -17,7 +17,7 @@ PEN_PROMPT = os.environ.get("PEN_PROMPT") or "Once upon a time"
 PEN_MODE = os.environ.get("PEN_MODE")
 PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE") or "0.8"
 # json.loads("[\"hello my ;\\\"\",\"friend\"]")
-PEN_STOP_SEQUENCES = json.loads(os.environ.get("PEN_STOP_SEQUENCES")) or ["\n"]
+PEN_STOP_SEQUENCES = json.loads(str(os.environ.get("PEN_STOP_SEQUENCES"))) or ["\n"]
 PEN_STOP_SEQUENCE = os.environ.get("PEN_STOP_SEQUENCE") or "\n"
 PEN_LOGPROBS = os.environ.get("PEN_LOGPROBS") or "10"
 PEN_BEST_OF = os.environ.get("PEN_BEST_OF") or "1"
