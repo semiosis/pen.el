@@ -114,7 +114,10 @@
       path)))
 
 (defun get-path-for-thing (&optional soft no-create-path for-clipboard semantic-path)
-  "Get path for . semantic-path means a path suitable for google/nl searching"
+  "Get path for thing at point.
+This is like clicking on the thing and then getting its path.
+Or it could be an org-link, or hyperlink, say.
+semantic-path means a path suitable for google/nl searching"
   (interactive)
 
   (setq semantic-path (or
