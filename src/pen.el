@@ -3467,7 +3467,7 @@ May use to generate code from comments."
          (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
          ;; (orig-inject-len (string-bytes (cdr (assoc "PEN_INJECT_GEN_START" al))))
          (orig-inject-len (length (cdr (assoc "PEN_INJECT_GEN_START" al))))
-         ;; Sometimes this is a number
+         ;; Sometimes this is a number, (i.e. when select is disabled)
          (result (cdr (assoc "PEN_RESULT" al)))
          ;; This is json encoded
          (results (cdr (assoc "PEN_RESULTS" al)))
