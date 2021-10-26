@@ -1636,7 +1636,8 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_TOP_P" . ,final-top-p)
                             ("PEN_TOP_K" . ,final-top-k)
                             ("PEN_FLAGS" . ,final-flags)
-                            ("PEN_BEST_OF" . ,final-best-of)
+                            ;; 'best of' IS 'top k'
+                            ;; ("PEN_BEST_OF" . ,final-best-of)
                             ("PEN_CACHE" . ,cache)
                             ("PEN_USER_AGENT" . ,pen-user-agent)
                             ("PEN_TRAILING_WHITESPACE" . ,trailing-whitespace)
@@ -2471,10 +2472,13 @@ Function names are prefixed with pf- for easy searching"
                       (cant-n-complete (ht-get yaml-ht "cant-n-complete"))
 
                       (top-p (ht-get yaml-ht "top-p"))
+
+                      ;; synonyms
                       (top-k (ht-get yaml-ht "top-k"))
+                      (top-k (ht-get yaml-ht "best-of"))
+
                       (temperature (ht-get yaml-ht "temperature"))
                       (default-temperature (ht-get yaml-ht "default-temperature"))
-                      (best-of (ht-get yaml-ht "best-of"))
 
                       ;; This is an override hint only
                       (force-completion nil)
