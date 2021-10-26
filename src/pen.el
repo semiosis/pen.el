@@ -1147,6 +1147,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'n-max-collate)
                        ,n-max-collate))
 
+                  (final-best-of
+                   (or (pen-var-value-maybe 'n-best-of)
+                       ,best-of))
+
                   (final-n-target
                    (or (pen-var-value-maybe 'n-target)
                        ,n-target))
@@ -1629,6 +1633,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_TOP_P" . ,final-top-p)
                             ("PEN_TOP_K" . ,final-top-k)
                             ("PEN_FLAGS" . ,final-flags)
+                            ("PEN_BEST_OF" . ,final-best-of)
                             ("PEN_CACHE" . ,cache)
                             ("PEN_USER_AGENT" . ,pen-user-agent)
                             ("PEN_TRAILING_WHITESPACE" . ,trailing-whitespace)
@@ -2465,8 +2470,8 @@ Function names are prefixed with pf- for easy searching"
                       (top-p (ht-get yaml-ht "top-p"))
                       (top-k (ht-get yaml-ht "top-k"))
                       (temperature (ht-get yaml-ht "temperature"))
-                      (best-of (ht-get yaml-ht "best-of"))
                       (default-temperature (ht-get yaml-ht "default-temperature"))
+                      (best-of (ht-get yaml-ht "best-of"))
 
                       ;; This is an override hint only
                       (force-completion nil)
