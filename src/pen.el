@@ -1437,7 +1437,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   ;; These happen before the postprocessing
                   (final-split-patterns
-                   (or (pen-var-value-maybe 'split-patterns)
+                   (or (pen-var-value-maybe 'split-pKatterns)
                        ',split-patterns))
 
                   ;; These happen after the postprocessing
@@ -2465,6 +2465,7 @@ Function names are prefixed with pf- for easy searching"
                       (top-p (ht-get yaml-ht "top-p"))
                       (top-k (ht-get yaml-ht "top-k"))
                       (temperature (ht-get yaml-ht "temperature"))
+                      (best-of (ht-get yaml-ht "best-of"))
                       (default-temperature (ht-get yaml-ht "default-temperature"))
 
                       ;; This is an override hint only
