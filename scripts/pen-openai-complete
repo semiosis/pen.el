@@ -46,8 +46,8 @@ PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 #      temperature=float(PEN_TEMPERATURE),
 #      logit_bias={6342: -1})
 
-from shanepy import *
-myembed(globals(), locals())
+# from shanepy import *
+# myembed(globals(), locals())
 
 cs = openai.Completion.create(
      n=int(PEN_N_COMPLETIONS),
@@ -62,6 +62,15 @@ cs = openai.Completion.create(
      stop=PEN_STOP_SEQUENCES,
      max_tokens=int(PEN_MAX_GENERATED_TOKENS),
      temperature=float(PEN_TEMPERATURE))['choices']
+
+if len(cs) == 1:
+    print(cs[0]['text'])
+else:
+    for x in range(len(cs)):
+        print(f"===== Completion %i =====" % x)
+        print(cs[x]['text'])
+
+exit(0)
 
 cs[0]['text']
 cs[0]['logprobs']
