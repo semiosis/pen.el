@@ -1147,10 +1147,6 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'n-max-collate)
                        ,n-max-collate))
 
-                  (final-best-of
-                   (or (pen-var-value-maybe 'n-best-of)
-                       ,best-of))
-
                   (final-n-target
                    (or (pen-var-value-maybe 'n-target)
                        ,n-target))
