@@ -3119,7 +3119,7 @@ But use the results-analyser."
   "This wraps around pen function calls to make them complete a single word"
   `(eval
     `(let ((force-completion t)
-           (max-generated-tokens n)
+           (max-generated-tokens ,,n)
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
