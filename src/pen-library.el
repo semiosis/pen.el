@@ -113,6 +113,63 @@
         (xc path)
       path)))
 
+(defun get-path-for-thing (&optional soft no-create-path for-clipboard semantic-path)
+  "Get path for . semantic-path means a path suitable for google/nl searching"
+  (interactive)
+
+  (setq semantic-path (or
+                       semantic-path
+                       (>= (prefix-numeric-value current-prefix-arg) 4)))
+
+  "If it's just for the clipboard then we can copy"
+  ;; (xc-m (f-realpath (buffer-file-name)))
+  (let ((path
+         (or (and (eq major-mode 'Info-mode)
+                  (if soft
+                      (concat "(" (basename Info-current-file) ") " Info-current-node)
+                    (concat Info-current-file ".info")))
+
+             (and (major-mode-enabled 'eww-mode)
+                  (s-replace-regexp "^file:\/\/" ""
+                                    (url-encode-url
+                                     (or (eww-current-url)
+                                         eww-followed-link))))
+
+             (and (major-mode-enabled 'sx-question-mode)
+                  (sx-get-question-url))
+
+             (and (major-mode-enabled 'w3m-mode)
+                  w3m-current-url)
+
+             (and (major-mode-enabled 'org-brain-visualize-mode)
+                  (org-brain-get-path-for-entry org-brain--vis-entry semantic-path))
+
+             (and (major-mode-enabled 'ranger-mode)
+                  (dired-copy-filename-as-kill 0))
+
+             (and (major-mode-enabled 'dired-mode)
+                  (sor (and
+                        for-clipboard
+                        (mapconcat 'q (dired-get-marked-files) " "))
+                       (pen-pwd)))
+
+             ;; This will break on eww
+             (if (and (not (eq major-mode 'org-mode))
+                      (string-match-p "\\[\\*Org Src" (or (buffer-file-name) "")))
+                 (s-replace-regexp "\\[\\*Org Src.*" "" (buffer-file-name)))
+             (buffer-file-name)
+             (try (buffer-file-path)
+                  nil)
+             dired-directory
+             (progn (if (not no-create-path)
+                        (save-temp-if-no-file))
+                    (let ((p (full-path)))
+                      (if (stringp p)
+                          (chomp p)))))))
+    (if (interactive-p)
+        (xc path)
+      path)))
+
 (defun get-path-nocreate ()
   (get-path nil t))
 

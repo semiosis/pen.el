@@ -2038,6 +2038,14 @@ Otherwise, it will be a shell expression template")
       (ht-get
        (mu
         (pen-prompt-file-load "$PROMPTS/generate-transformative-code.prompt"))
+       "examples")))))
+  (pen-etv
+   (type
+    (car
+     (vector2list
+      (ht-get
+       (mu
+        (pen-prompt-file-load "$PROMPTS/generate-transformative-code.prompt"))
        "examples"))))))
 
 ;; This is a hash table
