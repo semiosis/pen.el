@@ -37,7 +37,7 @@ test -n "$ALSO_EXPORT" && {
 : "${PEN_ENGINE_MAX_GENERATED_TOKENS:="256"}"
 : "${PEN_TEMPERATURE:="0.8"}"
 : "${PEN_TOP_P:="1"}"
-: "${PEN_TOP_K:="5"}"
+: "${PEN_TOP_K:="10"}"
 # if test -n "$PEN_PROMPT"; then
 #     IFS= read -rd '' PEN_PROMPT < <(printf -- "%s" "$PEN_PROMPT" | base64 -d);typeset -p PEN_PROMPT &>/dev/null
 # fi

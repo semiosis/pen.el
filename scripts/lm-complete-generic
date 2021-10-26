@@ -163,7 +163,7 @@ test -n "$PEN_PROMPT" || {
 : "${PEN_ENGINE_MAX_TOKENS:="60"}"
 : "${PEN_TEMPERATURE:="0.8"}"
 : "${PEN_TOP_P:="1"}"
-: "${PEN_TOP_K:="5"}"
+: "${PEN_TOP_K:="10"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 
 export PEN_USER_AGENT
