@@ -228,6 +228,7 @@ case "$sn" in
 
         # - BEST_OF
         # - TOP_K
+        # - Utilise all stop sequences
 
         "$completer_sn" api \
             completions.create \
