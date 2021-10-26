@@ -1371,7 +1371,7 @@ Reconstruct the entire yaml-ht for a different language."
                              ,top-k))))
 
                   (final-top-k
-                   (if (and (sor top-k)
+                   (if (and (sor final-top-k)
                             final-n-completions)
                        (pen-hard-bound
                         final-top-k
