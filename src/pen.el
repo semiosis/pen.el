@@ -1371,10 +1371,15 @@ Reconstruct the entire yaml-ht for a different language."
                              ,top-k))))
 
                   (final-top-k
-                   (pen-hard-bound
-                    final-top-k
-                    1
-                    final-n-completions))
+                   (if (and (sor top-k)
+                            final-n-completions)
+                       (pen-hard-bound
+                        final-top-k
+                        ;; top-k can't go below n-completions
+                        final-n-completions
+                        100
+                        ;; final-n-completions
+                        )))
 
                   (final-action
                    (expand-template
