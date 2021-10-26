@@ -53,6 +53,7 @@ cs = openai.Completion.create(
      logprobs=int(PEN_LOGPROBS),
      frequency_penalty=float(PEN_FREQUENCY_PENALTY),
      presence_penalty=float(PEN_PRESENCE_PENALTY),
+     top_p=float(PEN_TOP_P),
      stop=PEN_STOP_SEQUENCE,
      max_tokens=int(PEN_MAX_GENERATED_TOKENS),
      temperature=float(PEN_TEMPERATURE))['choices']
