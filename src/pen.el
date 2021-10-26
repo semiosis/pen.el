@@ -3473,6 +3473,7 @@ May use to generate code from comments."
          ;; Sometimes this is a number, (i.e. when select is disabled, or if selection was done extrinsically)
          (result (cdr (assoc "PEN_RESULT" al)))
          ;; This is json encoded
+
          (results (cdr (assoc "PEN_RESULTS" al)))
          (collect-from-pos (or (pen-num (cdr (assoc "PEN_COLLECT_FROM_POS" al))) 0))
          (end-pos (or (pen-num (cdr (assoc "PEN_END_POS" al))) 0))
@@ -3503,33 +3504,36 @@ May use to generate code from comments."
     ;; This works but I need to also force interactive
     ;; Still buggy. Now it's chopping off the start
 
-    (comment
-     (etv
-      (let ((result
+    (etv
+     (let* ((result
              (cond
               ((stringp result) result)
               (results
-               (fz (pen-vector2list (json-parse-string results)))))))
-        `(,end-pos ,collect-from-pos
-                   :inject-gen-start
-                   ,(tv result)
-                   :force-interactive t
-                   ,(s-right
-                     (- (length result) (- end-pos collect-from-pos))
-                     result)))))
+               (fz (pen-vector2list (json-parse-string results))))))
+            (the-increase (- (length result)
+                             orig-inject-len)))
+       `(,orig-inject-len ,end-pos ,collect-from-pos
+                          :inject-gen-start
+                          ,(tv result)
+                          :force-interactive t
+                          ,(s-right
+                            (+ (- (length result) (- end-pos collect-from-pos))
+                               the-increase)
+                            result))))
 
-    (let ((result
-           (cond
-            ((stringp result) result)
-            (results
-             (fz (pen-vector2list (json-parse-string results)))))))
-      (apply
-       fun
-       (append vals `(:inject-gen-start
-                      ,(tv (s-right
-                            (- (length result) (- end-pos collect-from-pos))
-                            result))
-                      :force-interactive t))))))
+    (comment
+     (let ((result
+            (cond
+             ((stringp result) result)
+             (results
+              (fz (pen-vector2list (json-parse-string results)))))))
+       (apply
+        fun
+        (append vals `(:inject-gen-start
+                       ,(tv (s-right
+                             (- (length result) (- end-pos collect-from-pos))
+                             result))
+                       :force-interactive t)))))))
 
 (comment (s-right (- (length "full text") (length "full")) "full text"))
 
