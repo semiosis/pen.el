@@ -312,5 +312,10 @@ case "$f" in
     }
     ;;
 
+    last-word) {
+        sed -z "s/.* \([a-zA-Z]\\+\\)[^a-zA-Z]*$/\\1/"
+    }
+    ;;
+
     *)
 esac
