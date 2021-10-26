@@ -60,9 +60,6 @@ cs = openai.Completion.create(
      max_tokens=int(PEN_MAX_GENERATED_TOKENS),
      temperature=float(PEN_TEMPERATURE))['choices']
 
-from shanepy import *
-myembed(globals(), locals())
-
 if len(cs) == 1:
     print(PEN_PROMPT, end = '')
     print(cs[0]['text'])
