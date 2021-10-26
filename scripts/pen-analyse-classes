@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+results="$(cat)"
+
+for label in "$@"
+do
+    echo -n "label: "
+    printf -- "%s" "$results" | awk 1 | grep -iP "$x" | wc -l
+    echo
+done

@@ -10,6 +10,7 @@ transvariadicator
 
 prompt function
 prompting function
+f_prompt(·)
     Each .prompt file generates a function in
     emacs lisp.
 

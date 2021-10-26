@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+sort | uniq -c | sort -n | tac

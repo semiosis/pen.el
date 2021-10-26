@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+x="$1"
+test -n "$x" || exit 1
+y="$2"
+test -n "$y" || exit 1
+
+results="$(cat)"
+t="$(printf -- "%s" "$results" | awk 1 | grep -iP "$x" | wc -l)"
+f="$(printf -- "%s" "$results" | awk 1 | grep -iP "$y" | wc -l)"
+fr="$(bc<<< "scale=2;$t/$(( t + f ))")"
+echo "$x: $fr"

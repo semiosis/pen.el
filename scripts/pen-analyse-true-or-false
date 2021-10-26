@@ -1,8 +1,4 @@
 #!/bin/bash
 export TTY
 
-results="$(cat)"
-t="$(printf -- "%s" "$results" | awk 1 | grep -iP 'True' | wc -l)"
-f="$(printf -- "%s" "$results" | awk 1 | grep -iP 'False' | wc -l)"
-fr="$(bc<<< "scale=2;$t/$(( t + f ))")"
-echo "Confidence: $fr"
+pen-analyse-x-or-y True False
