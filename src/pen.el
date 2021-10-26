@@ -153,10 +153,10 @@ Reconstruct the entire yaml-ht for a different language."
            (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
            (envs (pen--htlist-to-alist (ht-get yaml-ht "envs")))
            ;; TODO Make vars also use pen--htlist-to-alist
-           (vars (vector2list (ht-get yaml-ht "vars")))
+           (vars (pen-vector2list (ht-get yaml-ht "vars")))
            (var-slugs (mapcar 'slugify vars))
-           (examples (vector2list (ht-get yaml-ht "examples")))
-           (aliases (vector2list (ht-get yaml-ht "aliases")))
+           (examples (pen-vector2list (ht-get yaml-ht "examples")))
+           (aliases (pen-vector2list (ht-get yaml-ht "aliases")))
            (from-lang (ht-get yaml-ht "language"))
            (from-lang (or from-lang (read-string-hist ".prompt Origin Language: ")))
            (to-lang (read-string-hist ".prompt Destination Language: "))
@@ -199,7 +199,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (if (vectorp (car examples))
                       (mapcar
                        (lambda (v)
-                         (cl-loop for e in (vector2list v) collect
+                         (cl-loop for e in (pen-vector2list v) collect
                                (translate e)))
                        examples)
                     (cl-loop for e in examples collect
@@ -883,7 +883,7 @@ Reconstruct the entire yaml-ht for a different language."
                    (if final-flags
                        (mapconcat
                         (lambda (s) (concat "<" s ">"))
-                        (vector2list final-flags)
+                        (pen-vector2list final-flags)
                         " ")))
 
                   ;; hover, info and new-document are related
@@ -1029,7 +1029,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (subprompts-al
                    (if final-subprompts
-                       (ht->alist (-reduce 'ht-merge (vector2list final-subprompts)))))
+                       (ht->alist (-reduce 'ht-merge (pen-vector2list final-subprompts)))))
 
                   (final-prompt ,prompt)
 
@@ -1901,8 +1901,8 @@ Reconstruct the entire yaml-ht for a different language."
 
              ;; TODO Obtain the function name too
              (setq pen-last-prompt-data
-                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" result)))
-                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULTS" (json-encode-list results)))))
+                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" result)
+                                                          (cons "PEN_RESULTS" (json-encode-list results)))))
 
              ;; Now save this to a list somewhere
              (pen-append-to-file
@@ -1971,20 +1971,20 @@ Reconstruct the entire yaml-ht for a different language."
 (defun test-subprompts ()
   (interactive)
   (let* ((subprompts
-          (vector2list
+          (pen-vector2list
            (ht-get
             (yamlmod-load
              (cat
               (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic-3.prompt")))
             "subprompts")))
-         (keys (type (car (vector2list subprompts)))))
+         (keys (type (car (pen-vector2list subprompts)))))
 
     (pen-etv
      (pps keys))))
 
 (defun test-subprompts-2 ()
   (interactive)
-  (let ((l (vector2list
+  (let ((l (pen-vector2list
             (ht-get
              (yamlmod-load (cat (f-join pen-prompts-directory "prompts" "generic-tutor-for-any-topic-and-subtopic-3.prompt")))
              "subprompts"))))
@@ -2056,7 +2056,7 @@ Otherwise, it will be a shell expression template")
   (pen-etv
    (type
     (car
-     (vector2list
+     (pen-vector2list
       (ht-get
        (mu
         (pen-prompt-file-load "$PROMPTS/generate-transformative-code.prompt"))
@@ -2064,7 +2064,7 @@ Otherwise, it will be a shell expression template")
   (pen-etv
    (type
     (car
-     (vector2list
+     (pen-vector2list
       (ht-get
        (mu
         (pen-prompt-file-load "$PROMPTS/generate-transformative-code.prompt"))
@@ -2159,7 +2159,7 @@ Otherwise, it will be a shell expression template")
 
 (defun pen--htlist-to-alist (htlist)
   (if (vectorp htlist)
-      (setq htlist (vector2list htlist)))
+      (setq htlist (pen-vector2list htlist)))
   (mapcar
    (lambda (e)
      (if (ht-p e)
@@ -2173,7 +2173,7 @@ Otherwise, it will be a shell expression template")
   (interactive)
   (mu
    (let* ((engine-ht (yamlmod-read-file "$MYGIT/semiosis/engines/engines/reasonable-defaults.engine"))
-          (defers (vector2list (ht-get engine-ht "defer"))))
+          (defers (pen-vector2list (ht-get engine-ht "defer"))))
      (etv (pps (pen--htlist-to-alist defers))))))
 
 (defun pen-resolve-engine (starting-engine &optional requirements)
@@ -2190,10 +2190,10 @@ Otherwise, it will be a shell expression template")
           (local (ht-get engine-ht "local"))
           (libre-model (ht-get engine-ht "libre-model"))
           (libre-dataset (ht-get engine-ht "libre-dataset"))
-          (defers (vector2list (ht-get engine-ht "defer")))
-          (family (vector2list (ht-get engine-ht "engine-family")))
+          (defers (pen-vector2list (ht-get engine-ht "defer")))
+          (family (pen-vector2list (ht-get engine-ht "engine-family")))
           ;; This is a list of htables. convert to alist
-          (fallbacks (vector2list (ht-get engine-ht "fallback")))
+          (fallbacks (pen-vector2list (ht-get engine-ht "fallback")))
 
           ;; Start with the defers.
           ;; If a defer exists with those exact requirements, then defer.
@@ -2282,7 +2282,7 @@ Function names are prefixed with pf- for easy searching"
 
                       (path path)
 
-                      (requirements (vector2list (ht-get yaml-ht "requirements")))
+                      (requirements (pen-vector2list (ht-get yaml-ht "requirements")))
 
                       (force-engine (ht-get yaml-ht "force-engine"))
                       (force-model (ht-get yaml-ht "force-model"))
@@ -2329,9 +2329,9 @@ Function names are prefixed with pf- for easy searching"
                                   task))
                       (title-slug (slugify title))
 
-                      (aliases (vector2list (ht-get yaml-ht "aliases")))
+                      (aliases (pen-vector2list (ht-get yaml-ht "aliases")))
 
-                      (variadic-var (vector2list (ht-get yaml-ht "variadic-var")))
+                      (variadic-var (pen-vector2list (ht-get yaml-ht "variadic-var")))
 
                       ;; lm-complete
                       (cache (pen-yaml-test yaml-ht "cache"))
@@ -2495,15 +2495,15 @@ Function names are prefixed with pf- for easy searching"
                       (engine-strips-gen-starting-whitespace (ht-get yaml-ht "engine-strips-gen-starting-whitespace"))
 
                       (stop-sequences
-                       (or (vector2list (ht-get yaml-ht "stop-sequences"))
+                       (or (pen-vector2list (ht-get yaml-ht "stop-sequences"))
                            ;; (list "\n")
                            (list "#<long>#")))
                       (suggest-p
-                       (or (vector2list (ht-get yaml-ht "suggest-p"))
+                       (or (pen-vector2list (ht-get yaml-ht "suggest-p"))
                            (list t)))
 
                       ;; These are automatically turned into prompt functions
-                      (nl-suggest-p (vector2list (ht-get yaml-ht "nl-suggest-p")))
+                      (nl-suggest-p (pen-vector2list (ht-get yaml-ht "nl-suggest-p")))
 
                       (stop-sequence
                        (if stop-sequences (car stop-sequences)))
@@ -2525,18 +2525,18 @@ Function names are prefixed with pf- for easy searching"
                          force-stop-sequence))
 
                       (stop-patterns
-                       (or (vector2list (ht-get yaml-ht "stop-patterns"))
+                       (or (pen-vector2list (ht-get yaml-ht "stop-patterns"))
                            ;; By default, stop when you see ^Input
                            (list "^Input:")))
 
                       (split-patterns
-                       (or (vector2list (ht-get yaml-ht "split-patterns"))
+                       (or (pen-vector2list (ht-get yaml-ht "split-patterns"))
                            nil
                            ;; (list "\n")
                            ))
 
                       (end-split-patterns
-                       (or (vector2list (ht-get yaml-ht "end-split-patterns"))
+                       (or (pen-vector2list (ht-get yaml-ht "end-split-patterns"))
                            nil
                            ;; (list "\n")
                            ))
@@ -2548,32 +2548,32 @@ Function names are prefixed with pf- for easy searching"
                          tr))
 
                       ;; docs
-                      (problems (vector2list (ht-get yaml-ht "problems")))
-                      (design-patterns (vector2list (ht-get yaml-ht "design-patterns")))
-                      (todo (vector2list (ht-get yaml-ht "todo")))
+                      (problems (pen-vector2list (ht-get yaml-ht "problems")))
+                      (design-patterns (pen-vector2list (ht-get yaml-ht "design-patterns")))
+                      (todo (pen-vector2list (ht-get yaml-ht "todo")))
                       (notes
                        (let* ((n (ht-get yaml-ht "notes"))
                               (n (if (vectorp n)
-                                     (pen-list-to-orglist (vector2list (ht-get yaml-ht "notes")))
+                                     (pen-list-to-orglist (pen-vector2list (ht-get yaml-ht "notes")))
                                    n)))
                          n))
-                      (aims (vector2list (ht-get yaml-ht "aims")))
-                      (past-versions (vector2list (ht-get yaml-ht "past-versions")))
+                      (aims (pen-vector2list (ht-get yaml-ht "aims")))
+                      (past-versions (pen-vector2list (ht-get yaml-ht "past-versions")))
                       (external-related
                        (let* ((n (ht-get yaml-ht "external-related")))
                          (if n
                              (cond
                               ((stringp n) (list n))
-                              ((vectorp n) (vector2list (ht-get yaml-ht "external-related")))
+                              ((vectorp n) (pen-vector2list (ht-get yaml-ht "external-related")))
                               (t nil)))))
-                      (related-prompts (vector2list (ht-get yaml-ht "related-prompts")))
-                      (future-titles (vector2list (ht-get yaml-ht "future-titles")))
+                      (related-prompts (pen-vector2list (ht-get yaml-ht "related-prompts")))
+                      (future-titles (pen-vector2list (ht-get yaml-ht "future-titles")))
 
                       ;; variables
                       (vars (ht-get yaml-ht "vars"))
 
                       ;; used internally
-                      (vars-list (vector2list vars))
+                      (vars-list (pen-vector2list vars))
 
                       ;; Create the variables first
                       (var-defaults)
@@ -2598,11 +2598,11 @@ Function names are prefixed with pf- for easy searching"
                                          collect
                                          (cdr atp))))
 
-                           (if (hash-table-p (car (vector2list (car values))))
+                           (if (hash-table-p (car (pen-vector2list (car values))))
                                (let* ((als (cl-loop
                                             for atp in vars-al
                                             collect
-                                            (pen--htlist-to-alist (vector2list (cdr atp)))))
+                                            (pen--htlist-to-alist (pen-vector2list (cdr atp)))))
 
                                       (defaults
                                         (cl-loop
@@ -2630,18 +2630,18 @@ Function names are prefixed with pf- for easy searching"
                         (t vars-list)))
 
                       (examples
-                       (let ((explicit-key (vector2list (ht-get yaml-ht "examples"))))
+                       (let ((explicit-key (pen-vector2list (ht-get yaml-ht "examples"))))
                          (if explicit-key
                              explicit-key
                            examples)))
 
                       (examples
                        (if (vectorp (car examples))
-                           (vector2list (car examples))
+                           (pen-vector2list (car examples))
                          examples))
 
                       (preprocessors
-                       (let ((explicit-key (vector2list (ht-get yaml-ht "preprocessors"))))
+                       (let ((explicit-key (pen-vector2list (ht-get yaml-ht "preprocessors"))))
                          (if explicit-key
                              explicit-key
                            preprocessors)))
@@ -2649,7 +2649,7 @@ Function names are prefixed with pf- for easy searching"
                       (var-defaults
                        ;; override what was taken from vars
                        ;; only if it exists
-                       (let ((explicit-key (vector2list (ht-get yaml-ht "var-defaults"))))
+                       (let ((explicit-key (pen-vector2list (ht-get yaml-ht "var-defaults"))))
                          (if explicit-key
                              explicit-key
                            var-defaults)))
@@ -3357,7 +3357,7 @@ May use to generate code from comments."
           (cl-loop
            for atp in vars
            collect
-           (car (vector2list (cdr atp)))))
+           (car (pen-vector2list (cdr atp)))))
 
          (keys (cl-loop
                 for atp in vars
@@ -3367,7 +3367,7 @@ May use to generate code from comments."
          (als (cl-loop
                for atp in vars
                collect
-               (pen--htlist-to-alist (vector2list (cdr atp)))))
+               (pen--htlist-to-alist (pen-vector2list (cdr atp)))))
 
          (defaults
            (cl-loop
@@ -3458,6 +3458,9 @@ May use to generate code from comments."
       " "
       vals))))
 
+(defun pen-vector2list (v)
+  (append v nil))
+
 (defun pen-continue-from-hist ()
   (interactive)
   (let* ((fp (f-join penconfdir "prompt-hist.el"))
@@ -3467,7 +3470,7 @@ May use to generate code from comments."
          (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
          ;; (orig-inject-len (string-bytes (cdr (assoc "PEN_INJECT_GEN_START" al))))
          (orig-inject-len (length (cdr (assoc "PEN_INJECT_GEN_START" al))))
-         ;; Sometimes this is a number, (i.e. when select is disabled)
+         ;; Sometimes this is a number, (i.e. when select is disabled, or if selection was done extrinsically)
          (result (cdr (assoc "PEN_RESULT" al)))
          ;; This is json encoded
          (results (cdr (assoc "PEN_RESULTS" al)))
@@ -3498,13 +3501,18 @@ May use to generate code from comments."
 
     ;; This works but I need to also force interactive
     ;; Still buggy. Now it's chopping off the start
-    (apply
-     fun
-     (append vals `(:inject-gen-start
-                    ,(s-right
-                      (- (length result) (- end-pos collect-from-pos))
-                      result)
-                    :force-interactive t)))))
+    (let ((result
+           (cond
+            ((stringp result) result)
+            (results
+             (pen-vector2list (json-parse-string (json-parse-string results)))))))
+      (apply
+       fun
+       (append vals `(:inject-gen-start
+                      ,(s-right
+                        (- (length result) (- end-pos collect-from-pos))
+                        result)
+                      :force-interactive t))))))
 
 (comment (s-right (- (length "full text") (length "full")) "full text"))
 
