@@ -22,7 +22,7 @@ PEN_STOP_SEQUENCE = os.environ.get("PEN_STOP_SEQUENCE") or "\n"
 PEN_LOGPROBS = os.environ.get("PEN_LOGPROBS") or "10"
 PEN_TOP_K = os.environ.get("PEN_TOP_K") or "5"
 PEN_TOP_P = os.environ.get("PEN_TOP_P") or "1.0"
-PEN_N_COMPLETIONS = os.environ.get("PEN_LOGPROBS") or "2"
+PEN_N_COMPLETIONS = os.environ.get("PEN_N_COMPLETIONS") or "2"
 PEN_MAX_TOKENS = os.environ.get("PEN_MAX_TOKENS") or "15"
 PEN_FREQUENCY_PENALTY = os.environ.get("PEN_FREQUENCY_PENALTY") or "0"
 PEN_PRESENCE_PENALTY = os.environ.get("PEN_PRESENCE_PENALTY") or "0"
@@ -46,9 +46,6 @@ PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 #      temperature=float(PEN_TEMPERATURE),
 #      logit_bias={6342: -1})
 
-# from shanepy import *
-# myembed(globals(), locals())
-
 cs = openai.Completion.create(
      n=int(PEN_N_COMPLETIONS),
      engine=PEN_MODEL,
@@ -62,6 +59,9 @@ cs = openai.Completion.create(
      stop=PEN_STOP_SEQUENCES,
      max_tokens=int(PEN_MAX_GENERATED_TOKENS),
      temperature=float(PEN_TEMPERATURE))['choices']
+
+from shanepy import *
+myembed(globals(), locals())
 
 if len(cs) == 1:
     print(PEN_PROMPT, end = '')

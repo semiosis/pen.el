@@ -9,7 +9,7 @@
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -d) {
-        LM_COMPLETE_DEBUG=y
+        export LM_COMPLETE_DEBUG=y
         shift
     }
     ;;
