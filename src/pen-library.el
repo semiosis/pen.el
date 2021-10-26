@@ -113,12 +113,42 @@
         (xc path)
       path)))
 
+(defun pen-button-get-link (b)
+  (cond
+   ((eq (button-get b 'face) 'glossary-button-face)
+    (concat "[[y:" (button-get-text b) "]]"))
+   (t nil)))
+
+(defun pen-clean-up-copy-link (rawlink)
+  (setq rawlink (s-replace-regexp "^(\\(.*\\))$" "\\1" rawlink))
+  (setq rawlink (s-replace-regexp "^[\"]\\(.*\\)[\"]$" "\\1" rawlink))
+  (setq rawlink (s-replace-regexp "^\\([a-z]+\\.[a-z]+\\/\\)" "http://\\1" rawlink)) ;go import
+  rawlink)
+
+;; j:my-copy-link-at-point
+(defun pen-copy-link-at-point ()
+  "Copy the link with the highest priority at the point."
+  (interactive)
+  (xc
+   (try
+    ;; (progn (error-if-equals (link-hint--action-at-point :copy) "There is no link supporting the :copy action at the point.")
+    ;;        (e/xc))
+    (error-if-equals (pen-button-get-link (glossary-button-at-point)) nil)
+    (error-if-equals (pen-clean-up-copy-link (plist-get (link-hint--get-link-at-point) :args)) nil)
+    (error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
+    (error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'url)))) "")
+    (error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'line)))) "")
+    "")))
+
 (defun get-path-for-thing (&optional soft no-create-path for-clipboard semantic-path)
   "Get path for thing at point.
 This is like clicking on the thing and then getting its path.
 Or it could be an org-link, or hyperlink, say.
 semantic-path means a path suitable for google/nl searching"
   (interactive)
+
+  (if (not semantic-path)
+      (call-interactively 'my-copy-link-at-point))
 
   (setq semantic-path (or
                        semantic-path
