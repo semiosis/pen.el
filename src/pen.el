@@ -85,6 +85,10 @@
 (defset pen-prompt-completion-functions nil)
 (defset pen-prompt-functions-meta nil)
 
+;; (defun pen-ht-get (yaml-ht key)
+;;   (pen-try
+;;    (ht-get yaml-ht key)))
+
 (defun pen-yaml-test (yaml-ht key)
   (ignore-errors
     (if (and yaml-ht
