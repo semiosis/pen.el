@@ -3115,6 +3115,17 @@ But use the results-analyser."
            (n-completions 20))
        ,',@body)))
 
+(defmacro pen-n-complete (n &rest body)
+  "This wraps around pen function calls to make them complete a single word"
+  `(eval
+    `(let ((force-completion t)
+           (max-generated-tokens n)
+           (stop-sequence "##long complete##")
+           (stop-sequences '("##long complete##"))
+           (n-collate 1)
+           (n-completions 3))
+       ,',@body)))
+
 (defmacro pen-word-complete (&rest body)
   "This wraps around pen function calls to make them complete a single word"
   `(eval
@@ -3252,9 +3263,14 @@ But use the results-analyser."
 (defun pen-complete-words (preceding-text &optional tv)
   "Words completion"
   (interactive (list (pen-preceding-text) nil))
+
   (let ((response
-         (pen-words-complete
-          (pen-complete-function preceding-text))))
+         (if (> (prefix-numeric-value current-prefix-arg) 1)
+             ;; Complete this many words -- fudge it. Use tokens per word in future
+             (pen-n-complete (prefix-numeric-value current-prefix-arg)
+                             (pen-complete-function preceding-text))
+           (pen-words-complete
+            (pen-complete-function preceding-text)))))
     (if tv
         (pen-etv (ink-propertise response))
       (pen-complete-insert (ink-propertise response)))))
