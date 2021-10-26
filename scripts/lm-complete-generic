@@ -126,6 +126,7 @@ if test "$PEN_DEBUG" = "y"; then
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
     echo "PEN_CACHE:\"$PEN_CACHE\""
     echo "PEN_MODEL:\"$PEN_MODEL\""
+    echo "PEN_BEST_OF:\"$PEN_BEST_OF\""
     echo "PEN_FLAGS:\"$PEN_FLAGS\""
     echo "PEN_APPROXIMATE_PROMPT_LENGTH:\"$PEN_APPROXIMATE_PROMPT_LENGTH\""
     echo "PEN_MIN_TOKENS:\"$PEN_MIN_TOKENS\""
@@ -162,6 +163,7 @@ test -n "$PEN_PROMPT" || {
 : "${PEN_ENGINE_MAX_TOKENS:="60"}"
 : "${PEN_TEMPERATURE:="0.8"}"
 : "${PEN_TOP_P:="1"}"
+: "${PEN_BEST_OF:="1"}"
 : "${PEN_N_COMPLETIONS:="1"}"
 
 export PEN_USER_AGENT
@@ -183,6 +185,7 @@ export PEN_REPETITION_PENALTY
 export PEN_LENGTH_PENALTY
 export PEN_CACHE
 export PEN_MODE
+export PEN_BEST_OF
 export PEN_ENGINE_MAX_GENERATED_TOKENS
 export PEN_ENGINE_MAX_N_COMPLETIONS
 # Some backends strip whitespace. Recreate it.
