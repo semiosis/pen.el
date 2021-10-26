@@ -224,10 +224,16 @@ case "$sn" in
     ;;
 
     openai-complete.sh|openai-*) {
+        # TODO: Make a new completer
+
+        # - BEST_OF
+        # - TOP_K
+
         "$completer_sn" api \
             completions.create \
             -e "$PEN_MODEL" \
             -t "$PEN_TEMPERATURE" \
+            -P "$PEN_TOP_P" \
             -M "$PEN_MAX_GENERATED_TOKENS" \
             -n "$PEN_N_COMPLETIONS" \
             --stop "$PEN_STOP_SEQUENCE" \
