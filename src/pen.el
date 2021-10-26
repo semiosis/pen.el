@@ -3468,6 +3468,8 @@ May use to generate code from comments."
          ;; (orig-inject-len (string-bytes (cdr (assoc "PEN_INJECT_GEN_START" al))))
          (orig-inject-len (length (cdr (assoc "PEN_INJECT_GEN_START" al))))
          (result (cdr (assoc "PEN_RESULT" al)))
+         ;; This is json encoded
+         (results (cdr (assoc "PEN_RESULTS" al)))
          (collect-from-pos (or (pen-num (cdr (assoc "PEN_COLLECT_FROM_POS" al))) 0))
          (end-pos (or (pen-num (cdr (assoc "PEN_END_POS" al))) 0))
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
