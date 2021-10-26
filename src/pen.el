@@ -3496,11 +3496,28 @@ May use to generate code from comments."
               fun
               (append vals `(:inject-gen-start
                              ,(s-right
+                               ;; Factor in orig-inject-len
                                (- (length result) (- end-pos collect-from-pos))
                                result)))))
 
     ;; This works but I need to also force interactive
     ;; Still buggy. Now it's chopping off the start
+
+    (comment
+     (etv
+      (let ((result
+             (cond
+              ((stringp result) result)
+              (results
+               (fz (pen-vector2list (json-parse-string results)))))))
+        `(,end-pos ,collect-from-pos
+                   :inject-gen-start
+                   ,(tv result)
+                   :force-interactive t
+                   ,(s-right
+                     (- (length result) (- end-pos collect-from-pos))
+                     result)))))
+
     (let ((result
            (cond
             ((stringp result) result)
@@ -3509,9 +3526,9 @@ May use to generate code from comments."
       (apply
        fun
        (append vals `(:inject-gen-start
-                      ,(s-right
-                        (- (length result) (- end-pos collect-from-pos))
-                        result)
+                      ,(tv (s-right
+                            (- (length result) (- end-pos collect-from-pos))
+                            result))
                       :force-interactive t))))))
 
 (comment (s-right (- (length "full text") (length "full")) "full text"))
