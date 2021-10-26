@@ -91,7 +91,7 @@
   (let ((NLG))
     (if (not definition)
         (progn
-          (setq definition (lm-define term t topic))
+          (setq definition (pen-lm-define term t topic))
           (if definition
               (setq NLG t))))
 
