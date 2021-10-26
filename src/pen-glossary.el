@@ -23,8 +23,8 @@
   (if (not definition)
       (setq definition
             (pen-qa
-             -l (lm-define term t (pen-topic t))
-             -L (lm-define term t)
+             -l (pen-lm-define term t (pen-topic t))
+             -L (pen-lm-define term t)
              ;; -d (dictionaryapi-define term)
              ;; -g (google-define term)
              ;; -w (my-wiki-summary term)
