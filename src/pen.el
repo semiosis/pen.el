@@ -3505,7 +3505,7 @@ May use to generate code from comments."
            (cond
             ((stringp result) result)
             (results
-             (pen-vector2list (json-parse-string (json-parse-string results)))))))
+             (fz (pen-vector2list (json-parse-string results)))))))
       (apply
        fun
        (append vals `(:inject-gen-start
