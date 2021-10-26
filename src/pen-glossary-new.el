@@ -927,23 +927,7 @@ Use my position list code. Make it use rosie lang and external software."
                        nil
                        "pen-go-to-glossary-file-for-buffer: "))))))
 
-(defun pen-lm-define (term &optional prepend-lm-warning topic)
-  (interactive)
-  (let* (;; (final-topic
-         ;;  (if topic
-         ;;      (concat " in the context of " topic)
-         ;;    ""))
-         (def
-          ;; (pf-define-word-for-glossary/1 (concat term final-topic))
-          (pf-define-word-for-glossary/2 term topic)))
 
-    (if (sor def)
-        (progn
-          (if prepend-lm-warning
-              (setq def (concat "NLG: " def)))
-          (if (interactive-p)
-              (pen-etv def)
-            def)))))
 
 (define-key global-map (kbd "H-i") 'pen-add-glossaries-to-buffer)
 (define-key global-map (kbd "H-Y I") 'pen-add-glossaries-to-buffer)

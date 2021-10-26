@@ -1412,4 +1412,22 @@ This function accepts any number of ARGUMENTS, but ignores them."
            (s-replace-regexp "^/root/" (format "/home/%s/" user) (pen-tmp-preview "lm-complete-stdout"))))
       (dired dir))))
 
+(defun pen-lm-define (term &optional prepend-lm-warning topic)
+  (interactive)
+  (let* (;; (final-topic
+         ;;  (if topic
+         ;;      (concat " in the context of " topic)
+         ;;    ""))
+         (def
+          ;; (pf-define-word-for-glossary/1 (concat term final-topic))
+          (pf-define-word-for-glossary/2 term topic)))
+
+    (if (sor def)
+        (progn
+          (if prepend-lm-warning
+              (setq def (concat "NLG: " def)))
+          (if (interactive-p)
+              (pen-etv def)
+            def)))))
+
 (provide 'pen-support)
