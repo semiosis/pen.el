@@ -241,7 +241,9 @@ case "$sn" in
         #     --stop "$PEN_STOP_SEQUENCE" \
         #     -p "$PEN_PROMPT" > "$tf_response"
 
-        pen-openai-complete > "$tf_response"
+        # pen-openai-complete > "$tf_response"
+
+        "$completer_sn" > "$tf_response"
     }
     ;;
 
