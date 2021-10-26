@@ -1370,6 +1370,12 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'top-k)
                              ,top-k))))
 
+                  (final-top-k
+                   (pen-hard-bound
+                    final-top-k
+                    1
+                    final-n-completions))
+
                   (final-action
                    (expand-template
                     (str (or (pen-var-value-maybe 'action)
