@@ -51,6 +51,7 @@
 (package-install 'sx)
 (package-install 'pcre2el)
 (package-install 'helpful)
+(package-install 'calibredb)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -93,6 +94,7 @@
 (require 'pcre2el)
 (require 'cua-base)
 (require 'helpful)
+(require 'calibredb)
 
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
       (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))

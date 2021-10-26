@@ -136,19 +136,46 @@
   (button-at-point))
 (defalias 'glossary-button-at-point-p 'glossary-button-at-point)
 
+(defun pen-equals (a b)
+  (if (stringp b)
+      (string-equal a b)
+    (eq a b)))
+(defalias 'my-eq 'pen-equals)
+
+(defun pen-error-if-equals (thing badval)
+  "error if it equals something, otherwise pass it on"
+  (if (pen-equals thing badval)
+      (error "pen-error-if-equals received bad value")
+    thing))
+
+(defun pen-calibre-copy-org-link (&optional cand)
+  (interactive (list (calibredb-find-candidate-at-point)))
+
+  (if (not cand)
+      (setq cand (calibredb-find-candidate-at-point)))
+  (let* ((path (calibredb-getattr (car cand) :file-path))
+         (title (calibredb-getattr (car cand) :book-title))
+         (link (concat "[[calibre:" title "]]")))
+    (if (interactive-p)
+        (if (>= (prefix-numeric-value current-prefix-arg) 4)
+            (xc path)
+          (xc link))
+      link)))
+
 ;; j:my-copy-link-at-point
 (defun pen-copy-link-at-point ()
   "Copy the link with the highest priority at the point."
   (interactive)
   (xc
    (try
-    ;; (progn (error-if-equals (link-hint--action-at-point :copy) "There is no link supporting the :copy action at the point.")
+    ;; (progn (pen-error-if-equals (link-hint--action-at-point :copy) "There is no link supporting the :copy action at the point.")
     ;;        (e/xc))
-    (error-if-equals (pen-button-get-link (glossary-button-at-point)) nil)
-    (error-if-equals (pen-clean-up-copy-link (plist-get (link-hint--get-link-at-point) :args)) nil)
-    (error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
-    (error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'url)))) "")
-    (error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'line)))) "")
+    (pen-error-if-equals (calibre-copy-org-link) "[[calibre:]]")
+    (pen-error-if-equals (pen-button-get-link (glossary-button-at-point)) nil)
+    (pen-error-if-equals (pen-clean-up-copy-link (plist-get (link-hint--get-link-at-point) :args)) nil)
+    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
+    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'url)))) "")
+    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'line)))) "")
     "")))
 
 (defun get-path-for-thing (&optional soft no-create-path for-clipboard semantic-path)
