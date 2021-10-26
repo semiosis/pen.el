@@ -1630,6 +1630,8 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_TEMPERATURE" . ,final-temperature)
                             ("PEN_MODE" . ,final-mode)
                             ("PEN_STOP_SEQUENCE" . ,(pen-encode-string final-stop-sequence t))
+                            ;; (json-encode-list (mapcar 'pen-encode-string '("hello my ;\"" "friend")))
+                            ("PEN_STOP_SEQUENCES" . ,(json-encode-list (mapcar 'pen-encode-string final-stop-sequences t)))
                             ("PEN_TOP_P" . ,final-top-p)
                             ("PEN_TOP_K" . ,final-top-k)
                             ("PEN_FLAGS" . ,final-flags)
