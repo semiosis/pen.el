@@ -1875,6 +1875,7 @@ Reconstruct the entire yaml-ht for a different language."
                                 results)
                              results))
 
+                  ;; This is where 'result' is introduced
                   (result
                    (if final-analyse
                        ;; I need to do more work on this
@@ -1900,7 +1901,8 @@ Reconstruct the entire yaml-ht for a different language."
 
              ;; TODO Obtain the function name too
              (setq pen-last-prompt-data
-                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" result))))
+                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" result)))
+                   (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULTS" (json-encode-list results)))))
 
              ;; Now save this to a list somewhere
              (pen-append-to-file
