@@ -64,10 +64,12 @@ cs = openai.Completion.create(
      temperature=float(PEN_TEMPERATURE))['choices']
 
 if len(cs) == 1:
+    print(PEN_PROMPT, end = ''))
     print(cs[0]['text'])
 else:
     for x in range(len(cs)):
         print(f"===== Completion %i =====" % x)
+        print(PEN_PROMPT, end = ''))
         print(cs[x]['text'])
 
 exit(0)

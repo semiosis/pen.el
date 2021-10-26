@@ -231,19 +231,19 @@ case "$sn" in
         # - PRESENCE_PENALTY
         # - Utilise all stop sequences
 
-        "$completer_sn" api \
-            completions.create \
-            -e "$PEN_MODEL" \
-            -t "$PEN_TEMPERATURE" \
-            -P "$PEN_TOP_P" \
-            -M "$PEN_MAX_GENERATED_TOKENS" \
-            -n "$PEN_N_COMPLETIONS" \
-            --stop "$PEN_STOP_SEQUENCE" \
-            -p "$PEN_PROMPT" > "$tf_response"
+        # "$completer_sn" api \
+        #     completions.create \
+        #     -e "$PEN_MODEL" \
+        #     -t "$PEN_TEMPERATURE" \
+        #     -P "$PEN_TOP_P" \
+        #     -M "$PEN_MAX_GENERATED_TOKENS" \
+        #     -n "$PEN_N_COMPLETIONS" \
+        #     --stop "$PEN_STOP_SEQUENCE" \
+        #     -p "$PEN_PROMPT" > "$tf_response"
 
         # pen-openai-complete > "$tf_response"
 
-        # "$completer_sn" > "$tf_response"
+        "$completer_sn"  > "$tf_response"
     }
     ;;
 
