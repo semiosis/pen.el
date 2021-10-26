@@ -148,7 +148,7 @@
       (error "pen-error-if-equals received bad value")
     thing))
 
-;; I want a universal/semantic path function for Pen.el, that's why these are important
+;; I want a universal semantic path function for Pen.el, that's why these are important
 (defun pen-calibre-copy-org-link (&optional cand)
   (interactive (list (calibredb-find-candidate-at-point)))
 
