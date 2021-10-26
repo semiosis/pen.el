@@ -148,6 +148,8 @@
       (error "pen-error-if-equals received bad value")
     thing))
 
+;; I want a semantic path function
+
 (defun pen-calibre-copy-org-link (&optional cand)
   (interactive (list (calibredb-find-candidate-at-point)))
 
