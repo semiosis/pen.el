@@ -100,6 +100,14 @@ case "$PEN_LM_COMMAND" in
     }
     ;;
 
+    alephalpha-complete.sh) {
+        if ! test -s $HOME/.pen/alephalpha_api_key; then
+            PEN_LM_COMMAND=alephalpha-complete.sh
+            export PEN_MODEL=EUTranMultimodal
+        fi
+    }
+    ;;
+
     aix-complete.sh) {
         if ! test -s $HOME/.pen/aix_api_key; then
             PEN_LM_COMMAND=openai-complete.sh
