@@ -18,6 +18,15 @@ case "$sn" in
     }
     ;;
 
+    alephalpha-complete.sh) {
+        completer_sn=pen-alephalpha
+        : "${AIX_API_KEY:="$PEN_LM_KEY"}"
+        export AIX_API_KEY
+
+        : "${PEN_MODEL:="EUTranMultimodal"}"
+    }
+    ;;
+
     aix-complete.sh) {
         completer_sn=pen-aix
         : "${AIX_API_KEY:="$PEN_LM_KEY"}"
