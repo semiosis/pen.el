@@ -1,1 +1,1 @@
-lm-complete
+lm-complete-generic

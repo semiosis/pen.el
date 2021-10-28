@@ -102,7 +102,7 @@ case "$PEN_LM_COMMAND" in
 
     alephalpha-complete.sh) {
         if ! test -s $HOME/.pen/alephalpha_api_key; then
-            PEN_LM_COMMAND=alephalpha-complete.sh
+            PEN_LM_COMMAND=openai-complete.sh
             export PEN_MODEL=EUTranMultimodal
         fi
     }
