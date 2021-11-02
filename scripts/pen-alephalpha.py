@@ -31,10 +31,6 @@ client = AlephAlphaClient(
     token=ALEPHALPHA_API_KEY
 )
 
-# You need to choose a model with multimodal capabilities for this example.
-# url = "https://cdn-images-1.medium.com/max/1200/1*HunNdlTmoPj8EKpl-jqvBA.png"
-path = "/home/shane/blog/posts/148658560_2839287366296108_857180560792297037_n.jpg"
-
 payloads = None
 
 # If PEN_PAYLOADS is a dict then iterate through the dict and build a list.
@@ -62,4 +58,13 @@ result = client.complete(PEN_MODEL,
                          presence_penalty=float(PEN_PRESENCE_PENALTY),
                          frequency_penalty=float(PEN_FREQUENCY_PENALTY))
 
-print(result["completions"][0]["completion"])
+cs = result["completions"]
+
+if len(cs) == 1:
+    print(PEN_PROMPT, end = '')
+    print(cs[0]['completion'])
+else:
+    for x in range(len(cs)):
+        print(f"===== Completion %i =====" % x)
+        print(PEN_PROMPT, end = '')
+        print(cs[x]['completion'])
