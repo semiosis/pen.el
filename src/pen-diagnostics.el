@@ -45,6 +45,8 @@
                      :openai-last-output-fp (f-join penconfdir "temp" "openai-temp.txt")
                      :hf-last-output (pen-tmp-preview "hf-temp")
                      :hf-last-output-fp (f-join penconfdir "temp" "hf-temp.txt")
+                     :alephalpha-last-output (pen-tmp-preview "alephalpha-temp")
+                     :alephalpha-last-output-fp (f-join penconfdir "temp" "alephalpha-temp.txt")
                      :nlpcloud-last-output (pen-tmp-preview "nlpcloud-temp")
                      :nlpcloud-last-output-fp (f-join penconfdir "temp" "nlpcloud-temp.txt")
                      :aix-last-output (pen-tmp-preview "aix-temp")

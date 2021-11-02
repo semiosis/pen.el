@@ -217,6 +217,11 @@ case "$sn" in
     }
     ;;
 
+    alephalpha-complete.sh) {
+        "$completer_sn" > "$tf_response"
+    }
+    ;;
+
     aix-complete.sh) {
         "$completer_sn" > "$tf_response"
     }
