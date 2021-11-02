@@ -11,7 +11,8 @@ prompting tasks. That includes any NLP task on
 text or code, describing images (=AlephAlpha=)
 and imagining images (=DALL-E=). The payload
 system allows you to send media to multi-modal
-models.
+models. You may compose prompting functions
+for any model or API.
 
 =Pen.el= also facilitates the creation,
 development, discovery and usage of prompts.
