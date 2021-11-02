@@ -1,0 +1,6 @@
+* AlephAlpha
+** Changing the endpoint
+If you need to change the endpoint, you may do it here:
+
+http://github.com/semiosis/engines/blob/master/engines/alephalpha.engine
+
