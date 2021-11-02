@@ -4,7 +4,10 @@
 generating functions from prompts that map emacs's corners
 loosely onto LMs. These functions can be used
 interactively or non-interactively and in a
-variety of configurable ways.
+variety of configurable ways. Using =Pen.el=, you
+can centralise perform any NLP task on text or code,
+describe images (AlephAlpha) and imagine
+imagine (DALL-E).
 
 =Pen.el= also facilitates the creation,
 development, discovery and usage of prompts.
