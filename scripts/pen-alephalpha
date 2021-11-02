@@ -1,0 +1,43 @@
+#!/bin/bash
+
+: "${alephalpha_API_KEY:="$PEN_LM_KEY"}"
+
+if test -s $HOME/.pen/alephalpha_api_key; then
+    : "${alephalpha_API_KEY:="$(cat $HOME/.pen/alephalpha_api_key)"}"
+fi
+
+test -n "$alephalpha_API_KEY" || {
+    echo "alephalpha_API_KEY not given to script"
+    exit 1
+}
+
+: "${PEN_REPETITION_PENALTY:="1.0"}"
+
+export alephalpha_API_KEY
+
+if test "$PEN_N_COMPLETIONS" -gt 4; then
+    PEN_N_COMPLETIONS=4
+fi
+
+# JSON
+export PEN_PROMPT
+export PEN_PAYLOADS
+export PEN_MODEL
+export PEN_MAX_TOKENS
+export PEN_TEMPERATURE
+export PEN_REPETITION_PENALTY
+export PEN_TOP_P
+export PEN_STOP_SEQUENCE
+export PEN_N_COMPLETIONS
+export PEN_MODE
+
+: "${PEN_N_COMPLETIONS:="4"}"
+
+sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
+
+# pen-alephalpha.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
+
+{
+# printf -- "%s" "$PEN_PROMPT"
+pen-alephalpha.py "$@" | pen-log alephalpha-temp | sed -z "s~${sedstop}$~~"
+} | pen-log alephalpha
