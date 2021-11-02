@@ -1006,9 +1006,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'expressions)
                        ',expressions))
 
-                  ;; These are media payloads for multi-modal prompts
+                  ;; These are media payloads for multi-modal prompts.
                   ;; They are only URLs and file paths.
                   ;; The final prompting script deals with them.
+                  ;; The entirety of this is sent as json in an environment variable.
                   (final-payloads
                    (or (pen-var-value-maybe 'payloads)
                        ',payloads))
