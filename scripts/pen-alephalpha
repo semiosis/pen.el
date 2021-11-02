@@ -1,19 +1,19 @@
 #!/bin/bash
 
-: "${alephalpha_API_KEY:="$PEN_LM_KEY"}"
+: "${ALEPHALPHA_API_KEY:="$PEN_LM_KEY"}"
 
 if test -s $HOME/.pen/alephalpha_api_key; then
-    : "${alephalpha_API_KEY:="$(cat $HOME/.pen/alephalpha_api_key)"}"
+    : "${ALEPHALPHA_API_KEY:="$(cat $HOME/.pen/alephalpha_api_key)"}"
 fi
 
-test -n "$alephalpha_API_KEY" || {
-    echo "alephalpha_API_KEY not given to script"
+test -n "$ALEPHALPHA_API_KEY" || {
+    echo "ALEPHALPHA_API_KEY not given to script"
     exit 1
 }
 
 : "${PEN_REPETITION_PENALTY:="1.0"}"
 
-export alephalpha_API_KEY
+export ALEPHALPHA_API_KEY
 
 if test "$PEN_N_COMPLETIONS" -gt 4; then
     PEN_N_COMPLETIONS=4

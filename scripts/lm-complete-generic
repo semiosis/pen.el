@@ -133,6 +133,7 @@ nlpcloud_results_split() {
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_USER_AGENT:\"$PEN_USER_AGENT\""
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
+    echo "PEN_PAYLOADS:\"$PEN_PAYLOADS\""
     echo "PEN_CACHE:\"$PEN_CACHE\""
     echo "PEN_MODEL:\"$PEN_MODEL\""
     echo "PEN_FLAGS:\"$PEN_FLAGS\""
@@ -161,10 +162,11 @@ fi
 : "${PEN_MODEL:="davinci"}"
 : "${PEN_MODEL:="curie"}"
 
-test -n "$PEN_PROMPT" || {
-    echo No prompt given
-    exit 1
-}
+# No prompt should be allowed
+# test -n "$PEN_PROMPT" || {
+#     echo No prompt given
+#     exit 1
+# }
 
 : "${PEN_MIN_TOKENS:="20"}"
 : "${PEN_MAX_TOKENS:="60"}"
@@ -178,6 +180,8 @@ test -n "$PEN_PROMPT" || {
 export PEN_USER_AGENT
 export PEN_LM_KEY
 export PEN_MODEL
+export PEN_PROMPT
+export PEN_PAYLOADS
 export PEN_FLAGS
 export PEN_MIN_TOKENS
 export PEN_MAX_TOKENS
