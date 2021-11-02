@@ -10,6 +10,12 @@ ALEPHALPHA_API_KEY = os.environ.get("ALEPHALPHA_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL") or "EUTranMultimodal"
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
 PEN_PAYLOADS = os.environ.get("PEN_PAYLOADS")
+PEN_PRESENCE_PENALTY = os.environ.get("PEN_PRESENCE_PENALTY") or "0"
+PEN_FREQUENCY_PENALTY = os.environ.get("PEN_FREQUENCY_PENALTY") or "0"
+PEN_MAX_TOKENS = os.environ.get("PEN_MAX_TOKENS") or "30"
+PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE") or "0.1"
+PEN_TOP_K = os.environ.get("PEN_TOP_K") or "0"
+PEN_TOP_P = os.environ.get("PEN_TOP_P") or "0.0"
 
 if PEN_PAYLOADS:
     PEN_PAYLOADS = json.loads(PEN_PAYLOADS)
@@ -49,7 +55,11 @@ else:
 
 result = client.complete(PEN_MODEL,
                          prompt=prompt,
-                         temperature=os.environ.get("PEN_TEMPERATURE") and float(os.environ.get("PEN_TEMPERATURE")),
-                         maximum_tokens=30)
+                         top_k=int(PEN_TOP_K),
+                         top_p=float(PEN_TOP_P),
+                         maximum_tokens=int(PEN_MAX_TOKENS),
+                         temperature=float(PEN_TEMPERATURE),
+                         presence_penalty=float(PEN_PRESENCE_PENALTY),
+                         frequency_penalty=float(PEN_FREQUENCY_PENALTY))
 
 print(result["completions"][0]["completion"])

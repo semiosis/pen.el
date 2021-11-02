@@ -51,16 +51,12 @@ if PEN_MODE == "summarize":
             {
                 "inputs": PEN_PROMPT,
                 "parameters": {
-                    "top_k": os.environ.get("PEN_TOP_K")
-                    and int(os.environ.get("PEN_TOP_K")),
-                    "top_p": os.environ.get("PEN_TOP_P")
-                    and float(os.environ.get("PEN_TOP_P")),
-                    "temperature": os.environ.get("PEN_TEMPERATURE")
-                    and float(os.environ.get("PEN_TEMPERATURE")),
+                    "top_k": os.environ.get("PEN_TOP_K") and int(os.environ.get("PEN_TOP_K")),
+                    "top_p": os.environ.get("PEN_TOP_P") and float(os.environ.get("PEN_TOP_P")),
+                    "temperature": os.environ.get("PEN_TEMPERATURE") and float(os.environ.get("PEN_TEMPERATURE")),
                     "repetition_penalty": os.environ.get("PEN_REPETITION_PENALTY")
                     and float(os.environ.get("PEN_REPETITION_PENALTY")),
-                    # "max_new_tokens": os.environ.get("PEN_MAX_TOKENS")
-                    # and int(os.environ.get("PEN_MAX_TOKENS")),
+                    # "max_new_tokens": os.environ.get("PEN_MAX_TOKENS") and int(os.environ.get("PEN_MAX_TOKENS")),
                     "num_return_sequences": os.environ.get("PEN_N_COMPLETIONS")
                     and int(os.environ.get("PEN_N_COMPLETIONS")),
                     # "return_full_text": False,
@@ -91,8 +87,7 @@ else:
                     and float(os.environ.get("PEN_TEMPERATURE")),
                     "repetition_penalty": os.environ.get("PEN_REPETITION_PENALTY")
                     and float(os.environ.get("PEN_REPETITION_PENALTY")),
-                    "max_new_tokens": os.environ.get("PEN_MAX_TOKENS")
-                    and int(os.environ.get("PEN_MAX_TOKENS")),
+                    "max_new_tokens": os.environ.get("PEN_MAX_TOKENS") and int(os.environ.get("PEN_MAX_TOKENS")),
                     "num_return_sequences": os.environ.get("PEN_N_COMPLETIONS")
                     and int(os.environ.get("PEN_N_COMPLETIONS")),
                     "return_full_text": False,
