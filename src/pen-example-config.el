@@ -356,6 +356,8 @@
   (pen-dk-easy "p s" 'pf-explain-some-code-with-steps/1)
 
   (pen-dk-easy "e t" 'pf-explain-some-code-with-steps/1)
+  (pen-dk-easy "e b" 'pf-explain-a-file/4)
+  (pen-dk-easy "e y" 'pf-explain-why-this-code-is-needed/2)
 
   (pen-dk-easy "t" nil)
   (pen-dk-easy "t t" 'pen-transform)
