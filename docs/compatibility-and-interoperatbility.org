@@ -3,6 +3,7 @@
 - [X] Linux/Ubuntu/Debian
   - Tested on Ubuntu 20.04 and Debian 10
 ** Language models and APIs
+- [X] AlephAlpha (=EUTranMM=)
 - [X] OpenAI API (=GPT-3=)
   - https://beta.openai.com/
 - [X] AI21 (=j1-jumbo=, etc.)
