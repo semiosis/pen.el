@@ -27,12 +27,12 @@ It's completely free, libre and open-source.
   mkdir -p ~/.pen
 
   # Put in your keys, or do not, it's up to you!
-  echo "sk-<openai key here>" > ~/.pen/openai_api_key   # https://openai.com/
-  echo "<ai21 key here>" > ~/.pen/ai21_api_key          # https://www.ai21.com/
-  echo "<aix key here>" > ~/.pen/aix_api_key            # https://aixsolutionsgroup.com/
-  echo "<hf key here>" > ~/.pen/hf_api_key              # https://huggingface.co/
-  echo "<nlpcloud key here>" > ~/.pen/nlpcloud_api_key  # https://nlpcloud.io/
-  echo "<alephalpha key here>" > ~/.pen/alephalpha_api_key  # https://alephalpha.io/
+  echo "sk-<openai key here>" > ~/.pen/openai_api_key       # https://openai.com/
+  echo "<ai21 key here>" > ~/.pen/ai21_api_key              # https://www.ai21.com/
+  echo "<aix key here>" > ~/.pen/aix_api_key                # https://aixsolutionsgroup.com/
+  echo "<hf key here>" > ~/.pen/hf_api_key                  # https://huggingface.co/
+  echo "<nlpcloud key here>" > ~/.pen/nlpcloud_api_key      # https://nlpcloud.io/
+  echo "<alephalpha key here>" > ~/.pen/alephalpha_api_key  # https://aleph-alpha.de/
 
   # Add the scripts to the PATH
   echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
