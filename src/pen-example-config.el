@@ -321,8 +321,7 @@
   (pen-dk-easy "c n" 'pen-select-function-from-nl)
   (pen-dk-easy "c p" 'pf-imagine-a-project-template/1)
   (pen-dk-easy "c t" 'pen-transform-code)
-  ;; (pen-dk-easy "e" nil)
-  (pen-dk-easy "e" 'pen-customize)
+  (pen-dk-easy "e" nil)
   (pen-dk-easy "f" nil)
   (pen-dk-easy "g" nil)
   (pen-dk-easy "G" 'pen-generate-prompt-functions)
@@ -331,6 +330,9 @@
   (pen-dk-easy "g p" 'pf-generate-perl-command/1)
   (pen-dk-easy "g b" 'pf-write-a-blog-post/2)
   (pen-dk-easy "g e" 'pf-get-an-example-of-the-usage-of-a-function/2)
+
+  (pen-dk-easy "e f" 'pf-get-an-example-of-the-usage-of-a-function/2)
+
   (pen-dk-easy "h" nil)
   (pen-dk-easy "h f /" 'pen-select-function-from-nl)
   (pen-dk-easy "h f i" 'pf-given-a-function-name-show-the-import/2)
@@ -352,6 +354,9 @@
   (pen-dk-easy "p h" 'pf-explain-haskell-code/1)
   (pen-dk-easy "p s" 'pf-explain-solidity-code/1)
   (pen-dk-easy "p s" 'pf-explain-some-code-with-steps/1)
+
+  (pen-dk-easy "e t" 'pf-explain-some-code-with-steps/1)
+
   (pen-dk-easy "t" nil)
   (pen-dk-easy "t t" 'pen-transform)
   (pen-dk-easy "t c" 'pen-transform-code)
@@ -368,6 +373,7 @@
 
   ;; Overrides
   (pen-define-key pen-map (kbd "H-TAB m") 'pen-complete-medium)
+  (pen-define-key pen-map (kbd "H-TAB e") 'pen-customize)
   (pen-define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
   (pen-define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
   (pen-define-key pen-map (kbd "H-TAB y") 'pen-run-analyser-function)
