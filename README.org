@@ -1,13 +1,17 @@
 * =Pen.el= (_Prompt engineering_ in emacs)
-=Pen.el= integrates LMs (language models) such as OpenAI's
+=Pen.el= integrates LMs (LMs) such as OpenAI's
 =GPT-3= or EleutherAI's =GPT-J= into emacs by
-generating functions from prompts that map emacs's corners
-loosely onto LMs. These functions can be used
-interactively or non-interactively and in a
-variety of configurable ways. Using =Pen.el=, you
-can centralise perform any NLP task on text or code,
-describe images (AlephAlpha) and imagine
-imagine (DALL-E).
+generating functions from prompts that map
+emacs's corners loosely onto LMs. These
+functions can be used interactively or non-interactively
+ and in a variety of configurable ways.
+
+Using =Pen.el=, you can centralise all of your
+prompting tasks. That includes any NLP task on
+text or code, describing images (AlephAlpha)
+and imagining imagine (DALL-E). The payload
+system allows you to send media to multi-modal
+models.
 
 =Pen.el= also facilitates the creation,
 development, discovery and usage of prompts.
