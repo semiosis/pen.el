@@ -179,6 +179,7 @@ fi
 
 export PEN_USER_AGENT
 export PEN_LM_KEY
+export PEN_API_ENDPOINT
 export PEN_MODEL
 export PEN_PROMPT
 export PEN_PAYLOADS
