@@ -6,7 +6,6 @@ import os
 
 ALEPHALPHA_API_KEY = os.environ.get("ALEPHALPHA_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL") or "EUTranMultimodal"
-# model = "EUTranLarge128kAlpha001DataAlpha1"
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
 PEN_API_ENDPOINT = os.environ.get("PEN_API_ENDPOINT") or "https://api.aleph-alpha.de"
 PEN_PAYLOADS = os.environ.get("PEN_PAYLOADS")
