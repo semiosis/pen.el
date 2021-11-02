@@ -1,4 +1,8 @@
 * =Pen.el= (_Prompt engineering_ in emacs)
+/The pen of imagination - |:ϝ∷¦ϝ./
+
+[[./docs/images/the_pen_of_imagination.png]]
+
 =Pen.el= integrates LMs (language models) such as OpenAI's
 =GPT-3= or EleutherAI's =GPT-J= into emacs by
 generating functions from prompts that map emacs's corners
@@ -46,10 +50,6 @@ It's completely free, libre and open-source.
   # Run pen
   pen
 #+END_SRC
-
-/The pen of imagination - |:ϝ∷¦ϝ./
-
-[[./docs/images/the_pen_of_imagination.png]]
 
 ** Information
 - Supported language models :: - [[./docs/compatibility-and-interoperatbility.org]]
