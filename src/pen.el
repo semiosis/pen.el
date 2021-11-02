@@ -145,6 +145,8 @@ Reconstruct the entire yaml-ht for a different language."
     (let* ((fname (fz pen-prompt-functions nil nil "pen translate prompt: "))
            (yaml-ht (ht-get pen-prompts fname))
            (prompt (ht-get yaml-ht "prompt"))
+           (subprompts (ht-get yaml-ht "subprompts"))
+           (payloads (ht-get yaml-ht "payloads"))
            (title (ht-get yaml-ht "title"))
            (task (ht-get yaml-ht "task"))
            (doc (ht-get yaml-ht "doc"))
@@ -1003,6 +1005,13 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-expressions
                    (or (pen-var-value-maybe 'expressions)
                        ',expressions))
+
+                  ;; These are media payloads for multi-modal prompts
+                  ;; They are only URLs and file paths.
+                  ;; The final prompting script deals with them.
+                  (final-payloads
+                   (or (pen-var-value-maybe 'payloads)
+                       ',payloads))
 
                   ;; pipelines are available to expressions as <pipeline> expressions
                   ;; pipelines are also available the 'expand-template' in this way <pipeline:var>
@@ -2350,6 +2359,7 @@ Function names are prefixed with pf- for easy searching"
                       (flags (ht-get yaml-ht "flags"))
                       (evaluator (ht-get yaml-ht "evaluator"))
                       (subprompts (ht-get yaml-ht "subprompts"))
+                      (payloads (ht-get yaml-ht "payloads"))
 
                       ;; info and hover are related
                       (info (pen-yaml-test yaml-ht "info"))
@@ -2710,6 +2720,7 @@ Function names are prefixed with pf- for easy searching"
                               (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))
                               (if validator (concat "\nvalidator:\n" (pen-list-to-orglist (list validator))))
                               (if subprompts (concat "\nsubprompts:\n" (pps subprompts)))
+                              (if payloads (concat "\nprompts:\n" (pps payloads)))
                               (if prompt (concat "\nprompt:\n" prompt))))
                             "\n"))
 
@@ -3354,14 +3365,16 @@ May use to generate code from comments."
   (interactive)
   (let* (
          ;; (fp "/home/shane/source/git/spacemacs/prompts/prompts/test-imaginary-equivalence-2.prompt")
-         (fp "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/correct-english-spelling-and-grammar-1.prompt")
+         ;; (fp "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/correct-english-spelling-and-grammar-1.prompt")
+         (fp "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/describe-image.prompt")
          (yaml-ht (yamlmod-read-file fp))
          ;; (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
          ;; (var (ht-get yaml-ht "n-completions"))
          ;; (var (pen--htlist-to-alist (ht-get yaml-ht "pipelines")))
-         (var (pen-yaml-test yaml-ht "filter"))
-         ;; (var (ht-get yaml-ht "filter")))
-    (etv (pps var)))))
+         (var (ht-get yaml-ht "payloads")))
+    ;; (var (pen-yaml-test yaml-ht "filter"))
+    ;; (var (ht-get yaml-ht "filter")))
+    (etv (pps var))))
 
 (defun pen-load-vars ()
   (interactive)
