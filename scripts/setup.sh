@@ -193,6 +193,13 @@ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.linux-amd64.tar.gz
 )
 
 (
+cd
+git clone "https://github.com/Aleph-Alpha/aleph-alpha-client"
+git checkout mm
+python3 setup.py build install
+)
+
+(
 export PATH=$PATH:/usr/local/go/bin
 go get github.com/mattn/efm-langserver
 go get mvdan.cc/xurls/cmd/xurls
