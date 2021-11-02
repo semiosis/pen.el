@@ -146,7 +146,7 @@ Reconstruct the entire yaml-ht for a different language."
            (yaml-ht (ht-get pen-prompts fname))
            (prompt (ht-get yaml-ht "prompt"))
            (subprompts (ht-get yaml-ht "subprompts"))
-           (payloads (ht-get yaml-ht "payloads"))
+           (payloads (pen--htlist-to-alist (ht-get yaml-ht "payloads")))
            (title (ht-get yaml-ht "title"))
            (task (ht-get yaml-ht "task"))
            (doc (ht-get yaml-ht "doc"))
@@ -965,6 +965,10 @@ Reconstruct the entire yaml-ht for a different language."
                    (or (pen-var-value-maybe 'no-uniq-results)
                        ,no-uniq-results))
 
+                  (final-api-endpoint
+                   (or (pen-var-value-maybe 'api-endpoint)
+                       ,api-endpoint))
+
                   (final-expand-jinja
                    (or (pen-var-value-maybe 'expand-jinja)
                        ,expand-jinja))
@@ -1013,6 +1017,21 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-payloads
                    (or (pen-var-value-maybe 'payloads)
                        ',payloads))
+
+                  (final-payloads
+                   (cl-loop for pl in final-payloads
+                            collect
+                            (let ((v (if (re-match-p "^(" (cdr pl))
+                                         (eval-string (cdr pl))
+                                       pl)))
+                              (cons (car pl) v))))
+
+                  (final-payloads
+                   (or
+                    (if final-payloads
+                        (json--encode-alist final-payloads)
+                      nil)
+                    ""))
 
                   ;; pipelines are available to expressions as <pipeline> expressions
                   ;; pipelines are also available the 'expand-template' in this way <pipeline:var>
@@ -1635,6 +1654,8 @@ Reconstruct the entire yaml-ht for a different language."
                             ;; ("PEN_PROMPT" . ,(pen-encode-string final-prompt))
                             ("PEN_LM_COMMAND" . ,final-lm-command)
                             ("PEN_MODEL" . ,final-model)
+                            ("PEN_API_ENDPOINT" . ,final-api-endpoint)
+                            ("PEN_PAYLOADS" . ,final-payloads)
                             ("PEN_APPROXIMATE_PROMPT_LENGTH" . ,pen-approximate-prompt-token-length)
                             ("PEN_ENGINE_MIN_TOKENS" . ,final-engine-min-tokens)
                             ("PEN_ENGINE_MAX_TOKENS" . ,final-engine-max-tokens)
@@ -2359,8 +2380,9 @@ Function names are prefixed with pf- for easy searching"
                       (mode (ht-get yaml-ht "mode"))
                       (flags (ht-get yaml-ht "flags"))
                       (evaluator (ht-get yaml-ht "evaluator"))
+                      (api-endpoint (ht-get yaml-ht "api-endpoint"))
                       (subprompts (ht-get yaml-ht "subprompts"))
-                      (payloads (ht-get yaml-ht "payloads"))
+                      (payloads (pen--htlist-to-alist (ht-get yaml-ht "payloads")))
 
                       ;; info and hover are related
                       (info (pen-yaml-test yaml-ht "info"))
@@ -3372,9 +3394,17 @@ May use to generate code from comments."
          ;; (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
          ;; (var (ht-get yaml-ht "n-completions"))
          ;; (var (pen--htlist-to-alist (ht-get yaml-ht "pipelines")))
-         (var (ht-get yaml-ht "payloads")))
+         (var (pen--htlist-to-alist (ht-get yaml-ht "payloads")))
+         (var
+          (cl-loop for pl in var
+                   collect
+                   (let ((v (if (re-match-p "^(" (cdr pl))
+                                (eval-string (cdr pl))
+                              pl)))
+                     (cons (car pl) v)))))
     ;; (var (pen-yaml-test yaml-ht "filter"))
     ;; (var (ht-get yaml-ht "filter")))
+    ;; (etv (json--encode-alist var))
     (etv (pps var))))
 
 (defun pen-load-vars ()
