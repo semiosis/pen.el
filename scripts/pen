@@ -584,6 +584,8 @@ if ! test "$show_banner" = n; then
     echo
     printf -- "%s\n" "$info_txt"
     echo
+    looking-glass-logo.sh
+    echo
 fi
 } 1>&2
 
