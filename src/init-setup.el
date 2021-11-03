@@ -97,6 +97,8 @@
 (require 'helpful)
 (require 'calibredb)
 
+(require 'pen-custom)
+
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
       (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))
       (pendir (f-join user-emacs-directory "pen.el"))
