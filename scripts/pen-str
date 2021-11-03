@@ -326,7 +326,7 @@ case "$f" in
         sed -z 's/< *PERSON *>/ a person /g' |
             sed -z 's/PERSON>/ a person /g' |
             sed -z 's/ \+/ /g' |
-            sed -z -e 's/< / /g' -e 's/ >/ /g'
+            sed -z -e 's/< / /g' -e 's/ >/ /g' -e "s/ 's/'s/g"
     }
     ;;
 
