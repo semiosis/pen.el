@@ -883,10 +883,14 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-flags
                    (if final-flags
-                       (mapconcat
-                        (lambda (s) (concat "<" s ">"))
-                        (pen-vector2list final-flags)
-                        " ")))
+                       ;; If this is broken then stuff it
+                       (ignore-errors
+                         (mapconcat
+                          (lambda (s) (concat "<" s ">"))
+                          (-filter
+                           'identity
+                           (pen-vector2list final-flags))
+                          " "))))
 
                   ;; hover, info and new-document are related
                   (final-info

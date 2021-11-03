@@ -172,9 +172,10 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
   (pen-sn (concat "cat " (pen-q path) " | awk 1" " 2>/dev/null") nil dir))
 (defun e/cat (path)
   "Return the contents of FILENAME."
-  (with-temp-buffer
-    (insert-file-contents path)
-    (buffer-string)))
+  (if (sor path)
+      (with-temp-buffer
+        (insert-file-contents path)
+        (buffer-string))))
 (defun s/cat (path &optional dir)
   "cat out a file"
   (setq path (pen-umn path))
