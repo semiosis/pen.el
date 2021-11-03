@@ -1175,6 +1175,7 @@ Reconstruct the entire yaml-ht for a different language."
                      (pen-log ",n-completions" (pen-var-value-maybe ,n-completions))
                      (expand-template
                       (str (or
+                            (pen-var-value-maybe 'force-n-completions)
                             ;; For some reason, the override is set to 5. Debug this
                             (pen-var-value-maybe 'n-completions)
                             ,n-completions)))))
