@@ -808,8 +808,7 @@ Reconstruct the entire yaml-ht for a different language."
                            ;; I also want to encode newlines into <pen-newline> and <pen-dnl>
                            ;; But only for delim
                            (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t final-pipelines)
-                           (pen-
-                            expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
+                           (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
                            (pen-expand-template-keyvals it var-keyvals-slugged t final-pipelines)
                            (pen-expand-template-keyvals it var-keyvals t final-pipelines)
                            (pen-expand-template-keyvals it final-defs t final-pipelines)
@@ -1010,29 +1009,6 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-expressions
                    (or (pen-var-value-maybe 'expressions)
                        ',expressions))
-
-                  ;; These are media payloads for multi-modal prompts.
-                  ;; They are only URLs and file paths.
-                  ;; The final prompting script deals with them.
-                  ;; The entirety of this is sent as json in an environment variable.
-                  (final-payloads
-                   (or (pen-var-value-maybe 'payloads)
-                       ',payloads))
-
-                  (final-payloads
-                   (cl-loop for pl in final-payloads
-                            collect
-                            (let ((v (if (re-match-p "^(" (cdr pl))
-                                         (eval-string (cdr pl))
-                                       (expand-template (cdr pl)))))
-                              (cons (car pl) v))))
-
-                  (final-payloads
-                   (or
-                    (if final-payloads
-                        (json--encode-alist final-payloads)
-                      nil)
-                    ""))
 
                   ;; pipelines are available to expressions as <pipeline> expressions
                   ;; pipelines are also available the 'expand-template' in this way <pipeline:var>
@@ -1492,6 +1468,29 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-engine-strips-gen-starting-whitespace
                    (or (pen-var-value-maybe 'engine-strips-gen-starting-whitespace)
                        ,engine-strips-gen-starting-whitespace))
+
+                  ;; These are media payloads for multi-modal prompts.
+                  ;; They are only URLs and file paths.
+                  ;; The final prompting script deals with them.
+                  ;; The entirety of this is sent as json in an environment variable.
+                  (final-payloads
+                   (or (pen-var-value-maybe 'payloads)
+                       ',payloads))
+
+                  (final-payloads
+                   (cl-loop for pl in final-payloads
+                            collect
+                            (let ((v (if (re-match-p "^(" (cdr pl))
+                                         (eval-string (cdr pl))
+                                       (expand-template (cdr pl)))))
+                              (cons (car pl) v))))
+
+                  (final-payloads
+                   (or
+                    (if final-payloads
+                        (json--encode-alist final-payloads)
+                      nil)
+                    ""))
 
                   (final-stop-sequences
                    (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
