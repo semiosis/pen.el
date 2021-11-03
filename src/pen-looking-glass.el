@@ -45,7 +45,7 @@
                           "*")))
     (if (interactive-p)
         (etv description)
-      description)))
+      (ink-propertise description))))
 
 (defun file-from-data (data)
   (let* ((hash (sha1 data))
