@@ -1024,7 +1024,7 @@ Reconstruct the entire yaml-ht for a different language."
                             collect
                             (let ((v (if (re-match-p "^(" (cdr pl))
                                          (eval-string (cdr pl))
-                                       (expand-template pl))))
+                                       (expand-template (cdr pl)))))
                               (cons (car pl) v))))
 
                   (final-payloads
