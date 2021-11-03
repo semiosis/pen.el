@@ -317,5 +317,10 @@ case "$f" in
     }
     ;;
 
+    unwhitespacify) {
+        s join ' ' | sed 's/ \+/ /g'
+    }
+    ;;
+
     *)
 esac
