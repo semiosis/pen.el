@@ -22,6 +22,9 @@ PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE") or "0.1"
 PEN_TOP_K = os.environ.get("PEN_TOP_K") or "0"
 PEN_TOP_P = os.environ.get("PEN_TOP_P") or "0.0"
 
+if PEN_LOGPROBS == "":
+    PEN_LOGPROBS = None
+
 if PEN_PAYLOADS:
     PEN_PAYLOADS = json.loads(PEN_PAYLOADS)
 
@@ -53,6 +56,9 @@ if payloads is not None and not payloads == []:
     prompt = payloads
 else:
     prompt = PEN_PROMPT
+
+from shanepy import *
+myembed(globals(), locals())
 
 result = client.complete(PEN_MODEL,
                          prompt=prompt,
