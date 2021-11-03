@@ -57,9 +57,6 @@ if payloads is not None and not payloads == []:
 else:
     prompt = PEN_PROMPT
 
-from shanepy import *
-myembed(globals(), locals())
-
 result = client.complete(PEN_MODEL,
                          prompt=prompt,
                          n=int(PEN_N_COMPLETIONS),
