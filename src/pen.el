@@ -1300,18 +1300,45 @@ Reconstruct the entire yaml-ht for a different language."
                                 (al (pen-list2alist tups))
                                 (temp (cdr (assoc 'default-temperature al)))
                                 (model (cdr (assoc 'model al)))
-                                (lm-command (cdr (assoc 'lm-command al))))
+                                (lm-command (cdr (assoc 'lm-command al)))
+                                (api-endpoint (cdr (assoc 'api-endpoint al))))
                            (if temp
                                (setq final-temperature temp))
                            (if model
                                (setq final-model model))
                            (if lm-command
-                               (setq final-lm-command lm-command))))))
+                               (setq final-lm-command lm-command))
+                           (if api-endpoint
+                               (setq final-api-endpoint api-endpoint))))))
 
                   (final-force-temperature
                    (or
                     (pen-var-value-maybe 'force-temperature)
                     ,force-temperature))
+
+                  (final-logprobs
+                   (or
+                    (pen-var-value-maybe 'logprobs)
+                    ,logprobs))
+
+                  ;; This is used for things such as beam search
+                  ;; Not a part of a prompt, usually.
+                  ;; But the depth of the beam might be a good configure option for a prompt.
+                  (final-force-logprobs
+                   (or
+                    (pen-var-value-maybe 'force-logprobs)
+                    ,force-logprobs))
+
+                  (final-logprobs
+                   (or
+                    (and
+                     pen-logprobs-on
+                     (or
+                      final-force-logprobs
+                      pen-force-logprobs
+                      (pen-var-value-maybe 'logprobs)
+                      ,logprobs))
+                    ""))
 
                   (final-default-temperature
                    (expand-template
@@ -1656,6 +1683,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_MODEL" . ,final-model)
                             ("PEN_API_ENDPOINT" . ,final-api-endpoint)
                             ("PEN_PAYLOADS" . ,final-payloads)
+                            ("PEN_LOGPROBS" . ,final-logprobs)
                             ("PEN_APPROXIMATE_PROMPT_LENGTH" . ,pen-approximate-prompt-token-length)
                             ("PEN_ENGINE_MIN_TOKENS" . ,final-engine-min-tokens)
                             ("PEN_ENGINE_MAX_TOKENS" . ,final-engine-max-tokens)
@@ -2314,6 +2342,9 @@ Function names are prefixed with pf- for easy searching"
                       (path path)
 
                       (requirements (pen-vector2list (ht-get yaml-ht "requirements")))
+
+                      (logprobs (ht-get yaml-ht "logprobs"))
+                      (force-logprobs (ht-get yaml-ht "force-logprobs"))
 
                       (force-engine (ht-get yaml-ht "force-engine"))
                       (force-model (ht-get yaml-ht "force-model"))

@@ -360,6 +360,8 @@
   (pen-dk-easy "e y" 'pf-explain-why-this-code-is-needed/2)
 
   (pen-dk-easy "t" nil)
+  (pen-dk-easy "e" nil)
+
   (pen-dk-easy "t t" 'pen-transform)
   (pen-dk-easy "t c" 'pen-transform-code)
   (pen-dk-easy "t p" 'pen-transform-prose)

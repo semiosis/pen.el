@@ -174,6 +174,19 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-force-logprobs nil
+  "The logprobs to force"
+  :type 'float
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+;; This is used for beam search, to improve the quality of generations
+(defcustom pen-logprobs-on nil
+  "Boolean to enable/disable logprobs"
+  :type 'boolean
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-ink-disabled nil
   "Disable ink. Useful if it's breaking"
   :type 'boolean
