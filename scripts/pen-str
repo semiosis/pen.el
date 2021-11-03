@@ -322,5 +322,11 @@ case "$f" in
     }
     ;;
 
+    clean-alephalpha) {
+        sed -z 's/<PERSON>/ a person /g' \
+            sed -z 's/PERSON>/ a person /g'
+    }
+    ;;
+
     *)
 esac
