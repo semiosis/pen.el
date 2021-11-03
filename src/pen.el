@@ -808,7 +808,8 @@ Reconstruct the entire yaml-ht for a different language."
                            ;; I also want to encode newlines into <pen-newline> and <pen-dnl>
                            ;; But only for delim
                            (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t final-pipelines)
-                           (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
+                           (pen-
+                            expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
                            (pen-expand-template-keyvals it var-keyvals-slugged t final-pipelines)
                            (pen-expand-template-keyvals it var-keyvals t final-pipelines)
                            (pen-expand-template-keyvals it final-defs t final-pipelines)
@@ -1023,7 +1024,7 @@ Reconstruct the entire yaml-ht for a different language."
                             collect
                             (let ((v (if (re-match-p "^(" (cdr pl))
                                          (eval-string (cdr pl))
-                                       pl)))
+                                       (expand-template pl))))
                               (cons (car pl) v))))
 
                   (final-payloads
