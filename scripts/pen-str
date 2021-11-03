@@ -323,7 +323,7 @@ case "$f" in
     ;;
 
     clean-alephalpha) {
-        sed -z 's/<\(The|A\)\? *PERSON *>/ a person /g' |
+        sed -z 's/<\(The\|A\)\? *PERSON *>/ a person /g' |
             sed -z 's/PERSON>/ a person /g' |
             sed -z 's/ \+/ /g' |
             sed -z -e 's/< / /g' -e 's/ >/ /g' -e "s/ 's/'s/g"
