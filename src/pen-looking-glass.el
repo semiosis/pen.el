@@ -39,10 +39,49 @@
      (car (pen-one (pf-generate-html-from-ascii-browser/2 url ascii)))
      nil 'text-mode)))
 
-(defun lg-generate-alttext (fp-or-url)
-  (interactive (list (read-string-hist "lg-generate-alttext (fp or url): ")))
-  (let ((description (sor (car (pen-one (pf-given-an-image-describe-it/1 fp-or-url)))
-                          "*")))
+(defun test-lg-generate-alttext ()
+  (interactive)
+  ;; (etv (lg-generate-alttext "https://en.wikipedia.org/static/images/project-logos/enwiki.png"))
+  (etv (lg-generate-alttext "https://mullikine.github.io/tagpics/Bodacious%20Blog.gif")))
+
+(defun lg-get-alttext (fp-or-url)
+  (let ((desc (sor (car (pen-one (pf-given-an-image-describe-it/1 fp-or-url)))
+                   "?")))
+    ;; (message desc)
+    desc))
+
+(defun lg-generate-alttext (fp-or-url &optional alt)
+  (interactive
+   (list (read-string-hist "lg-generate-alttext (fp or url): ")))
+  ;; (pen-snc "tee -a ~/alttext.txt" fp-or-url)
+
+  (if (sor alt)
+      (setq alt
+            (s-remove-trailing-newline
+             (s-remove-leading-whitespace
+              (s-remove-trailing-whitespace alt)))))
+
+  (if (or (string-equal "*" alt)
+          (not alt))
+      (setq alt "Image"))
+
+  (let* ((alephalpha
+          (eval `(pen-ci (lg-get-alttext ,fp-or-url))))
+         (alephalpha (eval-string alephalpha))
+
+         (alephalpha
+          (if (string-equal "*" alephalpha)
+              (setq alephalpha "?")
+            alephalpha))
+
+         (description
+          (cond
+           ((sor alt) (concat alt ":" alephalpha))
+           ;; ((re-match-p "SVG" alt) (eval-string (eval `(pen-ci (lg-get-alttext ,fp-or-url)))))
+           (t alephalpha))))
+
+    ;; (setq description (concat "'" description "'"))
+
     (if (interactive-p)
         (etv description)
       (ink-propertise description))))
@@ -88,11 +127,13 @@ element is the data blob and the second element is the content-type."
                      (> (car (image-size image t)) 400))
             (insert "\n"))
           (if (eq size 'original)
-              (insert-sliced-image image (or (lg-generate-alttext (file-from-data data))
-                                             alt "*") nil 20 1)
-            (insert-image image (or
-                                 (lg-generate-alttext (file-from-data data))
-                                 alt "*")))
+              (insert-sliced-image image (lg-generate-alttext
+                                          (file-from-data data)
+                                          alt)
+                                   nil 20 1)
+            (insert-image image (lg-generate-alttext
+                                 (file-from-data data)
+                                 alt)))
           (put-text-property start (point) 'image-size size)
           (when (and shr-image-animate
                      (cond ((fboundp 'image-multi-frame-p)
@@ -107,8 +148,34 @@ element is the data blob and the second element is the content-type."
     (let ((data (if (consp spec)
                     (car spec)
                   spec)))
-      (insert (or
-               (lg-generate-alttext (file-from-data data))
-               alt "")))))
+      (insert (lg-generate-alttext
+               (file-from-data data)
+               alt)))))
+
+(defun shr-browse-image (&optional copy-url)
+  "Browse the image under point.
+If COPY-URL (the prefix if called interactively) is non-nil, copy
+the URL of the image to the kill buffer instead."
+  (interactive "P")
+  (let ((url (get-text-property (point) 'image-url)))
+    (cond
+     ((not url)
+      (message "No image under point"))
+     (copy-url
+      (with-temp-buffer
+        (insert url)
+        (copy-region-as-kill (point-min) (point-max))
+        (message "Copied %s" url)))
+     (t
+      (message "Browsing %s..." url)
+      ;; (pen-snc (cmd "sps" "win" "ie" url))
+      ;; (sps (cmd "unbuffer" "timg" url))
+      ;; (sps (concat (cmd "timg" url) " | less -rS") "-s")
+      ;; (pen-snc (cmd "sps" "-E" (concat (cmd "timg" url) " | less -rS")))
+      ;; (pen-snc (cmd "sps" "-E" (concat (cmd "timg" url) " && pak")))
+      (pen-snc (cmd "sps" "-E" (concat (cmd "timg" url))))
+      ;; (my/eww-browse-url url)
+      ;; (my/eww-browse-url-chrome url)
+      ))))
 
 (provide 'pen-looking-glass)

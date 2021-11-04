@@ -18,10 +18,10 @@
     (if (and (file-exists-p fp)
              (not b_update))
         (progn
-          (setq result (e/cat fp)))
+          (setq result (shut-up (e/cat fp))))
       (progn
         (setq result (pp-to-string (eval exp)))
-        (write-to-file (str result) fp)))
+        (shut-up (write-to-file (str result) fp))))
     (if (or (string-match-p "^[0-9.]+$" result) ; number
             (string-match-p "^(.*)$" result)
             (string-match-p "^nil$" result)
