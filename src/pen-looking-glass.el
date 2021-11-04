@@ -208,12 +208,12 @@ element is the data blob and the second element is the content-type."
               (when (file-exists-p file)
                 (delete-file file))))
           (when (image-type-available-p 'svg)
-            (let ((alephalpha
+            (let ((fullalttext
                    ;; (lg-generate-alttext (file-from-data (ecurl url)))
-                   (lg-generate-alttext url)))
+                   (lg-generate-alttext url alt)))
               (insert-image
                (shr-make-placeholder-image dom)
-               (or (concat "Image:" alt ":" alephalpha) ""))))
+               (or fullalttext ""))))
           (insert " ")
           (url-queue-retrieve
            (shr-encode-url url) #'shr-image-fetched
