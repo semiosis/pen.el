@@ -140,6 +140,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 (defun pen-eval-string (string)
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))
+(defalias 'eval-string 'pen-definition)
 
 (defun pcre-replace-string (pat rep s &rest body)
   "Replace pat with rep in s and return the result.
