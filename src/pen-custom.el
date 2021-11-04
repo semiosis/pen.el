@@ -24,7 +24,7 @@ This is useful for code-understanding when reading languages you don't understan
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-describe-images t
-  "Strip unicode from input"
+  "Describe images"
   :type 'boolean
   :group 'pen
   :initialize (lambda(_sym _exp)
