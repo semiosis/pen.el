@@ -152,6 +152,85 @@ element is the data blob and the second element is the content-type."
                (file-from-data data)
                alt)))))
 
+;; Added "SVG Image"
+(defun shr-tag-img (dom &optional url)
+  (when (or url
+            (and dom
+                 (or (> (length (dom-attr dom 'src)) 0)
+                     (> (length (dom-attr dom 'srcset)) 0))))
+    (when (> (current-column) 0)
+      (insert "\n"))
+    (let ((alt (dom-attr dom 'alt))
+          (width (shr-string-number (dom-attr dom 'width)))
+          (height (shr-string-number (dom-attr dom 'height)))
+          (url (shr-expand-url (or url (shr--preferred-image dom)))))
+      (let ((start (point-marker)))
+        (when (zerop (length alt))
+          (setq alt "*"))
+        (cond
+         ((null url)
+          ;; After further expansion, there turned out to be no valid
+          ;; src in the img after all.
+          )
+         ((or (member (dom-attr dom 'height) '("0" "1"))
+              (member (dom-attr dom 'width) '("0" "1")))
+          ;; Ignore zero-sized or single-pixel images.
+          )
+         ((and (not shr-inhibit-images)
+               (string-match "\\`data:" url))
+          (let ((image (shr-image-from-data (substring url (match-end 0)))))
+            (if image
+                (funcall shr-put-image-function image alt
+                         (list :width width :height height))
+              (insert alt))))
+         ((and (not shr-inhibit-images)
+               (string-match "\\`cid:" url))
+          (let ((url (substring url (match-end 0)))
+                image)
+            (if (or (not shr-content-function)
+                    (not (setq image (funcall shr-content-function url))))
+                (insert alt)
+              (funcall shr-put-image-function image alt
+                       (list :width width :height height)))))
+         ((or shr-inhibit-images
+              (and shr-blocked-images
+                   (string-match shr-blocked-images url)))
+          (setq shr-start (point))
+          (shr-insert alt))
+         ((and (not shr-ignore-cache)
+               (url-is-cached (shr-encode-url url)))
+          (funcall shr-put-image-function (shr-get-image-data url) alt
+                   (list :width width :height height)))
+         (t
+          (when (and shr-ignore-cache
+                     (url-is-cached (shr-encode-url url)))
+            (let ((file (url-cache-create-filename (shr-encode-url url))))
+              (when (file-exists-p file)
+                (delete-file file))))
+          (when (image-type-available-p 'svg)
+            (let ((alephalpha
+                   ;; (lg-generate-alttext (file-from-data (ecurl url)))
+                   (lg-generate-alttext url)))
+              (insert-image
+               (shr-make-placeholder-image dom)
+               (or (concat "Image:" alt ":" alephalpha) ""))))
+          (insert " ")
+          (url-queue-retrieve
+           (shr-encode-url url) #'shr-image-fetched
+           (list (current-buffer) start (set-marker (make-marker) (point))
+                 (list :width width :height height))
+           t
+           (not (shr--use-cookies-p url shr-base)))))
+        (when (zerop shr-table-depth) ;; We are not in a table.
+          (put-text-property start (point) 'keymap shr-image-map)
+          (put-text-property start (point) 'shr-alt alt)
+          (put-text-property start (point) 'image-url url)
+          (put-text-property start (point) 'image-displayer
+                             (shr-image-displayer shr-content-function))
+          (put-text-property start (point) 'help-echo
+                             (shr-fill-text
+                              (or (dom-attr dom 'title) alt))))))))
+
 (defun shr-browse-image (&optional copy-url)
   "Browse the image under point.
 If COPY-URL (the prefix if called interactively) is non-nil, copy

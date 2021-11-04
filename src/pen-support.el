@@ -137,7 +137,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 
 (defalias 'type 'type-of)
 
-(defun eval-string (string)
+(defun pen-eval-string (string)
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))
 

@@ -227,7 +227,8 @@
 
   (if (sor text)
       (let* ((text (if (string-match "#(" text)
-                       (eval-string text)
+                       ;; (etv (q text))
+                       (pen-eval-string text)
                      text)))
         (if (interactive-p)
             (if (pen-selected-p)
