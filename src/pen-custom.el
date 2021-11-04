@@ -23,6 +23,7 @@ This is useful for code-understanding when reading languages you don't understan
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+;; This should not even be expensive because it should be going via a p2p network
 (defcustom pen-describe-images t
   "Describe images"
   :type 'boolean
