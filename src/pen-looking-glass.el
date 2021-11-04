@@ -66,8 +66,13 @@
       (setq alt "Image"))
 
   (let* ((alephalpha
-          (eval `(pen-ci (lg-get-alttext ,fp-or-url))))
-         (alephalpha (eval-string alephalpha))
+          (if pen-describe-images
+              (eval `(pen-ci (lg-get-alttext ,fp-or-url)))
+            nil))
+
+         (alephalpha
+          (or (eval-string alephalpha)
+              ""))
 
          (alephalpha
           (if (string-equal "*" alephalpha)
