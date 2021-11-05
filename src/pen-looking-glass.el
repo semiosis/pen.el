@@ -253,6 +253,7 @@ the URL of the image to the kill buffer instead."
      (t
       (message "Browsing %s..." url)
       (pen-snc (cmd "sps" "win" "ie" url))
+      ;; (my/eww-browse-url url)
       ;; (sps (cmd "unbuffer" "timg" url))
       ;; (sps (concat (cmd "timg" url) " | less -rS") "-s")
       ;; (pen-snc (cmd "sps" "-E" (concat (cmd "timg" url) " | less -rS")))
