@@ -755,7 +755,7 @@ Reconstruct the entire yaml-ht for a different language."
           (pen-touch-file path))))
 
 (comment
- (etv (pps (tuplist-to-alist '((a b) (c d))))))
+ (pen-etv (pps (tuplist-to-alist '((a b) (c d))))))
 (defun tuplist-to-alist (tuplist)
   (mapcar (lambda (tup)
             (cons (car tup) (second tup)))
@@ -2238,7 +2238,7 @@ Otherwise, it will be a shell expression template")
   (mu
    (let* ((engine-ht (yamlmod-read-file "$MYGIT/semiosis/engines/engines/reasonable-defaults.engine"))
           (defers (pen-vector2list (ht-get engine-ht "defer"))))
-     (etv (pps (pen--htlist-to-alist defers))))))
+     (pen-etv (pps (pen--htlist-to-alist defers))))))
 
 (defun pen-resolve-engine (starting-engine &optional requirements)
   "This should resolve the engine and may run recursively to do so."
@@ -3426,7 +3426,7 @@ May use to generate code from comments."
   (let* ((fp "/home/shane/source/git/semiosis/prompts/prompts/guess-function-name-1.prompt")
          (yaml-ht (yamlmod-read-file fp))
          (defs (pen--htlist-to-alist (ht-get yaml-ht "defs"))))
-    (etv (pps defs))))
+    (pen-etv (pps defs))))
 
 (defun pen-load-test ()
   (interactive)
@@ -3448,8 +3448,8 @@ May use to generate code from comments."
                      (cons (car pl) v)))))
     ;; (var (pen-yaml-test yaml-ht "filter"))
     ;; (var (ht-get yaml-ht "filter")))
-    ;; (etv (json--encode-alist var))
-    (etv (pps var))))
+    ;; (pen-etv (json--encode-alist var))
+    (pen-etv (pps var))))
 
 (defun pen-load-vars ()
   (interactive)
@@ -3490,7 +3490,7 @@ May use to generate code from comments."
            for atp in als
            collect
            (cdr (assoc "preprocessor" atp)))))
-    (etv (pps vals))))
+    (pen-etv (pps vals))))
 
 (require 'pen-borrowed)
 (require 'pen-core)
@@ -3541,7 +3541,7 @@ May use to generate code from comments."
   (interactive)
   (let ((error (lsp-ui-pen-diagnostics)))
     (if (sor error)
-        (etv
+        (pen-etv
          (pf-explain-error/3
           (pen-detect-language-ask)
           error
@@ -3583,17 +3583,17 @@ May use to generate code from comments."
          (end-pos (or (pen-num (cdr (assoc "PEN_END_POS" al))) 0))
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
-    (comment (etv `(list :inject-gen-start
+    (comment (pen-etv `(list :inject-gen-start
                          ,(s-right
                            (- (length result) (- end-pos collect-from-pos))
                            result))))
-    ;; (etv (pps (list orig-inject-len vals result fun)))
+    ;; (pen-etv (pps (list orig-inject-len vals result fun)))
     ;; (call-interactively-with-parameters )
-    ;; (etv (pps (append vals `(:inject-gen-start
+    ;; (pen-etv (pps (append vals `(:inject-gen-start
     ;;                 ,(s-right
     ;;                   (- (length result) (- end-pos collect-from-pos))
     ;;                   result)))))
-    (comment (etv (pps (append vals `(:inject-gen-start
+    (comment (pen-etv (pps (append vals `(:inject-gen-start
                                       ,result)))))
 
     ;; Sadly, this doesn't get the parameters, for some reason
@@ -3608,7 +3608,7 @@ May use to generate code from comments."
     ;; This works but I need to also force interactive
     ;; Still buggy. Now it's chopping off the start
 
-    (etv
+    (pen-etv
      (let* ((result
              (cond
               ((stringp result) result)

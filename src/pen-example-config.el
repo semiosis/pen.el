@@ -214,7 +214,7 @@
 (memoize-restore 'pen-prompt-snc)
 (memoize 'pen-prompt-snc)
 
-;; (etv (pen-prompt-snc "rand" 1))
+;; (pen-etv (pen-prompt-snc "rand" 1))
 
 (define-key pen-map (kbd "H-TAB n") 'pen-select-function-from-nl)
 (define-key pen-map (kbd "H-TAB h") 'pf-generic-tutor-for-any-topic/2)
@@ -372,8 +372,8 @@
   (pen-dk-easy "x" 'pen-diagnostics-show-context)
   (pen-dk-easy "r" 'pf-transpile/3)
   (pen-dk-easy "L" 'pf-translate/3)
-  (pen-dk-easy "u" (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
-  (pen-dk-easy "w" (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
+  (pen-dk-easy "u" (dff (pen-etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
+  (pen-dk-easy "w" (dff (pen-etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
 
   ;; Overrides
   (pen-define-key pen-map (kbd "H-TAB m") 'pen-complete-medium)

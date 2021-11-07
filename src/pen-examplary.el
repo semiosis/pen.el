@@ -155,7 +155,7 @@ The last element in the list is the output/return value"
     ;;    (plist-put data :model model)
     )
 
-  (etv (plist2yaml data))
+  (pen-etv (plist2yaml data))
   nil)
 
 ;; https://github.com/pemistahl/grex

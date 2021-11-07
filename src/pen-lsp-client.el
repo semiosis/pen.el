@@ -16,8 +16,8 @@
   `(,pen-lsp-executable-path ,@pen-lsp-server-args))
 
 
-;; (etv (pps (lsp-configuration-section "pylsp")))
-;; (etv (pps (lsp-configuration-section "pen")))
+;; (pen-etv (pps (lsp-configuration-section "pylsp")))
+;; (pen-etv (pps (lsp-configuration-section "pen")))
 
 ;; Ensure these are set
 

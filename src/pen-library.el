@@ -312,7 +312,7 @@ semantic-path means a path suitable for google/nl searching"
                    (message "%s" (concat "linting " l))
                    (car (pen-single-generation
                          (pf-imagine-an-awk-linter/1 l :no-select-result t :select-only-match))))))))
-    (etv lintings)))
+    (pen-etv lintings)))
 
 
 ;; TODO Make a prompt which detects either prose or code
@@ -408,7 +408,7 @@ semantic-path means a path suitable for google/nl searching"
            "pen-insert-snippet-from-lm nl task: "))))
     (if (interactive-p)
         (if (>= (prefix-numeric-value current-prefix-arg) 4)
-            (etv snippet)
+            (pen-etv snippet)
           (insert snippet))
       snippet)))
 

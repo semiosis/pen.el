@@ -137,7 +137,7 @@
 (defun test-generate-fib ()
   (interactive)
   (idefun generate-fib-sequence (n))
-  (etv (generate-fib-sequence 5)))
+  (pen-etv (generate-fib-sequence 5)))
 
 (defmacro ilambda/task-code (args task code &optional name-sym)
   (let* ((slug (s-replace-regexp "-$" "" (slugify (eval task))))
@@ -180,7 +180,7 @@
 
 (defun test-ilambda/code ()
   (interactive)
-  (etv
+  (pen-etv
    (mapcar
     ;; wrapped up in a lambda
     (lambda (x)
@@ -195,18 +195,18 @@
 
 (defun ilambda/code-test-1 ()
   (interactive)
-  (etv (mapcar (ilambda/task (x) "double it")
+  (pen-etv (mapcar (ilambda/task (x) "double it")
                '(12 4))))
 
 (defun ilambda/code-test-2 ()
   (interactive)
-  (etv (mapcar (ilambda/code (x)
+  (pen-etv (mapcar (ilambda/code (x)
                              (+ x 5))
                '(4))))
 
 (defun ilambda/code-test-3 ()
   (interactive)
-  (etv (mapcar (ilambda/task-code (x)
+  (pen-etv (mapcar (ilambda/task-code (x)
                                   "add five"
                                   (+ x 5))
                '(8))))
@@ -218,11 +218,11 @@
 
 (defun test-ilist ()
   (interactive)
-  (etv (pp-to-string (ilist 10 "tennis players in no particular order"))))
+  (pen-etv (pp-to-string (ilist 10 "tennis players in no particular order"))))
 
 (defun test-ilist-cs ()
   (interactive)
-  (etv (pp-to-string (ilist 10 "computer science algorithms in no particular order"))))
+  (pen-etv (pp-to-string (ilist 10 "computer science algorithms in no particular order"))))
 
 (defmacro ieval/m (expression &optional code-sexp-or-raw)
   "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
@@ -249,14 +249,14 @@
 
 (defun test-ieval-1 ()
   (interactive)
-  (etv (ieval
+  (pen-etv (ieval
         '(double-number 5)
         '(defun double-number (x)
            (x * x)))))
 
 (defun test-ieval-2 ()
   (interactive)
-  (etv (ieval/m
+  (pen-etv (ieval/m
         (double-number 5)
         (defun double-number (x)
           (x * x)))))
@@ -287,26 +287,26 @@
 
 (defun test-itest-1 ()
   (interactive)
-  (etv
+  (pen-etv
    (itest '(lambda (l) (= 5 (length l)))
           '(a b c d))))
 
 (defun test-itest-2 ()
   (interactive)
-  (etv
+  (pen-etv
    (itest/m (lambda (l) (= 4 (length l)))
             '(a b c d))))
 
 ;; Interestingly, these tests do not work very well
 ;; 𝑖λ seems only suited for code when it comes to elisp
-(defun test-itest-3 () (interactive) (etv (itest/m (lambda (thing) (= "Charles Lutwidge Dodgson" thing)) "Lewis Carroll")))
-(defun test-itest-4 () (interactive) (etv (itest/m (lambda (thing) (= "J. R. R. Tolkien" thing)) "Lewis Carroll")))
-(defun test-itest-5 () (interactive) (etv (itest/m 'is-jrr-tolkien-p "Lewis Carroll")))
-(defun test-itest-6 () (interactive) (etv (itest/m 'is-jrr-tolkien-p "J. R. R. Tolkien")))
+(defun test-itest-3 () (interactive) (pen-etv (itest/m (lambda (thing) (= "Charles Lutwidge Dodgson" thing)) "Lewis Carroll")))
+(defun test-itest-4 () (interactive) (pen-etv (itest/m (lambda (thing) (= "J. R. R. Tolkien" thing)) "Lewis Carroll")))
+(defun test-itest-5 () (interactive) (pen-etv (itest/m 'is-jrr-tolkien-p "Lewis Carroll")))
+(defun test-itest-6 () (interactive) (pen-etv (itest/m 'is-jrr-tolkien-p "J. R. R. Tolkien")))
 
 (defun test-itest-4 ()
   (interactive)
-  (etv
+  (pen-etv
    (itest/m (lambda (thing)
               (= "An Egyptian king who ruled during the First Dynasty"
                  thing))
@@ -314,7 +314,7 @@
 
 (defun test-itest-4 ()
   (interactive)
-  (etv
+  (pen-etv
    (itest/m (lambda (thing) (same-person "Moses" thing))
             "Joseph")))
 
@@ -330,7 +330,7 @@
 
 (defun test-equals-1 ()
   (interactive)
-  (etv
+  (pen-etv
    (iequal '(lambda (l) '(= 5 (length l)))
             '(a b c d))))
 

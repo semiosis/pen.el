@@ -41,8 +41,8 @@
 
 (defun test-lg-generate-alttext ()
   (interactive)
-  ;; (etv (lg-generate-alttext "https://en.wikipedia.org/static/images/project-logos/enwiki.png"))
-  (etv (lg-generate-alttext "https://mullikine.github.io/tagpics/Bodacious%20Blog.gif")))
+  ;; (pen-etv (lg-generate-alttext "https://en.wikipedia.org/static/images/project-logos/enwiki.png"))
+  (pen-etv (lg-generate-alttext "https://mullikine.github.io/tagpics/Bodacious%20Blog.gif")))
 
 (defun lg-get-alttext (fp-or-url)
   (let ((desc (sor (car (pen-one (pf-given-an-image-describe-it/1 fp-or-url)))
@@ -88,7 +88,7 @@
     ;; (setq description (concat "'" description "'"))
 
     (if (interactive-p)
-        (etv description)
+        (pen-etv description)
       (ink-propertise description))))
 
 (defun file-from-data (data)
