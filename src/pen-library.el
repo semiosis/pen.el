@@ -304,7 +304,7 @@ semantic-path means a path suitable for google/nl searching"
   (message "Please wait...")
   (let* ((sel (str (pen-selection)))
          (lines (s-lines sel))
-         ;; (l (tv (list2str lines)))
+         ;; (l (etv (list2str lines)))
          (lintings
           (list2str
            (cl-loop for l in lines collect

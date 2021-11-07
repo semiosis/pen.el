@@ -1368,7 +1368,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-model
                    (progn
                      (comment
-                      (tv (pps
+                      (etv (pps
                            `(expand-template
                              (str (or
                                    ,final-force-model
@@ -1583,7 +1583,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (trailing-whitespace (s-trailing-whitespace final-prompt))
 
-                  ;; (test (tv (qne (s-trailing-whitespace final-prompt))))
+                  ;; (test (etv (qne (s-trailing-whitespace final-prompt))))
 
                   (final-prompt (if final-engine-whitespace-support
                                     final-prompt
@@ -1625,7 +1625,7 @@ Reconstruct the entire yaml-ht for a different language."
                       0)))
 
                   ;; (testme
-                  ;;  (tv final-max-generated-tokens))
+                  ;;  (etv final-max-generated-tokens))
 
                   ;; The max tokens may be templated in via variable or even a subprompt
                   (final-max-tokens
@@ -1723,7 +1723,7 @@ Reconstruct the entire yaml-ht for a different language."
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data (list (cons "PEN_VALS" (pps last-vals))
                                                                   (cons "PEN_END_POS" end-pos))))
-                     ;; (tv data)
+                     ;; (etv data)
                      data
                      ;; data
                      ))
@@ -1975,8 +1975,8 @@ Reconstruct the entire yaml-ht for a different language."
                (pen-snc "tr -d '\\n'" (pps pen-last-prompt-data)))
               (f-join penconfdir "prompt-hist.el"))
 
-             ;; (tv (pps final-stop-sequences))
-             ;; (tv final-insertion)
+             ;; (etv (pps final-stop-sequences))
+             ;; (etv final-insertion)
              (pen-log (concat
                        "insertion: " (str (type final-insertion)) " " (str final-insertion)
                        " "
@@ -3618,7 +3618,7 @@ May use to generate code from comments."
                              orig-inject-len)))
        `(,orig-inject-len ,end-pos ,collect-from-pos
                           :inject-gen-start
-                          ,(tv result)
+                          ,(etv result)
                           :force-interactive t
                           ,(s-right
                             (+ (- (length result) (- end-pos collect-from-pos))
@@ -3634,7 +3634,7 @@ May use to generate code from comments."
        (apply
         fun
         (append vals `(:inject-gen-start
-                       ,(tv (s-right
+                       ,(etv (s-right
                              (- (length result) (- end-pos collect-from-pos))
                              result))
                        :force-interactive t)))))))
