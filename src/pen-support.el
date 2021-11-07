@@ -923,7 +923,7 @@ when s is a string, set the clipboard to s"
       (setq initial-input (first histvar)))
 
   ;; (pen-etv (completing-read-hist "test: " (snc "cat $PROMPTS/generate-transformative-code.prompt | yq -r '.examples[0]'")))
-  ;; (etv (qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
+  ;; (pen-etv (qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
   ;; (eval-string (concat "\"" (qne "lskjdfldks\ndshi\\nslkfjof") "\""))
   ;; (setq initial-input (bs "\"" initial-input))
   ;; (setq initial-input (bs "\n" initial-input))

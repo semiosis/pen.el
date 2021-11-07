@@ -559,8 +559,8 @@ Differences in #targets are ignored."
 	          (and last-coding-system-used
 		             (set-buffer-file-coding-system last-coding-system-used))
 	          (run-hooks 'eww-after-render-hook)))
-      ;; (etv (str data-buffer))
-      ;; (etv (buffer-name))
+      ;; (pen-etv (str data-buffer))
+      ;; (pen-etv (buffer-name))
       (kill-buffer data-buffer))))
 
 
@@ -668,7 +668,7 @@ word(s) will be searched for via `eww-search-prefix'."
             ;; nil for status is OK
             ;; (call-interactively 'tm-edit-v-in-nw)
             ;; (sleep 1)
-            ;; (etv (buffer-string))
+            ;; (pen-etv (buffer-string))
             (eww-render nil url (point) b))
           (with-current-buffer b
             (setq header-line-format (propertize (str header-line-format) 'face 'org-bold))))
@@ -901,7 +901,7 @@ If EXTERNAL is double prefix, browse in new buffer."
 
   (let* ((url (get-text-property (point) 'shr-url))
          (bufname (eww-bufname-for-url url)))
-    ;; (etv (list2str
+    ;; (pen-etv (list2str
     ;;      (list (url-generic-parse-url url)
     ;;            ;; (plist-get eww-data :url)
     ;;            (get-path))))
@@ -1145,7 +1145,7 @@ element is the data blob and the second element is the content-type."
           (let ((htmlbuild
                  (save-excursion
                    ;; The url is not in the header
-                   ;; (etv (buffer-string))
+                   ;; (pen-etv (buffer-string))
                    ;; Go to after the http headers
                    (progn
                      (beginning-of-buffer)
@@ -1758,7 +1758,7 @@ element is the data blob and the second element is the content-type."
 
 
 (defun advice-handle-url (proc &rest args)
-  ;; (etv args)
+  ;; (pen-etv args)
   ;; args is the first arg, but the 2nd arg could be something else, and is optional
   (let ((url (car args)))
     (setq url (my-redirect url))
