@@ -91,5 +91,4 @@
         (pen-etv description)
       (ink-propertise description))))
 
-
 (provide 'pen-looking-glass)
