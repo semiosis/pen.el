@@ -94,7 +94,8 @@ element is the data blob and the second element is the content-type."
         (lg-generate-alttext
          (file-from-data data))
         alt
-        "")))))
+        ;; ""
+        )))))
 
 ;; Added "SVG Image"
 (defun shr-tag-img (dom &optional url)
@@ -152,20 +153,28 @@ element is the data blob and the second element is the content-type."
             (let ((file (url-cache-create-filename (shr-encode-url url))))
               (when (file-exists-p file)
                 (delete-file file))))
-          (when (image-type-available-p 'svg)
-            (let ((fullalttext
-                   ;; (lg-generate-alttext (file-from-data (ecurl url)))
-                   (lg-generate-alttext url (sor alt))))
-              (insert-image
-               (shr-make-placeholder-image dom)
-               (or fullalttext ""))))
+          (let ((fullalttext
+                 ;; (lg-generate-alttext (file-from-data (ecurl url)))
+
+                 ;; This happens at load for the blog logo
+                 (lg-generate-alttext url (sor alt))))
+            (comment (insert fullalttext))
+            (insert-image
+             ;; A placeholder image gets reloaded
+             ;; How to keep the alttext, if it's a placeholder image?
+             (shr-make-placeholder-image dom)
+             (or fullalttext "")))
           (insert " ")
-          (url-queue-retrieve
-           (shr-encode-url url) #'shr-image-fetched
-           (list (current-buffer) start (set-marker (make-marker) (point))
-                 (list :width width :height height))
-           t
-           (not (shr--use-cookies-p url shr-base)))))
+          ;; This reloaded the image, but there is no need
+          ;; Because alttext was used
+          ;; Though, perhaps I should use something immediate first 
+          (comment
+           (url-queue-retrieve
+            (shr-encode-url url) #'shr-image-fetched
+            (list (current-buffer) start (set-marker (make-marker) (point))
+                  (list :width width :height height))
+            t
+            (not (shr--use-cookies-p url shr-base))))))
         (when (zerop shr-table-depth) ;; We are not in a table.
           (put-text-property start (point) 'keymap shr-image-map)
           (put-text-property start (point) 'shr-alt alt)
