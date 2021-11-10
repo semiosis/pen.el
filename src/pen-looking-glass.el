@@ -91,12 +91,5 @@
         (pen-etv description)
       (ink-propertise description))))
 
-(defun file-from-data (data)
-  (let* ((hash (sha1 data))
-         (fp (f-join "/tmp" hash)))
-    (shut-up (write-to-file data fp))
-    fp))
-
-
 
 (provide 'pen-looking-glass)

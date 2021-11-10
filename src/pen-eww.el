@@ -1,3 +1,9 @@
+(defun file-from-data (data)
+  (let* ((hash (sha1 data))
+         (fp (f-join "/tmp" hash)))
+    (shut-up (write-to-file data fp))
+    fp))
+
 (defun shr-put-image (spec alt &optional flags)
   "Insert image SPEC with a string ALT.  Return image.
 SPEC is either an image data blob, or a list where the first
