@@ -8,6 +8,8 @@
   "Insert image SPEC with a string ALT.  Return image.
 SPEC is either an image data blob, or a list where the first
 element is the data blob and the second element is the content-type."
+
+  ;; This runs at initial load and also after, when images later load
   (if (display-graphic-p)
       (let* ((size (cdr (assq 'size flags)))
              (data (if (consp spec)
@@ -81,23 +83,22 @@ element is the data blob and the second element is the content-type."
                             (image-animated-p image))))
             (image-animate image nil 60)))
         image)
-    ;; (let ((data (if (consp spec)
-    ;;                 (car spec)
-    ;;               spec)))
-    ;;   (insert
-    ;;    (or (lg-generate-alttext
-    ;;         (file-from-data data))
-    ;;        alt
-    ;;        ""))
-    ;;   ;; (insert
-    ;;   ;;  (lg-generate-alttext
-    ;;   ;;   (file-from-data data)
-    ;;   ;;   alt))
-    ;;   )
-    ))
+
+    ;; This  gets called most often
+    ;; And is also where it gets called after load
+    (let ((data (if (consp spec)
+                    (car spec)
+                  spec)))
+      (insert
+       (or
+        (lg-generate-alttext
+         (file-from-data data))
+        alt
+        "")))))
 
 ;; Added "SVG Image"
 (defun shr-tag-img (dom &optional url)
+  ;; This runs on initial load
   (when (or url
             (and dom
                  (or (> (length (dom-attr dom 'src)) 0)
@@ -124,7 +125,7 @@ element is the data blob and the second element is the content-type."
                (string-match "\\`data:" url))
           (let ((image (shr-image-from-data (substring url (match-end 0)))))
             (if image
-                (funcall shr-put-image-function image alt
+                (funcall shr-put-image-function image (sor alt)
                          (list :width width :height height))
               (insert alt))))
          ((and (not shr-inhibit-images)
@@ -134,7 +135,7 @@ element is the data blob and the second element is the content-type."
             (if (or (not shr-content-function)
                     (not (setq image (funcall shr-content-function url))))
                 (insert alt)
-              (funcall shr-put-image-function image alt
+              (funcall shr-put-image-function image (sor alt)
                        (list :width width :height height)))))
          ((or shr-inhibit-images
               (and shr-blocked-images
@@ -143,7 +144,7 @@ element is the data blob and the second element is the content-type."
           (shr-insert alt))
          ((and (not shr-ignore-cache)
                (url-is-cached (shr-encode-url url)))
-          (funcall shr-put-image-function (shr-get-image-data url) alt
+          (funcall shr-put-image-function (shr-get-image-data url) (sor alt)
                    (list :width width :height height)))
          (t
           (when (and shr-ignore-cache
@@ -154,7 +155,7 @@ element is the data blob and the second element is the content-type."
           (when (image-type-available-p 'svg)
             (let ((fullalttext
                    ;; (lg-generate-alttext (file-from-data (ecurl url)))
-                   (lg-generate-alttext url alt)))
+                   (lg-generate-alttext url (sor alt))))
               (insert-image
                (shr-make-placeholder-image dom)
                (or fullalttext ""))))

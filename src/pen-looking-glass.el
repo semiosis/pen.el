@@ -83,7 +83,10 @@
           (cond
            ((sor alt) (concat alt ":" alephalpha))
            ;; ((re-match-p "SVG" alt) (eval-string (eval `(pen-ci (lg-get-alttext ,fp-or-url)))))
-           (t alephalpha))))
+           (t alephalpha)))
+
+         ;; (description (concat fp-or-url (q description) alt))
+         )
 
     ;; (setq description (concat "'" description "'"))
 
