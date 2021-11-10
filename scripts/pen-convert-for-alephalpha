@@ -26,7 +26,11 @@ if ! test -f "$rp" && printf -- "%s\n" "$rp" | grep -q -P '^https?://'; then
 fi
 
 if test -f old; then
-    convert old -resize 600x400\> ./new.jpg
+    if file --mime-type -Lb old | grep -q -P '/gif'; then
+        convert "old[0]" -resize 800x600\> ./new.jpg
+    else
+        convert old -resize 800x600\> ./new.jpg
+    fi
 fi
 } &>/dev/null
 
