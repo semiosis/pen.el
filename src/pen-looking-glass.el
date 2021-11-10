@@ -48,6 +48,8 @@
   (let ((desc (sor (car (pen-one (pf-given-an-image-describe-it/1 fp-or-url)))
                    "?")))
     ;; (message desc)
+
+    ;; If fp then convert the image into a standard format
     desc))
 
 (defun lg-generate-alttext (fp-or-url &optional alt)
