@@ -1754,7 +1754,7 @@ element is the data blob and the second element is the content-type."
 
 (defun dump-url-file-and-edit (url)
   (interactive (list (read-string-hist "file url: ")))
-  (e (pen-snc (cmd "put-url-to-dump" url))))
+  (e (pen-snc (pen-cmd "put-url-to-dump" url))))
 
 
 (defun advice-handle-url (proc &rest args)
@@ -1773,7 +1773,7 @@ element is the data blob and the second element is the content-type."
           ((-reduce (lambda (a b) (or a b))
                     (mapcar (lambda (e) (string-match-p e url))
                             eww-ff-dom-matchers))
-           (pen-snc (cmd "sps" "ff" url))
+           (pen-snc (pen-cmd "sps" "ff" url))
            ;; (let ((eww-use-chrome t)
            ;;       (eww-update-ci t))
            ;;   (let ((res (apply proc args)))
@@ -1955,7 +1955,7 @@ instead of `browse-url-new-window-flag'."
                  (list p)))
 
   (if (sor url)
-      (mtv (pen-snc (cmd "summarize-page" url)))))
+      (mtv (pen-snc (pen-cmd "summarize-page" url)))))
 
 (defun google-this-url-in-this-domain (url domain)
   (interactive (let* ((p (get-path))
@@ -2059,7 +2059,7 @@ instead of `browse-url-new-window-flag'."
                          (t (read-string-hist "mirror url: ")))))
                  (list u)))
 
-  (sps (cmd "my-mirror-site" url)))
+  (sps (pen-cmd "my-mirror-site" url)))
 
 (defun eww-select-wayback-for-url (url)
   (interactive (let ((u (cond
@@ -2068,7 +2068,7 @@ instead of `browse-url-new-window-flag'."
                  (list u)))
 
   (let ((page (pen-snc "sed -n 's=^https*://\\([^/]*\\)\\(.*\\)=\\2=p'" url))
-        (sel (fz (pen-snc (concat (cmd "wayback" url) " | tac"))
+        (sel (fz (pen-snc (concat (pen-cmd "wayback" url) " | tac"))
                  nil nil "wayback result: ")))
 
     (if (sor sel)
