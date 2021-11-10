@@ -218,3 +218,5 @@ mkdir -p ~/.config/efm-langserver
 pip3 install jinja2-cli
 
 agi imagemagick
+
+agi icoutils
