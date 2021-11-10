@@ -31,6 +31,13 @@ This is useful for code-understanding when reading languages you don't understan
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defcustom pen-eww-text-only t
+  "eww text mode only"
+  :type 'boolean
+  :group 'pen
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
 (defcustom pen-force-strip-unicode t
   "Strip unicode from input"
   :type 'boolean
