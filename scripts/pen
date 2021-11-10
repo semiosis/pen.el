@@ -22,7 +22,7 @@ ensure_dependencies() {
         for s in realpath basename; do
             echo "https://command-not-found.com/$s"
         done
-        
+
         exit "$?"
     fi
 }
@@ -221,9 +221,9 @@ fi
 
 if test "$start_shell" = "y"; then
     export DISPLAY=
-    # nvt 
+    # nvt
 
-    docker exec -it pen 'sh' '-c' '. /root/.emacs.d/pen.el/scripts/setup-term.sh; /bin/bash || /bin/zsh || sh' 
+    docker exec -it pen 'sh' '-c' '. /root/.emacs.d/pen.el/scripts/setup-term.sh; /bin/bash || /bin/zsh || sh'
     exit "$?"
 fi
 
