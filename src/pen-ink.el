@@ -191,6 +191,7 @@
 
 (defun ink-propertise (s)
   (ink-decode (ink-encode-from-data s pen-last-prompt-data)))
+(defalias 'ink-propertize 'ink-propertise)
 
 (comment
  (defun ink-remove-bad-properties ()
@@ -210,10 +211,10 @@
     (-uniq
      (flatten-once
       (cl-loop for inl in (object-intervals s)
-            collect
-            (cl-loop for (p v) on (nth 2 inl) while v
-                  collect
-                  (list p v)))))))
+               collect
+               (cl-loop for (p v) on (nth 2 inl) while v
+                        collect
+                        (list p v)))))))
 
  (defun ink-depropertize (ink)
    ink
@@ -236,7 +237,6 @@
               (pen-etv text))
           text))
     ""))
-(defalias 'ink-propertize 'ink-decode)
 
 (defun ink-decode-source-buffer ()
   (interactive)

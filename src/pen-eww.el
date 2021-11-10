@@ -143,7 +143,7 @@ element is the data blob and the second element is the content-type."
                              (shr-fill-text
                               (or (dom-attr dom 'title) alt))))))))
 
-(defun shr-browse-image (&optional copy-url)
+(defun shr-browse-image (&optional arg)
   "Browse the image under point.
 If COPY-URL (the prefix if called interactively) is non-nil, copy
 the URL of the image to the kill buffer instead."
@@ -152,15 +152,17 @@ the URL of the image to the kill buffer instead."
     (cond
      ((not url)
       (message "No image under point"))
-     (copy-url
+     ((>= (prefix-numeric-value current-prefix-arg) 8)
       (with-temp-buffer
         (insert url)
         (copy-region-as-kill (point-min) (point-max))
         (message "Copied %s" url)))
+     ((>= (prefix-numeric-value current-prefix-arg) 4)
+      (message "Browsing %s..." url)
+      (my/eww-browse-url url))
      (t
       (message "Browsing %s..." url)
       (pen-snc (cmd "sps" "win" "ie" url))
-      ;; (my/eww-browse-url url)
       ;; (sps (cmd "unbuffer" "timg" url))
       ;; (sps (concat (cmd "timg" url) " | less -rS") "-s")
       ;; (pen-snc (cmd "sps" "-E" (concat (cmd "timg" url) " | less -rS")))
