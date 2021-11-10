@@ -1,0 +1,35 @@
+#!/bin/bash
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    fp="$(cat)"
+fi
+
+: "${fp:="$1"}"
+
+if test -f "$fp"; then
+    rp="$(realpath "$fp")"
+else
+    # Probably URL
+    rp="$fp"
+fi
+
+{
+td_thing="$(mktemp -t -d td_thingXXXXXX || echo /dev/null)"
+cd "$td_thing"
+
+if ! test -f "$rp" && printf -- "%s\n" "$rp" | grep -q -P '^https?://'; then
+    wget "$rp" -O old
+fi
+
+if test -f old; then
+    convert old -resize 600x400\> ./new.jpg
+fi
+} &>/dev/null
+
+if test -f "new.jpg"; then
+    echo "$(pwd)/new.jpg"
+fi
