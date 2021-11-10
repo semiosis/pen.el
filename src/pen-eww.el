@@ -6,6 +6,13 @@
     (shut-up (write-to-file data fp))
     fp))
 
+(defun display-graphic-p-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (and (not pen-eww-text-only)
+         res)))
+(advice-add 'display-graphic-p :around #'display-graphic-p-around-advice)
+;; (advice-remove 'display-graphic-p #'display-graphic-p-around-advice)
+
 (defun shr-put-image (spec alt &optional flags)
   "Insert image SPEC with a string ALT.  Return image.
 SPEC is either an image data blob, or a list where the first

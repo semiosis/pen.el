@@ -100,18 +100,6 @@ stty stop undef; stty start undef
 # But file sharing could work with the client if I use a hardlink to the ~/.pen/documents directory
 # docker run --rm -v "$(pwd):/$(pwd | slugify)" -w "/$(pwd | slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh
 
-IFS= read -r -d '' banner <<HEREDOC
- [0;1;31;91m▄[0;1;33;93m▄▄[0;1;32;92m▄▄[0;1;36;96m▄[0m                                            [0;1;33;93m▄[0;1;32;92m▄▄[0;1;36;96m▄[0m
- [0;1;33;93m█[0;1;32;92m█▀[0;1;36;96m▀▀[0;1;34;94m▀█[0;1;35;95m▄[0m                                          [0;1;32;92m▀[0;1;36;96m▀█[0;1;34;94m█[0m
- [0;1;32;92m█[0;1;36;96m█[0m    [0;1;35;95m█[0;1;31;91m█[0m   [0;1;32;92m▄█[0;1;36;96m██[0;1;34;94m█▄[0m   [0;1;31;91m█[0;1;33;93m█▄[0;1;32;92m██[0;1;36;96m██[0;1;34;94m▄[0m             [0;1;35;95m▄█[0;1;31;91m██[0;1;33;93m█▄[0m     [0;1;34;94m█[0;1;35;95m█[0m
- [0;1;36;96m█[0;1;34;94m██[0;1;35;95m██[0;1;31;91m█▀[0m   [0;1;32;92m█[0;1;36;96m█▄[0;1;34;94m▄▄[0;1;35;95m▄█[0;1;31;91m█[0m  [0;1;33;93m█[0;1;32;92m█▀[0m   [0;1;34;94m█[0;1;35;95m█[0m            [0;1;35;95m█[0;1;31;91m█▄[0;1;33;93m▄▄[0;1;32;92m▄█[0;1;36;96m█[0m    [0;1;35;95m█[0;1;31;91m█[0m
- [0;1;34;94m█[0;1;35;95m█[0m        [0;1;36;96m█[0;1;34;94m█▀[0;1;35;95m▀▀[0;1;31;91m▀▀[0;1;33;93m▀[0m  [0;1;32;92m█[0;1;36;96m█[0m    [0;1;35;95m█[0;1;31;91m█[0m            [0;1;31;91m█[0;1;33;93m█▀[0;1;32;92m▀▀[0;1;36;96m▀▀[0;1;34;94m▀[0m    [0;1;31;91m█[0;1;33;93m█[0m
- [0;1;35;95m█[0;1;31;91m█[0m        [0;1;34;94m▀[0;1;35;95m██[0;1;31;91m▄▄[0;1;33;93m▄▄[0;1;32;92m█[0m  [0;1;36;96m█[0;1;34;94m█[0m    [0;1;31;91m█[0;1;33;93m█[0m     [0;1;34;94m██[0m     [0;1;33;93m▀[0;1;32;92m██[0;1;36;96m▄▄[0;1;34;94m▄▄[0;1;35;95m█[0m    [0;1;33;93m█[0;1;32;92m█▄[0;1;36;96m▄▄[0m
- [0;1;31;91m▀[0;1;33;93m▀[0m          [0;1;31;91m▀[0;1;33;93m▀▀[0;1;32;92m▀▀[0m   [0;1;34;94m▀[0;1;35;95m▀[0m    [0;1;33;93m▀[0;1;32;92m▀[0m     [0;1;35;95m▀▀[0m       [0;1;36;96m▀[0;1;34;94m▀▀[0;1;35;95m▀▀[0m      [0;1;36;96m▀▀[0;1;34;94m▀▀[0m
-
-              [0;1;35;95mPr[0;1;31;91mom[0;1;33;93mpt[0m [0;1;32;92mE[0;1;36;96mng[0;1;34;94min[0;1;35;95mee[0;1;31;91mri[0;1;33;93mng[0m [0;1;32;92mi[0;1;36;96mn[0m [0;1;34;94mEm[0;1;35;95mac[0;1;31;91ms[0m
-HEREDOC
-
 IFS= read -r -d '' info_txt <<HEREDOC
 Pen is under continual development.
 If something is broken, try pulling everything.
@@ -252,7 +240,7 @@ cmd-nice() {
 
     for var in "$@"
     do
-        printf '"%s" ' "$(printf %s "$var" | sed 's/"/\\"/g')";
+        printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
     done | sed 's/ $//'
 }
 
@@ -502,6 +490,12 @@ case "$sn" in
     }
     ;;
 
+    lg) {
+        show_banner=n
+        set -- -ic "(funcall-interactively 'eww $(cmd-nice "$1"))"
+    }
+    ;;
+
     penh) {
         if test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
             fun="$1"
@@ -579,6 +573,7 @@ esac
 {
 if ! test "$show_banner" = n; then
     printf -- "%s\n" "$banner"
+    pen-banner.sh
     echo
     echo Version: 0.1, License: GPL-3
     echo
@@ -608,6 +603,23 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -c) {
         batch=y
         docker_cmd=exec
+
+        shift
+
+        CMD="$(cmd-nice "$@")"
+        : ${CMD:="$(cmd-nice "$@")"}
+
+        remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
+
+        # Shift all so it doesn't do -e here
+        # shift "$#"
+    }
+    ;;
+
+    -ic) {
+        batch=y
+        docker_cmd=exec
+        interactive=y
 
         shift
 
@@ -786,7 +798,11 @@ HEREDOC
 
     # --user "$(id -u):$(id -g)"
     exec) {
-        evalcommand="$(cmd "$(cmd eval "$(cmd "$remote_cmd" "$@")")")"
+        if test "$interactive" = "y"; then
+            set -- -e "$@"
+        fi
+
+        evalcommand="$(cmd-nice "$(cmd-nice eval "$(cmd-nice "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
 docker "$docker_cmd" $(test "$HAS_TTY" = y && printf -- "%s " -ti ) pen bash -c $evalcommand
 HEREDOC
