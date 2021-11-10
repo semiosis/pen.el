@@ -29,7 +29,7 @@ if test -f old; then
     if file --mime-type -Lb old | grep -q -P '/vnd.microsoft.icon'; then
         icotool -x old
         mv "$(ls old_1*)" new.png
-        convert "old[0]" -resize 800x600\> ./new.jpg
+        convert "new.png" -resize 800x600\> ./new.jpg
     elif file --mime-type -Lb old | grep -q -P '/gif'; then
         convert "old[0]" -resize 800x600\> ./new.jpg
     else
