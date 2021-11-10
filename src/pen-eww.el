@@ -1,3 +1,5 @@
+(require 'eww)
+
 (defun file-from-data (data)
   (let* ((hash (sha1 data))
          (fp (f-join "/tmp" hash)))
