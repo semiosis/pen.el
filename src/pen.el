@@ -3623,6 +3623,27 @@ May use to generate code from comments."
     (if (sor results)
         (setq results (pen-vector2list (json-parse-string results))))
 
+    (pen-etv
+     (let* ((result
+             (cond
+              ((and (stringp result)
+                    (re-match-p "\\`[0-9]+\\'" result))
+               (car results))
+              ((stringp result) result)
+              (results
+               (fz results))))
+            (the-increase (- (length result)
+                             orig-inject-len)))
+       (apply
+        fun
+        (append vals
+                `(:inject-gen-start
+                  ,(s-right
+                    (+ (- (length result) (- end-pos collect-from-pos))
+                       the-increase)
+                    result)
+                  :force-interactive t)))))
+
     (comment (pen-etv `(list :inject-gen-start
                              ,(s-right
                                (- (length result) (- end-pos collect-from-pos))
@@ -3647,27 +3668,6 @@ May use to generate code from comments."
 
     ;; This works but I need to also force interactive
     ;; Still buggy. Now it's chopping off the start
-
-    (pen-etv
-     (let* ((result
-             (cond
-              ((and (stringp result)
-                    (re-match-p "\\`[0-9]+\\'" result))
-               (car results))
-              ((stringp result) result)
-              (results
-               (fz results))))
-            (the-increase (- (length result)
-                             orig-inject-len)))
-       (apply
-        fun
-        (append vals
-                `(:inject-gen-start
-                  ,(s-right
-                    (+ (- (length result) (- end-pos collect-from-pos))
-                       the-increase)
-                    result)
-                  :force-interactive t)))))
 
     (comment
      (let ((result
