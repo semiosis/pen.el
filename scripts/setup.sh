@@ -185,6 +185,16 @@ git clone "https://github.com/dieggsy/eterm-256color"
 tic -s ./eterm-256color/eterm-256color.ti
 )
 
+apt install chromium
+
+(
+cd
+wget "http://ports.ubuntu.com/pool/universe/libh/libhtml-html5-parser-perl/libhtml-html5-parser-perl_0.301-2_all.deb"
+dpkg -i libhtml-html5-parser-perl_0.301-2_all.deb || true
+agi libhtml-html5-parser-perl
+agi libhtml-html5-entities-perl
+)
+
 (
 cd
 apt install wget
@@ -197,6 +207,15 @@ cd
 git clone "https://github.com/Aleph-Alpha/aleph-alpha-client"
 git checkout mm
 python3 setup.py build install
+)
+
+(
+apt install libxml2-dev libseccomp-dev
+apt install libcurl4-gnutls-dev
+cd
+git clone "https://github.com/eafer/rdrview"
+make
+make install
 )
 
 (
@@ -220,3 +239,8 @@ pip3 install jinja2-cli
 agi imagemagick
 
 agi icoutils
+
+agi x11-apps
+
+# urlencode
+agi gridsite-clients

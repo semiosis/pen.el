@@ -1,0 +1,123 @@
+#!/bin/bash
+export TTY
+
+enumerate=
+NO_REDIRECT=
+N_PAGES=
+: ${AS_USER:="me"}
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -all|-enum|-enumerate) {
+        enumerate=y
+        shift
+    }
+    ;;
+
+    -nr|-no-redirect) {
+        NO_REDIRECT=y
+        shift
+    }
+    ;;
+
+    -npages) {
+        N_PAGES="$2"
+        shift
+        shift
+    }
+    ;;
+
+    # TODO implement this. By default, results are sorted by creation
+    # date (i.e. for pull requests)
+    -sort-by) {
+        SORT_BY="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${SORT_BY:="created"}
+
+last_arg="${@: -1}"
+set -- "${@:1:$(($#-1))}" # shift last arg
+url="$last_arg"
+
+if printf -- "%s\n" "$url" | grep -q -P '//\.api\.github'; then
+    USE_PAGES=y
+fi
+
+curl() {
+    # I actually don't always want -L because I want to get the new url
+    if test "$NO_REDIRECT" = "y"; then
+        command curl -H "$@"
+    else
+        command curl -L "$@"
+    fi
+}
+
+if printf -- "%s\n" "$url" | grep -q -P 'github\.com/search/'; then
+    USE_PAGES=y
+    enumerate=y
+fi
+
+count_results() {
+    if printf -- "%s\n" "$url" | grep -q -P '/search/'; then
+        jq -r '.items? | length'
+    else
+        jq -r 'length'
+    fi
+
+    return 0
+}
+
+list_results() {
+    if printf -- "%s\n" "$url" | grep -q -P '/search/'; then
+        jq -r '.items[]?'
+    else
+        jq -r '.[]'
+    fi
+}
+
+fix_url_question_amp() {
+    printf -- "%s" "$1" | sed '/^[^?]*$/s/&/?/'
+}
+
+if test "$enumerate" = "y"; then
+    tf_results_page="$(pen-tf results_page || echo /dev/null)"
+    trap "rm \"$tf_results_page\" 2>/dev/null" 0
+
+    tf_results_combined="$(pen-tf results_combined || echo /dev/null)"
+    trap "rm \"$tf_results_combined\" 2>/dev/null" 0
+
+    n_results=
+
+    p=1
+    while :; do
+        newurl="$(fix_url_question_amp "${url}&page=$p&per_page=100")"
+        curl "$@" "$newurl" | awk 1 > "$tf_results_page"
+
+        n_results="$(cat "$tf_results_page" | count_results)"
+
+        if test -n "$n_results"; then
+            cat "$tf_results_page" | list_results >> "$tf_results_combined"
+        fi
+
+        ! test "$n_results" = "100" && break
+
+        test "$N_PAGES" = "$p" && break
+
+        ((++p))
+    done
+
+    cat "$tf_results_combined"
+else
+    if test "$USE_PAGES" = "y"; then
+        url_suffix="&per_page=100"
+    fi
+
+    newurl="$(fix_url_question_amp "$url$url_suffix")"
+
+    curl "$@" "$newurl"
+fi

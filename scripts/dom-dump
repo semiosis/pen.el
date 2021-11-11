@@ -1,0 +1,67 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -xml) {
+        TO_XML=y
+        shift
+    }
+    ;;
+
+    -t) {
+        export USE_TOR=y
+        shift
+    }
+    ;;
+
+    -w) {
+        WAITTIME="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export UPDATE
+
+url="$1"
+test -n "$url" || exit 1
+
+case "$url" in
+    *quora.com*) {
+        : "${WAITTIME:="4000"}"
+    }
+    ;;
+
+    *ryanong.co.uk*) {
+        : "${WAITTIME:="4000"}"
+    }
+    ;;
+
+    *clojuredocs.org*) {
+        : "${WAITTIME:="4000"}"
+    }
+    ;;
+
+    *)
+esac
+
+: "${WAITTIME:="2000"}"
+
+# 0</dev/null pen-ci 
+# 2</dev/null
+
+# bash -c "2>/dev/null chromium --no-sandbox --headless --ignore-certificate-errors --disable-gpu --virtual-time-budget=$WAITTIME $(test "$USE_TOR" = "y" && echo "--proxy-server=\"socks5://127.0.0.1:9050\"") --dump-dom $(cmd-nice-posix "$url")" | {
+bash -c "2>/dev/null chromium --no-sandbox --headless --ignore-certificate-errors --disable-gpu --dump-dom $(cmd-nice-posix "$url")" | {
+    # This fixes pirate bay in eww. It separates adjacent links for avy.
+    sed 's/<a / <a /g'
+} | {
+    if test "$TO_XML" = "y"; then
+        html2xhtml
+    else
+        cat
+    fi
+}

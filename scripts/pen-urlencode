@@ -1,0 +1,29 @@
+#!/bin/bash
+export TTY
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -z) {
+        nolines=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if stdin_exists; then
+    if test "$nolines" = "y"; then
+        /usr/bin/urlencode "$(cat)"
+    else
+        awk 1 | while IFS=$'\n' read -r line; do
+            /usr/bin/urlencode "$line"
+        done
+    fi
+else
+    /usr/bin/urlencode "$@"
+fi

@@ -7,12 +7,15 @@
 (require 'ace-link)
 (require 'eww)
 
+(defalias 'deselect 'deactivate-mark)
+
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/eww.el.gz
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/shr.el.gz
 
 (defset pen-url-cache-dir
   (f-join penconfdir
           "url-cache"))
+(f-mkdir pen-url-cache-dir)
 
 (defvar eww-racket-doc-only-www nil)
 (defset eww-after-render-hook '())
@@ -146,7 +149,7 @@ killed after rendering."
   ;; Check whether the domain only uses "Highly Restricted" Unicode
   ;; IDNA characters.  If not, transform to punycode to indicate that
   ;; there may be funny business going on.
-  (let ((parpen-sed (url-generic-parse-url url)))
+  (let ((parsed (url-generic-parse-url url)))
     (when (url-host parsed)
       (unless (puny-highly-restrictive-domain-p (url-host parsed))
         (setf (url-host parsed) (puny-encode-domain (url-host parsed)))))
@@ -477,7 +480,7 @@ Differences in #targets are ignored."
 
 (defun etv-dom ()
   (interactive)
-  (etv (eww-dom-to-xml)))
+  (pen-etv (eww-dom-to-xml)))
 
 (defun eww-render (status url &optional point buffer encode use-chrome)
   (if (or (not (lg-url-cache-exists url))
@@ -602,6 +605,7 @@ word(s) will be searched for via `eww-search-prefix'."
                           (if uris (format " (default %s)" (car uris)) "")
                           ": ")))
      (list (read-string prompt nil nil uris))))
+
   (setq url (pen-snc "pen-urldecode | chomp" url))
   (setq url (pen-redirect url))
 
@@ -626,7 +630,7 @@ word(s) will be searched for via `eww-search-prefix'."
   ;; Check whether the domain only uses "Highly Restricted" Unicode
   ;; IDNA characters.  If not, transform to punycode to indicate that
   ;; there may be funny business going on.
-  (let ((parpen-sed (url-generic-parse-url url)))
+  (let ((parsed (url-generic-parse-url url)))
     (when (url-host parsed)
       (unless (puny-highly-restrictive-domain-p (url-host parsed))
         (setf (url-host parsed) (puny-encode-domain (url-host parsed)))
@@ -1383,10 +1387,12 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 (defun advice-handle-url (proc &rest args)
   (let ((url (car args)))
+
     (setq url (pen-redirect url))
 
     (cond ((string-match-p "google.com/url\\?q=" url)
            (setq url (urldecode (pen-sed "/.*google.com\\/url?q=/{s/^.*google.com\\/url?q=\\([^&]*\\)&.*/\\1/}" url)))))
+
     (cond ((string-match-p "https?://github.com/.*/issues" url)
            (let ((res (apply proc args))) res))
           ((string-match-p "https?://gist.github.com/" url)
@@ -1462,10 +1468,14 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 ;; This is needed because so many functions are missing in Pen.el
 (advice-add 'advice-handle-url :around #'ignore-errors-around-advice)
+;; (advice-remove 'advice-handle-url #'ignore-errors-around-advice)
 
 (advice-add 'eww-browse-url :around #'advice-handle-url)
 
+;; Don't do this until I'm sure it works
 (advice-add 'eww :around #'advice-handle-url)
+(advice-remove 'eww #'advice-handle-url)
+
 (advice-add 'lg-eww :around #'advice-handle-url)
 
 (defun lg-eww-follow-link ()
@@ -1573,7 +1583,7 @@ instead of `browse-url-new-window-flag'."
    (list 'shr-url url
          'button t
          'category 'shr
-	       'help-echo (let ((parpen-sed (url-generic-parse-url
+	       'help-echo (let ((parsed (url-generic-parse-url
                                    (or (ignore-errors
 				                                 (decode-coding-string
 				                                  (url-unhex-string url)

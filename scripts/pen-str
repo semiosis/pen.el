@@ -331,5 +331,11 @@ case "$f" in
     }
     ;;
 
+    summary) {
+        # TODO Use prompting to summarize
+        cat
+    }
+    ;;
+
     *)
 esac

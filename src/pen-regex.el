@@ -2,6 +2,11 @@
 ;; $EMACSD/config/my-regex.el
 
 (defalias 'pen-unregexify 'regexp-quote)
+(defalias 'major-mode-p 'derived-mode-p)
+
+(defun recenter-top ()
+  (interactive)
+  (recenter-top-bottom scroll-margin))
 
 ;; This is horrible
 (defun pen-my-select-regex-at-point (pat &optional literal)
@@ -88,7 +93,7 @@
 
 (defun pen-string-match-literal (literal-pattern string &optional start)
   (if (stringp string)
-      (re-sensitive
+      (pen-re-sensitive
        (string-match (regexp-quote literal-pattern) string start))))
 (defalias 'str-match-p 'pen-string-match-literal)
 
@@ -111,14 +116,14 @@
   (if (use-region-p)
       (let ((bs (pen-selection)))
         (if (stringp bs)
-            (re-sensitive
+            (pen-re-sensitive
              (pen-string-match-literal s bs))))))
 (defalias 'str-in-region-p 'pen-string-in-region-p)
 
 (defun pen-string-in-buffer-p (s)
   (let ((bs (buffer-string)))
     (if (stringp bs)
-        (re-sensitive
+        (pen-re-sensitive
          (pen-string-match-literal s bs)))))
 (defalias 'str-in-buffer-p 'pen-string-in-buffer-p)
 
@@ -156,7 +161,7 @@
 
 (defun pen-re-in-buffer-p (s)
   (if (stringp s)
-      (re-sensitive
+      (pen-re-sensitive
        (string-match s (buffer-string)))))
 
 (defun pen-ire-in-region-p (s)
@@ -173,14 +178,14 @@
 (defun pen-re-in-region-or-path-p (s)
   (let ((p (get-path-nocreate))
         (rs (sor (pen-selection) "")))
-    (re-sensitive
+    (pen-re-sensitive
      (or (and (stringp s) (stringp rs) (string-match s rs))
          (and (stringp s) (stringp p) (string-match s p))))))
 
 (defun pen-re-in-buffer-or-path-p (s)
   (let ((p (get-path-nocreate))
         (bs (buffer-string)))
-    (re-sensitive
+    (pen-re-sensitive
      (or (and (stringp s) (stringp bs) (string-match s bs))
          (and (stringp s) (stringp p) (string-match s p))))))
 

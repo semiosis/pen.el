@@ -4,10 +4,10 @@
   (pen-sn (concat "hist-save " (pen-q name) " " (mapconcat 'pen-q (mapcar 'str body) " "))))
 
 (defun hg (name)
-  (str2lines (cl-sn (concat "hist-get " (pen-q name)) :chomp t)))
+  (str2lines (pen-cl-sn (concat "hist-get " (pen-q name)) :chomp t)))
 
 (defun hist-edit (name)
-  (find-file (cl-sn (concat "hist-getfile " (pen-q name)) :chomp t)))
+  (find-file (pen-cl-sn (concat "hist-getfile " (pen-q name)) :chomp t)))
 (defalias 'he 'hist-edit)
 
 (defmacro sh/hs (name &rest body)

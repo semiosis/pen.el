@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+name="$1"
+shift
+
+slug="$(echo "$name" | tr -d '\n' | slugify)"
+
+mkdir -p ~/.pen/hist
+cat ~/.pen/hist/${slug}.txt

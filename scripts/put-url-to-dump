@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+url="$1"
+test -n "$url" || exit 1
+
+if ! pl "$url" | grep -q -P '\.[a-zA-Z0-9]+$'; then
+    exit 1
+fi
+
+fp="$url"
+
+fp="$(printf -- "%s" "$url" | slugify -ks)"
+fn=$(basename "$url")
+dn="$DUMP/$(dirname "$fp")"
+ext="${fn##*.}"
+mant="${fn%.*}"
+
+mkdir -p "$dn"
+cd "$dn"
+
+wget -c "$url" -O "$fn" &>/dev/null
+
+# echo "$fn"
+
+if ! test -f "$fn"; then
+    echo "$fn doesn't exist"
+    exit 1
+fi
+
+echo "$dn/$fn"

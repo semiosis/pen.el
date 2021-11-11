@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+name="$1"
+shift
+
+slug="$(echo "$name" | tr -d '\n' | slugify)"
+
+mkdir -p ~/.pen/hist
+cmd-nice-posix "$@" | append-uniq ~/.pen/hist/${slug}.txt

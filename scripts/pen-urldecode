@@ -1,0 +1,13 @@
+#!/bin/bash
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+if stdin_exists; then
+    awk 1 | while IFS=$'\n' read -r line; do
+        /usr/bin/urlencode -d "$line"
+    done
+else
+    /usr/bin/urlencode -d "$@"
+fi

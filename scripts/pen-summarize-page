@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+url="$@"
+test -n "$url" || exit 1
+
+case "$url" in
+    *arxiv.org/*) {
+        fp="$(pen-tf txt)"
+        0</dev/null arxiv-summary "$url" > "$fp"
+        sps -E cat "$fp" | pen-str summary
+    }
+    ;;
+
+    *) {
+        0</dev/null rdrview "$url" | pen-str summary
+    }
+    ;;
+esac
