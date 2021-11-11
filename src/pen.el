@@ -1071,7 +1071,8 @@ Reconstruct the entire yaml-ht for a different language."
                     collect
                     ;; This required an ignore-errors
                     ;; To fix eww.
-                    ;; Some image urls would kill lg-generate-alttext
+                    ;; Some image urls would kill lg-generate-alttext.
+                    ;; A bad last-final-command is formed
                     (ignore-errors
                       (cons
                        (car atp)
