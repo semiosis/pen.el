@@ -971,8 +971,6 @@ xdg-open is a desktop utility that calls your preferred web browser."
                   (delete-region (point) (point-max))
 
                   (if (or
-                       ;; Disable rdrview
-                       nil
                        (not eww-use-rdrview)
                        (str-match-p "UNREADERABLE" html))
                       (insert (encode-coding-string html 'utf-8))
@@ -1333,22 +1331,23 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 (defun reload-eww-use-google-cache-matchers ()
   (setq eww-use-google-cache-matchers
-        (pen-str2list (chomp (cat "$NOTES/programs/eww/google-cache-url-patterns.txt")))))
+        (pen-str2list (chomp (cat (f-join penconfdir "conf" "google-cache-url-patterns.txt"))))))
 (reload-eww-use-google-cache-matchers)
 
 (defun reload-eww-use-chrome-dom-matchers ()
   (setq eww-use-chrome-dom-matchers
-        (pen-str2list (chomp (cat "$NOTES/programs/eww/chrome-dom-url-patterns.txt")))))
+        (pen-str2list (chomp (cat (f-join penconfdir "conf" "chrome-dom-url-patterns.txt"))))))
 (reload-eww-use-chrome-dom-matchers)
 
 (defun reload-eww-use-reader-matchers ()
   (setq eww-use-reader-matchers
-        (pen-str2list (chomp (cat "$NOTES/programs/eww/reader-url-patterns.txt")))))
+        (pen-str2list (chomp (cat (f-join penconfdir "conf" "reader-url-patterns.txt"))))))
 (reload-eww-use-reader-matchers)
 
 (defun reload-eww-ff-dom-matchers ()
   (setq eww-ff-dom-matchers
-        (pen-str2list (cat "$NOTES/programs/eww/ff-url-patterns.txt"))))
+        (pen-str2list
+         (cat (f-join penconfdir "conf" "ff-url-patterns.txt")))))
 (reload-eww-ff-dom-matchers)
 
 (defun eww-display-html-around-advice (proc &rest args)
