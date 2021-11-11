@@ -213,7 +213,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (defun pen-lg-select-rendering (results)
   (let* ((result (fz results nil nil "select rendering: ")))
-    (new-buffer-from-string result)))
+    (new-buffer-from-string (ink-propertise result))))
 
 (defun pen-lg-display-page (url)
   (interactive (list (read-string-hist "🔍 Enter URL: "
@@ -233,13 +233,13 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (comment
    (let* ((sites
            (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
-     (new-buffer-from-string sites nil 'text-mode)
+     (new-buffer-from-string (ink-propertise sites) nil 'text-mode)
      (comment (cl-loop for pg in sites do (new-buffer-from-string pg nil 'text-mode)))
      (comment
       (if (url-is-404 url)
           (cl-loop for pg in
                 (pf-imagine-a-website-from-a-url/1 url :no-select-result t)
-                do (pen-etv pg))
+                do (pen-etv (ink-propertise pg)))
         (eww url))))))
 
 (setq right-click-context-global-menu-tree
