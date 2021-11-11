@@ -1066,25 +1066,28 @@ Reconstruct the entire yaml-ht for a different language."
                         (eval-string ,(str (cdr atp))))))))
 
                   (final-envs
-                   (cl-loop
-                    for atp in final-envs
-                    collect
-                    ;; This required an ignore-errors
-                    ;; To fix eww.
-                    ;; Some image urls would kill lg-generate-alttext.
-                    ;; A bad last-final-command is formed
-                    (ignore-errors
-                      (cons
-                       (car atp)
-                       (let ((val (eval
-                                   `(pen-let-keyvals
-                                     ',subprompts-al
-                                     (eval-string ,(str (cdr atp)))))))
-                         (cond
-                          ((and (booleanp val)
-                                val)
-                           "y")
-                          (t (str val))))))))
+                   ;; Filter is needed because of ignore-errors
+                   (-filter
+                    'identity
+                    (cl-loop
+                     for atp in final-envs
+                     collect
+                     ;; This required an ignore-errors
+                     ;; To fix eww.
+                     ;; Some image urls would kill lg-generate-alttext.
+                     ;; A bad last-final-command is formed
+                     (ignore-errors
+                       (cons
+                        (car atp)
+                        (let ((val (eval
+                                    `(pen-let-keyvals
+                                      ',subprompts-al
+                                      (eval-string ,(str (cdr atp)))))))
+                          (cond
+                           ((and (booleanp val)
+                                 val)
+                            "y")
+                           (t (str val)))))))))
 
                   (vals
                    ;; If not called interactively then
@@ -1381,12 +1384,12 @@ Reconstruct the entire yaml-ht for a different language."
                    (progn
                      (comment
                       (pen-etv (pps
-                           `(expand-template
-                             (str (or
-                                   ,final-force-model
-                                   ,final-model ;At this stage, could only have been set by force-engine
-                                   ,(pen-var-value-maybe 'model)
-                                   ,,model))))))
+                                `(expand-template
+                                  (str (or
+                                        ,final-force-model
+                                        ,final-model ;At this stage, could only have been set by force-engine
+                                        ,(pen-var-value-maybe 'model)
+                                        ,,model))))))
                      (expand-template
                       (str (or
                             final-force-model
@@ -1575,7 +1578,7 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-prompt (s-remove-trailing-newline final-prompt))
 
                   (collect-from-pos (or (byte-string-search "<:pp>" final-prompt)
-                                      ;; (length final-prompt)
+                                        ;; (length final-prompt)
                                         (string-bytes final-prompt)))
 
                   (final-prompt
