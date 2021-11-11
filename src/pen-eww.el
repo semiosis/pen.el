@@ -52,6 +52,28 @@
 (defvar eww-use-reader-matchers)
 (defvar eww-ff-dom-matchers)
 
+(defun lg-list-history ()
+  (interactive)
+  (let ((l (pen-snc "uniqnosort"
+               (sed "s/^.*cache://"
+                    (pen-cl-sn "uq -l | tac" :stdin (pen-list2str (pen-hg "eww-display-html"))
+                               :chomp t)))))
+    (if (interactive-p)
+        (pen-etv l)
+      l)))
+
+(defun lg-fz-history ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (pen-he "eww-display-html")
+    (let ((url (fz
+                (lg-list-history)
+                nil
+                nil
+                "eww history: ")))
+      (if url
+          (lg-eww url)))))
+
 (defun eww-retrieve (url callback cbargs)
   (if (null eww-retrieve-command)
       (url-retrieve url #'eww-render
@@ -948,8 +970,11 @@ xdg-open is a desktop utility that calls your preferred web browser."
                 (save-mark-and-excursion
                   (delete-region (point) (point-max))
 
-                  (if (or (not eww-use-rdrview)
-                          (str-match-p "UNREADERABLE" html))
+                  (if (or
+                       ;; Disable rdrview
+                       nil
+                       (not eww-use-rdrview)
+                       (str-match-p "UNREADERABLE" html))
                       (insert (encode-coding-string html 'utf-8))
                     (insert html))))
               (setq encode (or encode charset 'utf-8))
@@ -1657,31 +1682,31 @@ instead of `browse-url-new-window-flag'."
 
 (defun eww-open-medium ()
   (interactive)
-  (dolist (url (pen-str2list (scrape "^https://medium\\..*" (eww-list-history))))
+  (dolist (url (pen-str2list (scrape "^https://medium\\..*" (lg-list-history))))
     (lg-eww url)
     (sleep 2)))
 
 (defun eww-open-huggingface ()
   (interactive)
-  (dolist (url (pen-str2list (scrape "^https://huggingface\\.co.*" (eww-list-history))))
+  (dolist (url (pen-str2list (scrape "^https://huggingface\\.co.*" (lg-list-history))))
     (lg-eww url)
     (sleep 2)))
 
 (defun eww-open-spacy ()
   (interactive)
-  (dolist (url (pen-str2list (scrape "^https://spacy\\.io.*" (eww-list-history))))
+  (dolist (url (pen-str2list (scrape "^https://spacy\\.io.*" (lg-list-history))))
     (lg-eww url)
     (sleep 2)))
 
 (defun eww-open-eleutherai ()
   (interactive)
-  (dolist (url (pen-str2list (scrape "^https://eleuther\\.ai.*" (eww-list-history))))
+  (dolist (url (pen-str2list (scrape "^https://eleuther\\.ai.*" (lg-list-history))))
     (lg-eww url)
     (sleep 2)))
 
 (defun eww-open-amazon ()
   (interactive)
-  (dolist (url (pen-str2list (scrape "^https://aws.amazon\\.com.*" (eww-list-history))))
+  (dolist (url (pen-str2list (scrape "^https://aws.amazon\\.com.*" (lg-list-history))))
     (lg-eww url)
     (sleep 2)))
 
@@ -1968,7 +1993,7 @@ the URL of the image to the kill buffer instead."
 (define-key eww-mode-map (kbd "A") 'pen-add-to-glossary-file-for-buffer)
 
 (define-key eww-mode-map (kbd "e") 'eww-reader)
-(define-key global-map (kbd "H-e") 'eww-fz-history)
+(define-key global-map (kbd "H-e") 'lg-fz-history)
 (define-key eww-mode-map (kbd "M-9") #'dict-word)
 (define-key eww-mode-map (kbd "m") #'toggle-use-chrome-locally)
 
