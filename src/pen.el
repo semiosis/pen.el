@@ -41,7 +41,9 @@
 (require 'pen-custom)
 (require 'pen-configure)
 (require 'pen-hist)
-(require 'pen-eww)
+(if (not
+     (try (require 'my-eww) nil))
+    (require 'pen-eww))
 (require 'eww-lnum)
 
 (defvar my-completion-engine 'pen-company-filetype)
