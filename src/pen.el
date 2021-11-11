@@ -3651,14 +3651,15 @@ May use to generate code from comments."
                (fz results))))
             (the-increase (- (length result)
                              orig-inject-len)))
-       `(,orig-inject-len ,end-pos ,collect-from-pos
-                          :inject-gen-start
-                          ,(pen-etv result)
-                          :force-interactive t
-                          ,(s-right
-                            (+ (- (length result) (- end-pos collect-from-pos))
-                               the-increase)
-                            result))))
+       (apply
+        fun
+        (append vals
+                `(:inject-gen-start
+                  ,(s-right
+                    (+ (- (length result) (- end-pos collect-from-pos))
+                       the-increase)
+                    result)
+                  :force-interactive t)))))
 
     (comment
      (let ((result
