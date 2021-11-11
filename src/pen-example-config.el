@@ -447,3 +447,18 @@
 (define-key pen-map (kbd "M-k") 'avy-goto-char)
 
 (advice-add 'kill-buffer-and-window :around #'ignore-errors-around-advice)
+
+;; (defun pen-kill-ring-save (beg end &optional region)
+;;   (interactive (list (mark) (point)
+;; 		                 (prefix-numeric-value current-prefix-arg)))
+;;   (let ((res (kill-ring-save beg end region)))
+;;     (xc (car kill-ring))
+;;     res))
+
+(defun kill-ring-save-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (xc (car kill-ring) t)
+    res))
+(advice-add 'kill-ring-save :around #'kill-ring-save-around-advice)
+
+;; (advice-remove 'kill-ring-save #'kill-ring-save-around-advice)
