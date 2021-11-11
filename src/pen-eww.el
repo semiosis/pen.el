@@ -827,7 +827,7 @@ If EXTERNAL is double prefix, browse in new buffer."
      ((string-match "^mailto:" url)
       (browse-url-mail url))
      ((string-match "^https?://asciinema.org/a/[a-zA-Z0-9]+$" url)
-      (tm-asciinema-play url))
+      (pen-tm-asciinema-play url))
      ((and (consp external) (<= (car external) 4))
       (funcall shr-external-browser url))
      ;; This is a #target url in the same page as the current one.
