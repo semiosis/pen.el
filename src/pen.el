@@ -1397,6 +1397,16 @@ Reconstruct the entire yaml-ht for a different language."
                             (pen-var-value-maybe 'model)
                             ,model)))))
 
+                  (final-frequency-penalty
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'frequency-penalty)
+                             ,frequency-penalty))))
+
+                  (final-presence-penalty
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'presence-penalty)
+                             ,presence-penalty))))
+
                   (final-repetition-penalty
                    (expand-template
                     (str (or (pen-var-value-maybe 'repetition-penalty)
@@ -1710,6 +1720,8 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_MIN_TOKENS" . ,final-min-tokens)
                             ("PEN_MAX_TOKENS" . ,final-max-tokens)
                             ("PEN_REPETITION_PENALTY" . ,final-repetition-penalty)
+                            ("PEN_FREQUENCY_PENALTY" . ,final-frequency-penalty)
+                            ("PEN_PRESENCE_PENALTY" . ,final-presence-penalty)
                             ("PEN_LENGTH_PENALTY" . ,final-length-penalty)
                             ("PEN_MIN_GENERATED_TOKENS" . ,final-min-generated-tokens)
                             ("PEN_MAX_GENERATED_TOKENS" . ,final-max-generated-tokens)
@@ -1960,6 +1972,7 @@ Reconstruct the entire yaml-ht for a different language."
                        ;; I need to do more work on this
                        (pen-snc final-results-analyser (pen-list2str (mapcar 'pen-onelineify results)))
                      (if no-select-result
+                         ;; This behaviour isn't the best
                          (length results)
                        ;; This may insert immediately, so it's important to force selection
                        (cl-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match))))
@@ -2540,6 +2553,8 @@ Function names are prefixed with pf- for easy searching"
                       ;; API
 
                       (model (ht-get yaml-ht "model"))
+                      (frequency-penalty (ht-get yaml-ht "frequency-penalty"))
+                      (presence-penalty (ht-get yaml-ht "presence-penalty"))
                       (repetition-penalty (ht-get yaml-ht "repetition-penalty"))
                       (length-penalty (ht-get yaml-ht "length-penalty"))
 
@@ -3597,10 +3612,13 @@ May use to generate code from comments."
          (end-pos (or (pen-num (cdr (assoc "PEN_END_POS" al))) 0))
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
+    (if (sor results)
+        (setq results (pen-vector2list (json-parse-string results))))
+
     (comment (pen-etv `(list :inject-gen-start
-                         ,(s-right
-                           (- (length result) (- end-pos collect-from-pos))
-                           result))))
+                             ,(s-right
+                               (- (length result) (- end-pos collect-from-pos))
+                               result))))
     ;; (pen-etv (pps (list orig-inject-len vals result fun)))
     ;; (call-interactively-with-parameters )
     ;; (pen-etv (pps (append vals `(:inject-gen-start
@@ -3608,7 +3626,7 @@ May use to generate code from comments."
     ;;                   (- (length result) (- end-pos collect-from-pos))
     ;;                   result)))))
     (comment (pen-etv (pps (append vals `(:inject-gen-start
-                                      ,result)))))
+                                          ,result)))))
 
     ;; Sadly, this doesn't get the parameters, for some reason
     (comment (call-interactively-with-parameters
@@ -3625,9 +3643,12 @@ May use to generate code from comments."
     (pen-etv
      (let* ((result
              (cond
+              ((and (stringp result)
+                    (re-match-p "\\`[0-9]+\\'" result))
+               (car results))
               ((stringp result) result)
               (results
-               (fz (pen-vector2list (json-parse-string results))))))
+               (fz results))))
             (the-increase (- (length result)
                              orig-inject-len)))
        `(,orig-inject-len ,end-pos ,collect-from-pos
@@ -3649,8 +3670,8 @@ May use to generate code from comments."
         fun
         (append vals `(:inject-gen-start
                        ,(pen-etv (s-right
-                             (- (length result) (- end-pos collect-from-pos))
-                             result))
+                                  (- (length result) (- end-pos collect-from-pos))
+                                  result))
                        :force-interactive t)))))))
 
 (comment (s-right (- (length "full text") (length "full")) "full text"))
