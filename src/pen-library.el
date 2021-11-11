@@ -492,4 +492,8 @@ It's really meant for key bindings and which-key, so they should all be interact
        (etv ,o)
      ,o))
 
+(defun buffer-exists (bufname)
+  (not (eq nil (get-buffer bufname))))
+(defalias 'buffer-match-p 'buffer-exists)
+
 (provide 'pen-library)

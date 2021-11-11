@@ -1502,6 +1502,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
 (advice-remove 'eww #'advice-handle-url)
 
 (advice-add 'lg-eww :around #'advice-handle-url)
+(advice-remove 'lg-eww #'advice-handle-url)
 
 (defun lg-eww-follow-link ()
   (interactive)
