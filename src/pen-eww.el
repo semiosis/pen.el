@@ -686,7 +686,11 @@ word(s) will be searched for via `eww-search-prefix'."
 
 (defun lg-url-is-404 (url)
   "URL is 404"
-  (pen-sn-true (concat "curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
+  (let ((info (pen-sn (concat "curl-firefox -s -I " (pen-q url)))))
+    (comment
+     (pen-sn-true (concat "curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
+    (or (re-match-p "404 Not Found" info)
+        (not (sor info)))))
 
 (defun google-cachify (url)
   (concat "http://webcache.googleusercontent.com/search?q=cache:" (google-uncachify url)))
