@@ -295,6 +295,24 @@ Reconstruct the entire yaml-ht for a different language."
                 (string-replace "\n" "<pen-newline>"))))
     encoded))
 
+(defun pen-decode-string (s)
+  (comment (let ((decoded
+                  (->> s
+                    ;; (string-replace ";" "<pen-semicolon>")
+                    (string-replace "<pen-doublequote>" "\"")
+                    (string-replace "<pen-colon>" ":")
+                    ;; This breaks it because it encodes slugs. Don't do it
+                    ;; (string-replace "-" "<pen-dash>")
+                    (string-replace "<pen-singlequote>" "'")
+                    (string-replace "<pen-backtick>" "`")
+                    (string-replace "<pen-bang>" "!")
+                    (string-replace "<pen-notnewline>" "\\n")
+                    (string-replace "<pen-dollar>" "$")
+                    (string-replace "<pen-dnl>" "\n\n")
+                    (string-replace "<pen-newline>" "\n"))))
+             decoded))
+  (pen-snc "pen-decode-string" s))
+
 ;; This is necessary because the string-search
 ;; command is not available in emacs27
 (defun pen-string-search (needle haystack &optional start-pos)
@@ -3621,6 +3639,8 @@ May use to generate code from comments."
          ;; (orig-inject-len (string-bytes (cdr (assoc "PEN_INJECT_GEN_START" al))))
          (orig-inject-len (length (cdr (assoc "PEN_INJECT_GEN_START" al))))
          ;; Sometimes this is a number, (i.e. when select is disabled, or if selection was done extrinsically)
+         (prompt (pen-decode-string (cdr (assoc "PEN_PROMP" al))))
+         (prompt-length (length prompt))
          (result (cdr (assoc "PEN_RESULT" al)))
          ;; This is json encoded
 
@@ -3644,12 +3664,11 @@ May use to generate code from comments."
             (the-increase (- (length result)
                              orig-inject-len)))
 
-       ;; (tv (str (length result)))
-       ;; (tv `(,result
-       ;;       ,(length result)
-       ;;       ,end-pos
-       ;;       ,the-increase
-       ;;       ,collect-from-pos))
+       (tv `(,result
+             ,(length result)
+             ,end-pos
+             ,the-increase
+             ,collect-from-pos))
 
        (apply
         fun
@@ -3658,13 +3677,11 @@ May use to generate code from comments."
                   ,(s-right
                     (+ (- (length result)
                           (- end-pos collect-from-pos))
-                       0
+                       the-increase)
                     result)
                   :force-interactive
                   (or (interactive-p)
                       force-interactive))))))))
-
-(comment (s-right (- (length "full text") (length "full")) "full text"))
 
 (provide 'pen)
 

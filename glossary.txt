@@ -269,3 +269,37 @@ openai-ft-report
     fine-tuning run.
 
     py -36 i openai-finetune
+
+PEN_RESULT
+    http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-website-from-a-url-1.prompt
+
+    The text that begins at
+    PEN_COLLECT_FROM_POS (before
+    PEN_INJECT_GEN_START) but has even more
+    text.
+
+PEN_COLLECT_FROM_POS
+    http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-website-from-a-url-1.prompt
+
+    Just before the URL.
+
+PEN_END_POS
+    http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-website-from-a-url-1.prompt
+
+    The end of the prompt (including the
+    PEN_INJECT_GEN_START, which is the last
+    part of the prompt).
+
+PEN_INJECT_GEN_START
+    http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-website-from-a-url-1.prompt
+
+    The text that begins just after
+    PEN_COLLECT_FROM_POS. There is no recorded
+    byte position. It was the previous
+    generation.
+
+PEN_PROMPT
+    http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-website-from-a-url-1.prompt
+
+    The entire prompt, but only goes until the
+    end of the PEN_INJECT_GEN_START string.
