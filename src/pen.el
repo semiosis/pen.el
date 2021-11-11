@@ -3602,10 +3602,19 @@ May use to generate code from comments."
 (defun pen-vector2list (v)
   (append v nil))
 
-(defun pen-continue-from-hist ()
+(cl-defun pf-continue-last (&key no-select-result include-prompt no-gen select-only-match variadic-var inject-gen-start force-interactive)
+  (interactive)
+  (pen-continue-from-hist t force-interactive))
+
+
+(defun pen-continue-from-hist (&optional last force-interactive)
   (interactive)
   (let* ((fp (f-join penconfdir "prompt-hist.el"))
-         (sel (fz (pen-sn "tac" (s/awk1 (e/cat fp))) nil nil "pen-continue-from-hist: "))
+         (hist-list (pen-str2list (pen-sn "tac" (s/awk1 (e/cat fp)))))
+         (sel
+          (if last
+              (car hist-list)
+            (fz hist-list nil nil "pen-continue-from-hist: ")))
          (al (eval-string sel))
          ;; (vals (apply 'pen-cmd (eval-string (concat "'" (cdr (assoc "PEN_VALS" al))))))
          (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
@@ -3663,11 +3672,15 @@ May use to generate code from comments."
                 `(:inject-gen-start
                   ,(s-right
                     (- (length result) (- end-pos collect-from-pos))
+                    ;; TODO get it to use the-increase again
+
                     ;; (- (+ (- (length result) (- end-pos collect-from-pos))
                     ;;       the-increase)
                     ;;    (- end-pos collect-from-pos))
                     result)
-                  :force-interactive t)))))
+                  :force-interactive
+                  (or (interactive-p)
+                      force-interactive))))))
 
     (comment (pen-etv `(list :inject-gen-start
                              ,(s-right
