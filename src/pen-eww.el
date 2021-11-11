@@ -1894,12 +1894,13 @@ element is the data blob and the second element is the content-type."
 
                  ;; This happens at load for the blog logo
                  (lg-generate-alttext url (sor alt))))
-            (comment (insert fullalttext))
-            (insert-image
-             ;; A placeholder image gets reloaded
-             ;; How to keep the alttext, if it's a placeholder image?
-             (shr-make-placeholder-image dom)
-             (or fullalttext "")))
+            (insert fullalttext)
+            (never
+             (insert-image
+              ;; A placeholder image gets reloaded
+              ;; How to keep the alttext, if it's a placeholder image?
+              (shr-make-placeholder-image dom)
+              (or fullalttext ""))))
           (insert " ")
           ;; This reloaded the image, but there is no need
           ;; Because alttext was used
