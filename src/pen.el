@@ -1449,6 +1449,8 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'action)
                              ,action))))
 
+                  ;; This could be a pf- function, elisp or shell command.
+                  ;; It completes until it doesn't complete anymore. 
                   (final-closer
                    (expand-template
                     (str (or (pen-var-value-maybe 'closer)
