@@ -6,7 +6,8 @@
 
 (defun recenter-top ()
   (interactive)
-  (recenter-top-bottom scroll-margin))
+  (ignore-errors
+    (recenter-top-bottom scroll-margin)))
 
 ;; This is horrible
 (defun pen-my-select-regex-at-point (pat &optional literal)
