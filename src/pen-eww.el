@@ -55,7 +55,7 @@
 (defun lg-list-history ()
   (interactive)
   (let ((l (pen-snc "uniqnosort"
-               (sed "s/^.*cache://"
+               (pen-sed "s/^.*cache://"
                     (pen-cl-sn "uq -l | tac" :stdin (pen-list2str (pen-hg "eww-display-html"))
                                :chomp t)))))
     (if (interactive-p)

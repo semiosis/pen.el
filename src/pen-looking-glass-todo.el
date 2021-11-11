@@ -780,7 +780,7 @@ word(s) will be searched for via `eww-search-prefix'."
 ;; OK Up to here
 
 (defun google-uncachify (url)
-  (sed "s=^http.\\?://webcache\\.googleusercontent\\.com/search?q\\=cache:==" url))
+  (pen-sed "s=^http.\\?://webcache\\.googleusercontent\\.com/search?q\\=cache:==" url))
 
 (defun toggle-cached-version ()
   (interactive)
@@ -1764,7 +1764,7 @@ element is the data blob and the second element is the content-type."
     (setq url (my-redirect url))
 
     (cond ((string-match-p "google.com/url\\?q=" url)
-           (setq url (urldecode (sed "/.*google.com\\/url?q=/{s/^.*google.com\\/url?q=\\([^&]*\\)&.*/\\1/}" url)))))
+           (setq url (urldecode (pen-sed "/.*google.com\\/url?q=/{s/^.*google.com\\/url?q=\\([^&]*\\)&.*/\\1/}" url)))))
     (cond ((string-match-p "https?://github.com/.*/issues" url)
            (let ((res (apply proc args))) res))
           ((string-match-p "https?://gist.github.com/" url)

@@ -267,8 +267,8 @@ Most of this is borrowed from python.el")
 
 ;; (defun extract-name-from-recent-item (s)
 ;;   ;; (pen-sn "sed \"s/^[^ ]\\+ \\(.*\\) \(.*/\\1/\"" s)
-;;   (sed "s/^\\[[0-9]\\+\\] //" (sed "s/ (.*//" s))
-;;   ;; (sed "s/^\\[[0-9]\\+\\] //" s))
+;;   (pen-sed "s/^\\[[0-9]\\+\\] //" (pen-sed "s/ (.*//" s))
+;;   ;; (pen-sed "s/^\\[[0-9]\\+\\] //" s))
 ;;   )
 
 ;; (defun filter-unread (input)
