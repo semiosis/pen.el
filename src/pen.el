@@ -3623,6 +3623,27 @@ May use to generate code from comments."
     (if (sor results)
         (setq results (pen-vector2list (json-parse-string results))))
 
+    (comment
+     (pen-etv
+      (let* ((result
+              (cond
+               ((and (stringp result)
+                     (re-match-p "\\`[0-9]+\\'" result))
+                (car results))
+               ((stringp result) result)
+               (results
+                (fz results))))
+             (the-increase (- (length result)
+                              orig-inject-len)))
+        `(,orig-inject-len ,end-pos ,collect-from-pos
+                           :inject-gen-start
+                           ,(pen-etv result)
+                           :force-interactive t
+                           ,(s-right
+                             (+ (- (length result) (- end-pos collect-from-pos))
+                                the-increase)
+                             result)))))
+
     (pen-etv
      (let* ((result
              (cond
