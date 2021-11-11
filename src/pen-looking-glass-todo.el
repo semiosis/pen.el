@@ -934,7 +934,7 @@ If EXTERNAL is double prefix, browse in new buffer."
 (define-key eww-bookmark-mode-map (kbd "C-k") 'eww-bookmark-kill-ask)
 (define-key eww-bookmark-mode-map (kbd "n") 'next-defun)
 (define-key eww-bookmark-mode-map (kbd "p") 'previous-defun)
-(define-key eww-mode-map (kbd "w") 'yank-path)
+(define-key eww-mode-map (kbd "w") 'pen-yank-path)
 (define-key eww-mode-map (kbd "Y") 'new-buffer-from-selection-detect-language)
 (define-key eww-mode-map (kbd "k") 'toggle-cached-version)
 

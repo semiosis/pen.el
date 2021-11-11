@@ -496,4 +496,13 @@ It's really meant for key bindings and which-key, so they should all be interact
   (not (eq nil (get-buffer bufname))))
 (defalias 'buffer-match-p 'buffer-exists)
 
+(defun pen-yank-path ()
+  (interactive)
+  (if (selection-p)
+      (with-current-buffer (new-buffer-from-string (selection))
+        (pen-guess-major-mode-set)
+        (xc (ns (get-path nil nil t)))
+        (kill-buffer))
+    (xc (ns (get-path)))))
+
 (provide 'pen-library)
