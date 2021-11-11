@@ -1069,17 +1069,21 @@ Reconstruct the entire yaml-ht for a different language."
                    (cl-loop
                     for atp in final-envs
                     collect
-                    (cons
-                     (car atp)
-                     (let ((val (eval
-                                 `(pen-let-keyvals
-                                   ',subprompts-al
-                                   (eval-string ,(str (cdr atp)))))))
-                       (cond
-                        ((and (booleanp val)
-                              val)
-                         "y")
-                        (t (str val)))))))
+                    ;; This required an ignore-errors
+                    ;; To fix eww.
+                    ;; Some image urls would kill lg-generate-alttext
+                    (ignore-errors
+                      (cons
+                       (car atp)
+                       (let ((val (eval
+                                   `(pen-let-keyvals
+                                     ',subprompts-al
+                                     (eval-string ,(str (cdr atp)))))))
+                         (cond
+                          ((and (booleanp val)
+                                val)
+                           "y")
+                          (t (str val))))))))
 
                   (vals
                    ;; If not called interactively then
