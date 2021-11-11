@@ -41,9 +41,12 @@
 (require 'pen-custom)
 (require 'pen-configure)
 (require 'pen-hist)
+
+;; Only load pen-eww if my-eww is not loaded 
 (if (not
      (try (require 'my-eww) nil))
     (require 'pen-eww))
+
 (require 'eww-lnum)
 
 (defvar my-completion-engine 'pen-company-filetype)
