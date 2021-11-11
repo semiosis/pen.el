@@ -52,6 +52,7 @@
 (package-install 'pcre2el)
 (package-install 'helpful)
 (package-install 'calibredb)
+(package-install 'w3m)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -96,6 +97,7 @@
 (require 'cua-base)
 (require 'helpful)
 (require 'calibredb)
+(require 'w3m)
 
 (require 'pen-custom)
 

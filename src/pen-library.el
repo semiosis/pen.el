@@ -436,4 +436,64 @@ It's really meant for key bindings and which-key, so they should all be interact
                      (pp body) t)))))
     `(defun ,slugsym () (interactive) ,@body)))
 
+(defmacro never (&rest body)
+  "Do not run this code"
+  `(if nil
+       (progn
+         ,@body)))
+
+(defmacro lm (&rest body)
+  "Interactive lambda with no arguments."
+  `(lambda () (interactive) ,@body))
+
+(defun short-hash (input)
+  "Probably a CRC hash of the input."
+  (chomp (pen-snc "short-hash" input)))
+
+(defun uniqify-buffer (b)
+  "Give the buffer a unique name"
+  (with-current-buffer b
+    (ignore-errors (let* ((hash (short-hash (str (time-to-seconds))))
+                          (new-buffer-name (pcre-replace-string "(\\*?)$" (concat "-" hash "\\1") (current-buffer-name))))
+                     (rename-buffer new-buffer-name)))
+    b))
+
+(defun pen-local-variable-p (sym)
+  (and (variable-p sym)
+       (local-variable-p sym)))
+(defalias 'pen-lvp 'pen-local-variable-p)
+
+(defun irc-find-line-with-diff-char (&optional step)
+  (interactive)
+  (if (not step)
+      (setq step -1))
+  ;; (message "%s" (str step))
+  (let ((start-col (current-column))
+        (start-ch (char-after (point))))
+    (cl-loop
+     while (zerop (forward-line step))
+     when (and (not (string-equal "\n" (str (thing-at-point 'line))))
+               (not (string-equal " " (str (thing-at-point 'char))))
+               (not (string-equal "	" (str (thing-at-point 'char))))
+               (= (move-to-column start-col) start-col)
+               (/= (char-after (point)) start-ch)
+               (/= (char-after (point)) (string-to-char " ")))
+     return t)))
+
+(defun irc-find-prev-line-with-diff-char ()
+  (interactive)
+  (irc-find-line-with-diff-char -1))
+
+(defun irc-find-next-line-with-diff-char ()
+  (interactive)
+  (irc-find-line-with-diff-char 1))
+
+(defmacro mtv (o)
+  "This might do an etv. It will do an etv if it was called interactively"
+
+  ;; This must be a macro so that when mtv is 'called', it gets its interactive status from the its calling function
+  `(if (interactive-p)
+       (etv ,o)
+     ,o))
+
 (provide 'pen-library)
