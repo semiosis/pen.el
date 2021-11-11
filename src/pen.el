@@ -1449,6 +1449,11 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'action)
                              ,action))))
 
+                  (final-closer
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'closer)
+                             ,closer))))
+
                   (final-return-postprocessor
                    (expand-template
                     (str (or (pen-var-value-maybe 'return-postprocessor)
@@ -2507,6 +2512,7 @@ Function names are prefixed with pf- for easy searching"
                       (expressions (pen--htlist-to-alist (ht-get yaml-ht "expressions")))
                       (validator (ht-get yaml-ht "validator"))
                       (prompt-filter (ht-get yaml-ht "prompt-filter"))
+                      (closer (ht-get yaml-ht "closer"))
                       (return-postprocessor (ht-get yaml-ht "return-postprocessor"))
                       (postprocessor (ht-get yaml-ht "postprocessor"))
                       (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
