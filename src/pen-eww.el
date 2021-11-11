@@ -637,47 +637,49 @@ word(s) will be searched for via `eww-search-prefix'."
       (setq url (concat "file://" url))
     (setq url (eww--dwim-expand-url url)))
 
-  ;; *eww-racket-doc*
-  (if (and (string-match "^\\*.*\\*$" (buffer-name))
-           (not (string-match "^\\*eww\\*$" (buffer-name))))
-      (pop-to-buffer-same-window
-       (if (eq major-mode 'eww-mode)
-           (current-buffer)
-         (get-buffer-create "*eww*")))
-    (uniqify-buffer (pop-to-buffer-same-window
-                     (if (eq major-mode 'eww-mode)
-                         (current-buffer)
-                       (get-buffer-create "*eww*")))))
-  (eww-setup-buffer)
-  ;; Check whether the domain only uses "Highly Restricted" Unicode
-  ;; IDNA characters.  If not, transform to punycode to indicate that
-  ;; there may be funny business going on.
-  (let ((parsed (url-generic-parse-url url)))
-    (when (url-host parsed)
-      (unless (puny-highly-restrictive-domain-p (url-host parsed))
-        (setf (url-host parsed) (puny-encode-domain (url-host parsed)))
-        (setq url (url-recreate-url parsed)))))
-  (plist-put eww-data :url url)
-  (plist-put eww-data :title "")
-  (eww-update-header-line-format)
-  (let ((inhibit-read-only t))
-    (insert (format "Loading %s..." url))
-    (goto-char (point-min))
+  (if (lg-url-is-404 url)
+      (pen-lg-display-page url)
+    (progn
+      ;; *eww-racket-doc*
+      (if (and (string-match "^\\*.*\\*$" (buffer-name))
+               (not (string-match "^\\*eww\\*$" (buffer-name))))
+          (pop-to-buffer-same-window
+           (if (eq major-mode 'eww-mode)
+               (current-buffer)
+             (get-buffer-create "*eww*")))
+        (uniqify-buffer (pop-to-buffer-same-window
+                         (if (eq major-mode 'eww-mode)
+                             (current-buffer)
+                           (get-buffer-create "*eww*")))))
+      (eww-setup-buffer)
+      ;; Check whether the domain only uses "Highly Restricted" Unicode
+      ;; IDNA characters.  If not, transform to punycode to indicate that
+      ;; there may be funny business going on.
+      (let ((parsed (url-generic-parse-url url)))
+        (when (url-host parsed)
+          (unless (puny-highly-restrictive-domain-p (url-host parsed))
+            (setf (url-host parsed) (puny-encode-domain (url-host parsed)))
+            (setq url (url-recreate-url parsed)))))
+      (plist-put eww-data :url url)
+      (plist-put eww-data :title "")
+      (eww-update-header-line-format)
+      (let ((inhibit-read-only t))
+        (insert (format "Loading %s..." url))
+        (goto-char (point-min))
 
-    (if (and (lg-url-cache-exists url)
-             (not lg-url-cache-update))
-        (let ((b (current-buffer)))
-          (with-temp-buffer
-            (insert (pen-url-cache url))
-            (goto-char (point-min))
-            (eww-render nil url (point) b))
-          (with-current-buffer b
-            (setq header-line-format (propertize (str header-line-format) 'face 'org-bold))))
+        (if (and (lg-url-cache-exists url)
+                 (not lg-url-cache-update))
+            (let ((b (current-buffer)))
+              (with-temp-buffer
+                (insert (pen-url-cache url))
+                (goto-char (point-min))
+                (eww-render nil url (point) b))
+              (with-current-buffer b
+                (setq header-line-format (propertize (str header-line-format) 'face 'org-bold))))
 
-      (url-retrieve url 'eww-render
-                    (list url nil (current-buffer) nil use-chrome)
-                    )))
-  (current-buffer))
+          (url-retrieve url 'eww-render
+                        (list url nil (current-buffer) nil use-chrome))))
+      (current-buffer))))
 
 (defun dom-to-str () (
                       (format "%S" (plist-get eww-data :dom))))
