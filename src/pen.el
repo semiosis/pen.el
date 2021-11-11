@@ -395,7 +395,7 @@ Reconstruct the entire yaml-ht for a different language."
                                         (-zip '("thing hi" "y") '("yo" "n")))))
 
 (defun scrape-all (re input)
-  (pen-str2list (pen-snc (pen-cmd "scrape" re) input)))
+  (pen-str2list (pen-snc (pen-cmd "pen-scrape" re) input)))
 
 (defun pen-expand-macros (s)
   (let ((scs (-filter-not-empty-string (scrape-all "<m:\\([^)]*\\)>" s))))
@@ -407,7 +407,7 @@ Reconstruct the entire yaml-ht for a different language."
                  (setq s (string-replace
                           sc
                           (pp-oneline
-                           (expand-macro
+                           (macroexpand
                             (eval-string
                              (concat "'" inner))))
                           s))))))
