@@ -3640,48 +3640,58 @@ May use to generate code from comments."
          (orig-inject-len (length (cdr (assoc "PEN_INJECT_GEN_START" al))))
          ;; Sometimes this is a number, (i.e. when select is disabled, or if selection was done extrinsically)
          (prompt (pen-decode-string (cdr (assoc "PEN_PROMP" al))))
+
+         ;; end-pos IS the length, so this is not needed
+         ;; But the values are still a little different
          (prompt-length (length prompt))
+
          (result (cdr (assoc "PEN_RESULT" al)))
          ;; This is json encoded
 
          (results (cdr (assoc "PEN_RESULTS" al)))
          (collect-from-pos (or (pen-num (cdr (assoc "PEN_COLLECT_FROM_POS" al))) 0))
          (end-pos (or (pen-num (cdr (assoc "PEN_END_POS" al))) 0))
+
+         (end-pos-original
+          (- end-pos orig-inject-len))
+
+         ;; The URL in imagine website
+         (pp-inject-length
+          (- end-pos-original collect-from-pos))
+
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
     (if (sor results)
         (setq results (pen-vector2list (json-parse-string results))))
 
-    (pen-etv
-     (let* ((result
-             (cond
-              ((and (stringp result)
-                    (re-match-p "\\`[0-9]+\\'" result))
-               (car results))
-              ((stringp result) result)
-              (results
-               (fz results))))
-            (the-increase (- (length result)
-                             orig-inject-len)))
+    ;; (pen-etv (str pp-inject-length))
 
-       (tv `(,result
-             ,(length result)
-             ,end-pos
-             ,the-increase
-             ,collect-from-pos))
+    (let* ((result
+            (cond
+             ((and (stringp result)
+                   (re-match-p "\\`[0-9]+\\'" result))
+              (car results))
+             ((stringp result) result)
+             (results
+              (fz results))))
+           (the-increase (- (length result)
+                            orig-inject-len)))
 
-       (apply
-        fun
-        (append vals
-                `(:inject-gen-start
-                  ,(s-right
-                    (+ (- (length result)
-                          (- end-pos collect-from-pos))
-                       the-increase)
-                    result)
-                  :force-interactive
-                  (or (interactive-p)
-                      force-interactive))))))))
+      (apply
+       fun
+       (append vals
+               `(:inject-gen-start
+                 ;; I want this to be everything from
+                 ;; PEN_END_POS_ORIGINAL_PROMPT
+                 ,(s-right
+                   (- (length (tv result))
+                      pp-inject-length
+                      ;; (- end-pos collect-from-pos)
+                      )
+                   result)
+                 :force-interactive
+                 (or (interactive-p)
+                     force-interactive)))))))
 
 (provide 'pen)
 
