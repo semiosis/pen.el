@@ -3632,28 +3632,6 @@ May use to generate code from comments."
     (if (sor results)
         (setq results (pen-vector2list (json-parse-string results))))
 
-    (comment
-     (pen-etv
-      (let* ((result
-              (cond
-               ((and (stringp result)
-                     (re-match-p "\\`[0-9]+\\'" result))
-                (car results))
-               ((stringp result) result)
-               (results
-                (fz results))))
-             (the-increase (- (length result)
-                              orig-inject-len)))
-
-        `(,orig-inject-len ,end-pos ,collect-from-pos
-                           :inject-gen-start
-                           ,(pen-etv result)
-                           :force-interactive t
-                           ,(s-right
-                             (+ (- (length result) (- end-pos collect-from-pos))
-                                the-increase)
-                             result)))))
-
     (pen-etv
      (let* ((result
              (cond
@@ -3666,6 +3644,13 @@ May use to generate code from comments."
             (the-increase (- (length result)
                              orig-inject-len)))
 
+       ;; (tv (str (length result)))
+       ;; (tv `(,result
+       ;;       ,(length result)
+       ;;       ,end-pos
+       ;;       ,the-increase
+       ;;       ,collect-from-pos))
+
        (apply
         fun
         (append vals
@@ -3673,9 +3658,16 @@ May use to generate code from comments."
                   ,(s-right
                     (+ (- (length result)
                           (- end-pos collect-from-pos))
+                       0
+                       ;; the-increase
+
+                       ;; 0
+                       ;; (- the-increase
+                       ;;    end-pos)
                        ;; These shoudl cancel out when the-increase = result (i.e. no injection)
-                       (- the-increase
-                          (length result)))
+                       ;; (- the-increase
+                       ;;    (- end-pos collect-from-pos))
+                       )
                     ;; TODO get it to use the-increase again
 
                     ;; (- (+ (- (length result) (- end-pos collect-from-pos))
@@ -3684,46 +3676,7 @@ May use to generate code from comments."
                     result)
                   :force-interactive
                   (or (interactive-p)
-                      force-interactive))))))
-
-    (comment (pen-etv `(list :inject-gen-start
-                             ,(s-right
-                               (- (length result) (- end-pos collect-from-pos))
-                               result))))
-    ;; (pen-etv (pps (list orig-inject-len vals result fun)))
-    ;; (call-interactively-with-parameters )
-    ;; (pen-etv (pps (append vals `(:inject-gen-start
-    ;;                 ,(s-right
-    ;;                   (- (length result) (- end-pos collect-from-pos))
-    ;;                   result)))))
-    (comment (pen-etv (pps (append vals `(:inject-gen-start
-                                          ,result)))))
-
-    ;; Sadly, this doesn't get the parameters, for some reason
-    (comment (call-interactively-with-parameters
-              fun
-              (append vals `(:inject-gen-start
-                             ,(s-right
-                               ;; Factor in orig-inject-len
-                               (- (length result) (- end-pos collect-from-pos))
-                               result)))))
-
-    ;; This works but I need to also force interactive
-    ;; Still buggy. Now it's chopping off the start
-
-    (comment
-     (let ((result
-            (cond
-             ((stringp result) result)
-             (results
-              (fz (pen-vector2list (json-parse-string results)))))))
-       (apply
-        fun
-        (append vals `(:inject-gen-start
-                       ,(pen-etv (s-right
-                                  (- (length result) (- end-pos collect-from-pos))
-                                  result))
-                       :force-interactive t)))))))
+                      force-interactive))))))))
 
 (comment (s-right (- (length "full text") (length "full")) "full text"))
 
