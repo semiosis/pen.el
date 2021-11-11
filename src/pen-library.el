@@ -442,10 +442,6 @@ It's really meant for key bindings and which-key, so they should all be interact
        (progn
          ,@body)))
 
-(defmacro lm (&rest body)
-  "Interactive lambda with no arguments."
-  `(lambda () (interactive) ,@body))
-
 (defun short-hash (input)
   "Probably a CRC hash of the input."
   (chomp (pen-snc "short-hash" input)))

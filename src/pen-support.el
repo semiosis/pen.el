@@ -181,6 +181,7 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
   "cat out a file"
   (setq path (pen-umn path))
   (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil dir))
+(defalias 'cat 's/cat)
 
 (defmacro comment (&rest body) nil)
 
@@ -471,7 +472,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
       (let ((exps
              (sh-construct-exports
               (-filter 'identity
-                       (list (list "PATH" (getenv "PATH"))
+                       (list (list "DISPLAY" ":0")
+                             (list "PATH" (getenv "PATH"))
                              (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
                              (if (or (pen-var-value-maybe 'pen-sh-update)
                                      (pen-var-value-maybe 'sh-update))

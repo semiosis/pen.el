@@ -111,6 +111,11 @@ care."
 (advice-add 'memoize-restore :around #'ignore-errors-around-advice)
 (advice-add 'memoize :around #'ignore-errors-around-advice)
 
+(memoize-restore 'lg-url-is-404)
+(memoize 'lg-url-is-404)
+(memoize-restore 'url-cache-is-404)
+(memoize 'url-cache-is-404)
+
 (defun test-memo ()
   (ilist 10 "tree species"))
 

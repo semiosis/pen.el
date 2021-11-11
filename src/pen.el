@@ -5,6 +5,10 @@
 (defvar pen-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
 
+(defmacro lm (&rest body)
+  "Interactive lambda with no arguments."
+  `(lambda () (interactive) ,@body))
+
 ;; For string-empty-p
 (require 'subr-x)
 (require 'pen-global-prefix)
@@ -34,9 +38,11 @@
 (require 'pen-nlp)
 (require 'pen-which-key)
 (require 'pen-elisp)
-(require 'pen-eww)
-
 (require 'pen-custom)
+(require 'pen-configure)
+(require 'pen-hist)
+(require 'pen-eww)
+(require 'eww-lnum)
 
 (defvar my-completion-engine 'pen-company-filetype)
 
@@ -3506,7 +3512,6 @@ May use to generate code from comments."
 (require 'pen-selected)
 (require 'pen-right-click-menu)
 (require 'pen-mouse)
-(require 'pen-configure)
 (require 'pen-prompt-description)
 (require 'pen-ii-description)
 (require 'pen-engine-description)

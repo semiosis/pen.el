@@ -6,7 +6,6 @@
 (require 'f)
 (require 'ace-link)
 (require 'eww)
-(require 'my-mode)
 
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/eww.el.gz
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/shr.el.gz
@@ -548,6 +547,7 @@ Differences in #targets are ignored."
 
 (defun lg-url-cache-exists (url)
   (setq url (pen-redirect url))
+
   (and lg-url-cache-enabled
        (or (f-exists-p (lg-url-cache-slug-fp url))
            (f-exists-p (lg-url-cache-slug-fp (google-cachify url))))))
@@ -570,6 +570,21 @@ Differences in #targets are ignored."
   (if (major-mode-p 'eww-mode)
       (f-delete (lg-url-cache-slug-fp url) t)))
 
+(defun pen-sps (&optional cmd nw_args input dir)
+  (interactive)
+
+  ;; Only run if available
+  (ignore-errors
+    (sps cmd nw_args input dir)))
+
+(defun browsh (&rest body)
+  (interactive (list (read-string "url:")))
+
+  (if (not body)
+      (setq body '("http://google.com")))
+
+  (pen-sps (concat "browsh " (pen-q (car body)))))
+
 (defun eww-open-browsh (path)
   (interactive (list (get-path)))
   (browsh path))
@@ -587,7 +602,7 @@ word(s) will be searched for via `eww-search-prefix'."
                           (if uris (format " (default %s)" (car uris)) "")
                           ": ")))
      (list (read-string prompt nil nil uris))))
-  (setq url (pen-snc "urldecode | chomp" url))
+  (setq url (pen-snc "pen-urldecode | chomp" url))
   (setq url (pen-redirect url))
 
   (hs "eww-display-html" url)
@@ -656,11 +671,6 @@ word(s) will be searched for via `eww-search-prefix'."
   "URL cache is 404"
   (not (url-found-p (google-cachify url))))
 
-(memoize-restore 'lg-url-is-404)
-(memoize 'lg-url-is-404)
-(memoize-restore 'url-cache-is-404)
-(memoize 'url-cache-is-404)
-
 (defun ecurl (url)
   (with-current-buffer (url-retrieve-synchronously url t t 5)
     (goto-char (point-min))
@@ -670,11 +680,6 @@ word(s) will be searched for via `eww-search-prefix'."
     (let ((result (buffer2string (current-buffer))))
       (kill-buffer)
       result)))
-
-(defun load-tetris-update ()
-  (with-current-buffer (new-buffer-from-string (ecurl "http://git.savannah.gnu.org/cgit/emacs.git/plain/lisp/play/gamegrid.el"))
-    (eval-buffer (current-buffer))
-    (kill-buffer)))
 
 (defun url-found-p (url)
   "Return non-nil if URL is found, i.e. HTTP 200."
@@ -696,7 +701,6 @@ word(s) will be searched for via `eww-search-prefix'."
     (let ((res (apply proc (list url))))
       res)))
 (advice-add 'eww--dwim-expand-url :around #'eww--dwim-expand-url-around-advice)
-;; (advice-remove 'eww--dwim-expand-url #'eww--dwim-expand-url-around-advice)
 
 (defun google-uncachify (url)
   (pen-sed "s=^http.\\?://webcache\\.googleusercontent\\.com/search?q\\=cache:==" url))
@@ -712,7 +716,6 @@ word(s) will be searched for via `eww-search-prefix'."
           (advice-remove 'eww--dwim-expand-url #'eww--dwim-expand-url-around-advice)
           (eww-browse-url url)
           (advice-add 'eww--dwim-expand-url :around #'eww--dwim-expand-url-around-advice)))))
-
 
 (defun toggle-use-chrome-locally ()
   (interactive)
@@ -765,7 +768,7 @@ word(s) will be searched for via `eww-search-prefix'."
     (when (equal (plist-get eww-data :url) (plist-get bookmark :url))
       (user-error "Already bookmarked")))
   (let ((title (replace-regexp-in-string "[\n\t\r]" " "
-                                         (e/chomp (sh-notty (concat "ci web title " (e/q uri)))))))
+                                         (chomp (pen-sn (concat "ci web title " (e/q uri)))))))
     (setq title (replace-regexp-in-string "\\` +\\| +\\'" "" title))
     (push (list :url uri
                 :title title
@@ -1356,12 +1359,25 @@ xdg-open is a desktop utility that calls your preferred web browser."
   (find-file (pen-snc (pen-cmd "put-url-to-dump" url))))
 
 
+(defun pen-gh-list-user-repos (user)
+  (pen-snc
+   (format
+    "pen-gh-curl -all -s \"https://api.github.com/users/%s/repos\" | jq -r '.html_url'"
+    user)))
+
 (defun fz-gh-list-user-repos (author)
   (interactive (list (read-string-hist "gh-list-user-repos: ")))
   (let ((repo
+         ;; TODO Get list from gh-search-user-clone-repo
          (fz (pen-snc (pen-cmd "gh-list-user-repos" author))
              nil nil "gh-list-user-repos select:")))
     repo))
+
+(defun urlencode (url)
+  (pen-sn "pen-urlencode | chomp" url))
+
+(defun urldecode (url)
+  (pen-sn "pen-urldecode | chomp" url))
 
 ;; TODO Add sps to pen.el
 
@@ -1374,17 +1390,17 @@ xdg-open is a desktop utility that calls your preferred web browser."
     (cond ((string-match-p "https?://github.com/.*/issues" url)
            (let ((res (apply proc args))) res))
           ((string-match-p "https?://gist.github.com/" url)
-           (sps (concat "o " (pen-q url))))
+           (pen-sps (concat "o " (pen-q url))))
           ((-reduce (lambda (a b) (or a b))
                     (mapcar (lambda (e) (string-match-p e url))
                             eww-ff-dom-matchers))
            (pen-snc (pen-cmd "sps" "ff" url)))
           ((string-match-p "https?://raw.githubusercontent.com/" url)
-           (sps (concat "o " (pen-q url))))
+           (pen-sps (concat "o " (pen-q url))))
           ((string-match-p "https?://arxiv.org/\\(abs\\|pdf\\)/" url)
-           (sps (concat "o " (pen-q url))))
+           (pen-sps (concat "o " (pen-q url))))
           ((string-match-p "https?://www.youtube.com/" url)
-           (sps (concat "ff " (pen-q url))))
+           (pen-sps (concat "ff " (pen-q url))))
           ((string-match-p "https?://.*/.*\\.\\(lhs\\)" url)
            (dump-url-file-and-edit url))
           ((or (string-match-p "stackoverflow.com/[aq]" url)
@@ -1394,14 +1410,14 @@ xdg-open is a desktop utility that calls your preferred web browser."
            (sx-from-url url))
           ((or (string-match-p "search\\.google\\.com/search-console" url)
                (string-match-p "mullikine\\.matomo\\.cloud" url))
-           (chrome url))
+           (pen-chrome url))
           ((or (string-match-p "asciinema\\.org/a/" url))
            (nw (concat "o " (pen-q url))))
           ((or (string-match-p "www\\.youtube\\.com/watch\\?v=" url)
                (string-match-p "https?://youtu\\.be" url))
-           (sps (concat "ff " (pen-q url))))
+           (pen-sps (concat "ff " (pen-q url))))
           ((string-match-p "magnet:\\?xt" url)
-           (sps (concat "rt " (pen-q url))))
+           (pen-sps (concat "rt " (pen-q url))))
           ((string-match-p "https?://\\(github\\\).com/[^/]+/?$" url)
            (let* ((author (s-replace-regexp "https?://github.com/" "" url))
                   (author (s-replace-regexp "/$" "" author)))
@@ -1514,7 +1530,7 @@ instead of `browse-url-new-window-flag'."
                  (list p)))
 
   (if (sor url)
-      (mtv (pen-snc (pen-cmd "summarize-page" url)))))
+      (mtv (pen-snc (pen-cmd "pen-summarize-page" url)))))
 
 (defun google-this-url-in-this-domain (url domain)
   (interactive (let* ((p (get-path))
@@ -1535,11 +1551,15 @@ instead of `browse-url-new-window-flag'."
     res))
 (advice-add 'eww-tag-meta :around #'eww-tag-meta-around-advice)
 
+(defun pen-chrome (url &optional smth)
+  (interactive (list (read-string-hist "chromium url: ")))
+  (pen-cl-sn (cmd "chromium" (pen-q url)) :detach t))
+
 (defun eww-open-in-chrome (url)
   (interactive (list (if (major-mode-p 'eww-mode)
                          (get-path)
                        (read-string-hist "chrome: "))))
-  (chrome url))
+  (pen-chrome url))
 
 (advice-add 'font-lock-fontify-keywords-region :around #'ignore-errors-around-advice)
 
@@ -1600,7 +1620,7 @@ instead of `browse-url-new-window-flag'."
                          (t (read-string-hist "mirror url: ")))))
                  (list u)))
 
-  (sps (pen-cmd "my-mirror-site" url)))
+  (pen-sps (pen-cmd "my-mirror-site" url)))
 
 (defun eww-select-wayback-for-url (url)
   (interactive (let ((u (cond
@@ -1615,14 +1635,6 @@ instead of `browse-url-new-window-flag'."
     (if (sor sel)
         (eww (concat sel page)))))
 
-(define-key eww-mode-map (kbd "y") 'eww-select-wayback-for-url)
-
-(defun eww-edit-histvar ()
-  (interactive)
-  (never
-   ;; Too slow
-   (edit-var-elisp 'histvar-fz-eww-history-)))
-
 ;; Merely overriding this function didn't even override it
 ;; lexical scope problem, probably
 (defun pen-eww-reload ()
@@ -1632,7 +1644,6 @@ instead of `browse-url-new-window-flag'."
       (let ((url (get-path)))
         (kill-buffer)
         (lg-eww url))))
-(define-key eww-mode-map (kbd "g") 'pen-eww-reload)
 
 (defun eww-open-medium ()
   (interactive)
@@ -1676,20 +1687,10 @@ instead of `browse-url-new-window-flag'."
 
 (defun eww-open-all-links ()
   (interactive)
-  ;; (etv (pps (pen-str2list (buffer-links))))
   (loop for url in (pen-str2list (buffer-links))
         do (progn
              (lg-eww url)
-             (sleep 2)))
-  ;; (tv (urls-in-region-or-buffer (textprops-in-region-or-buffer)))
-  ;; (nbfs (urls-in-region-or-buffer (textprops-in-region-or-buffer))
-  ;;       nil 'org-mode)
-  )
-
-(define-key eww-mode-map (kbd "C-c C-o") 'eww-follow-link)
-
-(define-key eww-mode-map (kbd "M-e") 'eww-reload-cache-for-page)
-
+             (sleep 2))))
 
 (defun file-from-data (data)
   (let* ((hash (sha1 data))
@@ -1699,10 +1700,9 @@ instead of `browse-url-new-window-flag'."
 
 (defun display-graphic-p-around-advice (proc &rest args)
   (let ((res (apply proc args)))
-    (and (not lg-eww-text-only)
+    (and (not pen-eww-text-only)
          res)))
 (advice-add 'display-graphic-p :around #'display-graphic-p-around-advice)
-;; (advice-remove 'display-graphic-p #'display-graphic-p-around-advice)
 
 (defun shr-put-image (spec alt &optional flags)
   "Insert image SPEC with a string ALT.  Return image.
@@ -1974,4 +1974,10 @@ the URL of the image to the kill buffer instead."
 (define-key eww-mode-map (kbd "c") 'eww-open-in-chrome)
 (define-key eww-mode-map (kbd "i") 'shr-browse-image)
 
-(provide 'lg-eww)
+(define-key eww-mode-map (kbd "y") 'eww-select-wayback-for-url)
+(define-key eww-mode-map (kbd "g") 'pen-eww-reload)
+
+(define-key eww-mode-map (kbd "C-c C-o") 'eww-follow-link)
+(define-key eww-mode-map (kbd "M-e") 'eww-reload-cache-for-page)
+
+(provide 'pen-eww)

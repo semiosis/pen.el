@@ -53,6 +53,8 @@
 (package-install 'helpful)
 (package-install 'calibredb)
 (package-install 'w3m)
+(package-install 'eww-lnum)
+(package-install 'ace-link)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -98,6 +100,8 @@
 (require 'helpful)
 (require 'calibredb)
 (require 'w3m)
+(require 'eww-lnum)
+(require 'ace-link)
 
 (require 'pen-custom)
 

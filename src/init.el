@@ -57,6 +57,8 @@
 (require 'cua-base)
 (require 'helpful)
 (require 'w3m)
+(require 'eww-lnum)
+(require 'ace-link)
 
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
       (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))
