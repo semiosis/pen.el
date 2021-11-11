@@ -3671,7 +3671,11 @@ May use to generate code from comments."
         (append vals
                 `(:inject-gen-start
                   ,(s-right
-                    (- (length result) (- end-pos collect-from-pos))
+                    (+ (- (length result)
+                          (- end-pos collect-from-pos))
+                       ;; These shoudl cancel out when the-increase = result (i.e. no injection)
+                       (- the-increase
+                          (length result)))
                     ;; TODO get it to use the-increase again
 
                     ;; (- (+ (- (length result) (- end-pos collect-from-pos))
