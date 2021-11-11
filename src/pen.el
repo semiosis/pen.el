@@ -3602,10 +3602,10 @@ May use to generate code from comments."
 (defun pen-vector2list (v)
   (append v nil))
 
+;; TODO Make this work properly
 (cl-defun pf-continue-last (&key no-select-result include-prompt no-gen select-only-match variadic-var inject-gen-start force-interactive)
   (interactive)
   (pen-continue-from-hist t force-interactive))
-
 
 (defun pen-continue-from-hist (&optional last force-interactive)
   (interactive)
