@@ -244,3 +244,5 @@ agi x11-apps
 
 # urlencode
 agi gridsite-clients
+
+agi w3m
