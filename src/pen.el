@@ -3659,20 +3659,6 @@ May use to generate code from comments."
                     (+ (- (length result)
                           (- end-pos collect-from-pos))
                        0
-                       ;; the-increase
-
-                       ;; 0
-                       ;; (- the-increase
-                       ;;    end-pos)
-                       ;; These shoudl cancel out when the-increase = result (i.e. no injection)
-                       ;; (- the-increase
-                       ;;    (- end-pos collect-from-pos))
-                       )
-                    ;; TODO get it to use the-increase again
-
-                    ;; (- (+ (- (length result) (- end-pos collect-from-pos))
-                    ;;       the-increase)
-                    ;;    (- end-pos collect-from-pos))
                     result)
                   :force-interactive
                   (or (interactive-p)
