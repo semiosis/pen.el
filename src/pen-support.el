@@ -831,7 +831,9 @@ when s is a string, set the clipboard to s"
        (not (stringp s)))
       (setq s (pps s)))
   (if (not (s-blank? s))
-      (kill-new s)
+      (progn
+        (kill-new s)
+        (pen-sn "xsel --clipboard -i" s))
     (if (pen-selected-p)
         (progn
           (setq s (pen-selected-text))

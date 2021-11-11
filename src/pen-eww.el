@@ -1921,6 +1921,19 @@ element is the data blob and the second element is the content-type."
                              (shr-fill-text
                               (or (dom-attr dom 'title) alt))))))))
 
+(defun shr-copy-url (url)
+  "Copy the URL under point to the kill ring.
+With a prefix argument, or if there is no link under point, but
+there is an image under point then copy the URL of the image
+under point instead."
+  (interactive (list (shr-url-at-point current-prefix-arg)))
+  (if (not url)
+      (message "No URL under point")
+    (setq url (url-encode-url url))
+    (kill-new url)
+    (xc url)
+    (message "Copied %s" url)))
+
 (defun shr-browse-image (&optional arg)
   "Browse the image under point.
 If COPY-URL (the prefix if called interactively) is non-nil, copy
@@ -1931,10 +1944,14 @@ the URL of the image to the kill buffer instead."
      ((not url)
       (message "No image under point"))
      ((>= (prefix-numeric-value current-prefix-arg) 8)
-      (with-temp-buffer
-        (insert url)
-        (copy-region-as-kill (point-min) (point-max))
-        (message "Copied %s" url)))
+      (progn
+        (xc url)
+        (message "Copied %s" url))
+      (never
+       (with-temp-buffer
+         (insert url)
+         (copy-region-as-kill (point-min) (point-max))
+         (message "Copied %s" url))))
      ((>= (prefix-numeric-value current-prefix-arg) 4)
       (message "Browsing %s..." url)
       (lg-eww-browse-url url))

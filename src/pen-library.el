@@ -498,11 +498,11 @@ It's really meant for key bindings and which-key, so they should all be interact
 
 (defun pen-yank-path ()
   (interactive)
-  (if (selection-p)
+  (if (pen-selected-p)
       (with-current-buffer (new-buffer-from-string (selection))
         (pen-guess-major-mode-set)
-        (xc (ns (get-path nil nil t)))
+        (xc (get-path nil nil t))
         (kill-buffer))
-    (xc (ns (get-path)))))
+    (xc (get-path))))
 
 (provide 'pen-library)
