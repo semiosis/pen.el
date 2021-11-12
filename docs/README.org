@@ -1,5 +1,5 @@
 * Pen project timeline
-+ Roadmap [7/15]
++ Roadmap [7/29]
   - [X] emacs-lisp functions are generated from YAML =.prompt= files
   - [X] Use built-in elisp functions for portability
   - [ ] Prompt discovery
@@ -28,23 +28,23 @@
     - https://github.com/semiosis/pen.vim
   - [ ] Standalone application based in emacs, available through a web browser
     - https://github.com/semiosis/pen
-  - =∞-company-mode=
-  - Create prompt-description-mode schema in schemastore
-  - lm-complete
-  - semiosis-token
-  - Build your own sNFT marketplace
-  - light-weight pen mode
-    - Uses docker interop
-  - beam-search
-    - https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/
-  - counterfactual parsing
-    - https://generative.ink/posts/parsing-by-counterfactual/
-  - org-brain for Pen.el docker
-  - Real-time completion of tokens with interrupt
-  - PostHuman AI Marketplace
-  - multiversal viewer
-  - semantic search
-  - multiple prompts repos
+  - [-] =∞-company-mode=
+  - [-] Create prompt-description-mode schema in schemastore
+  - [-] lm-complete
+  - [-] semiosis-token
+  - [-] Build your own sNFT marketplace
+  - [-] light-weight pen mode
+    - [-] Uses docker interop
+  - [-] beam-search
+    - [-] https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/
+  - [-] counterfactual parsing
+    - [-] https://generative.ink/posts/parsing-by-counterfactual/
+  - [-] org-brain for Pen.el docker
+  - [-] Real-time completion of tokens with interrupt
+  - [-] PostHuman AI Marketplace
+  - [-] multiversal viewer
+  - [-] semantic search
+  - [-] multiple prompts repos
 
 # + Use mermaid for Gantt chart in emacs :: [[https://mullikine.github.io/posts/review-of-mermaid-markdownish-syntax-for-generating-flowcharts-digrams/][Review of 'mermaid - flowcharts, diagrams, etc.' // Bodacious Blog]]
 #   https://mermaid-js.github.io/mermaid-live-editor/
