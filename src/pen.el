@@ -3683,8 +3683,6 @@ May use to generate code from comments."
                  (or (interactive-p)
                      force-interactive)))))))
 
-(provide 'pen)
-
 (defun pen-final-loads ()
   (load-library "pen-custom")
   (load-library "pen-ii")
@@ -3700,3 +3698,5 @@ May use to generate code from comments."
 (defun pen-see-pen-command-hist ()
   (interactive)
   (find-file (f-join penconfdir "all-pen-commands.txt")))
+
+(provide 'pen)
