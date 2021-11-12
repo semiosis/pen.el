@@ -3634,36 +3634,21 @@ May use to generate code from comments."
               (car hist-list)
             (fz hist-list nil nil "pen-continue-from-hist: ")))
          (al (eval-string sel))
-         ;; (vals (apply 'pen-cmd (eval-string (concat "'" (cdr (assoc "PEN_VALS" al))))))
          (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
-         ;; (orig-inject-len (string-bytes (cdr (assoc "PEN_INJECT_GEN_START" al))))
-         (orig-inject-len (length (cdr (assoc "PEN_INJECT_GEN_START" al))))
-         ;; Sometimes this is a number, (i.e. when select is disabled, or if selection was done extrinsically)
+         (orig-inject-text (cdr (assoc "PEN_INJECT_GEN_START" al)))
+         ;; string-bytes was tricky to find 
+         (orig-inject-len (string-bytes orig-inject-text))
          (prompt (pen-decode-string (cdr (assoc "PEN_PROMPT" al))))
-
-         ;; end-pos IS the length, so this is not needed
-         ;; But the values are still a little different
-         ;; prompt-length is not accurate.
-         ;; end-pos is accurate
          (prompt-length (length prompt))
-
          (result (cdr (assoc "PEN_RESULT" al)))
-         ;; This is json encoded
-
          (results (cdr (assoc "PEN_RESULTS" al)))
-
          ;; This is the :pp pos of full prompt (i.e. just before url)
          (collect-from-pos (or (pen-num (cdr (assoc "PEN_COLLECT_FROM_POS" al))) 0))
          (end-pos (or (pen-num (cdr (assoc "PEN_END_POS" al))) 0))
-
          ;; end-pos-original is the pos of full prompt just after the url
          ;; end-pos is a few chars too large sometimes
          ;; prompt-length is a few chars too short
          (end-pos-original
-          ;; orig-inject-len must be incorrect. ie. too small
-          ;; It is to small. Chars are missing.
-          ;; Perhaps it's due to error in inputs, rather than incorrect code.
-          ;; i.e. systematic errors
           (- end-pos orig-inject-len))
 
          ;; The URL in imagine website
@@ -3672,13 +3657,8 @@ May use to generate code from comments."
 
          (fun (intern (cdr (assoc "PEN_FUNCTION_NAME" al)))))
 
-    ;; (tv (str orig-inject-len))
-    ;; (tv (str prompt))
-
     (if (sor results)
         (setq results (pen-vector2list (json-parse-string results))))
-
-    ;; (pen-etv (str pp-inject-length))
 
     (let* ((result
             (cond
@@ -3695,13 +3675,9 @@ May use to generate code from comments."
        fun
        (append vals
                `(:inject-gen-start
-                 ;; I want this to be everything from
-                 ;; PEN_END_POS_ORIGINAL_PROMPT
                  ,(s-right
                    (- (length result)
-                      pp-inject-length
-                      ;; (- end-pos collect-from-pos)
-                      )
+                      pp-inject-length)
                    result)
                  :force-interactive
                  (or (interactive-p)
