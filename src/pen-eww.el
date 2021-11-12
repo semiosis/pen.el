@@ -686,10 +686,13 @@ word(s) will be searched for via `eww-search-prefix'."
 
 (defun lg-url-is-404 (url)
   "URL is 404"
-  (let ((info (pen-sn (concat "curl-firefox -s -I " (pen-q url)))))
+  ;; lg-url-is-404
+  (let ((info (pen-sn (concat "curl-firefox -s -I " (pen-q url))))
+        (html (pen-sn (concat "curl-firefox -s " (pen-q url)))))
     (comment
      (pen-sn-true (concat "curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
-    (or (re-match-p "404 Not Found" info)
+    (or (re-match-p "Wikipedia does not have an article with this exact name" html)
+        (re-match-p "404 Not Found" info)
         (re-match-p "502 Bad Gateway" info)
         (not (sor info)))))
 
