@@ -38,6 +38,9 @@ def query(payload):
     # tv(data)
     return json.loads(response.content.decode("utf-8"))
 
+from shanepy import *
+myembed(globals(), locals())
+
 if PEN_MODE == "summarize":
     if no_parameters:
         ret = query(
