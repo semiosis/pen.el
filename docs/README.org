@@ -1,5 +1,5 @@
 * Pen project timeline
-+ Roadmap [/]
++ Roadmap [7/15]
   - [X] emacs-lisp functions are generated from YAML =.prompt= files
   - [X] Use built-in elisp functions for portability
   - [ ] Prompt discovery
@@ -10,7 +10,7 @@
     - [X] GPT-j interface
       - [[./gpt-j.org]]
   - [X] Dockerize Pen
-      - https://github.com/semiosis/pen-docker/
+    - https://github.com/semiosis/pen-docker/
   - [ ] Generations stored in Datomic
     - https://semiosis.github.io/posts/representing-multiverses-with-datomic/
   - [ ] Prompts stored in Datomic
@@ -28,6 +28,13 @@
     - https://github.com/semiosis/pen.vim
   - [ ] Standalone application based in emacs, available through a web browser
     - https://github.com/semiosis/pen
+  - =∞-company-mode=
+  - Create prompt-description-mode schema in schemastore
+  - lm-complete
+  - semiosis-token
+  - Build your own sNFT marketplace
+  - light-weight pen mode
+    - Uses docker interop
 
 + Use mermaid for Gantt chart in emacs :: [[https://mullikine.github.io/posts/review-of-mermaid-markdownish-syntax-for-generating-flowcharts-digrams/][Review of 'mermaid - flowcharts, diagrams, etc.' // Bodacious Blog]]
   https://mermaid-js.github.io/mermaid-live-editor/
