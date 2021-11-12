@@ -1277,9 +1277,10 @@ xdg-open is a desktop utility that calls your preferred web browser."
              (re-match-p "502 Bad Gateway" (buffer-string)))
          (lg-url-is-404 (get-path)))
     (progn
-      (message "Website doesn't exist. Imagining instead")
-      (pen-lg-display-page url)
-      (kill-buffer cb)))
+      (let ((cb (current-buffer)))
+        (message "Website doesn't exist. Imagining instead")
+        (pen-lg-display-page url)
+        (kill-buffer cb))))
    (t
     (progn
       ;; Run if exists

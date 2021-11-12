@@ -1769,7 +1769,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_ENGINE_MIN_GENERATED_TOKENS" . ,final-engine-min-generated-tokens)
                             ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
                             ("PEN_COLLECT_FROM_POS" . ,collect-from-pos)
-                            ("PEN_INJECT_GEN_START" . ,final-inject-gen-start))))
+                            ("PEN_INJECT_GEN_START" . ,(pen-encode-string final-inject-gen-start t)))))
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data data))
                      (setq pen-last-prompt-data
