@@ -3635,7 +3635,7 @@ May use to generate code from comments."
             (fz hist-list nil nil "pen-continue-from-hist: ")))
          (al (eval-string sel))
          (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
-         (orig-inject-text (cdr (assoc "PEN_INJECT_GEN_START" al)))
+         (orig-inject-text (pen-decode-string (cdr (assoc "PEN_INJECT_GEN_START" al))))
          ;; string-bytes was tricky to find 
          (orig-inject-len (string-bytes orig-inject-text))
          (prompt (pen-decode-string (cdr (assoc "PEN_PROMPT" al))))
