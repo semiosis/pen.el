@@ -43,6 +43,7 @@
 (require 'pen-hist)
 (require 'pen-eww)
 (require 'eww-lnum)
+(require 'pen-edit)
 
 (defvar my-completion-engine 'pen-company-filetype)
 
