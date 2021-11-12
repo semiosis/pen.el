@@ -3664,10 +3664,10 @@ May use to generate code from comments."
             (cond
              ((and (stringp result)
                    (re-match-p "\\`[0-9]+\\'" result))
-              (fz results))
+              (fz results nil nil "pen-continue-from-hist result: "))
              ((stringp result) result)
              (results
-              (fz results))))
+              (fz results nil nil "pen-continue-from-hist result: "))))
            (the-increase (- (length result)
                             orig-inject-len)))
 
