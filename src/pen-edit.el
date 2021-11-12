@@ -10,6 +10,6 @@
     (if (major-mode-p 'fundamental-mode)
         (detect-language-set-mode))
     res))
-(advice-add 'paste :around #'yank)
+(advice-add 'paste-around-advice :around #'yank)
 
 (provide 'pen-edit)
