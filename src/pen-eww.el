@@ -690,6 +690,7 @@ word(s) will be searched for via `eww-search-prefix'."
     (comment
      (pen-sn-true (concat "curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
     (or (re-match-p "404 Not Found" info)
+        (re-match-p "502 Bad Gateway" info)
         (not (sor info)))))
 
 (defun google-cachify (url)
@@ -1263,18 +1264,28 @@ xdg-open is a desktop utility that calls your preferred web browser."
   (ignore-errors (goto-fragment (get-path)))
 
   (deselect)
-  (if (equal 0 (length (buffer-string)))
-      (progn
-        (message "Failed to load page, I think")
-        (let ((cb (current-buffer)))
-          (w3m (get-path))
-          (kill-buffer cb))))
-
-  ;; Run if exists
-  (ignore-errors
-    (run-buttonize-hooks))
-
-  (pen-eww-show-status))
+  (cond
+   ((and (or (equal 0 (length (buffer-string)))
+             (re-match-p "502 Bad Gateway" (buffer-string)))
+         (not (lg-url-is-404 (get-path))))
+    (progn
+      (message "Failed to load page, I think")
+      (let ((cb (current-buffer)))
+        (w3m (get-path))
+        (kill-buffer cb))))
+   ((and (or (equal 0 (length (buffer-string)))
+             (re-match-p "502 Bad Gateway" (buffer-string)))
+         (lg-url-is-404 (get-path)))
+    (progn
+      (message "Website doesn't exist. Imagining instead")
+      (pen-lg-display-page url)
+      (kill-buffer cb)))
+   (t
+    (progn
+      ;; Run if exists
+      (ignore-errors
+        (run-buttonize-hooks))
+      (pen-eww-show-status)))))
 
 (defun eww-back-url-around-advice (proc &rest args)
   (let ((res (apply proc args)))
