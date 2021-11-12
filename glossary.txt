@@ -286,6 +286,8 @@ PEN_COLLECT_FROM_POS
 PEN_END_POS
     http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-website-from-a-url-1.prompt
 
+    The length of the prompt including PEN_INJECT_GEN_START.
+
     The end of the prompt (including the
     PEN_INJECT_GEN_START, which is the last
     part of the prompt).
@@ -301,5 +303,5 @@ PEN_INJECT_GEN_START
 PEN_PROMPT
     http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-website-from-a-url-1.prompt
 
-    The entire prompt, but only goes until the
-    end of the PEN_INJECT_GEN_START string.
+    The entire prompt including the
+    PEN_INJECT_GEN_START string.
