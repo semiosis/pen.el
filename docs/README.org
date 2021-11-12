@@ -1,5 +1,5 @@
 * Pen project roadmap
-+ Roadmap [7/29]
++ Roadmap [8/29]
   - [X] emacs-lisp functions are generated from YAML =.prompt= files
   - [X] Use built-in elisp functions for portability
   - [ ] Prompt discovery
@@ -26,7 +26,7 @@
   - [X] Incorporate OpenAI's Codex model, which should be available at this stage.
   - [ ] vim
     - https://github.com/semiosis/pen.vim
-  - [ ] Standalone application based in emacs, available through a web browser
+  - [X] Standalone application based in emacs, available through a web browser
     - https://github.com/semiosis/pen
   - [ ] =∞-company-mode=
   - [ ] Create prompt-description-mode schema in schemastore
