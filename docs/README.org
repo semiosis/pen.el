@@ -1,5 +1,5 @@
 * Pen project roadmap
-+ Roadmap [0/1]
++ Roadmap [0/21]
   - [ ] Generations stored in Datomic
   - https://semiosis.github.io/posts/representing-multiverses-with-datomic/
   - [ ] Prompts stored in Datomic
