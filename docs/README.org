@@ -32,7 +32,7 @@
   - [ ] multiversal viewer
   - [ ] semantic search
   - [ ] multiple prompts repos
-  - [ ] Prompt syntagm solutions solver (graph search)
+  - [ ] sNFT syntagm solutions solver (graph search)
 
 # + Use mermaid for Gantt chart in emacs :: [[https://mullikine.github.io/posts/review-of-mermaid-markdownish-syntax-for-generating-flowcharts-digrams/][Review of 'mermaid - flowcharts, diagrams, etc.' // Bodacious Blog]]
 #   https://mermaid-js.github.io/mermaid-live-editor/
