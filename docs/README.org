@@ -17,7 +17,7 @@
     - https://semiosis.github.io/posts/representing-multiverses-with-datomic/
   - [ ] Prompts stored in Datomic
   - [X] Auto-installer
-  - [ ] Dockerized Web-facing Emacs application
+  - [X] Dockerized Web-facing Emacs application
   - [ ] Prompt Catalogue
     - http://github.com/semiosis/pen.el/blob/master/pen-prompt-tablist.el
   - [ ] Make use of arbitrarily many git repositories that store prompts
@@ -26,7 +26,7 @@
     - Allow Pen to interface with a dockerized version of itself
       - This way, =pen.el= may be easily turned into a melpa package and installed into people's emacs configs without risk
 + Stage 3
-  - [ ] Incorporate OpenAI's Codex model, which should be available at this stage.
+  - [X] Incorporate OpenAI's Codex model, which should be available at this stage.
   - [ ] vim
     - https://github.com/semiosis/pen.vim
   - [ ] Standalone application based in emacs, available through a web browser
