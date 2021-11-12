@@ -3664,7 +3664,7 @@ May use to generate code from comments."
             (cond
              ((and (stringp result)
                    (re-match-p "\\`[0-9]+\\'" result))
-              (car results))
+              (fz results))
              ((stringp result) result)
              (results
               (fz results))))
