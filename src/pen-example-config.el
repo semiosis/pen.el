@@ -307,12 +307,15 @@
   (pen-dk-easy "3" 'pen-complete-line)
   (pen-dk-easy "4" 'pen-complete-lines)
   (pen-dk-easy "5" 'pen-complete-long)
+
   (pen-dk-easy ";" 'sps-nlsh)
   (pen-dk-easy "A" 'pf-append-to-code/3)
   (pen-dk-easy "N" 'sps-nlsc)
   (pen-dk-easy "P" 'pen-complete-long)
   (pen-dk-easy "^" 'pen-transform)
   (pen-dk-easy "a" nil)
+
+  ;; c Code
   (pen-dk-easy "c" nil)
   (pen-dk-easy "c b" 'pf-generate-the-contents-of-a-new-file/6)
   (pen-dk-easy "c g g" 'pf-generate-program-from-nl/3)
@@ -321,8 +324,9 @@
   (pen-dk-easy "c n" 'pen-select-function-from-nl)
   (pen-dk-easy "c p" 'pf-imagine-a-project-template/1)
   (pen-dk-easy "c t" 'pen-transform-code)
-  (pen-dk-easy "e" nil)
   (pen-dk-easy "f" nil)
+
+  ;; g Generate
   (pen-dk-easy "g" nil)
   (pen-dk-easy "G" 'pen-generate-prompt-functions)
   (pen-dk-easy "g a" (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
@@ -331,8 +335,15 @@
   (pen-dk-easy "g b" 'pf-write-a-blog-post/2)
   (pen-dk-easy "g e" 'pf-get-an-example-of-the-usage-of-a-function/2)
 
+  ;; e Example
+  (pen-dk-easy "e" nil)
   (pen-dk-easy "e f" 'pf-get-an-example-of-the-usage-of-a-function/2)
+  ;; e Explain
+  (pen-dk-easy "e t" 'pf-explain-some-code-with-steps/1)
+  (pen-dk-easy "e b" 'pf-explain-a-file/4)
+  (pen-dk-easy "e y" 'pf-explain-why-this-code-is-needed/2)
 
+  ;; h Help
   (pen-dk-easy "h" nil)
   (pen-dk-easy "h f /" 'pen-select-function-from-nl)
   (pen-dk-easy "h f i" 'pf-given-a-function-name-show-the-import/2)
@@ -341,13 +352,19 @@
   (pen-dk-easy "i" 'pen-insert-snippet-from-lm)
   (pen-dk-easy "l" nil)
   (pen-dk-easy "l x" 'pen-autofix-lsp-errors)
+
+  ;; m Math
   (pen-dk-easy "m" nil)
   (pen-dk-easy "m e" 'pf-translate-math-into-natural-language/1)
   (pen-dk-easy "m l" 'pf-convert-ascii-to-latex-equation/1)
+
+  ;; d Define
   (pen-dk-easy "d" nil)
   (pen-dk-easy "d 1" 'pf-define-word-for-glossary/1)
   (pen-dk-easy "d d" 'pf-define-word-for-glossary/1)
   (pen-dk-easy "d 2" 'pf-define-word-for-glossary/2)
+
+  ;; p Explain
   (pen-dk-easy "p" nil)
   (pen-dk-easy "p 2" 'pf-explain-some-code/2)
   (pen-dk-easy "p b" 'pf-explain-code-with-bulleted-docstring/1)
@@ -355,18 +372,14 @@
   (pen-dk-easy "p s" 'pf-explain-solidity-code/1)
   (pen-dk-easy "p s" 'pf-explain-some-code-with-steps/1)
 
-  (pen-dk-easy "e t" 'pf-explain-some-code-with-steps/1)
-  (pen-dk-easy "e b" 'pf-explain-a-file/4)
-  (pen-dk-easy "e y" 'pf-explain-why-this-code-is-needed/2)
-
+  ;; t Transform
   (pen-dk-easy "t" nil)
-  (pen-dk-easy "e" nil)
-
   (pen-dk-easy "t t" 'pen-transform)
   (pen-dk-easy "t c" 'pen-transform-code)
   (pen-dk-easy "t p" 'pen-transform-prose)
   (pen-dk-easy "t r" 'pf-translate/3)
   (pen-dk-easy "t l" 'pf-transpile/3)
+
   (pen-dk-easy "w" 'pen-transform)
   (pen-dk-easy "^" 'pen-transform)
   (pen-dk-easy "x" 'pen-diagnostics-show-context)
