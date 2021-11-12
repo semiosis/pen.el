@@ -491,7 +491,7 @@ case "$sn" in
     ;;
 
     lg) {
-        show_banner=n
+        show_banner=y
         set -- -ic "(funcall-interactively 'eww $(cmd-nice "$1"))"
     }
     ;;
