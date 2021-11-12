@@ -9,7 +9,6 @@
     (if (major-mode-p 'foundation-modee)
         (detect-language-set-mode))
     res))
-(advice-add 'paste :around #'cua-paste)
-(advice-add 'paste :around #'lispy-yank)
+(advice-add 'paste :around #'yank)
 
 (provide 'pen-edit)
