@@ -688,7 +688,9 @@ word(s) will be searched for via `eww-search-prefix'."
   "URL is 404"
   ;; lg-url-is-404
   (let ((info (pen-sn (concat "curl-firefox -s -I " (pen-q url))))
-        (html (pen-sn (concat "curl-firefox -s " (pen-q url)))))
+        (html (pen-sn (concat "dom-dump " (pen-q url)))
+              ;; (pen-sn (concat "curl-firefox -s " (pen-q url)))
+              ))
     (comment
      (pen-sn-true (concat "curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
     (or (re-match-p "Wikipedia does not have an article with this exact name" html)
