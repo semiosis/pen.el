@@ -425,7 +425,6 @@
   (define-key pen-map (kbd "M-k") 'avy-goto-char))
 
 
-
 ;; Most main pen commands should be under hyperspace
 ;; hyperspace x
 
