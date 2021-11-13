@@ -37,7 +37,7 @@ esac; done
 if test "$DO_EXEC" = "y"; then
     CMD="$1"
 else
-    CMD="$(cmd-nice "$@")"
+    CMD="$(cmd-nice-posix "$@")"
 fi
 
 CMD="$(p "$CMD" | sed -e 's/^rlr /& notty /' -e 's/rlr notty notty/rlr notty/')"
@@ -47,6 +47,6 @@ if test -n "$load_hs"; then
     hsqc -ao "$load_hs" | tac > "$NOTES/programs/comint/history/$slug"
 fi
 
-# sp -e "(comint-quick $(aqf-nice "$CMD") $(aqf-nice "$(pwd -P)") $(aqf-nice "$user_prompt_re"))"
+# sp -e "(comint-quick $(cmd-nice-posix "$CMD") $(cmd-nice-posix "$(pwd -P)") $(cmd-nice-posix "$user_prompt_re"))"
 
-pent "(comint-quick $(aqf-nice "$CMD") $(aqf-nice "$(pwd -P)") $(aqf-nice "$user_prompt_re"))"
+pent "(comint-quick $(cmd-nice-posix "$CMD") $(cmd-nice-posix "$(pwd -P)") $(cmd-nice-posix "$user_prompt_re"))"

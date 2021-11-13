@@ -138,6 +138,11 @@ inside-docker-p() {
 }
 
 docker() {
+    # if test "$DEBUG_ABORT" = "y"; then
+    #     cmd "$@" | awk 1
+    #     exit "$?"
+    # fi
+
     if inside-docker-p; then
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             bash) break;;
@@ -534,6 +539,7 @@ case "$sn" in
         # Used for ii.
         show_banner=n
         PEN_USE_GUI=n
+        export DEBUG_ABORT=p
         set -- -t "$@"
     }
     ;;

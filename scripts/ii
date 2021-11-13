@@ -3,7 +3,7 @@
 # Imaginary interpreter
 # Version 2.0, bash
 
-CMD="$(cmd-nice "$@")"
+CMD="$(cmd-nice-posix "$@")"
 
 use_comint=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
