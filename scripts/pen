@@ -144,6 +144,8 @@ docker() {
             *) shift;;
         esac; done
 
+        cmd-nice "$@" 1>&2
+
         "$@"
     else
         command docker "$@"
