@@ -3,6 +3,20 @@ export TTY
 
 aqf() { apply qf "$@"; }
 
+apply() {
+    f="$1"
+    shift
+
+    for (( i = 1; i <= $#; i++ )); do
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG" | eval "$f"
+    done
+}
+
+pl() {
+    printf -- "%s\n" "$@"
+}
+
 # This script is misnamed
 
 # nvt -2 man less
