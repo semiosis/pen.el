@@ -1,0 +1,214 @@
+set modelines=0 nomodeline
+
+so $HOME/source/git/config/vim/utils.vim
+
+set guicursor=
+
+fun! OpenInEmacs()
+    call SaveTemp()
+    call system('tm -f -te -d spv -args e -a c +'.line('.').':'.(col('.') - 1).' '.Q(expand('%:p')))
+endf
+
+MapM OpenInEmacs g m
+
+if has('nvim')
+    source $HOME/var/smulliga/source/git/config/vim/utils.vim
+    MapM FilterWithFzf q f
+    
+    execute pathogen#infect()
+
+    hi Normal       ctermfg=60
+    "hi Normal       ctermfg=103
+    "hi Normal       ctermfg=173
+
+    set clipboard=unnamedplus
+
+    " call TermAndQuit()
+    " call TermAndQuit("bash")
+    fun! QuitNvim(...)
+        q!
+    endf
+
+    fun! TermAndQuit(...)
+        let s:cmd = get(a:, 1, "TERM=vt100 tmux attach -t localhost")
+
+        let s:callbacks = {
+                    \ 'on_exit': function('QuitNvim')
+                    \ }
+
+        let jobid = termopen(s:cmd, s:callbacks)
+        
+        " # This works but is not what I want. This will hang
+        " let joblist=[]
+        " call add(joblist, jobid)
+        " " mess jobid
+        " call jobwait(joblist)
+        " q!
+
+        " exec "terminal ".a:cmd
+
+        " exec "terminal bash"
+        " q!
+    endf
+
+    "" keep this on until i have a better way to see the current syntax
+    "" highlighting
+    "set ls=2
+
+    set ls=0
+
+    set mouse=a
+
+    source $HOME/notes2018/syntax.vim
+    " source $HOME/notes2018/chinese.vim
+
+    " This needs to happen after I start the terminal
+    call NumberSyntax()
+    call GeneralSyntax()
+
+    source $HOME/var/smulliga/source/git/config/vim/nvim-function-keysvimrc
+
+    tmap <S-Tab> [Z
+
+    nnoremap <M-a> <Esc>a
+    nnoremap <M-b> <Esc>b
+    nnoremap <M-c> <Esc>c
+    nnoremap <M-d> <Esc>d
+    nnoremap <M-e> <Esc>e
+    nnoremap <M-f> <Esc>f
+    nnoremap <M-g> <Esc>g
+    nnoremap <M-h> <Esc>h
+    nnoremap <M-i> <Esc>i
+    nnoremap <M-j> <Esc>j
+    nnoremap <M-k> <Esc>k
+    nnoremap <M-l> <Esc>l
+    nnoremap <M-m> <Esc>m
+    nnoremap <M-n> <Esc>n
+    nnoremap <M-o> <Esc>o
+    nnoremap <M-p> <Esc>p
+    nnoremap <M-q> <Esc>q
+    nnoremap <M-r> <Esc>r
+    nnoremap <M-s> <Esc>s
+    nnoremap <M-t> <Esc>t
+    nnoremap <M-u> <Esc>u
+    nnoremap <M-v> <Esc>v
+    nnoremap <M-w> <Esc>w
+    nnoremap <M-x> <Esc>x
+    nnoremap <M-y> <Esc>y
+    nnoremap <M-z> <Esc>z
+    nnoremap <M--> <Esc>-
+    nnoremap <M-[> <Esc>[
+    nnoremap <M-;> <Esc>;
+    nnoremap <M-'> <Esc>'
+    nnoremap <M-,> <Esc>,
+    nnoremap <M-.> <Esc>.
+    nnoremap <M-/> <Esc>/
+    nnoremap <M-A> <Esc>A
+    nnoremap <M-B> <Esc>B
+    nnoremap <M-C> <Esc>C
+    nnoremap <M-D> <Esc>D
+    nnoremap <M-E> <Esc>E
+    nnoremap <M-F> <Esc>F
+    nnoremap <M-G> <Esc>G
+    nnoremap <M-H> <Esc>H
+    nnoremap <M-I> <Esc>I
+    nnoremap <M-J> <Esc>J
+    nnoremap <M-K> <Esc>K
+    nnoremap <M-L> <Esc>L
+    nnoremap <M-M> <Esc>M
+    nnoremap <M-N> <Esc>N
+    nnoremap <M-O> <Esc>O
+    nnoremap <M-P> <Esc>P
+    nnoremap <M-Q> <Esc>Q
+    nnoremap <M-R> <Esc>R
+    nnoremap <M-S> <Esc>S
+    nnoremap <M-T> <Esc>T
+    nnoremap <M-U> <Esc>U
+    nnoremap <M-V> <Esc>V
+    nnoremap <M-W> <Esc>W
+    nnoremap <M-X> <Esc>X
+    nnoremap <M-Y> <Esc>Y
+    nnoremap <M-Z> <Esc>Z
+    nnoremap <M-_> <Esc>_
+    nnoremap <M-{> <Esc>{
+    nnoremap <M-:> <Esc>:
+    nnoremap <M-\> <Esc>\
+    nnoremap <M-<> <Esc><
+    nnoremap <M->> <Esc>>
+    nnoremap <M-?> <Esc>?
+    nnoremap <M-=> <Esc>=
+    nnoremap <M-+> <Esc>+
+    nnoremap <M-]> <Esc>]
+    nnoremap <M-}> <Esc>}
+
+    inoremap <M-a> <Esc>a
+    inoremap <M-b> <Esc>b
+    inoremap <M-c> <Esc>c
+    inoremap <M-d> <Esc>d
+    inoremap <M-e> <Esc>e
+    inoremap <M-f> <Esc>f
+    inoremap <M-g> <Esc>g
+    inoremap <M-h> <Esc>h
+    inoremap <M-i> <Esc>i
+    inoremap <M-j> <Esc>j
+    inoremap <M-k> <Esc>k
+    inoremap <M-l> <Esc>l
+    inoremap <M-m> <Esc>m
+    inoremap <M-n> <Esc>n
+    inoremap <M-o> <Esc>o
+    inoremap <M-p> <Esc>p
+    inoremap <M-q> <Esc>q
+    inoremap <M-r> <Esc>r
+    inoremap <M-s> <Esc>s
+    inoremap <M-t> <Esc>t
+    inoremap <M-u> <Esc>u
+    inoremap <M-v> <Esc>v
+    inoremap <M-w> <Esc>w
+    inoremap <M-x> <Esc>x
+    inoremap <M-y> <Esc>y
+    inoremap <M-z> <Esc>z
+    inoremap <M--> <Esc>-
+    inoremap <M-[> <Esc>[
+    inoremap <M-;> <Esc>;
+    inoremap <M-'> <Esc>'
+    inoremap <M-,> <Esc>,
+    inoremap <M-.> <Esc>.
+    inoremap <M-/> <Esc>/
+    inoremap <M-A> <Esc>A
+    inoremap <M-B> <Esc>B
+    inoremap <M-C> <Esc>C
+    inoremap <M-D> <Esc>D
+    inoremap <M-E> <Esc>E
+    inoremap <M-F> <Esc>F
+    inoremap <M-G> <Esc>G
+    inoremap <M-H> <Esc>H
+    inoremap <M-I> <Esc>I
+    inoremap <M-J> <Esc>J
+    inoremap <M-K> <Esc>K
+    inoremap <M-L> <Esc>L
+    inoremap <M-M> <Esc>M
+    inoremap <M-N> <Esc>N
+    inoremap <M-O> <Esc>O
+    inoremap <M-P> <Esc>P
+    inoremap <M-Q> <Esc>Q
+    inoremap <M-R> <Esc>R
+    inoremap <M-S> <Esc>S
+    inoremap <M-T> <Esc>T
+    inoremap <M-U> <Esc>U
+    inoremap <M-V> <Esc>V
+    inoremap <M-W> <Esc>W
+    inoremap <M-X> <Esc>X
+    inoremap <M-Y> <Esc>Y
+    inoremap <M-Z> <Esc>Z
+    inoremap <M-_> <Esc>_
+    inoremap <M-{> <Esc>{
+    inoremap <M-:> <Esc>:
+    inoremap <M-\> <Esc>\
+    inoremap <M-<> <Esc><
+    inoremap <M->> <Esc>>
+    inoremap <M-?> <Esc>?
+    inoremap <M-=> <Esc>=
+    inoremap <M-+> <Esc>+
+    inoremap <M-]> <Esc>]
+    inoremap <M-}> <Esc>}
+endif
