@@ -1,3 +1,13 @@
 #!/bin/bash
 
-mktemp -t "tf_XXXXXXX" 2>/dev/null || :
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+fp="$(mktemp -t "tf_XXXXXXX" 2>/dev/null || :)"
+
+if stdin_exists; then
+    cat > "$fp"
+fi
+
+echo "$fp"
