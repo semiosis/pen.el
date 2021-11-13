@@ -372,14 +372,20 @@ Reconstruct the entire yaml-ht for a different language."
 
             (let ((unquoted (format "<%d>" i))
                   (unquoted2 (format "<:%d>" i))
-                  (unchomped (format "<::%d>" i)))
+                  (unquoted3 (format "<<pen-colon>%d>" i))
+                  (unchomped (format "<::%d>" i))
+                  (unchomped2 (format "<<pen-colon><pen-colon>%d>" i)))
               (cond-all
                ((re-match-p (pen-unregexify unquoted) s)
                 (setq s (string-replace unquoted (chomp val) s)))
                ((re-match-p (pen-unregexify unquoted2) s)
                 (setq s (string-replace unquoted2 (chomp val) s)))
+               ((re-match-p (pen-unregexify unquoted3) s)
+                (setq s (string-replace unquoted3 (chomp val) s)))
                ((re-match-p (pen-unregexify unchomped) s)
-                (setq s (string-replace unchomped val s)))))
+                (setq s (string-replace unchomped val s)))
+               ((re-match-p (pen-unregexify unchomped2) s)
+                (setq s (string-replace unchomped2 val s)))))
 
             (loop for pl
                   in '((q pen-q)
@@ -511,7 +517,7 @@ Reconstruct the entire yaml-ht for a different language."
     s))
 
 (defun pen-backslashed (val)
-  (pen-snc "sed 's=.=\\\\&=g'" val))
+  (pen-sn "sed 's=.=\\\\&=g'" val))
 
 (defun pen-expand-template-keyvals (s keyvals &optional encode pipelines)
   "expand template from alist"
@@ -531,13 +537,16 @@ Reconstruct the entire yaml-ht for a different language."
                     in pipelines
                     do
                     (let ((plf (format "<%s:%s>" (car pl) key))
-                          (plf2 (format "<%s<pen-colon>%s>" (car pl) key)))
+                          (plf2 (format "<%s<pen-colon>%s>" (car pl) key))
+                          (plf2u (format "<%s<pen-colon><pen-colon>%s>" (car pl) key)))
 
                       (cond-all
                        ((re-match-p (pen-unregexify plf) s)
                         (setq s (string-replace plf (pen-snc (cdr pl) (chomp val)) s)))
                        ((re-match-p (pen-unregexify plf2) s)
-                        (setq s (string-replace plf2 (pen-snc (cdr pl) (chomp val)) s))))))
+                        (setq s (string-replace plf2 (pen-snc (cdr pl) (chomp val)) s)))
+                       ((re-match-p (pen-unregexify plf2u) s)
+                        (setq s (string-replace plf2u (pen-sn (cdr pl) val) s))))))
 
               ;; (comment
               ;;  (pen-cartesian-product '("foo" "bar" "baz") '("einie" "mienie" "meinie" "mo"))
@@ -547,14 +556,20 @@ Reconstruct the entire yaml-ht for a different language."
 
               (let ((unquoted (format "<%s>" key))
                     (unquoted2 (format "<:%s>" key))
-                    (unchomped (format "<::%s>" key)))
+                    (unquoted3 (format "<<pen-colon>%s>" key))
+                    (unchomped (format "<::%s>" key))
+                    (unchomped2 (format "<<pen-colon><pen-colon>%s>" key)))
                 (cond-all
                  ((re-match-p (pen-unregexify unquoted) s)
                   (setq s (string-replace unquoted (chomp val) s)))
                  ((re-match-p (pen-unregexify unquoted2) s)
                   (setq s (string-replace unquoted2 (chomp val) s)))
+                 ((re-match-p (pen-unregexify unquoted3) s)
+                  (setq s (string-replace unquoted3 (chomp val) s)))
                  ((re-match-p (pen-unregexify unchomped) s)
-                  (setq s (string-replace unchomped val s)))))
+                  (setq s (string-replace unchomped val s)))
+                 ((re-match-p (pen-unregexify unchomped2) s)
+                  (setq s (string-replace unchomped2 val s)))))
 
               (loop for pl
                     in '((q pen-q)
