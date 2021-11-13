@@ -222,10 +222,6 @@
 
 ;; (pen-etv (pen-prompt-snc "rand" 1))
 
-(define-key pen-map (kbd "H-TAB n") 'pen-select-function-from-nl)
-(define-key pen-map (kbd "H-TAB h") 'pf-generic-tutor-for-any-topic/2)
-(define-key pen-map (kbd "H-TAB p") 'pf-imagine-a-project-template/1)
-(define-key pen-map (kbd "H-TAB b") 'pf-generate-the-contents-of-a-new-file/6)
 
 (require 'evil)
 
@@ -496,3 +492,8 @@
 (define-key key-translation-map (kbd "C-M-i") nil)
 
 ;; (advice-remove 'kill-ring-save #'kill-ring-save-around-advice)
+
+(define-key pen-map (kbd "H-TAB n") 'pen-select-function-from-nl)
+(define-key pen-map (kbd "H-TAB h") 'pf-generic-tutor-for-any-topic/2)
+(define-key pen-map (kbd "H-TAB p") 'pf-imagine-a-project-template/1)
+(define-key pen-map (kbd "H-TAB b") 'pf-generate-the-contents-of-a-new-file/6)
