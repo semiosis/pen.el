@@ -228,6 +228,7 @@ Pen.el aims to be the best tool for prompt engineering.
   - Through blockchain
 - Integrate arbitrarily many language models and language model protocols
   - text, image, audio, video
+- Imaginary web browser (LookingGlass)
 - Support Free-as-in-freedom AGI
 - Transcend licences to preserve freedom and privacy
 - Encode provenance of text via text properties and a DSL and allow for re-evaluation
@@ -242,6 +243,7 @@ Pen.el aims to be the best tool for prompt engineering.
   - An editor based solely on LM queries (an imaginary IDE)
     - See [[https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/][Imaginary programming with GPT-3 =::= semiosis]]
     - Versioned by blockchain
+- Minimal and intelligible prompting for cost-effective imaginary programming
 - Consolidate language models
   - https://github.com/semiosis/lm-complete
 - Employ many different languages in prompt design
