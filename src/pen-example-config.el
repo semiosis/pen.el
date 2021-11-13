@@ -338,6 +338,10 @@
   (pen-dk-easy "c l" 'pf-translate/3)
   (pen-dk-easy "c v" 'pf-very-witty-pick-up-lines-for-a-topic/1)
 
+  ;; f Fun
+  (pen-dk-easy "f" nil)
+  (pen-dk-easy "f p" 'pf-very-witty-pick-up-lines-for-a-topic/1)
+
   ;; g Generate
   (pen-dk-easy "g" nil)
   (pen-dk-easy "G" 'pen-generate-prompt-functions)
@@ -383,8 +387,6 @@
   (pen-dk-easy "n h" 'pf-explain-haskell-code/1)
   (pen-dk-easy "n s" 'pf-explain-solidity-code/1)
   (pen-dk-easy "n s" 'pf-explain-some-code-with-steps/1)
-
-  (pen-dk-easy "f" nil)
 
   ;; t Transform
   (pen-dk-easy "t" nil)
