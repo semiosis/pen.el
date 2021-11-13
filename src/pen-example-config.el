@@ -336,6 +336,7 @@
   (pen-dk-easy "p" nil)
   (pen-dk-easy "c t" 'pen-transform-prose)
   (pen-dk-easy "c l" 'pf-translate/3)
+  (pen-dk-easy "c v" 'pf-very-witty-pick-up-lines-for-a-topic/1)
 
   ;; g Generate
   (pen-dk-easy "g" nil)
