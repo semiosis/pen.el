@@ -47,4 +47,6 @@ if test -n "$load_hs"; then
     hsqc -ao "$load_hs" | tac > "$NOTES/programs/comint/history/$slug"
 fi
 
-sp -e "(comint-quick $(aqf-nice "$CMD") $(aqf-nice "$(pwd -P)") $(aqf-nice "$user_prompt_re"))"
+# sp -e "(comint-quick $(aqf-nice "$CMD") $(aqf-nice "$(pwd -P)") $(aqf-nice "$user_prompt_re"))"
+
+pent "(comint-quick $(aqf-nice "$CMD") $(aqf-nice "$(pwd -P)") $(aqf-nice "$user_prompt_re"))"

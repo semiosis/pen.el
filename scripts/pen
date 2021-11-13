@@ -528,6 +528,16 @@ case "$sn" in
     }
     ;;
 
+    pent) {
+        # This is used to run docker terminal emacs with arguments
+        # Advanced.
+        # Used for ii.
+        show_banner=n
+        PEN_USE_GUI=n
+        set -- -t "$@"
+    }
+    ;;
+
     penu) {
         show_banner=n
         UPDATE=y
@@ -690,6 +700,24 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         share_x=n
         docker_cmd=exec
         remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
+        shift
+
+        if test "$UPDATE" = "y"; then
+            last_arg="${@: -1}"
+            test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+
+            set -- "$@" "(pen-update $last_arg)"
+        fi
+    }
+    ;;
+
+    # This is like pene, has the tty
+    -t) {
+        HAS_TTY=y
+        batch=y
+        share_x=n
+        docker_cmd=exec
+        remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
         shift
 
         if test "$UPDATE" = "y"; then
