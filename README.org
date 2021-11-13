@@ -230,7 +230,7 @@ Pen.el aims to be the best tool for prompt engineering.
   - text, image, audio, video
 - Imaginary web browser (LookingGlass)
 - Support Free-as-in-freedom AGI
-- Transcend licences to preserve freedom and privacy
+- Do more than merely support free-licences. Preserve freedom and privacy in a license-blind AI future
 - Encode provenance of text via text properties and a DSL and allow for re-evaluation
   - https://github.com/semiosis/ink.el
 - Integrate =pen.el= with many other emacs packages
