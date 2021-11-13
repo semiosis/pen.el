@@ -18,7 +18,7 @@ for any model or API.
 
 Some builtin ways to make use of prompting
 functions are the imaginary web browser
-LookingGlass, and imaginary interpreters.
+=LookingGlass=, and imaginary interpreters.
 
 =Pen.el= also facilitates the creation,
 development, discovery and usage of prompts.
