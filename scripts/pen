@@ -30,6 +30,14 @@ ensure_dependencies() {
 ensure_dependencies
 
 yn () {
+    if test "$yes" = "y"; then
+        return 0
+    fi
+
+    if test "$no" = "y"; then
+        return 1
+    fi
+
     y_chars="Yy"
     n_chars="Nn"
     while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -135,6 +143,25 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -tty|-nw) {
         use_tty=y
+        shift
+    }
+    ;;
+
+    -nn) {
+        no=y
+        show_banner=n
+        shift
+    }
+    ;;
+
+    -n) {
+        no=y
+        shift
+    }
+    ;;
+
+    -y) {
+        yes=y
         shift
     }
     ;;
