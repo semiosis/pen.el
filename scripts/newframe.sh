@@ -12,4 +12,9 @@ export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 
 emacsclient -e "(get-buffer-create $(cmd-nice-posix "*scratch*"))"
-emacsclient -a "" -t "$@"
+
+if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
+    emacsclient -c -a "" "$@"
+else
+    emacsclient -a "" -t "$@"
+fi
