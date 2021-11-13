@@ -9,8 +9,10 @@ functions can be used interactively or non-interactively
 Using =Pen.el=, you can centralise all of your
 prompting tasks. That includes any NLP task for
 text or code, describing images (=AlephAlpha=)
-and imagining images (=DALL-E=). Audio is also possible.
-The payload system allows you to send media to multi-modal
+and imagining images (=DALL-E=). Audio and
+video are also possible -- keep an eye out for
+VideoGPT in the future. The payload system
+allows you to send media to multi-modal
 models. You may compose prompting functions
 for any model or API.
 
