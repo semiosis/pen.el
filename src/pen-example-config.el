@@ -480,4 +480,9 @@
     res))
 (advice-add 'kill-ring-save :around #'kill-ring-save-around-advice)
 
+;; swapped <Insert> and C-M-i (reverses tmux's swap)
+(define-key key-translation-map (kbd "<insertchar>") (kbd "C-M-i"))
+;; (define-key key-translation-map (kbd "C-M-i") (kbd "<insertchar>"))
+(define-key key-translation-map (kbd "C-M-i") nil)
+
 ;; (advice-remove 'kill-ring-save #'kill-ring-save-around-advice)
