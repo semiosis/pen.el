@@ -342,7 +342,7 @@ if test "$sn" = pen && test "$1" = -e; then
     sn=pene
 fi
 
-if test "$sn" = pen && test "$#" -eq 0 && test -n "$(docker ps --filter "name=pen" | sed 1d)"; then
+if test "$sn" = pen && test "$#" -eq 0 && { inside-docker-p || test -n "$(docker ps --filter "name=pen" | sed 1d)"; }; then
     sn=penc
 fi
 
