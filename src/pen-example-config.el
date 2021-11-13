@@ -274,6 +274,7 @@
                 (concat "M-" (s-replace-regexp " " " M-" bind)))
           collect
           `((define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
+            ;; Hyper-Space
             (define-key pen-map (kbd ,(concat "H-SPC " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "M-SPC " bind-i)) ,fun)
