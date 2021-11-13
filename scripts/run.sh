@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This creates the initial frame
+
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null
 
 # Debian10 run Pen
