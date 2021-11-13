@@ -1,4 +1,4 @@
-#!/bin/bash
+l#!/bin/bash
 
 # This creates the initial frame
 
