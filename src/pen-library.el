@@ -247,7 +247,7 @@ semantic-path means a path suitable for google/nl searching"
           (cond ((pen-is-glossary-file (buffer-file-path))
                  (get-path-semantic))
                 ((derived-mode-p 'org-brain-visualize-mode)
-                 (progn (require 'my-org-brain)
+                 (progn (require 'pen-org-brain)
                         (org-brain-pf-topic short)))
                 ;; File path is not a good topic
                 ;; ((not semantic-only)
