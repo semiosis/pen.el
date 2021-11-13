@@ -215,13 +215,13 @@
 
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
 
+;; This makes a prefix in the ~/.pen directory for the memoization cache 
 (setq pen-memo-prefix (pen-get-hostname))
 
 (memoize-restore 'pen-prompt-snc)
 (memoize 'pen-prompt-snc)
 
 ;; (pen-etv (pen-prompt-snc "rand" 1))
-
 
 (require 'evil)
 
