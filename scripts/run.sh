@@ -19,6 +19,8 @@ export PATH="$PATH:/root/go/bin"
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
+ttyd -p 7681 bash -l newframe.sh &
+
 # This should be 'pen' if on the host but 'emacs -nwemacsclient -a "" -t' if inside docker
 butterfly.server.py \
     --login=False \

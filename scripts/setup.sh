@@ -237,16 +237,18 @@ agi fzf
 cd
 git clone https://libwebsockets.org/repo/libwebsockets
 cd libwebsockets && mkdir build && cd build
-cmake ..
-make && make install
+cmake -DLWS_WITH_LIBUV=ON -DLWS_WITH_MBEDTLS=ON ..
+make -j 4 && make install
 )
 
 # ttyd
+apt install libmbedtls12 libmbedtls-dev
 (
 cd
 agi build-essential cmake git libjson-c-dev
 git clone https://github.com/tsl0922/ttyd.git
 cd ttyd && mkdir build && cd build
 cmake ..
-make && make install
+sed -i "s/^/# /" /usr/local/lib/cmake/libwebsockets/libwebsockets-config.cmake
+make -j 4 && make install
 )
