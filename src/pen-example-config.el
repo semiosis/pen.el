@@ -290,6 +290,9 @@
 (defun pen-define-maps ()
   (interactive)
 
+  ;; Most main pen commands should be under hyperspace
+  ;; hyperspace x
+
   ;; Basic completion functions
   (pen-dk-easy "1" 'pen-complete-word)
   (pen-dk-easy "2" 'pen-complete-words)
@@ -424,9 +427,6 @@
   (define-key pen-map (kbd "M-l M-y") 'pen-copy-link-at-point)
   (define-key pen-map (kbd "M-k") 'avy-goto-char))
 
-
-;; Most main pen commands should be under hyperspace
-;; hyperspace x
 
 
 (pen-define-maps)
