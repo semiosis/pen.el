@@ -642,6 +642,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -e) {
         HAS_TTY=n
         batch=y
+        share_x=n
         docker_cmd=exec
         remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
         shift
