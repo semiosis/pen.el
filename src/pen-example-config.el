@@ -272,6 +272,7 @@
           `((define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
             ;; Hyper-Space
             (define-key pen-map (kbd ,(concat "H-SPC " bind-i)) ,fun)
+            (define-key pen-map (kbd ,(concat "M-Q " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "M-SPC " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "M-SPC TAB " bind-i)) ,fun)
