@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+export PS4='+	$0	${LINENO}	 '
+bash -x "$@"
