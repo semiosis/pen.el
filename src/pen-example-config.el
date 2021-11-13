@@ -236,20 +236,6 @@
 
 ;; https://www.emacswiki.org/emacs/TheMysteriousCaseOfShiftedFunctionKeys
 
-;; Treat <S-f9> as a prefix key for pen
-(define-key pen-map (kbd "<S-f9> Y") 'pen-add-to-glossary)
-(define-key pen-map (kbd "<S-f9> G") 'pen-define-general-knowledge)
-(define-key pen-map (kbd "<S-f9> L") 'pen-define-detectlang)
-(define-key pen-map (kbd "<S-f9> T") 'pen-define-word-for-topic)
-
-(define-key pen-map (kbd "<f12>") nil)
-(define-key pen-map (kbd "<f11>") nil)
-(define-key pen-map (kbd "<f10>") nil)
-(define-key pen-map (kbd "<S-f12>") 'pen-add-to-glossary)
-(define-key pen-map (kbd "<S-f11>") 'pen-define-general-knowledge)
-(define-key pen-map (kbd "<S-f10>") 'pen-define-detectlang)
-(define-key pen-map (kbd "<S-f8>") 'pen-define-word-for-topic)
-
 (defset pen-fz-commands '(pen-lg-display-page
                           pen-browse-url-for-passage
                           pen-add-to-glossary))
@@ -463,6 +449,20 @@
                                       pf-explain-solidity-code/1
                                       pf-explain-haskell-code/1
                                       pf-explain-code-with-bulleted-docstring/1)))
+
+;; Treat <S-f9> as a prefix key for pen
+(define-key pen-map (kbd "<S-f9> Y") 'pen-add-to-glossary)
+(define-key pen-map (kbd "<S-f9> G") 'pen-define-general-knowledge)
+(define-key pen-map (kbd "<S-f9> L") 'pen-define-detectlang)
+(define-key pen-map (kbd "<S-f9> T") 'pen-define-word-for-topic)
+
+(define-key pen-map (kbd "<f12>") nil)
+(define-key pen-map (kbd "<f11>") nil)
+(define-key pen-map (kbd "<f10>") nil)
+(define-key pen-map (kbd "<S-f12>") 'pen-add-to-glossary)
+(define-key pen-map (kbd "<S-f11>") 'pen-define-general-knowledge)
+(define-key pen-map (kbd "<S-f10>") 'pen-define-detectlang)
+(define-key pen-map (kbd "<S-f8>") 'pen-define-word-for-topic)
 
 (define-key global-map (kbd "M-2") #'company-lsp)
 
