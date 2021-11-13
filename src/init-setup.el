@@ -125,7 +125,7 @@
   (if (f-directory-p (f-join contribhostdir "src"))
       (setq contribdir contribhostdir))
   (add-to-list 'load-path (f-join contribdir "src"))
-  (require 'pen)
+  (require 'pen-contrib)
 
   (add-to-list 'load-path (f-join pendir "src/in-development"))
   (add-to-list 'load-path (f-join contribdir "src"))
