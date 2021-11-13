@@ -892,6 +892,7 @@ IFS= read -r -d '' shcode <<HEREDOC
                 cmd --network host
         fi
         ) \
+        --expose 7681 -p 7681:7681 \
         --expose 57575 -p 57575:57575 \
         --entrypoint= --name=pen semiosis/pen.el:latest "$remote_cmd"
 HEREDOC
