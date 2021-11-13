@@ -144,8 +144,7 @@ docker() {
             *) shift;;
         esac; done
 
-        cmd-nice "$@" 1>&2
-
+        # tmux new-window "$@" || tmux new-session "$@"
         "$@"
     else
         command docker "$@"
