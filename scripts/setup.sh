@@ -164,23 +164,6 @@ ln -sf ~/.emacs.d/pen.el/src/init.el ~/.emacs
 
 (
 cd
-git clone https://libwebsockets.org/repo/libwebsockets
-cd libwebsockets && mkdir build && cd build
-cmake ..
-make && make install
-)
-
-(
-cd
-agi build-essential cmake git libjson-c-dev
-git clone https://github.com/tsl0922/ttyd.git
-cd ttyd && mkdir build && cd build
-cmake ..
-make && make install
-)
-
-(
-cd
 git clone "https://github.com/dieggsy/eterm-256color"
 tic -s ./eterm-256color/eterm-256color.ti
 )
@@ -248,3 +231,22 @@ agi gridsite-clients
 agi w3m
 
 agi fzf
+
+# for ttyd
+(
+cd
+git clone https://libwebsockets.org/repo/libwebsockets
+cd libwebsockets && mkdir build && cd build
+cmake ..
+make && make install
+)
+
+# ttyd
+(
+cd
+agi build-essential cmake git libjson-c-dev
+git clone https://github.com/tsl0922/ttyd.git
+cd ttyd && mkdir build && cd build
+cmake ..
+make && make install
+)
