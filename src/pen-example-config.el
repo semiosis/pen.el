@@ -290,6 +290,7 @@
 (defun pen-define-maps ()
   (interactive)
 
+  ;; Basic completion functions
   (pen-dk-easy "1" 'pen-complete-word)
   (pen-dk-easy "2" 'pen-complete-words)
   (pen-dk-easy "3" 'pen-complete-line)
