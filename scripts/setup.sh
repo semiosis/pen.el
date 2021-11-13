@@ -246,3 +246,5 @@ agi x11-apps
 agi gridsite-clients
 
 agi w3m
+
+agi fzf

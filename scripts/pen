@@ -133,6 +133,23 @@ rp="$(realpath "$0")"
 PEN_USE_GUI=y
 share_x=y
 
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
+docker() {
+    if inside-docker-p; then
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            bash) break;;
+            *) shift;;
+        esac; done
+
+        "$@"
+    else
+        command docker "$@"
+    fi
+}
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     sh) {
