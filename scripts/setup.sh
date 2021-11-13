@@ -124,10 +124,6 @@ apt install libgtk-3-0 libgtk-3-dev
 )
 rm -rf /root/emacs
 
-# This is kinda optional but will give you a web-facing Pen
-agi libssl-dev
-pyf butterfly
-
 # I want huggingface transformers and I'm going to use clojure to access them
 (
 cd
@@ -231,6 +227,10 @@ agi gridsite-clients
 agi w3m
 
 agi fzf
+
+# This is kinda optional but will give you a web-facing Pen
+agi libssl-dev
+# pyf butterfly
 
 # for ttyd
 (
