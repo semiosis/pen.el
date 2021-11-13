@@ -242,6 +242,7 @@ Pen.el aims to be the best tool for prompt engineering.
 - Consolidate language models
   - https://github.com/semiosis/lm-complete
 - Employ many different languages in prompt design
+- Facilitate imaginary programming
 
 ** Vision
 At its heart, emacs is an operating system
