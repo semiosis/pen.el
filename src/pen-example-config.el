@@ -121,6 +121,12 @@
       (setq pen-prompts-directory hostpromptsdir)
     (setq pen-prompts-directory (f-join user-emacs-directory "prompts"))))
 
+;; Personal contrib repository
+(let ((hostcontribdir (f-join user-emacs-directory "host" "pen-contrib.el")))
+  (if (f-directory-p (f-join hostcontribdir "pen-contrib.el"))
+      (setq pen-contrib-directory hostcontribdir)
+    (setq pen-contrib-directory (f-join user-emacs-directory "pen-contrib.el"))))
+
 ;; Personal engines repository
 (let ((hostenginesdir (f-join user-emacs-directory "host" "engines")))
   (if (f-directory-p (f-join hostenginesdir "engines"))

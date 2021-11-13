@@ -129,6 +129,12 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-contrib-directory (f-join user-emacs-directory "pen-contrib.el")
+  "Personal pen-contrib.el respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-snippets-directory (f-join user-emacs-directory "snippets")
   "Personal snippets respository"
   :type 'string

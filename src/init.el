@@ -77,6 +77,11 @@
   (add-to-list 'load-path (f-join pendir "src"))
   (require 'pen)
 
+  (if (f-directory-p (f-join contribhostdir "src"))
+      (setq contribdir contribhostdir))
+  (add-to-list 'load-path (f-join contribdir "src"))
+  (require 'pen)
+
   (add-to-list 'load-path (f-join pendir "src/in-development"))
   (add-to-list 'load-path (f-join contribdir "src"))
 
