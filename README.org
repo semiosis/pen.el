@@ -232,7 +232,7 @@ Pen.el aims to be the best tool for prompt engineering.
 - Support Free-as-in-freedom AGI
 - Do more than merely strive to be free as in freedom
   - Preserve freedom, privacy in a license-blind AI future
-- Keep computing textual
+- Keep computing textual (intelligible)
 - Encode provenance of text via text properties and a DSL and allow for re-evaluation
   - https://github.com/semiosis/ink.el
 - Integrate =pen.el= with many other emacs packages
