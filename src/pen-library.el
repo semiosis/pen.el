@@ -505,4 +505,7 @@ It's really meant for key bindings and which-key, so they should all be interact
         (kill-buffer))
     (xc (get-path))))
 
+(defun unslugify (input)
+  (pen-snc "unslugify" input))
+
 (provide 'pen-library)
