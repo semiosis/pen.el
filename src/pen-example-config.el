@@ -330,7 +330,12 @@
   (pen-dk-easy "c n" 'pen-select-function-from-nl)
   (pen-dk-easy "c p" 'pf-imagine-a-project-template/1)
   (pen-dk-easy "c t" 'pen-transform-code)
-  (pen-dk-easy "f" nil)
+  (pen-dk-easy "c l" 'pf-transpile/3)
+
+  ;; p Prose
+  (pen-dk-easy "p" nil)
+  (pen-dk-easy "c t" 'pen-transform-prose)
+  (pen-dk-easy "c l" 'pf-translate/3)
 
   ;; g Generate
   (pen-dk-easy "g" nil)
@@ -370,13 +375,15 @@
   (pen-dk-easy "d d" 'pf-define-word-for-glossary/1)
   (pen-dk-easy "d 2" 'pf-define-word-for-glossary/2)
 
-  ;; p Explain
-  (pen-dk-easy "p" nil)
-  (pen-dk-easy "p 2" 'pf-explain-some-code/2)
-  (pen-dk-easy "p b" 'pf-explain-code-with-bulleted-docstring/1)
-  (pen-dk-easy "p h" 'pf-explain-haskell-code/1)
-  (pen-dk-easy "p s" 'pf-explain-solidity-code/1)
-  (pen-dk-easy "p s" 'pf-explain-some-code-with-steps/1)
+  ;; n Explain
+  (pen-dk-easy "n" nil)
+  (pen-dk-easy "n 2" 'pf-explain-some-code/2)
+  (pen-dk-easy "n b" 'pf-explain-code-with-bulleted-docstring/1)
+  (pen-dk-easy "n h" 'pf-explain-haskell-code/1)
+  (pen-dk-easy "n s" 'pf-explain-solidity-code/1)
+  (pen-dk-easy "n s" 'pf-explain-some-code-with-steps/1)
+
+  (pen-dk-easy "f" nil)
 
   ;; t Transform
   (pen-dk-easy "t" nil)
