@@ -55,6 +55,7 @@
 (package-install 'w3m)
 (package-install 'eww-lnum)
 (package-install 'ace-link)
+(package-install 'mwim)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -102,6 +103,7 @@
 (require 'w3m)
 (require 'eww-lnum)
 (require 'ace-link)
+(require 'mwim)
 
 (require 'pen-custom)
 
