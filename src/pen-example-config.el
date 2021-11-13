@@ -322,9 +322,9 @@
 
   ;; p Prose
   (pen-dk-easy "p" nil)
-  (pen-dk-easy "c t" 'pen-transform-prose)
-  (pen-dk-easy "c l" 'pf-translate/3)
-  (pen-dk-easy "c v" 'pf-very-witty-pick-up-lines-for-a-topic/1)
+  (pen-dk-easy "p t" 'pen-transform-prose)
+  (pen-dk-easy "p l" 'pf-translate/3)
+  (pen-dk-easy "p v" 'pf-very-witty-pick-up-lines-for-a-topic/1)
 
   ;; f Fun
   (pen-dk-easy "f" nil)
