@@ -407,7 +407,22 @@
   (pen-define-key pen-map (kbd "H-TAB p") 'pf-imagine-a-project-template/1)
   (pen-define-key pen-map (kbd "H-TAB b") 'pf-generate-the-contents-of-a-new-file/6)
 
-  (define-key pen-map (kbd "H-^") 'pen-transform))
+  ;; Treat <S-f9> as a prefix key for pen
+  (define-key pen-map (kbd "H-^") 'pen-transform)
+  (define-key pen-map (kbd "<S-f9> Y") 'pen-add-to-glossary)
+  (define-key pen-map (kbd "<S-f9> G") 'pen-define-general-knowledge)
+  (define-key pen-map (kbd "<S-f9> L") 'pen-define-detectlang)
+  (define-key pen-map (kbd "<S-f9> T") 'pen-define-word-for-topic)
+  (define-key pen-map (kbd "<f12>") nil)
+  (define-key pen-map (kbd "<f11>") nil)
+  (define-key pen-map (kbd "<f10>") nil)
+  (define-key pen-map (kbd "<S-f12>") 'pen-add-to-glossary)
+  (define-key pen-map (kbd "<S-f11>") 'pen-define-general-knowledge)
+  (define-key pen-map (kbd "<S-f10>") 'pen-define-detectlang)
+  (define-key pen-map (kbd "<S-f8>") 'pen-define-word-for-topic)
+  (define-key pen-map (kbd "H-@") 'pen-see-pen-command-hist)
+  (define-key pen-map (kbd "M-l M-y") 'pen-copy-link-at-point)
+  (define-key pen-map (kbd "M-k") 'avy-goto-char))
 
 
 
@@ -452,30 +467,14 @@
                                       pf-explain-haskell-code/1
                                       pf-explain-code-with-bulleted-docstring/1)))
 
-;; Treat <S-f9> as a prefix key for pen
-(define-key pen-map (kbd "<S-f9> Y") 'pen-add-to-glossary)
-(define-key pen-map (kbd "<S-f9> G") 'pen-define-general-knowledge)
-(define-key pen-map (kbd "<S-f9> L") 'pen-define-detectlang)
-(define-key pen-map (kbd "<S-f9> T") 'pen-define-word-for-topic)
 
-(define-key pen-map (kbd "<f12>") nil)
-(define-key pen-map (kbd "<f11>") nil)
-(define-key pen-map (kbd "<f10>") nil)
-(define-key pen-map (kbd "<S-f12>") 'pen-add-to-glossary)
-(define-key pen-map (kbd "<S-f11>") 'pen-define-general-knowledge)
-(define-key pen-map (kbd "<S-f10>") 'pen-define-detectlang)
-(define-key pen-map (kbd "<S-f8>") 'pen-define-word-for-topic)
 
 (define-key global-map (kbd "M-2") #'company-lsp)
-
-(define-key pen-map (kbd "H-@") 'pen-see-pen-command-hist)
 
 ;; (call-interactively 'pen-add-key-booste)
 
 (add-hook 'emacs-lisp-mode-hook '(lambda () (lispy-mode 1)))
 
-(define-key pen-map (kbd "M-l M-y") 'pen-copy-link-at-point)
-(define-key pen-map (kbd "M-k") 'avy-goto-char)
 
 (advice-add 'kill-buffer-and-window :around #'ignore-errors-around-advice)
 
