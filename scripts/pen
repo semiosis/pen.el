@@ -166,13 +166,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -gui) {
-        PEN_USE_GUI=y
-        share_x=y
-        shift
-    }
-    ;;
-
     -X) {
         share_x=y
         shift
@@ -188,6 +181,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -nogui) {
         PEN_USE_GUI=n
+        shift
+    }
+    ;;
+
+    -gui) {
+        PEN_USE_GUI=y
+        share_x=y
         shift
     }
     ;;
