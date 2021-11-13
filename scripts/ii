@@ -23,7 +23,7 @@ shift
 
 memory="$2"
 
-test -n "$MYGIT" && test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
+test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
 lang_lc="$(p "$lang" | tr '[:upper:]' '[:lower:]')"
