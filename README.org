@@ -224,6 +224,7 @@ Pen.el aims to be the best tool for prompt engineering.
 
 - Peer-to-peer sharing of prompts
   - https://github.com/semiosis/prompts/
+  - Through cryptocurrency
 - Integrate arbitrarily many language models and language model protocols
 - Encode provenance of text via text properties and a DSL and allow for re-evaluation
   - https://github.com/semiosis/ink.el
