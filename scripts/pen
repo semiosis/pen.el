@@ -179,9 +179,15 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -nogui|-noX|-safe) {
+    -noX|-safe) {
         PEN_USE_GUI=n
         share_x=n
+        shift
+    }
+    ;;
+
+    -nogui) {
+        PEN_USE_GUI=n
         shift
     }
     ;;
@@ -774,13 +780,13 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$GLOSSARIES_DIR" && printf -- "%s " -v "$GLOSSARIES_DIR:/root/.emacs.d/host/glossaries" ) \
         $(test -n "$OPENAI_API_EL_DIR" && printf -- "%s " -v "$OPENAI_API_EL_DIR:/root/.emacs.d/host/openai-api.el" ) \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
+        --env PEN_USE_GUI \
         --env TERM \
         $(if test -n "$DISPLAY"; then
         cmd --privileged \
         --env COLORFGBG \
         -e DISPLAY=${DISPLAY} \
         --env EMAIL \
-        --env PEN_USE_GUI \
         --env GIT_AUTHOR_EMAIL \
         --env GIT_AUTHOR_NAME \
         --env GIT_COMMITTER_EMAIL \
@@ -815,7 +821,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice "$(cmd-nice eval "$(cmd-nice "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" $(test "$HAS_TTY" = y && printf -- "%s " -ti ) pen bash -c $evalcommand
+docker "$docker_cmd" --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) pen bash -c $evalcommand
 HEREDOC
     }
     ;;
