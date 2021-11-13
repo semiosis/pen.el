@@ -384,6 +384,7 @@
   (pen-dk-easy "t r" 'pf-translate/3)
   (pen-dk-easy "t l" 'pf-transpile/3)
 
+  ;; misc
   (pen-dk-easy "w" 'pen-transform)
   (pen-dk-easy "^" 'pen-transform)
   (pen-dk-easy "x" 'pen-diagnostics-show-context)
