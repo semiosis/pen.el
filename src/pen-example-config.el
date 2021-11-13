@@ -257,10 +257,6 @@
 ;; prose H-"
 ;; math H-#
 
-(setq pen-fav-programming-language "Emacs Lisp")
-(setq pen-fav-world-language "English")
-
-
 ;; (defun metaize-keybind (b)
 ;;   (-cx '("M-" "") (s-split " " b)))
 
@@ -497,3 +493,7 @@
 (define-key key-translation-map (kbd "C-M-i") nil)
 
 ;; (advice-remove 'kill-ring-save #'kill-ring-save-around-advice)
+
+
+(setq pen-fav-programming-language "Emacs Lisp")
+(setq pen-fav-world-language "English")
