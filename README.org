@@ -241,7 +241,7 @@ Pen.el aims to be the best tool for prompt engineering.
     - Versioned by blockchain
 - Consolidate language models
   - https://github.com/semiosis/lm-complete
-- 
+- Employ many different languages
 
 ** Vision
 At its heart, emacs is an operating system
