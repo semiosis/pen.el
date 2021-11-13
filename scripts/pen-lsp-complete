@@ -16,8 +16,6 @@ if stdin_exists; then
 
     input_fp="$(pen-tf txt)"
 
-    cat > "$input_fp"
-
     if test -n "$POSITION"; then
         line="$(echo "$POSITION" | cut -d : -f 1)"
         col="$(echo "$POSITION" | cut -d : -f 2)"

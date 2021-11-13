@@ -4,6 +4,8 @@ export TTY
 url="$@"
 test -n "$url" || exit 1
 
+exec 0</dev/null
+
 case "$url" in
     *arxiv.org/*) {
         fp="$(pen-tf txt)"

@@ -4,6 +4,4 @@ export TTY
 tf_thing="$(pen-tf jinja)"
 trap "rm \"$tf_thing\" 2>/dev/null" 0
 
-cat > "$tf_thing"
-
 jinja2 "$@" "$tf_thing"

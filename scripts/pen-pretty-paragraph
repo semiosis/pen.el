@@ -12,8 +12,6 @@ width="$1"
 tf_input="$(pen-tf)"
 trap "rm \"$tf_input\" 2>/dev/null" 0
 
-cat > "$tf_input"
-
 initalwhitespace="$(cat "$tf_input" | sed -n "1s/^\(^- \)\?\(\s\+\).*/\2/p")"
 whitespacewidth="$(printf -- "%s" "$initalwhitespace" | wc -c)"
 width="$(( width - whitespacewidth ))"

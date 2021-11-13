@@ -85,6 +85,7 @@ fix_url_question_amp() {
 }
 
 if test "$enumerate" = "y"; then
+    exec 0</dev/null
     tf_results_page="$(pen-tf results_page || echo /dev/null)"
     trap "rm \"$tf_results_page\" 2>/dev/null" 0
 
