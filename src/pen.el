@@ -388,10 +388,10 @@ Reconstruct the entire yaml-ht for a different language."
                 (setq s (string-replace unchomped2 val s)))))
 
             (loop for pl
-                  in '((q pen-q)
-                       (sl slugify)
-                       (bx pen-boxify)
-                       (bs pen-backslashed))
+                  in '(("q" pen-q)
+                       ("sl" slugify)
+                       ("bx" pen-boxify)
+                       ("bs" pen-backslashed))
                   do
                   (let ((plf (format "<%s:%d>" (car pl) i))
                         (plf2 (format "<%s<pen-colon>%d>" (car pl) i))
@@ -491,10 +491,10 @@ Reconstruct the entire yaml-ht for a different language."
               ;;  (car (assoc "uc" '(("uc" . "pen-str uc")))))
 
               (loop for pl
-                    in '((q pen-q)
-                         (sl slugify)
-                         (bx pen-boxify)
-                         (bs pen-backslashed))
+                    in '(("q" pen-q)
+                         ("sl" slugify)
+                         ("bx" pen-boxify)
+                         ("bs" pen-backslashed))
                     do
                     (let ((plf (format "<%s:%s>" (car pl) key))
                           (plf2 (format "<%s<pen-colon>%s>" (car pl) key))
@@ -572,10 +572,10 @@ Reconstruct the entire yaml-ht for a different language."
                   (setq s (string-replace unchomped2 val s)))))
 
               (loop for pl
-                    in '((q pen-q)
-                         (sl slugify)
-                         (bx pen-boxify)
-                         (bs pen-backslashed))
+                    in '(("q" pen-q)
+                         ("sl" slugify)
+                         ("bx" pen-boxify)
+                         ("bs" pen-backslashed))
                     do
                     (let ((plf (format "<%s:%s>" (car pl) key))
                           (plf2 (format "<%s<pen-colon>%s>" (car pl) key))
