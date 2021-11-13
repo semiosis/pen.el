@@ -138,10 +138,10 @@ inside-docker-p() {
 }
 
 docker() {
-    # if test "$DEBUG_ABORT" = "y"; then
-    #     cmd "$@" | awk 1
-    #     exit "$?"
-    # fi
+    if test "$DEBUG_ABORT" = "y"; then
+        cmd "$@" | awk 1
+        exit "$?"
+    fi
 
     if inside-docker-p; then
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -534,13 +534,14 @@ case "$sn" in
     ;;
 
     pent) {
-        # This is used to run docker terminal emacs with arguments
+        # This is used to run docker terminal emacs with -e
         # Advanced.
         # Used for ii.
+        HAS_TTY=y
         show_banner=n
         PEN_USE_GUI=n
-        export DEBUG_ABORT=p
-        set -- -t "$@"
+        # export DEBUG_ABORT=y
+        set -- -t -- -e "$@"
     }
     ;;
 
@@ -719,7 +720,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     # This is like pene, has the tty
     -t) {
-        HAS_TTY=y
         batch=y
         share_x=n
         docker_cmd=exec
@@ -733,6 +733,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             set -- "$@" "(pen-update $last_arg)"
         fi
     }
+    ;;
+
+    --)
+        shift
+        break
     ;;
 
     *) break;
