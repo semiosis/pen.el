@@ -430,8 +430,6 @@
   (define-key pen-map (kbd "M-l M-y") 'pen-copy-link-at-point)
   (define-key pen-map (kbd "M-k") 'avy-goto-char))
 
-
-
 (pen-define-maps)
 
 ;; complex terminal commands
