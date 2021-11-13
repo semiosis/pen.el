@@ -227,7 +227,7 @@ Pen.el aims to be the best tool for prompt engineering.
   - Through GitHub
   - Through blockchain
 - Integrate arbitrarily many language models and language model protocols
-  - 
+  - text, image, audio, video
 - Support Free-as-in-freedom AGI
 - Transcend licences to preserve freedom and privacy
 - Encode provenance of text via text properties and a DSL and allow for re-evaluation
