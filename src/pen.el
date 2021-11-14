@@ -1879,7 +1879,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (nogen
                    (or no-gen
-                       (pen-engine-disabled-p final-engine)))
+                       (pen-engine-disabled-p (pen-etv final-engine))))
 
                   (results
                    (if no-gen
