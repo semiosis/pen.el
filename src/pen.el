@@ -238,7 +238,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun engine-disabled-p (engine)
   (let ((disabled))
-    (loop for e in disabled-engines do
+    (loop for e in pen-disabled-engines do
           (if (string-match e engine)
               (setq disabled t)))
     disabled))
@@ -2400,7 +2400,7 @@ Otherwise, it will be a shell expression template")
   ;; Then I should have default engines that are mode specific.
   (comment
    (let ((selected-engine starting-engine))
-     (loop for e in disabled-engines do
+     (loop for e in pen-disabled-engines do
            (if (string-match e selected-engine)
                (setq selected-engine pen-default-engine)))
 
