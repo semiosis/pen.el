@@ -5,6 +5,10 @@
 
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
+sn="$(basename "$0")"
+bn="$sn"
+rp="$(realpath "$0")"
+
 if test "$sn" = penx; then
     shift
     sn=pen
@@ -132,10 +136,6 @@ else
     HAS_TTY=n
     batch=y
 fi
-
-sn="$(basename "$0")"
-bn="$sn"
-rp="$(realpath "$0")"
 
 : "${PEN_USE_GUI:="y"}"
 : "${share_x:="y"}"
