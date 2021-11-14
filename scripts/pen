@@ -366,14 +366,16 @@ if { test "$sn" = pen || test "$sn" = penc; } && \
 
     rp="$(realpath "$1")"
     bn="$(basename "$rp")"
-    ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
-    shift
+
+    if ! inside-docker-p; then
+        ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
+        shift
+        set -- "/root/.pen/documents/$bn" "$@"
+    fi
 
     # sn=penc
 
     # set -- -e "(find-file $(cmd-nice "/root/.pen/documents/$bn")"
-
-    set -- "/root/.pen/documents/$bn" "$@"
 fi
 
 if test "$sn" = pen && test "$1" = -e; then
