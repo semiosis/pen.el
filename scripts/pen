@@ -798,7 +798,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if ! test "$vanilla" = "y" && ! inside-docker-p; then
+if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/glossaries" && : "${GLOSSARIES_DIR:="$MYGIT/semiosis/glossaries"}"
     test -d "glossaries" && : "${GLOSSARIES_DIR:="glossaries"}"
 
