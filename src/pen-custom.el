@@ -111,6 +111,12 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-default-engine "OpenAI Codex"
+  "Default engine"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-prompt-function-prefix "pf-"
   "Prefix string to prepend to prompt function names"
   :type 'string
