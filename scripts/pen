@@ -8,25 +8,6 @@
 pen_image=semiosis/pen.el:latest
 pen_container_name=pen
 
-while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-    "") { shift; }; ;;
-    -latest) {
-        pen_image=semiosis/pen.el:latest
-        pen_container_name=pen
-        shift
-    }
-    ;;
-
-    -big) {
-        pen_image=semiosis/pen.el:big
-        pen_container_name=penbig
-        shift
-    }
-    ;;
-
-    *) break;
-esac; done
-
 sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$0")"
@@ -266,6 +247,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -nogui) {
         PEN_USE_GUI=n
+        shift
+    }
+    ;;
+
+    -big) {
+        pen_image=semiosis/pen.el:big
+        pen_container_name=penbig
         shift
     }
     ;;
