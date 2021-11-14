@@ -8,8 +8,24 @@
 pen_image=semiosis/pen.el:latest
 pen_container_name=pen
 
-# pen_image=semiosis/pen.el:big
-# pen_container_name=penbig
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -latest) {
+        pen_image=semiosis/pen.el:latest
+        pen_container_name=pen
+        shift
+    }
+    ;;
+
+    -big) {
+        pen_image=semiosis/pen.el:big
+        pen_container_name=penbig
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
 
 sn="$(basename "$0")"
 bn="$sn"
