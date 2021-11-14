@@ -154,7 +154,11 @@ docker() {
     if inside-docker-p; then
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             bash) break;;
-            ./run.sh) break;;
+            ./run.sh) {
+                shift
+                set -- run.sh "$@"
+                break
+            };;
             *) shift;;
         esac; done
 
