@@ -260,14 +260,7 @@
 ;; (defun metaize-keybind (b)
 ;;   (-cx '("M-" "") (s-split " " b)))
 
-;; Only bind if there isn't a binding currently
-(defun pen-define-key ()
-  (let ((cb (key-binding (kbd (format "%s" (key-description (read-key-sequence-vector "Key: ")))))))
-
-    (if (not cb)
-        (define-key pen-map (kbd "seq")))))
-
-(defmacro pen-define-key-easy (bind fun)
+(defmacro pen-pen-define-key-easy (bind fun)
   ""
   (append
    '(progn)
@@ -276,15 +269,15 @@
           (list bind
                 (concat "M-" (s-replace-regexp " " " M-" bind)))
           collect
-          `((define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
+          `((pen-define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
             ;; Hyper-Space
-            (define-key pen-map (kbd ,(concat "H-SPC " bind-i)) ,fun)
-            (define-key pen-map (kbd ,(concat "M-Q " bind-i)) ,fun)
-            (define-key pen-map (kbd ,(concat "M-u " bind-i)) ,fun)
-            (define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun)
-            (define-key pen-map (kbd ,(concat "M-SPC " bind-i)) ,fun)
-            (define-key pen-map (kbd ,(concat "M-SPC TAB " bind-i)) ,fun)
-            (define-key pen-map (kbd ,(concat "M-SPC C-M-i " bind-i)) ,fun))))))
+            (pen-define-key pen-map (kbd ,(concat "H-SPC " bind-i)) ,fun)
+            (pen-define-key pen-map (kbd ,(concat "M-Q " bind-i)) ,fun)
+            (pen-define-key pen-map (kbd ,(concat "M-u " bind-i)) ,fun)
+            (pen-define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun)
+            (pen-define-key pen-map (kbd ,(concat "M-SPC " bind-i)) ,fun)
+            (pen-define-key pen-map (kbd ,(concat "M-SPC TAB " bind-i)) ,fun)
+            (pen-define-key pen-map (kbd ,(concat "M-SPC C-M-i " bind-i)) ,fun))))))
 (defalias 'pen-dk-easy 'pen-define-key-easy)
 
 

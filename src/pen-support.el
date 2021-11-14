@@ -1373,6 +1373,14 @@ Out
     newcode))
 (defalias 'pen-ms 'pen-macro-sed)
 
+;; Only bind if there isn't a binding currently?
+(comment
+ (defun pen-define-key ()
+   (let ((cb (key-binding (kbd (format "%s" (key-description (read-key-sequence-vector "Key: ")))))))
+
+     (if (not cb)
+         (define-key pen-map (kbd "seq"))))))
+
 (defmacro pen-define-key (map kbd-expr func-sym)
   (macroexpand
    `(pen-ms "/H-[A-Z]\\+/{p;s/H-\\([A-Z]\\+\\)/<H-\\L\\1>/;}"
