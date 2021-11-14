@@ -9,7 +9,10 @@ export TTY
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
+# This runs in the docker to the host
 cterm ssh \
+    -M
+    -o ControlPath="~/ssh-controlpath-%r@%h:%p" \
     -o UserKnownHostsFile=/dev/null \
     -o StrictHostKeyChecking=no \
     -t $USER@$(hostname) \
