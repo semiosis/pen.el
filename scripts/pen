@@ -350,11 +350,11 @@ if test "$sn" = pen && \
     ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
     shift
 
-    sn=penc
+    # sn=penc
 
     # set -- -e "(find-file $(cmd-nice "/root/.pen/documents/$bn")"
 
-    set -- "/root/.pen/documents/$bn"
+    set -- "/root/.pen/documents/$bn" "$@"
 fi
 
 if test "$sn" = pen && test "$1" = -e; then
@@ -508,6 +508,9 @@ case "$sn" in
             batch=y
             docker_cmd=exec
             remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
+        else
+            # Put it back
+            set -- "$fun" "$@"
         fi
     }
     ;;
@@ -867,6 +870,9 @@ case "$docker_cmd" in
         echo
     fi
 
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
 IFS= read -r -d '' shcode <<HEREDOC
     # --user "$(id -u):$(id -g)"
     docker "$docker_cmd" \
@@ -908,7 +914,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         ) \
         --expose 7681 -p 7681:7681 \
         --expose 57575 -p 57575:57575 \
-        --entrypoint= --name=pen semiosis/pen.el:latest "$remote_cmd"
+        --entrypoint= --name=pen semiosis/pen.el:latest "$remote_cmd" $CMD
 HEREDOC
     }
     ;;
