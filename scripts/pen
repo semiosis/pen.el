@@ -144,6 +144,10 @@ inside-docker-p() {
     test -f /.dockerenv
 }
 
+docker-running-p() {
+    test -n "$(docker ps --filter "name=pen" | sed 1d)"
+}
+
 docker() {
     if test "$DEBUG_ABORT" = "y"; then
         cmd "$@" | awk 1
@@ -358,7 +362,7 @@ if test "$sn" = pen && test "$1" = -e; then
     sn=pene
 fi
 
-if test "$sn" = pen && test "$#" -eq 0 && { inside-docker-p || test -n "$(docker ps --filter "name=pen" | sed 1d)"; }; then
+if test "$sn" = pen && test "$#" -eq 0 && { inside-docker-p || docker-running-p; }; then
     sn=penc
 fi
 
