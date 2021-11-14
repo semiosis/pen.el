@@ -260,7 +260,7 @@
 ;; (defun metaize-keybind (b)
 ;;   (-cx '("M-" "") (s-split " " b)))
 
-(defmacro pen-pen-define-key-easy (bind fun)
+(defmacro pen-define-key-easy (bind fun)
   ""
   (append
    '(progn)
