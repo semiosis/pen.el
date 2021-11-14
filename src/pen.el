@@ -1754,6 +1754,8 @@ Reconstruct the entire yaml-ht for a different language."
                             ;; ("PEN_PROMPT" . ,(pen-encode-string final-prompt))
                             ("PEN_LM_COMMAND" . ,final-lm-command)
                             ("PEN_MODEL" . ,final-model)
+                            ;; This must go into last-prompt-data for ink
+                            ("PEN_ENGINE" . ,final-engine)
                             ("PEN_API_ENDPOINT" . ,final-api-endpoint)
                             ("PEN_PAYLOADS" . ,final-payloads)
                             ("PEN_LOGPROBS" . ,final-logprobs)

@@ -131,8 +131,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (defun pen-goto-engine (engine)
   (ignore-errors
-    (let* ((e (ht-get pen-engines "OpenAI Davinci"))
-           (path (ht-get e "path")))
+    (let* ((e (ht-get pen-engines engine))
+           (path (ht-get e "engine-path")))
       (find-file path))))
 
 (defun pen-selected-or-preceding-context (&optional max-chars)
