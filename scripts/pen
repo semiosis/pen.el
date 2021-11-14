@@ -5,11 +5,11 @@
 
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
-# pen_image=semiosis/pen.el:latest
-# pen_container_name=pen
+pen_image=semiosis/pen.el:latest
+pen_container_name=pen
 
-pen_image=semiosis/pen.el:big
-pen_container_name=penbig
+# pen_image=semiosis/pen.el:big
+# pen_container_name=penbig
 
 sn="$(basename "$0")"
 bn="$sn"
