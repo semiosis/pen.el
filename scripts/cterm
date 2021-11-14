@@ -9,7 +9,7 @@ modename=" \"$modename\""
 bufname="$(p term "$@" | slugify)"
 
 # elisp="(pen-term \"$script\" t $modename)$elisp"
-elisp="(pen-term (pen-nsfa $(cmd-nice-posix "$@")) t $modename)$elisp"
+elisp="(pen-term (pen-nsfa $(cmd-nice "$(cmd-nice-posix "$@")")) t $modename)$elisp"
 
 # oresp -sh "$@"
 pent "$elisp"

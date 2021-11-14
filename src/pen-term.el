@@ -380,4 +380,34 @@ without any interpretation."
     (xc (chomp linecontents) t)
     linecontents))
 
+(defun eterm-256color-compile ()
+  "If eterm-256color isn't a term type, tic eterm-256color.ti.
+
+If eterm-color doesn't exist, prompt to fetch and compile it."
+  (unless (eterm-256color-term-exists-p "eterm-256color")
+    (if (eterm-256color-term-exists-p "eterm-color")
+        (when (y-or-n-p "eterm-256color-mode requires compilation of eterm-256color.ti.
+Term may need to be restarted. Compile now? ")
+          (let ((package-path (or load-file-name buffer-file-name)))
+            (when (or (not package-path)
+                      (not (equal (file-name-nondirectory package-path)
+                                  "eterm-256color.el")))
+              (setq package-path (locate-library "eterm-256color.el")))
+            (compilation-start
+             (format "tic -s '%s'" (expand-file-name
+                                  "eterm-256color.ti"
+                                  (file-name-directory package-path))))))
+      (when (y-or-n-p "It seems you don't have the required term type 'eterm-color'.
+Fetch from github.com/emacs-mirror/emacs and compile? ")
+        (url-copy-file "https://raw.githubusercontent.com/emacs-mirror/emacs/master/etc/e/eterm-color.ti"
+                       (expand-file-name
+                        "eterm-color.ti"
+                        temporary-file-directory)
+                       'ok-if-already-exists)
+        (compilation-start
+         (format "tic -s %s"
+                 (expand-file-name
+                  "eterm-color.ti"
+                  temporary-file-directory)))))))
+
 (provide 'pen-term)

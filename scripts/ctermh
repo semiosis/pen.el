@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# Example:
+# Run cterm on the host.
+
+# ctermh vim /
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+cterm ssh -t $USER@$(hostname) "bash -l -c $(cmd-nice ". ~/.profile; $CMD")"
