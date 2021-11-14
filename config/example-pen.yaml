@@ -1,0 +1,29 @@
+debug: on
+sh-update: off
+libre-only: off
+fav-world-language: English
+fav-programming-language: Emacs Lisp
+force-engine: OpenAI Codex
+force-few-completions: off
+force-single-collation: off
+force-one: off
+force-n-collate: ~
+force-n-completions: ~
+force-single-collation: off
+# force-temperature: ~
+disable-ink: off
+cost-efficient: on
+describe-images: on
+
+# Default engines are used when the engine resolver (all fallbacks) fail
+default-engines:
+- text-to-text: OpenAI Codex
+- image-to-text: AlephAlpha EUTranMM
+# - text-to-image: OpenAI Dall-E
+- text-to-image: ruDALL-E Malevich (XL)
+
+# Pattern match
+disabled-prompts:
+disabled-engines:
+- "AlephAlpha*"
+disabled-models:
