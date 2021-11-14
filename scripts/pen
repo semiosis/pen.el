@@ -354,7 +354,7 @@ if test "$use_pen_config" = "y"; then
     fi
 fi
 
-if test "$sn" = pen && \
+if { test "$sn" = pen || test "$sn" = penc; } && \
     test "$#" -eq 1 && \
     test -n "$1" && \
     test -f "$1" && \
