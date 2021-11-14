@@ -312,11 +312,13 @@ without any interpretation."
   (interactive)
   (progn
     (global-display-line-numbers-mode -1)
-    (global-hide-mode-line-mode 1)
+    (comment
+     (global-hide-mode-line-mode 1))
     (visual-line-mode -1)
     (fringe-mode -1))
 
-  (my-mode -1))
+  (ignore-errors
+    (my-mode -1)))
 
 (defun pen-term-around-advice (proc &rest args)
   (let ((res (apply proc args)))

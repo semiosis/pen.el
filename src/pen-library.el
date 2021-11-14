@@ -508,4 +508,11 @@ It's really meant for key bindings and which-key, so they should all be interact
 (defun unslugify (input)
   (pen-snc "unslugify" input))
 
+(defmacro defset-local (symbol value &optional documentation)
+  "Instead of doing a defvar and a setq, do this. [[http://ergoemacs.org/emacs/elisp_defvar_problem.html][ergoemacs.org/emacs/elisp_defvar_problem.html]]
+Interestingly, defvar-local does not come into effect until run, but I guess defset-local would, because it has a set."
+
+  `(progn (defvar-local ,symbol ,documentation)
+          (setq-local ,symbol ,value)))
+
 (provide 'pen-library)
