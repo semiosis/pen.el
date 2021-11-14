@@ -9,6 +9,8 @@ stty stop undef 2>/dev/null; stty start undef 2>/dev/null
 # export PEN_DEBUG=y
 
 export LANG=en_US
+export LANGUAGE=en_US:en
+export LC_ALL=en_US.UTF-8
 
 export TERM=xterm-256color
 export EMACSD=/root/.emacs.d

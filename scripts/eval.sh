@@ -9,6 +9,8 @@ stty stop undef; stty start undef
 # export PEN_DEBUG=y
 
 export LANG=en_US
+export LANGUAGE=en_US:en
+export LC_ALL=en_US.UTF-8
 
 export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
