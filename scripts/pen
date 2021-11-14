@@ -13,24 +13,6 @@ stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
-if stdin_exists; then
-    fp="$(pen-tf txt)"
-    exec 0<&1
-
-    if test "$sn" = pen && test "$#" -eq 1; then
-        sn=penc
-    fi
-
-    set -- "$@" "$fp"
-fi
-
-if test "$sn" = penx; then
-    shift
-    sn=pen
-    PEN_USE_GUI=y
-    share_x=y
-fi
-
 test_deps() {
     (
     set -xv
@@ -296,6 +278,25 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+if stdin_exists; then
+    fp="$(pen-tf txt)"
+    exec 0<&1
+
+    if test "$sn" = pen && test "$#"; then
+        sn=penc
+    fi
+
+    set -- "$@" "$fp"
+fi
+
+if test "$sn" = penx; then
+    shift
+    sn=pen
+    PEN_USE_GUI=y
+    share_x=y
+fi
+
 
 if ! test "$share_x" = "y"; then
     export DISPLAY=
