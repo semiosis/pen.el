@@ -297,7 +297,6 @@ if test "$sn" = penx; then
     share_x=y
 fi
 
-
 if ! test "$share_x" = "y"; then
     export DISPLAY=
 fi
