@@ -260,6 +260,13 @@
 ;; (defun metaize-keybind (b)
 ;;   (-cx '("M-" "") (s-split " " b)))
 
+;; Only bind if there isn't a binding currently
+(defun pen-define-key ()
+  (let ((cb (key-binding (kbd (format "%s" (key-description (read-key-sequence-vector "Key: ")))))))
+
+    (if (not cb)
+        (define-key pen-map (kbd "seq")))))
+
 (defmacro pen-define-key-easy (bind fun)
   ""
   (append
