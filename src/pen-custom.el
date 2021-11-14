@@ -239,6 +239,10 @@ This is useful for code-understanding when reading languages you don't understan
   :initialize #'custom-initialize-default)
 
 
+(defvar pen-disabled-prompts '())
+(defvar pen-disabled-engines '())
+(defvar pen-disabled-models '())
+
 (defun pen-customize ()
   (interactive)
   (customize-group "pen"))
@@ -397,6 +401,10 @@ widget.  If FILTER is nil, ACTION is always valid.")
     (setq pen-force-one (pen-yaml-test yaml-ht "force-one"))
     (setq pen-force-few-completions (pen-yaml-test yaml-ht "force-few-completions"))
     (setq pen-force-single-collation (pen-yaml-test yaml-ht "force-single-collation"))
-    (setq pen-force-temperature (ht-get yaml-ht "force-temperature"))))
+    (setq pen-force-temperature (ht-get yaml-ht "force-temperature"))
+
+    (setq pen-disabled-prompts (pen-vector2list (ht-get yaml-ht "disabled-prompts")))
+    (setq pen-disabled-engines (pen-vector2list (ht-get yaml-ht "disabled-engines")))
+    (setq pen-disabled-models (pen-vector2list (ht-get yaml-ht "disabled-models")))))
 
 (provide 'pen-custom)
