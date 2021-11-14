@@ -5,6 +5,12 @@
 
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
+# pen_image=semiosis/pen.el:latest
+# pen_container_name=pen
+
+pen_image=semiosis/pen.el:big
+pen_container_name=penbig
+
 sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$0")"
@@ -114,7 +120,7 @@ stty stop undef; stty start undef
 
 # TODO Add ability to share a file or entire directory with the host -- this would only work for docker run though
 # But file sharing could work with the client if I use a hardlink to the ~/.pen/documents directory
-# docker run --rm -v "$(pwd):/$(pwd | slugify)" -w "/$(pwd | slugify)" -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+# docker run --rm -v "$(pwd):/$(pwd | slugify)" -w "/$(pwd | slugify)" -ti --entrypoint= $pen_image ./run.sh
 
 IFS= read -r -d '' info_txt <<HEREDOC
 Pen is under continual development.
@@ -142,7 +148,7 @@ inside-docker-p() {
 }
 
 docker-running-p() {
-    test -n "$(docker ps --filter "name=pen" | sed 1d)"
+    test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
 }
 
 docker() {
@@ -317,7 +323,7 @@ if test "$start_shell" = "y"; then
     : ${CMD:="$(cmd "$@")"}
     : "${CMD:="/bin/bash || /bin/zsh || sh"}"
 
-    docker exec -it pen 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+    docker exec -it "$pen_container_name" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
     exit "$?"
 fi
 
@@ -696,7 +702,7 @@ fi
 } 1>&2
 
 : "${docker_cmd:="run"}"
-: "${remote_cmd:="./run.sh"}"
+: "${remote_cmd:="/root/run.sh"}"
 
 opt="$1"
 case "$opt" in
@@ -723,7 +729,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         if inside-docker-p; then
             remote_cmd=newframe.sh
         else
-            remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
+            remote_cmd="/root/.emacs.d/pen.el/scripts/newframe.sh"
         fi
 
         # Shift all so it doesn't do -e here
@@ -744,7 +750,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         if inside-docker-p; then
             remote_cmd=newframe.sh
         else
-            remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
+            remote_cmd="/root/.emacs.d/pen.el/scripts/newframe.sh"
         fi
 
         # Shift all so it doesn't do -e here
@@ -760,7 +766,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         if inside-docker-p; then
             remote_cmd=eval.sh
         else
-            remote_cmd="./.emacs.d/pen.el/scripts/eval.sh"
+            remote_cmd="/root/.emacs.d/pen.el/scripts/eval.sh"
         fi
         shift
 
@@ -778,7 +784,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         batch=y
         share_x=n
         docker_cmd=exec
-        remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
+        remote_cmd="/root/.emacs.d/pen.el/scripts/newframe.sh"
         shift
 
         if test "$UPDATE" = "y"; then
@@ -819,13 +825,13 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -d "openai-api.el" && : "${OPENAI_API_EL_DIR:="openai-api.el"}"
     # : "${OPENAI_API_EL_DIR:="$(read -ep "OPENAI_API_EL_DIR (leave empty to use docker): ")"}"
 
-    # yn "Pull docker image?" && docker pull semiosis/pen.el:latest
+    # yn "Pull docker image?" && docker pull $pen_image
 
     # set -v
     if ! test "$batch" = "y"; then
         yn "Pull docker image?" && (
-            echo docker pull semiosis/pen.el:latest
-            docker pull semiosis/pen.el:latest
+            echo docker pull $pen_image
+            docker pull $pen_image
         )
     fi
 
@@ -956,7 +962,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         ) \
         --expose 7681 -p 7681:7681 \
         --expose 57575 -p 57575:57575 \
-        --entrypoint= --name=pen semiosis/pen.el:latest "$remote_cmd" $CMD
+        --entrypoint= --name=$pen_container_name $pen_image "$remote_cmd" $CMD
 HEREDOC
     }
     ;;
@@ -969,7 +975,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice "$(cmd-nice eval "$(cmd-nice "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) pen bash -c $evalcommand
+docker "$docker_cmd" --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
 HEREDOC
     }
     ;;
