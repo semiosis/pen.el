@@ -16,6 +16,11 @@ stdin_exists() {
 if stdin_exists; then
     fp="$(pen-tf txt)"
     exec 0<&1
+
+    if test "$sn" = pen && test "$#" -eq 0; then
+        sn=penc
+    fi
+
     set -- "$@" "$fp"
 fi
 
