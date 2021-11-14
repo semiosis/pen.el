@@ -1877,12 +1877,12 @@ Reconstruct the entire yaml-ht for a different language."
                                     collation-temperature)))
                              (message "collation temperature stepper failed")))))))
 
-                  (nogen
-                   (or no-gen
-                       (pen-engine-disabled-p (pen-etv final-engine))))
+                  (final-no-gen
+                   (or final-no-gen
+                       (pen-engine-disabled-p final-engine)))
 
                   (results
-                   (if no-gen
+                   (if final-no-gen
                        (progn
                          (message "Prompting function aborted")
                          '(""))
@@ -2016,7 +2016,7 @@ Reconstruct the entire yaml-ht for a different language."
                      results))
 
                   ;; Avoid using this. Factor it out.
-                  (results (if (and (not no-gen)
+                  (results (if (and (not final-no-gen)
                                     (sor final-postpostprocessor))
                                (mapcar
                                 (lambda (r) (if (and final-postpostprocessor (sor final-postpostprocessor))
