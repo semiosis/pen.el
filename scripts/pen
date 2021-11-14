@@ -283,7 +283,7 @@ if stdin_exists; then
     fp="$(pen-tf txt)"
     exec 0<&1
 
-    if test "$sn" = pen && test "$#" -eq 0; then
+    if test "$sn" = pen && test "$#" -eq 0 && { inside-docker-p || docker-running-p; }; then
         sn=penc
     fi
 
