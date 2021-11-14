@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+# nsfa needs to be created from within elisp
+
+: ${modename:="$1"}
+# script="$(pen-nsfa "$@")"
+bufname="$(p term "$@" | slugify)"
+
+# elisp="(pen-term \"$script\" t $modename)$elisp"
+elisp="(pen-term (pen-nsfa $(cmd-nice "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname"))$elisp"
+
+# oresp -sh "$@"
+pent "$elisp"

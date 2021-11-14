@@ -1,14 +1,16 @@
 #!/bin/bash
 export TTY
 
-# nsfa needs to be created from within elisp
+# ct vim /
 
-: ${modename:="$1"}
-# script="$(pen-nsfa "$@")"
-bufname="$(p term "$@" | slugify)"
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
 
-# elisp="(pen-term \"$script\" t $modename)$elisp"
-elisp="(pen-term (pen-nsfa $(cmd-nice "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname"))$elisp"
-
-# oresp -sh "$@"
-pent "$elisp"
+# This runs in the docker to the host
+cterm-docker ssh \
+    -o ControlMaster=auto \
+    -o ControlPath="~/ssh-controlpath-%r@%h:%p" \
+    -o UserKnownHostsFile=/dev/null \
+    -o StrictHostKeyChecking=no \
+    -t $USER@$(hostname) \
+    "bash -l -c $(cmd-nice ". ~/.profile; $CMD")"
