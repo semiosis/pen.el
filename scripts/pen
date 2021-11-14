@@ -5,6 +5,13 @@
 
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
+if test "$sn" = penx; then
+    shift
+    sn=pen
+    PEN_USE_GUI=y
+    share_x=y
+fi
+
 test_deps() {
     (
     set -xv
@@ -130,8 +137,8 @@ sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$0")"
 
-PEN_USE_GUI=y
-share_x=y
+: "${PEN_USE_GUI:="y"}"
+: "${share_x:="y"}"
 
 inside-docker-p() {
     test -f /.dockerenv
