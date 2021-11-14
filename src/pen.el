@@ -2383,6 +2383,7 @@ Otherwise, it will be a shell expression template")
 
   ;; I actually shouldn't merely use the default engine.
   ;; That is because the model may be a different mode.
+  ;; Then I should have default engines that are mode specific.
   (let ((selected-engine starting-engine))
     (loop for e in disabled-engines do
           (if (string-match e selected-engine)
