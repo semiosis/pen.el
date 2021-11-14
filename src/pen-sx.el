@@ -171,7 +171,7 @@
 
 (defun sx-copy-question-url ()
   (interactive)
-  (my/copy (sx-get-question-url)))
+  (xc (sx-get-question-url)))
 
 (define-key sx-question-mode-map (kbd "w") 'sx-copy-question-url)
 

@@ -1106,9 +1106,10 @@ when s is a string, set the clipboard to s"
 
 (defmacro pen-eval-for-host (&rest body)
   `(let ((result (progn ,@body)))
-     (if result
-         (write-to-file (str result) "/tmp/eval-output.txt")
-       (write-to-file "" "/tmp/eval-output.txt"))
+     (shut-up
+       (if result
+           (write-to-file (str result) "/tmp/eval-output.txt")
+         (write-to-file "" "/tmp/eval-output.txt")))
      nil))
 
 (defun pen-var-value-maybe (sym)
