@@ -9,4 +9,8 @@ export TTY
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
-cterm ssh -t $USER@$(hostname) "bash -l -c $(cmd-nice ". ~/.profile; $CMD")"
+cterm ssh \
+    -o UserKnownHostsFile=/dev/null \
+    -o StrictHostKeyChecking=no \
+    -t $USER@$(hostname) \
+    "bash -l -c $(cmd-nice ". ~/.profile; $CMD")"
