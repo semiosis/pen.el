@@ -354,6 +354,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 ;; (define-key pen-map (kbd "C-M-z") 'right-click-context-menu)
 
 (define-key pen-map (kbd "H-m") 'right-click-context-menu)
+(define-key pen-map (kbd "<C-down-mouse-1>") 'right-click-context-menu)
 (define-key pen-map (kbd "C-M-z") 'right-click-context-menu)
 
 (defun right-click-context-menu-around-advice-remove-overlays (proc &rest args)
