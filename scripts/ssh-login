@@ -1,0 +1,113 @@
+#!/bin/bash
+export TTY
+
+# This command always runs like it had -E
+
+# sshl
+# run ssh with a login shell
+
+: ${UNBUFFER:="n"}
+: ${VERBOSE:="n"}
+: ${FORCE_PIPE:="n"}
+: ${FORCE_TTY:="n"}
+: ${MOSH:="n"}
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -p) {
+        FORCE_PIPE=y
+        shift
+    }
+    ;;
+
+    -m) {
+        MOSH=y
+        shift
+    }
+    ;;
+
+    -M) {
+        sshopts+=" -M "
+        shift
+    }
+    ;;
+
+    -t) {
+        FORCE_TTY=y
+        shift
+    }
+    ;;
+
+    -nu) {
+        UNBUFFER=n
+        shift
+    }
+    ;;
+
+    -t) {
+        usetty=y
+        shift
+    }
+    ;;
+
+    -u) {
+        UNBUFFER=y
+        shift
+    }
+    ;;
+
+    -v) {
+        VERBOSE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+profilebit=". ~/.profile;"
+
+ubbit=
+if test "$UNBUFFER" = "y"; then
+    ubbit="unbuffer"
+fi
+
+if test "$#" -eq 1; then
+    set -- -t "$@" "zsh || bash || sh"
+fi
+
+last_arg="${@: -1}"
+
+if test "$FORCE_PIPE" = "y"; then
+    last_arg="$last_arg | cat"
+fi
+
+set -- "${@:1:$(($#-1))}" # shift last arg
+
+final_cmd="$ubbit bash -l -c $(cmd-nice-posix "$profilebit $last_arg")"
+
+if test "$VERBOSE" = "y"; then
+    printf -- "%s\n" "ssh $(cmd-nice-posix "$@") $(cmd-nice-posix "$final_cmd")" 1>&2
+fi
+
+if test "$MOSH" = "y"; then
+    if test "$FORCE_TTY" = "y"; then
+        sshopts+=" -tt "
+    fi
+    set -- --ssh="ssh $sshopts" "$@"
+
+    set -x
+    mosh "$@" -- bash -c "$final_cmd"
+else
+    if test "$FORCE_TTY" = "y"; then
+        set -- -t "$@"
+    fi
+
+    set -x
+
+    CMD="$(cmd-nice-posix "$@")"
+    : ${CMD:="$(cmd-nice-posix "$@")"}
+
+    # ssh "$@" "$final_cmd"
+
+    eval "ssh $sshopts $CMD $(cmd-nice-posix "$final_cmd")"
+fi
