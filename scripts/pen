@@ -154,6 +154,7 @@ docker() {
     if inside-docker-p; then
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             bash) break;;
+            ./run.sh) break;;
             *) shift;;
         esac; done
 
@@ -781,7 +782,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if ! test "$vanilla" = "y"; then
+if ! test "$vanilla" = "y" && ! inside-docker-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/glossaries" && : "${GLOSSARIES_DIR:="$MYGIT/semiosis/glossaries"}"
     test -d "glossaries" && : "${GLOSSARIES_DIR:="glossaries"}"
 
