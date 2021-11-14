@@ -403,6 +403,7 @@ widget.  If FILTER is nil, ACTION is always valid.")
     (setq pen-force-single-collation (pen-yaml-test yaml-ht "force-single-collation"))
     (setq pen-force-temperature (ht-get yaml-ht "force-temperature"))
 
+    (setq pen-default-engine (ht-get yaml-ht "default-engine"))
     (setq pen-disabled-prompts (pen-vector2list (ht-get yaml-ht "disabled-prompts")))
     (setq pen-disabled-engines (pen-vector2list (ht-get yaml-ht "disabled-engines")))
     (setq pen-disabled-models (pen-vector2list (ht-get yaml-ht "disabled-models")))))
