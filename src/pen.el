@@ -236,6 +236,13 @@ Reconstruct the entire yaml-ht for a different language."
       ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
       )))
 
+(defun engine-disabled-p (engine)
+  (let ((disabled))
+    (loop for e in disabled-engines do
+          (if (string-match e engine)
+              (setq disabled t)))
+    disabled))
+
 (defun pen-list-filterers ()
   (interactive)
   (let ((funs (-filter (lambda (y) (pen-yaml-test y "filter"))
@@ -1870,9 +1877,16 @@ Reconstruct the entire yaml-ht for a different language."
                                     collation-temperature)))
                              (message "collation temperature stepper failed")))))))
 
+                  (nogen
+                   (or no-gen
+                       (engine-disabled-p final-engine)))
+
                   (results
                    (if no-gen
-                       '("")
+                       (progn
+                         (message "Prompting function aborted")
+                         '(""))
+                     ;; (list (message "Try UPDATE=y or debugging"))
                      (pen-maybe-uniq
                       final-no-uniq-results
                       (flatten-once
