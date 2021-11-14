@@ -720,7 +720,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         CMD="$(cmd-nice "$@")"
         : ${CMD:="$(cmd-nice "$@")"}
 
-        remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
+        if inside-docker-p; then
+            remote_cmd=newframe.sh
+        else
+            remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
+        fi
 
         # Shift all so it doesn't do -e here
         # shift "$#"
@@ -737,7 +741,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         CMD="$(cmd-nice "$@")"
         : ${CMD:="$(cmd-nice "$@")"}
 
-        remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
+        if inside-docker-p; then
+            remote_cmd=newframe.sh
+        else
+            remote_cmd="./.emacs.d/pen.el/scripts/newframe.sh"
+        fi
 
         # Shift all so it doesn't do -e here
         # shift "$#"
@@ -749,7 +757,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         batch=y
         share_x=n
         docker_cmd=exec
-        remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
+        if inside-docker-p; then
+            remote_cmd=eval.sh
+        else
+            remote_cmd="./.emacs.d/pen.el/scripts/eval.sh"
+        fi
         shift
 
         if test "$UPDATE" = "y"; then
