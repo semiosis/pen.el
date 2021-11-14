@@ -236,7 +236,7 @@ Reconstruct the entire yaml-ht for a different language."
       ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
       )))
 
-(defun engine-disabled-p (engine)
+(defun pen-engine-disabled-p (engine)
   (let ((disabled))
     (loop for e in pen-disabled-engines do
           (if (string-match e engine)
@@ -1879,7 +1879,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (nogen
                    (or no-gen
-                       (engine-disabled-p final-engine)))
+                       (pen-engine-disabled-p final-engine)))
 
                   (results
                    (if no-gen
@@ -2400,9 +2400,8 @@ Otherwise, it will be a shell expression template")
   ;; Then I should have default engines that are mode specific.
   (comment
    (let ((selected-engine starting-engine))
-     (loop for e in pen-disabled-engines do
-           (if (string-match e selected-engine)
-               (setq selected-engine pen-default-engine)))
+     (if (pen-engine-disabled-p selected-engine)
+         (setq selected-engine pen-default-engine))
 
      selected-engine))
 
