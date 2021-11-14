@@ -19,7 +19,10 @@ export PATH="$PATH:/root/go/bin"
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
+(
+export PEN_USE_GUI=n
 ttyd -p 7681 bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
+)
 
 echo "ttyd running on port 7681, serving Pen.el on http"
 
