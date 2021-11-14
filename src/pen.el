@@ -2342,25 +2342,27 @@ Otherwise, it will be a shell expression template")
             (-filter
              'identity
              (cl-loop for d in (pen--htlist-to-alist defers) collect
-                   (let* ((defer-provisions (s-split "+" (car d)))
-                          (newengine (cdr d))
-                          ;; (newengine-ht (ht-get pen-engines newengine))
-                          (satisfies (-reduce-from
-                                      (lambda (a r)
-                                        (and a (-contains-p defer-provisions r)))
-                                      t
-                                      requirements)))
-                     (if satisfies
-                         newengine)))))
+                      (let* ((defer-provisions (s-split "+" (car d)))
+                             (newengine (cdr d))
+                             ;; (newengine-ht (ht-get pen-engines newengine))
+                             (satisfies (-reduce-from
+                                         (lambda (a r)
+                                           (and a (-contains-p defer-provisions r)))
+                                         t
+                                         requirements)))
+                        (if satisfies
+                            newengine)))))
 
           ;; Simply run this function recursively on these and collect the results
           (family-suggestions
            (-filter
             'identity
             (-flatten
-             (cl-loop for e in family collect (pen-resolve-engine
-                                            e
-                                            requirements))))))
+             (cl-loop for e in family
+                      collect
+                      (pen-resolve-engine
+                       e
+                       requirements))))))
 
      ;; If this engine solves the requirements and has all the data, stop here
      ;; - if it has the appropriate speciality then select it
@@ -2371,15 +2373,22 @@ Otherwise, it will be a shell expression template")
      ;; Select the first from family which satisfies the requirements
 
      (cl-loop for child in family collect
-           (let ((child-engine-ht (ht-get pen-engines child))
-                 (layers (ht-get child-engine-ht "layers")))))
+              (let ((child-engine-ht (ht-get pen-engines child))
+                    (layers (ht-get child-engine-ht "layers")))))
 
      (if defers)))
 
   ;; If the current model isn't available, try
   ;; engines descended from or lighter engines
 
-  starting-engine)
+  ;; I actually shouldn't merely use the default engine.
+  ;; That is because the model may be a different mode.
+  (let ((selected-engine starting-engine))
+    (loop for e in disabled-engines do
+          (if (string-match e selected-engine)
+              (setq selected-engine pen-default-engine)))
+
+    selected-engine))
 
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
