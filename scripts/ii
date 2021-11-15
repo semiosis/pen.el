@@ -5,6 +5,8 @@
 
 CMD="$(cmd-nice-posix "$@")"
 
+sn="$(basename "$0")"
+
 use_comint=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -27,7 +29,7 @@ echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
 test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
-lang_lc="$(p "$lang" | tr '[:upper:]' '[:lower:]')"
+lang_lc="$(p "$lang" | tr '[:upper:]' '[:lower:]' | slugify)"
 
 set -o pipefail
 
@@ -37,9 +39,20 @@ if ! test "$?" = 0; then
     exit 1
 fi
 
-fun="$(p "$funs" | awk 1 | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
+case "$sn" in
+    apostrophe) {
+        # Chatbots
+        fun="$(p "$funs" | awk 1 | grep -P "imagine-a-conversation-with$-{lang_lc}/2" | sed 's/^pf-//')"
+        default_fun=pf-imagine-a-conversation-between-two-people/4
+    }
+    ;;
 
-default_fun=generic-interpreter/3
+    *) {
+        fun="$(p "$funs" | awk 1 | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
+        default_fun=generic-interpreter/3
+    }
+    ;;
+esac
 
 file_fun="$fun"
 : "${file_fun:="$default_fun"}"
