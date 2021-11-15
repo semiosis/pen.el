@@ -501,6 +501,7 @@
 
 ;; C-M-] is the help key, which replaces C-h
 ;; C-h is used for backspace, like the rest of terminal world.
+;; C-M-o is also maped to DEL.
 
 (define-key key-translation-map (kbd "C-M-]") (kbd "<help>"))
 (global-set-key (kbd "C-M-o") (kbd "DEL"))
