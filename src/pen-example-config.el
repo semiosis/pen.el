@@ -514,6 +514,12 @@
 (define-key global-map (kbd "C-h") (kbd "DEL"))
 (global-set-key (kbd "C-c h") help-map)
 
+;; Hyperify is bound to M-h because it's not
+;; possible to press M-SPC or C-M-\ while in the
+;; web app
+(define-key global-map (kbd "M-h") nil)
+(define-key function-key-map (kbd "M-h") 'hyperify)
+
 (add-to-list 'default-frame-alist '(set-foreground-color "white"))
 ;; American flag red background theme was a cool idea, but impractical.
 ;; (add-to-list 'default-frame-alist '(set-background-color "#660000"))
