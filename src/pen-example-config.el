@@ -533,3 +533,10 @@
  :background "blue"
  :foreground "white"
  :bold t)
+
+(set-face-attribute
+ 'mode-line-inactive nil
+ :inverse-video nil
+ :background "#330000"
+ :foreground "white"
+ :bold t)
