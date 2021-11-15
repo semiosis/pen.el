@@ -508,6 +508,9 @@ It's really meant for key bindings and which-key, so they should all be interact
 (defun unslugify (input)
   (pen-snc "unslugify" input))
 
+(defmacro remove-from-list (list-var elt)
+  `(set ,list-var (delete ,elt ,(eval list-var))))
+
 (defmacro defset-local (symbol value &optional documentation)
   "Instead of doing a defvar and a setq, do this. [[http://ergoemacs.org/emacs/elisp_defvar_problem.html][ergoemacs.org/emacs/elisp_defvar_problem.html]]
 Interestingly, defvar-local does not come into effect until run, but I guess defset-local would, because it has a set."

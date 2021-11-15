@@ -513,3 +513,23 @@
 (define-key isearch-mode-map (kbd "C-h") #'isearch-delete-char)
 (define-key global-map (kbd "C-h") (kbd "DEL"))
 (global-set-key (kbd "C-c h") help-map)
+
+(add-to-list 'default-frame-alist '(set-foreground-color "white"))
+;; American flag theme was a cool idea.
+;; (add-to-list 'default-frame-alist '(set-background-color "#660000"))
+(add-to-list 'default-frame-alist '(set-background-color "#1e1e1e"))
+(remove-from-list 'default-frame-alist '(set-background-color "#660000"))
+
+(set-face-attribute
+ 'menu nil
+ :inverse-video nil
+ :background "blue"
+ :foreground "white"
+ :bold t)
+
+(set-face-attribute
+ 'mode-line nil
+ :inverse-video nil
+ :background "blue"
+ :foreground "white"
+ :bold t)
