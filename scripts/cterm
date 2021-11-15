@@ -6,11 +6,19 @@ export TTY
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
-# This runs in the docker to the host
-cterm-docker ssh \
-    -o ControlMaster=auto \
-    -o ControlPath="~/ssh-controlpath-%r@%h:%p" \
-    -o UserKnownHostsFile=/dev/null \
-    -o StrictHostKeyChecking=no \
-    -t $USER@$(hostname) \
-    "bash -l -c $(cmd-nice ". ~/.profile; $CMD")"
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
+if inside-docker-p; then
+    cterm-docker "$@"
+else
+    # This runs in the docker to the host
+    cterm-docker ssh \
+        -o ControlMaster=auto \
+        -o ControlPath="~/ssh-controlpath-%r@%h:%p" \
+        -o UserKnownHostsFile=/dev/null \
+        -o StrictHostKeyChecking=no \
+        -t $USER@$(hostname) \
+        "bash -l -c $(cmd-nice-posix ". ~/.profile; $CMD")"
+fi

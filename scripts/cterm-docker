@@ -8,7 +8,7 @@ export TTY
 bufname="$(p term "$@" | slugify)"
 
 # elisp="(pen-term \"$script\" t $modename)$elisp"
-elisp="(pen-term (pen-nsfa $(cmd-nice "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname"))$elisp"
+elisp="(pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname"))$elisp"
 
 # oresp -sh "$@"
 pent "$elisp"
