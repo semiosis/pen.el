@@ -498,3 +498,14 @@
 
 (setq pen-fav-programming-language "Emacs Lisp")
 (setq pen-fav-world-language "English")
+
+;; C-M-] is the help key, which replaces C-h
+;; C-h is used for backspace, like the rest of terminal world.
+
+(define-key key-translation-map (kbd "C-M-]") (kbd "<help>"))
+(global-set-key (kbd "C-M-o") (kbd "DEL"))
+(define-key helm-map (kbd "C-h") nil)
+(define-key helm-map (kbd "C-h c") nil)
+(define-key helm-map (kbd "C-h C-d") nil)
+(define-key helm-map (kbd "C-h") (kbd "DEL"))
+(define-key isearch-mode-map (kbd "C-h") #'isearch-delete-char)
