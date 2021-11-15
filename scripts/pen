@@ -575,17 +575,6 @@ case "$sn" in
     }
     ;;
 
-    penw) {
-        if test -d "$HOME/butterfly"; then
-            cd "$HOME/butterfly"
-            butterfly.server.py --host=localhost --port=57575 --unsecure --shell=pen
-        else
-            echo Could not find butterfly
-        fi
-        exit "$?"
-    }
-    ;;
-
     pene) {
         show_banner=n
         set -- -e "$@"
