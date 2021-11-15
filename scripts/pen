@@ -182,7 +182,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -tty|-nw) {
+    -tty|-nw|-t) {
         use_tty=y
         shift
     }
@@ -247,7 +247,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -nogui) {
+    -nogui|-tty) {
         PEN_USE_GUI=n
         shift
     }
