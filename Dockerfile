@@ -1,6 +1,7 @@
 FROM debian:buster
 
-EXPOSE 57575
+# EXPOSE 57575 # butterfly
+EXPOSE 7681 # ttyd
 
 WORKDIR /root
 
