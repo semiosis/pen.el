@@ -183,7 +183,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -tty|-nw|-t) {
-        use_tty=y
+        PEN_USE_GUI=n
         shift
     }
     ;;
@@ -451,8 +451,6 @@ case "$sn" in
 
             pfname="$fun"
 
-            use_tty=y
-
             if stdin_exists; then
                 in="$(cat | qne)"
 
@@ -556,7 +554,6 @@ case "$sn" in
     pensh) {
         # HAS_TTY=y
         batch=y
-        use_tty=y
         docker_cmd=exec
 
         firstarg="$1"
