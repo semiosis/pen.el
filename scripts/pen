@@ -616,6 +616,12 @@ case "$sn" in
     }
     ;;
 
+    paracosm) {
+        show_banner=y
+        set -- -ic "(funcall-interactively 'pen-org-brain-switch-brain $(cmd-nice "$1"))"
+    }
+    ;;
+
     penh) {
         if test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
             fun="$1"
