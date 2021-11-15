@@ -616,7 +616,7 @@ case "$sn" in
     }
     ;;
 
-    paracosm) {
+    paracosm|cosm) {
         show_banner=y
         # set -- -ic "(funcall-interactively 'pen-org-brain-switch-brain $(cmd-nice "$1"))"
 
