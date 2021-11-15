@@ -515,7 +515,7 @@
 (global-set-key (kbd "C-c h") help-map)
 
 (add-to-list 'default-frame-alist '(set-foreground-color "white"))
-;; American flag theme was a cool idea.
+;; American flag red background theme was a cool idea, but impractical.
 ;; (add-to-list 'default-frame-alist '(set-background-color "#660000"))
 (add-to-list 'default-frame-alist '(set-background-color "#1e1e1e"))
 (remove-from-list 'default-frame-alist '(set-background-color "#660000"))
