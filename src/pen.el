@@ -1169,6 +1169,11 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (last-vals vals)
 
+                  (final-preprocessors
+                   (cl-loop for fpp in final-preprocessors
+                            collect
+                            (expand-template fpp)))
+
                   ;; preprocess the values of the parameters
                   (vals
                    (cl-loop
