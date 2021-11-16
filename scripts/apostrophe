@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Imaginary interpreter
-# Version 2.0, bash
+# Apostrophe
+# Version 1.0, bash
 
 CMD="$(cmd-nice-posix "$@")"
 
@@ -19,8 +19,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-lang="$1"
-test -n "$lang" || exit 1
+# TODO Also make a version that takes 2 people
+# Then consider roping in more people
+
+person="$1"
+test -n "$person" || exit 1
 shift
 
 memory="$2"
@@ -29,7 +32,7 @@ echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
 test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
-lang_lc="$(p "$lang" | tr '[:upper:]' '[:lower:]' | slugify)"
+lang_lc="$(p "$person" | tr '[:upper:]' '[:lower:]' | slugify)"
 
 set -o pipefail
 
@@ -39,39 +42,20 @@ if ! test "$?" = 0; then
     exit 1
 fi
 
-case "$sn" in
-    apostrophe) {
-        # Chatbots
-        fun=imagine-a-conversation-with-someone/3
-    }
-    ;;
-
-    *) {
-        fun="$(p "$funs" | awk 1 | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
-        default_fun=generic-interpreter/3
-    }
-    ;;
-esac
-
-file_fun="$fun"
-: "${file_fun:="$default_fun"}"
-
-if test -n "$file_fun"; then
-    fn="$(p "$file_fun" | tr -s / -)"
-    path="$PROMPTS_DIR/prompts/${fn}.prompt"
-fi
+# Chatbots
+fun=imagine-a-conversation-with-someone/3
+path="$PROMPTS_DIR/prompts/$(p "$fun" | tr -s / -).prompt"
 
 test -n "$path" && test -f "$path" || exit 1
 
-IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter' | sed "s/<language>/$lang/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
-IFS= read -rd '' ii_input_echo_pp < <(cat "$path" | yq -r '.["ii-input-echo-pp"] // empty');typeset -p ii_input_echo_pp &>/dev/null
+IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter' | sed "s/<Person B>/$person/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
 IFS= read -rd '' user_prompt_re < <(cat "$path" | yq -r '.["user-prompt"] // empty' | chomp);typeset -p user_prompt_re &>/dev/null
 IFS= read -rd '' comint_user_prompt_re < <(cat "$path" | yq -r '.["comint-user-prompt-regex"] // empty' | chomp);typeset -p comint_user_prompt_re &>/dev/null
 
 : "${user_prompt_re:="$comint_user_prompt_re"}"
 
 if test "$use_comint" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
-    comint -p "$user_prompt_re" -E "ii $CMD"
+    comint -p "$user_prompt_re" -E "apostrophe $CMD"
     exit $?
 fi
 
@@ -81,11 +65,7 @@ prompt_the_lm() {
     # TODO Use pena because I want better results
     # Rather, make a penc (pen collect) and use that
 
-    if test -n "$fun"; then
-        penf -u "$fun" "$memory" "$user_input"
-    else
-        penf -u pf-generic-interpreter/3 "$memory" "$user_input" "$lang"
-    fi
+    penf -u "$fun" "$memory" "$user_input" "$person"
 }
 
 p "${kickstarter} "
@@ -95,14 +75,6 @@ memory="${kickstarter} "
 while read -e -r user_input; do
     # echo -en "\033[1A\033[2K"
     # echo "$user_input"
-
-    if test -n "$ii_input_echo_pp"; then
-        IFS= read -rd '' ii_input_echo < <(printf -- "%s" "$user_input" | eval "$ii_input_echo_pp");typeset -p ii_input_echo &>/dev/null
-        if test -n "$ii_input_echo"; then
-            printf -- "%s\n" "$ii_input_echo"
-            user_input="$user_input\n$ii_input_echo"
-        fi
-    fi
 
     # printf -- "%s" "$user_input"
 
