@@ -39,20 +39,8 @@ if ! test "$?" = 0; then
     exit 1
 fi
 
-case "$sn" in
-    apostrophe) {
-        # Chatbots
-        fun="$(p "$funs" | awk 1 | grep -P "imagine-a-conversation-with$-{lang_lc}/3" | sed 's/^pf-//')"
-        default_fun=pf-imagine-a-conversation-between-two-people/4
-    }
-    ;;
-
-    *) {
-        fun="$(p "$funs" | awk 1 | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
-        default_fun=generic-interpreter/3
-    }
-    ;;
-esac
+fun="$(p "$funs" | awk 1 | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
+default_fun=generic-interpreter/3
 
 file_fun="$fun"
 : "${file_fun:="$default_fun"}"
