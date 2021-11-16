@@ -48,7 +48,7 @@ path="$PROMPTS_DIR/prompts/$(p "$fun" | tr -s / -).prompt"
 
 test -n "$path" && test -f "$path" || exit 1
 
-IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter' | sed "s/<Person B>/$person/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter // empty' | sed "s/<Person B>/$person/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
 IFS= read -rd '' user_prompt_re < <(cat "$path" | yq -r '.["user-prompt"] // empty' | chomp);typeset -p user_prompt_re &>/dev/null
 IFS= read -rd '' comint_user_prompt_re < <(cat "$path" | yq -r '.["comint-user-prompt-regex"] // empty' | chomp);typeset -p comint_user_prompt_re &>/dev/null
 
