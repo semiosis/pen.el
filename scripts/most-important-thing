@@ -3,8 +3,8 @@ export TTY
 
 export UPDATE=y
 
-statement="$1"
-: "${question:="Why is the sky blue?"}"
+statement="$@"
+: "${statement:="The best things in life are free."}"
 while :; do
     statement="$(pen -u pf-most-important-thing/1 "$statement")"
     echo "$statement"
