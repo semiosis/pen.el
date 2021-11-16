@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+export UPDATE=y
+
+statement="$1"
+: "${question:="Why is the sky blue?"}"
+while :; do
+    statement="$(pen -u pf-most-important-thing/1 "$statement")"
+    echo "$statement"
+
+    echo
+done
