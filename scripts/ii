@@ -42,7 +42,7 @@ fi
 case "$sn" in
     apostrophe) {
         # Chatbots
-        fun="$(p "$funs" | awk 1 | grep -P "imagine-a-conversation-with$-{lang_lc}/2" | sed 's/^pf-//')"
+        fun="$(p "$funs" | awk 1 | grep -P "imagine-a-conversation-with$-{lang_lc}/3" | sed 's/^pf-//')"
         default_fun=pf-imagine-a-conversation-between-two-people/4
     }
     ;;
