@@ -34,6 +34,9 @@ test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
 lang_lc="$(p "$person" | tr '[:upper:]' '[:lower:]' | slugify)"
 
+info="$3"
+test -n "$info" || exit 1
+
 set -o pipefail
 
 funs="$(penl)"
@@ -43,9 +46,9 @@ if ! test "$?" = 0; then
 fi
 
 # Chatbots
-fun=imagine-a-conversation-with-someone/3
+fun=imagine-a-conversation-with-someone/4
 path="$PROMPTS_DIR/prompts/$(p "$fun" | tr -s / -).prompt"
-conv_path="$PROMPTS_DIR/prompts/imagine-a-conversation-between-two-people-4.prompt"
+conv_path="$PROMPTS_DIR/prompts/imagine-a-conversation-between-two-people-5.prompt"
 
 test -n "$path" && test -f "$path" || exit 1
 
@@ -66,7 +69,7 @@ prompt_the_lm() {
     # TODO Use pena because I want better results
     # Rather, make a penc (pen collect) and use that
 
-    penf -u "$fun" "$memory" "$user_input" "$person"
+    penf -u "$fun" "$memory" "$user_input" "$person" "$info"
 }
 
 p "${kickstarter} "
