@@ -776,7 +776,8 @@ region-active-p does not work for evil selection."
   (pen-words 40 (pen-selection-or-surrounding-context 10))
   ;; TODO Add tmux support - wouldn't work for GUI well though
   ;; But in that case I would take screen shots with imagemagick
-  (buffer-string))
+  ;; (buffer-string)
+  )
 
 (defun test-read-string ()
   (interactive)

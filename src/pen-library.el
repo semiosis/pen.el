@@ -259,13 +259,13 @@ semantic-path means a path suitable for google/nl searching"
                      (pen-single-generation
                       (car
                        (pf-keyword-extraction/1
-                        (pen-words 40 (pen-selection-or-surrounding-context 10))
+                        (pen-screen-text)
                         :no-select-result no-select-result
                         ;; :no-select-result t
                         ;; (pen-surrounding-text)
                         )))
                    (pf-keyword-extraction/1
-                    (pen-words 40 (pen-selection-or-surrounding-context 10))
+                    (pen-screen-text)
                     ;; :no-select-result t
                     ;; (pen-surrounding-text)
                     )))
