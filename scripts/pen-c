@@ -62,11 +62,6 @@ case "$opt" in
          # c strip-unicode || ns "c strip-unicode probably failed"
     } ;;
 
-    garbify) {
-
-    }
-    ;;
-
     anum|alphanum|alphanumeric) {
         sed 's/[^a-zA-Z0-9]\+/ /g'
     } ;;

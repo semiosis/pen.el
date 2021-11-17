@@ -345,5 +345,10 @@ case "$f" in
     }
     ;;
 
+    garbify) {
+        pen-c ascify | unwhitespacify | wrap 60 | sed -e 's/^\s*//'
+    }
+    ;;
+
     *)
 esac
