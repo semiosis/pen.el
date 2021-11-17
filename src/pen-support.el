@@ -773,6 +773,9 @@ region-active-p does not work for evil selection."
 ;; Should I start a tmux in the background and
 ;; connect to the buffer? Or always have tmux?
 (defun pen-screen-text ()
+  (pen-words 40 (pen-selection-or-surrounding-context 10))
+  ;; TODO Add tmux support - wouldn't work for GUI well though
+  ;; But in that case I would take screen shots with imagemagick
   (buffer-string))
 
 (defun test-read-string ()
