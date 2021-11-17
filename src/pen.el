@@ -1170,9 +1170,12 @@ Reconstruct the entire yaml-ht for a different language."
                   (last-vals vals)
 
                   (final-preprocessors
-                   (cl-loop for fpp in final-preprocessors
-                            collect
-                            (expand-template fpp)))
+                   ;; Unfortunately, can't do full template expansion here because we don't have vals. final-preprocessors is needed for vals 
+                   (loop for fpp in final-preprocessors collect
+                         (if fpp
+                             (--> fpp
+                               (pen-expand-template-keyvals it (-zip-fill "" ',vars vals))
+                               (pen-expand-template-keyvals it (-zip-fill "" ',var-slugs vals))))))
 
                   ;; preprocess the values of the parameters
                   (vals
