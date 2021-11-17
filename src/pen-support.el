@@ -770,6 +770,8 @@ region-active-p does not work for evil selection."
       (str sel))))
 
 ;; TODO collect from tmux instead
+;; Should I start a tmux in the background and
+;; connect to the buffer? Or always have tmux?
 (defun pen-screen-text ()
   (buffer-string))
 
