@@ -6,7 +6,7 @@
 
   (let* ((el (pen-snc (pen-cmd "apostrophe" "-getcomintcmd" sme "" blurb))))
     ;; This locks when run inside of emacs.
-    ;; I need to run multiple daemons.
+    ;; I need to run multiple daemons so this doesn't happen.
     (pen-e-sps (pen-lm (pen-eval-string el)))
     (never (sps (cmd "apostrophe" "" blurb))))))
 
