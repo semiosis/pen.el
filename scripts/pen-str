@@ -345,8 +345,13 @@ case "$f" in
     }
     ;;
 
+    remove-non-alphanumeric) {
+        tr -cd '[:alnum:]._ -'
+    }
+    ;;
+
     garbify) {
-        pen-c ascify | unwhitespacify | wrap 60 | sed -e 's/^\s*//'
+        pen-c ascify | pen-str unwhitespacify | pen-str remove-non-alphanumeric | pen-str wrap 60 | sed -e 's/^\s*//'
     }
     ;;
 
