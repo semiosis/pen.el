@@ -5,6 +5,8 @@
        (blurb (pf-generate-wiki-blurb-for-a-famous-person/1 sme)))
 
   (let* ((el (pen-snc (pen-cmd "apostrophe" "-getcomintcmd" sme "" blurb))))
+    ;; This locks when run inside of emacs.
+    ;; I need to run multiple daemons.
     (pen-e-sps (pen-lm (pen-eval-string el)))
     (never (sps (cmd "apostrophe" "" blurb))))))
 
