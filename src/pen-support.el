@@ -790,7 +790,7 @@ region-active-p does not work for evil selection."
      "(pen-selected-text)")))
 
 (defun pen-screen-or-selection ()
-  (let ((sel (selection)))
+  (let ((sel (pen-selection)))
     (if (sor sel)
         sel
       (pen-screen-text))))
