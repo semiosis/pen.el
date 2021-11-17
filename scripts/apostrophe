@@ -17,6 +17,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -getcomintcmd) {
         use_comint=y
         export INERT_COMINT=y
+        SKIP_CHECK=y
         shift
     }
     ;;
@@ -46,10 +47,12 @@ IFS= read -rd '' info < <(p "$info" | pen-str trailing-empty-line-if-not-empty |
 
 set -o pipefail
 
-funs="$(penl)"
-if ! test "$?" = 0; then
-    echo "pen must be running" 1>&2
-    exit 1
+if ! test "$SKIP_CHECK" = "y"; then
+    funs="$(penl)"
+    if ! test "$?" = 0; then
+        echo "pen must be running" 1>&2
+        exit 1
+    fi
 fi
 
 # Chatbots
