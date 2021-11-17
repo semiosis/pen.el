@@ -361,7 +361,7 @@ delim is used to guarantee the function returns multiple matches per line
       (setq s (pen-list2str (s-split delim s))))
   (pen-list2str
    (-flatten
-    (cl-loop
+    (loop
      for
      line
      in
@@ -425,7 +425,7 @@ delim is used to guarantee the function returns multiple matches per line
    " "
    (-filter
     'identity
-    (cl-loop for tp in varval-tuples
+    (loop for tp in varval-tuples
              collect
              (let ((lhs (car tp))
                    (rhs (cadr tp)))
@@ -521,7 +521,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   ;; The (eval s) undoes the macroishness of the s arg
   (let* ((sval (eval s))
          (ret
-          (cl-loop for l in (s-split "\n" sval) collect
+          (loop for l in (s-split "\n" sval) collect
                 (if (sor l)
                     ;; This is needed to access form.
                     ;; Unfortunately this occludes dynamic scope.
@@ -537,7 +537,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 (defun fwrlp (s form &optional nojoin)
   "Function version of wrlp"
   (let* ((ret
-          (cl-loop for l in (s-split "\n" s) collect
+          (loop for l in (s-split "\n" s) collect
                 (if (sor l)
                     (eval
                      `(-> ,l
@@ -740,7 +740,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
 (defmacro ntimes (n &rest body)
   (cons 'progn (flatten-once
-                (cl-loop for i from 1 to n collect body))))
+                (loop for i from 1 to n collect body))))
 
 ;; (let ((func-name "yo")) (pen-read-string "hi"))
 ;; TODO Use this is more places
@@ -1137,10 +1137,10 @@ when s is a string, set the clipboard to s"
   (setq testfun (define-hash-table-test 'contents-hash testfun 'sxhash-equal))
 
   (let ((table (make-hash-table :test 'contents-hash)))
-    (cl-loop for string in l do
+    (loop for string in l do
              (puthash string (1+ (gethash string table 0))
                       table))
-    (cl-loop for key being the hash-keys of table
+    (loop for key being the hash-keys of table
              unless (> (gethash key table) 1)
              collect key)))
 

@@ -9,14 +9,14 @@ otherwise add at the end of the list.
   `(progn
      ,@(if (version< emacs-version "26")
            ;; TODO: Remove this path when support for Emacs 25 is dropped
-           (cl-loop for (key val) on elements by #'cddr
+           (loop for (key val) on elements by #'cddr
                     collect `(let* ((key ,key)
                                     (val ,val)
                                     (cell (assoc key ,list-var)))
                                (if cell
                                    (setcdr cell val)
                                  (push (cons key val) ,list-var))))
-         (cl-loop for (key val) on elements by #'cddr
+         (loop for (key val) on elements by #'cddr
                   collect `(setf (alist-get ,key ,list-var nil nil #'equal) ,val)))
      ,list-var))
 

@@ -68,30 +68,30 @@
 
 (defun pen-build-context-functions ()
   (interactive)
-  (setq context-preds (-distinct (flatten-once (cl-loop for tup in pen-context-tuples collect (car tup)))))
+  (setq context-preds (-distinct (flatten-once (loop for tup in pen-context-tuples collect (car tup)))))
 
   ;; Go through and make functions first -- a little unnecessary
-  (setq context-pred-funcs (cl-loop for pred in context-preds collect (pen-context-pen-func-for-expression pred)))
+  (setq context-pred-funcs (loop for pred in context-preds collect (pen-context-pen-func-for-expression pred)))
 
-  (setq context-tuples-compiled (cl-loop for tup in pen-context-tuples collect (pen-compile-context-tuple tup))))
+  (setq context-tuples-compiled (loop for tup in pen-context-tuples collect (pen-compile-context-tuple tup))))
 
 (pen-build-context-functions)
 
 (defun pen-suggest-funcs-unmemoize ()
   (interactive)
-  (cl-loop for f in context-pred-funcs do (ignore-errors (memoize-restore f))))
+  (loop for f in context-pred-funcs do (ignore-errors (memoize-restore f))))
 
 (defun pen-suggest-funcs-collect ()
-  (cl-loop for f in context-pred-funcs do (ignore-errors (memoize-orig f)))
+  (loop for f in context-pred-funcs do (ignore-errors (memoize-orig f)))
 
   (let ((suggestions
-         (cl-loop for tup in context-tuples-compiled
+         (loop for tup in context-tuples-compiled
                   collect
                   (if (eval `(and ,@(mapcar 'list (car tup))))
                       (second tup)
                     '()))))
 
-    (cl-loop for f in context-pred-funcs do (ignore-errors (memoize-restore f)))
+    (loop for f in context-pred-funcs do (ignore-errors (memoize-restore f)))
     (remove nil (-distinct (-flatten suggestions)))))
 
 (defun pen-suggest-funcs ()

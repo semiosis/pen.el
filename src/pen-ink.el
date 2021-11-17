@@ -175,7 +175,7 @@
                           (start 0)
                           (end))
                       (setq end (length text))
-                      (cl-loop for p in data do
+                      (loop for p in data do
                             (let ((key (car p))
                                   (val (cdr p)))
                               (put-text-property start end key val text)))
@@ -210,9 +210,9 @@
                 (string-match "^PEN_" (car e)))))
     (-uniq
      (flatten-once
-      (cl-loop for inl in (object-intervals s)
+      (loop for inl in (object-intervals s)
                collect
-               (cl-loop for (p v) on (nth 2 inl) while v
+               (loop for (p v) on (nth 2 inl) while v
                         collect
                         (list p v)))))))
 

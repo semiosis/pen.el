@@ -264,7 +264,7 @@
   (append
    '(progn)
    (flatten-once
-    (cl-loop for bind-i in
+    (loop for bind-i in
           (list bind
                 (concat "M-" (s-replace-regexp " " " M-" bind)))
           collect

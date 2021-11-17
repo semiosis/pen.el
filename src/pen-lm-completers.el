@@ -35,7 +35,7 @@
            ;; 'list2cmd
            'pp-ol
            (flatten-once
-            (cl-loop for trip in pen-completion-backends collect
+            (loop for trip in pen-completion-backends collect
                   (pen-cartesian-product
                    (list (car trip))
                    (list (nth 1 trip))

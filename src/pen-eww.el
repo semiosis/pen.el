@@ -358,7 +358,7 @@ If the URL is already at the front of the kill ring act like
          (language (language-detection-string
                     (buffer-substring-no-properties (point-min) (point-max))))
          (modes (cdr (assoc language map)))
-         (mode (cl-loop for mode in modes
+         (mode (loop for mode in modes
                         when (fboundp mode)
                         return mode)))
     (message (format "%s" language))
@@ -1745,7 +1745,7 @@ instead of `browse-url-new-window-flag'."
 
 (defun eww-open-all-links ()
   (interactive)
-  (cl-loop for url in (pen-str2list (buffer-links))
+  (loop for url in (pen-str2list (buffer-links))
         do (progn
              (lg-eww url)
              (sleep 2))))
