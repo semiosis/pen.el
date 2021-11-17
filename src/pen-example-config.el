@@ -321,8 +321,8 @@
   (pen-dk-easy "a c" 'apostrophe-start-chatbot-from-selection)
 
   ;; p Prose
-  (pen-dk-easy "p t" 'pen-transform-prose)
   (pen-dk-easy "p" nil)
+  (pen-dk-easy "p t" 'pen-transform-prose)
   (pen-dk-easy "p l" 'pf-translate/3)
   (pen-dk-easy "p v" 'pf-very-witty-pick-up-lines-for-a-topic/1)
 
