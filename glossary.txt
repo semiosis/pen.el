@@ -305,3 +305,21 @@ PEN_PROMPT
 
     The entire prompt including the
     PEN_INJECT_GEN_START string.
+
+garble
+    Reproduce (a message, sound, or
+    transmission) in a confused and distorted
+    way.
+    "the connection was awful and kept
+    garbling his voice"
+
+garbify
+    [#pen]
+
+    ascify then remove whitespace. This is to
+    make a block of text ready for
+    classification but to avoid
+    breaking/confusing prompts with their
+    structure.
+
+    Good for screenshots.
