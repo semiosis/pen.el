@@ -5,7 +5,7 @@
 (defun pen-string-search (needle haystack &optional start-pos)
   (setq start-pos (or start-pos 0))
   (let ((results (s-matched-positions-all needle haystack)))
-    (loop for tp in results
+    (cl-loop for tp in results
              if (>= (car tp) start-pos)
              return (car tp))))
 

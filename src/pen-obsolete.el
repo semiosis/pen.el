@@ -44,7 +44,7 @@
             (or ,paths
                 (-non-nil
                  (mapcar 'sor (glob (concat pen-interpreters-directory "/interpreters" "/*.ii")))))))
-       (loop for path in paths do
+       (cl-loop for path in paths do
                 (message (concat "pen-mode: Loading .ii file " path))
 
                 ;; Do a recursive interpreter merge from includes

@@ -277,13 +277,13 @@
 
 (defun pen-glossary-list-relevant-glossaries ()
   (append
-   (loop for fn in (list-all-pen-glossary-files)
+   (cl-loop for fn in (list-all-pen-glossary-files)
             when
             (pen-istr-p (string-replace ".txt$" "" (basename fn)))
             collect fn)
    (-distinct
     (-flatten
-     (loop for tup in
+     (cl-loop for tup in
               glossary-predicate-tuples
               collect
               (if (eval (car tup)) (cdr tup)))))))
@@ -311,7 +311,7 @@
 
 (defun pen-my-show-overlays-here ()
   (interactive)
-  (new-buffer-from-string (pp (loop for o in (overlays-at (point)) collect (sp--get-overlay-text o)))))
+  (new-buffer-from-string (pp (cl-loop for o in (overlays-at (point)) collect (sp--get-overlay-text o)))))
 
 (defun pen-my-show-button-paths-here ()
   (interactive)
@@ -322,7 +322,7 @@
   (-filter
    (lambda (tp)
      (apply 'gnus-and tp))
-   (loop
+   (cl-loop
     for
     o
     in
@@ -355,7 +355,7 @@
 
 (defun pen-recalculate-glossary-3tuples ()
   (interactive)
-  (defset-local pen-glossary-term-3tuples (-distinct (flatten-once (loop for fp in pen-glossary-files collect (pen-glossary-list-tuples fp))))))
+  (defset-local pen-glossary-term-3tuples (-distinct (flatten-once (cl-loop for fp in pen-glossary-files collect (pen-glossary-list-tuples fp))))))
 
 (defun pen-glossary-reload-term-3tuples ()
   (interactive)
@@ -435,7 +435,7 @@ Use my position list code. Make it use rosie lang and external software."
                 (point-min)
                 end
                 (point-max)))))
-  (loop for termtuple in 3tuples do
+  (cl-loop for termtuple in 3tuples do
            (pen-create-buttons-for-term (third termtuple) beg end
                                     (first termtuple)
                                     (cadr termtuple)

@@ -4,9 +4,9 @@
          (vconcat (list "Arguments")
                   (append
                    (let ((c 0))
-                     (loop for p in kvps do (setq c (1+ c)) collect (list (str c) p (concat "--" p "="))))
+                     (cl-loop for p in kvps do (setq c (1+ c)) collect (list (str c) p (concat "--" p "="))))
                    (let ((c 0))
-                     (loop for p in kvps do (setq c (1+ c)) collect (list (concat "-" (str c)) (concat "not" p) (concat "--not-" p "=")))))))
+                     (cl-loop for p in kvps do (setq c (1+ c)) collect (list (concat "-" (str c)) (concat "not" p) (concat "--not-" p "=")))))))
         (actions
          (vconcat
           (if keywordonly

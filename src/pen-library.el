@@ -197,7 +197,7 @@ semantic-path means a path suitable for google/nl searching"
 (defmacro pen-qa (&rest body)
   ""
   (let ((m
-         (pen-list2str (loop for i from 0 to (- (length body) 1) by 2
+         (pen-list2str (cl-loop for i from 0 to (- (length body) 1) by 2
                              collect
                              (pp-oneline
                               (list
@@ -208,7 +208,7 @@ semantic-path means a path suitable for google/nl searching"
                                  (nth i body)))
                                (nth (+ i 1) body))))))
         (code
-         (loop for i from 0 to (- (length body) 1) by 2
+         (cl-loop for i from 0 to (- (length body) 1) by 2
                collect
                (let ((fstone (nth i body))
                      (sndone (nth (+ i 1) body)))
@@ -307,7 +307,7 @@ semantic-path means a path suitable for google/nl searching"
          ;; (l (pen-etv (list2str lines)))
          (lintings
           (list2str
-           (loop for l in lines collect
+           (cl-loop for l in lines collect
                  (progn
                    (message "%s" (concat "linting " l))
                    (car (pen-single-generation
@@ -466,7 +466,7 @@ It's really meant for key bindings and which-key, so they should all be interact
   ;; (message "%s" (str step))
   (let ((start-col (current-column))
         (start-ch (char-after (point))))
-    (loop
+    (cl-loop
      while (zerop (forward-line step))
      when (and (not (string-equal "\n" (str (thing-at-point 'line))))
                (not (string-equal " " (str (thing-at-point 'char))))

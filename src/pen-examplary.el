@@ -110,7 +110,7 @@ The last element in the list is the output/return value"
     (if (and filter
              examples)
         (setq examples
-              (loop for ex in examples
+              (cl-loop for ex in examples
                     collect
                     (cond
                      ((and (eq 1 (length ex))

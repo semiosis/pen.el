@@ -202,17 +202,17 @@ Reconstruct the entire yaml-ht for a different language."
                  (new-topic (translate topic))
                  (new-doc (translate doc))
                  ;; is there a mapcar for macros?
-                 (new-vars (loop for v in vars collect
+                 (new-vars (cl-loop for v in vars collect
                                  (translate v)))
                  ;; (new-var-slugs (mapcar 'slugify new-vars))
                  (new-examples
                   (if (vectorp (car examples))
                       (mapcar
                        (lambda (v)
-                         (loop for e in (pen-vector2list v) collect
+                         (cl-loop for e in (pen-vector2list v) collect
                                (translate e)))
                        examples)
-                    (loop for e in examples collect
+                    (cl-loop for e in examples collect
                           (translate e))))
                  (new-prompt
                   (pen-expand-template-keyvals
@@ -238,7 +238,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-engine-disabled-p (engine)
   (let ((disabled))
-    (loop for e in pen-disabled-engines do
+    (cl-loop for e in pen-disabled-engines do
           (if (string-match e engine)
               (setq disabled t)))
     disabled))
@@ -326,7 +326,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defun pen-string-search (needle haystack &optional start-pos)
   (setq start-pos (or start-pos 0))
   (let ((results (s-matched-positions-all needle haystack)))
-    (loop for tp in results
+    (cl-loop for tp in results
              if (>= (car tp) start-pos)
              return (car tp))))
 
@@ -361,11 +361,11 @@ Reconstruct the entire yaml-ht for a different language."
       (let ((i 1))
         (chomp
          (progn
-           (loop
+           (cl-loop
             for val in vals do
             (if encode (setq val (pen-encode-string val)))
 
-            (loop for pl
+            (cl-loop for pl
                   in pipelines
                   do
                   (let ((plf (format "<%s:%i>" (car pl) i))
@@ -394,7 +394,7 @@ Reconstruct the entire yaml-ht for a different language."
                ((re-match-p (pen-unregexify unchomped2) s)
                 (setq s (string-replace unchomped2 val s)))))
 
-            (loop for pl
+            (cl-loop for pl
                   in '(("q" . pen-q)
                        ("sl" . slugify)
                        ("bx" . pen-boxify)
@@ -435,7 +435,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defun pen-expand-macros (s)
   (let ((scs (-filter-not-empty-string (scrape-all "<m:\\([^)]*\\)>" s))))
     (shut-up
-      (loop for sc in scs do
+      (cl-loop for sc in scs do
                (let* ((inner sc)
                       (inner (s-replace-regexp "^<m:" "" inner))
                       (inner (s-replace-regexp ">$" "" inner)))
@@ -457,7 +457,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defmacro cond-all (&rest body)
   "Like cond, but runs all of them"
   (let ((whens
-         (loop for c in body
+         (cl-loop for c in body
                   collect
                   `(when ,(car c)
                      ,@(cdr c)))))
@@ -470,7 +470,7 @@ Reconstruct the entire yaml-ht for a different language."
       (let ((i 1))
         (chomp
          (progn
-           (loop
+           (cl-loop
             for kv in keyvals do
             (let* ((key (str (car kv)))
                    (val (str (cdr kv)))
@@ -479,7 +479,7 @@ Reconstruct the entire yaml-ht for a different language."
                           val)))
 
               ;; oci bigscience-get-prompts | jq . | scrape "{{[^}]*}}" | v
-              (loop for pl
+              (cl-loop for pl
                     in pipelines
                     do
                     (let ((plf (format "<%s:%s>" (car pl) key))
@@ -497,7 +497,7 @@ Reconstruct the entire yaml-ht for a different language."
               ;;  (mapcar 'car pipelines)
               ;;  (car (assoc "uc" '(("uc" . "pen-str uc")))))
 
-              (loop for pl
+              (cl-loop for pl
                     in '(("q" . pen-q)
                          ("sl" . slugify)
                          ("bx" . pen-boxify)
@@ -532,7 +532,7 @@ Reconstruct the entire yaml-ht for a different language."
       (let ((i 1))
         (chomp
          (progn
-           (loop
+           (cl-loop
             for kv in keyvals do
             (let* ((key (str (car kv)))
                    (val (str (cdr kv)))
@@ -540,7 +540,7 @@ Reconstruct the entire yaml-ht for a different language."
                             (pen-encode-string val)
                           val)))
 
-              (loop for pl
+              (cl-loop for pl
                     in pipelines
                     do
                     (let ((plf (format "<%s:%s>" (car pl) key))
@@ -578,7 +578,7 @@ Reconstruct the entire yaml-ht for a different language."
                  ((re-match-p (pen-unregexify unchomped2) s)
                   (setq s (string-replace unchomped2 val s)))))
 
-              (loop for pl
+              (cl-loop for pl
                     in '(("q" . pen-q)
                          ("sl" . slugify)
                          ("bx" . pen-boxify)
@@ -664,7 +664,7 @@ Reconstruct the entire yaml-ht for a different language."
            (var-keyvals
             '(("my name" . "Shane")))
            (ret
-            (loop for stsq in '("###" "\n"
+            (cl-loop for stsq in '("###" "\n"
                                    "Alpha <meta> Omega"
                                    "First <intra> last"
                                    "Once <2> a time <output>, <my name> said <4>...\n")
@@ -680,7 +680,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defvar pen-last-prompt-data '())
 
 (defun pen-alist-to-list (al)
-  (loop for e in al collect (list (car e) (cdr e))))
+  (cl-loop for e in al collect (list (car e) (cdr e))))
 
 (defun pen-test-alist-to-list ()
   (interactive)
@@ -780,7 +780,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-open-all-files (file-list)
   (interactive (read-string-hist "pen-open-all-files: "))
-  (loop for path in (pen-str2list file-list)
+  (cl-loop for path in (pen-str2list file-list)
         do
         (ignore-errors
           (with-current-buffer
@@ -798,7 +798,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-touch-all-files (file-list)
   (interactive (read-string-hist "pen-touch-all-files: "))
-  (loop for path in (pen-str2list file-list)
+  (cl-loop for path in (pen-str2list file-list)
         do
         (progn
           (message "%s" (concat "touching " path))
@@ -1098,7 +1098,7 @@ Reconstruct the entire yaml-ht for a different language."
                                   final-prompt))
 
                   (final-defs
-                   (loop
+                   (cl-loop
                     for atp in final-defs
                     collect
                     (cons
@@ -1112,7 +1112,7 @@ Reconstruct the entire yaml-ht for a different language."
                    ;; Filter is needed because of ignore-errors
                    (-filter
                     'identity
-                    (loop
+                    (cl-loop
                      for atp in final-envs
                      collect
                      ;; This required an ignore-errors
@@ -1139,7 +1139,7 @@ Reconstruct the entire yaml-ht for a different language."
                    (mapcar 'str
                            (if (not is-interactive)
                                (progn
-                                 (loop
+                                 (cl-loop
                                   for sym in ',var-syms
                                   for iarg in ',iargs
                                   collect
@@ -1149,12 +1149,12 @@ Reconstruct the entire yaml-ht for a different language."
                                         (eval iarg)
                                       initval))))
                              ;; Don't include &key pretty
-                             (loop for v in ',var-syms until (eq v '&key) collect (eval v)))))
+                             (cl-loop for v in ',var-syms until (eq v '&key) collect (eval v)))))
 
                   (last-vals-exprs vals)
 
                   (vals
-                   (loop
+                   (cl-loop
                     for tp in (-zip-fill nil vals final-var-defaults)
                     collect
                     (if (and (not (sor (car tp)))
@@ -1171,7 +1171,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-preprocessors
                    ;; Unfortunately, can't do full template expansion here because we don't have vals. final-preprocessors is needed for vals 
-                   (loop for fpp in final-preprocessors collect
+                   (cl-loop for fpp in final-preprocessors collect
                          (if fpp
                              (--> fpp
                                (pen-expand-template-keyvals it (-zip-fill "" ',vars vals))
@@ -1179,7 +1179,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   ;; preprocess the values of the parameters
                   (vals
-                   (loop
+                   (cl-loop
                     for tp in
                     (-zip-fill nil vals final-preprocessors)
                     collect
@@ -1566,7 +1566,7 @@ Reconstruct the entire yaml-ht for a different language."
                        ',payloads))
 
                   (final-payloads
-                   (loop for pl in final-payloads
+                   (cl-loop for pl in final-payloads
                             collect
                             (let ((v (if (re-match-p "^(" (cdr pl))
                                          (eval-string (cdr pl))
@@ -1581,7 +1581,7 @@ Reconstruct the entire yaml-ht for a different language."
                     ""))
 
                   (final-stop-sequences
-                   (loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
+                   (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
                                             ',stop-sequences)
                             collect
                             (expand-template stsq)))
@@ -1837,7 +1837,7 @@ Reconstruct the entire yaml-ht for a different language."
                        (progn
                          (let* ((collation-data data)
                                 (collation-temperature (alist-get "PEN_TEMPERATURE" collation-data nil nil 'equal)))
-                           (loop
+                           (cl-loop
                             for i in (number-sequence 1 final-n-collate)
                             collect
                             (progn
@@ -1898,7 +1898,7 @@ Reconstruct the entire yaml-ht for a different language."
                      (pen-maybe-uniq
                       final-no-uniq-results
                       (flatten-once
-                       (loop for rd in resultsdirs
+                       (cl-loop for rd in resultsdirs
                                 collect
                                 (if (sor rd)
                                     (let* ((processed-results
@@ -1908,21 +1908,21 @@ Reconstruct the entire yaml-ht for a different language."
                                                (mapcar
                                                 (lambda (r)
                                                   (if final-split-patterns
-                                                      (loop
+                                                      (cl-loop
                                                        for stpat in final-split-patterns collect
                                                        (s-split stpat r))
                                                     (list r)))))))
                                            (processed-results
                                             (->> processed-results
                                               (mapcar (lambda (r)
-                                                        (loop
+                                                        (cl-loop
                                                          for stsq in final-stop-sequences do
                                                          (let ((matchpos (pen-string-search (regexp-quote stsq) r)))
                                                            (if matchpos
                                                                (setq r (s-truncate matchpos r "")))))
                                                         r))
                                               (mapcar (lambda (r)
-                                                        (loop
+                                                        (cl-loop
                                                          for stpat in final-stop-patterns do
                                                          (let ((matchpos (re-match-p stpat r)))
                                                            (if matchpos
@@ -1961,7 +1961,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                (mapcar
                                                 (lambda (r)
                                                   (if final-end-split-patterns
-                                                      (loop
+                                                      (cl-loop
                                                        for stpat in final-end-split-patterns collect
                                                        (s-split stpat r))
                                                     (list r)))))))
@@ -2248,7 +2248,7 @@ Otherwise, it will be a shell expression template")
             (or ,paths
                 (-non-nil
                  (mapcar 'sor (glob (concat pen-engines-directory "/engines" "/*.engine")))))))
-       (loop for path in paths do
+       (cl-loop for path in paths do
                 (message (concat "pen-mode: Loading .engine file " path))
 
                 ;; Do a recursive engine merge from includes
@@ -2285,7 +2285,7 @@ Otherwise, it will be a shell expression template")
 ;; (ht-get (ht-get pen-prompts "pf-emacs-ielm/1") "path")
 (defun pen-organise-prompts ()
   (interactive)
-  (loop for yaml-key in (ht-keys pen-prompts) do
+  (cl-loop for yaml-key in (ht-keys pen-prompts) do
            (let* ((yaml-ht (ht-get pen-prompts yaml-key))
                   (path (ht-get yaml-ht "path"))
                   (dn (f-dirname path))
@@ -2308,7 +2308,7 @@ Otherwise, it will be a shell expression template")
   ;; (let ((paths
   ;;        (-non-nil
   ;;         (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt"))))))
-  ;;      (loop for path in paths do
+  ;;      (cl-loop for path in paths do
   ;;               (message (concat "pen-mode: Loading .prompt file " path))))
   )
 
@@ -2363,7 +2363,7 @@ Otherwise, it will be a shell expression template")
           (defer-suggestions
             (-filter
              'identity
-             (loop for d in (pen--htlist-to-alist defers) collect
+             (cl-loop for d in (pen--htlist-to-alist defers) collect
                       (let* ((defer-provisions (s-split "+" (car d)))
                              (newengine (cdr d))
                              ;; (newengine-ht (ht-get pen-engines newengine))
@@ -2380,7 +2380,7 @@ Otherwise, it will be a shell expression template")
            (-filter
             'identity
             (-flatten
-             (loop for e in family
+             (cl-loop for e in family
                       collect
                       (pen-resolve-engine
                        e
@@ -2394,7 +2394,7 @@ Otherwise, it will be a shell expression template")
 
      ;; Select the first from family which satisfies the requirements
 
-     (loop for child in family collect
+     (cl-loop for child in family collect
               (let ((child-engine-ht (ht-get pen-engines child))
                     (layers (ht-get child-engine-ht "layers")))))
 
@@ -2452,7 +2452,7 @@ Function names are prefixed with pf- for easy searching"
                          (pen-expand-template-keyvals it var-keyvals t final-pipelines)
                          (pen-unonelineify-safe it))))
 
-         (loop for path in paths do
+         (cl-loop for path in paths do
                   (message (concat "pen-mode: Loading .prompt file " path))
 
                   ;; Do a recursive prompt merge from includes
@@ -2792,35 +2792,35 @@ Function names are prefixed with pf- for easy searching"
                            ;; generate vals from the values
                            ;; and replace vars
                            (let* ((vars-al (pen--htlist-to-alist vars))
-                                  (keys (loop
+                                  (keys (cl-loop
                                          for atp in vars-al
                                          collect
                                          (car atp)))
-                                  (values (loop
+                                  (values (cl-loop
                                            for atp in vars-al
                                            collect
                                            (cdr atp))))
 
                              (if (hash-table-p (car (pen-vector2list (car values))))
-                                 (let* ((als (loop
+                                 (let* ((als (cl-loop
                                               for atp in vars-al
                                               collect
                                               (pen--htlist-to-alist (pen-vector2list (cdr atp)))))
 
                                         (defaults
-                                          (loop
+                                          (cl-loop
                                            for atp in als
                                            collect
                                            (cdr (assoc "default" atp))))
 
                                         (exs
-                                         (loop
+                                         (cl-loop
                                           for atp in als
                                           collect
                                           (cdr (assoc "example" atp))))
 
                                         (pps
-                                         (loop
+                                         (cl-loop
                                           for atp in als
                                           collect
                                           (cdr (assoc "preprocessor" atp)))))
@@ -2931,14 +2931,14 @@ Function names are prefixed with pf- for easy searching"
                         (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length vars))))
                         (func-sym (intern func-name))
                         (alias-names
-                         (loop for a in aliases
+                         (cl-loop for a in aliases
                                   collect
                                   (concat pen-prompt-function-prefix (slugify a) "/" (str (length vars)))))
                         (alias-syms
                          (mapcar 'intern alias-names))
 
                         (examples
-                         (loop for e in examples collect
+                         (cl-loop for e in examples collect
                                (--> e
                                  (pen-expand-template-keyvals it subprompts-al)
                                  (pen-expand-template-keyvals it (-zip-fill "" vars examples))
@@ -2946,7 +2946,7 @@ Function names are prefixed with pf- for easy searching"
 
                          (iargs
                           (let ((iteration 0))
-                            (loop
+                            (cl-loop
                              for tp in (-zip-fill nil var-slugs var-defaults vars)
                              collect
                              (let ((example (or (sor (nth iteration examples)
@@ -3005,7 +3005,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if funcsym
                                     (progn
                                       (add-to-list 'pen-prompt-functions funcsym)
-                                      (loop for fn in alias-syms do
+                                      (cl-loop for fn in alias-syms do
                                                (progn
                                                  (if (not (eq fn funcsym))
                                                      (defalias fn funcsym))
@@ -3582,7 +3582,7 @@ May use to generate code from comments."
          ;; (var (pen--htlist-to-alist (ht-get yaml-ht "pipelines")))
          (var (pen--htlist-to-alist (ht-get yaml-ht "payloads")))
          (var
-          (loop for pl in var
+          (cl-loop for pl in var
                    collect
                    (let ((v (if (re-match-p "^(" (cdr pl))
                                 (eval-string (cdr pl))
@@ -3600,35 +3600,35 @@ May use to generate code from comments."
          (vars (pen--htlist-to-alist (ht-get yaml-ht "vars")))
 
          (vals
-          (loop
+          (cl-loop
            for atp in vars
            collect
            (car (pen-vector2list (cdr atp)))))
 
-         (keys (loop
+         (keys (cl-loop
                 for atp in vars
                 collect
                 (car atp)))
 
-         (als (loop
+         (als (cl-loop
                for atp in vars
                collect
                (pen--htlist-to-alist (pen-vector2list (cdr atp)))))
 
          (defaults
-           (loop
+           (cl-loop
             for atp in als
             collect
             (cdr (assoc "default" atp))))
 
          (examples
-          (loop
+          (cl-loop
            for atp in als
            collect
            (cdr (assoc "example" atp))))
 
          (preprocessors
-          (loop
+          (cl-loop
            for atp in als
            collect
            (cdr (assoc "preprocessor" atp)))))
