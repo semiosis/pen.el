@@ -304,7 +304,6 @@
   (pen-dk-easy "N" 'sps-nlsc)
   (pen-dk-easy "P" 'pen-complete-long)
   (pen-dk-easy "^" 'pen-transform)
-  (pen-dk-easy "a" nil)
 
   ;; c Code
   (pen-dk-easy "c" nil)
@@ -317,9 +316,13 @@
   (pen-dk-easy "c t" 'pen-transform-code)
   (pen-dk-easy "c l" 'pf-transpile/3)
 
+  ;; apostrophe (chatbots)
+  (pen-dk-easy "a" nil)
+  (pen-dk-easy "a l" 'apostrophe-start-chatbot-from-selection)
+
   ;; p Prose
-  (pen-dk-easy "p" nil)
   (pen-dk-easy "p t" 'pen-transform-prose)
+  (pen-dk-easy "p" nil)
   (pen-dk-easy "p l" 'pf-translate/3)
   (pen-dk-easy "p v" 'pf-very-witty-pick-up-lines-for-a-topic/1)
 
