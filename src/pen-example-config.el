@@ -318,7 +318,7 @@
 
   ;; apostrophe (chatbots)
   (pen-dk-easy "a" nil)
-  (pen-dk-easy "a l" 'apostrophe-start-chatbot-from-selection)
+  (pen-dk-easy "a c" 'apostrophe-start-chatbot-from-selection)
 
   ;; p Prose
   (pen-dk-easy "p t" 'pen-transform-prose)
