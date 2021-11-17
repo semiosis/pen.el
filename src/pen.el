@@ -3677,6 +3677,7 @@ May use to generate code from comments."
 (require 'pen-tmux)
 (require 'pen-looking-glass)
 (require 'pen-buffer-state)
+(require 'pen-apostrophe)
 
 (defun pen-lsp-explain-error ()
   (interactive)
