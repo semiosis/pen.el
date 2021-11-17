@@ -238,7 +238,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-engine-disabled-p (engine)
   (let ((disabled))
-    (loop for e in pen-disabled-engines do
+    (c-loop for e in pen-disabled-engines do
           (if (string-match e engine)
               (setq disabled t)))
     disabled))
@@ -365,7 +365,7 @@ Reconstruct the entire yaml-ht for a different language."
             for val in vals do
             (if encode (setq val (pen-encode-string val)))
 
-            (loop for pl
+            (c-loop for pl
                   in pipelines
                   do
                   (let ((plf (format "<%s:%i>" (car pl) i))
@@ -394,7 +394,7 @@ Reconstruct the entire yaml-ht for a different language."
                ((re-match-p (pen-unregexify unchomped2) s)
                 (setq s (string-replace unchomped2 val s)))))
 
-            (loop for pl
+            (c-loop for pl
                   in '(("q" . pen-q)
                        ("sl" . slugify)
                        ("bx" . pen-boxify)
@@ -479,7 +479,7 @@ Reconstruct the entire yaml-ht for a different language."
                           val)))
 
               ;; oci bigscience-get-prompts | jq . | scrape "{{[^}]*}}" | v
-              (loop for pl
+              (c-loop for pl
                     in pipelines
                     do
                     (let ((plf (format "<%s:%s>" (car pl) key))
@@ -497,7 +497,7 @@ Reconstruct the entire yaml-ht for a different language."
               ;;  (mapcar 'car pipelines)
               ;;  (car (assoc "uc" '(("uc" . "pen-str uc")))))
 
-              (loop for pl
+              (c-loop for pl
                     in '(("q" . pen-q)
                          ("sl" . slugify)
                          ("bx" . pen-boxify)
@@ -540,7 +540,7 @@ Reconstruct the entire yaml-ht for a different language."
                             (pen-encode-string val)
                           val)))
 
-              (loop for pl
+              (c-loop for pl
                     in pipelines
                     do
                     (let ((plf (format "<%s:%s>" (car pl) key))
@@ -578,7 +578,7 @@ Reconstruct the entire yaml-ht for a different language."
                  ((re-match-p (pen-unregexify unchomped2) s)
                   (setq s (string-replace unchomped2 val s)))))
 
-              (loop for pl
+              (c-loop for pl
                     in '(("q" . pen-q)
                          ("sl" . slugify)
                          ("bx" . pen-boxify)
@@ -780,7 +780,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-open-all-files (file-list)
   (interactive (read-string-hist "pen-open-all-files: "))
-  (loop for path in (pen-str2list file-list)
+  (c-loop for path in (pen-str2list file-list)
         do
         (ignore-errors
           (with-current-buffer
@@ -798,7 +798,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-touch-all-files (file-list)
   (interactive (read-string-hist "pen-touch-all-files: "))
-  (loop for path in (pen-str2list file-list)
+  (c-loop for path in (pen-str2list file-list)
         do
         (progn
           (message "%s" (concat "touching " path))
@@ -1171,7 +1171,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-preprocessors
                    ;; Unfortunately, can't do full template expansion here because we don't have vals. final-preprocessors is needed for vals 
-                   (loop for fpp in final-preprocessors collect
+                   (c-loop for fpp in final-preprocessors collect
                          (if fpp
                              (--> fpp
                                (pen-expand-template-keyvals it (-zip-fill "" ',vars vals))
@@ -2938,7 +2938,7 @@ Function names are prefixed with pf- for easy searching"
                          (mapcar 'intern alias-names))
 
                         (examples
-                         (loop for e in examples collect
+                         (c-loop for e in examples collect
                                (--> e
                                  (pen-expand-template-keyvals it subprompts-al)
                                  (pen-expand-template-keyvals it (-zip-fill "" vars examples))
