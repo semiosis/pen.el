@@ -258,6 +258,14 @@ case "$f" in
     }
     ;;
 
+    trailing-empty-line-if-not-empty) {
+        IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
+        if test -n "$in"; then
+            printf -- "%s\n\n" "$in"
+        fi
+    }
+    ;;
+
     remove-starting-and-trailing-whitespace) {
         sed -e 's/^\s*//' -e 's/\s*$//'
     }
