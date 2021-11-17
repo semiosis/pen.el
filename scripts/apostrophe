@@ -3,8 +3,6 @@
 # Apostrophe
 # Version 1.0, bash
 
-CMD="$(cmd-nice-posix "$@")"
-
 sn="$(basename "$0")"
 
 use_comint=y
@@ -16,8 +14,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -getcomintcmd) {
+        use_comint=y
+        export INERT_COMINT=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+
+CMD="$(cmd-nice-posix "$@")"
 
 # TODO Also make a version that takes 2 people
 # Then consider roping in more people
