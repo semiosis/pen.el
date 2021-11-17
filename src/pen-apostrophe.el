@@ -3,6 +3,9 @@
 
 (let* ((sme (pf-who-is-the-subject-matter-expert-for-/1 text))
        (blurb (pf-generate-wiki-blurb-for-a-famous-person/1 sme)))
-  (sps (cmd "apostrophe" "" blurb))))
+
+  (let* ((el (pen-snc (cmd "apostrophe" "-getcomintcmd" sme "" blurb))))
+    (pen-eval-string el)
+    (never (sps (cmd "apostrophe" "" blurb))))))
 
 (provide 'pen-apostrophe)
