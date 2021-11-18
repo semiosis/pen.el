@@ -4,8 +4,8 @@
   (if (not text)
       (setq text (pen-screen-or-selection)))
 
-  (let* ((sme (pf-who-is-the-subject-matter-expert-for-/1 text))
-         (blurb (pf-generate-wiki-blurb-for-a-famous-person/1 sme)))
+  (let* ((sme (eval `(upd (pf-who-is-the-subject-matter-expert-for-/1 ,text))))
+         (blurb (eval `(upd (pf-generate-wiki-blurb-for-a-famous-person/1 ,sme)))))
 
     (let* ((el (pen-snc (pen-cmd "apostrophe" "-getcomintcmd" sme "" blurb))))
       ;; TODO Run multiple daemons and run tasks from a pool?
