@@ -47,7 +47,6 @@
 
 (defvar my-completion-engine 'pen-company-filetype)
 
-
 (defvar-local pen.el nil)
 
 ;; Zone plate for Laria
