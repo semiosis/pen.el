@@ -326,7 +326,7 @@ case "$f" in
     ;;
 
     unwhitespacify) {
-        s join ' ' | sed 's/ \+/ /g'
+        pen-s join ' ' | sed 's/ \+/ /g'
     }
     ;;
 
