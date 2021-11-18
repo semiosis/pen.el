@@ -4,7 +4,7 @@
   (if (not text)
       (setq text (pen-screen-or-selection)))
 
-  (let* ((sme (pf-who-is-the-subject-matter-expert-for-/2 text))
+  (let* ((sme (pf-who-is-the-subject-matter-expert-for-/1 text))
          (blurb (pf-generate-wiki-blurb-for-a-famous-person/1 sme)))
 
     (never ((sme (eval `(upd (pf-who-is-the-subject-matter-expert-for-/1 ,text))))

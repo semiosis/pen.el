@@ -56,6 +56,7 @@
 (package-install 'eww-lnum)
 (package-install 'ace-link)
 (package-install 'mwim)
+(package-install 'unicode-fonts)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -104,6 +105,7 @@
 (require 'eww-lnum)
 (require 'ace-link)
 (require 'mwim)
+(require 'unicode-fonts)
 
 (require 'pen-custom)
 

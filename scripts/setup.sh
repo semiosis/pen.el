@@ -252,3 +252,15 @@ cmake ..
 sed -i "s/^/# /" /usr/local/lib/cmake/libwebsockets/libwebsockets-config.cmake
 make -j 4 && make install
 )
+
+agi unzip
+
+mkdir -p ~/.fonts
+mkdir -p /usr/share/fonts/opentype
+
+# Place your fonts
+
+fc-cache -f -v
+
+# Then in emacs:
+# (unicode-fonts-setup)
