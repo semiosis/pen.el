@@ -1351,6 +1351,9 @@ Out
     (pen-etv s)
     (call-interactively 'mark-whole-buffer)
     (message "buffer read only, placing in temporary buffer"))
+   ((derived-mode-p 'comint-mode)
+    (let ((p (point)))
+      (insert s)))
    (t
     (let ((p (point)))
       (insert s)
