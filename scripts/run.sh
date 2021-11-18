@@ -43,7 +43,7 @@ mkdir -p ~/.pen/ht-cache
 # emacs -nw --debug-init
 
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
-    emacsclient -c -a "" ~/.pen "$@"
+    emacsclient -c -a "" "$@"
 else
     emacsclient -a "" -t "$@"
 fi
