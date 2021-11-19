@@ -51,6 +51,7 @@ It's completely free, libre and open-source.
   echo "<hf key here>" > ~/.pen/hf_api_key                  # https://huggingface.co/
   echo "<nlpcloud key here>" > ~/.pen/nlpcloud_api_key      # https://nlpcloud.io/
   echo "<alephalpha key here>" > ~/.pen/alephalpha_api_key  # https://aleph-alpha.de/
+  echo "<cohere key here>" > ~/.pen/cohere_api_key          # https://cohere.ai/
 
   # Add the scripts to the PATH
   echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
