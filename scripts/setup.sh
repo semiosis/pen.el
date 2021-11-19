@@ -264,3 +264,5 @@ fc-cache -f -v
 
 # Then in emacs:
 # (unicode-fonts-setup)
+
+pip3 install cohere
