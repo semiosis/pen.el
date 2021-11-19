@@ -19,6 +19,7 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/\/arxiv.org/s/\/$//' | \
     sed '/\/wiki.haskell.org/s/\/$//' | \
     sed '/\/en.wikibooks.org/s/\/$//' | \
+    sed '/\/news.ycombinator.com\/news/s/\/$//' | \
     sed '/\/programming-idioms.org/s/\/$//' | \
     sed '/artandpopularculture.com/s/\/$//' | \
     sed '/\/www.metalevel.at/s/\/$//' | \
