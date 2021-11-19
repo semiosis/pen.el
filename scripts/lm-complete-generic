@@ -55,6 +55,15 @@ case "$sn" in
     }
     ;;
 
+    cohere-complete.sh|cohere-*|*) {
+        completer_sn=pen-cohere
+        : "${COHERE_API_KEY:="$PEN_LM_KEY"}"
+        export COHERE_API_KEY
+
+        : "${PEN_MODEL:="large"}"
+    }
+    ;;
+
     openai-complete.sh|openai-*|*) {
         completer_sn=pen-openai
         : "${OPENAI_API_KEY:="$PEN_LM_KEY"}"
@@ -239,6 +248,16 @@ case "$sn" in
 
     nlpcloud-complete.sh) {
         "$completer_sn" > "$tf_response"
+    }
+    ;;
+
+    cohere-complete.sh|cohere-*) {
+        if test "$LM_COMPLETE_DEBUG" = "y"; then
+            "$completer_sn"
+            exit $?
+        else
+            "$completer_sn"  > "$tf_response"
+        fi
     }
     ;;
 

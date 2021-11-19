@@ -30,6 +30,10 @@
   (interactive (list (pen-read-service-key "openai")))
   (pen-add-key "openai" key))
 
+(defun pen-add-key-cohere (key)
+  (interactive (list (pen-read-service-key "cohere")))
+  (pen-add-key "cohere" key))
+
 (defun pen-add-key-ai21 (key)
   (interactive (list (pen-read-service-key "ai21")))
   (pen-add-key "ai21" key))
