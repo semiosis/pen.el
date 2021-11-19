@@ -2,7 +2,6 @@
 
 (setq large-file-warning-threshold nil)
 
-
 (defvar pen-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
 
@@ -1099,7 +1098,16 @@ Reconstruct the entire yaml-ht for a different language."
                    (if final-subprompts
                        (ht->alist (-reduce 'ht-merge (pen-vector2list final-subprompts)))))
 
-                  (final-prompt ,prompt)
+                  (final-force-prompt
+                   (or
+                    override-prompt
+                    (pen-var-value-maybe 'force-prompt)
+                    ,force-prompt))
+
+                  (final-prompt
+                   (or
+                    final-force-prompt
+                    ,prompt))
 
                   (final-prompt (if final-start-yas
                                     (pen-yas-expand-string final-prompt)
@@ -1653,23 +1661,37 @@ Reconstruct the entire yaml-ht for a different language."
 
                   (final-prompt (s-remove-trailing-newline final-prompt))
 
-                  (final-override-prompt
-                   (or (pen-var-value-maybe 'override-prompt)
-                       ,override-prompt))
-
-                  (final-prompt (if final-override-prompt
-                                    final-override-prompt
-                                  final-prompt))
-
                   ;; (let ((override-prompt "Hi,")) (pf-who-is-the-subject-matter-expert-for-/1))
 
                   (final-prompt
-                   (let ((pos))
-                     (while (setq pos (byte-string-search "<:fz-eol>" final-prompt))
-                       (pen-fz
-                        (pen-batch
-                         (let ((override-prompt "Hi,"))
-                           (apply ,func-sym `(list :override-prompt final-override-prompt))))))))
+                   (progn
+                     (while
+                         (setq pos
+                               ;; (byte-string-search "<:fz-eol>" final-prompt)
+                               (string-search "<:fz-eol>" final-prompt))
+
+                       (let* ((completions
+                               (eval
+                                `(let* ((force-prompt ,(s-left pos final-prompt))
+                                        (stop-sequence "\n")
+                                        (stop-sequences '("\n"))
+                                        (max-tokens 50)
+                                        (do-pen-batch t)
+                                        (pen-no-select-result t))
+                                   ;; (,',func-sym)
+                                   (pf-generic-completion-50-tokens/1))))
+                              (completion (fz completions nil nil "select part:")))
+
+                         (setq final-prompt
+                               ;; (etv (pen-sn "sed -z 's/<:fz-eol>/hello/'" (cat "/tmp/o8EnBA9BpZ")))
+                               (concat
+                                (replace-regexp-in-string
+                                 "\\(<:fz-eol>\\).*"
+                                 completion
+                                 final-prompt nil nil 1)
+                                ""))))
+                     final-prompt))
+
 
                   ;; How to assign which prompt function to use for this?
                   ;; I need to be able to override the prompt of the current prompt function, or any prompt function for that matter.
@@ -2586,7 +2608,7 @@ Function names are prefixed with pf- for easy searching"
                         ;; info and hover are related
                         (info (pen-yaml-test yaml-ht "info"))
                         (hover (pen-yaml-test yaml-ht "hover"))
-                        (override-prompt)
+                        (force-prompt)
                         (formatter (pen-yaml-test yaml-ht "formatter"))
                         (linter (pen-yaml-test yaml-ht "linter"))
                         ;; This is both a code action and the default action
@@ -3818,5 +3840,32 @@ May use to generate code from comments."
 (defun pen-see-pen-command-hist ()
   (interactive)
   (find-file (f-join penconfdir "all-pen-commands.txt")))
+
+;; (comment
+;;            (setq final-prompt (concat (replace-regexp-in-string "\\(<:fz-eol>\\).*\\'" "" final-prompt nil nil 1) completion)))
+
+(defun pen-test-fzeof ()
+  (interactive)
+  (let* ((final-prompt "Once upon a time there <:fz-eol> yo")
+         (func-sym 'pf-generic-completion-50-tokens/1)
+         (pos))
+
+    (while (setq pos (byte-string-search "<:fz-eol>" final-prompt))
+
+      (let* ((completions
+              (eval
+               `(let* ((force-prompt ,(s-left pos final-prompt))
+                       (stop-sequence "\n")
+                       (stop-sequences '("\n"))
+                       (max-tokens 50)
+                       (do-pen-batch t)
+                       (pen-no-select-result t))
+                  (,func-sym))))
+             (completion (fz completions nil nil "select part:")))
+
+        (setq final-prompt (concat
+                            (replace-regexp-in-string "\\(<:fz-eol>\\).*\\'" completion final-prompt nil nil 1)
+                            ""))))
+    (pen-etv final-prompt)))
 
 (provide 'pen)
