@@ -14,6 +14,4 @@ test -n "$COHERE_API_KEY" || {
 export COHERE_API_KEY
 
 # This only really uses the env vars
-pen-cohere.py "$@"
-
-#| pen-log cohere-temp
+pen-cohere.py "$@" | pen-log cohere-temp
