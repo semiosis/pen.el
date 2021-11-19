@@ -2,6 +2,7 @@
 
 (setq large-file-warning-threshold nil)
 
+
 (defvar pen-map (make-sparse-keymap)
   "Keymap for `pen.el'.")
 
@@ -830,7 +831,15 @@ Reconstruct the entire yaml-ht for a different language."
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
-   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key no-select-result include-prompt no-gen select-only-match variadic-var inject-gen-start force-interactive))
+   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key
+                                                         no-select-result
+                                                         include-prompt
+                                                         no-gen
+                                                         select-only-match
+                                                         variadic-var
+                                                         inject-gen-start
+                                                         override-prompt
+                                                         force-interactive))
       ,doc
       (interactive ,(cons 'list iargs))
 
@@ -1643,6 +1652,30 @@ Reconstruct the entire yaml-ht for a different language."
                   ;; (string-search "s" "ガムツリshane")
 
                   (final-prompt (s-remove-trailing-newline final-prompt))
+
+                  (final-override-prompt
+                   (or (pen-var-value-maybe 'override-prompt)
+                       ,override-prompt))
+
+                  (final-prompt (if final-override-prompt
+                                    final-override-prompt
+                                  final-prompt))
+
+                  ;; (let ((override-prompt "Hi,")) (pf-who-is-the-subject-matter-expert-for-/1))
+
+                  (final-prompt
+                   (let ((pos))
+                     (while (setq pos (byte-string-search "<:fz-eol>" final-prompt))
+                       (pen-fz
+                        (pen-batch
+                         (let ((override-prompt "Hi,"))
+                           (apply ,func-sym `(list :override-prompt final-override-prompt))))))))
+
+                  ;; How to assign which prompt function to use for this?
+                  ;; I need to be able to override the prompt of the current prompt function, or any prompt function for that matter.
+                  ;; And use the part up to here as the prompt, and simply recurse.
+
+                  ;; Somewhere around here handle fz-eol
 
                   (collect-from-pos (or (byte-string-search "<:pp>" final-prompt)
                                         ;; (length final-prompt)
@@ -2553,6 +2586,7 @@ Function names are prefixed with pf- for easy searching"
                         ;; info and hover are related
                         (info (pen-yaml-test yaml-ht "info"))
                         (hover (pen-yaml-test yaml-ht "hover"))
+                        (override-prompt)
                         (formatter (pen-yaml-test yaml-ht "formatter"))
                         (linter (pen-yaml-test yaml-ht "linter"))
                         ;; This is both a code action and the default action
