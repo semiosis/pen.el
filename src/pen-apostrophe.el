@@ -1,5 +1,17 @@
+(defun pen-inside-docker ()
+  (f-file-p "/.dockerenv"))
+
+(defun pen-container-running ()
+  (pen-snq (cmd "pen" "-running-p")))
+
 (defun apostrophe-start-chatbot-from-selection (text)
   (interactive (list (pen-screen-or-selection)))
+
+  (if (and (not (pen-inside-docker))
+           (not (pen-container-running)))
+      (progn
+        (pen-term-nsfa (cmd "pen" "-n"))
+        (message "Starting Pen server")))
 
   (if (not text)
       (setq text (pen-screen-or-selection)))
