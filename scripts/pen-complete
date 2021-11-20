@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+pen pf-generic-completion-50-tokens/1 "$@"

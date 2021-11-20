@@ -302,8 +302,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if stdin_exists; then
+if stdin_exists && \
+    ! printf -- "%s\n" "$1" | grep -q -P '^pf-' && \
+    ! test "$sn" = penu && \
+    ! test "$sn" = pena && \
+    ! test "$sn" = penf; then
+
     fp="$(pen-tf txt)"
+
     exec 0<&1
 
     if test "$sn" = pen && test "$#" -eq 0 && { inside-docker-p || docker-running-p; }; then
