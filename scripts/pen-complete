@@ -1,4 +1,15 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -u) {
+        export UPDATE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 pen pf-generic-completion-50-tokens/1 "$@"
