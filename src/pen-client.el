@@ -4,6 +4,8 @@
 (require 'pp)
 (require 'json)
 
+;; This file can be loaded by a vanilla emacs
+
 (defun pen-eval-string (string)
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))
