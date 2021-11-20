@@ -107,6 +107,12 @@
   (new-buffer-from-o o)
   o)
 
+(defun pen-list2str (&rest l)
+  "join the string representation of elements of a given list into a single string with newline delimiters"
+  (if (cl-equalp 1 (length l))
+      (setq l (car l)))
+  (mapconcat 'identity (mapcar 'str l) "\n"))
+
 (defun pen-client-generate-functions ()
   (interactive)
 
@@ -116,37 +122,37 @@
                       (chomp (pen-sn-basic (ecmd "pene" "(pen-list-signatures-for-client)")))))))
 
     (dolist (s sig-sexps)
-        (let* ((fn-name
-                (replace-regexp-in-string "(pf-\\([^ )]*\\).*" "pen-fn-\\1" (pp-oneline s)))
-               (remote-fn-name
-                (replace-regexp-in-string "(\\([^ )]*\\).*" "\\1" (pp-oneline s)))
-               (fn-sym
-                (intern fn-name))
-               (args
-                (replace-regexp-in-string "^[^ ]* &optional *\\(.*\\))$" "\\1" (pp-oneline s)))
-               (arg-list
-                (split-string args))
-               (arg-list-syms
-                (mapcar 'intern arg-list))
-               (ilist
-                (cons
-                 'list
-                 (cl-loop
-                  for a in arg-list collect
-                  (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
-               (sn-cmd `(ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
+      (let* ((fn-name
+              (replace-regexp-in-string "(pf-\\([^ )]*\\).*" "pen-fn-\\1" (pp-oneline s)))
+             (remote-fn-name
+              (replace-regexp-in-string "(\\([^ )]*\\).*" "\\1" (pp-oneline s)))
+             (fn-sym
+              (intern fn-name))
+             (args
+              (replace-regexp-in-string "^[^ ]* &optional *\\(.*\\))$" "\\1" (pp-oneline s)))
+             (arg-list
+              (split-string args))
+             (arg-list-syms
+              (mapcar 'intern arg-list))
+             (ilist
+              (cons
+               'list
+               (cl-loop
+                for a in arg-list collect
+                (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
+             (sn-cmd `(ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
 
-          (eval
-           `(defun ,fn-sym ,(pen-eval-string
-                             (if (string-equal args "")
-                                 "'()"
-                               (format "'(&optional %s)" args)))
-              ,(cons 'interactive (list ilist))
-              (let ((result
-                     (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
-                (if (interactive-p)
-                    (pen-etv result)
-                  result))))))))
+        (eval
+         `(defun ,fn-sym ,(pen-eval-string
+                           (if (string-equal args "")
+                               "'()"
+                             (format "'(&optional %s)" args)))
+            ,(cons 'interactive (list ilist))
+            (let ((result
+                   (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
+              (if (interactive-p)
+                  (pen-etv (pen-list2str result))
+                result))))))))
 
 (pen-client-generate-functions)
 
