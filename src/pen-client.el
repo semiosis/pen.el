@@ -49,6 +49,39 @@
   "sn chomp"
   (chomp (pen-sn cmd stdin)))
 
+(defun vector2list (v)
+  (append v nil))
+
+(defun new-buffer-from-string (&optional contents bufname mode nodisplay)
+  "Create a new untitled buffer from a string."
+  (interactive)
+  (if (not bufname)
+      (setq bufname "*untitled*"))
+  (let ((buffer (generate-new-buffer bufname)))
+    (set-buffer-major-mode buffer)
+    (if (not nodisplay)
+        (display-buffer buffer '(display-buffer-same-window . nil)))
+    (with-current-buffer buffer
+      (if contents
+          (if (stringp contents)
+              (insert contents)
+            (insert (str contents))))
+      (beginning-of-buffer)
+      (if mode (funcall mode)))
+    buffer))
+(defalias 'nbfs 'new-buffer-from-string)
+(defun new-buffer-from-o (o)
+  (new-buffer-from-string
+   (if (stringp o)
+       o
+     (pp-to-string o))))
+(defun pen-etv (o)
+  "Returns the object. This is a way to see the contents of a variable while not interrupting the flow of code.
+ Example:
+ (message (pen-etv \"shane\"))"
+  (new-buffer-from-o o)
+  o)
+
 (defun pen-client-generate-functions ()
   (interactive)
 
@@ -86,11 +119,10 @@
                               "'()"
                             (format "'(&optional %s)" args)))
            ,(cons 'interactive (list ilist))
-           (let ((result (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd))))))
+           (let ((result
+                  (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
              (if (interactive-p)
-                 (etv result)
-               result))))
-       ;; (pp-oneline (eval-string (format "'(&optional %s)" args)))
-       ))))
+                 (pen-etv result)
+               result))))))))
 
 (provide 'pen-client)
