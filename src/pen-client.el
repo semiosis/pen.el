@@ -4,6 +4,10 @@
 (require 'pp)
 (require 'json)
 
+(defun pen-eval-string (string)
+  "Evaluate elisp code stored in a string."
+  (eval (car (read-from-string (format "(progn %s)" string)))))
+
 (defun chomp (str)
   "Chomp (remove tailing newline from) STR."
   (replace-regexp-in-string "\n\\'" "" str))
@@ -13,7 +17,30 @@
 
 (defun pen-q (&rest strings)
   (let ((print-escape-newlines t))
-    (s-join " " (mapcar 'prin1-to-string strings))))
+    (mapconcat 'identity (mapcar 'prin1-to-string strings) " ")))
+
+(defun e/escape-string (&rest strings)
+  (let ((print-escape-newlines t))
+    (mapconcat 'identity (mapcar 'prin1-to-string strings) " ")))
+(defalias 'e/q 'e/escape-string)
+
+(defun ecmd (&rest args)
+  (chomp (mapconcat 'identity (mapcar 'e/q args) " ")))
+
+(defun variable-p (s)
+  (and (not (eq s nil))
+       (boundp s)))
+
+(defmacro shut-up-c (&rest body)
+  "This works for c functions where shut-up does not."
+  `(progn (let* ((inhibit-message t))
+            ,@body)))
+
+(defun slurp-file (filePath)
+  "Return filePath's file content."
+  (with-temp-buffer
+    (insert-file-contents filePath)
+    (buffer-string)))
 
 (defun pen-sn-basic (cmd &optional stdin dir)
   (interactive)
@@ -23,14 +50,13 @@
         (setq cmd "false"))
 
     (if (not dir)
-        (setq dir (get-dir)))
+        (setq dir default-directory))
 
     (let ((default-directory dir))
-      (if (or (>= (prefix-numeric-value current-global-prefix-arg) 16)
-              (or
-               (and (variable-p 'sh-update)
-                    (eval 'sh-update))
-               (>= (prefix-numeric-value current-prefix-arg) 16)))
+      (if (or
+           (and (variable-p 'sh-update)
+                (eval 'sh-update))
+           (>= (prefix-numeric-value current-prefix-arg) 16))
           (setq cmd (concat "export UPDATE=y; " cmd)))
 
       (setq tf (make-temp-file "elisp_bash"))
@@ -44,10 +70,6 @@
          (shell-command-on-region (point-min) (point-max) final_cmd)))
       (setq output (slurp-file tf))
       output)))
-
-(defun pen-snc (cmd &optional stdin)
-  "sn chomp"
-  (chomp (pen-sn cmd stdin)))
 
 (defun vector2list (v)
   (append v nil))
@@ -85,10 +107,10 @@
 (defun pen-client-generate-functions ()
   (interactive)
 
-  (let* ((sig-sexps (eval-string
+  (let* ((sig-sexps (pen-eval-string
                      (concat
                       "'"
-                      (pen-snc (cmd "pene" "(pen-list-signatures-for-client)"))))))
+                      (chomp (pen-sn-basic (ecmd "pene" "(pen-list-signatures-for-client)")))))))
 
     (cl-loop
      for s in sig-sexps do
@@ -101,7 +123,7 @@
             (args
              (replace-regexp-in-string "^[^ ]* &optional *\\(.*\\))$" "\\1" (pp-oneline s)))
             (arg-list
-             (s-split " " args))
+             (split-string args))
             (arg-list-syms
              (mapcar 'intern arg-list))
             (ilist
@@ -109,12 +131,11 @@
               'list
               (cl-loop
                for a in arg-list collect
-               (eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
-            ;; (sn-cmd (concat "0</dev/null " (eval `(cmd "penf" ,remote-fn-name ,@arg-list-syms))))
-            (sn-cmd `(cmd "pena" ,remote-fn-name ,@arg-list-syms)))
+               (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
+            (sn-cmd `(ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
 
        (eval
-        `(defun ,fn-sym ,(eval-string
+        `(defun ,fn-sym ,(pen-eval-string
                           (if (string-equal args "")
                               "'()"
                             (format "'(&optional %s)" args)))
