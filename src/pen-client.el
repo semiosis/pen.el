@@ -3,6 +3,7 @@
 
 (require 'pp)
 (require 'json)
+(require 'cl-lib)
 
 ;; This file can be loaded by a vanilla emacs
 
