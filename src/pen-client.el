@@ -3,6 +3,7 @@
 
 (require 'pp)
 (require 'json)
+(require 'cl)
 
 ;; This file can be loaded by a vanilla emacs
 
@@ -147,5 +148,7 @@
              (if (interactive-p)
                  (pen-etv result)
                result))))))))
+
+(pen-client-generate-functions)
 
 (provide 'pen-client)
