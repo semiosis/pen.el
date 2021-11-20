@@ -157,6 +157,8 @@
                   (pen-etv (pen-list2str result))
                 result))))))))
 
-(pen-client-generate-functions)
+(if (not (pen-container-running-p))
+    (message "Please start the Pen.el server first by running pen in a terminal.")
+  (pen-client-generate-functions))
 
 (provide 'pen-client)
