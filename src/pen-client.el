@@ -3,7 +3,6 @@
 
 (require 'pp)
 (require 'json)
-(require 'cl)
 
 ;; This file can be loaded by a vanilla emacs
 
@@ -115,39 +114,38 @@
                       "'"
                       (chomp (pen-sn-basic (ecmd "pene" "(pen-list-signatures-for-client)")))))))
 
-    (cl-loop
-     for s in sig-sexps do
-     (let* ((fn-name
-             (replace-regexp-in-string "(pf-\\([^ )]*\\).*" "pen-fn-\\1" (pp-oneline s)))
-            (remote-fn-name
-             (replace-regexp-in-string "(\\([^ )]*\\).*" "\\1" (pp-oneline s)))
-            (fn-sym
-             (intern fn-name))
-            (args
-             (replace-regexp-in-string "^[^ ]* &optional *\\(.*\\))$" "\\1" (pp-oneline s)))
-            (arg-list
-             (split-string args))
-            (arg-list-syms
-             (mapcar 'intern arg-list))
-            (ilist
-             (cons
-              'list
-              (cl-loop
-               for a in arg-list collect
-               (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
-            (sn-cmd `(ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
+    (dolist (s sig-sexps)
+        (let* ((fn-name
+                (replace-regexp-in-string "(pf-\\([^ )]*\\).*" "pen-fn-\\1" (pp-oneline s)))
+               (remote-fn-name
+                (replace-regexp-in-string "(\\([^ )]*\\).*" "\\1" (pp-oneline s)))
+               (fn-sym
+                (intern fn-name))
+               (args
+                (replace-regexp-in-string "^[^ ]* &optional *\\(.*\\))$" "\\1" (pp-oneline s)))
+               (arg-list
+                (split-string args))
+               (arg-list-syms
+                (mapcar 'intern arg-list))
+               (ilist
+                (cons
+                 'list
+                 (cl-loop
+                  for a in arg-list collect
+                  (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
+               (sn-cmd `(ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
 
-       (eval
-        `(defun ,fn-sym ,(pen-eval-string
-                          (if (string-equal args "")
-                              "'()"
-                            (format "'(&optional %s)" args)))
-           ,(cons 'interactive (list ilist))
-           (let ((result
-                  (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
-             (if (interactive-p)
-                 (pen-etv result)
-               result))))))))
+          (eval
+           `(defun ,fn-sym ,(pen-eval-string
+                             (if (string-equal args "")
+                                 "'()"
+                               (format "'(&optional %s)" args)))
+              ,(cons 'interactive (list ilist))
+              (let ((result
+                     (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
+                (if (interactive-p)
+                    (pen-etv result)
+                  result))))))))
 
 (pen-client-generate-functions)
 
