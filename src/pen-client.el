@@ -2,6 +2,7 @@
 ;; This communicates with a Pen.el docker container for basic prompt functions
 
 (require 'pp)
+(require 'json)
 
 (defun chomp (str)
   "Chomp (remove tailing newline from) STR."
@@ -77,7 +78,7 @@
                for a in arg-list collect
                (eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
             ;; (sn-cmd (concat "0</dev/null " (eval `(cmd "penf" ,remote-fn-name ,@arg-list-syms))))
-            (sn-cmd `(cmd "penf" ,remote-fn-name ,@arg-list-syms)))
+            (sn-cmd `(cmd "pena" ,remote-fn-name ,@arg-list-syms)))
 
        (eval
         `(defun ,fn-sym ,(eval-string
@@ -85,7 +86,7 @@
                               "'()"
                             (format "'(&optional %s)" args)))
            ,(cons 'interactive (list ilist))
-           (let ((result (chomp (eval `(pen-sn-basic ,,sn-cmd)))))
+           (let ((result (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd))))))
              (if (interactive-p)
                  (etv result)
                result))))
