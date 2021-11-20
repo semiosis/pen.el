@@ -7,6 +7,9 @@
 
 ;; This file can be loaded by a vanilla emacs
 
+(defun pen-container-running-p ()
+  (string-equal "0" (chomp (pen-sn-basic (concat (ecmd "pen" "-running-p") "; echo $?")))))
+
 (defun pen-eval-string (string)
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))
