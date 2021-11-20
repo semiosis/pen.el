@@ -130,7 +130,7 @@
       (setq l (car l)))
   (mapconcat 'identity (mapcar 'str l) "\n"))
 
-;; (pen-fn-translate/3 (substring-no-properties (buffer-substring (region-beginning) (region-end))) "English" "French")
+;; (pen-fn-translate/3 (buffer-substring (region-beginning) (region-end)) "English" "French")
 (defun pen-client-generate-functions ()
   (interactive)
 
