@@ -8,7 +8,7 @@
 ;; This file can be loaded by a vanilla emacs
 
 (defun pen-container-running-p ()
-  (string-equal "0" (chomp (pen-sn-basic (concat (ecmd "pen" "-running-p") "; echo $?")))))
+  (string-equal "0" (chomp (pen-sn-basic (concat (pen-client-ecmd "pen" "-running-p") "; echo $?")))))
 
 (defun pen-eval-string (string)
   "Evaluate elisp code stored in a string."
@@ -30,8 +30,10 @@
     (mapconcat 'identity (mapcar 'prin1-to-string strings) " ")))
 (defalias 'e/q 'e/escape-string)
 
-(defun ecmd (&rest args)
-  (chomp (mapconcat 'identity (mapcar 'e/q args) " ")))
+(defun pen-client-ecmd (&rest args)
+  (chomp (mapconcat 'identity (mapcar 'e/q
+                                      (mapcar 'substring-no-properties
+                                              (mapcar (lambda (e) (if e e "")) args))) " ")))
 
 (defun variable-p (s)
   (and (not (eq s nil))
@@ -128,13 +130,14 @@
       (setq l (car l)))
   (mapconcat 'identity (mapcar 'str l) "\n"))
 
+;; (pen-fn-translate/3 (substring-no-properties (buffer-substring (region-beginning) (region-end))) "English" "French")
 (defun pen-client-generate-functions ()
   (interactive)
 
   (let* ((sig-sexps (pen-eval-string
                      (concat
                       "'"
-                      (chomp (pen-sn-basic (ecmd "pene" "(pen-list-signatures-for-client)")))))))
+                      (chomp (pen-sn-basic (pen-client-ecmd "pene" "(pen-list-signatures-for-client)")))))))
 
     (dolist (s sig-sexps)
       (let* ((fn-name
@@ -155,7 +158,7 @@
                (cl-loop
                 for a in arg-list collect
                 (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
-             (sn-cmd `(ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
+             (sn-cmd `(pen-client-ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
 
         (eval
          `(defun ,fn-sym ,(pen-eval-string
@@ -163,6 +166,7 @@
                                "'()"
                              (format "'(&optional %s)" args)))
             ,(cons 'interactive (list ilist))
+
             (let ((result
                    (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
               (if (interactive-p)
