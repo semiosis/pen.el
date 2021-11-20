@@ -110,6 +110,18 @@
   (new-buffer-from-o o)
   o)
 
+(defun str (thing)
+  "Converts object or string to an unformatted string."
+
+  (if thing
+      (if (stringp thing)
+          (substring-no-properties thing)
+        (progn
+          (setq thing (format "%s" thing))
+          (set-text-properties 0 (length thing) nil thing)
+          thing))
+    ""))
+
 (defun pen-list2str (&rest l)
   "join the string representation of elements of a given list into a single string with newline delimiters"
   (if (cl-equalp 1 (length l))
