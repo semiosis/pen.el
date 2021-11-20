@@ -55,7 +55,7 @@ case "$sn" in
     }
     ;;
 
-    cohere-complete.sh|cohere-*|*) {
+    cohere-complete.sh|cohere-*) {
         completer_sn=pen-cohere
         : "${COHERE_API_KEY:="$PEN_LM_KEY"}"
         export COHERE_API_KEY
