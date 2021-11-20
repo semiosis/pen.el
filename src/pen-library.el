@@ -518,4 +518,8 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
   `(progn (defvar-local ,symbol ,documentation)
           (setq-local ,symbol ,value)))
 
+(defun pen-list-signatures-for-client ()
+  (cl-loop for nm in pen-prompt-functions collect
+           (downcase (replace-regexp-in-string " &key.*" ")" (helpful--signature nm)))))
+
 (provide 'pen-library)
