@@ -58,6 +58,8 @@
 (require 'pen)
 (pen 1)
 
+(defset penconfdir (f-join user-home-directory ".pen"))
+
 ;; Camille-complete (because I press SPC to replace)
 (defalias 'camille-complete 'pen-run-prompt-function)
 
