@@ -69,7 +69,9 @@
 
   (let* ((alephalpha
           (if pen-describe-images
-              (eval `(pen-ci (lg-get-alttext ,fp-or-url)))
+              (eval `(pen-ci (lg-get-alttext ,fp-or-url) ,(or (>= (prefix-numeric-value current-prefix-arg) 4)
+                                                              (= (prefix-numeric-value current-prefix-arg) 0))))
+            ;; (lg-get-alttext fp-or-url)
             nil))
 
          (alephalpha
