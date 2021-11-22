@@ -13,11 +13,4 @@ test -n "$OPENAI_API_KEY" || {
 
 export OPENAI_API_KEY
 
-openai() {
-    python3 `which openai` "$@"
-}
-
-# This only really uses the env vars
-pen-openai-complete "$@" # | pen-log openai-temp
-
-# openai "$@" | pen-log openai-temp
+$MYGIT/openai/openai-python/examples/semanticsearch/semanticsearch.py "$@"

@@ -9,17 +9,34 @@
 import openai
 import os
 import json
+from shanepy import *
+
+# The client semantic search system sends multiple prompts in a single request.
+# Firstly, what is the reason for a list?
+# TODO Make support for this.
+
+# Taken from https://github.com/openai/openai-python/blob/main/examples/semanticsearch/semanticsearch.py
+DEFAULT_COND_LOGP_TEMPLATE = (
+    "<|endoftext|>{document}\n\n---\n\nThe above passage is related to: {query}"
+)
+SCORE_MULTIPLIER = 100.0
+
 
 API_TOKEN = os.environ.get("OPENAI_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL") or "davinci"
 PEN_MODEL = os.environ.get("PEN_MODEL") or "davinci-codex"
 PEN_PROMPT = os.environ.get("PEN_PROMPT") or "Once upon a time"
+PEN_PAYLOADS = os.environ.get("PEN_PAYLOADS")
+# Documents may be inserted into a prompt, exploding the prompt into a list.
+# Typically used for semantic search.
+PEN_DOCUMENTS = os.environ.get("PEN_DOCUMENTS")
 PEN_MODE = os.environ.get("PEN_MODE")
 PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE") or "0.8"
 # json.loads("[\"hello my ;\\\"\",\"friend\"]")
 PEN_STOP_SEQUENCES = json.loads(os.environ.get("PEN_STOP_SEQUENCES") or "[\"\\n\"]") or ["\n"]
 PEN_STOP_SEQUENCE = os.environ.get("PEN_STOP_SEQUENCE") or "\n"
-PEN_LOGPROBS = os.environ.get("PEN_LOGPROBS") or "10"
+# empty string is falsy
+PEN_LOGPROBS = os.environ.get("PEN_LOGPROBS")
 PEN_TOP_K = os.environ.get("PEN_TOP_K") or "5"
 PEN_TOP_P = float(os.environ.get("PEN_TOP_P") or "1.0")
 
@@ -34,44 +51,57 @@ PEN_MAX_GENERATED_TOKENS = os.environ.get("PEN_MAX_GENERATED_TOKENS") or "5"
 PEN_LOGIT_BIAS = os.environ.get("PEN_LOGIT_BIAS")
 PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 
-# int(PEN_LOGPROBS)
-
 # Serialise the LOGIT_BIAS as json
 # It needs to arrive as a python dict
 
 # LOGIT_BIAS is not a big priority
 # Besides, char-level models might make this completely redundant
 
-# openai.Completion.create(
-#      engine=PEN_MODEL,
-#      prompt=PEN_PROMPT,
-#      logprobs=int(PEN_LOGPROBS),
-#      stop=PEN_STOP_SEQUENCE,
-#      temperature=float(PEN_TEMPERATURE),
-#      logit_bias={6342: -1})
+if PEN_MODE == "search":
+    PEN_LOGPROBS=0
+    PEN_MAX_GENERATED_TOKENS=0
 
-cs = openai.Completion.create(
-     n=int(PEN_N_COMPLETIONS),
-     engine=PEN_MODEL,
-     prompt=PEN_PROMPT,
-     logprobs=int(PEN_LOGPROBS),
-     frequency_penalty=float(PEN_FREQUENCY_PENALTY),
-     presence_penalty=float(PEN_PRESENCE_PENALTY),
-     top_p=float(PEN_TOP_P),
-     best_of=int(PEN_TOP_K),
-     # stop=PEN_STOP_SEQUENCE,
-     stop=PEN_STOP_SEQUENCES,
-     max_tokens=int(PEN_MAX_GENERATED_TOKENS),
-     temperature=float(PEN_TEMPERATURE))['choices']
-
-if len(cs) == 1:
-    print(PEN_PROMPT, end = '')
-    print(cs[0]['text'])
+if PEN_LOGPROBS is not None:
+    cs = openai.Completion.create(
+         n=int(PEN_N_COMPLETIONS),
+         engine=PEN_MODEL,
+         prompt=PEN_PROMPT,
+         logprobs=PEN_LOGPROBS,
+         frequency_penalty=float(PEN_FREQUENCY_PENALTY),
+         presence_penalty=float(PEN_PRESENCE_PENALTY),
+         top_p=float(PEN_TOP_P),
+         best_of=int(PEN_TOP_K),
+         # stop=PEN_STOP_SEQUENCE,
+         stop=PEN_STOP_SEQUENCES,
+         max_tokens=int(PEN_MAX_GENERATED_TOKENS),
+         temperature=float(PEN_TEMPERATURE))['choices']
 else:
-    for x in range(len(cs)):
-        print(f"===== Completion %i =====" % x)
+    cs = openai.Completion.create(
+         n=int(PEN_N_COMPLETIONS),
+         engine=PEN_MODEL,
+         prompt=PEN_PROMPT,
+         frequency_penalty=float(PEN_FREQUENCY_PENALTY),
+         presence_penalty=float(PEN_PRESENCE_PENALTY),
+         top_p=float(PEN_TOP_P),
+         best_of=int(PEN_TOP_K),
+         # stop=PEN_STOP_SEQUENCE,
+         stop=PEN_STOP_SEQUENCES,
+         max_tokens=int(PEN_MAX_GENERATED_TOKENS),
+         temperature=float(PEN_TEMPERATURE))['choices']
+
+
+if PEN_MODE == "search":
+    None
+else:
+    if len(cs) == 1:
         print(PEN_PROMPT, end = '')
-        print(cs[x]['text'])
+        print(cs[0]['text'])
+    else:
+        for x in range(len(cs)):
+            print(f"===== Completion %i =====" % x)
+            print(PEN_PROMPT, end = '')
+            print(cs[x]['text'])
+
 
 exit(0)
 

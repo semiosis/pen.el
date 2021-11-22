@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+$MYGIT/openai/openai-python/examples/semanticsearch/semanticsearch.py -e ada -d "$(cat $DUMP/tmp/scratchYOu1MG.txt | sed '/^$/d' | q -fl | sed -e 's/^/{"text": /' -e 's/$/}/' | pen-tf txt)" --max_rerank 10 -q "is a TODO item"
+
+# pen-openai-official api engines.search -d "$(cat $DUMP/tmp/scratchYOu1MG.txt | sed '/^$/d' | q -fl | sed -e 's/^/{"text": /' -e 's/$/}/' | pen-tf txt)" --max_rerank 10 -q "is a TODO item"
