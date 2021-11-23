@@ -84,7 +84,6 @@ def get_score(choice) -> float:
     logits: List[float] = logprobs[last_used:]
     return sum(logits) / len(logits) * SCORE_MULTIPLIER
 
-
 if PEN_MODE == "search":
     cs = openai.Completion.create(
         engine=PEN_MODEL,
@@ -94,12 +93,12 @@ if PEN_MODE == "search":
         max_tokens=0,
         temperature=float(PEN_TEMPERATURE),
         echo=True)['choices']
-elif PEN_LOGPROBS is not None:
+elif PEN_LOGPROBS is not None and PEN_LOGPROBS:
     cs = openai.Completion.create(
          n=int(PEN_N_COMPLETIONS),
          engine=PEN_MODEL,
          prompt=PEN_PROMPT,
-         logprobs=PEN_LOGPROBS,
+         logprobs=int(PEN_LOGPROBS),
          frequency_penalty=float(PEN_FREQUENCY_PENALTY),
          presence_penalty=float(PEN_PRESENCE_PENALTY),
          top_p=float(PEN_TOP_P),
