@@ -56,7 +56,7 @@ pyf jsonnet
 agi tmux
 
 agi swi-prolog-nox
-pyf problog
+# pyf problog
 
 mkdir -p /root/org-roam
 
@@ -125,10 +125,10 @@ apt install libgtk-3-0 libgtk-3-dev
 rm -rf /root/emacs
 
 # I want huggingface transformers and I'm going to use clojure to access them
-(
-cd
-git clone --depth 1 "http://github.com/semiosis/huggingface-clj"
-)
+# (
+# cd
+# git clone --depth 1 "http://github.com/semiosis/huggingface-clj"
+# )
 
 (
 cd
@@ -137,13 +137,13 @@ git clone --depth 1 "https://github.com/syl20bnr/spacemacs"
 
 apt install libreadline-dev
 apt install libbsd-dev
-(
-cd
-git clone --depth 1 "https://gitlab.com/rosie-pattern-language/rosie"
-cd rosie
-make
-make install
-)
+# (
+# cd
+# git clone --depth 1 "https://gitlab.com/rosie-pattern-language/rosie"
+# cd rosie
+# make
+# make install
+# )
 
 (
 export TERM=xterm
@@ -184,7 +184,6 @@ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.linux-amd64.tar.gz
 (
 cd
 git clone "https://github.com/Aleph-Alpha/aleph-alpha-client"
-git checkout mm
 python3 setup.py build install
 )
 
