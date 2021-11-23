@@ -471,7 +471,11 @@ case "$sn" in
             pfname="$fun"
 
             if stdin_exists; then
-                in="$(cat | qne)"
+                # This has issues
+                # in="$(cat | qne)"
+
+                # So do I escape or not?
+                in="$(cat)"
 
                 if test "$1" = {}; then
                     shift

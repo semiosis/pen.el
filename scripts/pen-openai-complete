@@ -9,26 +9,23 @@
 import openai
 import os
 import json
-from shanepy import *
+from typing import List
 
 # The client semantic search system sends multiple prompts in a single request.
 # Firstly, what is the reason for a list?
 # TODO Make support for this.
 
 # Taken from https://github.com/openai/openai-python/blob/main/examples/semanticsearch/semanticsearch.py
-DEFAULT_COND_LOGP_TEMPLATE = (
-    "<|endoftext|>{document}\n\n---\n\nThe above passage is related to: {query}"
-)
 SCORE_MULTIPLIER = 100.0
-
 
 API_TOKEN = os.environ.get("OPENAI_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL") or "davinci"
 PEN_MODEL = os.environ.get("PEN_MODEL") or "davinci-codex"
 PEN_PROMPT = os.environ.get("PEN_PROMPT") or "Once upon a time"
 PEN_PAYLOADS = os.environ.get("PEN_PAYLOADS")
-# Documents may be inserted into a prompt, exploding the prompt into a list.
 # Typically used for semantic search.
+# Documents may be inserted into a prompt, exploding the prompt into a list, but only if PEN_PROMPTS doesn't already exist.
+# As the exploding may happen within Pen.el
 PEN_DOCUMENTS = os.environ.get("PEN_DOCUMENTS")
 PEN_MODE = os.environ.get("PEN_MODE")
 PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE") or "0.8"
@@ -37,11 +34,26 @@ PEN_STOP_SEQUENCES = json.loads(os.environ.get("PEN_STOP_SEQUENCES") or "[\"\\n\
 PEN_STOP_SEQUENCE = os.environ.get("PEN_STOP_SEQUENCE") or "\n"
 # empty string is falsy
 PEN_LOGPROBS = os.environ.get("PEN_LOGPROBS")
+PEN_END_POS = os.environ.get("PEN_END_POS") or len(PEN_PROMPT)
+PEN_COLLECT_FROM_POS = os.environ.get("PEN_COLLECT_FROM_POS") or PEN_END_POS
 PEN_TOP_K = os.environ.get("PEN_TOP_K") or "5"
 PEN_TOP_P = float(os.environ.get("PEN_TOP_P") or "1.0")
+PEN_SEARCH_THRESHOLD = float(os.environ.get("PEN_SEARCH_THRESHOLD") or "100")
 
 if PEN_TOP_P > 1.0:
     PEN_TOP_P = 1.0
+
+if PEN_COLLECT_FROM_POS:
+    PEN_COLLECT_FROM_POS = int(PEN_COLLECT_FROM_POS)
+
+if PEN_END_POS:
+    PEN_END_POS = int(PEN_END_POS)
+
+if PEN_SEARCH_THRESHOLD:
+    PEN_SEARCH_THRESHOLD = float(PEN_SEARCH_THRESHOLD)
+
+if PEN_DOCUMENTS:
+    PEN_DOCUMENTS = json.loads(PEN_DOCUMENTS)
 
 PEN_N_COMPLETIONS = os.environ.get("PEN_N_COMPLETIONS") or "2"
 PEN_MAX_TOKENS = os.environ.get("PEN_MAX_TOKENS") or "15"
@@ -57,11 +69,32 @@ PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 # LOGIT_BIAS is not a big priority
 # Besides, char-level models might make this completely redundant
 
-if PEN_MODE == "search":
-    PEN_LOGPROBS=0
-    PEN_MAX_GENERATED_TOKENS=0
 
-if PEN_LOGPROBS is not None:
+def get_score(choice) -> float:
+    query_len=(PEN_END_POS - PEN_COLLECT_FROM_POS)
+
+    logprobs: List[float] = choice.logprobs.token_logprobs
+    text = choice.logprobs.tokens
+    total_len = 0
+    last_used = len(text)
+    while total_len < query_len:
+        assert last_used > 0
+        total_len += len(text[last_used - 1])
+        last_used -= 1
+    logits: List[float] = logprobs[last_used:]
+    return sum(logits) / len(logits) * SCORE_MULTIPLIER
+
+
+if PEN_MODE == "search":
+    cs = openai.Completion.create(
+        engine=PEN_MODEL,
+        prompt=[PEN_PROMPT.replace("<document>", "")] +
+        [PEN_PROMPT.replace("<document>", doc) for doc in PEN_DOCUMENTS],
+        logprobs=0,
+        max_tokens=0,
+        temperature=float(PEN_TEMPERATURE),
+        echo=True)['choices']
+elif PEN_LOGPROBS is not None:
     cs = openai.Completion.create(
          n=int(PEN_N_COMPLETIONS),
          engine=PEN_MODEL,
@@ -89,9 +122,28 @@ else:
          max_tokens=int(PEN_MAX_GENERATED_TOKENS),
          temperature=float(PEN_TEMPERATURE))['choices']
 
-
 if PEN_MODE == "search":
-    None
+    return_data = sorted(cs, key=lambda choice: choice.index)
+    query_length = (PEN_END_POS - PEN_COLLECT_FROM_POS)
+
+    scores = [get_score(choice) for choice in return_data]
+    # subtract score for empty document
+    scores = [score - scores[0] for score in scores][1:]
+
+    results=[
+        PEN_DOCUMENTS[document_idx]
+        for document_idx, score in enumerate(scores)
+        if score > PEN_SEARCH_THRESHOLD
+    ]
+
+    # This is ugly but it works
+    if len(results) == 1:
+        # print(PEN_PROMPT, end = '')
+        print(results[0])
+    else:
+        for x in range(len(results)):
+            print(f"===== Completion %i =====" % x)
+            print(results[x])
 else:
     if len(cs) == 1:
         print(PEN_PROMPT, end = '')

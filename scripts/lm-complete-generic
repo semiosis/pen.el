@@ -99,16 +99,27 @@ openai_results_split() {
 
     cd "$td"
 
-    if test "$PEN_N_COMPLETIONS" = 1; then
-        tail -c "+$(( PEN_COLLECT_FROM_POS + 1 ))" "$completions_fp" > response.txt
-    elif cat "$completions_fp" | grep -q -P '^===== Completion [0-9]+ =====$'; then
-        csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}' &>/dev/null
-        for fp in *; do
-            sed -i 1d "$fp"
-            tail -c "+$(( PEN_COLLECT_FROM_POS + 1 ))" "$fp" | sponge "$fp"
-        done
+    if test "$PEN_MODE" = search; then
+        if cat "$completions_fp" | grep -q -P '^===== Completion [0-9]+ =====$'; then
+            csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}' &>/dev/null
+            for fp in *; do
+                sed -i 1d "$fp"
+            done
+        else
+            cat "$completions_fp" > splitfile_0.txt
+        fi
     else
-        cat "$completions_fp" > splitfile_0.txt
+        if test "$PEN_N_COMPLETIONS" = 1; then
+            tail -c "+$(( PEN_COLLECT_FROM_POS + 1 ))" "$completions_fp" > response.txt
+        elif cat "$completions_fp" | grep -q -P '^===== Completion [0-9]+ =====$'; then
+            csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}' &>/dev/null
+            for fp in *; do
+                sed -i 1d "$fp"
+                tail -c "+$(( PEN_COLLECT_FROM_POS + 1 ))" "$fp" | sponge "$fp"
+            done
+        else
+            cat "$completions_fp" > splitfile_0.txt
+        fi
     fi
 
     echo "$td"
@@ -160,6 +171,9 @@ if test "$PEN_DEBUG" = "y"; then
     echo "PEN_TOP_P:\"$PEN_TOP_P\""
     echo "PEN_TOP_K:\"$PEN_TOP_K\""
     echo "PEN_N_COMPLETIONS:\"$PEN_N_COMPLETIONS\""
+    echo "PEN_COLLECT_FROM_POS:\"$PEN_COLLECT_FROM_POS\""
+    echo "PEN_END_POS:\"$PEN_END_POS\""
+    # echo "PEN_QUERY_POS:\"$PEN_QUERY_POS\""
     echo "PEN_ENGINE_MAX_N_COMPLETIONS:\"$PEN_ENGINE_MAX_N_COMPLETIONS\""
     exit 1
 fi
@@ -213,6 +227,9 @@ export PEN_ENGINE_MAX_GENERATED_TOKENS
 export PEN_ENGINE_MAX_N_COMPLETIONS
 # Some backends strip whitespace. Recreate it.
 export PEN_TRAILING_WHITESPACE
+export PEN_COLLECT_FROM_POS
+export PEN_END_POS
+# export PEN_QUERY_POS
 
 tf_response="$(mktemp -t "lm_results_XXXXXX.txt" 2>/dev/null)"
 trap "rm \"$tf_response\" 2>/dev/null" 0
