@@ -5,7 +5,7 @@ export TTY
 
 : ${modename:="$1"}
 # script="$(pen-nsfa "$@")"
-bufname="$(p term "$@" | slugify | cut -c 1-20)"
+bufname="$(p term "$@" | slugify | cut -c 1-30)"
 
 # elisp="(pen-term \"$script\" t $modename)$elisp"
 elisp="(pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname"))$elisp"
