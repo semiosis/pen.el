@@ -2733,8 +2733,8 @@ Function names are prefixed with pf- for easy searching"
                            ;; (pen-log path)
                            ;; for some reason this is returning 5
                            ;; (pen-log (ht-get yaml-ht "n-completions"))
-                           (or (ht-get yaml-ht "n-completions")
-                               5)))
+                           ;; It comes from openai.engine. If I'm forcing the engine, this will override.
+                           (or (ht-get yaml-ht "n-completions") 5)))
                         (n-test-runs (ht-get yaml-ht "n-test-runs"))
 
                         ;; Execute some elisp in preparation for running this function
