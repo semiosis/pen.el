@@ -243,7 +243,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         (eww url))))))
 
 (setq right-click-context-global-menu-tree
-      `(("Cancel" :call identity)
+      `(("Cancel" :call identity-command)
         ("> pen" :call rcm-pen)))
 
 (defmacro def-right-click-menu (name
