@@ -204,13 +204,13 @@
           ;; Automatically check if Cohere key exists and ask for it otherwise
           (call-interactively 'pen-add-key-cohere)))))
 
-(let ((pen-aix-key-file-path (f-join penconfdir "aix_api_key")))
-  (if (not (f-file-p pen-aix-key-file-path))
-      (let ((envkey (getenv "AIX_API_KEY")))
-        (if (sor envkey)
-            (pen-add-key-aix envkey)
-          ;; Automatically check if Aix key exists and ask for it otherwise
-          (call-interactively 'pen-add-key-aix)))))
+;; (let ((pen-aix-key-file-path (f-join penconfdir "aix_api_key")))
+;;   (if (not (f-file-p pen-aix-key-file-path))
+;;       (let ((envkey (getenv "AIX_API_KEY")))
+;;         (if (sor envkey)
+;;             (pen-add-key-aix envkey)
+;;           ;; Automatically check if Aix key exists and ask for it otherwise
+;;           (call-interactively 'pen-add-key-aix)))))
 
 (let ((pen-hf-key-file-path (f-join penconfdir "hf_api_key")))
   (if (not (f-file-p pen-hf-key-file-path))
