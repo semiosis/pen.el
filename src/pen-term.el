@@ -136,6 +136,8 @@
   (define-key term-raw-map (kbd "C-c ESC") #'pen-term-c-c-esc)
   (define-key term-raw-map (kbd "C-c M-l") #'term-send-raw-meta)
   (define-key term-raw-map (kbd "C-c C-c") #'term-send-raw)
+  ;; I need C-u for update
+  (define-key term-raw-map (kbd "C-c C-u") #'term-send-raw)
   (define-key term-raw-map (kbd "C-c M-Y") #'pen-term-clean-user-prompt)
   (define-key term-raw-map (kbd "C-c C-M-i") #'pen-company-complete)
   (define-key term-raw-map (kbd "C-c M-;") #'term-send-raw-meta)
@@ -145,6 +147,8 @@
   (define-key term-raw-map (kbd "C-M-^") nil)
   ;; Hyper
   (define-key term-raw-map (kbd "C-M-\\") nil)
+
+  (define-key term-raw-map (kbd "C-u") nil)
 
   ;; (define-key term-raw-map (kbd "C-c o") #'tm-edit-v-in-nw)
   ;; (define-key term-raw-map (kbd "C-c O") #'tm-edit-vs-in-nw)

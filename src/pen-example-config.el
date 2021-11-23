@@ -537,6 +537,9 @@
 (add-to-list 'default-frame-alist '(set-background-color "#1e1e1e"))
 (remove-from-list 'default-frame-alist '(set-background-color "#660000"))
 
+;; This is still needed for term/cterm, for some reason
+(pen-term-set-raw-map)
+
 (set-face-attribute
  'menu nil
  :inverse-video nil
