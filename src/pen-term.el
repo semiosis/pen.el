@@ -205,7 +205,7 @@
     (with-current-buffer (term program)
       (if closeframe
           (defset-local termframe-local termframe))
-      (let ((modefun (intern (concat (slugify (or modename (s-left 20 program))) "-term-mode"))))
+      (let ((modefun (intern (concat (slugify (or modename program)) "-term-mode"))))
         (if (fboundp modefun)
             (funcall modefun)))
 
