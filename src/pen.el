@@ -1646,6 +1646,18 @@ Reconstruct the entire yaml-ht for a different language."
                     (str (or (pen-var-value-maybe 'translator)
                              ,translator))))
 
+                  ;; These might be variables to the function.
+                  ;; They're used for search mode.
+                  (final-query
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'query)
+                             ""))))
+
+                  (final-counterquery
+                   (expand-template
+                    (str (or (pen-var-value-maybe 'counterquery)
+                             ""))))
+
                   (final-prompt
                    (expand-template final-prompt))
 
@@ -1835,6 +1847,9 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_ENGINE" . ,final-engine)
                             ("PEN_API_ENDPOINT" . ,final-api-endpoint)
                             ("PEN_PAYLOADS" . ,final-payloads)
+                            ;; TODO Implement query and counterquery for more accurate semantic search
+                            ("PEN_QUERY" . ,final-query)
+                            ("PEN_COUNTERQUERY" . ,final-counterquery)
                             ("PEN_LOGPROBS" . ,(str final-logprobs))
                             ("PEN_APPROXIMATE_PROMPT_LENGTH" . ,pen-approximate-prompt-token-length)
                             ("PEN_ENGINE_MIN_TOKENS" . ,final-engine-min-tokens)
@@ -3494,6 +3509,19 @@ But use the results-analyser."
                                '("##long complete##"))))
        ,',@body)))
 
+(defmacro pen-desirable-line-complete (&rest body)
+  "This wraps around pen function calls to make them complete line only"
+  ;; TODO set a filter for results.
+  ;; This should be pf-textual-semantic-search-filter/3 with a query and counterquery
+  `(eval
+    `(let ((force-completion t)
+           (max-generated-tokens 100)
+           (n-completions 20)
+           (n-collate 2)
+           (stop-sequence "\n")
+           (stop-sequences '("\n")))
+       ,',@body)))
+
 (defmacro pen-line-complete (&rest body)
   "This wraps around pen function calls to make them complete line only"
   `(eval
@@ -3582,6 +3610,16 @@ But use the results-analyser."
                              (pen-complete-function preceding-text))
            (pen-words-complete
             (pen-complete-function preceding-text)))))
+    (if tv
+        (pen-etv (ink-propertise response))
+      (pen-complete-insert (ink-propertise response)))))
+
+(defun pen-complete-desirable-line (preceding-text &optional tv)
+  "Desirable line completion"
+  (interactive (list (pen-preceding-text) nil))
+  (let ((response
+         (pen-desirable-line-complete
+          (pen-complete-function preceding-text))))
     (if tv
         (pen-etv (ink-propertise response))
       (pen-complete-insert (ink-propertise response)))))

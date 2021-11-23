@@ -40,6 +40,7 @@ PEN_TOP_K = os.environ.get("PEN_TOP_K") or "5"
 PEN_TOP_P = float(os.environ.get("PEN_TOP_P") or "1.0")
 PEN_SEARCH_THRESHOLD = float(os.environ.get("PEN_SEARCH_THRESHOLD") or "100")
 PEN_QUERY = os.environ.get("PEN_QUERY")
+PEN_COUNTERQUERY = os.environ.get("PEN_COUNTERQUERY")
 
 if PEN_TOP_P > 1.0:
     PEN_TOP_P = 1.0
@@ -47,6 +48,7 @@ if PEN_TOP_P > 1.0:
 if PEN_COLLECT_FROM_POS:
     PEN_COLLECT_FROM_POS = int(PEN_COLLECT_FROM_POS)
 
+# end pos will be needed to be reevaluated later for search
 if PEN_END_POS:
     PEN_END_POS = int(PEN_END_POS)
 
@@ -71,8 +73,8 @@ PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 # Besides, char-level models might make this completely redundant
 
 
-def get_score(choice) -> float:
-    query_len=(PEN_END_POS - PEN_COLLECT_FROM_POS)
+def get_score(choice, end_pos) -> float:
+    query_len=(end_pos - PEN_COLLECT_FROM_POS)
 
     logprobs: List[float] = choice.logprobs.token_logprobs
     text = choice.logprobs.tokens
@@ -85,11 +87,22 @@ def get_score(choice) -> float:
     logits: List[float] = logprobs[last_used:]
     return sum(logits) / len(logits) * SCORE_MULTIPLIER
 
+
 if PEN_MODE == "search":
+    prompts = [PEN_PROMPT.replace("<document>", "")] + [PEN_PROMPT.replace("<document>", doc) for doc in PEN_DOCUMENTS]
+
+    regular_prompts = [p.replace("<query>", PEN_QUERY) for p in prompts]
+
+    if PEN_COUNTERQUERY:
+        counter_prompts = [p.replace("<query>", PEN_COUNTERQUERY) for p in prompts]
+    else:
+        counter_prompts = []
+
+    prompts = regular_prompts + counter_prompts
+
     cs = openai.Completion.create(
         engine=PEN_MODEL,
-        prompt=[PEN_PROMPT.replace("<document>", "")] +
-        [PEN_PROMPT.replace("<document>", doc) for doc in PEN_DOCUMENTS],
+        prompt=prompts,
         logprobs=0,
         max_tokens=0,
         temperature=float(PEN_TEMPERATURE),
@@ -125,6 +138,7 @@ else:
 
 if PEN_MODE == "search":
     return_data = sorted(cs, key=lambda choice: choice.index)
+    query_length = (len(PEN_PROMPT) - PEN_COLLECT_FROM_POS)
 
     scores = [get_score(choice) for choice in return_data]
     # subtract score for empty document
