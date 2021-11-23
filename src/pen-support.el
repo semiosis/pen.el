@@ -909,12 +909,14 @@ when s is a string, set the clipboard to s"
   (interactive)
   (pen-cl-sn "uq" :stdin input :chomp t))
 
-(defun completing-read-hist (prompt &optional initial-input histvar default-value)
+(defun completing-read-hist (prompt &optional initial-input histvar default-value override-func-name)
   "read-string but with history and newline evaluation."
   (setq initial-input (or initial-input
                           ""))
 
-  (let ((fnn (pen-var-value-maybe 'func-name)))
+  (let ((fnn (or
+              override-func-name
+              (pen-var-value-maybe 'func-name))))
     (if (sor fnn)
         (setq prompt (concat fnn " ~ " prompt))))
 

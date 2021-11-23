@@ -830,7 +830,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
-   `(cl-defun ,func-sym ,(append '(&optional) var-syms '(&key
+   `(cl-defun ,func-sym ,(append '(&optional) all-var-syms '(&key
                                                          no-select-result
                                                          include-prompt
                                                          no-gen
@@ -840,7 +840,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                          override-prompt
                                                          force-interactive))
       ,doc
-      (interactive ,(cons 'list iargs))
+      (interactive ,(cons 'list all-iargs))
 
       (setq no-select-result
             (or no-select-result
@@ -1607,8 +1607,12 @@ Reconstruct the entire yaml-ht for a different language."
                        ',stop-patterns))
 
                   ;; These happen before the postprocessing
+                  (final-search-threshold
+                   (or (pen-var-value-maybe 'search-threshold)
+                       ',search-threshold))
+
                   (final-split-patterns
-                   (or (pen-var-value-maybe 'split-pKatterns)
+                   (or (pen-var-value-maybe 'split-patterns)
                        ',split-patterns))
 
                   ;; These happen after the postprocessing
@@ -1702,6 +1706,10 @@ Reconstruct the entire yaml-ht for a different language."
                   (collect-from-pos (or (byte-string-search "<:pp>" final-prompt)
                                         ;; (length final-prompt)
                                         (string-bytes final-prompt)))
+
+                  ;; Maybe just use <:pp> instead
+                  ;; (query-pos (or (byte-string-search "<:qp>" final-prompt)
+                  ;;                ""))
 
                   (final-prompt
                    (if (sor final-inject-gen-start)
@@ -1827,7 +1835,7 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_ENGINE" . ,final-engine)
                             ("PEN_API_ENDPOINT" . ,final-api-endpoint)
                             ("PEN_PAYLOADS" . ,final-payloads)
-                            ("PEN_LOGPROBS" . ,final-logprobs)
+                            ("PEN_LOGPROBS" . ,(str final-logprobs))
                             ("PEN_APPROXIMATE_PROMPT_LENGTH" . ,pen-approximate-prompt-token-length)
                             ("PEN_ENGINE_MIN_TOKENS" . ,final-engine-min-tokens)
                             ("PEN_ENGINE_MAX_TOKENS" . ,final-engine-max-tokens)
@@ -1845,6 +1853,13 @@ Reconstruct the entire yaml-ht for a different language."
                             ;; (json-encode-list (mapcar 'pen-encode-string '("hello my ;\"" "friend")))
                             ;; ("PEN_STOP_SEQUENCES" . ,(json-encode-list (mapcar 'pen-encode-string final-stop-sequences t)))
                             ("PEN_STOP_SEQUENCES" . ,(json-encode-list final-stop-sequences))
+
+                            ;; TODO Force multiple prompts later
+                            ;; Also need multi-prompts to understand different prompt lengths for results
+                            ;; ("PEN_PROMPTS" . ,(json-encode-list final-prompts))
+                            ;; documents must be a json list of strings
+                            ("PEN_DOCUMENTS" . ,(pen-var-value-maybe 'documents))
+
                             ("PEN_TOP_P" . ,final-top-p)
                             ("PEN_TOP_K" . ,final-top-k)
                             ("PEN_FLAGS" . ,final-flags)
@@ -1858,12 +1873,16 @@ Reconstruct the entire yaml-ht for a different language."
                             ("PEN_ENGINE_MIN_GENERATED_TOKENS" . ,final-engine-min-generated-tokens)
                             ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
                             ("PEN_COLLECT_FROM_POS" . ,collect-from-pos)
+                            ("PEN_END_POS" . ,end-pos)
+                            ("PEN_SEARCH_THRESHOLD" . ,final-search-threshold)
+                            ;; ("PEN_QUERY_POS" . ,query-pos)
                             ("PEN_INJECT_GEN_START" . ,(pen-encode-string final-inject-gen-start t)))))
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data data))
                      (setq pen-last-prompt-data
                            (asoc-merge pen-last-prompt-data (list (cons "PEN_VALS" (pps last-vals))
-                                                                  (cons "PEN_END_POS" end-pos))))
+                                                                  ;; (cons "PEN_END_POS" end-pos)
+                                                                  )))
                      ;; (pen-etv data)
                      data
                      ;; data
@@ -2145,9 +2164,11 @@ Reconstruct the entire yaml-ht for a different language."
                      (progn
                        (apply (intern final-action) (list result))
                        result))
-                    ((or final-info
-                         final-new-document
-                         (>= (prefix-numeric-value current-prefix-arg) 4))
+                    ((or
+                      (string-equal final-mode "search")
+                      final-info
+                      final-new-document
+                      (>= (prefix-numeric-value current-prefix-arg) 4))
                      (pen-log "pen new doc")
                      (pen-etv (ink-decode (ink-propertise result))))
                     ;; (final-analyse
@@ -2591,6 +2612,7 @@ Function names are prefixed with pf- for easy searching"
                         ;; internals
                         (prompt (ht-get yaml-ht "prompt"))
                         (mode (ht-get yaml-ht "mode"))
+                        (search-threshold (ht-get yaml-ht "search-threshold"))
                         (flags (ht-get yaml-ht "flags"))
                         (evaluator (ht-get yaml-ht "evaluator"))
                         (api-endpoint (ht-get yaml-ht "api-endpoint"))
@@ -2712,6 +2734,7 @@ Function names are prefixed with pf- for easy searching"
                         ;; API
 
                         (model (ht-get yaml-ht "model"))
+                        (mode (ht-get yaml-ht "mode"))
                         (frequency-penalty (ht-get yaml-ht "frequency-penalty"))
                         (presence-penalty (ht-get yaml-ht "presence-penalty"))
                         (repetition-penalty (ht-get yaml-ht "repetition-penalty"))
@@ -2727,6 +2750,8 @@ Function names are prefixed with pf- for easy searching"
                         ;; The desired number of generated tokens
                         (min-generated-tokens (ht-get yaml-ht "min-generated-tokens"))
                         (max-generated-tokens (ht-get yaml-ht "max-generated-tokens"))
+
+                        (force-max-generated-tokens (ht-get yaml-ht "force-max-generated-tokens"))
 
                         (collation-temperature-stepper (ht-get yaml-ht "collation-temperature-stepper"))
 
@@ -2932,6 +2957,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if elisp (concat "\nelisp: " elisp))
                                 (if lm-command (concat "\nlm-command: " lm-command))
                                 (if model (concat "\nmodel: " model))
+                                (if mode (concat "\nmode: " mode))
                                 (if n-completions (concat "\nn-completions: " (str n-completions)))
                                 (if engine-max-n-completions (concat "\nengine-max-n-completions: " (str engine-max-n-completions)))
                                 (if n-collate (concat "\nn-collate: " (str n-collate)))
@@ -2976,6 +3002,10 @@ Function names are prefixed with pf- for easy searching"
                         (envs (pen--htlist-to-alist (ht-get yaml-ht "envs")))
 
                         (var-slugs (mapcar 'slugify vars))
+                        (all-var-syms
+                         (if (string-equal "search" mode)
+                             (cons 'documents (mapcar 'intern var-slugs))
+                           (mapcar 'intern var-slugs)))
                         (var-syms
                          (let ((ss (mapcar 'intern var-slugs)))
                            (message (concat "_" prettifier))
@@ -2983,99 +3013,105 @@ Function names are prefixed with pf- for easy searching"
                                ;; Add to the function definition the prettify key if the .prompt file specifies a prettifier
                                (setq ss (append ss '(&key prettify))))
                            ss))
-                        (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length vars))))
+                        (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length all-var-syms))))
                         (func-sym (intern func-name))
                         (alias-names
                          (cl-loop for a in aliases
                                   collect
-                                  (concat pen-prompt-function-prefix (slugify a) "/" (str (length vars)))))
+                                  (concat pen-prompt-function-prefix (slugify a) "/" (str (length all-var-syms)))))
                         (alias-syms
                          (mapcar 'intern alias-names))
 
                         (examples
                          (cl-loop for e in examples collect
-                               (--> e
-                                 (pen-expand-template-keyvals it subprompts-al)
-                                 (pen-expand-template-keyvals it (-zip-fill "" vars examples))
-                                 (pen-expand-template-keyvals it (-zip-fill "" var-slugs examples)))))
+                                  (--> e
+                                    (pen-expand-template-keyvals it subprompts-al)
+                                    (pen-expand-template-keyvals it (-zip-fill "" vars examples))
+                                    (pen-expand-template-keyvals it (-zip-fill "" var-slugs examples)))))
 
-                         (iargs
-                          (let ((iteration 0))
-                            (cl-loop
-                             for tp in (-zip-fill nil var-slugs var-defaults vars)
-                             collect
-                             (let ((example (or (sor (nth iteration examples)
-                                                     "")
-                                                ""))
-                                   (varslug (car tp))
-                                   (default (nth 1 tp))
-                                   (varname (nth 2 tp))
-                                   (default-readstring-cmd "(read-string-hist (concat title \" \" varname \": \") example)" ))
-                               (message "%s" (concat "Example " (str iteration) ": " example))
-                               (if (and
-                                    (equal 0 iteration)
-                                    (not default))
-                                   ;; The first argument may be captured through selection
-                                   `(if mark-active
-                                        (pen-selected-text)
-                                      ;; (eval-string default-readstring-cmd)
-                                      ;; (read-string-hist ,(concat varslug ": ") ,example)
-                                      (read-string-hist ,(concat varslug ": ") ,example)
-                                      ;; TODO Find a way to do multiline entry
-                                      ;; (if ,(> (length (s-lines example)) 1)
-                                      ;;     (multiline-reader ,example)
-                                      ;;   (read-string-hist ,(concat v ": ") ,example))
-                                      )
-                                 ;; `(if ,(> (length (s-lines example)) 1)
-                                 ;;      (pen-etv ,example)
-                                 ;;    (if ,d
-                                 ;;        (eval-string ,(str d))
-                                 ;;      (read-string-hist ,(concat v ": ") ,example)))
+                        (iargs
+                         (let ((iteration 0))
+                           (cl-loop
+                            for tp in (-zip-fill nil var-slugs var-defaults vars)
+                            collect
+                            (let ((example (or (sor (nth iteration examples)
+                                                    "")
+                                               ""))
+                                  (varslug (car tp))
+                                  (default (nth 1 tp))
+                                  (varname (nth 2 tp))
+                                  (default-readstring-cmd "(read-string-hist (concat title \" \" varname \": \") example)" ))
+                              (message "%s" (concat "Example " (str iteration) ": " example))
+                              (if (and
+                                   (equal 0 iteration)
+                                   (not default))
+                                  ;; The first argument may be captured through selection
+                                  `(if mark-active
+                                       (pen-selected-text)
+                                     ;; (eval-string default-readstring-cmd)
+                                     ;; (read-string-hist ,(concat varslug ": ") ,example)
+                                     (read-string-hist ,(concat varslug ": ") ,example)
+                                     ;; TODO Find a way to do multiline entry
+                                     ;; (if ,(> (length (s-lines example)) 1)
+                                     ;;     (multiline-reader ,example)
+                                     ;;   (read-string-hist ,(concat v ": ") ,example))
+                                     )
+                                ;; `(if ,(> (length (s-lines example)) 1)
+                                ;;      (pen-etv ,example)
+                                ;;    (if ,d
+                                ;;        (eval-string ,(str d))
+                                ;;      (read-string-hist ,(concat v ": ") ,example)))
 
-                                 ;; subprompts are available as variables to var-defaults
-                                 `(eval
-                                   `(let ((func-name ,,func-name))
-                                      (pen-let-keyvals
-                                       ',',(pen-subprompts-to-alist subprompts)
-                                       (if ,,default
-                                           (eval-string ,,(str default))
-                                         (read-string-hist ,,(concat varname ": ") ,,example)))))))
-                             do
-                             (progn
-                               (setq iteration (+ 1 iteration))
-                               (message (str iteration)))))))
+                                ;; subprompts are available as variables to var-defaults
+                                `(eval
+                                  `(let ((func-name ,,func-name))
+                                     (pen-let-keyvals
+                                      ',',(pen-subprompts-to-alist subprompts)
+                                      (if ,,default
+                                          (eval-string ,,(str default))
+                                        (read-string-hist ,,(concat varname ": ") ,,example)))))))
+                            do
+                            (progn
+                              (setq iteration (+ 1 iteration))
+                              (message (str iteration))))))
 
-                        (ht-set yaml-ht "path" path)
-                        (ht-set pen-prompts func-name yaml-ht)
-                        (add-to-list 'pen-prompt-functions-meta yaml-ht)
+                        (all-iargs
+                         (if (string-equal "search" mode)
+                             ;; (cons `(eval-string (concat "'" (read-string-hist "documents list:" nil nil nil ,func-name))) iargs)
+                             (cons `(read-string-hist "documents list jsonl:" nil nil nil ,func-name) iargs)
+                           iargs)))
 
-                        ;; var names will have to be slugged, too
+                     (ht-set yaml-ht "path" path)
+                     (ht-set pen-prompts func-name yaml-ht)
+                     (add-to-list 'pen-prompt-functions-meta yaml-ht)
 
-                        (progn
-                          (if (and (not in-development)
-                                   (sor func-name)
-                                   func-sym
-                                   (sor title))
-                              (let ((funcsym (define-prompt-function)))
-                                (if funcsym
-                                    (progn
-                                      (add-to-list 'pen-prompt-functions funcsym)
-                                      (cl-loop for fn in alias-syms do
-                                               (progn
-                                                 (if (not (eq fn funcsym))
-                                                     (defalias fn funcsym))
-                                                 (add-to-list 'pen-prompt-aliases fn)))
-                                      (if interpreter (add-to-list 'pen-prompt-interpreter-functions funcsym))
-                                      (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
-                                      (if results-analyser (add-to-list 'pen-prompt-analyser-functions funcsym))
-                                      (if completion (add-to-list 'pen-prompt-completion-functions funcsym)))
-                                  (add-to-list 'pen-prompt-functions-failed func-sym))
+                     ;; var names will have to be slugged, too
 
-                                ;; Using memoization here is the more efficient way to memoize.
-                                ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
-                                ;; (if cache (memoize funcsym))
-                                )))
-                        (message (concat "pen-mode: Loaded prompt function " func-name)))
+                     (progn
+                       (if (and (not in-development)
+                                (sor func-name)
+                                func-sym
+                                (sor title))
+                           (let ((funcsym (define-prompt-function)))
+                             (if funcsym
+                                 (progn
+                                   (add-to-list 'pen-prompt-functions funcsym)
+                                   (cl-loop for fn in alias-syms do
+                                            (progn
+                                              (if (not (eq fn funcsym))
+                                                  (defalias fn funcsym))
+                                              (add-to-list 'pen-prompt-aliases fn)))
+                                   (if interpreter (add-to-list 'pen-prompt-interpreter-functions funcsym))
+                                   (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
+                                   (if results-analyser (add-to-list 'pen-prompt-analyser-functions funcsym))
+                                   (if completion (add-to-list 'pen-prompt-completion-functions funcsym)))
+                               (add-to-list 'pen-prompt-functions-failed func-sym))
+
+                             ;; Using memoization here is the more efficient way to memoize.
+                             ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
+                             ;; (if cache (memoize funcsym))
+                             )))
+                     (message (concat "pen-mode: Loaded prompt function " func-name)))
                    (add-to-list 'pen-prompts-failed path))))
        (if pen-prompt-functions-failed
            (progn
