@@ -17,6 +17,7 @@ if inside-docker-p; then
 else
     # This runs in the docker to the host
     cterm-docker ssh \
+        -i "~/.pen/host_key" \
         -o ControlMaster=auto \
         -o ControlPath="~/ssh-controlpath-%r@%h:%p" \
         -o UserKnownHostsFile=/dev/null \
