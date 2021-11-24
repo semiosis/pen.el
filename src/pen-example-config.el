@@ -560,3 +560,6 @@
  :background "#330000"
  :foreground "white"
  :bold t)
+
+;; The thin client
+(require 'pen-client)
