@@ -54,5 +54,5 @@ elisp="(comint-quick $(cmd-nice-posix "$CMD") user-home-directory $(cmd-nice-pos
 if test "$INERT_COMINT" = "y"; then
     printf -- "%s\n" "$elisp"
 else
-    pente "$elisp"
+    pent "$elisp"
 fi
