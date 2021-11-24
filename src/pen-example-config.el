@@ -581,8 +581,8 @@
     (set-face-attribute
      'region nil
      :inverse-video nil
-     :background "#900015"
-     :foreground "#f60064"
+     :background "#903015"
+     :foreground "#f66064"
      :bold t)
 
     (let ((fg "#a73f5f")
