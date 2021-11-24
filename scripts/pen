@@ -609,6 +609,18 @@ case "$sn" in
     }
     ;;
 
+    pente) {
+        # This is used to run docker terminal emacs with -e
+        # Advanced.
+        # Used for ii.
+        HAS_TTY=y
+        show_banner=n
+        PEN_USE_GUI=n
+        # export DEBUG_ABORT=y
+        set -- -t -- -e "$@"
+    }
+    ;;
+
     peni) {
         export USE_NVC=y
         HAS_TTY=y
