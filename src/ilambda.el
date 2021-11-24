@@ -8,6 +8,8 @@
 ;; itransform
 ;; imacro
 
+(defmacro comment (&rest body) nil)
+
 (defmacro defimacro (name &rest body)
   "Define imacro"
   (cond
