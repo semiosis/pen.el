@@ -598,11 +598,14 @@
       ;; terminal
       ;; (set-face-background 'shr-link "#3a3a3a")
       ;; (set-face-foreground 'shr-link "#204080")
+
+      (require 'shr)
       (set-face-foreground 'shr-link fg)
       (set-face-background 'shr-link bg)
       ;; (set-face-foreground 'shr-link "#3f5fa7")
       ;; (set-face-background 'shr-link "#111111")
 
+      (require 'org)
       (set-face-foreground 'org-link fg)
       (set-face-background 'org-link bg)
 
