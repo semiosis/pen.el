@@ -42,11 +42,13 @@ mkdir -p ~/.pen/ht-cache
 
 # emacs -nw --debug-init
 
+# Run is a little different from newframe.sh
+# It needs -e
 runclient() {
     if test "$USE_NVC" = "y"; then
-        nvc emacsclient "$@"
+        nvc emacsclient -e "$@"
     else
-        emacsclient "$@"
+        emacsclient -e "$@"
     fi
 }
 

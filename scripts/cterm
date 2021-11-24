@@ -5,8 +5,8 @@ export TTY
 
 : ${CWD:="$(pwd)"}
 
-CMD="$(cmd "$@")"
-: ${CMD:="$(cmd "$@")"}
+CMD="$(cmd-nice-posix "$@")"
+: ${CMD:="$(cmd-nice-posix "$@")"}
 
 inside-docker-p() {
     test -f /.dockerenv
