@@ -542,7 +542,7 @@
 
 (defun pen-set-faces ()
   (interactive)
-
+  
   (set-face-attribute
    'menu nil
    :inverse-video nil
@@ -645,7 +645,9 @@
   (set-face-background 'widget-field "#222222"))
 
 
-(add-hook 'after-init-hook 'pen-set-faces)
+(add-hook 'after-make-frame-functions 'pen-set-faces)
 
 ;; The thin client
 (require 'pen-client)
+
+(provide 'pen-example-config)
