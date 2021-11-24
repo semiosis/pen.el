@@ -568,7 +568,9 @@
  :foreground "#646464"
  :bold t)
 
-(set-face-foreground 'default "#404040")
+;; This doesn't work well with nvc
+;; (set-face-foreground 'default "#404040")
+(set-face-foreground 'default nil)
 
 (set-face-foreground 'minibuffer-prompt "#64b5f6")
 
