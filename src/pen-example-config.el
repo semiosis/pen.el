@@ -544,22 +544,25 @@
  'menu nil
  :inverse-video nil
  :background "blue"
- :foreground "white"
+ :foreground "#3333ff"
  :bold t)
 
 (set-face-attribute
  'mode-line nil
  :inverse-video nil
  :background "blue"
- :foreground "white"
+ :foreground "#3333ff"
  :bold t)
 
 (set-face-attribute
  'mode-line-inactive nil
  :inverse-video nil
  :background "#330000"
- :foreground "white"
+ :foreground "#3333ff"
  :bold t)
+
+(set-face-foreground 'comint-highlight-prompt "#3333ff")
+(set-face-background 'comint-highlight-prompt "blue")
 
 ;; The thin client
 (require 'pen-client)
