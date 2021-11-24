@@ -4,7 +4,7 @@
 generating functions from prompts that map
 emacs's corners loosely onto LMs. These
 functions can be used interactively or non-interactively
- and in a variety of configurable ways.
+and in a variety of configurable ways.
 
 Using =Pen.el=, you can centralise all of your
 prompting tasks. That includes any NLP task for
