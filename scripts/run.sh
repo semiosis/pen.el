@@ -42,8 +42,16 @@ mkdir -p ~/.pen/ht-cache
 
 # emacs -nw --debug-init
 
+runclient() {
+    if test "$USE_NVC" = "y"; then
+        nvc emacsclient "$@"
+    else
+        emacsclient "$@"
+    fi
+}
+
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
-    emacsclient -c -a "" "$@"
+    runclient -c -a "" "$@"
 else
-    emacsclient -a "" -t "$@"
+    runclient -a "" -t "$@"
 fi

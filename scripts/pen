@@ -14,6 +14,14 @@ sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$0")"
 
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
+docker-running-p() {
+    test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
+}
+
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
@@ -141,14 +149,6 @@ fi
 
 : "${PEN_USE_GUI:="y"}"
 : "${share_x:="y"}"
-
-inside-docker-p() {
-    test -f /.dockerenv
-}
-
-docker-running-p() {
-    test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
-}
 
 docker() {
     if test "$DEBUG_ABORT" = "y"; then
@@ -394,7 +394,7 @@ if test "$use_pen_config" = "y"; then
     fi
 fi
 
-if { test "$sn" = pen || test "$sn" = penc; } && \
+if { test "$sn" = pen || test "$sn" = penc || test "$sn" = peni || test "$sn" = pent; } && \
     test "$#" -eq 1 && \
     test -n "$1" && \
     test -f "$1" && \
@@ -605,7 +605,15 @@ case "$sn" in
         show_banner=n
         PEN_USE_GUI=n
         # export DEBUG_ABORT=y
-        set -- -t -- -e "$@"
+        # set -- -t -- -e "$@"
+    }
+    ;;
+
+    peni) {
+        export USE_NVC=y
+        HAS_TTY=y
+        show_banner=n
+        PEN_USE_GUI=n
     }
     ;;
 
@@ -971,6 +979,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
         --env PEN_USE_GUI \
         --env TERM \
+        --env USE_NVC \
         $(if test -n "$DISPLAY"; then
         cmd --privileged \
         --env COLORFGBG \
@@ -1011,7 +1020,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice "$(cmd-nice eval "$(cmd-nice "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
+docker "$docker_cmd" --env USE_NVC --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
 HEREDOC
     }
     ;;
