@@ -645,7 +645,6 @@
   (set-face-background 'widget-field "#222222"))
 
 
-
 (add-hook 'after-init-hook 'pen-set-faces)
 
 ;; The thin client
