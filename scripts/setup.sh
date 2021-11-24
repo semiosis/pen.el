@@ -265,3 +265,5 @@ fc-cache -f -v
 # (unicode-fonts-setup)
 
 pip3 install cohere
+
+agi nano
