@@ -69,6 +69,8 @@ It's completely free, libre and open-source.
   pen
 #+END_SRC
 
+[[./docs/agi.png]]
+
 ** Information
 - Supported language models :: - [[./docs/compatibility-and-interoperatbility.org]]
 
