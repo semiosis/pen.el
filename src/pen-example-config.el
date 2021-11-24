@@ -568,5 +568,16 @@
  :foreground "#646464"
  :bold t)
 
+(set-face-foreground 'default "#404040")
+
+(set-face-foreground 'minibuffer-prompt "#64b5f6")
+
+(set-face-attribute
+ 'region nil
+ :inverse-video nil
+ :foreground "#c00015"
+ :background "#f60064"
+ :bold t)
+
 ;; The thin client
 (require 'pen-client)
