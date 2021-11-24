@@ -1,18 +1,55 @@
+# When debug is on, try is disabled, and all errors throw an exception
 debug: on
+
+# Setting sh-update to on would disable caching/memoization
 sh-update: off
+
+# In future, this would disable the use of non-libre models
 libre-only: off
+
+# These variables are used by pen.el to
+# automatically tailor the experience towards
+# you.
 fav-world-language: English
 fav-programming-language: Emacs Lisp
+
+# This overrides the language model / engine used for prompting functions
+# However, if a .prompt file specifies
+# force-engine, then this override will not
+# override.
 force-engine: OpenAI Codex
+
+# This 
 force-few-completions: off
+
+# This prevents multiple requests.
+# Under normal circumstances, pen.el might
+# perform multiple requests/generations to
+# get to the desired quota for a prompt
+# function. Under the hood, engines may have
+# a max number of generations they can provide
+# for a single request. force-single-
+# collation ensures that only one request
+# happens.
 force-single-collation: off
+
+# Force one is more extreme. It also sets
+# the number of completions. So you get only
+# one generation/completion per request, and only one request.
 force-one: off
+
+# This allows you to set the number of collations.
 force-n-collate: ~
 force-n-completions: ~
-force-single-collation: off
 # force-temperature: ~
+
+# Ink.el adds text properties to the emacs buffer when text has been generated.
 disable-ink: off
+
+# This is a heuristic used within Pen.el to make select cost-effiient options.
 cost-efficient: on
+
+# This generates alttext for the LookingGlass web browser
 describe-images: on
 
 # Default engines are used when the engine resolver (all fallbacks) fail
@@ -22,8 +59,12 @@ default-engines:
 # - text-to-image: OpenAI Dall-E
 - text-to-image: ruDALL-E Malevich (XL)
 
-# Pattern match
+# Here's a way to disable engines. This
+# might be useful if you have a bad API key
+# for example, and just want to disable the
+# engine.
+# Pattern match on the names
 disabled-prompts:
-disabled-engines:
-- "AlephAlpha*"
+# disabled-engines:
+# - "AlephAlpha.*"
 disabled-models:
