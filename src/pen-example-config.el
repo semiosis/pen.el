@@ -579,5 +579,65 @@
  :background "#f60064"
  :bold t)
 
+(let ((fg "#a73f5f")
+      (bg "#331111")
+      (wfg "#5555ff")
+      (wbg "#222222")
+      (cfg "#ffcc00")
+      (cbg "#222222")
+      (xfg "#ff55ff")
+      (xbg "#222222"))
+
+  ;; red is best because of night time and more shades on 256 color
+  ;; terminal
+  ;; (set-face-background 'shr-link "#3a3a3a")
+  ;; (set-face-foreground 'shr-link "#204080")
+  (set-face-foreground 'shr-link fg)
+  (set-face-background 'shr-link bg)
+  ;; (set-face-foreground 'shr-link "#3f5fa7")
+  ;; (set-face-background 'shr-link "#111111")
+
+  (set-face-foreground 'org-link fg)
+  (set-face-background 'org-link bg)
+
+  (set-face-foreground 'w3m-anchor fg)
+  (set-face-background 'w3m-anchor bg)
+
+  (set-face-foreground 'w3m-current-anchor fg)
+  (set-face-background 'w3m-current-anchor bg)
+
+  (set-face-foreground 'w3m-arrived-anchor bg)
+  (set-face-background 'w3m-arrived-anchor fg)
+
+  (set-face-foreground 'button fg)
+  (set-face-background 'button bg)
+
+  (set-face-foreground 'widget-button wfg)
+  (set-face-background 'widget-button wbg)
+
+  (set-face-foreground 'custom-button-pressed wfg)
+  (set-face-background 'custom-button-pressed wbg)
+
+  (set-face-foreground 'custom-button-pressed-unraised wfg)
+  (set-face-background 'custom-button-pressed-unraised wbg)
+
+  (set-face-foreground 'custom-button-unraised wfg)
+  (set-face-background 'custom-button-unraised wbg)
+
+  (set-face-foreground 'custom-link cfg)
+  (set-face-background 'custom-link cbg)
+
+  (set-face-foreground 'custom-variable-tag cfg)
+  (set-face-background 'custom-variable-tag cbg)
+
+  (set-face-foreground 'custom-group-tag cfg)
+  (set-face-background 'custom-group-tag cbg)
+
+  (set-face-foreground 'info-xref xfg)
+  (set-face-background 'info-xref xbg))
+
+(set-face-foreground 'widget-field "#990055")
+(set-face-background 'widget-field "#222222")
+
 ;; The thin client
 (require 'pen-client)

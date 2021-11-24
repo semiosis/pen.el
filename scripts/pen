@@ -730,6 +730,17 @@ case "$sn" in
     ;;
 esac
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    config) {
+        shift
+        set -- -ic "(call-interactively 'pen-customize)"
+    }
+    ;;
+
+    *) break;
+esac; done
+
 {
 if ! test "$show_banner" = n; then
     printf -- "%s\n" "$banner"
