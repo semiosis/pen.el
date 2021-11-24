@@ -3,6 +3,15 @@ export TTY
 
 sn="$(basename "$0")"
 
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
+if ! inside-docker-p; then
+    pen sh nvc nlsh "$@"
+    exit "$?"
+fi
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -norl) {
