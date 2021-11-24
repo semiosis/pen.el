@@ -543,26 +543,30 @@
 (set-face-attribute
  'menu nil
  :inverse-video nil
- :background "blue"
- :foreground "#3333ff"
+ :background "#1565c0"
+ :foreground "#64b5f6"
  :bold t)
 
 (set-face-attribute
  'mode-line nil
  :inverse-video nil
- :background "blue"
- :foreground "#3333ff"
+ :background "#1565c0"
+ :foreground "#64b5f6"
+ :bold t)
+
+(set-face-attribute
+ 'comint-highlight-prompt nil
+ :inverse-video nil
+ :background "#1565c0"
+ :foreground "#64b5f6"
  :bold t)
 
 (set-face-attribute
  'mode-line-inactive nil
  :inverse-video nil
- :background "#330000"
- :foreground "#3333ff"
+ :background "#151515"
+ :foreground "#646464"
  :bold t)
-
-(set-face-foreground 'comint-highlight-prompt "#3333ff")
-(set-face-background 'comint-highlight-prompt "blue")
 
 ;; The thin client
 (require 'pen-client)
