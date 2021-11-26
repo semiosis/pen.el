@@ -72,11 +72,11 @@
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
-(comment
- (mapcar
-  (lambda (a)
-    (list a (eval a)))
-  args))
+;; (comment
+;;  (mapcar
+;;   (lambda (a)
+;;     (list a (eval a)))
+;;   args))
 
 (defmacro idefun (name-sym &optional args code-or-task task-or-code)
   "Define an imaginary function"
@@ -97,9 +97,9 @@
                  `(ilambda ,args ,code-or-task ,task-or-code ,name-sym)))))
 (defalias 'ifun 'idefun)
 
-(comment
- (idefun idoubleit (x)
-         "double it"))
+;; (comment
+;;  (idefun idoubleit (x)
+;;          "double it"))
 
 (defmacro ilambda (args &optional code-or-task task-or-code name-sym)
   "Define an imaginary lambda (iλ)"
@@ -138,11 +138,11 @@
           ,,(concat ";; " task))))))
 (defalias 'iλ/task 'ilambda/task)
 
-(comment
- (ilambda (n) "generate fibonacci sequence"))
+;; (comment
+;;  (ilambda (n) "generate fibonacci sequence"))
 
-(comment
- (funcall (ilambda/task (n) "generate fibonacci sequence") 5))
+;; (comment
+;;  (funcall (ilambda/task (n) "generate fibonacci sequence") 5))
 
 (defun test-generate-fib ()
   (interactive)
@@ -177,16 +177,16 @@
           ,,(concat ";; Run function " (symbol-name name-sym)))))))
 (defalias 'iλ/name 'ilambda/code)
 
-(comment
- (idefun things-to-hex-colors)
- (idefun thing-to-hex-color (thing))
- (things-to-hex-colors "watermelon" "apple")
- (etv (upd (things-to-hex-colors "watermelon" "apple"))))
+;; (comment
+;;  (idefun things-to-hex-colors)
+;;  (idefun thing-to-hex-color (thing))
+;;  (things-to-hex-colors "watermelon" "apple")
+;;  (etv (upd (things-to-hex-colors "watermelon" "apple"))))
 
-(comment
- (ieval/m
-  (thing-to-hex-color thing)
-  ";; thing to hex color"))
+;; (comment
+;;  (ieval/m
+;;   (thing-to-hex-color thing)
+;;   ";; thing to hex color"))
 
 (defmacro ilambda/code (args code &optional name-sym)
   (let ((fsym (or name-sym
@@ -202,14 +202,14 @@
 (defalias 'iλ/code 'ilambda/code)
 
 ;; Create the lambda to be generated first, and then create ilambda
-(comment
- (lambda (x)
-   (let ((x (eval x)))
-     (eval
-      `(ieval/m
-        (f ,x)
-        (defun f (x)
-          (x * x)))))))
+;; (comment
+;;  (lambda (x)
+;;    (let ((x (eval x)))
+;;      (eval
+;;       `(ieval/m
+;;         (f ,x)
+;;         (defun f (x)
+;;           (x * x)))))))
 
 (defun test-ilambda/code ()
   (interactive)
@@ -280,32 +280,32 @@
   "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
   (eval `(ieval/m ,expression ,code-sexp-or-raw)))
 
-(defun test-ieval-1 ()
-  (interactive)
-  (pen-etv (ieval
-        '(double-number 5)
-        '(defun double-number (x)
-           (x * x)))))
+;; (defun test-ieval-1 ()
+;;   (interactive)
+;;   (pen-etv (ieval
+;;         '(double-number 5)
+;;         '(defun double-number (x)
+;;            (x * x)))))
 
-(defun test-ieval-2 ()
-  (interactive)
-  (pen-etv (ieval/m
-        (double-number 5)
-        (defun double-number (x)
-          (x * x)))))
+;; (defun test-ieval-2 ()
+;;   (interactive)
+;;   (pen-etv (ieval/m
+;;         (double-number 5)
+;;         (defun double-number (x)
+;;           (x * x)))))
 
-(defun test-imacro ()
-  ;; (defimacro my/subtract)
+;; (defun test-imacro ()
+;;   ;; (defimacro my/subtract)
 
-  (defimacro my/itimes (a b c)
-    "multiply three complex numbers")
-  (defimacro my/itimes (a b c)))
+;;   (defimacro my/itimes (a b c)
+;;     "multiply three complex numbers")
+;;   (defimacro my/itimes (a b c)))
 
-(comment
- (itest "has 5 elements" '(a b c d)))
+;; (comment
+;;  (itest "has 5 elements" '(a b c d)))
 
-(comment
- (itest (lambda (l) '(= 5 (length l))) '(a b c d)))
+;; (comment
+;;  (itest (lambda (l) '(= 5 (length l))) '(a b c d)))
 
 ;; TODO Have an NL predicate and also an expression predicate
 (defmacro itest/m (predicate value)
