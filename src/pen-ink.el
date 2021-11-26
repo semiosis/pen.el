@@ -420,4 +420,13 @@ Added to `after-change-functions'."
   (interactive)
   (add-hook 'after-change-functions 'pen-on-change nil t))
 
+(defun ink-select-partial-result-under-point ()
+  "This is based on consecutive chars with the same gen id"
+  (interactive))
+
+(defun ink-select-full-result-under-point ()
+  "This is based on the regex"
+  (interactive)
+  (pen-select-regex-at-point (cdr (assoc "PEN_RESULT" pen-last-prompt-data)) t))
+
 (provide 'pen-ink)
