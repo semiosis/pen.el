@@ -308,6 +308,49 @@
   (interactive)
   (pen-prev-prop-change 'PEN_PROMPT))
 
+(defun ink-get-properties-here (&optional start end)
+  "Remove flyspell overlays in region."
+  (interactive
+   (list
+    (if mark-active (region-beginning) (point))
+    (if mark-active (region-end) (point))))
+
+  (if (not start)
+      (setq start
+            (if mark-active
+                (region-beginning)
+              (point))))
+
+  (if (not end)
+      (setq end
+            (if mark-active
+                (region-end)
+              start)))
+
+  (if (and
+       (< 1 start)
+       (eq start end))
+      (setq start (- start 1)))
+
+  (let ((props
+         (cond
+          ((is-ink-p start)
+           (append
+            '(face ink-generated)
+            '(INK_TYPE "generated")
+            (-flatten (ink-list-all-properties-for-selection (buffer-substring start end)))))
+          ((ink-flows-here-p start)
+           (append
+            '(face ink-generated)
+            '(INK_TYPE "generated")
+            (-flatten (ink-list-all-properties-for-selection (buffer-substring (- start 1) (- end 1)))))))))
+
+    (if (and
+         props
+         (interactive-p))
+        (etv props)
+      props)))
+
 (defun pen-on-change (start end length &optional content-change-event-fn)
   "Executed when a file is changed.
 Added to `after-change-functions'."
@@ -325,25 +368,51 @@ Added to `after-change-functions'."
   ;;
   ;; So (47 54 0) means add    7 chars starting at pos 47
   ;; So (47 47 7) means delete 7 chars starting at pos 47
-  (save-match-data
-    (let ((inhibit-quit t)
-          (props
-           (append
-            '(face ink-generated)
-            '(INK_TYPE "generated")
-            (-flatten (ink-list-all-properties-for-selection (buffer-substring start end)))))
-          (time-diff (- (time-to-seconds) (cdr (assoc "PEN_GEN_TIME" pen-last-prompt-data)))))
+  (ignore-errors
+    (save-match-data
+      (if (is-ink-p start)
+          (let ((inhibit-quit t)
+                (props
+                 (append
+                  '(face ink-generated)
+                  '(INK_TYPE "generated")
+                  (-flatten (ink-list-all-properties-for-selection (buffer-substring start end)))))
+                (time-diff (- (time-to-seconds) (cdr (assoc "PEN_GEN_TIME" pen-last-prompt-data)))))
 
-      ;; This method doesn't really work well, because I may take a while to make the selection
-      (if (< 10 time-diff)
-          ;; Remove properties from text changed, if it was manually changed
-          (remove-text-properties start end props))
+            (if (not (pen-regex-at-point-p (cdr (assoc "PEN_RESULT" pen-last-prompt-data)) t))
+                (progn (message "removing")
+                       (remove-text-properties start end props))
+              (message "%s" (cdr (assoc "PEN_RESULT" pen-last-prompt-data)))
+              ;; This method doesn't really work well, because I may take a while to make the selection
+              ;; (if (< 10 time-diff)
+              ;;     ;; Remove properties from text changed, if it was manually changed
+              ;;     (remove-text-properties start end props))
+              )
 
-      ;; To do this, compare the time of the last prompt
-      ;; If it was more than 1 second ago, then remove properties
+            ;; To do this, compare the time of the last prompt
+            ;; If it was more than 1 second ago, then remove properties
 
-      ;; (message "%s" (concat "edit" (buffer-substring start end)))
-      )))
+            ;; (message "%s" (concat "edit" (buffer-substring start end)))
+            )))))
+
+;; 1 is the point (not zero) when the cursor
+;; is at the beginning of the buffer
+(defun is-ink-p (&optional p)
+  "If at the end, doesn't flow"
+  (if (not p)
+      (setq p (point)))
+
+  (if (< 0 p)
+      (eq 'ink-generated (get-text-property p 'face))))
+
+(defun ink-flows-here-p (&optional p)
+  (if (not p)
+      (setq p (point)))
+
+  (setq p (- p 1))
+
+  (is-ink-p p))
+(defalias 'is-ink-before-p 'ink-flows-here-p)
 
 ;; TODO Figure out a way of adding this to buffers that have ink
 ;; I think I have to do a check, actually

@@ -348,6 +348,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (def-right-click-menu rcm-ink
   '(("Cancel" :call identity-command)
+    ("Show pen properties" :if (is-ink-p))
     ("go to prompt for text" :call pen-go-to-prompt-for-ink :if (sor (lax-plist-get (text-properties-at (point)) 'PEN_PROMPT_PATH)))
     ("go to engine for text" :call pen-go-to-engine-for-ink :if (sor (lax-plist-get (text-properties-at (point)) 'PEN_ENGINE)))))
 

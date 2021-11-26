@@ -10,12 +10,13 @@
     (recenter-top-bottom scroll-margin)))
 
 ;; This is horrible
-(defun pen-my-select-regex-at-point (pat &optional literal)
+(defun pen-select-regex-at-point (pat &optional literal)
   (interactive (list (read-string-hist "re: ")))
 
   (deselect)
 
-  (let ((ogpat pat))
+  (let ((ogpos (point))
+        (ogpat pat))
     (if literal
         (setq p (regexp-quote pat)))
 
@@ -40,7 +41,14 @@
                     (not (eolp)))
           (forward-char 1))
         (if (not (string-match pat (buffer-substring (mark) (point))))
-            (backward-char 1))))))
+            (backward-char 1))))
+
+    (if (and mark-active
+             (or
+              (< (mark) (point) ogpos)
+              (< ogpos (mark) (point))))
+        (progn (deactivate-mark)
+               (goto-char ogpos)))))
 
 (defun save-region (&optional sym1 sym2)
   (interactive)
@@ -72,11 +80,14 @@
            (deactivate-mark t))
        res)))
 
-(defun pen-regex-at-point-p (re)
+(defun pen-regex-at-point-p (re &optional literal)
+  (if literal
+      (setq re (regexp-quote re)))
+
   (let ((found)
         (sel))
     (save-excursion-and-region-reliably
-     (pen-my-select-regex-at-point re)
+     (pen-select-regex-at-point re)
      (setq sel (pen-selection))
      (let ((m (mark)))
        (goto-char m)
