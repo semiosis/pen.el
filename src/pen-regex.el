@@ -233,7 +233,6 @@
 (defun pen-eat-in-buffer-or-path-p (s)
   (pen-re-in-buffer-or-path-p (concat "\\b" s "\\b")))
 
-
 (defun pen-regex-match-string-1 (pat s)
   "Get first match from substring"
   (save-match-data
