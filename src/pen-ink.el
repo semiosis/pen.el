@@ -130,7 +130,17 @@
                           text
                           (pen-selection)))
                    (data (or data
-                             pen-last-prompt-data)))
+                             pen-last-prompt-data))
+
+                   (data (loop for atp in data collect
+                               (let ((k (car atp))
+                                     (v (cdr atp)))
+                                 (if (stringp k)
+                                     (setq k (intern k))
+                                   k)
+                                 (cons k v))))
+                   ;; TODO Convert all data keys from strings into symbols (if they were string)
+                   )
 
               (if (interactive-p)
                   (progn
