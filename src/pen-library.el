@@ -522,4 +522,14 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
   (cl-loop for nm in pen-prompt-functions collect
            (downcase (replace-regexp-in-string " &key.*" ")" (helpful--signature nm)))))
 
+(defun pen-prev-prop-change (prop)
+  (let ((p (previous-single-property-change (point) prop)))
+    (if p
+        (goto-char p))))
+
+(defun pen-next-prop-change (prop)
+  (let ((p (next-single-property-change (point) prop)))
+    (if p
+        (goto-char p))))
+
 (provide 'pen-library)

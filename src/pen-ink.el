@@ -271,4 +271,12 @@
             (ink-mode)
             (current-buffer))))))
 
+(defun pen-next-ink ()
+  (interactive)
+  (pen-next-prop-change 'PEN_PROMPT))
+
+(defun pen-prev-ink ()
+  (interactive)
+  (pen-prev-prop-change 'PEN_PROMPT))
+
 (provide 'pen-ink)
