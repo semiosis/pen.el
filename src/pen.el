@@ -875,7 +875,8 @@ Reconstruct the entire yaml-ht for a different language."
                                         ;; This is necessary because most modes
                                         ;; do not allow allow you to change the faces.
                                         ("INK_TYPE" . "generated")
-                                        ("PEN_FUNCTION_NAME" . ,func-name)))
+                                        ("PEN_FUNCTION_NAME" . ,func-name)
+                                        ("UUID" . (myuuid))))
 
            (pen-append-to-file
             (concat

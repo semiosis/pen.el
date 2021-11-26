@@ -522,6 +522,15 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
   (cl-loop for nm in pen-prompt-functions collect
            (downcase (replace-regexp-in-string " &key.*" ")" (helpful--signature nm)))))
 
+(defun pen-uuid ()
+  (uuidgen-4))
+
+(defun pen-shorten-for-uuid (s)
+  (substring s 0 8))
+
+(defun pen-uuid-short ()
+  (pen-shorten-for-uuid (uuidgen-4)))
+
 (defun pen-prev-prop-change (prop)
   (let ((p (previous-single-property-change (point) prop)))
     (if p
@@ -532,14 +541,19 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
     (if p
         (goto-char p))))
 
-(defun pen-select-propertised-text (prop)
-  (interactive (list (intern (read-string "prop symbol name: "))))
+(defun pen-select-propertised-text (loc prop)
+  (interactive (list
+                (point)
+                (intern (read-string "prop symbol name: "))))
 
-  (let ((c (point))
-        (val (lax-plist-get (text-properties-at (point)) prop)))
-    (if val)
-    (p (next-single-property-change (point) prop))
-    (if p
-        (goto-char p))))
+  (let ((val (lax-plist-get (text-properties-at (point)) prop)))
+    (goto-char loc)
+
+    (if val
+        (let
+            ((prev (pen-prev-ink))
+             (p (next-single-property-change (point) prop)))
+          (if p
+              (goto-char p))))))
 
 (provide 'pen-library)

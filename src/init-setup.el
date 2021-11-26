@@ -57,6 +57,7 @@
 (package-install 'ace-link)
 (package-install 'mwim)
 (package-install 'unicode-fonts)
+(package-install 'uuidgen)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -106,6 +107,7 @@
 (require 'ace-link)
 (require 'mwim)
 (require 'unicode-fonts)
+(require 'uuidgen)
 
 (require 'pen-custom)
 
