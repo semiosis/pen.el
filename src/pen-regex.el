@@ -15,40 +15,41 @@
 
   (deselect)
 
-  (let ((ogpos (point))
-        (ogpat pat))
-    (if literal
-        (setq p (regexp-quote pat)))
+  (if pat
+      (let ((ogpos (point))
+            (ogpat pat))
+        (if literal
+            (setq p (regexp-quote pat)))
 
-    (while (and (not (looking-at-p pat))
-                (not (bolp)))
-      (backward-char 1))
-    (while (and (looking-at-p pat)
-                (not (bolp)))
-      (backward-char 1))
-    (if (not (looking-at-p pat))
-        (forward-char 1))
+        (while (and (not (looking-at-p pat))
+                    (not (bolp)))
+          (backward-char 1))
+        (while (and (looking-at-p pat)
+                    (not (bolp)))
+          (backward-char 1))
+        (if (not (looking-at-p pat))
+            (forward-char 1))
 
-    (set-mark (point))
+        (set-mark (point))
 
-    (if literal
-        (forward-char (length ogpat))
-      (let ((boundedpat (setq pat (concat "\\`" pat "\\'"))))
-        (while (and (not (string-match pat (buffer-substring (mark) (point))))
-                    (not (eolp)))
-          (forward-char 1))
-        (while (and (string-match pat (buffer-substring (mark) (point)))
-                    (not (eolp)))
-          (forward-char 1))
-        (if (not (string-match pat (buffer-substring (mark) (point))))
-            (backward-char 1))))
+        (if literal
+            (forward-char (length ogpat))
+          (let ((boundedpat (setq pat (concat "\\`" pat "\\'"))))
+            (while (and (not (string-match pat (buffer-substring (mark) (point))))
+                        (not (eolp)))
+              (forward-char 1))
+            (while (and (string-match pat (buffer-substring (mark) (point)))
+                        (not (eolp)))
+              (forward-char 1))
+            (if (not (string-match pat (buffer-substring (mark) (point))))
+                (backward-char 1))))
 
-    (if (and mark-active
-             (or
-              (< (mark) (point) ogpos)
-              (< ogpos (mark) (point))))
-        (progn (deactivate-mark)
-               (goto-char ogpos)))))
+        (if (and mark-active
+                 (or
+                  (< (mark) (point) ogpos)
+                  (< ogpos (mark) (point))))
+            (progn (deactivate-mark)
+                   (goto-char ogpos))))))
 
 (defun save-region (&optional sym1 sym2)
   (interactive)
