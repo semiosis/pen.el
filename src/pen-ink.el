@@ -186,8 +186,12 @@
                           (end))
                       (setq end (length text))
                       (cl-loop for p in data do
-                            (let ((key (car p))
-                                  (val (cdr p)))
+                            (let* ((key (car p))
+                                   (val (cdr p))
+                                   (key
+                                    (if (stringp key)
+                                        (setq key (intern key))
+                                      key)))
                               (put-text-property start end key val text)))
                       (setq ink (format "%S" text))
                       ink))
