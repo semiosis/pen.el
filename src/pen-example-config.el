@@ -221,6 +221,7 @@
           (call-interactively 'pen-add-key-hf)))))
 
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
+(add-hook 'after-init-hook 'pen-final-loads t)
 
 ;; This makes a prefix in the ~/.pen directory for the memoization cache 
 (setq pen-memo-prefix (pen-get-hostname))
