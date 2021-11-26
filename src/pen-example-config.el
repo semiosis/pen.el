@@ -223,6 +223,8 @@
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
 (add-hook 'after-init-hook 'pen-load-config t)
 
+(define-key pen-map (kbd "C-c n") #'nbfs)
+
 ;; This makes a prefix in the ~/.pen directory for the memoization cache 
 (setq pen-memo-prefix (pen-get-hostname))
 
