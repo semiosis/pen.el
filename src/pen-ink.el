@@ -217,11 +217,11 @@
       (-interleave lst (make-list (length lst) nil)))))
 
  ;; (pen-etv (pps (ink-list-all-properties (buffer-string))))
+ ;; (pen-etv (pps (ink-list-all-bad-properties (pen-selected-text nil t))))
  (defun ink-list-all-bad-properties (s)
    (-filter
     (lambda (e)
-      (not (and (stringp (car e))
-                (string-match "^PEN_" (car e)))))
+      (not (string-match "^PEN_" (str (car e)))))
     (-uniq
      (flatten-once
       (cl-loop for inl in (object-intervals s)
@@ -234,6 +234,35 @@
    ink
    ;; (ink-decode-source-buffer)
    ))
+
+(defun ink-list-all-bad-properties (s)
+   (-filter
+    (lambda (e)
+      (not (string-match "^PEN_" (str (car e)))))
+    (-uniq
+     (flatten-once
+      (cl-loop for inl in (object-intervals s)
+               collect
+               (cl-loop for (p v) on (nth 2 inl) while v
+                        collect
+                        (list p v)))))))
+
+(defun ink-list-all-properties-for-selection (&optional s)
+  (interactive (list (pen-selected-text nil t)))
+
+  (if (not s)
+      (setq s (pen-selected-text nil t)))
+
+  (-filter
+   (lambda (e)
+     (string-match "^PEN_" (str (car e))))
+   (-uniq
+    (flatten-once
+     (cl-loop for inl in (object-intervals s)
+              collect
+              (cl-loop for (p v) on (nth 2 inl) while v
+                       collect
+                       (list p v)))))))
 
 (defun ink-decode (text)
   ;; Do not use (pen-selection t)
@@ -278,5 +307,41 @@
 (defun pen-prev-ink ()
   (interactive)
   (pen-prev-prop-change 'PEN_PROMPT))
+
+(defun pen-on-change (start end length &optional content-change-event-fn)
+  "Executed when a file is changed.
+Added to `after-change-functions'."
+  ;; Note:
+  ;;
+  ;; Each function receives three arguments: the beginning and end of the region
+  ;; just changed, and the length of the text that existed before the change.
+  ;; All three arguments are integers. The buffer that has been changed is
+  ;; always the current buffer when the function is called.
+  ;;
+  ;; The length of the old text is the difference between the buffer positions
+  ;; before and after that text as it was before the change. As for the
+  ;; changed text, its length is simply the difference between the first two
+  ;; arguments.
+  ;;
+  ;; So (47 54 0) means add    7 chars starting at pos 47
+  ;; So (47 47 7) means delete 7 chars starting at pos 47
+  (save-match-data
+    (let ((inhibit-quit t)
+          (props
+           (append
+            '(face ink-generated)
+            '(INK_TYPE "generated")
+            (-flatten (ink-list-all-properties-for-selection (buffer-substring start end))))))
+
+      ;; Remove properties from text changed, if it was manually changed
+      (remove-text-properties start end props)
+      ;; (message "%s" (concat "edit" (buffer-substring start end)))
+      )))
+
+;; TODO Figure out a way of adding this to buffers that have ink
+;; I think I have to do a check, actually
+(defun pen-add-ink-change-hook ()
+  (interactive)
+  (add-hook 'after-change-functions 'pen-on-change nil t))
 
 (provide 'pen-ink)
