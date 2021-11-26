@@ -132,7 +132,7 @@
                    (data (or data
                              pen-last-prompt-data))
 
-                   (data (loop for atp in data collect
+                   (data (cl-loop for atp in data collect
                                (let ((k (car atp))
                                      (v (cdr atp)))
                                  (if (stringp k)
