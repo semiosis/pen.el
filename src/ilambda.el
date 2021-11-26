@@ -78,9 +78,12 @@
     (list a (eval a)))
   args))
 
-(defmacro idefun (name-sym args &optional code-or-task task-or-code)
+(defmacro idefun (name-sym &optional args code-or-task task-or-code)
   "Define an imaginary function"
   (cond
+   ((and (not args)
+         (not code-or-task))
+    (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym))))))
    ((and (stringp name-sym)
          (not code-or-task))
     (progn
@@ -98,7 +101,7 @@
  (idefun idoubleit (x)
          "double it"))
 
-(defmacro ilambda (args code-or-task &optional task-or-code name-sym)
+(defmacro ilambda (args &optional code-or-task task-or-code name-sym)
   "Define an imaginary lambda (iλ)"
   (let ((task (if (stringp code-or-task)
                   code-or-task
@@ -107,6 +110,11 @@
                   code-or-task
                 task-or-code)))
     (cond
+     ((and (not args)
+           (not code)
+           (not task))
+      (progn
+        `(ilambda/name ,name-sym)))
      ((and code
            (sor task))
       `(ilambda/task-code ,args ,task ,code ,name-sym))
@@ -156,6 +164,29 @@
             ,,task
             ,',code))))))
 (defalias 'iλ/task-code 'ilambda/task-code)
+
+(defmacro ilambda/name (&optional name-sym)
+  (let ((fsym (or name-sym
+                  'main)))
+    `(lambda (&rest body)
+       (eval
+        ;; imagined by an LM
+        `(ieval/m
+          ;; An function and a function call
+          (,',fsym ,@body)
+          ,,(concat ";; Run function " (symbol-name name-sym)))))))
+(defalias 'iλ/name 'ilambda/code)
+
+(comment
+ (idefun things-to-hex-colors)
+ (idefun thing-to-hex-color (thing))
+ (things-to-hex-colors "watermelon" "apple")
+ (etv (upd (things-to-hex-colors "watermelon" "apple"))))
+
+(comment
+ (ieval/m
+  (thing-to-hex-color thing)
+  ";; thing to hex color"))
 
 (defmacro ilambda/code (args code &optional name-sym)
   (let ((fsym (or name-sym

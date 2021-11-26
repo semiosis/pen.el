@@ -13,7 +13,7 @@
 (defun pen-select-regex-at-point (pat &optional literal)
   (interactive (list (read-string-hist "re: ")))
 
-  (deselect)
+  ;; (deselect)
 
   (if pat
       (let ((ogpos (point))
@@ -44,12 +44,18 @@
             (if (not (string-match pat (buffer-substring (mark) (point))))
                 (backward-char 1))))
 
-        (if (and mark-active
-                 (or
-                  (< (mark) (point) ogpos)
-                  (< ogpos (mark) (point))))
-            (progn (deactivate-mark)
-                   (goto-char ogpos))))))
+        ;; (tv (concat (str (mark)) " " (str (point))))
+
+        ;; (if (and mark-active
+        ;;          (or
+        ;;           (< (mark) (point) ogpos)
+        ;;           (< ogpos (mark) (point))
+        ;;           (not (string-match pat (pen-selected-text)))))
+        ;;     (identity)
+        ;;   ;; (progn (deactivate-mark)
+        ;;   ;;        (goto-char ogpos))
+        ;;   )
+        )))
 
 (defun save-region (&optional sym1 sym2)
   (interactive)
