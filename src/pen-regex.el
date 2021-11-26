@@ -252,9 +252,6 @@
       matches)))
 (defalias 'regex-matches 'pen-re-seq)
 
-
-
-
 (defun pen-str-p (s)
   (let ((p (get-path-nocreate))
         (bs (buffer-string)))
