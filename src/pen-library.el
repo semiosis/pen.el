@@ -532,4 +532,13 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
     (if p
         (goto-char p))))
 
+(defun pen-select-propertised-text (prop)
+  (interactive (list (intern (read-string "prop symbol name: "))))
+  (let ((c (point))
+        (val (lax-plist-get (text-properties-at (point)) prop)))
+    (if val)
+    (p (next-single-property-change (point) prop))
+    (if p
+        (goto-char p))))
+
 (provide 'pen-library)
