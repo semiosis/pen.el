@@ -123,11 +123,11 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 ;; TODO Make this work for the prompt name, too
 (defun pen-go-to-prompt-for-ink ()
   (interactive)
-  (find-file (lax-plist-get (text-properties-at (point)) "PEN_PROMPT_PATH")))
+  (find-file (lax-plist-get (text-properties-at (point)) 'PEN_PROMPT_PATH)))
 
 (defun pen-go-to-engine-for-ink ()
   (interactive)
-  (pen-goto-engine (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")))
+  (pen-goto-engine (lax-plist-get (text-properties-at (point)) 'PEN_ENGINE)))
 
 (defun pen-goto-engine (engine)
   (ignore-errors
@@ -281,9 +281,9 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     ("> cheap" :call rcm-cheap)
     ("> ink"
      :call rcm-ink
-     :if (sor (lax-plist-get (text-properties-at (point)) "PEN_MODEL")
-              (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")
-              (lax-plist-get (text-properties-at (point)) "PEN_LM_COMMAND")))
+     :if (sor (lax-plist-get (text-properties-at (point)) 'PEN_MODEL)
+              (lax-plist-get (text-properties-at (point)) 'PEN_ENGINE)
+              (lax-plist-get (text-properties-at (point)) 'PEN_LM_COMMAND)))
     ("prose"
      ("Cancel" :call identity-command)
      ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
@@ -348,8 +348,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (def-right-click-menu rcm-ink
   '(("Cancel" :call identity-command)
-    ("go to prompt for text" :call pen-go-to-prompt-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_PROMPT_PATH")))
-    ("go to engine for text" :call pen-go-to-engine-for-ink :if (sor (lax-plist-get (text-properties-at (point)) "PEN_ENGINE")))))
+    ("go to prompt for text" :call pen-go-to-prompt-for-ink :if (sor (lax-plist-get (text-properties-at (point)) 'PEN_PROMPT_PATH)))
+    ("go to engine for text" :call pen-go-to-engine-for-ink :if (sor (lax-plist-get (text-properties-at (point)) 'PEN_ENGINE)))))
 
 ;; (define-key pen-map (kbd "H-m") 'right-click-context-menu)
 ;; (define-key pen-map (kbd "C-M-z") 'right-click-context-menu)

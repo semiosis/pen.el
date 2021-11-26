@@ -135,24 +135,24 @@
               (if (interactive-p)
                   (progn
                     (pen-alist-setcdr
-                     'data "PEN_ENGINE"
+                     'data 'PEN_ENGINE
                      (read-string-hist "engine: "
-                                       (cdr (assoc "PEN_ENGINE" data))))
+                                       (cdr (assoc 'PEN_ENGINE data))))
                     (pen-alist-setcdr
-                     'data "PEN_LANGUAGE"
+                     'data 'PEN_LANGUAGE
                      (read-string-hist "language: "
-                                       (cdr (assoc "PEN_LANGUAGE" data))))
+                                       (cdr (assoc 'PEN_LANGUAGE data))))
                     (pen-alist-setcdr
-                     'data "PEN_TOPIC"
+                     'data 'PEN_TOPIC
                      (read-string-hist "topic: "
                                        (or
-                                        (cdr (assoc "PEN_TOPIC" data))
+                                        (cdr (assoc 'PEN_TOPIC data))
                                         (pen-topic t)))))))
 
-            (if (not (sor (cdr (assoc "PEN_ENGINE" data))))
-                (pen-alist-setcdr 'data "PEN_ENGINE" "OpenAI GPT-3"))
-            (if (not (sor (cdr (assoc "PEN_LANGUAGE" data))))
-                (pen-alist-setcdr 'data "PEN_LANGUAGE" "English"))
+            (if (not (sor (cdr (assoc 'PEN_ENGINE data))))
+                (pen-alist-setcdr 'data 'PEN_ENGINE "OpenAI GPT-3"))
+            (if (not (sor (cdr (assoc 'PEN_LANGUAGE data))))
+                (pen-alist-setcdr 'data 'PEN_LANGUAGE "English"))
 
             ;; (cond
             ;;  ((and
