@@ -331,10 +331,13 @@ Added to `after-change-functions'."
            (append
             '(face ink-generated)
             '(INK_TYPE "generated")
-            (-flatten (ink-list-all-properties-for-selection (buffer-substring start end))))))
+            (-flatten (ink-list-all-properties-for-selection (buffer-substring start end)))))
+          (time-diff (- (time-to-seconds) (cdr (assoc "PEN_GEN_TIME" pen-last-prompt-data)))))
 
-      ;; Remove properties from text changed, if it was manually changed
-      ;; (remove-text-properties start end props)
+      ;; This method doesn't really work well, because I may take a while to make the selection
+      (if (< 10 time-diff)
+          ;; Remove properties from text changed, if it was manually changed
+          (remove-text-properties start end props))
 
       ;; To do this, compare the time of the last prompt
       ;; If it was more than 1 second ago, then remove properties
