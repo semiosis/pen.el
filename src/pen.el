@@ -876,7 +876,8 @@ Reconstruct the entire yaml-ht for a different language."
                                         ;; do not allow allow you to change the faces.
                                         ("INK_TYPE" . "generated")
                                         ("PEN_FUNCTION_NAME" . ,func-name)
-                                        ("UUID" . (myuuid))))
+                                        ("PEN_GEN_UUID" . (pen-uuid))
+                                        ("PEN_GEN_TIME" . (time-to-seconds))))
 
            (pen-append-to-file
             (concat
