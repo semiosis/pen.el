@@ -334,7 +334,11 @@ Added to `after-change-functions'."
             (-flatten (ink-list-all-properties-for-selection (buffer-substring start end))))))
 
       ;; Remove properties from text changed, if it was manually changed
-      (remove-text-properties start end props)
+      ;; (remove-text-properties start end props)
+
+      ;; To do this, compare the time of the last prompt
+      ;; If it was more than 1 second ago, then remove properties
+
       ;; (message "%s" (concat "edit" (buffer-substring start end)))
       )))
 

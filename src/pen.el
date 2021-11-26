@@ -831,14 +831,14 @@ Reconstruct the entire yaml-ht for a different language."
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
    `(cl-defun ,func-sym ,(append '(&optional) all-var-syms '(&key
-                                                         no-select-result
-                                                         include-prompt
-                                                         no-gen
-                                                         select-only-match
-                                                         variadic-var
-                                                         inject-gen-start
-                                                         override-prompt
-                                                         force-interactive))
+                                                             no-select-result
+                                                             include-prompt
+                                                             no-gen
+                                                             select-only-match
+                                                             variadic-var
+                                                             inject-gen-start
+                                                             override-prompt
+                                                             force-interactive))
       ,doc
       (interactive ,(cons 'list all-iargs))
 
@@ -871,13 +871,13 @@ Reconstruct the entire yaml-ht for a different language."
                            (pen-expand-template-keyvals it final-defs t final-pipelines)
                            (pen-unonelineify-safe it))))
 
-           (setq pen-last-prompt-data '((face . ink-generated)
+           (setq pen-last-prompt-data `((face . ink-generated)
                                         ;; This is necessary because most modes
                                         ;; do not allow allow you to change the faces.
                                         ("INK_TYPE" . "generated")
-                                        ("PEN_FUNCTION_NAME" . ,func-name)
-                                        ("PEN_GEN_UUID" . (pen-uuid))
-                                        ("PEN_GEN_TIME" . (time-to-seconds))))
+                                        ("PEN_FUNCTION_NAME" . ,,func-name)
+                                        ("PEN_GEN_UUID" . ,(pen-uuid))
+                                        ("PEN_GEN_TIME" . ,(time-to-seconds))))
 
            (pen-append-to-file
             (concat
@@ -1190,10 +1190,10 @@ Reconstruct the entire yaml-ht for a different language."
                   (final-preprocessors
                    ;; Unfortunately, can't do full template expansion here because we don't have vals. final-preprocessors is needed for vals 
                    (cl-loop for fpp in final-preprocessors collect
-                         (if fpp
-                             (--> fpp
-                               (pen-expand-template-keyvals it (-zip-fill "" ',vars vals))
-                               (pen-expand-template-keyvals it (-zip-fill "" ',var-slugs vals))))))
+                            (if fpp
+                                (--> fpp
+                                  (pen-expand-template-keyvals it (-zip-fill "" ',vars vals))
+                                  (pen-expand-template-keyvals it (-zip-fill "" ',var-slugs vals))))))
 
                   ;; preprocess the values of the parameters
                   (vals
