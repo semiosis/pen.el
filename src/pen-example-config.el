@@ -110,7 +110,7 @@
 
 ;; Personal pen.el repository
 (let ((hostpeneldir (f-join user-emacs-directory "host" "pen.el")))
-  (if (f-directory-p (f-join hostpeneldir "pen.el"))
+  (if (f-directory-p (f-join hostpeneldir "src"))
       (setq pen-penel-directory hostpeneldir)
     (setq pen-penel-directory (f-join user-emacs-directory "pen.el"))))
 
