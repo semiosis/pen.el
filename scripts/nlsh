@@ -7,8 +7,19 @@ inside-docker-p() {
     test -f /.dockerenv
 }
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -nv) {
+        export USE_NVC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 if ! inside-docker-p; then
-    pen sh nvc nlsh "$@"
+    cterm-docker nlsh "$@"
+    # pen sh nvc nlsh "$@"
     exit "$?"
 fi
 
