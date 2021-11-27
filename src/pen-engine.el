@@ -25,4 +25,11 @@
          (eval (sor _sym nil)))
   :initialize #'custom-initialize-default)
 
+(defcustom pen-prompt-force-engine-disabled nil
+  "Do not allow prompts to override the engine override"
+  :type 'boolean
+  :group 'pen
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
 (provide 'pen-engine)
