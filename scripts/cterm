@@ -12,16 +12,15 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -nv) {
-        USE_NEOVIM=y
-        shift
-    }
-    ;;
+    # # This does not work because neovim changes the cursor position
+    # -nv) {
+    #     # USE_NEOVIM=y
+    #     shift
+    # }
+    # ;;
 
     *) break;
 esac; done
-
-export USE_NEOVIM
 
 if test "$DO_EXEC" = "y"; then
     CMD="$1"
