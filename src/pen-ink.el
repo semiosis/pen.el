@@ -253,16 +253,20 @@
   (if (not s)
       (setq s (pen-selected-text nil t)))
 
-  (-filter
-   (lambda (e)
-     (string-match "^PEN_" (str (car e))))
-   (-uniq
-    (flatten-once
-     (cl-loop for inl in (object-intervals s)
-              collect
-              (cl-loop for (p v) on (nth 2 inl) while v
-                       collect
-                       (list p v)))))))
+  (let ((props
+         (-filter
+          (lambda (e)
+            (string-match "^PEN_" (str (car e))))
+          (-uniq
+           (flatten-once
+            (cl-loop for inl in (object-intervals s)
+                     collect
+                     (cl-loop for (p v) on (nth 2 inl) while v
+                              collect
+                              (list p v))))))))
+    (if (interactive-p)
+        (pen-etv props)
+      props)))
 
 (defun ink-decode (text)
   ;; Do not use (pen-selection t)
