@@ -416,4 +416,13 @@ widget.  If FILTER is nil, ACTION is always valid.")
     (setq pen-disabled-engines (pen-vector2list (ht-get yaml-ht "disabled-engines")))
     (setq pen-disabled-models (pen-vector2list (ht-get yaml-ht "disabled-models")))))
 
+
+(setq custom-search-field nil)
+(setq custom-unlispify-tag-names nil)
+(setq custom-face-default-form 'selected)
+
+;; this *must* exist. Since "~/" doesn't necessarily exist, I can't use that
+;; (setq initial-buffer-choice "~/")
+(setq initial-buffer-choice nil)
+
 (provide 'pen-custom)
