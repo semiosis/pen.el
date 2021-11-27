@@ -22,7 +22,7 @@ person="$@"
 # }
 
 if test -n "$person"; then
-    pen -ic "(progn (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person"))(delete-other-windows))"
+    pen -ic "(progn (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person" t))(delete-other-windows))"
 else
     pen -ic "(progn (call-interactively 'apostrophe-start-chatbot-from-name)(delete-other-windows))"
 fi
