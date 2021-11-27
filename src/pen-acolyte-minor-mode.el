@@ -16,12 +16,26 @@
 
 (defalias 'yn 'yes-or-no-p)
 
-(defun pen-delete-frame ()
+(defun pen-kill-buffer-and-frame (&optional force)
   (interactive)
   (cond
    ((>= (prefix-numeric-value current-prefix-arg) 4)
     (pen-kill-emacs))
-   (t (if (yn "Close Pen frame?")
+   (t (if (or
+           force
+           (yn "Close Pen buffer and frame?"))
+          (progn
+            (kill-buffer)
+            (delete-frame nil t))))))
+
+(defun pen-delete-frame (&optional force)
+  (interactive)
+  (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 4)
+    (pen-kill-emacs))
+   (t (if (or
+           force
+           (yn "Close Pen frame?"))
           (delete-frame)))
    ;; I need a better way of checking for the main frame
    ;; ((= (length (frame-list)) 1)
