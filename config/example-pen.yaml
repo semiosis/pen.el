@@ -46,6 +46,11 @@ force-n-completions: ~
 # Ink.el adds text properties to the emacs buffer when text has been generated.
 disable-ink: off
 
+# Disable prompt force-engine
+# This can be used to truly force an engine, because individual .prompts may
+# override the global force-engine custom variable with its own force-engine.
+prompt-force-engine-disabled: on
+
 # This is a heuristic used within Pen.el to make select cost-effiient options.
 cost-efficient: on
 
