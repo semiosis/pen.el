@@ -312,48 +312,54 @@
   (interactive)
   (pen-prev-prop-change 'PEN_PROMPT))
 
-(defun ink-get-properties-here (&optional start end)
-  "Remove flyspell overlays in region."
+(defun ink-get-properties-here ()
+  (interactive)
+
+  )
+
+(defun ink-get-region-properties (&optional start end)
   (interactive
    (list
     (if mark-active (region-beginning) (point))
     (if mark-active (region-end) (point))))
 
-  (if (not start)
-      (setq start
-            (if mark-active
-                (region-beginning)
-              (point))))
+  (if mark-active
+      (progn
+        (if (not start)
+            (setq start
+                  (if mark-active
+                      (region-beginning)
+                    (point))))
 
-  (if (not end)
-      (setq end
-            (if mark-active
-                (region-end)
-              start)))
+        (if (not end)
+            (setq end
+                  (if mark-active
+                      (region-end)
+                    start)))
 
-  (if (and
-       (< 1 start)
-       (eq start end))
-      (setq start (- start 1)))
+        (if (and
+             (< 1 start)
+             (eq start end))
+            (setq start (- start 1)))
 
-  (let ((props
-         (cond
-          ((is-ink-p start)
-           (append
-            '(face ink-generated)
-            '(INK_TYPE "generated")
-            (-flatten (ink-list-all-properties-for-selection (buffer-substring start end)))))
-          ((ink-flows-here-p start)
-           (append
-            '(face ink-generated)
-            '(INK_TYPE "generated")
-            (-flatten (ink-list-all-properties-for-selection (buffer-substring (- start 1) (- end 1)))))))))
+        (let ((props
+               (cond
+                ((is-ink-p start)
+                 (append
+                  '(face ink-generated)
+                  '(INK_TYPE "generated")
+                  (-flatten (ink-list-all-properties-for-selection (buffer-substring start end)))))
+                ((ink-flows-here-p start)
+                 (append
+                  '(face ink-generated)
+                  '(INK_TYPE "generated")
+                  (-flatten (ink-list-all-properties-for-selection (buffer-substring (- start 1) (- end 1)))))))))
 
-    (if (and
-         props
-         (interactive-p))
-        (pen-etv props)
-      props)))
+          (if (and
+               props
+               (interactive-p))
+              (pen-etv props)
+            props)))))
 
 (defun pen-on-change (start end length &optional content-change-event-fn)
   "Executed when a file is changed.
