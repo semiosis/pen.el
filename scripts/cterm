@@ -13,7 +13,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -nv) {
-        export USE_NEOVIM=y
+        export USE_NVC=y
         shift
     }
     ;;

@@ -167,7 +167,7 @@ docker() {
             *) shift;;
         esac; done
 
-        if test "$USE_NEOVIM" = "y"; then
+        if test "$USE_NVC" = "y"; then
             set -- nvc "$@"
         fi
 
@@ -206,7 +206,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -nv) {
-        USE_NEOVIM=y
+        USE_NVC=y
         shift
     }
     ;;
@@ -312,7 +312,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-export USE_NEOVIM
+export USE_NVC
 
 if stdin_exists && \
     ! printf -- "%s\n" "$1" | grep -q -P '^pf-' && \
@@ -628,6 +628,7 @@ case "$sn" in
         HAS_TTY=y
         show_banner=n
         PEN_USE_GUI=n
+        export USE_NVC
         # export DEBUG_ABORT=y
         set -- -t -- -e "$@"
     }
@@ -1013,6 +1014,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$OPENAI_API_EL_DIR" && printf -- "%s " -v "$OPENAI_API_EL_DIR:/root/.emacs.d/host/openai-api.el" ) \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
         --env PEN_USE_GUI \
+        --env USE_NVC \
         --env TERM \
         --env USE_NVC \
         $(if test -n "$DISPLAY"; then

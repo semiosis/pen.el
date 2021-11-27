@@ -3,7 +3,7 @@ export TTY
 
 # nsfa needs to be created from within elisp
 
-export USE_NEOVIM
+export USE_NVC
 
 : ${modename:="$1"}
 # script="$(pen-nsfa "$@")"
