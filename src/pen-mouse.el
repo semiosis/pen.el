@@ -49,7 +49,7 @@
 (mouse-wheel-mode 1)
 
 ;; This aborts once
-(defvar pen-mouse-abort-set-point nil)
+;; (defvar pen-mouse-abort-set-point nil)
 
 (defun pen-mouse-set-point (event &optional promote-to-region)
   "Move point to the position clicked on with the mouse.
@@ -66,11 +66,13 @@ point determined by `mouse-select-region-move-to-beginning'."
           (when (> (posn-point (event-start event)) (region-beginning))
             (exchange-point-and-mark))))
 
-    (if (not pen-mouse-abort-set-point)
-        ;; Use event-end in case called from mouse-drag-region.
-        ;; If EVENT is a click, event-end and event-start give same value.
-        (posn-set-point (event-end event)))
-    (setq pen-mouse-abort-set-point nil)))
+    (posn-set-point (event-end event))
+    ;; (if (not pen-mouse-abort-set-point)
+    ;;     ;; Use event-end in case called from mouse-drag-region.
+    ;;     ;; If EVENT is a click, event-end and event-start give same value.
+    ;;     (posn-set-point (event-end event)))
+    ;; (setq pen-mouse-abort-set-point nil)
+    ))
 
 ;; This is to disable right-click from changing the position when mark is active
 (defun mouse-set-point (event &optional promote-to-region)
@@ -94,7 +96,8 @@ point determined by `mouse-select-region-move-to-beginning'."
   (when (or (eq right-click-context-mouse-set-point-before-open-menu 'always)
             (and (null mark-active)
                  (eq right-click-context-mouse-set-point-before-open-menu 'not-region)))
-    (call-interactively #'pen-mouse-set-point))
+    ;; (call-interactively #'pen-mouse-set-point)
+    )
   (right-click-context-menu))
 
 (provide 'pen-mouse)

@@ -444,6 +444,7 @@ Added to `after-change-functions'."
 (defun ink-select-full-result-under-point ()
   "This is based on the regex"
   (interactive)
+  ;; (setq pen-mouse-abort-set-point t)
   (pen-select-regex-at-point (lax-plist-get (text-properties-at (point)) 'PEN_RESULT) t)
   ;; (pen-select-regex-at-point (cdr (assoc "PEN_RESULT" pen-last-prompt-data)) t)
   )
