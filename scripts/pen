@@ -167,6 +167,10 @@ docker() {
             *) shift;;
         esac; done
 
+        if test "$USE_NEOVIM" = "y"; then
+            set -- nvc "$@"
+        fi
+
         # tmux new-window "$@" || tmux new-session "$@"
         "$@"
     else
@@ -197,6 +201,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -n) {
         no=y
+        shift
+    }
+    ;;
+
+    -nv) {
+        USE_NEOVIM=y
         shift
     }
     ;;
@@ -301,6 +311,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+export USE_NEOVIM
 
 if stdin_exists && \
     ! printf -- "%s\n" "$1" | grep -q -P '^pf-' && \
