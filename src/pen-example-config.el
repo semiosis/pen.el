@@ -169,6 +169,10 @@
   (interactive)
   (dired pen-prompts-directory))
 
+(defun pen-acolyte-dired-penel ()
+  (interactive)
+  (dired pen-penel-directory))
+
 (defun pen-acolyte-scratch ()
   (interactive)
   (switch-to-buffer "*scratch*"))
