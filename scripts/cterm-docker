@@ -9,12 +9,10 @@ export USE_NEOVIM
 # script="$(pen-nsfa "$@")"
 bufname="$(p term "$@" | slugify | cut -c 1-30)"
 
-if test "$USE_NEOVIM" = "y"; then
-    neovim="nvc "
-fi
+# neovim cant be run inside emacs without compromising cursor position
 
 # elisp="(pen-term \"$script\" t $modename)$elisp"
-elisp="(pen-term (pen-nsfa $(cmd-nice-posix "$neovim$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname"))$elisp"
+elisp="(pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname"))$elisp"
 
 # oresp -sh "$@"
 pente "$elisp"
