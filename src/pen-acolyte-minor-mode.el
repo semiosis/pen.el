@@ -50,6 +50,8 @@
    (t (if (yn "Quit emacs?")
           (kill-emacs)))))
 
+(define-key pen-map (kbd "M-q") 'pen-kill-buffer-and-frame)
+
 (define-key pen-acolyte-minor-mode-map (kbd "M-q") 'pen-delete-frame)
 (define-key pen-acolyte-minor-mode-map (kbd "M-Q") 'pen-kill-emacs)
 (define-key pen-acolyte-minor-mode-map (kbd "M-p") 'pen-acolyte-dired-prompts)
