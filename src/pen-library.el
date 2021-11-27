@@ -489,7 +489,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 
   ;; This must be a macro so that when mtv is 'called', it gets its interactive status from the its calling function
   `(if (interactive-p)
-       (etv ,o)
+       (pen-etv ,o)
      ,o))
 
 (defun buffer-exists (bufname)

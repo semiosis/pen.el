@@ -1701,7 +1701,7 @@ Reconstruct the entire yaml-ht for a different language."
                               (completion (fz completions nil nil "select part:")))
 
                          (setq final-prompt
-                               ;; (etv (pen-sn "sed -z 's/<:fz-eol>/hello/'" (cat "/tmp/o8EnBA9BpZ")))
+                               ;; (pen-etv (pen-sn "sed -z 's/<:fz-eol>/hello/'" (cat "/tmp/o8EnBA9BpZ")))
                                (concat
                                 (replace-regexp-in-string
                                  "\\(<:fz-eol>\\).*"

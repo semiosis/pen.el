@@ -352,7 +352,7 @@
     (if (and
          props
          (interactive-p))
-        (etv props)
+        (pen-etv props)
       props)))
 
 (defun pen-on-change (start end length &optional content-change-event-fn)

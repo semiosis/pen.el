@@ -181,7 +181,7 @@
 ;;  (idefun things-to-hex-colors)
 ;;  (idefun thing-to-hex-color (thing))
 ;;  (things-to-hex-colors "watermelon" "apple")
-;;  (etv (upd (things-to-hex-colors "watermelon" "apple"))))
+;;  (pen-etv (upd (things-to-hex-colors "watermelon" "apple"))))
 
 ;; (comment
 ;;  (ieval/m
