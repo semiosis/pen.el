@@ -417,6 +417,8 @@
   ;; Overrides
   (define-key pen-map (kbd "H-TAB m") 'pen-complete-medium)
   (define-key pen-map (kbd "H-TAB e") 'pen-customize)
+  ;; TODO Do this for GUI
+  (define-key pen-map (kbd "<H-tab> e") 'pen-customize)
   (define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
   (define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
   (define-key pen-map (kbd "H-TAB y") 'pen-run-analyser-function)
