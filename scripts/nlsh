@@ -38,8 +38,7 @@ case "$sn" in
     *)
 esac
 
-os_or_lang="$1"
-shift
+os_or_lang="$@"
 
 test -n "$os_or_lang" || {
     echo "Requires 1 argument: OS or lang" 1>&2
