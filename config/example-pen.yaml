@@ -13,11 +13,11 @@ libre-only: off
 fav-world-language: English
 fav-programming-language: Emacs Lisp
 
-# This overrides the language model / engine used for prompting functions
-# However, if a .prompt file specifies
-# force-engine, then this override will not
-# override.
-force-engine: OpenAI Codex
+## This overrides the language model / engine used for prompting functions
+## However, if a .prompt file specifies
+## force-engine, then this override will not
+## override.
+#force-engine: OpenAI Codex
 
 # This 
 force-few-completions: off
