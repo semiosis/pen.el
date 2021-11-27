@@ -314,8 +314,14 @@
 
 (defun ink-get-properties-here ()
   (interactive)
-
-  )
+  (let ((props
+         (if mark-active
+             (ink-get-region-properties)
+           (ink-get-region-properties (point) (+ (point) 1)))))
+    (if props
+        (if (interactive-p)
+            (pen-etv props)
+          props))))
 
 (defun ink-get-region-properties (&optional start end)
   (interactive
@@ -323,7 +329,8 @@
     (if mark-active (region-beginning) (point))
     (if mark-active (region-end) (point))))
 
-  (if mark-active
+  (if (or mark-active
+          (not (interactive-p)))
       (progn
         (if (not start)
             (setq start
@@ -349,17 +356,17 @@
                   '(face ink-generated)
                   '(INK_TYPE "generated")
                   (-flatten (ink-list-all-properties-for-selection (buffer-substring start end)))))
-                ((ink-flows-here-p start)
-                 (append
-                  '(face ink-generated)
-                  '(INK_TYPE "generated")
-                  (-flatten (ink-list-all-properties-for-selection (buffer-substring (- start 1) (- end 1)))))))))
+                ;; ((ink-flows-here-p start)
+                ;;  (append
+                ;;   '(face ink-generated)
+                ;;   '(INK_TYPE "generated")
+                ;;   (-flatten (ink-list-all-properties-for-selection (buffer-substring (- start 1) (- end 1))))))
+                )))
 
-          (if (and
-               props
-               (interactive-p))
-              (pen-etv props)
-            props)))))
+          (if props
+              (if (interactive-p)
+                  (pen-etv props)
+                props))))))
 
 (defun pen-on-change (start end length &optional content-change-event-fn)
   "Executed when a file is changed.
