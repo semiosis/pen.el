@@ -12,12 +12,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    # # This does not work because neovim changes the cursor position
-    # -nv) {
-    #     # USE_NEOVIM=y
-    #     shift
-    # }
-    # ;;
+    -nv) {
+        export USE_NEOVIM=y
+        shift
+    }
+    ;;
 
     *) break;
 esac; done
