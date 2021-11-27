@@ -46,6 +46,9 @@ test -n "$os_or_lang" || {
     exit 2
 }
 
+echo Enter your commands in natural language.
+echo
+
 export USE_CONVERSATION_MODE=y
 
 # rlwrap openai-complete.sh prompts/nlsh-2.prompt "$os_or_lang"
