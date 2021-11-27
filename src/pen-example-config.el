@@ -656,6 +656,9 @@
 
 (add-hook 'after-init-hook 'pen-set-faces)
 
+;; Easily kill comint buffers
+(setq kill-buffer-query-functions nil)
+
 ;; The thin client
 (require 'pen-client)
 
