@@ -18,7 +18,7 @@
 
   (let* ((blurb (pf-generate-wiki-blurb-for-a-famous-person/1 name)))
 
-    (let* ((el (pen-snc (pen-cmd "apostrophe" "-getcomintcmd" name "" blurb))))
+    (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
       (pen-e-sps (pen-lm (pen-eval-string el))))))
 
 (defun apostrophe-start-chatbot-from-selection (text)
@@ -39,9 +39,9 @@
     (never ((sme (eval `(upd (pf-who-is-the-subject-matter-expert-for-/1 ,text))))
             (blurb (eval `(upd (pf-generate-wiki-blurb-for-a-famous-person/1 ,sme))))))
 
-    (let* ((el (pen-snc (pen-cmd "apostrophe" "-getcomintcmd" sme "" blurb))))
+    (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" sme "" blurb))))
       ;; TODO Run multiple daemons and run tasks from a pool?
       (pen-e-sps (pen-lm (pen-eval-string el)))
-      (never (sps (cmd "apostrophe" "" blurb))))))
+      (never (sps (pen-cmd "apostrophe-repl" "" blurb))))))
 
 (provide 'pen-apostrophe)
