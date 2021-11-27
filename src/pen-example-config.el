@@ -45,8 +45,10 @@
 (define-key function-key-map (kbd "C-M-\\") 'hyperify)
 
 ;; Is this a good idea?
-(define-key function-key-map (kbd "TAB") 'hyperify)
-(define-key global-map (kbd "TAB") nil)
+;; (define-key function-key-map (kbd "TAB") 'hyperify)
+;; (define-key global-map (kbd "TAB") nil)
+
+(define-key function-key-map (kbd "<backtab>") 'hyperify)
 
 ;; Ensure that you have yamlmod
 
