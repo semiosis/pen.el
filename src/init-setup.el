@@ -58,6 +58,7 @@
 (package-install 'mwim)
 (package-install 'unicode-fonts)
 (package-install 'uuidgen)
+;; (package-install 'selectrum)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -108,6 +109,7 @@
 (require 'mwim)
 (require 'unicode-fonts)
 (require 'uuidgen)
+;; (require 'selectrum)
 
 (require 'pen-custom)
 

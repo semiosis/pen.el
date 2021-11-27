@@ -44,6 +44,10 @@
 (define-key global-map (kbd "C-M-\\") nil) ;Ensure that this bindings isnt taken
 (define-key function-key-map (kbd "C-M-\\") 'hyperify)
 
+;; Is this a good idea?
+(define-key function-key-map (kbd "TAB") 'hyperify)
+(define-key global-map (kbd "TAB") nil)
+
 ;; Ensure that you have yamlmod
 
 ;; https://github.com/perfectayush/emacs-yamlmod
@@ -660,6 +664,23 @@
 (setq kill-buffer-query-functions nil)
 
 (setq initial-major-mode 'text-mode)
+
+(progn
+  ;; selectrum-mouse-highlight
+  ;; selectrum-quick-keys-match
+  ;; selectrum-quick-keys-highlight
+
+  (set-face-foreground 'selectrum-completion-annotation "#262626")
+  (set-face-foreground 'selectrum-completion-docsig "#262626")
+  (set-face-foreground 'selectrum-current-candidate "#262626")
+  (set-face-foreground 'selectrum-group-separator "#262626")
+  (set-face-foreground 'selectrum-group-title "#262626")
+
+  (set-face-background 'selectrum-completion-annotation "#d72f4f")
+  (set-face-background 'selectrum-completion-docsig "#d72f4f")
+  (set-face-background 'selectrum-current-candidate "#d72f4f")
+  (set-face-background 'selectrum-group-separator "#d72f4f")
+  (set-face-background 'selectrum-group-title "#d72f4f"))
 
 ;; The thin client
 (require 'pen-client)
