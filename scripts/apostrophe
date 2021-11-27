@@ -2,9 +2,14 @@
 export TTY
 
 person="$@"
-test -n "$person" || {
-    echo "Person name required as parameter." 12    
-    exit 1
-}
 
-pen -ic apostrophe-start-chatbot-from-name
+# test -n "$person" || {
+#     echo "Person name required as parameter." 12    
+#     exit 1
+# }
+
+if test -n "$person"; then
+    pen -ic "(apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person"))"
+else
+    pen -ic "(call-interactively 'apostrophe-start-chatbot-from-name)"
+fi
