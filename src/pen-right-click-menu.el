@@ -241,6 +241,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
                 (pf-imagine-a-website-from-a-url/1 url :no-select-result t)
                 do (pen-etv (ink-propertise pg)))
         (eww url))))))
+(defalias 'lg-search 'pen-browse-url-for-passage)
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
