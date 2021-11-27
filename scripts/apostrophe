@@ -1,6 +1,19 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nv) {
+        USE_NVC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export USE_NVC
+
 person="$@"
 
 # test -n "$person" || {
