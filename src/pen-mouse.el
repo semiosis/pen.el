@@ -48,7 +48,7 @@
 (mouse-wheel-mode -1)
 (mouse-wheel-mode 1)
 
-(defun my-mouse-set-point (event &optional promote-to-region)
+(defun pen-mouse-set-point (event &optional promote-to-region)
   "Move point to the position clicked on with the mouse.
 This should be bound to a mouse click event type.
 If PROMOTE-TO-REGION is non-nil and event is a multiple-click, select
@@ -79,8 +79,8 @@ point determined by `mouse-select-region-move-to-beginning'."
            (eq (car event)
                'double-down-mouse-1)
            (not mark-active))
-       (my-mouse-set-point event promote-to-region))
-   (my-mouse-set-point event promote-to-region)))
+       (pen-mouse-set-point event promote-to-region))
+   (pen-mouse-set-point event promote-to-region)))
 
 (defun right-click-context-click-menu (_event)
   "Open Right Click Context menu by Mouse Click `EVENT'."
@@ -88,7 +88,7 @@ point determined by `mouse-select-region-move-to-beginning'."
   (when (or (eq right-click-context-mouse-set-point-before-open-menu 'always)
             (and (null mark-active)
                  (eq right-click-context-mouse-set-point-before-open-menu 'not-region)))
-    (call-interactively #'my-mouse-set-point))
+    (call-interactively #'pen-mouse-set-point))
   (right-click-context-menu))
 
 (provide 'pen-mouse)
