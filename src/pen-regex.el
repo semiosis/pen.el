@@ -51,10 +51,8 @@
                   (< (mark) (point) ogpos)
                   (< ogpos (mark) (point))
                   (not (string-match pat (pen-selected-text)))))
-            (identity)
-          ;; (progn (deactivate-mark)
-          ;;        (goto-char ogpos))
-          ))))
+          (progn (deactivate-mark)
+                 (goto-char ogpos))))))
 
 (defun save-region (&optional sym1 sym2)
   (interactive)
