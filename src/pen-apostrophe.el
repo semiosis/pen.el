@@ -4,7 +4,7 @@
 (defun pen-container-running ()
   (pen-snq (cmd "pen" "-running-p")))
 
-(defun apostrophe-start-chatbot-from-name (name)
+(defun apostrophe-start-chatbot-from-name (name &optional auto)
   (interactive (list (read-string-hist "person: ")))
 
   (if (and (not (pen-inside-docker))
@@ -16,10 +16,15 @@
   (if (not name)
       (setq name "Marco Polo"))
 
-  (let* ((blurb (pf-generate-wiki-blurb-for-a-famous-person/1 name)))
+  (if auto
+      (let* ((blurb (car (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result t)))))
 
-    (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
-      (pen-e-sps (pen-lm (pen-eval-string el))))))
+        (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
+          (pen-e-sps (pen-lm (pen-eval-string el)))))
+    (let* ((blurb (pf-generate-wiki-blurb-for-a-famous-person/1 name)))
+
+      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
+        (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
 (defun apostrophe-start-chatbot-from-selection (text)
   (interactive (list (pen-screen-or-selection)))
