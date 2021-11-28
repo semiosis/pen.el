@@ -367,7 +367,6 @@ without any interpretation."
   ;; it's not a total fix. The margin still appears from time to time
   )
 
-
 (defun pen-term-get-line-at-point ()
   (interactive)
   (let* ((row (+ (term-current-row) 1))
