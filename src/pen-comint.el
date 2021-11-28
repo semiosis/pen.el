@@ -13,9 +13,18 @@
                                           (comint-bol))))
                                     (if (< pos (point))
                                         (delete-backward-char 1))))
+   ((derived-mode-p 'term-mode)
+    (let ((pos
+           (save-excursion-and-region-reliably
+            (comint-bol))))
+      (if (< pos (point))
+          (let ((pen-mode nil))
+            (execute-kbd-macro (kbd "C-h"))))))
    (t
-    (let ((pen-mode nil))
-      (execute-kbd-macro (kbd "C-h"))))))
+    (delete-backward-char 1)
+    ;; (let ((pen-mode nil))
+    ;;   (execute-kbd-macro (kbd "C-h")))
+    )))
 
 (define-key pen-map (kbd "DEL") 'pen-comint-del)
 
