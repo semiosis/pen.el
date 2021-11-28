@@ -7,13 +7,15 @@
 (defun pen-comint-del ()
   (interactive)
 
-  (if (derived-mode-p 'comint-mode)
-      (let ((pos
-             (save-excursion-and-region-reliably
-              (comint-bol))))
-        (if (< pos (point))
-            (delete-backward-char 1)))
-    (delete-backward-char 1)))
+  (cond
+   ((derived-mode-p 'comint-mode) (let ((pos
+                                         (save-excursion-and-region-reliably
+                                          (comint-bol))))
+                                    (if (< pos (point))
+                                        (delete-backward-char 1))))
+   (t
+    (let ((pen-mode nil))
+      (execute-kbd-macro (kbd "C-h"))))))
 
 (define-key pen-map (kbd "DEL") 'pen-comint-del)
 
