@@ -23,7 +23,7 @@ export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
 (
 export PEN_USE_GUI=n
-ttyd -p 7681 bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
+ttyd -p 7681 nvc bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
 )
 
 echo "ttyd running on port 7681, serving Pen.el on http"
