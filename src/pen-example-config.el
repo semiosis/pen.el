@@ -450,6 +450,12 @@
   (pen-dk-htab "a" 'pen-company-complete-add)
   (pen-dk-htab "l" 'pen-complete-long)
 
+  (define-key pen-map (kbd "M-1") 'pen-complete-word)
+  (define-key pen-map (kbd "M-2") 'pen-complete-words)
+  (define-key pen-map (kbd "M-3") 'pen-complete-line)
+  (define-key pen-map (kbd "M-4") 'pen-complete-lines)
+  (define-key pen-map (kbd "M-5") 'pen-complete-long)
+
   ;; Treat <S-f9> as a prefix key for pen
   (define-key pen-map (kbd "H-^") 'pen-transform)
   (define-key pen-map (kbd "<S-f9> Y") 'pen-add-to-glossary)
