@@ -700,6 +700,9 @@
 ;;   (set-face-background 'selectrum-group-separator "#d72f4f")
 ;;   (set-face-background 'selectrum-group-title "#d72f4f"))
 
+(require 'spacemacs-dark-theme)
+(load-theme 'spacemacs-dark t)
+
 ;; The thin client
 (require 'pen-client)
 

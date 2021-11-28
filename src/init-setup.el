@@ -59,6 +59,7 @@
 (package-install 'unicode-fonts)
 (package-install 'uuidgen)
 ;; (package-install 'selectrum)
+(package-install 'spacemacs-theme)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -110,6 +111,7 @@
 (require 'unicode-fonts)
 (require 'uuidgen)
 ;; (require 'selectrum)
+(require 'spacemacs-dark-theme)
 
 (require 'pen-custom)
 
