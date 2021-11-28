@@ -3814,6 +3814,7 @@ May use to generate code from comments."
 (require 'pen-looking-glass)
 (require 'pen-buffer-state)
 (require 'pen-apostrophe)
+(require 'pen-scratch)
 
 (defun pen-lsp-explain-error ()
   (interactive)
