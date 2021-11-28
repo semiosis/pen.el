@@ -63,6 +63,8 @@
 (require 'unicode-fonts)
 (require 'uuidgen)
 ;; (require 'selectrum)
+(package-install 'spacemacs-theme)
+(require 'spacemacs-dark-theme)
 
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
       (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))

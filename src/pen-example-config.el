@@ -300,6 +300,18 @@
             (define-key pen-map (kbd ,(concat "M-SPC C-M-i " bind-i)) ,fun))))))
 (defalias 'pen-dk-easy 'pen-define-key-easy)
 
+(defmacro pen-dk-htab (bind fun)
+  ""
+  (append
+   '(progn)
+   (flatten-once
+    (cl-loop for bind-i in
+          (list bind
+                (concat "M-" (s-replace-regexp " " " M-" bind)))
+          collect
+          `((define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
+            (define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun))))))
+
 
 ;; Actually, I want to run prompts this way
 ;; C-M-i is the same as M-C-i. No such thing as C-M-TAB.
@@ -415,26 +427,28 @@
   (pen-dk-easy "w" (dff (pen-etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
 
   ;; Overrides
-  (define-key pen-map (kbd "H-TAB m") 'pen-complete-medium)
-  (define-key pen-map (kbd "H-TAB e") 'pen-customize)
-  ;; TODO Do this for GUI
-  (define-key pen-map (kbd "<H-tab> e") 'pen-customize)
-  (define-key pen-map (kbd "H-TAB g") 'pen-generate-prompt-functions)
-  (define-key pen-map (kbd "H-TAB s") 'pen-filter-with-prompt-function)
-  (define-key pen-map (kbd "H-TAB y") 'pen-run-analyser-function)
-  (define-key pen-map (kbd "H-TAB d") 'pen-run-editing-function)
-  (define-key pen-map (kbd "H-TAB i") 'pen-start-imaginary-interpreter)
-  (define-key pen-map (kbd "H-TAB j") 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
-  (define-key pen-map (kbd "H-TAB r") 'pen-run-prompt-function)
-  (define-key pen-map (kbd "H-TAB R") 'pen-run-prompt-alias)
-  (define-key pen-map (kbd "H-TAB h") 'pen-copy-from-hist)
-  (define-key pen-map (kbd "H-TAB k") 'pen-go-to-last-results-dir)
-  (define-key pen-map (kbd "H-TAB o") 'pen-continue-from-hist)
-  (define-key pen-map (kbd "H-TAB n") 'pen-select-function-from-nl)
+  (pen-dk-htab "m" 'pen-complete-medium)
+  (pen-dk-htab "e" 'pen-customize)
+  (pen-dk-htab "g" 'pen-generate-prompt-functions)
+  (pen-dk-htab "s" 'pen-filter-with-prompt-function)
+  (pen-dk-htab "y" 'pen-run-analyser-function)
+  (pen-dk-htab "d" 'pen-run-editing-function)
+  (pen-dk-htab "i" 'pen-start-imaginary-interpreter)
+  (pen-dk-htab "j" 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
+  (pen-dk-htab "r" 'pen-run-prompt-function)
+  (pen-dk-htab "R" 'pen-run-prompt-alias)
+  (pen-dk-htab "h" 'pen-copy-from-hist)
+  (pen-dk-htab "k" 'pen-go-to-last-results-dir)
+  (pen-dk-htab "o" 'pen-continue-from-hist)
+  (pen-dk-htab "n" 'pen-select-function-from-nl)
+  (pen-dk-htab "H" 'pf-generic-tutor-for-any-topic/2)
+  (pen-dk-htab "p" 'pf-imagine-a-project-template/1)
+  (pen-dk-htab "b" 'pf-generate-the-contents-of-a-new-file/6)
 
-  (define-key pen-map (kbd "H-TAB H") 'pf-generic-tutor-for-any-topic/2)
-  (define-key pen-map (kbd "H-TAB p") 'pf-imagine-a-project-template/1)
-  (define-key pen-map (kbd "H-TAB b") 'pf-generate-the-contents-of-a-new-file/6)
+  (pen-dk-htab "c" 'pen-company-complete)
+  (pen-dk-htab "f" 'pen-company-complete-choose)
+  (pen-dk-htab "a" 'pen-company-complete-add)
+  (pen-dk-htab "l" 'pen-complete-long)
 
   ;; Treat <S-f9> as a prefix key for pen
   (define-key pen-map (kbd "H-^") 'pen-transform)

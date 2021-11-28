@@ -80,14 +80,5 @@
                       nil nil "pen-company-complete add:"))
           pen-company-selected-backends))))
 
-(define-key pen-map (kbd "H-TAB c") 'pen-company-complete)
-(define-key pen-map (kbd "H-TAB f") 'pen-company-complete-choose)
-(define-key pen-map (kbd "H-TAB a") 'pen-company-complete-add)
-(define-key pen-map (kbd "H-TAB l") 'pen-complete-long)
-
-(define-key pen-map (kbd "<H-tab> c") 'pen-company-complete)
-(define-key pen-map (kbd "<H-tab> f") 'pen-company-complete-choose)
-(define-key pen-map (kbd "<H-tab> a") 'pen-company-complete-add)
-(define-key pen-map (kbd "<H-tab> l") 'pen-complete-long)
 
 (provide 'pen-company)
