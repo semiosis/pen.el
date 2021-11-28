@@ -21,7 +21,7 @@ inside-docker-p() {
 drunning=
 docker-running-p() {
     # test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
-    if drunning=y || docker exec "${pen_container_name}" true; then
+    if test "$drunning" = y || docker exec "${pen_container_name}" true; then
         drunning=y
         :
     else
