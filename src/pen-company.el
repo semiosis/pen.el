@@ -80,5 +80,4 @@
                       nil nil "pen-company-complete add:"))
           pen-company-selected-backends))))
 
-
 (provide 'pen-company)
