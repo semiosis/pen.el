@@ -23,7 +23,7 @@ docker-running-p() {
     test "$drunning" = y || test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
     ret="$?"
     if test "$ret" -eq 0; then
-        drunning = y
+        drunning=y
     else
         false
     fi
