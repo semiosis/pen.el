@@ -19,7 +19,8 @@ inside-docker-p() {
 }
 
 docker-running-p() {
-    test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
+    # test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
+    docker exec "${pen_container_name}" true
 }
 
 stdin_exists() {
