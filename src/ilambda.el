@@ -95,6 +95,13 @@
                  `(ilambda ,args ,task-or-code ,more-code :name-sym ,name-sym)))))
 (defalias 'ifun 'idefun)
 
+;; (idefun add-two-numbers)
+;; (upd (add-two-numbers 5 8))
+;; (idefun add-two-numbers (a b))
+;; (upd (add-two-numbers 5 8))
+;; (idefun add-two-numbers (a b) "add a to b")
+;; (upd (add-two-numbers 5 8))
+
 ;; (comment
 ;;  (idefun idoubleit (x)
 ;;          "double it"))
@@ -118,7 +125,7 @@
     ;; (tv (concat "code:" code))
     ;; (tv (concat "task:" task))
 
-    (setq task nil)
+    ;; (setq task nil)
 
     (cond
      ;; This isn't usually called unless an ilambda
@@ -147,8 +154,7 @@
      ((and args (not task) code)
       (progn
         ;; (tv "code")
-        `(ilambda/code ,args ,code ,name-sym)))
-     )))
+        `(ilambda/code ,args ,code ,name-sym))))))
 
 (defalias 'iλ 'ilambda)
 
