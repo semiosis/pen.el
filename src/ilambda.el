@@ -129,20 +129,13 @@
      ((and name-sym args (not (or code task)))
       `(ilambda/name-args ,name-sym ,args))
 
-     ;; TODO
-     ;; ((and code (sor task))
-     ;;  `(ilambda/task-code ,args ,task ,code ,name-sym))
+     ((and args (sor task) code)
+      `(ilambda/task-code ,args ,task ,code ,name-sym))
 
-     ((and
-       args
-       (sor task)
-       (not code))
+     ((and args (sor task) (not code))
       `(ilambda/args-task ,args ,task ,name-sym))
 
-     ((and
-       args
-       (sor task)
-       code)
+     ((and args (not task) code)
       `(ilambda/code ,args ,code ,name-sym)))))
 
 (defalias 'iλ 'ilambda)
@@ -198,6 +191,7 @@
             ,,task
             ,',code))))))
 (defalias 'iλ/task-code 'ilambda/task-code)
+;; (ilambda/task-code (a b) "add two numbers" (+ a b))
 
 
 (defmacro ilambda/name (&optional name-sym)
