@@ -164,7 +164,7 @@
          `(,,fsym ,@,args)
          ,(concat ";; " task))))))
 (defalias 'iλ/task 'ilambda/args-task)
-(appl) (ilambda/args-task ())
+(apply (ilambda/args-task (a b c) "add a b and c") '(1 2 3))
 
 ;; (idefun add-two-numbers (a b))
 
