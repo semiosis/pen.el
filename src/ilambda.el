@@ -74,12 +74,6 @@
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
-;; (comment
-;;  (mapcar
-;;   (lambda (a)
-;;     (list a (eval a)))
-;;   args))
-
 (defmacro idefun (name-sym &optional args task-or-code &rest more-code)
   "Define an imaginary function"
 
@@ -94,17 +88,6 @@
      (function ,(eval
                  `(ilambda ,args ,task-or-code ,more-code :name-sym ,name-sym)))))
 (defalias 'ifun 'idefun)
-
-;; (idefun add-two-numbers)
-;; (upd (add-two-numbers 5 8))
-;; (idefun add-two-numbers (a b))
-;; (upd (add-two-numbers 5 8))
-;; (idefun add-two-numbers (a b) "add a to b")
-;; (upd (add-two-numbers 5 8))
-
-;; (comment
-;;  (idefun idoubleit (x)
-;;          "double it"))
 
 (cl-defmacro ilambda (&optional args task-or-code more-code &key name-sym)
   "Define an imaginary lambda (iλ)"
@@ -130,25 +113,17 @@
        (or (not (or code task))
            (and (not (or args code))
                 task)))
-      (progn
-        ;; (tv "name")
-        `(ilambda/name ,name-sym)))
+      `(ilambda/name ,name-sym))
 
      ;; task is implicitly set
      ((and name-sym (not (or code task)))
-      (progn
-        ;; (tv "name-args")
-        `(ilambda/name-args ,name-sym ,args)))
+      `(ilambda/name-args ,name-sym ,args))
 
      ((and (sor task) code)
-      (progn
-        ;; (tv "task-code")
-        `(ilambda/task-code ,args ,task ,code ,name-sym)))
+      `(ilambda/task-code ,args ,task ,code ,name-sym))
 
      ((and (sor task) (not code))
-      (progn
-        ;; (tv "args-task")
-        `(ilambda/args-task ,args ,task ,name-sym)))
+      `(ilambda/args-task ,args ,task ,name-sym))
 
      ((and (not task) code)
       (progn
@@ -171,33 +146,6 @@
           ,,(concat ";; " task "\n"
                     ";; arguments: " (pp-oneline args)))))))
 (defalias 'iλ/task 'ilambda/args-task)
-;; (apply (ilambda/args-task (a b c) "add a b and c") '(1 2 3))
-
-;; (idefun add-two-numbers (a b))
-
-;; (idefun add-two-numbers (a b))
-
-;; (idefun add-two-numbers)
-;; (add-two-numbers 2 3)
-
-;; (idefun add-two-numbers (a b))
-
-;; (idefun add-two-numbers (a b)
-;;         "add a to b")
-;; (add-two-numbers 5 3)
-
-
-;; (comment
-;;  (ilambda (n) "generate fibonacci sequence"))
-
-;; (comment
-;;  (funcall (ilambda/args-task (n) "generate fibonacci sequence") 5))
-
-;; (defun test-generate-fib ()
-;;   (interactive)
-;;   (idefun generate-fib-sequence (n))
-;;   (pen-etv (generate-fib-sequence 5)))
-
 
 
 (defmacro ilambda/task-code (args task code &optional name-sym)
@@ -215,9 +163,6 @@
             ,',code))))))
 (defalias 'iλ/task-code 'ilambda/task-code)
 
-;; (apply (ilambda/task-code (a b) "add two numbers" (+ a b)) '(3 5))
-
-
 (defmacro ilambda/name (&optional name-sym)
   (let ((fsym (or name-sym
                   'main)))
@@ -230,17 +175,6 @@
           ,,(concat ";; Run function " (symbol-name name-sym)))))))
 (defalias 'iλ/name 'ilambda/name)
 
-;; (comment
-;;  (idefun things-to-hex-colors)
-;;  (idefun thing-to-hex-color (thing))
-;;  (things-to-hex-colors "watermelon" "apple")
-;;  (pen-etv (upd (things-to-hex-colors "watermelon" "apple"))))
-
-;; (comment
-;;  (ieval/m
-;;   (thing-to-hex-color thing)
-;;   ";; thing to hex color"))
-
 (defmacro ilambda/name-args (name-sym args)
   (let ((fsym (or name-sym
                   'main)))
@@ -251,14 +185,6 @@
           ;; An function and a function call
           ,(list ',fsym ,@args)
           ,,(concat ";; Run function " (symbol-name name-sym)))))))
-
-;; (idefun append-lists (a b))
-;; (append-lists '(a b c) '(d e f))
-;; ;; (ilambda (a b))
-;; (idefun list-multiply)
-;; (list-multiply 2 (append-lists '(1 1) '(10 10)))
-;; (idefun lists-multiply (a b))
-;; (lists-multiply '(1 1) '(10 10))
 
 (defmacro ilambda/code (args code &optional name-sym)
   (let ((fsym (or name-sym
@@ -272,20 +198,6 @@
            (defun ,',fsym ,',args
              ,',code))))))
 (defalias 'iλ/code 'ilambda/code)
-
-;; (apply (ilambda/code (a b) (+ a b)) '(1 2))
-
-;; (ilambda/code (a b) (+ a b))
-
-;; Create the lambda to be generated first, and then create ilambda
-;; (comment
-;;  (lambda (x)
-;;    (let ((x (eval x)))
-;;      (eval
-;;       `(ieval/m
-;;         (f ,x)
-;;         (defun f (x)
-;;           (x * x)))))))
 
 (defun test-ilambda/code ()
   (interactive)
@@ -355,33 +267,6 @@
 (defun ieval (expression &optional code-sexp-or-raw)
   "Imaginarily evaluate the expression, given the code-sexp-or-raw and return a real result."
   (eval `(ieval/m ,expression ,code-sexp-or-raw)))
-
-;; (defun test-ieval-1 ()
-;;   (interactive)
-;;   (pen-etv (ieval
-;;         '(double-number 5)
-;;         '(defun double-number (x)
-;;            (x * x)))))
-
-;; (defun test-ieval-2 ()
-;;   (interactive)
-;;   (pen-etv (ieval/m
-;;         (double-number 5)
-;;         (defun double-number (x)
-;;           (x * x)))))
-
-;; (defun test-imacro ()
-;;   ;; (defimacro my/subtract)
-
-;;   (defimacro my/itimes (a b c)
-;;     "multiply three complex numbers")
-;;   (defimacro my/itimes (a b c)))
-
-;; (comment
-;;  (itest "has 5 elements" '(a b c d)))
-
-;; (comment
-;;  (itest (lambda (l) '(= 5 (length l))) '(a b c d)))
 
 ;; TODO Have an NL predicate and also an expression predicate
 (defmacro itest/m (predicate value)
