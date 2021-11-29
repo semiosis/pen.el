@@ -134,15 +134,15 @@
         ;; (tv "name-args")
         `(ilambda/name-args ,name-sym ,args)))
 
-     ;; ((and args (sor task) code)
-     ;;  (progn
-     ;;    ;; (tv "task-code")
-     ;;    `(ilambda/task-code ,args ,task ,code ,name-sym)))
+     ((and args (sor task) code)
+      (progn
+        ;; (tv "task-code")
+        `(ilambda/task-code ,args ,task ,code ,name-sym)))
 
-     ;; ((and args (sor task) (not code))
-     ;;  (progn
-     ;;    ;; (tv "args-task")
-     ;;    `(ilambda/args-task ,args ,task ,name-sym)))
+     ((and args (sor task) (not code))
+      (progn
+        ;; (tv "args-task")
+        `(ilambda/args-task ,args ,task ,name-sym)))
 
      ;; ((and args (not task) code)
      ;;  (progn
@@ -164,6 +164,7 @@
          `(,,fsym ,@,args)
          ,(concat ";; " task))))))
 (defalias 'iλ/task 'ilambda/args-task)
+(appl) (ilambda/args-task ())
 
 ;; (idefun add-two-numbers (a b))
 
