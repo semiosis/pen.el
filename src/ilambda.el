@@ -425,4 +425,6 @@
    (iequal '(lambda (l) '(= 5 (length l)))
             '(a b c d))))
 
+;; (idefun add (a b) "add two numbers")
+
 (provide 'ilambda)
