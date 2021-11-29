@@ -144,10 +144,10 @@
         ;; (tv "args-task")
         `(ilambda/args-task ,args ,task ,name-sym)))
 
-     ;; ((and args (not task) code)
-     ;;  (progn
-     ;;    ;; (tv "code")
-     ;;    `(ilambda/code ,args ,code ,name-sym)))
+     ((and args (not task) code)
+      (progn
+        ;; (tv "code")
+        `(ilambda/code ,args ,code ,name-sym)))
      )))
 
 (defalias 'iλ 'ilambda)
