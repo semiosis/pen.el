@@ -148,7 +148,7 @@
         ;; imagined by an LM
         (ieval/m
          ;; An function and a function call
-         `(,,fsym ',',args)
+         `(,,fsym ,@,args)
          ,(concat ";; " task))))))
 (defalias 'iλ/task 'ilambda/args-task)
 
