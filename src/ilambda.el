@@ -118,24 +118,37 @@
     ;; (tv (concat "code:" code))
     ;; (tv (concat "task:" task))
 
+    (setq task nil)
+
     (cond
      ;; This isn't usually called unless an ilambda
      ;; because task is set from defun
      ((not (or args code task))
-      `(ilambda/name ,name-sym))
+      (progn
+        ;; (tv "name")
+        `(ilambda/name ,name-sym)))
 
      ;; task is implicitly set
      ((and name-sym args (not (or code task)))
-      `(ilambda/name-args ,name-sym ,args))
+      (progn
+        ;; (tv "name-args")
+        `(ilambda/name-args ,name-sym ,args)))
 
-     ((and args (sor task) code)
-      `(ilambda/task-code ,args ,task ,code ,name-sym))
+     ;; ((and args (sor task) code)
+     ;;  (progn
+     ;;    ;; (tv "task-code")
+     ;;    `(ilambda/task-code ,args ,task ,code ,name-sym)))
 
-     ((and args (sor task) (not code))
-      `(ilambda/args-task ,args ,task ,name-sym))
+     ;; ((and args (sor task) (not code))
+     ;;  (progn
+     ;;    ;; (tv "args-task")
+     ;;    `(ilambda/args-task ,args ,task ,name-sym)))
 
-     ((and args (not task) code)
-      `(ilambda/code ,args ,code ,name-sym)))))
+     ;; ((and args (not task) code)
+     ;;  (progn
+     ;;    ;; (tv "code")
+     ;;    `(ilambda/code ,args ,code ,name-sym)))
+     )))
 
 (defalias 'iλ 'ilambda)
 
@@ -207,7 +220,6 @@
           ,,(concat ";; Run function " (symbol-name name-sym)))))))
 (defalias 'iλ/name 'ilambda/name)
 
-
 ;; (comment
 ;;  (idefun things-to-hex-colors)
 ;;  (idefun thing-to-hex-color (thing))
@@ -222,27 +234,21 @@
 (defmacro ilambda/name-args (name-sym args)
   (let ((fsym (or name-sym
                   'main)))
-    `(lambda (args)
-       (eval
-        ;; imagined by an LM
-        `(ieval/m
-          ;; An function and a function call
-          (,',fsym ,,@args)
-          ,,(concat ";; Run function " (symbol-name name-sym)))))))
-;; (ilambda/name-args add (a b))
-
-(defmacro ilambda/args (args &optional name-sym)
-  (let* ((slug (s-replace-regexp "-$" "" (slugify (eval task))))
-         (fsym (or name-sym
-                   (intern slug))))
     `(lambda ,args
        (eval
         ;; imagined by an LM
         `(ieval/m
           ;; An function and a function call
-          (,',fsym ,,@args)
-          ,,(concat ";; " task))))))
-(defalias 'iλ/args 'ilambda/args)
+          ,(list ',fsym ,@args)
+          ,,(concat ";; Run function " (symbol-name name-sym)))))))
+
+;; (idefun append-lists (a b))
+;; (append-lists '(a b c) '(d e f))
+;; ;; (ilambda (a b))
+;; (idefun list-multiply)
+;; (list-multiply 2 (append-lists '(1 1) '(10 10)))
+;; (idefun lists-multiply (a b))
+;; (lists-multiply '(1 1) '(10 10))
 
 (defmacro ilambda/code (args code &optional name-sym)
   (let ((fsym (or name-sym
@@ -251,12 +257,13 @@
        (eval
         ;; imagined by an LM
         `(ieval/m
-          ;; An function and a function call
-          (,',fsym ,@,args)
-          (defun ,',fsym (,@,args)
-            ,',code))))))
+           ;; An function and a function call
+           ,(list ',fsym ,@args)
+           (defun ,',fsym ,',args
+             ,',code))))))
 (defalias 'iλ/code 'ilambda/code)
 
+;; (apply (ilambda/code (a b) (+ a b)) '(1 2))
 
 ;; (ilambda/code (a b) (+ a b))
 
@@ -428,6 +435,6 @@
 
 ;; (idefun pen-add (a b) "add two numbers")
 
-(idefun pen-add (a b) "add two numbers")
+;; (idefun pen-add (a b) "add two numbers")
 
 (provide 'ilambda)
