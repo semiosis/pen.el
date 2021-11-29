@@ -122,15 +122,14 @@
         (setq code `(progn ,@(append code more-code)))
       code)
 
-    ;; (tv (concat "code:" code))
-    ;; (tv (concat "task:" task))
-
-    ;; (setq task nil)
-
     (cond
      ;; This isn't usually called unless an ilambda
      ;; because task is set from defun
-     ((not (or code task))
+     ((and
+       name-sym
+       (or (not (or code task))
+           (and (not (or args code))
+                task)))
       (progn
         ;; (tv "name")
         `(ilambda/name ,name-sym)))
@@ -141,8 +140,7 @@
         ;; (tv "name-args")
         `(ilambda/name-args ,name-sym ,args)))
 
-     ((and (sor task) code
-       )
+     ((and (sor task) code)
       (progn
         ;; (tv "task-code")
         `(ilambda/task-code ,args ,task ,code ,name-sym)))
@@ -170,7 +168,8 @@
           ;; An function and a function call
           ,(list ',fsym ,@args)
           ;; (,',fsym ,@,args)
-          ,,(concat ";; " task))))))
+          ,,(concat ";; " task "\n"
+                    ";; arguments: " (pp-oneline args)))))))
 (defalias 'iλ/task 'ilambda/args-task)
 ;; (apply (ilambda/args-task (a b c) "add a b and c") '(1 2 3))
 
