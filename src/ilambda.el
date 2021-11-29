@@ -122,8 +122,7 @@
      ;; This isn't usually called unless an ilambda
      ;; because task is set from defun
      ((not (or args code task))
-      (progn
-        `(ilambda/name ,name-sym)))
+      `(ilambda/name ,name-sym))
 
      ;; task is implicitly set
      ((and name-sym args (not (or code task)))
@@ -425,6 +424,8 @@
    (iequal '(lambda (l) '(= 5 (length l)))
             '(a b c d))))
 
-;; (idefun add (a b) "add two numbers")
+;; (idefun pen-add (a b) "add two numbers")
+
+(idefun pen-add (a b) "add two numbers")
 
 (provide 'ilambda)
