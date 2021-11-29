@@ -159,12 +159,13 @@
     `(lambda ,args
        (eval
         ;; imagined by an LM
-        (ieval/m
-         ;; An function and a function call
-         `(,,fsym ,@,args)
-         ,(concat ";; " task))))))
+        `(ieval/m
+          ;; An function and a function call
+          ,(list ',fsym ,@args)
+          ;; (,',fsym ,@,args)
+          ,,(concat ";; " task))))))
 (defalias 'iλ/task 'ilambda/args-task)
-(apply (ilambda/args-task (a b c) "add a b and c") '(1 2 3))
+;; (apply (ilambda/args-task (a b c) "add a b and c") '(1 2 3))
 
 ;; (idefun add-two-numbers (a b))
 
@@ -201,12 +202,14 @@
         ;; imagined by an LM
         `(ieval/m
           ;; An function and a function call
-          (,',fsym ,@,args)
-          (defun ,',fsym (,@,args)
+          ,(list ',fsym ,@args)
+          ;; (,',fsym ,@,args)
+          (defun ,',fsym (,@args)
             ,,task
             ,',code))))))
 (defalias 'iλ/task-code 'ilambda/task-code)
-;; (ilambda/task-code (a b) "add two numbers" (+ a b))
+
+(apply (ilambda/task-code (a b) "add two numbers" (+ a b)) '(3 5))
 
 
 (defmacro ilambda/name (&optional name-sym)
