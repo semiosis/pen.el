@@ -712,4 +712,16 @@
 ;; The thin client
 (require 'pen-client)
 
+;; (imacro generate-fibonacci (n))
+
+;; (idefun
+;;  translate-code
+;; 
+;;  (string target-language)
+;;  ;; "Translate STRING from its source language into TARGET-LANGUAGE and output it to the echo area."
+;;  )
+;; 
+;; (translate "def my_function(alpha, papa):" "python to elisp")
+
+
 (provide 'pen-example-config)

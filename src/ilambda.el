@@ -8,6 +8,8 @@
 ;; itransform
 ;; imacro
 
+(require 'cl)
+
 (defmacro comment (&rest body) nil)
 
 (defmacro defimacro (name &rest body)
@@ -78,92 +80,125 @@
 ;;     (list a (eval a)))
 ;;   args))
 
-(defmacro idefun (name-sym &optional args code-or-task task-or-code)
+(defmacro idefun (name-sym &optional args task-or-code &rest more-code)
   "Define an imaginary function"
-  (cond
-   ((and (not args)
-         (not code-or-task))
-    (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym))))))
-   ((and (stringp name-sym)
-         (not code-or-task))
-    (setq code-or-task name-sym)
-    (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym))))))
-   ((and (symbolp name-sym)
-         (not code-or-task))
-    (progn
-      (setq code-or-task (pen-snc "unsnakecase" (symbol-name name-sym))))))
+
+  (if (stringp name-sym)
+      (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym))))))
+
+  (if (and (symbolp name-sym)
+           (not task-or-code))
+      (setq task-or-code (pen-snc "unsnakecase" (symbol-name name-sym))))
+
   `(defalias ',name-sym
      (function ,(eval
-                 `(ilambda ,args ,code-or-task ,task-or-code ,name-sym)))))
+                 `(ilambda ,args ,task-or-code ,more-code :name-sym ,name-sym)))))
 (defalias 'ifun 'idefun)
 
 ;; (comment
 ;;  (idefun idoubleit (x)
 ;;          "double it"))
 
-(defmacro ilambda (args &optional code-or-task task-or-code name-sym)
+(cl-defmacro ilambda (&optional args task-or-code more-code &key name-sym)
   "Define an imaginary lambda (iλ)"
-  (let ((task (if (stringp code-or-task)
-                  code-or-task
-                task-or-code))
-        (code (if (listp code-or-task)
-                  code-or-task
-                task-or-code)))
+  (let* ((task)
+         (code '()))
+
+    (if (stringp task-or-code)
+        (setq task task-or-code)
+      (setq code task-or-code))
+
+    (if (listp task-or-code)
+        (setq code task-or-code))
+
+    (if more-code
+        (setq code `(progn ,@(append code more-code)))
+      code)
+
+    ;; (tv (concat "code:" code))
+    ;; (tv (concat "task:" task))
+
     (cond
-     ((and (not args)
-           (not code)
-           (not task))
+     ;; This isn't usually called unless an ilambda
+     ;; because task is set from defun
+     ((not (or args code task))
       (progn
         `(ilambda/name ,name-sym)))
-     ((and code
-           (sor task))
-      `(ilambda/task-code ,args ,task ,code ,name-sym))
-     ((sor task)
-      `(ilambda/task ,args ,task ,name-sym))
-     ((listp code-or-task)
+
+     ;; task is implicitly set
+     ((and name-sym args (not (or code task)))
+      `(ilambda/name-args ,name-sym ,args))
+
+     ;; TODO
+     ;; ((and code (sor task))
+     ;;  `(ilambda/task-code ,args ,task ,code ,name-sym))
+
+     ((and
+       args
+       (sor task)
+       (not code))
+      `(ilambda/args-task ,args ,task ,name-sym))
+
+     ((and
+       args
+       (sor task)
+       code)
       `(ilambda/code ,args ,code ,name-sym)))))
 
 (defalias 'iλ 'ilambda)
 
-(defmacro ilambda/task (args task &optional name-sym)
+(defmacro ilambda/args-task (args task &optional name-sym)
   (let* ((slug (s-replace-regexp "-$" "" (slugify (eval task))))
          (fsym (or name-sym
                    (intern slug))))
     `(lambda ,args
        (eval
         ;; imagined by an LM
-        `(ieval/m
-          ;; An function and a function call
-          (,',fsym ,,@args)
-          ,,(concat ";; " task))))))
-(defalias 'iλ/task 'ilambda/task)
+        (ieval/m
+         ;; An function and a function call
+         `(,,fsym ',',args)
+         ,(concat ";; " task))))))
+(defalias 'iλ/task 'ilambda/args-task)
+
+;; (idefun add-two-numbers (a b))
+
+;; (idefun add-two-numbers)
+;; (add-two-numbers 2 3)
+
+;; (idefun add-two-numbers (a b))
+
+;; (idefun add-two-numbers (a b)
+;;         "add a to b")
+;; (add-two-numbers 5 3)
+
 
 ;; (comment
 ;;  (ilambda (n) "generate fibonacci sequence"))
 
 ;; (comment
-;;  (funcall (ilambda/task (n) "generate fibonacci sequence") 5))
+;;  (funcall (ilambda/args-task (n) "generate fibonacci sequence") 5))
 
-(defun test-generate-fib ()
-  (interactive)
-  (idefun generate-fib-sequence (n))
-  (pen-etv (generate-fib-sequence 5)))
+;; (defun test-generate-fib ()
+;;   (interactive)
+;;   (idefun generate-fib-sequence (n))
+;;   (pen-etv (generate-fib-sequence 5)))
+
+
 
 (defmacro ilambda/task-code (args task code &optional name-sym)
-  (let* ((slug (s-replace-regexp "-$" "" (slugify (eval task))))
-         (fsym (or
-                name-sym
-                (intern slug))))
+  (let ((fsym (or name-sym
+                  'main)))
     `(lambda ,args
        (eval
         ;; imagined by an LM
         `(ieval/m
           ;; An function and a function call
-          (,',fsym ,,@args)
-          (defun ,',fsym ,',args
+          (,',fsym ,@,args)
+          (defun ,',fsym (,@,args)
             ,,task
             ,',code))))))
 (defalias 'iλ/task-code 'ilambda/task-code)
+
 
 (defmacro ilambda/name (&optional name-sym)
   (let ((fsym (or name-sym
@@ -175,7 +210,8 @@
           ;; An function and a function call
           (,',fsym ,@body)
           ,,(concat ";; Run function " (symbol-name name-sym)))))))
-(defalias 'iλ/name 'ilambda/code)
+(defalias 'iλ/name 'ilambda/name)
+
 
 ;; (comment
 ;;  (idefun things-to-hex-colors)
@@ -188,6 +224,31 @@
 ;;   (thing-to-hex-color thing)
 ;;   ";; thing to hex color"))
 
+(defmacro ilambda/name-args (name-sym args)
+  (let ((fsym (or name-sym
+                  'main)))
+    `(lambda (args)
+       (eval
+        ;; imagined by an LM
+        `(ieval/m
+          ;; An function and a function call
+          (,',fsym (,@,args))
+          ,,(concat ";; Run function " (symbol-name name-sym)))))))
+;; (ilambda/name-args add (a b))
+
+(defmacro ilambda/args (args &optional name-sym)
+  (let* ((slug (s-replace-regexp "-$" "" (slugify (eval task))))
+         (fsym (or name-sym
+                   (intern slug))))
+    `(lambda ,args
+       (eval
+        ;; imagined by an LM
+        `(ieval/m
+          ;; An function and a function call
+          (,',fsym ,,@args)
+          ,,(concat ";; " task))))))
+(defalias 'iλ/args 'ilambda/args)
+
 (defmacro ilambda/code (args code &optional name-sym)
   (let ((fsym (or name-sym
                   'main)))
@@ -196,10 +257,13 @@
         ;; imagined by an LM
         `(ieval/m
           ;; An function and a function call
-          (,',fsym ,,@args)
-          (defun ,',fsym (,',@args)
+          (,',fsym ,@,args)
+          (defun ,',fsym (,@,args)
             ,',code))))))
 (defalias 'iλ/code 'ilambda/code)
+
+
+;; (ilambda/code (a b) (+ a b))
 
 ;; Create the lambda to be generated first, and then create ilambda
 ;; (comment
@@ -228,7 +292,7 @@
 
 (defun ilambda/code-test-1 ()
   (interactive)
-  (pen-etv (mapcar (ilambda/task (x) "double it")
+  (pen-etv (mapcar (ilambda/args-task (x) "double it")
                '(12 4))))
 
 (defun ilambda/code-test-2 ()
