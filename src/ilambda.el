@@ -86,12 +86,12 @@
     (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym))))))
    ((and (stringp name-sym)
          (not code-or-task))
-    (progn
-      (setq code-or-task name-sym)
-      (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym)))))))
+    (setq code-or-task name-sym)
+    (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym))))))
    ((and (symbolp name-sym)
          (not code-or-task))
-    (setq code-or-task (pen-snc "unsnakecase" (symbol-name name-sym)))))
+    (progn
+      (setq code-or-task (pen-snc "unsnakecase" (symbol-name name-sym))))))
   `(defalias ',name-sym
      (function ,(eval
                  `(ilambda ,args ,code-or-task ,task-or-code ,name-sym)))))
