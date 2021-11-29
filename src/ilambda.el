@@ -209,7 +209,7 @@
             ,',code))))))
 (defalias 'iλ/task-code 'ilambda/task-code)
 
-(apply (ilambda/task-code (a b) "add two numbers" (+ a b)) '(3 5))
+;; (apply (ilambda/task-code (a b) "add two numbers" (+ a b)) '(3 5))
 
 
 (defmacro ilambda/name (&optional name-sym)
