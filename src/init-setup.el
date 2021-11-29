@@ -60,6 +60,7 @@
 (package-install 'uuidgen)
 ;; (package-install 'selectrum)
 (package-install 'spacemacs-theme)
+(package-install 'macrostep)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -112,6 +113,7 @@
 (require 'uuidgen)
 ;; (require 'selectrum)
 (require 'spacemacs-dark-theme)
+(require 'macrostep)
 
 (require 'pen-custom)
 
