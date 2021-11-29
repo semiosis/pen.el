@@ -225,7 +225,7 @@
         ;; imagined by an LM
         `(ieval/m
           ;; An function and a function call
-          (,',fsym (,@,args))
+          (,',fsym ,,@args)
           ,,(concat ";; Run function " (symbol-name name-sym)))))))
 ;; (ilambda/name-args add (a b))
 
