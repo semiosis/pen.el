@@ -130,28 +130,29 @@
     (cond
      ;; This isn't usually called unless an ilambda
      ;; because task is set from defun
-     ((not (or args code task))
+     ((not (or code task))
       (progn
         ;; (tv "name")
         `(ilambda/name ,name-sym)))
 
      ;; task is implicitly set
-     ((and name-sym args (not (or code task)))
+     ((and name-sym (not (or code task)))
       (progn
         ;; (tv "name-args")
         `(ilambda/name-args ,name-sym ,args)))
 
-     ((and args (sor task) code)
+     ((and (sor task) code
+       )
       (progn
         ;; (tv "task-code")
         `(ilambda/task-code ,args ,task ,code ,name-sym)))
 
-     ((and args (sor task) (not code))
+     ((and (sor task) (not code))
       (progn
         ;; (tv "args-task")
         `(ilambda/args-task ,args ,task ,name-sym)))
 
-     ((and args (not task) code)
+     ((and (not task) code)
       (progn
         ;; (tv "code")
         `(ilambda/code ,args ,code ,name-sym))))))
