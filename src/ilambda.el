@@ -43,9 +43,9 @@
       ,(cadr body)))))
 (defalias 'imacro 'defimacro)
 
-(defun test-imacro-1 ()
-  (interactive)
-  (imacro/1 get-real-component-from-imaginary-number))
+;; (defun test-imacro-1 ()
+;;   (interactive)
+;;   (imacro/1 get-real-component-from-imaginary-number))
 
 (defmacro imacro/3 (name args docstr)
   "Does not evaluate. It merely generates code."
@@ -350,32 +350,32 @@
    (iequal '(lambda (l) '(= 5 (length l)))
             '(a b c d))))
 
-(defun test-ilambda-thin-client ()
-  (require 'pen-client)
-  (require 'ilambda)
+;; (defun test-ilambda-thin-client ()
+;;   (require 'pen-client)
+;;   (require 'ilambda)
 
-  (setq iλ-thin t)
+;;   (setq iλ-thin t)
 
-  (idefun thing-to-hex-color (thing))
-  (let ((color
-         (thing-to-hex-color "watermelon")))
-    (if (interactive-p)
-        (pen-etv color)
-      color)))
+;;   (idefun thing-to-hex-color (thing))
+;;   (let ((color
+;;          (thing-to-hex-color "watermelon")))
+;;     (if (interactive-p)
+;;         (pen-etv color)
+;;       color)))
 
-(defun test-ilambda-thin-client-2 ()
-  (interactive)
+;; (defun test-ilambda-thin-client-2 ()
+;;   (interactive)
 
-  (require 'pen-client)
-  (require 'ilambda)
+;;   (require 'pen-client)
+;;   (require 'ilambda)
 
-  (setq iλ-thin t)
+;;   (setq iλ-thin t)
 
-  (upd (idefun thing-to-hex-color (thing)))
-  (let ((color
-         (upd (thing-to-hex-color "watermelon"))))
-    (if (interactive-p)
-        (pen-etv color)
-      color)))
+;;   (upd (idefun thing-to-hex-color (thing)))
+;;   (let ((color
+;;          (upd (thing-to-hex-color "watermelon"))))
+;;     (if (interactive-p)
+;;         (pen-etv color)
+;;       color)))
 
 (provide 'ilambda)
