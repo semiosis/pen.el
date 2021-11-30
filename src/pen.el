@@ -852,8 +852,8 @@ Reconstruct the entire yaml-ht for a different language."
                 ;; force-custom, unfortunately disables call-interactively
           ;; i guess that it could also disable other values
       (let* ((is-interactive
-             (or (interactive-p)
-                 force-interactive))
+              (or (interactive-p)
+                  force-interactive))
             (client-fn-name
              (replace-regexp-in-string "^pf-" "pen-fn-" (str ',func-sym)))
             (client-fn-sym
@@ -862,18 +862,19 @@ Reconstruct the entire yaml-ht for a different language."
             (apply client-fn-sym
                    (append
                     (mapcar 'eval ',all-var-syms)
-                    '(:no-select-result no-select-result
-                                        :include-prompt include-prompt
-                                        :no-gen no-gen
-                                        :select-only-match select-only-match
-                                        :variadic-var variadic-var
-                                        :inject-gen-start inject-gen-start
-                                        :override-prompt override-prompt
-                                        :force-interactive is-interactive
-                                        ;; inert for client
-                                        ;; client
-                                        ;; server
-                                        )))
+                    (list
+                     :no-select-result no-select-result
+                     :include-prompt include-prompt
+                     :no-gen no-gen
+                     :select-only-match select-only-match
+                     :variadic-var variadic-var
+                     :inject-gen-start inject-gen-start
+                     :override-prompt override-prompt
+                     :force-interactive is-interactive
+                     ;; inert for client
+                     ;; client
+                     ;; server
+                     )))
           (pen-force-custom
            (cl-macrolet ((expand-template
                           (string-sym)
