@@ -195,7 +195,9 @@
                         force-interactive))
                    (pen-script-name
                     (if (eq 1 (pen-var-value-maybe 'force-n-completions))
-                        "penf"
+                        ;; TODO Force this somehow to do one completion
+                        ;; Can't use penf, because it's different.
+                        "pena"
                       "pena"))
                    (sn-cmd `(pen-client-ecmd ,pen-script-name ,,remote-fn-name ,@',arg-list-syms)))
               (if server
