@@ -1,0 +1,335 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+aqf() { aqf-nice "$@"; }
+
+# This is for ghci. It needs to run for xs scripts to work
+export DISABLE_FORK_BOMB_PROTECTION=y
+
+# Scripts for x
+
+# xs fish-complete "vim -"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -n) {
+        DRY_RUN=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export DRY_RUN
+
+unset TTY
+
+opt="$1"
+shift
+case "$opt" in
+    eack) {
+        thing="$1"
+        # thing="$(p "$thing" | q -ftln)"
+        shift
+
+        x -d -tmc zsh -nto -e » -s "eack $(aqf "$thing")" -a
+    }
+    ;;
+
+    clj-rebel-key-bindings) {
+        x -sh clj-rebel -e "=>" -s ":repl/key-bindings" -c m -i
+    }
+    ;;
+
+    show-modica-card) {
+        x -sh 3llo -nto -e ">" -s "card show 5c2ee4c5810a0e1f8a56436b" -c m -e ">" -s exit -c m -i
+    }
+    ;;
+
+    fish-complete) {
+        CMD="$(cmd "$@")"
+        : ${CMD:="$(cmdne "$@")"}
+        x -sh "fish" -e ">" -s "$CMD" -c i -i
+    }
+    ;;
+
+    julia_plot) {
+        cd $MYGIT/Evizero/UnicodePlots.jl
+        x -shE "cr Project.toml" -e "using UnicodePlots" -s "scatterplot(randn(50), randn(50), title = \"My Scatterplot\")" -i
+    }
+    ;;
+
+    tu|turtle) {
+        x -shE "ghci" -e ">" -s ":set -XOverloadedStrings" -c m -s "import Turtle" -c m -e ">" -s "echo $(aqf-nice "hi")" -c m -i
+    }
+    ;;
+
+    tu-norc|turtle-norc) {
+        x -sh "ghci -norc" -e ">" -s ":set -XOverloadedStrings" -c m -s "import Turtle" -c m -e "Turtle>" -s "echo $(aqf-nice "hi")" -c m -i
+    }
+    ;;
+
+
+    # # For some unbeknown reason this does not work with babel
+    # #+BEGIN_SRC sh :results verbatim code
+    #   shx xs tu-eval "echo \"hiyo\""
+    # #+END_SRC
+
+    # xs tu-eval "echo \"hiyo\"" | v
+    tu-eval) {
+        cmd="$1"
+        # x -cd "$(pwd)" -sh "ghci" -e "ghci>" -s ":set -XOverloadedStrings" -c m -s "import Turtle" -c m -s "$cmd" -c m -i
+        # x -d -tmc zsh -nto -e » -s "eack $(aqf "$thing")" -a
+        # x -cd "$(pwd)" -sh "ghci" -e "ghci>" -s ":set -XOverloadedStrings" -c m -s "import Turtle" -c m -s "$cmd" -c m -c d | {
+
+        # Cannot keep the final "-c d" because the pane will be killed
+        # before we cat the pane contents with -o
+        x -cd "$(pwd)" -tmc "ghci" -nto -e "ghci>" -s ":set -XOverloadedStrings" -c m -s "import Turtle" -c m -s "$cmd" -c m -o |
+            {
+                sed '0,/import Turtle/d' |
+                sed -e '1d' -e '$ d'
+            }
+        exit $?
+    }
+    ;;
+
+    # xs tu-eval-norc "echo \"hiyo\"" | v
+    tu-eval-norc) {
+        cmd="$1"
+        # x -cd "$(pwd)" -tmc "ghci -norc" -nto -e "Prelude>" -s ":set -XOverloadedStrings" -c m -s "import Turtle" -c m -s "$cmd" -c m -a
+
+        x -cd "$(pwd)" -tmc "ghci -norc" -nto -e "Prelude>" -s ":set -XOverloadedStrings" -c m -s "import Turtle" -c m -s "$cmd" -c m -o |
+            {
+                sed '0,/import Turtle/d' |
+                sed -e '1d' -e '$ d'
+            }
+        exit $?
+    }
+    ;;
+
+    foldl) {
+        cmd="$1"
+        x -cd "$(pwd)" -sh "ghci" -e ">" -s "foldl (/) 64 [4,2,4]" -c m -i
+    }
+    ;;
+
+    # Show definitions of module
+    hs-browse) {
+        module="$1"
+        babel-ghci ":bro $module" -c d | {
+            sed -n -e "/:bro /,\$p" |
+            sed -e "s/.*:bro [^>]*>\(.*\)/\1/" -e "\$d"
+        }
+    }
+    ;;
+
+    hsdoc) {
+        thing="$1"
+        hsdoc "$thing"
+    }
+    ;;
+
+    \&\&) {
+        cmd="$1"
+        x -cd "$(pwd)" -sh "ghci" -e "ghci>" -s "True && False" -c m -i
+    }
+    ;;
+
+    and) {
+        cmd="$1"
+        x -cd "$(pwd)" -sh "ghci" -e "ghci>" -s "and [True,False]" -c m -i
+    }
+    ;;
+
+    mp|megaparsack) {
+        cmd="$1"
+        # nvt
+        # racket -iI racket
+        x -cd "$(pwd)" -sh "racket -iI racket" -e ">" -s "(require megaparsack megaparsack/text)" -c m -i
+    }
+    ;;
+
+    lazydocker-stop-all-containers) {
+        cmd="$1"
+        unbuffer x -sh lazydocker -e Project -s b -e "stop all containers" -c m -e "Are you sure" -s y -c c -i
+    }
+    ;;
+
+    rkt|racket) {
+        cmd="$1"
+        x -cd "$(pwd)" -sh "racket -iI racket" -e ">" -i
+    }
+    ;;
+
+    trello-show-card) {
+        id="$1"
+        notify-send "Not implemented"
+        exit 0
+
+        # Need to scrape the screen after listing something out and use that to generate a response.
+        x -sh 3llo -e ">" -s "board select" -c m -e Alpha -s "Alpha Sprint" -c m -e ">" -s "card list mine" -c m -i
+    }
+    ;;
+
+    vi-start-shell) {
+        x -sh vi -e "~" -s ":set shell=/bin/bash" -c m -s ":shell" -i
+    }
+    ;;
+
+    trello-my-cards) {
+        x -sh 3llo -e ">" -s "board select" -c m -e Alpha -s "Alpha Sprint" -c m -e ">" -s "card list mine" -c m -i
+    }
+    ;;
+
+    trello-my-cards-tm) {
+        x -d -tmc 3llo -nto -e ">" -s "board select" -c m -e Alpha -s Alpha -c m -e ">" -s "card list mine" -c m -a
+    }
+    ;;
+
+    gq-github) {
+        x -sh "gq-github" -e "gql>" -s "query{viewer{" -s1 -c i -i
+    }
+    ;;
+
+    gore) {
+        x -sh "gore" -e "gore>" -s ":import fmt" -c m -s "fmt.Pri" -c i -c i -i
+    }
+    ;;
+
+    quicklisp-install) {
+        pkg="$1"
+        x -sh quicklisp -e '* ' -s "(ql:quickload \"$pkg\")" -c m -e '* ' -c d -i
+    }
+    ;;
+
+    quicklisp-apropos) {
+        pkg="$1"
+        x -sh quicklisp -e '* ' -s "(ql:system-apropos \"$pkg\")" -c m -e '* ' -c d -i
+    }
+    ;;
+
+    quicklisp-update) {
+        # x -sh quicklisp -e '* ' -s "(progn (ql:update-dist "quicklisp")(ql:update-client))" -c m -e '* ' -c d -i
+        x -sh quicklisp -e '* ' -s "(ql:update-dist \"quicklisp\")" -c m -e "Press Enter" -c m -e '* ' -s "(ql:update-client)" -c m -e '* ' -c d -i
+
+        # Need a conditional expect
+        # ewwlinks +/"This can be built-upon more to really close the error-gap:" "https://gist.github.com/Fluidbyte/6294378"
+    }
+    ;;
+
+    # deprecated, I guess
+    gh) {
+        x -s "gh cs -fs -n 10 \"\\.hs\" \"main.*\\blines\\b\"" -i
+    }
+    ;;
+
+    eww) {
+        url="$1"
+        query="$2"
+
+        # vim +/"(add-hook 'eww-after-render-hook (lm (message \"Finished loading page!\")))" "$MYGIT/config/emacs/config/my-eww.el"
+
+        x -cd "$(pwd)" -sh "eww \"$url\"" -e "Finished loading page!" -c s -s "$query" -c m -i
+    }
+    ;;
+
+    bbs-arcade) {
+        :
+        # x -cd "$(pwd)" -sh "bbs arcade" -e "new user"
+    }
+    ;;
+
+    eww-occur) {
+        url="$1"
+        query="$2"
+        if test -n "$query"; then
+            # x -cd "$(pwd)" -sh "eww \"$url\"" -e "Finished loading page!" -c s -s "$query" -c m -m s -s o -s "$query" -c m -m : -s "(recenter-top)" -c m -i
+            x -cd "$(pwd)" -sh "eww \"$url\"" -e "Finished loading page!" -c s -s "$query" -c m -i
+        else
+            x -cd "$(pwd)" -sh "eww \"$url\"" -e "Finished loading page!" -c m -i
+        fi
+    }
+    ;;
+
+    sqlite-help) {
+        # nvt x -d -tmc sqlite -nto -e ">" -s ".help" -c m -a
+        sqlite3 <<<.help
+    }
+    ;;
+
+    calc-log3-2) {
+        x -sh ecalc -e Emacs -m x -s calc-cls -r "\\([12] total\\)" -c m -s 2 -c m -s 3 -c m -s B -i
+    }
+    ;;
+
+    rosie-rpl) {
+        thing="$1"
+        shift
+
+        x -d -tmc "rosie --rpl $(aqf "d=[:digit:]") repl" -nto -e ">" -s "d" -c m -a
+    }
+    ;;
+
+    eack-top) {
+        thing="$1"
+        # thing="$(p "$thing" | q -ftln)"
+        shift
+
+        x -d -tmc zsh -nto -e » -m "\`" -e » -s "eack --top $(aqf "$thing")" -a
+    }
+    ;;
+
+    g|git) {
+
+        (
+
+        opt2="$1"
+        shift
+        case "$opt2" in
+            A|-A) {
+                # example 1: this adds and starts a git commit message
+                # x -m "\`" -m t -m e -m v -i
+
+                # using tmux, do the full sequence
+                x -d -tmc zsh -nto -e master -m "\`" -m t -m e -m v -e "/tmp/file" -m '$' -ts 'S-F8' -a
+            }
+            ;;
+
+            Am|-zsh-amend) {
+                #x -d -tmc zsh -nto -e master -m "\`" -m t -cm '^' -a
+                # x -d -tmc zsh -nto -e master -m "\`" -m t -s "git amend" -c m -a
+                x -d -tmc zsh -nto -e master -m "\`" -m t -s "git amend" -a
+            }
+            ;;
+
+            template) {
+                :
+            }
+            ;;
+
+            *)
+        esac
+
+        )
+
+    }
+    ;;
+
+    template) {
+        :
+    }
+    ;;
+
+    *)
+esac
