@@ -225,7 +225,7 @@
                       (let* ((result (completing-read ,(concat remote-fn-name ": ") results)))
                         ;; (pen-etv (pen-list2str result))
                         (pen-etv result))
-                    result))))))))))
+                    (car results)))))))))))
 
 (if (not (pen-container-running-p))
     (message "Please start the Pen.el server first by running pen in a terminal.")
