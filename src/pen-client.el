@@ -207,7 +207,7 @@
                            (if (string-equal args "")
                                "'()"
                              (format "'(&optional %s)" args)))
-                          '(
+                          (list
                             :no-select-result no-select-result
                             :include-prompt include-prompt
                             :no-gen no-gen
