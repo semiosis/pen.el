@@ -210,7 +210,8 @@
                         ,(concat remote-fn-name ": ")
                         (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd))))))))
                   (if is-interactive
-                      (pen-etv (pen-list2str result))
+                      ;; (pen-etv (pen-list2str result))
+                      (pen-etv result)
                     result))))))))))
 
 (if (not (pen-container-running-p))
@@ -220,5 +221,9 @@
 (defun pen-test-client-fn ()
   (interactive)
   (pf-very-witty-pick-up-lines-for-a-topic/1 "slovenia" :client t :force-interactive t))
+
+(defun pen-test-client-pickup-lines ()
+  (interactive)
+  (pen-fn-very-witty-pick-up-lines-for-a-topic/1 "slovenia" :force-interactive t))
 
 (provide 'pen-client)
