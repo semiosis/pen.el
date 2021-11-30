@@ -147,6 +147,8 @@
               (replace-regexp-in-string "(\\([^ )]*\\).*" "\\1" (pp-oneline s)))
              (fn-sym
               (intern fn-name))
+             (remote-fn-sym
+              (intern remote-fn-name))
              (args
               (replace-regexp-in-string "^[^ ]* &optional *\\(.*\\))$" "\\1" (pp-oneline s)))
              (arg-list
@@ -161,21 +163,60 @@
                 (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
              (sn-cmd `(pen-client-ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
 
-        (eval
-         `(defun ,fn-sym ,(pen-eval-string
+        (pen-etv
+         `(cl-defun ,fn-sym ,(append
+                              (pen-eval-string
+                               (if (string-equal args "")
+                                   "'()"
+                                 (format "'(&optional %s)" args)))
+                              '(&key
+                                no-select-result
+                                include-prompt
+                                no-gen
+                                select-only-match
+                                variadic-var
+                                inject-gen-start
+                                override-prompt
+                                force-interactive
+                                ;; inert for client
+                                client
+                                server))
+            ,(cons 'interactive (list ilist))
+
+            (let ((is-interactive
+                   (or (interactive-p)
+                       force-interactive)))
+              (if server
+                  (apply remote-fn-sym
+                         (append
+                          (pen-eval-string
                            (if (string-equal args "")
                                "'()"
                              (format "'(&optional %s)" args)))
-            ,(cons 'interactive (list ilist))
-
-            (let ((result
-                   (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
-              (if (interactive-p)
-                  (pen-etv (pen-list2str result))
-                result))))))))
+                          '(:no-select-result no-select-result
+                                              :include-prompt include-prompt
+                                              :no-gen no-gen
+                                              :select-only-match select-only-match
+                                              :variadic-var variadic-var
+                                              :inject-gen-start inject-gen-start
+                                              :override-prompt override-prompt
+                                              :force-interactive is-interactive
+                                              ;; inert for client
+                                              ;; client
+                                              ;; server
+                                              )))
+                (let ((result
+                       (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
+                  (if is-interactive
+                      (pen-etv (pen-list2str result))
+                    result))))))))))
 
 (if (not (pen-container-running-p))
     (message "Please start the Pen.el server first by running pen in a terminal.")
   (pen-client-generate-functions))
+
+(defun pen-test-client-fn ()
+  (interactive)
+  (pf-very-witty-pick-up-lines-for-a-topic/1 "slovenia" :client t :force-interactive t))
 
 (provide 'pen-client)

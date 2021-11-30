@@ -12,6 +12,19 @@
 
 (defmacro comment (&rest body) nil)
 
+(defcustom iλ-thin nil
+  "thin-client mode toggle"
+  :type 'boolean
+  :group 'pen
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
+(defun iλ-list (n type)
+  (pen-single-generation
+   (pf-list-of/2 (str n) (str type)
+                 :no-select-result t
+                 :client iλ-thin)))
+
 (defmacro defimacro (name &rest body)
   "Define imacro"
   (cond
