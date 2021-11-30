@@ -239,20 +239,20 @@
   (interactive)
   (pen-fn-very-witty-pick-up-lines-for-a-topic/1 "slovenia" :force-interactive t))
 
-(defun test-ilambda-thin-client-2 ()
+(defun test-ilambda-thin-client ()
   (interactive)
 
   (eval
    `(progn
-      (load-library "pen-client")
-      (load-library "ilambda")
+      ;; (load-library "pen-client")
+      ;; (load-library "ilambda")
 
       (setq iλ-thin t)
 
-      (upd (idefun thing-to-hex-color (thing)))
+      (idefun thing-to-hex-color (thing))
       (let ((color
              (upd (thing-to-hex-color "watermelon"))))
-        (if (interactive-p)
+        (if ,(interactive-p)
             (pen-etv color)
           color)))))
 
@@ -261,15 +261,16 @@
 
   (eval
    `(progn
-      (load-library "pen-client")
-      (load-library "ilambda")
+      ;; (load-library "pen-client")
+      ;; (load-library "ilambda")
 
       (setq iλ-thin nil)
 
-      (upd (idefun thing-to-hex-color (thing)))
+      (idefun thing-to-hex-color (thing))
+
       (let ((color
              (upd (thing-to-hex-color "watermelon"))))
-        (if (interactive-p)
+        (if ,(interactive-p)
             (pen-etv color)
           color)))))
 
