@@ -222,8 +222,9 @@
                             )))
                 (let* ((results (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,sn-cmd)))))))
                   (if is-interactive
-                      (pen-etv (completing-read ,(concat remote-fn-name ": ") results))
-                    (car results)))))))))))
+                      (pen-etv
+                       (completing-read ,(concat remote-fn-name ": ") results))
+                    results))))))))))
 
 (if (not (pen-container-running-p))
     (message "Please start the Pen.el server first by running pen in a terminal.")
