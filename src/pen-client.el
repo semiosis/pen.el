@@ -222,7 +222,7 @@
                             )))
                 (let* ((results (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,sn-cmd)))))))
                   (if is-interactive
-                      (pen-etv (car (completing-read ,(concat remote-fn-name ": ") results)))
+                      (pen-etv (completing-read ,(concat remote-fn-name ": ") results))
                     (car results)))))))))))
 
 (if (not (pen-container-running-p))
