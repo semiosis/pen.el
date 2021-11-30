@@ -163,7 +163,7 @@
                 (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
              (sn-cmd `(pen-client-ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
 
-        (pen-etv
+        (eval
          `(cl-defun ,fn-sym ,(append
                               (pen-eval-string
                                (if (string-equal args "")
@@ -206,7 +206,9 @@
                                               ;; server
                                               )))
                 (let ((result
-                       (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
+                       (completing-read
+                        ,(concat remote-fn-name ": ")
+                        (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd))))))))
                   (if is-interactive
                       (pen-etv (pen-list2str result))
                     result))))))))))

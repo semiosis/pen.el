@@ -57,7 +57,8 @@
              argstr
              docstr
              :include-prompt t
-             :no-select-result t))))
+             :no-select-result t
+             :client iλ-thin))))
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
@@ -71,7 +72,8 @@
              name
              argstr
              :include-prompt t
-             :no-select-result t))))
+             :no-select-result t
+             :client iλ-thin))))
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
@@ -83,7 +85,8 @@
             (pf-imagine-an-emacs-function/1
              name
              :include-prompt t
-             :no-select-result t))))
+             :no-select-result t
+             :client iλ-thin))))
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
@@ -248,7 +251,9 @@
 (defun ilist (n type-of-thing)
   (interactive (list (read-string-hist "ilist n: ")
                      (read-string-hist "ilist type-of-thing: ")))
-  (pen-single-generation (pf-list-of/2 (str n) (str type-of-thing) :no-select-result t)))
+  (pen-single-generation (pf-list-of/2 (str n) (str type-of-thing)
+                                       :no-select-result t
+                                       :client iλ-thin)))
 
 (defun test-ilist ()
   (interactive)
@@ -272,7 +277,9 @@
                   (pen-single-generation
                    (pf-imagine-evaluating-emacs-lisp/2
                     code-str expression-str
-                    :no-select-result t :select-only-match t)))))
+                    :no-select-result t
+                    :select-only-match t
+                    :client iλ-thin)))))
     (ignore-errors
       (setq result (eval-string (concat "''" result))))
     result))
