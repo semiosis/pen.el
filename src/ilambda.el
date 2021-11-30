@@ -349,4 +349,17 @@
    (iequal '(lambda (l) '(= 5 (length l)))
             '(a b c d))))
 
+(defun test-ilambda-thin-client ()
+  (require 'pen-client)
+  (require 'ilambda)
+
+  (setq iλ-thin t)
+
+  (idefun thing-to-hex-color (thing))
+  (let ((color
+         (thing-to-hex-color "watermelon")))
+    (if (interactive-p)
+        (pen-etv color)
+      color)))
+
 (provide 'ilambda)
