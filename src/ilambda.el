@@ -47,14 +47,16 @@
 ;;   (interactive)
 ;;   (imacro/1 get-real-component-from-imaginary-number))
 
+;; (imacro red-with-addition (l))
+
 (defmacro imacro/3 (name args docstr)
   "Does not evaluate. It merely generates code."
-  (let* ((argstr (apply 'pen-cmd (mapcar 'slugify (mapcar 'str args))))
+  (let* ((argstr (s-join " " (mapcar 'slugify (mapcar 'str args))))
          (bodystr
           (car
            (pen-single-generation
             (pf-imagine-an-emacs-function/3
-             name
+             (str name)
              argstr
              docstr
              :include-prompt t
@@ -65,12 +67,12 @@
 
 (defmacro imacro/2 (name args)
   "Does not evaluate. It merely generates code."
-  (let* ((argstr (apply 'pen-cmd (mapcar 'slugify (mapcar 'str args))))
+  (let* ((argstr (s-join " " (mapcar 'slugify (mapcar 'str args))))
          (bodystr
           (car
            (pen-single-generation
             (pf-imagine-an-emacs-function/2
-             name
+             (str name)
              argstr
              :include-prompt t
              :no-select-result t
@@ -84,7 +86,7 @@
           (car
            (pen-single-generation
             (pf-imagine-an-emacs-function/1
-             name
+             (str name)
              :include-prompt t
              :no-select-result t
              :client iλ-thin))))
