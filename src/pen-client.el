@@ -165,7 +165,9 @@
               (mapcar 'intern arg-list))
              (pen-script-name
               (if (eq 1 (pen-var-value-maybe 'force-n-completions))
-                  "penf"
+                  (progn
+                    (tv "hi")
+                    "penf")
                 "pena"))
              (ilist
               (cons
@@ -236,5 +238,14 @@
 (defun pen-test-client-pickup-lines ()
   (interactive)
   (pen-fn-very-witty-pick-up-lines-for-a-topic/1 "slovenia" :force-interactive t))
+
+(defun test-ilambda-thin-client ()
+  (interactive)
+  (idefun thing-to-hex-color (thing))
+  (let ((color
+         (thing-to-hex-color "watermelon")))
+    (if (interactive-p)
+        (pen-etv color)
+      color)))
 
 (provide 'pen-client)
