@@ -4,6 +4,7 @@
 (require 'pp)
 (require 'json)
 (require 'cl-lib)
+(require 'ilambda)
 
 ;; This file can be loaded by a vanilla emacs
 
