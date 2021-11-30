@@ -155,13 +155,14 @@
               (split-string args))
              (arg-list-syms
               (mapcar 'intern arg-list))
+             (pen-script-name "pena")
              (ilist
               (cons
                'list
                (cl-loop
                 for a in arg-list collect
                 (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
-             (sn-cmd `(pen-client-ecmd "pena" ,remote-fn-name ,@arg-list-syms)))
+             (sn-cmd `(pen-client-ecmd pen-script-name ,remote-fn-name ,@arg-list-syms)))
 
         (eval
          `(cl-defun ,fn-sym ,(append
