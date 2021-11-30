@@ -256,4 +256,21 @@
             (pen-etv color)
           color)))))
 
+(defun test-ilambda-full-client ()
+  (interactive)
+
+  (eval
+   `(progn
+      (load-library "pen-client")
+      (load-library "ilambda")
+
+      (setq iλ-thin nil)
+
+      (upd (idefun thing-to-hex-color (thing)))
+      (let ((color
+             (upd (thing-to-hex-color "watermelon"))))
+        (if (interactive-p)
+            (pen-etv color)
+          color)))))
+
 (provide 'pen-client)
