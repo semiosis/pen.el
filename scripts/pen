@@ -332,6 +332,7 @@ if stdin_exists && \
     ! printf -- "%s\n" "$1" | grep -q -P '^pf-' && \
     ! test "$sn" = penu && \
     ! test "$sn" = pena && \
+    ! test "$sn" = penj && \
     ! test "$sn" = penf; then
 
     fp="$(pen-tf txt)"
@@ -457,9 +458,7 @@ if test "$sn" = pena; then
     sn=penf
     all=y
     output_json=y
-fi
-
-if test "$sn" = penj; then
+elif test "$sn" = penj; then
     sn=penf
     output_json=y
 fi
