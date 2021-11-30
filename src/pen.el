@@ -1627,12 +1627,6 @@ Reconstruct the entire yaml-ht for a different language."
                         nil)
                       ""))
 
-                    (final-stop-sequences
-                     (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
-                                              ',stop-sequences)
-                              collect
-                              (expand-template stsq)))
-
                     (final-stop-patterns
                      (or (pen-var-value-maybe 'stop-patterns)
                          ',stop-patterns))
@@ -1671,6 +1665,17 @@ Reconstruct the entire yaml-ht for a different language."
                            (pen-log "Warning: stop sequence trimmed")
                            (s-left l final-stop-sequence))
                        final-stop-sequence))
+
+                    (final-stop-sequences
+                     (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
+                                              ',stop-sequences)
+                              collect
+                              (expand-template stsq)))
+
+                    (final-stop-sequences
+                     (if (member final-stop-sequence final-stop-sequences)
+                         final-stop-sequences
+                       (cons final-stop-sequence final-stop-sequences)))
 
                     (final-translator
                      (expand-template
