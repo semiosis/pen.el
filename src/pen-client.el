@@ -193,18 +193,19 @@
                            (if (string-equal args "")
                                "'()"
                              (format "'(&optional %s)" args)))
-                          '(:no-select-result no-select-result
-                                              :include-prompt include-prompt
-                                              :no-gen no-gen
-                                              :select-only-match select-only-match
-                                              :variadic-var variadic-var
-                                              :inject-gen-start inject-gen-start
-                                              :override-prompt override-prompt
-                                              :force-interactive is-interactive
-                                              ;; inert for client
-                                              ;; client
-                                              ;; server
-                                              )))
+                          '(
+                            :no-select-result no-select-result
+                            :include-prompt include-prompt
+                            :no-gen no-gen
+                            :select-only-match select-only-match
+                            :variadic-var variadic-var
+                            :inject-gen-start inject-gen-start
+                            :override-prompt override-prompt
+                            :force-interactive is-interactive
+                            ;; inert for client
+                            ;; client
+                            ;; server
+                            )))
                 (let* ((results (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd))))))
                        (result (completing-read ,(concat remote-fn-name ": ") results)))
                   (if is-interactive
