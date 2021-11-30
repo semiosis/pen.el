@@ -205,10 +205,8 @@
                                               ;; client
                                               ;; server
                                               )))
-                (let ((result
-                       (completing-read
-                        ,(concat remote-fn-name ": ")
-                        (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd))))))))
+                (let* ((results (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd))))))
+                       (result (completing-read ,(concat remote-fn-name ": ") results)))
                   (if is-interactive
                       ;; (pen-etv (pen-list2str result))
                       (pen-etv result)
