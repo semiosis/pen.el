@@ -22,7 +22,7 @@
 
 (defun iλ-list (n type)
   (pen-single-generation
-   (pf-list-of/2 (str n) (str type)
+   (pen-fn-list-of/2 (str n) (str type)
                  :no-select-result t
                  :client iλ-thin)))
 
@@ -51,11 +51,11 @@
 
 (defmacro imacro/3 (name args docstr)
   "Does not evaluate. It merely generates code."
-  (let* ((argstr (s-join " " (mapcar 'slugify (mapcar 'str args))))
+  (let* ((argstr (s-join " " (mapcar 'pen-slugify-basic (mapcar 'str args))))
          (bodystr
           (car
            (pen-single-generation
-            (pf-imagine-an-emacs-function/3
+            (pen-fn-imagine-an-emacs-function/3
              (str name)
              argstr
              docstr
@@ -67,11 +67,11 @@
 
 (defmacro imacro/2 (name args)
   "Does not evaluate. It merely generates code."
-  (let* ((argstr (s-join " " (mapcar 'slugify (mapcar 'str args))))
+  (let* ((argstr (s-join " " (mapcar 'pen-slugify-basic (mapcar 'str args))))
          (bodystr
           (car
            (pen-single-generation
-            (pf-imagine-an-emacs-function/2
+            (pen-fn-imagine-an-emacs-function/2
              (str name)
              argstr
              :include-prompt t
@@ -85,7 +85,7 @@
   (let* ((bodystr
           (car
            (pen-single-generation
-            (pf-imagine-an-emacs-function/1
+            (pen-fn-imagine-an-emacs-function/1
              (str name)
              :include-prompt t
              :no-select-result t
@@ -93,15 +93,88 @@
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
+(defun string-empty-or-nil-p (s)
+  (or (not s)
+      (string-empty-p s)))
+
+(defun string-not-empty-nor-nil-p (s)
+  (not (string-empty-or-nil-p s)))
+
+(defun string-first-nonnil-nonempty-string (&rest ss)
+  "Get the first non-nil string."
+  (let ((result))
+    (catch 'bbb
+      (dolist (p ss)
+        (if (string-not-empty-nor-nil-p p)
+            (progn
+              (setq result p)
+              (throw 'bbb result)))))
+    result))
+(defalias 'sor 'string-first-nonnil-nonempty-string)
+
+(defun chomp (str)
+  "Chomp (remove tailing newline from) STR."
+  (replace-regexp-in-string "\n\\'" "" str))
+
+(defun pen-sn-basic (cmd &optional stdin dir)
+  (interactive)
+
+  (let ((output))
+    (if (not cmd)
+        (setq cmd "false"))
+
+    (if (not dir)
+        (setq dir default-directory))
+
+    (let ((default-directory dir))
+      (if (or
+           (and (variable-p 'sh-update)
+                (eval 'sh-update))
+           (>= (prefix-numeric-value current-prefix-arg) 16))
+          (setq cmd (concat "export UPDATE=y; " cmd)))
+
+      (setq tf (make-temp-file "elisp_bash"))
+      (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
+
+      (setq final_cmd (concat "( cd " (pen-q dir) "; " cmd " ) > " tf))
+
+      (shut-up-c
+       (with-temp-buffer
+         (insert (or stdin ""))
+         (shell-command-on-region (point-min) (point-max) final_cmd)))
+      (setq output (slurp-file tf))
+      output)))
+
+(defmacro pen-single-generation (&rest body)
+  "This wraps around pen function calls to make them only create one generation"
+  `(eval
+    `(let ((pen-single-generation-b t)
+           (n-collate 1)
+           (n-completions 1)
+           ;; This is needed because the engine can also force n-completions
+           (force-n-completions 1))
+       ,',@body)))
+
+(defun pen-slugify-basic (input &optional joinlines length)
+  "Slugify input"
+  (interactive)
+  (let ((slug
+         (if joinlines
+             (pen-sn-basic "tr '\n' - | slugify" input)
+           (pen-sn-basic "slugify" input))))
+    (if length
+        (substring slug 0 (- length 1))
+      slug)))
+
 (defmacro idefun (name-sym &optional args task-or-code &rest more-code)
   "Define an imaginary function"
 
   (if (stringp name-sym)
-      (setq name-sym (intern (s-replace-regexp "-$" "" (slugify (str name-sym))))))
+      (setq name-sym (intern (replace-regexp-in-string "-$" "" (pen-slugify-basic (str name-sym))))))
 
   (if (and (symbolp name-sym)
            (not task-or-code))
-      (setq task-or-code (pen-snc "unsnakecase" (symbol-name name-sym))))
+      (setq task-or-code (chomp (pen-sn-basic "unsnakecase" (symbol-name name-sym)))))
 
   `(defalias ',name-sym
      (function ,(eval
@@ -152,7 +225,7 @@
 (defalias 'iλ 'ilambda)
 
 (defmacro ilambda/args-task (args task &optional name-sym)
-  (let* ((slug (s-replace-regexp "-$" "" (slugify (eval task))))
+  (let* ((slug (replace-regexp-in-string "-$" "" (pen-slugify-basic (eval task))))
          (fsym (or name-sym
                    (intern slug))))
     `(lambda ,args
@@ -255,7 +328,7 @@
   (interactive (list (read-string-hist "ilist n: ")
                      (read-string-hist "ilist type-of-thing: ")))
   (pen-single-generation
-   (pf-list-of/2 (str n) (str type-of-thing)
+   (pen-fn-list-of/2 (str n) (str type-of-thing)
                  :no-select-result t
                  :client iλ-thin)))
 
@@ -279,7 +352,7 @@
            ((listp expression) (concat "'" (pp-oneline expression)))))
          (result (car
                   (pen-single-generation
-                   (pf-imagine-evaluating-emacs-lisp/2
+                   (pen-fn-imagine-evaluating-emacs-lisp/2
                     code-str expression-str
                     :no-select-result t
                     :select-only-match t
