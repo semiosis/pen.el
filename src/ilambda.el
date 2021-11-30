@@ -18,6 +18,7 @@
   :group 'pen
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
+(defalias 'ilambda-thin 'iλ-thin)
 
 (defun iλ-list (n type)
   (pen-single-generation
