@@ -239,13 +239,4 @@
   (interactive)
   (pen-fn-very-witty-pick-up-lines-for-a-topic/1 "slovenia" :force-interactive t))
 
-(defun test-ilambda-thin-client ()
-  (interactive)
-  (idefun thing-to-hex-color (thing))
-  (let ((color
-         (thing-to-hex-color "watermelon")))
-    (if (interactive-p)
-        (pen-etv color)
-      color)))
-
 (provide 'pen-client)
