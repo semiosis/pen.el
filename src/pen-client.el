@@ -244,8 +244,8 @@
 
   (eval
    `(progn
-      (require 'pen-client)
-      (require 'ilambda)
+      (load-library "pen-client")
+      (load-library "ilambda")
 
       (setq iλ-thin t)
 
