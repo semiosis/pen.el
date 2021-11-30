@@ -131,6 +131,14 @@
       (setq l (car l)))
   (mapconcat 'identity (mapcar 'str l) "\n"))
 
+(defun pen-var-value-maybe (sym)
+  (cond
+   ((symbolp sym) (if (variable-p sym)
+                      (eval sym)))
+   ((numberp sym) sym)
+   ((stringp sym) sym)
+   (t sym)))
+
 ;; (pen-fn-translate/3 (buffer-substring (region-beginning) (region-end)) "English" "French")
 (defun pen-client-generate-functions ()
   (interactive)
@@ -155,7 +163,10 @@
               (split-string args))
              (arg-list-syms
               (mapcar 'intern arg-list))
-             (pen-script-name "pena")
+             (pen-script-name
+              (if (eq 1 (pen-var-value-maybe 'force-n-completions))
+                  "penf"
+                "pena"))
              (ilist
               (cons
                'list
