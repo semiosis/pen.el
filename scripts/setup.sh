@@ -77,6 +77,7 @@ test -d glossaries || git clone --depth 1 "https://github.com/semiosis/glossarie
 test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
 
+ln -sf ~/.emacs.d/pen.el/config/tmux.conf ~/.tmux.conf
 ln -sf ~/.emacs.d/pen.el/src/init-setup.el ~/.emacs
 
 mkdir -p "$EMACSD/comint-history"
