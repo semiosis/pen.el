@@ -163,19 +163,12 @@
               (split-string args))
              (arg-list-syms
               (mapcar 'intern arg-list))
-             (pen-script-name
-              (if (eq 1 (pen-var-value-maybe 'force-n-completions))
-                  (progn
-                    (tv "hi")
-                    "penf")
-                "pena"))
              (ilist
               (cons
                'list
                (cl-loop
                 for a in arg-list collect
-                (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")")))))
-             (sn-cmd `(pen-client-ecmd ,pen-script-name ,remote-fn-name ,@arg-list-syms)))
+                (pen-eval-string (concat "'(read-string " (pen-q (concat a ": ")) ")"))))))
 
         (eval
          `(cl-defun ,fn-sym ,(append
@@ -197,9 +190,14 @@
                                 server))
             ,(cons 'interactive (list ilist))
 
-            (let ((is-interactive
-                   (or (interactive-p)
-                       force-interactive)))
+            (let* ((is-interactive
+                    (or (interactive-p)
+                        force-interactive))
+                   (pen-script-name
+                    (if (eq 1 (pen-var-value-maybe 'force-n-completions))
+                        "penf"
+                      "pena"))
+                   (sn-cmd `(pen-client-ecmd ,pen-script-name ,,remote-fn-name ,@',arg-list-syms)))
               (if server
                   (apply remote-fn-sym
                          (append
@@ -220,7 +218,7 @@
                             ;; client
                             ;; server
                             )))
-                (let* ((results (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,,sn-cmd)))))))
+                (let* ((results (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,sn-cmd)))))))
                   (if is-interactive
                       (let* ((result (completing-read ,(concat remote-fn-name ": ") results)))
                         ;; (pen-etv (pen-list2str result))
