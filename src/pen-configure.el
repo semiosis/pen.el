@@ -9,11 +9,11 @@
                         (chomp (str (f-read key-path))))))
     (if maybe-key
         (read-string (format "update %s key: " service-name) maybe-key)
-      (read-string (format "%s key: " service-name)))))
+      (read-string (format "%s key (enter to leave empty): " service-name)))))
 
 (defun pen-add-key (service-name key)
   (interactive (let* ((service-name (read-string "service: "))
-                      (key (pen-read-service-key service-name)))
+                      (key (or (ignore-errors (pen-read-service-key service-name)) "")))
                  (list service-name key)))
   (let ((key-path (f-join user-home-directory ".pen" (format "%s_api_key" service-name))))
     (if (not (f-dir-p penconfdir))
