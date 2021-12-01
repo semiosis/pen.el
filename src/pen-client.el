@@ -26,10 +26,8 @@
   (let ((print-escape-newlines t))
     (mapconcat 'identity (mapcar 'prin1-to-string strings) " ")))
 
-(defun e/escape-string (&rest strings)
-  (let ((print-escape-newlines t))
-    (mapconcat 'identity (mapcar 'prin1-to-string strings) " ")))
-(defalias 'e/q 'e/escape-string)
+(defalias 'e/escape-string 'pen-q)
+(defalias 'e/q 'pen-q)
 
 (defun pen-client-ecmd (&rest args)
   (chomp (mapconcat 'identity (mapcar 'e/q
