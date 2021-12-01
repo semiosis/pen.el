@@ -8,12 +8,6 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-# Consider using this
-# man expect-lite
-
-# Related: scripts using x
-# $HOME/scripts/xs
-
 stdin_exists() {
     ! [ -t 0 ]
 }
@@ -23,36 +17,20 @@ if stdin_exists; then
     exec <`tm-tty`
 fi
 
-# example 1: this adds and starts a git commit message
-# pen-x -m "\`" -m t -m e -m v -i
-
 PANE_ID="$(tmux display-message -p -t $TMUX_PANE '#{pane_id}' 2>/dev/null)"
 WIN_ID="$(tmux display-message -p -t $TMUX_PANE '#{window_id}' 2>/dev/null)"
 
 SHELL=zsh
 
 input_filter() {
-    # I don't want to escape \n
     sed 's/\([[`;$"]\)/\\\1/g'
 
-    # qne
-    # cat
     return 0
 }
 
-# -tmc is evil.
-
-# Examples
-# pen-x -nto -e » -s "pti3\n" -e "In" -s "%matplotlib tk\n" -i
-# pen-x -nto -sh "pti3" -e "In [" -scc c -s yo -scc m -i
-# pen-x -tmc pti3 -nto -e "In [" -scc c -s yo -scc m -i
-# pen-x -h -d -tmc pti3 -nto -e "In [" -scc c -s "%matplotlib tk\n" -scc m -e "In [" -i
-# pen-x -h -d -tmc pti3 -nto -e "In [" -scc c -s "%matplotlib tk\n" -scc m -e "In [" -a
-# pen-x -d -tmc htop -e running -a
-
 export TMUX=
 
-tf_script="$(ux tf script exp | ds xlast 2>/dev/null || echo /dev/null)"
+tf_script="$(pen-tf script exp || echo /dev/null)"
 chmod a+x "$tf_script"
 
 script_append_nonliteral() {
@@ -61,10 +39,41 @@ script_append_nonliteral() {
     return 0
 }
 
+lit() {
+    NEWLINE=y
+    SPACES=n
+
+    while [ $# -gt 0 ]; do opt="$1";
+        case "$opt" in
+            -n) {
+                NEWLINE=n
+                shift
+            }
+            ;;
+
+            -s) {
+                SPACES=y
+                NEWLINE=n
+                shift
+            }
+            ;;
+
+            *) break;
+        esac
+    done
+
+    if test "$NEWLINE" = "y"; then
+        printf -- "%s\n" "$@"
+    else
+        if test "$SPACES" = "y"; then
+            printf -- "%s\n" "$@" | tr -s '\n' ' ' | sed 's/ $//'
+        else
+            printf -- "%s" "$@"
+        fi
+    fi
+}
 
 script_append() {
-    # printf -- "$1" >> "$tf_script"
-    # echo -e "$1" >> "$tf_script"
 
     lit "$1" >> "$tf_script"
 
@@ -72,7 +81,6 @@ script_append() {
 }
 
 script_append "#!/usr/bin/expect -f"
-# script_append "#!/home/shane/scripts/tm-expect -f"
 
 timeout=3600
 uses_tmux=n
@@ -80,7 +88,6 @@ debug_mode=n
 tmux_command=
 attach_tmux=n
 print_output=n
-# respawn_outer=n
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -d) {
         debug_mode=y
@@ -119,8 +126,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    # SHELL is what is used for spawn. Therefore, it can't be an
-    # arbitrary script. It must be a shell.
     -shell) {
         SHELL="$2"
         shift
@@ -138,24 +143,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -sh-) {
         shift
 
-        # save args
         args=("$@")
 
         eval "set -- $(cmd "$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
         command_terms=("$@")
         INIT_SPAWN="$(cmd "$@")"
 
-        # restore args
         set -- "${args[@]}"
 
         eval "set -- $(cmd "$@" | sed -e "s/.*-- //")"
 
-        # cmd "$@"
-        # echo "$#"
-        # exit 0
-
-        # INIT_SPAWN="$2"
-        # shift
     }
     ;;
 
@@ -169,12 +166,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -h) { # hide output until interactive
         script_append "log_user 0"
-        # script_append "stty -echo"
         shift
     }
     ;;
 
-    # This attaches the given window to a hidden tmux session
     -tma) {
         uses_tmux=y
         target="$2"
@@ -184,8 +179,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             exit 1
         fi
 
-        # Now I can tab away from it without the auto resizing not screwing
-        # things up
         x="$(tmux display-message -p -t "$target" '#{window_width}')"
         y="$(tmux display-message -p -t "$target" '#{window_height}')"
         y="$(( y + 1 ))"
@@ -198,7 +191,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    # automate the current window!
     -tmw) {
         uses_tmux=y
         tmux_session="$(tm-new-hidden-link-window "$WIN_ID")"
@@ -220,8 +212,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    # This is evil. Maybe I should remove it.
-    # This creates a tmux session for the program thing
     -tmc) {
         uses_tmux=y
         tmux_session="$(TMUX= tmux new -F "#{session_id}" -P -d)"
@@ -258,14 +248,8 @@ if ! test "$debug_mode" = "y"; then
     exec 2>/dev/null
 fi
 
-# I should design this script first to use tmux
-
-# The final expect script:
-# script=""
-
 read -r -d '' expect_script <<'HEREDOC'
 
-#trap sigwinch and pass it to the child we spawned
 trap {
     set rows [stty rows]
     set cols [stty columns]
@@ -286,18 +270,12 @@ if {$force_conservative} {
     }
 }
 
-# For send -h
 set send_human {.4 .4 .2 .5 100}
 HEREDOC
 script_append "$expect_script"
 
 read -r -d '' expect_script <<HEREDOC
 set ::env(PATH) "$PATH"
-# This is not what you want.
-# set ::env(TTY) "$TTY"
-# I must set the TTY to expect's TTY
-# set ::env(TTY) "$TTY"
-# puts "$::env(TTY)"
 unset ::env(TTY)
 HEREDOC
 script_append "$expect_script"
@@ -308,95 +286,53 @@ match_max 100000
 HEREDOC
 script_append "$expect_script"
 
-# script_append "set SHELL \"\$env(SHELL)\""
 script_append "set SHELL $(aqf "$SHELL")"
-# script_append "spawn -noecho \"\$env(SHELL)\""
 
-# Shell must always be a real shell
-# Because it's used to spawn things.
 if test -z "$INIT_SPAWN"; then
     INIT_SPAWN="$SHELL"
-    # So we don't have zsh starting zsh
     SHELL=sh
 fi
 
 is_stdout_pipe() {
-    # If stout is a pipe
     ! test "$do_unbuffer" = "y" && [[ -p /dev/stdout ]]
 }
 
 script_append "log_user 0"
 if test "$uses_tmux" = "y"; then
-    # sleep
-    # tmux ls > /tmp/tms.txt
     if test "$tmux_attached_init" = y; then
-        # If I put this inside the expect script then how can I get this value back out?
-        # Do I need it? No I don't!
-        #tmux_session="$(tm-new-hidden-link-window "$target")"
-        #tmux_session_qne="$(p "$tmux_session" | input_filter)"
-        #script_append "spawn \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
 
         script_append "set win [exec tm-new-hidden-link-window \"$target\"]"
         script_append "spawn \"tmux\" \"attach\" \"-t\" \"\$win\""
         script_append "sleep 0.1"
     elif [ -n "$tmux_command" ]; then
-            # this does what it's supposed to. the session ID is correct but
-            # it must not be ready. if i call without the target, it
-            # works though. how annoying.
 
-            #script_append "spawn \"tmux\" \"respawn-pane\" \"-t\" \"${tmux_session_qne}:1.0\" \"-k\" \"$tmux_command\" \"\\;\" \"attach\" \"-t\" \"$tmux_session_qne\""
-
-            # TODO For the moment, don't use the target. This is dodgy, I
-            # know. Hmm, it's still not working.
-            # script_append "spawn \"tmux\" \"respawn-pane\" \"-k\" \"$tmux_command\" \"\\;\" \"attach\" \"-t\" \"$tmux_session_qne\""
-
-            # script_append "spawn \"tmux\" \"respawn-pane\" \"-k\" \"$tmux_command\""
-        # It might be slightly more stable with the sleep here.
         script_append "sleep 0.2"
-        # Write tmux explicitly instead of $SHELL
-        # This way I can run the script after printing it to stdout
 
-        # if test "$respawn_outer" = "y"; then
         script_append "spawn \"tmux\" \"respawn-pane\" \"-t\" \"$tmux_session_qne\" \"-k\" $(aqf "$tmux_command" | bs '][')"
-        # fi
 
-        # script_append "sleep 0.5"
-        # Separating the 2 commands appears to make it a little more
-        # stable.
-        # Using \"\$SHELL\" instead of tmux appears to make no
-        # difference here
         script_append "spawn \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
 
-            # script_append "spawn \"tmux\" \"respawn-pane\" \"-k\" \"$tmux_command\" \"\\;\" \"attach\" \"-t\" \"$tmux_session_qne\""
-            # script_append "expect -exact \"sh\""
     else
         script_append "spawn \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
         script_append "expect -exact \"sh\""
     fi
 elif test "$INIT_SPAWN" = "zsh"; then
-    # script_append "spawn \"\$env(SHELL)\""
     script_append "spawn $(aqf "$INIT_SPAWN")"
     script_append "expect -exact \"»\""
 else
     if test -n "$tfstdin" && test -n "$INIT_SPAWN"; then
-        # INIT_SPAWN="$(nsfa -E "cat $tfstdin | $INIT_SPAWN")"
         INIT_SPAWN="cat $tfstdin | $INIT_SPAWN"
     fi
 
     if is_stdout_pipe; then
         tfstdout="$(odn tf txt)"
-        # INIT_SPAWN="$(nsfa -E "cat $tfstdin | $INIT_SPAWN")"
         INIT_SPAWN="$INIT_SPAWN > $tfstdout"
     fi
 
     INIT_SPAWN="$(nsfa -E "$INIT_SPAWN")"
 
-    # script_append "spawn \"\$SHELL\""
-    # This is required if I want to spawn this way:
-    # pen-x -cd "$(pwd)" -sh "racket -iI racket" -e ">" -i
     script_append "spawn $(aqf "$INIT_SPAWN")"
 
-    # script_append "expect -exact \"\r\""
 fi
 script_append "log_user 1"
 
@@ -410,20 +346,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    # loop send
-    # pen-x -shE "tm ss dasht-docsets-install" -ls "y/N" "y\\r" "asdfasdf" -i
-    # xyes dasht-docsets-install
     -ls) { # loop
         expect_a="$(p "$2" | input_filter)"; shift
-        # send_a="$(p "$2" | input_filter)"; shift
         send_a="$2"; shift
 
         expect_b="$(p "$2" | input_filter)"; shift
 
-        # tcl/expect has weird issues with newlines and semicolon placement
-        # exp_continue means loop
         script_append "expect {"
-        # script_append " $(aqf-nice "$expect_a") { send -- $(aqf-nice "$send_a"); exp_continue }; $(aqf-nice "$expect_b") { } }"
         script_append " $(aqf-nice "$expect_a") { send -- \"$send_a\"; exp_continue }; $(aqf-nice "$expect_b") { } }"
 
         shift
@@ -435,10 +364,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         expect_yn="y/N"
 
-        # expect_yn="$(p "$2" | input_filter)"; shift
-
-        # tcl/expect has weird issues with newlines and semicolon placement
-        # exp_continue means loop
         script_append "expect {"
         script_append " $(aqf-nice "$expect_yn") { send $(aqf-nice "y"); exp_continue }; $(aqf-nice "$expect_a") { } }"
 
@@ -448,13 +373,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -erec) { # conditional with raw
         expect_a="$(p "$2" | input_filter)"; shift
-        # raw="$(p "$2" | input_filter)"; shift
         raw="$2"; shift
 
-        # continue
         expect_b="$(p "$2" | input_filter)"; shift
 
-        # tcl/expect has weird issues with newlines and semicolon placement
         script_append "expect {"
         script_append " $(aqf-nice "$expect_b") { }; $(aqf-nice "$expect_a") { $raw } }"
 
@@ -466,10 +388,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         expect_a="$(p "$2" | input_filter)"; shift
         raw="$(p "$2" | input_filter)"; shift
 
-        # continue
         expect_b="$(p "$2" | input_filter)"; shift
 
-        # tcl/expect has weird issues with newlines and semicolon placement
         script_append "expect {"
         script_append " $(aqf-nice "$expect_b") { }; $(aqf-nice "$expect_a") { send $(aqf-nice "$raw") } }"
 
@@ -487,18 +407,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -raw|-w) {
-        # script_append "$2"
-        # I want to be able to make newlines
         script_append_nonliteral "$2"
         shift
         shift
     }
     ;;
 
-    # Not sure if this works
     -r) { # Expect a pattern / regex
         input="$(p "$2" | input_filter)"
-        # input="$2"
 
         script_append "expect -re \"$input\""
         shift
@@ -520,11 +436,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -ur) { # Expect user input matching regex
         input="$(p "$2" | input_filter)"
 
-        # example:
-        # -ur "(.*)\[\r\n]"
-        # pen-x -nto -e » -s "vim\n" -ur "(.*hi.*)" -i
-
-        # script_append "send -- {getctrl {l}}"
         script_append "expect_user -timeout $timeout -re \"$input\";"
         script_append "set user_input \"\$expect_out(1,string)\"" # 1 must be capture group 1. 0 is entire string
         script_append "send -- \"\$user_input\\r\""
@@ -546,7 +457,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    # vim +/"\" F1" "$VIMCONFIG/fixkeymaps-vimrc"
     -f1) {
         script_append "send -- \\033OP"
         shift
@@ -566,7 +476,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -f4) {
-        # send -- "OS"
         script_append "send -- \\033OS"
         shift
     }
@@ -597,12 +506,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -pr) { # Expect user input password matching regex
-        # input="$(p "$2" | input_filter)"
 
         input="$2"
-
-        # example:
-        # -ur "(.*)\[\r\n]"
 
         script_append "stty -echo"
         script_append "expect_user -timeout $timeout -re \"$input\""
@@ -614,7 +519,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    # For some reason this doesn't work with C-g
     -c|-scc) { # Send control character
         if test "$2" = "g"; then
             echo "C-g breaks x" 1>&2
@@ -626,8 +530,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             script_append "send -- $(cchar $char)"
             )
         done
-
-        # script_append "send {getctrl {$2}}"
 
         shift
         shift
@@ -708,11 +610,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -sf|-send-file) { # Send contents of file
         input_fp="$2"
-        # The bs have to be separated
         input_fp="$(printf -- "%s" "$input_fp" | bs "\\" | bs "[" | bs "]")"
-
-        ## tcl
-        ## set somevar [ exec cat "/home/shane/source/git/woodrush/py2hy/src/py2hy/py2hy.hy" ]
 
         script_append "set fp [ exec cat $(aqfd "$input_fp") ]"
         script_append "send -- \$fp"
@@ -734,16 +632,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    # -send can't really handle shell commands well.
-    # For example, if you use z-repl and you send a $ it will not escape
-    # it. If you send an escape then the escape will be escaped.
-    # A workaround is to use -send-file.
     -s|-send) { # Send something
-        # input="$(p "$2" | input_filter)"
 
         input="$2"
 
-        # The bs have to be separated. But don't escape a lone '\'
         if test "$input" = "\\"; then
             script_append "send -- \"\\\\\""
         else
@@ -758,7 +650,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -see) { # Send and expect to see what was sent (slightly more reliable)
         input="$2"
-        # The bs have to be separated
         input="$(printf -- "%s" "$input" | bs "\\" | bs "[" | bs "]")"
 
         script_append "send -- $(aqfd "$input")"
@@ -768,15 +659,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    # Frustratingly, can't work out why this doesn't work
     -ss|-send-slow) { # Send something
-        # input="$(p "$2" | input_filter)"
 
         input="$2"
-        # The bs have to be separated
         input="$(printf -- "%s" "$input" | bs "\\" | bs "[" | bs "]")"
-
-        # v +/"send_slow" "$NOTES/ws/playgrounds/tcl/remember.org"
 
         script_append "set send_slow {1 0.1}"
         script_append "send -s $(aqfd "$input")"
@@ -788,8 +674,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -i) {
         if test "$uses_tmux" = "y"; then
-            # This sleep appears to help the script catch the final
-            # expect statement
             script_append "sleep 0.2"
             script_append "exit"
         else
@@ -803,8 +687,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         if test "$uses_tmux" = "y"; then
             attach_tmux=n
             print_output=y
-            # This sleep appears to help the script catch the final
-            # expect statement
             script_append "sleep 0.2"
             script_append "exit"
         else
@@ -818,8 +700,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         if test "$uses_tmux" = "y"; then
             attach_tmux=y
             print_output=n
-            # This sleep appears to help the script catch the final
-            # expect statement
             script_append "sleep 0.2"
             script_append "exit"
         else
@@ -830,7 +710,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -fc) {
-        # Set some expect options
 
         script_append "set force_conservative 0"
         shift
@@ -838,39 +717,30 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -ts) {
-        # tm n "$opt :: NOT IMPLEMENTED"
-        # Tmux-Send something
 
         input="$(p "$2" | input_filter)"
         script_append "spawn \"tmux\" \"send\" \"-t\" \"${tmux_session_qne}\" \"$input\""
 
-        # script_append "$2"
         shift
         shift
     }
     ;;
 
     -tsl) {
-        # tm n "$opt :: NOT IMPLEMENTED"
-        # Tmux-Send something
 
         input="$(p "$2" | input_filter)"
         script_append "spawn \"tmux\" \"send\" \"-t\" \"${tmux_session_qne}\" -l \"$input\""
 
-        # script_append "$2"
         shift
         shift
     }
     ;;
 
     -tssl) {
-        # tm n "$opt :: NOT IMPLEMENTED"
-        # Tmux-Send something
 
         input="$(p "$2" | input_filter)"
         script_append "spawn \"tm\" \"type\" \"$input\""
 
-        # script_append "$2"
         shift
         shift
     }
@@ -891,8 +761,6 @@ if {[catch {
         expect eof
         close
     } issue]} {
-    # puts "There is a failure and it is ignored"
-    # puts "Reason for failure : $issue"
 }
 HEREDOC
 fi
@@ -903,7 +771,6 @@ printf -- "%s" "$script" >> "$tf_script"
 
 export SHELL
 
-# Needed for recterm
 export WINDOWID
 
 expect_cmd_run() {
@@ -912,8 +779,6 @@ expect_cmd_run() {
         unbuffer expect "$@"
         ret="$?"
     else
-        # If x is being piped into something, ensure we can use the TTY for
-        # now.
         exec 3>&1
         exec 4>&2
         exec 1>"$TTY"
@@ -946,8 +811,6 @@ else
         stty rows $y
         LINES=$y COLUMNS=$x unansiify expect_cmd_run -f "$tf_script"
         )
-        # inbigtty expect -f "$tf_script"
-        # expect_cmd_run -f "$tf_script"
     elif test "$print_output" = "y"; then
         unansiify expect_cmd_run -f "$tf_script" &>/dev/null
     else
@@ -960,11 +823,6 @@ if test -n "$tfstdout"; then
     cat "$tfstdout"
 fi
 
-# The session must be guaranteed to exist before attaching.
-# This is risky
-
-# sleep 1
-
 if ! test "$DRY_RUN" = "y"; then
     if test "$tmux_attached_init" = y; then
         echo "$tmux_session" > /tmp/xx.txt
@@ -973,7 +831,6 @@ if ! test "$DRY_RUN" = "y"; then
         tmux attach -t "$tmux_session"
     elif test "$print_output" = "y"; then
         tm catp "$tmux_session"
-        # cmd tm catp "$tmux_session"
         tmux kill-session -t "$tmux_session"
     elif test "$uses_tmux" = "y"; then
         tmux swap-pane -s "$tmux_session:1.0" -t "$PANE_ID" \; kill-session -t "$tmux_session"
@@ -982,7 +839,6 @@ fi
 
 if ! test "$debug_mode" = "y"; then
     :
-    # trap "rm \"$tf_script\" 2>/dev/null" 0
 else
     echo
     echo "$tf_script" 1>&2
