@@ -198,7 +198,8 @@
 (right-click-context-mode t)
 (pen-acolyte-scratch)
 
-(defun pen-default-add-keys (frame)
+(defun pen-default-add-keys (;; frame
+                             )
   (interactive)
 
   (let ((pen-openai-key-file-path (f-join penconfdir "openai_api_key")))
@@ -233,7 +234,12 @@
             ;; Automatically check if Hf key exists and ask for it otherwise
             (call-interactively 'pen-add-key-hf))))))
 
-(add-hook 'after-make-frame-functions 'pen-default-add-keys)
+(defun pen-delay-add-keys ()
+  (interactive)
+  (run-with-timer 1 nil 'pen-default-add-keys))
+
+;; (add-hook 'after-make-frame-functions 'pen-default-add-keys)
+(add-hook 'after-init-hook 'pen-delay-add-keys)
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
 (add-hook 'after-init-hook 'pen-load-config t)
 
