@@ -621,7 +621,7 @@ case "$f" in
 
         server="$(tm-get-server)"
 
-        cmd="unset TTY; x -s \"${f}\" -c m -e \"\$\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
+        cmd="unset TTY; pen-x -s \"${f}\" -c m -e \"\$\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
 
         TMUX= tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "$tmsessionname"
 
@@ -639,7 +639,7 @@ case "$f" in
 
         server="$(tm-get-server)"
 
-        cmd="unset TTY; x -s \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
+        cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
 
         tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
 
