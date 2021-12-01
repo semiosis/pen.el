@@ -198,38 +198,42 @@
 (right-click-context-mode t)
 (pen-acolyte-scratch)
 
-(let ((pen-openai-key-file-path (f-join penconfdir "openai_api_key")))
-  (if (not (f-file-p pen-openai-key-file-path))
-      (let ((envkey (getenv "OPENAI_API_KEY")))
-        (if (sor envkey)
-            (pen-add-key-openai envkey)
-          ;; Automatically check if OpenAI key exists and ask for it otherwise
-          (call-interactively 'pen-add-key-openai)))))
+(defun pen-default-add-keys ()
+  (interactive)
 
-(let ((pen-cohere-key-file-path (f-join penconfdir "cohere_api_key")))
-  (if (not (f-file-p pen-cohere-key-file-path))
-      (let ((envkey (getenv "COHERE_API_KEY")))
-        (if (sor envkey)
-            (pen-add-key-cohere envkey)
-          ;; Automatically check if Cohere key exists and ask for it otherwise
-          (call-interactively 'pen-add-key-cohere)))))
+  (let ((pen-openai-key-file-path (f-join penconfdir "openai_api_key")))
+    (if (not (f-file-p pen-openai-key-file-path))
+        (let ((envkey (getenv "OPENAI_API_KEY")))
+          (if (sor envkey)
+              (pen-add-key-openai envkey)
+            ;; Automatically check if OpenAI key exists and ask for it otherwise
+            (call-interactively 'pen-add-key-openai)))))
 
-;; (let ((pen-aix-key-file-path (f-join penconfdir "aix_api_key")))
-;;   (if (not (f-file-p pen-aix-key-file-path))
-;;       (let ((envkey (getenv "AIX_API_KEY")))
-;;         (if (sor envkey)
-;;             (pen-add-key-aix envkey)
-;;           ;; Automatically check if Aix key exists and ask for it otherwise
-;;           (call-interactively 'pen-add-key-aix)))))
+  (let ((pen-cohere-key-file-path (f-join penconfdir "cohere_api_key")))
+    (if (not (f-file-p pen-cohere-key-file-path))
+        (let ((envkey (getenv "COHERE_API_KEY")))
+          (if (sor envkey)
+              (pen-add-key-cohere envkey)
+            ;; Automatically check if Cohere key exists and ask for it otherwise
+            (call-interactively 'pen-add-key-cohere)))))
 
-(let ((pen-hf-key-file-path (f-join penconfdir "hf_api_key")))
-  (if (not (f-file-p pen-hf-key-file-path))
-      (let ((envkey (getenv "HF_API_KEY")))
-        (if (sor envkey)
-            (pen-add-key-hf envkey)
-          ;; Automatically check if Hf key exists and ask for it otherwise
-          (call-interactively 'pen-add-key-hf)))))
+  ;; (let ((pen-aix-key-file-path (f-join penconfdir "aix_api_key")))
+  ;;   (if (not (f-file-p pen-aix-key-file-path))
+  ;;       (let ((envkey (getenv "AIX_API_KEY")))
+  ;;         (if (sor envkey)
+  ;;             (pen-add-key-aix envkey)
+  ;;           ;; Automatically check if Aix key exists and ask for it otherwise
+  ;;           (call-interactively 'pen-add-key-aix)))))
 
+  (let ((pen-hf-key-file-path (f-join penconfdir "hf_api_key")))
+    (if (not (f-file-p pen-hf-key-file-path))
+        (let ((envkey (getenv "HF_API_KEY")))
+          (if (sor envkey)
+              (pen-add-key-hf envkey)
+            ;; Automatically check if Hf key exists and ask for it otherwise
+            (call-interactively 'pen-add-key-hf))))))
+
+(add-hook 'after-init-hook 'pen-default-add-keys)
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
 (add-hook 'after-init-hook 'pen-load-config t)
 
