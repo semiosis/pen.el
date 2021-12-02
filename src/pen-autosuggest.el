@@ -7,7 +7,7 @@
 (require 'cl-lib)
 
 (defgroup pen-autosuggest nil
-  "Fish-like autosuggestions for penell."
+  "Fish-like autosuggestions for penel."
   :group 'company)
 
 (defcustom pen-autosuggest-delay 0
@@ -35,12 +35,12 @@ respectively."
   autosuggestion.")
 
 (defun pen-autosuggest-candidates (prefix)
-  "Select the first penell history candidate that starts with PREFIX."
+  "Select the first penel history candidate that starts with PREFIX."
   (let* ((history
           (delete-dups
            (mapcar (lambda (str)
                      (string-trim (substring-no-properties str)))
-                   (ring-elements penell-history-ring))))
+                   (ring-elements penel-history-ring))))
          (most-similar (cl-find-if
                         (lambda (str)
                           (string-prefix-p prefix str))
@@ -63,14 +63,14 @@ respectively."
       (company-begin-backend 'pen-autosuggest))))
 
 (defun pen-autosuggest--prefix ()
-  "Get current penell input."
+  "Get current penel input."
   (let* ((input-start (progn
                         (save-excursion
                           (beginning-of-line)
-                          (while (not (looking-at-p penell-prompt-regexp))
+                          (while (not (looking-at-p penel-prompt-regexp))
                             (forward-line -1))
-                          (re-search-forward penell-prompt-regexp nil 'noerror)
-                          (penell-bol))))
+                          (re-search-forward penel-prompt-regexp nil 'noerror)
+                          (penel-bol))))
          (prefix
           (string-trim-left
            (buffer-substring-no-properties
@@ -82,18 +82,18 @@ respectively."
 
 ;;;###autoload
 (defun pen-autosuggest (command &optional arg &rest ignored)
-  "`company-mode' backend to provide penell history suggestion."
+  "`company-mode' backend to provide penel history suggestion."
   (interactive (list 'interactive))
   (cl-case command
     (interactive (company-begin-backend 'pen-autosuggest))
-    (prefix (and (eq major-mode 'penell-mode)
+    (prefix (and (eq major-mode 'penel-mode)
                  (pen-autosuggest--prefix)))
     (candidates (pen-autosuggest-candidates arg))
     (require-match 'never)))
 
 ;;;###autoload
 (define-minor-mode pen-autosuggest-mode
-  "Enable fish-like autosuggestions in penell.
+  "Enable fish-like autosuggestions in penel.
 
 You can use <right> to select the suggestion. This is
 customizable through `pen-autosuggest-active-map'. If
@@ -109,7 +109,7 @@ instantaneous suggestions, but is customizable with
 `pen-autosuggest-delay'.
 
 Note: This assumes you want to use something other than company
-for shell completion, e.g. `penell-pcomplete',
+for shell completion, e.g. `penel-pcomplete',
 `completion-at-point', or helm-pen-pcomplete, since
 `company-active-map', `company-backends', and `company-frontends'
 will be locally overriden and company will be used solely for
