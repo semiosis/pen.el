@@ -43,7 +43,7 @@
 (define-key function-key-map (kbd "C-^") 'superify)
 (define-key global-map (kbd "C-M-\\") nil) ;Ensure that this bindings isnt taken
 (define-key function-key-map (kbd "C-M-\\") 'hyperify)
-(define-key global-map (kbd "M-h") 'hyperify)
+(define-key global-map (kbd "M-h") nil)
 (define-key function-key-map (kbd "M-h") 'hyperify)
 
 ;; Is this a good idea?
@@ -347,6 +347,7 @@
   (pen-dk-easy ";" 'sps-nlsh)
   (pen-dk-easy "A" 'pf-append-to-code/3)
   (pen-dk-easy "N" 'sps-nlsc)
+  (pen-dk-easy "S" 'pen-complete-short)
   (pen-dk-easy "P" 'pen-complete-long)
   (pen-dk-easy "^" 'pen-transform)
 

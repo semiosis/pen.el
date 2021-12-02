@@ -3514,6 +3514,15 @@ But use the results-analyser."
            (n-completions 40))
        ,',@body)))
 
+(defmacro pen-short-complete (&rest body)
+  "This wraps around pen function calls to make them complete long"
+  `(eval
+    `(let ((force-completion t)
+           (max-generated-tokens 100)
+           (stop-sequence "##long complete##")
+           (stop-sequences '("##long complete##")))
+       ,',@body)))
+
 (defmacro pen-long-complete (&rest body)
   "This wraps around pen function calls to make them complete long"
   `(eval
@@ -3676,6 +3685,16 @@ May use to generate code from comments."
   (interactive (list (pen-preceding-text) nil))
   (let ((response
          (pen-medium-complete
+          (pen-complete-function preceding-text))))
+    (if tv
+        (pen-etv (ink-propertise response))
+      (pen-complete-insert (ink-propertise response)))))
+
+(defun pen-complete-short (preceding-text &optional tv)
+  "Short-form completion."
+  (interactive (list (pen-preceding-text) nil))
+  (let ((response
+         (pen-short-complete
           (pen-complete-function preceding-text))))
     (if tv
         (pen-etv (ink-propertise response))
