@@ -102,6 +102,9 @@ design patterns and minimal inputs and
 description. It does this by weaving prompt
 functions into each other.
 
+** Pen alongside Copilot
+[[./pen-alongside-copilot.png]]
+
 ** Features - The possibilities are limitless
 - Translate prompts (NLP tasks) from one language into another
 - Multi-modal support (payloads)
