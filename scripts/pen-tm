@@ -239,7 +239,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -d) {
         DETACHMENT_SENTINEL=n
 
-        (  exec <`tm-tty`  ) &>/dev/null # I should really check this output
+        (  exec <`pen-tm-tty`  ) &>/dev/null # I should really check this output
         HAS_STDIN=
         HAS_STDOUT=n
 
@@ -265,7 +265,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             exec 0<"$TTY"
             exec 1>"$TTY"
         else
-            exec <`tm-tty`
+            exec <`pen-tm-tty`
         fi
         shift
     }
@@ -273,7 +273,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -t)
         {
-        ( exec <`tm-tty` ) &>/dev/null # I should really check this output
+        ( exec <`pen-tm-tty` ) &>/dev/null # I should really check this output
         HAS_STDIN=
         HAS_STDOUT=
         shift
@@ -2612,7 +2612,7 @@ case "$f" in
             pl "$paths" | pen-str uniq | pen-tm -f -i -S nw -noerror "mfz -nm" | {
                 dn="$(cat|umn)"
                 dnq="$(printf -- "%s" "$dn" | q)"
-                exec <`tm-tty`
+                exec <`pen-tm-tty`
 
                 if [ -n "$dn" ]; then
                     if ! [ -e "$dn" ]; then

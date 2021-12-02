@@ -3,7 +3,7 @@
 aqf() { aqf-real "$@"; }
 cmd() { cmd-nice "$@"; }
 
-: ${TTY:="$(tm-tty)"}
+: ${TTY:="$(pen-tm-tty)"}
 export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
@@ -14,7 +14,7 @@ stdin_exists() {
 
 if stdin_exists; then
     tfstdin="$(tf txt)"
-    exec <`tm-tty`
+    exec <`pen-tm-tty`
 fi
 
 PANE_ID="$(tmux display-message -p -t $TMUX_PANE '#{pane_id}' 2>/dev/null)"
