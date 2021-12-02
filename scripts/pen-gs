@@ -1,0 +1,52 @@
+#!/bin/bash
+export TTY
+
+# This gets a global variable
+
+FOLLOW=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -q) {
+        QUERY_ONLY=y
+        shift
+    }
+    ;;
+
+    -f) {
+        FOLLOW=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+catcmd="cat"
+if test "$FOLLOW" = "y"; then
+    catcmd="tail -n+0 -f"
+fi
+
+varname="$1"
+varname="$(printf -- "%s" "$varname" | slugify)"
+
+if [ -z "$varname" ]; then
+    exit 0
+fi
+
+vars_dir="$HOME/vars"
+mkdir -p "$vars_dir"
+
+fp="$HOME/vars/$varname"
+
+if [ -s "$fp" ]; then
+    if test "$QUERY_ONLY" = "y"; then
+        echo "$fp"
+    else
+        eval "$catcmd" "$fp"
+    fi
+else
+    {
+        echo "Not found:" 
+        echo "$fp" 
+    } 1>&2
+fi

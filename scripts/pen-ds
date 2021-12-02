@@ -1,0 +1,136 @@
+#!/bin/bash
+export TTY
+
+# This saves a variable globally for use in other scripts
+
+sn="$(basename "$0")"
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+DS_QUIET=y
+DS_SILENT=
+DELETE_IT=
+SHOW_FILE_PATH=n
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -info) {
+        show_info=y
+        shift
+    }
+    ;;
+
+    # hash table
+    -ht|-sha) {
+        USE_SHA=y
+        shift
+    }
+    ;;
+
+    # Do not print to stderr
+    -qf) {
+        DS_QUIET=y
+        DS_SILENT=y
+        SHOW_FILE_PATH=y
+        shift
+    }
+    ;;
+
+    # Do not print to stderr
+    -q|-quiet) {
+        DS_QUIET=y
+        shift
+    }
+    ;;
+
+    # print to stderr
+    -Q|-noquiet) {
+        DS_QUIET=n
+        shift
+    }
+    ;;
+
+    # Do not print any output ever
+    -s|-silent) {
+        DS_QUIET=y
+        DS_SILENT=y
+        shift
+    }
+    ;;
+
+    -d|-delete) {
+        DELETE_IT=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+varname="$1"
+
+# ds should act like cat if varname not specified. This is so it can be
+# used in scripts
+if [ -z "$varname" ]; then
+    cat
+    exit 0
+fi
+
+case "$sn" in
+    ht) {
+        USE_SHA=y
+    }
+    ;;
+
+    *)
+esac
+
+hash_f() {
+    if test "$USE_SHA" = "y"; then
+        sha
+    else
+        pen-str join - | slugify
+    fi
+}
+
+varname="$(printf -- "%s" "$varname" | hash_f)"
+
+mkdir -p "$HOME/vars"
+varname_fp="$HOME/vars/$varname"
+
+if stdin_exists; then
+    if test "$DS_QUIET" = "y"; then
+        # This will simply store
+        cat > "$varname_fp"
+    else
+        # This means store AND print to stdout
+        cat > "$varname_fp" < <(tee /dev/stderr) 2>&1
+    fi
+else
+    printf -- "%s" "$2" > "$varname_fp"
+fi
+
+# This is needed because platform doesnmay not 
+vars_dir="$HOME/vars"
+mkdir -p "$vars_dir"
+
+if test "$show_info" = "y"; then
+    echo "stored ds $varname" 1>&2
+fi
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+if ! test "$DS_SILENT" = "y"; then
+    cat "$varname_fp"
+fi
+
+if test "$SHOW_FILE_PATH" = "y"; then
+    echo "$varname_fp"
+fi
+
+if test "$DELETE_IT" = "y"; then
+    rm "$varname_fp"
+fi

@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+esc() {
+    # escapes \ and the chars of choice
+
+    chars="$1"
+    : ${chars:=" "}
+    chars="$(printf -- "%s" "$chars" | sed -e "s/\\\/&&/g" -e "s/\"/\\\&/g")"
+
+    sed "s_\\([$chars]\\)_\\\\\\1_g"
+}
+
+esc "$@"
