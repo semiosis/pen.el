@@ -268,3 +268,11 @@ fc-cache -f -v
 pip3 install cohere
 
 agi nano
+
+IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
+export EMACSD=/root/.emacs.d
+term_setup_fp="$EMACSD/pen.el/scripts/setup-term.sh"
+if [ -f "$term_setup_fp" ]; then
+    . "$term_setup_fp"
+fi
+HEREDOC
