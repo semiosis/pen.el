@@ -84,6 +84,7 @@
 (define-key pen-map (kbd "H-3") 'pen-complete-line)
 (define-key pen-map (kbd "H-4") 'pen-complete-lines)
 (define-key pen-map (kbd "H-5") 'pen-complete-long)
+(define-key pen-map (kbd "H-S") 'pen-complete-short)
 (define-key pen-map (kbd "H-P") 'pen-complete-long)
 (define-key pen-map (kbd "H-b") 'pf-generate-the-contents-of-a-new-file/6)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
