@@ -47,8 +47,7 @@ respectively."
   "Keymap that is enabled during an active history
   autosuggestion.")
 
-(defset pen-autosuggest-candidates-list '("alpha" "beta" "charlie"))
-
+(defset pen-autosuggest-candidates-list '())
 (defset penel-prompt-regexp "")
 
 (defun pen-autosuggest-candidates (prefix)
