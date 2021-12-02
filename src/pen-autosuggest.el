@@ -35,7 +35,9 @@ respectively."
   (setq pen-autosuggest-candidates-list
         ;; (pen-no-select (pen-line-complete (pen-complete-function (pen-preceding-text))))
         (mapcar (lambda (s) (concat (pen-preceding-text-line) s))
-                (pen-no-select (pen-line-complete (pen-one (pen-complete-function (pen-preceding-text))))))))
+                (pen-no-select (pen-line-complete (pen-one (pen-complete-function (pen-preceding-text)))))))
+  (message (pp-oneline pen-autosuggest-candidates-list))
+  pen-autosuggest-candidates-list)
 
 (defvar pen-autosuggest-active-map
   (let ((keymap (make-sparse-keymap)))
@@ -155,6 +157,19 @@ history autosuggestions."
     (kill-local-variable 'company-idle-delay)
     (kill-local-variable 'company-backends)
     (kill-local-variable 'company-frontends)))
+
+;; Yeah, sadly can't do this
+(defun pen-suggest-on-change (start end length &optional content-change-event-fn)
+  (if (minor-mode-enabled pen-autosuggest-mode)
+    nil
+      ;; (run-with-idle-timer 0.1 0 'pen-set-autosuggestions)
+    ;; (pen-set-autosuggestions)
+      ))
+
+;; Hell
+
+;; (add-hook 'after-change-functions 'pen-suggest-on-change nil t)
+;; (remove-hook 'after-change-functions 'pen-suggest-on-change)
 
 (provide 'pen-autosuggest)
 
