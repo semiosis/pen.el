@@ -50,7 +50,7 @@ mkdir -p ~/.pen/ht-cache
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        /root/.emacs.d/pen.el/scripts/nvc emacsclient "$@"
+        emacsclient "$@"
     else
         emacsclient "$@"
     fi
