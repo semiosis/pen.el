@@ -67,6 +67,8 @@ respectively."
       (company-begin-backend 'pen-autosuggest))))
 
 (defun pen-autosuggest-bol ()
+  ;; This should really go to the semantic start of the line than literal
+  ;; based on j:eshell-bol
   (beginning-of-line)
   (point))
 
