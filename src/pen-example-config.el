@@ -43,6 +43,8 @@
 (define-key function-key-map (kbd "C-^") 'superify)
 (define-key global-map (kbd "C-M-\\") nil) ;Ensure that this bindings isnt taken
 (define-key function-key-map (kbd "C-M-\\") 'hyperify)
+(define-key global-map (kbd "M-h") 'hyperify)
+(define-key function-key-map (kbd "M-h") 'hyperify)
 
 ;; Is this a good idea?
 ;; (define-key function-key-map (kbd "TAB") 'hyperify)
@@ -733,5 +735,9 @@
 ;; 
 ;; (translate "def my_function(alpha, papa):" "python to elisp")
 
+;; For VSCode terminal
+(define-key pen-map (kbd "M-m") 'right-click-context-menu)
+(define-key pen-map (kbd "C-M-e") (kbd "C-e"))
+(define-key selected-keymap (kbd "w") 'kill-ring-save)
 
 (provide 'pen-example-config)
