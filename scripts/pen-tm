@@ -141,9 +141,8 @@ export EDITOR=v
 : ${DISPLAY:="0"}
 
 if ! test "$FAST" = "y"; then
-    . $HOME/.shell_environment
-    . $HOME/scripts/libraries/bash-library.sh
-
+    test -f $HOME/.shell_environment && . $HOME/.shell_environment
+    . `which pen-bash-library.sh`
 else
     PATH="$HOME/scripts:$PATH"
     PATH="$MYGIT/semiosis/pen.el/scripts:$PATH"
@@ -430,7 +429,7 @@ case "$f" in
     config|fzf-config) {
         exec 2>&4
 
-        selection="$(tm-list-config | mnm | s uniq | soak | mfz -p)"
+        selection="$(tm-list-config | mnm | pen-str uniq | soak | mfz -p)"
 
         ! [ -n "$selection" ] && exit 0
 
@@ -461,7 +460,7 @@ case "$f" in
 
     em-click) { # easymotion click
 
-        cap_file="$(tm cap | pen-tf txt; sleep 0.5)"
+        cap_file="$(pen-tm cap | pen-tf txt; sleep 0.5)"
         if [ -s "$cap_file" ]; then
             pen-tm -te nw -n em-click "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
 
@@ -540,7 +539,7 @@ case "$f" in
             ;;
 
             -l) {
-                export LITERAL=y # for "tm regex-find-coord"
+                export LITERAL=y # for "pen-tm regex-find-coord"
                 shift
             }
             ;;
@@ -565,7 +564,7 @@ case "$f" in
         re="$1"
         shift
 
-        results="$(tm regex-find-coord -nohist -t "$TARGET" "$re")"
+        results="$(pen-tm regex-find-coord -nohist -t "$TARGET" "$re")"
 
         if test "$ALL" = "y"; then
             printf -- "%s\n" "$results" | awk1 | while IFS=$'\n' read -r line; do
@@ -712,7 +711,7 @@ case "$f" in
 
     goto-fzf) {
 
-        eval "tmux run -b $(aqf "tm find-window-from-session -no-activate")"
+        eval "tmux run -b $(aqf "pen-tm find-window-from-session -no-activate")"
     }
     ;;
 
@@ -754,7 +753,7 @@ case "$f" in
     session-exists) {
 
         sessions="$(session_list)"
-        printf -- "%s" "$sessions" | s one-of "$1"
+        printf -- "%s" "$sessions" | pen-str one-of "$1"
         exit $?
     }
     ;;
@@ -888,7 +887,7 @@ case "$f" in
     ;;
 
     ep|edit-paste|vp|vipe-paste) {
-        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(tm -sout sph \"echo -n '' | vipe\" | cat | s chomp)"
+        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(pen-tm -sout sph \"echo -n '' | vipe\" | cat | pen-str chomp)"
 
         tmux paste-buffer -r -b myclipboard
 
@@ -988,7 +987,7 @@ case "$f" in
                     sed -n '/([0-9]\+)/ s/[^0-9]//pg' | \
                     while read pid; do
                         lsof -p $pid 2>/dev/null | sed 's/ \+/ /g' | cut -d ' ' -f9- | sed '1d';
-                    done | s uniq | grep -v /lib/
+                    done | pen-str uniq | grep -v /lib/
             else
                 echo Fast mode enabled. Not showing open files.
             fi
@@ -1290,55 +1289,7 @@ case "$f" in
 
                     test -f ".tmux-pre.sh" && source ".tmux-pre.sh"
 
-                    case "$AUTOFILES" in
-                        n) {
-                            G_AUTOFILES=n
-                            L_AUTOFILES=n
-                        }
-                        ;;
-
-                        y) {
-                            G_AUTOFILES=y
-                            L_AUTOFILES=y
-                        }
-                        ;;
-
-                        *)
-                    esac
-
-                    if test "$G_AUTOFILES" = "y"; then
-                        CWD="$CWD" lsautofiles -g | awk 1 | while IFS=$'\n' read -r line; do
-                            if test -f "$line"; then
-
-                                tm-open-file-green "$line"
-
-                            elif test -d "$line"; then
-                                line="$(printf -- "%s" "$line" | qne)"
-
-                                REPEAT_COMMAND=y pen-tm ns -hlred -r -l -s -c "$line"
-                            fi
-                        done
-                    fi
-
-                    if tm-minimal; then
-                        test -f ".tmux-minimal.sh" && source ".tmux-minimal.sh"
-                    else
-                        test -f ".tmux.sh" && source ".tmux.sh"
-                    fi
-
-                    if test "$L_AUTOFILES" = "y"; then
-                        CWD="$CWD" lsautofiles -l | awk 1 | while IFS=$'\n' read -r line; do
-                            if test -f "$line"; then
-                                line="$(printf -- "%s" "$line" | qne)"
-                                pen-tm -d -te nw -hldblue -R -nopakf -n "$line" -c "$CWD" "preview $(aqf "$line"); rifle \"$line\""
-                            elif test -d "$line"; then
-                                line="$(printf -- "%s" "$line" | qne)"
-
-                                REPEAT_COMMAND=y pen-tm ns -hlblue -r -l -s -c "$line"
-                            fi
-                        done
-                    fi
-
+                    test -f ".tmux.sh" && source ".tmux.sh"
                 )
 
             fi
@@ -1356,7 +1307,7 @@ case "$f" in
             if test "$HAS_PARENT" = "y"; then
                 export HIGHLIGHT
                 roe_para="$(test "$REMAIN_ON_EXIT" = "y" && printf -- "%s" "-r")"
-                full_id="$(tm -d nw -P $roe_para -d -t "$TARGET" -n "$displayed_name" -c "$CWD" "tm attach $(aqf "$session_name"); sleep 0.1")"
+                full_id="$(pen-tm -d nw -P $roe_para -d -t "$TARGET" -n "$displayed_name" -c "$CWD" "pen-tm attach $(aqf "$session_name"); sleep 0.1")"
 
                 tmux setenv -t "$session_name:" "PARENT_WINDOW_ID" "$full_id"
             else
@@ -1449,7 +1400,7 @@ case "$f" in
             test -f .tmux-minimal.sh && echo .tmux-minimal.sh
             test -f autofiles.txt && echo autofiles.txt
             test -f $NOTES/programs/tm/autofiles.txt && echo $NOTES/programs/tm/autofiles.txt
-        } | s join ' ' | xargs -l1 pen-tm -f -d -te nw -args v
+        } | pen-str join ' ' | xargs -l1 pen-tm -f -d -te nw -args v
 
     }
     ;;
@@ -1898,7 +1849,7 @@ case "$f" in
         fi
 
         if test "$CHANGE_SHELL" = "y"; then
-            PREVIOUS_SHELL="$(tm op default-shell)"
+            PREVIOUS_SHELL="$(pen-tm op default-shell)"
             DEFAULT_SHELL="$(which "$DEFAULT_SHELL")"
             pen-tm op default-shell "$DEFAULT_SHELL"
         fi
@@ -2239,26 +2190,26 @@ case "$f" in
     ;;
 
     scrape|scrape-filter) {
-        cap="$(tm cap)"
+        cap="$(pen-tm cap)"
         printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-with-fzf"
     }
     ;;
 
     scrape-things-fast) {
-        cap="$(tm cap)"
+        cap="$(pen-tm cap)"
         printf -- "%s" "$cap" | filter-things.sh | pen-tm -f -S -tout nw -noerror "mfz -m | xc -i"
     }
     ;;
 
     scrape-things) {
-        cap="$(tm cap)"
+        cap="$(pen-tm cap)"
         printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-things"
     }
     ;;
 
     lasturl) {
 
-        urls="$(tm cap | xurls | s chomp)"
+        urls="$(pen-tm cap | xurls | pen-str chomp)"
         if test "$(printf -- "%s" "$urls" | wc -l)" -gt 0; then
             printf -- "%s" "$urls" | pen-tm fzf -1 | xc -i -n
         else
@@ -2268,7 +2219,7 @@ case "$f" in
     ;;
 
     scrapep) {
-        cap="$(tm capp)"
+        cap="$(pen-tm capp)"
         printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-with-fzf"
     }
     ;;
@@ -2294,7 +2245,7 @@ case "$f" in
     ;;
 
     em|easymotion) {
-        cap_file="$(tm cap | pen-tf txt; sleep 0.5)"
+        cap_file="$(pen-tm cap | pen-tf txt; sleep 0.5)"
         if [ -s "$cap_file" ]; then
             pen-tm -te -d nw -n easymotion "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2)' \"$cap_file\""
         fi
@@ -2525,7 +2476,7 @@ case "$f" in
 
             grepstring="$CALLER_TARGET"
             if test "$grepstring" = "localhost"; then
-                grepstring="$(hostname | s cap)"
+                grepstring="$(hostname | pen-str cap)"
             fi
 
             while ! grep -q "\[ $grepstring \]" "$np"; do
@@ -2658,7 +2609,7 @@ case "$f" in
 
         if [ -n "$paths" ]; then
 
-            pl "$paths" | s uniq | pen-tm -f -i -S nw -noerror "mfz -nm" | {
+            pl "$paths" | pen-str uniq | pen-tm -f -i -S nw -noerror "mfz -nm" | {
                 dn="$(cat|umn)"
                 dnq="$(printf -- "%s" "$dn" | q)"
                 exec <`tm-tty`
@@ -3152,7 +3103,7 @@ case "$f" in
         pen-tm n "$f :: NOT IMPLEMENTED"
         paths="$(find . -maxdepth 1 -type d)"
         if [ -n "$paths" ]; then
-            paths="$(pl "$paths" | s uniq | pen-tm -f -i spv -noerror "mfz" | umn)"
+            paths="$(pl "$paths" | pen-str uniq | pen-tm -f -i spv -noerror "mfz" | umn)"
             if [ -n "$paths" ]; then
 
                 bn="$(basename "$paths")"
@@ -3433,7 +3384,7 @@ case "$f" in
     edit-file) {
         paths="$(find . -maxdepth 1 -type f | sed 's/^..//')"
         if [ -n "$paths" ]; then
-            paths="$(pl "$paths" | s uniq | pen-tm -f -i spv -noerror "mfz -p" | umn)"
+            paths="$(pl "$paths" | pen-str uniq | pen-tm -f -i spv -noerror "mfz -p" | umn)"
             pl "$paths" | awk1 | while IFS=$'\n' read -r line; do
                 if test -n "$line"; then
                     pen-tm tp "$line"
@@ -3467,7 +3418,7 @@ case "$f" in
         if test "$no_split" = "y"; then
             result="$(eval "$fzfcmd")"
         else
-            result="$(tm -f -S spv -noerror "$fzfcmd")"
+            result="$(pen-tm -f -S spv -noerror "$fzfcmd")"
         fi
 
         if [ -n "$result" ]; then
@@ -3487,7 +3438,7 @@ case "$f" in
     ;;
 
     open-dirs) {
-        selections="$(tm -s -fout spv -noerror "F find-no-git -d | mfz")"
+        selections="$(pen-tm -s -fout spv -noerror "F find-no-git -d | mfz")"
         if [ -n "$selections" ]; then
             printf -- "%s\n" "$selections" | \
             while read -r line; do
@@ -3502,7 +3453,7 @@ case "$f" in
     ;;
 
     open-files) {
-        selections="$(tm -s -fout spv -noerror "F f | mfz")"
+        selections="$(pen-tm -s -fout spv -noerror "F f | mfz")"
         if [ -n "$selections" ]; then
             printf -- "%s\n" "$selections" | \
             while read -r line; do

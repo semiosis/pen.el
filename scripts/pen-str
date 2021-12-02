@@ -355,5 +355,16 @@ case "$f" in
     }
     ;;
 
+    one-of) {
+        input="$(cat)"
+        finds="$1"
+
+        matches="$(printf -- "%s\n" "$input" | sed -n "/^$finds\$/p")"
+        [ -n "$matches" ]
+
+        exit $?
+    }
+    ;;
+
     *)
 esac
