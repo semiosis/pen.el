@@ -368,12 +368,31 @@ if ! test "$share_x" = "y"; then
     export DISPLAY=
 fi
 
+ensure_pen_running() {
+    if ! inside-docker-p && ! docker-running-p; then
+        # Start pen in background and wait, or start and detach when done
+        # How can I detach it when done loading?
+        # Maybe the only  way is to ensure that pen -n always starts pen with no interruptions.
+        # TODO Ensure that pen.el still starts, even with empty ~/.pen
+        ( unbuffer pen -nw  -n &>/dev/null; ) & disown
+
+        while !  docker exec "${pen_container_name}" true &>/dev/null; do
+            sleep 1
+        done
+    fi
+}
+
 if test "$start_shell" = "y"; then
     export DISPLAY=
     # nvt
 
     : ${CMD:="$(cmd "$@")"}
     : "${CMD:="/bin/bash || /bin/zsh || sh"}"
+
+    if ! inside-docker-p && ! docker-running-p; then
+        # Start pen in background and wait
+        ensure_pen_running
+    fi
 
     docker exec -it "$pen_container_name" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
     exit "$?"

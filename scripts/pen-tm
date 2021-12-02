@@ -10,6 +10,8 @@ displayedname() {
     sed -e 's/^.*_//' -e "s/^localhost$/$(hostname | sed 's/[^ _-]*/\u&/g')/"
 }
 
+mkdir -p $HOME/notes
+
 extra_exports=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -f) {
@@ -44,9 +46,9 @@ editor() {
 }
 
 init-tm() {
-    shx $HOME/scripts/tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$shell"
+    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$shell"
 
-    server="$(tm-get-server)"
+    server="$(pen-tm-get-server)"
 
     TMUX= tmux -L $server attach -t localhost:
     tmux set-option -t localhost lock-after-time 36000
@@ -100,7 +102,7 @@ for arg in "$@"; do case "$arg" in
     ;;
 
     nwf)
-        tmux neww zsh
+        tmux neww bash
         exit 0
     ;;
 
@@ -124,6 +126,7 @@ pl() {
 
 shell="bash; pak ."
 shell="zsh"
+shell="bash"
 
 if ! test "$FAST" = y && ! tmux info &> /dev/null; then # it's important to have the tmux info check here to prevent infinite init loop
 
@@ -251,7 +254,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         DETACHMENT_SENTINEL=y; shift
     ;;
 
-    -S) # no detachment sentinel This is different from detaching immediately. The new window is still created and switched to. But the tm command will not wait for the process to end.
+    -S) # no detachment sentinel This is different from detaching immediately. The new window is still created and switched to. But the pen-tm command will not wait for the process to end.
         DETACHMENT_SENTINEL=n; shift
     ;;
 
@@ -285,7 +288,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -fout) { # Force stdout (echo hi | tm -sout nw fzf)
+    -fout) { # Force stdout (echo hi | pen-tm -sout nw fzf)
         HAS_STDOUT=y; shift
     }
     ;;
@@ -412,7 +415,7 @@ copy-line() {
 
     : ${y:="$(tmux display -p "#{cursor_y}")"}
 
-    tm -f cat | sed -n "$((y + 1))p" | {
+    pen-tm -f cat | sed -n "$((y + 1))p" | {
         if test "$DO_FROM" = "y"; then
             : ${x:="$(tmux display -p "#{cursor_x}")"}
             cut -c $(( x + 1 ))-
@@ -446,14 +449,14 @@ case "$f" in
         selection="$(list-executables | mfz)"
         wp="$(which "$selection")"
 
-        tm run "$wp"
+        pen-tm run "$wp"
 
     }
     ;;
 
     em-click-bg) {
         set -m
-        tm em-click &
+        pen-tm em-click &
         disown
     }
     ;;
@@ -462,7 +465,7 @@ case "$f" in
 
         cap_file="$(tm cap | pen-tf txt; sleep 0.5)"
         if [ -s "$cap_file" ]; then
-            tm -te nw -n em-click "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
+            pen-tm -te nw -n em-click "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
 
             x="$(cat /tmp/em-click.txt | cut -d ' ' -f 2)"
             y="$(cat /tmp/em-click.txt | cut -d ' ' -f 1)"
@@ -473,7 +476,7 @@ case "$f" in
 
                 sleep 1
 
-                tm click-wrap $x $y
+                pen-tm click-wrap $x $y
             fi
         fi
 
@@ -509,9 +512,9 @@ case "$f" in
         : ${TARGET:="$TMUX_PANE"}
 
         if test "$LITERAL" = "y"; then
-            tm cap-pane "$@" -clean -nohist | pcre-pos.pl "$regex"
+            pen-tm cap-pane "$@" -clean -nohist | pcre-pos.pl "$regex"
         else
-            tm cap-pane "$@" -clean -nohist | exact-pos.pl "$regex"
+            pen-tm cap-pane "$@" -clean -nohist | exact-pos.pl "$regex"
         fi
 
         exit 0
@@ -568,11 +571,11 @@ case "$f" in
 
         if test "$ALL" = "y"; then
             printf -- "%s\n" "$results" | awk1 | while IFS=$'\n' read -r line; do
-                printf -- "%s\n" "$line" | xargs tm click -t "$TARGET"
+                printf -- "%s\n" "$line" | xargs pen-tm click -t "$TARGET"
                 sleep 0.1
             done
         else
-            printf -- "%s\n" "$results" | head -n 1 | xargs tm click -t "$TARGET"
+            printf -- "%s\n" "$results" | head -n 1 | xargs pen-tm click -t "$TARGET"
         fi
 
         exit 0
@@ -584,7 +587,7 @@ case "$f" in
         sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
         sheight="$(( sheight + 2 ))"
 
-        server="$(tm-get-server)"
+        server="$(pen-tm-get-server)"
 
         tmux \
             new-session -d \
@@ -604,7 +607,7 @@ case "$f" in
             sleep 0.1
         done
 
-        tm click -t "wrap:1" "$x" "$y"
+        pen-tm click -t "wrap:1" "$x" "$y"
 
         tmux kill-pane -t "wrap:1.0"
     }
@@ -619,7 +622,7 @@ case "$f" in
 
         tmsessionname="${f}-$caller_slug-$(date-ts)"
 
-        server="$(tm-get-server)"
+        server="$(pen-tm-get-server)"
 
         cmd="unset TTY; pen-x -s \"${f}\" -c m -e \"\$\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
 
@@ -637,7 +640,7 @@ case "$f" in
 
         caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
 
-        server="$(tm-get-server)"
+        server="$(pen-tm-get-server)"
 
         cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
 
@@ -734,16 +737,16 @@ case "$f" in
 
         unbuffer bash -xv e -startall
 
-        if ! tm session-exists localhost; then
-            tm ns -np -r -l -d -c "$HOME/notes" -n localhost "$shell"
+        if ! pen-tm session-exists localhost; then
+            pen-tm ns -np -r -l -d -c "$HOME/notes" -n localhost "$shell"
 
         fi
-        tm attach localhost
+        pen-tm attach localhost
     }
     ;;
 
     target-exists) {
-        tm n "$f :: NOT FULLY IMPLEMENTED"
+        pen-tm n "$f :: NOT FULLY IMPLEMENTED"
 
         tmux has-session -t "$1:"
         exit $?
@@ -759,7 +762,7 @@ case "$f" in
     ;;
 
     bp-other|bpo) { # breakp -other
-        tm n "$f :: Use 'bp -o'"
+        pen-tm n "$f :: Use 'bp -o'"
     }
     ;;
 
@@ -994,7 +997,7 @@ case "$f" in
 
         } | mnm | {
             if is_tty || test "$makenewpane" = "nw"; then
-                tm -tout -i -S nw v
+                pen-tm -tout -i -S nw v
             else
                 cat
             fi
@@ -1022,7 +1025,7 @@ case "$f" in
         fi
 
         if [ -n "$name" ]; then
-            xt $xt_opt tm ta "$name"
+            xt $xt_opt pen-tm ta "$name"
         else
             tm-attach-localhost
         fi
@@ -1030,14 +1033,14 @@ case "$f" in
     ;;
 
     ts) {
-        tm start
+        pen-tm start
 
-        tm ta localhost
+        pen-tm ta localhost
     }
     ;;
 
     nds|nbgs) {
-        server="$(tm-get-server)"
+        server="$(pen-tm-get-server)"
 
         unset TMUX
 
@@ -1054,7 +1057,7 @@ case "$f" in
     ;;
 
     ns|new-s|new-session) {
-        server="$(tm-get-server)"
+        server="$(pen-tm-get-server)"
 
         unset TMUX
 
@@ -1257,7 +1260,7 @@ case "$f" in
 
         session_exists=n
 
-        tm -f session-exists "$session_name" && session_exists=y
+        pen-tm -f session-exists "$session_name" && session_exists=y
         if ! test "$session_exists" = "y" || test "$force_create_session" = "y"; then
             mkdir -p "$CWD"
             displayed_name="$(printf -- "%s" "$session_name" | displayedname)"
@@ -1314,7 +1317,7 @@ case "$f" in
                             elif test -d "$line"; then
                                 line="$(printf -- "%s" "$line" | qne)"
 
-                                REPEAT_COMMAND=y tm ns -hlred -r -l -s -c "$line"
+                                REPEAT_COMMAND=y pen-tm ns -hlred -r -l -s -c "$line"
                             fi
                         done
                     fi
@@ -1329,11 +1332,11 @@ case "$f" in
                         CWD="$CWD" lsautofiles -l | awk 1 | while IFS=$'\n' read -r line; do
                             if test -f "$line"; then
                                 line="$(printf -- "%s" "$line" | qne)"
-                                tm -d -te nw -hldblue -R -nopakf -n "$line" -c "$CWD" "preview $(aqf "$line"); rifle \"$line\""
+                                pen-tm -d -te nw -hldblue -R -nopakf -n "$line" -c "$CWD" "preview $(aqf "$line"); rifle \"$line\""
                             elif test -d "$line"; then
                                 line="$(printf -- "%s" "$line" | qne)"
 
-                                REPEAT_COMMAND=y tm ns -hlblue -r -l -s -c "$line"
+                                REPEAT_COMMAND=y pen-tm ns -hlblue -r -l -s -c "$line"
                             fi
                         done
                     fi
@@ -1359,7 +1362,7 @@ case "$f" in
 
                 tmux setenv -t "$session_name:" "PARENT_WINDOW_ID" "$full_id"
             else
-                tm attach "$session_name"
+                pen-tm attach "$session_name"
             fi
 
             if test "$SELECT" = "y" && test "$HAS_PARENT" = "y"; then
@@ -1384,7 +1387,7 @@ case "$f" in
             : ${CWD:="$(pwd)"}; cd "$CWD"
         fi
 
-        tm attach "$session_name" || {
+        pen-tm attach "$session_name" || {
             true
         }
         exit $?
@@ -1398,14 +1401,14 @@ case "$f" in
             session_name=localhost
         fi
 
-        server="$(tm-get-server)"
+        server="$(pen-tm-get-server)"
 
-        if tm session-exists $session_name; then
+        if pen-tm session-exists $session_name; then
             TMUX= tmux -L $server attach -t "$session_name:" || {
                 true
             }
         elif test "$session_name" = "localhost"; then
-            tm ns -r -l -d -c "$HOME/notes" -n localhost "$shell"
+            pen-tm ns -r -l -d -c "$HOME/notes" -n localhost "$shell"
             TMUX= tmux -L $server attach -t "$session_name:" || {
             true
         }
@@ -1424,7 +1427,7 @@ case "$f" in
             : ${CWD:="$(pwd)"}; cd "$CWD"
         fi
 
-        tm attach "$session_name" || {
+        pen-tm attach "$session_name" || {
             true
         }
         exit $?
@@ -1448,7 +1451,7 @@ case "$f" in
             test -f .tmux-minimal.sh && echo .tmux-minimal.sh
             test -f autofiles.txt && echo autofiles.txt
             test -f $NOTES/programs/tm/autofiles.txt && echo $NOTES/programs/tm/autofiles.txt
-        } | s join ' ' | xargs -l1 tm -f -d -te nw -args v
+        } | s join ' ' | xargs -l1 pen-tm -f -d -te nw -args v
 
     }
     ;;
@@ -1847,7 +1850,7 @@ case "$f" in
                 dir="$(tpwd -t "$TARGET")"
                 dir="$(eval echo -e "$dir")"
                 lit "$dir" > /tmp/tm.txt
-                tm n "$dir"
+                pen-tm n "$dir"
                 export CWD
 
                 shift
@@ -1899,7 +1902,7 @@ case "$f" in
         if test "$CHANGE_SHELL" = "y"; then
             PREVIOUS_SHELL="$(tm op default-shell)"
             DEFAULT_SHELL="$(which "$DEFAULT_SHELL")"
-            tm op default-shell "$DEFAULT_SHELL"
+            pen-tm op default-shell "$DEFAULT_SHELL"
         fi
 
         : ${window_name:="new-window"}
@@ -1995,7 +1998,7 @@ case "$f" in
 
         if test "$DETACHMENT_SENTINEL" = "y"; then
             if test "$CAT_ON_EXIT" = "y"; then
-                cmd_post="$cmd_post; tm -te -d capture - > \"$tf_capture\""
+                cmd_post="$cmd_post; pen-tm -te -d capture - > \"$tf_capture\""
             fi
 
             if ! test "$SUB_SESSION" = "y"; then
@@ -2041,7 +2044,7 @@ case "$f" in
         fi
 
         if test "$switch_to_target" = "y"; then
-            tm sel "$TARGET"
+            pen-tm sel "$TARGET"
         fi
 
         envstring+="export CWD=\"$dir\"; "
@@ -2083,11 +2086,11 @@ case "$f" in
 
         if test "$f" = "cw"; then
             :
-            tm breakp -s -E "$fullcmd"
+            pen-tm breakp -s -E "$fullcmd"
         elif test "$f" = "rs" || test "$f" = "rsp"; then
             full_id="$(tmux respawnp -k -t "$TARGET" -t "$TARGET" "export TMUX=; $fullcmd")"
         elif test "$SUB_SESSION" = "y"; then
-            server="$(tm-get-server)"
+            server="$(pen-tm-get-server)"
 
             unset TMUX
 
@@ -2140,7 +2143,7 @@ case "$f" in
         fi
 
         if test "$CHANGE_SHELL" = "y"; then
-            tm op default-shell "$PREVIOUS_SHELL"
+            pen-tm op default-shell "$PREVIOUS_SHELL"
         fi
 
         if test "$RETURN_ID" = "y"; then
@@ -2197,7 +2200,7 @@ case "$f" in
 
     run-debug-windows) {
 
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
 
     }
     ;;
@@ -2222,36 +2225,36 @@ case "$f" in
         printf -- "%s\n" "export TTY" >> "$fn"
         printf -- "%s\n" >> "$fn"
 
-        tm -S -te nw "vim \"$fn\""
+        pen-tm -S -te nw "vim \"$fn\""
     }
     ;;
 
     cap) {
-        tm -te -d capture -clean -wrap -noabort -
+        pen-tm -te -d capture -clean -wrap -noabort -
     }
     ;;
 
     cap-pane|capp) {
 
-        tm -te -d capture "$@" -clean -
+        pen-tm -te -d capture "$@" -clean -
     }
     ;;
 
     scrape|scrape-filter) {
         cap="$(tm cap)"
-        printf -- "%s" "$cap" | tm -f -S -tout nw -noerror "f filter-with-fzf"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-with-fzf"
     }
     ;;
 
     scrape-things-fast) {
         cap="$(tm cap)"
-        printf -- "%s" "$cap" | filter-things.sh | tm -f -S -tout nw -noerror "mfz -m | xc -i"
+        printf -- "%s" "$cap" | filter-things.sh | pen-tm -f -S -tout nw -noerror "mfz -m | xc -i"
     }
     ;;
 
     scrape-things) {
         cap="$(tm cap)"
-        printf -- "%s" "$cap" | tm -f -S -tout nw -noerror "f filter-things"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-things"
     }
     ;;
 
@@ -2259,7 +2262,7 @@ case "$f" in
 
         urls="$(tm cap | xurls | s chomp)"
         if test "$(printf -- "%s" "$urls" | wc -l)" -gt 0; then
-            printf -- "%s" "$urls" | tm fzf -1 | xc -i -n
+            printf -- "%s" "$urls" | pen-tm fzf -1 | xc -i -n
         else
             unbuffer xc -i -n "$urls"
         fi
@@ -2268,34 +2271,34 @@ case "$f" in
 
     scrapep) {
         cap="$(tm capp)"
-        printf -- "%s" "$cap" | tm -f -S -tout nw -noerror "f filter-with-fzf"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-with-fzf"
     }
     ;;
 
     search) {
-        tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y orve" -wrap
+        pen-tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y orve" -wrap
     }
     ;;
 
     visor) {
-        tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y orspe -ic generate-glossary-buttons-over-buffer-force-on" -wrap
+        pen-tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y orspe -ic generate-glossary-buttons-over-buffer-force-on" -wrap
     }
     ;;
 
     avy) {
-        tm -f -te -d capture -clean -editor "e -fi avy-goto-char" -wrap
+        pen-tm -f -te -d capture -clean -editor "e -fi avy-goto-char" -wrap
     }
     ;;
 
     wrap) {
-        tm -f -te -d capture -clean -editor "e" -wrap
+        pen-tm -f -te -d capture -clean -editor "e" -wrap
     }
     ;;
 
     em|easymotion) {
         cap_file="$(tm cap | pen-tf txt; sleep 0.5)"
         if [ -s "$cap_file" ]; then
-            tm -te -d nw -n easymotion "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2)' \"$cap_file\""
+            pen-tm -te -d nw -n easymotion "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2)' \"$cap_file\""
         fi
 
         exit 0
@@ -2309,17 +2312,17 @@ case "$f" in
     ;;
 
     nv-wrap) {
-        tm -te -d capture -clean -wrap -nv
+        pen-tm -te -d capture -clean -wrap -nv
     }
     ;;
 
     capture-stdout) { # captures the terminal and puts it to stdout
-        tm -te -d capture -clean -
+        pen-tm -te -d capture -clean -
     }
     ;;
 
     capture-stdout-wrap) { # captures the terminal including panes and puts it to stdout
-        tm -te -d capture -clean -wrap -
+        pen-tm -te -d capture -clean -wrap -
     }
     ;;
 
@@ -2505,7 +2508,7 @@ case "$f" in
             EDITOR=ansivim
         fi
 
-        server="$(tm-get-server)"
+        server="$(pen-tm-get-server)"
         unset TMUX
 
         tf_tmcapture="$(pen-tf tmcapture txt || echo /dev/null)"
@@ -2581,13 +2584,13 @@ case "$f" in
     ;;
 
     fr|free-resources) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
 
     }
     ;;
 
     jump) { # easymotion jump
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
 
     }
     ;;
@@ -2595,7 +2598,7 @@ case "$f" in
     tnf|new-file) {
         tf="$(u pen-tf new txt)"
 
-        tm -S -te nw "vim \"$tf\""
+        pen-tm -S -te nw "vim \"$tf\""
 
     }
     ;;
@@ -2607,20 +2610,20 @@ case "$f" in
         exec &>/dev/null
 
         if [ -n "$message" ]; then
-            tm n "$key has been unbound. $message"
+            pen-tm n "$key has been unbound. $message"
         else
-            tm n "$key has been unbound"
+            pen-tm n "$key has been unbound"
         fi
     }
     ;;
 
     edit-x-clipboard) {
-        tm -f -te nw xce
+        pen-tm -f -te nw xce
     }
     ;;
 
     calc) {
-        tm n "$f :: TODO: Further implemention" &>/dev/null
+        pen-tm n "$f :: TODO: Further implemention" &>/dev/null
 
         win calculator
 
@@ -2628,14 +2631,14 @@ case "$f" in
     ;;
 
     wa|wolfram-alpha) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
         exit 1
 
     }
     ;;
 
     scrapep|scrape-paths) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
         exit 1
 
     }
@@ -2648,7 +2651,7 @@ case "$f" in
 
         export CWD
 
-        tm -f -d -t nw -c "$CWD" -fargs ranger "$@"
+        pen-tm -f -d -t nw -c "$CWD" -fargs ranger "$@"
     }
     ;;
 
@@ -2657,58 +2660,58 @@ case "$f" in
 
         if [ -n "$paths" ]; then
 
-            pl "$paths" | s uniq | tm -f -i -S nw -noerror "mfz -nm" | {
+            pl "$paths" | s uniq | pen-tm -f -i -S nw -noerror "mfz -nm" | {
                 dn="$(cat|umn)"
                 dnq="$(printf -- "%s" "$dn" | q)"
                 exec <`tm-tty`
 
                 if [ -n "$dn" ]; then
                     if ! [ -e "$dn" ]; then
-                        tm -f -d -te dv "$dn :: No longer exists"
+                        pen-tm -f -d -te dv "$dn :: No longer exists"
                     fi
                     export CWD="$dn"
 
-                    tm -f -te -d nw -c "$dn" "zcd $(aqf "$dnq")"
+                    pen-tm -f -te -d nw -c "$dn" "zcd $(aqf "$dnq")"
                 fi
                 exit 0
             }
             exit $?
         else
             ns "No dirs exist anymore." &>/dev/null
-            tm -f -te -d dir
+            pen-tm -f -te -d dir
         fi
         exit 0
     }
     ;;
 
     urls) {
-        tm capp | xurls | tail -n 1 | xc -i -n
-        tm capp | xurls | soak | sps v
+        pen-tm capp | xurls | tail -n 1 | xc -i -n
+        pen-tm capp | xurls | soak | sps v
     }
     ;;
 
     urls-file) {
-        tm -f -d -t nw tm-urls
+        pen-tm -f -d -t nw tm-urls
     }
     ;;
 
     d|dir|directories) {
-        tm -f -d -t nw tm-dir
+        pen-tm -f -d -t nw tm-dir
     }
     ;;
 
     s|src|source-files) {
-        tm -f -d -t nw tm-src
+        pen-tm -f -d -t nw tm-src
     }
     ;;
 
     tools) {
-        tm -f -d -t nw tm-tools
+        pen-tm -f -d -t nw tm-tools
     }
     ;;
 
     rsp|respawn-pane) {
-        tm n "$f :: NEEDS WORK"
+        pen-tm n "$f :: NEEDS WORK"
 
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             -t) {
@@ -2752,14 +2755,14 @@ case "$f" in
     ;;
 
     project-edit) {
-        tm n "$f :: NOT IMPLEMENTED. Use projectile"
+        pen-tm n "$f :: NOT IMPLEMENTED. Use projectile"
         exit 1
 
     }
     ;;
 
     copy-session-name) {
-        tm n "$f :: NOT IMPLEMENTED. Need objects to represent sessions. name vs id"
+        pen-tm n "$f :: NOT IMPLEMENTED. Need objects to represent sessions. name vs id"
         exit 1
 
     }
@@ -2799,7 +2802,7 @@ case "$f" in
         fi
         message="$(p "$message" | q)"
 
-        tm -t -d sph -pak "lit $message"
+        pen-tm -t -d sph -pak "lit $message"
     }
     ;;
 
@@ -2828,53 +2831,53 @@ case "$f" in
     tput-search) { # This was the urwid program that allowed me to select different search engines
         keys="$(cat)"
 
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
     }
     ;;
 
     efs|edit-fsnotes) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
         :
     }
     ;;
 
     gfs|get-fsnotes|fsnotes) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
         :
     }
     ;;
 
     show-vim-mappings) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
     }
     ;;
 
     find-path-from-notes) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
     }
     ;;
 
     find-text-in-terminals) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
 
     }
     ;;
 
     search-command-copy) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
 
     }
     ;;
 
     ncmd|notes-commands) { # scrape out all the commands and run them. Use search for this
 
-        tm -tt -d dv "$f :: NOT IMPLEMENTED"
+        pen-tm -tt -d dv "$f :: NOT IMPLEMENTED"
 
     }
     ;;
 
     ntv|tvs) {
-        tm tv -vs "$@"
+        pen-tm tv -vs "$@"
     }
     ;;
 
@@ -2924,9 +2927,9 @@ case "$f" in
             tf_ft="$(pen-tf ft "$ft" || echo /dev/null)"
 
             printf -- "%s" "$input" > "$tf_ft"
-            tm -d -tout spv -noerror "$EDITOR -nad $tf_ft"
+            pen-tm -d -tout spv -noerror "$EDITOR -nad $tf_ft"
         else
-            printf -- "%s" "$input" | tm -S -tout $window_mode -noerror "$EDITOR -nad"
+            printf -- "%s" "$input" | pen-tm -S -tout $window_mode -noerror "$EDITOR -nad"
         fi
         printf -- "%s" "$input"
 
@@ -3035,12 +3038,12 @@ case "$f" in
     ;;
 
     pc|pipec|pipe-to-command|sf|select-filter|split-and-pipe|spp) {
-        filter="$(set -o pipefail; cat $NOTES/ws/filters/filters.sh | tm mfz | remove-hash-comments.sh)"
+        filter="$(set -o pipefail; cat $NOTES/ws/filters/filters.sh | pen-tm mfz | remove-hash-comments.sh)"
         ret="$?"
 
         if ! test "$ret" -eq "130"; then
 
-            tm -d spv "unbuffer tm pp -a '$CALLER_PANE' | $filter; pak -m \"source pane closed\""
+            pen-tm -d spv "unbuffer pen-tm pp -a '$CALLER_PANE' | $filter; pak -m \"source pane closed\""
             tmux select-pane -t "$CALLER_PANE"
 
         fi
@@ -3063,14 +3066,14 @@ case "$f" in
         stdinfd=/proc/$$/fd/0
         stdoutfd=/proc/$$/fd/1
 
-        0</dev/null tm sps -w "cat \"$stdinfd\" | $pipe_cmd"
+        0</dev/null pen-tm sps -w "cat \"$stdinfd\" | $pipe_cmd"
     }
     ;;
 
     vipe|eipe) { # edit and continue
         pipe_cmd="$1"; : ${pipe_cmd:="$f"}
 
-        tm -sout -vipe sps "$pipe_cmd" | cat
+        pen-tm -sout -vipe sps "$pipe_cmd" | cat
     }
     ;;
 
@@ -3078,7 +3081,7 @@ case "$f" in
         exec 0</dev/null
         CMD="$(cmd "$@")"
         : ${CMD:="$(cmd "$@")"}
-        tm -te sps -bash "yn $CMD"
+        pen-tm -te sps -bash "yn $CMD"
         exit "$?"
     }
     ;;
@@ -3087,7 +3090,7 @@ case "$f" in
         stdinfd=/proc/$$/fd/0
         stdoutfd=/proc/$$/fd/1
 
-        0</dev/null tm -te sps -w "ised $stdinfd $stdoutfd" | cat
+        0</dev/null pen-tm -te sps -w "ised $stdinfd $stdoutfd" | cat
     }
     ;;
 
@@ -3095,7 +3098,7 @@ case "$f" in
         stdinfd=/proc/$$/fd/0
         stdoutfd=/proc/$$/fd/1
 
-        0</dev/null tm -te sps -nv -w "cat $stdinfd | tee $stdoutfd 1>&2" | cat
+        0</dev/null pen-tm -te sps -nv -w "cat $stdinfd | tee $stdoutfd 1>&2" | cat
     }
     ;;
 
@@ -3131,76 +3134,76 @@ case "$f" in
             *) break;
         esac; done
 
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
     }
     ;;
 
     monitor) {
-        tm n "$f :: NOT FULLY IMPLEMENTED"
+        pen-tm n "$f :: NOT FULLY IMPLEMENTED"
 
-        tm -d nw "htop"
+        pen-tm -d nw "htop"
     }
     ;;
 
     select-subsession) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
     }
     ;;
 
     subsession) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
         paths="$(find . -maxdepth 1 -type d)"
         if [ -n "$paths" ]; then
-            paths="$(pl "$paths" | s uniq | tm -f -i spv -noerror "mfz" | umn)"
+            paths="$(pl "$paths" | s uniq | pen-tm -f -i spv -noerror "mfz" | umn)"
             if [ -n "$paths" ]; then
 
                 bn="$(basename "$paths")"
 
-                tm ns -r -l -s -c "$bn"
+                pen-tm ns -r -l -s -c "$bn"
             fi
         fi
     }
     ;;
 
     kass|kill-subsessions) {
-        tm n "$f :: NOT IMPLEMENTED. Use data structure"
+        pen-tm n "$f :: NOT IMPLEMENTED. Use data structure"
     }
     ;;
 
     kss|kill-subsession) {
-        tm n "$f :: NOT IMPLEMENTED. Use data structure"
+        pen-tm n "$f :: NOT IMPLEMENTED. Use data structure"
     }
     ;;
 
     bh|base-here) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
     }
     ;;
 
     bl|base-localhost) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
     }
     ;;
 
     os|omni-session) {
-        tm n "$f :: NOT IMPLEMENTED. Can't remember what this did"
+        pen-tm n "$f :: NOT IMPLEMENTED. Can't remember what this did"
     }
     ;;
 
     lkb|list-keybindings) {
-        tmux list-keys | tm -S -tout nw -n tmux-key-bindings "v -c \"set ft=tmux\""
+        tmux list-keys | pen-tm -S -tout nw -n tmux-key-bindings "v -c \"set ft=tmux\""
     }
     ;;
 
     cr|compile-run) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
 
     }
     ;;
 
     open-list-of-files-in-emacs) {
 
-        tm -S -tout spv -noerror sp
+        pen-tm -S -tout spv -noerror sp
     }
     ;;
 
@@ -3224,7 +3227,7 @@ case "$f" in
                 line="$(p "$line" | scrape-files.sh | qne)" # use scrape-files because it could be an org-mode link
                 bn="$(basename "$line" | slugify)"
 
-                tm -te -d nw -n "$bn" "open -e $line"
+                pen-tm -te -d nw -n "$bn" "open -e $line"
             fi
         done
     }
@@ -3258,14 +3261,14 @@ case "$f" in
 
         y="$(tmux display -p "#{cursor_y}")"
 
-        tm -f cat | sed -n "$((y + 1))p" | {
+        pen-tm -f cat | sed -n "$((y + 1))p" | {
             clean-repl
         } | xc -i -n
     }
     ;;
 
     remote-xclip) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
 
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             -r) {
@@ -3293,12 +3296,12 @@ case "$f" in
 
     unimplemented) {
         p1="$1"; : ${p1:="This command is"}
-        tm n "$p1 :: NOT IMPLEMENTED"
+        pen-tm n "$p1 :: NOT IMPLEMENTED"
     }
     ;;
 
     git) {
-        tm n "$p1 :: NOT IMPLEMENTED"
+        pen-tm n "$p1 :: NOT IMPLEMENTED"
         pl "git status for everything below"
         pl "I could open a hydra here or I could use lots of different ranger bindings"
         pak
@@ -3306,7 +3309,7 @@ case "$f" in
     ;;
 
     gist) {
-        tm n "$p1 :: NOT IMPLEMENTED"
+        pen-tm n "$p1 :: NOT IMPLEMENTED"
         pl "git status for everything below"
         pl "Use a command from the git hydra"
 
@@ -3355,12 +3358,12 @@ case "$f" in
     ;;
 
     command-history) {
-        tm sel "localhost:history»" && tm rsp -f -t "localhost:history»"
+        pen-tm sel "localhost:history»" && pen-tm rsp -f -t "localhost:history»"
     }
     ;;
 
     recent-isues) {
-        tm sel "localhost:recent-issues»"
+        pen-tm sel "localhost:recent-issues»"
         tmux respawn-pane -k -t "localhost:recent-issues»"
     }
     ;;
@@ -3379,7 +3382,7 @@ case "$f" in
 
         PARENT_PANE_ID="$(tmux show-env -t "$target" PARENT_WINDOW_ID | sed 's/.*=//')"
         if [ -n "$PARENT_PANE_ID" ]; then
-            tm sel "$PARENT_PANE_ID"
+            pen-tm sel "$PARENT_PANE_ID"
         fi
 
         exit $?
@@ -3425,17 +3428,17 @@ case "$f" in
         pattern="$1"
         : ${pattern:="»"}
 
-        tm -f capture-stdout | remove-trailing-blank-lines | sed '/^$/d' | tac | sed -n -e 1d -e "0,/$pattern/p" | tac | sed 1d
+        pen-tm -f capture-stdout | remove-trailing-blank-lines | sed '/^$/d' | tac | sed -n -e 1d -e "0,/$pattern/p" | tac | sed 1d
     }
     ;;
 
     edit-file) {
         paths="$(find . -maxdepth 1 -type f | sed 's/^..//')"
         if [ -n "$paths" ]; then
-            paths="$(pl "$paths" | s uniq | tm -f -i spv -noerror "mfz -p" | umn)"
+            paths="$(pl "$paths" | s uniq | pen-tm -f -i spv -noerror "mfz -p" | umn)"
             pl "$paths" | awk1 | while IFS=$'\n' read -r line; do
                 if test -n "$line"; then
-                    tm tp "$line"
+                    pen-tm tp "$line"
                 fi
             done
 
@@ -3472,7 +3475,7 @@ case "$f" in
         if [ -n "$result" ]; then
             full_pane_id="$(p "$result" | sed 's/.*\t//')"
 
-            tm sel "$full_pane_id"
+            pen-tm sel "$full_pane_id"
         fi
 
     }
@@ -3480,7 +3483,7 @@ case "$f" in
 
     select-current) {
         lastwin="$(tmux list-windows -t localhost_current | sed -n '$s/^\([0-9]\+\).*/\1/p')"
-        tm sel "localhost_current:$lastwin"
+        pen-tm sel "localhost_current:$lastwin"
         exit 0
     }
     ;;
@@ -3493,7 +3496,7 @@ case "$f" in
                 if [ -e "$line" ]; then
                     line="$(p "$line" | qne)"
                     bn="$(basename "$line")"
-                    tm -te -d nw -noerror -n "$bn" "open -e $line"
+                    pen-tm -te -d nw -noerror -n "$bn" "open -e $line"
                 fi
             done
         fi
@@ -3508,7 +3511,7 @@ case "$f" in
                 if [ -e "$line" ]; then
                     line="$(p "$line" | qne)"
                     bn="$(basename "$line")"
-                    tm -te -d nw -noerror -n "$bn" "open -e $line"
+                    pen-tm -te -d nw -noerror -n "$bn" "open -e $line"
                 fi
             done
         fi
@@ -3516,13 +3519,13 @@ case "$f" in
     ;;
 
     mfz|fzf) {
-        tm -S -sout sps -args -noerror "$f" "$@" | cat
+        pen-tm -S -sout sps -args -noerror "$f" "$@" | cat
         exit $?
     }
     ;;
 
     less) {
-        tm -S -tout spv -noerror tless
+        pen-tm -S -tout spv -noerror tless
         exit $?
     }
     ;;
@@ -3531,7 +3534,7 @@ case "$f" in
         IFS= read -rd '' input < <(cat /dev/stdin)
 
         export HAS_STDOUT
-        sout="$(set -o pipefail; printf -- "%s" "$input" | tm spv -noerror "f filter-with-fzf" | cat)"
+        sout="$(set -o pipefail; printf -- "%s" "$input" | pen-tm spv -noerror "f filter-with-fzf" | cat)"
         ret="$?"
 
         if test "$ret" -eq 0; then
@@ -3554,9 +3557,9 @@ case "$f" in
     }
     ;;
 
-    tw|w) { slug="$(echo "$@" | tr -d '\n' | slugify | cut -c -10)"; tm -d nw -n "$slug" -fa "$@"; } ;;
-    h) { tm -d sph -d -fa "$@"; } ;;
-    v) { tm -d spv -d -fa "$@"; } ;;
+    tw|w) { slug="$(echo "$@" | tr -d '\n' | slugify | cut -c -10)"; pen-tm -d nw -n "$slug" -fa "$@"; } ;;
+    h) { pen-tm -d sph -d -fa "$@"; } ;;
+    v) { pen-tm -d spv -d -fa "$@"; } ;;
 
     template) {
         :
@@ -3564,7 +3567,7 @@ case "$f" in
     ;;
 
     *) {
-        tm n "$f :: NOT IMPLEMENTED"
+        pen-tm n "$f :: NOT IMPLEMENTED"
     }
     ;;
 

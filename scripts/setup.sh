@@ -228,6 +228,8 @@ agi w3m
 
 agi fzf
 
+agi zsh
+
 # This is kinda optional but will give you a web-facing Pen
 agi libssl-dev
 # pyf butterfly
@@ -276,3 +278,6 @@ if [ -f "$term_setup_fp" ]; then
     . "$term_setup_fp"
 fi
 HEREDOC
+
+printf -- "%s\n" "$SHELL_CODE" >> ~/.bashrc
+printf -- "%s\n" "$SHELL_CODE" >> ~/.zshrc

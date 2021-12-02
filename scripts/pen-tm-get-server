@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+server="$(echo "$TMUX" | cut -d , -f 1 | xargs basename)"
+: ${server:="default"}
+
+echo "$server"
