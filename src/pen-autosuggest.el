@@ -34,13 +34,17 @@ respectively."
   "Keymap that is enabled during an active history
   autosuggestion.")
 
+(defset pen-autosuggest-candidates-list '("alpha" "beta" "charlie"))
+
+(defset penel-prompt-regexp "")
+
 (defun pen-autosuggest-candidates (prefix)
   "Select the first penel history candidate that starts with PREFIX."
   (let* ((history
           (delete-dups
            (mapcar (lambda (str)
                      (string-trim (substring-no-properties str)))
-                   (ring-elements penel-history-ring))))
+                   pen-autosuggest-candidates-list)))
          (most-similar (cl-find-if
                         (lambda (str)
                           (string-prefix-p prefix str))
@@ -62,6 +66,10 @@ respectively."
     (let ((inhibit-message t))
       (company-begin-backend 'pen-autosuggest))))
 
+(defun pen-autosuggest-bol ()
+  (beginning-of-line)
+  (point))
+
 (defun pen-autosuggest--prefix ()
   "Get current penel input."
   (let* ((input-start (progn
@@ -70,7 +78,7 @@ respectively."
                           (while (not (looking-at-p penel-prompt-regexp))
                             (forward-line -1))
                           (re-search-forward penel-prompt-regexp nil 'noerror)
-                          (penel-bol))))
+                          (pen-autosuggest-bol))))
          (prefix
           (string-trim-left
            (buffer-substring-no-properties
@@ -86,7 +94,8 @@ respectively."
   (interactive (list 'interactive))
   (cl-case command
     (interactive (company-begin-backend 'pen-autosuggest))
-    (prefix (and (eq major-mode 'penel-mode)
+    (prefix (and ;; (eq major-mode 'penel-mode)
+                 (minor-mode-enabled pen)
                  (pen-autosuggest--prefix)))
     (candidates (pen-autosuggest-candidates arg))
     (require-match 'never)))
