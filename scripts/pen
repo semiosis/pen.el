@@ -739,7 +739,14 @@ case "$sn" in
 
     penq) {
         show_banner=n
-        set -- -e "(kill-emacs)"
+        if { ! inside-docker-p; } && docker-running-p; then
+            set -- -e "(kill-emacs)"
+        elif inside-docker-p; then
+            killall emacs
+        else
+            echo Not running. 1>&2
+            exit 0
+        fi
     }
     ;;
 

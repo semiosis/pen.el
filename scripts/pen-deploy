@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+# Deploy new version of Pen.el
+
+sps pen -nw -n
+sleep 1
+# rm -rf ~/.pen/pen.el
+
+pen sh rm -rf /root/.emacs.d/pen.el
+pen sh rm -rf /root/.emacs.d/engines
+pen sh rm -rf /root/.emacs.d/pen-contrib.el
+docker cp $MYGIT/semiosis/pen.el pen:/root/.emacs.d/
+docker cp $MYGIT/semiosis/engines pen:/root/.emacs.d/
+docker cp $MYGIT/semiosis/pen-contrib.el pen:/root/.emacs.d/
+
+id="$(docker ps --filter "name=pen" | sed 1d | awk '{print $1}')"
+if test -n "$id"; then
+    image_id="$(docker commit "$id")"
+    echo "$image_id"
+fi
+
+penq
+
+if test -n "$image_id"; then
+    docker image rm semiosis/pen.el:latest
+    docker tag "$image_id" semiosis/pen.el:latest
+fi
