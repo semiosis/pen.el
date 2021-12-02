@@ -26,6 +26,12 @@ export PEN_USE_GUI=n
 ttyd -p 7681 nvc bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
 )
 
+if test "$USE_NVC" = "y"; then
+    set -- -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(disable-theme 'spacemacs-dark))" "$@"
+else
+    set -- -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t))" "$@"
+fi
+
 echo "ttyd running on port 7681, serving Pen.el on http"
 
 # # This should be 'pen' if on the host but 'emacs -nwemacsclient -a "" -t' if inside docker
