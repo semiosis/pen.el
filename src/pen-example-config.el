@@ -45,6 +45,7 @@
 (define-key function-key-map (kbd "C-M-\\") 'hyperify)
 (define-key global-map (kbd "M-h") nil)
 (define-key function-key-map (kbd "M-h") 'hyperify)
+(define-key function-key-map (kbd "M-H") 'hyperify)
 
 ;; Is this a good idea?
 ;; (define-key function-key-map (kbd "TAB") 'hyperify)
