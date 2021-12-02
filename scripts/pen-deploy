@@ -4,7 +4,7 @@ export TTY
 # Deploy new version of Pen.el
 
 sps pen -nw -n
-sleep 1
+pak
 # rm -rf ~/.pen/pen.el
 
 pen sh rm -rf /root/.emacs.d/pen.el

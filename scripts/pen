@@ -452,15 +452,12 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = peni || test "$sn" = 
     if ! inside-docker-p; then
         ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
         shift
-        set -- "/root/.pen/documents/$bn" "$@"
+        # set -- "/root/.pen/documents/$bn" "$@"
+        set -- -e "(find-file $(cmd-nice "/root/.pen/documents/$bn"))"
     fi
-
-    # sn=penc
-
-    # set -- -e "(find-file $(cmd-nice "/root/.pen/documents/$bn")"
 fi
 
-if test "$sn" = pen && test "$1" = -e; then
+if test "$sn" = pen && test "$1" = -e && docker-running-p; then
     shift
     sn=pene
 fi

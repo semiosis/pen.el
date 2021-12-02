@@ -50,9 +50,7 @@ mkdir -p ~/.pen/ht-cache
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        # Not sure why nvc was crashing here
         nvc emacsclient "$@"
-        pen-pak
     else
         emacsclient "$@"
     fi
