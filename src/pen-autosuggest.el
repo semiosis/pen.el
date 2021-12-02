@@ -113,8 +113,8 @@ respectively."
   (cl-case command
     (interactive (company-begin-backend 'pen-autosuggest))
     (prefix (and ;; (eq major-mode 'penel-mode)
-                 (minor-mode-enabled pen)
-                 (pen-autosuggest--prefix)))
+             (minor-mode-enabled pen)
+             (pen-autosuggest--prefix)))
     (candidates (pen-autosuggest-candidates arg))
     (require-match 'never)))
 

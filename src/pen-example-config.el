@@ -741,6 +741,7 @@
 (define-key pen-map (kbd "M-m") 'right-click-context-menu)
 (define-key pen-map (kbd "C-M-e") (kbd "C-e"))
 (define-key selected-keymap (kbd "w") 'kill-ring-save)
+(define-key org-mode-map (kbd "M-h") nil)
 
 (pen-autosuggest-mode t)
 
