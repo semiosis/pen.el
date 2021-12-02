@@ -1,0 +1,70 @@
+#!/bin/bash
+
+MESSAGE=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -h) {
+        HIDDEN=y
+        shift
+    }
+    ;;
+
+    -m) {
+        MESSAGE="$2. "
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$NOPAK" = "y"; then
+    exit 0
+fi
+
+trap func_trap INT
+func_trap() {
+    :
+}
+
+key="$1"
+
+is_tty() {
+    [[ -t 1 ]]
+}
+
+ns() {
+    printf -- "%s\n" "$@" 2>&1
+}
+
+if ! is_tty; then
+    ns "pak can't read. continuing"
+    exit 0
+fi
+
+
+(  exec <`pen-tm-tty`  ) &>/dev/null
+
+if [ -n "$key" ]; then
+    if ! test "$HIDDEN" = "y"; then
+        printf -- "%s\n" "${MESSAGE}Press '$key' to continue"
+    else
+        tput civis
+    fi
+    read -n 1 -s ret
+    code="$?" # if this is not 0 then pak must not be working. Don't want an infinite loop
+    while test "$code" = "0" && ! [[ "$ret" == "$key" ]]; do
+        read -n 1 -s ret
+    done
+
+    if test "$HIDDEN" = "y"; then
+        tput cnorm
+    fi
+
+    if ! test "$code" = "0"; then
+        ns "pak can't read. quitting"
+    fi
+else
+    printf -- "%s\n" "${MESSAGE}Press any key..."
+    read -n 1 -s
+fi
