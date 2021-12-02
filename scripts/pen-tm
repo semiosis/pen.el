@@ -132,8 +132,6 @@ if ! test "$FAST" = y && ! tmux info &> /dev/null; then # it's important to have
 
     export FORCE
     CWD="$NOTES" tmux new -d
-
-    exit 0
 fi
 
 invocation="$0 $@"
