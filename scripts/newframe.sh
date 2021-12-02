@@ -21,7 +21,7 @@ export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
 if test "$USE_NVC" = "y"; then
-    set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(disable-theme 'spacemacs-dark))"
+    set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(ignore-errors (disable-theme 'spacemacs-dark)))"
 else
     set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t))"
 fi
