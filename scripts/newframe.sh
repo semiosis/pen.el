@@ -21,9 +21,9 @@ export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
 if test "$USE_NVC" = "y"; then
-    emacsclient -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(disable-theme 'spacemacs-dark))"
+    set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(disable-theme 'spacemacs-dark))"
 else
-    emacsclient -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t))"
+    set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t))"
 fi
 
 mkdir -p ~/.pen/ht-cache
