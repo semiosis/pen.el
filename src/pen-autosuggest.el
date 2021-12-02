@@ -24,6 +24,18 @@ respectively."
   :group 'pen-autosuggest
   :type 'boolean)
 
+;; Fibonacci function
+;; (defun pen-autosuggest--fib (n)
+;;   )
+
+;; How do I want this to work?
+;; It might currently be worth only generating one
+(defun pen-set-autosuggestions ()
+  (setq pen-autosuggest-candidates-list
+        ;; (pen-no-select (pen-line-complete (pen-complete-function (pen-preceding-text))))
+        (mapcar (lambda (s) (concat (pen-preceding-text-line) s))
+                (pen-no-select (pen-line-complete (pen-one (pen-complete-function (pen-preceding-text))))))))
+
 (defvar pen-autosuggest-active-map
   (let ((keymap (make-sparse-keymap)))
     (define-key keymap (kbd "<right>") 'company-complete-selection)
@@ -74,21 +86,24 @@ respectively."
 
 (defun pen-autosuggest--prefix ()
   "Get current penel input."
-  (let* ((input-start (progn
-                        (save-excursion
-                          (beginning-of-line)
-                          (while (not (looking-at-p penel-prompt-regexp))
-                            (forward-line -1))
-                          (re-search-forward penel-prompt-regexp nil 'noerror)
-                          (pen-autosuggest-bol))))
-         (prefix
-          (string-trim-left
-           (buffer-substring-no-properties
-            input-start
-            (line-end-position)))))
-    (if (not (string-empty-p prefix))
-        prefix
-      'stop)))
+  ;; (let* ((input-start
+  ;;         (progn
+  ;;           (save-excursion
+  ;;             (beginning-of-line)
+  ;;             (while (not (looking-at-p penel-prompt-regexp))
+  ;;               (forward-line -1))
+  ;;             (re-search-forward penel-prompt-regexp nil 'noerror)
+  ;;             (pen-autosuggest-bol)))
+  ;;         )
+  ;;        (prefix
+  ;;         (string-trim-left
+  ;;          (buffer-substring-no-properties
+  ;;           input-start
+  ;;           (line-end-position)))))
+  ;;   (if (not (string-empty-p prefix))
+  ;;       prefix
+  ;;     'stop))
+  (pen-preceding-text-line))
 
 ;;;###autoload
 (defun pen-autosuggest (command &optional arg &rest ignored)

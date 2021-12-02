@@ -3420,6 +3420,13 @@ But use the results-analyser."
            (force-n-completions 1))
        ,',@body)))
 
+(defmacro pen-no-select (&rest body)
+  ""
+  `(eval
+    `(let ((do-pen-batch t)
+           (pen-no-select-result t))
+       ,',@body)))
+
 (defmacro pen-filter (&rest body)
   ""
   `(eval

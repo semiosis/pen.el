@@ -13,8 +13,8 @@
     (point)))
 
 (defun pen-preceding-text-line ()
-  (cond
-   (derived-mode-p 'term-mode))
+  ;; (cond
+  ;;  (derived-mode-p 'term-mode))
   (str (buffer-substring (point) (max 1 (pen-beginning-of-line-point)))))
 
 (defun get-point-start-of-nth-previous-line (n)
