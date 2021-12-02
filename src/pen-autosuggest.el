@@ -25,6 +25,7 @@ respectively."
   :type 'boolean)
 
 ;; Fibonacci function
+;; https
 ;; (defun pen-autosuggest--fib (n)
 ;;   )
 

@@ -742,4 +742,6 @@
 (define-key pen-map (kbd "C-M-e") (kbd "C-e"))
 (define-key selected-keymap (kbd "w") 'kill-ring-save)
 
+(pen-autosuggest-mode t)
+
 (provide 'pen-example-config)

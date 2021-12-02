@@ -45,6 +45,7 @@
 (require 'eww-lnum)
 (require 'pen-edit)
 (require 'pen-client)
+(require 'pen-autosuggest)
 
 (defvar my-completion-engine 'pen-company-filetype)
 
