@@ -12,3 +12,14 @@ services:
     restart: always
     ports:
       - 8000:8000
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: datahike
+      POSTGRES_PASSWORD: clojure
+      POSTGRES_DB: "pg-example"
+    ports:
+      - "5437:5432"
+    volumes:
+      - /tmp/datahike_example/data:/var/lib/postgresql/data
