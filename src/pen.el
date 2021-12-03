@@ -3626,7 +3626,8 @@ But use the results-analyser."
               nil nil nil nil nil
               ,@args))
     (if (and (or (derived-mode-p 'prog-mode)
-                 (derived-mode-p 'term-mode))
+                 (derived-mode-p 'term-mode)
+                 (derived-mode-p 'text-mode))
              (not (string-equal (buffer-name) "*scratch*")))
         ;; Can't put ink-propertise here
         (eval `(let ((engine "OpenAI Codex"))
