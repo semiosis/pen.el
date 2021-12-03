@@ -3616,28 +3616,35 @@ But use the results-analyser."
                                '("\n"))))
        ,',@body)))
 
+(defmacro pen-less-repetition (&rest body)
+  "This wraps around pen function calls to make them complete line only"
+  `(eval
+    `(let ((frequency-penalty 0.3))
+       ,',@body)))
+
 (defun pen-complete-function (preceding-text &rest args)
   ;; (pf-generic-completion-50-tokens/1 preceding-text)
 
   ;; TODO Ensure privacy - pen-avoid-divulging
-  (if (string-empty-p (s-chompall (buffer-string)))
-      (eval `(pf-generate-the-contents-of-a-new-file/6
-              preceding-text
-              nil nil nil nil nil
-              ,@args))
-    (if (and (or (derived-mode-p 'prog-mode)
-                 (derived-mode-p 'term-mode)
-                 (derived-mode-p 'text-mode))
-             (not (string-equal (buffer-name) "*scratch*")))
-        ;; Can't put ink-propertise here
-        (eval `(let ((engine "OpenAI Codex"))
-                 ;; (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-surrounding-proceeding-text) ,@args)
-                 (if (pen-var-value-maybe 'no-utilise-code)
-                     (pf-generic-file-type-completion-nocode/2 (pen-detect-language) preceding-text ,@args)
-                   (if pen-cost-efficient
-                       (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)
-                     (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-text)) ,@args)))))
-      (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args)))))
+  (pen-less-repetition
+   (if (string-empty-p (s-chompall (buffer-string)))
+       (eval `(pf-generate-the-contents-of-a-new-file/6
+               preceding-text
+               nil nil nil nil nil
+               ,@args))
+     (if (and (or (derived-mode-p 'prog-mode)
+                  (derived-mode-p 'term-mode)
+                  (derived-mode-p 'text-mode))
+              (not (string-equal (buffer-name) "*scratch*")))
+         ;; Can't put ink-propertise here
+         (eval `(let ((engine "OpenAI Codex"))
+                  ;; (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-surrounding-proceeding-text) ,@args)
+                  (if (pen-var-value-maybe 'no-utilise-code)
+                      (pf-generic-file-type-completion-nocode/2 (pen-detect-language) preceding-text ,@args)
+                    (if pen-cost-efficient
+                        (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)
+                      (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-text)) ,@args)))))
+       (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))))
 
 (defun pen-complete-insert (s)
   "This is a completely useless function ,currently"
