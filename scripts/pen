@@ -1051,6 +1051,10 @@ CMD="$(cmd "$@")"
 
 IFS= read -r -d '' shcode <<HEREDOC
     # --user "$(id -u):$(id -g)"
+
+    # Double ensure it's removed
+    docker container rm "$pen_container_name" &>/dev/null
+
     docker "$docker_cmd" \
         $(test "$docker_cmd" = run && printf -- "%s " --rm ) \
         $(test -n "$OPENAI_API_KEY" && printf -- "%s " -e "OPENAI_API_KEY:$OPENAI_API_KEY" ) \
