@@ -218,7 +218,7 @@ These commands include \\[set-mark-command] and \\[start-kbd-macro]."
                    ", "
                    "global prefix: " (sor (str current-global-prefix-arg) "-"))))
 
-(define-key pen-map (kbd "H-#") 'test-cl-defun)
+;; (define-key pen-map (kbd "H-#") 'test-cl-defun)
 
 (defun test-global-prefix ()
   (interactive)
@@ -227,7 +227,7 @@ These commands include \\[set-mark-command] and \\[start-kbd-macro]."
                    ", "
                    "global prefix: " (sor (str current-global-prefix-arg) "-"))))
 
-(define-key global-map (kbd "H-$") 'test-global-prefix)
+;; (define-key global-map (kbd "H-$") 'test-global-prefix)
 
 (defun command-execute (cmd &optional record-flag keys special)
   ;; BEWARE: Called directly from the C code.
