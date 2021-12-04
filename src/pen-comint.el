@@ -13,7 +13,8 @@
                                           (comint-bol))))
                                     (if (< pos (point))
                                         (delete-backward-char 1))))
-   ((derived-mode-p 'term-mode)
+   ((and (derived-mode-p 'term-mode)
+         (minor-mode-enabled term-char-mode))
     (let ((pos
            (save-excursion-and-region-reliably
             (comint-bol))))
