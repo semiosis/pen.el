@@ -207,6 +207,16 @@
   (if (and buffer-name reuse (get-buffer buffer-name))
       (switch-to-buffer buffer-name)
     (with-current-buffer (term program)
+
+      ;; This takes care of read-only-mode upon starting
+      (run-with-idle-timer
+       0.1
+       nil (lambda ()
+             ;; (read-only-mode -1)
+             (ignore-errors
+               (term-char-mode))))
+
+      ;; (term-send-raw-string "hi")
       (if closeframe
           (defset-local termframe-local termframe))
       (let ((modefun (intern (concat (slugify (or modename program)) "-term-mode"))))
