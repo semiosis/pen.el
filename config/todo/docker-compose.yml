@@ -23,9 +23,9 @@ services:
       - "5437:5432"
     volumes:
       - /tmp/datahike_example/data:/var/lib/postgresql/data
-  spacy-services:
-    # $OPENSEMS/docker-compose.yml
-    image: opensemanticsearch/spacy-services
-    restart: always
-    build:
-      context: src/spacy-services.deb/src/spacy-services/
+  # spacy-services:
+  #   # $OPENSEMS/docker-compose.yml
+  #   image: opensemanticsearch/spacy-services
+  #   restart: always
+  #   build:
+  #     context: src/spacy-services.deb/src/spacy-services/

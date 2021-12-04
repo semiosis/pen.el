@@ -21,6 +21,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if test "$#" -eq 0; then
+    set -- sh
+fi
+
 if test "$DO_EXEC" = "y"; then
     CMD="$1"
 else
