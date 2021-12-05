@@ -838,6 +838,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                              no-gen
                                                              select-only-match
                                                              variadic-var
+                                                             pretext
                                                              inject-gen-start
                                                              override-prompt
                                                              force-interactive
@@ -1269,6 +1270,9 @@ Reconstruct the entire yaml-ht for a different language."
                     (final-n-target
                      (or (pen-var-value-maybe 'n-target)
                          ,n-target))
+
+                    ;; (final-pretext
+                    ;;  (expand-template pretext))
 
                     (final-inject-gen-start
                      (expand-template
@@ -1715,6 +1719,9 @@ Reconstruct the entire yaml-ht for a different language."
                     (final-prompt (s-remove-trailing-newline final-prompt))
 
                     ;; (let ((override-prompt "Hi,")) (pf-who-is-the-subject-matter-expert-for-/1))
+
+                    ;; pretext is useful for examples for the generation
+                    (final-prompt (concat pretext) final-prompt)
 
                     (final-prompt
                      (progn
