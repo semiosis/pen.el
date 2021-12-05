@@ -50,9 +50,9 @@ mkdir -p ~/.pen/ht-cache
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        nvc emacsclient "$@"
+        tmux neww nvc emacsclient "$@"
     else
-        emacsclient "$@"
+        tmux neww emacsclient "$@"
     fi
 }
 
