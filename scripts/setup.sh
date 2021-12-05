@@ -271,6 +271,8 @@ pip3 install cohere
 
 agi nano
 
+agi ssh
+
 IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
 export EMACSD=/root/.emacs.d
 term_setup_fp="$EMACSD/pen.el/scripts/setup-term.sh"
