@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+  pen:
+    image: semiosis/pen.el:latest
+    ports:
+      - "57575:57575"
+  semantic:
+    image: "docker.pkg.github.com/github/semantic/semantic:latest"
+    restart: always
+  duckling:
+    image: rasa/duckling:0.1.6.5
+    restart: always
+    ports:
+      - 8000:8000
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: datahike
+      POSTGRES_PASSWORD: clojure
+      POSTGRES_DB: "pg-example"
+    ports:
+      - "5437:5432"
+    volumes:
+      - /tmp/datahike_example/data:/var/lib/postgresql/data
+  # spacy-services:
+  #   # $OPENSEMS/docker-compose.yml
+  #   image: opensemanticsearch/spacy-services
+  #   restart: always
+  #   build:
+  #     context: src/spacy-services.deb/src/spacy-services/
