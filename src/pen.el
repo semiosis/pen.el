@@ -1721,7 +1721,7 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; (let ((override-prompt "Hi,")) (pf-who-is-the-subject-matter-expert-for-/1))
 
                     ;; pretext is useful for examples for the generation
-                    (final-prompt (concat pretext) final-prompt)
+                    (final-prompt (concat pretext final-prompt))
 
                     (final-prompt
                      (progn
