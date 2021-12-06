@@ -38,7 +38,8 @@
   (interactive)
   (let* ((fp "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/negate-sentence-1.prompt")
          (yaml-ht (yamlmod-read-file fp))
-         (paths (pen--htlist-to-alist (ht-get yaml-ht "paths"))))
+         ;; (paths (pen--htlist-to-alist (ht-get yaml-ht "paths")))
+         (paths (ht-get yaml-ht "paths")))
     (pen-etv (pps paths))))
 
 (defun pen-load-vars ()

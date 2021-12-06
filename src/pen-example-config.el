@@ -457,7 +457,7 @@
   (pen-dk-easy "p" 'pf-imagine-a-project-template/1)
   (pen-dk-easy "b" 'pf-generate-the-contents-of-a-new-file/6)
 
-  (pen-dk-easy "c" 'pen-company-complete)
+  ;; (pen-dk-easy "c" 'pen-company-complete)
   (pen-dk-easy "f" 'pen-company-complete-choose)
   (pen-dk-easy "a" 'pen-company-complete-add)
   (pen-dk-easy "l" 'pen-complete-long)
