@@ -945,6 +945,60 @@ Reconstruct the entire yaml-ht for a different language."
                              (asoc-merge pen-last-prompt-data (list (cons "PEN_PROMPT_PATH" fpath))))
                        fpath))
 
+                    ;; TODO Consider overriding model, temperature and lm-command again
+                    ;; based on this value
+                    ;; Currently, this is inert.
+                    (final-engine
+                     ;; (expand-template
+                     ;;  (str (or
+                     ;;        ,force-engine
+                     ;;        pen-force-engine
+                     ;;        (pen-var-value-maybe 'engine)
+                     ;;        ,engine)))
+                     (str (or
+                           ,force-engine
+                           pen-force-engine
+                           (pen-var-value-maybe 'engine)
+                           ,engine)))
+
+                    (final-temperature)
+                    (final-lm-command)
+                    (final-model)
+
+                    ;; Actually, only override model, temperature and lm-command again if force-engine is set.
+                    ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
+                    ;; Don't override final-'force'-model, etc.
+                    (final-engine
+                     (progn
+                       (if (and
+                            (not pen-prompt-force-engine-disabled)
+                            (sor ,force-engine))
+                           (progn
+                             (pen-log ".prompt Forcing engine:")
+                             (pen-log ".prompt Forcing engine n-completions")
+                             (pen-log ".prompt Forcing engine model")
+                             (pen-log ".prompt Forcing engine all keys etc.")
+                             (let* ((engine (ht-get pen-engines ,force-engine))
+                                    (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                                    (vals (ht-values engine))
+                                    (tups (-zip-lists keys vals))
+                                    (al (pen-list2alist tups))
+                                    (temp (cdr (assoc 'default-temperature al)))
+                                    (model (cdr (assoc 'model al)))
+                                    (lm-command (cdr (assoc 'lm-command al)))
+                                    (api-endpoint (cdr (assoc 'api-endpoint al))))
+                               ;; (if temp
+                               ;;     (setq final-temperature temp))
+                               (if engine
+                                   (setq final-engine engine))
+                               (if model
+                                   (setq final-model model))
+                               (if lm-command
+                                   (setq final-lm-command lm-command))
+                               (if api-endpoint
+                                   (setq final-api-endpoint api-endpoint)))))
+                       final-engine))
+
                     (final-flags
                      (or (pen-var-value-maybe 'flags)
                          ,flags))
@@ -1332,55 +1386,6 @@ Reconstruct the entire yaml-ht for a different language."
                     ;;                    final-max-tokens
                     ;;                    final-engine-min-tokens
                     ;;                    final-engine-max-tokens))
-
-                    ;; TODO Consider overriding model, temperature and lm-command again
-                    ;; based on this value
-                    ;; Currently, this is inert.
-                    (final-engine
-                     (expand-template
-                      (str (or
-                            ,force-engine
-                            pen-force-engine
-                            (pen-var-value-maybe 'engine)
-                            ,engine))))
-
-                    (final-temperature)
-                    (final-lm-command)
-                    (final-model)
-
-                    ;; Actually, only override model, temperature and lm-command again if force-engine is set.
-                    ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
-                    ;; Don't override final-'force'-model, etc.
-                    (final-engine
-                     (progn
-                       (if (and
-                            (not pen-prompt-force-engine-disabled)
-                            (sor ,force-engine))
-                           (progn
-                             (pen-log ".prompt Forcing engine:")
-                             (pen-log ".prompt Forcing engine n-completions")
-                             (pen-log ".prompt Forcing engine model")
-                             (pen-log ".prompt Forcing engine all keys etc.")
-                             (let* ((engine (ht-get pen-engines ,force-engine))
-                                    (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                                    (vals (ht-values engine))
-                                    (tups (-zip-lists keys vals))
-                                    (al (pen-list2alist tups))
-                                    (temp (cdr (assoc 'default-temperature al)))
-                                    (model (cdr (assoc 'model al)))
-                                    (lm-command (cdr (assoc 'lm-command al)))
-                                    (api-endpoint (cdr (assoc 'api-endpoint al))))
-                               (if temp
-                                   (setq final-temperature temp))
-                               (if engine
-                                   (setq final-engine engine))
-                               (if model
-                                   (setq final-model model))
-                               (if lm-command
-                                   (setq final-lm-command lm-command))
-                               (if api-endpoint
-                                   (setq final-api-endpoint api-endpoint)))))
-                       final-engine))
 
                     (final-engine-min-generated-tokens
                      (pen-str2num
