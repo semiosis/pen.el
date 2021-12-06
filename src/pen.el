@@ -3770,76 +3770,7 @@ May use to generate code from comments."
 
 (defun pen-continue-prompt ())
 
-(defun pen-load-defs ()
-  (interactive)
-  (let* ((fp "/home/shane/source/git/semiosis/prompts/prompts/guess-function-name-1.prompt")
-         (yaml-ht (yamlmod-read-file fp))
-         (defs (pen--htlist-to-alist (ht-get yaml-ht "defs"))))
-    (pen-etv (pps defs))))
 
-(defun pen-load-test ()
-  (interactive)
-  (let* (
-         ;; (fp "/home/shane/source/git/spacemacs/prompts/prompts/test-imaginary-equivalence-2.prompt")
-         ;; (fp "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/correct-english-spelling-and-grammar-1.prompt")
-         (fp "/home/shane/var/smulliga/source/git/semiosis/prompts/prompts/describe-image.prompt")
-         (yaml-ht (yamlmod-read-file fp))
-         ;; (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
-         ;; (var (ht-get yaml-ht "n-completions"))
-         ;; (var (pen--htlist-to-alist (ht-get yaml-ht "pipelines")))
-         (var (pen--htlist-to-alist (ht-get yaml-ht "payloads")))
-         (var
-          (cl-loop for pl in var
-                   collect
-                   (let ((v (if (re-match-p "^(" (cdr pl))
-                                (eval-string (cdr pl))
-                              pl)))
-                     (cons (car pl) v)))))
-    ;; (var (pen-yaml-test yaml-ht "filter"))
-    ;; (var (ht-get yaml-ht "filter")))
-    ;; (pen-etv (json--encode-alist var))
-    (pen-etv (pps var))))
-
-(defun pen-load-vars ()
-  (interactive)
-  (let* ((fp "/home/shane/source/git/semiosis/prompts/prompts/append-to-code-3.prompt")
-         (yaml-ht (yamlmod-read-file fp))
-         (vars (pen--htlist-to-alist (ht-get yaml-ht "vars")))
-
-         (vals
-          (cl-loop
-           for atp in vars
-           collect
-           (car (pen-vector2list (cdr atp)))))
-
-         (keys (cl-loop
-                for atp in vars
-                collect
-                (car atp)))
-
-         (als (cl-loop
-               for atp in vars
-               collect
-               (pen--htlist-to-alist (pen-vector2list (cdr atp)))))
-
-         (defaults
-           (cl-loop
-            for atp in als
-            collect
-            (cdr (assoc "default" atp))))
-
-         (examples
-          (cl-loop
-           for atp in als
-           collect
-           (cdr (assoc "example" atp))))
-
-         (preprocessors
-          (cl-loop
-           for atp in als
-           collect
-           (cdr (assoc "preprocessor" atp)))))
-    (pen-etv (pps vals))))
 
 (require 'pen-borrowed)
 (require 'pen-core)
