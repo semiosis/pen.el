@@ -2,6 +2,8 @@ version: "3.9"
 services:
   pen:
     image: semiosis/pen.el:latest
+    # Add mosh and ssh
+    # Is it even possible to ssh into a docker container? I do not think so
     ports:
       - "57575:57575"
   semantic:
