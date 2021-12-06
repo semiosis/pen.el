@@ -1371,6 +1371,7 @@ Reconstruct the entire yaml-ht for a different language."
                      (expand-template
                       (str (or
                             ,force-engine
+                            pen-force-engine
                             (pen-var-value-maybe 'engine)
                             ,engine))))
 
@@ -1381,7 +1382,7 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; Actually, only override model, temperature and lm-command again if force-engine is set.
                     ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
                     ;; Don't override final-'force'-model, etc.
-                    (final-force-engine
+                    (final-engine
                      (progn
                        (if (and
                             (not pen-prompt-force-engine-disabled)
@@ -1402,14 +1403,15 @@ Reconstruct the entire yaml-ht for a different language."
                                     (api-endpoint (cdr (assoc 'api-endpoint al))))
                                (if temp
                                    (setq final-temperature temp))
+                               (if engine
+                                   (setq final-engine engine))
                                (if model
                                    (setq final-model model))
                                (if lm-command
                                    (setq final-lm-command lm-command))
                                (if api-endpoint
                                    (setq final-api-endpoint api-endpoint)))))
-                       ;; This is not used
-                       nil))
+                       final-engine))
 
                     (final-force-temperature
                      (or
@@ -3314,19 +3316,19 @@ But use the results-analyser."
   (let ((overrides
          (flatten-once
           (list
-           (if (sor pen-force-engine)
-               (progn
-                 (pen-log (concat "Custom forcing engine: " pen-force-engine))
-                 (pen-log "Custom forcing engine n-completions")
-                 (pen-log "Custom forcing engine model")
-                 (pen-log "Custom orcing engine all keys etc.")
-                 (let* ((engine (ht-get pen-engines pen-force-engine))
-                        (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                        (vals (ht-values engine))
-                        (tups (-zip-lists keys vals)))
-                   (append
-                    `((engine ,pen-force-engine))
-                    tups))))
+           ;; (if (sor pen-force-engine)
+           ;;     (progn
+           ;;       (pen-log (concat "Custom forcing engine: " pen-force-engine))
+           ;;       (pen-log "Custom forcing engine n-completions")
+           ;;       (pen-log "Custom forcing engine model")
+           ;;       (pen-log "Custom orcing engine all keys etc.")
+           ;;       (let* ((engine (ht-get pen-engines pen-force-engine))
+           ;;              (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+           ;;              (vals (ht-values engine))
+           ;;              (tups (-zip-lists keys vals)))
+           ;;         (append
+           ;;          `((engine ,pen-force-engine))
+           ;;          tups))))
 
            (if pen-force-temperature
                (list `(temperature pen-force-temperature)))
