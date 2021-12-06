@@ -332,6 +332,12 @@
 (define-key global-map (kbd "M-SPC") #'indent-for-tab-command)
 
 
+(defun pen-reload ()
+  (interactive)
+  (pen-generate-prompt-functions)
+  (pen-load-config))
+
+
 ;; I could actually use codex to generate DWIM key bindings from function names
 (defun pen-define-maps ()
   (interactive)
@@ -380,7 +386,7 @@
 
   ;; g Generate
   (pen-dk-easy "g" nil)
-  (pen-dk-easy "G" 'pen-generate-prompt-functions)
+  (pen-dk-easy "G" 'pen-reload)
   (pen-dk-easy "g a" (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
   (pen-dk-easy "g n" 'pf-code-snippet-from-natural-language/2)
   (pen-dk-easy "g p" 'pf-generate-perl-command/1)
@@ -463,7 +469,7 @@
   (pen-dk-htab "l" 'pen-complete-long)
 
   ;; Overrides
-  (pen-dk-htab "g" 'pen-generate-prompt-functions)
+  (pen-dk-htab "g" 'pen-reload)
   (pen-dk-htab "e" 'pen-customize)
 
   (define-key pen-map (kbd "M-1") 'pen-complete-word)
