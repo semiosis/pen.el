@@ -1316,37 +1316,6 @@ Reconstruct the entire yaml-ht for a different language."
                                    (or
                                     final-n-completions 1))))))
 
-                    (final-engine-min-generated-tokens
-                     (pen-str2num
-                      (expand-template
-                       (str (or (pen-var-value-maybe 'engine-min-generated-tokens)
-                                ,engine-min-generated-tokens)))))
-
-                    (final-engine-max-generated-tokens
-                     (pen-str2num
-                      (expand-template
-                       (str (or (pen-var-value-maybe 'engine-max-generated-tokens)
-                                ,engine-max-generated-tokens)))))
-
-                    (final-engine-min-tokens
-                     (pen-str2num
-                      (expand-template
-                       (str (or (pen-var-value-maybe 'engine-min-tokens)
-                                ,engine-min-tokens)))))
-
-                    (final-engine-max-tokens
-                     (pen-str2num
-                      (expand-template
-                       (str (or (pen-var-value-maybe 'engine-max-tokens)
-                                ,engine-max-tokens
-                                2048)))))
-
-                    (final-min-tokens
-                     (pen-str2num
-                      (expand-template
-                       (str (or (pen-var-value-maybe 'min-tokens)
-                                ,min-tokens)))))
-
                     ;; min-tokens is not really adjustable
                     ;; without enough tokens to run a prompt, it should fail
                     ;; TODO Make a hard fail here
@@ -1412,6 +1381,37 @@ Reconstruct the entire yaml-ht for a different language."
                                (if api-endpoint
                                    (setq final-api-endpoint api-endpoint)))))
                        final-engine))
+
+                    (final-engine-min-generated-tokens
+                     (pen-str2num
+                      (expand-template
+                       (str (or (pen-var-value-maybe 'engine-min-generated-tokens)
+                                ,engine-min-generated-tokens)))))
+
+                    (final-engine-max-generated-tokens
+                     (pen-str2num
+                      (expand-template
+                       (str (or (pen-var-value-maybe 'engine-max-generated-tokens)
+                                ,engine-max-generated-tokens)))))
+
+                    (final-engine-min-tokens
+                     (pen-str2num
+                      (expand-template
+                       (str (or (pen-var-value-maybe 'engine-min-tokens)
+                                ,engine-min-tokens)))))
+
+                    (final-engine-max-tokens
+                     (pen-str2num
+                      (expand-template
+                       (str (or (pen-var-value-maybe 'engine-max-tokens)
+                                ,engine-max-tokens
+                                2048)))))
+
+                    (final-min-tokens
+                     (pen-str2num
+                      (expand-template
+                       (str (or (pen-var-value-maybe 'min-tokens)
+                                ,min-tokens)))))
 
                     (final-force-temperature
                      (or
