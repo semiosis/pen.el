@@ -1798,7 +1798,7 @@ Reconstruct the entire yaml-ht for a different language."
                        (if (and final-prepend-previous
                                 (f-exists-p lastgenpath))
                            (concat
-                            (cat (awk1 lastgenpath))
+                            (awk1 (cat lastgenpath))
                             final-delimiter "\n"
                             final-prompt)
                          final-prompt)))
