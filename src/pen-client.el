@@ -142,10 +142,19 @@
 (defun pen-client-generate-functions ()
   (interactive)
 
-  (let* ((sig-sexps (pen-eval-string
-                     (concat
-                      "'"
-                      (chomp (pen-sn-basic (pen-client-ecmd "pene" "(pen-list-signatures-for-client)")))))))
+  (let* ((sig-sexps
+          (if (pen-container-running-p)
+              (pen-eval-string
+               (concat
+                "'"
+                (chomp
+                 (pen-sn-basic
+                  (pen-client-ecmd
+                   "pene"
+                   "(pen-list-signatures-for-client)")))))
+            (mapcar
+             (lambda (s) (pen-eval-string (concat "'" s)))
+             (pen-list-signatures-for-client)))))
 
     (dolist (s sig-sexps)
       (let* ((fn-name
@@ -181,6 +190,7 @@
                                 no-gen
                                 select-only-match
                                 variadic-var
+                                pretext
                                 inject-gen-start
                                 override-prompt
                                 force-interactive
@@ -199,35 +209,35 @@
                         "penj"
                       "pena"))
                    (sn-cmd `(pen-client-ecmd ,pen-script-name "-u" ,,remote-fn-name ,@',arg-list-syms)))
-              (if server
-                  (apply remote-fn-sym
+              (if (or server
+                      (not (pen-container-running-p)))
+                  (apply ',remote-fn-sym
                          (append
-                          (pen-eval-string
-                           (if (string-equal args "")
-                               "'()"
-                             (format "'(&optional %s)" args)))
+                          (mapcar 'eval ',arg-list-syms)
                           (list
-                            :no-select-result no-select-result
-                            :include-prompt include-prompt
-                            :no-gen no-gen
-                            :select-only-match select-only-match
-                            :variadic-var variadic-var
-                            :inject-gen-start inject-gen-start
-                            :override-prompt override-prompt
-                            :force-interactive is-interactive
-                            ;; inert for client
-                            ;; client
-                            ;; server
-                            )))
+                           :no-select-result no-select-result
+                           :include-prompt include-prompt
+                           :no-gen no-gen
+                           :select-only-match select-only-match
+                           :variadic-var variadic-var
+                           :pretext pretext
+                           :inject-gen-start inject-gen-start
+                           :override-prompt override-prompt
+                           :force-interactive is-interactive
+                           ;; inert for client
+                           ;; client
+                           ;; server
+                           )))
                 (let* ((results (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,sn-cmd)))))))
                   (if is-interactive
                       (pen-etv
                        (completing-read ,(concat remote-fn-name ": ") results))
                     results))))))))))
 
-(if (not (pen-container-running-p))
-    (message "Please start the Pen.el server first by running pen in a terminal.")
-  (pen-client-generate-functions))
+;; (if (not (pen-container-running-p))
+;;     (message "Please start the Pen.el server first by running pen in a terminal.")
+;;   (pen-client-generate-functions))
+(pen-client-generate-functions)
 
 (defun pen-test-client-fn ()
   (interactive)

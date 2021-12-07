@@ -1732,9 +1732,6 @@ Reconstruct the entire yaml-ht for a different language."
 
                     ;; (let ((override-prompt "Hi,")) (pf-who-is-the-subject-matter-expert-for-/1))
 
-                    ;; pretext is useful for examples for the generation
-                    (final-prompt (concat pretext final-prompt))
-
                     (final-prompt
                      (progn
                        (while
@@ -1787,7 +1784,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                     (func-name-slug (slugify ,func-name))
 
-                    ;; add previous
+                    ;; add previous - used as an example
                     (final-prompt
                      (let ((lastgenpath (f-join genhistdir func-name-slug "last-generated-prompt-and-result.txt")))
                        (if (and final-prepend-previous
@@ -1798,6 +1795,9 @@ Reconstruct the entire yaml-ht for a different language."
                             "\n\n"
                             final-prompt)
                          final-prompt)))
+
+                    ;; pretext is useful for examples for the generation
+                    (final-prompt (concat pretext final-prompt))
 
                     (collect-from-pos
                      (or (byte-string-search "<:pp>" final-prompt)
