@@ -2222,27 +2222,25 @@ Reconstruct the entire yaml-ht for a different language."
                      (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" (str result))
                                                             (cons "PEN_RESULTS" (json-encode-list results)))))
 
-               (save-last-final-prompt
-                     (if (and final-prepend-previous
-                              (f-directory-p penconfdir))
-                         (progn
-                           (f-mkdir (f-join genhistdir func-name-slug))
-                           (tee (f-join genhistdir func-name-slug
-                                        "last-generated-prompt-and-result.txt")
-                                (concat final-generated-prompt result))
-                           (tee (f-join genhistdir func-name-slug
-                                        "last-generated.txt")
-                                final-generated-prompt)
-                           (tee (f-join genhistdir func-name-slug
-                                        "last.txt")
-                                final-prompt)
-                           (tee (f-join genhistdir func-name-slug
-                                        (concat (str gen-time) "-generated.txt"))
-                                final-generated-prompt)
-                           (tee (f-join genhistdir func-name-slug
-                                        (concat (str gen-time) ".txt"))
-                                final-prompt))
-                       nil))
+               (if (and final-prepend-previous
+                        (f-directory-p penconfdir))
+                   (progn
+                     (f-mkdir (f-join genhistdir func-name-slug))
+                     (tee (f-join genhistdir func-name-slug
+                                  "last-generated-prompt-and-result.txt")
+                          (concat final-generated-prompt result))
+                     (tee (f-join genhistdir func-name-slug
+                                  "last-generated.txt")
+                          final-generated-prompt)
+                     (tee (f-join genhistdir func-name-slug
+                                  "last.txt")
+                          final-prompt)
+                     (tee (f-join genhistdir func-name-slug
+                                  (concat (str gen-time) "-generated.txt"))
+                          final-generated-prompt)
+                     (tee (f-join genhistdir func-name-slug
+                                  (concat (str gen-time) ".txt"))
+                          final-prompt)))
 
                ;; Now save this to a list somewhere
                (pen-append-to-file
