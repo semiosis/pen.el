@@ -1771,10 +1771,6 @@ Reconstruct the entire yaml-ht for a different language."
 
                     ;; Somewhere around here handle fz-eol
 
-                    (collect-from-pos (or (byte-string-search "<:pp>" final-prompt)
-                                          ;; (length final-prompt)
-                                          (string-bytes final-prompt)))
-
                     ;; Maybe just use <:pp> instead
                     ;; (query-pos (or (byte-string-search "<:qp>" final-prompt)
                     ;;                ""))
@@ -1787,12 +1783,11 @@ Reconstruct the entire yaml-ht for a different language."
                        final-prompt))
                     ;; This is where to start collecting from
 
-                    (final-prompt (string-replace "<:pp>" "" final-prompt))
-
                     (final-generated-prompt final-prompt)
 
                     (func-name-slug (slugify ,func-name))
 
+                    ;; add previous
                     (final-prompt
                      (let ((lastgenpath (f-join genhistdir func-name-slug "last-generated-prompt-and-result.txt")))
                        (if (and final-prepend-previous
@@ -1803,6 +1798,13 @@ Reconstruct the entire yaml-ht for a different language."
                             "\n\n"
                             final-prompt)
                          final-prompt)))
+
+                    (collect-from-pos
+                     (or (byte-string-search "<:pp>" final-prompt)
+                         ;; (length final-prompt)
+                         (string-bytes final-prompt)))
+
+                    (final-prompt (string-replace "<:pp>" "" final-prompt))
 
                     (end-pos (string-bytes final-prompt))
 
@@ -2222,13 +2224,16 @@ Reconstruct the entire yaml-ht for a different language."
                      (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" (str result))
                                                             (cons "PEN_RESULTS" (json-encode-list results)))))
 
-               (if (and final-prepend-previous
-                        (f-directory-p penconfdir))
-                   (progn
-                     (f-mkdir (f-join genhistdir func-name-slug))
+               (if (and final-prepend-previous (f-directory-p penconfdir))
+                   (let ((funcdir (f-join genhistdir func-name-slug))
+                         (r (if (numberp result)
+                                (car results)
+                                result)))
+                     (if (not (f-directory-p funcdir))
+                         (f-mkdir funcdir))
                      (tee (f-join genhistdir func-name-slug
                                   "last-generated-prompt-and-result.txt")
-                          (concat final-generated-prompt result))
+                          (concat final-generated-prompt r))
                      (tee (f-join genhistdir func-name-slug
                                   "last-generated.txt")
                           final-generated-prompt)
