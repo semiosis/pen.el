@@ -328,9 +328,11 @@
   (interactive (list (read-string-hist "ilist n: ")
                      (read-string-hist "ilist type-of-thing: ")))
   (pen-single-generation
-   (pen-fn-list-of/2 (str n) (str type-of-thing)
-                 :no-select-result t
-                 :client iλ-thin)))
+   (pen-fn-list-of/2
+    (str n)
+    (str type-of-thing)
+    :no-select-result t
+    :client iλ-thin)))
 
 (defun test-ilist ()
   (interactive)
