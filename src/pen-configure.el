@@ -1,6 +1,13 @@
 (require 'f)
 
 (defvar penconfdir (f-join user-home-directory ".pen"))
+(defvar genhistdir (f-join penconfdir "gen-history"))
+
+(if (not (f-dir-p penconfdir))
+    (f-mkdir penconfdir))
+
+(if (not (f-dir-p genhistdir))
+    (f-mkdir genhistdir))
 
 (defun pen-read-service-key (service-name)
   (interactive (list (read-string "service: ")))
@@ -16,9 +23,6 @@
                       (key (or (ignore-errors (pen-read-service-key service-name)) "")))
                  (list service-name key)))
   (let ((key-path (f-join user-home-directory ".pen" (format "%s_api_key" service-name))))
-    (if (not (f-dir-p penconfdir))
-        (f-mkdir penconfdir))
-
     (f-touch key-path)
     (f-write-text key 'utf-8 key-path)))
 

@@ -856,10 +856,11 @@ Reconstruct the entire yaml-ht for a different language."
       (let* ((is-interactive
               (or (interactive-p)
                   force-interactive))
-            (client-fn-name
-             (replace-regexp-in-string "^pf-" "pen-fn-" (str ',func-sym)))
-            (client-fn-sym
-             (intern client-fn-name)))
+             (client-fn-name
+              (replace-regexp-in-string "^pf-" "pen-fn-" (str ',func-sym)))
+             (client-fn-sym
+              (intern client-fn-name))
+             (gen-time (time-to-seconds)))
         (if client
             (apply client-fn-sym
                    (append
@@ -878,7 +879,7 @@ Reconstruct the entire yaml-ht for a different language."
                      ;; server
                      )))
           (pen-force-custom
-           (cl-macrolet ((expand-template
+           (cl-macrolet  ((expand-template
                           (string-sym)
                           `(--> ,string-sym
                              ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
@@ -903,7 +904,7 @@ Reconstruct the entire yaml-ht for a different language."
                                           ("INK_TYPE" . "generated")
                                           ("PEN_FUNCTION_NAME" . ,,func-name)
                                           ("PEN_GEN_UUID" . ,(pen-uuid))
-                                          ("PEN_GEN_TIME" . ,(time-to-seconds))))
+                                          ("PEN_GEN_TIME" . ,gen-time)))
 
              (pen-append-to-file
               (concat
@@ -1056,6 +1057,10 @@ Reconstruct the entire yaml-ht for a different language."
                           (not
                            (or (pen-var-value-maybe 'utilises-code-off)
                                ',utilises-code-off))))
+
+                    (final-prepend-previous
+                     (or (pen-var-value-maybe 'prepend-previous)
+                         ',prepend-previous))
 
                     (final-hover
                      (or (pen-var-value-maybe 'hover)
@@ -1783,6 +1788,31 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; This is where to start collecting from
 
                     (final-prompt (string-replace "<:pp>" "" final-prompt))
+
+                    (final-generated-prompt final-prompt)
+
+                    (func-name-slug (slugify ,func-name))
+
+                    (final-prompt
+                     (let ((lastgenpath (f-join genhistdir func-name-slug "last-generated.txt")))
+                       (if (and final-prepend-previous
+                                (f-exists-p lastgenpath))
+                           (concat
+                            (cat (awk1 lastgenpath))
+                            final-delimiter "\n"
+                            final-prompt)
+                         final-prompt)))
+
+                    (save-last-final-prompt
+                     (if (and final-prepend-previous
+                              (f-directory-p penconfdir))
+                         (progn
+                           (f-mkdir (f-join genhistdir func-name-slug))
+                           (tee (f-join genhistdir func-name-slug "last-generated.txt") final-generated-prompt)
+                           (tee (f-join genhistdir func-name-slug "last.txt") final-prompt)
+                           (tee (f-join genhistdir func-name-slug (concat (str gen-time) "-generated.txt")) final-generated-prompt)
+                           (tee (f-join genhistdir func-name-slug (concat (str gen-time) ".txt")) final-prompt))
+                       nil))
 
                     (end-pos (string-bytes final-prompt))
 
@@ -2556,6 +2586,20 @@ Otherwise, it will be a shell expression template")
 
   starting-engine)
 
+(defun pen-filter-with-prompt-function ()
+  (interactive)
+  (let ((f (fz
+            (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                pen-prompt-functions
+              ;; (pen-list-filterers)
+              pen-prompt-filter-functions)
+            nil nil "pen filter: ")))
+    (if f
+        (pen-filter
+         (call-interactively (intern f)))
+      ;; (filter-selected-region-through-function (intern f))
+      )))
+
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
@@ -2696,6 +2740,7 @@ Function names are prefixed with pf- for easy searching"
                         ;; info and hover are related
                         (info (pen-yaml-test yaml-ht "info"))
                         (hover (pen-yaml-test yaml-ht "hover"))
+                        (prepend-previous (pen-yaml-test yaml-ht "prepend-previous"))
                         (force-prompt)
                         (formatter (pen-yaml-test yaml-ht "formatter"))
                         (linter (pen-yaml-test yaml-ht "linter"))
@@ -3040,6 +3085,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if task (concat "\ntask: " task))
                                 (if notes (concat "\nnotes:" notes))
                                 (if filter (concat "\nfilter: on"))
+                                (if prepend-previous (concat "\nprepend-previous: on"))
                                 (if cant-n-complete (concat "\ncant-n-complete: on"))
                                 (if filter-off (concat "\nfilter-off: on"))
                                 (if results-analyser (concat "\nresults-analyser: " results-analyser))
@@ -3189,20 +3235,6 @@ Function names are prefixed with pf- for easy searching"
              (message "failed:")
              (message (pen-list2str pen-prompts-failed))
              (message (concat (str (length pen-prompts-failed)) " failed"))))))))
-
-(defun pen-filter-with-prompt-function ()
-  (interactive)
-  (let ((f (fz
-            (if (>= (prefix-numeric-value current-prefix-arg) 4)
-                pen-prompt-functions
-              ;; (pen-list-filterers)
-              pen-prompt-filter-functions)
-            nil nil "pen filter: ")))
-    (if f
-        (pen-filter
-         (call-interactively (intern f)))
-      ;; (filter-selected-region-through-function (intern f))
-      )))
 
 (defun pen-run-analyser-function ()
   "Run a prompt function which also has a results analyser. e.g. fact checker.

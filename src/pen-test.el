@@ -105,3 +105,16 @@
     ;; (var (ht-get yaml-ht "filter")))
     ;; (pen-etv (json--encode-alist var))
     (pen-etv (pps var))))
+
+(idefun add-5-to-x (x))
+
+(idefun alchemy_getTokenAllowance (contract)
+        (let ((api-key "fevahcdinjsh637rtfub378bsfjk"))
+          (shell-command
+           (concat "curl https://eth-mainnet.alchemyapi.io/v2/" api-key " \
+-X POST \
+-H \"Content-Type: application/json\" \
+-d '{\"jsonrpc\":\"2.0\",\"method\":\"alchemy_getTokenAllowance\",\"params\":[{\"contract\":\"" contract
+"\", \"owner\":\"0xe8095A54C83b069316521835408736269bfb389C\", \"spender\":\"0x3Bcc5bD4abBc853395eBE5103b7DbA20411E38db\"}],\"id\": 1}'"))))
+
+(alchemy_getTokenAllowance "0xE41d2489571d322189246DaFA5ebDe1F4699F498")
