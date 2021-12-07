@@ -14,6 +14,9 @@ services:
     restart: always
     ports:
       - 8000:8000
+  # docker pull returntocorp/semgrep:latest
+  semgrep:
+    image: returntocorp/semgrep
   db:
     image: postgres
     restart: always

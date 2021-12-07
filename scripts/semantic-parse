@@ -1,0 +1,56 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+fp="$1"
+
+if ! test -f "$fp" && stdin_exists; then
+    fp="$(tf txt)"
+fi
+
+test -f "$fp" || exit 1
+
+rp="$(realpath "$fp")"
+bn="$(basename "$fp")"
+dn="$(dirname "$rp")"
+
+cwdslug="$(p "$dn" | slugify)"
+
+# https://github.com/github/semantic/packages/11609
+# docker.pkg.github.com/github/semantic/semantic:sha_d6737eb0a0e06fe6ba18e2c91f3cdbd993614499
+
+# It's not currently possible to query the GitHub container registry
+# https://github.community/t/list-images-uploaded-to-the-container-registry/132955
+
+image_path="$(oci ghcr-list-images github/semantic | head -n 1)"
+test -n "$image_path" || exit 1
+
+# docker run \
+#     --rm \
+#     -v "$dn:/$cwdslug" \
+#     -w "/$cwdslug" \
+#     -i \
+#     --entrypoint= \
+#     "$image_path" \
+#     /usr/local/bin/semantic \
+#     parse \
+#     "$bn" | erase-trailing-whitespace 2>/dev/null
+
+final_cmd="$(cmd-nice docker run \
+    --rm \
+    -v "$dn:/$cwdslug" \
+    -w "/$cwdslug" \
+    -ti \
+    --entrypoint= \
+    "$image_path" \
+    /usr/local/bin/semantic \
+    parse \
+    "$bn" |
+        erase-trailing-whitespace) 2>/dev/null"
+
+unbuffer sh -c "$final_cmd" | pa -E "tf lisp | xa orspe"
