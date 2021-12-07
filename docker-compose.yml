@@ -16,7 +16,8 @@ services:
       - 8000:8000
   # docker pull returntocorp/semgrep:latest
   semgrep:
-    image: returntocorp/semgrep
+    image: returntocorp/semgrep:latest
+    restart: always
   db:
     image: postgres
     restart: always
