@@ -198,7 +198,7 @@
                         ;; Can't use penf, because it's different.
                         "penj"
                       "pena"))
-                   (sn-cmd `(pen-client-ecmd ,pen-script-name ,,remote-fn-name ,@',arg-list-syms)))
+                   (sn-cmd `(pen-client-ecmd ,pen-script-name "-u" ,,remote-fn-name ,@',arg-list-syms)))
               (if server
                   (apply remote-fn-sym
                          (append
