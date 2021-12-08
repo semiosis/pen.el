@@ -427,4 +427,11 @@
    (iequal '(lambda (l) '(= 5 (length l)))
             '(a b c d))))
 
+;; assertions create prompt examples which are prepended
+(defmacro iassert (value funcsym &rest args)
+  `(progn
+     ,@args))
+
+(iassert 55 add-5-to-x 50)
+
 (provide 'ilambda)
