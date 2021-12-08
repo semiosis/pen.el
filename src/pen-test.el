@@ -122,7 +122,7 @@
 
 (defun test-pen-train-function ()
   (interactive)
-  (etv
+  (pen-etv
    (eval
     `(pen-train-function
       (pf-transpile/3 "5 + 5" "Python" "Lisp")
