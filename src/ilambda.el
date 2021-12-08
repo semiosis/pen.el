@@ -428,7 +428,12 @@
             '(a b c d))))
 
 ;; assertions create prompt examples which are prepended
+;; This should work by running an actual
+;; prompt function, but giving it the result it's
+;; supposed to return, and also indicating that
+;; it be saved to a list of assertions, which are provided when prompting.
 (defmacro iassert (value funcsym &rest args)
+  "Add"
   `(progn
      ,@args))
 
