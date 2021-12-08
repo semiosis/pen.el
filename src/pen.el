@@ -3482,6 +3482,9 @@ But use the results-analyser."
 ;; This is not the same as pen-train-model, which doesn't exist yet.
 ;; When you train a function, you need to also give it examples.
 (defmacro pen-train-function (&rest body)
+  ;; This has to work via the docker container, somehow
+
+  (pen-get-prompt)
   ;; Run the function several times with different parameters to generate full prompts
   ;; Then create a list of (prompt+result)s and include them when prompting in future
   ;; I could add to a list of such function-result strings and take n from them.
