@@ -126,7 +126,7 @@
    (eval
     `(pen-train-function
       (pf-transpile/3 "5 + 5" "Python" "Lisp")
-      '(10)))))
+      '("(+ 5 5)")))))
 
 ;; (etv
 ;;  (pen-get-prompt (pf-transpile/3 "5 + 5" "Python" "Lisp")))
