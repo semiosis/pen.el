@@ -3481,12 +3481,14 @@ But use the results-analyser."
 
 ;; This is not the same as pen-train-model, which doesn't exist yet.
 ;; When you train a function, you need to also give it examples.
-(defmacro pen-train-function (&rest body)
+(defmacro pen-train-function (invocation examples)
   ;; This has to work via the docker container, somehow.
   ;; Run and save results to the history.
   ;; But run with desired result(s), along with a pen-train-function boolean.
 
-  (pen-get-prompt)
+  ;; Don't use pen-get prompt. That's too slow.
+  ;; (pen-get-prompt)
+
   ;; Run the function several times with different parameters to generate full prompts
   ;; Then create a list of (prompt+result)s and include them when prompting in future
   ;; I could add to a list of such function-result strings and take n from them.
@@ -3501,8 +3503,9 @@ But use the results-analyser."
             (pen-select-only-match t)
             (pen-no-gen t)
             (pen-include-prompt t)
-            (pen-train-function t))
-        ,',@body))))
+            (pen-train-function t)
+            (pen-force-results ,',examples))
+        ,',invocation))))
 
 (defmacro pen-single-generation (&rest body)
   "This wraps around pen function calls to make them only create one generation"
