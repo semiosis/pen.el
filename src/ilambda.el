@@ -439,7 +439,8 @@
      ,@args))
 
 ;; TODO I could, when generating prompting functions, also provide examples, or set them/a context for functions.
-;; Consider generating examples for functions and then providing them.
+;; Consider generating examples for functions and then providing them as a parameter.
+;; To generate examples, I would need to force-generate prompts
 
 (iassert 55 add-5-to-x 50)
 
