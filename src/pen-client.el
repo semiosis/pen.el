@@ -138,6 +138,10 @@
    ((stringp sym) sym)
    (t sym)))
 
+(defun pen-list-signatures-for-client ()
+  (cl-loop for nm in pen-prompt-functions collect
+           (downcase (replace-regexp-in-string " &key.*" ")" (helpful--signature nm)))))
+
 ;; (pen-fn-translate/3 (buffer-substring (region-beginning) (region-end)) "English" "French")
 (defun pen-client-generate-functions ()
   (interactive)
@@ -233,11 +237,6 @@
                       (pen-etv
                        (completing-read ,(concat remote-fn-name ": ") results))
                     results))))))))))
-
-;; (if (not (pen-container-running-p))
-;;     (message "Please start the Pen.el server first by running pen in a terminal.")
-;;   (pen-client-generate-functions))
-(pen-client-generate-functions)
 
 (defun pen-test-client-fn ()
   (interactive)

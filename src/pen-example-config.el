@@ -151,9 +151,6 @@
 ;; nlsh
 (setq pen-nlsh-histdir (f-join user-emacs-directory "comint-history"))
 
-;; Initial load of prompt functions
-(pen-generate-prompt-functions)
-
 ;; Company
 (setq company-auto-complete nil)
 (setq company-auto-complete-chars '())
@@ -335,7 +332,11 @@
 (defun pen-reload ()
   (interactive)
   (pen-generate-prompt-functions)
-  (pen-load-config))
+  (pen-load-config)
+  ;; (if (not (pen-container-running-p))
+  ;;     (message "Please start the Pen.el server first by running pen in a terminal.")
+  ;;   (pen-client-generate-functions))
+  (pen-client-generate-functions))
 
 
 ;; I could actually use codex to generate DWIM key bindings from function names
@@ -753,5 +754,8 @@
 (define-key org-mode-map (kbd "M-h") 'org-mark-element)
 
 (pen-autosuggest-mode t)
+
+;; Initial load of prompt functions
+(pen-reload)
 
 (provide 'pen-example-config)
