@@ -3482,7 +3482,9 @@ But use the results-analyser."
 ;; This is not the same as pen-train-model, which doesn't exist yet.
 ;; When you train a function, you need to also give it examples.
 (defmacro pen-train-function (&rest body)
-  ;; This has to work via the docker container, somehow
+  ;; This has to work via the docker container, somehow.
+  ;; Run and save results to the history.
+  ;; But run with desired result(s), along with a pen-train-function boolean.
 
   (pen-get-prompt)
   ;; Run the function several times with different parameters to generate full prompts
