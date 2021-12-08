@@ -1093,7 +1093,6 @@ Reconstruct the entire yaml-ht for a different language."
                          (pen-var-value-maybe 'include-prompt)
                          ,include-prompt))
 
-                    ;; What was this?
                     (final-no-gen
                      (or (pen-var-value-maybe 'pen-no-gen)
                          (pen-var-value-maybe 'no-gen)

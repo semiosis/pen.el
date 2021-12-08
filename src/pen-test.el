@@ -122,6 +122,7 @@
 (defun test-pen-train-function ()
   (interactive)
 
+  ;; First get it going locally, then use the server.
   (pen-etv
    (eval
     `(pen-train-function
