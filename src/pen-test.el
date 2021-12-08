@@ -113,7 +113,6 @@
 
 ;; (alchemy_getTokenAllowance "0xE41d2489571d322189246DaFA5ebDe1F4699F498")
 
-
 ;; TODO I could, when generating prompting functions, also provide examples, or set them/a context for functions.
 ;; Consider generating examples for functions and then providing them as a parameter.
 ;; To generate examples, I would need to force-generate prompts
