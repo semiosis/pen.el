@@ -442,9 +442,9 @@
 ;; Consider generating examples for functions and then providing them as a parameter.
 ;; To generate examples, I would need to force-generate prompts
 
-(iassert 55 add-5-to-x 50)
+;; (iassert 55 add-5-to-x 50)
 
-(comment
- (pen-get-prompt (pf-transpile/3 "5 + 5" "Python" "Lisp")))
+;; (etv
+;;  (pen-get-prompt (pf-transpile/3 "5 + 5" "Python" "Lisp")))
 
 (provide 'ilambda)
