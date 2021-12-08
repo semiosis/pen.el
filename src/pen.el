@@ -3479,6 +3479,21 @@ But use the results-analyser."
             (pen-include-prompt t))
         ,',@body))))
 
+;; This is not the same as pen-train-model, which doesn't exist yet
+(defmacro pen-train-prompt (&rest body)
+  `(eval
+    `(car
+      (let ((pen-single-generation-b t)
+            (n-collate 1)
+            (n-completions 1)
+            ;; This is needed because the engine can also force n-completions
+            (force-n-completions 1)
+            (pen-no-select-result t)
+            (pen-select-only-match t)
+            (pen-no-gen t)
+            (pen-include-prompt t))
+        ,',@body))))
+
 (defmacro pen-single-generation (&rest body)
   "This wraps around pen function calls to make them only create one generation"
   `(eval
