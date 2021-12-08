@@ -3479,8 +3479,11 @@ But use the results-analyser."
             (pen-include-prompt t))
         ,',@body))))
 
-;; This is not the same as pen-train-model, which doesn't exist yet
-(defmacro pen-train-prompt (&rest body)
+;; This is not the same as pen-train-model, which doesn't exist yet.
+;; When you train a function, you need to also give it examples.
+(defmacro pen-train-function (&rest body)
+  ;; Run the function several times with different parameters to generate full prompts
+  ;; Then create a list of (prompt+result)s and include them when prompting in future
   `(eval
     `(car
       (let ((pen-single-generation-b t)
@@ -3491,7 +3494,8 @@ But use the results-analyser."
             (pen-no-select-result t)
             (pen-select-only-match t)
             (pen-no-gen t)
-            (pen-include-prompt t))
+            (pen-include-prompt t)
+            (pen-train-function t))
         ,',@body))))
 
 (defmacro pen-single-generation (&rest body)
