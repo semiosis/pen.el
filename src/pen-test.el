@@ -121,6 +121,7 @@
 
 (defun test-pen-train-function ()
   (interactive)
+
   (pen-etv
    (eval
     `(pen-train-function
