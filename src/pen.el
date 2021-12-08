@@ -3484,6 +3484,7 @@ But use the results-analyser."
 (defmacro pen-train-function (&rest body)
   ;; Run the function several times with different parameters to generate full prompts
   ;; Then create a list of (prompt+result)s and include them when prompting in future
+  ;; I could add to a list of such function-result strings and take n from them.
   `(eval
     `(car
       (let ((pen-single-generation-b t)
