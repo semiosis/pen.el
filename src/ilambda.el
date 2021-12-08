@@ -438,7 +438,8 @@
   `(progn
      ,@args))
 
-;; TODO I could, when generating prompting functions, 
+;; TODO I could, when generating prompting functions, also provide examples, or set them/a context for functions.
+;; Consider generating examples for functions and then providing them.
 
 (iassert 55 add-5-to-x 50)
 
