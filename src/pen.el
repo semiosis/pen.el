@@ -1088,12 +1088,14 @@ Reconstruct the entire yaml-ht for a different language."
                       ,engine-whitespace-support))
 
                     (final-include-prompt
-                     (or (pen-var-value-maybe 'include-prompt)
+                     (or (pen-var-value-maybe 'pen-include-prompt)
+                         (pen-var-value-maybe 'include-prompt)
                          ,include-prompt))
 
                     ;; What was this?
                     (final-no-gen
-                     (or (pen-var-value-maybe 'no-gen)
+                     (or (pen-var-value-maybe 'pen-no-gen)
+                         (pen-var-value-maybe 'no-gen)
                          ,no-gen))
 
                     (final-results-analyser
@@ -3439,6 +3441,7 @@ But use the results-analyser."
 
 ;; TODO I absolutely need to be using iλ functions everywhere
 (defmacro pen-one (&rest body)
+  "Just generate one completion, and do not select"
   `(eval
     `(let ((pen-single-generation-b t)
            (n-collate 1)
@@ -3459,6 +3462,20 @@ But use the results-analyser."
             (force-n-completions 1)
             (pen-no-select-result t)
             (pen-select-only-match t))
+        ,',@body))))
+
+(defmacro pen-get-prompt (&rest body)
+  `(eval
+    `(car
+      (let ((pen-single-generation-b t)
+            (n-collate 1)
+            (n-completions 1)
+            ;; This is needed because the engine can also force n-completions
+            (force-n-completions 1)
+            (pen-no-select-result t)
+            (pen-select-only-match t)
+            (pen-no-gen t)
+            (pen-include-prompt t))
         ,',@body))))
 
 (defmacro pen-single-generation (&rest body)

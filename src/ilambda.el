@@ -444,4 +444,7 @@
 
 (iassert 55 add-5-to-x 50)
 
+(comment
+ (pen-get-prompt (pf-transpile/3 "5 + 5" "Python" "Lisp")))
+
 (provide 'ilambda)
