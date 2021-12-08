@@ -1797,6 +1797,19 @@ Reconstruct the entire yaml-ht for a different language."
 
                     (func-name-slug (slugify ,func-name))
 
+                    (func-hist-dir
+                     (let ((fhd
+                            (if final-prompt-hist-id
+                                (f-join genhistdir func-name-slug final-prompt-hist-id)
+                              (f-join genhistdir func-name-slug))))
+
+                       (if (or final-prepend-previous
+                               final-train-function)
+                           (if (not (f-directory-p func-hist-dir))
+                               (f-mkdir func-hist-dir)))
+
+                       fhd))
+
                     ;; When it comes to adding consistency, I must add consistency based on partial functions.
                     ;; Otherwise, there'd be a single history/training which is prepended to all ifuntions.
                     ;; OK, so how do we specify that?
@@ -1818,7 +1831,7 @@ Reconstruct the entire yaml-ht for a different language."
 
                     ;; add previous - used as an example
                     (final-prompt
-                     (let ((lastgenpath (f-join genhistdir func-name-slug "last-generated-prompt-and-result.txt")))
+                     (let ((lastgenpath (f-join func-hist-dir "last-generated-prompt-and-result.txt")))
                        (if (and (or final-prepend-previous
                                     ;; final-train-function
                                     )
@@ -2262,25 +2275,23 @@ Reconstruct the entire yaml-ht for a different language."
                             ;; final-train-function
                             )
                         (f-directory-p penconfdir))
-                   (let ((funcdir (f-join genhistdir func-name-slug))
-                         (r (if (numberp result)
+                   (let ((r (if (numberp result)
                                 (car results)
-                                result)))
-                     (if (not (f-directory-p funcdir))
-                         (f-mkdir funcdir))
-                     (tee (f-join genhistdir func-name-slug
+                              result)))
+
+                     (tee (f-join func-hist-dir
                                   "last-generated-prompt-and-result.txt")
                           (concat final-generated-prompt r))
-                     (tee (f-join genhistdir func-name-slug
+                     (tee (f-join func-hist-dir
                                   "last-generated.txt")
                           final-generated-prompt)
-                     (tee (f-join genhistdir func-name-slug
+                     (tee (f-join func-hist-dir
                                   "last.txt")
                           final-prompt)
-                     (tee (f-join genhistdir func-name-slug
+                     (tee (f-join func-hist-dir
                                   (concat (str gen-time) "-generated.txt"))
                           final-generated-prompt)
-                     (tee (f-join genhistdir func-name-slug
+                     (tee (f-join func-hist-dir
                                   (concat (str gen-time) ".txt"))
                           final-prompt)))
 
