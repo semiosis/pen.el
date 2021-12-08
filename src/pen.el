@@ -843,6 +843,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                              inject-gen-start
                                                              override-prompt
                                                              force-interactive
+                                                             prompt-hist-id
                                                              client
                                                              server))
       ,doc
@@ -1087,6 +1088,10 @@ Reconstruct the entire yaml-ht for a different language."
                      (or
                       (pen-var-value-maybe 'engine-whitespace-support)
                       ,engine-whitespace-support))
+
+                    (final-prompt-hist-id
+                     (or (pen-var-value-maybe 'pen-prompt-hist-id)
+                         (pen-var-value-maybe 'prompt-hist-id)))
 
                     (final-include-prompt
                      (or (pen-var-value-maybe 'pen-include-prompt)
@@ -1792,11 +1797,31 @@ Reconstruct the entire yaml-ht for a different language."
 
                     (func-name-slug (slugify ,func-name))
 
+                    ;; When it comes to adding consistency, I must add consistency based on partial functions.
+                    ;; Otherwise, there'd be a single history/training which is prepended to all ifuntions.
+                    ;; OK, so how do we specify that?
+                    ;; I must specify 'constraint variables' for training .
+                    ;; When idefun is defined, specify a =prompt-hist-id=
+
+                    ;; ;; The following needs
+                    ;; (parameter-slug
+                    ;;  (s-join "."
+                    ;;          ,(mapcar (lambda (k v)
+                    ;;                     (let* ((kslug (slugify (s-left 20 k)))
+                    ;;                            (vslug (slugify (s-left 20 v)))
+                    ;;                            (khash (sha-hash-string k))
+                    ;;                            (vhash (sha-hash-string v))
+                    ;;                            (kslug (concat kslug "-" khash))
+                    ;;                            (vslug (concat vslug "-" vhash))))
+                    ;;                     (concat kslug "_" vslug))
+                    ;;                   var-keyvals-slugged)))
+
                     ;; add previous - used as an example
                     (final-prompt
                      (let ((lastgenpath (f-join genhistdir func-name-slug "last-generated-prompt-and-result.txt")))
                        (if (and (or final-prepend-previous
-                                    final-train-function)
+                                    ;; final-train-function
+                                    )
                                 (f-exists-p lastgenpath))
                            (concat
                             (awk1 (cat lastgenpath))
@@ -2234,7 +2259,8 @@ Reconstruct the entire yaml-ht for a different language."
                                                             (cons "PEN_RESULTS" (json-encode-list results)))))
 
                (if (and (or final-prepend-previous
-                            final-train-function)
+                            ;; final-train-function
+                            )
                         (f-directory-p penconfdir))
                    (let ((funcdir (f-join genhistdir func-name-slug))
                          (r (if (numberp result)

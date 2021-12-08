@@ -195,6 +195,7 @@
                                 select-only-match
                                 variadic-var
                                 pretext
+                                prompt-hist-id
                                 inject-gen-start
                                 override-prompt
                                 force-interactive
@@ -225,6 +226,7 @@
                            :select-only-match select-only-match
                            :variadic-var variadic-var
                            :pretext pretext
+                           :prompt-hist-id prompt-hist-id
                            :inject-gen-start inject-gen-start
                            :override-prompt override-prompt
                            :force-interactive is-interactive

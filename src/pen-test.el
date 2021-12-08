@@ -123,11 +123,28 @@
   (interactive)
 
   ;; First get it going locally, then use the server.
+
   (pen-etv
    (eval
+    ;; This should return the full prompt for next invocation
     `(pen-train-function
       (pf-transpile/3 "5 + 5" "Python" "Lisp")
       '("(+ 5 5)")))))
+
+(defun test-pen-prepend-previous ()
+  (interactive)
+
+  ;; First get it going locally, then use the server.
+  (idefun hex-colour-of-thing (thing)
+          "Display the the real life colour for something in the format 0xRRGGBBAA")
+
+  (defun show-color-and-print (thing)
+    (awk1 (concat thing ": " (hex-colour-of-thing thing))))
+
+  (pen-etv
+   (concat (awk1 (show-color-and-print "watermelon"))
+           (awk1 (show-color-and-print "strawberries"))
+           (awk1 (show-color-and-print "banana")))))
 
 ;; (etv
 ;;  (pen-get-prompt (pf-transpile/3 "5 + 5" "Python" "Lisp")))
