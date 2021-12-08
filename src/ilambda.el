@@ -438,6 +438,8 @@
   `(progn
      ,@args))
 
+;; TODO I could, when generating prompting functions, 
+
 (iassert 55 add-5-to-x 50)
 
 (provide 'ilambda)
