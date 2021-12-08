@@ -1796,7 +1796,8 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; add previous - used as an example
                     (final-prompt
                      (let ((lastgenpath (f-join genhistdir func-name-slug "last-generated-prompt-and-result.txt")))
-                       (if (and final-prepend-previous
+                       (if (and (or final-prepend-previous
+                                    final-train-function)
                                 (f-exists-p lastgenpath))
                            (concat
                             (awk1 (cat lastgenpath))
@@ -2233,7 +2234,9 @@ Reconstruct the entire yaml-ht for a different language."
                      (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" (str result))
                                                             (cons "PEN_RESULTS" (json-encode-list results)))))
 
-               (if (and final-prepend-previous (f-directory-p penconfdir))
+               (if (and (or final-prepend-previous
+                            final-train-function)
+                        (f-directory-p penconfdir))
                    (let ((funcdir (f-join genhistdir func-name-slug))
                          (r (if (numberp result)
                                 (car results)
