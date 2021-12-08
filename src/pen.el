@@ -46,6 +46,7 @@
 (require 'pen-edit)
 (require 'pen-client)
 (require 'pen-autosuggest)
+(require 'helpful)
 
 (defvar my-completion-engine 'pen-company-filetype)
 
