@@ -1099,6 +1099,9 @@ Reconstruct the entire yaml-ht for a different language."
                          (pen-var-value-maybe 'no-gen)
                          ,no-gen))
 
+                    (final-train-function
+                     (or (pen-var-value-maybe 'pen-train-function)))
+
                     (final-results-analyser
                      (or (pen-var-value-maybe 'results-analyser)
                          ,results-analyser))
