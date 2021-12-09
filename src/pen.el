@@ -841,6 +841,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                              variadic-var
                                                              pretext
                                                              inject-gen-start
+                                                             continue-default
                                                              temperature
                                                              override-prompt
                                                              force-interactive
@@ -1381,6 +1382,12 @@ Reconstruct the entire yaml-ht for a different language."
                     (final-inject-example
                      (expand-template ,inject-example))
 
+                    (final-continue-default
+                     (or (pen-var-value-maybe 'pen-continue-default)
+                         (pen-var-value-maybe 'continue-default)
+                         override-prompt
+                         ,continue-default))
+
                     (final-inject-examples
                      (cl-loop for e in ',inject-examples collect
                               (expand-template e)))
@@ -1396,10 +1403,8 @@ Reconstruct the entire yaml-ht for a different language."
                             (if final-inject-examples
                                 (read-string-hist
                                  (concat ,func-name " " parameter-slug " inject: ")
-                                 (fz final-inject-examples
-                                     nil nil
-                                     (concat ,func-name " " parameter-slug " inject: ")
-                                     ))
+                                 (fz final-inject-examples nil nil
+                                  (concat ,func-name " " parameter-slug " inject: ")))
                               (read-string-hist (concat ,func-name " " parameter-slug " inject: ") final-inject-example))))))
 
                     (final-engine-max-n-completions
@@ -1834,6 +1839,16 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; Maybe just use <:pp> instead
                     ;; (query-pos (or (byte-string-search "<:qp>" final-prompt)
                     ;;                ""))
+
+                    (final-prompt
+                     (if (and final-continue-default
+                              ;; consider making it always run instead of checking interactive
+                              is-interactive)
+                         (let ((pos (re-match-p "<:pp>" final-prompt)))
+                           (if pos
+                               (string-replace "<:pp>" (concat final-continue-default "<:pp>") final-prompt)
+                             (concat final-prompt final-continue-default)))
+                       final-prompt))
 
                     (final-prompt
                      (if (sor final-inject-gen-start)
@@ -2868,6 +2883,7 @@ Function names are prefixed with pf- for easy searching"
                         (interactive-inject (pen-yaml-test yaml-ht "interactive-inject"))
                         (inject-example (ht-get yaml-ht "inject-example"))
                         (inject-examples (pen-vector2list (ht-get yaml-ht "inject-examples")))
+                        (continue-default (ht-get yaml-ht "continue-default"))
 
                         (end-yas (pen-yaml-test yaml-ht "end-yas"))
 
