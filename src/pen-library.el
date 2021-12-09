@@ -561,4 +561,8 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
           (if p
               (goto-char p))))))
 
+(defun pen-unfinished-sentence (&optional text)
+  (setq text (or text (pen-preceding-text)))
+  (pen-sn "pen-str join \" \"" (pen-preceding-sentences text 0)))
+
 (provide 'pen-library)
