@@ -3575,7 +3575,7 @@ But use the results-analyser."
         ,',@body))))
 
 ;; This is not the same as pen-train-model, which doesn't exist yet.
-;; When you train a function, you need to invoke the function as you would but also give it the expected output.
+;; When you train a function, you need to invoke the function as you would but also give it  expected possible outputs.
 (defmacro pen-train-function (invocation examples)
   ;; This has to work via the docker container, somehow.
   ;; Run and save results to the history.
