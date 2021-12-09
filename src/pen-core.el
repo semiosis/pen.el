@@ -7,10 +7,11 @@
   (setq max-chars (or max-chars 1000))
   (str (buffer-substring (point) (max 1 (- (point) max-chars)))))
 
-(defun pen-preceding-sentences (text &optional n exclude-current)
+(defun pen-preceding-sentences (&optional text n exclude-current)
   (interactive)
 
   (setq n (or n 1))
+  (setq text (or text (pen-preceding-text)))
 
   (chomp
    (with-temp-buffer
