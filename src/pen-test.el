@@ -152,17 +152,21 @@
   (interactive)
 
   ;; First get it going locally, then use the server.
-  (idefun temperature-of-thing (thing)
-          "Display the temperature for something in degrees celcius. Use the format n°C")
+  (idefun average-temperature-of-thing (thing)
+          "Display the average temperature for something in degrees celcius. Use the format n°C")
 
   (defun show-temp-and-print (thing)
-    (awk1 (concat thing ": " (temperature-of-thing thing))))
+    (awk1 (concat thing ": " (average-temperature-of-thing thing))))
 
   (pen-etv
-   (concat (awk1 (show-temp-and-print "surface of sun"))
-           (awk1 (show-temp-and-print "human body"))
-           (awk1 (show-temp-and-print "running light bulb"))
-           (awk1 (show-temp-and-print "surface of moon")))))
+   (concat (awk1 (show-temp-and-print "the surface of the Sun"))
+           (awk1 (show-temp-and-print "the human body"))
+           (awk1 (show-temp-and-print "a running lightbulb"))
+
+           ;; These two are not very reliable
+           ;; But they could perhaps benefit from training
+           (awk1 (show-temp-and-print "the surface of the Moon in sunlight"))
+           (awk1 (show-temp-and-print "the surface of the Moon in darkness")))))
 
 ;; (etv
 ;;  (pen-get-prompt (pf-transpile/3 "5 + 5" "Python" "Lisp")))
