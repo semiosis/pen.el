@@ -312,6 +312,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     --prompt-hist-id) {
         PROMPT_HIST_ID="$2"
         shift
+        shift
     }
     ;;
 
