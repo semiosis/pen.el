@@ -1334,6 +1334,27 @@ Reconstruct the entire yaml-ht for a different language."
                     (var-keyvals (-zip ',vars vals))
                     (var-keyvals-slugged (-zip ',var-slugs vals))
 
+                    ;; When it comes to adding consistency, I must add consistency based on partial functions.
+                    ;; Otherwise, there'd be a single history/training which is prepended to all ifuntions.
+                    ;; OK, so how do we specify that?
+                    ;; I must specify 'constraint variables' for training .
+                    ;; When idefun is defined, specify a =prompt-hist-id=
+
+                    ;; The following needs
+                    (parameter-slug
+                     (s-join "."
+                             (mapcar (lambda (kv)
+                                       (let* ((k (car kv))
+                                              (v (cdr kv))
+                                              (kslug (slugify (s-left 20 k)))
+                                              (vslug (slugify (s-left 20 v)))
+                                              (khash (sha1 k))
+                                              (vhash (sha1 v))
+                                              (kslug (concat kslug "-" khash))
+                                              (vslug (concat vslug "-" vhash))))
+                                       (concat kslug "_" vslug))
+                                     var-keyvals-slugged)))
+
                     ;; n-collate currently isn't template expanded
                     (final-n-collate
                      (or (pen-var-value-maybe 'n-collate)
@@ -1365,7 +1386,7 @@ Reconstruct the entire yaml-ht for a different language."
                        (pen-var-value-maybe 'inject-gen-start)
                        ,inject-gen-start
                        (and final-interactive-inject
-                            (read-string-hist (concat ,func-name " inject: ") final-inject-example)))))
+                            (read-string-hist (concat ,func-name " " parameter-slug " inject: ") final-inject-example)))))
 
                     (final-engine-max-n-completions
                      (expand-template
@@ -1788,7 +1809,6 @@ Reconstruct the entire yaml-ht for a different language."
                                   ""))))
                        final-prompt))
 
-
                     ;; How to assign which prompt function to use for this?
                     ;; I need to be able to override the prompt of the current prompt function, or any prompt function for that matter.
                     ;; And use the part up to here as the prompt, and simply recurse.
@@ -1837,24 +1857,6 @@ Reconstruct the entire yaml-ht for a different language."
 
                        fhd))
 
-                    ;; When it comes to adding consistency, I must add consistency based on partial functions.
-                    ;; Otherwise, there'd be a single history/training which is prepended to all ifuntions.
-                    ;; OK, so how do we specify that?
-                    ;; I must specify 'constraint variables' for training .
-                    ;; When idefun is defined, specify a =prompt-hist-id=
-
-                    ;; ;; The following needs
-                    ;; (parameter-slug
-                    ;;  (s-join "."
-                    ;;          ,(mapcar (lambda (k v)
-                    ;;                     (let* ((kslug (slugify (s-left 20 k)))
-                    ;;                            (vslug (slugify (s-left 20 v)))
-                    ;;                            (khash (sha1 k))
-                    ;;                            (vhash (sha1 v))
-                    ;;                            (kslug (concat kslug "-" khash))
-                    ;;                            (vslug (concat vslug "-" vhash))))
-                    ;;                     (concat kslug "_" vslug))
-                    ;;                   var-keyvals-slugged)))
 
                     ;; add previous - used as an example
                     (final-prompt
