@@ -1380,7 +1380,7 @@ Reconstruct the entire yaml-ht for a different language."
                      (expand-template ,inject-example))
 
                     (final-inject-examples
-                     (cl-loop for e in ,inject-example collect
+                     (cl-loop for e in ,inject-examples collect
                               (expand-template e)))
 
                     (final-inject-gen-start
@@ -2857,6 +2857,7 @@ Function names are prefixed with pf- for easy searching"
                         (inject-gen-start (ht-get yaml-ht "inject-gen-start"))
                         (interactive-inject (pen-yaml-test yaml-ht "interactive-inject"))
                         (inject-example (ht-get yaml-ht "inject-example"))
+                        (inject-examples (pen-vector2list (ht-get yaml-ht "inject-examples")))
 
                         (end-yas (pen-yaml-test yaml-ht "end-yas"))
 
