@@ -1392,8 +1392,8 @@ Reconstruct the entire yaml-ht for a different language."
                        (pen-var-value-maybe 'inject-gen-start)
                        ,inject-gen-start
                        (and final-interactive-inject
-                            (if (and final-inject-examples
-                                     is-interactive)
+                            is-interactive
+                            (if final-inject-examples
                                 (read-string-hist
                                  (concat ,func-name " " parameter-slug " inject: ")
                                  (fz final-inject-examples
