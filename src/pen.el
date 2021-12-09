@@ -1815,7 +1815,7 @@ Reconstruct the entire yaml-ht for a different language."
                                 (f-directory-p fhd)
                                 ;; Ensure that without being specific, it doesn't erase the entire directory
                                 final-prompt-hist-id)
-                           (pen-sn (pen-cmd-q "rm -rf" fhd)))
+                           (pen-sn (pen-cmd-q "rm" "-rf" fhd)))
 
                        (if (not (f-directory-p fhd))
                            (f-mkdir fhd))

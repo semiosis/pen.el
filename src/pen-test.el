@@ -154,10 +154,12 @@
    (type (baby-name-for-country "Slovenia" "Female"))))
 
 (defun test-pen-population ()
-  (idefun population-of-country-in-millions (country))
+  (idefun population-of-country-in-millions-of-people (country))
   ;; Returns a float
+  ;; (etv
+  ;;  (type (population-of-country-in-millions "Slovenia")))
   (etv
-   (type (population-of-country-in-millions "Slovenia"))))
+   (type (upd (population-of-country-in-millions-of-people "New Zealand")))))
 
 (defun test-pen-prepend-previous2 ()
   (interactive)
