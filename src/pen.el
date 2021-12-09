@@ -1379,6 +1379,10 @@ Reconstruct the entire yaml-ht for a different language."
                     (final-inject-example
                      (expand-template ,inject-example))
 
+                    (final-inject-examples
+                     (cl-loop for e in ,inject-example collect
+                              (expand-template e)))
+
                     (final-inject-gen-start
                      (expand-template
                       (or
@@ -1386,7 +1390,9 @@ Reconstruct the entire yaml-ht for a different language."
                        (pen-var-value-maybe 'inject-gen-start)
                        ,inject-gen-start
                        (and final-interactive-inject
-                            (read-string-hist (concat ,func-name " " parameter-slug " inject: ") final-inject-example)))))
+                            (if final-inject-examples
+                                (read-string-hist (concat ,func-name " " parameter-slug " inject: ") (fz final-inject-examples))
+                              (read-string-hist (concat ,func-name " " parameter-slug " inject: ") final-inject-example))))))
 
                     (final-engine-max-n-completions
                      (expand-template
