@@ -12,24 +12,25 @@
 
   (setq n (or n 1))
 
-  (with-temp-buffer
-    (insert text)
-    (goto-char (point-max))
+  (chomp
+   (with-temp-buffer
+     (insert text)
+     (goto-char (point-max))
 
-    (save-excursion
-      (if exclude-current
-          (progn
-            (backward-sentence)
-            (setq n (1- n))))
+     (save-excursion
+       (if exclude-current
+           (progn
+             (backward-sentence)
+             (setq n (1- n))))
 
-      (let ((end (point))
-            (start))
+       (let ((end (point))
+             (start))
 
-        (loop for i in (number-sequence 0 n) do
-              (backward-sentence))
-        (setq start (point))
+         (loop for i in (number-sequence 0 n) do
+               (backward-sentence))
+         (setq start (point))
 
-        (str (buffer-substring start end))))))
+         (str (buffer-substring start end)))))))
 
 (defun pen-beginning-of-line-point ()
   (save-excursion
