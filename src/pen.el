@@ -1391,7 +1391,12 @@ Reconstruct the entire yaml-ht for a different language."
                        ,inject-gen-start
                        (and final-interactive-inject
                             (if final-inject-examples
-                                (read-string-hist (concat ,func-name " " parameter-slug " inject: ") (fz final-inject-examples))
+                                (read-string-hist
+                                 (concat ,func-name " " parameter-slug " inject: ")
+                                 (fz final-inject-examples
+                                     nil nil
+                                     (concat ,func-name " " parameter-slug " inject: ")
+                                     ))
                               (read-string-hist (concat ,func-name " " parameter-slug " inject: ") final-inject-example))))))
 
                     (final-engine-max-n-completions
