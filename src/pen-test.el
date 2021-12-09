@@ -136,15 +136,32 @@
 
   ;; First get it going locally, then use the server.
   (idefun hex-colour-of-thing (thing)
-          "Display the the real life colour for something in the format 0xRRGGBBAA")
+          "Display the real life colour for something in the format 0xRRGGBBAA")
 
   (defun show-color-and-print (thing)
     (awk1 (concat thing ": " (hex-colour-of-thing thing))))
+
+  ;; TODO Do an assertion first as an example
 
   (pen-etv
    (concat (awk1 (show-color-and-print "blueberries"))
            (awk1 (show-color-and-print "strawberries"))
            (awk1 (show-color-and-print "banana")))))
+
+(defun test-pen-prepend-previous2 ()
+  (interactive)
+
+  ;; First get it going locally, then use the server.
+  (idefun temperature-of-thing (thing)
+          "Display the temperature for something in degrees celcius. Use the format n°C")
+
+  (defun show-temp-and-print (thing)
+    (awk1 (concat thing ": " (temperature-of-thing thing))))
+
+  (pen-etv
+   (concat (awk1 (show-temp-and-print "surface of sun"))
+           (awk1 (show-temp-and-print "human body"))
+           (awk1 (show-temp-and-print "light bulb")))))
 
 ;; (etv
 ;;  (pen-get-prompt (pf-transpile/3 "5 + 5" "Python" "Lisp")))
