@@ -172,7 +172,7 @@
     (awk1 (concat thing ": " (average-temperature-of-thing thing))))
 
   (pen-etv
-   (concat (awk1 (show-temp-and-print "the surface of the Sun"))
+   (concat (awk1 (upd (show-temp-and-print "the surface of the Sun")))
            (awk1 (show-temp-and-print "the human body"))
            (awk1 (show-temp-and-print "a running lightbulb"))
 
