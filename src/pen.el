@@ -1855,6 +1855,7 @@ Reconstruct the entire yaml-ht for a different language."
                                 (f-exists-p lastgenpath))
                            (concat
                             (awk1 (cat lastgenpath))
+                            final-stop-sequence
                             ;; final-delimiter "\n"
                             "\n\n"
                             final-prompt)
@@ -2298,7 +2299,7 @@ Reconstruct the entire yaml-ht for a different language."
                                           "last-generated.txt")
                                   final-generated-prompt)
                              (tee (f-join func-hist-dir
-                                          "last.txt")
+                                          "last-final-prompt.txt")
                                   final-prompt)
                              (tee (f-join func-hist-dir
                                           (concat (str gen-time) "-generated.txt"))
