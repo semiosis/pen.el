@@ -1350,12 +1350,22 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; (final-pretext
                     ;;  (expand-template pretext))
 
+                    (final-interactive-inject
+                     (or (pen-var-value-maybe 'pen-interactive-inject)
+                         (pen-var-value-maybe 'interactive-inject)
+                         ',interactive-inject))
+
+                    (final-inject-example
+                     (expand-template ,inject-example))
+
                     (final-inject-gen-start
                      (expand-template
                       (or
                        inject-gen-start
                        (pen-var-value-maybe 'inject-gen-start)
-                       ,inject-gen-start)))
+                       ,inject-gen-start
+                       (and final-interactive-inject
+                            (read-string-hist (concat ,func-name " inject: ") final-inject-example)))))
 
                     (final-engine-max-n-completions
                      (expand-template
@@ -2838,6 +2848,8 @@ Function names are prefixed with pf- for easy searching"
 
                         ;; not normally given via .prompt. Rather, overridden
                         (inject-gen-start (ht-get yaml-ht "inject-gen-start"))
+                        (interactive-inject (pen-yaml-test yaml-ht "interactive-inject"))
+                        (inject-example (ht-get yaml-ht "inject-example"))
 
                         (end-yas (pen-yaml-test yaml-ht "end-yas"))
 
