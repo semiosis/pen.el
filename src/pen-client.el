@@ -213,8 +213,18 @@
                         ;; Can't use penf, because it's different.
                         "penj"
                       "pena"))
+                   (do-pen-update
+                     (or
+                      ;; H-u -- this doesn't work with some interactive functions, such as (interactive (list (read-string "kjlfdskf")))
+                      (>= (prefix-numeric-value current-global-prefix-arg) 4)
+                      ;; C-u 0
+                      (= (prefix-numeric-value current-prefix-arg) 0)
+                      (pen-var-value-maybe 'do-pen-update)))
                    ;; I have to supply prompt-hist-id here as an option
-                   (sn-cmd `(pen-client-ecmd ,pen-script-name "-u" "--prompt-hist-id" prompt-hist-id ,,remote-fn-name ,@',arg-list-syms)))
+                   (sn-cmd
+                    (if do-pen-update
+                        `(pen-client-ecmd ,pen-script-name "-u" "--prompt-hist-id" prompt-hist-id ,,remote-fn-name ,@',arg-list-syms)
+                      `(pen-client-ecmd ,pen-script-name "--prompt-hist-id" prompt-hist-id ,,remote-fn-name ,@',arg-list-syms))))
               (if (or server
                       (not (pen-container-running-p)))
                   (apply ',remote-fn-sym

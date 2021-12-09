@@ -144,7 +144,7 @@
   ;; TODO Do an assertion first as an example
 
   (pen-etv
-   (concat (awk1 (show-color-and-print "blueberries"))
+   (concat (awk1 (upd (show-color-and-print "blueberries")))
            (awk1 (show-color-and-print "strawberries"))
            (awk1 (show-color-and-print "banana")))))
 
