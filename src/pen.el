@@ -1380,7 +1380,7 @@ Reconstruct the entire yaml-ht for a different language."
                      (expand-template ,inject-example))
 
                     (final-inject-examples
-                     (cl-loop for e in ,inject-examples collect
+                     (cl-loop for e in ',inject-examples collect
                               (expand-template e)))
 
                     (final-inject-gen-start
