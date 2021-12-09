@@ -213,6 +213,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    --temp) {
+        temperature="$2"
+        shift
+        shift
+    }
+    ;;
+
     -nv) {
         USE_NVC=y
         shift
@@ -337,6 +344,10 @@ if test -n "$PROMPT_HIST_ID"; then
     PROMPT_HIST_ID="\"$PROMPT_HIST_ID\""
 else
     PROMPT_HIST_ID=nil
+fi
+
+if ! test -n "$temperature"; then
+    temperature=nil
 fi
 
 export USE_NVC
@@ -624,9 +635,9 @@ case "$sn" in
             fi
 
             if test "$UPDATE" = y; then
-                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-update ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start)))))"
+                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-update ($pfname $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start)))))"
             else
-                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start))))"
+                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn ($pfname $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start))))"
             fi
 
             HAS_TTY=n
@@ -795,7 +806,7 @@ case "$sn" in
         fi
 
         CMD="$(cmd-nice "$@")"
-        set -- -e "(pen-list2str (pen-single-generation ($sn $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID)))"
+        set -- -e "(pen-list2str (pen-single-generation ($sn $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID)))"
         HAS_TTY=n
         batch=y
         docker_cmd=exec
