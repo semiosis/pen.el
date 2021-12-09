@@ -309,6 +309,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    --prompt-hist-id) {
+        PROMPT_HIST_ID="$2"
+        shift
+    }
+    ;;
+
     -Q) {
         vanilla=y
         use_pen_config=n
@@ -610,10 +616,16 @@ case "$sn" in
                 ncompletions_limiter_fn=pen-single-generation
             fi
 
-            if test "$UPDATE" = y; then
-                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start)))))"
+            if test -n "$PROMPT_HIST_ID"; then
+                PROMPT_HIST_ID="\"$PROMPT_HIST_ID\""
             else
-                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start))))"
+                PROMPT_HIST_ID=nil
+            fi
+
+            if test "$UPDATE" = y; then
+                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-update ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start)))))"
+            else
+                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start))))"
             fi
 
             HAS_TTY=n

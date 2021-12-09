@@ -214,7 +214,7 @@
                         "penj"
                       "pena"))
                    ;; I have to supply prompt-hist-id here as an option
-                   (sn-cmd `(pen-client-ecmd ,pen-script-name "-u" ,,remote-fn-name ,@',arg-list-syms)))
+                   (sn-cmd `(pen-client-ecmd ,pen-script-name "-u" "--prompt-hist-id" prompt-hist-id ,,remote-fn-name ,@',arg-list-syms)))
               (if (or server
                       (not (pen-container-running-p)))
                   (apply ',remote-fn-sym
