@@ -19,7 +19,7 @@ stdin_exists() {
 }
 
 # test -n "$person" || {
-#     echo "Person name required as parameter." 12    
+#     echo "Person name required as parameter." 12
 #     exit 1
 # }
 
