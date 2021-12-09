@@ -1400,11 +1400,12 @@ Reconstruct the entire yaml-ht for a different language."
                        ,inject-gen-start
                        (and final-interactive-inject
                             is-interactive
+                            (not final-continue-default)
                             (if final-inject-examples
                                 (read-string-hist
                                  (concat ,func-name " " parameter-slug " inject: ")
                                  (fz final-inject-examples nil nil
-                                  (concat ,func-name " " parameter-slug " inject: ")))
+                                     (concat ,func-name " " parameter-slug " inject: ")))
                               (read-string-hist (concat ,func-name " " parameter-slug " inject: ") final-inject-example))))))
 
                     (final-engine-max-n-completions
@@ -1846,8 +1847,8 @@ Reconstruct the entire yaml-ht for a different language."
                               is-interactive)
                          (let ((pos (re-match-p "<:pp>" final-prompt)))
                            (if pos
-                               (string-replace "<:pp>" (concat final-continue-default "<:pp>") final-prompt)
-                             (concat final-prompt final-continue-default)))
+                               (string-replace "<:pp>" (concat (eval-string final-continue-default) "<:pp>") final-prompt)
+                             (concat final-prompt (eval-string final-continue-default))))
                        final-prompt))
 
                     (final-prompt
