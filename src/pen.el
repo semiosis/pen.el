@@ -1810,6 +1810,13 @@ Reconstruct the entire yaml-ht for a different language."
                        (if (not (f-directory-p fhd))
                            (f-mkdir fhd))
 
+                       (if (and do-pen-update
+                                (f-directory-p fhd))
+                           (pen-sn (pen-cmd-q "rm -rf" fhd)))
+
+                       (if (not (f-directory-p fhd))
+                           (f-mkdir fhd))
+
                        ;; (if (or final-prepend-previous
                        ;;         final-train-function)
                        ;;     (if (not (f-directory-p fhd))
