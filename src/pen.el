@@ -4029,6 +4029,7 @@ May use to generate code from comments."
 (require 'pen-buffer-state)
 (require 'pen-apostrophe)
 (require 'pen-scratch)
+(require 'pen-minor-modes)
 
 (defun pen-lsp-explain-error ()
   (interactive)
