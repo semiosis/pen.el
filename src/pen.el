@@ -3819,7 +3819,7 @@ But use the results-analyser."
        ,',@body)))
 
 (defmacro pen-less-repetition (&rest body)
-  "This wraps around pen function calls to make them complete line only"
+  "This wraps around pen function calls to give them a repetition penalty"
   `(eval
     `(let ((frequency-penalty 0.3))
        ,',@body)))
