@@ -161,7 +161,8 @@
   (pen-etv
    (concat (awk1 (show-temp-and-print "surface of sun"))
            (awk1 (show-temp-and-print "human body"))
-           (awk1 (show-temp-and-print "light bulb")))))
+           (awk1 (show-temp-and-print "running light bulb"))
+           (awk1 (show-temp-and-print "surface of moon")))))
 
 ;; (etv
 ;;  (pen-get-prompt (pf-transpile/3 "5 + 5" "Python" "Lisp")))

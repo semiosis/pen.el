@@ -1807,10 +1807,13 @@ Reconstruct the entire yaml-ht for a different language."
                                 (f-join genhistdir func-name-slug final-prompt-hist-id)
                               (f-join genhistdir func-name-slug))))
 
-                       (if (or final-prepend-previous
-                               final-train-function)
-                           (if (not (f-directory-p fhd))
-                               (f-mkdir fhd)))
+                       (if (not (f-directory-p fhd))
+                           (f-mkdir fhd))
+
+                       ;; (if (or final-prepend-previous
+                       ;;         final-train-function)
+                       ;;     (if (not (f-directory-p fhd))
+                       ;;         (f-mkdir fhd)))
 
                        fhd))
 

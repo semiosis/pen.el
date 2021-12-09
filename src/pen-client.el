@@ -213,6 +213,7 @@
                         ;; Can't use penf, because it's different.
                         "penj"
                       "pena"))
+                   ;; I have to supply prompt-hist-id here as an option
                    (sn-cmd `(pen-client-ecmd ,pen-script-name "-u" ,,remote-fn-name ,@',arg-list-syms)))
               (if (or server
                       (not (pen-container-running-p)))
