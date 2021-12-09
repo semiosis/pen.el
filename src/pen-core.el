@@ -12,32 +12,24 @@
 
   (setq n (or n 1))
 
-  ;; with temporary buffer
   (with-temp-buffer
     (insert text)
     (goto-char (point-max))
 
     (save-excursion
       (if exclude-current
-          (or (search-backward "." nil t 1)
-              (beginning-of-buffer)))
+          (progn
+            (backward-sentence)
+            (setq n (1- n))))
 
       (let ((end (point))
             (start))
-        ;; (search-forward "." nil t)
-        ;; (if (= (point) start)
-        ;;     nil
-        ;;   (buffer-substring start (1- (point))))
 
         (loop for i in (number-sequence 0 n) do
-              (or (search-backward "." nil t 1)
-                  (beginning-of-buffer)))
+              (backward-sentence))
         (setq start (point))
 
-        (str (buffer-substring start end))))
-
-    ;; (forward-char 1)
-    ))
+        (str (buffer-substring start end))))))
 
 (defun pen-beginning-of-line-point ()
   (save-excursion
