@@ -2285,8 +2285,7 @@ Reconstruct the entire yaml-ht for a different language."
                     (inert-save-hist
                      (progn
                        (if (and (or final-prepend-previous
-                                    ;; final-train-function
-                                    )
+                                    final-train-function)
                                 (f-directory-p penconfdir))
                            (let ((r (if (numberp result)
                                         (car results)

@@ -968,7 +968,16 @@ call NumberSyntax()
 call GeneralSyntax()
 tnoremap <C-@> <C-Space>
 tmap <LeftMouse> <LeftMouse>
-tmap <RightMouse> <RightMouse>
+" tmap <C-LeftMouse> <C-LeftMouse>
+" It maps correctly, but can't SEND C-LeftMouse
+" tmap <C-LeftMouse> :echom 'Foo'<CR>
+" The 16; is the bit that is the C-
+" The rest is the location
+tmap <C-LeftMouse> [<16;1;7M
+" That's all that matters for Pen.el because the Right Click Menu doesn't care about
+" The cursor click position
+" tmap <RightMouse> <RightMouse>
+tmap <RightMouse> [<16;1;7M
 tmap <C-M-O> <BS>
 tmap <S-Up> [1;2A
 tmap <S-Down> [1;2B
