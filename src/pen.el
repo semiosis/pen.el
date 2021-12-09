@@ -841,6 +841,7 @@ Reconstruct the entire yaml-ht for a different language."
                                                              variadic-var
                                                              pretext
                                                              inject-gen-start
+                                                             temperature
                                                              override-prompt
                                                              force-interactive
                                                              prompt-hist-id
@@ -874,6 +875,7 @@ Reconstruct the entire yaml-ht for a different language."
                      :select-only-match select-only-match
                      :variadic-var variadic-var
                      :inject-gen-start inject-gen-start
+                     :temperature temperature
                      :override-prompt override-prompt
                      :force-interactive is-interactive
                      ;; inert for client
@@ -1390,7 +1392,8 @@ Reconstruct the entire yaml-ht for a different language."
                        (pen-var-value-maybe 'inject-gen-start)
                        ,inject-gen-start
                        (and final-interactive-inject
-                            (if final-inject-examples
+                            (if (and final-inject-examples
+                                     is-interactive)
                                 (read-string-hist
                                  (concat ,func-name " " parameter-slug " inject: ")
                                  (fz final-inject-examples
@@ -1521,7 +1524,9 @@ Reconstruct the entire yaml-ht for a different language."
                       (str (or
                             final-force-temperature
                             pen-force-temperature
-                            final-temperature ;At this stage, could only have been set by force-engine
+                            temperature
+                            ;At this stage, could only have been set by force-engine
+                            final-temperature
                             (pen-var-value-maybe 'temperature)
                             ,temperature
                             final-default-temperature))))
