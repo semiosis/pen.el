@@ -213,7 +213,7 @@
                         ;; Can't use penf, because it's different.
                         "penj"
                       "pena"))
-                   (do-pen-update
+                   (client-do-pen-update
                      (or
                       ;; H-u -- this doesn't work with some interactive functions, such as (interactive (list (read-string "kjlfdskf")))
                       (>= (prefix-numeric-value current-global-prefix-arg) 4)
@@ -222,7 +222,7 @@
                       (pen-var-value-maybe 'do-pen-update)))
                    ;; I have to supply prompt-hist-id here as an option
                    (sn-cmd
-                    (if do-pen-update
+                    (if client-do-pen-update
                         `(pen-client-ecmd ,pen-script-name "-u" "--prompt-hist-id" prompt-hist-id ,,remote-fn-name ,@',arg-list-syms)
                       `(pen-client-ecmd ,pen-script-name "--prompt-hist-id" prompt-hist-id ,,remote-fn-name ,@',arg-list-syms))))
               (if (or server
@@ -245,7 +245,7 @@
                            ;; client
                            ;; server
                            )))
-                (let* ((results (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic (tv ,sn-cmd))))))))
+                (let* ((results (vector2list (json-read-from-string (chomp (eval `(pen-sn-basic ,sn-cmd)))))))
                   (if is-interactive
                       (pen-etv
                        (completing-read ,(concat remote-fn-name ": ") results))
