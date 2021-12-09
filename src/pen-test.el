@@ -142,7 +142,7 @@
     (awk1 (concat thing ": " (hex-colour-of-thing thing))))
 
   (pen-etv
-   (concat (awk1 (show-color-and-print "watermelon"))
+   (concat (awk1 (show-color-and-print "blueberries"))
            (awk1 (show-color-and-print "strawberries"))
            (awk1 (show-color-and-print "banana")))))
 

@@ -358,6 +358,10 @@
                     code-str expression-str
                     :no-select-result t
                     :select-only-match t
+                    :prompt-hist-id
+                    (if code-str
+                        (concat "ieval/m-" (sha1 code-str))
+                      "ieval/m")
                     :client iλ-thin)))))
     (ignore-errors
       (setq result (eval-string (concat "''" result))))

@@ -1090,8 +1090,12 @@ Reconstruct the entire yaml-ht for a different language."
                       ,engine-whitespace-support))
 
                     (final-prompt-hist-id
-                     (or (pen-var-value-maybe 'pen-prompt-hist-id)
-                         (pen-var-value-maybe 'prompt-hist-id)))
+                     (let ((phi
+                            (or (pen-var-value-maybe 'pen-prompt-hist-id)
+                                (pen-var-value-maybe 'prompt-hist-id))))
+                       (if phi
+                           (setq phi (slugify phi)))
+                       phi))
 
                     (final-include-prompt
                      (or (pen-var-value-maybe 'pen-include-prompt)
@@ -1805,8 +1809,8 @@ Reconstruct the entire yaml-ht for a different language."
 
                        (if (or final-prepend-previous
                                final-train-function)
-                           (if (not (f-directory-p func-hist-dir))
-                               (f-mkdir func-hist-dir)))
+                           (if (not (f-directory-p fhd))
+                               (f-mkdir fhd)))
 
                        fhd))
 
@@ -1822,8 +1826,8 @@ Reconstruct the entire yaml-ht for a different language."
                     ;;          ,(mapcar (lambda (k v)
                     ;;                     (let* ((kslug (slugify (s-left 20 k)))
                     ;;                            (vslug (slugify (s-left 20 v)))
-                    ;;                            (khash (sha-hash-string k))
-                    ;;                            (vhash (sha-hash-string v))
+                    ;;                            (khash (sha1 k))
+                    ;;                            (vhash (sha1 v))
                     ;;                            (kslug (concat kslug "-" khash))
                     ;;                            (vslug (concat vslug "-" vhash))))
                     ;;                     (concat kslug "_" vslug))
@@ -2262,7 +2266,34 @@ Reconstruct the entire yaml-ht for a different language."
                     (result
                      (if (and final-evaluator (sor final-evaluator))
                          (eval-string final-evaluator)
-                       result)))
+                       result))
+
+                    (inert-save-hist
+                     (progn
+                       (if (and (or final-prepend-previous
+                                    ;; final-train-function
+                                    )
+                                (f-directory-p penconfdir))
+                           (let ((r (if (numberp result)
+                                        (car results)
+                                      result)))
+
+                             (tee (f-join func-hist-dir
+                                          "last-generated-prompt-and-result.txt")
+                                  (concat final-generated-prompt r))
+                             (tee (f-join func-hist-dir
+                                          "last-generated.txt")
+                                  final-generated-prompt)
+                             (tee (f-join func-hist-dir
+                                          "last.txt")
+                                  final-prompt)
+                             (tee (f-join func-hist-dir
+                                          (concat (str gen-time) "-generated.txt"))
+                                  final-generated-prompt)
+                             (tee (f-join func-hist-dir
+                                          (concat (str gen-time) ".txt"))
+                                  final-prompt)))
+                       nil)))
 
                ;; TODO here save the function that ran and the selection
 
@@ -2270,30 +2301,6 @@ Reconstruct the entire yaml-ht for a different language."
                (setq pen-last-prompt-data
                      (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" (str result))
                                                             (cons "PEN_RESULTS" (json-encode-list results)))))
-
-               (if (and (or final-prepend-previous
-                            ;; final-train-function
-                            )
-                        (f-directory-p penconfdir))
-                   (let ((r (if (numberp result)
-                                (car results)
-                              result)))
-
-                     (tee (f-join func-hist-dir
-                                  "last-generated-prompt-and-result.txt")
-                          (concat final-generated-prompt r))
-                     (tee (f-join func-hist-dir
-                                  "last-generated.txt")
-                          final-generated-prompt)
-                     (tee (f-join func-hist-dir
-                                  "last.txt")
-                          final-prompt)
-                     (tee (f-join func-hist-dir
-                                  (concat (str gen-time) "-generated.txt"))
-                          final-generated-prompt)
-                     (tee (f-join func-hist-dir
-                                  (concat (str gen-time) ".txt"))
-                          final-prompt)))
 
                ;; Now save this to a list somewhere
                (pen-append-to-file
@@ -3467,19 +3474,19 @@ But use the results-analyser."
          ,',@body))))
 
 (comment
- (idefun sha-hash-string (s))
+ (idefun sha1 (s))
 
  (pen-force
   ((temperature 0.0))
-  (sha-hash-string "sugar shane"))
+  (sha1 "sugar shane"))
 
  (pen-force
   ((temperature 0.9))
-  (sha-hash-string "ceiling"))
+  (sha1 "ceiling"))
 
  (pen-force
   ((temperature 0.0))
-  (sha-hash-string "ceiling")))
+  (sha1 "ceiling")))
 
 (defun pen-force-custom-test ()
   (interactive)
