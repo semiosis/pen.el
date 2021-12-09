@@ -172,6 +172,7 @@
     (awk1 (concat thing ": " (average-temperature-of-thing thing))))
 
   (pen-etv
+   ;; the initial call with upd will erase the prompt history
    (concat (awk1 (upd (show-temp-and-print "the surface of the Sun")))
            (awk1 (show-temp-and-print "the human body"))
            (awk1 (show-temp-and-print "a running lightbulb"))
