@@ -332,6 +332,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if test -n "$PROMPT_HIST_ID"; then
+    PROMPT_HIST_ID="\"$PROMPT_HIST_ID\""
+else
+    PROMPT_HIST_ID=nil
+fi
+
 export USE_NVC
 
 if stdin_exists && \
@@ -616,12 +622,6 @@ case "$sn" in
                 ncompletions_limiter_fn=pen-single-generation
             fi
 
-            if test -n "$PROMPT_HIST_ID"; then
-                PROMPT_HIST_ID="\"$PROMPT_HIST_ID\""
-            else
-                PROMPT_HIST_ID=nil
-            fi
-
             if test "$UPDATE" = y; then
                 set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-update ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start)))))"
             else
@@ -794,7 +794,7 @@ case "$sn" in
         fi
 
         CMD="$(cmd-nice "$@")"
-        set -- -e "(pen-list2str (pen-single-generation ($sn $CMD :no-select-result t)))"
+        set -- -e "(pen-list2str (pen-single-generation ($sn $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID)))"
         HAS_TTY=n
         batch=y
         docker_cmd=exec
