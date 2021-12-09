@@ -148,6 +148,17 @@
            (awk1 (show-color-and-print "strawberries"))
            (awk1 (show-color-and-print "banana")))))
 
+(defun test-pen-baby-name ()
+  (idefun baby-name-for-country (country gender))
+  (etv
+   (type (baby-name-for-country "Slovenia" "Female"))))
+
+(defun test-pen-population ()
+  (idefun population-of-country-in-millions (country))
+  ;; Returns a float
+  (etv
+   (type (population-of-country-in-millions "Slovenia"))))
+
 (defun test-pen-prepend-previous2 ()
   (interactive)
 
