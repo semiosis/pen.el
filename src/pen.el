@@ -1857,7 +1857,6 @@ Reconstruct the entire yaml-ht for a different language."
 
                        fhd))
 
-
                     ;; add previous - used as an example
                     (final-prompt
                      (let ((lastgenpath (f-join func-hist-dir "last-generated-prompt-and-result.txt")))
