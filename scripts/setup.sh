@@ -269,6 +269,8 @@ fc-cache -f -v
 
 pip3 install cohere
 
+pip3 install spacy
+
 agi nano
 
 agi ssh
