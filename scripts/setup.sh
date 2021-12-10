@@ -255,6 +255,13 @@ sed -i "s/^/# /" /usr/local/lib/cmake/libwebsockets/libwebsockets-config.cmake
 make -j 4 && make install
 )
 
+# tree-sitter cli
+(
+git clone "https://github.com/tree-sitter/tree-sitter"
+cd tree-sitter/cli
+cargo install --path .
+)
+
 agi unzip
 
 mkdir -p ~/.fonts
