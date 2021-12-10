@@ -25,7 +25,8 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/\/www.metalevel.at/s/\/$//' | \
     sed '/\/www.metalevel.at/s/\/#/#/' | \
     sed '/\/openethereum.github.io/s/\/$//' | \
-    sed '/wikipedia.org/s/\/$//'
+    sed '/wikipedia.org/s/\/$//' | \
+    sed '/wikipedia.org/s/\/#.*//'
 
 # https://web.archive.org/web/20161230180206/
 # https://web.archive.org/web/20161230180206/https://github.com/unisonweb/unison/blob/master/unison-src/searchengine.u
