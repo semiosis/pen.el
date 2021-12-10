@@ -5,6 +5,7 @@
   (if (sor prompt-function-name-or-sym)
       (let* ((prompt-fn
               (--> (str prompt-function-name-or-sym)
+                (s-replace-regexp "\\.prompt$" "")
                 (string-replace "--" "-")
                 (s-replace-regexp "^\\(pf\\|pen-fn\\)-\\(.*\\)/\\([0-9]*\\)" "\\2-\\3.prompt"))))
         (find-file (f-join pen-prompts-directory "prompts" prompt-fn)))))
