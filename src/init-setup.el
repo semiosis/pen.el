@@ -118,6 +118,10 @@
 (require 'spacemacs-dark-theme)
 (require 'macrostep)
 
+;; The requires are necessary to complete the installation of tree-sitter
+(require 'tree-sitter)
+(require 'tree-sitter-langs)
+
 (require 'pen-custom)
 
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
