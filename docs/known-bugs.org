@@ -7,4 +7,4 @@
   - Call your variable something else, such as 'expected output'.
 
 *** Test
-pf-generate-transformative-code/5
+prompt:pf-generate-transformative-code/5
