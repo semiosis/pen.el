@@ -48,6 +48,11 @@
 (require 'pen-autosuggest)
 (require 'helpful)
 
+(require 'macrostep)
+(require 'tree-sitter)
+(require 'tree-sitter-langs)
+(require 'tree-sitter-indent)
+
 (defvar my-completion-engine 'pen-company-filetype)
 
 (defvar-local pen.el nil)
