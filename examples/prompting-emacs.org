@@ -1,5 +1,13 @@
 * Findings surrounding this investigation
-Codex indeed is able to 
+Codex indeed is able to regurgitate original source code.
+
+Also, when there is a particularly coherent
+generation from a LM, it's often the case that
+this is copied from somewhere.
+
+For example, the pick-up-line:
+
+
 
 * Prototype prompts
 #+BEGIN_SRC text -n :async :results verbatim code
