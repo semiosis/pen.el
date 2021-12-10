@@ -86,7 +86,7 @@ It's completely free, libre and open-source.
   - Many articles on Pen
 
 ** Further introduction
-=Pen.el= is Google search, stackoverflow,
+=Pen.el= is Google search, _stackoverflow_,
 Grammarly, Copilot, =conversion.ai=, mind
 mapping software (based on GPT-3) etc. all
 rolled into one package and allows you to
