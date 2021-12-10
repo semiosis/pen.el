@@ -63,6 +63,7 @@
 (package-install 'macrostep)
 (package-install 'tree-sitter)
 (package-install 'tree-sitter-langs)
+(package-install 'tree-sitter-indent)
 
 ;; Require dependencies
 (require 'shut-up)
