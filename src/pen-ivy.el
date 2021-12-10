@@ -1,14 +1,14 @@
 (setq ivy-height 30)
 
-(defun ivy-filtered-candidates ()
+(defun pen-ivy-filtered-candidates ()
   "Returns the list of candidates filtered by the currently entered pattern"
   (ivy--filter ivy-text ivy--all-candidates))
 
-(defun ivy-current-string ()
+(defun pen-ivy-current-string ()
   "Returns the candidate currently under the cursor (not all marked candidates)"
-  (nth ivy--index (ivy-filtered-candidates)))
+  (nth ivy--index (pen-ivy-filtered-candidates)))
 
-(defun ivy-get-selection ()
+(defun pen-ivy-get-selection ()
   "Copy the selected candidate as a string."
   (interactive)
   (let ((ret nil))
@@ -20,7 +20,7 @@
                  ;; the action from `ivy-dispatching-done' may not need a
                  ;; candidate at all
                  (eq this-command 'ivy-dispatching-done))
-             (let ((s (ivy-current-string)))
+             (let ((s (pen-ivy-current-string)))
                (xc s t)
                (setq ret s)
                s))
@@ -29,42 +29,42 @@
              (if (or (not (eq confirm-nonexistent-file-or-buffer t))
                      (equal " (confirm)" ivy--prompt-extra))
                  ;; (ivy--done ivy-text)
-                 (ivy--done (ivy-current-string))
+                 (ivy--done (pen-ivy-current-string))
                (setq ivy--prompt-extra " (confirm)")
                ;; (xc ivy-text t)
-               (xc (ivy--done (ivy-current-string)) t)
+               (xc (ivy--done (pen-ivy-current-string)) t)
                (ivy--exhibit)))
             ((memq (ivy-state-require-match ivy-last)
                    '(nil confirm confirm-after-completion))
              ;; (ivy--done ivy-text)
-             (ivy--done (ivy-current-string)))
+             (ivy--done (pen-ivy-current-string)))
             (t
              (setq ivy--prompt-extra " (match required)")
              ;; (xc ivy-text t)
-             (setq ret (ivy-current-string))
+             (setq ret (pen-ivy-current-string))
              (ivy--exhibit))))
     ret))
 
-(defun ivy-copy-selection ()
+(defun pen-ivy-copy-selection ()
   "Copy the selected candidate as a string."
   (interactive)
   (if (ivy--prompt-selected-p)
       (ivy-immediate-done)
     ;; It's really strange how it doesn't show, but it does copy
-    (xc (ivy-get-selection))))
+    (xc (pen-ivy-get-selection))))
 
-(defun ivy-open-selection-in-vim ()
+(defun pen-ivy-open-selection-in-vim ()
   "Copy the selected candidate as a string."
   (interactive)
   (if (ivy--prompt-selected-p)
       (ivy-immediate-done)
-    (let ((c (concat "vim " (pen-q (s-replace-regexp " .*" "" (ivy-get-selection))))))
+    (let ((c (concat "vim " (pen-q (s-replace-regexp " .*" "" (pen-ivy-get-selection))))))
       (eval
        `(ivy-quit-and-run
           (pen-term-sps ,c))))))
 
-(define-key ivy-minibuffer-map (kbd "M-c") 'ivy-copy-selection)
-(define-key ivy-minibuffer-map (kbd "M-v") 'ivy-open-selection-in-vim)
+(define-key ivy-minibuffer-map (kbd "M-c") 'pen-ivy-copy-selection)
+(define-key ivy-minibuffer-map (kbd "M-v") 'pen-ivy-open-selection-in-vim)
 (define-key ivy-minibuffer-map (kbd "M-D") 'send-m-del)
 (define-key ivy-minibuffer-map (kbd "C-c o") 'ivy-tvipe-filtered-candidates)
 
@@ -78,8 +78,8 @@
   :bind (
          :map ivy-minibuffer-map
          ("M-D" . send-m-del)
-         ("M-c" . ivy-copy-selection)
-         ("M-v" . ivy-open-selection-in-vim)
+         ("M-c" . pen-ivy-copy-selection)
+         ("M-v" . pen-ivy-open-selection-in-vim)
          ("M-h" . sph)
          ("M-s" . spv)
          ("M-o" . ivy-sps-open)
