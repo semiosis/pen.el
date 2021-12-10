@@ -58,7 +58,7 @@
   (interactive)
   (if (ivy--prompt-selected-p)
       (ivy-immediate-done)
-    (pen-sps (concat "v " (pen-q (s-replace-regexp " .*" "" (ivy-get-selection)))))))
+    (pen-sps (concat "vim " (pen-q (s-replace-regexp " .*" "" (ivy-get-selection)))))))
 
 (define-key ivy-minibuffer-map (kbd "M-c") 'ivy-copy-selection)
 (define-key ivy-minibuffer-map (kbd "M-v") 'ivy-open-selection-in-vim)
