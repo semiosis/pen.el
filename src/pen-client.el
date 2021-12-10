@@ -97,7 +97,8 @@
             (insert (str contents))))
       (beginning-of-buffer)
       (if mode (funcall mode))
-      (pen-add-ink-change-hook))
+      ;; This may not be available
+      (ignore-errors (pen-add-ink-change-hook)))
     buffer))
 (defalias 'nbfs 'new-buffer-from-string)
 (defun new-buffer-from-o (o)
