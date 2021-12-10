@@ -20,6 +20,14 @@ For example, the pick-up-line:
 
 This is also the case for software.
 
+This investigation was aimed at investigating
+the complete redundancy of original source
+code.
+
+Depending on how you use the software, it
+certainly appears that the original source
+code is obsoleted to some degree.
+
 * Prototype prompts
 #+BEGIN_SRC text -n :async :results verbatim code
   File Edit Options Buffers Tools Lisp-Interaction Help
