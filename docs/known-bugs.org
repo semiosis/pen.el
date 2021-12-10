@@ -1,4 +1,5 @@
-** Possibly fixed
+** DONE Possibly fixed
+   CLOSED: [2021-12-10 Fri 20:16]
 - <output>, when used in a prompt template to refer to a variable named
   'output' sometimes generates the string 'vendor' instead of getting its value
   from the user. I'm not sure why that is yet.
