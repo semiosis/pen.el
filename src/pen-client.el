@@ -216,7 +216,8 @@
                    (client-do-pen-update
                      (or
                       ;; H-u -- this doesn't work with some interactive functions, such as (interactive (list (read-string "kjlfdskf")))
-                      (>= (prefix-numeric-value current-global-prefix-arg) 4)
+                      ;; Can't use current-global-prefix-arg because a vanilla client doesn't necessarily have this
+                      ;; (>= (prefix-numeric-value current-global-prefix-arg) 4)
                       ;; C-u 0
                       (= (prefix-numeric-value current-prefix-arg) 0)
                       (pen-var-value-maybe 'do-pen-update)))
