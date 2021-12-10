@@ -6,4 +6,4 @@
 ;; Then create pen-minor-modes.
 ;; These minor modes should set defaults in prompt functions.
 
-(provide 'pen-minor-mode)
+(provide 'pen-minor-modes)
