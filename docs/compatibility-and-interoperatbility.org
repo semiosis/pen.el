@@ -5,6 +5,7 @@
 ** Language models and APIs
 - [X] AlephAlpha (=EUTranMM=)
   - Multi-modal
+- [X] Cohere
 - [X] OpenAI API (=GPT-3=)
   - https://beta.openai.com/
 - [X] AI21 (=j1-jumbo=, etc.)
