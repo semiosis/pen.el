@@ -47,7 +47,6 @@
 (require 'pen-client)
 (require 'pen-autosuggest)
 (require 'helpful)
-
 (require 'macrostep)
 (require 'tree-sitter)
 (require 'tree-sitter-langs)
