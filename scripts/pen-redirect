@@ -25,6 +25,7 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/\/www.metalevel.at/s/\/$//' | \
     sed '/\/www.metalevel.at/s/\/#/#/' | \
     sed '/\/.*\.github.io/s/\/$//' | \
+    sed '/\/.*\.github.io/s/\/#.*//' | \
     sed '/wikipedia.org/s/\/$//' | \
     sed '/wikipedia.org/s/\/#.*//'
 
