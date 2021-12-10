@@ -184,7 +184,6 @@ prompt additionally for EXTRA-AG-ARGS."
           (or caller ',funsym)
           )))))
 
-
 (defun fz-pen-counsel ()
   (interactive)
   (let* ((pfp
