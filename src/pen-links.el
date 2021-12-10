@@ -6,7 +6,7 @@
       (let* ((prompt-fn
               (string-replace "--" "-"
                               (s-replace-regexp "^\\(pf\\|pen-fn\\)-\\(.*\\)/\\([0-9]*\\)" "\\2-\\3.prompt" (str prompt-function-name-or-sym)))))
-        (find-file (etv (f-join pen-prompts-directory "prompts" prompt-fn))))))
+        (find-file (f-join pen-prompts-directory "prompts" prompt-fn)))))
 
 (org-add-link-type "prompt" 'pen-go-to-prompt-function-definition)
 
