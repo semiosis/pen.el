@@ -17,7 +17,7 @@
   ;; `fundamental-mode' buffers even after doing \"(global-pen-mydefaults-minor-mode 1)\".
   ;; More info: http://emacs.stackexchange.com/q/16693/115
   :init-value t
-  :lighter " pen-mydefaults-minor-mode"
+  :lighter " pen-mydefaults"
   :keymap pen-mydefaults-minor-mode-map)
 
 
