@@ -1,3 +1,101 @@
+(setq ivy-height 30)
+
+(defun ivy-filtered-candidates ()
+  "Returns the list of candidates filtered by the currently entered pattern"
+  (ivy--filter ivy-text ivy--all-candidates))
+
+(defun ivy-current-string ()
+  "Returns the candidate currently under the cursor (not all marked candidates)"
+  (nth ivy--index (ivy-filtered-candidates)))
+
+(defun ivy-get-selection ()
+  "Copy the selected candidate as a string."
+  (interactive)
+  (let ((ret nil))
+    (if (ivy--prompt-selected-p)
+        (ivy-immediate-done)
+      ;; (delete-minibuffer-contents)
+      (setq ivy-current-prefix-arg current-prefix-arg)
+      (cond ((or (> ivy--length 0)
+                 ;; the action from `ivy-dispatching-done' may not need a
+                 ;; candidate at all
+                 (eq this-command 'ivy-dispatching-done))
+             (let ((s (ivy-current-string)))
+               (xc s t)
+               (setq ret s)
+               s))
+            ((memq (ivy-state-collection ivy-last)
+                   '(read-file-name-internal internal-complete-buffer))
+             (if (or (not (eq confirm-nonexistent-file-or-buffer t))
+                     (equal " (confirm)" ivy--prompt-extra))
+                 ;; (ivy--done ivy-text)
+                 (ivy--done (ivy-current-string))
+               (setq ivy--prompt-extra " (confirm)")
+               ;; (xc ivy-text t)
+               (xc (ivy--done (ivy-current-string)) t)
+               (ivy--exhibit)))
+            ((memq (ivy-state-require-match ivy-last)
+                   '(nil confirm confirm-after-completion))
+             ;; (ivy--done ivy-text)
+             (ivy--done (ivy-current-string)))
+            (t
+             (setq ivy--prompt-extra " (match required)")
+             ;; (xc ivy-text t)
+             (setq ret (ivy-current-string))
+             (ivy--exhibit))))
+    ret))
+
+(defun ivy-copy-selection ()
+  "Copy the selected candidate as a string."
+  (interactive)
+  (if (ivy--prompt-selected-p)
+      (ivy-immediate-done)
+    ;; It's really strange how it doesn't show, but it does copy
+    (xc (ivy-get-selection))))
+
+(defun ivy-open-selection-in-vim ()
+  "Copy the selected candidate as a string."
+  (interactive)
+  (if (ivy--prompt-selected-p)
+      (ivy-immediate-done)
+    (pen-sps (concat "v " (pen-q (s-replace-regexp " .*" "" (ivy-get-selection)))))))
+
+(define-key ivy-minibuffer-map (kbd "M-c") 'ivy-copy-selection)
+(define-key ivy-minibuffer-map (kbd "M-v") 'ivy-open-selection-in-vim)
+(define-key ivy-minibuffer-map (kbd "M-D") 'send-m-del)
+(define-key ivy-minibuffer-map (kbd "C-c o") 'ivy-tvipe-filtered-candidates)
+
+(define-key ivy-mode-map (kbd "M-c") nil)
+(define-key ivy-mode-map (kbd "M-D") nil)
+(define-key ivy-mode-map (kbd "C-c o") nil)
+
+(use-package ivy
+  :defer 0.1
+  :diminish
+  :bind (
+         :map ivy-minibuffer-map
+         ("M-D" . send-m-del)
+         ("M-c" . ivy-copy-selection)
+         ("M-v" . ivy-open-selection-in-vim)
+         ("M-h" . sph)
+         ("M-s" . spv)
+         ("M-o" . ivy-sps-open)
+         ("M-y" . ivy-sps-ff)
+         ("M-e" . ivy-sps-eww)
+         ;; Why is this globally bound? because  i have to prefix with :map
+         ("C-c o" . ivy-tvipe-filtered-candidates)
+         ;; ("<PageDown>" . nil)
+         ;; ("<PageUp>" . nil)
+         )
+  ;; :bind (("C-c C-r" . ivy-resume)
+  ;;        ("C-x b" . ivy-switch-buffer)
+  ;;        ("C-x B" . ivy-switch-buffer-other-window))
+  :custom
+  (ivy-count-format "(%d/%d) ")
+  (ivy-display-style 'fancy)
+  (ivy-use-virtual-buffers t)
+  :config (ivy-mode))
+
 (defun pen-counsel--format-command (cmd extra-args needle)
   "Construct a complete `counsel-ag-command' as a string.
 EXTRA-ARGS is a string of the additional arguments.
