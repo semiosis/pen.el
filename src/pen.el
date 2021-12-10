@@ -47,10 +47,13 @@
 (require 'pen-client)
 (require 'pen-autosuggest)
 (require 'helpful)
-(require 'macrostep)
-(require 'tree-sitter)
-(require 'tree-sitter-langs)
-(require 'tree-sitter-indent)
+
+;; Not sure I need the following in pen.el
+;; Might be fine to just have them in init.el only
+;; (require 'macrostep)
+;; (require 'tree-sitter)
+;; (require 'tree-sitter-langs)
+;; (require 'tree-sitter-indent)
 
 (defvar my-completion-engine 'pen-company-filetype)
 
