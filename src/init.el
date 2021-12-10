@@ -67,6 +67,9 @@
 (require 'spacemacs-dark-theme)
 (load-theme 'spacemacs-dark t)
 (require 'macrostep)
+(require 'tree-sitter)
+(require 'tree-sitter-langs)
+(require 'tree-sitter-indent)
 
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
       (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))
