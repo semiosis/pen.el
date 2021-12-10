@@ -61,6 +61,8 @@
 ;; (package-install 'selectrum)
 (package-install 'spacemacs-theme)
 (package-install 'macrostep)
+(package-install 'tree-sitter)
+(package-install 'tree-sitter-langs)
 
 ;; Require dependencies
 (require 'shut-up)
