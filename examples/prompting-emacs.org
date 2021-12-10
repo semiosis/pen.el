@@ -1,3 +1,7 @@
+* Findings surrounding this investigation
+Codex indeed is able to 
+
+* Prototype prompts
 #+BEGIN_SRC text -n :async :results verbatim code
   File Edit Options Buffers Tools Lisp-Interaction Help
   ;; This buffer is for text that is not saved, and for Lisp evaluation.
