@@ -7,7 +7,18 @@ this is copied from somewhere.
 
 For example, the pick-up-line:
 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u -i "Have you heard about three laws of Sex? Law 1: " pf-very-witty-pick-up-lines-for-a-topic/1 Sex | jq-list-to-lines
+#+END_SRC
 
+#+BEGIN_SRC text -n :async :results verbatim code
+  Have you heard about three laws of Sex? Sex
+  Law 1: Sex is like math: you add the bed,
+  subtract the clothes, divide the legs and pray
+  you dont multiply!
+#+END_SRC
+
+This is also the case for software.
 
 * Prototype prompts
 #+BEGIN_SRC text -n :async :results verbatim code
