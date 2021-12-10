@@ -565,4 +565,12 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
   (setq text (or text (pen-preceding-text)))
   (pen-sn "pen-str join \" \"" (pen-preceding-sentences text 0)))
 
+(defun e/sps (&optional run)
+  (interactive)
+  (split-window-sensibly)
+  (other-window 1)
+  (if run
+      (call-interactively run)))
+(defalias 'esps 'e/sps)
+
 (provide 'pen-library)

@@ -24,5 +24,28 @@
   (json2yaml (json-encode-plist plist)))
 
 
+(define-key yaml-mode-map (kbd "C-c e") 'yaml-get-value-from-this-file)
+
+(defun sh/yaml-get-value-from-this-file ()
+  (interactive)
+  (if (and (major-mode-p 'yaml-mode)
+           (f-file-p (buffer-file-name)))
+      (xc
+       (pen-sn
+        (concat
+         (pen-cmd "yaml-get-value"
+                  (buffer-file-name)))))))
+
+(defun yaml-get-value-from-this-file ()
+  (interactive)
+  (if (and (major-mode-p 'yaml-mode)
+           (f-file-p (buffer-file-name)))
+      (let ((key (fz (pen-sn "yq . | jq-showschema-keys" (buffer-string)))))
+        (if (sor key)
+            (let ((s (pen-snc (pen-cmd "yq" "-r" key) (buffer-string))))
+              (with-current-buffer
+                  (esps (lm (nbfs s)))
+                (mark-whole-buffer)))))))
+
 
 (provide 'pen-yaml)
