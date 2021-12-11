@@ -42,6 +42,7 @@
 (require 'pen-configure)
 (require 'pen-hist)
 (require 'pen-eww)
+(require 'pen-links)
 (require 'eww-lnum)
 (require 'pen-edit)
 (require 'pen-client)
