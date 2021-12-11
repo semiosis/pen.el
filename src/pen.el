@@ -3880,9 +3880,7 @@ But use the results-analyser."
 
 (defun pen-complete-insert (s)
   "This is a completely useless function ,currently"
-  (pen-insert s)
-  (if (major-mode-p 'term-mode)
-      (ekm "C-l")))
+  (pen-insert s))
 
 (defun pen-complete-word (preceding-text &optional tv)
   "Word completion"
