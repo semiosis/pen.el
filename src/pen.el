@@ -3872,9 +3872,17 @@ But use the results-analyser."
                       (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-text)) ,@args)))))
        (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))))
 
+(defun ekm (binding)
+  (let ((fun (key-binding (kbd binding))))
+    (if fun
+        (call-interactively fun)
+      (execute-kbd-macro (kbd binding)))))
+
 (defun pen-complete-insert (s)
   "This is a completely useless function ,currently"
-  (pen-insert s))
+  (pen-insert s)
+  (if (major-mode-p 'term-mode)
+      (ekm "C-l")))
 
 (defun pen-complete-word (preceding-text &optional tv)
   "Word completion"
