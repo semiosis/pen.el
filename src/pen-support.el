@@ -628,7 +628,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
                 ;; This refreshes the term usually
                 (if (major-mode-p 'term-mode)
-                    (term-send-raw-string "\C-l"))
+                    (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
                 sel)))
 
 (defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props hist-var no-hist)
