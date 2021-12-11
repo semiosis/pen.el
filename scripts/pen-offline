@@ -1,0 +1,43 @@
+#!/bin/bash
+
+: "${OFFLINE_API_KEY:="$PEN_LM_KEY"}"
+
+if test -s $HOME/.pen/offline_api_key; then
+    : "${OFFLINE_API_KEY:="$(cat $HOME/.pen/offline_api_key)"}"
+fi
+
+test -n "$OFFLINE_API_KEY" || {
+    echo "OFFLINE_API_KEY not given to script"
+    exit 1
+}
+
+: "${PEN_REPETITION_PENALTY:="1.0"}"
+
+export OFFLINE_API_KEY
+
+if test "$PEN_N_COMPLETIONS" -gt 4; then
+    PEN_N_COMPLETIONS=4
+fi
+
+# JSON
+export PEN_PROMPT
+export PEN_PAYLOADS
+export PEN_MODEL
+export PEN_MAX_TOKENS
+export PEN_TEMPERATURE
+export PEN_REPETITION_PENALTY
+export PEN_TOP_P
+export PEN_STOP_SEQUENCE
+export PEN_N_COMPLETIONS
+export PEN_MODE
+
+: "${PEN_N_COMPLETIONS:="4"}"
+
+sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
+
+# pen-offline.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
+
+{
+# printf -- "%s" "$PEN_PROMPT"
+pen-offline.py "$@" | pen-log offline-temp | sed -z "s~${sedstop}$~~"
+} | pen-log offline

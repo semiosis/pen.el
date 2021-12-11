@@ -18,6 +18,15 @@ case "$sn" in
     }
     ;;
 
+    offline-complete.sh) {
+        completer_sn=pen-offline
+        : "${AIX_API_KEY:="$PEN_LM_KEY"}"
+        export AIX_API_KEY
+
+        : "${PEN_MODEL:="DummyModel"}"
+    }
+    ;;
+
     alephalpha-complete.sh) {
         completer_sn=pen-alephalpha
         : "${AIX_API_KEY:="$PEN_LM_KEY"}"
