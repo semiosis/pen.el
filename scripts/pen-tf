@@ -4,7 +4,11 @@ stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
-fp="$(mktemp -t "tf_XXXXXXX" 2>/dev/null || :)"
+# Completely optional
+name="$1"
+ext="$2"
+
+fp="$(mktemp -t "tf_${name}${ext}XXXXXXX" 2>/dev/null || :)"
 
 if stdin_exists; then
     cat > "$fp"
