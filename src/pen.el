@@ -996,8 +996,6 @@ Reconstruct the entire yaml-ht for a different language."
                             (api-endpoint (cdr (assoc 'api-endpoint al))))
                        ;; (if temp
                        ;;     (setq final-temperature temp))
-                       (if engine
-                           (setq final-engine engine))
                        (if model
                            (setq final-model model))
                        (if lm-command
