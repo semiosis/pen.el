@@ -27,6 +27,15 @@ case "$sn" in
     }
     ;;
 
+    human-complete.sh) {
+        completer_sn=pen-human
+        : "${HUMAN_API_KEY:="$PEN_LM_KEY"}"
+        export HUMAN_API_KEY
+
+        : "${PEN_MODEL:="DummyModel"}"
+    }
+    ;;
+
     alephalpha-complete.sh) {
         completer_sn=pen-alephalpha
         : "${ALEPHALPHA_API_KEY:="$PEN_LM_KEY"}"
