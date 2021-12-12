@@ -262,6 +262,11 @@ case "$sn" in
     }
     ;;
 
+    offline-complete.sh) {
+        "$completer_sn" > "$tf_response"
+    }
+    ;;
+
     aix-complete.sh) {
         "$completer_sn" > "$tf_response"
     }
