@@ -13,7 +13,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if test "$USE_EMACS" = "y"; then
-    teipe
+    pen-teipe
 else
-    tm vipe
+    pen-tm vipe
 fi

@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+tf_pipe_buffer="$(exec 0<&-; ux tf pipe_buffer txt || echo /dev/null)"
+
+cat > "$tf_pipe_buffer"
+
+exec 3>&1
+
+: ${TTY:="$(tm-tty)"}
+
+exec 0<"$TTY"
+exec 1>"$TTY"
+
+sp c "$tf_pipe_buffer"
+
+exec 1>&3
+
+cat "$tf_pipe_buffer"
+
+trap "rm $(aq "$tf_pipe_buffer") 2>/dev/null" 0
