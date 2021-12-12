@@ -426,6 +426,11 @@ widget.  If FILTER is nil, ACTION is always valid.")
 ;; (setq initial-buffer-choice "~/")
 (setq initial-buffer-choice nil)
 
+(defmacro yes (&rest body)
+  `(flet ((yes-or-no-p (&rest args) t)
+          (y-or-n-p (&rest args) t))
+     (progn ,@body)))
+
 (defun Custom-save-around-advice (proc &rest args)
   (let ((res (yes (apply proc args))))
     res))
