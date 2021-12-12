@@ -970,7 +970,9 @@ Reconstruct the entire yaml-ht for a different language."
                      ;;        (pen-var-value-maybe 'engine)
                      ;;        ,engine)))
                      (str (or
-                           ,force-engine
+                           (and
+                            (not pen-prompt-force-engine-disabled)
+                            (sor ,force-engine))
                            pen-force-engine
                            (pen-var-value-maybe 'engine)
                            ,engine)))
@@ -983,34 +985,25 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
                     ;; Don't override final-'force'-model, etc.
                     (final-engine
-                     (progn
-                       (if (and
-                            (not pen-prompt-force-engine-disabled)
-                            (sor ,force-engine))
-                           (progn
-                             (pen-log ".prompt Forcing engine:")
-                             (pen-log ".prompt Forcing engine n-completions")
-                             (pen-log ".prompt Forcing engine model")
-                             (pen-log ".prompt Forcing engine all keys etc.")
-                             (let* ((engine (ht-get pen-engines ,force-engine))
-                                    (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-                                    (vals (ht-values engine))
-                                    (tups (-zip-lists keys vals))
-                                    (al (pen-list2alist tups))
-                                    (temp (cdr (assoc 'default-temperature al)))
-                                    (model (cdr (assoc 'model al)))
-                                    (lm-command (cdr (assoc 'lm-command al)))
-                                    (api-endpoint (cdr (assoc 'api-endpoint al))))
-                               ;; (if temp
-                               ;;     (setq final-temperature temp))
-                               (if engine
-                                   (setq final-engine engine))
-                               (if model
-                                   (setq final-model model))
-                               (if lm-command
-                                   (setq final-lm-command lm-command))
-                               (if api-endpoint
-                                   (setq final-api-endpoint api-endpoint)))))
+                     (let* ((engine (ht-get pen-engines final-engine))
+                            (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
+                            (vals (ht-values engine))
+                            (tups (-zip-lists keys vals))
+                            (al (pen-list2alist tups))
+                            (temp (cdr (assoc 'default-temperature al)))
+                            (model (cdr (assoc 'model al)))
+                            (lm-command (cdr (assoc 'lm-command al)))
+                            (api-endpoint (cdr (assoc 'api-endpoint al))))
+                       ;; (if temp
+                       ;;     (setq final-temperature temp))
+                       (if engine
+                           (setq final-engine engine))
+                       (if model
+                           (setq final-model model))
+                       (if lm-command
+                           (setq final-lm-command lm-command))
+                       (if api-endpoint
+                           (setq final-api-endpoint api-endpoint))
                        final-engine))
 
                     (final-flags
