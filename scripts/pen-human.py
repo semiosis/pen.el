@@ -6,7 +6,7 @@ import os
 
 from pathlib import Path
 
-OFFLINE_API_KEY = os.environ.get("OFFLINE_API_KEY")
+HUMAN_API_KEY = os.environ.get("HUMAN_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL") or "DummyModel"
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
 PEN_PAYLOADS = os.environ.get("PEN_PAYLOADS")
