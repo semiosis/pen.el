@@ -981,6 +981,10 @@ Reconstruct the entire yaml-ht for a different language."
                     (final-lm-command)
                     (final-model)
 
+                    (final-api-endpoint
+                     (or (pen-var-value-maybe 'api-endpoint)
+                         ,api-endpoint))
+
                     ;; Actually, only override model, temperature and lm-command again if force-engine is set.
                     ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
                     ;; Don't override final-'force'-model, etc.
@@ -1131,10 +1135,6 @@ Reconstruct the entire yaml-ht for a different language."
                     (final-no-uniq-results
                      (or (pen-var-value-maybe 'no-uniq-results)
                          ,no-uniq-results))
-
-                    (final-api-endpoint
-                     (or (pen-var-value-maybe 'api-endpoint)
-                         ,api-endpoint))
 
                     (final-expand-jinja
                      (or (pen-var-value-maybe 'expand-jinja)
