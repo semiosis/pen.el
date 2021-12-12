@@ -32,18 +32,22 @@ PEN_API_ENDPOINT = os.environ.get("PEN_API_ENDPOINT") or "https://localhost"
 PEN_MODE = os.environ.get("PEN_MODE")
 PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 
+import shanepy
+import shanepy as spy
+from shanepy import *
+result=b("tvipe")[0]
 
-result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
-                     "prompt: " + PEN_PROMPT,
-                     "n: " + str(PEN_N_COMPLETIONS),
-                     "top_k: " + str(PEN_TOP_K),
-                     "top_p: " + str(PEN_TOP_P),
-                     "log_probs: " + str(PEN_LOGPROBS),
-                     "stop_sequences: " + str(PEN_STOP_SEQUENCES),
-                     "maximum_tokens: " + str(PEN_MAX_TOKENS),
-                     "temperature: " + str(PEN_TEMPERATURE),
-                     "presence_penalty: " + str(PEN_PRESENCE_PENALTY),
-                     "frequency_penalty: " + str(PEN_FREQUENCY_PENALTY)])
+# result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
+#                      "prompt: " + PEN_PROMPT,
+#                      "n: " + str(PEN_N_COMPLETIONS),
+#                      "top_k: " + str(PEN_TOP_K),
+#                      "top_p: " + str(PEN_TOP_P),
+#                      "log_probs: " + str(PEN_LOGPROBS),
+#                      "stop_sequences: " + str(PEN_STOP_SEQUENCES),
+#                      "maximum_tokens: " + str(PEN_MAX_TOKENS),
+#                      "temperature: " + str(PEN_TEMPERATURE),
+#                      "presence_penalty: " + str(PEN_PRESENCE_PENALTY),
+#                      "frequency_penalty: " + str(PEN_FREQUENCY_PENALTY)])
 
 cs = [result]
 
