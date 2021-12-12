@@ -115,7 +115,7 @@ case "$PEN_LM_COMMAND" in
         fi
     }
     ;;
-    
+
     aix-complete.sh) {
         if ! test -s $HOME/.pen/aix_api_key; then
             # Switch to OpenAI of no key
