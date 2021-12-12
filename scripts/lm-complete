@@ -98,6 +98,8 @@ fi
 case "$PEN_LM_COMMAND" in
     ai21-complete.sh) {
         if ! test -s $HOME/.pen/ai21_api_key; then
+            # Switch to OpenAI of no key
+
             PEN_LM_COMMAND=openai-complete.sh
             export PEN_MODEL=davinci
         fi
@@ -106,14 +108,18 @@ case "$PEN_LM_COMMAND" in
 
     alephalpha-complete.sh) {
         if ! test -s $HOME/.pen/alephalpha_api_key; then
+            # Switch to OpenAI of no key
+
             PEN_LM_COMMAND=openai-complete.sh
-            export PEN_MODEL=EUTranMultimodal
+            export PEN_MODEL=UnknownMultiModal
         fi
     }
     ;;
-
+    
     aix-complete.sh) {
         if ! test -s $HOME/.pen/aix_api_key; then
+            # Switch to OpenAI of no key
+
             PEN_LM_COMMAND=openai-complete.sh
             export PEN_MODEL=davinci
         fi
@@ -121,6 +127,8 @@ case "$PEN_LM_COMMAND" in
     ;;
 
     openai-complete.sh) {
+            # Switch to OpenAI of no key
+
         if ! test -s $HOME/.pen/openai_api_key; then
             PEN_LM_COMMAND=aix-complete.sh
             export PEN_MODEL=GPT-J-6B
