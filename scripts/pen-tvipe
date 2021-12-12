@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -e) {
+        USE_EMACS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$USE_EMACS" = "y"; then
+    teipe
+else
+    tm vipe
+fi
