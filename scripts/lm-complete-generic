@@ -252,36 +252,6 @@ IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE");typeset -p PEN_ST
 # Will it complain if PEN_STOP_SEQUENCE is empty?
 
 case "$sn" in
-    ai21-complete.sh) {
-        "$completer_sn" > "$tf_response"
-    }
-    ;;
-
-    alephalpha-complete.sh) {
-        "$completer_sn" > "$tf_response"
-    }
-    ;;
-
-    offline-complete.sh) {
-        "$completer_sn" > "$tf_response"
-    }
-    ;;
-
-    aix-complete.sh) {
-        "$completer_sn" > "$tf_response"
-    }
-    ;;
-
-    hf-complete.sh) {
-        "$completer_sn" > "$tf_response"
-    }
-    ;;
-
-    nlpcloud-complete.sh) {
-        "$completer_sn" > "$tf_response"
-    }
-    ;;
-
     cohere-complete.sh|cohere-*) {
         if test "$LM_COMPLETE_DEBUG" = "y"; then
             "$completer_sn"
@@ -322,6 +292,12 @@ case "$sn" in
     }
     ;;
 
+    # ai21-complete.sh
+    # alephalpha-complete.sh
+    # offline-complete.sh
+    # aix-complete.sh
+    # hf-complete.sh
+    # nlpcloud-complete.sh
     *) {
         "$completer_sn" > "$tf_response"
     }
