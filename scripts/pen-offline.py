@@ -34,11 +34,6 @@ PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 
 from aleph_alpha_client import ImagePrompt, OfflineClient
 
-client = OfflineClient(
-    host=PEN_API_ENDPOINT,
-    token=OFFLINE_API_KEY
-)
-
 payloads = None
 
 # If PEN_PAYLOADS is a dict then iterate through the dict and build a list.
