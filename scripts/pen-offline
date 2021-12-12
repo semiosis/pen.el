@@ -6,10 +6,10 @@ if test -s $HOME/.pen/offline_api_key; then
     : "${OFFLINE_API_KEY:="$(cat $HOME/.pen/offline_api_key)"}"
 fi
 
-test -n "$OFFLINE_API_KEY" || {
-    echo "OFFLINE_API_KEY not given to script"
-    exit 1
-}
+# test -n "$OFFLINE_API_KEY" || {
+#     echo "OFFLINE_API_KEY not given to script"
+#     exit 1
+# }
 
 : "${PEN_REPETITION_PENALTY:="1.0"}"
 
