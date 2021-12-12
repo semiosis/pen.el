@@ -15,7 +15,7 @@ test -n "$ALEPHALPHA_API_KEY" || {
 
 export ALEPHALPHA_API_KEY
 
-if test "$PEN_N_COMPLETIONS" -gt 4; then
+if test -z "$PEN_N_COMPLETIONS" || test "$PEN_N_COMPLETIONS" -gt 4; then
     PEN_N_COMPLETIONS=4
 fi
 
