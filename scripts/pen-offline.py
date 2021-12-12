@@ -32,46 +32,26 @@ PEN_API_ENDPOINT = os.environ.get("PEN_API_ENDPOINT") or "https://localhost"
 PEN_MODE = os.environ.get("PEN_MODE")
 PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 
-from aleph_alpha_client import ImagePrompt, OfflineClient
 
-payloads = None
-
-# If PEN_PAYLOADS is a dict then iterate through the dict and build a list.
-# For each key, if the key equals "image" then add to the new list, otherwise ignore it.
-if type(PEN_PAYLOADS) == dict:
-    payloads = []
-    for key, value in PEN_PAYLOADS.items():
-        if key == "image" and "://" in value:
-            payloads.append(ImagePrompt.from_url(value))
-        elif key == "image" and Path(value).exists():
-            payloads.append(ImagePrompt.from_file(Path(value)))
-
-if payloads is not None and not payloads == []:
-    payloads.append(PEN_PROMPT)
-    prompt = payloads
-else:
-    prompt = PEN_PROMPT
-
-
-result = json.dumps([PEN_MODEL,
-                         prompt=prompt,
-                         n=int(PEN_N_COMPLETIONS),
-                         top_k=int(PEN_TOP_K),
-                         top_p=float(PEN_TOP_P),
-                         log_probs=PEN_LOGPROBS,
-                         stop_sequences=PEN_STOP_SEQUENCES,
-                         maximum_tokens=int(PEN_MAX_TOKENS),
-                         temperature=float(PEN_TEMPERATURE),
-                         presence_penalty=float(PEN_PRESENCE_PENALTY),
-                         frequency_penalty=float(PEN_FREQUENCY_PENALTY)])
+result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
+                     "prompt: " + PEN_PROMPT,
+                     "n: " + str(PEN_N_COMPLETIONS),
+                     "top_k: " + str(PEN_TOP_K),
+                     "top_p: " + str(PEN_TOP_P),
+                     "log_probs: " + str(PEN_LOGPROBS),
+                     "stop_sequences: " + str(PEN_STOP_SEQUENCES),
+                     "maximum_tokens: " + str(PEN_MAX_TOKENS),
+                     "temperature: " + str(PEN_TEMPERATURE),
+                     "presence_penalty: " + str(PEN_PRESENCE_PENALTY),
+                     "frequency_penalty: " + str(PEN_FREQUENCY_PENALTY)])
 
 cs = [result]
 
 if len(cs) == 1:
     print(PEN_PROMPT, end = '')
-    print(cs[0]['completion'])
+    print(cs[0])
 else:
     for x in range(len(cs)):
         print(f"===== Completion %i =====" % x)
         print(PEN_PROMPT, end = '')
-        print(cs[x]['completion'])
+        print(cs[x])
