@@ -426,4 +426,10 @@ widget.  If FILTER is nil, ACTION is always valid.")
 ;; (setq initial-buffer-choice "~/")
 (setq initial-buffer-choice nil)
 
+(defun Custom-save-around-advice (proc &rest args)
+  (let ((res (yes (apply proc args))))
+    res))
+(advice-add 'Custom-save :around #'Custom-save-around-advice)
+;; (advice-remove 'Custom-save #'Custom-save-around-advice)
+
 (provide 'pen-custom)
