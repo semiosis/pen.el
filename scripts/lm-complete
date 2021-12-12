@@ -5,6 +5,8 @@
 # export PEN_PROMPT="Once upon a time"
 # lm-complete
 
+set -xv
+
 {
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;

@@ -308,7 +308,12 @@ case "$sn" in
     # hf-complete.sh
     # nlpcloud-complete.sh
     *) {
-        "$completer_sn" > "$tf_response"
+        if test "$LM_COMPLETE_DEBUG" = "y"; then
+            "$completer_sn"
+            exit $?
+        else
+            "$completer_sn"  > "$tf_response"
+        fi
     }
     ;;
 esac
