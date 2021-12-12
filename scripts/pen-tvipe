@@ -15,5 +15,5 @@ esac; done
 if test "$USE_EMACS" = "y"; then
     pen-teipe
 else
-    pen-tm vipe
+    pen-tm pen-vipe
 fi
