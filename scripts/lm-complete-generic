@@ -10,8 +10,8 @@ sn="$(basename "$0")"
 case "$sn" in
     ai21-complete.sh) {
         completer_sn=pen-ai21
-        : "${AIX_API_KEY:="$PEN_LM_KEY"}"
-        export AIX_API_KEY
+        : "${AI21_API_KEY:="$PEN_LM_KEY"}"
+        export AI21_API_KEY
 
         : "${PEN_MODEL:="j1-jumbo"}"
         : "${PEN_MODEL:="j1-large"}"
@@ -20,8 +20,8 @@ case "$sn" in
 
     offline-complete.sh) {
         completer_sn=pen-offline
-        : "${AIX_API_KEY:="$PEN_LM_KEY"}"
-        export AIX_API_KEY
+        : "${OFFLINE_API_KEY:="$PEN_LM_KEY"}"
+        export OFFLINE_API_KEY
 
         : "${PEN_MODEL:="DummyModel"}"
     }
@@ -29,8 +29,8 @@ case "$sn" in
 
     alephalpha-complete.sh) {
         completer_sn=pen-alephalpha
-        : "${AIX_API_KEY:="$PEN_LM_KEY"}"
-        export AIX_API_KEY
+        : "${ALEPHALPHA_API_KEY:="$PEN_LM_KEY"}"
+        export ALEPHALPHA_API_KEY
 
         : "${PEN_MODEL:="EUTranMultimodal"}"
     }
