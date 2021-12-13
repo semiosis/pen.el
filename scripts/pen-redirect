@@ -29,7 +29,7 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/\/.*\.github.io/s/\/$//' | \
     sed '/\/.*\.github.io/s/\/#.*//' | \
     sed '/wikipedia.org/s/\/$//' | \
-    sed '/wikipedia.org/s/\/#.*//' \
+    sed '/wikipedia.org/s/\/#.*//' | \
     sed '/.*haskell.org/s/\/$//' | \
     sed '/.*haskell.org/s/\/#.*//'
 
