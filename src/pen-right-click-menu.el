@@ -207,42 +207,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   `(let ((result (pen-sn ,cmd ,@sh-notty-args)))
      (string-equal b_exit_code "0")))
 
-(defun url-is-404 (url)
-  "URL is 404"
-  (pen-sn-true (concat "pen-curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
-
-(defun pen-lg-select-rendering (results)
-  (let* ((result (fz results nil nil "select rendering: ")))
-    (new-buffer-from-string (ink-propertise result))))
-
-(defun pen-lg-display-page (url)
-  (interactive (list (read-string-hist "🔍 Enter URL: "
-                                       (if (major-mode-p 'eww-mode)
-                                           (get-path)))))
-  (pen-lg-select-rendering (pf-imagine-a-website-from-a-url/1 url :no-select-result t))
-
-  (comment
-   (let ((content (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
-     (new-buffer-from-string content nil 'text-mode))))
-
-(defun pen-browse-url-for-passage (url)
-  "Search the web, given a selection"
-  (interactive (list (pf-get-urls-for-a-passage/1)))
-  (pen-lg-display-page url)
-
-  (comment
-   (let* ((sites
-           (s-join "\n\nNext result:\n\n" (pf-imagine-a-website-from-a-url/1 url :no-select-result t))))
-     (new-buffer-from-string (ink-propertise sites) nil 'text-mode)
-     (comment (cl-loop for pg in sites do (new-buffer-from-string pg nil 'text-mode)))
-     (comment
-      (if (url-is-404 url)
-          (cl-loop for pg in
-                (pf-imagine-a-website-from-a-url/1 url :no-select-result t)
-                do (pen-etv (ink-propertise pg)))
-        (eww url))))))
-(defalias 'lg-search 'pen-browse-url-for-passage)
-
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("> pen" :call rcm-pen)))
