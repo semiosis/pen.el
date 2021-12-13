@@ -22,12 +22,16 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/\/news.ycombinator.com\/news/s/\/$//' | \
     sed '/\/programming-idioms.org/s/\/$//' | \
     sed '/artandpopularculture.com/s/\/$//' | \
+    sed '/\/www.schoolofhaskell.com/s/\/$//' | \
     sed '/\/www.metalevel.at/s/\/$//' | \
     sed '/\/www.metalevel.at/s/\/#/#/' | \
+    sed '/\/en.bitcoin.it/s/\/$//' | \
     sed '/\/.*\.github.io/s/\/$//' | \
     sed '/\/.*\.github.io/s/\/#.*//' | \
     sed '/wikipedia.org/s/\/$//' | \
-    sed '/wikipedia.org/s/\/#.*//'
+    sed '/wikipedia.org/s/\/#.*//' \
+    sed '/.*haskell.org/s/\/$//' | \
+    sed '/.*haskell.org/s/\/#.*//'
 
 # https://web.archive.org/web/20161230180206/
 # https://web.archive.org/web/20161230180206/https://github.com/unisonweb/unison/blob/master/unison-src/searchengine.u
