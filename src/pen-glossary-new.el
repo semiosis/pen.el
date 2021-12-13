@@ -639,7 +639,7 @@ Use my position list code. Make it use rosie lang and external software."
           (string-match "/home/shane/notes/ws/.*/phrases.txt$" fp))))
 
 (defset glossary-imenu-generic-expression
-  '(("" "^\\([a-zA-Z0-9].+\\)$" 1)))
+  '(("" "^\\([^\n ].+\\)$" 1)))
 (defun pen-glossary-imenu-configure ()
   (interactive)
   (if (pen-glossary-path-p)
