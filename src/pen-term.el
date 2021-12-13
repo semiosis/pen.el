@@ -142,6 +142,7 @@
   (define-key term-raw-map (kbd "C-c C-M-i") #'pen-company-complete)
   (define-key term-raw-map (kbd "C-c M-;") #'term-send-raw-meta)
   (define-key term-raw-map (kbd "C-c M-m") #'term-send-raw-meta)
+  (define-key term-raw-map (kbd "C-c M-q") #'term-send-raw-meta)
 
   ;; Super
   (define-key term-raw-map (kbd "C-M-^") nil)
