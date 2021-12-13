@@ -934,8 +934,8 @@ Reconstruct the entire yaml-ht for a different language."
 
              (if (or (pen-prompt-disabled-p ,func-name)
                      (pen-prompt-disabled-p ,title))
-                 (message "Prompting function aborted")
-                 
+                 (progn (message "Prompting function aborted")
+                        nil)
 
                ;; Many a  transformation pipeline here could benefit from transducers
                ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
