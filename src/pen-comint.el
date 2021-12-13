@@ -21,6 +21,9 @@
       (if (< pos (point))
           (let ((pen-mode nil))
             (execute-kbd-macro (kbd "C-h"))))))
+   ((derived-mode-p 'term-mode)
+    ;; (lambda () (interactive) (term-send-raw-string "?"))
+    (term-send-raw))
    (t
     (delete-backward-char 1)
     ;; (let ((pen-mode nil))

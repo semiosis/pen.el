@@ -157,6 +157,7 @@
   (define-key term-raw-map (kbd "C-c M-x") #'helm-M-x)
   (define-key term-raw-map (kbd "C-x C-x") #'term-send-raw)
   (define-key term-raw-map (kbd "<backtab>") (lambda () (interactive) (term-send-raw-string "[Z")))
+  ;; (define-key term-raw-map (kbd "DEL") (lambda () (interactive) (term-send-raw-string "?")))
   ;; (define-key term-raw-map (kbd "C-s") #'term-line-mode)
   (define-key term-raw-map (kbd "C-c C-j") #'term-line-mode)
   (define-key term-raw-map (kbd "C-c C-h") #'describe-mode)
