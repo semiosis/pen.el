@@ -142,7 +142,7 @@
   (define-key term-raw-map (kbd "C-c C-M-i") #'pen-company-complete)
   (define-key term-raw-map (kbd "C-c M-;") #'term-send-raw-meta)
   (define-key term-raw-map (kbd "C-c M-m") #'term-send-raw-meta)
-  (define-key term-raw-map (kbd "C-c M-q") #'term-send-raw-meta)
+  ;; (define-key term-raw-map (kbd "C-c M-q") #'term-send-raw-meta)
 
   ;; Super
   (define-key term-raw-map (kbd "C-M-^") nil)
@@ -168,6 +168,7 @@
   (define-key term-raw-map (kbd "C-c Y") #'pen-term-get-line-at-point)
   ;; (define-key term-raw-map (kbd "C-c z L") #'evil-scroll-right)
   (define-key term-raw-map (kbd "C-d") 'term-raw-or-kill)
+  (define-key term-raw-map (kbd "C-c M-q M-q") #'term-send-raw-meta)
   ;; (define-key term-raw-map (kbd "C-c M-q v") #'open-in-vim)
   ;; (define-key term-raw-map (kbd "C-c M-q V") #'e/open-in-vim)
   ;; (define-key term-raw-map (kbd "C-c M-q M-V") #'e/open-in-vim)
