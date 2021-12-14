@@ -20,7 +20,7 @@ START and END can be in either order."
   ;; Rather than toggle window margins, remove the window margin width from the start of each line
   (let* ((margin-width (or (car (window-margins))
                            0))
-         (wincontents (sn (concat "tm cap-pane -nohist | sed \"s/^.\\{" (str margin-width) "\\}//\""))))
+         (wincontents (pen-sn (concat "pen-tm cap-pane -nohist | sed \"s/^.\\{" (str margin-width) "\\}//\""))))
 
     (if (or (interactive-p)
             show-buffer)
