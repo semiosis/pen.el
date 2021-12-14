@@ -68,7 +68,7 @@ init-tm() {
         # Therefore, I want multiple sessions
         # pen-tm -S nw -t "${uid}:" -args "$@"
         :
-        tmux -L "$server" neww -t "${uid}": -t "${uid}": -c "$HOME/notes" pen-tm "$@"
+        tmux -L "$server" neww -t "${uid}": -t "${uid}": -c "$HOME/notes" "$@"
     fi
 
     TMUX= tmux -L "$server" attach -t "${uid}":
@@ -127,6 +127,7 @@ for arg in "$@"; do case "$arg" in
     ;;
 
     init|init-or-attach) {
+        shift
         init-tm "$@"
         exit 0
     }
