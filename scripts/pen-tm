@@ -1889,7 +1889,7 @@ case "$f" in
             fi
 
             if test "$SPONGE_IN" = "y"; then
-                cmd_pre="$cmd_pre sponge | "
+                cmd_pre="$cmd_pre pen-sponge | "
             fi
 
             if test "$UNBUFFER_IN" = "y"; then
@@ -1915,7 +1915,7 @@ case "$f" in
             fi
 
             if test "$SPONGE_OUT" = "y"; then
-                cmd_post="$cmd_post | sponge"
+                cmd_post="$cmd_post | pen-sponge"
             fi
 
             cmd_post="$cmd_post >$ff1"
@@ -2496,7 +2496,7 @@ case "$f" in
             tmux -L $server save-buffer "$np"
         fi
 
-        cat "$np" | clean-term-capture | sponge "$np"
+        cat "$np" | clean-term-capture | pen-sponge "$np"
 
         if test "$STDOUT" = ""; then
             if is_tty; then

@@ -47,7 +47,7 @@ pyf huggingface_hub
 agi libc-bin
 ## unbuffer
 agi expect
-## sponge
+## pen-sponge
 agi moreutils
 agi jq
 agi neovim

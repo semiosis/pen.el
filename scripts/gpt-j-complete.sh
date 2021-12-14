@@ -38,7 +38,7 @@ openai_results_split() {
         csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}' &>/dev/null
         for fp in *; do
             sed -i 1d "$fp"
-            tail -c "+$(( PEN_COLLECT_FROM_POS + 1 ))" "$fp" | sponge "$fp"
+            tail -c "+$(( PEN_COLLECT_FROM_POS + 1 ))" "$fp" | pen-sponge "$fp"
         done
     else
         cat "$completions_fp" > splitfile_0.txt

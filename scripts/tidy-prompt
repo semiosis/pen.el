@@ -2,7 +2,7 @@
 
 # This is a bash pipeline command for standardising a prompt
 # Example:
-# cat grammar-correction.prompt | tidy-prompt | sponge grammar-correction.prompt
+# cat grammar-correction.prompt | tidy-prompt | pen-sponge grammar-correction.prompt
 
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
@@ -11,5 +11,5 @@ stdin_exists() {
 if stdin_exists; then
     yq . | json2yaml
 elif test -f "$1"; then
-    cat "$1" | yq . | json2yaml | sponge "$1"
+    cat "$1" | yq . | json2yaml | pen-sponge "$1"
 fi

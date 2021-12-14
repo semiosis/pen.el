@@ -3,20 +3,25 @@ export TTY
 
 last_arg="${@: -1}"
 
-echo "$last_arg" 1>&2
+echo "last_arg: $last_arg" 1>&2
 
 # If symlink
 if test -h "$last_arg"; then
     echo symlink 1>&2
-    tf_thing="$(pen-tf sponge || echo /dev/null)"
+    tf_thing="$(0</dev/null pen-tf sponge || echo /dev/null)"
     cp -aL "$last_arg" "$tf_thing"
-    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
 
+    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
     set -- "$@" "$tf_thing"
+
+    0</dev/null cmd1 "$@" 1>&2
+
     sponge "$@"
     ret="$?"
 
-    cat "$tf_thing" > "$last_arg"
+    0</dev/null cat "$tf_thing" | tv &>/dev/null
+
+    0</dev/null cat "$tf_thing" > "$last_arg"
     trap "rm \"$tf_thing\" 2>/dev/null" 0
     exit "$ret"
 else

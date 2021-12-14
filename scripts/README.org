@@ -70,7 +70,7 @@ This is a bash pipeline command for standardising a prompt
 Example:
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  cat grammar-correction.prompt | tidy-prompt | sponge grammar-correction.prompt
+  cat grammar-correction.prompt | tidy-prompt | pen-sponge grammar-correction.prompt
 #+END_SRC
 
 *** =prompts-details=
