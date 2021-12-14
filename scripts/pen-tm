@@ -2068,6 +2068,12 @@ case "$f" in
             fi
             full_id="$(tmux split -F "$ID_FORMAT" -P -t "$TARGET" $SPLIT $split_size $BACKGROUNDED -c "$dir" "$fullcmd")"
         else
+            # Work around a window-renaming bad feature
+            if printf -- "%s\n" "$TARGET" | grep -q -P '^[0-9]+$'; then
+                # I probably indended the target to be a session name
+                TARGET="${TARGET}:"
+            fi
+
             full_id="$(tmux neww -P -F "$ID_FORMAT" -t "$TARGET" $PARENT_SESSION $BACKGROUNDED -n "$window_name" -c "$dir" "$fullcmd")"
             case "$HIGHLIGHT" in
                 warn) {
