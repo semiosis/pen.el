@@ -3,6 +3,7 @@ export TTY
 
 last_arg="${@: -1}"
 
+# If a symlink, then do this. Unfortunately, sponge overwrites symlinks
 if test -h "$last_arg"; then
     tf_thing="$(0</dev/null pen-tf sponge || echo /dev/null)"
     cp -aL "$last_arg" "$tf_thing"
