@@ -2496,16 +2496,7 @@ case "$f" in
             tmux -L $server save-buffer "$np"
         fi
 
-        cat "$np" | {
-            sed -e 's/▄/ /g' \
-                -e 's/[┌┐┘└│├─┤┬┴┼╰╯╭╮🟠⃘]/ /g' \
-                -e 's/ ·\+$//g' |
-            sed -e ':loop' -e 's/^\( *\) · /\1   /g' -e 't loop' |
-            sed -e 's/\( ·\)\+ *$//g' ` # jupyter tui ` \
-                -e 's/\( ·\)\+ *$/ /g' ` # jupyter tui ` \
-                -e 's/\s\+$//g' ` # remove trailing whitespace `
-
-        } | sponge "$np"
+        cat "$np" | clean-term-capture | sponge "$np"
 
         if test "$STDOUT" = ""; then
             if is_tty; then
