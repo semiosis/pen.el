@@ -46,12 +46,21 @@ editor() {
 }
 
 init-tm() {
-    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$SHELL"
+    # Unique ID -- prompt for a random thing such as a pokemon, if pen server is running
+    uid="$(date +%s)"
+
+    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n "$uid" "$SHELL"
 
     server="$(pen-tm-get-server)"
 
-    TMUX= tmux -L $server attach -t localhost:
-    tmux set-option -t localhost lock-after-time 36000
+    if test "$#" -gt 0; then
+        # I want multiple views on the same emacs
+        # Therefore, I want multiple sessions
+        pen-tm -S nw -t "$uid": "$@"
+    fi
+
+    TMUX= tmux -L $server attach -t "$uid":
+    tmux set-option -t "$uid": lock-after-time 36000
     echo init
     exit 0
 }
@@ -106,8 +115,8 @@ for arg in "$@"; do case "$arg" in
         exit 0
     ;;
 
-    init) {
-        init-tm
+    init|init-or-attach) {
+        init-tm "$@"
         exit 0
     }
     ;;
