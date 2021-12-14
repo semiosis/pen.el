@@ -46,7 +46,7 @@ editor() {
 }
 
 init-tm() {
-    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$shell"
+    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$SHELL"
 
     server="$(pen-tm-get-server)"
 
@@ -1221,15 +1221,7 @@ case "$f" in
             *) break;
         esac; done
 
-        CMD="$(
-        for (( i = 1; i < $#; i++ )); do
-            eval ARG=\${$i}
-            printf -- "%s" "$ARG" | q
-            printf ' '
-        done
-        eval ARG=\${$i}
-        printf -- "%s" "$ARG" | q
-        )"
+        CMD="$(cmd-nice-posix "$@")"
 
         if [ -z "$CWD" ]; then
             : ${CWD:="$(pwd)"}; cd "$CWD"

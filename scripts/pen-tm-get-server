@@ -3,8 +3,9 @@ export TTY
 
 if test -n "$TMUX"; then
     server="$(echo "$TMUX" | cut -d , -f 1 | xargs basename)"
-    : ${server:="default"}
-
-    echo "$server"
+    # : ${server:="Pen"}
+else
+    server="$(basename "$(pen-glob /tmp/tmux-*/*)")"
 fi
+echo "$server"
 test -n "$server"
