@@ -57,6 +57,7 @@ init-tm() {
     #pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n "${uid}" "$SHELL"
 
     cd "$HOME/notes"
+    tmux -L "$server" start-server
     tmux -L "$server" new-session -d -s localhost -c "$HOME/notes" bash
     tmux -L "$server" set-option -t localhost: lock-after-time 36000
 
