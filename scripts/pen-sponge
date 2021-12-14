@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+last_arg="${@: -1}"
+
+echo "$last_arg" 1>&2
+
+# If symlink
+if test -h "$last_arg"; then
+    echo symlink 1>&2
+    tf_thing="$(pen-tf sponge || echo /dev/null)"
+    cp -aL "$last_arg" "$tf_thing"
+    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+
+    set -- "$@" "$tf_thing"
+    sponge "$@"
+    ret="$?"
+
+    cat "$tf_thing" > "$last_arg"
+    trap "rm \"$tf_thing\" 2>/dev/null" 0
+    exit "$ret"
+else
+    sponge "$@"
+fi

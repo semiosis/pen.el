@@ -1,0 +1,6 @@
+#!/bin/bash
+
+fp="$1"
+
+pen-sponge -a "$fp"
+cat "$fp" | uniqnosort | pen-sponge "$fp"

@@ -7,4 +7,5 @@ shift
 slug="$(echo "$name" | tr -d '\n' | slugify)"
 
 mkdir -p ~/.pen/hist
+cd ~/.pen/hist
 cat ~/.pen/hist/${slug}.txt
