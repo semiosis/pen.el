@@ -58,7 +58,7 @@ init-tm() {
     if test "$#" -gt 0; then
         # I want multiple views on the same emacs
         # Therefore, I want multiple sessions
-        pen-tm -S nw -t "$uid": -args "$@"
+        pen-tm -S nw -t "$uid" -args "$@"
     fi
 
     tmux set-option -t "${uid}": lock-after-time 36000
