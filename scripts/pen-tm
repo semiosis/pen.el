@@ -56,7 +56,7 @@ init-tm() {
     if test "$#" -gt 0; then
         # I want multiple views on the same emacs
         # Therefore, I want multiple sessions
-        pen-tm -S nw -t "$uid": "$@"
+        pen-tm -S nw -t "$uid": -args "$@"
     fi
 
     TMUX= tmux -L $server attach -t "$uid":
