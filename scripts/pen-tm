@@ -49,7 +49,9 @@ init-tm() {
     # Unique ID -- prompt for a random thing such as a pokemon, if pen server is running
     uid="$(date +%s)"
 
-    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n "$uid" "$SHELL"
+    # Ensure the localhost session is up
+    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$SHELL"
+    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n "${uid}" "$SHELL"
 
     server="$(pen-tm-get-server)"
 
@@ -59,8 +61,8 @@ init-tm() {
         pen-tm -S nw -t "$uid": -args "$@"
     fi
 
-    TMUX= tmux -L $server attach -t "$uid":
-    tmux set-option -t "$uid": lock-after-time 36000
+    tmux set-option -t "${uid}": lock-after-time 36000
+    TMUX= tmux -L $server attach -t "${uid}":
     echo init
     exit 0
 }
