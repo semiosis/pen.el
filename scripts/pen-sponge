@@ -14,12 +14,8 @@ if test -h "$last_arg"; then
     test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
     set -- "$@" "$tf_thing"
 
-    0</dev/null cmd1 "$@" 1>&2
-
     sponge "$@"
     ret="$?"
-
-    0</dev/null cat "$tf_thing" | tv &>/dev/null
 
     0</dev/null cat "$tf_thing" > "$last_arg"
     trap "rm \"$tf_thing\" 2>/dev/null" 0
