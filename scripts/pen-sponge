@@ -3,7 +3,6 @@ export TTY
 
 last_arg="${@: -1}"
 
-# If symlink
 if test -h "$last_arg"; then
     tf_thing="$(0</dev/null pen-tf sponge || echo /dev/null)"
     cp -aL "$last_arg" "$tf_thing"
