@@ -53,9 +53,9 @@ mkdir -p ~/.pen/ht-cache
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        nvc emacsclient "$@"
+        pen-tm init-or-attach nvc emacsclient "$@"
     else
-        emacsclient "$@"
+        pen-tm init-or-attach emacsclient "$@"
     fi
 }
 
