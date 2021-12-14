@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+test -f "/usr/bin/google-chrome" && : "${bin:="/usr/bin/google-chrome"}"
+test -f "/usr/bin/chromium" && : "${bin:="/usr/bin/chromium"}"
+
+"$bin" "$@"

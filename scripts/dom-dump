@@ -54,8 +54,8 @@ esac
 # 0</dev/null pen-ci 
 # 2</dev/null
 
-# bash -c "2>/dev/null chromium --no-sandbox --headless --ignore-certificate-errors --disable-gpu --virtual-time-budget=$WAITTIME $(test "$USE_TOR" = "y" && echo "--proxy-server=\"socks5://127.0.0.1:9050\"") --dump-dom $(cmd-nice-posix "$url")" | {
-bash -c "2>/dev/null chromium --no-sandbox --headless --ignore-certificate-errors --disable-gpu --dump-dom $(cmd-nice-posix "$url")" | {
+# bash -c "2>/dev/null pen-chromium --no-sandbox --headless --ignore-certificate-errors --disable-gpu --virtual-time-budget=$WAITTIME $(test "$USE_TOR" = "y" && echo "--proxy-server=\"socks5://127.0.0.1:9050\"") --dump-dom $(cmd-nice-posix "$url")" | {
+bash -c "2>/dev/null pen-chromium --no-sandbox --headless --ignore-certificate-errors --disable-gpu --dump-dom $(cmd-nice-posix "$url")" | {
     # This fixes pirate bay in eww. It separates adjacent links for avy.
     sed 's/<a / <a /g'
 } | {
