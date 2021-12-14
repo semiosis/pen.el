@@ -67,8 +67,11 @@ init-tm() {
         # I want multiple views on the same emacs
         # Therefore, I want multiple sessions
         # pen-tm -S nw -t "${uid}:" -args "$@"
-        :
-        tmux neww -t "${uid}": -t "${uid}": -c "$HOME/notes" "$@"
+
+        slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
+
+        tmux neww -t "${uid}": -t "${uid}": -c "$HOME/notes" -n "$slug" "$@"
+        tmux kill-window -t "${uid}":1.
     fi
 
     TMUX= tmux attach -t "${uid}":
