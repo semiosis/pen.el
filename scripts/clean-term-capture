@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+sed -e 's/[▒▄]/ /g' \
+    -e 's/[┌┐┘└│├─┤┬┴┼╰╯╭╮🟠⃘]/ /g' \
+    -e 's/ ·\+$//g' |
+sed -e ':loop' -e 's/^\( *\) · /\1   /g' -e 't loop' |
+sed -e 's/\( ·\)\+ *$//g' ` # jupyter tui ` \
+    -e 's/\( ·\)\+ *$/ /g' ` # jupyter tui ` \
+    -e 's/\s\+$//g' ` # remove trailing whitespace ` |
+    sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba'
+
+
+# -e 's/^  \(· \)\+//g' ` # jupyter tui ` \
+# -e 's/^ \(· \)\+/ /g' ` # jupyter tui ` \
+
+# piping into cat here breaks it. It creates a race
+# condition with the outer cat, or something. Do not do
+# this.
+# | cat   
