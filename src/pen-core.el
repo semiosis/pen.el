@@ -5,7 +5,10 @@
 
 (defun pen-preceding-text (&optional max-chars)
   (setq max-chars (or max-chars 1000))
-  (str (buffer-substring (point) (max 1 (- (point) max-chars)))))
+  (let* ((text (str (buffer-substring (point) (max 1 (- (point) max-chars))))))
+    (if (major-mode-p 'term-mode)
+        (setq text (pen-sn "clean-term-capture" text)))
+    text))
 
 (defun pen-preceding-sentences (&optional text n exclude-current)
   (interactive)
