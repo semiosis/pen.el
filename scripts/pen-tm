@@ -49,11 +49,15 @@ init-tm() {
     # Unique ID -- prompt for a random thing such as a pokemon, if pen server is running
     uid="$(date +%s)"
 
-    # Ensure the localhost session is up
-    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$SHELL"
-    shx pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n "${uid}" "$SHELL"
-
     server="$(pen-tm-get-server)"
+
+    # Ensure the localhost session is up
+    #pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$SHELL"
+    #pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n "${uid}" "$SHELL"
+
+    cd "$HOME/notes"
+    tmux new-session -d -s localhost -c "$HOME/notes" bash
+    tmux new-session -d -s "${uid}" -c "$HOME/notes" bash
 
     if test "$#" -gt 0; then
         # I want multiple views on the same emacs
