@@ -12,6 +12,8 @@ displayedname() {
 
 mkdir -p $HOME/notes
 
+: "${server:="$(pen-tm-get-server)"}"
+
 extra_exports=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -f) {
@@ -49,24 +51,27 @@ init-tm() {
     # Unique ID -- prompt for a random thing such as a pokemon, if pen server is running
     uid="$(date +%s)"
 
-    server="$(pen-tm-get-server)"
 
     # Ensure the localhost session is up
     #pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$SHELL"
     #pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n "${uid}" "$SHELL"
 
     cd "$HOME/notes"
-    tmux new-session -d -s localhost -c "$HOME/notes" bash
-    tmux new-session -d -s "${uid}" -c "$HOME/notes" bash
+    tmux -L "$server" new-session -d -s localhost -c "$HOME/notes" bash
+    tmux -L "$server" set-option -t localhost: lock-after-time 36000
+
+    tmux -L "$server" new-session -d -s "${uid}" -c "$HOME/notes" bash
+    tmux -L "$server" set-option -t "${uid}": lock-after-time 36000
 
     if test "$#" -gt 0; then
         # I want multiple views on the same emacs
         # Therefore, I want multiple sessions
-        pen-tm -S nw -t "$uid" -args "$@"
+        # pen-tm -S nw -t "${uid}:" -args "$@"
+        :
+        tmux -L "$server" neww -t "${uid}": -t "${uid}": -c "$HOME/notes" pen-tm "$@"
     fi
 
-    tmux set-option -t "${uid}": lock-after-time 36000
-    TMUX= tmux -L $server attach -t "${uid}":
+    TMUX= tmux -L "$server" attach -t "${uid}":
     echo init
     exit 0
 }
@@ -599,7 +604,6 @@ case "$f" in
         sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
         sheight="$(( sheight + 2 ))"
 
-        server="$(pen-tm-get-server)"
 
         tmux \
             new-session -d \
@@ -634,7 +638,6 @@ case "$f" in
 
         tmsessionname="${f}-$caller_slug-$(date-ts)"
 
-        server="$(pen-tm-get-server)"
 
         cmd="unset TTY; pen-x -s \"${f}\" -c m -e \"\$\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
 
@@ -652,7 +655,6 @@ case "$f" in
 
         caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
 
-        server="$(pen-tm-get-server)"
 
         cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
 
@@ -1052,7 +1054,6 @@ case "$f" in
     ;;
 
     nds|nbgs) {
-        server="$(pen-tm-get-server)"
 
         unset TMUX
 
@@ -1069,7 +1070,6 @@ case "$f" in
     ;;
 
     ns|new-s|new-session) {
-        server="$(pen-tm-get-server)"
 
         unset TMUX
 
@@ -1357,7 +1357,6 @@ case "$f" in
             session_name=localhost
         fi
 
-        server="$(pen-tm-get-server)"
 
         if pen-tm session-exists $session_name; then
             TMUX= tmux -L $server attach -t "$session_name:" || {
@@ -1369,7 +1368,7 @@ case "$f" in
             true
         }
     else
-            lit "session: $session_name does not exist"
+            printf -- "%s\n" "session: $session_name does not exist"
             pak c
         fi
         exit $?
@@ -1805,7 +1804,7 @@ case "$f" in
 
                 dir="$(tpwd -t "$TARGET")"
                 dir="$(eval echo -e "$dir")"
-                lit "$dir" > /tmp/tm.txt
+                printf -- "%s\n" "$dir" > /tmp/tm.txt
                 pen-tm n "$dir"
                 export CWD
 
@@ -1935,7 +1934,7 @@ case "$f" in
         if test "$PRESS_ANY_KEY_FINISH" = "y"; then
             cmd_post="$cmd_post; pak $PRESS_ANY_KEY_FINISH_KEY"
         elif test "$PRESS_ANY_KEY_ON_ERROR" = "y"; then
-            cmd_post="$cmd_post; test \$ret -ne 0 && ( lit -n 'exit code '\$ret' => '; pak )"
+            cmd_post="$cmd_post; test \$ret -ne 0 && ( p 'exit code '\$ret' => '; pak )"
         fi
 
         if test "$REPEAT_COMMAND" = "y"; then
@@ -2046,7 +2045,6 @@ case "$f" in
         elif test "$f" = "rs" || test "$f" = "rsp"; then
             full_id="$(tmux respawnp -k -t "$TARGET" -t "$TARGET" "export TMUX=; $fullcmd")"
         elif test "$SUB_SESSION" = "y"; then
-            server="$(pen-tm-get-server)"
 
             unset TMUX
 
@@ -2464,7 +2462,6 @@ case "$f" in
             EDITOR=ansivim
         fi
 
-        server="$(pen-tm-get-server)"
         unset TMUX
 
         tf_tmcapture="$(pen-tf tmcapture txt || echo /dev/null)"
@@ -2749,7 +2746,7 @@ case "$f" in
         fi
         message="$(p "$message" | q)"
 
-        pen-tm -t -d sph -pak "lit $message"
+        pen-tm -t -d sph -pak "printf -- "%s\n" $message"
     }
     ;;
 
@@ -3274,7 +3271,7 @@ case "$f" in
         pane_name="$(tmux display-message -p "$format_string")"
         tmux display-message "copied pane name: $format_string"
 
-        lit "$pane_name" | xc -n
+        printf -- "%s\n" "$pane_name" | xc -n
     }
     ;;
 
