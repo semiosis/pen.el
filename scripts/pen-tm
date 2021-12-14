@@ -12,7 +12,7 @@ displayedname() {
 
 mkdir -p $HOME/notes
 
-: "${server:="$(pen-tm-get-server)"}"
+# : "${server:="$(pen-tm-get-server)"}"
 
 extra_exports=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -51,28 +51,27 @@ init-tm() {
     # Unique ID -- prompt for a random thing such as a pokemon, if pen server is running
     uid="$(date +%s)"
 
-
     # Ensure the localhost session is up
     #pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$SHELL"
     #pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n "${uid}" "$SHELL"
 
     cd "$HOME/notes"
-    tmux -L "$server" start-server
-    tmux -L "$server" new-session -d -s localhost -c "$HOME/notes" bash
-    tmux -L "$server" set-option -t localhost: lock-after-time 36000
+    tmux start-server
+    tmux new-session -d -s localhost -c "$HOME/notes" bash
+    tmux set-option -t localhost: lock-after-time 36000
 
-    tmux -L "$server" new-session -d -s "${uid}" -c "$HOME/notes" bash
-    tmux -L "$server" set-option -t "${uid}": lock-after-time 36000
+    tmux new-session -d -s "${uid}" -c "$HOME/notes" bash
+    tmux set-option -t "${uid}": lock-after-time 36000
 
     if test "$#" -gt 0; then
         # I want multiple views on the same emacs
         # Therefore, I want multiple sessions
         # pen-tm -S nw -t "${uid}:" -args "$@"
         :
-        tmux -L "$server" neww -t "${uid}": -t "${uid}": -c "$HOME/notes" "$@"
+        tmux neww -t "${uid}": -t "${uid}": -c "$HOME/notes" "$@"
     fi
 
-    TMUX= tmux -L "$server" attach -t "${uid}":
+    TMUX= tmux attach -t "${uid}":
     echo init
     exit 0
 }
@@ -616,7 +615,7 @@ case "$f" in
                 \; \
             respawnp -k \
                 -t "wrap:1" \
-                "TMUX= tmux -L $server attach -t \"$CALLER_TARGET\""
+                "TMUX= tmux attach -t \"$CALLER_TARGET\""
 
         [ -n "$1" ] && x="$1" && shift
         [ -n "$1" ] && y="$1" && shift
@@ -1361,12 +1360,12 @@ case "$f" in
 
 
         if pen-tm session-exists $session_name; then
-            TMUX= tmux -L $server attach -t "$session_name:" || {
+            TMUX= tmux attach -t "$session_name:" || {
                 true
             }
         elif test "$session_name" = "localhost"; then
             pen-tm ns -r -l -d -c "$HOME/notes" -n localhost "$shell"
-            TMUX= tmux -L $server attach -t "$session_name:" || {
+            TMUX= tmux attach -t "$session_name:" || {
             true
         }
     else
@@ -2054,10 +2053,10 @@ case "$f" in
                 session_name_opt=" -s $session_name "
             fi
 
-            full_id="$(tmux -L $server new -P -F "$ID_FORMAT" -d $session_name_opt -n "$window_name" -c "$dir" "$fullcmd")"
+            full_id="$(tmux new -P -F "$ID_FORMAT" -d $session_name_opt -n "$window_name" -c "$dir" "$fullcmd")"
 
             if ! test -n "$BACKGROUNDED"; then
-                tmux -L $server attach -t "$full_id"
+                tmux attach -t "$full_id"
             fi
 
         elif test -n "$SPLIT"; then
@@ -2476,7 +2475,7 @@ case "$f" in
             sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
             sheight="$(( sheight + 2 ))"
 
-            tmux -L $server new-session -d -x "$swidth" -y "$sheight" -A -s wrap \; respawnp -k -t "wrap:1" "TMUX= tmux -L $server attach -t \"$CALLER_TARGET\""
+            tmux new-session -d -x "$swidth" -y "$sheight" -A -s wrap \; respawnp -k -t "wrap:1" "TMUX= tmux attach -t \"$CALLER_TARGET\""
 
             c=0
 
@@ -2492,14 +2491,14 @@ case "$f" in
                     break
                 fi
 
-                tmux -L $server capture-pane -t "wrap:1.0" \; save-buffer "$np"
+                tmux capture-pane -t "wrap:1.0" \; save-buffer "$np"
             done
 
-            tmux -L $server kill-pane -t "wrap:1.0"
+            tmux kill-pane -t "wrap:1.0"
         else
-            eval "tmux -L $server capture-pane -t "$CALLER_PANE" $CAPTURE_OPTIONS -S $SCROLLBACK"
+            eval "tmux capture-pane -t "$CALLER_PANE" $CAPTURE_OPTIONS -S $SCROLLBACK"
 
-            tmux -L $server save-buffer "$np"
+            tmux save-buffer "$np"
         fi
 
         cat "$np" | clean-term-capture | pen-sponge "$np"
@@ -2517,10 +2516,10 @@ case "$f" in
             full_lines="$(wc -l "$np" | awk '{print $1}')"
             final_x=$x
             final_y="$(( y + 1 ))"
-            pane_id="$(tmux -L $server neww -t "$CALLER_TARGET" -F "#{pane_id}" -P -n capture "stty stop undef; stty start undef; TTY= GOTO_COLUMN=$final_x GOTO_LINE=$final_y $EDITOR \"$np\"")"
+            pane_id="$(tmux neww -t "$CALLER_TARGET" -F "#{pane_id}" -P -n capture "stty stop undef; stty start undef; TTY= GOTO_COLUMN=$final_x GOTO_LINE=$final_y $EDITOR \"$np\"")"
 
             if test $DO_SEND_KEYS = "f" && test "$EDITOR" = "v"; then
-                tmux -L $server send-keys -t "$pane_id" "C-k"
+                tmux send-keys -t "$pane_id" "C-k"
             else
                 :
             fi
