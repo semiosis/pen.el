@@ -167,12 +167,12 @@ export EDITOR=v
 : ${DISPLAY:="0"}
 
 if ! test "$FAST" = "y"; then
-    test -f $HOME/.shell_environment && . $HOME/.shell_environment
+    test -f $HOME/.shellrc && . $HOME/.shellrc
     . `which pen-bash-library.sh`
-else
-    PATH="$HOME/scripts:$PATH"
-    PATH="$MYGIT/semiosis/pen.el/scripts:$PATH"
-    PATH="$HOME/scripts-early:$PATH"
+# else
+#     PATH="$HOME/scripts:$PATH"
+#     PATH="$MYGIT/semiosis/pen.el/scripts:$PATH"
+#     PATH="$HOME/scripts-early:$PATH"
 fi
 
 is_tty() { [ -t 1 ]; }
