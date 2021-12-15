@@ -198,19 +198,10 @@ if test "$WORD_BOUNDARIES" = "y"; then
     pattern="\b$pattern\b"
 fi
 
-# printf -- "%s\n" "$pattern"
-# exit 0
-
 if [ -z "$pattern" ]; then
     printf -- "%s\n" "No pattern" 1>&2
     exit 0
 fi
-
-#pattern="$(p "$pattern" | qne)"
-# grep understands "\b"
-# it getts this correct. so don't escape
-# xargs -0 grep -I -Hn -P -- "defalias 's\b"
-# pattern="$(p "$pattern")"
 
 if test "$FOLLOW" = "y"; then
     OPTION=-L
