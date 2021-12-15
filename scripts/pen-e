@@ -129,21 +129,21 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     +*:*) {
-        GOTO_LINE="$(p "$opt" | mcut -d'[+:]' -f2)"
-        GOTO_COLUMN="$(p "$opt" | mcut -d'[+:]' -f3)"
+        GOTO_LINE="$(p "$opt" | pen-mcut -d'[+:]' -f2)"
+        GOTO_COLUMN="$(p "$opt" | pen-mcut -d'[+:]' -f3)"
 
         shift
     }
     ;;
 
     +[0-9]*) {
-        GOTO_LINE="$(p "$opt" | mcut -d+ -f2)"
+        GOTO_LINE="$(p "$opt" | pen-mcut -d+ -f2)"
         shift
     }
     ;;
 
     +/*) { # pattern
-        pattern="$(p "$opt" | sed 's=^+/==' | s chomp | qne)"
+        pattern="$(p "$opt" | sed 's=^+/==' | chomp | qne)"
 
         shift
     }
@@ -164,7 +164,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -ac) {
 
-        n_columns="$(calc-best-n-columns)"
+        n_columns="$(pen-calc-best-n-columns)"
         shift
     }
     ;;
@@ -1283,21 +1283,21 @@ case "$f" in
             ;;
 
             +*:*) {
-                GOTO_LINE="$(p "$opt" | mcut -d'[+:]' -f2)"
-                GOTO_COLUMN="$(p "$opt" | mcut -d'[+:]' -f3)"
+                GOTO_LINE="$(p "$opt" | pen-mcut -d'[+:]' -f2)"
+                GOTO_COLUMN="$(p "$opt" | pen-mcut -d'[+:]' -f3)"
 
                 shift
             }
             ;;
 
             +[0-9]*) {
-                GOTO_LINE="$(p "$opt" | mcut -d+ -f2)"
+                GOTO_LINE="$(p "$opt" | pen-mcut -d+ -f2)"
                 shift
             }
             ;;
 
             +/*) { # pattern
-                pattern="$(p "$opt" | sed 's=^+/==' | s chomp | qne)"
+                pattern="$(p "$opt" | sed 's=^+/==' | chomp | qne)"
 
                 shift
             }
