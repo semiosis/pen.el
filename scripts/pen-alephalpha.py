@@ -72,7 +72,7 @@ result = client.complete(PEN_MODEL,
 cs = result["completions"]
 
 if len(cs) == 1:
-    #  print(PEN_PROMPT, end = '')
+    print(PEN_PROMPT, end = '')
     print(cs[0]['completion'])
 else:
     for x in range(len(cs)):

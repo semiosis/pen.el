@@ -82,7 +82,7 @@ cs = [result]
 
 # It's just not working with 1 alone
 if len(cs) == 1:
-    #  print(PEN_PROMPT, end = '')
+    print(PEN_PROMPT, end = '')
     print(cs[0])
 else:
     for x in range(len(cs)):

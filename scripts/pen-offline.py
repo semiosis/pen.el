@@ -48,7 +48,7 @@ result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
 cs = [result]
 
 if len(cs) == 1:
-    #  print(PEN_PROMPT, end = '')
+    print(PEN_PROMPT, end = '')
     print(cs[0])
 else:
     for x in range(len(cs)):
