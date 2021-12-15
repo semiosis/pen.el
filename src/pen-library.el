@@ -575,4 +575,7 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
       (call-interactively run)))
 (defalias 'esps 'e/sps)
 
+(defun pen-current-filename-maybe ()
+  (sor (pen-f-basename (get-path nil t)) "untitled"))
+
 (provide 'pen-library)
