@@ -3,8 +3,6 @@ export TTY
 
 # ct vim /
 
-: ${CWD:="$(pwd)"}
-
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -E) {
         DO_EXEC=y
@@ -35,6 +33,12 @@ inside-docker-p() {
     test -f /.dockerenv
 }
 
+if inside-docker-p; then
+    : ${CWD:="$(pwd)"}
+else
+    CWD=/
+fi
+
 docker_maybe() {
     if inside-docker-p; then
         "$@"
@@ -43,7 +47,7 @@ docker_maybe() {
     fi
 }
 
-: "${USER:="$(pen-readln username)"}"
+: "${USER:="$(pen-readln "host username")"}"
 
 # This runs in the docker to the host
 docker_maybe ssh \
