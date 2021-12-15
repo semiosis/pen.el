@@ -904,7 +904,6 @@ case "$f" in
     xp) {
         zsh --no-rcs -c "tmux load-buffer -b myclipboard =(unbuffer pen-xc "$@")"
         tmux paste-buffer -pr -b myclipboard
-
     }
     ;;
 
@@ -912,7 +911,6 @@ case "$f" in
         zsh --no-rcs -c "tmux load-buffer -b myclipboard =(pen-tm -sout sph \"echo -n '' | vipe\" | cat | chomp)"
 
         tmux paste-buffer -r -b myclipboard
-
     }
     ;;
 
