@@ -368,7 +368,7 @@ case "$DISTRIBUTION" in
         }
         ;;
 
-    sp|sm|pen-emacsd) # spacemacs
+    sp|sm|pen-emacsd)
         {
             EMACS_USER_DIRECTORY="$REPOS/pen-emacsd"
             EMACS_VERSION=28
