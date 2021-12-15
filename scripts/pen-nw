@@ -1,0 +1,85 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+
+export TMUX
+unset CWD
+
+declare -a tmargs
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -E) {
+        shift
+
+        CMD="$1"
+
+        # This is better because this works echo hi | sps -E "cat | v"
+        "$sn" sh -c "$CMD"
+
+        exit $?
+    }
+    ;;
+
+    -t) {
+        TARGET="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -w) {
+        tmargs+=("$opt")
+        shift
+    }
+    ;;
+
+    -yn) {
+        DOYN=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export TARGET
+
+: "${CMD:="$(0</dev/null cmd "$@" | pen-mnm | cut -c 1-30 | slugify | sed 's/^-//;s/-$//')"}"
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+pp="$(ps -o comm= $PPID)"
+
+# ls -la /proc/$$/fd | tv &>/dev/null
+
+# This is also used as tmargs
+arr=()
+if stdin_exists && \
+    ! test "$pp" = emacs; then
+    arr=( -S "${arr[@]}" )
+else
+    arr=( -d "${arr[@]}" )
+fi
+
+arr=( -tout "${arr[@]}" )
+
+CMD_B="$(cmd-nice-posix "${arr[@]}")"
+: ${CMD_B:="$(cmd-nice-posix "$@")"}
+
+if test "$DOYN" && ! pen-yn "do $(aqf "$@")?"; then
+    exit
+fi
+
+sn="$(p "$sn" | sed 's/^pen-//')"
+
+cmd1 pen-tm "${arr[@]}" "$sn" -n "$CMD_B" -args "$@" | pen-ds lastsps &>/dev/null
+pen-tm "${arr[@]}" "${tmargs[@]}" "$sn" -n "$CMD" -args "$@"

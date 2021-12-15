@@ -1,0 +1,553 @@
+#!/bin/bash
+
+# {
+# cmd "$@" | awk 1
+# env
+# } | tv &>/dev/null
+
+# This is a little slow
+: "${OPENAI_API_KEY:="$(myrc .openai_api_key)"}"
+export OPENAI_API_KEY
+
+export GY_CMD
+
+export SHELL=bash
+
+aqf() { apply qf "$@"; }
+
+parent_sn="$(ps -o comm= $PPID)"
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$parent_sn" 0</dev/null ) &>/dev/null
+
+. "$HOME/scripts/libraries/bash-library.sh"
+
+# Use vim 8.0
+# 8.0 has much slower syntax rendering
+# The --not-a-term is from vim 8 and suppresses the "reading from stdin"
+# message
+# This gets the wrapper
+# bin="$(which "vim") --not-a-term"
+bin="$HOME/local/bin/vim --not-a-term"
+bin="$HOME/scripts/vim --not-a-term"
+# bin="/usr/local/bin/vim"
+
+last_arg="${@: -1}"
+if test "$last_arg" = "-"; then
+    shift
+fi
+
+# No-op
+extra_commands="silent! echom"
+
+ANSI=n
+bn="$(basename "$0")"
+case "$bn" in
+    avim|ansivim) {
+        ANSI=y
+    }
+    ;;
+
+    *)
+esac
+
+# If this is '' then it's allowed to be decided. If it's n or y then
+# it's final
+NOCOLOR=
+: ${NOAUTOCHDIR:=""}
+LOCATE_IT=
+# GLOBAL_SYNTAX_HIGHLIGHTING=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    --) {
+        # echo "$@" | tv &>/dev/null
+        shift
+        break
+    }
+    ;;
+
+    "") { shift; }; ;;
+    -p) {
+        bin="vimpager"
+        shift
+    }
+    ;;
+
+    -2) {
+        export TERM=screen-2color
+        shift
+    }
+    ;;
+
+    -u) {
+        vimrc="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -cols) {
+        n_columns="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -ac|-colvim) {
+        #if test -z "$COLUMNS"; then
+        #    eval `resize`
+        #fi
+
+        #n_columns="$(bc <<< "scale=0;$COLUMNS / 80 + 1")"
+        n_columns="$(calc-best-n-columns)"
+        shift
+    }
+    ;;
+
+    -nf) {
+        NEW_FILE=y
+
+        last_arg="${@: -1}"
+        nf_dn="$(printf -- "%s" "$last_arg" | sed -n 's=\(.*/\).*=\1=p')"
+        nf_fp="$last_arg"
+
+        test -n "$nf_dn" && mkdir -p "$nf_dn"
+        touch "$nf_fp"
+
+        shift
+    }
+    ;;
+
+    -vimdir) {
+        vimdir="$2"
+        extra_commands+="|let &rtp = substitute(&rtp, \"$HOME/\.vim\", $(aqf "$vimdir"), \"g\")"
+        shift
+        shift
+    }
+    ;;
+
+    -l) {
+        LOCATE_IT=y
+        shift
+    }
+    ;;
+
+    -jl) {
+        JUSTIFY_LEFT=y
+        shift
+    }
+    ;;
+
+    -ka|-kill-all) {
+        {
+            ps -ef | grep -P "[0-9][0-9]:[0-9][0-9]:[0-9][0-9] vim" | grep -v grep
+            ps -ef | grep "/local/bin/vim$" | grep -v grep
+            ps -ef | grep -P "\b/scripts/v\b" | grep -v grep
+            ps -ef | grep "/local/bin/vim -c" | grep -v grep
+        } | field 2 | xargs kill
+        exit 0
+    }
+    ;;
+
+    -d) { # vimdiff
+        bin="vd"
+        shift
+    }
+    ;;
+
+    -compile) {
+        cd $HOME/source/git/vim-ace
+
+        ./configure --prefix=$HOME/local --with-features=huge --enable-cscope --enable-multibyte --with-x --enable-rubyinterp=yes --enable-perlinterp=yes --enable-pythoninterp=yes
+
+        # I have to choose between
+        # --enable-pythoninterp=yes
+        # --enable-python3interp=yes
+        # I have chosen python2
+
+        make -j8
+        sudo make install
+        exit 0
+    }
+    ;;
+
+    #-nc|-nocolor) {
+    #    extra_commands+="|hi Normal term=NONE ctermbg=NONE ctermfg=NONE"
+    #    shift
+    #}
+    #;;
+
+    -nc) {
+        NOCOLOR=y
+        shift
+    }
+    ;;
+
+    # Why does this break rtcmd?
+    -c) {
+        # {
+        #     echo "$pattern"
+        #     echo "$extra_commands"
+        #     echo "$@"
+        # } | tee -a /tmp/pat.txt &>/dev/null
+
+        # I think it's because it runs twice and it's not an issue with
+        # rtcmd. The issue is too complicated. Make a workaround.
+        if ! test "$parent_sn" = "rtcmd"; then
+            extra_commands+="|$2"
+        fi
+        # printf -- "%s\n" "$extra_commands" | ns &>/dev/null
+        shift
+        shift
+    }
+    ;;
+
+    -pc) {
+        extra_commands_prepend+="$2|"
+        # printf -- "%s\n" "$extra_commands_prepend" | ns &>/dev/null
+        shift
+        shift
+    }
+    ;;
+
+    -ns|-noswap) {
+        extra_commands+="|set noswapfile"
+        shift
+    }
+    ;;
+
+    -ft) {
+        extra_commands+="|set ft=$2"
+        shift
+        shift
+    }
+    ;;
+
+    -rt) {
+        rt_cmd="$2"
+        # rt_cmd="$(p "$rt_cmd" | esc '$')"
+        extra_commands+="|call RTCmdSetup($(aqf "$rt_cmd" | bs '|'))"
+        # extra_commands="$(p "$extra_commands" | bs '|')"
+        # echo "$extra_commands" > /tmp/extra_commands.txt
+        shift
+        shift
+    }
+    ;;
+
+    -nad|-noautochdir) {
+        NOAUTOCHDIR=y
+        shift
+    }
+    ;;
+
+    -a|-A|-ansi) {
+        ANSI=y
+        shift
+    }
+    ;;
+
+    -syn) {
+        bin="/usr/bin/vim --not-a-term"
+        shift
+    }
+    ;;
+
+    -s) {
+        GLOBAL_SYNTAX_HIGHLIGHTING=y
+        shift
+    }
+    ;;
+
+    -nsyn) {
+        GLOBAL_SYNTAX_HIGHLIGHTING=n
+        shift
+    }
+    ;;
+
+    +/*) { # pattern
+        # pattern="$(p "$opt" | mcut -d+/ -f2 | s chomp)"
+        # 
+        # why did I put qne here? it breaks rtcmd
+        # pattern="$(p "$opt" | sed 's=^+/==' | s chomp | qne)"
+        # I think I did it because emacs needs it
+        # vim +/"pattern=" "$HOME/scripts/e"
+        pattern="$(p "$opt" | sed 's=^+/==' | s chomp)"
+
+        shift
+    }
+    ;;
+
+    +*:*) {
+        GOTO_LINE="$(p "$opt" | mcut -d'[+:]' -f2)"
+        GOTO_COLUMN="$(p "$opt" | mcut -d'[+:]' -f3)"
+
+        shift
+    }
+    ;;
+
+    # v +2G $HOME/scripts/v
+    +[0-9]*[^0-9]*) {
+        normal_commands+="$(p "$opt" | sed 's/^.//' | s chomp | qne)"
+        shift
+    }
+    ;;
+
+    +[0-9]*) {
+        GOTO_LINE="$(p "$opt" | mcut -d+ -f2)"
+        shift
+    }
+    ;;
+
+    +*) {
+        normal_commands+="$(p "$opt" | sed 's/^.//' | s chomp | qne)"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if [ -n "$normal_commands" ]; then
+    normal_commands="$(p "$normal_commands" | qne | qne)"
+    opts+=" -c $(aqf "normal $normal_commands") "
+fi
+
+if [ -n "$GOTO_LINE" ] && test -n "$GOTO_COLUMN"; then
+    # GOTO_COLUMN="$(a- bc "$GOTO_COLUMN + 1")"
+
+    GOTO_COLUMN="$(a- "awk 1 | bc" "$GOTO_COLUMN + 1")"
+
+    if test "$JUSTIFY_LEFT" = "y"; then
+        LEFTNESS=" | normal! zH"
+    fi
+
+    opts+=" -c $(aqf "cal cursor($GOTO_LINE, $GOTO_COLUMN)$LEFTNESS") "
+elif [ -n "$GOTO_LINE" ]; then
+    opts+=" -c $(aqf "exe $GOTO_LINE") "
+fi
+
+if [ -n "$pattern" ]; then
+    # this only goes to the line, not the column
+    # opts+=" -c \"silent! /$pattern\" "
+
+    pattern="$(printf -- "%s" "$pattern" | bs '/~')"
+
+    ncmd="/$pattern"
+
+    # This was fine for a while
+    ncmd="$(p "silent! normal! $ncmd" | qne)"
+    ncmd="$(p "exe \"$ncmd\r\"" | q)"
+    opts+=" -c $ncmd "
+
+    # ncmd="$(p "normal! $ncmd")"
+    # extra_commands+="|$ncmd"
+
+    # opts+=" -c $(a- q "exe $(a- qne "normal! $(a- q "/$pattern")")\r") "
+    # lit " -c $(a- q "exe $(a- q "normal! $(a- q "/$pattern")")\r") " | tv &>/dev/null
+fi
+
+# set -xv
+
+last_arg="${@: -1}"
+ext="${fp##*.}"
+
+bn="$(basename "$fp")"
+
+if test -n "$n_columns"; then
+    n_columns=$((n_columns-1))
+    if test "$n_columns" -gt "0"; then
+        # set -- -c "call AddColumns($n_columns)" "$@"
+        extra_commands+="|call AddColumns($n_columns)"
+    fi
+fi
+
+# if test "$ext" = "clql" || test "$ext" = "yaml"; then
+#     if yn "Use highlighing?"; then
+#         extra_commands+="|call GeneralSyntax()|au BufEnter * call GeneralSyntax()"
+#     fi
+# fi
+
+if test "$NOCOLOR" = "y" || { test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "" && { test "$bn" = "glossary.txt" || test "$ext" = "clql"; }; }; then
+    extra_commands+="|syntax off | set nohlsearch | set t_Co=0"
+fi
+
+if test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "y" || { test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "" && { test "$bn" = "glossary.txt" || test "$ext" = "clql"; }; }; then
+    extra_commands+="|windo silent! call GeneralSyntax()|au BufEnter * call GeneralSyntax()"
+fi
+
+if test "$NOAUTOCHDIR" = "y" || stdin_exists; then
+    echo "$extra_commands" | tee -a /tmp/extra.txt &>/dev/null
+    extra_commands+="|set noautochdir"
+fi
+
+# This is a command, not a function, so it must go at the end of the extra commands
+if test "$ANSI" = "y"; then
+    extra_commands+="|AnsiEsc"
+fi
+
+# not sure where foldcolumn=2 is coming from
+# cd "$HOME$VIMCONFIG"; eack -d 10 foldcolumn=2
+# extra_commands+="|set foldcolumn=0"
+
+# lit "$cmd"
+# exit 0
+
+
+# exec <`tm-tty`
+#
+# if ! stdout_capture_exists; then
+#     exec <`tm-tty`
+# else
+#     echo yo
+# fi
+
+CMD="$(cmd "$@")"
+
+cmd=" -c $(aqf "$extra_commands_prepend$extra_commands") $opts $CMD"
+
+if test -n "$vimrc"; then
+    bin="$bin -u \"$vimrc\""
+fi
+
+if stdin_exists; then
+    # input="$(cat)"
+    # input="$(cat | dos2unix)"
+    # Ignore NUL in input (bash 4.4 does this automatically)
+    input="$(tr -d '\0' | dos2unix)"
+
+    cmd="$bin $cmd -"
+    cmd="$(printf -- "%s" "$cmd" | esc '`' | ds vlast)"
+
+    printf -- "%s\n" "$input" | eval "$cmd"
+
+    # printf -- "%s\n" "$input" | eval "$bin -"
+    exit $?
+fi
+
+if test "$LOCATE_IT" = "y"; then
+    w="$(locate "$1" | head -n 1)"
+    r="$?"
+
+    if [ "$r" -eq 0 ]; then
+
+        shift
+
+        # Recalculate after removing
+
+        CMD="$(cmd "$@")"
+
+        cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+
+        # $bin "$w"
+        # echo "$bin $cmd $w"
+        eval "$bin $cmd $w"
+    fi
+    exit $?
+fi
+
+if [ $# -eq 1 ]; then
+    if ! [ -f "$1" ]; then
+        w="$(which "$1")"
+        r="$?"
+
+        if [ "$r" -eq 0 ]; then
+
+            shift
+
+            # Recalculate after removing
+
+            CMD="$(cmd "$@")"
+
+            cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+
+            # $bin "$w"
+            # echo "$bin $cmd $w"
+            cmd="$bin $cmd $w"
+        else
+            last_arg="${@: -1}"
+            fp="$last_arg"
+
+            if pl "$fp" | grep -q -P ':[^/].*$'; then
+                fp="$(p "$last_arg" | cut -d : -f 1)"
+                GOTO_LINE="$(p "$last_arg" | cut -d : -f 2)"
+                GOTO_COLUMN=0
+                opts+=" -c $(aqf "cal cursor($GOTO_LINE, $GOTO_COLUMN)") "
+            fi
+
+            ext="${fp##*.}"
+            fn="${fp%.*}"
+
+            if printf -- "%s\n" "$last_arg" | grep -q -P '^file:///'; then
+                last_arg="$(printf -- "%s" "$last_arg" | replace 'file://' '')"
+                set -- "${@:1:$(($#-1))}" # shift last arg
+                set -- "$@" "$last_arg"
+
+                cmd="$(cmd "$@")"
+
+                # lit "$cmd" | tv &>/dev/null
+            fi
+
+            if lit "$last_arg" | grep -q -P '^http.?://github.com'; then
+                gc -notty "$last_arg" &>/dev/null
+                last_arg="$(p "$last_arg" | sed "s=^http.\?://github.com=$MYGIT=" | sed "s=/\(blob\|tree\)/[a-z]\+==")"
+                set -- "${@:1:$(($#-1))}" # shift last arg
+
+                CMD="$(cmd "$@")"
+
+                cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+
+                cmd="$bin $cmd $last_arg"
+            else
+                if lit "$last_arg" | grep -q -P '^http.?:'; then
+                    tf_webpage="$(make-path-for-uri "$last_arg")"
+
+                    set -- "${@:1:$(($#-1))}" # shift last arg
+
+                    CMD="$(cmd "$@")"
+
+                    cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+
+                    cmd="$bin $cmd $tf_webpage"
+                else
+                    # set -- "${@:1:$(($#-1))}" # shift last arg
+                    # CMD="$(cmd "$@")"
+                    # echo "$bin $cmd $opts $fp"
+                    # exit 0
+
+                    # :
+                    # echo "$cmd"
+                    # exit 0
+
+                    # opts is already in cmd
+                    # cmd="$bin $cmd $opts $fp"
+                    cmd="$bin $cmd $fp"
+                fi
+            fi
+        fi
+    else
+        # $1 is evidently a file. so find the real path
+        rp="$(realpath "$1")"
+        shift
+
+        CMD="$(cmd "$@")"
+
+        cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+
+        # lit "$bin $cmd"
+        cmd="$bin $(aq "$rp") $cmd"
+    fi
+else
+    cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+
+    # lit "$bin $cmd"
+    # eval "$bin $(aq "$rp") $cmd"
+
+    cmd="$bin $cmd"
+fi
+
+# echo "$cmd" 1>&2
+# exit 0
+
+# Use esc, not bs, because I want it to escape not only the char but the
+# preceding slashes
+cmd="$(printf -- "%s" "$cmd" | esc '`' | ds vlast)"
+
+eval "$cmd"

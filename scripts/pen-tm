@@ -43,7 +43,7 @@ editor() {
     if e running; then
         e c "$1"
     else
-        v "$1"
+        pen-v "$1"
     fi
 }
 
@@ -89,7 +89,7 @@ for arg in "$@"; do case "$arg" in
     goto-fzf|\
     filter|\
     man|\
-    tw|w|h|v|\
+    tw|w|h|pen-v|\
     avy|easymotion|search|nv-wrap|capture-stdout|capture-stdout-wrap|\
     xp|type|typeclip|\
     cap|capp|cap-pane|capture|\
@@ -162,7 +162,7 @@ fi
 
 invocation="$0 $@"
 
-export EDITOR=v
+export EDITOR=pen-v
 
 : ${DISPLAY:="0"}
 
@@ -177,7 +177,7 @@ fi
 
 is_tty() { [ -t 1 ]; }
 stdout_capture_exists() { ! is_tty; }
-pager() { if is_tty; then v; else cat; fi; }
+pager() { if is_tty; then pen-v; else cat; fi; }
 stdin_exists() { ! [ -t 0 ]; }
 is_stdout_pipe() {
     [[ -p /dev/stdout ]]
@@ -488,7 +488,7 @@ case "$f" in
 
         cap_file="$(pen-tm cap | pen-tf txt; sleep 0.5)"
         if [ -s "$cap_file" ]; then
-            pen-tm -te nw -n em-click "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
+            pen-tm -te nw -n em-click "pen-v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
 
             x="$(cat /tmp/em-click.txt | cut -d ' ' -f 2)"
             y="$(cat /tmp/em-click.txt | cut -d ' ' -f 1)"
@@ -1017,7 +1017,7 @@ case "$f" in
 
         } | mnm | {
             if is_tty || test "$makenewpane" = "nw"; then
-                pen-tm -tout -i -S nw v
+                pen-tm -tout -i -S nw pen-v
             else
                 cat
             fi
@@ -1412,7 +1412,7 @@ case "$f" in
             test -f .tmux-minimal.sh && echo .tmux-minimal.sh
             test -f autofiles.txt && echo autofiles.txt
             test -f $NOTES/programs/tm/autofiles.txt && echo $NOTES/programs/tm/autofiles.txt
-        } | pen-str join ' ' | xargs -l1 pen-tm -f -d -te nw -args v
+        } | pen-str join ' ' | xargs -l1 pen-tm -f -d -te nw -args pen-v
 
     }
     ;;
@@ -1517,7 +1517,7 @@ case "$f" in
 
     editbuffer) {
         bufdata="$(tmux save-buffer -)"
-        newdata="$(p -- "%s\n" "$bufdata" | EDITOR=v vipe)"
+        newdata="$(p -- "%s\n" "$bufdata" | EDITOR=pen-v vipe)"
 
         tmux delete-buffer
         p -- "%s\n" "$newdata" | tmux load-buffer -
@@ -1831,7 +1831,7 @@ case "$f" in
             }
             ;;
 
-            -v) { # we want to be able to run v (vim)
+            -v) { # we want to be able to run pen-v (vim)
                 SPLIT=-h
                 shift
             }
@@ -2261,7 +2261,7 @@ case "$f" in
     em|easymotion) {
         cap_file="$(pen-tm cap | pen-tf txt; sleep 0.5)"
         if [ -s "$cap_file" ]; then
-            pen-tm -te -d nw -n easymotion "v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2)' \"$cap_file\""
+            pen-tm -te -d nw -n easymotion "pen-v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2)' \"$cap_file\""
         fi
 
         exit 0
@@ -2423,7 +2423,7 @@ case "$f" in
             ;;
 
             -v|-vim) {
-                EDITOR="v"
+                EDITOR="pen-v"
 
                 shift
             }
@@ -2526,7 +2526,7 @@ case "$f" in
             final_y="$(( y + 1 ))"
             pane_id="$(tmux neww -t "$CALLER_TARGET" -F "#{pane_id}" -P -n capture "stty stop undef; stty start undef; TTY= GOTO_COLUMN=$final_x GOTO_LINE=$final_y $EDITOR \"$np\"")"
 
-            if test $DO_SEND_KEYS = "f" && test "$EDITOR" = "v"; then
+            if test $DO_SEND_KEYS = "f" && test "$EDITOR" = "pen-v"; then
                 tmux send-keys -t "$pane_id" "C-k"
             else
                 :
@@ -2639,7 +2639,7 @@ case "$f" in
 
     urls) {
         pen-tm capp | xurls | tail -n 1 | xc -i -n
-        pen-tm capp | xurls | soak | sps v
+        pen-tm capp | xurls | soak | pen-sps pen-v
     }
     ;;
 
@@ -2837,7 +2837,7 @@ case "$f" in
     tv) { # just have a look at what's inside as the program is running
         SILENCE=n
         REMEMBER_IT=n
-        EDITOR=v
+        EDITOR=pen-v
         window_mode=sps
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             -q) {
@@ -3144,7 +3144,7 @@ case "$f" in
     ;;
 
     lkb|list-keybindings) {
-        tmux list-keys | pen-tm -S -tout nw -n tmux-key-bindings "v -c \"set ft=tmux\""
+        tmux list-keys | pen-tm -S -tout nw -n tmux-key-bindings "pen-v -c \"set ft=tmux\""
     }
     ;;
 
@@ -3512,7 +3512,7 @@ case "$f" in
 
     tw|w) { slug="$(echo "$@" | tr -d '\n' | slugify | cut -c -10)"; pen-tm -d nw -n "$slug" -fa "$@"; } ;;
     h) { pen-tm -d sph -d -fa "$@"; } ;;
-    v) { pen-tm -d spv -d -fa "$@"; } ;;
+    pen-v) { pen-tm -d spv -d -fa "$@"; } ;;
 
     template) {
         :
