@@ -233,8 +233,6 @@ commands to use in that buffer.
       (switch-to-buffer buffer-name)
     (with-current-buffer (term program)
 
-      ;; (ekm "h")
-
       ;; This takes care of read-only-mode upon starting
       (run-with-idle-timer 0.1 nil
                            `(lambda ()
