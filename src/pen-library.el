@@ -29,8 +29,8 @@
   (cond
    ((derived-mode-p 'org-brain-visualize-mode)
     (org-brain-pf-topic))
-   ((pen-is-glossary-file (get-path))
-    (pen-get-glossary-topic (get-path)))
+   ((pen-is-glossary-file (get-path nil t))
+    (pen-get-glossary-topic (get-path nil t)))
    (t (pen-detect-language))))
 
 (defun save-temp-if-no-file ()
