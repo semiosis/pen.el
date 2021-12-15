@@ -521,8 +521,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         fun="$1"
         shift
 
-        CMD="$(aqf-real "$@")"
-        : ${CMD:="$(aqf-real "$@")"}
+        CMD="$(cmd-nice-posix "$@")"
+        : ${CMD:="$(cmd-nice-posix "$@")"}
 
         elisp="(funcall-interactively '$fun $CMD)$elisp"
 
