@@ -1,0 +1,80 @@
+#!/bin/bash
+export TTY
+
+# Takes stdin as contents and para 1 as extension and echo the resulting
+# filename. Good for fpvd
+
+sn="$(basename "$0")"
+
+emacs_script=sp
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+
+    -em) {
+        emacs_script="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+fp="$1"
+dn="$(dirname "$fp")"
+test -n "$dn" && mkdir -p "$dn"
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+if stdin_exists && ! test "$sn" = "nff"; then
+    cat > "$fp"
+fi
+
+case "$sn" in
+    wf) {
+        cat "$fp"
+    }
+    ;;
+
+    nf) {
+        if is_tty; then
+            exec 0<&1
+            exec 2>&1
+            "$emacs_script" "$fp"
+        else
+            echo -n "$fp"
+        fi
+    }
+    ;;
+
+    nff) {
+        if ! test -p "$fp"; then
+            rm -f "$fp"
+            0</dev/null mkfifo "$fp"
+        fi
+
+        if is_stdout_pipe && ! stdin_exists; then
+            cat "$fp"
+        elif stdin_exists && ! is_stdout_pipe; then
+            cat >> "$fp"
+        else
+            echo -n "$fp"
+        fi
+        exit "$?"
+    }
+    ;;
+
+    *)
+esac

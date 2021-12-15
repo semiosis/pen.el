@@ -683,6 +683,7 @@ case "$sn" in
     ;;
 
     pent) {
+        sn=pen
         # This is used to run docker terminal emacs with -e
         # Advanced.
         # Used for ii.
