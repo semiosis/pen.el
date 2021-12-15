@@ -1,0 +1,2433 @@
+#!/bin/bash
+
+# Can't use 'cmd' as we need double quotes for emacs lisp
+aqf() { apply qf "$@"; }
+
+export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
+
+spacemacs-only
+spacemacs_only_ret="$?"
+
+spacemacs_only() {
+    return "$spacemacs_only_ret"
+}
+
+sn="$(basename "$0")"
+
+if spacemacs_only; then
+    DISTRIBUTION=spacemacs
+    if ! pl "$sn" | grep -q -P '^sp'; then
+        EMACS_DAEMON_OVERRIDE=sp
+    fi
+fi
+
+# export PS4='+	$0	${LINENO}	 '
+# set -xv
+
+# Remember:
+# vim +/"lit \"\$elispsh\" | ds elispsh" "$HOME/scripts/sp"
+
+# This breaks it
+#trap on_exit EXIT
+#on_exit() {
+#    if test -f "$tf_buffer_path"; then
+#        cat "$tf_buffer_path"
+#    fi
+#    kill 0
+#}
+
+## Does not work
+
+#func_trap() {
+#    ns blocked resume
+#}
+
+# This does not help
+# set +m
+
+: ${EMACS_TERM_TYPE:="screen-256color"}
+export EMACS_TERM_TYPE
+
+eval "set -- $(cmd "$@" | sed 's/--init-debug/--debug-init/')"
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# overwritten with
+# -2|-vt100) {
+
+# Need this for RUST_SRC_PATH. But it might not be needed anymore.
+. $HOME/.shell_environment
+
+# I used to not specify a version here as the default and it would use version 24 as default.
+# I'm not going to use version 24 anymore. I want the newest org-mode to work
+# This sets the version for non-daemon mode
+EMACS_VERSION=28
+
+# I could make it that package-refresh-contents is run when I run with
+# nw --debug-init
+
+# eval `resize`
+
+# Troubleshooting:
+# sp $HOME/notes2018/ws/cpp-c++/environment/tools/links.org
+# Didn't like opening with lisp because of the +s in the path.
+
+# echo "$(basename "$0")" $@ 1>&2
+
+if test -n "$EMACS_DAEMON_OVERRIDE"; then
+    sn="$EMACS_DAEMON_OVERRIDE"
+fi
+
+f=
+
+# Use the tmux version of emacs for hydras in the shell.
+
+# It's not working properly
+# find_file_command=my-find-file
+find_file_command=find-file
+
+if printf -- "%s\n" "$sn" | grep -q 'x$'; then
+    sn="$(printf -- "%s" "$sn" | sed 's/.$//')"
+    export USEGUI=y
+fi
+
+case "$sn" in
+    vlf) {
+        find_file_command=vlf
+        # f=c
+    }
+    ;;
+
+    # I have a 'pandas' script now instead
+    pd) {
+        : ${DISTRIBUTION:="prelude"}
+        # f=c
+    }
+    ;;
+
+    pc) {
+        : ${DISTRIBUTION:=purcell}
+        # f=c
+    }
+    ;;
+
+    ei) {
+        : ${DISTRIBUTION:=emacs-live}
+        # f=c
+    }
+    ;;
+
+    fr) {
+        : ${DISTRIBUTION:=frank}
+    }
+    ;;
+
+    sp) {
+        : ${DISTRIBUTION:=spacemacs}
+    }
+    ;;
+
+    dm|dem|doom) {
+        : ${DISTRIBUTION:=doom}
+    }
+    ;;
+
+    sc) {
+        : ${DISTRIBUTION:=scimax}
+    }
+    ;;
+
+    et) {
+        : ${DISTRIBUTION:=default}
+        SOCKET="DEFAULT_tmux"
+        # f=c
+    }
+    ;;
+
+    xr) {
+        : ${DISTRIBUTION:="exordium"}
+    }
+    ;;
+
+    me) {
+        : ${DISTRIBUTION:=default}
+        SOCKET="DEFAULT_magit"
+        # EMACS_VERSION=26
+        # EMACS_VERSION=27
+        EMACS_VERSION=28
+        # f=c
+
+        # disable rainbow here: my-distributions.el
+
+        # Can't put it here, full stop. Either place it in the emacs
+        # config or specify on the command-linet
+        # elisp+="(global-rainbow-delimiters-mode -1)(global-rainbow-identifiers-always-mode -1)"
+
+        # Both the below are equivalent because "me -e \"($f)\"" always
+        # puts magit-status first
+        # elisp="(global-rainbow-delimiters-mode -1)(global-rainbow-identifiers-always-mode -1)$elisp"
+
+        # DISCARD: This will not work. They must be disabled before magit-status
+        # is run
+        # elisp+="(global-rainbow-delimiters-mode -1)(global-rainbow-identifiers-always-mode -1)"
+    }
+    ;;
+
+    og) {
+        : ${DISTRIBUTION:=default}
+        SOCKET="DEFAULT_org"
+        # EMACS_VERSION=26
+        # EMACS_VERSION=27
+        EMACS_VERSION=28
+        # f=c
+    }
+    ;;
+esac
+
+# This is the edit command.
+# I should be able to do things like this:
+
+# e v 25 10
+# edit vim [line] [column]
+
+# e c 25 10
+# edit emacsclient [line] [column]
+
+# This should also do vim
+
+# Perhaps use this as a template for extending this script's options?
+# $HOME/var/smulliga/source/git/fzf/bin/fzf-tmux
+
+# Need to specify parameters for starting different variants of emacs.
+# Do that at the start
+
+# alias emacs='emacs -q --load "/path/to/init.el"'
+
+# Need also full abstraction for terminal programs where I can create
+# bindings
+
+# Add ability to run a command
+
+QUIET=y
+
+# It's important that these are exportable
+: ${EMACS_BIN:="$SCRIPTS/emacs"}
+# : ${EMACSCLIENT_BIN:="/usr/bin/emacsclient"}
+: ${EMACSCLIENT_BIN:="$SCRIPTS/emacsclient"}
+: ${EMACS_USER_DIRECTORY:="$HOME/.emacs.d"}
+
+# I am not using this env var atm. Yes I am now. For scimax and
+# spacemacs testing.
+# EMACS_VARIANT=
+
+if test "$1" = "-v"; then
+    QUIET=n
+    shift
+fi
+
+if test "$1" = "-vv"; then
+    QUIET=n
+
+    # Usage: $0 -h
+    invocation="$0 $@"
+    printf -- "%s\n" "invocation: $invocation" 1>&2
+
+    set -xv
+
+    shift
+fi
+
+export QUIET
+
+stdin_exists() {
+    # echo "$(readlink /proc/$$/fd/0)" | tvd
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+# A good default
+# : ${ONLY_WINDOW:="y"}
+# Use shackle instead
+: ${ONLY_WINDOW:="n"}
+
+AUTO_VERSION=n
+NEW_FILE=n
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    --) {
+        # echo "$@" | tv &>/dev/null
+        shift
+        break
+    }
+    ;;
+
+    "") { shift; }; ;;
+    -2|-vt100) {
+        MONOCHROME=y
+        shift
+    }
+    ;;
+
+    -nosettty) { # Make the window that appears the only window
+        export NO_SET_TTY=y
+        shift
+    }
+    ;;
+
+    # -kff) {
+    #     export KILL_FRAME_FIRST=y
+    #     shift
+    # }
+    # ;;
+
+    -o|-only) { # Make the window that appears the only window
+        export ONLY_WINDOW=y
+        shift
+    }
+    ;;
+
+    -noonly) {
+        export ONLY_WINDOW=n
+        shift
+    }
+    ;;
+
+    -a|-auto|auto-version) { # select version based on extension
+        AUTO_VERSION=y
+        shift
+    }
+    ;;
+
+    # Don't do the below or "sp sp" will not find the sp script
+    #pd) {
+    #    DISTRIBUTION=prelude
+    #    # f=c
+    #    shift
+    #}
+    #;;
+
+    #fr) {
+    #    DISTRIBUTION=frank
+    #    # f=c
+    #    shift
+    #}
+    #;;
+
+    #org) {
+    #    DISTRIBUTION=default
+    #    SOCKET="DEFAULT_org"
+    #    EMACS_VERSION=26
+    #    # f=c
+    #    shift
+    #}
+    #;;
+
+    #sp) {
+    #    DISTRIBUTION=spacemacs
+    #    # f=c
+    #    shift
+    #}
+    #;;
+
+    #dm|dem) {
+    #    DISTRIBUTION=doom
+    #    # f=c
+    #    shift
+    #}
+    #;;
+
+    -nf) {
+        NEW_FILE=y
+
+        last_arg="${@: -1}"
+        nf_dn="$(printf -- "%s" "$last_arg" | sed -n 's=\(.*/\).*=\1=p')"
+        nf_fp="$last_arg"
+
+        test -n "$nf_dn" && mkdir -p "$nf_dn"
+        touch "$nf_fp"
+
+        shift
+    }
+    ;;
+
+    +*:*) {
+        GOTO_LINE="$(p "$opt" | mcut -d'[+:]' -f2)"
+        GOTO_COLUMN="$(p "$opt" | mcut -d'[+:]' -f3)"
+
+        shift
+    }
+    ;;
+
+    +[0-9]*) {
+        GOTO_LINE="$(p "$opt" | mcut -d+ -f2)"
+        shift
+    }
+    ;;
+
+    +/*) { # pattern
+        # pattern="$(p "$opt" | mcut -d+/ -f2 | s chomp | qne)"
+        pattern="$(p "$opt" | sed 's=^+/==' | s chomp | qne)"
+
+        # This is usually a pattern which has been escaped for vim
+        # Therefore, we must unescape it.
+
+        shift
+    }
+    ;;
+
+    -cols) {
+        n_columns="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -s|-scratch) {
+        # Exporting is a sad hack
+        export GOTO_BUFFER="*scratch*"
+        # echo "$GOTO_BUFFER"
+        # exit
+        shift
+    }
+    ;;
+
+    -ac) {
+        #if test -z "$COLUMNS"; then
+        #    eval `resize`
+        #fi
+
+        # n_columns="$(bc <<< "scale=0;$COLUMNS / 80 + 1")"
+        n_columns="$(calc-best-n-columns)"
+        shift
+    }
+    ;;
+
+    # Don't do the below or "sp sp" will not find the sp script
+    #v) {
+    #    shift
+
+    #    # "tm -d" breaks stdin. Use -S
+    #    if stdin_exists; then
+    #        GOTO_LINE="$1"
+    #        GOTO_COLUMN="$2"
+    #    else
+    #        file="$1"
+    #        GOTO_LINE="$2"
+    #        GOTO_COLUMN="$3"
+    #    fi
+
+    #    if [ -n "$GOTO_COLUMN" ]; then
+    #        v -c "call cursor($GOTO_LINE,$GOTO_COLUMN)" "$file"
+    #    elif [ -n "$GOTO_LINE" ]; then
+    #        v +$GOTO_LINE "$file"
+    #    elif [ -n "$file" ]; then
+    #        v "$file"
+    #    else
+    #        # For piping into vim
+    #        v
+    #    fi
+
+    #    exit $?
+    #}
+    #;;
+
+    *) break;
+esac; done
+
+if test "$MONOCHROME" = "y"; then
+    # Deosn't seem to be working atm with screen-2color
+    export EMACS_TERM_TYPE=screen-2color
+    # export EMACS_TERM_TYPE=vt100
+fi
+
+if test "$ONLY_WINDOW" = "y"; then
+    # recenter is important for ecal, say
+    elisp+="(delete-other-windows)(recenter)"
+fi
+# echo "$elisp"
+
+print_err() {
+    ! test "$QUIET" = "y" && printf -- "%s" "$@" 1>&2
+
+    return 0
+}
+
+# echo "$opt"
+# exit 0
+
+if spacemacs_only && test "$1" = ia; then
+    shift
+    set -- fi "$@"
+fi
+
+if spacemacs_only && test "$1" = sa; then
+    shift
+    set -- sd "$@"
+fi
+
+if spacemacs_only && test "$1" = ka; then
+    shift
+    set -- k "$@"
+fi
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    sa|-sa|-startall|-start-all) {
+        set -x
+
+        # Disable these by default to save memory
+
+        # exordium is only on my cloud VPS
+        e -D exordium sd ` # Is having problems atm anyway `
+
+        # e -D scimax sd ` # working perfectly atm`
+        # e -D prelude sd ` # working perfectly atm`
+
+        # It's not working currently.
+        # e -D purcell sd
+
+        # Annoyingly, if this is not done synchronously, it won't work.
+        e sd
+
+        # e -D default sd &
+
+        # Server is not working for Frank's emacs
+        # e -D frank sd
+
+        # reserved for capturing tmux screenshots. I don't want capture
+        # to hang while M-x is happening in another emacs
+
+        # don't use a separate tmux server. Instead use the default
+        # server
+        # e -D default -s tmux sd &
+
+        #e -D default -s org sd &
+        # e -D default -s org sd
+        og sd
+        # dm sd
+
+        # e -D default -s magit sd
+        me sd
+
+        # pd sd
+
+        # pc sd
+        sp sd
+
+        # scimax is not working at the moment
+        # sc sd
+
+        # xr sd
+
+        # unbuffer spx & disown
+        # wait
+
+        # e -D spacemacs sd
+        # e -D spacemacs sd &
+
+
+        # e -D vanilla sd
+        # e -D spacemacs -s eww sd
+        # e -D default -s magit sd
+        # e -D default -s eww sd
+        # e -D default -s dired sd
+        shift
+
+        exit 0
+    }
+    ;;
+
+    ka|-ka|-killall|-kill-all) {
+        shift
+
+        signal="$1"; : ${signal:="INT"}
+        set -xv
+
+        {
+            e -D exordium k "$signal"
+            e -D prelude k "$signal"
+            e -D purcell k "$signal"
+            # e -D spacemacs k "$signal"
+            sp k "$signal"
+            e -D doom k "$signal"
+            e -D default k "$signal"
+            e -D frank k "$signal"
+            e -D scimax k "$signal" # scimax doesn't like to be killed
+
+            e -D default -s tmux k "$signal"
+            # e -D default -s org k "$signal"
+            og k "$signal"
+
+            e -D vanilla k "$signal"
+            # e -D spacemacs -s eww k "$signal"
+            e -D default -s magit k "$signal"
+            # e -D default -s eww k "$signal"
+            # e -D default -s dired k "$signal"
+
+            pgrep emacs | xargs kill -"$signal"
+        }
+        shift
+
+        exit 0
+    }
+    ;;
+
+    fa|-fa|-forall) {
+        shift
+
+        for d in e og me sp; do
+            eval "$d" "$@"
+        done
+
+        exit 0
+    }
+    ;;
+
+    qa|-qa|-quitall) {
+        {
+            # I don't want to start any servers. I only want to quit
+            # them if they are running.
+
+            # TODO Make it so I don't need unbuffer
+
+            unbuffer e -D exordium q
+            unbuffer e -D purcell q
+            unbuffer e -D prelude q
+            unbuffer e -D spacemacs q
+            unbuffer e -D default q
+            unbuffer e -D frank q
+            unbuffer e -D scimax q
+            unbuffer e -D default -s magit q
+
+            unbuffer e -D default -s tmux q
+            unbuffer e -D default -s org q
+
+            # e -D exordium c -e "(kill-emacs)"
+            # e -D prelude c -e "(kill-emacs)"
+            # e -D spacemacs c -e "(kill-emacs)"
+            # e -D default c -e "(kill-emacs)"
+            # e -D scimax c -e "(kill-emacs)"
+
+            # e -D vanilla q
+            # e -D spacemacs -s eww
+            # e -D default -s magit q
+            # e -D default -s eww q
+            # e -D default -s dired q
+
+            pgrep emacs | xargs kill
+        } &>/dev/null
+        shift
+
+        exit 0
+    }
+    ;;
+
+    ra|-ra|-restart-all) {
+        e -qa
+        e -sa
+    }
+    ;;
+
+    *) break;
+esac; done
+
+
+# I can import this
+: ${SOCKET:="DEFAULT"}
+
+if test "$1" = "-D"; then
+    DISTRIBUTION="$2"
+    shift
+    shift
+fi
+
+if test "$AUTO_VERSION" = "y"; then
+    # This isn't accurate, but whatever
+    last_arg="${@: -1}"
+
+    fn=$(basename "$last_arg")
+    ext="${fn##*.}"
+    mant="${mant%.*}"
+
+    case "$ext" in
+        org) {
+            SOCKET="DEFAULT_org"
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+        }
+        ;;
+
+        template) {
+            :
+        }
+        ;;
+
+        *) {
+            EMACS_USER_DIRECTORY="$MYGIT/spacemacs"
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+            SOCKET="SPACEMACS"
+            EMACS_VARIANT="SPACEMACS"
+        }
+    esac
+    :
+fi
+
+# Distribution
+case "$DISTRIBUTION" in
+    v|vanilla) # vanilla
+        {
+            SOCKET="VANILLA"
+            EMACS_VARIANT="VANILLA"
+            :
+        }
+        ;;
+
+    fr|frank)
+        {
+            # Getting errors with emacs26
+
+            #EMACS_VERSION=24
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+            EMACS_USER_DIRECTORY="$MYGIT/zwpdbh/emacs"
+            SOCKET="FRANK"
+            EMACS_VARIANT="FRANK"
+            :
+        }
+        ;;
+
+    xr|exordium) # exordium (for C++)
+        {
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+            EMACS_USER_DIRECTORY="$MYGIT/philippe-grenet/exordium"
+            SOCKET="EXORDIUM"
+            EMACS_VARIANT="EXORDIUM"
+        }
+        ;;
+
+    ei|emacs-live)
+        {
+            # uptimes is breaking startup on 24. Let me try with this
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+
+            EMACS_USER_DIRECTORY="$MYGIT/overtone/emacs-live"
+            SOCKET="EMACS-LIVE"
+            EMACS_VARIANT="EMACS-LIVE"
+            :
+        }
+        ;;
+
+    pc|purcell) # steve purcell
+        {
+            # Install evil to fix this. Automatically install evil if
+            # not available. My emacs configuration should be able to
+            # sit on top of any emacs distribution..
+            # exit 0
+
+            # It's meant to work for recent emacs versions.
+            # EMACS_VERSION=26
+
+            # I'm having problems with emacs 26 on purcell's so try 27
+            # Doesn't work. Try 24
+            # EMACS_VERSION=27
+
+            # uptimes is breaking startup on 24. Let me try with this
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+
+            EMACS_USER_DIRECTORY="$MYGIT/purcell/emacs.d"
+            SOCKET="PURCELL"
+            EMACS_VARIANT="PURCELL"
+            :
+        }
+        ;;
+
+    pu|prelude) # prelude
+        {
+            # lit "$VAR"
+            EMACS_USER_DIRECTORY="$MYGIT/bbatsov/prelude"
+            # SOCKET="PRELUDE"
+            SOCKET="prelude"
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+            EMACS_VARIANT="PRELUDE"
+            :
+        }
+        ;;
+
+    sc|scimax) # scimax
+        {
+            EMACS_USER_DIRECTORY="$MYGIT/jkitchin/scimax"
+
+            # I havn't figured out why scimax is setting the server name
+            # to user by itself. Roll with it.
+            SOCKET="user"
+
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+            EMACS_VARIANT="SCIMAX"
+            :
+        }
+        ;;
+
+    sp|sm|spacemacs) # spacemacs
+        {
+            EMACS_USER_DIRECTORY="$MYGIT/spacemacs"
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+            SOCKET="SPACEMACS"
+            EMACS_VARIANT="SPACEMACS"
+        }
+        ;;
+
+    dm|doom) # spacemacs
+        {
+            EMACS_USER_DIRECTORY="$MYGIT/hlissner/doom-emacs"
+            # EMACS_VERSION=26
+            # EMACS_VERSION=27
+            EMACS_VERSION=28
+            SOCKET="DOOM"
+            EMACS_VARIANT="DOOM"
+        }
+        ;;
+
+    d|default|*) # default
+        {
+            # Do not change things in here. It will break when
+            # non options appear after options
+            # SOCKET="DEFAULT"
+            :
+        }
+        ;;
+esac
+
+# lit "SOCKET: $SOCKET $$"
+
+# Choose emacs version
+case "$opt" in
+    -27) {
+        EMACS_VERSION=27
+
+        # 27 does not have --init-debug
+
+        # I have emacs27. If I want emacs25 features then I have to check
+        # out a copy of emacs25.
+
+        SOCKET="${SOCKET}_25"
+
+        # It's the same directory but a different socket
+        # EMACS_USER_DIRECTORY="${EMACS_USER_DIRECTORY}_$EMACS_VERSION"
+    }
+    ;;
+
+    -26) {
+        EMACS_VERSION=26
+        SOCKET="${SOCKET}_26"
+    }
+    ;;
+
+    *)
+esac
+
+if test "$1" = "-27"; then
+    shift
+fi
+
+if test "$1" = "-26"; then
+    shift
+fi
+
+eclog() {
+    # eval ARG=\${$i}
+
+    lit "$1: $2" >> /tmp/ec.txt
+    return 0
+}
+
+# -s Choose socket name. Append to distribution name.
+# magit, eww
+if test "$1" = "-s"; then
+    SOCKET="${SOCKET}_$2"
+
+    case $2 in
+        org) # org mode
+            {
+                EMACS_VERSION=26
+            }
+            ;;
+
+        *)
+    esac
+
+    shift
+    shift
+fi
+
+eclog EMACS_VERSION "$EMACS_VERSION"
+eclog EMACS_VARIANT "$EMACS_VARIANT"
+eclog INVOCATION "$0 $@"
+
+# || test "$EMACS_VARIANT" = "SCIMAX"
+
+EMACS_BIN=$SCRIPTS/emacs
+EMACSCLIENT_BIN=$SCRIPTS/emacsclient
+
+# if test "$EMACS_VERSION" = "27"; then
+#     export PATH="$HOME/local/bin:$PATH"
+#
+#     # EMACS_BIN=$HOME/local/bin/emacs
+#     EMACS_BIN=$HOME/local/emacs27/bin/emacs
+#     EMACSCLIENT_BIN=$HOME/local/bin/emacsclient
+#
+#     # lit "Using v25" 1>&2
+#     #SOCKET="${SOCKET}_27" # this is disabled because scimax forces the socket name
+#
+# elif test "$EMACS_VERSION" = "26" || test "$EMACS_VARIANT" = "SPACEMACS"; then
+#     export PATH="$HOME/local/emacs26/bin:$PATH"
+#
+#     # EMACS_BIN=$HOME/local/emacs26/bin/emacs
+#     EMACS_BIN=$HOME/local/emacs27/bin/emacs
+#     # EMACSCLIENT_BIN=$HOME/local/emacs26/bin/emacsclient
+#     EMACSCLIENT_BIN=$SCRIPTS/emacsclient
+#
+#     # This adds it on recursively so forget it at the moment. I don't
+#     # need the emacs24 version anyway
+#     # SOCKET="${SOCKET}_26"
+# else
+#     export PATH="/usr/bin:$PATH"
+# fi
+
+
+export EMACS_VARIANT
+export EMACS_VERSION
+
+export EMACS_USER_DIRECTORY
+export EMACS_BIN
+export EMACSCLIENT_BIN
+
+# This is evil. Use export instead
+# -fs Exact socket name
+# magit, eww
+if test "$1" = "-fs"; then
+    SOCKET="$2"
+
+    shift
+    shift
+fi
+
+FT_DETECT=n
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -nofile) {
+        # Do not treat the last argument as a file
+        # Useful in some scenarios
+        export NOFILE=y
+        shift
+    }
+    ;;
+
+    -e) {
+        elisp="$2$elisp"
+        shift
+        shift
+    }
+    ;;
+
+    +e|-a) {
+        elisp+="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -ed) {
+        elisp="$2$elisp(delete-frame)"
+        shift
+        shift
+    }
+    ;;
+
+    -f) {
+        elisp="($2)$elisp"
+        shift
+        shift
+    }
+    ;;
+
+    +f) {
+        elisp+="($2)"
+        shift
+        shift
+    }
+    ;;
+
+    -ci|-ic|-fi|-ei|-if) {
+        # : "${KILL_FRAME_FIRST:="y"}"
+
+        # elisp="(run-at-time \"5 sec\" nil #'call-interactively '$2)$elisp"
+
+        elisp="(call-interactively '$2)$elisp"
+        CLEAR=y
+        shift
+        shift
+    }
+    ;;
+
+    -ci|-ic|-fi|-ei|-if) {
+        # : "${KILL_FRAME_FIRST:="y"}"
+
+        elisp+="(call-interactively '$2)"
+        CLEAR=y
+        shift
+        shift
+    }
+    ;;
+
+    -cipsh) {
+        # : "${KILL_FRAME_FIRST:="y"}"
+
+        # Call interactively with parameters for shell
+        # Do not interpret options as symbols
+        shift
+        fun="$1"
+        shift
+
+        CMD="$(aqf-real "$@")"
+        : ${CMD:="$(aqf-real "$@")"}
+
+        elisp="(funcall-interactively '$fun $CMD)$elisp"
+
+        shift "$#"
+
+        # pl "$elisp"
+        # exit 1
+
+        CLEAR=y
+    }
+    ;;
+
+    -cia|-cip) {
+        shift
+        fun="$1"
+        shift
+
+        # : "${KILL_FRAME_FIRST:="y"}"
+
+        # ** TODO I need to provide =-cip= with additional options, such as =-E=
+
+        # elisp="(call-interactively-with-parameters '$fun $@)$elisp"
+        # elisp="(call-interactively '$fun t (vector $@))$elisp"
+
+        CMD="$(cmd-cip "$@")"
+        : ${CMD:="$(cmd-cip "$@")"}
+
+        # TODO I must find a way to run this after the frame has been created, instead of before
+        # emacs is crashing
+        # Perhaps put it on a timer
+        # sp -e "(funcall-interactively 'grep-app \"solrf\" \".tf\")"
+        # This also breaks mysteriously after 1 second, even after the frame has ended
+        # sp -e "(run-with-timer 1 nil (lambda () (funcall-interactively 'grep-app \"solrf\" \".tf\"))"
+        # If this breaks, then use sp-ic-x isntead
+        elisp="(funcall-interactively '$fun $CMD)$elisp"
+        # echo "$elisp"
+        # exit
+
+        shift "$#"
+
+        # p "$elisp" | tv &>/dev/null
+        CLEAR=y
+    }
+    ;;
+
+    +cia|+cip) {
+        shift
+        fun="$1"
+        shift
+
+        # : "${KILL_FRAME_FIRST:="y"}"
+
+        elisp+="(funcall-interactively '$fun $@)"
+        CLEAR=y
+    }
+    ;;
+
+    # Treat the next argument as the function name and the
+    # remaining arguments as string parameters
+    -ef) {
+        shift
+        fname="$1"
+        shift
+        CMD="$(cmdf "$@")"
+        shift "$#" # shift everything
+
+        elisp="($fname $CMD)$elisp"
+        # echo "$elisp"
+        # exit 0
+    }
+    ;;
+
+    +ef) {
+        shift
+        fname="$1"
+        shift
+        CMD="$(cmdf "$@")"
+        shift "$#" # shift everything
+
+        elisp+="($fname $CMD)"
+    }
+    ;;
+
+    -mn|-modename) {
+        shift
+        test -n "$1" || exit 1
+        modename="$1"
+        shift
+    }
+    ;;
+
+    -sht) {
+        shift
+        : ${modename:="$1"}
+        modename=" \"$modename\""
+        script="$(nsfa "$@")"
+        elisp="(my/term \"$script\" t $modename)$elisp"
+        shift "$#"
+    }
+    ;;
+
+    # Don't use ansi-term
+    -shE|-E) {
+        shift
+        test -n "$1" || exit 1
+        script="$(nsfa -E "$1" t)"
+        : ${modename:="$1"}
+        shift
+        modename=" \"$modename\""
+
+        bufname="$(printf -- "%s" "term $script" | slugify)"
+
+        elisp="(my/term \"$script\" t $modename)$elisp"
+        # echo "$elisp" | tvd
+    }
+    ;;
+
+    # Don't use ansi-term
+    -sh) {
+        shift
+        : ${modename:="$1"}
+        modename=" \"$modename\""
+        script="$(nsfa "$@")"
+        # bufname="$(p ansi-term "$@" | slugify)"
+        bufname="$(p term "$@" | slugify)"
+
+        # elisp="(ansi-term \"$script\" \"$bufname\")$elisp"
+        elisp="(my/term \"$script\" t $modename)$elisp"
+        shift "$#"
+    }
+    ;;
+
+    # Acts like -e in that it doesn't consume the remaining arguments
+    -she) {
+        shift
+        : ${modename:="$1"}
+        modename=" \"$modename\""
+        shift
+        elisp="(my/term $modename t $modename)$elisp"
+    }
+    ;;
+
+    +sb) {
+        elisp="(switch-to-buffer $(aqf "$2"))$elisp"
+        shift
+        shift
+    }
+    ;;
+
+    -eid) {
+        elisp="(call-interactively '$2)$elisp(delete-frame)"
+        shift
+        shift
+    }
+    ;;
+
+    +eid) {
+        elisp+="(call-interactively '$2)(delete-frame)"
+        shift
+        shift
+    }
+    ;;
+
+    -df|+df) {
+        elisp+="(delete-frame)"
+        shift
+    }
+    ;;
+
+
+    -h) {
+        elisp="(describe-function '$2)$elisp"
+        shift
+        shift
+    }
+    ;;
+
+    +h) {
+        elisp="(describe-function '$2)"
+        shift
+        shift
+    }
+    ;;
+
+    +wbdf) {
+        ON_BUFKILL_DELFRAME_BUTTER_TO_STDOUT=y
+        tf_buffer_path="$(odn ux tf path || echo /dev/null)"
+        elisp+="(on-kill-write-and-close-frame $(aqf "$tf_buffer_path"))"
+        shift
+    }
+    ;;
+
+    +ofq) {
+        ON_DELFRAME_EVAL_TO_STDOUT="$2"
+        tf_buffer_path="$(odn ux tf path | ds ofq || echo /dev/null)"
+        elisp+="(on-frame-quit-write $(aqf "$tf_buffer_path" "$ON_DELFRAME_EVAL_TO_STDOUT"))"
+        shift
+        shift
+    }
+    ;;
+
+    +ooq) {
+        # This assumes stdin and a buffer which is killed
+        # I need a way to write on frame kill, rather than buffer kill
+
+        ON_DELFRAME_EVAL_TO_STDOUT="$2"
+        tf_buffer_path="$(odn ux tf path || echo /dev/null)"
+        elisp+="(on-kill-write-and-close-frame $(aqf "$tf_buffer_path" "$ON_DELFRAME_EVAL_TO_STDOUT"))"
+        shift
+        shift
+    }
+    ;;
+
+    -gd) {
+        elisp="(find-function '$2)$elisp"
+        shift
+        shift
+    }
+    ;;
+
+    +gd) {
+        elisp+="(find-function '$2)"
+        shift
+        shift
+    }
+    ;;
+
+    -aft) {
+        # FT_DETECT=y
+        # This must happen inline
+        elisp="(detect-language-set-mode)$elisp"
+        shift
+    }
+    ;;
+
+    ## Need to be able to select a filetype
+    +aft) {
+        # FT_DETECT=y
+        # This must happen inline
+        elisp+="(detect-language-set-mode)"
+        shift
+    }
+    ;;
+
+    -noaft) {
+        FT_DETECT=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+last_arg="${@: -1}"
+if test "$#" -gt 0 && test -e "$last_arg"; then
+    last_arg_path="$last_arg"
+fi
+
+if test -n "$elisp"; then
+    elisp="(message (str (frame-terminal)))$elisp"
+fi
+
+# This check is needed because e calls itself
+if test -n "$elisp"; then
+    printf -- "%s" "$elisp" | ds -s elast
+fi
+
+# The only way to prevent emacs using a socket, even a default one
+if test "$1" = "-S"; then
+    SOCKET=
+
+    shift
+fi
+
+debug_mode_enabled() {
+    case "$-" in
+        *x*) true;;
+        *v*) true;;
+        *) false;;
+    esac
+}
+
+
+export SERVER_NAME="$SOCKET"
+
+# This is a must
+export SOCKET
+
+if test "$CLEAR" = "y"; then
+   elisp+="(recenter-top-bottom)"
+fi
+
+# The options should be provided in this order, but they also must
+# happen inline, so I can't do it this way
+if test "$FT_DETECT" = "y"; then
+    elisp+="(detect-language-set-mode)"
+fi
+
+#if test "$ON_BUFKILL_DELFRAME_BUTTER_TO_STDOUT" = "y"; then
+#    tf_buffer_path="$(odn ux tf path || echo /dev/null)"
+#    # elisp+="(on-kill-write-and-close-frame $(aqf "$tf_buffer_path" "(buffer-string)"))"
+#    # elisp+="(on-kill-write-and-close-frame $(aqf "$tf_buffer_path") $(aqf "(buffer-string)"))"
+#    elisp+="(on-kill-write-and-close-frame $(aqf "$tf_buffer_path"))"
+#fi
+#
+#if test -n "$ON_DELFRAME_EVAL_TO_STDOUT"; then
+#    tf_buffer_path="$(odn ux tf path || echo /dev/null)"
+#    elisp+="(on-kill-write-and-close-frame $(aqf "$tf_buffer_path" "$ON_DELFRAME_EVAL_TO_STDOUT"))"
+#fi
+
+# unset TTY # Can't do this without breaking ead
+# echo "$TTY"
+if ! test "$NO_SET_TTY" = "y"; then
+    : ${TTY:="$(tm-tty)"}
+fi
+
+# echo "$TTY"
+# exit 0
+
+# Do not do this because I like stdin
+# exec <$TTY
+
+export TTY
+
+## This doesn't fix the interactive command not appearing anyway.
+## I need to do more. I need to change the current frame or something.
+
+# This ensures that the following 2 use-cases work:
+# ag-dir /home/shane/glossaries
+# sp -ic my-counsel-ag .  # This appears to still have problems
+
+if ( printf -- "%s\n" "$elisp" | grep -q -P "call-interactively"; ); then
+    # The problem is a race condition to do with the buffer being ready
+    if test "$#" -gt 0 && test -e "$last_arg_path"; then
+        # Not sure what to do here to ensure it works.
+        # The last arg sets the currect directory as it opens a file
+        # echo "$# $last_arg_path" | tvd
+        :
+
+        # Open the file in advance
+        # Don't background it because the file must open first. Can't
+        # speed it up sadly.
+        x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))" \"$last_arg_path\")" -e KILL_FRAME -c m &>/dev/null
+
+        # unbuffer emacsclient -a "" -t -s /home/shane/.emacs.d/server/SPACEMACS -e "(kill-frame)" &>/dev/null
+    else
+        # call-interactively-with-parameters
+        # unset KILL_FRAME_FIRST
+        # ub e c --eval "(kill-frame)" &>/dev/null
+        # echo "killing frame" 1>&2
+        # e c --eval "(kill-frame)"
+        # emacsclient -a "" -t -s /home/shane/.emacs.d/server/SPACEMACS -e "(progn (read-string \"ntehonut\")(kill-frame))"
+
+        # This is awful but it works to fix call-interactively.
+        {
+        x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m &>/dev/null &
+        sleep 0
+        }
+    fi
+fi
+
+# this works now
+# echo hi | tspv -fa sp +1:1
+if stdin_exists; then
+    # ls -la /proc/$$/fd | tv &>/dev/null
+
+    if test -n "$n_columns"; then
+        n_columns=$((n_columns-1))
+
+        if test "$n_columns" -gt "0"; then
+            elisp="$elisp(delete-other-windows)(dotimes (i $n_columns)(split-window-right))(balance-windows)(follow-mode)"
+        fi
+    fi
+
+    # set -x
+
+    tempfile="$(odn mktemp emacs-stdin-$USER.XXXXXXX --tmpdir | ds e-stdin-file)"
+    cat > "$tempfile"
+    # cat - > "$tempfile"
+
+    if [ -n "$GOTO_LINE" ] && [ -n "$GOTO_COLUMN" ]; then
+        elisp+="(goto-line $GOTO_LINE)(move-to-column $GOTO_COLUMN)"
+    elif [ -n "$GOTO_LINE" ] && ! [ -n "$GOTO_COLUMN" ]; then
+        # client_ops+=" +$GOTO_LINE "
+        elisp+="(goto-line $GOTO_LINE)"
+    fi
+
+    new_arg_string="--eval $(a- q "(progn ($find_file_command $(a- qf "$tempfile"))(set-visited-file-name nil)(rename-buffer $(a- qf "*stdin*") t)$elisp)")"
+
+    # lit "$new_arg_string"
+    # exit 0
+
+    # This is important to prevent infinite loop
+    exec <"$TTY"
+
+    # echo "$new_arg_string" | tv
+    exec 3>&1
+    exec 4>&2
+    exec 1>&0
+    exec 2>&0
+
+    eval "e c $new_arg_string"
+    ret="$?"
+    exec 1>&3
+    exec 2>&4
+    # echo hi | tv
+
+    if test -f "$tf_buffer_path"; then
+        cat "$tf_buffer_path"
+    fi
+
+    exit "$ret"
+else
+    :
+    # ls -la /proc/$$/fd | tv &>/dev/null
+fi
+
+
+. $HOME/scripts/libraries/bash-library.sh
+
+# quoted_arguments()
+
+# exec 2>/dev/null
+
+#echo "'$1'"
+#exit 0
+
+if test "$sn" = "ec"; then
+    f=c
+elif test "$sn" = "ecn"; then
+    f=c
+elif [ -n "$1" ] && [ -e "$1" ] && ! [ "$1" == c ]; then
+    case "$1" in
+        c|running) {
+            echo "$1" is a file. opening 1>&2
+        }
+        ;;
+    esac
+
+    # e c is not trying to open a directory named c, usually.
+    f=c
+elif [ -z "$f" ]; then
+    f="$1"
+    shift
+fi
+
+eclog OP "$f"
+
+eclog EMACS_USER_DIRECTORY "$EMACS_USER_DIRECTORY"
+eclog SERVER_NAME "$SERVER_NAME"
+
+export EMACS_USER_DIRECTORY
+export SERVER_NAME
+
+# set -xv
+# PS4='+	$0	${LINENO}	 ' bash -x "$@"
+
+# echo "$f"
+# exit
+# echo hi
+case "$f" in
+    sdd) {
+        e sd -d "$@"
+        exit 0
+    }
+    ;;
+
+    sd|start-daemon) # start daemon
+        {
+            while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+                "") { shift; }; ;;
+                -d) {
+                    QUIET=n
+                    DEBUG_DAEMON=y
+                    shift
+                    shift
+                }
+                ;;
+
+                *) break;
+            esac; done
+
+        CMD="$(cmd "$@")"
+
+        # CMD="$(quoted_arguments $@)"
+
+        : ${SOCKET:="DEFAULT"}
+
+        ! test "$QUIET" = "y" && print_err "Boostrapping emacs daemon $SOCKET... "
+
+        # This appears no not work. See below.
+        # CMD="$CMD -e $(aqf "(try (run-hooks 'my-daemon-start-hook)(delete-frame))")"
+
+        (
+
+            # I haven't figured out why scimax is not setting the server name
+            # properly
+
+            # ! debug_mode_enabled && exec &>/dev/null
+            # Not sure why it's not working
+            test "$QUIET" = "y" && exec &>/dev/null
+
+            # lit "$SOCKET" 1>&2
+
+            # lit "$EMACS_USER_DIRECTORY"
+            # lit "$SERVER_NAME"
+
+            export EMACS_VERSION
+            # echo "$CMD"
+            # exit 0
+
+            if [ -n "$SOCKET" ]; then
+                e running && exit 0
+
+                if test "$DEBUG_DAEMON" = "y"; then
+                    # eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET $CMD"
+                    eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -ta '' -s ~/.emacs.d/server/$SOCKET $CMD"
+                else
+                    # Not sure if emacsclient even needs -t when starting the daemon
+                    # Or perhaps I need -c
+                    eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET $CMD"
+                fi
+
+                # not possible
+                # sp -v sd --debug-init
+                # not possible
+                # eval "TERM=$EMACS_TERM_TYPE $EMACS_BIN --daemon -nta '' -s ~/.emacs.d/server/$SOCKET $CMD"
+            else
+                e running && exit 0
+
+                if test "$DEBUG_DAEMON" = "y"; then
+                    eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -ta '' $CMD"
+                else
+                    eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -nta '' $CMD"
+                fi
+            fi
+        )
+
+        # This is how I'm running the hook. This works.
+        unbuffer e -e "(progn (try (run-hooks 'my-daemon-start-hook))(try (delete-frame)))" &>/dev/null
+        # e -e "(force (run-hooks 'my-daemon-start-hook)(delete-frame))"
+
+        ! test "$QUIET" = "y" && print_err "server now running."
+        exit 0
+    }
+    ;;
+
+    fs|-fs|-fixscratch|fixscratch) {
+        $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET -e "(get-buffer-create $(aqf-nice "*scratch*"))"
+        e -s
+        exit 0
+    }
+    ;;
+
+    kaf|kof|-kof|-kill-other-frames|-kill-all-frames) {
+        $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET -e "(progn (kill-other-clients t))"
+        e -s
+        exit 0
+    }
+    ;;
+
+    running) { # test running
+        # lit "SOCKET: $SOCKET $$"
+        # lit "server_name: $SERVER_NAME"
+        # lit "dir: $EMACS_USER_DIRECTORY"
+        # exit 0
+        # open a new emacs window then quickly close it, returning true on success. If no emacs server exists, the alternate editor is /bin/false, which returns false.
+        # test "$QUIET" = "y" && exec &>/dev/null
+        # echo $SOCKET $EMACSCLIENT_BIN
+        # exit 0
+
+        if [ -n "$SOCKET" ]; then
+            # lit "hassocket"
+            # unbuffer SERVER_NAME=\"$SERVER_NAME\" EMACS_USER_DIRECTORY=\"$EMACS_USER_DIRECTORY\" $EMACSCLIENT_BIN -nw -a false -e '(delete-frame)' -s ~/.emacs.d/server/$SOCKET ) &>/dev/null
+
+            $EMACSCLIENT_BIN -a false -e 't' -s ~/.emacs.d/server/$SOCKET &>/dev/null
+
+            # This way hangs now if unbuffer is used instead of a real
+            # terminal
+            # ( unbuffer $EMACSCLIENT_BIN -nw -a false -s ~/.emacs.d/server/$SOCKET -e '(delete-frame)' )
+        else
+            # ( unbuffer $EMACSCLIENT_BIN -nw -a false -e '(delete-frame)' )
+
+            $EMACSCLIENT_BIN -a false -e 't' &>/dev/null
+        fi
+
+        exit $?
+
+    }
+    ;;
+
+    byte-compile) {
+        dir="$1"; : ${dir:="~/.emacs.d"}
+        dir="$(eval lit "$dir")" # expand
+
+        $EMACS_BIN -batch -eval "(byte-recompile-directory (expand-file-name $(a- qf "$dir")) 0)"
+        exit $?
+    }
+    ;;
+
+    byte-compile-force) {
+        dir="$1"; : ${dir:="~/.emacs.d"}
+        dir="$(eval lit "$dir")" # expand
+
+        cd "$dir"
+
+        find . -path '*.el' | while read line; do { cd `dirname "$line"`; emacs -Q --batch -L . -f batch-byte-compile "$line"; } done
+
+        exit $?
+    }
+    ;;
+
+    # Not to be confused with 'ra' (restart all)
+    -arf|arf|rfa|-rfa|-refresh-all) {
+        for d in sp pc og e pd; do
+            $d c -e "(package-refresh-contents)(revert-and-quit-emacsclient-without-killing-server)"
+        done
+
+        exit $?
+    }
+    ;;
+
+    -ua|ua|-uninstall-all) {
+        for d in sp pc og me e pd xr; do
+            # Can't have a while loop nested in a for loop without
+            # using a subshell
+            (
+            while [ $# -gt 0 ]; do pkg_name=$1
+                # package-refresh-contents
+                echo "$d (my-delete-package ...) $pkg_name" 1>&2
+
+                $d c -e "$pre_cmd(ignore-errors (my-delete-package '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+
+                cat1 $EMACSD/packages.txt | sed "/$pkg_name/d" | sponge $EMACSD/packages.txt
+
+                shift
+            done
+            )
+        done
+
+        exit $?
+    }
+    ;;
+
+    -ria|ria|-reinstall-all) {
+        # Example
+        # e -D prelude -i traad
+        # e -D spacemacs -i traad
+        # e -D scimax -i traad
+        # e -i traad
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -r) {
+                pre_cmd="(package-refresh-contents)"
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        for d in sp pc og me e pd xr; do
+            # Can't have a while loop nested in a for loop without
+            # using a subshell
+            (
+            while [ $# -gt 0 ]; do pkg_name=$1
+                # package-refresh-contents
+                echo "$d (package-install ...) $pkg_name" 1>&2
+
+                $d c -e "$pre_cmd(ignore-errors (package-reinstall '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+
+                echo "$pkg_name" | append-uniq $EMACSD/packages.txt
+
+                shift
+            done
+            )
+        done
+
+        exit $?
+    }
+    ;;
+
+    ial) {
+        for d in sp pc og e me pd xr; do
+            while [ $# -gt 0 ]; do pkg_name=$1
+                echo "$d (lsp-install-server ...) $pkg_name" 1>&2
+                # This doesn't work because the completing-read function uses a collection of objects, not strings
+                $d c -e "$pre_cmd(ignore-errors (lsp--install-server-internal (lsp-get-server-for-install $(aqf "$pkg_name"))))(revert-and-quit-emacsclient-without-killing-server)"
+                shift
+            done
+        done
+
+        echo "$pkg_name" | append-uniq $EMACSD/lsp-servers.txt
+    }
+    ;;
+
+    -ai|ai|ia|-ia|-install-all) {
+        # Example
+        # e -D prelude -i traad
+        # e -D spacemacs -i traad
+        # e -D scimax -i traad
+        # e -i traad
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -r) {
+            pre_cmd="(ignore-errors (package-refresh-contents))"
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        for d in sp pc og e me pd xr; do
+            # Can't have a while loop nested in a for loop without
+            # using a subshell
+            (
+            while [ $# -gt 0 ]; do pkg_name=$1
+                # package-refresh-contents
+                echo "$d (package-install ...) $pkg_name" 1>&2
+
+                $d c -e "$pre_cmd(ignore-errors (package-install '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+
+                # Do it twice because it fails the first time
+                # $d c -e "$pre_cmd(ignore-errors (package-install '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+
+                echo "$pkg_name" | append-uniq $EMACSD/packages.txt
+
+                shift
+            done
+            )
+        done
+
+        exit $?
+    }
+    ;;
+
+    fi|-fi|fast-install) {
+        # Example
+        # e -D prelude -i traad
+        # e -D spacemacs -i traad
+        # e -D scimax -i traad
+        # e -i traad
+
+        if yn "refresh contents?"; then
+            e c -e "(ignore-errors (package-refresh-contents))"
+        fi
+
+        while [ $# -gt 0 ]; do pkg_name=$1
+
+            # Do it twice because it fails the first time
+            e c -e "(ignore-errors (package-install '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+            # e c -e "(package-install '$pkg_name)(revert-and-quit-emacsclient-without-killing-server)"
+
+            echo "$pkg_name" | append-uniq $EMACSD/packages.txt
+
+            shift
+        done
+
+        exit $?
+    }
+    ;;
+
+    i|-i|package-install) {
+        # Example
+        # e -D prelude -i traad
+        # e -D spacemacs -i traad
+        # e -D scimax -i traad
+        # e -i traad
+
+        # This doesn't work
+        #$EMACS_BIN -batch -eval "(package-install \"$2\")"
+        # $EMACS_BIN -batch -eval "(package-initialize)(package-install \"$2\")"
+
+        # emacs --batch -l ~/.emacs.d/init.el
+        # This is a better way to load lisp files
+
+        # (require 'package)
+
+
+        # Package to be installed
+        pkg_name=$1
+
+        # Elisp script is created as a temporary file, to be removed after installing
+        # the package
+        elisp_script_name=$(mktemp /tmp/emacs-pkg-install-el.XXXXXX)
+        elisp_code="
+;; Install package from command line. Example:
+;;
+;;   $ emacs --batch --expr \"(define pkg-to-install 'smex)\" -l emacs-pkg-install.el
+;;
+(require 'package)
+(package-initialize)
+(add-to-list 'package-archives '(\"melpa\" . \"https://melpa.org/packages/\"))
+(add-to-list 'package-archives '(\"marmalade\" . \"https://marmalade-repo.org/packages/\"))
+(add-to-list 'package-archives '(\"melpa-stable\" . \"http://stable.melpa.org/packages/\") t)
+(add-to-list 'package-pinned-packages '(cider . \"melpa-stable\") t)
+
+;; Fix HTTP1/1.1 problems
+(setq url-http-attempt-keepalives nil)
+
+(package-refresh-contents)
+
+(package-install pkg-to-install)"
+
+        echo "$elisp_code" > $elisp_script_name
+
+        # if [ $# -ne 1 ]
+        # then
+          # echo "Usage: `basename $0` <package>"
+          # exit 1
+        # fi
+
+        $EMACS_BIN --batch --eval "(defconst pkg-to-install '$pkg_name)" -l $elisp_script_name
+
+        # Remove tmp file
+        rm "$elisp_script_name"
+
+        exit $?
+    }
+    ;;
+
+    p|packages) {
+        e c -e "(list-packages)"
+        exit $?
+    }
+    ;;
+
+    -getval) {
+        val="$1"
+        shift
+
+        unset TTY
+        export NO_SET_TTY=y
+
+        tf_thing="$(ux tf thing || echo /dev/null)"
+        trap "rm \"$tf_thing\" 2>/dev/null" 0
+
+        unbuffer e -nosettty c -n -e "(write-string-to-file (str $val) $(aqf-nice "$tf_thing"))" &>/dev/null
+
+        cat "$tf_thing"
+        exit $?
+    }
+    ;;
+
+    -flash) {
+        e c -n -e "(mode-line-bell-flash)"
+        exit $?
+    }
+    ;;
+
+    q|quit) {
+        # printf -- "%s\n" "$SOCKET" 2>/dev/null
+
+        if e running; then
+            e c -e "(kill-emacs)"
+            printf -- "%s\n" "$SOCKET is dead" 1>&2
+        else
+            printf -- "%s\n" "$SOCKET not running" 1>&2
+        fi
+
+        # if [ -n "$SOCKET" ]; then
+        #     if test -f ~/.emacs.d/server/$SOCKET; then
+        #         # This should forward the socket
+        #     fi
+        # fi
+
+        # exec 2>&3
+    }
+    ;;
+
+    r|restart) {
+        timeout 5 unbuffer e q
+        e k
+        e sd
+    }
+    ;;
+
+    st|stack-trace) {
+        e k SIGUSR2
+
+        # if [ -n "$SOCKET" ]; then
+    }
+    ;;
+
+    k|kill) {
+        signal="$1"; : ${signal:="INT"}
+
+        # printf -- "%s\n" "$SOCKET" 2>/dev/null
+
+        exec 3>&2
+        exec 1>/dev/null
+        exec 2>/dev/null
+
+        # lit "$SOCKET"
+        if [ -n "$SOCKET" ]; then
+            {
+                lc_socket="$(lit "$SOCKET" | sed 's/_.*$//' | c lc)"
+                COLUMNS=10000 ps -ef |grep "e -D $lc_socket"
+
+                u ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/$SOCKET\$/p"
+            } | field 2 | {
+                pids="$(cat)"
+                lit "$pids" | xargs kill -"$signal"
+                #sleep 1
+                #lit "$pids" | xargs kill -9
+            }
+        else
+            ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/DEFAULT\$/p" | field 2 | {
+                pids="$(cat)"
+                lit "$pids" | xargs kill -"$signal"
+                lit "$pids" | xargs kill -9
+            }
+        fi
+
+        exec 2>&3
+
+        print_err "$SOCKET is dead"
+    }
+    ;;
+
+    # Use xc instead to start the client. This doesn't yet select the
+    # correct distribution
+    x-gui-disabled) { # x|gui) { # start x11 gui version
+        if test "$1" = "-e"; then
+            # Change parameter 1
+            set -- "--exec" "${@:2}"
+        fi
+
+        CMD="$(cmd "$@")"
+
+        # exec &>/dev/null
+
+        # CMD="$(quoted_arguments $@)"
+
+        # export SERVER_NAME="$SERVER_NAME"
+        # export EMACS_USER_DIRECTORY="$EMACS_USER_DIRECTORY"
+
+        case $1 in
+            n) {
+                $EMACS_BIN $NOTES
+                exit $?
+            }
+            ;;
+
+            *)  {
+                print_err "$EMACS_BIN $CMD"
+                # printf -- "%s\n" "/usr/bin/emacs $@"
+                # exit 0
+                # Need to finish q so elisp command is properly quoted.
+                # lit "$EMACS_BIN $CMD"
+                eval "$EMACS_BIN $CMD"
+                exit $?
+            }
+            ;;
+        esac
+
+        eval "$EMACS_BIN $CMD"
+        exit $?
+    }
+    ;;
+
+    c|-x|x|e|client) { # start emacs client
+        # while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        #     "") { shift; }; ;;
+        #     -d) {
+        #         QUIET=n
+        #         DEBUG_DAEMON=y
+        #         shift
+        #         shift
+        #     }
+        #     ;;
+
+        #     *) break;
+        # esac; done
+
+        # Unfortunately, I have to disable starting the server
+        # automatically until the tmux script is very stable.
+
+        if ! e running; then
+            if test "$DISTRIBUTION" = spacemacs; then
+                echo "Can't start $DISTRIBUTION server while tm is unstable"
+                exit 1
+            else
+                echo "Can't start $DISTRIBUTION. Trying spacemacs"
+                DISTRIBUTION=spacemacs e c "$@"
+                exit $?
+            fi
+        fi
+
+        if test "$USEGUI" = "y"; then
+            f=x
+        fi
+
+        if test "$f" = "x" || test "$f" = "-x"; then
+            client_ops="-c " # gui -x
+        else
+            client_ops="-t "
+        fi
+
+        # Make these options do something
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -l|-line) {
+                GOTO_LINE="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -c|-col|-column) {
+                GOTO_COLUMN="$2"
+                shift
+                shift
+            }
+            ;;
+
+            +*:*) {
+                GOTO_LINE="$(p "$opt" | mcut -d'[+:]' -f2)"
+                GOTO_COLUMN="$(p "$opt" | mcut -d'[+:]' -f3)"
+
+                shift
+            }
+            ;;
+
+            +[0-9]*) {
+                GOTO_LINE="$(p "$opt" | mcut -d+ -f2)"
+                shift
+            }
+            ;;
+
+            +/*) { # pattern
+                # pattern="$(p "$opt" | mcut -d+/ -f2 | s chomp | qne)"
+                pattern="$(p "$opt" | sed 's=^+/==' | s chomp | qne)"
+
+                shift
+            }
+            ;;
+
+            -x) {
+                # Erase the -t. Add a -c.
+                client_ops+="-c "
+                shift
+            }
+            ;;
+
+            -e|--eval) {
+                # elisp+="$2"
+                elisp="$2$elisp"
+                # p "$elisp" | tv
+                shift
+                shift
+            }
+            ;;
+
+            -cols) {
+                n_columns="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -ac|-colvim) {
+                if test -z "$COLUMNS"; then
+                    eval `resize`
+                fi
+
+                # eval `resize`
+                # eval `tm-resize`
+                n_columns="$(bc <<< "scale=0;$COLUMNS / 80 + 1")"
+                n_columns=$((n_columns-1))
+
+                shift
+            }
+            ;;
+
+            -eid) {
+                elisp="(call-interactively '$2)$elisp(delete-frame)"
+                shift
+                shift
+            }
+            ;;
+
+            -ei) {
+                elisp="(call-interactively '$2)$elisp"
+                shift
+                shift
+            }
+            ;;
+
+            # Treat the next argument as the function name and the
+            # remaining arguments as string parameters
+            -ef) {
+                shift
+                fname="$1"
+                shift
+                CMD="$(cmdf "$@")"
+                shift "$#" # shift everything
+
+                elisp="($fname $CMD)$elisp"
+                # echo "$elisp"
+                # exit 0
+            }
+            ;;
+
+            -sh) {
+                shift
+                # elisp="(ansi-term \"$(nsfa "$@")\")$elisp"
+                elisp="(my/term \"$(nsfa "$@")\" t)$elisp"
+                shift "$#"
+            }
+            ;;
+
+            -df) {
+                elisp+="(delete-frame)"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if test -n "$n_columns"; then
+            n_columns=$((n_columns-1))
+
+            if test "$n_columns" -gt "0"; then
+                elisp="$elisp(delete-other-windows)(dotimes (i $n_columns)(split-window-right))(balance-windows)(follow-mode)"
+            fi
+        fi
+
+        # printf -- "%s\n" "$SOCKET" 1>&2
+
+        # A second chance to change the SOCKET or add to it for. Also, for ec
+        if test "$1" = "-s"; then
+            SOCKET="${SOCKET}_$2"
+
+            shift
+            shift
+        fi
+
+        if test "$USEGUI" = "y"; then
+            elisp="(toggle-scroll-bar -1)$elisp"
+        fi
+
+        #if [ -f "$1" ] && ! [ -n "$2" ]; then # one file argument
+        if [ -n "$1" ] && [ -f "$1" ] && [ "$#" -eq 1 ]; then # one file argument
+            file_path="$1"
+            file_path="$(realpath "$file_path")"
+            # file_path="$(p "$file_path" | qne)"
+
+            # For some reason, I need to sit and then manually manually run the hooks
+            elisp="($find_file_command $(aqf "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
+            shift
+
+        # elif [ -d "$1" ] && ! [ -n "$2" ]; then
+        elif [ -n "$1" ] && [ "$#" -eq 1 ] && [ -d "$1" ]; then # one directory argument
+            file_path="$1"
+            file_path="$(realpath "$file_path")"
+            # file_path="$(p "$file_path" | qne)"
+            elisp="(dired $(aqf "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
+            shift
+
+        elif [ -n "$1" ] && [ -f "$1" ] && [ "$#" -eq 3 ] && tt -i "$2" && tt -i "$3"; then # one file argument and 2 int arguments
+            file_path="$1"
+            file_path="$(realpath "$file_path")"
+            # file_path="$(p "$file_path" | qne)"
+            elisp="($find_file_command $(aqf "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
+
+            GOTO_LINE="$2"
+            GOTO_COLUMN="$3"
+            shift
+            shift
+            shift
+
+        elif lit "$1" | grep -q -P '^[a-zA-Z0-9_.-]+\.[a-zA-Z0-9_-]+$' && ! [ -f "$1" ]; then # one argument that looks like a file name (because it has an extension)
+            # If it looks like a path name
+
+            # I should really do the touch in elisp but not actually
+            # create until save
+            file_path="$1"
+            file_path="$(realpath "$file_path")"
+            # The interactive version of find-file doesn't need the path
+            # to exist. Do I actually need to touch this? No I just
+            # tested. I do not.
+            # touch "$file_path"
+            # file_path="$(p "$file_path" | qne)"
+            elisp="($find_file_command $(aqf "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
+            shift
+
+        elif test -n "$1"; then # one argument
+            :
+
+        fi
+
+        # Ensure it's always created? I'm not sure if this works
+        # It doesn't work when opening TODO
+        # Not sure if this will fix it
+        elisp+="(get-buffer-create $(aqf-nice "*scratch*"))"
+
+        # This fixes it
+        # emacsclient -nta '' -s ~/.emacs.d/server/SPACEMACS -e "(get-buffer-create $(aqf-nice "*scratch*"))"
+
+        if [ -n "$GOTO_BUFFER" ]; then
+            elisp+="(switch-to-buffer $(aqf "$GOTO_BUFFER"))"
+            # ns "$elisp"
+            # exit
+        fi
+
+        if [ -n "$pattern" ]; then
+            elisp+="(goto-char (point-min))(search-forward $(aqf "$pattern"))"
+        elif [ -n "$GOTO_LINE" ] && [ -n "$GOTO_COLUMN" ]; then
+            elisp+="(goto-line $GOTO_LINE)(move-to-column $GOTO_COLUMN)"
+        elif [ -n "$GOTO_LINE" ] && ! [ -n "$GOTO_COLUMN" ]; then
+            # client_ops+=" +$GOTO_LINE "
+            elisp+="(goto-line $GOTO_LINE)"
+        fi
+
+        if [ -n "$elisp" ]; then
+            elispsh="-e $(aqf "(progn (ignore-errors $elisp))")"
+            # echo "$elispsh"
+            # exit 0
+        fi
+
+        lit "$elispsh" | ds -s elispsh
+
+        # lit "$elispsh" | tv
+        # exit 0
+
+        CMD="$(cmd "$@")"
+
+        # CMD="$(quoted_arguments $@)"
+
+        export EMACS_USER_DIRECTORY
+        # export SERVER_NAME
+
+        # lit "$SOCKET"
+        # lit "$SERVER_NAME"
+        # lit "$EMACSCLIENT_BIN"
+        # lit "$EMACS_USER_DIRECTORY"
+        # exit 0
+        # exit 0
+
+        if [ -n "$SOCKET" ]; then
+            ! e running && ( lit "emacs ~ Starting $SOCKET server" 1>&2; e sd )
+
+            new_cmd="TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -a '' $client_ops -s ~/.emacs.d/server/$SOCKET $elispsh $CMD"
+            # lit "$new_cmd"
+
+            exec 3>&1
+            exec 4>&2
+            exec 1>"$TTY"
+            exec 2>"$TTY"
+            eval "$new_cmd"
+            exec 1>&3
+            exec 2>&4
+
+            if test -f "$tf_buffer_path"; then
+                cat "$tf_buffer_path"
+            fi
+
+            # This is annoying when closing windows unless I set this
+            exit 0
+
+        else
+            ! e running && e sd
+
+            exec 3>&1
+            exec 4>&2
+            exec 1>"$TTY"
+            exec 2>"$TTY"
+            eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN $client_ops $elispsh $CMD"
+            exec 1>&3
+            exec 2>&4
+        fi
+
+        # This slows it all right down. It's only useful when quitting
+        # remotely. Forget it. It's not worth it.
+        # reset
+
+        # This way may be faster and might work
+        stty sane
+        tput rs1
+
+        # It might help, but nothing works
+
+        # tty > /tmp/tty.txt
+
+        # tput reset
+        # ls
+
+        # tput reset # apparently tput reset does what reset does but without delay. Well no.
+        # reset
+
+        # expect -c "send \003;" > `tty`
+
+        # clear
+        # sleep 1
+        # Print the prompt
+        # print -P "$PS1"
+
+        # Nothing works. Except reset, which is slow
+        # kill -SIGWINCH $$
+        # kill -INT $$
+        # sleep 1
+        # echo $'\cc' >`tty`
+        # exec <`tm-tty` `# see etty`
+
+        if test -f "$tf_buffer_path"; then
+            cat "$tf_buffer_path"
+        fi
+
+        exit $?
+    }
+    ;;
+
+    clean-byte-compiled|clean-elc-files) {
+        set -xv
+        # If emacs is not starting, this is a good thing to do
+        (
+            cd "$EMACSD"
+            find . -name "*.elc" -type f | xargs rm -f
+            cd "$MYGIT/spacemacs"
+            find . -name "*.elc" -type f | xargs rm -f
+            cd "$MYGIT/bbatsov/prelude"
+            find . -name "*.elc" -type f | xargs rm -f
+            cd "$MYGIT/jkitchin/scimax"
+            find . -name "*.elc" -type f | xargs rm -f
+            cd "$MYGIT/philippe-grenet/exordium"
+            find . -name "*.elc" -type f | xargs rm -f
+        )
+        exit $?
+    }
+    ;;
+
+    -nw|nw|standalone) {
+
+        debug_init=n
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -d) {
+                debug_init=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        # CMD="$(quoted_arguments $@)"
+
+        if test "$DEBUG_INIT" = "y"; then
+            eval "$EMACS_BIN" -nw --debug-init "$@"
+        else
+            eval "$EMACS_BIN" -nw "$@"
+        fi
+        exit $?
+    }
+    ;;
+
+    tf|-tf) {
+        tf_scratch="$(ux tf scratch || echo /dev/null)"
+        # trap "rm \"$tf_scratch\" 2>/dev/null" 0
+
+        e c "$tf_scratch" "$@"
+    }
+    ;;
+
+    *) # normal emacs parameters
+        {
+
+        # f may be a filename now
+        if test -n "$f"; then
+            set -- "$f" "$@"
+        fi
+
+        CMD="$(cmd "$@")"
+
+        if [ -n "$elisp" ]; then
+            # elisp="$(p "$elisp" | q)"
+            # CMD="-e $elisp$CMD"
+
+            CMD="-e $(aq "$elisp")"
+        fi
+
+        # CMD="$(quoted_arguments $@)"
+
+        # Start emacs client by default
+        # echo "e c $CMD" | less
+
+        if ! test "$NOFILE" = "y"; then
+            if [ $# -eq 1 ]; then
+                if ! [ -f "$1" ]; then
+                    w="$(which.sh "$1")"
+                    r="$?"
+                    if test "$r" -eq 0; then
+                        shift
+                        set -- "$w" "$@"
+                        CMD="$(cmd "$@")"
+                    elif pl "$1" | grep -q -P '^http:'; then
+                        eww -em "$sn" "$1"
+                        exit $?
+                    fi
+                fi
+            fi
+        fi
+
+        # echo "e c $CMD"
+        # This means globs will work (e.g. sp *.sh)
+
+        # eval "shx e c $CMD"
+        eval "e c $CMD"
+        exit $?
+
+        # if the daemon exists, start emacs client
+
+        # if e running; then
+        #     eval "e c $CMD"
+        # else
+        #     print_err "Not creating server."
+        #     eval "$EMACS_BIN -nw $f $CMD"
+        # fi
+    }
+    ;;
+esac
+
+if test -f "$tf_buffer_path"; then
+    cat "$tf_buffer_path"
+fi
