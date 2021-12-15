@@ -2297,7 +2297,7 @@ case "$f" in
         DO_SEND_KEYS=n
         SCROLLBACK=-32768
         CAPTURE_OPTIONS=" -J "
-        EDITOR="vim"
+        EDITOR="pen-v"
         STDOUT= # no editor. no value relies on is_tty
         NOABORT=n
         while [ $# -gt 0 ]; do case $1 in
