@@ -1,11 +1,13 @@
+# This docker-compose file is for future versions of Pen.el and is not needed to run it currently
+
 version: "3.9"
 services:
   pen:
     image: semiosis/pen.el:latest
-    # Add mosh and ssh
-    # Is it even possible to ssh into a docker container? I do not think so
+    # Add mosh and ssh? - not possible/easy with docker containers.
     ports:
-      - "57575:57575"
+      # web interface
+      - "7681:7681"
   semantic:
     image: "docker.pkg.github.com/github/semantic/semantic:latest"
     restart: always
