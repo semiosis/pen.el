@@ -52,9 +52,9 @@ minimise() {
                  | cat
 }
 
-if test "$1" = "-x" || test "$sn" = "umn" || test "$sn" = "unminimise.sh"; then
+if test "$1" = "-x" || test "$sn" = "pen-umn"; then
     unminimise
-elif test "$sn" = "m" || test "$sn" = "mnm" || test "$sn" = "minimise.sh"; then
+elif test "$sn" = "m" || test "$sn" = "pen-mnm"; then
     unminimise | minimise
 else
     cat
