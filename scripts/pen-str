@@ -366,6 +366,12 @@ case "$f" in
     }
     ;;
 
+    max-double-spaced-no-trailing) {
+        # Only remove trailing, not leading
+        sed 's/\s\+$//' | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
+    }
+    ;;
+
     pen-tine) {
         # abbrev: tine
 
