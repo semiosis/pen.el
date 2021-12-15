@@ -373,7 +373,7 @@ This function doesn't really like it when you put 'sp' as the editor."
 
   (if stdin (setq stdin (str stdin)))
 
-  (if (not (empty-string-p stdin))
+  (if (not (pen-empty-string-p stdin))
       (if (region-active-p)
           (progn
             ;; (select-tmux-current)
