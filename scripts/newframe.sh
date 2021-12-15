@@ -29,7 +29,9 @@ fi
 mkdir -p ~/.pen/ht-cache
 
 in-tm() {
-    if test "$PEN_USE_GUI" = "y"; then
+    if inside-docker-p && test -n "$TMUX"; then
+        "$@"
+    elif test "$PEN_USE_GUI" = "y"; then
         "$@"
     else
         pen-tm init-or-attach "$@"
