@@ -1011,7 +1011,6 @@ case "$f" in
     ;;
 
     -ria|ria|-reinstall-all) {
-
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             -r) {
                 pre_cmd="(package-refresh-contents)"
