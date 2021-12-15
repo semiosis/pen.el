@@ -848,7 +848,7 @@ else
     :
 fi
 
-. $HOME/scripts/libraries/bash-library.sh
+. `which pen-bash-library.sh`
 
 if test "$sn" = "ec"; then
     f=c
