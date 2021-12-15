@@ -1,7 +1,5 @@
 #!/bin/bash
 
-aqf() { apply qf "$@"; }
-
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 
 spacemacs-only
@@ -748,7 +746,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     +sb) {
-        elisp="(switch-to-buffer $(aqf "$2"))$elisp"
+        elisp="(switch-to-buffer $(cmd-nice-posix "$2"))$elisp"
         shift
         shift
     }
@@ -791,7 +789,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     +wbdf) {
         ON_BUFKILL_DELFRAME_BUTTER_TO_STDOUT=y
         tf_buffer_path="$(odn ux tf path || echo /dev/null)"
-        elisp+="(on-kill-write-and-close-frame $(aqf "$tf_buffer_path"))"
+        elisp+="(on-kill-write-and-close-frame $(cmd-nice-posix "$tf_buffer_path"))"
         shift
     }
     ;;
@@ -799,7 +797,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     +ofq) {
         ON_DELFRAME_EVAL_TO_STDOUT="$2"
         tf_buffer_path="$(odn ux tf path | ds ofq || echo /dev/null)"
-        elisp+="(on-frame-quit-write $(aqf "$tf_buffer_path" "$ON_DELFRAME_EVAL_TO_STDOUT"))"
+        elisp+="(on-frame-quit-write $(cmd-nice-posix "$tf_buffer_path" "$ON_DELFRAME_EVAL_TO_STDOUT"))"
         shift
         shift
     }
@@ -809,7 +807,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         ON_DELFRAME_EVAL_TO_STDOUT="$2"
         tf_buffer_path="$(odn ux tf path || echo /dev/null)"
-        elisp+="(on-kill-write-and-close-frame $(aqf "$tf_buffer_path" "$ON_DELFRAME_EVAL_TO_STDOUT"))"
+        elisp+="(on-kill-write-and-close-frame $(cmd-nice-posix "$tf_buffer_path" "$ON_DELFRAME_EVAL_TO_STDOUT"))"
         shift
         shift
     }
@@ -1154,7 +1152,7 @@ case "$f" in
         for d in sp pc og e me pd xr; do
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (lsp-install-server ...) $pkg_name" 1>&2
-                $d c -e "$pre_cmd(ignore-errors (lsp--install-server-internal (lsp-get-server-for-install $(aqf "$pkg_name"))))(revert-and-quit-emacsclient-without-killing-server)"
+                $d c -e "$pre_cmd(ignore-errors (lsp--install-server-internal (lsp-get-server-for-install $(cmd-nice-posix "$pkg_name"))))(revert-and-quit-emacsclient-without-killing-server)"
                 shift
             done
         done
@@ -1514,19 +1512,19 @@ case "$f" in
             file_path="$1"
             file_path="$(realpath "$file_path")"
 
-            elisp="($find_file_command $(aqf "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
+            elisp="($find_file_command $(cmd-nice-posix "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
             shift
 
         elif [ -n "$1" ] && [ "$#" -eq 1 ] && [ -d "$1" ]; then # one directory argument
             file_path="$1"
             file_path="$(realpath "$file_path")"
-            elisp="(dired $(aqf "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
+            elisp="(dired $(cmd-nice-posix "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
             shift
 
         elif [ -n "$1" ] && [ -f "$1" ] && [ "$#" -eq 3 ] && tt -i "$2" && tt -i "$3"; then # one file argument and 2 int arguments
             file_path="$1"
             file_path="$(realpath "$file_path")"
-            elisp="($find_file_command $(aqf "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
+            elisp="($find_file_command $(cmd-nice-posix "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
 
             GOTO_LINE="$2"
             GOTO_COLUMN="$3"
@@ -1538,7 +1536,7 @@ case "$f" in
 
             file_path="$1"
             file_path="$(realpath "$file_path")"
-            elisp="($find_file_command $(aqf "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
+            elisp="($find_file_command $(cmd-nice-posix "$file_path"))(sit-for 0.2)(run-mode-hooks major-mode)$elisp"
             shift
 
         elif test -n "$1"; then # one argument
@@ -1549,11 +1547,11 @@ case "$f" in
         elisp+="(get-buffer-create $(aqf-nice "*scratch*"))"
 
         if [ -n "$GOTO_BUFFER" ]; then
-            elisp+="(switch-to-buffer $(aqf "$GOTO_BUFFER"))"
+            elisp+="(switch-to-buffer $(cmd-nice-posix "$GOTO_BUFFER"))"
         fi
 
         if [ -n "$pattern" ]; then
-            elisp+="(goto-char (point-min))(search-forward $(aqf "$pattern"))"
+            elisp+="(goto-char (point-min))(search-forward $(cmd-nice-posix "$pattern"))"
         elif [ -n "$GOTO_LINE" ] && [ -n "$GOTO_COLUMN" ]; then
             elisp+="(goto-line $GOTO_LINE)(move-to-column $GOTO_COLUMN)"
         elif [ -n "$GOTO_LINE" ] && ! [ -n "$GOTO_COLUMN" ]; then
@@ -1561,7 +1559,7 @@ case "$f" in
         fi
 
         if [ -n "$elisp" ]; then
-            elispsh="-e $(aqf "(progn (ignore-errors $elisp))")"
+            elispsh="-e $(cmd-nice-posix "(progn (ignore-errors $elisp))")"
         fi
 
         pen-pl "$elispsh" | ds -s elispsh
