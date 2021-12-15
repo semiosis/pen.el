@@ -130,7 +130,7 @@ case "$cmd" in
         template=$1; : ${template:="tmp"}
         tmpfifo_name="$(mktemp -u -t "fifo_${template}_XXXXXX_rand-${RANDOM}_pid-$$")";
         mkfifo "$tmpfifo_name"
-        lit "$tmpfifo_name"
+        pen-pl "$tmpfifo_name"
     }
     ;;
 
@@ -145,7 +145,7 @@ case "$cmd" in
         mkdir -p  "$slogdir"
         
         fp="$slogdir/$(date-ts).log"
-        # lit "$fp" >&2
+        # pen-pl "$fp" >&2
 
         tee >(filter >> "$fp")
     }
@@ -177,14 +177,14 @@ case "$cmd" in
 
             # tm -te dv "$dirtest"
             # exit 0
-            # lit "$dirtest" | tv
+            # pen-pl "$dirtest" | tv
 
             if test -d "$dirtest" && ! test "$FORCE_DIRNAME" = "y"; then
-                lit "$line"
+                pen-pl "$line"
             else
                 newpath="$(dirname "$dirtest")"
                 if [ -d "$newpath" ]; then
-                    lit "$newpath"
+                    pen-pl "$newpath"
                 fi
             fi
         done
@@ -220,9 +220,9 @@ case "$cmd" in
         awk 1 | while read -r line; do
             newpath="$(which "$line")"
             if test $? -eq 0; then
-                lit "$newpath"
+                pen-pl "$newpath"
             else
-                lit "$line"
+                pen-pl "$line"
             fi
         done
     }
@@ -240,7 +240,7 @@ case "$cmd" in
     ;;
 
     lgpe|list-grep-process-environments) { # Can search through all processes' environments.
-        # lit "$(u list-grep-process-environments $(:) | mfz -m)" | vim -
+        # pen-pl "$(u list-grep-process-environments $(:) | mfz -m)" | vim -
         # u list-grep-processes SPACE
 
         COLUMNS=10000 ps -ef e |grep -i "$1"
@@ -260,17 +260,17 @@ case "$cmd" in
     ;;
 
     lgpe-fzf-vim) {
-        tm nw "lit \"$(u list-grep-process-environments $(:) | mfz -m)\" | vim -"
+        tm nw "pen-pl \"$(u list-grep-process-environments $(:) | mfz -m)\" | vim -"
     }
     ;;
 
     dirsuffix) { # Ensures directories and only directories (excluding symbolic links) show a slash at the end
         awk 1 | sed 's/\/\+$//' | while read -r line; do
-            testline="$(lit "$line" | umn)"
+            testline="$(pen-pl "$line" | umn)"
             if ! [ -h "$testline" ] && [ -d "$testline" ]; then
-                lit "$line/"
+                pen-pl "$line/"
             else
-                lit "$line"
+                pen-pl "$line"
             fi
         done
     }
