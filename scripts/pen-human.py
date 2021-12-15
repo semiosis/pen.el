@@ -78,10 +78,11 @@ result=b("pen-tvipe")[0]
 #                      "presence_penalty: " + str(PEN_PRESENCE_PENALTY),
 #                      "frequency_penalty: " + str(PEN_FREQUENCY_PENALTY)])
 
-cs = [result,result]
+cs = [result]
 
+# It's just not working with 1 alone
 if len(cs) == 1:
-    print(PEN_PROMPT, end = '')
+    #  print(PEN_PROMPT, end = '')
     print(cs[0])
 else:
     for x in range(len(cs)):
