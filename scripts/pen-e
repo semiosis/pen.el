@@ -251,35 +251,13 @@ print_err() {
     return 0
 }
 
-if spacemacs_only && test "$1" = ia; then
-    shift
-    set -- fi "$@"
-fi
-
-if spacemacs_only && test "$1" = sa; then
-    shift
-    set -- sd "$@"
-fi
-
-if spacemacs_only && test "$1" = ka; then
-    shift
-    set -- k "$@"
-fi
-
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     sa|-sa|-startall|-start-all) {
+        # This should start n daemons
         set -x
 
-        e -D exordium sd ` # Is having problems atm anyway `
-
+        # for each
         e sd
-
-        og sd
-
-        me sd
-
-        sp sd
-
         shift
 
         exit 0
@@ -287,29 +265,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     ka|-ka|-killall|-kill-all) {
+        # This should kill all n daemons
         shift
 
         signal="$1"; : ${signal:="INT"}
         set -xv
 
-        {
-            e -D exordium k "$signal"
-            e -D prelude k "$signal"
-            e -D purcell k "$signal"
-            sp k "$signal"
-            e -D doom k "$signal"
-            e -D default k "$signal"
-            e -D frank k "$signal"
-            e -D scimax k "$signal" # scimax doesn't like to be killed
-
-            e -D default -s tmux k "$signal"
-            og k "$signal"
-
-            e -D vanilla k "$signal"
-            e -D default -s magit k "$signal"
-
-            pgrep emacs | xargs kill -"$signal"
-        }
+        # for each
+        sp k "$signal"
         shift
 
         exit 0
