@@ -227,7 +227,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     fa|-fa|-forall) {
         shift
 
-        for d in pen-e og me sp; do
+        for d in pen-e; do
             eval "$d" "$@"
         done
 
