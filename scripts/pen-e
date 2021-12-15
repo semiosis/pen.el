@@ -202,7 +202,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         set -x
 
         # for each
-        e sd
+        pen-e sd
         shift
 
         exit 0
@@ -227,7 +227,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     fa|-fa|-forall) {
         shift
 
-        for d in e og me sp; do
+        for d in pen-e og me sp; do
             eval "$d" "$@"
         done
 
@@ -238,7 +238,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     qa|-qa|-quitall) {
         # For each
         {
-        unbuffer e -D pen-emacsd q
+        unbuffer pen-e -D pen-emacsd q
 
         pgrep emacs | xargs kill
         } &>/dev/null
@@ -249,8 +249,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     ra|-ra|-restart-all) {
-        e -qa
-        e -sa
+        pen-e -qa
+        pen-e -sa
     }
     ;;
 
@@ -752,7 +752,7 @@ if stdin_exists; then
     exec 1>&0
     exec 2>&0
 
-    eval "e c $new_arg_string"
+    eval "pen-e c $new_arg_string"
     ret="$?"
     exec 1>&3
     exec 2>&4
@@ -796,7 +796,7 @@ export SERVER_NAME
 
 case "$f" in
     sdd) {
-        e sd -d "$@"
+        pen-e sd -d "$@"
         exit 0
     }
     ;;
@@ -829,7 +829,7 @@ case "$f" in
             export EMACS_VERSION
 
             if [ -n "$SOCKET" ]; then
-                e running && exit 0
+                pen-e running && exit 0
 
                 if test "$DEBUG_DAEMON" = "y"; then
                     eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -ta '' -s ~/.emacs.d/server/$SOCKET $CMD"
@@ -838,7 +838,7 @@ case "$f" in
                 fi
 
             else
-                e running && exit 0
+                pen-e running && exit 0
 
                 if test "$DEBUG_DAEMON" = "y"; then
                     eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -ta '' $CMD"
@@ -848,7 +848,7 @@ case "$f" in
             fi
         )
 
-        unbuffer e -e "(progn (try (run-hooks 'my-daemon-start-hook))(try (delete-frame)))" &>/dev/null
+        unbuffer pen-e -e "(progn (try (run-hooks 'my-daemon-start-hook))(try (delete-frame)))" &>/dev/null
 
         ! test "$QUIET" = "y" && print_err "server now running."
         exit 0
@@ -857,14 +857,14 @@ case "$f" in
 
     fs|-fs|-fixscratch|fixscratch) {
         $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET -e "(get-buffer-create $(cmd-nice-posix "*scratch*"))"
-        e -s
+        pen-e -s
         exit 0
     }
     ;;
 
     kaf|kof|-kof|-kill-other-frames|-kill-all-frames) {
         $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET -e "(progn (kill-other-clients t))"
-        e -s
+        pen-e -s
         exit 0
     }
     ;;
@@ -901,7 +901,7 @@ case "$f" in
     ;;
 
     -arf|arf|rfa|-rfa|-refresh-all) {
-        for d in sp pc og e pd; do
+        for d in pen-e; do
             $d c -e "(package-refresh-contents)(revert-and-quit-emacsclient-without-killing-server)"
         done
 
@@ -910,7 +910,7 @@ case "$f" in
     ;;
 
     -ua|ua|-uninstall-all) {
-        for d in sp pc og me e pd xr; do
+        for d in pen-e; do
             (
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (my-delete-package ...) $pkg_name" 1>&2
@@ -939,7 +939,7 @@ case "$f" in
             *) break;
         esac; done
 
-        for d in sp pc og me e pd xr; do
+        for d in pen-e; do
             (
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (package-install ...) $pkg_name" 1>&2
@@ -958,7 +958,7 @@ case "$f" in
     ;;
 
     ial) {
-        for d in sp pc og e me pd xr; do
+        for d in pen-e; do
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (lsp-install-server ...) $pkg_name" 1>&2
                 $d c -e "$pre_cmd(ignore-errors (lsp--install-server-internal (lsp-get-server-for-install $(cmd-nice-posix "$pkg_name"))))(revert-and-quit-emacsclient-without-killing-server)"
@@ -982,7 +982,7 @@ case "$f" in
             *) break;
         esac; done
 
-        for d in sp pc og e me pd xr; do
+        for d in pen-e; do
             (
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (package-install ...) $pkg_name" 1>&2
@@ -1003,12 +1003,12 @@ case "$f" in
     fi|-fi|fast-install) {
 
         if yn "refresh contents?"; then
-            e c -e "(ignore-errors (package-refresh-contents))"
+            pen-e c -e "(ignore-errors (package-refresh-contents))"
         fi
 
         while [ $# -gt 0 ]; do pkg_name=$1
 
-            e c -e "(ignore-errors (package-install '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+            pen-e c -e "(ignore-errors (package-install '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
 
             echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
 
@@ -1054,7 +1054,7 @@ case "$f" in
     ;;
 
     p|packages) {
-        e c -e "(list-packages)"
+        pen-e c -e "(list-packages)"
         exit $?
     }
     ;;
@@ -1069,7 +1069,7 @@ case "$f" in
         tf_thing="$(pen-ux tf thing || echo /dev/null)"
         trap "rm \"$tf_thing\" 2>/dev/null" 0
 
-        unbuffer e -nosettty c -n -e "(write-string-to-file (str $val) $(cmd-nice-posix "$tf_thing"))" &>/dev/null
+        unbuffer pen-e -nosettty c -n -e "(write-string-to-file (str $val) $(cmd-nice-posix "$tf_thing"))" &>/dev/null
 
         cat "$tf_thing"
         exit $?
@@ -1077,15 +1077,15 @@ case "$f" in
     ;;
 
     -flash) {
-        e c -n -e "(mode-line-bell-flash)"
+        pen-e c -n -e "(mode-line-bell-flash)"
         exit $?
     }
     ;;
 
     q|quit) {
 
-        if e running; then
-            e c -e "(kill-emacs)"
+        if pen-e running; then
+            pen-e c -e "(kill-emacs)"
             printf -- "%s\n" "$SOCKET is dead" 1>&2
         else
             printf -- "%s\n" "$SOCKET not running" 1>&2
@@ -1095,14 +1095,14 @@ case "$f" in
     ;;
 
     r|restart) {
-        timeout 5 unbuffer e q
-        e k
-        e sd
+        timeout 5 unbuffer pen-e q
+        pen-e k
+        pen-e sd
     }
     ;;
 
     st|stack-trace) {
-        e k SIGUSR2
+        pen-e k SIGUSR2
 
     }
     ;;
@@ -1117,7 +1117,7 @@ case "$f" in
         if [ -n "$SOCKET" ]; then
             {
                 lc_socket="$(pen-pl "$SOCKET" | sed 's/_.*$//' | c lc)"
-                COLUMNS=10000 ps -ef |grep "e -D $lc_socket"
+                COLUMNS=10000 ps -ef |grep "pen-e -D $lc_socket"
 
                 u ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/$SOCKET\$/p"
             } | field 2 | {
@@ -1165,15 +1165,15 @@ case "$f" in
     }
     ;;
 
-    c|-x|x|e|client) { # start emacs client
+    c|-x|x|pen-e|client) { # start emacs client
 
-        if ! e running; then
+        if ! pen-e running; then
             if test "$DISTRIBUTION" = pen-emacsd; then
                 echo "Can't start $DISTRIBUTION server while tm is unstable"
                 exit 1
             else
                 echo "Can't start $DISTRIBUTION. Trying pen-emacsd"
-                DISTRIBUTION=pen-emacsd e c "$@"
+                DISTRIBUTION=pen-emacsd pen-e c "$@"
                 exit $?
             fi
         fi
@@ -1377,7 +1377,7 @@ case "$f" in
         export EMACS_USER_DIRECTORY
 
         if [ -n "$SOCKET" ]; then
-            ! e running && ( pen-pl "emacs ~ Starting $SOCKET server" 1>&2; e sd )
+            ! pen-e running && ( pen-pl "emacs ~ Starting $SOCKET server" 1>&2; pen-e sd )
 
             new_cmd="TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -a '' $client_ops -s ~/.emacs.d/server/$SOCKET $elispsh $CMD"
 
@@ -1396,7 +1396,7 @@ case "$f" in
             exit 0
 
         else
-            ! e running && e sd
+            ! pen-e running && pen-e sd
 
             exec 3>&1
             exec 4>&2
@@ -1460,7 +1460,7 @@ case "$f" in
     tf|-tf) {
         tf_scratch="$(pen-ux tf scratch || echo /dev/null)"
 
-        e c "$tf_scratch" "$@"
+        pen-e c "$tf_scratch" "$@"
     }
     ;;
 
@@ -1495,7 +1495,7 @@ case "$f" in
             fi
         fi
 
-        eval "e c $CMD"
+        eval "pen-e c $CMD"
         exit $?
 
     }
