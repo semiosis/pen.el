@@ -70,6 +70,8 @@
 (require 'tree-sitter)
 (require 'tree-sitter-langs)
 (require 'tree-sitter-indent)
+(require 'shackle)
+(require 'wgrep)
 
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
       (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))

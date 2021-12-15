@@ -64,6 +64,8 @@
 (package-install 'tree-sitter)
 (package-install 'tree-sitter-langs)
 (package-install 'tree-sitter-indent)
+(package-install 'shackle)
+(package-install 'wgrep)
 
 ;; Require dependencies
 (require 'shut-up)
@@ -122,6 +124,9 @@
 (require 'tree-sitter)
 (require 'tree-sitter-langs)
 (require 'tree-sitter-indent)
+
+(require 'shackle)
+(require 'wgrep)
 
 (require 'pen-custom)
 
