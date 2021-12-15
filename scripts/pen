@@ -931,8 +931,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         batch=y
         share_x=n
         docker_cmd=exec
-        remote_cmd="/root/.emacs.d/pen.el/scripts/newframe.sh"
         shift
+
+        if inside-docker-p; then
+            remote_cmd=newframe.sh
+        else
+            remote_cmd="/root/.emacs.d/pen.el/scripts/newframe.sh"
+        fi
 
         if test "$UPDATE" = "y"; then
             last_arg="${@: -1}"
