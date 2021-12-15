@@ -725,7 +725,6 @@ if ( printf -- "%s\n" "$elisp" | grep -q -P "call-interactively"; ); then
 fi
 
 if stdin_exists; then
-
     if test -n "$n_columns"; then
         n_columns=$((n_columns-1))
 
