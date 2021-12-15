@@ -315,7 +315,7 @@ if test -n "$vimrc"; then
 fi
 
 if stdin_exists; then
-    input="$(tr -d '\0' | dos2unix)"
+    input="$(tr -d '\0' | pen-dos2unix)"
 
     cmd="$bin $cmd -"
     cmd="$(printf -- "%s" "$cmd" | esc '`' | ds vlast)"
