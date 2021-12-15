@@ -177,7 +177,9 @@ fi
 is_tty() { [ -t 1 ]; }
 stdout_capture_exists() { ! is_tty; }
 pager() { if is_tty; then pen-v; else cat; fi; }
-stdin_exists() { ! [ -t 0 ]; }
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
 is_stdout_pipe() {
     [[ -p /dev/stdout ]]
 }
@@ -2988,7 +2990,12 @@ case "$f" in
     vipe|eipe) { # edit and continue
         pipe_cmd="$1"; : ${pipe_cmd:="$f"}
 
-        pen-tm -sout -vipe sps "$pipe_cmd" | cat
+        # This shouldn't be necessary
+        if stdin_exists; then
+            pen-tm -sout -vipe sps "$pipe_cmd" | cat
+        else
+            echo -n | pen-tm -sout -vipe sps "$pipe_cmd" | cat
+        fi
     }
     ;;
 
