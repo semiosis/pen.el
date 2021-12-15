@@ -1350,7 +1350,6 @@ case "$f" in
 
         elif test -n "$1"; then # one argument
             :
-
         fi
 
         elisp+="(get-buffer-create $(aqf-nice "*scratch*"))"
