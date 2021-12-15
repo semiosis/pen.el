@@ -5,6 +5,7 @@
 export EMACSD=$HOME/.emacs.d
 mkdir -p "$EMACSD"
 mkdir -p "$HOME/dump"
+mkdir -p "$HOME/repos"
 
 agi() {
     apt install -y "$@"
