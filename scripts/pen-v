@@ -318,7 +318,7 @@ if stdin_exists; then
     input="$(tr -d '\0' | pen-dos2unix)"
 
     cmd="$bin $cmd -"
-    cmd="$(printf -- "%s" "$cmd" | esc '`' | ds vlast)"
+    cmd="$(printf -- "%s" "$cmd" | pen-esc '`' | pen-ds vlast)"
 
     printf -- "%s\n" "$input" | eval "$cmd"
 
@@ -371,7 +371,7 @@ if [ $# -eq 1 ]; then
             fn="${fp%.*}"
 
             if printf -- "%s\n" "$last_arg" | grep -q -P '^file:///'; then
-                last_arg="$(printf -- "%s" "$last_arg" | replace 'file://' '')"
+                last_arg="$(printf -- "%s" "$last_arg" | sed 's=file://==')"
                 set -- "${@:1:$(($#-1))}" # shift last arg
                 set -- "$@" "$last_arg"
 
@@ -422,6 +422,6 @@ else
     cmd="$bin $cmd"
 fi
 
-cmd="$(printf -- "%s" "$cmd" | esc '`' | ds vlast)"
+cmd="$(printf -- "%s" "$cmd" | pen-esc '`' | pen-ds vlast)"
 
 eval "$cmd"
