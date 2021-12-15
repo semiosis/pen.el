@@ -278,6 +278,7 @@ agi nano
 agi ssh
 agi vipe
 agi xclip
+agi buffer
 
 IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
 export EMACSD=/root/.emacs.d
