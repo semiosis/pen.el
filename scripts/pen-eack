@@ -1,7 +1,5 @@
 #!/bin/bash
 
-( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
-
 # If stdin is not pregrepped, it serves as the list of files to search
 
 aqf() { aqf-real "$@"; }
