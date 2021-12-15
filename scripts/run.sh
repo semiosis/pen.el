@@ -18,8 +18,8 @@ export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 export PATH="$PATH:/root/go/bin"
 
-if test -n "$USER"; then
-    echo "$USER" > ~/pen_user.txt
+if test -n "$PEN_USER"; then
+    echo "$PEN_USER" > ~/pen_user.txt
 fi
 
 # for ttyd
