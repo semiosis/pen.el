@@ -4,6 +4,7 @@ export TTY
 : ${SEDOPTS:="-u"}
 
 # . $HOME/.shell_environment
+# . $HOME/.shellrc
 export DUMP="$HOME/dump"
 export REPOS="$HOME/repos"
 export NOTES="/root/notes"

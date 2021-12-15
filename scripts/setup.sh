@@ -81,6 +81,8 @@ test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/em
 
 ln -sf ~/.emacs.d/pen.el/config/tmux.conf ~/.tmux.conf
 ln -sf ~/.emacs.d/pen.el/src/init-setup.el ~/.emacs
+ln -sf ~/.emacs.d/pen.el/config/shellrc ~/.shellrc
+echo ". ~/.shellrc" >> ~/.profile
 
 mkdir -p "$EMACSD/comint-history"
 
