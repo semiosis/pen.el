@@ -294,7 +294,7 @@ cmd="xargs -0 $grepcmd -I $grep_opts $( test "$context" != "0" && printf -- "%s"
         if test "$SHOW_FULL_PATH" = "y"; then
             cwd="$(pwd)"
             cd /
-            eval "find $OPTION $(aqf-real "$cwd") -maxdepth $DEPTH -type f $symlink_cmd"
+            eval "find $OPTION $(cmd-nice-posix "$cwd") -maxdepth $DEPTH -type f $symlink_cmd"
         else
             eval "find $OPTION . -maxdepth $DEPTH -type f $symlink_cmd"
         fi
