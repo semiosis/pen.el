@@ -240,7 +240,7 @@ commands to use in that buffer.
                                   ,(current-buffer)
                                 ;; I couldn't figure out the term read-only bug
                                 ;; So sending a C-l is a workaround
-                                (pen-sn "tmux send-keys C-l"))
+                                (pen-sn "TMUX= tmux send-keys C-l"))
                               ;; 'pen-try-init-char-mode
                               ))
 
