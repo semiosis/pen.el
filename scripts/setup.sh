@@ -64,9 +64,11 @@ mkdir -p /root/org-roam
 
 # test -d "huggingface.el" || git clone --depth 1 "http://github.com/semiosis/huggingface.el"
 
+mkdir -p ~/repos/pen-emacsd
+
 mkdir -p ~/.config
 (
-cd "$EMACSD"
+cd ~/repos/pen-emacsd
 test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
 test -d engines || git clone --depth 1 "https://github.com/semiosis/engines"
 test -d ~/.config/efm-langserver || git clone --depth 1 "https://github.com/semiosis/pen-efm-config" ~/.config/efm-langserver
@@ -78,6 +80,9 @@ test -d "pen-contrib.el" || git clone --depth 1 "https://github.com/semiosis/pen
 test -d glossaries || git clone --depth 1 "https://github.com/semiosis/glossaries"
 test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
+
+cd
+ln -s ~/.config "$EMACSD"
 
 ln -sf ~/.emacs.d/pen.el/config/tmux.conf ~/.tmux.conf
 ln -sf ~/.emacs.d/pen.el/src/init-setup.el ~/.emacs
