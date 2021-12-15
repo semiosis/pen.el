@@ -470,7 +470,6 @@ HEREDOC
     }
     ;;
 
-
     *) {
         # Do some VC detection here
         if git status &>/dev/null; then
