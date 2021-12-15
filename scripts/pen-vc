@@ -1,0 +1,485 @@
+#!/bin/bash
+export TTY
+
+export REPOS="$HOME/repos"
+gitfolder="$REPOS"
+
+# $VC_DUMP
+
+# examples:
+# ---------
+# vc git graph
+# vc git forks
+
+# Version control scripts
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -v) {
+        VERBOSE=y
+        shift
+    }
+    ;;
+
+    -l) {
+        # Don't hit the github API
+        LIGHT=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+vc_opt="$1"
+case "$vc_opt" in
+    m) {
+        shift
+        # The default magit behaviour (normally, status)
+        magit
+    }
+    ;;
+
+    hash) {
+        git rev-parse HEAD
+    }
+    ;;
+
+    is-git) {
+        [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1
+    }
+    ;;
+
+    nb) {
+        message="$2"
+        branch_name="$(p "$message" | slugify)"
+        git checkout -b "$branch_name"
+    }
+    ;;
+
+    relativise-symlinks) {
+        tm n "$f :: NOT IMPLEMENTED. see relativise-symlink-git"
+        # relativise-symlink-git
+    }
+    ;;
+
+    c) {
+        message="$2"
+        git commit -m "$message"
+    }
+    ;;
+        
+    list-submodule-paths) {
+        cd "$(vc get-top-level)"
+        git config --file .gitmodules --get-regexp path | awk '{ print $2 }'
+    }
+    ;;
+
+    r) {
+        git remotes
+    }
+    ;;
+
+    u|pull) {
+        shift
+
+        remote="$1"
+        shift
+
+        if git remotes | grep -q -P "^semiosis"; then
+            : ${remote:="semiosis"}
+        elif git remotes | grep -q -P "^mullikine"; then
+            : ${remote:="mullikine"}
+        else
+            : ${remote:="origin"}
+        fi
+
+        branch_name="$1"
+        : "${branch_name:="$(vc bn)"}"
+        shift
+
+        git fetch -a
+
+        git submodule sync; git pull --recurse-submodules --rebase "$remote" "$bn"
+    }
+    ;;
+
+    p|psh|push) {
+        shift
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -f) {
+                FORCE=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        remote="$1"
+        shift
+
+        if git remotes | grep -q -P "^semiosis"; then
+            : ${remote:="semiosis"}
+        elif git remotes | grep -q -P "^mullikine"; then
+            : ${remote:="mullikine"}
+        else
+            : ${remote:="origin"}
+        fi
+
+        branch_name="$1"
+        : "${branch_name:="$(vc bn)"}"
+        shift
+
+        set -x
+        ds -d push_output
+        if test "$FORCE" = "y"; then
+            cmdx git push -f "$remote" "$branch_name" | tee >(ds push_output)
+        else
+            cmdx git push "$remote" "$branch_name" | tee >(ds push_output)
+        fi
+        new_pr_url="$(gs push_output | xurls | grep /pull/new/)"
+
+        if test -n "$new_pr_url"; then
+            echo "$new_pr_url" | xc -n -i
+        fi
+    }
+    ;;
+
+    upurl) {
+        git remote show upstream | xurls | head -n 1 | grep 'github.com/'
+    }
+    ;;
+
+    updir) {
+        github-add-upstream
+
+        cd "$(vc get-top-level)"
+        updir="../$(vc upstream-name)"
+        if [ -d "$updir" ]; then
+            (
+                cd "$updir"
+                pwd
+            )
+        else
+            :
+            # gc "$(vc upurl)"
+        fi
+
+        # git remote show upstream | xurls | head -n 1 | grep 'github.com/'
+    }
+    ;;
+
+    upstream-name) {
+        git remote show upstream | xurls | head -n 1 | mcut -d 'github.com/' -f 2 | cut -d / -f 1
+    }
+    ;;
+
+    fp) {
+        remote="$2"
+        : ${remote:="origin"}
+        branch_name="$(vc bn)"
+
+        git push -f "$remote" "$branch_name"
+    }
+    ;;
+
+    ms) {
+        shift
+        magit s
+    }
+    ;;
+
+    bn|branch) {
+        git rev-parse --abbrev-ref HEAD
+    }
+    ;;
+
+    changed) {
+        ## Try not to use git aliases. I want this script to be portable
+        # git changed
+        test -n "$(git status -s)"
+    }
+    ;;
+
+    base|divergence-commit) {
+        git merge-base master "$(vc bn)"
+    }
+    ;;
+
+    get-hash) {
+        git rev-parse HEAD
+    }
+    ;;
+
+    rn|repo-name) {
+        {
+            url="$(git config --get remote.origin.url | sed 's/\.git$//' )"
+            if test -z "$url"; then
+                url="$(pwd)"
+            fi
+            printf -- "%s\n" "$url"
+        } | xargs basename
+    }
+    ;;
+
+    make-shallow) {
+        shift
+        git pull --depth 1
+        git gc --prune=all
+    }
+    ;;
+
+    g|git) {
+        shift
+        git_opt="$1"
+        shift
+        case "$git_opt" in
+            r|remote|url|remote-url) {
+                remote="$(git config --get remote.origin.url | git-ssh-to-http)"
+                if [ -n "$remote" ]; then
+                    p "$remote"
+                else
+                    ns "no remote" | s chomp | uq
+                fi
+            }
+            ;;
+
+            c-sm|checkout-submodules) {
+                git submodule update --init --recursive
+            }
+            ;;
+
+            fetch-all|fetch-submodules)
+                git submodule update --recursive --remote
+            ;;
+
+            pull-all|pull-submodules)
+                git pull --recurse-submodules
+            ;;
+
+            is-behind) {
+                [ -n "$(git log HEAD..origin/master --oneline | tr -d '\n')" ]
+
+                exit $?
+            }
+            ;;
+
+            is-repo) {
+                git status &>/dev/null
+
+                exit $?
+            }
+            ;;
+
+            gtl|get-top-level|dir|root) {
+                shift
+
+                if test -n "$1"; then
+                    dn="$(p "$dn" | u drn)"
+                    cd "$dn"
+                fi
+
+                # Test if git first
+                git rev-parse --show-toplevel 2>/dev/null || pwd
+
+                exit $?
+            }
+            ;;
+
+            gcfd|get-config-dir) {
+                shift
+
+                if test -n "$1"; then
+                    dn="$(p "$dn" | u drn)"
+                    cd "$dn"
+                fi
+
+                # Test if git first
+                git rev-parse --git-dir
+
+                exit 0
+            }
+            ;;
+
+            cl|clone) {
+                url="$1"
+                # echo "$DIRNAME_EXTRA" | tv
+
+                if printf -- "%s\n" "$url" | grep -q -P '//gitlab.com/'; then
+                    url="$(p "$url" | git-http-to-ssh)"
+                else
+                    ns "$(it "ghb size" "$url")" &>/dev/null & disown
+                fi
+
+                set -m
+
+                # Also clone the wiki if available
+                if printf -- "%s\n" "$url" | grep -q -P 'git@gitlab.*\.git' && \
+                    ! printf -- "%s\n" "$url" | grep -q -P 'git@gitlab.*\.wiki\.git'; then
+                    wikiurl="$(printf -- "%s" "$url" | sed 's/\.git$/.wiki.git/')"
+                    git clone "${wikiurl}" 2> >(grep Cloning >&2)
+                else
+                    git clone "${url}.wiki" 2> >(grep Cloning >&2)
+                fi
+
+                # git-clone-wiki
+
+                # -j8 # Fetches up to 8 at a time. May not work so leave
+                # it out
+
+                # Don't use jobs. It fails on older versions of git.
+                # --recurse-submodules --jobs 2
+                read -r -d '' gitcmd <<HEREDOC
+git clone $(
+if test "$SHALLOW" = "y"; then
+    p " --depth 1 "
+fi
+) --recurse-submodules "$url" $(
+if test -n "$DIRNAME_EXTRA"; then
+    bn="$(basename "$url")"
+    echo -n "${bn}-$DIRNAME_EXTRA"
+fi
+) 2>&1
+HEREDOC
+
+                out="$(eval "$gitcmd")"
+                result="$?"
+
+                if test "$VERBOSE" = "y"; then
+                    printf -- "%s\n" "$out"
+                fi
+
+                if ! [ "$result" -eq 0 ]; then
+                    printf -- "%s\n" "Failed. Run again with -v"
+                fi
+
+                ( kill $(jobs -p) ) &>/dev/null
+
+                # wait
+                # du -shc . | tail -n 1
+            }
+            ;;
+
+            d|diff) { # cd to a files parent directory and get its diff
+                last_arg="${@: -1}"
+
+                set -- "${@:1:$(($#-1))}" # shift last arg
+
+                fp="$last_arg"
+                rp="$(realpath "$fp")"
+                dn="$(dirname "$rp")"
+                cd "$dn"
+                bn="$(basename "$fp")"
+                ext="${fp##*.}"
+                fn="${fp%.*}"
+
+                GIT_PAGER=cat git diff "$@" -- "$bn" | xc -i | qtv -nw
+
+                git diff "$@" -- "$bn"
+                exit $?
+            }
+            ;;
+
+            dt|difftool) {
+                while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+                    -c|--cached) {
+                        opts="$opts --cached"
+
+                        exit 0
+                        shift
+                    }
+                    ;;
+
+                    *) break;
+                esac; done
+
+                eval "git difftool $opts"
+
+                # Run vimdiff
+            }
+            ;;
+
+            gtl|get-top-level) {
+                shift
+
+                if test "$1" = "y"; then
+                    dn="$(p "$dn" | u drn)"
+                    cd "$dn"
+                fi
+
+                git rev-parse --show-toplevel 2>/dev/null || pwd
+
+                exit $?
+            }
+            ;;
+
+            ar|amend-respawn) {
+                cd "$(vc git get-top-level)"
+
+                git add -A .
+                git amend
+            }
+            ;;
+
+            cr|commit-respawn) {
+                {
+                    git add -A .
+                    git commit -m "$(date-ts)"
+                } &>/dev/null
+                exit 0
+            }
+            ;;
+
+            graph) {
+                git log --oneline --decorate --all --graph | less
+            }
+            ;;
+
+            forks|graphforks) {
+                git log --oneline --decorate --all --graph --simplify-by-decoration | less
+            }
+            ;;
+
+            template) {
+                :
+            }
+            ;;
+
+            *)
+        esac
+
+    }
+    ;;
+
+    svn) {
+        shift
+        :
+    }
+    ;;
+
+    template) {
+        shift
+        :
+    }
+    ;;
+
+
+    *) {
+        # Do some VC detection here
+        if git status &>/dev/null; then
+            $0 g "$@"
+            exit "$?"
+        else
+            git status
+            exit "$?"
+        fi
+    }
+    ;;
+esac

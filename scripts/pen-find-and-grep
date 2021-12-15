@@ -24,6 +24,9 @@ KNOWN_TEXT_FILES_ONLY=n
 filename_pattern=
 SYMLINK_RESULTS=n
 
+export PENCONF="$HOME/.pen"
+export GLOSSARIES="$PENCONF/glossaries"
+
 # empty by default
 paths_file=
 
@@ -167,7 +170,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if test "$(pwd)" = "$NOTES/ws/glossaries"; then
+if test "$(pwd)" = "$GLOSSARIES"; then
     SYMLINK_RESULTS=y
 fi
 
