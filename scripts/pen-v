@@ -175,7 +175,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -rt) {
         rt_cmd="$2"
-        extra_commands+="|call RTCmdSetup($(cmd-nice-posix "$rt_cmd" | bs '|'))"
+        extra_commands+="|call RTCmdSetup($(cmd-nice-posix "$rt_cmd" | pen-bs '|'))"
         shift
         shift
     }
@@ -267,7 +267,7 @@ fi
 
 if [ -n "$pattern" ]; then
 
-    pattern="$(printf -- "%s" "$pattern" | bs '/~')"
+    pattern="$(printf -- "%s" "$pattern" | pen-bs '/~')"
 
     ncmd="/$pattern"
 
