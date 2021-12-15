@@ -312,7 +312,7 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 
 (defun pen-lsp-error-list (&optional path)
   (if (not path)
-      (setq path (get-path)))
+      (setq path (get-path-nocreate)))
   (let ((l))
     (maphash (lambda (file diagnostic)
                (if (string-equal path file)
