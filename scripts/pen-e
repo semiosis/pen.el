@@ -572,7 +572,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         shift
         fname="$1"
         shift
-        CMD="$(cmdf "$@")"
+        CMD="$(cmd-nice-posix "$@")"
         shift "$#" # shift everything
 
         elisp="($fname $CMD)$elisp"
@@ -583,7 +583,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         shift
         fname="$1"
         shift
-        CMD="$(cmdf "$@")"
+        CMD="$(cmd-nice-posix "$@")"
         shift "$#" # shift everything
 
         elisp+="($fname $CMD)"
@@ -602,8 +602,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         shift
         : ${modename:="$1"}
         modename=" \"$modename\""
-        script="$(nsfa "$@")"
-        elisp="(my/term \"$script\" t $modename)$elisp"
+        script="$(pen-nsfa "$@")"
+        elisp="(pen-term \"$script\" t $modename)$elisp"
         shift "$#"
     }
     ;;
@@ -611,14 +611,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -shE|-E) {
         shift
         test -n "$1" || exit 1
-        script="$(nsfa -E "$1" t)"
+        script="$(pen-nsfa -E "$1" t)"
         : ${modename:="$1"}
         shift
         modename=" \"$modename\""
 
         bufname="$(printf -- "%s" "term $script" | slugify)"
 
-        elisp="(my/term \"$script\" t $modename)$elisp"
+        elisp="(pen-term \"$script\" t $modename)$elisp"
     }
     ;;
 
@@ -626,10 +626,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         shift
         : ${modename:="$1"}
         modename=" \"$modename\""
-        script="$(nsfa "$@")"
+        script="$(pen-nsfa "$@")"
         bufname="$(p term "$@" | slugify)"
 
-        elisp="(my/term \"$script\" t $modename)$elisp"
+        elisp="(pen-term \"$script\" t $modename)$elisp"
         shift "$#"
     }
     ;;
@@ -639,7 +639,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         : ${modename:="$1"}
         modename=" \"$modename\""
         shift
-        elisp="(my/term $modename t $modename)$elisp"
+        elisp="(pen-term $modename t $modename)$elisp"
     }
     ;;
 
@@ -1356,7 +1356,7 @@ case "$f" in
                 shift
                 fname="$1"
                 shift
-                CMD="$(cmdf "$@")"
+                CMD="$(cmd-nice-posix "$@")"
                 shift "$#" # shift everything
 
                 elisp="($fname $CMD)$elisp"
@@ -1365,7 +1365,7 @@ case "$f" in
 
             -sh) {
                 shift
-                elisp="(my/term \"$(nsfa "$@")\" t)$elisp"
+                elisp="(pen-term \"$(pen-nsfa "$@")\" t)$elisp"
                 shift "$#"
             }
             ;;
