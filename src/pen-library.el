@@ -2,6 +2,8 @@
 
 (defalias 's-replace-regexp 'replace-regexp-in-string)
 
+(require 'pen-aliases)
+
 (defun pen-f-basename (path)
   ;; (pen-snc (pen-cmd "basename" path))
   (s-replace-regexp ".*/" "" (or path
