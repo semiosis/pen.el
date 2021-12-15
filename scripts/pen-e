@@ -295,94 +295,12 @@ if test "$AUTO_VERSION" = "y"; then
 fi
 
 case "$DISTRIBUTION" in
-    v|vanilla) # vanilla
-        {
-            SOCKET="VANILLA"
-            EMACS_VARIANT="VANILLA"
-            :
-        }
-        ;;
-
-    fr|frank)
-        {
-
-            EMACS_VERSION=28
-            EMACS_USER_DIRECTORY="$REPOS/zwpdbh/emacs"
-            SOCKET="FRANK"
-            EMACS_VARIANT="FRANK"
-            :
-        }
-        ;;
-
-    xr|exordium) # exordium (for C++)
-        {
-            EMACS_VERSION=28
-            EMACS_USER_DIRECTORY="$REPOS/philippe-grenet/exordium"
-            SOCKET="EXORDIUM"
-            EMACS_VARIANT="EXORDIUM"
-        }
-        ;;
-
-    ei|emacs-live)
-        {
-            EMACS_VERSION=28
-
-            EMACS_USER_DIRECTORY="$REPOS/overtone/emacs-live"
-            SOCKET="EMACS-LIVE"
-            EMACS_VARIANT="EMACS-LIVE"
-            :
-        }
-        ;;
-
-    pc|purcell) # steve purcell
-        {
-
-            EMACS_VERSION=28
-
-            EMACS_USER_DIRECTORY="$REPOS/purcell/emacs.d"
-            SOCKET="PURCELL"
-            EMACS_VARIANT="PURCELL"
-            :
-        }
-        ;;
-
-    pu|prelude) # prelude
-        {
-            EMACS_USER_DIRECTORY="$REPOS/bbatsov/prelude"
-            SOCKET="prelude"
-            EMACS_VERSION=28
-            EMACS_VARIANT="PRELUDE"
-            :
-        }
-        ;;
-
-    sc|scimax) # scimax
-        {
-            EMACS_USER_DIRECTORY="$REPOS/jkitchin/scimax"
-
-            SOCKET="user"
-
-            EMACS_VERSION=28
-            EMACS_VARIANT="SCIMAX"
-            :
-        }
-        ;;
-
     sp|sm|pen-emacsd)
         {
             EMACS_USER_DIRECTORY="$REPOS/pen-emacsd"
             EMACS_VERSION=28
             SOCKET="pen-emacsd"
             EMACS_VARIANT="pen-emacsd"
-        }
-        ;;
-
-    dm|doom) # pen-emacsd
-        {
-            EMACS_USER_DIRECTORY="$REPOS/hlissner/doom-emacs"
-            EMACS_VERSION=28
-            SOCKET="DOOM"
-            EMACS_VARIANT="DOOM"
         }
         ;;
 
