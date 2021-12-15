@@ -62,7 +62,7 @@ def b(c, inputstring="", timeout=0):
     p.wait()
     return [str(output), p.returncode]
 
-result=b("pen-tvipe")[0]
+result=b("pen-tvipe \"pipify nano\"")[0]
 
 # result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
 #                      "prompt: " + PEN_PROMPT,
