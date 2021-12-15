@@ -39,11 +39,16 @@ else
     CWD=/
 fi
 
-if test -n ~/pen_user.txt; then
-    PEN_USER="$(cat ~/pen_user.txt)"
-fi
+if inside-docker-p; then
+    if test -n ~/pen_user.txt; then
+        PEN_USER="$(cat ~/pen_user.txt)"
+    fi
 
-: "${PEN_USER:="$(pen-readln "host username")"}"
+    : "${PEN_USER:="$(pen-readln "host username")"}"
+else
+    : "${USER:="$(whoami)"}"
+    PEN_USER=$USER
+fi
 
 # This runs in the docker to the host
 cterm-docker ssh \
