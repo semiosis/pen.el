@@ -2983,10 +2983,8 @@ case "$f" in
         ret="$?"
 
         if ! test "$ret" -eq "130"; then
-
             pen-tm -d spv "unbuffer pen-tm pp -a '$CALLER_PANE' | $filter; pen-pak -m \"source pane closed\""
             tmux select-pane -t "$CALLER_PANE"
-
         fi
 
         exit 0
