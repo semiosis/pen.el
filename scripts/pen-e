@@ -291,21 +291,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     qa|-qa|-quitall) {
+        # For each
         {
+        unbuffer e -D spacemacs q
 
-            unbuffer e -D exordium q
-            unbuffer e -D purcell q
-            unbuffer e -D prelude q
-            unbuffer e -D spacemacs q
-            unbuffer e -D default q
-            unbuffer e -D frank q
-            unbuffer e -D scimax q
-            unbuffer e -D default -s magit q
-
-            unbuffer e -D default -s tmux q
-            unbuffer e -D default -s org q
-
-            pgrep emacs | xargs kill
+        pgrep emacs | xargs kill
         } &>/dev/null
         shift
 
