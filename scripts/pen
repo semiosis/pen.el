@@ -18,6 +18,8 @@ inside-docker-p() {
     test -f /.dockerenv
 }
 
+unset PEN_USE_GUI
+
 drunning=
 docker-running-p() {
     test "$drunning" = y || test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
