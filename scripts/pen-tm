@@ -2332,7 +2332,6 @@ case "$f" in
             ;;
 
             -f|-filter) {
-
                 ns disabled $1 because ambiguous
 
                 exit 0
