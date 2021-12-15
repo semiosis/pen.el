@@ -47,14 +47,14 @@ transcript_fp="$NOTES/programs/ii/${lang}-${id}.${ext}"
 touch "$transcript_fp"
 
 read -ep "$prompt: " -r line
-# read -r line < <(readln "$prompt")
+# read -r line < <(pen-readln "$prompt")
 line="$(printf -- "%s\n" "$line" | sed "s/$nl/\\n/g")"
 printf -- "%s" "$line" | awk 1 >> "$transcript_fp"
 out="$(iiol "$lang" "$line")"
 printf -- "%s" "Output: $out" | awk 1
 
 while read -ep "$prompt: " -r line; do
-# while read -r line < <(readln "$prompt"); do
+# while read -r line < <(pen-readln "$prompt"); do
 # pen-chomp it
 line="$(printf -- "%s" "$line" | sed -z "s/^\\s*$//")"
 if test -z "$line"; then

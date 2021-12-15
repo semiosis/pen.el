@@ -1,0 +1,33 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -l) {
+        loop=y
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+prompt_message="$1"
+
+# if test -n "$prompt_message"; then
+#     read -ep "$prompt_message: " query
+# fi
+code=0
+
+if test "$loop" = "y"; then
+    # When ^D is used, read ends up with the exit code "1"
+    while ! test "$code" -eq 1; do
+        read -ep "$prompt_message: " query 1>&2
+        code="$?"
+        printf -- "%s\\n" "$query"
+    done
+else
+    read -ep "$prompt_message: " query 1>&2
+    printf -- "%s\\n" "$query"
+fi
