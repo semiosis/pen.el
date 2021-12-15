@@ -184,7 +184,7 @@ if [ -n "$input" ]; then
                 cat
             fi
         }
-    } | dos2unix | {
+    } | pen-dos2unix | {
         if is_tty; then
             # pen-mnm | orspe -noonly -e "$ecmd"
             # Sadly, pen-mnm appears to break wgrep-mode

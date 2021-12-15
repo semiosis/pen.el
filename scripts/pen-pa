@@ -147,4 +147,4 @@ pager() {
     fi
 }
 
-dos2unix | pager "$@"
+pen-dos2unix | pager "$@"

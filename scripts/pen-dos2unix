@@ -1,0 +1,3 @@
+#!/bin/bash
+
+dos2unix -q -f "$@"
