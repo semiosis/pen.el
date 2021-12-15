@@ -1011,12 +1011,10 @@ case "$f" in
                 cat
             fi
         }
-
     }
     ;;
 
     xta) {
-
         xt_opt=
 
         opt="$1" # it might not be opt though. it might be target
@@ -1049,7 +1047,6 @@ case "$f" in
     ;;
 
     nds|nbgs) {
-
         unset TMUX
 
         if [ -n "$3" ]; then
@@ -1065,7 +1062,6 @@ case "$f" in
     ;;
 
     ns|new-s|new-session) {
-
         unset TMUX
 
         HIGHLIGHT=
