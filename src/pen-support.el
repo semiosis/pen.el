@@ -826,7 +826,7 @@ region-active-p does not work for evil selection."
   (buffer-string))
 
 (defun pen-buffer-string-or-selection (&optional select)
-  (let ((s (if (selectedp)
+  (let ((s (if mark-active
                (pen-selection)
              (pen-buffer-string select))))
     (pen-token-length-warn s)))
