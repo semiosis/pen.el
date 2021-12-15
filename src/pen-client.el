@@ -315,7 +315,7 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
     (if tm_session
         (setq tm_session (concat " -t " tm_session)))
 
-    (setq session-dir-cmd (concat tm_wincmd " -sh " shell tm_session (if b_switch_to "" " -d") " -c " (q dir) " " (q cmd)))
+    (setq session-dir-cmd (concat tm_wincmd " -sh " shell tm_session (if b_switch_to "" " -d") " -c " (pen-q dir) " " (pen-q cmd)))
 
     (if b_output
         (setq tf (make-temp-file "elispbash")))
