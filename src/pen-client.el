@@ -296,4 +296,109 @@
             (pen-etv color)
           color)))))
 
+(defun pen-sh (&optional cmd stdin b_output tm_session shell b_switch_to tm_wincmd dir b_wait)
+  "Runs command in a new tmux window and optionally returns the output of the command as a string.
+b_output is (t/nil) tm_session is the session of the new tmux window"
+  (interactive)
+
+  (if (not dir)
+      (setq dir (get-dir)))
+
+  (let ((default-directory dir))
+
+    (if (not shell)
+        (setq shell "bash"))
+
+    (if (not tm_wincmd)
+        (setq tm_wincmd "nw"))
+
+    (if tm_session
+        (setq tm_session (concat " -t " tm_session)))
+
+    (setq session-dir-cmd (concat tm_wincmd " -sh " shell tm_session (if b_switch_to "" " -d") " -c " (q dir) " " (q cmd)))
+
+    (if b_output
+        (setq tf (make-temp-file "elispbash")))
+
+    (if (not cmd)
+        (setq cmd "zsh"))
+
+    (if b_output
+        ;; unbuffer breaks stdout
+        (if stdin
+            (setq final_cmd (concat "pen-tm -f -s -sout " session-dir-cmd " > " tf))
+          (setq final_cmd (concat "unbuffer pen-tm -f -fout " session-dir-cmd " > " tf)))
+      (if stdin
+          (if b_wait
+              (setq final_cmd (concat "pen-tm -f -S -tout -w " session-dir-cmd))
+            (setq final_cmd (concat "pen-tm -f -S -tout " session-dir-cmd)))
+        (if b_wait
+            (setq final_cmd (concat "unbuffer pen-tm -f -tout -te -w " session-dir-cmd))
+          (setq final_cmd (concat "unbuffer pen-tm -f -d -tout -te " session-dir-cmd)))))
+
+    (if (not stdin)
+        (shell-command final_cmd)
+      (with-temp-buffer
+        (insert stdin)
+
+        (shell-command-on-region (point-min) (point-max) final_cmd)))
+
+    (if b_output
+        (progn
+          (setq output (slurp-file tf))
+          output))))
+
+(defun pen-sh/tvipe (&optional stdin editor tm_wincmd ft b_nowait b_quiet dir)
+  "Converts the parameter to its string representation and pipes it into tmux.
+If a region is selected then it replaces that region.
+If a region is selected and stdin is provided then stdin is the stdin.
+If a region is selected and stdin is nil then the selected region is the stdin.
+TODO make it so if I don't have anything selected, it takes me to the same position that I am currently in.
+
+This function doesn't really like it when you put 'sp' as the editor."
+  (interactive)
+  (if (not editor)
+      (setq editor "vim"))
+
+  (if (not tm_wincmd)
+      (setq tm_wincmd "sps"))
+
+  (setq editor (concat "EDITOR=" (pen-q editor) " vipe"))
+
+  (if b_quiet (setq editor (concat editor " &>/dev/null")))
+
+  (if (not stdin)
+      (if (region-active-p)
+          (setq stdin (pen-selected-text))))
+
+  (if stdin (setq stdin (str stdin)))
+
+  (if (not (empty-string-p stdin))
+      (if (region-active-p)
+          (progn
+            ;; (select-tmux-current)
+            (let ((stdout (pen-sn editor (format "%s" stdin) (not b_nowait) nil t tm_wincmd dir (not b_nowait))))
+              (if (not b_nowait)
+                  (progn
+                    (delete-region (region-beginning) (region-end))
+                    (insert stdout)))))
+        (pen-bash editor (str stdin) (or (not b_quiet) (not b_nowait)) nil t tm_wincmd dir (not b_nowait)))
+    (message "%s" "tvipe: stdin is empty")))
+
+(cl-defun pen-cl-tv (&optional stdin &key editor &key tm_wincmd &key dir)
+  "Setting b-wait to -1 disables waiting."
+  (interactive)
+  (if stdin
+      (progn
+        (if (not (stringp stdin))
+            (setq stdin (pp-to-string stdin)))
+        (pen-sh/tvipe stdin editor tm_wincmd nil t t dir))
+    (message "tv: no input"))
+  stdin)
+(defalias 'pen-tv 'pen-cl-tv)
+
+(defun pen-bash (&optional cmd stdin b_output tm_session b_switch_to tm_wincmd dir b_wait)
+  (interactive)
+  (pen-sh cmd stdin b_output tm_session "bash" b_switch_to tm_wincmd dir b_wait))
+
 (provide 'pen-client)
