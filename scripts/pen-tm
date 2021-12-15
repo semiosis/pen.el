@@ -454,7 +454,7 @@ case "$f" in
     config|fzf-config) {
         exec 2>&4
 
-        selection="$(tm-list-config | mnm | pen-str uniq | soak | mfz -p)"
+        selection="$(tm-list-config | mnm | pen-str uniq | pen-soak | mfz -p)"
 
         ! [ -n "$selection" ] && exit 0
 
@@ -2635,7 +2635,7 @@ case "$f" in
 
     urls) {
         pen-tm capp | xurls | tail -n 1 | pen-xc -i -n
-        pen-tm capp | xurls | soak | pen-sps pen-v
+        pen-tm capp | xurls | pen-soak | pen-sps pen-v
     }
     ;;
 
