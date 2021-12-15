@@ -1,0 +1,49 @@
+#!/bin/bash
+export TTY
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+stdin_exists && has_stdin=y
+
+tempfile="$(0</dev/null mktemp amp-stdin-$USER.XXXXXXX --tmpdir)"
+
+# Collect the stdin
+if test "$has_stdin" = y; then
+    cat > "$tempfile"
+fi
+
+# save the file descriptors -- these may point to file paths rather than the tty
+exec 3>&0
+exec 4>&1
+exec 5>&2
+
+# Assume stderr has not been redirected and still points to the tty
+
+# # Find the current tty and assign input to it, so we can collect input from the user
+# : ${TTY:="$(tm-tty)"}
+# exec <"$TTY"
+
+# If it soaked input then return control to the tty
+if test "$has_stdin" = y; then
+    exec <&2
+fi
+
+# Ensure that everything is pointing to the tty
+exec 1>&2
+exec 2>&2
+
+# We then run our command which has full tty access. It could be amp for example
+"$@" "$tempfile"
+
+# Restore stdout and stderr to their regular output file descriptors
+# Whatever they used to point to
+exec 1>&4
+exec 2>&5
+
+# If there was stdin then cat it out to the terminal
+# The pipeline around amp is then completed
+if test -f "$tempfile"; then
+    cat "$tempfile"
+fi
