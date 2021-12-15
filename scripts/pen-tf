@@ -7,8 +7,9 @@ stdin_exists() {
 # Completely optional
 name="$1"
 ext="$2"
+: "${ext:="txt"}"
 
-fp="$(mktemp -t "tf_${name}${ext}XXXXXXX" 2>/dev/null || :)"
+fp="$(mktemp -t "tf_${name}XXXXXXX.${ext}" 2>/dev/null || :)"
 
 if stdin_exists; then
     cat > "$fp"
