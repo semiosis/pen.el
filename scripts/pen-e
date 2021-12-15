@@ -25,8 +25,6 @@ export EMACS_TERM_TYPE
 
 eval "set -- $(cmd "$@" | sed 's/--init-debug/--debug-init/')"
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
-
 . $HOME/.shell_environment
 
 EMACS_VERSION=28
