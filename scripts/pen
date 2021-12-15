@@ -389,6 +389,15 @@ if test "$sn" = penx; then
     share_x=y
 fi
 
+if test "$sn" = pent; then
+    if inside-docker-p || docker-running-p; then
+        sn=penc
+        HAS_TTY=y
+        show_banner=n
+        PEN_USE_GUI=n
+    fi
+fi
+
 if test "$sn" = lgx; then
     sn=lg
 
@@ -683,7 +692,6 @@ case "$sn" in
     ;;
 
     pent) {
-        sn=pen
         # This is used to run docker terminal emacs with -e
         # Advanced.
         # Used for ii.
