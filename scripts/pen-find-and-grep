@@ -1,0 +1,335 @@
+#!/bin/bash
+
+CWD="$(pwd)"
+
+# Some tmux splits give the wrong value for CWD.
+# : ${CWD:="$(pwd)"}; cd "$CWD"
+
+# grep -HnR $@ . 2>/dev/null | mnm | ec -e "(cd \"$CWD\")(grep-mode)"
+
+: "${FOLLOW:="n"}"
+: ${DO_FILTER:="y"}
+EXCLUDE_VENDOR=y
+EXCLUDE_GIT=y
+OCCUR=y
+PCRE=n
+: ${WORD_BOUNDARIES:="n"}
+: ${CASE_INSENSITIVE:="n"}
+: ${LITERAL:="n"}
+: ${TOP:="n"}
+: ${DEPTH:="3"}
+: ${SHOW_FULL_PATH:="y"}
+: ${PARSE_OPTIONS:="y"}
+KNOWN_TEXT_FILES_ONLY=n
+filename_pattern=
+SYMLINK_RESULTS=n
+
+# empty by default
+paths_file=
+
+: ${context:="0"} # Used for both grep AND occur. This makes -A and -B tricky
+: ${before_context:="0"}
+: ${after_context:="0"}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -d) {
+        DEPTH="$2"
+        if pen-tt -i "$DEPTH"; then
+            # -d was supplied an integer, use it
+            shift
+        else
+            DEPTH=5
+            # Do not shift for the parameter which is not an integer
+        fi
+        shift
+    }
+    ;;
+
+    -F|-paths-file) { # A file containing a list of files to grep over
+        paths_file="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -p|-path) {
+        filename_pattern="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -g|-pathglob) {
+        filename_glob="$2"
+        paths_file="$(glob -b "$filename_glob" | pen-tf txt)"
+        shift
+        shift
+    }
+    ;;
+
+    -C|-context) {
+        context="$2"
+        before_context="$2"
+        after_context="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -w) {
+        SHOW_FULL_PATH=y
+        shift
+    }
+    ;;
+
+    -z) {
+        USE_ZGREP=y
+        shift
+    }
+    ;;
+
+    -B) {
+        before_context="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -A) {
+        after_context="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -f|--follow) {
+        FOLLOW=y
+        shift
+    }
+    ;;
+
+    -s) {
+        SYMLINK_RESULTS=y
+        shift
+    }
+    ;;
+
+    -o|--occur) {
+        OCCUR=y
+        shift
+    }
+    ;;
+
+    -no|--nooccur) {
+        OCCUR=n
+        shift
+    }
+    ;;
+
+    -T|--top) { # This is a terribly inefficient option. Never use this
+        TOP=y
+        shift
+    }
+    ;;
+
+    -t|--text-only) { # This is a terribly inefficient option. Never use this
+        # I've given -I to grep. That should be sufficient.
+        KNOWN_TEXT_FILES_ONLY=y
+        shift
+    }
+    ;;
+
+    -i|--insensitive) {
+        CASE_INSENSITIVE=y
+        shift
+    }
+    ;;
+
+    -F|-l|--literal) {
+        LITERAL=y
+        shift
+    }
+    ;;
+
+    -P|--pcre) {
+        PCRE=y
+        OCCUR=n # '\(' will break it
+        shift
+    }
+    ;;
+
+    --) {
+        shift
+        break
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$(pwd)" = "$NOTES/ws/glossaries"; then
+    SYMLINK_RESULTS=y
+fi
+
+printf -- "%s\n" "# DEPTH: $DEPTH" 1>&2
+
+if test "$TOP" = "y"; then
+    export CWD="$(vc git get-top-level)"; cd "$CWD" && pwd
+fi
+
+if test "$#" -eq 1; then
+    # Keep the spaces
+    CMD="$(lit "$@")"
+else
+    CMD="$(lit -s "$@")"
+fi
+
+# Need to be able to have multiple patterns here
+# except it might also trip up occur-mode
+# So run each file path through a gauntlet of pattern matching before
+# feeding to eack
+
+pattern="$CMD"
+
+if test "$WORD_BOUNDARIES" = "y"; then
+    pattern="\b$pattern\b"
+fi
+
+# printf -- "%s\n" "$pattern"
+# exit 0
+
+if [ -z "$pattern" ]; then
+    printf -- "%s\n" "No pattern" 1>&2
+    exit 0
+fi
+
+#pattern="$(p "$pattern" | qne)"
+# grep understands "\b"
+# it getts this correct. so don't escape
+# xargs -0 grep -I -Hn -P -- "defalias 's\b"
+# pattern="$(p "$pattern")"
+
+if test "$FOLLOW" = "y"; then
+    OPTION=-L
+else
+    OPTION=-P
+fi
+
+symlink_cmd=" \! -type l "
+if test "$SYMLINK_RESULTS" = "y"; then
+    symlink_cmd=""
+fi
+
+grep_opts="-IHn"
+
+grepcmd="grep"
+if test "$USE_ZGREP" = "y"; then
+    grepcmd="zgrep"
+fi
+
+if ! test "$USE_ZGREP" = "y"; then
+    test "$EXCLUDE_VENDOR" = "y" && grep_opts+=" --exclude=\"*vendor/*\" --exclude=\"*Godeps/*\""
+    test "$EXCLUDE_GIT" = "y" && grep_opts+=" --exclude=\"*.git/*\""
+fi
+
+test "$CASE_INSENSITIVE" = "y" && grep_opts+=" -i"
+test "$LITERAL" = "y" && grep_opts+=" -F"
+test "$PCRE" = "y" && grep_opts+=" -P"
+
+file_filter() {
+    {
+        if test "$KNOWN_TEXT_FILES_ONLY" = "y"; then
+            awk1 | while IFS=$'\n' read -r line; do
+                if pen-tt -t "$line"; then
+                    printf -- "%s\n" "$line"
+                fi
+            done
+        else
+            cat
+        fi
+    }
+}
+
+# lit "xargs -0 grep -s -I $grep_opts -- $(aqf "$pattern")"
+# exit 0
+
+# p "$grep_opts" | tv &>/dev/null
+# p "xargs -0 grep -I $grep_opts -- $pattern" | tv &>/dev/null
+
+# lit "$pattern" | tv
+# exit 0
+
+# (ic '(occur $(aqf "$pattern")))
+# (ic ')
+
+
+if test "$OCCUR" = "y"; then
+    slug="$(p "$pattern" | slugify)"
+    # The last thing in this command cannot give an ennor, or emacs will quit.
+    # Therefore, wrap in ignore-errors.
+    # For example, the keybord macro M-n may fail if you are at the endocument.
+
+    # occur_string="(occur $(aqf "$pattern") $context)(other-window 1)(delete-other-windows)(rename-buffer $(a- qf "*occur-$slug*") t)(ekm $(aqf "M-n"))"
+    occur_string="(goto-char (point-min))(search-forward $(aqf "$pattern"))(iedit-mode)"
+
+    # I need to be able to do multiple 'occur' modes within emacs.
+    # occur_string="(occur $(aqf "$pattern") $context)(other-window 1)"
+else
+    occur_string=
+fi
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+pager() {
+    if is_tty; then
+        tless -rS "$@"
+    else
+        cat
+    fi
+}
+
+file_path_pcre_filter() {
+    pattern="$1"
+
+    if [ -n "$pattern" ]; then
+        grep -P "$pattern" 2>/dev/null
+    else
+        cat
+    fi
+}
+
+filter() {
+    if ! test "$DO_FILTER" = "y"; then
+        cat
+    else
+        sed -e "/log\/build_/d" -e "/\/tags:/d"
+    fi
+}
+
+# ( find $OPTION . -maxdepth "$DEPTH" -print0 | xargs -0 grep $grep_opts -- "$pattern" ) 2>/dev/null
+
+# lit "xargs -0 grep -s -I $grep_opts -- $(aqf "$pattern")" | tv
+
+# cmd="xargs -0 grep -s -I $grep_opts $( test "$context" != "0" && printf -- "%s" "-C $context" ) -- $(aqf "$pattern" | bs '$') 2>/dev/null"
+cmd="xargs -0 $grepcmd -I $grep_opts $( test "$context" != "0" && printf -- "%s" "-C $context" ) -- $(aqf "$pattern" | bs '$')"
+# printf -- "%s\n" "$cmd" 1>&2
+
+# echo "$cmd"
+# exit $?
+
+{
+    if [ -n "$paths_file" ]; then
+        cat "$paths_file" | umn
+    else
+        if test "$SHOW_FULL_PATH" = "y"; then
+            cwd="$(pwd)"
+            cd /
+            eval "find $OPTION $(aqf-real "$cwd") -maxdepth $DEPTH -type f $symlink_cmd"
+        else
+            eval "find $OPTION . -maxdepth $DEPTH -type f $symlink_cmd"
+        fi
+    fi
+} | filter | file_path_pcre_filter "$filename_pattern" | file_filter | tr '\n' '\0' | eval "$cmd"

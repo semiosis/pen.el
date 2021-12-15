@@ -2,8 +2,6 @@
 
 # If stdin is not pregrepped, it serves as the list of files to search
 
-aqf() { aqf-real "$@"; }
-
 origcmd="$(cmd "$@")"
 
 UPDATE=y
@@ -111,14 +109,6 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-pager() {
-    if is_tty; then
-        less -rS "$@"
-    else
-        cat
-    fi
-}
-
 #export EXCLUDE_VENDOR
 #export EXCLUDE_GIT
 #export OCCUR
@@ -136,8 +126,6 @@ read -r -d '' maps <<- 'HEREDOC'
 	(define-key compilation-button-map (kbd "RET") 'compile-goto-error)
 	HEREDOC
 
-# lit "(cd $(aqf "$CWD"))(grep-mode)$(p "$maps" | tr -d '\n')"
-
 if test "$PREGREPPED" = "y"; then
     # This is for gli
     cd /
@@ -145,34 +133,18 @@ fi
 
 CWD="$(pwd)"
 
-# ivy-occur-grep-mode
-# ecmd="(cd $(aqf "$CWD"))(ivy-occur-grep-mode)$(p "$maps" | tr -d '\n')$occur_string(visual-line-mode -1)"
-# ecmd="(cd $(aqf "$CWD"))(grep-mode)(ivy-wgrep-change-to-wgrep-mode)$(p "$maps" | tr -d '\n')$occur_string(visual-line-mode -1)"
-# (let ((wgrep-header/footer-parser (lambda ()))) (ivy-wgrep-change-to-wgrep-mode))
-# (cl-letf (((symbol-function 'wgrep-prepare-header/footer) #'ignore))(ivy-wgrep-change-to-wgrep-mode))
-
-# ecmd="(cd $(aqf "$CWD"))(grep-mode)(ivy-wgrep-change-to-wgrep-mode)$(p "$maps" | tr -d '\n')$occur_string(visual-line-mode -1)"
-
-ecmd="(cd $(aqf "$CWD"))(grep-mode)"
-
-# pl "$ecmd" | tv &>/dev/null
-
-# This is needed to prevent emacs from closing instantly if the command fails for whatever reason.
+ecmd="(cd $(cmd-nice-posix "$CWD"))(grep-mode)"
 ecmd="(ignore-errors $ecmd)"
 
-# ci is still slow if the cached file is huge
-# IFS= read -rd '' input < <(export UPDATE; odn ci -t 300 find-and-grep "$@" | show-pipe)
-
-# This is needed for emacs' sh-notty
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
 grep() {
     if test "$PARSE_OPTIONS" = "y"; then
-        hs-grep -Hn "$@"
+        command grep -Hn "$@"
     else
-        hs-grep -Hn -- "$@"
+        command grep -Hn -- "$@"
     fi
 }
 
@@ -180,40 +152,18 @@ filter() {
     if test "$DO_FILTER" = "n"; then
         cat
     else
-        # grep -v cscope-ctags | 
         sed -e "/log\/build_/d" -e "/\/tags:/d" | sed 's/(standard input):\s*[0-9]\+://'
     fi
 }
-
-# stdin is either grep output for display or a list of files/grep output
-# to use as the files to be used in grep
 
 if stdin_exists; then
     if test "$PREGREPPED" = "y"; then
         IFS= read -rd '' input < <(awk 1 | filter)
     else
-        # IFS= read -rd '' input < <(awk 1 | filter | xargs grep "$@")
-
         IFS= read -rd '' input < <(awk 1 | cut -d : -f 1 | filter | xargs grep -Hn "$@" -- 2>/dev/null; )
-
-        # IFS= read -rd '' input < <(awk 1 | filter | while read line; do grep "$@" "$line" 2>/dev/null; done)
-
-        #CMD="$(lit -s "$@")"
-        #IFS= read -rd '' input < <(awk 1 | while read line; do 
-        #    if test "$PARSE_OPTIONS" = "y"; then
-        #        grep "$@" "$line" 2>/dev/null;
-        #    else
-        #        CMD="$(cmd "$@")"
-        #        : ${CMD:="$(cmd "$@")"}
-
-        #        grep "$CMD" "$line" 2>/dev/null;
-        #    fi
-
-        #    grep "$@" "$line" 2>/dev/null;
-        #done)
     fi
 else
-    IFS= read -rd '' input < <(export UPDATE; odn ci -t 300 find-and-grep "$@" | filter)
+    IFS= read -rd '' input < <(export UPDATE; 0</dev/null pen-ci -t 300 pen-find-and-grep "$@" | filter)
 fi
 
 if [ -n "$input" ]; then
@@ -221,7 +171,7 @@ if [ -n "$input" ]; then
         if test "$PREGREPPED" = "y"; then
             echo "pregrepped input"
         else
-            echo "cd $(aqf $CWD); $0 $origcmd" | mnm
+            echo "cd $(cmd-nice-posix $CWD); $0 $origcmd" | pen-mnm
         fi
         echo These extra lines are needed for the compilation-mode issue
         echo See "wgrep-prepare-header/footer"
@@ -236,22 +186,16 @@ if [ -n "$input" ]; then
         }
     } | dos2unix | {
         if is_tty; then
-            # mnm | orspe -noonly -e "$ecmd"
-            # Sadly, mnm appears to break wgrep-mode
+            # pen-mnm | orspe -noonly -e "$ecmd"
+            # Sadly, pen-mnm appears to break wgrep-mode
             # grep-mode is fine.
-            mnm | orspe -noonly -e "$ecmd"
+            pen-mnm | orspe -noonly -e "$ecmd"
             result="$?"
             if ! test "$result" -eq 0; then
-                printf -- "%s\n" "$input" | pager
+                printf -- "%s\n" "$input" | pen-pager
             fi
         else
             cat
-
-            #if test "$PREGREPPED" = "y"; then
-            #    cat
-            #else
-            #    sed "1,4d"
-            #fi
         fi
     }
 else

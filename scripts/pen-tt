@@ -1,0 +1,168 @@
+#!/bin/bash
+
+# For testing things
+
+
+# TODO
+# elif test -e "$unminimised"; then
+
+option="$1"
+
+case "$option" in
+    -v)
+        {
+            VERBOSE=t
+            set -xv
+            shift
+        }
+        ;;
+    *)
+esac
+
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -mt) {
+        fp="$prev_operand"
+        pattern="$3"; : ${pattern:="text"}
+
+        mimetype="$(mt "$fp")"
+
+        pen-tt "$mimetype" -p "$pattern"
+        exit $?
+    }
+    ;;
+
+    *) break;
+esac; prev_operand="$opt"; done
+
+
+if test $# -eq 2; then
+    operator="$1"
+    subject="$2"
+
+    case "$operator" in
+        -t) { # a text file
+            mimetype="$(mt "$subject")"
+
+            pen-tt "$mimetype" -p 'ml$' || pen-tt "$mimetype" -p 'json' || pen-tt "$mimetype" -p 'text' || pen-tt "$mimetype" -p 'script'
+
+            exit "$?"
+        }
+        ;;
+
+        -url ) { # an integer
+            [[ "$subject" =~ ^https?:// ]]
+            exit $?
+        }
+        ;;
+
+        -i ) { # an integer
+            [[ "$subject" =~ ^-?[0-9]+$ ]]
+            exit $?
+        }
+        ;;
+
+        -!|-shebang) { # has shebang
+            test "$(head -c 2 "$subject")" = "#!"
+
+            exit "$?"
+        }
+        ;;
+
+        -fc) { # file exists upper or lowercase extension
+            fp="$subject"
+            fn=$(basename "$fp")
+            dn=$(dirname "$fp")
+            ext="${fn##*.}"
+            mant="${fn%.*}"
+
+            ext_uc="$(p "$ext" | tr '[:lower:]' '[:upper:]')"
+            ext_lc="$(p "$ext" | tr '[:upper:]' '[:lower:]')"
+
+            fp_uc="$dn/$mant.$ext_uc"
+            fp_lc="$dn/$mant.$ext_lc"
+
+            test -f "$fp_uc" || test -f "$fp_lc"
+
+            exit "$?"
+        }
+        ;;
+
+        *) {
+            false
+            exit $?
+        }
+        ;;
+
+    esac
+fi
+
+pl() {
+    printf -- "%s\n" "$@"
+}
+
+operator="$1"
+
+case "$operator" in
+    -exit ) { # a shell command
+        shift
+
+        # This executues a command
+        # It's pretty useless.
+
+        "$@" &>/dev/null
+
+        exit $?
+    }
+    ;;
+esac
+
+if ! test $# -eq 3; then exit 0; fi
+
+subject="$1"
+operator="$2"
+pattern="$3"
+
+case "$operator" in
+    "~"|~|-p) { # pcre
+        printf -- "%s\n" "$subject" | grep -q -P "$pattern"
+        exit $?
+    }
+    ;;
+
+    -fz) { # fuzzy match
+        # This should match if it's highly likely that it's the thing.
+        # convert all to lowercase
+        # Use fzf to do the match.
+
+        lit -s "$subject" | $HOME/source/git/fzf/bin/fzf --no-sort -f "$pattern" &>/dev/null
+        exit $?
+    }
+    ;;
+
+    -v) { # vim regex
+        false # figure out how to do a vim regex
+        exit $?
+    }
+    ;;
+
+    -s) { # sed pattern
+        result="$(lit -s "$subject" | sed -n "/$pattern/")"
+        test -n "$result"
+        exit $?
+    }
+    ;;
+
+    -m|-mt) { # mime string
+        pen-tt "$(mt "$subject")" -p "$pattern"
+        exit $?
+    }
+    ;;
+
+    *)
+esac
+
+
+printf -- "%s\n" "Unknown test $(aqf "$subject") $(aqf "$operator") $(aqf "$pattern")" 1>&2
+
+exit 1
