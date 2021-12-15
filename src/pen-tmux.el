@@ -124,7 +124,4 @@ START and END can be in either order."
         (pen-snc (concat "unbuffer pen-tm -f -d -te spv " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))))))
 (defalias 'pen-tm-spv 'pen-spv)
 
-(define-key pen-map (kbd "M-l s") 'pen-sph)
-(define-key pen-map (kbd "M-l S") 'pen-spv)
-
 (provide 'pen-tmux)

@@ -753,6 +753,9 @@
 ;; (define-key org-mode-map (kbd "M-h") nil)
 (define-key org-mode-map (kbd "M-h") 'org-mark-element)
 
+(define-key pen-map (kbd "M-l s") 'pen-sph)
+(define-key pen-map (kbd "M-l S") 'pen-spv)
+
 (pen-autosuggest-mode t)
 
 ;; Initial load of prompt functions
