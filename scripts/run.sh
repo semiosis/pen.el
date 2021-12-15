@@ -18,6 +18,10 @@ export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 export PATH="$PATH:/root/go/bin"
 
+if test -n "$USER"; then
+    echo "$USER" > ~/pen_user.txt
+fi
+
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
