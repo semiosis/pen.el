@@ -6,8 +6,6 @@ export GY_CMD
 
 export SHELL=bash
 
-aqf() { apply qf "$@"; }
-
 parent_sn="$(ps -o comm= $PPID)"
 
 . `which pen-bash-library.sh`
@@ -93,7 +91,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -vimdir) {
         vimdir="$2"
-        extra_commands+="|let &rtp = substitute(&rtp, \"$HOME/\.vim\", $(aqf "$vimdir"), \"g\")"
+        extra_commands+="|let &rtp = substitute(&rtp, \"$HOME/\.vim\", $(cmd-nice-posix "$vimdir"), \"g\")"
         shift
         shift
     }
@@ -177,7 +175,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -rt) {
         rt_cmd="$2"
-        extra_commands+="|call RTCmdSetup($(aqf "$rt_cmd" | bs '|'))"
+        extra_commands+="|call RTCmdSetup($(cmd-nice-posix "$rt_cmd" | bs '|'))"
         shift
         shift
     }
@@ -251,7 +249,7 @@ esac; done
 
 if [ -n "$normal_commands" ]; then
     normal_commands="$(p "$normal_commands" | qne | qne)"
-    opts+=" -c $(aqf "normal $normal_commands") "
+    opts+=" -c $(cmd-nice-posix "normal $normal_commands") "
 fi
 
 if [ -n "$GOTO_LINE" ] && test -n "$GOTO_COLUMN"; then
@@ -262,9 +260,9 @@ if [ -n "$GOTO_LINE" ] && test -n "$GOTO_COLUMN"; then
         LEFTNESS=" | normal! zH"
     fi
 
-    opts+=" -c $(aqf "cal cursor($GOTO_LINE, $GOTO_COLUMN)$LEFTNESS") "
+    opts+=" -c $(cmd-nice-posix "cal cursor($GOTO_LINE, $GOTO_COLUMN)$LEFTNESS") "
 elif [ -n "$GOTO_LINE" ]; then
-    opts+=" -c $(aqf "exe $GOTO_LINE") "
+    opts+=" -c $(cmd-nice-posix "exe $GOTO_LINE") "
 fi
 
 if [ -n "$pattern" ]; then
@@ -310,7 +308,7 @@ fi
 
 CMD="$(cmd "$@")"
 
-cmd=" -c $(aqf "$extra_commands_prepend$extra_commands") $opts $CMD"
+cmd=" -c $(cmd-nice-posix "$extra_commands_prepend$extra_commands") $opts $CMD"
 
 if test -n "$vimrc"; then
     bin="$bin -u \"$vimrc\""
@@ -337,7 +335,7 @@ if test "$LOCATE_IT" = "y"; then
 
         CMD="$(cmd "$@")"
 
-        cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+        cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
 
         eval "$bin $cmd $w"
     fi
@@ -355,7 +353,7 @@ if [ $# -eq 1 ]; then
 
             CMD="$(cmd "$@")"
 
-            cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+            cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
 
             cmd="$bin $cmd $w"
         else
@@ -366,7 +364,7 @@ if [ $# -eq 1 ]; then
                 fp="$(p "$last_arg" | cut -d : -f 1)"
                 GOTO_LINE="$(p "$last_arg" | cut -d : -f 2)"
                 GOTO_COLUMN=0
-                opts+=" -c $(aqf "cal cursor($GOTO_LINE, $GOTO_COLUMN)") "
+                opts+=" -c $(cmd-nice-posix "cal cursor($GOTO_LINE, $GOTO_COLUMN)") "
             fi
 
             ext="${fp##*.}"
@@ -388,7 +386,7 @@ if [ $# -eq 1 ]; then
 
                 CMD="$(cmd "$@")"
 
-                cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+                cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
 
                 cmd="$bin $cmd $last_arg"
             else
@@ -399,7 +397,7 @@ if [ $# -eq 1 ]; then
 
                     CMD="$(cmd "$@")"
 
-                    cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+                    cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
 
                     cmd="$bin $cmd $tf_webpage"
                 else
@@ -414,12 +412,12 @@ if [ $# -eq 1 ]; then
 
         CMD="$(cmd "$@")"
 
-        cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+        cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
 
         cmd="$bin $(aq "$rp") $cmd"
     fi
 else
-    cmd=" -c $(aqf "$extra_commands") $opts $CMD"
+    cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
 
     cmd="$bin $cmd"
 fi
