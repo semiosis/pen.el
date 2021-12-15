@@ -212,34 +212,34 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     +/*) { # pattern
-        pattern="$(p "$opt" | sed 's=^+/==' | s chomp)"
+        pattern="$(p "$opt" | sed 's=^+/==' | chomp)"
 
         shift
     }
     ;;
 
     +*:*) {
-        GOTO_LINE="$(p "$opt" | mcut -d'[+:]' -f2)"
-        GOTO_COLUMN="$(p "$opt" | mcut -d'[+:]' -f3)"
+        GOTO_LINE="$(p "$opt" | pen-mcut -d'[+:]' -f2)"
+        GOTO_COLUMN="$(p "$opt" | pen-mcut -d'[+:]' -f3)"
 
         shift
     }
     ;;
 
     +[0-9]*[^0-9]*) {
-        normal_commands+="$(p "$opt" | sed 's/^.//' | s chomp | qne)"
+        normal_commands+="$(p "$opt" | sed 's/^.//' | chomp | pen-qne)"
         shift
     }
     ;;
 
     +[0-9]*) {
-        GOTO_LINE="$(p "$opt" | mcut -d+ -f2)"
+        GOTO_LINE="$(p "$opt" | pen-mcut -d+ -f2)"
         shift
     }
     ;;
 
     +*) {
-        normal_commands+="$(p "$opt" | sed 's/^.//' | s chomp | qne)"
+        normal_commands+="$(p "$opt" | sed 's/^.//' | chomp | pen-qne)"
         shift
     }
     ;;
@@ -247,14 +247,24 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+apply() {
+    f="$1"
+    shift
+
+    for (( i = 1; i <= $#; i++ )); do
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG" | eval "$f"
+    done
+}
+
 if [ -n "$normal_commands" ]; then
-    normal_commands="$(p "$normal_commands" | qne | qne)"
+    normal_commands="$(p "$normal_commands" | pen-qne | pen-qne)"
     opts+=" -c $(cmd-nice-posix "normal $normal_commands") "
 fi
 
 if [ -n "$GOTO_LINE" ] && test -n "$GOTO_COLUMN"; then
 
-    GOTO_COLUMN="$(a- "awk 1 | bc" "$GOTO_COLUMN + 1")"
+    GOTO_COLUMN="$(apply "awk 1 | bc" "$GOTO_COLUMN + 1")"
 
     if test "$JUSTIFY_LEFT" = "y"; then
         LEFTNESS=" | normal! zH"
@@ -271,7 +281,7 @@ if [ -n "$pattern" ]; then
 
     ncmd="/$pattern"
 
-    ncmd="$(p "silent! normal! $ncmd" | qne)"
+    ncmd="$(p "silent! normal! $ncmd" | pen-qne)"
     ncmd="$(p "exe \"$ncmd\r\"" | q)"
     opts+=" -c $ncmd "
 
