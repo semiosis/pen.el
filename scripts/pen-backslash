@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+# I need to make 'unescape'
+
+# This script doesn't work very well for [] or perhaps other sed special
+# characters
+# This is a workaround
+# bs "[" | bs "]"
+
+# similar to bs but does not escape backslash as well
+
+bs() {
+    chars="$1"
+    : ${chars:=" "}
+    chars="$(printf -- "%s" "$chars" | qne)"
+
+    sed "s_\\([$chars]\\)_\\\\\\1_g"
+}
+
+bs "$@"

@@ -1784,7 +1784,7 @@ case "$f" in
             ;;
 
             -c) {
-                dir="$(p "$2" | bs "()'")"
+                dir="$(p "$2" | pen-bs "()'")"
                 dir="$(eval echo -e "$dir")" # expand
                 CWD="$dir"
                 cd "$CWD"
