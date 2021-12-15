@@ -206,14 +206,45 @@
   (ignore-errors
     (term-char-mode)))
 
+(defun term (program)
+  "Start a terminal-emulator in a new buffer.
+The buffer is in Term mode; see `term-mode' for the
+commands to use in that buffer.
+
+\\<term-raw-map>Type \\[switch-to-buffer] to switch to another buffer."
+  (interactive (list (read-from-minibuffer "Run program: "
+					                                 (or explicit-shell-file-name
+					                                     (getenv "ESHELL")
+					                                     shell-file-name))))
+  (set-buffer (make-term "terminal" program))
+  (term-mode)
+  ;; (term-line-mode)
+  (term-char-mode)
+  ;; (term-send-input)
+  ;; (setq buffer-read-only nil)
+  (switch-to-buffer "*terminal*")
+
+  ;; This is an addition
+  (current-buffer))
+
 (defun pen-term (program &optional closeframe modename buffer-name reuse)
   (interactive (list (read-string "program:")))
   (if (and buffer-name reuse (get-buffer buffer-name))
       (switch-to-buffer buffer-name)
     (with-current-buffer (term program)
 
+      ;; (ekm "h")
+
       ;; This takes care of read-only-mode upon starting
-      (run-with-idle-timer 0.1 nil 'pen-try-init-char-mode)
+      (run-with-idle-timer 0.1 nil
+                           `(lambda ()
+                              (with-current-buffer
+                                  ,(current-buffer)
+                                ;; I couldn't figure out the term read-only bug
+                                ;; So sending a C-l is a workaround
+                                (pen-sn "tmux send-keys C-l"))
+                              ;; 'pen-try-init-char-mode
+                              ))
 
       ;; (term-send-raw-string "hi")
       (if closeframe
@@ -223,7 +254,8 @@
             (funcall modefun)))
 
       (if buffer-name
-          (rename-buffer buffer-name t)))))
+          (rename-buffer buffer-name t))
+      (current-buffer))))
 
 (defun pen-kill-buffer-and-window ()
   "Kill the current buffer and delete the selected window."
