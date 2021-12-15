@@ -1,5 +1,4 @@
 #!/bin/bash
-export TTY
 
 if test "$DEBUG_MODE" = "y"; then
     set -v
@@ -445,7 +444,7 @@ copy-line() {
         else
             clean-repl
         fi
-    } | xc -i -n
+    } | pen-xc -i -n
 }
 
 f="$1"
@@ -876,15 +875,15 @@ case "$f" in
     }
     ;;
 
-    xc) {
+    xc|pen-xc) {
         exec 2>/dev/null
         exec 1>/dev/null
-        zsh --no-rcs -c "tmux load-buffer =(unbuffer xc "$@")"
+        zsh --no-rcs -c "tmux load-buffer =(unbuffer pen-xc "$@")"
     }
     ;;
 
     xv) {
-        zsh --no-rcs -c "tmux save-buffer - | xc "$@""
+        zsh --no-rcs -c "tmux save-buffer - | pen-xc "$@""
     }
     ;;
 
@@ -903,7 +902,7 @@ case "$f" in
     ;;
 
     xp) {
-        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(unbuffer xc "$@")"
+        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(unbuffer pen-xc "$@")"
         tmux paste-buffer -pr -b myclipboard
 
     }
@@ -1459,7 +1458,7 @@ case "$f" in
             *) break;
         esac; done
 
-        unbuffer xc | while IFS= read -N 1 char; do
+        unbuffer pen-xc | while IFS= read -N 1 char; do
                 tmux send-keys -l "$char"
 
         done
@@ -2211,7 +2210,7 @@ case "$f" in
 
     scrape-things-fast) {
         cap="$(pen-tm cap)"
-        printf -- "%s" "$cap" | filter-things.sh | pen-tm -f -S -tout nw -noerror "mfz -m | xc -i"
+        printf -- "%s" "$cap" | filter-things.sh | pen-tm -f -S -tout nw -noerror "mfz -m | pen-xc -i"
     }
     ;;
 
@@ -2225,9 +2224,9 @@ case "$f" in
 
         urls="$(pen-tm cap | xurls | chomp)"
         if test "$(printf -- "%s" "$urls" | wc -l)" -gt 0; then
-            printf -- "%s" "$urls" | pen-tm fzf -1 | xc -i -n
+            printf -- "%s" "$urls" | pen-tm fzf -1 | pen-xc -i -n
         else
-            unbuffer xc -i -n "$urls"
+            unbuffer pen-xc -i -n "$urls"
         fi
     }
     ;;
@@ -2638,7 +2637,7 @@ case "$f" in
     ;;
 
     urls) {
-        pen-tm capp | xurls | tail -n 1 | xc -i -n
+        pen-tm capp | xurls | tail -n 1 | pen-xc -i -n
         pen-tm capp | xurls | soak | pen-sps pen-v
     }
     ;;
@@ -2774,9 +2773,9 @@ case "$f" in
         if test "$NOCONTEXT" = "y"; then
             shpv "pane_start_command" | {
                 sed -e 's/^.*start undef;\s\+//' -e 's/\s*;\s*ret=.*$//'
-            } | xc -i -n
+            } | pen-xc -i -n
         else
-            shpv "pane_start_command" | xc -i -n
+            shpv "pane_start_command" | pen-xc -i -n
         fi
     }
     ;;
@@ -3215,7 +3214,7 @@ case "$f" in
 
         pen-tm -f cat | sed -n "$((y + 1))p" | {
             clean-repl
-        } | xc -i -n
+        } | pen-xc -i -n
     }
     ;;
 
@@ -3279,7 +3278,7 @@ case "$f" in
         pane_name="$(tmux display-message -p "$format_string")"
         tmux display-message "copied pane name: $format_string"
 
-        printf -- "%s\n" "$pane_name" | xc -n
+        printf -- "%s\n" "$pane_name" | pen-xc -n
     }
     ;;
 
@@ -3290,7 +3289,7 @@ case "$f" in
         pane_name="$(tmux display-message -p "$format_string")"
         tmux display-message "copied pane id: $format_string"
 
-        p "$pane_name" | xc
+        p "$pane_name" | pen-xc
     }
     ;;
 
