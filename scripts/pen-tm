@@ -369,7 +369,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         IFS= read -rd '' input < <(cat /dev/stdin)
 
-        exec < <(s chomp <<< "$input")
+        exec < <(chomp <<< "$input")
         shift
     }
     ;;
@@ -910,7 +910,7 @@ case "$f" in
     ;;
 
     ep|edit-paste|vp|vipe-paste) {
-        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(pen-tm -sout sph \"echo -n '' | vipe\" | cat | pen-str chomp)"
+        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(pen-tm -sout sph \"echo -n '' | vipe\" | cat | chomp)"
 
         tmux paste-buffer -r -b myclipboard
 
@@ -2223,7 +2223,7 @@ case "$f" in
 
     lasturl) {
 
-        urls="$(pen-tm cap | xurls | pen-str chomp)"
+        urls="$(pen-tm cap | xurls | chomp)"
         if test "$(printf -- "%s" "$urls" | wc -l)" -gt 0; then
             printf -- "%s" "$urls" | pen-tm fzf -1 | xc -i -n
         else
