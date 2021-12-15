@@ -676,7 +676,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     +wbdf) {
         ON_BUFKILL_DELFRAME_BUTTER_TO_STDOUT=y
-        tf_buffer_path="$(odn ux tf path || echo /dev/null)"
+        tf_buffer_path="$(0</dev/null pen-ux tf path || echo /dev/null)"
         elisp+="(on-kill-write-and-close-frame $(cmd-nice-posix "$tf_buffer_path"))"
         shift
     }
@@ -684,7 +684,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     +ofq) {
         ON_DELFRAME_EVAL_TO_STDOUT="$2"
-        tf_buffer_path="$(odn ux tf path | ds ofq || echo /dev/null)"
+        tf_buffer_path="$(0</dev/null pen-ux tf path | pen-ds ofq || echo /dev/null)"
         elisp+="(on-frame-quit-write $(cmd-nice-posix "$tf_buffer_path" "$ON_DELFRAME_EVAL_TO_STDOUT"))"
         shift
         shift
@@ -694,7 +694,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     +ooq) {
 
         ON_DELFRAME_EVAL_TO_STDOUT="$2"
-        tf_buffer_path="$(odn ux tf path || echo /dev/null)"
+        tf_buffer_path="$(0</dev/null pen-ux tf path || echo /dev/null)"
         elisp+="(on-kill-write-and-close-frame $(cmd-nice-posix "$tf_buffer_path" "$ON_DELFRAME_EVAL_TO_STDOUT"))"
         shift
         shift
@@ -746,7 +746,7 @@ if test -n "$elisp"; then
 fi
 
 if test -n "$elisp"; then
-    printf -- "%s" "$elisp" | ds -s elast
+    printf -- "%s" "$elisp" | pen-ds -s elast
 fi
 
 if test "$1" = "-S"; then
@@ -806,7 +806,7 @@ if stdin_exists; then
         fi
     fi
 
-    tempfile="$(odn mktemp emacs-stdin-$USER.XXXXXXX --tmpdir | ds e-stdin-file)"
+    tempfile="$(0</dev/null mktemp emacs-stdin-$USER.XXXXXXX --tmpdir | pen-ds e-stdin-file)"
     cat > "$tempfile"
 
     if [ -n "$GOTO_LINE" ] && [ -n "$GOTO_COLUMN" ]; then
@@ -1145,7 +1145,7 @@ case "$f" in
         unset TTY
         export NO_SET_TTY=y
 
-        tf_thing="$(ux tf thing || echo /dev/null)"
+        tf_thing="$(pen-ux tf thing || echo /dev/null)"
         trap "rm \"$tf_thing\" 2>/dev/null" 0
 
         unbuffer e -nosettty c -n -e "(write-string-to-file (str $val) $(aqf-nice "$tf_thing"))" &>/dev/null
@@ -1450,7 +1450,7 @@ case "$f" in
             elispsh="-e $(cmd-nice-posix "(progn (ignore-errors $elisp))")"
         fi
 
-        pen-pl "$elispsh" | ds -s elispsh
+        pen-pl "$elispsh" | pen-ds -s elispsh
 
         CMD="$(cmd "$@")"
 
@@ -1539,7 +1539,7 @@ case "$f" in
     ;;
 
     tf|-tf) {
-        tf_scratch="$(ux tf scratch || echo /dev/null)"
+        tf_scratch="$(pen-ux tf scratch || echo /dev/null)"
 
         e c "$tf_scratch" "$@"
     }
