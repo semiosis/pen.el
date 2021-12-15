@@ -20,3 +20,7 @@ export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
+
+if [ -f ~/.shellrc ]; then
+    . ~/.shellrc
+fi

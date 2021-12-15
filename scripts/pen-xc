@@ -216,7 +216,7 @@ else
         fi
     } | {
         if test "$USE_PAGER" = "y"; then
-            pager
+            pen-pager
         else
             cat
         fi
