@@ -952,13 +952,9 @@ case "$f" in
     ;;
 
     running) { # test running
-
         if [ -n "$SOCKET" ]; then
-
             $EMACSCLIENT_BIN -a false -e 't' -s ~/.emacs.d/server/$SOCKET &>/dev/null
-
         else
-
             $EMACSCLIENT_BIN -a false -e 't' &>/dev/null
         fi
 
