@@ -47,6 +47,7 @@
 (require 'pen-edit)
 (require 'pen-client)
 (require 'pen-autosuggest)
+(require 'pen-shackle)
 (require 'helpful)
 
 ;; Not sure I need the following in pen.el
