@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# This stands for 'my cut'
+
+# https://github.com/sstadick/hck
+
+: ${field:="1"}
+: ${delim:="[\t ]+"}
+
+while getopts -- f:d: opt &>/dev/null; do
+case $opt in
+    f)  field="$OPTARG";;
+    d)  delim="$OPTARG";;
+esac
+done
+
+awk -F "$delim" "{print \$$field}"

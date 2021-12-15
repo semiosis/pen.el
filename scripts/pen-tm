@@ -148,7 +148,7 @@ pl() {
     return 0
 }
 
-shell="bash; pak ."
+shell="bash; pen-pak ."
 shell="zsh"
 shell="bash"
 
@@ -1373,7 +1373,7 @@ case "$f" in
         }
     else
             printf -- "%s\n" "session: $session_name does not exist"
-            pak c
+            pen-pak c
         fi
         exit $?
     }
@@ -1889,7 +1889,7 @@ case "$f" in
         esac
 
         cmd_pre="$cmd_pre stty stop undef; stty start undef; "
-        test "$PRESS_ANY_KEY_START" = "y" && cmd_pre="$cmd_pre pak s; "
+        test "$PRESS_ANY_KEY_START" = "y" && cmd_pre="$cmd_pre pen-pak s; "
 
         if test "$HAS_STDIN" = "y"; then
             ff0="$(pen-ux mkfifo tm_stdin)"
@@ -1936,9 +1936,9 @@ case "$f" in
         cmd_post="$cmd_post; ret=\$?; printf -- \"%s\" \$ret > \"$tf_rc\""
 
         if test "$PRESS_ANY_KEY_FINISH" = "y"; then
-            cmd_post="$cmd_post; pak $PRESS_ANY_KEY_FINISH_KEY"
+            cmd_post="$cmd_post; pen-pak $PRESS_ANY_KEY_FINISH_KEY"
         elif test "$PRESS_ANY_KEY_ON_ERROR" = "y"; then
-            cmd_post="$cmd_post; test \$ret -ne 0 && ( p 'exit code '\$ret' => '; pak )"
+            cmd_post="$cmd_post; test \$ret -ne 0 && ( p 'exit code '\$ret' => '; pen-pak )"
         fi
 
         if test "$REPEAT_COMMAND" = "y"; then
@@ -2016,7 +2016,7 @@ case "$f" in
         printf -- "%s\n" "$fullcmd" | pen-ds -s tm
 
         if test "$SMART_SPLIT" = "y"; then
-            if test-should-hsplit; then
+            if pen-test-should-hsplit; then
                 SPLIT=-v
             else
                 SPLIT=-h
@@ -2026,9 +2026,7 @@ case "$f" in
         ID_FORMAT="#{session_id}:#{window_id}.#{pane_id}"
 
         if test "$SAFE" = "y"; then
-
-            fullcmd="bash -c $(aqfd "$fullcmd") || pak -m 'bad syntax'"
-
+            fullcmd="bash -c $(cmd-nice-posix "$fullcmd") || pen-pak -m 'bad syntax'"
         fi
 
         if test "$TRAPINT" = "y"; then
@@ -2996,7 +2994,7 @@ case "$f" in
 
         if ! test "$ret" -eq "130"; then
 
-            pen-tm -d spv "unbuffer pen-tm pp -a '$CALLER_PANE' | $filter; pak -m \"source pane closed\""
+            pen-tm -d spv "unbuffer pen-tm pp -a '$CALLER_PANE' | $filter; pen-pak -m \"source pane closed\""
             tmux select-pane -t "$CALLER_PANE"
 
         fi
@@ -3257,7 +3255,7 @@ case "$f" in
         pen-tm n "$p1 :: NOT IMPLEMENTED"
         pl "git status for everything below"
         pl "I could open a hydra here or I could use lots of different ranger bindings"
-        pak
+        pen-pak
     }
     ;;
 
@@ -3269,7 +3267,7 @@ case "$f" in
         pl "Remotes"
         git remote -v | f urls
 
-        pak
+        pen-pak
     }
     ;;
 

@@ -1,0 +1,61 @@
+#!/bin/bash
+export TTY
+
+: ${SEDOPTS:="-u"}
+
+# . $HOME/.shell_environment
+export DUMP="$HOME/dump"
+export NOTES="/root/notes"
+export EMACSD="/root/.emacs.d"
+export GOPATH="$HOME/go"
+export GOBIN="/$HOME/go/bin"
+export TMPDIR="/tmp"
+export PENELD="$EMACSD/pen.el"
+export PEN_SCRIPTS="$PENELD/scripts"
+export PROMPTSD="$EMACSD/prompts"
+export PROMPTS="$PROMPTSD/prompts"
+export BROWSER="eww -x"
+
+sn="$(basename "$0")"
+
+# Use arrays here
+
+unminimise() {
+    sed $SEDOPTS -e "s#\$DUMP#${DUMP/}#g" \
+                 -e "s#\$NOTES#${NOTES}#g" \
+                 -e "s#\$PROMPTS#${PROMPTS}#g" \
+                 -e "s#\$EMACSD#${EMACSD}#g" \
+                 -e "s#\$TMP#${TMP}#g" \
+                 -e "s#\$HOME#${HOME}#g" \
+                 -e "s#\${GOPATH%%:\*}#${GOPATH%%:\*}#g" \
+                 -e "s#\$PEN_SCRIPTS#${PEN_SCRIPTS}#g" \
+                 -e "s#^~/#${HOME}/#g" \
+                 -e "s#^~\$#${HOME}#g" \
+                 | cat
+}
+
+minimise() {
+    sed $SEDOPTS -e "s#${HOME}${HOME}#${HOME}#g" \
+                 -e "s#${NOTES}#\$NOTES#g" \
+                 -e "s#^/home/[a-zA-Z]\+#$HOME#g" \
+                 -e "s#^/root#$HOME#g" \
+                 -e "s#\([\"' =]\)/home/[a-zA-Z]\+#\1$HOME#g" \
+                 -e "s#^/Users/[^/]\+#\$HOME#g" \
+                 -e "s#\([\"' =]\)/Users/[a-zA-Z]\+#\1$HOME#g" \
+                 -e "s#${DUMP}#\$DUMP#g" \
+                 -e "s#${PROMPTS}#\$PROMPTS#g" \
+                 -e "s#${EMACSD}#\$EMACSD#g" \
+                 -e "s#${TMP}#\$TMP#g" \
+                 -e "s#${PEN_SCRIPTS}#\$PEN_SCRIPTS#g" \
+                 -e "s#${GOPATH%%:*}#\${GOPATH%%:\*}#g" \
+                 -e "s#${HOME}#\$HOME#g" \
+                 | cat
+}
+
+if test "$1" = "-x" || test "$sn" = "umn" || test "$sn" = "unminimise.sh"; then
+    unminimise
+elif test "$sn" = "m" || test "$sn" = "mnm" || test "$sn" = "minimise.sh"; then
+    unminimise | minimise
+else
+    cat
+fi

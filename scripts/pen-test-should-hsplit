@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+exec 0</dev/null
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+eval `pen-tm-resize`
+
+test "True" = "$(python -c "print($COLUMNS / $LINES < 2.5)")"

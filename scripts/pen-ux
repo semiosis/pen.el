@@ -3,7 +3,44 @@
 # ( echo "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null >> /tmp/pen-ux.log ) &>/dev/null
 
 # must be bash and not zsh
-source /home/shane/scripts/u.f.sh
+# source /home/shane/scripts/u.f.sh
+longest_common_prefix() {
+    declare -a names
+    declare -a parts
+    declare i=0
+
+    names=("$@")
+    name="$1"
+    while x=$(dirname "$name"); [ "$x" != "/" ]
+    do
+        parts[$i]="$x"
+        i=$(($i + 1))
+        name="$x"
+    done
+
+    for prefix in "${parts[@]}" /
+    do
+        for name in "${names[@]}"
+        do
+            if [ "${name#$prefix/}" = "${name}" ]
+            then continue 2
+            fi
+        done
+        echo "$prefix"
+        break
+    done
+}
+
+path_without_prefix() {
+    local prefix="$1/"
+    shift
+    local arg
+    for arg in "$@"
+    do
+        echo "${arg#$prefix}"
+    done
+}
+
 
 # Also known as 'u'
 

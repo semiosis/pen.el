@@ -1,0 +1,7 @@
+#!/bin/bash
+
+COLUMNS="$(tmux display-message -p '#{pane_width}')"
+LINES="$(tmux display-message -p '#{pane_height}')"
+echo "COLUMNS=$COLUMNS;"
+echo "LINES=$LINES;"
+echo "export COLUMNS LINES;"
