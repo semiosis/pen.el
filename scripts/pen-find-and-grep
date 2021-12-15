@@ -280,7 +280,7 @@ cmd="xargs -0 $grepcmd -I $grep_opts $( test "$context" != "0" && printf -- "%s"
 
 {
     if [ -n "$paths_file" ]; then
-        cat "$paths_file" | umn
+        cat "$paths_file" | pen-umn
     else
         if test "$SHOW_FULL_PATH" = "y"; then
             cwd="$(pwd)"
