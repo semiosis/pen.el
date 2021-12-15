@@ -1113,7 +1113,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         --env COLORFGBG \
         -e DISPLAY=${DISPLAY} \
         --env EMAIL \
-        --env "PEN_USER=$USER"
+        --env "PEN_USER=$USER" \
         --env GIT_AUTHOR_EMAIL \
         --env GIT_AUTHOR_NAME \
         --env GIT_COMMITTER_EMAIL \
