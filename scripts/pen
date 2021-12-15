@@ -202,6 +202,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -notm) {
+        export PEN_NO_TM=y
+        shift
+    }
+    ;;
+
     -nn) {
         no=y
         show_banner=n

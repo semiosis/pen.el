@@ -39,18 +39,10 @@ else
     CWD=/
 fi
 
-docker_maybe() {
-    if inside-docker-p; then
-        "$@"
-    else
-        cterm-docker "$@"
-    fi
-}
-
 : "${USER:="$(pen-readln "host username")"}"
 
 # This runs in the docker to the host
-docker_maybe ssh \
+cterm-docker ssh \
     -i "~/.pen/host_key" \
     -o ControlMaster=auto \
     -o ControlPath="~/ssh-controlpath-%r@%h:%p" \

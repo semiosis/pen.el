@@ -29,7 +29,9 @@ fi
 mkdir -p ~/.pen/ht-cache
 
 in-tm() {
-    if inside-docker-p && test -n "$TMUX"; then
+    if test "$PEN_NO_TM" = "y"; then
+        "$@"
+    elif inside-docker-p && test -n "$TMUX"; then
         "$@"
     elif test "$PEN_USE_GUI" = "y"; then
         "$@"
