@@ -1345,7 +1345,6 @@ case "$f" in
             session_name=localhost
         fi
 
-
         if pen-tm session-exists $session_name; then
             TMUX= tmux attach -t "$session_name:" || {
                 true
@@ -1378,7 +1377,6 @@ case "$f" in
     ;;
 
     kp) {
-
         if [ -n "$CALLER_PANE" ]; then
             tmux kill-pane -t "$CALLER_PANE"
         else
@@ -1388,14 +1386,12 @@ case "$f" in
     ;;
 
     editsession) {
-
         {
             test -f .tmux.sh && echo .tmux.sh
             test -f .tmux-minimal.sh && echo .tmux-minimal.sh
             test -f autofiles.txt && echo autofiles.txt
             test -f $NOTES/programs/tm/autofiles.txt && echo $NOTES/programs/tm/autofiles.txt
         } | pen-str join ' ' | xargs -l1 pen-tm -f -d -te nw -args pen-v
-
     }
     ;;
 
@@ -1463,21 +1459,17 @@ case "$f" in
         cmd="$1; echo \$? > $tf_returncode"
 
         tmux neww -t "$CALLER_TARGET" "$cmd"
-
         printf -- "%s\n" "$message"
 
     }
     ;;
 
     nextlayout) {
-
         tmux next-layout -t "$CALLER_TARGET"
-
     }
     ;;
 
     op|option) {
-
         TMUX_OPTION="$1"
         : ${TMUX_OPTION:="default-shell"}
 
@@ -1518,7 +1510,6 @@ case "$f" in
     ;;
 
     split|nw|neww|spv|sph|ss|new-window|rs|rsp|sps|smart|cw) {
-
         BACKGROUNDED=
         SPLIT=
         SMART_SPLIT=
