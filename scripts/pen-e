@@ -856,7 +856,7 @@ case "$f" in
     ;;
 
     fs|-fs|-fixscratch|fixscratch) {
-        $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET -e "(get-buffer-create $(aqf-nice "*scratch*"))"
+        $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET -e "(get-buffer-create $(cmd-nice-posix "*scratch*"))"
         e -s
         exit 0
     }
@@ -1069,7 +1069,7 @@ case "$f" in
         tf_thing="$(pen-ux tf thing || echo /dev/null)"
         trap "rm \"$tf_thing\" 2>/dev/null" 0
 
-        unbuffer e -nosettty c -n -e "(write-string-to-file (str $val) $(aqf-nice "$tf_thing"))" &>/dev/null
+        unbuffer e -nosettty c -n -e "(write-string-to-file (str $val) $(cmd-nice-posix "$tf_thing"))" &>/dev/null
 
         cat "$tf_thing"
         exit $?
@@ -1352,7 +1352,7 @@ case "$f" in
             :
         fi
 
-        elisp+="(get-buffer-create $(aqf-nice "*scratch*"))"
+        elisp+="(get-buffer-create $(cmd-nice-posix "*scratch*"))"
 
         if [ -n "$GOTO_BUFFER" ]; then
             elisp+="(switch-to-buffer $(cmd-nice-posix "$GOTO_BUFFER"))"
