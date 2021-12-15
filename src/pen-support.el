@@ -85,6 +85,13 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
         (messages-buffer-mode)
         (current-buffer))))
 
+;; Ensure the messages buffer exists
+(defun message-around-advice (proc &rest args)
+  (pen-messages-buffer)
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'message :around #'message-around-advice)
+
 (defun pen-message-no-echo (format-string &rest args)
   (let ((inhibit-read-only t))
     (with-current-buffer (pen-messages-buffer)
