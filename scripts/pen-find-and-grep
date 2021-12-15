@@ -268,14 +268,6 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-pager() {
-    if is_tty; then
-        tless -rS "$@"
-    else
-        cat
-    fi
-}
-
 file_path_pcre_filter() {
     pattern="$1"
 
