@@ -31,6 +31,16 @@ if printf -- "%s\n" "$sn" | grep -q 'x$'; then
     export USEGUI=y
 fi
 
+apply() {
+    f="$1"
+    shift
+
+    for (( i = 1; i <= $#; i++ )); do
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG" | eval "$f"
+    done
+}
+
 case "$sn" in
     vlf) {
         find_file_command=vlf
@@ -815,7 +825,7 @@ if stdin_exists; then
         elisp+="(goto-line $GOTO_LINE)"
     fi
 
-    new_arg_string="--eval $(a- q "(progn ($find_file_command $(a- qf "$tempfile"))(set-visited-file-name nil)(rename-buffer $(a- qf "*stdin*") t)$elisp)")"
+    new_arg_string="--eval $(apply q "(progn ($find_file_command $(apply qf "$tempfile"))(set-visited-file-name nil)(rename-buffer $(apply qf "*stdin*") t)$elisp)")"
 
     exec <"$TTY"
 
@@ -961,7 +971,7 @@ case "$f" in
         dir="$1"; : ${dir:="~/.emacs.d"}
         dir="$(eval pen-pl "$dir")" # expand
 
-        $EMACS_BIN -batch -eval "(byte-recompile-directory (expand-file-name $(a- qf "$dir")) 0)"
+        $EMACS_BIN -batch -eval "(byte-recompile-directory (expand-file-name $(apply qf "$dir")) 0)"
         exit $?
     }
     ;;
