@@ -4,7 +4,7 @@ export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 
 sn="$(basename "$0")"
 
-DISTRIBUTION=spacemacs
+DISTRIBUTION=pen-emacsd
 if ! pen-pl "$sn" | grep -q -P '^sp'; then
     EMACS_DAEMON_OVERRIDE=sp
 fi
@@ -48,7 +48,7 @@ case "$sn" in
     ;;
 
     sp) {
-        : ${DISTRIBUTION:=spacemacs}
+        : ${DISTRIBUTION:=pen-emacsd}
     }
     ;;
 esac
@@ -238,7 +238,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     qa|-qa|-quitall) {
         # For each
         {
-        unbuffer e -D spacemacs q
+        unbuffer e -D pen-emacsd q
 
         pgrep emacs | xargs kill
         } &>/dev/null
@@ -285,10 +285,10 @@ if test "$AUTO_VERSION" = "y"; then
         ;;
 
         *) {
-            EMACS_USER_DIRECTORY="$MYGIT/spacemacs"
+            EMACS_USER_DIRECTORY="$REPOS/pen-emacsd"
             EMACS_VERSION=28
-            SOCKET="SPACEMACS"
-            EMACS_VARIANT="SPACEMACS"
+            SOCKET="pen-emacsd"
+            EMACS_VARIANT="pen-emacsd"
         }
     esac
     :
@@ -307,7 +307,7 @@ case "$DISTRIBUTION" in
         {
 
             EMACS_VERSION=28
-            EMACS_USER_DIRECTORY="$MYGIT/zwpdbh/emacs"
+            EMACS_USER_DIRECTORY="$REPOS/zwpdbh/emacs"
             SOCKET="FRANK"
             EMACS_VARIANT="FRANK"
             :
@@ -317,7 +317,7 @@ case "$DISTRIBUTION" in
     xr|exordium) # exordium (for C++)
         {
             EMACS_VERSION=28
-            EMACS_USER_DIRECTORY="$MYGIT/philippe-grenet/exordium"
+            EMACS_USER_DIRECTORY="$REPOS/philippe-grenet/exordium"
             SOCKET="EXORDIUM"
             EMACS_VARIANT="EXORDIUM"
         }
@@ -327,7 +327,7 @@ case "$DISTRIBUTION" in
         {
             EMACS_VERSION=28
 
-            EMACS_USER_DIRECTORY="$MYGIT/overtone/emacs-live"
+            EMACS_USER_DIRECTORY="$REPOS/overtone/emacs-live"
             SOCKET="EMACS-LIVE"
             EMACS_VARIANT="EMACS-LIVE"
             :
@@ -339,7 +339,7 @@ case "$DISTRIBUTION" in
 
             EMACS_VERSION=28
 
-            EMACS_USER_DIRECTORY="$MYGIT/purcell/emacs.d"
+            EMACS_USER_DIRECTORY="$REPOS/purcell/emacs.d"
             SOCKET="PURCELL"
             EMACS_VARIANT="PURCELL"
             :
@@ -348,7 +348,7 @@ case "$DISTRIBUTION" in
 
     pu|prelude) # prelude
         {
-            EMACS_USER_DIRECTORY="$MYGIT/bbatsov/prelude"
+            EMACS_USER_DIRECTORY="$REPOS/bbatsov/prelude"
             SOCKET="prelude"
             EMACS_VERSION=28
             EMACS_VARIANT="PRELUDE"
@@ -358,7 +358,7 @@ case "$DISTRIBUTION" in
 
     sc|scimax) # scimax
         {
-            EMACS_USER_DIRECTORY="$MYGIT/jkitchin/scimax"
+            EMACS_USER_DIRECTORY="$REPOS/jkitchin/scimax"
 
             SOCKET="user"
 
@@ -368,18 +368,18 @@ case "$DISTRIBUTION" in
         }
         ;;
 
-    sp|sm|spacemacs) # spacemacs
+    sp|sm|pen-emacsd) # spacemacs
         {
-            EMACS_USER_DIRECTORY="$MYGIT/spacemacs"
+            EMACS_USER_DIRECTORY="$REPOS/pen-emacsd"
             EMACS_VERSION=28
-            SOCKET="SPACEMACS"
-            EMACS_VARIANT="SPACEMACS"
+            SOCKET="pen-emacsd"
+            EMACS_VARIANT="pen-emacsd"
         }
         ;;
 
-    dm|doom) # spacemacs
+    dm|doom) # pen-emacsd
         {
-            EMACS_USER_DIRECTORY="$MYGIT/hlissner/doom-emacs"
+            EMACS_USER_DIRECTORY="$REPOS/hlissner/doom-emacs"
             EMACS_VERSION=28
             SOCKET="DOOM"
             EMACS_VARIANT="DOOM"
@@ -1250,12 +1250,12 @@ case "$f" in
     c|-x|x|e|client) { # start emacs client
 
         if ! e running; then
-            if test "$DISTRIBUTION" = spacemacs; then
+            if test "$DISTRIBUTION" = pen-emacsd; then
                 echo "Can't start $DISTRIBUTION server while tm is unstable"
                 exit 1
             else
-                echo "Can't start $DISTRIBUTION. Trying spacemacs"
-                DISTRIBUTION=spacemacs e c "$@"
+                echo "Can't start $DISTRIBUTION. Trying pen-emacsd"
+                DISTRIBUTION=pen-emacsd e c "$@"
                 exit $?
             fi
         fi
@@ -1506,13 +1506,13 @@ case "$f" in
         (
             cd "$EMACSD"
             find . -name "*.elc" -type f | xargs rm -f
-            cd "$MYGIT/spacemacs"
+            cd "$REPOS/pen-emacsd"
             find . -name "*.elc" -type f | xargs rm -f
-            cd "$MYGIT/bbatsov/prelude"
+            cd "$REPOS/bbatsov/prelude"
             find . -name "*.elc" -type f | xargs rm -f
-            cd "$MYGIT/jkitchin/scimax"
+            cd "$REPOS/jkitchin/scimax"
             find . -name "*.elc" -type f | xargs rm -f
-            cd "$MYGIT/philippe-grenet/exordium"
+            cd "$REPOS/philippe-grenet/exordium"
             find . -name "*.elc" -type f | xargs rm -f
         )
         exit $?
