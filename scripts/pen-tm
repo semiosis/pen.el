@@ -2859,7 +2859,7 @@ case "$f" in
             ;;
 
             -spv|-nw|-sph) {
-                window_mode="$(p "$opt" | mcut -d - -f2)"
+                window_mode="$(p "$opt" | pen-mcut -d - -f2)"
                 shift
             }
             ;;
