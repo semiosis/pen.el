@@ -275,7 +275,6 @@ elif [ -n "$GOTO_LINE" ]; then
 fi
 
 if [ -n "$pattern" ]; then
-
     pattern="$(printf -- "%s" "$pattern" | pen-bs '/~')"
 
     ncmd="/$pattern"
@@ -283,7 +282,6 @@ if [ -n "$pattern" ]; then
     ncmd="$(p "silent! normal! $ncmd" | pen-qne)"
     ncmd="$(p "exe \"$ncmd\r\"" | q)"
     opts+=" -c $ncmd "
-
 fi
 
 last_arg="${@: -1}"
