@@ -78,7 +78,7 @@ result=b("pen-tvipe")[0]
 #                      "presence_penalty: " + str(PEN_PRESENCE_PENALTY),
 #                      "frequency_penalty: " + str(PEN_FREQUENCY_PENALTY)])
 
-cs = [result]
+cs = [result,result]
 
 if len(cs) == 1:
     print(PEN_PROMPT, end = '')
