@@ -2298,7 +2298,7 @@ case "$f" in
         DO_SEND_KEYS=n
         SCROLLBACK=-32768
         CAPTURE_OPTIONS=" -J "
-        EDITOR="v"
+        EDITOR="vim"
         STDOUT= # no editor. no value relies on is_tty
         NOABORT=n
         while [ $# -gt 0 ]; do case $1 in
@@ -2473,6 +2473,7 @@ case "$f" in
 
         tf_tmcapture="$(pen-tf tmcapture txt || echo /dev/null)"
         bn="$(basename "$tf_tmcapture")"
+        mkdir -p $HOME/programs/tmux/capture
         np="$HOME/programs/tmux/capture/$bn"
         mv "$tf_tmcapture" "$np"
 
@@ -2518,7 +2519,6 @@ case "$f" in
         if test "$STDOUT" = "y"; then
             cat "$np"
         else
-
             full_lines="$(wc -l "$np" | awk '{print $1}')"
             final_x=$x
             final_y="$(( y + 1 ))"
