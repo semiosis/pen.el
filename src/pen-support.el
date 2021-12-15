@@ -478,7 +478,11 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                              (if (or (pen-var-value-maybe 'pen-sh-update)
                                      (pen-var-value-maybe 'sh-update))
                                  (list "UPDATE" "y")))))))
-        (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd "; echo -n $? > " tf_exit_code " ) > " tf)))
+
+        (if (not (re-match-p "[&;]$" cmd))
+            (setq cmd (concat cmd ";")))
+
+        (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd " echo -n $? > " tf_exit_code " ) > " tf)))
 
       (if detach
           (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &")))
