@@ -918,10 +918,10 @@ case "$f" in
         name=$(last_arg "$@")
 
         if [ -n "$name" ]; then
-            . ~/.shell_environment
+            . ~/.shellrc
             tmux attach -t "$name"
         else
-            . ~/.shell_environment
+            . ~/.shellrc
             tmux attach
         fi
     }
