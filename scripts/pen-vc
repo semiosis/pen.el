@@ -72,7 +72,7 @@ case "$vc_opt" in
         git commit -m "$message"
     }
     ;;
-        
+
     list-submodule-paths) {
         cd "$(vc get-top-level)"
         git config --file .gitmodules --get-regexp path | awk '{ print $2 }'

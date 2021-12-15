@@ -525,7 +525,7 @@ fi
 
 eclog() {
 
-    lit "$1: $2" >> /tmp/ec.txt
+    pen-pl "$1: $2" >> /tmp/ec.txt
     return 0
 }
 
@@ -1073,7 +1073,7 @@ case "$f" in
 
     byte-compile) {
         dir="$1"; : ${dir:="~/.emacs.d"}
-        dir="$(eval lit "$dir")" # expand
+        dir="$(eval pen-pl "$dir")" # expand
 
         $EMACS_BIN -batch -eval "(byte-recompile-directory (expand-file-name $(a- qf "$dir")) 0)"
         exit $?
@@ -1082,7 +1082,7 @@ case "$f" in
 
     byte-compile-force) {
         dir="$1"; : ${dir:="~/.emacs.d"}
-        dir="$(eval lit "$dir")" # expand
+        dir="$(eval pen-pl "$dir")" # expand
 
         cd "$dir"
 
@@ -1309,19 +1309,19 @@ case "$f" in
 
         if [ -n "$SOCKET" ]; then
             {
-                lc_socket="$(lit "$SOCKET" | sed 's/_.*$//' | c lc)"
+                lc_socket="$(pen-pl "$SOCKET" | sed 's/_.*$//' | c lc)"
                 COLUMNS=10000 ps -ef |grep "e -D $lc_socket"
 
                 u ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/$SOCKET\$/p"
             } | field 2 | {
                 pids="$(cat)"
-                lit "$pids" | xargs kill -"$signal"
+                pen-pl "$pids" | xargs kill -"$signal"
             }
         else
             ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/DEFAULT\$/p" | field 2 | {
                 pids="$(cat)"
-                lit "$pids" | xargs kill -"$signal"
-                lit "$pids" | xargs kill -9
+                pen-pl "$pids" | xargs kill -"$signal"
+                pen-pl "$pids" | xargs kill -9
             }
         fi
 
@@ -1534,7 +1534,7 @@ case "$f" in
             shift
             shift
 
-        elif lit "$1" | grep -q -P '^[a-zA-Z0-9_.-]+\.[a-zA-Z0-9_-]+$' && ! [ -f "$1" ]; then # one argument that looks like a file name (because it has an extension)
+        elif pen-pl "$1" | grep -q -P '^[a-zA-Z0-9_.-]+\.[a-zA-Z0-9_-]+$' && ! [ -f "$1" ]; then # one argument that looks like a file name (because it has an extension)
 
             file_path="$1"
             file_path="$(realpath "$file_path")"
@@ -1564,14 +1564,14 @@ case "$f" in
             elispsh="-e $(aqf "(progn (ignore-errors $elisp))")"
         fi
 
-        lit "$elispsh" | ds -s elispsh
+        pen-pl "$elispsh" | ds -s elispsh
 
         CMD="$(cmd "$@")"
 
         export EMACS_USER_DIRECTORY
 
         if [ -n "$SOCKET" ]; then
-            ! e running && ( lit "emacs ~ Starting $SOCKET server" 1>&2; e sd )
+            ! e running && ( pen-pl "emacs ~ Starting $SOCKET server" 1>&2; e sd )
 
             new_cmd="TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -a '' $client_ops -s ~/.emacs.d/server/$SOCKET $elispsh $CMD"
 
