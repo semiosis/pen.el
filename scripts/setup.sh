@@ -218,20 +218,14 @@ cpanm --force String::Escape
 mkdir -p ~/.config/efm-langserver
 
 pip3 install jinja2-cli
-
 agi imagemagick
-
 agi icoutils
-
 agi x11-apps
 
 # urlencode
 agi gridsite-clients
-
 agi w3m
-
 agi fzf
-
 agi zsh
 
 # This is kinda optional but will give you a web-facing Pen
@@ -279,14 +273,11 @@ fc-cache -f -v
 # (unicode-fonts-setup)
 
 pip3 install cohere
-
 pip3 install spacy
-
 agi nano
-
 agi ssh
-
 agi vipe
+agi xclip
 
 IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
 export EMACSD=/root/.emacs.d
