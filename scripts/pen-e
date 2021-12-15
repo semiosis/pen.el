@@ -1028,7 +1028,7 @@ case "$f" in
 
                 $d c -e "$pre_cmd(ignore-errors (package-reinstall '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
 
-                echo "$pkg_name" | append-uniq $EMACSD/packages.txt
+                echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
 
                 shift
             done
@@ -1048,7 +1048,7 @@ case "$f" in
             done
         done
 
-        echo "$pkg_name" | append-uniq $EMACSD/lsp-servers.txt
+        echo "$pkg_name" | pen-append-uniq $EMACSD/lsp-servers.txt
     }
     ;;
 
@@ -1071,7 +1071,7 @@ case "$f" in
 
                 $d c -e "$pre_cmd(ignore-errors (package-install '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
 
-                echo "$pkg_name" | append-uniq $EMACSD/packages.txt
+                echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
 
                 shift
             done
@@ -1092,7 +1092,7 @@ case "$f" in
 
             e c -e "(ignore-errors (package-install '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
 
-            echo "$pkg_name" | append-uniq $EMACSD/packages.txt
+            echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
 
             shift
         done
