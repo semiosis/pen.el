@@ -47,6 +47,8 @@ editor() {
     fi
 }
 
+unset TMUX
+
 init-tm() {
     # Unique ID -- prompt for a random thing such as a pokemon, if pen server is running
     uid="$(date +%s)"
