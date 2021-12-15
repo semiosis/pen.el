@@ -549,9 +549,10 @@ case "$sn" in
     pen|penf) {
         if test "$sn" = penf; then
             if test -n "$fun"; then
-                :
                 shift
-            elif test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
+                set -- "$fun" "$@"
+            fi
+            if test -n "$1" && ! printf -- "%s\n" "$1" | grep -q -P '^pf-'; then
                 fun="pf-$1"
                 shift
             else

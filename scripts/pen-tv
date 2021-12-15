@@ -1,0 +1,38 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -rs|-rsp) {
+        pane_id="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -rs1|-rsp1) {
+        pane_id=.1
+        shift
+    }
+    ;;
+
+    -rs2|-rsp2) {
+        pane_id=.2
+        shift
+    }
+    ;;
+
+    -rs3|-rsp3) {
+        pane_id=.3
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test -n "$pane_id"; then
+    tee >(pen-tm -f -S -tout rs -safe -t "$pane_id" pen-v)
+else
+    pen-tm tv "$@"
+fi
