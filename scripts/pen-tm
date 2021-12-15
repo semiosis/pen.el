@@ -859,9 +859,7 @@ case "$f" in
             exit 0
 
         else
-
             CALLER_PANE="$(tmux display -p "#{pane_id}")"
-
             new_window="$(tmux break-pane -F "#{pane_id}" -P -s "$CALLER_PANE")"
             tmux select-window -t "$new_window"
             tmux rename-window -t "$new_window" "[broke$new_window]"
