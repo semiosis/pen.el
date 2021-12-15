@@ -977,9 +977,7 @@ case "$f" in
         dir="$(eval pen-pl "$dir")" # expand
 
         cd "$dir"
-
         find . -path '*.el' | while read line; do { cd `dirname "$line"`; emacs -Q --batch -L . -f batch-byte-compile "$line"; } done
-
         exit $?
     }
     ;;
