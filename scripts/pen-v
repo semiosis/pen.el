@@ -414,7 +414,7 @@ if [ $# -eq 1 ]; then
 
         cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
 
-        cmd="$bin $(aq "$rp") $cmd"
+        cmd="$bin $(cmd-nice-posix "$rp") $cmd"
     fi
 else
     cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
