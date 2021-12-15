@@ -202,6 +202,10 @@
 ;; the frame as a parameter
 (add-hook 'after-make-frame-functions 'set-termframe)
 
+(defun pen-try-init-char-mode ()
+  (ignore-errors
+    (term-char-mode)))
+
 (defun pen-term (program &optional closeframe modename buffer-name reuse)
   (interactive (list (read-string "program:")))
   (if (and buffer-name reuse (get-buffer buffer-name))
@@ -209,12 +213,7 @@
     (with-current-buffer (term program)
 
       ;; This takes care of read-only-mode upon starting
-      (run-with-idle-timer
-       0.1
-       nil (lambda ()
-             ;; (read-only-mode -1)
-             (ignore-errors
-               (term-char-mode))))
+      (run-with-idle-timer 0.1 nil 'pen-try-init-char-mode)
 
       ;; (term-send-raw-string "hi")
       (if closeframe
