@@ -5,7 +5,7 @@ export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 sn="$(basename "$0")"
 
 DISTRIBUTION=spacemacs
-if ! pl "$sn" | grep -q -P '^sp'; then
+if ! pen-pl "$sn" | grep -q -P '^sp'; then
     EMACS_DAEMON_OVERRIDE=sp
 fi
 
@@ -14,7 +14,7 @@ export EMACS_TERM_TYPE
 
 eval "set -- $(cmd "$@" | sed 's/--init-debug/--debug-init/')"
 
-. $HOME/.shell_environment
+. $HOME/.shellrc
 
 EMACS_VERSION=28
 
@@ -446,8 +446,8 @@ eclog EMACS_VERSION "$EMACS_VERSION"
 eclog EMACS_VARIANT "$EMACS_VARIANT"
 eclog INVOCATION "$0 $@"
 
-EMACS_BIN=$SCRIPTS/emacs
-EMACSCLIENT_BIN=$SCRIPTS/emacsclient
+EMACS_BIN=emacs
+EMACSCLIENT_BIN=emacsclient
 
 export EMACS_VARIANT
 export EMACS_VERSION
@@ -786,7 +786,7 @@ if test "$FT_DETECT" = "y"; then
 fi
 
 if ! test "$NO_SET_TTY" = "y"; then
-    : ${TTY:="$(tm-tty)"}
+    : ${TTY:="$(pen-tm-tty)"}
 fi
 
 export TTY
@@ -1571,7 +1571,7 @@ case "$f" in
                         shift
                         set -- "$w" "$@"
                         CMD="$(cmd "$@")"
-                    elif pl "$1" | grep -q -P '^http:'; then
+                    elif pen-pl "$1" | grep -q -P '^http:'; then
                         eww -em "$sn" "$1"
                         exit $?
                     fi
