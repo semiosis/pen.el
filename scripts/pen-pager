@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+pager() {
+    if is_tty; then
+        less -rS "$@"
+    else
+        cat
+    fi
+}
+
+pager "$@"

@@ -12,7 +12,10 @@ unset CWD
 
 export DO_FILTER=y
 
-if test "$(pwd)" = "/home/shane/var/smulliga/source/git/mullikine/glossaries"; then
+export PENCONF="$HOME/.pen"
+export GLOSSARIES="$PENCONF/glossaries"
+
+if test "$(pwd)" = "$GLOSSARIES"; then
     FOLLOW=y
 fi
 
@@ -40,49 +43,49 @@ esac; done
 
 sn="$(basename "$0")"
 case "$sn" in
-    ea) { # deep ack from top
+    pen-ea) { # deep ack from top
         PARSE_OPTIONS=n
         DEPTH=10
     }
     ;;
 
-    dack) { # deep ack from top
+    pen-dack) { # deep ack from top
         TOP=y
         DEPTH=10
     }
     ;;
 
-    eat) {
+    pen-eat) {
         WORD_BOUNDARIES=y
         DEPTH=10
     }
     ;;
 
-    dac|ead|eackd) { # deep ack
+    pen-dac|pen-ead|pen-eackd) { # deep ack
         DEPTH=10
     }
     ;;
 
-    eaf) { # deep ack
+    pen-eaf) { # deep ack
         DEPTH=10
         FOLLOW=y
     }
     ;;
 
-    zad|zead) { # deep ack
+    pen-zad|pen-zead) { # deep ack
         DEPTH=10
         USE_ZGREP=y
         FOLLOW=y
     }
     ;;
 
-    iad|eai) { # deep ack, insensitive
+    pen-iad|pen-eai) { # deep ack, insensitive
         DEPTH=10
         CASE_INSENSITIVE=y
     }
     ;;
 
-    lack) { # literal ack
+    pen-lack) { # literal ack
         TOP=y
         LITERAL=y
         DEPTH=10
@@ -110,7 +113,7 @@ is_tty() {
 
 pager() {
     if is_tty; then
-        tless -rS "$@"
+        less -rS "$@"
     else
         cat
     fi

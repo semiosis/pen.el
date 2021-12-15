@@ -11,6 +11,7 @@ export GOPATH="$HOME/go"
 export GOBIN="$HOME/go/bin"
 export TMPDIR="/tmp"
 export PENCONF="$HOME/.pen"
+export GLOSSARIES="$PENCONF/glossaries"
 export PENELD="$EMACSD/pen.el"
 export PEN_SCRIPTS="$PENELD/scripts"
 export PROMPTSD="$EMACSD/prompts"
@@ -30,6 +31,7 @@ unminimise() {
                  -e "s#\$HOME#${HOME}#g" \
                  -e "s#\$PENELD#${PENELD}#g" \
                  -e "s#\$PENCONF#${PENCONF}#g" \
+                 -e "s#\$GLOSSARIES#${GLOSSARIES}#g" \
                  -e "s#\${GOPATH%%:\*}#${GOPATH%%:\*}#g" \
                  -e "s#\$PEN_SCRIPTS#${PEN_SCRIPTS}#g" \
                  -e "s#^~/#${HOME}/#g" \
@@ -42,6 +44,7 @@ minimise() {
                  -e "s#${NOTES}#\$NOTES#g" \
                  -e "s#${PENELD}#\$PENELD#g" \
                  -e "s#${PENCONF}#\$PENCONF#g" \
+                 -e "s#${GLOSSARIES}#\$GLOSSARIES#g" \
                  -e "s#^/home/[a-zA-Z]\+#$HOME#g" \
                  -e "s#^/root#$HOME#g" \
                  -e "s#\([\"' =]\)/home/[a-zA-Z]\+#\1$HOME#g" \
