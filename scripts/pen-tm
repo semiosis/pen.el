@@ -1280,16 +1280,13 @@ case "$f" in
             export PARENT_SESSION_ID
 
             if test "$RECURSIVE" = "y"; then
-
                 (
                     export TARGET="$session_name"
                     cd "$CWD"
 
                     test -f ".tmux-pre.sh" && source ".tmux-pre.sh"
-
                     test -f ".tmux.sh" && source ".tmux.sh"
                 )
-
             fi
 
             if [ $# -gt 0 ]; then
