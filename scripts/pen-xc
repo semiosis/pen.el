@@ -139,14 +139,13 @@ if test "$SILENT" = "y"; then
     exec &>/dev/null
 fi
 
-if test "$NOTIFY" = "y" && ! test "$FORCE_NOTIFY" = "y"; then
-    if grep -q -P '^notify_clipboard: off$' $HOME/.myrc.yaml; then
-        NOTIFY=n
-    fi
-fi
+# if test "$NOTIFY" = "y" && ! test "$FORCE_NOTIFY" = "y"; then
+#     if grep -q -P '^notify_clipboard: off$' $HOME/.myrc.yaml; then
+#         NOTIFY=n
+#     fi
+# fi
 
-
-if ! stdinexists && test "$#" -gt 0; then
+if ! stdin_exists && test "$#" -gt 0; then
     if test "$#" -eq 1 && test "$copy_full_path" = "y" && test -e "$1"; then
         set -- "$@" "$(realpath "$1")"
         shift
@@ -155,7 +154,7 @@ if ! stdinexists && test "$#" -gt 0; then
     exec < <(cmd-nice-posix "$@")
 fi
 
-if stdinexists; then
+if stdin_exists; then
     # Read without losing trailing newlines
     IFS= read -rd '' input < <(cat /dev/stdin)
 
@@ -185,7 +184,7 @@ if stdinexists; then
 
     if test "$USE_PAGER" = "y" || test "$FORCE_OUT" = "y" || is_stdout_pipe; then
         if test "$USE_PAGER" = "y"; then
-            printf -- "%s" "$input" | pager
+            printf -- "%s" "$input" | pen-pager
         else
             printf -- "%s" "$input"
         fi
@@ -200,13 +199,13 @@ else
 
     {
         if test "$TRIM" = "y"; then
-            xclip -o 2>/dev/null | soak | s chomp
+            xclip -o 2>/dev/null | pen-soak | chomp
         else
             xclip -o 2>/dev/null
         fi
     } | {
         if test "$UNMINIMISE_IT" = "y"; then
-            umn
+            pen-umn
         else
             cat
         fi
