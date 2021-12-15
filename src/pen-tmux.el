@@ -1,6 +1,6 @@
 (require 'subr+)
 
-;; pen-tmux avoidance scripts
+;; tmux avoidance scripts
 
 (defun buffer-substring-of-visible (start end)
   "Return contents of visible part of buffer from START to END, as a string.
@@ -12,7 +12,7 @@ START and END can be in either order."
    (window-start)
    (window-end)))
 
-;; pen-tmux scripts
+;; tmux scripts
 
 (defun pen-tmux-pane-capture (&optional show-buffer)
   (interactive)
@@ -36,7 +36,7 @@ START and END can be in either order."
   (let ((slug (slugify cmd)))
     (setq window-name (or window-name slug))
     (setq dir (or dir (pen-pwd)))
-    (concat "TMUX= pen-tmux new -c " (pen-q dir) " -n " (pen-q window-name) " " (pen-q (concat "CWD= " cmd)))))
+    (concat "TMUX= tmux new -c " (pen-q dir) " -n " (pen-q window-name) " " (pen-q (concat "CWD= " cmd)))))
 
 (defun pen-e-sph-zsh (&optional cmd dir)
   (interactive)
@@ -44,7 +44,7 @@ START and END can be in either order."
       (setq dir (cwd)))
   (if (not cmd)
       (setq cmd (tmuxify-cmd "zsh"))
-    ;; (setq cmd "TMUX= pen-tmux new -n zsh \"CWD= zsh\"")
+    ;; (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\"")
     )
   (e/sph (lm (term-nsfa cmd nil "zsh" nil nil dir))))
 
@@ -57,7 +57,7 @@ START and END can be in either order."
   (if (not dir)
       (setq dir (cwd)))
   (if (not cmd)
-      (setq cmd "TMUX= pen-tmux new -n zsh \"CWD= zsh\""))
+      (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\""))
   (e/spv (lm (term-nsfa cmd nil "zsh" nil nil dir))))
 
 ;; (defalias 'term-spv 'pen-e-spv-zsh)
@@ -69,7 +69,7 @@ START and END can be in either order."
       (setq dir (cwd)))
   (if (not cmd)
       (progn
-        ;; (setq cmd (concat "TMUX= pen-tmux new -c " (pen-q dir) " -n zsh \"CWD= zsh\""))
+        ;; (setq cmd (concat "TMUX= tmux new -c " (pen-q dir) " -n zsh \"CWD= zsh\""))
         (setq cmd "zsh")
         (setq cmd (tmuxify-cmd cmd dir cmd))))
   (pen-e-sps (lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
