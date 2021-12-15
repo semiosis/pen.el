@@ -2,20 +2,11 @@
 
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 
-spacemacs-only
-spacemacs_only_ret="$?"
-
-spacemacs_only() {
-    return "$spacemacs_only_ret"
-}
-
 sn="$(basename "$0")"
 
-if spacemacs_only; then
-    DISTRIBUTION=spacemacs
-    if ! pl "$sn" | grep -q -P '^sp'; then
-        EMACS_DAEMON_OVERRIDE=sp
-    fi
+DISTRIBUTION=spacemacs
+if ! pl "$sn" | grep -q -P '^sp'; then
+    EMACS_DAEMON_OVERRIDE=sp
 fi
 
 : ${EMACS_TERM_TYPE:="screen-256color"}
@@ -46,73 +37,17 @@ case "$sn" in
     }
     ;;
 
-    pd) {
-        : ${DISTRIBUTION:="prelude"}
-    }
-    ;;
-
-    pc) {
-        : ${DISTRIBUTION:=purcell}
-    }
-    ;;
-
-    ei) {
-        : ${DISTRIBUTION:=emacs-live}
-    }
-    ;;
-
-    fr) {
-        : ${DISTRIBUTION:=frank}
-    }
-    ;;
-
     sp) {
         : ${DISTRIBUTION:=spacemacs}
-    }
-    ;;
-
-    dm|dem|doom) {
-        : ${DISTRIBUTION:=doom}
-    }
-    ;;
-
-    sc) {
-        : ${DISTRIBUTION:=scimax}
-    }
-    ;;
-
-    et) {
-        : ${DISTRIBUTION:=default}
-        SOCKET="DEFAULT_tmux"
-    }
-    ;;
-
-    xr) {
-        : ${DISTRIBUTION:="exordium"}
-    }
-    ;;
-
-    me) {
-        : ${DISTRIBUTION:=default}
-        SOCKET="DEFAULT_magit"
-        EMACS_VERSION=28
-
-    }
-    ;;
-
-    og) {
-        : ${DISTRIBUTION:=default}
-        SOCKET="DEFAULT_org"
-        EMACS_VERSION=28
     }
     ;;
 esac
 
 QUIET=y
 
-: ${EMACS_BIN:="$SCRIPTS/emacs"}
-: ${EMACSCLIENT_BIN:="$SCRIPTS/emacsclient"}
-: ${EMACS_USER_DIRECTORY:="$HOME/.emacs.d"}
+: ${EMACS_BIN:="$(command -v emacs)"}
+: ${EMACSCLIENT_BIN:="$(command -v emacsclient)"}
+: ${EMACS_USER_DIRECTORY:="/root/.emacs.d"}
 
 if test "$1" = "-v"; then
     QUIET=n
