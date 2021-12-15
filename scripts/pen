@@ -1053,7 +1053,6 @@ if test "$docker_cmd" = run && docker-running-p && ! inside-docker-p; then
 fi
 
 if ! inside-docker-p && ! docker-running-p; then
-    
     if printf -- "%s\n" "$INSIDE_EMACS" | grep -q comint &>/dev/null; then
         unbuffer pen &>/dev/null & disown
     fi
