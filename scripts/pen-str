@@ -10,7 +10,7 @@ stdin_exists() {
 }
 
 case "$sn" in
-    field|all-caps|caps|uppercase|uc|lc|wrl*|wrla|wrla1|awrl) {
+    pen-tine|field|all-caps|caps|uppercase|uc|lc|wrl*|wrla|wrla1|awrl) {
         f="$sn"
     }
     ;;
@@ -363,6 +363,31 @@ case "$f" in
         [ -n "$matches" ]
 
         exit $?
+    }
+    ;;
+
+    pen-tine) {
+        # abbrev: tine
+
+        # Use this in conjunction with commands such as sed so I can do powerful
+        # "grep -v"-like commands
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -e) {
+                ECHO=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if test "$ECHO" = "y"; then
+            tee >(cat) | grep -q .
+        else
+            grep -q .
+        fi
     }
     ;;
 

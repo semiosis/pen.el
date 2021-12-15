@@ -178,7 +178,7 @@ if [ -n "$input" ]; then
         echo
         printf -- "%s" "$input" |
         {
-            if test "$PREGREPPED" = "y" && printf -- "%s" "$input" | empty-line-exists; then
+            if test "$PREGREPPED" = "y" && printf -- "%s" "$input" | pen-empty-line-exists; then
                 awk 1 | sed "0,/^$/d"
             else
                 cat

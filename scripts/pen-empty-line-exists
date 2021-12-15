@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# doesn't work
+# grep -q -P '^$'
+
+perl -lne 'print $. if(/^$/)' | pen-tine
