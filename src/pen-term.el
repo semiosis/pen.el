@@ -16,7 +16,6 @@
       (shut-up-c (message "sending C-d"))
       (term-send-raw))))
 
-
 (defun term-send-function-key ()
   (interactive)
   (let* ((char last-input-event)
@@ -188,9 +187,7 @@
 ;; Not sure why this is not sufficient
 (pen-term-set-raw-map)
 
-
 (term-set-escape-char ?✓)
-
 
 (defvar termframe nil)
 
