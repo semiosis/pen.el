@@ -609,7 +609,6 @@ case "$f" in
         sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
         sheight="$(( sheight + 2 ))"
 
-
         tmux \
             new-session -d \
                 -x "$swidth" \
@@ -642,7 +641,6 @@ case "$f" in
         caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
 
         tmsessionname="${f}-$caller_slug-$(date-ts)"
-
 
         cmd="unset TTY; pen-x -s \"${f}\" -c m -e \"\$\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
 
@@ -732,7 +730,6 @@ case "$f" in
     ;;
 
     goto-fzf) {
-
         eval "tmux run -b $(aqf "pen-tm find-window-from-session -no-activate")"
     }
     ;;
@@ -751,9 +748,7 @@ case "$f" in
         esac; done
 
         notify-send "Starting emacs"
-
         unbuffer e -startall
-
         unbuffer bash -xv e -startall
 
         if ! pen-tm session-exists localhost; then
@@ -773,7 +768,6 @@ case "$f" in
     ;;
 
     session-exists) {
-
         sessions="$(session_list)"
         printf -- "%s" "$sessions" | pen-str one-of "$1"
         exit $?
