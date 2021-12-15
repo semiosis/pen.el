@@ -1,6 +1,6 @@
 (require 'subr+)
 
-;; tmux avoidance scripts
+;; pen-tmux avoidance scripts
 
 (defun buffer-substring-of-visible (start end)
   "Return contents of visible part of buffer from START to END, as a string.
@@ -12,9 +12,9 @@ START and END can be in either order."
    (window-start)
    (window-end)))
 
-;; tmux scripts
+;; pen-tmux scripts
 
-(defun tmux-pane-capture (&optional show-buffer)
+(defun pen-tmux-pane-capture (&optional show-buffer)
   (interactive)
 
   ;; Rather than toggle window margins, remove the window margin width from the start of each line
@@ -31,5 +31,100 @@ START and END can be in either order."
             (defset-local termframe-local frame)
             (current-buffer)))
       wincontents)))
+
+(defun pen-tmuxify-cmd (cmd &optional dir window-name)
+  (let ((slug (slugify cmd)))
+    (setq window-name (or window-name slug))
+    (setq dir (or dir (pen-pwd)))
+    (concat "TMUX= pen-tmux new -c " (pen-q dir) " -n " (pen-q window-name) " " (pen-q (concat "CWD= " cmd)))))
+
+(defun pen-e-sph-zsh (&optional cmd dir)
+  (interactive)
+  (if (not dir)
+      (setq dir (cwd)))
+  (if (not cmd)
+      (setq cmd (tmuxify-cmd "zsh"))
+    ;; (setq cmd "TMUX= pen-tmux new -n zsh \"CWD= zsh\"")
+    )
+  (e/sph (lm (term-nsfa cmd nil "zsh" nil nil dir))))
+
+;; (defalias 'sph-term 'pen-e-sph-zsh)
+;; (defalias 'term-sph 'pen-e-sph-zsh)
+;; (defalias 'tsph 'pen-e-sph-zsh)
+
+(defun pen-e-spv-zsh (&optional cmd dir)
+  (interactive)
+  (if (not dir)
+      (setq dir (cwd)))
+  (if (not cmd)
+      (setq cmd "TMUX= pen-tmux new -n zsh \"CWD= zsh\""))
+  (e/spv (lm (term-nsfa cmd nil "zsh" nil nil dir))))
+
+;; (defalias 'term-spv 'pen-e-spv-zsh)
+;; (defalias 'tspv 'pen-e-spv-zsh)
+
+(defun pen-e-sps-zsh (&optional cmd dir)
+  (interactive)
+  (if (not dir)
+      (setq dir (cwd)))
+  (if (not cmd)
+      (progn
+        ;; (setq cmd (concat "TMUX= pen-tmux new -c " (pen-q dir) " -n zsh \"CWD= zsh\""))
+        (setq cmd "zsh")
+        (setq cmd (tmuxify-cmd cmd dir cmd))))
+  (pen-e-sps (lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
+(defalias 'term-sps 'pen-e-sps-zsh)
+(defalias 'tsps 'pen-e-sps-zsh)
+
+(defun pen-sps (&optional cmd nw_args input dir)
+  "Runs command in a horizontal split"
+  (interactive)
+  (if (not cmd)
+      (setq cmd "zsh"))
+  (if input
+      (pen-sn (concat "pen-tm -tout -S sps " nw_args " " (pen-q cmd) " &") input (or dir (get-dir)))
+    (if (display-graphic-p)
+        (pen-e-sps-zsh cmd)
+      (progn
+        (if (and (variable-p 'sh-update)
+                 (eval 'sh-update))
+            (setq cmd (concat "upd " cmd)))
+        (pen-snc (concat "unbuffer pen-tm -f -d -te sps " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))))))
+(defalias 'pen-tm-sps 'pen-sps)
+
+(defun pen-sph (&optional cmd nw_args input dir)
+  "Runs command in a horizontal split"
+  (interactive)
+  (if (not cmd)
+      (setq cmd "zsh"))
+  (if input
+      (pen-sn (concat "pen-tm -tout -S sph " nw_args " " (pen-q cmd) " &") input (or dir (get-dir)))
+    (if (display-graphic-p)
+        (pen-e-sph-zsh cmd)
+        (progn
+          (if (and (variable-p 'sh-update)
+                   (eval 'sh-update))
+              (setq cmd (concat "upd " cmd)))
+          (pen-snc (concat "unbuffer pen-tm -f -d -te sph " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))))))
+(defalias 'pen-tm-sph 'pen-sph)
+
+(defun pen-spv (&optional cmd nw_args input dir)
+  "Runs command in a vertical split"
+  (interactive)
+  (if (not cmd)
+      (setq cmd "zsh"))
+  (if input
+      (pen-sn (concat "pen-tm -tout -S spv " nw_args " " (pen-q cmd) " &") input (or dir (get-dir)))
+    (if (display-graphic-p)
+        (pen-e-spv-zsh cmd)
+      (progn
+        (if (and (variable-p 'sh-update)
+                 (eval 'sh-update))
+            (setq cmd (concat "upd " cmd)))
+        (pen-snc (concat "unbuffer pen-tm -f -d -te spv " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))))))
+(defalias 'pen-tm-spv 'pen-spv)
+
+(define-key pen-map (kbd "M-l s") 'pen-sph)
+(define-key pen-map (kbd "M-l S") 'pen-spv)
 
 (provide 'pen-tmux)
