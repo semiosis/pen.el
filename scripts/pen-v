@@ -10,8 +10,7 @@ parent_sn="$(ps -o comm= $PPID)"
 
 . `which pen-bash-library.sh`
 
-bin="$HOME/local/bin/vim --not-a-term"
-bin="$HOME/scripts/vim --not-a-term"
+bin="vim --not-a-term"
 
 last_arg="${@: -1}"
 if test "$last_arg" = "-"; then

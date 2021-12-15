@@ -2885,7 +2885,6 @@ case "$f" in
             printf -- "%s" "$input" | pen-tm -S -tout $window_mode -noerror "$EDITOR -nad"
         fi
         printf -- "%s" "$input"
-
     }
     ;;
 
