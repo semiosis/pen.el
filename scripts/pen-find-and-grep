@@ -182,7 +182,7 @@ fi
 
 if test "$#" -eq 1; then
     # Keep the spaces
-    CMD="$(lit "$@")"
+    CMD="$(pen-pl "$@")"
 else
     CMD="$(printf -- "%s\n" "$@" | tr -s '\n' ' ' | sed 's/ $//')"
 fi
