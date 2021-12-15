@@ -1520,7 +1520,6 @@ case "$f" in
     ;;
 
     -nw|nw|standalone) {
-
         debug_init=n
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             -d) {
