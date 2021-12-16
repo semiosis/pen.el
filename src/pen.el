@@ -1713,8 +1713,9 @@ But use the results-analyser."
   (interactive (list (pen-preceding-text) nil))
   (if mark-active
       ;; Disabled pen-mode temporarily
-      (let ((pen nil))
-        (execute-kbd-macro (kbd "M-3")))
+      (let* ((pen nil)
+             (fun (key-binding (kbd "M-3"))))
+        (call-interactively fun))
     (pen-complete-line preceding-text tv)))
 
 (defun pen-complete-medium (preceding-text &optional tv)
