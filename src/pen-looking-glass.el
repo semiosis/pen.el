@@ -67,36 +67,37 @@
           (not alt))
       (setq alt "Image"))
 
-  (let* ((alephalpha
+  (let* ((image-description
           (if pen-describe-images
+              ;; alephalpha?
               (eval `(pen-ci (lg-get-alttext ,fp-or-url) ,(or (>= (prefix-numeric-value current-prefix-arg) 4)
                                                               (= (prefix-numeric-value current-prefix-arg) 0))))
             ;; (lg-get-alttext fp-or-url)
             nil))
 
-         (alephalpha
-          (or (eval-string alephalpha)
+         (image-description
+          (or (eval-string image-description)
               ""))
 
-         (alephalpha
-          (if (string-equal "*" alephalpha)
-              (setq alephalpha "?")
-            alephalpha))
+         (image-description
+          (if (string-equal "*" image-description)
+              (setq image-description "?")
+            image-description))
 
-         (description
+         (alttext-and-description
           (cond
-           ((sor alt) (concat alt ":" alephalpha))
+           ((sor alt) (concat alt ":" image-description))
            ;; ((re-match-p "SVG" alt) (eval-string (eval `(pen-ci (lg-get-alttext ,fp-or-url)))))
-           (t alephalpha)))
+           (t image-description)))
 
-         ;; (description (concat fp-or-url (q description) alt))
+         ;; (alttext-and-description (concat fp-or-url (q alttext-and-description) alt))
          )
 
-    ;; (setq description (concat "'" description "'"))
+    ;; (setq alttext-and-description (concat "'" alttext-and-description "'"))
 
     (if (interactive-p)
-        (pen-etv description)
-      (ink-propertise description))))
+        (pen-etv alttext-and-description)
+      (ink-propertise alttext-and-description))))
 
 (defun url-is-404 (url)
   "URL is 404"

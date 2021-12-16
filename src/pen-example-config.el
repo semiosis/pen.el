@@ -481,7 +481,8 @@
 
   (define-key pen-map (kbd "M-1") 'pen-complete-word)
   (define-key pen-map (kbd "M-2") 'pen-complete-words)
-  (define-key pen-map (kbd "M-3") 'pen-complete-line)
+  ;; (define-key pen-map (kbd "M-3") 'pen-complete-line)
+  (define-key pen-map (kbd "M-3") 'pen-complete-line-maybe)
   (define-key pen-map (kbd "M-4") 'pen-complete-lines)
   (define-key pen-map (kbd "M-5") 'pen-complete-long)
 

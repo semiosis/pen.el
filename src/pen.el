@@ -1709,6 +1709,13 @@ But use the results-analyser."
         (pen-etv (ink-propertise response))
       (pen-complete-insert (ink-propertise response)))))
 
+(defun pen-complete-line-maybe (preceding-text &optional tv)
+  (interactive (list (pen-preceding-text) nil))
+  (if mark-active
+      (pen-complete-line preceding-text tv)
+    (let ((pen-mode nil))
+      (execute-kbd-macro (kbd "M-3")))))
+
 (defun pen-complete-medium (preceding-text &optional tv)
   "Long-form completion (medium length). This will generate lots of text.
 May use to generate code from comments."
