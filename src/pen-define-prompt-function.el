@@ -5,7 +5,7 @@
 (defun pen-split-macro-test-define-fun ()
   (eval
    `(defun split-macro-test-fun ()
-      ,(expand-macro `(pen-split-macro-test-inner)))))
+      ,(macro-expand `(pen-split-macro-test-inner)))))
 
 (defun pen-split-macro-test ()
   (let ((testval "shane"))
@@ -1601,6 +1601,6 @@
                ;; Many a  transformation pipeline here could benefit from transducers
                ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
                ;; https://github.com/FrancisMurillo/transducer.el
-               ,(expand-macro `(pen-define-prompt-function-pipeline))))))))))
+               ,(macro-expand `(pen-define-prompt-function-pipeline))))))))))
 
 (provide 'pen-define-prompt-function)
