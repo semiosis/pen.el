@@ -1,19 +1,21 @@
-(defmacro split-macro-test-inner ()
+(defmacro pen-split-macro-test-inner ()
   `(progn
      (etv ,testval)))
 
-(defun split-macro-test-define-fun ()
+(defun pen-split-macro-test-define-fun ()
   (eval
    `(defun split-macro-test-fun ()
-      (split-macro-test-inner))))
+      ,(expand-macro `(pen-split-macro-test-inner)))))
 
-(defun split-macro-test ()
+(defun pen-split-macro-test ()
   (let ((testval "shane"))
-    (split-macro-test-define-fun)
-    (split-macro-test-fun)))
+    (pen-split-macro-test-define-fun))
+  (split-macro-test-fun))
+
+;; (comment (pen-split-macro-test))
 
 (defmacro pen-define-prompt-function-pipeline ()
-    (let* (;; Keep in mind this both updates memoization and the bash cache
+    `(let* (;; Keep in mind this both updates memoization and the bash cache
 
            ;; the differences has been confused. Treat as the same
            (do-pen-update
@@ -1599,6 +1601,6 @@
                ;; Many a  transformation pipeline here could benefit from transducers
                ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
                ;; https://github.com/FrancisMurillo/transducer.el
-               (pen-define-prompt-function-pipeline)))))))))
+               ,(expand-macro `(pen-define-prompt-function-pipeline))))))))))
 
 (provide 'pen-define-prompt-function)
