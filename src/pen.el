@@ -1712,9 +1712,10 @@ But use the results-analyser."
 (defun pen-complete-line-maybe (preceding-text &optional tv)
   (interactive (list (pen-preceding-text) nil))
   (if mark-active
-      (pen-complete-line preceding-text tv)
-    (let ((pen-mode nil))
-      (execute-kbd-macro (kbd "M-3")))))
+      ;; Disabled pen-mode temporarily
+      (let ((pen nil))
+        (execute-kbd-macro (kbd "M-3")))
+    (pen-complete-line preceding-text tv)))
 
 (defun pen-complete-medium (preceding-text &optional tv)
   "Long-form completion (medium length). This will generate lots of text.
