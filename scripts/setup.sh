@@ -231,7 +231,6 @@ agi x11-apps
 agi gridsite-clients
 agi w3m
 agi fzf
-agi zsh
 
 # This is kinda optional but will give you a web-facing Pen
 agi libssl-dev
@@ -279,9 +278,10 @@ fc-cache -f -v
 
 pip3 install cohere
 pip3 install spacy
+agi zsh
 agi nano
 agi ssh
-agi vipe
+agi moreutils # vipe
 agi xclip
 agi buffer
 
