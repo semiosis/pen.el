@@ -73,7 +73,7 @@ if test -z "$kickstarter"; then
 fi
 
 IFS= read -rd '' ii_input_echo_pp < <(cat "$path" | yq -r '.["ii-input-echo-pp"] // empty');typeset -p ii_input_echo_pp &>/dev/null
-IFS= read -rd '' user_prompt_re < <(cat "$path" | yq -r '.["user-prompt"] // empty' | chomp);typeset -p user_prompt_re &>/dev/null
+IFS= read -rd '' user_prompt_re < <(cat "$path" | yq -r '.["user-prompt"] // empty' | chomp | pen-bs '\\');typeset -p user_prompt_re &>/dev/null
 IFS= read -rd '' comint_user_prompt_re < <(cat "$path" | yq -r '.["comint-user-prompt-regex"] // empty' | chomp);typeset -p comint_user_prompt_re &>/dev/null
 
 : "${user_prompt_re:="$comint_user_prompt_re"}"

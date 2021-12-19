@@ -1,9 +1,23 @@
 #!/bin/bash
 export TTY
 
+# This is primarily designed for posix shell double-quote escapes.
+# If other languages can use this, then great.
+
 cmd-nice() {
     for var in "$@"
     do
+        # A grand test of this is that it's idempotent with myeval
+        # myeval cmd-nice "$(cmd-nice "hi ")"
+
+        # Remember that some chars escape differently
+        # pl "\$"
+        # pl "\)"
+        # It might be too hairy to capture all these rules for the moment
+
+        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
+
+        # TODO Ensure that the first \ to touch the non-" is not doubled?
         printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
     done | sed 's/ $//'
 }

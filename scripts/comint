@@ -44,12 +44,14 @@ CMD="$(p "$CMD" | sed -e 's/^rlr /& notty /' -e 's/rlr notty notty/rlr notty/')"
 
 if test -n "$load_hs"; then
     slug="$(echo "$CMD" | tr -d '\n' | slugify)"
-    hsqc -ao "$load_hs" | tac > "$NOTES/programs/comint/history/$slug"
+
+    # hsqc -ao "$load_hs" | tac > "$NOTES/programs/comint/history/$slug"
 fi
 
 # sp -e "(comint-quick $(cmd-nice-posix "$CMD") $(cmd-nice-posix "$(pwd -P)") $(cmd-nice-posix "$user_prompt_re"))"
 
-elisp="(comint-quick $(cmd-nice-posix "$CMD") user-home-directory $(cmd-nice-posix "$user_prompt_re" | pen-bs '\\'))"
+# | pen-bs '\\'
+elisp="(comint-quick $(cmd-nice-posix "$CMD") user-home-directory $(cmd-nice-posix "$user_prompt_re"))"
 
 if test "$INERT_COMINT" = "y"; then
     printf -- "%s\n" "$elisp"
