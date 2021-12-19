@@ -69,11 +69,14 @@ else
     PEN_USER=$USER
 fi
 
+# These don't get through the interop
 export SSH_TO_HOST
 export CWD
 export CMD
 export PEN_USER
 
+# So use cli args instead
+
 # This runs in the docker to the host
 # The "$@" are unneccesary because of CMD exported
-cterm-docker pen-cterm-ssh "$@"
+cterm-docker pen-cterm-ssh -ssh-to-host "$SSH_TO_HOST" -cwd "$CWD" -cmd "$CMD" -user "$PEN_USER" "$@"

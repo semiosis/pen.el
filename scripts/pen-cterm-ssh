@@ -1,6 +1,39 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -ssh-to-host) {
+        SSH_TO_HOST="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -cwd) {
+        CWD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -cmd) {
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -user) {
+        PEN_USER="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 : ${CWD:="$(pwd)"}
 : ${CMD:="$(cmd-nice-posix "$@")"}
 : ${PEN_USER:="$(whoami)"}
