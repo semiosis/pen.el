@@ -847,7 +847,7 @@ region-active-p does not work for evil selection."
 
 (defalias 'pps 'pp-to-string)
 
-(defun xc (&optional s silent)
+(defun xc (&optional s silent noautosave)
   "emacs kill-ring, xclip copy
 when s is nil, return current contents of clipboard
 when s is a string, set the clipboard to s"
@@ -860,7 +860,8 @@ when s is a string, set the clipboard to s"
       (progn
         (kill-new s)
         (pen-sn "xsel --clipboard -i" s))
-    (if (pen-selected-p)
+    (if (and (pen-selected-p)
+             (not noautosave))
         (progn
           (setq s (pen-selected-text))
           (call-interactively 'kill-ring-save))))

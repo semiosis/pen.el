@@ -32,8 +32,11 @@ lang="$1"
 test -n "$lang" || exit 1
 shift
 
-memory="$2"
+memory="$1"
 echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
+
+kickstarter="$2"
+echo "$kickstarter" | tee -a /tmp/kickstarter.txt &>/dev/null &
 
 test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
@@ -61,7 +64,10 @@ fi
 
 test -n "$path" && test -f "$path" || exit 1
 
-IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter // empty' | sed "s/<language>/$lang/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+if test -z "$kickstarter"; then
+    IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter // empty' | sed "s/<language>/$lang/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+fi
+
 IFS= read -rd '' ii_input_echo_pp < <(cat "$path" | yq -r '.["ii-input-echo-pp"] // empty');typeset -p ii_input_echo_pp &>/dev/null
 IFS= read -rd '' user_prompt_re < <(cat "$path" | yq -r '.["user-prompt"] // empty' | chomp);typeset -p user_prompt_re &>/dev/null
 IFS= read -rd '' comint_user_prompt_re < <(cat "$path" | yq -r '.["comint-user-prompt-regex"] // empty' | chomp);typeset -p comint_user_prompt_re &>/dev/null

@@ -425,6 +425,11 @@ without any interpretation."
     (xc (chomp linecontents) t)
     linecontents))
 
+(defun pen-term-start-ii (kickstarter)
+  (interactive (list (pen-preceding-text)))
+
+  )
+
 (defun eterm-256color-compile ()
   "If eterm-256color isn't a term type, tic eterm-256color.ti.
 
