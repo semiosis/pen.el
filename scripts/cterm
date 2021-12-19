@@ -79,4 +79,10 @@ export PEN_USER
 
 # This runs in the docker to the host
 # The "$@" are unneccesary because of CMD exported
-cterm-docker pen-cterm-ssh -ssh-to-host "$SSH_TO_HOST" -cwd "$CWD" -cmd "$CMD" -user "$PEN_USER" "$@"
+cterm-docker \
+    pen-cterm-ssh \
+    -ssh-to-host "$SSH_TO_HOST" \
+    -cwd "$CWD" \
+    -cmd "$CMD" \
+    -user "$PEN_USER" \
+    "$@"
