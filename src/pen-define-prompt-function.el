@@ -1410,7 +1410,10 @@
                             (sor final-postpostprocessor))
                        (mapcar
                         (lambda (r) (if (and final-postpostprocessor (sor final-postpostprocessor))
-                                        (pen-sn final-postpostprocessor r)
+                                      (pen-sn (concat
+                                               (sh-construct-envs (pen-alist-to-list `(("FINAL_PROMPT" . ,final-prompt))))
+                                               " "
+                                               final-postpostprocessor) r)
                                       r))
                         results)
                      results))

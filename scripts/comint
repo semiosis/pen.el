@@ -49,7 +49,7 @@ fi
 
 # sp -e "(comint-quick $(cmd-nice-posix "$CMD") $(cmd-nice-posix "$(pwd -P)") $(cmd-nice-posix "$user_prompt_re"))"
 
-elisp="(comint-quick $(cmd-nice-posix "$CMD") user-home-directory $(cmd-nice-posix "$user_prompt_re"))"
+elisp="(comint-quick $(cmd-nice-posix "$CMD") user-home-directory $(cmd-nice-posix "$user_prompt_re" | pen-bs '\\'))"
 
 if test "$INERT_COMINT" = "y"; then
     printf -- "%s\n" "$elisp"

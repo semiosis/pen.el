@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Interpret newlines, etc
+p_interpret () {
+    {
+        i=1
+        while [ "$i" -lt "$#" ]; do
+            eval ARG=\${$i}
+            printf -- "%s " "$ARG"
+            i=$((i + 1))
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG"
+    } | sed 's/\\n/\n/g'
+}
+
+p_interpret "$@"

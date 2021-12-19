@@ -26,6 +26,20 @@ case "$sn" in
     }
 esac
 
+# Interpret newlines, etc
+p_interpret () {
+    {
+        i=1
+        while [ "$i" -lt "$#" ]; do
+            eval ARG=\${$i}
+            printf -- "%s " "$ARG"
+            i=$((i + 1))
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG"
+    } | sed 's/\\n/\n/g'
+}
+
 case "$f" in
     indent) {
         level="$1"; : ${level:="1"}
@@ -235,7 +249,7 @@ case "$f" in
     bash-gen-next-user-prompt) {
         IFS= read -rd '' in < <(cat | tee /tmp/bash-gen-next-user-prompt);typeset -p in &>/dev/null
 
-        user_at_host="$(printf -- "%s" "$in" | awk 1 | grep -P "^[^@ ]+@[^:$ ]+[:$]" | scrape "^[^@ ]+@[^:$ ]+" | tail -n 1)"
+        user_at_host="$({ p_interpret "$FINAL_PROMPT"; printf -- "%s" "$in"; } | awk 1 | grep -P "^[^@ ]+@[^:$ ]+[:$]" | pen-scrape "^[^@ ]+@[^:$ ]+" | tail -n 1)"
 
         # prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
         # new_prompt_number="$(( prompt_number + 1 ))"
