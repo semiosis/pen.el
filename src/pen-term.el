@@ -425,14 +425,9 @@ without any interpretation."
     (xc (chomp linecontents) t)
     linecontents))
 
-(defun pen-term-start-ii (kickstarter)
-  (interactive (list (pen-preceding-text)))
-
-  )
-
 (defun tm-send-keys-literal (keys)
   (interactive "P")
-  (pen-sn (concat "tmux send-keys -l " (pen-q keys))))
+  (pen-sn (concat "tmux send-keys -l " (pen-q keys)) nil nil nil t))
 (defalias 'pen-tsl 'tm-send-keys-literal)
 
 (defun tm-send-keys (keys)

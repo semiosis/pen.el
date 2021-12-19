@@ -62,14 +62,17 @@
 
 (defun pen-bol-context ()
   (interactive)
-  (etv (save-excursion
-         (ekm "C-a")
-         (pen-preceding-text))))
+  (term-send-raw-string "\C-a")
+  (sleep-for 0.1)
+  (pen-preceding-text))
 
-(define-key term-raw-map (kbd "C-c i") 'pen-bol-context)
+(define-key term-raw-map (kbd "C-c k") 'helpful-key)
+(define-key term-raw-map (kbd "C-c i") 'pen-start-ii-from-buffer)
+(define-key term-raw-map (kbd "C-c o") 'pen-bol-context)
 
 (defun pen-start-ii-from-buffer (lang kickstarter)
   (interactive (list (pen-detect-language-ask)
-                     (pen-bol-context))))
+                     (pen-bol-context)))
+  (pen-sps (cmd "ii" lang kickstarter)))
 
 (provide 'pen-ii)
