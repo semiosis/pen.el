@@ -638,8 +638,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                   (setq sel (completing-read prompt list nil must-match initial-input hist-var)))
 
                 ;; This refreshes the term usually, but not always. It realigns up some REPLs, such as lein.
-                ;; Not worth it just for hhgttg 
-                (if (major-mode-p 'term-mode)
+                ;; Not worth it just for hhgttg
+                (if (and
+                     pen-term-cl-refresh-after-fz
+                     (major-mode-p 'term-mode))
                     (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
                 sel)))
 

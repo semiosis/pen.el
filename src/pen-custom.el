@@ -99,6 +99,13 @@ This is useful for code-understanding when reading languages you don't understan
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defcustom pen-term-cl-refresh-after-fz nil
+  "While in term, send a C-l just after selecting for insertion"
+  :type 'boolean
+  :group 'pen
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
 (defcustom pen-default-lm-command "openai-complete.sh"
   "Default LM completer script"
   :type 'string
@@ -403,6 +410,7 @@ widget.  If FILTER is nil, ACTION is always valid.")
       (setq fav-world-language (ht-get yaml-ht "fav-world-language"))
       (setq fav-programming-language (ht-get yaml-ht "fav-programming-language"))
       (setq pen-libre-only (pen-yaml-test yaml-ht "libre-only"))
+      (setq pen-term-cl-refresh-after-fz (pen-yaml-test yaml-ht "pen-term-cl-refresh-after-fz"))
       (setq pen-cost-efficient (pen-yaml-test yaml-ht "cost-efficient"))
       (setq pen-describe-images (pen-yaml-test yaml-ht "describe-images"))
       (setq pen-sh-update (pen-yaml-test yaml-ht "sh-update"))
