@@ -633,7 +633,7 @@ case "$sn" in
                 include_prompt=nil
             fi
 
-            if test "$nogen" = "y"; then
+            if test "$no_gen" = "y"; then
                 no_gen=t
             else
                 no_gen=nil
