@@ -461,6 +461,15 @@ cmd-nice() {
     for var in "$@"
     do
         printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
+        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
+    done | sed 's/ $//'
+}
+
+cmd-nice-with-bs() {
+    for var in "$@"
+    do
+        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
+        printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
     done | sed 's/ $//'
 }
 
@@ -1180,6 +1189,9 @@ HEREDOC
             set -- -e "$@"
         fi
 
+        # Test quotes:
+        # pena --temp 0.9 -u pf-very-witty-pick-up-lines-for-a-topic/1 "new \"zealand" | jq-list-to-lines
+
         evalcommand="$(cmd-nice "$(cmd-nice eval "$(cmd-nice "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
 docker "$docker_cmd" --env USE_NVC --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
@@ -1192,7 +1204,7 @@ esac
 
 pen_eval() {
     if test "$DEBUG" = "y"; then
-        firstarg="cmd-nice $1"
+        firstarg="cmd-nice-with-bs $1"
         shift
         set -- "$firstarg" "$@"
     fi
@@ -1203,6 +1215,8 @@ pen_eval() {
         eval "$@"
     fi
 }
+
+# pen-pl "$shcode" | pen-tv &>/dev/null
 
 if test "$fuzzy" = "y"; then
     pen_eval "$shcode" | fzf
