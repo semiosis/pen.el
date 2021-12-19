@@ -128,7 +128,7 @@
 (require 'shackle)
 (require 'wgrep)
 
-(require 'pen-custom)
+;; (require 'pen-custom)
 
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
       (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))
@@ -146,7 +146,7 @@
       (setq pendir penhostdir))
   (add-to-list 'load-path (f-join pendir "src"))
   (require 'pen)
-
+n
   (if (f-directory-p (f-join contribhostdir "src"))
       (setq contribdir contribhostdir))
   (add-to-list 'load-path (f-join contribdir "src"))
