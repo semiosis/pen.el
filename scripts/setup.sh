@@ -295,3 +295,18 @@ HEREDOC
 
 printf -- "%s\n" "$SHELL_CODE" >> ~/.bashrc
 printf -- "%s\n" "$SHELL_CODE" >> ~/.zshrc
+
+# clojure
+agi openjdk-11-jre
+(
+curl -O https://download.clojure.org/install/linux-install-1.10.3.1040.sh
+chmod +x linux-install-1.10.3.1040.sh
+./linux-install-1.10.3.1040.sh
+)
+(
+cd /usr/local/bin/
+wget "https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein"
+chmod a+x lein
+# Then need to run lein once
+lein
+)
