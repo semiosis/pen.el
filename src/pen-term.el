@@ -237,7 +237,7 @@ commands to use in that buffer.
 
       ;; This takes care of read-only-mode upon starting
       (if (and
-           pen-term-cl-refresh-after-fz
+           ;; pen-term-cl-refresh-after-fz
            (major-mode-p 'term-mode))
           (run-with-idle-timer 0.1 nil
                                `(lambda ()
@@ -245,7 +245,9 @@ commands to use in that buffer.
                                       ,(current-buffer)
                                     ;; I couldn't figure out the term read-only bug
                                     ;; So sending a C-l is a workaround
-                                    (pen-sn "TMUX= tmux send-keys C-l"))
+                                    ;; Can't send C-l. Try C-g.
+                                    ;; This is for the read-only, not fixing clear in hhgttg
+                                    (pen-sn "TMUX= tmux send-keys C-g"))
                                   ;; 'pen-try-init-char-mode
                                   )))
 
