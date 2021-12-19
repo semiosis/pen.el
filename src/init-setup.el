@@ -146,7 +146,7 @@
       (setq pendir penhostdir))
   (add-to-list 'load-path (f-join pendir "src"))
   (require 'pen)
-n
+
   (if (f-directory-p (f-join contribhostdir "src"))
       (setq contribdir contribhostdir))
   (add-to-list 'load-path (f-join contribdir "src"))
