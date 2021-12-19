@@ -235,14 +235,14 @@ case "$f" in
     bash-gen-next-user-prompt) {
         IFS= read -rd '' in < <(cat | tee /tmp/bash-gen-next-user-prompt);typeset -p in &>/dev/null
 
-        user_at_host="$(printf -- "%s" "$in" | awk 1 | scrape "^[^@ ]+@[^:$ ]+:" | tail -n 1)"
+        user_at_host="$(printf -- "%s" "$in" | awk 1 | grep -P "^[^@ ]+@[^:$ ]+[:$]" | scrape "^[^@ ]+@[^:$ ]+" | tail -n 1)"
 
         # prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
         # new_prompt_number="$(( prompt_number + 1 ))"
 
         printf -- "%s" "$in" | awk 1
 
-        echo -n "$user_at_host$ "
+        echo -n "${user_at_host}$ "
         # echo -n "In [$new_prompt_number]: "
     }
     ;;
