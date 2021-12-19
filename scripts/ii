@@ -38,6 +38,7 @@ echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
 kickstarter="$2"
 echo "$kickstarter" | tee -a /tmp/kickstarter.txt &>/dev/null &
 
+test -d "$HOME/.emacs.d/host/prompts" && : "${PROMPTS_DIR:="$HOME/.emacs.d/host/prompts"}"
 test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
