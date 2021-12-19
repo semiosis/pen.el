@@ -234,15 +234,18 @@ commands to use in that buffer.
     (with-current-buffer (term program)
 
       ;; This takes care of read-only-mode upon starting
-      (run-with-idle-timer 0.1 nil
-                           `(lambda ()
-                              (with-current-buffer
-                                  ,(current-buffer)
-                                ;; I couldn't figure out the term read-only bug
-                                ;; So sending a C-l is a workaround
-                                (pen-sn "TMUX= tmux send-keys C-l"))
-                              ;; 'pen-try-init-char-mode
-                              ))
+      (if (and
+           pen-term-cl-refresh-after-fz
+           (major-mode-p 'term-mode))
+          (run-with-idle-timer 0.1 nil
+                               `(lambda ()
+                                  (with-current-buffer
+                                      ,(current-buffer)
+                                    ;; I couldn't figure out the term read-only bug
+                                    ;; So sending a C-l is a workaround
+                                    (pen-sn "TMUX= tmux send-keys C-l"))
+                                  ;; 'pen-try-init-char-mode
+                                  )))
 
       ;; (term-send-raw-string "hi")
       (if closeframe
