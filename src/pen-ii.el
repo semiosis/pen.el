@@ -66,7 +66,6 @@
   (sleep-for 0.1)
   (pen-preceding-text))
 
-
 (defun pen-start-ii-from-buffer (lang kickstarter)
   (interactive (list (pen-detect-language-ask)
                      (pen-bol-context)))
