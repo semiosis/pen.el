@@ -70,6 +70,6 @@
 (defun pen-start-ii-from-buffer (lang kickstarter)
   (interactive (list (pen-detect-language-ask)
                      (pen-bol-context)))
-  (pen-sps (pen-cmd "ii" lang kickstarter)))
+  (pen-sps (pen-cmd "ii" lang "" kickstarter)))
 
 (provide 'pen-ii)
