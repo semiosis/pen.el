@@ -1110,6 +1110,9 @@
                      ;; ("PEN_PROMPT" . ,(pen-encode-string final-prompt))
                      ("PEN_LM_COMMAND" . ,final-lm-command)
                      ("PEN_MODEL" . ,final-model)
+                     ("PEN_WHITESPACE_SUPPORT" . ,(if final-engine-whitespace-support
+                                                      "y"
+                                                    ""))
                      ;; This must go into last-prompt-data for ink
                      ("PEN_ENGINE" . ,final-engine)
                      ("PEN_API_ENDPOINT" . ,final-api-endpoint)
