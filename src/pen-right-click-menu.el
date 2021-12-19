@@ -171,7 +171,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (defun pen-pwd ()
   "Returns the current directory."
-  default-directory)
+  (pen-snc (pen-cmd "realpath" (pen-umn default-directory))))
 
 (defun pen-tmuxify-cmd (cmd &optional dir window-name)
   (let ((slug (slugify cmd)))

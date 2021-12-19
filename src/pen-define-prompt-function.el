@@ -317,17 +317,6 @@
                  ',final-subprompts-al
                  (eval-string ,(str (cdr atp))))))))
 
-           (final-subprompts-al
-            (cl-loop
-             for atp in final-subprompts-al
-             collect
-             (cons
-              (car atp)
-              (eval
-               `(pen-let-keyvals
-                 ',final-defs
-                 (eval-string ,(str (cdr atp))))))))
-
            (final-envs
             ;; Filter is needed because of ignore-errors
             (-filter

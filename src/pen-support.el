@@ -1263,7 +1263,7 @@ when s is a string, set the clipboard to s"
   "Unminimise string."
   (if input
       (seds input
-            ("~/" user-home-directory)
+            ("~" user-home-directory)
             ("$PROMPTS" (f-join pen-prompts-directory "prompts"))
             ("$EMACSD" user-emacs-directory)
             ("$PEN" penconfdir)
