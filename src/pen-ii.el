@@ -66,10 +66,6 @@
   (sleep-for 0.1)
   (pen-preceding-text))
 
-(require 'term)
-(define-key term-raw-map (kbd "C-c") nil)
-(define-key term-raw-map (kbd "C-c i") 'pen-start-ii-from-buffer)
-(define-key term-raw-map (kbd "C-c o") 'pen-bol-context)
 
 (defun pen-start-ii-from-buffer (lang kickstarter)
   (interactive (list (pen-detect-language-ask)

@@ -160,6 +160,8 @@
   ;; (define-key term-raw-map (kbd "C-s") #'term-line-mode)
   (define-key term-raw-map (kbd "C-c C-j") #'term-line-mode)
   (define-key term-raw-map (kbd "C-c C-h") #'describe-mode)
+  (define-key term-raw-map (kbd "C-c i") 'pen-start-ii-from-buffer)
+  (define-key term-raw-map (kbd "C-c o") 'pen-bol-context)
   ;; (define-key term-raw-map (kbd "C-c h") #'evil-scroll-left)
   ;; (define-key term-raw-map (kbd "C-c H") #'evil-scroll-left)
   ;; (define-key term-raw-map (kbd "C-c l") #'evil-scroll-right)
