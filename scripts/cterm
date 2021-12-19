@@ -3,6 +3,8 @@ export TTY
 
 # ct vim /
 
+cmd "$@" | tv &>/dev/null
+
 sn="$(basename "$0")"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
