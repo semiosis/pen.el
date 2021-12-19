@@ -430,6 +430,16 @@ without any interpretation."
 
   )
 
+(defun tm-send-keys-literal (keys)
+  (interactive "P")
+  (pen-sn (concat "tmux send-keys -l " (pen-q keys))))
+(defalias 'pen-tsl 'tm-send-keys-literal)
+
+(defun tm-send-keys (keys)
+  (interactive "P")
+  (pen-sn (concat "tmux send-keys " keys)))
+(defalias 'pen-tsk 'tm-send-keys)
+
 (defun eterm-256color-compile ()
   "If eterm-256color isn't a term type, tic eterm-256color.ti.
 

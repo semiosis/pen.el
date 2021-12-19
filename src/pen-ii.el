@@ -66,13 +66,10 @@
          (ekm "C-a")
          (pen-preceding-text))))
 
-(define-key term-mode-map (kbd "C-c o") 'pen-bol-context)
+(define-key term-raw-map (kbd "C-c i") 'pen-bol-context)
 
 (defun pen-start-ii-from-buffer (lang kickstarter)
   (interactive (list (pen-detect-language-ask)
-                     (pen-bol-context)))
-  
-
-  )
+                     (pen-bol-context))))
 
 (provide 'pen-ii)
