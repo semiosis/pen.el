@@ -259,6 +259,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # Show prompt
+    -override-prompt|-op) {
+        override_prompt="$2"
+        shift
+        shift
+    }
+    ;;
+
     -inject|-i) {
         inject_gen_start="$2"
         shift
@@ -645,6 +653,12 @@ case "$sn" in
                 inject_gen_start="nil"
             fi
 
+            if test -n "$override_prompt"; then
+                override_prompt="$(cmd-nice "$override_prompt")"
+            else
+                override_prompt="nil"
+            fi
+
             # if test "$DEBUG" = "y"; then
             #     echo "(json-encode-list (pen-batch (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg))))" | tv &>/dev/null
             # fi
@@ -662,9 +676,9 @@ case "$sn" in
             fi
 
             if test "$UPDATE" = y; then
-                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-update ($pfname $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start)))))"
+                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-update ($pfname $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
             else
-                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn ($pfname $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :inject-gen-start $inject_gen_start))))"
+                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn ($pfname $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start))))"
             fi
 
             HAS_TTY=n
