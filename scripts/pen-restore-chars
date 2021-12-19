@@ -15,4 +15,5 @@ sed -e "s/<pen-notnewline>/\\\\n/g" \
     -e "s/<pen-singlequote>/'/g" \
     -e "s/<pen-dnl>/\\n\\n/g" \
     -e "s/<pen-newline>/\\n/g" \
-    -e "s/<pen-nl>/\\n/g"
+    -e "s/<pen-nl>/\\n/g" \
+    -e "s/<pen-backslash>/\\\\/g"
