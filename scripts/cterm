@@ -38,12 +38,13 @@ inside-docker-p() {
 SSH_TO_HOST=y
 
 case "$sn" in
-    cterm|ct*) {
+    *cterm|ct*) {
         SSH_TO_HOST=y
     }
     ;;
 
-    eterm|et*) {
+    # pen eterm
+    pet|*eterm|et*) {
         SSH_TO_HOST=n
     }
     ;;
