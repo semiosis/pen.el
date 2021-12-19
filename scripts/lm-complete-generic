@@ -172,6 +172,7 @@ if test "$PEN_DEBUG" = "y"; then
     echo "PEN_USER_AGENT:\"$PEN_USER_AGENT\""
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
     echo "PEN_PAYLOADS:\"$PEN_PAYLOADS\""
+    echo "PEN_WHITESPACE_SUPPORT:\"$PEN_WHITESPACE_SUPPORT\""
     echo "PEN_CACHE:\"$PEN_CACHE\""
     echo "PEN_MODEL:\"$PEN_MODEL\""
     echo "PEN_FLAGS:\"$PEN_FLAGS\""
@@ -219,6 +220,7 @@ fi
 : "${PEN_N_COMPLETIONS:="1"}"
 
 export PEN_USER_AGENT
+export PEN_WHITESPACE_SUPPORT
 export PEN_LM_KEY
 export PEN_API_ENDPOINT
 export PEN_MODEL
