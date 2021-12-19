@@ -311,6 +311,7 @@ Reconstruct the entire yaml-ht for a different language."
            ;; (string-replace "-" "<pen-dash>")
            (string-replace "'" "<pen-singlequote>")
            (string-replace "`" "<pen-backtick>")
+           (string-replace "\\" "<pen-backslash>")
            (string-replace "!" "<pen-bang>")
            (string-replace "\\n" "<pen-notnewline>")
            (string-replace "$" "<pen-dollar>"))))
@@ -330,6 +331,7 @@ Reconstruct the entire yaml-ht for a different language."
                     ;; This breaks it because it encodes slugs. Don't do it
                     ;; (string-replace "-" "<pen-dash>")
                     (string-replace "<pen-singlequote>" "'")
+                    (string-replace "<pen-backslash>" "\\")
                     (string-replace "<pen-backtick>" "`")
                     (string-replace "<pen-bang>" "!")
                     (string-replace "<pen-notnewline>" "\\n")

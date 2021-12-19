@@ -38,7 +38,8 @@
          (buf (make-comint slug (pen-nsfa cmd dir))))
     (with-current-buffer buf
       (setq-local comint-use-prompt-regexp (if (sor prompt-regexp) t))
-      (setq-local comint-prompt-regexp prompt-regexp)
+      (setq-local comint-prompt-regexp
+                  (pen-unonelineify-safe prompt-regexp))
       (switch-to-buffer buf)
       (turn-on-comint-history (f-join pen-nlsh-histdir slug)))))
 
