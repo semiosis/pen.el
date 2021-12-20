@@ -249,7 +249,7 @@ case "$f" in
     bash-gen-next-user-prompt) {
         IFS= read -rd '' in < <(cat | tee /tmp/bash-gen-next-user-prompt);typeset -p in &>/dev/null
 
-        user_at_host="$({ p_interpret "$FINAL_PROMPT"; printf -- "%s" "$in"; } | awk 1 | grep -P "^[^@ ]+@[^:$ ]+[:$]" | pen-scrape "^[^@ ]+@[^:$ ]+" | tail -n 1)"
+        user_at_host="$({ p_interpret "$FINAL_PROMPT" | pen-str unonelineify-safe; printf -- "%s" "$in"; } | awk 1 | grep -P "^[^@ ]+@[^:$ ]+[:$]" | pen-scrape "^[^@ ]+@[^:$ ]+" | tail -n 1)"
 
         # prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
         # new_prompt_number="$(( prompt_number + 1 ))"
