@@ -253,13 +253,15 @@ case "$f" in
 
         # Because the stop sequence is i.e. @mele, the user is the last thing
         new_user="$(p "$in" | tail -n 1)"
+        new_host="$(p "$user_at_host" | pen-scrape "@[^:$ ]+")"
 
         # prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
         # new_prompt_number="$(( prompt_number + 1 ))"
 
         printf -- "%s" "$in" | awk 1 | sed '$d'
 
-        echo -n "${user_at_host}$ "
+        # echo -n "${user_at_host}$ "
+        echo -n "${new_user}@${new_host}$ "
         # echo -n "In [$new_prompt_number]: "
     }
     ;;
