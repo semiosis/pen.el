@@ -244,6 +244,11 @@ case "$f" in
     }
     ;;
 
+    bash-scrape-last-prompt) {
+        # [jonyive@remote.apple.com ~]$ cd /Users/jonyive/projects/appledesign
+    }
+    ;;
+
     # I don't really want to generate the last user prompt
     # It would be better
     bash-gen-next-user-prompt) {
