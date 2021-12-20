@@ -296,7 +296,7 @@ case "$f" in
         if printf -- "%s\n" "$second_to_last_line" | grep -q -P '\$ cd [^;&]+$'; then
             dir="$(p "$second_to_last_line" | sed -n "s/.*\\\$ cd \\(.*\\).*/\\1/p")"
         elif printf -- "%s\n" "$second_to_last_line" | grep -q -P '\$ cd$'; then
-            dir=~
+            dir="~"
         else
             dir="$(p "$last_prompt_user_host_dir" | cut -d : -f 2)"
         fi
