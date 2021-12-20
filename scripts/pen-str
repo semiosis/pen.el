@@ -245,8 +245,10 @@ case "$f" in
     ;;
 
     bash-scrape-last-prompt) {
+        # shane@mele:~/var/smulliga/source/git/semiosis/pen.el/scripts$
         # [jonyive@remote.apple.com ~]$ cd /Users/jonyive/projects/appledesign
         :
+        user_at_host_type_1_and_2="$( grep -P "^\\[?[^@ ]+@[^:$ ]+[ :$]" | pen-scrape "[^[@ ]+@[^:$ ]+" | tail -n 1 )"
     }
     ;;
 
@@ -257,7 +259,7 @@ case "$f" in
 
         full_context="$( p_interpret "$FINAL_PROMPT" | pen-str unonelineify-safe; printf -- "%s" "$in"; )"
 
-        user_at_host="$( printf -- "%s" "$full_context" | awk 1 | grep -P "^[^@ ]+@[^:$ ]+[:$]" | pen-scrape "^[^@ ]+@[^:$ ]+" | tail -n 1)"
+        user_at_host="$( printf -- "%s" "$full_context" | awk 1 | grep -P "^\\[?[^@ ]+@[^:$ ]+[ :$]" | pen-scrape "[^[@ ]+@[^:$ ]+" | tail -n 1)"
 
         # Because the stop sequence is i.e. @mele, the user is the last thing
         last_line="$(p "$full_context" | tail -n 1)"
