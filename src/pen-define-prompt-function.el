@@ -960,7 +960,7 @@
            (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
                                     ',stop-sequences)
                     collect
-                    (pen-expand-template-keyvals stsq final-expressions t final-pipelines)))
+                    (pen-unonelineify-safe (pen-expand-template-keyvals stsq final-expressions t final-pipelines))))
 
           (final-stop-sequence
            (expand-template
