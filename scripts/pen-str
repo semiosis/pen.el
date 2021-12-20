@@ -279,7 +279,7 @@ case "$f" in
             new_user="$(p "$last_prompt_user_host_dir" | sed -n "s/^[^a-z]*\\([^@ ]\\+\\)@.*/\\1/p")"
         fi
         # new_host="$(p "$last_prompt_user_host_dir" | pen-scrape "[^:$ ]+$")"
-        new_host="$(p "$last_prompt_user_host_dir" | sed -n "s/[^@]*@\\([^:$ ]\\+$\\)/\\1/p")"
+        new_host="$(p "$last_prompt_user_host_dir" | cut -d '@' -f 2 | cut -d : -f 1)"
 
         # prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
         # new_prompt_number="$(( prompt_number + 1 ))"
