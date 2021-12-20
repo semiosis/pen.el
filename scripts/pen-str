@@ -246,6 +246,7 @@ case "$f" in
 
     bash-scrape-last-prompt) {
         # [jonyive@remote.apple.com ~]$ cd /Users/jonyive/projects/appledesign
+        :
     }
     ;;
 
