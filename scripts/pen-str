@@ -270,8 +270,13 @@ case "$f" in
 
         printf -- "%s" "$in" | awk 1 | sed '$d'
 
+        time="$(date +%T)"
+
+        # TODO infer the directory
+        dir=""
+
         # echo -n "${user_at_host}$ "
-        echo -n "${new_user}@${new_host}:$(date +%T)\$ "
+        echo -n "${new_user}@${new_host}:$dir\$ "
         # echo -n "In [$new_prompt_number]: "
     }
     ;;
