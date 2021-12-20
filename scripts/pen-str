@@ -270,7 +270,7 @@ case "$f" in
         # prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
         # new_prompt_number="$(( prompt_number + 1 ))"
 
-        printf -- "%s" "$full_context" | awk 1 | sed '$d'
+        printf -- "%s" "$in" | awk 1 | sed '$d'
 
         time="$(date +%T)"
 
