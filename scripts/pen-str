@@ -253,9 +253,11 @@ case "$f" in
 
         # Because the stop sequence is i.e. @mele, the user is the last thing
         last_line="$(p "$in" | tail -n 1)"
+        second_to_last_line="$(p "$in" | sed 'x;$!d')"
 
-        # Changing user is not easy
-        if printf -- "%s\n" "$last_line" | grep -q -P "^[^@:$ ]+$"; then
+        # Changing user is not easy. Only do it if the last command was a
+        # 'login'. But in that case, I should rather be using an alternative 'login' prompt
+        if printf -- "%s\n" "$last_line" | grep -q -P "^[^@:$ ]+$" && printf -- "%s\n" "$second_to_last_line" | grep -qP "\\blogin\\b"; then
             new_user="$last_line"
         else
             new_user="$(p "$user_at_host" | sed -n "s/\\(^[^@ ]\\+\\)@.*/\\1/p")"
