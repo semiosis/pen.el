@@ -32,11 +32,20 @@ lang="$1"
 test -n "$lang" || exit 1
 shift
 
+case "$lang" in
+    shell) {
+        lang=bash
+    }
+    ;;
+
+    *)
+esac
+
 memory="$1"
 echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
 
 kickstarter="$2"
-echo "$kickstarter" | tee -a /tmp/kickstarter.txt &>/dev/null &
+p "$kickstarter" | pen-str remove-trailing-whitespace | tee -a /tmp/kickstarter.txt &>/dev/null &
 
 test -d "$HOME/.emacs.d/host/prompts" && : "${PROMPTS_DIR:="$HOME/.emacs.d/host/prompts"}"
 test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"

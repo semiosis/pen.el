@@ -1,7 +1,24 @@
 #!/bin/bash
 export TTY
 
-sed -e 's/[▒▄]/ /g' \
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -rmtm) {
+        rm_tmux=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+(
+if test "$rm_tmux" = "y"; then
+    sed -z 's/\n\[ .*//'
+else
+    cat
+fi
+) | sed -e 's/[▒▄]/ /g' \
     -e 's/[┌┐┘└│├─┤┬┴┼╰╯╭╮🟠⃘]/ /g' \
     -e 's/ ·\+$//g' |
 sed -e ':loop' -e 's/^\( *\) · /\1   /g' -e 't loop' |
