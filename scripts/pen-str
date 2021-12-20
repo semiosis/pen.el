@@ -272,7 +272,7 @@ case "$f" in
 
         time="$(date +%T)"
 
-        # TODO infer the directory
+        # TODO infer the directory -- scrape the last cd
         dir=""
 
         # echo -n "${user_at_host}$ "
