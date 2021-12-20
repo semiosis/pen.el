@@ -248,8 +248,11 @@ case "$f" in
         # shane@mele:~/var/smulliga/source/git/semiosis/pen.el/scripts$
         # [jonyive@remote.apple.com ~]$
 
+        IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
         :
-        user_at_host_in_dir_type_1_and_2="$( grep -P "^\\[?[^@ ]+@[^:$ ]+[ :$]" | pen-scrape "[^[@ ]+@[^:$ ]+" | tail -n 1 )"
+        user_at_host_in_dir_type_1_and_2="$( p "$in" | grep -P "^\\[?[^@ ]+@[^:$ ]+[ :$]" | pen-scrape "[^[@ ]+@[^:$ ]+" | tail -n 1 )"
+
+        p "$user_at_host_in_dir_type_1_and_2"
     }
     ;;
 
@@ -260,7 +263,7 @@ case "$f" in
 
         full_context="$( p_interpret "$FINAL_PROMPT" | pen-str unonelineify-safe; printf -- "%s" "$in"; )"
 
-        user_at_host="$( printf -- "%s" "$full_context" | awk 1 | grep -P "^\\[?[^@ ]+@[^:$ ]+[ :$]" | pen-scrape "[^[@ ]+@[^:$ ]+" | tail -n 1)"
+        user_at_host="$( printf -- "%s" "$full_context" | pen-str bash-scrape-last-prompt )"
 
         # Because the stop sequence is i.e. @mele, the user is the last thing
         last_line="$(p "$full_context" | tail -n 1)"
