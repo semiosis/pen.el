@@ -963,8 +963,9 @@
                     (pen-unonelineify-safe (pen-expand-template-keyvals stsq final-expressions t final-pipelines))))
 
           (final-stop-sequence
-           (pen-unonelineify-safe (expand-template
-                                   (pen-expand-template-keyvals final-stop-sequence final-expressions t final-pipelines))))
+           (pen-unonelineify-safe
+            (expand-template
+             (pen-expand-template-keyvals final-stop-sequence final-expressions t final-pipelines))))
 
           (final-stop-sequences
            (if (member final-stop-sequence final-stop-sequences)
