@@ -250,9 +250,10 @@ case "$f" in
 
         IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
         :
-        user_at_host_in_dir_type_1_and_2="$( p "$in" | grep -P "^\\[?[^@ ]+@[^:$ ]+[ :$]" | pen-scrape "[^[@ ]+@[^:$ ]+" | tail -n 1 )"
+        # | tail -n 1
+        last_prompt_user_host_dir_in_dir_type_1_and_2="$( p "$in" | grep -P "^\\[?[^@ ]+@[^$]+ *[\\]$]" | sed 's/\$.*//' | pen-scrape "[^[@ ]+@[^$\\]]+" | tr ' ' : | tail -n 1 )"
 
-        p "$user_at_host_in_dir_type_1_and_2"
+        p "$last_prompt_user_host_dir_in_dir_type_1_and_2"
     }
     ;;
 
@@ -263,7 +264,7 @@ case "$f" in
 
         full_context="$( p_interpret "$FINAL_PROMPT" | pen-str unonelineify-safe; printf -- "%s" "$in"; )"
 
-        user_at_host="$( printf -- "%s" "$full_context" | pen-str bash-scrape-last-prompt )"
+        last_prompt_user_host_dir="$( printf -- "%s" "$full_context" | pen-str bash-scrape-last-prompt )"
 
         # Because the stop sequence is i.e. @mele, the user is the last thing
         last_line="$(p "$full_context" | tail -n 1)"
@@ -274,10 +275,10 @@ case "$f" in
         if printf -- "%s\n" "$last_line" | grep -q -P "^[^@:$ ]+$" && printf -- "%s\n" "$second_to_last_line" | grep -qP "\\blogin\\b"; then
             new_user="$last_line"
         else
-            new_user="$(p "$user_at_host" | sed -n "s/^[^a-z]*\\([^@ ]\\+\\)@.*/\\1/p")"
+            new_user="$(p "$last_prompt_user_host_dir" | sed -n "s/^[^a-z]*\\([^@ ]\\+\\)@.*/\\1/p")"
         fi
-        # new_host="$(p "$user_at_host" | pen-scrape "[^:$ ]+$")"
-        new_host="$(p "$user_at_host" | sed -n "s/[^@]*@\\([^:$ ]\\+$\\)/\\1/p")"
+        # new_host="$(p "$last_prompt_user_host_dir" | pen-scrape "[^:$ ]+$")"
+        new_host="$(p "$last_prompt_user_host_dir" | sed -n "s/[^@]*@\\([^:$ ]\\+$\\)/\\1/p")"
 
         # prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
         # new_prompt_number="$(( prompt_number + 1 ))"
@@ -292,12 +293,12 @@ case "$f" in
         if printf -- "%s\n" "$second_to_last_line" | grep -q -P '\$ cd [^;&]+$'; then
             dir="$(p "$second_to_last_line" | sed -n "s/.*\\\$ cd \\(.*\\).*/\\1/p")"
         else
-            dir="$(p "$full_context" | grep -P '^[a-z]+@[a-z0-9]+:[^;&]+\$' | tail -n 1 | sed -n "s/.*:\\([^$]*\\)\\$.*/\\1/p")"
+            dir="$(p "$last_prompt_user_host_dir" | cut -d : -f 2)"
         fi
 
         : "${dir:="."}"
 
-        # echo -n "${user_at_host}$ "
+        # echo -n "${last_prompt_user_host_dir}$ "
         echo -n "${new_user}@${new_host}:$dir\$ "
         # echo -n "In [$new_prompt_number]: "
     }
