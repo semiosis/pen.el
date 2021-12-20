@@ -274,6 +274,7 @@ case "$f" in
         # 'login'. But in that case, I should rather be using an alternative 'login' prompt
         if printf -- "%s\n" "$last_line" | grep -q -P "^[^@:$ ]+$" && printf -- "%s\n" "$second_to_last_line" | grep -qP "\\blogin\\b"; then
             new_user="$last_line"
+            new_user="$(p "$new_user" | sed 's/^\[//')"
         else
             new_user="$(p "$last_prompt_user_host_dir" | sed -n "s/^[^a-z]*\\([^@ ]\\+\\)@.*/\\1/p")"
         fi
