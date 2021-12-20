@@ -38,7 +38,7 @@
            (and (not do-pen-update)
                 (pen-var-value-maybe 'cache)))
 
-          (final-expressions)
+n          (final-expressions)
 
           (final-path
            (let ((fpath
@@ -963,8 +963,9 @@
                     (pen-unonelineify-safe (pen-expand-template-keyvals stsq final-expressions t final-pipelines))))
 
           (final-stop-sequence
-           (expand-template
-            (pen-expand-template-keyvals final-stop-sequence final-expressions t final-pipelines)))
+           (pen-unonelineify-safe
+            (expand-template
+             (pen-expand-template-keyvals final-stop-sequence final-expressions t final-pipelines))))
 
           (final-stop-sequences
            (if (member final-stop-sequence final-stop-sequences)
