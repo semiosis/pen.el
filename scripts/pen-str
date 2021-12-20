@@ -252,8 +252,16 @@ case "$f" in
         user_at_host="$({ p_interpret "$FINAL_PROMPT" | pen-str unonelineify-safe; printf -- "%s" "$in"; } | awk 1 | grep -P "^[^@ ]+@[^:$ ]+[:$]" | pen-scrape "^[^@ ]+@[^:$ ]+" | tail -n 1)"
 
         # Because the stop sequence is i.e. @mele, the user is the last thing
-        new_user="$(p "$in" | tail -n 1)"
-        new_host="$(p "$user_at_host" | pen-scrape "@[^:$ ]+")"
+        last_line="$(p "$in" | tail -n 1)"
+
+        # Changing user is not easy
+        if printf -- "%s\n" "$last_line" | grep -q -P "^[^@:$ ]+$"; then
+            new_user="$last_line"
+        else
+            new_user="$(p "$user_at_host" | sed -n "s/\\(^[^@ ]\\+\\)@.*/\\1/p")"
+        fi
+        # new_host="$(p "$user_at_host" | pen-scrape "[^:$ ]+$")"
+        new_host="$(p "$user_at_host" | sed -n "s/[^@]*@\\([^:$ ]\\+$\\)/\\1/p")"
 
         # prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
         # new_prompt_number="$(( prompt_number + 1 ))"
