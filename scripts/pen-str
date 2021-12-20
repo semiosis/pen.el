@@ -271,7 +271,7 @@ case "$f" in
         printf -- "%s" "$in" | awk 1 | sed '$d'
 
         # echo -n "${user_at_host}$ "
-        echo -n "${new_user}@${new_host}:\$PWD\$ "
+        echo -n "${new_user}@${new_host}:$(date +%T)\$ "
         # echo -n "In [$new_prompt_number]: "
     }
     ;;
