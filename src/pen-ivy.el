@@ -53,6 +53,27 @@
     ;; It's really strange how it doesn't show, but it does copy
     (xc (pen-ivy-get-selection))))
 
+;; TODO Explore an asynchronous edit while Pen.el is running
+Maybe I have to use vim for the moment.
+
+(defun ivy-edit-and-use-selection (text &optional edit-fn)
+  "Copy the selected candidate as a string."
+  (interactive (list (if (selected-p)
+                         (selection))))
+  (if (ivy--prompt-selected-p)
+      (ivy-alt-done (pen-ivy-get-selection))
+    ;; It's really strange how it doesn't show, but it does copy
+    ))
+
+(defun pen-ivy-edit-and-use-selected-continuation (text)
+  "Copy the selected candidate as a string."
+  (interactive (list (if (selected-p)
+                         (selection))))
+  (if (ivy--prompt-selected-p)
+      (ivy-alt-done (pen-ivy-get-selection))
+    ;; It's really strange how it doesn't show, but it does copy
+    ))
+
 (defun pen-ivy-open-selection-in-vim ()
   "Copy the selected candidate as a string."
   (interactive)
