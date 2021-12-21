@@ -54,7 +54,7 @@
     (xc (pen-ivy-get-selection))))
 
 ;; TODO Explore an asynchronous edit while Pen.el is running
-Maybe I have to use vim for the moment.
+;; Maybe I have to use vim for the moment.
 
 (defun ivy-edit-and-use-selection (text &optional edit-fn)
   "Copy the selected candidate as a string."
