@@ -309,7 +309,8 @@
           `((define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
             ;; Hyper-Space
             (define-key pen-map (kbd ,(concat "H-SPC " bind-i)) ,fun)
-            (define-key pen-map (kbd ,(concat "M-Q " bind-i)) ,fun)
+            ;; Can't use M-Q because tmux uses thats
+            ;; (define-key pen-map (kbd ,(concat "M-Q " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "M-u " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "M-SPC " bind-i)) ,fun)
