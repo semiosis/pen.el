@@ -356,7 +356,9 @@
                 (let ((func-name ,func-name))
                   (eval
                    `(pen-let-keyvals
-                     ',final-subprompts-al
+                     (asoc-merge
+                      ,(-zip-fill nil vars vals)
+                      ',final-subprompts-al)
                      (eval-string ,(str (cdr tp))))))
               (car tp))))
 
