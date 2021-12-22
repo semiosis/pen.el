@@ -355,9 +355,10 @@
                 ;; TODO if a val is empty, apply the default with the subprompts in scope
                 (let ((func-name ,func-name))
                   (eval
+                   ;; let* implementation for vals
                    `(pen-let-keyvals
                      (asoc-merge
-                      ,(-zip-fill nil vars vals)
+                      ;; (-zip-fill nil ,',var-syms ',vals)
                       ',final-subprompts-al)
                      (eval-string ,(str (cdr tp))))))
               (car tp))))
@@ -2004,7 +2005,7 @@ Function names are prefixed with pf- for easy searching"
                         (related-prompts (pen-vector2list (ht-get yaml-ht "related-prompts")))
                         (future-titles (pen-vector2list (ht-get yaml-ht "future-titles")))
 
-                        ;; variables
+                        ;; variables - these are actually varnames. don't get confused
                         (vars (ht-get yaml-ht "vars"))
 
                         ;; used internally
