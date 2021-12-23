@@ -702,6 +702,9 @@ Reconstruct the entire yaml-ht for a different language."
 (defun pen-alist-to-list (al)
   (cl-loop for e in al collect (list (car e) (cdr e))))
 
+;; (defun pen-list-to-alist (l)
+;;   (cl-loop for e in l collect (cons (car e) (second e))))
+
 (defun pen-test-alist-to-list ()
   (interactive)
 
@@ -831,6 +834,7 @@ Reconstruct the entire yaml-ht for a different language."
             (cons (car tup) (second tup)))
           tuplist))
 (defalias 'pen-list2alist 'tuplist-to-alist)
+(defalias 'pen-list-to-alist 'tuplist-to-alist)
 
 ;; Use lexical scope with dynamic scope for overriding.
 ;; That way is more reliable than having lots of params.

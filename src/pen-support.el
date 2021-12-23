@@ -1311,6 +1311,7 @@ when s is a string, set the clipboard to s"
   (pen-sn command stdin))
 
 ;; (alist2pairs '(("hi" . "yo") ("my day" . "is good")))
+;; (alist2pairs '((hi . "yo") (my-day . "is good")))
 (defun alist2pairs (al)
   (mapcar (lambda (e)
             (list (intern (slugify (str (car e)))) (cdr e)))
@@ -1325,10 +1326,16 @@ when s is a string, set the clipboard to s"
   (interactive)
   (pen-let-keyvals '(("hi" . "yo") ("my day" . "is good")) hi))
 
+(defun pen-test-alist-set ()
+  (let ((vals-sofar))
+    (alist-set 'vals-sofar 'yoyo "hi")))
+
 (defun pen-test-let-keyvals ()
   (interactive)
+  ;; (eval
+  ;;  `(pen-let-keyvals '(("postags" . "hi")) (eval-string "postags")))
   (eval
-   `(pen-let-keyvals '(("postags" . "hi")) (eval-string "postags")))
+   `(pen-let-keyvals '((postags . "hi")) (eval-string "postags")))
   ;; (pen-let-keyvals '(("postags" . "hi")) postags)
   )
 

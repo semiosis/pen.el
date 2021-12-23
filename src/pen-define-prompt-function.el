@@ -290,17 +290,6 @@
                             (pen-yas-expand-string final-prompt)
                           final-prompt))
 
-          (final-defs
-           (cl-loop
-            for atp in final-defs
-            collect
-            (cons
-             (car atp)
-             (eval
-              `(pen-let-keyvals
-                ',final-subprompts-al
-                (eval-string ,(str (cdr atp))))))))
-
           (final-envs
            ;; Filter is needed because of ignore-errors
            (-filter
@@ -347,26 +336,38 @@
           (last-vals-exprs vals)
 
           (vals
-           (cl-loop
-            for tp in (-zip-fill nil vals final-var-defaults)
-            ;; cl-loop is opaque to what has been so far set
-            collect
-            (if (and (not (sor (car tp)))
-                     (sor (cdr tp)))
-                ;; TODO if a val is empty, apply the default with the subprompts in scope
-                (let ((func-name ,func-name)
-                      (var-al
-                       (asoc-merge
-                        '(("pos-tags" . "hi"))
-                        (-zip-fill nil ',var-syms ',vals)
-                        ',final-subprompts-al)))
-                  (eval
-                   ;; let* implementation for vals
-                   ;; (assoc 'pos-tags (alist2pairs '((pos-tags . "hi"))))
-                   `(pen-let-keyvals
-                     ,
-                     (eval-string ,(str (cdr tp))))))
-              (car tp))))
+           (let ((varvals-sofar))
+             (cl-loop
+              ;; (-zip-fill nil '(a b c) '(1 2 3) '("a" "b" "c"))
+              for tp in (-zip-fill nil ',var-syms vals final-var-defaults)
+              ;; cl-loop is opaque to what has been so far set
+              collect
+              (let ((sym (first tp))
+                    (val (second tp))
+                    (default (third tp)))
+                (if (and (not (sor (second tp)))
+                         (sor (third tp)))
+
+                    ;; set the second from the third
+                    ;; save to current varvals-sofar and use that in subsequent evaluations
+
+                    ;; TODO if a val is empty, apply the default with the subprompts in scope
+                    (let* ((var-al
+                            (asoc-merge
+                             '((func-name . ,func-name))
+                             varvals-sofar
+                             final-subprompts-al))
+                           (thowaway var-al)
+                           (valtmp
+                            (eval
+                             ;; let* implementation for vals
+                             ;; (assoc 'pos-tags (alist2pairs '((pos-tags . "hi"))))
+                             `(pen-let-keyvals
+                               ',var-al
+                               (eval-string ,(str default))))))
+                      (alist-set 'varvals-sofar sym valtmp)
+                      valtmp)
+                  val)))))
 
           (last-vals vals)
 
@@ -615,10 +616,34 @@
                   ,temperature
                   final-default-temperature))))
 
+          (defs-varvals
+           (asoc-merge
+            '((func-name . ,func-name))
+            final-subprompts-al
+            (-zip-fill nil ',var-syms vals)))
+
+          (final-defs
+           (cl-loop
+            for atp in final-defs
+            collect
+            (cons
+             (car atp)
+             (eval
+              `(pen-let-keyvals
+                ',defs-varvals
+                (eval-string ,(str (cdr atp))))))))
+
+          (validator-varvals
+           (asoc-merge
+            defs-varvals
+            final-defs))
+
+          ;; TODO Make the expand-template utilise variables in scope
           (final-validator
-           (expand-template
-            (str (or (pen-var-value-maybe 'validator)
-                     ,validator))))
+           (expand-template-al (expand-template
+             (str (or (pen-var-value-maybe 'validator)
+                      ,validator)))
+                               validator-varvals))
 
           (final-mode
            (expand-template
@@ -1599,25 +1624,33 @@
                      ;; server
                      )))
           (pen-force-custom
-           (cl-macrolet  ((expand-template
-                           (string-sym)
-                           `(--> ,string-sym
-                              ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
-                              ;; The t fixes this
-                              (pen-onelineify-safe it)
-                              ;; TODO Replace the engine-delimiter
-                              ;; <delim>
-                              (pen-expand-template-keyvals it final-subprompts-al t final-pipelines)
-                              (pen-expand-template it vals t )
-                              ;; I also want to encode newlines into <pen-newline> and <pen-dnl>
-                              ;; But only for delim
-                              (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t final-pipelines)
-                              (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
-                              (pen-expand-template-keyvals it var-keyvals-slugged t final-pipelines)
-                              (pen-expand-template-keyvals it var-keyvals t final-pipelines)
-                              (pen-expand-template-keyvals it final-defs t final-pipelines)
-                              ;; (pen-expand-template-keyvals it final-expressions t final-pipelines)
-                              (pen-unonelineify-safe it))))
+           (cl-macrolet ((expand-template
+                          (string-sym)
+                          `(--> ,string-sym
+                             ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
+                             ;; The t fixes this
+                             (pen-onelineify-safe it)
+                             ;; TODO Replace the engine-delimiter
+                             ;; <delim>
+                             (pen-expand-template-keyvals it final-subprompts-al t final-pipelines)
+                             (pen-expand-template it vals t)
+                             ;; I also want to encode newlines into <pen-newline> and <pen-dnl>
+                             ;; But only for delim
+                             (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t final-pipelines)
+                             (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
+                             (pen-expand-template-keyvals it var-keyvals-slugged t final-pipelines)
+                             (pen-expand-template-keyvals it var-keyvals t final-pipelines)
+                             (pen-expand-template-keyvals it final-defs t final-pipelines)
+                             ;; (pen-expand-template-keyvals it final-expressions t final-pipelines)
+                             (pen-unonelineify-safe it)))
+                         (expand-template-al
+                          (string-sym al)
+                          `(--> ,string-sym
+                             ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
+                             ;; The t fixes this
+                             (pen-onelineify-safe it)
+                             (pen-expand-template-keyvals it ,al t final-pipelines)
+                             (pen-unonelineify-safe it))))
 
              (setq pen-last-prompt-data `((face . ink-generated)
                                           ;; This is necessary because most modes
@@ -1678,6 +1711,14 @@ Function names are prefixed with pf- for easy searching"
                          (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
                          (pen-expand-template-keyvals it var-keyvals-slugged t final-pipelines)
                          (pen-expand-template-keyvals it var-keyvals t final-pipelines)
+                         (pen-unonelineify-safe it)))
+                     (pen-expand-template-al
+                      (string-sym al)
+                      `(--> ,string-sym
+                         ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
+                         ;; The t fixes this
+                         (pen-onelineify-safe it)
+                         (pen-expand-template-keyvals it ,al t final-pipelines)
                          (pen-unonelineify-safe it))))
 
          (cl-loop for path in paths do
@@ -2227,7 +2268,8 @@ Function names are prefixed with pf- for easy searching"
                                      (pen-let-keyvals
                                       ',',(pen-subprompts-to-alist subprompts)
                                       (if ,,default
-                                          (eval-string ,,(str default))
+                                          ;; This will be tried again later, when more vars are available
+                                          (ignore-errors (eval-string ,,(str default)))
                                         (read-string-hist ,,(concat varname ": ") ,,example)))))))
                             do
                             (progn
