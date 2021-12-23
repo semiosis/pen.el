@@ -196,6 +196,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    tm) {
+        start_shell=y
+        shift
+        set -- tmux "$@"
+    }
+    ;;
+
+    tma) {
+        start_shell=y
+        shift
+        set -- "$@" eval "tmux attach || tmux || zsh"
+    }
+    ;;
+
     -tty|-nw|-t) {
         PEN_USE_GUI=n
         shift
