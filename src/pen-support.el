@@ -1325,6 +1325,13 @@ when s is a string, set the clipboard to s"
   (interactive)
   (pen-let-keyvals '(("hi" . "yo") ("my day" . "is good")) hi))
 
+(defun pen-test-let-keyvals ()
+  (interactive)
+  (eval
+   `(pen-let-keyvals '(("postags" . "hi")) (eval-string "postags")))
+  ;; (pen-let-keyvals '(("postags" . "hi")) postags)
+  )
+
 (defun pen-subprompts-to-alist (ht)
   (ht->alist (-reduce 'ht-merge (vector2list ht))))
 

@@ -349,17 +349,22 @@
           (vals
            (cl-loop
             for tp in (-zip-fill nil vals final-var-defaults)
+            ;; cl-loop is opaque to what has been so far set
             collect
             (if (and (not (sor (car tp)))
                      (sor (cdr tp)))
                 ;; TODO if a val is empty, apply the default with the subprompts in scope
-                (let ((func-name ,func-name))
+                (let ((func-name ,func-name)
+                      (var-al
+                       (asoc-merge
+                        '(("pos-tags" . "hi"))
+                        (-zip-fill nil ',var-syms ',vals)
+                        ',final-subprompts-al)))
                   (eval
                    ;; let* implementation for vals
+                   ;; (assoc 'pos-tags (alist2pairs '((pos-tags . "hi"))))
                    `(pen-let-keyvals
-                     (asoc-merge
-                      ;; (-zip-fill nil ,',var-syms ',vals)
-                      ',final-subprompts-al)
+                     ,
                      (eval-string ,(str (cdr tp))))))
               (car tp))))
 
