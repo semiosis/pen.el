@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+export PENCONF="$HOME/.pen"
+
 # See also: 'F' find commands
 
 # Filter commands
@@ -61,7 +63,7 @@ case "$opt" in
 
         set pipefail
         filter="filter-things.sh"
-        
+
         ret="$?" # catches fzf cancel exit = 130
 
         if [ -n "$filter" ]; then
