@@ -9,11 +9,11 @@ m1="$(file --mime-type -Lb "$@")"
 m2="$($HOME/node_modules/.bin//mime "$@")"
 m3="$(mimetype "$@" | rev | awk '{ print $1 }' | rev)"
 
-if pl "$m1" | grep -q -P 'text'; then
+if pen-pl "$m1" | grep -q -P 'text'; then
     printf -- "%s" "$m1"
-elif pl "$m2" | grep -q -P 'text'; then
+elif pen-pl "$m2" | grep -q -P 'text'; then
     printf -- "%s" "$m2"
-elif pl "$m3" | grep -q -P 'text'; then
+elif pen-pl "$m3" | grep -q -P 'text'; then
     printf -- "%s" "$m3"
 else
     # Prefer 3
