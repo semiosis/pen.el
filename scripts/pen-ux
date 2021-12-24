@@ -111,7 +111,7 @@ case "$cmd" in
     }
     ;;
 
-    mt|mimetype) # 
+    mt|mimetype) #
         # u mt "notes.txt"
 
         mt "$@"
@@ -124,7 +124,7 @@ case "$cmd" in
         # u lx $HOME/scripts:$HOME/local/bin
         # u lx $HOME/scripts:$HOME/local/bin
     ;;
-    
+
 
     rp)
         # u nodirsuffix | xargs --no-run-if-empty -l1 realpath | u dirsuffix
@@ -158,7 +158,7 @@ case "$cmd" in
         test -n "$dir" && export TMPDIR="$dir"
 
         # ns hi 1>&2
-        
+
         mktemp -t "file_${template}_XXXXXX_rand-${RANDOM}_pid-$$.$ext"
     }
     ;;
@@ -177,10 +177,10 @@ case "$cmd" in
         if [ -z "$name" ]; then
             name=tmp
         fi
-        
+
         slogdir="$LOGDIR/$name"
         mkdir -p  "$slogdir"
-        
+
         fp="$slogdir/$(date-ts).log"
         # pen-pl "$fp" >&2
 
@@ -330,19 +330,7 @@ case "$cmd" in
     ;;
 
     dirinfo) {
-        tm n "$f :: NOT IMPLEMENTED"
-
-        # Describe a directory.
-
-        # Need:
-        # Frequency of file paths
-
-        # Perform some kind of statistical analysis on all the stuff and
-        # put it into a database of some kind.
-
-        # Use python mainly
-
-        # dirinfo.sh
+        pen-dirinfo
     }
     ;;
 
@@ -350,7 +338,7 @@ case "$cmd" in
         if stdin_exists; then
             args="$(qargs)"
             export -f longest_common_prefix
-            
+
             # printf -- "%s\n" $args | parallel longest_common_prefix
             printf -- "%s\n" $args | xargs longest-common-prefix
             # printf -- "%s\n" "$args" | parallel longest_common_prefix

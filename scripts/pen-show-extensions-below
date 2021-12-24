@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+function find-files {
+    find . -path '*/.git/*' -prune -o -type f -print |
+    sed -n -e 's/.*\///' -e '/\./s/.*\.//p';
+}
+
+find-files |
+    sort |
+    uniq -c |
+    sort -nr |
+    sed -r -e 's/([0-9]) /\1\t/' -e "s/^\\s*//" |
+    pen-pa
+
+exit "$?"
