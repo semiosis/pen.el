@@ -40,7 +40,7 @@
 (defun pen-region-pipe (cmd)
   (interactive (list (read-string "shell filter:")))
   "pipe region through shell command"
-  (if (not cmd)
+  (if (not (sor cmd))
       (setq cmd "pen-tm filter"))
   (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))))
 
