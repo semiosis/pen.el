@@ -3477,7 +3477,7 @@ case "$f" in
                 if test "$HAS_STDOUT" = "y"; then
                     cat
                 else
-                    tv
+                    pen-tv
                 fi
             }
         fi

@@ -2,6 +2,7 @@
 export TTY
 
 export PENCONF="$HOME/.pen"
+export PENELD="$EMACSD/pen.el"
 
 # See also: 'F' find commands
 
