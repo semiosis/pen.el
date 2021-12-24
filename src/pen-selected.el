@@ -9,4 +9,6 @@
   global-selected-minor-mode selected-minor-mode pen-turn-on-selected-minor-mode)
 (global-selected-minor-mode t)
 
+(define-key selected-keymap (kbd "J") 'pen-fi-join)
+
 (provide 'pen-selected)

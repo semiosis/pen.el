@@ -122,6 +122,7 @@ apt install libgnutls28-dev
 apt install libjansson-dev
 apt install imagemagick-6.q16 libmagick++-6-headers libmagick++-dev
 apt install libgtk-3-0 libgtk-3-dev
+apt install cargo
 
 (
     cd /root/emacs

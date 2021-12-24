@@ -769,6 +769,7 @@
 ;; Initial load of prompt functions
 (pen-reload)
 
-
+(setq transient-history-file "~/.pen/transient-history.el")
+(setq transient-values-file "~/.pen/transient-values.el")
 
 (provide 'pen-example-config)

@@ -7,7 +7,7 @@
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 (package-initialize)
 
-(package-refresh-contents)
+(ignore-errors (package-refresh-contents))
 
 ;; Install dependencies
 (package-install 'shut-up)

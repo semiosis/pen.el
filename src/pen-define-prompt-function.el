@@ -1570,6 +1570,15 @@
              (pen-etv (ink-propertise result))))
          result))))
 
+;; TODO Make the transient system this way:
+;; If initial-transient is on, then abort the function but provide
+;; to `run-prompt-function-initial-transient` the var vals read interactively
+;; along with
+
+(defun run-prompt-function-initial-transient ()
+
+  )
+
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
@@ -1586,6 +1595,8 @@
                                                              override-prompt
                                                              force-interactive
                                                              prompt-hist-id
+                                                             initial-transient
+                                                             final-transient
                                                              client
                                                              server))
       ,doc
@@ -1600,6 +1611,9 @@
       (let* ((is-interactive
               (or (interactive-p)
                   force-interactive))
+             ;; (run-transient-prompt-config
+             ;;  (and (interactive-p)
+             ;;       (= (prefix-numeric-value current-prefix-arg) 1)))
              (client-fn-name
               (replace-regexp-in-string "^pf-" "pen-fn-" (str ',func-sym)))
              (client-fn-sym

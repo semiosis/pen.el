@@ -41,17 +41,25 @@
   (interactive (list (read-string "shell filter:")))
   "pipe region through shell command"
   (if (not cmd)
-      (setq cmd "tm filter"))
+      (setq cmd "pen-tm filter"))
   (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))))
 
+;; cat "$PENELD/config/filters.sh"
+(require 'f)
 (defun pen-filter-shellscript (script)
   "This will pipe the selection into fzf filters,\nreplacing the original region. If no region is\nselected, then the entire buffer is passed\nread only."
-  (interactive (list (fz (cat "$HOME/filters/filters.sh") nil nil "pen-filter-shellscript: ")))
+  (interactive (list (fz (cat (f-join pen-penel-directory "config" "filters.sh")) nil nil "pen-filter-shellscript: ")))
   (if (region-active-p)
       (pen-region-pipe
        (chomp
         (replace-regexp-in-string
          " #.*" ""
          script)))))
+
+(defun pen-fi-join (arg)
+  "Indent by prefix arg"
+  (interactive "P")
+  (progn (if (not arg) (setq arg ""))
+         (pen-region-pipe (concat "pen-str join " (str arg)))))
 
 (provide 'pen-filters)
