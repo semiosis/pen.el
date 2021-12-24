@@ -12,6 +12,7 @@ export PEN_SCRIPTS="$PENELD/scripts"
 export PROMPTSD="$EMACSD/prompts"
 export PROMPTS="$PROMPTSD/prompts"
 export BROWSER="eww -x"
+export MIRRORD="$HOME/text-mirror"
 
 agi() {
     apt install -y "$@"

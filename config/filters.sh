@@ -175,7 +175,7 @@ urlsafe
 python -c "import sys; print [line for line in sys.stdin]"
 htmlentities-encode.sh
 slugify
-strip-ansi                                                                          # ansi strip
+pen-strip-ansi                                                                          # ansi strip
 sed 's/[^0-9a-zA-Z]\+/ /g'                                                          # split/show words on line. non-alphanumeric to whitespace
 sed 'a\\'                                                                           # Double space
 awk '{print; print "";}'                                                            # Double space
