@@ -114,6 +114,15 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   ;; ret
   )
 
+(defun pen-aget (key alist)
+  (cdr (assoc key alist)))
+
+(defun pen-alist-set (alist-symbol key value)
+  "Set KEY to VALUE in alist ALIST-SYMBOL."
+  (set alist-symbol
+       (cons (list key value) 
+             (assq-delete-all key (eval alist-symbol)))))
+
 (defun pen-alist-setcdr (alist-symbol key value)
   "Set KEY to VALUE in alist ALIST-SYMBOL."
   (set alist-symbol
@@ -1328,7 +1337,7 @@ when s is a string, set the clipboard to s"
 
 (defun pen-test-alist-set ()
   (let ((vals-sofar))
-    (alist-set 'vals-sofar 'yoyo "hi")))
+    (pen-alist-set 'vals-sofar 'yoyo "hi")))
 
 (defun pen-test-let-keyvals ()
   (interactive)
@@ -1490,5 +1499,46 @@ This function accepts any number of ARGUMENTS, but ignores them."
           (if (interactive-p)
               (pen-etv def)
             def)))))
+
+(defun beginning-of-line-or-indentation ()
+  "move to beginning of line, or indentation"
+  (interactive)
+  (cond
+   ((major-mode-p 'dun-mode)
+    (progn
+      (beginning-of-line)
+      (if (looking-at-p "^>")
+          (forward-char))))
+   ((or (major-mode-p
+         'haskell-interactive-mode)
+        (major-mode-p 'eshell-mode))
+    (let ((my-mode nil))
+      (execute-kbd-macro (kbd "C-a"))))
+   (t
+    (progn
+      (if (bolp)
+          (back-to-indentation)
+        (beginning-of-line))))))
+
+(defun pen-copy-line (&optional arg)
+  "arg is C-u, if provided"
+  (interactive "P")
+  (if (region-active-p)
+      (progn
+        (execute-kbd-macro (kbd "M-w"))
+        (deselect))
+    (progn
+      (if (equal current-prefix-arg nil)
+          (progn
+            (end-of-line)
+            (call-interactively 'cua-set-mark)
+            (beginning-of-line-or-indentation)
+            (beginning-of-line-or-indentation)
+            (call-interactively 'cua-exchange-point-and-mark))
+        (progn
+          (beginning-of-line)
+          (cua-set-mark)
+          (end-of-line))))))
+(define-key global-map (kbd "M-Y") 'pen-copy-line)
 
 (provide 'pen-support)

@@ -4,6 +4,11 @@
 (defun pen-container-running ()
   (pen-snq (cmd "pen" "-running-p")))
 
+(defun ihhgttg ()
+  (interactive)
+  (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
+    (pen-e-sps (pen-lm (pen-eval-string el)))))
+
 (defun apostrophe-start-chatbot-from-name (name &optional auto)
   (interactive (list (read-string-hist "person: ")))
 

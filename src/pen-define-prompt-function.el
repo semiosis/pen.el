@@ -38,6 +38,9 @@
            (and (not do-pen-update)
                 (pen-var-value-maybe 'cache)))
 
+          (do-pen-batch
+           (pen-var-value-maybe 'do-pen-batch))
+
           (final-expressions)
 
           (final-path
@@ -354,7 +357,9 @@
                     ;; TODO if a val is empty, apply the default with the subprompts in scope
                     (let* ((var-al
                             (asoc-merge
-                             '((func-name . ,func-name))
+                             `((func-name . ,,func-name)
+                               (do-pen-batch . ,do-pen-batch)
+                               (pen-no-select-result . ,pen-no-select-result))
                              varvals-sofar
                              final-subprompts-al))
                            (thowaway var-al)
@@ -365,7 +370,7 @@
                              `(pen-let-keyvals
                                ',var-al
                                (eval-string ,(str default))))))
-                      (alist-set 'varvals-sofar sym valtmp)
+                      (pen-alist-set 'varvals-sofar sym valtmp)
                       valtmp)
                   val)))))
 
@@ -1604,7 +1609,8 @@
 
       (setq no-select-result
             (or no-select-result
-                (pen-var-value-maybe 'pen-no-select-result)))
+                (pen-var-value-maybe 'pen-no-select-result)
+                (pen-var-value-maybe 'do-pen-batch)))
 
       ;; force-custom, unfortunately disables call-interactively
       ;; i guess that it could also disable other values
