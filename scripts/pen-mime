@@ -19,5 +19,3 @@ else
     # Prefer 3
     printf -- "%s" "$m3"
 fi
-
-# file --mime-type -Lb "$@"

@@ -112,9 +112,6 @@ dump() { /usr/bin/printf -- "%s\n" "$output"; }
 # a common post-processing function used after most commands
 trim() { head -n "$maxln"; }
 
-# wraps highlight to treat exit code 141 (killed by SIGPIPE) as success
-# highlight() { command highlight "$@"; test $? = 0 -o $? = 141; }
-
 # This lags when used in search engine
 highlight() {
     command cat "$@"
@@ -259,10 +256,6 @@ case "$MIME_TYPE" in
         # Do not even try
         exit 1
 
-        # for some reason, timg only works inside tmux. Make a script to
-        # run timg inside of tmux and then cat tmux.
-        # A tmux cat program
-
         if test -z TEXT_ONLY; then
             pp_name="$(ps -o comm= $PPID)"
 
@@ -283,32 +276,6 @@ case "$MIME_TYPE" in
         fi
 
         exit 0
-
-        # img2txt --gamma=0.6 --width="$width" "$path" && exit 4
-
-        # timg is much better
-        # https://github.com/hzeller/timg
-
-        #if [ -z "$height" ]; then
-        #    height="$LINES"
-        #
-        #    if [ -z "$height" ]; then
-        #        LINES=$(tput lines)
-
-        #        height="$LINES"
-        #    fi
-        #fi
-        # echo "$width x $height" | tv
-
-        # Works but use img2txt instead because ranger cuts out anything
-        # above 16 colors anyway.
-        # TERM=xterm-256color timg -g${width}x${height} "$path"  && exit 4 || exit 1
-
-        # OK so it's working fine but ranger is stripping the colour out
-        # or something
-        # TERM=xterm-256color timg -g${width}x${height} "$path" | tm -S -tout spv "less -rS" && exit 4 || exit 1
-        # export TERM=xterm-256color
-        # timg -E -f1 -c1  -g30x20 "$path" && exit 4 || exit 1
     }
     ;;
 
@@ -332,6 +299,3 @@ esac
 # Not all of the above endpoints have an exit 0 but they should do. That's why this is
 # need.
 exit $?
-
-## This needs to exit true for ranger to display anything
-#exit 0
