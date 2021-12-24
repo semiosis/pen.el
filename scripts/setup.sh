@@ -224,6 +224,14 @@ apt install bc
 
 curl -L http://cpanmin.us | perl - App::cpanminus
 cpanm --force String::Escape
+cpanm String::Scanf
+cpanm List::Gen
+cpanm Graph::Easy
+cpanm Text::Tabulate
+agi libperl-dev # IO::AIO needs this to compile
+cpanm IO::AIO
+cpanm AnyEvent::AIO
+cpanm Perl::LanguageServer
 
 mkdir -p ~/.config/efm-langserver
 
