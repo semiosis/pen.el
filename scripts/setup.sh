@@ -97,6 +97,8 @@ mkdir -p "$EMACSD/comint-history"
 # rustc 1.51.0 will build it
 rustc --version | grep -q " 1.5" || curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
+cargo install xsv
+
 (
 cd "$EMACSD/emacs-yamlmod"
 source $HOME/.cargo/env
