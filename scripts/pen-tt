@@ -2,7 +2,6 @@
 
 # For testing things
 
-
 # TODO
 # elif test -e "$unminimised"; then
 
@@ -135,7 +134,7 @@ case "$operator" in
         # convert all to lowercase
         # Use fzf to do the match.
 
-        lit -s "$subject" | $HOME/source/git/fzf/bin/fzf --no-sort -f "$pattern" &>/dev/null
+        p "$subject" | fzf --no-sort -f "$pattern" &>/dev/null
         exit $?
     }
     ;;
@@ -147,7 +146,7 @@ case "$operator" in
     ;;
 
     -s) { # sed pattern
-        result="$(lit -s "$subject" | sed -n "/$pattern/")"
+        result="$(p "$subject" | sed -n "/$pattern/")"
         test -n "$result"
         exit $?
     }
@@ -163,6 +162,6 @@ case "$operator" in
 esac
 
 
-printf -- "%s\n" "Unknown test $(aqf "$subject") $(aqf "$operator") $(aqf "$pattern")" 1>&2
+printf -- "%s\n" "Unknown test $(cmd-nice-posix "$subject") $(cmd-nice-posix "$operator") $(cmd-nice-posix "$pattern")" 1>&2
 
 exit 1

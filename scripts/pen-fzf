@@ -1,0 +1,167 @@
+#!/bin/bash
+# export TTY="$(tty)"
+
+# export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
+# export FZF_DEFAULT_COMMAND="find . -maxdepth 1 -printf '%P\n'"
+
+
+# The =fzf= wrapper must not change the command line arguments.
+# This is so utilities making use of fzf continue to work.
+# Change options with the mfz script.
+
+
+# ls -la /proc/$$/fd > /tmp/yo.txt
+
+# Kernel update broke fzf
+# https://github.com/junegunn/fzf/issues/1486#start-of-content
+
+unset CWD
+
+# free bindings
+# alt-q # taken
+# alt-x
+# alt-y
+# ctrl-alt-a
+# ctrl-alt-b
+# ctrl-alt-c # taken
+# ctrl-alt-d
+# ctrl-alt-e
+# ctrl-alt-f # taken
+# ctrl-alt-g
+# ctrl-alt-h
+# ctrl-alt-i
+# ctrl-alt-j
+# ctrl-alt-k
+# ctrl-alt-l
+# ctrl-alt-m
+# ctrl-alt-n
+# ctrl-alt-o
+# ctrl-alt-p
+# ctrl-alt-q
+# ctrl-alt-r
+# ctrl-alt-s
+# ctrl-alt-t
+# ctrl-alt-u
+# ctrl-alt-v
+# ctrl-alt-w
+# ctrl-alt-x # taken
+# ctrl-alt-y
+# ctrl-alt-z
+
+
+# This is so we have LINES and COLUMNS to play with
+# eval `resize`
+
+# {q}  --  current query string
+#  {}  --  current file
+# {+}  --  selected files
+#          missing a way to select ALL the input. instead, capture the
+#          input into a variable. actually, capture to a file so fzf
+#          streams the input.
+
+
+preview_hidden=y
+do_sort=y
+
+# preview_opts="right:30%"
+preview_opts="up:30%"
+
+minimise=n
+
+MULTI=y
+COMPLETE_WITH_PREVIEW=n
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+opts=""
+
+bindings=""
+#bindings+="ctrl-a:select-all+accept,"
+bindings+="alt-a:select-all,"
+bindings+="f1:abort,"
+# bindings+="alt-f1:abort," # there is no alt-f1 annoyingly
+bindings+="alt-u:deselect-all,"
+bindings+="ctrl-k:kill-line,"
+bindings+="alt-k:jump,"
+bindings+="tab:toggle-preview,"
+
+# But right (and C-M-Right) is used to move along the pattern at the
+# top, not just the results list
+# bindings+="right:toggle,"
+bindings+="ctrl-alt-f:toggle,"
+bindings+="alt-z:toggle,"
+bindings+="ctrl-j:toggle,"
+bindings+="ctrl-alt-x:up+toggle,"
+bindings+="ctrl-alt-c:down+toggle,"
+
+bindings+="up:up,"
+bindings+="down:down,"
+bindings+="ctrl-p:toggle+up,"
+bindings+="ctrl-n:toggle+down,"
+bindings+="change:top," # triggered whenever the query string is changed.
+# alt-0 doesn't work.
+# bindings+="alt-0:top,"
+bindings+="alt-t:top,"
+# No function to go to the last result
+# bindings+="alt-4:bottom,"
+
+# tf_input
+
+mfie="lit {+}" # 'multi' field index expression
+
+# This comes from mfz script
+if test "$FZF_PREPEND_DIR" = "y"; then
+    mfie="$mfie | prepend-string $(aqf "$CWD/")"
+fi
+
+mfl="$mfie | q -l | tr -d '\n'"
+
+bindings+="alt-r:execute-silent($mfie | awk 1 | head -n 1 | u drn | tm -f -S -tout spv -xargs ranger),"
+# bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | tm -S -tout sps -xargs o),"
+bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | tm -S -tout nw -xargs o),"
+
+# This would open all results in a vim if it worked
+# bindings+="alt-o:toggle-all+execute-silent($mfie | sps v)+toggle-all,"
+
+
+bindings+="alt-y:toggle-all,"
+# This works. But it's an annoying hack.
+# bindings+="alt-o:execute-silent(tmux run -b \"tsk M-y M-c M-y; sleep 0.2; unbuffer xc | tv &>/dev/null\"),"
+bindings+="alt-g:execute-silent(tmux run -b \"tsk M-y M-c M-y; sleep 0.2; unbuffer xc | tv &>/dev/null\"),"
+
+bindings+="alt-l:execute-silent($mfie | tm -f -S -tout spv v),"
+bindings+="alt-e:execute-silent($mfl | tm -f -S -tout spv -xargs sp),"
+# I want ctrl-e to go to the end of the line
+# bindings+="ctrl-e:execute-silent($mfie | tm -f -S -tout sph -xargs sp),"
+bindings+="alt-v:execute-silent($mfl | tm -f -S -tout sps -xargs v),"
+# bindings+="alt-x:execute-silent($mfie | tm -f -S -tout sph -xargs v),"
+# bindings+="ctrl-alt-v:execute-silent($mfie | tm -f -S -tout sph -xargs v),"
+bindings+="alt-q:execute-silent($mfl | tm -f -S -tout spv -xargs edit-with),"
+bindings+="alt-s:execute-silent($mfl | umn | head -n 1 | u drn | xargs tm -d spv -c),"
+bindings+="alt-h:execute-silent($mfl | umn | head -n 1 | u drn | xargs tm -d sph -c),"
+# bindings+="alt-g:execute-silent($mfie | umn | head -n 1 | u drn | xargs tm -d spv -c),"
+bindings+="alt-w:execute-silent(tm -f -d spv 'v '$tf_input),"
+# bindings+="alt-h:execute-silent($mfie | tm -f -S -tout sph -xargs v),"
+bindings+="alt-f:execute-silent($mfie | fzf-thing),"
+bindings+="alt-i:execute-silent($mfie | awk 1 | $preview | tm -f -S -i spv -noerror 'mfz -nm'),"
+
+# TODO scrape-file-fast.sh doesn't catch them all and scrape-files.sh is slow
+# bindings+="alt-y:execute-silent( lit '$preview' | scrape-files.sh | awk 1 | tm -f -S -i spv -noerror 'mfz -nm'),"
+bindings+="alt-p:execute-silent($mfie | fzf-thing)," # this should put the preview in a new window
+#bindings+="alt-1:execute-silent($mfie | fzf-thing)," # alt-1 does not work
+bindings+="alt-n:execute-silent($mfie | u fn | xc),"
+bindings+="alt-d:execute-silent($mfie | awk 1 | xargs -l1 dirname | xc -i -n),"
+# bindings+="alt-g:execute-silent($mfl | awk 1 | xargs -l1 realpath | xc -i -n),"
+bindings+="alt-c:execute-silent($mfie | umn | s chomp | sed 's/#[^#]\+$//' | sed 's/\s\+$//' | xc -i -n),"
+bindings+="alt-m:execute-silent($mfie | mnm | s chomp | xc -i -n),"
+bindings+="alt-j:execute-silent($mfie | awk 1 | $preview | head -n 1 | s chomp | xc -i)," # copy first result of preview
+bindings="$(p "$bindings" | sed 's/.$//')"
+# bindings="$(p "$bindings" | sed 's/.$//' | qne)"
+
+opts+=" --bind=$(aqf "$bindings") "
+# opts+=" --bind=$(aqf-nice "$bindings") "
+
+# printf -- "%s\n" "alt -s fzf --algo=v2 $opts $CMD" | tv &>/dev/null
+eval "alt -s fzf --algo=v2 $opts $CMD"

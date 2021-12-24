@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+perl -pe 'BEGIN { $| = 1; }; s/\e\[?.*?[\@-~]//g' | sed -u 's///g'

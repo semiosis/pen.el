@@ -1,0 +1,301 @@
+#!/bin/bash
+# export TTY="$(tty)"
+
+# ls -la /proc/$$/fd > /tmp/yo.txt
+
+# Kernel update broke fzf
+# https://github.com/junegunn/fzf/issues/1486#start-of-content
+
+unset CWD
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+tf_input="$(pen-ux tf fzf txt || echo /dev/null)"
+trap "rm \"$tf_input\" 2>/dev/null" 0
+
+last_arg="${@: -1}"
+
+: ${CWD:="$(pwd)"}
+
+# echo "$CWD" | tv &>/dev/null
+
+if stdin_exists; then
+    cat > "$tf_input"
+else
+    if test -f "$last_arg"; then
+        set -- "${@:1:$(($#-1))}" # shift last
+        cat "$last_arg" > "$tf_input"
+    else
+        exit 0
+    fi
+fi
+
+# This is so we have LINES and COLUMNS to play with
+# eval `resize`
+
+# {q}  --  current query string
+#  {}  --  current file
+# {+}  --  selected files
+#          missing a way to select ALL the input. instead, capture the
+#          input into a variable. actually, capture to a file so fzf
+#          streams the input.
+
+#preview="p {} | umn | xargs head -n $LINES"
+#preview="p {} | fzf-scope -n $LINES"
+
+preview="pen-fzf-scope"
+
+preview_hidden=y
+do_sort=y
+
+# preview_opts="right:30%"
+preview_opts="up:30%"
+
+minimise=n
+
+ANSI=n
+MULTI=y
+COMPLETE_WITH_PREVIEW=n
+
+do_top=y
+do_reverse=n
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -m) {
+        minimise=y
+        shift
+    }
+    ;;
+
+    -R) {
+        # rosie match all things
+        :
+    }
+    ;;
+
+    -pd) {
+        export FZF_PREPEND_DIR=y
+        shift
+    }
+    ;;
+
+    -C) {
+        handle_comments=y
+        ANSI=y
+        shift
+    }
+    ;;
+
+    -nm) {
+        MULTI=n
+        shift
+    }
+    ;;
+
+    -A) {
+        ANSI=y
+        shift
+    }
+    ;;
+
+    -1) {
+        AUTO_ONLY=y
+        shift
+    }
+    ;;
+
+    -pq|--print-query|--use-input-as-output) {
+        print_query=y
+        shift
+    }
+    ;;
+
+    -p) {
+        preview_hidden=n
+        shift
+    }
+    ;;
+
+    -P) {
+        preview_hidden=n
+        preview_opts="right:50%"
+        shift
+    }
+    ;;
+
+    -pcomplete) {
+        COMPLETE_WITH_PREVIEW=y
+        shift
+    }
+    ;;
+
+    -rev|--reverse) {
+        do_reverse=y
+        shift
+    }
+    ;;
+
+    -nr|--noreverse) {
+        do_reverse=n
+        shift
+    }
+    ;;
+
+    --top) {
+        do_bottom=n
+        shift
+    }
+    ;;
+
+    --bottom) {
+        do_bottom=y
+        shift
+    }
+    ;;
+
+    -s) {
+        do_sort=y
+        shift
+    }
+    ;;
+
+    +s) {
+        do_sort=n
+        shift
+    }
+    ;;
+
+    -p|-pcmd) {
+        preview="fzf-scope -n $lines"
+        shift
+    }
+    ;;
+
+    -pscript) {
+        preview="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -r) {
+        preview_opts="right:50%"
+        shift
+    }
+    ;;
+
+    -rr) {
+        preview_opts="right:30%"
+        shift
+    }
+    ;;
+
+    -t) {
+        preview_opts="up:30%"
+        shift
+    }
+    ;;
+
+    -b) {
+        preview_opts="down:1"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+filter_in() {
+    {
+        if test "$minimise" = "y"; then
+            mnm
+        else
+            cat
+        fi
+    } | {
+        if test "$do_reverse" = "y"; then
+            tac
+        else
+            cat
+        fi
+    }
+}
+
+filter_out() {
+    {
+        if test "$FZF_PREPEND_DIR" = "y"; then
+            prepend-string "$CWD/"
+        else
+            cat
+        fi
+    } | {
+        if test "$minimise" = "y"; then
+            umn
+        else
+            cat
+        fi
+    } | {
+        if test "$handle_comments" = "y"; then
+            pen-strip-ansi | sed 's/#[^#]\+$//' | sed 's/\s\+$//'
+        else
+            cat
+        fi
+    }
+}
+
+opts=""
+
+if test "$MULTI" = "y"; then
+    opts+=" -m "
+fi
+
+if test "$ANSI" = "y"; then
+    opts+=" --ansi "
+fi
+
+if test "$AUTO_ONLY" = "y"; then
+    opts+=" -1 "
+fi
+
+if ! test "$do_sort" = "y"; then
+    opts+=" +s "
+fi
+
+if ! test "$do_bottom" = "y"; then
+    opts+=" --reverse "
+fi
+
+if [ -n "$preview" ]; then
+    if test "$preview_hidden" = "y"; then
+        preview_opts="$preview_opts:hidden"
+    fi
+
+    fie="p {}" # 'multi' field index expression
+
+    if test "$FZF_PREPEND_DIR" = "y"; then
+        fie="$fie | prepend-string $(cmd-nice-posix "$CWD/")"
+        # echo "$fie" | tv &>/dev/null
+    fi
+
+    if test "$minimise" = "y"; then
+        preview="umn | $preview"
+    fi
+
+    if test "$print_query" = "y"; then
+        opts="--print-query $opts"
+    fi
+
+    opts+=" --preview=$(cmd-nice-posix "$fie | $preview") --preview-window=$preview_opts "
+fi
+
+CMD="$(cmd-nice-posix "$@")"
+: ${CMD:="$(cmd-nice-posix "$@")"}
+
+# The wrapper
+cmd="fzf --algo=v2 $opts $CMD"
+
+my_out="$(cat "$tf_input" | filter_in | eval "$cmd" | { if test $ANSI = y; then pen-strip-ansi; else cat; fi; })"
+ret="$?"
+printf -- "%s" "$my_out" | filter_out
+exit "$ret"

@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+wc "$@" | awk 'BEGIN{ print "Lines\tWords\tChars"}1{print $1 "\t" $2 "\t" $3}' | pen-tabulate

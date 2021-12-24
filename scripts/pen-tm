@@ -2964,7 +2964,7 @@ case "$f" in
     ;;
 
     pc|pipec|pipe-to-command|sf|select-filter|split-and-pipe|spp) {
-        filter="$(set -o pipefail; cat $NOTES/ws/filters/filters.sh | pen-tm mfz | remove-hash-comments.sh)"
+        filter="$(set -o pipefail; cat $PENELD/config/filters.sh | pen-tm mfz | remove-hash-comments.sh)"
         ret="$?"
 
         if ! test "$ret" -eq "130"; then

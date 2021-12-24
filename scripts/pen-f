@@ -7,10 +7,6 @@ export PENCONF="$HOME/.pen"
 
 # Filter commands
 
-# This should take care of:
-# fzf
-# tmux-capture
-
 # Need
 # - Find non-binary files
 # - Find binary files (binary != executable)
@@ -40,7 +36,7 @@ esac
 HAS_STDIN=
 if stdin_exists; then
     HAS_STDIN=y
-    tf_input="$(ux tf input || echo /dev/null)"
+    tf_input="$(pen-ux tf input || echo /dev/null)"
     trap "rm \"$tf_input\" 2>/dev/null" 0
 fi
 
@@ -92,9 +88,8 @@ case "$opt" in
         fi
 
         set pipefail
-        filter="$(cat "$HOME/notes2018/ws/filters/filters.sh" | mfz -C -nm -p -pscript "true; eval 'cat $fp | ' timeout 4 {}" -pcomplete)"
+        filter="$(cat "$PENELD/config/filters.sh" | pen-mfz -C -nm -p -pscript "true; eval 'cat $fp | ' timeout 4 {}" -pcomplete)"
         ret="$?" # catches fzf cancel exit = 130
-
 
         if [ -n "$filter" ]; then
             cat "$fp" | eval "$filter" | {
@@ -128,7 +123,7 @@ case "$opt" in
     ;;
 
     xonly|executables|exes-only) {
-        awk 1 | s cc | s uniq | while read -r line; do
+        awk 1 | pen-str cc | pen-str uniq | while read -r line; do
             if which "$line" &>/dev/null; then
                 printf "%s\n" "$line"
             fi
@@ -154,11 +149,11 @@ case "$opt" in
         # annotation="$1"
         # shift
 
-        lit -s "$@" >> /tmp/cmd.sh
+        p "$@" >> /tmp/cmd.sh
 
         # his -c 1 '.*'
 
-        CMD="$(cmd "$@")"
+        CMD="$(cmd-posix-nice "$@")"
 
         gawk -v cmd="$CMD" "/$pattern/ { print \$0 |& cmd; cmd |& getline; } { print; system(\"\") }"
     }
@@ -167,7 +162,7 @@ case "$opt" in
     bind1-with-fzf) {
         file="$1"
 
-        cat "$HOME/notes2018/ws/filters/filters.sh" | f z
+        cat "$PENELD/config/filters.sh" | pen-f z
 
         exit 0
     }
@@ -175,8 +170,8 @@ case "$opt" in
 
     # I should use this often
     z|fzf-if-tty) {
-        # echo hi | f z
-        # echo hi | f z | cat
+        # echo hi | pen-f z
+        # echo hi | pen-f z | cat
 
         if is_stdout_tty; then
             fzf
