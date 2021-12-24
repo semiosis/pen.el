@@ -22,7 +22,7 @@ pen-umn | awk 1 | while IFS=$'\n' read -r line; do
             cat "$line"
         fi
     elif [ -d "$line" ]; then
-        dirinfo "$line" | xsv table
+        pen-dirinfo "$line" | xsv table
     else
         echo "$line"
     fi
