@@ -265,6 +265,11 @@
            (or (pen-var-value-maybe 'pipelines)
                ',pipelines))
 
+          ;; To use in preprocessors, postprocessor postpostprocessor 
+          (pipelines-varvals
+           (asoc-merge
+            final-pipelines))
+
           (final-preprocessors
            (or (pen-var-value-maybe 'preprocessors)
                ',preprocessors))
@@ -382,7 +387,8 @@
                     (if fpp
                         (--> fpp
                           (pen-expand-template-keyvals it (-zip-fill "" ',vars vals))
-                          (pen-expand-template-keyvals it (-zip-fill "" ',var-slugs vals))))))
+                          (pen-expand-template-keyvals it (-zip-fill "" ',var-slugs vals))
+                          (pen-expand-template-keyvals it pipelines-varvals)))))
 
           ;; preprocess the values of the parameters
           (vals
@@ -645,10 +651,11 @@
 
           ;; TODO Make the expand-template utilise variables in scope
           (final-validator
-           (expand-template-al (expand-template
+           (expand-template-al
+            (expand-template
              (str (or (pen-var-value-maybe 'validator)
                       ,validator)))
-                               validator-varvals))
+            validator-varvals))
 
           (final-mode
            (expand-template
@@ -750,14 +757,18 @@
                      ,closer))))
 
           (final-return-postprocessor
-           (expand-template
-            (str (or (pen-var-value-maybe 'return-postprocessor)
-                     ,return-postprocessor))))
+           (expand-template-al
+            (expand-template
+             (str (or (pen-var-value-maybe 'return-postprocessor)
+                      ,return-postprocessor)))
+            pipelines-varvals))
 
           (final-postprocessor
-           (expand-template
-            (str (or (pen-var-value-maybe 'postprocessor)
-                     ,postprocessor))))
+           (expand-template-al
+            (expand-template
+             (str (or (pen-var-value-maybe 'postprocessor)
+                      ,postprocessor)))
+            pipelines-varvals))
 
           (final-fz-pretty
            (expand-template
@@ -765,9 +776,11 @@
                      ,fz-pretty))))
 
           (final-postpostprocessor
-           (expand-template
-            (str (or (pen-var-value-maybe 'postpostprocessor)
-                     ,postpostprocessor))))
+           (expand-template-al
+            (expand-template
+             (str (or (pen-var-value-maybe 'postpostprocessor)
+                      ,postpostprocessor)))
+            pipelines-varvals))
 
           (final-filter
            (and (or ',filter
@@ -1736,14 +1749,15 @@ Function names are prefixed with pf- for easy searching"
                          (pen-expand-template-keyvals it var-keyvals-slugged t final-pipelines)
                          (pen-expand-template-keyvals it var-keyvals t final-pipelines)
                          (pen-unonelineify-safe it)))
-                     (pen-expand-template-al
-                      (string-sym al)
-                      `(--> ,string-sym
-                         ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
-                         ;; The t fixes this
-                         (pen-onelineify-safe it)
-                         (pen-expand-template-keyvals it ,al t final-pipelines)
-                         (pen-unonelineify-safe it))))
+                     ;; (expand-template-al
+                     ;;  (string-sym al)
+                     ;;  `(--> ,string-sym
+                     ;;     ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
+                     ;;     ;; The t fixes this
+                     ;;     (pen-onelineify-safe it)
+                     ;;     (pen-expand-template-keyvals it ,al t final-pipelines)
+                     ;;     (pen-unonelineify-safe it)))
+                     )
 
          (cl-loop for path in paths do
                   (message (concat "pen-mode: Loading .prompt file " path))
