@@ -1356,8 +1356,7 @@
                                         (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
                                                                 (if (string-match "^pf-" final-postprocessor)
                                                                     (eval `(car (pen-one (apply (str2sym ,final-postprocessor) (list ,r)))))
-                                                                  (pen-sn final-postprocessor
-                                                                          (concat
+                                                                  (pen-sn (concat
                                                                            (sh-construct-envs (pen-alist-to-list `(("FINAL_PROMPT" . ,final-prompt))))
                                                                            " "
                                                                            final-postprocessor)
