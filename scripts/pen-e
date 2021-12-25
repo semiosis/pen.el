@@ -847,7 +847,8 @@ case "$f" in
             fi
         )
 
-        unbuffer pen-e -e "(progn (try (run-hooks 'my-daemon-start-hook))(try (delete-frame)))" &>/dev/null
+        # unbuffer pen-e -e "(progn (try (run-hooks 'my-daemon-start-hook))(try (delete-frame)))" &>/dev/null
+        unbuffer pen-e -e "(progn (try (delete-frame)))" &>/dev/null
 
         ! test "$QUIET" = "y" && print_err "server now running."
         exit 0
@@ -1479,7 +1480,7 @@ case "$f" in
         if ! test "$NOFILE" = "y"; then
             if [ $# -eq 1 ]; then
                 if ! [ -f "$1" ]; then
-                    w="$(which.sh "$1")"
+                    w="$(which "$1")"
                     r="$?"
                     if test "$r" -eq 0; then
                         shift
