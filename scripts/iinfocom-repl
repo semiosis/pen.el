@@ -1,0 +1,141 @@
+#!/bin/bash
+
+# iInfocom
+# Version 1.0, bash
+
+sn="$(basename "$0")"
+
+use_comint=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nocomint) {
+        use_comint=n
+        shift
+    }
+    ;;
+
+    -getcomintcmd) {
+        use_comint=y
+        export INERT_COMINT=y
+        SKIP_CHECK=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(cmd-nice-posix "$@")"
+
+# TODO Also make a version that takes 2 people
+# Then consider roping in more people
+
+person="$1"
+test -n "$person" || exit 1
+
+memory="$2"
+echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
+
+test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"
+test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
+
+lang_lc="$(p "$person" | tr '[:upper:]' '[:lower:]' | slugify)"
+
+info="$3"
+
+IFS= read -rd '' info < <(p "$info" | pen-str trailing-empty-line-if-not-empty | sed -z 's/\n/\\n/g');typeset -p info &>/dev/null
+
+set -o pipefail
+
+if ! test "$SKIP_CHECK" = "y"; then
+    funs="$(penl)"
+    if ! test "$?" = 0; then
+        echo "pen must be running" 1>&2
+        exit 1
+    fi
+fi
+
+# Chatbots
+fun=imagine-a-conversation-with-someone/4
+path="$PROMPTS_DIR/prompts/$(p "$fun" | tr -s / -).prompt"
+conv_path="$PROMPTS_DIR/prompts/imagine-a-conversation-between-two-people-5.prompt"
+
+test -n "$path" && test -f "$path" || {
+    printf -- "%s\n" "$path" 1>&2
+    printf -- "%s\n" "File not found!" 1>&2
+    exit 1
+}
+
+IFS= read -rd '' kickstarter < <(cat "$conv_path" | yq -r '.subprompts[0].kickstarter // empty' | sed "s/<Person A>/you/g" | sed "s/<Person B>/$person/g" | sed "s=<info>=$info=g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+IFS= read -rd '' user_prompt_re < <(cat "$path" | yq -r '.["user-prompt"] // empty' | chomp);typeset -p user_prompt_re &>/dev/null
+IFS= read -rd '' comint_user_prompt_re < <(cat "$path" | yq -r '.["comint-user-prompt-regex"] // empty' | chomp);typeset -p comint_user_prompt_re &>/dev/null
+
+: "${user_prompt_re:="$comint_user_prompt_re"}"
+
+if test "$use_comint" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+    comint -p "$user_prompt_re" -E "apostrophe-repl $CMD"
+    exit $?
+fi
+
+prompt_the_lm() {
+    user_input="$1"
+
+    # TODO Use pena because I want better results
+    # Rather, make a penc (pen collect) and use that
+
+    penf -u "$fun" "$memory" "$user_input" "$person" "$info"
+}
+
+p "${kickstarter} "
+memory="${kickstarter} "
+
+# Sometimes I want to read multiple lines. How?
+while read -e -r user_input; do
+    # echo -en "\033[1A\033[2K"
+    # echo "$user_input"
+
+    # printf -- "%s" "$user_input"
+
+    case "$user_input" in
+        "!!"|""|"!1"|"~1") {
+            memory="$last_memory"
+            user_input="$last_user_input"
+        }
+        ;;
+
+        "!!"*) {
+            memory="$last_memory"
+            user_input="${user_input:2}"
+        }
+        ;;
+
+        "!2"|"~2") {
+            memory="$last_last_memory"
+            user_input="$last_last_user_input"
+        }
+        ;;
+    esac
+
+    # The prompt functions are not perfect and we want to coerce the output to the form we want
+    gen="$(prompt_the_lm "$user_input" | chomp | sed -z 's/^\n\+//')"
+    last_last_memory="$last_memory"; last_memory="$memory"
+    memory+="$user_input\n"
+    gen="${gen}\n- you: "
+    p "$gen"
+    memory+="$gen"
+    p "$memory" > "/tmp/memory.txt"
+    last_last_user_input="$last_user_input"; last_user_input="$user_input"
+done
+
+p () {
+    {
+        i=1
+        while [ "$i" -lt "$#" ]; do
+            eval ARG=\${$i}
+            printf -- "%s " "$ARG"
+            i=$((i + 1))
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG"
+    } | sed 's/\\n/\n/g'
+}

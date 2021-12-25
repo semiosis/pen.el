@@ -149,6 +149,12 @@ case "$PEN_LM_COMMAND" in
     }
     ;;
 
+    human-complete.sh) {
+        # Need this because completions are always 1
+        export PEN_N_COMPLETIONS=1
+    }
+    ;;
+
     hf-complete.sh) {
         # It's too slow otherwise
 

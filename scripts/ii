@@ -12,14 +12,15 @@ inside-docker-p() {
 }
 
 if ! inside-docker-p; then
-    pen sh nvc ii "$@"
+    # pen sh nvc ii "$@"
+    pen sh ii "$@"
     exit "$?"
 fi
 
 use_comint=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -nocomint) {
+    -nc|-nocomint) {
         use_comint=n
         shift
     }
@@ -47,9 +48,11 @@ echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
 kickstarter="$2"
 p "$kickstarter" | pen-str remove-trailing-whitespace | tee -a /tmp/kickstarter.txt &>/dev/null &
 
+HOST_PROMPTS_DIR="$HOME/.emacs.d/host/prompts"
+
+test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 test -d "$HOME/.emacs.d/host/prompts" && : "${PROMPTS_DIR:="$HOME/.emacs.d/host/prompts"}"
 test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"
-test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
 lang_lc="$(p "$lang" | tr '[:upper:]' '[:lower:]' | slugify)"
 
@@ -62,6 +65,12 @@ if ! test "$?" = 0; then
 fi
 
 fun="$(p "$funs" | awk 1 | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's/^pf-//')"
+
+if test -z "$fun"; then
+    echo "No $lang_lc interpreter prompt" 1>&2
+    # exit 1
+fi
+
 default_fun=generic-interpreter/3
 
 file_fun="$fun"
@@ -70,13 +79,24 @@ file_fun="$fun"
 if test -n "$file_fun"; then
     fn="$(p "$file_fun" | tr -s / -)"
     path="$PROMPTS_DIR/prompts/${fn}.prompt"
+    if ! test -f "$path"; then
+        path="$HOST_PROMPTS_DIR/prompts/${fn}.prompt"
+    fi
 fi
 
-test -n "$path" && test -f "$path" || exit 1
+if ! { test -n "$path" && test -f "$path"; }; then
+    echo "No path for $lang_lc interpreter prompt at $path 1>&2" 1>&2
+    exit 1
+fi
 
 if test -z "$kickstarter"; then
     # Instead of reading the kickstarter directly, generate it frm
-    IFS= read -rd '' kickstarter < <(penf -p -op "<kickstarter>" -nogen -u "$fun" "" "" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+
+    if printf -- "%s\n" "$lang_lc" | grep -q -P 'infocom'; then
+        IFS= read -rd '' kickstarter < <(penf -p -op "<banner>\\n<kickstarter>" -nogen -u "$fun" "" "" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+    else
+        IFS= read -rd '' kickstarter < <(penf -p -op "<kickstarter>" -nogen -u "$fun" "" "" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+    fi
 
     # IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter // empty' | sed "s/<language>/$lang/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
 fi
