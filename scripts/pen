@@ -266,6 +266,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nojson|-nj) {
+        output_json=n
+        shift
+    }
+    ;;
+
     # Show prompt
     -prompt|-p) {
         prompt=y
@@ -547,10 +553,10 @@ stdin_exists() {
 if test "$sn" = pena; then
     sn=penf
     all=y
-    output_json=y
+    : "${output_json:="y"}"
 elif test "$sn" = penj; then
     sn=penf
-    output_json=y
+    : "${output_json:="y"}"
 fi
 
 case "$sn" in
