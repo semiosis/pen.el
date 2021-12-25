@@ -46,7 +46,7 @@ memory="$1"
 echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
 
 kickstarter="$2"
-p "$kickstarter" | pen-str remove-trailing-whitespace | tee -a /tmp/kickstarter.txt &>/dev/null &
+kickstarter="$(p "$kickstarter" pen-str remove-trailing-whitespace | tee -a /tmp/kickstarter.txt &>/dev/null)"
 
 HOST_PROMPTS_DIR="$HOME/.emacs.d/host/prompts"
 
