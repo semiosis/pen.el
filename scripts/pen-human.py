@@ -76,7 +76,7 @@ result=b("pen-tvipe \"pen-pipify nano\"")[0]
 #                      "presence_penalty: " + str(PEN_PRESENCE_PENALTY),
 #                      "frequency_penalty: " + str(PEN_FREQUENCY_PENALTY)])
 
-cs = [result]
+cs = [result + PEN_STOP_SEQUENCE]
 
 # It's just not working with 1 alone
 if len(cs) == 1:
