@@ -104,6 +104,11 @@ fi
 IFS= read -rd '' ii_input_echo_pp < <(cat "$path" | yq -r '.["ii-input-echo-pp"] // empty');typeset -p ii_input_echo_pp &>/dev/null
 IFS= read -rd '' user_prompt_re < <(cat "$path" | yq -r '.["user-prompt"] // empty' | chomp | pen-str onelineify-safe);typeset -p user_prompt_re &>/dev/null
 IFS= read -rd '' comint_user_prompt_re < <(cat "$path" | yq -r '.["comint-user-prompt-regex"] // empty' | chomp);typeset -p comint_user_prompt_re &>/dev/null
+IFS= read -rd '' repl_preprocessor < <(cat "$path" | yq -r '.pipelines[]."repl-pp" // empty' | chomp);typeset -p repl_preprocessor &>/dev/null
+
+if test -n "$repl_preprocessor"; then
+    kickstarter="$(printf -- "%s" "$kickstarter" | eval "$repl_preprocessor")"
+fi
 
 : "${user_prompt_re:="$comint_user_prompt_re"}"
 
