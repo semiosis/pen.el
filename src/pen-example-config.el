@@ -772,4 +772,6 @@
 (setq transient-history-file "~/.pen/transient-history.el")
 (setq transient-values-file "~/.pen/transient-values.el")
 
+(define-key global-map (kbd "C-x t e") 'toggle-debug-on-error)
+
 (provide 'pen-example-config)

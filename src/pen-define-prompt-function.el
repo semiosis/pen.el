@@ -359,7 +359,7 @@
                             (asoc-merge
                              `((func-name . ,,func-name)
                                (do-pen-batch . ,do-pen-batch)
-                               (pen-no-select-result . ,pen-no-select-result))
+                               (pen-no-select-result . ,no-select-result))
                              varvals-sofar
                              final-subprompts-al))
                            (thowaway var-al)
