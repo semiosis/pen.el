@@ -1172,7 +1172,7 @@ case "$f" in
 
         if ! pen-e running; then
             echo "$DISTRIBUTION not started yet. Starting daemon." 1>&2
-            DISTRIBUTION=pen-emacsd pen-e sd "$@"
+            DISTRIBUTION=pen-emacsd pen-e sd
             # exit $?
         fi
 
