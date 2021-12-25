@@ -1171,14 +1171,9 @@ case "$f" in
     c|-x|x|pen-e|client) { # start emacs client
 
         if ! pen-e running; then
-            if test "$DISTRIBUTION" = pen-emacsd; then
-                echo "Can't start $DISTRIBUTION server while tm is unstable"
-                exit 1
-            else
-                echo "Can't start $DISTRIBUTION. Trying pen-emacsd"
-                DISTRIBUTION=pen-emacsd pen-e c "$@"
-                exit $?
-            fi
+            echo "$DISTRIBUTION not started yet. Starting daemon." 1>&2
+            DISTRIBUTION=pen-emacsd pen-e sd "$@"
+            # exit $?
         fi
 
         if test "$USEGUI" = "y"; then

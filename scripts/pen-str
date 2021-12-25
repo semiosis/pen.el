@@ -258,7 +258,6 @@ case "$f" in
     ;;
 
     # I don't really want to generate the last user prompt
-    # It would be better
     bash-gen-next-user-prompt) {
         IFS= read -rd '' in < <(cat | tee /tmp/bash-gen-next-user-prompt);typeset -p in &>/dev/null
 
@@ -266,7 +265,8 @@ case "$f" in
 
         last_prompt_user_host_dir="$( printf -- "%s" "$full_context" | pen-str bash-scrape-last-prompt )"
 
-        # Because the stop sequence is i.e. @mele, the user is the last thing
+        # Because the stop sequence is i.e. @mele, the user is the last thing, but not necessarily
+        # Because it could be an extra bad gen or a human gen
         last_line="$(p "$full_context" | tail -n 1)"
         second_to_last_line="$(p "$full_context" | sed 'x;$!d')"
 
