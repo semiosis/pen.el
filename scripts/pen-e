@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 
 sn="$(basename "$0")"
@@ -11,6 +12,8 @@ fi
 
 : ${EMACS_TERM_TYPE:="screen-256color"}
 export EMACS_TERM_TYPE
+
+mkdir -p $EMACSD/server
 
 eval "set -- $(cmd "$@" | sed 's/--init-debug/--debug-init/')"
 
