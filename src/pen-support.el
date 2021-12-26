@@ -965,13 +965,13 @@ when s is a string, set the clipboard to s"
       (setq initial-input (first histvar)))
 
   ;; (pen-etv (completing-read-hist "test: " (snc "cat $PROMPTS/generate-transformative-code.prompt | yq -r '.examples[0]'")))
-  ;; (pen-etv (qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
-  ;; (eval-string (concat "\"" (qne "lskjdfldks\ndshi\\nslkfjof") "\""))
+  ;; (pen-etv (pen-qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
+  ;; (eval-string (concat "\"" (pen-qne "lskjdfldks\ndshi\\nslkfjof") "\""))
   ;; (setq initial-input (bs "\"" initial-input))
   ;; (setq initial-input (bs "\n" initial-input))
 
   ;; (pen-etv (completing-read-hist "test2: " "test\nt\\nest"))
-  (setq initial-input (qne initial-input))
+  (setq initial-input (pen-qne initial-input))
 
   (eval `(progn
            (let ((inhibit-quit t))
@@ -989,8 +989,8 @@ when s is a string, set the clipboard to s"
                  "")))))
 (defalias 'read-string-hist 'completing-read-hist)
 
-(defun vector2list (v)
-  (append v nil))
+(defun vector2list (pen-v)
+  (append pen-v nil))
 
 (defun region-or-buffer-string ()
   (interactive)
@@ -1540,5 +1540,49 @@ This function accepts any number of ARGUMENTS, but ignores them."
           (cua-set-mark)
           (end-of-line))))))
 (define-key global-map (kbd "M-Y") 'pen-copy-line)
+
+(defun pen-git-buffer-name-to-file-name ()
+  (if (string-match "\.~" (buffer-name))
+      (pen-sn "tr -s \/ _" (sed "s/^\\(.*\\)\\(\\.~\\)\\(.*\\)$/\\3\\1/" (buffer-name)))
+    (buffer-name)))
+
+(defun pen-save-buffer-to-file ()
+  (write-to-file
+   (buffer-contents)
+   (pen-tf
+    (pen-git-buffer-name-to-file-name))))
+
+(defun concat-string (&rest body)
+  "Converts to string and concatenates."
+  (mapconcat 'str body ""))
+
+(defun pen-tmux-edit (&optional editor window_type)
+  "Simple function that allows us to open the underlying file of a buffer in an external program."
+  (interactive (list "pen-v" "spv"))
+  (if (not editor)
+      (setq editor "pen-v"))
+
+  (if (not window_type)
+      (setq window_type "spv"))
+
+  (let ((line-and-col (concat-string "+" (line-number-at-pos) ":" (current-column))))
+    (if (and buffer-file-name (not (string-match "\\[*Org Src" (buffer-name))))
+        (progn
+          (save-buffer)
+          (shell-command (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
+      (cond ((string-match "\.~" (buffer-name))
+             (let ((new_fp (pen-save-buffer-to-file)))
+               (shell-command-on-region (point-min) (point-max) (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))))
+            ((string-match "\\[*Org Src" (buffer-name))
+             (shell-command-on-region (point-min) (point-max) (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))
+            (t
+             (shell-command-on-region (point-min) (point-max) (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))))))
+(defalias 'open-in 'pen-tmux-edit)
+
+(defun pen-tm-edit-v-in-nw ()
+  "Opens pen-v in new window for buffer contents"
+  (interactive)
+  (pen-tmux-edit "pen-v" "nw"))
+(define-key pen-map (kbd "C-c o") #'pen-tm-edit-v-in-nw)
 
 (provide 'pen-support)

@@ -1,0 +1,36 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+
+wincmd="spv"
+case "$sn" in
+    tspv) {
+        wincmd=spv
+    }
+    ;;
+
+    tsph) {
+        wincmd=sph
+    }
+    ;;
+
+    *)
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -wincmd) {
+        wincmd="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+eval "pen-tm -f -S -tout $wincmd -fargs $CMD"

@@ -150,8 +150,8 @@
 
   (define-key term-raw-map (kbd "C-u") nil)
 
-  ;; (define-key term-raw-map (kbd "C-c o") #'tm-edit-v-in-nw)
-  ;; (define-key term-raw-map (kbd "C-c O") #'tm-edit-vs-in-nw)
+  ;; (define-key term-raw-map (kbd "C-c o") #'pen-tm-edit-v-in-nw)
+  ;; (define-key term-raw-map (kbd "C-c O") #'pen-tm-edit-vs-in-nw)
   (define-key term-raw-map (kbd "C-c M-:") #'pp-eval-expression)
   (define-key term-raw-map (kbd "C-c M-x") #'helm-M-x)
   (define-key term-raw-map (kbd "C-x C-x") #'term-send-raw)
@@ -177,8 +177,8 @@
                                         ;This is like vim's M-q M-m for opening in emacs in the current pane
   )
 
-(define-key term-mode-map (kbd "C-c o") #'tm-edit-v-in-nw)
-(define-key term-mode-map (kbd "C-c O") #'tm-edit-vs-in-nw)
+(define-key term-mode-map (kbd "C-c o") #'pen-tm-edit-v-in-nw)
+(define-key term-mode-map (kbd "C-c O") #'pen-tm-edit-vs-in-nw)
 
 (defun pen-term-around-advice (proc &rest args)
   (pen-term-set-raw-map)
@@ -432,12 +432,12 @@ without any interpretation."
 (defun tm-send-keys-literal (keys)
   (interactive "P")
   (pen-sn (concat "tmux send-keys -l " (pen-q keys)) nil nil nil t))
-(defalias 'pen-tsl 'tm-send-keys-literal)
+(defalias 'pen-tsl 'pen-tm-send-keys-literal)
 
 (defun tm-send-keys (keys)
   (interactive "P")
   (pen-sn (concat "tmux send-keys " keys)))
-(defalias 'pen-tsk 'tm-send-keys)
+(defalias 'pen-tsk 'pen-tm-send-keys)
 
 (defun eterm-256color-compile ()
   "If eterm-256color isn't a term type, tic eterm-256color.ti.

@@ -324,3 +324,5 @@ chmod a+x lein
 # Then need to run lein once
 lein
 )
+
+agi bc
