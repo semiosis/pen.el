@@ -1,17 +1,6 @@
 #!/bin/bash
 export TTY
 
-while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-    "") { shift; }; ;;
-    -nbs) {
-        export NOBS=y
-        shift
-    }
-    ;;
-
-    *) break;
-esac; done
-
 # This is primarily designed for posix shell double-quote escapes.
 # If other languages can use this, then great.
 
@@ -29,7 +18,7 @@ cmd-nice() {
         # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
 
         # TODO Ensure that the first \ to touch the non-" is not doubled?
-        printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
+        printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
     done | sed 's/ $//'
 }
 
