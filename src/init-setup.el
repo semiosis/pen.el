@@ -40,7 +40,7 @@
 (package-install 'yaml)
 (package-install 'which-key)
 (package-install 'lispy)
-(package-install 'handle)
+;; (package-install 'handle)
 (package-install 's)
 (package-install 'f)
 ;; builtin
