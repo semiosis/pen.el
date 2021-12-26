@@ -34,6 +34,7 @@
 (require 'lsp-mode)
 (require 'lsp-ui)
 (require 'lispy)
+(require 'handle)
 (require 'pen-company-lsp)
 (require 'pen-nlp)
 (require 'pen-which-key)

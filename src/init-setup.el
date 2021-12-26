@@ -40,6 +40,7 @@
 (package-install 'yaml)
 (package-install 'which-key)
 (package-install 'lispy)
+(package-install 'handle)
 (package-install 's)
 (package-install 'f)
 ;; builtin
@@ -97,6 +98,7 @@
 (require 'yaml)
 (require 'which-key)
 (require 'lispy)
+(require 'handle)
 (require 's)
 (require 'f)
 ;; builtin

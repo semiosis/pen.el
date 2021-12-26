@@ -44,6 +44,7 @@
 (require 'yaml)
 (require 'which-key)
 (require 'lispy)
+(require 'handle)
 (require 's)
 (require 'f)
 ;; builtin
