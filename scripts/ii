@@ -15,7 +15,7 @@ use_comint=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -nd) {
-        NO_DOCKER=y
+        export NO_DOCKER=y
         shift
     }
     ;;
