@@ -1338,8 +1338,11 @@
                           (if (sor rd)
                               (let* ((processed-results
                                       (-flatten
-                                       (->> (append (glob (concat rd "/split*_*"))
-                                                    (glob (concat rd "/res*.txt")))
+                                       (->>
+                                         (append (glob (concat rd "/split*_*"))
+                                                 (glob (concat rd "/res*.txt")))
+                                         (-filter 'string-not-empty-nor-nil-p)
+                                         (-filter 'f-exists-p)
                                          (mapcar 'e/cat)
                                          (mapcar
                                           (lambda (r)
