@@ -41,6 +41,7 @@
 (package-install 'which-key)
 (package-install 'lispy)
 ;; (package-install 'handle)
+(package-install 'parent-mode)
 (package-install 's)
 (package-install 'f)
 ;; builtin
