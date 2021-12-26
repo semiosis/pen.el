@@ -95,6 +95,7 @@
 (define-key pen-map (kbd "H-P") 'pen-complete-long)
 (define-key pen-map (kbd "H-b") 'pf-generate-the-contents-of-a-new-file/6)
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
+(define-key pen-map (kbd "M-9") 'handle-docs)
 
 (define-key pen-map (kbd "H-n") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
