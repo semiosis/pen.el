@@ -49,6 +49,8 @@
                      :alephalpha-last-output-fp (f-join penconfdir "temp" "alephalpha-temp.txt")
                      :offline-last-output (pen-tmp-preview "offline-temp")
                      :offline-last-output-fp (f-join penconfdir "temp" "offline-temp.txt")
+                     :human-last-output (pen-tmp-preview "human-temp")
+                     :human-last-output-fp (f-join penconfdir "temp" "human-temp.txt")
                      :nlpcloud-last-output (pen-tmp-preview "nlpcloud-temp")
                      :nlpcloud-last-output-fp (f-join penconfdir "temp" "nlpcloud-temp.txt")
                      :aix-last-output (pen-tmp-preview "aix-temp")

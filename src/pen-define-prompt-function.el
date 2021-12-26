@@ -1337,7 +1337,8 @@
                           (if (sor rd)
                               (let* ((processed-results
                                       (-flatten
-                                       (->> (glob (concat rd "/*"))
+                                       (->> (append (glob (concat rd "/split*.txt"))
+                                                    (glob (concat rd "/res*.txt")))
                                          (mapcar 'e/cat)
                                          (mapcar
                                           (lambda (r)

@@ -210,7 +210,7 @@ This is useful for code-understanding when reading languages you don't understan
 
 (defcustom pen-force-logprobs nil
   "The logprobs to force"
-  :type 'float
+  :type 'integer
   :group 'pen
   :initialize #'custom-initialize-default)
 
@@ -407,6 +407,7 @@ widget.  If FILTER is nil, ACTION is always valid.")
       (setq pen-force-engine (or (ht-get yaml-ht "force-engine")
                                  ""))
       (setq pen-force-n-collate (ht-get yaml-ht "force-n-collate"))
+      (setq pen-force-logprobs (ht-get yaml-ht "force-logprobs"))
       (setq fav-world-language (ht-get yaml-ht "fav-world-language"))
       (setq fav-programming-language (ht-get yaml-ht "fav-programming-language"))
       (setq pen-libre-only (pen-yaml-test yaml-ht "libre-only"))
