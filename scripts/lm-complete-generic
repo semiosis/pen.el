@@ -334,6 +334,8 @@ case "$sn" in
         results_dir="$(openai_results_split "$tf_response")"
         echo "human" > stop-reason.txt
     }
+    ;;
+
     *) {
         : "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -c)"}"
 
