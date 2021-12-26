@@ -716,12 +716,12 @@ if ( printf -- "%s\n" "$elisp" | grep -q -P "call-interactively"; ); then
     if test "$#" -gt 0 && test -e "$last_arg_path"; then
         :
 
-        x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))" \"$last_arg_path\")" -e KILL_FRAME -c m &>/dev/null
+        pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))" \"$last_arg_path\")" -e KILL_FRAME -c m &>/dev/null
 
     else
 
         {
-        x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m &>/dev/null &
+        pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m &>/dev/null &
         sleep 0
         }
     fi
