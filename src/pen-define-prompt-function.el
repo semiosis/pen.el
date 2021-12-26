@@ -348,7 +348,7 @@
              (cl-loop
               ;; (-zip-fill nil '(a b c) '(1 2 3) '("a" "b" "c"))
               for tp in (-zip-fill nil ',var-syms vals final-var-defaults)
-              ;; cl-loop is opaque to what has been so far set, so I keep track of current vals with last-vals-exprs
+              ;; cl-loop is opaque to what has been so far set, so I keep track of current vals with varvals-sofar
               collect
               (let ((sym (first tp))
                     (val (second tp))
