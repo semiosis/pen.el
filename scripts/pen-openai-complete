@@ -163,7 +163,6 @@ else:
             print(cs[x]['text'])
 
 
-
 exit(0)
 
 cs[0]['text']

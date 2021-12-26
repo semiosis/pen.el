@@ -606,6 +606,7 @@
              (or
               final-force-logprobs
               pen-force-logprobs
+              pen-default-logprobs
               (pen-var-value-maybe 'logprobs)
               ,logprobs))
             ""))
@@ -1337,7 +1338,7 @@
                           (if (sor rd)
                               (let* ((processed-results
                                       (-flatten
-                                       (->> (append (glob (concat rd "/split*.txt"))
+                                       (->> (append (glob (concat rd "/split*_*"))
                                                     (glob (concat rd "/res*.txt")))
                                          (mapcar 'e/cat)
                                          (mapcar

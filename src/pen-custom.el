@@ -214,6 +214,12 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-default-logprobs nil
+  "The default logprobs value"
+  :type 'integer
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 ;; This is used for beam search, to improve the quality of generations
 (defcustom pen-logprobs-on nil
   "Boolean to enable/disable logprobs"
@@ -395,6 +401,9 @@ widget.  If FILTER is nil, ACTION is always valid.")
   (setq pen-force-engine "")
   (setq pen-force-gpt2 nil)
   (setq pen-force-openai nil)
+  (setq pen-logprobs-on nil)
+  (setq pen-force-logprobs nil)
+  (setq pen-default-logprobs nil)
   (setq pen-force-openai-codex nil)
   (setq pen-prompt-force-engine-disabled nil)
   (setq pen-force-temperature 0.3)
@@ -407,7 +416,9 @@ widget.  If FILTER is nil, ACTION is always valid.")
       (setq pen-force-engine (or (ht-get yaml-ht "force-engine")
                                  ""))
       (setq pen-force-n-collate (ht-get yaml-ht "force-n-collate"))
+      (setq pen-logprobs-on (pen-yaml-test yaml-ht "enable-logprobs"))
       (setq pen-force-logprobs (ht-get yaml-ht "force-logprobs"))
+      (setq pen-default-logprobs (ht-get yaml-ht "default-logprobs"))
       (setq fav-world-language (ht-get yaml-ht "fav-world-language"))
       (setq fav-programming-language (ht-get yaml-ht "fav-programming-language"))
       (setq pen-libre-only (pen-yaml-test yaml-ht "libre-only"))

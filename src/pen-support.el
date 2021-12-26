@@ -854,6 +854,12 @@ region-active-p does not work for evil selection."
              (pen-buffer-string select))))
     (pen-token-length-warn s)))
 
+(defun pen-buffer-visible-or-selection (&optional select)
+  (let ((s (if mark-active
+               (pen-selection)
+             (buffer-string-visible))))
+    (pen-token-length-warn s)))
+
 (defalias 'pps 'pp-to-string)
 
 (defun xc (&optional s silent noautosave)
