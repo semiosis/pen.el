@@ -45,6 +45,7 @@
 (require 'pen-eww)
 (require 'pen-links)
 (require 'eww-lnum)
+(require 'pen-handle)
 (require 'pen-edit)
 (require 'pen-client)
 (require 'pen-autosuggest)
