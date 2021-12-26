@@ -61,4 +61,9 @@
         :docs '(pf-get-documentation-for-syntax-given-screen/2)
         :preverr '())
 
+(handle '(comint-mode)
+        :nexterr '()
+        :docs '(pf-get-documentation-for-syntax-given-screen/2)
+        :preverr '())
+
 (provide 'pen-handle)

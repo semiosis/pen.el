@@ -1595,4 +1595,10 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (pen-tmux-edit "pen-v" "nw"))
 (define-key pen-map (kbd "C-c o") #'pen-tm-edit-v-in-nw)
 
+(defun parent-modes ()
+  (interactive)
+  (let ((ms (parent-mode-list major-mode)))
+    (xc (car (last ms)) nil)
+    (message (pp-to-string ms))))
+
 (provide 'pen-support)
