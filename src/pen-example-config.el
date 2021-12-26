@@ -282,12 +282,12 @@
 
 (defun sps-nlsc (os)
   (interactive (list (pen-detect-language-ask)))
-  (sps (cmd "eterm" "nlsc" os)))
+  (pen-sps (pen-cmd "pen-eterm" "nlsc" "-nd" os)))
 
 (defun sps-nlsh (os)
   (interactive (list (fz (ilist 20 "distinctive linux distributions including nixos")
                          nil nil "sps-nlsh OS: ")))
-  (sps (cmd "eterm" "nlsh" os)))
+  (pen-sps (pen-cmd "pen-eterm" "nlsh" "-nd" os)))
 
 
 ;; code M-SPC c
@@ -468,8 +468,11 @@
   (pen-dk-easy "o" 'pen-continue-from-hist)
   (pen-dk-easy "n" 'pen-select-function-from-nl)
   (pen-dk-easy "H" 'pf-generic-tutor-for-any-topic/2)
-  (pen-dk-easy "p" 'pf-imagine-a-project-template/1)
   (pen-dk-easy "b" 'pf-generate-the-contents-of-a-new-file/6)
+
+  ;; templates
+  (pen-dk-easy "T" nil)
+  (pen-dk-easy "T P" 'pf-imagine-a-project-template/1)
 
   (pen-dk-htab "c" 'pen-company-complete)
   (pen-dk-htab "f" 'pen-company-complete-choose)
