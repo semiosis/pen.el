@@ -122,9 +122,6 @@ else:
          max_tokens=int(PEN_MAX_GENERATED_TOKENS),
          temperature=float(PEN_TEMPERATURE))['choices']
 
-from shanepy import *
-myembed(globals(), locals())
-
 if PEN_MODE == "search":
     return_data = sorted(cs, key=lambda choice: choice.index)
 
@@ -164,6 +161,7 @@ else:
             print(f"===== Completion %i =====" % x)
             print(PEN_PROMPT, end = '')
             print(cs[x]['text'])
+
 
 
 exit(0)
