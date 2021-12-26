@@ -166,12 +166,12 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
 (defun e/escape-string (&rest strings)
   (let ((print-escape-newlines t))
     (s-join " " (mapcar 'prin1-to-string strings))))
-(defalias 'e/q 'e/escape-string)
+(defalias 'pen-q 'e/escape-string)
 ;; (defalias 'q 'e/escape-string)
 
-(defun qne (string)
+(defun pen-qne (string)
   "Like q but without the end quotes"
-  (pcre-replace-string "\"(.*)\"" "\\1" (e/q string)))
+  (pcre-replace-string "\"(.*)\"" "\\1" (pen-q string)))
 
 (defun pen-append-uniq-to-file (stdin file_path)
   (pen-sn
@@ -939,6 +939,10 @@ when s is a string, set the clipboard to s"
   (interactive)
   (pen-cl-sn "uq" :stdin input :chomp t))
 
+(defun pen-qne (string)
+    "Like q but without the end quotes"
+    (pcre-replace-string "\"(.*)\"" "\\1" (pen-q string)))
+
 (defun completing-read-hist (prompt &optional initial-input histvar default-value override-func-name)
   "read-string but with history and newline evaluation."
   (setq initial-input (or initial-input
@@ -962,7 +966,7 @@ when s is a string, set the clipboard to s"
       (eval `(defvar ,histvar nil)))
   (if (and (not initial-input)
            (listp histvar))
-      (setq initial-input (first histvar)))
+      (setq initial-input (first histvar)))  
 
   ;; (pen-etv (completing-read-hist "test: " (snc "cat $PROMPTS/generate-transformative-code.prompt | yq -r '.examples[0]'")))
   ;; (pen-etv (pen-qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
