@@ -18,6 +18,6 @@ openai() {
 }
 
 # This only really uses the env vars
-pen-openai-complete "$@" # | pen-log openai-temp
+pen-openai-complete "$@" | pen-log openai-temp
 
 # openai "$@" | pen-log openai-temp
