@@ -11,13 +11,24 @@ inside-docker-p() {
     test -f /.dockerenv
 }
 
-if ! inside-docker-p; then
+use_comint=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nd) {
+        NO_DOCKER=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
     # pen sh nvc ii "$@"
     pen sh ii "$@"
     exit "$?"
 fi
 
-use_comint=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -nc|-nocomint) {

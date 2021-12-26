@@ -8,6 +8,22 @@ inside-docker-p() {
 }
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -nd) {
+        NO_DOCKER=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
+    cterm-docker nlsh "$@"
+    # pen sh nvc nlsh "$@"
+    exit "$?"
+fi
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -nv) {
         export USE_NVC=y
         shift
@@ -16,12 +32,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
-
-if ! inside-docker-p; then
-    cterm-docker nlsh "$@"
-    # pen sh nvc nlsh "$@"
-    exit "$?"
-fi
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
