@@ -1237,6 +1237,8 @@
                     ("PEN_COLLECT_FROM_POS" . ,collect-from-pos)
                     ("PEN_END_POS" . ,end-pos)
                     ("PEN_SEARCH_THRESHOLD" . ,final-search-threshold)
+                    ("PEN_GEN_UUID" . ,gen-id)
+                    ("PEN_GEN_TIME" . ,gen-time)
                     ;; ("PEN_QUERY_POS" . ,query-pos)
                     ("PEN_INJECT_GEN_START" . ,(pen-encode-string final-inject-gen-start t)))))
              (setq pen-last-prompt-data
@@ -1646,6 +1648,7 @@
               (replace-regexp-in-string "^pf-" "pen-fn-" (str ',func-sym)))
              (client-fn-sym
               (intern client-fn-name))
+             (gen-id (pen-uuid))
              (gen-time (time-to-seconds)))
         (if client
             (apply client-fn-sym
@@ -1699,7 +1702,6 @@
                                           ;; do not allow allow you to change the faces.
                                           ("INK_TYPE" . "generated")
                                           ("PEN_FUNCTION_NAME" . ,,func-name)
-                                          ("PEN_GEN_UUID" . ,(pen-uuid))
                                           ("PEN_GEN_TIME" . ,gen-time)))
 
              (pen-append-to-file
