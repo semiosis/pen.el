@@ -49,13 +49,20 @@ disable-ink: off
 # Disable prompt force-engine
 # This can be used to truly force an engine, because individual .prompts may
 # override the global force-engine custom variable with its own force-engine.
-prompt-force-engine-disabled: on
+# prompt-force-engine-disabled: on
 
 # This is a heuristic used within Pen.el to make select cost-effiient options.
 cost-efficient: on
 
 # This generates alttext for the LookingGlass web browser
 describe-images: on
+
+enable-logprobs: on
+# force-logprobs: 10
+default-logprobs: 10
+
+# This is a pool of emacs daemons used for prompting
+n-daemons: 5
 
 # Default engines are used when the engine resolver (all fallbacks) fail
 default-engines:
@@ -69,7 +76,11 @@ default-engines:
 # for example, and just want to disable the
 # engine.
 # Pattern match on the names
+# Disabled prompts happens immediately
 disabled-prompts:
-# disabled-engines:
-# - "AlephAlpha.*"
+- "Given an image.*"
+# Disabled engines happens a little bit later because it waits for the final engine
+# It may fall back to others.
+disabled-engines:
+- "AlephAlpha.*"
 disabled-models:
