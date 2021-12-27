@@ -608,10 +608,15 @@ export TTY
 
 if ( printf -- "%s\n" "$elisp" | grep -q -P "call-interactively"; ); then
     if test "$#" -gt 0 && test -e "$last_arg_path"; then
-        pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))" \"$last_arg_path\")" -e KILL_FRAME -c m &>/dev/null
-
+        {
+            unbuffer pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))" \"$last_arg_path\")" -e KILL_FRAME -c m
+        } &>/dev/null
     else
-        pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m &>/dev/null &
+        # This was hanging
+        # pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m &>/dev/null &
+        {
+            unbuffer pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m
+        } &>/dev/null
     fi
 fi
 
@@ -1057,7 +1062,6 @@ case "$f" in
     ;;
 
     c|-x|x|pen-e|client) { # start emacs client
-
         if ! pen-e running; then
             echo "$SOCKET not started yet. Starting daemon." 1>&2
             SOCKET=pen-emacsd pen-e sd
