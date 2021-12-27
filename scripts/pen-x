@@ -332,7 +332,7 @@ fi
 script_append "log_user 1"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-    -e) { # Expect something
+    -e|--expect) { # Expect something
         input="$(p "$2" | input_filter)"
 
         script_append "expect -exact \"$input\""
@@ -348,7 +348,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         expect_b="$(p "$2" | input_filter)"; shift
 
         script_append "expect {"
-        script_append " $(cmd-nice-posix-nice "$expect_a") { send -- \"$send_a\"; exp_continue }; $(aqf-nice "$expect_b") { } }"
+        script_append " $(cmd-nice-posix "$expect_a") { send -- \"$send_a\"; exp_continue }; $(cmd-nice-posix "$expect_b") { } }"
 
         shift
     }
@@ -360,7 +360,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         expect_yn="y/N"
 
         script_append "expect {"
-        script_append " $(cmd-nice-posix-nice "$expect_yn") { send $(aqf-nice "y"); exp_continue }; $(aqf-nice "$expect_a") { } }"
+        script_append " $(cmd-nice-posix "$expect_yn") { send $(cmd-nice-posix "y"); exp_continue }; $(cmd-nice-posix "$expect_a") { } }"
 
         shift
     }
@@ -373,7 +373,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         expect_b="$(p "$2" | input_filter)"; shift
 
         script_append "expect {"
-        script_append " $(cmd-nice-posix-nice "$expect_b") { }; $(aqf-nice "$expect_a") { $raw } }"
+        script_append " $(cmd-nice-posix "$expect_b") { }; $(cmd-nice-posix "$expect_a") { $raw } }"
 
         shift
     }
@@ -386,7 +386,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         expect_b="$(p "$2" | input_filter)"; shift
 
         script_append "expect {"
-        script_append " $(cmd-nice-posix-nice "$expect_b") { }; $(aqf-nice "$expect_a") { send $(aqf-nice "$raw") } }"
+        script_append " $(cmd-nice-posix "$expect_b") { }; $(cmd-nice-posix "$expect_a") { send $(cmd-nice-posix "$raw") } }"
 
         shift
     }
