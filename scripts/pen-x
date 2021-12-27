@@ -3,14 +3,12 @@
 : ${TTY:="$(pen-tm-tty)"}
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
-
 stdin_exists() {
     ! [ -t 0 ]
 }
 
 if stdin_exists; then
-    tfstdin="$(tf txt)"
+    tfstdin="$(pen-tf txt)"
     exec <`pen-tm-tty`
 fi
 
@@ -792,7 +790,7 @@ expect_cmd_run() {
 
 unansiify() {
     if test "$do_ansi2txt" = "y"; then
-        "$@" | ansi2txt
+        "$@" | pen-ansi2txt
     else
         "$@"
     fi
