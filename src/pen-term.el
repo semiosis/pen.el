@@ -447,4 +447,29 @@ without any interpretation."
 
 If eterm-color doesn't exist, prompt to fetch and compile it.")
 
+(defun term-command-hook (string)
+  (cond ((equal string "")
+         t)
+        ((= (aref string 0) ?\032)
+         ;; gdb (when invoked with -fullname) prints:
+         ;; \032\032FULLFILENAME:LINENUMBER:CHARPOS:BEG_OR_MIDDLE:PC\n
+         (let* ((first-colon (string-match ":" string 1))
+                (second-colon
+                 (string-match ":" string (1+ first-colon)))
+                (filename (substring string 1 first-colon))
+                (fileline (string-to-number
+                           (substring string (1+ first-colon) second-colon))))
+           (setq term-pending-frame (cons filename fileline))))
+
+        ;; This would break when using x inside of eterm
+        ;; It automatically changed directory in emacs
+        ;; ((= (aref string 0) ?/)
+        ;;  (cd (substring string 1)))
+
+        ;; Allowing the inferior to call functions in Emacs is
+        ;; probably too big a security hole.
+        ;; ((= (aref string 0) ?!)
+        ;; (eval (car (read-from-string string 1))))
+        (t)))
+
 (provide 'pen-term)
