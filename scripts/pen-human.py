@@ -90,6 +90,3 @@ else:
         print(f"===== Completion %i =====" % x)
         print(PEN_PROMPT, end = '')
         print(cs[x])
-
-# from shanepy import *
-# myembed(globals(), locals())
