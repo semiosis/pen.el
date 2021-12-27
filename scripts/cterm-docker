@@ -13,6 +13,6 @@ bufname="$(p term "$@" | slugify | cut -c 1-30)"
 
 # elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
 
-elisp="(progn (pen-term \"$script\" t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
+elisp="(progn (pen-term $(cmd-nice-posix "$script") t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
 
 pente "$elisp"
