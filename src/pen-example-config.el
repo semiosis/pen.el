@@ -7,31 +7,6 @@
   (add-to-list 'load-path (f-join contribdir "src"))
   (add-to-list 'load-path (f-join pendir "src/in-development")))
 
-;; Add Hyper and Super
-(defun add-event-modifier (string e)
-  (let ((symbol (if (symbolp e) e (car e))))
-    (setq symbol (intern (concat string
-                                 (symbol-name symbol))))
-    (if (symbolp e)
-        symbol
-      (cons symbol (cdr e)))))
-
-(defun superify (prompt)
-  (let ((e (read-event)))
-    (vector (if (numberp e)
-                (logior (lsh 1 23) e)
-              (if (memq 'super (event-modifiers e))
-                  e
-                (add-event-modifier "s-" e))))))
-
-(defun hyperify (prompt)
-  (let ((e (read-event)))
-    (vector (if (numberp e)
-                (logior (lsh 1 24) e)
-              (if (memq 'hyper (event-modifiers e))
-                  e
-                (add-event-modifier "H-" e))))))
-
 ;; These bindings will allow you to use Space Cadet keyboard modifiers
 ;; https://mullikine.github.io/posts/add-super-and-hyper-to-terminal-emacs/
 ;; C-M-6 = Super (s-)
