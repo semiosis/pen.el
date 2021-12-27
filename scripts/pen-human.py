@@ -23,6 +23,8 @@ PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE") or "0.1"
 PEN_TOP_K = os.environ.get("PEN_TOP_K") or "0"
 PEN_TOP_P = os.environ.get("PEN_TOP_P") or "0.0"
 PEN_GEN_UUID = os.environ.get("PEN_GEN_UUID")
+PEN_GEN_TIME = os.environ.get("PEN_GEN_TIME")
+PEN_GEN_DIR = os.environ.get("PEN_GEN_DIR")
 
 if PEN_LOGPROBS == "":
     PEN_LOGPROBS = None
@@ -89,5 +91,5 @@ else:
         print(PEN_PROMPT, end = '')
         print(cs[x])
 
-from shanepy import *
-myembed(globals(), locals())
+# from shanepy import *
+# myembed(globals(), locals())

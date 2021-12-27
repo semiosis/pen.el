@@ -196,6 +196,7 @@ if test "$PEN_DEBUG" = "y"; then
     # echo "PEN_QUERY_POS:\"$PEN_QUERY_POS\""
     echo "PEN_ENGINE_MAX_N_COMPLETIONS:\"$PEN_ENGINE_MAX_N_COMPLETIONS\""
     echo "PEN_GEN_UUID:\"$PEN_GEN_UUID\""
+    echo "PEN_GEN_TIME:\"$PEN_GEN_TIME\""
     exit 1
 fi
 
@@ -252,6 +253,7 @@ export PEN_TRAILING_WHITESPACE
 export PEN_COLLECT_FROM_POS
 export PEN_END_POS
 export PEN_GEN_UUID
+export PEN_GEN_TIME
 # export PEN_QUERY_POS
 
 tf_response="$(mktemp -t "lm_results_XXXXXX.txt" 2>/dev/null)"
@@ -357,4 +359,9 @@ esac
 # jsonl output would be nice but jq is an extra dependency I don't want.
 # Alternatively, can could make it linewise.
 
-echo "$results_dir"
+if test -d "$results_dir" && test -d "$PEN_GEN_DIR"; then
+    mv "$results_dir" "$PEN_GEN_DIR"
+    echo "$PEN_GEN_DIR"
+else
+    echo "$results_dir"
+fi

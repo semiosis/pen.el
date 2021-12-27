@@ -30,6 +30,8 @@ export PEN_TOP_P
 export PEN_STOP_SEQUENCE
 export PEN_N_COMPLETIONS
 export PEN_MODE
+export PEN_GEN_UUID
+export PEN_GEN_TIME
 
 : "${PEN_N_COMPLETIONS:="4"}"
 
