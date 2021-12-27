@@ -118,9 +118,9 @@ fi
 
 mfl="$mfie | q -l | tr -d '\n'"
 
-bindings+="alt-r:execute-silent($mfie | awk 1 | head -n 1 | u drn | tm -f -S -tout spv -xargs ranger),"
-# bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | tm -S -tout sps -xargs o),"
-bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | tm -S -tout nw -xargs o),"
+bindings+="alt-r:execute-silent($mfie | awk 1 | head -n 1 | pen-ux drn | pen-tm -f -S -tout spv -xargs ranger),"
+# bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | pen-tm -S -tout sps -xargs o),"
+bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | pen-tm -S -tout nw -xargs o),"
 
 # This would open all results in a vim if it worked
 # bindings+="alt-o:toggle-all+execute-silent($mfie | sps v)+toggle-all,"
@@ -128,30 +128,30 @@ bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | tm -S -tou
 
 bindings+="alt-y:toggle-all,"
 # This works. But it's an annoying hack.
-# bindings+="alt-o:execute-silent(tmux run -b \"tsk M-y M-c M-y; sleep 0.2; unbuffer xc | tv &>/dev/null\"),"
-bindings+="alt-g:execute-silent(tmux run -b \"tsk M-y M-c M-y; sleep 0.2; unbuffer xc | tv &>/dev/null\"),"
+# bindings+="alt-o:execute-silent(tmux run -b \"tsk M-y M-c M-y; sleep 0.2; unbuffer xc | pen-tv &>/dev/null\"),"
+bindings+="alt-g:execute-silent(tmux run -b \"tsk M-y M-c M-y; sleep 0.2; unbuffer xc | pen-tv &>/dev/null\"),"
 
-bindings+="alt-l:execute-silent($mfie | tm -f -S -tout spv v),"
-bindings+="alt-e:execute-silent($mfl | tm -f -S -tout spv -xargs sp),"
+bindings+="alt-l:execute-silent($mfie | pen-tm -f -S -tout spv v),"
+bindings+="alt-e:execute-silent($mfl | pen-tm -f -S -tout spv -xargs sp),"
 # I want ctrl-e to go to the end of the line
-# bindings+="ctrl-e:execute-silent($mfie | tm -f -S -tout sph -xargs sp),"
-bindings+="alt-v:execute-silent($mfl | tm -f -S -tout sps -xargs v),"
-# bindings+="alt-x:execute-silent($mfie | tm -f -S -tout sph -xargs v),"
-# bindings+="ctrl-alt-v:execute-silent($mfie | tm -f -S -tout sph -xargs v),"
-bindings+="alt-q:execute-silent($mfl | tm -f -S -tout spv -xargs edit-with),"
-bindings+="alt-s:execute-silent($mfl | umn | head -n 1 | u drn | xargs tm -d spv -c),"
-bindings+="alt-h:execute-silent($mfl | umn | head -n 1 | u drn | xargs tm -d sph -c),"
-# bindings+="alt-g:execute-silent($mfie | umn | head -n 1 | u drn | xargs tm -d spv -c),"
-bindings+="alt-w:execute-silent(tm -f -d spv 'v '$tf_input),"
-# bindings+="alt-h:execute-silent($mfie | tm -f -S -tout sph -xargs v),"
+# bindings+="ctrl-e:execute-silent($mfie | pen-tm -f -S -tout sph -xargs sp),"
+bindings+="alt-v:execute-silent($mfl | pen-tm -f -S -tout sps -xargs v),"
+# bindings+="alt-x:execute-silent($mfie | pen-tm -f -S -tout sph -xargs v),"
+# bindings+="ctrl-alt-v:execute-silent($mfie | pen-tm -f -S -tout sph -xargs v),"
+bindings+="alt-q:execute-silent($mfl | pen-tm -f -S -tout spv -xargs edit-with),"
+bindings+="alt-s:execute-silent($mfl | umn | head -n 1 | pen-ux drn | xargs pen-tm -d spv -c),"
+bindings+="alt-h:execute-silent($mfl | umn | head -n 1 | pen-ux drn | xargs pen-tm -d sph -c),"
+# bindings+="alt-g:execute-silent($mfie | umn | head -n 1 | pen-ux drn | xargs pen-tm -d spv -c),"
+bindings+="alt-w:execute-silent(pen-tm -f -d spv 'v '$tf_input),"
+# bindings+="alt-h:execute-silent($mfie | pen-tm -f -S -tout sph -xargs v),"
 bindings+="alt-f:execute-silent($mfie | fzf-thing),"
-bindings+="alt-i:execute-silent($mfie | awk 1 | $preview | tm -f -S -i spv -noerror 'mfz -nm'),"
+bindings+="alt-i:execute-silent($mfie | awk 1 | $preview | pen-tm -f -S -i spv -noerror 'mfz -nm'),"
 
 # TODO scrape-file-fast.sh doesn't catch them all and scrape-files.sh is slow
-# bindings+="alt-y:execute-silent( lit '$preview' | scrape-files.sh | awk 1 | tm -f -S -i spv -noerror 'mfz -nm'),"
+# bindings+="alt-y:execute-silent( lit '$preview' | scrape-files.sh | awk 1 | pen-tm -f -S -i spv -noerror 'mfz -nm'),"
 bindings+="alt-p:execute-silent($mfie | fzf-thing)," # this should put the preview in a new window
 #bindings+="alt-1:execute-silent($mfie | fzf-thing)," # alt-1 does not work
-bindings+="alt-n:execute-silent($mfie | u fn | xc),"
+bindings+="alt-n:execute-silent($mfie | pen-ux fn | xc),"
 bindings+="alt-d:execute-silent($mfie | awk 1 | xargs -l1 dirname | xc -i -n),"
 # bindings+="alt-g:execute-silent($mfl | awk 1 | xargs -l1 realpath | xc -i -n),"
 bindings+="alt-c:execute-silent($mfie | umn | s chomp | sed 's/#[^#]\+$//' | sed 's/\s\+$//' | xc -i -n),"
@@ -163,5 +163,5 @@ bindings="$(p "$bindings" | sed 's/.$//')"
 opts+=" --bind=$(aqf "$bindings") "
 # opts+=" --bind=$(aqf-nice "$bindings") "
 
-# printf -- "%s\n" "alt -s fzf --algo=v2 $opts $CMD" | tv &>/dev/null
+# printf -- "%s\n" "alt -s fzf --algo=v2 $opts $CMD" | pen-tv &>/dev/null
 eval "alt -s fzf --algo=v2 $opts $CMD"
