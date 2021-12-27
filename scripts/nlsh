@@ -7,6 +7,9 @@ inside-docker-p() {
     test -f /.dockerenv
 }
 
+: "${USE_COMINT:="y"}"
+: "${USE_TERM:="n"}"
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -nd) {
         export NO_DOCKER=y
@@ -14,8 +17,28 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nt) {
+        export NO_TERM=y
+        shift
+    }
+    ;;
+
+    -com|-comint) {
+        USE_COMINT=y
+        USE_TERM=n
+        shift
+    }
+    ;;
+
+    -term) {
+        USE_COMINT=n
+        USE_TERM=y
+        shift
+    }
+    ;;
+
     -nc|-nocomint) {
-        use_comint=n
+        USE_COMINT=n
         shift
     }
     ;;
@@ -23,26 +46,37 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
-    cterm-docker nlsh "$@"
+export USE_COMINT
+export USE_TERM
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+     -nv) {
+         # Used by cterm-docker, not comint
+         export USE_NVC=y
+         shift
+     }
+     ;;
+
+     *) break;
+esac; done
+
+if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; } && { test "$USE_COMINT" = y || test "$USE_TERM" = y; }; then
+    if test "$USE_TERM" = y; then
+        cterm-docker nlsh "$@"
+    elif test "$USE_COMINT"; then
+        export NORL=y
+        pen sh nlsh -nt -norl "$@"
+    fi
     # pen sh nvc nlsh "$@"
     exit "$?"
 fi
 
-while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-    -nv) {
-        export USE_NVC=y
-        shift
-    }
-    ;;
-
-    *) break;
-esac; done
+CMD="$(cmd-nice-posix "$@")"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -norl) {
-        norl=y
+        NORL=y
         shift
     }
     ;;
@@ -50,7 +84,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if ! test "$norl" = "y"; then
+os_or_lang="$@"
+
+if ! test "$NORL" = "y"; then
     rlwrap "$sn" -norl "$@"
     exit $?
 fi
@@ -65,7 +101,10 @@ case "$sn" in
     *)
 esac
 
-os_or_lang="$@"
+if test "$USE_COMINT" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+    comint -p "$user_prompt_re" -E "nlsh $CMD"
+    exit $?
+fi
 
 test -n "$os_or_lang" || {
     echo "Requires 1 argument: OS or lang" 1>&2
