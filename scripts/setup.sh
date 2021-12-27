@@ -349,4 +349,4 @@ make -j8
 make install
 )
 
-apt install colorized-logs
+agi colorized-logs

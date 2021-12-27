@@ -296,7 +296,7 @@ script_append "log_user 0"
 if test "$uses_tmux" = "y"; then
     if test "$tmux_attached_init" = y; then
 
-        script_append "set win [exec tm-new-hidden-link-window \"$target\"]"
+        script_append "set win [exec pen-tm-new-hidden-link-window \"$target\"]"
         script_append "spawn \"tmux\" \"attach\" \"-t\" \"\$win\""
         script_append "sleep 0.1"
     elif [ -n "$tmux_command" ]; then
@@ -734,7 +734,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -tssl) {
 
         input="$(p "$2" | input_filter)"
-        script_append "spawn \"tm\" \"type\" \"$input\""
+        script_append "spawn \"pen-tm\" \"type\" \"$input\""
 
         shift
         shift
@@ -825,7 +825,7 @@ if ! test "$DRY_RUN" = "y"; then
     elif test "$attach_tmux" = "y"; then
         tmux attach -t "$tmux_session"
     elif test "$print_output" = "y"; then
-        tm catp "$tmux_session"
+        pen-tm catp "$tmux_session"
         tmux kill-session -t "$tmux_session"
     elif test "$uses_tmux" = "y"; then
         tmux swap-pane -s "$tmux_session:1.0" -t "$PANE_ID" \; kill-session -t "$tmux_session"
