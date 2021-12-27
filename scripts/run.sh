@@ -22,6 +22,20 @@ if test -n "$PEN_USER"; then
     echo "$PEN_USER" > ~/pen_user.txt
 fi
 
+: "${SOCKET:="default"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -D) {
+        SOCKET="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
@@ -65,9 +79,9 @@ in-tm() {
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        in-tm nvc emacsclient "$@"
+        in-tm nvc emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
     else
-        in-tm emacsclient "$@"
+        in-tm emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
     fi
 }
 

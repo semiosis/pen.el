@@ -13,6 +13,20 @@ export LANG=en_US
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 
+: "${SOCKET:="default"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -D) {
+        SOCKET="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
@@ -42,9 +56,9 @@ in-tm() {
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        in-tm nvc emacsclient "$@"
+        in-tm nvc emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
     else
-        in-tm emacsclient "$@"
+        in-tm emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
     fi
 }
 
