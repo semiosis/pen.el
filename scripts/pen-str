@@ -9,8 +9,10 @@ stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
+sn="$(p "$sn" | sed 's/^pen-//')"
+
 case "$sn" in
-    pen-tine|field|all-caps|caps|uppercase|uc|lc|wrl*|wrla|wrla1|awrl) {
+    tine|tine|field|all-caps|caps|uppercase|uc|lc|wrl*|wrla|wrla1|awrl) {
         f="$sn"
     }
     ;;

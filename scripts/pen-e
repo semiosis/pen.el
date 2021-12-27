@@ -1004,11 +1004,11 @@ case "$f" in
 
         if [ -n "$SOCKET" ]; then
             {
-                lc_socket="$(pen-pl "$SOCKET" | sed 's/_.*$//' | c lc)"
+                lc_socket="$(pen-pl "$SOCKET" | sed 's/_.*$//' | pen-c lc)"
                 COLUMNS=10000 ps -ef |grep "pen-e -D $lc_socket"
 
                 COLUMNS=10000 ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/$SOCKET\$/p"
-            } | field 2 | {
+            } | pen-str field 2 | {
                 pids="$(cat)"
                 pen-pl "$pids" | xargs kill -"$signal"
             }
