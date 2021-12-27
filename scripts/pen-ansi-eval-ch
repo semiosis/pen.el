@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sed -z -e ':loop' -e 's/.//' -e 't loop'

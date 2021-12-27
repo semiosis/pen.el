@@ -348,3 +348,5 @@ cd vim
 make -j8
 make install
 )
+
+apt install colorized-logs
