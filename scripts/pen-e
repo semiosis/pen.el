@@ -179,10 +179,20 @@ print_err() {
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     sa|-sa|-startall|-start-all) {
         # This should start n daemons
-        set -x
+        # set -x
+
+        config_fp=~/.pen/pen.yaml
+        if test -f "$config_fp"; then
+            # IFS= read -rd '' n < <(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null);typeset -p n &>/dev/null
+            n="$(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null)"
+        fi
+        : "${n:="5"}"
 
         # for each
-        pen-e sd
+        for i in $(seq 1 $n); do
+            cmd1 pen-e -D "pen-emacsd-$i" sd 1>&2
+            pen-e -D "pen-emacsd-$i" sd
+        done
         shift
 
         exit 0
@@ -262,12 +272,17 @@ export EMACS_USER_DIRECTORY
 export EMACS_BIN
 export EMACSCLIENT_BIN
 
-if test "$1" = "-fs"; then
-    SOCKET="$2"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -s|-fs|-D) {
+        SOCKET="$2"
+        shift
+        shift
+    }
+    ;;
 
-    shift
-    shift
-fi
+    *) break;
+esac; done
 
 FT_DETECT=n
 
@@ -563,12 +578,6 @@ fi
 
 if test -n "$elisp"; then
     printf -- "%s" "$elisp" | pen-ds -s elast
-fi
-
-if test "$1" = "-S"; then
-    SOCKET=
-
-    shift
 fi
 
 debug_mode_enabled() {
