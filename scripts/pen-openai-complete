@@ -162,6 +162,10 @@ else:
             print(PEN_PROMPT, end = '')
             print(cs[x]['text'])
 
+# import json
+
+# with open('cs.json', 'w') as f:
+#     json.dump(cs, f)
 
 exit(0)
 
