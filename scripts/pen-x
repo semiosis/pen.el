@@ -1,8 +1,5 @@
 #!/bin/bash
 
-aqf() { aqf-real "$@"; }
-cmd() { cmd-nice "$@"; }
-
 : ${TTY:="$(pen-tm-tty)"}
 export TTY
 
@@ -145,13 +142,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         args=("$@")
 
-        eval "set -- $(cmd "$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
+        eval "set -- $(cmd-nice-posix"$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
         command_terms=("$@")
-        INIT_SPAWN="$(cmd "$@")"
+        INIT_SPAWN="$(cmd-nice-posix"$@")"
 
         set -- "${args[@]}"
 
-        eval "set -- $(cmd "$@" | sed -e "s/.*-- //")"
+        eval "set -- $(cmd-nice-posix"$@" | sed -e "s/.*-- //")"
 
     }
     ;;
@@ -286,7 +283,7 @@ match_max 100000
 HEREDOC
 script_append "$expect_script"
 
-script_append "set SHELL $(aqf "$SHELL")"
+script_append "set SHELL $(cmd-nice-posix "$SHELL")"
 
 if test -z "$INIT_SPAWN"; then
     INIT_SPAWN="$SHELL"
@@ -308,7 +305,7 @@ if test "$uses_tmux" = "y"; then
 
         script_append "sleep 0.2"
 
-        script_append "spawn \"tmux\" \"respawn-pane\" \"-t\" \"$tmux_session_qne\" \"-k\" $(aqf "$tmux_command" | bs '][')"
+        script_append "spawn \"tmux\" \"respawn-pane\" \"-t\" \"$tmux_session_qne\" \"-k\" $(cmd-nice-posix "$tmux_command" | pen-bs '][')"
 
         script_append "spawn \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
 
@@ -317,7 +314,7 @@ if test "$uses_tmux" = "y"; then
         script_append "expect -exact \"sh\""
     fi
 elif test "$INIT_SPAWN" = "zsh"; then
-    script_append "spawn $(aqf "$INIT_SPAWN")"
+    script_append "spawn $(cmd-nice-posix "$INIT_SPAWN")"
     script_append "expect -exact \"»\""
 else
     if test -n "$tfstdin" && test -n "$INIT_SPAWN"; then
@@ -329,9 +326,9 @@ else
         INIT_SPAWN="$INIT_SPAWN > $tfstdout"
     fi
 
-    INIT_SPAWN="$(nsfa -E "$INIT_SPAWN")"
+    INIT_SPAWN="$(pen-nsfa -E "$INIT_SPAWN")"
 
-    script_append "spawn $(aqf "$INIT_SPAWN")"
+    script_append "spawn $(cmd-nice-posix "$INIT_SPAWN")"
 
 fi
 script_append "log_user 1"
@@ -353,7 +350,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         expect_b="$(p "$2" | input_filter)"; shift
 
         script_append "expect {"
-        script_append " $(aqf-nice "$expect_a") { send -- \"$send_a\"; exp_continue }; $(aqf-nice "$expect_b") { } }"
+        script_append " $(cmd-nice-posix-nice "$expect_a") { send -- \"$send_a\"; exp_continue }; $(aqf-nice "$expect_b") { } }"
 
         shift
     }
@@ -365,7 +362,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         expect_yn="y/N"
 
         script_append "expect {"
-        script_append " $(aqf-nice "$expect_yn") { send $(aqf-nice "y"); exp_continue }; $(aqf-nice "$expect_a") { } }"
+        script_append " $(cmd-nice-posix-nice "$expect_yn") { send $(aqf-nice "y"); exp_continue }; $(aqf-nice "$expect_a") { } }"
 
         shift
     }
@@ -378,7 +375,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         expect_b="$(p "$2" | input_filter)"; shift
 
         script_append "expect {"
-        script_append " $(aqf-nice "$expect_b") { }; $(aqf-nice "$expect_a") { $raw } }"
+        script_append " $(cmd-nice-posix-nice "$expect_b") { }; $(aqf-nice "$expect_a") { $raw } }"
 
         shift
     }
@@ -391,7 +388,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         expect_b="$(p "$2" | input_filter)"; shift
 
         script_append "expect {"
-        script_append " $(aqf-nice "$expect_b") { }; $(aqf-nice "$expect_a") { send $(aqf-nice "$raw") } }"
+        script_append " $(cmd-nice-posix-nice "$expect_b") { }; $(aqf-nice "$expect_a") { send $(aqf-nice "$raw") } }"
 
         shift
     }
@@ -610,9 +607,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -sf|-send-file) { # Send contents of file
         input_fp="$2"
-        input_fp="$(printf -- "%s" "$input_fp" | bs "\\" | bs "[" | bs "]")"
+        input_fp="$(printf -- "%s" "$input_fp" | pen-bs "\\" | pen-bs "[" | pen-bs "]")"
 
-        script_append "set fp [ exec cat $(aqfd "$input_fp") ]"
+        script_append "set fp [ exec cat $(cmd-nice-posix "$input_fp") ]"
         script_append "send -- \$fp"
         shift
         shift
@@ -622,8 +619,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -se) { # Send a string and expect a change for each letter
         input="$2"
         printf -- "%s" "$input" | grep -o . | while IFS=$'\n' read -r char; do
-            char="$(p "$char" | bs "\\" | bs "[" | bs "]")"
-            script_append "send -- $(aqfd "$char")"
+            char="$(p "$char" | pen-bs "\\" | pen-bs "[" | pen-bs "]")"
+            script_append "send -- $(cmd-nice-posix "$char")"
             script_append "expect \".\""
             script_append "sleep 0.2"
         done
@@ -639,8 +636,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         if test "$input" = "\\"; then
             script_append "send -- \"\\\\\""
         else
-            input="$(printf -- "%s" "$input" | bs "\\" | bs "[" | bs "]")"
-            script_append "send -- $(aqfd "$input")"
+            input="$(printf -- "%s" "$input" | pen-bs "\\" | pen-bs "[" | pen-bs "]")"
+            script_append "send -- $(cmd-nice-posix "$input")"
         fi
 
         shift
@@ -650,10 +647,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -see) { # Send and expect to see what was sent (slightly more reliable)
         input="$2"
-        input="$(printf -- "%s" "$input" | bs "\\" | bs "[" | bs "]")"
+        input="$(printf -- "%s" "$input" | pen-bs "\\" | pen-bs "[" | pen-bs "]")"
 
-        script_append "send -- $(aqfd "$input")"
-        script_append "expect -exact $(aqfd "$input")"
+        script_append "send -- $(cmd-nice-posix "$input")"
+        script_append "expect -exact $(cmd-nice-posix "$input")"
         shift
         shift
     }
@@ -662,10 +659,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -ss|-send-slow) { # Send something
 
         input="$2"
-        input="$(printf -- "%s" "$input" | bs "\\" | bs "[" | bs "]")"
+        input="$(printf -- "%s" "$input" | pen-bs "\\" | pen-bs "[" | pen-bs "]")"
 
         script_append "set send_slow {1 0.1}"
-        script_append "send -s $(aqfd "$input")"
+        script_append "send -s $(cmd-nice-posix "$input")"
         script_append "set send_slow {1 0}"
         shift
         shift
