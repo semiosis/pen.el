@@ -188,7 +188,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -tmw) {
         uses_tmux=y
-        tmux_session="$(tm-new-hidden-link-window "$WIN_ID")"
+        tmux_session="$(pen-tm-new-hidden-link-window "$WIN_ID")"
         tmux_session_qne="$(p "$tmux_session" | input_filter)"
         tmux_attached_init=y
         shift
