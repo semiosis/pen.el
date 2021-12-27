@@ -344,7 +344,7 @@
   ;; (if (not (pen-container-running-p))
   ;;     (message "Please start the Pen.el server first by running pen in a terminal.")
   ;;   (pen-client-generate-functions))
-  (ignore-errorss (pen-client-generate-functions)))
+  (ignore-errors (pen-client-generate-functions)))
 
 
 ;; I could actually use codex to generate DWIM key bindings from function names
