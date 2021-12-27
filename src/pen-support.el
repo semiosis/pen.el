@@ -660,7 +660,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                 ;; Not worth it just for hhgttg
                 (if (and
                      pen-term-cl-refresh-after-fz
-                     (major-mode-p 'term-mode))
+                     (major-mode-p 'term-mode)
+                     ;; char is raw mode
+                     (term-in-char-mode))
                     (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
                 sel)))
 
