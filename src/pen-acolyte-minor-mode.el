@@ -44,11 +44,11 @@
    ;; (t (delete-frame))
    ))
 
-(defun pen-kill-emacs ()
+(defun pen-kill-emacs (&optional force)
   (interactive)
-  (cond
-   (t (if (yn "Quit emacs?")
-          (kill-emacs)))))
+  (if (or force (yn "Quit emacs?"))
+      (let ((kill-emacs-hook nil))
+        (kill-emacs))))
 
 (define-key pen-map (kbd "M-q") 'pen-kill-buffer-and-frame)
 
