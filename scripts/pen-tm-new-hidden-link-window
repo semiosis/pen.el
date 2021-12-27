@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+# Create a new session but do not attach. LINES=1000 and COLUMNS=2000
+
+# Link the given window
+
+win="$1"
+test -n "$win" || exit 1
+
+session_name="$(printf -- "%s" "wrap $win" | slugify)"
+
+if test -n "$session_name"; then
+    TMUX= tmux kill-session -t "$session_name" 2>/dev/null
+fi
+
+# Now I can tab away from it without the auto resizing not screwing
+# things up
+x="$(tmux display-message -p -t "$win" '#{window_width}')"
+y="$(tmux display-message -p -t "$win" '#{window_height}')"
+y="$(( y + 1 ))"
+: ${x:="2000"}
+: ${y:="1000"}
+wrapper_session="$(TMUX= tmux new-session -F "#{session_id}" -P -d -x $x -y $y -s "$session_name")"
+
+TMUX= tmux link-window -s "$win" -t "$wrapper_session"
+tmux kill-window -t "$wrapper_session:1"
+echo "$wrapper_session"
