@@ -60,7 +60,6 @@ unset CWD
 #          input into a variable. actually, capture to a file so fzf
 #          streams the input.
 
-
 preview_hidden=y
 do_sort=y
 
