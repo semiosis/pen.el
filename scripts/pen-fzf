@@ -128,8 +128,8 @@ bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | pen-tm -S 
 
 bindings+="alt-y:toggle-all,"
 # This works. But it's an annoying hack.
-# bindings+="alt-o:execute-silent(tmux run -b \"tsk M-y M-c M-y; sleep 0.2; unbuffer xc | pen-tv &>/dev/null\"),"
-bindings+="alt-g:execute-silent(tmux run -b \"tsk M-y M-c M-y; sleep 0.2; unbuffer xc | pen-tv &>/dev/null\"),"
+# bindings+="alt-o:execute-silent(tmux run -b \"pen-tsk M-y M-c M-y; sleep 0.2; unbuffer xc | pen-tv &>/dev/null\"),"
+bindings+="alt-g:execute-silent(tmux run -b \"pen-tsk M-y M-c M-y; sleep 0.2; unbuffer xc | pen-tv &>/dev/null\"),"
 
 bindings+="alt-l:execute-silent($mfie | pen-tm -f -S -tout spv v),"
 bindings+="alt-e:execute-silent($mfl | pen-tm -f -S -tout spv -xargs sp),"
