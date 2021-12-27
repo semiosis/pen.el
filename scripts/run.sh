@@ -22,7 +22,7 @@ if test -n "$PEN_USER"; then
     echo "$PEN_USER" > ~/pen_user.txt
 fi
 
-: "${SOCKET:="default"}"
+: "${SOCKET:="DEFAULT"}"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;

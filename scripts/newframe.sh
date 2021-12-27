@@ -13,7 +13,7 @@ export LANG=en_US
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 
-: "${SOCKET:="default"}"
+: "${SOCKET:="DEFAULT"}"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
