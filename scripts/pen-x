@@ -313,14 +313,14 @@ if test "$uses_tmux" = "y"; then
     fi
 elif test "$INIT_SPAWN" = "zsh"; then
     script_append "spawn $(cmd-nice-posix "$INIT_SPAWN")"
-    script_append "expect -exact \"»\""
+    # script_append "expect -exact \"»\""
 else
     if test -n "$tfstdin" && test -n "$INIT_SPAWN"; then
         INIT_SPAWN="cat $tfstdin | $INIT_SPAWN"
     fi
 
     if is_stdout_pipe; then
-        tfstdout="$(odn tf txt)"
+        tfstdout="$(0</dev/null pen-tf txt)"
         INIT_SPAWN="$INIT_SPAWN > $tfstdout"
     fi
 
@@ -393,7 +393,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -z) { # Expect something fuzzy
-        input="$(p "$2" | fuzzify-regex | input_filter)"
+        input="$(p "$2" | pen-fuzzify-regex | input_filter)"
 
         script_append "expect -re \"$input\""
         shift

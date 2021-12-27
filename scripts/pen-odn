@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+exec 0</dev/null
+
+is_tty() {
+    [[ -t 1 ]]
+}
+
+# I want these commands to work:
+# odn vipe
+# odn urlencode query
+
+if [[ -t 1 ]]; then
+    exec 0<&1
+elif [[ -t 2 ]]; then
+    exec 0<&2
+else
+    # unbuffer makes it happen but for things like urlencode but it
+    # breaks things that create/restore the tty such as vipe
+    # unbuffer "$@"
+
+    # The test for stdin simply chceks
+    # exec <`tm-tty`
+    exec <`pen-tm-tty`
+fi
+"$@"

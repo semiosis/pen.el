@@ -71,8 +71,8 @@ fi
 
 # These don't get through the interop
 export SSH_TO_HOST
-export CWD
-export CMD
+# export CWD
+# export CMD
 export PEN_USER
 
 # So use cli args instead
