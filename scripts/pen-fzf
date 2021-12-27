@@ -8,7 +8,7 @@ export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
 
 # The =fzf= wrapper must not change the command line arguments.
 # This is so utilities making use of fzf continue to work.
-# Change options with the mfz script.
+# Change options with the pen-mfz script.
 
 
 # ls -la /proc/$$/fd > /tmp/yo.txt
@@ -111,7 +111,7 @@ bindings+="alt-t:top,"
 
 mfie="lit {+}" # 'multi' field index expression
 
-# This comes from mfz script
+# This comes from pen-mfz script
 if test "$FZF_PREPEND_DIR" = "y"; then
     mfie="$mfie | prepend-string $(cmd-nice-posix "$CWD/")"
 fi
@@ -145,10 +145,10 @@ bindings+="alt-h:execute-silent($mfl | pen-umn | head -n 1 | pen-ux drn | xargs 
 bindings+="alt-w:execute-silent(pen-tm -f -d spv 'v '$tf_input),"
 # bindings+="alt-h:execute-silent($mfie | pen-tm -f -S -tout sph -xargs v),"
 bindings+="alt-f:execute-silent($mfie | fzf-thing),"
-bindings+="alt-i:execute-silent($mfie | awk 1 | $preview | pen-tm -f -S -i spv -noerror 'mfz -nm'),"
+bindings+="alt-i:execute-silent($mfie | awk 1 | $preview | pen-tm -f -S -i spv -noerror 'pen-mfz -nm'),"
 
 # TODO scrape-file-fast.sh doesn't catch them all and scrape-files.sh is slow
-# bindings+="alt-y:execute-silent( lit '$preview' | scrape-files.sh | awk 1 | pen-tm -f -S -i spv -noerror 'mfz -nm'),"
+# bindings+="alt-y:execute-silent( lit '$preview' | scrape-files.sh | awk 1 | pen-tm -f -S -i spv -noerror 'pen-mfz -nm'),"
 bindings+="alt-p:execute-silent($mfie | fzf-thing)," # this should put the preview in a new window
 #bindings+="alt-1:execute-silent($mfie | fzf-thing)," # alt-1 does not work
 bindings+="alt-n:execute-silent($mfie | pen-ux fn | pen-xc),"
