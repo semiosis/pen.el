@@ -274,7 +274,7 @@ export EMACSCLIENT_BIN
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -s|-fs|-D) {
+    -D) {
         SOCKET="$2"
         shift
         shift
