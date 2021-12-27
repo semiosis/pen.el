@@ -1,6 +1,6 @@
 #!/bin/bash
 export TTY
 
-test -f /usr/bin/ansi2txt || apt install colorized-logs &>/dev/null
+# test -f /usr/bin/ansi2txt || apt install colorized-logs &>/dev/null
 
 /usr/bin/ansi2txt "$@" | sed 's/\r//g' # | ansi-eval-ch
