@@ -325,4 +325,14 @@ chmod a+x lein
 lein
 )
 
-agi bc
+(
+cp -a "$EMACSD/pen.el/config/nvimrc" ~/.vimrc
+)
+
+agi ruby-dev
+(
+mkdir -p ~/repos/vim
+cd ~/repos
+git clone --depth 1 "https://github.com/vim/vim"
+cd vim
+)
