@@ -141,6 +141,9 @@
   (define-key term-raw-map (kbd "C-c C-M-i") #'pen-company-complete)
   (define-key term-raw-map (kbd "C-c M-;") #'term-send-raw-meta)
   (define-key term-raw-map (kbd "C-c M-m") #'term-send-raw-meta)
+
+  (cl-loop for i in (number-sequence 0 9) do
+           (define-key term-raw-map (kbd (concat "C-c M-" (str i))) #'term-send-raw-meta))
   ;; (define-key term-raw-map (kbd "C-c M-q") #'term-send-raw-meta)
 
   ;; Super
