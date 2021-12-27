@@ -163,8 +163,8 @@ else:
             print(cs[x]['text'])
 
 
-with open('cs.json', 'w') as f:
-    json.dump(cs, f)
+# with open('cs.json', 'w') as f:
+#     json.dump(cs, f)
 
 exit(0)
 
