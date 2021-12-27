@@ -6,8 +6,6 @@
 ;; (defun f-join (&rest strings)
 ;;   (s-join "/" strings))
 
-(require 'f)
-
 (defun pen-tf (template &optional input ext)
   "Create a temporary file."
   (setq ext (or ext "txt"))
@@ -492,7 +490,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
               (-filter 'identity
                        (list (list "DISPLAY" ":0")
                              (list "PATH" (getenv "PATH"))
-                             (list "PEN_DAEMON" (f-basename (daemonp)))
+                             (list "PEN_DAEMON" (f-filename (daemonp)))
                              (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
                              (if (or (pen-var-value-maybe 'pen-sh-update)
                                      (pen-var-value-maybe 'sh-update))
