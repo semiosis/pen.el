@@ -113,7 +113,7 @@ openai_results_split() {
 
     completions_fp="$(realpath "$completions_fp")"
 
-    td="$(mktemp -t "results_$(date-ts-hr)_XXXXX" -d -p ~/.pen/results)"
+    td="$(mktemp -t "results_$(date-ts-hr)_${PEN_GEN_UUID}_XXXXX" -d -p ~/.pen/results)"
 
     cd "$td"
 
@@ -194,6 +194,7 @@ if test "$PEN_DEBUG" = "y"; then
     echo "PEN_END_POS:\"$PEN_END_POS\""
     # echo "PEN_QUERY_POS:\"$PEN_QUERY_POS\""
     echo "PEN_ENGINE_MAX_N_COMPLETIONS:\"$PEN_ENGINE_MAX_N_COMPLETIONS\""
+    echo "PEN_GEN_UUID:\"$PEN_GEN_UUID\""
     exit 1
 fi
 
@@ -249,6 +250,7 @@ export PEN_ENGINE_MAX_N_COMPLETIONS
 export PEN_TRAILING_WHITESPACE
 export PEN_COLLECT_FROM_POS
 export PEN_END_POS
+export PEN_GEN_UUID
 # export PEN_QUERY_POS
 
 tf_response="$(mktemp -t "lm_results_XXXXXX.txt" 2>/dev/null)"
