@@ -80,12 +80,13 @@ export PEN_TRAILING_WHITESPACE
 export PEN_MODE
 export PEN_GEN_UUID
 export PEN_GEN_TIME
+export PEN_GEN_DATE
+export PEN_GEN_DIR
 
-if test -n "$PEN_GEN_TIME"; then
-    PEN_GEN_DATE="$(date +%d.%m.%y -d "@${PEN_GEN_TIME}")"
-fi
-
-export PEN_GEN_DIR="$PEN_RESULTS_DIR/results_${PEN_GEN_DATE}_${PEN_GEN_TIME}_${PEN_GEN_UUID}"
+# if test -n "$PEN_GEN_TIME"; then
+#     PEN_GEN_DATE="$(date +%d.%m.%y -d "@${PEN_GEN_TIME}")"
+# fi
+# export PEN_GEN_DIR="$PEN_RESULTS_DIR/results_${PEN_GEN_TIME}_${PEN_GEN_DATE}_${PEN_GEN_UUID}"
 
 # This file expects the PEN_PROMPTS_DIR
 
