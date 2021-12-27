@@ -128,8 +128,8 @@ bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | pen-tm -S 
 
 bindings+="alt-y:toggle-all,"
 # This works. But it's an annoying hack.
-# bindings+="alt-o:execute-silent(tmux run -b \"pen-tsk M-y M-c M-y; sleep 0.2; unbuffer xc | pen-tv &>/dev/null\"),"
-bindings+="alt-g:execute-silent(tmux run -b \"pen-tsk M-y M-c M-y; sleep 0.2; unbuffer xc | pen-tv &>/dev/null\"),"
+# bindings+="alt-o:execute-silent(tmux run -b \"pen-tsk M-y M-c M-y; sleep 0.2; unbuffer pen-xc | pen-tv &>/dev/null\"),"
+bindings+="alt-g:execute-silent(tmux run -b \"pen-tsk M-y M-c M-y; sleep 0.2; unbuffer pen-xc | pen-tv &>/dev/null\"),"
 
 bindings+="alt-l:execute-silent($mfie | pen-tm -f -S -tout spv v),"
 bindings+="alt-e:execute-silent($mfl | pen-tm -f -S -tout spv -xargs sp),"
@@ -151,12 +151,12 @@ bindings+="alt-i:execute-silent($mfie | awk 1 | $preview | pen-tm -f -S -i spv -
 # bindings+="alt-y:execute-silent( lit '$preview' | scrape-files.sh | awk 1 | pen-tm -f -S -i spv -noerror 'mfz -nm'),"
 bindings+="alt-p:execute-silent($mfie | fzf-thing)," # this should put the preview in a new window
 #bindings+="alt-1:execute-silent($mfie | fzf-thing)," # alt-1 does not work
-bindings+="alt-n:execute-silent($mfie | pen-ux fn | xc),"
-bindings+="alt-d:execute-silent($mfie | awk 1 | xargs -l1 dirname | xc -i -n),"
-# bindings+="alt-g:execute-silent($mfl | awk 1 | xargs -l1 realpath | xc -i -n),"
-bindings+="alt-c:execute-silent($mfie | pen-umn | chomp | sed 's/#[^#]\+$//' | sed 's/\s\+$//' | xc -i -n),"
-bindings+="alt-m:execute-silent($mfie | pen-mnm | chomp | xc -i -n),"
-bindings+="alt-j:execute-silent($mfie | awk 1 | $preview | head -n 1 | chomp | xc -i)," # copy first result of preview
+bindings+="alt-n:execute-silent($mfie | pen-ux fn | pen-xc),"
+bindings+="alt-d:execute-silent($mfie | awk 1 | xargs -l1 dirname | pen-xc -i -n),"
+# bindings+="alt-g:execute-silent($mfl | awk 1 | xargs -l1 realpath | pen-xc -i -n),"
+bindings+="alt-c:execute-silent($mfie | pen-umn | chomp | sed 's/#[^#]\+$//' | sed 's/\s\+$//' | pen-xc -i -n),"
+bindings+="alt-m:execute-silent($mfie | pen-mnm | chomp | pen-xc -i -n),"
+bindings+="alt-j:execute-silent($mfie | awk 1 | $preview | head -n 1 | chomp | pen-xc -i)," # copy first result of preview
 bindings="$(p "$bindings" | sed 's/.$//')"
 # bindings="$(p "$bindings" | sed 's/.$//' | qne)"
 
