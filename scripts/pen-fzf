@@ -154,9 +154,9 @@ bindings+="alt-p:execute-silent($mfie | fzf-thing)," # this should put the previ
 bindings+="alt-n:execute-silent($mfie | pen-ux fn | xc),"
 bindings+="alt-d:execute-silent($mfie | awk 1 | xargs -l1 dirname | xc -i -n),"
 # bindings+="alt-g:execute-silent($mfl | awk 1 | xargs -l1 realpath | xc -i -n),"
-bindings+="alt-c:execute-silent($mfie | umn | s chomp | sed 's/#[^#]\+$//' | sed 's/\s\+$//' | xc -i -n),"
-bindings+="alt-m:execute-silent($mfie | mnm | s chomp | xc -i -n),"
-bindings+="alt-j:execute-silent($mfie | awk 1 | $preview | head -n 1 | s chomp | xc -i)," # copy first result of preview
+bindings+="alt-c:execute-silent($mfie | umn | chomp | sed 's/#[^#]\+$//' | sed 's/\s\+$//' | xc -i -n),"
+bindings+="alt-m:execute-silent($mfie | mnm | chomp | xc -i -n),"
+bindings+="alt-j:execute-silent($mfie | awk 1 | $preview | head -n 1 | chomp | xc -i)," # copy first result of preview
 bindings="$(p "$bindings" | sed 's/.$//')"
 # bindings="$(p "$bindings" | sed 's/.$//' | qne)"
 
