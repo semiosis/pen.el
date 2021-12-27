@@ -22,6 +22,7 @@ PEN_MAX_TOKENS = os.environ.get("PEN_MAX_TOKENS") or "30"
 PEN_TEMPERATURE = os.environ.get("PEN_TEMPERATURE") or "0.1"
 PEN_TOP_K = os.environ.get("PEN_TOP_K") or "0"
 PEN_TOP_P = os.environ.get("PEN_TOP_P") or "0.0"
+PEN_GEN_UUID = os.environ.get("PEN_GEN_UUID")
 
 if PEN_LOGPROBS == "":
     PEN_LOGPROBS = None
@@ -87,3 +88,6 @@ else:
         print(f"===== Completion %i =====" % x)
         print(PEN_PROMPT, end = '')
         print(cs[x])
+
+from shanepy import *
+myembed(globals(), locals())
