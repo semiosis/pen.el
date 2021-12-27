@@ -350,3 +350,6 @@ make install
 )
 
 agi colorized-logs
+
+# gnu parallel
+apt install parallel

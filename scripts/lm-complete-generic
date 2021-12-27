@@ -359,9 +359,4 @@ esac
 # jsonl output would be nice but jq is an extra dependency I don't want.
 # Alternatively, can could make it linewise.
 
-if test -d "$results_dir" && test -d "$PEN_GEN_DIR"; then
-    mv "$results_dir" "$PEN_GEN_DIR"
-    echo "$PEN_GEN_DIR"
-else
-    echo "$results_dir"
-fi
+echo "$results_dir"

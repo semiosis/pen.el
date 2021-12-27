@@ -37,4 +37,4 @@ rm -f /tmp/eval-output.txt
 # Can't use cmd because elisp doesn't use single quote for strings
 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host $last_arg)" &>/dev/null
 sleep 0.1
-cat /tmp/eval-output.txt
+cat /tmp/eval-output.txt 2>/dev/null

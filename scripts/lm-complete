@@ -82,6 +82,7 @@ export PEN_GEN_UUID
 export PEN_GEN_TIME
 export PEN_GEN_DATE
 export PEN_GEN_DIR
+export PEN_N_JOBS
 
 # if test -n "$PEN_GEN_TIME"; then
 #     PEN_GEN_DATE="$(date +%d.%m.%y -d "@${PEN_GEN_TIME}")"
@@ -181,7 +182,17 @@ tmpdir=~/.pen/temp
 mkdir -p "$tmpdir"
 } &>/dev/null
 
-if test "$LM_COMPLETE_DEBUG" = y; then
+if false && test -n "$PEN_N_JOBS"; then
+    # combine all dirs
+    result_dirs="$(parallel -j "$PEN_N_JOBS" pen-ci "$PEN_LM_COMMAND")"
+    printf -- "%s" "$result_dirs" | awk 1 | while IFS=$'\n' read -r result_dir; do
+        # For each result dir, move all the files into "$PEN_GEN_DIR" but with a prefix
+        for fp in "$result_dir"/*; do
+            fp="$(basename "$fp")"
+        done
+    done
+elif test "$LM_COMPLETE_DEBUG" = y; then
+    # this will echo a single dir
     "$PEN_LM_COMMAND"
 else
     ## pen-ci will possibly cache/memoize the command
