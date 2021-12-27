@@ -46,19 +46,21 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-export USE_COMINT
-export USE_TERM
-
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
      -nv) {
          # Used by cterm-docker, not comint
          export USE_NVC=y
+         USE_COMINT=n
+         USE_TERM=y
          shift
      }
      ;;
 
      *) break;
 esac; done
+
+export USE_COMINT
+export USE_TERM
 
 if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; } && { test "$USE_COMINT" = y || test "$USE_TERM" = y; }; then
     if test "$USE_TERM" = y; then

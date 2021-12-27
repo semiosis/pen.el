@@ -2,7 +2,7 @@
 export TTY
 
 aqf() {
-    cmd-nice-posix "$@"
+    cmd-nice-without-bs "$@"
 }
 
 pl() {
