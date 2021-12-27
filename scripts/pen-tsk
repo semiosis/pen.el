@@ -1,0 +1,60 @@
+#!/bin/bash
+export TTY
+
+# From vim
+# tsk -sl 0.1 -ss '\\\\\!q' -s '\|cat' -sk Enter &
+
+# From bash
+# sleep 1 && tsk -s 0.1 -ss '!q' -s '|cat' -sk Enter
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -sl) {
+        sleep "$2"
+        shift
+        shift
+    }
+    ;;
+
+    -ss) {
+        chars="$2"
+        shift
+        shift
+
+        cn=0
+
+        printf -- "%s" "$chars" |
+        while IFS= read -N 1 char; do
+            # I place the delay before so if I detach this script (e.g. from vim)
+            # there is time before it starts typing
+
+            if ! test "$cn" = 0; then
+                sleep 0.1
+            fi
+
+            tmux send-keys "$char"
+            ((cn ++))
+        done
+    }
+    ;;
+
+    -s) {
+        tmux send-keys -l "$2"
+        shift
+        shift
+    }
+    ;;
+
+    -sk) {
+        tmux send-keys "$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$#" -gt 0; then
+    tmux send-keys "$@"
+fi
