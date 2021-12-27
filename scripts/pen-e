@@ -14,8 +14,6 @@ eval "set -- $(cmd "$@" | sed 's/--init-debug/--debug-init/')"
 
 . $HOME/.shellrc
 
-EMACS_VERSION=28
-
 find_file_command=find-file
 
 if printf -- "%s\n" "$sn" | grep -q 'x$'; then
@@ -43,9 +41,10 @@ esac
 
 QUIET=y
 
-: ${EMACS_BIN:="$(command -v emacs)"}
-: ${EMACSCLIENT_BIN:="$(command -v emacsclient)"}
-: ${EMACS_USER_DIRECTORY:="/root/.emacs.d"}
+: "${EMACS_VERSION:="28"}"
+: "${EMACS_BIN:="$(command -v emacs)"}"
+: "${EMACSCLIENT_BIN:="$(command -v emacsclient)"}"
+: "${EMACS_USER_DIRECTORY:="/root/.emacs.d"}"
 
 if test "$1" = "-v"; then
     QUIET=n
