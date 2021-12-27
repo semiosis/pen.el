@@ -102,7 +102,7 @@ case "$sn" in
 esac
 
 if test "$USE_COMINT" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
-    comint -p "$user_prompt_re" -E "nlsh $CMD"
+    comint -p "$os_or_lang: " -E "nlsh $CMD"
     exit $?
 fi
 
