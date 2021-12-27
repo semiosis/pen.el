@@ -37,4 +37,6 @@ rm -f /tmp/eval-output.txt
 # Can't use cmd because elisp doesn't use single quote for strings
 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host $last_arg)" &>/dev/null
 sleep 0.1
+
+# I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
 cat /tmp/eval-output.txt 2>/dev/null
