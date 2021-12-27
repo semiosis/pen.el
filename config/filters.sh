@@ -312,7 +312,7 @@ sed -E 's_(\\+)_\\\1_g'                                                         
 iff-double-then-single-space.sh                                                     # iff DOUBLE space only then single space
 max-double-spaced-no-trailing                                                       # max double space line (no trailing whitespace)
 max-double-spaced.sh                                                                # max double space line
-sed "s/^\\s\\+$//" | max-one-empty-line.sh                                          # ditto ^^
+sed "s/^\\s\\+$//" | sed ':a;N;$!ba;s/\n\n\+/\n\n/g' # max one empty line
 f-efw | compact-newlines.sh                                                         # iff DOUBLE space only then single space, then max double space line. compact. compress
 compact-newlines.sh                                                                 # Single space max
 wrla open-org                                                                       # url2org

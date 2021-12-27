@@ -17,7 +17,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-mkdir -p ~/.pen/results
+PEN_RESULTS_DIR=~/.pen/results
+mkdir -p "$PEN_RESULTS_DIR"
 
 test -n "$PEN_LM_COMMAND" || {
     echo "PEN_LM_COMMAND not supplied"
@@ -78,6 +79,7 @@ export PEN_TRAILING_WHITESPACE
 # For pen-hf.py, the mode could be "summarize", but the mode shouldn't be confused with a task
 export PEN_MODE
 export PEN_GEN_UUID
+export PEN_GEN_DIR="$PEN_RESULTS_DIR/$PEN_GEN_UUID"
 
 # This file expects the PEN_PROMPTS_DIR
 

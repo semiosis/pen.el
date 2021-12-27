@@ -113,6 +113,7 @@ openai_results_split() {
 
     completions_fp="$(realpath "$completions_fp")"
 
+    # PEN_GEN_DIR
     td="$(mktemp -t "results_$(date-ts-hr)_${PEN_GEN_UUID}_XXXXX" -d -p ~/.pen/results)"
 
     cd "$td"
