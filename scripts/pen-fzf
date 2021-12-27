@@ -72,8 +72,8 @@ minimise=n
 MULTI=y
 COMPLETE_WITH_PREVIEW=n
 
-CMD="$(cmd "$@")"
-: ${CMD:="$(cmd "$@")"}
+CMD="$(cmd-nice-posix "$@")"
+: ${CMD:="$(cmd-nice-posix "$@")"}
 
 opts=""
 
