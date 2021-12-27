@@ -329,10 +329,22 @@ lein
 cp -a "$EMACSD/pen.el/config/nvimrc" ~/.vimrc
 )
 
+# For compiling vim
 agi ruby-dev
+agi gettext
+agi libsm-dev
+agi libncurses5-dev
+agi libgtk2.0-dev libatk1.0-dev
+agi libcairo2-dev python-dev
+agi python-dev git
+agi python3-dev git
+agi libpython3-dev
 (
 mkdir -p ~/repos/vim
 cd ~/repos
 git clone --depth 1 "https://github.com/vim/vim"
 cd vim
+./configure --with-features=huge --enable-cscope --enable-multibyte --with-x --enable-perlinterp=yes --enable-pythoninterp=yes --enable-python3interp
+make -j8
+make install
 )

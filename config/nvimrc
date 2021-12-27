@@ -2,7 +2,11 @@ set modelines=0 nomodeline
 set guicursor=
 
 hi Normal       ctermfg=60
-set clipboard=unnamedplus
+if !has('nvim')
+    set clipboard=unnamedplus
+else
+    set clipboard=unnamed
+endif
 fun! QuitNvim(...)
     q!
 endf
