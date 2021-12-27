@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+stdin_exists() {
+    ! [ -t 0 ] && read -t 0
+}
+
+if stdin_exists; then
+    IFS= read -rd '' input < <(cat /dev/stdin)
+else
+    input="$1"
+fi
+
+num="$(LC_CTYPE=C printf -- '%d' "'$input")"
+
+printf -- "%s" "$num"

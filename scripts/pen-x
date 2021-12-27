@@ -524,7 +524,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         printf -- "%s" "$2" | grep -o . | awk 1 | while IFS=$'\n' read -r char; do
             (
             exec 0</dev/null
-            script_append "send -- $(cchar $char)"
+            script_append "send -- $(pen-cchar $char)"
             )
         done
 
@@ -554,7 +554,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -cm) { # Send control-meta
-        script_append "send -- \\033$(cchar $2)"
+        script_append "send -- \\033$(pen-cchar $2)"
         shift
         shift
     }

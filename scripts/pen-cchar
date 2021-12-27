@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+input="$1"
+
+num="$(LC_CTYPE=C printf -- '%s' "$input" | pen-ord)"
+
+(( num -= 96 ))
+
+num="$(LC_CTYPE=C printf -- '%s' "$num" | pen-dec2oct)"
+
+printf -- "\\\0%02d" "$num"
