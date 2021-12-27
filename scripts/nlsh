@@ -18,7 +18,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
-    exit
     cterm-docker nlsh "$@"
     # pen sh nvc nlsh "$@"
     exit "$?"
