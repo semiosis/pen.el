@@ -1239,6 +1239,7 @@
                     ("PEN_SEARCH_THRESHOLD" . ,final-search-threshold)
                     ("PEN_GEN_UUID" . ,gen-id)
                     ("PEN_GEN_TIME" . ,gen-time)
+                    ("PEN_GEN_DIR" . ,gen-dir)
                     ;; ("PEN_QUERY_POS" . ,query-pos)
                     ("PEN_INJECT_GEN_START" . ,(pen-encode-string final-inject-gen-start t)))))
              (setq pen-last-prompt-data
@@ -1649,7 +1650,15 @@
              (client-fn-sym
               (intern client-fn-name))
              (gen-id (pen-uuid))
-             (gen-time (time-to-seconds)))
+             (gen-time (time-to-seconds))
+             (gen-date (pen-snc (concat "date +%d.%m.%y -d @" (str gen-time)) ))
+             (gen-dir (f-join (pen-umn "$HOME/.pen/results")
+                              (concat "results_"
+                                      (str gen-time)
+                                      "_"
+                                      (str gen-date)
+                                      "_"
+                                      (str gen-id)))))
         (if client
             (apply client-fn-sym
                    (append
@@ -1702,7 +1711,7 @@
                                           ;; do not allow allow you to change the faces.
                                           ("INK_TYPE" . "generated")
                                           ("PEN_FUNCTION_NAME" . ,,func-name)
-                                          ("PEN_GEN_TIME" . ,gen-time)))
+                                          ("PEN_GEN_TIME" . ,(str gen-time))))
 
              (pen-append-to-file
               (concat
