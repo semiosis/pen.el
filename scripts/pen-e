@@ -805,7 +805,7 @@ case "$f" in
 
                 $d c -e "$pre_cmd(ignore-errors (my-delete-package '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
 
-                cat1 $EMACSD/packages.txt | sed "/$pkg_name/d" | sponge $EMACSD/packages.txt
+                cat1 $EMACSD/packages.txt | sed "/$pkg_name/d" | pen-sponge $EMACSD/packages.txt
 
                 shift
             done
@@ -973,7 +973,7 @@ case "$f" in
     q|quit) {
 
         if pen-e running; then
-            pen-e c -e "(kill-emacs)"
+            pen-e c -e "(pen-kill-emacs t)"
             printf -- "%s\n" "$SOCKET is dead" 1>&2
         else
             printf -- "%s\n" "$SOCKET not running" 1>&2
