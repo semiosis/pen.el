@@ -56,7 +56,7 @@ mkdir -p ~/.pen/ht-cache
 # emacs -nw --debug-init
 
 in-tm() {
-    if test "$PEN_USE_GUI" = "y"; then
+    if test -n "$TMUX" || test "$PEN_USE_GUI" = "y"; then
         "$@"
     else
         pen-tm init-or-attach "$@"
@@ -70,6 +70,11 @@ runclient() {
         in-tm emacsclient "$@"
     fi
 }
+
+# How to debug daemon
+# emacs -nw --daemon --debug-init
+# How to debug non-daemon
+# emacs -nw --debug-init
 
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
