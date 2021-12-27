@@ -455,6 +455,15 @@ delim is used to guarantee the function returns multiple matches per line
                           (pen-q rhs))
                       ""))))))))
 
+(defun pen-daemon-name ()
+  (let ((d (daemonp)))
+    (if d
+        (if (stringp d)
+            (f-filename (daemonp))
+          ;; Sometimes it's a bool
+          "default")
+      "")))
+
 (defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
 This appears to strip ansi codes.
@@ -490,9 +499,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
               (-filter 'identity
                        (list (list "DISPLAY" ":0")
                              (list "PATH" (getenv "PATH"))
-                             (list "PEN_DAEMON" (if (daemonp)
-                                                    (f-filename (daemonp))
-                                                  ""))
+                             (list "PEN_DAEMON" (daemonp))
                              (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
                              (if (or (pen-var-value-maybe 'pen-sh-update)
                                      (pen-var-value-maybe 'sh-update))
