@@ -40,6 +40,7 @@ PEN_TOP_K = os.environ.get("PEN_TOP_K") or "5"
 PEN_TOP_P = float(os.environ.get("PEN_TOP_P") or "1.0")
 PEN_SEARCH_THRESHOLD = float(os.environ.get("PEN_SEARCH_THRESHOLD") or "100")
 PEN_QUERY = os.environ.get("PEN_QUERY")
+PEN_GEN_UUID = os.environ.get("PEN_GEN_UUID")
 
 if PEN_TOP_P > 1.0:
     PEN_TOP_P = 1.0
