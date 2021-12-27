@@ -14,6 +14,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nc|-nocomint) {
+        use_comint=n
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
