@@ -5,7 +5,6 @@ export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 
 sn="$(basename "$0")"
 
-DISTRIBUTION=pen-emacsd
 if ! pen-pl "$sn" | grep -q -P '^sp'; then
     EMACS_DAEMON_OVERRIDE=sp
 fi
@@ -50,10 +49,6 @@ case "$sn" in
     }
     ;;
 
-    sp) {
-        : ${DISTRIBUTION:=pen-emacsd}
-    }
-    ;;
 esac
 
 QUIET=y
@@ -262,12 +257,6 @@ esac; done
 
 : ${SOCKET:="DEFAULT"}
 
-if test "$1" = "-D"; then
-    DISTRIBUTION="$2"
-    shift
-    shift
-fi
-
 if test "$AUTO_VERSION" = "y"; then
     last_arg="${@: -1}"
 
@@ -276,17 +265,6 @@ if test "$AUTO_VERSION" = "y"; then
     mant="${mant%.*}"
 
     case "$ext" in
-        org) {
-            SOCKET="DEFAULT_org"
-            EMACS_VERSION=28
-        }
-        ;;
-
-        template) {
-            :
-        }
-        ;;
-
         *) {
             EMACS_USER_DIRECTORY="$REPOS/pen-emacsd"
             EMACS_VERSION=28
@@ -297,48 +275,10 @@ if test "$AUTO_VERSION" = "y"; then
     :
 fi
 
-case "$DISTRIBUTION" in
-    sp|sm|pen-emacsd)
-        {
-            EMACS_USER_DIRECTORY="$REPOS/pen-emacsd"
-            EMACS_VERSION=28
-            SOCKET="pen-emacsd"
-            EMACS_VARIANT="pen-emacsd"
-        }
-        ;;
-
-    d|default|*) # default
-        {
-            :
-        }
-        ;;
-esac
-
-case "$opt" in
-    -27) {
-        EMACS_VERSION=27
-
-        SOCKET="${SOCKET}_25"
-
-    }
-    ;;
-
-    -26) {
-        EMACS_VERSION=26
-        SOCKET="${SOCKET}_26"
-    }
-    ;;
-
-    *)
-esac
-
-if test "$1" = "-27"; then
-    shift
-fi
-
-if test "$1" = "-26"; then
-    shift
-fi
+: "${EMACS_USER_DIRECTORY:="$REPOS/pen-emacsd"}"
+: "${EMACS_VERSION:="28"}"
+: "${SOCKET:="pen-emacsd"}"
+: "${EMACS_VARIANT:="pen-emacsd"}"
 
 eclog() {
 
