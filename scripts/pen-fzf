@@ -113,7 +113,7 @@ mfie="lit {+}" # 'multi' field index expression
 
 # This comes from mfz script
 if test "$FZF_PREPEND_DIR" = "y"; then
-    mfie="$mfie | prepend-string $(aqf "$CWD/")"
+    mfie="$mfie | prepend-string $(cmd-nice-posix "$CWD/")"
 fi
 
 mfl="$mfie | q -l | tr -d '\n'"
@@ -160,8 +160,8 @@ bindings+="alt-j:execute-silent($mfie | awk 1 | $preview | head -n 1 | chomp | x
 bindings="$(p "$bindings" | sed 's/.$//')"
 # bindings="$(p "$bindings" | sed 's/.$//' | qne)"
 
-opts+=" --bind=$(aqf "$bindings") "
-# opts+=" --bind=$(aqf-nice "$bindings") "
+opts+=" --bind=$(cmd-nice-posix "$bindings") "
+# opts+=" --bind=$(cmd-nice-posix-nice "$bindings") "
 
 # printf -- "%s\n" "alt -s fzf --algo=v2 $opts $CMD" | pen-tv &>/dev/null
 eval "alt -s fzf --algo=v2 $opts $CMD"
