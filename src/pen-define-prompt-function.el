@@ -729,6 +729,13 @@
             (str (or (pen-var-value-maybe 'top-p)
                      ,top-p))))
 
+          (final-n-jobs
+           (expand-template
+            (str (or
+                  (pen-var-value-maybe 'n-jobs)
+                  ,n-jobs
+                  pen-n-simultaneous-requests))))
+
           (final-top-k
            (expand-template
             (str (or (pen-var-value-maybe 'top-k)
@@ -1236,6 +1243,7 @@
                     ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
                     ("PEN_COLLECT_FROM_POS" . ,collect-from-pos)
                     ("PEN_END_POS" . ,end-pos)
+                    ("PEN_N_JOBS" . ,final-n-jobs)
                     ("PEN_SEARCH_THRESHOLD" . ,final-search-threshold)
                     ("PEN_GEN_UUID" . ,gen-id)
                     ("PEN_GEN_TIME" . ,gen-time)
@@ -2021,6 +2029,8 @@ Function names are prefixed with pf- for easy searching"
                         ;; synonyms
                         (top-k (ht-get yaml-ht "top-k"))
                         (top-k (ht-get yaml-ht "best-of"))
+
+                        (n-jobs (ht-get yaml-ht "n-jobs"))
 
                         (temperature (ht-get yaml-ht "temperature"))
                         (default-temperature (ht-get yaml-ht "default-temperature"))

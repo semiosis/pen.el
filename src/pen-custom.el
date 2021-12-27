@@ -227,7 +227,7 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-simultaneous-requests nil
+(defcustom pen-n-simultaneous-requests nil
   "The number of requests to make in parallel using lm-complete"
   :type 'integer
   :group 'pen
@@ -410,7 +410,7 @@ widget.  If FILTER is nil, ACTION is always valid.")
   (setq pen-logprobs-on nil)
   (setq pen-force-logprobs nil)
   (setq pen-default-logprobs nil)
-  (setq pen-simultaneous-requests nil)
+  (setq pen-n-simultaneous-requests nil)
   (setq pen-force-openai-codex nil)
   (setq pen-prompt-force-engine-disabled nil)
   (setq pen-force-temperature 0.3)
@@ -426,7 +426,7 @@ widget.  If FILTER is nil, ACTION is always valid.")
       (setq pen-logprobs-on (pen-yaml-test yaml-ht "enable-logprobs"))
       (setq pen-force-logprobs (ht-get yaml-ht "force-logprobs"))
       (setq pen-default-logprobs (ht-get yaml-ht "default-logprobs"))
-      (setq pen-simultaneous-requests (ht-get yaml-ht "n-simultaneous-requests"))
+      (setq pen-n-simultaneous-requests (ht-get yaml-ht "n-simultaneous-requests"))
       (setq fav-world-language (ht-get yaml-ht "fav-world-language"))
       (setq fav-programming-language (ht-get yaml-ht "fav-programming-language"))
       (setq pen-libre-only (pen-yaml-test yaml-ht "libre-only"))
