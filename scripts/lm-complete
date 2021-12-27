@@ -77,6 +77,7 @@ export PEN_TRAILING_WHITESPACE
 # Sometimes the mode must be specified because there may be multiple API interfaces.
 # For pen-hf.py, the mode could be "summarize", but the mode shouldn't be confused with a task
 export PEN_MODE
+export PEN_GEN_UUID
 
 # This file expects the PEN_PROMPTS_DIR
 
