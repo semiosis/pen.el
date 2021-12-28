@@ -38,7 +38,7 @@ tools:
     lint-stdin: true
     lint-offset: 1
     format-stdin: true
-    format-command: "penf -nj --pool correct-english-spelling-and-grammar-1"
+    format-command: "pen-ci -a penf -nj --pool correct-english-spelling-and-grammar-1"
 
   pen-programming-language: &pen-programming-language
     lint-debounce: 2s
@@ -48,14 +48,14 @@ tools:
     lint-stdin: true
     lint-offset: 1
     format-stdin: true
-    format-command: "penf -nj --pool pf-correct-the-syntax/2 code"
+    format-command: "pen-ci -a penf -nj --pool pf-correct-the-syntax/2 code"
 
   glossary1: &glossary1
     # The impementation is a combination of documentation and hover
     # documentation is provided to the thing under the cursor
 
     # The rest go to the hover provider as signature docs
-    hover-command: '"pen-ci" "penf" "-nj" "--pool" "pf-define-word-for-glossary/1"'
+    hover-command: '"pen-ci" "-a" "pen-ci -a penf" "-nj" "--pool" "pf-define-word-for-glossary/1"'
     hover-stdin: true
     # hover-type: "markdown"
     # hover-type: "plaintext"
