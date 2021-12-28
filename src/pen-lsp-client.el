@@ -75,9 +75,6 @@
 (add-hook 'text-mode-hook #'lsp)
 (remove-hook 'text-mode-hook #'lsp)
 
-;; This is for the language server to know what language I'm using.
-(add-to-list 'lsp-language-id-configuration '(text-mode . "text"))
-
 
 (custom-set-variables
  ;; debug
@@ -338,8 +335,13 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 ;; Sadly can't override because of lexical scope
 ;; j:company-lsp--candidates-async
 
+;; This is for the language server to know what language I'm using.
+(add-to-list 'lsp-language-id-configuration '(text-mode . "text"))
 (add-to-list 'lsp-language-id-configuration `(org-mode . "org"))
 (add-to-list 'lsp-language-id-configuration `(awk-mode . "awk"))
+(add-to-list 'lsp-language-id-configuration `(eww-mode . "global"))
+(add-to-list 'lsp-language-id-configuration `(special-mode . "global"))
+(add-to-list 'lsp-language-id-configuration `(python-mode . "global"))
 
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
