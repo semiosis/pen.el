@@ -342,6 +342,7 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 (add-to-list 'lsp-language-id-configuration `(eww-mode . "global"))
 (add-to-list 'lsp-language-id-configuration `(special-mode . "global"))
 (add-to-list 'lsp-language-id-configuration `(python-mode . "global"))
+(add-to-list 'lsp-language-id-configuration `(prog-mode . "global"))
 
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
