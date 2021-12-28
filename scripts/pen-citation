@@ -1,0 +1,46 @@
+#!/bin/bash
+
+IFS= read -r -d '' citation <<HEREDOC
+Academic tradition requires you to cite works you base your article on.
+When using programs that use Pen.el for prompting language models for
+publication please cite:
+
+@article{Semiosis2021a,
+  title = {Pen.el - Prompt Engineering in Emacs},
+  author = {S. Mulligan},
+  address = {Dunedin, New Zealand},
+  journal = {;login: The USENIX Magazine},
+  month = {Feb},
+  number = {1},
+  volume = {36},
+  url = {https://semiosis.github.io/pen/},
+  year = {2021},
+  pages = {42-47},
+  doi = {10.5281/zenodo.16303}
+}
+
+(Feel free to use \nocite{Semiosis2021a})
+HEREDOC
+
+Pen.el also uses GNU Parallel.
+
+When using programs that use GNU Parallel to process data for publication
+please cite:
+
+@article{Tange2011a,
+         title = {GNU Parallel - The Command-Line Power Tool},
+         author = {O. Tange},
+         address = {Frederiksberg, Denmark},
+         journal = {;login: The USENIX Magazine},
+         month = {Feb},
+         number = {1},
+         volume = {36},
+         url = {https://www.gnu.org/s/parallel},
+         year = {2011},
+         pages = {42-47},
+         doi = {10.5281/zenodo.16303}
+        }
+
+(Feel free to use \nocite{Tange2011a})
+
+printf -- "%s\n" "$citation"
