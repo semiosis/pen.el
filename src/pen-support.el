@@ -1167,20 +1167,21 @@ when s is a string, set the clipboard to s"
                    (delete-file file_path)
                    (write-file file_path nil))))
 
+;; Sadly this doesn't work very well in pen-eval-for-host.
 (defun sh-write-to-file (stdin file_path)
-  ;; The ignore-errors is needed for babel for some reason
-
   ;; This may hang less often
-  (ignore-errors
-    (pen-sn (cmd "tee" file_path) stdin)))
+  (pen-sn (pen-cmd "tee" file_path) stdin))
 
 (defmacro pen-eval-for-host (daemon-name &rest body)
   `(let ((result (progn ,@body)))
+     ;; (message (concat "writing to /tmp/eval-output-" ,daemon-name ".txt"))
      (shut-up
        (let ((fp (concat "/tmp/eval-output-" ,daemon-name ".txt")))
          (if result
+             ;; use sh-write-to-file instead of write-to-file to prevent hanging
              (write-to-file (str result) fp)
            (write-to-file "" fp))))
+     ;; (message "written")
      nil))
 
 (defun pen-var-value-maybe (sym)
