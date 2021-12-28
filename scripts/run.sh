@@ -69,11 +69,7 @@ mkdir -p ~/.pen/ht-cache
 
 # emacs -nw --debug-init
 
-test -f "/root/.pen/efm-langserver-config.yaml" && : "${efm_config:="/root/.pen/efm-langserver-config.yaml"}"
-test -f "/root/.emacs.d/host/pen.el/config/efm-langserver-config.yaml" && : "${efm_config:="/root/.emacs.d/host/pen.el/config/efm-langserver-config.yaml"}"
-test -f "/root/.emacs.d/pen.el/config/efm-langserver-config.yaml" && : "${efm_config:="/root/.emacs.d/pen.el/config/efm-langserver-config.yaml"}"
 
-ln -sf "$tefm_config" ~/.config/efm-langserver/config.yaml
 
 in-tm() {
     if test -n "$TMUX" || test "$PEN_USE_GUI" = "y"; then
