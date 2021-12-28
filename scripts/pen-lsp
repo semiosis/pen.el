@@ -18,7 +18,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
-    pen sh pen-lsp "$@"
+    # pen sh pen-lsp "$@"
+    # docker exec pen pen-lsp "$@"
+    docker exec -i pen sh -c ". /root/.emacs.d/pen.el/scripts/setup-term.sh; pen-lsp"
     exit "$?"
 fi
 
