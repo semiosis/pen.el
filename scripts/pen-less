@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+export EDITOR=vim
+less "$@"
