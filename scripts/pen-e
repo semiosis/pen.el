@@ -213,7 +213,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         set -xv
 
         # for each
-        sp k "$signal"
+        pen-e k "$signal"
         shift
 
         rm -f ~/.pen/pool/available/*
