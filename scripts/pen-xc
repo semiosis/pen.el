@@ -164,7 +164,7 @@ if stdin_exists; then
     fi
 
     if test "$TRIM" = "y"; then
-        input="$(printf -- "%s" "$input" | s chomp)"
+        input="$(printf -- "%s" "$input" | pen-str chomp)"
     fi
     if test "$MINIMISE_IT" = "y"; then
         input="$(printf -- "%s" "$input" | pen-mnm)"

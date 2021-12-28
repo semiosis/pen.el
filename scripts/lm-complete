@@ -82,7 +82,11 @@ export PEN_GEN_UUID
 export PEN_GEN_TIME
 export PEN_GEN_DATE
 export PEN_GEN_DIR
+
+# TODO Differentiate between these
 export PEN_N_JOBS
+: "${PEN_N_CONCURRENT_JOBS:="$PEN_N_JOBS"}"
+export PEN_N_CONCURRENT_JOBS
 
 # if test -n "$PEN_GEN_TIME"; then
 #     PEN_GEN_DATE="$(date +%d.%m.%y -d "@${PEN_GEN_TIME}")"
@@ -182,15 +186,16 @@ tmpdir=~/.pen/temp
 mkdir -p "$tmpdir"
 } &>/dev/null
 
-if false && test -n "$PEN_N_JOBS"; then
-    # combine all dirs
-    result_dirs="$(parallel -j "$PEN_N_JOBS" pen-ci "$PEN_LM_COMMAND")"
-    printf -- "%s" "$result_dirs" | awk 1 | while IFS=$'\n' read -r result_dir; do
-        # For each result dir, move all the files into "$PEN_GEN_DIR" but with a prefix
-        for fp in "$result_dir"/*; do
-            fp="$(basename "$fp")"
-        done
-    done
+if test -n "$PEN_N_JOBS"; then
+    mkdir -p "$PEN_GEN_DIR"
+    # Do all of them in parallel
+    for (( i = 1; i < "$PEN_N_JOBS"; i++ )); do
+        cmd-nice-posix pen-ci "$PEN_LM_COMMAND" | awk 1
+        continue
+    done | parallel -j "$PEN_N_JOBS" | awk 1 | while IFS=$'\n' read -r result_dir; do
+        mv "$result_dir" "$PEN_GEN_DIR/"
+    done &>/dev/null
+    echo "$PEN_GEN_DIR" | tee "$tmpdir/lm-complete-stdout.txt"
 elif test "$LM_COMPLETE_DEBUG" = y; then
     # this will echo a single dir
     "$PEN_LM_COMMAND"
