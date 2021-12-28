@@ -4,11 +4,26 @@ cache_file_path="/tmp/pen-$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' |
 
 # ci means "cache it"
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -a) {
+        asynchronous=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 if test "$PEN_CACHE" = "y"; then
     if test -f "$cache_file_path"; then
         cat "$cache_file_path"
     else
-        "$@" > "$cache_file_path"
+        if test "$asynchronous" = "y"; then
+            "$@" > "$cache_file_path" &
+        else
+            "$@" > "$cache_file_path"
+        fi
     fi
 else
     "$@"
