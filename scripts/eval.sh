@@ -57,13 +57,14 @@ fi
 
 test "$SOCKET" = DEFAULT && exit 1
 
-fp="/tmp/eval-output-${SOCKET}.txt"
+# Add the date so never any collisions
+fp="/tmp/eval-output-${SOCKET}-$(date +%s).txt"
 rm -f "$fp"
 # Can't use cmd because elisp doesn't use single quote for strings
-cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$SOCKET\" $last_arg)" >> /tmp/lsp.log
+cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" >> /tmp/lsp.log
 # unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$SOCKET\" $last_arg)" &>/dev/null
 # These hang sometimes. I want to know why.
-tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$SOCKET\" $last_arg)(kill-frame))"
+tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg)(kill-frame))"
 sleep 0.1
 
 if test "$USE_POOL" = "y"; then
