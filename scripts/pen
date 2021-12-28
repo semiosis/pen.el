@@ -626,8 +626,8 @@ case "$sn" in
                 # This has issues
                 # in="$(cat | qne)"
 
-                # So do I escape or not?
-                in="$(cat)"
+                # So do I escape or not? Yes. Also remove final whitespace
+                in="$(cat | sed -z 's/\s\+$//')"
 
                 if test "$1" = {}; then
                     shift
