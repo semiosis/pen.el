@@ -82,13 +82,6 @@
                  ,force-n-jobs
                  (pen-var-value-maybe 'force-n-jobs))))
 
-          (final-n-jobs
-           (str (or
-                 (sor final-force-n-jobs)
-                 (pen-var-value-maybe 'n-jobs)
-                 ,n-jobs
-                 pen-n-simultaneous-requests)))
-
           ;; Actually, only override model, temperature and lm-command again if force-engine is set.
           ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
           ;; Don't override final-'force'-model, etc.
@@ -114,6 +107,13 @@
              (if force-n-jobs
                  (setq final-force-n-jobs force-n-jobs))
              final-engine))
+
+          (final-n-jobs
+           (str (or
+                 (sor final-force-n-jobs)
+                 (pen-var-value-maybe 'n-jobs)
+                 ,n-jobs
+                 pen-n-simultaneous-requests)))
 
           (final-flags
            (or (pen-var-value-maybe 'flags)
