@@ -110,7 +110,7 @@
 
           (final-n-jobs
            (str (or
-                 (sor final-force-n-jobs)
+                 (sor (str final-force-n-jobs))
                  (pen-var-value-maybe 'n-jobs)
                  ,n-jobs
                  pen-n-simultaneous-requests)))
