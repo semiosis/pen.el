@@ -1247,7 +1247,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice "$(cmd-nice eval "$(cmd-nice "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-cmd docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
+docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
 HEREDOC
     }
     ;;
