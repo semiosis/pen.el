@@ -69,8 +69,6 @@ mkdir -p ~/.pen/ht-cache
 
 # emacs -nw --debug-init
 
-
-
 in-tm() {
     if test -n "$TMUX" || test "$PEN_USE_GUI" = "y"; then
         "$@"
