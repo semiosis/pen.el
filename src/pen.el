@@ -1359,7 +1359,7 @@ But use the results-analyser."
            (n-completions 1)
            ;; This is needed because the engine can also force n-completions
            (force-n-completions 1)
-           (n-jobs 1)
+           (force-n-jobs 1)
            (pen-no-select-result t)
            (pen-select-only-match t))
        ,',@body)))
@@ -1372,7 +1372,7 @@ But use the results-analyser."
             (n-completions 1)
             ;; This is needed because the engine can also force n-completions
             (force-n-completions 1)
-            (n-jobs 1)
+            (force-n-jobs 1)
             (pen-no-select-result t)
             (pen-select-only-match t))
         ,',@body))))
