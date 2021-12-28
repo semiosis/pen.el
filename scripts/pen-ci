@@ -37,7 +37,7 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
     else
         if test "$asynchronous" = "y"; then
             if stdin_exists; then
-                set -m
+                set +m
                 CMD="$(cmd "$@")"
                 cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path" >> /tmp/lsp2.log
                 sh -c "cat $tf_thing | $CMD > $cache_file_path" &

@@ -479,7 +479,7 @@ case "$f" in
     ;;
 
     em-click-bg) {
-        set -m
+        set +m
         pen-tm em-click &
         disown
     }
