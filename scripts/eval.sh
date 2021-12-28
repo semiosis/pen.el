@@ -74,7 +74,7 @@ export USE_POOL
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
 cat "$fp" 2>/dev/null
 
-nohup bash -c '
+IFS= read -r -d '' shcode <<HEREDOC
 pen-fix-daemon
 sleep 0.2
 
@@ -87,4 +87,5 @@ if test "$USE_POOL" = "y"; then
         touch ~/.pen/pool/available/$SOCKET
     )
 fi
-' &>/dev/null &
+HEREDOC
+nohup bash -c "$shcode" &>/dev/null &
