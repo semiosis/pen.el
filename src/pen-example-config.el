@@ -698,6 +698,8 @@
 
 ;; Easily kill comint buffers
 (setq kill-buffer-query-functions nil)
+;; But ensure that I still avoid killing scratch
+(add-hook 'kill-buffer-query-functions #'pen-dont-kill-scratch)
 
 (setq initial-major-mode 'text-mode)
 
