@@ -28,11 +28,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -u) {
+        update=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
-    if test -f "$cache_file_path" && test -s "$cache_file_path"; then
+    if test -f "$cache_file_path" && test -s "$cache_file_path" && ! test "$update" = y; then
         cat "$cache_file_path"
     else
         if test "$asynchronous" = "y"; then

@@ -70,22 +70,21 @@ timeout 3 emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eva
 
 export SOCKET
 export USE_POOL
-# (
-# This refreshes it after prompting
-# What a dirty hack.
-# tmux neww -d pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -sl 0.2 -m : -s "(delete-frame)" -c m -i
-pen-x -sh "timeout 3 emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -sl 1 -m : -s "(delete-frame)" -c m -i
+
+# I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
+cat "$fp" 2>/dev/null
+
+nohup bash -c '
+pen-fix-daemon
 sleep 0.2
 
 if test "$USE_POOL" = "y"; then
     (
         # Maybe interacting with it makes sure it's ready
         # pen-e -D $SOCKET -fs
-        unbuffer pen-e -D $SOCKET running
+        # unbuffer pen-e -D $SOCKET running
+
         touch ~/.pen/pool/available/$SOCKET
     )
 fi
-# ) &
-
-# I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
-cat "$fp" 2>/dev/null
+' &>/dev/null &
