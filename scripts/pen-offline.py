@@ -45,6 +45,7 @@ result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
                      "presence_penalty: " + str(PEN_PRESENCE_PENALTY),
                      "frequency_penalty: " + str(PEN_FREQUENCY_PENALTY)])
 
+
 cs = [result]
 
 if len(cs) == 1:
