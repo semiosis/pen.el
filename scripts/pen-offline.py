@@ -55,8 +55,6 @@ def b(c, inputstring="", timeout=0):
     If I wan't to use tty programs, then use a ttyize/ttyify script.
     echo hi | ttyify vim | cat"""
 
-    c = xv(c)
-
     p = subprocess.Popen(
         c,
         shell=True,
