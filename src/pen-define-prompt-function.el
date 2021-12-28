@@ -1351,7 +1351,9 @@
                                       (-flatten
                                        (->>
                                          (append (glob (concat rd "/split*_*"))
-                                                 (glob (concat rd "/res*.txt")))
+                                                 (glob (concat rd "/results*/split*_*"))
+                                                 (glob (concat rd "/res*.txt"))
+                                                 (glob (concat rd "/results*/res*.txt")))
                                          (-filter 'string-not-empty-nor-nil-p)
                                          (-filter 'f-exists-p)
                                          (mapcar 'e/cat)
