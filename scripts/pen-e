@@ -8,6 +8,8 @@ sn="$(basename "$0")"
 : ${EMACS_TERM_TYPE:="screen-256color"}
 export EMACS_TERM_TYPE
 
+shopt -s nullglob
+
 mkdir -p $EMACSD/server
 
 eval "set -- $(cmd "$@" | sed 's/--init-debug/--debug-init/')"
