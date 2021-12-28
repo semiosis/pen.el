@@ -67,7 +67,7 @@ cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-h
 
 # Fix the frame
 tmux neww -d emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET -e UUU -c g -i
-sleep 0.2
+sleep 0.1
 tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg)(kill-frame))"
 sleep 0.1
 
