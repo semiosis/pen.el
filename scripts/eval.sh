@@ -41,15 +41,13 @@ last_arg="$(p "$last_arg" | pen-bs '\\')"
 
 if test "$USE_POOL" = "y"; then
     # Just take the first one
-    for socket_fp in ~/.pen/pool/available/*; do
+    for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
         SOCKET="$(basename "$socket_fp")"
         break
     done
 
     rm -f ~/.pen/pool/available/$SOCKET
 fi
-
-echo "$SOCKET"
 
 fp="/tmp/eval-output-${SOCKET}.txt"
 rm -f "$fp"
