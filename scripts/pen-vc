@@ -318,7 +318,7 @@ case "$vc_opt" in
                     ns "$(it "ghb size" "$url")" &>/dev/null & disown
                 fi
 
-                set -m
+                set +m
 
                 # Also clone the wiki if available
                 if printf -- "%s\n" "$url" | grep -q -P 'git@gitlab.*\.git' && \
