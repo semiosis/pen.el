@@ -43,26 +43,36 @@ shopt -s nullglob
 if test "$USE_POOL" = "y"; then
     # ugh... using sentinals is a pain. Just select one.
     # Just take the first one
-    SOCKET="$(basename "$(shopt -s nullglob; cd $HOME/.pen/pool/available; ls pen-emacsd-* | shuf -n 1)")"
-    # for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
-    #     SOCKET="$(basename "$socket_fp")"
-    #     echo "$SOCKET" >> /tmp/d.txt
-    #     break
-    # done
+    # SOCKET="$(basename "$(shopt -s nullglob; cd $HOME/.pen/pool/available; ls pen-emacsd-* | shuf -n 1)")"
+
+    for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
+        SOCKET="$(basename "$socket_fp")"
+        echo "$SOCKET" >> /tmp/d.txt
+        break
+    done
 
     test -z "$SOCKET" && exit 1
     rm -f ~/.pen/pool/available/$SOCKET
 fi
 
+test "$SOCKET" = DEFAULT && exit 1
+
 fp="/tmp/eval-output-${SOCKET}.txt"
 rm -f "$fp"
 # Can't use cmd because elisp doesn't use single quote for strings
 cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$SOCKET\" $last_arg)" >> /tmp/lsp.log
-unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$SOCKET\" $last_arg)" &>/dev/null
+# unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$SOCKET\" $last_arg)" &>/dev/null
+# These hang sometimes. I want to know why.
+tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$SOCKET\" $last_arg)(kill-frame))"
 sleep 0.1
 
 if test "$USE_POOL" = "y"; then
-    touch ~/.pen/pool/available/$SOCKET
+    (
+        # Maybe interacting with it makes sure it's ready
+        # pen-e -D $SOCKET -fs
+        pen-e -D $SOCKET running
+        touch ~/.pen/pool/available/$SOCKET
+    )
 fi
 
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl

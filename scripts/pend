@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+num="$1"
+shift
+
+test -n "$num" || exit 1
+
+pen-e -D "pen-emacsd-$num" "$@"
