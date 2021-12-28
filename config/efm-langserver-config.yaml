@@ -238,6 +238,11 @@ tools:
       - mix.exs
 
 languages:
+  global:
+    - <<: *pen-world-language
+    - <<: *pen-world-language-completion
+    - <<: *glossary1
+
   text:
     - <<: *pen-world-language
     - <<: *pen-world-language-completion
