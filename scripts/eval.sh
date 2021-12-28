@@ -50,6 +50,7 @@ if test "$USE_POOL" = "y"; then
     #     break
     # done
 
+    test -z "$SOCKET" && exit 1
     rm -f ~/.pen/pool/available/$SOCKET
 fi
 
