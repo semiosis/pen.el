@@ -3,7 +3,7 @@
 : "${DISPLAY:=":0"}"
 export DISPLAY
 
-set +m
+set -m
 
 input=
 
