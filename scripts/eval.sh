@@ -65,9 +65,10 @@ cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-h
 # These hang sometimes. I want to know why.
 
 # Fix the frame. This works, but it's a dodgy hack
-tmux neww -d pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -i
-sleep 0.1
-tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg)(kill-frame))"
+# tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg)(delete-frame))"
+emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg))"
+# This refreshes it
+tmux neww -d pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -sl 0.1 -m : -s "(delete-frame)" -c m -i
 sleep 0.1
 
 if test "$USE_POOL" = "y"; then
