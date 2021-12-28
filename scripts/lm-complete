@@ -186,7 +186,7 @@ tmpdir=~/.pen/temp
 mkdir -p "$tmpdir"
 } &>/dev/null
 
-if test -n "$PEN_N_JOBS"; then
+if test -n "$PEN_N_JOBS" && ! test "$PEN_N_JOBS" = 1; then
     mkdir -p "$PEN_GEN_DIR"
     # Do all of them in parallel
     for (( i = 1; i < "$PEN_N_JOBS"; i++ )); do
