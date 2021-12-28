@@ -43,7 +43,7 @@ shopt -s nullglob
 if test "$USE_POOL" = "y"; then
     # ugh... using sentinals is a pain. Just select one.
     # Just take the first one
-    SOCKET="$(basename "$(ls ~/.pen/pool/available/pen-emacsd-* | shuf -n 1)")"
+    SOCKET="$(basename "$(shopt -s nullglob; cd $HOME/.pen/pool/available; ls pen-emacsd-* | shuf -n 1)")"
     # for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
     #     SOCKET="$(basename "$socket_fp")"
     #     echo "$SOCKET" >> /tmp/d.txt
