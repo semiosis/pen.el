@@ -188,10 +188,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         fi
         : "${n:="5"}"
 
+        mkdir -p ~/.pen/pool/available
+
         # for each
         for i in $(seq 1 $n); do
-            cmd1 pen-e -D "pen-emacsd-$i" sd 1>&2
-            pen-e -D "pen-emacsd-$i" sd
+            pool_socket="pen-emacsd-$i"
+            cmd1 pen-e -D "$pool_socket" sd 1>&2
+            pen-e -D "$pool_socket" sd
+            if pen-e -D "$pool_socket" running; then
+                touch ~/".pen/pool/available/$pool_socket"
+            fi
         done
         shift
 
@@ -209,6 +215,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         # for each
         sp k "$signal"
         shift
+
+        rm -f ~/.pen/pool/available/*
 
         exit 0
     }
@@ -233,6 +241,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         pgrep emacs | xargs kill
         } &>/dev/null
         shift
+
+        rm -f ~/.pen/pool/available/*
 
         exit 0
     }
