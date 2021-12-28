@@ -70,10 +70,11 @@ emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host
 
 export SOCKET
 export USE_POOL
-(
+# (
 # This refreshes it after prompting
 # What a dirty hack.
-tmux neww -d pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -sl 0.2 -m : -s "(delete-frame)" -c m -i
+# tmux neww -d pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -sl 0.2 -m : -s "(delete-frame)" -c m -i
+pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -sl 0.2 -m : -s "(delete-frame)" -c m -i
 sleep 0.2
 
 if test "$USE_POOL" = "y"; then
@@ -84,7 +85,7 @@ if test "$USE_POOL" = "y"; then
         touch ~/.pen/pool/available/$SOCKET
     )
 fi
-) &
+# ) &
 
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
 cat "$fp" 2>/dev/null
