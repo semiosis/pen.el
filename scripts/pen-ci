@@ -12,10 +12,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -f) {
+        force_on=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
-if test "$PEN_CACHE" = "y"; then
+if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
     if test -f "$cache_file_path"; then
         cat "$cache_file_path"
     else

@@ -39,6 +39,7 @@ export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 last_arg="${@: -1}"
 last_arg="$(p "$last_arg" | pen-bs '\\')"
 
+shopt -s nullglob
 if test "$USE_POOL" = "y"; then
     # Just take the first one
     for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
