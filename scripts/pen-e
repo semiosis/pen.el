@@ -235,14 +235,35 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     qa|-qa|-quitall) {
         # For each
-        {
-        unbuffer pen-e -D pen-emacsd q
+        # {
+        # unbuffer pen-e -D pen-emacsd q
 
-        pgrep emacs | xargs kill
-        } &>/dev/null
-        shift
+        # pgrep emacs | xargs kill
+        # } &>/dev/null
+        # shift
 
-        rm -f ~/.pen/pool/available/*
+        config_fp=~/.pen/pen.yaml
+        if test -f "$config_fp"; then
+            # IFS= read -rd '' n < <(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null);typeset -p n &>/dev/null
+            n="$(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null)"
+        fi
+        : "${n:="5"}"
+
+        mkdir -p ~/.pen/pool/available
+
+        # for each
+        for fp in ~/.pen/pool/available/*; do
+            bn="$(basename "$fp")"
+            pool_socket="$bn"
+
+            cmd1 pen-e -D "$pool_socket" q 1>&2
+            pen-e -D "$pool_socket" q
+            if ! pen-e -D "$pool_socket" running; then
+                rm -f ~/".pen/pool/available/$pool_socket"
+            fi
+        done
+
+        # rm -f ~/.pen/pool/available/*
 
         exit 0
     }

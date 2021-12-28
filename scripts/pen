@@ -865,8 +865,9 @@ case "$sn" in
     penq) {
         show_banner=n
         if { ! inside-docker-p; } && docker-running-p; then
-            set -- -e "(progn (pen-sn \"tmux kill-server\")(kill-emacs))"
+            set -- -e "(progn (pen-sn \"pen-shutdown\")(kill-emacs))"
         elif inside-docker-p; then
+            pen-shutdown
             killall emacs
         else
             echo Not running. 1>&2
