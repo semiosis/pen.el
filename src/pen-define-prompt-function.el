@@ -78,19 +78,16 @@
                ,api-endpoint))
 
           (final-force-n-jobs
-           (expand-template
-            (str (or
-                  ,force-n-jobs
-                  (pen-var-value-maybe 'force-n-jobs))
-                 )))
+           (str (or
+                 ,force-n-jobs
+                 (pen-var-value-maybe 'force-n-jobs))))
 
           (final-n-jobs
-           (expand-template
-            (str (or
-                  final-force-n-jobs
-                  (pen-var-value-maybe 'n-jobs)
-                  ,n-jobs
-                  pen-n-simultaneous-requests))))
+           (str (or
+                 (sor final-force-n-jobs)
+                 (pen-var-value-maybe 'n-jobs)
+                 ,n-jobs
+                 pen-n-simultaneous-requests)))
 
           ;; Actually, only override model, temperature and lm-command again if force-engine is set.
           ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
