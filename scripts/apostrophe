@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# Apostrophe
+# Version 1.0, bash
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -nv) {
