@@ -7,6 +7,9 @@ test -f "/root/.emacs.d/pen.el/config/efm-langserver-config.yaml" && : "${efm_co
 
 ln -sf "$efm_config" $HOME/.config/efm-langserver/config.yaml
 
+set -m
+
 unbuffer pen-e sa &>/dev/null &>/dev/null &
+wait
 
 efm-langserver "$@"
