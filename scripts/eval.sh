@@ -4,6 +4,8 @@
 stty stop undef; stty start undef
 } 2>/dev/null
 
+set -xv
+
 # Debian10 run Pen
 
 # export PEN_DEBUG=y

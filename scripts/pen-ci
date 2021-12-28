@@ -6,7 +6,7 @@ stdin_exists() {
 if stdin_exists; then
     tf_thing="$(0</dev/null pen-tf thing || echo /dev/null)"
     # This chomp prevents hangs when piping a single space into a prompt function
-    cat | chomp > "$tf_thing"
+    cat | sed -z 's/^\s*$//' > "$tf_thing"
     sha="$(sha1sum "$tf_thing" | awk '{print $1}')"
 fi
 
