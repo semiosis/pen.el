@@ -73,7 +73,7 @@ def b(c, inputstring="", timeout=0):
 # This is to simulate lag, so I can work with asynchrony in the LSP server
 b("sleep 3")
 
-cs = [b("pen-c ascify" result)]
+cs = [b("pen-c alphanum", result)[0]]
 
 if len(cs) == 1:
     print(PEN_PROMPT, end = '')
