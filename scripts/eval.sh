@@ -23,6 +23,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    --parallel|--pool) {
+        export USE_POOL=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
