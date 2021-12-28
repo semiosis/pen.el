@@ -47,8 +47,6 @@ result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
                      "frequency_penalty: " + str(PEN_FREQUENCY_PENALTY)])
 
 
-cs = [result]
-
 def b(c, inputstring="", timeout=0):
     """Runs a shell command
     This function always has stdin and stdout.
@@ -75,6 +73,7 @@ def b(c, inputstring="", timeout=0):
 # This is to simulate lag, so I can work with asynchrony in the LSP server
 b("sleep 3")
 
+cs = [b("pen-c ascify" result)]
 
 if len(cs) == 1:
     print(PEN_PROMPT, end = '')
