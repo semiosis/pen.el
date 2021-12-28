@@ -52,10 +52,9 @@ if test "$USE_POOL" = "y"; then
     done
 
     test -z "$SOCKET" && exit 1
+    test "$SOCKET" = DEFAULT && exit 1
     rm -f ~/.pen/pool/available/$SOCKET
 fi
-
-test "$SOCKET" = DEFAULT && exit 1
 
 # Add the date so never any collisions
 fp="/tmp/eval-output-${SOCKET}-$(date +%s).txt"
