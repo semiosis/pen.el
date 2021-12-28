@@ -1165,7 +1165,14 @@ when s is a string, set the clipboard to s"
   (ignore-errors (with-temp-buffer
                    (insert stdin)
                    (delete-file file_path)
-                   (write-file file_path))))
+                   (write-file file_path nil))))
+
+(defun sh-write-to-file (stdin file_path)
+  ;; The ignore-errors is needed for babel for some reason
+
+  ;; This may hang less often
+  (ignore-errors
+    (pen-sn (cmd "tee" file_path) stdin)))
 
 (defmacro pen-eval-for-host (daemon-name &rest body)
   `(let ((result (progn ,@body)))
