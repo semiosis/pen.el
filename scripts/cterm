@@ -1,6 +1,10 @@
 #!/bin/bash
 export TTY
 
+# cterm
+# Version 1.0, bash
+
+# Examples:
 # ct vim /
 
 sn="$(basename "$0")"
