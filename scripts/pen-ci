@@ -39,10 +39,11 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
             # TODO Put a delay before this is allowed to run again
 
             if stdin_exists; then
-                set -m
                 CMD="$(cmd "$@")"
-                cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path" >> /tmp/lsp2.log
-                sh -c "cat $tf_thing | $CMD > $cache_file_path" &
+                # date
+                # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path"
+                # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path" >> /tmp/lsp2.log
+                nohup sh -c "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null
             else
                 "$@" > "$cache_file_path"
             fi

@@ -41,11 +41,14 @@ last_arg="$(p "$last_arg" | pen-bs '\\')"
 
 shopt -s nullglob
 if test "$USE_POOL" = "y"; then
+    # ugh... using sentinals is a pain. Just select one.
     # Just take the first one
-    for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
-        SOCKET="$(basename "$socket_fp")"
-        break
-    done
+    SOCKET="$(basename "$(ls ~/.pen/pool/available/pen-emacsd-* | shuf -n 1)")"
+    # for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
+    #     SOCKET="$(basename "$socket_fp")"
+    #     echo "$SOCKET" >> /tmp/d.txt
+    #     break
+    # done
 
     rm -f ~/.pen/pool/available/$SOCKET
 fi
