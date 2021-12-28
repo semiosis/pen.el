@@ -203,6 +203,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    lsp) {
+        shift
+        set -- sh pen-lsp "$@"
+        start_shell=y
+    }
+    ;;
+
     tma) {
         start_shell=y
         shift
