@@ -1359,6 +1359,7 @@ But use the results-analyser."
            (n-completions 1)
            ;; This is needed because the engine can also force n-completions
            (force-n-completions 1)
+           (n-jobs 1)
            (pen-no-select-result t)
            (pen-select-only-match t))
        ,',@body)))
@@ -1371,6 +1372,7 @@ But use the results-analyser."
             (n-completions 1)
             ;; This is needed because the engine can also force n-completions
             (force-n-completions 1)
+            (n-jobs 1)
             (pen-no-select-result t)
             (pen-select-only-match t))
         ,',@body))))
@@ -1423,6 +1425,7 @@ But use the results-analyser."
     `(let ((pen-single-generation-b t)
            (n-collate 1)
            (n-completions 1)
+           (n-jobs 1)
            ;; This is needed because the engine can also force n-completions
            (force-n-completions 1))
        ,',@body)))
@@ -1434,6 +1437,7 @@ But use the results-analyser."
            (pen-single-generation-b t)
            (n-collate 1)
            (n-completions 1)
+           (n-jobs 1)
            ;; This is needed because the engine can also force n-completions
            (force-n-completions 1))
        ,',@body)))
