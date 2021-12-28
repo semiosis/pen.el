@@ -1172,11 +1172,13 @@ when s is a string, set the clipboard to s"
   ;; This may hang less often
   (pen-sn (pen-cmd "tee" file_path) stdin))
 
-(defmacro pen-eval-for-host (daemon-name &rest body)
+(defmacro pen-eval-for-host (host-fp &rest body)
   `(let ((result (progn ,@body)))
      ;; (message (concat "writing to /tmp/eval-output-" ,daemon-name ".txt"))
      (shut-up
-       (let ((fp (concat "/tmp/eval-output-" ,daemon-name ".txt")))
+       ;; This is clashing with itself
+       (let ((fp ;; (concat "/tmp/eval-output-" ,daemon-name ".txt")
+              ,host-fp))
          (if result
              ;; use sh-write-to-file instead of write-to-file to prevent hanging
              (write-to-file (str result) fp)
