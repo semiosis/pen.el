@@ -33,10 +33,11 @@ export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 last_arg="${@: -1}"
 last_arg="$(p "$last_arg" | pen-bs '\\')"
 
-rm -f /tmp/eval-output.txt
+fp="/tmp/eval-output-${SOCKET}.txt"
+rm -f "$fp"
 # Can't use cmd because elisp doesn't use single quote for strings
-unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host $last_arg)" &>/dev/null
+unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$SOCKET\" $last_arg)" &>/dev/null
 sleep 0.1
 
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
-cat /tmp/eval-output.txt 2>/dev/null
+cat "$fp" 2>/dev/null

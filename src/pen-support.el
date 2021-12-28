@@ -1164,12 +1164,13 @@ when s is a string, set the clipboard to s"
                    (delete-file file_path)
                    (write-file file_path))))
 
-(defmacro pen-eval-for-host (&rest body)
+(defmacro pen-eval-for-host (daemon-name &rest body)
   `(let ((result (progn ,@body)))
      (shut-up
-       (if result
-           (write-to-file (str result) "/tmp/eval-output.txt")
-         (write-to-file "" "/tmp/eval-output.txt")))
+       (let ((fp (concat "/tmp/eval-output-" daemon-name ".txt")))
+         (if result
+             (write-to-file (str result) fp)
+           (write-to-file "" fp))))
      nil))
 
 (defun pen-var-value-maybe (sym)
