@@ -43,6 +43,8 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
                 # date
                 # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path"
                 # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path" >> /tmp/lsp2.log
+
+                # Both nohup and & are necessary
                 nohup sh -c "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
             else
                 "$@" > "$cache_file_path"
