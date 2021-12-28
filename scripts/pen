@@ -235,6 +235,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    --parallel|--pool) {
+        export USE_POOL=y
+        shift
+    }
+    ;;
+
     --temp) {
         temperature="$2"
         shift
@@ -562,7 +568,13 @@ fi
 case "$sn" in
     penf) {
         fun="$1"
-        arity="$(( $# - 1 ))"
+
+        if stdin_exists; then
+            arity="$(( $# ))"
+        else
+            arity="$(( $# - 1 ))"
+        fi
+
         if ! printf -- "%s\n" "$fun" | grep -q -P '/[0-9]+$'; then
             fun="$(penl 2>&1 | grep -P "^(pf-)?${fun}/$arity$")"
         fi
