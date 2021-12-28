@@ -188,6 +188,9 @@ mkdir -p "$tmpdir"
 
 if test -n "$PEN_N_JOBS" && ! test "$PEN_N_JOBS" = 1; then
     mkdir -p "$PEN_GEN_DIR"
+
+    # If I run the jobs with tmux then I can use the human engine
+
     # Do all of them in parallel
     for (( i = 1; i < "$PEN_N_JOBS"; i++ )); do
         cmd-nice-posix pen-ci "$PEN_LM_COMMAND" | awk 1
