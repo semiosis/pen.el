@@ -729,9 +729,17 @@
             (str (or (pen-var-value-maybe 'top-p)
                      ,top-p))))
 
+          (final-force-n-jobs
+           (expand-template
+            (str (or
+                  ,force-n-jobs
+                  (pen-var-value-maybe 'force-n-jobs))
+                 )))
+
           (final-n-jobs
            (expand-template
             (str (or
+                  final-force-n-jobs
                   (pen-var-value-maybe 'n-jobs)
                   ,n-jobs
                   pen-n-simultaneous-requests))))
@@ -2033,6 +2041,7 @@ Function names are prefixed with pf- for easy searching"
                         (top-k (ht-get yaml-ht "best-of"))
 
                         (n-jobs (ht-get yaml-ht "n-jobs"))
+                        (force-n-jobs (ht-get yaml-ht "force-n-jobs"))
 
                         (temperature (ht-get yaml-ht "temperature"))
                         (default-temperature (ht-get yaml-ht "default-temperature"))
