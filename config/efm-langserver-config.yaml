@@ -19,12 +19,12 @@ commands:
 
 tools:
   pen-world-language-completion: &pen-world-language-completion
-    # completion-command: 'ci penf pf-generic-completion-50-tokens/1'
+    # completion-command: 'ci penf --pool pf-generic-completion-50-tokens/1'
     completion-command: 'POSITION=${POSITION} pen-lsp-complete'
     completion-stdin: true
 
   pen-programming-language-completion: &pen-programming-language-completion
-    # completion-command: 'ci penf pf-generic-completion-50-tokens/1'
+    # completion-command: 'ci penf --pool pf-generic-completion-50-tokens/1'
 
     # TODO create a code complete script
     # TODO Figure out how to get the language into this script
@@ -34,21 +34,21 @@ tools:
 
   pen-world-language: &pen-world-language
     lint-debounce: 2s
-    lint-command: 'penf pf-generic-completion-50-tokens/1'
+    lint-command: 'penf --pool pf-generic-completion-50-tokens/1'
     lint-stdin: true
     lint-offset: 1
     format-stdin: true
-    format-command: "penf correct-english-spelling-and-grammar-1"
+    format-command: "penf --pool correct-english-spelling-and-grammar-1"
 
   pen-programming-language: &pen-programming-language
     lint-debounce: 2s
     # TODO Figure out how to get the language into this script
     # I probably need to extend efm-langserver
-    lint-command: 'penf pf-generic-completion-50-tokens/1'
+    lint-command: 'penf --pool pf-generic-completion-50-tokens/1'
     lint-stdin: true
     lint-offset: 1
     format-stdin: true
-    format-command: "penf pf-correct-the-syntax/2 code"
+    format-command: "penf --pool pf-correct-the-syntax/2 code"
 
   glossary1: &glossary1
     # The impementation is a combination of documentation and hover
