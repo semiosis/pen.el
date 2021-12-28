@@ -353,3 +353,5 @@ agi colorized-logs
 
 # gnu parallel
 apt install parallel
+
+ln -sf ~/.emacs.d/host/pen.el/config/efm-langserver-config.yaml ~/.config/efm-langserver/config.yaml
