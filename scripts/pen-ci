@@ -21,12 +21,27 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
 if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
     if test -f "$cache_file_path"; then
         cat "$cache_file_path"
     else
         if test "$asynchronous" = "y"; then
-            "$@" > "$cache_file_path" &
+            if stdin_exists; then
+                set -m
+                tf_thing="$(0</dev/null pen-tf thing || echo /dev/null)"
+                cat > "$tf_thing"
+
+                CMD="$(cmd "$@")"
+                cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path" >> /tmp/lsp2.log
+                sh -c "cat $tf_thing | $CMD > $cache_file_path" &
+                disown
+            else
+                "$@" > "$cache_file_path"
+            fi
         else
             "$@" > "$cache_file_path"
         fi
