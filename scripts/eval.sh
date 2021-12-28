@@ -52,6 +52,7 @@ fi
 fp="/tmp/eval-output-${SOCKET}.txt"
 rm -f "$fp"
 # Can't use cmd because elisp doesn't use single quote for strings
+cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$SOCKET\" $last_arg)" >> /tmp/lsp.log
 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$SOCKET\" $last_arg)" &>/dev/null
 sleep 0.1
 

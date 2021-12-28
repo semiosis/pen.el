@@ -85,6 +85,9 @@ runclient() {
     fi
 }
 
+echo Starting daemon pool in background 1>&2
+unbuffer pen-e sa &>/dev/null &
+
 # How to debug daemon
 # emacs -nw --daemon --debug-init
 # How to debug non-daemon
