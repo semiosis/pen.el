@@ -48,6 +48,35 @@ result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
 
 cs = [result]
 
+def b(c, inputstring="", timeout=0):
+    """Runs a shell command
+    This function always has stdin and stdout.
+    Don't do anything fancy here with ttys, handling stdin and stdout.
+    If I wan't to use tty programs, then use a ttyize/ttyify script.
+    echo hi | ttyify vim | cat"""
+
+    c = xv(c)
+
+    p = subprocess.Popen(
+        c,
+        shell=True,
+        executable="/bin/sh",
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        close_fds=True,
+    )
+    p.stdin.write(str(inputstring).encode("utf-8"))
+    p.stdin.close()
+    output = p.stdout.read().decode("utf-8")
+    p.wait()
+    return [str(output), p.returncode]
+
+
+# This is to simulate lag, so I can work with asynchrony in the LSP server
+b("sleep 3")
+
+
 if len(cs) == 1:
     print(PEN_PROMPT, end = '')
     print(cs[0])
