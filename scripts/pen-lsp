@@ -1,6 +1,27 @@
 #!/bin/bash
 export TTY
 
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
+use_comint=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+        -nd) {
+        export NO_DOCKER=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
+    pen sh pen-lsp "$@"
+    exit "$?"
+fi
+
 test -f "/root/.pen/efm-langserver-config.yaml" && : "${efm_config:="/root/.pen/efm-langserver-config.yaml"}"
 test -f "/root/.emacs.d/host/pen.el/config/efm-langserver-config.yaml" && : "${efm_config:="/root/.emacs.d/host/pen.el/config/efm-langserver-config.yaml"}"
 test -f "/root/.emacs.d/pen.el/config/efm-langserver-config.yaml" && : "${efm_config:="/root/.emacs.d/pen.el/config/efm-langserver-config.yaml"}"
