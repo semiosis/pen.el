@@ -1167,7 +1167,7 @@ when s is a string, set the clipboard to s"
 (defmacro pen-eval-for-host (daemon-name &rest body)
   `(let ((result (progn ,@body)))
      (shut-up
-       (let ((fp (concat "/tmp/eval-output-" daemon-name ".txt")))
+       (let ((fp (concat "/tmp/eval-output-" ,daemon-name ".txt")))
          (if result
              (write-to-file (str result) fp)
            (write-to-file "" fp))))
