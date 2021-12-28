@@ -77,6 +77,21 @@
            (or (pen-var-value-maybe 'api-endpoint)
                ,api-endpoint))
 
+          (final-force-n-jobs
+           (expand-template
+            (str (or
+                  ,force-n-jobs
+                  (pen-var-value-maybe 'force-n-jobs))
+                 )))
+
+          (final-n-jobs
+           (expand-template
+            (str (or
+                  final-force-n-jobs
+                  (pen-var-value-maybe 'n-jobs)
+                  ,n-jobs
+                  pen-n-simultaneous-requests))))
+
           ;; Actually, only override model, temperature and lm-command again if force-engine is set.
           ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
           ;; Don't override final-'force'-model, etc.
@@ -89,6 +104,7 @@
                   (temp (cdr (assoc 'default-temperature al)))
                   (model (cdr (assoc 'model al)))
                   (lm-command (cdr (assoc 'lm-command al)))
+                  (force-n-jobs (cdr (assoc 'force-n-jobs al)))
                   (api-endpoint (cdr (assoc 'api-endpoint al))))
              ;; (if temp
              ;;     (setq final-temperature temp))
@@ -98,6 +114,8 @@
                  (setq final-lm-command lm-command))
              (if api-endpoint
                  (setq final-api-endpoint api-endpoint))
+             (if force-n-jobs
+                 (setq final-force-n-jobs force-n-jobs))
              final-engine))
 
           (final-flags
@@ -728,21 +746,6 @@
            (expand-template
             (str (or (pen-var-value-maybe 'top-p)
                      ,top-p))))
-
-          (final-force-n-jobs
-           (expand-template
-            (str (or
-                  ,force-n-jobs
-                  (pen-var-value-maybe 'force-n-jobs))
-                 )))
-
-          (final-n-jobs
-           (expand-template
-            (str (or
-                  final-force-n-jobs
-                  (pen-var-value-maybe 'n-jobs)
-                  ,n-jobs
-                  pen-n-simultaneous-requests))))
 
           (final-top-k
            (expand-template
