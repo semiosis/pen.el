@@ -7,7 +7,7 @@ if stdin_exists; then
     set -m
     tf_thing="$(0</dev/null pen-tf thing || echo /dev/null)"
     cat > "$tf_thing"
-    sha="$(sha1sum "$tf_thing")"
+    sha="$(sha1sum "$tf_thing" | awk '{print $1}')"
 fi
 
 cache_file_path="/tmp/pen-$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify)$sha.txt"
