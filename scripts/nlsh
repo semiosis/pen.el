@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# NL·SH
+
 sn="$(basename "$0")"
 
 inside-docker-p() {
