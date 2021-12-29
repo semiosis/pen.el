@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+shpv() {
+    varname="$1"; : ${varname:="pane_start_command"}
+    tmux display -t "$CALLER_TARGET" -p "#{$varname}"
+}
+
+shpv "$@"

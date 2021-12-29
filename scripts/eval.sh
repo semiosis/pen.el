@@ -45,7 +45,7 @@ last_arg="$(p "$last_arg" | pen-bs '\\')"
 
 shopt -s nullglob
 if test "$USE_POOL" = "y"; then
-    # ugh... using sentinals is a pain. Just select one.
+    # ugh... using sentinels is a pain. Just select one.
     # Just take the first one
     # SOCKET="$(basename "$(shopt -s nullglob; cd $HOME/.pen/pool/available; ls pen-emacsd-* | shuf -n 1)")"
 
@@ -80,10 +80,12 @@ fi
 cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" >> /tmp/lsp.log
 
 # Consider using timeout here
-sentinal_string="tm_sentinal_${RANDOM}_$$"
-# tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinal_string';"
-tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)"); tmux wait-for -S '$sentinal_string';"
-tmux waitfor "$sentinal_string"
+# sentinel_string="tm_sentinel_${RANDOM}_$$"
+# tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
+unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)"
+
+# tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s /root/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
+# tmux waitfor "$sentinel_string"
 
 # This must be run
 # unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null

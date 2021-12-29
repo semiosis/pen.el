@@ -1,0 +1,35 @@
+#!/bin/bash
+
+shpvs() {
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        -t) {
+            # pane
+            export CALLER_TARGET="$2"
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
+    # out="$(
+    for v in \
+        pane_id \
+        session_name \
+        session_id \
+        pane_tty \
+        pane_width \
+        pane_height \
+        pane_start_command \
+        pane_current_command \
+        ; do
+        cmd="$(shpv "$v" | chomp | q)"
+        printf -- "%s" "$v: $cmd"
+        printf -- "%s\n" 
+    done
+    # )"
+    # lit "$out"
+}
+
+shpvs "$@"
