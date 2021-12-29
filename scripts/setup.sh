@@ -358,3 +358,6 @@ ln -sf ~/.emacs.d/host/pen.el/config/efm-langserver-config.yaml ~/.config/efm-la
 
 agi silversearcher-ag
 agi sshfs
+
+# For vterm
+agi libtool-bin
