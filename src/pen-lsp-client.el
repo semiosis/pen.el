@@ -61,22 +61,44 @@
 
 (defset pen-lsp-modes '(text-mode
                         emacs-lisp-mode
+                        sh-mode
                         org-mode awk-mode eww-mode
                         special-mode python-mode
                         prog-mode))
 
-(lsp-register-client
- (make-lsp-client :new-connection
-                  (lsp-stdio-connection 'pen-lsp--server-command)
-                  :major-modes pen-lsp-modes
-                  :server-id 'pen
-                  :initialized-fn (lambda (workspace)
-                                    (with-lsp-workspace workspace
-                                      (lsp--set-configuration
-                                       (lsp-configuration-section "pen")
-                                       ;; (lsp-configuration-section "pen")
-                                       ;; `(:pen ,pen-lsp--config-options)
-                                       )))))
+;; This is for the language server to know what language I'm using.
+;; Unfortunately, merely using prog-mode is not enough.
+;; I have to specify the exact mode, for hte moment
+;; (add-to-list 'lsp-language-id-configuration '(text-mode . "text"))
+;; (add-to-list 'lsp-language-id-configuration `(org-mode . "org"))
+;; (add-to-list 'lsp-language-id-configuration `(awk-mode . "awk"))
+;; (add-to-list 'lsp-language-id-configuration `(eww-mode . "global"))
+;; (add-to-list 'lsp-language-id-configuration `(sh-mode . "global"))
+;; (add-to-list 'lsp-language-id-configuration `(emacs-lisp-mode . "global"))
+;; (add-to-list 'lsp-language-id-configuration `(special-mode . "global"))
+;; (add-to-list 'lsp-language-id-configuration `(python-mode . "global"))
+;; (add-to-list 'lsp-language-id-configuration `(prog-mode . "global"))
+
+(defun pen-lsp-update-languages ()
+  (interactive)
+
+  (loop for m in pen-lsp-modes do
+        (add-to-list 'lsp-language-id-configuration `(,m . "global")))
+
+  (lsp-register-client
+   (make-lsp-client :new-connection
+                    (lsp-stdio-connection 'pen-lsp--server-command)
+                    :major-modes pen-lsp-modes
+                    :server-id 'pen
+                    :initialized-fn (lambda (workspace)
+                                      (with-lsp-workspace workspace
+                                        (lsp--set-configuration
+                                         (lsp-configuration-section "pen")
+                                         ;; (lsp-configuration-section "pen")
+                                         ;; `(:pen ,pen-lsp--config-options)
+                                         ))))))
+
+(pen-lsp-update-languages)
 
 (add-hook 'text-mode-hook #'lsp)
 (remove-hook 'text-mode-hook #'lsp)
@@ -341,15 +363,6 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 ;; Sadly can't override because of lexical scope
 ;; j:company-lsp--candidates-async
 
-;; This is for the language server to know what language I'm using.
-(add-to-list 'lsp-language-id-configuration '(text-mode . "text"))
-(add-to-list 'lsp-language-id-configuration `(org-mode . "org"))
-(add-to-list 'lsp-language-id-configuration `(awk-mode . "awk"))
-(add-to-list 'lsp-language-id-configuration `(eww-mode . "global"))
-(add-to-list 'lsp-language-id-configuration `(emacs-lisp-mode . "global"))
-(add-to-list 'lsp-language-id-configuration `(special-mode . "global"))
-(add-to-list 'lsp-language-id-configuration `(python-mode . "global"))
-(add-to-list 'lsp-language-id-configuration `(prog-mode . "global"))
 
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
