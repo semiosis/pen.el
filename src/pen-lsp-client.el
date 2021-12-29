@@ -60,6 +60,7 @@
 ;; I want to do all modes
 
 (defset pen-lsp-modes '(text-mode
+                        prompt-description-mode
                         emacs-lisp-mode
                         sh-mode
                         org-mode awk-mode eww-mode
