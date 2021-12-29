@@ -55,10 +55,10 @@
         (progn
           (helm-fzf-d2 dir
                        (if (pen-selected-p)
-                           (concat "'" (selection)))))
+                           (concat "'" (pen-selection)))))
       (helm-fzf dir
                 (if (pen-selected-p)
-                    (concat "'" (selection)))))))
+                    (concat "'" (pen-selection)))))))
 
 (defun pen-helm-fzf-top ()
   (interactive)
@@ -77,9 +77,9 @@
         (progn
           (helm-fzf-d2 dir
                        (if (pen-selected-p)
-                           (concat "'" (selection)))))
+                           (concat "'" (pen-selection)))))
       (helm-fzf dir
                 (if (pen-selected-p)
-                    (concat "'" (selection)))))))
+                    (concat "'" (pen-selection)))))))
 
 (provide 'pen-helm-fzf)
