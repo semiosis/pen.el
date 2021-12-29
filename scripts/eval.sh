@@ -74,15 +74,4 @@ export USE_POOL
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
 cat "$fp" 2>/dev/null
 
-IFS= read -r -d '' shcode <<HEREDOC
-pen-fix-daemon "$SOCKET"
-sleep 0.2
-
-if test "$USE_POOL" = "y"; then
-    (
-        # Maybe interacting with it makes sure it's ready
-        # pen-e -D $SOCKET -fs
-    )
-fi
-HEREDOC
-nohup bash -c "$shcode" &>/dev/null &
+nohup bash -c "pen-fix-daemon "$SOCKET"" &>/dev/null &

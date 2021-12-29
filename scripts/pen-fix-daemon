@@ -26,5 +26,7 @@ emacsclient -a '' -s $HOME/.emacs.d/server/$SOCKET -e "(pen-kill-other-clients t
 # pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(pen-kill-other-clients t)" -c m -i
 
 if unbuffer pen-e -D $SOCKET running; then
-    touch ~/.pen/pool/available/$SOCKET
+    if test "$USE_POOL" = "y"; then
+        touch ~/.pen/pool/available/$SOCKET
+    fi
 fi
