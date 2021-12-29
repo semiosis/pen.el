@@ -1,0 +1,7 @@
+#!/bin/sh
+
+chars="$1"
+: "${chars:="$(pen-rc-get max-input-char-length)"}"
+: "${chars:="1000"}"
+
+cut -c "1-$chars"

@@ -645,7 +645,7 @@ case "$sn" in
                 # So do I escape or not? Yes. Also remove final whitespace
                 # To test, ensure this works:
                 # echo -n "Once upon " | penf --pool pf-generic-completion-50-tokens/1
-                in="$(cat | sed -z 's/\s\+$//')"
+                in="$(cat | sed -z 's/\s\+$//' | pen-limit-chars)"
 
                 if test "$1" = {}; then
                     shift
