@@ -69,6 +69,9 @@
 (package-install 'shackle)
 (package-install 'wgrep)
 
+;; TODO This still needs to be run once
+(package-install 'vterm)
+
 ;; Require dependencies
 (require 'shut-up)
 ;; For org-roam
