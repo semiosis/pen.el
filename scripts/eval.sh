@@ -80,19 +80,24 @@ fi
 cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" >> /tmp/lsp.log
 
 # Consider using timeout here
-# sentinel_string="tm_sentinel_${RANDOM}_$$"
-# tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
-unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
-
+sentinel_string="tm_sentinel_${RANDOM}_$$"
+# cmd tmux neww -d -n eval-ec-$SOCKET "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"| pen-tv &>/dev/null
+tmux neww -d -n eval-ec-$SOCKET "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
+# tmux neww -d -n eval-ec-$SOCKET "$(cmd unbuffer emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"$HOME/.pen/pool/available/$SOCKET\" $last_arg)"); sleep 10;"
+# unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
 # tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s /root/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
-# tmux waitfor "$sentinel_string"
+
+# echo "$sentinel_string" | pen-tv &>/dev/null
+tmux wait-for "$sentinel_string"
+
+# date | pen-tv &>/dev/null
 
 # This must be run
 # unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
 # These hang sometimes. I want to know why.
 
 # Fix the frame. This works, but it's a dodgy hack
-# tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg)(delete-frame))"
+# tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg)(pen-kill-other-clients t))"
 # unbuffer timeout 3 emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg))" &>/dev/null
 
 export SOCKET

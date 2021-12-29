@@ -32,11 +32,11 @@ pen-tm -te -S nw -d -n "prompt-$SOCKET-pend" -fa pen-x -sh "set -xv; pend $SOCKE
 # sleep 0.5
 # pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(pen-kill-other-clients t)" -c m -i
 
-# if unbuffer pen-e -D $SOCKET running; then
+if unbuffer pen-e -D $SOCKET running; then
     if printf -- "%s\n" "$SOCKET" | grep -q -P '^pen-emacsd-'; then
     # if test "$USE_POOL" = "y"; then
         touch ~/.pen/pool/available/$SOCKET
     fi
-#else
-#    echo "$SOCKET not running" 1>&2
-#fi
+else
+   echo "$SOCKET not running" 1>&2
+fi

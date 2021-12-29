@@ -10,7 +10,7 @@ if stdin_exists; then
     sha="$(sha1sum "$tf_thing" | awk '{print $1}')"
 fi
 
-: ${RETRY_TIMEOUT:="5"} # 5 seconds
+: ${RETRY_TIMEOUT:="15"} # 15 seconds
 
 # ci means "cache it"
 
