@@ -4,6 +4,10 @@
 stty stop undef; stty start undef
 } 2>/dev/null
 
+exec 0</dev/null
+
+set -xv
+
 # Debian10 run Pen
 
 # export PEN_DEBUG=y
@@ -56,22 +60,47 @@ if test "$USE_POOL" = "y"; then
     rm -f ~/.pen/pool/available/$SOCKET
 fi
 
+# Can't use a timestamp because I might want to try eval.sh again
+prompt_id="$(cmd "$@" | sha1sum | awk '{print $1}')"
+
 # Add the date so never any collisions
-fp="/tmp/eval-output-${SOCKET}-$(date +%s).txt"
-rm -f "$fp"
+# fp="/tmp/eval-output-${SOCKET}-$prompt_id.txt"
+# fp="/tmp/eval-output-${SOCKET}-$prompt_id.txt"
+
+# This is not the place to memoise with prompt sha
+fp="/tmp/eval-output-${SOCKET}.txt"
+if ! test -s "$fp"; then
+    rm -f "$fp"
+fi
 # Can't use cmd because elisp doesn't use single quote for strings
+# cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" | tee /dev/stderr >> /tmp/lsp.log
+
+# I don't need tmux here, as I don't need a frame.
+# But I must wait.
 cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" >> /tmp/lsp.log
-# unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$SOCKET\" $last_arg)" &>/dev/null
+
+# Consider using timeout here
+timeout 5 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
+
+# This must be run
+# unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
 # These hang sometimes. I want to know why.
 
 # Fix the frame. This works, but it's a dodgy hack
 # tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg)(delete-frame))"
-unbuffer timeout 3 emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg))" &>/dev/null
+# unbuffer timeout 3 emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg))" &>/dev/null
 
 export SOCKET
 export USE_POOL
 
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
-cat "$fp" 2>/dev/null
+if test -s "$fp"; then
+    exec 0</dev/null cat "$fp" 2>/dev/null
+# else
+#     # I might need to return something to appease buffered prompters
+#     echo
+fi
 
-nohup bash -c "pen-fix-daemon "$SOCKET"" &>/dev/null &
+touch ~/.pen/pool/available/$SOCKET
+# nohup pen-fix-daemon $SOCKET
+# tmux neww -d -n fix-$SOCKET "shx pen-fix-daemon $SOCKET;pak"

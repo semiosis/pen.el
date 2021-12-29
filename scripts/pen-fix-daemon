@@ -4,7 +4,7 @@ export TTY
 SOCKET="$1"
 test -n "$SOCKET" || exit 1
 
-if printf -- "%s\n" "$SOCKET" | grep -q -P '^[0-9]$'; then
+if printf -- "%s\n" "$SOCKET" | grep -q -P '^[0-9]+$'; then
     SOCKET="pen-emacsd-$SOCKET"
 fi
 
@@ -19,14 +19,24 @@ winname="prompt-$SOCKET-$(date +%s)"
 # Adding -F seems to make the nw disconnect
 # -F "$ID_FORMAT" -P
 # id="$()"
-pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.5 -c g -sl 1 -m : -sl 1 -s "(pen-kill-other-clients t)" -c m -i
-sleep 3
-emacsclient -a '' -s $HOME/.emacs.d/server/$SOCKET -e "(pen-kill-other-clients t)"
+
+# SOCKET=pen-emacsd-5
+# sentinal_string="tm_sentinal_${RANDOM}_$$"
+# -x "tmux wait-for -S '$sentinal_string'"
+pen-tm -te -S nw -d -n "prompt-$SOCKET" -fa pen-x -sh "set -xv; emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.5 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -i
+# pen-tm -te nw -d -n "prompt-$SOCKET" -fa pen-x -sh "set -xv; emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.5 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -i
+pen-tm -te -S nw -d -n "prompt-$SOCKET-pend" -fa pen-x -sh "set -xv; pend $SOCKET" -sl 0.5 -c x -c c -i
+# tmux wait-for "$sentinal_string"
+
+# emacsclient -a '' -s $HOME/.emacs.d/server/$SOCKET -e "(pen-kill-other-clients t)"
 # sleep 0.5
 # pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(pen-kill-other-clients t)" -c m -i
 
-if unbuffer pen-e -D $SOCKET running; then
-    if test "$USE_POOL" = "y"; then
+# if unbuffer pen-e -D $SOCKET running; then
+    if printf -- "%s\n" "$SOCKET" | grep -q -P '^pen-emacsd-'; then
+    # if test "$USE_POOL" = "y"; then
         touch ~/.pen/pool/available/$SOCKET
     fi
-fi
+#else
+#    echo "$SOCKET not running" 1>&2
+#fi

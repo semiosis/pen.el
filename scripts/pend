@@ -6,4 +6,10 @@ shift
 
 test -n "$num" || exit 1
 
-pen-e -D "pen-emacsd-$num" "$@"
+if printf -- "%s\n" "$num" | grep -q -P '^pen-emacsd-'; then
+    SOCKET="$num"
+else
+    SOCKET="pen-emacsd-$num"
+fi
+
+pen-e -D "$SOCKET" "$@"

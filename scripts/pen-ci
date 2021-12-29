@@ -10,7 +10,7 @@ if stdin_exists; then
     sha="$(sha1sum "$tf_thing" | awk '{print $1}')"
 fi
 
-cache_file_path="/tmp/pen-$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify)$sha.txt"
+: ${RETRY_TIMEOUT:="5"} # 5 seconds
 
 # ci means "cache it"
 
@@ -37,10 +37,25 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+# This must come after the initial arguments
+cache_file_path="/tmp/pen-$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify)$sha.txt"
+
+age() {
+    fileMod="$(stat -c %Y -- "$1")"
+    if test -n "$fileMod"; then
+        echo $(( $(date +%s) - fileMod ))
+    else
+        return $?
+    fi
+}
+
 if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
-    if test -f "$cache_file_path" && test -s "$cache_file_path" && ! test "$update" = y; then
+    if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && test "$(age "$cache_file_path")" -lt "$RETRY_TIMEOUT"; then
+        exit 0
+    elif test -f "$cache_file_path" && test -s "$cache_file_path" && ! test "$update" = y; then
         cat "$cache_file_path"
     else
+        rm -f "$cache_file_path"
         if test "$asynchronous" = "y"; then
             # TODO Put a delay before this is allowed to run again
 
@@ -53,7 +68,7 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
                 # Both nohup and & are necessary
                 # nohup sh -c "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
 
-                tmux neww -d "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
+                tmux neww -n pen-ci -d "set -xv; cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
             else
                 "$@" > "$cache_file_path"
             fi
