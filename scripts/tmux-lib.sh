@@ -90,7 +90,7 @@ shpvs() {
         pane_start_command \
         pane_current_command \
         ; do
-        cmd="$(shpv "$v" | s chomp | q)"
+        cmd="$(shpv "$v" | chomp | q)"
         printf -- "%s" "$v: $cmd"
         printf -- "%s\n" 
     done

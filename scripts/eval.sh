@@ -80,7 +80,10 @@ fi
 cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" >> /tmp/lsp.log
 
 # Consider using timeout here
-timeout 5 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
+sentinal_string="tm_sentinal_${RANDOM}_$$"
+# tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinal_string';"
+tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)"); tmux wait-for -S '$sentinal_string';"
+tmux waitfor "$sentinal_string"
 
 # This must be run
 # unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
@@ -102,5 +105,7 @@ if test -s "$fp"; then
 fi
 
 touch ~/.pen/pool/available/$SOCKET
+
+# sleep 1
 # nohup pen-fix-daemon $SOCKET
 # tmux neww -d -n fix-$SOCKET "shx pen-fix-daemon $SOCKET;pak"

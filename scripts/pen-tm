@@ -456,7 +456,7 @@ case "$f" in
     config|fzf-config) {
         exec 2>&4
 
-        selection="$(tm-list-config | mnm | pen-str uniq | pen-soak | mfz -p)"
+        selection="$(tm-list-config | pen-mnm | pen-str uniq | pen-soak | mfz -p)"
 
         ! [ -n "$selection" ] && exit 0
 
@@ -1006,7 +1006,7 @@ case "$f" in
                 echo Fast mode enabled. Not showing open files.
             fi
 
-        } | mnm | {
+        } | pen-mnm | {
             if is_tty || test "$makenewpane" = "nw"; then
                 pen-tm -tout -i -S nw pen-v
             else
