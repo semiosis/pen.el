@@ -57,12 +57,18 @@
 ;; (defvar pen-lsp--config-options `())
 
 ;; Set up for text-mode currently
+;; I want to do all modes
+
+(defset pen-lsp-modes '(text-mode
+                        emacs-lisp-mode
+                        org-mode awk-mode eww-mode
+                        special-mode python-mode
+                        prog-mode))
 
 (lsp-register-client
  (make-lsp-client :new-connection
                   (lsp-stdio-connection 'pen-lsp--server-command)
-                  :major-modes '(org-mode text-mode eww-mode
-                                          awk-mode)
+                  :major-modes pen-lsp-modes
                   :server-id 'pen
                   :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
@@ -340,6 +346,7 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 (add-to-list 'lsp-language-id-configuration `(org-mode . "org"))
 (add-to-list 'lsp-language-id-configuration `(awk-mode . "awk"))
 (add-to-list 'lsp-language-id-configuration `(eww-mode . "global"))
+(add-to-list 'lsp-language-id-configuration `(emacs-lisp-mode . "global"))
 (add-to-list 'lsp-language-id-configuration `(special-mode . "global"))
 (add-to-list 'lsp-language-id-configuration `(python-mode . "global"))
 (add-to-list 'lsp-language-id-configuration `(prog-mode . "global"))
