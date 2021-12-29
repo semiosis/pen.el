@@ -51,6 +51,7 @@
 (require 'pen-autosuggest)
 (require 'pen-shackle)
 (require 'pen-translation-map)
+(require 'helm-fzf)
 (require 'pen-helm-fzf)
 (require 'helpful)
 

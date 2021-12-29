@@ -43,7 +43,6 @@
 (require 'pp)
 (require 'yaml)
 (require 'which-key)
-(require 'helm-fzf)
 (require 'lispy)
 ;; (require 'handle)
 (require 's)
