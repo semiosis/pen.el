@@ -17,8 +17,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-# Disable this until I have bind mount handling with the host
-if false && { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
+if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
     # pen sh pen-lsp "$@"
     # docker exec pen pen-lsp "$@"
     docker exec -i pen sh -c ". /root/.emacs.d/pen.el/scripts/setup-term.sh; pen-lsp"
@@ -31,10 +30,8 @@ test -f "/root/.emacs.d/pen.el/config/efm-langserver-config.yaml" && : "${efm_co
 
 ln -sf "$efm_config" $HOME/.config/efm-langserver/config.yaml
 
-if inside-docker-p; then
-    set -m
-    unbuffer pen-e sa &>/dev/null &>/dev/null &
-    wait
-fi
+set -m
+unbuffer pen-e sa &>/dev/null &>/dev/null &
+wait
 
 efm-langserver "$@"
