@@ -6,7 +6,7 @@ stty stop undef; stty start undef
 
 exec 0</dev/null
 
-set -xv
+# set -xv
 
 # Debian10 run Pen
 
