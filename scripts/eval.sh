@@ -75,7 +75,7 @@ export USE_POOL
 cat "$fp" 2>/dev/null
 
 IFS= read -r -d '' shcode <<HEREDOC
-pen-fix-daemon
+pen-fix-daemon "$SOCKET"
 sleep 0.2
 
 if test "$USE_POOL" = "y"; then
