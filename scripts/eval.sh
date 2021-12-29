@@ -82,7 +82,7 @@ cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-h
 # Consider using timeout here
 # sentinel_string="tm_sentinel_${RANDOM}_$$"
 # tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
-unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)"
+unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
 
 # tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s /root/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
 # tmux waitfor "$sentinel_string"
@@ -100,7 +100,7 @@ export USE_POOL
 
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
 if test -s "$fp"; then
-    exec 0</dev/null cat "$fp" 2>/dev/null
+    0</dev/null cat "$fp" 2>/dev/null
 # else
 #     # I might need to return something to appease buffered prompters
 #     echo
