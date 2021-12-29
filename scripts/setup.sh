@@ -355,3 +355,5 @@ agi colorized-logs
 apt install parallel
 
 ln -sf ~/.emacs.d/host/pen.el/config/efm-langserver-config.yaml ~/.config/efm-langserver/config.yaml
+
+agi silversearcher-ag
