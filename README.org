@@ -25,6 +25,10 @@ development, discovery and usage of prompts.
 
 It's completely free, libre and open-source.
 
+"One LSP server to rule all the languages! And in the darkness bind them."
+
+https://semiosis.github.io/posts/a-prompting-lsp-server-for-any-language-or-context-using-large-language-models/
+
 ** The pen of imagination
 
 [[./docs/images/the_pen_of_imagination.png]]
