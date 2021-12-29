@@ -51,6 +51,7 @@
 (require 'pen-autosuggest)
 (require 'pen-shackle)
 (require 'pen-translation-map)
+(require 'pen-helm-fzf)
 (require 'helpful)
 
 ;; Not sure I need the following in pen.el
