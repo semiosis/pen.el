@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+cd ~/.pen/pool/available
+watch -n 0.2 ls
