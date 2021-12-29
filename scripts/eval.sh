@@ -72,47 +72,28 @@ fp="/tmp/eval-output-${SOCKET}.txt"
 if ! test -s "$fp"; then
     rm -f "$fp"
 fi
-# Can't use cmd because elisp doesn't use single quote for strings
-# cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" | tee /dev/stderr >> /tmp/lsp.log
-
-# I don't need tmux here, as I don't need a frame.
-# But I must wait.
-cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" >> /tmp/lsp.log
 
 # Consider using timeout here
 sentinel_string="tm_sentinel_${RANDOM}_$$"
-# cmd tmux neww -d -n eval-ec-$SOCKET "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"| pen-tv &>/dev/null
+# unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"
 tmux neww -d -n eval-ec-$SOCKET "$(cmd timeout 10 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
-# tmux neww -d -n eval-ec-$SOCKET "$(cmd unbuffer emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"$HOME/.pen/pool/available/$SOCKET\" $last_arg)"); sleep 10;"
-# unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
-# tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s /root/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
-
-# echo "$sentinel_string" | pen-tv &>/dev/null
 tmux wait-for "$sentinel_string"
-
-# date | pen-tv &>/dev/null
-
-# This must be run
-# unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
-# These hang sometimes. I want to know why.
-
-# Fix the frame. This works, but it's a dodgy hack
-# tmux neww -d emacsclient -t -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg)(pen-kill-other-clients t))"
-# unbuffer timeout 3 emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(progn (pen-eval-for-host \"$fp\" $last_arg))" &>/dev/null
 
 export SOCKET
 export USE_POOL
 
+# sleep 1
+
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
 if test -s "$fp"; then
     0</dev/null cat "$fp" 2>/dev/null
-# else
-#     # I might need to return something to appease buffered prompters
-#     echo
 fi
 
 # touch ~/.pen/pool/available/$SOCKET
 
 # sleep 1
 # nohup pen-fix-daemon $SOCKET
-tmux neww -d -n fix-$SOCKET "shx pen-fix-daemon $SOCKET"
+
+if test "$USE_POOL" = "y"; then
+    tmux neww -d -n fix-$SOCKET "shx pen-fix-daemon $SOCKET"
+fi
