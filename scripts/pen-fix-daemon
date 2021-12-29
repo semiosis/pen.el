@@ -8,4 +8,11 @@ test -n "$SOCKET" || exit 1
 # What a dirty hack.
 # tmux neww -d pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -sl 0.2 -m : -s "(delete-frame)" -c m -i
 
-pen-tm nw -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(delete-frame)" -c m -i
+ID_FORMAT="#{session_id}:#{window_id}.#{pane_id}"
+
+winname="prompt-$SOCKET-$(date +%s)"
+# ; tmux kill-window -t '$ID_FORMAT'
+# Adding -F seems to make the nw disconnect
+# -F "$ID_FORMAT" -P
+# id="$()"
+pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(pen-kill-other-clients t)" -c m -i
