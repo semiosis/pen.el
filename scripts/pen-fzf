@@ -1,8 +1,9 @@
 #!/bin/bash
 # export TTY="$(tty)"
 
-# export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+
+# export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
 # export FZF_DEFAULT_COMMAND="find . -maxdepth 1 -printf '%P\n'"
 
 
@@ -162,5 +163,4 @@ bindings="$(p "$bindings" | sed 's/.$//')"
 opts+=" --bind=$(cmd-nice-posix "$bindings") "
 # opts+=" --bind=$(cmd-nice-posix-nice "$bindings") "
 
-# printf -- "%s\n" "alt -s fzf --algo=v2 $opts $CMD" | pen-tv &>/dev/null
-eval "alt -s fzf --algo=v2 $opts $CMD"
+eval "fzf --algo=v2 $opts $CMD"
