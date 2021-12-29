@@ -1648,4 +1648,33 @@ This function accepts any number of ARGUMENTS, but ignores them."
                         (frame-list)))))
       (delete-process p))))
 
+(defun dired-here ()
+  (interactive)
+  (dired "."))
+
+(defun pen-columnate-window (&optional max-cols)
+  (interactive)
+  (delete-other-windows)
+  (setq max-cols (or max-cols 100))
+  (setq max-cols (- max-cols 1))
+  (let ((w (+ (/ (frame-width) 80) 0)))
+    (if (> w max-cols)
+        (setq w max-cols))
+    (dotimes (i w)
+      (split-window-right))
+    (balance-windows)
+    (follow-mode)))
+
+(defalias 'pen-get-top-level 'projectile-project-root)
+
+(defun pen-cd-vc-cd-top-level ()
+  (interactive)
+  (dired (pen-get-top-level)))
+
+(defun dired-here-columnate ()
+  (interactive)
+  (with-current-buffer
+      (dired ".")
+    (pen-columnate-window 2)))
+
 (provide 'pen-support)

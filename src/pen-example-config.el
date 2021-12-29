@@ -780,4 +780,9 @@
 
 (define-key global-map (kbd "C-x t e") 'toggle-debug-on-error)
 
+(define-key global-map (kbd "M-^") 'pen-cd-vc-cd-top-level)
+
+(define-key pen-map (kbd "M-\"") 'pen-helm-fzf)
+(define-key pen-map (kbd "M-U") 'dired-here)
+
 (provide 'pen-example-config)
