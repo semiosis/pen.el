@@ -111,8 +111,8 @@ if test -s "$fp"; then
 #     echo
 fi
 
-touch ~/.pen/pool/available/$SOCKET
+# touch ~/.pen/pool/available/$SOCKET
 
 # sleep 1
 # nohup pen-fix-daemon $SOCKET
-# tmux neww -d -n fix-$SOCKET "shx pen-fix-daemon $SOCKET;pak"
+tmux neww -d -n fix-$SOCKET "shx pen-fix-daemon $SOCKET"
