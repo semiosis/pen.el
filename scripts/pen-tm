@@ -2739,7 +2739,7 @@ case "$f" in
         esac; done
 
         if test "$NOCONTEXT" = "y"; then
-            pen-shpv "pane_start_command" | pen-tv| {
+            pen-shpv "pane_start_command" | {
                 sed -e 's/^.*start undef;\s\+//' -e 's/\s*;\s*ret=.*$//'
             } | pen-xc -i -n
         else
