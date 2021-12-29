@@ -1,0 +1,3 @@
+#!/bin/bash
+
+yq -r "$@" $HOME/.pen/pen.yaml

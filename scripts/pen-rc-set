@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+# pen-rc-set n-daemons 10
+
+key="$1"
+test -n "$key" || exit 1
+shift
+
+value="$1"
+test -n "$value" || exit 1
+shift
+
+# ns "$value"
+
+key="$(printf -- "%s" "$key" | qne)"
+
+if printf -- "%s\n" "$value" | grep -q -P '[ "$#]'; then
+    value="$(p "$value" | q)"
+else
+    value="$(printf -- "%s" "$value" | qne)"
+fi
+
+sed -i "/^$key: \([^ ]\+\)/{s/^\($key: \)\(.*\)$/\1$value/}" ~/.pen/pen.yaml

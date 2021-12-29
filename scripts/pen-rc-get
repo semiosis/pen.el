@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# pen-rc-get n-daemons
+
+key="$1"
+
+yq -r ".[$(cmd-nice-posix "$key")]" ~/.pen/pen.yaml
