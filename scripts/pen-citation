@@ -43,4 +43,4 @@ please cite:
 (Feel free to use \nocite{Tange2011a})
 HEREDOC
 
-printf -- "%s\n" "$citation"
+printf -- "%s\n" "$citation" | less -S +F
