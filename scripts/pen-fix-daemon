@@ -24,3 +24,7 @@ sleep 3
 emacsclient -a '' -s $HOME/.emacs.d/server/$SOCKET -e "(pen-kill-other-clients t)"
 # sleep 0.5
 # pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(pen-kill-other-clients t)" -c m -i
+
+if unbuffer pen-e -D $SOCKET running; then
+    touch ~/.pen/pool/available/$SOCKET
+fi
