@@ -939,7 +939,7 @@ case "$f" in
     ;;
 
     shpvs|show-pane-variables) {
-        shpvs
+        pen-shpvs
     }
     ;;
 
@@ -971,7 +971,7 @@ case "$f" in
         fi
 
         {
-            shpvs -t "$TMUX_PANE"
+            pen-shpvs -t "$TMUX_PANE"
 
             pl
 

@@ -63,7 +63,7 @@ tpwd() {
 shpv() {
     varname="$1"; : ${varname:="pane_start_command"}
     tmux display -t "$CALLER_TARGET" -p "#{$varname}"
-    # printf -- "%s\n" 
+    # printf -- "%s\n"
 }
 
 shpvs() {
@@ -92,7 +92,7 @@ shpvs() {
         ; do
         cmd="$(shpv "$v" | chomp | q)"
         printf -- "%s" "$v: $cmd"
-        printf -- "%s\n" 
+        printf -- "%s\n"
     done
     # )"
     # lit "$out"
