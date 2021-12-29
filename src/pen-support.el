@@ -1627,4 +1627,19 @@ This function accepts any number of ARGUMENTS, but ignores them."
     (xc (car (last ms)) nil)
     (message (pp-to-string ms))))
 
+(defun pen-kill-other-clients (&optional including-this-client)
+  "Kills the emacsclient frames for clients"
+  (interactive)
+  (let ((this-frame (selected-frame)))
+    (dolist (p
+             (-filter 'identity
+                      (mapcar
+                       (lambda (f)
+                         (frame-parameter f 'client))
+                       (-filter
+                        (lambda (f) (or including-this-client
+                                        (not (equal this-frame f))))
+                        (frame-list)))))
+      (delete-process p))))
+
 (provide 'pen-support)

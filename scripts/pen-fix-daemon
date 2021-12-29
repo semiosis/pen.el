@@ -4,6 +4,10 @@ export TTY
 SOCKET="$1"
 test -n "$SOCKET" || exit 1
 
+if printf -- "%s\n" "$SOCKET" | grep -q -P '^[0-9]$'; then
+    SOCKET="pen-emacsd-$SOCKET"
+fi
+
 # This refreshes it after prompting
 # What a dirty hack.
 # tmux neww -d pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -sl 0.2 -m : -s "(delete-frame)" -c m -i
@@ -15,4 +19,8 @@ winname="prompt-$SOCKET-$(date +%s)"
 # Adding -F seems to make the nw disconnect
 # -F "$ID_FORMAT" -P
 # id="$()"
-pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(pen-kill-other-clients t)" -c m -i
+pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.5 -c g -sl 1 -m : -sl 1 -s "(pen-kill-other-clients t)" -c m -i
+# sleep 0.5
+# emacsclient -a '' -s $HOME/.emacs.d/server/$SOCKET -e "(pen-kill-other-clients t)"
+# sleep 0.5
+# pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(pen-kill-other-clients t)" -c m -i

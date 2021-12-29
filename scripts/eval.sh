@@ -82,9 +82,9 @@ if test "$USE_POOL" = "y"; then
     (
         # Maybe interacting with it makes sure it's ready
         # pen-e -D $SOCKET -fs
-        # unbuffer pen-e -D $SOCKET running
-
-        touch ~/.pen/pool/available/$SOCKET
+        if unbuffer pen-e -D $SOCKET running; then
+            touch ~/.pen/pool/available/$SOCKET
+        fi
     )
 fi
 HEREDOC
