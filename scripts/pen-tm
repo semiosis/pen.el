@@ -928,7 +928,7 @@ case "$f" in
     ;;
 
     shpv|show-pane-variable) {
-        shpv "$1"
+        pen-shpv "$1"
     }
     ;;
 
@@ -2739,11 +2739,11 @@ case "$f" in
         esac; done
 
         if test "$NOCONTEXT" = "y"; then
-            shpv "pane_start_command" | {
+            pen-shpv "pane_start_command" | pen-tv| {
                 sed -e 's/^.*start undef;\s\+//' -e 's/\s*;\s*ret=.*$//'
             } | pen-xc -i -n
         else
-            shpv "pane_start_command" | pen-xc -i -n
+            pen-shpv "pane_start_command" | pen-xc -i -n
         fi
     }
     ;;
