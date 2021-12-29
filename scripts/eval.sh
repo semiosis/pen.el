@@ -82,7 +82,7 @@ cmd1 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-h
 # Consider using timeout here
 sentinel_string="tm_sentinel_${RANDOM}_$$"
 # cmd tmux neww -d -n eval-ec-$SOCKET "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"| pen-tv &>/dev/null
-tmux neww -d -n eval-ec-$SOCKET "$(cmd unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
+tmux neww -d -n eval-ec-$SOCKET "$(cmd timeout 10 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
 # tmux neww -d -n eval-ec-$SOCKET "$(cmd unbuffer emacsclient -a "" -s $HOME/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"$HOME/.pen/pool/available/$SOCKET\" $last_arg)"); sleep 10;"
 # unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)" &>/dev/null
 # tmux neww -d -n eval-emacsclient "$(cmd unbuffer emacsclient -a "" -s /root/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" $last_arg)"); tmux wait-for -S '$sentinel_string';"

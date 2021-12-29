@@ -1,5 +1,5 @@
 #!/bin/bash
-set -vx
+# set -vx
 
 # If mac
 # --env="DISPLAY=host.docker.internal:0"
