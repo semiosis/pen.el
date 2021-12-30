@@ -65,7 +65,7 @@
                  (and
                   (not pen-prompt-force-engine-disabled)
                   (sor ,force-engine))
-                 pen-force-engine
+                 (sor pen-force-engine)
                  (pen-var-value-maybe 'engine)
                  ,engine)))
 
@@ -644,10 +644,10 @@
                   final-default-temperature))))
 
           (defs-varvals
-           (asoc-merge
-            '((func-name . ,func-name))
-            final-subprompts-al
-            (-zip-fill nil ',var-syms vals)))
+            (asoc-merge
+             '((func-name . ,func-name))
+             final-subprompts-al
+             (-zip-fill nil ',var-syms vals)))
 
           (final-defs
            (cl-loop
@@ -1358,10 +1358,10 @@
                               (let* ((processed-results
                                       (-flatten
                                        (->>
-                                         (append (glob (concat rd "/split*_*"))
-                                                 (glob (concat rd "/results*/split*_*"))
-                                                 (glob (concat rd "/res*.txt"))
-                                                 (glob (concat rd "/results*/res*.txt")))
+                                           (append (glob (concat rd "/split*_*"))
+                                                   (glob (concat rd "/results*/split*_*"))
+                                                   (glob (concat rd "/res*.txt"))
+                                                   (glob (concat rd "/results*/res*.txt")))
                                          (-filter 'string-not-empty-nor-nil-p)
                                          (-filter 'f-exists-p)
                                          (mapcar 'e/cat)
@@ -1492,10 +1492,10 @@
                             (sor final-postpostprocessor))
                        (mapcar
                         (lambda (r) (if (and final-postpostprocessor (sor final-postpostprocessor))
-                                      (pen-sn (concat
-                                               (sh-construct-envs (pen-alist-to-list `(("FINAL_PROMPT" . ,final-prompt))))
-                                               " "
-                                               final-postpostprocessor) r)
+                                        (pen-sn (concat
+                                                 (sh-construct-envs (pen-alist-to-list `(("FINAL_PROMPT" . ,final-prompt))))
+                                                 " "
+                                                 final-postpostprocessor) r)
                                       r))
                         results)
                      results))
