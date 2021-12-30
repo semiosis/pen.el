@@ -1,9 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
+
 if stdin_exists; then
+    export USING_STDIN=y
+
     tf_thing="$(0</dev/null pen-tf thing || echo /dev/null)"
     # This chomp prevents hangs when piping a single space into a prompt function
     cat | sed -z 's/^\s*$//' > "$tf_thing"
@@ -59,7 +62,7 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
         if test "$asynchronous" = "y"; then
             # TODO Put a delay before this is allowed to run again
 
-            if stdin_exists; then
+            if test "$USING_STDIN" = y; then
                 CMD="$(cmd "$@")"
                 # date
                 # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path"
@@ -68,9 +71,9 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
                 # Both nohup and & are necessary
                 # nohup sh -c "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
 
-                tmux neww -n pen-ci -d "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
+                nohup tmux neww -n pen-ci -d "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
             else
-                "$@" | tee "$cache_file_path"
+                "$@" > "$cache_file_path" &
             fi
         else
             "$@" | tee "$cache_file_path"
