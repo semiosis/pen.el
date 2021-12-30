@@ -82,6 +82,9 @@ tmux wait-for "$sentinel_string"
 export SOCKET
 export USE_POOL
 
+# Can't remove this sleep yet.
+# Do this to test.
+# cd "$NOTES"; penf -u pf-very-witty-pick-up-lines-for-a-topic/1 imagination
 sleep 0.1
 
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
