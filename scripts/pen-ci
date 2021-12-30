@@ -68,12 +68,12 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
                 # Both nohup and & are necessary
                 # nohup sh -c "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
 
-                tmux neww -n pen-ci -d "set -xv; cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
+                tmux neww -n pen-ci -d "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
             else
-                "$@" > "$cache_file_path"
+                "$@" | tee "$cache_file_path"
             fi
         else
-            "$@" > "$cache_file_path"
+            "$@" | tee "$cache_file_path"
         fi
     fi
 else
