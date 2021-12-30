@@ -82,7 +82,7 @@ tmux wait-for "$sentinel_string"
 export SOCKET
 export USE_POOL
 
-# sleep 1
+sleep 0.1
 
 # I need to hide the fact that it failed. Otherwise, I can't cancel comint commands without polluting the repl
 if test -s "$fp"; then
