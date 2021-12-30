@@ -186,14 +186,23 @@ tmpdir=~/.pen/temp
 mkdir -p "$tmpdir"
 } &>/dev/null
 
+# Actually, do not use pen-ci to cache here, yet.
+# I would need to get a sha of all environment variables first.
+# TODO For relevent environment variables, compute a sha for those and export the sha from elisp
+# Don't compute the sha here
+
 if test -n "$PEN_N_JOBS" && ! test "$PEN_N_JOBS" = 1; then
     mkdir -p "$PEN_GEN_DIR"
 
     # If I run the jobs with tmux then I can use the human engine
 
     # Do all of them in parallel
+    #pen-ci "$PEN_LM_COMMAND" | awk 1 | while IFS=$'\n' read -r result_dir; do
+    #    mv "$result_dir" "$PEN_GEN_DIR/"
+    #done &>/dev/null
     for (( i = 1; i < "$PEN_N_JOBS"; i++ )); do
-        cmd-nice-posix pen-ci "$PEN_LM_COMMAND" | awk 1
+        # cmd-nice-posix pen-odn pen-ci --enabled= "$PEN_CACHE" "$PEN_LM_COMMAND" | awk 1
+        cmd-nice-posix "$PEN_LM_COMMAND" | awk 1
         continue
     done | parallel -j "$PEN_N_JOBS" | awk 1 | while IFS=$'\n' read -r result_dir; do
         mv "$result_dir" "$PEN_GEN_DIR/"
@@ -204,6 +213,7 @@ elif test "$LM_COMPLETE_DEBUG" = y; then
     "$PEN_LM_COMMAND"
 else
     ## pen-ci will possibly cache/memoize the command
-    pen-ci "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
+    # pen-ci "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
+    "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
     cat "$tmpdir/lm-complete-stdout.txt"
 fi

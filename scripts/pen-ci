@@ -17,10 +17,28 @@ fi
 
 # ci means "cache it"
 
+IGNORE_DIR=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    -nd) {
+        IGNORE_DIR=y
+        shift
+    }
+    ;;
+
     -a) {
         asynchronous=y
+        shift
+    }
+    ;;
+
+    -m|-meta) {
+        EXTRA_METADATA="_$2"
+
+        # Great for environment variables
+        # Otherwise, env vars are ingored
+        # ci -meta "$BASENAME" org clink "$@"
+        shift
         shift
     }
     ;;
@@ -37,11 +55,24 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    --enabled=) {
+        PEN_CACHE="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
+getpwd() {
+    test "$IGNORE_DIR" = "y" || pwd
+}
+
+wdmd5="_$(printf -- "%s\n" "$(getpwd)$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1)"
+
 # This must come after the initial arguments
-cache_file_path="/tmp/pen-$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify)$sha.txt"
+cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify)$sha.txt"
 
 age() {
     fileMod="$(stat -c %Y -- "$1")"
