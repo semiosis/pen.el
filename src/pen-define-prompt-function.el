@@ -14,6 +14,11 @@
 
 ;; (comment (pen-split-macro-test))
 
+;; I don't like this either
+;; But I have introduced global state for pen-prompt-snc so I can memoize the function without
+;; this particular state triggering an update
+(defvar pen-snc-ignored-envs nil)
+
 (defmacro pen-define-prompt-function-pipeline ()
   `(let* (;; Keep in mind this both updates memoization and the bash cache
 
@@ -35,8 +40,11 @@
             do-pen-update))
 
           (cache
-           (and (not do-pen-update)
-                (pen-var-value-maybe 'cache)))
+           (or (pen-var-value-maybe 'cache)
+                    ,cache)
+           ;; (and (not do-pen-update)
+           ;;      )
+           )
 
           (do-pen-batch
            (pen-var-value-maybe 'do-pen-batch))
@@ -1242,7 +1250,9 @@
                     ("PEN_FLAGS" . ,final-flags)
                     ;; 'best of' IS 'top k'
                     ;; ("PEN_BEST_OF" . ,final-best-of)
-                    ("PEN_CACHE" . ,cache)
+                    ("PEN_CACHE" . ,(if cache "y" ""))
+                    ;; This is also handled by default in pen-sn
+                    ("UPDATE" . ,(if pen-sh-update "y" ""))
                     ("PEN_USER_AGENT" . ,pen-user-agent)
                     ("PEN_TRAILING_WHITESPACE" . ,trailing-whitespace)
                     ("PEN_N_COMPLETIONS" . ,(str final-n-completions))
@@ -1253,9 +1263,6 @@
                     ("PEN_END_POS" . ,end-pos)
                     ("PEN_N_JOBS" . ,final-n-jobs)
                     ("PEN_SEARCH_THRESHOLD" . ,final-search-threshold)
-                    ("PEN_GEN_UUID" . ,gen-id)
-                    ("PEN_GEN_TIME" . ,gen-time)
-                    ("PEN_GEN_DIR" . ,gen-dir)
                     ;; ("PEN_QUERY_POS" . ,query-pos)
                     ("PEN_INJECT_GEN_START" . ,(pen-encode-string final-inject-gen-start t)))))
              (setq pen-last-prompt-data
@@ -1268,6 +1275,17 @@
              data
              ;; data
              ))
+
+          ;; This data does not contribute to memoisation
+          (ignored-data
+           (let ((data
+                  ;; The prompt loses unicode here. I think I need to convert to base64 maybe
+                  ;; And if I do, put it just outside pen-encode-string
+                  `(
+                    ("PEN_GEN_UUID" . ,gen-id)
+                    ("PEN_GEN_TIME" . ,gen-time)
+                    ("PEN_GEN_DIR" . ,gen-dir))))
+             data))
 
           (tempa
            (let ((le (pen-log (eval `(pen-cmd "penf" "-u" (sym2str ',',func-sym) ,@last-vals-exprs))))
@@ -1297,28 +1315,41 @@
                     (progn
                       (message (concat ,func-name " query " (int-to-string i) "..."))
                       ;; TODO Also handle PEN_N_COMPLETIONS
-                      (let* ((ret (pen-prompt-snc
-                                   (pen-log
-                                    (s-join
-                                     " "
-                                     (list
-                                      ;; ;; This actually interfered with the memoization!
-                                      ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
-                                      ;;   (if updval
-                                      ;;       (concat
-                                      ;;        "export "
-                                      ;;        (sh-construct-envs '(("UPDATE" "y")))
-                                      ;;        "; ")))
-
-                                      ;; All parameters are sent as environment variables
+                      (let* ((ret
+                              (progn
+                                (setq pen-snc-ignored-envs
                                       (sh-construct-envs
                                        ;; This is a bit of a hack for \n in prompts
                                        ;; See `pen-restore-chars`
-                                       (append (pen-alist-to-list final-envs)
-                                               `(("ALSO_EXPORT" ,(sh-construct-envs (pen-alist-to-list final-envs))))
-                                               (pen-alist-to-list collation-data)))
-                                      ;; Currently always updating
-                                      "lm-complete"))) i)))
+                                       (pen-alist-to-list ignored-data)))
+                                (pen-prompt-snc
+                                 (pen-log
+                                  (s-join
+                                   " "
+                                   (list
+                                    ;; ;; This actually interfered with the memoization!
+                                    ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
+                                    ;;   (if updval
+                                    ;;       (concat
+                                    ;;        "export "
+                                    ;;        (sh-construct-envs '(("UPDATE" "y")))
+                                    ;;        "; ")))
+
+                                    ;; All parameters are sent as environment variables
+                                    (sh-construct-envs
+                                     ;; This is a bit of a hack for \n in prompts
+                                     ;; See `pen-restore-chars`
+                                     (append (pen-alist-to-list final-envs)
+                                             `(("ALSO_EXPORT" ,(sh-construct-envs (pen-alist-to-list final-envs))))
+                                             (pen-alist-to-list collation-data)))
+                                    ;; Currently always updating
+                                    "lm-complete")))
+                                 i
+
+                                 ;; I'm also using memoization of pen-prompt-snc
+                                 ;; cache
+                                 ;; pen-sh-update
+                                 ))))
 
                         (message (concat ,func-name " done " (int-to-string i)))
                         ret))
@@ -1623,9 +1654,9 @@
 ;; to `run-prompt-function-initial-transient` the var vals read interactively
 ;; along with
 
-(defun run-prompt-function-initial-transient ()
+;; (defun run-prompt-function-initial-transient ()
 
-  )
+;;   )
 
 (defun define-prompt-function ()
   (eval
@@ -2385,7 +2416,9 @@ Function names are prefixed with pf- for easy searching"
 
                              ;; Using memoization here is the more efficient way to memoize.
                              ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
+                             ;; memoizing a function removes its interactivity
                              ;; (if cache (memoize funcsym))
+                             ;; (if cache (memoize-restore funcsym))
                              )))
                      (message (concat "pen-mode: Loaded prompt function " func-name)))
                    (add-to-list 'pen-prompts-failed path))))
@@ -2398,6 +2431,7 @@ Function names are prefixed with pf- for easy searching"
            (progn
              (message "failed:")
              (message (pen-list2str pen-prompts-failed))
-             (message (concat (str (length pen-prompts-failed)) " failed"))))))))
+             (message (concat (str (length pen-prompts-failed)) " failed")))))))
+  (pen-delay-memoise))
 
 (provide 'pen-define-prompt-function)

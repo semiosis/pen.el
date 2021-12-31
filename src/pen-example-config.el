@@ -221,9 +221,17 @@
   (interactive)
   (run-with-timer 1 nil 'pen-default-add-keys))
 
+(defun pen-delay-memoise ()
+  (interactive)
+  (memoize-restore 'pen-prompt-snc)
+  (memoize 'pen-prompt-snc))
+
 ;; (add-hook 'after-make-frame-functions 'pen-default-add-keys)
 (add-hook 'after-init-hook 'pen-delay-add-keys)
 (add-hook 'after-init-hook 'pen-acolyte-scratch)
+(add-hook 'after-init-hook 'pen-load-config t)
+(add-hook 'after-init-hook 'pen-delay-memoise)
+
 (add-hook 'after-init-hook 'pen-load-config t)
 
 (define-key pen-map (kbd "C-c n") #'nbfs)

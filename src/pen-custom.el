@@ -87,11 +87,6 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
-;; Changing the memo prefix should also rememoize
-;; It's like changing the database
-;; (memoize-restore 'pen-prompt-snc)
-;; (memoize 'pen-prompt-snc)
-
 (defcustom pen-libre-only nil
   "Only use libre engines"
   :type 'boolean

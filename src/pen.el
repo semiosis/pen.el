@@ -630,11 +630,26 @@ Reconstruct the entire yaml-ht for a different language."
            s)))
     s))
 
-(defun pen-prompt-snc (cmd resultnumber)
+;; This function is also memoized
+(defun pen-prompt-snc (cmd resultnumber
+                           ;; &optional docache update
+                           )
   "This is like pen-snc but it will memoize the function. resultnumber is necessary because we want n unique results per function"
+  ;; (tv cmd)
+
+  (setq cmd (concat pen-snc-ignored-envs " " cmd))
+
   (if (f-directory-p penconfdir)
       (tee (f-join penconfdir "last-final-command.txt") cmd))
-  (pen-snc cmd))
+
+  ;; These extra envs can slip into the function without affecting the memoisation
+  ;; (pen-snc (tv (concat (sh-construct-envs (pen-var-value-maybe 'ignored-envs)) " " cmd)))
+  (pen-snc (concat pen-snc-ignored-envs " " cmd))
+
+  ;; (if docache
+  ;;     (pen-ci (pen-snc cmd) t)
+  ;;   (pen-snc cmd))
+  )
 
 (defun pen-list2cmd (l)
   (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))))
@@ -1894,7 +1909,7 @@ May use to generate code from comments."
          (al (eval-string sel))
          (vals (eval-string (concat "'" (cdr (assoc "PEN_VALS" al)))))
          (orig-inject-text (pen-decode-string (cdr (assoc "PEN_INJECT_GEN_START" al))))
-         ;; string-bytes was tricky to find 
+         ;; string-bytes was tricky to find
          (orig-inject-len (string-bytes orig-inject-text))
          (prompt (pen-decode-string (cdr (assoc "PEN_PROMPT" al))))
          (prompt-length (length prompt))
