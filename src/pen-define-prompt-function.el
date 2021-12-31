@@ -63,19 +63,14 @@
           ;; based on this value
           ;; Currently, this is inert.
           (final-engine
-           ;; (expand-template
-           ;;  (str (or
-           ;;        ,force-engine
-           ;;        pen-force-engine
-           ;;        (pen-var-value-maybe 'engine)
-           ;;        ,engine)))
            (str (or
                  (and
                   (not pen-prompt-force-engine-disabled)
                   (sor ,force-engine))
                  (sor pen-force-engine)
                  (pen-var-value-maybe 'engine)
-                 ,engine)))
+                 ,engine
+                 "OpenAI Codex")))
 
           (final-temperature)
           (final-lm-command)
