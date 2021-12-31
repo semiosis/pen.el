@@ -191,6 +191,11 @@ mkdir -p "$tmpdir"
 # TODO For relevent environment variables, compute a sha for those and export the sha from elisp
 # Don't compute the sha here
 
+if ! test -n "$PEN_GEN_DIR"; then
+    echo PEN_GEN_DIR not specified 1>&2
+    exit
+fi
+
 if test -n "$PEN_N_JOBS" && ! test "$PEN_N_JOBS" = 1; then
     mkdir -p "$PEN_GEN_DIR"
 

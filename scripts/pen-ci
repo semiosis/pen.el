@@ -50,7 +50,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -u) {
-        update=y
+        UPDATE=y
         shift
     }
     ;;
@@ -86,7 +86,7 @@ age() {
 if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
     if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && test "$(age "$cache_file_path")" -lt "$RETRY_TIMEOUT"; then
         exit 0
-    elif test -f "$cache_file_path" && test -s "$cache_file_path" && ! test "$update" = y; then
+    elif test -f "$cache_file_path" && test -s "$cache_file_path" && ! test "$UPDATE" = y; then
         cat "$cache_file_path"
     else
         rm -f "$cache_file_path"
