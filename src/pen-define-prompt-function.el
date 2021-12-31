@@ -89,7 +89,8 @@
           ;; And with final-force-engine, only override final-model, final-temperature and final-lm-command.
           ;; Don't override final-'force'-model, etc.
           (final-engine
-           (let* ((engine (ht-get pen-engines final-engine))
+           (let* ((engine (sor (ht-get pen-engines final-engine)
+                               "OpenAI Codex"))
                   (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
                   (vals (ht-values engine))
                   (tups (-zip-lists keys vals))
