@@ -41,7 +41,10 @@ export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 
 last_arg="${@: -1}"
-last_arg="$(p "$last_arg" | pen-bs '\\')"
+last_arg="$(p "$last_arg" | pen-str unonelineify-safe)"
+# last_arg="$(p "$last_arg" | pen-bs '\\')"
+
+# echo "$last_arg" > /tmp/yo.txt
 
 shopt -s nullglob
 if test "$USE_POOL" = "y"; then

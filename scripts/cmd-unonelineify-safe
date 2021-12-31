@@ -1,0 +1,11 @@
+#!/bin/sh
+export TTY
+
+cmd-unonelineify-safe() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | pen-str unonelineify-safe)";
+    done | sed 's/ $//'
+}
+
+cmd-unonelineify-safe "$@"

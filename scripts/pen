@@ -496,6 +496,20 @@ cmd() {
     done | sed 's/ $//'
 }
 
+cmd-onelineify-safe() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | pen-str onelineify-safe)";
+    done | sed 's/ $//'
+}
+
+cmd-unonelineify-safe() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | pen-str unonelineify-safe)";
+    done | sed 's/ $//'
+}
+
 cmd-nice() {
     # TODO Check for builtin
     # cmd-nice-jq
@@ -1246,7 +1260,7 @@ HEREDOC
         # Test quotes:
         # pena --temp 0.9 -u pf-very-witty-pick-up-lines-for-a-topic/1 "new \"zealand" | jq-list-to-lines
 
-        evalcommand="$(cmd-nice "$(cmd-nice eval "$(cmd-nice "$remote_cmd" "$@")")")"
+        evalcommand="$(cmd-nice "$(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
 docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
 HEREDOC
