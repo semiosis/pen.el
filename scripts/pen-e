@@ -196,6 +196,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         for i in $(seq 1 $n); do
             pool_socket="pen-emacsd-$i"
             cmd1 pen-e -D "$pool_socket" sd 1>&2
+            # Use gnu parallel  to start all daemons at once
             pen-e -D "$pool_socket" sd
             if pen-e -D "$pool_socket" running; then
                 touch ~/".pen/pool/available/$pool_socket"
