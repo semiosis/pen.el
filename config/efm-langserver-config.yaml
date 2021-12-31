@@ -243,6 +243,11 @@ languages:
     - <<: *pen-world-language-completion
     - <<: *glossary1
 
+  global:
+    - <<: *pen-world-language
+    - <<: *pen-world-language-completion
+    - <<: *glossary1
+
   org:
     - <<: *pen-world-language
     - <<: *pen-world-language-completion
