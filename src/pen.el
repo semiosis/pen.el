@@ -1298,20 +1298,6 @@ But use the results-analyser."
   (let ((overrides
          (flatten-once
           (list
-           ;; (if (sor pen-force-engine)
-           ;;     (progn
-           ;;       (pen-log (concat "Custom forcing engine: " pen-force-engine))
-           ;;       (pen-log "Custom forcing engine n-completions")
-           ;;       (pen-log "Custom forcing engine model")
-           ;;       (pen-log "Custom orcing engine all keys etc.")
-           ;;       (let* ((engine (ht-get pen-engines pen-force-engine))
-           ;;              (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
-           ;;              (vals (ht-values engine))
-           ;;              (tups (-zip-lists keys vals)))
-           ;;         (append
-           ;;          `((engine ,pen-force-engine))
-           ;;          tups))))
-
            (if pen-force-temperature
                (list `(temperature pen-force-temperature)))
 
