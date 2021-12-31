@@ -68,8 +68,8 @@
                   (not pen-prompt-force-engine-disabled)
                   (sor ,force-engine))
                  (sor pen-force-engine)
-                 (pen-var-value-maybe 'engine)
-                 ,engine
+                 (sor (pen-var-value-maybe 'engine))
+                 (sor ,engine)
                  "OpenAI Codex")))
 
           (final-temperature)
