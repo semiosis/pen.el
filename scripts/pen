@@ -1054,23 +1054,23 @@ esac; done
 
 if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/glossaries" && : "${GLOSSARIES_DIR:="$MYGIT/semiosis/glossaries"}"
-    test -d "glossaries" && : "${GLOSSARIES_DIR:="glossaries"}"
+    test -d "glossaries" && : "${GLOSSARIES_DIR:="`pwd`/glossaries"}"
 
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
-    test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
+    test -d "prompts" && : "${PROMPTS_DIR:="`pwd`/prompts"}"
 
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/engines" && : "${ENGINES_DIR:="$MYGIT/semiosis/engines"}"
-    test -d "engines" && : "${ENGINES_DIR:="engines"}"
+    test -d "engines" && : "${ENGINES_DIR:="`pwd`/engines"}"
 
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
-    test -d "pen.el" && : "${PENEL_DIR:="pen.el"}"
+    test -d "pen.el" && : "${PENEL_DIR:="`pwd`/pen.el"}"
     # : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
 
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen-contrib.el" && : "${CONTRIB_DIR:="$MYGIT/semiosis/pen-contrib.el"}"
-    test -d "pen-contrib.el" && : "${CONTRIB_DIR:="pen-contrib.el"}"
+    test -d "pen-contrib.el" && : "${CONTRIB_DIR:="`pwd`/pen-contrib.el"}"
 
     test -d "$MYGIT/semiosis/openai-api.el" && : "${OPENAI_API_EL_DIR:="$MYGIT/semiosis/openai-api.el"}"
-    test -d "openai-api.el" && : "${OPENAI_API_EL_DIR:="openai-api.el"}"
+    test -d "openai-api.el" && : "${OPENAI_API_EL_DIR:="`pwd`/openai-api.el"}"
     # : "${OPENAI_API_EL_DIR:="$(read -ep "OPENAI_API_EL_DIR (leave empty to use docker): ")"}"
 
     # yn "Pull docker image?" && docker pull $pen_image
