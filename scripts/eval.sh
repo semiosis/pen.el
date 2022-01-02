@@ -1,5 +1,11 @@
 #!/bin/bash
 
+sn="$(basename "$0")"
+if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
+    ~/.emacs.d/host/pen.el/scripts/$sn "$@"
+    exit "$?"
+fi
+
 {
 stty stop undef; stty start undef
 } 2>/dev/null

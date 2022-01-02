@@ -1,5 +1,11 @@
 #!/bin/bash
 
+sn="$(basename "$0")"
+if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
+    ~/.emacs.d/host/pen.el/scripts/$sn "$@"
+    exit "$?"
+fi
+
 # This creates extra frames
 
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null
