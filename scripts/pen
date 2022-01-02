@@ -575,7 +575,7 @@ if test -d "$PEN_CONFIG_DIR"; then
     mkdir -p "$PEN_CONFIG_DIR/documents"
 fi
 
-if { test "$sn" = pen || test "$sn" = penc || test "$sn" = peni || test "$sn" = pent; } && \
+if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = pent; } && \
     test "$#" -eq 1 && \
     test -n "$1" && \
     test -f "$1" && \
@@ -812,6 +812,20 @@ case "$sn" in
     }
     ;;
 
+    # pen call ilambda function
+    peni) {
+        show_banner=n
+        set -- -e "$@"
+    }
+    ;;
+
+    # pen call ilambda macro (generate code)
+    penm) {
+        show_banner=n
+        set -- -e "$@"
+    }
+    ;;
+
     pent) {
         # This is used to run docker terminal emacs with -e
         # Advanced.
@@ -837,7 +851,7 @@ case "$sn" in
     }
     ;;
 
-    peni) {
+    penv) {
         export USE_NVC=y
         HAS_TTY=y
         show_banner=n
