@@ -105,7 +105,7 @@ if test -z "$kickstarter"; then
 
     IFS= read -rd '' banner < <(penf -p -op "<banner>" -nogen -u "$fun" "" "" | pen-str remove-trailing-whitespace);typeset -p banner &>/dev/null
 
-    if test -n "$banner"; then
+    if test -n "$banner" && ! test "$banner" = "<banner>"; then
         prelude="<banner>\\n<kickstarter>"
     else
         prelude="<kickstarter>"
