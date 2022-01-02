@@ -148,10 +148,10 @@ rm -rf /root/emacs
 # git clone --depth 1 "http://github.com/semiosis/huggingface-clj"
 # )
 
-(
-cd
-git clone --depth 1 "https://github.com/syl20bnr/spacemacs"
-)
+# (
+# cd
+# git clone --depth 1 "https://github.com/syl20bnr/spacemacs"
+# )
 
 apt install libreadline-dev
 apt install libbsd-dev
