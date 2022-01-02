@@ -43,6 +43,15 @@
       (switch-to-buffer buf)
       (turn-on-comint-history (f-join pen-nlsh-histdir slug)))))
 
+(defun ii-language (language)
+  (interactive (list (fz
+                      (append
+                       '("Python"
+                         "Bash")
+                       (eval `(pen-ci (pen-one (pf-list-of/2 10 "programming languages"))))
+                       nil nil "ii-language: "))))
+  (pen-sps (pen-cmd "ii" language) nil nil pen-prompts-directory))
+
 (defun nlsh-os (os)
   (interactive (list (fz
                       (append
