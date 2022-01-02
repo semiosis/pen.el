@@ -66,7 +66,6 @@ mkdir -p /root/org-roam
 # test -d "huggingface.el" || git clone --depth 1 "http://github.com/semiosis/huggingface.el"
 
 mkdir -p ~/repos/pen-emacsd
-
 mkdir -p ~/.config
 (
 cd ~/repos/pen-emacsd
@@ -81,6 +80,9 @@ test -d "pen-contrib.el" || git clone --depth 1 "https://github.com/semiosis/pen
 test -d glossaries || git clone --depth 1 "https://github.com/semiosis/glossaries"
 test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
+
+rm -rf ~/.emacs.d
+ln -s ~/repos/pen-emacsd ~/.emacs.d
 
 cd
 ln -s ~/.config "$EMACSD"
