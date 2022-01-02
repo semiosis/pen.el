@@ -10,6 +10,7 @@
 (ignore-errors (package-refresh-contents))
 
 ;; Install dependencies
+(package-install 'use-package)
 (package-install 'shut-up)
 ;; For org-roam
 (package-install 'emacsql)
