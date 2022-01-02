@@ -1,3 +1,8 @@
+# A warning to any user compiling this container manually.
+# This may take 6 hours, and performs compilation, so will chew through CPU.
+# The pen script handles pulling the finished container automatically.
+# Please consider just using the built container.
+
 FROM debian:buster
 
 # butterfly
