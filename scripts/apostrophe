@@ -12,6 +12,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -tty|-nw|-t) {
+        export PEN_USE_GUI=n
+        FRAMETYPE=tty
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -28,12 +35,14 @@ stdin_exists() {
 
 person="$@"
 
+# PEN_USE_GUI is unset by design apparently
+
 if stdin_exists; then
     text="$(cat)"
-    pen -ic "(progn (apostrophe-start-chatbot-from-selection $(cmd-nice-posix "$text"))(delete-other-windows))"
+    pen -frametype "$FRAMETYPE" -ic "(progn (apostrophe-start-chatbot-from-selection $(cmd-nice-posix "$text"))(delete-other-windows))"
 elif test -n "$person"; then
     exec <&1
-    pen -ic "(progn (upd (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows))"
+    pen -frametype "$FRAMETYPE" -ic "(progn (upd (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows))"
 else
-    pen -ic "(progn (call-interactively 'apostrophe-start-chatbot-from-name)(delete-other-windows))"
+    pen -frametype "$FRAMETYPE" -ic "(progn (call-interactively 'apostrophe-start-chatbot-from-name)(delete-other-windows))"
 fi

@@ -230,6 +230,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -frametype) {
+        export FRAME_TYPE="$2"
+        shift
+        shift
+    }
+    ;;
+
     -nn) {
         no=y
         show_banner=n
@@ -397,6 +404,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+case "$FRAME_TYPE" in
+    tty) {
+        PEN_USE_GUI=n
+    }
+    ;;
+
+    gui) {
+        PEN_USE_GUI=y
+    }
+    ;;
+
+    *)
+esac
 
 if test -n "$PROMPT_HIST_ID"; then
     PROMPT_HIST_ID="\"$PROMPT_HIST_ID\""
@@ -760,7 +781,7 @@ case "$sn" in
             HAS_TTY=n
             batch=y
             docker_cmd=exec
-            remote_cmd=./.emacs.d/pen.el/scripts/eval.sh
+            remote_cmd=/root/.emacs.d/host/pen.el/scripts/eval.sh
         else
             # Put it back
             set -- "$fun" "$@"
@@ -986,7 +1007,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         if inside-docker-p; then
             remote_cmd=newframe.sh
         else
-            remote_cmd="/root/.emacs.d/pen.el/scripts/newframe.sh"
+            remote_cmd="/root/.emacs.d/host/pen.el/scripts/newframe.sh"
         fi
 
         # Shift all so it doesn't do -e here
@@ -1007,7 +1028,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         if inside-docker-p; then
             remote_cmd=newframe.sh
         else
-            remote_cmd="/root/.emacs.d/pen.el/scripts/newframe.sh"
+            remote_cmd="/root/.emacs.d/host/pen.el/scripts/newframe.sh"
         fi
 
         # Shift all so it doesn't do -e here
@@ -1260,7 +1281,7 @@ HEREDOC
         # Test quotes:
         # pena --temp 0.9 -u pf-very-witty-pick-up-lines-for-a-topic/1 "new \"zealand" | jq-list-to-lines
 
-        evalcommand="$(cmd-nice "$(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
+        evalcommand="$(cmd-nice ". ~/.emacs.d/pen.el/scripts/setup-term.sh; $(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
 docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
 HEREDOC

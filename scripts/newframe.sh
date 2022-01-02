@@ -15,6 +15,21 @@ export LC_ALL=en_US.UTF-8
 
 : "${SOCKET:="DEFAULT"}"
 
+
+cmd-onelineify-safe() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | pen-str onelineify-safe)";
+    done | sed 's/ $//'
+}
+
+cmd-unonelineify-safe() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | pen-str unonelineify-safe)";
+    done | sed 's/ $//'
+}
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -D) {
@@ -33,6 +48,8 @@ export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
+
+eval "set -- $(cmd-unonelineify-safe "$@")"
 
 if test "$USE_NVC" = "y"; then
     set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(ignore-errors (disable-theme 'spacemacs-dark)))"
