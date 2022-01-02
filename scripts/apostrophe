@@ -4,6 +4,8 @@ export TTY
 # Apostrophe
 # Version 1.0, bash
 
+FRAMETYPE=tty
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -nv) {
@@ -15,6 +17,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -tty|-nw|-t) {
         export PEN_USE_GUI=n
         FRAMETYPE=tty
+        shift
+    }
+    ;;
+
+    -gui) {
+        export PEN_USE_GUI=y
+        FRAMETYPE=gui
         shift
     }
     ;;
