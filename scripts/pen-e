@@ -248,6 +248,29 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -fa-parallel) {
+        shift
+
+        config_fp=$HOME/.pen/pen.yaml
+        if test -f "$config_fp"; then
+            # IFS= read -rd '' n < <(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null);typeset -p n &>/dev/null
+            n="$(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null)"
+        fi
+        : "${n:="5"}"
+
+        for i in $(seq 1 $n); do
+            pool_socket="pen-emacsd-$i"
+            cmd1 unbuffer pen-e -D "$pool_socket" "$@"
+        done | parallel -j 3
+
+        # for d in pen-e; do
+        #     "$d" "$@"
+        # done
+
+        exit 0
+    }
+    ;;
+
     qa|-qa|-quitall) {
         # For each
         # {
