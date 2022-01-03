@@ -1,7 +1,10 @@
 * Easy instructions
 - https://semiosis.github.io/posts/pen-el-installation-from-scratch/
 
+** Running Pen.el on your host machine
 This is a demo of setting up Pen.el for the first time.
+
+The following commands run on your host machine.
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   sudo adduser --home /home/pen pen
@@ -65,6 +68,10 @@ I have introduced a bug that I will fix soon. Done!
 <!-- Play on the blog -->
 <script src="https://asciinema.org/a/pxrwm2tI47KCDwKGwHaqKL18M.js" id="asciicast-pxrwm2tI47KCDwKGwHaqKL18M" async></script>
 #+END_EXPORT
+
+** Running Pen.el exclusively within the docker container
+You will need to source =~/.profile= and =setup-term.sh= upon entering a container shell.
+From there, you may consult the =run.sh= command for initiating the pen daemons for the first time.
 
 * Advanced installation
 These setup instructions are designed for Debian 10 or Ubuntu 20.04.
