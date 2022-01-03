@@ -249,13 +249,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     rla|-rla|--reload-all) {
-        pen-e fa -e "(progn (pen-reload)(delete-frame))"
+        pen-e fa-p -e "(progn (pen-reload)(delete-frame))"
         shift
         exit
     }
     ;;
 
-    -fa-parallel) {
+    fa-p|-fa-p|-fa-parallel) {
         shift
 
         config_fp=$HOME/.pen/pen.yaml
