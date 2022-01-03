@@ -148,7 +148,6 @@ prompt_the_lm() {
     # cmd penf -u "$fun" "$memory" "$user_input" | pen-tv &>/dev/null
 
     penf -u --pool "$fun" "$memory" "$user_input"  "${extra_args[@]}"
-    penf -u --pool pf-generic-interpreter/3 "$memory" "$user_input" "$lang"
 }
 
 p "${kickstarter} "
