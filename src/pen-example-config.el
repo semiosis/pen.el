@@ -316,11 +316,9 @@
           `((define-key pen-map (kbd ,(concat "H-TAB " bind-i)) ,fun)
             (define-key pen-map (kbd ,(concat "<H-tab> " bind-i)) ,fun))))))
 
-
 ;; Actually, I want to run prompts this way
 ;; C-M-i is the same as M-C-i. No such thing as C-M-TAB.
 (define-key global-map (kbd "M-SPC") #'indent-for-tab-command)
-
 
 (defun pen-reload ()
   (interactive)
