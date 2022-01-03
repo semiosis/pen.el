@@ -101,9 +101,9 @@ fi
 
 if test -n "$fun"; then
     fn="$(p "$fun" | tr -s / -)"
-    path="$PROMPTS_DIR/prompts/${fn}.prompt"
+    path="$HOST_PROMPTS_DIR/prompts/${fn}.prompt"
     if ! test -f "$path"; then
-        path="$HOST_PROMPTS_DIR/prompts/${fn}.prompt"
+        path="$PROMPTS_DIR/prompts/${fn}.prompt"
     fi
 fi
 
