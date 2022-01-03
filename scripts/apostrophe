@@ -48,10 +48,10 @@ person="$@"
 
 if stdin_exists; then
     text="$(cat)"
-    pen -frametype "$FRAMETYPE" -ic "(progn (apostrophe-start-chatbot-from-selection $(cmd-nice-posix "$text"))(delete-other-windows))"
+    pen -frametype "$FRAMETYPE" --pool -ic "(progn (apostrophe-start-chatbot-from-selection $(cmd-nice-posix "$text"))(delete-other-windows))"
 elif test -n "$person"; then
     exec <&1
-    pen -frametype "$FRAMETYPE" -ic "(progn (upd (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows))"
+    pen -frametype "$FRAMETYPE" --pool -ic "(progn (upd (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows))"
 else
-    pen -frametype "$FRAMETYPE" -ic "(progn (call-interactively 'apostrophe-start-chatbot-from-name)(delete-other-windows))"
+    pen -frametype "$FRAMETYPE" --pool -ic "(progn (call-interactively 'apostrophe-start-chatbot-from-name)(delete-other-windows))"
 fi
