@@ -90,7 +90,7 @@ fun="$(p "$funs" | awk 1 | grep -P "imagine-a-${lang_lc}-interpreter/2" | sed 's
 extra_args=()
 
 if test -z "$fun"; then
-    echo "No $lang_lc interpreter prompt" 1>&2
+    test "$SILENT" = y || echo "No $lang_lc interpreter prompt" 1>&2
     extra_args+=("$lang")
     # exit 1
 fi
