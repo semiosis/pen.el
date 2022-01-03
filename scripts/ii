@@ -71,8 +71,6 @@ echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
 kickstarter="$2"
 kickstarter="$(p "$kickstarter" | pen-str remove-trailing-whitespace | tee -a /tmp/kickstarter.txt)"
 
-HOST_PROMPTS_DIR="$HOME/.emacs.d/host/prompts"
-
 test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 test -d "$HOME/.emacs.d/host/prompts" && : "${PROMPTS_DIR:="$HOME/.emacs.d/host/prompts"}"
 test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"
@@ -101,10 +99,7 @@ fi
 
 if test -n "$fun"; then
     fn="$(p "$fun" | tr -s / -)"
-    path="$HOST_PROMPTS_DIR/prompts/${fn}.prompt"
-    if ! test -f "$path"; then
-        path="$PROMPTS_DIR/prompts/${fn}.prompt"
-    fi
+    path="$PROMPTS_DIR/prompts/${fn}.prompt"
 fi
 
 if ! { test -n "$path" && test -f "$path"; }; then
