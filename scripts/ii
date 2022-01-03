@@ -109,10 +109,13 @@ if ! { test -n "$path" && test -f "$path"; }; then
     exit 1
 fi
 
+extra_args_for_3=()
+extra_args_for_3+=("$lang")
+
 if test -z "$kickstarter"; then
     # Instead of reading the kickstarter directly, generate it frm
 
-    IFS= read -rd '' banner < <(penf -p --pool -op "<banner>" -nogen -u "$fun" "" "" "$lang" | pen-str remove-trailing-whitespace);typeset -p banner &>/dev/null
+    IFS= read -rd '' banner < <(penf -p --pool -op "<banner>" -nogen -u "$fun" "" "" "${extra_args_for_3[@]}" | pen-str remove-trailing-whitespace);typeset -p banner &>/dev/null
 
     if test -n "$banner" && ! test "$banner" = "<banner>"; then
         prelude="<banner>\\n<kickstarter>"
@@ -120,7 +123,7 @@ if test -z "$kickstarter"; then
         prelude="<kickstarter>"
     fi
 
-    IFS= read -rd '' kickstarter < <(penf -p --pool -op "$prelude" -nogen -u "$fun" "" "" "$lang" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+    IFS= read -rd '' kickstarter < <(penf -p --pool -op "$prelude" -nogen -u "$fun" "" "" "${extra_args_for_3[@]}" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
 
     # IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter // empty' | sed "s/<language>/$lang/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
 fi
@@ -149,11 +152,8 @@ prompt_the_lm() {
 
     # cmd penf -u "$fun" "$memory" "$user_input" | pen-tv &>/dev/null
 
-    if test -n "$fun"; then
-        penf -u --pool "$fun" "$memory" "$user_input"
-    else
-        penf -u --pool pf-generic-interpreter/3 "$memory" "$user_input" "$lang"
-    fi
+    penf -u --pool "$fun" "$memory" "$user_input"  "${extra_args_for_3[@]}"
+    penf -u --pool pf-generic-interpreter/3 "$memory" "$user_input" "$lang"
 }
 
 p "${kickstarter} "
