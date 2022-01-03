@@ -1989,4 +1989,8 @@ May use to generate code from comments."
   (interactive)
   (eval `(pen-list2str (pen-batch (pen-single-generation (pf-imagine-a-infocom-game-interpreter/2 nil nil :no-select-result t :temperature nil :prompt-hist-id nil :include-prompt nil :no-gen nil :variadic-var nil :override-prompt nil :inject-gen-start nil))))))
 
+;; (imacro define-function-with-ignore-errors (&body))
+;; (imacro/2 generate-fibonacci (n))
+;; (imacro/1 generate-fibonacci)
+
 (provide 'pen)
