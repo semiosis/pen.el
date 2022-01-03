@@ -363,3 +363,5 @@ agi sshfs
 
 # For vterm
 agi libtool-bin
+
+agi asciinema
