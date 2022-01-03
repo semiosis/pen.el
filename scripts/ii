@@ -3,6 +3,12 @@
 # Imaginary interpreter
 # Version 2.0, bash
 
+sn="$(basename "$0")"
+if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
+    $HOME/.emacs.d/host/pen.el/scripts/$sn "$@"
+    exit "$?"
+fi
+
 CMD="$(cmd-nice-without-bs "$@")"
 
 sn="$(basename "$0")"
@@ -16,6 +22,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -nd) {
         export NO_DOCKER=y
+        shift
+    }
+    ;;
+
+    -s) {
+        export SILENT=y
         shift
     }
     ;;
@@ -82,13 +94,10 @@ if test -z "$fun"; then
     # exit 1
 fi
 
-default_fun=generic-interpreter/3
+: "${fun:="generic-interpreter/3"}"
 
-file_fun="$fun"
-: "${file_fun:="$default_fun"}"
-
-if test -n "$file_fun"; then
-    fn="$(p "$file_fun" | tr -s / -)"
+if test -n "$fun"; then
+    fn="$(p "$fun" | tr -s / -)"
     path="$PROMPTS_DIR/prompts/${fn}.prompt"
     if ! test -f "$path"; then
         path="$HOST_PROMPTS_DIR/prompts/${fn}.prompt"
@@ -96,14 +105,14 @@ if test -n "$file_fun"; then
 fi
 
 if ! { test -n "$path" && test -f "$path"; }; then
-    echo "No path for $lang_lc interpreter prompt at $path 1>&2" 1>&2
+    test "$SILENT" = y || echo "No path for $lang_lc interpreter prompt at $path 1>&2" 1>&2
     exit 1
 fi
 
 if test -z "$kickstarter"; then
     # Instead of reading the kickstarter directly, generate it frm
 
-    IFS= read -rd '' banner < <(penf -p --pool -op "<banner>" -nogen -u "$fun" "" "" | pen-str remove-trailing-whitespace);typeset -p banner &>/dev/null
+    IFS= read -rd '' banner < <(penf -p --pool -op "<banner>" -nogen -u "$fun" "" "" "$lang" | pen-str remove-trailing-whitespace);typeset -p banner &>/dev/null
 
     if test -n "$banner" && ! test "$banner" = "<banner>"; then
         prelude="<banner>\\n<kickstarter>"
@@ -111,7 +120,7 @@ if test -z "$kickstarter"; then
         prelude="<kickstarter>"
     fi
 
-    IFS= read -rd '' kickstarter < <(penf -p --pool -op "$prelude" -nogen -u "$fun" "" "" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+    IFS= read -rd '' kickstarter < <(penf -p --pool -op "$prelude" -nogen -u "$fun" "" "" "$lang" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
 
     # IFS= read -rd '' kickstarter < <(cat "$path" | yq -r '.subprompts[0].kickstarter // empty' | sed "s/<language>/$lang/g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
 fi
@@ -128,7 +137,7 @@ fi
 : "${user_prompt_re:="$comint_user_prompt_re"}"
 
 if test "$use_comint" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
-    comint -p "$user_prompt_re" -E "ii $CMD"
+    comint -p "$user_prompt_re" -E "ii -s $CMD"
     exit $?
 fi
 
