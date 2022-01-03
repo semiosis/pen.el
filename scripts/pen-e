@@ -268,7 +268,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         for i in $(seq 1 $n); do
             pool_socket="pen-emacsd-$i"
             cmd1 unbuffer pen-e -D "$pool_socket" "$@"
-        done | parallel -j 3
+        done | parallel -j 5
 
         # for d in pen-e; do
         #     "$d" "$@"
