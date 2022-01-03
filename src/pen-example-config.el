@@ -324,6 +324,7 @@
 
 (defun pen-reload ()
   (interactive)
+  (load-library "pen")
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (pen-sps "pen-e rla"))
   (pen-generate-prompt-functions)
