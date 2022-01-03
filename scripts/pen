@@ -830,10 +830,17 @@ case "$sn" in
     ;;
 
     # pen call ilambda macro (generate code)
+    # (pps (macroexpand (progn (imacro fib-sequence)(fib-sequence 5))))
     penm) {
         show_banner=n
         sn=pene
-        set -- -e "$@"
+
+        imacro_name="$1"
+        shift
+
+        ARGS="$(cmd-nice-posix "$@")"
+
+        set -- -e "(pps (progn (imacro $imacro_name) (macroexpand ($imacro_name $ARGS))))"
     }
     ;;
 
