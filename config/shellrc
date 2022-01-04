@@ -21,3 +21,5 @@ agi() {
 pyf() {
     pip3 install "$@"
 }
+
+export PATH=$PATH:/usr/local/go/bin
