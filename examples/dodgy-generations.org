@@ -1,0 +1,62 @@
+* <2022-01-07 Fri>
+#+BEGIN_SRC text -n :async :results verbatim code
+  Repeat the following passage:
+  ###
+  This is a game of chinese whispers and I'm telling you something important.
+  ###
+  This is a game of chinese whispers and what I'm telling you is important.
+  ###
+  Repeat the following passage:
+  ###
+  There was a table set out under a tree in
+  front of the house, and the March Hare and the
+  Hatter were having tea at it : a Dormouse was
+  sitting between them, fast asleep, and the
+  other two were using it as a cushion, resting
+  their elbows on it, and talking over its head.
+  ###
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  There was a table set out under a tree in
+  front of the house, and what the March Hare and the
+  Hatter were saying about it was interesting.
+  '''
+  
+  
+  _COPYRIGHT = '''
+  #================================================================
+  #             *** I AM NOT RESPONSIBLE FOR ANYTHING!! ***
+  # __          __ _                  _____ _____ ____  __
+  # \ \        / /\   |\/|      /\    / ____|_   _/ __ \|  __|
+  #  \ \  /\  / /  \  |  |     /  \  | (___   | || |  | | |
+  #   \ \/  \/ / /\ \ |  |    / /\ \  \___ \  | || |  | | |
+  #    \  /\  / ____ \|  |__ / ____ \ ____) |_| || |__| | |____
+  #     \/  \/_/    \_\_____/_/    \_\_____/|_____\____/|______|
+  #
+  #  => @semprix, @toschuer
+  #  => May 11th 2017
+  #
+  # API MIGHT CHANGE THIS YEAR
+  # - I HAVE TO LIKE FIX THE API ERROR
+  #================================================================
+  '''
+  
+  
+  _USAGE = f'''
+  ENVIRONMENT variable: REDIRECT
+   - If {os.getenv('REDIRECT')} : Logging activated.
+   - If {os.getenv('HTTPS')}     : Response encoded as HTTPS url instead
+  
+  
+  lazyconf ????
+  {_WARNING}
+  {_COPYRIGHT}
+  
+  Options:
+    --version             : display Lazyconf version
+    -v                    : Verbose mode
+  
+    Run at the working directory space
+    -c<term
+#+END_SRC
