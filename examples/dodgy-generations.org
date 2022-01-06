@@ -1,4 +1,74 @@
 * <2022-01-07 Fri>
+It's clearly dodgy that snippets such as this
+make it out.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  PEN_GEN_UUID="9a59d883-c3a6-494a-815f-e3d970dd248d" \
+      PEN_GEN_TIME=1641471291.7542822 \
+      PEN_GEN_DIR="/home/shane/.pen/results/results_1641471291.7542822_07.01.22_9a59d883-c3a6-494a-815f-e3d970dd248d" \
+      ALSO_EXPORT="" \
+      PEN_PROMPT="Repeat the following \
+      passage<pen-colon>\n###\nThis \
+      is a game of chinese whispers \
+      and I<pen-singlequote>m telling \
+      you something important.\n###\nThis \
+      is a game of chinese whispers and \
+      what I<pen-singlequote>m telling you \
+      is important.\n###\nRepeat the \
+      following passage<pen-colon>\n###\nThere \
+      was a table set out under a tree \
+      in\nfront of the house, and the \
+      March Hare and the\nHatter were \
+      having tea at it <pen-colon> a \
+      Dormouse was\nsitting between them, \
+      fast asleep, and the\nother two \
+      were using it as a cushion, \
+      resting\ntheir elbows on it, and \
+      talking over its head.\n###" \
+      PEN_LM_COMMAND="openai-complete.sh" \
+      PEN_MODEL="davinci-codex" \
+      PEN_WHITESPACE_SUPPORT="" \
+      PEN_ENGINE="OpenAI \
+      Codex" \
+      PEN_API_ENDPOINT="https://api.openai.com" \
+      PEN_PAYLOADS="" \
+      PEN_QUERY="" \
+      PEN_COUNTERQUERY="" \
+      PEN_LOGPROBS="10" \
+      PEN_APPROXIMATE_PROMPT_LENGTH=205 \
+      PEN_ENGINE_MIN_TOKENS=0 \
+      PEN_ENGINE_MAX_TOKENS=2049 \
+      PEN_MIN_TOKENS=0 \
+      PEN_MAX_TOKENS=615 \
+      PEN_REPETITION_PENALTY="" \
+      PEN_FREQUENCY_PENALTY="" \
+      PEN_PRESENCE_PENALTY="" \
+      PEN_LENGTH_PENALTY="" \
+      PEN_MIN_GENERATED_TOKENS=3 \
+      PEN_MAX_GENERATED_TOKENS=410 \
+      PEN_TEMPERATURE="1.1" \
+      PEN_MODE="" \
+      PEN_STOP_SEQUENCE="###" \
+      PEN_STOP_SEQUENCES="[\"###\",\"<delim>\",\"<delim>\"]" \
+      PEN_DOCUMENTS= \
+      PEN_TOP_P="1.0" \
+      PEN_TOP_K=5 \
+      PEN_FLAGS= \
+      PEN_CACHE="y" \
+      UPDATE="y" \
+      PEN_USER_AGENT="emacs/pen" \
+      PEN_TRAILING_WHITESPACE="" \
+      PEN_N_COMPLETIONS="5" \
+      PEN_ENGINE_MIN_GENERATED_TOKENS=3 \
+      PEN_ENGINE_MAX_GENERATED_TOKENS=4096 \
+      PEN_COLLECT_FROM_POS=500 \
+      PEN_END_POS=500 \
+      PEN_N_JOBS="2" \
+      PEN_SEARCH_THRESHOLD= \
+      PEN_INJECT_GEN_START="" \
+      lm-complete
+#+END_SRC
+
 #+BEGIN_SRC text -n :async :results verbatim code
   Repeat the following passage:
   ###
