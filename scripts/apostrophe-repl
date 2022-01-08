@@ -31,6 +31,7 @@ CMD="$(cmd-nice-posix "$@")"
 # Then consider roping in more people
 
 person="$1"
+# If there is no person, but there is a blurb, then detect the person
 test -n "$person" || exit 1
 
 memory="$2"
