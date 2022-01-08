@@ -380,3 +380,6 @@ agi sshfs
 agi libtool-bin
 
 agi asciinema
+
+# For apostrophe
+agi inotify-tools iwatch
