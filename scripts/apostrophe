@@ -4,6 +4,11 @@ export TTY
 # Apostrophe
 # Version 1.0, bash
 
+# Apostrophe is a figure of speech in which a speaker directly addresses someone
+# (or something) that is not present or cannot respond in reality. ... An
+# apostrophe is often introduced by the exclamation "O," as when Juliet cries
+# out: "O Romeo, Romeo, Wherefore art thou Romeo?"
+
 FRAMETYPE=tty
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
