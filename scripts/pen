@@ -384,6 +384,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -u) {
         UPDATE=y
+
         shift
     }
     ;;
@@ -411,6 +412,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+if test "$UPDATE" = "y"; then
+    PEN_UPDATE=t
+else
+    PEN_UPDATE=nil
+fi
 
 case "$FRAME_TYPE" in
     tty) {
@@ -781,12 +788,6 @@ case "$sn" in
                 ncompletions_limiter_fn="mapcar 'identity"
             else
                 ncompletions_limiter_fn=pen-single-generation
-            fi
-
-            if test "$UPDATE" = "y"; then
-                PEN_UPDATE=t
-            else
-                PEN_UPDATE=nil
             fi
 
             set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $ENGINE) (force-temperature $temperature)) ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
