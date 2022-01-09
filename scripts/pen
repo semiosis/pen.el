@@ -790,7 +790,7 @@ case "$sn" in
                 ncompletions_limiter_fn=pen-single-generation
             fi
 
-            set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $ENGINE) (force-temperature $temperature)) ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
+            set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$ENGINE\") (force-temperature $temperature)) ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
 
             HAS_TTY=n
             batch=y
@@ -992,7 +992,7 @@ case "$sn" in
 
         CMD="$(cmd-nice "$@")"
         
-        set -- -e "(pen-list2str (pen-single-generation (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $ENGINE) (force-temperature $temperature)) ($sn $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID))))"
+        set -- -e "(pen-list2str (pen-single-generation (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$ENGINE\") (force-temperature $temperature)) ($sn $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID))))"
         HAS_TTY=n
         batch=y
         docker_cmd=exec
@@ -1322,7 +1322,8 @@ HEREDOC
     # --user "$(id -u):$(id -g)"
     exec) {
         if test "$interactive" = "y"; then
-            set -- -e "$@"
+            elisp="$@"
+            set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$ENGINE\") (force-temperature $temperature)) $elisp)"
         fi
 
         # Test quotes:
