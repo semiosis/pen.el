@@ -54,4 +54,20 @@
       (pen-e-sps (pen-lm (pen-eval-string el)))
       (never (sps (pen-cmd "apostrophe-repl" "" blurb))))))
 
+(defun apostrophe-a-conversation-broke-out-here (text)
+  (interactive (list (str (pen-selected-or-preceding-context))))
+
+  (if (and (not (pen-inside-docker))
+           (not (pen-container-running)))
+      (progn
+        (pen-term-nsfa (cmd "pen" "-n"))
+        (message "Starting Pen server")))
+
+  (if (not text)
+      (setq text (str (pen-screen-or-selection))))
+
+  (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" "" "" text))))
+    ;; TODO Run multiple daemons and run tasks from a pool?
+    (pen-e-sps (pen-lm (pen-eval-string el)))))
+
 (provide 'pen-apostrophe)
