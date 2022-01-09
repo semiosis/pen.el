@@ -5,3 +5,5 @@ export TTY
 # - Run a chatbot that sees only a terminal (program independent)
 # channel v2.0
 # - Give an AGI control of a terminal
+
+# http://github.com/mullikine/channel/blob/master/README.md

@@ -263,6 +263,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    --engine) {
+        ENGINE="$2"
+        shift
+        shift
+    }
+    ;;
+
     --citation) {
         pen-citation
         exit "$?"
@@ -427,6 +434,10 @@ fi
 
 if ! test -n "$temperature"; then
     temperature=nil
+fi
+
+if ! test -n "$ENGINE"; then
+    ENGINE=nil
 fi
 
 export USE_NVC
@@ -772,11 +783,13 @@ case "$sn" in
                 ncompletions_limiter_fn=pen-single-generation
             fi
 
-            if test "$UPDATE" = y; then
-                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-update ($pfname $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
+            if test "$UPDATE" = "y"; then
+                PEN_UPDATE=t
             else
-                set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn ($pfname $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start))))"
+                PEN_UPDATE=nil
             fi
+
+            set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $ENGINE) (force-temperature $temperature)) ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
 
             HAS_TTY=n
             batch=y
