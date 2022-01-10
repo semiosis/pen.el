@@ -14,19 +14,8 @@ exec 1>"$TTY"
 
 # Consider running a different pen instance if available
 # emacs -nw -Q "$tf_pipe_buffer"
-# pen-e "$tf_pipe_buffer"
-# cmd pen -nw --pool "$tf_pipe_buffer" | pen-tv
-# tty
-# echo "$TTY"
-# ls -la /proc/$$/fd
-# eval `resize`
-# reset
-# pen -notm -nw
-# pen -notm -nw --pool "$tf_pipe_buffer"
-# which -a pen
 export PEN_NO_TM=y
 pen -notm -nw "$tf_pipe_buffer"
-# pen-pak
 
 exec 1>&3
 
