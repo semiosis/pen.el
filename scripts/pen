@@ -264,7 +264,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     --engine) {
-        ENGINE="$2"
+        PEN_ENGINE="$2"
         shift
         shift
     }
@@ -439,12 +439,12 @@ else
     PROMPT_HIST_ID=nil
 fi
 
-if ! test -n "$temperature"; then
-    temperature=nil
+if ! test -n "$PEN_TEMPERATURE"; then
+    PEN_TEMPERATURE=nil
 fi
 
-if ! test -n "$ENGINE"; then
-    ENGINE=nil
+if ! test -n "$PEN_ENGINE"; then
+    PEN_ENGINE=nil
 fi
 
 export USE_NVC
@@ -790,7 +790,7 @@ case "$sn" in
                 ncompletions_limiter_fn=pen-single-generation
             fi
 
-            set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$ENGINE\") (force-temperature $temperature)) ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
+            set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$PEN_ENGINE\") (force-temperature $PEN_TEMPERATURE)) ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
 
             HAS_TTY=n
             batch=y
@@ -992,7 +992,7 @@ case "$sn" in
 
         CMD="$(cmd-nice "$@")"
         
-        set -- -e "(pen-list2str (pen-single-generation (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$ENGINE\") (force-temperature $temperature)) ($sn $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID))))"
+        set -- -e "(pen-list2str (pen-single-generation (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$PEN_ENGINE\") (force-temperature $PEN_TEMPERATURE)) ($sn $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID))))"
         HAS_TTY=n
         batch=y
         docker_cmd=exec
@@ -1141,8 +1141,8 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
     test -d "prompts" && : "${PROMPTS_DIR:="`pwd`/prompts"}"
 
-    test -n "$MYGIT" && test -d "$MYGIT/semiosis/engines" && : "${ENGINES_DIR:="$MYGIT/semiosis/engines"}"
-    test -d "engines" && : "${ENGINES_DIR:="`pwd`/engines"}"
+    test -n "$MYGIT" && test -d "$MYGIT/semiosis/engines" && : "${PEN_ENGINES_DIR:="$MYGIT/semiosis/engines"}"
+    test -d "engines" && : "${PEN_ENGINES_DIR:="`pwd`/engines"}"
 
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
     test -d "pen.el" && : "${PENEL_DIR:="`pwd`/pen.el"}"
@@ -1166,9 +1166,9 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     fi
 
     if ! test "$batch" = "y"; then
-        if test -d "$ENGINES_DIR"; then
+        if test -d "$PEN_ENGINES_DIR"; then
             yn "Pull engines repo? (recommended)" && (
-                cd "$ENGINES_DIR"
+                cd "$PEN_ENGINES_DIR"
                 git pull origin master
             )
         else
@@ -1178,7 +1178,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         fi
     fi
 
-    test -d "engines" && : "${ENGINES_DIR:="engines"}"
+    test -d "engines" && : "${PEN_ENGINES_DIR:="engines"}"
 
     if ! test "$batch" = "y"; then
         if test -d "$PROMPTS_DIR"; then
@@ -1213,8 +1213,8 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         PROMPTS_DIR="$(realpath "$PROMPTS_DIR")"
     fi
 
-    if test -d "$ENGINES_DIR"; then
-        ENGINES_DIR="$(realpath "$ENGINES_DIR")"
+    if test -d "$PEN_ENGINES_DIR"; then
+        PEN_ENGINES_DIR="$(realpath "$ENGINES_DIR")"
     fi
 fi
 
@@ -1276,7 +1276,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$OPENAI_API_KEY" && printf -- "%s " -e "OPENAI_API_KEY:$OPENAI_API_KEY" ) \
         $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
         $(test -n "$PROMPTS_DIR" && printf -- "%s " -v "$PROMPTS_DIR:/root/.emacs.d/host/prompts" ) \
-        $(test -n "$ENGINES_DIR" && printf -- "%s " -v "$ENGINES_DIR:/root/.emacs.d/host/engines" ) \
+        $(test -n "$PEN_ENGINES_DIR" && printf -- "%s " -v "$ENGINES_DIR:/root/.emacs.d/host/engines" ) \
         $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
         $(test -n "$CONTRIB_DIR" && printf -- "%s " -v "$CONTRIB_DIR:/root/.emacs.d/host/pen-contrib.el" ) \
         $(test -n "$GLOSSARIES_DIR" && printf -- "%s " -v "$GLOSSARIES_DIR:/root/.emacs.d/host/glossaries" ) \
@@ -1323,7 +1323,7 @@ HEREDOC
     exec) {
         if test "$interactive" = "y"; then
             elisp="$@"
-            set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$ENGINE\") (force-temperature $temperature)) $elisp)"
+            set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$PEN_ENGINE\") (force-temperature $PEN_TEMPERATURE)) $elisp)"
         fi
 
         # Test quotes:

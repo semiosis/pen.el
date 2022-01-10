@@ -25,6 +25,53 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+export UPDATE
+
+if test "$UPDATE" = "y" || test "$PEN_UPDATE" = "t"; then
+    set -- -u "$@"
+fi
+
+if ! test -n "$PEN_TEMPERATURE"; then
+    PEN_TEMPERATURE=nil
+fi
+
+if ! test -n "$PEN_ENGINE"; then
+    PEN_ENGINE=nil
+fi
+
+if test -n "$PEN_TEMPERATURE" && test "$PEN_TEMPERATURE" = nil; then
+    set -- -temp "$PEN_TEMPERATURE" "$@"
+fi
+
+if test -n "$PEN_ENGINE" && test "$PEN_ENGINE" = nil; then
+    set -- -engine "$PEN_ENGINE" "$@"
+fi
+
+# I hope these actually unexport
+unset UPDATE
+unset PEN_UPDATE
+unset PEN_TEMPERATURE
+unset PEN_ENGINE
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -u) {
+        UPDATE=y
+        PEN_UPDATE=t
+        shift
+    }
+    ;;
+
+    -temp) {
+        PEN_TEMPERATURE="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 CMD="$(cmd-nice-posix "$@")"
 
 # TODO Also make a version that takes 2 people
@@ -35,7 +82,8 @@ person="$1"
 test -n "$person" || exit 1
 
 memory="$2"
-echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
+
+# echo "$memory" | tee -a /tmp/yo.txt &>/dev/null &
 
 test -d "$HOME/.emacs.d/host/prompts" && : "${PROMPTS_DIR:="$HOME/.emacs.d/host/prompts"}"
 test -d "$HOME/.pen/prompts" && : "${PROMPTS_DIR:="$HOME/.pen/prompts"}"
