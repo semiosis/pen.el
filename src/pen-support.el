@@ -503,7 +503,11 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                              (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
                              (if (or (pen-var-value-maybe 'pen-sh-update)
                                      (pen-var-value-maybe 'sh-update))
-                                 (list "UPDATE" "y")))))))
+                                 (list "UPDATE" "y"))
+                             (if (or (pen-var-value-maybe 'pen-force-engine))
+                                 (list "PEN_ENGINE" (pen-var-value-maybe 'pen-force-engine)))
+                             (if (or (pen-var-value-maybe 'force-temperature))
+                                 (list "PEN_TEMPERATURE" (pen-var-value-maybe 'force-temperature))))))))
 
         (if (not (re-match-p "[&;]$" cmd))
             (setq cmd (concat cmd ";")))
