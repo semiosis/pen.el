@@ -384,7 +384,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -u) {
         UPDATE=y
+        PEN_UPDATE=t
+        shift
+    }
+    ;;
 
+    --do-update) {
+        PEN_UPDATE="$2"
+        shift
         shift
     }
     ;;
@@ -413,10 +420,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if test "$PEN_UPDATE" = "y"; then
+    PEN_UPDATE=t
+fi
+
 if test "$UPDATE" = "y"; then
     PEN_UPDATE=t
 else
-    PEN_UPDATE=nil
+    : "${PEN_UPDATE:="nil"}"
+fi
+
+if test "$PEN_UPDATE" = "t"; then
+    UPDATE=y
 fi
 
 case "$FRAME_TYPE" in
