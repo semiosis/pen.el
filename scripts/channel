@@ -3,6 +3,7 @@ export TTY
 
 # channel v1.0
 # - Run a chatbot that sees only a terminal (program independent)
+#   - The chatbot may have multiple personalities. i.e. a Mad-Hatter's Tea-Party
 # channel v2.0
 # - Give an AGI control of a terminal
 
