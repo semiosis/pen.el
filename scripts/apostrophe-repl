@@ -27,32 +27,12 @@ esac; done
 
 export UPDATE
 
-if test "$UPDATE" = "y" || test "$PEN_UPDATE" = "t"; then
-    set -- -u "$@"
-fi
+# The following parameter handling seems unobvious, warrenting a comment.
+# I need to ensure that when this script calls itself via comint, the
+# parameters are also passed on, but I can't do so using environment variables.
+# So I have to regenerate the command in parameter form.
 
-if ! test -n "$PEN_TEMPERATURE"; then
-    PEN_TEMPERATURE=nil
-fi
-
-if ! test -n "$PEN_ENGINE"; then
-    PEN_ENGINE=nil
-fi
-
-if test -n "$PEN_TEMPERATURE" && test "$PEN_TEMPERATURE" = nil; then
-    set -- -temp "$PEN_TEMPERATURE" "$@"
-fi
-
-if test -n "$PEN_ENGINE" && test "$PEN_ENGINE" = nil; then
-    set -- -engine "$PEN_ENGINE" "$@"
-fi
-
-# I hope these actually unexport
-unset UPDATE
-unset PEN_UPDATE
-unset PEN_TEMPERATURE
-unset PEN_ENGINE
-
+# consume parameters
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -u) {
@@ -69,10 +49,51 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -engine) {
+        PEN_ENGINE="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
+if test "$UPDATE" = "y" || test "$PEN_UPDATE" = "t"; then
+    UPDATE=y
+    PEN_UPDATE=t
+fi
+
+if ! test -n "$PEN_TEMPERATURE"; then
+    PEN_TEMPERATURE=nil
+fi
+
+if ! test -n "$PEN_ENGINE"; then
+    PEN_ENGINE=nil
+fi
+
+# By now we must have the variables, so add the parameters
+if test "$UPDATE" = "y" || test "$PEN_UPDATE" = "t"; then
+    set -- -u "$@"
+fi
+
+if test -n "$PEN_TEMPERATURE" && ! test "$PEN_TEMPERATURE" = nil; then
+    set -- -temp "$PEN_TEMPERATURE" "$@"
+fi
+
+if test -n "$PEN_ENGINE" && test ! "$PEN_ENGINE" = nil; then
+    set -- -engine "$PEN_ENGINE" "$@"
+fi
+
+# Generate the CMD, then remove the parameters again
 CMD="$(cmd-nice-posix "$@")"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -u) { shift; } ;;
+    -temp) { shift; shift; } ;;
+    -engine) { shift; shift; } ;;
+    *) break;
+esac; done
 
 # TODO Also make a version that takes 2 people
 # Then consider roping in more people
@@ -134,7 +155,7 @@ prompt_the_lm() {
     # TODO Use pena because I want better results
     # Rather, make a penc (pen collect) and use that
 
-    penf --pool -u "$fun" "$memory" "$user_input" "$person" "$info"
+    penf --pool -u --temp "$PEN_TEMPERATURE" --engine "$PEN_ENGINE" "$fun" "$memory" "$user_input" "$person" "$info"
 }
 
 p "${kickstarter} "
