@@ -21,7 +21,6 @@ export LC_ALL=en_US.UTF-8
 
 : "${SOCKET:="DEFAULT"}"
 
-
 cmd-onelineify-safe() {
     for var in "$@"
     do
@@ -45,6 +44,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    --parallel|--pool) {
+        export USE_POOL=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -52,15 +57,34 @@ export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 
+shopt -s nullglob
+if test "$USE_POOL" = "y"; then
+    # ugh... using sentinels is a pain. Just select one.
+    # Just take the first one
+    # SOCKET="$(basename "$(shopt -s nullglob; cd $HOME/.pen/pool/available; ls pen-emacsd-* | shuf -n 1)")"
+
+    for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
+        SOCKET="$(basename "$socket_fp")"
+        echo "$SOCKET" >> /tmp/d.txt
+        break
+    done
+
+    test -z "$SOCKET" && exit 1
+    test "$SOCKET" = DEFAULT && exit 1
+    rm -f ~/.pen/pool/available/$SOCKET
+fi
+
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
 eval "set -- $(cmd-unonelineify-safe "$@")"
 
-if test "$USE_NVC" = "y"; then
-    set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(ignore-errors (disable-theme 'spacemacs-dark)))"
-else
-    set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t))"
+if ! test -f "$1"; then
+    if test "$USE_NVC" = "y"; then
+        set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(ignore-errors (disable-theme 'spacemacs-dark)))"
+    else
+        set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t))"
+    fi
 fi
 
 mkdir -p ~/.pen/ht-cache
@@ -89,4 +113,9 @@ if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
 else
     runclient -a "" -t "$@"
+fi
+
+if test "$USE_POOL" = "y"; then
+    touch ~/.pen/pool/available/$SOCKET
+    # tmux neww -d -n fix-$SOCKET "shx pen-fix-daemon $SOCKET"
 fi

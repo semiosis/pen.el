@@ -15,7 +15,11 @@ exec 1>"$TTY"
 # Consider running a different pen instance if available
 # emacs -nw -Q "$tf_pipe_buffer"
 export PEN_NO_TM=y
-pen -notm -nw "$tf_pipe_buffer"
+# This must use the pool. That is because the client may be run from a prompt function (which synchronously reserves the emacs that is prompting)
+# pen -notm -nw --pool "$tf_pipe_buffer"
+# pen -notm -nw "$tf_pipe_buffer"
+
+pen -notm -nw --pool "$tf_pipe_buffer"
 
 exec 1>&3
 

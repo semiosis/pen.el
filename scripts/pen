@@ -172,9 +172,19 @@ docker() {
     if inside-docker-p; then
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             bash) break;;
-            /root/run.sh|./run.sh) {
+            run.sh|/root/run.sh|./run.sh) {
                 shift
                 set -- run.sh "$@"
+                break
+            };;
+            newframe.sh|/root/newframe.sh|./newframe.sh) {
+                shift
+                set -- newframe.sh "$@"
+                break
+            };;
+            eval.sh|/root/eval.sh|./eval.sh) {
+                shift
+                set -- eval.sh "$@"
                 break
             };;
             *) shift;;
@@ -626,6 +636,11 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
 
         # This is ideal, but requires more work
         # set -- -e "(find-file $(cmd-nice "/root/.pen/documents/$bn"))"
+    fi
+
+    if test "$USE_POOL" = "y"; then
+        remote_cmd=newframe.sh
+        # remote_cmd=/root/.emacs.d/host/pen.el/scripts/newframe.sh
     fi
 fi
 

@@ -70,7 +70,7 @@ if test "$USE_POOL" = "y"; then
 fi
 
 # Can't use a timestamp because I might want to try eval.sh again
-prompt_id="$(cmd "$@" | sha1sum | awk '{print $1}')"
+# prompt_id="$(cmd "$@" | sha1sum | awk '{print $1}')"
 
 # Add the date so never any collisions
 # fp="/tmp/eval-output-${SOCKET}-$prompt_id.txt"
