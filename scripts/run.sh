@@ -47,7 +47,7 @@ export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
 # This is a hack to run only on the initial docker run
 # Without this check, "pen-tipe pen-eipe" will hang because it waits for a background job
-if ! test -f ~/.pen/pool/available/pen-emacsd-1; then
+if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
 (
 export PEN_USE_GUI=n
 ttyd -p 7681 bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
@@ -99,7 +99,7 @@ runclient() {
     fi
 }
 
-if ! test -f ~/.pen/pool/available/pen-emacsd-1; then
+if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
     echo Starting daemon pool in background 1>&2
     unbuffer pen-e sa &>/dev/null &
 fi
