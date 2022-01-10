@@ -389,7 +389,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    --do-update) {
+    --pen-update|--do-update) {
         PEN_UPDATE="$2"
         shift
         shift
