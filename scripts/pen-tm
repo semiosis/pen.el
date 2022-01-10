@@ -2101,6 +2101,8 @@ case "$f" in
         if test "$DETACHMENT_SENTINEL" = "y"; then
             if ! test "$SUB_SESSION" = "y"; then
                 tmux wait-for "$sentinal_string"
+                # Killing the pane speeds up the user experience
+                tmux kill-pane -t "$full_id"
             fi
         fi
 

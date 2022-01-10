@@ -167,10 +167,12 @@ docker() {
         exit "$?"
     fi
 
+    export PEN_NO_TM
+
     if inside-docker-p; then
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             bash) break;;
-            ./run.sh) {
+            /root/run.sh|./run.sh) {
                 shift
                 set -- run.sh "$@"
                 break
@@ -1298,6 +1300,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$OPENAI_API_EL_DIR" && printf -- "%s " -v "$OPENAI_API_EL_DIR:/root/.emacs.d/host/openai-api.el" ) \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
         --env PEN_USE_GUI \
+        --env PEN_NO_TM \
         --env USE_NVC \
         --env TERM \
         --env USE_NVC \

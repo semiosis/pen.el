@@ -45,10 +45,14 @@ esac; done
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
+# This is a hack to run only on the initial docker run
+# Without this check, "pen-tipe pen-eipe" will hang because it waits for a background job
+if ! test -f ~/.pen/pool/available/pen-emacsd-1; then
 (
 export PEN_USE_GUI=n
 ttyd -p 7681 bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
 )
+fi
 
 # Right-click isn't very well supported with nvc, so I have disabled it
 # ttyd -p 7681 nvc bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
@@ -76,7 +80,11 @@ mkdir -p ~/.pen/ht-cache
 # emacs -nw --debug-init
 
 in-tm() {
-    if test -n "$TMUX" || test "$PEN_USE_GUI" = "y"; then
+    if test "$PEN_NO_TM" = "y"; then
+        "$@"
+    elif inside-docker-p && test -n "$TMUX"; then
+        "$@"
+    elif test "$PEN_USE_GUI" = "y"; then
         "$@"
     else
         pen-tm init-or-attach "$@"
@@ -91,8 +99,10 @@ runclient() {
     fi
 }
 
-echo Starting daemon pool in background 1>&2
-unbuffer pen-e sa &>/dev/null &
+if ! test -f ~/.pen/pool/available/pen-emacsd-1; then
+    echo Starting daemon pool in background 1>&2
+    unbuffer pen-e sa &>/dev/null &
+fi
 
 # How to debug daemon
 # emacs -nw --daemon --debug-init
