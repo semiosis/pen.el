@@ -23,3 +23,5 @@ pyf() {
 }
 
 export PATH=$PATH:/usr/local/go/bin
+
+unset TMUX
