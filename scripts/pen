@@ -16,7 +16,7 @@ pen_container_name=pen
 
 sn="$(basename "$0")"
 bn="$sn"
-rp="$(realpath "$sn")"
+rp="$(realpath "$bn")"
 
 inside-docker-p() {
     test -f /.dockerenv
