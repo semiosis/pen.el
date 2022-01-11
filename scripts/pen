@@ -1056,13 +1056,26 @@ esac; done
 {
 if ! test "$show_banner" = n; then
     printf -- "%s\n" "$banner"
-    pen-banner.sh
-    echo
-    echo Version: ${pen_version}, License: GPL-3
-    echo
-    printf -- "%s\n" "$info_txt"
-    echo
-    looking-glass-logo.sh
+    case "$sn" in
+        lg*) {
+            looking-glass-logo.sh
+        }
+        ;;
+
+        ap*) {
+            looking-glass-logo.sh
+        }
+        ;;
+
+        *) {
+            pen-banner.sh
+            echo
+            echo Version: ${pen_version}, License: GPL-3
+            echo
+            printf -- "%s\n" "$info_txt"
+        }
+        ;;
+    esac
     echo
 fi
 } 1>&2
