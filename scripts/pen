@@ -1070,6 +1070,7 @@ if ! test "$show_banner" = n; then
         ;;
 
         ii*) {
+            ii-logo
             echo "Imaginary Interpreter"
         }
         ;;
