@@ -101,7 +101,7 @@ in-tm() {
     else
         pen-tm init-or-attach "$@"
     fi
-} 
+}
 
 runclient() {
     if test "$USE_NVC" = "y"; then
