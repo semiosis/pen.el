@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# Channel
+# Version 1.0, bash
+
 # channel v1.0
 # - Run a chatbot that sees only a terminal (program independent)
 #   - The chatbot may have multiple personalities. i.e. a Mad-Hatter's Tea-Party
