@@ -15,46 +15,6 @@ FRAMETYPE=tty
 
 apostrophe-logo 1>&2
 
-pen_image=semiosis/pen.el:latest
-pen_container_name=pen
-
-ensure_pen_running() {
-    if ! inside-docker-p && ! docker-running-p; then
-        echo Starting Pen. Please wait... 1>&2
-
-        # Start pen in background and wait, or start and detach when done
-        # How can I detach it when done loading?
-        # Maybe the only  way is to ensure that pen -n always starts pen with no interruptions.
-        # TODO Ensure that pen.el still starts, even with empty ~/.pen
-        ( unbuffer pen -nw -n &>/dev/null; ) & disown
-
-        while !  docker exec "${pen_container_name}" true &>/dev/null; do
-            sleep 1
-        done
-    fi
-}
-
-inside-docker-p() {
-    test -f /.dockerenv
-}
-
-drunning=
-docker-running-p() {
-    test "$drunning" = y || test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
-    ret="$?"
-    if test "$ret" -eq 0; then
-        drunning=y
-    else
-        false
-    fi
-    # if test "$drunning" = y || docker exec "${pen_container_name}" true; then
-}
-
-if ! inside-docker-p && ! docker-running-p; then
-    # Start pen in background and wait
-    ensure_pen_running
-fi
-
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -nv) {
