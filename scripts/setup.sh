@@ -412,8 +412,8 @@ pen-x \
     -e "In what directory" -c m \
     -e "In what directory" -c m \
     -e "Enable epoll" -s y -c m \
-    -e "One or more" -s y -c m -e \
-    "Would you like" -s y -c m \
+    -e "One or more" -s y -c m \
+    -e "Would you like" -s y -c m \
     -c m \
     -e "Would you like" -s y -c m \
     -e "Would you like" -s y -c m \
