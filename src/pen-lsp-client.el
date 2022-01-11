@@ -83,7 +83,7 @@
 (defun pen-lsp-update-languages ()
   (interactive)
 
-  (loop for m in pen-lsp-modes do
+  (cl-loop for m in pen-lsp-modes do
         (add-to-list 'lsp-language-id-configuration `(,m . "global")))
 
   (lsp-register-client

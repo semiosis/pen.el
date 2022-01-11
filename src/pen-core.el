@@ -30,7 +30,7 @@
        (let ((end (point))
              (start))
 
-         (loop for i in (number-sequence 0 n) do
+         (cl-loop for i in (number-sequence 0 n) do
                (backward-sentence))
          (setq start (point))
 
