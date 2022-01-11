@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+# penelfonts -f mono9 ii
+
+IFS= read -r -d '' ii_banner <<HEREDOC
+              
+   ▀      ▀   
+ ▄▄▄    ▄▄▄   
+   █      █   
+   █      █   
+ ▄▄█▄▄  ▄▄█▄▄ 
+HEREDOC
+
+printf -- "%s\n" "$ii_banner"
