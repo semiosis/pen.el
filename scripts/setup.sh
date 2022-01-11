@@ -402,7 +402,22 @@ mkdir -p inspircd-2.0.25/run/data
 mkdir -p inspircd-2.0.25/run/logs
 mkdir -p inspircd-2.0.25/run/build
 cd inspircd-2.0.25/
-pen-x -sh "perl ./configure" -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "Enable epoll" -s y -c m -e "One or more" -s y -c m -e "Would you like" -s y -c m -c m -e "Would you like" -s y -c m -e "Would you like" -s y -c m -i
+pen-x \
+    -sh "perl ./configure" \
+    -e "In what directory" -c m \
+    -e "In what directory" -c m \
+    -e "In what directory" -c m \
+    -e "In what directory" -c m \
+    -e "In what directory" -c m \
+    -e "In what directory" -c m \
+    -e "In what directory" -c m \
+    -e "Enable epoll" -s y -c m \
+    -e "One or more" -s y -c m -e \
+    "Would you like" -s y -c m \
+    -c m \
+    -e "Would you like" -s y -c m \
+    -e "Would you like" -s y -c m \
+    -i
 make -j 5
 ./configure --uid "$pen_id"
 make install
