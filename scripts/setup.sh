@@ -384,8 +384,11 @@ agi asciinema
 # For apostrophe
 agi inotify-tools iwatch
 
+pen-x -sh "adduser pen" -e "New password" -s pen -c m -e "Retype" -s pen -c m -e "Full Name" -s Pen -c m -c m -c m -c m -c m -e correct -s Y -c m -i
+# 1000
+pen_id="$(id -u pen)"
 (
-cd
+cd /
 agi git
 agi perl
 agi g++
@@ -401,5 +404,6 @@ mkdir -p inspircd-2.0.25/run/build
 cd inspircd-2.0.25/
 pen-x -sh "perl ./configure" -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "Enable epoll" -s y -c m -e "One or more" -s y -c m -e "Would you like" -s y -c m -c m -e "Would you like" -s y -c m -e "Would you like" -s y -c m -i
 make -j 5
+./configure --uid "$pen_id"
 make install
 )
