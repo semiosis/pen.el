@@ -185,7 +185,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (if input
       (let ((tf (make-temp-file "pen-term-nsfa" nil nil input)))
         (pen-term (message (pen-nsfa (message (concat "( " cmd " ) < " (pen-q tf))) dir)) closeframe modename buffer-name))
-    (pen-term (pen-tv (pen-nsfa cmd dir)) closeframe modename buffer-name)))
+    (pen-term (pen-nsfa cmd dir) closeframe modename buffer-name)))
 
 (defun pen-term-sps (&optional cmd dir)
   (interactive)
