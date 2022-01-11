@@ -408,3 +408,5 @@ make -j 5
 make install
 cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf/inspircd.conf
 )
+
+agi irssi
