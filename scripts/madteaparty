@@ -8,6 +8,18 @@ export TTY
 # AI personalities may be created and join the IRC server, interact inside of channels, etc.
 # Human users may subsume AI personalities.
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -join) {
+        irc_channel_name="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 pen-x \
     -sh "adduser pen" \
     -e "New password" -s pen -c m \
