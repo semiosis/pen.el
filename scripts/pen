@@ -689,7 +689,7 @@ case "$sn" in
             fun="$(penl 2>&1 | grep -P "^(pf-)?${fun}/$arity$")"
         fi
 
-        if ! printf -- "%s\n" "$fun" | grep -q -P "/${arity}$"; then 
+        if ! printf -- "%s\n" "$fun" | grep -q -P "/${arity}$"; then
             sn=penh
             penl_strip_pf=y
         elif ! stdin_exists; then
@@ -1032,7 +1032,7 @@ case "$sn" in
         fi
 
         CMD="$(cmd-nice "$@")"
-        
+
         set -- -e "(pen-list2str (pen-single-generation (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (force-temperature $PEN_TEMPERATURE)) ($sn $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID))))"
         HAS_TTY=n
         batch=y
