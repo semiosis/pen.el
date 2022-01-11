@@ -30,3 +30,5 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+pen-eterm "$@"
