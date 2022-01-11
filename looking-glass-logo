@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+cd $MYGIT/xero/figlet-fonts
+
+# Tried my best to get unbuffer working. Failing to.
+
+# echo lOOKING gLASS | toilet -f rev.flf --metal
+bash -c "
+echo LG | toilet -f rev.flf --filter crop:rotate |
+    sed 's/==/🔍/g' |
+    sed 's/= /🔍/g' |
+    sed 's/=/🔍/'g |
+    /bin/ruby /usr/games/lolcat -F 0.03
+    "
+
+{
+echo ==================
+echo ==================
+echo ==================
+} | sed 's/==/🔍/g' |
+    sed 's/= /🔍/g' |
+    sed 's/=/🔍/'g |
+    lolcat -F 0.1
+
+# Then obtain it from tmux
+# tmux capture-pane -t "%614" -e -p
+
+#| tee /tmp/last-looking-glass-logo.txt
+# 🔍
+# lolcat -F 0.03
