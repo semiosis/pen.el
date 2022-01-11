@@ -383,3 +383,22 @@ agi asciinema
 
 # For apostrophe
 agi inotify-tools iwatch
+
+(
+cd
+agi git
+agi perl
+agi g++
+agi make
+wget https://github.com/inspircd/inspircd/archive/v2.0.25.tar.gz
+tar zxf v2.0.25.tar.gz
+mkdir -p inspircd-2.0.25/run/conf
+mkdir -p inspircd-2.0.25/run/modules
+mkdir -p inspircd-2.0.25/run/bin
+mkdir -p inspircd-2.0.25/run/data
+mkdir -p inspircd-2.0.25/run/logs
+mkdir -p inspircd-2.0.25/run/build
+cd inspircd-2.0.25/
+pen-x -sh "perl ./configure" -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "Enable epoll" -s y -c m -e "One or more" -s y -c m -e "Would you like" -s y -c m -c m -e "Would you like" -s y -c m -e "Would you like" -s y -c m -i
+make
+)
