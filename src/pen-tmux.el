@@ -76,7 +76,7 @@ START and END can be in either order."
       (setq cmd (tmuxify-cmd "zsh"))
     ;; (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\"")
     )
-  (e/sph (lm (term-nsfa cmd nil "zsh" nil nil dir))))
+  (e/sph (lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
 
 ;; (defalias 'sph-term 'pen-e-sph-zsh)
 ;; (defalias 'term-sph 'pen-e-sph-zsh)
@@ -88,7 +88,7 @@ START and END can be in either order."
       (setq dir (cwd)))
   (if (not cmd)
       (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\""))
-  (e/spv (lm (term-nsfa cmd nil "zsh" nil nil dir))))
+  (e/spv (lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
 
 ;; (defalias 'term-spv 'pen-e-spv-zsh)
 ;; (defalias 'tspv 'pen-e-spv-zsh)
