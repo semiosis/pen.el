@@ -19,6 +19,10 @@ fav-programming-language: Emacs Lisp
 ## override.
 #force-engine: OpenAI Codex
 
+# Default engine is used as a last resort when selecting an engine
+default-engine: Human
+# default-engine: OpenAI Codex
+
 # This 
 force-few-completions: off
 
