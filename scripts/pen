@@ -536,6 +536,8 @@ fi
 
 ensure_pen_running() {
     if ! inside-docker-p && ! docker-running-p; then
+        echo Starting Pen. Please wait... 1>&2
+
         # Start pen in background and wait, or start and detach when done
         # How can I detach it when done loading?
         # Maybe the only  way is to ensure that pen -n always starts pen with no interruptions.
