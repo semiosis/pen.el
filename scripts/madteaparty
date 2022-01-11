@@ -8,4 +8,14 @@ export TTY
 # AI personalities may be created and join the IRC server, interact inside of channels, etc.
 # Human users may subsume AI personalities.
 
-pen-x -sh "adduser pen" -e "New password" -s pen -c m -e "Retype" -s pen -c m -e "Full Name" -s Pen -c m -c m -c m -c m -c m -e correct -s Y -c m -i
+pen-x \
+    -sh "adduser pen" \
+    -e "New password" -s pen -c m \
+    -e "Retype" -s pen -c m \
+    -e "Full Name" -s Pen -c m \
+    -c m \
+    -c m \
+    -c m \
+    -c m \
+    -e correct -s Y -c m \
+    -i
