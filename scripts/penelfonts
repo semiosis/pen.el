@@ -1,0 +1,49 @@
+#!/bin/bash
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -c) {
+        charwise=y
+        shift
+    }
+    ;;
+
+    -font|-f) {
+        font="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+text="$@"
+: "${text:="Pen.el"}"
+
+if test -n "$font"; then
+    cd $MYGIT/xero/figlet-fonts
+
+    if ! test "$charwise" = "y"; then
+        echo "$font"
+        echo "$text" | toilet -f "$font";
+    else
+        for (( i=0; i<${#text}; i++ )); do
+            echo "${text:$i:1}"
+        done
+    fi
+else
+    cd $MYGIT/xero/figlet-fonts
+
+    if ! test "$charwise" = "y"; then
+        for bn in *; do
+            echo "$bn"
+            echo "$text" | toilet -f "$bn" --gay;
+            echo
+        done
+    else
+        for (( i=0; i<${#text}; i++ )); do
+            echo "${text:$i:1}"
+        done
+    fi
+fi

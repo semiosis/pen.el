@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+# penelfonts -f dietcola Apostrophe
+
+IFS= read -r -d '' apo_logo <<'HEREDOC'
+         /\                                                   
+     _  / |                    /                    /         
+    (  /  |  . .-.  .-._.. ---/---).--..-._..-.    /-.   .-.  
+     `/.__|_.' /  )(   )/ \  /   /    (   ) /  )  /   |./.-'_ 
+ .:' /    |   /`-'  `-'/ ._)/   /      `-' /`-'_.'    |(__.'  
+(__.'     `-'/        /                   /                   
+HEREDOC
+
+printf -- "%s\n" "$apo_logo"

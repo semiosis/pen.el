@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# Mad Tea-Party
+# Version 1.0, bash
+
+# Mad Tea-Party is a sandbox for language-model-powered chatbots and human interaction.
+# AI personalities may be created and join the IRC server, interact inside of channels, etc.
+# Human users may subsume AI personalities.
