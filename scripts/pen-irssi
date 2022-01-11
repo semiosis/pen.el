@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# TODO Check if irssi is running under the current user
+# Attempt first to run multiple irssi clients under the same user account
+
+export TERM=screen-256color
+
+/usr/bin/irssi

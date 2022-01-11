@@ -20,14 +20,31 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+username="$1"
+shift
+
+username="$(p "$username" | slugify)"
+
+password="$username"
+
+# New user not currently necessary
+
+# pen-x \
+#     -sh "adduser pen" \
+#     -e "New password" -s pen -c m \
+#     -e "Retype" -s pen -c m \
+#     -e "Full Name" -s Pen -c m \
+#     -c m \
+#     -c m \
+#     -c m \
+#     -c m \
+#     -e correct -s Y -c m \
+#     -i
+
 pen-x \
-    -sh "adduser pen" \
-    -e "New password" -s pen -c m \
-    -e "Retype" -s pen -c m \
-    -e "Full Name" -s Pen -c m \
-    -c m \
-    -c m \
-    -c m \
-    -c m \
-    -e correct -s Y -c m \
+    -sh "pen-irssi" \
+    -e "irssi" \
+    -s "/connect irc.localhost 6697 $password $username" -c m \
+    -e "Mode change" \
+    -s "/join #$irc_channel_name" -c m \
     -i

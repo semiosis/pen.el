@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+killall inspircd
+/inspircd-2.0.25/run/inspircd start
