@@ -70,7 +70,7 @@
                  (sor pen-force-engine)
                  (sor (pen-var-value-maybe 'engine))
                  (sor ,engine)
-                 "OpenAI Codex")))
+                 pen-default-engine)))
 
           (final-temperature)
           (final-lm-command)
@@ -90,7 +90,7 @@
           ;; Don't override final-'force'-model, etc.
           (final-engine
            (let* ((engine (ht-get pen-engines (sor final-engine
-                                                   "OpenAI Codex")))
+                                                   pen-default-engine)))
                   (keys (mapcar 'intern (mapcar 'slugify (ht-keys engine))))
                   (vals (ht-values engine))
                   (tups (-zip-lists keys vals))
