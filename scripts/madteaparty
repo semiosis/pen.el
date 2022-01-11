@@ -20,6 +20,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+echo In development
+exit
+
 pen-x \
     -sh "adduser pen" \
     -e "New password" -s pen -c m \
