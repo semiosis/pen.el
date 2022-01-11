@@ -1067,6 +1067,18 @@ if ! test "$show_banner" = n; then
         }
         ;;
 
+        ii*) {
+            echo "Imaginary Interpreter"
+        }
+        ;;
+
+        nlsh*) {
+            echo "NL·SH"
+            echo
+            echo "Natural Language Shell"
+        }
+        ;;
+
         *) {
             pen-banner.sh
             echo
