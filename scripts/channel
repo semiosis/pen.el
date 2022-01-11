@@ -8,3 +8,22 @@ export TTY
 # - Give an AGI control of a terminal
 
 # http://github.com/mullikine/channel/blob/master/README.md
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -who) {
+        who="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -on-behalf-of) {
+        on_behalf_of="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
