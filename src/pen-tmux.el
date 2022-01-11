@@ -12,31 +12,7 @@ START and END can be in either order."
    (window-start)
    (window-end)))
 
-;; tmux scripts
-
-(defun pen-tmux-pane-capture (&optional show-buffer)
-  (interactive)
-
-  ;; Rather than toggle window margins, remove the window margin width from the start of each line
-  (let* ((margin-width (or (car (window-margins))
-                           0))
-         (wincontents (pen-sn (concat "pen-tm cap-pane -nohist | sed \"s/^.\\{" (str margin-width) "\\}//\""))))
-
-    (if (or (interactive-p)
-            show-buffer)
-        (let ((frame (make-frame-command)
-                     ;; termframe
-                     ))
-          (with-current-buffer (new-buffer-from-string wincontents)
-            (defset-local termframe-local frame)
-            (current-buffer)))
-      wincontents)))
-
-(defun pen-tmuxify-cmd (cmd &optional dir window-name)
-  (let ((slug (slugify cmd)))
-    (setq window-name (or window-name slug))
-    (setq dir (or dir (pen-pwd)))
-    (concat "TMUX= tmux new -c " (pen-q dir) " -n " (pen-q window-name) " " (pen-q (concat "CWD= " cmd)))))
+;; emacs term and window functions (for avoiding tmux, say in the gui)
 
 (defun e/nw (&optional run)
   (interactive)
@@ -67,6 +43,32 @@ START and END can be in either order."
   (if run
       (call-interactively run)))
 (defalias 'esph 'e/sph)
+
+;; tmux scripts
+
+(defun pen-tmux-pane-capture (&optional show-buffer)
+  (interactive)
+
+  ;; Rather than toggle window margins, remove the window margin width from the start of each line
+  (let* ((margin-width (or (car (window-margins))
+                           0))
+         (wincontents (pen-sn (concat "pen-tm cap-pane -nohist | sed \"s/^.\\{" (str margin-width) "\\}//\""))))
+
+    (if (or (interactive-p)
+            show-buffer)
+        (let ((frame (make-frame-command)
+                     ;; termframe
+                     ))
+          (with-current-buffer (new-buffer-from-string wincontents)
+            (defset-local termframe-local frame)
+            (current-buffer)))
+      wincontents)))
+
+(defun pen-tmuxify-cmd (cmd &optional dir window-name)
+  (let ((slug (slugify cmd)))
+    (setq window-name (or window-name slug))
+    (setq dir (or dir (pen-pwd)))
+    (concat "TMUX= tmux new -c " (pen-q dir) " -n " (pen-q window-name) " " (pen-q (concat "CWD= " cmd)))))
 
 (defun pen-e-sph-zsh (&optional cmd dir)
   (interactive)
