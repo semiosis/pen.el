@@ -20,7 +20,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-: "${irc_channel_name:="metaparty"}"
+: "${irc_channel_name:="metameetup"}"
 
 username="$1"
 shift
