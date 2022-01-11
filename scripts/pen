@@ -2,14 +2,14 @@
 # set -vx
 
 # Pen
-# Version 1.1, bash
+# Version 1.0, bash
 
 # If mac
 # --env="DISPLAY=host.docker.internal:0"
 
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
-pen_version=1.1
+pen_version=1.0
 
 pen_image=semiosis/pen.el:latest
 pen_container_name=pen
