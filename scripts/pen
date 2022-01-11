@@ -477,6 +477,12 @@ if ! test -n "$PEN_ENGINE"; then
     PEN_ENGINE=nil
 fi
 
+if test "$PEN_ENGINE" = "nil"; then
+    PEN_ENGINE_Q=nil
+else
+    PEN_ENGINE_Q="\"$PEN_ENGINE\""
+fi
+
 export USE_NVC
 
 if stdin_exists && \
@@ -825,7 +831,7 @@ case "$sn" in
                 ncompletions_limiter_fn=pen-single-generation
             fi
 
-            set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$PEN_ENGINE\") (force-temperature $PEN_TEMPERATURE)) ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
+            set -- -e "($output_fn (pen-batch ($ncompletions_limiter_fn (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (force-temperature $PEN_TEMPERATURE)) ($pfname $CMD :no-select-result t :prompt-hist-id $PROMPT_HIST_ID :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg :override-prompt $override_prompt :inject-gen-start $inject_gen_start)))))"
 
             HAS_TTY=n
             batch=y
@@ -1027,7 +1033,7 @@ case "$sn" in
 
         CMD="$(cmd-nice "$@")"
         
-        set -- -e "(pen-list2str (pen-single-generation (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$PEN_ENGINE\") (force-temperature $PEN_TEMPERATURE)) ($sn $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID))))"
+        set -- -e "(pen-list2str (pen-single-generation (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (force-temperature $PEN_TEMPERATURE)) ($sn $CMD :no-select-result t :temperature $temperature :prompt-hist-id $PROMPT_HIST_ID))))"
         HAS_TTY=n
         batch=y
         docker_cmd=exec
@@ -1359,7 +1365,7 @@ HEREDOC
     exec) {
         if test "$interactive" = "y"; then
             elisp="$@"
-            set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine \"$PEN_ENGINE\") (force-temperature $PEN_TEMPERATURE)) $elisp)"
+            set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (force-temperature $PEN_TEMPERATURE)) $elisp)"
         fi
 
         # Test quotes:

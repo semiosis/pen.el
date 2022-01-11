@@ -79,11 +79,13 @@ export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
 eval "set -- $(cmd-unonelineify-safe "$@")"
 
-if ! test -f "$1"; then
+if ! test -f "$1" && test "$1" = "-e"; then
+    shift
+    extra_lisp="$@"
     if test "$USE_NVC" = "y"; then
-        set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(ignore-errors (disable-theme 'spacemacs-dark)))"
+        set -- -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(ignore-errors (disable-theme 'spacemacs-dark))$extra_lisp)"
     else
-        set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t))"
+        set -- -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t)$extra_lisp)"
     fi
 fi
 

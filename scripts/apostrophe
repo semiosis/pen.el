@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+sn="$(basename "$0")"
+
 # Apostrophe
 # Version 1.0, bash
 
@@ -66,6 +68,15 @@ stdin_exists() {
 person="$@"
 
 # PEN_USE_GUI is unset by design apparently
+
+if test -z "$person"; then
+    {
+        echo "$sn, for the moment, needs requires you to name a person in its arguments"
+        echo "For example:"
+        echo "$ $sn \"Amber Heard\""
+    } 1>&2
+    exit 1
+fi
 
 if stdin_exists; then
     text="$(cat)"
