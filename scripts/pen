@@ -1063,7 +1063,7 @@ if ! test "$show_banner" = n; then
         ;;
 
         ap*) {
-            looking-glass-logo.sh
+            apostrophe-logo
         }
         ;;
 
