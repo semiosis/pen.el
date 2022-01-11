@@ -10,7 +10,7 @@ export TTY
 # channel v2.0
 # - Give an AGI control of a terminal
 
-# http://github.com/mullikine/channel/blob/master/README.md
+# http://github.com/semiosis/channel/blob/master/README.md
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
