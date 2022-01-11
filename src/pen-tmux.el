@@ -38,6 +38,36 @@ START and END can be in either order."
     (setq dir (or dir (pen-pwd)))
     (concat "TMUX= tmux new -c " (pen-q dir) " -n " (pen-q window-name) " " (pen-q (concat "CWD= " cmd)))))
 
+(defun e/nw (&optional run)
+  (interactive)
+  (if run
+      (call-interactively run)))
+(defalias 'enw 'e/nw)
+
+(defun e/sps (&optional run)
+  (interactive)
+  (split-window-sensibly)
+  (other-window 1)
+  (if run
+      (call-interactively run)))
+(defalias 'esps 'e/sps)
+
+(defun e/spv (&optional run)
+  (interactive)
+  (split-window-horizontally)
+  (other-window 1)
+  (if run
+      (call-interactively run)))
+(defalias 'espv 'e/spv)
+
+(defun e/sph (&optional run)
+  (interactive)
+  (split-window-vertically)
+  (other-window 1)
+  (if run
+      (call-interactively run)))
+(defalias 'esph 'e/sph)
+
 (defun pen-e-sph-zsh (&optional cmd dir)
   (interactive)
   (if (not dir)
