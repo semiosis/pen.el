@@ -400,5 +400,5 @@ mkdir -p inspircd-2.0.25/run/logs
 mkdir -p inspircd-2.0.25/run/build
 cd inspircd-2.0.25/
 pen-x -sh "perl ./configure" -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "In what directory" -c m -e "Enable epoll" -s y -c m -e "One or more" -s y -c m -e "Would you like" -s y -c m -c m -e "Would you like" -s y -c m -e "Would you like" -s y -c m -i
-make
+make -j 5
 )
