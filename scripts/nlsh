@@ -96,6 +96,8 @@ if ! test "$NORL" = "y"; then
     exit $?
 fi
 
+nlsh-logo 1>&2
+
 # pf-code-snippet-from-natural-language/2
 # pf-nlsh/2
 
