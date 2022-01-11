@@ -9,8 +9,6 @@ if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host
     exit "$?"
 fi
 
-ii-logo 1>&2
-
 CMD="$(cmd-nice-without-bs "$@")"
 
 sn="$(basename "$0")"
@@ -42,6 +40,8 @@ if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
     pen sh ii "$@"
     exit "$?"
 fi
+
+ii-logo 1>&2
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
