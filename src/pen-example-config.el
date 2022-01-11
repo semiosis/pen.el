@@ -794,6 +794,7 @@
 (define-key pen-map (kbd "M-\"") 'pen-helm-fzf)
 (define-key pen-map (kbd "M-U") 'dired-here)
 
+;; Convenience functions for making and editing bindings
 (define-key pen-map (kbd "M-l M-r M-f") 'goto-function-from-binding)
 (define-key pen-map (kbd "M-l M-r M-o") 'get-map-for-key-binding)
 (define-key pen-map (kbd "M-l M-r M-k") 'pen-ead-binding)
