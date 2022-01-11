@@ -53,6 +53,7 @@
 (require 'pen-translation-map)
 (require 'helm-fzf)
 (require 'pen-helm-fzf)
+(require 'pen-help)
 (require 'helpful)
 
 ;; Not sure I need the following in pen.el
