@@ -34,4 +34,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-pen-eterm "$@"
+: "${who:="$1"}"
+: "${on_behalf_of:="$2"}"
+: "${on_behalf_of:="$who"}"
+
+pen-eterm madteaparty "$on_behalf_of" "$@"
