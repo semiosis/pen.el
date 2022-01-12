@@ -1064,7 +1064,7 @@ if ! test "$show_banner" = n; then
     printf -- "%s\n" "$banner"
     case "$sn" in
         lg*) {
-            looking-glass-logo.sh
+            looking-glass-logo
         }
         ;;
 
