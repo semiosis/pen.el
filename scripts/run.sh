@@ -56,6 +56,7 @@ export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 # Must quit all emacs daemons and relinquish their reservations before ever checking available pool
 # run.sh *should* only happen when starting Pen for the first time, except for when the first argument is a file.
 if ! test "$NO_QUIT_DAEMONS" = y; then
+    echo Resetting daemons... 1>&2
     unbuffer pen-e qa &>/dev/null
 fi
 
