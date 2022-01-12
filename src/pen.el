@@ -54,8 +54,6 @@
 (require 'helm-fzf)
 (require 'pen-helm-fzf)
 (require 'pen-help)
-(require 'pen-apostrophe)
-(require 'pen-channel)
 (require 'helpful)
 
 ;; Not sure I need the following in pen.el
@@ -1851,6 +1849,7 @@ May use to generate code from comments."
 (require 'pen-looking-glass)
 (require 'pen-buffer-state)
 (require 'pen-apostrophe)
+(require 'pen-channel)
 (require 'pen-scratch)
 (require 'pen-minor-modes)
 
