@@ -10,13 +10,13 @@
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
 # Invocations:
-# - pen
+# - pen/penx
 # - penf
 # - ii
-# - lg
-# - cosm
+# - lg/lgx/looking-glass
+# - cosm/paracosm
 # - nlsh
-# - apostrophe
+# - apo/apostrophe
 
 pen_version=2.0
 
@@ -960,7 +960,7 @@ case "$sn" in
     }
     ;;
 
-    lg) {
+    lg|looking-glass) {
         show_banner=y
         set -- -ic "(funcall-interactively 'eww $(cmd-nice "$1"))"
     }
@@ -1074,7 +1074,7 @@ esac; done
 if ! test "$show_banner" = n; then
     printf -- "%s\n" "$banner"
     case "$sn" in
-        lg*) {
+        lg*|looking-glass*) {
             looking-glass-logo
         }
         ;;
