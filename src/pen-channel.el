@@ -1,4 +1,4 @@
-(defun channel-start-chatbot-from-name (name &optional auto)
+(defun channel-chatbot-from-name (name &optional auto)
   (interactive (list (read-string-hist "person: ")))
 
   (if (and (not (pen-inside-docker))
