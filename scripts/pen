@@ -1071,16 +1071,20 @@ if ! test "$show_banner" = n; then
         }
         ;;
 
+        paracosm*|cosm*) {
+            paracosm-logo
+        }
+        ;;
+
         ii*) {
             ii-logo
-            echo "Imaginary Interpreter"
         }
         ;;
 
         nlsh*) {
-            echo "NL·SH"
-            echo
+            nlsh-logo
             echo "Natural Language Shell"
+            echo
         }
         ;;
 
