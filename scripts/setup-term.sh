@@ -13,6 +13,7 @@ export LC_ALL=en_US.UTF-8
 
 export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
+export PATH=$PATH:$EMACSD/host/pen.el/scripts-host:$EMACSD/pen.el/scripts-host
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 export PATH="$PATH:/root/go/bin"
 export PATH="$PATH:/root/.cargo/bin/cargo"
