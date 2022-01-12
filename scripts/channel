@@ -16,6 +16,7 @@ export TTY
 # http://github.com/semiosis/channel/blob/master/README.md
 
 # Examples:
+# channel "March Hare, the Hatter and the Dormouse"
 # channel -on-behalf-of "Mad Tea-Party group" "March Hare, the Hatter and the Dormouse"
 # channel -who "March Hare, the Hatter and the Dormouse" -on-behalf-of "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
 # channel -who "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
