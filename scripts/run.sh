@@ -47,6 +47,9 @@ esac; done
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
+# Must quit all emacs daemons and relinquish their reservations before ever checking available pool
+pen-e qa
+
 # This is a hack to run only on the initial docker run
 # Without this check, "pen-tipe pen-eipe" will hang because it waits for a background job
 if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
@@ -102,7 +105,6 @@ runclient() {
     fi
 }
 
-pen-e qa
 if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
     echo Starting daemon pool in background 1>&2
     unbuffer pen-e sa &>/dev/null &
