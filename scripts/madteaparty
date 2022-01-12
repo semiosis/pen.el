@@ -62,6 +62,7 @@ pen-tm -d ns -np -n mtp-users
 # Then create a nested session for the user
 pen-tm -d ns -p mtp-users -n "$username"
 
+# Start pen-irssi inside of a tmux inside of the user's session
 pen-x \
     -sh "pen-irssi" \
     -e "irssi" \
