@@ -21,8 +21,6 @@ export LANG=en_US
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 
-: "${SOCKET:="DEFAULT"}"
-
 cmd-onelineify-safe() {
     for var in "$@"
     do
@@ -65,16 +63,27 @@ if test "$USE_POOL" = "y"; then
     # Just take the first one
     # SOCKET="$(basename "$(shopt -s nullglob; cd $HOME/.pen/pool/available; ls pen-emacsd-* | shuf -n 1)")"
 
-    for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
-        SOCKET="$(basename "$socket_fp")"
-        echo "$SOCKET" >> /tmp/d.txt
-        break
+    # Wait until free clients
+
+    while test -z "$SOCKET"; do
+        for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
+            SOCKET="$(basename "$socket_fp")"
+            echo "$SOCKET" >> /tmp/d.txt
+            break
+        done
+        if test -n "$SOCKET"; then
+            break
+        fi
+        echo "Waiting for socket..." 1>&2
+        sleep 1
     done
 
     test -z "$SOCKET" && exit 1
     test "$SOCKET" = DEFAULT && exit 1
     rm -f ~/.pen/pool/available/$SOCKET
 fi
+
+: "${SOCKET:="DEFAULT"}"
 
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH

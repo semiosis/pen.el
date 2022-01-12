@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+# A more basic version of 'pen-his'
+
+colour="$1"
+test -n "$1" && shift
+
+: "${colour:="reverse"}"
+
+case "$colour" in
+    reverse|inverted) {
+        pen-his -i ".*"
+    }
+    ;;
+
+    *)
+        pen-his -f "$colour" ".*"
+esac

@@ -24,7 +24,7 @@ shpvs() {
         pane_start_command \
         pane_current_command \
         ; do
-        cmd="$(shpv "$v" | chomp | q)"
+        cmd="$(pen-shpv "$v" | chomp | q)"
         printf -- "%s" "$v: $cmd"
         printf -- "%s\n" 
     done

@@ -12,4 +12,5 @@ IFS= read -r -d '' apo_logo <<'HEREDOC'
 (__.'     `-'/        /                   /
 HEREDOC
 
-printf -- "%s\n" "$apo_logo"
+echo
+printf -- "%s\n" "$apo_logo" | pen-hls dblue

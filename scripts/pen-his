@@ -1,0 +1,142 @@
+#!/bin/bash
+export TTY
+
+# Example
+# hs
+# his -i -f red -b dblue '.*'
+
+colour_name_to_number() {
+    colour_name="$1"
+
+    case "$colour_name" in
+        red) c=196;;
+        dred|redd) c=88;;
+
+        lgreen) c=114;;
+        green) c=34;;
+        dgreen|greend) c=28;;
+
+        yellow) c=226;;
+        yellowd) c=100;;
+
+        blue) c=4;;
+        dblue|blued) c=19;;
+
+        purple) c=171;;
+        dpurple|purpled) c=53;;
+
+        orange) c=202;;
+
+        teal) c=45;;
+        dteal|teald) c=31;;
+
+        white) c=255;;
+        dwhite|whited) c=253;;
+
+        black) c=000;;
+
+        pink) c=205;;
+
+        dgrey|spacegrey) c=240;;
+
+        nblack|nearblack) c=235;;
+
+        camogreen) c=22;;
+        dinogreen) c=119;;
+
+        *) {
+            # Check is valid or don't use
+            c="$colour_name"
+
+            # to be safe
+            c=255
+        }
+    esac
+
+    printf -- "%s" "$c"
+
+    return 0
+}
+
+
+sedinneropts=
+CASE_INSENSITIVE=
+fg_code=
+bg_code=
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -c|-f|-fg) {
+        fg_code="$(colour_name_to_number $2)"
+        shift
+        shift
+    }
+    ;;
+
+    -b|-bg) {
+        bg_code="$(colour_name_to_number $2)"
+        shift
+        shift
+    }
+    ;;
+
+    -dc|-df|-dfg) {
+        dfg_code="$(colour_name_to_number $2)"
+        shift
+        shift
+    }
+    ;;
+
+    -db|-dbg) {
+        dbg_code="$(colour_name_to_number $2)"
+        shift
+        shift
+    }
+    ;;
+
+    -r) {
+        reversed=y
+        shift
+    }
+    ;;
+
+    -i) {
+        CASE_INSENSITIVE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+test -z "$dfg_code" && test -n "$DEFAULT_FG" && dfg_code="$(colour_name_to_number $DEFAULT_FG)"
+test -z "$dbg_code" && test -n "$DEFAULT_BG" && dbg_code="$(colour_name_to_number $DEFAULT_BG)"
+
+if test "$CASE_INSENSITIVE" = "y"; then
+    sedinneropts="${sedinneropts}I"
+fi
+
+pattern="$1"
+: "${pattern:=".*"}"
+
+# Can't do this or it will break patterns in sed
+# pattern="$(p "$pattern" | qne)"
+
+c=
+
+code="$(
+test "$reversed" = "y" && tput rev;
+test -n "$fg_code" && tput setaf $fg_code
+test -n "$bg_code" && tput setab $bg_code
+)"
+
+post_code="$(
+if test -n "${dfg_code}${dbg_code}"; then
+    tput sgr0
+    test -n "$dfg_code" && tput setaf $dfg_code
+    test -n "$dbg_code" && tput setab $dbg_code
+else
+    tput sgr0
+fi
+)"
+
+sed -u "s/\($pattern\)/$code\1$post_code/g$sedinneropts"
