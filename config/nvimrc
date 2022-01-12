@@ -311,6 +311,7 @@ fun! GeneralSyntax()
     syntax match redpill "\clibertyprime"
     syntax match crown "\calphapapa"
     hi bluepill cterm=NONE ctermfg=027 ctermbg=204
+    syntax match bluepill "\c\<Megan\>\([\- .]Goodwin\)\?[\a]\@!" " Megan Goodwin
     syntax match bluepill "\clibertyprimebot"
     hi hannah cterm=NONE ctermfg=142 ctermbg=237
     syntax match hannah "\c\<Hannah\>\( Clark[\- .]Younger\)\?[\a]\@!"
