@@ -13,7 +13,7 @@ export TTY
 # Chann.el v2.0
 # - Give an AGI control of a terminal
 #   - Achieve this using natural-language-to-code, but what code?
-#     - Possibly a set of prescribed commands together with NLSH-style prompting
+#     - Possibly a set of prescribed valid commands together with NLSH-style prompting
 
 # Version 2.0, clojure
 # http://github.com/semiosis/channel/blob/master/README.md
