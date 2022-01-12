@@ -18,6 +18,7 @@ export TTY
 # Examples:
 # channel "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group"
 # channel "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
+# channel -who "March Hare, the Hatter and the Dormouse" -on-behalf-of "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
 
 # Without an explicit command to connect to, run a madteaparty client
 
