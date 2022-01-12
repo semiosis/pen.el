@@ -55,7 +55,10 @@ password="$username"
 # TODO Run inside a named tmux
 # The bots ultimately control a tmux
 
-pen-tm -d ns -n mtp-users
+# This is idempotent
+# Ensure the mpt-users session exists
+pen-tm -d ns -np -n mtp-users
+
 pen-x \
     -sh "pen-irssi" \
     -e "irssi" \
