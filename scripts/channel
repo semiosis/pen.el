@@ -15,6 +15,21 @@ export TTY
 
 # http://github.com/semiosis/channel/blob/master/README.md
 
+sn="$(basename "$0")"
+if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
+    $HOME/.emacs.d/host/pen.el/scripts/$sn "$@"
+    exit "$?"
+fi
+
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
+if { ! inside-docker-p; }; then
+    pen sh "$sn" "$@"
+    exit "$?"
+fi
+
 channel-logo 1>&2
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
