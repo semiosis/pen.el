@@ -63,4 +63,5 @@ esac; done
 
 # pen-eterm madteaparty "$on_behalf_of" "$@"
 
-pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows))"
+FRAMETYPE=tty
+pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$who") t))(delete-other-windows))"
