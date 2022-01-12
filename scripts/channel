@@ -1,16 +1,16 @@
 #!/bin/bash
 export TTY
 
-# Channel
+# Chann.el
 # Version 1.0, bash
 
 # The practice of channeling - a person's body being taken over by a spirit for
 # the purpose of communication - has been around for millennia.
 
-# channel v1.0
+# chann.el v1.0
 # - Run a chatbot that sees only a terminal (program independent)
 #   - The chatbot may have multiple personalities. i.e. a Mad-Hatter's Tea-Party
-# channel v2.0
+# chann.el v2.0
 # - Give an AGI control of a terminal
 
 # http://github.com/semiosis/channel/blob/master/README.md
