@@ -12,6 +12,7 @@ export TTY
 #   - The chatbot may have multiple personalities. i.e. a Mad-Hatter's Tea-Party
 # chann.el v2.0
 # - Give an AGI control of a terminal
+#   - Achieve this using natural-language-to-code
 
 # http://github.com/semiosis/channel/blob/master/README.md
 
