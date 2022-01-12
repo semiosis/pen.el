@@ -52,6 +52,9 @@ password="$username"
 #     -e correct -s Y -c m \
 #     -i
 
+# TODO Run inside a named tmux
+# The bots ultimately control a tmux
+
 pen-x \
     -sh "pen-irssi" \
     -e "irssi" \
