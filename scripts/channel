@@ -7,13 +7,14 @@ export TTY
 # The practice of channeling - a person's body being taken over by a spirit for
 # the purpose of communication - has been around for millennia.
 
-# chann.el v1.0
+# Chann.el v1.0
 # - Run a chatbot that sees only a terminal (program independent)
 #   - The chatbot may have multiple personalities. i.e. a Mad-Hatter's Tea-Party
-# chann.el v2.0
+# Chann.el v2.0
 # - Give an AGI control of a terminal
 #   - Achieve this using natural-language-to-code
 
+# Version 2.0, clojure
 # http://github.com/semiosis/channel/blob/master/README.md
 
 # Examples:
