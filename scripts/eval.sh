@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+
 sn="$(basename "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
     ~/.emacs.d/host/pen.el/scripts/$sn "$@"
