@@ -34,6 +34,7 @@ script_append_nonliteral() {
     return 0
 }
 
+# literal print
 lit() {
     NEWLINE=y
     SPACES=n
