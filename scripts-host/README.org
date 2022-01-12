@@ -1,2 +1,2 @@
 # Host scripts
-This directory contains scripts that are available to the host.
+This directory contains scripts that are available on the host's PATH.
