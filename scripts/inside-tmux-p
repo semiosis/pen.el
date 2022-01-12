@@ -1,0 +1,3 @@
+#!/bin/sh
+
+test -n "$TMUX" || test -n "$PEN_TMUX"
