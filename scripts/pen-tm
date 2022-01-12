@@ -646,11 +646,11 @@ case "$f" in
 
         tmsessionname="${f}-$caller_slug-$(date-ts)"
 
-        cmd="unset TTY; pen-x -s \"${f}\" -c m -e \"\$\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
+        cmd="unset TTY; pen-x -s \"${f}\" -c m -e \"\$\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
 
         TMUX= tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "$tmsessionname"
 
-        xt -b -E "tmux setenv -t $(aqf "$tmsessionname") WINDOWID $(aqf "\$WINDOWID") \\; respawnp -k -t $(aqf "$tmsessionname:1") $(aqf "$cmd") \\; attach -t $(aqf "$tmsessionname")"
+        xt -b -E "tmux setenv -t $(cmd-nice-posix "$tmsessionname") WINDOWID $(cmd-nice-posix "\$WINDOWID") \\; respawnp -k -t $(cmd-nice-posix "$tmsessionname:1") $(cmd-nice-posix "$cmd") \\; attach -t $(cmd-nice-posix "$tmsessionname")"
     }
     ;;
 
@@ -663,7 +663,7 @@ case "$f" in
         caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
 
 
-        cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(aqf \"$CALLER_TARGET\":)\" -c m -i"
+        cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
 
         tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
 
@@ -734,7 +734,7 @@ case "$f" in
     ;;
 
     goto-fzf) {
-        eval "tmux run -b $(aqf "pen-tm find-window-from-session -no-activate")"
+        eval "tmux run -b $(cmd-nice-posix "pen-tm find-window-from-session -no-activate")"
     }
     ;;
 
@@ -840,7 +840,7 @@ case "$f" in
                 exit 0
             fi
 
-            new_pane="$(tmux neww -d -F "#{pane_id}" -P "echo | rosie match all.things | less -r; tmux swap-pane -s $(aqf "$new_pane") -t $(aqf "$CALLER_PANE")")"
+            new_pane="$(tmux neww -d -F "#{pane_id}" -P "echo | rosie match all.things | less -r; tmux swap-pane -s $(cmd-nice-posix "$new_pane") -t $(cmd-nice-posix "$CALLER_PANE")")"
 
             if test -z "$CMD"; then
                 if test "$#" -gt 0; then
@@ -854,7 +854,7 @@ case "$f" in
             tmux swap-pane -s "$new_pane" -t "$CALLER_PANE"
             tmux rename-window -t "$CALLER_PANE" "$new_pane"
 
-            tmux respawn-pane -k -t "$new_pane" "$CMD; tmux swap-pane -s $(aqf "$new_pane") -t $(aqf "$CALLER_PANE")" > /tmp/utehont.txt
+            tmux respawn-pane -k -t "$new_pane" "$CMD; tmux swap-pane -s $(cmd-nice-posix "$new_pane") -t $(cmd-nice-posix "$CALLER_PANE")" > /tmp/utehont.txt
 
             if test "$RESERVE" = "y"; then
                 tmux select-window -t "$CALLER_PANE"
@@ -1239,7 +1239,7 @@ case "$f" in
 
         d_bn="$(basename "$CWD")"
         if test "$d_bn" = /; then
-            d_bn=root
+            d_bn=rootdir
         fi
 
         if [ -z "$session_name" ]; then
@@ -1312,7 +1312,7 @@ case "$f" in
             if test "$HAS_PARENT" = "y"; then
                 export HIGHLIGHT
                 roe_para="$(test "$REMAIN_ON_EXIT" = "y" && printf -- "%s" "-r")"
-                full_id="$(pen-tm -d nw -P $roe_para -d -t "$TARGET" -n "$displayed_name" -c "$CWD" "pen-tm attach $(aqf "$session_name"); sleep 0.1")"
+                full_id="$(pen-tm -d nw -P $roe_para -d -t "$TARGET" -n "$displayed_name" -c "$CWD" "pen-tm attach $(cmd-nice-posix "$session_name"); sleep 0.1")"
 
                 tmux setenv -t "$session_name:" "PARENT_WINDOW_ID" "$full_id"
             else
@@ -1464,7 +1464,7 @@ case "$f" in
 
     runreturn) { # Am I going to delete this?
         tf_returncode="$(mktemp -t tf_returncodeXXXXXX || echo /dev/null)"
-        trap "rm $(aqf "$tf_returncode") 2>/dev/null" 0
+        trap "rm $(cmd-nice-posix "$tf_returncode") 2>/dev/null" 0
 
         cmd="$1; echo \$? > $tf_returncode"
 
@@ -1973,9 +1973,9 @@ case "$f" in
         fi
 
         if test "$NEOVIM" = "y"; then
-            cmd="nv -E -term $(aqf "$cmd")"
+            cmd="nv -E -term $(cmd-nice-posix "$cmd")"
         elif test "$NEOVIM_TMUX" = "y"; then
-            cmd="nvt -E $(aqf "$cmd")"
+            cmd="nvt -E $(cmd-nice-posix "$cmd")"
         fi
 
         if [ -z "$dir" ]; then
@@ -2608,7 +2608,7 @@ case "$f" in
                     fi
                     export CWD="$dn"
 
-                    pen-tm -f -te -d nw -c "$dn" "zcd $(aqf "$dnq")"
+                    pen-tm -f -te -d nw -c "$dn" "zcd $(cmd-nice-posix "$dnq")"
                 fi
                 exit 0
             }
