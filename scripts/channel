@@ -15,7 +15,7 @@ export TTY
 
 # http://github.com/semiosis/channel/blob/master/README.md
 
-channel-logo
+channel-logo 1>&2
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
