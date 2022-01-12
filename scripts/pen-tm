@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+
 if test "$DEBUG_MODE" = "y"; then
     set -v
     export DEBUG_MODE=y
@@ -1239,9 +1241,9 @@ case "$f" in
 
         if [ -z "$session_name" ]; then
             if [ $# -gt 0 ]; then
-                session_name="$d_bn/$1"
+                session_name="${d_bn}/$1"
             else
-                session_name="$d_bn"
+                session_name="${d_bn}"
             fi
         fi
 

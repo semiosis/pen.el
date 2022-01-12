@@ -55,6 +55,7 @@ password="$username"
 # TODO Run inside a named tmux
 # The bots ultimately control a tmux
 
+pen-tm -d ns -n mtp-users
 pen-x \
     -sh "pen-irssi" \
     -e "irssi" \
