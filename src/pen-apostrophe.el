@@ -5,6 +5,7 @@
   (pen-snq (cmd "pen" "-running-p")))
 
 ;; TODO Complete the apostrophe version of hhgttg
+;; e:ihhgttg
 (defun ihhgttg ()
   (interactive)
   (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
