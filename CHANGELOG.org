@@ -28,3 +28,9 @@ New docker image.
 
 + Contrib:
   - asktutor (tutor for any mode)
+
+** 12.01.22
+Pen.el v2.0.
+
+** 13.01.22
+Chann.el v1.0
