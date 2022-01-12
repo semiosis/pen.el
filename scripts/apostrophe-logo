@@ -15,6 +15,7 @@ IFS= read -r -d '' apo_logo <<'HEREDOC'
   .:' /    |   /`-'  `-'/ ._)/   /      `-' /`-'_.'    |(__.'  
  (__.'     `-'/        /                   /                   
                                                                
+                  "It's a little bit like a soliloquy."        
 HEREDOC
 
 echo
