@@ -1,0 +1,2 @@
+# Host scripts
+This directory contains scripts that are available to the host.
