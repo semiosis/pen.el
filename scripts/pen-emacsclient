@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+cmd1 "$sn" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null >> "/tmp/$sn.txt"
+
+emacsclient "$@"

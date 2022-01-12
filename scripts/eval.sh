@@ -86,8 +86,8 @@ fi
 
 # Consider using timeout here
 sentinel_string="tm_sentinel_${RANDOM}_$$"
-# unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"
-tmux neww -d -n eval-ec-$SOCKET "$(cmd timeout 10 unbuffer emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
+# unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"
+tmux neww -d -n eval-ec-$SOCKET "$(cmd timeout 10 unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
 tmux wait-for "$sentinel_string"
 
 export SOCKET

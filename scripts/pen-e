@@ -685,13 +685,13 @@ export TTY
 if ( printf -- "%s\n" "$elisp" | grep -q -P "call-interactively"; ); then
     if test "$#" -gt 0 && test -e "$last_arg_path"; then
         {
-            unbuffer pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))" \"$last_arg_path\")" -e KILL_FRAME -c m
+            unbuffer pen-x -ub -sh "$(cmd pen-emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))" \"$last_arg_path\")" -e KILL_FRAME -c m
         } &>/dev/null
     else
         # This was hanging
-        # pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m &>/dev/null &
+        # pen-x -ub -sh "$(cmd pen-emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m &>/dev/null &
         {
-            unbuffer pen-x -ub -sh "$(cmd emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m
+            unbuffer pen-x -ub -sh "$(cmd pen-emacsclient -a "" -t -s ~/.emacs.d/server/$SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m
         } &>/dev/null
     fi
 fi

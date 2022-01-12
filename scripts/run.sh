@@ -96,9 +96,9 @@ in-tm() {
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        in-tm nvc emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+        in-tm nvc pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
     else
-        in-tm emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+        in-tm pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
     fi
 }
 
