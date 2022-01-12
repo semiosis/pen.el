@@ -24,4 +24,5 @@ pyf() {
 
 export PATH=$PATH:/usr/local/go/bin
 
-unset TMUX
+# I actually *do* want this to be set, so I know if I need to create a new tmux or not for, cosm, say
+# unset TMUX
