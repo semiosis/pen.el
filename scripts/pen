@@ -18,6 +18,8 @@ sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$bn")"
 
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+
 inside-docker-p() {
     test -f /.dockerenv
 }
