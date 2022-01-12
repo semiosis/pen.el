@@ -2,7 +2,7 @@
   (f-file-p "/.dockerenv"))
 
 (defun pen-container-running ()
-  (pen-snq (cmd "pen" "-running-p")))
+  (pen-snq (pen-cmd "pen" "-running-p")))
 
 ;; TODO Complete the apostrophe version of hhgttg
 ;; e:ihhgttg
@@ -17,7 +17,7 @@
   (if (and (not (pen-inside-docker))
            (not (pen-container-running)))
       (progn
-        (pen-term-nsfa (cmd "pen" "-n"))
+        (pen-term-nsfa (pen-cmd "pen" "-n"))
         (message "Starting Pen server")))
 
   (if (not name)
@@ -39,7 +39,7 @@
   (if (and (not (pen-inside-docker))
            (not (pen-container-running)))
       (progn
-        (pen-term-nsfa (cmd "pen" "-n"))
+        (pen-term-nsfa (pen-cmd "pen" "-n"))
         (message "Starting Pen server")))
 
   (if (not text)
@@ -62,7 +62,7 @@
   (if (and (not (pen-inside-docker))
            (not (pen-container-running)))
       (progn
-        (pen-term-nsfa (cmd "pen" "-n"))
+        (pen-term-nsfa (pen-cmd "pen" "-n"))
         (message "Starting Pen server")))
 
   (if (not text)
