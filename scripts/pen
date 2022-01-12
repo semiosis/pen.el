@@ -642,6 +642,8 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
     rp="$(realpath "$1")"
     bn="$(basename "$rp")"
 
+    export NO_QUIT_DAEMONS=y
+
     if ! inside-docker-p; then
         ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
         shift
@@ -1361,6 +1363,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
         --env PEN_USE_GUI \
         --env PEN_NO_TM \
+        --env NO_QUIT_DAEMONS \
         --env USE_NVC \
         --env TERM \
         --env USE_NVC \
