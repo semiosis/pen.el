@@ -16,9 +16,9 @@ export TTY
 # http://github.com/semiosis/channel/blob/master/README.md
 
 # Examples:
-# channel "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group"
-# channel "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
+# channel -on-behalf-of "Mad Tea-Party group" "March Hare, the Hatter and the Dormouse"
 # channel -who "March Hare, the Hatter and the Dormouse" -on-behalf-of "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
+# channel -who "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
 
 # Without an explicit command to connect to, run a madteaparty client
 
@@ -65,8 +65,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-: "${who:="$1"}"
-shift
+if test -z "$who"; then
+    : "${who:="$1"}"
+    shift
+fi
 
 : "${on_behalf_of:="$who"}"
 
