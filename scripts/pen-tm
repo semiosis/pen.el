@@ -1238,6 +1238,9 @@ case "$f" in
         fi
 
         d_bn="$(basename "$CWD")"
+        if test "$d_bn" = /; then
+            d_bn=root
+        fi
 
         if [ -z "$session_name" ]; then
             if [ $# -gt 0 ]; then
@@ -1247,9 +1250,7 @@ case "$f" in
             fi
         fi
 
-        if test "$HAS_PARENT" = "y"; then
-            session_name="${PARENT_SESSION_NAME}_${session_name}"
-        fi
+        session_name="$(p "$session_name" | slugify)"
 
         if [ -z "$TARGET" ] && test "$HAS_PARENT" = "y"; then
             TARGET="$CALLER_TARGET"
@@ -1257,7 +1258,12 @@ case "$f" in
             TARGET="$(tmux display-message -p -t "$TARGET" '#{session_name}')"
         fi
 
-        session_exists=n
+        : "${CURRENT_SESSION_NAME:="$(tmux display-message -p -t "$TARGET" '#{session_name}')"}"
+        : "${PARENT_SESSION_NAME:="$CURRENT_SESSION_NAME"}"
+
+        if test "$HAS_PARENT" = "y"; then
+            session_name="${PARENT_SESSION_NAME}_${session_name}"
+        fi
 
         pen-tm -f session-exists "$session_name" && session_exists=y
         if ! test "$session_exists" = "y" || test "$force_create_session" = "y"; then
