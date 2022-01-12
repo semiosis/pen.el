@@ -83,9 +83,12 @@ export PEN_USER
 
 # So use cli args instead
 
+bufname="cterm-$(printf -- "%s " "$CMD" | slugify | cut -c 1-30 | sed -e 's/^-//' -e 's/-$//')"
+
 # This runs in the docker to the host
 # The "$@" are unneccesary because of CMD exported
 cterm-docker \
+    -bufname "$bufname" \
     pen-cterm-ssh \
     -ssh-to-host "$SSH_TO_HOST" \
     -cwd "$CWD" \

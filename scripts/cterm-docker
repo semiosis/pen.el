@@ -5,9 +5,21 @@ export TTY
 
 export USE_NVC
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -bufname) {
+        bufname="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 : ${modename:="$1"}
 script="$(pen-nsfa "$@")"
-bufname="$(p term "$@" | slugify | cut -c 1-30)"
+: "${bufname:="$(p term "$@" | slugify | cut -c 1-30)"}"
 
 # neovim cant be run inside emacs without compromising cursor position
 
