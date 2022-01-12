@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# x/pen-x
+# x/pen-x v1.0
 # A domain-specific language in bash for generating tcl/expect
 
 : ${TTY:="$(pen-tm-tty)"}
