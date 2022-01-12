@@ -65,7 +65,7 @@ pen-tm -d ns -p mtp-users -n "$username"
 session_name="mtp-users_$username"
 
 # Start pen-irssi inside of a tmux inside of the user's session
-pen-tm ns -T irssi -s -p "$session_name" -n irssi -a pen-irssi
+pen-tm ns -T "Mad Tea-Party" -s -p "$session_name" -n irssi -a pen-irssi
 # Kill the initial tmux window
 tmux kill-window -t "$session_name:1"
 
