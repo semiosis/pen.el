@@ -63,8 +63,11 @@ pen-tm -d ns -np -n mtp-users
 pen-tm -d ns -p mtp-users -n "$username"
 
 # Start pen-irssi inside of a tmux inside of the user's session
+pen-tm ns -s -p "$username" -a pen-irssi
+
+# Attach the user's session and automate it to log in and switch channel
 pen-x \
-    -sh "pen-irssi" \
+    -sh "TMUX= tmux attach -t '$username'" \
     -e "irssi" \
     -s "/connect irc.localhost 6697 $password $username" -c m \
     -e "Mode change" \
