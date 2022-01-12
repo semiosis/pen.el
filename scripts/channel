@@ -73,13 +73,14 @@ fi
 
 : "${on_behalf_of:="$who"}"
 
+# If the command isn't provided then run madteaparty
+
 : ${modename:="$1"}
 script="$(pen-nsfa "$@")"
 : "${bufname:="$(p channel "$@" | slugify | cut -c 1-30)"}"
 # neovim cant be run inside emacs without compromising cursor position
 elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
 pente "$elisp"
-
 
 FRAMETYPE=tty
 pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$who") t))(delete-other-windows))"
