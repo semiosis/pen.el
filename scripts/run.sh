@@ -102,6 +102,7 @@ runclient() {
     fi
 }
 
+pen-e qa
 if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
     echo Starting daemon pool in background 1>&2
     unbuffer pen-e sa &>/dev/null &

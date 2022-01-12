@@ -66,6 +66,8 @@ if test "$USE_POOL" = "y"; then
     # Wait until free clients
 
     while test -z "$SOCKET"; do
+        # ls ~/.pen/pool/available/pen-emacsd-* | pen-tv &>/dev/null
+
         for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
             SOCKET="$(basename "$socket_fp")"
             echo "$SOCKET" >> /tmp/d.txt
