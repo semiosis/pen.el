@@ -62,12 +62,16 @@ pen-tm -d ns -np -n mtp-users
 # Then create a nested session for the user
 pen-tm -d ns -p mtp-users -n "$username"
 
+session_name="mtp-users_$username"
+
 # Start pen-irssi inside of a tmux inside of the user's session
-pen-tm ns -s -p "$username" -a pen-irssi
+pen-tm ns -s -p "$session_name" -a pen-irssi -n irssi
+# Kill the initial tmux window
+tmux kill-window -t "$session_name:1"
 
 # Attach the user's session and automate it to log in and switch channel
 pen-x \
-    -sh "TMUX= tmux attach -t '$username'" \
+    -sh "TMUX= tmux attach -t '$session_name'" \
     -e "irssi" \
     -s "/connect irc.localhost 6697 $password $username" -c m \
     -e "Mode change" \
