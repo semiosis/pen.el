@@ -1,7 +1,10 @@
 #!/bin/bash
 export TTY
 
-if test -n "$TMUX"; then
+if test -n "$PEN_TMUX"; then
+    server="$(echo "$PEN_TMUX" | cut -d , -f 1 | xargs basename)"
+    # : ${server:="Pen"}
+elif test -n "$TMUX"; then
     server="$(echo "$TMUX" | cut -d , -f 1 | xargs basename)"
     # : ${server:="Pen"}
 else
