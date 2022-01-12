@@ -3,6 +3,9 @@ export TTY
 
 # penelfonts -f dietcola Apostrophe
 
+# The dark blue symbolises fiction
+# The dark red seams symbolise reality
+
 IFS= read -r -d '' apo_logo <<'HEREDOC'
                                                                
           /\                                                   
