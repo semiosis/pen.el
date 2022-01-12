@@ -2008,8 +2008,8 @@ the URL of the image to the kill buffer instead."
 
 (define-key image-map (kbd "r") nil)
 
-(define-key eww-mode-map (kbd ",") (lm (call-interactively 'eww-lnum-universal)))
-(define-key eww-mode-map (kbd ".") (lm (call-interactively 'eww-lnum-follow)))
+(define-key eww-mode-map (kbd ",") (pen-lm (call-interactively 'eww-lnum-universal)))
+(define-key eww-mode-map (kbd ".") (pen-lm (call-interactively 'eww-lnum-follow)))
 
 (define-key eww-bookmark-mode-map (kbd "b") 'eww-add-bookmark-manual)
 (define-key eww-bookmark-mode-map (kbd "k") 'eww-bookmark-kill-ask)

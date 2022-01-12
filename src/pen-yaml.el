@@ -44,7 +44,7 @@
         (if (sor key)
             (let ((s (pen-snc (pen-cmd "yq" "-r" key) (buffer-string))))
               (with-current-buffer
-                  (esps (lm (nbfs s)))
+                  (esps (pen-lm (nbfs s)))
                 (mark-whole-buffer)))))))
 
 

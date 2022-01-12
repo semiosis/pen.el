@@ -78,7 +78,7 @@ START and END can be in either order."
       (setq cmd (tmuxify-cmd "zsh"))
     ;; (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\"")
     )
-  (e/sph (lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
+  (e/sph (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
 
 ;; (defalias 'sph-term 'pen-e-sph-zsh)
 ;; (defalias 'term-sph 'pen-e-sph-zsh)
@@ -90,7 +90,7 @@ START and END can be in either order."
       (setq dir (cwd)))
   (if (not cmd)
       (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\""))
-  (e/spv (lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
+  (e/spv (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
 
 ;; (defalias 'term-spv 'pen-e-spv-zsh)
 ;; (defalias 'tspv 'pen-e-spv-zsh)
@@ -104,7 +104,7 @@ START and END can be in either order."
         ;; (setq cmd (concat "TMUX= tmux new -c " (pen-q dir) " -n zsh \"CWD= zsh\""))
         (setq cmd "zsh")
         (setq cmd (tmuxify-cmd cmd dir cmd))))
-  (pen-e-sps (lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
+  (pen-e-sps (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
 (defalias 'term-sps 'pen-e-sps-zsh)
 (defalias 'tsps 'pen-e-sps-zsh)
 
