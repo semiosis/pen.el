@@ -36,6 +36,7 @@ Pen.el v2.0.
 - Imaginary interpreter v2.0
 - NL·SH v2.0
 - LookingGlass v1.0i
+- Paracosm v1.0
 
 Taking steps towards adding Transients.
 
