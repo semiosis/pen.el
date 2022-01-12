@@ -56,3 +56,5 @@ esac; done
 : "${on_behalf_of:="$who"}"
 
 pen-eterm madteaparty "$on_behalf_of" "$@"
+
+pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows))"
