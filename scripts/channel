@@ -15,6 +15,12 @@ export TTY
 
 # http://github.com/semiosis/channel/blob/master/README.md
 
+# Examples:
+# channel "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group"
+# channel "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
+
+# Without an explicit command to connect to, run a madteaparty client
+
 sn="$(basename "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
     $HOME/.emacs.d/host/pen.el/scripts/$sn "$@"
@@ -55,6 +61,6 @@ esac; done
 : "${on_behalf_of:="$2"}"
 : "${on_behalf_of:="$who"}"
 
-pen-eterm madteaparty "$on_behalf_of" "$@"
+# pen-eterm madteaparty "$on_behalf_of" "$@"
 
 pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows))"
