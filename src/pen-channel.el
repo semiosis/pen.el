@@ -4,7 +4,7 @@
   (if (and (not (pen-inside-docker))
            (not (pen-container-running)))
       (progn
-        (pen-term-nsfa (cmd "pen" "-n"))
+        (pen-term-nsfa (pen-cmd "pen" "-n"))
         (message "Starting Pen server")))
 
   (if (not name)
