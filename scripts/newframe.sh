@@ -28,10 +28,11 @@ cmd-onelineify-safe() {
     done | sed 's/ $//'
 }
 
+# cmd-unonelineify-safe is used for an eval. Therefore, I must properly escape contained single quotes
 cmd-unonelineify-safe() {
     for var in "$@"
     do
-        printf "'%s' " "$(printf %s "$var" | pen-str unonelineify-safe)";
+        printf "'%s' " "$(printf %s "$var" | pen-str unonelineify-safe | sed "s/'/'\\\\''/g")";
     done | sed 's/ $//'
 }
 
