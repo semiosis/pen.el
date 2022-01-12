@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# A domain-specific language in bash for generating tcl/expect
+
 : ${TTY:="$(pen-tm-tty)"}
 export TTY
 
