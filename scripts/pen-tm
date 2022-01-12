@@ -48,6 +48,7 @@ editor() {
     fi
 }
 
+# I still need to know what terminal it was, so do this
 export PEN_TMUX="$TMUX"
 # This must be unset so terminal open in the correct places
 unset TMUX
