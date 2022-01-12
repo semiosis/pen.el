@@ -1,6 +1,8 @@
 #!/bin/sh
 export TTY
 
+# cmd-unonelineify-safe is used for an eval. Therefore, I must properly escape contained single quotes
+
 cmd_unonelineify_safe() {
     for var in "$@"
     do
