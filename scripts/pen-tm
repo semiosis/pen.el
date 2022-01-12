@@ -1265,10 +1265,12 @@ case "$f" in
             session_name="${PARENT_SESSION_NAME}_${session_name}"
         fi
 
+        : "${session_title:="$session_name"}"
+
         pen-tm -f session-exists "$session_name" && session_exists=y
         if ! test "$session_exists" = "y" || test "$force_create_session" = "y"; then
             mkdir -p "$CWD"
-            displayed_name="$(printf -- "%s" "$session_name" | displayedname)"
+            displayed_name="$(printf -- "%s" "$session_title" | displayedname)"
 
             CWD="$CWD" tmux new-session -d -s "$session_name" -c "$CWD" "zsh" \; \
                 setenv -t "$session_name" "TM_SESSION_NAME" "$session_name" \; \
