@@ -8,6 +8,10 @@ export TTY
 # AI personalities may be created and join the IRC server, interact inside of channels, etc.
 # Human users may subsume AI personalities.
 
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -join) {
@@ -19,6 +23,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+if { ! inside-docker-p; }; then
+    pen sh madteaparty "$@"
+    exit "$?"
+fi
 
 : "${irc_channel_name:="metameetup"}"
 
