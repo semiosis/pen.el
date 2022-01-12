@@ -4,7 +4,7 @@ export TTY
 cmd_unonelineify_safe() {
     for var in "$@"
     do
-        printf "'%s' " "$(printf %s "$var" | pen-str unonelineify-safe | bs "'")";
+        printf "'%s' " "$(printf %s "$var" | pen-str unonelineify-safe | sed "s/'/'\\\\''/")";
     done | sed 's/ $//'
 }
 
