@@ -957,6 +957,8 @@ case "$sn" in
 
     paracosm|cosm) {
         show_banner=y
+        HAS_TTY=y
+        PEN_USE_GUI=n
         # set -- -ic "(funcall-interactively 'pen-org-brain-switch-brain $(cmd-nice "$1"))"
 
         set -- -ic "(call-interactively 'pen-org-brain-switch-brain)"

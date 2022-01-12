@@ -12,4 +12,4 @@ IFS= read -r -d '' paracosm_logo <<'HEREDOC'
 HEREDOC
 
 echo
-printf -- "%s\n" "$paracosm_logo" | hls dred
+printf -- "%s\n" "$paracosm_logo" | pen-hls dred
