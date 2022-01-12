@@ -242,7 +242,7 @@ commands to use in that buffer.
       (if (and
            ;; pen-term-cl-refresh-after-fz
            (major-mode-p 'term-mode))
-          (run-with-idle-timer 0.1 nil
+          (run-with-idle-timer 0.3 nil
                                `(lambda ()
                                   (with-current-buffer
                                       ,(current-buffer)
