@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# v1.0
+
 # Shadow.flf
 
 IFS= read -r -d '' paracosm_logo <<'HEREDOC'
