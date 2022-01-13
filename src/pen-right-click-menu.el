@@ -181,7 +181,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (defun pen-term-nsfa (cmd &optional input modename closeframe buffer-name dir)
   "Like term but can run a shell command.
-It stands for `New Script From Arguments`"
+`nsfa` stands for `New Script From Arguments`"
   (interactive (list (read-string "cmd:")))
   (if input
       (let ((tf (make-temp-file "pen-term-nsfa" nil nil input)))
