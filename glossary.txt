@@ -1,3 +1,21 @@
+prompter
+    The agent doing the prompting.
+
+    This could be a human or a computer
+    program.
+
+    The computer program could be a chatbot,
+    for example.
+
+promptee
+    The agent being prompted.
+
+    This could be a language model, a human or
+    a prompt server.
+
+prompt server
+    Pen.el is an example of a prompt server.
+
 transvariadicator
     [#pen.el]
 
