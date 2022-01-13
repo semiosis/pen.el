@@ -1995,4 +1995,10 @@ May use to generate code from comments."
 ;; (imacro/2 generate-fibonacci (n))
 ;; (imacro/1 generate-fibonacci)
 
+(defmacro pen-human (&rest body)
+  "Run prompt functions below with the human engine"
+  `(eval
+    `(let ((pen-force-engine "Human"))
+       ,',@body)))
+
 (provide 'pen)
