@@ -446,8 +446,9 @@
     (list ,value)))
 
 (comment
- ;; Using =ilambda=, run real functions that do things. Don't just use pure imaginary functions
- 
+ ;; Using =ilambda=, run real functions that do things.
+ ;; Don't just use pure imaginary functions
+
  (defun internet-is-connected-p ()
    (eval (imacro internet-connected-p)))
 
