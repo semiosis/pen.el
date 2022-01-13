@@ -23,10 +23,15 @@
              (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name-or-names :no-select-result nil)))))
          (slug (slugify command nil 30))
          (bufname (concat "chann-" slug))
+          ;; modename should give me
+          ;; - a channel-term-mode,
+          ;; - channel-term-mode-map, and
+          ;; - channel-term-mode-hook
+         (modename bufname)
          (buf
           ;; Do I want to run in a term? Or would I rather run this in a tmux split pane
-          ;; I probably want to do both
-          (pen-term (pen-nsfa command) t bufname bufname t)))
+          ;; I probably want to do both.
+          (pen-term (pen-nsfa command) t modename bufname t)))
 
     ;; TODO Start a cterm with the channeled chatbot running as a program loop inside of that buffer
     (let* ((el (pen-snc (pen-cmd "channel-repl" "-getcomintcmd" name-or-names "" blurb))))
