@@ -20,7 +20,7 @@ export TTY
 
 # Examples:
 # channel "White Rabbit"
-# channel "March Hare, the Hatter and the Dormouse"
+# channel "The March Hare, the Hatter and the Dormouse"
 # channel -on-behalf-of "Mad Tea-Party group" "March Hare, the Hatter and the Dormouse"
 # channel -who "March Hare, the Hatter and the Dormouse" -on-behalf-of "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
 # channel -who "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
@@ -79,22 +79,10 @@ fi
 
 # If the command isn't provided then run madteaparty
 
-username="$(p "$who" | slugify)"
-
 if test "$#" -eq 0; then
     set -- madteaparty "$who" "$@"
 fi
 
-# This should give me
-# - a channel-term-mode,
-# - channel-term-mode-map, and
-# - channel-term-mode-hook
-: ${modename:="channel"}
-script="$(pen-nsfa "$@")"
-: "${bufname:="$(p channel "$@" | slugify | cut -c 1-30)"}"
-# neovim cant be run inside emacs without compromising cursor position
-elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
-pente "$elisp"
-
-# FRAMETYPE=tty
-# pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$who") t))(delete-other-windows))"
+escaped_command="$(cmd-nice-posix "$(cmd-nice-posix "$@")")"
+FRAMETYPE=tty
+pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$who") $escaped_command t))(delete-other-windows))"
