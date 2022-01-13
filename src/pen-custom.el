@@ -66,6 +66,13 @@ This is useful for code-understanding when reading languages you don't understan
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defcustom pen-use-human-engine-if-disconnected t
+  "If on, resort to the Human engine when disconnected from the internet"
+  :type 'boolean
+  :group 'pen
+  :initialize (lambda(_sym _exp)
+                (custom-initialize-default _sym nil)))
+
 (defcustom pen-sh-update nil
   "Export UPDATE=y when executing sn and such"
   :type 'boolean
