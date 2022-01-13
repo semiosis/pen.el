@@ -80,6 +80,10 @@ fi
 
 username="$(p "$who" | slugify)"
 
+if test "$#" -eq 0; then
+    set -- madteaparty "$who" "$@"
+fi
+
 # This should give me
 # - a channel-term-mode,
 # - channel-term-mode-map, and
