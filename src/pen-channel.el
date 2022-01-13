@@ -21,7 +21,8 @@
             ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
             (pen-eipec
              (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil)))))
-         (bufname (concat "chann")))
+         (slug (slugify command nil 30))
+         (bufname (concat "chann-" slug)))
 
     ;; TODO Start a cterm with the channeled chatbot running as a program loop inside of that buffer
     (pen-term (pen-nsfa command) t bufname)
