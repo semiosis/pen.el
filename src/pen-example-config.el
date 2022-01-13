@@ -799,6 +799,7 @@
 (define-key pen-map (kbd "M-l M-r M-o") 'get-map-for-key-binding)
 (define-key pen-map (kbd "M-l M-r M-k") 'pen-ead-binding)
 (define-key pen-map (kbd "M-l M-r M-M") 'copy-keybinding-as-table-row-or-macro-string)
+(define-key pen-map (kbd "M-l M-r M-n") 'yank-function-from-binding)
 (define-key pen-map (kbd "M-l M-r M-m") 'record-keyboard-macro-string)
 
 (provide 'pen-example-config)
