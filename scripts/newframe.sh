@@ -77,7 +77,8 @@ if test "$USE_POOL" = "y"; then
         if test -n "$SOCKET"; then
             break
         fi
-        echo "$(date-ts-hr) Waiting for socket..." 1>&2
+        echo "$(date-ts-hr)"
+        echo "Waiting for socket..." 1>&2
         sleep 1
     done
 
