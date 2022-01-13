@@ -1,3 +1,5 @@
+;; `pen-define-prompt-function.el` contains the prompting pipeline
+
 (defmacro pen-split-macro-test-inner ()
   `(progn
      (etv ,testval)))
