@@ -1346,9 +1346,10 @@ But use the results-analyser."
   ((temperature 0.9))
   (sha1 "ceiling"))
 
- (pen-force
-  ((temperature 0.0))
-  (sha1 "ceiling")))
+ (pen-human
+  (pen-force
+   ((temperature 0.0))
+   (sha1 "ceiling"))))
 
 (defun pen-force-custom-test ()
   (interactive)
