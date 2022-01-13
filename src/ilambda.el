@@ -454,6 +454,7 @@
 
  (im internet-is-connected-p ())
 
+ ;; imacro lambda for ilambda
  (defmacro im (name &rest body)
    "
 example: (im internet-is-connected-p ())
