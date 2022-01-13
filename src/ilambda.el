@@ -460,6 +460,7 @@ example: (im internet-is-connected-p ())
 "
    `(progn
       (eval (imacro ,@body) ,@body)))
+ (defalias 'ilm 'im)
  (defalias 'ilmacro 'im)
  (defalias 'imaginary-lambda-macro 'im)
  (defalias 'imaginarily 'im))
