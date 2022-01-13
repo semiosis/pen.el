@@ -445,4 +445,7 @@
     (,funcsym ,@args)
     (list ,value)))
 
+(defun internet-is-connected-p ()
+  (eval (imacro internet-connected-p)))
+
 (provide 'ilambda)
