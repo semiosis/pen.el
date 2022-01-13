@@ -20,6 +20,7 @@
             (pen-eipec
              (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil))))))
 
+    ;; TODO Start a cterm with the channel chatbot running as a program loop inside of that buffer
     (let* ((el (pen-snc (pen-cmd "channel-repl" "-getcomintcmd" name "" blurb))))
       (pen-e-sps (pen-lm (pen-eval-string el))))))
 
