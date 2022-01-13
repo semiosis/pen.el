@@ -1,4 +1,5 @@
-;; `pen-define-prompt-function.el` contains the prompting pipeline
+;;; `pen-define-prompt-function.el` contains the prompting pipeline
+;;; i.e. 
 
 (defmacro pen-split-macro-test-inner ()
   `(progn
