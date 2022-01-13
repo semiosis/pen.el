@@ -802,6 +802,6 @@
 (define-key pen-map (kbd "M-l M-r M-n") 'yank-function-from-binding)
 (define-key pen-map (kbd "M-l M-r M-m") 'record-keyboard-macro-string)
 
-(define-key pen-map (kbd "<M-f4>") 'my/revert-kill-buffer-and-window)
+(define-key pen-map (kbd "<M-f4>") 'pen-revert-kill-buffer-and-window)
 
 (provide 'pen-example-config)
