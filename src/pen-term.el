@@ -279,7 +279,23 @@ commands to use in that buffer.
               (delete-window))))
       (ignore-errors
        (with-current-buffer buffer-to-kill
-           (remove-hook 'kill-buffer-hook delete-window-hook t))))))
+         (remove-hook 'kill-buffer-hook delete-window-hook t))))))
+
+(defun revert-buffer-no-confirm ()
+  "Revert buffer without confirmation."
+  (interactive)
+  (revert-buffer t t t))
+
+(defun force-revert-buffer ()
+  (interactive)
+  (ignore-errors
+    (revert-buffer-no-confirm)))
+
+(defun pen-revert-kill-buffer-and-window ()
+  (interactive)
+  (force-revert-buffer)
+
+  (pen-kill-buffer-and-window))
 
 (defun pen-term-kill-buffer-and-window ()
   (interactive)
