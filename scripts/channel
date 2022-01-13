@@ -19,6 +19,7 @@ export TTY
 # http://github.com/semiosis/channel/blob/master/README.md
 
 # Examples:
+# channel "White Rabbit"
 # channel "March Hare, the Hatter and the Dormouse"
 # channel -on-behalf-of "Mad Tea-Party group" "March Hare, the Hatter and the Dormouse"
 # channel -who "March Hare, the Hatter and the Dormouse" -on-behalf-of "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
@@ -95,5 +96,5 @@ script="$(pen-nsfa "$@")"
 elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
 pente "$elisp"
 
-FRAMETYPE=tty
-pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$who") t))(delete-other-windows))"
+# FRAMETYPE=tty
+# pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$who") t))(delete-other-windows))"
