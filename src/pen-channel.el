@@ -19,8 +19,8 @@
   (if (not (sor name-or-names))
       (setq name-or-names "The March Hare, the Hatter and the Dormouse"))
 
-  (if (not (sor command)
-           (setq command (cmd "madteaparty" name-or-names))))
+  (if (not (sor command))
+      (setq command (cmd "madteaparty" name-or-names)))
 
   (let* ((blurb
           (if auto
