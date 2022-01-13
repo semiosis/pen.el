@@ -14,6 +14,13 @@ promptee
     a prompt server.
 
 prompt server
+    A prompt server responds to prompting
+    queries with a prompting reponse.
+
+    A prompt server may wrap a language model,
+    or consult a human, computer program or
+    database.
+
     Pen.el is an example of a prompt server.
 
 transvariadicator
