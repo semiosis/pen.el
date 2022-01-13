@@ -450,3 +450,5 @@ agi libavdevice58 libavdevice-dev
     cmake ..
     make
 )
+
+agi ranger
