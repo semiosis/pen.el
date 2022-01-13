@@ -455,15 +455,18 @@
  (im internet-is-connected-p ())
 
  ;; imacro lambda for ilambda
- (defmacro im (name &rest body)
+ (defmacro ilm (name &rest body)
    "
-example: (im internet-is-connected-p ())
+example: (ilm internet-is-connected-p ())
 "
    `(progn
       (eval (imacro ,@body) ,@body)))
- (defalias 'ilm 'im)
- (defalias 'ilmacro 'im)
- (defalias 'imaginary-lambda-macro 'im)
- (defalias 'imaginarily 'im))
+
+ ;; Some alternative identifiers
+ ;; I chose gamma because it's an upside-down lambda
+ (defalias 'γ 'ilm)
+ (defalias 'ilmacro 'ilm)
+ (defalias 'imaginary-lambda-macro 'ilm)
+ (defalias 'imaginarily 'ilm))
 
 (provide 'ilambda)
