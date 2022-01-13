@@ -23,6 +23,7 @@
   (if (not name)
       (setq name "Marco Polo"))
 
+  ;; TODO With auto, give the user some control over the blurb to be generated
   (if auto
       (let* ((blurb (car (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result t)))))
 
