@@ -15,7 +15,6 @@
   ;; `(,pen-lsp-executable-path "--lib" "pen-langserver" ,@pen-lsp-server-args)
   `(,pen-lsp-executable-path ,@pen-lsp-server-args))
 
-
 ;; (pen-etv (pps (lsp-configuration-section "pylsp")))
 ;; (pen-etv (pps (lsp-configuration-section "pen")))
 
@@ -216,7 +215,6 @@
 (setq lsp-eldoc-render-all nil)
 (setq lsp-eldoc-enable-hover nil)
 
-
 (require 'el-patch)
 (el-patch-feature lsp-mode)
 (el-patch-defun lsp (&optional arg)
@@ -295,10 +293,6 @@ This issue might be caused by:
            "No LSP server for current mode")
          major-mode major-mode major-mode))))))
 
-
-
-
-
 (defun lsp-ui-pen-diagnostics ()
   "Show diagnostics belonging to the current line.
 Loop over flycheck errors with `flycheck-overlay-errors-in'.
@@ -333,9 +327,6 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
                 (add-to-list 'results message)))))
         (pen-list2str results)))))
 
-
-
-
 (defun pen-lsp-error-list (&optional path)
   (if (not path)
       (setq path (get-path-nocreate)))
@@ -358,12 +349,9 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
              (lsp-diagnostics))
     l))
 
-
-
 ;; $EMACSD/manual-packages/company-lsp/company-lsp.el
 ;; Sadly can't override because of lexical scope
 ;; j:company-lsp--candidates-async
-
 
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
