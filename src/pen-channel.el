@@ -24,8 +24,9 @@
          (slug (slugify command nil 30))
          (bufname (concat "chann-" slug))
          (buf
-          ;; Do I want to run in a term? Or would I rather run this in 
-          (pen-term (pen-nsfa command) t bufname)))
+          ;; Do I want to run in a term? Or would I rather run this in a tmux split pane
+          ;; I probably want to do both
+          (pen-term (pen-nsfa command) t bufname bufname t)))
 
     ;; TODO Start a cterm with the channeled chatbot running as a program loop inside of that buffer
     (let* ((el (pen-snc (pen-cmd "channel-repl" "-getcomintcmd" name-or-names "" blurb))))
