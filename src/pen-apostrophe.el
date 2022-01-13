@@ -32,7 +32,7 @@
             (pen-eipec
              (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil))))))
 
-    (let* ((el (pen-snc (pen-cmd "channel-repl" "-getcomintcmd" name "" blurb))))
+    (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
       (pen-e-sps (pen-lm (pen-eval-string el))))))
 
 (defun apostrophe-start-chatbot-from-selection (text)
