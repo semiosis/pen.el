@@ -11,3 +11,5 @@
 (idefun thing-to-hex-color (thing))
 
 (pen-tv (pen-human (thing-to-hex-color "watermelon")))
+
+(pen-tv (pen-human (thing-to-hex-color "surreptitious strawberry")))
