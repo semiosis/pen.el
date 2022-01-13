@@ -16,7 +16,7 @@ stty stop undef 2>/dev/null; stty start undef 2>/dev/null
 
 # export PEN_DEBUG=y
 
-export TERM=xterm-256color
+export TERM=screen-256color
 export LANG=en_US
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
