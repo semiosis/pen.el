@@ -163,6 +163,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
           (call-interactively (intern f))))))
 
 (defun pen-e-sps (&optional run)
+  "`sps` stands for `Split Sensibly`"
   (interactive)
   (split-window-sensibly)
   (other-window 1)
