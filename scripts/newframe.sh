@@ -66,6 +66,8 @@ if test "$USE_POOL" = "y"; then
 
     # Wait until free clients
 
+    # TODO Use e:with-exponential-backoff
+
     while test -z "$SOCKET"; do
         # ls ~/.pen/pool/available/pen-emacsd-* | pen-tv &>/dev/null
 
