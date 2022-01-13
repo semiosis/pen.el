@@ -436,10 +436,16 @@ agi graphicsmagick libgraphicsmagick++-q16-12 libgraphicsmagick++1-dev
 agi libavcodec-dev libavcodec58
 agi libavformat58 libavformat-dev
 agi libswscale-dev libswscale5
-
+agi libturbojpeg0 libturbojpeg0-dev
+agi libavutil56 libavutil-dev
 
 (
 cd ~/repos
 git clone "https://github.com/hzeller/timg"
 cd timg
+mkdir -p build
+cd build
+# This is the clean of cmake
+rm -f CMakeCache.txt
+cmake ..
 )
