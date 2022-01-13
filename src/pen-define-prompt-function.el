@@ -1,5 +1,9 @@
 ;;; `pen-define-prompt-function.el` contains the prompting pipeline
-;;; i.e. 
+;;; - prompt function generation
+;;; - templating
+;;; - preprocessing
+;;; - postprocessing
+;;; - analysis
 
 (defmacro pen-split-macro-test-inner ()
   `(progn
