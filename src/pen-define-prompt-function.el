@@ -2068,6 +2068,8 @@ Function names are prefixed with pf- for easy searching"
                         (engine-min-tokens (ht-get yaml-ht "engine-min-tokens"))
                         (engine-max-tokens (ht-get yaml-ht "engine-max-tokens"))
 
+                        (rate-limit-requests-per-min (ht-get yaml-ht "rate-limit-requests-per-min"))
+
                         (force-stop-sequence (ht-get yaml-ht "force-stop-sequence"))
 
                         (cant-n-complete (ht-get yaml-ht "cant-n-complete"))
