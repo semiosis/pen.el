@@ -78,7 +78,13 @@ fi
 
 # If the command isn't provided then run madteaparty
 
-: ${modename:="$1"}
+username="$(p "$who" | slugify)"
+
+# This should give me
+# - a channel-term-mode,
+# - channel-term-mode-map, and
+# - channel-term-mode-hook
+: ${modename:="channel"}
 script="$(pen-nsfa "$@")"
 : "${bufname:="$(p channel "$@" | slugify | cut -c 1-30)"}"
 # neovim cant be run inside emacs without compromising cursor position
