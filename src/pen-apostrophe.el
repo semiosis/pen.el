@@ -7,6 +7,7 @@
 ;; TODO Complete the apostrophe version of hhgttg
 ;; e:ihhgttg
 (defun ihhgttg ()
+  "`ihhgttg` stands for `Imaginary Hitchhiker's Guide To The Galaxy`"
   (interactive)
   (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
     (pen-e-sps (pen-lm (pen-eval-string el)))))
