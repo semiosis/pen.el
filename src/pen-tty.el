@@ -55,13 +55,12 @@
 (define-key key-translation-map (kbd "<f23>") (kbd "<S-f11>"))
 (define-key key-translation-map (kbd "<f24>") (kbd "<S-f12>"))
 
-(comment
- (defun yank-function-from-binding (sequence)
-   "Copies the function name associated with a key binding after entering it"
-   (interactive (list (format "%s" (key-description (read-key-sequence-vector "Key: ")))))
-   (let* ((fun (str (key-binding (kbd sequence)))))
-     (xc fun)
-     (message "%s" (concat "copied: " fun)))))
+(defun yank-function-from-binding (sequence)
+  "Copies the function name associated with a key binding after entering it"
+  (interactive (list (format "%s" (key-description (read-key-sequence-vector "Key: ")))))
+  (let* ((fun (str (key-binding (kbd sequence)))))
+    (xc fun)
+    (message "%s" (concat "copied: " fun))))
 
 (defun test-yank-function-from-binding ()
   (yank-function-from-binding "\e[21;2~")
