@@ -804,4 +804,10 @@
 
 (define-key pen-map (kbd "<M-f4>") 'pen-revert-kill-buffer-and-window)
 
+(require 'eterm-256color)
+(set-face-background 'eterm-256color-black nil)
+(set-face-foreground 'eterm-256color-black "#000000")
+;; This is needed for zsh
+(set-face-foreground 'eterm-256color-bright-black "#303030")
+
 (provide 'pen-example-config)
