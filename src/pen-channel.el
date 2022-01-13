@@ -16,8 +16,9 @@
   (let* ((blurb
           (if auto
               (car (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result t)))
-            ;; TODO Then a final human edit with a different emacs daemon
-            (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil)))))
+            ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
+            (pen-eipec
+             (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil))))))
 
     (let* ((el (pen-snc (pen-cmd "channel-repl" "-getcomintcmd" name "" blurb))))
       (pen-e-sps (pen-lm (pen-eval-string el)))))
