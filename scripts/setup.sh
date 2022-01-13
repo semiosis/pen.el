@@ -452,3 +452,8 @@ agi libavdevice58 libavdevice-dev
 )
 
 agi ranger
+
+(
+    cd ~/repos
+    git clone "https://github.com/mullikine/eterm-256color"
+)

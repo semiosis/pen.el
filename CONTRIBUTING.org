@@ -25,9 +25,6 @@ https://github.com/orgs/semiosis/teams/prompt-engineering
 
 Extending emacs packages with prompt functions.
 
-*** Discord channel
-860104344900599839
-
 *** Testing GPT-3 prompts without a key
 You may test prompts without a key using the =prompts= repository.
 
