@@ -454,4 +454,8 @@
 
  (im internet-is-connected-p ()))
 
+(defun im ()
+
+  )
+
 (provide 'ilambda)
