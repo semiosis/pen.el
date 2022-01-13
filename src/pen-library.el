@@ -584,4 +584,7 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
 (defun pen-eipec (input)
   (pen-eipe input t))
 
+(defun pen-internet-connected-p ()
+  (pen-snq "internet-connected-p"))
+
 (provide 'pen-library)
