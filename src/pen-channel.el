@@ -1,4 +1,7 @@
-(defun channel-chatbot-from-name (name &optional auto)
+(defun channel-chatbot-from-name (name command &optional auto)
+  "`name` is the name of the personality.
+`command` is the terminal command the personality commands.
+`auto`, if set to `t` will come up with the personality blurb without human interaction."
   (interactive (list (read-string-hist "person: ")))
 
   (if (and (not (pen-inside-docker))
