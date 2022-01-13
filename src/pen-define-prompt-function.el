@@ -71,6 +71,8 @@
           ;; Currently, this is inert.
           (final-engine
            (str (or
+                 (and (not (pen-internet-connected-p))
+                      "Human")
                  (and
                   (not pen-prompt-force-engine-disabled)
                   (sor ,force-engine))
