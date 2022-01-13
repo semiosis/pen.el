@@ -32,6 +32,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -d) {
+        export DEBUG=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -157,8 +163,8 @@ memory="${kickstarter} "
 
 # Sometimes I want to read multiple lines. How?
 while read -e -r user_input; do
-    # echo -en "\033[1A\033[2K"
-    # echo "$user_input"
+    test "$DEBUG" = y &&  echo -en "\033[1A\033[2K"
+    test "$DEBUG" = y &&  echo "$user_input"
 
     if test -n "$ii_input_echo_pp"; then
         IFS= read -rd '' ii_input_echo < <(printf -- "%s" "$user_input" | eval "$ii_input_echo_pp");typeset -p ii_input_echo &>/dev/null
@@ -168,8 +174,9 @@ while read -e -r user_input; do
         fi
     fi
 
-    # printf -- "%s" "$user_input"
+    test "$DEBUG" = y && printf -- "%s" "$user_input"
 
+    # These commands are for re-prompting
     case "$user_input" in
         "!!"|""|"!1"|"~1") {
             memory="$last_memory"
