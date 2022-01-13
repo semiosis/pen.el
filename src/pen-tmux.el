@@ -121,7 +121,12 @@ START and END can be in either order."
         (if (and (variable-p 'sh-update)
                  (eval 'sh-update))
             (setq cmd (concat "upd " cmd)))
-        (pen-snc (concat "unbuffer pen-tm -f -d -te sps " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))))))
+        (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te sps " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))
+              ;; pen-tm ns -np -s -c "/root/notes/" "zsh"
+              (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q (or dir (get-dir))) " " (pen-q cmd))))
+          (if (>= (prefix-numeric-value current-prefix-arg) 4)
+              (pen-e-sps-zsh cmd-tm-here)
+            (pen-snc cmd-tm-split)))))))
 (defalias 'pen-tm-sps 'pen-sps)
 
 (defun pen-sph (&optional cmd nw_args input dir)
