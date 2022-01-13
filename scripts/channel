@@ -85,4 +85,4 @@ fi
 
 escaped_command="$(cmd-nice-posix "$(cmd-nice-posix "$@")")"
 FRAMETYPE=tty
-pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$who") $escaped_command t))(delete-other-windows))"
+pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$who") $escaped_command t t))(delete-other-windows))"
