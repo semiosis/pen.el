@@ -452,13 +452,13 @@
  (defun internet-is-connected-p ()
    (eval (imacro internet-connected-p)))
 
- (im internet-is-connected-p ()))
+ (im internet-is-connected-p ())
 
-(defmacro im (name &rest body)
-  "
+ (defmacro im (name &rest body)
+   "
 example: (im internet-is-connected-p ())
 "
-  `(progn
-     (eval (imacro ,@body) ,@body)))
+   `(progn
+      (eval (imacro ,@body) ,@body))))
 
 (provide 'ilambda)
