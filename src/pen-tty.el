@@ -51,6 +51,7 @@
 (define-key input-decode-map (kbd "<f24>") (kbd "<S-f12>"))
 
 ;; Why doen't these exist?
+;; I think I needed my new infocomp definitions
 (define-key key-translation-map (kbd "<f22>") (kbd "<S-f10>"))
 (define-key key-translation-map (kbd "<f23>") (kbd "<S-f11>"))
 (define-key key-translation-map (kbd "<f24>") (kbd "<S-f12>"))
