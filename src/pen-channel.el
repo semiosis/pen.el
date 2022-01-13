@@ -40,8 +40,10 @@
           ;; I probably want to do both.
           (pen-term (pen-nsfa command) closeframe modename bufname t)))
 
-    ;; TODO Start a cterm with the channeled chatbot running as a program loop inside of that buffer
-    (let* ((el (pen-snc (pen-cmd "channel-repl" "-getcomintcmd" name-or-names "" blurb))))
-      (pen-e-sps (pen-lm (pen-eval-string el))))))
+    ;; If I want to spawn channel without an emacs term, then do it the following way.
+    ;; Start a cterm with the channeled chatbot running as a program loop inside of that buffer
+    ;; (let* ((el (pen-snc (pen-cmd "channel-repl" "-getcomintcmd" name-or-names "" blurb))))
+    ;;   (pen-e-sps (pen-lm (pen-eval-string el))))
+    ))
 
 (provide 'pen-channel)
