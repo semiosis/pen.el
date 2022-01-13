@@ -438,6 +438,7 @@ agi libavformat58 libavformat-dev
 agi libswscale-dev libswscale5
 agi libturbojpeg0 libturbojpeg0-dev
 agi libavutil56 libavutil-dev
+agi libavdevice58 libavdevice-dev
 
 (
 cd ~/repos
