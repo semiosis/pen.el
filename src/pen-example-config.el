@@ -671,6 +671,8 @@
       (set-face-background 'lsp-ui-peek-highlight "#222222")
       (set-face-foreground 'lsp-ui-sideline-global nil)
       (set-face-background 'lsp-ui-sideline-global nil)
+      (set-face-foreground 'lsp-lens-face "#000000")
+      (set-face-background 'lsp-lens-face "#111111")
 
 
       (require 'shr)
