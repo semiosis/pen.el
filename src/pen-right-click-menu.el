@@ -190,6 +190,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     (pen-term (pen-nsfa cmd dir) closeframe modename buffer-name)))
 
 (defun pen-term-sps (&optional cmd dir)
+  "`sps` stands for `Split Sensibly`"
   (interactive)
   (if (not dir)
       (setq dir (cwd)))
