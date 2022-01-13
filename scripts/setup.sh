@@ -430,3 +430,16 @@ cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf
 agi irssi
 
 agi lolcat
+
+# For timg
+agi graphicsmagick libgraphicsmagick++-q16-12 libgraphicsmagick++1-dev
+agi libavcodec-dev libavcodec58
+agi libavformat58 libavformat-dev
+agi libswscale-dev libswscale5
+
+
+(
+cd ~/repos
+git clone "https://github.com/hzeller/timg"
+cd timg
+)
