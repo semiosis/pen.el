@@ -23,17 +23,15 @@
   (if (not name)
       (setq name "Marco Polo"))
 
-  ;; TODO With auto, give the user some control over the blurb to be generated
-  ;; Select from some possibilities.
-  (if auto
-      (let* ((blurb (car (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result t)))))
+  (let* ((blurb
+          (if auto
+              (car (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result t)))
+            ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
+            (pen-eipec
+             (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil))))))
 
-        (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
-          (pen-e-sps (pen-lm (pen-eval-string el)))))
-    (let* ((blurb (pf-generate-wiki-blurb-for-a-famous-person/1 name)))
-
-      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
-        (pen-e-sps (pen-lm (pen-eval-string el)))))))
+    (let* ((el (pen-snc (pen-cmd "channel-repl" "-getcomintcmd" name "" blurb))))
+      (pen-e-sps (pen-lm (pen-eval-string el))))))
 
 (defun apostrophe-start-chatbot-from-selection (text)
   (interactive (list (str (pen-screen-or-selection))))
