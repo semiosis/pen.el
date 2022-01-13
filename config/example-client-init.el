@@ -10,4 +10,4 @@
 
 (idefun thing-to-hex-color (thing))
 
-(message (pen-human (thing-to-hex-color "watermelon")))
+(pen-tv (pen-human (thing-to-hex-color "watermelon")))
