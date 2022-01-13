@@ -578,7 +578,7 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
 (defun pen-current-filename-maybe ()
   (sor (pen-f-basename (get-path nil t)) "untitled"))
 
-(defun eipe (input)
-  (pen-sn (pen-cmd "pen-tvipe" "pen-eipe") input))
+(defun eipe (input &optional chomp)
+  (pen-sn (pen-cmd "pen-tvipe" "pen-eipe") input nil nil nil nil nil nil chomp))
 
 (provide 'pen-library)
