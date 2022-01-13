@@ -12,7 +12,7 @@
     (pen-e-sps (pen-lm (pen-eval-string el)))))
 
 (defun apostrophe-start-chatbot-from-name (name &optional auto)
-  "A simple tit-for-tat conversation interface."
+  "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
   (interactive (list (read-string-hist "person: ")))
 
   (if (and (not (pen-inside-docker))
