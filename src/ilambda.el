@@ -445,7 +445,12 @@
     (,funcsym ,@args)
     (list ,value)))
 
-(defun internet-is-connected-p ()
-  (eval (imacro internet-connected-p)))
+(comment
+ ;; Using =ilambda=, run real functions that do things. Don't just use pure imaginary functions
+ 
+ (defun internet-is-connected-p ()
+   (eval (imacro internet-connected-p)))
+
+ (im internet-is-connected-p ()))
 
 (provide 'ilambda)
