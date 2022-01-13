@@ -581,4 +581,7 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
 (defun eipe (input &optional chomp)
   (pen-sn (pen-cmd "pen-tvipe" "pen-eipe") input nil nil nil nil nil nil chomp))
 
+(defun eipec (input)
+  (eipe input t))
+
 (provide 'pen-library)
