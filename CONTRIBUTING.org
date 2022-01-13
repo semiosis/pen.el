@@ -14,19 +14,15 @@ for membership to the organisation.
 Please use your own key.
 
 ** Roles
-You may select from one of the roles/tasks or suggest one yourself.
+Join the the GitHub team to gain full access to Semiosis' repositories.
 
-[[./docs/contributing/roles.org]]
++ Tasks :: [[./docs/contributing/roles.org]]
++ Team :: https://github.com/orgs/semiosis/teams/prompt-engineering
 
-*** Prompt Engineering
-https://github.com/orgs/semiosis/teams/prompt-engineering
-
-Creating prompts.
-
-*** Contrib
-https://github.com/orgs/semiosis/teams/prompt-engineering
-
-Extending emacs packages with prompt functions.
+** Projects
+- Creating prompts.
+- Developing =contrib=
+  - Extending emacs packages with prompt functions.
 
 ** Testing GPT-3 prompts without a key
 You may test prompts without a key using the =prompts= repository.
@@ -38,9 +34,6 @@ https://github.com/semiosis/prompts
 Output will go here:
 
 https://github.com/semiosis/prompt-tests
-
-** Any missing functions available here
-https://github.com/semiosis/shane-emacs-config-dump/tree/master/config
 
 * Contributors
 Thank you =@Samin= and =@erik= for the
