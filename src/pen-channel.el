@@ -4,7 +4,10 @@
   "`name-or-names` is the name-or-names of the personalit(y|ies).
 `command` is the terminal command the personality commands.
 `auto`, if set to `t` will come up with the personality blurb without human interaction."
-  (interactive (list (read-string-hist "personalit(y|ies): " "The March Hare, the Hatter and the Dormouse")
+  (interactive (list (read-string-hist "personalit(y|ies): "
+                                       "The March Hare, the Hatter and the Dormouse"
+                                       nil
+                                       "The March Hare, the Hatter and the Dormouse")
                      ""))
 
   (if (and (not (pen-inside-docker))
