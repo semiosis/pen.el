@@ -449,4 +449,5 @@ cd build
 # This is the clean of cmake
 rm -f CMakeCache.txt
 cmake ..
+make
 )
