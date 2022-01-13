@@ -459,6 +459,9 @@
 example: (im internet-is-connected-p ())
 "
    `(progn
-      (eval (imacro ,@body) ,@body))))
+      (eval (imacro ,@body) ,@body)))
+ (defalias 'ilmacro 'im)
+ (defalias 'imaginary-lambda-macro 'im)
+ (defalias 'imaginarily 'im))
 
 (provide 'ilambda)
