@@ -439,15 +439,14 @@ agi libswscale-dev libswscale5
 agi libturbojpeg0 libturbojpeg0-dev
 agi libavutil56 libavutil-dev
 agi libavdevice58 libavdevice-dev
-
 (
-cd ~/repos
-git clone "https://github.com/hzeller/timg"
-cd timg
-mkdir -p build
-cd build
-# This is the clean of cmake
-rm -f CMakeCache.txt
-cmake ..
-make
+    cd ~/repos
+    git clone "https://github.com/hzeller/timg"
+    cd timg
+    mkdir -p build
+    cd build
+    # This is the clean of cmake
+    rm -f CMakeCache.txt
+    cmake ..
+    make
 )
