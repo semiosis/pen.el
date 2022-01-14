@@ -1,3 +1,10 @@
+Wizard of Oz testing
+    Testing in which the automated machine
+    component is substituted by some form of
+    human intervention but in such a way that
+    the user participating in the test is
+    unaware of the substitution.
+
 prompter
     The agent doing the prompting.
 
