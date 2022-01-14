@@ -81,7 +81,6 @@
 (define-key input-decode-map "\e[21;2~" [S-f10])
 (define-key input-decode-map "\e[23;2~" [S-f11])
 (define-key input-decode-map "\e[24;2~" [S-f12])
-;; This worked
 (define-key input-decode-map "<esc>[1;4S" [S-M-f4])
 ;; This worked
 (define-key input-decode-map "\e[1;4S" [S-M-f4])
