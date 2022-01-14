@@ -93,6 +93,7 @@ ln -s ~/.config "$EMACSD"
 
 ln -sf ~/.emacs.d/pen.el/config/tmux.conf ~/.tmux.conf
 ln -sf ~/.emacs.d/pen.el/config/tmux.conf.human ~/.tmux.conf.human
+touch ~/.tmux.conf.main
 ln -sf ~/.emacs.d/pen.el/src/init-setup.el ~/.emacs
 ln -sf ~/.emacs.d/pen.el/config/shellrc ~/.shellrc
 echo ". ~/.shellrc" >> ~/.profile
