@@ -1,3 +1,14 @@
+(comment
+ (defcustom w3m-session-load-crashed-sessions 'ask
+   "Whether to reload a crashed session when emacs-w3m starts.
+This is used when emacs-w3m determines that the most recent session crashed."
+   :group 'w3m
+   :type
+   '(radio
+     (const :format "Reload the crashed session automatically\n" t)
+     (const :format "Ask whether to reload the crashed session\n" ask)
+     (const :format "Never reload the crashed session automatically" nil))))
+
 (defcustom pen-fav-programming-language "Emacs Lisp"
   "By setting pen-fav-programming-language, you set a default language to translate into.
 This is useful for code-understanding when reading languages you don't understand.
