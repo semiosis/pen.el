@@ -1949,6 +1949,7 @@ May use to generate code from comments."
   (load-library "pen-custom")
   (load-library "pen-ii")
   (load-library "pen-company-lsp")
+  (load-library "pen-tty")
   (pen-load-config))
 
 (add-hook 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
