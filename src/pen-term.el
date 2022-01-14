@@ -303,6 +303,12 @@ commands to use in that buffer.
   ;; (shut-up (annotate-save-annotations))
   (kill-buffer-and-window))
 
+(defun pen-revert-and-quit-emacsclient-without-killing-server ()
+  "description string can flow to next line without continuation character"
+  (interactive)
+  (ignore-errors
+    (delete-frame)))
+
 (defun pen-term-kill-buffer-and-window ()
   (interactive)
   (if (major-mode-p 'ranger-mode)
