@@ -805,6 +805,8 @@
 (define-key pen-map (kbd "M-l M-r M-m") 'record-keyboard-macro-string)
 
 (define-key pen-map (kbd "<M-f4>") 'pen-revert-kill-buffer-and-window)
+
+;; Perhaps this should also kill the emacsclient
 (define-key pen-map (kbd "<S-M-f4>") 'pen-save-and-kill-buffer-and-window)
 
 (require 'eterm-256color)
