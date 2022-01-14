@@ -1418,7 +1418,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         fi
         ) \
         $(if test "$offline" = y; then
-        cmd --network none
+        cmd --network private
         else
         cmd --network host
         fi
