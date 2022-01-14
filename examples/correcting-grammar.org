@@ -2,5 +2,6 @@
 ** Demo
 https://asciinema.org/a/NKW3wFHer2zHitu1cUl4S6nR1
 
-Just select text with bad grammar, press =M-m= (if in acolyte mode) and select
-the correcting grammar function from the prose menu.
+Just select text with bad grammar, press =M-m=
+(if in acolyte mode) and select the correcting
+grammar function from the prose menu.
