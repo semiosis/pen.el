@@ -469,4 +469,6 @@ example: (ilm internet-is-connected-p ())
  (defalias 'imaginary-lambda-macro 'ilm)
  (defalias 'imaginarily 'ilm))
 
+;; (imacro sqrt (a))
+
 (provide 'ilambda)
