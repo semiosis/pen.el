@@ -69,21 +69,26 @@
   (yank-function-from-binding "<S-f10>")
   (yank-function-from-binding "<f10>"))
 
-(define-key input-decode-map "[21;2~" [S-f10])
-(define-key input-decode-map [S-f10] nil)
-(define-key input-decode-map "\e[21;2~" [S-f10])
-(define-key global-map "\e[21;2~" [S-f10])
+(defun pen-add-keys ()
+  (interactive)
+  (define-key input-decode-map "[21;2~" [S-f10])
+  (define-key input-decode-map [S-f10] nil)
+  (define-key input-decode-map "\e[21;2~" [S-f10])
+  (define-key global-map "\e[21;2~" [S-f10])
 
-;; For some reason, this is actually mapping to f10 from emacs
-(define-key input-decode-map (kbd "<esc>[21;2~") [S-f10])
-;; (define-key input-decode-map (kbd "<esc>[21;2~") [f1])
+  ;; For some reason, this is actually mapping to f10 from emacs
+  (define-key input-decode-map (kbd "<esc>[21;2~") [S-f10])
+  ;; (define-key input-decode-map (kbd "<esc>[21;2~") [f1])
 
-(define-key input-decode-map "\e[21;2~" [S-f10])
-(define-key input-decode-map "\e[23;2~" [S-f11])
-(define-key input-decode-map "\e[24;2~" [S-f12])
-(define-key input-decode-map "<esc>[1;4S" [S-M-f4])
-;; This worked
-(define-key input-decode-map "\e[1;4S" [S-M-f4])
-(define-key input-decode-map "<esc>[1;4s" [S-M-f4])
-(define-key input-decode-map "\e[1;4s" [S-M-f4])
+  (define-key input-decode-map "\e[21;2~" [S-f10])
+  (define-key input-decode-map "\e[23;2~" [S-f11])
+  (define-key input-decode-map "\e[24;2~" [S-f12])
+  (define-key input-decode-map "<esc>[1;4S" [S-M-f4])
+  ;; This worked
+  (define-key input-decode-map "\e[1;4S" [S-M-f4])
+  (define-key input-decode-map "<esc>[1;4s" [S-M-f4])
+  (define-key input-decode-map "\e[1;4s" [S-M-f4]))
+
+(add-hook 'after-init-hook 'pen-add-keys)
+
 (provide 'pen-tty)
