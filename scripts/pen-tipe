@@ -11,7 +11,7 @@ vipe_cmd="$1"
 # Therefore, pen-eipe is simply not finishing.
 # Well, actually pen-eipe *does* finish.
 
-if session-exists human; then
+if pen-tm session-exists human; then
     pen-tm -sout -vipe spv -t human: "$vipe_cmd" | cat
 else
     pen-tm -sout -vipe spv "$vipe_cmd" | cat
