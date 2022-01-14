@@ -81,6 +81,7 @@ test -d glossaries || git clone --depth 1 "https://github.com/semiosis/glossarie
 test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
 
+tic $HOME/repos/pen-emacsd/pen.el/config/eterm-256color.ti
 tic $HOME/repos/pen-emacsd/pen.el/config/screen-256color.ti
 tic $HOME/repos/pen-emacsd/pen.el/config/screen-2color.ti
 
