@@ -8,6 +8,7 @@ if test "$DEBUG_MODE" = "y"; then
 fi
 
 displayedname() {
+    # 🍓
     sed -e 's/^.*_//' -e "s/^localhost$/$(hostname | sed 's/[^ _-]*/\u&/g')/"
 }
 
