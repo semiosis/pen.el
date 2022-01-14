@@ -297,6 +297,12 @@ commands to use in that buffer.
 
   (pen-kill-buffer-and-window))
 
+(defun pen-save-and-kill-buffer-and-window ()
+  (interactive)
+  (save-buffer)
+  ;; (shut-up (annotate-save-annotations))
+  (kill-buffer-and-window))
+
 (defun pen-term-kill-buffer-and-window ()
   (interactive)
   (if (major-mode-p 'ranger-mode)
