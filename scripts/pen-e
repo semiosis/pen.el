@@ -874,7 +874,7 @@ case "$f" in
 
     -arf|arf|rfa|-rfa|-refresh-all) {
         for d in pen-e; do
-            $d c -e "(package-refresh-contents)(revert-and-quit-emacsclient-without-killing-server)"
+            $d c -e "(package-refresh-contents)(pen-revert-and-quit-emacsclient-without-killing-server)"
         done
 
         exit $?
@@ -887,7 +887,7 @@ case "$f" in
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (my-delete-package ...) $pkg_name" 1>&2
 
-                $d c -e "$pre_cmd(ignore-errors (my-delete-package '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+                $d c -e "$pre_cmd(ignore-errors (my-delete-package '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
                 cat1 $EMACSD/packages.txt | sed "/$pkg_name/d" | pen-sponge $EMACSD/packages.txt
 
@@ -916,7 +916,7 @@ case "$f" in
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (package-install ...) $pkg_name" 1>&2
 
-                $d c -e "$pre_cmd(ignore-errors (package-reinstall '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+                $d c -e "$pre_cmd(ignore-errors (package-reinstall '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
                 echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
 
@@ -933,7 +933,7 @@ case "$f" in
         for d in pen-e; do
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (lsp-install-server ...) $pkg_name" 1>&2
-                $d c -e "$pre_cmd(ignore-errors (lsp--install-server-internal (lsp-get-server-for-install $(cmd-nice-posix "$pkg_name"))))(revert-and-quit-emacsclient-without-killing-server)"
+                $d c -e "$pre_cmd(ignore-errors (lsp--install-server-internal (lsp-get-server-for-install $(cmd-nice-posix "$pkg_name"))))(pen-revert-and-quit-emacsclient-without-killing-server)"
                 shift
             done
         done
@@ -959,7 +959,7 @@ case "$f" in
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (package-install ...) $pkg_name" 1>&2
 
-                $d c -e "$pre_cmd(ignore-errors (package-install '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+                $d c -e "$pre_cmd(ignore-errors (package-install '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
                 echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
 
@@ -980,7 +980,7 @@ case "$f" in
 
         while [ $# -gt 0 ]; do pkg_name=$1
 
-            pen-e c -e "(ignore-errors (package-install '$pkg_name))(revert-and-quit-emacsclient-without-killing-server)"
+            pen-e c -e "(ignore-errors (package-install '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
             echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
 
