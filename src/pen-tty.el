@@ -71,7 +71,6 @@
 
 (defun pen-add-keyboard-keys ()
   (interactive)
-  (pen-tm "hi")
   (define-key input-decode-map "[21;2~" [S-f10])
   (define-key input-decode-map [S-f10] nil)
   (define-key input-decode-map "\e[21;2~" [S-f10])
@@ -91,7 +90,11 @@
   (define-key input-decode-map "\e[1;4s" [S-M-f4]))
 
 (pen-add-keyboard-keys)
+
+;; This worked but only for GUI
 (add-hook 'window-setup-hook 'pen-add-keyboard-keys)
+;; This was needed for adding the keys to the terminal
+(add-hook 'tty-setup-hook 'pen-add-keyboard-keys)
 
 ;; (add-hook 'after-init-hook 'pen-add-keyboard-keys)
 ;; This is also needed
