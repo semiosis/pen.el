@@ -316,6 +316,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -offline) {
+        offline=y
+        shift
+    }
+    ;;
+
     -all|-a) {
         all=y
         shift
@@ -1397,10 +1403,13 @@ IFS= read -r -d '' shcode <<HEREDOC
         "--cap-add=SYS_ADMIN" \
         "--cap-add=NET_ADMIN" \
         --ulimit "rtprio=100:100" \
-        --network host \
         -v /var/log/coredumps:/var/log/coredumps
             else
                 cmd --network host
+        fi
+        ) \
+        $(if ! test "$offline" = y; then
+        cmd --network host \
         fi
         ) \
         --expose 7681 -p 7681:7681 \
