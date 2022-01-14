@@ -462,3 +462,4 @@ agi ranger
 )
 
 agi net-tools
+agi netcat
