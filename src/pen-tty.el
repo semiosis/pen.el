@@ -90,6 +90,8 @@
   (define-key input-decode-map "\e[1;4s" [S-M-f4]))
 
 (add-hook 'after-init-hook 'pen-add-keys)
+
+;; This is also needed
 (add-hook 'window-setup-hook 'pen-add-keys)
 
 (provide 'pen-tty)
