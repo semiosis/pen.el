@@ -1,0 +1,10 @@
+set status-left-style fg=colour124,bg=colour052
+set status-right-style fg=colour088,bg=colour052
+set status-style fg=colour088,bg=colour052
+set window-status-style fg=colour088,bg=colour052
+set window-status-current-style fg=colour197,bg=colour088
+# set window-status-last-style fg=colour197,bg=colour052
+set window-status-last-style fg=colour088,bg=colour052
+set window-status-format "#I #W"
+set window-status-current-format "#I #W"
+set window-status-last-format "#I #W"
