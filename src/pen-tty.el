@@ -69,8 +69,9 @@
   (yank-function-from-binding "<S-f10>")
   (yank-function-from-binding "<f10>"))
 
-(defun pen-add-keys ()
+(defun pen-add-keyboard-keys ()
   (interactive)
+  (pen-tm "hi")
   (define-key input-decode-map "[21;2~" [S-f10])
   (define-key input-decode-map [S-f10] nil)
   (define-key input-decode-map "\e[21;2~" [S-f10])
@@ -89,11 +90,11 @@
   (define-key input-decode-map "<esc>[1;4s" [S-M-f4])
   (define-key input-decode-map "\e[1;4s" [S-M-f4]))
 
-(pen-add-keys)
-(add-hook 'window-setup-hook 'pen-add-keys)
+(pen-add-keyboard-keys)
+(add-hook 'window-setup-hook 'pen-add-keyboard-keys)
 
-;; (add-hook 'after-init-hook 'pen-add-keys)
+;; (add-hook 'after-init-hook 'pen-add-keyboard-keys)
 ;; This is also needed
-;; (add-hook 'window-setup-hook 'pen-add-keys)
+;; (add-hook 'window-setup-hook 'pen-add-keyboard-keys)
 
 (provide 'pen-tty)
