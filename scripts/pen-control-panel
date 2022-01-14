@@ -1,4 +1,0 @@
-#!/bin/bash
-export TTY
-
-tmux set -t 3 status-style bg=red

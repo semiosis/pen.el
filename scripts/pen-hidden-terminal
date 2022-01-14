@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# Hidden terminal
+
+pen sh pen-tm ns -a -np -n human bash
