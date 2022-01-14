@@ -807,7 +807,8 @@
 (define-key pen-map (kbd "<M-f4>") 'pen-revert-kill-buffer-and-window)
 
 ;; Perhaps this should also kill the emacsclient
-(define-key pen-map (kbd "<S-M-f4>") 'pen-save-and-kill-buffer-and-window)
+;; (define-key pen-map (kbd "<S-M-f4>") 'pen-save-and-kill-buffer-and-window)
+(define-key pen-map (kbd "<S-M-f4>") 'pen-revert-and-quit-emacsclient-without-killing-server)
 
 (require 'eterm-256color)
 (set-face-background 'eterm-256color-black nil)
