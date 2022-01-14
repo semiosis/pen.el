@@ -697,6 +697,23 @@ elif test "$sn" = penj; then
     : "${output_json:="y"}"
 fi
 
+has_placeholder() {
+    i=1
+    found=
+    for var in "$@"
+    do
+        h="$((i - 1))"
+        j="$((i + 2))"
+        if test "$var" = "{}"; then
+            set -- "${@:1:$h}" "$in" "${@:j}"
+            found=y
+        fi
+        ((i++))
+    done
+
+    test "$found" = y
+}
+
 case "$sn" in
     penf) {
         fun="$1"
@@ -705,6 +722,10 @@ case "$sn" in
             arity="$(( $# ))"
         else
             arity="$(( $# - 1 ))"
+        fi
+
+        if has_placeholder "$@"; then
+            arity="$(( $arity - 1 ))"
         fi
 
         if ! printf -- "%s\n" "$fun" | grep -q -P '/[0-9]+$'; then
@@ -769,19 +790,7 @@ case "$sn" in
                     # This has issues
                     set -- "$in" "$@"
                 elif test "$#" -gt 1; then
-                    i=1
-                    found=
-                    for var in "$@"
-                    do
-                        h="$((i - 1))"
-                        j="$((i + 2))"
-                        if test "$var" = "{}"; then
-                            set -- "${@:1:$h}" "$in" "${@:j}"
-                            found=y
-                        fi
-                        ((i++))
-                    done
-                    if ! test "$found" = "y"; then
+                    if ! has_placeholder "$@"; then
                         # set -- "$@" "$in"
                         set -- "$in" "$@"
                     fi
