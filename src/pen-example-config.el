@@ -811,7 +811,7 @@
 ;; (define-key pen-map (kbd "<S-M-f4>") 'pen-revert-and-quit-emacsclient-without-killing-server)
 
 ;; Wow, it also works in the web interface
-;; I should remember that for future bindings, using Shift-Meta bypasses google chrome
+;; I should remember that for future bindings, using Shift-Meta bypasses google chrome Meta bindings
 (define-key pen-map (kbd "<S-M-f4>") 'pen-save-and-kill-buffer-window-and-emacsclient)
 
 (require 'eterm-256color)
