@@ -1413,13 +1413,17 @@ IFS= read -r -d '' shcode <<HEREDOC
         "--cap-add=NET_ADMIN" \
         --ulimit "rtprio=100:100" \
         -v /var/log/coredumps:/var/log/coredumps
-            else
-                cmd --network host
         fi
         ) \
         $(if test "$offline" = y; then
-        cmd --network private
+        ` #  Overlay networks connect multiple Docker daemons together and enable swarm services to communicate with each other. `
+        docker swarm init
+        docker network create --driver=overlay --attachable --subnet=192.168.0.0/16 modal
+        ` # modal network for MyTeaParty `
+        cmd --network modal
         else
+        ` # both of these work `
+        ` # cmd --network bridge `
         cmd --network host
         fi
         ) \
