@@ -3,4 +3,5 @@ export TTY
 
 # Check if connected to the internet
 
-: >/dev/tcp/8.8.8.8/53 && wget -q --spider http://google.com
+set -o pipefail
+{ : >/dev/tcp/8.8.8.8/53; } && wget -q --spider http://google.com
