@@ -1409,7 +1409,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         fi
         ) \
         $(if ! test "$offline" = y; then
-        cmd --network host \
+        cmd --network host
         fi
         ) \
         --expose 7681 -p 7681:7681 \
