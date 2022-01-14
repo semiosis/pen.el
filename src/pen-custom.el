@@ -467,6 +467,7 @@ widget.  If FILTER is nil, ACTION is always valid.")
 (defun Custom-save-around-advice (proc &rest args)
   (let ((res (yes (apply proc args))))
     res))
+
 (advice-add 'Custom-save :around #'Custom-save-around-advice)
 ;; (advice-remove 'Custom-save #'Custom-save-around-advice)
 

@@ -805,6 +805,7 @@
 (define-key pen-map (kbd "M-l M-r M-m") 'record-keyboard-macro-string)
 
 (define-key pen-map (kbd "<M-f4>") 'pen-revert-kill-buffer-and-window)
+(define-key pen-map (kbd "<M-f4>") 'pen-revert-kill-buffer-and-window)
 
 (require 'eterm-256color)
 (set-face-background 'eterm-256color-black nil)
