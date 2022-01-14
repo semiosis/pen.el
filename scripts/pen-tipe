@@ -10,7 +10,12 @@ vipe_cmd="$1"
 # This is hanging for pen-eipe when emacs is started with run.sh
 # Therefore, pen-eipe is simply not finishing.
 # Well, actually pen-eipe *does* finish.
-pen-tm -sout -vipe spv "$vipe_cmd" | cat
+
+if session-exists human; then
+    pen-tm -sout -vipe spv -t human: "$vipe_cmd" | cat
+else
+    pen-tm -sout -vipe spv "$vipe_cmd" | cat
+fi
 
 # pen-tm -w -sout -vipe spv "$vipe_cmd" | cat
 
