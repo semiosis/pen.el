@@ -5,4 +5,5 @@ export TTY
 
 export VIPE_CLEAR
 
+echo Waiting for output from promptee: 1>&2
 pen-tipe -wintype "$sps" pen-eipe
