@@ -236,7 +236,7 @@
 
 (define-key pen-map (kbd "C-c n") #'nbfs)
 
-;; This makes a prefix in the ~/.pen directory for the memoization cache 
+;; This makes a prefix in the ~/.pen directory for the memoization cache
 (setq pen-memo-prefix (pen-get-hostname))
 
 (memoize-restore 'pen-prompt-snc)
@@ -611,11 +611,11 @@
 
 ;; (idefun
 ;;  translate-code
-;; 
+;;
 ;;  (string target-language)
 ;;  ;; "Translate STRING from its source language into TARGET-LANGUAGE and output it to the echo area."
 ;;  )
-;; 
+;;
 ;; (translate "def my_function(alpha, papa):" "python to elisp")
 
 ;; For VSCode terminal
