@@ -9,11 +9,22 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -wintype) {
+        wintype="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+: "${wintype:="sps"}"
 
+vipe_cmd="$1"
+# eipe
+: "${vipe_cmd:="vipe"}"
 if test "$USE_EMACS" = "y"; then
-    pen-teipe "$@"
+    pen-teipe -wintype "$wintype" "$@"
 else
-    pen-tm vipe "$@"
+    pen-tm vipe -wintype "$wintype" "$@"
 fi
