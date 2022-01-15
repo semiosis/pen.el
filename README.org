@@ -23,7 +23,7 @@ functions are:
 - =Apostrophe= - Speak to imagined personalities, from history or from your imagination
 - =PenSieve= - drag and drop, and peer into the imemories of personalities through a file system
 - =Chann.el= - Channel personalites from the matrix to control your computer
-- =MadTeaParty= - Run a chatbot populated social simulation, and take on the role of characters without their knowledge
+- =MadTeaParty= - Run a chatbot populated social simulation, and take on the role of characters Avatar-style without their knowledge
 - =Paracosm= - Mind-mapping with artificial inspiration
 - =M♡= - Simulate Minority-Reports for your terminal
 - =Melee= - The game of Adversarial Prompting
