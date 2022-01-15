@@ -54,6 +54,7 @@
 (require 'helm-fzf)
 (require 'pen-helm-fzf)
 (require 'pen-help)
+(require 'pen-eipe)
 (require 'helpful)
 
 ;; Not sure I need the following in pen.el
