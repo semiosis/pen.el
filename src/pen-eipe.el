@@ -13,6 +13,7 @@
 
 (defun pen-eipe-set-prompt-ro (end)
   ;; Frustratingly, I can't seem to make the start of the buffer readonly
+  ;; Maybe I can configure self-insert-command in the future.
   (put-text-property (point-min) end 'read-only t)
   (put-text-property (point-min) end 'face 'pen-read-only))
 
