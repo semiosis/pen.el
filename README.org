@@ -441,4 +441,11 @@ Integration with the invisible internet.
       opposed to imagination.
       "audiences demand intellection without the
       need for thought"
+  
+  Wizard of Oz testing
+      Testing in which the automated machine
+      component is substituted by some form of
+      human intervention but in such a way that
+      the user participating in the test is
+      unaware of the substitution.
 #+END_SRC
