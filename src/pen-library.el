@@ -583,8 +583,8 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
 buffer which is not included when this function returns"
   (pen-sn (pen-cmd "pen-tvipe" "pen-eipe") input nil nil nil nil nil nil chomp))
 
-(defun pen-eipec (input &optional chomp wintype prompttext)
-  (pen-eipe input t chomp wintype prompttext))
+(defun pen-eipec (input &optional wintype prompttext)
+  (pen-eipe input t wintype prompttext))
 
 (defun pen-internet-connected-p ()
   (pen-snq "internet-connected-p"))
