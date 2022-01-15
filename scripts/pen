@@ -1435,16 +1435,16 @@ IFS= read -r -d '' shcode <<HEREDOC
         docker swarm init
         docker network create --driver=overlay --attachable --subnet=192.168.0.0/16 pennet
         ) 1>&2
-        ` # modal network for MyTeaParty `
-        cmd --network pennet
+            cmd --network pennet
         elif test "$network" = modal; then
+            ` # modal network for MyTeaParty `
             :
         elif test "$network" = offline; then
-            :
+            cmd --network none
         else
         ` # both of these work `
         ` # cmd --network bridge `
-        cmd --network host
+            cmd --network host
         fi
         ) \
         --expose 7681 -p 7681:7681 \
