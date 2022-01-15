@@ -317,8 +317,22 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -offline) {
-        offline=y
+        network=offline
         shift
+    }
+    ;;
+
+    -network) {
+        network="$2"
+        shift
+        shift
+
+        # Possible values:
+        # - offline
+        # - host
+        # - swarm
+        # - modal
+        #   - modal is a private network limited to the container
     }
     ;;
 
@@ -1415,7 +1429,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         -v /var/log/coredumps:/var/log/coredumps
         fi
         ) \
-        $(if test "$offline" = y; then
+        $(if test "$network" = swarm; then
         ` #  Overlay networks connect multiple Docker daemons together and enable swarm services to communicate with each other. `
         (
         docker swarm init
