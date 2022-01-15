@@ -1405,6 +1405,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
         --env PEN_USE_GUI \
         --env PEN_NO_TM \
+        --env PEN_PROMPT \
         --env NO_QUIT_DAEMONS \
         --env USE_NVC \
         --env TERM \
