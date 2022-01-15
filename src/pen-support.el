@@ -114,6 +114,16 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   ;; ret
   )
 
+(defun pen-log-verbose (&rest ss)
+  ;; TODO Add some verbosity level in custom
+  ;; (let ((ret (s-join ", " (mapcar 'str ss))))
+  ;;   (pen-message-no-echo "%s\\n" ret))
+
+  ;; This is for backwards compatibility
+  (car ss)
+  ;; ret
+  )
+
 (defun pen-aget (key alist)
   (cdr (assoc key alist)))
 
@@ -511,12 +521,15 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                              (if (or (pen-var-value-maybe 'force-temperature))
                                  (list "PEN_TEMPERATURE" (pen-var-value-maybe 'force-temperature))))))))
 
-        (setq shell-cmd (concat shell-cmd " 2>/dev/null"))
+        ;; I don't think the shell being used understand this
+        ;; (setq shell-cmd (concat shell-cmd " 2>/dev/null"))
 
         (if (not (re-match-p "[&;]$" shell-cmd))
             (setq shell-cmd (concat shell-cmd ";")))
 
-        (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " tf)))
+        ;; I need a log level here. This will be too verbose
+        (setq final_cmd (pen-log-verbose
+                         (concat exps "; ( cd " (pen-q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " tf))))
 
       (if detach
           (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &")))
@@ -524,10 +537,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
       (shut-up-c
        (if (not stdin)
            (progn
-             (shell-command final_cmd output_buffer))
+             (shell-command final_cmd output_buffer "*pen-sn-stderr*"))
          (with-temp-buffer
            (insert stdin)
-           (shell-command-on-region (point-min) (point-max) final_cmd output_buffer))))
+           (shell-command-on-region (point-min) (point-max) final_cmd output_buffer nil "*pen-sn-stderr*"))))
       (setq output (slurp-file tf))
       (if chomp
           (setq output (chomp output)))
