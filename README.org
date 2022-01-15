@@ -11,7 +11,7 @@ prompting tasks. That includes any NLP task for
 text or code, describing images (=AlephAlpha=)
 and imagining images (=DALL-E=/=Glide=). Audio and
 video are also possible -- keep an eye out for
-VideoGPT in the future. The payload system
+=VideoGPT= in the future. The payload system
 allows you to send media to multi-modal
 models. You may compose prompting functions
 for any model or API.
@@ -25,6 +25,7 @@ functions are:
 - =Chann.el= - Channel personalites from the matrix to control your computer
 - =MadTeaParty= - Run a chatbot populated social simulation, and take the role of characters
 - =Paracosm= - Mind-mapping with artificial inspiration
+- =M♡= - Simulate Minority-Reports for your terminal
 - =Melee= - The game of Adversarial Prompting
 - =ESP= - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."
 - ... and a lot more
