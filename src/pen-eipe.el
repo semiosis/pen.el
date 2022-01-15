@@ -12,8 +12,8 @@
   :group 'pen-faces)
 
 (defun pen-eipe-set-prompt-ro (end)
-  ;; (point-min) is one char further than I need
-  (put-text-property 0 end 'read-only t)
-  (put-text-property 0 end 'face 'pen-read-only))
+  ;; Frustratingly, I can't seem to make the start of the buffer readonly
+  (put-text-property (point-min) end 'read-only t)
+  (put-text-property (point-min) end 'face 'pen-read-only))
 
 (provide 'pen-eipe)
