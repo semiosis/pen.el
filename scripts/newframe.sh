@@ -131,7 +131,7 @@ runclient() {
 
 if test -n "$PEN_PROMPT"; then
     mkdir -p ~/.pen/eipe
-    printf -- "%s" "$PEN_PROMPT" > "~/.pen/eipe_$SOCKET_prompt"
+    printf -- "%s" "$PEN_PROMPT" > "~/.pen/eipe_${SOCKET}_prompt"
 fi
 
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
