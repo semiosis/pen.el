@@ -52,3 +52,5 @@ argument, prompt for a regular expression using `read-regexp'."
       (customize-face (intern face))))
 
 (define-key pen-map (kbd "M-l M-q M-f") 'pen-customize-face)
+
+(provide 'pen-faces)
