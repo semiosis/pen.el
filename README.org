@@ -430,3 +430,15 @@ Integration with the invisible internet.
 - https://yggdrasil-network.github.io/about.html
 - https://github.com/dragonflyoss/Dragonfly2
 - https://geti2p.net/en/
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  imemory
+  imemories
+      Imaginary memories.
+  
+  intellection
+      The action or process of understanding, as
+      opposed to imagination.
+      "audiences demand intellection without the
+      need for thought"
+#+END_SRC
