@@ -18,6 +18,6 @@
   ;; Maybe I can configure self-insert-command in the future.
   (put-text-property (point-min) end 'face 'pen-read-only)
   (put-text-property (point-min) end 'read-only t)
-  (goto-char end))
+  (goto-char (+ 1 end)))
 
 (provide 'pen-eipe)
