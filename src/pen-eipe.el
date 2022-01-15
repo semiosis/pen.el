@@ -25,7 +25,7 @@
          nil)))
 
 (defun pen-find-file-read-only-context ()
-  (let ((fp (concat "$HOME/.pen/eipe_" (pen-daemon-name) "_prompt")))
+  (let ((fp (concat "~/.pen/eipe_" (pen-daemon-name) "_prompt")))
     (if (f-exists-p fp)
         (let ((prompt (slurp-file fp)))))))
 
