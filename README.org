@@ -25,9 +25,13 @@ functions are:
 - =Chann.el= - Channel personalites from the matrix to control your computer
 - =MadTeaParty= - Run a chatbot populated social simulation, and take the role of characters
 - =Paracosm= - Mind-mapping with artificial inspiration
+- =Lalia= - A language of stories based on =Inkw.el=
 - =Melee= - The game of Adversarial Prompting
 - =ESP= - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."
 - ... and a lot more
+
+Some behind-the-scenes technologies also included are:
+- =Inkw.el= - Intermediate Knowledge in emacs
 
 =Pen.el= also facilitates the creation,
 development, discovery and usage of prompts.
