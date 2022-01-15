@@ -534,6 +534,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
       (if b_output-return-code
           (setq output (str b_exit_code)))
+      (ignore-errors
+        (progn (f-delete tf)
+               (f-delete tf_exit_code)))
       output)))
 
 (cl-defun pen-cl-sn (cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)

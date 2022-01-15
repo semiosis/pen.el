@@ -76,6 +76,9 @@
          (insert (or stdin ""))
          (shell-command-on-region (point-min) (point-max) final_cmd)))
       (setq output (slurp-file tf))
+      (ignore-errors
+        (progn (f-delete tf)
+               (f-delete tf_exit_code)))
       output)))
 
 (defun vector2list (v)
