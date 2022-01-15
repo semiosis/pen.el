@@ -56,6 +56,7 @@
 (require 'pen-help)
 (require 'pen-eipe)
 (require 'pen-textprops)
+(require 'pen-faces)
 (require 'helpful)
 
 ;; Not sure I need the following in pen.el
