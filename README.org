@@ -31,6 +31,8 @@ functions are:
 =Pen.el= also facilitates the creation,
 development, discovery and usage of prompts.
 
+The aim is to turn everyone into a wizard.
+
 It's completely free, libre and open-source.
 
 https://semiosis.github.io/posts/a-prompting-lsp-server-for-any-language-or-context-using-large-language-models/
