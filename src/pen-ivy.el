@@ -56,6 +56,17 @@
 ;; TODO Explore an asynchronous edit while Pen.el is running
 ;; Maybe I have to use vim for the moment.
 
+(defun ivy-alt-done (&optional arg)
+  "Modified to = ivy-immediate-done.
+
+Exit the minibuffer with the selected candidate.
+When ARG is t, exit with current text, ignoring the candidates.
+When the current candidate during file name completion is a
+directory, continue completion from within that directory instead
+of exiting.  This function is otherwise like `ivy-done'."
+  (interactive "P")
+  (ivy-immediate-done))
+
 (defun ivy-edit-and-use-selection (text &optional edit-fn)
   "Copy the selected candidate as a string."
   (interactive (list (if (selected-p)
