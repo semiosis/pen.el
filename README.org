@@ -417,3 +417,9 @@ https://github.com/semiosis/openai-api.el
 ** Contributing
 - [[./CONTRIBUTING.org]]
 - [[./docs/related-projects.org]]
+
+** Future plans
+Integration with the invisible internet.
+
+- https://yggdrasil-network.github.io/about.html
+- https://geti2p.net/en/
