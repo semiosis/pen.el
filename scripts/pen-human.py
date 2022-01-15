@@ -65,7 +65,9 @@ def b(c, inputstring="", timeout=0):
 
 #  result=b("pen-tvipe \"pen-pipify nano\"")[0]
 
-result=b("pen-tipe \"pen-eipe\"")[0]
+# export the prompt here, so I can show it read-only
+# at the top of the emacs buffer
+result=b("pen-tipe -wintype nw \"pen-eipe\"")[0]
 
 # result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
 #                      "prompt: " + PEN_PROMPT,
