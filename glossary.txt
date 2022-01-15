@@ -30,6 +30,20 @@ prompt server
 
     Pen.el is an example of a prompt server.
 
+Yggdrasil
+    [#Norse cosmology]
+
+    An immense and central sacred tree.
+    
+    Around it exists all else, including the
+    Nine Worlds.
+    
+    Yggdrasil is attested in the Poetic Edda
+    compiled in the 13th century from earlier
+    traditional sources, and in the Prose Edda
+    written in the 13th century by Snorri
+    Sturluson.
+
 transvariadicator
     [#pen.el]
 
