@@ -46,7 +46,7 @@ argument, prompt for a regular expression using `read-regexp'."
          (progn
            (setq quit-flag nil)))
        (if hlm
-           (global-hl-line-mode t))
+           (ignore-errors (global-hl-line-mode t)))
        (list f))))
   (if face
       (customize-face (intern face))))
