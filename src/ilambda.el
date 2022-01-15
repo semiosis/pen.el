@@ -65,19 +65,23 @@
          (body (eval-string (concat "'" bodystr))))
     `(progn ,body)))
 
+;; If it fails, try again but this time with edit capability
 (defmacro imacro/2 (name args)
   "Does not evaluate. It merely generates code."
   (let* ((argstr (s-join " " (mapcar 'pen-slugify-basic (mapcar 'str args))))
          (bodystr
           (car
-           (pen-single-generation
-            (pen-fn-imagine-an-emacs-function/2
-             (str name)
-             argstr
-             :include-prompt t
-             :no-select-result t
-             :client iλ-thin))))
-         (body (eval-string (concat "'" bodystr))))
+           (eval
+            `(pen-single-generation
+              (pen-fn-imagine-an-emacs-function/2
+               (str ',name)
+               ,argstr
+               :include-prompt t
+               :no-select-result t
+               :client iλ-thin)))))
+         (body
+          (try (eval-string (concat "'" bodystr))
+               (eval-string (pen-eipec (concat "'" bodystr))))))
     `(progn ,body)))
 
 (defmacro imacro/1 (name)

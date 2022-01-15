@@ -578,11 +578,13 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
 (defun pen-current-filename-maybe ()
   (sor (pen-f-basename (get-path nil t)) "untitled"))
 
-(defun pen-eipe (input &optional chomp)
+(defun pen-eipe (input &optional chomp wintype prompttext)
+  "`prompttext` is read-only text at the start of the
+buffer which is not included when this function returns"
   (pen-sn (pen-cmd "pen-tvipe" "pen-eipe") input nil nil nil nil nil nil chomp))
 
-(defun pen-eipec (input)
-  (pen-eipe input t))
+(defun pen-eipec (input &optional chomp wintype prompttext)
+  (pen-eipe input t chomp wintype prompttext))
 
 (defun pen-internet-connected-p ()
   (pen-snq "internet-connected-p"))

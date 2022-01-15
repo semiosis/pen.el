@@ -1100,6 +1100,15 @@
           ;; pretext is useful for examples for the generation
           (final-prompt (concat pretext final-prompt))
 
+          ;; If using the human engine, then show the prompt in another window so:
+          ;; - the human can edit the prompt before being prompted
+          ;; - the human knows what the prompt is when prompted
+          (final-prompt
+           (cond
+            ((string-equal final-engine "Human")
+             (pen-eipec final-prompt))
+            (t final-prompt)))
+
           (collect-from-pos
            (or (byte-string-search "<:pp>" final-prompt)
                ;; (length final-prompt)
