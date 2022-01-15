@@ -1,3 +1,26 @@
+
+;; (progn
+;;   ;; selectrum-mouse-highlight
+;;   ;; selectrum-quick-keys-match
+;;   ;; selectrum-quick-keys-highlight
+
+;;   (set-face-foreground 'selectrum-completion-annotation "#262626")
+;;   (set-face-foreground 'selectrum-completion-docsig "#262626")
+;;   (set-face-foreground 'selectrum-current-candidate "#262626")
+;;   (set-face-foreground 'selectrum-group-separator "#262626")
+;;   (set-face-foreground 'selectrum-group-title "#262626")
+
+;;   (set-face-background 'selectrum-completion-annotation "#d72f4f")
+;;   (set-face-background 'selectrum-completion-docsig "#d72f4f")
+;;   (set-face-background 'selectrum-current-candidate "#d72f4f")
+;;   (set-face-background 'selectrum-group-separator "#d72f4f")
+;;   (set-face-background 'selectrum-group-title "#d72f4f"))
+
+(require 'spacemacs-dark-theme)
+(load-theme 'spacemacs-dark t)
+
+
+
 (defun pen-list-faces (&optional regexp)
   "List all faces, using the same sample text in each.
 The sample text is a string that comes from the variable
