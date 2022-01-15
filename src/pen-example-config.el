@@ -596,7 +596,6 @@
 ;; This is still needed for term/cterm, for some reason
 (pen-term-set-raw-map)
 
-
 ;; Easily kill comint buffers
 (setq kill-buffer-query-functions nil)
 ;; But ensure that I still avoid killing scratch
