@@ -466,7 +466,7 @@ delim is used to guarantee the function returns multiple matches per line
           "DEFAULT")
       "")))
 
-(defun pen-sn (cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
+(defun pen-sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
 This appears to strip ansi codes.
 \(sh) does not.
@@ -474,15 +474,15 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (interactive)
 
   (let ((output))
-    (if (not cmd)
-        (setq cmd "false"))
+    (if (not shell-cmd)
+        (setq shell-cmd "false"))
 
     (if (not dir)
         (setq dir (get-dir)))
 
     (let ((default-directory dir))
       (if b_unbuffer
-          (setq cmd (concat "unbuffer -p " cmd)))
+          (setq shell-cmd (concat "unbuffer -p " shell-cmd)))
 
       (if (or (or
                (pen-var-value-maybe 'pen-sh-update)
@@ -491,7 +491,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                (and (variable-p 'sh-update)
                     (eval 'sh-update))
                (>= (prefix-numeric-value current-prefix-arg) 16)))
-          (setq cmd (concat "export UPDATE=y; " cmd)))
+          (setq shell-cmd (concat "export UPDATE=y; " shell-cmd)))
 
       (setq tf (make-temp-file "elisp_bash"))
       (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
@@ -511,10 +511,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                              (if (or (pen-var-value-maybe 'force-temperature))
                                  (list "PEN_TEMPERATURE" (pen-var-value-maybe 'force-temperature))))))))
 
-        (if (not (re-match-p "[&;]$" cmd))
-            (setq cmd (concat cmd ";")))
+        (if (not (re-match-p "[&;]$" shell-cmd))
+            (setq shell-cmd (concat shell-cmd ";")))
 
-        (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " cmd " echo -n $? > " tf_exit_code " ) > " tf)))
+        (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " tf)))
 
       (if detach
           (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &")))
@@ -539,13 +539,13 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                (f-delete tf_exit_code)))
       output)))
 
-(cl-defun pen-cl-sn (cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)
+(cl-defun pen-cl-sn (shell-cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)
   (interactive)
-  (pen-sn cmd stdin dir nil detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code))
+  (pen-sn shell-cmd stdin dir nil detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code))
 
-(defun pen-snc (cmd &optional stdin)
+(defun pen-snc (shell-cmd &optional stdin)
   "sn chomp"
-  (chomp (pen-sn cmd stdin)))
+  (chomp (pen-sn shell-cmd stdin)))
 
 (defun pen-eval-string (string)
   "Evaluate elisp code stored in a string."
@@ -586,18 +586,18 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
         ret
       (s-join "\n" ret))))
 
-(defun pen-sne (cmd &optional stdin &rest args)
+(defun pen-sne (shell-cmd &optional stdin &rest args)
   "Returns the exit code."
   (defset b_exit_code nil)
 
   (progn
-    (apply 'pen-sn (append (list cmd stdin) args))
+    (apply 'pen-sn (append (list shell-cmd stdin) args))
     (string-to-number b_exit_code)))
 
 ;; (pen-snq "grep hi" "hi")
 ;; (pen-snq "grep hi" "yo")
-(defun pen-snq (cmd &optional stdin &rest args)
-  (let ((code (apply 'pen-sne (append (list cmd stdin) args))))
+(defun pen-snq (shell-cmd &optional stdin &rest args)
+  (let ((code (apply 'pen-sne (append (list shell-cmd stdin) args))))
     (equal code 0)))
 
 (defun slugify (input &optional joinlines length)
