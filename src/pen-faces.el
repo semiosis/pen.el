@@ -19,8 +19,6 @@
 (require 'spacemacs-dark-theme)
 (load-theme 'spacemacs-dark t)
 
-
-
 (defun pen-list-faces (&optional regexp)
   "List all faces, using the same sample text in each.
 The sample text is a string that comes from the variable
