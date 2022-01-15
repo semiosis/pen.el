@@ -34,7 +34,7 @@ vipe_cmd="$1"
 
 echo Waiting for output from promptee... | pen-hls purple 1>&2
 if pen-tm session-exists human; then
-    echo Sending prompt to hidden terminal... | pen-hls purple 1>&2
+    echo Sending prompt to hidden terminal... | pen-hls red 1>&2
     pen-tm -sout -vipe "$wintype" -t human: "$vipe_cmd" | cat
 else
     pen-tm -sout -vipe "$wintype" "$vipe_cmd" | cat
