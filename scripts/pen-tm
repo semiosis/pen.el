@@ -3011,13 +3011,26 @@ case "$f" in
     ;;
 
     vipe|eipe) { # edit and continue
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -wintype) {
+                wintype="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+        : "${wintype:="sps"}"
+
         pipe_cmd="$1"; : ${pipe_cmd:="$f"}
 
         # This shouldn't be necessary
         if stdin_exists; then
-            pen-tm -sout -vipe sps "$pipe_cmd" | cat
+            pen-tm -sout -vipe "$wintype" "$pipe_cmd" | cat
         else
-            echo -n | pen-tm -sout -vipe sps "$pipe_cmd" | cat
+            echo -n | pen-tm -sout -vipe "$wintype" "$pipe_cmd" | cat
         fi
     }
     ;;

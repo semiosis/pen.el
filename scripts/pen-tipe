@@ -1,6 +1,19 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -wintype) {
+        wintype="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+: "${wintype:="sps"}"
+
 vipe_cmd="$1"
 # eipe
 : "${vipe_cmd:="vipe"}"
@@ -12,9 +25,9 @@ vipe_cmd="$1"
 # Well, actually pen-eipe *does* finish.
 
 if pen-tm session-exists human; then
-    pen-tm -sout -vipe spv -t human: "$vipe_cmd" | cat
+    pen-tm -sout -vipe "$wintype" -t human: "$vipe_cmd" | cat
 else
-    pen-tm -sout -vipe spv "$vipe_cmd" | cat
+    pen-tm -sout -vipe "$wintype" "$vipe_cmd" | cat
 fi
 
 # pen-tm -w -sout -vipe spv "$vipe_cmd" | cat
