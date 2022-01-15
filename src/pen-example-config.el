@@ -77,7 +77,6 @@
 (define-key pen-map (kbd "H-:") 'pen-compose-cli-command)
 (define-key pen-map (kbd "H-x") 'pen-diagnostics-show-context)
 
-
 (require 'pen-contrib)
 ;; from contrib
 (require 'pen-org-brain)
