@@ -431,7 +431,7 @@ Integration with the invisible internet.
 - https://github.com/dragonflyoss/Dragonfly2
 - https://geti2p.net/en/
 
-** A glossary
+** A little glossary
 #+BEGIN_SRC text -n :async :results verbatim code
   imemory
   imemories
