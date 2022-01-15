@@ -1433,10 +1433,14 @@ IFS= read -r -d '' shcode <<HEREDOC
         ` #  Overlay networks connect multiple Docker daemons together and enable swarm services to communicate with each other. `
         (
         docker swarm init
-        docker network create --driver=overlay --attachable --subnet=192.168.0.0/16 modal
+        docker network create --driver=overlay --attachable --subnet=192.168.0.0/16 pennet
         ) 1>&2
         ` # modal network for MyTeaParty `
-        cmd --network modal
+        cmd --network pennet
+        elif test "$network" = modal; then
+            :
+        elif test "$network" = offline; then
+            :
         else
         ` # both of these work `
         ` # cmd --network bridge `
