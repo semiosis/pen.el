@@ -25,6 +25,7 @@ functions are:
 - =Chann.el= - Channel personalites from the matrix to control your computer
 - =MadTeaParty= - Run a chatbot populated social simulation, and take the role of characters
 - =Paracosm= - Mind-mapping with artificial inspiration
+- =Melee= - Mind-mapping with artificial inspiration
 - =ESP= - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."
 - ... and a lot more
 
