@@ -674,6 +674,9 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
 
     export NO_QUIT_DAEMONS=y
 
+    # This is for read-only text at the top of a potentially new file
+    export PEN_PROMPT
+
     if ! inside-docker-p; then
         ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
         shift
