@@ -318,6 +318,8 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
 ITEMS will be evaluated in normal `or' order."
   `(generic-or-1 ,p (list ,@items)))
 
+(defalias 'call-function 'funcall)
+
 (defun generic-or-1 (p items)
   (let (item)
     (while items
