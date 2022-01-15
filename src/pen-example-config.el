@@ -559,7 +559,6 @@
 
 ;; (advice-remove 'kill-ring-save #'kill-ring-save-around-advice)
 
-
 (setq pen-fav-programming-language "Emacs Lisp")
 (setq pen-fav-world-language "English")
 
