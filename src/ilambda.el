@@ -140,7 +140,7 @@
       (setq tf (make-temp-file "elisp_bash"))
       (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
 
-      (setq final_cmd (concat "( cd " (pen-q dir) "; " cmd " ) > " tf))
+      (setq final_cmd (concat "( cd " (pen-q dir) "; " cmd " 2>/dev/null ) > " tf))
 
       (shut-up-c
        (with-temp-buffer
