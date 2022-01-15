@@ -31,7 +31,7 @@ functions are:
 - ... and a lot more
 
 Some behind-the-scenes technologies also included are:
-- =Inkw.el= - Intermediate Knowledge in emacs
+- =Inkw.el= - Intermediate Knowledge in emacs; A DSL for encoding the provenance of text.
 
 =Pen.el= also facilitates the creation,
 development, discovery and usage of prompts.
