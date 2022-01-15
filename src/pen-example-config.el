@@ -330,7 +330,6 @@
   ;;   (pen-client-generate-functions))
   (ignore-errors (pen-client-generate-functions)))
 
-
 ;; I could actually use codex to generate DWIM key bindings from function names
 (defun pen-define-maps ()
   (interactive)
