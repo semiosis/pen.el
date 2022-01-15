@@ -3,4 +3,6 @@ export TTY
 
  : "${WINTYPE:="sps"}"
 
+export VIPE_CLEAR
+
 pen-tipe -wintype "$sps" pen-eipe

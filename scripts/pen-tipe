@@ -10,9 +10,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -cl) {
+        VIPE_CLEAR=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 : "${wintype:="sps"}"
+
+export VIPE_CLEAR
 
 vipe_cmd="$1"
 # eipe
