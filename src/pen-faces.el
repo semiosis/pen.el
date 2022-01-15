@@ -51,6 +51,143 @@ argument, prompt for a regular expression using `read-regexp'."
   (if face
       (customize-face (intern face))))
 
+
+(defun pen-set-faces ()
+  (interactive)
+
+  (ignore-errors
+    (set-face-attribute
+     'menu nil
+     :inverse-video nil
+     :background "#1565c0"
+     :foreground "#64b5f6"
+     :bold t)
+
+    (set-face-attribute
+     'mode-line nil
+     :inverse-video nil
+     :background "#1565c0"
+     :foreground "#64b5f6"
+     :bold t)
+
+    (set-face-attribute
+     'comint-highlight-prompt nil
+     :inverse-video nil
+     :background "#1565c0"
+     :foreground "#64b5f6"
+     :bold t)
+
+    (set-face-attribute
+     'mode-line-inactive nil
+     :inverse-video nil
+     :background "#151515"
+     :foreground "#646464"
+     :bold t)
+
+    ;; This doesn't work well with nvc
+    ;; (set-face-foreground 'default "#404040")
+    (set-face-foreground 'default nil)
+
+    (set-face-foreground 'minibuffer-prompt "#64b5f6")
+
+    (set-face-attribute
+     'region nil
+     :inverse-video nil
+     :background "#903015"
+     :foreground "#f66064"
+     :bold t)
+
+    (let ((fg "#a73f5f")
+          (bg "#331111")
+          (wfg "#5555ff")
+          (wbg "#222222")
+          (cfg "#ffcc00")
+          (cbg "#222222")
+          (xfg "#ff55ff")
+          (xbg "#222222"))
+
+      (require 'lsp-ui)
+      (set-face-attribute 'lsp-ui-sideline-symbol nil :box nil)
+      (set-face-attribute 'lsp-ui-sideline-current-symbol nil :box nil)
+      (set-face-foreground 'lsp-ui-sideline-current-symbol "#66ff66")
+      (set-face-background 'lsp-ui-sideline-current-symbol "#000000")
+      (set-face-foreground 'lsp-ui-sideline-symbol "#6666ff")
+      (set-face-background 'lsp-ui-sideline-symbol "#000000")
+      (set-face-foreground 'lsp-ui-sideline-symbol-info "#444444")
+      (set-face-foreground 'lsp-ui-sideline-symbol-info "#753505")
+      (set-face-foreground 'lsp-ui-peek-filename "#880000")
+      (set-face-background 'lsp-ui-peek-filename "#111111")
+      (set-face-foreground 'lsp-ui-peek-selection "#448844")
+      (set-face-background 'lsp-ui-peek-selection "#222222")
+      (set-face-foreground 'lsp-ui-peek-header "#222222")
+      (set-face-background 'lsp-ui-peek-header "#111111")
+      (set-face-foreground 'lsp-ui-peek-footer "#222222")
+      (set-face-background 'lsp-ui-peek-footer "#111111")
+      (set-face-foreground 'lsp-ui-peek-highlight "#4444ff")
+      (set-face-background 'lsp-ui-peek-highlight "#222222")
+      (set-face-foreground 'lsp-ui-sideline-global nil)
+      (set-face-background 'lsp-ui-sideline-global nil)
+
+      (require 'lsp-lens)
+      (set-face-foreground 'lsp-lens-face "#000000")
+      (set-face-background 'lsp-lens-face "#111111")
+
+
+      (require 'shr)
+      (set-face-foreground 'shr-link fg)
+      (set-face-background 'shr-link bg)
+
+      (require 'org-faces)
+      (set-face-foreground 'org-link fg)
+      (set-face-background 'org-link bg)
+
+      (require 'w3m-util)
+
+      (set-face-foreground 'w3m-anchor fg)
+      (set-face-background 'w3m-anchor bg)
+
+      (require 'w3m)
+      (set-face-foreground 'w3m-current-anchor fg)
+      (set-face-background 'w3m-current-anchor bg)
+
+      (set-face-foreground 'w3m-arrived-anchor bg)
+      (set-face-background 'w3m-arrived-anchor fg)
+
+      (require 'button)
+      (set-face-foreground 'button fg)
+      (set-face-background 'button bg)
+
+      (require 'wid-edit)
+      (set-face-foreground 'widget-button wfg)
+      (set-face-background 'widget-button wbg)
+
+      (require 'custom)
+
+      (require 'cus-edit)
+      (set-face-foreground 'custom-button-pressed wfg)
+      (set-face-background 'custom-button-pressed wbg)
+      (set-face-foreground 'custom-button-pressed-unraised wfg)
+      (set-face-background 'custom-button-pressed-unraised wbg)
+      (set-face-foreground 'custom-button-unraised wfg)
+      (set-face-background 'custom-button-unraised wbg)
+      (set-face-foreground 'custom-link cfg)
+      (set-face-background 'custom-link cbg)
+      (set-face-foreground 'custom-variable-tag cfg)
+      (set-face-background 'custom-variable-tag cbg)
+      (set-face-foreground 'custom-group-tag cfg)
+      (set-face-background 'custom-group-tag cbg)
+
+      (require 'info)
+      (require 'info-xref)
+      (set-face-foreground 'info-xref xfg)
+      (set-face-background 'info-xref xbg))
+
+    (require 'wid-edit)
+    (set-face-foreground 'widget-field "#990055")
+    (set-face-background 'widget-field "#222222")))
+
+(add-hook 'after-init-hook 'pen-set-faces)
+
 (define-key pen-map (kbd "M-l M-q M-f") 'pen-customize-face)
 
 (provide 'pen-faces)
