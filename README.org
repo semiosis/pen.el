@@ -34,7 +34,7 @@ development, discovery and usage of prompts.
 The aim is to turn everyone into a wizard.
 
 It's completely *free*, *libre* and *open-source*.
-It's designed to be transparent and keep the Human in the Loop.
+It's designed to be *transparent* and keep the *Human in the Loop*.
 
 https://semiosis.github.io/posts/a-prompting-lsp-server-for-any-language-or-context-using-large-language-models/
 
