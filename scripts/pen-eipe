@@ -25,6 +25,7 @@ export PEN_NO_TM=y
 # Here, I *must* wait until I have available pool emacsclients
 # This is essential to prevent hanging, currently
 
+export PEN_PROMPT
 pen -notm -nw --pool "$tf_pipe_buffer"
 
 exec 1>&3
