@@ -1,4 +1,6 @@
 #!/bin/bash
 export TTY
 
-pen-tipe pen-eipe
+ : "${WINTYPE:="sps"}"
+
+pen-tipe -wintype "$sps" pen-eipe
