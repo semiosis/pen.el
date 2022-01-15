@@ -27,10 +27,14 @@
 (defun pen-find-file-read-only-context ()
   (let ((fp (concat "~/.pen/eipe_" (pen-daemon-name) "_prompt")))
     (if (f-exists-p fp)
-        (let ((prompt (slurp-file fp)))))))
+        (let* ((prompt (slurp-file fp))
+               ;; (charlen (string-bytes prompt))
+               (charlen (length prompt)))
+          (pen-eipe-set-prompt-ro charlen)))))
 
 (defset pen-eipe-hook '())
 
+;; This needs to happen after the file is loaded
 (add-hook 'pen-eipe-hook 'pen-find-file-read-only-context)
 
 (defun run-eipe-hooks ()
