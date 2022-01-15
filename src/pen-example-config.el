@@ -599,7 +599,6 @@
 
 (setq initial-major-mode 'text-mode)
 
-
 ;; The thin client
 (require 'pen-client)
 
