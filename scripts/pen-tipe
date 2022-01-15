@@ -21,6 +21,7 @@ esac; done
 : "${wintype:="sps"}"
 
 export VIPE_CLEAR
+export PEN_PROMPT
 
 vipe_cmd="$1"
 # eipe
