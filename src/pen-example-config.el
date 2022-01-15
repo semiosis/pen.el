@@ -653,7 +653,8 @@
 ;; (define-key pen-map (kbd "<S-M-f4>") 'pen-revert-and-quit-emacsclient-without-killing-server)
 
 ;; Quit Pen
-(define-key pen-map (kbd "<M-f1>") 'penq)
+(if (pen-snq "inside-docker-p")
+    (define-key pen-map (kbd "<M-f1>") 'penq))
 
 ;; Wow, it also works in the web interface
 ;; I should remember that for future bindings, using Shift-Meta bypasses google chrome Meta bindings
