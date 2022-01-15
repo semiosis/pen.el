@@ -388,6 +388,27 @@ https://github.com/semiosis/prompts/
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
 - https://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
 
+A little glossary preview:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  imemory
+  imemories
+      Imaginary memories.
+  
+  intellection
+      The action or process of understanding, as
+      opposed to imagination.
+      "audiences demand intellection without the
+      need for thought"
+  
+  Wizard of Oz testing
+      Testing in which the automated machine
+      component is substituted by some form of
+      human intervention but in such a way that
+      the user participating in the test is
+      unaware of the substitution.
+#+END_SRC
+
 ** Related projects
 I would love some help with these projects! :)
 
@@ -430,23 +451,3 @@ Integration with the invisible internet.
 - https://yggdrasil-network.github.io/about.html
 - https://github.com/dragonflyoss/Dragonfly2
 - https://geti2p.net/en/
-
-** A little glossary
-#+BEGIN_SRC text -n :async :results verbatim code
-  imemory
-  imemories
-      Imaginary memories.
-  
-  intellection
-      The action or process of understanding, as
-      opposed to imagination.
-      "audiences demand intellection without the
-      need for thought"
-  
-  Wizard of Oz testing
-      Testing in which the automated machine
-      component is substituted by some form of
-      human intervention but in such a way that
-      the user participating in the test is
-      unaware of the substitution.
-#+END_SRC
