@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# Melee - A game of Adversarial Prompting
+
+{
+echo Melee - A game of Adversarial Prompting
+echo In development.
+} 1>&2
+
+exit
