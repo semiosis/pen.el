@@ -1591,6 +1591,12 @@ case "$f" in
             }
             ;;
 
+            -cl) {
+                VIPE_CLEAR=y
+                shift
+            }
+            ;;
+
             -sw) {
                 switch_to_target=y
                 shift
@@ -2117,7 +2123,9 @@ case "$f" in
                 tmux wait-for "$sentinal_string"
                 # Killing the pane speeds up the user experience
                 tmux kill-pane -t "$full_id"
-                tmux send-keys C-l
+                if test "$VIPE_CLEAR" = "y"; then
+                    tmux send-keys C-l
+                fi
             fi
         fi
 
