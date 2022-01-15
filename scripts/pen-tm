@@ -2117,6 +2117,7 @@ case "$f" in
                 tmux wait-for "$sentinal_string"
                 # Killing the pane speeds up the user experience
                 tmux kill-pane -t "$full_id"
+                tmux send-keys C-l
             fi
         fi
 
