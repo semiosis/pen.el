@@ -811,6 +811,8 @@
 ;; Perhaps this should also kill the emacsclient
 ;; (define-key pen-map (kbd "<S-M-f4>") 'pen-save-and-kill-buffer-and-window)
 ;; (define-key pen-map (kbd "<S-M-f4>") 'pen-revert-and-quit-emacsclient-without-killing-server)
+
+;; Quit Pen
 (define-key pen-map (kbd "<M-f1>") 'penq)
 
 ;; Wow, it also works in the web interface
