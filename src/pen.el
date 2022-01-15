@@ -1850,6 +1850,7 @@ May use to generate code from comments."
 (require 'pen-looking-glass)
 (require 'pen-buffer-state)
 (require 'pen-apostrophe)
+(require 'pen-melee)
 (require 'pen-channel)
 (require 'pen-scratch)
 (require 'pen-minor-modes)
