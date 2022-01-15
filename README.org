@@ -9,7 +9,7 @@ and in a variety of configurable ways.
 Using =Pen.el=, you can centralise all of your
 prompting tasks. That includes any NLP task for
 text or code, describing images (=AlephAlpha=)
-and imagining images (=DALL-E=). Audio and
+and imagining images (=DALL-E=/=Glide=). Audio and
 video are also possible -- keep an eye out for
 VideoGPT in the future. The payload system
 allows you to send media to multi-modal
@@ -25,14 +25,13 @@ functions are:
 - =Chann.el= - Channel personalites from the matrix to control your computer
 - =MadTeaParty= - Run a chatbot populated social simulation, and take the role of characters
 - =Paracosm= - Mind-mapping with artificial inspiration
+- =ESP= - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."
 - ... and a lot more
 
 =Pen.el= also facilitates the creation,
 development, discovery and usage of prompts.
 
 It's completely free, libre and open-source.
-
-"One LSP server to rule all the computing contexts! And in the emacs bind them."
 
 https://semiosis.github.io/posts/a-prompting-lsp-server-for-any-language-or-context-using-large-language-models/
 
