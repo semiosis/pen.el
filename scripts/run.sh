@@ -116,6 +116,10 @@ runclient() {
     fi
 }
 
+# Do some cleanup
+rm -f /tmp/elisp_bash*
+rm -f /tmp/file_*
+
 if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
     echo Starting daemon pool in background 1>&2
     unbuffer pen-e sa &>/dev/null &
