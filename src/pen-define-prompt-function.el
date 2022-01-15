@@ -1109,7 +1109,7 @@
           (final-prompt
            (cond
             ((string-equal final-engine "Human")
-             (pen-eipec final-prompt "nw" "Final prompt edit by a human"))
+             (pen-eipec final-prompt "nw" "Final prompt edit by a human\n\n"))
             (t final-prompt)))
 
           (collect-from-pos
