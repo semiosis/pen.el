@@ -409,6 +409,20 @@ A little glossary preview:
       unaware of the substitution.
 #+END_SRC
 
+** What will this project become?
+Literally, it will become a safe and personal
+computing environment designed to protect
+human *intellection*, where the human utilises
+LMs to learn at their own pace, and in their own way.
+
+Human output bandwidth is very limited with
+today's input devices and, increasingly, rules
+and regulations prevent a person from having
+their say and outputting their personal truth.
+
+=Pen.el= protects personal truth by supporting
+an individual's paracosm.
+
 ** Related projects
 I would love some help with these projects! :)
 
