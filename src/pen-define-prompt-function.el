@@ -1103,6 +1103,9 @@
           ;; If using the human engine, then show the prompt in another window so:
           ;; - the human can edit the prompt before being prompted
           ;; - the human knows what the prompt is when prompted
+
+          ;; At this point, export as read-only text a banner to show the user what
+          ;; the purpose of this dialog is
           (final-prompt
            (cond
             ((string-equal final-engine "Human")
