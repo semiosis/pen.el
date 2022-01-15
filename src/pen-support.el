@@ -521,9 +521,6 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                              (if (or (pen-var-value-maybe 'force-temperature))
                                  (list "PEN_TEMPERATURE" (pen-var-value-maybe 'force-temperature))))))))
 
-        ;; I don't think the shell being used understand this
-        ;; (setq shell-cmd (concat shell-cmd " 2>/dev/null"))
-
         (if (not (re-match-p "[&;]$" shell-cmd))
             (setq shell-cmd (concat shell-cmd ";")))
 
