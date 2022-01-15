@@ -18,10 +18,10 @@ for any model or API.
 
 Some builtin ways to make use of prompting
 functions are:
-- the imaginary web browser =LookingGlass=,
-- Imaginary Interpreter (program in any language imaginable, with any libraries imaginable)
-- Apostrophe (Speak to imagined personalities, from history or from your imagination)
-- PenSieve - drag and drop, and peer into the memories of personalities through a file system
+- =LookingGlass=, the browser for the imaginary web
+- =Imaginary Interpreter= - program in any language imaginable, with any libraries imaginable
+- =Apostrophe= - Speak to imagined personalities, from history or from your imagination
+- =Pen=Sieve - drag and drop, and peer into the memories of personalities through a file system
 - Chann.el - Channel personalites from the matrix to control your computer
 - MadTeaParty - Run a chatbot populated social simulation, and take the role of characters
 - Paracosm - Mind-mapping with artificial inspiration
