@@ -2,6 +2,8 @@
 ;; - used to place the prompt
 ;; - used to tell the user what they are doing
 
+;; purple is a good font for a prompt
+;; human(red) / ai(blue)
 (defface pen-read-only
   '((t :foreground "#8b26d2"
        :background "#2e2e2e"
