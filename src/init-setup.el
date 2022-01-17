@@ -128,6 +128,7 @@
 ;; (require 'selectrum)
 (require 'spacemacs-dark-theme)
 (require 'macrostep)
+(require 'recursive-narrow)
 
 ;; The requires are necessary to complete the installation of tree-sitter
 (require 'tree-sitter)
