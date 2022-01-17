@@ -503,6 +503,19 @@ It's really meant for key bindings and which-key, so they should all be interact
   (not (eq nil (get-buffer bufname))))
 (defalias 'buffer-match-p 'buffer-exists)
 
+(defun pen-kill-this-buffer-volatile (&optional buffer-name)
+  "Kill current buffer, even if it has been modified."
+  (interactive)
+  (if buffer-name
+      (switch-to-buffer buffer-name))
+  (set-buffer-modified-p nil)
+  (if (and (local-variable-p 'kill-window-when-done)
+           kill-window-when-done)
+      (my-kill-buffer-and-window)
+    (kill-this-buffer)))
+
+(defalias 'pen-kill-buffer-immediately 'pen-kill-this-buffer-volatile)
+
 (defun pen-kill-buffer-and-reopen ()
   (interactive)
   ;; I need goto-point because save-excursion doesn't work with .gz files

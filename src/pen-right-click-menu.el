@@ -343,7 +343,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (def-right-click-menu double-click-context-menu-widget
   '(("Cancel" :call identity-command)
     ("> Right-click menu" :call right-click-context-menu)
-    ("Kill buffer" :call kill-buffer-immediately)
+    ("Kill buffer" :call pen-kill-buffer-immediately)
     ("Reopen buffer" :call pen-kill-buffer-and-reopen)
     ("Copy action" :call (copy-widget-action)
      :if (widget-at (point)))
