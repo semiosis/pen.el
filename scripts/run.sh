@@ -120,6 +120,12 @@ runclient() {
 rm -f /tmp/elisp_bash*
 rm -f /tmp/file_*
 
+find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
+
+# while :; do
+# emacs -nw --debug-init
+# done
+
 if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
     echo Starting daemon pool in background 1>&2
     unbuffer pen-e sa &>/dev/null &
