@@ -1,6 +1,27 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -fp) {
+        yaml_file="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -runtime) {
+        yaml_file="/tmp/pen.yaml"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${yaml_file:="~/.pen/pen.yaml"}"
+
 # pen-rc-set n-daemons 10
 
 key="$1"
@@ -21,4 +42,4 @@ else
     value="$(printf -- "%s" "$value" | qne)"
 fi
 
-sed -i "/^$key: \([^ ]\+\)/{s/^\($key: \)\(.*\)$/\1$value/}" ~/.pen/pen.yaml
+sed -i "/^$key: \([^ ]\+\)/{s/^\($key: \)\(.*\)$/\1$value/}" "$yaml_file"
