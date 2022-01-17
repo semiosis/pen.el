@@ -69,6 +69,7 @@
 (package-install 'tree-sitter-indent)
 (package-install 'shackle)
 (package-install 'wgrep)
+(package-install 'recursive-narrow)
 
 ;; TODO This still needs to be run once
 (package-install 'vterm)
