@@ -46,8 +46,11 @@
 
 ;; TODO Definitely do not do this unless the main distro
 
-(if (string-equal (pen-daemon-name)
-                  "DEFAULT")
-    (pen-auto-load-packages))
+;; Now that the packages have been installed, don't do it again
+;; until I add more logic to control it.
+(comment
+ (if (string-equal (pen-daemon-name)
+                   "DEFAULT")
+     (pen-auto-load-packages)))
 
 (provide 'pen-packages)
