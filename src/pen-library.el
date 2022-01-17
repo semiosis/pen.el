@@ -503,6 +503,17 @@ It's really meant for key bindings and which-key, so they should all be interact
   (not (eq nil (get-buffer bufname))))
 (defalias 'buffer-match-p 'buffer-exists)
 
+(defun recursive-widen ()
+  "Replacement of widen that will only pop one level of visibility."
+  (interactive)
+  (let (widen-to)
+    (if recursive-narrow-settings
+        (progn
+          (setq widen-to (pop recursive-narrow-settings))
+          (narrow-to-region (car widen-to) (cdr widen-to))
+          (recenter))
+      (widen))))
+
 (defun pen-kill-this-buffer-volatile (&optional buffer-name)
   "Kill current buffer, even if it has been modified."
   (interactive)
