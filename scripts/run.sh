@@ -120,6 +120,9 @@ runclient() {
 rm -f /tmp/elisp_bash*
 rm -f /tmp/file_*
 
+# Sometimes packages have old, broken .elc files.
+# Besides, i'm not convinced that it improves speed much
+# and I really like transparency.
 find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
 
 # while :; do
