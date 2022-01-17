@@ -22,25 +22,26 @@
 
   (let ((pl "~/.pen/emacs-packages.txt"))
     (if (f-exists-p pl)
-        (setq package-list
-              (-uniq
-               (append
-                package-list
-                '(markdown-mode)
-                (pen-load-list-file
-                 pl))))
+        (progn
+          (setq package-list
+                (-uniq
+                 (append
+                  package-list
+                  '(markdown-mode)
+                  (pen-load-list-file
+                   pl))))
 
-      ;; This one requires emacs25
-      ;; lsp-javascript-typescript
+          ;; This one requires emacs25
+          ;; lsp-javascript-typescript
 
-      ;; fetch the list of packages available
-      (unless package-archive-contents
-        (package-refresh-contents))
+          ;; fetch the list of packages available
+          (unless package-archive-contents
+            (package-refresh-contents))
 
-      ;; install the missing packages
-      (dolist (package package-list)
-        (unless (package-installed-p package)
-          (yes (ignore-errors (package-install package))))))))
+          ;; install the missing packages
+          (dolist (package package-list)
+            (unless (package-installed-p package)
+              (yes (ignore-errors (package-install package)))))))))
 
 (pen-auto-load-packages)
 
