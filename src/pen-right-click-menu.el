@@ -340,6 +340,11 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (interactive)
   (identity body))
 
+(defun double-click-context-menu ()
+  (interactive)
+  (call-interactively 'cua-exchange-point-and-mark)
+  (call-interactively 'double-click-context-menu-widget))
+
 (def-right-click-menu double-click-context-menu-widget
   '(("Cancel" :call identity-command)
     ("> Right-click menu" :call right-click-context-menu)
@@ -356,6 +361,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
      :if (widget-at (point)))
     ("Context functions" :call show-suggest-funcs-context-menu)))
 
-(define-key pen-map (kbd "<double-mouse-1>") 'double-click-context-menu-widget)
+(define-key pen-map (kbd "<double-mouse-1>") 'double-click-context-menu)
 
 (provide 'pen-right-click-menu)
