@@ -53,4 +53,3 @@ else
     cat "$yaml_file" | awk 1 | sponge "$yaml_file"
     pen-pl "$key: $value" >> "$yaml_file"
 fi
-
