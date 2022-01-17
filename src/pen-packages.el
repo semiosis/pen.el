@@ -19,7 +19,7 @@
   (interactive)
 
   (let ((pl "~/.pen/emacs-packages.txt"))
-    (if (f-exists-p pen-auto-load-packages)
+    (if (f-exists-p pl)
         (setq package-list
               (-uniq
                (append
