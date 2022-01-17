@@ -256,6 +256,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # TODO Make it so I can override parameters such as this
     -n1) {
         export PEN_N_DAEMONS=1
         shift
