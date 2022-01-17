@@ -42,4 +42,15 @@ else
     value="$(printf -- "%s" "$value" | qne)"
 fi
 
-sed -i "/^$key: \([^ ]\+\)/{s/^\($key: \)\(.*\)$/\1$value/}" "$yaml_file"
+if ! test -f "$yaml_file"; then
+    touch "$yaml_file"
+fi
+
+if pen-pl "$rp" | grep -q -P "^$key: "; then
+    sed -i "/^$key: \([^ ]\+\)/{s/^\($key: \)\(.*\)$/\1$value/}" "$yaml_file"
+else
+    # Ensure there is a newline at the end of the yaml file
+    cat "$yaml_file" | awk 1 | sponge "$yaml_file"
+    pen-pl "$key: $value" >> "$yaml_file"
+fi
+
