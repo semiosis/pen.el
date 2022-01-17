@@ -23,6 +23,7 @@
   (let ((pl "~/.pen/emacs-packages.txt"))
     (if (f-exists-p pl)
         (progn
+          (package-refresh-contents)
           (setq package-list
                 (-uniq
                  (append
