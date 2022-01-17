@@ -258,7 +258,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     # TODO Make it so I can override parameters such as this from the YAML
     # Keep a second YAML or a directory with the values.
-    # Would be great to be using a virtual filesystem as the abstraction, actually
+    # Would be great to be using a virtual filesystem as the abstraction, actually.
     -n1) {
         export PEN_N_DAEMONS=1
         shift
