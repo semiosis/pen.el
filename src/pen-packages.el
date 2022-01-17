@@ -1,5 +1,48 @@
 (package-initialize)
 
+(eval-after-load "polymode"
+  (lambda nil
+    (define-hostmode org-brain-poly-hostmode :mode 'org-brain-visualize-mode)
+    (define-innermode org-brain-poly-innermode :mode 'org-mode :head-matcher "^[─-]\\{3\\} Entry [─-]+
+" :tail-matcher "\\'" :head-mode 'host :tail-mode 'host)
+    (define-polymode org-brain-polymode :hostmode 'org-brain-poly-hostmode :innermodes
+      '(org-brain-poly-innermode)
+      (setq-local polymode-move-these-vars-from-old-buffer
+                  (delq 'buffer-read-only polymode-move-these-vars-from-old-buffer)))
+    (defun org-brain-polymode-save nil "Save entry text to the entry's file."
+           (interactive)
+           (when
+               (buffer-modified-p)
+             (let
+                 ((text
+                   (save-excursion
+                     (goto-char org-brain--vis-entry-text-marker)
+                     (end-of-line)
+                     (buffer-substring
+                      (point)
+                      (point-max)))))
+               (find-file
+                (org-brain-entry-path org-brain--vis-entry))
+               (seq-let
+                   (entry-min entry-max)
+                   (org-brain-text-positions org-brain--vis-entry)
+                 (goto-char entry-min)
+                 (delete-region entry-min entry-max)
+                 (insert text)
+                 (unless
+                     (looking-at-p "
+")
+                   (insert "
+
+"))
+                 (save-buffer)
+                 (switch-to-buffer
+                  (other-buffer
+                   (current-buffer)
+                   1))
+                 (set-buffer-modified-p nil)))))
+    (define-key org-brain-polymode-map "" 'org-brain-polymode-save)))
+
 (defun pen-slurp-file (f)
   (with-temp-buffer
     (insert-file-contents f)
