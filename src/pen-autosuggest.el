@@ -162,8 +162,8 @@ history autosuggestions."
 (defun pen-suggest-on-change (start end length &optional content-change-event-fn)
   (if (minor-mode-enabled pen-autosuggest-mode)
     nil
-      (run-with-idle-timer 0.1 0 'pen-set-autosuggestions)
-      (pen-set-autosuggestions)))
+    (run-with-idle-timer 0.1 0 'pen-set-autosuggestions)
+    (pen-set-autosuggestions)))
 
 ;; Hell
 
