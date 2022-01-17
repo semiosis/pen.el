@@ -15,6 +15,8 @@
 
 ;; Auto install package are installed if they are missing
 
+(defvar package-list nil)
+
 (defun pen-auto-load-packages ()
   (interactive)
 
