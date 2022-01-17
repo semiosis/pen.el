@@ -521,7 +521,7 @@ Use my position list code. Make it use rosie lang and external software."
   "DEPRECATED"
   (interactive "r")
   (pen-glossary-reload-term-3tuples)
-  (kill-buffer-and-reopen)
+  (pen-kill-buffer-and-reopen)
   (pen-generate-glossary-buttons-over-buffer beg end))
 
 (defun pen-button-get-text (b)

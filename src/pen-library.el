@@ -503,6 +503,61 @@ It's really meant for key bindings and which-key, so they should all be interact
   (not (eq nil (get-buffer bufname))))
 (defalias 'buffer-match-p 'buffer-exists)
 
+(defun pen-kill-buffer-and-reopen ()
+  (interactive)
+  ;; I need goto-point because save-excursion doesn't work with .gz files
+  (let ((p (point)))
+    (ignore-errors
+      (save-mark-and-excursion
+        (remove-overlays (point-min) (point-max))
+        ;; When it reverts, it may rebuttonize
+        (revert-buffer nil t)))
+
+    ;; This is a hack to fix the narrowing bug
+    (progn
+      (call-interactively 'recursive-widen)
+      (remove-overlays (point-min) (point-max)))
+
+    (goto-char p))
+
+  ;; (let ((pos (point)))
+  ;;   (save-excursion
+  ;;     (with-current-buffer
+  ;;         (revert-buffer nil t)))
+  ;;   (goto-char pos))
+
+  ;; The following worked when undo-tree was on
+  (never
+   (if (not (current-path))
+       (save-temp-if-no-file))
+   (let ((pos (point))
+         (path (current-path))
+         (b (current-buffer)))
+     (if (f-exists-p path)
+         (progn
+           (kill-buffer b)
+           ;; (let ((bb (find-file path)))
+           ;;   (etv bb))
+           ;; (with-current-buffer
+           ;;     (find-file path))
+           (with-current-buffer
+               (find-file path)
+             (goto-char pos)
+             ;; (eval '(generate-glossary-buttons-over-buffer nil nil t))
+
+             ;; This is actually necessary
+             ;; (eval '(redraw-glossary-buttons-when-window-scrolls-or-file-is-opened))
+             (run-buttonize-hooks)
+
+             (message "%s" (concat "killed + reloaded: " (mnm path)))
+             ;; (recenter-top-bottom)
+
+             ;; (ekm "C-l C-l")
+
+             ;; This was ok, but it's more seamless to not have it, particularly when I have that position resuming package working
+             ;; (recenter-top)
+             ))))))
+
 (defun pen-yank-path ()
   (interactive)
   (if (pen-selected-p)

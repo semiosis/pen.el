@@ -344,7 +344,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   '(("Cancel" :call identity-command)
     ("> Right-click menu" :call right-click-context-menu)
     ("Kill buffer" :call kill-buffer-immediately)
-    ("Reopen buffer" :call kill-buffer-and-reopen)
+    ("Reopen buffer" :call pen-kill-buffer-and-reopen)
     ("Copy action" :call (copy-widget-action)
      :if (widget-at (point)))
     ("Go to widget function" :call (goto-widadget-action)
@@ -353,15 +353,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
      :if (widget-at (point)))
     ("Show widget properties" :call (widget-show-properties-here)
      :if (widget-at (point)))
-    ("Context functions" :call show-suggest-funcs-context-menu)
-    ;; ("Cut" :call (kill-region (region-beginning) (region-end))
-    ;;  :if (and (use-region-p) (not buffer-read-only)))
-    ;; ("Paste" :call (yank) :if (not buffer-read-only))
-    ;; ("Select Region"
-    ;;  ("All" :call (mark-whole-buffer) :if (not (use-region-p)))
-    ;;  ("Word" :call (mark-word))
-    ;;  ("Paragraph" :call (mark-paragraph)))
-    ))
+    ("Context functions" :call show-suggest-funcs-context-menu)))
 
 (define-key pen-map (kbd "<double-mouse-1>") 'double-click-context-menu-widget)
 
