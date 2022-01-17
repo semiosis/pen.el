@@ -58,6 +58,7 @@
 (require 'pen-textprops)
 (require 'pen-faces)
 (require 'pen-misc)
+(require 'pen-packages)
 (require 'helpful)
 
 ;; Not sure I need the following in pen.el

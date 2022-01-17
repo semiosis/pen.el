@@ -345,6 +345,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     ("> Right-click menu" :call right-click-context-menu)
     ("Kill buffer" :call pen-kill-buffer-immediately)
     ("Reopen buffer" :call pen-kill-buffer-and-reopen)
+    ("Dired" :call dired-here)
     ("Copy action" :call (copy-widget-action)
      :if (widget-at (point)))
     ("Go to widget function" :call (goto-widadget-action)
