@@ -44,6 +44,10 @@
             (unless (package-installed-p package)
               (yes (ignore-errors (package-install package)))))))))
 
-(pen-auto-load-packages)
+;; TODO Definitely do not do this unless the main distro
+
+(if (string-equal (pen-daemon-name)
+                  "DEFAULT")
+    (pen-auto-load-packages))
 
 (provide 'pen-packages)
