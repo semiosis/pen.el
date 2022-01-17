@@ -125,6 +125,7 @@ rm -f /tmp/file_*
 # and I really like transparency.
 find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
 
+# TODO Make a --debug option to do this
 # while :; do
 # emacs -nw --debug-init
 # done
