@@ -135,7 +135,6 @@
 (require 'shackle)
 (require 'wgrep)
 (require 'recursive-narrow)
-(require 'pen-userlock)
 
 ;; The requires are necessary to complete the installation of tree-sitter
 (require 'tree-sitter)
