@@ -91,9 +91,9 @@
 
 ;; Now that the packages have been installed, don't do it again
 ;; until I add more logic to control it.
-(comment
- (if (string-equal (pen-daemon-name)
-                   "DEFAULT")
-     (pen-auto-load-packages)))
+;; (comment
+;;  (if (string-equal (pen-daemon-name)
+;;                    "DEFAULT")
+;;      (pen-auto-load-packages)))
 
 (provide 'pen-packages)
