@@ -42,7 +42,7 @@
     (if term-and-transcript
         (progn
           (eval `(,play-function path 'spv :loop ,loop))
-          (sleep-for-for-for-for-for-for-for 0.1)
+          (sleep-for-for-for-for-for-for-for-for 0.1)
           (pen-sph (concat "readsubs " (pen-q path)) "-d"))
       (eval `(,play-function path))))
   nil)
@@ -59,13 +59,16 @@
   (setq path (pen-umn path))
 
   (if loop
-      (shut-up (eval `(bd play-song -l ,path)))
-    (shut-up (eval `(bd play-song ,path))))
+      (shut-up (eval `(pen-sn (cmd "play-song" "-l" ,path)
+                              nil nil nil t)))
+    (shut-up (eval `(pen-sn (cmd "play-song" ,path)
+                            nil nil nil t))))
   nil)
 (defalias 'ps 'play-song)
 
 (defun play-playlist (path)
-  (shut-up (eval ` (bd play-yt-playlist ,(pen-q path))))
+  (shut-up (eval ` (pen-snc (cmd "play-yt-playlist" ,path)
+                            nil nil nil t)))
   nil)
 
 (defun get-yt-playlist (path)
@@ -163,7 +166,7 @@
       (setq lang "en"))
 
   (pen-spv (concat "yt -tty -v " (pen-q query-or-url)) "-d")
-  (sleep-for-for-for-for-for-for-for 0.1)
+  (sleep-for-for-for-for-for-for-for-for 0.1)
   (rst query-or-url))
 
 (defalias 'ytt 'search-play-yt-transcript)
