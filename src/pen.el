@@ -2,6 +2,12 @@
 
 (setq large-file-warning-threshold nil)
 
+;; This may have been defined in init,
+;; for contrib, etc.
+(ignore-errors
+  (defvar pen-map (make-sparse-keymap)
+    "Keymap for `pen.el'."))
+
 (defmacro lm (&rest body)
   "Interactive lambda with no arguments."
   `(lambda () (interactive) ,@body))
