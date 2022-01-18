@@ -25,7 +25,7 @@
 
 (defun cmd-out-to-tablist-quick (cmd &optional has-header)
   (interactive (list (read-string-hist "tablist cmd: ")))
-  (tablist-import-string (sn (concat cmd " | coerce-to-csv")) has-header))
+  (tablist-import-string (pen-sn (concat cmd " | coerce-to-csv")) has-header))
 
 
 ;; Have an interactive selection of the available modes
@@ -49,7 +49,7 @@
               (try (mapcar 'string-to-int (uncmd col-sizes-string))))))
 
     (let ((b (cond ((sor path) (tablist-buffer-from-csv-string (cat path) has-header col-sizes))
-                   ((sor cmd) (tablist-buffer-from-csv-string (sn cmd) has-header col-sizes)))))
+                   ((sor cmd) (tablist-buffer-from-csv-string (pen-sn cmd) has-header col-sizes)))))
       (if b
           ;; If mode exists for this command then use it
           (with-current-buffer
@@ -64,7 +64,7 @@
 
 (defset my-tablist-min-column-width 10)
 
-;; (tablist-buffer-from-csv-string (sn "arp -a | spaces2tabs | tsv2csv"))
+;; (tablist-buffer-from-csv-string (pen-sn "arp -a | spaces2tabs | tsv2csv"))
 (defun tablist-buffer-from-csv-string (csvstring &optional has-header col-sizes)
   "This creates a new tabulated list buffer from a CSV string"
   (let* ((b (nbfs csvstring "tablist"))
@@ -120,7 +120,7 @@
 
 (defun tablist-import-string (s &optional has-header)
   ""
-  (tablist-buffer-from-csv-string (sn "coerce-to-csv" s) has-header))
+  (tablist-buffer-from-csv-string (pen-sn "coerce-to-csv" s) has-header))
 
 ;; The default char should be tab
 ;; csv-mode should be started
@@ -232,7 +232,7 @@ Return the output buffer."
 
 (defun tabulated-list-current-cell-contents ()
   (interactive)
-  (my-copy (nth (tabulated-list-current-column) (vector2list (tabulated-list-get-entry)))))
+  (xc (nth (tabulated-list-current-column) (vector2list (tabulated-list-get-entry)))))
 
 
 (defun tablist-open-in-fpvd ()
@@ -432,7 +432,7 @@ If ADVANCE is non-nil, move forward by one line afterwards."
       vcs)))
 
 (defun current-visible-column ()
-  (tryelse (string-to-int (snc "tmux display-message -p '#{cursor_x}'"))
+  (tryelse (string-to-int (pen-snc "tmux display-message -p '#{cursor_x}'"))
            (error "Can't get column from tmux")))
 
 (defun tablist-current-column ()
@@ -600,39 +600,39 @@ Return t, if point is now in a visible area."
     (apply 'create-tablist args)))
 
 (defun arp-tablist-get-ip ()
-  (snc "rosie grep -o subs net.ipv4" (cadr (vector2list (tabulated-list-get-entry )))))
+  (pen-snc "rosie grep -o subs net.ipv4" (cadr (vector2list (tabulated-list-get-entry )))))
 
 (defun arp-tablist-ping ()
   (interactive)
-  (sps (concat "ping " (q (arp-tablist-get-ip)) " || pak")))
+  (sps (concat "ping " (pen-q (arp-tablist-get-ip)) " || pak")))
 
 (defun arp-tablist-nmap-os-detect (&optional ip)
   (interactive)
   (setq ip (or ip (arp-tablist-get-ip)))
-  (sps (concat "msudo nmap -O " (q ip) " 2>&1 | vs")))
+  (sps (concat "msudo nmap -O " (pen-q ip) " 2>&1 | vs")))
 
 (defun arp-tablist-nmap-ports (&optional ip)
   (interactive)
   (setq ip (or ip (arp-tablist-get-ip)))
-  (sps (concat "nmap -sT " (q ip) " 2>&1 | vs")))
+  (sps (concat "nmap -sT " (pen-q ip) " 2>&1 | vs")))
 
 (defun arp-tablist-ssh ()
   (interactive)
-  (sps (concat "zrepl ssh " (q (arp-tablist-get-ip)))))
+  (sps (concat "zrepl ssh " (pen-q (arp-tablist-get-ip)))))
 
 
 (defun mygit-tablist-get-url ()
-  (snc "xurls" (str (vector2list (tabulated-list-get-entry )))))
+  (pen-snc "xurls" (str (vector2list (tabulated-list-get-entry )))))
 
 (defun mygit-tablist-gc ()
   (interactive)
-  ;; (sps (concat "zrepl gc " (q (mygit-tablist-get-url))))
+  ;; (sps (concat "zrepl gc " (pen-q (mygit-tablist-get-url))))
   (gc (mygit-tablist-get-url)))
 
 
 
 (defun prompts-tablist-get-fp ()
-  (umn (concat "$PROMPTS/" (str (car (vector2list (tabulated-list-get-entry)))))))
+  (pen-umn (concat "$PROMPTS/" (str (car (vector2list (tabulated-list-get-entry)))))))
 
 (defun prompts-tablist-o ()
   (interactive)
@@ -646,7 +646,7 @@ Return t, if point is now in a visible area."
 
 (defun aws-create-user (name)
   (interactive (list (read-string-hist "New user name: ")))
-  (snc (concat "aws iam create-user --user-name " name))
+  (pen-snc (concat "aws iam create-user --user-name " name))
   (if (derived-mode-p 'tabulated-list-mode)
       (revert-buffer)))
 
@@ -655,23 +655,23 @@ Return t, if point is now in a visible area."
                          (read-string-hist "Delete user name: "))))
   (if (yes-or-no-p (concat "Delete " name "?"))
       (progn
-        (snc (concat "aws iam delete-user --user-name " name))
+        (pen-snc (concat "aws iam delete-user --user-name " name))
         (if (derived-mode-p 'tabulated-list-mode)
             (revert-buffer)))))
 
 (defun aws-add-policy-to-user (name)
   (interactive (list (or (sor (str (tabulated-list-get-id)))
                          (read-string-hist "Add policy to user: "))))
-  (let ((policy (fz (snc "list-aws-iam-policies-csv | sed 1d | cut -d , -f 2 | uq -l"))))
-    (snc (concat "oci aws iam attach-user-policy --user-name " name " --policy-arn \"" policy "\""))
+  (let ((policy (fz (pen-snc "list-aws-iam-policies-csv | sed 1d | cut -d , -f 2 | uq -l"))))
+    (pen-snc (concat "oci aws iam attach-user-policy --user-name " name " --policy-arn \"" policy "\""))
     (if (derived-mode-p 'tabulated-list-mode)
         (revert-buffer))))
 
 (defun aws-remove-policy-from-user (name)
   (interactive (list (or (sor (str (tabulated-list-get-id)))
                          (read-string-hist "Remove policy from user: "))))
-  (let ((policy (fz (snc "list-aws-iam-policies-csv | sed 1d | cut -d , -f 2 | uq -l"))))
-    (snc (concat "oci aws iam detach-user-policy --user-name " name " --policy-arn \"" policy "\""))
+  (let ((policy (fz (pen-snc "list-aws-iam-policies-csv | sed 1d | cut -d , -f 2 | uq -l"))))
+    (pen-snc (concat "oci aws iam detach-user-policy --user-name " name " --policy-arn \"" policy "\""))
     (if (derived-mode-p 'tabulated-list-mode)
         (revert-buffer))))
 
@@ -683,7 +683,7 @@ Return t, if point is now in a visible area."
 
 (defun kill-port (port)
   (interactive (read-string "kill-port: "))
-  (snc (cmd "kill-port" (str port))))
+  (pen-snc (cmd "kill-port" (str port))))
 
 (defun ports-tablist-kill-port (&optional port)
 
