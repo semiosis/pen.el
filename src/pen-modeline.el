@@ -6,20 +6,16 @@
            (s-replace-regexp
             "pen-emacsd-\\([0-9]*\\)"
             "\\1"
-            dn)))))
+            dn))
+          (t
+           "emacs"))))
 
 (setq-default mode-line-format
       `(" "
         ,(pen-modeline-name)
-        ;; (eldoc-mode-line-string
-        ;;  (" " eldoc-mode-line-string " "))
         ("  "
          mode-line-buffer-identification "   "
-         ;; mode-line-position
-         ;; (vc-mode vc-mode)
-         "  " mode-line-modes
-         ;; mode-line-misc-info
-         )))
+         "  " mode-line-modes)))
 
 (defun pen-modeline-progressbar-demo (&optional duration)
   "Displays a progressbar in the mode-line."
