@@ -75,7 +75,7 @@
                   pen-use-human-engine-if-disconnected
                   (not (pen-internet-connected-p))
                   (progn
-                    (message "Internet not connected. Prompting human instead.")
+                    (message "Internet not connected. Prompting human instead. Check terminal.")
                     "Human"))
                  (and
                   (not pen-prompt-force-engine-disabled)
