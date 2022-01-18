@@ -1,0 +1,65 @@
+#!/bin/bash
+export TTY
+
+# rtcmd -E "cat \"$HOME/source/git/mullikine/tenets/tenets/success/360entsecgroup-skylar-goreporter-all-functions.json\" | jq -C -r . | less -rS"
+# rtcmd -E "cat \"$HOME/source/git/mullikine/tenets/tenets/success/360entsecgroup-skylar-goreporter-all-functions.json\" | jq -r \".[].Comment\" | less -rS"
+# rtcmd -E "cat \"$HOME/source/git/mullikine/tenets/tenets/success/360entsecgroup-skylar-goreporter-all-functions.json\" | jq -r \".[].Comment\" | sort | uniq | less -rS"
+
+# rtcmd ++jq -E "go-outline -f $MYGIT/DylanMeeus/MediumCode/bloomfilter/main.go | jq . | vs"
+
+# 2 modes of operation
+# --------------------
+# jiq go-outline -f $MYGIT/DylanMeeus/MediumCode/bloomfilter/main.go
+# go-outline -f $MYGIT/DylanMeeus/MediumCode/bloomfilter/main.go | jiq
+
+# Make sure it's chomped. This will save time
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    if test "$#" -eq 1 && test -f "$1"; then
+        CMD="cat $(aqf "$1")"
+    else
+        CMD="$(cmd "$@")"
+    fi
+fi
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+if ! is_tty; then
+    if stdin_exists; then
+        jq .
+    else
+        echo "No stdin or stdout" 1>&2
+        exit 1
+    fi
+else
+    
+    if stdin_exists; then
+        : ${CMD:="-r $(aqf ".")"}
+        s chomp | rtcmd ++jq -E "jq $CMD | vs"
+    else
+        : ${CMD:="echo []"}
+        if test -f "$CMD"; then
+            CMD="cat $(aqf "$CMD")"
+        fi
+        rtcmd ++jq -E "$CMD | jq \".\" | vs"
+    fi
+fi
