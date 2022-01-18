@@ -43,7 +43,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     ## This does not work
     ++*) { # pattern
-        pattern="$(printf -- "%s" "$opt" | sed 's/^++//' | s chomp)"
+        pattern="$(printf -- "%s" "$opt" | sed 's/^++//' | chomp)"
 
         vimpat+="+/\(\\<$pattern\\>\( -[^ ]\+\)* [^-]\)\@<=."
 
@@ -54,7 +54,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     +/*) { # pattern
-        pattern="$(printf -- "%s" "$opt" | sed 's=^+/==' | s chomp)"
+        pattern="$(printf -- "%s" "$opt" | sed 's=^+/==' | chomp)"
 
         vimpat+="+/$pattern"
 
