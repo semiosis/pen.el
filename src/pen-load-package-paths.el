@@ -63,9 +63,9 @@
   (string2list
    (chomp
     (pen-sn-basic
-     (concat "find -P " (pen-q dir) " -maxdepth 2 \\( -name 'snippets' -o -name '*-snippets*' \\) -prune -o -type d")
+     (concat "find -P . -maxdepth 2 \\( -name 'snippets' -o -name '*-snippets*' \\) -prune -o -type d")
      nil
-     "/"))))
+     dir))))
 
 (setq load-path (cl-union load-path (list-directories-recursively "~/.emacs.d/elpa/")))
 
