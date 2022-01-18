@@ -41,7 +41,7 @@
 (setq-default which-key-lighter "")
 
 ;; Get an ilambda minor mode
-;; Get a semiosis protocol minor mode
+;; Get a semiosis minor mode
 ;; Get a pen default values minor mode
 
 ;; ("ilambda"     "γ" :postfix)
