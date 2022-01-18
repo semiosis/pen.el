@@ -344,6 +344,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (interactive)
   ;; TODO prevent a cursor position change if double clicking
   ;; The preceding single-click has bindings which change the mark and point
+  ;; I'm currently unsure how to do that.
 
   ;; (call-interactively 'cua-exchange-point-and-mark)
   ;; (if (< (mark) (point))
