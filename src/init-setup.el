@@ -190,7 +190,6 @@
   "Keymap for `pen.el'.")
 
 (pen-with-user-repos
- (load (f-join contribdir "src/init-setup.el"))
  (load (f-join contribdir "src/pen-contrib.el"))
  (load (f-join pendir "src/pen-example-config.el")))
 
