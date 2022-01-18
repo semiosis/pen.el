@@ -355,10 +355,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   ;;     (call-interactively 'double-click-context-menu-widget))
   )
 
-  (if (< (mark) (point))
-      (exchange-point-and-mark))
-
-
 (def-right-click-menu double-click-context-menu-widget
   '(("Cancel" :call identity-command)
     ("> Right-click menu" :call right-click-context-menu)
