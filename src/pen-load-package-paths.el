@@ -21,6 +21,12 @@
   `(progn (let* ((inhibit-message t))
             ,@body)))
 
+(defun slurp-file (filePath)
+  "Return filePath's file content."
+  (with-temp-buffer
+    (insert-file-contents filePath)
+    (buffer-string)))
+
 (defun pen-sn-basic (cmd &optional stdin dir)
   (interactive)
 
