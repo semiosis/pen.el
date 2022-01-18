@@ -1,3 +1,42 @@
+function! Prompt(fun, ...)
+    let args = a:000
+    let s = ""
+    " skip the first of the variadic args because it's the input
+    for arg in args[1:]
+        let s = s . ' "' . arg . '"'
+    endfor
+
+    let cmd = a:fun . s
+    let s = system("penf -u " . cmd, @p)
+    let @p = s
+
+    " paste from p register
+    exe "normal! gv\"pp"
+endfunction
+
+xnoremap Zt "py:silent! call Prompt("pf-transform-code/3", @p, "vim", input("transformation: "))<CR>
+
+
+
+
+function! Q(string)
+    return system('q', a:string)
+endf
+
+function! RTCmdSetup(cmd)
+    exe("autocmd TextChanged * silent! call system(".Q(a:cmd).", GetBufferContents())")
+    exe("autocmd TextChangedI * silent! call system(".Q(a:cmd).", GetBufferContents())")
+endfunction
+
+fun! StartAppend()
+    startinsert
+    call cursor( line('.'), col('.') + 1)
+endf
+command! StartAppend call StartAppend()
+
+
+
+
 set modelines=0 nomodeline
 set guicursor=
 
