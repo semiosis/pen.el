@@ -450,6 +450,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nse) {
+        no_start_emacs=y
+        shift
+    }
+    ;;
+
     -u) {
         UPDATE=y
         PEN_UPDATE=t
@@ -595,7 +601,7 @@ ensure_pen_running() {
         # How can I detach it when done loading?
         # Maybe the only  way is to ensure that pen -n always starts pen with no interruptions.
         # TODO Ensure that pen.el still starts, even with empty ~/.pen
-        ( unbuffer pen -nw -n &>/dev/null; ) & disown
+        ( unbuffer pen -nw -n "$@" &>/dev/null; ) & disown
 
         while !  docker exec "${pen_container_name}" true &>/dev/null; do
             sleep 1
@@ -607,15 +613,33 @@ if test "$start_shell" = "y"; then
     export DISPLAY=
     # nvt
 
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        -nse) {
+            no_start_emacs=y
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
     : ${CMD:="$(cmd "$@")"}
     : "${CMD:="/bin/bash || /bin/zsh || sh"}"
 
-    if ! inside-docker-p && ! docker-running-p; then
+    if test "$no_start_emacs" = y && ! docker-running-p; then
+        echo "Running basic shell without Pen server" | pen-hls blue
+        docker run -d --rm --name "$pen_container_name" -ti semiosis/pen.el:latest /bin/sh -c "trap 'exit 147' TERM; tail -f /dev/null & while wait \${!}; test \$? -ge 128; do true; done" 
+    elif ! inside-docker-p && ! docker-running-p; then
         # Start pen in background and wait
         ensure_pen_running
     fi
 
     docker exec -it "$pen_container_name" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+
+    if docker-running-p && yn "Stop container?"; then
+        docker stop "$pen_container_name"
+    fi
     exit "$?"
 fi
 
