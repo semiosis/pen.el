@@ -42,7 +42,7 @@
     (if term-and-transcript
         (progn
           (eval `(,play-function path 'spv :loop ,loop))
-          (sleep-for-for-for-for-for 0.1)
+          (sleep-for-for-for-for-for-for-for 0.1)
           (pen-sph (concat "readsubs " (pen-q path)) "-d"))
       (eval `(,play-function path))))
   nil)
@@ -65,7 +65,7 @@
 (defalias 'ps 'play-song)
 
 (defun play-playlist (path)
-  (shut-up (eval ` (bd play-yt-playlist ,(e/q path))))
+  (shut-up (eval ` (bd play-yt-playlist ,(pen-q path))))
   nil)
 
 (defun get-yt-playlist (path)
@@ -73,7 +73,7 @@
 
   (if (string-empty-p path) (setq path "[[https://www.youtube.com/playlist?list=PLGYGe2PKknX2kydiv28aq8dBXBWeJfxgg][The Lion King 2019 soundtrack - YouTube]]"))
 
-  (let ((result (e/chomp (pen-sn (concat "pen-ci yt-list-playlist-urls " (e/q path))))))
+  (let ((result (chomp (pen-sn (concat "pen-ci yt-list-playlist-urls " (pen-q path))))))
     (if (called-interactively-p 'any)
         (new-buffer-from-string result)
       result)))
@@ -83,7 +83,7 @@
 
   (if (string-empty-p path) (setq path "[[https://www.youtube.com/playlist?list=PLGYGe2PKknX2kydiv28aq8dBXBWeJfxgg][The Lion King 2019 soundtrack - YouTube]]"))
 
-  (let ((result (e/chomp (pen-sn (concat "pen-ci yt-playlist-json " (e/q path))))))
+  (let ((result (chomp (pen-sn (concat "pen-ci yt-playlist-json " (pen-q path))))))
     (if (called-interactively-p 'any)
         (new-buffer-from-string result)
       result)))
@@ -128,7 +128,7 @@
 
 (defun ytsearch (query)
   (if (string-match-p "\\bhttps?:" query)
-      (setq query (e/chomp (sh/xurls query)))
+      (setq query (chomp (sh/xurls query)))
     (pen-cl-sn (concat "yt-search " (pen-q query)) :chomp t)))
 
 (defun search-play-yt (query-or-url &optional audioonly)
@@ -136,7 +136,7 @@
 
   (kill-music)
   (if (string-match-p "\\bhttps?:" query-or-url)
-      (setq query-or-url (e/chomp (sh/xurls query-or-url)))
+      (setq query-or-url (chomp (sh/xurls query-or-url)))
     (setq query-or-url (ytsearch query-or-url)))
 
   (if audioonly
@@ -156,14 +156,14 @@
 
   (kill-music)
   (if (string-match-p "\\bhttps?:" query-or-url)
-      (setq query-or-url (e/chomp (sh/xurls query-or-url)))
+      (setq query-or-url (chomp (sh/xurls query-or-url)))
     (setq query-or-url (ytsearch query-or-url)))
 
   (if (not lang)
       (setq lang "en"))
 
   (pen-spv (concat "yt -tty -v " (pen-q query-or-url)) "-d")
-  (sleep-for-for-for-for-for 0.1)
+  (sleep-for-for-for-for-for-for-for 0.1)
   (rst query-or-url))
 
 (defalias 'ytt 'search-play-yt-transcript)
@@ -180,7 +180,7 @@
   (interactive (list (read-string-hist "yt query: ")))
 
   (if (string-match "^\\[\\[http" url)
-      (setq url (e/chomp (pen-snc "xurls" url))))
+      (setq url (chomp (pen-snc "xurls" url))))
 
   (if (and (not (string-match "^http" url))
            (sor url))
