@@ -37,6 +37,12 @@
 (pen-diminish-modes)
 (add-hook 'after-make-frame-functions 'pen-diminish-modes)
 
+;; ("ilambda"     "γ" :postfix)
+;;    ("pen-mydefaults" "🖊" :postfix)
+;;    ;; semiosis protocol
+;;    ("semiosis"    "࿋" :postfix)
+
+;; cyphejor is for shortening *Major-Mode* names
 (setq
  cyphejor-rules
  '(:upcase
@@ -49,10 +55,6 @@
    ("interaction" "i" :prefix)
    ("interactive" "i" :prefix)
    ("lisp"        "λ" :postfix)
-   ("ilambda"     "γ" :postfix)
-   ("pen-mydefaults" "🖊" :postfix)
-   ;; semiosis protocol
-   ("semiosis"    "࿋" :postfix)
    ("menu"        "▤" :postfix)
    ("mode"        "")
    ("package"     "↓")
