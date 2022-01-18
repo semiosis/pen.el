@@ -343,7 +343,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (defun double-click-context-menu ()
   (interactive)
   ;; TODO prevent a cursor position change if double clicking
-  ;; The preceding single-click has hooks which change the mark and point
+  ;; The preceding single-click has bindings which change the mark and point
 
   ;; (call-interactively 'cua-exchange-point-and-mark)
   ;; (if (< (mark) (point))
