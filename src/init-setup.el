@@ -34,6 +34,11 @@
   (and (not (eq s nil))
        (boundp s)))
 
+(defmacro shut-up-c (&rest body)
+  "This works for c functions where shut-up does not."
+  `(progn (let* ((inhibit-message t))
+            ,@body)))
+
 (defun pen-sn-basic (cmd &optional stdin dir)
   (interactive)
 
