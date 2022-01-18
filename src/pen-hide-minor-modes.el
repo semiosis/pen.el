@@ -10,7 +10,6 @@
 
 ;; Look at the variable 'minor-mode-alist' to determine the minor mode lighters
 
-(diminish 'my-mode)
 (diminish 'my/lisp-mode)
 (diminish 'highlight-indent-guides-mode)
 (diminish 'highlight-thing-mode)
@@ -29,26 +28,6 @@
 (diminish 'eldoc-overlay-mode)
 (diminish 'paredit-mode)
 (diminish 'org-link-minor-mode)
-;; (diminish 'flycheck)
-
-
-;; How do I list all the modes in the mode line?
-
-
-
-
-;;(require 'rich-minority)
-;;(rich-minority-mode 1)
-;;
-;;;; (add-to-list " Fill" 'rm-whitelist)
-;;(add-to-list 'rm-whitelist " Fill")
-
-;; (setq rm-blacklist
-;;       (format "^ \\(%s\\)$"
-;;               (mapconcat #'identity
-;;                          '("Fly.*" "Projectile.*" "PgLn")
-;;                          "\\|")))
-
 
 (setq
  cyphejor-rules
@@ -72,4 +51,4 @@
 
 (cyphejor-mode 1)
 
-(provide 'hide-minor-modes)
+(provide 'pen-hide-minor-modes)
