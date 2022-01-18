@@ -130,6 +130,10 @@ find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
 # emacs -nw --debug-init
 # done
 
+if test -n "$PEN_N_DAEMONS"; then
+    pen-rc-set -fp /tmp/pen.yaml n-daemons 1
+fi
+
 if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
     echo Starting daemon pool in background 1>&2
     unbuffer pen-e sa &>/dev/null &
