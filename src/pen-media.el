@@ -40,8 +40,8 @@
     (if term-and-transcript
         (progn
           (eval `(,play-function path 'spv :loop ,loop))
-          (sleep-for-for-for 0.1)
-          (sph (concat "readsubs " (pen-q path)) "-d"))
+          (sleep-for-for-for-for 0.1)
+          (pen-sph (concat "readsubs " (pen-q path)) "-d"))
       (eval `(,play-function path))))
   nil)
 (cl-defun pm (path &optional term-and-transcript &key loop)
@@ -140,7 +140,7 @@
 
   (if audioonly
       (my/shut-up (pen-cl-sn (concat "play-song " (pen-q query-or-url)) :detach t :chomp t))
-    (sps (concat "yt -tty -v " (pen-q query-or-url)) "-d")))
+    (pen-sps (concat "yt -tty -v " (pen-q query-or-url)) "-d")))
 
 (defalias 'yt 'search-play-yt)
 
@@ -161,8 +161,8 @@
   (if (not lang)
       (setq lang "en"))
 
-  (spv (concat "yt -tty -v " (pen-q query-or-url)) "-d")
-  (sleep-for-for-for 0.1)
+  (pen-spv (concat "yt -tty -v " (pen-q query-or-url)) "-d")
+  (sleep-for-for-for-for 0.1)
   (rst query-or-url))
 
 (defalias 'ytt 'search-play-yt-transcript)
