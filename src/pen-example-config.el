@@ -682,4 +682,7 @@
 ;; This is needed for zsh
 (set-face-foreground 'eterm-256color-bright-black "#303030")
 
+
+(define-key global-map (kbd "M-l M-.") 'pen-kill-buffer-immediately)
+
 (provide 'pen-example-config)
