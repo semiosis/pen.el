@@ -108,67 +108,49 @@ START and END can be in either order."
 (defalias 'term-sps 'pen-e-sps-zsh)
 (defalias 'tsps 'pen-e-sps-zsh)
 
-(defun pen-sps (&optional cmd nw_args input dir)
-  "Runs command in a horizontal split"
+(defun pen-tm-nw (&optional cmd window-type nw_args input dir)
+  "Runs command in a new window/pane"
   (interactive)
   (if (not cmd)
       (setq cmd "zsh"))
+  (if (not (sor window-type))
+      (setq window-type "nw"))
   (if input
-      (pen-sn (concat "pen-tm -tout -S sps " nw_args " " (pen-q cmd) " &") input (or dir (get-dir)))
+      (pen-sn (concat "pen-tm -tout -S " window-type " " nw_args " " (pen-q cmd) " &") input (or dir (get-dir)))
     (if (display-graphic-p)
         (pen-e-sps-zsh cmd)
       (progn
         (if (and (variable-p 'sh-update)
                  (eval 'sh-update))
             (setq cmd (concat "upd " cmd)))
-        (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te sps " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))
-              ;; pen-tm ns -np -s -c "/root/notes/" "zsh"
+        (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te " window-type " " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))
               (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q (or dir (get-dir))) " " (pen-q cmd))))
           (if (>= (prefix-numeric-value current-prefix-arg) 4)
               (pen-e-sps-zsh cmd-tm-here)
             (pen-snc cmd-tm-split)))))))
+
+(defun pen-nw (&optional cmd nw_args input dir)
+  "Runs command in a sensible split"
+  (interactive)
+  (pen-tm-nw cmd "nw" nw_args input dir))
+(defalias 'pen-tm-nw 'pen-sps)
+
+(defun pen-sps (&optional cmd nw_args input dir)
+  "Runs command in a sensible split"
+  (interactive)
+  (pen-tm-nw cmd "sps" nw_args input dir))
 (defalias 'pen-tm-sps 'pen-sps)
 
 (defun pen-sph (&optional cmd nw_args input dir)
   "Runs command in a horizontal split"
   (interactive)
-  (if (not cmd)
-      (setq cmd "zsh"))
-  (if input
-      (pen-sn (concat "pen-tm -tout -S sph " nw_args " " (pen-q cmd) " &") input (or dir (get-dir)))
-    (if (display-graphic-p)
-        (pen-e-sph-zsh cmd)
-      (progn
-        (if (and (variable-p 'sh-update)
-                 (eval 'sh-update))
-            (setq cmd (concat "upd " cmd)))
-        (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te sph " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))
-              ;; pen-tm ns -np -s -c "/root/notes/" "zsh"
-              (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q (or dir (get-dir))) " " (pen-q cmd))))
-          (if (>= (prefix-numeric-value current-prefix-arg) 4)
-              (pen-e-sph-zsh cmd-tm-here)
-            (pen-snc cmd-tm-split)))))))
-(defalias 'pen-tm-sph 'pen-sph)
+  (pen-tm-nw cmd "sph" nw_args input dir))
+(defalias 'pen-tm-sph 'pen-sps)
 
 (defun pen-spv (&optional cmd nw_args input dir)
   "Runs command in a vertical split"
   (interactive)
-  (if (not cmd)
-      (setq cmd "zsh"))
-  (if input
-      (pen-sn (concat "pen-tm -tout -S spv " nw_args " " (pen-q cmd) " &") input (or dir (get-dir)))
-    (if (display-graphic-p)
-        (pen-e-spv-zsh cmd)
-      (progn
-        (if (and (variable-p 'sh-update)
-                 (eval 'sh-update))
-            (setq cmd (concat "upd " cmd)))
-        (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te spv " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))
-              ;; pen-tm ns -np -s -c "/root/notes/" "zsh"
-              (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q (or dir (get-dir))) " " (pen-q cmd))))
-          (if (>= (prefix-numeric-value current-prefix-arg) 4)
-              (pen-e-spv-zsh cmd-tm-here)
-            (pen-snc cmd-tm-split)))))))
-(defalias 'pen-tm-spv 'pen-spv)
+  (pen-tm-nw cmd "spv" nw_args input dir))
+(defalias 'pen-tm-spv 'pen-sps)
 
 (provide 'pen-tmux)
