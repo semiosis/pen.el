@@ -16,8 +16,6 @@
   (discard-input)
   nil)
 
-(require 'cl-macs)
-
 (require 'pen-load-package-paths)
 
 (defvar org-roam-v2-ack t)
