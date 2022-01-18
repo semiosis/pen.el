@@ -629,9 +629,14 @@ if test "$start_shell" = "y"; then
 
     if test "$no_start_emacs" = y && ! docker-running-p; then
         echo "Running basic shell without Pen server" | pen-hls blue
+
+        test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
+        test -d "pen.el" && : "${PENEL_DIR:="`pwd`/pen.el"}"
+
         IFS= read -r -d '' shcode <<HEREDOC
-        docker run -d --rm --name "$pen_container_name" -ti semiosis/pen.el:latest \
+        docker run -d --rm --name "$pen_container_name" -ti \
             $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
+            semiosis/pen.el:latest \
             /bin/sh -c "trap 'exit 147' TERM; tail -f /dev/null & while wait \${!}; test \$? -ge 128; do true; done" &>/dev/null
 HEREDOC
         eval "$shcode"
