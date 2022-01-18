@@ -133,7 +133,6 @@ START and END can be in either order."
   "Runs command in a sensible split"
   (interactive)
   (pen-tm-nw cmd "nw" nw_args input dir))
-(defalias 'pen-tm-nw 'pen-sps)
 
 (defun pen-sps (&optional cmd nw_args input dir)
   "Runs command in a sensible split"
