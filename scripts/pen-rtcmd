@@ -85,7 +85,7 @@ exec 0</dev/null
 printf -- "%s\n" "$CMD" | pen-ds -s rtcmd_init
 
 if test "$STDIN_EXISTS" = "y"; then
-    CMD="cat $(aqf "$tf_stdin") | $CMD"
+    CMD="cat $(cmd "$tf_stdin") | $CMD"
 fi
 
 cmdparas="$(echo -e -n "$CMD" | qfd | pen-esc '`')"
