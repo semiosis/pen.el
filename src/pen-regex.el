@@ -63,12 +63,16 @@
   (set sym1 (copy-marker (mark)))
   (set sym2 (copy-marker (point))))
 
+(advice-add 'save-region :around #'ignore-errors-around-advice)
+
 (defun restore-region (&optional sym1 sym2)
   (interactive)
   (setq sym1 (or sym1 'm1))
   (setq sym2 (or sym2 'm2))
   (set-mark (eval sym1))
   (goto-char (eval sym2)))
+
+(advice-add 'restore-region :around #'ignore-errors-around-advice)
 
 ;; (save-excursion-and-region-reliably (replace-region (selection)))
 ;; These are actually incompatible
