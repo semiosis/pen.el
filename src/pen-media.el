@@ -203,14 +203,6 @@
   (interactive)
   (bld pen-play-song "[[https://www.youtube.com/watch?v=heHdOTt_iGc&t][The Neverending Story (1984)  Soundtrack  - YouTube]]"))
 
-(defun dark-knight-end-credits ()
-  (interactive)
-  (bld pen-play-song "[[https://www.youtube.com/watch?v=fTr89ENLZPc][The Dark Knight - End Credits Music (HQ) - YouTube]]"))
-
-(defun dark-knight-theme ()
-  (interactive)
-  (bld pen-play-song "[[https://www.youtube.com/watch?v=w1B3Mgklfd0][Batman The Dark Knight Theme - Hans Zimmer - YouTube]]"))
-
 (defun dark-knight-watchful-guardian ()
   "5 / 5"
   (interactive)
