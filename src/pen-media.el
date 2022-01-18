@@ -81,7 +81,7 @@
         (new-buffer-from-string result)
       result)))
 
-(defun get-yt-playlist-json (path)
+(defun pen-get-yt-playlist-json (path)
   (interactive (list (read-string "path:")))
 
   (if (string-empty-p path) (setq path "[[https://www.youtube.com/playlist?list=PLGYGe2PKknX2kydiv28aq8dBXBWeJfxgg][The Lion King 2019 soundtrack - YouTube]]"))
