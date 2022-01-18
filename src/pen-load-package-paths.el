@@ -61,13 +61,11 @@
 
 (defun list-directories-recursively (dir)
   (string2list
-   (split-string
-    (chomp
-     (pen-sn-basic
-      (concat "find -P " (pen-q dir) " -maxdepth 2 \\( -name 'snippets' -o -name '*-snippets*' \\) -prune -o -type d")
-      nil
-      "/"))
-    "\n")))
+   (chomp
+    (pen-sn-basic
+     (concat "find -P " (pen-q dir) " -maxdepth 2 \\( -name 'snippets' -o -name '*-snippets*' \\) -prune -o -type d")
+     nil
+     "/"))))
 
 (setq load-path (cl-union load-path (list-directories-recursively "~/.emacs.d/elpa/")))
 
