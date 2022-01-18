@@ -244,13 +244,14 @@ commands to use in that buffer.
            (major-mode-p 'term-mode))
           (run-with-idle-timer 0.3 nil
                                `(lambda ()
-                                  (with-current-buffer
-                                      ,(current-buffer)
-                                    ;; I couldn't figure out the term read-only bug
-                                    ;; So sending a C-l is a workaround
-                                    ;; Can't send C-l. Try C-g.
-                                    ;; This is for the read-only, not fixing clear in hhgttg
-                                    (pen-sn "TMUX= tmux send-keys C-g"))
+                                  (if (buffer-exists ,(current-buffer))
+                                      (with-current-buffer
+                                          ,(current-buffer)
+                                        ;; I couldn't figure out the term read-only bug
+                                        ;; So sending a C-l is a workaround
+                                        ;; Can't send C-l. Try C-g.
+                                        ;; This is for the read-only, not fixing clear in hhgttg
+                                        (pen-sn "TMUX= tmux send-keys C-g")))
                                   ;; 'pen-try-init-char-mode
                                   )))
 
