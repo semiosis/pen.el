@@ -112,6 +112,5 @@
 (require 'recursive-narrow)
 
 
-
 (require 'openai-api)
 (require 'pen)
