@@ -3,6 +3,7 @@ export TTY
 
 # Check if connected to the internet
 
-set -o pipefail
+# set -o pipefail
 # { : >/dev/tcp/8.8.8.8/53; } && echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 >/dev/null
-: >/dev/tcp/8.8.8.8/53
+
+timeout 2 sh -c ": >/dev/tcp/8.8.8.8/53"
