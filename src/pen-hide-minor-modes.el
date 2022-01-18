@@ -37,6 +37,9 @@
 (pen-diminish-modes)
 (add-hook 'after-make-frame-functions 'pen-diminish-modes)
 
+(setq which-key-lighter "")
+(setq-default which-key-lighter "")
+
 ;; ("ilambda"     "γ" :postfix)
 ;;    ("pen-mydefaults" "🖊" :postfix)
 ;;    ;; semiosis protocol
