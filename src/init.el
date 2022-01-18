@@ -111,6 +111,9 @@
 (require 'wgrep)
 (require 'recursive-narrow)
 
+(defvar pen-map (make-sparse-keymap)
+  "Keymap for `pen.el'.")
+
 (pen-with-user-repos
  (load (f-join contribdir "src/init-setup.el"))
  (load (f-join contribdir "src/pen-contrib.el"))
