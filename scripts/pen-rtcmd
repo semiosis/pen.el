@@ -72,7 +72,7 @@ stdin_exists() {
 }
 stdin_exists && STDIN_EXISTS=y
 
-tf_stdin="$(ux tf stdin txt 0</dev/null || echo /dev/null)"
+tf_stdin="$(pen-ux tf stdin txt 0</dev/null || echo /dev/null)"
 
 if test "$STDIN_EXISTS" = "y"; then
     cat > "$tf_stdin"
