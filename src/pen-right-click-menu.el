@@ -371,6 +371,9 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
      :if (widget-at (point)))
     ("Context functions" :call show-suggest-funcs-context-menu)))
 
-(define-key pen-map (kbd "<double-mouse-1>") 'double-click-context-menu)
+;; Sometimes I want to triple-click to select a line.
+;; Also, the double-mouse click seems to change point and mark.
+;; So it's not a good trade.
+;; (define-key pen-map (kbd "<double-mouse-1>") 'double-click-context-menu)
 
 (provide 'pen-right-click-menu)
