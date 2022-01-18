@@ -130,6 +130,7 @@
 
 ;; nlsh
 (setq pen-nlsh-histdir (f-join user-emacs-directory "comint-history"))
+(f-mkdir pen-nlsh-histdir)
 
 ;; Company
 (setq company-auto-complete nil)
