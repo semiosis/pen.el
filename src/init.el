@@ -18,6 +18,9 @@
 
 (defvar org-roam-v2-ack t)
 
+;; builtin
+(require 'pp)
+
 ;; Require dependencies
 (require 'use-package)
 (require 'shut-up)
@@ -46,7 +49,6 @@
 (require 'ivy)
 (require 'counsel)
 (require 'yaml-mode)
-(require 'pp)
 (require 'yaml)
 (require 'which-key)
 (require 'lispy)
