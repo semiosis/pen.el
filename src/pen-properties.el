@@ -1,6 +1,6 @@
 (defun pen-format-json (stdin)
   "Formats the json."
-  (sh-notty "python -m json.tool" stdin))
+  (pen-sn "python -m json.tool" stdin))
 
 (defun pen-buffer-properties ()
   `(("current-major-mode-string" . ,(try (current-major-mode-string)))
@@ -27,7 +27,7 @@
   ;; This doesnt return json
   ;; https://stackoverflow.com/questions/8031246/listing-all-top-level-global-variables-in-emacs
 
-  (if (yn "This takes a long time. Continue?")
+  (if (yes-or-no-p "This takes a long time. Continue?")
       (let ((result '()))
         (mapatoms (lambda (x)
                     (when (boundp x)
