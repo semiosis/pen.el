@@ -94,4 +94,24 @@ point determined by `mouse-select-region-move-to-beginning'."
     (call-interactively #'pen-mouse-set-point))
   (right-click-context-menu))
 
+(defun right-click-context-menu ()
+  "Open Right Click Context menu."
+  (interactive)
+  ;; This should make it so the context menu appears at the top left of the region -- it's better
+  (save-excursion-and-region-reliably
+   (if (and mark-active
+            (< (mark) (point)))
+       (exchange-point-and-mark))
+   (let ((popup-menu-keymap (copy-sequence popup-menu-keymap)))
+     ;; (define-key popup-menu-keymap [mouse-3] #'right-click-context--click-menu-popup)
+     (define-key popup-menu-keymap [mouse-3] #'right-click-popup-close)
+     (define-key popup-menu-keymap (kbd "C-g") #'right-click-popup-close)
+     (let ((value (popup-cascade-menu (right-click-context--build-menu-for-popup-el (right-click-context--menu-tree) nil))))
+       (when value
+         (if (symbolp value)
+             (call-interactively value t)
+           (eval value)))))))
+
+(advice-add 'mouse-drag-region :around #'ignore-errors-around-advice)
+
 (provide 'pen-mouse)
