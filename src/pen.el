@@ -657,6 +657,23 @@ Reconstruct the entire yaml-ht for a different language."
   ;;   (pen-snc cmd))
   )
 
+(defmacro pen-quote-args (&rest body)
+  "Join all the arguments in a sexp into a single string.
+Be mindful of quoting arguments correctly."
+  `(mapconcat (lambda (input)
+                (pen-shellquote (str input))) ',body " "))
+(defalias 'e-cmd 'pen-quote-args)
+
+(defun pen-shellquote (input)
+  "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."
+  (if (or (string-match "\\\\" input)
+          (string-match " " input)
+          (string-match "*" input)
+          (string-match "?" input)
+          (string-match "\"" input))
+      (e/q input)
+    input))
+
 (defun pen-list2cmd (l)
   (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))))
 

@@ -115,10 +115,10 @@
         (xc path)
       path)))
 
-(defun pen-button-get-link (b)
+(defun pen-button-get-link (pen-b)
   (cond
-   ((eq (button-get b 'face) 'glossary-button-face)
-    (concat "[[y:" (button-get-text b) "]]"))
+   ((eq (button-get pen-b 'face) 'glossary-button-face)
+    (concat "[[y:" (button-get-text pen-b) "]]"))
    (t nil)))
 
 (defun pen-clean-up-copy-link (rawlink)
@@ -129,19 +129,19 @@
 
 (defun glossary-button-at-point ()
   (let ((p (point))
-        (b (button-at-point)))
+        (pen-b (button-at-point)))
     (if (and
-         b
-         (eq (button-get b 'face) 'glossary-button-face))
-        b
+         pen-b
+         (eq (button-get pen-b 'face) 'glossary-button-face))
+        pen-b
       nil))
   (button-at-point))
 (defalias 'glossary-button-at-point-p 'glossary-button-at-point)
 
-(defun pen-equals (a b)
-  (if (stringp b)
-      (string-equal a b)
-    (eq a b)))
+(defun pen-equals (a pen-b)
+  (if (stringp pen-b)
+      (string-equal a pen-b)
+    (eq a pen-b)))
 (defalias 'my-eq 'pen-equals)
 
 (defun pen-error-if-equals (thing badval)
@@ -224,10 +224,10 @@ semantic-path means a path suitable for google/nl searching"
      `(case
           (let ((r))
             (save-window-excursion
-              (let ((b (nbfs ,m)))
-                (switch-to-buffer b)
+              (let ((pen-b (nbfs ,m)))
+                (switch-to-buffer pen-b)
                 (setq r (read-key ""))
-                (kill-buffer b)))
+                (kill-buffer pen-b)))
             r))
      code)))
 
@@ -453,13 +453,13 @@ It's really meant for key bindings and which-key, so they should all be interact
   "Probably a CRC hash of the input."
   (chomp (pen-snc "short-hash" input)))
 
-(defun uniqify-buffer (b)
+(defun uniqify-buffer (pen-b)
   "Give the buffer a unique name"
-  (with-current-buffer b
+  (with-current-buffer pen-b
     (ignore-errors (let* ((hash (short-hash (str (time-to-seconds))))
                           (new-buffer-name (pcre-replace-string "(\\*?)$" (concat "-" hash "\\1") (current-buffer-name))))
                      (rename-buffer new-buffer-name)))
-    b))
+    pen-b))
 
 (defun pen-local-variable-p (sym)
   (and (variable-p sym)
@@ -502,6 +502,19 @@ It's really meant for key bindings and which-key, so they should all be interact
 (defun buffer-exists (bufname)
   (not (eq nil (get-buffer bufname))))
 (defalias 'buffer-match-p 'buffer-exists)
+
+(defmacro pen-b (&rest body)
+  "Runs a shell command
+Write straight bash within elisp syntax (it looks like emacs-lisp)"
+  `(pen-sn (e-cmd ,@body)))
+
+(defmacro echo (&rest body)
+  `(pen-b echo ,@body))
+
+(defun e (path)
+  (interactive)
+  (if path
+      (find-file (eval `(echo -n ,path)))))
 
 (defun recursive-widen ()
   "Replacement of widen that will only pop one level of visibility."
@@ -556,10 +569,10 @@ It's really meant for key bindings and which-key, so they should all be interact
        (save-temp-if-no-file))
    (let ((pos (point))
          (path (current-path))
-         (b (current-buffer)))
+         (pen-b (current-buffer)))
      (if (f-exists-p path)
          (progn
-           (kill-buffer b)
+           (kill-buffer pen-b)
            ;; (let ((bb (find-file path)))
            ;;   (etv bb))
            ;; (with-current-buffer
