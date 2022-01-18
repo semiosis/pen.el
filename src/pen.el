@@ -1876,6 +1876,7 @@ May use to generate code from comments."
 (require 'pen-channel)
 (require 'pen-scratch)
 (require 'pen-minor-modes)
+(require 'pen-modeline)
 
 (defun pen-lsp-explain-error ()
   (interactive)
