@@ -51,7 +51,7 @@ if ! is_tty; then
         exit 1
     fi
 else
-    
+
     if stdin_exists; then
         : ${CMD:="-r $(aqf ".")"}
         s chomp | rtcmd ++jq -E "jq $CMD | vs"
