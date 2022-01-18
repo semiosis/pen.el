@@ -1,6 +1,31 @@
+(defun force-alist (lambda)
+  (mapcar 'force-keyvalue l))
+
 (defun pen-format-json (stdin)
   "Formats the json."
   (pen-sn "python -m json.tool" stdin))
+
+(defun true ()
+  t)
+
+(defun true-p (e)
+  (if e t))
+
+(defun get-car-val (e)
+  (let ((s (car e)))
+    (if (and (variable-p s)
+             (true-p (eval s)))
+        (str s))))
+
+(defun get-enabled-minor-modes ()
+  "Only list minor modes that are enabled"
+  (remove '() (mapcar #'get-car-val minor-mode-alist)))
+
+(defun get-current-mode-hook ()
+  (let ((current-major-mode (intern (concat (current-major-mode-string) "-hook"))))
+    (if (variable-p current-major-mode)
+        current-major-mode
+      nil)))
 
 (defun pen-buffer-properties ()
   `(("current-major-mode-string" . ,(try (current-major-mode-string)))
