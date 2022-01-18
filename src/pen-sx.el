@@ -30,8 +30,8 @@
 
 (defun sx-get-url-from-query (query)
   ;; The grep -v is to remove non-english sites
-  (fz (or (-filter-not-empty-string (pen-str2lines (pen-sn (concat "gl " (q query) " | grep -P \"(stackoverflow|stackexchange|serverfault).*/questions/[0-9]\" | grep -v \"\\\\.stackoverflow.com\""))))
-              (-filter-not-empty-string (pen-str2lines (pen-sn (concat "gl stackoverflow " (q query) " | grep -P \"(stackoverflow|stackexchange|serverfault).*/questions/[0-9]\" | grep -v \"\\\\.stackoverflow.com\"")))))
+  (fz (or (-filter-not-empty-string (pen-str2lines (pen-sn (concat "gl " (pen-q query) " | grep -P \"(stackoverflow|stackexchange|serverfault).*/questions/[0-9]\" | grep -v \"\\\\.stackoverflow.com\""))))
+              (-filter-not-empty-string (pen-str2lines (pen-sn (concat "gl stackoverflow " (pen-q query) " | grep -P \"(stackoverflow|stackexchange|serverfault).*/questions/[0-9]\" | grep -v \"\\\\.stackoverflow.com\"")))))
       nil nil (concat "sx " query ": ") nil t))
 
 ;; TODO Make this function use sx-get-appropriate-site-and-id-from-url

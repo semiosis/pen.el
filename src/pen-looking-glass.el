@@ -90,7 +90,7 @@
            ;; ((re-match-p "SVG" alt) (eval-string (eval `(pen-ci (lg-get-alttext ,fp-or-url)))))
            (t image-description)))
 
-         ;; (alttext-and-description (concat fp-or-url (q alttext-and-description) alt))
+         ;; (alttext-and-description (concat fp-or-url (pen-q alttext-and-description) alt))
          )
 
     ;; (setq alttext-and-description (concat "'" alttext-and-description "'"))

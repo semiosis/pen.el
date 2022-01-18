@@ -22,7 +22,7 @@
     (pen-snc
      (concat
       "echo "
-      (q s)
+      (pen-q s)
       " | google-ngram-query-combinations "
       (str i)
       ;; " | perl -e 'print sort { length($b) <=> length($a) } <>'"

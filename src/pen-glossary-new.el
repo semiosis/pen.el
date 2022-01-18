@@ -340,7 +340,7 @@
   (-filter (lambda (e) (not (member (third e) pen-glossary-blacklist)))
            (glossary-sort-tuples
             (if fp
-                (pen-eval-string (sn (concat "list-glossary-terms-for-elisp " (q fp))))
+                (pen-eval-string (sn (concat "list-glossary-terms-for-elisp " (pen-q fp))))
               (pen-eval-string (sn "list-glossary-terms-for-elisp"))))))
 
 (defun pen-glossary-sort-tuples (tuples)
@@ -620,12 +620,12 @@ Use my position list code. Make it use rosie lang and external software."
               (pen-draw-glossary-buttons-and-maybe-recalculate nil nil))))))
 
 (defun pen-test-f (fp)
-  (eq (progn (sn (concat "test -f " (q fp)))
+  (eq (progn (sn (concat "test -f " (pen-q fp)))
              (string-to-number b_exit_code))
       0))
 
 (defun pen-test-d (fp)
-  (eq (progn (sn (concat "test -d " (q fp)))
+  (eq (progn (sn (concat "test -d " (pen-q fp)))
              (string-to-number b_exit_code))
       0))
 

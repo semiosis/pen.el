@@ -42,7 +42,7 @@
 
 (defun f-realpath (path &optional dir)
   (if path
-      (chomp (pen-sn (concat "realpath " (q path) " 2>/dev/null") nil dir))))
+      (chomp (pen-sn (concat "realpath " (pen-q path) " 2>/dev/null") nil dir))))
 
 (defalias 'major-mode-enabled 'derived-mode-p)
 
