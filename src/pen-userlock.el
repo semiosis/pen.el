@@ -8,6 +8,6 @@ This function has a choice of three things to do:
 You can redefine this function to choose among those three alternatives
 in any way you like."
   (discard-input)
-  t)
+  nil)
 
 (provide 'pen-userlock)
