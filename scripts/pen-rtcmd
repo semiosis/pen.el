@@ -80,7 +80,7 @@ fi
 
 exec 0</dev/null
 
-: ${CMD:="$(pen-cmd "$@")"}
+: ${CMD:="$(cmd "$@")"}
 
 printf -- "%s\n" "$CMD" | pen-ds -s rtcmd_init
 
