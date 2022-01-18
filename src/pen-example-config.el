@@ -393,6 +393,14 @@
   (pen-dk-easy "e b" 'pf-explain-a-file/4)
   (pen-dk-easy "e y" 'pf-explain-why-this-code-is-needed/2)
 
+  ;; a Ask tutor / Apostrophe
+  (pen-dk-easy "a" nil)
+  (pen-dk-easy "a t" 'pf-asktutor/3)
+  (pen-dk-easy "a q" 'pf-generic-tutor-for-any-topic/2)
+  (pen-dk-easy "a s" 'apostrophe-start-chatbot-from-selection)
+  (pen-dk-easy "a c" 'apostrophe-start-chatbot-from-selection)
+  (pen-dk-easy "a n" 'apostrophe-start-chatbot-from-name)
+
   ;; h Help
   (pen-dk-easy "h" nil)
   (pen-dk-easy "h f /" 'pen-select-function-from-nl)
