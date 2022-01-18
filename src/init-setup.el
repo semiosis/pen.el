@@ -75,7 +75,6 @@
 (package-install 'vterm)
 
 ;; Require dependencies
-(require 'pen-userlock)
 (require 'shut-up)
 (require 'use-package)
 ;; For org-roam
@@ -136,6 +135,7 @@
 (require 'shackle)
 (require 'wgrep)
 (require 'recursive-narrow)
+(require 'pen-userlock)
 
 ;; The requires are necessary to complete the installation of tree-sitter
 (require 'tree-sitter)

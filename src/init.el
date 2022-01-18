@@ -14,7 +14,6 @@
 (defvar org-roam-v2-ack t)
 
 ;; Require dependencies
-(require 'pen-userlock)
 (require 'use-package)
 (require 'shut-up)
 ;; For org-roam
@@ -76,6 +75,7 @@
 (require 'shackle)
 (require 'wgrep)
 (require 'recursive-narrow)
+(require 'pen-userlock)
 
 (let ((openaidir (f-join user-emacs-directory "openai-api.el"))
       (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))
