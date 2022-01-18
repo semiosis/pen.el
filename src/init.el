@@ -11,6 +11,11 @@
 
 ;; (package-refresh-contents)
 
+;; I need this very early on
+(defun ask-user-about-lock (file opponent)
+  (discard-input)
+  nil)
+
 (defvar org-roam-v2-ack t)
 
 ;; Require dependencies
