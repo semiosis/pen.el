@@ -9,6 +9,11 @@
   "Interactive lambda with no arguments."
   `(lambda () (interactive) ,@body))
 
+;; builtin
+(require 'cl-macs)
+(require 'pp)
+
+;; elpa
 ;; For string-empty-p
 (require 'subr-x)
 (require 'pen-global-prefix)
@@ -22,18 +27,23 @@
 (require 'helm)
 (require 'memoize)
 (require 'ivy)
-(require 'pp)
 (require 's)
-(require 'cl-macs)
 (require 'company)
 (require 'selected)
 (require 'pcsv)
 (require 'pcre2el)
-(require 'asoc)
-(require 'transducer)
+(require 'f)
 (require 'lsp-mode)
 (require 'lsp-ui)
 (require 'lispy)
+(require 'which-key)
+(require 'eww-lnum)
+(require 'shackle)
+(require 'helpful)
+
+;; pen/src
+(require 'asoc)
+(require 'transducer)
 (require 'handle)
 (require 'pen-company-lsp)
 (require 'pen-nlp)
@@ -44,7 +54,6 @@
 (require 'pen-hist)
 (require 'pen-eww)
 (require 'pen-links)
-(require 'eww-lnum)
 (require 'pen-handle)
 (require 'pen-edit)
 (require 'pen-client)
@@ -59,7 +68,7 @@
 (require 'pen-faces)
 (require 'pen-misc)
 (require 'pen-packages)
-(require 'helpful)
+
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
