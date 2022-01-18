@@ -12,24 +12,25 @@
 
 (defun pen-diminish-modes ()
   (interactive)
-  (diminish 'highlight-indent-guides-mode)
-  (diminish 'highlight-thing-mode)
-  (diminish 'lispy-mode)
-  (diminish 'emoji-cheat-sheet-plus-display-mode)
-  (diminish 'holy-mode)
-  (diminish 'repl-toggle-mode)
-  (diminish 'sotlisp-mode)
-  (diminish 'company-mode)
-  (diminish 'yas-minor-mode)
-  (diminish 'selected-minor-mode)
-  (diminish 'ggtags-mode)
-  (diminish 'pcre-mode)
-  (diminish 'evil-org-mode)
-  (diminish 'which-key-mode)
-  (diminish 'eldoc-overlay-mode)
-  (diminish 'paredit-mode)
-  (diminish 'org-link-minor-mode)
-  (diminish 'right-click-context-mode))
+  (dolist (s '(highlight-indent-guides-mode
+               highlight-thing-mode
+               lispy-mode
+               emoji-cheat-sheet-plus-display-mode
+               holy-mode
+               repl-toggle-mode
+               sotlisp-mode
+               company-mode
+               yas-minor-mode
+               selected-minor-mode
+               ggtags-mode
+               pcre-mode
+               evil-org-mode
+               which-key-mode
+               eldoc-overlay-mode
+               paredit-mode
+               org-link-minor-mode
+               right-click-context-mode))
+    (ignore-errors (diminish s))))
 
 ;; This was breaking pen.
 ;; Perhaps it's because the hook was erroring.
@@ -49,6 +50,9 @@
    ("interactive" "i" :prefix)
    ("lisp"        "λ" :postfix)
    ("ilambda"     "γ" :postfix)
+   ("pen-mydefaults" "🖊" :postfix)
+   ;; semiosis protocol
+   ("semiosis"    "࿋" :postfix)
    ("menu"        "▤" :postfix)
    ("mode"        "")
    ("package"     "↓")
