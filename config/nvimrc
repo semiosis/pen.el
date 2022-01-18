@@ -1,3 +1,55 @@
+" extra digraphs
+" sp +/"extra digraphs" "$EMACSD/config/my-evil.el"
+digr ZZ 8484
+digr NN 8469
+digr RR 8477
+" looking glass
+digr lg 128269
+digr sy 129680
+" huggingface
+digr hf 129303
+" spacy (ringed planet)
+digr sy 129680
+" It appears as though this was already set
+digr    0160
+" put this after a character to use the 'combining macron'
+digr ^_ 0772
+" dotted circle
+digr .o 9676
+" entails
+digr \|= 8871
+" infers
+digr \|- 8866
+" mapselementto
+digr \|> 8614
+" 𝑥
+digr xm 119909
+" 𝑖
+digr im 119894
+" 𔒯
+digr jn 83119
+" ⇌
+digr rv 8652
+" 🖊
+digr pn 128394
+" ⚔
+digr sw 9876
+" 🍓
+digr st 127827
+" 💡
+digr lb 128161
+" ࿋
+digr sf 4043
+" 🐈
+digr ca 128008
+" 👍
+digr li 128077
+" 👎
+digr dl 128078
+" ☕
+digr co 9749
+
+
 function! Prompt(fun, ...)
     let args = a:000
     let s = ""
