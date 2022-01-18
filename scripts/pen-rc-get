@@ -5,10 +5,10 @@ export TTY
 
 key="$1"
 
-val="$(yq -r ".[$(cmd-nice-posix "$key")]" ~/.pen/pen.yaml)"
+val="$(yq -r ".[$(cmd-nice-posix "$key")] // empty" ~/.pen/pen.yaml)"
 
 if test -f "/tmp/pen.yaml"; then
-    runtime_val="$(yq -r ".[$(cmd-nice-posix "$key")]" /tmp/pen.yaml)"
+    runtime_val="$(yq -r ".[$(cmd-nice-posix "$key")] // empty" /tmp/pen.yaml)"
 fi
 
 if test -n "$runtime_val"; then
