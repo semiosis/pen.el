@@ -272,6 +272,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -n1) {
+        export PEN_N_DAEMONS=1
+        shift
+    }
+    ;;
+
     -frametype) {
         export FRAME_TYPE="$2"
         shift
