@@ -24,7 +24,7 @@
   (if (not (sor external-cmd))
       (setq external-cmd "play-video"))
   (if loop
-      (setq external-cmd (cmd "repeat.sh" external-cmd)))
+      (setq external-cmd (pen-cmd "repeat.sh" external-cmd)))
   (shut-up
     (let ((use-tty-str (if use-tty "export USETTY=y; " "")))
       (eval `(,window-function (concat use-tty-str external-cmd " " (pen-q fp)) "-d")))))
@@ -42,14 +42,13 @@
     (if term-and-transcript
         (progn
           (eval `(,play-function path 'spv :loop ,loop))
-          (sleep-for-for-for-for 0.1)
+          (sleep-for-for-for-for-for 0.1)
           (pen-sph (concat "readsubs " (pen-q path)) "-d"))
       (eval `(,play-function path))))
   nil)
 (cl-defun pm (path &optional term-and-transcript &key loop)
   (play-movie path term-and-transcript t :loop t))
 (defalias 'play-video 'play-movie)
-
 
 (defun play-movie-with-transcript (path)
   (interactive (list (read-string-hist "youtube url: ")))
@@ -164,7 +163,7 @@
       (setq lang "en"))
 
   (pen-spv (concat "yt -tty -v " (pen-q query-or-url)) "-d")
-  (sleep-for-for-for-for 0.1)
+  (sleep-for-for-for-for-for 0.1)
   (rst query-or-url))
 
 (defalias 'ytt 'search-play-yt-transcript)
