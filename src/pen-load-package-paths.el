@@ -63,10 +63,14 @@
   (string2list
    (chomp
     (pen-sn-basic
-     (concat "find -P . -maxdepth 2 \\( -name 'snippets' -o -name '*-snippets*' \\) -prune -o -type d")
+     (concat "find -P " (pen-q dir) " -maxdepth 2 \\( -name 'snippets' -o -name '*-snippets*' \\) -prune -o -type d")
      nil
-     dir))))
+     "/"))))
 
-(setq load-path (cl-union load-path (list-directories-recursively "~/.emacs.d/elpa/")))
+(defun f-realpath (path &optional dir)
+  (if path
+      (chomp (pen-sn-basic (concat "realpath " (pen-q path) " 2>/dev/null") nil dir))))
+
+(setq load-path (cl-union load-path (list-directories-recursively (f-realpath "~/.emacs.d/elpa/"))))
 
 (provide 'pen-load-package-paths)
