@@ -65,6 +65,7 @@
    ("menu"        "▤" :postfix)
    ("mode"        "")
    ("package"     "↓")
+   ("term"     "🖵")
    ("python"      "π")
    ("shell"       "sh" :postfix)
    ("text"        "ξ")
