@@ -30,6 +30,10 @@
   (let ((print-escape-newlines t))
     (mapconcat 'identity (mapcar 'prin1-to-string strings) " ")))
 
+(defun variable-p (s)
+  (and (not (eq s nil))
+       (boundp s)))
+
 (defun pen-sn-basic (cmd &optional stdin dir)
   (interactive)
 
