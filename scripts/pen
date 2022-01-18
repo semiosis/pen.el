@@ -650,8 +650,10 @@ HEREDOC
 
     docker exec -it "$pen_container_name" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
 
-    if docker-running-p && yn "Stop container?"; then
-        docker stop "$pen_container_name"
+    if test "$no_start_emacs" = y; then
+        if docker-running-p && yn "Stop container?"; then
+            docker stop "$pen_container_name"
+        fi
     fi
     exit "$?"
 fi
