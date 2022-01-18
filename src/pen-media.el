@@ -138,8 +138,6 @@
       (setq query-or-url (e/chomp (sh/xurls query-or-url)))
     (setq query-or-url (ytsearch query-or-url)))
 
-  ;; (tv query-or-url)
-
   (if audioonly
       (my/shut-up (pen-cl-sn (concat "play-song " (pen-q query-or-url)) :detach t :chomp t))
     (sps (concat "yt -tty -v " (pen-q query-or-url)) "-d")))
