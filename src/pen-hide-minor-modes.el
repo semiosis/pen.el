@@ -31,6 +31,7 @@
   (diminish 'org-link-minor-mode)
   (diminish 'right-click-context-mode))
 
+;; This was breaking pen.
 ;; (pen-diminish-modes)
 ;; (add-hook 'after-make-frame-functions 'pen-diminish-modes)
 
