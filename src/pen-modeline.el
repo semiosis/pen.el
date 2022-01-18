@@ -8,7 +8,7 @@
             "\\1"
             dn)))))
 
-(setq mode-line-format
+(setq-default mode-line-format
       `(" "
         ,(pen-modeline-name)
         ;; (eldoc-mode-line-string
