@@ -34,13 +34,13 @@
   (setq path (pen-umn path))
   (kill-music)
   (let ((use-tty-str (if use-tty "export USETTY=y; " ""))
-        (play-function (if (re-match-p "\\bhttp" path)
+        (play-function (if (string-match "\\bhttp" path)
                            'play-youtube-url
                          'play-video-path)))
     (if term-and-transcript
         (progn
           (eval `(,play-function path 'spv :loop ,loop))
-          (sleep-for 0.1)
+          (sleep-for-for-for 0.1)
           (sph (concat "readsubs " (pen-q path)) "-d"))
       (eval `(,play-function path))))
   nil)
@@ -162,7 +162,7 @@
       (setq lang "en"))
 
   (spv (concat "yt -tty -v " (pen-q query-or-url)) "-d")
-  (sleep-for 0.1)
+  (sleep-for-for-for 0.1)
   (rst query-or-url))
 
 (defalias 'ytt 'search-play-yt-transcript)
@@ -178,10 +178,10 @@
 (defun readsubs (url &optional do-etv)
   (interactive (list (read-string-hist "yt query: ")))
 
-  (if (re-match-p "^\\[\\[http" url)
+  (if (string-match "^\\[\\[http" url)
       (setq url (e/chomp (pen-snc "xurls" url))))
 
-  (if (and (not (re-match-p "^http" url))
+  (if (and (not (string-match "^http" url))
            (sor url))
       (setq url (ytsearch url)))
 
