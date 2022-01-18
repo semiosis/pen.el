@@ -1,11 +1,11 @@
 #!/bin/bash
 export TTY
 
-# rtcmd -E "cat \"$HOME/source/git/mullikine/tenets/tenets/success/360entsecgroup-skylar-goreporter-all-functions.json\" | jq -C -r . | less -rS"
-# rtcmd -E "cat \"$HOME/source/git/mullikine/tenets/tenets/success/360entsecgroup-skylar-goreporter-all-functions.json\" | jq -r \".[].Comment\" | less -rS"
-# rtcmd -E "cat \"$HOME/source/git/mullikine/tenets/tenets/success/360entsecgroup-skylar-goreporter-all-functions.json\" | jq -r \".[].Comment\" | sort | uniq | less -rS"
+# pen-rtcmd -E "cat \"$HOME/source/git/mullikine/tenets/tenets/success/360entsecgroup-skylar-goreporter-all-functions.json\" | jq -C -r . | less -rS"
+# pen-rtcmd -E "cat \"$HOME/source/git/mullikine/tenets/tenets/success/360entsecgroup-skylar-goreporter-all-functions.json\" | jq -r \".[].Comment\" | less -rS"
+# pen-rtcmd -E "cat \"$HOME/source/git/mullikine/tenets/tenets/success/360entsecgroup-skylar-goreporter-all-functions.json\" | jq -r \".[].Comment\" | sort | uniq | less -rS"
 
-# rtcmd ++jq -E "go-outline -f $MYGIT/DylanMeeus/MediumCode/bloomfilter/main.go | jq . | vs"
+# pen-rtcmd ++jq -E "go-outline -f $MYGIT/DylanMeeus/MediumCode/bloomfilter/main.go | jq . | pen-v"
 
 # 2 modes of operation
 # --------------------
@@ -54,12 +54,12 @@ else
 
     if stdin_exists; then
         : ${CMD:="-r $(cmd ".")"}
-        chomp | rtcmd ++jq -E "jq $CMD | vs"
+        chomp | pen-rtcmd ++jq -E "jq $CMD | pen-v"
     else
         : ${CMD:="echo []"}
         if test -f "$CMD"; then
             CMD="cat $(cmd "$CMD")"
         fi
-        rtcmd ++jq -E "$CMD | jq \".\" | vs"
+        pen-rtcmd ++jq -E "$CMD | jq \".\" | pen-v"
     fi
 fi
