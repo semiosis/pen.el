@@ -48,6 +48,7 @@
    ("interaction" "i" :prefix)
    ("interactive" "i" :prefix)
    ("lisp"        "λ" :postfix)
+   ("ilambda"     "γ" :postfix)
    ("menu"        "▤" :postfix)
    ("mode"        "")
    ("package"     "↓")
