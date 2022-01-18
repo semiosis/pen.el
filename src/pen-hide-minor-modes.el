@@ -28,6 +28,7 @@
 (diminish 'eldoc-overlay-mode)
 (diminish 'paredit-mode)
 (diminish 'org-link-minor-mode)
+(diminish 'right-click-context-mode)
 
 (setq
  cyphejor-rules
