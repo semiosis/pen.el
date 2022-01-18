@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+cd $MYGIT/ahungry/ruse
+mkdir /tmp/dog-pics && lein run dog /tmp/dog-pics
