@@ -681,4 +681,17 @@ buffer which is not included when this function returns"
 (defun pen-internet-connected-p ()
   (pen-snq "internet-connected-p"))
 
+(defvar pen-tutor-common-questions
+  '("What is <1:q> used for?"
+    "What are some good learning materials"))
+
+(defun pen-tutor-mode-assist (&optional query)
+  (interactive (let* ((bl (pen-detect-language t t nil t)))
+                 (list
+                  (read-string-hist
+                   (concat "asktutor (" bl "): ")
+                   (pen-thing-at-point)))))
+  (let ((bl (pen-detect-language t t nil t)))
+    (pf-asktutor bl bl query)))
+
 (provide 'pen-library)
