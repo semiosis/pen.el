@@ -20,6 +20,7 @@
 
 ;; builtin
 (require 'pp)
+(require 'cua-base)
 
 ;; Require dependencies
 (require 'use-package)
@@ -61,9 +62,7 @@
 (require 'selected)
 (require 'yasnippet)
 (require 'pcsv)
-(require 'sx)
 (require 'pcre2el)
-(require 'cua-base)
 (require 'helpful)
 (require 'w3m)
 (require 'eww-lnum)
