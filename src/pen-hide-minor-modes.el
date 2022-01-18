@@ -30,7 +30,8 @@
                paredit-mode
                org-link-minor-mode
                right-click-context-mode))
-    (ignore-errors (diminish s))))
+    (ignore-errors (diminish s)))
+  t)
 
 ;; This was breaking pen.
 ;; Perhaps it's because the hook was erroring.
