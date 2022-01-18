@@ -75,7 +75,9 @@
 (package-install 'vterm)
 
 ;; Require dependencies
+(require 'pen-userlock)
 (require 'shut-up)
+(require 'use-package)
 ;; For org-roam
 (require 'emacsql)
 (require 'guess-language)
