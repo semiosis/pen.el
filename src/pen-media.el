@@ -30,7 +30,7 @@
       (eval `(,window-function (concat use-tty-str external-cmd " " (pen-q fp)) "-d")))))
 
 (cl-defun pen-play-youtube-url (url &optional window-function &key loop)
-  (pen-play-video-path url window-function "yt -v" :loop loop))
+  (pen-play-video-path url window-function "youtube -v" :loop loop))
 
 (cl-defun pen-play-movie (path &optional term-and-transcript use-tty &key loop)
   (setq path (pen-umn path))
@@ -117,7 +117,7 @@
     (pen-cl-sn (concat "yt-search " (pen-q query)) :chomp t)))
 
 (defun pen-search-play-yt (query-or-url &optional audioonly)
-  (interactive (list (read-string-hist "yt play-song: " (my/selected-text))))
+  (interactive (list (read-string-hist "youtube play-song: " (my/selected-text))))
 
   (pen-kill-music)
   (if (string-match-p "\\bhttps?:" query-or-url)
@@ -126,15 +126,12 @@
 
   (if audioonly
       (shut-up (pen-cl-sn (concat "pen-play-song " (pen-q query-or-url)) :detach t :chomp t))
-    (pen-sps (concat "yt -tty -v " (pen-q query-or-url)) "-d")))
+    (pen-sps (concat "youtube -tty -v " (pen-q query-or-url)) "-d")))
 
-(defalias 'yt 'pen-search-play-yt)
+(defun pen-youtube-audio-query (query-or-url)
+  (interactive (list (read-string-hist "youtube play-song: ")))
 
-(defun yta (query-or-url)
-  (interactive (list (read-string-hist "yt play-song: ")))
-
-  (yt query-or-url t))
-(defalias 'ya 'yta)
+  (youtube query-or-url t))
 
 (defun pen-search-play-yt-transcript (query-or-url &optional lang)
   (interactive (list (read-string-hist "youtube query-or-url: " (my/selected-text))))
@@ -147,7 +144,7 @@
   (if (not lang)
       (setq lang "en"))
 
-  (pen-spv (concat "yt -tty -v " (pen-q query-or-url)) "-d")
+  (pen-spv (concat "youtube -tty -v " (pen-q query-or-url)) "-d")
   (sleep-for-for-for-for-for-for-for-for 0.1)
   (pen-readsubs-youtube query-or-url))
 
@@ -162,7 +159,7 @@
   (pen-ytt query "it"))
 
 (defun pen-readsubs (url &optional do-etv)
-  (interactive (list (read-string-hist "yt query: ")))
+  (interactive (list (read-string-hist "youtube query: ")))
 
   (if (string-match "^\\[\\[http" url)
       (setq url (chomp (pen-snc "xurls" url))))
@@ -182,11 +179,11 @@
       transcript)))
 
 (defun pen-readsubs-youtube (url)
-  (interactive (list (read-string-hist "yt query: ")))
+  (interactive (list (read-string-hist "youtube query: ")))
   (tvs (pen-readsubs url)))
 
 (defun pen-readsubs-fr (url)
-  (interactive (read-string-hist "yt query: "))
+  (interactive (read-string-hist "youtube query: "))
   (pen-cl-sn (concat "unbuffer pen-ci readsubs.bak -l fr " (pen-q url) " | cat") :chomp t))
 
 (defun mus-epic ()
