@@ -14,6 +14,7 @@
 (defvar org-roam-v2-ack t)
 
 ;; Require dependencies
+(require 'pen-userlock)
 (require 'use-package)
 (require 'shut-up)
 ;; For org-roam
