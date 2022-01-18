@@ -65,4 +65,4 @@
 
 (setq load-path (cl-union load-path (list-directories-recursively "~/.emacs.d/elpa/")))
 
-(provide 'pen-load-packages-paths)
+(provide 'pen-load-package-paths)
