@@ -637,7 +637,7 @@ if test "$start_shell" = "y"; then
 
     docker exec -it "$pen_container_name" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
 
-    if docker-running-p && yn "Stop container?"; then
+    if docker-running-p && yn "Stop container?" | pen-hls orange; then
         docker stop "$pen_container_name"
     fi
     exit "$?"
