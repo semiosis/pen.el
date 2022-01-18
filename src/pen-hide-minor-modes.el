@@ -34,8 +34,8 @@
 
 ;; This was breaking pen.
 ;; Perhaps it's because the hook was erroring.
-;; (pen-diminish-modes)
-;; (add-hook 'after-make-frame-functions 'pen-diminish-modes)
+(pen-diminish-modes)
+(add-hook 'after-make-frame-functions 'pen-diminish-modes)
 
 (setq
  cyphejor-rules
