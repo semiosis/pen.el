@@ -622,16 +622,12 @@
 
 (define-key pen-map (kbd "M-l s") 'pen-sph)
 (define-key pen-map (kbd "M-l M-s") 'pen-sph)
-(define-key pen-map (kbd "M-l C-s") 'pen-sph)
 (define-key pen-map (kbd "M-l S") 'pen-spv)
 (define-key pen-map (kbd "M-l M-S") 'pen-spv)
-;; (define-key pen-map (kbd "M-l C-S") 'pen-spv)
 (define-key pen-map (kbd "M-l n") 'pen-nw)
 (define-key pen-map (kbd "M-l M-n") 'pen-nw)
-(define-key pen-map (kbd "M-l C-n") 'pen-nw)
 (define-key pen-map (kbd "M-l N") 'pen-sps)
 (define-key pen-map (kbd "M-l M-N") 'pen-sps)
-;; (define-key pen-map (kbd "M-l C-N") 'pen-sps)
 
 (pen-autosuggest-mode t)
 
