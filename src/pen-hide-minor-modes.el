@@ -32,6 +32,7 @@
   (diminish 'right-click-context-mode))
 
 ;; This was breaking pen.
+;; Perhaps it's because the hook was erroring.
 ;; (pen-diminish-modes)
 ;; (add-hook 'after-make-frame-functions 'pen-diminish-modes)
 
