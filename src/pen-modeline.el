@@ -21,7 +21,7 @@
          ;; mode-line-misc-info
          )))
 
-(defun mode-line-progressbar-demo (&optional duration)
+(defun pen-modeline-progressbar-demo (&optional duration)
   "Displays a progressbar in the mode-line."
   (interactive (list 3))
   (let* ((mode-line-format mode-line-format)
