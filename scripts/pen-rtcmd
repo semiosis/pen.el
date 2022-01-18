@@ -92,10 +92,10 @@ cmdparas="$(echo -e -n "$CMD" | qfd | pen-esc '`')"
 
 printf -- "%s\n" "$cmdparas" | pen-ds -s rtcmd_cmdparas
 
-CREATED_PANE_ID="$(eval "pen-tm -f -d $WINCMD $(test "$NEOVIM" = "y" && p "-nvt") -pakf -safe -d -P $cmdparas" | scrape '%[0-9]+')"
+CREATED_PANE_ID="$(eval "pen-tm -f -d $WINCMD $(test "$NEOVIM" = "y" && p "-nvt") -pakf -safe -d -P $cmdparas" | pen-scrape '%[0-9]+')"
 
 TMUX= eval "pen-tm -f -d spv -pakf -safe -d -t '$CREATED_PANE_ID' $cmdparas"
 
 exec <`pen-tm-tty` `# see etty`
 
-echo -e "$CMD" | v "$vimpat" -ft sh -rt "cat | tm -f -S -tout rs $(test "$NEOVIM" = "y" && p "-nv") -xargs -pakf -safe -t '$CREATED_PANE_ID'" -pc "set ls=0" $vimopts_end
+echo -e "$CMD" | pen-v "$vimpat" -ft sh -rt "cat | pen-tm -f -S -tout rs $(test "$NEOVIM" = "y" && p "-nv") -xargs -pakf -safe -t '$CREATED_PANE_ID'" -pc "set ls=0" $vimopts_end
