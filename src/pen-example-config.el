@@ -623,6 +623,7 @@
 (define-key pen-map (kbd "M-l s") 'pen-sph)
 (define-key pen-map (kbd "M-l S") 'pen-spv)
 (define-key pen-map (kbd "M-l n") 'pen-nw)
+(define-key pen-map (kbd "M-l N") 'pen-sps)
 
 (pen-autosuggest-mode t)
 

@@ -176,12 +176,16 @@ START and END can be in either order."
 (defun pen-nw (&optional cmd nw_args input dir)
   "Runs command in a sensible split"
   (interactive)
-  (pen-tm-nw cmd "nw" nw_args input dir))
+  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+      (pen-e-nw 'new-buffer-from-string)
+    (pen-tm-nw cmd "nw" nw_args input dir)))
 
 (defun pen-sps (&optional cmd nw_args input dir)
   "Runs command in a sensible split"
   (interactive)
-  (pen-tm-nw cmd "sps" nw_args input dir))
+  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+      (pen-e-sps 'new-buffer-from-string)
+    (pen-tm-nw cmd "sps" nw_args input dir)))
 (defalias 'pen-tm-sps 'pen-sps)
 
 (defun pen-sph (&optional cmd nw_args input dir)
