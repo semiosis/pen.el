@@ -144,12 +144,12 @@ START and END can be in either order."
   "Runs command in a horizontal split"
   (interactive)
   (pen-tm-nw cmd "sph" nw_args input dir))
-(defalias 'pen-tm-sph 'pen-sps)
+(defalias 'pen-tm-sph 'pen-sph)
 
 (defun pen-spv (&optional cmd nw_args input dir)
   "Runs command in a vertical split"
   (interactive)
   (pen-tm-nw cmd "spv" nw_args input dir))
-(defalias 'pen-tm-spv 'pen-sps)
+(defalias 'pen-tm-spv 'pen-spv)
 
 (provide 'pen-tmux)
