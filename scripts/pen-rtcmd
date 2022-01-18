@@ -88,6 +88,10 @@ if test "$STDIN_EXISTS" = "y"; then
     CMD="cat $(cmd "$tf_stdin") | $CMD"
 fi
 
+qfd() {
+    pen-esc "\"\$" | sed 's/^.*$/"&"/'
+}
+
 cmdparas="$(echo -e -n "$CMD" | qfd | pen-esc '`')"
 
 printf -- "%s\n" "$cmdparas" | pen-ds -s rtcmd_cmdparas
