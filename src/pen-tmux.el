@@ -191,13 +191,17 @@ START and END can be in either order."
 (defun pen-sph (&optional cmd nw_args input dir)
   "Runs command in a horizontal split"
   (interactive)
-  (pen-tm-nw cmd "sph" nw_args input dir))
+  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+      (pen-e-sph 'new-buffer-from-string)
+    (pen-tm-nw cmd "sph" nw_args input dir)))
 (defalias 'pen-tm-sph 'pen-sph)
 
 (defun pen-spv (&optional cmd nw_args input dir)
   "Runs command in a vertical split"
   (interactive)
-  (pen-tm-nw cmd "spv" nw_args input dir))
+  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+      (pen-e-spv 'new-buffer-from-string)
+    (pen-tm-nw cmd "spv" nw_args input dir)))
 (defalias 'pen-tm-spv 'pen-spv)
 
 (provide 'pen-tmux)
