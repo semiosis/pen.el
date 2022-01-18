@@ -43,7 +43,7 @@
         (progn
           (eval `(,play-function path 'spv :loop ,loop))
           (sleep-for-for-for-for-for-for-for-for 0.1)
-          (pen-sph (concat "readsubs " (pen-q path)) "-d"))
+          (pen-sph (concat "pen-readsubs " (pen-q path)) "-d"))
       (eval `(,play-function path))))
   nil)
 (cl-defun pm (path &optional term-and-transcript &key loop)
@@ -136,7 +136,7 @@
   (yt query-or-url t))
 (defalias 'ya 'yta)
 
-(defun search-play-yt-transcript (query-or-url &optional lang)
+(defun pen-search-play-yt-transcript (query-or-url &optional lang)
   (interactive (list (read-string-hist "youtube query-or-url: " (my/selected-text))))
 
   (pen-kill-music)
@@ -149,19 +149,19 @@
 
   (pen-spv (concat "yt -tty -v " (pen-q query-or-url)) "-d")
   (sleep-for-for-for-for-for-for-for-for 0.1)
-  (rst query-or-url))
+  (pen-readsubs-youtube query-or-url))
 
-(defalias 'ytt 'search-play-yt-transcript)
+(defalias 'pen-ytt 'pen-search-play-yt-transcript)
 
-(defun ytt-fr (query)
+(defun pen-ytt-fr (query)
   (interactive (list (read-string-hist "youtube query: ")))
-  (ytt query "fr"))
+  (pen-ytt query "fr"))
 
-(defun ytt-it (query)
+(defun pen-ytt-it (query)
   (interactive (list (read-string-hist "youtube query: ")))
-  (ytt query "it"))
+  (pen-ytt query "it"))
 
-(defun readsubs (url &optional do-etv)
+(defun pen-readsubs (url &optional do-etv)
   (interactive (list (read-string-hist "yt query: ")))
 
   (if (string-match "^\\[\\[http" url)
@@ -176,17 +176,16 @@
          do-etv
          (interactive-p)))
 
-  (let ((transcript (pen-cl-sn (concat "unbuffer pen-ci readsubs " (pen-q url) " | cat") :chomp t)))
+  (let ((transcript (pen-cl-sn (concat "unbuffer pen-ci pen-readsubs " (pen-q url) " | cat") :chomp t)))
     (if do-etv
         (tvs transcript)
       transcript)))
-(defalias 'rs 'readsubs)
 
-(defun rst (url)
+(defun pen-readsubs-youtube (url)
   (interactive (list (read-string-hist "yt query: ")))
-  (tvs (readsubs url)))
+  (tvs (pen-readsubs url)))
 
-(defun readsubs-fr (url)
+(defun pen-readsubs-fr (url)
   (interactive (read-string-hist "yt query: "))
   (pen-cl-sn (concat "unbuffer pen-ci readsubs.bak -l fr " (pen-q url) " | cat") :chomp t))
 
