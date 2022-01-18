@@ -28,7 +28,7 @@ if test "$DO_EXEC" = "y"; then
     CMD="$1"
 else
     if test "$#" -eq 1 && test -f "$1"; then
-        CMD="cat $(aqf "$1")"
+        CMD="cat $(cmd "$1")"
     else
         CMD="$(cmd "$@")"
     fi
@@ -53,12 +53,12 @@ if ! is_tty; then
 else
 
     if stdin_exists; then
-        : ${CMD:="-r $(aqf ".")"}
-        s chomp | rtcmd ++jq -E "jq $CMD | vs"
+        : ${CMD:="-r $(cmd ".")"}
+        chomp | rtcmd ++jq -E "jq $CMD | vs"
     else
         : ${CMD:="echo []"}
         if test -f "$CMD"; then
-            CMD="cat $(aqf "$CMD")"
+            CMD="cat $(cmd "$CMD")"
         fi
         rtcmd ++jq -E "$CMD | jq \".\" | vs"
     fi
