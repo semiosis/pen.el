@@ -1,3 +1,14 @@
+pensieve
+    NLG: ""Pensieve" refers to an object used
+    by a witch or wizard to examine memories
+    and store them in the form of "phials" of
+    light.
+
+phial
+    NLG: "Phial" refers to a small container
+    with a narrow neck, which is used to hold
+    a small amount of liquid such as a drug.
+
 imemory
 imemories
     Imaginary memories.
