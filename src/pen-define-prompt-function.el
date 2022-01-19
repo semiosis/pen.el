@@ -1257,8 +1257,9 @@
                     ("PEN_MODE" . ,final-mode)
                     ("PEN_STOP_SEQUENCE" . ,(pen-encode-string final-stop-sequence t))
                     ;; (json-encode-list (mapcar 'pen-encode-string '("hello my ;\"" "friend")))
-                    ;; ("PEN_STOP_SEQUENCES" . ,(json-encode-list (mapcar 'pen-encode-string final-stop-sequences t)))
-                    ("PEN_STOP_SEQUENCES" . ,(json-encode-list final-stop-sequences))
+                    
+                    ;; I still need to use pen-encode-string because of backticks
+                    ("PEN_STOP_SEQUENCES" . ,(json-encode-list (mapcar 'pen-encode-string final-stop-sequences t)))
 
                     ;; TODO Force multiple prompts later
                     ;; Also need multi-prompts to understand different prompt lengths for results
