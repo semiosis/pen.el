@@ -71,6 +71,7 @@
 (require 'pen-faces)
 (require 'pen-misc)
 (require 'pen-packages)
+(require 'pen-pensieve)
 
 
 ;; Not sure I need the following in pen.el
