@@ -89,6 +89,8 @@ fi
 # The human engine should have executive power though to prevent the timeout.
 # The omission is made here:
 # vim +/"# No timeout for human engine" "$HOME/source/git/semiosis/pen.el/scripts/lm-complete-generic"
+# So at this point, we simply have a timeout which we can disable if we want.
+# The bash interop isn't normally *supposed* to use the human engine, so, this is ok to keep it as default here.
 sentinel_string="tm_sentinel_${RANDOM}_$$"
 # unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"
 tmux neww -d -n eval-ec-$SOCKET "$(cmd pen-timeout 10 unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
