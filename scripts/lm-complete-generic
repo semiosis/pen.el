@@ -276,6 +276,17 @@ case "$sn" in
             "$completer_sn"
             exit $?
         else
+            pen-timeout 10 "$completer_sn"  > "$tf_response"
+        fi
+    }
+    ;;
+
+    human-complete.sh|human-*) {
+        if test "$LM_COMPLETE_DEBUG" = "y"; then
+            "$completer_sn"
+            exit $?
+        else
+            # No timeout for human engine
             "$completer_sn"  > "$tf_response"
         fi
     }
@@ -306,7 +317,7 @@ case "$sn" in
             "$completer_sn"
             exit $?
         else
-            "$completer_sn"  > "$tf_response"
+            pen-timeout 10 "$completer_sn"  > "$tf_response"
         fi
     }
     ;;
