@@ -201,7 +201,16 @@ argument, prompt for a regular expression using `read-regexp'."
       (require 'info)
       (require 'info-xref)
       (set-face-foreground 'info-xref xfg)
-      (set-face-background 'info-xref xbg))
+      (set-face-background 'info-xref xbg)
+
+      (set-face-foreground 'fringe "#111111")
+      (set-face-background 'fringe "#000000")
+
+      (require 'popup)
+      (set-face-foreground 'popup-menu-face "#aa9922")
+      (set-face-background 'popup-menu-face "#111111")
+      (set-face-foreground 'popup-menu-selection-face "#111111")
+      (set-face-background 'popup-menu-selection-face "#aa9922"))
 
     (require 'wid-edit)
     (set-face-foreground 'widget-field "#990055")
@@ -210,14 +219,5 @@ argument, prompt for a regular expression using `read-regexp'."
 (add-hook 'after-init-hook 'pen-set-faces)
 
 (define-key pen-map (kbd "M-l M-q M-f") 'pen-customize-face)
-
-(set-face-foreground 'fringe "#111111")
-(set-face-background 'fringe "#000000")
-
-(require 'popup)
-(set-face-foreground 'popup-menu-face "#aa9922")
-(set-face-background 'popup-menu-face "#111111")
-(set-face-foreground 'popup-menu-selection-face "#111111")
-(set-face-background 'popup-menu-selection-face "#aa9922")
 
 (provide 'pen-faces)
