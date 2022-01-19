@@ -133,8 +133,9 @@ functions into each other.
   - https://github.com/semiosis/interpreters/
 - Controllable prompt generation with YASnippet
   - https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
-- Runs as a web application
+- Runs as a web application using =ttyd=
 - Runs as an LSP Server using =efm-langserver=
+- Runs as a filesystem =fuse=
 - Dockerized Emacs GUI with full clipboard support to the host
 - Client/server model
   - Connect multiple clients to =Pen.el=
