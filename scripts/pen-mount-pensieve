@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# https://www.youtube.com/watch?v=dumUElmlVJA
+
 cd $MYGIT/ahungry/ruse
 mkdir -p /tmp/dog-pics
 lein run dog /tmp/dog-pics
