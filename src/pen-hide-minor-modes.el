@@ -10,7 +10,7 @@
 
 ;; Look at the variable 'minor-mode-alist' to determine the minor mode lighters
 
-(defun pen-diminish-modes ()
+(defun pen-diminish-modes (frame)
   (interactive)
   (dolist (s '(highlight-indent-guides-mode
                highlight-thing-mode
@@ -31,7 +31,7 @@
                org-link-minor-mode
                right-click-context-mode))
     (ignore-errors (diminish s)))
-  t)
+  nil)
 
 ;; This was breaking pen.
 ;; Perhaps it's because the hook was erroring.
