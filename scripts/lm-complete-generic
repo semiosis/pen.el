@@ -337,7 +337,7 @@ case "$sn" in
 
         export PEN_COLLECT_FROM_POS
         results_dir="$(openai_results_split "$tf_response")"
-        echo "human" > stop-reason.txt
+        echo "human" > "$results_dir/stop-reason.txt"
     }
     ;;
 
