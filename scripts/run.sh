@@ -133,7 +133,7 @@ find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
 # In case I accidentally committed it
 rm -f /tmp/pen.yaml
 if test -n "$PEN_N_DAEMONS"; then
-    pen-rc-set -fp /tmp/pen.yaml n-daemons 1
+    pen-rc-set -fp /tmp/pen.yaml n-daemons "$PEN_N_DAEMONS"
 fi
 
 if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
