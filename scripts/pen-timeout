@@ -4,6 +4,8 @@ export TTY
 time="$1"
 shift
 
+: "${PEN_NO_TIMEOUT:="$(pen-rc-get no-timeout)"}"
+
 if test "$PEN_NO_TIMEOUT" = "y"; then
     "$@"
 else
