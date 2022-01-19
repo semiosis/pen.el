@@ -211,4 +211,13 @@ argument, prompt for a regular expression using `read-regexp'."
 
 (define-key pen-map (kbd "M-l M-q M-f") 'pen-customize-face)
 
+(set-face-foreground 'fringe "#111111")
+(set-face-background 'fringe "#000000")
+
+(require 'popup)
+(set-face-foreground 'popup-menu-face "#aa9922")
+(set-face-background 'popup-menu-face "#111111")
+(set-face-foreground 'popup-menu-selection-face "#111111")
+(set-face-background 'popup-menu-selection-face "#aa9922")
+
 (provide 'pen-faces)
