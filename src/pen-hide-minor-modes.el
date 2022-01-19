@@ -35,7 +35,7 @@
 
 ;; This was breaking pen.
 ;; Perhaps it's because the hook was erroring.
-(pen-diminish-modes)
+(pen-diminish-modes nil)
 (add-hook 'after-make-frame-functions 'pen-diminish-modes)
 
 (setq which-key-lighter "")
