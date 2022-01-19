@@ -14,5 +14,8 @@ pull-docker:
 push-docker:
 	docker push semiosis/pen.el:latest
 
+count-loc:
+	pen-count-loc
+
 lsp:
 	pen-build-lsp
