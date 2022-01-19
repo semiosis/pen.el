@@ -130,6 +130,8 @@ find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
 # emacs -nw --debug-init
 # done
 
+# In case I accidentally committed it
+rm -f /tmp/pen.yaml
 if test -n "$PEN_N_DAEMONS"; then
     pen-rc-set -fp /tmp/pen.yaml n-daemons 1
 fi
