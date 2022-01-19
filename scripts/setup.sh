@@ -463,3 +463,12 @@ agi ranger
 
 agi net-tools
 agi netcat
+
+agi vifm
+
+(
+    cd ~/repos
+    git clone "http://github.com/semiosis/pensieve"
+    cd pensieve
+    lein deps
+)
