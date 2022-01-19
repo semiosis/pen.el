@@ -391,6 +391,7 @@
   (pen-dk-easy "e f" 'pf-get-an-example-of-the-usage-of-a-function/2)
   ;; e Explain
   (pen-dk-easy "e t" 'pf-explain-some-code-with-steps/1)
+  (pen-dk-easy "e x" 'pf-explain-the-syntax-of-code/1)
   (pen-dk-easy "e b" 'pf-explain-a-file/4)
   (pen-dk-easy "e y" 'pf-explain-why-this-code-is-needed/2)
 
@@ -427,6 +428,7 @@
   (pen-dk-easy "n" nil)
   (pen-dk-easy "n 2" 'pf-explain-some-code/2)
   (pen-dk-easy "n b" 'pf-explain-code-with-bulleted-docstring/1)
+  (pen-dk-easy "n x" 'pf-explain-the-syntax-of-code/1)
   (pen-dk-easy "n h" 'pf-explain-haskell-code/1)
   (pen-dk-easy "n s" 'pf-explain-solidity-code/1)
   (pen-dk-easy "n s" 'pf-explain-some-code-with-steps/1)
