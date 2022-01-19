@@ -1,4 +1,8 @@
 * Use-cases
-** Create new memories by describing them and/or placing files into it
+** Store new memories by describing them and/or placing files into it
 You can then go ahead and forget about it.
 When you want to revisit it, the PenSieve will re-imagine it for you.
+
+** Look into the memories of chatbots
+
+** Use to generate files, directory structures and projects
