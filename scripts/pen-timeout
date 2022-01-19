@@ -2,5 +2,10 @@
 export TTY
 
 time="$1"
+shift
 
-timeout "$@"
+if test "$PEN_NO_TIMEOUT" = "y"; then
+    "$@"
+else
+    timeout "$time" "$@"
+fi

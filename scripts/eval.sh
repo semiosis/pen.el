@@ -35,6 +35,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nto) {
+        PEN_NO_TIMEOUT=y
+        shift
+    }
+    ;;
+
     --parallel|--pool) {
         export USE_POOL=y
         shift
@@ -93,7 +99,7 @@ fi
 # The bash interop isn't normally *supposed* to use the human engine, so, this is ok to keep it as default here.
 sentinel_string="tm_sentinel_${RANDOM}_$$"
 # unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"
-tmux neww -d -n eval-ec-$SOCKET "$(cmd pen-timeout 10 unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
+tmux neww -d -n eval-ec-$SOCKET "PEN_NO_TIMEOUT=$PEN_NO_TIMEOUT $(cmd pen-timeout 10 unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
 tmux wait-for "$sentinel_string"
 
 export SOCKET
