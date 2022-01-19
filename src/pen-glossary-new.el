@@ -738,7 +738,7 @@ Use my position list code. Make it use rosie lang and external software."
                                     (string-equal bn "glossary.txt"))))
                          (append-glossary-files-locally (list (get-path-nocreate))))
                         ((derived-mode-p 'prog-mode)
-                         (let* ((lang (detect-language))
+                         (let* ((lang (pen-detect-language))
                                 (lang (cond ((string-equal "emacs-lisp" lang) "emacs-lisp-elisp")
                                             (t lang)))
                                 (fp (concat "$HOME/glossaries/" lang ".txt")))

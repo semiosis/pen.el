@@ -1285,7 +1285,7 @@ when s is a string, set the clipboard to s"
 
 (defun pen-define-detectlang (term)
   (interactive (list (pen-thing-at-point-ask "word" t)))
-  (pen-add-to-glossary term nil nil (detect-language)))
+  (pen-add-to-glossary term nil nil (pen-detect-language)))
 
 (defun pen-define-word-for-topic (term topic)
   (interactive (list (pen-thing-at-point-ask "word" t)
