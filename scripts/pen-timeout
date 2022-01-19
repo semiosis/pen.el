@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+time="$1"
+
+timeout "$@"

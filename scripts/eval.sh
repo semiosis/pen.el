@@ -85,9 +85,11 @@ if ! test -s "$fp"; then
 fi
 
 # Consider using timeout here
+# Part of the reason there is a timeout is that the engines used may be unknown by the prompter, due to the shell interop.
+# The human engine should have executive power though to prevent the timeout.
 sentinel_string="tm_sentinel_${RANDOM}_$$"
 # unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"
-tmux neww -d -n eval-ec-$SOCKET "$(cmd timeout 10 unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
+tmux neww -d -n eval-ec-$SOCKET "$(cmd pen-timeout 10 unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
 tmux wait-for "$sentinel_string"
 
 export SOCKET
