@@ -137,7 +137,7 @@ if test -n "$PEN_N_DAEMONS"; then
 fi
 
 if test -n "$PEN_NO_TIMEOUT"; then
-    pen-rc-set -fp /tmp/pen.yaml n-daemons "$PEN_NO_TIMEOUT"
+    pen-rc-set -fp /tmp/pen.yaml no-timeout "$PEN_NO_TIMEOUT"
 fi
 
 if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
