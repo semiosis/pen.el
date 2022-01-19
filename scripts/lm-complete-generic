@@ -265,6 +265,8 @@ IFS= read -rd '' PEN_PROMPT < <(p "$PEN_PROMPT");typeset -p PEN_PROMPT &>/dev/nu
 # This is designed to not trim whitespace from the ends of the stop sequence
 IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE" | pen-str unonelineify-safe);typeset -p PEN_STOP_SEQUENCE &>/dev/null
 
+IFS= read -rd '' PEN_STOP_SEQUENCES < <(p "$PEN_STOP_SEQUENCES" | pen-str unonelineify-safe);typeset -p PEN_STOP_SEQUENCES &>/dev/null
+
 # Will it complain if PEN_STOP_SEQUENCE is empty?
 
 case "$sn" in
