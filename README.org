@@ -134,8 +134,8 @@ functions into each other.
 - Controllable prompt generation with YASnippet
   - https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
 - Runs as a web application using =ttyd=
-- Runs as an LSP Server using =efm-langserver=
-- Runs as a filesystem =fuse=
+- Runs as an LSP Server using =efm-langserver=, called =ESP=
+- Runs as a filesystem =fuse=, called =PenSieve=
 - Dockerized Emacs GUI with full clipboard support to the host
 - Client/server model
   - Connect multiple clients to =Pen.el=
