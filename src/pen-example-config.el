@@ -151,6 +151,10 @@
   (interactive)
   (dired pen-prompts-directory))
 
+(defun pen-acolyte-dired-engines ()
+  (interactive)
+  (dired pen-engines-directory))
+
 (defun pen-acolyte-dired-penel ()
   (interactive)
   (dired pen-penel-directory))
