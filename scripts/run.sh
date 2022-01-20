@@ -142,7 +142,7 @@ if test -n "$PEN_NO_TIMEOUT"; then
     pen-rc-set -fp /tmp/pen.yaml no-timeout "$PEN_NO_TIMEOUT"
 fi
 
-if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
+if ! ls ~/.pen/pool/available/* 2>/dev/null | grep -q pen-emacsd; then
     echo Starting daemon pool in background 1>&2
     unbuffer pen-e sa &>/dev/null &
 fi
