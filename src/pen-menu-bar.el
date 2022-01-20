@@ -395,7 +395,7 @@
       (bindings--define-key global-map [menu-bar tools] nil)
 
       (bindings--define-key global-map [menu-bar pen]
-        (cons "Pen" menu-bar-pen-menu))
+        (cons "🖊 Pen" menu-bar-pen-menu))
 
       (bindings--define-key global-map [menu-bar daemons]
         (cons "Daemons" menu-bar-daemons-menu))
@@ -404,7 +404,7 @@
         (cons "ct" menu-bar-cterm-menu))
 
       (bindings--define-key global-map [menu-bar melee]
-        (cons "Melee" menu-bar-melee-menu))
+        (cons "🍓Melee" menu-bar-melee-menu))
 
       (bindings--define-key global-map [menu-bar channel]
         (cons "Chann" menu-bar-channel-menu))
