@@ -347,15 +347,18 @@
 
 (defset menu-bar-lookingglass-menu
   (let ((menu (make-sparse-keymap "🔍LookingGlass")))
-    (bindings--define-key menu [from-name]
+    (bindings--define-key menu [mi-lg-render]
       '(menu-item "Render" lg-render
                   :help "Render to HTML"))
-    (bindings--define-key menu [from-name]
+    (bindings--define-key menu [mi-lg-search]
       '(menu-item "Search" lg-search
                   :help "Search selected passage for URLs"))
-    (bindings--define-key menu [from-name]
+    (bindings--define-key menu [mi-lg-eww]
       '(menu-item "Go to URL" lg-eww
                   :help "Go to URL"))
+    (bindings--define-key menu [mi-lg-fz-history]
+      '(menu-item "URL History" lg-fz-history
+                  :help "Look through history of URLs"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
