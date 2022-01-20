@@ -320,9 +320,9 @@
     (bindings--define-key menu [mi-pen-load-engines]
       '(menu-item "Reload engines" pen-load-engines
                   :help "Reload engines from YAML"))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-engines]
+      '(menu-item "Name" pen-acolyte-dired-engines
+                  :help "Go to prompts directory from name"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
