@@ -227,28 +227,28 @@
     menu))
 
 (defset menu-bar-cterm-menu
-  (let ((menu (make-sparse-keymap "cterm")))
+  (let ((menu (make-sparse-keymap "ComplexTerm")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-channel-menu
-  (let ((menu (make-sparse-keymap "channel")))
+  (let ((menu (make-sparse-keymap "Chann.el")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-ii-menu
-  (let ((menu (make-sparse-keymap "ii")))
+  (let ((menu (make-sparse-keymap "Imaginary Interpreter")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-mtp-menu
-  (let ((menu (make-sparse-keymap "MTP")))
+  (let ((menu (make-sparse-keymap "MadTeaParty")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
@@ -290,14 +290,14 @@
     menu))
 
 (defset menu-bar-inkwell-menu
-  (let ((menu (make-sparse-keymap "Inkwell")))
+  (let ((menu (make-sparse-keymap "Inkw.el")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-lookingglass-menu
-  (let ((menu (make-sparse-keymap "Lookingglass")))
+  (let ((menu (make-sparse-keymap "LookingGlass 🔍")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
@@ -311,7 +311,7 @@
     menu))
 
 (defset menu-bar-pensieve-menu
-  (let ((menu (make-sparse-keymap "Pensieve")))
+  (let ((menu (make-sparse-keymap "PenSieve")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
