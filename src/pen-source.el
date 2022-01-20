@@ -1,7 +1,7 @@
 (defun pen-reload-config-file ()
   "Fuzzy selects a selects file to be loaded."
   (interactive)
-  (let ((r (pen-umn (fz (pen-sn "list-emacs-config-files.sh") nil nil "reload config: "))))
+  (let ((r (pen-umn (fz (pen-sn "pen-ls-emacs-config-files") nil nil "reload config: "))))
     (if (not (s-blank? r))
         (load r))))
 
