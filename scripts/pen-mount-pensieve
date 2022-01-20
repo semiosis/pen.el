@@ -65,8 +65,10 @@ dir="$1"
 shift
 
 dir="$(realpath "dir")"
+mkdir -p "$dir"
 
 test -d /root/.emacs.d/host/pensieve && : "${pensieve_dir:=/root/.emacs.d/host/pensieve}"
+test -d $MYGIT/semiosis/pensieve && : "${pensieve_dir:=$MYGIT/semiosis/pensieve}"
 : "${pensieve_dir:="/root/repos/pensieve"}"
 
 # In container
