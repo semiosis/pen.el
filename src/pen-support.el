@@ -1340,7 +1340,8 @@ when s is a string, set the clipboard to s"
             ("$EMACSD" user-emacs-directory)
             ("$PEN" penconfdir)
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
-            ("$HOME" user-home-directory))))
+            ("$HOME" user-home-directory)
+            ("//" "/"))))
 
 (defun pen-topic-ask (&optional prompt)
   (setq prompt (sor prompt "pen-topic-ask"))
