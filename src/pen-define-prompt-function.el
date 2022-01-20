@@ -789,6 +789,13 @@
             (str (or (pen-var-value-maybe 'closer)
                      ,closer))))
 
+          (final-burst-preprocessor
+           (expand-template-al
+            (expand-template
+             (str (or (pen-var-value-maybe 'burst-preprocessor)
+                      ,burst-preprocessor)))
+            pipelines-varvals))
+
           (final-return-postprocessor
            (expand-template-al
             (expand-template
