@@ -266,7 +266,7 @@
     menu))
 
 (defset menu-bar-ii-menu
-  (let ((menu (make-sparse-keymap "i Imaginary Interpreter")))
+  (let ((menu (make-sparse-keymap "Imaginary Interpreter")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
