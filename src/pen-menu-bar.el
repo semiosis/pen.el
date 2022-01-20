@@ -333,13 +333,13 @@
   (cons "Pen" menu-bar-pen-menu))
 
 (bindings--define-key global-map [menu-bar apostrophe]
-  (cons "Apostrophe" menu-bar-apostrophe-menu))
+  (cons "Apo" menu-bar-apostrophe-menu))
 
 (bindings--define-key global-map [menu-bar cterm]
-  (cons "cterm" menu-bar-cterm-menu))
+  (cons "ct" menu-bar-cterm-menu))
 
 (bindings--define-key global-map [menu-bar channel]
-  (cons "Chann.el" menu-bar-channel-menu))
+  (cons "Chann" menu-bar-channel-menu))
 
 (bindings--define-key global-map [menu-bar ii]
   (cons "ii" menu-bar-ii-menu))
@@ -348,7 +348,7 @@
   (cons "MTP" menu-bar-mtp-menu))
 
 (bindings--define-key global-map [menu-bar paracosm]
-  (cons "Paracosm" menu-bar-paracosm-menu))
+  (cons "Cosm" menu-bar-paracosm-menu))
 
 (bindings--define-key global-map [menu-bar esp]
   (cons "ESP" menu-bar-esp-menu))
@@ -360,16 +360,16 @@
   (cons "Engines" menu-bar-engines-menu))
 
 (bindings--define-key global-map [menu-bar history]
-  (cons "History" menu-bar-history-menu))
+  (cons "Hist" menu-bar-history-menu))
 
 (bindings--define-key global-map [menu-bar inkwell]
-  (cons "Inkwell" menu-bar-inkwell-menu))
+  (cons "Ink" menu-bar-inkwell-menu))
 
 (bindings--define-key global-map [menu-bar lookingglass]
-  (cons "LookingGlass" menu-bar-lookingglass-menu))
+  (cons "🔍" menu-bar-lookingglass-menu))
 
 (bindings--define-key global-map [menu-bar pensieve]
-  (cons "PenSieve" menu-bar-pensieve-menu))
+  (cons "Sieve" menu-bar-pensieve-menu))
 
 (bindings--define-key global-map [menu-bar melee]
   (cons "Melee" menu-bar-melee-menu))
