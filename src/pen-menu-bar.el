@@ -206,7 +206,7 @@
 
 
 (defset menu-bar-pen-menu
-  (let ((menu (make-sparse-keymap "Pen")))
+  (let ((menu (make-sparse-keymap "Pen.el")))
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
                   :help "About the GNU System, GNU Project, and GNU/Linux"))
