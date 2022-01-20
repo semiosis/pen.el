@@ -251,7 +251,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -nto) {
-        export PEN_NO_TIMEOUT=y
+        PEN_NO_TIMEOUT=y
         shift
     }
     ;;
@@ -523,6 +523,9 @@ fi
 if test "$PEN_UPDATE" = "t"; then
     UPDATE=y
 fi
+
+export PEN_NO_TIMEOUT
+export PEN_ENGINE
 
 case "$FRAME_TYPE" in
     tty) {
@@ -1482,6 +1485,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
         --env PEN_USE_GUI \
         --env PEN_NO_TM \
+        --env PEN_ENGINE \
         --env PEN_NO_TIMEOUT \
         --env PEN_N_DAEMONS \
         --env PEN_PROMPT \
@@ -1549,7 +1553,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice ". ~/.emacs.d/pen.el/scripts/setup-term.sh; $(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_NO_TM --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
+docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_NO_TM --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
 HEREDOC
     }
     ;;
