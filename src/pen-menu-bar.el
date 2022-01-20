@@ -376,7 +376,7 @@
     menu))
 
 (defset menu-bar-melee-menu
-  (let ((menu (make-sparse-keymap "Melee")))
+  (let ((menu (make-sparse-keymap "🍓Melee")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
@@ -404,7 +404,7 @@
         (cons "ct" menu-bar-cterm-menu))
 
       (bindings--define-key global-map [menu-bar melee]
-        (cons "🍓Melee" menu-bar-melee-menu))
+        (cons "Melee" menu-bar-melee-menu))
 
       (bindings--define-key global-map [menu-bar channel]
         (cons "Chann" menu-bar-channel-menu))
