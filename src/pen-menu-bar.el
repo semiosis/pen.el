@@ -325,54 +325,53 @@
     menu))
 
 (if (pen-snq "inside-docker-p")
-  (progn
-(bindings--define-key global-map [menu-bar file]
-  (cons "File" menu-bar-file-menu))
+    (progn
+      (bindings--define-key global-map [menu-bar file]
+        (cons "File" menu-bar-file-menu))
 
-(bindings--define-key global-map [menu-bar pen]
-  (cons "Pen" menu-bar-pen-menu))
+      (bindings--define-key global-map [menu-bar pen]
+        (cons "Pen" menu-bar-pen-menu))
 
-(bindings--define-key global-map [menu-bar apostrophe]
-  (cons "Apo" menu-bar-apostrophe-menu))
+      (bindings--define-key global-map [menu-bar apostrophe]
+        (cons "Apo" menu-bar-apostrophe-menu))
 
-(bindings--define-key global-map [menu-bar cterm]
-  (cons "ct" menu-bar-cterm-menu))
+      (bindings--define-key global-map [menu-bar cterm]
+        (cons "ct" menu-bar-cterm-menu))
 
-(bindings--define-key global-map [menu-bar channel]
-  (cons "Chann" menu-bar-channel-menu))
+      (bindings--define-key global-map [menu-bar channel]
+        (cons "Chann" menu-bar-channel-menu))
 
-(bindings--define-key global-map [menu-bar ii]
-  (cons "ii" menu-bar-ii-menu))
+      (bindings--define-key global-map [menu-bar ii]
+        (cons "ii" menu-bar-ii-menu))
 
-(bindings--define-key global-map [menu-bar mtp]
-  (cons "MTP" menu-bar-mtp-menu))
+      (bindings--define-key global-map [menu-bar mtp]
+        (cons "MTP" menu-bar-mtp-menu))
 
-(bindings--define-key global-map [menu-bar paracosm]
-  (cons "Cosm" menu-bar-paracosm-menu))
+      (bindings--define-key global-map [menu-bar paracosm]
+        (cons "Cosm" menu-bar-paracosm-menu))
 
-(bindings--define-key global-map [menu-bar esp]
-  (cons "ESP" menu-bar-esp-menu))
+      (bindings--define-key global-map [menu-bar esp]
+        (cons "ESP" menu-bar-esp-menu))
 
-(bindings--define-key global-map [menu-bar prompts]
-  (cons "pf" menu-bar-prompts-menu))
+      (bindings--define-key global-map [menu-bar prompts]
+        (cons "pf" menu-bar-prompts-menu))
 
-(bindings--define-key global-map [menu-bar engines]
-  (cons "Eng" menu-bar-engines-menu))
+      (bindings--define-key global-map [menu-bar engines]
+        (cons "Eng" menu-bar-engines-menu))
 
-(bindings--define-key global-map [menu-bar history]
-  (cons "Hist" menu-bar-history-menu))
+      (bindings--define-key global-map [menu-bar history]
+        (cons "Hist" menu-bar-history-menu))
 
-(bindings--define-key global-map [menu-bar inkwell]
-  (cons "Ink" menu-bar-inkwell-menu))
+      (bindings--define-key global-map [menu-bar inkwell]
+        (cons "Ink" menu-bar-inkwell-menu))
 
-(bindings--define-key global-map [menu-bar lookingglass]
-  (cons "LG" menu-bar-lookingglass-menu))
+      (bindings--define-key global-map [menu-bar lookingglass]
+        (cons "LG" menu-bar-lookingglass-menu))
 
-(bindings--define-key global-map [menu-bar pensieve]
-  (cons "Sieve" menu-bar-pensieve-menu))
+      (bindings--define-key global-map [menu-bar pensieve]
+        (cons "Sieve" menu-bar-pensieve-menu))
 
-(bindings--define-key global-map [menu-bar melee]
-  (cons "Melee" menu-bar-melee-menu))
-))
+      (bindings--define-key global-map [menu-bar melee]
+        (cons "Melee" menu-bar-melee-menu))))
 
 (provide 'pen-menu-bar)
