@@ -27,23 +27,24 @@
          (contribdir (f-join user-emacs-directory "pen-contrib.el"))
          (contribhostdir (f-join user-emacs-directory "host/pen-contrib.el")))
 
-     (if (f-directory-p (f-join openaihostdir "src"))
-         (setq openaidir openaihostdir))
-
-     (if (f-directory-p (f-join penhostdir "src"))
-         (setq pendir penhostdir))
-
-     (if (f-directory-p (f-join contribhostdir "src"))
-         (setq contribdir contribhostdir))
-
      ,@body))
 
 (pen-with-user-repos
- (add-to-list 'load-path openaidir)
- (add-to-list 'load-path (f-join pendir "src"))
- (add-to-list 'load-path (f-join contribdir "src"))
- (add-to-list 'load-path (f-join pendir "src/in-development"))
- (add-to-list 'load-path (f-join contribdir "src")))
+ (if (f-directory-p (f-join openaihostdir "src"))
+     (add-to-list 'load-path (f-join openaihostdir "src"))
+   (add-to-list 'load-path (f-join openaidir "src")))
+
+ (if (f-directory-p (f-join penhostdir "src"))
+     (progn
+       (add-to-list 'load-path (f-join penhostdir "src"))
+       (add-to-list 'load-path (f-join penhostdir "src/in-development")))
+   (progn
+     (add-to-list 'load-path (f-join pendir "src"))
+     (add-to-list 'load-path (f-join pendir "src/in-development"))))
+
+ (if (f-directory-p (f-join contribhostdir "src"))
+     (add-to-list 'load-path (f-join contribhostdir "src"))
+   (add-to-list 'load-path (f-join contribdir "src"))))
 
 (require 'pen-load-package-paths)
 
