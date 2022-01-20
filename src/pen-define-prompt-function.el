@@ -1631,6 +1631,10 @@
        (pen-snc "tr -d '\\n'" (pps pen-last-prompt-data)))
       (f-join penconfdir "prompt-hist.el"))
 
+     ;; TODO Recursively call now
+     ;; Firstly, apply the burst-preprocessor
+     ;; func-sym
+
      ;; (pen-etv (pps final-stop-sequences))
      ;; (pen-etv final-insertion)
      (pen-log (concat
