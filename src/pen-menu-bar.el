@@ -1,3 +1,290 @@
+(defset menu-bar-file-menu
+  (let ((menu (make-sparse-keymap "File")))
 
+    ;; The "File" menu items
+    (bindings--define-key menu [exit-emacs]
+      '(menu-item "Quit" save-buffers-kill-terminal
+                  :help "Save unsaved buffers, then exit"))
+
+    (bindings--define-key menu [separator-exit]
+      menu-bar-separator)
+
+    (bindings--define-key menu [print]
+      `(menu-item "Print" ,menu-bar-print-menu))
+
+    (bindings--define-key menu [separator-print]
+      menu-bar-separator)
+
+    (unless (featurep 'ns)
+      (bindings--define-key menu [close-tab]
+        '(menu-item "Close Tab" tab-close
+                    :visible (fboundp 'tab-close)
+                    :help "Close currently selected tab"))
+      (bindings--define-key menu [make-tab]
+        '(menu-item "New Tab" tab-new
+                    :visible (fboundp 'tab-new)
+                    :help "Open a new tab"))
+
+      (bindings--define-key menu [separator-tab]
+        menu-bar-separator))
+
+    ;; Don't use delete-frame as event name because that is a special
+    ;; event.
+    (bindings--define-key menu [delete-this-frame]
+      '(menu-item "Delete Frame" delete-frame
+                  :visible (fboundp 'delete-frame)
+                  :enable (delete-frame-enabled-p)
+                  :help "Delete currently selected frame"))
+    (bindings--define-key menu [make-frame-on-monitor]
+      '(menu-item "New Frame on Monitor..." make-frame-on-monitor
+                  :visible (fboundp 'make-frame-on-monitor)
+                  :help "Open a new frame on another monitor"))
+    (bindings--define-key menu [make-frame-on-display]
+      '(menu-item "New Frame on Display..." make-frame-on-display
+                  :visible (fboundp 'make-frame-on-display)
+                  :help "Open a new frame on another display"))
+    (bindings--define-key menu [make-frame]
+      '(menu-item "New Frame" make-frame-command
+                  :visible (fboundp 'make-frame-command)
+                  :help "Open a new frame"))
+
+    (bindings--define-key menu [separator-frame]
+      menu-bar-separator)
+
+    (bindings--define-key menu [one-window]
+      '(menu-item "Remove Other Windows" delete-other-windows
+                  :enable (not (one-window-p t nil))
+                  :help "Make selected window fill whole frame"))
+
+    (bindings--define-key menu [new-window-on-right]
+      '(menu-item "New Window on Right" split-window-right
+                  :enable (and (menu-bar-menu-frame-live-and-visible-p)
+                               (menu-bar-non-minibuffer-window-p))
+                  :help "Make new window on right of selected one"))
+
+    (bindings--define-key menu [new-window-below]
+      '(menu-item "New Window Below" split-window-below
+                  :enable (and (menu-bar-menu-frame-live-and-visible-p)
+                               (menu-bar-non-minibuffer-window-p))
+                  :help "Make new window below selected one"))
+
+    (bindings--define-key menu [separator-window]
+      menu-bar-separator)
+
+    (bindings--define-key menu [recover-session]
+      '(menu-item "Recover Crashed Session" recover-session
+                  :enable
+                  (and auto-save-list-file-prefix
+                       (file-directory-p
+                        (file-name-directory auto-save-list-file-prefix))
+                       (directory-files
+                        (file-name-directory auto-save-list-file-prefix)
+                        nil
+                        (concat "\\`"
+                                (regexp-quote
+                                 (file-name-nondirectory
+                                  auto-save-list-file-prefix)))
+                        t))
+                  :help "Recover edits from a crashed session"))
+    (bindings--define-key menu [revert-buffer]
+      '(menu-item "Revert Buffer" revert-buffer
+                  :enable (or (not (eq revert-buffer-function
+                                       'revert-buffer--default))
+                              (not (eq
+                                    revert-buffer-insert-file-contents-function
+                                    'revert-buffer-insert-file-contents--default-function))
+                              (and buffer-file-number
+                                   (or (buffer-modified-p)
+                                       (not (verify-visited-file-modtime
+                                             (current-buffer))))))
+                  :help "Re-read current buffer from its file"))
+    (bindings--define-key menu [write-file]
+      '(menu-item "Save As..." write-file
+                  :enable (and (menu-bar-menu-frame-live-and-visible-p)
+                               (menu-bar-non-minibuffer-window-p))
+                  :help "Write current buffer to another file"))
+    (bindings--define-key menu [save-buffer]
+      '(menu-item "Save" save-buffer
+                  :enable (and (buffer-modified-p)
+                               (buffer-file-name)
+                               (menu-bar-non-minibuffer-window-p))
+                  :help "Save current buffer to its file"))
+
+    (bindings--define-key menu [separator-save]
+      menu-bar-separator)
+
+
+    (bindings--define-key menu [kill-buffer]
+      '(menu-item "Close" kill-this-buffer
+                  :enable (kill-this-buffer-enabled-p)
+                  :help "Discard (kill) current buffer"))
+    (bindings--define-key menu [insert-file]
+      '(menu-item "Insert File..." insert-file
+                  :enable (menu-bar-non-minibuffer-window-p)
+                  :help "Insert another file into current buffer"))
+    (bindings--define-key menu [dired]
+      '(menu-item "Open Directory..." dired
+                  :enable (menu-bar-non-minibuffer-window-p)
+                  :help "Read a directory, to operate on its files"))
+    (bindings--define-key menu [open-file]
+      '(menu-item "Open File..." menu-find-file-existing
+                  :enable (menu-bar-non-minibuffer-window-p)
+                  :help "Read an existing file into an Emacs buffer"))
+    (bindings--define-key menu [new-file]
+      '(menu-item "Visit New File..." find-file
+                  :enable (menu-bar-non-minibuffer-window-p)
+                  :help "Specify a new file's name, to edit the file"))
+
+    menu))
+
+(defset menu-bar-help-menu
+  (let ((menu (make-sparse-keymap "Help")))
+    (bindings--define-key menu [about-gnu-project]
+      '(menu-item "About GNU" describe-gnu-project
+                  :help "About the GNU System, GNU Project, and GNU/Linux"))
+    (bindings--define-key menu [about-emacs]
+      '(menu-item "About Emacs" about-emacs
+                  :help "Display version number, copyright info, and basic help"))
+    (bindings--define-key menu [sep4]
+      menu-bar-separator)
+    (bindings--define-key menu [describe-no-warranty]
+      '(menu-item "(Non)Warranty" describe-no-warranty
+                  :help "Explain that Emacs has NO WARRANTY"))
+    (bindings--define-key menu [describe-copying]
+      '(menu-item "Copying Conditions" describe-copying
+                  :help "Show the Emacs license (GPL)"))
+    (bindings--define-key menu [getting-new-versions]
+      '(menu-item "Getting New Versions" describe-distribution
+                  :help "How to get the latest version of Emacs"))
+    (bindings--define-key menu [sep2]
+      menu-bar-separator)
+    (bindings--define-key menu [external-packages]
+      '(menu-item "Finding Extra Packages" view-external-packages
+                  :help "How to get more Lisp packages for use in Emacs"))
+    (bindings--define-key menu [find-emacs-packages]
+      '(menu-item "Search Built-in Packages" finder-by-keyword
+                  :help "Find built-in packages and features by keyword"))
+    (bindings--define-key menu [more-manuals]
+      `(menu-item "More Manuals" ,menu-bar-manuals-menu))
+    (bindings--define-key menu [emacs-manual]
+      '(menu-item "Read the Emacs Manual" info-emacs-manual
+                  :help "Full documentation of Emacs features"))
+    (bindings--define-key menu [describe]
+      `(menu-item "Describe" ,menu-bar-describe-menu))
+    (bindings--define-key menu [search-documentation]
+      `(menu-item "Search Documentation" ,menu-bar-search-documentation-menu))
+    (bindings--define-key menu [sep1]
+      menu-bar-separator)
+    (bindings--define-key menu [emacs-psychotherapist]
+      '(menu-item "Emacs Psychotherapist" doctor
+                  :help "Our doctor will help you feel better"))
+    (bindings--define-key menu [send-emacs-bug-report]
+      '(menu-item "Send Bug Report..." report-emacs-bug
+                  :help "Send e-mail to Emacs maintainers"))
+    (bindings--define-key menu [emacs-manual-bug]
+      '(menu-item "How to Report a Bug" info-emacs-bug
+                  :help "Read about how to report an Emacs bug"))
+    (bindings--define-key menu [emacs-known-problems]
+      '(menu-item "Emacs Known Problems" view-emacs-problems
+                  :help "Read about known problems with Emacs"))
+    (bindings--define-key menu [emacs-news]
+      '(menu-item "Emacs News" view-emacs-news
+                  :help "New features of this version"))
+    (bindings--define-key menu [emacs-faq]
+      '(menu-item "Emacs FAQ" view-emacs-FAQ
+                  :help "Frequently asked (and answered) questions about Emacs"))
+
+    (bindings--define-key menu [emacs-tutorial-language-specific]
+      '(menu-item "Emacs Tutorial (choose language)..."
+                  help-with-tutorial-spec-language
+                  :help "Learn how to use Emacs (choose a language)"))
+    (bindings--define-key menu [emacs-tutorial]
+      '(menu-item "Emacs Tutorial" help-with-tutorial
+                  :help "Learn how to use Emacs"))
+
+    ;; In macOS it's in the app menu already.
+    ;; FIXME? There already is an "About Emacs" (sans ...) entry in the Help menu.
+    (and (featurep 'ns)
+         (not (eq system-type 'darwin))
+         (bindings--define-key menu [info-panel]
+           '(menu-item "About Emacs..." ns-do-emacs-info-panel)))
+    menu))
+
+
+(defvar menu-bar-pen-menu
+  (let ((menu (make-sparse-keymap "Pen")))
+    (bindings--define-key menu [about-gnu-project]
+      '(menu-item "About GNU" describe-gnu-project
+                  :help "About the GNU System, GNU Project, and GNU/Linux"))
+    (bindings--define-key menu [about-emacs]
+      '(menu-item "About Emacs" about-emacs
+                  :help "Display version number, copyright info, and basic help"))
+    (bindings--define-key menu [sep4]
+      menu-bar-separator)
+    (bindings--define-key menu [describe-no-warranty]
+      '(menu-item "(Non)Warranty" describe-no-warranty
+                  :help "Explain that Emacs has NO WARRANTY"))
+    (bindings--define-key menu [describe-copying]
+      '(menu-item "Copying Conditions" describe-copying
+                  :help "Show the Emacs license (GPL)"))
+    (bindings--define-key menu [getting-new-versions]
+      '(menu-item "Getting New Versions" describe-distribution
+                  :help "How to get the latest version of Emacs"))
+    (bindings--define-key menu [sep2]
+      menu-bar-separator)
+    (bindings--define-key menu [external-packages]
+      '(menu-item "Finding Extra Packages" view-external-packages
+                  :help "How to get more Lisp packages for use in Emacs"))
+    (bindings--define-key menu [find-emacs-packages]
+      '(menu-item "Search Built-in Packages" finder-by-keyword
+                  :help "Find built-in packages and features by keyword"))
+    (bindings--define-key menu [more-manuals]
+      `(menu-item "More Manuals" ,menu-bar-manuals-menu))
+    (bindings--define-key menu [emacs-manual]
+      '(menu-item "Read the Emacs Manual" info-emacs-manual
+                  :help "Full documentation of Emacs features"))
+    (bindings--define-key menu [describe]
+      `(menu-item "Describe" ,menu-bar-describe-menu))
+    (bindings--define-key menu [search-documentation]
+      `(menu-item "Search Documentation" ,menu-bar-search-documentation-menu))
+    (bindings--define-key menu [sep1]
+      menu-bar-separator)
+    (bindings--define-key menu [emacs-psychotherapist]
+      '(menu-item "Emacs Psychotherapist" doctor
+                  :help "Our doctor will help you feel better"))
+    (bindings--define-key menu [send-emacs-bug-report]
+      '(menu-item "Send Bug Report..." report-emacs-bug
+                  :help "Send e-mail to Emacs maintainers"))
+    (bindings--define-key menu [emacs-manual-bug]
+      '(menu-item "How to Report a Bug" info-emacs-bug
+                  :help "Read about how to report an Emacs bug"))
+    (bindings--define-key menu [emacs-known-problems]
+      '(menu-item "Emacs Known Problems" view-emacs-problems
+                  :help "Read about known problems with Emacs"))
+    (bindings--define-key menu [emacs-news]
+      '(menu-item "Emacs News" view-emacs-news
+                  :help "New features of this version"))
+    (bindings--define-key menu [emacs-faq]
+      '(menu-item "Emacs FAQ" view-emacs-FAQ
+                  :help "Frequently asked (and answered) questions about Emacs"))
+
+    (bindings--define-key menu [emacs-tutorial-language-specific]
+      '(menu-item "Emacs Tutorial (choose language)..."
+                  help-with-tutorial-spec-language
+                  :help "Learn how to use Emacs (choose a language)"))
+    (bindings--define-key menu [emacs-tutorial]
+      '(menu-item "Emacs Tutorial" help-with-tutorial
+                  :help "Learn how to use Emacs"))
+
+    ;; In macOS it's in the app menu already.
+    ;; FIXME? There already is an "About Emacs" (sans ...) entry in the Help menu.
+    (and (featurep 'ns)
+         (not (eq system-type 'darwin))
+         (bindings--define-key menu [info-panel]
+           '(menu-item "About Emacs..." ns-do-emacs-info-panel)))
+    menu))
+
+(bindings--define-key global-map [menu-bar file]
+  (cons "Pen" menu-bar-file-menu))
 
 (provide 'pen-menu-bar)
