@@ -1331,10 +1331,12 @@ But use the results-analyser."
 
 (defmacro pen-engine (engine-name &rest body)
   "This wraps around pen function calls to force the engine"
-  `(eval
-    `(let ((engine ,,engine-name)
-           (force-engine ,,engine-name))
-       ,',@body)))
+  (if (sor engine-name)
+      `(eval
+        `(let ((engine ,,engine-name)
+               (force-engine ,,engine-name))
+           ,',@body))
+    ,@body))
 
 (defmacro pen-force-custom (&rest body)
   "This forces various settings depending on customizations"

@@ -16,47 +16,62 @@
   "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
   (interactive (list (read-string-hist "person: ")))
 
-  (if (and (not (pen-inside-docker))
-           (not (pen-container-running)))
-      (progn
-        (pen-term-nsfa (pen-cmd "pen" "-n"))
-        (message "Starting Pen server")))
+  (let ((apostrophe-engine
+         (or (sor (pen-var-value-maybe 'force-engine)) "")))
+    (if (and (not (pen-inside-docker))
+             (not (pen-container-running)))
+        (progn
+          (pen-term-nsfa (pen-cmd "pen" "-n"))
+          (message "Starting Pen server")))
 
-  (if (not name)
-      (setq name "Marco Polo"))
+    (if (not name)
+        (setq name "Marco Polo"))
 
-  (let* ((blurb
-          (if auto
-              (car (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result t)))
-            ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
-            (pen-eipec
-             (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil))))))
+    (let* ((blurb
+            (if auto
+                (car
+                 (eval
+                  `(pen-engine
+                    ,apostrophe-engine
+                    (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t)))))
+              ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
+              (pen-eipec
+               (fz
+                (eval
+                 `(pen-engine
+                   ,apostrophe-engine
+                   (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil))))))))
 
-    (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
-      (pen-e-sps (pen-lm (pen-eval-string el))))))
+      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
+        (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
 (defun apostrophe-start-chatbot-from-selection (text)
   (interactive (list (str (pen-screen-or-selection))))
 
-  (if (and (not (pen-inside-docker))
-           (not (pen-container-running)))
-      (progn
-        (pen-term-nsfa (pen-cmd "pen" "-n"))
-        (message "Starting Pen server")))
+  (let ((apostrophe-engine
+         (or (sor (pen-var-value-maybe 'force-engine)) "")))
+    (if (and (not (pen-inside-docker))
+             (not (pen-container-running)))
+        (progn
+          (pen-term-nsfa (pen-cmd "pen" "-n"))
+          (message "Starting Pen server")))
 
-  (if (not text)
-      (setq text (str (pen-screen-or-selection))))
+    (if (not text)
+        (setq text (str (pen-screen-or-selection))))
 
-  (let* ((sme (pf-who-is-the-subject-matter-expert-for-/1 text))
-         (blurb (pf-generate-wiki-blurb-for-a-famous-person/1 sme)))
+    (let* ((sme
+            (eval
+             `(pen-engine
+               ,apostrophe-engine
+               (pf-who-is-the-subject-matter-expert-for-/1 text))))
+           (blurb
+            (eval
+             `(pen-engine
+               ,apostrophe-engine
+               (pf-generate-wiki-blurb-for-a-famous-person/1 sme)))))
 
-    (never ((sme (eval `(upd (pf-who-is-the-subject-matter-expert-for-/1 ,text))))
-            (blurb (eval `(upd (pf-generate-wiki-blurb-for-a-famous-person/1 ,sme))))))
-
-    (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" sme "" blurb))))
-      ;; TODO Run multiple daemons and run tasks from a pool?
-      (pen-e-sps (pen-lm (pen-eval-string el)))
-      (never (sps (pen-cmd "apostrophe-repl" "" blurb))))))
+      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" blurb))))
+        (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
 (defun apostrophe-a-conversation-broke-out-here (text)
   (interactive (list (str (pen-selected-or-preceding-context))))
