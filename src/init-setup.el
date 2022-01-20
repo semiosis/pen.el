@@ -35,11 +35,11 @@
   `(set ,list-var (delete ,elt ,(eval list-var))))
 
 (pen-with-user-repos
- (if (f-directory-p (f-join openaihostdir "src"))
+ (if (f-directory-p openaihostdir)
      (progn
-       (add-to-list 'load-path (f-join openaihostdir "src"))
-       (remove-from-list 'load-path (f-join openaidir "src")))
-   (add-to-list 'load-path (f-join openaidir "src")))
+       (add-to-list 'load-path openaihostdir)
+       (remove-from-list 'load-path openaidir))
+   (add-to-list 'load-path openaidir))
 
  (if (f-directory-p (f-join penhostdir "src"))
      (progn
