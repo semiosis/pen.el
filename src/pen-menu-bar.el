@@ -214,6 +214,9 @@
 
 (defset menu-bar-pen-menu
   (let ((menu (make-sparse-keymap "🖊 Pen.el")))
+    (bindings--define-key menu [pen-acolyte-dired-penel]
+      '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
+                  :help "Go to Pen.el source code"))
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
                   :help "About the GNU System, GNU Project, and GNU/Linux"))
@@ -309,7 +312,7 @@
   (let ((menu (make-sparse-keymap "Prompts")))
     (bindings--define-key menu [mi-pen-acolyte-dired-prompts]
       '(menu-item "Go to prompts" pen-acolyte-dired-prompts
-                  :help "Go to prompts directory from name"))
+                  :help "Go to prompts source directory"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -321,8 +324,8 @@
       '(menu-item "Reload engines" pen-load-engines
                   :help "Reload engines from YAML"))
     (bindings--define-key menu [mi-pen-acolyte-dired-engines]
-      '(menu-item "Name" pen-acolyte-dired-engines
-                  :help "Go to prompts directory from name"))
+      '(menu-item "Go to engines directory" pen-acolyte-dired-engines
+                  :help "Go to engines source directory"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
