@@ -698,5 +698,6 @@ buffer which is not included when this function returns"
   (interactive)
   (pen-sps
    (pen-cmd "pen-e" "rla")))
+(defalias 'pen-reload-all 'pen-rla)
 
 (provide 'pen-library)
