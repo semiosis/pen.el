@@ -305,6 +305,9 @@
 (defset menu-bar-history-menu
   (let ((menu (make-sparse-keymap "History")))))
 
+(defset menu-bar-inkwell-menu
+  (let ((menu (make-sparse-keymap "Inkwell")))))
+
 (defset menu-bar-protocol-menu
   (let ((menu (make-sparse-keymap "Protocol")))))
 
@@ -343,6 +346,9 @@
 
 (bindings--define-key global-map [menu-bar history]
   (cons "History" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar inkwell]
+  (cons "Inkwell" menu-bar-pen-menu))
 
 (bindings--define-key global-map [menu-bar melee]
   (cons "Melee" menu-bar-pen-menu))
