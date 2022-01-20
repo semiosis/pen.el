@@ -366,7 +366,7 @@
   (cons "Ink" menu-bar-inkwell-menu))
 
 (bindings--define-key global-map [menu-bar lookingglass]
-  (cons "🔍" menu-bar-lookingglass-menu))
+  (cons "LG" menu-bar-lookingglass-menu))
 
 (bindings--define-key global-map [menu-bar pensieve]
   (cons "Sieve" menu-bar-pensieve-menu))
