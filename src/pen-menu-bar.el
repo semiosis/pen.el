@@ -221,10 +221,17 @@
 
 (defset menu-bar-apostrophe-menu
   (let ((menu (make-sparse-keymap "Apostrophe")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-cterm-menu
   (let ((menu (make-sparse-keymap "cterm")))
+    menu))
+
+(defset menu-bar-channel-menu
+  (let ((menu (make-sparse-keymap "channel")))
     menu))
 
 (defset menu-bar-ii-menu
@@ -286,6 +293,9 @@
 
 (bindings--define-key global-map [menu-bar cterm]
   (cons "cterm" menu-bar-cterm-menu))
+
+(bindings--define-key global-map [menu-bar channel]
+  (cons "Chann.el" menu-bar-channel-menu))
 
 (bindings--define-key global-map [menu-bar ii]
   (cons "ii" menu-bar-ii-menu))
