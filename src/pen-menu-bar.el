@@ -294,6 +294,12 @@
   (let ((menu (make-sparse-keymap "ESP")))))
 
 (defset menu-bar-protocol-menu
+  (let ((menu (make-sparse-keymap "Prompts")))))
+
+(defset menu-bar-protocol-menu
+  (let ((menu (make-sparse-keymap "History")))))
+
+(defset menu-bar-protocol-menu
   (let ((menu (make-sparse-keymap "Protocol")))))
 
 (bindings--define-key global-map [menu-bar file]
