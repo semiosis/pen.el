@@ -425,10 +425,10 @@
         (cons "ESP" menu-bar-esp-menu))
 
       (bindings--define-key global-map [menu-bar prompts]
-        (cons "pf" menu-bar-prompts-menu))
+        (cons "Prompts" menu-bar-prompts-menu))
 
       (bindings--define-key global-map [menu-bar engines]
-        (cons "Eng" menu-bar-engines-menu))
+        (cons "Engines" menu-bar-engines-menu))
 
       (bindings--define-key global-map [menu-bar history]
         (cons "Hist" menu-bar-history-menu))
