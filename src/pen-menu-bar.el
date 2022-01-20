@@ -321,36 +321,36 @@
   (cons "Pen" menu-bar-pen-menu))
 
 (bindings--define-key global-map [menu-bar apostrophe]
-  (cons "Apostrophe" menu-bar-pen-menu))
+  (cons "Apostrophe" menu-apostrope-pen-menu))
 
 (bindings--define-key global-map [menu-bar cterm]
-  (cons "cterm" menu-bar-pen-menu))
+  (cons "cterm" menu-bar-cterm-menu))
 
 (bindings--define-key global-map [menu-bar ii]
-  (cons "ii" menu-bar-pen-menu))
+  (cons "ii" menu-bar-ii-menu))
 
 (bindings--define-key global-map [menu-bar mtp]
-  (cons "MTP" menu-bar-pen-menu))
+  (cons "MTP" menu-bar-mtp-menu))
 
 (bindings--define-key global-map [menu-bar paracosm]
-  (cons "Paracosm" menu-bar-pen-menu))
+  (cons "Paracosm" menu-paracosm-pen-menu))
 
 (bindings--define-key global-map [menu-bar esp]
-  (cons "ESP" menu-bar-pen-menu))
+  (cons "ESP" menu-bar-esp-menu))
 
 (bindings--define-key global-map [menu-bar prompts]
-  (cons "Prompts" menu-bar-pen-menu))
+  (cons "Prompts" menu-bar-prompts-menu))
 
 (bindings--define-key global-map [menu-bar engines]
-  (cons "Engines" menu-bar-pen-menu))
+  (cons "Engines" menu-bar-engines-menu))
 
 (bindings--define-key global-map [menu-bar history]
-  (cons "History" menu-bar-pen-menu))
+  (cons "History" menu-bar-history-menu))
 
 (bindings--define-key global-map [menu-bar inkwell]
-  (cons "Inkwell" menu-bar-pen-menu))
+  (cons "Inkwell" menu-bar-inkwell-menu))
 
 (bindings--define-key global-map [menu-bar melee]
-  (cons "Melee" menu-bar-pen-menu))
+  (cons "Melee" menu-bar-melee-menu))
 
 (provide 'pen-menu-bar)
