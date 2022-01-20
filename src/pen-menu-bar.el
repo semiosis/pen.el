@@ -312,7 +312,7 @@
   (cons "Inkwell" menu-bar-inkwell-menu))
 
 (bindings--define-key global-map [menu-bar lookingglass]
-  (cons "LookingGlass" menu-bar-lookingglass-menu))
+  (cons "🔍" menu-bar-lookingglass-menu))
 
 (bindings--define-key global-map [menu-bar pensieve]
   (cons "Pensieve" menu-bar-pensieve-menu))
