@@ -347,7 +347,4 @@
 (bindings--define-key global-map [menu-bar melee]
   (cons "Melee" menu-bar-pen-menu))
 
-(bindings--define-key global-map [menu-bar pen]
-  (cons "Pen" menu-bar-pen-menu))
-
 (provide 'pen-menu-bar)
