@@ -348,7 +348,7 @@
   (cons "MTP" menu-bar-mtp-menu))
 
 (bindings--define-key global-map [menu-bar paracosm]
-  (cons "Paracosm" menu-paracosm-pen-menu))
+  (cons "Paracosm" menu-bar-paracosm-menu))
 
 (bindings--define-key global-map [menu-bar esp]
   (cons "ESP" menu-bar-esp-menu))
