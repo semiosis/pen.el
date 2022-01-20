@@ -796,6 +796,12 @@
                       ,burst-preprocessor)))
             pipelines-varvals))
 
+          (final-burst-length
+           (pen-num
+            (expand-template
+             (str (or (pen-var-value-maybe 'burst-length)
+                      ,burst-length)))))
+
           (final-return-postprocessor
            (expand-template-al
             (expand-template
