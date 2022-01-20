@@ -66,6 +66,7 @@ if test "$USE_POOL" = "y"; then
     # Just take the first one
     # SOCKET="$(basename "$(shopt -s nullglob; cd $HOME/.pen/pool/available; ls pen-emacsd-* | shuf -n 1)")"
 
+    mkdir -p ~/.pen/pool/available
     for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
         SOCKET="$(basename "$socket_fp")"
         echo "$SOCKET" >> /tmp/d.txt
