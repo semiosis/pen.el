@@ -290,8 +290,8 @@
 (defset menu-bar-mtp-menu
   (let ((menu (make-sparse-keymap "MTP")))))
 
-(defset menu-bar-protocol-menu
-  (let ((menu (make-sparse-keymap "Protocol")))))
+(defset menu-bar-paracosm-menu
+  (let ((menu (make-sparse-keymap "Paracosm")))))
 
 (defset menu-bar-esp-menu
   (let ((menu (make-sparse-keymap "ESP")))))
@@ -299,17 +299,53 @@
 (defset menu-bar-prompts-menu
   (let ((menu (make-sparse-keymap "Prompts")))))
 
+(defset menu-bar-engines-menu
+  (let ((menu (make-sparse-keymap "Engines")))))
+
 (defset menu-bar-history-menu
   (let ((menu (make-sparse-keymap "History")))))
 
 (defset menu-bar-protocol-menu
   (let ((menu (make-sparse-keymap "Protocol")))))
 
+(defset menu-bar-melee-menu
+  (let ((menu (make-sparse-keymap "Melee")))))
+
 (bindings--define-key global-map [menu-bar file]
   (cons "File" menu-bar-file-menu))
 
 (bindings--define-key global-map [menu-bar pen]
   (cons "Pen" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar apostrophe]
+  (cons "Apostrophe" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar cterm]
+  (cons "cterm" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar ii]
+  (cons "ii" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar mtp]
+  (cons "MTP" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar paracosm]
+  (cons "Paracosm" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar esp]
+  (cons "ESP" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar prompts]
+  (cons "Prompts" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar engines]
+  (cons "Engines" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar history]
+  (cons "History" menu-bar-pen-menu))
+
+(bindings--define-key global-map [menu-bar melee]
+  (cons "Melee" menu-bar-pen-menu))
 
 (bindings--define-key global-map [menu-bar pen]
   (cons "Pen" menu-bar-pen-menu))
