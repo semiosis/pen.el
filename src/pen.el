@@ -1329,6 +1329,13 @@ But use the results-analyser."
     `(let ((n-lines-context ,,n-lines))
        ,',@body)))
 
+(defmacro pen-engine (engine-name &rest body)
+  "This wraps around pen function calls to force the engine"
+  `(eval
+    `(let ((engine ,,engine-name)
+           (force-engine ,,engine-name))
+       ,',@body)))
+
 (defmacro pen-force-custom (&rest body)
   "This forces various settings depending on customizations"
   (let ((overrides
