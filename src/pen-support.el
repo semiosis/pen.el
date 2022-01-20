@@ -1386,11 +1386,20 @@ when s is a string, set the clipboard to s"
 ;; (alist2pairs '((hi . "yo") (my-day . "is good")))
 (defun alist2pairs (al)
   (mapcar (lambda (e)
-            (list (intern (slugify (str (car e)))) (cdr e)))
+            (list (intern (slugify (str (car e))))
+                  (cdr e)))
+          al))
+
+(defun pen-safe-alist2pairs (al)
+  (mapcar (lambda (e)
+            (list (intern (slugify (str (car e))))
+                  (if (listp (cdr e))
+                      ""
+                    (cdr e))))
           al))
 
 (defmacro pen-let-keyvals (keyvals &rest body)
-  `(let ,(alist2pairs (eval keyvals))
+  `(let ,(pen-safe-alist2pairs (eval keyvals))
      ,@body))
 
 ;; (pen-let-keyvals '(("hi" . "yo") ("my day" . "is good")) my-day)
