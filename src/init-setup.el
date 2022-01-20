@@ -7,7 +7,9 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Enable ssl
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
-(package-initialize)
+
+(ignore-errors
+  (package-initialize))
 
 ;; (package-refresh-contents)
 
