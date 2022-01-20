@@ -336,7 +336,7 @@
     menu))
 
 (defset menu-bar-inkwell-menu
-  (let ((menu (make-sparse-keymap "Inkw.el")))
+  (let ((menu (make-sparse-keymap "𑑛 Inkw.el")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
