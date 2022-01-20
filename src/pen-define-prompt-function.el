@@ -2260,6 +2260,9 @@ Function names are prefixed with pf- for easy searching"
                                explicit-key
                              preprocessors)))
 
+                        (burst-preprocessor (ht-get yaml-ht "burst-preprocessor"))
+                        (burst-length (ht-get yaml-ht "burst-length"))
+
                         (var-defaults
                          ;; override what was taken from vars
                          ;; only if it exists
@@ -2324,6 +2327,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if var-defaults (concat "\nvar-defaults:\n" (pen-list-to-orglist var-defaults)))
                                 (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
                                 (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))
+                                (if burst-preprocessor (concat "\nburst-preprocessor:\n" (pen-list-to-orglist (list burst-preprocessor))))
                                 (if validator (concat "\nvalidator:\n" (pen-list-to-orglist (list validator))))
                                 (if subprompts (concat "\nsubprompts:\n" (pps subprompts)))
                                 (if payloads (concat "\nprompts:\n" (pps payloads)))
