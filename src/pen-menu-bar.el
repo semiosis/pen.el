@@ -9,12 +9,6 @@
     (bindings--define-key menu [separator-exit]
       menu-bar-separator)
 
-    (bindings--define-key menu [print]
-      `(menu-item "Print" ,menu-bar-print-menu))
-
-    (bindings--define-key menu [separator-print]
-      menu-bar-separator)
-
     (unless (featurep 'ns)
       (bindings--define-key menu [close-tab]
         '(menu-item "Close Tab" tab-close
