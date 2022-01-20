@@ -300,9 +300,12 @@
 
 (defset menu-bar-esp-menu
   (let ((menu (make-sparse-keymap "ESP")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [mi-lsp]
+      '(menu-item "Start LSP" lsp
+                  :help "Start LSP in current buffer"))
+    (bindings--define-key menu [mi-lsp]
+      '(menu-item "Start ESP" lsp
+                  :help "Start ESP in current buffer"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
