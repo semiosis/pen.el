@@ -219,6 +219,20 @@
            '(menu-item "About Emacs..." ns-do-emacs-info-panel)))
     menu))
 
+(defset menu-bar-daemons-menu
+  (let ((menu (make-sparse-keymap "Daemons")))
+    (bindings--define-key menu [about-gnu-project]
+      '(menu-item "About GNU" describe-gnu-project
+                  :help "About the GNU System, GNU Project, and GNU/Linux"))
+
+    ;; In macOS it's in the app menu already.
+    ;; FIXME? There already is an "About Emacs" (sans ...) entry in the Help menu.
+    (and (featurep 'ns)
+         (not (eq system-type 'darwin))
+         (bindings--define-key menu [info-panel]
+           '(menu-item "About Emacs..." ns-do-emacs-info-panel)))
+    menu))
+
 (defset menu-bar-apostrophe-menu
   (let ((menu (make-sparse-keymap "Apostrophe")))
     (bindings--define-key menu [from-name]
@@ -331,6 +345,9 @@
 
       (bindings--define-key global-map [menu-bar pen]
         (cons "Pen" menu-bar-pen-menu))
+
+      (bindings--define-key global-map [menu-bar daemons]
+        (cons "Daemons" menu-bar-daemons-menu))
 
       (bindings--define-key global-map [menu-bar apostrophe]
         (cons "Apo" menu-bar-apostrophe-menu))
