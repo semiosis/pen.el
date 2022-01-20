@@ -278,6 +278,24 @@
            '(menu-item "About Emacs..." ns-do-emacs-info-panel)))
     menu))
 
+(defset menu-bar-apostrophe-menu
+  (let ((menu (make-sparse-keymap "Apostrophe")))))
+
+(defset menu-bar-ii-menu
+  (let ((menu (make-sparse-keymap "ii")))))
+
+(defset menu-bar-mtp-menu
+  (let ((menu (make-sparse-keymap "MTP")))))
+
+(defset menu-bar-protocol-menu
+  (let ((menu (make-sparse-keymap "Protocol")))))
+
+(defset menu-bar-protocol-menu
+  (let ((menu (make-sparse-keymap "ESP")))))
+
+(defset menu-bar-protocol-menu
+  (let ((menu (make-sparse-keymap "Protocol")))))
+
 (bindings--define-key global-map [menu-bar file]
   (cons "File" menu-bar-file-menu))
 
