@@ -74,6 +74,7 @@
 (require 'pen-pensieve)
 (require 'pen-menu-bar)
 (require 'pen-daemons)
+(require 'pen-source)
 
 
 ;; Not sure I need the following in pen.el
