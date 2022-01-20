@@ -210,65 +210,6 @@
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
                   :help "About the GNU System, GNU Project, and GNU/Linux"))
-    (bindings--define-key menu [about-emacs]
-      '(menu-item "About Emacs" about-emacs
-                  :help "Display version number, copyright info, and basic help"))
-    (bindings--define-key menu [sep4]
-      menu-bar-separator)
-    (bindings--define-key menu [describe-no-warranty]
-      '(menu-item "(Non)Warranty" describe-no-warranty
-                  :help "Explain that Emacs has NO WARRANTY"))
-    (bindings--define-key menu [describe-copying]
-      '(menu-item "Copying Conditions" describe-copying
-                  :help "Show the Emacs license (GPL)"))
-    (bindings--define-key menu [getting-new-versions]
-      '(menu-item "Getting New Versions" describe-distribution
-                  :help "How to get the latest version of Emacs"))
-    (bindings--define-key menu [sep2]
-      menu-bar-separator)
-    (bindings--define-key menu [external-packages]
-      '(menu-item "Finding Extra Packages" view-external-packages
-                  :help "How to get more Lisp packages for use in Emacs"))
-    (bindings--define-key menu [find-emacs-packages]
-      '(menu-item "Search Built-in Packages" finder-by-keyword
-                  :help "Find built-in packages and features by keyword"))
-    (bindings--define-key menu [more-manuals]
-      `(menu-item "More Manuals" ,menu-bar-manuals-menu))
-    (bindings--define-key menu [emacs-manual]
-      '(menu-item "Read the Emacs Manual" info-emacs-manual
-                  :help "Full documentation of Emacs features"))
-    (bindings--define-key menu [describe]
-      `(menu-item "Describe" ,menu-bar-describe-menu))
-    (bindings--define-key menu [search-documentation]
-      `(menu-item "Search Documentation" ,menu-bar-search-documentation-menu))
-    (bindings--define-key menu [sep1]
-      menu-bar-separator)
-    (bindings--define-key menu [emacs-psychotherapist]
-      '(menu-item "Emacs Psychotherapist" doctor
-                  :help "Our doctor will help you feel better"))
-    (bindings--define-key menu [send-emacs-bug-report]
-      '(menu-item "Send Bug Report..." report-emacs-bug
-                  :help "Send e-mail to Emacs maintainers"))
-    (bindings--define-key menu [emacs-manual-bug]
-      '(menu-item "How to Report a Bug" info-emacs-bug
-                  :help "Read about how to report an Emacs bug"))
-    (bindings--define-key menu [emacs-known-problems]
-      '(menu-item "Emacs Known Problems" view-emacs-problems
-                  :help "Read about known problems with Emacs"))
-    (bindings--define-key menu [emacs-news]
-      '(menu-item "Emacs News" view-emacs-news
-                  :help "New features of this version"))
-    (bindings--define-key menu [emacs-faq]
-      '(menu-item "Emacs FAQ" view-emacs-FAQ
-                  :help "Frequently asked (and answered) questions about Emacs"))
-
-    (bindings--define-key menu [emacs-tutorial-language-specific]
-      '(menu-item "Emacs Tutorial (choose language)..."
-                  help-with-tutorial-spec-language
-                  :help "Learn how to use Emacs (choose a language)"))
-    (bindings--define-key menu [emacs-tutorial]
-      '(menu-item "Emacs Tutorial" help-with-tutorial
-                  :help "Learn how to use Emacs"))
 
     ;; In macOS it's in the app menu already.
     ;; FIXME? There already is an "About Emacs" (sans ...) entry in the Help menu.
@@ -318,6 +259,10 @@
   (let ((menu (make-sparse-keymap "Inkwell")))
     menu))
 
+(defset menu-bar-lookingglass-menu
+  (let ((menu (make-sparse-keymap "Lookingglass")))
+    menu))
+
 (defset menu-bar-protocol-menu
   (let ((menu (make-sparse-keymap "Protocol")))
     menu))
@@ -365,6 +310,9 @@
 
 (bindings--define-key global-map [menu-bar inkwell]
   (cons "Inkwell" menu-bar-inkwell-menu))
+
+(bindings--define-key global-map [menu-bar lookingglass]
+  (cons "Lookingglass" menu-bar-lookingglass-menu))
 
 (bindings--define-key global-map [menu-bar pensieve]
   (cons "Pensieve" menu-bar-pensieve-menu))
