@@ -333,9 +333,9 @@
 
 (defset menu-bar-history-menu
   (let ((menu (make-sparse-keymap "History")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [mi-pen-continue-from-hist]
+      '(menu-item "Continue prompt from history" pen-continue-from-hist
+                  :help "Continue prompt from history"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
