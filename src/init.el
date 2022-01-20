@@ -128,7 +128,7 @@
   "Keymap for `pen.el'.")
 
 (pen-with-user-repos
- (load (f-join pen-src-dir "pen-contrib.el"))
+ ;; (load (f-join pen-src-dir "pen-contrib.el"))
  (load (f-join pen-src-dir "pen-example-config.el")))
 
 (require 'openai-api)
