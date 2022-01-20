@@ -24,7 +24,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -human|-talk-to-human) {
-        export PEN_ENGINE=Human
+        PEN_ENGINE=Human
+        shift
+    }
+    ;;
+
+    -engine) {
+        PEN_ENGINE="$2"
+        shift
         shift
     }
     ;;
@@ -55,6 +62,7 @@ esac; done
 
 export USE_NVC
 export PEN_UPDATE
+export PEN_ENGINE
 
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
