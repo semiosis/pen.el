@@ -348,8 +348,14 @@
 (defset menu-bar-lookingglass-menu
   (let ((menu (make-sparse-keymap "🔍LookingGlass")))
     (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+      '(menu-item "Render" lg-render
+                  :help "Render to HTML"))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Search" lg-search
+                  :help "Search selected passage for URLs"))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Go to URL" lg-eww
+                  :help "Go to URL"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
