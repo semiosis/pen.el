@@ -3,6 +3,40 @@ export TTY
 
 # https://www.youtube.com/watch?v=dumUElmlVJA
 
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
+use_comint=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nd) {
+        export NO_DOCKER=y
+        shift
+    }
+    ;;
+
+    -s) {
+        export SILENT=y
+        shift
+    }
+    ;;
+
+    -d) {
+        export DEBUG=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; }; then
+    # pen sh nvc ii "$@"
+    pen sh pensieve "$@"
+    exit "$?"
+fi
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -pf-list) {
@@ -36,7 +70,7 @@ test -d ~/.emacs/host/pensieve && : "${pensieve_dir:=~/.emacs/host/pensieve}"
 : "${pensieve_dir:="/root/repos/pensieve"}"
 
 # In container
-cd pensieve_dir
+cd "$pensieve_dir"
 lein run pensieve "$dir"
 
 ## ruse
