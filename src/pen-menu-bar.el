@@ -213,7 +213,7 @@
 
 
 (defset menu-bar-pen-menu
-  (let ((menu (make-sparse-keymap "Pen.el")))
+  (let ((menu (make-sparse-keymap "🖊 Pen.el")))
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
                   :help "About the GNU System, GNU Project, and GNU/Linux"))
@@ -395,7 +395,7 @@
       (bindings--define-key global-map [menu-bar tools] nil)
 
       (bindings--define-key global-map [menu-bar pen]
-        (cons "🖊 Pen" menu-bar-pen-menu))
+        (cons "Pen" menu-bar-pen-menu))
 
       (bindings--define-key global-map [menu-bar daemons]
         (cons "Daemons" menu-bar-daemons-menu))
