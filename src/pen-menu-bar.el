@@ -307,9 +307,9 @@
 
 (defset menu-bar-prompts-menu
   (let ((menu (make-sparse-keymap "Prompts")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-prompts]
+      '(menu-item "Go to prompts" pen-acolyte-dired-prompts
+                  :help "Go to prompts directory from name"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -317,6 +317,9 @@
 
 (defset menu-bar-engines-menu
   (let ((menu (make-sparse-keymap "Engines")))
+    (bindings--define-key menu [mi-pen-load-engines]
+      '(menu-item "Reload engines" pen-load-engines
+                  :help "Reload engines from YAML"))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
