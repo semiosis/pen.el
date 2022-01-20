@@ -281,8 +281,8 @@
 (defset menu-bar-paracosm-menu
   (let ((menu (make-sparse-keymap "Paracosm")))
     (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+      '(menu-item "Switch" pen-org-brain-switch-brain
+                  :help "Switch brain"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
