@@ -64,7 +64,7 @@ esac; done
 dir="$1"
 shift
 
-dir="$(realpath "dir")"
+dir="$(realpath "$dir")"
 mkdir -p "$dir"
 
 test -d /root/.emacs.d/host/pensieve && : "${pensieve_dir:=/root/.emacs.d/host/pensieve}"
