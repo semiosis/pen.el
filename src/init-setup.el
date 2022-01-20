@@ -18,6 +18,8 @@
 
 (require 'f)
 
+(defvar pen-src-dir (f-join user-emacs-directory "pen.el" "src"))
+
 (defmacro pen-with-user-repos (&rest body)
   ""
   `(let ((openaidir (f-join user-emacs-directory "openai-api.el"))
@@ -44,7 +46,8 @@
        (add-to-list 'load-path (f-join penhostdir "src"))
        (add-to-list 'load-path (f-join penhostdir "src/in-development"))
        (remove-from-list 'load-path (f-join pendir "src"))
-       (remove-from-list 'load-path (f-join pendir "src/in-development")))
+       (remove-from-list 'load-path (f-join pendir "src/in-development"))
+       (setq pen-src-dir (f-join penhostdir "src")))
    (progn
      (add-to-list 'load-path (f-join pendir "src"))
      (add-to-list 'load-path (f-join pendir "src/in-development"))))
@@ -200,8 +203,8 @@
   "Keymap for `pen.el'.")
 
 (pen-with-user-repos
- (load (f-join contribdir "src/pen-contrib.el"))
- (load (f-join pendir "src/pen-example-config.el")))
+ (load (f-join pen-src-dir "pen-contrib.el"))
+ (load (f-join pen-src-dir "pen-example-config.el")))
 
 (require 'openai-api)
 (require 'pen)
