@@ -354,7 +354,7 @@
   (cons "Inkwell" menu-bar-inkwell-menu))
 
 (bindings--define-key global-map [menu-bar pensieve]
-  (cons "Pensieve" menu-bar-inkwell-menu))
+  (cons "Pensieve" menu-bar-pensieve-menu))
 
 (bindings--define-key global-map [menu-bar melee]
   (cons "Melee" menu-bar-melee-menu))
