@@ -311,6 +311,9 @@
 (defset menu-bar-protocol-menu
   (let ((menu (make-sparse-keymap "Protocol")))))
 
+(defset menu-bar-pensieve-menu
+  (let ((menu (make-sparse-keymap "Pensieve")))))
+
 (defset menu-bar-melee-menu
   (let ((menu (make-sparse-keymap "Melee")))))
 
