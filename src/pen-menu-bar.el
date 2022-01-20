@@ -291,7 +291,7 @@
 (defset menu-bar-paracosm-menu
   (let ((menu (make-sparse-keymap "Paracosm")))
     (bindings--define-key menu [from-name]
-      '(menu-item "Switch" pen-org-brain-switch-brain
+      '(menu-item "Switch brain" pen-org-brain-switch-brain
                   :help "Switch brain"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
