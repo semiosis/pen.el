@@ -225,6 +225,10 @@
 
 (defset menu-bar-daemons-menu
   (let ((menu (make-sparse-keymap "Daemons")))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
                   :help "About the GNU System, GNU Project, and GNU/Linux"))
