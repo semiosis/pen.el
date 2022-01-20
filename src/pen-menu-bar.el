@@ -1,3 +1,8 @@
+;; Known issues
+;; - To select from a menu, while in the terminal
+;;   you must drag the mouse across the menu item you want
+
+
 (defset menu-bar-file-menu
   (let ((menu (make-sparse-keymap "File")))
 
