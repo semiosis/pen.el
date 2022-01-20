@@ -324,6 +324,8 @@
                   :help "Start chatbot from name"))
     menu))
 
+(if (pen-snq "inside-docker-p")
+  (progn
 (bindings--define-key global-map [menu-bar file]
   (cons "File" menu-bar-file-menu))
 
@@ -371,5 +373,6 @@
 
 (bindings--define-key global-map [menu-bar melee]
   (cons "Melee" menu-bar-melee-menu))
+))
 
 (provide 'pen-menu-bar)
