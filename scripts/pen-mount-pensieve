@@ -3,6 +3,27 @@ export TTY
 
 # https://www.youtube.com/watch?v=dumUElmlVJA
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -pf-list) {
+        # Function for listing files and dirs
+        pf_list_function="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -pf-gen) {
+        # Function for generating file contents
+        pf_gen_function="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 cd $MYGIT/ahungry/ruse
 mkdir -p /tmp/dog-pics
 lein run dog /tmp/dog-pics
