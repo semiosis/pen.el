@@ -207,38 +207,24 @@
 
 (defset menu-bar-pen-menu
   (let ((menu (make-sparse-keymap "Pen.el")))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
-
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
                   :help "About the GNU System, GNU Project, and GNU/Linux"))
 
-    ;; In macOS it's in the app menu already.
-    ;; FIXME? There already is an "About Emacs" (sans ...) entry in the Help menu.
-    (and (featurep 'ns)
-         (not (eq system-type 'darwin))
-         (bindings--define-key menu [info-panel]
-           '(menu-item "About Emacs..." ns-do-emacs-info-panel)))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-daemons-menu
   (let ((menu (make-sparse-keymap "Daemons")))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
-
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
                   :help "About the GNU System, GNU Project, and GNU/Linux"))
 
-    ;; In macOS it's in the app menu already.
-    ;; FIXME? There already is an "About Emacs" (sans ...) entry in the Help menu.
-    (and (featurep 'ns)
-         (not (eq system-type 'darwin))
-         (bindings--define-key menu [info-panel]
-           '(menu-item "About Emacs..." ns-do-emacs-info-panel)))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-apostrophe-menu
@@ -246,6 +232,10 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-cterm-menu
@@ -253,6 +243,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-channel-menu
@@ -260,6 +253,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-ii-menu
@@ -267,6 +263,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-mtp-menu
@@ -274,6 +273,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-paracosm-menu
@@ -281,6 +283,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-esp-menu
@@ -288,6 +293,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-prompts-menu
@@ -295,6 +303,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-engines-menu
@@ -302,6 +313,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-history-menu
@@ -309,6 +323,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-inkwell-menu
@@ -316,6 +333,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-lookingglass-menu
@@ -323,6 +343,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-protocol-menu
@@ -330,6 +353,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-pensieve-menu
@@ -337,6 +363,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-melee-menu
@@ -344,6 +373,9 @@
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (if (pen-snq "inside-docker-p")
