@@ -228,58 +228,100 @@
 
 (defset menu-bar-cterm-menu
   (let ((menu (make-sparse-keymap "cterm")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-channel-menu
   (let ((menu (make-sparse-keymap "channel")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-ii-menu
   (let ((menu (make-sparse-keymap "ii")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-mtp-menu
   (let ((menu (make-sparse-keymap "MTP")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-paracosm-menu
   (let ((menu (make-sparse-keymap "Paracosm")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-esp-menu
   (let ((menu (make-sparse-keymap "ESP")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-prompts-menu
   (let ((menu (make-sparse-keymap "Prompts")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-engines-menu
   (let ((menu (make-sparse-keymap "Engines")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-history-menu
   (let ((menu (make-sparse-keymap "History")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-inkwell-menu
   (let ((menu (make-sparse-keymap "Inkwell")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-lookingglass-menu
   (let ((menu (make-sparse-keymap "Lookingglass")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-protocol-menu
   (let ((menu (make-sparse-keymap "Protocol")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-pensieve-menu
   (let ((menu (make-sparse-keymap "Pensieve")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (defset menu-bar-melee-menu
   (let ((menu (make-sparse-keymap "Melee")))
+    (bindings--define-key menu [from-name]
+      '(menu-item "Name" apostrophe-start-chatbot-from-name
+                  :help "Start chatbot from name"))
     menu))
 
 (bindings--define-key global-map [menu-bar file]
