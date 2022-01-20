@@ -413,7 +413,7 @@
         (cons "𝑖i" menu-bar-ii-menu))
 
       (bindings--define-key global-map [menu-bar apostrophe]
-        (cons "Apo" menu-bar-apostrophe-menu))
+        (cons "Ink" menu-bar-apostrophe-menu))
 
       (bindings--define-key global-map [menu-bar mtp]
         (cons "MTP" menu-bar-mtp-menu))
