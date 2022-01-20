@@ -440,6 +440,9 @@
         (cons "LG" menu-bar-lookingglass-menu))
 
       (bindings--define-key global-map [menu-bar pensieve]
-        (cons "Sieve" menu-bar-pensieve-menu))))
+        (cons "Sieve" menu-bar-pensieve-menu))
+
+      (bindings--define-key global-map [menu-bar protocol]
+        (cons "Protocol" menu-bar-protocol-menu))))
 
 (provide 'pen-menu-bar)
