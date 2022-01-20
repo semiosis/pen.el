@@ -72,6 +72,7 @@
 (require 'pen-misc)
 (require 'pen-packages)
 (require 'pen-pensieve)
+(require 'pen-menu-bar)
 
 
 ;; Not sure I need the following in pen.el

@@ -1235,6 +1235,7 @@
                   ;; The prompt loses unicode here. I think I need to convert to base64 maybe
                   ;; And if I do, put it just outside pen-encode-string
                   `(
+                    ("PEN_PROMPT_FUNCTION" . ,func-name-slug)
                     ("PEN_PROMPT" .
                      ;; Sort this out later
                      ,(pen-encode-string final-prompt)
