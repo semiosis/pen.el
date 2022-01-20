@@ -315,7 +315,7 @@
   (cons "🔍" menu-bar-lookingglass-menu))
 
 (bindings--define-key global-map [menu-bar pensieve]
-  (cons "Pensieve" menu-bar-pensieve-menu))
+  (cons "PenSieve" menu-bar-pensieve-menu))
 
 (bindings--define-key global-map [menu-bar melee]
   (cons "Melee" menu-bar-melee-menu))
