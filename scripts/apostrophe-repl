@@ -22,6 +22,19 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -human|-talk-to-human) {
+        PEN_ENGINE=Human
+        shift
+    }
+    ;;
+
+    -engine) {
+        PEN_ENGINE="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 

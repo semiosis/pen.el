@@ -64,6 +64,14 @@ export USE_NVC
 export PEN_UPDATE
 export PEN_ENGINE
 
+PEN_ENGINE_ELISP="$PEN_ENGINE"
+
+if test -n "$PEN_ENGINE"; then
+    PEN_ENGINE_ELISP="\"$PEN_ENGINE\""
+else
+    PEN_ENGINE_ELISP=nil
+fi
+
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
@@ -90,10 +98,10 @@ if stdin_exists; then
     text="$(cat)"
     # Rather than specifying directly to the prompt function,
     # this value is taken up and remembered for future prompting within the apostrophe
-    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine \"$PEN_ENGINE\" (progn (apostrophe-start-chatbot-from-selection $(cmd-nice-posix "$text"))(delete-other-windows)))"
+    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (apostrophe-start-chatbot-from-selection $(cmd-nice-posix "$text"))(delete-other-windows)))"
 elif test -n "$person"; then
     exec <&1
-    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine \"$PEN_ENGINE\" (progn (upd (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows)))"
+    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows)))"
 else
-    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine \"$PEN_ENGINE\" (progn (call-interactively 'apostrophe-start-chatbot-from-name)(delete-other-windows)))"
+    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (call-interactively 'apostrophe-start-chatbot-from-name)(delete-other-windows)))"
 fi
