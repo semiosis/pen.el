@@ -30,8 +30,13 @@ esac; done
 dir="$1"
 shift
 
+dir="$(realpath "dir")"
+
+test -d ~/.emacs/host/pensieve && : "${pensieve_dir:=~/.emacs/host/pensieve}"
+: "${pensieve_dir:="/root/repos/pensieve"}"
+
 # In container
-cd /root/repos/pensieve
+cd pensieve_dir
 lein run pensieve "$dir"
 
 ## ruse
