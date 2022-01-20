@@ -328,7 +328,7 @@
 
 (defset menu-bar-melee-menu
   (let ((menu (make-sparse-keymap "Melee")))
-1    menu))
+    menu))
 
 (bindings--define-key global-map [menu-bar file]
   (cons "File" menu-bar-file-menu))
