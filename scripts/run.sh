@@ -130,6 +130,8 @@ find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
 # emacs -nw --debug-init
 # done
 
+timg ~/.emacs.d/pen.el/docs/images/the_pen_of_imagination.png
+
 # In case I accidentally committed it
 rm -f /tmp/pen.yaml
 if test -n "$PEN_N_DAEMONS"; then
