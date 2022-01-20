@@ -303,7 +303,7 @@
     (bindings--define-key menu [mi-lsp]
       '(menu-item "Start LSP" lsp
                   :help "Start LSP in current buffer"))
-    (bindings--define-key menu [mi-lsp]
+    (bindings--define-key menu [mi-esp]
       '(menu-item "Start ESP" lsp
                   :help "Start ESP in current buffer"))
     (bindings--define-key menu [cancel-menu]
