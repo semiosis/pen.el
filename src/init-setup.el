@@ -29,21 +29,30 @@
 
      ,@body))
 
+(defmacro remove-from-list (list-var elt)
+  `(set ,list-var (delete ,elt ,(eval list-var))))
+
 (pen-with-user-repos
  (if (f-directory-p (f-join openaihostdir "src"))
-     (add-to-list 'load-path (f-join openaihostdir "src"))
+     (progn
+       (add-to-list 'load-path (f-join openaihostdir "src"))
+       (remove-from-list 'load-path (f-join openaidir "src")))
    (add-to-list 'load-path (f-join openaidir "src")))
 
  (if (f-directory-p (f-join penhostdir "src"))
      (progn
        (add-to-list 'load-path (f-join penhostdir "src"))
-       (add-to-list 'load-path (f-join penhostdir "src/in-development")))
+       (add-to-list 'load-path (f-join penhostdir "src/in-development"))
+       (remove-from-list 'load-path (f-join pendir "src"))
+       (remove-from-list 'load-path (f-join pendir "src/in-development")))
    (progn
      (add-to-list 'load-path (f-join pendir "src"))
      (add-to-list 'load-path (f-join pendir "src/in-development"))))
 
  (if (f-directory-p (f-join contribhostdir "src"))
-     (add-to-list 'load-path (f-join contribhostdir "src"))
+     (progn
+       (add-to-list 'load-path (f-join contribhostdir "src"))
+       (remove-from-list 'load-path (f-join contribdir "src")))
    (add-to-list 'load-path (f-join contribdir "src"))))
 
 (require 'pen-load-package-paths)
