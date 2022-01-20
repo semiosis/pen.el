@@ -266,7 +266,7 @@
     menu))
 
 (defset menu-bar-ii-menu
-  (let ((menu (make-sparse-keymap "𝑖i Imaginary Interpreter")))
+  (let ((menu (make-sparse-keymap "i Imaginary Interpreter")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
@@ -410,7 +410,7 @@
         (cons "Chann" menu-bar-channel-menu))
 
       (bindings--define-key global-map [menu-bar ii]
-        (cons "ii" menu-bar-ii-menu))
+        (cons "𝑖i" menu-bar-ii-menu))
 
       (bindings--define-key global-map [menu-bar apostrophe]
         (cons "Apo" menu-bar-apostrophe-menu))
