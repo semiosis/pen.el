@@ -194,6 +194,11 @@ while read -e -r user_input; do
         }
         ;;
 
+        "/quit") {
+            exit
+        }
+        ;;
+
         "!2"|"~2") {
             memory="$last_last_memory"
             user_input="$last_last_user_input"
