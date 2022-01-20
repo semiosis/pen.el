@@ -279,43 +279,56 @@
     menu))
 
 (defset menu-bar-apostrophe-menu
-  (let ((menu (make-sparse-keymap "Apostrophe")))))
+  (let ((menu (make-sparse-keymap "Apostrophe")))
+    menu))
 
 (defset menu-bar-cterm-menu
-  (let ((menu (make-sparse-keymap "cterm")))))
+  (let ((menu (make-sparse-keymap "cterm")))
+    menu))
 
 (defset menu-bar-ii-menu
-  (let ((menu (make-sparse-keymap "ii")))))
+  (let ((menu (make-sparse-keymap "ii")))
+    menu))
 
 (defset menu-bar-mtp-menu
-  (let ((menu (make-sparse-keymap "MTP")))))
+  (let ((menu (make-sparse-keymap "MTP")))
+    menu))
 
 (defset menu-bar-paracosm-menu
-  (let ((menu (make-sparse-keymap "Paracosm")))))
+  (let ((menu (make-sparse-keymap "Paracosm")))
+    menu))
 
 (defset menu-bar-esp-menu
-  (let ((menu (make-sparse-keymap "ESP")))))
+  (let ((menu (make-sparse-keymap "ESP")))
+    menu))
 
 (defset menu-bar-prompts-menu
-  (let ((menu (make-sparse-keymap "Prompts")))))
+  (let ((menu (make-sparse-keymap "Prompts")))
+    menu))
 
 (defset menu-bar-engines-menu
-  (let ((menu (make-sparse-keymap "Engines")))))
+  (let ((menu (make-sparse-keymap "Engines")))
+    menu))
 
 (defset menu-bar-history-menu
-  (let ((menu (make-sparse-keymap "History")))))
+  (let ((menu (make-sparse-keymap "History")))
+    menu))
 
 (defset menu-bar-inkwell-menu
-  (let ((menu (make-sparse-keymap "Inkwell")))))
+  (let ((menu (make-sparse-keymap "Inkwell")))
+    menu))
 
 (defset menu-bar-protocol-menu
-  (let ((menu (make-sparse-keymap "Protocol")))))
+  (let ((menu (make-sparse-keymap "Protocol")))
+    menu))
 
 (defset menu-bar-pensieve-menu
-  (let ((menu (make-sparse-keymap "Pensieve")))))
+  (let ((menu (make-sparse-keymap "Pensieve")))
+    menu))
 
 (defset menu-bar-melee-menu
-  (let ((menu (make-sparse-keymap "Melee")))))
+  (let ((menu (make-sparse-keymap "Melee")))
+    menu))
 
 (bindings--define-key global-map [menu-bar file]
   (cons "File" menu-bar-file-menu))
