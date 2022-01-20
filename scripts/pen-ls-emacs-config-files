@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+EMACSD=/root/.emacs.d
+
+for d in \
+$EMACSD/host/pen.el \
+$EMACSD/host/pen-contrib.el \
+$EMACSD/host/openai-api.el; do
+
+    find "$d" -type f -name '*.el'
+done | pen-mnm
