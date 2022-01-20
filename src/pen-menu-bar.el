@@ -346,7 +346,7 @@
     menu))
 
 (defset menu-bar-lookingglass-menu
-  (let ((menu (make-sparse-keymap "LookingGlass 🔍")))
+  (let ((menu (make-sparse-keymap "🔍LookingGlass")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
@@ -356,7 +356,7 @@
     menu))
 
 (defset menu-bar-protocol-menu
-  (let ((menu (make-sparse-keymap "Protocol")))
+  (let ((menu (make-sparse-keymap "࿋ Protocol")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
