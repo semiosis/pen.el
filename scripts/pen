@@ -324,6 +324,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -human) {
+        PEN_ENGINE=human
+        shift
+    }
+    ;;
+
     --citation) {
         pen-citation
         exit "$?"
