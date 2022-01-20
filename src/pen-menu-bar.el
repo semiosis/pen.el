@@ -211,7 +211,7 @@
     menu))
 
 
-(defvar menu-bar-pen-menu
+(defset menu-bar-pen-menu
   (let ((menu (make-sparse-keymap "Pen")))
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
@@ -285,6 +285,9 @@
     menu))
 
 (bindings--define-key global-map [menu-bar file]
-  (cons "Pen" menu-bar-file-menu))
+  (cons "File" menu-bar-file-menu))
+
+(bindings--define-key global-map [menu-bar pen]
+  (cons "Pen" menu-bar-pen-menu))
 
 (provide 'pen-menu-bar)
