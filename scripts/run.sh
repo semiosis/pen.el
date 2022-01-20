@@ -63,7 +63,7 @@ fi
 
 # This is a hack to run only on the initial docker run
 # Without this check, "pen-tipe pen-eipe" will hang because it waits for a background job
-if ! ls ~/.pen/pool/available/* | grep -q pen-emacsd; then
+if ! ls ~/.pen/pool/available/* 2>/dev/null | grep -q pen-emacsd; then
 (
 export PEN_USE_GUI=n
 echo "ttyd running on port 7681, serving Pen.el on http"
