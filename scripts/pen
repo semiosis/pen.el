@@ -505,7 +505,7 @@ if test "$PEN_UPDATE" = "y"; then
 fi
 
 if test "$PEN_ENGINE" = "human"; then
-    PEN_NO_TIMEOUT=f
+    PEN_NO_TIMEOUT=y
 fi
 
 if test "$UPDATE" = "y"; then
