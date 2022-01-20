@@ -1425,7 +1425,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     fi
 
     if test -d "$PEN_ENGINES_DIR"; then
-        PEN_ENGINES_DIR="$(realpath "$ENGINES_DIR")"
+        PEN_ENGINES_DIR="$(realpath "$PEN_ENGINES_DIR")"
     fi
 fi
 
