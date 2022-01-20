@@ -380,8 +380,12 @@
 
 (if (pen-snq "inside-docker-p")
     (progn
-      (bindings--define-key global-map [menu-bar file]
-        (cons "File" menu-bar-file-menu))
+      (bindings--define-key global-map [menu-bar file] nil)
+      (bindings--define-key global-map [menu-bar edit] nil)
+      (bindings--define-key global-map [menu-bar options] nil)
+      ;; (bindings--define-key global-map [menu-bar buffers] nil)
+      ;; (remove-hook 'menu-bar-update-hook 'menu-bar-update-buffers)
+      (bindings--define-key global-map [menu-bar tools] nil)
 
       (bindings--define-key global-map [menu-bar pen]
         (cons "Pen" menu-bar-pen-menu))
@@ -389,17 +393,20 @@
       (bindings--define-key global-map [menu-bar daemons]
         (cons "Daemons" menu-bar-daemons-menu))
 
-      (bindings--define-key global-map [menu-bar apostrophe]
-        (cons "Apo" menu-bar-apostrophe-menu))
-
       (bindings--define-key global-map [menu-bar cterm]
         (cons "ct" menu-bar-cterm-menu))
+
+      (bindings--define-key global-map [menu-bar melee]
+        (cons "Melee" menu-bar-melee-menu))
 
       (bindings--define-key global-map [menu-bar channel]
         (cons "Chann" menu-bar-channel-menu))
 
       (bindings--define-key global-map [menu-bar ii]
         (cons "ii" menu-bar-ii-menu))
+
+      (bindings--define-key global-map [menu-bar apostrophe]
+        (cons "Apo" menu-bar-apostrophe-menu))
 
       (bindings--define-key global-map [menu-bar mtp]
         (cons "MTP" menu-bar-mtp-menu))
@@ -426,9 +433,6 @@
         (cons "LG" menu-bar-lookingglass-menu))
 
       (bindings--define-key global-map [menu-bar pensieve]
-        (cons "Sieve" menu-bar-pensieve-menu))
-
-      (bindings--define-key global-map [menu-bar melee]
-        (cons "Melee" menu-bar-melee-menu))))
+        (cons "Sieve" menu-bar-pensieve-menu))))
 
 (provide 'pen-menu-bar)
