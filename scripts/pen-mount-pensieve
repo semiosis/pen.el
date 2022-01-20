@@ -66,7 +66,7 @@ shift
 
 dir="$(realpath "dir")"
 
-test -d ~/.emacs.d/host/pensieve && : "${pensieve_dir:=~/.emacs.d/host/pensieve}"
+test -d /root/.emacs.d/host/pensieve && : "${pensieve_dir:=/root/.emacs.d/host/pensieve}"
 : "${pensieve_dir:="/root/repos/pensieve"}"
 
 # In container
