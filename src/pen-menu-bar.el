@@ -333,7 +333,7 @@
   (cons "Pen" menu-bar-pen-menu))
 
 (bindings--define-key global-map [menu-bar apostrophe]
-  (cons "Apostrophe" menu-apostrope-pen-menu))
+  (cons "Apostrophe" menu-bar-apostrophe-menu))
 
 (bindings--define-key global-map [menu-bar cterm]
   (cons "cterm" menu-bar-cterm-menu))
