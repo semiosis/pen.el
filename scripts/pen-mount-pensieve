@@ -24,6 +24,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-cd $MYGIT/ahungry/ruse
-mkdir -p /tmp/dog-pics
-lein run dog /tmp/dog-pics
+: "${pf_list_function:="pf-list-subdirectories/1"}"
+: "${pf_gen_function:="pf-generate-the-contents-of-a-new-file/6"}"
+
+dir="$1"
+shift
+
+# In container
+cd /root/repos/pensieve
+lein run pensieve "$dir"
+
+## ruse
+# cd $MYGIT/ahungry/ruse
+# mkdir -p /tmp/dog-pics
+# lein run dog /tmp/dog-pics
