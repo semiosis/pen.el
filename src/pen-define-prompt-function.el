@@ -1553,6 +1553,8 @@
                         results)
                      results))
 
+          (results (-filter-not-empty-string results))
+
           ;; This is where 'result' is introduced
           (result
            (if final-analyse
