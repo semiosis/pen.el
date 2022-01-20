@@ -1,12 +1,6 @@
 ;; This was interfering with completion
 (setq company-backends '())
 
-(let ((pendir (f-join user-emacs-directory "pen.el"))
-      (contribdir (f-join user-emacs-directory "pen-contrib.el")))
-  (add-to-list 'load-path (f-join pendir "src"))
-  (add-to-list 'load-path (f-join contribdir "src"))
-  (add-to-list 'load-path (f-join pendir "src/in-development")))
-
 ;; These bindings will allow you to use Space Cadet keyboard modifiers
 ;; https://mullikine.github.io/posts/add-super-and-hyper-to-terminal-emacs/
 ;; C-M-6 = Super (s-)
