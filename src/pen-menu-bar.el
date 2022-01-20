@@ -281,6 +281,9 @@
 (defset menu-bar-apostrophe-menu
   (let ((menu (make-sparse-keymap "Apostrophe")))))
 
+(defset menu-bar-cterm-menu
+  (let ((menu (make-sparse-keymap "cterm")))))
+
 (defset menu-bar-ii-menu
   (let ((menu (make-sparse-keymap "ii")))))
 
@@ -290,13 +293,13 @@
 (defset menu-bar-protocol-menu
   (let ((menu (make-sparse-keymap "Protocol")))))
 
-(defset menu-bar-protocol-menu
+(defset menu-bar-esp-menu
   (let ((menu (make-sparse-keymap "ESP")))))
 
-(defset menu-bar-protocol-menu
+(defset menu-bar-prompts-menu
   (let ((menu (make-sparse-keymap "Prompts")))))
 
-(defset menu-bar-protocol-menu
+(defset menu-bar-history-menu
   (let ((menu (make-sparse-keymap "History")))))
 
 (defset menu-bar-protocol-menu
@@ -304,6 +307,9 @@
 
 (bindings--define-key global-map [menu-bar file]
   (cons "File" menu-bar-file-menu))
+
+(bindings--define-key global-map [menu-bar pen]
+  (cons "Pen" menu-bar-pen-menu))
 
 (bindings--define-key global-map [menu-bar pen]
   (cons "Pen" menu-bar-pen-menu))
