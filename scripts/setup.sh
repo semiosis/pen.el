@@ -478,3 +478,5 @@ pyf rich
 agi xterm
 
 agi mplayer
+
+agi feh
