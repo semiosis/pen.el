@@ -55,6 +55,8 @@ https://semiosis.github.io/posts/a-prompting-lsp-server-for-any-language-or-cont
 + Demo :: https://mullikine.github.io/posts/prompt-design-with-yasnippet/
 
 ** Quick installation
++ Setting up from scratch, with a demo :: https://semiosis.github.io/posts/pen-el-installation-from-scratch/
+
 + Longer guide here :: [[./docs/installation.org]]
 
 # #+BEGIN_SRC bash -n :i bash :async :results verbatim code
