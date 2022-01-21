@@ -394,7 +394,7 @@
     menu))
 
 (defset menu-bar-protocol-menu
-  (let ((menu (make-sparse-keymap "࿋  Protocol")))
+  (let ((menu (make-sparse-keymap "࿋  Semiosis Protocol")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
