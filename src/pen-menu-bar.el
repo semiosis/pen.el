@@ -389,6 +389,16 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-history-menu
+  (let ((menu (make-sparse-keymap "History")))
+    (bindings--define-key menu [mi-pen-continue-from-hist]
+      '(menu-item "Continue prompt from history" pen-continue-from-hist
+                  :help "Continue prompt from history"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-prompting-menu
   (let ((menu (make-sparse-keymap "Engines")))
     (bindings--define-key menu [mi-menu-bar-history-menu]
@@ -397,16 +407,6 @@
     (bindings--define-key menu [mi-menu-bar-engineering-menu]
       `(menu-item "Engineering" ,menu-bar-engineering-menu
                   :help "Prompt engineering"))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
-    menu))
-
-(defset menu-bar-history-menu
-  (let ((menu (make-sparse-keymap "History")))
-    (bindings--define-key menu [mi-pen-continue-from-hist]
-      '(menu-item "Continue prompt from history" pen-continue-from-hist
-                  :help "Continue prompt from history"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
