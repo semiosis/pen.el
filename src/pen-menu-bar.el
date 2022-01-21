@@ -228,7 +228,6 @@
     (bindings--define-key menu [mi-pen-go-to-documents]
       '(menu-item "Documents (shared with host)" pen-go-to-documents
                   :help "Open dired at ~/.pen/documents"))
-
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
