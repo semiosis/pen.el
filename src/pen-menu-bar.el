@@ -223,6 +223,58 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-keys-menu
+  (let ((menu (make-sparse-keymap "Keys")))
+    (bindings--define-key menu [mi-pen-add-key-openai]
+      '(menu-item "Add OpenAI key" pen-add-key-openai
+                  :help "Add, edit or remove the OpenAI key"))
+    (bindings--define-key menu [mi-pen-add-key-cohere]
+      '(menu-item "Add Cohere key" pen-add-key-cohere
+                  :help "Add, edit or remove the Cohere key"))
+    (bindings--define-key menu [mi-pen-add-key-hf]
+      '(menu-item "Add HuggingFace key" pen-add-key-hf
+                  :help "Add, edit or remove the HuggingFace key"))
+    (bindings--define-key menu [mi-pen-add-key-hf]
+      '(menu-item "Add AlephAlpha key" pen-add-key-alephalpha
+                  :help "Add, edit or remove the AlephAlpha key"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-protocol-menu
+  (let ((menu (make-sparse-keymap "࿋  Semiosis Protocol")))
+    (bindings--define-key menu [mi-pen-connect-semiosis-protocol]
+      '(menu-item "Connect to network" pen-connect-semiosis-protocol
+                  :help "Connect Pen.el to the Semiosis Protocol"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-network-menu
+  (let ((menu (make-sparse-keymap "Networks")))
+    (bindings--define-key menu [mi-menu-bar-protocol-menu]
+      `(menu-item "࿋  Semiosis Protocol" ,menu-bar-protocol-menu
+                  :help "Semiosis Protocol functions"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-configure-menu
+  (let ((menu (make-sparse-keymap "Config")))
+    (bindings--define-key menu [mi-menu-bar-keys-menu]
+      '(menu-item "Add, remove and edit API keys" menu-bar-keys-menu
+                  :help "e.g. Add your OpenAI key"))
+    (bindings--define-key menu [mi-menu-bar-network-menu]
+      '(menu-item "Connect to p2p networks" menu-bar-network-menu
+                  :help "e.g. Connect Semiosis Protocol"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-documents-menu
   (let ((menu (make-sparse-keymap "Documents")))
     (bindings--define-key menu [mi-pen-go-to-documents]
@@ -475,26 +527,6 @@
                   :help "Cancel out of this menu"))
     menu))
 
-(defset menu-bar-protocol-menu
-  (let ((menu (make-sparse-keymap "࿋  Semiosis Protocol")))
-    (bindings--define-key menu [mi-pen-connect-semiosis-protocol]
-      '(menu-item "Connect to network" pen-connect-semiosis-protocol
-                  :help "Connect Pen.el to the Semiosis Protocol"))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
-    menu))
-
-(defset menu-bar-network-menu
-  (let ((menu (make-sparse-keymap "Network")))
-    (bindings--define-key menu [mi-menu-bar-protocol-menu]
-      `(menu-item "࿋  Semiosis Protocol" ,menu-bar-protocol-menu
-                  :help "Semiosis Protocol functions"))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
-    menu))
-
 (defset menu-bar-pensieve-menu
   (let ((menu (make-sparse-keymap "PenSieve")))
     (bindings--define-key menu [mi-pensieve-mount-dir]
@@ -656,8 +688,12 @@
       (bindings--define-key global-map [menu-bar prompting]
         (cons "Prompting" menu-bar-prompting-menu))
 
-      (bindings--define-key global-map [menu-bar network]
-        (cons "Network" menu-bar-network-menu))
+      ;; (bindings--define-key global-map [menu-bar network]
+      ;;   (cons "Network" menu-bar-network-menu))
+      (bindings--define-key global-map [menu-bar network] nil)
+
+      (bindings--define-key global-map [menu-bar config]
+        (cons "Configure" menu-bar-configure-menu))
 
       (bindings--define-key global-map [menu-bar documents]
         (cons "Documents" menu-bar-documents-menu))
