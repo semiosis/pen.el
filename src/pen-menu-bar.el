@@ -265,10 +265,10 @@
 (defset menu-bar-configure-menu
   (let ((menu (make-sparse-keymap "Config")))
     (bindings--define-key menu [mi-menu-bar-keys-menu]
-      '(menu-item "Add, remove and edit API keys" menu-bar-keys-menu
+      `(menu-item "Add, remove and edit API keys" ,menu-bar-keys-menu
                   :help "e.g. Add your OpenAI key"))
     (bindings--define-key menu [mi-menu-bar-network-menu]
-      '(menu-item "Connect to p2p networks" menu-bar-network-menu
+      `(menu-item "Connect to p2p networks" ,menu-bar-network-menu
                   :help "e.g. Connect Semiosis Protocol"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
