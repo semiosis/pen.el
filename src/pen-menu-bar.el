@@ -327,7 +327,7 @@
       `(menu-item "Daemons" ,menu-bar-daemons-menu
                   :help "Control Pen.el daemons"))
     (bindings--define-key menu [mi-pen-quit]
-      '(menu-item "Shutdown Pen.el" pen-quit-emacs
+      '(menu-item "Shutdown Pen.el" pen-kill-emacs
                   :help "Shutdown everything"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
