@@ -442,6 +442,10 @@ It's really meant for key bindings and which-key, so they should all be interact
                      (pp body) t)))))
     `(defun ,slugsym () (interactive) ,@body)))
 
+(defun pen-start-gui ()
+  (interactive)
+  (pen-sn "penx" nil nil nil t))
+
 (defmacro never (&rest body)
   "Do not run this code"
   `(if nil
