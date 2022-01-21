@@ -250,6 +250,9 @@
     (bindings--define-key menu [mi-pen-customize]
       '(menu-item "Customize Pen.el" pen-customize
                   :help "Pen.el customization"))
+    (bindings--define-key menu [mi-list-processes]
+      '(menu-item "List background proceses" list-processes
+                  :help "List, and stop running background jobs"))
     (bindings--define-key menu [mi-pen-reload]
       '(menu-item "Reload Pen.el config, engines and prompts" pen-reload
                   :help "Reload Pen.el config, engines and prompts"))
