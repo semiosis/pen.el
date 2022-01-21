@@ -275,6 +275,9 @@
     (bindings--define-key menu [mi-pen-edit-conf]
       '(menu-item "Edit configuration" pen-edit-conf
                   :help "Edit the pen.yaml file"))
+    (bindings--define-key menu [mi-efm-langserver-config.yaml]
+      '(menu-item "Edit ESP configuration" efm-langserver-config.yaml
+                  :help "Edit the pen.yaml file"))
     (bindings--define-key menu [mi-pen-customize]
       '(menu-item "Customize Pen.el" pen-customize
                   :help "Pen.el customization"))
