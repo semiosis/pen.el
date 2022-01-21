@@ -220,6 +220,9 @@
     (bindings--define-key menu [mi-pen-diagnostics-show-context]
       '(menu-item "Last prompt diagnostics of" pen-diagnostics-show-context
                   :help "Show details of prompt function execution"))
+    (bindings--define-key menu [mi-pen-customize]
+      '(menu-item "Customize Pen.el" pen-customize
+                  :help "Pen.el customization"))
     (bindings--define-key menu [mi-pen-reload]
       '(menu-item "Reload Pen.el config, engines and prompts" pen-reload
                   :help "Reload Pen.el config, engines and prompts"))
