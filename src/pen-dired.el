@@ -91,14 +91,14 @@
 (defun dired-view-file-v (&optional arg)
   (interactive "P")
   (let ((file (dired-get-file-for-visit)))
-    (if (or arg (string-equal (current-major-mode) "ranger-mode"))
+    (if (or arg (string-equal (current-major-mode-string) "ranger-mode"))
         (pen-sps (concat "pen-v " (pen-q file)))
       (ev file))))
 
 (defun dired-view-file-vs (&optional arg)
   (interactive "P")
   (let ((file (dired-get-file-for-visit)))
-    (if (or arg (string-equal (current-major-mode) "ranger-mode"))
+    (if (or arg (string-equal (current-major-mode-string) "ranger-mode"))
         (pen-sps (concat "pen-vs " (pen-q file)))
       (evs file))))
 
