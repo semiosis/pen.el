@@ -474,3 +474,5 @@ agi vifm
 )
 
 pyf rich
+
+agi xterm
