@@ -360,6 +360,16 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-engineering-menu
+  (let ((menu (make-sparse-keymap "Engines")))
+    (bindings--define-key menu [mi-menu-bar-engines-menu]
+      `(menu-item "Engines" ,menu-bar-engines-menu
+                  :help "Engines menu"))
+    (bindings--define-key menu [mi-menu-bar-prompts-menu]
+      `(menu-item "Prompts" ,menu-bar-prompts-menu
+                  :help "Prompts menu"))
+    menu))
+
 (defset menu-bar-history-menu
   (let ((menu (make-sparse-keymap "History")))
     (bindings--define-key menu [mi-pen-continue-from-hist]
@@ -428,6 +438,22 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-apps-menu
+  (let ((menu (make-sparse-keymap "Apps")))
+    (bindings--define-key menu [mi-menu-bar-pensieve-menu]
+      `(menu-item "PenSieve" ,menu-bar-pensieve-menu
+                  :help "Mount imaginary filesystems"))
+    (bindings--define-key menu [mi-menu-bar-melee-menu]
+      `(menu-item "Melee" ,menu-bar-melee-menu
+                  :help "Mount imaginary filesystems"))
+    (bindings--define-key menu [mi-menu-bar-lookingglass-menu]
+      `(menu-item "LookingGlass" ,menu-bar-lookingglass-menu
+                  :help "Visit imaginary websites"))
+    (bindings--define-key menu [mi-menu-bar-paracosm-menu]
+      `(menu-item "Paracosm" ,menu-bar-paracosm-menu
+                  :help "AI-assisted mind-mapping"))
+    menu))
+
 (defset menu-bar-melee-menu
   (let ((menu (make-sparse-keymap "🍓 Melee")))
     (bindings--define-key menu [mi-melee-start-immitation-game]
@@ -456,8 +482,9 @@
       (bindings--define-key global-map [menu-bar cterm]
         (cons "ct" menu-bar-cterm-menu))
 
-      (bindings--define-key global-map [menu-bar melee]
-        (cons "Melee" menu-bar-melee-menu))
+      ;; (bindings--define-key global-map [menu-bar melee]
+      ;;   (cons "Melee" menu-bar-melee-menu))
+      (bindings--define-key global-map [menu-bar melee] nil)
 
       (bindings--define-key global-map [menu-bar channel]
         (cons "Chann" menu-bar-channel-menu))
@@ -471,17 +498,25 @@
       (bindings--define-key global-map [menu-bar mtp]
         (cons "MTP" menu-bar-mtp-menu))
 
-      (bindings--define-key global-map [menu-bar paracosm]
-        (cons "Cosm" menu-bar-paracosm-menu))
+      ;; (bindings--define-key global-map [menu-bar paracosm]
+      ;;   (cons "Cosm" menu-bar-paracosm-menu))
+      (bindings--define-key global-map [menu-bar paracosm] nil)
+      (bindings--define-key global-map [menu-bar apps]
+        (cons "Apps" menu-bar-apps-menu))
 
       (bindings--define-key global-map [menu-bar esp]
         (cons "ESP" menu-bar-esp-menu))
 
-      (bindings--define-key global-map [menu-bar prompts]
-        (cons "Prompts" menu-bar-prompts-menu))
+      ;; (bindings--define-key global-map [menu-bar prompts]
+      ;;   (cons "Prompts" menu-bar-prompts-menu))
+      (bindings--define-key global-map [menu-bar prompts] nil)
 
-      (bindings--define-key global-map [menu-bar engines]
-        (cons "Engines" menu-bar-engines-menu))
+      ;; (bindings--define-key global-map [menu-bar engines]
+      ;;   (cons "Engines" menu-bar-engines-menu))
+      (bindings--define-key global-map [menu-bar engines] nil)
+
+      (bindings--define-key global-map [menu-bar engineering]
+        (cons "Eng" menu-bar-engineering-menu))
 
       (bindings--define-key global-map [menu-bar history]
         (cons "Hist" menu-bar-history-menu))
@@ -489,11 +524,13 @@
       (bindings--define-key global-map [menu-bar inkwell]
         (cons "Ink" menu-bar-inkwell-menu))
 
-      (bindings--define-key global-map [menu-bar lookingglass]
-        (cons "LG" menu-bar-lookingglass-menu))
+      ;; (bindings--define-key global-map [menu-bar lookingglass]
+      ;;   (cons "LG" menu-bar-lookingglass-menu))
+      (bindings--define-key global-map [menu-bar lookingglass] nil)
 
-      (bindings--define-key global-map [menu-bar pensieve]
-        (cons "Sieve" menu-bar-pensieve-menu))
+      ;; (bindings--define-key global-map [menu-bar pensieve]
+      ;;   (cons "Sieve" menu-bar-pensieve-menu))
+      (bindings--define-key global-map [menu-bar pensieve] nil)
 
       (bindings--define-key global-map [menu-bar protocol]
         (cons "Protocol" menu-bar-protocol-menu))))
