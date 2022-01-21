@@ -267,6 +267,9 @@
     (bindings--define-key menu [mi-pen-edit-conf]
       '(menu-item "Edit configuration" pen-edit-conf
                   :help "Edit the pen.yaml file"))
+    (bindings--define-key menu [mi-pen-customize]
+      '(menu-item "Customize Pen.el" pen-customize
+                  :help "Pen.el customization"))
     (bindings--define-key menu [mi-menu-bar-keys-menu]
       `(menu-item "Add, remove and edit API keys" ,menu-bar-keys-menu
                   :help "e.g. Add your OpenAI key"))
@@ -302,9 +305,6 @@
     (bindings--define-key menu [mi-pen-acolyte-dired-penel]
       '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
                   :help "Go to Pen.el source code"))
-    (bindings--define-key menu [mi-pen-customize]
-      '(menu-item "Customize Pen.el" pen-customize
-                  :help "Pen.el customization"))
     (bindings--define-key menu [mi-list-processes]
       '(menu-item "List background proceses" list-processes
                   :help "List, and stop running background jobs"))
