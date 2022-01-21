@@ -38,6 +38,10 @@
   (interactive (list (pen-read-service-key "booste")))
   (pen-add-key "booste" key))
 
+(defun pen-add-key-alephalpha (key)
+  (interactive (list (pen-read-service-key "alephalpha")))
+  (pen-add-key "alephalpha" key))
+
 (defun pen-add-key-openai (key)
   (interactive (list (pen-read-service-key "openai")))
   (pen-add-key "openai" key))
