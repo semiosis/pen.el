@@ -30,7 +30,7 @@ mplayer_pid="$!"
 
 trap "trap - SIGTERM && kill -- $mplayer_pid" SIGINT SIGTERM EXIT &>/dev/null
 
-timg -V "$bn"
+pen-timg -V "$bn"
 ret="$?"
 if test "$ret" = 1 && test -f "$bn"; then
     echo "exit($ret) No video track" 1>&2
