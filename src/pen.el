@@ -76,6 +76,7 @@
 (require 'pen-daemons)
 (require 'pen-source)
 (require 'pen-human)
+(require 'pen-cterm)
 
 
 ;; Not sure I need the following in pen.el
