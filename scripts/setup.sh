@@ -472,3 +472,5 @@ agi vifm
     cd pensieve
     lein deps
 )
+
+pyf rich
