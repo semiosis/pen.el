@@ -168,7 +168,7 @@
 (define-key dired-mode-map (kbd "f") 'dired-narrow)
 (define-key dired-mode-map (kbd "/") 'dired-narrow-fuzzy)
 (define-key dired-mode-map (kbd "M-~") 'dired-top)
-(define-key global-map (kbd "M-l M-^") 'dired-top)
+(define-key pen-map (kbd "M-l M-^") 'dired-top)
 (define-key dired-mode-map (kbd "z d") 'dired-sort-dirs-first)
 (define-key dired-mode-map (kbd "M-N") 'dired-next-subdir)
 (define-key dired-mode-map (kbd "M-P") 'dired-prev-subdir)

@@ -435,11 +435,10 @@ semantic-path means a path suitable for google/nl searching"
   "This defines a 0 arity function with name based on the contents of the function.
 It should only really be used to create names for one-liners.
 It's really meant for key bindings and which-key, so they should all be interactive."
-  ;; The mnm here was killing emacs loading
   (let* ((slugsym (intern
                    (s-replace-regexp
                     "^-" "dff-"
-                    (slugify ;; (mnm (pp body))
+                    (slugify
                      (pp body) t)))))
     `(defun ,slugsym () (interactive) ,@body)))
 

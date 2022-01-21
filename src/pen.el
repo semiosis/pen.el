@@ -78,7 +78,6 @@
 (require 'pen-human)
 (require 'pen-cterm)
 (require 'pen-web)
-(require 'pen-dired)
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
@@ -1904,6 +1903,7 @@ May use to generate code from comments."
 (require 'pen-minor-modes)
 (require 'pen-modeline)
 (require 'pen-hide-minor-modes)
+(require 'pen-dired)
 
 (defun pen-lsp-explain-error ()
   (interactive)
