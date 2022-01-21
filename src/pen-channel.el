@@ -27,7 +27,8 @@
               (car (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 name-or-names :no-select-result t)))
             ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
             (pen-eipec
-             (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name-or-names :no-select-result nil)))))
+             (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name-or-names :no-select-result nil)
+                 nil nil "Select blurb:"))))
          (slug (slugify command nil 30))
          (bufname (concat "chann-" slug))
          ;; modename should give me
