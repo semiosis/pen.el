@@ -9,13 +9,13 @@
 (define-prefix-command 'pen-term-c-c-esc)
 
 (defmacro pen-use-vterm (&rest body)
-  "This wraps around function calls to force the terminal type"
+  "This wraps around function calls to signal the desired terminal type"
   (eval
    `(let ((pen-termcmd 'vterm))
       ,@body)))
 
 (defmacro pen-use-term (&rest body)
-  "This wraps around function calls to force the terminal type"
+  "This wraps around function calls to signal the desired the terminal type"
   (eval
    `(let ((pen-termcmd 'term))
       ,',@body)))
