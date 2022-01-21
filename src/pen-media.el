@@ -223,7 +223,7 @@
 (defun pen-your-imagination ()
   (interactive)
   (eval
-   ;; What's nice about this is pen-sps may still use a tmux split instead of a vterm
+   ;; What's nice about using dynamic scope is pen-sps may still use a tmux split instead of a vterm
    `(pen-use-vterm
      (pen-sps
       (pen-cmd "pen-timgv" "/root/Thomas Bergersen - Your Imagination (Feat. Audrey Karrasch).mp4")))))
