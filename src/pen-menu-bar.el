@@ -226,8 +226,8 @@
 (defset menu-bar-documents-menu
   (let ((menu (make-sparse-keymap "Documents")))
     (bindings--define-key menu [mi-pen-go-to-documents]
-      '(menu-item "Reload Pen.el config, engines and prompts for all daemons" pen-go-to-documents
-                  :help "Reload Pen.el config, engines and prompts for all daemons"))
+      '(menu-item "Documents (shared with host)" pen-go-to-documents
+                  :help "Open dired at ~/.pen/documents"))
 
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
