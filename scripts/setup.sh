@@ -476,3 +476,5 @@ agi vifm
 pyf rich
 
 agi xterm
+
+agi mplayer

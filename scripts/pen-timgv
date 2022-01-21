@@ -25,7 +25,8 @@ stty cols "$COLUMNS"
 
 set -m
 
-/usr/bin/vlc --ignore-config -I dummy --play-and-exit --novideo "$bn" &>/dev/null &
+# /usr/bin/vlc --ignore-config -I dummy --play-and-exit --novideo "$bn" &>/dev/null &
+unbuffer mplayer -novideo "$bn" &>/dev/null &
 mplayer_pid="$!"
 
 trap "trap - SIGTERM && kill -- $mplayer_pid 2>/dev/null" SIGINT SIGTERM EXIT &>/dev/null
