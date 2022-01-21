@@ -60,7 +60,7 @@ esac; done
 sps() {
     if test "$WAIT" = "y"; then
         shift # shift the -E
-        unbuffer tm sps "$@"
+        unbuffer pen-tm sps "$@"
     else
         command sps "$@"
     fi
