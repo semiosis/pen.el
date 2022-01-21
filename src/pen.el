@@ -1342,7 +1342,7 @@ But use the results-analyser."
         `(let ((engine ,,engine-name)
                (force-engine ,,engine-name))
            ,',@body))
-    `(body ,@progn)))
+    `(progn ,@body)))
 
 (defmacro pen-force-custom (&rest body)
   "This forces various settings depending on customizations"
