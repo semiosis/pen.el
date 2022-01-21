@@ -277,9 +277,9 @@
 
 (defset menu-bar-channel-menu
   (let ((menu (make-sparse-keymap "Chann.el")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [mi-channel-chatbot-from-name]
+      '(menu-item "Channel a chatbot to control your terminal" channel-chatbot-from-name
+                  :help "A chatbot takes command of your host terminal"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
