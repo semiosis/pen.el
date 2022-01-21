@@ -248,7 +248,12 @@ commands to use in that buffer.
   (interactive (list (read-string "program:")))
   (let ((termcmd (pen-var-value-maybe 'pen-termcmd)))
     (if termcmd
-        (apply termcmd (list program closeframe modename buffer-name reuse))
+        ;; (apply termcmd (list program closeframe modename buffer-name reuse))
+        (let ((buf ;; (apply termcmd (list program))
+               (call-interactively termcmd)))
+          (switch-to-buffer buf)
+          (pen-insert program)
+          (ekm "C-m"))
       (pen-eterm program closeframe modename buffer-name reuse))))
 
 (defun pen-eterm (program &optional closeframe modename buffer-name reuse)
