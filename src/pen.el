@@ -1909,6 +1909,7 @@ May use to generate code from comments."
 (require 'pen-mad-teaparty)
 (require 'pen-documents)
 (require 'pen-helm)
+(require 'pen-media)
 
 (defun pen-lsp-explain-error ()
   (interactive)
