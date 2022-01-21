@@ -222,8 +222,9 @@
 
 (defun pen-your-imagination ()
   (interactive)
-  (pen-use-vterm
-   (pen-sps
-    (pen-cmd "pen-timgv" "/root/Thomas Bergersen - Your Imagination (Feat. Audrey Karrasch).mp4"))))
+  (eval
+   `(pen-use-vterm
+     (pen-sps
+      (pen-cmd "pen-timgv" "/root/Thomas Bergersen - Your Imagination (Feat. Audrey Karrasch).mp4")))))
 
 (provide 'pen-media)
