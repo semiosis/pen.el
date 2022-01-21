@@ -701,4 +701,8 @@ buffer which is not included when this function returns"
   (interactive)
   (pen-sps "pen-of-imagination"))
 
+(defun switch-to-previous-buffer ()
+  (interactive)
+  (switch-to-buffer (other-buffer (current-buffer) 1)))
+
 (provide 'pen-library)
