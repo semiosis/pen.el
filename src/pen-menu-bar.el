@@ -226,6 +226,9 @@
     (bindings--define-key menu [mi-pen-reload-config-file]
       '(menu-item "Reload individual config file" pen-reload-config-file
                   :help "This is useful for editing Pen.el source and reloading"))
+    (bindings--define-key menu [mi-pen-start-gui-web-browser]
+      '(menu-item "Start Pen.el in a GUI web browser" pen-start-gui-web-browser
+                  :help "Start Pen.el in a GUI web browser"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
