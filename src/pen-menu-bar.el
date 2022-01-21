@@ -396,7 +396,7 @@
 (defset menu-bar-protocol-menu
   (let ((menu (make-sparse-keymap "࿋  Semiosis Protocol")))
     (bindings--define-key menu [mi-pen-connect-semiosis-protocol]
-      '(menu-item "Connect" pen-connect-semiosis-protocol
+      '(menu-item "Connect to network" pen-connect-semiosis-protocol
                   :help "Connect Pen.el to the Semiosis Protocol"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
