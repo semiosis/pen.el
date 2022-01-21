@@ -22,9 +22,9 @@
   (remove '() (mapcar #'get-car-val minor-mode-alist)))
 
 (defun get-current-mode-hook ()
-  (let ((current-major-mode (intern (concat (current-major-mode-string) "-hook"))))
-    (if (variable-p current-major-mode)
-        current-major-mode
+  (let ((cmm (intern (concat (current-major-mode-string) "-hook"))))
+    (if (variable-p cmm)
+        cmm
       nil)))
 
 (defun pen-buffer-properties ()
