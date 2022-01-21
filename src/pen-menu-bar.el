@@ -273,11 +273,11 @@
 (defset menu-bar-configure-menu
   (let ((menu (make-sparse-keymap "Config")))
     (bindings--define-key menu [mi-pen-edit-conf]
-      '(menu-item "Edit configuration" pen-edit-conf
+      '(menu-item "Edit Pen.el configuration" pen-edit-conf
                   :help "Edit the pen.yaml file"))
-    (bindings--define-key menu [mi-efm-langserver-config.yaml]
-      '(menu-item "Edit ESP configuration" efm-langserver-config.yaml
-                  :help "Edit the pen.yaml file"))
+    (bindings--define-key menu [mi-pen-edit-efm-conf]
+      '(menu-item "Edit ESP configuration" pen-edit-efm-conf
+                  :help "Edit the efm-langserver-config.yaml file"))
     (bindings--define-key menu [mi-pen-customize]
       '(menu-item "Customize Pen.el" pen-customize
                   :help "Pen.el customization"))
