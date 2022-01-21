@@ -264,8 +264,11 @@
 
 (defset menu-bar-cterm-menu
   (let ((menu (make-sparse-keymap "ComplexTerm")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Start cterm (Pen.el wrapping a host terminal)" apostrophe-start-chatbot-from-name
+    (bindings--define-key menu [mi-cterm-start]
+      '(menu-item "Start cterm (Pen.el wrapping a host terminal)" cterm-start
+                  :help "Pen.el wraps your host's terminal to provide augmented intelligence"))
+    (bindings--define-key menu [mi-pet-start]
+      '(menu-item "Start pet (Pen.el wrapping a terminal within the docker container)" pet-start
                   :help "Pen.el wraps your host's terminal to provide augmented intelligence"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
