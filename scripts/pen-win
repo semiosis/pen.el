@@ -368,14 +368,14 @@ EOF
     ;;
 
     ae|archive-editor) {
-        tm n "$opt :: NOT IMPLEMENTED"
+        pen-tm n "$opt :: NOT IMPLEMENTED"
 
         e "$@"
     }
     ;;
 
     mixer) {
-        xt tm pen-ns -np -s -n alsamixer -c / alsamixer
+        xt pen-tm pen-ns -np -s -n alsamixer -c / alsamixer
     }
     ;;
 
@@ -385,17 +385,17 @@ EOF
     ;;
 
     nw) {
-        xt tm pen-ns -args calc / calc
+        xt pen-tm pen-ns -args calc / calc
     }
     ;;
 
     calc|calculator) {
-        xt tm pen-ns calc / calc
+        xt pen-tm pen-ns calc / calc
     }
     ;;
 
     edit-clipboard) {
-        xt tm pen-ns clipboard / vim
+        xt pen-tm pen-ns clipboard / vim
     }
     ;;
 
@@ -465,7 +465,7 @@ EOF
             exit 0
         fi
 
-        xt -b -d tm pen-ns -np -s -n screenshots -c "$dir" ranger
+        xt -b -d pen-tm pen-ns -np -s -n screenshots -c "$dir" ranger
 
         if ! test -s "$tf_image"; then rm "$tf_image"; fi
 
@@ -479,7 +479,7 @@ EOF
     ;;
 
     edit-xmonad-config) {
-        xt tm pen-ns xmonad-config / "vim $HOME/.xmonad/xmonad.hs"
+        xt pen-tm pen-ns xmonad-config / "vim $HOME/.xmonad/xmonad.hs"
     }
     ;;
 
@@ -501,7 +501,7 @@ EOF
         cd $NOTES
         unset CWD
 
-        tm xta "$@" localhost:
+        pen-tm xta "$@" localhost:
     }
     ;;
 
@@ -509,7 +509,7 @@ EOF
         cd $NOTES
         unset CWD
 
-        tm xta -h localhost:
+        pen-tm xta -h localhost:
     }
     ;;
 
@@ -571,7 +571,7 @@ EOF
     ;;
 
     unknown-menu) {
-        tm n "$opt :: NOT SURE WHAT THIS USED TO DO. tmux F15 or S-F3"
+        pen-tm n "$opt :: NOT SURE WHAT THIS USED TO DO. tmux F15 or S-F3"
 
         $HOME/ws/xmonad/sendCommand 1
         xdotool keyup Super_L
