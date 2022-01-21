@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+FAST=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -f) {
+        FAST=y
+        shift
+    }
+    ;;
+
+    -s) {
+        FAST=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+key="$1"
+key="$(p "$key" | sed 's/^\.//')"
+jkey=".$key"
+
+if test "$FAST" = "n"; then
+    test -n "$key" && test "$(myrc "$jkey")" = true
+else
+    value="$(sed -n "/^$key: \([^ ]\+\)$/{s/^\($key: \)\(.*\)$/\2/p;q}" $NOTES/myrc.yaml)"
+    test "$value" = on
+fi
