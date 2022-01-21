@@ -9,6 +9,10 @@
 (if (not (f-dir-p genhistdir))
     (f-mkdir genhistdir))
 
+(defun pen-edit-conf ()
+  (interactive)
+  (find-file (f-join penconfdir "pen.yaml")))
+
 (defun pen-read-service-key (service-name)
   (interactive (list (read-string "service: ")))
   (let* ((key-path (f-join user-home-directory ".pen" (format "%s_api_key" service-name)))
