@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY
+
+export UPDATE
+
+sn="$(basename "$0")"
+
+url="$1"
+test -n "$url" || exit 1
+
+url="$(p "$url" | xurls)"
+url="$(p "$url" | sed 's/?t=*//')"
+
+transcript_dir="$DUMP$NOTES/ws/youtube/transcripts"
+subs_dir="$DUMP$NOTES/ws/youtube/subs"
+
+cd "$subs_dir"
+
+# clean-subs is used in yt-subs.sh
+
+raw="$(
+    oci yt-subs.sh "$url" |
+        grep -i -P "\\.(en|fr)\\." |
+        head -n 1 | awk 1 |
+        while IFS=$'\n' read -r line; do
+            # echo "$line" 1>&2
+            cat "$line"
+        done
+)"
+
+if test -n "$raw"; then
+    printf -- "%s" "$raw" |
+        tr -s '\n' ' ' |
+        sed 's/^\s\+//' |
+        htmldecode | ttp | {
+            if test "$sn" = "readsubs"; then
+                cat
+            else
+                tf txt
+            fi
+        } | pavs
+fi
