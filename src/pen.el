@@ -1906,6 +1906,7 @@ May use to generate code from comments."
 (require 'pen-dired)
 (require 'pen-semiosis-protocol)
 (require 'pen-mad-teaparty)
+(require 'pen-documents)
 
 (defun pen-lsp-explain-error ()
   (interactive)
