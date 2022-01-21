@@ -13,9 +13,9 @@ cd "$dn"
 bn="$(basename "$rp")"
 
 MAXCOLS="$(pen-rc .timgv_max_cols)"
+: "${MAXCOLS:="100"}"
 
 eval `resize`
-
 
 if [ "$COLUMNS" -gt "$MAXCOLS" ]; then
     COLUMNS="$MAXCOLS"
