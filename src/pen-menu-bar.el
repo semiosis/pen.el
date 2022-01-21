@@ -394,7 +394,7 @@
     menu))
 
 (defset menu-bar-melee-menu
-  (let ((menu (make-sparse-keymap "🍓Melee")))
+  (let ((menu (make-sparse-keymap "🍓 Melee")))
     (bindings--define-key menu [from-name]
       '(menu-item "Name" apostrophe-start-chatbot-from-name
                   :help "Start chatbot from name"))
