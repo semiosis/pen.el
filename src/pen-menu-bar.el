@@ -228,9 +228,6 @@
     (bindings--define-key menu [pen-acolyte-dired-penel]
       '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
                   :help "Go to Pen.el source code"))
-    (bindings--define-key menu [mi-pen-diagnostics-show-context]
-      '(menu-item "Last prompt diagnostics of" pen-diagnostics-show-context
-                  :help "Show details of prompt function execution"))
     (bindings--define-key menu [mi-pen-customize]
       '(menu-item "Customize Pen.el" pen-customize
                   :help "Pen.el customization"))
@@ -401,6 +398,9 @@
 
 (defset menu-bar-prompting-menu
   (let ((menu (make-sparse-keymap "Engines")))
+    (bindings--define-key menu [mi-pen-diagnostics-show-context]
+      '(menu-item "Diagnostics" pen-diagnostics-show-context
+                  :help "Show details of prompt function execution"))
     (bindings--define-key menu [mi-menu-bar-history-menu]
       `(menu-item "Prompt history" ,menu-bar-history-menu
                   :help "Work with prompt history"))
