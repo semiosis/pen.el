@@ -309,6 +309,9 @@
     (bindings--define-key menu [mi-pen-go-to-glossaries]
       '(menu-item "Glossaries (shared with host)" pen-go-to-glossaries
                   :help "Open dired at ~/.pen/glossaries"))
+    (bindings--define-key menu [mi-pen-go-to-glossaries]
+      '(menu-item "Your Imagination" pen-your-imagination
+                  :help "Play the best song ever"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
