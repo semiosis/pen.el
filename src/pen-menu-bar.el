@@ -212,6 +212,17 @@
     menu))
 
 
+(defset menu-bar-daemons-menu
+  (let ((menu (make-sparse-keymap "Daemons")))
+    (bindings--define-key menu [pen-reload-all]
+      '(menu-item "Reload Pen.el config, engines and prompts for all daemons" pen-reload-all
+                  :help "Reload Pen.el config, engines and prompts for all daemons"))
+
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-pen-menu
   (let ((menu (make-sparse-keymap "🖊  Pen.el")))
     (bindings--define-key menu [pen-acolyte-dired-penel]
@@ -238,17 +249,9 @@
     (bindings--define-key menu [mi-pen-of-imagination]
       '(menu-item "The pen of imagination - |:ϝ∷¦ϝ" pen-of-imagination
                   :help "The pen of imagination - |:ϝ∷¦ϝ"))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
-    menu))
-
-(defset menu-bar-daemons-menu
-  (let ((menu (make-sparse-keymap "Daemons")))
-    (bindings--define-key menu [pen-reload-all]
-      '(menu-item "Reload Pen.el config, engines and prompts for all daemons" pen-reload-all
-                  :help "Reload Pen.el config, engines and prompts for all daemons"))
-
+    (bindings--define-key menu [mi-menu-bar-daemons-menu]
+      `(menu-item "Daemons" ,menu-bar-daemons-menu
+                  :help "Control Pen.el daemons"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -296,6 +299,19 @@
     (bindings--define-key menu [mi-pen-start-imaginary-interpreter]
       '(menu-item "Start an imaginary interpreter" pen-start-imaginary-interpreter
                   :help "Start an imaginary interpreter, given the name/language"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-nlsh-menu
+  (let ((menu (make-sparse-keymap "Natural language shell")))
+    (bindings--define-key menu [mi-nlsh-os]
+      '(menu-item "Start a shell given the OS" nlsh-os
+                  :help "Convert natural language into commands"))
+    (bindings--define-key menu [mi-sps-nlsh]
+      '(menu-item "Start a shell given the OS in tmux" sps-nlsh
+                  :help "Convert natural language into commands"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -368,6 +384,22 @@
     (bindings--define-key menu [mi-menu-bar-prompts-menu]
       `(menu-item "Prompts" ,menu-bar-prompts-menu
                   :help "Prompts menu"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-prompting-menu
+  (let ((menu (make-sparse-keymap "Engines")))
+    (bindings--define-key menu [mi-menu-bar-history-menu]
+      `(menu-item "Prompt history" ,menu-bar-history-menu
+                  :help "Work with prompt history"))
+    (bindings--define-key menu [mi-menu-bar-engineering-menu]
+      `(menu-item "Engineering" ,menu-bar-engineering-menu
+                  :help "Prompt engineering"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
 (defset menu-bar-history-menu
@@ -425,6 +457,16 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-network-menu
+  (let ((menu (make-sparse-keymap "Network")))
+    (bindings--define-key menu [mi-menu-bar-protocol-menu]
+      `(menu-item "࿋  Semiosis Protocol" ,menu-bar-protocol-menu
+                  :help "Semiosis Protocol functions"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-pensieve-menu
   (let ((menu (make-sparse-keymap "PenSieve")))
     (bindings--define-key menu [mi-pensieve-mount-dir]
@@ -438,11 +480,18 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-melee-menu
+  (let ((menu (make-sparse-keymap "🍓 Melee")))
+    (bindings--define-key menu [mi-melee-start-immitation-game]
+      '(menu-item "Immitation game" melee-start-immitation-game
+                  :help "Start game of immitation"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-apps-menu
   (let ((menu (make-sparse-keymap "Apps")))
-    (bindings--define-key menu [mi-menu-bar-pensieve-menu]
-      `(menu-item "PenSieve" ,menu-bar-pensieve-menu
-                  :help "Mount imaginary filesystems"))
     (bindings--define-key menu [mi-menu-bar-melee-menu]
       `(menu-item "Melee" ,menu-bar-melee-menu
                   :help "Mount imaginary filesystems"))
@@ -452,13 +501,54 @@
     (bindings--define-key menu [mi-menu-bar-paracosm-menu]
       `(menu-item "Paracosm" ,menu-bar-paracosm-menu
                   :help "AI-assisted mind-mapping"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
     menu))
 
-(defset menu-bar-melee-menu
-  (let ((menu (make-sparse-keymap "🍓 Melee")))
-    (bindings--define-key menu [mi-melee-start-immitation-game]
-      '(menu-item "Immitation game" melee-start-immitation-game
-                  :help "Start game of immitation"))
+(defset menu-bar-utils-menu
+  (let ((menu (make-sparse-keymap "Utils")))
+    (bindings--define-key menu [mi-menu-bar-pensieve-menu]
+      `(menu-item "PenSieve" ,menu-bar-pensieve-menu
+                  :help "Mount imaginary filesystems"))
+    (bindings--define-key menu [mi-menu-bar-esp-menu]
+      `(menu-item "ESP" ,menu-bar-esp-menu
+                  :help "Language Server Protocol for any language or context"))
+    (bindings--define-key menu [mi-menu-bar-inkwell-menu]
+      `(menu-item "Inkw.el" ,menu-bar-inkwell-menu
+                  :help "Propertised text encoding provenance"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-terminals-menu
+  (let ((menu (make-sparse-keymap "Terminals")))
+    (bindings--define-key menu [mi-menu-bar-ii-menu]
+      `(menu-item "Imaginary interpreters" ,menu-bar-ii-menu
+                  :help "Run imaginary interpreters"))
+    (bindings--define-key menu [mi-menu-bar-nlsh-menu]
+      `(menu-item "Natural language shell" ,menu-bar-nlsh-menu
+                  :help "Run a natural language shell"))
+    (bindings--define-key menu [mi-menu-bar-channel-menu]
+      `(menu-item "Chann.el" ,menu-bar-channel-menu
+                  :help "Channel personalities to control your computer"))
+    (bindings--define-key menu [mi-menu-bar-cterm-menu]
+      `(menu-item "ComplexTerm" ,menu-bar-cterm-menu
+                  :help "Run your terminals within Pen.el"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-chatbots-menu
+  (let ((menu (make-sparse-keymap "Chatbots")))
+    (bindings--define-key menu [mi-menu-bar-apostrophe-menu]
+      `(menu-item "Apostrophe" ,menu-bar-apostrophe-menu
+                  :help "Talk 1-on-1 to chatbots"))
+    (bindings--define-key menu [mi-menu-bar-mtp-menu]
+      `(menu-item "Mad Tea-Party" ,menu-bar-mtp-menu
+                  :help "Partake in simulated group conversation between chatbots and humans"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -474,38 +564,51 @@
       (bindings--define-key global-map [menu-bar tools] nil)
 
       (bindings--define-key global-map [menu-bar pen]
-        (cons "Pen" menu-bar-pen-menu))
+        (cons "Pen.el" menu-bar-pen-menu))
 
-      (bindings--define-key global-map [menu-bar daemons]
-        (cons "Daemons" menu-bar-daemons-menu))
+      ;; (bindings--define-key global-map [menu-bar daemons]
+      ;;   (cons "Daemons" menu-bar-daemons-menu))
+      (bindings--define-key global-map [menu-bar daemons] nil)
 
-      (bindings--define-key global-map [menu-bar cterm]
-        (cons "ct" menu-bar-cterm-menu))
+      ;; (bindings--define-key global-map [menu-bar cterm]
+      ;;   (cons "ct" menu-bar-cterm-menu))
+      (bindings--define-key global-map [menu-bar cterm] nil)
 
       ;; (bindings--define-key global-map [menu-bar melee]
       ;;   (cons "Melee" menu-bar-melee-menu))
       (bindings--define-key global-map [menu-bar melee] nil)
 
-      (bindings--define-key global-map [menu-bar channel]
-        (cons "Chann" menu-bar-channel-menu))
+      ;; (bindings--define-key global-map [menu-bar channel]
+      ;;   (cons "Chann" menu-bar-channel-menu))
+      (bindings--define-key global-map [menu-bar channel] nil)
 
-      (bindings--define-key global-map [menu-bar ii]
-        (cons "𝑖i" menu-bar-ii-menu))
+      ;; (bindings--define-key global-map [menu-bar ii]
+      ;;   (cons "𝑖i" menu-bar-ii-menu))
+      (bindings--define-key global-map [menu-bar ii] nil)
 
-      (bindings--define-key global-map [menu-bar apostrophe]
-        (cons "Ink" menu-bar-inkwell-menu))
-
-      (bindings--define-key global-map [menu-bar mtp]
-        (cons "MTP" menu-bar-mtp-menu))
+      ;; (bindings--define-key global-map [menu-bar mtp]
+      ;;   (cons "MTP" menu-bar-mtp-menu))
+      (bindings--define-key global-map [menu-bar mtp] nil)
 
       ;; (bindings--define-key global-map [menu-bar paracosm]
       ;;   (cons "Cosm" menu-bar-paracosm-menu))
       (bindings--define-key global-map [menu-bar paracosm] nil)
-      (bindings--define-key global-map [menu-bar apps]
-        (cons "Apps" menu-bar-apps-menu))
+      (bindings--define-key global-map [menu-bar apps] nil)
+      (bindings--define-key global-map [menu-bar applications]
+        (cons "Applications" menu-bar-apps-menu))
 
-      (bindings--define-key global-map [menu-bar esp]
-        (cons "ESP" menu-bar-esp-menu))
+      (bindings--define-key global-map [menu-bar utilities]
+        (cons "Utilities" menu-bar-utils-menu))
+
+      (bindings--define-key global-map [menu-bar terminals]
+        (cons "Terminals" menu-bar-terminals-menu))
+
+      (bindings--define-key global-map [menu-bar chatbots]
+        (cons "Chatbots" menu-bar-chatbots-menu))
+
+      ;; (bindings--define-key global-map [menu-bar esp]
+      ;;   (cons "ESP" menu-bar-esp-menu))
+      (bindings--define-key global-map [menu-bar esp] nil)
 
       ;; (bindings--define-key global-map [menu-bar prompts]
       ;;   (cons "Prompts" menu-bar-prompts-menu))
@@ -515,14 +618,23 @@
       ;;   (cons "Engines" menu-bar-engines-menu))
       (bindings--define-key global-map [menu-bar engines] nil)
 
-      (bindings--define-key global-map [menu-bar engineering]
-        (cons "Eng" menu-bar-engineering-menu))
+      ;; (bindings--define-key global-map [menu-bar engineering]
+      ;;   (cons "Engineering" menu-bar-engineering-menu))
+      (bindings--define-key global-map [menu-bar engineering] nil)
 
-      (bindings--define-key global-map [menu-bar history]
-        (cons "Hist" menu-bar-history-menu))
+      (bindings--define-key global-map [menu-bar prompting]
+        (cons "Prompting" menu-bar-prompting-menu))
 
-      (bindings--define-key global-map [menu-bar inkwell]
-        (cons "Ink" menu-bar-inkwell-menu))
+      (bindings--define-key global-map [menu-bar network]
+        (cons "Network" menu-bar-network-menu))
+
+      ;; (bindings--define-key global-map [menu-bar history]
+      ;;   (cons "Hist" menu-bar-history-menu))
+      (bindings--define-key global-map [menu-bar history] nil)
+
+      ;; (bindings--define-key global-map [menu-bar inkwell]
+      ;;   (cons "Ink" menu-bar-inkwell-menu))
+      (bindings--define-key global-map [menu-bar inkwell] nil)
 
       ;; (bindings--define-key global-map [menu-bar lookingglass]
       ;;   (cons "LG" menu-bar-lookingglass-menu))
@@ -532,8 +644,9 @@
       ;;   (cons "Sieve" menu-bar-pensieve-menu))
       (bindings--define-key global-map [menu-bar pensieve] nil)
 
-      (bindings--define-key global-map [menu-bar protocol]
-        (cons "Protocol" menu-bar-protocol-menu))))
+      ;; (bindings--define-key global-map [menu-bar protocol]
+      ;;   (cons "Protocol" menu-bar-protocol-menu))
+      (bindings--define-key global-map [menu-bar protocol] nil)))
 
 (defset tty-menu-navigation-map
   (let ((map (make-sparse-keymap)))
