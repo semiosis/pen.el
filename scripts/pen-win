@@ -322,7 +322,7 @@ EOF
 
         if test "$ISTTY" = y; then
             if test "$USETTY" = y; then
-                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     eval "unbuffer pen-timg $qpath"
                 else
                     eval "unbuffer pen-timg --frames=1 --clear -E $qpath" | less -rS
@@ -331,13 +331,13 @@ EOF
                 set -m
                 pen-ns "1:$1"
 
-                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     eog "$1" & disown
                 else
                     feh -B black "$1" & disown
                 fi
             else
-                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     eval "unbuffer pen-timg $qpath"
                 else
                     eval "unbuffer pen-timg --frames=1 --clear -E $qpath" | less -rS
@@ -345,19 +345,19 @@ EOF
             fi
         else
             if test "$USETTY" = y; then
-                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
                 else
                     pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
                 fi
             elif ! test "$USETTY" = y && xterm yn "Use feh?"; then
-                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     eog "$1" & disown
                 else
                     feh -B black "$1" & disown
                 fi
             else
-                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
                 else
                     pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
