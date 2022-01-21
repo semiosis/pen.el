@@ -687,6 +687,6 @@
 
 (define-key pen-map (kbd "M-l M-.") 'pen-kill-buffer-immediately)
 
-(define-key global-map (kbd "M-l M-m") 'switch-to-previous-buffer)
+(define-key pen-map (kbd "M-l M-m") 'switch-to-previous-buffer)
 
 (provide 'pen-example-config)
