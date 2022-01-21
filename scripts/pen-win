@@ -318,7 +318,7 @@ EOF
         esac; done
 
         qpath="$(cmd-nice "$1")"
-        mt="$(mime "$1")"
+        mt="$(pen-mime "$1")"
 
         if test "$ISTTY" = y; then
             if test "$USETTY" = y; then
@@ -405,8 +405,8 @@ EOF
 
         dir=$DUMP$NOTES/ws/screenshots
         cd "$dir"
-        tf_image="$(ux tf $(date-ts)_screen png "$dir" || echo /dev/null)"
-        scaled_image="$(ux tf screen_scaled png || echo /dev/null)"
+        tf_image="$(pen-ux tf $(date-ts)_screen png "$dir" || echo /dev/null)"
+        scaled_image="$(pen-ux tf screen_scaled png || echo /dev/null)"
 
         case "$opt" in
             screen) {
@@ -429,7 +429,7 @@ EOF
 
         convert "$tf_image" -scale "300%" "$scaled_image"
         tesseract "$scaled_image" stdout -l eng -psm 3 > "${tf_image}.txt"
-        cat "${tf_image}.txt" | remove-leading-and-trailing-spaces.sh | remove-leading-and-trailing-newlines.sh | s chomp | c ascify | xc -i
+        cat "${tf_image}.txt" | remove-leading-and-trailing-spaces.sh | remove-leading-and-trailing-newlines.sh | chomp | c ascify | xc -i
 
         a beep
 
@@ -445,8 +445,8 @@ EOF
 
         dir=$DUMP$NOTES/ws/screenshots
         cd "$dir"
-        tf_image="$(ux tf $(date-ts)_screen png "$dir" || echo /dev/null)"
-        scaled_image="$(ux tf screen_scaled png || echo /dev/null)"
+        tf_image="$(pen-ux tf $(date-ts)_screen png "$dir" || echo /dev/null)"
+        scaled_image="$(pen-ux tf screen_scaled png || echo /dev/null)"
 
         case "$opt" in
             screen) {
@@ -525,7 +525,7 @@ EOF
         cd $NOTES
         unset CWD
 
-        xterm -E "resize &> /dev/null; sleep 0.1; nvc -E $(aqf "TERM=vt100rev tmux attach -t localhost:")"
+        xterm -E "resize &> /dev/null; sleep 0.1; nvc -E $(cmd "TERM=vt100rev tmux attach -t localhost:")"
     }
     ;;
 
