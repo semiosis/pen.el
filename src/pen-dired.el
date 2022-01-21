@@ -157,7 +157,6 @@
 (define-key image-dired-thumbnail-mode-map "\C-p" 'image-diredx-previous-line)
 (define-key dired-mode-map (kbd "O") 'dired-open-externally-with-rifle)
 (define-key dired-mode-map (kbd "o") 'dired-do-chown)
-(define-key my-mode-map (kbd "M-U") 'dired-here)
 (define-key global-map (kbd "C-M-_") #'my-helm-find-files)
 (define-key dired-mode-map (kbd "TAB") 'dired-subtree-toggle)
 (define-key dired-mode-map (kbd "C-M-i") (dff (tsps "cr")))
