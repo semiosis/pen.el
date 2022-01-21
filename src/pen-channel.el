@@ -20,7 +20,7 @@
       (setq name-or-names "The March Hare, the Hatter and the Dormouse"))
 
   (if (not (sor command))
-      (setq command (cmd "madteaparty" name-or-names)))
+      (setq command (pen-cmd "madteaparty" name-or-names)))
 
   (let* ((blurb
           (if auto
