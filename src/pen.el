@@ -75,6 +75,7 @@
 (require 'pen-menu-bar)
 (require 'pen-daemons)
 (require 'pen-source)
+(require 'pen-human)
 
 
 ;; Not sure I need the following in pen.el
