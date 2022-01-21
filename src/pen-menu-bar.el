@@ -333,6 +333,9 @@
     (bindings--define-key menu [mi-pen-acolyte-dired-prompts]
       '(menu-item "Go to prompts" pen-acolyte-dired-prompts
                   :help "Go to prompts source directory"))
+    (bindings--define-key menu [mi-pen-generate-prompt-functions]
+      '(menu-item "Generate prompt functions" pen-generate-prompt-functions
+                  :help "Regenerate prompt functions"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
