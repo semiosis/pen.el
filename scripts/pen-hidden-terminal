@@ -3,4 +3,8 @@ export TTY
 
 # Hidden terminal
 
-pen sh pen-tm ns -a -np -n human bash
+: "${DISPLAY:=":0"}"
+export DISPLAY
+
+# pen sh pen-tm ns -a -np -n human bash
+pen sh pen-xt pen-tm ns -a -np -n human bash

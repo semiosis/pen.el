@@ -2,6 +2,9 @@
 
 # sct "$(pen-rc .screen_temperature)"
 
+: "${DISPLAY:=":0"}"
+export DISPLAY
+
 # Example:
 # pen-xt pen-tm pen-ns overview $NOTES/scratch "e $NOTES/scratch/overview.org"
 
