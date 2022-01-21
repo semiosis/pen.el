@@ -230,8 +230,8 @@
       '(menu-item "Start Pen.el in a GUI web browser" pen-start-gui-web-browser
                   :help "Start Pen.el in a GUI web browser"))
     (bindings--define-key menu [mi-pen-of-imagination]
-      '(menu-item "The pen of imagination" pen-of-imagination
-                  :help "Start Pen.el in a GUI web browser"))
+      '(menu-item "The pen of imagination - |:ϝ∷¦ϝ" pen-of-imagination
+                  :help "The pen of imagination - |:ϝ∷¦ϝ"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
