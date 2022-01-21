@@ -26,9 +26,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -b) {
-        # "10" # a readable size but it's not great for reading pds
-        # "11" # this is for reading pdfs, it seeds to be big
-
         {
             if myrc-test my_monitor; then
                 FONT_SIZE="$(pen-rc .xterm_font_size_my_monitor)"
