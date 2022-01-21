@@ -11,8 +11,8 @@
   (interactive (list (read-string-hist "Directory name")))
 
   (let ((dn (f-join "/root/pensieves" dirname)))
-    (pen-snc (pen-cmd "mkdir" "-p" dirname))
-    (pen-sps (pen-cmd "pensieve" dirname))
+    (pen-snc (pen-cmd "mkdir" "-p" dn))
+    (pen-sps (pen-cmd "pensieve" dn))
     (dired dirname)))
 
 (provide 'pen-pensieve)
