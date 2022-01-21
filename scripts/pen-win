@@ -259,15 +259,15 @@ EOF
                 pen-ns "1:$1"
                 eog "$1" & disown
             else
-                eval "timg $path"
+                eval "pen-timg $path"
             fi
         else
             if test "$USETTY" = y; then
-                pen-sps -E "timg $path"
+                pen-sps -E "pen-timg $path"
             elif ! test "$USETTY" = y && xterm yn "Use eog?"; then
                 eog "$1"
             else
-                pen-sps -E "timg $path"
+                pen-sps -E "pen-timg $path"
             fi
         fi
     }
