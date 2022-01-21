@@ -154,7 +154,7 @@ case "$opt" in
 
         # his -c 1 '.*'
 
-        CMD="$(cmd-posix-nice "$@")"
+        CMD="$(cmd-nice-posix "$@")"
 
         gawk -v cmd="$CMD" "/$pattern/ { print \$0 |& cmd; cmd |& getline; } { print; system(\"\") }"
     }

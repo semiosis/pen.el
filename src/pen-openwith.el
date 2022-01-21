@@ -3,6 +3,7 @@
 (setq openwith-associations '(
                               ("\\.mp4\\'" "pen-sps pen-win vp" (file))
                               ("\\.webm\\'" "pen-sps pen-win vp" (file))
+                              ("\\.mkv\\'" "pen-sps pen-win vp" (file))
                               ("\\.npy\\'" "pen-sps o" (file))
                               ("\\.png\\'" "pen-sps pen-win ie" (file))
                               ("\\.gif\\'" "pen-sps open-gif" (file))
