@@ -646,7 +646,10 @@ if test "$start_shell" = "y"; then
     : ${CMD:="$(cmd "$@")"}
     : "${CMD:="/bin/bash || /bin/zsh || sh"}"
 
-    if test "$no_start_emacs" = y && ! docker-running-p; then
+    if inside-docker-p; then
+        "$@"
+
+    elif test "$no_start_emacs" = y && ! docker-running-p; then
         echo "Running basic shell without Pen server" | pen-hls blue
 
         test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
