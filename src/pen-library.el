@@ -699,7 +699,8 @@ buffer which is not included when this function returns"
 
 (defun pen-of-imagination ()
   (interactive)
-  (pen-sps "pen-of-imagination"))
+  (pen-use-vterm
+   (pen-sps "pen-of-imagination")))
 
 (defun switch-to-previous-buffer ()
   (interactive)
