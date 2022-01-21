@@ -27,7 +27,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -b) {
         {
-            if myrc-test my_monitor; then
+            if pen-rc-test my_monitor; then
                 FONT_SIZE="$(pen-rc .xterm_font_size_my_monitor)"
 
                 ## FONT_SIZE=9
@@ -86,7 +86,7 @@ fi
 
 # isretina
 # This is kinda slow
-if ismacbook && ! myrc-test my_monitor; then
+if ismacbook && ! pen-rc-test my_monitor; then
     FONT_SIZE="$(echo "(${FONT_SIZE} * $(pen-rc .macbook_dpi_scale_factor))/1" | bc)"
 fi
 
