@@ -230,9 +230,9 @@
 
 (defset menu-bar-daemons-menu
   (let ((menu (make-sparse-keymap "Daemons")))
-    (bindings--define-key menu [about-gnu-project]
-      '(menu-item "About GNU" describe-gnu-project
-                  :help "About the GNU System, GNU Project, and GNU/Linux"))
+    (bindings--define-key menu [pen-reload-all]
+      '(menu-item "Reload Pen.el config, engines and prompts for all daemons" pen-reload-all
+                  :help "Reload Pen.el config, engines and prompts for all daemons"))
 
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
