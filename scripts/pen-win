@@ -202,7 +202,7 @@ EOF
             *) break;
         esac; done
 
-        qpath="$(pen-posix-nice "$1")"
+        qpath="$(cmd-posix-nice "$1")"
 
         if test "$ISTTY" = y; then
             if ! test -n "$USETTY"; then
@@ -249,7 +249,7 @@ EOF
             *) break;
         esac; done
 
-        path="$(pen-posix-nice "$1")"
+        path="$(cmd-posix-nice "$1")"
 
         if test "$ISTTY" = y; then
             if test "$USETTY" = y; then
@@ -284,7 +284,7 @@ EOF
             *) break;
         esac; done
 
-        path="$(pen-posix-nice "$1")"
+        path="$(cmd-posix-nice "$1")"
 
         if test "$ISTTY" = y; then
             if test "$USETTY" = y; then
@@ -317,7 +317,7 @@ EOF
             *) break;
         esac; done
 
-        qpath="$(pen-posix-nice "$1")"
+        qpath="$(cmd-posix-nice "$1")"
         mt="$(pen-mime "$1")"
 
         if test "$ISTTY" = y; then
