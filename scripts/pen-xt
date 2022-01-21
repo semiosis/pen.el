@@ -1,0 +1,159 @@
+#!/bin/bash
+
+sct "$(pen-rc .screen_temperature)"
+
+# Example:
+# pen-xt pen-tm pen-ns overview $NOTES/scratch "e $NOTES/scratch/overview.org"
+
+xrdb -merge ~/.Xresources; xrdb -load ~/.Xresources
+
+DETACH=n
+FONT_SIZE=8
+FONT_SIZE=6
+# FONT_SIZE=12
+# FONT_SIZE=10
+FONT_SIZE=13
+
+use_term="$(pen-rc .use_term)"
+: "${use_term:="alacritty"}"
+: "${use_term:="gnome"}"
+: "${use_term:="xterm"}"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -d) {
+        DETACH=y
+        shift
+    }
+    ;;
+
+    -b) {
+        # "10" # a readable size but it's not great for reading pds
+        # "11" # this is for reading pdfs, it seeds to be big
+
+        {
+            if myrc-test my_monitor; then
+                FONT_SIZE="$(pen-rc .xterm_font_size_my_monitor)"
+
+                ## FONT_SIZE=9
+            else
+                FONT_SIZE="$(pen-rc .xterm_font_size)"
+
+                ## FONT_SIZE=20
+                ## FONT_SIZE=18
+                ## FONT_SIZE=16
+                ## FONT_SIZE=13
+                ## 10 is the perfect size for # xrandr --size 1440x900
+                #FONT_SIZE=10
+                ## This is ok too for when watching movies
+                ## FONT_SIZE=9
+                ## FONT_SIZE=8
+                ## FONT_SIZE=6
+            fi
+
+            # macbook
+            # FONT_SIZE=12
+            # FONT_SIZE=16
+
+            # my monitor
+            # FONT_SIZE=10
+
+            # Big monitor
+            # FONT_SIZE=8
+            # use_term=gnome
+
+            # my monitor small
+            # FONT_SIZE=9
+        }
+
+        # FONT_SIZE=24
+        # I don't know how to change the urxvt font size dynamically
+        # (without Xresources)
+        shift
+    }
+    ;;
+
+    -xt) {
+        use_term=xterm
+        shift
+    }
+    ;;
+
+    -h) {
+        FONT_SIZE=13
+        shift
+    }
+    ;;
+
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    if test "$(hostname)" = "megn"; then
+        CMD="$(pen-cmd "$@")"
+    else
+        if test "$#" -gt 0; then
+            CMD="$(nsfa "$@")"
+        fi
+    fi
+fi
+
+if [ -z "$CMD" ]; then
+    CMD=bash
+fi
+
+export SHELL=/bin/bash 
+
+CMD="export WINDOWID; cd "$(pwd)"; $CMD"
+
+if test "$use_term" = "gnome"; then
+    CMD="bash -c $(pen-cmd "$CMD")"
+fi
+
+# isretina
+# This is kinda slow
+if ismacbook && ! myrc-test my_monitor; then
+    FONT_SIZE="$(echo "(${FONT_SIZE} * $(pen-rc .macbook_dpi_scale_factor))/1" | bc)"
+fi
+
+run_term() {
+    case "$use_term" in
+        gnome) {
+            gnome-terminal --hide-menubar -e "$CMD"
+        }
+        ;;
+
+        urxvt) {
+            urxvt -e ". $HOME/.xterm-sh-rc; $CMD" & disown
+            # urxvt -e "$(new-script-from-args -E ". $HOME/.xterm-sh-rc; $CMD")"
+        }
+        ;;
+
+        alacritty) {
+            sed -i "s/^  size: .*/  size: $FONT_SIZE/" ~/.config/alacritty/alacritty.yml
+
+            # alacritty -e "sh -c $(aqf-nice ". $HOME/.xterm-sh-rc; $CMD")"
+            alacritty -e "$(new-script-from-args -E ". $HOME/.xterm-sh-rc; $CMD")"
+        }
+        ;;
+
+        *|xterm) {
+            /home/shane/local/bin/xterm -ls -fs "$FONT_SIZE" -e ". $HOME/.xterm-sh-rc; $CMD"
+        }
+        ;;
+
+    esac
+}
+
+if test "$DETACH" = "y"; then
+    set -m
+    run_term & disown
+else
+    run_term
+fi
