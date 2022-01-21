@@ -214,8 +214,19 @@
 
 (defset menu-bar-daemons-menu
   (let ((menu (make-sparse-keymap "Daemons")))
-    (bindings--define-key menu [pen-reload-all]
+    (bindings--define-key menu [mi-pen-reload-all]
       '(menu-item "Reload Pen.el config, engines and prompts for all daemons" pen-reload-all
+                  :help "Reload Pen.el config, engines and prompts for all daemons"))
+
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-documents-menu
+  (let ((menu (make-sparse-keymap "Documents")))
+    (bindings--define-key menu [mi-pen-go-to-documents]
+      '(menu-item "Reload Pen.el config, engines and prompts for all daemons" pen-go-to-documents
                   :help "Reload Pen.el config, engines and prompts for all daemons"))
 
     (bindings--define-key menu [cancel-menu]
@@ -225,7 +236,7 @@
 
 (defset menu-bar-pen-menu
   (let ((menu (make-sparse-keymap "🖊  Pen.el")))
-    (bindings--define-key menu [pen-acolyte-dired-penel]
+    (bindings--define-key menu [mi-pen-acolyte-dired-penel]
       '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
                   :help "Go to Pen.el source code"))
     (bindings--define-key menu [mi-pen-customize]
