@@ -234,9 +234,6 @@
     (bindings--define-key menu [mi-pen-reload]
       '(menu-item "Reload Pen.el config, engines and prompts" pen-reload
                   :help "Reload Pen.el config, engines and prompts"))
-    (bindings--define-key menu [mi-pen-start-hidden-terminal]
-      '(menu-item "Start hidden human terminal" pen-start-hidden-terminal
-                  :help "When a human is prompted, it will appear in the hidden terminal"))
     (bindings--define-key menu [mi-pen-reload-config-file]
       '(menu-item "Reload individual config file" pen-reload-config-file
                   :help "This is useful for editing Pen.el source and reloading"))
@@ -508,6 +505,9 @@
 
 (defset menu-bar-utils-menu
   (let ((menu (make-sparse-keymap "Utils")))
+    (bindings--define-key menu [mi-pen-start-hidden-terminal]
+      '(menu-item "Start hidden human terminal" pen-start-hidden-terminal
+                  :help "When a human is prompted, it will appear in the hidden terminal"))
     (bindings--define-key menu [mi-menu-bar-pensieve-menu]
       `(menu-item "PenSieve" ,menu-bar-pensieve-menu
                   :help "Mount imaginary filesystems"))
