@@ -8,6 +8,18 @@
 (define-prefix-command 'pen-term-c-x)
 (define-prefix-command 'pen-term-c-c-esc)
 
+(defmacro pen-use-vterm (&rest body)
+  "This wraps around function calls to force the terminal type"
+  (eval
+   `(let ((pen-termcmd 'vterm))
+      ,',@body)))
+
+(defmacro pen-use-term (&rest body)
+  "This wraps around function calls to force the terminal type"
+  (eval
+   `(let ((pen-termcmd 'term))
+      ,',@body)))
+
 (defun term-raw-or-kill ()
   (interactive)
   (if (not (term-check-proc (current-buffer)))
@@ -233,6 +245,13 @@ commands to use in that buffer.
   (current-buffer))
 
 (defun pen-term (program &optional closeframe modename buffer-name reuse)
+  (interactive (list (read-string "program:")))
+  (let ((termcmd (pen-var-value-maybe 'pen-termcmd)))
+    (if termcmd
+        (apply termcmd (list program closeframe modename buffer-name reuse))
+      (pen-eterm program closeframe modename buffer-name reuse))))
+
+(defun pen-eterm (program &optional closeframe modename buffer-name reuse)
   (interactive (list (read-string "program:")))
   (if (and buffer-name reuse (get-buffer buffer-name))
       (switch-to-buffer buffer-name)
