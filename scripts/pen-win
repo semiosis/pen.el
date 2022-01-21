@@ -167,7 +167,7 @@ EOF
     ;;
 
     get-wid-under-cursor) {
-        xdotool getmouselocation --shell | grep WINDOW | s field -d '=' 2
+        xdotool getmouselocation --shell | grep WINDOW | pen-str field -d '=' 2
     }
     ;;
 
