@@ -213,7 +213,7 @@
 
 
 (defset menu-bar-pen-menu
-  (let ((menu (make-sparse-keymap "🖊 Pen.el")))
+  (let ((menu (make-sparse-keymap "🖊  Pen.el")))
     (bindings--define-key menu [pen-acolyte-dired-penel]
       '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
                   :help "Go to Pen.el source code"))
