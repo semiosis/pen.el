@@ -414,6 +414,9 @@
     (bindings--define-key menu [mi-pensieve-mount-dir]
       '(menu-item "Mount a new pensieve" pensieve-mount-dir
                   :help "Given the name of the pensieve, mount it on the host and navigate to it"))
+    (bindings--define-key menu [mi-pen-go-to-pensieves]
+      '(menu-item "Go to pensieves" pen-go-to-pensieves
+                  :help "Go to pensieves directory with dired"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
