@@ -354,9 +354,12 @@
 
 (defset menu-bar-inkwell-menu
   (let ((menu (make-sparse-keymap "Inkw.el 𑑛")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [mi-pen-go-to-prompt-for-ink]
+      '(menu-item "Go to prompt for ink" pen-go-to-prompt-for-ink
+                  :help "When the cursor is on some ink, go to the prompt that generated it"))
+    (bindings--define-key menu [mi-pen-go-to-engine-for-ink]
+      '(menu-item "Go to engine for ink" pen-go-to-engine-for-ink
+                  :help "When the cursor is on some ink, go to the engine that generated it"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
