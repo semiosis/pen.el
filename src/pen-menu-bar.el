@@ -220,7 +220,12 @@
     (bindings--define-key menu [mi-pen-watch-daemons]
       '(menu-item "Watch daemons" pen-watch-daemons
                   :help "Watch daemons as their availability changes"))
-
+    (bindings--define-key menu [mi-pen-qa]
+      '(menu-item "Quit all daemons" pen-qa
+                  :help "Quit all daemon instances"))
+    (bindings--define-key menu [mi-pen-sa]
+      '(menu-item "Start all daemons" pen-sa
+                  :help "Start all daemon instances"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))

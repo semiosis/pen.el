@@ -12,4 +12,14 @@
    (pen-cmd "pen-e" "rla")))
 (defalias 'pen-reload-all 'pen-rla)
 
+(defun pen-qa ()
+  (interactive)
+  (pen-sps
+   (pen-cmd "pen-e" "qa")))
+
+(defun pen-sa ()
+  (interactive)
+  (pen-sps
+   (pen-cmd "pen-e" "sa")))
+
 (provide 'pen-daemons)
