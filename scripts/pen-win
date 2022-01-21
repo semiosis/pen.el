@@ -77,7 +77,7 @@ fi
 opt="$1"
 shift
 
-CMD="$(pen-cmd "$@")"
+CMD="$(cmd "$@")"
 
 case "$opt" in
     xt|xterm) {
