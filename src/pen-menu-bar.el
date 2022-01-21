@@ -376,6 +376,9 @@
     (bindings--define-key menu [mi-pen-start-imaginary-interpreter]
       '(menu-item "Start an imaginary interpreter" pen-start-imaginary-interpreter
                   :help "Start an imaginary interpreter, given the name/language"))
+    (bindings--define-key menu [mi-pen-start-imaginary-interpreter]
+      '(menu-item "Start an imaginary interpreter" ii-language
+                  :help "Start an imaginary interpreter, given the name/language"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -599,6 +602,9 @@
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
       `(menu-item "ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
+    (bindings--define-key menu [mi-pen-tm-asciinema-play]
+      '(menu-item "Asciinema Play" pen-tm-asciinema-play
+                  :help "Play an asciinema recording"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
