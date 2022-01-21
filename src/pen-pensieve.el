@@ -7,4 +7,9 @@
 
 ;; https://www.youtube.com/watch?v=dumUElmlVJA
 
+(defun pensieve-mount-dir (dirname)
+  (interactive (list (read-string-hist "Directory name")))
+
+  (pen-sps (pen-cmd "pensieve" dirname)))
+
 (provide 'pen-pensieve)
