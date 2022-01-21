@@ -278,9 +278,9 @@
 
 (defset menu-bar-ii-menu
   (let ((menu (make-sparse-keymap "Imaginary Interpreter")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [mi-pen-start-imaginary-interpreter]
+      '(menu-item "Start an imaginary interpreter" pen-start-imaginary-interpreter
+                  :help "Start an imaginary interpreter, given the name/language"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
