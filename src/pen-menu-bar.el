@@ -270,6 +270,12 @@
     (bindings--define-key menu [mi-pen-customize]
       '(menu-item "Customize Pen.el" pen-customize
                   :help "Pen.el customization"))
+    (bindings--define-key menu [mi-pen-reload]
+      '(menu-item "Reload Pen.el config, engines and prompts" pen-reload
+                  :help "Reload Pen.el config, engines and prompts"))
+    (bindings--define-key menu [mi-pen-reload-config-file]
+      '(menu-item "Reload individual config file" pen-reload-config-file
+                  :help "This is useful for editing Pen.el source and reloading"))
     (bindings--define-key menu [mi-menu-bar-keys-menu]
       `(menu-item "Add, remove and edit API keys" ,menu-bar-keys-menu
                   :help "e.g. Add your OpenAI key"))
@@ -308,12 +314,6 @@
     (bindings--define-key menu [mi-list-processes]
       '(menu-item "List background proceses" list-processes
                   :help "List, and stop running background jobs"))
-    (bindings--define-key menu [mi-pen-reload]
-      '(menu-item "Reload Pen.el config, engines and prompts" pen-reload
-                  :help "Reload Pen.el config, engines and prompts"))
-    (bindings--define-key menu [mi-pen-reload-config-file]
-      '(menu-item "Reload individual config file" pen-reload-config-file
-                  :help "This is useful for editing Pen.el source and reloading"))
     (bindings--define-key menu [mi-pen-start-gui-web-browser]
       '(menu-item "Start Pen.el in a GUI web browser" pen-start-gui-web-browser
                   :help "Start Pen.el in a GUI web browser"))
