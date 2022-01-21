@@ -69,7 +69,7 @@
 
 (defun evs (&optional path)
   (interactive)
-  (term-nsfa (concat "vs " (pen-q path))))
+  (term-nsfa (concat "pen-vs " (pen-q path))))
 
 (defun dired-all-info (path &optional switches)
   (if (not switches)
@@ -99,7 +99,7 @@
   (interactive "P")
   (let ((file (dired-get-file-for-visit)))
     (if (or arg (string-equal (current-major-mode) "ranger-mode"))
-        (pen-sps (concat "vs " (pen-q file)))
+        (pen-sps (concat "pen-vs " (pen-q file)))
       (evs file))))
 
 (defalias 'dired-filter 'dired-narrow)
