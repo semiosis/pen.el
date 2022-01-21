@@ -653,6 +653,9 @@
       (bindings--define-key global-map [menu-bar network]
         (cons "Network" menu-bar-network-menu))
 
+      (bindings--define-key global-map [menu-bar documents]
+        (cons "Documents" menu-bar-documents-menu))
+
       ;; (bindings--define-key global-map [menu-bar history]
       ;;   (cons "Hist" menu-bar-history-menu))
       (bindings--define-key global-map [menu-bar history] nil)
