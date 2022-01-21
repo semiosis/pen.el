@@ -318,7 +318,7 @@
       '(menu-item "Start LSP" lsp
                   :help "Start LSP in current buffer"))
     (bindings--define-key menu [mi-esp]
-      '(menu-item "Start ESP" lsp
+      '(menu-item "Start ESP (Extra Sensory Perception)" lsp
                   :help "Start ESP in current buffer"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
