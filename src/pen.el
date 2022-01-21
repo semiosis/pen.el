@@ -1,4 +1,7 @@
 ;;; pen.el --- Prompt Engineering functions
+;;;
+;;; Prompt Engineering in Emacs
+;;; The Pen of Imagination
 
 (setq large-file-warning-threshold nil)
 
