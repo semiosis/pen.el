@@ -694,4 +694,8 @@ buffer which is not included when this function returns"
   (let ((bl (pen-detect-language t t nil t)))
     (pf-asktutor bl bl query)))
 
+(defun pen-of-imagination ()
+  (interactive)
+  (pen-sps "pen-of-imagination"))
+
 (provide 'pen-library)
