@@ -61,7 +61,7 @@
 
 (defun ev (&optional path)
   (interactive)
-  (term-nsfa (concat "v " (pen-q path))))
+  (term-nsfa (concat "pen-v " (pen-q path))))
 
 (defun evim (&optional path)
   (interactive)
@@ -92,7 +92,7 @@
   (interactive "P")
   (let ((file (dired-get-file-for-visit)))
     (if (or arg (string-equal (current-major-mode) "ranger-mode"))
-        (pen-sps (concat "v " (pen-q file)))
+        (pen-sps (concat "pen-v " (pen-q file)))
       (ev file))))
 
 (defun dired-view-file-vs (&optional arg)
