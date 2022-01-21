@@ -217,6 +217,9 @@
     (bindings--define-key menu [mi-pen-reload-all]
       '(menu-item "Reload Pen.el config, engines and prompts for all daemons" pen-reload-all
                   :help "Reload Pen.el config, engines and prompts for all daemons"))
+    (bindings--define-key menu [mi-pen-watch-daemons]
+      '(menu-item "Watch daemons" pen-watch-daemons
+                  :help "Watch daemons as their availability changes"))
 
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
