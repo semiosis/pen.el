@@ -252,7 +252,7 @@ commands to use in that buffer.
         (let ((buf ;; (apply termcmd (list program))
                (call-interactively termcmd)))
           (switch-to-buffer buf)
-          (pen-insert program)
+          (pen-insert (concat program "; exit"))
           (ekm "C-m"))
       (pen-eterm program closeframe modename buffer-name reuse))))
 
