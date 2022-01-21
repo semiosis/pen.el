@@ -541,7 +541,7 @@ EOF
         cd $NOTES
         unset CWD
 
-        bash -c "set -x; set -m; xterm -E $(aq "resize &> /dev/null; sleep 0.1; TERM=xterm-256color tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
+        bash -c "set -x; set -m; xterm -E $(cmd-nice-posix "resize &> /dev/null; sleep 0.1; TERM=xterm-256color tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
     }
     ;;
 
@@ -549,7 +549,7 @@ EOF
         cd $NOTES
         unset CWD
 
-        bash -c "set -x; set -m; xterm -E $(aq "resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
+        bash -c "set -x; set -m; xterm -E $(cmd-nice-posix "resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
 
         xprop -f WM_CLASS 8s -set WM_CLASS 'compton-invert'
         sleep 1
