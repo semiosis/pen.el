@@ -505,7 +505,7 @@
                     (previous-line . tty-menu-prev-item)
                     (newline . tty-menu-select)
                     (newline-and-indent . tty-menu-select)
-		    (menu-bar-open . tty-menu-exit)))
+		                (menu-bar-open . tty-menu-exit)))
       (substitute-key-definition (car bind) (cdr bind)
                                  map (current-global-map)))
 
@@ -537,7 +537,10 @@
     (menu-bar-define-mouse-key map 'S-drag-mouse-3 'tty-menu-prev-item)
     ;; The down-mouse events must be bound to tty-menu-ignore, so that
     ;; only releasing the mouse button pops up the menu.
-    (menu-bar-define-mouse-key map 'down-mouse-1 'tty-menu-select)
+    (menu-bar-define-mouse-key map 'down-mouse-1 'tty-menu-ignore)
+    ;; Don't change this until I can figure it out properly
+    ;; For the moment, if in the terminal, drag across a menu item to select it
+    ;; (menu-bar-define-mouse-key map 'down-mouse-1 'tty-menu-select)
     (menu-bar-define-mouse-key map 'down-mouse-2 'tty-menu-ignore)
     (menu-bar-define-mouse-key map 'down-mouse-3 'tty-menu-ignore)
     (menu-bar-define-mouse-key map 'C-down-mouse-1 'tty-menu-ignore)
