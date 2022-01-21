@@ -217,7 +217,7 @@
     (bindings--define-key menu [pen-acolyte-dired-penel]
       '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
                   :help "Go to Pen.el source code"))
-    (bindings--define-key menu [pen-reload]
+    (bindings--define-key menu [mi-pen-reload]
       '(menu-item "Reload Pen.el config, engines and prompts" pen-reload
                   :help "Reload Pen.el config, engines and prompts"))
     (bindings--define-key menu [mi-pen-start-hidden-terminal]
