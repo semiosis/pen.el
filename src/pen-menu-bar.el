@@ -217,6 +217,9 @@
     (bindings--define-key menu [pen-acolyte-dired-penel]
       '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
                   :help "Go to Pen.el source code"))
+    (bindings--define-key menu [mi-pen-start-hidden-terminal]
+      '(menu-item "Start hidden human terminal" pen-start-hidden-terminal
+                  :help "When a human is prompted, it will appear in the hidden terminal"))
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
                   :help "About the GNU System, GNU Project, and GNU/Linux"))
