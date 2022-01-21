@@ -7,6 +7,10 @@
 
 ;; https://www.youtube.com/watch?v=dumUElmlVJA
 
+(defun pen-go-to-pensieves ()
+  (interactive)
+  (dired "/root/pensieves"))
+
 (defun pensieve-mount-dir (dirname)
   (interactive (list (read-string-hist "Directory name")))
 
