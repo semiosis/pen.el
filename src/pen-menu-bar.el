@@ -228,6 +228,15 @@
     (bindings--define-key menu [mi-pen-go-to-documents]
       '(menu-item "Documents (shared with host)" pen-go-to-documents
                   :help "Open dired at ~/.pen/documents"))
+    (bindings--define-key menu [mi-pen-go-to-results]
+      '(menu-item "Results (shared with host)" pen-go-to-results
+                  :help "Open dired at ~/.pen/results"))
+    (bindings--define-key menu [mi-pen-go-to-brains]
+      '(menu-item "Brains (shared with host)" pen-go-to-brains
+                  :help "Open dired at ~/.pen/org-brain"))
+    (bindings--define-key menu [mi-pen-go-to-glossaries]
+      '(menu-item "Glossaries (shared with host)" pen-go-to-glossaries
+                  :help "Open dired at ~/.pen/glossaries"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
