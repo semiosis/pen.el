@@ -239,9 +239,12 @@
 
 (defset menu-bar-apostrophe-menu
   (let ((menu (make-sparse-keymap "Apostrophe")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [apostrophe-start-chatbot-from-name]
+      '(menu-item "Start chatbot from their name" apostrophe-start-chatbot-from-name
+                  :help "Speak to someone, given their name"))
+    (bindings--define-key menu [mi-apostrophe-start-chatbot-from-selection]
+      '(menu-item "Start chatbot from selection" apostrophe-start-chatbot-from-selection
+                  :help "Suggest some subject-matter-experts for the selected text, and speak to them"))
 
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
