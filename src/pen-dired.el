@@ -61,15 +61,15 @@
 
 (defun ev (&optional path)
   (interactive)
-  (term-nsfa (concat "pen-v " (pen-q path))))
+  (pen-term-nsfa (concat "pen-v " (pen-q path))))
 
 (defun evim (&optional path)
   (interactive)
-  (term-nsfa (concat "vim " (pen-q path))))
+  (pen-term-nsfa (concat "vim " (pen-q path))))
 
 (defun evs (&optional path)
   (interactive)
-  (term-nsfa (concat "pen-vs " (pen-q path))))
+  (pen-term-nsfa (concat "pen-vs " (pen-q path))))
 
 (defun dired-all-info (path &optional switches)
   (if (not switches)
