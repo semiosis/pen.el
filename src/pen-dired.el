@@ -83,7 +83,7 @@
   (let ((file (dired-get-file-for-visit)))
     (if (f-directory-p file)
         (dired-all-info file)
-      (let ((output (pen-sn (concat "scope.sh " (pen-q file)))))
+      (let ((output (pen-sn (concat "pen-scope.sh " (pen-q file)))))
         (if (not (string-empty-p output))
             (new-buffer-from-string output)
           (error "No preview data"))))))
