@@ -182,7 +182,7 @@
 
 (defun pen-readsubs-fr (url)
   (interactive (read-string-hist "youtube query: "))
-  (pen-cl-sn (concat "unbuffer pen-ci readsubs.bak -l fr " (pen-q url) " | cat") :chomp t))
+  (pen-cl-sn (concat "unbuffer pen-ci pen-readsubs -l fr " (pen-q url) " | cat") :chomp t))
 
 (defun mus-epic ()
   (interactive)
