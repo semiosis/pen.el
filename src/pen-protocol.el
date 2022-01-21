@@ -4,4 +4,4 @@
   (interactive)
   (message "In development"))
 
-(provide 'pen-protocol)
+(provide 'pen-semiosis-protocol)
