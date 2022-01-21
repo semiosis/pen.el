@@ -77,6 +77,7 @@
 (require 'pen-source)
 (require 'pen-human)
 (require 'pen-cterm)
+(require 'pen-web)
 
 
 ;; Not sure I need the following in pen.el
