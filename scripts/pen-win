@@ -218,7 +218,7 @@ EOF
                 pen-ns "1:$1"
                 mplayer "$1" & disown
             else
-                eval "timgv $qpath"
+                eval "pen-timgv $qpath"
             fi
         else
             if ! test -n "$USETTY"; then
@@ -232,7 +232,7 @@ EOF
             if test "$USETTY" = n; then
                 mplayer "$1"
             else
-                pen-sps -E "timgv $qpath"
+                pen-sps -E "pen-timgv $qpath"
             fi
         fi
     }
