@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+if command -v chromium &>/dev/null; then
+    chromium --no-sandbox "$@"
+else
+    xdg-open "$@"
+fi
