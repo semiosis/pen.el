@@ -360,6 +360,9 @@
     (bindings--define-key menu [mi-pen-go-to-engine-for-ink]
       '(menu-item "Go to engine for ink" pen-go-to-engine-for-ink
                   :help "When the cursor is on some ink, go to the engine that generated it"))
+    (bindings--define-key menu [mi-ink-get-properties-here]
+      '(menu-item "Get ink properties at cursor" ink-get-properties-here
+                  :help "When the cursor is on some ink, display the ink source"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
