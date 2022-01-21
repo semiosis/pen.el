@@ -4,7 +4,7 @@ export TTY
 is_tty() { [ -t 1 ]; }
 
 yn() {
-    command yn "$@"
+    command pen-yn "$@"
     ret="$?"
 
     clear
