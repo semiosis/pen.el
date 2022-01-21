@@ -221,3 +221,7 @@
   (interactive)
   (pm "https://www.youtube.com/watch?v=nnD8FKXzIGs")
   (pm "[[https://www.youtube.com/watch?v=ZqZdfxc-fq0][Simpsons - Planet of the Apes, the musical - YouTube]]"))
+
+(defun pen-your-imagination ()
+  (interactive)
+  (pen-sps (pen-cmd "pen-timgv" "/root/Thomas Bergersen - Your Imagination (Feat. Audrey Karrasch).mp4")))
