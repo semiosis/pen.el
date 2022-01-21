@@ -230,6 +230,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    web) {
+        xdg-open "http://localhost:7681"
+        exit
+    }
+    ;;
+
     lsp) {
         shift
         set -- sh pen-lsp "$@"
