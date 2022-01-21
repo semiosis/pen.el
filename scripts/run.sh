@@ -130,7 +130,7 @@ find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
 # done
 
 timg ~/.emacs.d/pen.el/docs/images/the_pen_of_imagination.png
-echo The pen of imagination
+echo The pen of imagination - |:ϝ∷¦ϝ.
 
 # In case I accidentally committed it
 rm -f /tmp/pen.yaml
