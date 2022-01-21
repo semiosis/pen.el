@@ -1904,7 +1904,7 @@ May use to generate code from comments."
 (require 'pen-modeline)
 (require 'pen-hide-minor-modes)
 (require 'pen-dired)
-(require 'pen-protocol)
+(require 'pen-semiosis-protocol)
 
 (defun pen-lsp-explain-error ()
   (interactive)
