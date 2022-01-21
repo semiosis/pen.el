@@ -234,9 +234,9 @@
     (bindings--define-key menu [mi-pen-reload]
       '(menu-item "Reload Pen.el config, engines and prompts" pen-reload
                   :help "Reload Pen.el config, engines and prompts"))
-    (bindings--define-key menu [mi-pen-reload]
-      '(menu-item "Reload Pen.el config, engines and prompts" pen-reload
-                  :help "Reload Pen.el config, engines and prompts"))
+    (bindings--define-key menu [mi-pen-edit-conf]
+      '(menu-item "Edit configuration" pen-edit-conf
+                  :help "Edit the pen.yaml file"))
     (bindings--define-key menu [mi-pen-reload-config-file]
       '(menu-item "Reload individual config file" pen-reload-config-file
                   :help "This is useful for editing Pen.el source and reloading"))
