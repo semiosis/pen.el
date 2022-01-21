@@ -129,7 +129,7 @@ find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
 # emacs -nw --debug-init
 # done
 
-pen-of-imagination
+pen-of-imagination | cat
 
 # In case I accidentally committed it
 rm -f /tmp/pen.yaml

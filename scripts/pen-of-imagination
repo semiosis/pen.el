@@ -2,4 +2,4 @@
 export TTY
 
 timg ~/.emacs.d/pen.el/docs/images/the_pen_of_imagination.png
-echo The pen of imagination - |:ϝ∷¦ϝ.
+echo "The pen of imagination - |:ϝ∷¦ϝ" | less -rS
