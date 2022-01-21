@@ -297,9 +297,9 @@
 
 (defset menu-bar-mtp-menu
   (let ((menu (make-sparse-keymap "MadTeaParty")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [pen-mtp-connect-with-name]
+      '(menu-item "Spawn a new user in Mad Tea-Party" pen-mtp-connect-with-name
+                  :help "This starts an irc client for new user to Mad Tea-Party"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
