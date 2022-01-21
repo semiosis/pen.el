@@ -8,7 +8,8 @@
                                        "The March Hare, the Hatter and the Dormouse"
                                        nil
                                        "The March Hare, the Hatter and the Dormouse")
-                     ""))
+                     (fz '("madteaparty"
+                           "bash"))))
 
   (if (and (not (pen-inside-docker))
            (not (pen-container-running)))
