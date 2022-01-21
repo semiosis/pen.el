@@ -2577,7 +2577,7 @@ case "$f" in
     calc) {
         pen-tm n "$f :: TODO: Further implemention" &>/dev/null
 
-        win calculator
+        pen-win calculator
 
     }
     ;;

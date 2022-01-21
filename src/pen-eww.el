@@ -1980,7 +1980,7 @@ the URL of the image to the kill buffer instead."
       (lg-eww-browse-url url))
      (t
       (message "Browsing %s..." url)
-      (pen-snc (pen-cmd "sps" "win" "ie" url))))))
+      (pen-snc (pen-cmd "sps" "pen-win" "ie" url))))))
 
 (defun eww-next-image ()
   (interactive)

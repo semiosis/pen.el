@@ -1,14 +1,14 @@
 (require 'openwith)
 
 (setq openwith-associations '(
-                              ("\\.mp4\\'" "pen-sps win vp" (file))
-                              ("\\.webm\\'" "pen-sps win vp" (file))
+                              ("\\.mp4\\'" "pen-sps pen-win vp" (file))
+                              ("\\.webm\\'" "pen-sps pen-win vp" (file))
                               ("\\.npy\\'" "pen-sps o" (file))
-                              ("\\.png\\'" "pen-sps win ie" (file))
+                              ("\\.png\\'" "pen-sps pen-win ie" (file))
                               ("\\.gif\\'" "pen-sps open-gif" (file))
-                              ("\\.jpe?g\\'" "pen-sps win ie" (file))
-                              ("\\.mp3\\'" "win music" (file))
-                              ("\\.m4a\\'" "win music" (file))))
+                              ("\\.jpe?g\\'" "pen-sps pen-win ie" (file))
+                              ("\\.mp3\\'" "pen-win music" (file))
+                              ("\\.m4a\\'" "pen-win music" (file))))
 
 (openwith-mode t)
 
