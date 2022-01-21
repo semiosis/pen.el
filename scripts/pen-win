@@ -60,9 +60,9 @@ esac; done
 sps() {
     if test "$WAIT" = "y"; then
         shift # shift the -E
-        unbuffer pen-tm sps "$@"
+        unbuffer pen-tm pen-sps "$@"
     else
-        command sps "$@"
+        command pen-sps "$@"
     fi
 }
 
@@ -119,7 +119,7 @@ case "$opt" in
     ;;
 
     music|music-player) {
-        sps cvlc "$@"
+        pen-sps cvlc "$@"
     }
     ;;
 
@@ -215,7 +215,7 @@ EOF
 
             if test "$USETTY" = n; then
                 set -m
-                ns "1:$1"
+                pen-ns "1:$1"
                 mplayer "$1" & disown
             else
                 eval "timgv $qpath"
@@ -232,7 +232,7 @@ EOF
             if test "$USETTY" = n; then
                 mplayer "$1"
             else
-                sps -E "timgv $qpath"
+                pen-sps -E "timgv $qpath"
             fi
         fi
     }
@@ -256,18 +256,18 @@ EOF
                 eval "unbuffer timg $path" | less -rS
             elif ! test "$USETTY" = y && yn "Use eog?"; then
                 set -m
-                ns "1:$1"
+                pen-ns "1:$1"
                 eog "$1" & disown
             else
                 eval "timg $path"
             fi
         else
             if test "$USETTY" = y; then
-                sps -E "timg $path"
+                pen-sps -E "timg $path"
             elif ! test "$USETTY" = y && xterm yn "Use eog?"; then
                 eog "$1"
             else
-                sps -E "timg $path"
+                pen-sps -E "timg $path"
             fi
         fi
     }
@@ -296,11 +296,11 @@ EOF
             fi
         else
             if test "$USETTY" = y; then
-                0</dev/null sps -E "sp $path"
+                0</dev/null pen-sps -E "sp $path"
             elif ! test "$USETTY" = y && xterm yn "Use zathura?"; then
                 z "$1"
             else
-                0</dev/null sps -E "sp $path"
+                0</dev/null pen-sps -E "sp $path"
             fi
         fi
     }
@@ -329,7 +329,7 @@ EOF
                 fi
             elif ! test "$USETTY" = y && yn "Use feh?"; then
                 set -m
-                ns "1:$1"
+                pen-ns "1:$1"
 
                 if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
                     eog "$1" & disown
@@ -346,9 +346,9 @@ EOF
         else
             if test "$USETTY" = y; then
                 if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
-                    sps -E "unbuffer timg $qpath | tless -rS +F"
+                    pen-sps -E "unbuffer timg $qpath | tless -rS +F"
                 else
-                    sps -E "unbuffer timg --frames=1 --clear -E $qpath | tless -rS +F"
+                    pen-sps -E "unbuffer timg --frames=1 --clear -E $qpath | tless -rS +F"
                 fi
             elif ! test "$USETTY" = y && xterm yn "Use feh?"; then
                 if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
@@ -358,9 +358,9 @@ EOF
                 fi
             else
                 if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
-                    sps -E "unbuffer timg $qpath | tless -rS +F"
+                    pen-sps -E "unbuffer timg $qpath | tless -rS +F"
                 else
-                    sps -E "unbuffer timg --frames=1 --clear -E $qpath | tless -rS +F"
+                    pen-sps -E "unbuffer timg --frames=1 --clear -E $qpath | tless -rS +F"
                 fi
             fi
         fi
@@ -375,7 +375,7 @@ EOF
     ;;
 
     mixer) {
-        xt tm ns -np -s -n alsamixer -c / alsamixer
+        xt tm pen-ns -np -s -n alsamixer -c / alsamixer
     }
     ;;
 
@@ -385,17 +385,17 @@ EOF
     ;;
 
     nw) {
-        xt tm ns -args calc / calc
+        xt tm pen-ns -args calc / calc
     }
     ;;
 
     calc|calculator) {
-        xt tm ns calc / calc
+        xt tm pen-ns calc / calc
     }
     ;;
 
     edit-clipboard) {
-        xt tm ns clipboard / vim
+        xt tm pen-ns clipboard / vim
     }
     ;;
 
@@ -465,7 +465,7 @@ EOF
             exit 0
         fi
 
-        xt -b -d tm ns -np -s -n screenshots -c "$dir" ranger
+        xt -b -d tm pen-ns -np -s -n screenshots -c "$dir" ranger
 
         if ! test -s "$tf_image"; then rm "$tf_image"; fi
 
@@ -479,7 +479,7 @@ EOF
     ;;
 
     edit-xmonad-config) {
-        xt tm ns xmonad-config / "vim $HOME/.xmonad/xmonad.hs"
+        xt tm pen-ns xmonad-config / "vim $HOME/.xmonad/xmonad.hs"
     }
     ;;
 
