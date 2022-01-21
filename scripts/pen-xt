@@ -84,8 +84,6 @@ if test "$use_term" = "gnome"; then
     CMD="bash -c $(pen-cmd "$CMD")"
 fi
 
-# isretina
-# This is kinda slow
 if ismacbook && ! pen-rc-test my_monitor; then
     FONT_SIZE="$(echo "(${FONT_SIZE} * $(pen-rc .macbook_dpi_scale_factor))/1" | bc)"
 fi
