@@ -395,12 +395,9 @@
 
 (defset menu-bar-protocol-menu
   (let ((menu (make-sparse-keymap "࿋  Semiosis Protocol")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
+    (bindings--define-key menu [mi-pen-connect-semiosis-protocol]
+      '(menu-item "Connect" pen-connect-semiosis-protocol
+                  :help "Connect Pen.el to the Semiosis Protocol"))
     menu))
 
 (defset menu-bar-pensieve-menu
