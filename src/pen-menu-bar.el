@@ -355,7 +355,7 @@
     menu))
 
 (defset menu-bar-lookingglass-menu
-  (let ((menu (make-sparse-keymap "🔍LookingGlass")))
+  (let ((menu (make-sparse-keymap "🔍 LookingGlass")))
     (bindings--define-key menu [mi-lg-render]
       '(menu-item "Render" lg-render
                   :help "Render to HTML"))
