@@ -1,0 +1,592 @@
+#!/bin/bash
+export TTY
+
+is_tty() { [ -t 1 ]; }
+
+yn() {
+    command yn "$@"
+    ret="$?"
+
+    clear
+
+    return "$ret"
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+
+    # override
+    -istty) {
+        export ISTTY=y
+        shift
+    }
+    ;;
+
+    # wait -- useful when calling from python
+    -w) {
+        export WAIT=y
+        shift
+    }
+    ;;
+
+    # override
+    -noistty) {
+        export ISTTY=n
+        shift
+    }
+    ;;
+
+    -usetty|-tty) {
+        export USETTY=y
+        shift
+    }
+    ;;
+
+    -nousetty) {
+        export USETTY=n
+        shift
+    }
+    ;;
+
+    -vlc) {
+        export USETTY=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+sps() {
+    if test "$WAIT" = "y"; then
+        shift # shift the -E
+        unbuffer tm sps "$@"
+    else
+        command sps "$@"
+    fi
+}
+
+if test -z "$ISTTY"; then
+    if is_tty; then
+        ISTTY=y
+    fi
+fi
+
+# All things window manager
+
+opt="$1"
+shift
+
+CMD="$(cmd "$@")"
+
+case "$opt" in
+    xt|xterm) {
+        cd $NOTES
+        unset CWD
+
+        #xterm -tn xterm-256color
+        xt -b
+    }
+    ;;
+
+    ruler) {
+        screenruler
+    }
+    ;;
+
+    lock) {
+        lock.sh
+    }
+    ;;
+
+    recompile-xmonad) {
+        xmonad --recompile
+        xmonad --restart
+        compton
+    }
+    ;;
+
+    mail) {
+        notify-send "$opt :: NOT IMPLEMENTED"
+
+        # ff mail
+    }
+    ;;
+
+    browser) {
+        chrome
+    }
+    ;;
+
+    music|music-player) {
+        sps cvlc "$@"
+    }
+    ;;
+
+    media-player) {
+        vlc "$@"
+    }
+    ;;
+
+    get-name) {
+        xdotool getwindowfocus getwindowname
+    }
+    ;;
+
+    get-wid) {
+        :
+    }
+    ;;
+
+    turn-off-capslock) {
+        read -r -d '' pycode <<-'EOF'
+from ctypes import *
+X11 = cdll.LoadLibrary("libX11.so.6")
+display = X11.XOpenDisplay(None)
+X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0))
+X11.XCloseDisplay(display)
+EOF
+
+        python3 <<<"$pycode"
+    }
+    ;;
+
+    get-wid-under-cursor-python) {
+        read -r -d '' pycode <<-'EOF'
+from Xlib.display import Display
+
+display = Display()
+window = display.screen().root
+result = window.query_pointer()
+
+print(result.child.id)
+EOF
+
+        python3 <<<"$pycode"
+    }
+    ;;
+
+    get-wid-under-cursor) {
+        xdotool getmouselocation --shell | grep WINDOW | s field -d '=' 2
+    }
+    ;;
+
+    get-winid-by-pid) {
+        findpid="$1"
+
+        known_windows=$(xwininfo -root -children|sed -e 's/^ *//'|grep -E "^0x"|awk '{ print $1 }')
+
+        for id in ${known_windows}
+        do
+            xp=$(xprop -id $id _NET_WM_PID)
+            if test $? -eq 0; then
+                pid=$(xprop -id $id _NET_WM_PID|cut -d'=' -f2|tr -d ' ')
+
+                if test "x${pid}" = x${findpid}
+                then
+                    echo "Windows Id: $id"
+                fi
+            fi
+        done
+    }
+    ;;
+
+    vp|video-player) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            --) {
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        qpath="$(cmd-nice "$1")"
+
+        if test "$ISTTY" = y; then
+            if ! test -n "$USETTY"; then
+                if yn "Use vlc?"; then
+                    USETTY=n
+                else
+                    USETTY=y
+                fi
+            fi
+
+            if test "$USETTY" = n; then
+                set -m
+                ns "1:$1"
+                vlc "$1" & disown
+            else
+                eval "timgv $qpath"
+            fi
+        else
+            if ! test -n "$USETTY"; then
+                if xterm yn "Use vlc?"; then
+                    USETTY=n
+                else
+                    USETTY=y
+                fi
+            fi
+
+            if test "$USETTY" = n; then
+                vlc "$1"
+            else
+                sps -E "timgv $qpath"
+            fi
+        fi
+    }
+    ;;
+
+    gif) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            --) {
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        path="$(cmd-nice "$1")"
+
+        if test "$ISTTY" = y; then
+            if test "$USETTY" = y; then
+                eval "unbuffer timg $path" | less -rS
+            elif ! test "$USETTY" = y && yn "Use eog?"; then
+                set -m
+                ns "1:$1"
+                eog "$1" & disown
+            else
+                eval "timg $path"
+            fi
+        else
+            if test "$USETTY" = y; then
+                sps -E "timg $path"
+            elif ! test "$USETTY" = y && xterm yn "Use eog?"; then
+                eog "$1"
+            else
+                sps -E "timg $path"
+            fi
+        fi
+    }
+    ;;
+
+    pdf|pdf-viewer) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            --) {
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        path="$(cmd-nice "$1")"
+
+        if test "$ISTTY" = y; then
+            if test "$USETTY" = y; then
+                sp "$path"
+            elif ! test "$USETTY" = y && yn "Use zathura?"; then
+                z -d "$1"
+            else
+                sp "$path"
+            fi
+        else
+            if test "$USETTY" = y; then
+                0</dev/null sps -E "sp $path"
+            elif ! test "$USETTY" = y && xterm yn "Use zathura?"; then
+                z "$1"
+            else
+                0</dev/null sps -E "sp $path"
+            fi
+        fi
+    }
+    ;;
+
+    ie|image-editor) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            --) {
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        qpath="$(cmd-nice "$1")"
+        mt="$(mime "$1")"
+
+        if test "$ISTTY" = y; then
+            if test "$USETTY" = y; then
+                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                    eval "unbuffer timg $qpath"
+                else
+                    eval "unbuffer timg --frames=1 --clear -E $qpath" | less -rS
+                fi
+            elif ! test "$USETTY" = y && yn "Use feh?"; then
+                set -m
+                ns "1:$1"
+
+                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                    eog "$1" & disown
+                else
+                    feh -B black "$1" & disown
+                fi
+            else
+                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                    eval "unbuffer timg $qpath"
+                else
+                    eval "unbuffer timg --frames=1 --clear -E $qpath" | less -rS
+                fi
+            fi
+        else
+            if test "$USETTY" = y; then
+                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                    sps -E "unbuffer timg $qpath | tless -rS +F"
+                else
+                    sps -E "unbuffer timg --frames=1 --clear -E $qpath | tless -rS +F"
+                fi
+            elif ! test "$USETTY" = y && xterm yn "Use feh?"; then
+                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                    eog "$1" & disown
+                else
+                    feh -B black "$1" & disown
+                fi
+            else
+                if pl "$mt" | grep -q -P '/gif' || pl "$qpath" | grep -q -P '\.gif$'; then
+                    sps -E "unbuffer timg $qpath | tless -rS +F"
+                else
+                    sps -E "unbuffer timg --frames=1 --clear -E $qpath | tless -rS +F"
+                fi
+            fi
+        fi
+    }
+    ;;
+
+    ae|archive-editor) {
+        tm n "$opt :: NOT IMPLEMENTED"
+
+        e "$@"
+    }
+    ;;
+
+    mixer) {
+        xt tm ns -np -s -n alsamixer -c / alsamixer
+    }
+    ;;
+
+    control-center) {
+        unity-control-center || gnome-control-center
+    }
+    ;;
+
+    nw) {
+        xt tm ns -args calc / calc
+    }
+    ;;
+
+    calc|calculator) {
+        xt tm ns calc / calc
+    }
+    ;;
+
+    edit-clipboard) {
+        xt tm ns clipboard / vim
+    }
+    ;;
+
+    capture-text) {
+        opt="$1"
+        shift
+
+        dir=$DUMP$NOTES/ws/screenshots
+        cd "$dir"
+        tf_image="$(ux tf $(date-ts)_screen png "$dir" || echo /dev/null)"
+        scaled_image="$(ux tf screen_scaled png || echo /dev/null)"
+
+        case "$opt" in
+            screen) {
+                import "$tf_image"
+            }
+            ;;
+
+            root) {
+                import -window root "$tf_image"
+            }
+            ;;
+
+        esac
+
+        if ! test "$?" -eq "0"; then
+            exit 0
+        fi
+
+        if ! test -s "$tf_image"; then rm "$tf_image"; fi
+
+        convert "$tf_image" -scale "300%" "$scaled_image"
+        tesseract "$scaled_image" stdout -l eng -psm 3 > "${tf_image}.txt"
+        cat "${tf_image}.txt" | remove-leading-and-trailing-spaces.sh | remove-leading-and-trailing-newlines.sh | s chomp | c ascify | xc -i
+
+        a beep
+
+        if ! test -s "${tf_image}.txt"; then rm "${tf_image}.txt"; fi
+
+        exit $?
+    }
+    ;;
+
+    screenshot) {
+        opt="$1"
+        shift
+
+        dir=$DUMP$NOTES/ws/screenshots
+        cd "$dir"
+        tf_image="$(ux tf $(date-ts)_screen png "$dir" || echo /dev/null)"
+        scaled_image="$(ux tf screen_scaled png || echo /dev/null)"
+
+        case "$opt" in
+            screen) {
+                import "$tf_image"
+            }
+            ;;
+
+            root) {
+                import -window root "$tf_image"
+            }
+            ;;
+
+        esac
+
+        if ! test "$?" -eq "0"; then
+            exit 0
+        fi
+
+        xt -b -d tm ns -np -s -n screenshots -c "$dir" ranger
+
+        if ! test -s "$tf_image"; then rm "$tf_image"; fi
+
+        convert "$tf_image" -scale 300% "$scaled_image"
+        tesseract "$scaled_image" stdout -l eng -psm 3 | c ascify > "${tf_image}.txt"
+
+        if ! test -s "${tf_image}.txt"; then rm "${tf_image}.txt"; fi
+
+        exit $?
+    }
+    ;;
+
+    edit-xmonad-config) {
+        xt tm ns xmonad-config / "vim $HOME/.xmonad/xmonad.hs"
+    }
+    ;;
+
+    inv) {
+        xprop -f WM_CLASS 8s -set WM_CLASS 'compton-invert' &
+        sleep 0.1
+        xdotool click 1
+    }
+    ;;
+
+    uninv) {
+        xprop -f WM_CLASS 8s -remove WM_CLASS &
+        sleep 0.1
+        xdotool click 1
+    }
+    ;;
+
+    xterm-tmux) {
+        cd $NOTES
+        unset CWD
+
+        tm xta "$@" localhost:
+    }
+    ;;
+
+    xterm-tmux-huge) {
+        cd $NOTES
+        unset CWD
+
+        tm xta -h localhost:
+    }
+    ;;
+
+    nvim-tmux) {
+        cd $NOTES
+        unset CWD
+
+        xt -b nvc -2 tmux attach -t localhost:
+    }
+    ;;
+
+    nv-vt100-tmux) {
+        cd $NOTES
+        unset CWD
+
+        xterm -E "resize &> /dev/null; sleep 0.1; nvc -E $(aqf "TERM=vt100rev tmux attach -t localhost:")"
+    }
+    ;;
+
+    vt100-tmux) {
+        cd $NOTES
+        unset CWD
+
+        xterm -E "resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:"
+    }
+    ;;
+
+    xterm-inv) {
+        cd $NOTES
+        unset CWD
+
+        bash -c "set -x; set -m; xterm -E $(aq "resize &> /dev/null; sleep 0.1; TERM=xterm-256color tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
+    }
+    ;;
+
+    vt100-inv) {
+        cd $NOTES
+        unset CWD
+
+        bash -c "set -x; set -m; xterm -E $(aq "resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
+
+        xprop -f WM_CLASS 8s -set WM_CLASS 'compton-invert'
+        sleep 1
+        xdotool click 1
+    }
+    ;;
+
+    dmenu) {
+        dmenu_run -fn "-*-fixed-*-*-*-*-20-*-*-*-*-*-*-*" -nb "black" -nf "rgb:a0/a0/a0" -sb "rgb:00/80/80" -sf black
+    }
+    ;;
+
+    dmenu-new) {
+        $HOME/ws/xmonad/sendCommand 1
+        xdotool keyup Super_L
+        sleep 0.2
+        xdotool key F13 # picked up by tmux
+    }
+    ;;
+
+    unknown-menu) {
+        tm n "$opt :: NOT SURE WHAT THIS USED TO DO. tmux F15 or S-F3"
+
+        $HOME/ws/xmonad/sendCommand 1
+        xdotool keyup Super_L
+        sleep 0.1
+        xdotool key F15
+    }
+    ;;
+
+    ffdmenu) {
+        $HOME/ws/xmonad/sendCommand 1
+        xdotool keyup Shift_L Super_L
+        sleep 0.1
+        xdotool key F14
+    }
+    ;;
+
+    *)
+esac
