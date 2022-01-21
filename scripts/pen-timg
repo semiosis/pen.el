@@ -1,0 +1,18 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -rs) {
+        eval `resize`
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+test -f $MYGIT/hzeller/timg/build/src/timg && : "${bin:="$MYGIT/hzeller/timg/build/src/timg"}"
+test -f "/usr/local/bin/timg" && : "${bin:="/usr/local/bin/timg"}"
+
+"$bin" -U "$@"

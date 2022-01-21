@@ -1,0 +1,39 @@
+#!/bin/bash
+export TTY
+
+fp="$1"
+
+test -f "$fp" || exit 1
+
+rp="$(realpath "$fp")"
+dn="$(dirname "$rp")"
+
+cd "$dn"
+
+bn="$(basename "$rp")"
+
+MAXCOLS="$(pen-rc .timgv_max_cols)"
+
+eval `resize`
+
+
+if [ "$COLUMNS" -gt "$MAXCOLS" ]; then
+    COLUMNS="$MAXCOLS"
+fi
+
+stty cols "$COLUMNS"
+
+set -m
+
+/usr/bin/vlc --ignore-config -I dummy --play-and-exit --novideo "$bn" &>/dev/null &
+mplayer_pid="$!"
+
+trap "trap - SIGTERM && kill -- $mplayer_pid" SIGINT SIGTERM EXIT &>/dev/null
+
+timg -V "$bn"
+ret="$?"
+if test "$ret" = 1 && test -f "$bn"; then
+    echo "exit($ret) No video track" 1>&2
+    pen-pak
+    exit "$ret"
+fi
