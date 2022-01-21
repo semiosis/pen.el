@@ -99,14 +99,11 @@ run_term() {
 
         urxvt) {
             urxvt -e ". $HOME/.xterm-sh-rc; $CMD" & disown
-            # urxvt -e "$(new-script-from-args -E ". $HOME/.xterm-sh-rc; $CMD")"
         }
         ;;
 
         alacritty) {
             sed -i "s/^  size: .*/  size: $FONT_SIZE/" ~/.config/alacritty/alacritty.yml
-
-            # alacritty -e "sh -c $(aqf-nice ". $HOME/.xterm-sh-rc; $CMD")"
             alacritty -e "$(new-script-from-args -E ". $HOME/.xterm-sh-rc; $CMD")"
         }
         ;;
