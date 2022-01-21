@@ -483,4 +483,67 @@
       (bindings--define-key global-map [menu-bar protocol]
         (cons "Protocol" menu-bar-protocol-menu))))
 
+(defset tty-menu-navigation-map
+  (let ((map (make-sparse-keymap)))
+    ;; The next line is disabled because it breaks interpretation of
+    ;; escape sequences, produced by TTY arrow keys, as tty-menu-*
+    ;; commands.  Instead, we explicitly bind some keys to
+    ;; tty-menu-exit.
+    ;;(define-key map [t] 'tty-menu-exit)
+
+    ;; The tty-menu-* are just symbols interpreted by term.c, they are
+    ;; not real commands.
+    (dolist (bind '((keyboard-quit . tty-menu-exit)
+                    (keyboard-escape-quit . tty-menu-exit)
+                    ;; The following two will need to be revised if we ever
+                    ;; support a right-to-left menu bar.
+                    (forward-char . tty-menu-next-menu)
+                    (backward-char . tty-menu-prev-menu)
+                    (right-char . tty-menu-next-menu)
+                    (left-char . tty-menu-prev-menu)
+                    (next-line . tty-menu-next-item)
+                    (previous-line . tty-menu-prev-item)
+                    (newline . tty-menu-select)
+                    (newline-and-indent . tty-menu-select)
+		    (menu-bar-open . tty-menu-exit)))
+      (substitute-key-definition (car bind) (cdr bind)
+                                 map (current-global-map)))
+
+    ;; The bindings of menu-bar items are so that clicking on the menu
+    ;; bar when a menu is already shown pops down that menu.
+    (define-key map [menu-bar t] 'tty-menu-exit)
+
+    (define-key map [?\C-r] 'tty-menu-select)
+    (define-key map [?\C-j] 'tty-menu-select)
+    (define-key map [return] 'tty-menu-select)
+    (define-key map [linefeed] 'tty-menu-select)
+    (menu-bar-define-mouse-key map 'mouse-1 'tty-menu-select)
+    (menu-bar-define-mouse-key map 'drag-mouse-1 'tty-menu-select)
+    (menu-bar-define-mouse-key map 'mouse-2 'tty-menu-select)
+    (menu-bar-define-mouse-key map 'drag-mouse-2 'tty-menu-select)
+    (menu-bar-define-mouse-key map 'mouse-3 'tty-menu-select)
+    (menu-bar-define-mouse-key map 'drag-mouse-3 'tty-menu-select)
+    (menu-bar-define-mouse-key map 'wheel-down 'tty-menu-next-item)
+    (menu-bar-define-mouse-key map 'wheel-up 'tty-menu-prev-item)
+    (menu-bar-define-mouse-key map 'wheel-left 'tty-menu-prev-menu)
+    (menu-bar-define-mouse-key map 'wheel-right 'tty-menu-next-menu)
+    ;; The following 6 bindings are for those whose text-mode mouse
+    ;; lack the wheel.
+    (menu-bar-define-mouse-key map 'S-mouse-1 'tty-menu-next-item)
+    (menu-bar-define-mouse-key map 'S-drag-mouse-1 'tty-menu-next-item)
+    (menu-bar-define-mouse-key map 'S-mouse-2 'tty-menu-prev-item)
+    (menu-bar-define-mouse-key map 'S-drag-mouse-2 'tty-menu-prev-item)
+    (menu-bar-define-mouse-key map 'S-mouse-3 'tty-menu-prev-item)
+    (menu-bar-define-mouse-key map 'S-drag-mouse-3 'tty-menu-prev-item)
+    ;; The down-mouse events must be bound to tty-menu-ignore, so that
+    ;; only releasing the mouse button pops up the menu.
+    (menu-bar-define-mouse-key map 'down-mouse-1 'tty-menu-select)
+    (menu-bar-define-mouse-key map 'down-mouse-2 'tty-menu-ignore)
+    (menu-bar-define-mouse-key map 'down-mouse-3 'tty-menu-ignore)
+    (menu-bar-define-mouse-key map 'C-down-mouse-1 'tty-menu-ignore)
+    (menu-bar-define-mouse-key map 'C-down-mouse-2 'tty-menu-ignore)
+    (menu-bar-define-mouse-key map 'C-down-mouse-3 'tty-menu-ignore)
+    (menu-bar-define-mouse-key map 'mouse-movement 'tty-menu-mouse-movement)
+    map))
+
 (provide 'pen-menu-bar)
