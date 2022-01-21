@@ -124,7 +124,7 @@ case "$opt" in
     ;;
 
     media-player) {
-        vlc "$@"
+        mplayer "$@"
     }
     ;;
 
@@ -206,7 +206,7 @@ EOF
 
         if test "$ISTTY" = y; then
             if ! test -n "$USETTY"; then
-                if yn "Use vlc?"; then
+                if yn "Use mplayer?"; then
                     USETTY=n
                 else
                     USETTY=y
@@ -216,13 +216,13 @@ EOF
             if test "$USETTY" = n; then
                 set -m
                 ns "1:$1"
-                vlc "$1" & disown
+                mplayer "$1" & disown
             else
                 eval "timgv $qpath"
             fi
         else
             if ! test -n "$USETTY"; then
-                if xterm yn "Use vlc?"; then
+                if xterm yn "Use mplayer?"; then
                     USETTY=n
                 else
                     USETTY=y
@@ -230,7 +230,7 @@ EOF
             fi
 
             if test "$USETTY" = n; then
-                vlc "$1"
+                mplayer "$1"
             else
                 sps -E "timgv $qpath"
             fi
