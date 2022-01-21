@@ -129,8 +129,7 @@ find ~/.emacs.d/elpa -name '*.elc' -exec rm {} \;
 # emacs -nw --debug-init
 # done
 
-timg ~/.emacs.d/pen.el/docs/images/the_pen_of_imagination.png
-echo The pen of imagination - |:ϝ∷¦ϝ.
+pen-of-imagination
 
 # In case I accidentally committed it
 rm -f /tmp/pen.yaml
