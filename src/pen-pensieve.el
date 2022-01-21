@@ -10,6 +10,7 @@
 (defun pensieve-mount-dir (dirname)
   (interactive (list (read-string-hist "Directory name")))
 
-  (pen-sps (pen-cmd "pensieve" dirname)))
+  (pen-sps (pen-cmd "pensieve" dirname))
+  (dired dirname))
 
 (provide 'pen-pensieve)
