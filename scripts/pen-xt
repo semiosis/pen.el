@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sct "$(pen-rc .screen_temperature)"
+# sct "$(pen-rc .screen_temperature)"
 
 # Example:
 # pen-xt pen-tm pen-ns overview $NOTES/scratch "e $NOTES/scratch/overview.org"
@@ -15,9 +15,9 @@ FONT_SIZE=6
 FONT_SIZE=13
 
 use_term="$(pen-rc .use_term)"
+: "${use_term:="xterm"}"
 : "${use_term:="alacritty"}"
 : "${use_term:="gnome"}"
-: "${use_term:="xterm"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -d) {
         DETACH=y
@@ -67,7 +67,7 @@ else
         CMD="$(pen-cmd "$@")"
     else
         if test "$#" -gt 0; then
-            CMD="$(nsfa "$@")"
+            CMD="$(pen-nsfa "$@")"
         fi
     fi
 fi
@@ -84,7 +84,7 @@ if test "$use_term" = "gnome"; then
     CMD="bash -c $(pen-cmd "$CMD")"
 fi
 
-if ismacbook && ! pen-rc-test my_monitor; then
+if false && ismacbook && ! pen-rc-test my_monitor; then
     FONT_SIZE="$(echo "(${FONT_SIZE} * $(pen-rc .macbook_dpi_scale_factor))/1" | bc)"
 fi
 
@@ -102,12 +102,12 @@ run_term() {
 
         alacritty) {
             sed -i "s/^  size: .*/  size: $FONT_SIZE/" ~/.config/alacritty/alacritty.yml
-            alacritty -e "$(new-script-from-args -E ". $HOME/.xterm-sh-rc; $CMD")"
+            alacritty -e "$(pen-nsfa -E ". $HOME/.xterm-sh-rc; $CMD")"
         }
         ;;
 
         *|xterm) {
-            /home/shane/local/bin/xterm -ls -fs "$FONT_SIZE" -e ". $HOME/.xterm-sh-rc; $CMD"
+            /usr/bin/xterm -ls -fs "$FONT_SIZE" -e ". $HOME/.xterm-sh-rc; $CMD"
         }
         ;;
 
