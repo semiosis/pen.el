@@ -212,7 +212,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
-        ("> pen" :call rcm-pen)))
+        ("> pen" :call rcm-pen)
+        ("Kill current buffer" :call kill-current-buffer)))
 
 (defmacro def-right-click-menu (name
                                 ;; predicates
