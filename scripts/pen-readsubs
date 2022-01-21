@@ -32,11 +32,11 @@ if test -n "$raw"; then
     printf -- "%s" "$raw" |
         tr -s '\n' ' ' |
         sed 's/^\s\+//' |
-        htmldecode | ttp | {
+        htmldecode | pen-pretty-paragraph | {
             if test "$sn" = "readsubs"; then
                 cat
             else
-                tf txt
+                pen-tf txt
             fi
-        } | pavs
+        } | pen-pavs
 fi
