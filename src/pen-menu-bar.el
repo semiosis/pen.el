@@ -265,8 +265,8 @@
 (defset menu-bar-cterm-menu
   (let ((menu (make-sparse-keymap "ComplexTerm")))
     (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+      '(menu-item "Start cterm (Pen.el wrapping a host terminal)" apostrophe-start-chatbot-from-name
+                  :help "Pen.el wraps your host's terminal to provide augmented intelligence"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
