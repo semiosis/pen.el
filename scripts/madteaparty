@@ -35,6 +35,8 @@ username="$1"
 shift
 
 username="$(p "$username" | slugify)"
+# Max 32 chars
+username_irc="$(p "$username" | cut -c -32 -)"
 
 password="$username"
 
@@ -76,7 +78,7 @@ else
     pen-x \
         -sh "TMUX= tmux attach -t '$session_name'" \
         -e "irssi" \
-        -s "/connect irc.localhost 6697 $password $username" -c m \
+        -s "/connect irc.localhost 6697 $password $username_irc" -c m \
         -e "Mode change" \
         -s "/join #$irc_channel_name" -c m \
         -i
