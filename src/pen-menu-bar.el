@@ -408,9 +408,9 @@
 
 (defset menu-bar-pensieve-menu
   (let ((menu (make-sparse-keymap "PenSieve")))
-    (bindings--define-key menu [from-name]
-      '(menu-item "Name" apostrophe-start-chatbot-from-name
-                  :help "Start chatbot from name"))
+    (bindings--define-key menu [mi-pensieve-mount-dir]
+      '(menu-item "Mount a new pensieve" pensieve-mount-dir
+                  :help "Given the name of the pensieve, mount it on the host and navigate to it"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
