@@ -652,6 +652,9 @@
     (bindings--define-key menu [mi-pen-demo-apostrophe]
       '(menu-item "Apostrophe" pen-demo-apostrophe
                   :help "Demo talking to chatbots "))
+    (bindings--define-key menu [mi-pen-demo-paracosm]
+      '(menu-item "Paracosm" pen-demo-paracosm
+                  :help "Demo talking to chatbots "))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
