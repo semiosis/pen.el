@@ -480,3 +480,6 @@ agi xterm
 agi mplayer
 
 agi feh
+
+mkdir -p ~/programs/zsh/dotfiles
+mkdir -p ~/.pen/downloads

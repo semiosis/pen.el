@@ -1,11 +1,5 @@
 HISTFILE=$HOME/programs/zsh/dotfiles/.zsh_history
 
-export BULK=/export/bulk/local-home/smulliga
-
-if [ -z "$ATHAME_ENABLED" ]; then
-    export ATHAME_ENABLED=0
-fi
-
 autoload up-line-or-beginning-search
 autoload down-line-or-beginning-search
 zle -N up-line-or-beginning-search
@@ -135,16 +129,6 @@ bindkey "\eOA" up-line-or-beginning-search
 bindkey "\eOB" down-line-or-beginning-search
 [[ -n "${key[Up]}"   ]] && bindkey "${key[Up]}"   up-line-or-beginning-search
 [[ -n "${key[Down]}" ]] && bindkey "${key[Down]}" down-line-or-beginning-search
-
-# bindings
-# {{{
-function toggle-athame() {
-    if ! [ "$ATHAME_ENABLED" == "0" ]; then
-        export ATHAME_ENABLED=0
-    else
-        export ATHAME_ENABLED=1
-    fi
-}
 
 function edit-command-line() {
     tf_zle="$(mktemp ${TMPDIR}/tf_zleXXXXXX || echo /dev/null)"
