@@ -651,6 +651,12 @@
     (bindings--define-key menu [pen-sps]
       '(menu-item "Split screen shell sensibly" pen-sps
                   :help "Open a shell in a split screen sensibly"))
+    (bindings--define-key menu [pen-revert-kill-buffer-and-window]
+      '(menu-item "Kill buffer / abort" pen-revert-kill-buffer-and-window
+                  :help "This kills and discards the current buffer and window. It may be used to abort, when the human is prompted"))
+    (bindings--define-key menu [pen-save-and-kill-buffer-window-and-emacsclient]
+      '(menu-item "Save buffer and close" pen-save-and-kill-buffer-window-and-emacsclient
+                  :help "Save and close the current buffer, and close the emacsclient. It may be used to confirm, save and continue, when the human is prompted"))
     (bindings--define-key menu [pen-complete-long]
       '(menu-item "Complete long" pen-complete-long
                   :help "Long-form completion"))
