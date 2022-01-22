@@ -88,6 +88,7 @@
 (require 'pen-keys)
 (require 'pen-swipe)
 (require 'pen-ilambda)
+(require 'pen-demos)
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
