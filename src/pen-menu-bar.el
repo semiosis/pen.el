@@ -651,6 +651,21 @@
     (bindings--define-key menu [pen-sps]
       '(menu-item "Split screen shell sensibly" pen-sps
                   :help "Open a shell in a split screen sensibly"))
+    (bindings--define-key menu [pen-complete-long]
+      '(menu-item "Complete long" pen-complete-long
+                  :help "Long-form completion"))
+    (bindings--define-key menu [pen-complete-lines]
+      '(menu-item "Complete lines" pen-complete-lines
+                  :help "Complete a few lines"))
+    (bindings--define-key menu [pen-complete-line]
+      '(menu-item "Complete line" pen-complete-line
+                  :help "Complete a line"))
+    (bindings--define-key menu [pen-complete-words]
+      '(menu-item "Complete words" pen-complete-words
+                  :help "Complete a few words"))
+    (bindings--define-key menu [pen-complete-word]
+      '(menu-item "Complete word" pen-complete-word
+                  :help "Complete a word"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
