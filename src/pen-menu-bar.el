@@ -282,7 +282,7 @@
     menu))
 
 (defset menu-bar-configure-menu
-  (let ((menu (make-sparse-keymap "Config")))
+  (let ((menu (make-sparse-keymap "Configure")))
     (bindings--define-key menu [mi-pen-edit-conf]
       '(menu-item "Edit Pen.el configuration" pen-edit-conf
                   :help "Edit the pen.yaml file"))
@@ -332,7 +332,7 @@
     menu))
 
 (defset menu-bar-pen-menu
-  (let ((menu (make-sparse-keymap "🖊  Pen.el")))
+  (let ((menu (make-sparse-keymap "Pen.el 🖊 ")))
     (bindings--define-key menu [mi-pen-acolyte-dired-penel]
       '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
                   :help "Go to Pen.el source code"))
@@ -505,7 +505,7 @@
     menu))
 
 (defset menu-bar-prompting-menu
-  (let ((menu (make-sparse-keymap "Engines")))
+  (let ((menu (make-sparse-keymap "Prompting")))
     (bindings--define-key menu [mi-pen-diagnostics-show-context]
       '(menu-item "Diagnostics" pen-diagnostics-show-context
                   :help "Show details of prompt function execution"))
@@ -579,7 +579,7 @@
     menu))
 
 (defset menu-bar-apps-menu
-  (let ((menu (make-sparse-keymap "Apps")))
+  (let ((menu (make-sparse-keymap "Applications")))
     (bindings--define-key menu [mi-menu-bar-melee-menu]
       `(menu-item "Melee" ,menu-bar-melee-menu
                   :help "Mount imaginary filesystems"))
@@ -595,7 +595,7 @@
     menu))
 
 (defset menu-bar-utils-menu
-  (let ((menu (make-sparse-keymap "Utils")))
+  (let ((menu (make-sparse-keymap "Utilities")))
     (bindings--define-key menu [mi-pen-start-hidden-terminal]
       '(menu-item "Start hidden human terminal" pen-start-hidden-terminal
                   :help "When a human is prompted, it will appear in the hidden terminal"))
@@ -645,7 +645,7 @@
     menu))
 
 (defset menu-bar-demos-menu
-  (let ((menu (make-sparse-keymap "Terminals")))
+  (let ((menu (make-sparse-keymap "Demos")))
     (bindings--define-key menu [mi-pen-demo-installation]
       '(menu-item "Installation" pen-demo-installation
                   :help "Demo the installation of Pen.el"))
