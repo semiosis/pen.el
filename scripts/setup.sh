@@ -487,7 +487,9 @@ mkdir -p ~/.pen/downloads
 cd ~/repos
 git clone --depth 1 "http://github.com/mullikine/oh-my-zsh"
 )
-ln -sf ~/.emacs.d/pen.el/config/zsh/zsh_aliases ~/.zsh_aliases
-ln -sf ~/.emacs.d/pen.el/config/zsh/zshenv ~/.zshenv
-ln -sf ~/.emacs.d/pen.el/config/zsh/zshrc ~/.zshrc
-ln -sf ~/.emacs.d/pen.el/config/shell_functions ~/.shell_functions
+ln -sf ~/.emacs.d/host/pen.el/config/zsh/zsh_aliases ~/.zsh_aliases
+ln -sf ~/.emacs.d/host/pen.el/config/zsh/zshenv ~/.zshenv
+ln -sf ~/.emacs.d/host/pen.el/config/zsh/zshrc ~/.zshrc
+ln -sf ~/.emacs.d/host/pen.el/config/shell_functions ~/.shell_functions
+ln -sf ~/.emacs.d/host/pen.el/config/zsh/fzf.zsh ~/.fzf.zsh
+ln -sf ~/.emacs.d/host/pen.el/config/zsh/git.zsh ~/.git.zsh

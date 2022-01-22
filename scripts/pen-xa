@@ -1,0 +1,156 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+if [ "$sn" = "xap" ]; then
+    PIPE_IT=y
+fi
+
+enforce_lines=
+slurp_args_as_single_argument=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -nl|-1) {
+        enforce_lines=y
+        shift
+    }
+    ;;
+
+    -s) {
+        slurp_args_as_single_argument=y
+        shift
+    }
+    ;;
+
+    -noi) {
+        no_i_replace=y
+        shift
+    }
+    ;;
+
+    -S) {
+        slurp_args_as_single_argument=n
+        shift
+    }
+    ;;
+
+    # pipe instead of use as first argument
+    -p) {
+        PIPE_IT=y
+        shift
+    }
+    ;;
+
+    -E) {
+        EACH_ARG=y
+        shift
+    }
+    ;;
+
+    # print the line as well
+    -l) {
+        PRINT_INPUT=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+tf_ret="$(pen-ux tf ret || echo /dev/null)"
+trap "rm \"$tf_ret\" 2>/dev/null" 0
+
+myeval() {
+    last_arg="${@: -1}"
+    additional_args="$last_arg"
+    set -- "${@:1:$(($#-1))}" # shift last arg
+
+    if test "$slurp_args_as_single_argument" = "y"; then
+        "$@" "$additional_args"
+    else
+        eval "$@" "$additional_args"
+    fi
+}
+
+
+if test "$PIPE_IT" = "y"; then
+    awk1 | while IFS=$'\n' read -r line; do
+        if test "$PRINT_INPUT" = "y"; then
+            printf -- "%s\n" "$line"
+        fi
+        if test "$EACH_ARG" = "y"; then
+            for var in "$@"
+            do
+                (
+                    exec <`pen-tm-tty`
+                    if test "$enforce_lines" = "y"; then
+                        p "$line" | eval "$var" | awk 1
+                    else
+                        p "$line" | eval "$var"
+                    fi
+                    echo -n "$?" > "$tf_ret"
+                )
+            done
+        else
+            (
+                exec <`pen-tm-tty`
+                if test "$enforce_lines" = "y"; then
+                    p "$line" | "$@" | awk 1
+                else
+                    p "$line" | "$@"
+                fi
+                echo -n "$?" > "$tf_ret"
+            )
+        fi
+    done
+else
+    awk1 | while IFS=$'\n' read -r line; do
+        if test "$PRINT_INPUT" = "y"; then
+            printf -- "%s\n" "$line"
+        fi
+        if test "$EACH_ARG" = "y"; then
+            for var in "$@"
+            do
+                (
+                    # Annoyingly I don't know how to silence these errors
+                    # Can't simply detect for presence of /dev/tty
+                    {
+                        exec <`pen-tm-tty`
+                    } 2>/dev/null
+                    if test "$enforce_lines" = "y"; then
+                        myeval "$var" "$line" | awk 1
+                    else
+                        myeval "$var" "$line"
+                    fi
+                    echo -n "$?" > "$tf_ret"
+                )
+            done
+        else
+            (
+                # Annoyingly I don't know how to silence these errors
+                # Can't simply detect for presence of /dev/tty
+                {
+                    exec <`pen-tm-tty`
+                } 2>/dev/null
+
+                if ! test "$no_i_replace" = "y" && cmd "$@" | grep -q -P '{}'; then
+                    eval "set -- $(cmd "$@" | sed "s~{}~$line~g")"
+                    if test "$enforce_lines" = "y"; then
+                        myeval "$@" | awk 1
+                    else
+                        myeval "$@"
+                    fi
+                else
+                    if test "$enforce_lines" = "y"; then
+                        myeval "$@" "$line" | awk 1
+                    else
+                        myeval "$@" "$line"
+                    fi
+                fi
+                echo -n "$?" > "$tf_ret"
+            )
+        fi
+    done
+fi
+
+exec 2>/dev/null
+exit "$(cat "$tf_ret")"

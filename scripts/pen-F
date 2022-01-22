@@ -1,0 +1,277 @@
+#!/bin/bash
+export TTY
+
+# See also: 'pen-f'
+
+# find commands
+
+is_stdout_tty() {
+    [[ -t 1 ]]
+}
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+HAS_STDIN=
+if stdin_exists; then
+    HAS_STDIN=y
+    tf_input="$(pen-ux tf input || echo /dev/null)"
+    trap "rm \"$tf_input\" 2>/dev/null" 0
+fi
+
+opt="$1"
+shift
+case "$opt" in
+    find-file-repo) {
+        file="$1"
+
+        cd "$(vc get-top-level)"
+        pen-F find-no-git "$file" | pen-fzf
+
+        exit 0
+    }
+    ;;
+
+    bs|broken-symlinks|derefed-syms) {
+        find `pwd -P` -xtype l
+    }
+    ;;
+
+    newest|find-newest-files) {
+        $0 recently-modified-here "$@"
+    }
+    ;;
+
+    recently-modified-here) {
+        find . -path '*/.git/*' -prune -o -type f -printf '%T@ %p\n' | sort -n | cut -f2- -d" " | sed s/^..// | tac
+    }
+    ;;
+
+    find-here) {
+        find . -mindepth 1 -maxdepth 1 "$@" | sed 's/^\.\///'
+    }
+    ;;
+
+    find-files-here) {
+        find . -mindepth 1 -maxdepth 1 -type f "$@" | sed 's/^\.\///'
+    }
+    ;;
+
+    find-dirs-here) {
+        find . -mindepth 1 -maxdepth 1 -type d "$@" | sed 's/^\.\///'
+    }
+    ;;
+
+    fng|find-no-git) {
+        # f fng "*gf*"
+
+        predicate_name="path"
+        predicate_list= # extra predicates
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -i) {
+                predicate_name="ipath"
+                shift
+            }
+            ;;
+
+            -d) {
+                predicate_list+=" -a -type d"
+                shift
+            }
+            ;;
+
+            -*:*) {
+                min_depth="$(p "$opt" | mcut -d'[-+:]' -f2)"
+                max_depth="$(p "$opt" | mcut -d'[-+:]' -f3)"
+                shift
+            }
+            ;;
+
+            -f) {
+                predicate_list+=" -a -type f"
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        pattern="$1"
+
+        : ${min_depth:="1"}
+        : ${max_depth:="1000"}
+
+        # Remember that -prune prunes what's before it and -print prints
+        # what's before it
+
+        {
+            if [ -n "$pattern" ]; then
+                eval "find -L . -mindepth "$min_depth" -maxdepth "$max_depth" -path '*/.git/*' -prune -o \\( -true $predicate_list -a -$predicate_name $(cmd "$pattern") \\) -print 2>/dev/null"
+            else
+                eval "find -L . -mindepth "$min_depth" -maxdepth "$max_depth" -path '*/.git/*' -prune -o \\( -true $predicate_list -a \\( -type f -o -type d \\) \\) -print 2>/dev/null"
+            fi
+        } | sed 's/^\.\///'
+    }
+    ;;
+
+    f|files|find-files-no-git) {
+        opts=
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -0) {
+                print0="y"
+                shift
+            }
+            ;;
+
+            -f) {
+                # This is needed to recognise symlinks to files with the
+                # "-type f" predicate
+                follow_symlinks="y"
+                opts+="-L"
+                shift
+            }
+            ;;
+
+            -b) {
+                base="y"
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        CWD="$1"
+
+        : ${CWD:="$(pwd)"}
+
+        cd /
+
+        # Can definitely not do -L here. Forbit it with -H.
+        # But that means that symlinks to files will not be found
+        sudo find -H $opts "$CWD" \
+            -mindepth 1 \
+            -type d -o \
+            -regex '^/sys' -o \
+            -regex '^/export/bulk' -o \
+            -regex '^/dev' -o \
+            -regex '^/proc' -o \
+            -path '*/vim-old*' -o \
+            -path '*/.git*' -o \
+            -path '*/.hg*' -o \
+            -name '*.o' -o \
+            -name '*.glif' \
+            -prune -o \
+            -type f 2>/dev/null \
+            -print$(test "$print0" = "y" && p 0) | {
+                if test "$base" = "y"; then
+                    sed "s~^$CWD~.~"
+                else
+                    cat
+                fi
+            }
+
+         ` # -name '*.jpg' -prune -o `
+    }
+    ;;
+
+    d|dirs|find-dirs-no-git) {
+        # f fng
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -0) {
+                print0="y"
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        CWD="$1"
+
+        : ${CWD:="$(pwd)"}
+
+        cd /
+
+        # Can definitely not do -L here. Forbit it with -H.
+        sudo find -H "$CWD" \
+            -mindepth 1 \
+            -type f -o \
+            -regex '^/sys' -o \
+            -regex '^/export/bulk' -o \
+            -regex '^/dev' -o \
+            -regex '^/proc' -o \
+            -path '*/vim-old*' -o \
+            -path '*/.git*' -o \
+            -path '*/.hg*' -o \
+            -name '*.o' -o \
+            -name '*.png' -o \
+            -name '*.glif' \
+            -prune -o \
+            -type d \
+            -print$(test "$print0" = "y" && p 0)
+
+         ` # -name '*.jpg' -prune -o `
+    }
+    ;;
+
+    fang|find-all-no-git) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -0) {
+                print0="y"
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        CWD="$1"
+
+        : ${CWD:="$(pwd)"}
+
+        cd /
+
+        sudo find -H "$CWD" \
+            -mindepth 1 \
+            -type d -o \
+            -regex '^/sys' -o \
+            -regex '^/export/bulk' -o \
+            -regex '^/dev' -o \
+            -regex '^/proc' -o \
+            -path '*/vim-old*' -o \
+            -path '*/.git*' -o \
+            -path '*/.hg*' -o \
+            -name '*.o' -o \
+            -name '*.png' -o \
+            -name '*.glif' \
+            -prune -o \
+            -type f \
+            -print$(test "$print0" = "y" && p 0)
+
+         ` # -name '*.jpg' -prune -o `
+    }
+    ;;
+
+    x|findexec) {
+        find . -mindepth 1 -executable -type f | pen-pavs
+    }
+    ;;
+
+    locate) {
+        if stdin_exists; then
+            input="$(cat)"
+        else
+            input="$1"
+        fi
+        locate "$input" | v
+
+        exit 0
+    }
+    ;;
+
+    *)
+esac

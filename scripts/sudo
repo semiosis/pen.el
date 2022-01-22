@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+if test "$(whoami)" = root; then
+    "$@"
+else
+    export ISSUDO=y
+
+    if test "$1 $2" = "apt update" && ! test "$3" = "--allow-unauthenticated"; then
+        shift
+        shift
+        set -- apt update --allow-unauthenticated --allow-insecure-repositories "$@"
+    fi
+
+    /usr/bin/sudo "$@"
+fi
