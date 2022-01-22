@@ -1016,11 +1016,13 @@ case "$sn" in
         ifunc_name="$1"
         shift
 
+        output_json=y
+
         ifunc_name="$(p "$ifunc_name" | slugify)"
 
         ARGS="$(cmd-nice-posix "$@")"
 
-        set -- -e "(pps (progn (idefun $ifunc_name) ($ifunc_name $ARGS)))"
+        set -- -e "(car (progn (idefun $ifunc_name) (pen-one ($ifunc_name $ARGS))))"
     }
     ;;
 
