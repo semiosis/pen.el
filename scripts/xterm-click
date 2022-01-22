@@ -1,8 +1,6 @@
 #!/bin/bash
 export TTY
 
-# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
-
 : "${UP:="y"}"
 : "${DOWN:="y"}"
 : "${EXTENDED_MODE:="n"}"
@@ -51,14 +49,9 @@ fi
 
 : ${TTY:="$(tty)"}
 
-
-# Make it faster
-chr () {
+pen-chr () {
 	printf "\\$(printf '%03o' "$1")"
 }
-
-
-# Not sure how this works. How does tmux do it?
 
 if test "$EXTENDED_MODE" = "y"; then
     leftnum=0
@@ -81,12 +74,10 @@ if test "$EXTENDED_MODE" = "y"; then
     fi
 
 else
-    # x="$(perl -e "print chr(33 + $x)")"
-    # y="$(perl -e "print chr(33 + $y)")"
-    x="$(chr $(( 33 + $x )) )"
-    y="$(chr $(( 33 + $y )) )"
-    mousedown="$(chr 32)" # ' '
-    mouseup="$(chr 35)" # '#'
+    x="$(pen-chr $(( 33 + $x )) )"
+    y="$(pen-chr $(( 33 + $y )) )"
+    mousedown="$(pen-chr 32)" # ' '
+    mouseup="$(pen-chr 35)" # '#'
 
     mousedown_code="$(echo -n -e "\e[M$mousedown"; printf -- "%s" "$x$y")"
     mouseup_code="$(echo -n -e "\e[M$mouseup"; printf -- "%s" "$x$y")"
@@ -100,9 +91,4 @@ else
     code="$mousedown_code$mouseup_code"
 fi
 
-# printf -- "%s\n" "$code" | tv
-# printf -- "%s\n" "$code" > "$TTY"
 printf -- "%s" "$code"
-
-# ttyecho -n "$TTY" "$code"
-# ttyecho "$TTY" "$code"
