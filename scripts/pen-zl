@@ -19,12 +19,12 @@ case "$opt" in
     ;;
 
     qtv-last-output) {
-        pen-tm -f capture-stdout | remove-trailing-blank-lines | sed '/^$/d' | tac | sed -n -e 1d -e '0,/»/p' | tac | sed 1d | qtv -sph
+        pen-tm -f capture-stdout | remove-trailing-blank-lines | sed '/^$/d' | tac | sed -n -e 1d -e '0,/»/p' | tac | sed 1d | pen-qtv -sph
     }
     ;;
 
     qtv-term) {
-        pen-tm -f capture-stdout | remove-trailing-blank-lines | qtv -f -nw
+        pen-tm -f capture-stdout | remove-trailing-blank-lines | pen-qtv -f -nw
     }
     ;;
 
