@@ -8,6 +8,10 @@ if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host
     exit "$?"
 fi
 
+if [ -f ~/.shellrc ]; then
+    . ~/.shellrc
+fi
+
 # This creates the initial frame
 
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null
