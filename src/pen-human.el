@@ -1,3 +1,6 @@
+(defun pen-display-p ()
+  (pen-snq "display-p"))
+
 (defun pen-start-hidden-terminal ()
   (interactive)
   (pen-sps "pen-hidden-terminal")
