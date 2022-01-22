@@ -599,6 +599,9 @@
     (bindings--define-key menu [mi-pen-start-hidden-terminal]
       '(menu-item "Start hidden human terminal" pen-start-hidden-terminal
                   :help "When a human is prompted, it will appear in the hidden terminal"))
+    (bindings--define-key menu [mi-pen-start-hidden-terminal-cterm]
+      '(menu-item "Start hidden human terminal in cterm" pen-start-hidden-terminal-cterm
+                  :help "When a human is prompted, it will appear in the hidden terminal"))
     (bindings--define-key menu [mi-menu-bar-pensieve-menu]
       `(menu-item "PenSieve" ,menu-bar-pensieve-menu
                   :help "Mount imaginary filesystems"))
