@@ -17,6 +17,11 @@
   (pen-sps
    (pen-cmd "pen-e" "qa")))
 
+(defun pen-ka ()
+  (interactive)
+  (pen-sps
+   (pen-cmd "pen-e" "ka")))
+
 (defun pen-sa ()
   (interactive)
   (pen-sps
