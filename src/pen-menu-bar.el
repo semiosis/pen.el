@@ -643,6 +643,19 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-common-menu
+  (let ((menu (make-sparse-keymap "Common")))
+    (bindings--define-key menu [pen-run-prompt-function]
+      `(menu-item "Run prompt function" ,pen-run-prompt-function
+                  :help "Run a prompt function interactively"))
+    (bindings--define-key menu [pen-sps]
+      `(menu-item "Split screen shell sensibly" ,pen-sps
+                  :help "Open a shell in a split screen sensibly"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (if (pen-snq "inside-docker-p")
     (progn
       (bindings--define-key global-map [menu-bar file] nil)
@@ -688,6 +701,9 @@
 
       (bindings--define-key global-map [menu-bar utilities]
         (cons "Utilities" menu-bar-utils-menu))
+
+      (bindings--define-key global-map [menu-bar common]
+        (cons "Common" menu-bar-common-menu))
 
       (bindings--define-key global-map [menu-bar terminals]
         (cons "Terminals" menu-bar-terminals-menu))
