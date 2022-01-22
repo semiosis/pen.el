@@ -248,6 +248,9 @@
     (bindings--define-key menu [mi-pen-add-key-ai21]
       '(menu-item "Add AI21 key" pen-add-key-ai21
                   :help "Add, edit or remove the AI21 key"))
+    (bindings--define-key menu [mi-pen-add-key-hf]
+      '(menu-item "Add HuggingFace key" pen-add-key-hf
+                  :help "Add, edit or remove the HuggingFace key"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
