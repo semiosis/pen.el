@@ -9,7 +9,7 @@
     (pen-sps "pen-hidden-terminal -ct"))
   (message "The hidden terminal has started somewhere."))
 
-(defun pen-start-hidden-terminal-in-cterm ()
+(defun pen-start-hidden-terminal-in-pet ()
   (interactive)
   (pen-start-hidden-terminal t))
 
