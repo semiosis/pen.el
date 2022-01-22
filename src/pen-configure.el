@@ -34,4 +34,6 @@
     (f-touch key-path)
     (f-write-text key 'utf-8 key-path)))
 
+(require 'pen-keys)
+
 (provide 'pen-configure)
