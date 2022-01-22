@@ -25,9 +25,9 @@ export DISPLAY
 
 # pen sh pen-tm ns -a -np -n human bash
 if test "$in_pet" = "y"; then
-    pen sh pen-xt -hidden pen-tm ns -a -np -n human bash
+    pen sh pen-xt -hidden pen-tm ns -a -np -n human zsh
 elif test "$pet_in" = "y"; then
     pen sh pen-xt -hidden pen-tm ns -a -np -n human pet
 else
-    pen sh pen-xt -hidden pet pen-tm ns -a -np -n human bash
+    pen sh pen-xt -hidden pet pen-tm ns -a -np -n human zsh
 fi
