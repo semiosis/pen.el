@@ -13,9 +13,9 @@ export PROMPTSD="$EMACSD/prompts"
 export BROWSER="eww -x"
 export MIRRORD="$HOME/text-mirror"
 
-test -d "/root/.emacs.d/host/prompts" && : "${PEN_PROMPTS:="/root/.emacs.d/host/prompts"}"
-test -d "/root/.emacs.d/prompts" && : "${PEN_PROMPTS:="/root/.emacs.d/prompts"}"
-export PEN_PROMPTS
+test -d "/root/.emacs.d/host/prompts" && : "${PEN_PROMPTS_DIR:="/root/.emacs.d/host/prompts"}"
+test -d "/root/.emacs.d/prompts" && : "${PEN_PROMPTS_DIR:="/root/.emacs.d/prompts"}"
+export PEN_PROMPTS_DIR
 
 test -d "/root/.emacs.d/host/prompts/prompts" && : "${PROMPTS:="/root/.emacs.d/host/prompts/prompts"}"
 test -d "/root/.emacs.d/prompts/prompts" && : "${PROMPTS:="/root/.emacs.d/prompts/prompts"}"
@@ -25,17 +25,18 @@ test -d "/root/.emacs.d/host/pen.el" && : "${PENEL_DIR:="/root/.emacs.d/host/pen
 test -d "/root/.emacs.d/pen.el" && : "${PENEL_DIR:="/root/.emacs.d/pen.el"}"
 export PENEL_DIR
 
-test -d "/root/.emacs.d/host/engines" && : "${ENGINES:="/root/.emacs.d/host/engines"}"
-test -d "/root/.emacs.d/engines" && : "${ENGINES:="/root/.emacs.d/engines"}"
+test -d "/root/.emacs.d/host/engines" && : "${PEN_ENGINES_DIR:="/root/.emacs.d/host/engines"}"
+test -d "/root/.emacs.d/engines" && : "${PEN_ENGINES_DIR:="/root/.emacs.d/engines"}"
 export PEN_ENGINES_DIR
 
 test -d "/root/.emacs.d/host/engines/engines" && : "${ENGINES:="/root/.emacs.d/host/engines/engines"}"
 test -d "/root/.emacs.d/engines/engines" && : "${ENGINES:="/root/.emacs.d/engines/engines"}"
 export ENGINES
 
-test -d "/root/.emacs.d/host/pensieve" && : "${PENSIEVE:="/root/.emacs.d/host/pensieve"}"
-test -d "/root/.emacs.d/pensieve" && : "${PENSIEVE:="/root/.emacs.d/pensieve"}"
+test -d "/root/.emacs.d/host/pensieve" && : "${PENSIEVE_DIR:="/root/.emacs.d/host/pensieve"}"
+test -d "/root/.emacs.d/pensieve" && : "${PENSIEVE_DIR:="/root/.emacs.d/pensieve"}"
 export PENSIEVE_DIR
+export PENSIEVE="$PENSIEVE_DIR"
 
 agi() {
     apt install -y "$@"
