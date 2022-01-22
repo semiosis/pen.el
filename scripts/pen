@@ -162,6 +162,10 @@ If it's still broken, please make an issue on GitHub.
 If you currently have a working setup, don't pull updates unless you want the newest features.
 Or report to mullikine on Discord: https://discord.gg/JwKGbAdNHR
 https://github.com/semiosis/pen.el/
+
+Network protocols (in development):
+- ࿋ Semiosis Protocol
+- Alethea.AI
 HEREDOC
 
 is_tty() { [ -t 1 ]; }
