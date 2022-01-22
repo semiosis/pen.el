@@ -18,5 +18,5 @@ if test "$here" = "y"; then
 else
     CMD="$(cmd "$@")"
     : ${CMD:="$(cmd "$@")"}
-    tm -d nw -sw -t localhost_current: "echo loading video...; asciinema-play -h $CMD"
+    pen-tm -d nw -sw "echo loading video...; pen-asciinema-play -h $CMD"
 fi
