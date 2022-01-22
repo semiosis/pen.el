@@ -192,7 +192,7 @@ offline and in private if you have the storage
 capacity, memory and video card memory to run them.
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim raw
-  (pen-list2str (pen-long-complete (pf-asktutor/3 "vscode" "packages" "What are some useful packages?" :no-select-result t)))
+  (pen-etv (pen-list2str (upd (pen-long-complete (pf-asktutor/3 "vscode" "packages" "What are some useful packages?" :no-select-result t)))))
 #+END_SRC
 
 #+RESULTS:
