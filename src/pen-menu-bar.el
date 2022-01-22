@@ -638,6 +638,16 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-demos-menu
+  (let ((menu (make-sparse-keymap "Terminals")))
+    (bindings--define-key menu [mi-pen-tm-asciinema-play]
+      '(menu-item "Asciinema Play" pen-tm-asciinema-play
+                  :help "Play an asciinema recording"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-chatbots-menu
   (let ((menu (make-sparse-keymap "Chatbots")))
     (bindings--define-key menu [mi-menu-bar-apostrophe-menu]
@@ -765,6 +775,9 @@
 
       (bindings--define-key global-map [menu-bar config]
         (cons "Configure" menu-bar-configure-menu))
+
+      (bindings--define-key global-map [menu-bar demos]
+        (cons "Demos" menu-bar-demos-menu))
 
       (bindings--define-key global-map [menu-bar documents]
         (cons "Documents" menu-bar-documents-menu))
