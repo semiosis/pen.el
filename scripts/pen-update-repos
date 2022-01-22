@@ -1,4 +1,22 @@
 #!/bin/bash
 export TTY
 
+if test -n "$PENEL_DIR"; then
+    cd "$PENEL_DIR"
+    git pull
+fi
 
+if test -n "$PROMPTS_DIR"; then
+    cd "$PROMPTS_DIR"
+    git pull
+fi
+
+if test -n "$ENGINES_DIR"; then
+    cd "$ENGINES_DIR"
+    git pull
+fi
+
+if test -n "$PENSIEVE_DIR"; then
+    cd "$PENSIEVE_DIR"
+    git pull
+fi
