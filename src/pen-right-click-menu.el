@@ -212,7 +212,46 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
-        ("> pen" :call rcm-pen)
+        ("> prompt functions" :call rcm-prompt-functions)
+        ("> apps" :call rcm-apps)
+        ("> ink"
+         :call rcm-ink
+         :if (sor (lax-plist-get (text-properties-at (point)) 'PEN_MODEL)
+                  (lax-plist-get (text-properties-at (point)) 'PEN_ENGINE)
+                  (lax-plist-get (text-properties-at (point)) 'PEN_LM_COMMAND)))
+        ("prose"
+         ("Cancel" :call identity-command)
+         ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
+         ("translate" :call pf-translate-from-world-language-x-to-y/3 :if (pen-selected-p))
+         ("thesaurus" :call pf-thesaurus/1)
+         ("paraphrase" :call pf-paraphrase/1 :if (pen-selected-p))
+         ("tldr" :call pf-tldr-summarization/1 :if (pen-selected-p))
+         ("eli5" :call pf-eli5-explain-like-i-m-five/1 :if (pen-selected-p))
+         ("clean prose" :call pf-clean-prose/1 :if (pen-selected-p))
+         ("Example of word usage" :call pf-get-an-example-sentence-for-a-word/1)
+         ("transform prose" :call pf-transform-prose/2)
+         ("correct grammar" :call pf-correct-grammar/1 :if (pen-selected-p))
+         ("correct grammar 2" :call pf-correct-grammar-2/1 :if (pen-selected-p))
+         ("vexate" :call pf-complicated-explanation-of-how-to-x/1 :if (pen-selected-p))
+         ("correct English spelling and grammar" :call pf-correct-english-spelling-and-grammar/1 :if (pen-selected-p))
+         ("define term" :call pen-define :if (pen-selected-p))
+         ("bullet points -> first-hand account" :call pf-meeting-bullet-points-to-summary/1 :if (pen-selected-p)))
+        ("code"
+         ("Cancel" :call identity-command)
+         ("> generate program" :call rcm-generate-program)
+         ("LSP explain error" :call pen-lsp-explain-error)
+         ("explain error" :call pf-explain-error/2)
+         ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
+         ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
+         ;; ("add comments" :call pf-annotate-code-with-commentary/2)
+         ("guess function name" :call pf-guess-function-name/1)
+         ("transform code" :call pf-transform-code/3)
+         ("lint awk" :call pen-imagine-awk-linting)
+         ("Example of usage" :call pf-get-an-example-of-the-usage-of-a-function/2)
+         ("correct the syntax" :call pf-correct-the-syntax/2)
+         ("add comments" :call pf-add-comments-to-code/2)
+         ("generate from description" :call pf-code-generator-from-description/1)
+         ("generate regex for above" :call pf-gpt-j-generate-regex/2))
         ("Kill current buffer" :call kill-current-buffer)
         ("(Accept) Save then kill buffer and emacsclient" :call pen-save-and-kill-buffer-window-and-emacsclient)
         ("(Abort) Revert and kill buffer and emacsclient" :call pen-revert-kill-buffer-and-window)))
@@ -239,61 +278,27 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 ;; - I need to figure out organisation
 ;; - Separate into prose and code, or make tags for categories
 
-(def-right-click-menu rcm-pen
+(def-right-click-menu rcm-apps
+  `(("Cancel" :call identity-command)
+    ("start ii" :call pen-start-imaginary-interpreter)
+    ("chat to a subject-matter expert" :call apostrophe-start-chatbot-from-selection)
+    ("search the imaginary web" :call pen-browse-url-for-passage)))
+
+(def-right-click-menu rcm-prompt-functions
   `(("Cancel" :call identity-command)
     ("translate" :call pf-translate-from-world-language-x-to-y/3)
     ("transpile" :call pf-transpile/3)
-    ("chat to a subject-matter expert" :call apostrophe-start-chatbot-from-selection)
-    ("search the imaginary web" :call pen-browse-url-for-passage)
-    ("LSP explain error" :call pen-lsp-explain-error)
-    ("explain error" :call pf-explain-error/2)
+    
     ("Complete until EOD" :call pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1 :if (pen-selected-p))
     ("> explain code" :call rcm-explain-code)
     ("> cheap" :call rcm-cheap)
-    ("> ink"
-     :call rcm-ink
-     :if (sor (lax-plist-get (text-properties-at (point)) 'PEN_MODEL)
-              (lax-plist-get (text-properties-at (point)) 'PEN_ENGINE)
-              (lax-plist-get (text-properties-at (point)) 'PEN_LM_COMMAND)))
-    ("prose"
-     ("Cancel" :call identity-command)
-     ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
-     ("translate" :call pf-translate-from-world-language-x-to-y/3 :if (pen-selected-p))
-     ("thesaurus" :call pf-thesaurus/1)
-     ("paraphrase" :call pf-paraphrase/1 :if (pen-selected-p))
-     ("tldr" :call pf-tldr-summarization/1 :if (pen-selected-p))
-     ("eli5" :call pf-eli5-explain-like-i-m-five/1 :if (pen-selected-p))
-     ("clean prose" :call pf-clean-prose/1 :if (pen-selected-p))
-     ("Example of word usage" :call pf-get-an-example-sentence-for-a-word/1)
-     ("transform prose" :call pf-transform-prose/2)
-     ("correct grammar" :call pf-correct-grammar/1 :if (pen-selected-p))
-     ("correct grammar 2" :call pf-correct-grammar-2/1 :if (pen-selected-p))
-     ("vexate" :call pf-complicated-explanation-of-how-to-x/1 :if (pen-selected-p))
-     ("correct English spelling and grammar" :call pf-correct-english-spelling-and-grammar/1 :if (pen-selected-p))
-     ("define term" :call pen-define :if (pen-selected-p))
-     ("bullet points -> first-hand account" :call pf-meeting-bullet-points-to-summary/1 :if (pen-selected-p)))
-    ("code"
-     ("Cancel" :call identity-command)
-     ("> generate program" :call rcm-generate-program)
-     ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
-     ("transpile" :call pf-transpile-from-programming-language-x-to-y/3)
-     ;; ("add comments" :call pf-annotate-code-with-commentary/2)
-     ("guess function name" :call pf-guess-function-name/1)
-     ("transform code" :call pf-transform-code/3)
-     ("lint awk" :call pen-imagine-awk-linting)
-     ("Example of usage" :call pf-get-an-example-of-the-usage-of-a-function/2)
-     ("correct the syntax" :call pf-correct-the-syntax/2)
-     ("add comments" :call pf-add-comments-to-code/2)
-     ("generate from description" :call pf-code-generator-from-description/1)
-     ("generate regex for above" :call pf-gpt-j-generate-regex/2))
     ("> word/term" :call rcm-term :if (pen-word-clickable))
     ("keywords/classify" :call pen-extract-keywords)
     ("get docs" :call pf-get-documentation-for-syntax-given-screen/2)
     ("define for glossary" :call pen-add-to-glossary)
     ("define term (general knowledge)" :call pen-define-general-knowledge)
     ("define term (detect language)" :call pen-define-detectlang)
-    ("detect language here" :call pen-detect-language-context)
-    ("start ii" :call pen-start-imaginary-interpreter)))
+    ("detect language here" :call pen-detect-language-context)))
 
 
 (def-right-click-menu rcm-cheap
