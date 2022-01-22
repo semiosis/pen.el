@@ -640,8 +640,8 @@
 
 (defset menu-bar-demos-menu
   (let ((menu (make-sparse-keymap "Terminals")))
-    (bindings--define-key menu [mi-pen-tm-asciinema-play]
-      '(menu-item "Asciinema Play" pen-tm-asciinema-play
+    (bindings--define-key menu [mi-pen-demo-installation]
+      '(menu-item "Installation" pen-demo-installation
                   :help "Play an asciinema recording"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
