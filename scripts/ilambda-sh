@@ -113,6 +113,8 @@ fi
 
 echo "Enter <function name> <args...>"
 echo "For example: '𝑖λ: colorof watermelon'"
+echo "         or: '𝑖λ: color-of sky'"
+echo "         or: '𝑖λ: \"color of\" strawberry'"
 echo
 
 export USE_CONVERSATION_MODE=y
