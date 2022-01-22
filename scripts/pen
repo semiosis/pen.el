@@ -1376,6 +1376,9 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/pensieve" && : "${PENSIEVE_DIR:="$MYGIT/semiosis/pensieve"}"
     test -d "pensieve" && : "${PENSIEVE_DIR:="`pwd`/pensieve"}"
 
+    test -n "$MYGIT" && test -d "$MYGIT/semiosis/rhizome" && : "${RHIZOME_DIR:="$MYGIT/semiosis/rhizome"}"
+    test -d "rhizome" && : "${RHIZOME_DIR:="`pwd`/rhizome"}"
+
     test -d "$MYGIT/semiosis/openai-api.el" && : "${OPENAI_API_EL_DIR:="$MYGIT/semiosis/openai-api.el"}"
     test -d "openai-api.el" && : "${OPENAI_API_EL_DIR:="`pwd`/openai-api.el"}"
     # : "${OPENAI_API_EL_DIR:="$(read -ep "OPENAI_API_EL_DIR (leave empty to use docker): ")"}"
@@ -1437,6 +1440,13 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     if ! test "$batch" = "y"; then
         test -d "$PENSIEVE_DIR" && yn "Pull pensieve repo? (recommended)" && (
             cd "$PENSIEVE_DIR"
+            git pull origin master
+        )
+    fi
+
+    if ! test "$batch" = "y"; then
+        test -d "$RHIZOME_DIR" && yn "Pull rhizome repo? (recommended)" && (
+            cd "$RHIZOME_DIR"
             git pull origin master
         )
     fi
@@ -1512,6 +1522,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
         $(test -n "$CONTRIB_DIR" && printf -- "%s " -v "$CONTRIB_DIR:/root/.emacs.d/host/pen-contrib.el" ) \
         $(test -n "$PENSIEVE_DIR" && printf -- "%s " -v "$PENSIEVE_DIR:/root/.emacs.d/host/pensieve" ) \
+        $(test -n "$RHIZOME_DIR" && printf -- "%s " -v "$RHIZOME_DIR:/root/.emacs.d/host/rhizome" ) \
         $(test -n "$GLOSSARIES_DIR" && printf -- "%s " -v "$GLOSSARIES_DIR:/root/.emacs.d/host/glossaries" ) \
         $(test -n "$OPENAI_API_EL_DIR" && printf -- "%s " -v "$OPENAI_API_EL_DIR:/root/.emacs.d/host/openai-api.el" ) \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
