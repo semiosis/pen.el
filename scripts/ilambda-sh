@@ -94,7 +94,7 @@ if ! test "$NORL" = "y"; then
 fi
 
 # ilambda-sh-logo 1>&2
-echo ilambda REPL | hls red 1>&2
+echo ilambda REPL | pen-hls red 1>&2
 
 # pf-code-snippet-from-natural-language/2
 # pf-ilambda-sh/2
@@ -127,7 +127,7 @@ while IFS=$'\n' read -p "𝑖λ: " -r fun_and_args; do
 
     export UPDATE
 
-    eval "peni $fun_and_args" | jq -r ".[]"
+    eval "peni -u $fun_and_args" | jq -r ".[]"
 
     lastcmd="$fun_and_args"
 done
