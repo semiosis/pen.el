@@ -1,0 +1,141 @@
+apply() {
+    f="$1"
+    shift
+
+    for (( i = 1; i <= $#; i++ )); do
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG" | eval "$f"
+    done
+}
+
+gcd() {
+    dir="$(gc "$1")"
+    if test -d "$dir"; then
+        cd "$dir"
+    fi
+}
+
+mcd() {
+  # mkdir -p "$1" && cd "$1";
+
+  last_arg="${@: -1}"
+
+  mkdir -p "$@" && cd "$last_arg";
+}
+
+mvd() {
+  mv "$1" "$2" && cd "$2";
+}
+
+rfc() {
+  cd `racket -l find-collection/run -- $@`
+}
+
+# interactive version
+rfci() {
+  cd `racket -l find-collection/run -- -i $@`
+}
+
+# https://stackoverflow.com/questions/12340846/bash-shell-script-to-find-the-closest-parent-directory-of-several-files
+longest_common_prefix() {
+    declare -a names
+    declare -a parts
+    declare i=0
+
+    names=("$@")
+    name="$1"
+    while x=$(dirname "$name"); [ "$x" != "/" ]
+    do
+        parts[$i]="$x"
+        i=$(($i + 1))
+        name="$x"
+    done
+
+    for prefix in "${parts[@]}" /
+    do
+        for name in "${names[@]}"
+        do
+            if [ "${name#$prefix/}" = "${name}" ]
+            then continue 2
+            fi
+        done
+        echo "$prefix"
+        break
+    done
+}
+
+path_without_prefix() {
+    local prefix="$1/"
+    shift
+    local arg
+    for arg in "$@"
+    do
+        echo "${arg#$prefix}"
+    done
+}
+
+install_shanepy_here() {
+    # This installs to a venv if I have already sourced.
+
+    ( cd $MYGIT/mullikine/shanepy; python setup.py build -b /tmp/shanepy install --record /tmp/files.txt; )
+}
+
+sactivate() {
+    source env/bin/activate
+}
+
+snewenv() {
+    snewenv3.5 "$@"
+}
+
+snewenv3.6() {
+    python3.6 -m venv env
+}
+
+snewenv3.5() {
+    python3.5 -m venv env
+}
+
+cd () {
+    ret=0
+
+    if test "$#" -eq 1 && test -h "$1"
+    then
+        rp="$(realpath "$1")"
+        if test -d "$rp"
+        then
+            cd "$rp"
+        elif test -f "$rp"
+        then
+            dn="$(dirname "$rp")"
+            cd "$dn"
+        fi
+    elif [[ "x$*" = "x..." ]]
+    then
+        cd ../..
+    elif [[ "x$*" = "x...." ]]
+    then
+        cd ../../..
+    elif [[ "x$*" = "x....." ]]
+    then
+        cd ../../..
+    elif [[ "x$*" = "x......" ]]
+    then
+        cd ../../../..
+    else
+        if [ -z "$@" ]; then
+            CWD="$HOME"
+        else
+            CWD="$@"
+        fi
+        # silence to stop vim gf complaining. can't be bothered finding the real reason
+        # enable again
+        builtin cd "$CWD"
+        ret="$?"
+        CWD="`pwd`"
+    fi
+
+    # . $HOME/scripts/libraries/when-cd.sh
+
+    return "$ret"
+}

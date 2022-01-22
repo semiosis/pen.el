@@ -17,7 +17,7 @@ setopt no_append_history
 setopt null_glob
 
 # Have the full path here because PATH may not be set up
-: ${TTY:="$($HOME/scripts/tm-tty)"}
+: ${TTY:="$(pen-tm-tty)"}
 
 # To stop bailing on the command when it fails to match a glob pattern.
 # Put this option in your .zshrc:
@@ -32,7 +32,7 @@ export HIST_IGNORE_ALL_DUPS
 export DISABLE_AUTO_UPDATE="true"
 export DISABLE_AUTO_TITLE="true"
 
-omzdir=$MYGIT/mullikine/ohmyzsh
+omzdir=/root/repos/oh-my-zsh
 
 if test -f "$omzdir/oh-my-zsh.sh"; then
     export ZSH="$omzdir"
@@ -105,7 +105,7 @@ unsetopt autocd
 unsetopt auto_name_dirs
 
 if [ -n "$CWD" ] && ! test "$CWD" = "$(pwd)"; then
-    printf -- "%s\n" "Inherited CWD: $CWD" | mnm | hls nearblack 1>&2
+    printf -- "%s\n" "Inherited CWD: $CWD" | pen-mnm | pen-hls nearblack 1>&2
 
     cd "$CWD"
 else
@@ -154,7 +154,7 @@ bindkey "\ev" edit-command-line
 function cmd-niceify() {
     tf_zle="$(mktemp ${TMPDIR}/tf_zleXXXXXX || echo /dev/null)"
 
-    print -Rz - "$(eval "cmd-nice $(print -R - "$PREBUFFER$BUFFER")")"
+    print -Rz - "$(eval "cmd-nice-posix $(print -R - "$PREBUFFER$BUFFER")")"
 
     zle send-break		# Force reload from the buffer stack
 }
@@ -188,7 +188,7 @@ function zsh-tmux-edit-pane {
     tf_zle="$(mktemp ${TMPDIR}/tf_zleXXXXXX || echo /dev/null)"
     print -R - "$PREBUFFER$BUFFER" > "$tf_zle"
 
-    tm -te -d capture -clean -noabort - 2>/dev/null | vs +G
+    pen-tm -te -d capture -clean -noabort - 2>/dev/null | pen-vs +G
 
     print -Rz - "$(<$tf_zle)"
     zle send-break		# Force reload from the buffer stack
@@ -274,10 +274,10 @@ function source-sh-source() {
 
     tf_zle_contents="$(cat "$tf_zle")"
 
-    nvc -E "sh-source | ds -s source-to-source"
-    sts="$(gs source-to-source | umn)"
+    nvc -E "sh-source | pen-ds -s source-to-source"
+    sts="$(gs source-to-source | pen-umn)"
     if test -n "$sts"; then
-        . "$(gs source-to-source | umn)"
+        . "$(gs source-to-source | pen-umn)"
     fi
 
     print -Rz - "$(<$tf_zle)"
@@ -347,11 +347,11 @@ bindkey "\C-r" history-incremental-pattern-search-backward
 bindkey -s "^[r" "^A^Kranger\r"
 bindkey -s "^[o" "^A^Kpopd\r"
 
-f_tmux_split_h() { tm -d -te sph }
+f_tmux_split_h() { pen-tm -d -te sph }
 zle -N f_tmux_split_h
 bindkey "^[h" f_tmux_split_h
 
-f_tmux_split_v() { tm -d -te spv }
+f_tmux_split_v() { pen-tm -d -te spv }
 zle -N f_tmux_split_v
 bindkey "^[H" f_tmux_split_v
 
@@ -379,9 +379,9 @@ bindkey -s "^[[20;3~" "^A^K^D"
 # M-F12 - quit (like vim)
 bindkey -s "^[[24;3~" "^A^K^D"
 # S-F8 - insert date (like vim)
-bindkey -s "^[[19;2~" "$(k f8)"
+bindkey -s "^[[19;2~" "$(date +%d.%m.%y)"
 # M-F8 - insert date (like vim)
-bindkey -s "^[[19;3~" "$(k f8)"
+bindkey -s "^[[19;3~" "$(date +%d.%m.%y)"
 # C-;
 bindkey -s "^[[27;5;59~" ";"
 # C-:
@@ -415,32 +415,32 @@ bindkey -e '\e[1;3Q' vi-yank-x-selection
 zmodload -i zsh/parameter
 
 copy-last-command-output() {
-    zl copy-last-output &>/dev/null
+    pen-zl copy-last-output &>/dev/null
 }
 zle -N copy-last-command-output
 bindkey "^X^K" copy-last-command-output
 
 copy-last-line() {
-    zl copy-last-line &>/dev/null
+    pen-zl copy-last-line &>/dev/null
 }
 
 zle -N copy-last-line
 bindkey "^X^L" copy-last-line
 
 qtv-term() {
-    zl qtv-term
+    pen-zl qtv-term
 }
 zle -N qtv-term
 bindkey "^X^H" qtv-term
 
 qtv-last-output() {
-    zl qtv-last-output
+    pen-zl qtv-last-output
 }
 zle -N qtv-last-output
 bindkey "^X^V" qtv-last-output
 
 copy-zle() {
-  printf -- "%s" "$BUFFER" | xc -i
+  printf -- "%s" "$BUFFER" | pen-xc -i
 }
 
 zle -N copy-zle
@@ -494,26 +494,23 @@ export TERMINFO=~/.terminfo
 # This is deprecated, so disable it. Not sure what is setting it.
 unset GREP_OPTIONS
 
-export DUALMODE=$VAS/projects/dualmode
-export SENSING3D=/var/smulliga/projects/3dsensing/packages/3dsensing
-
-. $HOME/scripts/libraries/when-cd.sh
+# . $HOME/scripts/libraries/when-cd.sh
 
 zmodload -i zsh/parameter
 copy-last-command-with-wd() {
-    echo "cd \"$(pwd)\"; $history[$((HISTCMD-1))]" | sed 's//\\b/g' | mnm | xc -n -i 2>/dev/null
+    echo "cd \"$(pwd)\"; $history[$((HISTCMD-1))]" | sed 's//\\b/g' | pen-mnm | pen-xc -n -i 2>/dev/null
 }
 zle -N copy-last-command-with-wd
 bindkey "\ek" copy-last-command-with-wd
 
 {
     function zsh-paste-after() {
-        text_to_add="$(xc -ub | s chomp)"
+        text_to_add="$(pen-xc -ub | chomp)"
         RBUFFER="${text_to_add}${RBUFFER}"
     }
 
     function zsh-paste-before() {
-        text_to_add="$(xc -ub | s chomp)"
+        text_to_add="$(pen-xc -ub | chomp)"
         LBUFFER="${LBUFFER}${text_to_add}"
     }
 
@@ -536,12 +533,12 @@ fzf-dirs() {
 
     tput sc # Set curser position
 
-    F d | mfz -m -P -pscript "xa -E show-extensions-below 'echo; :' ls" | {
+    F d | pen-mfz -m -P -pscript "xa -E show-extensions-below 'echo; :' ls" | {
         input="$(cat)"
         if [ -n "$input" ]; then
-            printf -- "%s" "$input" | xc -s -i
+            printf -- "%s" "$input" | pen-xc -s -i
             exec </dev/tty
-            input="$(printf -- "%s" "$input" | umn)"
+            input="$(printf -- "%s" "$input" | pen-umn)"
             cd "$input"
             CWD="$input" zsh
         fi
@@ -559,12 +556,12 @@ fzf-files() {
 
     tput sc
 
-    F f -f | mfz -m | {
+    F f -f | pen-mfz -m | {
         input="$(cat)"
         if [ -n "$input" ]; then
-            printf -- "%s" "$input" | xc -s -i
+            printf -- "%s" "$input" | pen-xc -s -i
             exec </dev/tty
-            rifle -- "$(printf -- "%s" "$input" | umn)"
+            rifle -- "$(printf -- "%s" "$input" | pen-umn)"
         fi
     }
 }
@@ -591,7 +588,7 @@ export HH_CONFIG=hicolor        # get more colors
 export SHELL=zsh
 export PATH
 
-# This is so I can run tm commands taken from autofiles file in zsh.
+# This is so I can run pen-tm commands taken from autofiles file in zsh.
 export TM_SESSION_NAME
 export PARENT_SESSION_ID
 export PARENT_SESSION_NAME
