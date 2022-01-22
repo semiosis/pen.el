@@ -1,5 +1,6 @@
-(defun pen-tm-asciinema-play (url)
-  (interactive (list (read-string "asciinema url:")))
+(defun pen-tm-asciinema-play (url &optional caption)
+  (interactive (list (read-string "asciinema url:")
+                     ""))
 
   (if (display-graphic-p)
       (eval
