@@ -1,0 +1,70 @@
+#!/bin/bash
+export TTY
+
+# Scripts relating to the zle / zsh line editor
+
+# $HOME/source/git/oh-pen-zsh/themes/more-minimal.zsh-theme
+
+opt="$1"
+shift
+case "$opt" in
+    copy-last-output) {
+        pen-tm -f get-last-output "»" | pen-xc -n -i
+    }
+    ;;
+
+    copy-last-line) {
+        pen-tm -f get-last-output "»" | tail -n 1 | pen-xc -n -i
+    }
+    ;;
+
+    qtv-last-output) {
+        pen-tm -f capture-stdout | remove-trailing-blank-lines | sed '/^$/d' | tac | sed -n -e 1d -e '0,/»/p' | tac | sed 1d | qtv -sph
+    }
+    ;;
+
+    qtv-term) {
+        pen-tm -f capture-stdout | remove-trailing-blank-lines | qtv -f -nw
+    }
+    ;;
+
+    wd|cwd|current-dir) {
+        wd="$1"
+        : ${wd:="$(pwd)"}
+        printf -- "%s" "$wd" | path-lasttwo
+    }
+    ;;
+
+    current-branches) {
+        ref_current="$(zl current-ref)"
+        ref_all="$(zl refs-equal-to-current-ref)"
+        if [ -n "$ref_all" ]; then
+            ref1="$ref_current ~ $ref_all"
+        else
+            ref1="$ref_current"
+        fi
+        ref2=$(git rev-parse --short HEAD 2> /dev/null)
+        if [ -n "$ref1" ]; then
+            ref3="$ref2 $ref1";
+        else
+            ref3="$ref2";
+        fi
+        ref4=$ref3 || return
+        echo ${ref4#refs/heads/}
+    }
+    ;;
+
+    current-ref) {
+        exec 2>/dev/null
+        git symbolic-ref HEAD | sed "s/refs\/heads\///g" | sed "s/refs\/remotes\///g"  | remove-surrounding-whitespace.awk
+    }
+    ;;
+
+    refs-equal-to-current-ref) {
+        exec 2>/dev/null
+        git show-ref | grep $(git rev-parse HEAD) | cut -d ' ' -f 2 | sed "s/refs\/heads\///g" | sed "s/refs\/remotes\///g" | grep -v "^$(zl current-ref)$" | tr '\n' " " | sed "s/ $//g"
+    }
+    ;;
+
+    *)
+esac

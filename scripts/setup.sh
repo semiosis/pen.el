@@ -377,7 +377,7 @@ agi colorized-logs
 # gnu parallel
 apt install parallel
 
-ln -sf ~/.emacs.d/host/pen.el/config/efm-langserver-config.yaml ~/.config/efm-langserver/config.yaml
+ln -sf ~/.emacs.d/pen.el/config/efm-langserver-config.yaml ~/.config/efm-langserver/config.yaml
 
 agi silversearcher-ag
 agi sshfs
@@ -483,3 +483,11 @@ agi feh
 
 mkdir -p ~/programs/zsh/dotfiles
 mkdir -p ~/.pen/downloads
+(
+cd ~/repos
+git clone --depth 1 "http://github.com/mullikine/oh-my-zsh"
+)
+ln -sf ~/.emacs.d/pen.el/config/zsh/zsh_aliases ~/.zsh_aliases
+ln -sf ~/.emacs.d/pen.el/config/zsh/zshenv ~/.zshenv
+ln -sf ~/.emacs.d/pen.el/config/zsh/zshrc ~/.zshrc
+ln -sf ~/.emacs.d/pen.el/config/shell_functions ~/.shell_functions
