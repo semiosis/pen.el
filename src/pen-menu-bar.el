@@ -266,6 +266,13 @@
     (bindings--define-key menu [mi-pen-connect-semiosis-protocol]
       '(menu-item "Connect to network" pen-connect-semiosis-protocol
                   :help "Connect Pen.el to the Semiosis Protocol"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-alethea-ai-menu
+  (let ((menu (make-sparse-keymap "Alethea.AI")))
     (bindings--define-key menu [mi-pen-connect-alethea-protocol]
       '(menu-item "Connect to network" pen-connect-alethea-protocol
                   :help "Connect Pen.el to the Alethea.AI"))
@@ -279,6 +286,9 @@
     (bindings--define-key menu [mi-menu-bar-protocol-menu]
       `(menu-item "࿋  Semiosis Protocol" ,menu-bar-protocol-menu
                   :help "Semiosis Protocol functions"))
+    (bindings--define-key menu [mi-menu-bar-protocol-menu]
+      `(menu-item "Alethea.AI" ,menu-bar-alethea-ai-menu
+                  :help "Alethea.AI functions"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
