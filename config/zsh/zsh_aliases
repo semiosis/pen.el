@@ -1,0 +1,37 @@
+alias history="fc -E -l 1|less -S +G"
+#
+#alias AUTHORS="vim AUTHORS"
+#alias README="vim README"
+#alias COPYING="vim COPYING"
+#alias INSTALL="vim INSTALL"
+#alias TODO="vim TODO"
+#
+#alias -s txt=vim
+#alias -s tex=vim
+#alias -s mmd=vim
+#alias -s md=vim
+#alias -s mac=vim
+#
+#alias -s conf=vim
+#alias -s sh=vim
+#
+#alias -s c=vim
+#alias -s cpp=vim
+# these are commented out so that it is faster to open files
+#alias -s h=vim
+#alias -s hpp=vim
+#
+#alias -s html=vim
+#alias -s js=vim
+#alias -s css=vim
+#alias -s java=vim
+#alias -s scpt=vim
+#alias -s sql=vim
+#alias -s rb=vim
+#alias -s py=vim
+#
+alias -g G='| grep'
+alias -g L='| less -S'
+alias -g WC='| wc -l'
+
+alias -g noglob git
