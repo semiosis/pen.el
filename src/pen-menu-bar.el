@@ -660,13 +660,13 @@
 (defset menu-bar-demos-menu
   (let ((menu (make-sparse-keymap "Demos")))
     (bindings--define-key menu [mi-pen-demo-installation]
-      '(menu-item "Installation" pen-demo-installation
+      '(menu-item "Installation of Pen.el" pen-demo-installation
                   :help "Demo the installation of Pen.el"))
     (bindings--define-key menu [mi-pen-demo-apostrophe]
-      '(menu-item "Apostrophe" pen-demo-apostrophe
+      '(menu-item "Talking to chatbots with Apostrophe" pen-demo-apostrophe
                   :help "Demo talking to chatbots"))
     (bindings--define-key menu [mi-pen-demo-paracosm]
-      '(menu-item "Paracosm" pen-demo-paracosm
+      '(menu-item "Mind-mapping with Paracosm" pen-demo-paracosm
                   :help "Mind-mapping with Augmented Intelligence"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
