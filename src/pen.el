@@ -83,6 +83,7 @@
 (require 'pen-cterm)
 (require 'pen-web)
 (require 'pen-esp)
+(require 'pen-openwith)
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
