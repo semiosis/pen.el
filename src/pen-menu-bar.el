@@ -266,6 +266,9 @@
     (bindings--define-key menu [mi-pen-connect-semiosis-protocol]
       '(menu-item "Connect to network" pen-connect-semiosis-protocol
                   :help "Connect Pen.el to the Semiosis Protocol"))
+    (bindings--define-key menu [mi-pen-connect-alethea-protocol]
+      '(menu-item "Connect to network" pen-connect-alethea-protocol
+                  :help "Connect Pen.el to the Alethea.AI"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
