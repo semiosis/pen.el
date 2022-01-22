@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+set -xv
+
 if test -n "$PENEL_DIR"; then
     cd "$PENEL_DIR"
     git pull
