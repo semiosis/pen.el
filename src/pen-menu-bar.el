@@ -242,7 +242,7 @@
     (bindings--define-key menu [mi-pen-add-key-hf]
       '(menu-item "Add HuggingFace key" pen-add-key-hf
                   :help "Add, edit or remove the HuggingFace key"))
-    (bindings--define-key menu [mi-pen-add-key-hf]
+    (bindings--define-key menu [mi-pen-add-key-alephalpha]
       '(menu-item "Add AlephAlpha key" pen-add-key-alephalpha
                   :help "Add, edit or remove the AlephAlpha key"))
     (bindings--define-key menu [mi-pen-add-key-alephalpha]
