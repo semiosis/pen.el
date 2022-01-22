@@ -5,8 +5,14 @@ export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -ct) {
-        in_cterm=y
+    -pet) {
+        in_pet=y
+        shift
+    }
+    ;;
+
+    -pet-in) {
+        pet_in=y
         shift
     }
     ;;
@@ -18,8 +24,10 @@ esac; done
 export DISPLAY
 
 # pen sh pen-tm ns -a -np -n human bash
-if test "$in_cterm" = "y"; then
+if test "$in_pet" = "y"; then
     pen sh pen-xt -hidden pen-tm ns -a -np -n human bash
+elif test "$pet_in" = "y"; then
+    pen sh pen-xt -hidden pen-tm ns -a -np -n human pet
 else
     pen sh pen-xt -hidden pet pen-tm ns -a -np -n human bash
 fi
