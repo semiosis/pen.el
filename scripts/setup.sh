@@ -496,3 +496,8 @@ ln -sf ~/.emacs.d/host/pen.el/config/zsh/git.zsh ~/.git.zsh
 
 # Ensure some directories
 mkdir -p /root/pensieves
+
+(
+cd ~/repos
+git clone "http://github.com/semiosis/rhizome"
+)
