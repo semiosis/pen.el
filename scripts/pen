@@ -1022,7 +1022,6 @@ case "$sn" in
 
         ARGS="$(cmd-nice-posix "$@")"
 
-        # set -- -e "(pps (car (progn (idefun $ifunc_name) (pen-one ($ifunc_name $ARGS)))))"
         set -- -e "(pps (progn (idefun $ifunc_name) ($ifunc_name $ARGS)))"
     }
     ;;
