@@ -220,7 +220,7 @@
     (bindings--define-key menu [mi-pen-watch-daemons]
       '(menu-item "Watch daemons" pen-watch-daemons
                   :help "Watch daemons as their availability changes"))
-    (bindings--define-key menu [mi-pen-qa]
+    (bindings--define-key menu [mi-pen-ka]
       '(menu-item "Kill all daemons" pen-ka
                   :help "Kill all daemon instances"))
     (bindings--define-key menu [mi-pen-fix-daemons]
