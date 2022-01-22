@@ -4,4 +4,4 @@
 
 (setq global-command-log-mode nil)
 
-(provide 'pen-command-log-mode)
+(provide 'pen-command-log)
