@@ -1,3 +1,15 @@
+(defun pen-acolyte-dired-prompts ()
+  (interactive)
+  (dired pen-prompts-directory))
+
+(defun pen-acolyte-dired-engines ()
+  (interactive)
+  (dired pen-engines-directory))
+
+(defun pen-acolyte-dired-penel ()
+  (interactive)
+  (dired pen-penel-directory))
+
 (defun pen-reload-config-file ()
   "Fuzzy selects a selects file to be loaded."
   (interactive)

@@ -147,17 +147,7 @@
 (setq x-alt-keysym 'meta)
 
 ;; Simplify the experience -- Super newb mode
-(defun pen-acolyte-dired-prompts ()
-  (interactive)
-  (dired pen-prompts-directory))
 
-(defun pen-acolyte-dired-engines ()
-  (interactive)
-  (dired pen-engines-directory))
-
-(defun pen-acolyte-dired-penel ()
-  (interactive)
-  (dired pen-penel-directory))
 
 (defun pen-acolyte-scratch ()
   (interactive)
