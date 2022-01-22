@@ -36,8 +36,8 @@ case "$opt" in
     ;;
 
     current-branches) {
-        ref_current="$(zl current-ref)"
-        ref_all="$(zl refs-equal-to-current-ref)"
+        ref_current="$(pen-zl current-ref)"
+        ref_all="$(pen-zl refs-equal-to-current-ref)"
         if [ -n "$ref_all" ]; then
             ref1="$ref_current ~ $ref_all"
         else
@@ -62,7 +62,7 @@ case "$opt" in
 
     refs-equal-to-current-ref) {
         exec 2>/dev/null
-        git show-ref | grep $(git rev-parse HEAD) | cut -d ' ' -f 2 | sed "s/refs\/heads\///g" | sed "s/refs\/remotes\///g" | grep -v "^$(zl current-ref)$" | tr '\n' " " | sed "s/ $//g"
+        git show-ref | grep $(git rev-parse HEAD) | cut -d ' ' -f 2 | sed "s/refs\/heads\///g" | sed "s/refs\/remotes\///g" | grep -v "^$(pen-zl current-ref)$" | tr '\n' " " | sed "s/ $//g"
     }
     ;;
 

@@ -41,20 +41,6 @@ path_without_prefix() {
     done
 }
 
-
-# Also known as 'u'
-
-# export the TTY into this. That way it can accept input and then
-# redirect output to the tty.
-# echo "$TTY"
-
-# Related:
-# $HOME/scripts/tp
-# $HOME/scripts/r
-
-# notify-send "$SHELL"
-# exit 0
-
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -f) {
         FAST=y
@@ -66,7 +52,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 export FAST
 
-
 while getopts -- tv name &>/dev/null; do
 case $name in
     t)  TIMESTAMP=y;;
@@ -77,11 +62,9 @@ done
 shift "$((OPTIND-1))"
 OPTIND=1
 
-
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
-
 
 cmd="$1"
 shift
@@ -105,15 +88,11 @@ case "$cmd" in
         set -v
         # Delete temporary files
 
-        # Not sure if deleting the .cache/bazel directory removes
-        # application files
         rm -rf ~/.cache/bazel/_bazel_shane
     }
     ;;
 
     mt|mimetype) #
-        # u mt "notes.txt"
-
         mt "$@"
     ;;
 
@@ -121,28 +100,25 @@ case "$cmd" in
         list-executables "$1"
 
         # Examples
-        # u lx $HOME/scripts:$HOME/local/bin
-        # u lx $HOME/scripts:$HOME/local/bin
+        # pen-ux lx $HOME/scripts:$HOME/local/bin
+        # pen-ux lx $HOME/scripts:$HOME/local/bin
     ;;
 
-
     rp)
-        # u nodirsuffix | xargs --no-run-if-empty -l1 realpath | u dirsuffix
-
         if ! stdin_exists ; then
             exec < <(printf -- "%s\n" "$@")
         fi
 
-        u nodirsuffix | awk 1 | while read -r line; do
+        pen-ux nodirsuffix | awk 1 | while read -r line; do
             realpath "$line"
-        done | u dirsuffix
+        done | pen-ux dirsuffix
     ;;
 
     ext)
         if test "$FAST" = "y"; then
             sed -n 's/.*\(\.[^.]\+\)$/\1/p'
         else
-            u bn | sed -n 's/.*\(\.[^.]\+\)$/\1/p'
+            pen-ux bn | sed -n 's/.*\(\.[^.]\+\)$/\1/p'
         fi
     ;;
 
@@ -157,7 +133,7 @@ case "$cmd" in
         dir="$3"
         test -n "$dir" && export TMPDIR="$dir"
 
-        # ns hi 1>&2
+        # pen-ns hi 1>&2
 
         mktemp -t "file_${template}_XXXXXX_rand-${RANDOM}_pid-$$.$ext"
     }
@@ -182,7 +158,6 @@ case "$cmd" in
         mkdir -p  "$slogdir"
 
         fp="$slogdir/$(date-ts).log"
-        # pen-pl "$fp" >&2
 
         tee >(filter >> "$fp")
     }
@@ -197,8 +172,6 @@ case "$cmd" in
 
     # It casts, so call it that
     dn|drn|dirname|cast-dirname) {
-        # awk 1 | xargs --no-run-if-empty -l1 dirname; exit # This way is more stable
-
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             -f) {
                 FORCE_DIRNAME=y
@@ -209,12 +182,8 @@ case "$cmd" in
             *) break;
         esac; done
 
-        awk 1 | u nodirsuffix | while read -r line; do
-            dirtest="$(p "$line" | umn)"
-
-            # tm -te dv "$dirtest"
-            # exit 0
-            # pen-pl "$dirtest" | tv
+        awk 1 | pen-ux nodirsuffix | while read -r line; do
+            dirtest="$(p "$line" | pen-umn)"
 
             if test -d "$dirtest" && ! test "$FORCE_DIRNAME" = "y"; then
                 pen-pl "$line"
@@ -240,13 +209,6 @@ case "$cmd" in
     ;;
 
     fn|bn) {
-        # I don't know how to use parallel
-        # awk 1 | parallel 'ext="{/}" ; mv -- {} foo/{/.}.bar.${ext##*.}'
-
-        # awk 1 | xargs --no-run-if-empty -l1 basename
-
-        # I just want something that works with lines that have spaces.
-
         awk 1 | while read -r line; do
             basename "$line"
         done
@@ -267,7 +229,7 @@ case "$cmd" in
 
     ks|kill-string) {
         string="$1"
-        ps -ef | grep "$string" | grep -v grep | s c 2 | xargs --no-run-if-empty kill
+        ps -ef | grep "$string" | grep -v grep | pen-str c 2 | xargs --no-run-if-empty kill
     }
     ;;
 
@@ -277,9 +239,6 @@ case "$cmd" in
     ;;
 
     lgpe|list-grep-process-environments) { # Can search through all processes' environments.
-        # pen-pl "$(u list-grep-process-environments $(:) | mfz -m)" | vim -
-        # u list-grep-processes SPACE
-
         COLUMNS=10000 ps -ef e |grep -i "$1"
     }
     ;;
@@ -292,18 +251,17 @@ case "$cmd" in
 
     append-histfile) {
         input="$(cat)"
-        # $HOME/notes2018/programs/hs
     }
     ;;
 
     lgpe-fzf-vim) {
-        tm nw "pen-pl \"$(u list-grep-process-environments $(:) | mfz -m)\" | vim -"
+        pen-tm nw "pen-pl \"$(u list-grep-process-environments $(:) | pen-mfz -m)\" | vim -"
     }
     ;;
 
     dirsuffix) { # Ensures directories and only directories (excluding symbolic links) show a slash at the end
         awk 1 | sed 's/\/\+$//' | while read -r line; do
-            testline="$(pen-pl "$line" | umn)"
+            testline="$(pen-pl "$line" | pen-umn)"
             if ! [ -h "$testline" ] && [ -d "$testline" ]; then
                 pen-pl "$line/"
             else
@@ -325,7 +283,8 @@ case "$cmd" in
     ;;
 
     when-cd) {
-        . $HOME/scripts/libraries/when-cd.sh
+        :
+        # . $HOME/scripts/libraries/when-cd.sh
     }
     ;;
 
@@ -339,10 +298,7 @@ case "$cmd" in
             args="$(qargs)"
             export -f longest_common_prefix
 
-            # printf -- "%s\n" $args | parallel longest_common_prefix
             printf -- "%s\n" $args | xargs longest-common-prefix
-            # printf -- "%s\n" "$args" | parallel longest_common_prefix
-             # | xargs -n 1 -P 10 -I {} bash -c 'echo_var "$@"' _ {}
         else
             longest-common-prefix "$@"
         fi
