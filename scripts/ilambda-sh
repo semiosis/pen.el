@@ -1,0 +1,133 @@
+#!/bin/bash
+export TTY
+
+# 𝑖λ·SH
+# Version 1.0, bash
+
+sn="$(basename "$0")"
+
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
+: "${USE_COMINT:="y"}"
+: "${USE_TERM:="n"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -nd) {
+        export NO_DOCKER=y
+        shift
+    }
+    ;;
+
+    -nt) {
+        export NO_TERM=y
+        shift
+    }
+    ;;
+
+    -com|-comint) {
+        USE_COMINT=y
+        USE_TERM=n
+        shift
+    }
+    ;;
+
+    -term) {
+        USE_COMINT=n
+        USE_TERM=y
+        shift
+    }
+    ;;
+
+    -nc|-nocomint) {
+        USE_COMINT=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+     -nv) {
+         # Used by cterm-docker, not comint
+         export USE_NVC=y
+         USE_COMINT=n
+         USE_TERM=y
+         shift
+     }
+     ;;
+
+     *) break;
+esac; done
+
+export USE_COMINT
+export USE_TERM
+
+if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; } && { test "$USE_COMINT" = y || test "$USE_TERM" = y; }; then
+    if test "$USE_TERM" = y; then
+        cterm-docker ilambda-sh -term "$@"
+    elif test "$USE_COMINT"; then
+        export NORL=y
+        pen sh ilambda-sh -nt -norl "$@"
+    fi
+    exit "$?"
+fi
+
+CMD="$(cmd-nice-posix "$@")"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -norl) {
+        NORL=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if ! test "$NORL" = "y"; then
+    rlwrap "$sn" -norl "$@"
+    exit $?
+fi
+
+# ilambda-sh-logo 1>&2
+echo ilambda REPL | hls red 1>&2
+
+# pf-code-snippet-from-natural-language/2
+# pf-ilambda-sh/2
+
+case "$sn" in
+    ilambda-sh) { prompt=pf-ilambda-sh/2; } ;;
+    nlsc) { prompt=pf-code-snippet-from-natural-language/2; } ;;
+
+    *)
+esac
+
+if test "$USE_COMINT" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+    comint -p "𝑖λ: " -E "ilambda-sh $CMD"
+    exit $?
+fi
+
+echo "Enter <function name> <args...>"
+echo "For example: '𝑖λ: colorof watermelon'"
+echo
+
+export USE_CONVERSATION_MODE=y
+
+while IFS=$'\n' read -p "𝑖λ: " -r fun_and_args; do
+    if test "$fun_and_args" = "!!"; then
+        fun_and_args="$lastcmd"
+        UPDATE=y
+    else
+        UPDATE=
+    fi
+
+    export UPDATE
+
+    eval "peni $fun_and_args" | jq -r ".[]"
+
+    lastcmd="$fun_and_args"
+done
