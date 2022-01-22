@@ -245,6 +245,9 @@
     (bindings--define-key menu [mi-pen-add-key-hf]
       '(menu-item "Add AlephAlpha key" pen-add-key-alephalpha
                   :help "Add, edit or remove the AlephAlpha key"))
+    (bindings--define-key menu [mi-pen-add-key-alephalpha]
+      '(menu-item "Add AlephAlpha key" pen-add-key-alephalpha
+                  :help "Add, edit or remove the AlephAlpha key"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
