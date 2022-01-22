@@ -7,4 +7,4 @@ export TTY
 export DISPLAY
 
 # pen sh pen-tm ns -a -np -n human bash
-pen sh pen-xt pen-tm ns -a -np -n human bash
+pen sh pen-xt -hidden pen-tm ns -a -np -n human bash
