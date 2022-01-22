@@ -2,6 +2,8 @@
 
 # sct "$(pen-rc .screen_temperature)"
 
+exec 2>/dev/null
+
 : "${DISPLAY:=":0"}"
 export DISPLAY
 
