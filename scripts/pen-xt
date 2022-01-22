@@ -79,6 +79,15 @@ if [ -z "$CMD" ]; then
     CMD=bash
 fi
 
+if test "$HIDDEN" = "y"; then
+    if display-p; then
+        DETACH=y
+    else
+        eval "$CMD"
+        exit "$?"
+    fi
+fi
+
 export SHELL=/bin/bash 
 
 CMD="export WINDOWID; cd "$(pwd)"; $CMD"
