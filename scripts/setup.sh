@@ -501,3 +501,5 @@ mkdir -p /root/pensieves
 cd ~/repos
 git clone "http://github.com/semiosis/rhizome"
 )
+
+agi postgresql
