@@ -181,7 +181,7 @@ a workflow.
 You could even try to play tetris, or with a rubiks cube.
 
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  ;; hypothetical example
+  ;; hypothetical example - don't actually run this
   (message (scrape "(Right|Left)" (car (pf-asktutor/3 "tetris" "strategies" "Should I place the L brick right?" :no-select-result t))))
 #+END_SRC
 
