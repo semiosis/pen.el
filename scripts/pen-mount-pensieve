@@ -65,6 +65,9 @@ dir="$1"
 shift
 
 dir="$(realpath "$dir")"
+dir="/root/pensieves/$dir"
+dir="$(p "$dir" | sed 's=//=/=g')"
+
 mkdir -p "$dir"
 
 test -d /root/.emacs.d/host/pensieve && : "${pensieve_dir:=/root/.emacs.d/host/pensieve}"

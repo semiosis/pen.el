@@ -493,3 +493,6 @@ ln -sf ~/.emacs.d/host/pen.el/config/zsh/zshrc ~/.zshrc
 ln -sf ~/.emacs.d/host/pen.el/config/shell_functions ~/.shell_functions
 ln -sf ~/.emacs.d/host/pen.el/config/zsh/fzf.zsh ~/.fzf.zsh
 ln -sf ~/.emacs.d/host/pen.el/config/zsh/git.zsh ~/.git.zsh
+
+# Ensure some directories
+mkdir -p /root/pensieves
