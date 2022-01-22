@@ -211,7 +211,6 @@
            '(menu-item "About Emacs..." ns-do-emacs-info-panel)))
     menu))
 
-
 (defset menu-bar-daemons-menu
   (let ((menu (make-sparse-keymap "Daemons")))
     (bindings--define-key menu [mi-pen-reload-all]
