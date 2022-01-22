@@ -191,6 +191,10 @@ Keep in mind, EleutherAI GPT models can be run
 offline and in private if you have the storage
 capacity, memory and video card memory to run them.
 
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (pen-etv (upd (pen-long-complete (pf-asktutor/3 "vscode" "packages" "What are some useful packages?"))))
+#+END_SRC
+
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim raw
   (pen-etv (pen-list2str (upd (pen-long-complete (pf-asktutor/3 "vscode" "packages" "What are some useful packages?" :no-select-result t)))))
 #+END_SRC
