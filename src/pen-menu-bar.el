@@ -642,7 +642,10 @@
   (let ((menu (make-sparse-keymap "Terminals")))
     (bindings--define-key menu [mi-pen-demo-installation]
       '(menu-item "Installation" pen-demo-installation
-                  :help "Play an asciinema recording"))
+                  :help "Demo the installation of Pen.el"))
+    (bindings--define-key menu [mi-pen-demo-apostrophe]
+      '(menu-item "Apostrophe" pen-demo-apostrophe
+                  :help "Demo talking to chatbots "))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
