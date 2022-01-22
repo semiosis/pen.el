@@ -1,4 +1,5 @@
 (require 'swiper)
+(require 'consult)
 (require 'helm-swoop)
 
 (defvar swipecmd 'swiper)
