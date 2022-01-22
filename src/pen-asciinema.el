@@ -2,7 +2,7 @@
   (interactive (list (read-string "asciinema url:")
                      ""))
 
-  (if (internet-connected-p)
+  (if (pen-internet-connected-p)
       (if (display-graphic-p)
           (eval
            `(pen-use-vterm
