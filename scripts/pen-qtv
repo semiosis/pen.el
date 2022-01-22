@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# Don't use this like 'tv'
+
+# With 'tv' you are supposed to peek at a variable through a pipeline..
+# With 'qtv' you want to ensure that there is no output, so you should
+# avoid using in a pipeline, unless you want to capture the text and
+# propagate an empty value on purpose.
+
+pen-tv "$@" &>/dev/null
