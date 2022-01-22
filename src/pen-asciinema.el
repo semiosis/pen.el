@@ -8,6 +8,6 @@
            `(pen-use-vterm
              (pen-nw (concat "pen-asciinema-play -h " (pen-q ,url)))))
         (pen-sn (concat "pen-asciinema-play " (pen-q url))))
-    (message "Internet is not connected")))
+    (error "Please connect to the internet")))
 
 (provide 'pen-asciinema)
