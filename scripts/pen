@@ -154,6 +154,8 @@ stty stop undef; stty start undef
 # But file sharing could work with the client if I use a hardlink to the ~/.pen/documents directory
 # docker run --rm -v "$(pwd):/$(pwd | slugify)" -w "/$(pwd | slugify)" -ti --entrypoint= $pen_image ./run.sh
 
+# tput setaf 240 | v
+
 IFS= read -r -d '' info_txt <<HEREDOC
 Pen is under continual development.
 If something is broken, try pulling everything.
@@ -1234,6 +1236,7 @@ if ! test "$show_banner" = n; then
 
         *) {
             pen-banner.sh
+            printf -- "%s" "[38;5;240m"
             echo
             echo Version: ${pen_version}, License: GPL-3
             echo
