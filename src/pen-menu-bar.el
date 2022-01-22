@@ -627,8 +627,8 @@
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
       `(menu-item "ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
-    (bindings--define-key menu [mi-ilambda-sh]
-      '(menu-item "ilambda REPL" ilambda-sh
+    (bindings--define-key menu [mi-ilambda-repl]
+      '(menu-item "ilambda REPL" ilambda-repl
                   :help "Run ilambda functions without coding"))
     (bindings--define-key menu [mi-pen-tm-asciinema-play]
       '(menu-item "Asciinema Play" pen-tm-asciinema-play
