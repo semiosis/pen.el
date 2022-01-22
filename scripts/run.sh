@@ -123,6 +123,9 @@ runclient() {
 rm -f /tmp/elisp_bash*
 rm -f /tmp/file_*
 
+# Ensure some directories
+mkdir -p /root/pensieves
+
 # Sometimes packages have old, broken .elc files.
 # Besides, i'm not convinced that it improves speed much
 # and I really like transparency.
