@@ -827,6 +827,9 @@
       ;;   (cons "Protocol" menu-bar-protocol-menu))
       (bindings--define-key global-map [menu-bar protocol] nil)))
 
+(require 'term)
+;; tty-menu-exit is a c symbol
+
 (defset tty-menu-navigation-map
   (let ((map (make-sparse-keymap)))
     ;; The next line is disabled because it breaks interpretation of
