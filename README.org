@@ -195,6 +195,8 @@ capacity, memory and video card memory to run them.
   (pen-etv (upd (pen-long-complete (pf-asktutor/3 "vscode" "packages" "What are some useful packages?"))))
 #+END_SRC
 
+Or perhaps this way:
+
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim raw
   (pen-etv (pen-list2str (upd (pen-long-complete (pf-asktutor/3 "vscode" "packages" "What are some useful packages?" :no-select-result t)))))
 #+END_SRC
