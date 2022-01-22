@@ -3,8 +3,23 @@ export TTY
 
 # Hidden terminal
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -ct) {
+        in_cterm=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 : "${DISPLAY:=":0"}"
 export DISPLAY
 
 # pen sh pen-tm ns -a -np -n human bash
-pen sh pen-xt -hidden pen-tm ns -a -np -n human bash
+if test "$in_cterm" = "y"; then
+    pen sh pen-xt -hidden pen-tm ns -a -np -n human bash
+else
+    pen sh pen-xt -hidden pet pen-tm ns -a -np -n human bash
+fi
