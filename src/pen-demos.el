@@ -6,4 +6,8 @@
   (interactive)
   (pen-tm-asciinema-play "https://asciinema.org/a/bjhdM0VBAuG4LrSOFxcPITmyI"))
 
+(defun pen-demo-paracosm ()
+  (interactive)
+  (pen-tm-asciinema-play "https://asciinema.org/a/9Pbe1TbYMvbOd6DnlqYpomIan"))
+
 (provide 'pen-demos)
