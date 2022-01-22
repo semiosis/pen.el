@@ -646,10 +646,10 @@
 (defset menu-bar-common-menu
   (let ((menu (make-sparse-keymap "Common")))
     (bindings--define-key menu [pen-run-prompt-function]
-      `(menu-item "Run prompt function" ,pen-run-prompt-function
+      '(menu-item "Run prompt function" pen-run-prompt-function
                   :help "Run a prompt function interactively"))
     (bindings--define-key menu [pen-sps]
-      `(menu-item "Split screen shell sensibly" ,pen-sps
+      '(menu-item "Split screen shell sensibly" pen-sps
                   :help "Open a shell in a split screen sensibly"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
