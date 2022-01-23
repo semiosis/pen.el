@@ -8,8 +8,8 @@ gitfolder="$REPOS"
 
 # examples:
 # ---------
-# vc git graph
-# vc git forks
+# pen-vc git graph
+# pen-vc git forks
 
 # Version control scripts
 
@@ -35,10 +35,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-vc_opt="$1"
+sn="$(basename "$0")"
+if ! test "$sn" = pen-pen-vc; then
+    vc_opt="$sn"
+    vc_opt="$(p "$vc_opt" | sed 's/^pen-//')"
+else
+    vc_opt="$1"
+    shift
+fi
+
 case "$vc_opt" in
     m) {
-        shift
         # The default magit behaviour (normally, status)
         magit
     }
@@ -55,7 +62,7 @@ case "$vc_opt" in
     ;;
 
     nb) {
-        message="$2"
+        message="$1"
         branch_name="$(p "$message" | slugify)"
         git checkout -b "$branch_name"
     }
@@ -68,13 +75,13 @@ case "$vc_opt" in
     ;;
 
     c) {
-        message="$2"
+        message="$1"
         git commit -m "$message"
     }
     ;;
 
     list-submodule-paths) {
-        cd "$(vc get-top-level)"
+        cd "$(pen-vc get-top-level)"
         git config --file .gitmodules --get-regexp path | awk '{ print $2 }'
     }
     ;;
@@ -85,8 +92,6 @@ case "$vc_opt" in
     ;;
 
     u|pull) {
-        shift
-
         remote="$1"
         shift
 
@@ -99,7 +104,7 @@ case "$vc_opt" in
         fi
 
         branch_name="$1"
-        : "${branch_name:="$(vc bn)"}"
+        : "${branch_name:="$(pen-vc bn)"}"
         shift
 
         git fetch -a
@@ -109,8 +114,6 @@ case "$vc_opt" in
     ;;
 
     p|psh|push) {
-        shift
-
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             "") { shift; }; ;;
             -f) {
@@ -134,7 +137,7 @@ case "$vc_opt" in
         fi
 
         branch_name="$1"
-        : "${branch_name:="$(vc bn)"}"
+        : "${branch_name:="$(pen-vc bn)"}"
         shift
 
         set -x
@@ -160,8 +163,8 @@ case "$vc_opt" in
     updir) {
         github-add-upstream
 
-        cd "$(vc get-top-level)"
-        updir="../$(vc upstream-name)"
+        cd "$(pen-vc get-top-level)"
+        updir="../$(pen-vc upstream-name)"
         if [ -d "$updir" ]; then
             (
                 cd "$updir"
@@ -169,7 +172,7 @@ case "$vc_opt" in
             )
         else
             :
-            # gc "$(vc upurl)"
+            # gc "$(pen-vc upurl)"
         fi
 
         # git remote show upstream | xurls | head -n 1 | grep 'github.com/'
@@ -182,16 +185,15 @@ case "$vc_opt" in
     ;;
 
     fp) {
-        remote="$2"
+        remote="$1"
         : ${remote:="origin"}
-        branch_name="$(vc bn)"
+        branch_name="$(pen-vc bn)"
 
         git push -f "$remote" "$branch_name"
     }
     ;;
 
     ms) {
-        shift
         magit s
     }
     ;;
@@ -209,7 +211,7 @@ case "$vc_opt" in
     ;;
 
     base|divergence-commit) {
-        git merge-base master "$(vc bn)"
+        git merge-base master "$(pen-vc bn)"
     }
     ;;
 
@@ -230,14 +232,12 @@ case "$vc_opt" in
     ;;
 
     make-shallow) {
-        shift
         git pull --depth 1
         git gc --prune=all
     }
     ;;
 
     g|git) {
-        shift
         git_opt="$1"
         shift
         case "$git_opt" in
@@ -401,14 +401,10 @@ HEREDOC
                 esac; done
 
                 eval "git difftool $opts"
-
-                # Run vimdiff
             }
             ;;
 
             gtl|get-top-level) {
-                shift
-
                 if test "$1" = "y"; then
                     dn="$(p "$dn" | u drn)"
                     cd "$dn"
@@ -421,7 +417,7 @@ HEREDOC
             ;;
 
             ar|amend-respawn) {
-                cd "$(vc git get-top-level)"
+                cd "$(pen-vc git get-top-level)"
 
                 git add -A .
                 git amend
@@ -471,7 +467,7 @@ HEREDOC
     ;;
 
     *) {
-        # Do some VC detection here
+        # Do some pen-vc detection here
         if git status &>/dev/null; then
             $0 g "$@"
             exit "$?"
