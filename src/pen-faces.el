@@ -77,6 +77,8 @@ argument, prompt for a regular expression using `read-regexp'."
 (defun pen-set-faces ()
   (interactive)
 
+  ;; I must ignore errors for everything or the frame wont even start for daemons
+  ;; Be careful
   (ignore-errors
     (set-face-attribute
      'menu nil
