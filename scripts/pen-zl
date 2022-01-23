@@ -31,7 +31,7 @@ case "$opt" in
     wd|cwd|current-dir) {
         wd="$1"
         : ${wd:="$(pwd)"}
-        printf -- "%s" "$wd" | path-lasttwo
+        printf -- "%s" "$wd" | pen-path-lasttwo
     }
     ;;
 

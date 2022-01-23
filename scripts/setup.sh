@@ -472,6 +472,7 @@ agi vifm
     cd pensieve
     lein deps
 )
+ln -s ~/repos/pensieve ~/.emacs.d/pensieve
 
 pyf rich
 
@@ -500,6 +501,7 @@ mkdir -p /root/pensieves
 (
 cd ~/repos
 git clone "http://github.com/semiosis/rhizome"
+ln -s ~/repos/rhizome ~/.emacs.d/rhizome
 )
 
 agi postgresql
