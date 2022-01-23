@@ -7,7 +7,7 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -pt) {
-        prompt_text="$2"
+        PEN_PROMPT="$2"
         shift
         shift
     }
