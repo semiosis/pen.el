@@ -155,6 +155,12 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-khala-directory (f-join user-emacs-directory "khala")
+  "Personal khala respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-penel-directory (f-join user-emacs-directory "pen.el")
   "Personal pen.el respository"
   :type 'string

@@ -18,6 +18,10 @@
   (interactive)
   (dired pen-pensieve-directory))
 
+(defun pen-dired-khala ()
+  (interactive)
+  (dired pen-khala-directory))
+
 (defun pen-reload-config-file ()
   "Fuzzy selects a selects file to be loaded."
   (interactive)
