@@ -469,12 +469,12 @@ HEREDOC
     *) {
         # Do some pen-vc detection here
         if git status &>/dev/null; then
-            $0 g "$@"
+            $0 g "$vc_opt" "$@"
             exit "$?"
         else
             git status
             exit "$?"
         fi
     }
-    ;;
+
 esac
