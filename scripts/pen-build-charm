@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+for d in /root/repos/bubbletea \
+    /root/repos/wish \
+    /root/repos/lipgloss \
+    /root/repos/charm; do
+(
+    cd "$d"
+    go build
+    go install
+)
+done
