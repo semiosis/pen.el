@@ -4,6 +4,18 @@ export TTY
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 # set -xv
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -pt) {
+        prompt_text="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 tf_pipe_buffer="$(0</dev/null pen-tf pipe_buffer txt || echo /dev/null)"
 
 cat > "$tf_pipe_buffer"

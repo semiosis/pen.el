@@ -25,6 +25,8 @@
          nil)))
 
 (defun pen-find-file-read-only-context ()
+  ;; Also ensure this is an eipe in the first place
+  ;; Either that or remove the file when done with it
   (let ((fp (concat "~/.pen/eipe_" (pen-daemon-name) "_prompt")))
     (if (f-exists-p fp)
         (let* ((prompt (slurp-file fp))

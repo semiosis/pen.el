@@ -676,7 +676,8 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
 (defun pen-eipe (input &optional chomp wintype prompttext)
   "`prompttext` is read-only text at the start of the
 buffer which is not included when this function returns"
-  (pen-sn (pen-cmd "pen-tvipe" "-cl" "pen-eipe") input nil nil nil nil nil nil chomp))
+  (pen-sn (pen-cmd "pen-tvipe" "-cl" "pen-eipe" "-pt" prompttext)
+          input nil nil nil nil nil nil chomp))
 
 (defun pen-eipec (input &optional wintype prompttext)
   (pen-eipe input t wintype prompttext))
