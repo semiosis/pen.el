@@ -9,7 +9,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -f) {
+        fun="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
-pen pf-generic-completion-50-tokens/1 "$@"
+: "${fun:="pf-generic-completion-50-tokens/1"}"
+
+pen "$fun" "$@"
