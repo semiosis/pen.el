@@ -72,6 +72,8 @@ argument, prompt for a regular expression using `read-regexp'."
   (if face
       (customize-face (intern face))))
 
+(require 'flyspell)
+
 (defun pen-set-faces ()
   (interactive)
 
