@@ -294,6 +294,44 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-source-menu
+  (let ((menu (make-sparse-keymap "Source")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-penel]
+      '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
+                  :help "Go to Pen.el source code"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-prompts]
+      '(menu-item "Go to prompts" pen-acolyte-dired-prompts
+                  :help "Go to prompts source directory"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-engines]
+      '(menu-item "Go to engines directory" pen-acolyte-dired-engines
+                  :help "Go to engines source directory"))
+    (bindings--define-key menu [mi-pen-dired-khala]
+      '(menu-item "Go to khala directory" pen-dired-khala
+                  :help "Go to khala source directory"))
+    (bindings--define-key menu [mi-pen-dired-pensieve]
+      '(menu-item "Go to pensieve directory" pen-dired-pensieve
+                  :help "Go to pensieve source directory"))
+    (bindings--define-key menu [mi-pen-dired-rhizome]
+      '(menu-item "Go to rhizome directory" pen-dired-rhizome
+                  :help "Go to rhizome source directory"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-servers-menu
+  (let ((menu (make-sparse-keymap "Servers")))
+    (bindings--define-key menu [mi-pen-dired-pensieve]
+      '(menu-item "Go to pensieve directory" pen-dired-pensieve
+                  :help "Go to pensieve source directory"))
+    (bindings--define-key menu [mi-pen-dired-rhizome]
+      '(menu-item "Go to rhizome directory" pen-dired-rhizome
+                  :help "Go to rhizome source directory"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-configure-menu
   (let ((menu (make-sparse-keymap "Configure")))
     (bindings--define-key menu [mi-pen-edit-conf]
@@ -373,44 +411,6 @@
     (bindings--define-key menu [mi-pen-quit]
       '(menu-item "Shutdown Pen.el" pen-kill-emacs
                   :help "Shutdown everything"))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
-    menu))
-
-(defset menu-bar-source-menu
-  (let ((menu (make-sparse-keymap "Source")))
-    (bindings--define-key menu [mi-pen-acolyte-dired-penel]
-      '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
-                  :help "Go to Pen.el source code"))
-    (bindings--define-key menu [mi-pen-acolyte-dired-prompts]
-      '(menu-item "Go to prompts" pen-acolyte-dired-prompts
-                  :help "Go to prompts source directory"))
-    (bindings--define-key menu [mi-pen-acolyte-dired-engines]
-      '(menu-item "Go to engines directory" pen-acolyte-dired-engines
-                  :help "Go to engines source directory"))
-    (bindings--define-key menu [mi-pen-dired-khala]
-      '(menu-item "Go to khala directory" pen-dired-khala
-                  :help "Go to khala source directory"))
-    (bindings--define-key menu [mi-pen-dired-pensieve]
-      '(menu-item "Go to pensieve directory" pen-dired-pensieve
-                  :help "Go to pensieve source directory"))
-    (bindings--define-key menu [mi-pen-dired-rhizome]
-      '(menu-item "Go to rhizome directory" pen-dired-rhizome
-                  :help "Go to rhizome source directory"))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
-    menu))
-
-(defset menu-bar-servers-menu
-  (let ((menu (make-sparse-keymap "Servers")))
-    (bindings--define-key menu [mi-pen-dired-pensieve]
-      '(menu-item "Go to pensieve directory" pen-dired-pensieve
-                  :help "Go to pensieve source directory"))
-    (bindings--define-key menu [mi-pen-dired-rhizome]
-      '(menu-item "Go to rhizome directory" pen-dired-rhizome
-                  :help "Go to rhizome source directory"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
