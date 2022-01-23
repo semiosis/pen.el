@@ -314,8 +314,7 @@ argument, prompt for a regular expression using `read-regexp'."
         (setq helm-frame-background-color "#151515")))
     state))
 
-
-(pen-set-text-contrast-from-config)
+;; (pen-set-text-contrast-from-config)
 
 (define-key pen-map (kbd "M-l M-q M-f") 'pen-customize-face)
 
