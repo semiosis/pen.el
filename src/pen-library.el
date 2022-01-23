@@ -707,4 +707,9 @@ buffer which is not included when this function returns"
   (interactive)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
 
+(defmacro pen-with (package &rest body)
+  "This attempts to run code dependent on a package and otherwise doesn't run the code."
+  `(when (require ,package nil 'noerror)
+     ,@body))
+
 (provide 'pen-library)

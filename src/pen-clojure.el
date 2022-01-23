@@ -4,11 +4,11 @@
 
 (require 'clomacs)
 
-(my/with 'cider
+(pen-with 'cider
          ;; Fixes super annoying message
          (setq cider-allow-jack-in-without-project t))
 
-(defun my/4clojure-check-and-proceed ()
+(defun pen-4clojure-check-and-proceed ()
   "Check the answer and show the next question if it worked."
   (interactive)
   (let ((result (4clojure-check-answers)))
@@ -16,7 +16,7 @@
        (4clojure-next-question))))
 
 (define-key clojure-mode-map (kbd "C-c C-c") nil)
-(define-key cider-mode-map (kbd "C-c 4") 'my/4clojure-check-and-proceed)
+(define-key cider-mode-map (kbd "C-c 4") 'pen-4clojure-check-and-proceed)
 (define-key cider-mode-map (kbd "C-c C-c") nil)
 
 (require 'monroe)
@@ -36,7 +36,7 @@
 (defun pen-cider-macroexpand-1-or-copy ()
   (interactive)
   (if (selected)
-      (my/copy)
+      (pen-copy)
     (call-interactively 'pen-cider-macroexpand-1)))
 
 (define-key clojure-mode-map (kbd "M-w") #'pen-cider-macroexpand-1-or-copy)
@@ -70,7 +70,7 @@ buffer."
 
 (defun clojure-select-copy-dependency ()
   (interactive)
-  (my/copy (fz (pen-snc "cd $NOTES; oci clojure-list-deps"))))
+  (pen-copy (fz (pen-snc "cd $NOTES; oci clojure-list-deps"))))
 
 (defun clojure-find-deps (use-google &rest query)
   (interactive (list (or
@@ -82,7 +82,7 @@ buffer."
       (setq use-google t))
 
   ;; (tv query)
-  (my/copy (fz (pen-snc (apply 'cmd "clojure-find-deps"
+  (pen-copy (fz (pen-snc (apply 'cmd "clojure-find-deps"
                                (if use-google
                                    "-gl")
                                (-flatten (mapcar (lambda (e) (s-split " " e)) query)))))))
@@ -214,7 +214,7 @@ canceled the action, signal quit."
 
 (defun pen-clojure-lein-run ()
   (interactive)
-  (pen-sps (concat "cd " (pen-q (my/pwd)) "; " "is-git && cd \"$(vc get-top-level)\"; nvc -E 'lein run; pen-pak'")))
+  (pen-sps (concat "cd " (pen-q (pen-pwd)) "; " "is-git && cd \"$(vc get-top-level)\"; nvc -E 'lein run; pen-pak'")))
 
 (require 'pen-net)
 
@@ -276,9 +276,9 @@ canceled the action, signal quit."
 (advice-add 'cider-jack-in-clj :around #'cider-jack-in-around-advice)
 (advice-add 'cider-jack-in-cljs :around #'cider-jack-in-around-advice)
 
-(define-key cider-repl-mode-map (kbd "C-c h f") 'my/cider-docfun)
+(define-key cider-repl-mode-map (kbd "C-c h f") 'pen-cider-docfun)
 
-(defun my/cider-docfun (symbol-string)
+(defun pen-cider-docfun (symbol-string)
   (interactive (list (let ((s (symbol-at-point)))
                        (if s
                            (s-replace-regexp "^[a-z]+/" "" (symbol-name s))
