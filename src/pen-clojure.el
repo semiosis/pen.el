@@ -81,8 +81,7 @@ buffer."
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (setq use-google t))
 
-  ;; (tv query)
-  (xc (fz (pen-snc (apply 'cmd "clojure-find-deps"
+  (xc (fz (pen-snc (apply 'pen-cmd "clojure-find-deps"
                                (if use-google
                                    "-gl")
                                (-flatten (mapcar (lambda (e) (s-split " " e)) query)))))))
@@ -94,9 +93,7 @@ buffer."
 (defun pen-clojure-mode-hook ()
   (clj-refactor-mode 1)
   (yas-minor-mode 1)
-  ;; for adding require/use/import statements
   (define-key clojure-mode-map (kbd "H-*") nil)
-  ;; This choice of keybinding leaves cider-macroexpand-1 unbound
   (cljr-add-keybindings-with-prefix "H-*"))
 
 (add-hook 'clojure-mode-hook #'pen-clojure-mode-hook)
@@ -147,15 +144,6 @@ buffer."
                                      )))))
 
         (enable-helm-cider-mode)))
-  ;; (try
-  ;;  (if ;; pen-do-cider-auto-jack-in
-  ;;      (pen-rc-test "cider")
-  ;;      (progn
-  ;;        (auto-no
-  ;;         (call-interactively
-  ;;          'cider-jack-in))
-  ;;        (message "Jacked in?"))))
-
   t)
 
 ;; This may be breaking the clojure hook when it's disabled for some reason, so I put it last
@@ -240,8 +228,6 @@ canceled the action, signal quit."
 ;; I should probably make it select a random port
 (setq cider-lein-parameters "repl :headless :host localhost")
 
-
-;; TODO cd to where the =project.clj= file is
 (defun cider-jack-in-around-advice (proc &rest args)
   (never
    (let ((res (apply proc args)))
@@ -272,7 +258,6 @@ canceled the action, signal quit."
               res)))))))
 (advice-add 'cider-restart :around #'cider-jack-in-around-advice)
 (advice-add 'cider-jack-in :around #'cider-jack-in-around-advice)
-;; (advice-remove 'cider-jack-in #'cider-jack-in-around-advice)
 (advice-add 'cider-jack-in-clj :around #'cider-jack-in-around-advice)
 (advice-add 'cider-jack-in-cljs :around #'cider-jack-in-around-advice)
 
@@ -297,12 +282,7 @@ canceled the action, signal quit."
            ((>= (prefix-numeric-value current-prefix-arg) (expt 4 2))
             "macro: ")
            (t
-            "func/macro/special: ")))
-
-         ;; (type-of (get-text-property 0 'type csa))
-         )
-    ;; (tv (str cs))
-    ;; (tv symtype)
+            "func/macro/special: "))))
     (if (= (prefix-numeric-value current-prefix-arg) 4)
         (call-interactively 'helpful-function)
       (let ((r (fz
@@ -327,10 +307,9 @@ canceled the action, signal quit."
                 symbol-string
                 nil
                 prompt)))
-        ;; (tv (type-of r))
         (if (sor r)
             (try (cider-doc-lookup r)
-                 (egr (cmd "clojure" symbol-string))))))))
+                 (egr (pen-cmd "clojure" symbol-string))))))))
 
 (setq cider-preferred-build-tool "lein")
 
