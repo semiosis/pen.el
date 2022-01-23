@@ -1923,6 +1923,8 @@ May use to generate code from comments."
 (require 'pen-documents)
 (require 'pen-helm)
 (require 'pen-media)
+(require 'pen-khala)
+(require 'pen-rhizome)
 
 (defun pen-lsp-explain-error ()
   (interactive)
