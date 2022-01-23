@@ -511,3 +511,5 @@ ln -s ~/repos/khala ~/.emacs.d/khala
 )
 
 agi postgresql
+
+agi nmap

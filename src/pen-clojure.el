@@ -358,18 +358,11 @@ canceled the action, signal quit."
         (e pfp)
       pfp)))
 
-(define-key cider-mode-map (kbd "C-c C-o") nil)
-(define-key cider-mode-map (kbd "C-M-i") nil)
-
 (defun pen-cider-backwards-search ()
   (interactive)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (call-interactively 'cider-repl-previous-matching-input)
     (call-interactively 'isearch-backward)))
-
-;; cider-repl-previous-matching-input
-(define-key cider-repl-mode-map (kbd "M-r") nil)
-(define-key cider-repl-mode-map (kbd "C-r") 'pen-cider-backwards-search)
 
 (setq clomacs-httpd-default-port 8680)
 
@@ -523,14 +516,9 @@ the namespace in the Clojure source buffer"
    (cider-current-repl 'any 'ensure)
    set-namespace))
 
-;; (define-key cider-repl-mode-map (kbd "M-r") 'helm-cider-repl-history)
-(define-key cider-repl-mode-map (kbd "M-r") nil)
-
 (defun pen-cider-interrupt-and-new-prompt ()
   (interactive)
   (cider-interrupt))
-
-(define-key cider-repl-mode-map (kbd "C-c C-c") 'pen-cider-interrupt-and-new-prompt)
 
 (defun pen-cider-select-prompt-or-result ()
   (interactive)
@@ -555,10 +543,14 @@ the namespace in the Clojure source buffer"
           (set-mark (point))
           (cider-repl-next-prompt)
           (previous-line)
-          (end-of-line)))))
+          (end-of-line))))))
 
+(define-key cider-mode-map (kbd "C-c C-o") nil)
+(define-key cider-mode-map (kbd "C-M-i") nil)
+(define-key cider-repl-mode-map (kbd "M-r") nil)
+(define-key cider-repl-mode-map (kbd "C-r") 'pen-cider-backwards-search)
 (define-key cider-repl-mode-map (kbd "M-h") 'pen-cider-select-prompt-or-result)
-
 (define-key clj-refactor-map (kbd "/") nil)
+(define-key cider-repl-mode-map (kbd "C-c C-c") 'pen-cider-interrupt-and-new-prompt)
 
 (provide 'pen-clojure)

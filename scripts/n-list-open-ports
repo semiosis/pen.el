@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -F) {
+        # Doesn't make it much faster for localhost anyway
+        fast=y
+        : "${scanargs:="-F"}"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+# allports
+: "${scanargs:="-p-"}"
+
+hn="$1"
+: "${hn:="localhost"}"
+
+{
+echo "Host Port Protocol State Service"
+msudo nmap -sT "$scanargs" -O "$hn" | sed "0,/^PORT /{d}" | sed "/^[^0-9]\\+/,\$d" | sed "s/^/$hn,/"
+} | sed "s/ \\+/,/g" | tr '/' , | pen-pavs

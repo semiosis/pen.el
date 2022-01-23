@@ -1890,6 +1890,7 @@ May use to generate code from comments."
 ;; For debugging
 (require 'pen-messages)
 (require 'pen-yaml)
+(require 'pen-rc)
 (require 'pen-glossary)
 (require 'pen-localization)
 (require 'pen-diagnostics)

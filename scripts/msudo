@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+hasdashes() {
+    cmd "$@" | grep -q -P '(^| )--( |$)'
+}
+
+before_dashes() {
+    eval "set -- $(cmd "$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
+    printf -- "%s" "$(cmd "$@")"
+
+    return 0
+}
+
+after_dashes() {
+    eval "set -- $(cmd "$@" | sed -e "s/.* -- //" -e "s/.* --$//" -e "s/^-- //")"
+    printf -- "%s" "$(cmd "$@")"
+
+    return 0
+}
+
+if hasdashes "$@"; then
+    eval /usr/bin/sudo -H -E $(before_dashes "$@") env "PATH=$PATH" "HOME=$HOME" $(after_dashes "$@")
+else
+    # Specify HOME to env to force preservation of the HOME variable
+    /usr/bin/sudo -H -E env "PATH=$PATH" "HOME=$HOME" "$@"
+fi
