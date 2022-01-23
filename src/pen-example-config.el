@@ -94,12 +94,19 @@
  (pensievedir (f-join user-emacs-directory "pensieve"))
  (pensievehostdir (f-join user-emacs-directory "host/pensieve"))
  (rhizomedir (f-join user-emacs-directory "rhizome"))
- (rhizomehostdir (f-join user-emacs-directory "host/rhizome")))
+ (rhizomehostdir (f-join user-emacs-directory "host/rhizome"))
+ (khaladir (f-join user-emacs-directory "khala"))
+ (khalahostdir (f-join user-emacs-directory "host/khala")))
 
 (let ((hostpensievedir (f-join user-emacs-directory "host" "pensieve")))
   (if (f-directory-p (f-join hostpensievedir "src"))
       (setq pen-pensieve-directory hostpensievedir)
     (setq pen-pensieve-directory (f-join user-emacs-directory "pensieve"))))
+
+(let ((hostkhaladir (f-join user-emacs-directory "host" "khala")))
+  (if (f-directory-p (f-join hostkhaladir "src"))
+      (setq pen-khala-directory hostkhaladir)
+    (setq pen-khala-directory (f-join user-emacs-directory "khala"))))
 
 (let ((hostrhizomedir (f-join user-emacs-directory "host" "rhizome")))
   (if (f-directory-p (f-join hostrhizomedir "src"))
