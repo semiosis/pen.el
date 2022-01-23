@@ -26,7 +26,7 @@ case "$opt" in
     find-file-repo) {
         file="$1"
 
-        cd "$(vc get-top-level)"
+        cd "$(pen-vc get-top-level)"
         pen-F find-no-git "$file" | pen-fzf
 
         exit 0

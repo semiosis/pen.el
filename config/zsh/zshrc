@@ -310,8 +310,8 @@ bindkey "\e " zsh-slmenu
 
 bindkey "\eD" backward-kill-word
 bindkey -s "^[a" "^A^Ksh-apps\r"
-bindkey -s "^[\^" "^A^Kis-git && cd \"\$(vc get-top-level)\" && pwd\r"
-bindkey -s "^[\`" "^A^Kis-git && cd \"\$(vc get-top-level)\" && pwd\r"
+bindkey -s "^[\^" "^A^Kis-git && cd \"\$(pen-vc get-top-level)\" && pwd\r"
+bindkey -s "^[\`" "^A^Kis-git && cd \"\$(pen-vc get-top-level)\" && pwd\r"
 bindkey -s "^[$" "^A^Kdifftool.sh \`tmux show-buffer|head -1|sed \"s/^\\\[ \t\\\]*//\"|cut -d ' ' -f 1\`\t\\\\\^! "
 bindkey -s "^[~" "^A^Kgit commit --amend -m \"\"^B"
 bindkey -s "^[" "^A^Kgit amend\r" # C-M-S-~

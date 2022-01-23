@@ -202,7 +202,7 @@ canceled the action, signal quit."
 
 (defun pen-clojure-lein-run ()
   (interactive)
-  (pen-sps (concat "cd " (pen-q (pen-pwd)) "; " "is-git && cd \"$(vc get-top-level)\"; nvc -E 'lein run; pen-pak'")))
+  (pen-sps (concat "cd " (pen-q (pen-pwd)) "; " "is-git && cd \"$(pen-vc get-top-level)\"; nvc -E 'lein run; pen-pak'")))
 
 (require 'pen-net)
 
