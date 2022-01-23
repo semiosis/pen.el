@@ -803,7 +803,6 @@ case "$f" in
                 else
                     eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET $CMD"
                 fi
-
             else
                 pen-e running && exit 0
 
