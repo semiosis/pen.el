@@ -1926,6 +1926,7 @@ May use to generate code from comments."
 (require 'pen-media)
 (require 'pen-khala)
 (require 'pen-rhizome)
+(require 'pen-net)
 
 (defun pen-lsp-explain-error ()
   (interactive)
