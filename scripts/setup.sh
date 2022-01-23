@@ -513,3 +513,11 @@ ln -s ~/repos/khala ~/.emacs.d/khala
 agi postgresql
 
 agi nmap
+
+(
+cd ~/repos
+git clone "https://github.com/charmbracelet/charm"
+git clone "https://github.com/charmbracelet/bubbletea"
+git clone "https://github.com/charmbracelet/lipgloss"
+git clone "https://github.com/charmbracelet/wish"
+)
