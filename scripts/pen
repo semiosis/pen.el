@@ -1376,6 +1376,9 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/pensieve" && : "${PENSIEVE_DIR:="$MYGIT/semiosis/pensieve"}"
     test -d "pensieve" && : "${PENSIEVE_DIR:="`pwd`/pensieve"}"
 
+    test -n "$MYGIT" && test -d "$MYGIT/semiosis/khala" && : "${KHALA_DIR:="$MYGIT/semiosis/khala"}"
+    test -d "khala" && : "${KHALA_DIR:="`pwd`/khala"}"
+
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/rhizome" && : "${RHIZOME_DIR:="$MYGIT/semiosis/rhizome"}"
     test -d "rhizome" && : "${RHIZOME_DIR:="`pwd`/rhizome"}"
 
