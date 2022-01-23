@@ -72,7 +72,6 @@ argument, prompt for a regular expression using `read-regexp'."
   (if face
       (customize-face (intern face))))
 
-
 (defun pen-set-faces ()
   (interactive)
 
@@ -149,6 +148,23 @@ argument, prompt for a regular expression using `read-regexp'."
       (set-face-foreground 'lsp-ui-sideline-global nil)
       (set-face-background 'lsp-ui-sideline-global nil)
 
+      (require 'lsp-headerline)
+      (set-face-background 'lsp-headerline-breadcrumb-path-error-face nil)
+      (set-face-foreground 'lsp-headerline-breadcrumb-path-error-face "#662222")
+      (set-face-underline 'lsp-headerline-breadcrumb-path-error-face nil)
+
+      (set-face-background 'lsp-headerline-breadcrumb-path-hint-face nil)
+      (set-face-foreground 'lsp-headerline-breadcrumb-path-hint-face "#226622")
+      (set-face-underline 'lsp-headerline-breadcrumb-path-hint-face nil)
+
+      (set-face-background 'lsp-headerline-breadcrumb-path-info-face nil)
+      (set-face-foreground 'lsp-headerline-breadcrumb-path-info-face "#226622")
+      (set-face-underline 'lsp-headerline-breadcrumb-path-info-face nil)
+
+      (set-face-background 'lsp-headerline-breadcrumb-path-warning-face nil)
+      (set-face-foreground 'lsp-headerline-breadcrumb-path-warning-face "#666622")
+      (set-face-underline 'lsp-headerline-breadcrumb-path-warning-face nil)
+
       (require 'lsp-lens)
       (set-face-foreground 'lsp-lens-face "#000000")
       (set-face-background 'lsp-lens-face "#111111")
@@ -214,10 +230,94 @@ argument, prompt for a regular expression using `read-regexp'."
 
     (require 'wid-edit)
     (set-face-foreground 'widget-field "#990055")
-    (set-face-background 'widget-field "#222222")))
+    (set-face-background 'widget-field "#222222"))
+
+  (set-face-stipple 'default nil)
+  (set-face-inverse-video 'default nil)
+  (set-face-underline 'default nil)
+  (set-face-bold 'default t)
+  (set-face-attribute 'default nil :weight 'bold)
+  (set-font-encoding 'default t)
+  (set-face-attribute 'mode-line nil :box '(:line-width 5))
+  (set-face-attribute 'mode-line nil :box nil)
+  (set-face-attribute 'mode-line-inactive nil :box nil)
+  (set-face-attribute 'mode-line-highlight nil :box nil)
+  (set-face-foreground 'fringe "#111111")
+  (set-face-background 'fringe "#000000")
+  (set-face-foreground 'flyspell-incorrect "#cc2222")
+  (set-face-background 'flyspell-incorrect "#222222")
+  (set-face-underline 'flyspell-incorrect nil)
+  (set-face-background 'flyspell-duplicate "#222222")
+  (set-face-foreground 'flyspell-duplicate "#cc9922")
+  (set-face-underline 'flyspell-duplicate nil)
+  (set-face-background 'flycheck-info "#222222")
+  (set-face-background 'flycheck-error "#222222")
+  (set-face-background 'flycheck-warning "#222222")
+  (set-face-underline 'flycheck-info nil)
+  (set-face-underline 'flycheck-error nil)
+  (set-face-underline 'flycheck-warning nil)
+  (custom-set-faces '(lsp-lsp-flycheck-warning-unnecessary-face ((t (:background "#222222" :foreground nil)))))
+  (set-foreground-color "#404040")
+  (set-background-color "#151515")
+  (set-face-foreground 'default "#404040")
+  (set-face-background 'default "#151515")
+  (set-face-foreground 'vertical-border "#222222")
+  ;; No fringe color -- like terminal
+  (set-face-background 'fringe nil)
+
+  (set-face-foreground 'org-block "#447744")
+  (set-face-background 'org-block "#151515"))
 
 (add-hook 'after-init-hook 'pen-set-faces)
 
+(defun pen-set-text-contrast-from-config ()
+  (interactive)
+  (let ((state (pen-rc-test "text_high_contrast")))
+    (if state
+        (progn
+          (set-face-background 'lsp-ui-doc-background "#151515")
+          (set-face-foreground 'default "#606060")
+          (set-face-foreground 'lsp-headerline-breadcrumb-path-face "#606060")
+          (set-face-background 'default "#000000")
+          ;; (set-face-background 'powerline-active0 "#000000")
+          ;; (set-face-background 'powerline-active1 "#000000")
+          ;; (set-face-background 'powerline-active2 "#000000")
+          ;; (set-face-background 'powerline-inactive0 "#000000")
+          ;; (set-face-background 'powerline-inactive1 "#000000")
+          ;; (set-face-background 'powerline-inactive2 "#000000")
+          (set-face-background 'line-number "#000000")
+          (set-face-background 'window-divider "#000000")
+          (set-face-foreground 'window-divider "#000000")
+          (set-face-background 'line-number-current-line "#000000")
+          (set-face-background 'vertical-border "#000000")
+          (set-face-foreground 'vertical-border "#111111")
+
+          ;; This has not had a noticeable effect yet
+          (setq helm-frame-background-color "#000000"))
+      (progn
+        (set-face-background 'lsp-ui-doc-background "#202020")
+        (set-face-foreground 'default "#404040")
+        (set-face-foreground 'lsp-headerline-breadcrumb-path-face "#222222")
+        (set-face-background 'default "#151515")
+        ;; (set-face-background 'powerline-active0 "#111111")
+        ;; (set-face-background 'powerline-active1 "#111111")
+        ;; (set-face-background 'powerline-active2 "#111111")
+        ;; (set-face-background 'powerline-inactive0 "#111111")
+        ;; (set-face-background 'powerline-inactive1 "#111111")
+        ;; (set-face-background 'powerline-inactive2 "#111111")
+        (set-face-background 'line-number "#111111")
+        (set-face-background 'line-number-current-line "#111111")
+        (set-face-background 'vertical-border "#111111")
+        (set-face-foreground 'vertical-border "#222222")
+
+        ;; This has not had a noticeable effect yet
+        (setq helm-frame-background-color "#151515")))
+    state))
+
+
+(pen-set-text-contrast-from-config)
+
 (define-key pen-map (kbd "M-l M-q M-f") 'pen-customize-face)
+
 
 (provide 'pen-faces)

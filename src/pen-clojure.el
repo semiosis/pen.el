@@ -35,8 +35,8 @@
 
 (defun pen-cider-macroexpand-1-or-copy ()
   (interactive)
-  (if (selected)
-      (pen-copy)
+  (if (pen-selected-text-ignore-no-selection)
+      (xc)
     (call-interactively 'pen-cider-macroexpand-1)))
 
 (define-key clojure-mode-map (kbd "M-w") #'pen-cider-macroexpand-1-or-copy)
@@ -70,7 +70,7 @@ buffer."
 
 (defun clojure-select-copy-dependency ()
   (interactive)
-  (pen-copy (fz (pen-snc "cd $NOTES; oci clojure-list-deps"))))
+  (xc (fz (pen-snc "cd $NOTES; oci clojure-list-deps"))))
 
 (defun clojure-find-deps (use-google &rest query)
   (interactive (list (or
@@ -82,7 +82,7 @@ buffer."
       (setq use-google t))
 
   ;; (tv query)
-  (pen-copy (fz (pen-snc (apply 'cmd "clojure-find-deps"
+  (xc (fz (pen-snc (apply 'cmd "clojure-find-deps"
                                (if use-google
                                    "-gl")
                                (-flatten (mapcar (lambda (e) (s-split " " e)) query)))))))
