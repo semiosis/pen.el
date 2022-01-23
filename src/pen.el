@@ -1867,6 +1867,7 @@ May use to generate code from comments."
 (defun pen-continue-prompt ())
 
 (require 'pen-borrowed)
+(require 'pen-hooks)
 (require 'pen-core)
 (require 'pen-openai)
 (require 'pen-hf)
