@@ -90,33 +90,42 @@
  (openaihostdir (f-join user-emacs-directory "host/openai-api.el"))
  (penhostdir (f-join user-emacs-directory "host/pen.el"))
  (contribdir (f-join user-emacs-directory "pen-contrib.el"))
- (contribhostdir (f-join user-emacs-directory "host/pen-contrib.el")))
+ (contribhostdir (f-join user-emacs-directory "host/pen-contrib.el"))
+ (pensievedir (f-join user-emacs-directory "pensieve"))
+ (pensievehostdir (f-join user-emacs-directory "host/pensieve"))
+ (rhizomedir (f-join user-emacs-directory "rhizome"))
+ (rhizomehostdir (f-join user-emacs-directory "host/rhizome")))
 
-;; Personal pen.el repository
+(let ((hostpensievedir (f-join user-emacs-directory "host" "pensieve")))
+  (if (f-directory-p (f-join hostpensievedir "src"))
+      (setq pen-pensieve-directory hostpensievedir)
+    (setq pen-pensieve-directory (f-join user-emacs-directory "pensieve"))))
+
+(let ((hostrhizomedir (f-join user-emacs-directory "host" "rhizome")))
+  (if (f-directory-p (f-join hostrhizomedir "src"))
+      (setq pen-rhizome-directory hostrhizomedir)
+    (setq pen-rhizome-directory (f-join user-emacs-directory "rhizome"))))
+
 (let ((hostpeneldir (f-join user-emacs-directory "host" "pen.el")))
   (if (f-directory-p (f-join hostpeneldir "src"))
       (setq pen-penel-directory hostpeneldir)
     (setq pen-penel-directory (f-join user-emacs-directory "pen.el"))))
 
-;; Personal prompts repository
 (let ((hostpromptsdir (f-join user-emacs-directory "host" "prompts")))
   (if (f-directory-p (f-join hostpromptsdir "prompts"))
       (setq pen-prompts-directory hostpromptsdir)
     (setq pen-prompts-directory (f-join user-emacs-directory "prompts"))))
 
-;; Personal contrib repository
 (let ((hostcontribdir (f-join user-emacs-directory "host" "pen-contrib.el")))
   (if (f-directory-p (f-join hostcontribdir "pen-contrib.el"))
       (setq pen-contrib-directory hostcontribdir)
     (setq pen-contrib-directory (f-join user-emacs-directory "pen-contrib.el"))))
 
-;; Personal engines repository
 (let ((hostenginesdir (f-join user-emacs-directory "host" "engines")))
   (if (f-directory-p (f-join hostenginesdir "engines"))
       (setq pen-engines-directory hostenginesdir)
     (setq pen-engines-directory (f-join user-emacs-directory "engines"))))
 
-;; Personal glossaries repository
 (let ((hostglossariesdir (f-join user-emacs-directory "host" "glossaries")))
   (if (f-directory-p (f-join hostglossariesdir "glossaries"))
       (setq pen-glossaries-directory hostglossariesdir)

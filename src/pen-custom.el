@@ -143,6 +143,18 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-rhizome-directory (f-join user-emacs-directory "rhizome")
+  "Personal rhizome respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-pensieve-directory (f-join user-emacs-directory "pensieve")
+  "Personal pensieve respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-penel-directory (f-join user-emacs-directory "pen.el")
   "Personal pen.el respository"
   :type 'string

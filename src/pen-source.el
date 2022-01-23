@@ -10,6 +10,14 @@
   (interactive)
   (dired pen-penel-directory))
 
+(defun pen-dired-rhizome ()
+  (interactive)
+  (dired pen-rhizome-directory))
+
+(defun pen-dired-pensieve ()
+  (interactive)
+  (dired pen-pensieve-directory))
+
 (defun pen-reload-config-file ()
   "Fuzzy selects a selects file to be loaded."
   (interactive)
