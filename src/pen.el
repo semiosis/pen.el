@@ -72,6 +72,7 @@
 (require 'pen-help)
 (require 'pen-eipe)
 (require 'pen-textprops)
+(require 'pen-rc)
 (require 'pen-faces)
 (require 'pen-misc)
 (require 'pen-packages)
@@ -1890,7 +1891,6 @@ May use to generate code from comments."
 ;; For debugging
 (require 'pen-messages)
 (require 'pen-yaml)
-(require 'pen-rc)
 (require 'pen-glossary)
 (require 'pen-localization)
 (require 'pen-diagnostics)
