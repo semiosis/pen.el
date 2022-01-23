@@ -36,7 +36,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 sn="$(basename "$0")"
-if ! test "$sn" = pen-pen-vc; then
+if ! test "$sn" = pen-vc; then
     vc_opt="$sn"
     vc_opt="$(p "$vc_opt" | sed 's/^pen-//')"
 else
@@ -91,7 +91,7 @@ case "$vc_opt" in
     }
     ;;
 
-    u|pull) {
+    pen-u|pull) {
         remote="$1"
         shift
 
@@ -194,7 +194,7 @@ case "$vc_opt" in
     ;;
 
     ms) {
-        magit s
+        magit pen-str
     }
     ;;
 
@@ -206,7 +206,7 @@ case "$vc_opt" in
     changed) {
         ## Try not to use git aliases. I want this script to be portable
         # git changed
-        test -n "$(git status -s)"
+        test -n "$(git status -pen-str)"
     }
     ;;
 
@@ -222,7 +222,7 @@ case "$vc_opt" in
 
     rn|repo-name) {
         {
-            url="$(git config --get remote.origin.url | sed 's/\.git$//' )"
+            url="$(git config --get remote.origin.url | sed 'pen-str/\.git$//' )"
             if test -z "$url"; then
                 url="$(pwd)"
             fi
@@ -246,7 +246,7 @@ case "$vc_opt" in
                 if [ -n "$remote" ]; then
                     p "$remote"
                 else
-                    ns "no remote" | s chomp | uq
+                    ns "no remote" | pen-str chomp | uq
                 fi
             }
             ;;
@@ -282,7 +282,7 @@ case "$vc_opt" in
                 shift
 
                 if test -n "$1"; then
-                    dn="$(p "$dn" | u drn)"
+                    dn="$(p "$dn" | pen-u drn)"
                     cd "$dn"
                 fi
 
@@ -297,7 +297,7 @@ case "$vc_opt" in
                 shift
 
                 if test -n "$1"; then
-                    dn="$(p "$dn" | u drn)"
+                    dn="$(p "$dn" | pen-u drn)"
                     cd "$dn"
                 fi
 
@@ -406,7 +406,7 @@ HEREDOC
 
             gtl|get-top-level) {
                 if test "$1" = "y"; then
-                    dn="$(p "$dn" | u drn)"
+                    dn="$(p "$dn" | pen-u drn)"
                     cd "$dn"
                 fi
 
