@@ -18,7 +18,7 @@ The following commands run on your host machine.
   git clone "https://github.com/semiosis/pen.el"
   git clone "https://github.com/semiosis/prompts"
 
-  docker pull semiosis/pen:latest
+  docker pull semiosis/pen.el:latest
 
   mkdir -p $HOME/.pen
 
