@@ -504,4 +504,10 @@ git clone "http://github.com/semiosis/rhizome"
 ln -s ~/repos/rhizome ~/.emacs.d/rhizome
 )
 
+(
+cd ~/repos
+git clone "http://github.com/semiosis/khala"
+ln -s ~/repos/khala ~/.emacs.d/khala
+)
+
 agi postgresql
