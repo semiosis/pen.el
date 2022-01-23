@@ -1,11 +1,11 @@
+(require 'dap-ui)
+(require 'dap-mouse)
+
 (use-package dap-mode
   :ensure t :after lsp-mode
   :config
   (dap-mode t)
   (dap-ui-mode t))
-
-(require 'dap-ui)
-(require 'dap-mouse)
 
 (require 'pen-lsp-java)
 
