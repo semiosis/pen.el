@@ -299,6 +299,12 @@
     (bindings--define-key menu [mi-pen-edit-conf]
       '(menu-item "Edit Pen.el configuration" pen-edit-conf
                   :help "Edit the pen.yaml file"))
+    (bindings--define-key menu [mi-menu-bar-source-menu]
+      `(menu-item "Pen.el source code" ,menu-bar-source-menu
+                  :help "Manage source code"))
+    (bindings--define-key menu [mi-menu-bar-servers-menu]
+      `(menu-item "Pen.el servers" ,menu-bar-servers-menu
+                  :help "Manage servers"))
     (bindings--define-key menu [mi-pen-edit-efm-conf]
       '(menu-item "Edit ESP configuration" pen-edit-efm-conf
                   :help "Edit the efm-langserver-config.yaml file"))
@@ -367,6 +373,44 @@
     (bindings--define-key menu [mi-pen-quit]
       '(menu-item "Shutdown Pen.el" pen-kill-emacs
                   :help "Shutdown everything"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-source-menu
+  (let ((menu (make-sparse-keymap "Source")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-penel]
+      '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
+                  :help "Go to Pen.el source code"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-prompts]
+      '(menu-item "Go to prompts" pen-acolyte-dired-prompts
+                  :help "Go to prompts source directory"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-engines]
+      '(menu-item "Go to engines directory" pen-acolyte-dired-engines
+                  :help "Go to engines source directory"))
+    (bindings--define-key menu [mi-pen-dired-khala]
+      '(menu-item "Go to khala directory" pen-dired-khala
+                  :help "Go to khala source directory"))
+    (bindings--define-key menu [mi-pen-dired-pensieve]
+      '(menu-item "Go to pensieve directory" pen-dired-pensieve
+                  :help "Go to pensieve source directory"))
+    (bindings--define-key menu [mi-pen-dired-rhizome]
+      '(menu-item "Go to rhizome directory" pen-dired-rhizome
+                  :help "Go to rhizome source directory"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-servers-menu
+  (let ((menu (make-sparse-keymap "Servers")))
+    (bindings--define-key menu [mi-pen-dired-pensieve]
+      '(menu-item "Go to pensieve directory" pen-dired-pensieve
+                  :help "Go to pensieve source directory"))
+    (bindings--define-key menu [mi-pen-dired-rhizome]
+      '(menu-item "Go to rhizome directory" pen-dired-rhizome
+                  :help "Go to rhizome source directory"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -483,12 +527,12 @@
 
 (defset menu-bar-engines-menu
   (let ((menu (make-sparse-keymap "Engines")))
-    (bindings--define-key menu [mi-pen-load-engines]
-      '(menu-item "Reload engines" pen-load-engines
-                  :help "Reload engines from YAML"))
     (bindings--define-key menu [mi-pen-acolyte-dired-engines]
       '(menu-item "Go to engines directory" pen-acolyte-dired-engines
                   :help "Go to engines source directory"))
+    (bindings--define-key menu [mi-pen-load-engines]
+      '(menu-item "Reload engines" pen-load-engines
+                  :help "Reload engines from YAML"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
