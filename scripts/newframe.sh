@@ -135,6 +135,15 @@ if test -n "$PEN_PROMPT"; then
     printf -- "%s" "$PEN_PROMPT" > "/root/.pen/eipe/${SOCKET}_prompt"
 fi
 
+# Create an overlay over the buffer with this info
+# - prompt function name
+# - example of prompt output
+if test -n "$PEN_OVERLAY_INFO"; then
+    mkdir -p ~/.pen/eipe
+    # pen-tm -d nw -d -fargs vim "/root/.pen/eipe/${SOCKET}_prompt"
+    printf -- "%s" "$PEN_OVERLAY_INFO" > "/root/.pen/eipe/${SOCKET}_info"
+fi
+
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
 else
