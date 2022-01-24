@@ -20,9 +20,10 @@
     (put-text-property (point-min) end 'face 'pen-read-only)
     (put-text-property (point-min) end 'read-only t)
     (put-text-property (point-min) end 'pen-eipe-prompt t)
-    (try (goto-char (+ 1 end))
-         (goto-char end)
-         nil)))
+    (eval
+     `(try (goto-char (+ 1 ,end))
+           (goto-char ,end)
+           nil))))
 
 (defun pen-find-file-read-only-context ()
   ;; Also ensure this is an eipe in the first place
