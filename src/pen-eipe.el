@@ -18,7 +18,14 @@
   ;; Maybe I can configure self-insert-command in the future.
   (ignore-errors
     (put-text-property (point-min) end 'face 'pen-read-only)
-    (put-text-property (point-min) end 'read-only t)
+
+    ;; Don't actually use read-only because it causes too many problems
+    ;; (put-text-property (point-min) end 'read-only t)
+
+    ;; Unfortunately, I need a way to:
+    ;; - *Not* use the preceding faces/text state etc. when typing text
+    ;; - Disable typing at the start of the document
+
     (put-text-property (point-min) end 'pen-eipe-prompt t)
     (eval
      `(try (goto-char (+ 1 ,end))
