@@ -33,7 +33,8 @@
         (let* ((prompt (slurp-file fp))
                ;; (charlen (string-bytes prompt))
                (charlen (length prompt)))
-          (pen-eipe-set-prompt-ro (+ 1 charlen))))))
+          (pen-eipe-set-prompt-ro (+ 1 charlen))
+          (f-delete fp t)))))
 
 (defset pen-eipe-hook '())
 
