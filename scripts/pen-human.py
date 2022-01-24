@@ -70,6 +70,9 @@ def b(c, inputstring="", timeout=0):
 
 # Send the prompt as the input
 
+# TODO Also send to pen-eipe the overlay, so the engine needs to know what the
+# function was.
+
 # It seems that my b function does not filter out stderr currently
 result=b("pen-export-prompt pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
 

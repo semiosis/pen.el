@@ -522,3 +522,8 @@ git clone "https://github.com/charmbracelet/lipgloss"
 git clone "https://github.com/charmbracelet/wish"
 )
 pen-build-charm
+
+(
+cd ~/repos
+git clone "https://github.com/huginn/huginn"
+)
