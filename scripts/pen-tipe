@@ -4,7 +4,7 @@ export TTY
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -wintype) {
-        wintype="$2"
+        WINTYPE="$2"
         shift
         shift
     }
@@ -16,18 +16,26 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -e) {
+        USE_EMACS=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
-: "${wintype:="sps"}"
+: "${WINTYPE:="sps"}"
 
 export VIPE_CLEAR
 export PEN_PROMPT
 
 vipe_cmd="$1"
-# eipe
-: "${vipe_cmd:="vipe"}"
 
-# echo start | pen-tv &>/dev/null
+if test "$USE_EMACS" = "y"; then
+    : "${vipe_cmd:="pen-eipe"}"
+fi
+
+: "${vipe_cmd:="vipe"}"
 
 # This is hanging for pen-eipe when emacs is started with run.sh
 # Therefore, pen-eipe is simply not finishing.
@@ -36,9 +44,9 @@ vipe_cmd="$1"
 echo Waiting for output from promptee... | pen-hls purple 1>&2
 if pen-tm session-exists human; then
     echo Sending prompt to hidden terminal... | pen-hls red 1>&2
-    pen-tm -export PEN_PROMPT -sout -vipe "$wintype" -t human: "$vipe_cmd" | cat
+    pen-tm -export PEN_PROMPT -sout -vipe "$WINTYPE" -t human: "$vipe_cmd" | cat
 else
-    pen-tm -export PEN_PROMPT -sout -vipe "$wintype" "$vipe_cmd" | cat
+    pen-tm -export PEN_PROMPT -sout -vipe "$WINTYPE" "$vipe_cmd" | cat
 fi
 
 # pen-tm -w -sout -vipe spv "$vipe_cmd" | cat
