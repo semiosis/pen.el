@@ -43,10 +43,18 @@
           (pen-eipe-set-prompt-ro (+ 1 charlen))
           (f-delete fp t)))))
 
+(defun pen-find-file-overlay-info ()
+  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_info")))
+    (if (f-exists-p fp)
+        (let* ((info (slurp-file fp)))
+          ;; (pen-eipe-set-info-overlay info)
+          (f-delete fp t)))))
+
 (defset pen-eipe-hook '())
 
 ;; This needs to happen after the file is loaded
 (add-hook 'pen-eipe-hook 'pen-find-file-read-only-context)
+(add-hook 'pen-eipe-hook 'pen-find-file-overlay-info)
 
 (defun run-eipe-hooks ()
   (interactive)
