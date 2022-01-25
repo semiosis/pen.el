@@ -6,7 +6,7 @@
          (orig-lang (ht-get ht "original_language"))
          (output (ht-get ht "output")))
 
-    (pen-eipe output nil nil (concat "Original language: " orig-lang))
+    (pen-eipe output nil nil nil (concat "Original language: " orig-lang))
 
     ;; TODO Use pen-eipe
     ;; Use an overlay to display the original language
