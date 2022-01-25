@@ -92,6 +92,7 @@
 (require 'pen-demos)
 (require 'pen-command-log)
 (require 'pen-tree-sitter)
+(require 'pen-prompt-function-library)
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
