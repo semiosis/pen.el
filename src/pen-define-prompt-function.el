@@ -1978,6 +1978,7 @@ Function names are prefixed with pf- for easy searching"
                         (action (pen-yaml-test yaml-ht "action"))
 
                         (parsers (pen--htlist-to-alist (ht-get yaml-ht "parsers")))
+                        (actions (pen--htlist-to-alist (ht-get yaml-ht "actions")))
 
                         (new-document (pen-yaml-test yaml-ht "new-document"))
                         (expand-jinja (pen-yaml-test yaml-ht "expand-jinja"))
