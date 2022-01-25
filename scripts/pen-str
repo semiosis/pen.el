@@ -447,6 +447,18 @@ case "$f" in
     }
     ;;
 
+    translate-to-english-1-json) {
+        IFS= read -r original_language
+        IFS= read -rd '' output < <(cat);typeset -p output &>/dev/null
+
+        original_language="$(p "$original_language" | cut -d : -f 2)"
+        output="$(p "$output" | sed 1d)"
+
+        printf -- "%s\n" "$original_language"
+        printf -- "%s" "$output" | jq --raw-input . | jq --slurp --arg original_language "$original_language" "{ \"original_language\": \$original_language, \"output\": . }"
+    }
+    ;;
+
     max-double-spaced-no-trailing) {
         # Only remove trailing, not leading
         sed 's/\s\+$//' | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
