@@ -4,6 +4,10 @@
   (interactive)
   (let ((ht (json-parse-string json)))
     (message (ht-get ht "original_language"))
-    (message (ht-get ht "output"))))
+    (pen-etv (ht-get ht "output"))
+
+    ;; TODO Use pen-eipe
+    ;; Use an overlay to display the original language
+    ))
 
 (provide 'pen-prompt-function-library)
