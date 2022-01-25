@@ -454,8 +454,7 @@ case "$f" in
         original_language="$(p "$original_language" | cut -d : -f 2)"
         output="$(p "$output" | sed 1d)"
 
-        printf -- "%s\n" "$original_language"
-        printf -- "%s" "$output" | jq --raw-input . | jq --slurp --arg original_language "$original_language" "{ \"original_language\": \$original_language, \"output\": . }"
+        printf -- "%s" "$output" | jq --raw-input --slurp --arg original_language "$original_language" "{ \"original_language\": \$original_language, \"output\": . }"
     }
     ;;
 
