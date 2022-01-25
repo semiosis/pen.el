@@ -2343,7 +2343,7 @@ Function names are prefixed with pf- for easy searching"
                                 (if examples (concat "\nexamples:\n" (pen-list-to-orglist examples)))
                                 (if preprocessors (concat "\npreprocessors:\n" (pen-list-to-orglist preprocessors)))
                                 (if pipelines (concat "\npipelines:\n" (pps pipelines)))
-                                (if pipelines (concat "\nparsers:\n" (pps parsers)))
+                                (if parsers (concat "\nparsers:\n" (pps parsers)))
                                 (if expressions (concat "\nexpressions:\n" (pps expressions)))
                                 (if var-defaults (concat "\nvar-defaults:\n" (pen-list-to-orglist var-defaults)))
                                 (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
