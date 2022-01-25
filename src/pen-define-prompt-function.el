@@ -1977,6 +1977,8 @@ Function names are prefixed with pf- for easy searching"
                         ;; sp +/"^action: pen-find-file" "$HOME/source/git/semiosis/prompts/prompts/recurse-directory-4.prompt"
                         (action (pen-yaml-test yaml-ht "action"))
 
+                        (parsers (pen--htlist-to-alist (ht-get yaml-ht "parsers")))
+
                         (new-document (pen-yaml-test yaml-ht "new-document"))
                         (expand-jinja (pen-yaml-test yaml-ht "expand-jinja"))
                         (start-yas (pen-yaml-test yaml-ht "start-yas"))
