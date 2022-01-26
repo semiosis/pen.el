@@ -501,9 +501,9 @@
 
 (defset menu-bar-esp-menu
   (let ((menu (make-sparse-keymap "ESP")))
-    ;; (bindings--define-key menu [mi-lsp]
-    ;;   '(menu-item "Start LSP (Language Server Protocol)" pen-start-esp
-    ;;               :help "Start LSP in current buffer"))
+    (bindings--define-key menu [mi-lsp]
+      '(menu-item "Start LSP (Language Server Protocol)" pen-start-esp
+                  :help "Start LSP in current buffer"))
     (bindings--define-key menu [mi-esp]
       '(menu-item "Start ESP (Pen.el LSP server)" pen-start-esp
                   :help "Start ESP (Extra Sensory Perception) in current buffer"))
