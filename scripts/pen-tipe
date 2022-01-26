@@ -29,6 +29,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -pov) {
+        PEN_PREOVERLAY="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 : "${WINTYPE:="sps"}"
@@ -36,6 +43,7 @@ esac; done
 export VIPE_CLEAR
 export PEN_PROMPT
 export PEN_OVERLAY
+export PEN_PREOVERLAY
 
 vipe_cmd="$1"
 
