@@ -228,6 +228,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("code"
          ("Cancel" :call identity-command)
          ("> generate program" :call rcm-generate-program)
+         ("Quick fix syntax" :call pf-quick-fix-code/1)
          ("LSP explain error" :call pen-lsp-explain-error)
          ("explain error" :call pf-explain-error/2)
          ("asktutor" :call pen-tutor-mode-assist :if (derived-mode-p 'prog-mode))
@@ -277,7 +278,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   `(("Cancel" :call identity-command)
     ("translate" :call pf-translate-from-world-language-x-to-y/3)
     ("transpile" :call pf-transpile/3)
-    
+
     ("Complete until EOD" :call pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1 :if (pen-selected-p))
     ("> explain code" :call rcm-explain-code)
     ("> cheap" :call rcm-cheap)
