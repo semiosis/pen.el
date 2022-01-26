@@ -55,6 +55,9 @@ fi
 : ${CWD:="$(pwd)"}
 : ${PEN_USER:="$(whoami)"}
 
+hn="$(hostname)"
+hn="$(p "$hn" | sed 's/^pen-//')"
+
 if test "$SSH_TO_HOST" = "y"; then
     ssh \
         -i "~/.pen/host_key" \
@@ -62,7 +65,7 @@ if test "$SSH_TO_HOST" = "y"; then
         -o ControlPath="~/ssh-controlpath-%r@%h:%p" \
         -o UserKnownHostsFile=/dev/null \
         -o StrictHostKeyChecking=no \
-        -t $PEN_USER@$(hostname) \
+        -t $PEN_USER@$hn \
         "bash -l -c $(cmd-nice-posix ". ~/.profile; cd $(cmd-nice-posix "$CWD"); $CMD")"
 else
     cd "$CWD"
