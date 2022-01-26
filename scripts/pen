@@ -1553,6 +1553,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$GLOSSARIES_DIR" && printf -- "%s " -v "$GLOSSARIES_DIR:/root/.emacs.d/host/glossaries" ) \
         $(test -n "$OPENAI_API_EL_DIR" && printf -- "%s " -v "$OPENAI_API_EL_DIR:/root/.emacs.d/host/openai-api.el" ) \
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
+        --hostname pen-$(hostname) \
         --env PEN_USE_GUI \
         --env PEN_NO_TM \
         --env PEN_ENGINE \
