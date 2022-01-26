@@ -13,6 +13,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -ov) {
+        PEN_OVERLAY="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 

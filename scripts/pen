@@ -782,7 +782,7 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
 
     # This is for read-only text at the top of a potentially new file
     export PEN_PROMPT
-    export PEN_OVERLAY_INFO
+    export PEN_OVERLAY
 
     if ! inside-docker-p; then
         ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
@@ -1554,7 +1554,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         --env PEN_NO_TIMEOUT \
         --env PEN_N_DAEMONS \
         --env PEN_PROMPT \
-        --env PEN_OVERLAY_INFO \
+        --env PEN_OVERLAY \
         --env NO_QUIT_DAEMONS \
         --env USE_NVC \
         --env TERM \

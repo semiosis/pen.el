@@ -44,7 +44,7 @@
           (f-delete fp t)))))
 
 (defun pen-find-file-overlay-info ()
-  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_info")))
+  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
     (if (f-exists-p fp)
         (let* ((info (slurp-file fp)))
           ;; (pen-eipe-set-info-overlay info)
