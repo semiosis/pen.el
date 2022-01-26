@@ -14,7 +14,7 @@ esac; done
 
 if test "$here" = "y"; then
     echo "loading video..."
-    echo "Use `C-c` to kill asciinema or `F1 x` to kill the window via tmux"
+    echo "Use \`C-c\` to kill asciinema or \`F1 x\` to kill the window via tmux"
     asciinema play "$@"
 else
     CMD="$(cmd "$@")"
