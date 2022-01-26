@@ -712,6 +712,9 @@
     (bindings--define-key menu [mi-pen-demo-paracosm]
       '(menu-item "Mind-mapping with Paracosm" pen-demo-paracosm
                   :help "Mind-mapping with Augmented Intelligence"))
+    (bindings--define-key menu [mi-pen-demo-human-promptee]
+      '(menu-item "Human-Promptee" pen-demo-human-promptee
+                  :help "A human as a promptee instead of a language model"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
