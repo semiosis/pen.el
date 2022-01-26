@@ -13,7 +13,6 @@ cmd() {
 }
 ssh() { ( cmd command ssh -o LogLevel=QUIET "$@" | awk 1 1>&2; command ssh -o LogLevel=QUIET "$@"; ) }
 
-
 stdin_exists() { ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null; }
 is_tty() { [ -t 1 ]; }
 pager() { { is_tty && less "$@"; } || cat; }
