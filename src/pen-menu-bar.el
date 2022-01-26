@@ -723,17 +723,17 @@
                   :help "Cancel out of this menu"))
     menu))
 
-(defset menu-bar-help-menu
+(defset menu-bar-pen-tutorials-menu
   (let ((menu (make-sparse-keymap "Help")))
     (bindings--define-key menu [mi-menu-bar-demos-menu]
-      `(menu-item "Pen.el Demos" ,menu-bar-demos-menu
+      `(menu-item "Demos" ,menu-bar-demos-menu
                   :help "Talk 1-on-1 to chatbots"))
     (bindings--define-key menu [mi-pen-read-tutorial]
-      '(menu-item "Select Pen.el Tutorial" pen-read-tutorial
+      '(menu-item "Blog posts" pen-read-tutorial
                   :help "Select from a bunch of tutorials"))
-    (bindings--define-key menu [mi-menu-bar-emacs-help-menu]
-      `(menu-item "GNU/Emacs" ,menu-bar-emacs-help-menu
-                  :help "Standard Emacs Help menu"))
+    ;; (bindings--define-key menu [mi-menu-bar-emacs-help-menu]
+    ;;   `(menu-item "GNU/Emacs" ,menu-bar-emacs-help-menu
+    ;;               :help "Standard Emacs Help menu"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -876,8 +876,8 @@
       (bindings--define-key global-map [menu-bar config]
         (cons "Configure" menu-bar-configure-menu))
 
-      (bindings--define-key global-map [menu-bar help]
-        (cons "Help" menu-bar-help-menu))
+      (bindings--define-key global-map [menu-bar pen-help]
+        (cons "Tutorials" menu-bar-pen-tutorials-menu))
 
       (bindings--define-key global-map [menu-bar documents]
         (cons "Documents" menu-bar-documents-menu))
