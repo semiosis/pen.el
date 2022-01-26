@@ -94,6 +94,7 @@
 (require 'pen-tree-sitter)
 (require 'pen-prompt-function-library)
 (require 'pen-docs)
+(require 'pen-common)
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
