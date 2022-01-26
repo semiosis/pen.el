@@ -35,6 +35,7 @@ esac; done
 
 export VIPE_CLEAR
 export PEN_PROMPT
+export PEN_OVERLAY
 
 vipe_cmd="$1"
 
