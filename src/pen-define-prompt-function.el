@@ -1160,6 +1160,7 @@
                   prompt-final-edit-human)
              (pen-eipec final-prompt "nw"
                         nil
+                        nil
                         "Final prompt edit by a human:\n\n"))
             (t final-prompt)))
 

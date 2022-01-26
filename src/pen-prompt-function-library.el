@@ -7,7 +7,7 @@
          (output (ht-get ht "output")))
 
     (pen-eipe
-     output nil "nw" nil
+     output nil "nw" nil nil
      (concat "Original language: " orig-lang)
      t)
 
