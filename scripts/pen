@@ -21,8 +21,11 @@
 pen_version=2.0
 
 pen_image_tag() {
-    : "${image:="$(docker image ls | grep "semiosis/pen.el *latest" | cut -d ' ' -f 1):latest"}"
-    : "${image:="$(docker image ls | grep "semiosis/pen *latest" | cut -d ' ' -f 1):latest"}"
+    if ! inside-docker-p; then
+        : "${image:="$(docker image ls | grep "semiosis/pen.el *latest" | cut -d ' ' -f 1):latest"}"
+        : "${image:="$(docker image ls | grep "semiosis/pen *latest" | cut -d ' ' -f 1):latest"}"
+    fi
+
     : "${image:="semiosis/pen.el:latest"}"
 
     echo "$image"
