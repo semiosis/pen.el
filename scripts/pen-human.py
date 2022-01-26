@@ -76,8 +76,8 @@ def b(c, inputstring="", timeout=0):
 # It seems that my b function does not filter out stderr currently
 #  result=b("pen-export-prompt pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
 #  result=b("pen-export-preoverlay pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
-
-result=b("pen-export-overlay pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
+#  result=b("pen-export-overlay pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
+result=b("pen-export-buffer pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
 
 # result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
 #                      "prompt: " + PEN_PROMPT,
