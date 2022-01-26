@@ -22,6 +22,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -help) {
+        PEN_HELP="$2"
+        shift
+        shift
+    }
+    ;;
+
     -ov) {
         PEN_OVERLAY="$2"
         shift
@@ -42,6 +49,7 @@ esac; done
 
 export VIPE_CLEAR
 export PEN_PROMPT
+export PEN_HELP
 export PEN_OVERLAY
 export PEN_PREOVERLAY
 
@@ -60,9 +68,9 @@ fi
 echo Waiting for output from promptee... | pen-hls purple 1>&2
 if pen-tm session-exists human; then
     echo Sending prompt to hidden terminal... | pen-hls red 1>&2
-    pen-tm -export "PEN_PROMPT PEN_OVERLAY PEN_PREOVERLAY" -sout -vipe "$WINTYPE" -t human: "$vipe_cmd" | cat
+    pen-tm -export "PEN_PROMPT PEN_HELP PEN_OVERLAY PEN_PREOVERLAY" -sout -vipe "$WINTYPE" -t human: "$vipe_cmd" | cat
 else
-    pen-tm -export "PEN_PROMPT PEN_OVERLAY PEN_PREOVERLAY" -sout -vipe "$WINTYPE" "$vipe_cmd" | cat
+    pen-tm -export "PEN_PROMPT PEN_HELP PEN_OVERLAY PEN_PREOVERLAY" -sout -vipe "$WINTYPE" "$vipe_cmd" | cat
 fi
 
 # pen-tm -w -sout -vipe spv "$vipe_cmd" | cat

@@ -13,6 +13,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -help) {
+        PEN_HELP="$2"
+        shift
+        shift
+    }
+    ;;
+
     -ov) {
         PEN_OVERLAY="$2"
         shift
@@ -52,6 +59,7 @@ export PEN_NO_TM=y
 # This is essential to prevent hanging, currently
 
 export PEN_PROMPT
+export PEN_HELP
 export PEN_OVERLAY
 export PEN_PREOVERLAY
 pen -notm -nw --pool "$tf_pipe_buffer"

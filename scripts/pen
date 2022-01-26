@@ -785,6 +785,7 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
 
     # This is for read-only text at the top of a potentially new file
     export PEN_PROMPT
+    export PEN_HELP
     export PEN_OVERLAY
     export PEN_PREOVERLAY
 
@@ -1558,6 +1559,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         --env PEN_NO_TIMEOUT \
         --env PEN_N_DAEMONS \
         --env PEN_PROMPT \
+        --env PEN_HELP \
         --env PEN_OVERLAY \
         --env NO_QUIT_DAEMONS \
         --env USE_NVC \
