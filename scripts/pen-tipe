@@ -52,9 +52,9 @@ fi
 echo Waiting for output from promptee... | pen-hls purple 1>&2
 if pen-tm session-exists human; then
     echo Sending prompt to hidden terminal... | pen-hls red 1>&2
-    pen-tm -export "PEN_PROMPT PEN_OVERLAY" -sout -vipe "$WINTYPE" -t human: "$vipe_cmd" | cat
+    pen-tm -export "PEN_PROMPT PEN_OVERLAY PEN_PREOVERLAY" -sout -vipe "$WINTYPE" -t human: "$vipe_cmd" | cat
 else
-    pen-tm -export "PEN_PROMPT PEN_OVERLAY" -sout -vipe "$WINTYPE" "$vipe_cmd" | cat
+    pen-tm -export "PEN_PROMPT PEN_OVERLAY PEN_PREOVERLAY" -sout -vipe "$WINTYPE" "$vipe_cmd" | cat
 fi
 
 # pen-tm -w -sout -vipe spv "$vipe_cmd" | cat
