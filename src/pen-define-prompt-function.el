@@ -1688,7 +1688,6 @@
            (cond
             ((sor final-action)
              (progn
-               (pen-etv `(apply (intern ,final-action) (list ,result)))
                (apply (intern final-action) (list result))
                result))
             ((or
