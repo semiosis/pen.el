@@ -145,7 +145,7 @@ fi
 
 if test -n "$PEN_PREOVERLAY"; then
     mkdir -p $HOME/.pen/eipe
-    printf -- "%s" "$PEN_PREOVERLAY" > "/root/.pen/eipe/${SOCKET}_overlay"
+    printf -- "%s" "$PEN_PREOVERLAY" > "/root/.pen/eipe/${SOCKET}_preoverlay"
 fi
 
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then

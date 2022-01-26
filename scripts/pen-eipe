@@ -25,7 +25,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         shift
         shift
     }
-         ;;
+    ;;
 
     *) break;
 esac; done
