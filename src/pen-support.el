@@ -476,6 +476,10 @@ delim is used to guarantee the function returns multiple matches per line
           "DEFAULT")
       "")))
 
+;; Disable the finished message from appearing in all shell commands
+(defun shell-command-sentinel (process signal)
+  (when (memq (process-status process) '(exit signal))))
+
 (defun pen-sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
 This appears to strip ansi codes.
