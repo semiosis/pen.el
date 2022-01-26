@@ -43,6 +43,15 @@
           (pen-eipe-set-prompt-ro (+ 1 charlen))
           (f-delete fp t)))))
 
+(defmacro setface (name spec doc)
+  `(custom-set-faces (list ',name
+                           ,spec)))
+
+(defmacro defsetface (name spec doc)
+  `(progn
+     (defface ,name ,spec ,doc)
+     (setface ,name ,spec ,doc)))
+
 (defsetface pen-human-prompt
   '((t :foreground "#f664b5"
        ;; :background "#c01565"
