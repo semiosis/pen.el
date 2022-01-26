@@ -25,7 +25,7 @@
 (defun prin1-to-string-safe (s)
   (if s
       (prin1-to-string s)
-    ""))
+    "\"\""))
 
 (defun pen-q (&rest strings)
   (let ((print-escape-newlines t))
