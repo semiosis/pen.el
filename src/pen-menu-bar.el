@@ -744,6 +744,9 @@
     (bindings--define-key menu [mi-pen-nbfs]
       '(menu-item "New empty file/buffer (*untitled*)" nbfs
                   :help "Open a new buffer without a name"))
+    (bindings--define-key menu [mi-pen-tm-edit-v-in-nw]
+      '(menu-item "Open in vim" pen-tm-edit-v-in-nw
+                  :help "Open the current buffer in vim"))
     (bindings--define-key menu [mi-pen-term-sps]
       '(menu-item "Split screen with pet" pen-term-sps
                   :help "Open a pet in a split screen (emacs term inside docker)"))
