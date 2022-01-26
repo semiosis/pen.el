@@ -45,6 +45,7 @@ export PEN_NO_TM=y
 # This is essential to prevent hanging, currently
 
 export PEN_PROMPT
+export PEN_OVERLAY
 pen -notm -nw --pool "$tf_pipe_buffer"
 
 exec 1>&3
