@@ -552,7 +552,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
        (if (or
             (not stdin)
             detach)
-           (progn
+           (shut-up
              (shell-command final_cmd output_buffer "*pen-sn-stderr*"))
          (with-temp-buffer
            (insert stdin)
@@ -571,8 +571,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
               (setq output (str b_exit_code)))
           (ignore-errors
             (progn (f-delete tf)
-                   (f-delete tf_exit_code)))))
-      output)))
+                   (f-delete tf_exit_code)))
+          output)))))
 
 (cl-defun pen-cl-sn (shell-cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)
   (interactive)
