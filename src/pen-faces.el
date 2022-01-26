@@ -270,7 +270,15 @@ argument, prompt for a regular expression using `read-regexp'."
     (set-face-background 'fringe nil)
 
     (set-face-foreground 'org-block "#447744")
-    (set-face-background 'org-block "#151515")))
+    (set-face-background 'org-block "#151515")
+
+
+    (require 'ivy)
+    (set-face-foreground 'ivy-current-match "#262626")
+    (set-face-background 'ivy-current-match "#d72f4f")
+
+    (set-face-background 'ivy-minibuffer-match-face-2 "#562626")
+    (set-face-foreground 'ivy-minibuffer-match-face-2 "#d72f4f")))
 
 (add-hook 'after-init-hook 'pen-set-faces)
 

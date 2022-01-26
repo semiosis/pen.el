@@ -206,10 +206,6 @@
            (or (pen-var-value-maybe 'formatter)
                ',formatter))
 
-          (final-action
-           (or (pen-var-value-maybe 'action)
-               ',action))
-
           (final-collation-temperature-stepper
            (or (pen-var-value-maybe 'collation-temperature-stepper)
                ,collation-temperature-stepper))
@@ -777,11 +773,6 @@
                 ;; final-n-completions
                 )))
 
-          (final-action
-           (expand-template
-            (str (or (pen-var-value-maybe 'action)
-                     ,action))))
-
           ;; This could be a pf- function, elisp or shell command.
           ;; It completes until it doesn't complete anymore. 
           (final-closer
@@ -880,6 +871,48 @@
                 (json--encode-alist final-payloads)
               nil)
             ""))
+
+          (final-parsers
+           (cl-loop for pr in ',parsers
+                    collect
+                    (let* ((funname (concat "pen-parser-" (car pr)))
+                           (funsym (intern funname))
+                           (funcmd (cdr pr)))
+                      (eval
+                       `(defun ,funsym (&optional result)
+                          "result is raw output of a prompt"
+                          (setq result
+                                (or
+                                 result
+                                 (pen-var-value-maybe 'output)))
+                          (pen-sn ,funcmd result))))))
+
+          (final-actions
+           (cl-loop for pl in ',actions
+                    collect
+                    (let* ((funname (concat "pen-action-" (car pl)))
+                           (funsym (intern funname))
+                           (funcode (cdr pl)))
+                      (eval
+                       `(defun ,funsym (&optional result)
+                          "Perform an action on the prompt output"
+                          (setq result
+                                (or
+                                 result
+                                 (pen-var-value-maybe 'output)))
+                          (eval-string ,funcode))))))
+
+          (final-action
+           ;; select the action here, i guess, rather than later
+           ;; put a letf around final actions and actions
+            ;; which supplies the parsers
+           (progn
+             (or
+              (pen-var-value-maybe 'action)
+              (and
+               (not no-select-action)
+               final-actions
+               (fz final-actions nil nil "prompt action: ")))))
 
           (final-stop-patterns
            (or (pen-var-value-maybe 'stop-patterns)
@@ -1707,6 +1740,7 @@
                                                              no-select-result
                                                              include-prompt
                                                              no-gen
+                                                             no-select-action
                                                              select-only-match
                                                              variadic-var
                                                              pretext
@@ -1975,7 +2009,7 @@ Function names are prefixed with pf- for easy searching"
                         (linter (pen-yaml-test yaml-ht "linter"))
                         ;; This is both a code action and the default action
                         ;; sp +/"^action: pen-find-file" "$HOME/source/git/semiosis/prompts/prompts/recurse-directory-4.prompt"
-                        (action (pen-yaml-test yaml-ht "action"))
+                        ;; (action (pen-yaml-test yaml-ht "action"))
 
                         (parsers (pen--htlist-to-alist (ht-get yaml-ht "parsers")))
                         (actions (pen--htlist-to-alist (ht-get yaml-ht "actions")))
