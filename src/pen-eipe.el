@@ -105,7 +105,7 @@
        (window-height . fit-window-to-buffer)))))
 
 (defun pen-find-file-buffer-info ()
-  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_buffer")))
+  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_help")))
     (if (f-exists-p fp)
         (let* ((info (slurp-file fp)))
           (pen-eipe-set-info-buffer info)
