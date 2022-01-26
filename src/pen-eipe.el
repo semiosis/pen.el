@@ -85,6 +85,13 @@
           (pen-eipe-set-info-overlay info)
           (f-delete fp t)))))
 
+(defun pen-find-file-preoverlay-info ()
+  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_preoverlay")))
+    (if (f-exists-p fp)
+        (let* ((info (slurp-file fp)))
+          (pen-eipe-set-info-preoverlay info)
+          (f-delete fp t)))))
+
 (defset pen-eipe-hook '())
 
 ;; This needs to happen after the file is loaded
