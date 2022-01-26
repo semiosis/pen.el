@@ -94,6 +94,16 @@
           (pen-eipe-set-info-overlay info)
           (f-delete fp t)))))
 
+(defun pen-eipe-set-info-buffer (info)
+  (let ((b (get-buffer-create "*prompt*")))
+    (with-current-buffer b
+      (insert (propertize info 'face 'pen-human-prompt)))
+    (display-buffer
+     (get-buffer-create "*prompt*")
+     '((display-buffer-below-selected display-buffer-at-bottom)
+       (inhibit-same-window . t)
+       (window-height . fit-window-to-buffer)))))
+
 (defun pen-eipe-set-info-preoverlay (info)
   (overlay-put
    (make-overlay (point-min) (point-min))
