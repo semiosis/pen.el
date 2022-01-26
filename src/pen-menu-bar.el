@@ -706,6 +706,9 @@
 
 (defset menu-bar-demos-menu
   (let ((menu (make-sparse-keymap "Demos")))
+    (bindings--define-key menu [mi-pen-read-tutorial]
+      '(menu-item "Select Tutorial" pen-read-tutorial
+                  :help "Select from a bunch of tutorials"))
     (bindings--define-key menu [mi-pen-demo-installation]
       '(menu-item "Installation of Pen.el" pen-demo-installation
                   :help "Demo the installation of Pen.el"))
