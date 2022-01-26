@@ -67,6 +67,7 @@
             ;; These don't work. I don't know why
             (magit-process-mode :select nil :inhibit-window-quit t :same nil :align pen--shackle-sensible-alignment :size 0.5)
             ("\\*magit-process:" :regexp t :select nil :inhibit-window-quit t :same nil :align pen--shackle-sensible-alignment :size 0.5)
+            ("*pen-help*" :size 0.25 :align right)
             ;; You can also do it this way
             ;; (compilation-mode :select nil)
             ("*fs-mode*" :ignore nil :select t :same t)
