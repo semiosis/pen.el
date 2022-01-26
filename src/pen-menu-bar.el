@@ -715,7 +715,7 @@
     (bindings--define-key menu [mi-pen-demo-human-promptee]
       '(menu-item "Human-Promptee" pen-demo-human-promptee
                   :help "A human as a promptee instead of a language model"))
-    (bindings--define-key menu [mi-pen-demo-human-promptee]
+    (bindings--define-key menu [mi-pen-demo]
       '(menu-item "Pet vim" pen-demo-pet
                   :help "Running vim inside Pen.el"))
     (bindings--define-key menu [mi-pen-demo-imaginary-interpreter]
