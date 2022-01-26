@@ -483,7 +483,9 @@ This appears to strip ansi codes.
 This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .prompt files"
   (interactive)
 
-  (let ((output))
+  (let ((output)
+        (tf)
+        (input_tf))
     (if (not shell-cmd)
         (setq shell-cmd "false"))
 
@@ -523,34 +525,53 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                              (if (or (pen-var-value-maybe 'force-temperature))
                                  (list "PEN_TEMPERATURE" (pen-var-value-maybe 'force-temperature))))))))
 
+        (if (and detach
+                 stdin)
+            (progn
+              (setq input_tf (make-temp-file "elisp_bash_input"))
+              (write-to-file stdin input_tf)
+              (setq shell-cmd (concat "exec < <(cat " (pen-q input_tf) "); " shell-cmd))))
+
         (if (not (re-match-p "[&;]$" shell-cmd))
             (setq shell-cmd (concat shell-cmd ";")))
+
+        (if (and detach
+                 stdin)
+            (setq final_cmd (concat final_cmd " rm -f " (pen-q input_tf) ";")))
 
         ;; I need a log level here. This will be too verbose
         (setq final_cmd (pen-log-verbose
                          (concat exps "; ( cd " (pen-q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " tf))))
 
       (if detach
-          (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &")))
+          (if stdin
+              (setq final_cmd (concat "trap '' HUP; bash -c " (pen-q final_cmd) " &"))
+            (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &"))))
 
       (shut-up-c
-       (if (not stdin)
+       (if (or
+            (not stdin)
+            detach)
            (progn
              (shell-command final_cmd output_buffer "*pen-sn-stderr*"))
          (with-temp-buffer
            (insert stdin)
            (shell-command-on-region (point-min) (point-max) final_cmd output_buffer nil "*pen-sn-stderr*"))))
-      (setq output (slurp-file tf))
-      (if chomp
-          (setq output (chomp output)))
-      (progn
-        (defset b_exit_code (slurp-file tf_exit_code)))
 
-      (if b_output-return-code
-          (setq output (str b_exit_code)))
-      (ignore-errors
-        (progn (f-delete tf)
-               (f-delete tf_exit_code)))
+      (if detach
+          t
+        (progn
+          (setq output (slurp-file tf))
+          (if chomp
+              (setq output (chomp output)))
+          (progn
+            (defset b_exit_code (slurp-file tf_exit_code)))
+
+          (if b_output-return-code
+              (setq output (str b_exit_code)))
+          (ignore-errors
+            (progn (f-delete tf)
+                   (f-delete tf_exit_code)))))
       output)))
 
 (cl-defun pen-cl-sn (shell-cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)

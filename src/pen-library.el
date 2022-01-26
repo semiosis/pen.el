@@ -677,7 +677,17 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
   "`prompttext` is read-only text at the start of the
 buffer which is not included when this function returns"
   (pen-sn (pen-cmd "pen-tvipe" "-cl" (pen-cmd "pen-eipe" "-pt" prompttext))
-          input nil nil detach nil nil nil chomp))
+              ;; don't put the detach here
+          input nil nil detach nil nil nil chomp)
+
+  ;; Sadly the following doesn't work, for reasons I don't currently understand
+  ;; (async-start
+  ;;  (eval
+  ;;   `(lambda ()
+  ;;      (pen-sn (pen-cmd "pen-tvipe" "-cl" (pen-cmd "pen-eipe" "-pt" ,prompttext))
+  ;;              ;; don't put the detach here
+  ;;              ,input nil nil nil nil nil nil ,chomp))))
+  )
 
 (defun pen-eipec (input &optional wintype prompttext)
   (pen-eipe input t wintype prompttext))
