@@ -140,8 +140,12 @@ fi
 # - example of prompt output
 if test -n "$PEN_OVERLAY"; then
     mkdir -p ~/.pen/eipe
-    # pen-tm -d nw -d -fargs vim "/root/.pen/eipe/${SOCKET}_prompt"
     printf -- "%s" "$PEN_OVERLAY" > "/root/.pen/eipe/${SOCKET}_overlay"
+fi
+
+if test -n "$PEN_PREOVERLAY"; then
+    mkdir -p $HOME/.pen/eipe
+    printf -- "%s" "$PEN_PREOVERLAY" > "/root/.pen/eipe/${SOCKET}_overlay"
 fi
 
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
