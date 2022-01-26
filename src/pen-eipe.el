@@ -59,10 +59,10 @@
 
 (defun pen-eipe-set-info-overlay (info)
   (overlay-put
-   (make-overlay (point) (point))
+   (make-overlay (point-min) (point-min))
    'after-string
    (concat (propertize info 'face 'pen-human-prompt)
-           (propertize "\n\n" 'face 'pen-none-face))))
+           (propertize "\n" 'face 'pen-none-face))))
 
 (defun pen-find-file-overlay-info ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
