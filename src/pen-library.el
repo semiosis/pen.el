@@ -682,7 +682,7 @@ buffer which is not included when this function returns"
 
   (pen-sn (pen-cmd "pen-tvipe"
                    "-wintype" wintype
-                   "-cl" (pen-cmd "pen-eipe" "-pt" prompttext "-ov" (pen-q overlay-text)))
+                   "-cl" (pen-cmd "pen-eipe" "-pt" prompttext "-ov" overlay-text))
           ;; don't put the detach here
           input nil nil detach nil nil nil chomp)
 

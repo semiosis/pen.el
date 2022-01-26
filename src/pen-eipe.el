@@ -43,12 +43,14 @@
           (pen-eipe-set-prompt-ro (+ 1 charlen))
           (f-delete fp t)))))
 
+(defun pen-eipe-set-info-overlay (info)
+  )
+
 (defun pen-find-file-overlay-info ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
     (if (f-exists-p fp)
         (let* ((info (slurp-file fp)))
-          ;; (pen-eipe-set-info-overlay info)
-          (pen-etv info)
+          (pen-eipe-set-info-overlay info)
           (f-delete fp t)))))
 
 (defset pen-eipe-hook '())
