@@ -696,7 +696,7 @@ buffer which is not included when this function returns"
   )
 
 (defun pen-eipec (input &optional wintype prompttext)
-  (pen-eipe input t wintype prompttext))
+  (pen-eipe input t wintype nil prompttext))
 
 (defun pen-internet-connected-p ()
   (pen-snq "internet-connected-p"))
