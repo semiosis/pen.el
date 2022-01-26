@@ -135,6 +135,11 @@ if test -n "$PEN_PROMPT"; then
     printf -- "%s" "$PEN_PROMPT" > "/root/.pen/eipe/${SOCKET}_prompt"
 fi
 
+if test -n "$PEN_HELP"; then
+    mkdir -p $HOME/.pen/eipe
+    printf -- "%s" "$PEN_HELP" > "/root/.pen/eipe/${SOCKET}_help"
+fi
+
 # Create an overlay over the buffer with this info
 # - prompt function name
 # - example of prompt output
