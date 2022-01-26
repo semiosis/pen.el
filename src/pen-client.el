@@ -22,9 +22,14 @@
 (defun pp-oneline (l)
   (chomp (replace-regexp-in-string "\n +" " " (pp l))))
 
+(defun prin1-to-string-safe (s)
+  (if s
+      (prin1-to-string s)
+    ""))
+
 (defun pen-q (&rest strings)
   (let ((print-escape-newlines t))
-    (mapconcat 'identity (mapcar 'prin1-to-string strings) " ")))
+    (mapconcat 'identity (mapcar 'prin1-to-string-safe strings) " ")))
 
 (defalias 'e/escape-string 'pen-q)
 (defalias 'e/q 'pen-q)
