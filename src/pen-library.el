@@ -673,7 +673,9 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
 (defun pen-current-filename-maybe ()
   (sor (pen-f-basename (get-path nil t)) "untitled"))
 
-(defun pen-eipe (input &optional chomp wintype prompttext overlay-text
+(defun pen-eipe (input &optional chomp wintype
+                       prompttext
+                       overlay-text
                        preoverlay-text detach)
   "`prompttext` is read-only text at the start of the
 buffer which is not included when this function returns"
