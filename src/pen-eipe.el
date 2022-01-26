@@ -95,14 +95,21 @@
           (f-delete fp t)))))
 
 (defun pen-eipe-set-info-buffer (info)
-  (let ((b (get-buffer-create "*prompt*")))
+  (let ((b (get-buffer-create "*pen-help*")))
     (with-current-buffer b
       (insert (propertize info 'face 'pen-human-prompt)))
     (display-buffer
-     (get-buffer-create "*prompt*")
+     (get-buffer-create "*pen-help*")
      '((display-buffer-below-selected display-buffer-at-bottom)
        (inhibit-same-window . t)
        (window-height . fit-window-to-buffer)))))
+
+(defun pen-find-file-buffer-info ()
+  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_buffer")))
+    (if (f-exists-p fp)
+        (let* ((info (slurp-file fp)))
+          (pen-eipe-set-info-buffer info)
+          (f-delete fp t)))))
 
 (defun pen-eipe-set-info-preoverlay (info)
   (overlay-put
@@ -122,6 +129,7 @@
 
 ;; This needs to happen after the file is loaded
 (add-hook 'pen-eipe-hook 'pen-find-file-read-only-context)
+(add-hook 'pen-eipe-hook 'pen-find-file-buffer-info)
 (add-hook 'pen-eipe-hook 'pen-find-file-overlay-info)
 (add-hook 'pen-eipe-hook 'pen-find-file-preoverlay-info)
 
