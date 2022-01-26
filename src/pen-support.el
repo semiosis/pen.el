@@ -176,7 +176,7 @@ The string replace part is still a regular emacs replacement pattern, not PCRE"
 (defun prin1-to-string-safe (s)
   (if s
       (prin1-to-string s)
-    ""))
+    "\"\""))
 
 (defun e/escape-string (&rest strings)
   (let ((print-escape-newlines t))
