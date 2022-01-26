@@ -97,6 +97,8 @@
 (defun pen-eipe-set-info-buffer (info)
   (let ((b (get-buffer-create "*pen-help*")))
     (with-current-buffer b
+      (mark-whole-buffer)
+      (delete-region)
       (insert (propertize info 'face 'pen-human-prompt)))
     (display-buffer
      (get-buffer-create "*pen-help*")
