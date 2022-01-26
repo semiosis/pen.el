@@ -173,9 +173,14 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 The string replace part is still a regular emacs replacement pattern, not PCRE"
   (eval `(replace-regexp-in-string (pcre-to-elisp pat ,@body) rep s)))
 
+(defun prin1-to-string-safe (s)
+  (if s
+      (prin1-to-string s)
+    ""))
+
 (defun e/escape-string (&rest strings)
   (let ((print-escape-newlines t))
-    (s-join " " (mapcar 'prin1-to-string strings))))
+    (s-join " " (mapcar 'prin1-to-string-safe strings))))
 (defalias 'pen-q 'e/escape-string)
 ;; (defalias 'q 'e/escape-string)
 
