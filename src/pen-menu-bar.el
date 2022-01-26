@@ -726,10 +726,10 @@
 (defset menu-bar-help-menu
   (let ((menu (make-sparse-keymap "Help")))
     (bindings--define-key menu [mi-menu-bar-demos-menu]
-      `(menu-item "Demos" ,menu-bar-demos-menu
+      `(menu-item "Pen.el Demos" ,menu-bar-demos-menu
                   :help "Talk 1-on-1 to chatbots"))
     (bindings--define-key menu [mi-pen-read-tutorial]
-      '(menu-item "Select Tutorial" pen-read-tutorial
+      '(menu-item "Select Pen.el Tutorial" pen-read-tutorial
                   :help "Select from a bunch of tutorials"))
     (bindings--define-key menu [mi-menu-bar-emacs-help-menu]
       `(menu-item "GNU/Emacs" ,menu-bar-emacs-help-menu
