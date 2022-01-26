@@ -1,0 +1,258 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Imagery for Pen.el with CLIP and inspired from Myst: The Book of Atrus
+#+DATE: <2021-07-15>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt clip pen
+
++ Original source material :: https://generative.ink/posts/alchemical-marriage-gpt-3-x-clip/#you-spin-worlds-together-and-untwine-them
+
+** Summary
+I follow the same instructions as in the
+aforementioned article to generate some
+imagery for =Pen.el=.
+
++ Project code :: https://github.com/semiosis/pen.el/
+
++ Tutorial and exhibition :: https://mullikine.github.io/posts/pen-tutorial/
+
++ Join discord :: https://discord.gg/JwKGbAdNHR
+
+*** Thoughts
+Using Pen to generate a programming
+environment using a LM. NL is the easiest to
+use code for transforming images, programming
+languages and NLs. That's why Pen exists, to
+be a shell for creativity, provenance and
+intelligibility, so as to not get lost in the
+interactive fiction.
+
+Don't you want to understand things via code rather than become lost in lost in the interactive fiction?
+There's a natural tendency to be amazed at tech like neural image generation, and a tendency to focus on that.
+But I think that the best place to focus thought is in the generative process, and in intelligibility.
+So though it may not be pretty, the NL shell and the prompt sharing etc. is essentially creating the 'linking books' that Gehn was referring to in Myst.
+You have to make the linking books. It's the first rule.
+Otherwise u get stuck inside another world unable to escape.
+Great allegory there.
+
+*** Docker install =pen.el=
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  docker run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+
+  # And to update the image
+  docker pull semiosis/pen.el:latest
+#+END_SRC
+
+** Demo
+I extract part of a passage from =Myst: The Book of Atrus=, using GPT-3 and =pen.el=.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/2XH4Io6Zb973qlOB73gW3mie1" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/2XH4Io6Zb973qlOB73gW3mie1.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/2XH4Io6Zb973qlOB73gW3mie1.js" id="asciicast-2XH4Io6Zb973qlOB73gW3mie1" async></script>
+#+END_EXPORT
+
+** Generating the imagery
+*** Generation 1
+This is the passage I have decided upon.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  A time-traveling wizard who uses a magic book and pen to create worlds.
+#+END_SRC
+
+[[./wizard2.png]]
+
+I like the little magic swirl above the planet on a pedestel.
+
+*** Generation 2
+
+[[./wizard4.png]]
+
+*** Generation 3
+[[./wizard5.png]]
+
+*** Generation 4
+[[./wizard7.png]]
+
+*** Generation 5
+[[./wizard8.png]]
+
+This reminds me of how I imagined Atrus or Gehn
+
+** Thoughts
+- https://generative.ink/posts/language-models-are-multiverse-generators/
+- https://semiosis.github.io/posts/representing-multiverses-with-datomic/
+
+Hypothesis: both people and language models are multiverse generators.
+
+** Excerpt from =Myst: The Book of Atrus=
+#+BEGIN_SRC text -n :async :results verbatim code
+  "Ink?"
+
+  "Yes ... but not just any ink.
+
+  It has special powers that ordinary ink does
+  not possess.
+
+  So, too, with the pages of the book.
+
+  They are made of a special paper, the formula
+  for which was kept secret by the Guild."
+
+  "And the pen?" Atrus asked, pointing to it,
+  "Is that special, too?"
+
+  Gehn smiled.
+
+  "No.
+
+  The pen is but a pen.
+
+  However, if anyone else tried to do what we
+  are about to do- anyone, that is, without D'ni
+  blood-then they would fail.
+
+  It would be impossible."
+
+  Turning to face the page, Gehn set the ink pot
+  down, then, dipping the metallic rip of the
+  quill into it, lifted the pen above the page
+  and began to write.
+
+  Slowly a D'ni character-the word "island,"
+  Atrus noted-began to form, its intense
+  blackness burned almost into the pure white
+  surface by the pen.
+
+  Gehn wrote another dozen characters onto the
+  page, then lifted the pen and looked to Atrus.
+
+  "Is it done?" Atrus asked, surprised that
+  there had not been more.
+
+  He had expected fireworks or the heavens to
+  open.
+
+  "Have you made a new Age?"
+
+  Gehn laughed.
+
+  "It exists, yes ... but as yet it is very
+  crude.
+
+  It takes a great deal of work to create an
+  Age.
+
+  There are special formulas you have to follow,
+  precise laws to obey.
+
+  As I said, it is not simply an Art, it is a
+  science-the science of precise description."
+
+  He gestured toward the open book.
+
+  "As yet, I have merely sketched out the most
+  basic elements of my new world.
+
+  Ahead lies an immense amount of hard work.
+
+  Every aspect of the Age must be described,
+  each new element fitted in.
+
+  But that is not all."
+
+  Reaching across, Gehn took another, much
+  smaller book from a pile at the side and held
+  it out to Atrus.
+
+  "Once the Age is complete, one must always-
+  always-make a Linking Book."
+
+  Atrus took the small book and opened it,
+  noting at once how few pages were in it.
+
+  All of them were blank.
+
+  "Yes," Gehn continued.
+
+  "Whenever you travel to a newly written Age
+  you must always carry a Linking Book with you.
+
+  If you did not, you would be trapped there,
+  without any way of traveling back."
+
+  Atrus looked back at his father, wide-eyed.
+
+  "But what's actually in one of these Linking
+  Books?"
+
+  Gehn took the book back.
+
+  "Each Linking Book refers to one of the larger
+  descriptive books-to one specific book.
+
+  You might say that it contains the essence of
+  the larger book- certain phrases and words
+  that fuses it to that book and no other.
+
+  But that is not all.
+
+  For a Linking Book to work, it must also
+  include an accurate description of the place
+  one wishes to link to on that particular Age,
+  which is recorded by writing a special D'ni
+  symbol, a Garo-hertee.
+
+  Yes, and a Linking Book must be written in the
+  Age and location it is meant to link to.
+
+  And so a Linking Book is, in a sense, a
+  working substitute for a descriptive book."
+
+  Atrus thought a moment, then.
+
+  "And can there be only one Linking Book for
+  each descriptive book?"
+
+  "Not at all," Gehn answered, delighted by his
+  son's understanding.
+
+  Then, setting the slender book back on the
+  pile, he added.
+
+  "You can make as many Linking Books as you
+  want.
+
+  But you must always make at least one.
+
+  That is the first rule.
+
+  One you must not forget."
+
+  Atrus nodded, then.
+
+  "But what if you change the Age?
+
+  What if you decide to write more in the
+  descriptive book?
+
+  Would the Linking Book cease to work?"
+
+  "No.
+
+  If the descriptive book is changed, then all
+  Linking Books associated with it will link to
+  the changed world."
+
+  Atruss eyes lit, imagining it, only now
+  realizing just how complex and powerful this
+  Writing was.
+
+  "It sounds . .. astonishing!"
+#+END_SRC

@@ -1,0 +1,49 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: pen.vim - A prompting libary for vim, based on Pen.el
+#+DATE: <2022-01-01>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen vim
+
+** Summary
+I begin work on a prompting library for vim.
+
+** Prerequesites
+- https://semiosis.github.io/posts/pen-el-installation-from-scratch/
+
+Once installed, =Pen.el= has a script =pen= which =pen.vim= will use to run the prompts.
+
+** Code
++ GitHub repo :: http://github.com/semiosis/pen.vim
+
+#+BEGIN_SRC vimrc -n :async :results verbatim code
+  function! Prompt(fun, ...)
+      let args = a:000
+      let s = ""
+      " skip the first of the variadic args because it's the input
+      for arg in args[1:]
+          let s = s . ' "' . arg . '"'
+      endfor
+  
+      let cmd = a:fun . s
+      let s = system("penf -u " . cmd, @p)
+      let @p = s
+  
+      " paste from p register
+      exe "normal! gv\"pp"
+  endfunction
+  
+  xnoremap Zt "py:silent! call Prompt("pf-transform-code/3", @p, "vim", input("transformation: "))<CR>
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/u5hEs6O9pZALmLeyr4e8SBE4v" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/u5hEs6O9pZALmLeyr4e8SBE4v.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/u5hEs6O9pZALmLeyr4e8SBE4v.js" id="asciicast-u5hEs6O9pZALmLeyr4e8SBE4v" async></script>
+#+END_EXPORT

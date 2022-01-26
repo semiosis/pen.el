@@ -1,0 +1,111 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: How to use, with Codex
+#+DATE: <2021-10-11>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: codex pen openai emacs
+
+** Summary
+This is a prompt for obtaining examples of how
+to use something, such as a function or an
+import.
+
+** Bindings
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (define-key pen-map (kbd "H-p e") 'pf-get-an-example-of-the-usage-of-a-function/2)
+#+END_SRC
+
+| kb      | f                                                |           |
+|---------+--------------------------------------------------+-----------|
+| =H-p e= | =pf-get-an-example-of-the-usage-of-a-function/2= | =pen-map= |
+
+** Prompt
+=pf-get-an-example-of-the-usage-of-a-function/2=
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Get an example of the usage of a function"
+  doc: "Given a function name, provide an example of its usage"
+  prompt-version: 2
+  prompt: |+
+    Examples of function usage:
+    <delim>
+    Language: "Haskell"
+    Function: "map"
+    Usage:<delim>
+    map (*2) [1..10]
+    <delim>
+    Language: <q:language>
+    Function: <q:function>
+    Usage:<delim>
+    
+  engine: OpenAI Codex
+  force-engine: OpenAI Codex
+  temperature: 0.5
+  max-generated-tokens: 80
+  n-completions: 8
+  top-p: 1
+  stop-sequences:
+  - "<delim>"
+  vars:
+  - function
+  - language
+  examples:
+  - map
+  completion: true
+  # This is just to make it a bit easier when you select multiple lines to define
+  preprocessors:
+  - pen-str onelineify
+  # Also trim off excess, when unonelineify doesn't quite do it
+  postprocessor: pen-str unonelineify | sed -z "s/Language:.*//"
+  # fz-pretty: on
+  var-defaults:
+  - "(pen-thing-at-point-ask \"symbol\" t)"
+  - "(pen-detect-language-ask)"
+  # validator: "grep -q <function>"
+#+END_SRC
+
+** Question
+How to use use this?
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  import Control.Monad ( forM_ )
+#+END_SRC
+
+*** Prompting result
+#+BEGIN_SRC text -n :async :results verbatim code
+  import Control.Monad ( forM_ )
+  forM_ [1..10] $ \x -> do
+      print x
+      print x
+#+END_SRC
+
+*** Transformation with =pf-transform-code/3=
+#+BEGIN_SRC text -n :async :results verbatim code
+  remove the do and put on one line
+#+END_SRC
+
+*** Solution
+#+BEGIN_SRC text -n :async :results verbatim code
+  *Main Control.Monad> forM_ [1..10] $ \x -> print x
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  10
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/qqil5ZUjIDHRxQyaLDnigIq4k" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/qqil5ZUjIDHRxQyaLDnigIq4k.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/qqil5ZUjIDHRxQyaLDnigIq4k.js" id="asciicast-qqil5ZUjIDHRxQyaLDnigIq4k" async></script>
+#+END_EXPORT

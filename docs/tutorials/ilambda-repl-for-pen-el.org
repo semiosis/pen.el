@@ -1,0 +1,28 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: ilambda REPL for Pen.el
+#+DATE: <2022-01-22>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: openai gpt pen
+
+** Summary
+I demonstrate the new ilambda REPL that comes
+as a utility in Pen.el
+
+This executes imaginary functions. The first
+argument is the name of the function, which is
+automatically slugified and the remaining are
+parameters to that function.
+
+It's an approximate replacement to Wolfram Alpha.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/utKgs15KP3Ezlovg6skWVAYDv" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/utKgs15KP3Ezlovg6skWVAYDv.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/utKgs15KP3Ezlovg6skWVAYDv.js" id="asciicast-utKgs15KP3Ezlovg6skWVAYDv" async></script>
+#+END_EXPORT

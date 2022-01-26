@@ -1,0 +1,707 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Pen Tutorial
+#+DATE: <2021-07-11>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt emacs pen
+
+** Quick Setup using Docker
+[[./wizard4.png]]
+
+/A time-traveling wizard who uses a magic book and pen to create worlds./
+
+The following commands set up =pen.el= for the first time.
+
++ Apply for a GPT-3 key :: https://beta.openai.com/
+
++ Apply for an AI-21 key :: https://www.ai21.com/
+
++ Apply for a Cohere key :: https://cohere.ai/
+
+# + Free AIx GPT-J-6B key :: https://apps.aixsolutionsgroup.com/
+#   The AIx API is under heavy development. Multiple completions is currently being emulated by making several calls.
+#   Therefore, =Pen.el= will seem less responsive with GPT-J, currently.
+
+These are the steps to run =Pen= on a linux
+machine. It will use a docker image. See the
+bottom of this document for Windows
+instructions.
+
++ Latest guide :: https://semiosis.github.io/posts/pen-el-installation-from-scratch/
+
+# #+BEGIN_SRC bash -n :i bash :async :results verbatim code
+#   echo "<aix key here>" > ~/.pen/aix_api_key          # https://aixsolutionsgroup.com/
+# #+END_SRC
+
+#+BEGIN_SRC bash -n :i cat :async :results verbatim code
+  # Firstly, ensure Docker is properly installed and your user is added to the docker group
+  # https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
+  
+  git clone "https://github.com/semiosis/pen.el"
+  git clone "https://github.com/semiosis/prompts"
+  
+  mkdir -p ~/.pen
+  
+  # Put in your keys, or do not, it's up to you!
+  echo "sk-<openai key here>" > ~/.pen/openai_api_key # https://openai.com/
+  echo "<hf key here>" > ~/.pen/hf_api_key            # https://huggingface.co/
+  
+  # Add the scripts to the PATH
+  echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
+  
+  # Add this to prevent C-s from freezing the terminal
+  echo "stty stop undef 2>/dev/null; stty start undef 2>/dev/null" | tee -a ~/.zshrc >> ~/.bashrc
+  
+  # Source your ~/.profile if you didn't log out and back in
+  . ~/.profile
+  
+  # Run pen
+  pen
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+# Firstly, ensure Docker is properly installed and your user is added to the docker group
+# https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
+
+git clone "https://github.com/semiosis/pen.el"
+git clone "https://github.com/semiosis/prompts"
+
+mkdir -p ~/.pen
+
+# Put in your keys, or do not, it's up to you!
+echo "sk-<openai key here>" > ~/.pen/openai_api_key # https://openai.com/
+echo "<hf key here>" > ~/.pen/hf_api_key            # https://huggingface.co/
+
+# Add the scripts to the PATH
+echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
+
+# Add this to prevent C-s from freezing the terminal
+echo "stty stop undef 2>/dev/null; stty start undef 2>/dev/null" | tee -a ~/.zshrc >> ~/.bashrc
+
+# Source your ~/.profile if you didn't log out and back in
+. ~/.profile
+
+# Run pen
+pen
+#+end_src
+
++ Video demo :: [[https://www.youtube.com/watch?v=J9BnZjWV1jw][Augment Minds 2021: Demo of Loom and Pen.el - YouTube]]
+
++ Project code :: https://github.com/semiosis/pen.el/
+
++ Join discord :: https://discord.gg/JwKGbAdNHR
+
++ Prompt tutorial https://mullikine.github.io/posts/prompt-design-with-yasnippet/
+
+** Invoking =Pen.el=: Client and server
+Please glance over this to learn how to invoke.
+
+It'll get you going with =Pen.el= very quickly.
+
+https://mullikine.github.io/posts/pen-el-host-interop-and-client-server/
+
+The essence is you simply run the =pen= script
+and it takes care of running the emacs+docker server.
+
+** Configuration
+For linux users, if you place your OpenAI API
+key in the file =~/.pen/openai_api_key=, the 
+[[https://github.com/semiosis/pen.el/blob/master/scripts/pen][pen shell script]] will
+automatically pick that up.
+
+If you run =pen= in a directory that contains a [[https://github.com/semiosis/prompts/tree/master/prompts][prompts repository]] then that repository will be used by =pen.el=.
+That way you can persist changes to your prompts repository.
+
+If you run =pen= in a directory containing a [[https://github.com/semiosis/pen.el/blob/master/src/pen.el][pen.el repository]] then that code will be what is run in the docker, rather than the =pen.el= contained within.
+
+You may save files to the =~/.pen= directory
+within the docker and those files will be
+accessible to the host and will not be erased.
+
+** Running =Pen.el= from the host, in bash
+With a server running, you have these commands available on the host:
+
+| Script name | Function                                             | Example                                                  |
+|-------------+------------------------------------------------------+----------------------------------------------------------|
+| =pen=       | Start the servv and successive clients               | =pen=                                                    |
+| =penl=      | List the prompt functions                            | =penl=                                                   |
+| =penh=      | Get the signature of a prompt function               | =penh pf-list-of=                                        |
+| =pene=      | Run some emacs code from the host and get the result | =pene '(progn (message "hi") (message "yo"))'=           |
+| =penq=      | Quit the server                                      | =penq=                                                   |
+| =penf=      | Run a prompt function                                | =penf -u write-a-blog-post sky 300=                      |
+| =pena=      | Run a prompt function and gather all results         | =pena pf-very-witty-pick-up-lines-for-a-topic semiotics= |
+
+** =Acolyte Mode= - Key bindings for emacs noobs
+These are enabled by default with the docker image.
+
+| kb                       |                                                                                 |
+|--------------------------+---------------------------------------------------------------------------------|
+| =Alt-a=                  | Change AIx API key                                                              |
+| =Alt-o=                  | Change OpenAI API key                                                           |
+| =Alt-p=                  | Open the prompts directory in dired                                             |
+| =Alt-t=                  | Start writing in an empty file                                                  |
+| =Alt-s=                  | Save file                                                                       |
+| =Alt-r=                  | Running a prompt function like this will not insert text or replace it.         |
+| =Alt-TAB=                | This completes the current line.                                                |
+| =Alt-l= (little L)       | Multiline (long) completion.                                                    |
+| =Alt-g=                  | This reloads the prompt functions.                                              |
+| =Alt-m=                  | Right click menu                                                                |
+| Select text then =Alt-f= | This filters the text through a prompt function specifically designed for this. |
+| =Spacebar=               | When text is selected, will run with that text as first argument.               |
+| =Alt-1=                  | Complete 1 word                                                                 |
+| =Alt-2=                  | Complete 5 words                                                                |
+| =Alt-3=                  | Complete line                                                                   |
+| =Alt-4=                  | Complete long (use Alt-l though, as you can see the multilines)                 |
+| =Alt-u Alt-2=            | Complete 5 words, but get a new completion (updates the cache)                  |
+
+** Key bindings for emacs wizards (also enabled in docker)
+| kb             | f                                 |                                                                                    |
+|----------------+-----------------------------------+------------------------------------------------------------------------------------|
+| Use =M-x=      | =pen-add-key-aix=                 | Change / remove the AIx key                                                        |
+| Use =M-x=      | =pen-add-key-openai=              | Change / remove the OpenAI key                                                     |
+| =H-.= or =H-n= | =global-pen-acolyte-minor-mode=   | This toggles Acolyte mode.                                                         |
+| =H-TAB g=      | =pen-generate-prompt-functions=   | This reloads the prompt functions.                                                 |
+| =H-TAB r=      | =pen-run-prompt-function=         | Running a prompt function like this will not insert text or replace it.            |
+| =M-1=          | =pen-company-filetype=            | This completes the current line.                                                   |
+| =H-TAB s=      | =pen-filter-with-prompt-function= | This filters the text through a prompt function specifically designed for this.    |
+| =H-TAB c=      | =pen-company-complete=            | Select a prompt function as the completer for =company-mode= and complete with it. |
+| =SPC=          | =pen-run-prompt-function=         | When text is selected, will run with that text as first argument.                  |
+| =H-TAB l=      | =pen-complete-long=               | This is a multiline completion.                                                    |
+| =H-1=          | =pen-company-filetype-word=       | Complete 1 word                                                                    |
+| =H-2=          | =pen-company-filetype-words=      | Complete 5 words                                                                   |
+| =H-3=          | =pen-company-filetype-line=       | Complete line                                                                      |
+| =H-4=          | =pen-company-filetype-long=       | Complete long (use H-l though, as you can see the multilines)                      |
+| =H-u H-2=      |                                   | Complete 5 words, but get a new completion (updates the cache)                     |
+
+=H= is the Hyper key, which works similar to Escape, Meta, Alt, Control or Shift that is present on the Space Cadet Keyboard.
+
+=pen.el= emulates a Hyper key (=H-=) with =C-M-\=.
+
+I like =Hyper= because you're writing =hyperreality=.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  hyperreality
+      [#semiotics]
+      [#postmodernism]
+
+      An inability of consciousness to
+      distinguish reality from a simulation of
+      reality, especially in technologically
+      advanced postmodern societies.
+#+END_SRC
+
++ Imagining =Pen.el= :: [[https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/][Imagery for Pen.el with CLIP and inspired from Myst: The Book of Atrus // Bodacious Blog]]
+
+*** How to run =H-TAB r= for emacs noobies
+
++ For mac users :: Select some text, tap =Esc=, hold =Ctrl= and press  =\=, release and tap =r=.
+
++ For everyone else :: Select some text, hold =Ctrl Alt \=, release and tap =r=.
+
+You may also press =SPC= while some text is selected to run a prompt function.
+
+You may also use =right click= for starting the context menu.
+
+*** Company-mode
++ For mac users :: Select some text, tap =Esc=, hold =Ctrl= and press  =\=, release and tap =c=.
+
++ For everyone else :: Select some text, hold =Ctrl Alt \=, release and tap =c=.
+
+More company bindings.
+
+| kb        | f                                 |                                                 |
+|-----------+-----------------------------------+-------------------------------------------------|
+| =H-TAB f= | =pen-company-complete-choose=     | Select a single completer. Remove others.       |
+| =H-TAB a= | =pen-company-complete-add=        | Add other completers to the completer list      |
+
+*** Usage
+Running =pen-generate-prompt-functions= will
+load all prompts from the prompts directory,
+which is typically located here: =~/.emacs.d/prompts=.
+
+Running =pen-run-prompt-function= will run a prompt function.
+
+You may also press =SPC= while some text is selected to run a prompt function.
+
+** Demos
+*** Select some text and running a prompt function
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/XrtPxWfh0yhJRdMXpnMnm8i70" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/XrtPxWfh0yhJRdMXpnMnm8i70.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/XrtPxWfh0yhJRdMXpnMnm8i70.js" id="asciicast-XrtPxWfh0yhJRdMXpnMnm8i70" async></script>
+#+END_EXPORT
+
+*** Run a prompt function like an M-x interactive command
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/mVe7Ujx7urB1nyPdiEuqGUcb4" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/mVe7Ujx7urB1nyPdiEuqGUcb4.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/mVe7Ujx7urB1nyPdiEuqGUcb4.js" id="asciicast-mVe7Ujx7urB1nyPdiEuqGUcb4" async></script>
+#+END_EXPORT
+
+** An exhibition of a =.prompt=
++ Prompt file :: [[http://github.com/semiosis/prompts/blob/master/prompts/get-language-1.prompt][prompts/get-language.prompt at master  semiosis/prompts  GitHub]]
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: Get language
+  version: 1
+  doc: This prompt detects the language
+  notes:
+  - "It appears that combining ### with Input: Output: has no improvement"
+  prompt: |+
+      Given some text, return the language.
+
+      Input: Hello
+      Output: English
+      Input: Bon anniversaire !
+      Output: French
+      Input: printf -- "%s\n" "$lang"
+      Output: bash
+      Input: Zdravstvuyte
+      Output: Russian
+      Input: <1>
+      Output:
+  engine: davinci
+  temperature: 0.3
+  max-tokens: 200
+  top-p: 1
+  stop-sequences:
+  - "\n"
+  vars:
+  - text-or-code
+  examples:
+  - Happy birthday
+  preprocessors:
+  - "sed -z 's/\\n/\\\\n/g'"
+  aliases:
+  - detect-language
+#+END_SRC
+
+This is a prompt which, given text selected
+will output the language that text is in.
+
+It works for both world languages and for code.
+
+The =title= of the prompt will be
+[[https://pypi.org/project/python-slugify/][slugified]] and used as the name of
+the prompt function.
+
+=doc= and =notes= will both go into the
+documentation for the function.
+
+The prompt is using the =Input= =Output=
+pattern.
+
+=engine= is the name of a language model.
+
+An API such as the =OpenAI API= (=GPT-3=) may serve
+several different models.
+
++ Some alternative models for =GPT-3=:
+  - babbage
+  - content-filter-alpha-c4
+  - content-filter-dev
+  - curie
+  - cursing-filter-v6
+  - davinci
+  - instruct-curie-beta
+  - instruct-davinci-beta
+
+=vars= is a list of variable names. Each
+variable is substituted into the prompt if it
+has a corresponding template placeholder.
+
+For example, the =<1>= in the prompt
+corresponds to where the first variable
+(=text-or-code=) will be substituted.
+
+=examples= is a list with the same number of
+elements as =vars=. The values in =examples=
+may be suggested as initial input when
+running the prompt function and may be used in
+test cases. They also serve as documentation
+for the user.
+
+=preprocessors= are a list of shell
+pipelineable commands (stream filters) which
+expect both input and output and can be used
+to preprocess the variables before they are
+substituted into the prompt template.
+
+This prompt doesn't have a =postprocessor=,
+but if it did it would postprocess the
+returned completions in a similar fashion to
+how the variables are preprocessed.
+
+Finally, =aliases= is a list of alternative
+function names for this prompt.
+
+** Installation
+*** Install dependencies and compile emacs with =--with-modules=
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  git checkout "https://github.com/semiosis/pen.el"
+  cd pen.el/src
+  # Careful with setup script.
+  # Run the commands manually as this is designed for root user, intended for a Docker container.
+  ./setup.sh
+#+END_SRC
+
+Demo of running the script on a vanilla VPS.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/EzlkZpFMS0NVEUOjcNnlKEJao" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/EzlkZpFMS0NVEUOjcNnlKEJao.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/EzlkZpFMS0NVEUOjcNnlKEJao.js" id="asciicast-EzlkZpFMS0NVEUOjcNnlKEJao" async></script>
+#+END_EXPORT
+
+*** Ensure the following or similar file structure
+Or make the additions / adjustments to your own emacs config.
+
+Take the parts you need from the =init.el= and place inside your own =~/.emacs=.
+
+If you don't have an init file of your own then run this.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  ln -sf ~/.emacs.d/pen.el/init.el ~/.emacs
+#+END_SRC
+
+Ensure you have the prompts repository in place.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code  
+  git checkout "https://github.com/semiosis/prompts/tree/master/prompts" ~/.emacs.d/prompts
+#+END_SRC
+
+*** OpenAI - Just request a key and place it here
+Install OpenAI API key.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  mkdir -p ~/.pen
+  touch ~/.pen/openai_api_key
+  vim ~/.pen/openai_api_key
+#+END_SRC
+
+** Using Pen
+*** Just starting on a vanilla installation
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/gwnk0DXnHKSzvUfLmfnQegfCx" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/gwnk0DXnHKSzvUfLmfnQegfCx.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/gwnk0DXnHKSzvUfLmfnQegfCx.js" id="asciicast-gwnk0DXnHKSzvUfLmfnQegfCx" async></script>
+#+END_EXPORT
+
+*** Prompt Engineering Workflow
+
++ Setup
+  - Install =prompt= snippet into yasnippet.
+  - M-x =yas/reload-all=
+  - M-x =yas-insert-snippet=
+
++ Prompt design
+  - 1. Come up with a task. Let's call it "Negate sentence"
+  - 2. Insert the prompt snippet into a new prompt file.
+  - 3. Remove keys from prompts file which we don't need.
+  - 4. =var-defaults= is an advanced usage of prompts
+    - But we will remove them
+  - 5. Now load the prompt with =M-x pen-generate-prompt-functions=
+  - 6. Now look at the prompt function documentation
+    - The binding =C-h C-f= is used to bring up help for a function
+  - 7. Looks like we made an error: "The Mars is very far away."
+    - Change it and update the version of the prompt
+  - 8. Reload functions
+
+Test it out.
+
+I want to eat dinner now.
+
+It didn't work. hurm.
+
+Well, here is the basic process anyway. I'll try and debug this.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/ofJjyh1A696NDOjwNx0zR6DAI" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/ofJjyh1A696NDOjwNx0zR6DAI.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/ofJjyh1A696NDOjwNx0zR6DAI.js" id="asciicast-ofJjyh1A696NDOjwNx0zR6DAI" async></script>
+#+END_EXPORT
+
+** Another =.prompt= exhibition
+*** I create a new prompt here for translating between any world language
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/jiBD5ZpRJQWXFMlHdvGGgSxjk" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/jiBD5ZpRJQWXFMlHdvGGgSxjk.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/jiBD5ZpRJQWXFMlHdvGGgSxjk.js" id="asciicast-jiBD5ZpRJQWXFMlHdvGGgSxjk" async></script>
+#+END_EXPORT
+
+Maori isn't a very prominent language on the
+web, but it still managed to capture the idea
+of a welcome message, which I think is
+amazing! I am Maori, so I appreciate this!
+
+I want to demonstrate the usage of two more =.prompt= keys.
+
++ The technical jargon :: =var-defaults= overrides the default behaviour of the =(interactive)= form in emacs.
+
+By specifying =var-defaults=, you can change
+what functions or expressions are run to
+acquire the values for the parameters to the
+prompt.
+
+The prompt here captures the selected text and
+puts it into the second placeholder, =<2>=.
+
+By default, that would go into the first one, =<1>=.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+var-defaults:
+- "(read-string \"language: \")"
+- "(pen-selected-text)"
+#+END_SRC
+
+*** Original prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  ---
+  title: Translate from English to
+  prompt-version: 2
+  doc: This prompt translates English text to any world langauge
+  issues:
+  - I think the unicode characters may be multibyte causing issues with completion
+  prompt: |
+    ###
+    # English: Hello
+    # Russian: Zdravstvuyte
+    # Italian: Salve
+    # Japanese: Konnichiwa
+    # German: Guten Tag
+    # French: Bonjour
+    # Spanish: Hola
+    ###
+    # English: Happy birthday!
+    # French: Bon anniversaire !
+    # German: Alles Gute zum Geburtstag!
+    # Italian: Buon compleanno!
+    # Indonesian: Selamat ulang tahun!
+    ###
+    # English: <2>
+    # <1>:
+  engine: davinci
+  temperature: 0.5
+  max-tokens: 200
+  top-p: 1
+  stop-sequences:
+  - "#"
+  vars:
+  - language
+  - phrase
+  # ascification of the prompt is not ideal
+  prompt-filter: pen-c ascify
+  examples:
+  - French
+  - Goodnight
+  var-defaults:
+  - "(read-string \"language: \")"
+  - "(pen-selected-text)"
+#+END_SRC
+
+*** I create this prompt
+  #+BEGIN_SRC text -n :async :results verbatim code
+  prompt-filter: pen-c ascify
+#+END_SRC
+
+The =prompt-filter= is a final filter script
+to transform the prompt before sending to the
+=API= / =LM= for completion.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  ---
+  title: Translate from world language X to Y
+  version: 2
+  doc: This prompt translates English text to any world langauge
+  issues:
+  - I think the unicode characters may be multibyte causing issues with completion
+  prompt: |
+    ###
+    # English: Hello
+    # Russian: Zdravstvuyte
+    # Italian: Salve
+    # Japanese: Konnichiwa
+    # German: Guten Tag
+    # French: Bonjour
+    # Spanish: Hola
+    ###
+    # English: Happy birthday!
+    # French: Bon anniversaire !
+    # German: Alles Gute zum Geburtstag!
+    # Italian: Buon compleanno!
+    # Indonesian: Selamat ulang tahun!
+    ###
+    # <1>: <3>
+    # <2>:
+  engine: davinci
+  temperature: 0.5
+  max-tokens: 200
+  top-p: 1
+  stop-sequences:
+  - "#"
+  vars:
+  - from-language
+  - to-language
+  - phrase
+  # ascification of the prompt is not ideal
+  prompt-filter: pen-c ascify
+  examples:
+  - English
+  - French
+  - Goodnight
+  var-defaults:
+  - "(read-string \"From language: \")"
+  - "(read-string \"To language: \")"
+  - "(pen-selected-text)"
+#+END_SRC
+
+** Using prompt functions in your code
+Prompt functions automatically 'curry' when
+you leave out their arguments.
+
+Here is an example, =pf-translate-from-world-language-x-to-y=:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  pf-translate-from-world-language-x-to-y is an interactive function
+  defined in pen-example-config.el.
+
+  Signature
+  (pf-translate-from-world-language-x-to-y &optional FROM-LANGUAGE TO-LANGUAGE PHRASE)
+
+  Documentation
+  Translate from world language X to Y
+  This prompt translates English text to any world langauge
+
+  path:
+  - /home/shane/source/git/spacemacs/prompts/prompts/translate-world-languages.prompt
+
+  examples:
+  - English
+  - French
+  - Goodnight
+
+  preprocessors:
+  - cat
+  - cat
+  - sed -z 's/\n/\\n/g'
+
+  var-defaults:
+  - (read-string-hist "Pen From language: ")
+  - (read-string-hist "Pen To language: ")
+  - (pen-selected-text)
+
+  prompt-filter:
+  - pen-c ascify
+#+END_SRC
+
+If this function is run without a selection
+then =pen-selected-text= will resort to asking
+the user for input.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  ;; Leave out all arguments to be prompted for each argument
+  (pf-translate-from-world-language-x-to-y)
+#+END_SRC
+
+The following default functions / expressions
+(i.e. =var-defaults=) are run when called
+interactively or to acquire the values of
+optional parameters that were left out of the
+call to the prompt function.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  var-defaults:
+  - "(read-string-hist \"Pen From language: \")"
+  - "(read-string-hist \"Pen To language: \")"
+  - "(pen-selected-text)"
+#+END_SRC
+
+The following invocation supplies ="French"=
+as the first parameter, but the others will be
+requested.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (pf-translate-from-world-language-x-to-y "French")
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  烤面包
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/lG511sKyJPjhwtn98IPbSZjYx" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/lG511sKyJPjhwtn98IPbSZjYx.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/lG511sKyJPjhwtn98IPbSZjYx.js" id="asciicast-lG511sKyJPjhwtn98IPbSZjYx" async></script>
+#+END_EXPORT
+
+** An assistant for any major mode
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/MS8xMQfLoExEVyh4Nqu9fX49b" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/MS8xMQfLoExEVyh4Nqu9fX49b.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/MS8xMQfLoExEVyh4Nqu9fX49b.js" id="asciicast-MS8xMQfLoExEVyh4Nqu9fX49b" async></script>
+#+END_EXPORT
+
+** Current Development
+*** =company-mode=
+I'm trying to do something a little more
+ambitious than simply having a single
+completion function.
+
+There will be infinitely many completion functions that you can select from.
+
+| kb        | f                      |           |
+|-----------+------------------------+-----------|
+| =H-TAB c= | =pen-company-complete= | =pen-map= |
+
+*** HuggingFace transformers
+Mark Watson in his book "Practical Artificial
+Intelligence Programming With Clojure" uses
+spaCy and the HuggingFace transformers library
+from Clojure. I would like to connect to
+HuggingFace's transformers library in this way.
+
+See "https://markwatson.com/".
+
+*** GPT-neo
+https://github.com/samrawal/emacs-secondmate/
+
+*** GPT-2
+Thank you =@Samin= and =@erik= for the
+=booste= API support in integrating a free to
+use GPT-2.
+
+Please visit https://www.booste.io/ to get your key.
+
+*** =GPT-j=
+Currently working on a way to integrate this.
+
+** Windows users
+#+BEGIN_SRC powershell -n :async :results verbatim code
+  cd ~
+  git.exe clone "https://github.com/semiosis/pen.el"
+  git.exe clone "https://github.com/semiosis/prompts"
+  .\pen.el\scripts\pen.ps1
+#+END_SRC
+
+If there are any issues with the powershell
+script, either fix the script and submit a
+patch or invoke the docker command manually.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  docker.exe run -ti -v "C:\<path to prompts>:/root/.emacs.d/host/prompts" --entrypoint= semiosis/pen.el:latest ./run.sh
+#+END_SRC

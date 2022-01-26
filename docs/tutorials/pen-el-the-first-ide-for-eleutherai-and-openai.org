@@ -1,0 +1,78 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Pen.el, the first IDE for both EleutherAI and OpenAI
+#+DATE: <2021-08-03>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen openai eleutherai emacs
+
+** Summary
+I have added support for EleutherAI's GPT-j model via AIx (https://apps.aixsolutionsgroup.com/).
+
+There is still work to do to make this fully
+libre as it is still using a SAAS to host the
+GPT-J model, but all that is required now is
+to solve that problem.
+
+An FSF GPT-J maybe? Or locally hosted. The
+GPT-J model is quite large (9GB) and the GPT-neox model will be about 20 times the size.
+
+Get yourself a key from the link above if you'd like to try out GPT-J with Pen.el.
+
+To try this out, firstly follow the setup instructions here:
+- https://mullikine.github.io/posts/pen-tutorial/
+
+To update / remove the keys at any time, use
+the following key bindings.
+
+| kb    | f                    |                              |
+|-------+----------------------+------------------------------|
+| =M-o= | =pen-add-key-openai= | =pen-acolyte-minor-mode-map= |
+| =M-a= | =pen-add-key-aix=    | =pen-acolyte-minor-mode-map= |
+
+If you remove one of the keys then Pen will
+attempt to use the other engine.
+
+Prompts may still prefer a given engine.
+
+Learn to write prompt description files here:
+- https://github.com/semiosis/prompts/
+
+=Pen.el= supports arbitrary backends and takes
+care of prompt engine preferences and your own
+preferences (local(private), libre and commercial).
+
+You may write code which takes advantage of
+many different LMs instead of one.
+
++ GPT-J :: https://github.com/kingoflolz/mesh-transformer-jax/
+
++ Pen.el :: https://github.com/semiosis/pen.el/
+
++ FSF :: https://www.fsf.org/blogs/licensing/fsf-funded-call-for-white-papers-on-philosophical-and-legal-questions-around-copilot
+
+** Ladies and gentlemen, GPT-j in emacs using a suite of prompts designed for GPT-3
+I am on my slow phone internet, and I need to
+use =n-collate= in place of the OpenAI API's
+=n-completions= in order to generate more
+results.
+
+=n-collate= is my workaround for this missing functionality.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/nyzzMZp7YOKEL0AltA0Dt6kJa" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/nyzzMZp7YOKEL0AltA0Dt6kJa.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/nyzzMZp7YOKEL0AltA0Dt6kJa.js" id="asciicast-nyzzMZp7YOKEL0AltA0Dt6kJa" async></script>
+#+END_EXPORT
+
+Combining symbolic AI (lisp) + deep neural networks = combining logic with creativity.
+=lisp + GPT + emacs = god mode=.
+We don't need to train a bigger model; It just needs to be connected to emacs.
+
+So help, please. Emacs needs more prompts and integration with LMs, and Pen.el make it very easy to do so.
+I am focusing on core features. Pen.el is ready to integrate every emacs package with AI.
+It has many advanced features if you dig into it that  make it very easy for creating new prompt functions and examples of how to integrate them into emacs packages.

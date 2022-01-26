@@ -1,0 +1,152 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Pen.el v2.0
+#+DATE: <2022-01-12>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen openai gpt
+
+** Pen 2
+Pen (Prompt-Engineering in Emacs) has a well-deserved version 2.
+
+I've decided that it gets a new version after
+lots of new features are added and it is
+stable.
+
+** Demonstrations
+*** Apostrophe
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/Tii7qgzITFPmpeqjiaUGsDGY1" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/Tii7qgzITFPmpeqjiaUGsDGY1.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/Tii7qgzITFPmpeqjiaUGsDGY1.js" id="asciicast-Tii7qgzITFPmpeqjiaUGsDGY1" async></script>
+#+END_EXPORT
+
+*** Imaginary Interpreter
+Play Hitchhiker's Guide to the Galaxy.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/xnMSpfh3gT9A0bIrnWibnEWMd" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/xnMSpfh3gT9A0bIrnWibnEWMd.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/xnMSpfh3gT9A0bIrnWibnEWMd.js" id="asciicast-xnMSpfh3gT9A0bIrnWibnEWMd" async></script>
+#+END_EXPORT
+
+Play with an imaginary Python interpreter.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/OI1O7Fsgrwgke1JMlAfhnYEsb" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/OI1O7Fsgrwgke1JMlAfhnYEsb.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/OI1O7Fsgrwgke1JMlAfhnYEsb.js" id="asciicast-OI1O7Fsgrwgke1JMlAfhnYEsb" async></script>
+#+END_EXPORT
+
+*** LookingGlass imaginary web browser
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/dXL0TJC28H4l8shJE70S8WEnp" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/dXL0TJC28H4l8shJE70S8WEnp.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/dXL0TJC28H4l8shJE70S8WEnp.js" id="asciicast-dXL0TJC28H4l8shJE70S8WEnp" async></script>
+#+END_EXPORT
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  THE FLORA OF WONDERLAND
+  
+  CHAPTER I. The White Roses
+  
+  It would be vain to attempt to describe the
+  various conflicting emotions which thrilled
+  our little party of adventurers as they went
+  at last through the wood and came in sight of
+  the gorgeous flower-garden, nourished by the
+  noxious dews of the night. We will confine
+  ourselves to the simple chronicle of their
+  adventures. "Which side to begin on?" asked
+  Alice: "the left side, I think: it's next to
+  us." "No," said the King, "that would be too
+  confusing: let us begin on the right side." So
+  they began with the right side. They walked a
+  short way up it till they came to some
+  beautiful flowers which grew close together in
+  a rich cluster. They could not see what colour
+  they were, but they looked very glossy, and
+  Alice was just wondering if she might venture
+  to taste one, when the Fawn gave a sudden
+  bound forward and darted among them. She
+  immediately came back again, in a
+#+END_SRC
+
+*** Mad Tea-Party
+This is a very easy to use IRC server for
+simulating and channeling chatbots.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/B4XlbD8DVcpDb4ngiENdraIaP" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/B4XlbD8DVcpDb4ngiENdraIaP.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/B4XlbD8DVcpDb4ngiENdraIaP.js" id="asciicast-B4XlbD8DVcpDb4ngiENdraIaP" async></script>
+#+END_EXPORT
+
+*** NL·SH (Natural Language Shell)
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/s98L4pKzwwKDlKEpYBO3Wadsu" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/s98L4pKzwwKDlKEpYBO3Wadsu.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/s98L4pKzwwKDlKEpYBO3Wadsu.js" id="asciicast-s98L4pKzwwKDlKEpYBO3Wadsu" async></script>
+#+END_EXPORT
+
+*** Large-Language-Model-based LSP Server
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/1v2dWL9Ophm24hbqNo3q0yfjl" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/1v2dWL9Ophm24hbqNo3q0yfjl.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/1v2dWL9Ophm24hbqNo3q0yfjl.js" id="asciicast-1v2dWL9Ophm24hbqNo3q0yfjl" async></script>
+#+END_EXPORT
+
+*** Paracosm (mind mapping with GPT)
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/CPU9LRexmUx5l801T4L2U5Lkp" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/CPU9LRexmUx5l801T4L2U5Lkp.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/CPU9LRexmUx5l801T4L2U5Lkp.js" id="asciicast-CPU9LRexmUx5l801T4L2U5Lkp" async></script>
+#+END_EXPORT
+
+*** Build glossaries
++ Hint :: Select some text and press =A=.
+
+My internet connection is a little slow :'(
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/3mxcgq5Bkdgg7zC73horz6n1u" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/3mxcgq5Bkdgg7zC73horz6n1u.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/3mxcgq5Bkdgg7zC73horz6n1u.js" id="asciicast-3mxcgq5Bkdgg7zC73horz6n1u" async></script>
+#+END_EXPORT
+
+*** Ink (Keep track of how the text was generated)
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/O6PEQQ7kbaLuaWrNMXE597p97" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/O6PEQQ7kbaLuaWrNMXE597p97.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/O6PEQQ7kbaLuaWrNMXE597p97.js" id="asciicast-O6PEQQ7kbaLuaWrNMXE597p97" async></script>
+#+END_EXPORT
+
+*** Channel - Channel personalities to control your terminal
+- https://semiosis.github.io/channel/
+
+*** iLambda - Imaginary programming libaries
+- https://semiosis.github.io/ilambda/
+
+*** Examplary - Example-based programming language
+- https://semiosis.github.io/examplary/
+
+*** Semiosis Protocol - Cryptocurrency for decentralised prompting
+- https://semiosis.github.io/protocol/
+
+*** And more!
+Please explore Pen.el.
+
+- https://github.com/semiosis/pen.el/

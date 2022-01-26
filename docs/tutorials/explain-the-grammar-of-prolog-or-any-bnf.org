@@ -1,0 +1,186 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Explain the grammar of Prolog or any BNF
+#+DATE: <2021-10-17>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: codex pen
+
+** Summary
+I use Codex to explain a language's grammar.
+
+** Prompt
+-http://github.com/semiosis/prompts/blob/master/prompts/explain-bnf.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Explain BNF"
+  doc: "Explain Backus-Naur form"
+  prompt-version: 1
+  prompt: |+    
+      We specify the <language name> syntax using Backus–Naur form.
+  
+      cat bnf-1 <<EOD
+      <program> ::= <v-decl> <v-decls> <p-decl> <p-decls>
+      <v-decls> ::= <v-decl> <v-decls> | ""
+      <p-decls> ::= <p-decl> <p-decls> | ""
+      EOD
+  
+      Explanation 1:
+  
+      cat explanation-1 <<EOD
+      A program is a sequence of one or more
+      variable declarations, followed by a
+      sequence of one or more procedure
+      declarations.
+      EOD
+  
+      cat bnf-2 <<EOD
+      <bnf grammar>
+      EOD
+  
+      Explanation 2:
+  
+      cat explanation-2 <<EOD
+  engine: "OpenAI Codex"
+  temperature: 0.3
+  max-generated-tokens: "(* 2 prompt-length)"
+  top-p: 1.0
+  stop-sequences:
+  - "EOD"
+  cache: on
+  vars:
+  - bnf grammar
+  - language name
+  # var-defaults:
+  # - "(read-string-hist \"Explain BNF (bnf grammar): \")"
+  # - "\"program\""
+  examples:
+  - |-
+      <program> ::= <clause list> <query> | <query>
+      <clause list> ::= <clause> | <clause list> <clause>
+      <clause> ::= <predicate> . | <predicate> :- <predicate list>.
+      <predicate list> ::= <predicate> | <predicate list> , <predicate>
+      <predicate> ::= <atom> | <atom> ( <term list> )
+      <term list> ::= <term> | <term list> , <term>
+      <term> ::= <numeral> | <atom> | <variable> | <structure>
+      <structure> ::= <atom> ( <term list> )
+      <query> ::= ?- <predicate list>.
+      <atom> ::= <small atom> | ' <string> '
+      <small atom> ::= <lowercase letter> | <small atom> <character>
+      <variable> ::= <uppercase letter> | <variable> <character>
+      <lowercase letter> ::= a | b | c | ... | x | y | z
+      <uppercase letter> ::= A | B | C | ... | X | Y | Z | _
+      <numeral> ::= <digit> | <numeral> <digit>
+      <digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+      <character> ::= <lowercase letter> | <uppercase letter> | <digit> | <special>
+      <special> ::= + | - | * | / | \ | ^ | ~ | : | . | ? |  | # | $ | &
+      <string> ::= <character> | <string> <character>
+  info: on
+  completion: off
+  insertion: off
+#+END_SRC
+
+** Example result
+This is an example of the above grammar, which is Prolog.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  A program is either a clause list
+  followed by a query, or a query
+  alone.
+  
+  A clause list is either a clause,
+  or a clause list followed by a
+  clause.
+  
+  A clause is either a predicate
+  followed by a period, or a
+  predicate followed by a colon
+  followed by a predicate list
+  followed by a period.
+  
+  A predicate list is either a predicate,
+  or a predicate list followed by a
+  comma followed by a predicate.
+  
+  A predicate is either an atom,
+  or an atom followed by an open
+  parenthesis followed by a term
+  list followed by a close
+  parenthesis.
+  
+  A term list is either a term,
+  or a term list followed by a comma
+  followed by a term.
+  
+  A term is either a numeral,
+  or an atom, or a variable, or a
+  structure.
+  
+  A structure is either an atom
+  followed by an open parenthesis
+  followed by a term list followed by
+  a close parenthesis.
+  
+  A query is either a question mark
+  followed by a predicate list, or
+  just a question mark.
+#+END_SRC
+
+Another explanation:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  A program is either a clause list
+  and a query, or just a query.
+  
+  A clause list is a sequence of clauses.
+  A clause is either a predicate followed
+  by a period, or a predicate followed by
+  a ":-" followed by a predicate list.
+  
+  A predicate list is a sequence of predicates.
+  A predicate is either an atom or an atom
+  followed by an open parenthesis, followed
+  by a term list, followed by a close
+  parenthesis.
+  
+  A term list is a sequence of terms.
+  A term is either a numeral, an atom, a
+  variable, or a structure.
+  
+  A structure is either an atom followed by
+  an open parenthesis, followed by a term list,
+  followed by a close parenthesis.
+  
+  A query is either a "?-" followed by a
+  predicate list, or just a predicate list.
+  
+  An atom is either a small atom or a quoted
+  string.
+  
+  A small atom is either a lowercase letter,
+  or a small atom followed by a character.
+  
+  A variable is either an uppercase letter,
+  or a variable followed by a character.
+  
+  A numeral is either a single digit, or a
+  numeral followed by a digit.
+  
+  A character is either a lowercase letter,
+  an uppercase letter, a digit, or one of
+  the following symbols: + - * / \ ^ ~ : . ? # $ &
+  
+  A string is a character sequence surrounded
+  by single quotes.
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/L7dt9aaYcxcr06bLWNwQ349l7" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/L7dt9aaYcxcr06bLWNwQ349l7.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/L7dt9aaYcxcr06bLWNwQ349l7.js" id="asciicast-L7dt9aaYcxcr06bLWNwQ349l7" async></script>
+#+END_EXPORT

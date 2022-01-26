@@ -1,0 +1,74 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: ilambda shell interop - imaginary functions for bash
+#+DATE: <2022-01-03>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: codex pen openai
+
+** Summary
+I demonstrate using ilambda from the terminal.
+ilambda is great because it makes mocking APIs
+and functions so easy!
+
+** How it works
+It uses the pen emacs-lisp-bash interop, and
+simply calls =idefun= (define imaginary
+function), then calls it with the provided
+arguments.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pene "(progn (idefun color-of-thing) (color-of-thing \"watermelon\"))"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+green
+#+end_src
+
+** How to use it
+From bash, on the host machine or from within the container, run as so:
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  peni list-of-names-of-programming-languages 5
+#+END_SRC
+
+#+begin_src bash
+"(\\\"C\\\" \\\"C++\\\" \\\"C#\\\" \\\"Java\\\" \\\"Python\\\" \\\"Perl\\\" \\\"Lisp\\\" \\\"Scheme\\\" \\\"Emacs Lisp\\\" \\\"Common Lisp\\\" \\\"Haskell\\\" \\\"Prolog\\\" \\\"Clojure\\\" \\\"Erlang\\\" \\\"ML\\\" \\\"OCaml\\\" \\\"Ruby\\\" \\\"Pascal\\\" \\\"Ada\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\"LispyScript\\\" \\\""
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  peni color-of-thing watermelon
+#+END_SRC
+
+#+begin_src bash
+"green"
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  peni url-to-website-main-page "github"
+#+END_SRC
+
+#+begin_src bash
+"https://github.com/"
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  peni author-of-open-source-project "vim"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+"Vim is developed by Bram Moolenaar"
+#+end_src
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/Sc7rGq1KxsU9MHB334KBrqwno" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/Sc7rGq1KxsU9MHB334KBrqwno.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/Sc7rGq1KxsU9MHB334KBrqwno.js" id="asciicast-Sc7rGq1KxsU9MHB334KBrqwno" async></script>
+#+END_EXPORT

@@ -1,0 +1,32 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Explaining code from a running terminal with Pen.el
+#+DATE: <2022-01-03>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen codex imaginary clojure
+
+** Summary
+Here is a demonstration of =pet=/=cterm=. =pet= (stands for Pen eterm) is an invocation of =cterm=.
+Prefix a bash command with =pet= in order to run it inside an Pen.el emacs terminal.
+Invoke =pet= from inside the docker container.
+
+Here is an example:
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  pet lein repl
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/gTMdN8RLB8pmKb5rwzbgOMnhd" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/gTMdN8RLB8pmKb5rwzbgOMnhd.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/gTMdN8RLB8pmKb5rwzbgOMnhd.js" id="asciicast-gTMdN8RLB8pmKb5rwzbgOMnhd" async></script>
+#+END_EXPORT
+
+As you can see, your humble =lein= =REPL= has
+been augmented with AI to provide completion,
+explainability, chatbots and documentation, etc.A

@@ -1,0 +1,146 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: A prompt to christen / name things
+#+DATE: <2021-12-23>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen openai lm nlp
+
+** Summary
+I demonstrate a prompt to come up with names for things.
+
+** Prompt
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/christen-something-with-a-name-1.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Christen something with a name"
+  doc: "Given the details of something, christen with a name"
+  prompt-version: 1
+  prompt: |-
+    Details:
+    <details>
+    It was given a really catchy nickname by the previous owner: "
+  force-engine: "OpenAI Davinci"
+  force-temperature: 0.8
+  max-generated-tokens: "(* 2 prompt-length)"
+  top-p: 1.0
+  n-completions: 20
+  stop-sequences:
+  - "\""
+  - "\n"
+  cache: on
+  vars:
+  - "details"
+  examples:
+  - |-
+      ,* Honda CRX Del Sol
+      - 1993 1.5 SOHC (Single Overhead Cam) VTec D15B
+      - Sports Coup
+      - Trans-top model
+      - Rear window does work
+      - 5-speed manual
+      - Date of purchase: 19th October 2021
+      - Mum and Dad approve
+      - As of Nov 22 2021 has done 154 thousand km but purchased 149 thousand km
+      - YA7964
+      - Color: blue
+      - Japanese import
+  filter: on
+  completion: off
+  insertion: off
+#+END_SRC
+
+#+NAME: input
+#+BEGIN_SRC text -n :async :results verbatim code
+  * Honda CRX Del Sol
+  - 1993 1.5 SOHC (Single Overhead Cam) VTec D15B
+  - Sports Coup
+  - Trans-top model
+  - Rear window does work
+  - 5-speed manual
+  - Date of purchase: 19th October 2021
+  - Mum and Dad approve
+  - As of Nov 22 2021 has done 154 thousand km but purchased 149 thousand km
+  - YA7964
+  - Color: blue
+  - Japanese import
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :inb input
+  pena pf-christen-something-with-a-name/1 | jq-list-to-lines 
+#+END_SRC
+
+#+begin_src bash
+Hatano Blue
+Benny
+Gara Gara Gocho
+Blastoise
+Duo-Toaster
+99.999999999% fluent in Japanese
+Del Sol of the Dawn
+Blue Bird
+The udon-don
+The Blue Blueberry
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :inb input
+  pena -u pf-christen-something-with-a-name/1 | jq-list-to-lines 
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  The Backpacker
+  The Del Sol of Death
+  CREAMBOY
+  The G Streak
+  The Travelling Lasagna
+  Blue Lightening
+  Del Sol-Oh
+  Proton Yellow Metallic
+  Blue Dolphin
+  The Flying Pumpkin
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :inb input
+  pena -u pf-christen-something-with-a-name/1 | jq-list-to-lines 
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Hi-yo
+  Pow
+  DoDoDoDoDo
+  Butterfly
+  Chachacha
+  Gonk
+  clankety-clank-clankety-clankety-clank-clank.
+  Lucky Star
+  My Little Pony
+  Paimo-chan
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :inb input
+  pena -u pf-christen-something-with-a-name/1 | jq-list-to-lines 
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  The Hot One
+  Toasted Tofu
+  The Rocket
+  Cake
+  Pizza 1
+  ZAZA!ZAZA!ZAZA!
+  Honda Del-fart
+  Fuji Sakura
+  Twoface
+  Cream Soda
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/h62PGrLwARfppYf1mqzC0aTcu" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/h62PGrLwARfppYf1mqzC0aTcu.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/h62PGrLwARfppYf1mqzC0aTcu.js" id="asciicast-h62PGrLwARfppYf1mqzC0aTcu" async></script>
+#+END_EXPORT

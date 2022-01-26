@@ -1,0 +1,151 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: davinci-instruct-beta in emacs and Pen.el
+#+DATE: <2021-07-18>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen nlg
+
+** Summary
+I demonstrate the default behaviours of a
+=.prompt= engineered in =Pen.el= to do
+generation and insertion.
+
+=davinci-instruct-beta= is a fine-tuned
+variant of =GPT-3= designed to generate text
+given an NLP task.
+
+** Prompt
+A generic generation task.
+
+http://github.com/semiosis/prompts/blob/master/prompts/generic-completion-50-tokens-1.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  in-development: no
+  title: "generation task"
+  prompt-version: 1
+  prompt: |+
+      <1>
+  
+  lm-command: "openai-complete.sh"
+  engine: "davinci-instruct-beta"
+  temperature: 0.8
+  max-tokens: 60
+  top-p: 1.0
+  best-of: 1
+  no-trim-start: off
+  no-trim-end: off
+  # For davinci-instruct-beta, it appears to begin with \n\n, so can't use that
+  # as stop sequence.
+  stop-sequences:
+  - "###"
+  cache: on
+  vars:
+  - "generation task"
+  examples:
+  - "Write a 500 words blog post about the iPhone 12."
+  n-test-runs: 5
+  prettifier: ttp
+  n-collate: 1
+  n-completions: 3
+  filter: no
+  completion: off
+  insertion: on
+  doc: "Generate some text as described by the user as a task"
+  external-related:
+  - "https://gptprompts.org/p/blog-post-generation"
+#+END_SRC
+
+A task to write a blog post.
+
+http://github.com/semiosis/prompts/blob/master/prompts/write-a-blog-post-2.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  in-development: no
+  title: "Write a blog post"
+  prompt-version: 1
+  prompt: |+
+      Write a <2> words blog post about the <1>.
+  
+  lm-command: "openai-complete.sh"
+  engine: "davinci-instruct-beta"
+  temperature: 0.8
+  max-tokens: <2>
+  top-p: 1.0
+  best-of: 1
+  no-trim-start: off
+  no-trim-end: off
+  # For davinci-instruct-beta, it appears to begin with \n\n, so can't use that
+  # as stop sequence.
+  stop-sequences:
+  - "###"
+  cache: on
+  vars:
+  - "topic"
+  - "n-words"
+  examples:
+  - "iPhone 12"
+  - "500"
+  n-test-runs: 5
+  prettifier: ttp
+  n-collate: 1
+  n-completions: 10
+  filter: no
+  completion: off
+  insertion: on
+  doc: "Write a blog post"
+  external-related:
+  - "https://gptprompts.org/p/blog-post-generation"
+#+END_SRC
+
+Here, =max-tokens: <2>= specifies that the 2nd
+parameter of the prompt function substitute
+into the relevant template placeholder in the
+=max-tokens= parameter.
+
+This is the first time a variable has been
+used to supply a prompt hyperparameter, rather
+than part of the prompt.
+
+** Generated blog post about emacs
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Emacs, Emacs, Emacs. Life without emacs is unimaginable for me.
+  
+  I've been using emacs for more than 10 years now. I can't remember when I first installed it on my computer. I know it was about 10 years ago and I was just a simple student.
+  
+  When I first installed it, I didn't have a clue what it was. I actually didn't have any idea that it was an editor. I just knew that it was some software that I had to install.
+  
+  Fast forward 10 years and I now know that it is indeed an editor. But it is so much more than that.
+  
+  It is one of the most powerful editors and development environments out there. I use it every day for my work. I use it to edit code, to debug code, to read documents, to write documents.
+  
+  It's not very intuitive to use at first. But with time, with experience, it will become second nature.
+  
+  I would like to mention some of its most useful features.
+  
+  One of emacs most coveted features is its extensibility. It has more than 2,000 packages that extend its capabilities.
+  
+  For example, I use it for all my LaTeX work. I don't have to install LaTex separately and worry about installing the wrong version. All I have to do is load a single package and my LaTeX work is done.
+  
+  It also has its own programming language that it can be programmed in. There are more than 2,000 packages for it as well.
+  
+  I use emacs for programming too. I can use emacs while programming.
+  
+  And I actually use it for everything. I use it for reading books, for editing images, for uploading documents.
+  
+  It's like a swiss army knife. It can do it all.
+  
+  I use it for everything. It's like a swiss army knife: it can do it all.
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/ydfXcWrCWz94syr6ZsaDD1vUi" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/ydfXcWrCWz94syr6ZsaDD1vUi.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/ydfXcWrCWz94syr6ZsaDD1vUi.js" id="asciicast-ydfXcWrCWz94syr6ZsaDD1vUi" async></script>
+#+END_EXPORT

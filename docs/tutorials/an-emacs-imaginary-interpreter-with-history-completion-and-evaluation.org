@@ -1,0 +1,338 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/var/smulliga/source/git/semiosis/semiosis-hugo
+#+HUGO_SECTION: ./
+
+#+TITLE: 𝑖i (Imaginary Interpreter)
+#+DATE: <2021-08-22>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen openai
+
+| Install with Pen  |                                     |
+|-------------------+-------------------------------------|
+| Pen.el on GitHub  | https://github.com/semiosis/pen.el/ |
+
+** Summary
+This is an introduction to the imaginary
+interpreter built into =Pen.el=.
+
+The reason I am building REPLs and emacs modes
+based around imaginary interpreters (which are
+not at all deterministic or logically sound)
+is that I believe they will be very powerful
+and useful in the future.
+
+It's important to develop a language-agnostic
+harness for working with arbitrarily many
+imagined languages.
+
+Solving the problems of utilising current LMs
+will make it easier down the line to utilise
+more advanced ones.
+
+** Architecture
+*** The interpreter prompt
+- An interpreter prompt is selected depending on if a specialised prompt exists for the chosen language.
+  - The generic =𝑖i= prompts is comprised of:
+    - kickstarter: A subprompt declaring that the following are examples of the specified language.
+    - Consecutive Input/Output pairs.
+  - Language-specific =𝑖i= prompts are comprised of:
+    - kickstarter: A subprompt which is typically a banner.
+    - postpostprocessor: A script that takes the interpreter history and generates a new "user prompt".
+- An interpreter prompt accepts as a first argument the history of the interaction with the interpreter.
+  This way, the interpreter has an imaginary state as you work with it.
+
+*** =ii= script
+- Accepts a language as an argument
+- Docker bash-host interop:
+  =𝑖i= communicates with arbitrary LMs via the
+  bash (docker-host) interop of =Pen.el=.
+- =rlwrap= is used to keep a history of the inputs specific to each interpreter.
+- A =REPL= that keeps builds a transcript and passes that as input to the interpreter prompt.
+
+** Code
+*** =𝑖i= (Imaginary Interpreter for bash)
+
++ full code :: http://github.com/semiosis/pen.el/blob/master/scripts/ii
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  #!/bin/bash
+  
+  # Imaginary interpreter
+  # Version 2.0, bash
+  
+  #...
+  
+  memory=
+  
+  prompt_the_lm() {
+      user_input="$1"
+  
+      if test -n "$fun"; then
+          penf -u "$fun" "$memory" "$user_input"
+      else
+          penf -u pf-generic-interpreter/3 "$memory" "$user_input" "$lang"
+      fi
+  }
+  
+  p "${kickstarter} "
+  memory="${kickstarter} "
+  
+  while read -e -r user_input; do
+      gen="$(prompt_the_lm "$user_input" | chomp)"
+      memory+="$user_input\n"
+      p "$gen"
+      memory+="$gen"
+  done
+  
+  #...
+#+END_SRC
+
+The imaginary interpreter may be implemented
+for different languages, by using
+=Pen.el='s prompt functions via the bash-docker interop.
+
+** An imaginary python interpreter
+When a supported language such as Python is
+chosen, a prompt specifically designed for
+it may be used.
+
++ Prompt :: http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-python-interpreter-2.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  include: Generic Interpreter/3
+  task: Imagine a <language> interpreter
+  language: python
+  subprompts:
+  - kickstarter: |+
+      Python 3.8.5 (default, Jan 27 2021, 15:41:15)
+      Type 'copyright', 'credits' or 'license' for more information
+      IPython 7.21.0 -- An enhanced Interactive Python. Type '?' for help.
+      
+      In [1]: 
+  prompt: |+
+      <history><expression>
+      <:pp>Out
+  user-prompt: "^In \\[[0-9]*\\]: "
+  # Unfortunately, we can't generate the next In
+  # prompt because we need to match on it with stop-sequences.
+  # So the user prompt must be reconstructed manually.
+  stop-sequences:
+  - "In ["
+  # Create a user prompt with the number incremented.
+  # This is like postprocessor but happens even later.
+  # It is used in special circumstances when the prompt history is also required.
+  postpostprocessor: pen-s python-gen-next-user-prompt
+  vars:
+  - history
+  - expression
+  var-defaults:
+  - kickstarter
+  examples:
+  - "In [1]: "
+  - "5 + 5"
+#+END_SRC
+
+*** Using the bash interop
+=-p= ensures that the entire prompt along
+with the generated output is returned.
+
+=-u= ensures that the cache is updated and a
+new generation is returned.
+
+*** Withholding the first argument
+By supplying an empty string as the first
+argument, the history is not passed to the
+interpreter prompt. Instead, the prompt
+function will use the =kickstarter= subprompt,
+as it has been supplied as the default value
+for the first variable.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  penf -p -u imagine-a-python-interpreter/2 "" "5 + 5"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Python 3.8.5 (default, Jan 27 2021, 15:41:15)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.21.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: 5 + 5
+Out[1]: 10
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  penf -p -u imagine-a-python-interpreter/2 "In [3]: " "5 + 5"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+In [3]: 5 + 5
+Out[3]: 10
+#+end_src
+
+*** Demo
+On the right, an imaginary interpreter.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/PNjJsIwB5NVEE1LLqn2YWrein" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/PNjJsIwB5NVEE1LLqn2YWrein.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/PNjJsIwB5NVEE1LLqn2YWrein.js" id="asciicast-PNjJsIwB5NVEE1LLqn2YWrein" async></script>
+#+END_EXPORT
+
+** An imaginary interpreter with any language
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/generic-interpreter-3.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Generic Interpreter"
+  prompt-version: 1
+  subprompts:
+  - kickstarter: |+
+      <language> interpreter.
+  
+      Input: 
+  prompt: |+
+      <history><expression>
+      <:pp>Output:
+  lm-command: "openai-complete.sh"
+  engine: "OpenAI Davinci"
+  temperature: 0.4
+  max-tokens: 60
+  top-p: 1.0
+  cache: on
+  stop-sequences:
+  - "Input: "
+  vars:
+  - history
+  - expression
+  - language
+  var-defaults:
+  - kickstarter
+  examples:
+  - "Input: "
+  - "5 + 5"
+  - Python
+  filter: no
+  completion: off
+  insertion: off
+  interpreter: on
+  conversation: on
+  external-related:
+  - "https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/"
+#+END_SRC
+
+*** Demo of ruby using the generic interpreter
+This will use a generic prompt which does any
+language, but the name of the language has
+been specified as Rubylang.
+
+When using =𝑖i=, if a specialised interpreter
+prompt for a given language can be found then
+that will be used.
+
+However, since no interpreter can be found for
+'Rubylang', the generic interpreter is used.
+
+However, the generic interpreter can still
+imagine the 'Ruby' language to a degree, but
+is far less accurate.
+
+The beauty of this, of course, is that we
+don't need to prime the interpreter with a
+banner or terminal history, and we don't need
+to know what the prompt for Ruby looks like.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/LkGZQ2pBIQ4V9nUbokwqnaDr1" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/LkGZQ2pBIQ4V9nUbokwqnaDr1.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/LkGZQ2pBIQ4V9nUbokwqnaDr1.js" id="asciicast-LkGZQ2pBIQ4V9nUbokwqnaDr1" async></script>
+#+END_EXPORT
+
+*** And a demo of a more catered imaginary interpreter
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-ruby-interpreter-2.prompt
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/7iKlwaDoT7PDy2r4MO1J3G4wA" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/7iKlwaDoT7PDy2r4MO1J3G4wA.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/7iKlwaDoT7PDy2r4MO1J3G4wA.js" id="asciicast-7iKlwaDoT7PDy2r4MO1J3G4wA" async></script>
+#+END_EXPORT
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  include: Generic Interpreter/3
+  task: Imagine a <language> interpreter
+  language: ruby
+  subprompts:
+  - kickstarter: |+
+      $ ruby -v
+      ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]
+      $ irb
+      2.7.0 :001 > RUBY_VERSION
+      => "2.7.0"
+      2.7.0 :002 > 
+  # Because the prompt generates from at the end of the user expression
+  # The generation will contain a starting newline.
+  # Want to trim that with =𝑖i=, but not in the prompt function because a better harness could be made.
+  prompt: |+
+      <history><expression>
+  user-prompt: "^2.7.0 :[0-9]* > "
+  # Unfortunately, we can't generate the next In
+  # prompt because we need to match on it with stop-sequences.
+  # So the user prompt must be reconstructed manually.
+  stop-sequences:
+  # This isn't ideal but ruby-gen-next-user-prompt needs to see a full prompt
+  # So it can generate the next user prompt.
+  - " > "
+  postpostprocessor: pen-str ruby-gen-next-user-prompt
+  vars:
+  - history
+  - expression
+  var-defaults:
+  - kickstarter
+  n-completions: 10
+  examples:
+  - "2.7.0 :002 > "
+  - "puts \"Hi\""
+#+END_SRC
+
+** Support scripts
+These are used as post-processors in the prompt and in =𝑖i=.
+*** String utilities (=pen-s=)
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  remove-trailing-whitespace) {
+      sed -z -e "s/\s*\$//" -e "s/\n*\$//"
+  }
+  ;;
+  
+  generic-interpreter-tidy-result) {
+      pen-s remove-trailing-whitespace | { awk 1; echo -n "Input: "; }
+  }
+  ;;
+  
+  ruby-gen-next-user-prompt) {
+      IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
+  
+      prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^2.7.0 :/{s/^2.7.0 :\\([0-9]*\\) .*/\\1/p;q}")"
+      echo "$prompt_number"
+      new_prompt_number="$(printf "%03d" $(( prompt_number + 1 )))"
+  
+      printf -- "%s" "$in" | awk 1
+      echo -n "2.7.0 :$new_prompt_number > "
+  }
+  ;;
+  
+  python-gen-next-user-prompt) {
+      IFS= read -rd '' in < <(cat);typeset -p in &>/dev/null
+  
+      prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
+      new_prompt_number="$(( prompt_number + 1 ))"
+  
+      printf -- "%s" "$in" | awk 1
+      echo -n "In [$new_prompt_number]: "
+  }
+  ;;
+#+END_SRC

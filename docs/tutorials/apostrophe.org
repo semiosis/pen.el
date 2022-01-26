@@ -1,0 +1,77 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Apostrophe (conversation unrestricted)
+#+DATE: <2021-11-27>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen
+
+| Install with Pen |                                                    |
+|------------------+----------------------------------------------------|
+| Pen.el on GitHub | https://github.com/semiosis/pen.el/                |
+| Tutorial         | https://mullikine.github.io/posts/pen-el-tutorial/ |
+
+** Introducing Apostrophe!
+The =comint= conversation mode for emacs that uses language models.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  apostrophe
+      An exclamatory passage in a speech or poem
+      addressed to a person (typically one who
+      is dead or absent) or thing (typically one
+      that is personified).
+  
+      It's a little bit like a soliloquy.
+#+END_SRC
+
+*** Talk to people
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  apostrophe Amber Heard
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/nuT2ZMwujnnSObNUTGqHArOsB" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/nuT2ZMwujnnSObNUTGqHArOsB.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/nuT2ZMwujnnSObNUTGqHArOsB.js" id="asciicast-nuT2ZMwujnnSObNUTGqHArOsB" async></script>
+#+END_EXPORT
+
+*** Use the universal highlighting (=-nw=)
+This works with any terminal =Pen.el= invocation.
+
+Here is a three-way conversation between two chatbots and myself.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  apostrophe -nv Amber Heard
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/K40px4H4CPPN15QMz6Uy8Pz3q" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/K40px4H4CPPN15QMz6Uy8Pz3q.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/K40px4H4CPPN15QMz6Uy8Pz3q.js" id="asciicast-K40px4H4CPPN15QMz6Uy8Pz3q" async></script>
+#+END_EXPORT
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  apostrophe -nv Tom Cruise
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/aLn5lZq5yIeBxR6dyFyveDJGc" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/aLn5lZq5yIeBxR6dyFyveDJGc.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/aLn5lZq5yIeBxR6dyFyveDJGc.js" id="asciicast-aLn5lZq5yIeBxR6dyFyveDJGc" async></script>
+#+END_EXPORT
+
+Next step, combine the REPLs together and let them talk to eachother!
+
+** Select arbitrary text and initiate a conversation
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/YdX4bzPownHsVT3T0UPLMcp3c" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/YdX4bzPownHsVT3T0UPLMcp3c.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/YdX4bzPownHsVT3T0UPLMcp3c.js" id="asciicast-YdX4bzPownHsVT3T0UPLMcp3c" async></script>
+#+END_EXPORT

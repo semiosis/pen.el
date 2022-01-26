@@ -1,0 +1,130 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Define made-up words with Davinci
+#+DATE: <2021-10-13>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt openai emacs pen
+
+** Summary
+I make a prompt to define made-up words.
+
++ Prompt :: http://github.com/semiosis/prompts/blob/master/prompts/define-a-given-word-1.prompt
+
+=pf-define-a-given-word/1=
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Define a given word"
+  doc: "Given a word, even a fake one, come up with a definition"
+  prompt-version: 2
+  prompt: |-
+      imprudent (imprudent)
+      <delim>
+      Not showing care for the consequences of
+      an action; rash.
+      "it would be imprudent to leave her winter
+      coat behind"
+      <delim>
+      vain (vain)
+      <delim>
+      Having or showing an excessively high
+      opinion of one's appearance, abilities, or
+      worth.
+      "their flattery made him vain"
+      <delim>
+      <word> (<word>)
+      <delim>
+  force-engine: "OpenAI Davinci"
+  force-temperature: 0.8
+  max-generated-tokens: "prompt-length"
+  top-p: 1.0
+  stop-sequences:
+  - "<delim>"
+  cache: on
+  defs:
+  # Annoyingly, PEN_STOP_SEQUENCE as --- can cause problems
+  # Because it may be recognised as a CLI argument.
+  # - delim2: "\"---\""
+  vars:
+  - "word"
+  validator: grep -q "<word>"
+  examples:
+  - "surrealeptitious"
+  info: on
+  completion: off
+  insertion: off
+  postprocessor: pen-str remove-starting-and-trailing-whitespace
+#+END_SRC
+
+** Demo - =surrealeptitious=
+*** Correct definitions
+
+I like this one:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  marked by the secretive nature of
+  surrealism.
+    (surrealeptitious)
+  "the surrealeptitious art of collage"
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  marked by an apparently incongruous
+  combination of circumstances or events
+  that seem to be deliberately contrary to
+  what one expects; bizarre; uncanny.
+  "it was a dark and stormy night that
+  might have served as the setting for
+  surrealeptitious meeting of the two old
+  friends"
+#+END_SRC
+
+*** Too much surreptitious; Not enough surreal
+#+BEGIN_SRC text -n :async :results verbatim code
+  Lacking subtlety, especially in a way that is
+  embarrassing.
+  "The movie was full of surrealeptitious product
+  placement"
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  marked by the intentional use of strategies
+  intended to mislead or confuse, as for the
+  purpose of political or military deception.
+  "his death was due to surrealeptitious poisoning"
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  secret and crafty
+  "a conspiracy of surrealeptitious Watergate
+  burglars"
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  An act usually in violation of the law,
+  the truth, or morality, done in secret or
+  with the permission or cooperation of
+  an authority.
+  "Rayburn's surrealeptitious intervention
+  tipped the balance in favor of the
+  railroads."
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  an underhanded and usually devious
+  method; sly and secret ; (devious)
+  "he resorted to surrealeptitious tactics"
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  highly secret and mysterious
+  "a surrealeptitious glance at his watch"
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  So subtle as to escape notice.
+  "the surrealeptitious sound of their
+  footsteps"
+#+END_SRC

@@ -1,0 +1,67 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Imaginary Interpreter from Complex Term
+#+DATE: <2021-12-19>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen imaginary
+
+** The idea / workflow
+You usually start with a real terminal, move to a complex one, and sometimes go to an imaginary from there.
+
+*** 1) real
+You are using a regular (real) interpreter, such as
+=ipython= and can't remember the name of the
+library you want to import.
+*** 2) complex
+So you start a =cterm= around it.
+*** 3) imaginary
+You want to detach from real axis for a while
+and explore the same terminal imaginarily (in
+order to experiment with ideas).
+
+** Summary
+I demonstrate starting an imaginary
+interpreter from a complex term.
+
+This means that you're able to enter into a
+full-imaginary interpreter based on your
+current history of interaction with a
+real or complex terminal.
+
+| kb      | f            | description                                             |
+|---------+--------------+---------------------------------------------------------|
+| =C-c i= | term-raw-map | start an imaginary interpreter from emacs' term / cterm |
+
+Or run =M-x pen-start-ii-from-buffer= from anywhere.
+
+** Code
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (define-key term-raw-map (kbd "C-c i") 'pen-start-ii-from-buffer)
+
+  (defun pen-bol-context ()
+    (interactive)
+    (term-send-raw-string "\C-a")
+    (sleep-for 0.1)
+    (pen-preceding-text))
+  
+  (defun pen-start-ii-from-buffer (lang kickstarter)
+    (interactive (list (pen-detect-language-ask)
+                       (pen-bol-context)))
+    (pen-sps (pen-cmd "ii" lang "" kickstarter)))
+#+END_SRC
+
+** Demo
+Here I log into imaginary Jony Ive's design strategy documents for the iPhone Y.
+
+I also stop the guidance system on an imaginary falcon9 rocket and check the logs.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/ZqpDZeYtT35nVrBvFyfItUGnF" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/ZqpDZeYtT35nVrBvFyfItUGnF.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/ZqpDZeYtT35nVrBvFyfItUGnF.js" id="asciicast-ZqpDZeYtT35nVrBvFyfItUGnF" async></script>
+#+END_EXPORT

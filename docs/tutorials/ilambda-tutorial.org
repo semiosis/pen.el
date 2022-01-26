@@ -1,0 +1,119 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: ilambda Tutorial
+#+DATE: <2021-11-30>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: 𝑖λ pen imaginary elisp
+
+** Summary
+Here's a demonstration of how to use ilambda for emacs.
+
+This is all you need to do to use =ilambda= =:)=.
+
+** Thin-client demo
+Firstly, start the pen server in the background.
+You will need to follow setup instructions for pen.el
+
+*** Initial pen server setup
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  git clone "https://github.com/semiosis/pen.el"
+  git clone "https://github.com/semiosis/prompts"
+
+  mkdir -p ~/.pen
+
+  # Put in your keys, or do not, it's up to you!
+  echo "sk-<openai key here>" > ~/.pen/openai_api_key       # https://openai.com/
+  echo "<ai21 key here>" > ~/.pen/ai21_api_key              # https://www.ai21.com/
+  echo "<hf key here>" > ~/.pen/hf_api_key                  # https://huggingface.co/
+  echo "<nlpcloud key here>" > ~/.pen/nlpcloud_api_key      # https://nlpcloud.io/
+  echo "<alephalpha key here>" > ~/.pen/alephalpha_api_key  # https://aleph-alpha.de/
+  echo "<cohere key here>" > ~/.pen/cohere_api_key          # https://cohere.ai/
+
+  # Add the scripts to the PATH
+  echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
+
+  # Add this to prevent C-s from freezing the terminal
+  echo "stty stop undef 2>/dev/null; stty start undef 2>/dev/null" | tee -a ~/.zshrc >> ~/.bashrc
+
+  # Source your .profile
+  . ~/.profile
+
+  # Run pen in the background, and ensure everything is pulled and up-to-date
+  pen -nw
+#+END_SRC
+
+*** Force the engine to the key you have, if you don't have the OpenAI key
+If you have an =OpenAI= key, then most
+prompts/features/applications will simply
+work without further setup. If you don't have an OpenAI key, but
+have another key such as =AI21= then you can
+force all prompts to use the key you have.
+
+I will demonstrate forcing Pen.el to use the =Cohere= engine for everything.
+This is useful if you only have a Cohere key.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  # Run this on your host machine
+  pen config
+#+END_SRC
+
+Ensure this is enabled:
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (setq pen-prompt-force-engine-disabled t)
+#+END_SRC
+
+And this is set:
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (setq pen-force-engine "Cohere")
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/h7EUvqjA0hH6g3Wuab6TLHpVP" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/h7EUvqjA0hH6g3Wuab6TLHpVP.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/h7EUvqjA0hH6g3Wuab6TLHpVP.js" id="asciicast-h7EUvqjA0hH6g3Wuab6TLHpVP" async></script>
+#+END_EXPORT
+
+*** Now to showcase ilambda
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  # Start a vanilla emacs
+  emacs -nw -Q
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  ;; Load the libaries inside the vanilla emacs
+  (load "/home/shane/source/git/semiosis/pen.el/src/ilambda.el")
+  (load "/home/shane/source/git/semiosis/pen.el/src/pen-client.el")
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (require 'pen-client)
+  (require 'ilambda)
+  
+  (setq iλ-thin t)
+  
+  (idefun thing-to-hex-color (thing))
+  
+  (message (thing-to-hex-color "watermelon"))
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (message (apply (idefun translate-to-pirate (phrase) "reword the phrase to sound like a pirate") '("Let's go, my friend")))
+#+END_SRC
+
+As you can see, that all works well.
+
+[[./ilambda-pirate.png]]
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/PjhauvXBNuTp9H7UQtsWK9mrF" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/PjhauvXBNuTp9H7UQtsWK9mrF.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/PjhauvXBNuTp9H7UQtsWK9mrF.js" id="asciicast-PjhauvXBNuTp9H7UQtsWK9mrF" async></script>
+#+END_EXPORT

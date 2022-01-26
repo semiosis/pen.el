@@ -1,0 +1,93 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Language agnostic code generator in Pen.el
+#+DATE: <2021-08-10>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen gpt gpt-j openai eleutherai emacs
+
+** Summary
+Following on from [[https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/][YASnippet combined with Pen.el - Controllable prompt generation // Bodacious Blog]],
+I make another language-agnostic code generator.
+
+Behind the scenes, this prompt generates the
+comments describing a code snippet. The
+comments are in the desired language and the
+comments are removed from the results.
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: code generator from description
+  doc: Language agnostic
+  prompt-version: 1
+  lm-command: "openai-complete.sh"
+  model: davinci
+  # lm-command: "aix-complete.sh"
+  # model: GPT-J-6B
+  temperature: 0.3
+  max-tokens: 200
+  stop-sequences:
+  - "###"
+  top-p: 1
+  # Unfortunately, it's not yet possible to have a prompt which ends in whitespace.
+  # It would really help with suggesting the comments have finished.
+  prompt: |+
+    Language: `(pen-detect-language)``(comment-line 3)`
+    Description: The following code is an implementation of <code description>:
+    Code:
+    >
+  vars:
+  - code description
+  postprocessor: sed 1,3d | sed "/^[^>]/q" | sed -e "\$d" -e "s/^> *//"
+  end-yas: on
+  # The start will not be trimmed
+  insertion: on
+  # I guess that this would usually be done manually
+  continuation-prompt: Generic completion 50 tokens
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/h4yKifxjp6wskRCfJKtVXL2Q8" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/h4yKifxjp6wskRCfJKtVXL2Q8.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/h4yKifxjp6wskRCfJKtVXL2Q8.js" id="asciicast-h4yKifxjp6wskRCfJKtVXL2Q8" async></script>
+#+END_EXPORT
+
+** Results
+*** GPT-3
+**** haskell
+#+BEGIN_SRC haskell -n :i babel-script :async :results verbatim code
+  quicksort [] = []
+  quicksort (x:xs) = (quicksort lesser) ++ [x] ++ (quicksort greater)
+#+END_SRC
+
+**** perl
+#+BEGIN_SRC perl -n :async :results verbatim code
+  sub quicksort {
+      my ($left, $right) = @_;
+      my $pivot = $_[0];
+      my $pivotIndex = 0;
+      for ($left; $left <= $right; $left++) {
+          if ($left == $pivot) {
+              $pivotIndex = $left;
+          } else {
+              $pivotIndex = ($left + $right) / 2;
+          }
+          $left = $pivotIndex;
+      }
+      $right = $pivotIndex;
+      return ($left, $right);
+  }
+
+  print "Enter the array to be sorted: ";
+  my $array = <STDIN>;
+  print "Enter the number of elements in the array: ";
+#+END_SRC
+
+*** GPT-J
+Unfortunately, I ran out of credits, but I
+don't think it worked too well anyway.

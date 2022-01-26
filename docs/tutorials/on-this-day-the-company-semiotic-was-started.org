@@ -1,0 +1,68 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: On this day, the company Semiotic was started
+#+DATE: <2021-12-31>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen imaginary
+
+** Summary
+To commemorate the birth of a new company, this prompt has been created.
+Semiotic will provide support and services for Human-AGI interaction.
+All software will be free-as-in-freedom.
+
+** Investors
+- http://github.com/semiosis/investment-proposal
+
+** Prompt
++ code :: http://github.com/semiosis/prompts/blob/master/prompts/on-this-day-1.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "on this day"
+  doc: "State the significance of this day with regard to history"
+  prompt-version: 1
+  prompt: |+
+    Date: <date>
+    <:pp>On this day in history,
+  engine: "OpenAI Codex"
+  temperature: 0.3
+  max-generated-tokens: "(* 2 prompt-length)"
+  top-p: 1.0
+  stop-sequences:
+  - "\n"
+  cache: on
+  vars:
+  - "date"
+  var-defaults:
+  - "(pen-ask (pen-snc \"date\"))"
+  examples:
+  - "Fri 31 Dec 2021"
+  info: on
+  filter: off
+  completion: off
+  insertion: off
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -nj pf-on-this-day/1 "$(date)"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+On this day in history, the first issue of 'The New Yorker' was published.
+On this day in history, the first ever comic book was published.
+On this day in history, the first human-made object, the Soviet space program's Vostok 1, was launched.
+On this day in history, the first ever Star Wars movie was released.
+On this day in history, in 1988: The first commercial CD-R is manufactured.
+#+end_src
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/KmOjJoCqWAP7YPVeuHcuvLJ2O" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/KmOjJoCqWAP7YPVeuHcuvLJ2O.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/KmOjJoCqWAP7YPVeuHcuvLJ2O.js" id="asciicast-KmOjJoCqWAP7YPVeuHcuvLJ2O" async></script>
+#+END_EXPORT

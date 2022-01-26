@@ -1,0 +1,128 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Prompt chaining: Linking prompts together usefully in emacs
+#+DATE: <2021-07-20>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen nlp
+
+** Summary
+I demonstrate chaining together prompt functions.
+
+You can define inside a .prompt to use a different prompt function
+For example, in this case, one prompt detects the language.
+The language is then sent as the first argument to the next prompt.
+
+So basically the world languages prompt
+usually takes 2 arguments, FROM and TO, but
+FROM is automatically detected by the =pf-get-language= prompt function.
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/mmu0m0xlTtJVQaEJAnPWVhjTj" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/mmu0m0xlTtJVQaEJAnPWVhjTj.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/mmu0m0xlTtJVQaEJAnPWVhjTj.js" id="asciicast-mmu0m0xlTtJVQaEJAnPWVhjTj" async></script>
+#+END_EXPORT
+
+** Prompts
+*** =get-language.prompt=
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: Get language
+  prompt-version: 1
+  doc: This prompt detects the language
+  notes:
+  - "It appears that combining ### with Input: Output: has no improvement"
+  prompt: |+
+  Given some text, return the language.
+  
+  Input: Hello
+  Output: English
+  Input: Bon anniversaire !
+  Output: French
+  Input: printf -- "%s\n" "$lang"
+  Output: bash
+  Input: Zdravstvuyte
+  Output: Russian
+  Input: <1>
+  Output:
+  engine: davinci
+  temperature: 0.3
+  max-tokens: 200
+  top-p: 1
+  stop-sequences:
+  - "\n"
+  vars:
+  - text-or-code
+  examples:
+  - Happy birthday
+  preprocessors:
+  - "sed -z 's/\\n/\\\\n/g' | cut -c 1-20"
+  aliases:
+  - detect-language
+#+END_SRC
+
+*** =translate-from-world-language-x-to-y.prompt=
+This prompt refers to the previous.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: Translate from world language X to Y
+  prompt-version: 2
+  doc: This prompt translates English text to any world langauge
+  issues:
+  - I think the unicode characters may be multibyte causing issues with completion
+  prompt: |
+    ###
+    # English: Hello
+    # Russian: Zdravstvuyte
+    # Italian: Salve
+    # Japanese: Konnichiwa
+    # German: Guten Tag
+    # French: Bonjour
+    # Spanish: Hola
+    ###
+    # English: Happy birthday!
+    # French: Bon anniversaire !
+    # German: Alles Gute zum Geburtstag!
+    # Italian: Buon compleanno!
+    # Indonesian: Selamat ulang tahun!
+    ###
+    # <1>: <3>
+    # <2>:
+  engine: davinci
+  temperature: 0.5
+  max-tokens: 200
+  top-p: 1
+  stop-sequences:
+  - "#"
+  vars:
+  - from-language
+  - to-language
+  - phrase
+  preprocessors:
+  - cat
+  - cat
+  - "sed -z 's/\\n/\\\\n/g'"
+  # ascification of the prompt is not ideal
+  prompt-filter: pen-c ascify
+  examples:
+  - English
+  - French
+  - Goodnight
+  # read-string-hist keeps a history of inputs
+  var-defaults:
+  - "(or (sor (nth 0 (pf-get-language (pen-selected-text) :no-select-result t))) (read-string-hist \"Pen From language: \"))"
+  - "(read-string-hist \"Pen To language: \")"
+  - "(pen-selected-text)"
+#+END_SRC
+
+The elisp contained in the first of the =var-
+default= expressions will be evaluated to get
+the value of the first template variable.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (or (sor (nth 0 (pf-get-language (pen-selected-text) :no-select-result t))) (read-string-hist "Pen From language: "))
+#+END_SRC

@@ -1,0 +1,22 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Trying out the Grand Mac, but talking to imaginary Ronald McDonald
+#+DATE: <2021-12-09>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen mcdonalds openai apostrophe
+
+** Summary
+I have a conversation with imaginary Ronald McDonald, whilst eating the Grand Mac.
+I ask him how the sauce is made. He say's Mac and Cheese. What a crook!
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/2qptmb9xaQMkJKviB4GmBmbhJ" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/2qptmb9xaQMkJKviB4GmBmbhJ.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/2qptmb9xaQMkJKviB4GmBmbhJ.js" id="asciicast-2qptmb9xaQMkJKviB4GmBmbhJ" async></script>
+#+END_EXPORT

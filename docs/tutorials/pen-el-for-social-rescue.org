@@ -1,0 +1,125 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Pen.el for Social Rescue
+#+DATE: <2021-12-16>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen apostrophe nlu nlg
+
+** Social Rescue Tech example - Positive NLG Compliments
+With one line of shell code and a predefined
+function, and using "Amber Heard" as the first
+argument, I generate 10,000 compliments for
+her.
+
++ compliments :: http://github.com/mullikine/positive-nlg-compliments/blob/master/compliments.txt
+
+*** Time taken to generate
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  git show -s --format=%at a9fccf1
+#+END_SRC
+
+#+begin_src bash
+1639635963
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  git show -s --format=%at 08b7c56
+#+END_SRC
+
+#+begin_src bash
+1639627967
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  # Seconds
+  echo "1639635963 - 1639627967" | bc
+#+END_SRC
+
+#+begin_src bash
+7996
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  # Total minutes
+  echo "(1639635963 - 1639627967) / 60" | bc
+#+END_SRC
+
+#+begin_src bash
+133
+#+end_src
+
+It took just over 2 hours to generate 10k
+compliments.
+
+This pipeline will be sped up in the near future by a factor of around 10x.
+
+*** Demonstrations
+Video demonstration:
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/w5ayuAEGGpgsxTCKWbAGRPfvZ" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/w5ayuAEGGpgsxTCKWbAGRPfvZ.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/w5ayuAEGGpgsxTCKWbAGRPfvZ.js" id="asciicast-w5ayuAEGGpgsxTCKWbAGRPfvZ" async></script>
+#+END_EXPORT
+
+8000+ and still generating:
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/YexeaMmvc15iaGzHQFLMD1tr0" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/YexeaMmvc15iaGzHQFLMD1tr0.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/YexeaMmvc15iaGzHQFLMD1tr0.js" id="asciicast-YexeaMmvc15iaGzHQFLMD1tr0" async></script>
+#+END_EXPORT
+
+And still generating:
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/cuCzjyq5EwT6dV8Xp3RIk9B3l" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/cuCzjyq5EwT6dV8Xp3RIk9B3l.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/cuCzjyq5EwT6dV8Xp3RIk9B3l.js" id="asciicast-cuCzjyq5EwT6dV8Xp3RIk9B3l" async></script>
+#+END_EXPORT
+
+*** Code
++ Prompt :: http://github.com/semiosis/prompts/blob/master/prompts/compliment-generation-based-on-a-celebrity-1.prompt
+
+*** Final generated prompt:
+#+BEGIN_SRC text -n :async :results verbatim code
+  The following are nice compliments:
+  ###
+  TOPIC: Jason Momoa
+  - He has fame, but he doesn't want it. He has advantage but he doesn't take it. And he definitely has all our hearts!!!!!
+  ###
+  TOPIC: Amber Heard
+  -
+#+END_SRC
+
+** Simulate real conversation using NLU and NLG
++ Demonstration :: https://semiosis.github.io/apostrophe/
+
+Conversation demo 1:
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/K40px4H4CPPN15QMz6Uy8Pz3q" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/K40px4H4CPPN15QMz6Uy8Pz3q.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/K40px4H4CPPN15QMz6Uy8Pz3q.js" id="asciicast-K40px4H4CPPN15QMz6Uy8Pz3q" async></script>
+#+END_EXPORT
+
+Conversation demo 2:
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/aLn5lZq5yIeBxR6dyFyveDJGc" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/aLn5lZq5yIeBxR6dyFyveDJGc.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/aLn5lZq5yIeBxR6dyFyveDJGc.js" id="asciicast-aLn5lZq5yIeBxR6dyFyveDJGc" async></script>
+#+END_EXPORT
+
+Conversation demo 3:
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/YdX4bzPownHsVT3T0UPLMcp3c" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/YdX4bzPownHsVT3T0UPLMcp3c.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/YdX4bzPownHsVT3T0UPLMcp3c.js" id="asciicast-YdX4bzPownHsVT3T0UPLMcp3c" async></script>
+#+END_EXPORT
+

@@ -1,0 +1,34 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Human engine for training Pen.el
+#+DATE: <2021-12-12>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen openai gpt emacs
+
+** Summary
+I make a =human.engine= for prompting the
+user.
+
++ engine :: http://github.com/semiosis/engines/blob/master/engines/human.engine
+
++ The Imitation Game :: https://academic.oup.com/mind/article/LIX/236/433/986238
+
+The human engine substitutes a prompting API
+such as the OpenAI API with an actual human.
+
+** Demo
+*** Human entering the blurb for Apostrophe
+[[./jony-ive-blurb.png]]
+
+*** Human pretending to be Jony Ive
+[[./jony-ive-response.png]]
+
+*** Conversation
+[[./jony-ive-convo.png]]
+
+** Code
+- http://github.com/semiosis/pen.el/blob/master/scripts/pen-human.py

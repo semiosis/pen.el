@@ -1,0 +1,921 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Having fun with Pen.el
+#+DATE: <2021-08-05>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen games openai eleutherai gpt-j gpt
+
+** Translating from Disney into English
+- Uses bash, which connects to the Pen.el server.
+- Uses the world translation prompt
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/stejgRht31Z5Kop6sUV5rbJIq" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/stejgRht31Z5Kop6sUV5rbJIq.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/stejgRht31Z5Kop6sUV5rbJIq.js" id="asciicast-stejgRht31Z5Kop6sUV5rbJIq" async></script>
+#+END_EXPORT
+
+** Rugby pick up lines
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/mGoP7TY7Wd3YLA8A1hTtSsYzK" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/mGoP7TY7Wd3YLA8A1hTtSsYzK.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/mGoP7TY7Wd3YLA8A1hTtSsYzK.js" id="asciicast-mGoP7TY7Wd3YLA8A1hTtSsYzK" async></script>
+#+END_EXPORT
+
++ Good ones:
+  - I'm a total scrumptious hunk of man meat.
+  - I like your tackles.
+  - I'm just trying to tackle your heart.
+  - I think you would be a good scrum half.
+  - You can tackle me anytime.
+
+** Tomato pick up lines
+#+BEGIN_SRC text -n :async :results verbatim code
+  ,#+BEGIN_SRC text -n :async :results verbatim code :f "pena pf-very-witty-pick-up-lines-for-a-topic"
+    tomato
+  ,#+END_SRC
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Are you a slice of juicy sweetness?
+I think you're sweet enough to be a Cherry Tomato.
+Are you a good tomato, or are you bad tomato?
+You look like an edible fruit.
+I'm a little red, ripe, and sweet for you.
+You look like a juicy ripened tomato.
+Do you like tomatoes? Cuz I'd like to be a vegetable to you.
+I don't know if you're a good tomato or a bad tomato.
+I like your tom-attitude.
+If I could grow a tomato, I'd grow one for you.
+You look ripe and ready for picking.
+You look like you're ripe.
+You must be a tomato because you're hot, juicy, and you make my mouth water.
+You look like a juicy tomato.
+I like you because you're red hot.
+You look like a tasty piece of tomato.
+I've been waiting all year for you to be in season.
+I'd love to be your fruit basket.
+You look like a good tomato to grow, a tasty one.
+Are you a hot tomato or a cool cucumber?
+How do you like your tomatoes? In a salad, or inside a sandwich?
+You look like a beefsteak to me.
+You're red hot babe.
+I'd like to be your cherry topper.
+You look like a delicious tomato.
+I think you're sweet.
+If you were a tomato, I would keep you in my garden.
+I want to be your fresh tomato.
+If I were a tomato, I'd want to be your ketchup.
+#+end_src
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/CPBPgmxBBYq2ddUztU2hD2axW" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/CPBPgmxBBYq2ddUztU2hD2axW.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/CPBPgmxBBYq2ddUztU2hD2axW.js" id="asciicast-CPBPgmxBBYq2ddUztU2hD2axW" async></script>
+#+END_EXPORT
+
+** GPT-J pick up lines
+It's not really a fair contest vs GPT-3
+because the OpenAI API has support for
+n-completions, where the Aix API does not,
+currently, so It's harder to cherry pick.
+
+They are quite good though.
+
++ Cooking:
+  - I'm as good as the food I cook.
+  - I think you'd taste delicious with a healthy dose of salt.
+
++ Programming:
+  - I wonder if you'd be a good maintenance guy.
+  - I think we're made for each other.
+
++ Space:
+  - You look safe, and I'd like to explore the stars.
+  - You're my ride into infinity.
+
++ Music:
+  - I like your hair. It's the color of the ocean in summer.
+  - You look like the kind of music that I would listen to when I'm alone.
+
+** Micro horror stories with GPT-j
+- And I think my AIx key may have run out!
+
+*** Shower
+He always leaves the shower running while he's
+in the tub. I have to remember not to let him
+see his face on the shower curtain.
+
+*** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/MNlkAaddyTFbEkkTYRRZXZaB0" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/MNlkAaddyTFbEkkTYRRZXZaB0.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/MNlkAaddyTFbEkkTYRRZXZaB0.js" id="asciicast-MNlkAaddyTFbEkkTYRRZXZaB0" async></script>
+#+END_EXPORT
+
+** Lists of interesting things
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "flying pokemon" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Dragonair
+Dratini
+Drifblim
+Dragonite
+Drapion
+Drifloon
+Pidgeot
+Pidgeotto
+Pidgey
+Zubat
+Fearow
+Farfetch'd
+Pidgeott
+Tauros
+Hoothoot
+Swellow
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "pokemon abilities" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Speed Boost
+Shield Dust
+Dry Skin
+Inner Focus
+Illuminate
+Pixilate
+Pressure
+Stench
+Blizzard
+Wonder Skin
+Intimidate
+Flash Fire
+Chlorophyll
+Unnerve
+Magma Armor
+Multitype
+Wonder Guard
+Gale Wings
+Magic Guard
+Sap Sipper
+Water Absorb
+Defiant
+Swarm
+Flame Body
+Run Away
+Cute Charm
+Own Tempo
+Guts
+Overgrow
+Clear Body
+Marvel Scale
+Super Luck
+Pickup
+Adaptability
+Limber
+Swift Swim
+Synchronize
+Water Veil
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "fictional languages" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Tolkien's Elvish languages
+Klingon
+Dothraki
+High Valyrian
+Tholian
+Gamorrean
+Elvish
+Huttese
+Weyoun 4
+Ewokese
+Galactic Basic
+Gobbledegook
+Hobbit
+Phoenician
+Wookiee
+Navajo
+Tolkien's Gnomish language
+Esperanto
+Elven
+Klingonese
+Na'vi
+Romulan
+Basic
+Romanian
+Kabyle
+Pirate
+Vulcan.
+Lingo
+Elcor
+Kigali
+Gargleblaster
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u list-of 10 "natural disasters" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Earthquakes
+Cyclones
+Floods
+Tornadoes
+Volcanic eruptions
+Hurricanes
+Tsunamis
+Tidal waves
+Forest fires
+Heatwaves
+Hurricane
+Earthquake
+Tornado
+Volcano
+Landslide
+Flood
+Forest fire
+Tsunami
+Thunderstorm
+Sandstorm
+Epidemic
+Fire
+Meteorite
+Plague
+Stinging Insect
+Cyclone
+Storm
+Tidal Wave
+Avalanche
+Typhoon
+Volcanic Eruption
+Wildfire
+Blizzard
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u list-of 10 "dangerous animals" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Crocodile
+Snakes
+Tiger
+Eagle
+Shark
+Elephant
+Polar Bear
+Hippopotamus
+Asp
+Elephant Seal
+Polar Bears
+Tiger Sharks
+Box Jelly Fish
+Great White Sharks
+Crocodiles
+Elephants
+Eagles
+Manta Rays
+Sharks
+Inland Taipan
+Blue Ringed Octopus
+Black Mamba
+Great White Shark
+Cape Cobra
+Mako Shark
+Saltwater Crocodile
+Cape Hunting Dog
+Camel Spider
+Lemon Shark
+Moth
+Scorpion
+Rhinoceros
+Lion
+Jaguar
+Spider
+Bear
+Biting louse
+Boomslang
+Black mamba
+Blacktip shark
+Box jellyfish
+Brown recluse spider
+Stonefish
+Taipan
+Tsetse fly
+Whip snake
+#+end_src
+
+#+RESULTS:
+#+begin_src bash
+Binturong
+Budgerigar
+Baby Hippo
+Baby Elephant
+Baby Giraffe
+Baby Seal
+Baby Elephant Seal
+Baby Orangutan
+Baby Sea Otter
+Baby Walrus
+Baby Dolphin
+Baby Owl
+Baby Koala
+Baby Penguin
+Baby Sloth
+Baby Puffin
+Baby Hedgehog
+Baby Pigeon
+Alpaca
+Armadillo
+Alpine Dachsbracke
+Axolotl
+Elephant
+American Alligator
+Badger
+Bat-eared Fox
+Capybara
+Kitten
+Kangaroo
+Koala
+Kiwi
+Kinkajou
+Kakapo
+Koalas
+Kookaburra
+Eskimo Curlew
+Emu
+Echidna
+Elk
+Eland
+Elephant Seal
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u list-of 10 "military operations"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Operation Overlord
+Operation Sea Lion
+Operation Downfall
+Operation Barbarossa
+Operation Market Garden
+Operation Overload
+Operation Cobra
+Operation Bagration
+Operation Dragoon
+Operation Mincemeat
+Operation Overlord
+Operation Desert Storm
+Operation Downfall
+Operation Starvation
+Operation Sealion
+Operation Dragoon
+Operation Overlord
+Operation Barbarossa
+Operation Swift Sword
+Operation Chastise
+Operation Iraqi Freedom
+Operation Enduring Freedom
+Operation Allied Force
+Operation Allied Protector
+Operation Desert Storm
+Operation Desert Shield
+Operation Desert Fox
+Operation Desert Sabre
+Operation Desert Shield
+Operation Granby
+Operation Intruder
+Operation Cobra
+Operation Desert Fox
+Operation Desert Shield
+Operation Desert Storm
+Operation Desert Sabre
+Operation Desert Strike
+Operation Enduring Freedom
+Operation Iraqi Freedom
+Operation Junction City
+Operation Starvation
+Operation Deliverance
+Operation Enduring Freedom
+Operation Overlord
+Operation Foxley
+Operation Chromite
+Operation Iron Falcon
+Operation Crossbow
+Operation Chastise
+Operation Dynamo
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u list-of 10 "nazi battalions"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Nederland
+Norwegen
+Nordland
+Norwegisches
+Niederländische
+Niederlande
+Niederländischen
+Niedersachsen
+Niedersächsische
+Nordost
+Neltume Battalion
+Nordland Regiment
+Nachtigall Battalion
+Nederland Brigade
+Nachtjager Reconnaissance Battalion
+Nordland SS-Panzer Battalion
+Neuhammer Company
+Nordland Supply Battalion
+Norwegische Militärbefeh
+Legion Niepce
+Afrika Korps
+Leibstandarte SS Adolf Hitler
+Totenkopf
+Das Reich
+Polizei
+Wiking
+Leibstandarte SS Adolf Hitler
+Leibstandarte SS Adolf Hitler
+Leibstandarte SS
+Schutzstaffel
+Leibstandarte SS Adolf Hitler
+SS-Totenkopfverbände
+SS-Polizei Division
+SS-Führungshauptamt
+SS-Wirtschafts-Verwaltungshaupt
+1st SS Division Leibstandarte SS Adolf Hitler
+3rd SS Division Totenkopf
+10th SS Panzer Division Frundsberg
+12th SS Panzer Division Hitlerjugend
+1st SS Division Das Reich
+2nd SS Division Das Reich
+3rd SS
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "fictional continents"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+The Americas
+Atlantis
+Pangea
+Midgard
+Mundus
+Tamriel
+Korriban
+Narnia
+Svartalfheim
+Lemuria
+Arda
+Atlantis
+Avalon
+Arabia
+Antarctica
+Antipodea
+Amazonia
+Atlantica
+Eden
+Xanadu
+Zarkandar
+Xanadul
+Sollasia
+Gondwanaland
+Kubo-Gakai
+Pangaea
+Lemuria
+Atlantis
+Terraria
+Avalon
+R'lyeh
+Xanthu
+The Lone
+Anarres
+Amazonia
+Atlantis
+Pangaea
+Lemuria
+Pangea
+Avalon
+Avalon
+Atlas
+Atlantis
+Avalon
+Atlas
+Agartha
+Antarctica
+Xanadu
+Zanadu
+Xanadon
+Xanadana
+Zanadana
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "sci-fi novels" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Brave New World
+The Hitchhiker's Guide to the Galaxy
+Stranger in a Strange Land
+1984
+Ender's Game
+The Moon Is a Harsh Mistress
+The Forever War
+Fahrenheit 451
+Starship Troopers
+Logan's Run
+The order changed when
+Foundation
+Gödel
+Escher
+Bach
+Pascal
+Spacetime Emergence
+Bastard
+Miles
+The Martian
+The Wizardry Compiled
+The Mote in God's Eye
+Eon
+Eleanor Rigby
+The End of Eternity
+Einstein's Bridge
+Assemblers of Infinity
+The Eternal Flame
+The Scarab in the Sand
+Fuzzy Sapiens
+The Stars My Destination
+Earth Abides
+Rendezvous with Rama
+The Fifth Element
+The Diving Bell and the Butterfly
+The Dispossessed
+Ishmael
+The Hitchhiker
+Earth is Room Enough
+The War of the Worlds
+The Demolished Man
+The Caves of Steel
+The Stars in Their Courses
+The Shrinking Man
+The Time Machine
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "ugliest animals" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Elephant Seal
+New Zealand Fur Seal
+Bearded Pig
+Porpoise
+Rhinoceros
+Walrus
+Orangutan
+Platypus
+Armadillo
+Pangolin
+Goblin Shark
+Bushbaby
+Capybara
+Coypu
+Coelacanth
+Coati
+Cephalopod
+Aardvark
+Ankole-Watusi
+Anteater
+Armadillidium
+Aye-aye
+Naked mole-rat
+Star-nosed mole
+Siamang
+Pig-nosed turtle
+Marabou stork
+Mola mola
+Miyazaki Turtle
+Mediterranean mussel
+Mole cricket
+Mudskipper
+Echidna
+Eland
+Emu
+Ermine
+Eye-ringed Parakeet
+Exocet Missile
+Eyelash Viper
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "most disgusting foods" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Raw Liver
+Raw Horseflesh
+Jujube
+Muktuk
+The Black Pudding
+Haggis
+Bubble and Squeak
+Fugu
+Balut
+Hakarl
+Fugu Fish
+Bamboo Worms
+Horsemeat
+Hákarl
+Stingray
+Mopane Worms
+Fried Tarantula
+Beef Heart
+Canned dog
+Escargot
+Coca-Cola®
+Bubble tea
+Beer
+Burger King®
+H. Pylori
+Haggis Pizza
+Haggis Pop Tart®
+Kopi Luwak
+Scorpion
+Casu Marzu
+Artisanal Haggis
+Stinkheads
+Tuna Eyeball
+Surströmming
+Stinky Tofu
+Eel
+Fermented shark
+Goose liver
+Gut soup
+Head cheese
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "fictional appliances" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+DangerMouse
+DarthVader
+Doug
+Dinosaure
+Doraemon
+Dalek
+Dexter
+Doc Brown
+Daffy Duck
+Darth Maul
+Astro-Fruit-Juicer
+Daffy-Donut-Oven
+Fruit-Blender
+Can-Oven
+Jam-O-Matic
+Soda-Machine
+Donut-Oven
+Fruit-Bl
+Deep Fryer
+Microwave
+Toaster
+Vacuum Cleaner
+Washing Machine
+Air Conditioner
+Fire Extinguisher
+Floor Polisher
+Refrigerator
+Clothes Dryer
+Smeg Fridge
+Mr.Bean's Washing Machine
+Star Trek's Replicators
+Back to the Future's Delorean
+The Jetsons' Hovercraft
+Homer's Toaster
+Homer Simpson's Beer-can-telephone
+Willy Wonka's Chocolate Factory
+Nanobot
+G-Machine
+Doombot
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "fictional objects" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+The One Ring
+The Philosopher's Stone
+The Flying Dutchman
+Babel Fish
+Death Star
+The Forbidden Fruit
+The Spear of Longinus
+The Ark of the Covenant
+The Ark
+The Holy Grail
+Kryptonite
+Red October
+Beetle
+Blimp
+X-Wing
+Stormtrooper uniform
+Flux Capacitor
+Flying car
+Spaceship
+Longinus Spear
+Dark Crystal
+Doomsday machine
+Morty's helmet
+Disney's Aladdin
+Sonic Screwdriver
+Doctor Who's TARDIS
+Red Dwarf
+God's Hammer
+The L.A. Guns
+Battlestar Galactica
+Light saber
+Tardis
+Time Machine
+Locket
+Ring
+Portal
+Ship
+Goblet of Fire
+Hoverboard
+Wand
+Arkenstone
+Obsidian Goblet
+Ring of Power
+Palantír
+Sting
+Hobbit Crossbow
+Galadriel's Mirror
+Hobbit-hole
+Ent Draught
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 10 "magic powers" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Healing
+Levitation
+Necromancy
+Invulnerability
+Invisibility
+Resistance to Magic
+Super Strength
+Precognition
+Control of the Weather
+Master of All Elemental Magic
+resurrection
+stealth
+invisibility
+telepathy
+flying
+super speed
+levitation
+telekinesis
+super strength
+clairvoyance
+Control Fire
+Control Water
+Walking through walls
+Teleportation
+Flying
+Telekinesis
+Pyrokinesis
+Conjuring
+mind reading
+predicting the future
+teleportation
+time travel
+healing
+matter transformation
+nephalem power
+Magic
+Flight
+Absorption
+Intangibility
+Ability to Control the Element of Fire
+Transmutation
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena list-of 30 "onomatopoeia" | uniqnosort
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Tap
+Slap
+Smack
+Crunch
+Chomp
+Shhh
+Ouch
+Bzzzz
+Boom
+Crash
+Quack
+Splash
+Sizzle
+Hiss
+Zip
+Zap
+Buzz
+Growl
+Screech
+Burp
+R
+Bling
+Biff
+Blurt
+Bark
+Bla-Bla
+Bing
+Bam
+Bang
+Blort
+Biss
+Kerplop
+Kreef
+Klick
+Klong
+Klunk
+Klopp
+Klok
+Kloo
+Klonk
+Klop
+K
+Klingon
+Ee-aw
+Brrrrrrrr
+Tarrah
+Zing
+Dink
+Boing
+Sproing
+Zork
+Dum-dum
+Ding
+Wallop
+Thud
+Jab
+Ker-thunk
+Gleeble-glurk
+Plop
+Ahem
+Flump
+Plank
+Rattle
+Fshhhh
+Crunnch
+Sputter
+Flub
+Splort
+Grarr
+Aaaaaah
+#+end_src
+

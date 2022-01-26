@@ -1,0 +1,31 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Thin-client for Pen.el. Just load pen-client.el
+#+DATE: <2021-11-20>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen emacs
+
+** Summary
+Here is a thin-client for emacs.
+
++ Code :: http://github.com/semiosis/pen.el/blob/master/src/pen-client.el
+
+It uses the docker container as a server.
+
+You will still need to add the scripts directory to your path and add appropriate keys to =~/.pen= as shown in the readme.
+
+https://github.com/semiosis/pen.el/tree/master/scripts
+
+https://github.com/semiosis/pen.el/blob/master/README.org
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/tFJkpnEI2maDoRCBqZwKP375f" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/tFJkpnEI2maDoRCBqZwKP375f.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/tFJkpnEI2maDoRCBqZwKP375f.js" id="asciicast-tFJkpnEI2maDoRCBqZwKP375f" async></script>
+#+END_EXPORT

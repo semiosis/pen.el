@@ -1,0 +1,14 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: A collation step function for temperature, to improve Codex results
+#+DATE: <2021-08-25>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: openai codex gpt pen
+
+** Summary
+I use Codex to help me write some improvements
+to the prompt generation.

@@ -1,0 +1,183 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: More interactive imaginary infocom games
+#+DATE: <2021-12-25>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen infocom interactive-fiction games
+
+** Summary
+I build an interactive infocom emulator with Codex.
+
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-infocom-game-interpreter-2.prompt
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/bIABQXkgZoT9npyJkneK25Opp" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/bIABQXkgZoT9npyJkneK25Opp.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/bIABQXkgZoT9npyJkneK25Opp.js" id="asciicast-bIABQXkgZoT9npyJkneK25Opp" async></script>
+#+END_EXPORT
+
+** Transcript
+#+BEGIN_SRC text -n :async :results verbatim code
+  THE HITCHHIKER'S GUIDE TO THE GALAXY
+  Infocom interactive fiction - a science fiction story
+  Copyright (c) 1984 by Infocom, Inc. All rights reserved.
+  Release 60 / Serial number 861002
+  
+  You wake up.
+  
+  Location: Bedroom, in the bed
+  
+  The room is spinning very gently round your head. Or at least it
+  would be if you could see it which you can't.
+  
+  > get out of bed
+  Very difficult, but you manage it.
+  
+  Location: Bedroom
+  
+  The room is still spinning. It dips and sways a little. The light is off and you can't see.
+  
+  > turn on light
+  Good start to the day. Pity it's going to be the worst one of your life. The
+  light is now on.
+  
+  Location: Bedroom
+  
+  The bedroom is a mess.
+  It is a small bedroom with a faded carpet and old wallpaper. There is a
+  washbasin, a chair with a tatty dressing gown slung over it, and a window with
+  the curtains drawn. Near the exit leading south is a phone.
+  There is a flathead screwdriver here. (outside the bed)
+  There is a toothbrush here. (outside the bed)
+  
+  > take all items
+  You take the screwdriver and toothbrush.
+  
+  Location: Bedroom
+  
+  The bedroom is a mess.
+  It is a small bedroom with a faded carpet and old wallpaper. There is a
+  washbasin, a chair with a tatty dressing gown slung over it, and a window with
+  the curtains drawn. Near the exit leading south is a phone.
+  
+  > get out of bed
+  Very difficult, but you manage it.
+  
+  Location: Bedroom
+  
+  The room is still spinning. It dips and sways a little. The light is on.
+  
+  > put on gown
+  You manage to put on the gown and get out of bed.
+  
+  Location: Bedroom
+  
+  The room is still spinning. It dips and sways a little. The light is on.
+  It feels like you have a box of aspirin in your pocket.
+  
+  > get aspirin from pocket, and eat one
+  You take an aspirin out of your pocket and eat it.
+  
+  Location: Bedroom
+  
+  The room is still spinning. It dips and sways a little. The light is on.
+  You feel slightly more confident now.
+  You hear rumbling outside your house.
+  
+  > open the curtains
+  You open the curtains and look out.
+  You can see a bulldozer making its way to your house.
+  
+  Location: Bedroom
+  
+  The bright sun is shining into the room.
+  
+  > get dressed and clean the room
+  You get dressed and clean the room.
+  
+  Location: Bedroom
+  
+  You have fully recovered now from your headache and the room is no longer spinning.
+  You hear a rumbling noise outside your house.
+  
+  > leave bedroom
+  You leave the bedroom.
+  
+  Location: Living Room
+  
+  There is a table here.
+  The living room is clean and tidy, but there is no food or drink here.
+  There is a cat here.
+  There is a window here.
+  There is an exit here.
+  The exit leads to the front of the house.
+  
+  > feed the cat, open the front door and stand on the front porch
+  You feed the cat, open the front door and stand on the front porch.
+  
+  Location: Front Porch
+  
+  You are on the front porch of the house.
+  There is a front door here.
+  There is a mailbox here.
+  There is a leaflet here.
+  You can see a bulldozer charging towards your house.
+  
+  > read the leaflet
+  The leaflet reads:
+  
+  CONGRATULATIONS - The prize this week is the Toaster
+  
+  > open mailbox
+  The mailbox is empty.
+  
+  The bulldozer is very close now. It looks like it will destroy your house if you wait too much longer.
+  
+  > lie down in front of the bulldozer and call my uncle
+  You lie down in front of the bulldozer and call for your uncle.
+  It is a shame that you are going to die.
+  
+  Location: Front Porch
+  
+  The front porch of the house is in a state of ruin. The bulldozer has knocked it over.
+  There is a front door here.
+  There is a mailbox here.
+  There is a leaflet here.
+  The bulldozer is in the house.
+  
+  > look at the sky
+  It is a bright blue with a few white clouds.
+  There are large spaceships flying overhead.
+  
+  Location: Front Porch
+  
+  The front porch of the house is in a state of ruin. The bulldozer has knocked it over.
+  There is a front door here.
+  There is a mailbox here.
+  There is a leaflet here.
+  The bulldozer is in the house.
+  
+  > wait for help
+  The bulldozer has stopped. A man comes out of the house.
+  
+  Location: Front Porch
+  
+  The front porch of the house is in a state of ruin. The bulldozer has knocked it over.
+  There is a front door here.
+  There is a mailbox here.
+  There is a leaflet here.
+  The bulldozer is in the house.
+  The man is wearing a red shirt and a red hat and has a very large moustache. He looks very confused.
+  
+  > ask the man why he knocked down my house
+  <END>
+#+END_SRC
+
+** Improvement ideas
+- Rather than using vim to edit intermediate variables, I should use another emacs server.

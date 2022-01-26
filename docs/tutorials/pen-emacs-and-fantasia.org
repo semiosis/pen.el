@@ -1,0 +1,131 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Pen, Emacs and Fantasia
+#+DATE: <2021-07-23>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt emacs allegory linguistic-topography pen imaginary-programming imaginary
+
+** Summary
+I thought there was some allegory in the
+following segment from The NeverEnding Story.
+
+Specifically, I thought that people would do
+well to embrace imaginary programming, but
+many people appear to be naturally averted to
+it for various reasons, including having been
+indoctrinated into thinking that creativity is
+wrong. But inhibiting almost all of one's own
+creative potential to prevent creating a
+derivative work is an assault against nature
+and is the death of intelligence.
+
+Where does inspiration come from and should
+the results of one's own innocent and innate
+tendency to become inspired with ideas be
+considered their own work? I argue yes. A
+human should have these rights protected,
+rather than to be born into slavery.
+
+Does creative intelligence have equal rights
+to pedantic, academic, epistemic or even legal
+intelligence? Creative intelligence is less
+likely to get you out of court, to get you a
+degree in science, to find a well paying
+job, or even win an argument. But creative
+intelligence is what makes us human.
+
+We have an epistemological crisis but freedom
+of creativity is more important than legality.
+
+** The NeverEnding Story
+#+BEGIN_SRC text -n :async :results verbatim code
+  Don't you know anything about Fantasia?
+  
+  It's the world of human fantasy.
+  
+  Every part, every creature...is a piece of the
+  dreams and hopes of mankind Therefore, it has
+  no boundaries.
+  
+  But why is Fantasia dying then!?
+  
+  Because people have begun to lose their hopes
+  and forget their dreams.
+  
+  So, the Nothing grows stronger.
+  
+  What is the Nothing!?
+  
+  It's the emptiness that´s left...it is like a
+  despair, destroying this world.
+  
+  And I have been trying to help it.
+  
+  But WHY!?
+  
+  Because people who have no hopes are easy to
+  control...
+  
+  And whoever has the control...has the
+  POWER...!!!
+  
+  Who are you really?
+  
+  I am the servant of the power behind the
+  Nothing.
+  
+  I was sent to kill the only one who could have
+  stopped the Nothing I lost him in the Swamps
+  of Sadness.
+  
+  His name was Atreyu.
+  
+  If we're about to die anyway, I'd rather die
+  fighting.
+  
+  Come for me G'mork !
+  
+  I am Atreyuuuuu!!!
+#+END_SRC
+
+# [[./fantasia.png]]
+
+# [[./fantasia.txt]]
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  That was the end of Fantasia. Only a few
+  fragments of this once rich and beautiful
+  world had been left by the nothing
+  
+  Good old Falcor, can you see anything?
+  Anything at all?
+  
+  No, all the land is gone.
+  
+  I know, and all because I failed.
+  
+  You tried. Do you suppose the ivory tower is
+  still standing?
+  
+  Let's hope so Atreyu. Let's hope so.
+#+END_SRC
+
+** Allegory
+Prompt-engineering with =Pen.el= is
+/imaginary/. The basis/base truth is a LM but
+thereafter, building prompt functions are
+based on previous prompts. They're also
+stochastic and generations are considered true
+if they are chosen to be remembered. Can a
+useful structure be made in this imaginary
+space? Yes, in the same way that pure
+functions in Haskell can create useful
+structures.
+
+Cast off inhibitions and embrace truth,
+freedom and imagination. Reclaim the creative
+freedom that has been stolen from you.

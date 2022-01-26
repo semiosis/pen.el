@@ -1,0 +1,109 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Generate YASnippet templates with Codex
+#+DATE: <2021-10-12>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: codex pen emacs
+
+** Summary
+I demonstate snippet generation using Codex.
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Generate a YASnippet"
+  doc: "Given a language and a feature, generate a snippet"
+  prompt-version: 1
+  prompt: |+
+    # This is a snippet template example of a <q:name> in <mode>:
+    cd ~/.emacs.d/yasnippet/snippets/<sl:mode>
+    cat <sl:mode>_<sl:name> <<EOD
+    <:pp># -*- mode: snippet -*-
+    # name: <sl:name>
+    # --
+  engine: "OpenAI Codex"
+  temperature: 0.3
+  max-generated-tokens: 200
+  top-p: 1.0
+  stop-sequences:
+  - EOD
+  cache: on
+  vars:
+  - mode
+  - name
+  examples:
+  - "haskell"
+  - "catamorphism"
+  filter: off
+  completion: off
+  insertion: on
+#+END_SRC
+
+** Demo
+*** Haskell
+=main=
+#+BEGIN_SRC snippet -n :async :results verbatim code
+  # -*- mode: snippet -*-
+  # name: main
+  # --
+  main = do
+      -- put your code here
+#+END_SRC
+
+*** Python
+=for=
+#+BEGIN_SRC snippet -n :async :results verbatim code
+  for ${1:i} in ${2:range($3)}:
+      $0
+#+END_SRC
+
+=while=
+#+BEGIN_SRC snippet -n :async :results verbatim code
+  while ${1:condition}:
+      ${0:pass}
+#+END_SRC
+
+=class=
+#+BEGIN_SRC snippet -n :async :results verbatim code
+  class ${1:NAME}:
+      def __init__(self, ${2:arguments}):
+          self.${3:state} = ${2:arguments}
+  
+      def __str__(self):
+          return '${1:NAME}(${2:state})'
+#+END_SRC
+
+*** Full Python snippets
+#+BEGIN_SRC snippet -n :async :results verbatim code
+  # -*- mode: snippet -*-
+  # name: class
+  # --
+  class $1(object):
+      
+      def __init__(self, $2):
+          $0
+#+END_SRC
+
+** Java
+=class=
+#+BEGIN_SRC snippet -n :async :results verbatim code
+  # -*- mode: snippet -*-
+  # name: class
+  # --
+  class ${1:ClassName} {
+    public ${1:ClassName}() {
+      // TODO: add your own switch statements for each variable
+    }
+  }
+#+END_SRC
+
+*** Asciinema demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/xui3Di5pyJzx43TMU5e52utqO" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/xui3Di5pyJzx43TMU5e52utqO.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/xui3Di5pyJzx43TMU5e52utqO.js" id="asciicast-xui3Di5pyJzx43TMU5e52utqO" async></script>
+#+END_EXPORT

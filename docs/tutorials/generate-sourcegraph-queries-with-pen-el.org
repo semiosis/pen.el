@@ -1,0 +1,92 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Generate sourcegraph queries with Pen.el
+#+DATE: <2022-01-03>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen code-generation codex openai
+
+** Summary
+I generate sourcegraph queries using Codex and Pen.el
+
+** prompt
++ Code :: http://github.com/semiosis/prompts/blob/master/prompts/generate-sourcegraph-query-from-natural-language-1.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Generate sourcegraph query from natural language"
+  doc: "Generate sourcegraph query from natural language"
+  prompt-version: 1
+  prompt: |-
+      https://docs.sourcegraph.com/code_search/tutorials/examples
+      <delim>
+      Find private keys and GitHub access tokens checked in to code
+      Query: (-----BEGIN [A-Z ]*PRIVATE KEY------)|(("gh|'gh)[pousr]_[A-Za-z0-9_]{16,}) patternType:regexp case:yes
+      <delim>
+      Recent security-related changes on all branches
+      Query: type:diff repo:@*refs/heads/ after:"5 days ago" \b(auth[^o][^r]|security\b|cve|password|secure|unsafe|perms|permissions)
+      <delim>
+      Admitted hacks and TODOs in app code
+      Query: -file:\.(json|md|txt)$ hack|todo|kludge|fixme
+      <delim>
+      Removal of TODOs in the repository commit log
+      Query: repo:^github\.com/sourcegraph/sourcegraph$ type:diff select:commit.diff.removed TODO
+      <delim>
+      New usages of a function
+      Query: type:diff after:"1 week ago" \.subscribe\( lang:typescript
+      <delim>
+      Find multiple terms in the same file, like testing of HTTP components
+      Query: repo:github\.com/sourcegraph/sourcegraph$ (test AND http AND NewRequest) lang:go
+      <delim>
+      Recent quality related changes on all branches (customize for your linters)
+      Query: repo:@*refs/heads/:^master type:diff after:"1 week ago" (eslint-disable)
+      <delim>
+      Recent dependency changes
+      Query: file:package.json type:diff after:"1 week ago"
+      <delim>
+      Files that are Apache licensed
+      Query: licensed to the apache software foundation select:file
+      <delim>
+      Only repositories with recent dependency changes
+      Query: file:package.json type:diff after:"1 week ago" select:repo
+      <delim>
+      Search changes in a files that contain a keyword
+      Query: repo:^github\.com/sourcegraph/sourcegraph$ type:diff file:contains.content("golang\.org/x/sync/errgroup
+      <delim>
+      <natural language>
+      Query: 
+  engine: "OpenAI Codex"
+  temperature: 0.3
+  max-generated-tokens: "(* 2 prompt-length)"
+  top-p: 1.0
+  stop-sequences:
+  - "<delim>"
+  cache: on
+  vars:
+  - "natural language"
+  examples:
+  - "Recent changes to readme files"
+  filter: on
+  completion: off
+  insertion: off
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -nj pf-generate-sourcegraph-query-from-natural-language/1 "Recent changes to readme files"
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  repo:^github\.com/sourcegraph/sourcegraph$ type:diff file:readme.md after:"1 week ago"
+  repo:^github\.com/sourcegraph/sourcegraph$ type:diff file:readme after:"1 week ago"
+  type:diff repo:^github\.com/sourcegraph/sourcegraph$ file:readme after:"1 week ago"
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/2jKiTvRAUWmY8g4J6q97PQ976" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/2jKiTvRAUWmY8g4J6q97PQ976.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/2jKiTvRAUWmY8g4J6q97PQ976.js" id="asciicast-2jKiTvRAUWmY8g4J6q97PQ976" async></script>
+#+END_EXPORT

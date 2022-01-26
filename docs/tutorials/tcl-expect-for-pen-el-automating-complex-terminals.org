@@ -1,0 +1,40 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: tcl/expect for Pen.el -- automating complex terminals
+#+DATE: <2021-12-27>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen expect codex openai
+
+** Summary
+I add tcl/expect to Pen.el and provide a DSL
+to automate the terminal using expect.
+
+The plan is to automate tmuxified and
+codexified terminals using expect, generated
+expectations and automated generated input
+(send).
+
++ code :: http://github.com/semiosis/pen.el/blob/master/scripts/pen-x
+
+** Demo
+- =pet= starts emacs' =term= inside the docker container
+- =pen-x= is the expect DSL
+
+The following command runs the expect DSL
+inside of emacs =term=. It wraps bash and then
+automates some input.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  pet pen-x -sh bash -e mele -s "echo hi" -c m -i
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/KALNmKf45wzcNoOJIdzKYgM3K" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/KALNmKf45wzcNoOJIdzKYgM3K.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/KALNmKf45wzcNoOJIdzKYgM3K.js" id="asciicast-KALNmKf45wzcNoOJIdzKYgM3K" async></script>
+#+END_EXPORT

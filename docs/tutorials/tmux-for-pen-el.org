@@ -1,0 +1,41 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: tmux for Pen.el
+#+DATE: <2021-12-15>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen openai
+
+** Summary
+I add tmux support for Pen.el. This enables
+you to scrape the screen and further automate
+the terminal in combination with prompt
+creation.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/DgBuxY8EegSGDw3Z1cQjH0nhQ" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/DgBuxY8EegSGDw3Z1cQjH0nhQ.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/DgBuxY8EegSGDw3Z1cQjH0nhQ.js" id="asciicast-DgBuxY8EegSGDw3Z1cQjH0nhQ" async></script>
+#+END_EXPORT
+
+** A prompt that utilises this
++ Prompt :: http://github.com/semiosis/prompts/blob/master/prompts/get-documentation-for-syntax-given-screen-2.prompt
+
+Given a view of the screen, get the
+documentation for the syntax form.
+
+This prompt will get documentation for
+anything, based alone on the context that the
+terminal provides.
+
+*** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/8hqcbMkEJbWhcp1ao3qR0jMrZ" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/8hqcbMkEJbWhcp1ao3qR0jMrZ.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/8hqcbMkEJbWhcp1ao3qR0jMrZ.js" id="asciicast-8hqcbMkEJbWhcp1ao3qR0jMrZ" async></script>
+#+END_EXPORT

@@ -1,0 +1,183 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Multiple Pen.el daemons for asynchronous LLM prompting from an LSP server
+#+DATE: <2021-12-28>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt codex pen
+
+** Summary
+I add an emacs daemon manager for =Pen.el= so
+the LSP server can make multiple prompting
+requests at the same time, asynchronously.
+
+This is incredibly useful for the LSP server.
+
+I add support to the docker container to
+demonstate usage of the LSP server.
+
+** The definitive demo
+The daemons are working perfectly in harmony!
+Now when supplying =--pool= to =penf=, it will
+delegate the prompting task to a random emacs
+daemon.
+
+The speedup with simultaneous prompts in emacs
+is dramatic, able to display documentation for
+as many different words as you want
+simultaneously without any queuing.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/oRhz8wWqlrAXPQjaCjTOHjeuY" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/oRhz8wWqlrAXPQjaCjTOHjeuY.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/oRhz8wWqlrAXPQjaCjTOHjeuY.js" id="asciicast-oRhz8wWqlrAXPQjaCjTOHjeuY" async></script>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/ucCTC2hOxWeZGP6HJomPjsMgQ" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/ucCTC2hOxWeZGP6HJomPjsMgQ.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/ucCTC2hOxWeZGP6HJomPjsMgQ.js" id="asciicast-ucCTC2hOxWeZGP6HJomPjsMgQ" async></script>
+#+END_EXPORT
+
+# #+BEGIN_EXPORT html
+# <!-- Play on asciinema.com -->
+# <!-- <a title="asciinema recording" href="https://asciinema.org/a/N19CRtNMF2n1ckZb5AZxO6uoO" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/N19CRtNMF2n1ckZb5AZxO6uoO.svg" /></a> -->
+# <!-- Play on the blog -->
+# <script src="https://asciinema.org/a/N19CRtNMF2n1ckZb5AZxO6uoO.js" id="asciicast-N19CRtNMF2n1ckZb5AZxO6uoO" async></script>
+# #+END_EXPORT
+
+** Starting the pen lsp server from outside the docker container
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  pen sh pen-lsp
+#+END_SRC
+
+Or simply:
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  pen lsp
+#+END_SRC
+
+It is a repl-based LSP server.
+
+*** Configure it by simply editing =efm-langserver-config.yaml=
+Place =efm-langserver-config.yaml= inside your =pen.el/config= directory
+or place it inside of =~/.pen=.
+
+** Code
+*** elisp
++ =pen-support.el= :: http://github.com/semiosis/pen.el/blob/master/src/pen-support.el
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defun pen-daemon-name ()
+    (let ((d (daemonp)))
+      (if d
+          (if (stringp d)
+              (f-filename (daemonp))
+            ;; Sometimes it's a bool
+            "DEFAULT")
+        "")))
+  
+  (defmacro pen-eval-for-host (daemon-name &rest body)
+    `(let ((result (progn ,@body)))
+       (shut-up
+         (let ((fp (concat "/tmp/eval-output-" ,daemon-name ".txt")))
+           (if result
+               (write-to-file (str result) fp)
+             (write-to-file "" fp))))
+       nil))
+#+END_SRC
+
+*** shell
++ =pen-e= :: http://github.com/semiosis/pen.el/blob/master/scripts/pen-e
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  mkdir -p $HOME/.pen/pool/available
+  
+  # for each
+  for i in $(seq 1 $n); do
+      pool_socket="pen-emacsd-$i"
+      cmd1 pen-e -D "$pool_socket" sd 1>&2
+      pen-e -D "$pool_socket" sd
+      if pen-e -D "$pool_socket" running; then
+          touch $HOME/".pen/pool/available/$pool_socket"
+      fi
+   done
+#+END_SRC
+
++ =penf= :: http://github.com/semiosis/pen.el/blob/master/scripts/pen
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  --parallel|--pool) {
+      export USE_POOL=y
+      shift
+  }
+  ;;
+#+END_SRC
+
++ =eval.sh= :: http://github.com/semiosis/pen.el/blob/master/scripts/eval.sh
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  if test "$USE_POOL" = "y"; then
+      # Just take the first one
+      for socket_fp in $HOME/.pen/pool/available/pen-emacsd-*; do
+          SOCKET="$(basename "$socket_fp")"
+          break
+      done
+  
+      rm -f $HOME/.pen/pool/available/$SOCKET
+  fi
+#+END_SRC
+
+*** language server config
+- =efm-langserver-config.yaml= :: http://github.com/semiosis/pen.el/blob/master/config/efm-langserver-config.yaml
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  glossary1: &glossary1
+    # The impementation is a combination of documentation and hover
+    # documentation is provided to the thing under the cursor
+  
+    # The rest go to the hover provider as signature docs
+    hover-command: 'pen-ci -f -a penf -u -nj --pool pf-define-word-for-glossary/1'
+    hover-stdin: true
+    # hover-type: "markdown"
+    # hover-type: "plaintext"
+    format-command: 'pen-pretty-paragraph'
+#+END_SRC
+
+=pen-ci -f -a= is used to make =efm-
+langserver= asynchronous, along with =tmux
+neww= for running the command asynchronously.
+
+** Demo
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  penf --pool pf-generic-completion-50-tokens/1 "Once upon"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+["PEN_MODEL: DummyModel", "prompt: Once upon", "n: 1", "top_k: 1", "top_p: 1", "log_probs: 10", "stop_sequences: ['
+#+end_src
+
+*** First attempt at running LSP server on emacs daemon pool
+
+- The daemon selection needs a little more work
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/jsBLH1EJvaHRbPfp9gbQYDV5j" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/jsBLH1EJvaHRbPfp9gbQYDV5j.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/jsBLH1EJvaHRbPfp9gbQYDV5j.js" id="asciicast-jsBLH1EJvaHRbPfp9gbQYDV5j" async></script>
+#+END_EXPORT
+
+*** Second attempt - Trying to get multiple prompt functions happening simultaneously
+Initially I was allocating the first available
+emacs daemon, but for some reason, it was
+still running in serial.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/wfeYOsnE5B815I7KNyHRxNvBN" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/wfeYOsnE5B815I7KNyHRxNvBN.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/wfeYOsnE5B815I7KNyHRxNvBN.js" id="asciicast-wfeYOsnE5B815I7KNyHRxNvBN" async></script>
+#+END_EXPORT

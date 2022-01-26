@@ -1,0 +1,105 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: How to use Pen.el to autocomplete your code
+#+DATE: <2021-07-31>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt emacs openai pen
+
+** Summary
+I will just do some demonstrations on actually
+using =Pen.el= from within emacs.
+
++ Project code :: https://github.com/semiosis/pen.el/
+
+** Config
+*** Pen map and Acolyte-mode map
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (define-key pen-map (kbd "M-1") #'pen-company-filetype-word)
+  (define-key pen-map (kbd "M-2") #'pen-company-filetype-words)
+  (define-key pen-map (kbd "M-3") #'pen-company-filetype-line)
+  ;; company-mode long
+  (define-key pen-map (kbd "M-4") #'pen-company-filetype-long)
+  ;; This uses ivy instead of company to present multiple lines
+  (define-key pen-acolyte-minor-mode-map (kbd "M-l") 'pen-complete-long)
+#+END_SRC
+
+** Pen autocompletion modes
+*** Word
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defmacro pen-word-complete (&rest body)
+    "This wraps around pen function calls to make them complete long"
+    `(eval
+      `(let ((max-tokens 1)
+             (stop-sequence "##long complete##")
+             (stop-sequences '("##long complete##"))
+             (n-collate 1)
+             (n-completions 40))
+         ,',@body)))
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/S9dRnpubg37QIPETgssrL7YKr" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/S9dRnpubg37QIPETgssrL7YKr.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/S9dRnpubg37QIPETgssrL7YKr.js" id="asciicast-S9dRnpubg37QIPETgssrL7YKr" async></script>
+#+END_EXPORT
+
+*** Words
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defmacro pen-words-complete (&rest body)
+    "This wraps around pen function calls to make them complete long"
+    `(eval
+      `(let ((max-tokens 5)
+             (stop-sequence "##long complete##")
+             (stop-sequences '("##long complete##"))
+             (n-collate 1)
+             (n-completions 20))
+         ,',@body)))
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/kbLWcmwHMNYxIeC2AUfgmqZqN" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/kbLWcmwHMNYxIeC2AUfgmqZqN.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/kbLWcmwHMNYxIeC2AUfgmqZqN.js" id="asciicast-kbLWcmwHMNYxIeC2AUfgmqZqN" async></script>
+#+END_EXPORT
+
+*** Line
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defmacro pen-line-complete (&rest body)
+    "This wraps around pen function calls to make them complete line only"
+    `(eval
+      `(let ((max-tokens 100)
+             (stop-sequence "\n")
+             (stop-sequences '("\n")))
+         ,',@body)))
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/X9oeQhXxmRZYf1isnfXXnu56O" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/X9oeQhXxmRZYf1isnfXXnu56O.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/X9oeQhXxmRZYf1isnfXXnu56O.js" id="asciicast-X9oeQhXxmRZYf1isnfXXnu56O" async></script>
+#+END_EXPORT
+
+*** Long
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defmacro pen-long-complete (&rest body)
+    "This wraps around pen function calls to make them complete long"
+    `(eval
+      `(let ((max-tokens 200)
+             (stop-sequence "##long complete##")
+             (stop-sequences '("##long complete##")))
+         ,',@body)))
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/PNDrLo9KQ5MdKzGPCEb46Fqn6" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/PNDrLo9KQ5MdKzGPCEb46Fqn6.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/PNDrLo9KQ5MdKzGPCEb46Fqn6.js" id="asciicast-PNDrLo9KQ5MdKzGPCEb46Fqn6" async></script>
+#+END_EXPORT

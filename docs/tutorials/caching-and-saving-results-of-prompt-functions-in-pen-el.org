@@ -1,0 +1,37 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Caching and saving results of prompt functions in Pen.el
+#+DATE: <2021-07-22>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen emacs docker imaginary-programming imaginary
+
+** Summary
+All prompt functions are saved and cached in Pen.el.
+
+This means that using GPT-3 and other LMs via
+emacs is run-and-pay once and you can rely on
+prompt functions as part of your coding, and
+have them persist.
+
+This also means ultimately that people can
+collaborate on generations via Pen.el and work
+towards a coding model which is completely
+imaginary and collaborative. All that is
+required is to conjoin emacs hash databases
+via the internet and we have a collaborative
+GPT-3 environment that includes both prompts
+p2p and generations p2p.
+
++ Code :: http://github.com/semiosis/pen.el
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/MhOU0eMnJsRpXf2Ak9YStPlz8" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/MhOU0eMnJsRpXf2Ak9YStPlz8.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/MhOU0eMnJsRpXf2Ak9YStPlz8.js" id="asciicast-MhOU0eMnJsRpXf2Ak9YStPlz8" async></script>
+#+END_EXPORT

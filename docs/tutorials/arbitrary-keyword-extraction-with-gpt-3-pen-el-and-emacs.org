@@ -1,0 +1,113 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Arbitrary keyword extraction with GPT-3, Pen.el and emacs
+#+DATE: <2021-08-01>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen gpt emacs nlp
+
+** Summary
+Using a mixture of emacs lisp, sed and
+prompts, I have made a reliable keyword
+extractor for emacs.
+
+This is useful to be fed into other prompt
+functions, say for defining a word with the
+context which is given by the keyword extractor.
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: keyword extraction
+  prompt-version: 6
+  prompt: |+
+    Text and keywords:
+    Text: Ethereum is a blockchain
+    Keywords: blockchain, smart contracts, Turing-complete, distributed ledger
+    ###
+    Text and keywords:
+    Text: <1>
+    Keywords:
+  engine: davinci
+  n-collate: 1
+  n-completions: 3
+  temperature: 0.3
+  max-tokens: 1000
+  top-p: 1
+  stop-sequences:
+  - "\n"
+  vars:
+  - text
+  var-defaults:
+  - "(pen-words 40 (pen-selection-or-surrounding-context))"
+  postprocessor: "pen-s list2args"
+  examples:
+  - |-
+    GPT-3 showed that language can be used to instruct a large neural network
+    to perform a variety of text generation tasks. Image GPT showed that the
+    same type of neural network can also be used to generate images with high
+    fidelity. We extend these findings to show that manipulating visual
+    concepts through language is now within reach.
+  external: extract-keyphrases
+#+END_SRC
+
+** elisp
+Here, spelling correction using Pen/GPT-3 is
+used alongside sed to prepare the text for the
+prompt.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defun pen-words (&optional n input)
+    (setq n (or n 5))
+    (s-join " " (-take n (s-split-words input))))
+  
+  ;; Great for NLP tasks such as keyword extraction
+  (defun pen-selection-or-surrounding-context ()
+    (let ((context
+           (if (selected-p)
+               (pen-selected-text)
+             (pen-surrounding-context))))
+      ;; Correcting the spelling and grammer helps massively
+      (car
+       (pf-correct-english-spelling-and-grammar
+        (pen-snc "sed -z 's/\\s\\+/ /g'" (snc "pen-c context-chars" context))
+        :no-select-result t))))
+#+END_SRC
+
+When defining a word via the right-click menu,
+the topic is determined by actually using the
+keywords prompt-function, and some other logic.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defun pen-define (term)
+    (interactive (list (pen-thing-at-point-ask)))
+    (message (lm-define term t (pen-topic t t))))
+#+END_SRC
+
+** bash
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  list2args) {
+      sed -z -e "s/^\\s*//" -e "s/\\s*$//" |
+      sed -z -e "s/, /\\n/g" -e "s/,$//" |
+          uniqnosort |
+          sed -e 's/^/"/' -e 's/$/"/' |
+          pen-s join ' '
+  }
+  ;;
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  context-chars) {
+      sed 's/[^a-zA-Z0-9_. -]\+/ /g'
+  } ;;
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/sH6XWonH9jPUyCwm7yMiRLlkv" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/sH6XWonH9jPUyCwm7yMiRLlkv.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/sH6XWonH9jPUyCwm7yMiRLlkv.js" id="asciicast-sH6XWonH9jPUyCwm7yMiRLlkv" async></script>
+#+END_EXPORT

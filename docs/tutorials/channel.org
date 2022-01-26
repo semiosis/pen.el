@@ -1,0 +1,277 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Chann.el (channel personalities to control your terminal)
+#+DATE: <2022-01-08>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: imaginary discourse emacs pen gpt openai
+
+| Install with Pen |                                                    |
+|------------------+----------------------------------------------------|
+| Pen.el on GitHub | https://github.com/semiosis/pen.el/                |
+| Tutorial         | https://mullikine.github.io/posts/pen-el-tutorial/ |
+
+** Introducing =Chann.el= (currently in development)
+=chann.el= allows you to hand over control of
+your terminal, or messaging client to a language model.
+This is analogous to the new-age notion of channeling, hence the name.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  channel
+  channeling
+      The practice of channeling - a person's
+      body being taken over by a spirit for the
+      purpose of communication - has been around
+      for millennia.
+  
+  channelers
+  psychic mediums
+      Often use what are called "spirit guides,"
+      friendly spirits who give them knowledge
+      and help them on their spiritual journeys.
+  
+  Wizard of Oz testing
+      Testing in which the automated machine
+      component is substituted by some form of
+      human intervention but in such a way that
+      the user participating in the test is
+      unaware of the substitution.
+#+END_SRC
+
+This can be used to:
+- Subsitute yourself for a chatbot into your current messaging client, so long as it runs in a terminal.
+- Simulate a more realistic chatbot that politely waits to interject.
+- Simulate a seminar or group of chatbots through a single messaging client (i.e. multiplex conversations).
+  - Add the Mad-Hatter's Tea Party into your existing conversations.
+- Run commands on a REPL, autonomously (allow the language model to control your terminal).
+- Control the frequency of chatter in chatbots.
+
+---
+
++ engine :: http://github.com/semiosis/engines/blob/master/engines/human.engine
++ The Imitation Game :: https://academic.oup.com/mind/article/LIX/236/433/986238
+
+** Code
++ =madteaparty= :: http://github.com/semiosis/pen.el/blob/master/scripts/madteaparty
++ =channel= :: http://github.com/semiosis/pen.el/blob/master/scripts/channel
++ =apostrophe= :: http://github.com/semiosis/pen.el/blob/master/scripts/apostrophe
+
+** Goals
+Just like Neo created Morpheus inside the
+Matrix Resurrections, we want to birth *good*
+AGIs to help us. However, =Chann.el='s objective is not to create AGIs.
+
+- Goals:
+  - Make a transparent sandbox for allowing humans to integrate themselves into the roles they want.
+  - Protect against the dehumanisation that comes from humans only talking to chatbots
+    - Do this by allowing the creation of personal assistants to chat to other chatbots on behalf of humans
+    - In this way, via chatbot, transact information (elicit or inform) to and from commercial chatbots
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  # Chann.el v1.0
+  # - Run a chatbot that sees only a terminal (program independent)
+  #   - The chatbot may have multiple personalities. i.e. a Mad-Hatter's Tea-Party
+  # Chann.el v2.0
+  # - Give an AGI control of a terminal
+  #   - Achieve this using natural-language-to-code, but what code?
+  #     - Possibly a set of prescribed valid commands together with NLSH-style prompting
+#+END_SRC
+
+** Start by building a dummy interface client
+- We want to swap the human and the AI in the their respective
+  prompter-prompted roles so that the AI is the prompter and the human is the
+  prompted.
+
+*** Substitute the AI for the Human
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  apostrophe -human "Amber Heard"
+#+END_SRC
+
+** Channel the Mad Hatter's Tea Party for a conversation with Lewis Caroll, enacted by a human
+The Mad Hatter's Tea-Party group takes the
+role of =you=, the channeler, in a conversation with an
+imaginary Lewis Caroll.
+
+However, Lewis Caroll may then be enacted by a human.
+
+In this way, the AI subsumes your main
+terminal and you take the role of the characters
+via a hidden terminal.
+
+To have the conversation roll out completely
+independently of human interaction, simply omit the
+=-human= from the command.
+
+The roleplay of the human user as Lewis Caroll
+influences how the characters accept and
+interface with the user, as they see the user
+as their maker.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  channel -who "Mad Hatter's Tea Party group" -on-behalf-of "you" apostrophe -human "Lewis Caroll"
+#+END_SRC
+
+** Channel characters from the Matrix to control your computer, and take the role of one of them
+- 'Your computer' currently meaning only your messaging client
+  - =v2= will allow full control of your computer
+
+*** Smith to Neo, in the real world
+Agent Smith takes control of the terminal (owned by Bane) to talk to Neo.
+You take on the character Neo.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  channel -who "Agent Smith" -on-behalf-of "bane" apostrophe -human "Neo"
+#+END_SRC
+
+This would be useful if you want to simulate a
+conversation between Smith and yourself, where
+Smith believes he is speaking to Neo and Smith also believes
+he is speaking through Bane.
+
+*** Bane to Neo, in the real world
+=on-behalf-of= may also simply be their own account.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  channel -who "Bane" -on-behalf-of "bane" apostrophe -human "Neo"
+#+END_SRC
+
+=-on-behalf-of "bane"= may have a capitalised =Bane=; It doesn't really matter. Perhaps it is just the chatbot's pseudonym.
+
+*** Morpheus from the modal contacts Thomas Anderson in the Matrix
+The messaging client (terminal) is owned by <Matrix4 Morpheus actor> who is subsumed by Morpheus from the modal to make contact with Thomas Anderson in the matrix.
+You assume the role of the blue-pill Thomas Anderson.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  channel -who "Morpheus" -on-behalf-of "<Matrix4 Morpheus actor>" apostrophe -human "Thomas Anderson"
+#+END_SRC
+
+This would be useful if you want to simulate a
+conversation between Morpheus and yourself,
+where Morpheus believes he is speaking to
+Thomas Anderson and Morpheus also believes he has
+subsumed the avatar/account of <Matrix4 Morpheus actor>.
+
+*** Morpheus to Neo in the real world
+Here, Morpheus subsumes an exomorph to contact Trinity in the real world.
+You have assumed the role of Trinity.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  channel -who "Morpheus" -on-behalf-of "Exomorph" apostrophe -human "Trinity"
+#+END_SRC
+
+This would be useful if you want to simulate a
+conversation between Morpheus and yourself, where
+Morpheus believes he is speaking to Neo and Morpheus also believes
+he is interacting via the exomorph's communication channel.
+
+** Mad Tea-Party
+The above conversations are based on a simple
+REPL, namely =apostrophe= and assume a two-
+way, tit-for-tat flow of conversation.
+
+Where =apostrophe= can start an imaginary
+conversation between two interlocutors with a
+simple REPL and no messaging server,
+=madteaparty= manages a full-blown IRC server
+and =channel= simulates an interlocutor, so
+they can be combined to make more elaborate
+imaginary conversations.
+
+=madteaparty= automates the user account and channel
+creation for an IRC server, allowing any
+number of chatbot avatars to converse together, including humans.
+
+For example, the following command creates a linux user and IRC
+nick =partygroup=, then creates the =#metameetup=
+IRC channel and presents the user and/or
+chatbot with an IRC client.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  madteaparty -join metameetup partygroup
+#+END_SRC
+
+Following on, you may wrap =channel= around a command such as =madteaparty=.
+
+Equally, the chatbots added via =channel= could be
+attached to other messaging clients too, so
+long as they have a terminal user-interface.
+
+For example wrapping =channel= around a
+command such as =finch= would enable you to add chatbots
+to your Facebook Messenger account.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  # This channels the chatbot "Mad Hatter's Tea Party group" on behalf of the IRC user partygroup. Their client runs in the background
+  channel -bg -who "Mad Hatter's Tea Party group" -on-behalf-of "partygroup" madteaparty -join metameetup partygroup
+#+END_SRC
+
+The following would add Lewis Caroll to the server with his own account.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  # This channels the chatbot "Lewis Caroll" on behalf of the IRC user lewiscaroll. It runs in the foreground
+  channel -who "Lewis Caroll" -on-behalf-of "lewiscaroll" madteaparty -join metameetup lewiscaroll
+#+END_SRC
+
+But we can simply run the following and take
+the role of Lewis Caroll within the server.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  madteaparty -join metameetup lewiscaroll
+#+END_SRC
+
+All clients for all channeled chatbots may be
+accessed via =tmux=, and so you can see them
+typing and interacting.
+
+** Channel v1.0
+*** =elisp=
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defun channel-chatbot-from-name (name-or-names command &optional auto closeframe)
+    "`name-or-names` is the name-or-names of the personalit(y|ies).
+  `command` is the terminal command the personality commands.
+  `auto`, if set to `t` will come up with the personality blurb without human interaction."
+    (interactive (list (read-string-hist "personalit(y|ies): "
+                                         "The March Hare, the Hatter and the Dormouse"
+                                         nil
+                                         "The March Hare, the Hatter and the Dormouse")
+                       ""))
+
+    (if (and (not (pen-inside-docker))
+             (not (pen-container-running)))
+        (progn
+          (pen-term-nsfa (pen-cmd "pen" "-n"))
+          (message "Starting Pen server")))
+
+    (if (not (sor name-or-names))
+        (setq name-or-names "The March Hare, the Hatter and the Dormouse"))
+
+    (if (not (sor command))
+        (setq command (cmd "madteaparty" name-or-names)))
+
+    (let* ((blurb
+            (if auto
+                (car (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 name-or-names :no-select-result t)))
+              ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
+              (pen-eipec
+               (fz (pf-generate-wiki-blurb-for-a-famous-person/1 name-or-names :no-select-result nil)))))
+           (slug (slugify command nil 30))
+           (bufname (concat "chann-" slug))
+           ;; modename should give me
+           ;; - a channel-term-mode,
+           ;; - channel-term-mode-map, and
+           ;; - channel-term-mode-hook
+           (modename bufname)
+           (buf
+            ;; Do I want to run in a term? Or would I rather run this in a tmux split pane
+            ;; I probably want to do both.
+            (pen-term (pen-nsfa command) closeframe modename bufname t)))
+
+      ;; If I want to spawn channel without an emacs term, then do it the following way.
+      ;; Start a cterm with the channeled chatbot running as a program loop inside of that buffer
+      ;; (let* ((el (pen-snc (pen-cmd "channel-repl" "-getcomintcmd" name-or-names "" blurb))))
+      ;;   (pen-e-sps (pen-lm (pen-eval-string el))))
+      ))
+#+END_SRC

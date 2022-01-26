@@ -1,0 +1,61 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Charming conversation with multiversal search
+#+DATE: <2021-11-23>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: openai pen
+
+** Summary
+I add multiversal search to =Pen.el=, to
+filter generated conversation candidates for
+those which result in constructive/better
+responses from the other party.
+
+This way you can avoid stuff-ups in your
+conversation.
+
+*** Textual semantic search
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/textual-semantic-search-2.prompt
+
+Textual semantic search is the starting point
+for filtering text according to semantic predicates.
+
+This also works on the command-line so you can
+conveniently perform semantic filtering in
+your day-to-day tasks.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/mCgjNfkRHM7gEyI7c1dlSlu9g" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/mCgjNfkRHM7gEyI7c1dlSlu9g.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/mCgjNfkRHM7gEyI7c1dlSlu9g.js" id="asciicast-mCgjNfkRHM7gEyI7c1dlSlu9g" async></script>
+#+END_EXPORT
+
+*** Multiversal search
+The next step is to generate possible
+conversation candidates and filter them out
+based on downstream responses.
+
+** Next steps
+*** Contextual vs semantic similarity
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  echo '["That sounds interesting", "I would love to hear more about that", "Boring."]' |
+      "penf" "-u" "pf-textual-semantic-search-filter/2" "what a bored person would say"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Boring.
+#+end_src
+
+Unfortunately, this type of semantic search
+works well for only contextual similarity. I
+plan on improving semantic similarity though
+by running the semantic search twice, given
+both a query and a counter-query. Those two
+searches yield different likelihoods, and so
+I'll do something with that difference.

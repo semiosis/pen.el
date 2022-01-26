@@ -1,0 +1,132 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Hiding personal information with OpenAI Codex
+#+DATE: <2021-09-02>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: openai pen gpt
+
+** Summary
+While creating a prompt for generating commit
+messages from diffs, I have made a personal
+information concealer.
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/GdPiFP0YLpfiZDeo9ptrCf6m1" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/GdPiFP0YLpfiZDeo9ptrCf6m1.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/GdPiFP0YLpfiZDeo9ptrCf6m1.js" id="asciicast-GdPiFP0YLpfiZDeo9ptrCf6m1" async></script>
+#+END_EXPORT
+
+** Prompt
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/randomize-private-info.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Hide personal information"
+  doc: "Given a document with personal information, replace with random info instead"
+  prompt-version: 1
+  prompt: |+
+      # A file with sensitive information
+      cat data.txt <<EOD
+      Here is my name and email: Liza Honyeza-Fresser, liza-honyeza-fresser@gmail.com.
+      EOD
+  
+      # The exact same data file but with different private details
+      # Randomly generated name: Nicole Hodge
+      cat data-fake.txt <<EOD
+      Here is my name and email: Nicole Hodge, loxaj24209@mom2kid.com.
+      EOD
+  
+      # A file with sensitive information
+      cat data.txt <<EOD
+      <data>
+      EOD
+  
+      # The exact same data file but with different and fake private details
+      cat fake-data.txt <<EOD
+  engine: "OpenAI Codex"
+  temperature: 0.5
+  max-tokens: "(* 2 prompt-length)"
+  stop-sequences:
+  - "EOD"
+  top-p: 1.0
+  cache: on
+  vars:
+  - "data"
+  examples:
+  - "Liza Honyeza-Fresser, liza-honyeza-fresser@gmail.com"
+  external-related:
+  - "https://www.name-generator.org.uk/"
+  - "https://temp-mail.org/en/"
+  filter: yes
+  completion: no
+  insertion: no
+#+END_SRC
+
+** Input & Output
+*** Input
+#+BEGIN_SRC text -n :async :results verbatim code
+  git log HEAD\^!
+  commit HEAD
+  Author: Mike Joe <mikejjoe@gmail.com>
+  Date:   Sun Apr 4 13:26:51 2021 +0200
+  
+      Replace as many references to master with main as currently possible (#561)
+#+END_SRC
+
+*** Output
+Note that, although this time the prompt used
+the example fictional name in the prompt, it's
+capable to coming up with new ones. But the effect is the same.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  git log HEAD\^!
+  commit HEAD
+  Author: Nicole Hodge <loxaj24209@mom2kid.com>
+  Date:   Sun Apr 4 13:26:51 2021 +0200
+  
+      Replace as many references to master with main as currently possible (#561)
+#+END_SRC
+
+** Creating fictional people with the =list-of= prompt
+*** =pf-list-of/2= prompt
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/list-of-2.prompt
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Randomly generated people's full names
+  
+  Froorki Rusmoli
+  Filipa Antas
+  Fia Mäkinen
+  Frøydis Berner
+  Flora Amundsen
+  Nguyen
+  Chang
+  Büüthÿ
+  Özgür
+  Äîêóòêàÿ
+  Ryan Alexander
+  Oswald Lawrence
+  Nola Dougherty
+  Donny Hendrix
+  Tang Hamilton
+  Zacharias Antoine
+  Zachariah Antone
+  Zacharia Antone
+  Zacharie Antone
+  Zachary Antone
+  Zachariona Antone
+  Zacharias Antone
+  Zachariah Anto
+  Zacharia Anto
+  Ruben Goh
+  Lorinda Dalla
+  Mandy Buffay
+  Caitlin Riggs
+  Seth Turley
+#+END_SRC
+

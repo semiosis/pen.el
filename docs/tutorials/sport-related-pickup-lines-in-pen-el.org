@@ -1,0 +1,28 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Sport related pickup lines in Pen.el
+#+DATE: <2021-08-04>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen emacs
+
+** Summary
+I generate some sport-related pick-up-lines.
+
+** Demo
+*** Rugby
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/mGoP7TY7Wd3YLA8A1hTtSsYzK" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/mGoP7TY7Wd3YLA8A1hTtSsYzK.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/mGoP7TY7Wd3YLA8A1hTtSsYzK.js" id="asciicast-mGoP7TY7Wd3YLA8A1hTtSsYzK" async></script>
+#+END_EXPORT
+
+- I'm a total scrumptious hunk of man meat.
+- I like your tackles.
+- I'm just trying to tackle your heart.
+- I think you would be a good scrum half.
+- You can tackle me anytime.

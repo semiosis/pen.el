@@ -1,0 +1,443 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: A prompting LSP server for any language or context using large language models, built with emacs
+#+DATE: <2021-12-30>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen codex openai gpt llm lm emacs
+
+| Install with Pen |                                                    |
+|------------------+----------------------------------------------------|
+| Pen.el on GitHub | https://github.com/semiosis/pen.el/                |
+| Tutorial         | https://mullikine.github.io/posts/pen-el-tutorial/ |
+
+** Summary
+I have put together an LSP server that
+utilises large LMs, so that interacting with
+your computer whilst utilising AI systems is
+fully transparent and controllable.
+
+You have control over:
+- What information is sent to the language model (could be to Google, Microsoft, etc.).
+  - For example, a prompt may watch your
+    screen and send that information to the LM.
+    =Pen.el= gives you control of that
+    information, and you may also, for
+    example, generate fake information, or
+    obscure information by placing a =sed=
+    command, for example, in the prompt
+    preprocessor.
+    - An aside: Now the below prompt, technically sends
+      private information to the language server
+      so that LM can obscure it, but does not
+      obscure it before sending to the server.
+    - See :: http://github.com/semiosis/prompts/blob/master/prompts/hide-personal-information-1.prompt
+- How much information is sent
+- Which language models you will use
+- Building software language model agnostically
+  - Design for multiple models and run prompts on your own private models, if you want
+
+Only this way can you avoid trusting large
+corporations with all of your private information. Make no mistake, [[https://en.wikipedia.org/wiki/Almost_all][almost all]] (effectively all)
+information is about to be effectively harvested due to language models and inference, while using a computer.
+It's only out of good will that this doesn't happen. But how long will that last now the LM technology cat is out of the bag?
+
+It's therefore imperative to be able to
+control this flow of information. You need a
+language server for large LMs, to be your
+Copilot, your personal assistant, your Google search,
+Grammerly, etc., an AGI interface that you have full
+control over. That is part of what =Pen.el= is. It's an LSP server for anything.
+
+If you understand what emacs is then you're
+probably aware of the way that people try to
+do all of their computing through emacs. And
+that is one reason for emacs being the ideal
+choice for an LSP server. The other big reason
+is that everything you do through emacs can fit within an GPT-3 prompt.
+
+** Current state of Pen.el LSP server
+It is very nearly ready to be used for all
+emacs modes, and for other editors. The issue
+currently is that LSP servers require access
+to a real file on the same filesystem as the
+LSP server is running. Currently your software
+would have to be running inside the docker
+container for the lsp server to work with it.
+You can, for instance, install VSCode into the
+container and connect. However, I'm working on
+a solution to have contact with the external
+world. That involves possibly using a
+bind/sshfs mount.
+
+** Prompting server
+The =Pen.el= container also functions as a prompting server.
+
+=Pen.el= may very well be simultaneously the
+first open-source prompting server and LSP
+server for prompting.
+
+See this blog article for more on how it can be used in your own pipelines.
+It's dead simple, just pipe into the =penf=
+script along with the prompt function name and
+arguments the same way the =efm-langserver=
+does it shown below.
+
+Something like this
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -nj --pool --temp 0.9 pf-very-witty-pick-up-lines-for-a-topic/1 imagination
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/7XWErLGNNXjusypShOIa4f7Wg" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/7XWErLGNNXjusypShOIa4f7Wg.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/7XWErLGNNXjusypShOIa4f7Wg.js" id="asciicast-7XWErLGNNXjusypShOIa4f7Wg" async></script>
+#+END_EXPORT
+
+See https://mullikine.github.io/posts/pen-el-host-interop-and-client-server/
+
+** Usage
+Firstly install Pen.el. The best way to use it currently is via the docker container.
+
++ Installation instructions :: https://semiosis.github.io/pen/
+
+** Configuration
++ The LSP configuration lives here :: =$HOME/.pen/efm-langserver-config.yaml=
+
+Under the list of languages recognised there is one called =global=.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  languages:
+    text:
+      - <<: *pen-world-language
+      - <<: *pen-world-language-completion
+      - <<: *glossary1
+  
+    global:
+      - <<: *pen-world-language
+      - <<: *pen-world-language-completion
+      - <<: *glossary1
+#+END_SRC
+
+As you can see I have added =glossary= to =global=.
+This enables hover documentation for where your cursor is at.
+
+The prompt function =pf-define-word-for-glossary/1= will be used.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  glossary1: &glossary1
+    # The impementation is a combination of documentation and hover
+    # documentation is provided to the thing under the cursor
+  
+    # The rest go to the hover provider as signature docs
+    hover-command: "pen-ci -f -a penf -u -nj --pool pf-define-word-for-glossary/1"
+    # hover-command: "timeout -k 0.1 -s KILL 0.1 pen-ci -f -a cat"
+    hover-stdin: true
+    # hover-type: "markdown"
+    # hover-type: "plaintext"
+    format-command: 'pen-pretty-paragraph'
+#+END_SRC
+
+Within the =pen.el= repository, you have a
+list of modes defined here.
+
+This is for the emacs client when running
+emacs inside the docker container, which you
+can try out for yourself currently.
+
+http://github.com/semiosis/pen.el/blob/master/src/pen-lsp-client.el
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defset pen-lsp-modes '(text-mode
+                          emacs-lisp-mode
+                          sh-mode
+                          org-mode awk-mode eww-mode
+                          special-mode python-mode
+                          prog-mode))
+#+END_SRC
+
+However, when completed this wont need to be
+configured for use with other editors.
+
+** How it works
+=pen.el= is a prompting pipeline which
+utilises templating and many different
+language and world models to generate
+responses. That could be used to generate
+code, guitar tabs, recipes, to imagine a
+programming interface or to interact with a
+chatbot, for example.
+
+=pen.el= is written in emacs lisp, and is
+daemonised to server an LSP server, which in
+turn is used by another emacs or to different
+editors to provide documentation and
+refactoring tools.
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/33i61wLzBYECCkqlHhXhpD8qm" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/33i61wLzBYECCkqlHhXhpD8qm.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/33i61wLzBYECCkqlHhXhpD8qm.js" id="asciicast-33i61wLzBYECCkqlHhXhpD8qm" async></script>
+#+END_EXPORT
+
+** Customizing the prompts
+That is done via the following repository:
+
+https://github.com/semiosis/prompts/tree/master/prompts
+
+** Example debug information
+For your interest.
+
+The command =M-x pen-diagnostics-show-context=
+will display information on the last prompt.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  ai21-last-output: ''
+  ai21-last-output-fp: $HOME/.pen/temp/ai21-temp.txt
+  aix-last-output: ''
+  aix-last-output-fp: $HOME/.pen/temp/aix-temp.txt
+  alephalpha-last-output: ''
+  alephalpha-last-output-fp: $HOME/.pen/temp/alephalpha-temp.txt
+  hf-last-output: ''
+  hf-last-output-fp: $HOME/.pen/temp/hf-temp.txt
+  human-last-output: 'Once upona time
+  
+    ###'
+  human-last-output-fp: $HOME/.pen/temp/human-temp.txt
+  last-final-command: ALSO_EXPORT="" PEN_PROMPT="Glossary of terms.\n###\nossified\nDefinition<pen-colon>
+    Turn into bone or bony tissue.\n###\n18\nDefinition<pen-colon>" PEN_LM_COMMAND="openai-complete.sh"
+    PEN_MODEL="davinci-codex" PEN_WHITESPACE_SUPPORT="" PEN_ENGINE="OpenAI Codex" PEN_API_ENDPOINT="https://api.openai.com"
+    PEN_PAYLOADS="" PEN_QUERY="" PEN_COUNTERQUERY="" PEN_LOGPROBS="10" PEN_APPROXIMATE_PROMPT_LENGTH=42
+    PEN_ENGINE_MIN_TOKENS=0 PEN_ENGINE_MAX_TOKENS=2049 PEN_MIN_TOKENS=0 PEN_MAX_TOKENS=122
+    PEN_REPETITION_PENALTY="" PEN_FREQUENCY_PENALTY="" PEN_PRESENCE_PENALTY="" PEN_LENGTH_PENALTY=""
+    PEN_MIN_GENERATED_TOKENS=3 PEN_MAX_GENERATED_TOKENS=80 PEN_TEMPERATURE="0.5" PEN_MODE=""
+    PEN_STOP_SEQUENCE="##" PEN_STOP_SEQUENCES="[\"##\",\"<delim-1>\",\"<delim-1>\"]"
+    PEN_DOCUMENTS= PEN_TOP_P="1" PEN_TOP_K=1 PEN_FLAGS= PEN_CACHE= PEN_USER_AGENT="emacs/pen"
+    PEN_TRAILING_WHITESPACE=" " PEN_N_COMPLETIONS="1" PEN_ENGINE_MIN_GENERATED_TOKENS=3
+    PEN_ENGINE_MAX_GENERATED_TOKENS=4096 PEN_COLLECT_FROM_POS=94 PEN_END_POS=94 PEN_N_JOBS="1"
+    PEN_SEARCH_THRESHOLD= PEN_GEN_UUID="d39816c8-9c67-4af0-b858-263ac7e55d2a" PEN_GEN_TIME=1640780265.3621588
+    PEN_GEN_DIR="/root/.pen/results/results_1640780265.3621588_29.12.21_d39816c8-9c67-4af0-b858-263ac7e55d2a"
+    PEN_INJECT_GEN_START="" lm-complete
+  last-final-prompt: 'Glossary of terms.
+  
+    ###
+  
+    ossified
+  
+    Definition: Turn into bone or bony tissue.
+  
+    ###
+  
+    18
+  
+    Definition: <END>'
+  last-pen-command: '"penf" "-u" "pf-define-word-for-glossary/1" "18" "nil" "nil"'
+  last-pen-command-exprs: '"penf" "-u" "pf-define-word-for-glossary/1" "18"'
+  last-prompt-data: null
+  lm-complete-results: ''
+  lm-complete-stderr: ''
+  lm-complete-stdout: '/tmp/results_29.12.21__1640780269_75be3eca-250b-41a2-b6b9-25c65a5660f6_DKHR1
+  
+    8ed897a_U66VG'
+  nlpcloud-last-output: ''
+  nlpcloud-last-output-fp: $HOME/.pen/temp/nlpcloud-temp.txt
+  offline-last-output: 'Glossary of terms.
+  
+    ###
+  
+    ossified
+  
+    Definition: Turn into bone or bony tissue.
+  
+    ###
+  
+    something
+  
+    Definition: PEN MODEL DummyModel prompt Glossary of terms n nossified nDefinition
+    Turn into bone or bony tissue'
+  offline-last-output-fp: $HOME/.pen/temp/offline-temp.txt
+  openai-last-output: 'Glossary of terms.
+  
+    ###
+  
+    ossified
+  
+    Definition: Turn into bone or bony tissue.
+  
+    ###
+  
+    )/
+  
+    Definition: A word used to replace a word that cannot be used by itself but can
+    be used with another word.
+  
+    '
+  openai-last-output-fp: $HOME/.pen/temp/openai-temp.txt
+  pen-force-engine: Offline
+  pen-prompt-functions-failed: null
+  pen-prompts-failed: null
+  ruby-gen-next-user-prompt: $HOME/.pen/temp/ruby-gen-next-user-prompt.txt
+  semantic-path: spacemacs-buffer
+#+END_SRC
+
+Also, for your interest.
+
+The command =M-x pen-customize= will start the following control panel.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  For help using this buffer, see [Easy Customization] in the [Emacs manual].
+  
+  Operate on all settings in this buffer:
+  [ Revert... ] [ Apply ] [ Apply and Save ]
+  
+  
+  pen group:  Group definition missing. 
+        [ State ]: something in this group has been changed outside customize.
+     
+  Hide iλ-thin: Boolean: [Toggle]  on (non-nil)
+     [ State ]: SAVED and set.
+     thin-client mode toggle
+  
+  Hide pen-avoid-divulging: Boolean: [Toggle]  off (nil)
+     [ State ]: CHANGED outside Customize.
+     Avoid divulging information
+  
+  Show Value pen-completers-directory 
+     Directory where personal .completer files are located
+  
+  Show Value pen-contrib-directory 
+     Personal pen-contrib.el respository
+  
+  Show Value pen-cost-efficient 
+     Avoid spending money
+  
+  Hide pen-debug: Boolean: [Toggle]  on (non-nil)
+     [ State ]: CHANGED outside Customize.
+     When debug is on, try is disabled, and all errors throw an exception
+  
+  Hide pen-default-engine: nil
+     [ State ]: CHANGED outside Customize. (mismatch)
+     Default engine
+  
+  Show Value pen-default-lm-command 
+     Default LM completer script
+  
+  Hide pen-default-logprobs: Integer: 10
+     [ State ]: CHANGED outside Customize.
+     The default logprobs value
+  
+  Show Value pen-describe-images 
+     Describe images
+  
+  Show Value pen-engines-directory 
+     Personal engine respository
+  
+  Hide pen-eww-text-only: Boolean: [Toggle]  off (nil)
+     [ State ]: CHANGED outside Customize.
+     eww text mode only
+  
+  Show Value pen-fav-programming-language 
+     By setting pen-fav-programming-language, you set a default language to translate into. More
+  
+  Show Value pen-fav-world-language 
+     By setting pen-fav-world-language, you set a default language to translate into. More
+  
+  Hide pen-force-engine: String: Offline
+     [ State ]: CHANGED outside Customize.
+     Force using this engine
+  
+  Show Value pen-force-few-completions 
+     Forcing only few completions will speed up Pen.el, but not by much usually
+  
+  Show Value pen-force-logprobs 
+     The logprobs to force
+  
+  Show Value pen-force-n-collate 
+  
+  Show Value pen-force-n-completions 
+  
+  Show Value pen-force-no-uniq-results 
+  
+  Show Value pen-force-one 
+  
+  Show Value pen-force-single-collation 
+     Forcing only one collation will speed up Pen.el
+  
+  Hide pen-force-strip-unicode: Boolean: [Toggle]  off (nil)
+     [ State ]: CHANGED outside Customize.
+     Strip unicode from input
+  
+  Show Value pen-force-temperature 
+     The temperature to force
+  
+  Show Value pen-glossaries-directory 
+     Personal glossary respository
+  
+  Show Value pen-ink-disabled 
+     Disable ink. Useful if it’s breaking
+  
+  Show Value pen-libre-only 
+     Only use libre engines
+  
+  Hide pen-logprobs-on: Boolean: [Toggle]  on (non-nil)
+     [ State ]: CHANGED outside Customize.
+     Boolean to enable/disable logprobs
+  
+  Hide pen-memo-prefix: String: mele-host
+     [ State ]: CHANGED outside Customize.
+     memoize file prefix
+  
+  Hide pen-n-simultaneous-requests: Integer: 5
+     [ State ]: CHANGED outside Customize.
+     The number of requests to make in parallel using lm-complete
+  
+  Show Value pen-nlsh-histdir 
+     Directory where history files for nlsh
+  
+  Hide pen-obtain-probabilities: Boolean: [Toggle]  off (nil)
+     [ State ]: CHANGED outside Customize.
+     Also query for the probabilities, when prompting
+  
+  Show Value pen-override-lm-command 
+     Override LM completer script
+  
+  Show Value pen-penel-directory 
+     Personal pen.el respository
+  
+  Show Value pen-preview-token-length 
+     The number of tokens to generate in order to get a preview of what to further generate
+  
+  Show Value pen-prompt-discovery-recursion-depth 
+     The number of git repositories deep that pen.el will go looking
+  
+  Hide pen-prompt-force-engine-disabled: Boolean: [Toggle]  on (non-nil)
+     [ State ]: CHANGED outside Customize.
+     Do not allow prompts to override the engine override
+  
+  Show Value pen-prompt-function-prefix 
+     Prefix string to prepend to prompt function names
+  
+  Show Value pen-prompts-directory 
+     Personal prompt respository
+  
+  Show Value pen-prompts-library-directory 
+     The directory where prompts repositories are stored
+  
+  Show Value pen-sh-update 
+     Export UPDATE=y when executing sn and such
+  
+  Show Value pen-snippets-directory 
+     Personal snippets respository
+  
+  Show Value pen-term-cl-refresh-after-fz 
+     While in term, send a C-l just after selecting for insertion
+  
+  Show Value pen-user-agent 
+     User Agent for self identification
+#+END_SRC

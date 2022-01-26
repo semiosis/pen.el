@@ -1,0 +1,85 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Improved Imaginary Interpreter for Bash
+#+DATE: <2021-12-20>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen imaginary
+
+** Summary
+I improve upon the bash support for =ii=.
+
+It works quite nicely with Complex Term now, as you can create a bash =ii= from a =ct= that is running bash.
+
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-bash-interpreter-2.prompt
+
+** Explanation
+This expression is used to generate the stop
+sequence given the prompt history.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  expressions:
+    - bash-stop-sequence: "(pen-snc \"awk 1 | tail -n 1\" (scrape \"@[^$: ]+\" (scrape \"^[^@ ]+@[^$ ]+[:$]\" (pen-unonelineify-safe final-prompt))))"
+#+END_SRC
+
+=bash-gen-next-user-prompt= is used to generate a fresh user prompt for =comint=.
+It uses the prompt history and also is able to see that the user has changed and take advantage of that.
+That lets you run =login shane= for example to change the user.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  # I don't really want to generate the last user prompt
+  # It would be better
+  bash-gen-next-user-prompt) {
+      IFS= read -rd '' in < <(cat | tee /tmp/bash-gen-next-user-prompt);typeset -p in &>/dev/null
+  
+      full_context="$( p_interpret "$FINAL_PROMPT" | pen-str unonelineify-safe; printf -- "%s" "$in"; )"
+  
+      user_at_host="$( printf -- "%s" "$full_context" | awk 1 | grep -P "^[^@ ]+@[^:$ ]+[:$]" | pen-scrape "^[^@ ]+@[^:$ ]+" | tail -n 1)"
+  
+      # Because the stop sequence is i.e. @mele, the user is the last thing
+      last_line="$(p "$full_context" | tail -n 1)"
+      second_to_last_line="$(p "$full_context" | sed 'x;$!d')"
+  
+      # TODO Consider looking ahead using prompting to find future prompt generations
+      # It is very important to build my own unparser for generating text using Codex, etc.
+      # That should be how I market myself.
+  
+      # Changing user is not easy. Only do it if the last command was a
+      # 'login'. But in that case, I should rather be using an alternative 'login' prompt
+      if printf -- "%s\n" "$last_line" | grep -q -P "^[^@:$ ]+$" && printf -- "%s\n" "$second_to_last_line" | grep -qP "\\blogin\\b"; then
+          new_user="$last_line"
+      else
+          new_user="$(p "$user_at_host" | sed -n "s/^[^a-z]*\\([^@ ]\\+\\)@.*/\\1/p")"
+      fi
+      # new_host="$(p "$user_at_host" | pen-scrape "[^:$ ]+$")"
+      new_host="$(p "$user_at_host" | sed -n "s/[^@]*@\\([^:$ ]\\+$\\)/\\1/p")"
+  
+      # prompt_number="$(printf -- "%s" "$in" | awk 1 | tac | sed -n "/^Out\\[/{s/^Out\\[\\([0-9]*\\)\\]:.*/\\1/p;q}")"
+      # new_prompt_number="$(( prompt_number + 1 ))"
+  
+      printf -- "%s" "$in" | awk 1 | sed '$d'
+  
+      time="$(date +%T)"
+  
+      # TODO infer the directory -- scrape the last cd
+      dir=""
+  
+      if printf -- "%s\n" "$second_to_last_line" | grep -q -P '\$ cd [^;&]+$'; then
+          dir="$(p "$second_to_last_line" | sed -n "s/.*\\\$ cd \\(.*\\).*/\\1/p")"
+      else
+          dir="$(p "$full_context" | grep -P '^[a-z]+@[a-z0-9]+:[^;&]+\$' | tail -n 1 | sed -n "s/.*:\\([^$]*\\)\\$.*/\\1/p")"
+      fi
+  
+      : "${dir:="."}"
+  
+      # echo -n "${user_at_host}$ "
+      echo -n "${new_user}@${new_host}:$dir\$ "
+      # echo -n "In [$new_prompt_number]: "
+  }
+  ;;
+#+END_SRC
+
+** Demo

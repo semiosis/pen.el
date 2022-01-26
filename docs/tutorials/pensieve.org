@@ -1,0 +1,106 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: PenSieve (A magical Pensieve based on Language Models that's real)
+#+DATE: <2022-01-13>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: imaginary fuse pen
+
+| Install with Pen |                                                    |
+|------------------+----------------------------------------------------|
+| Pen.el on GitHub | https://github.com/semiosis/pen.el/                |
+| Tutorial         | https://mullikine.github.io/posts/pen-el-tutorial/ |
+
+** =PenSieve= - A file system abstraction for prompting Large Language Models
+
+=PenSieve= is essentially an imaginary file
+system based on prompting Large LMs, using
+=Pen.el= as the prompting server, or more accurately, a file system interface to prompting.
+
+In layman's terms, you drag and drop files
+representing thoughts, or similarly high-
+dimensional entities.
+
+You could, for example, drag memories between
+chatbots, and that would influence each of
+their personalities.
+
+File system units such as files and directories
+may also keep metadata, such as a prompting
+history, which is used to guide the prompting.
+
+What goes in also affects what comes out, and
+may be used to train the model.
+
++ File system code :: http://github.com/semiosis/pensieve
+
+** Talking to Dumbledore about the design and risks
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/Wl8ti5oE7YK9bdwb3gzsxzB4w" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/Wl8ti5oE7YK9bdwb3gzsxzB4w.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/Wl8ti5oE7YK9bdwb3gzsxzB4w.js" id="asciicast-Wl8ti5oE7YK9bdwb3gzsxzB4w" async></script>
+#+END_EXPORT
+
+** Example use-cases
+*** Browse the memories of a personality
+- look through their memories
+- add memories by dropping them in, and their
+  character's personality would change
+
+*** Creating coding projects
+
+*** Generating art-books
+
+*** Prompt programming */without/* the programming
+
+** Creating a =PenSieve=
+
++ Code :: http://github.com/semiosis/pen.el/blob/master/scripts/pensieve
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+      "") { shift; }; ;;
+      -pf-list) {
+          # Function for listing files and dirs
+          pf_list_function="$2"
+          shift
+          shift
+      }
+      ;;
+  
+      -pf-gen) {
+          # Function for generating file contents
+          pf_gen_function="$2"
+          shift
+          shift
+      }
+      ;;
+  
+      *) break;
+  esac; done
+  
+  : "${pf_list_function:="pf-list-subdirectories/1"}"
+  : "${pf_gen_function:="pf-generate-the-contents-of-a-new-file/6"}"
+  
+  dir="$1"
+  shift
+  
+  # In container
+  cd /root/repos/pensieve
+  lein run pensieve "$dir"
+#+END_SRC
+
+
+
+** Creating a new PenSieve
+...
+
+** Browsing the PenSieve
+...
+
+** Dropping files into the PenSieve
+...

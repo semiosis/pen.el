@@ -1,0 +1,65 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Imagine and reify a project template
+#+DATE: <2021-10-14>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: codex openai pen emacs
+
+** Summary
+This is an example of using Codex + emacs to
+imagine a programming project. It imagines
+what types of files might be useful to have
+for the project, then it populates the files.
+Inspiration to the AI is taken from the
+current environment, so the prompts become
+more powerful as more files are added.
+
+** Generated project
+- http://github.com/mullikine/my-solidity-practice
+
+** Demo
+This is how easy it is to imagine and reify any type of project.
+*** Solidity
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/rtsxu9W2gDck8QvqNYYxuzfHK" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/rtsxu9W2gDck8QvqNYYxuzfHK.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/rtsxu9W2gDck8QvqNYYxuzfHK.js" id="asciicast-rtsxu9W2gDck8QvqNYYxuzfHK" async></script>
+#+END_EXPORT
+
+https://asciinema.org/a/rtsxu9W2gDck8QvqNYYxuzfHK
+
+** Prompt
++ =pf-imagine-a-project-template/1= :: http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-project-template-1.prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "imagine a project template"
+  doc: "Given the type of project I want to make, generate the file structure"
+  prompt-version: 1
+  prompt: |+
+      $ # Start a brand new <type> project. Use a template.
+      $ git checkout "https://github.com/templates/<sl:type>-project-template"    
+      $ find ./<sl:type>-project-template/ -type f # Show template files <<EOD
+      .
+      <:pp>./
+  engine: "OpenAI Codex"
+  temperature: 0.3
+  max-generated-tokens: "(* 2 prompt-length)"
+  top-p: 1.0
+  delimiter: "$ "
+  stop-sequences:
+  - "EOD"
+  cache: on
+  vars:
+  - "type"
+  examples:
+  - "haskell stack"
+  info: on
+  completion: off
+  insertion: off
+  postprocessor: sed 's/^\.\/<sl:type>-project-template\///' | sed -e '/^$/d' -e '/^\.$/d'
+  action: pen-find-file
+#+END_SRC

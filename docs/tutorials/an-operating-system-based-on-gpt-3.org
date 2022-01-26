@@ -1,0 +1,72 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: An operating system based on GPT-3
+#+DATE: <2021-03-08>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt openai emacs pen
+
++ =Pen.el= :: https://github.com/semiosis/pen.el/
+
++ Pen contrib library :: https://github.com/semiosis/pen.el/blob/master/pen-contrib.el
+
++ Pen contrib team :: https://github.com/orgs/semiosis/teams/contrib
+
+** Summary
+I assume that =GPT-3= or some descendant of it
+will become the primary interface to the
+computer.
+
+I create a configuration option to enable /
+disable =GPT-3=.
+
+When disabled, the environment will resort to
+alternative means of performing tasks.
+
+** Configuration
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  vim +/"use_gpt3: on" "$NOTES/myrc.yaml"
+#+END_SRC
+
+[[./gpt3-config.png]]
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  vim +/"summarize) {" "$SCRIPTS/s"
+#+END_SRC
+
+*** If =gpt3= is enabled, filter through OpenAI API abstractive summarizer
+Otherwise, use =sumy=.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  summarize) {
+      if myrc-test use_gpt3; then
+          openai-complete $MYGIT/semiosis/prompts/prompts/summarize-for-2nd-grader.prompt
+      else
+          zsh -c "sumy lex-rank --length=10 --file=<(cat)"
+      fi
+  }
+  ;;
+#+END_SRC
+
+** A demonstration of the entire workflow
+#+BEGIN_EXPORT html
+<a title="asciinema recording" href="https://asciinema.org/a/Fb17RAzSfSJAIksddxwqbsMhZ" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/Fb17RAzSfSJAIksddxwqbsMhZ.svg" /></a>
+#+END_EXPORT
+
+** A Zettelkasten of Natural Language Processing tasks
+[[./org-brain.png]]
+
+I use =org-brain= because it enables me to
+recall exactly where I am substituting =GPT-3=
+within my scripts.
+
+_*=org-brain= demo*_
+#+BEGIN_EXPORT html
+<a title="asciinema recording" href="https://asciinema.org/a/nrqqHWCfc5eG0lj3LPyzO2T2h" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/nrqqHWCfc5eG0lj3LPyzO2T2h.svg" /></a>
+#+END_EXPORT
+
+** =GPT-3= May be easily toggled via point and click
+[[./gpt-toggle.png]]

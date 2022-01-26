@@ -1,0 +1,575 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Transforming prose and code, in a generic way
+#+DATE: <2021-08-29>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen codex davinci gpt openai
+
+** Summary
+I demonstrate two prompts I have made. The
+first is based on OpenAI's Davinci and I use
+it to transform prose. The other is based on
+OpenAI's Davinci-Codex and I use it to
+transform code.
+
+The prompts are parameterised to accept a NL
+description of a transformation to make.
+Rather than creating individual prompts for
+specific transformations or types of
+transformations, I simply have 2 generic
+transformation prompts.
+
+Davinci appears to be more adept at
+transforming prose due to not to have had any
+fine-tuning which distracts it from its world-
+language oriented tasks.
+
+Davinci-Codex, on the other hand, while being
+able to employ other languages as a means of
+controlling the generation of text, appears to
+be less reliable at transforming prose
+correctly, but more controllable in terms of
+controlling the structure of its output.
+
+Davinci-Codex also does a much better job at
+transforming code with NL. That much should be
+obvious.
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/tVapsgBsvs1Ri7M39oLiPZfWv" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/tVapsgBsvs1Ri7M39oLiPZfWv.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/tVapsgBsvs1Ri7M39oLiPZfWv.js" id="asciicast-tVapsgBsvs1Ri7M39oLiPZfWv" async></script>
+#+END_EXPORT
+
+** Prompts
+*** =transform-prose-2.prompt=
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/transform-prose-2.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Transform prose"
+  doc: "Transform some prose given a transformation description"
+  prompt-version: 5
+  engine: OpenAI Davinci
+  issues:
+  - |+
+    This is ok and I'm not sure if there is a
+    better way, but the LM could be better.
+  prompt: |+
+      The following exam has correct answers.
+  
+      In the following quotes is a passage:
+      "<document>".
+  
+      Take the above passage and "<transformation>" whilst retaining the original meaning.
+      Answer:
+      "
+  xlr-n-generate: 5
+  temperature: 0.7
+  # On each collated generation, rotate the temperature upwards by 0.1
+  collation-temperature-stepper: "(mod* (+ <temperature> 0.1) 1)"
+  max-tokens: "(* 2 prompt-length)"
+  top-p: 1.0
+  best-of: 1
+  cache: on
+  stop-sequences:
+  - "\""
+  vars:
+  - document
+  - transformation
+  preprocessors:
+  # - pen-str join ' '
+  - pen-str tidy-prose-input | sed "s/\\.\$//" | pen-qne
+  - pen-str tidy-prose-input | sed "s/\\.\$//"
+  var-defaults:
+  - "(pen-selected-text)"
+  # Consider stripping code by correcting with GPT-3
+  postprocessor: pen-pretty-paragraph
+  examples:
+  - "I want to ride my bicycle"
+  - "with empathy"
+  n-test-runs: 5
+  n-collate: 2
+  n-completions: 2
+  new-document: yes
+#+END_SRC
+
+*** =transform-code-3.prompt=
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/transform-code-3.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Transform code"
+  doc: "Transform some code given the language and a transformation description"
+  prompt-version: 4
+  engine: OpenAI Codex
+  subprompts:
+  - original-program: |+
+      # The original <language> program
+  
+      cat original_program <<EOD
+      <code>
+      EOD
+  prompt: |+
+      <original-program>
+  
+      # The exact same program but <transformation>
+  
+      cat edited_program <<EOD
+  xlr-n-generate: 5
+  temperature: 0.0
+  # On each collated generation, rotate the temperature upwards by 0.1
+  collation-temperature-stepper: "(mod* (+ <temperature> 0.1) 1)"
+  top-p: 1.0
+  best-of: 1
+  # To short-circuit overly long generations
+  max-tokens: "(* 2 prompt-length)"
+  cache: on
+  stop-sequences:
+  - "EOD"
+  vars:
+  - code
+  - "language"
+  - transformation
+  preprocessors:
+  - cat
+  - slugify
+  var-defaults:
+  - "(pen-selected-text)"
+  - "(pen-detect-language-ask)"
+  postprocessors:
+  - sed '$d'
+  examples:
+  - "print(\"Hello world with empathy\")"
+  - "Python"
+  - "using numpy"
+  n-test-runs: 5
+  n-collate: 3
+  n-completions: 2
+  new-document: yes
+#+END_SRC
+
+** Transform prose
+- Prose is still difficult to control.
+- I've cherry picked these generations which came from the same batch.
+
+*** Original
+#+BEGIN_SRC text -n :async :results verbatim code
+  No matter what you are looking at in the terminal, generate from it at the
+  cursor position with previous text as context, and fuzzy search within that.
+#+END_SRC
+
+*** Generated
+#+BEGIN_SRC text -n :async :results verbatim code
+  adorn it with flowery and figurative language
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  No matter what you are looking at in the
+  terminal, a mouse click away is its previous
+  context and a fuzzy search within that
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  No matter what you are looking at in the
+  terminal, generate from it at the cursor
+  position with previous text as context, and
+  fuzzy search within that
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Everywhere we look, whether we are using the
+  command line or some sort of graphical user
+  interface, we should always be able to
+  generate that information at the cursor
+  position with previous information as context.
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  No matter what you are looking at in the
+  terminal, generate from it at the cursor
+  position with previous text as context, and
+  fuzzy search within that for the pre-existing
+  text of a self-quoted command
+#+END_SRC
+
+** Transform code
+Code transformation with Codex is beyond belief; It's very powerful and accurate.
+
+#+BEGIN_SRC perl -n :async :results verbatim code
+  # colors 16-231 are a 6x6x6 color cube
+  for ($red = 0; $red < 6; $red++) {
+      for ($green = 0; $green < 6; $green++) {
+  	for ($blue = 0; $blue < 6; $blue++) {
+  	    $code = 16 + ($red * 36) + ($green * 6) + $blue;
+  	    printf($line1, $code);
+  	    printf($line2, $code);
+  	    printf($line3,
+  		   ($red ? ($red * 40 + 55) : 0),
+  		   ($green ? ($green * 40 + 55) : 0),
+  		   ($blue ? ($blue * 40 + 55) : 0));
+  	}
+      }
+  }
+#+END_SRC
+
+Transformation command: /Use alpha channel/
+
+3 different results.
+
+#+BEGIN_SRC perl -n :async :results verbatim code
+  # Attempt 1: Alpha channel appears to exist
+  # colors 16-231 are a 6x6x6 color cube
+  for ($red = 0; $red < 6; $red++) {
+      for ($green = 0; $green < 6; $green++) {
+    for ($blue = 0; $blue < 6; $blue++) {
+        for ($alpha = 0; $alpha < 6; $alpha++) {
+      $code = 16 + ($red * 36) + ($green * 6) + $blue;
+      printf($line1, $code);
+      printf($line2, $code);
+      printf($line3,
+             ($red ? ($red * 40 + 55) : 0),
+             ($green ? ($green * 40 + 55) : 0),
+             ($blue ? ($blue * 40 + 55) : 0),
+             ($alpha ? ($alpha * 40 + 55) : 0));
+        }
+    }
+      }
+  }
+  
+  # Attempt 2: Appears to be no difference with the original
+  # colors 16-231 are a 6x6x6 color cube
+  for ($red = 0; $red < 6; $red++) {
+      for ($green = 0; $green < 6; $green++) {
+    for ($blue = 0; $blue < 6; $blue++) {
+        $code = 16 + ($red * 36) + ($green * 6) + $blue;
+        printf($line1, $code);
+        printf($line2, $code);
+        printf($line3,
+         ($red ? ($red * 40 + 55) : 0),
+         ($green ? ($green * 40 + 55) : 0),
+         ($blue ? ($blue * 40 + 55) : 0),
+         ($red * $green * $blue));
+    }
+      }
+  }
+  
+  # Attempt 3
+  # colors 16-231 are a 6x6x6 color cube
+  for ($red = 0; $red < 6; $red++) {
+      for ($green = 0; $green < 6; $green++) {
+    for ($blue = 0; $blue < 6; $blue++) {
+        $code = 16 + ($red * 36) + ($green * 6) + $blue;
+        printf($line1, $code);
+        printf($line2, $code);
+        printf($line3,
+         ($red ? ($red * 40 + 55) : 0),
+         ($green ? ($green * 40 + 55) : 0),
+         ($blue ? ($blue * 40 + 55) : 0),
+  
+         # This part here appears duplicated
+         ($red ? ($red * 40 + 55) : 0),
+         ($green ? ($green * 40 + 55) : 0),
+         ($blue ? ($blue * 40 + 55) : 0));
+    }
+      }
+  }
+#+END_SRC
+
+*** Translate
+The original file.
+
+#+BEGIN_SRC perl -n :async :results verbatim code
+  #! /usr/bin/perl
+  
+  # Construct a header file defining default resources for the 256-color model
+  # of xterm.  This is modeled after the 256colors2.pl script.
+  
+  # use the resources for colors 0-15 - usually more-or-less a
+  # reproduction of the standard ANSI colors, but possibly more
+  # pleasing shades
+  
+  use strict;
+  
+  our ( $line1, $line2, $line3 );
+  our ( $red, $green, $blue, $gray );
+  our ( $level, $code, @steps );
+  
+  print <<EOF;
+  /*
+   * This header file was generated by $0
+   */
+  /* \$XTermId\$ */
+  
+  #ifndef included_256colres_h
+  #define included_256colres_h
+  
+  EOF
+  
+  $line1="COLOR_RES(\"%d\",";
+  $line2="\tscreen.Acolors[%d],";
+  $line3="\tDFT_COLOR(\"rgb:%2.2x/%2.2x/%2.2x\")),\n";
+  
+  # colors 16-231 are a 6x6x6 color cube
+  for ($red = 0; $red < 6; $red++) {
+      for ($green = 0; $green < 6; $green++) {
+  	for ($blue = 0; $blue < 6; $blue++) {
+  	    $code = 16 + ($red * 36) + ($green * 6) + $blue;
+  	    printf($line1, $code);
+  	    printf($line2, $code);
+  	    printf($line3,
+  		   ($red ? ($red * 40 + 55) : 0),
+  		   ($green ? ($green * 40 + 55) : 0),
+  		   ($blue ? ($blue * 40 + 55) : 0));
+  	}
+      }
+  }
+  
+  # colors 232-255 are a grayscale ramp, intentionally leaving out
+  # black and white
+  $code=232;
+  for ($gray = 0; $gray < 24; $gray++) {
+      $level = ($gray * 10) + 8;
+      $code = 232 + $gray;
+      printf($line1, $code);
+      printf($line2, $code);
+      printf($line3,
+  	   $level, $level, $level);
+  }
+  
+  print <<EOF;
+  
+  #endif /* included_256colres_h */
+  EOF
+#+END_SRC
+
+Transformation command: /in python/
+
+Translation to Python attempt 1.
+
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  #! /usr/bin/python
+  
+  # Construct a header file defining default resources for the 256-color model
+  # of xterm.  This is modeled after the 256colors2.pl script.
+  
+  # use the resources for colors 0-15 - usually more-or-less a
+  # reproduction of the standard ANSI colors, but possibly more
+  # pleasing shades
+  
+  import sys
+  
+  def print_header():
+      print '/*'
+      print ' * This header file was generated by %s' % sys.argv[0]
+      print ' */'
+      print '/* \$XTermId\$ */'
+      print
+      print '#ifndef included_256colres_h'
+      print '#define included_256colres_h'
+      print
+  
+  def print_footer():
+      print
+      print '#endif /* included_256colres_h */'
+  
+  def print_color(code, red, green, blue):
+      print 'COLOR_RES("%d",' % code,
+      print 'screen.Acolors[%d],' % code,
+      print 'DFT_COLOR("rgb:%2.2x/%2.2x/%2.2x"))),' % (red, green, blue)
+  
+  def print_colors():
+      # colors 16-231 are a 6x6x6 color cube
+      for red in range(6):
+          for green in range(6):
+              for blue in range(6):
+                  code = 16 + (red * 36) + (green * 6) + blue
+                  print_color(code, red, green, blue)
+  
+      # colors 232-255 are a grayscale ramp, intentionally leaving out
+      # black and white
+      for gray in range(24):
+          level = (gray * 10) + 8
+          code = 232 + gray
+          print_color(code, level, level, level)
+  
+  def main():
+      print_header()
+      print_colors()
+      print_footer()
+  
+  if __name__ == '__main__':
+      main()
+#+END_SRC
+
+Attempt 2:
+
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  #! /usr/bin/python
+  
+  # Construct a header file defining default resources for the 256-color model
+  # of xterm.  This is modeled after the 256colors2.pl script.
+  
+  # use the resources for colors 0-15 - usually more-or-less a
+  # reproduction of the standard ANSI colors, but possibly more
+  # pleasing shades
+  
+  import sys
+  
+  def main():
+      print '/*'
+      print ' * This header file was generated by %s' % sys.argv[0]
+      print ' */'
+      print '/* \$XTermId\$ */'
+      print ''
+      print '#ifndef included_256colres_h'
+      print '#define included_256colres_h'
+      print ''
+  
+      line1 = "COLOR_RES(\"%d\","
+      line2 = "\tscreen.Acolors[%d],"
+      line3 = "\tDFT_COLOR(\"rgb:%2.2x/%2.2x/%2.2x\")),\n"
+  
+      # colors 16-231 are a 6x6x6 color cube
+      for red in range(6):
+          for green in range(6):
+              for blue in range(6):
+                  code = 16 + (red * 36) + (green * 6) + blue
+                  print line1 % code
+                  print line2 % code
+                  print line3 % (
+                      (red and (red * 40 + 55)) or 0,
+                      (green and (green * 40 + 55)) or 0,
+                      (blue and (blue * 40 + 55)) or 0)
+  
+      # colors 232-255 are a grayscale ramp, intentionally leaving out
+      # black and white
+      code = 232
+      for gray in range(24):
+          level = (gray * 10) + 8
+          code = 232 + gray
+          print line1 % code
+          print line2 % code
+          print line3 % (level, level, level)
+  
+      print ''
+      print '#endif /* included_256colres_h */'
+  
+  if __name__ == '__main__':
+      main()
+#+END_SRC
+
+Attempt 3:
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  #! /usr/bin/python
+  
+  # Construct a header file defining default resources for the 256-color model
+  # of xterm.  This is modeled after the 256colors2.pl script.
+  
+  # use the resources for colors 0-15 - usually more-or-less a
+  # reproduction of the standard ANSI colors, but possibly more
+  # pleasing shades
+  
+  import sys
+  
+  def main():
+      print '/*'
+      print ' * This header file was generated by %s' % sys.argv[0]
+      print ' */'
+      print '/* \$XTermId\$ */'
+      print ''
+      print '#ifndef included_256colres_h'
+      print '#define included_256colres_h'
+      print ''
+  
+      line1 = "COLOR_RES(\"%d\","
+      line2 = "\tscreen.Acolors[%d],"
+      line3 = "\tDFT_COLOR(\"rgb:%2.2x/%2.2x/%2.2x\")),\n"
+  
+      # colors 16-231 are a 6x6x6 color cube
+      for red in range(6):
+          for green in range(6):
+              for blue in range(6):
+                  code = 16 + (red * 36) + (green * 6) + blue
+                  print line1 % code
+                  print line2 % code
+                  print line3 % ((red and (red * 40 + 55)) or 0,
+                                 (green and (green * 40 + 55)) or 0,
+                                 (blue and (blue * 40 + 55)) or 0)
+  
+      # colors 232-255 are a grayscale ramp, intentionally leaving out
+      # black and white
+      code = 232
+      for gray in range(24):
+          level = (gray * 10) + 8
+          code = 232 + gray
+          print line1 % code
+          print line2 % code
+          print line3 % (level, level, level)
+  
+      print ''
+      print '#endif /* included_256colres_h */'
+  
+  if __name__ == '__main__':
+      main()
+#+END_SRC
+
+Attempt 4:
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  #! /usr/bin/python
+  
+  # Construct a header file defining default resources for the 256-color model
+  # of xterm.  This is modeled after the 256colors2.pl script.
+  
+  # use the resources for colors 0-15 - usually more-or-less a
+  # reproduction of the standard ANSI colors, but possibly more
+  # pleasing shades
+  
+  import sys
+  import os
+  
+  sys.path.append(os.environ['HOME'] + '/bin')
+  
+  from xtermcolor import colorize
+  
+  print '/*'
+  print ' * This header file was generated by ' + sys.argv[0]
+  print ' */'
+  print '/* \$XTermId\$ */'
+  print ''
+  print '#ifndef included_256colres_h'
+  print '#define included_256colres_h'
+  print ''
+  
+  line1 = 'COLOR_RES("%d",'
+  line2 = '\tscreen.Acolors[%d],'
+  line3 = '\tDFT_COLOR("rgb:%2.2x/%2.2x/%2.2x")),'
+  
+  # colors 16-231 are a 6x6x6 color cube
+  for red in range(6):
+      for green in range(6):
+          for blue in range(6):
+              code = 16 + (red * 36) + (green * 6) + blue
+              print line1 % code
+              print line2 % code
+              print line3 % (
+                  (red and (red * 40 + 55) or 0),
+                  (green and (green * 40 + 55) or 0),
+                  (blue and (blue * 40 + 55) or 0))
+  
+  # colors 232-255 are a grayscale ramp, intentionally leaving out
+  # black and white
+  code = 232
+  for gray in range(24):
+      level = (gray * 10) + 8
+      code = 232 + gray
+      print line1 % code
+      print line2 % code
+      print line3 % (level, level, level)
+  
+  print '#endif /* included_256colres_h */'
+#+END_SRC

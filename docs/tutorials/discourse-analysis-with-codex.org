@@ -1,0 +1,129 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Discourse Analysis with Codex
+#+DATE: <2022-01-03>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: codex pen imaginary discourse-analysis
+
+** Summary
+Whilst perusing a book clearance store in
+2019, I came across an interesting book, for
+only $2. The name of that book is Coherence in
+NL, which exhibits several models of discourse analysis.
+
+Upon seeing this book, I also saw one of my
+Professors, Alistair Knott, and was excited to
+show him, and to my amazement, he told me that
+he was in that book.
+
+Over New Year's day, 1 Jan 2022, I read a few
+chapters and decided that discourse analysis
+for the sake of coherence in NL is an
+important area to become stronger in.
+
++ Book :: https://mitpress.mit.edu/books/coherence-natural-language
+
+Therefore, I have decided to look into
+discourse parsers and also to create a prompt
+for discourse analysis.
+
+- A discourse parser :: https://github.com/yizhongw/StageDP
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/yxMZr27AwMVWeQum2Q8ShC0QL" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/yxMZr27AwMVWeQum2Q8ShC0QL.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/yxMZr27AwMVWeQum2Q8ShC0QL.js" id="asciicast-yxMZr27AwMVWeQum2Q8ShC0QL" async></script>
+#+END_EXPORT
+
+** Prompt
++ Code :: http://github.com/semiosis/prompts/blob/master/prompts/analyse-discourse-1.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "analyse discourse"
+  doc: "Annotate the given discourse segments"
+  prompt-version: 1
+  copyright: "(c) 2006 Massachusetts Institute of Technology"
+  prompt: |+
+      Coherence in Natural Language: Data Structures and Applications
+      (c) 2006 Massachusetts Institute of Technology
+      Authors: Florian Wolf and Edward Gibson
+      <delim>
+      Table 2.1
+      Contentful conjunctions that illustrate coherence relations
+      
+      Relation              : Conjunction
+      Cause-effect          : because, and so                                                                                                                              
+      Violated expectation  : although, but, while                                                                                                                         
+      Condition             : if... (then), as long as, while                                                                                                              
+      Similarity            : and, (and) similarly                                                                                                                         
+      Contrast              : by contrast, but                                                                                                                             
+      Temporal sequence     : (and) then; first, second,... ; before; after; while                                                                                         
+      Attribution           : according to... ,... said, claim that... , maintain that... , stated that...                                                                 
+      Example               : For example, for instance                                                                                                                    
+      Elaboration           : also, furthermore, in addition, notice (furthermore) that, (for, in, on, against, with,...) which, who, (for, in, on, against, with,...) whom
+      Generalization        : in general
+      <delim>
+      Discourse 1:
+      <delim>
+      If the new software works, everyone should be happy.
+      The new software worked great, but nobody was happy.
+      <delim>
+      Analysis of 1:
+      <delim>
+      Condition
+      a. If the new software works,    
+      b. everyone should be happy.
+  
+      Violated Expectation
+      a. The new software worked great,
+      b. but nobody was happy.
+      <delim>
+      Discourse 2:
+      <delim>
+      <discourse segments>
+      <delim>
+      Analysis of 2:
+      <delim>
+  engine: "OpenAI Codex"
+  temperature: 0.3
+  max-generated-tokens: "(* 2 prompt-length)"
+  top-p: 1.0
+  stop-sequences:
+  - "<delim>"
+  cache: on
+  vars:
+  - "discourse segments"
+  examples:
+  - "First, John went grocery shopping. Then he disappeared in a liquor store."
+  filter: on
+  completion: off
+  insertion: off
+  external-related:
+  - "https://mitpress.mit.edu/books/coherence-natural-language"
+#+END_SRC
+
+** Example
+*** Input
+#+BEGIN_SRC text -n :async :results verbatim code
+  First, John went grocery shopping. Then he disappeared in a liquor store.
+#+END_SRC
+
+*** Output
+#+BEGIN_SRC text -n :async :results verbatim code
+  Temporal Sequence
+  a. First, John went grocery shopping.
+  b. Then he disappeared in a liquor store.
+#+END_SRC
+
+** Conclusion
+Amazingly, Codex is capable of discourse
+analysis. I feed it one theory on discourse
+analysis taken from a book (there are many
+theories), and it understands how to break
+down language into those relations.

@@ -1,0 +1,30 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: M♡ - Pen.el + VideoGPT = The Minority Report
+#+DATE: <2022-01-13>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen gpt openai asciinema
+
+** Introducing =M♡= (Currently in development)
+=M♡= is a video prompting mechanism that
+connects your terminal to a video prompting
+pipeline.
+
+It's used to imagine multiversal continuations
+of your computer state forwards and backwards
+in time.
+
+[[./minority-report-dev.png]]
+
+** How it works
+- Start recording
+  - asciinema
+- Do some work, through =Pen.el=
+- Stop recording
+- Convert terminal text stream to =.gif= and then =base64=
+- Upload as part of a multi-modal prompt
+- Imagine multiversal continuations of your workflow forwards and backwards in time

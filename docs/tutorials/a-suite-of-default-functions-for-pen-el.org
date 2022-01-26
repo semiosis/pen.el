@@ -1,0 +1,240 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: A suite of default functions for Pen.el
+#+DATE: <2021-10-20>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt nlp llm emacs pen
+
+** Summary
+
+I showcase some UI functions for =Pen.el=.
+This is what a futuristic IDE based on LMs
+looks like!
+
+** Customizing =Pen.el=
+*** =M-x pen-customize=
+
+This is how to interact with the current list of configuration parameters.
+
+Select to force all prompts to use the same engine, for example!
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Reasonable defaults
+  OpenAI
+  OpenAI Davinci Instruct
+  OpenAI Davinci
+  OpenAI Cushman
+  OpenAI Curie
+  OpenAI Codex
+  OpenAI Babbage
+  NLP Cloud
+  HuggingFace
+  HF NovelAI Genji Python 6B
+  HuggingFace GPT-2
+  bigscience T0pp
+  local GPT-J-6B slim
+  AIx GPT-J-6B
+  FB Bart Large CNN
+  AI21 J1-Jumbo
+  AI21
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/Pq0QgutlOeTME6G9H4ntAwJQO" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/Pq0QgutlOeTME6G9H4ntAwJQO.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/Pq0QgutlOeTME6G9H4ntAwJQO.js" id="asciicast-Pq0QgutlOeTME6G9H4ntAwJQO" async></script>
+#+END_EXPORT
+
+*** Set key bindings
+
+[[./penel-bindings-example.png]]
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (setq pen-fav-programming-language "Emacs Lisp")
+  (setq pen-fav-world-language "English")
+  
+  ;; Actually, I want to run prompts this way
+  ;; C-M-i is the same as M-C-i. No such thing as C-M-TAB.
+  (define-key global-map (kbd "M-SPC") #'indent-for-tab-command)
+  
+  ;; g is for generation
+  (define-key pen-map (kbd "M-SPC g b") 'pf-write-a-blog-post/2)
+  ;; U is for understand
+  (define-key pen-map (kbd "M-SPC r") 'pf-transpile/3)
+  (define-key pen-map (kbd "M-SPC t") 'pen-transform-prose)
+  (define-key pen-map (kbd "M-SPC u") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
+  (define-key pen-map (kbd "M-SPC w") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-world-language)))))
+  
+  (define-key pen-map (kbd "H-^") 'pen-transform)
+  (define-key pen-map (kbd "M-SPC ^") 'pen-transform)
+  (define-key pen-map (kbd "M-SPC w") 'pen-transform)
+  (define-key pen-map (kbd "M-SPC t") nil)
+  (define-key pen-map (kbd "M-SPC t") 'pen-transform)
+  (define-key pen-map (kbd "M-SPC i") 'pen-insert-snippet-from-lm)
+  (define-key pen-map (kbd "M-SPC h") nil)
+  (define-key pen-map (kbd "M-SPC h f u") 'pf-how-to-use-a-function/2)
+  (define-key pen-map (kbd "M-SPC h f i") 'pf-given-a-function-name-show-the-import/2)
+  (define-key pen-map (kbd "M-SPC e c") 'pf-explain-some-code/2)
+  (define-key pen-map (kbd "M-SPC e") nil)
+  (define-key pen-map (kbd "M-SPC e f") 'pf-get-an-example-of-the-usage-of-a-function/2)
+  (define-key pen-map (kbd "M-SPC a") nil)
+  (define-key pen-map (kbd "M-SPC g a") (dff (pen-context 5 (call-interactively 'pf-append-to-code/3))))
+  (define-key pen-map (kbd "M-SPC A") 'pf-append-to-code/3)
+  (define-key pen-map (kbd "M-SPC h f /") 'pen-select-function-from-nl)
+  (define-key pen-map (kbd "M-SPC N") 'sps-nlsc)
+  (define-key pen-map (kbd "M-SPC ;") 'sps-nlsh)
+  (define-key pen-map (kbd "M-SPC f") nil)
+  (define-key pen-map (kbd "M-SPC l") nil)
+  (define-key pen-map (kbd "M-SPC l x") 'pen-autofix-lsp-errors)
+  (define-key pen-map (kbd "M-SPC 1") 'pen-complete-word)
+  (define-key pen-map (kbd "M-SPC 2") 'pen-complete-words)
+  (define-key pen-map (kbd "M-SPC 3") 'pen-complete-line)
+  (define-key pen-map (kbd "M-SPC 4") 'pen-complete-lines)
+  (define-key pen-map (kbd "M-SPC 5") 'pen-complete-long)
+  (define-key pen-map (kbd "M-SPC P") 'pen-complete-long)
+  (define-key pen-map (kbd "M-SPC c") nil)
+  (define-key pen-map (kbd "M-SPC c t") 'pen-transform-code)
+  (define-key pen-map (kbd "M-SPC g p") 'pf-generate-perl-command/1)
+  (define-key pen-map (kbd "M-SPC c g r") 'pf-gpt-j-generate-regex/2)
+  (define-key pen-map (kbd "M-SPC c g g") 'pf-generate-program-from-nl/3)
+  (define-key pen-map (kbd "H-SPC m e") 'pf-translate-math-into-natural-language/1)
+  (define-key pen-map (kbd "H-SPC m l") 'pf-convert-ascii-to-latex-equation/1)
+  (define-key pen-map (kbd "H-SPC c n") 'pen-select-function-from-nl)
+  (define-key pen-map (kbd "H-SPC c h") 'pf-generic-tutor-for-any-topic/2)
+  (define-key pen-map (kbd "H-SPC c p") 'pf-imagine-a-project-template/1)
+  (define-key pen-map (kbd "H-SPC c b") 'pf-generate-the-contents-of-a-new-file/6)
+  
+  (add-to-list 'pen-editing-functions 'pen-lsp-explain-error)
+  (add-to-list 'pen-editing-functions 'pf-explain-error/2)
+  (add-to-list 'pen-editing-functions 'rcm-explain-code)
+  (add-to-list 'pen-editing-functions 'pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1)
+  (add-to-list 'pen-editing-functions 'pf-translate-from-world-language-x-to-y/3)
+  (add-to-list 'pen-editing-functions 'pf-tldr-summarization/1)
+  (add-to-list 'pen-editing-functions 'pf-clean-prose/1)
+  (add-to-list 'pen-editing-functions 'pf-correct-grammar/1)
+  (add-to-list 'pen-editing-functions 'rcm-generate-program)
+  (add-to-list 'pen-editing-functions 'pf-transform-code/3)
+  (add-to-list 'pen-editing-functions 'pf-gpt-j-generate-regex/2)
+  (add-to-list 'pen-editing-functions 'pf-transpile-from-programming-language-x-to-y/3)
+  (add-to-list 'pen-editing-functions 'pen-tutor-mode-assist)
+  (add-to-list 'pen-editing-functions 'pf-thesaurus/1)
+  (add-to-list 'pen-editing-functions 'pf-get-an-example-sentence-for-a-word/1)
+  (add-to-list 'pen-editing-functions 'pf-get-an-example-of-the-usage-of-a-function/2)
+  (add-to-list 'pen-editing-functions 'pen-detect-language-context)
+  (add-to-list 'pen-editing-functions 'pf-get-documentation-for-syntax-given-screen/2)
+  (add-to-list 'pen-editing-functions 'rcm-term)
+  (add-to-list 'pen-editing-functions 'pen-autofix-lsp-errors)
+#+END_SRC
+
+As you can see, they appear handily after typing =Alt-Space= or (=M-SPC= in emacs-speak).
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/dVi8ZyPhSONgZkJplJAqDVRnP" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/dVi8ZyPhSONgZkJplJAqDVRnP.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/dVi8ZyPhSONgZkJplJAqDVRnP.js" id="asciicast-dVi8ZyPhSONgZkJplJAqDVRnP" async></script>
+#+END_EXPORT
+
+*** Editing prompts
+
+Start by navigating to your prompts directory i.e. =$MYGIT/semiosis/prompts=.
+
+That repo can be found here http://github.com/semiosis/prompts .
+
+Make changes to prompts then run =M-x pen-generate-prompt-functions=.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/RKqt0tM5IGr2unLcSEiVRNJmD" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/RKqt0tM5IGr2unLcSEiVRNJmD.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/RKqt0tM5IGr2unLcSEiVRNJmD.js" id="asciicast-RKqt0tM5IGr2unLcSEiVRNJmD" async></script>
+#+END_EXPORT
+
+The help for the function was updated after changing and reloading; Specifically, the =notes= section.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  pf-generate-a-backronym/2 is an interactive function defined in
+  pen-example-config.el.
+  
+  Signature
+  (pf-generate-a-backronym/2 &optional ACRONYM CONTEXT &key NO-SELECT-RESULT INCLUDE-PROMPT NO-GEN SELECT-ONLY-MATCH VARIADIC-VAR)
+  
+  Documentation
+  Generate a backronym
+  Given a word, generate an backronym for it
+  
+  path:
+  - /home/shane/source/git/spacemacs/prompts/prompts/generate-a-backronym-2.prompt
+  
+  stop-sequence:
+  
+  
+  stop-sequences:- 
+  
+  - 
+  
+  
+  engine: OpenAI Davinci
+  
+  lm-command: openai-complete.sh
+  
+  model: davinci
+  
+  n-completions: 5
+  
+  engine-max-n-completions: 10
+  
+  n-collate: 1
+  
+  n-target: 1
+  
+  max-generated-tokens: 100
+  
+  engine-min-tokens: 0
+  
+  engine-max-tokens: 2049
+  
+  engine-whitespace-support: no
+  
+  task: Generate a backronym
+  
+  notes:- This prompt is a bit big for my liking. Too many tuning shots.
+  
+  insertion-off: on
+  
+  completion-off: on
+  
+  external-related
+  :- https://docs.google.com/spreadsheets/d/1EuciDyKqFg2CIoQS89tF238oGtJq8a4mRx8kV9eA1Lc/edit#gid=2011839893
+  
+  examples:
+  - boysenberries
+  
+  prompt:
+  The AI is super helpful and funny, and will invent acronyms which match each letter.
+  It is important to avoid generating alternate meanings which are sexual, drug-related, profane, abusive, or sad in nature. 
+  It is important that the first letter of each output word matches the individual letters in the input acronym.
+  It is important that the output sentence is intelligible and the words are real words.
+  It is very important that the output sentence considers the context provided.
+  <delim>
+  Input: [P][O][O][P]
+  Context: A system or application that just barely works, and is a pain to maintain and extend.
+  Output: [P]ainfully [O]utlandish [O]verpriced [P]roject
+  <delim>
+  Input: [T][A][R][D][I][S]
+  Context: A system for compressing text documents, where tokens are turned into images before compression.
+  Output: [T]ext [A]ctually [R]andomly [D]istorted [I]mage [S]equences
+  <delim>
+  Input: [Y][A][D][A][D][A]
+  Context: Language learning app used for basics or mixed practice by artificial intelligent systems.
+  Output: [Y]ou [A]dvanced [D]ifficulty [A]udio [D]ownload [A]udio 
+  <delim>
+  Input: <bx:acronym>
+  Context: <context>
+  Output: <:pp>
+#+END_SRC

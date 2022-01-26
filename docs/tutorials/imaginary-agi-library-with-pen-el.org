@@ -1,0 +1,32 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Imaginary AGI Library with Pen.el
+#+DATE: <2021-11-24>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: demo pen 𝑖λ imaginary
+
+** Summary
+Just a bit of fun to showcase the imaginary interpreter and universal syntax highlighting. I demo interacting with an AGI via imaginary python.
+
+*** Technical details
+This is a dockerized emacs running within
+neovim. Emacs is communicating with itself via
+a bash interop, that constructs a readline-
+capable imaginary interpreter. emacs' =comint=
+mode is used to provide structure and prompt highlighting.
+
+Pen.el is used to provide autocompletion. The
+interperter is imagined, and the python
+libraries used are imagined too.
+
+*** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/moaMT9uoQ18oEFR07QPY8jP5s" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/moaMT9uoQ18oEFR07QPY8jP5s.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/moaMT9uoQ18oEFR07QPY8jP5s.js" id="asciicast-moaMT9uoQ18oEFR07QPY8jP5s" async></script>
+#+END_EXPORT

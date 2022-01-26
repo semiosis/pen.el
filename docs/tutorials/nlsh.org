@@ -1,0 +1,81 @@
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: nlsh (Natural Language Shell)
+#+DATE: <2021-11-28>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen
+
+| Install with Pen |                                                    |
+|------------------+----------------------------------------------------|
+| Pen.el on GitHub | https://github.com/semiosis/pen.el/                |
+| Tutorial         | https://mullikine.github.io/posts/pen-el-tutorial/ |
+
+** Introducing NL·SH!
+To use it, simply run nlsh with the operating system.
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  # Example 1
+  nlsh Alpine Linux
+
+  # Example 2
+  nlsh Ubuntu
+
+  # Example 3 -- with syntax highlighting
+  nlsh -nv Ubuntu
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Enter your commands in natural language.
+  
+  ubuntu: set reminder to take beer out of fridge in 30 mins
+
+  at now + 30 minutes <<< 'echo "take beer out of fridge" > $HOME/beerreminder.txt'
+  at now + 30 min <<< "echo 'Take beer out of fridge'"
+  echo "take beer out of fridge in 30 mins" | at now + 30 minutes
+  at now + 30 min <<< "echo 'take beer out of fridge'"
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/jZRK7OfVJKV9kcJJsDct77s04" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/jZRK7OfVJKV9kcJJsDct77s04.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/jZRK7OfVJKV9kcJJsDct77s04.js" id="asciicast-jZRK7OfVJKV9kcJJsDct77s04" async></script>
+#+END_EXPORT
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  ubuntu: search for jazz music with youtube-dl
+
+  youtube-dl -i -c -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --add-metadata https://www.youtube.com/results?search_query=jazz
+  youtube-dl -x --audio-format mp3 <url>
+  youtube-dl -x --audio-format mp3 https://www.youtube.com/results?search_query=jazz
+  youtube-dl -i -f mp4 https://www.youtube.com/results?search_query=jazz+music
+  youtube-dl -x --audio-format mp3 -i "ytsearch1:jazz music"
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  ubuntu: search for jazz with ytsearch1 and youtube-dl and play it using mplayer
+
+  youtube-dl -x --audio-format mp3 --audio-quality 0 --output "jazz.%(ext)s" https://www.youtube.com/watch?v=0-XRtW1jzKk && mplayer jazz.mp3
+  ytsearch1 "jazz" | xargs youtube-dl -o - | mplayer -
+  youtube-dl -o '%(title)s.%(ext)s' -f bestaudio --exec 'mplayer {}' https://www.youtube.com/results?search_query=jazz
+  youtube-dl -x --audio-format mp3 <url> | mplayer -
+  youtube-dl -x --audio-format mp3 --audio-quality 0 --no-part -o '%(title)s.%(ext)s' 'ytsearch1:jazz' && mplayer *.mp3
+#+END_SRC
+
+** Older demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/3KNLztZSSlnDDdrfppmTOBLQV" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/3KNLztZSSlnDDdrfppmTOBLQV.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/3KNLztZSSlnDDdrfppmTOBLQV.js" id="asciicast-3KNLztZSSlnDDdrfppmTOBLQV" async></script>
+#+END_EXPORT
+
+[[./nlsh-demo.png]]
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/TlSZoI9sBFmVVt0PlFm4o6gYQ" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/TlSZoI9sBFmVVt0PlFm4o6gYQ.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/TlSZoI9sBFmVVt0PlFm4o6gYQ.js" id="asciicast-TlSZoI9sBFmVVt0PlFm4o6gYQ" async></script>
+#+END_EXPORT

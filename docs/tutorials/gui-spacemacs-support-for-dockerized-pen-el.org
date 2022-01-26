@@ -1,0 +1,33 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: GUI Spacemacs support for Dockerized Pen.el
+#+DATE: <2021-08-11>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen emacs
+
+** Summary
+I add support for Spacemacs in the Pen.el docker image.
+
+|                                   |                                                                                 |
+|-----------------------------------+---------------------------------------------------------------------------------|
+| Pen.el on GitHub                  | https://github.com/semiosis/pen.el/                                             |
+| Prompts on GitHub                 | http://github.com/semiosis/prompts/                                             |
+| Tutorial                          | https://semiosis.github.io/posts/pen-tutorial/                                  |
+| Discord channel invite            | https://discord.gg/JwKGbAdNHR                                                     |
+
+** Demo
+This is me doing some code-generation in Spacemacs.
+
+[[./gui-spacemacs-pen.png]]
+
+And below is having inserted the code.
+
+[[./gui-spacemacs-pen-inserted.png]]
+
+And below, running in Google Chrome.
+
+[[./gui-spacemacs-pen-chrome.png]]

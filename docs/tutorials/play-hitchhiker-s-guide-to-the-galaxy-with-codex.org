@@ -1,0 +1,81 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Play Zork! and Hitchhiker's Guide To The Galaxy with Codex
+#+DATE: <2021-12-05>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: openai pen
+
+** Summary
+I patch =frotz= to work around a bug in order
+to play =hhgttg= and =zork= inside =cterm= (Complex
+Term).
+
+This enables me to use OpenAI's Codex to play =hhgttg=.
+
++ Precursor article :: https://mullikine.github.io/posts/hhgttg/
+
+** Zork! with Codex
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/agvn6dipah5PYrbz8rg3O6YP4" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/agvn6dipah5PYrbz8rg3O6YP4.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/agvn6dipah5PYrbz8rg3O6YP4.js" id="asciicast-agvn6dipah5PYrbz8rg3O6YP4" async></script>
+#+END_EXPORT
+
+** Setup
+#+BEGIN_SRC sh -n :async :results verbatim drawer
+  cd
+  git clone "https://gitlab.com/DavidGriffith/frotz"
+  git clone "https://github.com/historicalsource/hitchhikersguide"
+  apt install libao-dev
+  apt install libsndfile-dev
+  apt install libsamplerate-dev
+  apt install libmodplug-dev
+#+END_SRC
+
+** Patch
+#+BEGIN_SRC diff -n :async :results verbatim code
+  diff --git a/src/curses/ux_screen.c b/src/curses/ux_screen.c
+  index 950d34d..4d56f61 100644
+  --- a/src/curses/ux_screen.c
+  +++ b/src/curses/ux_screen.c
+  @@ -175,10 +175,11 @@ static void resize_restore_screen(void)
+    */
+   void unix_resize_display(void)
+   {
+  +/*
+   	save_screen();
+   	endwin();
+   	refresh();
+  -	resize_restore_screen();
+  +	resize_restore_screen();*/
+   } /* unix_redraw_display */
+#+END_SRC
+
+** Play
+#+BEGIN_SRC sh -n :async :results verbatim drawer
+  ~/frotz/frotz ~/hitchhikersguide/COMPILED/s4.z3
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/j2ZpFsjLsWlP80Szx8QYglDy0" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/j2ZpFsjLsWlP80Szx8QYglDy0.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/j2ZpFsjLsWlP80Szx8QYglDy0.js" id="asciicast-j2ZpFsjLsWlP80Szx8QYglDy0" async></script>
+#+END_EXPORT
+
+** Findings
+I found that Cohere seems to complete text
+with a focus on generating prose but doesn't
+adopt the interactive fiction pattern. If
+anything, it's output reads much like a
+walkthrough.
+
+I also found it useful to switch to Davinci
+from Codex in order to get out of a repetitive
+pattern of completions.

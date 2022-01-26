@@ -1,0 +1,81 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Translate the code you're reading into your fav language
+#+DATE: <2021-10-19>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen gpt openai codex
+
+** Summary
+The idea is you have a favourite programming
+language and while reading code you don't
+understand you want a default language to
+translate into.
+
+** elisp
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defcustom pen-fav-programming-language ""
+    "By setting pen-fav-programming-language, you set a default language to translate into.
+  This is useful for code-understanding when reading languages you don't understand.
+  | =H-\" U= | =dff-pf-transpile-3-nil-nil-emacs-lisp-= | =pen-map=
+  "
+    :type 'string
+    :group 'pen
+    :initialize #'custom-initialize-default)
+  
+  ;; U is for understand
+  (define-key pen-map (kbd "H-\" U") (dff (etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/cgN7wDVzbJLhHUeP5d9EpwoBm" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/cgN7wDVzbJLhHUeP5d9EpwoBm.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/cgN7wDVzbJLhHUeP5d9EpwoBm.js" id="asciicast-cgN7wDVzbJLhHUeP5d9EpwoBm" async></script>
+#+END_EXPORT
+
+*** What does this Go code do?
+#+BEGIN_SRC go -n :fp /tmp/babel/main.go :sps "set -xv; go run {}" :async :results verbatim code
+  func filterCommands(uri DocumentURI, commands []Command) []Command {
+  	results := []Command{}
+  	for _, v := range commands {
+  		if v.OS != "" {
+  			found := false
+  			for _, os := range strings.FieldsFunc(v.OS, func(r rune) bool { return r == ',' }) {
+  				if strings.TrimSpace(os) == runtime.GOOS {
+  					found = true
+  				}
+  			}
+  			if !found {
+  				continue
+  			}
+  		}
+  		results = append(results, Command{
+  			Title:     v.Title,
+  			Command:   fmt.Sprintf("efm-langserver\t%s\t%s", v.Command, string(uri)),
+  			Arguments: []interface{}{string(uri)},
+  		})
+  	}
+  	return results
+  }
+#+END_SRC
+
+*** Ahhh, Elisp :) That makes sense now
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defun filter-commands (uri commands)
+    (let (results)
+      (dolist (v commands)
+        (when (and (not (string-empty-p v))
+                   (not (string-empty-p v.os)))
+          (let ((os (split-string v.os ",")))
+            (when (member (or (getenv "GOOS") "") os)
+              (push (list :title v.title
+                          :command (format "efm-langserver %s %s" v.command uri)
+                          :arguments (list uri))
+                    results)))))
+      results))
+#+END_SRC

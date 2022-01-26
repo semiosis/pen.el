@@ -1,0 +1,25 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Pen.el has a demo menu for learning its usage
+#+DATE: <2022-01-22>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen openai
+
+** Summary
+There is now a =Demos= menu for learning how
+to use =Pen.el=. Just sit back and relax and
+flick through the demos.
+
+** Demo of running demos within Pen.el
+In this case, the installation of =Pen.el=.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/NML9yewDGptPmJlkfHyOCTxI0" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/NML9yewDGptPmJlkfHyOCTxI0.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/NML9yewDGptPmJlkfHyOCTxI0.js" id="asciicast-NML9yewDGptPmJlkfHyOCTxI0" async></script>
+#+END_EXPORT

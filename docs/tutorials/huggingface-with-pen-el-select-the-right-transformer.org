@@ -1,0 +1,206 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: HuggingFace with Pen.el. Select the right transformer
+#+DATE: <2021-08-08>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt hf pen
+
+** Summary
+I add support for HuggingFace transformers via
+the inference API.
+
+I also provide a mechanism for determining
+which API and engine to use depending on the situation.
+
+** Python generation
+*** Microsoft CodeGPT
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: ms-codegpt-small-py
+  include: Generic completion 50 tokens
+  prompt-version: 1
+  lm-command: "hf-complete.sh"
+  engine: "microsoft/CodeGPT-small-py"
+  # https://huggingface.co/transformers/_modules/transformers/generation_utils.html
+  # num_return_sequences has to be 1, but is 4 when doing greedy search.
+  n-completions: 1
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  PEN_N_COMPLETIONS=1 \
+      PEN_PROMPT="import sys data = sys.stdin.read()" \
+      PEN_ENGINE="microsoft/CodeGPT-small-py" \
+      HF_API_KEY="$(myrc .huggingface_token)" \
+      $MYGIT/semiosis/pen.el/scripts/pen-hf.py
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+import sys data = sys.stdin.read() if not data: sys.exit(0)
+#+end_src
+
+*** NovelAI Genji
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: novelai-genji-python-6b
+  include: Generic completion 50 tokens
+  prompt-version: 1
+  lm-command: "hf-complete.sh"
+  issues:
+  - |
+    This is a large model and needs to be connected.
+    Large models do not get loaded automatically
+    to protect quality of service. Contact us at
+    api-inference@huggingface.co so we can
+    configure large models for your endpoints.
+  # https://api-inference.huggingface.co/docs/python/html/quicktour.html#using-large-models-10-go
+  engine: NovelAI/genji-python-6B
+#+END_SRC
+
+** Microsoft Java text generation prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: ms-java-gpt2
+  include: Generic completion 50 tokens
+  prompt-version: 1
+  lm-command: "hf-complete.sh"
+  engine: microsoft/CodeGPT-small-java-adaptedGPT2
+#+END_SRC
+
+** HF Summarization prompt
+Sometimes the engine requires a mode to be specified.
+
+This is new to =Pen.el= because so far I've only dealt with general-task language models like GPT-3 and GPT-J.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  mode: summarize
+#+END_SRC
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: HF summarize
+  prompt-version: 1
+  lm-command: "hf-complete.sh"
+  engine: facebook/bart-large-cnn
+  # Sometimes the engine requires a mode to be specified
+  mode: summarize
+  temperature: 0.6
+  max-tokens: 500
+  top-p: 1
+  prompt: "<1>"
+  stop-sequences:
+  - "###long complete###"
+  vars:
+  - passage
+  examples:
+  - |-
+    Men at Work are an Australian rock band formed
+    in Melbourne in 1978 and best known for
+    breakthrough hits such as "Who Can It Be Now?"
+    or "Down Under". Its founding member and
+    frontman is Colin Hay, who performs on lead
+    vocals and guitar. After playing as an
+    acoustic duo with Ron Strykert during 1978–79,
+    Hay formed the group with Strykert playing
+    bass guitar and Jerry Speiser on drums. They
+    were soon joined by Greg Ham on flute,
+    saxophone, and keyboards and John Rees on bass
+    guitar, with Strykert then switching to lead
+    guitar.
+  filter: true
+  postprocessor: pen-pretty-paragraph
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/AExtSYsN7dZgDAqhVx7J3VNE5" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/AExtSYsN7dZgDAqhVx7J3VNE5.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/AExtSYsN7dZgDAqhVx7J3VNE5.js" id="asciicast-AExtSYsN7dZgDAqhVx7J3VNE5" async></script>
+#+END_EXPORT
+
+As you can see, HF summarization is OK at
+longer text, but doesn't do too well on short
+text.
+
+** =pen-hf.py=
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  #!/usr/bin/python3
+  
+  # https://api-inference.huggingface.co/docs/python/html/detailed_parameters.html#text-generation-task
+  
+  import json
+  import os
+  import requests
+  
+  API_TOKEN = os.environ.get("HF_API_KEY")
+  PEN_ENGINE = os.environ.get("PEN_ENGINE")
+  PEN_PROMPT = os.environ.get("PEN_PROMPT")
+  PEN_MODE = os.environ.get("PEN_MODE")
+  
+  API_URL = f"https://api-inference.huggingface.co/models/{PEN_ENGINE}"
+  headers = {"Authorization": f"Bearer {API_TOKEN}"}
+  
+  
+  def query(payload):
+      data = json.dumps(payload)
+      response = requests.request("POST", API_URL, headers=headers, data=data)
+      return json.loads(response.content.decode("utf-8"))
+  
+  
+  if PEN_MODE == "summarize":
+      ret = query(
+          {
+              "inputs": PEN_PROMPT,
+              "parameters": {
+                  "top_k": os.environ.get("PEN_TOP_K")
+                  and int(os.environ.get("PEN_TOP_K")),
+                  "top_p": os.environ.get("PEN_TOP_P")
+                  and float(os.environ.get("PEN_TOP_P")),
+                  "temperature": os.environ.get("PEN_TEMPERATURE")
+                  and float(os.environ.get("PEN_TEMPERATURE")),
+                  "repetition_penalty": os.environ.get("PEN_REPETITION_PENALTY")
+                  and float(os.environ.get("PEN_REPETITION_PENALTY")),
+                  # "max_new_tokens": os.environ.get("PEN_MAX_TOKENS")
+                  # and int(os.environ.get("PEN_MAX_TOKENS")),
+                  "num_return_sequences": os.environ.get("PEN_N_COMPLETIONS")
+                  and int(os.environ.get("PEN_N_COMPLETIONS")),
+                  # "return_full_text": False,
+              },
+              # "options": {"wait_for_model": True},
+          }
+      )
+  
+      print(PEN_PROMPT + ret[0].get("summary_text"))
+  else:
+      ret = query(
+          {
+              "inputs": PEN_PROMPT,
+              "parameters": {
+                  "top_k": os.environ.get("PEN_TOP_K")
+                  and int(os.environ.get("PEN_TOP_K")),
+                  "top_p": os.environ.get("PEN_TOP_P")
+                  and float(os.environ.get("PEN_TOP_P")),
+                  "temperature": os.environ.get("PEN_TEMPERATURE")
+                  and float(os.environ.get("PEN_TEMPERATURE")),
+                  "repetition_penalty": os.environ.get("PEN_REPETITION_PENALTY")
+                  and float(os.environ.get("PEN_REPETITION_PENALTY")),
+                  "max_new_tokens": os.environ.get("PEN_MAX_TOKENS")
+                  and int(os.environ.get("PEN_MAX_TOKENS")),
+                  "num_return_sequences": os.environ.get("PEN_N_COMPLETIONS")
+                  and int(os.environ.get("PEN_N_COMPLETIONS")),
+                  "return_full_text": False,
+              },
+              # "options": {"wait_for_model": True},
+          }
+      )
+  
+      if len(ret) == 1 and type(ret) is list:
+          print(PEN_PROMPT + ret[0].get("generated_text"))
+      elif len(ret) == 1 and type(ret) is dict and ret.get("error"):
+          print(ret.get("error"))
+      elif len(ret) > 1:
+          for i in range(len(ret)):
+              print(f"===== Completion {i} =====")
+              print(PEN_PROMPT + ret[i].get("generated_text"))
+#+END_SRC

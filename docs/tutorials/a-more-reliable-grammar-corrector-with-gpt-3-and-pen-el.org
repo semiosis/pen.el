@@ -1,0 +1,82 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: A more reliable grammar corrector with GPT-3 and Pen.el
+#+DATE: <2021-08-10>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt openai pen emacs
+
+** Summary
+I make a more reliable grammar corrector.
+
+By allowing the prompt to generate one
+"Corrected English:" string per paragraph, but
+slicing them out at the end, and using a regex
+to match a stop pattern, it's able to handle
+multiple paragraphs more intelligently and more reliably.
+
+** Explanation
+The preprocessor, =pen-s onelineify= reformats
+input text to fit after the =Poor Grammar:=
+subprompt.
+
+However, when given multiple paragraphs,
+despite being onelinerised, GPT-3 tends to
+sometimes generate additional =Corrected English:=
+subprompt echos. These have to be removed by
+the postprocessor, but they are allowed.
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: Correct English spelling and grammar
+  prompt-version: 5
+  doc: Given a sentence which may have incorrect spelling or grammar, correct it.
+  prompt: |+
+    ###
+    Poor English: Please provide me with a short brief\nof the design you’re looking for and that’d be nice if you could share some examples or project you did before.
+    Corrected English: Please provide me with a short brief
+    of the design you’re looking for and some examples or previous projects you’ve done would be helpful.
+    ###
+    Poor English: If I’m stressed out about something,\nI tend to have problem to fall asleep.
+    Corrected English: If I’m stressed out about something,
+    I tend to have a problem falling asleep.
+    ###
+    Poor English: There is plenty of fun things to do in the summer\n
+    when your able to go outside.
+    Corrected English: There are plenty of fun things to do in the summer when you are able to go outside.
+    ###
+    Poor English: She no went to the market.
+    Corrected English: She didn't go to the market.
+    ###
+    Poor English: <1>
+    Corrected English:
+  model: davinci
+  temperature: 0.3
+  max-tokens: 1000
+  top-p: 1
+  stop-sequences:
+  - "###"
+  stop-patterns:
+  - "^Poor English:"
+  vars:
+  - poor english
+  examples:
+  - The rain in Spain falls mainly on the plain.
+  preprocessors:
+  - pen-s onelineify
+  postprocessor: pen-s unonelineify | pen-pretty-paragraph | sed -e "s/^\\s*//" -e "s/^Corrected English:\\s*//"
+  external: 
+  filter: true
+  n-test-runs: 2
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/VNY6nCbxbaPtF9ioTLFuQmKji" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/VNY6nCbxbaPtF9ioTLFuQmKji.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/VNY6nCbxbaPtF9ioTLFuQmKji.js" id="asciicast-VNY6nCbxbaPtF9ioTLFuQmKji" async></script>
+#+END_EXPORT

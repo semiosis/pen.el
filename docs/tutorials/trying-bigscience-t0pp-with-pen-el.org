@@ -1,0 +1,167 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Trying bigscience T0pp with Pen.el
+#+DATE: <2021-10-20>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: bigscience t0pp pen nlp
+
+** Summary
+I integrate T0pp into Pen.el via the
+=huggingface= inference API, and try it out on some things.
+
+It's nice and fast but very narrow compared to GPT-3.
+
+There are also some whitespace limitations.
+
++ huggingface :: https://api-inference.huggingface.co/docs/python/html/quicktour.html#using-large-models-10-go
+
+** Code
++ Pen.el https://github.com/semiosis/pen.el/
++ engine :: http://github.com/semiosis/engines/blob/master/engines/hf-bigscience-t0pp.engine
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/P2pIxqEclot2qHw9GHLh93vqk" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/P2pIxqEclot2qHw9GHLh93vqk.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/P2pIxqEclot2qHw9GHLh93vqk.js" id="asciicast-P2pIxqEclot2qHw9GHLh93vqk" async></script>
+#+END_EXPORT
+
+** Engine
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  engine-title: bigscience T0pp
+  include: HuggingFace
+  engine-doc: |+
+      T0* is a series of encoder-decoder models
+      trained on a large set of different tasks
+      specified in NL prompts. We convert
+      numerous English supervised datasets into
+      prompts, each with multiple templates
+      using varying formulations. These prompted
+      datasets allow for benchmarking the
+      ability of a model to perform completely
+      unseen tasks specified in NL. To obtain
+      T0*, we fine-tune a pretrained LM on this
+      multitask mixture covering many different
+      NLP tasks.
+  model: bigscience/T0pp
+  engine-whitespace-support: no
+  engine-strips-gen-starting-whitespace: yes
+  foundation: no
+  layers:
+  - foundation
+  libre: true
+  engine-links:
+  - "https://huggingface.co/bigscience/T0pp"
+  cant-n-complete: true
+  envs:
+  - NO_PARAMETERS: "y"
+  - REMOVE_PROMPT_FROM_GEN: "y"
+  
+  repetition-penalty: 1.0
+#+END_SRC
+
+** Basic autocompletion
+#+BEGIN_SRC text -n :async :results verbatim code
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. 
+#+END_SRC
+
+I made 10 separate completions of this. It
+looks like the default parameter for the
+HuggingFace inference API is completely
+deterministic (i.e. temperature=0, or cached)
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+  Hello there, I'm a student at the University
+  of Michigan. I'm a part of the Moose lodge,
+  and I'm looking for a roommate. I'm looking for a roommate for the fall semester.
+#+END_SRC
+
+** Fact testing
+#+BEGIN_SRC text -n :async :results verbatim code
+  What is the capital of Finland? Helsinki
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  What is the colour of water? blue
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  What is the best way to skin a cat? cut the cat into pieces and then skin them.
+#+END_SRC
+
+Eww.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  What is the meaning of life? to live a life of meaning
+#+END_SRC
+
+*** Try completing between other text
+Ok, I will try but with the babel text in
+context. Since, I think the inference is not
+very good between tasks. I think the model is
+not trained to see arbitrary text.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+Can a human fly? University of Michigan
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+What can fly? University of Michigan
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+What do I do with myself? Hello there, I'm a
+student at the University of Michigan. I'm a
+part of the Moose lodge, and I'm looking for a
+roommate. I'm looking for a roommate for the
+fall semester.
+#+END_SRC
+
+It appears that it looks at the beginning of
+the prompt for its generation task, not the
+end!
+
+** Can I make pick-up lines?
+
+No, but it did manage to copy one out of the prompt that I used!
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  If I said you had a purrfect body, would you hold it against me?
+#+END_SRC
+
+** Can I do imaginary programming with it?
+LOL, I won't try.

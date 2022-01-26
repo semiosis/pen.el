@@ -1,0 +1,37 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Pen.el for privacy and crypto security
+#+DATE: <2022-01-04>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen openai codex imaginary blockchain
+
+** Summary
+This is why you use =Pen.el=.
+
+** AI augmentation of your computing happens under your control
+
+*** Take =cterm= as an example
+You may ssh into a private server and wrap
+=cterm= around and be in total control of when
+and where the text on the screen is being used.
+
+You may chat to a friend on Facebook Messenger
+and be confident that no algorithms are
+learning from your typing or censoring it.
+
+** No need to sign up for a plethora of different SAAS proving NLP as a service
+- Keeps you sane and in control of your money
+
+** You command the language models used
+- No lock-in to AI vendors
+
+** You may design your own prompts
+- It's healthy
+- It makes you employable
+- It helps you to understand AI
+
+** You monetise on your own workflows

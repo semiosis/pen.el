@@ -1,0 +1,42 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Universal syntax highlighting for Pen.el, nlsh and Imaginary Interpreter
+#+DATE: <2021-11-24>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen emacs vim agi
+
+** Summary
+I add universal syntax highlighting to =nlsh=
+and =ii=.
+
+This is to keep it interesting and beautiful
+while using imaginary interpreters, which may
+not have their own syntax highlighting.
+
+** Code
++ Syntax highlighting rules :: http://github.com/semiosis/pen.el/blob/master/config/nvimrc
+
+** Demos
+*** =ii=
+[[./agi.png]]
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/OBn9OJGyMBirLDRHVImPFlnoW" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/OBn9OJGyMBirLDRHVImPFlnoW.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/OBn9OJGyMBirLDRHVImPFlnoW.js" id="asciicast-OBn9OJGyMBirLDRHVImPFlnoW" async></script>
+#+END_EXPORT
+
+*** =nlsh=
+[[./nlsh-demo.png]]
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/ZS1q9uMNRYfsdF6farnZbaQSX" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/ZS1q9uMNRYfsdF6farnZbaQSX.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/ZS1q9uMNRYfsdF6farnZbaQSX.js" id="asciicast-ZS1q9uMNRYfsdF6farnZbaQSX" async></script>
+#+END_EXPORT

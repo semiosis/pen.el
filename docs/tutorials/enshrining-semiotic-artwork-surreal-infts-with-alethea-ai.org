@@ -1,0 +1,88 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Enshrining semiotic artwork: Surreal iNFTs with Alethea.AI
+#+DATE: <2022-01-25>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: surreal openai alethea art nft pen
+
+** Summary
+I enshrine Melee's surreal artworks as iNFTs
+on Alethea.AI to preserve their meaning
+against the narrative industrial complex and
+the ever increasing rate of truth decay in
+society.
+
++ Prior reading :: https://semiosis.github.io/posts/describing-melee-s-paintings-with-alephalpha/
+
+** Glossary
++ Alethea.AI :: http://github.com/semiosis/glossaries-gh/blob/master/alethea-ai.txt
+
++ Surreal artwork :: http://github.com/semiosis/glossaries-gh/blob/master/surreal.txt
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  phantasmagoria
+      A sequence of real or imaginary images
+      like those seen in a dream.
+  
+  semiotic art
+      Semiotics offers another way of analyzing
+      images, be they found in artwork or
+      another type of visual culture, like
+      advertising.
+  
+      Semiotics is the study of signs.
+  
+      In semiotics the basic unit is the sign.
+  
+      Signs are representations that have
+      meanings beyond what they literally
+      represent.
+  
+  iNFT
+  Intelligent NFT
+      However their evolutionary trajectory
+      flow, what should be clear to the iNFTs is
+      that after a certain Intelligence Level
+      they must Train their intelligence, to be
+      able to Earn more intelligence.
+  
+      In June 2021, Alethea AI partnered with
+      the auction house Sotheby’s and the artist
+      Robert Alice, to create and auction the
+      world’s first GPT-3 powered iNFT called
+      Alice.
+      
+      The hash of the Personality Prompt of
+      Alice was recorded and also visualized on-
+      chain via an ERC-721 Asset called a
+      Personality Pod.
+  
+      The Personality Pod can fuse with any NFT
+      and make it intelligent, bring it to life.
+#+END_SRC
+
+** Further introduction
+I had originally used AlephAlpha's world model
+to help me describe Melee's artworks.
+
+Firstly, I had attempted to describe them
+myself. You can read about it in the link at
+the top of this page.
+
++ The three artworks represent:
+  - The human soul, pure and optimistic
+  - An AI which thinks it is a real
+    consciousness but is unaware that it exists
+    on a canvas, perceivable to the observer.
+  - Love, fate, trust, oneness and connections with each-other beyond what we can see and observe
+
+** Objectives
+- Create iNFTs from Melee's artworks
+- Enable them to generate their own ALI Tokens, to generate an income
+
+** Step 1 - Create NFTs
+** Step 2 - Create Personality Pods

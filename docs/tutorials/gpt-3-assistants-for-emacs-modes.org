@@ -1,0 +1,195 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: GPT-3 assistants for emacs modes
+#+DATE: <2021-06-02>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt emacs pen
+
+** Summary
+In this article I will show how I transition
+from using shell script to emacs lisp with my
+'any topic' tutor in emacs lisp.
+
+I am working on integrating GPT-3, GPT-j and
+more GPT completion engines into emacs, and
+connecting more and more emacs packages to
+GPT-3.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  # Latest docker image of =pen.el=
+  docker run --rm -ti --entrypoint= semiosis/pen.el:latest ./run.sh
+#+END_SRC
+
+Here is an assistant for any major mode / context.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/MS8xMQfLoExEVyh4Nqu9fX49b" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/MS8xMQfLoExEVyh4Nqu9fX49b.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/MS8xMQfLoExEVyh4Nqu9fX49b.js" id="asciicast-MS8xMQfLoExEVyh4Nqu9fX49b" async></script>
+#+END_EXPORT
+
+Some ideas I have:
+- Correct spelling and grammar in conversations over =erc= and other =emacs= chat modes.
+- Select error messages and ask what they mean.
+
+What I've already built:
+- Context menus for selecting text and running prompt functions on that text
+  - Translating
+  - Context-aware functions
+  - Natural language shell for any OS.
+  - Explain shell code.
+  - Get a code snippet.
+  - Get a code one-liner.
+  - Generate code from comments.
+  - Automatically add comments to code
+  - Ask GPT-3, "What is the word for ..."
+  - Abstractive summarization of text within emacs.
+  - Subtopic generation for mind maps
+  - Tutor for any topic
+    - e.g. JavaScript. Ask it which version of node was available in 2018.
+  - Generate lists of things
+
+*** Introducing =pen.el= (Prompt Engineering in emacs)
+Please see my article on =Pen=  [[https://mullikine.github.io/posts/pen/][Pen // Bodacious Blog]].
+
+Pen facilitates the creation, development,
+discovery and usage of prompts to a LM such as
+GPT-3 and GPT-j.
+
+And please email me if you would like to help: mailto:mullikine@gmail.com.
+
++ Pen Project on GitHub :: https://github.com/semiosis/pen.el
+
+** Original =shell= script, =asktutor=
+
+=asktutor= queries the OpenAI API via the python library (=pip install openai=).
+
+This is how it is called:
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  asktutor haskell ghc "What does could not deduce mean?"
+#+END_SRC
+
+Here is its code:
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  #!/bin/bash
+  
+  topic="$1"
+  test -n "$topic" || exit 1
+  shift
+  
+  in_the_context_of="$1"
+  test -n "$in_the_context_of" || exit 1
+  shift
+  
+  question="$@"
+  test -n "$question" || exit 1
+  
+  if ! pl "$question" | grep -q -P ".*\\?"; then
+      question="${question}?"
+  fi
+  
+  oci openai-complete $MYGIT/semiosis/prompts/prompts/tutor.prompt "$topic" "$in_the_context_of" "$question" | pavs
+#+END_SRC
+
+*** Converting above into elisp together with a prompt function
+=pen-pf-asktutor= is generated from a =.prompt= file (http://github.com/semiosis/prompts/blob/master/prompts/asktutor-3.prompt).
+
+Here is the generation function, =pen-generate-prompt-functions=: https://github.com/semiosis/pen.el/blob/master/pen.el#L131
+
+Now we can use =pen-pf-asktutor= inside =org-
+brain=. We supply the parent node as the
+context to the function.
+
++ Org-brain tutor code :: https://github.com/semiosis/pen.el/blob/master/pen-brain.el#L98
+
+The prompt function calls a simple shell script (=openai-complete.sh=) which sends the final templated prompt to the OpenAI API.
+
+This can be substituted for other completers such as GPT-j.
+
++ =openai-complete.sh= :: https://github.com/semiosis/pen.el/blob/master/scripts/openai-complete.sh
+
+=pen-tutor-mode-assist= is another example of using the same prompt function.
+
+=M-x pen-tutor-mode-assist=, enter your query and have the answer displayed in a new buffer.
+
++ Code :: http://github.com/semiosis/pen.el/blob/master/pen-contrib.el
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defun pen-tutor-mode-assist (query)
+    (interactive (let* ((bl (buffer-language t t)))
+                   (list
+                    (read-string-hist
+                     (concat "asktutor (" bl "): ")
+                     (my/thing-at-point)))))
+    (pen-pf-asktutor bl bl query))
+#+END_SRC
+
+** Original =shell= script, =cq=
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  #!/bin/bash
+  export TTY
+  
+  ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+  
+  topic="$1"
+  test -n "$topic" || exit 1
+  shift
+  
+  task="$@"
+  test -n "$task" || exit 1
+  
+  openai-complete code-snippet.prompt "$topic" "$task"
+#+END_SRC
+
+*** Converting above into elisp together with a prompt function
+=pen-pf-cq= is generated from a =.prompt= file (http://github.com/semiosis/prompts/blob/master/prompts/code-snippet-from-natural-language-2.prompt).
+
+Documentation for generated function:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  pen-pf-cq is an alias for ‘pen-pf-code-snippet-from-natural-language’
+  in ‘pen-example-config.el’.
+  
+  (pen-pf-cq LANGUAGE TASK)
+
+  code snippet from natural language
+  Get a bash one liner from natural langauge
+  future-titles:- Get code snippet
+  - Get snippet
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/foNqrgSZLJcDPDsaqanffOJSY" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/foNqrgSZLJcDPDsaqanffOJSY.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/foNqrgSZLJcDPDsaqanffOJSY.js" id="asciicast-foNqrgSZLJcDPDsaqanffOJSY" async></script>
+#+END_EXPORT
+
+** =right-click-context-click-menu=
+This is an example of connecting a prompt function to =right-click-context-menu=.
+
+GPT language models are capable of classification as well as generation.
+
+Classification is just a downstream task of generation, it seems.
+
++ Right click menu code :: https://github.com/semiosis/pen.el/blob/master/pen-right-click-menu.el#L126
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  ("GPT-3: Convert Haskell to Clojure"
+   :call pen-pf-translate-haskell-to-clojure
+   :if (gpt-test-haskell))
+  ("pen (code)"
+   ("asktutor"
+    :call pen-tutor-mode-assist
+    :if (major-mode-p 'prog-mode)))
+#+END_SRC
+
+** Tutor =GPT-3= prompt in =yaml=
+[[./tutor-code.png]]

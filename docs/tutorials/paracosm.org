@@ -1,0 +1,44 @@
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Paracosm (Your Imaginary World In Plain Text!)
+#+DATE: <2021-11-15>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen imaginary paracosm
+
+| Install with Pen |                                                    |
+|------------------+----------------------------------------------------|
+| Pen.el on GitHub | https://github.com/semiosis/pen.el/                |
+| Tutorial         | https://mullikine.github.io/posts/pen-el-tutorial/ |
+
+** Summary
+=Paracosm= is an accelerator for learning, world-building and personal development.
+
+Accelerate your thinking and immerse yourself
+in your own detailed imaginary world of
+chatbots, knowledge and personal learning
+through a melding of human and AI imagination,
+and build up a detailed and intricate graph,
+intermixed with code, which you can publish as
+a book or website using =org-mode=!
+
+- Generate topics,
+- Suggest new topics
+- Talk to chatbots on any topic
+
+Run =paracosm= from the host to start it.
+
+| kb          | f                                         |                                |
+|-------------+-------------------------------------------+--------------------------------|
+| =M-SPC a c= | =apostrophe-start-chatbot-from-selection= | =pen-map=                      |
+| =C-c d=     | =dumb-diff=                               | =global-map=                   |
+| =H-q=       | =pen-org-brain-switch-brain=              | =pen-map=                      |
+| =C-M-i=     | =org-brain-suggest-subtopics=             | =org-brain-visualize-mode-map= |
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/x24fZOuk3q5dELt6VxXP1ZK3h" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/x24fZOuk3q5dELt6VxXP1ZK3h.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/x24fZOuk3q5dELt6VxXP1ZK3h.js" id="asciicast-x24fZOuk3q5dELt6VxXP1ZK3h" async></script>
+#+END_EXPORT

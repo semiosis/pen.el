@@ -1,0 +1,172 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Babel and Pen - Generating Snippets
+#+DATE: <2021-10-06>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: math python babel pen
+
+** Summary
+*** Objectives
+- Automate the generation of snippets using babel and the pen docker.
+
+#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 python :async :results verbatim code
+  Logistic map
+#+END_SRC
+
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  import numpy as np
+  import matplotlib.pyplot as plt
+  
+  def logistic(r, x):
+    return r * x * (1 - x)
+  
+  def plot_system(r, x0, n, ax=None):
+#+END_SRC
+
+#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 python :async :results verbatim code
+  kl divergence of samples
+#+END_SRC
+
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  import random
+  import math
+  
+  def kl_divergence(p, q):
+    return sum(p[i] * math.log(p[i]/q[i], 2) for i in range(len(p)))
+  
+  p = [
+#+END_SRC
+
+#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 python :async :results verbatim code
+  cross entropy of samples
+#+END_SRC
+
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  import numpy as np
+  import matplotlib.pyplot as plt
+  
+  def cross_entropy(p, q):
+    return -sum([p[i]*np.log2(q[i]) for i in range(len(p))])
+#+END_SRC
+
+#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 python :async :results verbatim code
+  R-squared (R2)
+#+END_SRC
+
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  import numpy as np
+  import pandas as pd
+  from sklearn.metrics import r2_score
+  
+  def r2(x, y):
+    return r2_score(x, y)
+#+END_SRC
+
+** Template
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  code-snippet) {
+      echo "#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 python :async :results verbatim code"
+      cat "$input_fp" | postprocess
+      echo -n "#+END_SRC"
+  }
+  ;;
+#+END_SRC
+
+** Prompt used
+*** =pf-code-snippet-from-natural-language/2=
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: code snippet from natural language
+  future-titles:
+  - Get code snippet
+  - Get snippet
+  next-version: get-code-snippet.prompt
+  doc: Get a bash one liner from natural langauge
+  prompt: |+
+      Language: Ruby
+      Task: Reverse lines from stdout
+      Code: while s = gets; puts s.chop.reverse; end
+      <delim>
+      Language: Haskell
+      Task: Multiple Each Item in a List by 2
+      Code:
+      map (*2) [1..10]
+      <delim>
+      Language: bash
+      Task: Recursively remove all "node_modules" folders
+      Code:
+      find . -name "node_modules" -exec rm -rf '{}' +
+      <delim>
+      Language: Haskell
+      Task: Apply a function to both bits of a tuple:
+      Code:
+      both :: (a -> b) -> (a, a) -> (b, b)
+      both = join (***)
+      <delim>
+      Language: Python
+      Task: Palindrome Python One-Liner
+      Code: phrase.find(phrase[::-1])
+      <delim>
+      Language: <1>    
+      Task: <2>
+      Code:
+  engine: OpenAI Davinci
+  temperature: 0.8
+  max-generated-tokens: 60
+  top-p: 1
+  stop-sequences:
+  - "<delim>"
+  vars:
+  - language
+  - task
+  examples:
+  - bash
+  - suspend laptop
+#+END_SRC
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/mH6B4MkGtXYJJYiWpwWN956F1" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/mH6B4MkGtXYJJYiWpwWN956F1.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/mH6B4MkGtXYJJYiWpwWN956F1.js" id="asciicast-mH6B4MkGtXYJJYiWpwWN956F1" async></script>
+#+END_EXPORT
+
+** Some more demos
+#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 python :async :results verbatim code
+  N choose K
+#+END_SRC
+
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  def nCk(n,k):
+    return int( reduce(mul, (Fraction(n-i, i+1) for i in range(k)), 1) )
+#+END_SRC
+
+
+#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 python :async :results verbatim code
+  inverse laplace transform
+#+END_SRC
+
+#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+  import sympy as sp
+  sp.init_printing()
+  t = sp.symbols('t')
+  f = sp.exp(-t)
+  sp.inverse_laplace_transform(f, t, s)
+#+END_SRC
+
+Ruby?
+
+#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 ruby :async :results verbatim code
+  inverse laplace transform
+#+END_SRC
+
+#+BEGIN_SRC ruby -n :async :results verbatim code
+  require 'mathn'
+  
+  def inverse_laplace_transform(expr, s, t)
+  expr.subs(s, 0).subs(t, 0).simplify.expand.collect { |x| x.subs(t,
+#+END_SRC

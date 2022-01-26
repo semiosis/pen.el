@@ -1,0 +1,46 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: ilm (γ) - The imacro lambda for ilambda. Generate code and run in one command
+#+DATE: <2022-01-13>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: imaginary imaginary-programming pen openai gpt codex ilambda
+
+** Summary
+I demonstrate an imaginary macro lambda (I call it =ilm= or =γ=).
+
+The idea is we want the LM (e.g. Codex) to
+come up with the code, and run it immediately.
+
+It's a lambda (anonymous function) for code
+generation that uses an imaginary macro
+(imacro) to generate code.
+
+** Example
+This should generate the necessary code and run it.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defmacro ilm (name &rest body)
+    "
+  example: (ilm internet-is-connected-p ())
+  "
+    `(progn
+       (eval (imacro ,@body) ,@body)))
+  
+  ;; Some alternative identifiers
+  ;; I chose gamma because it's an upside-down lambda
+  (defalias 'γ 'ilm)
+  (defalias 'ilmacro 'ilm)
+  (defalias 'imaginary-lambda-macro 'ilm)
+  (defalias 'imaginarily 'ilm)
+#+END_SRC
+
+This is a predicate that should return true or false.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (ilm internet-is-connected-p ())
+#+END_SRC
+

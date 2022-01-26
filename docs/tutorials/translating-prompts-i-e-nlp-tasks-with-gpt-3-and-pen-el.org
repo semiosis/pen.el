@@ -1,0 +1,247 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}HA
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Translating prompts (i.e. NLP tasks) with GPT-3 and Pen.el
+#+DATE: <2021-08-19>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen openai nlp
+
+** Summary
+I demonstrate how to encode into your prompts
+information on how to translate it, so that it
+then becomes a straight-forward process to
+translate prompts/NLP tasks designed in
+different languages and sub-languages (topics)
+into your own language. This is important for
+people to be able to collaborate on prompts.
+
+** Translator example
+The translator takes stdin and templates into the command two arguments, from-language and to-language.
+The output is the prompt designed for a different language. For example,
+Turn an /"anything->English dictionary"/ into an /"anything->YourLanguage dictionary"/.
+
+4 default parameters: =stdin(prompt)=, =<from-language>=, =<to-language>=, and =<topic>=.
+
+If the prompt specifies the =language= and/or
+=topic= keys, they will substituted in to
+their respective positions. Otherwise, those
+parameters are detected.
+
+The following translator specification is a
+template for a shell command. The substituted
+variables are automatically quoted.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  translator: "wrlp pf-translate-from-world-language-x-to-y/3 <from language> <to language>"
+#+END_SRC
+
+Here, =wrlp= is a script that reads each line
+of the prompt one at a time and pipes that
+line into the prompt function for translating
+one world language into another.
+
+It may also be specified in emacs lisp.
+The arguments are provided through lexical scope.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  translator: "(wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))"
+#+END_SRC
+
+** The prompt to be translated
+The prompt definition includes =language=,
+=topic= and =translator= as hints to how it is
+supposed to be translated.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: define word for glossary
+  aliases:
+  - define word
+  prompt-version: 5
+  doc: Get a short definition of a term for the glossary system.
+  language: English
+  topic: Dictionary
+  translator: "(wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))"
+  prompt: |
+    Glossary of terms.
+  
+    ossified
+    Definition: Turn into bone or bony tissue.
+  
+    <1>
+    Definition:
+  engine: OpenAI Davinci
+  temperature: 0.5
+  max-tokens: 200
+  top-p: 1
+  stop-sequences:
+  - "\n\n"
+  vars:
+  - word
+  examples:
+  - boysenberry
+  completion: true
+  postprocessor: sed 's/\s\+/ /g' | pen-s join ' ' | sed 's/^ *//'
+  prettifier: pen-pretty-paragraph
+  var-defaults:
+  - "(pen-thing-at-point-ask \"word\" t)"
+#+END_SRC
+
+*** Exposition of internal translation
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  cat "$PROMPTS/define-word-for-glossary.prompt" | yq -r .prompt | wrlp penf pf-translate-from-world-language-x-to-y/3 English French
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Glossaire.
+
+ossifié
+Définition : devenir osseux ou os.
+
+<1>
+Définition:
+
+#+end_src
+
+** Emacs lisp
+*** Default translators
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defvar pen-translators
+    '("(wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))")
+    "A list of translators that can be used to translate prompts.
+  These may be string representations of emacs lisp if beginning with '('.
+  Otherwise, it will be a shell expression template")
+#+END_SRC
+
+*** Translating a loaded prompt
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defun pen-translate-prompt ()
+    "Select a prompt file and translate it.
+  Reconstruct the entire yaml-ht for a different language."
+    (interactive)
+  
+    (cl-macrolet ((translate
+                   (input)
+                   `(eval
+                     `(let ((from-language ,from-lang)
+                            (to-language ,to-lang)
+                            (topic ,topic)
+                            (input ,,input))
+                        (if input
+                            (pen-single-generation ,translator))))))
+      (let* ((fname (fz pen-prompt-functions nil nil "pen translate prompt: "))
+             (yaml-ht (ht-get pen-prompts fname))
+             (prompt (ht-get yaml-ht "prompt"))
+             (title (ht-get yaml-ht "title"))
+             (task (ht-get yaml-ht "task"))
+             (doc (ht-get yaml-ht "doc"))
+             (topic (ht-get yaml-ht "topic"))
+             (vars (vector2list (ht-get yaml-ht "vars")))
+             (var-slugs (mapcar 'slugify vars))
+             (examples-list (vector2list (ht-get yaml-ht "examples")))
+             (from-lang (ht-get yaml-ht "language"))
+             (from-lang (or from-lang (read-string-hist ".prompt Origin Language: ")))
+             (to-lang (read-string-hist ".prompt Destination Language: "))
+             (translator (let ((tlr (ht-get yaml-ht "translator")))
+                           (if (and
+                                (sor tlr)
+                                (not (string-match "^(" tlr)))
+                               ;; if it's a shell script, convert it to elisp
+                               (setq tlr
+                                     (format
+                                      "(pen-sn %s prompt)"
+                                      (pen-q
+                                       (pen-expand-template-keyvals
+                                        tlr
+                                        '(("from-language" . (pen-q from-lang))
+                                          ("from language" . (pen-q from-lang))
+                                          ("to-language" . (pen-q to-lang))
+                                          ("to language" . (pen-q to-lang))
+                                          ("topic" . (pen-q topic))
+                                          ;; It's called 'input' and not 'prompt' because
+                                          ;; we could translate other fields, such as variable names
+                                          ("input" . (pen-q prompt))))))))
+                           tlr))
+             (translator (or translator
+                             (fz pen-translators nil nil "Select a prompt translator: ")))
+             (translator (pen-eval-string
+                          (concat "'" translator))))
+  
+        (if translator
+            (let* ((new-prompt (translate prompt))
+                   (new-title (translate title))
+                   (new-task (translate task))
+                   (new-topic (translate topic))
+                   (new-doc (translate doc))
+                   ;; is there a mapcar for macros?
+                   (new-vars (loop for v in vars collect
+                                   (translate v)))
+                   ;; (new-var-slugs (mapcar 'slugify new-vars))
+                   (new-examples
+                    (if (vectorp (car examples-list))
+                        (mapcar
+                         (lambda (v)
+                           (loop for e in (vector2list v) collect
+                                 (translate e)))
+                         examples-list)
+                      (loop for e in examples-list collect
+                            (translate e))))
+                   (new-prompt
+                    (pen-expand-template-keyvals
+                     new-prompt
+                     (-zip vars (mapcar (lambda (s) (format "<%s>" s)) new-vars))))
+                   (newht (let ((h (make-hash-table :test 'equal)))
+                            (ht-set h "prompt" new-prompt)
+                            (ht-set h "title" new-title)
+                            (ht-set h "task" new-task)
+                            (ht-set h "doc" new-doc)
+                            (ht-set h "examples" new-examples)
+                            (ht-set h "topic" new-topic)
+                            (ht-set h "vars" new-vars)
+                            (ht-merge yaml-ht h)))
+                   (newyaml (plist2yaml (ht->plist newht))))
+              (pen-etv newyaml)))
+        ;; (ht-get pen-prompts "pf-define-word/1")
+        ;; (ht-get pen-prompts 'pf-define-word-for-glossary/1)
+        )))
+#+END_SRC
+
+Original, in English:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Glossary of terms.
+  
+  ossified
+  Definition: Turn into bone or bony tissue.
+  
+  <1>
+  Definition:
+#+END_SRC
+
+New, in French:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Glossaire.
+  
+  ossifié
+  Définition: se changer en os ou en tissu osseux.
+  
+  <1>
+  Définition:
+#+END_SRC
+
+** Demo
+In this demo, an entire prompt description
+including documentation, variable names and
+examples is translated from one language into
+another.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/IKOJHd2Y7NxJJ47massvb7VM3" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/IKOJHd2Y7NxJJ47massvb7VM3.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/IKOJHd2Y7NxJJ47massvb7VM3.js" id="asciicast-IKOJHd2Y7NxJJ47massvb7VM3" async></script>
+#+END_EXPORT

@@ -1,0 +1,105 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Consistency in imaginary programming functions
+#+DATE: <2021-12-08>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: ip 𝑖λ imaginary pen
+
+** Summary
+I add consistency to results for prompting
+functions by remembering the previous output
+to that function and prepending it into the
+next prompting function prompt.
+
+** Prompt format addition (=prepend-previous=)
++ Example prompt :: http://github.com/semiosis/prompts/blob/master/prompts/imagine-evaluating-emacs-lisp-2.prompt
+
+When =prepend-previous= is switched on, the
+previous prompt as well as its generated
+result are prepended before the new prompt to
+obtain consistency in output.
+
+This is useful for mocking APIs, for example,
+or any situation where you need consistency in
+results, such as for formatting.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "imagine evaluating emacs lisp"
+  doc: "Given some elisp return the imagined result"
+  prompt-version: 1
+  prompt: |+
+    <code-or-comment>
+    (message (eval <expression>))
+    --> 
+  engine: "OpenAI Codex"
+  temperature: 0.2
+  max-generated-tokens: 200
+  top-p: 1.0
+  cache: on
+  # This prepends the previously selected prompt+generation
+  # to obtain consistency in output.
+  # This is useful for mocking APIs.
+  prepend-previous: on
+  stop-sequences:
+  - "\n"
+  vars:
+  - "code or comment"
+  - "expression"
+  validator: "grep -qv '(:return'"
+  examples:
+  - |-
+      (defun double-number (x)
+        (x * x))
+  - "(double-number 5)"
+  filter: on
+  completion: off
+  insertion: off
+#+END_SRC
+
+** Example
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (idefun colour-of-thing (thing)
+          "Given the name of a thing, provide the hash colour")
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (colour-of-thing "Sea")
+#+END_SRC
+
+This is a blue. Notice the formatting of the colour.
+
+#+begin_src emacs-lisp
+"\"0x0000FF\""
+#+end_src
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (colour-of-thing "Navy blue")
+#+END_SRC
+
+As you can see, the same format as previous is used.
+
+#+begin_src emacs-lisp
+"\"0x000080\""
+#+end_src
+
+*** Underlying prompt
+
+This is the text supplied to prompt for the hex colour of Navy blue.
+The previous evaluation and result is used as an example.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  ;; Given the name of a thing, provide the hash colour
+  ;; arguments: (thing)
+  (message (eval '(colour-of-thing "Sea")))
+  --> "0x0000FF"
+  
+  
+  ;; Given the name of a thing, provide the hash colour
+  ;; arguments: (thing)
+  (message (eval '(colour-of-thing "Navy blue")))
+  --> 
+#+END_SRC

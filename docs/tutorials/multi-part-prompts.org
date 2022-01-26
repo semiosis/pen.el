@@ -1,0 +1,58 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Multi-part prompts in Pen.el for more advanced chatbots!
+#+DATE: <2021-11-19>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen openai nlp prompt-engineering
+
+** Summary
+This is better than stackoverflow for many tasks. It's great
+because this works for the imaginary web too.
+The images in the web site were converted to
+text, but can also browse imaginary websites
+about anything. I asked John Dee what was his
+most rarest book, and he told me about it.
+Looked it up and it was real/legit.
+
+** Prompt format addition
+At places where =<:fz-eol>= is found in a
+prompt, the line will be completed and you
+will be able to select from some possible
+completions there.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  Document 3:
+  ###
+  <document>
+  ###
+  Topics: <:fz-eol>
+  ###
+  Document 3 scholars:
+  <:pp>- 1. 
+#+END_SRC
+
+This method will be further extended to assign
+specific prompt settings, beam search and
+counterfactual parsing.
+
+** Demo
+*** Speaking to AI Claude Shannon
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/RZj0HRo1n3ote0AMqZMW0I4HZ" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/RZj0HRo1n3ote0AMqZMW0I4HZ.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/RZj0HRo1n3ote0AMqZMW0I4HZ.js" id="asciicast-RZj0HRo1n3ote0AMqZMW0I4HZ" async></script>
+#+END_EXPORT
+
+
+*** Speaking to AI Richard Stallman
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/aUAjViUGrS42xqk9DHgONiyl8" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/aUAjViUGrS42xqk9DHgONiyl8.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/aUAjViUGrS42xqk9DHgONiyl8.js" id="asciicast-aUAjViUGrS42xqk9DHgONiyl8" async></script>
+#+END_EXPORT

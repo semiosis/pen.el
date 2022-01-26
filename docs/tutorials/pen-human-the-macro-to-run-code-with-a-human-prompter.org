@@ -1,0 +1,101 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: pen-human - The macro to run code with a human promptee
+#+DATE: <2022-01-13>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: openai pen human
+
+** Summary
+Sometimes it is necessary to force =Pen.el= to
+use a human promptee instead of a LM. For
+example, when you are cut off from the
+internet, or when debugging something.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (pen-human (pf-list-of/2 5 "types of fruit"))
+#+END_SRC
+
+Since =Pen.el= caches by default, remember that you can re-prompt with =upd=.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (pen-human (upd (pf-list-of/2 5 "types of fruit")))
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  prompter
+      The agent doing the prompting.
+  
+      This could be a human or a computer
+      program.
+  
+      The computer program could be a chatbot,
+      for example.
+  
+  promptee
+      The agent being prompted.
+  
+      This could be a language model, a human or
+      a prompt server.
+  
+  prompt server
+      A prompt server responds to prompting
+      queries with a prompting reponse.
+  
+      A prompt server may wrap a language model,
+      or consult a human, computer program or
+      database.
+  
+      Pen.el is an example of a prompt server.
+#+END_SRC
+
+Also, if there is no internet, the =Human=
+engine is automatically selected when running
+a prompt function and the custom value =pen-use-human-engine-if-disconnected= is set to
+=t= (true).
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (final-engine
+   (str (or
+         (and
+          pen-use-human-engine-if-disconnected
+          (not (pen-internet-connected-p))
+          "Human")
+         (and
+          (not pen-prompt-force-engine-disabled)
+          (sor ,force-engine))
+         (sor pen-force-engine)
+         (sor (pen-var-value-maybe 'engine))
+         (sor ,engine)
+         pen-default-engine)))
+#+END_SRC
+
+** Demo
+*** The colour of a =surreptitious strawberry=
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/2KoIUylRMXKc4FzqBXGY4JJNU" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/2KoIUylRMXKc4FzqBXGY4JJNU.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/2KoIUylRMXKc4FzqBXGY4JJNU.js" id="asciicast-2KoIUylRMXKc4FzqBXGY4JJNU" async></script>
+#+END_EXPORT
+
+*** The hidden terminal is for when a human is the promptee
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/oYxVQKCkA0AXUDxvX3tm79pct" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/oYxVQKCkA0AXUDxvX3tm79pct.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/oYxVQKCkA0AXUDxvX3tm79pct.js" id="asciicast-oYxVQKCkA0AXUDxvX3tm79pct" async></script>
+#+END_EXPORT
+
+To start the hidden terminal, run =pen-hidden-terminal=.
+
+*** Demo 3
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/2XAZiLdByQzpXzPOVGLmrqXOv" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/2XAZiLdByQzpXzPOVGLmrqXOv.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/2XAZiLdByQzpXzPOVGLmrqXOv.js" id="asciicast-2XAZiLdByQzpXzPOVGLmrqXOv" async></script>
+#+END_EXPORT

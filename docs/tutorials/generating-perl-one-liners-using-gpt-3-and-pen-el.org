@@ -1,0 +1,139 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Generating perl one-liners using GPT-3 and Pen.el
+#+DATE: <2021-08-18>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: perl gpt openai pen
+
+** Summary
+I demonstrate generating perl one-liners in
+emacs using a prompt function and explain
+parts of the prompt.
+
+*** /<:pp>perl -/
+This enables you to specify the first part of
+the output. =<:pp>= is a placed where you want
+to include the rest of the prompt in the
+beginning of the output.
+
+*** /split-patterns/
++ README :: http://github.com/semiosis/prompts/
+
+=split-patterns= is a field for describing
+patterns to separate multiple prompt results
+from one output if the LM multiplexed the
+results intentionally or unintentionally.
+
+*** /engine: OpenAI Davinci/
++ README :: http://github.com/semiosis/engines
+This specifies the engine which specifies both the model and
+the shell command that calls the API.
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/OVwCp9NF9YENgOHwuAu55iqxq" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/OVwCp9NF9YENgOHwuAu55iqxq.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/OVwCp9NF9YENgOHwuAu55iqxq.js" id="asciicast-OVwCp9NF9YENgOHwuAu55iqxq" async></script>
+#+END_EXPORT
+
+** Prompt
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: Generate perl command
+  prompt-version: 2
+  prompt: |
+    perl
+  
+    Sort by line length
+    perl -e 'print sort { length($b) <=> length($a) } <>'
+    ###
+    Increment all numbers by one
+    perl -pe 's/(\d+)/ 1 + $1 /ge'
+    ###
+    Reverses paragraphs
+    perl -00 -e 'print reverse <>'
+    ###
+    Look for duplicated words in a line
+    perl -0777 -ne 'print "$.: doubled $_\n" while /\b(\w+)\b\s+\b\1\b/gi'
+    ###
+    <1>
+    <:pp>perl -
+  engine: OpenAI Davinci
+  temperature: 0.3
+  max-tokens: 60
+  top-p: 1
+  stop-sequences:
+  - "###"
+  vars:
+  - description
+  n-collate: 2
+  split-patterns:
+  - "\n"
+  examples:
+  - Make all occurrences of Steve lowercase
+#+END_SRC
+
+** Example outputs
+*** These outputs appear to not all be complete
+
+/Extract URLs/.
+
+Close, but not perfect.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  perl -0777 -e 'print "$.: $_" while /<a href="\S+">\S+<\/a>/gi'
+  # perl -0777 -ne 'print "$.: $_" while /\b(http|https|ftp|gopher):\/\/[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/
+  # perl -0777 -ne 'print "$.: $_" while /\b(https?|ftp|file):\/\/[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~
+  # perl -0777 -ne 'print "$.: $_" while /\b(https?|ftp|file)://[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~
+  perl -0777 -ne 'print "$.: $_" while /<a href="(.+?)">/gi'
+  perl -0777 -ne 'print "$.: $_" while /<a href="(.*?)">(.*?)<\/a>/gi'
+  # perl -0777 -ne 'print "$.: $_" while /<a href="(.*?)">(.*?)<\/a
+  perl -0777 -ne 'print "$.: $_" while /\b(http|https|ftp|gopher|file|news|nntp):\b/gi'
+  perl -0777 -ne 'print "$.: $_\n" while /<a href="(.*?)">(.*?)<\/a>/gi'
+  # perl -0777 -ne 'print "$.: $_\n" while /<a href="(.*?)">(.*
+  perl -0777 -ne 'print "$.: $_" while /<a href="(.*?)"/gi'
+  perl -0777 -e 'print "$.: $_" while /<a href="(.*?)">(.*?)<\/a>/gi'
+#+END_SRC
+
+/increment the first number/
+
+I will need to also have a validation filter for prompt outputs.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  perl -pe 's/(\d+)/ 1 + $1 /ge'
+  perl -0777 -ne 'print "$.: doubled $_\n" while /\b(\d+)\b/gi'
+  perl -pe '$_ = $. + 1'
+  perl -0777 -ne 'print "$.: doubled $_\n" while /\b(\d+)\b\s+\b\1\b/gi'
+  # perl -0777 -ne 'print "$.: doubled $_\n" while /\b(\d+)\b
+  perl -e '$_=reverse'
+  perl -e '$_=reverse; s/\d+/1+$_/ge'
+#+END_SRC
+
+[[./pen-validator.png]]
+
+Much better:
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/xvKVmNG7nH1ZnzW7zYbpWJz09" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/xvKVmNG7nH1ZnzW7zYbpWJz09.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/xvKVmNG7nH1ZnzW7zYbpWJz09.js" id="asciicast-xvKVmNG7nH1ZnzW7zYbpWJz09" async></script>
+#+END_EXPORT
+
+However, none of the one-liners did the
+desired thing.
+
+There is at least one URL I can see at the top
+which should be found.
+
+=https://openaiapi-site.azureedge.net/public-assets/d/19ff159b15/favicon.svg=
+
+Codex, however, could accomplish this with
+mere descriptions. It's still very important
+to design, encode, share and curate these
+'descriptions'. GPT-3 is still very useful
+practice.

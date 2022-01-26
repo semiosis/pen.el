@@ -1,0 +1,36 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Constraint-variables for imaginary programming
+#+DATE: <2021-12-09>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen imaginary 𝑖λ
+
+** Summary
+When it comes to adding consistency to the
+output of LMs, specifying the type of output
+you want to see by prepending prompt-
+generation text examples to your final prompt, is a useful technique.
+
+When building this functionality into ilambda,
+I realised that I must keep track of history,
+or assertions on a 'partial function basis'
+(i.e. per subset of arguments, rather than
+function name alone or the full set of
+arguments).
+
+Otherwise, there'd be a single
+history/training which is prepended to all
+ifuntions, which would pollute and inundate
+prompts with too much context, or a completely
+unique set of examples for each unique set of
+parameters, which would be completely useless.
+
+OK, so how do we specify that? I must specify
+'constraint variables' for prompt 'training'.
+
+Interestingly, rather than specifying these inside the =.prompt= format, I need to do so when the prompt function is actually called.
+However, at one more level of abstraction from prompt functions (i.e. ilambda), this happens in the background of the =idefun= definition, so it's all taken care of.

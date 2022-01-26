@@ -1,0 +1,77 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Using 'Yo dawg, I heard' with prompt-functions in Pen.el
+#+DATE: <2021-10-24>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen gpt codex openai nlp
+
+** Summary
+The actual point of this exercise is to
+demonstrate how to initiate the generation of
+a prompt function with some text.
+
+This is part of implementing Beam Search in Pen.el.
+
+If you run a prompt function with 'Yo' as the
+=inject-gen-start=, funnily enough it will
+most often start completing 'Yo dawg, I
+heard' (the internet meme).
+
+** Run a prompt function, and copy it from history
+In this case, I have created a definition for the word =function=.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  function
+      NLG: To carry on an activity in a regular,
+      systematic way under the direction of
+      someone in authority.
+#+END_SRC
+
+Run =M-x pen-copy-from-hist=.
+
+This is precisely what was run: The function and its arguments.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  pf-define-word-for-glossary/2 "function in the context of " ""
+#+END_SRC
+
+These are the arguments to the prompt function:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  (pf-define-word-for-glossary/2 &optional WORD TOPIC &key PRETTIFY &key NO-SELECT-RESULT INCLUDE-PROMPT NO-GEN SELECT-ONLY-MATCH VARIADIC-VAR INJECT-GEN-START)
+#+END_SRC
+
+As you can see there is a parameter =INJECT-GEN-START=.
+
+This can be used to re-run the prompt function but inject some text at the start.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  penf -u -i "Yo dawg," pf-define-word-for-glossary/2 "function" "programming" | pen-wrap 50
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+Yo dawg, I heard you like lambdas, so we put some
+lambdas in your lambdas so you can write lambdas
+while you write lambdas.
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u -i "Yo dawg," pf-define-word-for-glossary/2 "function" "programming" | jq .
+#+END_SRC
+
+#+RESULTS:
+#+begin_src bash
+[
+  "Yo dawg, I heard you like functions, so I put a function in your function, so you can function while you function.",
+  "Yo dawg, I heard you like functions, so we put functions in your functions.",
+  "Yo dawg, I heard you like functions, so I put a function in your function so you can function while you function.",
+  "Yo dawg, i heard you like functions, so we put a function in your function, so you can function while you function.",
+  "Yo dawg, I heard you like functions..."
+]
+#+end_src
+

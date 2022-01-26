@@ -1,0 +1,31 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Parallelization for Pen.el -- exuberant completions
+#+DATE: <2021-12-28>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen gpt codex
+
+** Summary
+I add parallization for Pen.el using =GNU= parallel.
+This means parallelization can happen across servers, for example, or take advantage of =tmux=.
+
+Simply set =n-simultaneous-requests= to a number in =pen.yaml=.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  # lm-complete-generic is parallelised for increased prompting throughput
+  n-simultaneous-requests: 5
+#+END_SRC
+
++ code :: http://github.com/semiosis/pen.el/blob/master/scripts/lm-complete
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/jGlwrsfSgY4QbTDyw9ceuqdJA" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/jGlwrsfSgY4QbTDyw9ceuqdJA.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/jGlwrsfSgY4QbTDyw9ceuqdJA.js" id="asciicast-jGlwrsfSgY4QbTDyw9ceuqdJA" async></script>
+#+END_EXPORT

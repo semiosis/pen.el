@@ -1,0 +1,153 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: A Codex unparser prompt
+#+DATE: <2021-12-22>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: codex pen
+
+** Summary
+I make a prompt demonstrating the unparsing
+potential of Codex.
+
+But what would be nice are unparsers for NL
+syntax trees, regular expressions and code
+syntax trees (concrete), or a universal unparser.
+
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/nlp-unparser-generate-text-using-pos-tags-1.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "NLP unparser: Generate text using POS tags"
+  doc: "Generate text given a list of POS tags"
+  prompt-version: 1
+  prompt: |+
+    Parse tree and matching passage:
+    <delim>
+    1) Parts of speech tagging:
+    <delim>
+    NP V Det N
+    <delim>
+    (NP)John (VB)hit (Det)the (N)ball
+    <delim>
+    (NP)Noun (V)Verb (Det)Determiner (N)Noun
+    <delim>  
+    2) Parts of speech tagging:
+    <delim>
+    NP V DT N IN PRO$ N
+    <delim>
+    (NP)I (V)drive (DT)a (N)car (IN)to (PRO$)my (N)college
+    <delim>
+    (NP)NounPhrase (V)Verb (DT)Determiner (N)Noun (IN)Preposition (PRO$)PossessivePronoun
+    <delim>
+    4) Parts of speech tagging:
+    <delim>
+    NAME V ART N
+    <delim>
+    (NAME)Shane (V)ate (ART)the (N)tiger
+    <delim>
+    (NAME)PersonalPronoun (V)Verb (ART)Article (N)Noun
+    <delim>
+    5) Parts of speech tagging:
+    <delim>
+    <POS tags>
+    <delim>
+    <:pp>(<first tag>)
+  engine: "OpenAI Codex"
+  temperature: 0.3
+  max-generated-tokens: "(* 2 prompt-length)"
+  top-p: 1.0
+  stop-sequences:
+  - "<delim>"
+  cache: on
+  # TODO I should also allow vars to access vars when evaluating
+  vars:
+  - "POS tags"
+  # - "first tag"
+  # var-defaults:
+  # - ~
+  # - "(car (s-split \" \" pos-tags))"
+  examples:
+  - "JJ NP DT JJ N"
+  defs:
+  - first tag: "(car (s-split \" \" pos-tags))"
+  - validator-regex: "(mapcar (lambda (s) (concat \"\\\\(\" s \"\\\\)\" \"[^\\\\(]+\")) (s-split \" \" pos-tags))"
+  validator: "grep -qP \"^<validator-regex>$\""
+  filter: on
+  completion: off
+  insertion: off
+  external-related:
+  - "https://www.ling.upenn.edu/hist-corpora/annotation/labels.htm"
+#+END_SRC
+
+** Demo
+It's far from perfect though.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena pf-nlp-unparser-generate-text-using-pos-tags/1 "NP V DT JJ N" | jq-list-to-lines 
+#+END_SRC
+
+#+begin_src bash
+(NP)John (V)hit (DT)a (JJ)big (N)ball
+(NP)I (V)drive (DT)a (JJ)red (N)car
+(NP)John (V)is (DT)a (JJ)good (N)boy
+(NP)I (V)drive (DT)a (JJ)blue (N)car
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u pf-nlp-unparser-generate-text-using-pos-tags/1 "ART N V JJ NNS" | jq-list-to-lines 
+#+END_SRC
+
+#+begin_src bash
+(ART)The (N)dog (V)ran (JJ)fast (NNS)cats
+(ART)The (N)book (V)contained (JJ)many (NNS)words
+(ART)The (N)cat (V)ate (JJ)the (NNS)birds
+(ART)The (N)book (V)has (JJ)many (NNS)pages
+(ART)The (N)book (V)contained (JJ)many (NNS)facts
+#+end_src
+
+Short seem more accurate.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u pf-nlp-unparser-generate-text-using-pos-tags/1 "CD NNS VP" | jq-list-to-lines 
+#+END_SRC
+
+#+begin_src bash
+(CD)two (NNS)cars (VP)ran
+(CD)five (NNS)dogs (VP)barked
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u pf-nlp-unparser-generate-text-using-pos-tags/1 "CD NNS VP JJ" | jq-list-to-lines 
+#+END_SRC
+
+#+begin_src bash
+(CD)One (NNS)two (VP)hit (JJ)three
+(CD)two (NNS)girls (VP)play (JJ)tennis
+(CD)2 (NNS)cats (VP)chase (JJ)dogs
+(CD)two (NNS)cats (VP)chase (JJ)dogs
+(CD)five (NNS)dogs (VP)chase (JJ)cats
+(CD)One (NNS)person (VP)is (JJ)standing
+(CD)2 (NNS)cars (VP)are (JJ)red
+(CD)2 (NNS)dogs (VP)barked (JJ)loudly
+(CD)two (NNS)cars (VP)are (JJ)parked
+#+end_src
+
+# #+BEGIN_SRC bash -n :i bash :async :results verbatim code
+#   pena -u -i "(NP)Shane" pf-nlp-unparser-generate-text-using-pos-tags/1 "NP JJ V CC NNS VP" | jq-list-to-lines 
+# #+END_SRC
+
+Far from perfect.
+But cool proof of concept.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  pena -u pf-nlp-unparser-generate-text-using-pos-tags/1 "V CC NNS VP" | jq-list-to-lines 
+#+END_SRC
+
+#+begin_src bash
+(V)He (CC)and (NNS)his (VP)friends
+(V)John (CC)and (NNS)Mary (VP)walked
+(V)John (CC)and (NNS)Mary (VP)talked
+#+end_src

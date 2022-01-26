@@ -1,0 +1,31 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Tree-sitter with language models
+#+DATE: <2021-12-11>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: parsers pen
+
+** Summary
+I learn tree-sitter in order to build an IDE
+for building parsers in emacs..
+
+Glossary :: http://github.com/semiosis/glossaries-gh/blob/master/tree-sitter.txt
+
+Tree-sitter :: https://tree-sitter.github.io/tree-sitter/using-parsers
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  asciinema upload /tmp/tmpcnw2xfuw-ascii.cast
+#+END_SRC
+
+** Why?
+You're able to parse your own data structures
+using the TSInput struct, which means I could
+use tree-sitter to parse LMs,
+lazily/generatively. That might be useful for
+syntax highlighting generated text based on
+probabilities, for example, or for searching
+the LM for valid generations

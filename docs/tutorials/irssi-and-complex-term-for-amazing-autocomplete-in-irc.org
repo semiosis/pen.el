@@ -1,0 +1,18 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: irssi and complex term, for amazing autocomplete in IRC
+#+DATE: <2021-12-28>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen cterm codex
+
+** Summary
+This is just a demo of irssi with =cterm=. It
+scrapes whatever you are looking at in your
+terminal. It's particularly wonderful for
+communicating over IRC as an autocompleter.
+
+** Demo

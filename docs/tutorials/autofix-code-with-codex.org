@@ -1,0 +1,216 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Autofix code with Codex and LSP
+#+DATE: <2021-10-10>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: codex pen openai
+
+** Summary
+I make a prompt to autocorrect code based on
+LSP linter output. The prompt is written in
+the style of a StackOverflow question, and the
+error messages are automatically taken from
+the running LSP server.
+
+** Setup
+Firstly, lets get a list of algorithms. I just
+want to generate some algos until I find a
+result that produces linter errors/warnings.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (pps (ilist 10 "voting algorithms"))
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  ("Plurality"
+   "Borda"
+   "Coombs"
+   "Black"
+   "Nanson"
+   "Maxim"
+   "Minimax"
+   "Baldwin"
+   "Copeland"
+   "Instant-runoff"
+   "Approval"
+   "Kemeny-Young"
+   "Instant-Runoff"
+   "Maximin"
+   "Maximizer")
+#+END_SRC
+
+After generating a few, I stuck with Instant-Runoff.
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/FDnoqe5MgQ3ctjVylKSEbVm3U" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/FDnoqe5MgQ3ctjVylKSEbVm3U.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/FDnoqe5MgQ3ctjVylKSEbVm3U.js" id="asciicast-FDnoqe5MgQ3ctjVylKSEbVm3U" async></script>
+#+END_EXPORT
+
+*** Generate first some code with errors/warnings
+
+Codex is quite good at generating code, so it
+may take some attempts.
+
+I generated the =Instant-Runoff voting algorithm= using Codex.
+
+I'll just force break the code.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+# Broken
+def irv(ballots):
+    candidates = 
+    for ballot in ballots:
+        candidates |= set(ballot)
+    while len(candidates) > 1:
+        totals = dict((c, 0) for c in candidates)
+        for ballot in ballots:
+            for i, c in enumerate(ballot, sdjaf):
+                totals[c] += 10 ** i
+        min_total = min(totals.values())
+        min_candidates = [c for c in candidates if totals[c] == min_total]
+        candidates -= set(min_candidates)
+        ballots = [ballot for ballot in ballots if ballot[0] not in min_candidates]
+    return candidates.pop()
+#+END_SRC
+
+ Linter output:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  2: pyflakes: invalid syntax
+  2: pycodestyle: W291 trailing whitespace
+  13: pycodestyle: E501 line too long (83 > 79 characters)
+#+END_SRC
+
+It will be good enough for a demo.
+
+** Fixed code -- First 2 results
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  def irv(ballots):
+      candidates = set()
+      for ballot in ballots:
+          candidates |= set(ballot)
+      while len(candidates) > 1:
+          totals = dict((c, 0) for c in candidates)
+          for ballot in ballots:
+              for i, c in enumerate(ballot, 1):
+                  totals[c] += 10 ** i
+          min_total = min(totals.values())
+          min_candidates = [c for c in candidates if totals[c] == min_total]
+          candidates -= set(min_candidates)
+          ballots = [ballot for ballot in ballots if ballot[0] not in min_candidates]
+      return candidates.pop()
+  
+  
+  # Fixed?
+  def irv(ballots):
+      candidates = set()
+      for ballot in ballots:
+          candidates |= set(ballot)
+      while len(candidates) > 1:
+          totals = dict((c, 0) for c in candidates)
+          for ballot in ballots:
+              for i, c in enumerate(ballot):
+                  totals[c] += 10 ** i
+          min_total = min(totals.values())
+          min_candidates = [c for c in candidates if totals[c] == min_total]
+          candidates -= set(min_candidates)
+          ballots = [ballot for ballot in ballots if ballot[0] not in min_candidates]
+      return candidates.pop()
+#+END_SRC
+
+** Prompt
+- http://github.com/semiosis/prompts/blob/master/prompts/autofix-code-2.prompt
+
+=pf-autofix-code/2=
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  task: "Given the current error and the code snippet, fix the code snippet"
+  title: "autofix code"
+  prompt-version: 3
+  prompt: |+
+    https://stackoverflow.com/q/4579226
+  
+    Tags:      [<language>]
+  
+    My code is getting these errors:
+    <delim>
+    <compiler/linter output>
+    <delim>
+  
+    This is my code:
+    <delim>
+    <code segment>
+    <delim>
+  
+    Accepted Answer
+  
+    Make these changes to fix your code:
+    <delim>
+    
+  engine: "OpenAI Codex"
+  temperature: 0.3
+  max-generated-tokens: "(* 2 prompt-length)"
+  delimiter: "```"
+  top-p: 1.0
+  stop-sequences:
+  - "<delim>"
+  cache: on
+  vars:
+  - "compiler/linter output"
+  - "code segment"
+  defs:
+  - language: "(pen-detect-language)"
+  var-defaults:
+  # Leaving the string empty is actually more reliable
+  # - "(sor (s-chompall (pen-list2str (pen-lsp-error-list))) \"No errors.\")"
+  - "(pen-list2str (pen-lsp-error-list))"
+  - "(pen-buffer-string-or-selection t)"
+  examples:
+  - |+
+      2: compile: Pattern match(es) are non-exhaustive
+      2: typecheck: • Couldn't match expected type ‘[a]’ with actual type ‘[a] -> [a]’
+      4: typecheck: • Occurs check: cannot construct the infinite type: a ~ [a]
+  - |+
+      mergesort :: Ord a => [a] -> [a]
+      mergesort [] ys = ys
+      mergesort xs [] = xs
+      mergesort (x:xs) (y:ys) | x <= y  = x : mergesort x
+  filter: on
+  info: off
+  completion: off
+  insertion: off
+  external-related:
+  - "https://stackoverflow.com/"
+#+END_SRC
+
+** Emacs lisp
+*** Collect the error list from LSP
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (defun pen-lsp-error-list (&optional path)
+    (if (not path)
+        (setq path (get-path)))
+    (let ((l))
+      (maphash (lambda (file diagnostic)
+                 (if (string-equal path file)
+                     (dolist (diag diagnostic)
+                       (-let* (((&Diagnostic :message :severity? :source?
+                                             :range (&Range :start (&Position :line start-line))) diag)
+                               (formatted-message (or (if source? (format "%s: %s" source? message) message) "???"))
+                               (severity (or severity? 1))
+                               (line (1+ start-line))
+                               (face (cond ((= severity 1) 'error)
+                                           ((= severity 2) 'warning)
+                                           (t 'success)))
+                               (text (concat (number-to-string line)
+                                             ": "
+                                             (car (split-string formatted-message "\n")))))
+                         (add-to-list 'l text t)))))
+               (lsp-diagnostics))
+      l))
+#+END_SRC

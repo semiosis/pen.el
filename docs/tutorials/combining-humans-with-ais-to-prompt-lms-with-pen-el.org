@@ -1,0 +1,26 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Combining humans with AIs to prompt LMs with Pen.el
+#+DATE: <2022-01-26>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen prompting openai
+
+** Summary
+The human promptee engine and UI has been improved.
+The prompt is now displayed in a help window along with an input client.
+This way, a human knows what they are trying to complete.
+In the future this will mean that more advanced prompts can be trialed. For example, pen.el, when functioning as a p2p network will enable human specialists to prompt the network. Those human specialists may themselves be prompted by the result of an AI. Why is this good? Consider prompting a language model to correct grammar, but keeping the human in the loop. The combination of human prompting with AI prompting makes prompting far more powerful.
+I've also added support for inline overlays, hover documentation and read-only (highlighted) starting text in the human prompt UI.
+Those havent been demonstrated but are available.
+
+** Demo
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/464391" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/464391.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/464391.js" id="asciicast-464391" async></script>
+#+END_EXPORT

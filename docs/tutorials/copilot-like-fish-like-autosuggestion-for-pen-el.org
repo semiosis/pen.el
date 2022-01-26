@@ -1,0 +1,17 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Copilot-like / Fish-like autosuggestion for Pen.el
+#+DATE: <2021-12-03>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen
+
+** Summary
+I add support for Copilot-like auto-suggestion in Pen.el.
+
++ Code :: http://github.com/semiosis/pen.el/blob/master/src/pen-autosuggest.el
+
+** Demo

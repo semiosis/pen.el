@@ -1,0 +1,34 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Parsers and actions for .prompt files in Pen.el
+#+DATE: <2022-01-26>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen openai
+
+** Summary
+I have added support for parsers in the prompt
+format and actions. Parsers are a set of
+functions you may specify in the prompt format
+for parsing generated output into, for
+example, json. And actions are a set of elisp
+commands that make use of parser output. That
+means you can more rapidly create prompt
+functions that parse the output of prompt
+generations.
+
+** Example prompt
++ Code :: http://github.com/semiosis/prompts/blob/master/prompts/translate-to-english-1.prompt
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  parsers:
+  - json: "pen-str translate-to-english-1-json"
+  actions:
+  - show-translation: "(pen-show-translation (pen-parser-json result))"
+#+END_SRC
+
+Here, the =pen-parser-json= function has been generated from the =json= key earlier in the prompt file.
+When running the prompt function =pf-translate-to-english/1=, you will be asked to select from one of the actions.

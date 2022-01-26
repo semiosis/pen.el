@@ -1,0 +1,221 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Demo of GPT-J with Pen.el
+#+DATE: <2021-08-06>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: gpt pen eleutherai aix emacs
+
+** Summary
+I give a demo of GPT-J in Pen.el.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  Datomic
+      NLG: A database that is built on top of a
+      distributed graph of data and
+      relationships.
+#+END_SRC
+
+** Translating languages
+#+BEGIN_SRC text -n :async :results verbatim code
+  distributed graph
+      NLG: A graph that is constructed using a
+      number of different sized nodes and links.
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  arbre distribué
+      NLG: Un graphe construit avec
+      une grandeur différente de nœuds et de liaisons.
+#+END_SRC
+
+*** Doesn't seem to handle Japanese too well
+But, the AIx API only supports one completion
+at a time, for the moment. Usually I could
+cherry-pick from a list.
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  こんにちは
+      NLG: エンコードされたグラフ。
+#+END_SRC
+
+** Explaining an error
+*** input
+#+BEGIN_SRC text -n :async :results verbatim code
+  error: failed to run custom build command for `emacs_module v0.10.0`
+#+END_SRC
+
+*** output
+#+BEGIN_SRC text -n :async :results verbatim code
+  It means that you really wanted to execute the script defined in the emacs_module's custom build.
+  Please click on the link to see more details about this error and how to fix it.
+#+END_SRC
+
+** Generating pick-up lines
+GPT-J has demonstrated its ability to do pick
+up lines in many of my demonstrations.
+
+*** rugby
+#+BEGIN_SRC text -n :async :results verbatim code
+  Do you play rugby? I love watching you move.
+  Do you like rugby? Cuz I like you a snack pack.
+#+END_SRC
+
+** Adding comments to code
+*** A basic test
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  sn="$(basename "$0")"
+  bn="$(basename "$0")"
+#+END_SRC
+
+With flying colours.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  # Remember the name of the program
+  sn="$(basename "$0")"
+  # Save a copy of the original program name
+  bn="$(basename "$0")"
+#+END_SRC
+
+*** slightly trickier
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  if test "$sn" = pena; then
+      sn=penf
+      all=y
+  fi
+#+END_SRC
+
+With flying colours again.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  # Check for pena setting
+  if test "$sn" = pena; then
+      # Change the default sn to penf
+      sn=penf
+      # Set all to y
+      all=y
+  fi
+#+END_SRC
+
+*** Something harder
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  case "$sn" in
+      penf) {
+          if test "$#" -eq 0; then
+              sn=penl
+              penl_strip_pf=y
+          elif test "$#" -eq 1; then
+              sn=penh
+              penl_strip_pf=y
+          fi
+      }
+      ;;
+  
+      *)
+  esac
+#+END_SRC
+
+I think the issue with this is that the prompt
+is quite large currently and the AIx API is
+not accepting enough tokens.
+
+Currently the AIx API is not respecting the
+number of tokens set.
+
++ prompt :: http://github.com/semiosis/prompts/blob/master/prompts/annotate-code-with-commentary-2.prompt
+
+The entire snippet of code has to go into the
+prompt in order for it to work well.
+
+It wasn't fitting.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  # When the program starts
+  case "$sn" in
+      penf) {
+          # If no args were passed in
+          if test "$#" -eq 0; then
+#+END_SRC
+
+Demo up to this point
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/PzFSAxkjaMwj5BJ52nBGmVBlS;" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/PzFSAxkjaMwj5BJ52nBGmVBlS.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/PzFSAxkjaMwj5BJ52nBGmVBlS.js" id="asciicast-PzFSAxkjaMwj5BJ52nBGmVBlS" async></script>
+#+END_EXPORT
+
+*** Generate fizzbuzz
+
+#+BEGIN_SRC js -n :async :results verbatim code
+  #!/usr/bin/nodejs
+  
+  // Write a program that prints the numbers
+  // from 1 to 100.
+  
+  // But for multiples of three print "Fizz"
+  // instead of the number and for the
+  // multiples of five print "Buzz".
+  
+  // For numbers which are multiples of both
+  // three and five print "FizzBuzz".
+  
+  function fizzBuzz(limit) {
+      var i, num, str, mod, mod3, mod5;
+  
+      for (i = 1; i <= limit; i++) {
+          num = i;
+          mod = i % 3;
+          mod3 = i % 5;
+          mod5 = i % 15;
+  
+          if (mod === 0) {
+              str = "Fizz";
+          } else if (mod === 1) {
+              str = "Buzz";
+          } else if (mod === 2) {
+              str = "FizzBuzz";
+          } else {
+              str = "";
+          }
+  
+          if (mod3 === 0) {
+              str += "Fizz";
+          } else if (mod3 === 1) {
+              str += "Buzz";
+          } else if (mod3 === 2) {
+              str += "FizzBuzz";
+          } else {
+              str += "";
+          }
+  
+          if (mod5 === 0) {
+              str += "Fizz";
+          } else if (mod5 === 1) {
+              str += "Buzz";
+          } else if (mod5 === 2) {
+              str += "FizzBuzz";
+          } else {
+              str += "";
+          }
+  
+          if (str!== "") {
+              console.log(num + " " + str);
+          }
+      }
+  }
+#+END_SRC
+
+It starts generating towards the end.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/YBMKRGxUrzVe6nrYQ97ZYaFwE" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/YBMKRGxUrzVe6nrYQ97ZYaFwE.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/YBMKRGxUrzVe6nrYQ97ZYaFwE.js" id="asciicast-YBMKRGxUrzVe6nrYQ97ZYaFwE" async></script>
+#+END_EXPORT
