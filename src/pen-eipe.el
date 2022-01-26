@@ -43,8 +43,20 @@
           (pen-eipe-set-prompt-ro (+ 1 charlen))
           (f-delete fp t)))))
 
+(defface pen-human-prompt
+  '((t :foreground "#d2268b"
+       :background "#2e2e2e"
+       :weight bold
+       :underline t))
+  "Face representing a prompt to a human user."
+  :group 'pen-faces)
+
 (defun pen-eipe-set-info-overlay (info)
-  )
+  (overlay-put
+   (make-overlay (point) (point))
+   'after-string
+   (concat (propertize info 'face 'pen-human-prompt)
+           "\n\n")))
 
 (defun pen-find-file-overlay-info ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
