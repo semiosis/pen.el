@@ -52,7 +52,7 @@
                        nil nil "ii-language: ")
                       nil nil "Language:")))
 
-  ;; Strangely, this broke ii
+  ;; Strangely, it broke ii to start in pen-prompts-directory
   ;; (pen-sps (pen-cmd "ii" language) nil nil pen-prompts-directory)
   (pen-sps (pen-cmd "ii" language)))
 (defalias 'ii 'ii-language)
