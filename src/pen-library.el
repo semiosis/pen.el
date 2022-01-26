@@ -680,7 +680,7 @@ buffer which is not included when this function returns"
   (setq wintype (or (sor wintype)
                     "sps"))
 
-  (pen-sn (pen-cmd "pen-tvipe" "-wintype" (pen-q wintype) "-cl" (pen-cmd "pen-eipe" "-pt" prompttext))
+  (pen-sn (pen-cmd "pen-tvipe" "-wintype" wintype "-cl" (pen-cmd "pen-eipe" "-pt" prompttext))
           ;; don't put the detach here
           input nil nil detach nil nil nil chomp)
 
