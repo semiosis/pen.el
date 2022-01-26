@@ -10,6 +10,12 @@
    "https://asciinema.org/a/bjhdM0VBAuG4LrSOFxcPITmyI"
    "Apostrophe Demo"))
 
+(defun pen-demo-pet ()
+  (interactive)
+  (pen-tm-asciinema-play
+   "https://asciinema.org/a/bvb5MLYanGFT2jxZ1Fj7987Hg"
+   "Pet Demo"))
+
 (defun pen-demo-paracosm ()
   (interactive)
   (pen-tm-asciinema-play

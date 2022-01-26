@@ -766,6 +766,9 @@
     (bindings--define-key menu [mi-pen-tm-edit-v-in-nw]
       '(menu-item "Open in vim" pen-tm-edit-v-in-nw
                   :help "Open the current buffer in vim"))
+    (bindings--define-key menu [mi-pen-tm-edit-pet-v-in-nw]
+      '(menu-item "Open in pet vim" pen-tm-edit-pet-v-in-nw
+                  :help "Open the current buffer in vim with an emacs eterm"))
     (bindings--define-key menu [mi-pen-term-sps]
       '(menu-item "Split screen with pet" pen-term-sps
                   :help "Open a pet in a split screen (emacs term inside docker)"))

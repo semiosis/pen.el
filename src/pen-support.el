@@ -1689,6 +1689,12 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (pen-tmux-edit "pen-v" "nw"))
 (define-key pen-map (kbd "C-c o") #'pen-tm-edit-v-in-nw)
 
+(defun pen-tm-edit-pet-v-in-nw ()
+  "Opens pen-v in new window for buffer contents"
+  (interactive)
+  (pen-tmux-edit "pet pen-v" "nw"))
+(define-key pen-map (kbd "C-c O") #'pen-tm-edit-pet-v-in-nw)
+
 (defun parent-modes ()
   (interactive)
   (let ((ms (parent-mode-list major-mode)))
