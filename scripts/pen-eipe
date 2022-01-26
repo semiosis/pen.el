@@ -20,6 +20,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -pov) {
+        PEN_PREOVERLAY="$2"
+        shift
+        shift
+    }
+         ;;
+
     *) break;
 esac; done
 
@@ -46,6 +53,7 @@ export PEN_NO_TM=y
 
 export PEN_PROMPT
 export PEN_OVERLAY
+export PEN_PREOVERLAY
 pen -notm -nw --pool "$tf_pipe_buffer"
 
 exec 1>&3
