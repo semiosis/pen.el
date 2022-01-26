@@ -79,6 +79,7 @@
 (defun pen-eipe-set-info-overlay (info)
   (pen-display-doc-overlay info))
 
+;; This isn't ideal because not all of the docs are displayed
 (defun pen-find-file-overlay-info ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
     (if (f-exists-p fp)
