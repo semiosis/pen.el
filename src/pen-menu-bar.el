@@ -138,7 +138,7 @@
 
     menu))
 
-(defset menu-bar-help-menu
+(defset menu-bar-emacs-help-menu
   (let ((menu (make-sparse-keymap "Help")))
     (bindings--define-key menu [about-gnu-project]
       '(menu-item "About GNU" describe-gnu-project
@@ -703,9 +703,6 @@
 
 (defset menu-bar-demos-menu
   (let ((menu (make-sparse-keymap "Demos")))
-    (bindings--define-key menu [mi-pen-read-tutorial]
-      '(menu-item "Select Tutorial" pen-read-tutorial
-                  :help "Select from a bunch of tutorials"))
     (bindings--define-key menu [mi-pen-demo-installation]
       '(menu-item "Installation of Pen.el" pen-demo-installation
                   :help "Demo the installation of Pen.el"))
@@ -721,6 +718,22 @@
     (bindings--define-key menu [mi-pen-demo-imaginary-interpreter]
       '(menu-item "Imaginary Interpreter" pen-demo-imaginary-interpreter
                   :help "How to start and use an Imaginary Interpreter"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-help-menu
+  (let ((menu (make-sparse-keymap "Help")))
+    (bindings--define-key menu [mi-menu-bar-demos-menu]
+      `(menu-item "Demos" ,menu-bar-demos-menu
+                  :help "Talk 1-on-1 to chatbots"))
+    (bindings--define-key menu [mi-pen-read-tutorial]
+      '(menu-item "Select Tutorial" pen-read-tutorial
+                  :help "Select from a bunch of tutorials"))
+    (bindings--define-key menu [mi-menu-bar-emacs-help-menu]
+      `(menu-item "GNU/Emacs" ,menu-bar-emacs-help-menu
+                  :help "Standard Emacs Help menu"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -863,8 +876,8 @@
       (bindings--define-key global-map [menu-bar config]
         (cons "Configure" menu-bar-configure-menu))
 
-      (bindings--define-key global-map [menu-bar demos]
-        (cons "Demos" menu-bar-demos-menu))
+      (bindings--define-key global-map [menu-bar help]
+        (cons "Help" menu-bar-help-menu))
 
       (bindings--define-key global-map [menu-bar documents]
         (cons "Documents" menu-bar-documents-menu))
