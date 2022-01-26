@@ -3,7 +3,7 @@
   (let* ((dir (f-join pen-penel-directory "docs" "tutorials"))
          (file (fz (pen-sn
                     (concat
-                     (cmd "find" "." "-name" "*.org")
+                     (pen-cmd "find" "." "-name" "*.org")
                      " | sed 's/.\\///'")
                     nil
                     dir)
