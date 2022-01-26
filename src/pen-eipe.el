@@ -44,15 +44,15 @@
           (f-delete fp t)))))
 
 (defsetface pen-human-prompt
-  '((t :foreground "#d2268b"
-       :background "#442e2e"
+  '((t :foreground "#64b5f6"
+       :background "#1565c0"
        :weight bold
        :underline nil))
   "Face representing a prompt to a human user.")
 
 (defsetface pen-none-face
-  '((t :foreground nil
-       :background nil
+  '((t :foreground "#64b5f6"
+       :background "#1565c0"
        :weight bold
        :underline nil))
   "Face representing a prompt to a human user.")
