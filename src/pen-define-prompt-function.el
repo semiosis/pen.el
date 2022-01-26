@@ -1156,7 +1156,8 @@
           ;; the purpose of this dialog is
           (final-prompt
            (cond
-            ((string-equal final-engine "Human")
+            ((and (string-equal final-engine "Human")
+                  prompt-final-edit-human)
              (pen-eipec final-prompt "nw"
                         nil
                         "Final prompt edit by a human:\n\n"))
@@ -1743,6 +1744,7 @@
                                                              include-prompt
                                                              no-gen
                                                              no-select-action
+                                                             prompt-final-edit-human
                                                              select-only-match
                                                              variadic-var
                                                              pretext
