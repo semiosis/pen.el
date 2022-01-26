@@ -676,8 +676,12 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
 (defun pen-eipe (input &optional chomp wintype prompttext overlay-text detach)
   "`prompttext` is read-only text at the start of the
 buffer which is not included when this function returns"
-  (pen-sn (pen-cmd "pen-tvipe" "-cl" (pen-cmd "pen-eipe" "-pt" prompttext))
-              ;; don't put the detach here
+
+  (setq wintype (or (sor wintype)
+                    "sps"))
+
+  (pen-sn (pen-cmd "pen-tvipe" "-wintype" (pen-q wintype) "-cl" (pen-cmd "pen-eipe" "-pt" prompttext))
+          ;; don't put the detach here
           input nil nil detach nil nil nil chomp)
 
   ;; Sadly the following doesn't work, for reasons I don't currently understand
