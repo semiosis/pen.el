@@ -71,12 +71,9 @@
      :underline nil))
   "Face representing a prompt to a human user.")
 
+(require 'lsp-ui-doc)
 (defun pen-eipe-set-info-overlay (info)
-  (overlay-put
-   (make-overlay (point-min) (point-min))
-   'after-string
-   (concat (propertize info 'face 'pen-human-prompt)
-           (propertize "\n" 'face 'pen-none-face))))
+  (lsp-ui-doc--display "eipe" info))
 
 (defun pen-find-file-overlay-info ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
