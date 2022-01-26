@@ -527,3 +527,9 @@ pen-build-charm
 cd ~/repos
 git clone "https://github.com/huginn/huginn"
 )
+
+# ispell
+agi dialog apt-utils
+agi dictionaries-common
+dpkg --force-depends --configure -a
+agi ispell
