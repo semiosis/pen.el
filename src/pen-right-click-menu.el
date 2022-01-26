@@ -151,17 +151,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (-filter (lambda (i) (istr-match-p (ht-get i "language") lang)) (pen-list-interpreters))
   (re-match-p "^In \\[[0-9]*\\]: " (current-line-string)))
 
-(defun pen-start-imaginary-interpreter ()
-  (interactive)
-  (let ((f (fz
-            (if (>= (prefix-numeric-value current-prefix-arg) 4)
-                pen-prompt-functions
-              pen-prompt-interpreter-functions)
-            nil nil "pen interpreter: ")))
-    (if f
-        (let ((filter t))
-          (call-interactively (intern f))))))
-
 (defun pen-e-sps (&optional run)
   "`sps` stands for `Split Sensibly`"
   (interactive)
