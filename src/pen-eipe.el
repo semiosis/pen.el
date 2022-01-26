@@ -98,7 +98,7 @@
   (let ((b (get-buffer-create "*pen-help*")))
     (with-current-buffer b
       (mark-whole-buffer)
-      (delete-region)
+      (delete-region (mark) (point))
       (insert (propertize info 'face 'pen-human-prompt)))
     (display-buffer
      (get-buffer-create "*pen-help*")
