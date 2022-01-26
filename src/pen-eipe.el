@@ -44,17 +44,22 @@
           (f-delete fp t)))))
 
 (defsetface pen-human-prompt
-  '((t :foreground "#64b5f6"
-       :background "#1565c0"
+  '((t :foreground "#f664b5"
+       ;; :background "#c01565"
+       :background "#111111"
        :weight bold
        :underline nil))
   "Face representing a prompt to a human user.")
 
 (defsetface pen-none-face
-  '((t :foreground "#64b5f6"
-       :background "#1565c0"
-       :weight bold
-       :underline nil))
+  '((t
+     ;; :foreground "#64b5f6"
+     ;; :background "#1565c0"
+     :foreground "#f664b5"
+     :background "#111111"
+     ;; :background "#c01565"
+     :weight bold
+     :underline nil))
   "Face representing a prompt to a human user.")
 
 (defun pen-eipe-set-info-overlay (info)
