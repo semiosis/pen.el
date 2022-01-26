@@ -735,12 +735,18 @@
 
 (defset menu-bar-common-menu
   (let ((menu (make-sparse-keymap "Common")))
-    (bindings--define-key menu [pen-run-prompt-function]
+    (bindings--define-key menu [mi-pen-run-prompt-function]
       '(menu-item "Run prompt function" pen-run-prompt-function
                   :help "Run a prompt function interactively"))
-    (bindings--define-key menu [pen-sps]
-      '(menu-item "Split screen shell sensibly" pen-sps
+    (bindings--define-key menu [mi-pen-sps]
+      '(menu-item "Split screen shell sensibly with shell (no cterm)" pen-sps
                   :help "Open a shell in a split screen sensibly"))
+    (bindings--define-key menu [mi-pen-nbfs]
+      '(menu-item "New empty file/buffer (*untitled*)" nbfs
+                  :help "Open a new buffer without a name"))
+    (bindings--define-key menu [mi-pen-term-sps]
+      '(menu-item "Split screen with pet" pen-term-sps
+                  :help "Open a pet in a split screen (emacs term inside docker)"))
     (bindings--define-key menu [pen-revert-kill-buffer-and-window]
       '(menu-item "Kill buffer / abort" pen-revert-kill-buffer-and-window
                   :help "This kills and discards the current buffer and window. It may be used to abort, when the human is prompted"))
