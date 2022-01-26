@@ -71,9 +71,13 @@
      :underline nil))
   "Face representing a prompt to a human user.")
 
+(defun pen-display-doc-overlay ()
+  (setq-local window-min-height 1)
+  (lsp-ui-doc--display "pen" info))
+
 (require 'lsp-ui-doc)
 (defun pen-eipe-set-info-overlay (info)
-  (lsp-ui-doc--display "eipe" info))
+  (pen-display-doc-overlay info))
 
 (defun pen-find-file-overlay-info ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
