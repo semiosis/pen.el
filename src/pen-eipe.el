@@ -48,6 +48,7 @@
     (if (f-exists-p fp)
         (let* ((info (slurp-file fp)))
           ;; (pen-eipe-set-info-overlay info)
+          (pen-etv info)
           (f-delete fp t)))))
 
 (defset pen-eipe-hook '())
