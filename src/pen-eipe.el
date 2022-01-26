@@ -97,6 +97,7 @@
 ;; This needs to happen after the file is loaded
 (add-hook 'pen-eipe-hook 'pen-find-file-read-only-context)
 (add-hook 'pen-eipe-hook 'pen-find-file-overlay-info)
+(add-hook 'pen-eipe-hook 'pen-find-file-preoverlay-info)
 
 (defun run-eipe-hooks ()
   (interactive)
