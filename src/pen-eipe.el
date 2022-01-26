@@ -71,7 +71,7 @@
      :underline nil))
   "Face representing a prompt to a human user.")
 
-(defun pen-display-doc-overlay ()
+(defun pen-display-doc-overlay (info)
   (setq-local window-min-height 1)
   (lsp-ui-doc--display "pen" info))
 
