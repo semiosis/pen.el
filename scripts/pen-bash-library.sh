@@ -69,8 +69,6 @@ remove_from_path() {
     return 0
 }
 
-
-
 pathmunge () {
     if [ "$2" = "after" ] ; then
         PATH="$PATH:$1"
