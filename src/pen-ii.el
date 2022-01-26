@@ -51,6 +51,8 @@
                        (eval `(pen-ci (pen-one (pf-list-of/2 10 "programming languages"))))
                        nil nil "ii-language: ")
                       nil nil "Language:")))
+
+  ;; Strangely, this broke ii
   ;; (pen-sps (pen-cmd "ii" language) nil nil pen-prompts-directory)
   (pen-sps (pen-cmd "ii" language)))
 (defalias 'ii 'ii-language)
