@@ -39,8 +39,10 @@
 (defun yaml-get-value-from-this-file ()
   (interactive)
   (if (and (major-mode-p 'yaml-mode)
-           (f-file-p (buffer-file-name)))
-      (let ((key (fz (pen-sn "yq . | jq-showschema-keys" (buffer-string)))))
+           ;; (f-file-p (buffer-file-name))
+           )
+      (let ((key (fz (pen-sn "yq . | jq-showschema-keys" (buffer-string))
+                     nil nil "Key: ")))
         (if (sor key)
             (let ((s (pen-snc (pen-cmd "yq" "-r" key) (buffer-string))))
               (with-current-buffer
