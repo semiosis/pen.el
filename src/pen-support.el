@@ -552,8 +552,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
        (if (or
             (not stdin)
             detach)
-           (shut-up
-             (shell-command final_cmd output_buffer "*pen-sn-stderr*"))
+           (shell-command final_cmd output_buffer "*pen-sn-stderr*")
          (with-temp-buffer
            (insert stdin)
            (shell-command-on-region (point-min) (point-max) final_cmd output_buffer nil "*pen-sn-stderr*"))))
