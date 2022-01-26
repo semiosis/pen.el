@@ -79,7 +79,8 @@
 (defun pen-eipe-set-info-overlay (info)
   (pen-display-doc-overlay info))
 
-;; This isn't ideal because not all of the docs are displayed
+;; This isn't ideal for human prompting because not all of the docs are displayed.
+;; I might have to stick with an inline text prompt, sadly.
 (defun pen-find-file-overlay-info ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
     (if (f-exists-p fp)
