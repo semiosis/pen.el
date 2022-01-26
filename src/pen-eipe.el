@@ -85,6 +85,13 @@
           (pen-eipe-set-info-overlay info)
           (f-delete fp t)))))
 
+(defun pen-eipe-set-info-preoverlay (info)
+  (overlay-put
+   (make-overlay (point-min) (point-min))
+   'after-string
+   (concat (propertize info 'face 'pen-human-prompt)
+           (propertize "\n" 'face 'pen-none-face))))
+
 (defun pen-find-file-preoverlay-info ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_preoverlay")))
     (if (f-exists-p fp)
