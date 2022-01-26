@@ -461,6 +461,9 @@
     (bindings--define-key menu [mi-ii-language]
       '(menu-item "Start an imaginary interpreter" ii-language
                   :help "Start an imaginary interpreter, given the name/language"))
+    (bindings--define-key menu [mi-pen-start-ii-from-buffer]
+      '(menu-item "Start an imaginary interpreter from the current terminal" pen-start-ii-from-buffer
+                  :help "Start an imaginary interpreter from your current terminal"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
