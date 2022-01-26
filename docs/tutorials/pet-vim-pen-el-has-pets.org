@@ -1,0 +1,50 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
+#+HUGO_BASE_DIR: /home/shane/dump/home/shane/notes/ws/blog/blog
+#+HUGO_SECTION: ./posts
+
+#+TITLE: Pet vim. Pen.el has pets.
+#+DATE: <2022-01-27>
+#+AUTHOR: Shane Mulligan
+#+KEYWORDS: pen openai
+
+** Summary
+This is =pet vim=.
+
+It's vim inside =Pen.el=, so you can
+autocomplete, etc with =Pen.el= powering the
+autocompletion and documentation, etc.
+
+=pet= stands for =Pen eterm=.
+
+You can run it on the command line around
+other programs such as =vim=.
+
+So to have a pet =vim= you can just type that.
+
+Or you can have a pet bash if you want.
+
+That's a bash inside =Pen.el=.
+
+=pet= is different from =cterm= only in that =cterm=
+by default runs =Pen.el= around programs on your
+host machine.
+
+pet sticks to the container.
+
+It appears as though this video doesn't work
+in asciinema itself -- probably I've found the
+limits of nesting and syntax highlighting on
+asciinema.com LOL But it does work using
+asciinema play, which you can do through
+=Pen.el=.
+
+#+BEGIN_EXPORT html
+<!-- Play on asciinema.com -->
+<!-- <a title="asciinema recording" href="https://asciinema.org/a/bvb5MLYanGFT2jxZ1Fj7987Hg" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/bvb5MLYanGFT2jxZ1Fj7987Hg.svg" /></a> -->
+<!-- Play on the blog -->
+<script src="https://asciinema.org/a/bvb5MLYanGFT2jxZ1Fj7987Hg.js" id="asciicast-bvb5MLYanGFT2jxZ1Fj7987Hg" async></script>
+#+END_EXPORT
+
+You may find the demo of =pet= in =Pen.el='s Demos menu.
