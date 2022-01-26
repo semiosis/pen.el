@@ -88,6 +88,7 @@
           ;; enough lines for the docs to appear
           ;; but it should be ok if the eipe is chomped
           (insert "\n\n\n\n")
+          (start-of-buffer)
           (pen-eipe-set-info-overlay info)
           (f-delete fp t)))))
 
