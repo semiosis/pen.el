@@ -182,13 +182,13 @@
   (interactive (list (pen-thing-at-point)))
   (pen-sps (concat "z-repl stack install " (pen-q (fz (pen-sn (concat "hs-import-to-package " (pen-q thing))))))))
 
-(defun hs-download-packages-with-function-type (type)
+(defun hs-download-packages-with-function-type (hs-type)
   (interactive (list (pen-intero-get-type)))
-  (pen-sph (concat "t new " (pen-q "hs-download-packages-with-function-type " (pen-q type)))))
+  (pen-sph (concat "t new " (pen-q "hs-download-packages-with-function-type " (pen-q hs-type)))))
 
-(defun hs-tds-fzf (type)
+(defun hs-tds-fzf (hs-type)
   (interactive (list (pen-intero-get-type)))
-  (pen-sph (concat "t new " (pen-q "rtcmd hs-type-declarative-search-fzf " (pen-q type)))))
+  (pen-sph (concat "t new " (pen-q "rtcmd hs-type-declarative-search-fzf " (pen-q hs-type)))))
 
 (defun pen-type-search-thing-at-point (&optional  winfunc)
   "Show doc for thing under pointl. winfunc = 'spv or 'sph elisp function"
