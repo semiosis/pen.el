@@ -113,15 +113,32 @@
   (interactive)
   (new-buffer-from-string (pen-global-variables-json)))
 
+(defun force-keyvalue (e)
+  ;; Make a new list
+  (list
+   (car e)
+   (if (or (stringp (cdr e))
+           (symbolp (cdr e))
+           (numberp (cdr e)))
+       (cdr e)
+     nil)))
+
+(defun force-alist (l)
+  (mapcar 'force-keyvalue l))
+
+(defun buffer-variables-json ()
+  "Gets some properties of the current emacs buffer in json format."
+  (pen-json-encode-alist (force-alist (buffer-local-variables))))
+
 (defun pen-tvipe-pen-buffer-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (cl-tvipe (pen-buffer-properties-json) :tm_wincmd "sph" :b-nowait t :b-quiet t))
+  (cl-tvipe (pen-buffer-variables-json) :tm_wincmd "sph" :b-nowait t :b-quiet t))
 
 (defun pen-etv-pen-buffer-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (new-buffer-from-string (pen-buffer-properties-json)))
+  (new-buffer-from-string (pen-buffer-variables-json)))
 
 (define-key pen-map (kbd "M-l M-p M-v") 'pen-etv-pen-buffer-properties-json)
 
