@@ -439,19 +439,16 @@ The result is a string."
 (pen-with 'clojure-mode
           (defun cider-doc-thing-at-point ()
             (interactive)
-            (cider-doc-lookup (format "%s" (symbol-at-point))))
-          )
+            (cider-doc-lookup (format "%s" (symbol-at-point)))))
 
 (pen-with 'cider-repl
           (defun cider-doc-thing-at-point ()
             (interactive)
-            (cider-doc-lookup (format "%s" (symbol-at-point))))
-          )
+            (cider-doc-lookup (format "%s" (symbol-at-point)))))
 
 (pen-with 'slime
           (define-key slime-mode-map (kbd "M-n") nil)
-          (define-key slime-mode-map (kbd "M-p") nil)
-          )
+          (define-key slime-mode-map (kbd "M-p") nil))
 
 (defun slime-check-version (version conn))
 
@@ -467,9 +464,7 @@ The result is a string."
            (region-pipe formatter)))
         (mark-active
          (save-mark-and-excursion
-           (region-pipe formatter))
-         ;; (reselect-last-region)
-         )
+           (region-pipe formatter)))
         (t
          (pen-sn (concat formatter " " (pen-q buffer-file-name))))))
 
