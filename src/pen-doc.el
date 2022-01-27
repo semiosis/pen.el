@@ -26,7 +26,6 @@
      ,(concat "http://www.google.com/search?ie=utf-8&oe=utf-8&q=" (construct-google-query lang 'lang) "+%s")
      :browser 'eww-browse-url))
 
-
 (defun search-google-for-doc (&optional symstring lang)
   "Do an I'm feeling lucky lookup for documentation on this thing"
   (interactive (list
@@ -65,12 +64,10 @@
 
     (pen-sph (concat "google-for-docs " (pen-q lang) " " (pen-q query)) "")))
 
-
 ;; M-6
 (defun doc/lookup-ask (query)
   "docstring"
   (interactive "P"))
-
 
 (defun pen-doc (&optional thing winfunc)
   "Show doc for thing given. winfunc = 'spv or 'sph elisp function"
@@ -98,7 +95,6 @@
     (describe-function (intern thing)))
    (t (search-google-for-doc thing))))
 (defalias 'pen-doc-ask 'pen-doc)
-
 
 (defun pen-doc-thing-at-point (arg &optional  winfunc)
   "Show doc for thing under pointl. winfunc = 'spv or 'sph elisp function"
