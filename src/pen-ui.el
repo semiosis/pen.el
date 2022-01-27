@@ -1,5 +1,12 @@
 (require 'hide-mode-line)
 
+(defun disable-truncate-code ()
+  (setq print-level nil)
+  (setq print-length nil))
+(add-hook 'prog-mode-hook 'disable-truncate-code)
+
+(truncate-lines-mode 1)
+
 (defun kill-buffer-if-not-current (name)
   (ignore-errors
     (if (not (string-equal name (buffer-name)))
@@ -36,6 +43,7 @@
 (toggle-chrome)
 (toggle-chrome)
 
+(define-key visual-line-mode-map (kbd "<remap>") nil)
 (global-set-key (kbd "<S-f4>") 'toggle-chrome)
 
 (provide 'pen-ui)
