@@ -419,8 +419,6 @@ The result is a string."
 
 (require 'evil-lisp-state)
 
-;; Annoyingly this isnt working atm. Fix
-
 (defun evil-insert-sexp-before-noevil ()
   (interactive "p")
   (evil-lisp-state-insert-sexp-before)
@@ -432,8 +430,6 @@ The result is a string."
   (evil-lisp-state/quit))
 
 (defun special-lispy-beginning-of-defun-noevil (arg)
-  ;; If you use (interactive "p") then the defun needs an arg
-
   (interactive "p")
   (evil-lisp-state/quit)
 
