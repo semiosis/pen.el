@@ -540,6 +540,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 nvm install 12.14.1
 npm install -g localtunnel
-lt --port 7681
+# lt --port 7681
 
 agi iceweasel
