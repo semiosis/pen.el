@@ -353,5 +353,9 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 ;; Sadly can't override because of lexical scope
 ;; j:company-lsp--candidates-async
 
+(add-hook 'text-mode-hook #'lsp)
+(add-hook 'rust-mode-hook #'lsp)
+(add-hook 'clojure-mode-hook #'lsp)
+
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
