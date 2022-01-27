@@ -33,3 +33,5 @@
         (visual-line-mode 1)))))
 
 (global-set-key (kbd "<S-f4>") 'toggle-chrome)
+
+(provide 'pen-ui)
