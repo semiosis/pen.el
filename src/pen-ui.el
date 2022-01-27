@@ -14,7 +14,7 @@
   (kill-buffer-if-not-current "*docker-containers*")
   (kill-buffer-if-not-current "*docker-images*")
   (kill-buffer-if-not-current "*docker-machines*")
-  (if (minor-mode-p global-display-line-numbers-mode)
+  (if (bound-and-true-p global-display-line-numbers-mode)
       (progn
         (if lsp-mode
             (lsp-headerline-breadcrumb-mode -1))
