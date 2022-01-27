@@ -399,6 +399,9 @@
     (bindings--define-key menu [mi-pen-start-gui-web-browser]
       '(menu-item "Start Pen.el in a GUI web browser" pen-start-gui-web-browser
                   :help "Start Pen.el in a GUI web browser"))
+    (bindings--define-key menu [mi-pen-public-web]
+      '(menu-item "Start Pen.el with a public web URL" pen-public-web
+                  :help "Start Pen.el publicly with its own URL"))
     (bindings--define-key menu [mi-pen-start-gui]
       '(menu-item "Start Pen.el in a GUI" pen-start-gui
                   :help "Start Pen.el in an emacs GUI"))
