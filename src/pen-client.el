@@ -405,6 +405,12 @@ This function doesn't really like it when you put 'sp' as the editor."
   stdin)
 (defalias 'pen-tv 'pen-cl-tv)
 
+(cl-defun pen-cl-tvipe (&optional stdin &key editor &key tm_wincmd &key b-quiet &key b-nowait &key dir)
+  "Setting b-wait to -1 disables waiting."
+  (interactive)
+  (pen-sh/tvipe stdin editor tm_wincmd nil b-nowait b-quiet dir))
+(defalias 'pen-tvipe 'pen-cl-tvipe)
+
 (defun pen-bash (&optional cmd stdin b_output tm_session b_switch_to tm_wincmd dir b_wait)
   (interactive)
   (pen-sh cmd stdin b_output tm_session "bash" b_switch_to tm_wincmd dir b_wait))

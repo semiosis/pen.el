@@ -1754,4 +1754,17 @@ This function accepts any number of ARGUMENTS, but ignores them."
     (chomp (pen-sn com (chomp (str mess))))
     s_message))
 
+(defmacro pen-with (package &rest body)
+  "This attempts to run code dependent on a package and otherwise doesn't run the code."
+  `(when (require ,package nil 'noerror)
+     ,@body))
+
+(defun escape (chars input)
+  "Escapes chars inside a string"
+  (let ((re (eval `(rx (group (any ,@(butlast (cdr (split-string chars "")))))))))
+    (replace-regexp-in-string re "\\\\\\1" input)))
+
+(defun pen-bs (chars input)
+  (escape input chars))
+
 (provide 'pen-support)

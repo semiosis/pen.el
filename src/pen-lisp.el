@@ -1,5 +1,5 @@
 (require 'lispy)
-(require 'pen-utils)
+;; (require 'pen-utils)
 
 (setq show-paren-delay 0
       show-paren-style 'parenthesis)

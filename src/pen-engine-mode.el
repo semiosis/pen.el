@@ -1,6 +1,6 @@
-(require 'pen-browser)
+;; (require 'pen-browser)
 (require 'engine-mode)
-(require 'pen-search)
+;; (require 'pen-search)
 
 (defun pen-eww-js-for-browse-url (url discard)
   (pen-eww-js url nil))
@@ -51,10 +51,6 @@
   "http://www.gutenberg.org/ebooks/search/?query=%s"
   :keybinding "U")
 
-;; (defengine scihub
-;;   "https://sci-hub.do/.ec/search.php?req=%s&lg_topic=libgen&open=0&view=simple&res=25&phrase=1&column=def"
-;;   :keybinding "S")
-
 (defengine codesearch-debian
   "https://codesearch.debian.net/search?q=%s"
   :keybinding "d")
@@ -70,12 +66,6 @@
 (defengine hoogle
   "https://www.haskell.org/hoogle/?hoogle=%s"
   :keybinding "7")
-
-;; github path requires contents too, so I need an external function for this
-;; (defengine github-path
-;;   "https://github.com/search?ref=simplesearch&q=%s"
-;;   https://github.com/search?q=video+path%3A%2Flayouts%2Fshortcodes&type=Code
-;;   :keybinding "h")
 
 (defengine rosindex
   "https://index.ros.org/search/?term=%s"
@@ -96,7 +86,7 @@
 
 (defun chrome (url &optional discard)
   (interactive (read-string-hist "chrome: "))
-  (ns (concat "Chrome: " url))
+  (pen-ns (concat "Chrome: " url))
   (pen-sn (concat "chrome " (pen-q url))))
 
 ;; Unfortunately, search requires that I am logged in

@@ -2,6 +2,7 @@
 (require 'pen-aliases)
 (require 'org)
 (require 'evil-org)
+(require 'highlight-indent-guides)
 
 ;; This only checks the first line
 (add-to-list 'magic-mode-alist '("^#lang racket" . racket-mode))
@@ -115,7 +116,7 @@
 (require 'auto-minor-mode)
 
 (add-to-list 'auto-minor-mode-alist '("\\.org\\'" . evil-org-mode))
-(add-to-list 'auto-mode-alist `(,(bs "(.vim|.vimrc|vimrc|pentadactylrc)'" ".()'|") . vimrc-mode))
+(add-to-list 'auto-mode-alist `(,(pen-bs "(.vim|.vimrc|vimrc|pentadactylrc)'" ".()'|") . vimrc-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.py\\|.pythonrc\\)\\'" . python-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.psh\\)\\'" . powershell-mode))
 (add-to-list 'auto-mode-alist '("\\.exs\\'" . elixir-mode))
@@ -160,7 +161,7 @@
 (add-to-list 'auto-mode-alist '("\\(\\.clje\\)\\'" . clojerl-mode))
 (add-to-list 'auto-mode-alist '("\\.sol\\'" . solidity-mode))
 (add-to-list 'auto-mode-alist '("\\.julia\\'" . julia-mode))
-(add-to-list 'auto-mode-alist `(,(bs ".(360|6502|6800|8051|8080|8086|68000|arm|as)'" ".()'|") . asm-mode))
+(add-to-list 'auto-mode-alist `(,(pen-bs ".(360|6502|6800|8051|8080|8086|68000|arm|as)'" ".()'|") . asm-mode))
 
 (require 'selected)
 
@@ -290,7 +291,8 @@
 (defun c-mode-customizations () (define-key c-mode-map (kbd "C-M-h") nil))
 (add-hook 'c-mode-hook #'c-mode-customizations)
 
-(global-diff-hl-mode 1)                 ; gui version only
+(global-diff-hl-mode 1)
+(require 'git-gutter+)                 ; gui version only
 (global-git-gutter+-mode 1)
 
 (yas-global-mode 1)
@@ -301,4 +303,4 @@
 (add-to-list 'auto-mode-alist '("\\.g4$" . antlr-mode))
 (add-to-list 'auto-mode-alist '("\\.vtt$" . subed-mode))
 
-(provide 'auto-mode-load)
+(provide 'pen-auto-mode-load)

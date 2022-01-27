@@ -1,10 +1,11 @@
 (require 'lispy)
 (require 'geiser)
 (require 'pen-lisp)
-(require 'pen-utils)
+;; (require 'pen-utils)
 (require 'pen-doc)
-(require 'pen-troubleshooting)
+;; (require 'pen-troubleshooting)
 (require 'pen-aliases)
+(require 'pen-fuzzy-lists)
 
 (defun lispy-gy-emacs-vim-link (arg)
   (interactive "P")

@@ -841,6 +841,7 @@
            (or ',force-completion
                (pen-var-value-maybe 'force-completion)))
 
+          ;; If this is enabled then the remaining stop sequences must be erased
           (final-force-stop-sequence
            (or (pen-var-value-maybe 'force-stop-sequence)
                ,force-stop-sequence))
@@ -1087,8 +1088,18 @@
                 (eval-string ,(str (cdr atp))))))))
 
           (final-stop-sequences
-           (cl-loop for stsq in (or (pen-var-value-maybe 'stop-sequences)
-                                    ',stop-sequences)
+           (or (pen-var-value-maybe 'stop-sequences)
+               ',stop-sequences))
+
+          (final-force-stop-sequence
+           (progn
+             (if final-force-stop-sequence
+                 (setq final-stop-sequences nil))
+
+             final-force-stop-sequence))
+
+          (final-stop-sequences
+           (cl-loop for stsq in final-stop-sequences
                     collect
                     (pen-unonelineify-safe (pen-expand-template-keyvals stsq final-expressions t final-pipelines))))
 

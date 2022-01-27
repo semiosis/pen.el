@@ -704,5 +704,6 @@
 (define-key pen-map (kbd "M-l M-m") 'switch-to-previous-buffer)
 
 (define-key pen-map (kbd "M-l f r") 'helm-mini)
+(define-key pen-map (kbd "M-l M-r M-g") 'find-function)
 
 (provide 'pen-example-config)

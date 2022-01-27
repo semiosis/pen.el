@@ -1,5 +1,5 @@
-(require 'pen-utils)
-(require 'pen-engine-mode)
+;; (require 'pen-utils)
+;; (require 'pen-engine-mode)
 (require 'go-mode)
 
 (defun clj-rebel-doc (func)
@@ -91,7 +91,7 @@
     (progn (hoogle thing t)))
 
    ((derived-mode-p 'racket-mode)
-    (progn (tvipe "hi") (pen-racket-doc winfunc thing) (deactivate-mark)))
+    (progn (pen-tvipe "hi") (pen-racket-doc winfunc thing) (deactivate-mark)))
 
    ((derived-mode-p 'emacs-lisp-mode)
     (describe-function (intern thing)))
