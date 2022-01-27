@@ -1,5 +1,4 @@
 (require 'lispy)
-
 (require 'geiser)
 (require 'pen-lisp)
 (require 'pen-utils)
@@ -138,7 +137,6 @@ ARG can extend the bounds beyond the current defun."
        (lambda () (not (lispy--in-string-or-comment-p)))
        lispy-avy-style-paren))))
 
-
 (defun lispy-ace-paren-visible ()
   (interactive)
   (disable-advice-temporarily (lispy-ace-paren)))
@@ -235,7 +233,6 @@ ARG can extend the bounds beyond the current defun."
 
      (lispy-set-key-theme '(special lispy c-digits)))
 
-
 (defun pen-racket-eval (&optional str)
   (if (region-active-p)
       (racket-send-region (region-beginning) (region-end))
@@ -281,20 +278,13 @@ The result is a string."
            (t (error "%s isn't supported currently" major-mode)))
      e-str)))
 
-
 (setq lispy-avy-style-symbol 'at)
-
-
-
-;; THIS WORKS! -- unbind from lispy-mode-map-lispy
-
 
 (defun pen-lispy-unconvolute ()
   "The opposite of convolute. Like a demotion, from parent to child."
   (interactive)
   (ekm "f M-? f"))
 
-;; pen-lisp-mode is a mode that sits on top of lispy
 (defun pen-lisp-expand-contract-selection-right ()
   (interactive)
   (if mark-active
@@ -323,7 +313,6 @@ The result is a string."
       ;; (ekm "J")
       (ekm "C-q J"))))
 
-
 (defun pen-lisp-expand-contract-selection-left ()
   (interactive)
   (if mark-active
@@ -350,7 +339,6 @@ The result is a string."
     (let ((pen-lisp-mode nil)
           (lispy-mode nil))
       (ekm "K"))))
-
 
 (defun pen-lispy-region-left-p ()
   "If you are on the left side of the region. If the mark is on the right."
@@ -382,8 +370,6 @@ The result is a string."
   (pen-lispy-set-point-right)
   (lispy-slurp 1))
 
-
-
 (defun pen-lispy-flow-left (arg)
   (interactive)
   (if (derived-mode-p 'racket-mode)
@@ -403,17 +389,14 @@ The result is a string."
   (forward-sexp)
   (special-lispy-beginning-of-defun-noevil arg))
 
-
 (defun pen-lispy-goto-start (arg)
   (interactive "P")
   (deactivate-mark)
   (execute-kbd-macro (kbd "C-a C-a")))
 
-
 (defun pen-lispy-mark-symbol (arg)
   (interactive "P")
   (lispy-mark-symbol))
-
 
 (defun pen-lispy-mark-car (arg)
   "Frustratingly, this can't mark an empty list."
@@ -433,7 +416,6 @@ The result is a string."
             (rend (region-end)))
         (call-interactively 'pen-lispy-mark-list))
     (call-interactively 'pen-lispy-mark-symbol)))
-
 
 (require 'smartparens)
 
@@ -464,7 +446,6 @@ The result is a string."
 
   (lispy-left 20)
   (deactivate-mark))
-
 
 (pen-with 'clojure-mode
           (defun cider-doc-thing-at-point ()
@@ -531,14 +512,12 @@ The result is a string."
           (message "Nothing bound")))
     (ekm "M-h")))
 
-
 (defun pen-lispy-run-inner-sexp (arg)
   (interactive "p")
   (save-excursion
     (if (not (lispy-left-p))
         (pen-lisp-left-noevil arg))
     (pen-lisp-e)))
-
 
 (defvar lispy-string-edit-mode-map
        (let ((map (make-sparse-keymap))
@@ -568,7 +547,6 @@ The result is a string."
                  (lispy-string-edit-mode)
                  (pen-region-pipe "uq"))))))
 (defalias 'lispy-edit-string 'emacs-lisp-edit-string)
-
 
 (require 'pen-selected)
 
@@ -627,7 +605,6 @@ otherwise the whole string is unquoted."
   (interactive)
   (call-interactively 'lispy-mode)
   (call-interactively 'selected-minor-mode))
-
 
 (defun lispy-backward-kill-word (arg)
   "Kill ARG words backward, keeping parens consistent."
