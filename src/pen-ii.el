@@ -72,8 +72,8 @@
                          "Ubuntu 20.04"
                          "Arch Linux")
                        (eval `(pen-ci (pen-one (pf-list-of/2 10 "operating systems with a command line"))))
-                       nil nil "nlsh-os: ")))
-               (comint-quick (pen-cmd "nlsh" os) pen-prompts-directory)))
+                       nil nil "nlsh-os: "))))
+  (comint-quick (pen-cmd "nlsh" os) pen-prompts-directory))
 
 (defun pen-bol-context ()
   (interactive)
