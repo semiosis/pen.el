@@ -12,7 +12,7 @@
 (add-to-list 'magic-mode-alist '("^#.*xsh" . sh-mode))
 (add-to-list 'magic-mode-alist '("#!/sbin/runscript$" . sh-mode))
 
-;; pyramid scheme -- one day I will have  a racket mode
+;; pyramid scheme -- one day I will have a racket mode
 (add-to-list 'auto-mode-alist '("\\.pmd\\'" . racket-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.network\\|\\.netdev\\|\\.path\\|\\.socket\\|\\.slice\\|\\.automount\\|\\.mount\\|\\.target\\|\\.timer\\|\\.service\\)\\'" . systemd-mode))
 
