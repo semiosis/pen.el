@@ -2,6 +2,42 @@
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
 
+(defun package-activate-1 (pkg-desc &optional reload deps)
+  "Activate package given by PKG-DESC, even if it was already active.
+If DEPS is non-nil, also activate its dependencies (unless they
+are already activated).
+If RELOAD is non-nil, also `load' any files inside the package which
+correspond to previously loaded files (those returned by
+`package--list-loaded-files')."
+  (let* ((name (package-desc-name pkg-desc))
+         (pkg-dir (package-desc-dir pkg-desc)))
+    (unless pkg-dir
+      (error "Internal error: unable to find directory for `%s'"
+             (package-desc-full-name pkg-desc)))
+    (catch 'exit
+      ;; Activate its dependencies recursively.
+      ;; FIXME: This doesn't check whether the activated version is the
+      ;; required version.
+      (when deps
+        (dolist (req (package-desc-reqs pkg-desc))
+          (unless (package-activate (car req))
+            ;; (message "Unable to activate package `%s'.\nRequired package `%s-%s' is unavailable"
+            ;;          name (car req) (package-version-join (cadr req)))
+            (throw 'exit nil))))
+      (if (listp package--quickstart-pkgs)
+          ;; We're only collecting the set of packages to activate!
+          (push pkg-desc package--quickstart-pkgs)
+        (package--load-files-for-activation pkg-desc reload))
+      ;; Add info node.
+      (when (file-exists-p (expand-file-name "dir" pkg-dir))
+        ;; FIXME: not the friendliest, but simple.
+        (require 'info)
+        (info-initialize)
+        (add-to-list 'Info-directory-list pkg-dir))
+      (push name package-activated-list)
+      ;; Don't return nil.
+      t)))
+
 (dolist (item `(,(purecopy "^Previous command was not a yank$")
                 ,(purecopy "^Minibuffer window is not active$")
                 ,(purecopy "^No previous history search regexp$")
