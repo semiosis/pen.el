@@ -111,8 +111,9 @@
 (add-to-list 'auto-mode-alist '("\\.vbs\\'" . basic-mode))
 (add-to-list 'auto-mode-alist '("\\.restclient\\'" . restclient-mode))
 (add-to-list 'auto-mode-alist '("\\.annotations\\'" . emacs-lisp-mode))
+
 (require 'auto-minor-mode)
-;; evil-org-mode doesn't actually work very well with my M-hjkl evil bindings
+
 (add-to-list 'auto-minor-mode-alist '("\\.org\\'" . evil-org-mode))
 (add-to-list 'auto-mode-alist `(,(bs "(.vim|.vimrc|vimrc|pentadactylrc)'" ".()'|") . vimrc-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.py\\|.pythonrc\\)\\'" . python-mode))
