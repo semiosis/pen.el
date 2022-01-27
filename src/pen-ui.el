@@ -39,6 +39,7 @@
       (global-hide-mode-line-mode -1)
       (visual-line-mode 1)
       (menu-bar-mode 1))))
+(defalias 'toggle-minimal-clutter 'toggle-chrome)
 
 ;; There's no way to get truncate-lines from being enabled by default.
 ;; It must be set as default to t for visual-line mode to work.
