@@ -236,8 +236,7 @@ ARG can extend the bounds beyond the current defun."
       (racket-send-region (region-beginning) (region-end))
     (with-temp-buffer
       (insert str)
-      (racket-send-region (point-min) (point-max))
-      )))
+      (racket-send-region (point-min) (point-max)))))
 
 (defun lispy--eval (e-str)
   "Eval E-STR according to current `major-mode'.
@@ -307,8 +306,6 @@ The result is a string."
                ;; (execute-kbd-macro (kbd "j"))
                )))
     (let ((pen-lisp-mode nil))
-      ;; Not sure why but this is broken
-      ;; (ekm "J")
       (ekm "C-q J"))))
 
 (defun pen-lisp-expand-contract-selection-left ()
@@ -349,13 +346,11 @@ The result is a string."
 (defun pen-lispy-set-point-left ()
   (interactive)
   (when (pen-lispy-region-right-p)
-    ;; (lispy-different 1)
     (exchange-point-and-mark)))
 
 (defun pen-lispy-set-point-right ()
   (interactive)
   (when (pen-lispy-region-left-p)
-    ;; (lispy-different 1)
     (exchange-point-and-mark)))
 
 (defun pen-lispy-slurp-left ()
