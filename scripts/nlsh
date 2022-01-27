@@ -92,7 +92,7 @@ esac; done
 os_or_lang="$@"
 
 if ! test "$NORL" = "y"; then
-    rlwrap "$sn" -norl "$@"
+    pen-rlwrap "$sn" -norl "$@"
     exit $?
 fi
 
