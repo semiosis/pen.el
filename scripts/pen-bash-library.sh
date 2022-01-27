@@ -1,3 +1,4 @@
+#!/bin/bash
 export TTY
 
 pl() { printf -- "%s\\n" "$@"; }
