@@ -25,7 +25,7 @@
                ggtags-mode
                pcre-mode
                evil-org-mode
-               word-wrap
+               visual-line-mode
                which-key-mode
                eldoc-overlay-mode
                paredit-mode
