@@ -4,6 +4,8 @@
 
 (defun pen-public-web ()
   (interactive)
-  (pen-sn "pen-lt --port 7681 -o" nil nil nil t))
+    (if (pen-internet-connected-p)
+        (pen-sn "pen-lt --port 7681 -o" nil nil nil t)
+      (error "The internet is not connected so you won't be able to expose Pen.el publically")))
 
 (provide 'pen-web)
