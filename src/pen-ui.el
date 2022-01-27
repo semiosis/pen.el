@@ -41,6 +41,7 @@
       (menu-bar-mode 1))))
 
 (toggle-chrome)
+(visual-line-mode 1)
 
 (define-key visual-line-mode-map (kbd "<remap>") nil)
 (global-set-key (kbd "<S-f4>") 'toggle-chrome)
