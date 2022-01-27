@@ -123,4 +123,6 @@
   (interactive)
   (new-buffer-from-string (pen-buffer-properties-json)))
 
+(define-key pen-map (kbd "M-l M-p M-v") 'pen-etv-pen-buffer-properties-json)
+
 (provide 'pen-properties)
