@@ -123,8 +123,8 @@
        (cdr e)
      nil)))
 
-(defun force-alist (l)
-  (mapcar 'force-keyvalue l))
+(defun force-alist (anonf)
+  (mapcar 'force-keyvalue anonf))
 
 (defun buffer-variables-json ()
   "Gets some properties of the current emacs buffer in json format."
