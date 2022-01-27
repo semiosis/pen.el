@@ -36,6 +36,16 @@ case "$sn" in
     }
     ;;
 
+    proxy-complete.sh) {
+        completer_sn=pen-proxy
+        : "${PROXY_API_KEY:="$PEN_LM_KEY"}"
+        export PROXY_API_KEY
+
+        # I could allow one Pen.el to request a specific model
+        : "${PEN_MODEL:="DummyModel"}"
+    }
+    ;;
+
     alephalpha-complete.sh) {
         completer_sn=pen-alephalpha
         : "${ALEPHALPHA_API_KEY:="$PEN_LM_KEY"}"
@@ -292,6 +302,17 @@ case "$sn" in
     }
     ;;
 
+    proxy-complete.sh|proxy-*) {
+        if test "$LM_COMPLETE_DEBUG" = "y"; then
+            "$completer_sn"
+            exit $?
+        else
+            # No timeout for proxy engine
+            "$completer_sn"  > "$tf_response"
+        fi
+    }
+    ;;
+
     openai-complete.sh|openai-*) {
         # TODO: Make a new completer
 
@@ -352,6 +373,15 @@ case "$sn" in
         export PEN_COLLECT_FROM_POS
         results_dir="$(openai_results_split "$tf_response")"
         echo "human" > "$results_dir/stop-reason.txt"
+    }
+    ;;
+
+    proxy-complete.sh) {
+        : "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -c)"}"
+
+        export PEN_COLLECT_FROM_POS
+        results_dir="$(openai_results_split "$tf_response")"
+        echo "proxy" > "$results_dir/stop-reason.txt"
     }
     ;;
 
