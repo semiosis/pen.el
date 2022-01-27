@@ -4,7 +4,7 @@
 
 (defun clj-rebel-doc (func)
   (interactive (list (read-string-hist "clj-rebel-doc: " (pen-thing-at-point))))
-  (pen-sps (cmd "clj-rebel-doc" func)))
+  (pen-sps (pen-cmd "clj-rebel-doc" func)))
 
 (defset pen-doc-funcs '(pen-doc-thing-at-point-immediate
                        pen-type-search-thing-at-point-immediate
@@ -182,11 +182,11 @@
   (interactive (list (pen-thing-at-point)))
   (pen-sps (concat "z-repl stack install " (pen-q (fz (pen-sn (concat "hs-import-to-package " (pen-q thing))))))))
 
-(defun hs-download-packages-with-function-type (type-of-of-of)
+(defun hs-download-packages-with-function-type (type)
   (interactive (list (pen-intero-get-type)))
   (pen-sph (concat "t new " (pen-q "hs-download-packages-with-function-type " (pen-q type)))))
 
-(defun hs-tds-fzf (type-of-of-of)
+(defun hs-tds-fzf (type)
   (interactive (list (pen-intero-get-type)))
   (pen-sph (concat "t new " (pen-q "rtcmd hs-type-declarative-search-fzf " (pen-q type)))))
 
@@ -211,7 +211,7 @@
   (let* ((lang (or lang (buffer-language)))
          (mode (or mode (str major-mode)))
          (query (or query (if mark-active (pen-selected-text) (str (sexp-at-point)))))
-         (docs (pen-sn (cmd "doc-override" query lang mode))))
+         (docs (pen-sn (pen-cmd "doc-override" query lang mode))))
 
     (ignore-errors
       (if (bufferp "doc-overide*")
