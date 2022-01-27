@@ -40,7 +40,9 @@
       (visual-line-mode 1)
       (menu-bar-mode 1))))
 
-(setq truncate-lines nil)
+;; There's no way to get truncate-lines from being enabled by default.
+;; It must be set as default to t for visual-line mode to work.
+;; So if I want line wrap, just toggle chrome a couple of times.
 (global-display-line-numbers-mode 1)
 (global-hide-mode-line-mode -1)
 (menu-bar-mode 1)
