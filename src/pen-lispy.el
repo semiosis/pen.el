@@ -524,9 +524,6 @@ The result is a string."
     (if (lispy--in-string-p)
         (save-mark-and-excursion
           (progn (lispy-mark)
-                 ;; (backward-char)
-                 ;; (call-interactively 'cua-exchange-point-and-mark)
-                 ;; (forward-char)
                  (call-interactively 'pen-enter-edit-emacs)
                  (lispy-string-edit-mode)
                  (pen-region-pipe "uq"))))))
