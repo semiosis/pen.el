@@ -1745,4 +1745,13 @@ This function accepts any number of ARGUMENTS, but ignores them."
       (dired ".")
     (pen-columnate-window 2)))
 
+(defun pen-ns (s_message &optional from_clipboard)
+  (let ((com "ns")
+        (mess (or s_message
+                  "nil")))
+    (if from_clipboard
+        (setq com (concat com " -clip")))
+    (chomp (pen-sn com (chomp (str mess))))
+    s_message))
+
 (provide 'pen-support)

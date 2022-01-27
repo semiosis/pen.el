@@ -1,5 +1,5 @@
 (require 'pen-utils)
-(require 'pen-engine)
+(require 'pen-engine-mode)
 (require 'go-mode)
 
 (defun clj-rebel-doc (func)
@@ -126,7 +126,7 @@
     (if arg (call-interactively 'pydoc-at-point) (anaconda-mode-show-doc)))
 
    ((derived-mode-p 'haskell-mode)
-    (progn (shut-up (pen-nil (ns "implement hs-doc")))))
+    (progn (shut-up (pen-nil (pen-ns "implement hs-doc")))))
 
    (t (error "No handlers"))))
 
