@@ -222,7 +222,7 @@ if ! test "$FAST" = y; then
 
     for e in TMUX PEN_TMUX PATH PAGER EDITOR DISPLAY PYTHONSTARTUP PYTHONPATH CALLER_TARGET PARENT_SESSION_ID PARENT_WINDOW_ID PARENT_SESSION_NAME CURRENT_SESSION_NAME ORIGINAL_DIR $extra_exports; do
         eval val=\${$e}
-        envstring+=" $e=\"$val\" "
+        envstring+=" $e=$(cmd-nice-posix "$val") "
     done
     envstring="export $envstring; "
 
