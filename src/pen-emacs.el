@@ -33,7 +33,7 @@ DEFAULT is the coding system to use by default in the query."
 
   (setq codings (sanitize-coding-system-list codings))
 
-  (let ((window-configuration (current-window-configuration))
+  (let ((window-configuration (selected-window-configuration))
         (bufname (buffer-name))
         coding-system)
     (save-excursion
@@ -80,7 +80,7 @@ e.g., for sending an email message.\n ")
                        " encountered characters it couldn't encode:\n"))
               (dolist (coding unsafe)
                 (insert (format "  %s cannot encode these:" (car coding)))
-                (let ((i 0)
+                (let ((interactive 0)
                       (func1
                        #'(lambda (bufname pos)
                            (when (buffer-live-p (get-buffer bufname))
@@ -160,12 +160,12 @@ or specify any other coding system (and risk losing\n\
       - Use newline as last char even on the last line of the buffer.
       - If region is active, copy its lines."
   (interactive "p")
-  (let ((beg (line-beginning-position))
-        (end (line-end-position arg)))
+  (let ((beg (get-current-line-string-beginning-position))
+        (end (get-current-line-string-end-position arg)))
     (when mark-active
       (if (> (point) (mark))
-          (setq beg (save-excursion (goto-char (mark)) (line-beginning-position)))
-        (setq end (save-excursion (goto-char (mark)) (line-end-position)))))
+          (setq beg (save-excursion (goto-char (mark)) (get-current-line-string-beginning-position)))
+        (setq end (save-excursion (goto-char (mark)) (get-current-line-string-end-position)))))
     (if (eq last-command 'copy-line)
         (kill-append (buffer-substring beg end) (< end beg))
       (kill-ring-save beg end)))
@@ -212,12 +212,12 @@ or specify any other coding system (and risk losing\n\
 
 (defun next-line-nonvisual (&optional arg try-vscroll)
   (interactive)
-  (let ((line-move-visual nil))
+  (let ((get-current-line-string-move-visual nil))
     (next-line arg try-vscroll)))
 
 (defun previous-line-nonvisual (&optional arg try-vscroll)
   (interactive)
-  (let ((line-move-visual nil))
+  (let ((get-current-line-string-move-visual nil))
     (previous-line arg try-vscroll)))
 
 (setq debug-on-error nil)
