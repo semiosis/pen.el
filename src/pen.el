@@ -96,6 +96,7 @@
 (require 'pen-docs)
 (require 'pen-common)
 (require 'pen-ui)
+(require 'pen-properties)
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
