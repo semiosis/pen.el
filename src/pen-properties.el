@@ -1,5 +1,5 @@
-(defun force-alist (lambda)
-  (mapcar 'force-keyvalue l))
+(defun force-alist (anonf)
+  (mapcar 'force-keyvalue anonf))
 
 (defun pen-format-json (stdin)
   "Formats the json."
