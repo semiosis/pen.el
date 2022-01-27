@@ -533,3 +533,13 @@ agi dialog apt-utils
 agi dictionaries-common
 dpkg --force-depends --configure -a
 agi ispell
+
+# localtunnel
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm install 12.14.1
+npm install -g localtunnel
+lt --port 7681
+
+agi iceweasel
