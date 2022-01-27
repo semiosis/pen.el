@@ -5,8 +5,6 @@
   (setq print-length nil))
 (add-hook 'prog-mode-hook 'disable-truncate-code)
 
-(truncate-lines-mode 1)
-
 (defun kill-buffer-if-not-current (name)
   (ignore-errors
     (if (not (string-equal name (buffer-name)))
