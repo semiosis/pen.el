@@ -176,6 +176,7 @@ or specify any other coding system (and risk losing\n\
 (require 'desktop)
 
 (setq-default truncate-lines t)
+(setq-default visual-line-mode t)
 ;; Disable this! purcell uses it
 (desktop-save-mode 0)
 
