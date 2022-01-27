@@ -16,10 +16,6 @@
 (add-to-list 'auto-mode-alist '("\\.pmd\\'" . racket-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.network\\|\\.netdev\\|\\.path\\|\\.socket\\|\\.slice\\|\\.automount\\|\\.mount\\|\\.target\\|\\.timer\\|\\.service\\)\\'" . systemd-mode))
 
-;; This may be causing extreme lag from parsing, similar to semantic
-;; It was certainly slowing down python
-
-;; Flycheck -- not just with spacemacs, but enabled for all emacs servers
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (remove-hook 'after-init-hook #'global-flycheck-mode)
 
