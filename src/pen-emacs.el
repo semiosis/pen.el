@@ -206,6 +206,8 @@ or specify any other coding system (and risk losing\n\
                 ,(purecopy "^No undo information in this buffer$")
                 ,(purecopy "^No further undo information")
                 ,(purecopy "^Save not confirmed$")
+                ,(purecopy "^Required package")
+                ,(purecopy "^Unable to activate package")
                 ,(purecopy "^Recover-file cancelled\\.$")
                 ,(purecopy "^Cannot switch buffers in a dedicated window$")))
   (push item debug-ignored-errors))
