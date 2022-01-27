@@ -108,9 +108,13 @@ Return nil if can't move."
 
 (defun lispy-ace-paren-invert-prefix (proc &rest args)
   (cond
-   ((equal current-prefix-arg (list 4)) (setq current-prefix-arg nil))
+   ((equal current-prefix-arg (list 4))
+    (setq current-prefix-arg nil))
+
    ;; First check to see if it's on a paren. Otherwise I will get 4 Qs (QQQQ)
-   ((and (lispy-left-p) (not current-prefix-arg)) (setq current-prefix-arg (list 4))))
+   ((and (lispy-left-p) (not current-prefix-arg))
+    (setq current-prefix-arg (list 4))))
+
   (let ((res (apply proc args)))
     res))
 
