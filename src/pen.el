@@ -97,6 +97,7 @@
 (require 'pen-common)
 (require 'pen-ui)
 (require 'pen-properties)
+(require 'pen-paste)
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
