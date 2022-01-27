@@ -3,12 +3,13 @@ export TTY
 
 # NL·SH
 # Version 2.0, bash
-
 sn="$(basename "$0")"
 
 inside-docker-p() {
     test -f /.dockerenv
 }
+
+export INSIDE_EMACS
 
 : "${USE_COMINT:="y"}"
 : "${USE_TERM:="n"}"

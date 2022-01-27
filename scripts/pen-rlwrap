@@ -1,4 +1,8 @@
 #!/bin/bash
 export TTY
 
-command rlwrap "$@"
+if printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+    "$@"
+else
+    command rlwrap "$@"
+fi
