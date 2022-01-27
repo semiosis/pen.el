@@ -50,7 +50,6 @@
         (t (progn
              (let ((keywords symstring))
                (if (> (length lang) 0)
-                   ;; TODO quote each word in keywords here
                    (setq keywords (concat keywords " " (pen-q lang))))
 
                (pen-sph (concat "egr +/" (pen-q symstring) " " keywords) "")
@@ -188,7 +187,7 @@
 
 (defun hs-install-module-under-cursor (thing)
   (interactive (list (pen-thing-at-point)))
-  (pen-sps (concat "z-repl stack install " (pen-q (fz (pen-sn (concat "hs-import-to-package " (pen-q thing))))))))
+  (pen-sps (concat "zrepl stack install " (pen-q (fz (pen-sn (concat "hs-import-to-package " (pen-q thing))))))))
 
 (defun hs-download-packages-with-function-type (hs-type)
   (interactive (list (pen-intero-get-type)))
@@ -196,7 +195,7 @@
 
 (defun hs-tds-fzf (hs-type)
   (interactive (list (pen-intero-get-type)))
-  (pen-sph (concat "t new " (pen-q "rtcmd hs-type-declarative-search-fzf " (pen-q hs-type)))))
+  (pen-sph (concat "t new " (pen-q "pen-rtcmd hs-type-declarative-search-fzf " (pen-q hs-type)))))
 
 (defun pen-type-search-thing-at-point (&optional  winfunc)
   "Show doc for thing under pointl. winfunc = 'spv or 'sph elisp function"
