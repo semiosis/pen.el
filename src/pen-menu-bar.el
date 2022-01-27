@@ -760,6 +760,9 @@
 
 (defset menu-bar-common-menu
   (let ((menu (make-sparse-keymap "Common")))
+    (bindings--define-key menu [mi-toggle-chrome]
+      '(menu-item "Toggle minimal clutter mode" toggle-chrome
+                  :help "Toggles line numbers, modeline and line wrap"))
     (bindings--define-key menu [mi-pen-run-prompt-function]
       '(menu-item "Run prompt function" pen-run-prompt-function
                   :help "Run a prompt function interactively"))
