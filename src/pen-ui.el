@@ -28,7 +28,8 @@
             (setq header-line-format
                   (s-replace-regexp "^    " "" header-line-format)))
         (global-hide-mode-line-mode 1)
-        (visual-line-mode -1))
+        (visual-line-mode -1)
+        (menu-bar-mode -1))
     (progn
       (if lsp-mode
           (lsp-headerline-breadcrumb-mode 1))
@@ -36,9 +37,9 @@
       (if (sor header-line-format)
           (setq header-line-format (concat "    " header-line-format)))
       (global-hide-mode-line-mode -1)
-      (visual-line-mode 1))))
+      (visual-line-mode 1)
+      (menu-bar-mode 1))))
 
-(toggle-chrome)
 (toggle-chrome)
 
 (define-key visual-line-mode-map (kbd "<remap>") nil)
