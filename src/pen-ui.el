@@ -40,6 +40,7 @@
       (visual-line-mode 1)
       (menu-bar-mode 1))))
 
+(setq truncate-lines nil)
 (global-display-line-numbers-mode 1)
 (global-hide-mode-line-mode -1)
 (menu-bar-mode 1)
