@@ -87,16 +87,20 @@
   (cond
    ((string-equal (preceding-sexp-or-element) "#lang")
     (pen-racket-lang-doc (str thing) winfunc))
+
    ((derived-mode-p 'haskell-mode)
     (progn (hoogle thing t)))
+
    ((derived-mode-p 'racket-mode)
     (progn (tvipe "hi") (pen-racket-doc winfunc thing) (deactivate-mark)))
+
    ((derived-mode-p 'emacs-lisp-mode)
     (describe-function (intern thing)))
+
    (t (search-google-for-doc thing))))
 (defalias 'pen-doc-ask 'pen-doc)
 
-(defun pen-doc-thing-at-point (arg &optional  winfunc)
+(defun pen-doc-thing-at-point (arg &optional winfunc)
   "Show doc for thing under pointl. winfunc = 'spv or 'sph elisp function"
   (interactive "P")
 
@@ -105,17 +109,25 @@
 
   (cond
    ((string-equal (preceding-sexp-or-element) "#lang")
-    (pen-racket-lang-doc (str (sexp-at-point))  winfunc))
+    (pen-racket-lang-doc (str (sexp-at-point)) winfunc))
 
    ((derived-mode-p 'racket-mode)
     (progn
       (pen-racket-doc winfunc)
       (deactivate-mark)))
+
    ((derived-mode-p 'lisp-mode)
-    (call-interactively 'slime-documentation)
-    ((derived-mode-p 'go-mode) (progn (godoc-at-point (point)))))
-   ((derived-mode-p 'python-mode) (if arg (call-interactively 'pydoc-at-point) (anaconda-mode-show-doc)))
-   ((derived-mode-p 'haskell-mode) (progn (shut-up (pen-nil (ns "implement hs-doc")))))
+    (call-interactively 'slime-documentation))
+
+   ((derived-mode-p 'go-mode)
+    (progn (godoc-at-point (point))))
+
+   ((derived-mode-p 'python-mode)
+    (if arg (call-interactively 'pydoc-at-point) (anaconda-mode-show-doc)))
+
+   ((derived-mode-p 'haskell-mode)
+    (progn (shut-up (pen-nil (ns "implement hs-doc")))))
+
    (t (error "No handlers"))))
 
 (defun pen-doc-thing-at-point-list ()
