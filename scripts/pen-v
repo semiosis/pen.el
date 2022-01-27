@@ -6,6 +6,10 @@ export GY_CMD
 
 export SHELL=bash
 
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
 parent_sn="$(ps -o comm= $PPID)"
 
 . `which pen-bash-library.sh`
