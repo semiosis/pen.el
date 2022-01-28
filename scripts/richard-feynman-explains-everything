@@ -9,12 +9,12 @@ response="$question"
 echo "$response"
 echo "But why, Mr Feynman?"
 while :; do
-    response="$(pen -u pf-richard-feynman-explains/1 "$question")"
+    response="$(penf -u --pool pf-richard-feynman-explains/1 "$question")"
     echo "$response"
 
-    next_question="$(pen -u pf-one-sentence-summary/1 "$response")"
+    next_question="$(penf -u --pool pf-one-sentence-summary/1 "$response")"
     while test -z "$next_question"; do
-        next_question="$(pen -u pf-one-sentence-summary/1 "$response")"
+        next_question="$(penf -u --pool pf-one-sentence-summary/1 "$response")"
     done
     
     # TODO Accumulate the one-sentence summaries.
