@@ -43,7 +43,7 @@ Some behind-the-scenes technologies also included are:
 =Pen.el= also facilitates the creation,
 development, discovery and usage of prompts.
 
-The aim is to turn everyone into a wizard.
+The aim is to turn everyone into a wizard, and to decentralise language and truth, so that everyone and no-one is a wizard.
 
 It's completely *free*, *libre* and *open-source*.
 It's designed to be *transparent* and keep the *Human in the Loop*.
