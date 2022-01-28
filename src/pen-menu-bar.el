@@ -766,6 +766,9 @@
 
 (defset menu-bar-common-menu
   (let ((menu (make-sparse-keymap "Common")))
+    (bindings--define-key menu [mi-pen-define-general-knowledge]
+      '(menu-item "Define word" pen-define-general-knowledge
+                  :help "Define word under the cursor (topic: general knowledge)"))
     (bindings--define-key menu [mi-toggle-chrome]
       '(menu-item "Toggle minimal clutter mode" toggle-chrome
                   :help "Toggles line numbers, modeline and line wrap"))
