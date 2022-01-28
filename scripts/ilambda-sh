@@ -133,6 +133,7 @@ while IFS=$'\n' read -p "𝑖λ: " -r fun_and_args; do
         eval "peni --pool $fun_and_args"
     fi
 
+    # This method broke it
     # export UPDATE
     # export PEN_UPDATE
 
