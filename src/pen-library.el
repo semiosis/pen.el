@@ -743,4 +743,8 @@ buffer which is not included when this function returns"
   ;; (pen-tvipe (sed "s/.*q=//" url))
   (pen-eww url))
 
+(defun pen-trim-max-chars (s n)
+  (pen-sn (concat"pen-str trim-max-chars " (str n))
+          s))
+
 (provide 'pen-library)
