@@ -597,6 +597,8 @@ fi
 
 if ! test -n "$PEN_STOP_SEQUENCE"; then
     PEN_STOP_SEQUENCE=nil
+else
+    PEN_STOP_SEQUENCE="$(cmd-nice-posix "$PEN_STOP_SEQUENCE")"
 fi
 
 if ! test -n "$PEN_ENGINE"; then
