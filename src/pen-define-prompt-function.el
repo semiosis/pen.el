@@ -942,7 +942,7 @@
           (final-stop-sequence
            (expand-template
             (str (or
-                  final-force-stop-sequence
+                  (sor final-force-stop-sequence)
                   (sor (pen-var-value-maybe 'stop-sequence))
                   ,stop-sequence))))
 
