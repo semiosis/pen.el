@@ -1,5 +1,5 @@
 * =Pen.el= (_Prompt engineering_ in emacs)
-*The aim is to turn everyone into a wizard, and to decentralise language and truth, so that everyone and no-one is a wizard.*
+*The aim is to turn everyone into a wizard (by 2022 standards), and to decentralise language and truth, so that everyone and no-one is a wizard in the future.*
 
 =Pen.el= integrates LMs (LMs) such as OpenAI's
 =GPT-3= or EleutherAI's =GPT-J= into emacs by
