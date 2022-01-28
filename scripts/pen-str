@@ -464,6 +464,11 @@ case "$f" in
     }
     ;;
 
+    trim-max-chars) {
+        cut -c -80 -
+    }
+    ;;
+
     pen-tine) {
         # abbrev: tine
 
