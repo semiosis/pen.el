@@ -487,6 +487,9 @@
     (bindings--define-key menu [pen-mtp-connect-with-name]
       '(menu-item "Spawn a new user in Mad Tea-Party" pen-mtp-connect-with-name
                   :help "This starts an irc client for new user to Mad Tea-Party"))
+    (bindings--define-key menu [pen-pen-mtp-connect-with-name-using-pet]
+      '(menu-item "Spawn a new user in Mad Tea-Party in Pet" pen-mtp-connect-with-name-using-pet
+                  :help "This starts an irc client for new user to Mad Tea-Party in Pet"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
