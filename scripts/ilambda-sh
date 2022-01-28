@@ -123,13 +123,16 @@ while IFS=$'\n' read -p "𝑖λ: " -r fun_and_args; do
     if test "$fun_and_args" = "!!"; then
         fun_and_args="$lastcmd"
         UPDATE=y
+        PEN_UPDATE=t
     else
         UPDATE=
+        PEN_UPDATE=
     fi
 
     export UPDATE
+    export PEN_UPDATE
 
-    eval "peni --pool -u $fun_and_args"
+    eval "peni --pool $fun_and_args"
 
     lastcmd="$fun_and_args"
 done
