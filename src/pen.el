@@ -100,7 +100,9 @@
 (require 'pen-ui)
 (require 'pen-properties)
 (require 'pen-paste)
-;; (require 'pen-auto-mode-load)
+;; Otherwise, it will break host magit
+;; (if (pen-snq "inside-docker-p")
+;;     (require 'pen-auto-mode-load))
 (require 'pen-selected)
 ;; (require 'pen-search)
 ;; (require 'pen-doc)
