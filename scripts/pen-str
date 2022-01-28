@@ -465,7 +465,9 @@ case "$f" in
     ;;
 
     trim-max-chars) {
-        cut -c -80 -
+        n="$1"
+        : "${n:="80"}"
+        head -c ${n}
     }
     ;;
 
