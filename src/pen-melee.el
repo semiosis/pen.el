@@ -2,4 +2,8 @@
   (interactive)
   (message "In development"))
 
+(defun melee-start-exquisite-corpse ()
+  (interactive)
+  (message "In development"))
+
 (provide 'pen-melee)
