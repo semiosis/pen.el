@@ -843,7 +843,7 @@
 
           ;; If this is enabled then the remaining stop sequences must be erased
           (final-force-stop-sequence
-           (or (pen-var-value-maybe 'force-stop-sequence)
+           (or (sor (pen-var-value-maybe 'force-stop-sequence))
                ,force-stop-sequence))
 
           (final-engine-strips-gen-starting-whitespace
@@ -943,7 +943,7 @@
            (expand-template
             (str (or
                   final-force-stop-sequence
-                  (pen-var-value-maybe 'stop-sequence)
+                  (sor (pen-var-value-maybe 'stop-sequence))
                   ,stop-sequence))))
 
           (final-stop-sequence
