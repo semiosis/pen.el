@@ -132,6 +132,7 @@ while IFS=$'\n' read -p "𝑖λ: " -r fun_and_args; do
     export UPDATE
     export PEN_UPDATE
 
+    # peni --pool sqrt 5000
     eval "peni --pool $fun_and_args"
 
     lastcmd="$fun_and_args"
