@@ -129,7 +129,7 @@ while IFS=$'\n' read -p "𝑖λ: " -r fun_and_args; do
 
     export UPDATE
 
-    eval "peni --loop -u $fun_and_args"
+    eval "peni --pool -u $fun_and_args"
 
     lastcmd="$fun_and_args"
 done
