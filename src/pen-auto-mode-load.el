@@ -170,26 +170,26 @@
 
 (add-hook 'dired-mode-hook 'disable-visual-line-mode)
 
-(defun my/emacs-lisp-mode-hook-body ()
+(defun pen-emacs-lisp-mode-hook-body ()
   "What happens when emacs lisp mode loads"
-  (my/lisp-mode 1)
+  (pen-lisp-mode 1)
   (remove-hook 'activate-mark-hook #'selected--on) ;Why wont it just die
   (selected-off))
 
 ;; Disable this so C-c C-s works
 (add-hook 'magit-popup-mode-hook (lambda () (pen -1)))
 
-(add-hook 'magit-status-mode-hook #'my/magit-status-hook-body)
-(add-hook 'emacs-lisp-mode-hook #'my/emacs-lisp-mode-hook-body)
-(add-hook 'ielm-mode-hook #'my/emacs-lisp-mode-hook-body)
-(add-hook 'hy-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'per-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'clojure-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'lisp-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'lfe-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'cider-repl-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'inferior-hy-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'scheme-mode-hook '(lambda () (my/lisp-mode 1)))
+(add-hook 'magit-status-mode-hook #'pen-magit-status-hook-body)
+(add-hook 'emacs-lisp-mode-hook #'pen-emacs-lisp-mode-hook-body)
+(add-hook 'ielm-mode-hook #'pen-emacs-lisp-mode-hook-body)
+(add-hook 'hy-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'per-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'clojure-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'lisp-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'lfe-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'cider-repl-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'inferior-hy-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'scheme-mode-hook '(lambda () (pen-lisp-mode 1)))
 
 (add-hook 'org-mode-hook '(lambda () (selected-minor-mode 1)))
 
@@ -215,17 +215,17 @@
 (add-hook 'org-mode-hook '(lambda () (fix-completion)))
 (add-hook 'javascript-mode-hook '(lambda () (fix-completion)))
 
-(defun my/auto-clojure-minor-modes ()
+(defun pen-auto-clojure-minor-modes ()
   (interactive)
-  (my/lisp-mode 1)
+  (pen-lisp-mode 1)
   (helm-cider-mode 1))
 
-(add-hook 'clojure-mode-hook #'my/auto-clojure-minor-modes)
+(add-hook 'clojure-mode-hook #'pen-auto-clojure-minor-modes)
 
-(add-hook 'helm-cider-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'clojurescript-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'racket-mode-hook '(lambda () (my/lisp-mode 1)))
-(add-hook 'racket-repl-mode-hook '(lambda () (my/lisp-mode 1)))
+(add-hook 'helm-cider-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'clojurescript-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'racket-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'racket-repl-mode-hook '(lambda () (pen-lisp-mode 1)))
 
 ;; This is perfect! -- for all programming language modes
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
@@ -258,7 +258,7 @@
   (highlight-indent-guides-mode)
   (lispy-mode 1))
 
-(add-hook 'my/lisp-mode-hook #'pen-lisp-mode-autoload)
+(add-hook 'pen-lisp-mode-hook #'pen-lisp-mode-autoload)
 (add-hook 'emacs-lisp-mode-hook 'org-link-minor-mode)
 (remove-hook 'clojure-mode-hook 'org-link-minor-mode)
 
