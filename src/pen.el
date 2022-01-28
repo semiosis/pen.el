@@ -1557,6 +1557,7 @@ But use the results-analyser."
    ;; then pen will be hinted to add some whitespace.
    `(let ((force-completion t)
           (max-generated-tokens 200)
+          (force-stop-sequence "##long complete##")
           (stop-sequence "##long complete##")
           (stop-sequences '("##long complete##")))
       ,@body)))
@@ -1569,6 +1570,7 @@ But use the results-analyser."
   `(eval
     `(let ((force-completion t)
            (max-generated-tokens 5)
+           (force-stop-sequence "##long complete##")
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
@@ -1580,6 +1582,9 @@ But use the results-analyser."
   `(eval
     `(let ((force-completion t)
            (max-generated-tokens 5)
+           (force-stop-sequence (or (and (variable-p 'force-stop-sequence)
+                                         (eval 'force-stop-sequence))
+                                    "##long complete##"))
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "##long complete##"))
@@ -1595,6 +1600,7 @@ But use the results-analyser."
   `(eval
     `(let ((force-completion t)
            (max-generated-tokens ,,n)
+           (force-stop-sequence "##long complete##")
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
@@ -1606,6 +1612,7 @@ But use the results-analyser."
   `(eval
     `(let ((force-completion t)
            (max-generated-tokens 1)
+           (force-stop-sequence "##long complete##")
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            (n-collate 1)
@@ -1617,6 +1624,9 @@ But use the results-analyser."
   `(eval
     `(let ((force-completion t)
            (max-generated-tokens 1)
+           (force-stop-sequence (or (and (variable-p 'force-stop-sequence)
+                                         (eval 'force-stop-sequence))
+                                    "##long complete##"))
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "##long complete##"))
@@ -1632,6 +1642,7 @@ But use the results-analyser."
   `(eval
     `(let ((force-completion t)
            (max-generated-tokens 100)
+           (force-stop-sequence "##long complete##")
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##")))
        ,',@body)))
@@ -1641,6 +1652,7 @@ But use the results-analyser."
   `(eval
     `(let ((force-completion t)
            (max-generated-tokens 200)
+           (force-stop-sequence "##long complete##")
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##")))
        ,',@body)))
@@ -1650,6 +1662,7 @@ But use the results-analyser."
   `(eval
     `(let ((force-completion t)
            (max-generated-tokens 100)
+           (force-stop-sequence "##long complete##")
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##")))
        ,',@body)))
@@ -1659,6 +1672,9 @@ But use the results-analyser."
   `(eval
     `(let ((force-completion t)
            (max-generated-tokens 200)
+           (force-stop-sequence (or (and (variable-p 'stop-sequence)
+                                   (eval 'stop-sequence))
+                                    "##long complete##"))
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "##long complete##"))
@@ -1676,6 +1692,7 @@ But use the results-analyser."
            (max-generated-tokens 100)
            (n-completions 20)
            (n-collate 2)
+           (force-stop-sequence "\n")
            (stop-sequence "\n")
            (stop-sequences '("\n")))
        ,',@body)))
@@ -1687,6 +1704,7 @@ But use the results-analyser."
            (max-generated-tokens 100)
            (n-completions 20)
            (n-collate 2)
+           (force-stop-sequence "\n")
            (stop-sequence "\n")
            (stop-sequences '("\n")))
        ,',@body)))
@@ -1700,6 +1718,7 @@ But use the results-analyser."
            (n-collate 1)
            ;; (no-utilise-code t)
            (inject-gen-start "\n")
+           (force-stop-sequence "##long complete##")
            (stop-sequence "##long complete##")
            (stop-sequences '("##long complete##"))
            ;; Delete the last line. But only if more than 1?
@@ -1713,6 +1732,9 @@ But use the results-analyser."
            (max-generated-tokens 100)
            (n-completions 20)
            (n-collate 2)
+           (force-stop-sequence (or (and (variable-p 'force-stop-sequence)
+                                         (eval 'force-stop-sequence))
+                                    "\n"))
            (stop-sequence (or (and (variable-p 'stop-sequence)
                                    (eval 'stop-sequence))
                               "\n"))
