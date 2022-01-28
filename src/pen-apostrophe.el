@@ -41,7 +41,7 @@
                   (pen-engine
                    ,apostrophe-engine
                    (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result nil))))
-               nil nil nil nil nil "Edit the blurb then save and quit this file."))))
+               nil nil nil nil "Edit the blurb then save and quit this file."))))
 
       (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))

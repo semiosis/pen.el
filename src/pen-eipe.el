@@ -85,11 +85,14 @@
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
     (if (f-exists-p fp)
         (let* ((info (slurp-file fp)))
-          (end-of-buffer)
+          ;; (end-of-buffer)
           ;; Annoyingly, this is needed to guarantee that we have
           ;; enough lines for the docs to appear
           ;; but it should be ok if the eipe is chomped
-          (insert "\n\n\n\n")
+          ;; (insert "\n\n\n\n")
+
+          ;; Still, I shouldn't do the above as the trailing newlines are usually accepted by the consuming function
+
           (beginning-of-buffer)
           (pen-eipe-set-info-overlay info)
           (f-delete fp t)))))
