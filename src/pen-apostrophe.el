@@ -38,9 +38,12 @@
               (pen-eipec
                (fz
                 (eval
-                 `(pen-engine
-                   ,apostrophe-engine
-                   (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil)))
+                 `(upd
+                   (pen-engine
+                    ,apostrophe-engine
+                    (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result nil))))
+                nil
+                nil
                 "Select blurb: ")
                nil nil "Edit the blurb then save and quit this file."))))
 
