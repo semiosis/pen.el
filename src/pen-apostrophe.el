@@ -40,7 +40,9 @@
                 (eval
                  `(pen-engine
                    ,apostrophe-engine
-                   (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil))))))))
+                   (pf-generate-wiki-blurb-for-a-famous-person/1 name :no-select-result nil)))
+                "Select blurb: ")
+               nil nil "Edit the blurb then save and quit this file."))))
 
       (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
