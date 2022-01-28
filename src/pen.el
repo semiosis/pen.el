@@ -49,7 +49,6 @@
 (require 'vterm)
 (require 'diff-hl)
 (require 'org-link-minor-mode)
-;; (require 'global-git-gutter)
 
 ;; pen/src
 (require 'asoc)
@@ -2094,5 +2093,12 @@ May use to generate code from comments."
   `(eval
     `(let ((pen-force-engine "Human"))
        ,',@body)))
+
+;; This didn't fix the hanging
+;; (setq after-init-hook
+;;       '(pen-delay-memoise pen-acolyte-scratch pen-delay-add-keys package--save-selected-packages global-company-mode
+;;                           pen-set-faces
+;;                           ;; tramp-register-archive-file-name-handler magit-maybe-define-global-key-bindings
+;;                           pen-load-config))
 
 (provide 'pen)
