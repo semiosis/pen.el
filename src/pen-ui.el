@@ -29,6 +29,8 @@
                   (s-replace-regexp "^    " "" header-line-format)))
         (global-hide-mode-line-mode 1)
         (visual-line-mode -1)
+        (setq-default truncate-lines t)
+        (setq truncate-lines t)
         (menu-bar-mode -1))
     (progn
       (if lsp-mode
@@ -38,6 +40,8 @@
           (setq header-line-format (concat "    " header-line-format)))
       (global-hide-mode-line-mode -1)
       (visual-line-mode 1)
+      (setq-default truncate-lines nil)
+      (setq truncate-lines nil)
       (menu-bar-mode 1))))
 (defalias 'toggle-minimal-clutter 'toggle-chrome)
 
