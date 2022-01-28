@@ -122,18 +122,22 @@ export USE_CONVERSATION_MODE=y
 while IFS=$'\n' read -p "𝑖λ: " -r fun_and_args; do
     if test "$fun_and_args" = "!!"; then
         fun_and_args="$lastcmd"
-        UPDATE=y
-        PEN_UPDATE=t
+        # UPDATE=y
+        # PEN_UPDATE=t
+
+        eval "peni -u --pool $fun_and_args"
     else
-        UPDATE=
-        PEN_UPDATE=
+        # UPDATE=
+        # PEN_UPDATE=
+
+        eval "peni --pool $fun_and_args"
     fi
 
-    export UPDATE
-    export PEN_UPDATE
+    # export UPDATE
+    # export PEN_UPDATE
 
     # peni --pool sqrt 5000
-    eval "peni --pool $fun_and_args"
+    # eval "peni --pool $fun_and_args"
 
     lastcmd="$fun_and_args"
 done
