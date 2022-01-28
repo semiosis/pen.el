@@ -47,8 +47,8 @@
 (require 'shackle)
 (require 'helpful)
 (require 'vterm)
-(require 'diff-hl)
-(require 'org-link-minor-mode)
+;; (require 'diff-hl)
+;; (require 'org-link-minor-mode)
 
 ;; pen/src
 (require 'asoc)
@@ -100,12 +100,12 @@
 (require 'pen-ui)
 (require 'pen-properties)
 (require 'pen-paste)
-(require 'pen-auto-mode-load)
+;; (require 'pen-auto-mode-load)
 (require 'pen-selected)
-(require 'pen-search)
-(require 'pen-doc)
-(require 'pen-lisp)
-(require 'pen-lispy)
+;; (require 'pen-search)
+;; (require 'pen-doc)
+;; (require 'pen-lisp)
+;; (require 'pen-lispy)
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
