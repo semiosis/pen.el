@@ -30,6 +30,12 @@ functions are:
 - =ESP= - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."
 - ... and a lot more
 
+You can also serve =Pen.el= as a public facing
+prompting environment, and secure it by
+running as a proxy, where you may prompt other
+=Pen.el= servers, keeping the human in the
+loop with the effect of decentralising language models and decentralising truth.
+
 Some behind-the-scenes technologies also included are:
 - =Inkw.el= - Intermediate Knowledge in emacs; A DSL for encoding the provenance of text.
 - =Lalia= - A language of stories (multi-modal prompt chains) based on =Inkw.el=
