@@ -636,6 +636,9 @@
     (bindings--define-key menu [mi-melee-start-immitation-game]
       '(menu-item "Immitation game" melee-start-immitation-game
                   :help "Start game of immitation"))
+    (bindings--define-key menu [mi-melee-start-exquisite-corpse]
+      '(menu-item "Immitation game" melee-start-exquisite-corpse
+                  :help "Start game of immitation"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
