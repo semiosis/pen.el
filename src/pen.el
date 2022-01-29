@@ -1373,6 +1373,15 @@ But use the results-analyser."
            ,',@body))
     `(progn ,@body)))
 
+(defmacro pen-api-endpoint (url &rest body)
+  "This wraps around pen function calls to force the api-endpoint"
+  (if (sor url)
+      `(eval
+        `(let ((api-endpoint ,,url)
+               (force-api-endpoint ,,url))
+           ,',@body))
+    `(progn ,@body)))
+
 (defmacro pen-force-custom (&rest body)
   "This forces various settings depending on customizations"
   (let ((overrides
