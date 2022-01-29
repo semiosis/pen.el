@@ -175,6 +175,143 @@
                     collation-temperature)))
              (message "collation temperature stepper failed")))))))
 
+(defmacro pen-pfp-results ()
+  `(cond
+    (final-force-results final-force-results)
+    (final-no-gen (progn
+                    (message "Prompting function aborted")
+                    '("")))
+    (t (pen-maybe-uniq
+        final-no-uniq-results
+        (flatten-once
+         (cl-loop for rd in resultsdirs
+                  collect
+                  (if (sor rd)
+                      (let* ((processed-results
+                              (-flatten
+                               (->>
+                                   (append (glob (concat rd "/split*_*"))
+                                           (glob (concat rd "/results*/split*_*"))
+                                           (glob (concat rd "/res*.txt"))
+                                           (glob (concat rd "/results*/res*.txt")))
+                                 (-filter 'string-not-empty-nor-nil-p)
+                                 (-filter 'f-exists-p)
+                                 (mapcar 'e/cat)
+                                 (mapcar
+                                  (lambda (r)
+                                    (if final-split-patterns
+                                        (cl-loop
+                                         for stpat in final-split-patterns collect
+                                         (s-split stpat r))
+                                      (list r)))))))
+                             (processed-results
+                              (->> processed-results
+                                (mapcar (lambda (r)
+                                          (cl-loop
+                                           for stsq in final-stop-sequences do
+                                           (let ((matchpos (pen-string-search (regexp-quote stsq) r)))
+                                             (if matchpos
+                                                 (setq r (s-truncate matchpos r "")))))
+                                          r))
+                                (mapcar (lambda (r)
+                                          (cl-loop
+                                           for stpat in final-stop-patterns do
+                                           (let ((matchpos (re-match-p stpat r)))
+                                             (if matchpos
+                                                 (setq r (s-truncate matchpos r "")))))
+                                          r))
+                                ;; TODO Add multiplexing
+                                ;; TODO in iλ? I need an imaginary map function which performs the multiplex
+                                ;; I should add this capability manually.
+                                ;; Or do I want an =icompose=?
+                                (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
+                                                        (if (string-match "^pf-" final-postprocessor)
+                                                            (eval `(car (pen-one (apply (str2sym ,final-postprocessor) (list ,r)))))
+                                                          (pen-sn (concat
+                                                                   (sh-construct-envs (pen-alist-to-list `(("FINAL_PROMPT" . ,final-prompt))))
+                                                                   " "
+                                                                   final-postprocessor)
+                                                                  r))
+                                                      r)))
+                                (mapcar (lambda (r) (if (or
+                                                         (and
+                                                          (or is-interactive
+                                                              (and (variable-p 'prettify)
+                                                                   prettify))
+                                                          ,prettifier
+                                                          (sor ,prettifier))
+                                                         (and (not no-select-result)
+                                                              ,fz-pretty))
+                                                        (pen-sn ,prettifier r)
+                                                      r)))
+
+                                (mapcar (lambda (r) (if (or (not ,no-trim-start)
+                                                            ;; (sor final-inject-gen-start)
+                                                            )
+                                                        (s-trim-left r) r)))
+                                (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
+
+                             (processed-results
+                              (-flatten
+                               (->> processed-results
+                                 (mapcar
+                                  (lambda (r)
+                                    (if final-end-split-patterns
+                                        (cl-loop
+                                         for stpat in final-end-split-patterns collect
+                                         (s-split stpat r))
+                                      (list r)))))))
+
+                             (processed-results
+                              (->> processed-results
+                                (-filter
+                                 (lambda (r)
+                                   (or
+                                    final-engine-whitespace-support
+                                    (not (sor trailing-whitespace))
+                                    (not (pen-snq (pen-cmd "pen-str" "has-starting-specified-whitespace" trailing-whitespace) r)))))))
+
+                             (processed-results
+                              (->> processed-results
+                                (-filter
+                                 (lambda (r)
+                                   (if
+                                       (not final-engine-whitespace-support)
+                                       (concat trailing-whitespace r)
+                                     r)))))
+
+                             ;; (processed-results
+                             ;;  (mapcar
+                             ;;   (lambda (r)
+                             ;;     (if (and (not final-engine-whitespace-support)
+                             ;;              (sor trailing-whitespace))
+                             ;;         (s-remove-starting-specified-whitespace r trailing-whitespace)
+                             ;;       ;; (pen-sn (pen-cmd "pen-str" "remove-starting-specified-whitespace" trailing-whitespace) r)
+                             ;;       r))
+                             ;;   processed-results))
+
+                             (processed-results
+                              (->> processed-results
+                                (-filter
+                                 (lambda (r)
+                                   (or
+                                    (not final-validator)
+                                    ;; Theoretically, both a shell script and elisp should have access to prompt-length and result-length
+                                    (let* ((al `((prompt-length . ,pen-approximate-prompt-token-length)
+                                                 (gen-length . ,(round (/ (length r)
+                                                                          (or
+                                                                           (pen-num final-approximate-token-char-length)
+                                                                           pen-default-approximate-token-length-divisor))))))
+                                           (valr (pen-expand-template-keyvals final-validator al)))
+                                      (eval
+                                       `(pen-let-keyvals
+                                         ',al
+                                         (if (re-match-p "^(" ,valr)
+                                             (eval-string ,valr)
+                                           (pen-snq ,valr ,r)))))))))))
+                        processed-results)
+                    (list (message "Try UPDATE=y or debugging")))))))))
+
 (defmacro pen-define-prompt-function-pipeline ()
   `(let* (;; Keep in mind this both updates memoization and the bash cache
 
@@ -1463,142 +1600,7 @@
            (or final-no-gen
                (pen-engine-disabled-p final-engine)))
 
-          (results
-           (cond
-            (final-force-results final-force-results)
-            (final-no-gen (progn
-                            (message "Prompting function aborted")
-                            '("")))
-            (t (pen-maybe-uniq
-                final-no-uniq-results
-                (flatten-once
-                 (cl-loop for rd in resultsdirs
-                          collect
-                          (if (sor rd)
-                              (let* ((processed-results
-                                      (-flatten
-                                       (->>
-                                           (append (glob (concat rd "/split*_*"))
-                                                   (glob (concat rd "/results*/split*_*"))
-                                                   (glob (concat rd "/res*.txt"))
-                                                   (glob (concat rd "/results*/res*.txt")))
-                                         (-filter 'string-not-empty-nor-nil-p)
-                                         (-filter 'f-exists-p)
-                                         (mapcar 'e/cat)
-                                         (mapcar
-                                          (lambda (r)
-                                            (if final-split-patterns
-                                                (cl-loop
-                                                 for stpat in final-split-patterns collect
-                                                 (s-split stpat r))
-                                              (list r)))))))
-                                     (processed-results
-                                      (->> processed-results
-                                        (mapcar (lambda (r)
-                                                  (cl-loop
-                                                   for stsq in final-stop-sequences do
-                                                   (let ((matchpos (pen-string-search (regexp-quote stsq) r)))
-                                                     (if matchpos
-                                                         (setq r (s-truncate matchpos r "")))))
-                                                  r))
-                                        (mapcar (lambda (r)
-                                                  (cl-loop
-                                                   for stpat in final-stop-patterns do
-                                                   (let ((matchpos (re-match-p stpat r)))
-                                                     (if matchpos
-                                                         (setq r (s-truncate matchpos r "")))))
-                                                  r))
-                                        ;; TODO Add multiplexing
-                                        ;; TODO in iλ? I need an imaginary map function which performs the multiplex
-                                        ;; I should add this capability manually.
-                                        ;; Or do I want an =icompose=?
-                                        (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
-                                                                (if (string-match "^pf-" final-postprocessor)
-                                                                    (eval `(car (pen-one (apply (str2sym ,final-postprocessor) (list ,r)))))
-                                                                  (pen-sn (concat
-                                                                           (sh-construct-envs (pen-alist-to-list `(("FINAL_PROMPT" . ,final-prompt))))
-                                                                           " "
-                                                                           final-postprocessor)
-                                                                          r))
-                                                              r)))
-                                        (mapcar (lambda (r) (if (or
-                                                                 (and
-                                                                  (or is-interactive
-                                                                      (and (variable-p 'prettify)
-                                                                           prettify))
-                                                                  ,prettifier
-                                                                  (sor ,prettifier))
-                                                                 (and (not no-select-result)
-                                                                      ,fz-pretty))
-                                                                (pen-sn ,prettifier r)
-                                                              r)))
-
-                                        (mapcar (lambda (r) (if (or (not ,no-trim-start)
-                                                                    ;; (sor final-inject-gen-start)
-                                                                    )
-                                                                (s-trim-left r) r)))
-                                        (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
-
-                                     (processed-results
-                                      (-flatten
-                                       (->> processed-results
-                                         (mapcar
-                                          (lambda (r)
-                                            (if final-end-split-patterns
-                                                (cl-loop
-                                                 for stpat in final-end-split-patterns collect
-                                                 (s-split stpat r))
-                                              (list r)))))))
-
-                                     (processed-results
-                                      (->> processed-results
-                                        (-filter
-                                         (lambda (r)
-                                           (or
-                                            final-engine-whitespace-support
-                                            (not (sor trailing-whitespace))
-                                            (not (pen-snq (pen-cmd "pen-str" "has-starting-specified-whitespace" trailing-whitespace) r)))))))
-
-                                     (processed-results
-                                      (->> processed-results
-                                        (-filter
-                                         (lambda (r)
-                                           (if
-                                               (not final-engine-whitespace-support)
-                                               (concat trailing-whitespace r)
-                                             r)))))
-
-                                     ;; (processed-results
-                                     ;;  (mapcar
-                                     ;;   (lambda (r)
-                                     ;;     (if (and (not final-engine-whitespace-support)
-                                     ;;              (sor trailing-whitespace))
-                                     ;;         (s-remove-starting-specified-whitespace r trailing-whitespace)
-                                     ;;       ;; (pen-sn (pen-cmd "pen-str" "remove-starting-specified-whitespace" trailing-whitespace) r)
-                                     ;;       r))
-                                     ;;   processed-results))
-
-                                     (processed-results
-                                      (->> processed-results
-                                        (-filter
-                                         (lambda (r)
-                                           (or
-                                            (not final-validator)
-                                            ;; Theoretically, both a shell script and elisp should have access to prompt-length and result-length
-                                            (let* ((al `((prompt-length . ,pen-approximate-prompt-token-length)
-                                                         (gen-length . ,(round (/ (length r)
-                                                                                  (or
-                                                                                   (pen-num final-approximate-token-char-length)
-                                                                                   pen-default-approximate-token-length-divisor))))))
-                                                   (valr (pen-expand-template-keyvals final-validator al)))
-                                              (eval
-                                               `(pen-let-keyvals
-                                                 ',al
-                                                 (if (re-match-p "^(" ,valr)
-                                                     (eval-string ,valr)
-                                                   (pen-snq ,valr ,r)))))))))))
-                                processed-results)
-                            (list (message "Try UPDATE=y or debugging")))))))))
+          (results ,(macroexpand `(pen-pfp-results)))
 
           (results
            (if final-include-prompt
