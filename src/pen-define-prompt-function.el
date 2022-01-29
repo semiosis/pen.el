@@ -1878,6 +1878,607 @@
                ;; https://github.com/FrancisMurillo/transducer.el
                ,(macroexpand `(pen-define-prompt-function-pipeline))))))))))
 
+(defmacro pen-load-prompt-function ()
+  `(let*
+       (
+        ;; yaml-ht may change
+        (yaml-ht (pen-prompt-file-load path))
+        ;; but prompt-yaml-ht stays the same
+        (prompt-yaml-ht yaml-ht)
+
+        (path path)
+
+        (requirements (pen-vector2list (ht-get yaml-ht "requirements")))
+
+        (logprobs (ht-get yaml-ht "logprobs"))
+        (force-logprobs (ht-get yaml-ht "force-logprobs"))
+
+        (force-engine (ht-get yaml-ht "force-engine"))
+        (force-model (ht-get yaml-ht "force-model"))
+        (force-lm-command (ht-get yaml-ht "force-lm-command"))
+        (force-temperature (ht-get yaml-ht "force-temperature"))
+
+        (engine
+         (let* ((engine-title
+                 (or
+                  (ht-get yaml-ht "force-engine")
+                  (ht-get yaml-ht "engine")))
+                (engine (if (and
+                             engine-title
+                             pen-engines)
+                            (ht-get pen-engines engine-title))))
+           (if engine
+               (progn
+                 (setq yaml-ht (ht-merge yaml-ht engine))
+                 ;; Merge the original prompt keys back in, to override ones the engine may have set.
+                 ;; Because colliding prompt keys are more important.
+                 (setq yaml-ht (ht-merge yaml-ht prompt-yaml-ht))))
+           engine-title))
+
+        (engine (pen-resolve-engine engine requirements))
+
+        ;; function
+        (task-ink (ht-get yaml-ht "task"))
+        (language (ht-get yaml-ht "language"))
+        (task (ink-decode task-ink))
+        (task (if (and (sor task)
+                       (sor language))
+                  (pen-expand-template-keyvals
+                   task
+                   `(("language" . ,language)))
+                task))
+        (engine-whitespace-support (ht-get yaml-ht "engine-whitespace-support"))
+        (approximate-token-char-length
+         (or
+          (ht-get yaml-ht "approximate-token-char-length")
+          2.5))
+
+        (title (ht-get yaml-ht "title"))
+        (title (sor title
+                    task))
+        (title-slug (slugify title))
+
+        (aliases (pen-vector2list (ht-get yaml-ht "aliases")))
+
+        (variadic-var (pen-vector2list (ht-get yaml-ht "variadic-var")))
+
+        ;; lm-complete
+        (cache (pen-yaml-test yaml-ht "cache"))
+        ;; openai-complete.sh is the default LM completion command
+        ;; but the .prompt may specify a different one
+        (lm-command (or
+                     pen-override-lm-command
+                     (ht-get yaml-ht "lm-command")
+                     pen-default-lm-command))
+
+        (in-development (pen-yaml-test yaml-ht "in-development"))
+
+        ;; internals
+        (prompt (ht-get yaml-ht "prompt"))
+        (mode (ht-get yaml-ht "mode"))
+        (search-threshold (ht-get yaml-ht "search-threshold"))
+        (flags (ht-get yaml-ht "flags"))
+        (evaluator (ht-get yaml-ht "evaluator"))
+        (api-endpoint (ht-get yaml-ht "api-endpoint"))
+
+        (subprompts (ht-get yaml-ht "subprompts"))
+
+        ;; For examples (define-prompt-function signature). Not for define-prompt-function body.
+        ;; Body recalculates this.
+        (subprompts-al
+         (if subprompts
+             (ht->alist (-reduce 'ht-merge (pen-vector2list subprompts)))))
+
+        (payloads (pen--htlist-to-alist (ht-get yaml-ht "payloads")))
+
+        ;; info and hover are related
+        (info (pen-yaml-test yaml-ht "info"))
+        (hover (pen-yaml-test yaml-ht "hover"))
+        (prepend-previous (pen-yaml-test yaml-ht "prepend-previous"))
+        (force-prompt)
+        (formatter (pen-yaml-test yaml-ht "formatter"))
+        (linter (pen-yaml-test yaml-ht "linter"))
+        ;; This is both a code action and the default action
+        ;; sp +/"^action: pen-find-file" "$HOME/source/git/semiosis/prompts/prompts/recurse-directory-4.prompt"
+        ;; (action (pen-yaml-test yaml-ht "action"))
+
+        (parsers (pen--htlist-to-alist (ht-get yaml-ht "parsers")))
+        (actions (pen--htlist-to-alist (ht-get yaml-ht "actions")))
+
+        (new-document (pen-yaml-test yaml-ht "new-document"))
+        (expand-jinja (pen-yaml-test yaml-ht "expand-jinja"))
+        (start-yas (pen-yaml-test yaml-ht "start-yas"))
+        (yas (pen-yaml-test yaml-ht "yas"))
+
+        ;; not normally given via .prompt. Rather, overridden
+        (inject-gen-start (ht-get yaml-ht "inject-gen-start"))
+        (interactive-inject (pen-yaml-test yaml-ht "interactive-inject"))
+        (inject-example (ht-get yaml-ht "inject-example"))
+        (inject-examples (pen-vector2list (ht-get yaml-ht "inject-examples")))
+        (continue-default (ht-get yaml-ht "continue-default"))
+
+        (end-yas (pen-yaml-test yaml-ht "end-yas"))
+
+        (include-prompt (pen-yaml-test yaml-ht "include-prompt"))
+
+        (no-gen (pen-yaml-test yaml-ht "no-gen"))
+
+        (repeater (ht-get yaml-ht "repeater"))
+
+        (engine-stop-sequence-validator (ht-get yaml-ht "engine-stop-sequence-validator"))
+        (engine-delimiter (or
+                           (ht-get yaml-ht "engine-delimiter")
+                           "###"))
+        (delimiter (or
+                    (ht-get yaml-ht "delimiter")
+                    engine-delimiter
+                    "###"))
+        (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
+        (interpreter (pen-yaml-test yaml-ht "interpreter"))
+        (no-uniq-results (pen-yaml-test yaml-ht "no-uniq-results"))
+        (conversation (pen-yaml-test yaml-ht "conversation"))
+        (filter (pen-yaml-test yaml-ht "filter"))
+        (filter-off (pen-yaml-test-off yaml-ht "filter"))
+        (results-analyser (ht-get yaml-ht "results-analyser"))
+        ;; Don't actually use this.
+        ;; But I can toggle to use the prettifier with a bool
+        (prettifier (ht-get yaml-ht "prettifier"))
+        (fz-pretty (ht-get yaml-ht "fz-pretty"))
+        (collation-postprocessor (ht-get yaml-ht "pen-collation-postprocessor"))
+        (completion (pen-yaml-test yaml-ht "completion"))
+        (completion-off (pen-yaml-test-off yaml-ht "completion"))
+        (insertion (pen-yaml-test yaml-ht "insertion"))
+        (insertion-off (pen-yaml-test-off yaml-ht "insertion"))
+        ;; Is the prompt designed for an LM trained on code?
+        (utilises-code (pen-yaml-test yaml-ht "utilises-code"))
+        (utilises-code-off (pen-yaml-test-off yaml-ht "utilises-code"))
+        (no-trim-start (or (pen-yaml-test yaml-ht "no-trim-start")
+                           (pen-yaml-test yaml-ht "completion")))
+        (no-trim-end (pen-yaml-test yaml-ht "no-trim-end"))
+        (pipelines (pen--htlist-to-alist (ht-get yaml-ht "pipelines")))
+        (expressions (pen--htlist-to-alist (ht-get yaml-ht "expressions")))
+        (validator (ht-get yaml-ht "validator"))
+        (prompt-filter (ht-get yaml-ht "prompt-filter"))
+        (closer (ht-get yaml-ht "closer"))
+        (return-postprocessor (ht-get yaml-ht "return-postprocessor"))
+        (postprocessor (ht-get yaml-ht "postprocessor"))
+        (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
+        (n-collate
+         (or (ht-get yaml-ht "n-collate")
+             1))
+        (n-max-collate (or (ht-get yaml-ht "n-max-collate")
+                           1))
+        (n-target (or (ht-get yaml-ht "n-target")
+                      1))
+
+        (engine-max-stop-sequence-size (or (ht-get yaml-ht "engine-max-stop-sequence-size")
+                                           20))
+
+        (engine-min-generated-tokens
+         (or (ht-get yaml-ht "engine-min-generated-tokens")
+             3))
+        (engine-max-generated-tokens
+         (or (ht-get yaml-ht "engine-max-generated-tokens")
+             4096
+             ;; 256
+             ))
+        (engine-max-n-completions
+         (or (ht-get yaml-ht "engine-max-n-completions")
+             10))
+        (n-completions
+         (progn
+           ;; (pen-log path)
+           ;; for some reason this is returning 5
+           ;; (pen-log (ht-get yaml-ht "n-completions"))
+           ;; It comes from openai.engine. If I'm forcing the engine, this will override.
+           (or (ht-get yaml-ht "n-completions") 5)))
+        (n-test-runs (ht-get yaml-ht "n-test-runs"))
+
+        ;; Execute some elisp in preparation for running this function
+        ;; This may set up elisp functions we need
+        (elisp (ht-get yaml-ht "elisp"))
+
+        (elisp
+         (progn (if (sor elisp)
+                    (eval-string elisp))
+                elisp))
+
+        ;; API
+
+        (model (ht-get yaml-ht "model"))
+        (mode (ht-get yaml-ht "mode"))
+        (frequency-penalty (ht-get yaml-ht "frequency-penalty"))
+        (presence-penalty (ht-get yaml-ht "presence-penalty"))
+        (repetition-penalty (ht-get yaml-ht "repetition-penalty"))
+        (length-penalty (ht-get yaml-ht "length-penalty"))
+
+        ;; min-tokens and max-tokens include the prompt
+        ;; These values may also be inferred from max-generated-tokens + an approximation of the prompt size.
+        (min-tokens (ht-get yaml-ht "min-tokens"))
+        (max-tokens (ht-get yaml-ht "max-tokens"))
+
+        ;; min-generated-tokens and max-generated-tokens do not include the prompt
+        ;; These values may also be inferred from max-tokens - an approximation of the prompt size.
+        ;; The desired number of generated tokens
+        (min-generated-tokens (ht-get yaml-ht "min-generated-tokens"))
+        (max-generated-tokens (ht-get yaml-ht "max-generated-tokens"))
+
+        (force-max-generated-tokens (ht-get yaml-ht "force-max-generated-tokens"))
+
+        (collation-temperature-stepper (ht-get yaml-ht "collation-temperature-stepper"))
+
+        ;; engine-min-tokens and engine-max-tokens include the prompt
+        (engine-min-tokens (ht-get yaml-ht "engine-min-tokens"))
+        (engine-max-tokens (ht-get yaml-ht "engine-max-tokens"))
+
+        (rate-limit-requests-per-min (ht-get yaml-ht "rate-limit-requests-per-min"))
+
+        (force-stop-sequence (ht-get yaml-ht "force-stop-sequence"))
+
+        (cant-n-complete (ht-get yaml-ht "cant-n-complete"))
+
+        (top-p (ht-get yaml-ht "top-p"))
+
+        ;; synonyms
+        (top-k (ht-get yaml-ht "top-k"))
+        (top-k (ht-get yaml-ht "best-of"))
+
+        (n-jobs (ht-get yaml-ht "n-jobs"))
+        (force-n-jobs (ht-get yaml-ht "force-n-jobs"))
+
+        (temperature (ht-get yaml-ht "temperature"))
+        (default-temperature (ht-get yaml-ht "default-temperature"))
+
+        ;; This is an override hint only
+        (force-completion nil)
+
+        (engine-strips-gen-starting-whitespace (ht-get yaml-ht "engine-strips-gen-starting-whitespace"))
+
+        (stop-sequences
+         (or (pen-vector2list (ht-get yaml-ht "stop-sequences"))
+             ;; (list "\n")
+             (list "#<long>#")))
+        (suggest-p
+         (or (pen-vector2list (ht-get yaml-ht "suggest-p"))
+             (list t)))
+
+        ;; These are automatically turned into prompt functions
+        (nl-suggest-p (pen-vector2list (ht-get yaml-ht "nl-suggest-p")))
+
+        (stop-sequence
+         (if stop-sequences (car stop-sequences)))
+
+        (stop-sequence
+         (if (and (sor engine-stop-sequence-validator)
+                  (pen-snq engine-stop-sequence-validator stop-sequence))
+             stop-sequence
+           (if stop-sequence
+               (progn
+                 (setq stop-sequences (cons stop-sequence stop-sequences))
+                 stop-sequence)
+             "#<long>#")))
+
+        (force-stop-sequence
+         (progn
+           (if force-stop-sequence
+               (setq stop-sequences (cons force-stop-sequence stop-sequences)))
+           force-stop-sequence))
+
+        (stop-patterns
+         (or (pen-vector2list (ht-get yaml-ht "stop-patterns"))
+             ;; By default, stop when you see ^Input
+             (list "^Input:")))
+
+        (split-patterns
+         (or (pen-vector2list (ht-get yaml-ht "split-patterns"))
+             nil
+             ;; (list "\n")
+             ))
+
+        (end-split-patterns
+         (or (pen-vector2list (ht-get yaml-ht "end-split-patterns"))
+             nil
+             ;; (list "\n")
+             ))
+
+        (translator
+         (let ((tr (ht-get yaml-ht "translator")))
+           (if (sor tr)
+               (add-to-list 'pen-translators tr))
+           tr))
+
+        ;; docs
+        (problems (pen-vector2list (ht-get yaml-ht "problems")))
+        (design-patterns (pen-vector2list (ht-get yaml-ht "design-patterns")))
+        (todo (pen-vector2list (ht-get yaml-ht "todo")))
+        (notes
+         (let* ((n (ht-get yaml-ht "notes"))
+                (n (if (vectorp n)
+                       (pen-list-to-orglist (pen-vector2list (ht-get yaml-ht "notes")))
+                     n)))
+           n))
+        (aims (pen-vector2list (ht-get yaml-ht "aims")))
+        (past-versions (pen-vector2list (ht-get yaml-ht "past-versions")))
+        (external-related
+         (let* ((n (ht-get yaml-ht "external-related")))
+           (if n
+               (cond
+                ((stringp n) (list n))
+                ((vectorp n) (pen-vector2list (ht-get yaml-ht "external-related")))
+                (t nil)))))
+        (related-prompts (pen-vector2list (ht-get yaml-ht "related-prompts")))
+        (future-titles (pen-vector2list (ht-get yaml-ht "future-titles")))
+
+        ;; variables - these are actually varnames. don't get confused
+        (vars (ht-get yaml-ht "vars"))
+
+        ;; used internally
+        (vars-list (pen-vector2list vars))
+
+        ;; Create the variables first
+        (var-defaults)
+        (examples)
+        (preprocessors)
+
+        ;; Initialise the var-related values with
+        ;; with what is under vars.
+        (vars
+         (cond
+          ;; It's a key-value
+          ((hash-table-p (car vars-list))
+           ;; generate vals from the values
+           ;; and replace vars
+           (let* ((vars-al (pen--htlist-to-alist vars))
+                  (keys (cl-loop
+                         for atp in vars-al
+                         collect
+                         (car atp)))
+                  (values (cl-loop
+                           for atp in vars-al
+                           collect
+                           (cdr atp))))
+
+             (if (hash-table-p (car (pen-vector2list (car values))))
+                 (let* ((als (cl-loop
+                              for atp in vars-al
+                              collect
+                              (pen--htlist-to-alist (pen-vector2list (cdr atp)))))
+
+                        (defaults
+                          (cl-loop
+                           for atp in als
+                           collect
+                           (cdr (assoc "default" atp))))
+
+                        (exs
+                         (cl-loop
+                          for atp in als
+                          collect
+                          (cdr (assoc "example" atp))))
+
+                        (pps
+                         (cl-loop
+                          for atp in als
+                          collect
+                          (cdr (assoc "preprocessor" atp)))))
+                   (setq var-defaults defaults)
+                   (setq examples exs)
+                   (setq preprocessors pps))
+               (setq var-defaults values))
+             keys))
+          ;; It's just the list of keys
+          (t vars-list)))
+
+        (examples
+         (let ((explicit-key (pen-vector2list (ht-get yaml-ht "examples"))))
+           (if explicit-key
+               explicit-key
+             examples)))
+
+        (examples
+         (if (vectorp (car examples))
+             (pen-vector2list (car examples))
+           examples))
+
+        (preprocessors
+         (let ((explicit-key (pen-vector2list (ht-get yaml-ht "preprocessors"))))
+           (if explicit-key
+               explicit-key
+             preprocessors)))
+
+        (burst-preprocessor (ht-get yaml-ht "burst-preprocessor"))
+        (burst-length (ht-get yaml-ht "burst-length"))
+
+        (var-defaults
+         ;; override what was taken from vars
+         ;; only if it exists
+         (let ((explicit-key (pen-vector2list (ht-get yaml-ht "var-defaults"))))
+           (if explicit-key
+               explicit-key
+             var-defaults)))
+
+        (doc (mapconcat
+              'identity
+              (-filter-not-empty-string
+               (list
+                title
+                (ht-get yaml-ht "doc")
+                (concat "\npath:\n" (pen-list-to-orglist (list path)))
+                (if design-patterns (concat "\ndesign-patterns:\n" (pen-list-to-orglist design-patterns)))
+                (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
+                (if aims (concat "\naims:" (pen-list-to-orglist aims)))
+                (if engine-stop-sequence-validator (concat "\nengine-stop-sequence-validator:" (str engine-stop-sequence-validator)))
+                (if force-stop-sequence (concat "\nforce-stop-sequence:" (str force-stop-sequence)))
+                (if force-temperature (concat "\nforce-temperature:" (str force-temperature)))
+                (if force-model (concat "\nforce-model:" (str force-model)))
+                (if stop-sequence (concat "\nstop-sequence:" (str stop-sequence)))
+                (if stop-sequences (concat "\nstop-sequences:" (pen-list-to-orglist stop-sequences)))
+                (if engine (concat "\nengine: " engine))
+                (if elisp (concat "\nelisp: " elisp))
+                (if lm-command (concat "\nlm-command: " lm-command))
+                (if model (concat "\nmodel: " model))
+                (if mode (concat "\nmode: " mode))
+                (if n-completions (concat "\nn-completions: " (str n-completions)))
+                (if engine-max-n-completions (concat "\nengine-max-n-completions: " (str engine-max-n-completions)))
+                (if n-collate (concat "\nn-collate: " (str n-collate)))
+                (if n-target (concat "\nn-target: " (str n-target)))
+                (if min-tokens (concat "\nmin-tokens: " (str min-tokens)))
+                (if max-tokens (concat "\nmax-tokens: " (str max-tokens)))
+                (if max-generated-tokens (concat "\nmax-generated-tokens: " (str max-generated-tokens)))
+                (if engine-min-tokens (concat "\nengine-min-tokens: " (str engine-min-tokens)))
+                (if engine-max-tokens (concat "\nengine-max-tokens: " (str engine-max-tokens)))
+                (if engine-whitespace-support
+                    (concat "\nengine-whitespace-support: yes")
+                  (concat "\nengine-whitespace-support: no"))
+                (if inject-gen-start (concat "\ninject-gen-start: " (pps inject-gen-start)))
+                (if task (concat "\ntask: " task))
+                (if notes (concat "\nnotes:" notes))
+                (if filter (concat "\nfilter: on"))
+                (if prepend-previous (concat "\nprepend-previous: on"))
+                (if cant-n-complete (concat "\ncant-n-complete: on"))
+                (if filter-off (concat "\nfilter-off: on"))
+                (if results-analyser (concat "\nresults-analyser: " results-analyser))
+                (if insertion (concat "\ninsertion: on"))
+                (if insertion-off (concat "\ninsertion-off: on"))
+                (if completion (concat "\ncompletion: on"))
+                (if completion-off (concat "\ncompletion-off: on"))
+                (if past-versions (concat "\npast-versions:\n" (pen-list-to-orglist past-versions)))
+                (if external-related (concat "\nexternal-related\n:" (pen-list-to-orglist external-related)))
+                (if related-prompts (concat "\nrelated-prompts:\n" (pen-list-to-orglist related-prompts)))
+                (if future-titles (concat "\nfuture-titles:\n" (pen-list-to-orglist future-titles)))
+                (if examples (concat "\nexamples:\n" (pen-list-to-orglist examples)))
+                (if preprocessors (concat "\npreprocessors:\n" (pen-list-to-orglist preprocessors)))
+                (if pipelines (concat "\npipelines:\n" (pps pipelines)))
+                (if parsers (concat "\nparsers:\n" (pps parsers)))
+                (if expressions (concat "\nexpressions:\n" (pps expressions)))
+                (if var-defaults (concat "\nvar-defaults:\n" (pen-list-to-orglist var-defaults)))
+                (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
+                (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))
+                (if burst-preprocessor (concat "\nburst-preprocessor:\n" (pen-list-to-orglist (list burst-preprocessor))))
+                (if validator (concat "\nvalidator:\n" (pen-list-to-orglist (list validator))))
+                (if subprompts (concat "\nsubprompts:\n" (pps subprompts)))
+                (if payloads (concat "\nprompts:\n" (pps payloads)))
+                (if prompt (concat "\nprompt:\n" prompt))))
+              "\n"))
+
+        (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
+        (envs (pen--htlist-to-alist (ht-get yaml-ht "envs")))
+
+        (var-slugs (mapcar 'slugify vars))
+        (all-var-syms
+         (if (string-equal "search" mode)
+             (cons 'documents (mapcar 'intern var-slugs))
+           (mapcar 'intern var-slugs)))
+        (var-syms
+         (let ((ss (mapcar 'intern var-slugs)))
+           (message (concat "_" prettifier))
+           (if (sor prettifier)
+               ;; Add to the function definition the prettify key if the .prompt file specifies a prettifier
+               (setq ss (append ss '(&key prettify))))
+           ss))
+        (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length all-var-syms))))
+        (func-sym (intern func-name))
+        (alias-names
+         (cl-loop for a in aliases
+                  collect
+                  (concat pen-prompt-function-prefix (slugify a) "/" (str (length all-var-syms)))))
+        (alias-syms
+         (mapcar 'intern alias-names))
+
+        (examples
+         (cl-loop for e in examples collect
+                  (--> e
+                    (pen-expand-template-keyvals it subprompts-al)
+                    (pen-expand-template-keyvals it (-zip-fill "" vars examples))
+                    (pen-expand-template-keyvals it (-zip-fill "" var-slugs examples)))))
+
+        (iargs
+         (let ((iteration 0))
+           (cl-loop
+            for tp in (-zip-fill nil var-slugs var-defaults vars)
+            collect
+            (let ((example (or (sor (nth iteration examples)
+                                    "")
+                               ""))
+                  (varslug (car tp))
+                  (default (nth 1 tp))
+                  (varname (nth 2 tp))
+                  (default-readstring-cmd "(read-string-hist (concat title \" \" varname \": \") example)" ))
+              (message "%s" (concat "Example " (str iteration) ": " example))
+              (if (and
+                   (equal 0 iteration)
+                   (not default))
+                  ;; The first argument may be captured through selection
+                  `(if mark-active
+                       (pen-selected-text)
+                     ;; (eval-string default-readstring-cmd)
+                     ;; (read-string-hist ,(concat varslug ": ") ,example)
+                     (read-string-hist ,(concat varslug ": ") ,example)
+                     ;; TODO Find a way to do multiline entry
+                     ;; (if ,(> (length (s-lines example)) 1)
+                     ;;     (multiline-reader ,example)
+                     ;;   (read-string-hist ,(concat v ": ") ,example))
+                     )
+                ;; `(if ,(> (length (s-lines example)) 1)
+                ;;      (pen-etv ,example)
+                ;;    (if ,d
+                ;;        (eval-string ,(str d))
+                ;;      (read-string-hist ,(concat v ": ") ,example)))
+
+                ;; subprompts are available as variables to var-defaults
+                `(eval
+                  `(let ((func-name ,,func-name))
+                     (pen-let-keyvals
+                      ',',(pen-subprompts-to-alist subprompts)
+                      (if ,,default
+                          ;; This will be tried again later, when more vars are available
+                          (ignore-errors (eval-string ,,(str default)))
+                        (read-string-hist ,,(concat varname ": ") ,,example)))))))
+            do
+            (progn
+              (setq iteration (+ 1 iteration))
+              (message (str iteration))))))
+
+        (all-iargs
+         (if (string-equal "search" mode)
+             ;; (cons `(eval-string (concat "'" (read-string-hist "documents list:" nil nil nil ,func-name))) iargs)
+             (cons `(read-string-hist "documents list jsonl:" nil nil nil ,func-name) iargs)
+           iargs)))
+
+     (ht-set yaml-ht "path" path)
+     (ht-set pen-prompts func-name yaml-ht)
+     (add-to-list 'pen-prompt-functions-meta yaml-ht)
+
+     ;; var names will have to be slugged, too
+
+     (progn
+       (if (and (not in-development)
+                (sor func-name)
+                func-sym
+                (sor title))
+           (let ((funcsym (define-prompt-function)))
+             (if funcsym
+                 (progn
+                   (add-to-list 'pen-prompt-functions funcsym)
+                   (cl-loop for fn in alias-syms do
+                            (progn
+                              (if (not (eq fn funcsym))
+                                  (defalias fn funcsym))
+                              (add-to-list 'pen-prompt-aliases fn)))
+                   (if interpreter (add-to-list 'pen-prompt-interpreter-functions funcsym))
+                   (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
+                   (if results-analyser (add-to-list 'pen-prompt-analyser-functions funcsym))
+                   (if completion (add-to-list 'pen-prompt-completion-functions funcsym)))
+               (add-to-list 'pen-prompt-functions-failed func-sym))
+
+             ;; Using memoization here is the more efficient way to memoize.
+             ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
+             ;; memoizing a function removes its interactivity
+             ;; (if cache (memoize funcsym))
+             ;; (if cache (memoize-restore funcsym))
+             )))
+     (message (concat "pen-mode: Loaded prompt function " func-name))))
+
 (defun pen-generate-prompt-functions (&optional paths)
   "Generate prompt functions for the files in the prompts directory
 Function names are prefixed with pf- for easy searching"
@@ -1932,605 +2533,7 @@ Function names are prefixed with pf- for easy searching"
 
                   ;; results in a hash table
                   (pen-try
-                   (let*
-                       (
-                        ;; yaml-ht may change
-                        (yaml-ht (pen-prompt-file-load path))
-                        ;; but prompt-yaml-ht stays the same
-                        (prompt-yaml-ht yaml-ht)
-
-                        (path path)
-
-                        (requirements (pen-vector2list (ht-get yaml-ht "requirements")))
-
-                        (logprobs (ht-get yaml-ht "logprobs"))
-                        (force-logprobs (ht-get yaml-ht "force-logprobs"))
-
-                        (force-engine (ht-get yaml-ht "force-engine"))
-                        (force-model (ht-get yaml-ht "force-model"))
-                        (force-lm-command (ht-get yaml-ht "force-lm-command"))
-                        (force-temperature (ht-get yaml-ht "force-temperature"))
-
-                        (engine
-                         (let* ((engine-title
-                                 (or
-                                  (ht-get yaml-ht "force-engine")
-                                  (ht-get yaml-ht "engine")))
-                                (engine (if (and
-                                             engine-title
-                                             pen-engines)
-                                            (ht-get pen-engines engine-title))))
-                           (if engine
-                               (progn
-                                 (setq yaml-ht (ht-merge yaml-ht engine))
-                                 ;; Merge the original prompt keys back in, to override ones the engine may have set.
-                                 ;; Because colliding prompt keys are more important.
-                                 (setq yaml-ht (ht-merge yaml-ht prompt-yaml-ht))))
-                           engine-title))
-
-                        (engine (pen-resolve-engine engine requirements))
-
-                        ;; function
-                        (task-ink (ht-get yaml-ht "task"))
-                        (language (ht-get yaml-ht "language"))
-                        (task (ink-decode task-ink))
-                        (task (if (and (sor task)
-                                       (sor language))
-                                  (pen-expand-template-keyvals
-                                   task
-                                   `(("language" . ,language)))
-                                task))
-                        (engine-whitespace-support (ht-get yaml-ht "engine-whitespace-support"))
-                        (approximate-token-char-length
-                         (or
-                          (ht-get yaml-ht "approximate-token-char-length")
-                          2.5))
-
-                        (title (ht-get yaml-ht "title"))
-                        (title (sor title
-                                    task))
-                        (title-slug (slugify title))
-
-                        (aliases (pen-vector2list (ht-get yaml-ht "aliases")))
-
-                        (variadic-var (pen-vector2list (ht-get yaml-ht "variadic-var")))
-
-                        ;; lm-complete
-                        (cache (pen-yaml-test yaml-ht "cache"))
-                        ;; openai-complete.sh is the default LM completion command
-                        ;; but the .prompt may specify a different one
-                        (lm-command (or
-                                     pen-override-lm-command
-                                     (ht-get yaml-ht "lm-command")
-                                     pen-default-lm-command))
-
-                        (in-development (pen-yaml-test yaml-ht "in-development"))
-
-                        ;; internals
-                        (prompt (ht-get yaml-ht "prompt"))
-                        (mode (ht-get yaml-ht "mode"))
-                        (search-threshold (ht-get yaml-ht "search-threshold"))
-                        (flags (ht-get yaml-ht "flags"))
-                        (evaluator (ht-get yaml-ht "evaluator"))
-                        (api-endpoint (ht-get yaml-ht "api-endpoint"))
-
-                        (subprompts (ht-get yaml-ht "subprompts"))
-
-                        ;; For examples (define-prompt-function signature). Not for define-prompt-function body.
-                        ;; Body recalculates this.
-                        (subprompts-al
-                         (if subprompts
-                             (ht->alist (-reduce 'ht-merge (pen-vector2list subprompts)))))
-
-                        (payloads (pen--htlist-to-alist (ht-get yaml-ht "payloads")))
-
-                        ;; info and hover are related
-                        (info (pen-yaml-test yaml-ht "info"))
-                        (hover (pen-yaml-test yaml-ht "hover"))
-                        (prepend-previous (pen-yaml-test yaml-ht "prepend-previous"))
-                        (force-prompt)
-                        (formatter (pen-yaml-test yaml-ht "formatter"))
-                        (linter (pen-yaml-test yaml-ht "linter"))
-                        ;; This is both a code action and the default action
-                        ;; sp +/"^action: pen-find-file" "$HOME/source/git/semiosis/prompts/prompts/recurse-directory-4.prompt"
-                        ;; (action (pen-yaml-test yaml-ht "action"))
-
-                        (parsers (pen--htlist-to-alist (ht-get yaml-ht "parsers")))
-                        (actions (pen--htlist-to-alist (ht-get yaml-ht "actions")))
-
-                        (new-document (pen-yaml-test yaml-ht "new-document"))
-                        (expand-jinja (pen-yaml-test yaml-ht "expand-jinja"))
-                        (start-yas (pen-yaml-test yaml-ht "start-yas"))
-                        (yas (pen-yaml-test yaml-ht "yas"))
-
-                        ;; not normally given via .prompt. Rather, overridden
-                        (inject-gen-start (ht-get yaml-ht "inject-gen-start"))
-                        (interactive-inject (pen-yaml-test yaml-ht "interactive-inject"))
-                        (inject-example (ht-get yaml-ht "inject-example"))
-                        (inject-examples (pen-vector2list (ht-get yaml-ht "inject-examples")))
-                        (continue-default (ht-get yaml-ht "continue-default"))
-
-                        (end-yas (pen-yaml-test yaml-ht "end-yas"))
-
-                        (include-prompt (pen-yaml-test yaml-ht "include-prompt"))
-
-                        (no-gen (pen-yaml-test yaml-ht "no-gen"))
-
-                        (repeater (ht-get yaml-ht "repeater"))
-
-                        (engine-stop-sequence-validator (ht-get yaml-ht "engine-stop-sequence-validator"))
-                        (engine-delimiter (or
-                                           (ht-get yaml-ht "engine-delimiter")
-                                           "###"))
-                        (delimiter (or
-                                    (ht-get yaml-ht "delimiter")
-                                    engine-delimiter
-                                    "###"))
-                        (prefer-external (pen-yaml-test yaml-ht "prefer-external"))
-                        (interpreter (pen-yaml-test yaml-ht "interpreter"))
-                        (no-uniq-results (pen-yaml-test yaml-ht "no-uniq-results"))
-                        (conversation (pen-yaml-test yaml-ht "conversation"))
-                        (filter (pen-yaml-test yaml-ht "filter"))
-                        (filter-off (pen-yaml-test-off yaml-ht "filter"))
-                        (results-analyser (ht-get yaml-ht "results-analyser"))
-                        ;; Don't actually use this.
-                        ;; But I can toggle to use the prettifier with a bool
-                        (prettifier (ht-get yaml-ht "prettifier"))
-                        (fz-pretty (ht-get yaml-ht "fz-pretty"))
-                        (collation-postprocessor (ht-get yaml-ht "pen-collation-postprocessor"))
-                        (completion (pen-yaml-test yaml-ht "completion"))
-                        (completion-off (pen-yaml-test-off yaml-ht "completion"))
-                        (insertion (pen-yaml-test yaml-ht "insertion"))
-                        (insertion-off (pen-yaml-test-off yaml-ht "insertion"))
-                        ;; Is the prompt designed for an LM trained on code?
-                        (utilises-code (pen-yaml-test yaml-ht "utilises-code"))
-                        (utilises-code-off (pen-yaml-test-off yaml-ht "utilises-code"))
-                        (no-trim-start (or (pen-yaml-test yaml-ht "no-trim-start")
-                                           (pen-yaml-test yaml-ht "completion")))
-                        (no-trim-end (pen-yaml-test yaml-ht "no-trim-end"))
-                        (pipelines (pen--htlist-to-alist (ht-get yaml-ht "pipelines")))
-                        (expressions (pen--htlist-to-alist (ht-get yaml-ht "expressions")))
-                        (validator (ht-get yaml-ht "validator"))
-                        (prompt-filter (ht-get yaml-ht "prompt-filter"))
-                        (closer (ht-get yaml-ht "closer"))
-                        (return-postprocessor (ht-get yaml-ht "return-postprocessor"))
-                        (postprocessor (ht-get yaml-ht "postprocessor"))
-                        (postpostprocessor (ht-get yaml-ht "postpostprocessor"))
-                        (n-collate
-                         (or (ht-get yaml-ht "n-collate")
-                             1))
-                        (n-max-collate (or (ht-get yaml-ht "n-max-collate")
-                                           1))
-                        (n-target (or (ht-get yaml-ht "n-target")
-                                      1))
-
-                        (engine-max-stop-sequence-size (or (ht-get yaml-ht "engine-max-stop-sequence-size")
-                                                           20))
-
-                        (engine-min-generated-tokens
-                         (or (ht-get yaml-ht "engine-min-generated-tokens")
-                             3))
-                        (engine-max-generated-tokens
-                         (or (ht-get yaml-ht "engine-max-generated-tokens")
-                             4096
-                             ;; 256
-                             ))
-                        (engine-max-n-completions
-                         (or (ht-get yaml-ht "engine-max-n-completions")
-                             10))
-                        (n-completions
-                         (progn
-                           ;; (pen-log path)
-                           ;; for some reason this is returning 5
-                           ;; (pen-log (ht-get yaml-ht "n-completions"))
-                           ;; It comes from openai.engine. If I'm forcing the engine, this will override.
-                           (or (ht-get yaml-ht "n-completions") 5)))
-                        (n-test-runs (ht-get yaml-ht "n-test-runs"))
-
-                        ;; Execute some elisp in preparation for running this function
-                        ;; This may set up elisp functions we need
-                        (elisp (ht-get yaml-ht "elisp"))
-
-                        (elisp
-                         (progn (if (sor elisp)
-                                    (eval-string elisp))
-                                elisp))
-
-                        ;; API
-
-                        (model (ht-get yaml-ht "model"))
-                        (mode (ht-get yaml-ht "mode"))
-                        (frequency-penalty (ht-get yaml-ht "frequency-penalty"))
-                        (presence-penalty (ht-get yaml-ht "presence-penalty"))
-                        (repetition-penalty (ht-get yaml-ht "repetition-penalty"))
-                        (length-penalty (ht-get yaml-ht "length-penalty"))
-
-                        ;; min-tokens and max-tokens include the prompt
-                        ;; These values may also be inferred from max-generated-tokens + an approximation of the prompt size.
-                        (min-tokens (ht-get yaml-ht "min-tokens"))
-                        (max-tokens (ht-get yaml-ht "max-tokens"))
-
-                        ;; min-generated-tokens and max-generated-tokens do not include the prompt
-                        ;; These values may also be inferred from max-tokens - an approximation of the prompt size.
-                        ;; The desired number of generated tokens
-                        (min-generated-tokens (ht-get yaml-ht "min-generated-tokens"))
-                        (max-generated-tokens (ht-get yaml-ht "max-generated-tokens"))
-
-                        (force-max-generated-tokens (ht-get yaml-ht "force-max-generated-tokens"))
-
-                        (collation-temperature-stepper (ht-get yaml-ht "collation-temperature-stepper"))
-
-                        ;; engine-min-tokens and engine-max-tokens include the prompt
-                        (engine-min-tokens (ht-get yaml-ht "engine-min-tokens"))
-                        (engine-max-tokens (ht-get yaml-ht "engine-max-tokens"))
-
-                        (rate-limit-requests-per-min (ht-get yaml-ht "rate-limit-requests-per-min"))
-
-                        (force-stop-sequence (ht-get yaml-ht "force-stop-sequence"))
-
-                        (cant-n-complete (ht-get yaml-ht "cant-n-complete"))
-
-                        (top-p (ht-get yaml-ht "top-p"))
-
-                        ;; synonyms
-                        (top-k (ht-get yaml-ht "top-k"))
-                        (top-k (ht-get yaml-ht "best-of"))
-
-                        (n-jobs (ht-get yaml-ht "n-jobs"))
-                        (force-n-jobs (ht-get yaml-ht "force-n-jobs"))
-
-                        (temperature (ht-get yaml-ht "temperature"))
-                        (default-temperature (ht-get yaml-ht "default-temperature"))
-
-                        ;; This is an override hint only
-                        (force-completion nil)
-
-                        (engine-strips-gen-starting-whitespace (ht-get yaml-ht "engine-strips-gen-starting-whitespace"))
-
-                        (stop-sequences
-                         (or (pen-vector2list (ht-get yaml-ht "stop-sequences"))
-                             ;; (list "\n")
-                             (list "#<long>#")))
-                        (suggest-p
-                         (or (pen-vector2list (ht-get yaml-ht "suggest-p"))
-                             (list t)))
-
-                        ;; These are automatically turned into prompt functions
-                        (nl-suggest-p (pen-vector2list (ht-get yaml-ht "nl-suggest-p")))
-
-                        (stop-sequence
-                         (if stop-sequences (car stop-sequences)))
-
-                        (stop-sequence
-                         (if (and (sor engine-stop-sequence-validator)
-                                  (pen-snq engine-stop-sequence-validator stop-sequence))
-                             stop-sequence
-                           (if stop-sequence
-                               (progn
-                                 (setq stop-sequences (cons stop-sequence stop-sequences))
-                                 stop-sequence)
-                             "#<long>#")))
-
-                        (force-stop-sequence
-                         (progn
-                           (if force-stop-sequence
-                               (setq stop-sequences (cons force-stop-sequence stop-sequences)))
-                           force-stop-sequence))
-
-                        (stop-patterns
-                         (or (pen-vector2list (ht-get yaml-ht "stop-patterns"))
-                             ;; By default, stop when you see ^Input
-                             (list "^Input:")))
-
-                        (split-patterns
-                         (or (pen-vector2list (ht-get yaml-ht "split-patterns"))
-                             nil
-                             ;; (list "\n")
-                             ))
-
-                        (end-split-patterns
-                         (or (pen-vector2list (ht-get yaml-ht "end-split-patterns"))
-                             nil
-                             ;; (list "\n")
-                             ))
-
-                        (translator
-                         (let ((tr (ht-get yaml-ht "translator")))
-                           (if (sor tr)
-                               (add-to-list 'pen-translators tr))
-                           tr))
-
-                        ;; docs
-                        (problems (pen-vector2list (ht-get yaml-ht "problems")))
-                        (design-patterns (pen-vector2list (ht-get yaml-ht "design-patterns")))
-                        (todo (pen-vector2list (ht-get yaml-ht "todo")))
-                        (notes
-                         (let* ((n (ht-get yaml-ht "notes"))
-                                (n (if (vectorp n)
-                                       (pen-list-to-orglist (pen-vector2list (ht-get yaml-ht "notes")))
-                                     n)))
-                           n))
-                        (aims (pen-vector2list (ht-get yaml-ht "aims")))
-                        (past-versions (pen-vector2list (ht-get yaml-ht "past-versions")))
-                        (external-related
-                         (let* ((n (ht-get yaml-ht "external-related")))
-                           (if n
-                               (cond
-                                ((stringp n) (list n))
-                                ((vectorp n) (pen-vector2list (ht-get yaml-ht "external-related")))
-                                (t nil)))))
-                        (related-prompts (pen-vector2list (ht-get yaml-ht "related-prompts")))
-                        (future-titles (pen-vector2list (ht-get yaml-ht "future-titles")))
-
-                        ;; variables - these are actually varnames. don't get confused
-                        (vars (ht-get yaml-ht "vars"))
-
-                        ;; used internally
-                        (vars-list (pen-vector2list vars))
-
-                        ;; Create the variables first
-                        (var-defaults)
-                        (examples)
-                        (preprocessors)
-
-                        ;; Initialise the var-related values with
-                        ;; with what is under vars.
-                        (vars
-                         (cond
-                          ;; It's a key-value
-                          ((hash-table-p (car vars-list))
-                           ;; generate vals from the values
-                           ;; and replace vars
-                           (let* ((vars-al (pen--htlist-to-alist vars))
-                                  (keys (cl-loop
-                                         for atp in vars-al
-                                         collect
-                                         (car atp)))
-                                  (values (cl-loop
-                                           for atp in vars-al
-                                           collect
-                                           (cdr atp))))
-
-                             (if (hash-table-p (car (pen-vector2list (car values))))
-                                 (let* ((als (cl-loop
-                                              for atp in vars-al
-                                              collect
-                                              (pen--htlist-to-alist (pen-vector2list (cdr atp)))))
-
-                                        (defaults
-                                          (cl-loop
-                                           for atp in als
-                                           collect
-                                           (cdr (assoc "default" atp))))
-
-                                        (exs
-                                         (cl-loop
-                                          for atp in als
-                                          collect
-                                          (cdr (assoc "example" atp))))
-
-                                        (pps
-                                         (cl-loop
-                                          for atp in als
-                                          collect
-                                          (cdr (assoc "preprocessor" atp)))))
-                                   (setq var-defaults defaults)
-                                   (setq examples exs)
-                                   (setq preprocessors pps))
-                               (setq var-defaults values))
-                             keys))
-                          ;; It's just the list of keys
-                          (t vars-list)))
-
-                        (examples
-                         (let ((explicit-key (pen-vector2list (ht-get yaml-ht "examples"))))
-                           (if explicit-key
-                               explicit-key
-                             examples)))
-
-                        (examples
-                         (if (vectorp (car examples))
-                             (pen-vector2list (car examples))
-                           examples))
-
-                        (preprocessors
-                         (let ((explicit-key (pen-vector2list (ht-get yaml-ht "preprocessors"))))
-                           (if explicit-key
-                               explicit-key
-                             preprocessors)))
-
-                        (burst-preprocessor (ht-get yaml-ht "burst-preprocessor"))
-                        (burst-length (ht-get yaml-ht "burst-length"))
-
-                        (var-defaults
-                         ;; override what was taken from vars
-                         ;; only if it exists
-                         (let ((explicit-key (pen-vector2list (ht-get yaml-ht "var-defaults"))))
-                           (if explicit-key
-                               explicit-key
-                             var-defaults)))
-
-                        (doc (mapconcat
-                              'identity
-                              (-filter-not-empty-string
-                               (list
-                                title
-                                (ht-get yaml-ht "doc")
-                                (concat "\npath:\n" (pen-list-to-orglist (list path)))
-                                (if design-patterns (concat "\ndesign-patterns:\n" (pen-list-to-orglist design-patterns)))
-                                (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
-                                (if aims (concat "\naims:" (pen-list-to-orglist aims)))
-                                (if engine-stop-sequence-validator (concat "\nengine-stop-sequence-validator:" (str engine-stop-sequence-validator)))
-                                (if force-stop-sequence (concat "\nforce-stop-sequence:" (str force-stop-sequence)))
-                                (if force-temperature (concat "\nforce-temperature:" (str force-temperature)))
-                                (if force-model (concat "\nforce-model:" (str force-model)))
-                                (if stop-sequence (concat "\nstop-sequence:" (str stop-sequence)))
-                                (if stop-sequences (concat "\nstop-sequences:" (pen-list-to-orglist stop-sequences)))
-                                (if engine (concat "\nengine: " engine))
-                                (if elisp (concat "\nelisp: " elisp))
-                                (if lm-command (concat "\nlm-command: " lm-command))
-                                (if model (concat "\nmodel: " model))
-                                (if mode (concat "\nmode: " mode))
-                                (if n-completions (concat "\nn-completions: " (str n-completions)))
-                                (if engine-max-n-completions (concat "\nengine-max-n-completions: " (str engine-max-n-completions)))
-                                (if n-collate (concat "\nn-collate: " (str n-collate)))
-                                (if n-target (concat "\nn-target: " (str n-target)))
-                                (if min-tokens (concat "\nmin-tokens: " (str min-tokens)))
-                                (if max-tokens (concat "\nmax-tokens: " (str max-tokens)))
-                                (if max-generated-tokens (concat "\nmax-generated-tokens: " (str max-generated-tokens)))
-                                (if engine-min-tokens (concat "\nengine-min-tokens: " (str engine-min-tokens)))
-                                (if engine-max-tokens (concat "\nengine-max-tokens: " (str engine-max-tokens)))
-                                (if engine-whitespace-support
-                                    (concat "\nengine-whitespace-support: yes")
-                                  (concat "\nengine-whitespace-support: no"))
-                                (if inject-gen-start (concat "\ninject-gen-start: " (pps inject-gen-start)))
-                                (if task (concat "\ntask: " task))
-                                (if notes (concat "\nnotes:" notes))
-                                (if filter (concat "\nfilter: on"))
-                                (if prepend-previous (concat "\nprepend-previous: on"))
-                                (if cant-n-complete (concat "\ncant-n-complete: on"))
-                                (if filter-off (concat "\nfilter-off: on"))
-                                (if results-analyser (concat "\nresults-analyser: " results-analyser))
-                                (if insertion (concat "\ninsertion: on"))
-                                (if insertion-off (concat "\ninsertion-off: on"))
-                                (if completion (concat "\ncompletion: on"))
-                                (if completion-off (concat "\ncompletion-off: on"))
-                                (if past-versions (concat "\npast-versions:\n" (pen-list-to-orglist past-versions)))
-                                (if external-related (concat "\nexternal-related\n:" (pen-list-to-orglist external-related)))
-                                (if related-prompts (concat "\nrelated-prompts:\n" (pen-list-to-orglist related-prompts)))
-                                (if future-titles (concat "\nfuture-titles:\n" (pen-list-to-orglist future-titles)))
-                                (if examples (concat "\nexamples:\n" (pen-list-to-orglist examples)))
-                                (if preprocessors (concat "\npreprocessors:\n" (pen-list-to-orglist preprocessors)))
-                                (if pipelines (concat "\npipelines:\n" (pps pipelines)))
-                                (if parsers (concat "\nparsers:\n" (pps parsers)))
-                                (if expressions (concat "\nexpressions:\n" (pps expressions)))
-                                (if var-defaults (concat "\nvar-defaults:\n" (pen-list-to-orglist var-defaults)))
-                                (if prompt-filter (concat "\nprompt-filter:\n" (pen-list-to-orglist (list prompt-filter))))
-                                (if postprocessor (concat "\npostprocessor:\n" (pen-list-to-orglist (list postprocessor))))
-                                (if burst-preprocessor (concat "\nburst-preprocessor:\n" (pen-list-to-orglist (list burst-preprocessor))))
-                                (if validator (concat "\nvalidator:\n" (pen-list-to-orglist (list validator))))
-                                (if subprompts (concat "\nsubprompts:\n" (pps subprompts)))
-                                (if payloads (concat "\nprompts:\n" (pps payloads)))
-                                (if prompt (concat "\nprompt:\n" prompt))))
-                              "\n"))
-
-                        (defs (pen--htlist-to-alist (ht-get yaml-ht "defs")))
-                        (envs (pen--htlist-to-alist (ht-get yaml-ht "envs")))
-
-                        (var-slugs (mapcar 'slugify vars))
-                        (all-var-syms
-                         (if (string-equal "search" mode)
-                             (cons 'documents (mapcar 'intern var-slugs))
-                           (mapcar 'intern var-slugs)))
-                        (var-syms
-                         (let ((ss (mapcar 'intern var-slugs)))
-                           (message (concat "_" prettifier))
-                           (if (sor prettifier)
-                               ;; Add to the function definition the prettify key if the .prompt file specifies a prettifier
-                               (setq ss (append ss '(&key prettify))))
-                           ss))
-                        (func-name (concat pen-prompt-function-prefix title-slug "/" (str (length all-var-syms))))
-                        (func-sym (intern func-name))
-                        (alias-names
-                         (cl-loop for a in aliases
-                                  collect
-                                  (concat pen-prompt-function-prefix (slugify a) "/" (str (length all-var-syms)))))
-                        (alias-syms
-                         (mapcar 'intern alias-names))
-
-                        (examples
-                         (cl-loop for e in examples collect
-                                  (--> e
-                                    (pen-expand-template-keyvals it subprompts-al)
-                                    (pen-expand-template-keyvals it (-zip-fill "" vars examples))
-                                    (pen-expand-template-keyvals it (-zip-fill "" var-slugs examples)))))
-
-                        (iargs
-                         (let ((iteration 0))
-                           (cl-loop
-                            for tp in (-zip-fill nil var-slugs var-defaults vars)
-                            collect
-                            (let ((example (or (sor (nth iteration examples)
-                                                    "")
-                                               ""))
-                                  (varslug (car tp))
-                                  (default (nth 1 tp))
-                                  (varname (nth 2 tp))
-                                  (default-readstring-cmd "(read-string-hist (concat title \" \" varname \": \") example)" ))
-                              (message "%s" (concat "Example " (str iteration) ": " example))
-                              (if (and
-                                   (equal 0 iteration)
-                                   (not default))
-                                  ;; The first argument may be captured through selection
-                                  `(if mark-active
-                                       (pen-selected-text)
-                                     ;; (eval-string default-readstring-cmd)
-                                     ;; (read-string-hist ,(concat varslug ": ") ,example)
-                                     (read-string-hist ,(concat varslug ": ") ,example)
-                                     ;; TODO Find a way to do multiline entry
-                                     ;; (if ,(> (length (s-lines example)) 1)
-                                     ;;     (multiline-reader ,example)
-                                     ;;   (read-string-hist ,(concat v ": ") ,example))
-                                     )
-                                ;; `(if ,(> (length (s-lines example)) 1)
-                                ;;      (pen-etv ,example)
-                                ;;    (if ,d
-                                ;;        (eval-string ,(str d))
-                                ;;      (read-string-hist ,(concat v ": ") ,example)))
-
-                                ;; subprompts are available as variables to var-defaults
-                                `(eval
-                                  `(let ((func-name ,,func-name))
-                                     (pen-let-keyvals
-                                      ',',(pen-subprompts-to-alist subprompts)
-                                      (if ,,default
-                                          ;; This will be tried again later, when more vars are available
-                                          (ignore-errors (eval-string ,,(str default)))
-                                        (read-string-hist ,,(concat varname ": ") ,,example)))))))
-                            do
-                            (progn
-                              (setq iteration (+ 1 iteration))
-                              (message (str iteration))))))
-
-                        (all-iargs
-                         (if (string-equal "search" mode)
-                             ;; (cons `(eval-string (concat "'" (read-string-hist "documents list:" nil nil nil ,func-name))) iargs)
-                             (cons `(read-string-hist "documents list jsonl:" nil nil nil ,func-name) iargs)
-                           iargs)))
-
-                     (ht-set yaml-ht "path" path)
-                     (ht-set pen-prompts func-name yaml-ht)
-                     (add-to-list 'pen-prompt-functions-meta yaml-ht)
-
-                     ;; var names will have to be slugged, too
-
-                     (progn
-                       (if (and (not in-development)
-                                (sor func-name)
-                                func-sym
-                                (sor title))
-                           (let ((funcsym (define-prompt-function)))
-                             (if funcsym
-                                 (progn
-                                   (add-to-list 'pen-prompt-functions funcsym)
-                                   (cl-loop for fn in alias-syms do
-                                            (progn
-                                              (if (not (eq fn funcsym))
-                                                  (defalias fn funcsym))
-                                              (add-to-list 'pen-prompt-aliases fn)))
-                                   (if interpreter (add-to-list 'pen-prompt-interpreter-functions funcsym))
-                                   (if filter (add-to-list 'pen-prompt-filter-functions funcsym))
-                                   (if results-analyser (add-to-list 'pen-prompt-analyser-functions funcsym))
-                                   (if completion (add-to-list 'pen-prompt-completion-functions funcsym)))
-                               (add-to-list 'pen-prompt-functions-failed func-sym))
-
-                             ;; Using memoization here is the more efficient way to memoize.
-                             ;; TODO I'll sort it out later. I want an updating mechanism, which exists already using LM_CACHE.
-                             ;; memoizing a function removes its interactivity
-                             ;; (if cache (memoize funcsym))
-                             ;; (if cache (memoize-restore funcsym))
-                             )))
-                     (message (concat "pen-mode: Loaded prompt function " func-name)))
+                   (pen-load-prompt-function)
                    (add-to-list 'pen-prompts-failed path))))
        (if pen-prompt-functions-failed
            (progn
