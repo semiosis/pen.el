@@ -1179,6 +1179,7 @@ case "$sn" in
         show_banner=n
         if { ! inside-docker-p; } && docker-running-p; then
             set -- -e "(progn (pen-sn \"pen-shutdown\")(kill-emacs))"
+            force_shutdown_container=y
         elif inside-docker-p; then
             pen-shutdown
             killall emacs
@@ -1678,4 +1679,11 @@ if test "$fuzzy" = "y"; then
     pen_eval "$shcode" | fzf
 else
     pen_eval "$shcode"
+fi
+
+if test "$force_shutdown_container" = "y"; then
+    # penq should've quit pen.el, but it may be hanging
+    if docker-running-p; then
+        :
+    fi
 fi
