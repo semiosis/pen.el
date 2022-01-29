@@ -244,10 +244,10 @@ and =max-tokens= for any prompt function.
   pen -e '(car (pf-list-of/2 5 "tennis players" :no-select-result t))'
 
   # Simpler invocation
-  penf list-of 5 "tennis players"
+  penf list-of/2 5 "tennis players"
 
   # Get a new list with -u for update
-  penf -u list-of 5 "tennis players"
+  penf -u list-of/2 5 "tennis players"
 #+END_SRC
 
 #+BEGIN_SRC text -n :async :results verbatim code
