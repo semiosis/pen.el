@@ -1687,6 +1687,7 @@ fi
 if test "$force_shutdown_container" = "y"; then
     # penq should've quit pen.el, but it may be hanging
     if docker-running-p; then
+        sleep 0.5
         echo Force quitting Pen.el container | pen-hls red 1>&2
         docker container stop "$pen_container_name" 2>/dev/null
     fi
