@@ -9,6 +9,11 @@
   global-selected-minor-mode selected-minor-mode pen-turn-on-selected-minor-mode)
 (global-selected-minor-mode t)
 
+(defmacro pen-bp (&rest body)
+  "Pipe string into bash command. Return stdout."
+  ;; Remove the last element from a list
+  `(pen-sn (concat (pen-quote-args ,@(butlast body))) ,@(last body)))
+
 (defun get-vim-link (&optional editor)
   (interactive)
   (if (not editor)
@@ -23,14 +28,14 @@
               (t editor)))
 
   (if mark-active
-      (let* ((pat (bp head -n 1 (pen-selected-text)))
+      (let* ((pat (pen-bp head -n 1 (pen-selected-text)))
              (vimpat
               (if (sel-flush-left-p)
                   (vim-escape (concat "^" pat))
                 (vim-escape pat)))
-             (pen-cmd (concat vimcmd " +/" vimpat " " (pen-q uri))))
-        (pen-copy cmd)
-        (message "%s" cmd)
+             (link-cmd (concat vimcmd " +/" vimpat " " (pen-q uri))))
+        (xc link-cmd)
+        (message "%s" link-cmd)
         (deactivate-mark))))
 
 (defun get-emacs-link (&optional editor)
