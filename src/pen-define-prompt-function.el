@@ -26,6 +26,155 @@
 ;; this particular state triggering an update
 (defvar pen-snc-ignored-envs nil)
 
+;; Reuse this in the proxy function
+(defmacro pen-pfp-data ()
+  `(let ((data
+          ;; The prompt loses unicode here. I think I need to convert to base64 maybe
+          ;; And if I do, put it just outside pen-encode-string
+          `(
+            ("PEN_PROMPT_FUNCTION" . ,func-name-slug)
+            ("PEN_PROMPT" .
+             ;; Sort this out later
+             ,(pen-encode-string final-prompt)
+             ;; ,(pen-snc "base64" (pen-encode-string final-prompt))
+             ;; ,(pen-snc "base64" final-prompt)
+             )
+            ;; ("PEN_PROMPT" . ,(pen-encode-string final-prompt))
+            ("PEN_LM_COMMAND" . ,final-lm-command)
+            ("PEN_MODEL" . ,final-model)
+            ("PEN_WHITESPACE_SUPPORT" . ,(if final-engine-whitespace-support
+                                              "y"
+                                            ""))
+            ;; This must go into last-prompt-data for ink
+            ("PEN_ENGINE" . ,final-engine)
+            ("PEN_API_ENDPOINT" . ,final-api-endpoint)
+            ("PEN_PAYLOADS" . ,final-payloads)
+            ;; TODO Implement query and counterquery for more accurate semantic search
+            ("PEN_QUERY" . ,final-query)
+            ("PEN_COUNTERQUERY" . ,final-counterquery)
+            ("PEN_LOGPROBS" . ,(str final-logprobs))
+            ("PEN_APPROXIMATE_PROMPT_LENGTH" . ,pen-approximate-prompt-token-length)
+            ("PEN_ENGINE_MIN_TOKENS" . ,final-engine-min-tokens)
+            ("PEN_ENGINE_MAX_TOKENS" . ,final-engine-max-tokens)
+            ("PEN_MIN_TOKENS" . ,final-min-tokens)
+            ("PEN_MAX_TOKENS" . ,final-max-tokens)
+            ("PEN_REPETITION_PENALTY" . ,final-repetition-penalty)
+            ("PEN_FREQUENCY_PENALTY" . ,final-frequency-penalty)
+            ("PEN_PRESENCE_PENALTY" . ,final-presence-penalty)
+            ("PEN_LENGTH_PENALTY" . ,final-length-penalty)
+            ("PEN_MIN_GENERATED_TOKENS" . ,final-min-generated-tokens)
+            ("PEN_MAX_GENERATED_TOKENS" . ,final-max-generated-tokens)
+            ("PEN_TEMPERATURE" . ,final-temperature)
+            ("PEN_MODE" . ,final-mode)
+            ("PEN_STOP_SEQUENCE" . ,(pen-encode-string final-stop-sequence t))
+            ;; (json-encode-list (mapcar 'pen-encode-string '("hello my ;\"" "friend")))
+
+            ;; I still need to use pen-encode-string because of backticks
+            ("PEN_STOP_SEQUENCES" . ,(pen-encode-string (json-encode-list final-stop-sequences) t))
+
+            ;; TODO Force multiple prompts later
+            ;; Also need multi-prompts to understand different prompt lengths for results
+            ;; ("PEN_PROMPTS" . ,(json-encode-list final-prompts))
+            ;; documents must be a json list of strings
+            ("PEN_DOCUMENTS" . ,(pen-var-value-maybe 'documents))
+
+            ("PEN_TOP_P" . ,final-top-p)
+            ("PEN_TOP_K" . ,final-top-k)
+            ("PEN_FLAGS" . ,final-flags)
+            ;; 'best of' IS 'top k'
+            ;; ("PEN_BEST_OF" . ,final-best-of)
+            ("PEN_CACHE" . ,(if cache "y" ""))
+            ;; This is also handled by default in pen-sn
+            ("UPDATE" . ,(if pen-sh-update "y" ""))
+            ("PEN_USER_AGENT" . ,pen-user-agent)
+            ("PEN_TRAILING_WHITESPACE" . ,trailing-whitespace)
+            ("PEN_N_COMPLETIONS" . ,(str final-n-completions))
+            ;; ("PEN_ENGINE_MAX_N_COMPLETIONS" . ,final-engine-max-n-completions)
+            ("PEN_ENGINE_MIN_GENERATED_TOKENS" . ,final-engine-min-generated-tokens)
+            ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
+            ("PEN_COLLECT_FROM_POS" . ,collect-from-pos)
+            ("PEN_END_POS" . ,end-pos)
+            ("PEN_N_JOBS" . ,final-n-jobs)
+            ("PEN_SEARCH_THRESHOLD" . ,final-search-threshold)
+            ;; ("PEN_QUERY_POS" . ,query-pos)
+            ("PEN_INJECT_GEN_START" . ,(pen-encode-string final-inject-gen-start t)))))
+     (setq pen-last-prompt-data
+           (asoc-merge pen-last-prompt-data data))
+     (setq pen-last-prompt-data
+           (asoc-merge pen-last-prompt-data (list (cons "PEN_VALS" (pps last-vals))
+                                                  ;; (cons "PEN_END_POS" end-pos)
+                                                  )))
+     ;; (pen-etv data)
+     data
+     ;; data
+     ))
+
+(defmacro pen-pfp-resultsdirs ()
+  `(if (not no-gen)
+       (progn
+         (let* ((collation-data data)
+                (collation-temperature (alist-get "PEN_TEMPERATURE" collation-data nil nil 'equal)))
+           (cl-loop
+            for i in (number-sequence 1 final-n-collate)
+            collect
+            (progn
+              (message (concat ,func-name " query " (int-to-string i) "..."))
+              ;; TODO Also handle PEN_N_COMPLETIONS
+              (let* ((ret
+                      (progn
+                        (setq pen-snc-ignored-envs
+                              (sh-construct-envs
+                               ;; This is a bit of a hack for \n in prompts
+                               ;; See `pen-restore-chars`
+                               (pen-alist-to-list ignored-data)))
+                        (pen-prompt-snc
+                         (pen-log
+                          (s-join
+                           " "
+                           (list
+                            ;; ;; This actually interfered with the memoization!
+                            ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
+                            ;;   (if updval
+                            ;;       (concat
+                            ;;        "export "
+                            ;;        (sh-construct-envs '(("UPDATE" "y")))
+                            ;;        "; ")))
+
+                            ;; All parameters are sent as environment variables
+                            (sh-construct-envs
+                             ;; This is a bit of a hack for \n in prompts
+                             ;; See `pen-restore-chars`
+                             (append (pen-alist-to-list final-envs)
+                                     `(("ALSO_EXPORT" ,(sh-construct-envs (pen-alist-to-list final-envs))))
+                                     (pen-alist-to-list collation-data)))
+                            ;; Currently always updating
+                            "lm-complete")))
+                         i
+
+                         ;; I'm also using memoization of pen-prompt-snc
+                         ;; cache
+                         ;; pen-sh-update
+                         ))))
+
+                (message (concat ,func-name " done " (int-to-string i)))
+                ret))
+            do
+            (pen-try
+             ;; Update the collation-temperature
+             (if (sor final-collation-temperature-stepper)
+                 (progn
+                   (setq collation-temperature
+                         (str
+                          (eval-string
+                           (pen-expand-template-keyvals
+                            final-collation-temperature-stepper
+                            `(("temperature" . ,collation-temperature))))))
+                   (evil--add-to-alist
+                    'collation-data
+                    "PEN_TEMPERATURE"
+                    collation-temperature)))
+             (message "collation temperature stepper failed")))))))
+
 (defmacro pen-define-prompt-function-pipeline ()
   `(let* (;; Keep in mind this both updates memoization and the bash cache
 
@@ -1278,87 +1427,7 @@
                  approx-total-tokens-from-max-gen
                final-max-tokens)))
 
-          (data
-           (let ((data
-                  ;; The prompt loses unicode here. I think I need to convert to base64 maybe
-                  ;; And if I do, put it just outside pen-encode-string
-                  `(
-                    ("PEN_PROMPT_FUNCTION" . ,func-name-slug)
-                    ("PEN_PROMPT" .
-                     ;; Sort this out later
-                     ,(pen-encode-string final-prompt)
-                     ;; ,(pen-snc "base64" (pen-encode-string final-prompt))
-                     ;; ,(pen-snc "base64" final-prompt)
-                     )
-                    ;; ("PEN_PROMPT" . ,(pen-encode-string final-prompt))
-                    ("PEN_LM_COMMAND" . ,final-lm-command)
-                    ("PEN_MODEL" . ,final-model)
-                    ("PEN_WHITESPACE_SUPPORT" . ,(if final-engine-whitespace-support
-                                                     "y"
-                                                   ""))
-                    ;; This must go into last-prompt-data for ink
-                    ("PEN_ENGINE" . ,final-engine)
-                    ("PEN_API_ENDPOINT" . ,final-api-endpoint)
-                    ("PEN_PAYLOADS" . ,final-payloads)
-                    ;; TODO Implement query and counterquery for more accurate semantic search
-                    ("PEN_QUERY" . ,final-query)
-                    ("PEN_COUNTERQUERY" . ,final-counterquery)
-                    ("PEN_LOGPROBS" . ,(str final-logprobs))
-                    ("PEN_APPROXIMATE_PROMPT_LENGTH" . ,pen-approximate-prompt-token-length)
-                    ("PEN_ENGINE_MIN_TOKENS" . ,final-engine-min-tokens)
-                    ("PEN_ENGINE_MAX_TOKENS" . ,final-engine-max-tokens)
-                    ("PEN_MIN_TOKENS" . ,final-min-tokens)
-                    ("PEN_MAX_TOKENS" . ,final-max-tokens)
-                    ("PEN_REPETITION_PENALTY" . ,final-repetition-penalty)
-                    ("PEN_FREQUENCY_PENALTY" . ,final-frequency-penalty)
-                    ("PEN_PRESENCE_PENALTY" . ,final-presence-penalty)
-                    ("PEN_LENGTH_PENALTY" . ,final-length-penalty)
-                    ("PEN_MIN_GENERATED_TOKENS" . ,final-min-generated-tokens)
-                    ("PEN_MAX_GENERATED_TOKENS" . ,final-max-generated-tokens)
-                    ("PEN_TEMPERATURE" . ,final-temperature)
-                    ("PEN_MODE" . ,final-mode)
-                    ("PEN_STOP_SEQUENCE" . ,(pen-encode-string final-stop-sequence t))
-                    ;; (json-encode-list (mapcar 'pen-encode-string '("hello my ;\"" "friend")))
-
-                    ;; I still need to use pen-encode-string because of backticks
-                    ("PEN_STOP_SEQUENCES" . ,(pen-encode-string (json-encode-list final-stop-sequences) t))
-
-                    ;; TODO Force multiple prompts later
-                    ;; Also need multi-prompts to understand different prompt lengths for results
-                    ;; ("PEN_PROMPTS" . ,(json-encode-list final-prompts))
-                    ;; documents must be a json list of strings
-                    ("PEN_DOCUMENTS" . ,(pen-var-value-maybe 'documents))
-
-                    ("PEN_TOP_P" . ,final-top-p)
-                    ("PEN_TOP_K" . ,final-top-k)
-                    ("PEN_FLAGS" . ,final-flags)
-                    ;; 'best of' IS 'top k'
-                    ;; ("PEN_BEST_OF" . ,final-best-of)
-                    ("PEN_CACHE" . ,(if cache "y" ""))
-                    ;; This is also handled by default in pen-sn
-                    ("UPDATE" . ,(if pen-sh-update "y" ""))
-                    ("PEN_USER_AGENT" . ,pen-user-agent)
-                    ("PEN_TRAILING_WHITESPACE" . ,trailing-whitespace)
-                    ("PEN_N_COMPLETIONS" . ,(str final-n-completions))
-                    ;; ("PEN_ENGINE_MAX_N_COMPLETIONS" . ,final-engine-max-n-completions)
-                    ("PEN_ENGINE_MIN_GENERATED_TOKENS" . ,final-engine-min-generated-tokens)
-                    ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
-                    ("PEN_COLLECT_FROM_POS" . ,collect-from-pos)
-                    ("PEN_END_POS" . ,end-pos)
-                    ("PEN_N_JOBS" . ,final-n-jobs)
-                    ("PEN_SEARCH_THRESHOLD" . ,final-search-threshold)
-                    ;; ("PEN_QUERY_POS" . ,query-pos)
-                    ("PEN_INJECT_GEN_START" . ,(pen-encode-string final-inject-gen-start t)))))
-             (setq pen-last-prompt-data
-                   (asoc-merge pen-last-prompt-data data))
-             (setq pen-last-prompt-data
-                   (asoc-merge pen-last-prompt-data (list (cons "PEN_VALS" (pps last-vals))
-                                                          ;; (cons "PEN_END_POS" end-pos)
-                                                          )))
-             ;; (pen-etv data)
-             data
-             ;; data
-             ))
+          (data ,(macroexpand `(pen-pfp-data)))
 
           ;; This data does not contribute to memoisation
           (ignored-data
@@ -1388,71 +1457,7 @@
 
           (results)
 
-          (resultsdirs
-           (if (not no-gen)
-               (progn
-                 (let* ((collation-data data)
-                        (collation-temperature (alist-get "PEN_TEMPERATURE" collation-data nil nil 'equal)))
-                   (cl-loop
-                    for i in (number-sequence 1 final-n-collate)
-                    collect
-                    (progn
-                      (message (concat ,func-name " query " (int-to-string i) "..."))
-                      ;; TODO Also handle PEN_N_COMPLETIONS
-                      (let* ((ret
-                              (progn
-                                (setq pen-snc-ignored-envs
-                                      (sh-construct-envs
-                                       ;; This is a bit of a hack for \n in prompts
-                                       ;; See `pen-restore-chars`
-                                       (pen-alist-to-list ignored-data)))
-                                (pen-prompt-snc
-                                 (pen-log
-                                  (s-join
-                                   " "
-                                   (list
-                                    ;; ;; This actually interfered with the memoization!
-                                    ;; (let ((updval (pen-var-value-maybe 'do-pen-update)))
-                                    ;;   (if updval
-                                    ;;       (concat
-                                    ;;        "export "
-                                    ;;        (sh-construct-envs '(("UPDATE" "y")))
-                                    ;;        "; ")))
-
-                                    ;; All parameters are sent as environment variables
-                                    (sh-construct-envs
-                                     ;; This is a bit of a hack for \n in prompts
-                                     ;; See `pen-restore-chars`
-                                     (append (pen-alist-to-list final-envs)
-                                             `(("ALSO_EXPORT" ,(sh-construct-envs (pen-alist-to-list final-envs))))
-                                             (pen-alist-to-list collation-data)))
-                                    ;; Currently always updating
-                                    "lm-complete")))
-                                 i
-
-                                 ;; I'm also using memoization of pen-prompt-snc
-                                 ;; cache
-                                 ;; pen-sh-update
-                                 ))))
-
-                        (message (concat ,func-name " done " (int-to-string i)))
-                        ret))
-                    do
-                    (pen-try
-                     ;; Update the collation-temperature
-                     (if (sor final-collation-temperature-stepper)
-                         (progn
-                           (setq collation-temperature
-                                 (str
-                                  (eval-string
-                                   (pen-expand-template-keyvals
-                                    final-collation-temperature-stepper
-                                    `(("temperature" . ,collation-temperature))))))
-                           (evil--add-to-alist
-                            'collation-data
-                            "PEN_TEMPERATURE"
-                            collation-temperature)))
-                     (message "collation temperature stepper failed")))))))
+          (resultsdirs ,(macroexpand `(pen-pfp-resultsdirs)))
 
           (final-no-gen
            (or final-no-gen
