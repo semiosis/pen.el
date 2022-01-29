@@ -63,20 +63,6 @@ def b(c, inputstring="", timeout=0):
     p.wait()
     return [str(output), p.returncode]
 
-#  result=b("pen-tvipe \"pen-pipify nano\"")[0]
-
-# export the prompt here, so I can show it read-only
-# at the top of the emacs buffer
-
-# Send the prompt as the input
-
-# TODO Also send to pen-eipe the overlay, so the engine needs to know what the
-# function was.
-
-# It seems that my b function does not filter out stderr currently
-#  result=b("pen-export-prompt pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
-#  result=b("pen-export-preoverlay pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
-#  result=b("pen-export-overlay pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
 result=b("pen-proxify pen-export-help pen-tipe -wintype nw pen-eipe", inputstring=PEN_PROMPT)[0]
 
 cs = [result + PEN_STOP_SEQUENCE]
