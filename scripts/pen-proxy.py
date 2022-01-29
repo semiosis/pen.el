@@ -32,7 +32,7 @@ if PEN_LOGPROBS == "":
 if PEN_PAYLOADS:
     PEN_PAYLOADS = json.loads(PEN_PAYLOADS)
 
-PEN_API_ENDPOINT = os.environ.get("PEN_API_ENDPOINT") or "https://localhost"
+PEN_API_ENDPOINT = os.environ.get("PEN_API_ENDPOINT") or "http://localhost"
 PEN_MODE = os.environ.get("PEN_MODE")
 PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 
