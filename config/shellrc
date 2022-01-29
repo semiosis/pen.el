@@ -29,6 +29,10 @@ test -d "/root/.emacs.d/host/engines" && : "${PEN_ENGINES_DIR:="/root/.emacs.d/h
 test -d "/root/.emacs.d/engines" && : "${PEN_ENGINES_DIR:="/root/.emacs.d/engines"}"
 export PEN_ENGINES_DIR
 
+test -d "/root/.emacs.d/host/openai-api.el" && : "${OPENAI_API_EL_DIR:="/root/.emacs.d/host/openai-api.el"}"
+test -d "/root/.emacs.d/openai-api.el" && : "${OPENAI_API_EL_DIR:="/root/.emacs.d/openai-api.el"}"
+export OPENAI_API_EL_DIR
+
 test -d "/root/.emacs.d/host/engines/engines" && : "${ENGINES:="/root/.emacs.d/host/engines/engines"}"
 test -d "/root/.emacs.d/engines/engines" && : "${ENGINES:="/root/.emacs.d/engines/engines"}"
 export ENGINES
