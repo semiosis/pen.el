@@ -71,7 +71,7 @@ def b(c, inputstring="", timeout=0):
 #     - That could be the human engine
 #       - The remote human may decline, of course
 # - 1 semiotic function proxy
-#   - This is like the pen.el thin-client, except it's a thin client across the net
+#   - Based on the Pen.el thin-client, but working across the internet
 # This is not really the way to implement the proxy engine
 result=b("pen-proxify pen-export-help pen-tipe -wintype nw pen-eipe", inputstring=PEN_PROMPT)[0]
 
