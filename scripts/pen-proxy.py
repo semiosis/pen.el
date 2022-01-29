@@ -66,6 +66,11 @@ def b(c, inputstring="", timeout=0):
 # Actually, the proxy should forward the entire set of parameters to run remotely
 
 # This is not really the way, although a simpler proxy could be interesting
+# - 2 types of proxies
+#   - One proxy which is essentially just a human proxy
+#   - The other where the engine is supplied
+# - 1 semiotic function proxy
+#   - This is like the pen.el thin-client
 result=b("pen-proxify pen-export-help pen-tipe -wintype nw pen-eipe", inputstring=PEN_PROMPT)[0]
 
 # curl --header "Content-Type: application/json" --request POST --data "{\"fun\": \"pf-tweet-sentiment/1\", \"args\": \"[\\\"I love chocolate\\\"]\"}" http://127.0.0.1:9837/prompt
