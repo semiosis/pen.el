@@ -1758,25 +1758,26 @@
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
-   `(cl-defun ,func-sym ,(append '(&optional) all-var-syms '(&key
-                                                             no-select-result
-                                                             include-prompt
-                                                             no-gen
-                                                             no-select-action
-                                                             prompt-final-edit-human
-                                                             select-only-match
-                                                             variadic-var
-                                                             pretext
-                                                             inject-gen-start
-                                                             continue-default
-                                                             temperature
-                                                             override-prompt
-                                                             force-interactive
-                                                             prompt-hist-id
-                                                             initial-transient
-                                                             final-transient
-                                                             client
-                                                             server))
+   `(cl-defun ,func-sym ,(append '(&optional) all-var-syms
+                                 '(&key
+                                   no-select-result
+                                   include-prompt
+                                   no-gen
+                                   no-select-action
+                                   prompt-final-edit-human
+                                   select-only-match
+                                   variadic-var
+                                   pretext
+                                   inject-gen-start
+                                   continue-default
+                                   temperature
+                                   override-prompt
+                                   force-interactive
+                                   prompt-hist-id
+                                   initial-transient
+                                   final-transient
+                                   client
+                                   server))
       ,doc
       (interactive ,(cons 'list all-iargs))
 
