@@ -70,8 +70,9 @@ def b(c, inputstring="", timeout=0):
 #   - Supply a remote engine parameter, to request that engine
 #     - That could be the human engine
 #       - The remote human may decline, of course
-# - 1 semiotic function proxy
+# - 1 semiotic function proxy mechanism
 #   - Based on the Pen.el thin-client, but working across the internet
+#   - I should extend the thin-client to implement this.
 # This is not really the way to implement the proxy engine
 result=b("pen-proxify pen-export-help pen-tipe -wintype nw pen-eipe", inputstring=PEN_PROMPT)[0]
 
