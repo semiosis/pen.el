@@ -209,6 +209,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
                   (lax-plist-get (text-properties-at (point)) 'PEN_ENGINE)
                   (lax-plist-get (text-properties-at (point)) 'PEN_LM_COMMAND)))
         ("Get value from YAML" :call yaml-get-value-from-this-file :if (major-mode-p 'yaml-mode))
+        ("LSP" :call lsp-mouse-click :if (minor-mode-p lsp-mode))
         ("prose"
          ("Cancel" :call identity-command)
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
