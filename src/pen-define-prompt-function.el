@@ -312,7 +312,15 @@
                         processed-results)
                     (list (message "Try UPDATE=y or debugging")))))))))
 
-(defun pen-run-anonymous-prompt-function ()
+(defun pen-run-anonymous-prompt-function (func-name-slug final-prompt final-lm-command final-model final-engine-whitespace-support
+                                          final-engine final-api-endpoint final-payloads final-query final-counterquery final-logprobs
+                                          pen-approximate-prompt-token-length final-engine-min-tokens final-engine-max-tokens
+                                          final-min-tokens final-max-tokens final-repetition-penalty final-frequency-penalty
+                                          final-presence-penalty final-length-penalty final-min-generated-tokens
+                                          final-max-generated-tokens final-temperature final-mode final-stop-sequence final-stop-sequences
+                                          final-top-p final-top-k final-flags pen-sh-update pen-user-agent trailing-whitespace final-n-completions
+                                          final-engine-min-generated-tokens final-engine-max-generated-tokens collect-from-pos end-pos
+                                          final-n-jobs final-search-threshold final-inject-gen-start)
   (eval
    `(let ((func-name-slug)
           (final-prompt)
