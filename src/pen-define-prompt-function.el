@@ -362,6 +362,7 @@
           (final-n-jobs)
           (final-search-threshold)
           (final-inject-gen-start))
+
       ,(macroexpand `(pen-pfp-data)))))
 
 (defmacro pen-define-prompt-function-pipeline ()
