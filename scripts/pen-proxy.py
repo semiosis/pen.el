@@ -63,7 +63,12 @@ def b(c, inputstring="", timeout=0):
     p.wait()
     return [str(output), p.returncode]
 
+# Actually, the proxy should forward the entire set of parameters to run remotely
+
+# This is not really the way, although a simpler proxy could be interesting
 result=b("pen-proxify pen-export-help pen-tipe -wintype nw pen-eipe", inputstring=PEN_PROMPT)[0]
+
+# curl --header "Content-Type: application/json" --request POST --data "{\"fun\": \"pf-tweet-sentiment/1\", \"args\": \"[\\\"I love chocolate\\\"]\"}" http://127.0.0.1:9837/prompt
 
 cs = [result + PEN_STOP_SEQUENCE]
 
