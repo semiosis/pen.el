@@ -152,7 +152,7 @@ START and END can be in either order."
    ((string-equal "sph" window-type) (pen-e-sph (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
    (t (pen-e-nw (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))))
 
-(defset pen-tm-extra-exports "PEN_PROMPTS_DIR PROMPTS PENEL_DIR PEN_ENGINES_DIR ENGINES PENSIEVE_DIR")
+(defset pen-tm-extra-exports "PEN_PROMPTS_DIR PROMPTS PENEL_DIR PEN_ENGINES_DIR ENGINES PENSIEVE_DIR KHALA_DIR OPENAI_API_EL_DIR")
 
 (defun pen-tm-nw (&optional cmd window-type nw_args input dir)
   "Runs command in a new window/pane"
