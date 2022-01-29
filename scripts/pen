@@ -1177,6 +1177,9 @@ case "$sn" in
 
     penq) {
         show_banner=n
+
+        # Attempting shutdown of Pen.el
+
         if { ! inside-docker-p; } && docker-running-p; then
             set -- -e "(progn (pen-sn \"pen-shutdown\")(kill-emacs))"
             force_shutdown_container=y
