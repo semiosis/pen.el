@@ -4,9 +4,13 @@
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
 PEN_N_COMPLETIONS = os.environ.get("PEN_N_COMPLETIONS") or "2"
 
+import os
+
 from PIL import Image
 # from IPython.display import display
 import torch as th
+
+os.chdir("/root")
 
 from glide_text2im.download import load_checkpoint
 from glide_text2im.model_creation import (
