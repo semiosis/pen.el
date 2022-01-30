@@ -4,9 +4,6 @@
 # Pen
 # Version 2.0, bash
 
-# If mac
-# --env="DISPLAY=host.docker.internal:0"
-
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
 # Invocations:
