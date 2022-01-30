@@ -81,7 +81,7 @@ def show_images(batch: th.Tensor):
     Image.fromarray(reshaped.numpy()).show()
 
 # Sampling parameters
-# prompt = PEN_PROMPT or "A surreal painting of a cat surreptitiously sitting upon strawberry"
+# prompt = PEN_PROMPT or "A surreal painting of a cat and a strawberry"
 # prompt = PEN_PROMPT or "A sitting cat with strawberries for eyes"
 prompt = PEN_PROMPT or "A strawberry behind a cat"
 batch_size = int(PEN_N_COMPLETIONS)
