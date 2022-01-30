@@ -1648,6 +1648,11 @@ HEREDOC
 
     # --user "$(id -u):$(id -g)"
     exec) {
+        if ! inside-docker-p && ! docker-running-p; then
+            echo "Please start Pen.el server first: pen -nw" | hls-red 1>&2
+            exit 1
+        fi
+
         if test "$interactive" = "y"; then
             elisp="$@"
             set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (max-generated-tokens $PEN_MAX_GENERATED_TOKENS) (force-temperature $PEN_TEMPERATURE) (force-stop-sequence $PEN_STOP_SEQUENCE)) $elisp)"
