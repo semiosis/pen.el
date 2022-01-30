@@ -82,7 +82,7 @@ def show_images(batch: th.Tensor):
 
 # Sampling parameters
 prompt = PEN_PROMPT or "a surreal painting of a surreptitious strawberry"
-batch_size = PEN_N_COMPLETIONS
+batch_size = int(PEN_N_COMPLETIONS)
 guidance_scale = 3.0
 
 # Tune this parameter to control the sharpness of 256x256 images.
