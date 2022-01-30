@@ -2,6 +2,7 @@
 # coding: utf-8
 
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
+PEN_N_COMPLETIONS = os.environ.get("PEN_N_COMPLETIONS") or "2"
 
 from PIL import Image
 # from IPython.display import display
@@ -77,7 +78,7 @@ def show_images(batch: th.Tensor):
 
 # Sampling parameters
 prompt = PEN_PROPMT or "a surreal painting of a surreptitious strawberry"
-batch_size = 1
+batch_size = PEN_N_COMPLETIONS
 guidance_scale = 3.0
 
 # Tune this parameter to control the sharpness of 256x256 images.
