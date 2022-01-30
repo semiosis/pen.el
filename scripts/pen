@@ -666,6 +666,9 @@ fi
 
 ensure_pen_running() {
     if ! inside-docker-p && ! docker-running-p; then
+        echo "Please start Pen.el server first: pen -nw" | pen-hls red 1>&2
+        exit 1
+
         echo Starting Pen. Please wait... 1>&2
 
         # Start pen in background and wait, or start and detach when done
