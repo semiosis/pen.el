@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-# Run this line in Colab to install the package if it is
-# not already installed.
-# get_ipython().system('pip install git+https://github.com/openai/glide-text2im')
+PEN_PROMPT = os.environ.get("PEN_PROMPT")
 
 from PIL import Image
 # from IPython.display import display
@@ -78,7 +76,7 @@ def show_images(batch: th.Tensor):
     Image.fromarray(reshaped.numpy()).show()
 
 # Sampling parameters
-prompt = "an oil painting of a corgi"
+prompt = "a surreal painting of a surreptitious strawberry"
 batch_size = 1
 guidance_scale = 3.0
 
