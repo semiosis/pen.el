@@ -73,6 +73,8 @@ def show_images(batch: th.Tensor):
     """ Display a batch of images inline. """
     scaled = ((batch + 1)*127.5).round().clamp(0,255).to(th.uint8).cpu()
     reshaped = scaled.permute(2, 0, 3, 1).reshape([batch.shape[2], -1, 3])
+    # At this stage I need to verify that it's what I want before proceeding
+    # TODO I should make some kind of acceptance dialog
     Image.fromarray(reshaped.numpy()).show()
 
 # Sampling parameters
