@@ -548,3 +548,6 @@ agi iceweasel
 cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf/inspircd.conf
 cp ~/repos/pen-emacsd/pen.el/config/hosts /etc/hosts
 )
+
+# GLIDE
+git+https://github.com/openai/glide-text2im
