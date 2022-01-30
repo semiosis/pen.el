@@ -50,10 +50,12 @@ unset PEN_USE_GUI
 
 drunning=
 docker-running-p() {
+    set -o pipefail
     test "$drunning" = y || test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
     ret="$?"
     if test "$ret" -eq 0; then
         drunning=y
+        :
     else
         false
     fi
@@ -1648,7 +1650,7 @@ HEREDOC
 
     # --user "$(id -u):$(id -g)"
     exec) {
-        if ! inside-docker-p && ! docker-running-p; then
+        if ! inside-docker-p; then
             echo "Please start Pen.el server first: pen -nw" | hls-red 1>&2
             exit 1
         fi
