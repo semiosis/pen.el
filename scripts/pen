@@ -22,9 +22,7 @@ inside-docker-p() {
 }
 
 macos-p() {
-    if [[ $OSTYPE == 'darwin'* ]]; then
-      echo 'macOS'
-    fi
+     [[ $OSTYPE == 'darwin'* ]]
 }
 
 pen_image_tag() {
