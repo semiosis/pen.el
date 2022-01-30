@@ -651,7 +651,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
              (pen-sn "tr '\n' - | slugify" input)
            (pen-sn "slugify" input))))
     (if length
-        (substring slug 0 (- length 1))
+        (pen-snc (pen-cmd "head" "-c" length))
       slug)))
 
 (defun fz-completion-second-of-tuple-annotation-function (s)
