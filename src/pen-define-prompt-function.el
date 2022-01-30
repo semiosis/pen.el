@@ -1433,7 +1433,8 @@
              (if (and (or final-prepend-previous
                           ;; final-train-function
                           )
-                      (f-exists-p lastgenpath))
+                      (f-exists-p lastgenpath)
+                      (not do-pen-update))
                  (concat
                   (awk1 (cat lastgenpath))
                   final-stop-sequence
