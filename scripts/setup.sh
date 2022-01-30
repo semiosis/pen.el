@@ -550,4 +550,4 @@ cp ~/repos/pen-emacsd/pen.el/config/hosts /etc/hosts
 )
 
 # GLIDE
-git+https://github.com/openai/glide-text2im
+pyf "git+https://github.com/openai/glide-text2im"

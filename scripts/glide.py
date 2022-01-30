@@ -1,12 +1,12 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding: utf-8
 
 # Run this line in Colab to install the package if it is
 # not already installed.
-get_ipython().system('pip install git+https://github.com/openai/glide-text2im')
+# get_ipython().system('pip install git+https://github.com/openai/glide-text2im')
 
 from PIL import Image
-from IPython.display import display
+# from IPython.display import display
 import torch as th
 
 from glide_text2im.download import load_checkpoint
@@ -47,11 +47,33 @@ model_up.to(device)
 model_up.load_state_dict(load_checkpoint('upsample', device))
 print('total upsampler parameters', sum(x.numel() for x in model_up.parameters()))
 
+def b(c, inputstring="", timeout=0):
+    """Runs a shell command
+    This function always has stdin and stdout.
+    Don't do anything fancy here with ttys, handling stdin and stdout.
+    If I wan't to use tty programs, then use a ttyize/ttyify script.
+    echo hi | ttyify vim | cat"""
+
+    p = subprocess.Popen(
+        c,
+        shell=True,
+        executable="/bin/sh",
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        close_fds=True,
+    )
+    p.stdin.write(str(inputstring).encode("utf-8"))
+    p.stdin.close()
+    output = p.stdout.read().decode("utf-8")
+    p.wait()
+    return [str(output), p.returncode]
+
 def show_images(batch: th.Tensor):
     """ Display a batch of images inline. """
     scaled = ((batch + 1)*127.5).round().clamp(0,255).to(th.uint8).cpu()
     reshaped = scaled.permute(2, 0, 3, 1).reshape([batch.shape[2], -1, 3])
-    display(Image.fromarray(reshaped.numpy()))
+    Image.fromarray(reshaped.numpy()).show()
 
 # Sampling parameters
 prompt = "an oil painting of a corgi"
