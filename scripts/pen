@@ -1651,7 +1651,7 @@ HEREDOC
     # --user "$(id -u):$(id -g)"
     exec) {
         if ! inside-docker-p; then
-            echo "Please start Pen.el server first: pen -nw" | hls-red 1>&2
+            echo "Please start Pen.el server first: pen -nw" | pen-hls red 1>&2
             exit 1
         fi
 
