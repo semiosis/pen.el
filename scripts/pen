@@ -1536,17 +1536,18 @@ if test "$docker_cmd" = run && docker-running-p && ! inside-docker-p; then
     docker_cmd=exec
 fi
 
-if ! inside-docker-p && ! docker-running-p; then
-    if printf -- "%s\n" "$INSIDE_EMACS" | grep -q comint &>/dev/null; then
-        unbuffer pen &>/dev/null & disown
-    fi
-
-    if test "$docker_cmd" = exec; then
-        set -- -e "$@"
-    fi
-    docker_cmd=run
-    remote_cmd="/root/run.sh"
-fi
+# This auto starts pen.el. Not what I want
+# if ! inside-docker-p && ! docker-running-p; then
+#     if printf -- "%s\n" "$INSIDE_EMACS" | grep -q comint &>/dev/null; then
+#         unbuffer pen &>/dev/null & disown
+#     fi
+# 
+#     if test "$docker_cmd" = exec; then
+#         set -- -e "$@"
+#     fi
+#     docker_cmd=run
+#     remote_cmd="/root/run.sh"
+# fi
 
 case "$docker_cmd" in
     run) {
