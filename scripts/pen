@@ -20,6 +20,10 @@
 
 pen_version=2.0
 
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
 pen_image_tag() {
     if ! inside-docker-p; then
         : "${image:="$(docker image ls | grep "semiosis/pen.el *latest" | cut -d ' ' -f 1):latest"}"
@@ -41,10 +45,6 @@ bn="$sn"
 rp="$(realpath "$bn")"
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
-
-inside-docker-p() {
-    test -f /.dockerenv
-}
 
 unset PEN_USE_GUI
 
