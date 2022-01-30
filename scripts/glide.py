@@ -4,7 +4,7 @@
 import os
 
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
-PEN_N_COMPLETIONS = os.environ.get("PEN_N_COMPLETIONS") or "2"
+PEN_N_COMPLETIONS = os.environ.get("PEN_N_COMPLETIONS") or "1"
 
 from PIL import Image
 # from IPython.display import display
