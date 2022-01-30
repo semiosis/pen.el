@@ -81,7 +81,7 @@ def show_images(batch: th.Tensor):
     Image.fromarray(reshaped.numpy()).show()
 
 # Sampling parameters
-prompt = PEN_PROMPT or "A surreal and surreptitious strawberry in a semiotic drawing."
+prompt = PEN_PROMPT or "A surreal and surreptitious strawberry in a semiotic pencil drawing."
 batch_size = int(PEN_N_COMPLETIONS)
 guidance_scale = 3.0
 
