@@ -1,0 +1,138 @@
+#!/bin/bash
+export TTY
+
+# Internet and netwrok scripts
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+pager() {
+    if is_tty; then
+        pen-xc -i -
+    else
+        cat
+    fi
+}
+
+vc_opt="$1"
+shift
+case "$vc_opt" in
+    getip) {
+        ip="$(timeout 5 dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | awk -F'"' '{ print $2}')"
+
+        # Sometimes the google nameserver is not available
+        test -z "$ip" && ip="$(getip.rkt)"
+        test -z "$ip" && ip="$(curl ifconfig.me 2>/dev/null)"
+        echo "$ip" | pen-xct
+    }
+    ;;
+
+    4|4l) {
+        # gateway-interface could be: $(pen-i wifi)
+        # local_ip="$(ifconfig 2>&1 | pen-aatr -k -r '\n\n' 'sed -z -n /'$(pen-i gateway-interface)'/p | nl' | pen-scrape 'inet addr[^ ]+' | cut -d : -f 2)"
+
+        local_ip="$(ifconfig 2>&1 | pen-aatr -k -r '\n\n' "pen-ugrep $(pen-i gateway-interface) | nl" | pen-scrape 'inet  *[^ ]+' | cut -d ' ' -f 2)"
+        echo "$local_ip" | pen-xct
+    }
+    ;;
+
+    6|6l) {
+        # gateway-interface could be: $(pen-i wifi)
+        local_ip="$(ifconfig 2>&1 | pen-aatr -k -r '\n\n' 'pen-ugrep '$(pen-i gateway-interface)' | nl' | pen-scrape 'inet6 addr: *[^ ]+' | pen-str lf)"
+        echo "$local_ip" | pen-xct
+    }
+    ;;
+
+
+    gwi|gateway-interface) {
+        netstat -rn | grep "^0.0.0.0" | pen-str lf | pen-xct
+    }
+    ;;
+
+    # nmap 192.168.1.0/24
+
+    gw|gateway) {
+        gateway_ip="$(netstat -rn | grep "^0.0.0.0" | pen-str field 2 | grep -v 0.0.0.0 | head -n 1)"
+
+        echo "$gateway_ip" | pen-xct
+    }
+    ;;
+
+    list-computers) {
+        arp-scan --localnet
+        arp -a
+    }
+    ;;
+
+    get-dns) {
+        nmcli dev show | grep DNS | pen-str field 2 | chomp | pen-xc -i
+    }
+    ;;
+
+    dhcp-start) {
+        dhclient -v
+    }
+    ;;
+
+    dhcp-restart) {
+        dhclient -r
+    }
+    ;;
+
+    restart-wifi) {
+        ifconfig $(pen-i wifi) down
+        sleep 1
+        ifconfig $(pen-i wifi) up
+    }
+    ;;
+
+    wifi) {
+        ifconfig -a | grep -oP "^(wlp|wlan)[^ :]+" | head -n 1
+    }
+    ;;
+
+    scan) {
+        iwlist $(pen-i wifi) scan|less
+
+        # iwlist wlan0 scan|less
+    }
+    ;;
+
+    listening) {
+        lsof -i -P -n | grep LISTEN
+    }
+    ;;
+
+    port2pid) {
+        port="$1"
+        lsof -i :$port | sed 1d | pen-str field 2
+    }
+    ;;
+
+    port2name) {
+        i port2pid 8008 | xa ps -ef -q | sed 1d | rev | pen-str field 1 | rev
+    }
+    ;;
+
+    portapps) {
+        nmap -sT localhost | while read line; do
+            lit "$line"
+            if lit "$line" | grep -q -P '^[0-9]'; then
+                port="$(lit "$line" | mcut -d / -f 1)"
+                i port2pid "$port" | sed 1d | pen-str indent 1
+            fi
+        done | less -S
+        # Annotate with what's on the port
+    }
+    ;;
+
+    connected|online) {
+        # Bash
+        : >/dev/tcp/8.8.8.8/53
+    }
+    ;;
+
+    *)
+esac

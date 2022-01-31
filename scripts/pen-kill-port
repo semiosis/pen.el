@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+port="$1"
+
+sn="$(basename "$0")"
+CMD="$(cmd "$@")"
+
+if test -z "$port"; then
+    exit 1
+fi
+
+# OR I can do this! -- the proper way!
+# fuser -k 8080/tcp
+
+pids="$(interactive port2pid "$port" | tr '\n' ' ')"
+
+if test -z "$pids"; then
+    echo "$sn $CMD: program must have already quit" 1>&2
+    exit 0
+fi
+
+kill $pids

@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+is_tty() {
+    [[ -t 1 ]]
+}
+
+if is_tty; then
+    pen-xc -i -n "$@" -
+else
+    cat
+fi

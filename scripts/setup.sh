@@ -558,3 +558,9 @@ agi swi-prolog
 
 # Python
 agi ipython
+
+# dig
+agi dnsutils
+
+# arp
+agi arp-scan

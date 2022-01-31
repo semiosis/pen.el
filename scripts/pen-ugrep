@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# Universal grep -- if it's matched on any line, print everything
+
+pat="$1"
+
+sed -z -n "/$pat/p"
