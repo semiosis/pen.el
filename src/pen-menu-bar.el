@@ -672,16 +672,16 @@
 (defset menu-bar-apps-menu
   (let ((menu (make-sparse-keymap "Applications")))
     (bindings--define-key menu [mi-menu-bar-apostrophe-menu]
-      `(menu-item "Apostrophe" ,menu-bar-apostrophe-menu
+      `(menu-item "🎤 Apostrophe" ,menu-bar-apostrophe-menu
                   :help "Talk 1-on-1 to chatbots"))
     (bindings--define-key menu [mi-menu-bar-mtp-menu]
-      `(menu-item "Mad Tea-Party" ,menu-bar-mtp-menu
+      `(menu-item "🎩Mad Tea-Party" ,menu-bar-mtp-menu
                   :help "Partake in simulated group conversation between chatbots and humans"))
     (bindings--define-key menu [mi-menu-bar-ii-menu]
-      `(menu-item "𝑖i - Imaginary interpreters" ,menu-bar-ii-menu
+      `(menu-item "𝑖i Imaginary interpreters" ,menu-bar-ii-menu
                   :help "Run imaginary interpreters"))
     (bindings--define-key menu [mi-menu-bar-nlsh-menu]
-      `(menu-item "NL·SH - Natural language shell" ,menu-bar-nlsh-menu
+      `(menu-item "NL·SH Natural language shell" ,menu-bar-nlsh-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
       `(menu-item "Chann.el" ,menu-bar-channel-menu
@@ -690,13 +690,13 @@
       `(menu-item "CT - ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
     (bindings--define-key menu [mi-ilambda-repl]
-      '(menu-item "𝑖λ - ilambda REPL" ilambda-repl
+      '(menu-item "𝑖λ ilambda REPL" ilambda-repl
                   :help "Run ilambda functions without coding"))
     ;; (bindings--define-key menu [mi-pen-tm-asciinema-play]
     ;;   '(menu-item "Asciinema Play" pen-tm-asciinema-play
     ;;               :help "Play an asciinema recording"))
     (bindings--define-key menu [mi-menu-bar-melee-menu]
-      `(menu-item "Melee" ,menu-bar-melee-menu
+      `(menu-item "🅯 Melee" ,menu-bar-melee-menu
                   :help "Mount imaginary filesystems"))
     (bindings--define-key menu [mi-menu-bar-lookingglass-menu]
       `(menu-item "🔍 LookingGlass" ,menu-bar-lookingglass-menu
