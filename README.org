@@ -20,7 +20,7 @@ for any model or API.
 
 Some builtin ways to make use of prompting
 functions are:
-- =LookingGlass=, the browser for the imaginary web
+- [[https://semiosis.github.io/posts/demo-of-lookingglass-v1-0i/][=LookingGlass=, the browser for the imaginary web]]
 - =Imaginary Interpreter= - program in any language imaginable, with any libraries imaginable
 - =Apostrophe= - Speak to imagined personalities, from history or from your imagination
 - =PenSieve= - drag and drop, and peer into the imemories of personalities through a file system
