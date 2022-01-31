@@ -105,7 +105,7 @@ function! InsertPrompt(fun, in, ...)
     endfor
 
     let cmd = a:fun . s
-    let s = Chomp(system("penf -u " . cmd, a:in))
+    let s = Chomp(system("pena -fz -u " . cmd, a:in))
 
     " call Insert(s)
     " return ""
