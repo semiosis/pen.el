@@ -31,6 +31,8 @@ functions are:
 - =Melee= - The game of Adversarial Prompting
 - =ESP= - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."
 - vim support ✓
+  - As pen wrapping vim in =cterm=
+  - And as prompt functions and bindings within vim (using =fzf=)
 - ... and a lot more
 
 You can also serve =Pen.el= as a public facing
