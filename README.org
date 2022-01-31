@@ -38,7 +38,7 @@ functions are:
   - And as prompt functions and bindings within vim (using fzf)
 - Proxies
 - Web-facing point-and-click UI
-- Real interpreters inside complex ones
+- Real interpreters (e.g. iPython) inside complex ones
 - Bash interop
 - ... and a lot more
 
