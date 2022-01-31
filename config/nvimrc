@@ -1368,7 +1368,7 @@ function! VisualPrompt(fun, ...)
     endfor
 
     let cmd = a:fun . s
-    let s = system("pena -fz -u " . cmd, @p)
+    let s = system("pena -fz --pool -u " . cmd, @p)
     let @p = s
 
     " paste from p register
@@ -1400,7 +1400,7 @@ function! InsertPrompt(fun, in, ...)
 
     " In order for this to work, I need to put each generation into a one-liner
     " One-linerise the json
-    let s = Chomp(system("pena -fz -u " . cmd, a:in))
+    let s = Chomp(system("pena -fz --pool -u " . cmd, a:in))
 
     " call Insert(s)
     " return ""
