@@ -102,7 +102,6 @@ proxy_lm_complete() {
 if test -n "$PEN_PROXY"; then
     json_results="$(proxy_lm_complete)"
 
-    notify-send "Not implemented"
     exit
 
     # The proxy system must be able to send back all results,
