@@ -689,7 +689,7 @@
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
       `(menu-item "💻 ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
-    (bindings--define-key menu [mi-ilambda-repl]
+    (bindings--define-key menu [mi-ielm]
       '(menu-item "𝑖λ IELM (elisp with ilambda)" ielm
                   :help "Work with ilambda functions and macros"))
     (bindings--define-key menu [mi-ilambda-repl]
