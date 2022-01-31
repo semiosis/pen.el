@@ -712,6 +712,12 @@
 
 (defset menu-bar-terminals-menu
   (let ((menu (make-sparse-keymap "Terminals")))
+    (bindings--define-key menu [mi-menu-bar-apostrophe-menu]
+      `(menu-item "Apostrophe" ,menu-bar-apostrophe-menu
+                  :help "Talk 1-on-1 to chatbots"))
+    (bindings--define-key menu [mi-menu-bar-mtp-menu]
+      `(menu-item "Mad Tea-Party" ,menu-bar-mtp-menu
+                  :help "Partake in simulated group conversation between chatbots and humans"))
     (bindings--define-key menu [mi-menu-bar-ii-menu]
       `(menu-item "𝑖i - Imaginary interpreters" ,menu-bar-ii-menu
                   :help "Run imaginary interpreters"))
@@ -896,8 +902,8 @@
       (bindings--define-key global-map [menu-bar terminals]
         (cons "Terminals" menu-bar-terminals-menu))
 
-      (bindings--define-key global-map [menu-bar chatbots]
-        (cons "Chatbots" menu-bar-chatbots-menu))
+      ;; (bindings--define-key global-map [menu-bar chatbots]
+      ;;   (cons "Chatbots" menu-bar-chatbots-menu))
 
       ;; (bindings--define-key global-map [menu-bar esp]
       ;;   (cons "ESP" menu-bar-esp-menu))
