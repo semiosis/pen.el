@@ -681,7 +681,7 @@
       `(menu-item "𝑖i Imaginary interpreters" ,menu-bar-ii-menu
                   :help "Run imaginary interpreters"))
     (bindings--define-key menu [mi-menu-bar-nlsh-menu]
-      `(menu-item "NL·SH Natural language shell" ,menu-bar-nlsh-menu
+      `(menu-item "🗣️  Natural language shell" ,menu-bar-nlsh-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
       `(menu-item "👻 Chann.el" ,menu-bar-channel-menu
