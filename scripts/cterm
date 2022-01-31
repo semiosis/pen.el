@@ -7,6 +7,16 @@ export TTY
 # Examples:
 # ct vim /
 
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(cat | pen-tf txt)"
+fi
+
+exec <&1
+
 sn="$(basename "$0")"
 
 cterm-logo 1>&2
@@ -90,6 +100,10 @@ export PEN_USER
 # So use cli args instead
 
 bufname="cterm-$(printf -- "%s " "$CMD" | slugify | cut -c 1-30 | sed -e 's/^-//' -e 's/-$//')"
+
+if test -n "$input_fp"; then
+    CMD="cat $(cmd-nice-posix "$input_fp") | $CMD"
+fi
 
 # This runs in the docker to the host
 # The "$@" are unneccesary because of CMD exported
