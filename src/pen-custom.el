@@ -347,7 +347,8 @@ to switch between two values."
          ;; set function
 	       (set (or (get symbol 'custom-set) 'set-default))
 	       ;; (value (get symbol 'backup-value))
-         (value (list (fz (widget-get (car (widget-get widget :children)) :options))))
+         (value (list (fz (widget-get (car (widget-get widget :children)) :options)
+                          nil nil (concat (str symbol) ": "))))
 	       (comment-widget (widget-get widget :comment-widget))
 	       (comment (widget-value comment-widget)))
     (if value
