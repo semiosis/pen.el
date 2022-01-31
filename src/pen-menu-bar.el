@@ -747,7 +747,7 @@
                   :help "When a human is prompted, it will appear in the hidden terminal"))
     (bindings--define-key menu [mi-menu-bar-khala-menu]
       `(menu-item "Khala" ,menu-bar-khala-menu
-                  :help "Start http server"))
+                  :help "Khala is an http server serving Pen.el endpoints"))
     (bindings--define-key menu [mi-menu-bar-pensieve-menu]
       `(menu-item "PenSieve" ,menu-bar-pensieve-menu
                   :help "Mount imaginary filesystems"))
