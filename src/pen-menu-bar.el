@@ -684,7 +684,7 @@
       `(menu-item "NL·SH Natural language shell" ,menu-bar-nlsh-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
-      `(menu-item "Chann.el" ,menu-bar-channel-menu
+      `(menu-item "👻 Chann.el" ,menu-bar-channel-menu
                   :help "Channel personalities to control your computer"))
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
       `(menu-item "CT - ComplexTerm" ,menu-bar-cterm-menu
