@@ -88,8 +88,6 @@ export PEN_N_JOBS
 : "${PEN_N_CONCURRENT_JOBS:="$PEN_N_JOBS"}"
 export PEN_N_CONCURRENT_JOBS
 
-# All environment variables must exist, even if empty, or jq returns no output
-
 if test -n "$PEN_PROXY"; then
     proxy_envs="$(pen-proxy-generate-envs | pen-tv)"
 
