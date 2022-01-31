@@ -496,6 +496,9 @@
     (bindings--define-key menu [mi-prolog]
       '(menu-item "Start a real prolgo interpreter" swipl
                   :help "Start SWI Prolog"))
+    (bindings--define-key menu [mi-ipython]
+      '(menu-item "Start a real iPython interpreter" ipython
+                  :help "Start iPython"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
