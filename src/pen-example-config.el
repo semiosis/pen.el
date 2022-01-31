@@ -457,7 +457,7 @@
   (pen-dk-easy "w" 'pen-transform)
   (pen-dk-easy "^" 'pen-transform)
   (pen-dk-easy "x" 'pen-diagnostics-show-context)
-  (pen-dk-easy "0" 'kill-buffer-and-window)
+  ;; (pen-dk-easy "0" 'kill-buffer-and-window)
   (pen-dk-easy "r" 'pf-transpile/3)
   (pen-dk-easy "L" 'pf-translate/3)
   (pen-dk-easy "u" (dff (pen-etv (pf-transpile/3 nil nil (sor pen-fav-programming-language)))))
