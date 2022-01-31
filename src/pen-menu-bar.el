@@ -334,6 +334,9 @@
 
 (defset menu-bar-configure-menu
   (let ((menu (make-sparse-keymap "Configure")))
+    (bindings--define-key menu [mi-pen-go-to-vim-config]
+      '(menu-item "Edit vim configuration" pen-go-to-vim-config
+                  :help "Edit the vim config"))
     (bindings--define-key menu [mi-pen-edit-conf]
       '(menu-item "Edit Pen.el configuration" pen-edit-conf
                   :help "Edit the pen.yaml file"))
