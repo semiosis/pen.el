@@ -1362,8 +1362,7 @@ endfunction
 function! VisualPrompt(fun, ...)
     let args = a:000
     let s = ""
-    " skip the first of the variadic args because it's the input
-    for arg in args[1:]
+    for arg in args
         let s = s . ' "' . arg . '"'
     endfor
 
