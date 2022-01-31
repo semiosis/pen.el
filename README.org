@@ -18,6 +18,8 @@ allows you to send media to multi-modal
 models. You may compose prompting functions
 for any model or API.
 
+[[./docs/images/menu.png]]
+
 Some builtin ways to make use of prompting
 functions are:
 - [[https://semiosis.github.io/posts/demo-of-lookingglass-v1-0i/][LookingGlass, the browser for the imaginary web]]
@@ -36,6 +38,7 @@ functions are:
   - And as prompt functions and bindings within vim (using fzf)
 - Proxies
 - Web-facing point-and-click UI
+- Real interpreters inside complex ones
 - Bash interop
 - ... and a lot more
 
