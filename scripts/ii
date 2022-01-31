@@ -155,7 +155,7 @@ prompt_the_lm() {
 
     # cmd penf -u "$fun" "$memory" "$user_input" | pen-tv &>/dev/null
 
-    penf -u --pool "$fun" "$memory" "$user_input"  "${extra_args[@]}"
+    pena -fz -u --pool "$fun" "$memory" "$user_input"  "${extra_args[@]}"
 }
 
 p "${kickstarter} "
