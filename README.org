@@ -26,6 +26,7 @@ functions are:
 - [[https://semiosis.github.io/pensieve/][PenSieve - drag and drop, and peer into the imemories of personalities through a file system]]
 - [[https://semiosis.github.io/channel/][Chann.el - Channel personalites from the matrix to control your computer]]
 - MadTeaParty - Run a chatbot populated social simulation, and take on the role of characters Avatar-style without their knowledge
+- [[https://semiosis.github.io/nlsh/][NL·SH - Generate shell commands using natural language]]
 - [[https://semiosis.github.io/paracosm/][Paracosm - Mind-mapping with artificial inspiration]]
 - [[https://semiosis.github.io/minority-report/][M♡ - Simulate Minority-Reports for your terminal]]
 - [[https://semiosis.github.io/melee/][Melee - The game of Adversarial Prompting]]
