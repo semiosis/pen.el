@@ -420,7 +420,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -fz) {
-        fuzzy=y
+        fuzzy="pen-tm fzf"
+        output_json=n
         shift
     }
     ;;
@@ -1207,7 +1208,7 @@ case "$sn" in
 
     penz) {
         show_banner=n
-        fuzzy=y
+        fuzzy=pen-fzf
         set -- -e '(pen-list2str pen-prompt-functions)'
     }
     ;;
@@ -1704,8 +1705,8 @@ pen_eval() {
 
 # pen-pl "$shcode" | pen-tv &>/dev/null
 
-if test "$fuzzy" = "y"; then
-    pen_eval "$shcode" | pen-fzf
+if test -n "$fuzzy"; then
+    pen_eval "$shcode" | eval "$fuzzy"
 else
     pen_eval "$shcode"
 fi
