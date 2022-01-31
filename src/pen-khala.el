@@ -2,4 +2,8 @@
 
 ;; An HTTP server for prompting
 
+(defun khala-start ()
+  (interactive)
+  (pen-snc "khala"))
+
 (provide 'pen-khala)
