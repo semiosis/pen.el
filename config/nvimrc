@@ -105,6 +105,9 @@ function! InsertPrompt(fun, in, ...)
     endfor
 
     let cmd = a:fun . s
+
+    " In order for this to work, I need to put each generation into a one-liner
+    " One-linerise the json
     let s = Chomp(system("pena -fz -u " . cmd, a:in))
 
     " call Insert(s)

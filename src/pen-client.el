@@ -139,6 +139,12 @@
       (setq l (car l)))
   (mapconcat 'identity (mapcar 'str l) "\n"))
 
+(defun pen-list2str-oneliners (&rest l)
+  "join the string representation of elements of a given list into a single string with newline delimiters"
+  (if (cl-equalp 1 (length l))
+      (setq l (car l)))
+  (pen-list2str (mapcar 'pen-onelineify l)))
+
 (defun pen-var-value-maybe (sym)
   (cond
    ((symbolp sym) (if (variable-p sym)
