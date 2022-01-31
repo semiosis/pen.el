@@ -1670,7 +1670,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
       (setq window_type "spv"))
 
   (let ((line-and-col (concat-string "+" (line-number-at-pos) ":" (current-column))))
-    (if (and buffer-file-name (not (string-match "\\[*Org Src" (buffer-name))))
+    (if (and buffer-file-name
+             (not (string-match "\\[*Org Src" (buffer-name))))
         (progn
           (save-buffer)
           (shell-command (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
