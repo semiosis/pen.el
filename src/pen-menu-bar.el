@@ -662,6 +662,16 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-khala-menu
+  (let ((menu (make-sparse-keymap "Khala")))
+    (bindings--define-key menu [mi-khala-mount-dir]
+      '(menu-item "Khala" khala-start
+                  :help "Start the Khala web server. Only its light was able to bind our people-to give us unity."))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-pensieve-menu
   (let ((menu (make-sparse-keymap "PenSieve")))
     (bindings--define-key menu [mi-pensieve-mount-dir]
