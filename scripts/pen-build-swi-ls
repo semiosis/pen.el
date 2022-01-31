@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+# sudo apt-add-repository ppa:swi-prolog/stable
+# sudo apt-get update
+# sudo apt-get install swi-prolog
+
+prolog-pack-install lsp_server
+
+## For compiling
+# agi libodbc1
+# agi unixodbc
+# 
+# # sudo apt install qt5-default
+# 
+# sudo apt-get install \
+#         build-essential cmake ninja-build pkg-config \
+#         ncurses-dev libreadline-dev libedit-dev \
+#         libgoogle-perftools-dev \
+#         libunwind-dev \
+#         libgmp-dev \
+#         libssl-dev \
+#         unixodbc-dev \
+#         zlib1g-dev libarchive-dev \
+#         libossp-uuid-dev \
+#         libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
+#         libxpm-dev libxt-dev \
+#         libdb-dev \
+#         libpcre3-dev \
+#         libyaml-dev \
+#         default-jdk junit4
