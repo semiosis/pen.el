@@ -30,7 +30,7 @@ functions are:
 - =M♡= - Simulate Minority-Reports for your terminal
 - =Melee= - The game of Adversarial Prompting
 - =ESP= - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."
-- vim support ✓
+- [[https://semiosis.github.io/posts/pen-el-for-vim-and-the-bash-interop-selecting-candidates-with-fzf/][vim support ✓]]
   - As pen wrapping vim with =cterm=
   - And as prompt functions and bindings within vim (using =fzf=)
 - ... and a lot more
