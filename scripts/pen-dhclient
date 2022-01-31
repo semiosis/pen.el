@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+is_tty() { [ -t 1 ]; }
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+if is_stdout_pipe; then
+    echo "can't use pipe"
+    exit
+fi
+
+/usr/sbin/dhclient "$@"

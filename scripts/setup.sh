@@ -564,3 +564,6 @@ agi dnsutils
 
 # arp
 agi arp-scan
+
+dhcp-client
+
