@@ -23,16 +23,19 @@ functions are:
 - [[https://semiosis.github.io/posts/demo-of-lookingglass-v1-0i/][=LookingGlass=, the browser for the imaginary web]]
 - [[https://semiosis.github.io/ii/][=Imaginary Interpreter= - program in any language imaginable, with any libraries imaginable]]
 - [[https://semiosis.github.io/apostrophe/][=Apostrophe= - Speak to imagined personalities, from history or from your imagination]]
-- =PenSieve= - drag and drop, and peer into the imemories of personalities through a file system
-- =Chann.el= - Channel personalites from the matrix to control your computer
+- [[https://semiosis.github.io/pensieve/][=PenSieve= - drag and drop, and peer into the imemories of personalities through a file system]]
+- [[https://semiosis.github.io/channel/][=Chann.el= - Channel personalites from the matrix to control your computer]]
 - =MadTeaParty= - Run a chatbot populated social simulation, and take on the role of characters Avatar-style without their knowledge
-- =Paracosm= - Mind-mapping with artificial inspiration
-- =M♡= - Simulate Minority-Reports for your terminal
-- =Melee= - The game of Adversarial Prompting
-- =ESP= - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."
+- [[https://semiosis.github.io/paracosm/][=Paracosm= - Mind-mapping with artificial inspiration]]
+- [[https://semiosis.github.io/minority-report/][=M♡= - Simulate Minority-Reports for your terminal]]
+- [[https://semiosis.github.io/melee/][=Melee= - The game of Adversarial Prompting]]
+- [[https://semiosis.github.io/esp/][=ESP= - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."]]
 - [[https://semiosis.github.io/posts/pen-el-for-vim-and-the-bash-interop-selecting-candidates-with-fzf/][vim support ✓]]
-  - As pen wrapping vim with =cterm=
+  - [[https://semiosis.github.io/cterm/As pen wrapping vim with =cterm=]]
   - And as prompt functions and bindings within vim (using =fzf=)
+- Proxies
+- Web-facing point-and-click UI
+- Bash interop
 - ... and a lot more
 
 You can also serve =Pen.el= as a public facing
