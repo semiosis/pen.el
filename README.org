@@ -45,7 +45,7 @@ running as a proxy, where you may prompt other
 loop with the effect of decentralising language models and decentralising truth.
 
 Some behind-the-scenes technologies also included are:
-- =Inkw.el= - Intermediate Knowledge in emacs; A DSL for encoding the provenance of text.
+- [[https://semiosis.github.io/ink/][Inkw.el - Intermediate Knowledge in emacs; A DSL for encoding the provenance of text.]]
 - =Lalia= - A language of stories (multi-modal prompt chains) based on =Inkw.el=
 
 =Pen.el= also facilitates the creation,
