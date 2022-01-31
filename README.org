@@ -276,6 +276,9 @@ underway.
 *** Talking to a Poinsettia plant
 [[./docs/images/poinsettia.png]]
 
+*** Pen.el in a web browser, terminal and a GUI
+[[./docs/images/pen-term-browser-gui.png]]
+
 ** Mission and Goals
 Pen.el aims to be the best tool for prompt engineering.
 
