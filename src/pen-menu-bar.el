@@ -696,7 +696,7 @@
     ;;   '(menu-item "Asciinema Play" pen-tm-asciinema-play
     ;;               :help "Play an asciinema recording"))
     (bindings--define-key menu [mi-menu-bar-melee-menu]
-      `(menu-item "🅯 Melee" ,menu-bar-melee-menu
+      `(menu-item "🍓 Melee" ,menu-bar-melee-menu
                   :help "Mount imaginary filesystems"))
     (bindings--define-key menu [mi-menu-bar-lookingglass-menu]
       `(menu-item "🔍 LookingGlass" ,menu-bar-lookingglass-menu
