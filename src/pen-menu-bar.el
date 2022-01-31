@@ -690,7 +690,10 @@
       `(menu-item "💻 ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
     (bindings--define-key menu [mi-ilambda-repl]
-      '(menu-item "𝑖λ ilambda REPL" ilambda-repl
+      '(menu-item "𝑖λ IELM (elisp with ilambda)" ielm
+                  :help "Work with ilambda functions and macros"))
+    (bindings--define-key menu [mi-ilambda-repl]
+      '(menu-item "𝑖λ quick ilambda REPL" ilambda-repl
                   :help "Run ilambda functions without coding"))
     ;; (bindings--define-key menu [mi-pen-tm-asciinema-play]
     ;;   '(menu-item "Asciinema Play" pen-tm-asciinema-play
