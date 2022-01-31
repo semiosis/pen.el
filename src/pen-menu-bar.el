@@ -745,6 +745,9 @@
     (bindings--define-key menu [mi-pen-start-pet-in-hidden-terminal]
       '(menu-item "Start pet in hidden human terminal (nice)" pen-start-pet-in-hidden-terminal
                   :help "When a human is prompted, it will appear in the hidden terminal"))
+    (bindings--define-key menu [mi-menu-bar-khala-menu]
+      `(menu-item "Khala" ,menu-bar-khala-menu
+                  :help "Start http server"))
     (bindings--define-key menu [mi-menu-bar-pensieve-menu]
       `(menu-item "PenSieve" ,menu-bar-pensieve-menu
                   :help "Mount imaginary filesystems"))
