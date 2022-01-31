@@ -95,7 +95,7 @@ fi
 proxy_lm_complete() {
     proxy_envs="$(pen-proxy-generate-envs)"
 
-    curl --header "Content-Type: application/json" --request POST --data "$proxy_envs" http://127.0.0.1:9837/lm-complete
+    curl --header "Content-Type: application/json" --request POST --data "$proxy_envs" "http://$PEN_PROXY/lm-complete"
     return 0
 }
 
