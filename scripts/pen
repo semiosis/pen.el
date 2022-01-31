@@ -419,6 +419,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -fz) {
+        fuzzy=y
+        shift
+    }
+    ;;
+
     -json|-j) {
         output_json=y
         shift
@@ -1699,7 +1705,7 @@ pen_eval() {
 # pen-pl "$shcode" | pen-tv &>/dev/null
 
 if test "$fuzzy" = "y"; then
-    pen_eval "$shcode" | fzf
+    pen_eval "$shcode" | pen-fzf
 else
     pen_eval "$shcode"
 fi
