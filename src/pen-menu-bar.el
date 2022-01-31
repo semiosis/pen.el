@@ -716,16 +716,16 @@
       `(menu-item "𝑖i - Imaginary interpreters" ,menu-bar-ii-menu
                   :help "Run imaginary interpreters"))
     (bindings--define-key menu [mi-menu-bar-nlsh-menu]
-      `(menu-item "Natural language shell" ,menu-bar-nlsh-menu
+      `(menu-item "NL·SH - Natural language shell" ,menu-bar-nlsh-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
       `(menu-item "Chann.el" ,menu-bar-channel-menu
                   :help "Channel personalities to control your computer"))
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
-      `(menu-item "ComplexTerm" ,menu-bar-cterm-menu
+      `(menu-item "CT - ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
     (bindings--define-key menu [mi-ilambda-repl]
-      '(menu-item "ilambda REPL" ilambda-repl
+      '(menu-item "𝑖λ - ilambda REPL" ilambda-repl
                   :help "Run ilambda functions without coding"))
     (bindings--define-key menu [mi-pen-tm-asciinema-play]
       '(menu-item "Asciinema Play" pen-tm-asciinema-play
