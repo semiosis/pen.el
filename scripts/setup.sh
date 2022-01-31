@@ -554,3 +554,4 @@ pyf "git+https://github.com/openai/glide-text2im"
 
 # Prolog
 agi swi-prolog
+# prolog-pack-install lsp_server
