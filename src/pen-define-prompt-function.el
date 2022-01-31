@@ -32,6 +32,7 @@
           ;; The prompt loses unicode here. I think I need to convert to base64 maybe
           ;; And if I do, put it just outside pen-encode-string
           `(
+            ("PEN_PROXY" . ,final-proxy)
             ("PEN_PROMPT_FUNCTION" . ,func-name-slug)
             ("PEN_PROMPT" .
              ;; Sort this out later
@@ -343,6 +344,11 @@
            (pen-var-value-maybe 'do-pen-batch))
 
           (final-expressions)
+
+          (final-proxy
+           (or (pen-var-value-maybe 'proxy)
+               pen-proxy
+               ,proxy))
 
           (final-path
            (let ((fpath
@@ -1777,6 +1783,7 @@
                                    prompt-hist-id
                                    initial-transient
                                    final-transient
+                                   proxy
                                    client
                                    server))
       ,doc
@@ -1822,6 +1829,7 @@
                      :inject-gen-start inject-gen-start
                      :temperature temperature
                      :override-prompt override-prompt
+                     :proxy proxy
                      :force-interactive is-interactive
                      ;; inert for client
                      ;; client
@@ -1891,6 +1899,7 @@
 
         (requirements (pen-vector2list (ht-get yaml-ht "requirements")))
 
+        (proxy (ht-get yaml-ht "proxy"))
         (logprobs (ht-get yaml-ht "logprobs"))
         (force-logprobs (ht-get yaml-ht "force-logprobs"))
 

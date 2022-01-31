@@ -1,0 +1,100 @@
+#!/bin/bash
+export TTY
+
+# Don't use all these environment variables
+# "PEN_API_ENDPOINT": env.PEN_API_ENDPOINT // empty,
+# "PEN_N_JOBS": env.PEN_N_JOBS // empty,
+# "PEN_N_CONCURRENT_JOBS": env.PEN_N_CONCURRENT_JOBS // empty,
+
+# All environment variables must exist, even if empty, or jq returns no output
+
+: "${PEN_USER_AGENT:=""}"
+: "${PEN_MIN_TOKENS:=""}"
+: "${PEN_MAX_TOKENS:=""}"
+: "${PEN_MIN_GENERATED_TOKENS:=""}"
+: "${PEN_MAX_GENERATED_TOKENS:=""}"
+: "${PEN_APPROXIMATE_PROMPT_LENGTH:=""}"
+: "${PEN_ENGINE_MIN_TOKENS:=""}"
+: "${PEN_ENGINE_MAX_TOKENS:=""}"
+: "${PEN_ENGINE_MAX_GENERATED_TOKENS:=""}"
+: "${PEN_TEMPERATURE:=""}"
+: "${PEN_TOP_P:=""}"
+: "${PEN_TOP_K:=""}"
+: "${PEN_PROMPT:=""}"
+: "${PEN_PAYLOADS:=""}"
+: "${PEN_FLAGS:=""}"
+: "${PEN_STOP_SEQUENCE:=""}"
+: "${PEN_STOP_SEQUENCES:=""}"
+: "${PEN_N_COMPLETIONS:=""}"
+: "${PEN_ENGINE_MAX_N_COMPLETIONS:=""}"
+: "${PEN_COLLECT_FROM_POS:=""}"
+: "${PEN_END_POS:=""}"
+: "${PEN_SEARCH_THRESHOLD:=""}"
+: "${PEN_TRAILING_WHITESPACE:=""}"
+: "${PEN_MODE:=""}"
+: "${PEN_GEN_UUID:=""}"
+: "${PEN_GEN_TIME:=""}"
+: "${PEN_GEN_DATE:=""}"
+: "${PEN_GEN_DIR:=""}"
+
+export PEN_USER_AGENT
+export PEN_MIN_TOKENS
+export PEN_MAX_TOKENS
+export PEN_MIN_GENERATED_TOKENS
+export PEN_MAX_GENERATED_TOKENS
+export PEN_APPROXIMATE_PROMPT_LENGTH
+export PEN_ENGINE_MIN_TOKENS
+export PEN_ENGINE_MAX_TOKENS
+export PEN_ENGINE_MAX_GENERATED_TOKENS
+export PEN_TEMPERATURE
+export PEN_TOP_P
+export PEN_TOP_K
+export PEN_PROMPT
+export PEN_PAYLOADS
+export PEN_FLAGS
+export PEN_STOP_SEQUENCE
+export PEN_STOP_SEQUENCES
+export PEN_N_COMPLETIONS
+export PEN_ENGINE_MAX_N_COMPLETIONS
+export PEN_COLLECT_FROM_POS
+export PEN_END_POS
+export PEN_SEARCH_THRESHOLD
+export PEN_TRAILING_WHITESPACE
+export PEN_MODE
+export PEN_GEN_UUID
+export PEN_GEN_TIME
+export PEN_GEN_DATE
+export PEN_GEN_DIR
+
+proxy_envs="$(jq -ne '{
+"PEN_USER_AGENT":( env.PEN_USER_AGENT // empty ),
+"PEN_MIN_TOKENS":( env.PEN_MIN_TOKENS // empty ),
+"PEN_MAX_TOKENS":( env.PEN_MAX_TOKENS // empty ),
+"PEN_MIN_GENERATED_TOKENS":( env.PEN_MIN_GENERATED_TOKENS // empty ),
+"PEN_MAX_GENERATED_TOKENS":( env.PEN_MAX_GENERATED_TOKENS // empty ),
+"PEN_APPROXIMATE_PROMPT_LENGTH":( env.PEN_APPROXIMATE_PROMPT_LENGTH // empty ),
+"PEN_ENGINE_MIN_TOKENS":( env.PEN_ENGINE_MIN_TOKENS // empty ),
+"PEN_ENGINE_MAX_TOKENS":( env.PEN_ENGINE_MAX_TOKENS // empty ),
+"PEN_ENGINE_MAX_GENERATED_TOKENS":( env.PEN_ENGINE_MAX_GENERATED_TOKENS // empty ),
+"PEN_TEMPERATURE":( env.PEN_TEMPERATURE // empty ),
+"PEN_TOP_P":( env.PEN_TOP_P // empty ),
+"PEN_TOP_K":( env.PEN_TOP_K // empty ),
+"PEN_PROMPT":( env.PEN_PROMPT // empty ),
+"PEN_PAYLOADS":( env.PEN_PAYLOADS // empty ),
+"PEN_FLAGS":( env.PEN_FLAGS // empty ),
+"PEN_STOP_SEQUENCE":( env.PEN_STOP_SEQUENCE // empty ),
+"PEN_STOP_SEQUENCES":( env.PEN_STOP_SEQUENCES // empty ),
+"PEN_N_COMPLETIONS":( env.PEN_N_COMPLETIONS // empty ),
+"PEN_ENGINE_MAX_N_COMPLETIONS":( env.PEN_ENGINE_MAX_N_COMPLETIONS // empty ),
+"PEN_COLLECT_FROM_POS":( env.PEN_COLLECT_FROM_POS // empty ),
+"PEN_END_POS":( env.PEN_END_POS // empty ),
+"PEN_SEARCH_THRESHOLD":( env.PEN_SEARCH_THRESHOLD // empty ),
+"PEN_TRAILING_WHITESPACE":( env.PEN_TRAILING_WHITESPACE // empty ),
+"PEN_MODE":( env.PEN_MODE // empty ),
+"PEN_GEN_UUID":( env.PEN_GEN_UUID // empty ),
+"PEN_GEN_TIME":( env.PEN_GEN_TIME // empty ),
+"PEN_GEN_DATE":( env.PEN_GEN_DATE // empty ),
+"PEN_GEN_DIR":( env.PEN_GEN_DIR // empty ),
+}')"
+
+printf -- "%s" "$proxy_envs"

@@ -207,6 +207,7 @@
                                 prompt-hist-id
                                 inject-gen-start
                                 override-prompt
+                                proxy
                                 force-interactive
                                 ;; inert for client
                                 client
@@ -250,6 +251,7 @@
                            :prompt-hist-id prompt-hist-id
                            :inject-gen-start inject-gen-start
                            :override-prompt override-prompt
+                           :proxy proxy
                            :force-interactive is-interactive
                            ;; inert for client
                            ;; client
