@@ -2,7 +2,7 @@
   "Example: localhost:9707"
   :type 'string
   :group 'pen
-  :options (ht-keys pen-engines)
+  ;; :options (ht-keys pen-engines)
   :set (lambda (_sym value)
          (set _sym value))
   :get (lambda (_sym)
