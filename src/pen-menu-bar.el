@@ -692,9 +692,9 @@
     (bindings--define-key menu [mi-ilambda-repl]
       '(menu-item "𝑖λ - ilambda REPL" ilambda-repl
                   :help "Run ilambda functions without coding"))
-    (bindings--define-key menu [mi-pen-tm-asciinema-play]
-      '(menu-item "Asciinema Play" pen-tm-asciinema-play
-                  :help "Play an asciinema recording"))
+    ;; (bindings--define-key menu [mi-pen-tm-asciinema-play]
+    ;;   '(menu-item "Asciinema Play" pen-tm-asciinema-play
+    ;;               :help "Play an asciinema recording"))
     (bindings--define-key menu [mi-menu-bar-melee-menu]
       `(menu-item "Melee" ,menu-bar-melee-menu
                   :help "Mount imaginary filesystems"))
