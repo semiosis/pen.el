@@ -569,6 +569,9 @@
 
 (defset menu-bar-prompting-menu
   (let ((menu (make-sparse-keymap "Prompting")))
+    (bindings--define-key menu [mi-pen-run-prompt-function]
+      '(menu-item "Run prompt function" pen-run-prompt-function
+                  :help "Run a prompt function interactively"))
     (bindings--define-key menu [mi-pen-diagnostics-show-context]
       '(menu-item "Diagnostics" pen-diagnostics-show-context
                   :help "Show details of prompt function execution"))
@@ -766,6 +769,9 @@
 
 (defset menu-bar-common-menu
   (let ((menu (make-sparse-keymap "Common")))
+    (bindings--define-key menu [mi-kill-buffer-and-window]
+      '(menu-item "Kill buffer and window" kill-buffer-and-window
+                  :help "Basic emacs command `kill-buffer-and-window`"))
     (bindings--define-key menu [mi-pen-define-general-knowledge]
       '(menu-item "Define word" pen-define-general-knowledge
                   :help "Define word under the cursor (topic: general knowledge)"))
