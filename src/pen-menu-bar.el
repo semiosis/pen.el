@@ -491,6 +491,16 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-real-menu
+  (let ((menu (make-sparse-keymap "Real Interpreter")))
+    (bindings--define-key menu [mi-prolog]
+      '(menu-item "Start a real prolgo interpreter" swipl
+                  :help "Start SWI Prolog"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-nlsh-menu
   (let ((menu (make-sparse-keymap "Natural language shell")))
     (bindings--define-key menu [mi-nlsh-os]
