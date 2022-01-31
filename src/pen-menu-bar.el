@@ -702,7 +702,7 @@
       `(menu-item "🔍 LookingGlass" ,menu-bar-lookingglass-menu
                   :help "Visit imaginary websites"))
     (bindings--define-key menu [mi-menu-bar-paracosm-menu]
-      `(menu-item "Paracosm" ,menu-bar-paracosm-menu
+      `(menu-item "🧠Paracosm" ,menu-bar-paracosm-menu
                   :help "AI-assisted mind-mapping"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
