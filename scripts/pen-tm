@@ -3485,6 +3485,12 @@ case "$f" in
     }
     ;;
 
+    fzfh) {
+        pen-tm -S -sout sph -args -noerror "fzf" "$@" | cat
+        exit $?
+    }
+    ;;
+
     mfz|fzf) {
         pen-tm -S -sout sps -args -noerror "$f" "$@" | cat
         exit $?

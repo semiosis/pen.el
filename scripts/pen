@@ -420,7 +420,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -fz) {
-        fuzzy="pen-tm fzf"
+        fuzzy="pen-tm fzfh"
         output_json=n
         shift
     }
