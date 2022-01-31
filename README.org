@@ -11,7 +11,7 @@ and in a variety of configurable ways.
 Using =Pen.el=, you can centralise all of your
 prompting tasks. That includes any NLP task for
 text or code, describing images (=AlephAlpha=)
-and imagining images (=DALL-E=/=Glide=). Audio and
+and imagining images (=DALL-E=/[[https://semiosis.github.io/posts/pen-el-with-openai-glide-for-generating-images-from-text/][Glide]]). Audio and
 video are also possible -- keep an eye out for
 =VideoGPT= in the future. The payload system
 allows you to send media to multi-modal
