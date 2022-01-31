@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+test -d "khala" && : "${KHALA_DIR:="`pwd`/khala"}"
+test -n "$MYGIT" && test -d "$MYGIT/semiosis/khala" && : "${KHALA_DIR:="$MYGIT/semiosis/khala"}"
+test -d "$HOME/.emacs.d/host/khala" && : "${KHALA_DIR:="$HOME/.emacs.d/host/khala"}"
+test -d "$HOME/.emacs.d/khala" && : "${KHALA_DIR:="$HOME/.emacs.d/khala"}"
+test -d "$HOME/repos/pen-emacsd/khala" && : "${KHALA_DIR:="$HOME/repos/pen-emacsd/khala"}"
+
+set -xv
+cd "$KHALA_DIR"
+lein run

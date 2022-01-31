@@ -43,6 +43,16 @@
       (switch-to-buffer buf)
       (turn-on-comint-history (f-join pen-nlsh-histdir slug)))))
 
+(defun ii-python ()
+  (interactive)
+
+  (ii-language "python"))
+
+(defun ii-bash ()
+  (interactive)
+
+  (ii-language "bash"))
+
 (defun ii-language (language)
   (interactive (list (fz
                       (append

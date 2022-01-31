@@ -327,6 +327,9 @@
     (bindings--define-key menu [mi-pen-dired-rhizome]
       '(menu-item "Go to rhizome directory" pen-dired-rhizome
                   :help "Go to rhizome source directory"))
+    (bindings--define-key menu [mi-pen-dired-khala]
+      '(menu-item "Go to khala directory" pen-dired-khala
+                  :help "Go to khala source directory"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -459,13 +462,29 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-ii-lang-menu
+  (let ((menu (make-sparse-keymap "Imaginary Interpreter")))
+    (bindings--define-key menu [mi-ii-python]
+      '(menu-item "𝑖i - Python" ii-python
+                  :help "Start a Python imaginary interpreter,"))
+    (bindings--define-key menu [mi-ii-bash]
+      '(menu-item "𝑖i - Bash" ii-bash
+                  :help "Start a Bash imaginary interpreter,"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-ii-menu
   (let ((menu (make-sparse-keymap "Imaginary Interpreter")))
+    (bindings--define-key menu [mi-menu-bar-ii-lang-menu]
+      `(menu-item "Fully-supported languages" ,menu-bar-ii-lang-menu
+                  :help "Start a fully-supported imaginary interpreter"))
     (bindings--define-key menu [mi-ii-language]
       '(menu-item "Start an imaginary interpreter" ii-language
-                  :help "Start an imaginary interpreter, given the name/language"))
+                  :help "Start given the name/language"))
     (bindings--define-key menu [mi-pen-start-ii-from-buffer]
-      '(menu-item "Start an imaginary interpreter from the current terminal" pen-start-ii-from-buffer
+      '(menu-item "Start from the current terminal" pen-start-ii-from-buffer
                   :help "Start an imaginary interpreter from your current terminal"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
@@ -694,7 +713,7 @@
 (defset menu-bar-terminals-menu
   (let ((menu (make-sparse-keymap "Terminals")))
     (bindings--define-key menu [mi-menu-bar-ii-menu]
-      `(menu-item "Imaginary interpreters" ,menu-bar-ii-menu
+      `(menu-item "𝑖i - Imaginary interpreters" ,menu-bar-ii-menu
                   :help "Run imaginary interpreters"))
     (bindings--define-key menu [mi-menu-bar-nlsh-menu]
       `(menu-item "Natural language shell" ,menu-bar-nlsh-menu
