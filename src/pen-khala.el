@@ -4,6 +4,6 @@
 
 (defun khala-start ()
   (interactive)
-  (pen-snc "khala"))
+  (pen-sn "khala" nil nil nil t))
 
 (provide 'pen-khala)
