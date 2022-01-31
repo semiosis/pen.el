@@ -4,4 +4,4 @@ export TTY
 pkg="$1"
 test -n "$pkg" || exit 1
 
-pen-x -n -sh swipl -e "?- " -s "pack_install($pkg)." -c m -e "Y/n" -s Y -e "Create directory" -c m -e "?- " -c d -i
+pen-x -sh swipl -e "?- " -s "pack_install($pkg)." -c m -e "Y/n" -s Y -e "Create directory" -c m -e "?- " -c d -i
