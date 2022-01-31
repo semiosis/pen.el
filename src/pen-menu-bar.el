@@ -496,8 +496,14 @@
     (bindings--define-key menu [mi-prolog]
       '(menu-item "Start a real prolgo interpreter" swipl
                   :help "Start SWI Prolog"))
+    (bindings--define-key menu [mi-prolog-host]
+      '(menu-item "Start a real prolgo interpreter on host" swipl-host
+                  :help "Start SWI Prolog"))
     (bindings--define-key menu [mi-ipython]
       '(menu-item "Start a real iPython interpreter" ipython
+                  :help "Start iPython"))
+    (bindings--define-key menu [mi-ipython-host]
+      '(menu-item "Start a real iPython interpreter on host" ipython-host
                   :help "Start iPython"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
