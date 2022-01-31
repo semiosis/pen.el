@@ -88,8 +88,12 @@ export PEN_N_JOBS
 : "${PEN_N_CONCURRENT_JOBS:="$PEN_N_JOBS"}"
 export PEN_N_CONCURRENT_JOBS
 
+if test -n "$LM_COMPLETE_DEBUG"; then
+    pen-proxy-generate-envs | pen-tv &>/dev/null
+fi
+
 if test -n "$PEN_PROXY"; then
-    proxy_envs="$(pen-proxy-generate-envs | pen-tv)"
+    proxy_envs="$(pen-proxy-generate-envs)"
 
     # The proxy system must be able to send back all results,
     # Not in the format of a list of directories.
