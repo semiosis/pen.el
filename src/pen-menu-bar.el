@@ -687,7 +687,7 @@
       `(menu-item "👻 Chann.el" ,menu-bar-channel-menu
                   :help "Channel personalities to control your computer"))
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
-      `(menu-item "CT - ComplexTerm" ,menu-bar-cterm-menu
+      `(menu-item "CT ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
     (bindings--define-key menu [mi-ilambda-repl]
       '(menu-item "𝑖λ ilambda REPL" ilambda-repl
