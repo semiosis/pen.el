@@ -96,6 +96,8 @@ if test -n "$PEN_PROXY"; then
     # The proxy system must be able to send back all results,
     # Not in the format of a list of directories.
     # Rather a singular json containing all results, which are reconstructed as directories
+
+    # PEN_GEN_DIR will still be used, but here. Not in the proxy. The proxy will return all the results in a single JSON object
 fi
 
 # if test -n "$PEN_GEN_TIME"; then
