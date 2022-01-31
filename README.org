@@ -31,7 +31,7 @@ functions are:
 - [[https://semiosis.github.io/melee/][Melee - The game of Adversarial Prompting]]
 - [[https://semiosis.github.io/esp/][ESP - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."]]
 - [[https://semiosis.github.io/posts/pen-el-for-vim-and-the-bash-interop-selecting-candidates-with-fzf/][vim support ✓]]
-  - [[https://semiosis.github.io/cterm/As pen wrapping vim with cterm]]
+  - [[https://semiosis.github.io/cterm/][As pen wrapping vim with cterm]]
   - And as prompt functions and bindings within vim (using fzf)
 - Proxies
 - Web-facing point-and-click UI
