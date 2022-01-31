@@ -1,5 +1,5 @@
 (defun swipl ()
   (interactive)
-  (sps "swipl"))
+  (pen-sps "swipl"))
 
 (provide 'pen-real)
