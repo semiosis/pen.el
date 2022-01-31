@@ -367,6 +367,8 @@ dopplegänger, =|:ϝ∷¦ϝ= (Laria), in advance and
 in collaboration with GPT-3 using
 [[https://github.com/socketteer/loom][Loom]].
 
++ The inspiration :: https://generative.ink/trees/pen.html
+
 + Pen and Loom:
   - https://generative.ink/posts/pen/
   - [[https://github.com/socketteer/loom][GitHub - socketteer/loom: Multiversal tree writing interface for human-AI collaboration]]
