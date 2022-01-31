@@ -699,7 +699,7 @@
       `(menu-item "Melee" ,menu-bar-melee-menu
                   :help "Mount imaginary filesystems"))
     (bindings--define-key menu [mi-menu-bar-lookingglass-menu]
-      `(menu-item "LookingGlass" ,menu-bar-lookingglass-menu
+      `(menu-item "🔍 LookingGlass" ,menu-bar-lookingglass-menu
                   :help "Visit imaginary websites"))
     (bindings--define-key menu [mi-menu-bar-paracosm-menu]
       `(menu-item "Paracosm" ,menu-bar-paracosm-menu
