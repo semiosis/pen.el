@@ -92,6 +92,10 @@ fun! Insert(text)
     endif
 endf
 
+function! Chomp(string)
+    return substitute(a:string, '\n\+$', '', '')
+endfunction
+
 function! InsertPrompt(fun, in, ...)
     let args = a:000
     let s = ""
@@ -101,7 +105,7 @@ function! InsertPrompt(fun, in, ...)
     endfor
 
     let cmd = a:fun . s
-    let s = system("penf -u " . cmd, a:in)
+    let s = Chomp(system("penf -u " . cmd, a:in))
 
     " call Insert(s)
     " return ""
