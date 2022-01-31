@@ -421,7 +421,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -fz) {
         fuzzy="pen-tm fzfh"
-        output_json=n
+        one_linerise_candidates=y
         shift
     }
     ;;
@@ -1016,7 +1016,9 @@ case "$sn" in
             #     echo "(json-encode-list (pen-batch (pen-update ($pfname $CMD :no-select-result t :include-prompt $include_prompt :no-gen $no_gen :variadic-var $variadic_arg))))" | tv &>/dev/null
             # fi
 
-            if test "$output_json" = "y"; then
+            if test "$one_linerise_candidates" = "y"; then
+                output_fn=pen-list2str-oneliners
+            elif test "$output_json" = "y"; then
                 output_fn=json-encode-list
             else
                 output_fn=pen-list2str
@@ -1706,7 +1708,7 @@ pen_eval() {
 # pen-pl "$shcode" | pen-tv &>/dev/null
 
 if test -n "$fuzzy"; then
-    pen_eval "$shcode" | eval "$fuzzy"
+    pen_eval "$shcode" | eval "$fuzzy" | pen-str unonelineify
 else
     pen_eval "$shcode"
 fi
