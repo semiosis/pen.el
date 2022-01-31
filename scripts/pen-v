@@ -390,7 +390,7 @@ if [ $# -eq 1 ]; then
 
             fi
 
-            if lit "$last_arg" | grep -q -P '^http.?://github.com'; then
+            if printf -- "%s" "$last_arg" | grep -q -P '^http.?://github.com'; then
                 gc -notty "$last_arg" &>/dev/null
                 last_arg="$(p "$last_arg" | sed "s=^http.\?://github.com=$MYGIT=" | sed "s=/\(blob\|tree\)/[a-z]\+==")"
                 set -- "${@:1:$(($#-1))}" # shift last arg
@@ -401,7 +401,7 @@ if [ $# -eq 1 ]; then
 
                 cmd="$bin $cmd $last_arg"
             else
-                if lit "$last_arg" | grep -q -P '^http.?:'; then
+                if printf -- "%s" "$last_arg" | grep -q -P '^http.?:'; then
                     tf_webpage="$(make-path-for-uri "$last_arg")"
 
                     set -- "${@:1:$(($#-1))}" # shift last arg
