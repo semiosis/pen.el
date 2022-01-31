@@ -90,7 +90,7 @@ export PEN_N_CONCURRENT_JOBS
 
 # All environment variables must exist, even if empty, or jq returns no output
 
-if test "$PEN_PROXY" = "y"; then
+if test -n "$PEN_PROXY"; then
     proxy_envs="$(pen-proxy-generate-envs | pen-tv)"
 
     # The proxy system must be able to send back all results,
