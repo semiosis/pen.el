@@ -12,6 +12,7 @@ stdin_exists() {
 }
 
 if stdin_exists; then
+    # In order to make this also work on the host, the temporary file must go into the ~/.pen directory
     input_fp="$(cat | pen-tf txt)"
 fi
 
