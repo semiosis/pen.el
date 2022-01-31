@@ -88,6 +88,16 @@ export PEN_N_JOBS
 : "${PEN_N_CONCURRENT_JOBS:="$PEN_N_JOBS"}"
 export PEN_N_CONCURRENT_JOBS
 
+# All environment variables must exist, even if empty, or jq returns no output
+
+if test "$PEN_PROXY" = "y"; then
+    proxy_envs="$(pen-proxy-generate-envs | pen-tv)"
+
+    # The proxy system must be able to send back all results,
+    # Not in the format of a list of directories.
+    # Rather a singular json containing all results, which are reconstructed as directories
+fi
+
 # if test -n "$PEN_GEN_TIME"; then
 #     PEN_GEN_DATE="$(date +%d.%m.%y -d "@${PEN_GEN_TIME}")"
 # fi
