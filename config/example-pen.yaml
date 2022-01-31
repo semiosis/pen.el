@@ -7,6 +7,9 @@ sh-update: off
 # In future, this would disable the use of non-libre models
 libre-only: off
 
+# This proxy points to itself
+# proxy: "localhost:9707"
+
 # These variables are used by pen.el to
 # automatically tailor the experience towards
 # you.
