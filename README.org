@@ -279,6 +279,8 @@ underway.
 *** =Pen.el= in a web browser, terminal and a GUI
 [[./docs/images/pen-term-browser-gui.png]]
 
+This runs under a single server.
+
 ** Mission and Goals
 Pen.el aims to be the best tool for prompt engineering.
 
