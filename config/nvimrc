@@ -61,7 +61,7 @@ function! GetLast20LinesBeforeCursor()
         let s .= getline(i) . "\n"
     endfor
     let s .= getline(end)[:col('.') - 1]
-    
+
     return s
 endfunction
 
