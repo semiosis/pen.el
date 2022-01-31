@@ -168,7 +168,7 @@ prompt_the_lm() {
     # TODO Use pena because I want better results
     # Rather, make a penc (pen collect) and use that
 
-    penf --pool --pen-update "$PEN_UPDATE" --temp "$PEN_TEMPERATURE" --engine "$PEN_ENGINE" "$fun" "$memory" "$user_input" "$person" "$info"
+    pena -fz --pool --pen-update "$PEN_UPDATE" --temp "$PEN_TEMPERATURE" --engine "$PEN_ENGINE" "$fun" "$memory" "$user_input" "$person" "$info"
 }
 
 p "${kickstarter} "
