@@ -92,8 +92,18 @@ if test -n "$LM_COMPLETE_DEBUG"; then
     pen-proxy-generate-envs | pen-tv &>/dev/null
 fi
 
-if test -n "$PEN_PROXY"; then
+proxy_lm_complete() {
     proxy_envs="$(pen-proxy-generate-envs)"
+
+    curl --header "Content-Type: application/json" --request POST --data "$proxy_envs" http://127.0.0.1:9837/lm-complete
+    return 0
+}
+
+if test -n "$PEN_PROXY"; then
+    json_results="$(proxy_lm_complete)"
+
+    notify-send "Not implemented"
+    exit
 
     # The proxy system must be able to send back all results,
     # Not in the format of a list of directories.
