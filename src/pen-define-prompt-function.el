@@ -149,6 +149,7 @@
                                      (pen-alist-to-list collation-data)))
                             ;; Currently always updating
                             "lm-complete")))
+                         i
 
                          ;; I'm also using memoization of pen-prompt-snc
                          ;; cache
