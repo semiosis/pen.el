@@ -119,14 +119,12 @@ if test -n "$PEN_PROXY"; then
     # this comes out in jsonl
     # I need to transform it into separate files.
 
-    {
     i=0
     proxy_lm_complete | awk 1 | sed -e '/^\[/d' -e '/\]$/d' -e 's/,$//' | while IFS=$'\n' read -r line; do
         printf -- "%s\n" "$line" > "$PEN_GEN_DIR/split_$i.txt"
-        echo "$PEN_GEN_DIR/split_$i.txt"
         i=$((i + 1))
     done
-    } | pen-tv
+    echo "$PEN_GEN_DIR"
     exit
 
     # The proxy system must be able to send back all results,
