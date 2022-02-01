@@ -68,7 +68,7 @@
                 "-d" dbname
                 "-U" user
                 "-W")
-               "; pen-pak")))
+                   "; pen-pak")))
 
 ;; cdr is a list of suggested commands I can fuzzy search through
 ;; They are lists which will be evalled as a function call
@@ -82,11 +82,12 @@
 ;; TODO This is a use-case for searching ranges
 ;; I really shouldn't be using algorithms for something like this.
 ;; However, I want to get good at algorithms, so maybe I should.
-(defset server-command-tuples '((22 . ((pen-sps (pen-cmd "zrepl" "-cm" "ssh" "-vvv" "-o" "BatchMode=no"
-                                                 hn "-p" port))))
+(defset pen-server-command-tuples '((22 . ((pen-sps (pen-cmd "zrepl" "-cm" "ssh" "-vvv" "-o" "BatchMode=no"
+                                                         hn "-p" port))))
                                 (80 . ((chrome (concat "http://" hn ":" port))
                                        (eww (concat "http://" hn ":" port))))
                                 (8680 . (pen-clomacs-connect))
+                                (9837 . (my-clomacs-connect))
                                 ;; Unsure how to check this atm.
                                 ((40500 40800) . ((chrome (concat "http://" hn ":" port))
                                                   (eww (concat "http://" hn ":" port))))
@@ -111,7 +112,7 @@
 ;;              (let ((tphn (car tp))
 ;;                    (port (string-to-int (cadr tp))))))))
 
-(defun server-suggestions (hostname &optional fast)
+(defun pen-server-suggestions (hostname &optional fast)
   (interactive (list (read-string-hist "hostname: ")))
   (let* (;; (open (pen-n-list-open-ports hostname fast))
          (hnopen
@@ -143,13 +144,13 @@
              ;; outer join is what i'm thinking of
              ;; how do pen-i fill the missing values using an outer join a list of tuples?
              ;; I think I should flatten once
-             (let* ((cand (assoc (car tp) server-command-tuples))
+             (let* ((cand (assoc (car tp) pen-server-command-tuples))
                     (hnport (list hostname (car cand)))
                     (cs (cdr cand)))
                (if cand
                    (cl-loop for subtp in cs collect
                             (append hnport subtp)))
-               ;; (server-command-tuples)
+               ;; (pen-server-command-tuples)
                ;; (if (assoc  ))
                ;; (snq (pen-cmd "nc" "-z"))
                ))))))
@@ -158,7 +159,7 @@
 (defun server-suggest (hostname)
   (interactive (list (read-string-hist "hostname: ")))
   (message "Suggesting clients for %s. Please wait." hostname)
-  (let* ((ss (server-suggestions
+  (let* ((ss (pen-server-suggestions
               hostname
               ;; Make it fast if it's not localhost
               (not (string-equal "localhost" hostname))))
