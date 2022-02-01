@@ -114,24 +114,17 @@
 
 (defun pen-server-suggestions (hostname &optional fast)
   (interactive (list (read-string-hist "hostname: ")))
-  (let* (;; (open (pen-n-list-open-ports hostname fast))
-         (hnopen
-          ;; (-filter (lambda (tp) (string-equal hostname (car tp)))
-          ;;           (pen-n-list-open-ports hostname))
+  (let* ((hnopen
           (mapcar
            (lambda (tp) (-drop 1 tp))
            (-filter (lambda (tp) (string-equal hostname (car tp)))
                     (pen-n-list-open-ports hostname t))))
          (openmap
           (mapcar
-           ;; (lambda (tp)
-           ;;   (cons (string-to-number (cadr tp))
-           ;;         (append (list (car tp)) (cddr tp))))
            (lambda (tp)
              (cons (string-to-number (car tp))
                    (cdr tp)))
            hnopen))
-         ;; (etv openmap)
          (suggestions
           (flatten-once
            (-filter
@@ -149,11 +142,7 @@
                     (cs (cdr cand)))
                (if cand
                    (cl-loop for subtp in cs collect
-                            (append hnport subtp)))
-               ;; (pen-server-command-tuples)
-               ;; (if (assoc  ))
-               ;; (snq (pen-cmd "nc" "-z"))
-               ))))))
+                            (append hnport subtp)))))))))
     suggestions))
 
 (defun server-suggest (hostname)
