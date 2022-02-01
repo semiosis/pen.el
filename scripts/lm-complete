@@ -113,6 +113,8 @@ proxy_lm_complete() {
 if test -n "$PEN_PROXY"; then
     json_results="$(proxy_lm_complete)"
 
+    echo "$json_results" | pen-tv
+
     exit
 
     # The proxy system must be able to send back all results,
