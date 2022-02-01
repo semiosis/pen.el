@@ -11,6 +11,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # extra ports
+    -p) {
+        extra_ports="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 # allports
@@ -21,5 +29,8 @@ hn="$1"
 
 {
 echo "Host Port Protocol State Service"
+if test -n "$extra_ports"; then
+    nmap -sT -p "$extra_ports" -O "$hn" | sed "0,/^PORT /{d}" | sed "/^[^0-9]\\+/,\$d" | sed "s/^/$hn,/"
+fi
 nmap -sT "$scanargs" -O "$hn" | sed "0,/^PORT /{d}" | sed "/^[^0-9]\\+/,\$d" | sed "s/^/$hn,/"
 } | sed "s/ \\+/,/g" | tr '/' , # | pen-pavs
