@@ -228,6 +228,8 @@ mkdir -p "$tmpdir"
 # TODO For relevent environment variables, compute a sha for those and export the sha from elisp
 # Don't compute the sha here
 
+export PEN_PROXY_RESPONSE
+
 if ! test -n "$PEN_GEN_DIR"; then
     if test "$PEN_PROXY_RESPONSE" = y; then
         : "${PEN_GEN_TIME:="$(date-ts)"}"
@@ -240,7 +242,6 @@ if ! test -n "$PEN_GEN_DIR"; then
     fi
 fi
 
-LM_COMPLETE_DEBUG=y
 debug_tv() {
     if test -n "$LM_COMPLETE_DEBUG"; then
         pen-tv
@@ -252,7 +253,20 @@ debug_tv() {
 output_json_maybe(){
     if test "$PEN_PROXY_RESPONSE" = y; then
         # Convert directories to json
-        pen-tv
+        # For each results dir, aggregate all result files
+        awk 1 | while IFS=$'\n' read -r line; do
+            pen-glob "$line/split*_*"
+            pen-glob "$line/results*/split*_*"
+            pen-glob "$line/res*.txt"
+            pen-glob "$line/results*/res*.txt"
+        done | {
+            echo "["
+            while IFS=$'\n' read -r line; do
+                cat "$line" | pen-q-jq
+                echo ","
+            done
+            echo "]"
+        }
     else
         cat
     fi
@@ -285,5 +299,5 @@ else
     "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
     cat "$tmpdir/lm-complete-stdout.txt"
 fi
-} | debug_tv | output_json_maybe
+} | output_json_maybe | debug_tv
 # pen-proxy-generate-envs | pen-tv &>/dev/null
