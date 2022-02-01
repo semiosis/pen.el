@@ -13,6 +13,7 @@ stdin_exists() {
 
 if stdin_exists; then
     IFS= read -rd '' stdin_envs < <(cat);typeset -p stdin_envs &>/dev/null
+    # echo "$stdin_envs" | pen-tv &>/dev/null
     eval "$stdin_envs"
 fi
 
