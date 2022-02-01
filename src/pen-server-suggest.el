@@ -110,7 +110,7 @@
 ;;         (al))
 ;;     (cl-loop for tp in ps do
 ;;              (let ((tphn (car tp))
-;;                    (port (string-to-int (cadr tp))))))))
+;;                    (port (string-to-number (cadr tp))))))))
 
 (defun pen-server-suggestions (hostname &optional fast)
   (interactive (list (read-string-hist "hostname: ")))
@@ -125,10 +125,10 @@
          (openmap
           (mapcar
            ;; (lambda (tp)
-           ;;   (cons (string-to-int (cadr tp))
+           ;;   (cons (string-to-number (cadr tp))
            ;;         (append (list (car tp)) (cddr tp))))
            (lambda (tp)
-             (cons (string-to-int (car tp))
+             (cons (string-to-number (car tp))
                    (cdr tp)))
            hnopen))
          ;; (etv openmap)

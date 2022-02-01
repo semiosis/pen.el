@@ -83,7 +83,7 @@
   (cl-multiple-value-bind (site question id)
       (sx-get-appropriate-site-and-id query)
 
-    (sx-display-question (sx-question-get-question site (string-to-int id)))
+    (sx-display-question (sx-question-get-question site (string-to-number id)))
     (delete-other-windows)))
 
 (defun sx-search-lang (query)
@@ -136,7 +136,7 @@
       (setq url (concat "^http://" url)))
   (cl-multiple-value-bind (site question id)
       (sx-get-appropriate-site-and-id-from-url url)
-    (sx-display-question (sx-question-get-question site (string-to-int id)))
+    (sx-display-question (sx-question-get-question site (string-to-number id)))
     (delete-other-windows)))
 
 (define-key global-map (kbd "H-K") 'sx-search-quickly)

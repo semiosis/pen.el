@@ -21,5 +21,5 @@ hn="$1"
 
 {
 echo "Host Port Protocol State Service"
-msudo nmap -sT "$scanargs" -O "$hn" | sed "0,/^PORT /{d}" | sed "/^[^0-9]\\+/,\$d" | sed "s/^/$hn,/"
-} | sed "s/ \\+/,/g" | tr '/' , | pen-pavs
+nmap -sT "$scanargs" -O "$hn" | sed "0,/^PORT /{d}" | sed "/^[^0-9]\\+/,\$d" | sed "s/^/$hn,/"
+} | sed "s/ \\+/,/g" | tr '/' , # | pen-pavs

@@ -1086,7 +1086,7 @@ Also stop descending if a node has been visited before.
   (interactive (list
                 (pen-qa
                  -a 0 -s 1 -d 2 -f 3 -g 4
-                 -r (string-to-int (read-string-hist "depth: " "5" nil 5)))))
+                 -r (string-to-number (read-string-hist "depth: " "5" nil 5)))))
 
   (if (not depth)
       (setq depth 5))
@@ -1120,7 +1120,7 @@ Also stop descending if a node has been visited before.
     (nbfs (pen-snc "uniqnosort" (pen-list2str tre)) nil 'graphviz-dot-mode)))
 
 (defun org-brain-to-dot-children (&optional depth)
-  (interactive (list (string-to-int (read-string-hist "depth: " "5" nil 5))))
+  (interactive (list (string-to-number (read-string-hist "depth: " "5" nil 5))))
 
   (if (not depth)
       (setq depth 5))

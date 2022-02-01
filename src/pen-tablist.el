@@ -46,7 +46,7 @@
                   cmd-or-csv-path))
          (col-sizes
           (if (sor col-sizes-string)
-              (try (mapcar 'string-to-int (uncmd col-sizes-string))))))
+              (try (mapcar 'string-to-number (uncmd col-sizes-string))))))
 
     (let ((b (cond ((sor path) (tablist-buffer-from-csv-string (cat path) has-header col-sizes))
                    ((sor cmd) (tablist-buffer-from-csv-string (pen-sn cmd) has-header col-sizes)))))
@@ -432,7 +432,7 @@ If ADVANCE is non-nil, move forward by one line afterwards."
       vcs)))
 
 (defun current-visible-column ()
-  (tryelse (string-to-int (pen-snc "tmux display-message -p '#{cursor_x}'"))
+  (tryelse (string-to-number (pen-snc "tmux display-message -p '#{cursor_x}'"))
            (error "Can't get column from tmux")))
 
 (defun tablist-current-column ()
