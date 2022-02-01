@@ -115,6 +115,8 @@ proxy_lm_complete() {
 if test -n "$PEN_PROXY"; then
     json_results="$(proxy_lm_complete)"
 
+    # PEN_GEN_DIR
+    # echo "tnehoa" | pen-tv
     echo "$json_results" | pen-tv
     exit
 
@@ -261,10 +263,15 @@ output_json_maybe(){
             pen-glob "$line/results*/res*.txt"
         done | {
             echo "["
-            while IFS=$'\n' read -r line; do
-                cat "$line" | pen-q-jq
+            IFS=$'\n' read -r result
+            if test -n "$result"; then
+                cat "$result" | pen-q-jq
+            fi
+            while IFS=$'\n' read -r result; do
                 echo ","
+                cat "$result" | pen-q-jq
             done
+            echo
             echo "]"
         }
     else
@@ -299,5 +306,5 @@ else
     "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
     cat "$tmpdir/lm-complete-stdout.txt"
 fi
-} | output_json_maybe | debug_tv
+} | output_json_maybe | debug_tv # | pen-tv
 # pen-proxy-generate-envs | pen-tv &>/dev/null

@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# Simply put the stdin into quotes
+
+#{
+#echo -n "["
+#cat
+#echo -n "]"
+#} | jq .[]
+
+jq -r -s .[]
