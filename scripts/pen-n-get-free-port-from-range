@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+FROM="$1"
+TO="$2"
+HOWMANY="$3"
+: "${HOWMANY:="1"}"
+
+test -n "$1" || exit 1
+test -n "$2" || exit 1
+
+# comm -23 <(seq 49152 65535 | sort) <(ss -Htan | awk '{print $4}' | cut -d':' -f2 | sort -u) | shuf | head -n 3
+
+comm -23 \
+<(seq "$FROM" "$TO" | sort) \
+<(ss -Htan | awk '{print $4}' | cut -d':' -f2 | sort -u) \
+| shuf | head -n "$HOWMANY"

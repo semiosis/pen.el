@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# https://unix.stackexchange.com/questions/55913/whats-the-easiest-way-to-find-an-unused-local-port
+# Frustratingly, there is no way with this method to specify a port range
+
+python -c 'import socket; s=socket.socket(); s.bind(("", 0)); print(s.getsockname()[1]); s.close()'
