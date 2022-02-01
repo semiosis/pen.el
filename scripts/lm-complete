@@ -123,9 +123,10 @@ if test -n "$PEN_PROXY"; then
     i=0
     proxy_lm_complete | awk 1 | sed -e '/^\[/d' -e '/\]$/d' -e 's/,$//' | while IFS=$'\n' read -r line; do
         printf -- "%s\n" "$line" > "$PEN_GEN_DIR/split_$i.txt"
+        echo "$PEN_GEN_DIR/split_$i.txt"
         i=$((i + 1))
     done
-    }
+    } | pen-tv
     exit
 
     # The proxy system must be able to send back all results,
