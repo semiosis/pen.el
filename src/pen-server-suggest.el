@@ -146,7 +146,7 @@
                             (append hnport subtp)))))))))
     suggestions))
 
-(defun server-suggest (hostname)
+(defun pen-server-suggest (hostname)
   (interactive (list (read-string-hist "hostname: ")))
   (message "Suggesting clients for %s. Please wait." hostname)
   (let* ((ss (pen-server-suggestions
