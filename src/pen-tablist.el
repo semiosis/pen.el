@@ -579,7 +579,7 @@ Return t, if point is now in a visible area."
 
 (defset my-tablist-mode-tuples
   '(("list-venv-dirs-csv" . ("venv" t "30 40 20"))
-    ("n-list-open-ports" . ("ports" t))
+    ("pen-n-list-open-ports" . ("ports" t))
     ("mygit-tablist" . ("mygit" t))
     ("list-current-subnet-computers-details" . ("subnetscan" t))
     ("arp-details" . ("arp" t "20 20 20 20 20 20"))

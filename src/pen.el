@@ -101,6 +101,8 @@
 (require 'pen-properties)
 (require 'pen-proxy)
 (require 'pen-real)
+(require 'pen-net)
+(require 'pen-server-suggest)
 (require 'pen-vim)
 (require 'pen-paste)
 ;; Otherwise, it will break host magit
