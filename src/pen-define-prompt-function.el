@@ -158,7 +158,21 @@
                          ))))
 
                 (message (concat ,func-name " done " (int-to-string i)))
-                ret))
+                (if (and (sor final-proxy)
+                         (sor ret))
+                    (let ((jsonresults
+                           (vector2list (json-read-from-string ret)))
+                          (counter 0))
+                      (f-mkdir gen-dir)
+                      (loop for r in jsonresults
+                            do
+                            (progn
+                              (setq counter (+ 1 counter))
+                              (pen-write-to-file
+                               r
+                               (f-join gen-dir "splitfile_" (str counter)))))
+                      gen-dir)
+                  ret)))
             do
             (pen-try
              ;; Update the collation-temperature
