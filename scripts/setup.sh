@@ -567,3 +567,5 @@ agi arp-scan
 
 # dhclient
 agi isc-dhcp-client
+
+agi mitmproxy
