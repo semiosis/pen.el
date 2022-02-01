@@ -11,7 +11,7 @@
       (setq hn "localhost"))
   (csv-load (pen-snc (concat
                       (if fast
-                          (pen-cmd "pen-n-list-open-ports" "-F" hn)
+                          (pen-cmd "pen-n-list-open-ports" "-F" "-p" "9837" hn)
                         (pen-cmd "pen-n-list-open-ports" hn))
                       "|sed 1d"))))
 (defalias 'list-open-ports 'pen-n-list-open-ports)
