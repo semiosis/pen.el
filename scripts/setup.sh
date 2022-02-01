@@ -569,3 +569,5 @@ agi arp-scan
 agi isc-dhcp-client
 
 agi mitmproxy
+
+agi lsof

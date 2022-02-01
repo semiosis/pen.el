@@ -13,7 +13,7 @@ fi
 # OR I can do this! -- the proper way!
 # fuser -k 8080/tcp
 
-pids="$(interactive port2pid "$port" | tr '\n' ' ')"
+pids="$(pen-i port2pid "$port" | tr '\n' ' ')"
 
 if test -z "$pids"; then
     echo "$sn $CMD: program must have already quit" 1>&2
