@@ -82,24 +82,25 @@
 ;; TODO This is a use-case for searching ranges
 ;; I really shouldn't be using algorithms for something like this.
 ;; However, I want to get good at algorithms, so maybe I should.
-(defset pen-server-command-tuples '((22 . ((pen-sps (pen-cmd "zrepl" "-cm" "ssh" "-vvv" "-o" "BatchMode=no"
-                                                         hn "-p" port))))
-                                (80 . ((chrome (concat "http://" hn ":" port))
-                                       (eww (concat "http://" hn ":" port))))
-                                (8680 . (pen-clomacs-connect))
-                                (9837 . (my-clomacs-connect))
-                                ;; Unsure how to check this atm.
-                                ((40500 40800) . ((chrome (concat "http://" hn ":" port))
-                                                  (eww (concat "http://" hn ":" port))))
-                                (443 . ((chrome (concat "https://" hn ":" port))
-                                        (eww (concat "https://" hn ":" port))))
-                                (4334 . ((zrepl "datomic-connect-db hello")))
-                                (3306 . ((call-interactively 'connect-to-mysql)
-                                         (call-interactively 'sql-mysql)))
-                                (5432 . ((connect-to-postgres hn port "admin" "main" "admin")
-                                         (connect-to-postgres hn port "ahungry" "ahungry" "ahungry")
-                                         (call-interactively 'connect-to-postgres)
-                                         (call-interactively 'sql-postgres)))))
+(defset pen-server-command-tuples
+  '((22 . ((pen-sps (pen-cmd "zrepl" "-cm" "ssh" "-vvv" "-o" "BatchMode=no"
+                             hn "-p" port))))
+    (80 . ((chrome (concat "http://" hn ":" port))
+           (eww (concat "http://" hn ":" port))))
+    (8680 . (pen-clomacs-connect))
+    (9837 . (pen-clomacs-connect))
+    ;; Unsure how to check this atm.
+    ((40500 40800) . ((chrome (concat "http://" hn ":" port))
+                      (eww (concat "http://" hn ":" port))))
+    (443 . ((chrome (concat "https://" hn ":" port))
+            (eww (concat "https://" hn ":" port))))
+    (4334 . ((zrepl "datomic-connect-db hello")))
+    (3306 . ((call-interactively 'connect-to-mysql)
+             (call-interactively 'sql-mysql)))
+    (5432 . ((connect-to-postgres hn port "admin" "main" "admin")
+             (connect-to-postgres hn port "ahungry" "ahungry" "ahungry")
+             (call-interactively 'connect-to-postgres)
+             (call-interactively 'sql-postgres)))))
 
 ;; I want to do some kind of 'join' on two maps
 
