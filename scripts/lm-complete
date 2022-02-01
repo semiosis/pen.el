@@ -116,7 +116,6 @@ if test -n "$PEN_PROXY"; then
     json_results="$(proxy_lm_complete)"
 
     echo "$json_results" | pen-tv
-
     exit
 
     # The proxy system must be able to send back all results,
@@ -230,10 +229,36 @@ mkdir -p "$tmpdir"
 # Don't compute the sha here
 
 if ! test -n "$PEN_GEN_DIR"; then
-    echo PEN_GEN_DIR not specified 1>&2
-    exit
+    if test "$PEN_PROXY_RESPONSE" = y; then
+        : "${PEN_GEN_TIME:="$(date-ts)"}"
+        : "${PEN_GEN_DATE:="$(date +%d.%m.%y -d "@${PEN_GEN_TIME}")"}"
+        : "${PEN_GEN_DIR:="/root/.pen/results/"}"
+    else
+        # pen-proxy-generate-envs | pen-tv &>/dev/null
+        echo PEN_GEN_DIR not specified 1>&2
+        exit
+    fi
 fi
 
+LM_COMPLETE_DEBUG=y
+debug_tv() {
+    if test -n "$LM_COMPLETE_DEBUG"; then
+        pen-tv
+    else
+        cat
+    fi
+}
+
+output_json_maybe(){
+    if test "$PEN_PROXY_RESPONSE" = y; then
+        # Convert directories to json
+        pen-tv
+    else
+        cat
+    fi
+}
+
+{
 if test -n "$PEN_N_JOBS" && ! test "$PEN_N_JOBS" = 1; then
     mkdir -p "$PEN_GEN_DIR"
 
@@ -260,3 +285,5 @@ else
     "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
     cat "$tmpdir/lm-complete-stdout.txt"
 fi
+} | debug_tv | output_json_maybe
+# pen-proxy-generate-envs | pen-tv &>/dev/null

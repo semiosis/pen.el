@@ -8,7 +8,9 @@ export TTY
 
 # All environment variables must exist, even if empty, or jq returns no output
 
-: "${PEN_LM_COMMAND:=""}"
+: "${PEN_LM_COMMAND:="openai-complete.sh"}"
+: "${PEN_UPDATE:=""}"
+: "${PEN_PROXY_REPONSE:=""}"
 : "${PEN_USER_AGENT:=""}"
 : "${PEN_MIN_TOKENS:=""}"
 : "${PEN_MAX_TOKENS:=""}"
@@ -39,6 +41,8 @@ export TTY
 : "${PEN_GEN_DIR:=""}"
 
 export PEN_LM_COMMAND
+export PEN_UPDATE
+export PEN_PROXY_REPONSE
 export PEN_USER_AGENT
 export PEN_MIN_TOKENS
 export PEN_MAX_TOKENS
@@ -70,6 +74,8 @@ export PEN_GEN_DIR
 
 proxy_envs="$(jq -ne '{
 "PEN_LM_COMMAND":( env.PEN_LM_COMMAND // empty ),
+"PEN_UPDATE":( env.PEN_UPDATE // empty ),
+"PEN_PROXY_REPONSE":( env.PEN_PROXY_REPONSE // empty ),
 "PEN_USER_AGENT":( env.PEN_USER_AGENT // empty ),
 "PEN_MIN_TOKENS":( env.PEN_MIN_TOKENS // empty ),
 "PEN_MAX_TOKENS":( env.PEN_MAX_TOKENS // empty ),
