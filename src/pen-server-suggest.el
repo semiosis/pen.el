@@ -87,8 +87,8 @@
                              hn "-p" port))))
     (80 . ((chrome (concat "http://" hn ":" port))
            (eww (concat "http://" hn ":" port))))
-    (8680 . (pen-clomacs-connect))
-    (9837 . (pen-clomacs-connect))
+    (8680 . ((pen-clomacs-connect)))
+    (9837 . ((pen-clomacs-connect)))
     ;; Unsure how to check this atm.
     ((40500 40800) . ((chrome (concat "http://" hn ":" port))
                       (eww (concat "http://" hn ":" port))))
