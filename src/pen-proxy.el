@@ -1,8 +1,8 @@
 (defcustom pen-proxy ""
-  "Example: localhost:9707"
+  "Example: localhost:9837"
   :type 'string
   :group 'pen
-  :options (list "localhost:9707")
+  :options (list "localhost:9837")
   :set (lambda (_sym value)
          (set _sym value))
   :get (lambda (_sym)
