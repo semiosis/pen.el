@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-# Simply put the stdin into quotes
+# Unquote a string
 
 #{
 #echo -n "["
