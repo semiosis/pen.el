@@ -158,22 +158,27 @@
                          ))))
 
                 (message (concat ,func-name " done " (int-to-string i)))
-                (tv (concat "ret: "ret))
-                (if (and (sor final-proxy)
-                         (sor ret))
-                    (let ((jsonresults
-                           (vector2list (json-read-from-string (tv ret))))
-                          (counter 0))
-                      (f-mkdir gen-dir)
-                      (loop for r in jsonresults
-                            do
-                            (progn
-                              (setq counter (+ 1 counter))
-                              (pen-write-to-file
-                               r
-                               (f-join gen-dir "splitfile_" (str counter)))))
-                      gen-dir)
-                  ret)))
+
+                ret
+
+                ;; Actually, I don't want to do this here.
+                ;; Instead do it here: vim +/"echo \"\$json_results\" | pen-tv" "$HOME/source/git/semiosis/pen.el/scripts/lm-complete"
+                ;; (if (and (sor final-proxy)
+                ;;          (sor ret))
+                ;;     (let ((jsonresults
+                ;;            (vector2list (json-read-from-string (tv ret))))
+                ;;           (counter 0))
+                ;;       (f-mkdir gen-dir)
+                ;;       (loop for r in jsonresults
+                ;;             do
+                ;;             (progn
+                ;;               (setq counter (+ 1 counter))
+                ;;               (pen-write-to-file
+                ;;                r
+                ;;                (f-join gen-dir "splitfile_" (str counter)))))
+                ;;       gen-dir)
+                ;;   ret)
+                ))
             do
             (pen-try
              ;; Update the collation-temperature
