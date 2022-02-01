@@ -122,10 +122,10 @@ if test -n "$PEN_PROXY"; then
     i=0
     mkdir -p "$PEN_GEN_DIR"
     proxy_lm_complete | awk 1 | sed -e '/^\[/d' -e '/\]$/d' -e 's/,$//' | while IFS=$'\n' read -r line; do
-        printf -- "%s\n" "$line" > "$PEN_GEN_DIR/split_$i.txt"
+        printf -- "%s\n" "$line" | pen-uq-jq > "$PEN_GEN_DIR/split_$i.txt"
         i=$((i + 1))
     done
-    echo "$PEN_GEN_DIR"
+    echo "$PEN_GEN_DIR" | pen-tv
     exit
 
     # The proxy system must be able to send back all results,
