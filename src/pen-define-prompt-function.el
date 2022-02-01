@@ -158,10 +158,11 @@
                          ))))
 
                 (message (concat ,func-name " done " (int-to-string i)))
+                (tv (concat "ret: "ret))
                 (if (and (sor final-proxy)
                          (sor ret))
                     (let ((jsonresults
-                           (vector2list (json-read-from-string ret)))
+                           (vector2list (json-read-from-string (tv ret))))
                           (counter 0))
                       (f-mkdir gen-dir)
                       (loop for r in jsonresults

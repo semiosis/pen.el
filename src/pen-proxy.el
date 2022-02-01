@@ -9,6 +9,11 @@
          (eval (sor _sym nil)))
   :initialize #'custom-initialize-default)
 
+(defun pen-proxy-set-localhost ()
+  "This is for debugging the proxy"
+  (interactive)
+  (setq pen-proxy "localhost:9837"))
+
 ;; (defset pen-proxy nil)
 
 ;; Proxy is a host and a port

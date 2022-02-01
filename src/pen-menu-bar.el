@@ -746,6 +746,9 @@
 
 (defset menu-bar-utils-menu
   (let ((menu (make-sparse-keymap "Utilities")))
+    (bindings--define-key menu [mi-pen-proxy-set-localhost]
+      '(menu-item "Set proxy to localhost" pen-proxy-set-localhost
+                  :help "For debugging the proxy"))
     (bindings--define-key menu [mi-pen-server-suggest]
       '(menu-item "Suggest server commands" pen-server-suggest
                   :help "When a human is prompted, it will appear in the hidden terminal"))
@@ -777,7 +780,6 @@
 
 (defset menu-bar-terminals-menu
   (let ((menu (make-sparse-keymap "Terminals")))
-    
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
