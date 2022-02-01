@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+PEN_PROXY="localhost:9837"
+
+# proxy_envs="$(pen-proxy-generate-envs)"
+# curl --header "Content-Type: application/json" --request POST --data "$proxy_envs" "http://$PEN_PROXY/lm-complete"
+
+'curl' '--header' 'Content-Type: application/json' '--request' 'POST' '--data' '{
+  "PEN_LM_COMMAND": "openai-complete.sh",
+  "PEN_UPDATE": "",
+  "PEN_PROXY_REPONSE": "",
+  "PEN_USER_AGENT": "emacs/pen",
+  "PEN_MIN_TOKENS": "0",
+  "PEN_MAX_TOKENS": "206",
+  "PEN_MIN_GENERATED_TOKENS": "3",
+  "PEN_MAX_GENERATED_TOKENS": "64",
+  "PEN_APPROXIMATE_PROMPT_LENGTH": "142",
+  "PEN_ENGINE_MIN_TOKENS": "0",
+  "PEN_ENGINE_MAX_TOKENS": "2049",
+  "PEN_ENGINE_MAX_GENERATED_TOKENS": "4096",
+  "PEN_TEMPERATURE": "0.7",
+  "PEN_TOP_P": "1",
+  "PEN_TOP_K": "10",
+  "PEN_PROMPT": "This is a tweet sentiment classifier\\n\\nTweet<pen-colon> <pen-doublequote>I loved the new Batman movie<pen-bang><pen-doublequote>      \\nSentiment<pen-colon> Positive\\n###\\nTweet<pen-colon> <pen-doublequote>I hate it when my phone battery dies.<pen-doublequote>\\nSentiment<pen-colon> Negative\\n###\\nTweet<pen-colon> <pen-doublequote>My day has been 👍<pen-doublequote>\\nSentiment<pen-colon> Positive\\n###\\nTweet<pen-colon> <pen-doublequote>This is the link to the article<pen-doublequote>\\nSentiment<pen-colon> Neutral\\n###\\nTweet<pen-colon> <pen-doublequote>Overall, it was disappointing.<pen-doublequote>\\nSentiment<pen-colon>",
+  "PEN_PAYLOADS": "",
+  "PEN_FLAGS": "",
+  "PEN_STOP_SEQUENCE": "<pen-newline>",
+  "PEN_STOP_SEQUENCES": "[<pen-doublequote><pen-backslash>n<pen-doublequote>,<pen-doublequote><pen-backslash>n<pen-doublequote>,<pen-doublequote><delim><pen-doublequote>]",
+  "PEN_N_COMPLETIONS": "10",
+  "PEN_ENGINE_MAX_N_COMPLETIONS": "10",
+  "PEN_COLLECT_FROM_POS": "346",
+  "PEN_END_POS": "346",
+  "PEN_SEARCH_THRESHOLD": "",
+  "PEN_TRAILING_WHITESPACE": "",
+  "PEN_MODE": "",
+  "PEN_GEN_UUID": "163df8e3-443c-48fb-852f-5451027bc96b",
+  "PEN_GEN_TIME": "1643707250.073039",
+  "PEN_GEN_DATE": "01.02.22",
+  "PEN_GEN_DIR": "/root/.pen/results/results_1643707250.073039_01.02.22_163df8e3-443c-48fb-852f-5451027bc96b"
+}' "http://localhost:9837/lm-complete"
