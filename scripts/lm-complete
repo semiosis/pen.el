@@ -125,7 +125,7 @@ if test -n "$PEN_PROXY"; then
         printf -- "%s\n" "$line" | pen-uq-jq > "$PEN_GEN_DIR/split_$i.txt"
         i=$((i + 1))
     done
-    echo "$PEN_GEN_DIR" | pen-tv
+    echo "$PEN_GEN_DIR"
     exit
 
     # The proxy system must be able to send back all results,
