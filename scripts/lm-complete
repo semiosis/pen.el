@@ -206,7 +206,8 @@ mkdir -p "$tmpdir"
 proxy_lm_complete() {
     proxy_envs="$(pen-proxy-generate-envs)"
 
-    curl -s --header "Content-Type: application/json" --request POST --data "$proxy_envs" "http://$PEN_PROXY/lm-complete"
+    # cmd curl -s --header "Content-Type: application/json; charset=utf-8" --request POST --data "$proxy_envs" "http://$PEN_PROXY/lm-complete" | xc &>/dev/null
+    curl -s --header "Content-Type: application/json; charset=utf-8" --request POST --data "$proxy_envs" "http://$PEN_PROXY/lm-complete"
     return 0
 }
 
@@ -316,5 +317,5 @@ else
     "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
     cat "$tmpdir/lm-complete-stdout.txt"
 fi
-} | output_json_maybe | debug_tv # | pen-tv
+} | output_json_maybe | debug_tv
 # pen-proxy-generate-envs | pen-tv &>/dev/null
