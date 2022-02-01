@@ -746,6 +746,9 @@
 
 (defset menu-bar-utils-menu
   (let ((menu (make-sparse-keymap "Utilities")))
+    (bindings--define-key menu [mi-pen-server-suggest]
+      '(menu-item "Suggest server commands" pen-server-suggest
+                  :help "When a human is prompted, it will appear in the hidden terminal"))
     (bindings--define-key menu [mi-pen-start-hidden-terminal]
       '(menu-item "Start hidden human terminal" pen-start-hidden-terminal
                   :help "When a human is prompted, it will appear in the hidden terminal"))
