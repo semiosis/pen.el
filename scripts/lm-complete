@@ -277,7 +277,7 @@ if test -n "$PEN_PROXY"; then
     i=0
     mkdir -p "$PEN_GEN_DIR"
     proxy_lm_complete | awk 1 | sed -e '/^\[/d' -e '/\]$/d' -e 's/,$//' | while IFS=$'\n' read -r line; do
-        printf -- "%s\n" "$line" | pen-uq-jq > "$PEN_GEN_DIR/splitfile_$i.txt"
+        printf -- "%s" "$line" | pen-uq-jq > "$PEN_GEN_DIR/splitfile_$i.txt"
         i=$((i + 1))
     done
     echo "$PEN_GEN_DIR" 
