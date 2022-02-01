@@ -66,7 +66,11 @@ shift
 
 dir="$(realpath "$dir")"
 : "${HOME:="/root"}"
-dir="$HOME/pensieves/$dir"
+
+# Maybe in the future have more nested pensieves and remove this
+dbn="$(basename "$dir")"
+dir="$HOME/pensieves/$dbn"
+
 dir="$(p "$dir" | sed 's=//=/=g')"
 
 mkdir -p "$dir"
