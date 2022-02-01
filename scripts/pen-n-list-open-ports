@@ -30,7 +30,7 @@ hn="$1"
 {
 echo "Host Port Protocol State Service"
 if test -n "$extra_ports"; then
-    nmap -sT -p "$extra_ports" -O "$hn" | sed "0,/^PORT /{d}" | sed "/^[^0-9]\\+/,\$d" | sed "s/^/$hn,/"
+    nmap -sT -p "$extra_ports" -O "$hn" | sed "0,/^PORT /{d}" | sed "/^[^0-9]\\+/,\$d" | sed "s/^/$hn,/" | grep -v closed
 fi
 nmap -sT "$scanargs" -O "$hn" | sed "0,/^PORT /{d}" | sed "/^[^0-9]\\+/,\$d" | sed "s/^/$hn,/"
 } | sed "s/ \\+/,/g" | tr '/' , # | pen-pavs
