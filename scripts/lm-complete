@@ -5,6 +5,17 @@
 # export PEN_PROMPT="Once upon a time"
 # lm-complete
 
+# The envs may be stored in stdin
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    IFS= read -rd '' stdin_envs < <(cat);typeset -p stdin_envs &>/dev/null
+    eval "$stdin_envs"
+fi
+
 {
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
