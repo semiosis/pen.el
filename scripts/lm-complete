@@ -211,28 +211,6 @@ proxy_lm_complete() {
 }
 
 export PEN_PROXY
-if test -n "$PEN_PROXY"; then
-    # PEN_GEN_DIR
-    # echo "tnehoa" | pen-tv
-
-    # this comes out in jsonl
-    # I need to transform it into separate files.
-
-    i=0
-    mkdir -p "$PEN_GEN_DIR"
-    proxy_lm_complete | awk 1 | sed -e '/^\[/d' -e '/\]$/d' -e 's/,$//' | while IFS=$'\n' read -r line; do
-        printf -- "%s\n" "$line" | pen-uq-jq > "$PEN_GEN_DIR/splitfile_$i.txt"
-        i=$((i + 1))
-    done
-    echo "$PEN_GEN_DIR" 
-    exit
-
-    # The proxy system must be able to send back all results,
-    # Not in the format of a list of directories.
-    # Rather a singular json containing all results, which are reconstructed as directories
-
-    # PEN_GEN_DIR will still be used, but here. Not in the proxy. The proxy will return all the results in a single JSON object
-fi
 
 # Actually, do not use pen-ci to cache here, yet.
 # I would need to get a sha of all environment variables first.
@@ -287,6 +265,29 @@ output_json_maybe(){
         cat
     fi
 }
+
+if test -n "$PEN_PROXY"; then
+    # PEN_GEN_DIR
+    # echo "tnehoa" | pen-tv
+
+    # this comes out in jsonl
+    # I need to transform it into separate files.
+
+    i=0
+    mkdir -p "$PEN_GEN_DIR"
+    proxy_lm_complete | awk 1 | sed -e '/^\[/d' -e '/\]$/d' -e 's/,$//' | while IFS=$'\n' read -r line; do
+        printf -- "%s\n" "$line" | pen-uq-jq > "$PEN_GEN_DIR/splitfile_$i.txt"
+        i=$((i + 1))
+    done
+    echo "$PEN_GEN_DIR" 
+    exit
+
+    # The proxy system must be able to send back all results,
+    # Not in the format of a list of directories.
+    # Rather a singular json containing all results, which are reconstructed as directories
+
+    # PEN_GEN_DIR will still be used, but here. Not in the proxy. The proxy will return all the results in a single JSON object
+fi
 
 {
 if test -n "$PEN_N_JOBS" && ! test "$PEN_N_JOBS" = 1; then
