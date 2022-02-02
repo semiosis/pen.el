@@ -825,6 +825,7 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
     export PEN_HELP
     export PEN_OVERLAY
     export PEN_PREOVERLAY
+    export PEN_EIPE_DATA
 
     if ! inside-docker-p; then
         ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
