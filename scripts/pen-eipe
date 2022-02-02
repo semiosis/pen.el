@@ -62,6 +62,7 @@ export PEN_PROMPT
 export PEN_HELP
 export PEN_OVERLAY
 export PEN_PREOVERLAY
+export PEN_EIPE_DATA
 pen -notm -nw --pool "$tf_pipe_buffer"
 
 exec 1>&3

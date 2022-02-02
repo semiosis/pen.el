@@ -1,11 +1,11 @@
 #!/bin/bash
 export TTY
 
-# Simply export stdin as the overlay, for another command
+# Simply export stdin as the eipe data (json), for another command
 
-IFS= read -rd '' PEN_PREOVERLAY < <(cat);typeset -p PEN_PREOVERLAY &>/dev/null
+IFS= read -rd '' PEN_EIPE_DATA < <(cat);typeset -p PEN_EIPE_DATA &>/dev/null
 
-export PEN_PREOVERLAY
+export PEN_EIPE_DATA
 
 "$@"
 

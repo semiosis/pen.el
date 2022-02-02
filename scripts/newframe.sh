@@ -153,6 +153,11 @@ if test -n "$PEN_PREOVERLAY"; then
     printf -- "%s" "$PEN_PREOVERLAY" > "/root/.pen/eipe/${SOCKET}_preoverlay"
 fi
 
+if test -n "$PEN_EIPE_DATA"; then
+    mkdir -p $HOME/.pen/eipe
+    printf -- "%s" "$PEN_EIPE_DATA" > "/root/.pen/eipe/${SOCKET}_eipe_data"
+fi
+
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
 else
