@@ -1,6 +1,8 @@
 * =Pen.el= (_Prompt engineering_ in emacs)
 *The aim is to turn everyone into a wizard (by 2022 standards), and to decentralise language and truth, so that everyone and no-one is a wizard in the future, and to provide a platform at which users can learn at their own pace, with total freedom.*
 
+Visit https://semiosis.github.io/ for applications and demonstrations.
+
 =Pen.el= integrates LMs (LMs) such as OpenAI's
 =GPT-3= or EleutherAI's =GPT-J= into emacs by
 generating functions from prompts that map
