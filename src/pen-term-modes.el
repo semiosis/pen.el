@@ -1,6 +1,3 @@
-;; See also:
-;; j:pen-list-of-tuis
-
 (defset pen-term-modes-commands '(tmux
                                  asciimation
                                  ncdu br
