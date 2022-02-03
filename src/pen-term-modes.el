@@ -168,17 +168,7 @@
 (defun tpb-enable-syntax-highlighting ()
   (interactive)
   (set (make-local-variable 'tpb-term-font-lock-keywords)
-       ;; '(("\\_<\\(720\\|1080\\|2019\\)\\_>" . font-lock-function-name-face)
-       ;;   ("\\_<\\(Magnet\\S[0-9]+E[0-9]+\\)\\_>" . font-lock-constant-face))
        '(
-         ;; J 270
-         ;; Not sure if works. It does but it's naive
-         ;; ("\"[^\"]+?\"" 0 font-lock-string-face keep t)
-         ;; This works
-         ;; ("([^)]+?)" 0 font-lock-string-face keep t)
-         ;; Works
-         ;; ("J" 0 font-lock-string-face keep t)
-         ;; This works but it doesn't override the existing syntax highlighting
          ("\\(J\\|T\\)" 0 font-lock-string-face keep t)
          ("\\(720\\|1080\\|2019\\)" . font-lock-function-name-face)
          ("\\(Magnet\\|S[0-9]+E[0-9]+\\)" . font-lock-constant-face)))
