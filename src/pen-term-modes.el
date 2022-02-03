@@ -124,12 +124,9 @@
 (defun tm-get-pane ()
   (chomp (pen-sn "TMUX= tmux display-message -p '#{pane_id}' 2>/dev/null")))
 
-;; pen-x doesnt work without a tty, so pen-i use (sh). pen-i need to fix that
-;; (pen-lm (pen-sh (concat "pen-x -tma \"" (tm-get-window) "\" -s \"222\"")))
-
 (defun df-test ()
     (interactive)
-  (sh
+  (pen-sh
    (concat "pen-x -tma \"" (tm-get-window) "\""
            " -s \"222\""
            " -c m"
@@ -139,7 +136,7 @@
 
 (defun df-browse ()
     (interactive)
-  (sh
+  (pen-sh
    (concat "pen-x -tma \"" (tm-get-window) "\""
            " -s 2"
            " -sl 0.5"
@@ -150,7 +147,7 @@
 
 (defun df-create-world ()
     (interactive)
-  (sh
+  (pen-sh
    (concat "pen-x -tma \"" (tm-get-window) "\""
            " -se 222"
            " -sl 0.2"
@@ -313,7 +310,7 @@
                               "tmux wait-for -S emacskbm\n"))
                      (write-file tf)))
 
-    (shell-command (concat "tmux neww -t localhost_current: -d bash " pen-tf " " quoted-string "; tmux wait-for emacskbm"))
+    (pen-shell-command (concat "tmux neww -t localhost_current: -d bash " pen-tf " " quoted-string "; tmux wait-for emacskbm"))
     (chomp (with-temp-buffer
                (insert-file-contents "/tmp/emacskbm.txt")
                (buffer-string)))))
@@ -340,7 +337,7 @@
 
 (defun term-get-url-at-point ()
   (interactive)
-  (pen-copy (sh/xurls (term-get-line-at-point)) t))
+  (pen-copy (pen-sh/xurls (term-get-line-at-point)) t))
 
 
 (define-key nano-term-mode-map (kbd "M-u") #'term-get-url-at-point)
