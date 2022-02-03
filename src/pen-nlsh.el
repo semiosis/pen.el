@@ -2,6 +2,10 @@
   (interactive)
   (ilist 20 "distinctive linux distributions including nixos"))
 
+(defun pen-list-generic-os-types ()
+  (interactive)
+  (ilist 20 "operating systems (including linux, mac, windows)"))
+
 (defun sps-nlsc (os)
   (interactive (list (pen-detect-language-ask)))
   ;; (pen-sps (pen-cmd "pen-eterm" "nlsc" "-nd" os))
