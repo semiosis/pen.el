@@ -40,6 +40,10 @@ sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 # export PEN_N_COMPLETIONS=1
 
 if test -n "$PEN_N_COMPLETIONS" && test "$PEN_N_COMPLETIONS" -gt 1; then
+    if test "$PEN_N_COMPLETIONS" -gt 4; then
+        PEN_N_COMPLETIONS=4
+    fi
+
     FINAL_PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT" | pen-q-jq | awk 1)"
     FINAL_PEN_PROMPT="[$(printf -- "%s\n" "$FINAL_PEN_PROMPT" | pen-str repeat-string "$PEN_N_COMPLETIONS" | pen-str join ',')]"
 else
