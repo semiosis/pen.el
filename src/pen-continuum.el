@@ -20,6 +20,7 @@
 (defun continuum-get-current ()
   (buffer-string-visible))
 
+;; These saves should happen automatically
 (defun continuum-push ()
   (interactive)
   (setq pen-terminal-states (cons (continuum-get-current) pen-terminal-states)))
