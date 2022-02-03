@@ -172,6 +172,9 @@
                     " "
                     'face 'pen-none-face))
 
+                  ;; Don't use buttons
+                  ;; Instead use a clickable overlay similar to this
+                  ;; j:lsp-ui-sideline--code-actions
                   (insert-button label
                                  'type
                                  (intern type)
