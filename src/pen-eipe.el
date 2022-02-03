@@ -164,8 +164,8 @@
                        (command (cdr (assoc 'command b)))
                        (type (or (cdr (assoc 'type b))
                                  'on-button))
-                       (bol (point))
-                       (eol (point)))
+                       (bol (point-min))
+                       (eol (point-min)))
 
                   (-let* ((title (cdr (assoc 'label b)))
                           (image (lsp-ui-sideline--code-actions-image))
@@ -181,10 +181,13 @@
                           (string ;; (concat (propertize " " 'display `(space :align-to (- right-fringe ,(lsp-ui-sideline--align (+ len (length image)) margin))))
                            ;;         image
                            ;;         (propertize title 'display (lsp-ui-sideline--compute-height)))
-                           (concat (propertize " " 'display `(space :align-to (- right-fringe ,(lsp-ui-sideline--align (+ len (length image)) margin))))
-                                   image
-                                   (propertize title 'display (lsp-ui-sideline--compute-height))))
-                          (pos-ov (lsp-ui-sideline--find-line (+ 1 (length title) (length image)) bol eol t))
+                           (concat
+                            (propertize " " 'display `(space :align-to (- right-fringe ,(lsp-ui-sideline--align (+ len (length image)) margin))))
+                            image
+                            (propertize title 'display (lsp-ui-sideline--compute-height))))
+                          (pos-ov
+                           ;; nil
+                           (lsp-ui-sideline--find-line (+ 1 (length title) (length image)) bol eol t))
                           (ov (and pos-ov (make-overlay (car pos-ov) (car pos-ov)))))
                     (when pos-ov
                       (overlay-put ov 'after-string string)
