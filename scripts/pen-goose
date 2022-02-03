@@ -36,6 +36,9 @@ export PEN_FREQUENCY_PENALTY
 
 sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
+# No more than 1 currenty supported
+export PEN_N_COMPLETIONS=1
+
 pen_goose() {
     if printf -- "%s\n" "$PEN_FLAGS" | grep -q -P '<goose-begin-newline>'; then
         echo
@@ -48,33 +51,35 @@ pen_goose() {
 
     # Since Goose uses the OpenAi API, I can just look at the http requests in the openai client to find the parameters
 
-    curl "https://api.goose.ai/engines/$PEN_MODEL/completions" \
+    # \"n\": $PEN_N_COMPLETIONS,
+    curl "https://api.goose.ai/v1/engines/$PEN_MODEL/completions" \
          -H 'Content-Type: application/json' \
          -H "Authorization: Bearer $GOOSE_API_KEY" \
          -X POST \
          -d "{\"prompt\": $(cmd-nice-jq "$PEN_PROMPT"),
-              \"n\": $PEN_N_COMPLETIONS,
               \"max_tokens\": $PEN_MAX_GENERATED_TOKENS,
               \"stop\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
               \"top_p\": $PEN_TOP_P,
               \"top_k\": $PEN_TOP_K,
-              \"temperature\": $PEN_TEMPERATURE
-              \"presence_penalty\": $PEN_PRESENCE_PENALTY
+              \"temperature\": $PEN_TEMPERATURE,
+              \"presence_penalty\": $PEN_PRESENCE_PENALTY,
               \"frequency_penalty\": $PEN_FREQUENCY_PENALTY
              }"
 }
 
 pen_goose "$@" | pen-log goose-temp &>/dev/null
 
+{
 if test "$PEN_N_COMPLETIONS" = 1; then
     printf -- "%s" "$PEN_PROMPT"
-    cat ~/.pen/temp/goose-temp.txt | jq -r ".completions[$((i - 1))].data.text"
+    cat ~/.pen/temp/goose-temp.txt | jq -r ".choices[$((i - 1))].text"
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
         echo "===== Completion $i ====="
         {
         printf -- "%s" "$PEN_PROMPT"
-        cat ~/.pen/temp/goose-temp.txt | jq -r ".completions[$((i - 1))].data.text"
+        cat ~/.pen/temp/goose-temp.txt | jq -r ".choices[$((i - 1))].text"
         } | awk 1
     done | pen-log goose
 fi
+} 

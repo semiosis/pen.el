@@ -305,7 +305,10 @@ case "$sn" in
             "$completer_sn"
             exit $?
         else
-            pen-timeout 10 "$completer_sn"  > "$tf_response"
+            # pen-timeout 10 "$completer_sn"  > "$tf_response"
+
+            # It's quite slow
+            "$completer_sn"  > "$tf_response"
         fi
     }
     ;;
