@@ -27,8 +27,12 @@ export PEN_TOP_P
 export PEN_TOP_K
 export PEN_STOP_SEQUENCE
 export PEN_N_COMPLETIONS
+export PEN_PRESENCE_PENALTY
+export PEN_FREQUENCY_PENALTY
 
 : "${PEN_N_COMPLETIONS:="4"}"
+: "${PEN_PRESENCE_PENALTY:="0"}"
+: "${PEN_FREQUENCY_PENALTY:="0"}"
 
 sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
@@ -52,8 +56,11 @@ pen_goose() {
               \"n\": $PEN_N_COMPLETIONS,
               \"max_tokens\": $PEN_MAX_GENERATED_TOKENS,
               \"stop\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
-              \"best_of\": $PEN_TOP_K,
+              \"top_p\": $PEN_TOP_P,
+              \"top_k\": $PEN_TOP_K,
               \"temperature\": $PEN_TEMPERATURE
+              \"presence_penalty\": $PEN_PRESENCE_PENALTY
+              \"frequency_penalty\": $PEN_FREQUENCY_PENALTY
              }"
 }
 
