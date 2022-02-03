@@ -4,7 +4,7 @@
 ;; Run the command a couple of times before running the prompt
 
 (defun continuum-add-state (state)
-  (interactive (list (pen-trim-max-chars (buffer-string-visible) 300)))
+  (interactive (list (pen-trim-max-chars (buffer-string-visible))))
   (setq pen-terminal-states(cons state pen-terminal-states)))
 
 (defun continuum-get-older ()
@@ -19,17 +19,5 @@
 
 (defun continuum-get-current ()
   (pen-trim-max-chars (buffer-string-visible) 300))
-
-(defun continuum-push ()
-  (interactive)
-  (setq pen-terminal-states (cons (continuum-get-current) pen-terminal-states)))
-
-(defun continuum (older-state old-state)
-  (interactive (list (continuum-get-older) (continuum-get-old)))
-
-  (pf-guess-your-terminal-s-future/3
-   (continuum-get-older)
-   (continuum-get-old)
-   (continuum-get-current)))
 
 (provide 'pen-continuum)
