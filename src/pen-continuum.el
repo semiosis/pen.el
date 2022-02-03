@@ -20,7 +20,8 @@
 (defun continuum-get-current ()
   (buffer-string-visible))
 
-;; These saves should happen automatically on a timer
+;; These saves should happen automatically on a timer?
+;; Or after a certain number of key presses
 (defun continuum-push ()
   (interactive)
   (setq pen-terminal-states (cons (continuum-get-current) pen-terminal-states)))
