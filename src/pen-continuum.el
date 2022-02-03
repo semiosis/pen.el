@@ -1,5 +1,5 @@
 ;; A list of strings, each a snapshot of the terminal
-(defvar pen-terminal-states '())
+(defset pen-terminal-states '())
 
 ;; Run the command a couple of times before running the prompt
 
@@ -9,14 +9,12 @@
 
 (defun continuum-get-older ()
   (let ((r (reverse pen-terminal-states)))
-    (if (and (not older-state)
-             (> (length pen-terminal-states) 1))
+    (if (> (length pen-terminal-states) 1)
         (second r))))
 
 (defun continuum-get-old ()
   (let ((r (reverse pen-terminal-states)))
-    (if (and (not old-state)
-             (> (length pen-terminal-states) 1))
+    (if (> (length pen-terminal-states) 1)
         (first r))))
 
 (defun continuum-get-current ()
