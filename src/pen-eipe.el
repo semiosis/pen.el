@@ -130,6 +130,25 @@
           (pen-eipe-set-info-preoverlay info)
           (f-delete fp t)))))
 
+(defun pen-eipe-set-eipe-data (info)
+  ;; This should generate an overlay buttons for accept and abort.
+  ;; Load the json.
+  ;; Then get a list of buttons, etc.
+  ;; Generate them.
+
+  (overlay-put
+   (make-overlay (point-min) (point-min))
+   'after-string
+   (concat (propertize info 'face 'pen-human-prompt)
+           (propertize "\n" 'face 'pen-none-face))))
+
+(defun pen-find-file-eipe-data ()
+  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_eipe_data")))
+    (if (f-exists-p fp)
+        (let* ((info (slurp-file fp)))
+          (pen-eipe-set-eipe-data info)
+          (f-delete fp t)))))
+
 (defset pen-eipe-hook '())
 
 ;; This needs to happen after the file is loaded
@@ -137,6 +156,7 @@
 (add-hook 'pen-eipe-hook 'pen-find-file-buffer-info)
 (add-hook 'pen-eipe-hook 'pen-find-file-overlay-info)
 (add-hook 'pen-eipe-hook 'pen-find-file-preoverlay-info)
+(add-hook 'pen-eipe-hook 'pen-find-file-eipe-data)
 
 (defun run-eipe-hooks ()
   (interactive)
