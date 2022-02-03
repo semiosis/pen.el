@@ -157,35 +157,65 @@
   (let* ((data (json-read-from-string info))
          (buttons (pen-vector2list (cdr (assoc 'buttons data)))))
 
-    (never
-     (if buttons
-         (progn
-           (loop for b in buttons do
-                 (let* ((label (cdr (assoc 'label b)))
-                        (command (cdr (assoc 'command b)))
-                        (type (or (cdr (assoc 'type b))
-                                  'on-button)))
+    (if buttons
+        (progn
+          (loop for b in buttons do
+                (let* ((label (cdr (assoc 'label b)))
+                       (command (cdr (assoc 'command b)))
+                       (type (or (cdr (assoc 'type b))
+                                 'on-button))
+                       (bol (point))
+                       (eol (point)))
 
-                   (overlay-put
-                    (make-overlay (point) (point))
-                    'after-string
-                    (propertize
-                     " "
-                     'face 'pen-none-face))
+                  (-let* ((title (cdr (assoc 'label b)))
+                          (image (lsp-ui-sideline--code-actions-image))
+                          (margin (lsp-ui-sideline--margin-width))
+                          (keymap (let ((map (make-sparse-keymap)))
+                                    (define-key map [down-mouse-1] (eval `(lambda () (interactive) (funcall ',(intern command)))))
+                                    map))
+                          (len (length title))
+                          (title (progn (add-face-text-property 0 len 'lsp-ui-sideline-global nil title)
+                                        (add-face-text-property 0 len 'lsp-ui-sideline-code-action nil title)
+                                        (add-text-properties 0 len `(keymap ,keymap mouse-face highlight) title)
+                                        title))
+                          (string ;; (concat (propertize " " 'display `(space :align-to (- right-fringe ,(lsp-ui-sideline--align (+ len (length image)) margin))))
+                           ;;         image
+                           ;;         (propertize title 'display (lsp-ui-sideline--compute-height)))
+                           (concat (propertize " " 'display `(space :align-to (- right-fringe ,(lsp-ui-sideline--align (+ len (length image)) margin))))
+                                   image
+                                   (propertize title 'display (lsp-ui-sideline--compute-height))))
+                          (pos-ov (lsp-ui-sideline--find-line (+ 1 (length title) (length image)) bol eol t))
+                          (ov (and pos-ov (make-overlay (car pos-ov) (car pos-ov)))))
+                    (when pos-ov
+                      (overlay-put ov 'after-string string)
+                      (overlay-put ov 'before-string " ")
+                      (overlay-put ov 'kind 'actions)
+                      (overlay-put ov 'position (car pos-ov))
+                      ;; (push ov lsp-ui-sideline--ovs)
+                      ))
 
-                   ;; Don't use buttons
-                   ;; Instead use a clickable overlay similar to this
-                   ;; j:lsp-ui-sideline--code-actions
-                   (insert-button label
-                                  'type
-                                  (intern type)
-                                  'action
-                                  (eval `(lambda (b) (funcall ',(intern command)))))))
+                  ;; (overlay-put
+                  ;;  (make-overlay (point) (point))
+                  ;;  'after-string
+                  ;;  (propertize
+                  ;;   " "
+                  ;;   'face 'pen-none-face))
 
-           (overlay-put
-            (make-overlay (point) (point))
-            'after-string
-            (propertize "\n" 'face 'pen-none-face)))))))
+                  ;; Don't use buttons
+                  ;; Instead use a clickable overlay similar to this
+                  ;; j:lsp-ui-sideline--code-actions
+                  ;; (insert-button label
+                  ;;                'type
+                  ;;                (intern type)
+                  ;;                'action
+                  ;;                (eval `(lambda (b) (funcall ',(intern command)))))
+                  ))
+
+          ;; (overlay-put
+          ;;  (make-overlay (point) (point))
+          ;;  'after-string
+          ;;  (propertize "\n" 'face 'pen-none-face))
+          ))))
 
 (defun pen-find-file-eipe-data ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_eipe_data")))
