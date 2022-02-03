@@ -209,9 +209,6 @@
 (define-key tpb-term-mode-map (kbd "M-n") #'tpb-next-magnet)
 (define-key tpb-term-mode-map (kbd "M-p") #'tpb-prev-magnet)
 
-;; Make some pen-x scripts for df
-;; pen-x -tma '@1485' -s "222"\
-
 (defun tmux-copy-pane-initial-command ()
   (interactive)
   (chomp (pen-sh "pen-tm copy-pane-command | cat" nil t)))
