@@ -168,7 +168,7 @@
                   (overlay-put
                    (make-overlay (point) (point))
                    'after-string
-                   (propertize " " 'face 'pen-none-face))
+                   (propertize "  " 'face 'pen-none-face))
 
                   (insert-button label
                                  type
