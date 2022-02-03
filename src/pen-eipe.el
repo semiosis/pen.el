@@ -136,11 +136,15 @@
   ;; Then get a list of buttons, etc.
   ;; Generate them.
 
-  (overlay-put
-   (make-overlay (point-min) (point-min))
-   'after-string
-   (concat (propertize info 'face 'pen-human-prompt)
-           (propertize "\n" 'face 'pen-none-face))))
+  (pen-tv
+   (pps (json-read-from-string info)))
+
+  ;; (overlay-put
+  ;;  (make-overlay (point-min) (point-min))
+  ;;  'after-string
+  ;;  (concat (propertize info 'face 'pen-human-prompt)
+  ;;          (propertize "\n" 'face 'pen-none-face)))
+  )
 
 (defun pen-find-file-eipe-data ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_eipe_data")))
