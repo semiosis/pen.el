@@ -56,14 +56,8 @@
 (defun make-or-run-etui-cmd (pen-cmd &rest args)
   (interactive (list (read-string "Command name:")))
   (let* ((funname (concat "esh-" cmd))
-         ;; (fnsym (intern funname))
          (fnsym
-          ;; Force overwrite
-          (make-etui-cmd cmd t)
-          ;; (if (fboundp fnsym)
-          ;;     fnsym
-          ;;   (make-etui-cmd cmd))
-          ))
+          (make-etui-cmd cmd t)))
     (eval `(defcmdmode ,cmd))
     (eval `(,fnsym ,@args))))
 
