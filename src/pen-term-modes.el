@@ -141,7 +141,7 @@
   (chomp (pen-sn "TMUX= tmux display-message -p '#{pane_id}' 2>/dev/null")))
 
 ;; pen-x doesnt work without a tty, so pen-i use (sh). pen-i need to fix that
-;; (pen-lm (sh (concat "pen-x -tma \"" (tm-get-window) "\" -s \"222\"")))
+;; (pen-lm (pen-sh (concat "pen-x -tma \"" (tm-get-window) "\" -s \"222\"")))
 
 (defun df-test ()
     (interactive)
@@ -180,7 +180,7 @@
            " -s Shane"
            " -c m")))
 
-;; (define-key df-bay12-term-mode-map (kbd "M-@") (pen-lm (sh (concat "pen-x -tma \"" (tm-get-window) "\" -s \"222\""))))
+;; (define-key df-bay12-term-mode-map (kbd "M-@") (pen-lm (pen-sh (concat "pen-x -tma \"" (tm-get-window) "\" -s \"222\""))))
 
 (define-key df-bay12-term-mode-map (kbd "M-@") #'df-test)
 (define-key df-bay12-term-mode-map (kbd "M-#") #'df-browse)
@@ -245,16 +245,16 @@
 
 (defun tmux-copy-pane-initial-command ()
   (interactive)
-  (chomp (sh "pen-tm copy-pane-command | cat" nil t)))
+  (chomp (pen-sh "pen-tm copy-pane-command | cat" nil t)))
 
 (defun tmux-copy-pane-initial-command-full ()
   (interactive)
-  (chomp (sh "tm-copy-pane-cmd | cat" nil t)))
+  (chomp (pen-sh "tm-copy-pane-cmd | cat" nil t)))
 
 (defun tmux-copy-pane-current-command-full ()
   "Copy the current command and the working directory"
   (interactive)
-  (chomp (sh "tm-copy-pane-cmd | cat" nil t)))
+  (chomp (pen-sh "tm-copy-pane-cmd | cat" nil t)))
 
 (defun string2kbm (s)
   (interactive (list (read-string "literal:")))
@@ -287,7 +287,7 @@
 (defun make-kbd-from-string (s)
   (let ((quoted-string (let ((print-escape-newlines t))
                          (prin1-to-string s))))
-    (chomp (eval `(ci (sh (concat "pen-ci emacs-string2kbm " (pen-q ,s)) nil t))))))
+    (chomp (eval `(ci (pen-sh (concat "pen-ci emacs-string2kbm " (pen-q ,s)) nil t))))))
 
 (defun make-kbd-from-string-nodeps (s)
   (let ((quoted-string (let ((print-escape-newlines t))
