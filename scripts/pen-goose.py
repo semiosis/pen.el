@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import os
-import cohere
+import goose
 import json
 
 def hard_bound(x, lower_lim, upper_lim):
@@ -13,7 +13,7 @@ def hard_bound(x, lower_lim, upper_lim):
 
     return x
 
-COHERE_API_KEY = os.environ.get("COHERE_API_KEY")
+GOOSE_API_KEY = os.environ.get("GOOSE_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL") or "large"
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
 PEN_PAYLOADS = os.environ.get("PEN_PAYLOADS")
@@ -53,7 +53,7 @@ PEN_MIN_TOKENS = hard_bound(PEN_MIN_TOKENS, PEN_ENGINE_MIN_TOKENS, PEN_ENGINE_MA
 PEN_MAX_TOKENS = hard_bound(PEN_MAX_TOKENS, PEN_ENGINE_MIN_TOKENS, PEN_ENGINE_MAX_TOKENS)
 
 if __name__ == "__main__":
-    # Get your API Key at https://cohere.ai/
+    # Get your API Key at https://goose.ai/
 
     if PEN_ENGINE_MAX_GENERATED_TOKENS:
         PEN_MAX_GENERATED_TOKENS = hard_bound(PEN_MAX_GENERATED_TOKENS, 0, PEN_ENGINE_MAX_GENERATED_TOKENS)
@@ -68,8 +68,8 @@ if __name__ == "__main__":
 
     final_stop_sequence = PEN_STOP_SEQUENCE
 
-    api_key = os.environ.get("COHERE_API_KEY")
-    co = cohere.Client(api_key)
+    api_key = os.environ.get("GOOSE_API_KEY")
+    co = goose.Client(api_key)
 
     model = os.environ.get("PEN_MODEL")
 
