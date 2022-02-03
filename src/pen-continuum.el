@@ -5,6 +5,8 @@
 ;; It may need to be trained on watching people program, or over git history rather than to mimic coherence in final source code.
 ;; But that will definitely happen.
 
+;; I could possibly find a prompt closer to this effect by using git markup
+
 ;; Run the command a couple of times before running the prompt
 
 (defun continuum-add-state (state)
