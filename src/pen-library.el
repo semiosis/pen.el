@@ -673,6 +673,7 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
 (defun pen-current-filename-maybe ()
   (sor (pen-f-basename (get-path nil t)) "untitled"))
 
+;; echo hi | pen-eipe -data '{"buttons": [{"label": "Abort", "command": "pen-revert-kill-buffer-and-window", "type": "off-button"},{"label": "Accept", "command": "pen-save-and-kill-buffer-window-and-emacsclient", "type": "on-button"}]}'
 (defun pen-eipe (input &optional chomp wintype
                        prompttext
                        helptext
