@@ -130,14 +130,17 @@
           (pen-eipe-set-info-preoverlay info)
           (f-delete fp t)))))
 
+;; echo hi | pen-eipe -data '{"buttons": [{"label": "Abort", "command": "World Wide Web"}]}'
 (defun pen-eipe-set-eipe-data (info)
   ;; This should generate an overlay buttons for accept and abort.
   ;; Load the json.
   ;; Then get a list of buttons, etc.
   ;; Generate them.
 
-  (pen-tv
-   (pps (json-read-from-string info)))
+  (let* ((data (json-read-from-string info))
+         (buttons (cdr (assoc 'buttons data))))
+    (pen-tv
+     (pps buttons)))
 
   ;; (overlay-put
   ;;  (make-overlay (point-min) (point-min))
