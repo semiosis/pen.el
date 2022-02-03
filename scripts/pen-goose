@@ -60,11 +60,11 @@ pen_goose() {
     # Since Goose uses the OpenAi API, I can just look at the http requests in the openai client to find the parameters
 
     # \"n\": $PEN_N_COMPLETIONS,
-    cmd curl "https://api.goose.ai/v1/engines/$PEN_MODEL/completions" \
+    curl "https://api.goose.ai/v1/engines/$PEN_MODEL/completions" \
          -H 'Content-Type: application/json' \
          -H "Authorization: Bearer $GOOSE_API_KEY" \
          -X POST \
-         -d "{\"prompt\": "$FINAL_PEN_PROMPT",
+         -d "{\"prompt\": $FINAL_PEN_PROMPT,
               \"max_tokens\": $PEN_MAX_GENERATED_TOKENS,
               \"stop\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
               \"top_p\": $PEN_TOP_P,
@@ -72,7 +72,7 @@ pen_goose() {
               \"temperature\": $PEN_TEMPERATURE,
               \"presence_penalty\": $PEN_PRESENCE_PENALTY,
               \"frequency_penalty\": $PEN_FREQUENCY_PENALTY
-             }" | pen-tv
+             }"
 }
 
 pen_goose "$@" | pen-log goose-temp &>/dev/null
