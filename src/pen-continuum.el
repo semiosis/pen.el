@@ -2,7 +2,7 @@
 (defset pen-terminal-states '())
 
 ;; It's possible that I need a language model which is trained on editing text at scale.
-;; It may need to be trained on watching people program rather than source code.
+;; It may need to be trained on watching people program rather than to mimic coherence in source code.
 ;; But that will definitely happen.
 
 ;; Run the command a couple of times before running the prompt
