@@ -171,8 +171,8 @@
                    (propertize "  " 'face 'pen-none-face))
 
                   (insert-button label
-                                 type
-                                 'on-button
+                                 'type
+                                 (intern type)
                                  'action
                                  (eval `(lambda (b) (funcall ',(intern command)))))))
           (overlay-put
