@@ -1,17 +1,17 @@
 #!/bin/bash
 
-: "${COHERE_API_KEY:="$PEN_LM_KEY"}"
+: "${GOOSE_API_KEY:="$PEN_LM_KEY"}"
 
-if test -s $HOME/.pen/cohere_api_key; then
-    : "${COHERE_API_KEY:="$(cat $HOME/.pen/cohere_api_key)"}"
+if test -s $HOME/.pen/goose_api_key; then
+    : "${GOOSE_API_KEY:="$(cat $HOME/.pen/goose_api_key)"}"
 fi
 
-test -n "$COHERE_API_KEY" || {
-    echo "COHERE_API_KEY not given to script"
+test -n "$GOOSE_API_KEY" || {
+    echo "GOOSE_API_KEY not given to script"
     exit 1
 }
 
-export COHERE_API_KEY
+export GOOSE_API_KEY
 
 # This only really uses the env vars
-pen-cohere.py "$@" | pen-log cohere-temp
+pen-goose.py "$@" | pen-log goose-temp
