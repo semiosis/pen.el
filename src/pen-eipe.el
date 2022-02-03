@@ -139,8 +139,12 @@
 
   (let* ((data (json-read-from-string info))
          (buttons (cdr (assoc 'buttons data))))
-    (pen-tv
-     (pps buttons)))
+
+    (loop for b in (pen-vector2list buttons) do
+          (let* ((label (cdr (assoc 'label b)))
+                 (command (cdr (assoc 'command b))))
+            (pen-tv
+             (pps label)))))
 
   ;; (overlay-put
   ;;  (make-overlay (point-min) (point-min))
