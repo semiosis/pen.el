@@ -114,10 +114,6 @@
 (define-key rat-term-mode-map (kbd "M-<") (pen-lm (ekm "g g")))
 (define-key rat-term-mode-map (kbd "M->") (pen-lm (ekm "G")))
 
-;; (define-key asciimation-term-mode-map (kbd "q") (pen-lm (ekm "C-\\ C-n : q C-m")))
-
-;; I had to disable asciimation-term-mode for the macro to go through
-;; Because q is bound
 (define-key asciimation-term-mode-map (kbd "q") (lm
                                                  (let ((asciimation-term-mode nil))
                                                    (ekm "C-\\ C-n : q C-m"))))
