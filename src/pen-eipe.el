@@ -159,25 +159,22 @@
 
     (if buttons
         (progn
-          (overlay-put
-                   (make-overlay (point) (point))
-                   'after-string
-                   (propertize " " 'face 'pen-none-face))
           (loop for b in buttons do
                 (let* ((label (cdr (assoc 'label b)))
                        (command (cdr (assoc 'command b)))
                        (type (or (cdr (assoc 'type b))
                                  'on-button)))
 
+                  (overlay-put
+                   (make-overlay (point) (point))
+                   'after-string
+                   (propertize " " 'face 'pen-none-face))
+
                   (insert-button label
                                  type
                                  'on-button
                                  'action
-                                 (eval `(lambda (b) (funcall ',(intern command)))))
-                  (overlay-put
-                   (make-overlay (point) (point))
-                   'after-string
-                   (propertize " " 'face 'pen-none-face))))
+                                 (eval `(lambda (b) (funcall ',(intern command)))))))
           (overlay-put
            (make-overlay (point) (point))
            'after-string
