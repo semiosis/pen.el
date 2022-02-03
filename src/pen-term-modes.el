@@ -315,15 +315,10 @@
 (define-key irssi-term-mode-map (kbd "M-/") #'irssi-search-channels)
 
 (define-key br-term-mode-map (kbd "C-h") (pen-lm (ekm "DEL")))
-;; (define-key br-term-mode-map (kbd "C-h") (pen-lm (tsk "DC")))
-
-
-
 
 (defun term-get-url-at-point ()
   (interactive)
   (pen-copy (pen-sh/xurls (term-get-line-at-point)) t))
-
 
 (define-key nano-term-mode-map (kbd "M-u") #'term-get-url-at-point)
 
