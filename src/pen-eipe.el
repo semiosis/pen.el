@@ -159,6 +159,10 @@
 
     (if buttons
         (progn
+          (overlay-put
+                   (make-overlay (point) (point))
+                   'after-string
+                   (propertize " " 'face 'pen-none-face))
           (loop for b in buttons do
                 (let* ((label (cdr (assoc 'label b)))
                        (command (cdr (assoc 'command b)))
@@ -173,8 +177,7 @@
                   (overlay-put
                    (make-overlay (point) (point))
                    'after-string
-                   (propertize " " 'face 'pen-none-face))
-                  (insert " ")))
+                   (propertize " " 'face 'pen-none-face))))
           (overlay-put
            (make-overlay (point) (point))
            'after-string
