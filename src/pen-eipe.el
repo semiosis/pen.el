@@ -130,6 +130,23 @@
           (pen-eipe-set-info-preoverlay info)
           (f-delete fp t)))))
 
+(defsetface off-button-face
+  '((t :foreground "#222222"
+       :background "#444444"
+       :weight bold
+       :underline t))
+  "Face for off buttons.")
+
+(defsetface on-button-face
+  '((t :foreground "#444444"
+       :background "#00aa00"
+       :weight bold
+       :underline t))
+  "Face for on buttons.")
+
+(define-button-type 'on-button 'follow-link t 'help-echo "Click to turn off" 'face 'on-button-face)
+(define-button-type 'off-button 'follow-link t 'help-echo "Click to turn on" 'face 'off-button-face)
+
 ;; echo hi | pen-eipe -data '{"buttons": [{"label": "Abort", "command": "World Wide Web"}]}'
 (defun pen-eipe-set-eipe-data (info)
   ;; This should generate an overlay buttons for accept and abort.
@@ -138,20 +155,28 @@
   ;; Generate them.
 
   (let* ((data (json-read-from-string info))
-         (buttons (cdr (assoc 'buttons data))))
+         (buttons (pen-vector2list (cdr (assoc 'buttons data)))))
 
-    (loop for b in (pen-vector2list buttons) do
-          (let* ((label (cdr (assoc 'label b)))
-                 (command (cdr (assoc 'command b))))
-            (pen-tv
-             (pps label)))))
+    (if buttons
+        (progn
+          (loop for b in buttons do
+                (let* ((label (cdr (assoc 'label b)))
+                       (command (cdr (assoc 'command b))))
 
-  ;; (overlay-put
-  ;;  (make-overlay (point-min) (point-min))
-  ;;  'after-string
-  ;;  (concat (propertize info 'face 'pen-human-prompt)
-  ;;          (propertize "\n" 'face 'pen-none-face)))
-  )
+                  (insert-button label
+                                 'type
+                                 'on-button
+                                 'action
+                                 (eval `(lambda (b) (funcall ',(intern command)))))
+                  (overlay-put
+                   (make-overlay (point) (point))
+                   'after-string
+                   (propertize " " 'face 'pen-none-face))
+                  (insert " ")))
+          (overlay-put
+           (make-overlay (point) (point))
+           'after-string
+           (propertize "\n" 'face 'pen-none-face))))))
 
 (defun pen-find-file-eipe-data ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_eipe_data")))
