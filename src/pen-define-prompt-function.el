@@ -1485,7 +1485,13 @@
              (pen-eipec final-prompt "nw"
                         nil
                         nil
-                        "Final prompt edit by a human:\n\n"))
+                        "Final prompt edit by a human:\n\n"
+
+                        ;; echo hi | pen-eipe -data '{"buttons": [{"label": "Abort", "command": "pen-revert-kill-buffer-and-window", "type": "off-button"},{"label": "Accept", "command": "pen-save-and-kill-buffer-window-and-emacsclient", "type": "on-button"}]}'
+
+                        nil nil
+
+                        ))
             (t final-prompt)))
 
           (collect-from-pos

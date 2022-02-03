@@ -678,12 +678,17 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
                        prompttext
                        helptext
                        overlay-text
-                       preoverlay-text detach)
+                       preoverlay-text
+                       data
+                       detach)
   "`prompttext` is read-only text at the start of the
 buffer which is not included when this function returns"
 
   (setq wintype (or (sor wintype)
                     "sps"))
+
+  (if (not (sor data))
+      (setq data "{\"buttons\": [{\"label\": \"Abort\", \"command\": \"pen-revert-kill-buffer-and-window\", \"type\": \"off-button\"},{\"label\": \"Accept\", \"command\": \"pen-save-and-kill-buffer-window-and-emacsclient\", \"type\": \"on-button\"}]}"))
 
   (pen-sn (pen-cmd "pen-tvipe"
                    "-wintype" wintype
@@ -704,8 +709,8 @@ buffer which is not included when this function returns"
   ;;              ,input nil nil nil nil nil nil ,chomp))))
   )
 
-(defun pen-eipec (input &optional wintype prompttext helptext overlaytext preoverlaytext)
-  (pen-eipe input t wintype prompttext helptext overlaytext preoverlaytext))
+(defun pen-eipec (input &optional wintype prompttext helptext overlaytext preoverlaytext data detach)
+  (pen-eipe input t wintype prompttext helptext overlaytext preoverlaytext data detach))
 
 (defun pen-internet-connected-p ()
   (pen-snq "internet-connected-p"))
