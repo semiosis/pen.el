@@ -83,6 +83,15 @@ case "$sn" in
     }
     ;;
 
+    goose-complete.sh|goose-*) {
+        completer_sn=pen-goose
+        : "${GOOSE_API_KEY:="$PEN_LM_KEY"}"
+        export GOOSE_API_KEY
+
+        : "${PEN_MODEL:="large"}"
+    }
+    ;;
+
     cohere-complete.sh|cohere-*) {
         completer_sn=pen-cohere
         : "${COHERE_API_KEY:="$PEN_LM_KEY"}"
