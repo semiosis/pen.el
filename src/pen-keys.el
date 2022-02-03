@@ -14,6 +14,10 @@
   (interactive (list (pen-read-service-key "cohere")))
   (pen-add-key "cohere" key))
 
+(defun pen-add-key-goose (key)
+  (interactive (list (pen-read-service-key "goose")))
+  (pen-add-key "goose" key))
+
 (defun pen-add-key-ai21 (key)
   (interactive (list (pen-read-service-key "ai21")))
   (pen-add-key "ai21" key))

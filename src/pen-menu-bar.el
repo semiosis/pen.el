@@ -244,6 +244,9 @@
     (bindings--define-key menu [mi-pen-add-key-cohere]
       '(menu-item "Add Cohere key" pen-add-key-cohere
                   :help "Add, edit or remove the Cohere key"))
+    (bindings--define-key menu [mi-pen-add-key-goose]
+      '(menu-item "Add Goose key" pen-add-key-goose
+                  :help "Add, edit or remove the Goose key"))
     (bindings--define-key menu [mi-pen-add-key-hf]
       '(menu-item "Add HuggingFace key" pen-add-key-hf
                   :help "Add, edit or remove the HuggingFace key"))

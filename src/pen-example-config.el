@@ -204,6 +204,14 @@
             ;; Automatically check if Cohere key exists and ask for it otherwise
             (call-interactively 'pen-add-key-cohere)))))
 
+  (let ((pen-goose-key-file-path (f-join penconfdir "goose_api_key")))
+    (if (not (f-file-p pen-goose-key-file-path))
+        (let ((envkey (getenv "GOOSE_API_KEY")))
+          (if (sor envkey)
+              (pen-add-key-goose envkey)
+            ;; Automatically check if Goose key exists and ask for it otherwise
+            (call-interactively 'pen-add-key-goose)))))
+
   (let ((pen-alephalpha-key-file-path (f-join penconfdir "alephalpha_api_key")))
     (if (not (f-file-p pen-alephalpha-key-file-path))
         (let ((envkey (getenv "ALEPHALPHA_API_KEY")))

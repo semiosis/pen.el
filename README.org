@@ -94,6 +94,7 @@ https://semiosis.github.io/posts/a-prompting-lsp-server-for-any-language-or-cont
   echo "<nlpcloud key here>" > ~/.pen/nlpcloud_api_key      # https://nlpcloud.io/
   echo "<alephalpha key here>" > ~/.pen/alephalpha_api_key  # https://aleph-alpha.de/
   echo "<cohere key here>" > ~/.pen/cohere_api_key          # https://cohere.ai/
+  echo "<goose key here>" > $HOME/.pen/goose_api_key        # https://goose.ai/
 
   # Add the scripts to the PATH
   echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
