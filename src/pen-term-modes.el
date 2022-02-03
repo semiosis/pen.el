@@ -367,7 +367,4 @@
 (define-key rubiks-cube-term-mode-map (kbd "pen-x") 'spinz)
 (define-key rubiks-cube-term-mode-map (kbd "X") 'spinz-inv)
 
-;; (define-key hte-term-mode-map (kbd "<Esc>") (pen-lm (tsk "<Esc>")))
-;; (define-key hte-term-mode-map (kbd "<Esc>") nil)
-
 (provide 'pen-term-modes)
