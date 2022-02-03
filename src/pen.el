@@ -105,6 +105,7 @@
 (require 'pen-server-suggest)
 (require 'pen-vim)
 (require 'pen-paste)
+(require 'pen-continuum)
 ;; Otherwise, it will break host magit
 ;; (if (pen-snq "inside-docker-p")
 ;;     (require 'pen-auto-mode-load))
