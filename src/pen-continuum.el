@@ -4,10 +4,10 @@
 ;; It's possible that I need a language model which is trained on editing text at scale.
 ;; It may need to be trained on watching people program, or over git history rather than to mimic coherence in final source code.
 ;; But that will definitely happen.
+;; I could possibly find a prompt closer to this effect by using git markup.
 
-;; I could possibly find a prompt closer to this effect by using git markup
-
-;; Run the command a couple of times before running the prompt
+;; Usage:
+;; Run the `continuum-push` command a couple of times before running the prompt
 
 (defun continuum-add-state (state)
   (interactive (list (buffer-string-visible)))
