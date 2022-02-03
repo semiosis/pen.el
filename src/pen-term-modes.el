@@ -61,9 +61,6 @@
     (eval `(defcmdmode ,cmd))
     (eval `(,fnsym ,@args))))
 
-;; Reenable this
-
-;; TODO This should be implicit and creating bindings for programs in term should require no extra work
 (defalias 'midnight-commander-term-mode 'mc-term-mode)
 
 (defset pen-term-modes
@@ -71,9 +68,6 @@
 
 (defalias 'v-term-mode 'vim-term-mode)
 (defalias 'vs-term-mode 'vim-term-mode)
-
-;; We don't want a global mode
-;; (define-globalized-minor-mode global-mc-minor-mode mc-minor-mode mc-minor-mode)
 
 (defun zsh-copy-previous-line ()
   (interactive)
