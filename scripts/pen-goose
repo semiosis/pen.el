@@ -41,7 +41,11 @@ sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
 if test -n "$PEN_N_COMPLETIONS" && test "$PEN_N_COMPLETIONS" -gt 1; then
     if test "$PEN_N_COMPLETIONS" -gt 4; then
-        PEN_N_COMPLETIONS=4
+        PEN_N_COMPLETIONS=2
+
+        # the mechanism of using multiple prompts might work for a paid
+        # account, but not for the free one
+        PEN_N_COMPLETIONS=1
     fi
 
     FINAL_PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT" | pen-q-jq | awk 1)"
@@ -64,7 +68,7 @@ pen_goose() {
     # Since Goose uses the OpenAi API, I can just look at the http requests in the openai client to find the parameters
 
     # \"n\": $PEN_N_COMPLETIONS,
-    curl "https://api.goose.ai/v1/engines/$PEN_MODEL/completions" \
+    cmd curl "https://api.goose.ai/v1/engines/$PEN_MODEL/completions" \
          -H 'Content-Type: application/json' \
          -H "Authorization: Bearer $GOOSE_API_KEY" \
          -X POST \
@@ -76,7 +80,7 @@ pen_goose() {
               \"temperature\": $PEN_TEMPERATURE,
               \"presence_penalty\": $PEN_PRESENCE_PENALTY,
               \"frequency_penalty\": $PEN_FREQUENCY_PENALTY
-             }"
+             }" | pen-tv
 }
 
 pen_goose "$@" | pen-log goose-temp &>/dev/null
