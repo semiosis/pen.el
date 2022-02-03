@@ -1593,7 +1593,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$OPENAI_API_KEY" && printf -- "%s " -e "OPENAI_API_KEY:$OPENAI_API_KEY" ) \
         $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
         $(test -n "$PROMPTS_DIR" && printf -- "%s " -v "$PROMPTS_DIR:/root/.emacs.d/host/prompts" ) \
-        $(test -n "$PEN_ENGINES_DIR" && printf -- "%s " -v "$ENGINES_DIR:/root/.emacs.d/host/engines" ) \
+        $(test -n "$PEN_ENGINES_DIR" && printf -- "%s " -v "$PEN_ENGINES_DIR:/root/.emacs.d/host/engines" ) \
         $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
         $(test -n "$CONTRIB_DIR" && printf -- "%s " -v "$CONTRIB_DIR:/root/.emacs.d/host/pen-contrib.el" ) \
         $(test -n "$PENSIEVE_DIR" && printf -- "%s " -v "$PENSIEVE_DIR:/root/.emacs.d/host/pensieve" ) \

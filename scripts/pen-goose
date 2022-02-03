@@ -13,5 +13,61 @@ test -n "$GOOSE_API_KEY" || {
 
 export GOOSE_API_KEY
 
-# This only really uses the env vars
-pen-goose.py "$@" | pen-log goose-temp
+export PEN_PROMPT
+export PEN_MODEL
+export PEN_MIN_TOKENS
+export PEN_MAX_TOKENS
+export PEN_MIN_GENERATED_TOKENS
+export PEN_MAX_GENERATED_TOKENS
+export PEN_ENGINE_MIN_TOKENS
+export PEN_ENGINE_MAX_TOKENS
+export PEN_ENGINE_MAX_GENERATED_TOKENS
+export PEN_TEMPERATURE
+export PEN_TOP_P
+export PEN_TOP_K
+export PEN_STOP_SEQUENCE
+export PEN_N_COMPLETIONS
+
+: "${PEN_N_COMPLETIONS:="4"}"
+
+sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
+
+pen_goose() {
+    if printf -- "%s\n" "$PEN_FLAGS" | grep -q -P '<goose-begin-newline>'; then
+        echo
+    fi
+
+    # cmd-nice-jq is very slow. Find a faster, reliable solution.
+    # Or use python
+
+    # \"maxTokens\": $PEN_ENGINE_MAX_GENERATED_TOKENS,
+
+    # Since Goose uses the OpenAi API, I can just look at the http requests in the openai client to find the parameters
+
+    curl "https://api.goose.ai/engines/$PEN_MODEL/completions" \
+         -H 'Content-Type: application/json' \
+         -H "Authorization: Bearer $GOOSE_API_KEY" \
+         -X POST \
+         -d "{\"prompt\": $(cmd-nice-jq "$PEN_PROMPT"),
+              \"n\": $PEN_N_COMPLETIONS,
+              \"max_tokens\": $PEN_MAX_GENERATED_TOKENS,
+              \"stop\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
+              \"best_of\": $PEN_TOP_K,
+              \"temperature\": $PEN_TEMPERATURE
+             }"
+}
+
+pen_goose "$@" | pen-log goose-temp &>/dev/null
+
+if test "$PEN_N_COMPLETIONS" = 1; then
+    printf -- "%s" "$PEN_PROMPT"
+    cat ~/.pen/temp/goose-temp.txt | jq -r ".completions[$((i - 1))].data.text"
+else
+    for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
+        echo "===== Completion $i ====="
+        {
+        printf -- "%s" "$PEN_PROMPT"
+        cat ~/.pen/temp/goose-temp.txt | jq -r ".completions[$((i - 1))].data.text"
+        } | awk 1
+    done | pen-log goose
+fi
