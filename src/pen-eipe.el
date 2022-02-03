@@ -182,20 +182,16 @@
                            ;;         image
                            ;;         (propertize title 'display (lsp-ui-sideline--compute-height)))
                            (concat
-                            (propertize " " 'display `(space :align-to (- right-fringe ,(lsp-ui-sideline--align (+ len (length image)) margin))))
+                            (propertize " " 'display `(space :align-to (- left-fringe ,(lsp-ui-sideline--align (+ len (length image)) margin))))
                             image
                             (propertize title 'display (lsp-ui-sideline--compute-height))))
-                          (pos-ov
-                           ;; nil
-                           (lsp-ui-sideline--find-line (+ 1 (length title) (length image)) bol eol t))
-                          (ov (and pos-ov (make-overlay (car pos-ov) (car pos-ov)))))
-                    (when pos-ov
-                      (overlay-put ov 'after-string string)
-                      (overlay-put ov 'before-string " ")
-                      (overlay-put ov 'kind 'actions)
-                      (overlay-put ov 'position (car pos-ov))
-                      ;; (push ov lsp-ui-sideline--ovs)
-                      ))
+                          (ov (make-overlay (point-min) (+ 1 (point-min)))))
+                    (overlay-put ov 'after-string string)
+                    (overlay-put ov 'before-string " ")
+                    (overlay-put ov 'kind 'actions)
+                    (overlay-put ov 'position (point-min))
+                    ;; (push ov lsp-ui-sideline--ovs)
+                    )
 
                   ;; (overlay-put
                   ;;  (make-overlay (point) (point))
