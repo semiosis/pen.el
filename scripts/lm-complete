@@ -182,6 +182,11 @@ case "$PEN_LM_COMMAND" in
     }
     ;;
 
+    goose-complete.sh) {
+        export PEN_N_COMPLETIONS=1
+    }
+    ;;
+
     human-complete.sh) {
         # Need this because completions are always 1
         export PEN_N_COMPLETIONS=1

@@ -52,7 +52,7 @@ if test -n "$PEN_N_COMPLETIONS" && test "$PEN_N_COMPLETIONS" -gt 1; then
     FINAL_PEN_PROMPT="[$(printf -- "%s\n" "$FINAL_PEN_PROMPT" | pen-str repeat-string "$PEN_N_COMPLETIONS" | pen-str join ',')]"
 else
     # FINAL_PEN_PROMPT="$(cmd-nice-jq "$PEN_PROMPT")"
-    FINAL_PEN_PROMPT="$PEN_PROMPT"
+    FINAL_PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT" | pen-q-jq)"
 fi
 
 pen_goose() {
