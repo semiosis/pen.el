@@ -1,13 +1,6 @@
 ;; See also:
 ;; j:pen-list-of-tuis
 
-;; pen-term-modes.el comes before pen-term.el
-;; (require 'pen-term)
-
-;; (fboundp 'esh-chkservice)
-
-;; Enable this again when it starts working
-
 (defset pen-term-modes-commands '(tmux
                                  asciimation
                                  ncdu br
