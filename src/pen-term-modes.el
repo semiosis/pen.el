@@ -161,8 +161,6 @@
            " -s Shane"
            " -c m")))
 
-;; (define-key df-bay12-term-mode-map (kbd "M-@") (pen-lm (pen-sh (concat "pen-x -tma \"" (tm-get-window) "\" -s \"222\""))))
-
 (define-key df-bay12-term-mode-map (kbd "M-@") #'df-test)
 (define-key df-bay12-term-mode-map (kbd "M-#") #'df-browse)
 (define-key df-bay12-term-mode-map (kbd "M-$") #'df-create-world)
