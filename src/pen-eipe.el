@@ -157,34 +157,34 @@
   (let* ((data (json-read-from-string info))
          (buttons (pen-vector2list (cdr (assoc 'buttons data)))))
 
-    (if buttons
-        (progn
-          (loop for b in buttons do
-                (let* ((label (cdr (assoc 'label b)))
-                       (command (cdr (assoc 'command b)))
-                       (type (or (cdr (assoc 'type b))
-                                 'on-button)))
+    (never)(if buttons
+     (progn
+       (loop for b in buttons do
+             (let* ((label (cdr (assoc 'label b)))
+                    (command (cdr (assoc 'command b)))
+                    (type (or (cdr (assoc 'type b))
+                              'on-button)))
 
-                  (overlay-put
-                   (make-overlay (point) (point))
-                   'after-string
-                   (propertize
-                    " "
-                    'face 'pen-none-face))
+               (overlay-put
+                (make-overlay (point) (point))
+                'after-string
+                (propertize
+                 " "
+                 'face 'pen-none-face))
 
-                  ;; Don't use buttons
-                  ;; Instead use a clickable overlay similar to this
-                  ;; j:lsp-ui-sideline--code-actions
-                  (insert-button label
-                                 'type
-                                 (intern type)
-                                 'action
-                                 (eval `(lambda (b) (funcall ',(intern command)))))))
+               ;; Don't use buttons
+               ;; Instead use a clickable overlay similar to this
+               ;; j:lsp-ui-sideline--code-actions
+               (insert-button label
+                              'type
+                              (intern type)
+                              'action
+                              (eval `(lambda (b) (funcall ',(intern command)))))))
 
-          (overlay-put
-           (make-overlay (point) (point))
-           'after-string
-           (propertize "\n" 'face 'pen-none-face))))))
+       (overlay-put
+        (make-overlay (point) (point))
+        'after-string
+        (propertize "\n" 'face 'pen-none-face))))))
 
 (defun pen-find-file-eipe-data ()
   (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_eipe_data")))
