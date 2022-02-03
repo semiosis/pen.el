@@ -696,7 +696,8 @@ buffer which is not included when this function returns"
                                   "-pt" prompttext
                                   "-help" helptext
                                   "-ov" overlay-text
-                                  "-pov" preoverlay-text))
+                                  "-pov" preoverlay-text
+                                  "-data" data))
           ;; don't put the detach here
           input nil nil detach nil nil nil chomp)
 
