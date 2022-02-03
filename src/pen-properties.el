@@ -65,6 +65,10 @@
 (defun pen-global-variables-json ()
   (pen-list-global-variables))
 
+(defun emacs-properties ()
+  `(("daemon/server name" . ,(pen-daemon-name))
+    ("after-init-hook" . ,(str after-init-hook))))
+
 (defun pen-emacs-properties-json ()
   "Gets some properties of the current emacs buffer in json format."
   (pen-json-encode-alist (emacs-properties)))
@@ -72,7 +76,7 @@
 (defun pen-tvipe-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (cl-tvipe (pen-json-encode-alist
+  (pen-cl-tvipe (pen-json-encode-alist
           `(("emacs-properties" ,(emacs-properties))
             ("pen-buffer-properties " ,(pen-buffer-properties)))) :tm_wincmd "sph" :b-nowait t :b-quiet t))
 
@@ -86,7 +90,7 @@
 (defun pen-tvipe-pen-emacs-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (cl-tvipe (pen-emacs-properties-json) :tm_wincmd "sph" :b-nowait t :b-quiet t))
+  (pen-cl-tvipe (pen-emacs-properties-json) :tm_wincmd "sph" :b-nowait t :b-quiet t))
 
 (defun pen-etv-pen-emacs-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
@@ -101,7 +105,7 @@
 (defun pen-tvipe-pen-buffer-variables-json ()
   "Gets the local variables of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (cl-tvipe (pen-buffer-variables-json) :tm_wincmd "sph" :b-nowait t :b-quiet t))
+  (pen-cl-tvipe (pen-buffer-variables-json) :tm_wincmd "sph" :b-nowait t :b-quiet t))
 
 (defun pen-etv-pen-buffer-variables-json ()
   "Gets the local variables of the current emacs buffer in json format and puts it into tmux."
@@ -130,7 +134,7 @@
 (defun pen-tvipe-pen-buffer-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (cl-tvipe (pen-buffer-variables-json) :tm_wincmd "sph" :b-nowait t :b-quiet t))
+  (pen-cl-tvipe (pen-buffer-variables-json) :tm_wincmd "sph" :b-nowait t :b-quiet t))
 
 (defun pen-etv-pen-buffer-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
