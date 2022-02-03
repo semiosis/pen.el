@@ -283,17 +283,6 @@
 
 (define-key pen-map (kbd "H-l") 'pen-run)
 
-(defun sps-nlsc (os)
-  (interactive (list (pen-detect-language-ask)))
-  ;; (pen-sps (pen-cmd "pen-eterm" "nlsc" "-nd" os))
-  (pen-sps (pen-cmd "nlsc" os)))
-
-(defun sps-nlsh (os)
-  (interactive (list (fz (ilist 20 "distinctive linux distributions including nixos")
-                         nil nil "sps-nlsh OS: ")))
-  ;; (pen-sps (pen-cmd "pen-eterm" "nlsh" "-nd" os))
-  (pen-sps (pen-cmd "nlsh" os)))
-
 
 ;; code M-SPC c
 ;; prose H-"

@@ -754,4 +754,9 @@ buffer which is not included when this function returns"
   (pen-sn (concat "pen-str trim-max-chars " (str n))
           s))
 
+(defun pen-str-add-trailing-space-if-not-empty (s)
+  (if (sor s)
+      (concat s " ")
+    s))
+
 (provide 'pen-library)
