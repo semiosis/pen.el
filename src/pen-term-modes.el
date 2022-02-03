@@ -326,8 +326,6 @@
            " -s " (pen-q (random 50))
            " -c m")))
 
-;; (setq rubiks-cube-term-mode-map (make-sparse-keymap))
-
 ;; Don't use vim nav, use ijkl
 (define-key rubiks-cube-term-mode-map (kbd "w") (pen-lm (ekm (s-join " " (-repeat 8 "<up>")))))
 (define-key rubiks-cube-term-mode-map (kbd "s") (pen-lm (ekm (s-join " " (-repeat 8 "<down>")))))
