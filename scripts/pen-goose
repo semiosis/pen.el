@@ -71,13 +71,13 @@ pen_goose "$@" | pen-log goose-temp &>/dev/null
 
 {
 if test "$PEN_N_COMPLETIONS" = 1; then
-    printf -- "%s" "$PEN_PROMPT"
+    # printf -- "%s" "$PEN_PROMPT"
     cat ~/.pen/temp/goose-temp.txt | jq -r ".choices[$((i - 1))].text"
 else
     for i in $(seq 1 "$PEN_N_COMPLETIONS"); do
         echo "===== Completion $i ====="
         {
-        printf -- "%s" "$PEN_PROMPT"
+        # printf -- "%s" "$PEN_PROMPT"
         cat ~/.pen/temp/goose-temp.txt | jq -r ".choices[$((i - 1))].text"
         } | awk 1
     done | pen-log goose
