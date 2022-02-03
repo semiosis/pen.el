@@ -539,6 +539,22 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-continuum-menu
+  (let ((menu (make-sparse-keymap "Continuum")))
+    (bindings--define-key menu [pen-continuum-push]
+      '(menu-item "Push" continuum-push
+                  :help "Push a screenshot to Continuum"))
+    (bindings--define-key menu [pen-continuum]
+      '(menu-item "Forecast" continuum
+                  :help "Forecast screen with Continuum"))
+    (bindings--define-key menu [pen-continuum-backwards]
+      '(menu-item "Backcast" continuum-backwards
+                  :help "Backcast screen with Continuum"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-paracosm-menu
   (let ((menu (make-sparse-keymap "Paracosm")))
     (bindings--define-key menu [from-name]
@@ -706,6 +722,9 @@
     (bindings--define-key menu [mi-menu-bar-apostrophe-menu]
       `(menu-item "🎤 Apostrophe" ,menu-bar-apostrophe-menu
                   :help "Talk 1-on-1 to chatbots"))
+    (bindings--define-key menu [mi-menu-bar-continuum-menu]
+      `(menu-item "∞ Continuum" ,menu-bar-continuum-menu
+                  :help "Partake in simulated group conversation between chatbots and humans"))
     (bindings--define-key menu [mi-menu-bar-mtp-menu]
       `(menu-item "🎩Mad Tea-Party" ,menu-bar-mtp-menu
                   :help "Partake in simulated group conversation between chatbots and humans"))
