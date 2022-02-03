@@ -161,10 +161,12 @@
         (progn
           (loop for b in buttons do
                 (let* ((label (cdr (assoc 'label b)))
-                       (command (cdr (assoc 'command b))))
+                       (command (cdr (assoc 'command b)))
+                       (type (or (cdr (assoc 'type b))
+                                 'on-button)))
 
                   (insert-button label
-                                 'type
+                                 type
                                  'on-button
                                  'action
                                  (eval `(lambda (b) (funcall ',(intern command)))))
