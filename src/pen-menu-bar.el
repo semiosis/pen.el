@@ -724,7 +724,7 @@
                   :help "Talk 1-on-1 to chatbots"))
     (bindings--define-key menu [mi-menu-bar-continuum-menu]
       `(menu-item "∞ Continuum" ,menu-bar-continuum-menu
-                  :help "Partake in simulated group conversation between chatbots and humans"))
+                  :help "Imagine your computer's state forwards and backwards in time"))
     (bindings--define-key menu [mi-menu-bar-mtp-menu]
       `(menu-item "🎩Mad Tea-Party" ,menu-bar-mtp-menu
                   :help "Partake in simulated group conversation between chatbots and humans"))
