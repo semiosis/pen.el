@@ -52,9 +52,8 @@
 
 (defun channel-get-room ()
   (let* ((screen (pen-selected-or-preceding-context))
-         (yourname (car (scrape-list "\\[.*(\\+i)\\]" screen)))
-         (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
-    yourname))
+         (room (car (scrape-list "\\[#[a-z_-]+\\]" screen))))
+    room))
 
 (defun channel-get-your-name ()
   (let* ((screen (pen-selected-or-preceding-context))
