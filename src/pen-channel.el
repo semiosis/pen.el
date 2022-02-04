@@ -64,6 +64,7 @@
 (defun channel-get-conversation ()
   (let* ((screen (pen-selected-or-preceding-context))
          (conversation (scrape "<[@ ].*>.*" screen)))
+    (setq conversation (pen-snc "sed 's/^<[@ ]\\(.*\\)>/\\1:/'" conversation))
     conversation))
 
 (defun channel-say-something ()
