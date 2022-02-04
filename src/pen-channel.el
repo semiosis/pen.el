@@ -52,9 +52,10 @@
 
 (defun channel-say-something ()
   (interactive)
-  (let* ((screen (pen-selected-or-preceding-context))
-         (yourname (car (scrape-list "\\[.*(\\+i\\]")) screen)
-         (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i\\]") "\\1" yourname))
-    (pen-insert (pf-say-something-on-irc/2 nil yourname))))
+  (ignore-errors
+    (let* ((screen (pen-selected-or-preceding-context))
+           (yourname (car (scrape-list "\\[.*(\\+i)\\]" screen)))
+           (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
+      (pen-insert (pf-say-something-on-irc/2 nil yourname)))))
 
 (provide 'pen-channel)
