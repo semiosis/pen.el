@@ -53,7 +53,7 @@
 (defun channel-say-something ()
   (interactive)
   (let* ((screen (pen-selected-or-preceding-context))
-         (yourname (scrape "\\[.*(\\+i\\]") screen)
+         (yourname (car (scrape-list "\\[.*(\\+i\\]")) screen)
          (yourname (scrape "\\[.*(\\+i\\]") yourname))
     (pen-insert (pf-say-something-on-irc/2 nil yourname))))
 
