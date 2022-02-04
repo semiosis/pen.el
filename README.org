@@ -111,6 +111,9 @@ https://semiosis.github.io/posts/a-prompting-lsp-server-for-any-language-or-cont
 
 [[./docs/agi.png]]
 
+*** Mac
+You will need xQuartz and Docker Desktop.
+
 ** Information
 - Supported language models :: - [[./docs/compatibility-and-interoperatbility.org]]
 
