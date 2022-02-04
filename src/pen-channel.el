@@ -50,12 +50,17 @@
     ;;   (pen-e-sps (pen-lm (pen-eval-string el))))
     ))
 
+(defun channel-get-name ()
+  (let* ((screen (pen-selected-or-preceding-context))
+         (yourname (car (scrape-list "\\[.*(\\+i)\\]" screen)))
+         (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
+    yourname))
+
 (defun channel-say-something ()
   (interactive)
   (ignore-errors
     (let* ((screen (pen-selected-or-preceding-context))
-           (yourname (car (scrape-list "\\[.*(\\+i)\\]" screen)))
-           (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
-      (pen-insert (pf-say-something-on-irc/2 nil yourname)))))
+           (yourname (channel-get-name)))
+      (pen-insert (pf-say-something-on-irc/2 screen yourname)))))
 
 (provide 'pen-channel)
