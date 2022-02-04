@@ -56,11 +56,17 @@
          (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
     yourname))
 
+(defun channel-get-conversation ()
+  (let* ((screen (pen-selected-or-preceding-context))
+         (conversation (scrape "<[@ ].*>.*" screen)))
+    conversation))
+
 (defun channel-say-something ()
   (interactive)
   (ignore-errors
     (let* ((screen (pen-selected-or-preceding-context))
-           (yourname (channel-get-name)))
-      (pen-insert (pf-say-something-on-irc/2 screen yourname)))))
+           (yourname (channel-get-name))
+           (conversation (channel-get-conversation)))
+      (pen-insert (pf-say-something-on-irc/3 screen conversation yourname)))))
 
 (provide 'pen-channel)
