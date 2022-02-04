@@ -75,4 +75,9 @@
            (conversation (channel-get-conversation)))
       (pen-insert (pf-say-something-on-irc/3 room conversation yourname)))))
 
+(defun channel ()
+  (interactive)
+
+  )
+
 (provide 'pen-channel)
