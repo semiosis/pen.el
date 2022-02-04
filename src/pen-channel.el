@@ -75,9 +75,16 @@
            (conversation (channel-get-conversation)))
       (pen-insert (pf-say-something-on-irc/3 room conversation yourname)))))
 
-(defun channel ()
-  (interactive)
+(defun channel (personality)
+  (interactive (list
+                (fz (pen-list-fictional-characters)
+                    nil nil "Person: ")
+                ;; (read-string-hist "person: ")
+                ))
 
+  ;; TODO
+  ;; - Initiate a Mad-TeaParty client
+  ;; - Run a loop which gets the chatbot to speak
   )
 
 (provide 'pen-channel)
