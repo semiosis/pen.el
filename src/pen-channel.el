@@ -50,7 +50,13 @@
     ;;   (pen-e-sps (pen-lm (pen-eval-string el))))
     ))
 
-(defun channel-get-name ()
+(defun channel-get-room ()
+  (let* ((screen (pen-selected-or-preceding-context))
+         (yourname (car (scrape-list "\\[.*(\\+i)\\]" screen)))
+         (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
+    yourname))
+
+(defun channel-get-your-name ()
   (let* ((screen (pen-selected-or-preceding-context))
          (yourname (car (scrape-list "\\[.*(\\+i)\\]" screen)))
          (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
@@ -64,9 +70,9 @@
 (defun channel-say-something ()
   (interactive)
   (ignore-errors
-    (let* ((screen (pen-selected-or-preceding-context))
-           (yourname (channel-get-name))
+    (let* ((room (channel-get-room))
+           (yourname (channel-get-your-name))
            (conversation (channel-get-conversation)))
-      (pen-insert (pf-say-something-on-irc/3 screen conversation yourname)))))
+      (pen-insert (pf-say-something-on-irc/3 room conversation yourname)))))
 
 (provide 'pen-channel)
