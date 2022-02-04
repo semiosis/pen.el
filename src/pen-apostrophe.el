@@ -12,9 +12,17 @@
   (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
     (pen-e-sps (pen-lm (pen-eval-string el)))))
 
+(defun pen-list-fictional-characters ()
+  (interactive)
+  (ilist 20 "Fictional characters"))
+
 (defun apostrophe-start-chatbot-from-name (name &optional auto)
   "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
-  (interactive (list (read-string-hist "person: ")))
+  (interactive (list
+                (fz (pen-list-fictional-characters)
+                    nil nil "Person: ")
+                ;; (read-string-hist "person: ")
+                ))
 
   (let ((apostrophe-engine
          (or (sor (pen-var-value-maybe 'force-engine)) "")))
