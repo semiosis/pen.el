@@ -185,7 +185,7 @@
                             (propertize " " 'display `(space :align-to (- left-fringe ,(lsp-ui-sideline--align (+ len (length image)) margin))))
                             image
                             (propertize title 'display (lsp-ui-sideline--compute-height))))
-                          (ov (make-overlay (point-min) (+ 1 (point-min)))))
+                          (ov (make-overlay 0 1)))
                     (overlay-put ov 'after-string string)
                     (overlay-put ov 'before-string " ")
                     (overlay-put ov 'kind 'actions)
