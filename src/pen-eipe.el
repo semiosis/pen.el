@@ -167,6 +167,7 @@
                        (bol (point-min))
                        (eol (point-min)))
 
+                  (overlay-put (make-overlay 0 1) 'after-string "\n")
                   (-let* ((title (cdr (assoc 'label b)))
                           (image (lsp-ui-sideline--code-actions-image))
                           (margin (lsp-ui-sideline--margin-width))
