@@ -704,4 +704,6 @@
 (define-key pen-map (kbd "M-l f r") 'helm-mini)
 (define-key pen-map (kbd "M-l M-r M-g") 'find-function)
 
+(define-key pen-map (kbd "M-l M-r M-i") 'pf-say-something-on-irc/1)
+
 (provide 'pen-example-config)
