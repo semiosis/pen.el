@@ -50,4 +50,9 @@
     ;;   (pen-e-sps (pen-lm (pen-eval-string el))))
     ))
 
+(defun channel-say-something ()
+  (interactive)
+  (let ((yourname "Albus"))
+    (pf-say-something-on-irc/2 nil yourname)))
+
 (provide 'pen-channel)
