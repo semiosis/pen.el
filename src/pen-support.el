@@ -390,18 +390,23 @@ Takes into account the current file name."
   "Return a list of matches of re within s.
 delim is used to guarantee the function returns multiple matches per line
 (pen-etv (scrape \"\\b\\w+\\b\" (buffer-string) \" +\"))"
+  (pen-list2str (scrape-list re s delim)))
+
+(defun scrape-list (re s &optional delim)
+  "Return a list of matches of re within s.
+delim is used to guarantee the function returns multiple matches per line
+(pen-etv (scrape \"\\b\\w+\\b\" (buffer-string) \" +\"))"
   (if delim
       (setq s (pen-list2str (s-split delim s))))
-  (pen-list2str
-   (-flatten
-    (cl-loop
-     for
-     line
-     in
-     (s-split "\n" (str s))
-     collect
-     (if (string-match-p re line)
-         (s-replace-regexp (concat "^.*\\(" re "\\).*") "\\1" line))))))
+  (-flatten
+   (cl-loop
+    for
+    line
+    in
+    (s-split "\n" (str s))
+    collect
+    (if (string-match-p re line)
+        (s-replace-regexp (concat "^.*\\(" re "\\).*") "\\1" line)))))
 
 (defun chomp (str)
   "Chomp (remove tailing newline from) STR."

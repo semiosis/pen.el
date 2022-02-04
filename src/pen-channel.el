@@ -52,7 +52,9 @@
 
 (defun channel-say-something ()
   (interactive)
-  (let ((yourname "Albus"))
-    (pf-say-something-on-irc/2 nil yourname)))
+  (let* ((screen (pen-selected-or-preceding-context))
+         (yourname (scrape "\\[.*(\\+i\\]") screen)
+         (yourname (scrape "\\[.*(\\+i\\]") yourname))
+    (pen-insert (pf-say-something-on-irc/2 nil yourname))))
 
 (provide 'pen-channel)
