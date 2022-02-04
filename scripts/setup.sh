@@ -571,3 +571,31 @@ agi isc-dhcp-client
 agi mitmproxy
 
 agi lsof
+
+
+IFS= read -r -d '' racketshcode <<HEREDOC
+raco pkg install --batch readline-gpl
+raco pkg install --batch brag
+raco pkg install --batch memoize
+raco pkg install --batch glob
+raco pkg install --batch racket-langserver
+raco pkg install --batch irc
+raco pkg install --batch python
+raco pkg install --batch snappy
+raco pkg install --batch linea
+raco pkg install --batch shell-pipeline
+raco pkg install --batch rash
+raco pkg install --batch spipe
+raco pkg install --batch describe
+raco pkg install --batch --deps search-auto megaparsack
+raco pkg install racket-langserver
+raco pkg install pollen
+raco pkg install --batch --deps search-auto
+HEREDOC
+
+printf -- "%s\n" "$racketshcode" | while read line; do
+    line="$(p "$line" | sed 's/ --batch//')"
+    eval "set -- $line"
+    shift 3
+    raco pkg install --batch --deps search-auto "$@"
+done
