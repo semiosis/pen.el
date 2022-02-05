@@ -238,6 +238,16 @@ docker() {
     fi
 }
 
+case "$sn" in
+    pi) {
+        sn=pen
+        PEN_USE_GUI=n
+    }
+    ;;
+
+    *)
+esac
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     sh) {
