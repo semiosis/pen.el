@@ -19,6 +19,10 @@ if test -f $HOME/.emacs.d/host/pen.el/config/nvimrc; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/nvimrc ~/.vimrc
 fi
 
+if test -f $HOME/.emacs.d/host/pen.el/config/tmux.conf; then
+    ln -sf $HOME/.emacs.d/host/pen.el/config/tmux.conf ~/.tmux.conf
+fi
+
 # This creates the initial frame
 
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null
