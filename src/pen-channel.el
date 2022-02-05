@@ -124,7 +124,7 @@
 
 
 ;; TODO I have to make this even work
-;; TODO I have to make this asynchronous
+;; TODO I have to make this asynchronous - This is a must
 ;; TODO I have to make this bound to a certain buffer
 (defun channel-loop-chat ()
   (interactive)
