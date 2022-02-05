@@ -51,12 +51,16 @@
     ))
 
 (defun channel-get-room ()
-  (let* ((screen (pen-selected-or-preceding-context))
+  (let* ((screen (buffer-string-visible)
+                 ;; (pen-selected-or-preceding-context)
+                 )
          (room (car (scrape-list "\\[#[a-z_-]+\\]" screen))))
     room))
 
 (defun channel-get-your-name ()
-  (let* ((screen (pen-selected-or-preceding-context))
+  (let* ((screen (buffer-string-visible)
+                 ;; (pen-selected-or-preceding-context)
+                 )
          (yourname (car (scrape-list "\\[.*(\\+i)\\]" screen)))
          (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
     yourname))
@@ -64,9 +68,14 @@
 ;; For the moment I should preprocess IRC content to make it better
 ;; sed "/^[0-9]/s/^/\n/g" | sed -z "s/\n \+/ /g" | sed '/^[^0-9]/d'
 (defun channel-get-conversation ()
-  (let* ((screen (pen-selected-or-preceding-context))
-         (conversation (pen-snc "sed \"/^[0-9]/s/^/\\n/g\" | sed -z \"s/\\n \\+/ /g\" | sed '/^[^0-9]/d'" conversation))
-         (conversation (scrape "<[@ ].*>.*" screen)))
+  (let* ((screen (buffer-string-visible)
+                 ;; (pen-selected-or-preceding-context)
+                 )
+         (conversation (pen-snc "sed \"/^[0-9]/s/^/\\n/g\" | sed -z \"s/\\n    \\+/ /g\" | sed '/^[^0-9]/d'" screen))
+         (conversation (pen-snc "grep -vP -- \"^$\"" conversation))
+         (conversation (pen-snc "grep -v -- \"-\\!-\"" conversation))
+         ;; (conversation (scrape "<[@ ].*>.*" conversation))
+         )
     (setq conversation (pen-snc "sed 's/^<[@ ]\\(.*\\)>/\\1:/'" conversation))
     conversation))
 
