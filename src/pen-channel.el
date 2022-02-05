@@ -70,7 +70,8 @@
          (conversation (pen-snc "sed \"/^[0-9]/s/^/\\n/g\" | sed -z \"s/\\n    \\+/ /g\" | sed '/^[^0-9]/d'" screen))
          (users (s-split " " (pen-snc "sed -n '/Users/{n;n;p}' | grep '\\[' | sed 's/[^ ]* //' | tr -d '[[]@]' | sed 's/  / /g'" conversation)))
          (users-from-conversation (s-split " " (pen-snc "tr -d '[<>@ ]'" (scrape "<[ @][^>]*>" conversation))))
-         (total-users (s-join ", " (-filter-not-empty-string (-uniq (append users users-from-conversation))))))
+         (total-users (s-join ", " (-filter-not-empty-string (-uniq (append users users-from-conversation)))))
+         (total-users (or (sor total-users) "all of them")))
     total-users))
 
 ;; For the moment I should preprocess IRC content to make it better
