@@ -129,11 +129,11 @@
 (defun channel-loop-chat ()
   (interactive)
   (let ((b (current-buffer)))
-    (run-with-idle-timer 5 t
-                         (eval
-                          `(lambda ()
-                             (with-current-buffer ,b
-                               ;; (pen-insert "hello")
-                               (channel-say-something t)))))))
+    (run-with-timer 2 4
+                    (eval
+                     `(lambda ()
+                        (with-current-buffer ,b
+                          ;; (pen-insert "hello")
+                          (channel-say-something t)))))))
 
 (provide 'pen-channel)

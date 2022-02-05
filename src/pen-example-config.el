@@ -705,5 +705,6 @@
 (define-key pen-map (kbd "M-l M-r M-g") 'find-function)
 
 (define-key pen-map (kbd "M-l M-r M-i") 'channel-say-something)
+(define-key pen-map (kbd "M-l M-r M-l") 'channel-loop-chat)
 
 (provide 'pen-example-config)
