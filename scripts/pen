@@ -245,6 +245,13 @@ case "$sn" in
     }
     ;;
 
+    ptm) {
+        sn=pen
+        start_shell=y
+        set -- tmux "$@"
+    }
+    ;;
+
     *)
 esac
 
