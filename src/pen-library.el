@@ -759,4 +759,22 @@ buffer which is not included when this function returns"
       (concat s " ")
     s))
 
+(defun -uniq-u (l &optional testfun)
+  "Return a copy of LIST with all non-unique elements removed."
+
+  (if (not testfun)
+      (setq testfun 'equal))
+
+  ;; Here, contents-hash is some kind of symbol which is set
+
+  (setq testfun (define-hash-table-test 'contents-hash testfun 'sxhash-equal))
+
+  (let ((table (make-hash-table :test 'contents-hash)))
+    (cl-loop for string in l do
+             (puthash string (1+ (gethash string table 0))
+                      table))
+    (cl-loop for key being the hash-keys of table
+             unless (> (gethash key table) 1)
+             collect key)))
+
 (provide 'pen-library)

@@ -62,15 +62,22 @@
                  ;; (pen-selected-or-preceding-context)
                  )
          (yourname (car (scrape-list "\\[.*(\\+i)\\]" screen)))
-         (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
+         (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname))
+         (yourname (pen-snc "tr -d '[<>@ ]'" yourname)))
     yourname))
 
 (defun channel-get-users ()
   (let* ((screen (buffer-string-visible))
          (conversation (pen-snc "sed \"/^[0-9]/s/^/\\n/g\" | sed -z \"s/\\n    \\+/ /g\" | sed '/^[^0-9]/d'" screen))
+         (users-joined (pen-str2lines (pen-snc "sed -n '/-!-.*has joined/p' | cut -d ' ' -f 3 | tr -d '[[]@]'" (buffer-string-visible))))
          (users (s-split " " (pen-snc "sed -n '/Users/{n;n;p}' | grep '\\[' | sed 's/[^ ]* //' | tr -d '[[]@]' | sed 's/  / /g'" conversation)))
-         (users-from-conversation (s-split " " (pen-snc "tr -d '[<>@ ]'" (scrape "<[ @][^>]*>" conversation))))
-         (total-users (s-join ", " (-filter-not-empty-string (-uniq (append users users-from-conversation)))))
+         (users-from-conversation (pen-str2lines (pen-snc "tr -d '[<>@ ]'" (scrape "<[ @][^>]*>" conversation))))
+         ;; (yo (pen-tv (pps (-uniq (-sort #'string-lessp users-from-conversation)))))
+         (total-users (s-join ", " (-filter-not-empty-string
+                                    (-uniq (-sort #'string-lessp (append
+                                                                    users-joined
+                                                                    users
+                                                                    users-from-conversation))))))
          (total-users (or (sor total-users) "all of them")))
     total-users))
 
@@ -88,14 +95,18 @@
          (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation)))
     conversation))
 
-(defun channel-say-something ()
+(defun channel-say-something (&optional auto)
   (interactive)
   (ignore-errors
     (let* ((room (channel-get-room))
            (yourname (channel-get-your-name))
            (conversation (channel-get-conversation))
-           (users (channel-get-users)))
-      (pen-insert (pf-say-something-on-irc/4 room users conversation yourname)))))
+           (users (channel-get-users))
+           (dialog
+            (if auto
+                (pen-one (pf-say-something-on-irc/4 room users conversation yourname))
+              (pf-say-something-on-irc/4 room users conversation yourname))))
+      (pen-insert dialog))))
 
 (defun channel (personality)
   (interactive (list
@@ -108,5 +119,12 @@
   ;; - Initiate a Mad-TeaParty client
   ;; - Run a loop which gets the chatbot to speak
   )
+
+;; TODO I have to make this asynchronous
+(defun channel-loop-chat ()
+  (interactive)
+  (run-with-idle-timer 5 t
+                       (lambda ()
+                         (channel-say-something t))))
 
 (provide 'pen-channel)
