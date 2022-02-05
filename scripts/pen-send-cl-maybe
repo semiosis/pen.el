@@ -1,9 +1,42 @@
 #!/bin/bash
 export TTY
 
+if [ -n "$CALLER_PANE" ]; then
+    CALLER_PANE="$CALLER_PANE"
+else
+    CALLER_PANE="$(tmux display -p "#{pane_id}")"
+fi
+: ${TMUX_PANE:="$CALLER_PANE"}
+
+tpv() {
+    # Retrieving pane variables is actually the same syntax as getting
+    # server options
+
+    TARGET=
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        -t) {
+            TARGET="$2"
+
+            shift
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+    # export TARGET
+
+    if [ -z "$TARGET" ]; then
+        TARGET="$CALLER_TARGET"
+    fi
+
+    varname="$1"
+    tmux display -t "$TARGET" -p "#{$varname}"
+    return 0
+}
+
 pid="$(tpv -t "$TMUX_PANE" pane_pid)"
 
-if printf -- "%s\n" "$rp" | grep -q -P '\bvim\b'; then
+if ! pstree -lAsp "$pid" | grep -q -P '\bvim\b'; then
     TMUX= tmux send-keys "C-l"
 fi
-
