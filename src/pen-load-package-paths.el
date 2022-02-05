@@ -84,6 +84,7 @@
     (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "~/.emacs.d/elpa-light/")))))
   (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "~/.emacs.d/elpa-full/"))))))
 
-(setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "$HOME/.emacs.d/manual-packages/")))))
+(if (f-directory-p (f-full "~/.emacs.d/manual-packages/"))
+    (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "$HOME/.emacs.d/manual-packages/"))))))
 
 (provide 'pen-load-package-paths)
