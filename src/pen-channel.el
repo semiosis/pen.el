@@ -106,7 +106,9 @@
             (if auto
                 (car (pen-one (pf-say-something-on-irc/4 room users conversation yourname)))
               (pf-say-something-on-irc/4 room users conversation yourname))))
-      (pen-insert dialog))))
+
+      (if auto
+          (pen-insert (concat dialog "\n"))))))
 
 (defun channel (personality)
   (interactive (list
