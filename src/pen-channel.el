@@ -72,6 +72,7 @@
                  ;; (pen-selected-or-preceding-context)
                  )
          (conversation (pen-snc "sed \"/^[0-9]/s/^/\\n/g\" | sed -z \"s/\\n    \\+/ /g\" | sed '/^[^0-9]/d'" screen))
+         (conversation (pen-snc "grep -v -- \"\\[\"" conversation))
          (conversation (pen-snc "grep -vP -- \"^$\"" conversation))
          (conversation (pen-snc "grep -v -- \"-\\!-\"" conversation))
          ;; (conversation (scrape "<[@ ].*>.*" conversation))
