@@ -104,7 +104,7 @@
            (users (channel-get-users))
            (dialog
             (if auto
-                (pen-one (pf-say-something-on-irc/4 room users conversation yourname))
+                (car (pen-one (pf-say-something-on-irc/4 room users conversation yourname)))
               (pf-say-something-on-irc/4 room users conversation yourname))))
       (pen-insert dialog))))
 
@@ -131,8 +131,7 @@
                          (eval
                           `(lambda ()
                              (with-current-buffer ,b
-                               (pen-insert "hello")
-                               ;; (channel-say-something t)
-                               ))))))
+                               ;; (pen-insert "hello")
+                               (channel-say-something t)))))))
 
 (provide 'pen-channel)
