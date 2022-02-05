@@ -35,7 +35,6 @@
 (add-to-list 'lispy-goto-symbol-alist
 	           '(racket-mode racket-goto-symbol le-racket))
 
-
 (setq racket-images-system-viewer "rifle")
 
 (defun pen-racket-expand-macro-or-copy ()
@@ -44,7 +43,6 @@
       (progn (call-interactively 'kill-ring-save)
              (reselect-region))
     (racket-goto-symbol)))
-(define-key racket-mode-map (kbd "M-w") #'pen-racket-expand-macro-or-copy)
 
 (defun pen-racket-show-doc-url (url)
   (ignore-errors
@@ -102,16 +100,11 @@
          (pen-copy))
         (t
          (call-interactively 'racket-expand-definition))))
-(define-key racket-mode-map (kbd "M-w") 'racket-expand-at-point)
 
 (defun format-racket-at-point ()
   "Formats racket code, if selected or on a starting parenthesis."
   (interactive)
   (format-sexp-at-point "racket-format"))
-
-(define-key racket-mode-map (kbd "C-M-i") 'racket-format-at-point)
-
-(define-key racket-mode-map (kbd "H-r") nil)
 
 (defun pen-racket-setup ()
   (eldoc-mode -1)
@@ -125,6 +118,10 @@
   (if (bq racket-main-exists)
       (pen-sps "racket-run-main")))
 
+(define-key racket-mode-map (kbd "M-w") #'pen-racket-expand-macro-or-copy)
+(define-key racket-mode-map (kbd "M-w") 'racket-expand-at-point)
+(define-key racket-mode-map (kbd "C-M-i") 'racket-format-at-point)
+(define-key racket-mode-map (kbd "H-r") nil)
 (define-key racket-mode-map (kbd "C-c C-v") 'racket-view-last-image)
 (define-key racket-repl-mode-map (kbd "C-c C-v") 'racket-view-last-image)
 
