@@ -65,6 +65,14 @@
          (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
     yourname))
 
+(defun channel-get-users ()
+  (let* ((screen (buffer-string-visible))
+         (conversation (pen-snc "sed \"/^[0-9]/s/^/\\n/g\" | sed -z \"s/\\n    \\+/ /g\" | sed '/^[^0-9]/d'" screen))
+         (users (s-split " " (pen-snc "sed -n '/Users/{n;n;p}' | grep '\\[' | sed 's/[^ ]* //' | tr -d '[[]@]' | sed 's/  / /g'" conversation)))
+         (users-from-conversation (s-split " " (pen-snc "tr -d '[<>@ ]'" (scrape "<[ @][^>]*>" conversation))))
+         (total-users (s-join ", " (-filter-not-empty-string (-uniq (append users users-from-conversation))))))
+    total-users))
+
 ;; For the moment I should preprocess IRC content to make it better
 ;; sed "/^[0-9]/s/^/\n/g" | sed -z "s/\n \+/ /g" | sed '/^[^0-9]/d'
 (defun channel-get-conversation ()
@@ -85,8 +93,9 @@
   (ignore-errors
     (let* ((room (channel-get-room))
            (yourname (channel-get-your-name))
-           (conversation (channel-get-conversation)))
-      (pen-insert (pf-say-something-on-irc/3 room conversation yourname)))))
+           (conversation (channel-get-conversation))
+           (users (channel-get-users)))
+      (pen-insert (pf-say-something-on-irc/4 room users conversation yourname)))))
 
 (defun channel (personality)
   (interactive (list
