@@ -599,3 +599,6 @@ printf -- "%s\n" "$racketshcode" | while read line; do
     shift 3
     raco pkg install --batch --deps search-auto "$@"
 done
+
+# Create json from shell
+agi jo
