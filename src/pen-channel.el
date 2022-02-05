@@ -125,7 +125,7 @@
 
 ;; TODO I have to make this even work
 ;; TODO I have to make this asynchronous with emacs async - This is a must
-;; and also make use of the daemons
+;; and also make use of the daemons.
 ;; TODO I have to make this bound to a certain buffer
 (defun channel-loop-chat ()
   (interactive)
