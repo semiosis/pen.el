@@ -16,7 +16,6 @@
      (error "Defined in kernel"))
     (_ (error "Not found"))))
 
-
 (defun flymake-racket-setup ()
   "Set up Flymake for Racket."
   (interactive)
