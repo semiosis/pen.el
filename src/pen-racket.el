@@ -1,5 +1,5 @@
-(require 'pen-utils)
 (provide 'flymake-racket)
+(require 'racket-mode)
 
 (defun racket--do-visit-def-or-mod (pen-cmd sym)
   "CMD must be \"def\" or \"mod\". SYM must be `symbolp`."
@@ -35,9 +35,6 @@
 (add-to-list 'lispy-goto-symbol-alist
 	           '(racket-mode racket-goto-symbol le-racket))
 
-(require 'racket-mode)
-(define-key racket-mode-map (kbd "C-c C-v") 'racket-view-last-image)
-(define-key racket-repl-mode-map (kbd "C-c C-v") 'racket-view-last-image)
 
 (setq racket-images-system-viewer "rifle")
 
@@ -127,5 +124,8 @@
   (interactive (list (get-path)))
   (if (bq racket-main-exists)
       (pen-sps "racket-run-main")))
+
+(define-key racket-mode-map (kbd "C-c C-v") 'racket-view-last-image)
+(define-key racket-repl-mode-map (kbd "C-c C-v") 'racket-view-last-image)
 
 (provide 'pen-racket)
