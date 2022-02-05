@@ -3,7 +3,7 @@
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 # Do this so emacs doesn't break when using docker commit
-find ~/.emacs.d/host/ -empty -type d -exec rmdir {} \;
+find ~/.emacs.d/host/ -empty -type d -exec rmdir {} \; 2>/dev/null
 
 sn="$(basename "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
