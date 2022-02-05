@@ -245,6 +245,13 @@ case "$sn" in
     }
     ;;
 
+    pin) {
+        sn=pen
+        PEN_USE_GUI=n
+        no=y
+    }
+    ;;
+
     ptm) {
         sn=pen
         start_shell=y
