@@ -102,10 +102,7 @@
            (ekm "m")
            (call-interactively 'racket-expand-region)))
         (mark-active
-         (pen-copy)
-         ;; (save-mark-and-excursion
-         ;;   (call-interactively 'racket-expand-region))
-         )
+         (pen-copy))
         (t
          (call-interactively 'racket-expand-definition))))
 (define-key racket-mode-map (kbd "M-w") 'racket-expand-at-point)
@@ -122,12 +119,6 @@
 (defun pen-racket-setup ()
   (eldoc-mode -1)
   (remove-hook 'after-change-functions 'lsp-on-change t))
-
-;; (remove-hook 'racket-mode-hook 'pen-racket-setup)
-;; (setq racket-mode-hook (append racket-mode-hook (list 'pen-racket-setup)))
-;; (add-hook 'racket-mode-hook 'pen-racket-setup)
-
-;; (remove-hook 'racket-mode-hook 'pen-racket-setup)
 
 (advice-add 'indent-for-tab-command :around #'ignore-errors-around-advice)
 (advice-add 'indent-according-to-mode :around #'ignore-errors-around-advice)
