@@ -83,9 +83,8 @@
          (conversation (pen-snc "grep -v -- \"\\[\"" conversation))
          (conversation (pen-snc "grep -vP -- \"^$\"" conversation))
          (conversation (pen-snc "grep -v -- \"-\\!-\"" conversation))
-         ;; (conversation (scrape "<[@ ].*>.*" conversation))
-         )
-    (setq conversation (pen-snc "sed 's/^<[@ ]\\(.*\\)>/\\1:/'" conversation))
+         (conversation (pen-snc "sed 's/^<[@ ]\\(.*\\)>/\\1:/'" conversation))
+         (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation)))
     conversation))
 
 (defun channel-say-something ()
