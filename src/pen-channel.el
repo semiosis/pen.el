@@ -108,7 +108,8 @@
               (pf-say-something-on-irc/4 room users conversation yourname))))
 
       (if auto
-          (pen-insert (concat dialog "\n"))))))
+          (pen-insert (concat dialog "\n"))
+        (pen-insert dialog)))))
 
 (defun channel (personality)
   (interactive (list
