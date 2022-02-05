@@ -61,6 +61,7 @@
          (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname)))
     yourname))
 
+;; For the moment I should preprocess IRC content to make it better
 (defun channel-get-conversation ()
   (let* ((screen (pen-selected-or-preceding-context))
          (conversation (scrape "<[@ ].*>.*" screen)))
