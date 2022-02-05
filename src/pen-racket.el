@@ -1,4 +1,4 @@
-(provide 'flymake-racket)
+(require 'flymake-racket)
 (require 'racket-mode)
 
 (defun racket--do-visit-def-or-mod (pen-cmd sym)
@@ -16,7 +16,7 @@
      (error "Defined in kernel"))
     (_ (error "Not found"))))
 
-(require 'flymake-racket)
+
 (defun flymake-racket-setup ()
   "Set up Flymake for Racket."
   (interactive)
