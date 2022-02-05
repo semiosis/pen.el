@@ -131,6 +131,8 @@
                          (eval
                           `(lambda ()
                              (with-current-buffer ,b
-                               (channel-say-something t)))))))
+                               (pen-insert "hello")
+                               ;; (channel-say-something t)
+                               ))))))
 
 (provide 'pen-channel)
