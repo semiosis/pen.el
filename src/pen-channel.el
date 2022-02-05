@@ -127,10 +127,11 @@
 ;; TODO I have to make this asynchronous with emacs async - This is a must
 ;; and also make use of the daemons.
 ;; TODO I have to make this bound to a certain buffer
+;; I must ensure that for emacs daemons, they use their own stdout return file
 (defun channel-loop-chat ()
   (interactive)
   (let ((b (current-buffer)))
-    (run-with-timer 2 4
+    (run-with-timer 2 6
                     (eval
                      `(lambda ()
                         (with-current-buffer ,b
