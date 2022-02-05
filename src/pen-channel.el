@@ -126,8 +126,11 @@
 ;; TODO I have to make this bound to a certain buffer
 (defun channel-loop-chat ()
   (interactive)
-  (run-with-idle-timer 5 t
-                       (lambda ()
-                         (channel-say-something t))))
+  (let ((b (current-buffer)))
+    (run-with-idle-timer 5 t
+                         (eval
+                          `(lambda ()
+                             (with-current-buffer ,b
+                               (channel-say-something t)))))))
 
 (provide 'pen-channel)
