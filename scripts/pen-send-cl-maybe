@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+pid="$(tpv -t "$TMUX_PANE" pane_pid)"
+
+if printf -- "%s\n" "$rp" | grep -q -P '\bvim\b'; then
+    TMUX= tmux send-keys "C-l"
+fi
+
