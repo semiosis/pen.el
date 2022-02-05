@@ -1985,6 +1985,7 @@ May use to generate code from comments."
 (require 'pen-rhizome)
 (require 'pen-net)
 (require 'pen-clojure)
+(require 'pen-racket)
 
 (defun pen-lsp-explain-error ()
   (interactive)
