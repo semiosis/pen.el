@@ -62,8 +62,10 @@
     yourname))
 
 ;; For the moment I should preprocess IRC content to make it better
+;; sed "/^[0-9]/s/^/\n/g" | sed -z "s/\n \+/ /g" | sed '/^[^0-9]/d'
 (defun channel-get-conversation ()
   (let* ((screen (pen-selected-or-preceding-context))
+         (conversation (pen-snc "sed \"/^[0-9]/s/^/\\n/g\" | sed -z \"s/\\n \\+/ /g\" | sed '/^[^0-9]/d'" conversation))
          (conversation (scrape "<[@ ].*>.*" screen)))
     (setq conversation (pen-snc "sed 's/^<[@ ]\\(.*\\)>/\\1:/'" conversation))
     conversation))
