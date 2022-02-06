@@ -188,7 +188,7 @@
                                           (eval
                                            `(lambda ()
                                               (if (buffer-killed? ,b)
-                                                  (cancel-timer (assoc ,n channel-timers))
+                                                  (cancel-timer (cdr (assoc ,n channel-timers)))
                                                 (with-current-buffer ,b
                                                   ;; (pen-insert "hello")
                                                   (channel-say-something ,b t))))))))
