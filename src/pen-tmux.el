@@ -8,9 +8,11 @@ START and END can be in either order."
   (buffer-substring-of-unpropertied start end 'invisible))
 
 (defun buffer-string-visible ()
-  (buffer-substring-of-visible
-   (window-start)
-   (window-end)))
+  (let* ((cb (current-buffer))
+         (cw (get-buffer-window cb t)))
+    (buffer-substring-of-visible
+     (window-start cw)
+     (window-end cw))))
 
 ;; emacs term and window functions (for avoiding tmux, say in the gui)
 
