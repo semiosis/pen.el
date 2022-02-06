@@ -3,4 +3,4 @@ export TTY
 
 # stdin is the prompt
 
-pen-export-help pen-tipe -wintype nw pen-eipe
+pen-export-help pen-tipe -wintype nw pen-eipe "$@"
