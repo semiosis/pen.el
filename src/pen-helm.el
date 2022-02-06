@@ -265,8 +265,6 @@ The completion method is determined by `completion-at-point-functions'."
   (let ((res (run-hook-wrapped 'completion-at-point-functions
                                #'completion--capf-wrapper 'all)))
 
-    ;; (remove-from-list 'completion-at-point-functions 'elisp-completion-at-point)
-    ;; (etv (pp-to-string completion-at-point-functions))
     (pcase res
       (`(,_ . ,(and (pred functionp) f)) (funcall f))
       (`(,hookfun . (,start ,end ,collection . ,plist))
@@ -274,15 +272,10 @@ The completion method is determined by `completion-at-point-functions'."
        (let* ((completion-extra-properties plist)
               (completion-in-region-mode-predicate
                (lambda ()
-                 ;; We're still in the same completion field.
                  (let ((newstart (car-safe (funcall hookfun))))
                    (and newstart (= newstart start))))))
-         ;; (etv (pp-to-string collection))
-         ;; (etv (pp-to-string `(completion-in-region ,start ,end ,collection
-         ;;                                  ,(plist-get plist :predicate))))
          (completion-in-region start end collection
                                (plist-get plist :predicate))))
-      ;; Maybe completion already happened and the function returned t.
       (_
        (when (cdr res)
          (message "Warning: %S failed to return valid completion data!"
@@ -318,22 +311,15 @@ The completion method is determined by `completion-at-point-functions'."
         (funcall parser))
 
     (let ((b (url-retrieve-synchronously request)))
-      (pen-url-log "Checking output from url-retrieve-synchronously")
-      (pen-url-log "a")
       (if (and
            b
            (not (eq 'input b))
            (bufferp b))
           (progn
-            (pen-url-log "b")
             (with-current-buffer b
               (let ((r (ignore-errors (funcall parser))))
-                (pen-url-log (pp-to-string r))
-                (pen-url-log "parsed")
                 r)))
         (progn
-          (pen-url-log "c")
-          (pen-url-log "nothing returned from url-retrieve-synchronously")
           nil)))))
 
 (defun helm-get-candidates (symbol-function)
@@ -384,7 +370,6 @@ Call `helm' only with SOURCES and BUFFER as args."
         :input-idle-delay delay
         :helm-full-frame t))
 
-(require 'helm-google)
 (defun helm-google (&optional engine search-term)
   "Web search interface for Emacs."
   (interactive)
@@ -413,7 +398,6 @@ Call `helm' only with SOURCES and BUFFER as args."
  `(defun helm-google-suggest ()
     "Preconfigured `helm' for Google search with Google suggest."
     (interactive)
-    ;; (helm-other-buffer 'helm-source-google-suggest "*helm google*" 0.1)
     (helm-other-buffer 'helm-source-google-suggest "*helm google*" ,(string-to-number (myrc-get "helm_async_delay")))))
 
 (defun helm-google-suggest-set-candidates (&optional request-prefix)
