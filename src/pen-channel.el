@@ -173,6 +173,8 @@
 ;; TODO I must make a universal timer that is able to randomize the wait for specific chatbots
 ;; Therefore, the timer must run fairly frequently, and I may need to use a modulo or something to determine when chatbots speak
 
+;; The timer for each chatbot should be chaotic - use prime numbers, say
+
 (defun channel-loop-chat ()
   (interactive)
   (let* ((n (channel-get-your-name))
