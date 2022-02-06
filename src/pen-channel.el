@@ -111,12 +111,12 @@
          (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation)))
     conversation))
 
-;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (lambda (s) (pen-insert s)) "it's a great show")
+;; (async-pf "pf-tweet-sentiment/1" (lambda (s) (pen-insert s)) "it's a great show")
 ;; (funcall (lambda (s) (pen-insert s)) "it's a great show")
 ;; (lambda (s) (pen-insert s))
 ;; (closure (t) (s) (pen-insert s))
-;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (defun pen-insert-result (s) (pen-insert s)) "it's a great show")
-;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (eval `(defun pen-insert-result (s) (with-current-buffer ,(current-buffer) (pen-insert s)))) "it's a great show")
+;; (async-pf "pf-tweet-sentiment/1" (defun pen-insert-result (s) (pen-insert s)) "it's a great show")
+;; (async-pf "pf-tweet-sentiment/1" (eval `(defun pen-insert-result (s) (with-current-buffer ,(current-buffer) (pen-insert s)))) "it's a great show")
 (defun async-pf (prompt-function callback-fn &rest args)
   (let ((tf (make-temp-file "async-pf-")))
     (async-start-process
