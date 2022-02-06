@@ -190,7 +190,7 @@
                                                `(lambda ()
                                                   (with-current-buffer ,b
                                                     (if (buffer-killed? ,b)
-                                                        (cancel-timer ,timer))
+                                                        (cancel-timer (assoc ,n channel-timers)))
                                                     ;; (pen-insert "hello")
                                                     (if (buffer-live-p ,b)
                                                         (channel-say-something ,b t)))))))))
