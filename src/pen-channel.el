@@ -167,7 +167,7 @@
 (defun channel-loop-chat ()
   (interactive)
   (let ((b (current-buffer)))
-    (run-with-timer 2 6
+    (run-with-timer 2 10
                     (eval
                      `(lambda ()
                         (with-current-buffer ,b
