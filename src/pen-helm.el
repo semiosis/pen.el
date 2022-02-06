@@ -1,7 +1,7 @@
 (require 'helm-buffers)
 (require 'helm-google)
 (require 'helm)
-(require 'pen-utils)
+;; (require 'pen-utils)
 (require 'helm-net)
 
 (defun fz-default-return-query (list &optional prompt)
@@ -322,44 +322,44 @@ The completion method is determined by `completion-at-point-functions'."
         (progn
           nil)))))
 
-(defun helm-get-candidates (symbol-function)
-  "Retrieve and return the list of candidates from SOURCE."
-  (let* ((candidate-fn (assoc-default 'candidates source))
-         (candidate-proc (assoc-default 'candidates-process source))
-         (inhibit-quit (or candidate-proc
-                           (not (display-graphic-p))))
-         cfn-error
-         (notify-error
-          (lambda (&optional e)
-            (error
-             "In `%s' source: `%s' %s %s"
-             (assoc-default 'name source)
-             (or candidate-fn candidate-proc)
-             (if e "\n" "must be a list, a symbol bound to a list, or a function returning a list")
-             (if e (prin1-to-string e) ""))))
-         (candidates (condition-case-unless-debug err
-                         (if candidate-proc
-                             ;; Calling `helm-interpret-value' with no
-                             ;; SOURCE arg force the use of `funcall'
-                             ;; and not `helm-apply-functions-from-source'.
-                             (helm-interpret-value candidate-proc)
-                           (helm-interpret-value candidate-fn source))
-                       (error (helm-log "Error: %S" (setq cfn-error err)) nil))))
-    (cond ((and (processp candidates) (not candidate-proc))
-           (warn "Candidates function `%s' should be called in a `candidates-process' attribute"
-                 candidate-fn))
-          ((and candidate-proc (not (processp candidates)))
-           (error "Candidates function `%s' should run a process" candidate-proc)))
-    (cond ((processp candidates)
-           candidates)
-          (cfn-error (unless helm--ignore-errors
-                       (funcall notify-error cfn-error)))
-          ((or (null candidates)
-               (equal candidates '("")))
-           nil)
-          ((listp candidates)
-           (helm-transform-candidates candidates source))
-          (t (funcall notify-error)))))
+;; (defun helm-get-candidates (symbol-function)
+;;   "Retrieve and return the list of candidates from SOURCE."
+;;   (let* ((candidate-fn (assoc-default 'candidates source))
+;;          (candidate-proc (assoc-default 'candidates-process source))
+;;          (inhibit-quit (or candidate-proc
+;;                            (not (display-graphic-p))))
+;;          cfn-error
+;;          (notify-error
+;;           (lambda (&optional e)
+;;             (error
+;;              "In `%s' source: `%s' %s %s"
+;;              (assoc-default 'name source)
+;;              (or candidate-fn candidate-proc)
+;;              (if e "\n" "must be a list, a symbol bound to a list, or a function returning a list")
+;;              (if e (prin1-to-string e) ""))))
+;;          (candidates (condition-case-unless-debug err
+;;                          (if candidate-proc
+;;                              ;; Calling `helm-interpret-value' with no
+;;                              ;; SOURCE arg force the use of `funcall'
+;;                              ;; and not `helm-apply-functions-from-source'.
+;;                              (helm-interpret-value candidate-proc)
+;;                            (helm-interpret-value candidate-fn source))
+;;                        (error (helm-log "Error: %S" (setq cfn-error err)) nil))))
+;;     (cond ((and (processp candidates) (not candidate-proc))
+;;            (warn "Candidates function `%s' should be called in a `candidates-process' attribute"
+;;                  candidate-fn))
+;;           ((and candidate-proc (not (processp candidates)))
+;;            (error "Candidates function `%s' should run a process" candidate-proc)))
+;;     (cond ((processp candidates)
+;;            candidates)
+;;           (cfn-error (unless helm--ignore-errors
+;;                        (funcall notify-error cfn-error)))
+;;           ((or (null candidates)
+;;                (equal candidates '("")))
+;;            nil)
+;;           ((listp candidates)
+;;            (helm-transform-candidates candidates source))
+;;           (t (funcall notify-error)))))
 
 (defun helm-other-buffer (sources buffer &optional delay)
   "Simplified Helm interface with other `helm-buffer'.
@@ -398,7 +398,8 @@ Call `helm' only with SOURCES and BUFFER as args."
  `(defun helm-google-suggest ()
     "Preconfigured `helm' for Google search with Google suggest."
     (interactive)
-    (helm-other-buffer 'helm-source-google-suggest "*helm google*" ,(string-to-number (myrc-get "helm_async_delay")))))
+    (helm-other-buffer 'helm-source-google-suggest "*helm google*" ,(string-to-number (or (sor (pen-rc-get "helm_async_delay"))
+                                                                                          "0")))))
 
 (defun helm-google-suggest-set-candidates (&optional request-prefix)
   "Set candidates with result and number of Google results found."
@@ -487,12 +488,12 @@ Call `helm' only with SOURCES and BUFFER as args."
 (define-key helm-map (kbd "M-D") #'send-m-del)
 (define-key helm-find-files-map (kbd "M-D") #'send-m-del)
 (define-key helm-map (kbd "C-h") nil)
-(define-key pen-map (kbd "M-m f r") 'helm-mini) ; recent
-(define-key pen-map (kbd "M-m f R") 'sps-ranger)
+(define-key pen-map (kbd "M-l f r") 'helm-mini) ; recent
+(define-key pen-map (kbd "M-l f R") 'sps-ranger)
 (define-key pen-map (kbd "M-\"") nil)
-(define-key pen-map (kbd "M-m f z") 'pen-helm-fzf)
-(define-key pen-map (kbd "M-m f Z") 'pen-helm-fzf-top)
-(define-key pen-map (kbd "M-m f f") 'pen-helm-find-files) ; It's a little different from spacemacs' one. Spacemacs uses C-h for up dir where this uses C-l.
+(define-key pen-map (kbd "M-l f z") 'pen-helm-fzf)
+(define-key pen-map (kbd "M-l f Z") 'pen-helm-fzf-top)
+(define-key pen-map (kbd "M-l f f") 'pen-helm-find-files) ; It's a little different from spacemacs' one. Spacemacs uses C-h for up dir where this uses C-l.
 (define-key helm-map (kbd "<help> p") #'helm-test-code)
 (define-key helm-map (kbd "M-k") 'ace-jump-helm-line)
 (define-key helm-buffer-map (kbd "C-M-@") 'helm-toggle-visible-mark)

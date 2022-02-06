@@ -1,6 +1,6 @@
 (defun pen-rc-get (key)
   (if (and key (not (string-blank-p key)))
-      (pen-snc (concat "cat $HOME/.pen/pen.yaml | yq -r '." key "'"))))
+      (pen-snc (concat "cat $HOME/.pen/pen.yaml | yq -r '." key " // empty'"))))
 
 (defun pen-rc-test (key)
   (let ((v (chomp (pen-rc-get key))))
