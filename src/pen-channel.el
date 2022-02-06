@@ -169,16 +169,20 @@
 
 (defun channel-loop-chat ()
   (interactive)
-  (let* ((b (current-buffer))
+  (let* ((n (channel-get-your-name))
+         (b (current-buffer))
          ;; TODO Use an imaginary function to specify how many seconds is a good time to reply?
          ;; Or just make it randomish?
          ;; Do both
-         (t (run-with-timer 2 10
-                            (eval
-                             `(lambda ()
-                                (with-current-buffer ,b
-                                  ;; (pen-insert "hello")
-                                  (channel-say-something ,b t)))))))
-    (add-to-list 'channel-timers t)))
+         (timer
+          (if (sor n)
+              (run-with-timer 2 10
+                              (eval
+                               `(lambda ()
+                                  (with-current-buffer ,b
+                                    ;; (pen-insert "hello")
+                                    (channel-say-something ,b t))))))))
+    (if timer
+        (add-to-list 'channel-timers timer))))
 
 (provide 'pen-channel)
