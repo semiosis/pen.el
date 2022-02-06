@@ -135,7 +135,6 @@
              (yourname (channel-get-your-name))
              (conversation (channel-get-conversation))
              (users (channel-get-users))
-             (tf (make-temp-file "channel-"))
              (dialog
               (async-pf "pf-say-something-on-irc/4"
                         (eval
@@ -180,15 +179,17 @@
          ;; Do both
          (timer
           (if (sor n)
-              (run-with-timer 2 10
-                              (eval
-                               `(lambda ()
-                                  (with-current-buffer ,b
-                                    (if (buffer-killed? ,b)
-                                        (cancel-timer ,timer))
-                                    ;; (pen-insert "hello")
-                                    (if (buffer-live-p ,b)
-                                        (channel-say-something ,b t)))))))))
+              (if (assoc n channel-timers)
+                  (assoc n channel-timers)
+                (run-with-timer 2 10
+                                (eval
+                                 `(lambda ()
+                                    (with-current-buffer ,b
+                                      (if (buffer-killed? ,b)
+                                          (cancel-timer ,timer))
+                                      ;; (pen-insert "hello")
+                                      (if (buffer-live-p ,b)
+                                          (channel-say-something ,b t))))))))))
     (if timer
         (add-to-list 'channel-timers timer))))
 
