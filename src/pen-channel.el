@@ -116,6 +116,7 @@
 ;; (lambda (s) (pen-insert s))
 ;; (closure (t) (s) (pen-insert s))
 ;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (defun pen-insert-result (s) (pen-insert s)) "it's a great show")
+;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (eval `(defun pen-insert-result (s) (with-current-buffer ,(current-buffer) (pen-insert s)))) "it's a great show")
 (defun async-pf (prompt-function tf callback-fn &rest args)
   (let ((tf (make-temp-file "async-pf-")))
     (async-start-process
@@ -124,7 +125,7 @@
      (eval
       `(lambda (proc)
          ;; (funcall ,callback-fn (pen-tv (chomp (cat ,tf))))
-         (apply ',callback-fn (list (pen-tv (chomp (cat ,tf)))))
+         (apply ',callback-fn (list (chomp (cat ,tf))))
          (f-delete ,tf))))))
 
 (defun channel-say-something (&optional b auto)
