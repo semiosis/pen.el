@@ -124,7 +124,6 @@
      (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" (str prompt-function) ,@args)))
      (eval
       `(lambda (proc)
-         ;; (funcall ,callback-fn (pen-tv (chomp (cat ,tf))))
          (apply ',callback-fn (list (chomp (cat ,tf))))
          (f-delete ,tf))))))
 
