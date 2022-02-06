@@ -171,7 +171,7 @@
   (not (buffer-live-p buffer)))
 
 ;; TODO I must make a universal timer that is able to randomize the wait for specific chatbots
-;; Therefore, the timer must run fairly frequently
+;; Therefore, the timer must run fairly frequently, and I may need to use a modulo or something to determine when chatbots speak
 
 (defun channel-loop-chat ()
   (interactive)
