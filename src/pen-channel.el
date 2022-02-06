@@ -187,7 +187,8 @@
                                     (if (buffer-killed? ,b)
                                         (cancel-timer ,timer))
                                     ;; (pen-insert "hello")
-                                    (channel-say-something ,b t))))))))
+                                    (if (buffer-live-p ,b)
+                                        (channel-say-something ,b t)))))))))
     (if timer
         (add-to-list 'channel-timers timer))))
 
