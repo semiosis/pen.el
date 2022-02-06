@@ -111,6 +111,7 @@
          (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation)))
     conversation))
 
+;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (lambda (s) (insert s)) "it's a great show")
 (defun async-pf (prompt-function tf callback &rest args)
   (let ((tf (make-temp-file "async-pf-")))
     (async-start-process
@@ -118,9 +119,8 @@
      (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" (str prompt-function) ,@args)))
      (eval
       `(lambda (proc)
-         (with-current-buffer ,cb
-           (funcall ,callback (chomp (cat ,tf)))
-           (f-delete ,tf)))))))
+         (funcall ,callback (chomp (cat ,tf)))
+         (f-delete ,tf))))))
 
 (defun channel-say-something (&optional b auto)
   (interactive)
@@ -134,9 +134,10 @@
              (dialog
               (async-pf "pf-say-something-on-irc/4"
                         (lambda ((result))
-                          (pen-insert result)
-                          (if ,auto
-                              (pen-insert "\n")))
+                          (with-current-buffer ,cb
+                            (pen-insert result)
+                            (if ,auto
+                                (pen-insert "\n"))))
                         room users conversation yourname)))))))
 
 (defun channel (personality)
