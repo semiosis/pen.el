@@ -170,6 +170,9 @@
   "Return t if BUFFER is killed."
   (not (buffer-live-p buffer)))
 
+;; TODO I must make a universal timer that is able to randomize the wait for specific chatbots
+;; Therefore, the timer must run fairly frequently
+
 (defun channel-loop-chat ()
   (interactive)
   (let* ((n (channel-get-your-name))
