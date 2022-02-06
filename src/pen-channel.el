@@ -118,7 +118,7 @@
          (tf (make-temp-file "channel-"))
          (dialog
           (async-start-process
-           "channel-speak"
+           (concat "channel-speak" (myuuid))
            (pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" "pf-say-something-on-irc/4" room users conversation yourname))
            (eval
             `(lambda (proc)
