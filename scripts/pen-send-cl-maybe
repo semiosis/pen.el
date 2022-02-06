@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# Just don't do this unless enabled. It's annoying for things like MTP
+exit "0"
+
 if [ -n "$CALLER_PANE" ]; then
     CALLER_PANE="$CALLER_PANE"
 else
@@ -37,6 +40,9 @@ tpv() {
 
 pid="$(tpv -t "$TMUX_PANE" pane_pid)"
 
-if ! pstree -lAsp "$pid" | grep -q -P '\bvim\b'; then
+tree="$(pstree -lAsp "$pid")"
+
+if ! printf -- "%s" "$tree" | grep -q -P '\bvim\b' && \
+     ! printf -- "%s" "$tree" | grep -q -P '\bpen-emacsd\b'; then
     TMUX= tmux send-keys "C-l"
 fi

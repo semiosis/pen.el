@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+cmd "$@" > /tmp/channel-cmd.txt
+
+file="$1"
+shift
+
+"$@" > "$file"
