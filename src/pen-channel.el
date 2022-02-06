@@ -112,10 +112,10 @@
              (eval
               `(lambda (proc)
                  (with-current-buffer ,(current-buffer)
-                   (pen-insert (chomp (cat tf)))
+                   (pen-insert (chomp (cat ,tf)))
                    (if ,auto
                        (pen-insert "\n"))
-                   (f-delete tf))))))))))
+                   (f-delete ,tf))))))))))
 
 (defun channel (personality)
   (interactive (list
