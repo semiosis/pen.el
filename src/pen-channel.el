@@ -139,11 +139,12 @@
              (tf (make-temp-file "channel-"))
              (dialog
               (async-pf "pf-say-something-on-irc/4"
-                        (lambda (result)
-                          (with-current-buffer ,cb
-                            (pen-insert result)
-                            (if ,auto
-                                (pen-insert "\n"))))
+                        (eval
+                         `(lambda (result)
+                            (with-current-buffer ,cb
+                              (pen-insert result)
+                              (if ,auto
+                                  (pen-insert "\n")))))
                         room users conversation yourname)))))))
 
 (defun channel (personality)
