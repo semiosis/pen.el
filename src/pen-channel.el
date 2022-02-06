@@ -115,10 +115,8 @@
 ;; (funcall (lambda (s) (pen-insert s)) "it's a great show")
 ;; (lambda (s) (pen-insert s))
 ;; (closure (t) (s) (pen-insert s))
-;; I think lambda in lambda is a problem.
 ;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (defun pen-insert-result (s) (pen-insert s)) "it's a great show")
 (defun async-pf (prompt-function tf callback-fn &rest args)
-  "Sadly can't use lambda as a cb. The Callback-fn must have one parameter, a string"
   (let ((tf (make-temp-file "async-pf-")))
     (async-start-process
      "pen-async-pf"
