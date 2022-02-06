@@ -171,6 +171,8 @@
   (interactive)
   (let* ((b (current-buffer))
          ;; TODO Use an imaginary function to specify how many seconds is a good time to reply?
+         ;; Or just make it randomish?
+         ;; Do both
          (t (run-with-timer 2 10
                             (eval
                              `(lambda ()
