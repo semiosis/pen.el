@@ -117,7 +117,7 @@
 ;; (closure (t) (s) (pen-insert s))
 ;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (defun pen-insert-result (s) (pen-insert s)) "it's a great show")
 ;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (eval `(defun pen-insert-result (s) (with-current-buffer ,(current-buffer) (pen-insert s)))) "it's a great show")
-(defun async-pf (prompt-function tf callback-fn &rest args)
+(defun async-pf (prompt-function callback-fn &rest args)
   (let ((tf (make-temp-file "async-pf-")))
     (async-start-process
      "pen-async-pf"
