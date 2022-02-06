@@ -184,16 +184,17 @@
             (progn
               (message "Chatbot with that name already running")
               timer)
-          (add-to-list 'channel-timers
-                       `(,n . (run-with-timer 2 10
-                                              (eval
-                                               `(lambda ()
-                                                  (with-current-buffer ,b
-                                                    (if (buffer-killed? ,b)
-                                                        (cancel-timer (assoc ,n channel-timers)))
-                                                    ;; (pen-insert "hello")
-                                                    (if (buffer-live-p ,b)
-                                                        (channel-say-something ,b t)))))))))
+          (let ((newtimer (run-with-timer 2 10
+                                          (eval
+                                           `(lambda ()
+                                              (with-current-buffer ,b
+                                                (if (buffer-killed? ,b)
+                                                    (cancel-timer (assoc ,n channel-timers)))
+                                                ;; (pen-insert "hello")
+                                                (if (buffer-live-p ,b)
+                                                    (channel-say-something ,b t))))))))
+            (add-to-list 'channel-timers
+                         `(,n . ,newtimer))))
       (error "Could not determine chatbot name from screen"))))
 
 (provide 'pen-channel)
