@@ -100,7 +100,7 @@
 (defun async-pf (prompt-function &rest args)
   (async-start-process
    "pen-async-pf"
-   (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "--pool" (str prompt-function) ,@args)))
+   (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" (str prompt-function) ,@args)))
    (eval
     `(lambda (proc)
        (with-current-buffer ,(current-buffer)
@@ -111,23 +111,22 @@
 
 (defun channel-say-something (&optional auto)
   (interactive)
-  (ignore-errors
-    (let* ((room (channel-get-room))
-           (yourname (channel-get-your-name))
-           (conversation (channel-get-conversation))
-           (users (channel-get-users))
-           (tf (make-temp-file "channel-"))
-           (dialog
-            (async-start-process
-             "channel-speak"
-             (pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "--pool" "pf-say-something-on-irc/4" room users conversation yourname))
-             (eval
-              `(lambda (proc)
-                 (with-current-buffer ,(current-buffer)
-                   (pen-insert (chomp (cat ,tf)))
-                   (if ,auto
-                       (pen-insert "\n"))
-                   (f-delete ,tf))))))))))
+  (let* ((room (channel-get-room))
+         (yourname (channel-get-your-name))
+         (conversation (channel-get-conversation))
+         (users (channel-get-users))
+         (tf (make-temp-file "channel-"))
+         (dialog
+          (async-start-process
+           "channel-speak"
+           (pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" "pf-say-something-on-irc/4" room users conversation yourname))
+           (eval
+            `(lambda (proc)
+               (with-current-buffer ,(current-buffer)
+                 (pen-insert (chomp (cat ,tf)))
+                 (if ,auto
+                     (pen-insert "\n"))
+                 (f-delete ,tf)))))))))
 
 (defun channel (personality)
   (interactive (list
