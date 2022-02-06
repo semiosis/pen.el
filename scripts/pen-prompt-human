@@ -3,4 +3,5 @@ export TTY
 
 # stdin is the prompt
 
-pen-export-help pen-tipe -wintype nw pen-eipe "$@"
+pen-export-help pen-tipe -wintype nw pen-eipe \
+    -data "{\"buttons\": [{\"label\": \"Abort\", \"command\": \"pen-revert-kill-buffer-and-window\", \"type\": \"off-button\"},{\"label\": \"Accept\", \"command\": \"pen-save-and-kill-buffer-window-and-emacsclient\", \"type\": \"on-button\"}]}" "$@"
