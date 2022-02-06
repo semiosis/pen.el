@@ -97,6 +97,18 @@
          (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation)))
     conversation))
 
+(defun async-pf (prompt-function &rest args)
+  (async-start-process
+   "pen-async-pf"
+   (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "--pool" (str prompt-function) ,@args)))
+   (eval
+    `(lambda (proc)
+       (with-current-buffer ,(current-buffer)
+         (pen-insert (chomp (cat ,tf)))
+         (if ,auto
+             (pen-insert "\n"))
+         (f-delete ,tf))))))
+
 (defun channel-say-something (&optional auto)
   (interactive)
   (ignore-errors
