@@ -111,17 +111,11 @@
          (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation)))
     conversation))
 
-(defun async-pf (prompt-function &rest args)
+(defun async-pf (prompt-function callback &rest args)
   (async-start-process
    "pen-async-pf"
    (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" (str prompt-function) ,@args)))
-   (eval
-    `(lambda (proc)
-       (with-current-buffer ,(current-buffer)
-         (pen-insert (chomp (cat ,tf)))
-         (if ,auto
-             (pen-insert "\n"))
-         (f-delete ,tf))))))
+   (funcall calllback)))
 
 (defun channel-say-something (&optional b auto)
   (interactive)
@@ -133,16 +127,15 @@
              (users (channel-get-users))
              (tf (make-temp-file "channel-"))
              (dialog
-              (async-start-process
-               (concat "channel-speak" (pen-uuid))
-               (pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" "pf-say-something-on-irc/4" room users conversation yourname))
-               (eval
-                `(lambda (proc)
-                   (with-current-buffer ,cb
-                     (pen-insert (chomp (cat ,tf)))
-                     (if ,auto
-                         (pen-insert "\n"))
-                     (f-delete ,tf)))))))))))
+              (async-pf "pf-say-something-on-irc/4"
+                        (eval
+                         `(lambda (proc)
+                            (with-current-buffer ,cb
+                              (pen-insert (chomp (cat ,tf)))
+                              (if ,auto
+                                  (pen-insert "\n"))
+                              (f-delete ,tf))))
+                        room users conversation yourname)))))))
 
 (defun channel (personality)
   (interactive (list
