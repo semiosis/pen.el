@@ -4,6 +4,6 @@
   (setq prompt (or prompt ":"))
   (helm-comp-read prompt list :must-match 'nil))
 
-(defalias 'pen-helm 'fz-default-return-query)
+(defalias 'fz-helm 'fz-default-return-query)
 
 (provide 'pen-helm)
