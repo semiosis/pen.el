@@ -1,5 +1,7 @@
 ;; I suppose that `chann`, being the mantissa of chann.el is the unique name-or-names identifying Chann.el
 
+(require 'async)
+
 (defun channel-chatbot-from-name (name-or-names command &optional auto closeframe)
   "`name-or-names` is the name-or-names of the personalit(y|ies).
 `command` is the terminal command the personality commands.
@@ -102,14 +104,18 @@
            (yourname (channel-get-your-name))
            (conversation (channel-get-conversation))
            (users (channel-get-users))
+           (tf (make-temp-file "channel-"))
            (dialog
-            (if auto
-                (car (pen-one (pf-say-something-on-irc/4 room users conversation yourname)))
-              (pf-say-something-on-irc/4 room users conversation yourname))))
-
-      (if auto
-          (pen-insert (concat dialog "\n"))
-        (pen-insert dialog)))))
+            (async-start-process
+             "channel-speak"
+             (pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "--pool" "pf-say-something-on-irc/4" room users conversation yourname))
+             (eval
+              `(lambda (proc)
+                 (with-current-buffer ,(current-buffer)
+                   (pen-insert (chomp (cat tf)))
+                   (if ,auto
+                       (pen-insert "\n"))
+                   (f-delete tf))))))))))
 
 (defun channel (personality)
   (interactive (list
