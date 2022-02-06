@@ -1,5 +1,8 @@
 (require 'helm-buffers)
 (require 'helm-google)
+(require 'helm)
+(require 'pen-utils)
+(require 'helm-net)
 
 (defun fz-default-return-query (list &optional prompt)
   (setq prompt (or prompt ":"))
@@ -7,14 +10,9 @@
 
 (defalias 'fz-helm 'fz-default-return-query)
 
-(require 'helm)
-(require 'pen-utils)
-(require 'helm-net)
-
 (setq helm-mode-handle-completion-in-region nil)
 ;; j:helm--completion-in-region
 ;; j:completion-in-region
-
 
 ;; global fuzzy
 (setq helm-mode-fuzzy-match t)
@@ -87,7 +85,6 @@ display values."
 
   (pen-copy (helm-marked-candidates-strings)))
 
-
 (defun helm-fz-directory ()
   (interactive)
   (let ((sel (string-head (helm-marked-candidates-strings))))))
@@ -101,8 +98,6 @@ display values."
   (interactive)
 
   (xc (chomp (sh/cut "-d ' ' -f 2" (pen-tvipe (helm-marked-candidates :all-sources t))))))
-
-(define-key helm-comp-read-map (kbd "<M-RET>")      'helm-copy-to-tvipe)
 
 (with-eval-after-load 'helm
   (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
@@ -130,11 +125,6 @@ display values."
   (interactive)
   (ekm "M-DEL"))
 
-(define-key helm-map (kbd "M-D") #'send-m-del)
-(define-key helm-find-files-map (kbd "M-D") #'send-m-del)
-
-(define-key helm-map (kbd "C-h") nil)
-
 (defun pen-helm-find-files ()
   "Like helm-find-files, but it ignores the thing at point"
   (interactive)
@@ -142,13 +132,6 @@ display values."
   (cd (get-dir))
   (let ((helm-find-files-ignore-thing-at-point t))
     (call-interactively 'helm-find-files)))
-
-(define-key pen-map (kbd "M-m f r") 'helm-mini) ; recent
-(define-key pen-map (kbd "M-m f R") 'sps-ranger)
-(define-key pen-map (kbd "M-\"") nil)
-(define-key pen-map (kbd "M-m f z") 'pen-helm-fzf)
-(define-key pen-map (kbd "M-m f Z") 'pen-helm-fzf-top)
-(define-key pen-map (kbd "M-m f f") 'pen-helm-find-files) ; It's a little different from spacemacs' one. Spacemacs uses C-h for up dir where this uses C-l.
 
 (defun helm-exhaust-candidates (&optional source)
   (let ((buf (new-buffer-from-string "new buf"))
@@ -183,8 +166,6 @@ display values."
           (sit-for 0.3) (message nil)
           (helm-update))
       (helm-exit-minibuffer))))
-
-(define-key helm-map (kbd "<help> p") #'helm-test-code)
 
 (setq completing-read-function 'ivy-completing-read)
 
@@ -276,8 +257,6 @@ Note: This mode is incompatible with Emacs23."
   (helm))
 
 (require 'ace-jump-helm-line)
-
-(define-key helm-map (kbd "M-k") 'ace-jump-helm-line)
 
 (defun completion-at-point ()
   "Perform completion on the text around point.
@@ -518,11 +497,22 @@ Call `helm' only with SOURCES and BUFFER as args."
     :keymap helm-map
     :requires-pattern 3))
 
-(require 'helm-buffers)
+
+
+(define-key helm-comp-read-map (kbd "<M-RET>")      'helm-copy-to-tvipe)
+(define-key helm-map (kbd "M-D") #'send-m-del)
+(define-key helm-find-files-map (kbd "M-D") #'send-m-del)
+(define-key helm-map (kbd "C-h") nil)
+(define-key pen-map (kbd "M-m f r") 'helm-mini) ; recent
+(define-key pen-map (kbd "M-m f R") 'sps-ranger)
+(define-key pen-map (kbd "M-\"") nil)
+(define-key pen-map (kbd "M-m f z") 'pen-helm-fzf)
+(define-key pen-map (kbd "M-m f Z") 'pen-helm-fzf-top)
+(define-key pen-map (kbd "M-m f f") 'pen-helm-find-files) ; It's a little different from spacemacs' one. Spacemacs uses C-h for up dir where this uses C-l.
+(define-key helm-map (kbd "<help> p") #'helm-test-code)
+(define-key helm-map (kbd "M-k") 'ace-jump-helm-line)
 (define-key helm-buffer-map (kbd "C-M-@") 'helm-toggle-visible-mark)
 (define-key helm-buffer-map (kbd "M-SPC") 'helm-toggle-visible-mark)
 (define-key helm-buffer-map (kbd "M-u") 'helm-unmark-all)
-
-(provide 'pen-helm)
 
 (provide 'pen-helm)
