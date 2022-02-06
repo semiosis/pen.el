@@ -1,5 +1,19 @@
 ;; I suppose that `chann`, being the mantissa of chann.el is the unique name-or-names identifying Chann.el
 
+;; ** TODO With Chann.el, I should be able to chat to a chatbot on IRC, and that chatbot should be able to control a terminal
+;; - I could ask it to run some command for me, and it would have access to the terminal
+;;   - This should be the first step
+;; - Also, the actions it takes must be in response to what it sees on the terminal
+;; - The chatbot should be able to relay information to me about the terminal
+;; - The chatbot should be able to be given a task, such as responding to events, and execute that task
+;;   - Therefore, I must be able
+;;   - I need a prompt which interprets the task into a canonical format, and the runs a command loop
+;;     - The task may be to continually monitor for a particular event and report back to me, or to run a command on the shell, or something
+;; - Therefore, the chatbot needs
+;;   - To see the chatroom
+;;   - To see a terminal, running a TUI
+;;   - To see a shell prompt
+
 (require 'async)
 
 (defun channel-chatbot-from-name (name-or-names command &optional auto closeframe)
