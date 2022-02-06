@@ -483,7 +483,6 @@ Call `helm' only with SOURCES and BUFFER as args."
     :requires-pattern 3))
 
 
-
 (define-key helm-comp-read-map (kbd "<M-RET>")      'helm-copy-to-tvipe)
 (define-key helm-map (kbd "M-D") #'send-m-del)
 (define-key helm-find-files-map (kbd "M-D") #'send-m-del)

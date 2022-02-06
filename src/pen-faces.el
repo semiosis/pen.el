@@ -278,7 +278,15 @@ argument, prompt for a regular expression using `read-regexp'."
     (set-face-background 'ivy-current-match "#d72f4f")
 
     (set-face-background 'ivy-minibuffer-match-face-2 "#562626")
-    (set-face-foreground 'ivy-minibuffer-match-face-2 "#d72f4f")))
+    (set-face-foreground 'ivy-minibuffer-match-face-2 "#d72f4f")
+    (require 'helm)
+    (set-face-background 'helm-separator "#262626")
+    (set-face-foreground 'helm-separator "#d72f4f")
+    (set-face-foreground 'helm-source-header "#262626")
+    (set-face-background 'helm-source-header "#d72f4f")
+
+    (set-face-background 'helm-selection "#262626")
+    (set-face-foreground 'helm-selection "#d72f4f")))
 
 (add-hook 'after-init-hook 'pen-set-faces)
 
