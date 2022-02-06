@@ -167,6 +167,10 @@
 
 (defset channel-timers '())
 
+(defun buffer-killed? (buffer)
+  "Return t if BUFFER is killed."
+  (not (buffer-live-p buffer)))
+
 (defun channel-loop-chat ()
   (interactive)
   (let* ((n (channel-get-your-name))
@@ -180,6 +184,8 @@
                               (eval
                                `(lambda ()
                                   (with-current-buffer ,b
+                                    (if (buffer-killed? ,b)
+                                        (cancel-timer ,timer))
                                     ;; (pen-insert "hello")
                                     (channel-say-something ,b t))))))))
     (if timer
