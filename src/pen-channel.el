@@ -109,24 +109,26 @@
              (pen-insert "\n"))
          (f-delete ,tf))))))
 
-(defun channel-say-something (&optional auto)
+(defun channel-say-something (&optional b auto)
   (interactive)
-  (let* ((room (channel-get-room))
-         (yourname (channel-get-your-name))
-         (conversation (channel-get-conversation))
-         (users (channel-get-users))
-         (tf (make-temp-file "channel-"))
-         (dialog
-          (async-start-process
-           (concat "channel-speak" (myuuid))
-           (pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" "pf-say-something-on-irc/4" room users conversation yourname))
-           (eval
-            `(lambda (proc)
-               (with-current-buffer ,(current-buffer)
-                 (pen-insert (chomp (cat ,tf)))
-                 (if ,auto
-                     (pen-insert "\n"))
-                 (f-delete ,tf)))))))))
+  (let ((cb (or b (current-buffer))))
+    (with-current-buffer cb
+      (let* ((room (channel-get-room))
+             (yourname (channel-get-your-name))
+             (conversation (channel-get-conversation))
+             (users (channel-get-users))
+             (tf (make-temp-file "channel-"))
+             (dialog
+              (async-start-process
+               (concat "channel-speak" (myuuid))
+               (pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" "pf-say-something-on-irc/4" room users conversation yourname))
+               (eval
+                `(lambda (proc)
+                   (with-current-buffer ,cb
+                     (pen-insert (chomp (cat ,tf)))
+                     (if ,auto
+                         (pen-insert "\n"))
+                     (f-delete ,tf)))))))))))
 
 (defun channel (personality)
   (interactive (list
@@ -154,6 +156,6 @@
                      `(lambda ()
                         (with-current-buffer ,b
                           ;; (pen-insert "hello")
-                          (channel-say-something t)))))))
+                          (channel-say-something ,b t)))))))
 
 (provide 'pen-channel)
