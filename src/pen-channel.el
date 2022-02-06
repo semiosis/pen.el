@@ -119,7 +119,7 @@
 
 (defun channel (personality)
   (interactive (list
-                (fz (pen-list-fictional-characters)
+                (fz (pen-list-fictional-characters channel-get-users)
                     nil nil "Person: ")
                 ;; (read-string-hist "person: ")
                 ))

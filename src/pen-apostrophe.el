@@ -12,9 +12,11 @@
   (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
     (pen-e-sps (pen-lm (pen-eval-string el)))))
 
-(defun pen-list-fictional-characters ()
+(defun pen-list-fictional-characters (&optional including)
   (interactive)
-  (ilist 20 "Fictional characters"))
+  (if (sor including)
+      (ilist 20 (concat "Fictional characters including " including))
+    (ilist 20 "Fictional characters")))
 
 (defun apostrophe-start-chatbot-from-name (name &optional auto)
   "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
