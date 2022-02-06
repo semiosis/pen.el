@@ -528,6 +528,12 @@
 
 (defset menu-bar-mtp-menu
   (let ((menu (make-sparse-keymap "MadTeaParty")))
+    (bindings--define-key menu [pen-channel-say-something]
+      '(menu-item "Say something" channel-say-something
+                  :help "While running MTP in pet you can run this to suggest something to say"))
+    (bindings--define-key menu [pen-channel-loop-chat]
+      '(menu-item "This loops 'Say something'" channel-loop-chat
+                  :help "While running MTP in pet you can run this to create a loop which talks continually"))
     (bindings--define-key menu [pen-mtp-connect-with-name]
       '(menu-item "Spawn a new user in Mad Tea-Party" pen-mtp-connect-with-name
                   :help "This starts an irc client for new user to Mad Tea-Party"))
