@@ -178,6 +178,7 @@
                              `(lambda ()
                                 (with-current-buffer ,b
                                   ;; (pen-insert "hello")
-                                  (channel-say-something ,b t)))))))))
+                                  (channel-say-something ,b t)))))))
+    (add-to-list 'channel-timers t)))
 
 (provide 'pen-channel)
