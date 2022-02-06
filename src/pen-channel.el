@@ -164,14 +164,17 @@
 ;; and also make use of the daemons.
 ;; TODO I have to make this bound to a certain buffer
 ;; I must ensure that for emacs daemons, they use their own stdout return file
+
+(defset channel-timers '())
+
 (defun channel-loop-chat ()
   (interactive)
-  (let ((b (current-buffer)))
-    (run-with-timer 2 10
-                    (eval
-                     `(lambda ()
-                        (with-current-buffer ,b
-                          ;; (pen-insert "hello")
-                          (channel-say-something ,b t)))))))
+  (let* ((b (current-buffer))
+         (t (run-with-timer 2 10
+                          (eval
+                           `(lambda ()
+                              (with-current-buffer ,b
+                                ;; (pen-insert "hello")
+                                (channel-say-something ,b t)))))))))
 
 (provide 'pen-channel)
