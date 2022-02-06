@@ -170,11 +170,12 @@
 (defun channel-loop-chat ()
   (interactive)
   (let* ((b (current-buffer))
+         ;; TODO Use an imaginary function to specify how many seconds is a good time to reply?
          (t (run-with-timer 2 10
-                          (eval
-                           `(lambda ()
-                              (with-current-buffer ,b
-                                ;; (pen-insert "hello")
-                                (channel-say-something ,b t)))))))))
+                            (eval
+                             `(lambda ()
+                                (with-current-buffer ,b
+                                  ;; (pen-insert "hello")
+                                  (channel-say-something ,b t)))))))))
 
 (provide 'pen-channel)
