@@ -951,6 +951,9 @@ Be mindful of quoting arguments correctly."
 ;; That's correct, it is. Not possible to fix without modifying emacs c code.
 ;; Instead, use C-u 0 to update cache, instead of H-u
 
+(require 'pen-helm)
+(require 'pen-fz)
+
 (require 'pen-define-prompt-function)
 
 (defun pen-list-to-orglist (l)
@@ -1979,7 +1982,7 @@ May use to generate code from comments."
 (require 'pen-alethea-ai)
 (require 'pen-mad-teaparty)
 (require 'pen-documents)
-(require 'pen-helm)
+
 (require 'pen-media)
 (require 'pen-khala)
 (require 'pen-rhizome)

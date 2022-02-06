@@ -1666,7 +1666,7 @@
                  ;; This behaviour isn't the best
                  (length results)
                ;; This may insert immediately, so it's important to force selection
-               (cl-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match))))
+               (pen-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match))))
 
           (result
            (if (and final-return-postprocessor (sor final-return-postprocessor))
