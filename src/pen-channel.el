@@ -113,14 +113,20 @@
 
 ;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (lambda (s) (pen-insert s)) "it's a great show")
 ;; (funcall (lambda (s) (pen-insert s)) "it's a great show")
-(defun async-pf (prompt-function tf callback &rest args)
+;; (lambda (s) (pen-insert s))
+;; (closure (t) (s) (pen-insert s))
+;; I think lambda in lambda is a problem.
+;; (async-pf "pf-tweet-sentiment/1" "/tmp/yo.txt" (defun pen-insert-result (s) (pen-insert s)) "it's a great show")
+(defun async-pf (prompt-function tf callback-fn &rest args)
+  "Sadly can't use lambda as a cb. The Callback-fn must have one parameter, a string"
   (let ((tf (make-temp-file "async-pf-")))
     (async-start-process
      "pen-async-pf"
      (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" (str prompt-function) ,@args)))
      (eval
       `(lambda (proc)
-         (funcall ,callback (pen-tv (chomp (cat ,tf))))
+         ;; (funcall ,callback-fn (pen-tv (chomp (cat ,tf))))
+         (apply ',callback-fn (list (pen-tv (chomp (cat ,tf)))))
          (f-delete ,tf))))))
 
 (defun channel-say-something (&optional b auto)
