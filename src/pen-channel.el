@@ -187,12 +187,11 @@
           (let ((newtimer (run-with-timer 2 10
                                           (eval
                                            `(lambda ()
-                                              (with-current-buffer ,b
-                                                (if (buffer-killed? ,b)
-                                                    (cancel-timer (assoc ,n channel-timers)))
-                                                ;; (pen-insert "hello")
-                                                (if (buffer-live-p ,b)
-                                                    (channel-say-something ,b t))))))))
+                                              (if (buffer-killed? ,b)
+                                                  (cancel-timer (assoc ,n channel-timers))
+                                                (with-current-buffer ,b
+                                                  ;; (pen-insert "hello")
+                                                  (channel-say-something ,b t))))))))
             (add-to-list 'channel-timers
                          `(,n . ,newtimer))))
       (error "Could not determine chatbot name from screen"))))
