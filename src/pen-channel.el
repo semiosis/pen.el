@@ -302,11 +302,12 @@
          (timer (assoc n channel-timers)))
 
     (if (sor n)
-        (if timer
-            (progn
-              (cancel-timer (cdr timer))
-              (message "Restarting chatbot")
-              timer)
+        (progn
+          (if timer
+              (progn
+                (cancel-timer (cdr timer))
+                (message "Restarting chatbot")
+                timer))
           (progn
             (message "Starting chatbot")
             (let ((newtimer (run-with-timer channel-init-time channel-read-time
