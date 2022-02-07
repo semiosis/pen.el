@@ -202,7 +202,7 @@
             (progn
               (message "Chatbot with that name already running")
               timer)
-          (let ((newtimer (run-with-timer 2 30
+          (let ((newtimer (run-with-timer 2 15
                                           (eval
                                            `(lambda ()
                                               (if (buffer-killed? ,b)
