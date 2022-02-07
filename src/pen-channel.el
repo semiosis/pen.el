@@ -155,11 +155,18 @@
 (defun channel-last-speaker-was-you ()
   (re-match-p (concat "^" (channel-get-your-name)) (pen-snc "sed -n '$p'" (channel-get-conversation))))
 
+(defun channel-get-conversors ()
+  ;; (-uniq (pen-sn "cut -d : -f 1" (channel-get-conversation-from-others)))
+  (-filter-not-empty-string (-uniq (pen-str2lines (pen-sn "cut -d : -f 1" (channel-get-conversation))))))
+
 (defun channel-should-i-interject-p ()
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
   ;; The more users talking, the less likely you should speak again
-  )
+  (let ((n-mentions (length (pen-str2lines (channel-get-conversation-mentioning-you))))
+        (n-your-comments (length (pen-str2lines (channel-get-conversation-from-you))))
+        ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
+        (n-conversors (length (channel-get-conversors))))))
 
 (defun channel-say-something (&optional b auto)
   (interactive)
