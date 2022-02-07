@@ -8,7 +8,7 @@ test -n "$PEN_PROMPT" || {
     exit 1
 }
 
-td="$(mktemp -d)"
+td="$(mktemp -t "results_$(date-ts-hr)_${PEN_GEN_UUID}_XXXXX" -d -p ~/.pen/results)"
 
 # Use 'jo'.
 
@@ -19,6 +19,9 @@ png_data="$(curl -X POST "https://hf.space/gradioiframe/$PEN_MODEL/+/api/predict
              -d "$data" | jq -r ".data[0] // empty" | cut -d , -f 2)"
 
 slug="$(printf -- "%s\n" "$PEN_PROMPT" | tr '\n' ' ' | sed 's/ $//' | slugify)"
-printf -- "%s" "$png_data" | base64 -d > "$td/result-$slug.png"
 
+mkdir -p "$td/images"
+printf -- "%s" "$png_data" | base64 -d > "$td/images/result-$slug.png"
+
+echo "$td/images/result-$slug.png" > "$td/response.txt"
 echo "$td"
