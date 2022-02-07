@@ -175,7 +175,7 @@
 
 (defset channel-base-probability 5)
 
-(defset channel-chatter-amplifier 3)
+(defset channel-chatter-amplifier 4)
 
 (defun channel-probability-of-speaking (&optional base-probability n-users n-mentions n-your-comments n-conversors lines-of-conversation last-speaker-p second-last-speaker-p third-last-speaker-p)
   ;; The more often other people mention you, the more likely the bot should interject
