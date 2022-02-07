@@ -173,7 +173,7 @@
 
 (defset channel-base-probability 10)
 
-(defun channel-should-i-speak-p (&optional base-probability n-users n-mentions n-your-comments n-conversors get-prob)
+(defun channel-should-i-speak-p (&optional base-probability n-users n-mentions n-your-comments n-conversors last-speaker-p second-last-speaker-p third-last-speaker-p get-prob)
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
   ;; The more users talking, the less likely you should speak again
@@ -185,19 +185,28 @@
   ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
   (setq n-conversors (or n-conversors (length (channel-get-conversors))))
 
-  (let ((p (- (+
-               ;; The following decrease probability:
-               channel-base-probability
-               ;; The number of users in the channel
-               (* 2 n-users)
-               ;; Then number of times you have visibly spoken
-               (* 3 n-your-comments)
-               ;; The number of conversors who have visibly spoken
-               (* 3 n-conversors))
+  (let ((p (max
+            (- (+
+                ;; The following decrease probability:
+                channel-base-probability
+                ;; The number of users in the channel
+                (* 2 n-users)
+                ;; Then number of times you have visibly spoken
+                (* 3 n-your-comments)
+                ;; The number of conversors who have visibly spoken
+                (* 3 n-conversors)
+                (if (or last-speaker-p (ignore-errors (channel-last-speaker-was-you)))
+                    (if (or second-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 2)))
+                        (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
+                            20
+                          10)
+                      5)
+                  -1))
 
-              ;; The following increase probability:
-              ;; - The number of times you have been mentioned
-              (* 3 n-mentions))))
+               ;; The following increase probability:
+               ;; - The number of times you have been mentioned
+               (* 4 n-mentions))
+            channel-base-probability)))
     (if get-prob
         p
       (= 1 (random p)))))
