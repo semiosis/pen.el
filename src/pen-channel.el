@@ -270,6 +270,12 @@
 
 (defvar channel-timers '())
 
+(defun channel-cancel-all-timers ()
+  (interactive)
+  (loop for ti in channel-cancel-all-timers do
+        (cancel-timer (cdr ti)))
+  (message "Channel chatbots cancelled"))
+
 (defun buffer-killed? (buffer)
   "Return t if BUFFER is killed."
   (not (buffer-live-p buffer)))
