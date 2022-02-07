@@ -173,7 +173,7 @@
 
 (defset channel-base-probability 10)
 
-(defun channel-should-i-speak-p (&optional base-probability n-users n-mentions n-your-comments n-conversors)
+(defun channel-should-i-speak-p (&optional base-probability n-users n-mentions n-your-comments n-conversors get-prob)
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
   ;; The more users talking, the less likely you should speak again
@@ -185,19 +185,22 @@
   ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
   (setq n-conversors (or n-conversors (length (channel-get-conversors))))
 
-  (if (= 1 (random (- (+
-                       ;; The following decrease probability:
-                       channel-base-probability
-                       ;; The number of users in the channel
-                       n-users
-                       ;; Then number of times you have visibly spoken
-                       (* 2 n-your-comments)
-                       ;; The number of conversors who have visibly spoken
-                       n-conversors)
+  (let ((p (- (+
+               ;; The following decrease probability:
+               channel-base-probability
+               ;; The number of users in the channel
+               (* 2 n-users)
+               ;; Then number of times you have visibly spoken
+               (* 3 n-your-comments)
+               ;; The number of conversors who have visibly spoken
+               (* 3 n-conversors))
 
-                      ;; The following increase probability:
-                      ;; - The number of times you have been mentioned
-                      (* 2 n-mentions))))))
+              ;; The following increase probability:
+              ;; - The number of times you have been mentioned
+              (* 3 n-mentions))))
+    (if get-prob
+        p
+      (= 1 (random p)))))
 
 (defun channel-say-something (&optional b auto)
   (interactive)
