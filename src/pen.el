@@ -1938,6 +1938,8 @@ May use to generate code from comments."
 (require 'pen-right-click-menu)
 (require 'pen-mouse)
 (require 'pen-prompt-description)
+(require 'pen-personalities)
+(require 'pen-metaverses)
 (require 'pen-ii-description)
 (require 'pen-engine-description)
 (require 'pen-lm-completers)
