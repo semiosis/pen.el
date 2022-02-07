@@ -194,11 +194,6 @@
          (old-most-recent-mention (cdr (assoc name channel-most-recent-mention)))
          (new-mention (not (string-equal old-most-recent-mention most-recent-mention))))
 
-    (if new-mention
-        (progn
-          (remove-alist 'channel-most-recent-mention name)
-          (add-to-list 'channel-most-recent-mention `(,name . ,most-recent-mention))))
-
     (setq base-probability (or base-probability channel-base-probability))
     (setq n-users (or n-users (length (channel-get-users))))
     (setq n-mentions (or n-mentions (length (pen-str2lines mentions))))
@@ -219,13 +214,13 @@
                    ;; The number of conversors who have visibly spoken
                    (* 1 n-conversors)
                    (if (or last-speaker-p (ignore-errors (channel-last-speaker-was-you)))
-                       10
+                       20
                      0)
                    (if (or second-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 2)))
-                       5
+                       10
                      0)
                    (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
-                       1
+                       5
                      0)
                    (max
                     (min
@@ -240,7 +235,14 @@
                       15
                     0))
                channel-chatter-amplifier)
+
               channel-base-probability)))
+      (if (and new-mention
+               (< p 4))
+          (progn
+            (remove-alist 'channel-most-recent-mention name)
+            (add-to-list 'channel-most-recent-mention `(,name . ,most-recent-mention))))
+
       p)))
 
 (defun channel-say-something (&optional real-cb b auto)
