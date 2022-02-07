@@ -202,13 +202,17 @@
                  ;; The number of conversors who have visibly spoken
                  (* 1 n-conversors)
                  (if (or last-speaker-p (ignore-errors (channel-last-speaker-was-you)))
-                     (if (or second-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 2)))
-                         (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
-                             20
-                           10)
-                       5)
-                   -1)
-                 lines-of-conversation)
+                     10
+                   0)
+                 (if (or second-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 2)))
+                     5
+                   0)
+                 (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
+                     1
+                   0)
+                 (min
+                  5
+                  lines-of-conversation))
 
                 ;; The following increase probability:
                 ;; - The number of times you have been mentioned
