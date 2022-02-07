@@ -134,6 +134,13 @@
    (pen-cmd "grep" "-P" (concat "^" (channel-get-your-name) ":"))
    (channel-get-conversation)))
 
+(defun channel-get-conversation-mentioning-you ()
+  (pen-snc
+   (concat (pen-cmd "grep" "-vP" (concat "^" (channel-get-your-name) ":"))
+           " | "
+           (pen-cmd "grep" "-P" (concat "\\b" (channel-get-your-name) "\\b")))
+   (channel-get-conversation)))
+
 ;; (async-pf "pf-tweet-sentiment/1" (lambda (s) (pen-insert s)) "it's a great show")
 ;; (funcall (lambda (s) (pen-insert s)) "it's a great show")
 ;; (lambda (s) (pen-insert s))

@@ -14,6 +14,12 @@ START and END can be in either order."
      (window-start cw)
      (window-end cw))))
 
+(defun buffer-string-visible-points ()
+  (let* ((cb (current-buffer))
+         (cw (get-buffer-window cb t)))
+    (list (window-start cw)
+          (window-end cw))))
+
 ;; emacs term and window functions (for avoiding tmux, say in the gui)
 
 (defun pen-e-nw (&optional run)

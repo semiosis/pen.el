@@ -1674,19 +1674,28 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (if (not window_type)
       (setq window_type "spv"))
 
-  (let ((line-and-col (concat-string "+" (line-number-at-pos) ":" (current-column))))
-    (if (and buffer-file-name
-             (not (string-match "\\[*Org Src" (buffer-name))))
-        (progn
-          (save-buffer)
-          (shell-command (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
-      (cond ((string-match "\.~" (buffer-name))
-             (let ((new_fp (pen-save-buffer-to-file)))
-               (shell-command-on-region (point-min) (point-max) (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))))
-            ((string-match "\\[*Org Src" (buffer-name))
-             (shell-command-on-region (point-min) (point-max) (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))
-            (t
-             (shell-command-on-region (point-min) (point-max) (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))))))
+  ;; buffer-string-visible
+
+  (let ((min (if (major-mode-p 'term-mode)
+                 (first (buffer-string-visible-points))
+               (point-min)))
+        (max (if (major-mode-p 'term-mode)
+                 (second (buffer-string-visible-points))
+               (point-min))))
+
+    (let ((line-and-col (concat-string "+" (line-number-at-pos) ":" (current-column))))
+      (if (and buffer-file-name
+               (not (string-match "\\[*Org Src" (buffer-name))))
+          (progn
+            (save-buffer)
+            (shell-command (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
+        (cond ((string-match "\.~" (buffer-name))
+               (let ((new_fp (pen-save-buffer-to-file)))
+                 (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))))
+              ((string-match "\\[*Org Src" (buffer-name))
+               (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))
+              (t
+               (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))))))))
 (defalias 'open-in 'pen-tmux-edit)
 
 (defun pen-tm-edit-v-in-nw ()
