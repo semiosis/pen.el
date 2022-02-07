@@ -100,7 +100,7 @@
                                                                     users-joined
                                                                     users
                                                                     users-from-conversation)))))
-         (total-users (mapcar (lambda (s) (pen-snc "s/^mtp-//" s)) total-users))
+         ;; (total-users (mapcar (lambda (s) (pen-snc "s/^mtp-//" s)) total-users))
          (total-users (s-join ", " total-users))
          (total-users (or (sor total-users) "all of them")))
     total-users))
