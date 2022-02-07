@@ -177,7 +177,7 @@
   ;; (-uniq (pen-sn "cut -d : -f 1" (channel-get-conversation-from-others)))
   (-filter-not-empty-string (-uniq (pen-str2lines (pen-sn "cut -d : -f 1" (channel-get-conversation))))))
 
-(defset channel-base-probability 5)
+(defset channel-base-probability 15)
 
 (defset channel-chatter-amplifier 1)
 
@@ -237,7 +237,7 @@
                   ;; - The number of times you have been mentioned
                   (* 4 n-mentions)
                   (if new-mention
-                      10
+                      15
                     0))
                channel-chatter-amplifier)
               channel-base-probability)))
