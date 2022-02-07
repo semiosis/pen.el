@@ -14,6 +14,11 @@
 ;;   - To see a terminal, running a TUI
 ;;   - To see a shell prompt
 
+
+;; TODO Make a separate prompt for spontaneous chat in some circumstances.
+;; For example, to say something about their own life.
+
+
 (defun channel-chatbot-from-name (name-or-names command &optional auto closeframe)
   "`name-or-names` is the name-or-names of the personalit(y|ies).
 `command` is the terminal command the personality commands.
