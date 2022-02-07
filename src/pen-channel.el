@@ -149,7 +149,7 @@
              (users (channel-get-users)))
 
         (if (or (not (re-match-p (channel-get-your-name) (pen-snc "sed -n '$p'" (channel-get-conversation))))
-                (= 1 (random 5)))
+                (= 1 (random 10)))
             (async-pf "pf-say-something-on-irc/4"
                       (eval
                        `(lambda (result)
