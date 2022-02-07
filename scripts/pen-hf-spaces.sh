@@ -21,4 +21,4 @@ png_data="$(curl -X POST "https://hf.space/gradioiframe/$PEN_MODEL/+/api/predict
 slug="$(printf -- "%s\n" "$PEN_PROMPT" | tr '\n' ' ' | sed 's/ $//' | slugify)"
 printf -- "%s" "$png_data" | base64 -d > "$td/result-$slug.png"
 
-echo "$data"
+echo "$td"
