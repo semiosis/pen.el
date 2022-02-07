@@ -21,6 +21,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -server) {
+        server="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -port) {
+        port="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -63,6 +77,9 @@ pen-tm -d ns -np -n mtp-users
 
 session_name="mtp-users_$username"
 
+: "${server:="irc.localhost"}"
+: "${port:="6697"}"
+
 if pen-tm session-exists "$session_name"; then
     TMUX= tmux attach -t "$session_name"
 else
@@ -78,7 +95,7 @@ else
     pen-x \
         -sh "TMUX= tmux attach -t '$session_name'" \
         -e "irssi" \
-        -s "/connect irc.localhost 6697 $password $username_irc" -c m \
+        -s "/connect $server $port $password $username_irc" -c m \
         -e "Mode change" \
         -s "/join #$irc_channel_name" -c m \
         -i
