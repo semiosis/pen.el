@@ -175,7 +175,7 @@
 
 (defset channel-base-probability 5)
 
-(defset channel-chatter-amplifier 2)
+(defset channel-chatter-amplifier 3)
 
 (defun channel-probability-of-speaking (&optional base-probability n-users n-mentions n-your-comments n-conversors lines-of-conversation last-speaker-p second-last-speaker-p third-last-speaker-p)
   ;; The more often other people mention you, the more likely the bot should interject
@@ -268,7 +268,7 @@
 ;; TODO I have to make this bound to a certain buffer
 ;; I must ensure that for emacs daemons, they use their own stdout return file
 
-(defset channel-timers '())
+(defvar channel-timers '())
 
 (defun buffer-killed? (buffer)
   "Return t if BUFFER is killed."
