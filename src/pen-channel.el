@@ -171,7 +171,7 @@
   ;; (-uniq (pen-sn "cut -d : -f 1" (channel-get-conversation-from-others)))
   (-filter-not-empty-string (-uniq (pen-str2lines (pen-sn "cut -d : -f 1" (channel-get-conversation))))))
 
-(defset channel-base-probability 10)
+(defset channel-base-probability 5)
 
 (defun channel-should-i-speak-p (&optional base-probability n-users n-mentions n-your-comments n-conversors last-speaker-p second-last-speaker-p third-last-speaker-p get-prob)
   ;; The more often other people mention you, the more likely the bot should interject
@@ -179,7 +179,7 @@
   ;; The more users talking, the less likely you should speak again
 
   (setq base-probability (or base-probability channel-base-probability))
-  (setq n-users (or n-users (length users)))
+  (setq n-users (or n-users (length (channel-get-users))))
   (setq n-mentions (or n-mentions (length (pen-str2lines (channel-get-conversation-mentioning-you)))))
   (setq n-your-comments (or n-your-comments (length (pen-str2lines (channel-get-conversation-from-you)))))
   ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
