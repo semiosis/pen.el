@@ -328,8 +328,9 @@
                                                 ;; (channel-activate-all-timers)
                                                 (ignore-errors
                                                   (if (buffer-killed? ,b)
-                                                      (cancel-timer (cdr (assoc ,n channel-timers)))
-                                                    (remove-alist 'channel-read-time ,n)
+                                                      (progn
+                                                        (cancel-timer (cdr (assoc ,n channel-timers)))
+                                                        (remove-alist 'channel-read-time ,n))
                                                     (let ((real-cb (current-buffer)))
                                                       (with-current-buffer ,b
                                                         ;; (pen-insert "hello")
