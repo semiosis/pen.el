@@ -257,9 +257,10 @@
 
         ;; TODO The more users speaking, the less likely to interject
 
-        (let ((p (channel-probability-of-speaking))
-              (roll (random p)))
-          (if (or (= 1 roll)
+        (let* ((p (channel-probability-of-speaking))
+               (roll (random p)))
+          ;; 1 and 2 both are successful rolls
+          (if (or (< 3 roll)
                   (not auto))
               (async-pf "pf-say-something-on-irc/4"
                         (eval
