@@ -554,6 +554,7 @@ cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf
 cp ~/repos/pen-emacsd/pen.el/config/hosts /etc/hosts
 )
 
+# This is what is required
 mtp-ensure-hosts
 
 # GLIDE

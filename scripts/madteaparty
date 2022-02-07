@@ -80,6 +80,8 @@ session_name="mtp-users_$username"
 : "${server:="irc.localhost"}"
 : "${port:="6697"}"
 
+mtp-ensure-hosts
+
 if pen-tm session-exists "$session_name"; then
     TMUX= tmux attach -t "$session_name"
 else
