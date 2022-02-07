@@ -546,8 +546,15 @@ agi iceweasel
 
 (
 cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf/inspircd.conf
+)
+
+# Sadly, the hosts file may change, so this is not good enough
+# I need to ensure that irc.localhost is in there when starting MTP
+(
 cp ~/repos/pen-emacsd/pen.el/config/hosts /etc/hosts
 )
+
+mtp-ensure-hosts
 
 # GLIDE
 pyf "git+https://github.com/openai/glide-text2im"
