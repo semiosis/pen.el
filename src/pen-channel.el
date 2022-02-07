@@ -15,6 +15,10 @@
 ;;   - To see a shell prompt
 
 
+;; TODO Automate the process for creating new users on libera
+;; Do this for MTP.
+
+
 ;; TODO Make a separate prompt for spontaneous chat in some circumstances.
 ;; For example, to say something about their own life.
 
