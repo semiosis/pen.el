@@ -528,18 +528,21 @@
 
 (defset menu-bar-mtp-menu
   (let ((menu (make-sparse-keymap "MadTeaParty")))
-    (bindings--define-key menu [pen-channel-say-something]
+    (bindings--define-key menu [mi-channel-say-something]
       '(menu-item "Say something" channel-say-something
                   :help "While running MTP in pet you can run this to suggest something to say"))
-    (bindings--define-key menu [pen-channel-loop-chat]
+    (bindings--define-key menu [mi-channel-loop-chat]
       '(menu-item "This loops 'Say something'" channel-loop-chat
                   :help "While running MTP in pet you can run this to create a loop which talks continually"))
-    (bindings--define-key menu [pen-mtp-connect-with-name]
+    (bindings--define-key menu [mi-mtp-connect-with-name]
       '(menu-item "Spawn a new user in Mad Tea-Party" pen-mtp-connect-with-name
                   :help "This starts an irc client for new user to Mad Tea-Party"))
-    (bindings--define-key menu [pen-pen-mtp-connect-with-name-using-pet]
+    (bindings--define-key menu [mi-pen-mtp-connect-with-name-using-pet]
       '(menu-item "Spawn a new user in Mad Tea-Party in Pet" pen-mtp-connect-with-name-using-pet
                   :help "This starts an irc client for new user to Mad Tea-Party in Pet"))
+    (bindings--define-key menu [mi-pen-mtp-connect-with-name-using-pet-start-chatbot]
+      '(menu-item "Spawn a new user in Mad Tea-Party in Pet and start" pen-mtp-connect-with-name-using-pet-start-chatbot
+                  :help "This starts an irc client for new user to Mad Tea-Party in Pet and starts the chatbot"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))

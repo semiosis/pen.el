@@ -1,4 +1,4 @@
-(defun pen-mtp-connect-with-name (name &optional pet)
+(defun pen-mtp-connect-with-name (name &optional pet start-chatbot)
   (interactive (list (fz (pen-list-fictional-characters (channel-get-users-string))
                          nil nil "Person: ")))
   (if pet
@@ -9,5 +9,10 @@
   (interactive (list (fz (pen-list-fictional-characters (channel-get-users-string))
                          nil nil "Person: ")))
   (pen-mtp-connect-with-name name t))
+
+(defun pen-mtp-connect-with-name-using-pet-start-chatbot (name)
+  (interactive (list (fz (pen-list-fictional-characters (channel-get-users-string))
+                         nil nil "Person: ")))
+  (pen-mtp-connect-with-name name t t))
 
 (provide 'pen-mad-teaparty)
