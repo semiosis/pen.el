@@ -273,7 +273,7 @@ commands to use in that buffer.
           (run-with-idle-timer 0.2 nil
                                `(lambda ()
                                   (if (sor ,starting-elisp)
-                                      (eval-string ,starting-elisp))
+                                      (pen-tv ,starting-elisp))
                                   (ignore-errors
                                     (if (buffer-exists ,(current-buffer))
                                         (with-current-buffer
