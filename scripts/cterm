@@ -46,6 +46,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -e) {
+        extra_elisp="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -116,6 +123,7 @@ fi
 # The "$@" are unneccesary because of CMD exported
 cterm-docker \
     -bufname "$bufname" \
+    -e "$extra_elisp" \
     pen-cterm-ssh \
     -ssh-to-host "$SSH_TO_HOST" \
     -cwd "$CWD" \
