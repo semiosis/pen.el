@@ -15,4 +15,4 @@ docker-running-p() {
     fi
 }
 
-docker-running-p
+inside-docker-p || docker-running-p
