@@ -245,7 +245,7 @@ commands to use in that buffer.
   ;; This is an addition
   (current-buffer))
 
-(defun pen-term (program &optional closeframe modename buffer-name reuse)
+(defun pen-term (program &optional closeframe modename buffer-name reuse starting_elisp)
   (interactive (list (read-string "program:")))
   (let ((termcmd (pen-var-value-maybe 'pen-termcmd)))
     (if termcmd
@@ -255,9 +255,9 @@ commands to use in that buffer.
           (switch-to-buffer buf)
           (pen-insert (concat program "; exit"))
           (ekm "C-m"))
-      (pen-eterm program closeframe modename buffer-name reuse))))
+      (pen-eterm program closeframe modename buffer-name reuse starting_elisp))))
 
-(defun pen-eterm (program &optional closeframe modename buffer-name reuse)
+(defun pen-eterm (program &optional closeframe modename buffer-name reuse starting_elisp)
   (interactive (list (read-string "program:")))
   (if (and buffer-name reuse (get-buffer buffer-name))
       (switch-to-buffer buffer-name)
