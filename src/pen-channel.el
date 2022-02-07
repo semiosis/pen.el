@@ -175,7 +175,7 @@
   ;; (-uniq (pen-sn "cut -d : -f 1" (channel-get-conversation-from-others)))
   (-filter-not-empty-string (-uniq (pen-str2lines (pen-sn "cut -d : -f 1" (channel-get-conversation))))))
 
-(defset channel-base-probability 5)
+(defset channel-base-probability 3)
 
 (defset channel-chatter-amplifier 4)
 
