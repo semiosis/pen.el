@@ -14,8 +14,6 @@
 ;;   - To see a terminal, running a TUI
 ;;   - To see a shell prompt
 
-(require 'async)
-
 (defun channel-chatbot-from-name (name-or-names command &optional auto closeframe)
   "`name-or-names` is the name-or-names of the personalit(y|ies).
 `command` is the terminal command the personality commands.
@@ -142,15 +140,6 @@
 ;; (closure (t) (s) (pen-insert s))
 ;; (async-pf "pf-tweet-sentiment/1" (defun pen-insert-result (s) (pen-insert s)) "it's a great show")
 ;; (async-pf "pf-tweet-sentiment/1" (eval `(defun pen-insert-result (s) (with-current-buffer ,(current-buffer) (pen-insert s)))) "it's a great show")
-(defun async-pf (prompt-function callback-fn &rest args)
-  (let ((tf (make-temp-file "async-pf-")))
-    (async-start-process
-     "pen-async-pf"
-     (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" (str prompt-function) ,@args)))
-     (eval
-      `(lambda (proc)
-         (apply ',callback-fn (list (chomp (cat ,tf))))
-         (f-delete ,tf))))))
 
 ;; (pen-tv (pen-sn (concat "sed '/^" (channel-get-your-name)/) (pen-sn "tac" (channel-get-conversation))))
 

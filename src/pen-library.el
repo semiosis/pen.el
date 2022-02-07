@@ -1,4 +1,5 @@
 (require 'sx)
+(require 'async)
 
 (defalias 's-replace-regexp 'replace-regexp-in-string)
 
@@ -776,5 +777,15 @@ buffer which is not included when this function returns"
     (cl-loop for key being the hash-keys of table
              unless (> (gethash key table) 1)
              collect key)))
+
+(defun async-pf (prompt-function callback-fn &rest args)
+  (let ((tf (make-temp-file "async-pf-")))
+    (async-start-process
+     "pen-async-pf"
+     (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" (str prompt-function) ,@args)))
+     (eval
+      `(lambda (proc)
+         (apply ',callback-fn (list (chomp (cat ,tf))))
+         (f-delete ,tf))))))
 
 (provide 'pen-library)
