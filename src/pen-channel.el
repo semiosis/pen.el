@@ -209,9 +209,10 @@
             channel-base-probability)))
     p))
 
-(defun channel-say-something (&optional b auto)
+(defun channel-say-something (&optional rcb b auto)
   (interactive)
-  (let ((cb (or b (current-buffer))))
+  (let ((rcb (or rcb (current-buffer)))
+        (cb (or b (current-buffer))))
     (with-current-buffer cb
       (let* ((room (channel-get-room))
              (yourname (channel-get-your-name))
@@ -235,7 +236,7 @@
                               (if ,auto
                                   (pen-insert "\n")))))
                         room users-string conversation yourname)
-            (if (eq (current-buffer) cb)
+            (if (eq rcb cb)
                 (message (concat (str (time-to-seconds)) " Chance of " yourname " speaking: 1/" (str (channel-probability-of-speaking)))))))))))
 
 (defun channel (personality)
@@ -293,9 +294,10 @@
                                              `(lambda ()
                                                 (if (buffer-killed? ,b)
                                                     (cancel-timer (cdr (assoc ,n channel-timers)))
-                                                  (with-current-buffer ,b
-                                                    ;; (pen-insert "hello")
-                                                    (channel-say-something ,b t))))))))
+                                                  (let ((real-cb (current-buffer)))
+                                                    (with-current-buffer ,b
+                                                      ;; (pen-insert "hello")
+                                                      (channel-say-something real-cb ,b t)))))))))
               (add-to-list 'channel-timers
                            `(,n . ,newtimer)))))
       (error "Could not determine chatbot name from screen"))))
