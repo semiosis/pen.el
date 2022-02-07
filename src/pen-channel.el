@@ -257,8 +257,9 @@
 
         ;; TODO The more users speaking, the less likely to interject
 
-        (let ((p (channel-probability-of-speaking)))
-          (if (or (= 1 (random p))
+        (let ((p (channel-probability-of-speaking))
+              (roll (random p)))
+          (if (or (= 1 roll)
                   (not auto))
               (async-pf "pf-say-something-on-irc/4"
                         (eval
@@ -269,7 +270,7 @@
                                   (pen-insert "\n")))))
                         room users-string conversation yourname)
             (if (eq lrcb cb)
-                (message (concat (str (time-to-seconds)) " Chance of " yourname " speaking: 1/" (str (channel-probability-of-speaking))))
+                (message (concat (str (time-to-seconds)) " Chance of " yourname " speaking: 1/" (str (channel-probability-of-speaking)) " result: " (str roll)))
               ;; (message (concat (str lrcb) " " (str cb)))
               )))))))
 
