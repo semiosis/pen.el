@@ -130,7 +130,8 @@
          ;; room line
          (conversation (pen-snc "grep -v -- \"/#\"" conversation))
          (conversation (pen-snc "sed 's/^<[@ ]\\(.*\\)>/\\1:/'" conversation))
-         (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation)))
+         (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation))
+         (conversation (pen-snc "grep -v -- \"\\*\"" conversation)))
     conversation))
 
 (defun channel-get-conversation-from-others ()
