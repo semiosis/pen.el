@@ -17,7 +17,8 @@
 (defmacro pen-use-term (&rest body)
   "This wraps around function calls to signal the desired the terminal type"
   (eval
-   `(let ((pen-termcmd 'term))
+   `(let (;; (pen-termcmd 'term)
+          (pen-termcmd 'pen-eterm))
       ,',@body)))
 
 (defun term-raw-or-kill ()
@@ -248,7 +249,8 @@ commands to use in that buffer.
 (defun pen-term (program &optional closeframe modename buffer-name reuse starting-elisp)
   (interactive (list (read-string "program:")))
   (let ((termcmd (pen-var-value-maybe 'pen-termcmd)))
-    (if termcmd
+    (if (and termcmd
+             (not (eq termcmd 'pen-eterm)))
         ;; (apply termcmd (list program closeframe modename buffer-name reuse))
         (let ((buf ;; (apply termcmd (list program))
                (call-interactively termcmd)))
@@ -259,10 +261,11 @@ commands to use in that buffer.
 
 (defun pen-eterm (program &optional closeframe modename buffer-name reuse starting-elisp)
   (interactive (list (read-string "program:")))
+  ;; (if (sor starting-elisp)
+  ;;     (eval-string starting-elisp))
   (if (and buffer-name reuse (get-buffer buffer-name))
       (switch-to-buffer buffer-name)
     (with-current-buffer (term program)
-
       ;; This takes care of read-only-mode upon starting
       (if (and
            ;; pen-term-cl-refresh-after-fz
