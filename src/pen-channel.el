@@ -177,7 +177,7 @@
 
 (defset channel-base-probability 5)
 
-(defset channel-chatter-amplifier 2)
+(defset channel-chatter-amplifier 1)
 
 (defvar channel-most-recent-mention '())
 
