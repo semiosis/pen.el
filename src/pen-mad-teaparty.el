@@ -7,7 +7,7 @@
                          nil nil "Person: ")))
   (if pet
       (if start-chatbot
-          (pen-sps (pen-cmd "pet" "-e" "(eval `(pen-run-after-time 3 '(with-current-buffer ,(current-buffer) (channel-loop-chat))))" "mtp" name))
+          (pen-sps (pen-cmd "pet" "-e" "(eval \\`(pen-run-after-time 3 '(with-current-buffer ,(current-buffer) (channel-loop-chat))))" "mtp" name))
         (pen-sps (pen-cmd "pet" "mtp" name)))
     (pen-sps (pen-cmd "mtp" name))))
 
