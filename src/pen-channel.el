@@ -147,11 +147,13 @@
    (channel-get-conversation)))
 
 (defun channel-get-conversation-mentioning-you ()
-  (pen-snc
-   (concat (pen-cmd "grep" "-vP" (concat "^" (channel-get-your-name) ":"))
-           " | "
-           (pen-cmd "grep" "-P" (concat "\\b" (channel-get-your-name) "\\b")))
-   (channel-get-conversation)))
+  (let ((yourname (channel-get-your-name))
+        (shortname (pen-snc "cut -d - -f 1" (channel-get-your-name))))
+    (pen-snc
+     (concat (pen-cmd "grep" "-vP" (concat "^" yourname ":"))
+             " | "
+             (pen-cmd "grep" "-iP" (concat "\\b(" yourname "|" shortname ")\\b")))
+     (channel-get-conversation))))
 
 ;; (async-pf "pf-tweet-sentiment/1" (lambda (s) (pen-insert s)) "it's a great show")
 ;; (funcall (lambda (s) (pen-insert s)) "it's a great show")
@@ -260,7 +262,7 @@
         (let* ((p (channel-probability-of-speaking))
                (roll (random p)))
           ;; 1 and 2 both are successful rolls
-          (if (or (< 3 roll)
+          (if (or (< roll 4)
                   (not auto))
               (async-pf "pf-say-something-on-irc/4"
                         (eval
