@@ -293,7 +293,7 @@
 
 ;; Don't do this too often? - Definitely not. Too short a timer (i.e. 5) will kill the timer
 ;; Instead, rely on channel-chatter-amplifier
-(defset channel-read-time 10)
+(defset channel-read-time 5)
 
 (defun channel-cancel-all-timers ()
   (interactive)
