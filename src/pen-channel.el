@@ -238,6 +238,8 @@
 
 ;; The timer for each chatbot should be chaotic - use prime numbers, say, but be a fraction - i should divide by some prime number
 
+(defvar channel-read-time 15)
+
 (defun channel-loop-chat ()
   (interactive)
   (let* ((n (channel-get-your-name))
@@ -252,7 +254,7 @@
             (progn
               (message "Chatbot with that name already running")
               timer)
-          (let ((newtimer (run-with-timer 2 15
+          (let ((newtimer (run-with-timer 2 channel-read-time
                                           (eval
                                            `(lambda ()
                                               (if (buffer-killed? ,b)
