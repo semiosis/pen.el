@@ -111,6 +111,10 @@
          (conversation (pen-snc "grep -v -- \"\\[\"" conversation))
          (conversation (pen-snc "grep -vP -- \"^$\"" conversation))
          (conversation (pen-snc "grep -v -- \"-\\!-\"" conversation))
+         ;; channel info
+         (conversation (pen-snc "grep -v -- \":::\"" conversation))
+         ;; room line
+         (conversation (pen-snc "grep -v -- \"/#\"" conversation))
          (conversation (pen-snc "sed 's/^<[@ ]\\(.*\\)>/\\1:/'" conversation))
          (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation)))
     conversation))
