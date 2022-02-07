@@ -327,9 +327,10 @@ commands to use in that buffer.
 
 (defun pen-save-and-kill-buffer-and-window ()
   (interactive)
-  (save-buffer)
-  ;; (shut-up (annotate-save-annotations))
-  (kill-buffer-and-window))
+  (ignore-errors
+    (save-buffer)
+    ;; (shut-up (annotate-save-annotations))
+    (kill-buffer-and-window)))
 
 (defun pen-save-and-kill-buffer-window-and-emacsclient ()
   (interactive)
