@@ -272,12 +272,12 @@ commands to use in that buffer.
            (major-mode-p 'term-mode))
           (run-with-idle-timer 0.2 nil
                                `(lambda ()
-                                  (if (sor ,starting-elisp)
-                                      (eval-string ,starting-elisp))
                                   (ignore-errors
                                     (if (buffer-exists ,(current-buffer))
                                         (with-current-buffer
                                             ,(current-buffer)
+                                          (if (sor ,starting-elisp)
+                                              (eval-string ,starting-elisp))
                                           ;; I couldn't figure out the term read-only bug
                                           ;; So sending a C-l is a workaround
                                           ;; Can't send C-l. Try C-g.
