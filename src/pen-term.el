@@ -269,6 +269,8 @@ commands to use in that buffer.
            (major-mode-p 'term-mode))
           (run-with-idle-timer 0.2 nil
                                `(lambda ()
+                                  (if starting_elisp
+                                      (eval-string starting_elisp))
                                   (ignore-errors
                                     (if (buffer-exists ,(current-buffer))
                                         (with-current-buffer
