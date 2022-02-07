@@ -30,7 +30,7 @@ script="$(pen-nsfa "$@")"
 
 # neovim cant be run inside emacs without compromising cursor position
 
-elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname"))$extra_elisp)"
+elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname") nil nil nil nil $extra_elisp))"
 
 # the nsfa must be created on the docker side, so I can't use this
 # elisp="(progn (pen-term $(cmd-nice-posix "$script") t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
