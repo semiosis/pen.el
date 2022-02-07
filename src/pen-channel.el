@@ -81,7 +81,7 @@
                     ;; MTP
                     (ignore-errors (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" (car (scrape-list "\\[.*(\\+i)\\]" screen))))
                     ;; libera
-                    (car (scrape-list "^!#[^:]+:" screen))
+                    (ignore-errors (pen-snc "grep -P -- \"[0-9]:libera/#\" | awk \"{print \\$2}\"" screen))
                     "you"))
          (yourname (pen-snc "tr -d '[!#:<>@ ]'" yourname)))
     yourname))
