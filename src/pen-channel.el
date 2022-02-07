@@ -77,9 +77,12 @@
   (let* ((screen (buffer-string-visible)
                  ;; (pen-selected-or-preceding-context)
                  )
-         (yourname (car (scrape-list "\\[.*(\\+i)\\]" screen)))
-         (yourname (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" yourname))
-         (yourname (pen-snc "tr -d '[<>@ ]'" yourname)))
+         (yourname (or
+                    ;; MTP
+                    (ignore-errors (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" (car (scrape-list "\\[.*(\\+i)\\]" screen))))
+                    ;; libera
+                    (car (scrape-list "^!#[^:]+:" screen))))
+         (yourname (pen-snc "tr -d '[!#:<>@ ]'" yourname)))
     yourname))
 
 (defun channel-get-users ()
