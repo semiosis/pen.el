@@ -1,3 +1,5 @@
+(require 'apel)
+
 ;; I suppose that `chann`, being the mantissa of chann.el is the unique name-or-names identifying Chann.el
 
 ;; ** TODO With Chann.el, I should be able to chat to a chatbot on IRC, and that chatbot should be able to control a terminal
