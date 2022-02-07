@@ -86,7 +86,7 @@ fi
 # fp="/tmp/eval-output-${SOCKET}-$prompt_id.txt"
 
 # This is not the place to memoise with prompt sha
-fp="/tmp/eval-output-${SOCKET}-$(uuid).txt"
+fp="/tmp/eval-output-${SOCKET}-$(uuid || :).txt"
 if ! test -s "$fp"; then
     rm -f "$fp"
 fi
