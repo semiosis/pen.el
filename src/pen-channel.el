@@ -291,8 +291,8 @@
 
 (defset channel-init-time 2)
 
-;; Don't do this too often?
-(defset channel-read-time 10)
+;; Don't do this too often? - Definitely not. Too short a timer (i.e. 5) will kill the timer
+(defset channel-read-time 15)
 
 (defun channel-loop-chat ()
   (interactive)
