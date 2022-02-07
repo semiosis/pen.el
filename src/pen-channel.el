@@ -291,7 +291,7 @@
 
 (defset channel-init-time 2)
 
-;; Don't doo this too often?
+;; Don't do this too often?
 (defset channel-read-time 10)
 
 (defun channel-loop-chat ()
