@@ -1,0 +1,18 @@
+#!/bin/bash
+export TTY
+
+pen_container_name=pen
+
+docker-running-p() {
+    set -o pipefail
+    test "$drunning" = y || test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
+    ret="$?"
+    if test "$ret" -eq 0; then
+        drunning=y
+        :
+    else
+        false
+    fi
+}
+
+docker-running-p
