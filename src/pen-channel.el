@@ -179,51 +179,67 @@
 
 (defset channel-chatter-amplifier 4)
 
+(defvar channel-most-recent-mention '())
+
 (defun channel-probability-of-speaking (&optional base-probability n-users n-mentions n-your-comments n-conversors lines-of-conversation last-speaker-p second-last-speaker-p third-last-speaker-p)
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
   ;; The more users talking, the less likely you should speak again
 
-  (setq base-probability (or base-probability channel-base-probability))
-  (setq n-users (or n-users (length (channel-get-users))))
-  (setq n-mentions (or n-mentions (length (pen-str2lines (channel-get-conversation-mentioning-you)))))
-  (setq n-your-comments (or n-your-comments (length (pen-str2lines (channel-get-conversation-from-you)))))
-  ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
-  (setq n-conversors (or n-conversors (length (channel-get-conversors))))
-  (setq lines-of-conversation (or lines-of-conversation (length (pen-str2lines (channel-get-conversation)))))
+  (let* ((name (channel-get-your-name))
+         (mentions (channel-get-conversation-mentioning-you))
+         (most-recent-mention (pen-snc "sed -n '$p'" mentions))
+         (old-most-recent-mention (cdr (assoc name channel-most-recent-mention)))
+         (new-mention (not (string-equal old-most-recent-mention most-recent-mention))))
 
-  (let ((p (max
-            (/
-             (- (+
-                 ;; The following decrease probability:
-                 channel-base-probability
-                 ;; The number of users in the channel
-                 (* 1 n-users)
-                 ;; Then number of times you have visibly spoken
-                 (* 1 n-your-comments)
-                 ;; The number of conversors who have visibly spoken
-                 (* 1 n-conversors)
-                 (if (or last-speaker-p (ignore-errors (channel-last-speaker-was-you)))
-                     10
-                   0)
-                 (if (or second-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 2)))
-                     5
-                   0)
-                 (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
-                     1
-                   0)
-                 (max
-                  (min
-                   3
-                   lines-of-conversation)
-                  6))
+    (if new-mention
+        (progn
+          (remove-alist 'channel-most-recent-mention name)
+          (add-to-list 'channel-most-recent-mention `(,name . ,most-recent-mention))))
 
-                ;; The following increase probability:
-                ;; - The number of times you have been mentioned
-                (* 4 n-mentions))
-             channel-chatter-amplifier)
-            channel-base-probability)))
-    p))
+    (setq base-probability (or base-probability channel-base-probability))
+    (setq n-users (or n-users (length (channel-get-users))))
+    (setq n-mentions (or n-mentions (length (pen-str2lines mentions))))
+    (setq n-your-comments (or n-your-comments (length (pen-str2lines (channel-get-conversation-from-you)))))
+    ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
+    (setq n-conversors (or n-conversors (length (channel-get-conversors))))
+    (setq lines-of-conversation (or lines-of-conversation (length (pen-str2lines (channel-get-conversation)))))
+
+    (let ((p (max
+              (/
+               (- (+
+                   ;; The following decrease probability:
+                   channel-base-probability
+                   ;; The number of users in the channel
+                   (* 1 n-users)
+                   ;; Then number of times you have visibly spoken
+                   (* 1 n-your-comments)
+                   ;; The number of conversors who have visibly spoken
+                   (* 1 n-conversors)
+                   (if (or last-speaker-p (ignore-errors (channel-last-speaker-was-you)))
+                       10
+                     0)
+                   (if (or second-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 2)))
+                       5
+                     0)
+                   (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
+                       1
+                     0)
+                   (max
+                    (min
+                     3
+                     lines-of-conversation)
+                    6))
+
+                  ;; The following increase probability:
+                  ;; - The number of times you have been mentioned
+                  (* 4 n-mentions)
+                  (if new-mention
+                      10
+                    0))
+               channel-chatter-amplifier)
+              channel-base-probability)))
+      p)))
 
 (defun channel-say-something (&optional real-cb b auto)
   (interactive)
