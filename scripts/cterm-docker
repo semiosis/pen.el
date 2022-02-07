@@ -36,7 +36,6 @@ fi
 
 # I need jqs here to force quotes if empty
 elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-jq "$modename") $(cmd-nice-jq "$bufname") nil $extra_elisp))"
-echo "$elisp" | pen-tv
 
 # the nsfa must be created on the docker side, so I can't use this
 # elisp="(progn (pen-term $(cmd-nice-posix "$script") t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
