@@ -81,7 +81,8 @@
                     ;; MTP
                     (ignore-errors (s-replace-regexp "\\[\\(.*\\)(\\+i)\\]" "\\1" (car (scrape-list "\\[.*(\\+i)\\]" screen))))
                     ;; libera
-                    (car (scrape-list "^!#[^:]+:" screen))))
+                    (car (scrape-list "^!#[^:]+:" screen))
+                    "you"))
          (yourname (pen-snc "tr -d '[!#:<>@ ]'" yourname)))
     yourname))
 
