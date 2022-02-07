@@ -99,9 +99,12 @@
                                     (-uniq (-sort #'string-lessp (append
                                                                     users-joined
                                                                     users
-                                                                    users-from-conversation)))))
-         ;; (total-users (mapcar (lambda (s) (pen-snc "s/^mtp-//" s)) total-users))
-         (total-users (s-join ", " total-users))
+                                                                    users-from-conversation))))))
+    ;; (total-users (mapcar (lambda (s) (pen-snc "s/^mtp-//" s)) total-users)))
+    total-users))
+
+(defun channel-get-users-string ()
+  (let* ((total-users (s-join ", " (channel-get-users)))
          (total-users (or (sor total-users) "all of them")))
     total-users))
 
@@ -123,6 +126,16 @@
          (conversation (pen-snc "sed 's/^[0-9].*<[@ ]//' | sed 's/> /: /'" conversation)))
     conversation))
 
+(defun channel-get-conversation-from-others ()
+  (pen-snc
+   (pen-cmd "grep" "-vP" (concat "^" (channel-get-your-name) ":"))
+   (channel-get-conversation)))
+
+(defun channel-get-conversation-from-you ()
+  (pen-snc
+   (pen-cmd "grep" "-P" (concat "^" (channel-get-your-name) ":"))
+   (channel-get-conversation)))
+
 ;; (async-pf "pf-tweet-sentiment/1" (lambda (s) (pen-insert s)) "it's a great show")
 ;; (funcall (lambda (s) (pen-insert s)) "it's a great show")
 ;; (lambda (s) (pen-insert s))
@@ -139,6 +152,13 @@
          (apply ',callback-fn (list (chomp (cat ,tf))))
          (f-delete ,tf))))))
 
+;; (pen-tv (pen-sn (concat "sed '/^" (channel-get-your-name)/) (pen-sn "tac" (channel-get-conversation))))
+
+;; I need to know how much time has passed since the last person spoke
+
+(defun channel-last-speaker-was-you ()
+  (re-match-p (concat "^" (channel-get-your-name)) (pen-snc "sed -n '$p'" (channel-get-conversation))))
+
 (defun channel-say-something (&optional b auto)
   (interactive)
   (let ((cb (or b (current-buffer))))
@@ -146,23 +166,42 @@
       (let* ((room (channel-get-room))
              (yourname (channel-get-your-name))
              (conversation (channel-get-conversation))
-             (users (channel-get-users)))
+             (users (channel-get-users))
+             (users-string (channel-get-users-string))
+             ;; The more often other people mention you, the more likely the bot should interject
+             ;; The more you have spoken, the less likely you should speak again
+             (interjection-chance (= 1 (random (+ 10 (length users))))))
 
-        (if (or (not (re-match-p (channel-get-your-name) (pen-snc "sed -n '$p'" (channel-get-conversation))))
-                (= 1 (random 15))
-                (or (not auto)))
-            (async-pf "pf-say-something-on-irc/4"
-                      (eval
-                       `(lambda (result)
-                          (with-current-buffer ,cb
-                            (pen-insert result)
-                            (if ,auto
-                                (pen-insert "\n")))))
-                      room users conversation yourname))))))
+        ;; TODO The more users speaking, the less likely to interject
+
+        (cond
+         ((or (and (not (channel-last-speaker-was-you))
+                   ;; The more users speaking the slower
+                   (= 1 (random (+ 10 (length users)))))
+              (or (not auto)))
+          (async-pf "pf-say-something-on-irc/4"
+                    (eval
+                     `(lambda (result)
+                        (with-current-buffer ,cb
+                          (pen-insert result)
+                          (if ,auto
+                              (pen-insert "\n")))))
+                    room users-string conversation yourname))
+         ((or (not (channel-last-speaker-was-you))
+              (= 1 (random 15))
+              (or (not auto)))
+          (async-pf "pf-say-something-on-irc/4"
+                    (eval
+                     `(lambda (result)
+                        (with-current-buffer ,cb
+                          (pen-insert result)
+                          (if ,auto
+                              (pen-insert "\n")))))
+                    room users-string conversation yourname)))))))
 
 (defun channel (personality)
   (interactive (list
-                (fz (pen-list-fictional-characters channel-get-users)
+                (fz (pen-list-fictional-characters channel-get-users-string)
                     nil nil "Person: ")
                 ;; (read-string-hist "person: ")
                 ))
