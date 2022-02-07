@@ -1,4 +1,4 @@
-(require 'apel)
+(require 'alist)
 
 ;; I suppose that `chann`, being the mantissa of chann.el is the unique name-or-names identifying Chann.el
 
@@ -297,7 +297,7 @@
   (interactive)
   (loop for ti in channel-timers do
         (cancel-timer (cdr ti))
-        (remove-alist channel-timers (car ti)))
+        (remove-alist .channel-timers (car ti)))
   (message "Channel chatbots cancelled"))
 
 (defun channel-activate-all-timers ()
@@ -318,18 +318,18 @@
           (if timer
               (progn
                 (cancel-timer (cdr timer))
-                (remove-alist channel-timers n)
+                (remove-alist 'channel-timers n)
                 (message "Restarting chatbot")))
           (progn
             (message "Starting chatbot")
             (let ((newtimer (run-with-timer channel-init-time channel-read-time
                                             (eval
                                              `(lambda ()
-                                                (channel-activate-all-timers)
+                                                ;; (channel-activate-all-timers)
                                                 (ignore-errors
                                                   (if (buffer-killed? ,b)
                                                       (cancel-timer (cdr (assoc ,n channel-timers)))
-                                                    (remove-alist channel-read-time ,n)
+                                                    (remove-alist 'channel-read-time ,n)
                                                     (let ((real-cb (current-buffer)))
                                                       (with-current-buffer ,b
                                                         ;; (pen-insert "hello")
