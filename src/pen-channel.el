@@ -173,20 +173,31 @@
 
 (defset channel-base-probability 10)
 
-(defun channel-should-i-speak-p ()
+(defun channel-should-i-speak-p (&optional base-probability n-users n-mentions n-your-comments n-conversors)
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
   ;; The more users talking, the less likely you should speak again
-  (let ((n-mentions (length (pen-str2lines (channel-get-conversation-mentioning-you))))
-        (n-your-comments (length (pen-str2lines (channel-get-conversation-from-you))))
-        ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
-        (n-conversors (length (channel-get-conversors))))
 
-    (if (= 1 (random (- (+ channel-base-probability
-                           (length users)
-                           (* 2 n-your-comments)
-                           n-conversors)
-                        (* 2 n-mentions)))))))
+  (setq base-probability (or base-probability channel-base-probability))
+  (setq n-users (or n-users (length users)))
+  (setq n-mentions (or n-mentions (length (pen-str2lines (channel-get-conversation-mentioning-you)))))
+  (setq n-your-comments (or n-your-comments (length (pen-str2lines (channel-get-conversation-from-you)))))
+  ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
+  (setq n-conversors (or n-conversors (length (channel-get-conversors))))
+
+  (if (= 1 (random (- (+
+                       ;; The following decrease probability:
+                       channel-base-probability
+                       ;; The number of users in the channel
+                       n-users
+                       ;; Then number of times you have visibly spoken
+                       (* 2 n-your-comments)
+                       ;; The number of conversors who have visibly spoken
+                       n-conversors)
+
+                      ;; The following increase probability:
+                      ;; - The number of times you have been mentioned
+                      (* 2 n-mentions))))))
 
 (defun channel-say-something (&optional b auto)
   (interactive)
