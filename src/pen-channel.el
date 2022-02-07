@@ -175,7 +175,7 @@
   ;; (-uniq (pen-sn "cut -d : -f 1" (channel-get-conversation-from-others)))
   (-filter-not-empty-string (-uniq (pen-str2lines (pen-sn "cut -d : -f 1" (channel-get-conversation))))))
 
-(defset channel-base-probability 5)
+(defset channel-base-probability 3)
 
 (defset channel-chatter-amplifier 4)
 
@@ -212,9 +212,11 @@
                  (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
                      1
                    0)
-                 (min
-                  5
-                  lines-of-conversation))
+                 (max
+                  (min
+                   3
+                   lines-of-conversation)
+                  6))
 
                 ;; The following increase probability:
                 ;; - The number of times you have been mentioned
@@ -291,7 +293,7 @@
 
 ;; Don't do this too often? - Definitely not. Too short a timer (i.e. 5) will kill the timer
 ;; Instead, rely on channel-chatter-amplifier
-(defset channel-read-time 7)
+(defset channel-read-time 10)
 
 (defun channel-cancel-all-timers ()
   (interactive)
