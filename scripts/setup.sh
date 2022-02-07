@@ -602,3 +602,5 @@ done
 
 # Create json from shell
 agi jo
+
+agi uuid
