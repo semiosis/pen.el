@@ -162,8 +162,9 @@
 
 ;; I need to know how much time has passed since the last person spoke
 
-(defun channel-nth-speaker-was-you (n)
-  (re-match-p (concat "^" (channel-get-your-name)) (pen-snc "tac | sed -n '" n "p'" (channel-get-conversation))))
+(defun channel-nth-speaker-was-you (&optional n)
+  (setq n (or n 1))
+  (re-match-p (concat "^" (channel-get-your-name)) (pen-snc (concat "tac | sed -n '" (str n) "p'") (channel-get-conversation))))
 
 (defun channel-last-speaker-was-you ()
   (channel-nth-speaker-was-you 1))
@@ -176,7 +177,7 @@
 
 (defset channel-chatter-amplifier 2)
 
-(defun channel-probability-of-speaking (&optional base-probability n-users n-mentions n-your-comments n-conversors last-speaker-p second-last-speaker-p third-last-speaker-p)
+(defun channel-probability-of-speaking (&optional base-probability n-users n-mentions n-your-comments n-conversors lines-of-conversation last-speaker-p second-last-speaker-p third-last-speaker-p)
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
   ;; The more users talking, the less likely you should speak again
@@ -187,6 +188,7 @@
   (setq n-your-comments (or n-your-comments (length (pen-str2lines (channel-get-conversation-from-you)))))
   ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
   (setq n-conversors (or n-conversors (length (channel-get-conversors))))
+  (setq lines-of-conversation (or lines-of-conversation (length (pen-str2lines (channel-get-conversation)))))
 
   (let ((p (max
             (/
@@ -205,7 +207,8 @@
                              20
                            10)
                        5)
-                   -1))
+                   -1)
+                 lines-of-conversation)
 
                 ;; The following increase probability:
                 ;; - The number of times you have been mentioned
