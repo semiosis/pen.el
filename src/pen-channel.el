@@ -299,7 +299,7 @@
   (interactive)
   (loop for ti in channel-timers do
         (cancel-timer (cdr ti))
-        (remove-alist .channel-timers (car ti)))
+        (remove-alist 'channel-timers (car ti)))
   (message "Channel chatbots cancelled"))
 
 (defun channel-activate-all-timers ()
