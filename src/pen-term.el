@@ -320,9 +320,10 @@ commands to use in that buffer.
 
 (defun pen-revert-kill-buffer-and-window ()
   (interactive)
-  (force-revert-buffer)
+  (ignore-errors
+    (force-revert-buffer)
 
-  (pen-kill-buffer-and-window))
+    (pen-kill-buffer-and-window)))
 
 (defun pen-save-and-kill-buffer-and-window ()
   (interactive)
