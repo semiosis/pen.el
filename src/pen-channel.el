@@ -70,7 +70,8 @@
   (let* ((screen (buffer-string-visible)
                  ;; (pen-selected-or-preceding-context)
                  )
-         (room (car (scrape-list "\\[#[a-z_-]+\\]" screen))))
+         (room (car (scrape-list "\\[#[a-z_-]+\\]" screen)))
+         (room (pen-snc "sed 's/^mtp-//'" room)))
     room))
 
 (defun channel-get-your-name ()
@@ -83,7 +84,8 @@
                     ;; libera
                     (ignore-errors (pen-snc "grep -P -- \"[0-9]:libera/#\" | awk \"{print \\$2}\"" screen))
                     "you"))
-         (yourname (pen-snc "tr -d '[!#:<>@ ]'" yourname)))
+         (yourname (pen-snc "tr -d '[!#:<>@ ]'" yourname))
+         (yourname (pen-snc "sed 's/^mtp-//'" yourname)))
     yourname))
 
 (defun channel-get-users ()
@@ -93,11 +95,13 @@
          (users (s-split " " (pen-snc "sed -n '/Users/{n;n;p}' | grep '\\[' | sed 's/[^ ]* //' | tr -d '[[]@]' | sed 's/  / /g'" conversation)))
          (users-from-conversation (pen-str2lines (pen-snc "tr -d '[<>@ ]'" (scrape "<[ @][^>]*>" conversation))))
          ;; (yo (pen-tv (pps (-uniq (-sort #'string-lessp users-from-conversation)))))
-         (total-users (s-join ", " (-filter-not-empty-string
+         (total-users (-filter-not-empty-string
                                     (-uniq (-sort #'string-lessp (append
                                                                     users-joined
                                                                     users
-                                                                    users-from-conversation))))))
+                                                                    users-from-conversation)))))
+         (total-users (mapcar (lambda (s) (pen-snc "s/^mtp-//" s)) total-users))
+         (total-users (s-join ", " total-users))
          (total-users (or (sor total-users) "all of them")))
     total-users))
 
