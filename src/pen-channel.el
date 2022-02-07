@@ -173,7 +173,7 @@
 
 (defset channel-base-probability 5)
 
-(defun channel-should-i-speak-p (&optional base-probability n-users n-mentions n-your-comments n-conversors last-speaker-p second-last-speaker-p third-last-speaker-p get-prob)
+(defun channel-should-i-speak-p (&optional base-probability n-users n-mentions n-your-comments n-conversors last-speaker-p second-last-speaker-p third-last-speaker-p)
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
   ;; The more users talking, the less likely you should speak again
@@ -207,9 +207,7 @@
                ;; - The number of times you have been mentioned
                (* 4 n-mentions))
             channel-base-probability)))
-    (if get-prob
-        p
-      (= 1 (random p)))))
+    p))
 
 (defun channel-say-something (&optional b auto)
   (interactive)
@@ -226,16 +224,18 @@
 
         ;; TODO The more users speaking, the less likely to interject
 
-        (if (or (channel-should-i-speak-p)
-                (not auto))
-            (async-pf "pf-say-something-on-irc/4"
-                      (eval
-                       `(lambda (result)
-                          (with-current-buffer ,cb
-                            (pen-insert result)
-                            (if ,auto
-                                (pen-insert "\n")))))
-                      room users-string conversation yourname))))))
+        (let ((p (channel-should-i-speak-p)))
+          (if (or (= 1 (random p))
+                  (not auto))
+              (async-pf "pf-say-something-on-irc/4"
+                        (eval
+                         `(lambda (result)
+                            (with-current-buffer ,cb
+                              (pen-insert result)
+                              (if ,auto
+                                  (pen-insert "\n")))))
+                        room users-string conversation yourname)
+            (message (concat "Chance of speaking: 1/" (str (channel-should-i-speak-p))))))))))
 
 (defun channel (personality)
   (interactive (list
@@ -268,7 +268,7 @@
 ;; The timer for each chatbot should be chaotic - use prime numbers, say, but be a fraction - i should divide by some prime number
 
 (defset channel-init-time 2)
-(defset channel-read-time 15)
+(defset channel-read-time 5)
 
 (defun channel-loop-chat ()
   (interactive)
@@ -282,18 +282,21 @@
     (if (sor n)
         (if timer
             (progn
-              (message "Chatbot with that name already running")
+              (cancel-timer (cdr timer))
+              (message "Restarting chatbot")
               timer)
-          (let ((newtimer (run-with-timer channel-init-time channel-read-time
-                                          (eval
-                                           `(lambda ()
-                                              (if (buffer-killed? ,b)
-                                                  (cancel-timer (cdr (assoc ,n channel-timers)))
-                                                (with-current-buffer ,b
-                                                  ;; (pen-insert "hello")
-                                                  (channel-say-something ,b t))))))))
-            (add-to-list 'channel-timers
-                         `(,n . ,newtimer))))
+          (progn
+            (message "Starting chatbot")
+            (let ((newtimer (run-with-timer channel-init-time channel-read-time
+                                            (eval
+                                             `(lambda ()
+                                                (if (buffer-killed? ,b)
+                                                    (cancel-timer (cdr (assoc ,n channel-timers)))
+                                                  (with-current-buffer ,b
+                                                    ;; (pen-insert "hello")
+                                                    (channel-say-something ,b t))))))))
+              (add-to-list 'channel-timers
+                           `(,n . ,newtimer)))))
       (error "Could not determine chatbot name from screen"))))
 
 (provide 'pen-channel)
