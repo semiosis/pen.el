@@ -245,7 +245,7 @@ commands to use in that buffer.
   ;; This is an addition
   (current-buffer))
 
-(defun pen-term (program &optional closeframe modename buffer-name reuse starting_elisp)
+(defun pen-term (program &optional closeframe modename buffer-name reuse starting-elisp)
   (interactive (list (read-string "program:")))
   (let ((termcmd (pen-var-value-maybe 'pen-termcmd)))
     (if termcmd
@@ -255,9 +255,9 @@ commands to use in that buffer.
           (switch-to-buffer buf)
           (pen-insert (concat program "; exit"))
           (ekm "C-m"))
-      (pen-eterm program closeframe modename buffer-name reuse starting_elisp))))
+      (pen-eterm program closeframe modename buffer-name reuse starting-elisp))))
 
-(defun pen-eterm (program &optional closeframe modename buffer-name reuse starting_elisp)
+(defun pen-eterm (program &optional closeframe modename buffer-name reuse starting-elisp)
   (interactive (list (read-string "program:")))
   (if (and buffer-name reuse (get-buffer buffer-name))
       (switch-to-buffer buffer-name)
@@ -269,8 +269,8 @@ commands to use in that buffer.
            (major-mode-p 'term-mode))
           (run-with-idle-timer 0.2 nil
                                `(lambda ()
-                                  (if starting_elisp
-                                      (eval-string starting_elisp))
+                                  (if (sor ,starting-elisp)
+                                      (eval-string ,starting-elisp))
                                   (ignore-errors
                                     (if (buffer-exists ,(current-buffer))
                                         (with-current-buffer
