@@ -235,7 +235,7 @@
                               (if ,auto
                                   (pen-insert "\n")))))
                         room users-string conversation yourname)
-            (message (concat "Chance of speaking: 1/" (str (channel-should-i-speak-p))))))))))
+            (message (concat (str (time-to-seconds)) " Chance of speaking: 1/" (str (channel-should-i-speak-p))))))))))
 
 (defun channel (personality)
   (interactive (list
