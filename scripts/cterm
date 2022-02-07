@@ -83,7 +83,8 @@ esac
 if inside-docker-p; then
     : ${CWD:="$(pwd)"}
 else
-    CWD=/
+    : ${CWD:="$(pwd)"}
+    # CWD=/
 fi
 
 if inside-docker-p; then
