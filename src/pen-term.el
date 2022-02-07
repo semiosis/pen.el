@@ -49,6 +49,7 @@
 
 (defun pen-term-paste ()
   (interactive)
+  (xc (pen-mnm (xc nil t t)) t t)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (term--xterm-paste)
     (term-paste)))
