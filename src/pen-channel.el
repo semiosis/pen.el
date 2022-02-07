@@ -173,6 +173,8 @@
 
 (defset channel-base-probability 5)
 
+(defset channel-chatter-amplifier 2)
+
 (defun channel-probability-of-speaking (&optional base-probability n-users n-mentions n-your-comments n-conversors last-speaker-p second-last-speaker-p third-last-speaker-p)
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
@@ -186,26 +188,28 @@
   (setq n-conversors (or n-conversors (length (channel-get-conversors))))
 
   (let ((p (max
-            (- (+
-                ;; The following decrease probability:
-                channel-base-probability
-                ;; The number of users in the channel
-                (* 1 n-users)
-                ;; Then number of times you have visibly spoken
-                (* 1 n-your-comments)
-                ;; The number of conversors who have visibly spoken
-                (* 1 n-conversors)
-                (if (or last-speaker-p (ignore-errors (channel-last-speaker-was-you)))
-                    (if (or second-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 2)))
-                        (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
-                            20
-                          10)
-                      5)
-                  -1))
+            (/
+             (- (+
+                 ;; The following decrease probability:
+                 channel-base-probability
+                 ;; The number of users in the channel
+                 (* 1 n-users)
+                 ;; Then number of times you have visibly spoken
+                 (* 1 n-your-comments)
+                 ;; The number of conversors who have visibly spoken
+                 (* 1 n-conversors)
+                 (if (or last-speaker-p (ignore-errors (channel-last-speaker-was-you)))
+                     (if (or second-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 2)))
+                         (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
+                             20
+                           10)
+                       5)
+                   -1))
 
-               ;; The following increase probability:
-               ;; - The number of times you have been mentioned
-               (* 4 n-mentions))
+                ;; The following increase probability:
+                ;; - The number of times you have been mentioned
+                (* 4 n-mentions))
+             channel-chatter-amplifier)
             channel-base-probability)))
     p))
 
