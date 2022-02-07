@@ -7,6 +7,10 @@ export TTY
 # Examples:
 # ct vim /
 
+if ! docker-running-p; then
+    "$@"
+fi
+
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
