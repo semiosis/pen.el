@@ -236,7 +236,7 @@
                                   (pen-insert "\n")))))
                         room users-string conversation yourname)
             (if (eq (current-buffer) cb)
-                (message (concat (str (time-to-seconds)) " Chance of speaking: 1/" (str (channel-probability-of-speaking)))))))))))
+                (message (concat (str (time-to-seconds)) " Chance of " yourname " speaking: 1/" (str (channel-probability-of-speaking)))))))))))
 
 (defun channel (personality)
   (interactive (list
