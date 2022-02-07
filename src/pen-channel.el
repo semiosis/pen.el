@@ -190,11 +190,11 @@
                 ;; The following decrease probability:
                 channel-base-probability
                 ;; The number of users in the channel
-                (* 2 n-users)
+                (* 1 n-users)
                 ;; Then number of times you have visibly spoken
-                (* 3 n-your-comments)
+                (* 1 n-your-comments)
                 ;; The number of conversors who have visibly spoken
-                (* 3 n-conversors)
+                (* 1 n-conversors)
                 (if (or last-speaker-p (ignore-errors (channel-last-speaker-was-you)))
                     (if (or second-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 2)))
                         (if (or third-last-speaker-p (ignore-errors (channel-nth-speaker-was-you 3)))
@@ -209,9 +209,9 @@
             channel-base-probability)))
     p))
 
-(defun channel-say-something (&optional rcb b auto)
+(defun channel-say-something (&optional real-cb b auto)
   (interactive)
-  (let ((rcb (or rcb (current-buffer)))
+  (let ((lrcb (or real-cb (current-buffer)))
         (cb (or b (current-buffer))))
     (with-current-buffer cb
       (let* ((room (channel-get-room))
@@ -236,8 +236,10 @@
                               (if ,auto
                                   (pen-insert "\n")))))
                         room users-string conversation yourname)
-            (if (eq rcb cb)
-                (message (concat (str (time-to-seconds)) " Chance of " yourname " speaking: 1/" (str (channel-probability-of-speaking)))))))))))
+            (if (eq lrcb cb)
+                (message (concat (str (time-to-seconds)) " Chance of " yourname " speaking: 1/" (str (channel-probability-of-speaking))))
+              ;; (message (concat (str lrcb) " " (str cb)))
+              )))))))
 
 (defun channel (personality)
   (interactive (list
