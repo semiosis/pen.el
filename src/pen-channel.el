@@ -173,7 +173,7 @@
 
 (defset channel-base-probability 5)
 
-(defun channel-should-i-speak-p (&optional base-probability n-users n-mentions n-your-comments n-conversors last-speaker-p second-last-speaker-p third-last-speaker-p)
+(defun channel-probability-of-speaking (&optional base-probability n-users n-mentions n-your-comments n-conversors last-speaker-p second-last-speaker-p third-last-speaker-p)
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
   ;; The more users talking, the less likely you should speak again
@@ -224,7 +224,7 @@
 
         ;; TODO The more users speaking, the less likely to interject
 
-        (let ((p (channel-should-i-speak-p)))
+        (let ((p (channel-probability-of-speaking)))
           (if (or (= 1 (random p))
                   (not auto))
               (async-pf "pf-say-something-on-irc/4"
@@ -235,8 +235,8 @@
                               (if ,auto
                                   (pen-insert "\n")))))
                         room users-string conversation yourname)
-            (if (= (current-buffer) cb)
-                (message (concat (str (time-to-seconds)) " Chance of speaking: 1/" (str (channel-should-i-speak-p)))))))))))
+            (if (eq (current-buffer) cb)
+                (message (concat (str (time-to-seconds)) " Chance of speaking: 1/" (str (channel-probability-of-speaking)))))))))))
 
 (defun channel (personality)
   (interactive (list
