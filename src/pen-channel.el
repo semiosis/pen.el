@@ -161,21 +161,32 @@
 
 ;; I need to know how much time has passed since the last person spoke
 
+(defun channel-nth-speaker-was-you (n)
+  (re-match-p (concat "^" (channel-get-your-name)) (pen-snc "tac | sed -n '" n "p'" (channel-get-conversation))))
+
 (defun channel-last-speaker-was-you ()
-  (re-match-p (concat "^" (channel-get-your-name)) (pen-snc "sed -n '$p'" (channel-get-conversation))))
+  (channel-nth-speaker-was-you 1))
 
 (defun channel-get-conversors ()
   ;; (-uniq (pen-sn "cut -d : -f 1" (channel-get-conversation-from-others)))
   (-filter-not-empty-string (-uniq (pen-str2lines (pen-sn "cut -d : -f 1" (channel-get-conversation))))))
 
-(defun channel-should-i-interject-p ()
+(defset channel-base-probability 10)
+
+(defun channel-should-i-speak-p ()
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
   ;; The more users talking, the less likely you should speak again
   (let ((n-mentions (length (pen-str2lines (channel-get-conversation-mentioning-you))))
         (n-your-comments (length (pen-str2lines (channel-get-conversation-from-you))))
         ;; (n-users (length (pen-str2lines (channel-get-conversation-from-you))))
-        (n-conversors (length (channel-get-conversors))))))
+        (n-conversors (length (channel-get-conversors))))
+
+    (if (= 1 (random (- (+ channel-base-probability
+                           (length users)
+                           (* 2 n-your-comments)
+                           n-conversors)
+                        (* 2 n-mentions)))))))
 
 (defun channel-say-something (&optional b auto)
   (interactive)
@@ -188,7 +199,7 @@
              (users-string (channel-get-users-string))
              ;; The more often other people mention you, the more likely the bot should interject
              ;; The more you have spoken, the less likely you should speak again
-             (interjection-chance (= 1 (random (+ 10 (length users))))))
+             (interjection-chance (= 1 (random (+ channel-base-probability (length users))))))
 
         ;; TODO The more users speaking, the less likely to interject
 
