@@ -146,18 +146,18 @@
       (let* ((room (channel-get-room))
              (yourname (channel-get-your-name))
              (conversation (channel-get-conversation))
-             (users (channel-get-users))))
+             (users (channel-get-users)))
 
-      (if (or (not (re-match-p (channel-get-your-name) (pen-snc "sed -n '$p'" (channel-get-conversation))))
-              (= 1 (random 5)))
-          (async-pf "pf-say-something-on-irc/4"
-                    (eval
-                     `(lambda (result)
-                        (with-current-buffer ,cb
-                          (pen-insert result)
-                          (if ,auto
-                              (pen-insert "\n")))))
-                    room users conversation yourname)))))
+        (if (or (not (re-match-p (channel-get-your-name) (pen-snc "sed -n '$p'" (channel-get-conversation))))
+                (= 1 (random 5)))
+            (async-pf "pf-say-something-on-irc/4"
+                      (eval
+                       `(lambda (result)
+                          (with-current-buffer ,cb
+                            (pen-insert result)
+                            (if ,auto
+                                (pen-insert "\n")))))
+                      room users conversation yourname))))))
 
 (defun channel (personality)
   (interactive (list
