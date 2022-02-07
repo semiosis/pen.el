@@ -1,6 +1,7 @@
 (defun pen-run-after-time (secs &rest body)
-  (eval
-   `(run-after-time ,secs nil (lambda () ,@body))))
+  (ignore-errors
+    (eval
+     `(run-after-time ,secs nil (lambda () ,@body)))))
 
 (defun pen-mtp-connect-with-name (name &optional pet start-chatbot)
   (interactive (list (fz (pen-list-fictional-characters (channel-get-users-string))
