@@ -226,30 +226,16 @@
 
         ;; TODO The more users speaking, the less likely to interject
 
-        (cond
-         ((or (and (not (channel-last-speaker-was-you))
-                   ;; The more users speaking the slower
-                   (= 1 (random (+ 10 (length users)))))
-              (or (not auto)))
-          (async-pf "pf-say-something-on-irc/4"
-                    (eval
-                     `(lambda (result)
-                        (with-current-buffer ,cb
-                          (pen-insert result)
-                          (if ,auto
-                              (pen-insert "\n")))))
-                    room users-string conversation yourname))
-         ((or (not (channel-last-speaker-was-you))
-              (= 1 (random 15))
-              (or (not auto)))
-          (async-pf "pf-say-something-on-irc/4"
-                    (eval
-                     `(lambda (result)
-                        (with-current-buffer ,cb
-                          (pen-insert result)
-                          (if ,auto
-                              (pen-insert "\n")))))
-                    room users-string conversation yourname)))))))
+        (if (or (channel-should-i-speak-p)
+                (not auto))
+            (async-pf "pf-say-something-on-irc/4"
+                      (eval
+                       `(lambda (result)
+                          (with-current-buffer ,cb
+                            (pen-insert result)
+                            (if ,auto
+                                (pen-insert "\n")))))
+                      room users-string conversation yourname))))))
 
 (defun channel (personality)
   (interactive (list
