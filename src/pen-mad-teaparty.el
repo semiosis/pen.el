@@ -2,12 +2,15 @@
   (eval
    `(run-with-timer ,secs nil (lambda () ,@body))))
 
+(defun mtp-delay-start-channel ()
+  (eval `(pen-run-after-time 3 '(with-current-buffer ,(current-buffer) (channel-loop-chat)))))
+
 (defun pen-mtp-connect-with-name (name &optional pet start-chatbot)
   (interactive (list (fz (pen-list-fictional-characters (channel-get-users-string))
                          nil nil "Person: ")))
   (if pet
       (if start-chatbot
-          (pen-sps (pen-cmd "pet" "-e" "(eval \\`(pen-run-after-time 3 '(with-current-buffer ,(current-buffer) (channel-loop-chat))))" "mtp" name))
+          (pen-sps (pen-cmd "pet" "-e" "(mtp-delay-start-channel)" "mtp" name))
         (pen-sps (pen-cmd "pet" "mtp" name)))
     (pen-sps (pen-cmd "mtp" name))))
 
