@@ -290,7 +290,9 @@
 ;; The timer for each chatbot should be chaotic - use prime numbers, say, but be a fraction - i should divide by some prime number
 
 (defset channel-init-time 2)
-(defset channel-read-time 5)
+
+;; Don't doo this too often?
+(defset channel-read-time 10)
 
 (defun channel-loop-chat ()
   (interactive)
