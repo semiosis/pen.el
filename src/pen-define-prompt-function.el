@@ -1969,6 +1969,8 @@
           (ht-get yaml-ht "approximate-token-char-length")
           2.5))
 
+        (tags (ht-get yaml-ht "tags"))
+
         (title (ht-get yaml-ht "title"))
         (title (sor title
                     task))
