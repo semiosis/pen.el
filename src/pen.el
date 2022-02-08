@@ -1946,6 +1946,7 @@ May use to generate code from comments."
 (require 'pen-emacs)
 (require 'pen-acolyte-minor-mode)
 (require 'pen-gptprompts)
+(require 'pen-images)
 ;; For debugging
 (require 'pen-messages)
 (require 'pen-yaml)
