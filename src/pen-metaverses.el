@@ -37,7 +37,7 @@
     `(let ((paths
             (or ,paths
                 (-non-nil
-                 (mapcar 'sor (glob (concat pen-metaverses-directory "/metaverses" "/*.metaverse")))))))
+                 (mapcar 'sor (glob (concat pen-metaverses-directory "/metaverses" "/*.verse")))))))
        (cl-loop for path in paths do
                 (message (concat "pen-mode: Loading .metaverse file " path))
 
