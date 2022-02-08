@@ -12,7 +12,7 @@
 
 (defun pen-visualise-text (text)
   (interactive (list (pen-selected-text)))
-  (let ((path (pf-given-a-textual-description-visualise-it-with-an-image/1 text)))
+  (let ((path (car (pen-one (pf-given-a-textual-description-visualise-it-with-an-image/1 text :no-select-result t)))))
     (pen-show-image path)))
 
 (provide 'pen-images)
