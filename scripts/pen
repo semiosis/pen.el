@@ -39,7 +39,19 @@ pen_image_tag() {
 
 : "${pen_image:="$(pen_image_tag)"}"
 : "${pen_image:="semiosis/pen.el:latest"}"
-pen_container_name=pen
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -cn) {
+        pen_container_name="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+: "${pen_container_name:="pen"}"
 
 sn="$(basename "$0")"
 bn="$sn"
