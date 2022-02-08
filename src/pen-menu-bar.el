@@ -340,7 +340,7 @@
 
 (defset menu-bar-configure-menu
   (let ((menu (make-sparse-keymap "Configure")))
-    (bindings--define-key menu [mi-pen-go-to-vim-config]
+    (bindings--define-key menu [mi-pen-edit-timeouts-log]
       '(menu-item "Edit timeouts log" pen-edit-timeouts-log
                   :help "Edit the timeouts log"))
     (bindings--define-key menu [mi-pen-go-to-vim-config]
