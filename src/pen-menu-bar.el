@@ -499,6 +499,9 @@
     (bindings--define-key menu [mi-visualise-text]
       '(menu-item "Visualise text" pf-given-a-textual-description-visualise-it-with-an-image/1
                   :help "Given a textual description, generate and display an image"))
+    (bindings--define-key menu [mi-describe-image]
+      '(menu-item "Describe image" pf-given-an-image-describe-it/1
+                  :help "Given an image, describe it"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -787,6 +790,9 @@
 
 (defset menu-bar-utils-menu
   (let ((menu (make-sparse-keymap "Utilities")))
+    (bindings--define-key menu [mi-menu-bar-images-menu]
+      `(menu-item "Text and Images" ,menu-bar-images-menu
+                  :help "Text and images menu"))
     (bindings--define-key menu [mi-pen-proxy-set-localhost]
       '(menu-item "Set proxy to localhost" pen-proxy-set-localhost
                   :help "For debugging the proxy"))
