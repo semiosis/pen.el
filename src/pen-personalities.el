@@ -8,6 +8,7 @@
 
 (defvar pen-personalities-failed '())
 
+;; (pen-personality-file-load "/home/shane/source/git/semiosis/personalities/personalities/libertyprime.person")
 (defun pen-personality-file-load (fp)
   (let* ((yaml-ht (yamlmod-read-file fp))
          (incl-name (sor (ht-get yaml-ht "include")))
@@ -40,7 +41,7 @@
        (cl-loop for path in paths do
                 (message (concat "pen-mode: Loading .personalitie file " path))
 
-                (try
+                (pen-try
                  (let* ((yaml-ht (pen-personality-file-load path))
                         (personality-title (ht-get yaml-ht "full-name")))
                    (ht-set yaml-ht "personality-path" path)
