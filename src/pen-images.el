@@ -11,6 +11,7 @@
   (feh path))
 
 (defun pen-visualise-text (text)
+  (interactive (list (pen-selected-text)))
   (let ((path (pf-given-a-textual-description-visualise-it-with-an-image/1 text)))
     (pen-show-image path)))
 
