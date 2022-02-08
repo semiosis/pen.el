@@ -10,4 +10,8 @@
   (interactive (list (read-file-name "Image file path: ")))
   (feh path))
 
+(defun pen-visualise-text (text)
+  (let ((path (pf-given-a-textual-description-visualise-it-with-an-image/1 text)))
+    (pen-show-image path)))
+
 (provide 'pen-images)
