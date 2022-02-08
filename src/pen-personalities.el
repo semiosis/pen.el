@@ -43,7 +43,7 @@
 
                 (pen-try
                  (let* ((yaml-ht (pen-personality-file-load path))
-                        (personality-title (ht-get yaml-ht "full-name")))
+                        (full-name (ht-get yaml-ht "full-name")))
                    (ht-set yaml-ht "personality-path" path)
                    (message (concat "pen-mode: Loaded personality " full-name))
                    (ht-set pen-personalities full-name yaml-ht))
