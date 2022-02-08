@@ -19,7 +19,7 @@
     (ilist 20 "Fictional characters")))
 
 (defun apostrophe-generate-blurb (person)
-  (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t)))
+  (pen-car (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t)))
 
 (defun apostrophe-start-chatbot-from-name (name &optional auto)
   "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
