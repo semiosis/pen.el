@@ -21,7 +21,3 @@ export PATH="$PATH:/root/.cargo/bin/cargo"
 
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
-
-if [ -f ~/.shellrc ]; then
-    . ~/.shellrc
-fi
