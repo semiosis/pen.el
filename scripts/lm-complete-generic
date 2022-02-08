@@ -137,6 +137,8 @@ openai_results_split() {
 
     cd "$td"
 
+    # cat "$completions_fp" | pen-tv &>/dev/null
+
     if test "$PEN_MODE" = search; then
         if cat "$completions_fp" | grep -q -P '^===== Completion [0-9]+ =====$'; then
             csplit -f splitfile_ -z "$completions_fp" "/^===== Completion [0-9]\\+ =====$/" '{*}' &>/dev/null
@@ -360,7 +362,7 @@ case "$sn" in
             "$completer_sn"
             exit $?
         else
-            pen-timeout 10 "$completer_sn"  > "$tf_response"
+            pen-timeout 15 "$completer_sn"  > "$tf_response"
         fi
     }
     ;;

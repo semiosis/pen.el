@@ -295,32 +295,36 @@ if test -n "$PEN_PROXY"; then
     # PEN_GEN_DIR will still be used, but here. Not in the proxy. The proxy will return all the results in a single JSON object
 fi
 
-{
-if test -n "$PEN_N_JOBS" && ! test "$PEN_N_JOBS" = 1; then
-    mkdir -p "$PEN_GEN_DIR"
+# cmd parallel -j "$PEN_N_JOBS" | pen-tv &>/dev/null
 
-    # If I run the jobs with tmux then I can use the human engine
-
-    # Do all of them in parallel
-    #pen-ci "$PEN_LM_COMMAND" | awk 1 | while IFS=$'\n' read -r result_dir; do
-    #    mv "$result_dir" "$PEN_GEN_DIR/"
-    #done &>/dev/null
-    for (( i = 1; i < "$PEN_N_JOBS"; i++ )); do
-        # cmd-nice-posix pen-odn pen-ci --enabled= "$PEN_CACHE" "$PEN_LM_COMMAND" | awk 1
-        cmd-nice-posix "$PEN_LM_COMMAND" | awk 1
-        continue
-    done | parallel -j "$PEN_N_JOBS" | awk 1 | while IFS=$'\n' read -r result_dir; do
-        mv "$result_dir" "$PEN_GEN_DIR/"
-    done &>/dev/null
-    echo "$PEN_GEN_DIR" | tee "$tmpdir/lm-complete-stdout.txt"
-elif test "$LM_COMPLETE_DEBUG" = y; then
+if test "$LM_COMPLETE_DEBUG" = y; then
     # this will echo a single dir
     "$PEN_LM_COMMAND"
 else
-    ## pen-ci will possibly cache/memoize the command
-    # pen-ci "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
-    "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
-    cat "$tmpdir/lm-complete-stdout.txt"
+    {
+    if test -n "$PEN_N_JOBS" && ! test "$PEN_N_JOBS" = 1; then
+        mkdir -p "$PEN_GEN_DIR"
+
+        # If I run the jobs with tmux then I can use the human engine
+
+        # Do all of them in parallel
+        #pen-ci "$PEN_LM_COMMAND" | awk 1 | while IFS=$'\n' read -r result_dir; do
+        #    mv "$result_dir" "$PEN_GEN_DIR/"
+        #done &>/dev/null
+        for (( i = 1; i < "$PEN_N_JOBS"; i++ )); do
+            # cmd-nice-posix pen-odn pen-ci --enabled= "$PEN_CACHE" "$PEN_LM_COMMAND" | awk 1
+            cmd-nice-posix "$PEN_LM_COMMAND" | awk 1
+            continue
+        done | parallel -j "$PEN_N_JOBS" | awk 1 | while IFS=$'\n' read -r result_dir; do
+            mv "$result_dir" "$PEN_GEN_DIR/"
+        done &>/dev/null
+        echo "$PEN_GEN_DIR" | tee "$tmpdir/lm-complete-stdout.txt"
+    else
+        ## pen-ci will possibly cache/memoize the command
+        # pen-ci "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
+        "$PEN_LM_COMMAND" 2>"$tmpdir/lm-complete-stderr.txt" >"$tmpdir/lm-complete-stdout.txt"
+        cat "$tmpdir/lm-complete-stdout.txt"
+    fi
+    } | output_json_maybe | debug_tv
 fi
-} | output_json_maybe | debug_tv
 # pen-proxy-generate-envs | pen-tv &>/dev/null
