@@ -1,3 +1,8 @@
+#!/bin/bash
+export TTY
+
+# This script is sourced
+
 {
 stty stop undef; stty start undef
 } 2>/dev/null
