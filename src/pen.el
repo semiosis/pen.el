@@ -1476,7 +1476,7 @@ But use the results-analyser."
            ;; This is needed because the engine can also force n-completions
            (force-n-completions 5)
            (force-n-jobs 1)
-           (pen-no-select-result t)
+           ;; (pen-no-select-result t)
            (pen-select-only-match t))
        ,',@body)))
 
