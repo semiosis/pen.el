@@ -1625,7 +1625,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     fi
 
     if test -d "$PEN_PERSONALITIES_DIR"; then
-        PEN_PERSONALITIES_DIR="$(realpath "$PERSONALITIES_DIR")"
+        PEN_PERSONALITIES_DIR="$(realpath "$PEN_PERSONALITIES_DIR")"
     fi
 
     if test -d "$PEN_METAVERSES_DIR"; then
