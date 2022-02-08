@@ -17,6 +17,10 @@
   (interactive)
   (find-file (f-join penconfdir "efm-langserver-config.yaml")))
 
+(defun pen-edit-timeouts-log ()
+  (interactive)
+  (find-file (f-join penconfdir "timeouts.txt")))
+
 (defun pen-read-service-key (service-name)
   (interactive (list (read-string "service: ")))
   (let* ((key-path (f-join user-home-directory ".pen" (format "%s_api_key" service-name)))
