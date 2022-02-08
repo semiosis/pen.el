@@ -602,13 +602,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if ! test "$batch" = y && \
-    ! test "$yes" = y && \
-    ! test "$no" = y && \
-    yn "Keep updated"; then
-    yes=y
-fi
-
 if test "$PEN_UPDATE" = "y"; then
     PEN_UPDATE=t
 fi
@@ -1512,6 +1505,13 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     # : "${OPENAI_API_EL_DIR:="$(read -ep "OPENAI_API_EL_DIR (leave empty to use docker): ")"}"
 
     # yn "Pull docker image?" && docker pull $pen_image
+
+    if ! test "$batch" = y && \
+        ! test "$yes" = y && \
+        ! test "$no" = y && \
+        yn "Keep updated"; then
+        yes=y
+    fi
 
     # set -v
     if ! test "$batch" = "y"; then
