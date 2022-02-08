@@ -45,7 +45,7 @@
        (derived-mode-p 'eww-mode)
        (>= (prefix-numeric-value current-prefix-arg) 4)
        mark-active)
-      (pen-copy (concat (get-path) "#:~:text=" (urlencode (e/chomp-all (pen-selected-text)))))
+      (xc (concat (get-path) "#:~:text=" (urlencode (e/chomp-all (pen-selected-text)))))
 
       (progn
         (if (not editor)

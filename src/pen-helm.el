@@ -75,7 +75,7 @@ display values."
 
 (defmacro helm-marked-candidates-strings (&rest body)
   ""
-  `(pen-join (helm-marked-candidates ,@body) "\n"))
+  `(s-join "\n" (helm-marked-candidates ,@body)))
 
 (defun helm-copy-selection-to-clipboard ()
   "Copy selection or marked candidates to `helm-current-buffer'.
@@ -83,7 +83,7 @@ Note that the real values of candidates are copied and not the
 display values."
   (interactive)
 
-  (pen-copy (helm-marked-candidates-strings)))
+  (xc (helm-marked-candidates-strings)))
 
 (defun helm-fz-directory ()
   (interactive)

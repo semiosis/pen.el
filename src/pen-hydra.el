@@ -330,7 +330,7 @@ display values."
 
 (defun copy-current-major-mode ()
   (interactive)
-  (pen-copy (current-major-mode-string)))
+  (xc (current-major-mode-string)))
 
 (convert-hydra-to-sslk "lr"
                        (defhydra h_nr (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "NORMAL: refactoring"
@@ -731,7 +731,7 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
                          ("b" 'fz-org-tidbits)
                          ("k" 'fz-org-tidbits-tasks)
                          ("d" (df fz-tm-shortcuts (e (fz (pen-mnm (b cd $NOTES\; tm-list-shortcuts)) nil nil "tm-shortcuts-goto:" t))))
-                         ("n" (df fz-copy-ns-func (pen-copy (fz-namespaces-func))))
+                         ("n" (df fz-copy-ns-func (xc (fz-namespaces-func))))
                          ("p" (df fz-go-snippet (e (fz (pen-mnm (b find $HOME/notes/ws/lists/snippets -type f -name "*.txt"))))))
                          ("f" #'fz-insert-function)
                          ("g" #'go-to-glossary)

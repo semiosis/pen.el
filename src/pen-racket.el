@@ -96,7 +96,7 @@
            (ekm "m")
            (call-interactively 'racket-expand-region)))
         (mark-active
-         (pen-copy))
+         (xc))
         (t
          (call-interactively 'racket-expand-definition))))
 

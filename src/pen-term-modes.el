@@ -61,7 +61,7 @@
 
 (defun zsh-copy-previous-line ()
   (interactive)
-  (pen-copy (pen-sn "tail -n 2 | head -n 1" (buffer-string))))
+  (xc (pen-sn "tail -n 2 | head -n 1" (buffer-string))))
 
 (define-key zsh-term-mode-map (kbd "C-c M-1") 'zsh-copy-previous-line)
 
@@ -308,7 +308,7 @@
 
 (defun term-get-url-at-point ()
   (interactive)
-  (pen-copy (pen-sh/xurls (term-get-line-at-point)) t))
+  (xc (pen-sh/xurls (term-get-line-at-point)) t))
 
 (define-key nano-term-mode-map (kbd "M-u") #'term-get-url-at-point)
 

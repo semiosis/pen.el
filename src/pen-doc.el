@@ -182,7 +182,7 @@
   (pen-enable-intero)
   (let ((out (pen-sn "sed -z -e \"s/\\n/ /g\" -e \"s/ \\+/ /g\"" (sed "s/^[^:]\\+ :: //" (intero-get-type-at (beginning-of-thing 'sexp) (end-of-thing 'sexp))))))
     (if (called-interactively-p 'any)
-        (pen-copy out)
+        (xc out)
       out)))
 
 (defun hs-install-module-under-cursor (thing)
