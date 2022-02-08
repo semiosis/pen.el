@@ -43,7 +43,7 @@ pen_image_tag() {
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -cn) {
-        pen_container_name="$2"
+        PEN_CONTAINER_NAME="$2"
         shift
         shift
     }
@@ -51,7 +51,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
-: "${pen_container_name:="pen"}"
+: "${PEN_CONTAINER_NAME:="pen"}"
 
 sn="$(basename "$0")"
 bn="$sn"
@@ -64,7 +64,7 @@ unset PEN_USE_GUI
 drunning=
 docker-running-p() {
     set -o pipefail
-    test "$drunning" = y || test -n "$(docker ps --filter "name=${pen_container_name}$" | sed 1d)"
+    test "$drunning" = y || test -n "$(docker ps --filter "name=${PEN_CONTAINER_NAME}$" | sed 1d)"
     ret="$?"
     if test "$ret" -eq 0; then
         drunning=y
@@ -72,7 +72,7 @@ docker-running-p() {
     else
         false
     fi
-    # if test "$drunning" = y || docker exec "${pen_container_name}" true; then
+    # if test "$drunning" = y || docker exec "${PEN_CONTAINER_NAME}" true; then
 }
 
 stdin_exists() {
@@ -530,7 +530,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -big) {
         pen_image=semiosis/pen.el:big
-        pen_container_name=penbig
+        PEN_CONTAINER_NAME=penbig
         shift
     }
     ;;
@@ -721,7 +721,7 @@ ensure_pen_running() {
         # TODO Ensure that pen.el still starts, even with empty ~/.pen
         ( unbuffer pen -nw -n "$@" &>/dev/null; ) & disown
 
-        while !  docker exec "${pen_container_name}" true &>/dev/null; do
+        while !  docker exec "${PEN_CONTAINER_NAME}" true &>/dev/null; do
             sleep 1
         done
     fi
@@ -757,7 +757,7 @@ if test "$start_shell" = "y"; then
         test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
 
         IFS= read -r -d '' shcode <<HEREDOC
-        docker run -d --rm --name "$pen_container_name" -ti \
+        docker run -d --rm --name "$PEN_CONTAINER_NAME" -ti \
             $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
             $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
             semiosis/pen.el:latest \
@@ -769,11 +769,11 @@ HEREDOC
         ensure_pen_running
     fi
 
-    docker exec -it "$pen_container_name" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+    docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
 
     if test "$no_start_emacs" = y; then
         if docker-running-p && yn "Stop container?"; then
-            docker stop "$pen_container_name"
+            docker stop "$PEN_CONTAINER_NAME"
         fi
     fi
     exit "$?"
@@ -1622,7 +1622,7 @@ IFS= read -r -d '' shcode <<HEREDOC
     # --user "$(id -u):$(id -g)"
 
     # Double ensure it's removed
-    docker container rm "$pen_container_name" &>/dev/null
+    docker container rm "$PEN_CONTAINER_NAME" &>/dev/null
 
     docker "$docker_cmd" \
         $(test "$docker_cmd" = run && printf -- "%s " --rm ) \
@@ -1698,7 +1698,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         ) \
         --expose 7681 -p 7681:7681 \
         --expose 57575 -p 57575:57575 \
-        --entrypoint= --name=$pen_container_name $pen_image "$remote_cmd" $CMD
+        --entrypoint= --name=$PEN_CONTAINER_NAME $pen_image "$remote_cmd" $CMD
 HEREDOC
     }
     ;;
@@ -1720,7 +1720,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice ". ~/.emacs.d/pen.el/scripts/setup-term.sh; $(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_NO_TM --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$pen_container_name" bash -c $evalcommand
+docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_NO_TM --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
 HEREDOC
     }
     ;;
@@ -1755,6 +1755,6 @@ if test "$force_shutdown_container" = "y"; then
     if docker-running-p; then
         sleep 0.5
         echo Force quitting Pen.el container | pen-hls red 1>&2
-        docker container stop "$pen_container_name" 2>/dev/null
+        docker container stop "$PEN_CONTAINER_NAME" 2>/dev/null
     fi
 fi
