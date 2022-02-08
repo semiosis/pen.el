@@ -8,7 +8,7 @@
 
 (defun pen-show-image (path)
   (interactive (list (read-file-name "Image file path: ")))
-  (feh path))
+  (pen-win-ie path))
 
 (defun pen-visualise-text (text)
   (interactive (list (pen-selected-text)))
