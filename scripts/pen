@@ -601,6 +601,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if ! test "$batch" = y && \
+    ! test "$yes" = y && \
+    ! test "$no" = y && \
+    yn "Keep updated"; then
+    yes=y
+fi
+
 if test "$PEN_UPDATE" = "y"; then
     PEN_UPDATE=t
 fi
