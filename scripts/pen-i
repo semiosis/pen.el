@@ -20,7 +20,7 @@ vc_opt="$1"
 shift
 case "$vc_opt" in
     getip) {
-        ip="$(timeout 5 dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | awk -F'"' '{ print $2}')"
+        ip="$(pen-timeout 5 dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | awk -F'"' '{ print $2}')"
 
         # Sometimes the google nameserver is not available
         test -z "$ip" && ip="$(getip.rkt)"

@@ -1,19 +1,20 @@
 #!/bin/bash
 export TTY
 
-time="$1"
+PEN_TIMEOUT="$1"
 shift
 
-: "${PEN_NO_TIMEOUT:="$(pen-rc-get no-timeout)"}"
+: "${PEN_NO_TIMEOUT:="$(0</dev/null pen-rc-get no-timeout)"}"
+: "${PEN_TIMEOUT:="$(0</dev/null pen-rc-get timeout)"}"
 
 if test "$PEN_NO_TIMEOUT" = "y"; then
     "$@"
 else
-    timeout "$time" "$@"
+    timeout "$PEN_TIMEOUT" "$@"
     ret="$?"
     case "$ret" in
         124) {
-            cmd1 "$@" >> ~/.pen/timeouts.txt
+            0</dev/null cmd1 "$@" >> ~/.pen/timeouts.txt
         }
         ;;
 

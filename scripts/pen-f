@@ -89,7 +89,7 @@ case "$opt" in
         fi
 
         set pipefail
-        filter="$(cat "$PENELD/config/filters.sh" | pen-mfz -C -nm -p -pscript "true; eval 'cat $fp | ' timeout 4 {}" -pcomplete)"
+        filter="$(cat "$PENELD/config/filters.sh" | pen-mfz -C -nm -p -pscript "true; eval 'cat $fp | ' pen-timeout 4 {}" -pcomplete)"
         ret="$?" # catches fzf cancel exit = 130
 
         if [ -n "$filter" ]; then

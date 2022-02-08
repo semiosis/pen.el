@@ -24,7 +24,7 @@ winname="prompt-$SOCKET-$(date +%s)"
 # sentinal_string="tm_sentinal_${RANDOM}_$$"
 # -x "tmux wait-for -S '$sentinal_string'"
 # pen-tm -te -S nw -d -n "prompt-$SOCKET" -fa pen-x -sh "set -xv; pen-emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 1 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -x "tmux wait-for -S '$sentinal_string'" -i
-pen-tm -te -S nw -d -n "prompt-$SOCKET" -fa timeout 2 pen-x -sh "set -xv; pen-emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 1 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -i
+pen-tm -te -S nw -d -n "prompt-$SOCKET" -fa pen-timeout 2 pen-x -sh "set -xv; pen-emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 1 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -i
 sleep 1
 # tmux wait-for "$sentinal_string"
 
@@ -36,13 +36,13 @@ sleep 1
 
 if ! unbuffer pen-e -D $SOCKET running; then
     cmd1 pen-x -sh "set -xv; pend $SOCKET" -sl 1 -c x -c c -i
-    pen-tm -te -S nw -d -n "prompt-$SOCKET-pend" -fa timeout 2 pen-x -sh "set -xv; pend $SOCKET" -sl 1 -c x -c c -i
+    pen-tm -te -S nw -d -n "prompt-$SOCKET-pend" -fa pen-timeout 2 pen-x -sh "set -xv; pend $SOCKET" -sl 1 -c x -c c -i
     sleep 1
 fi
 
 if ! unbuffer pen-e -D $SOCKET running; then
     cmd1 pen-x -sh "set -xv; pend $SOCKET" -sl 1 -c x -c c -i
-    pen-tm -te -S nw -d -n "prompt-$SOCKET-pend" -fa timeout 2 pen-x -sh "set -xv; pend $SOCKET" -sl 1 -c x -c c -i
+    pen-tm -te -S nw -d -n "prompt-$SOCKET-pend" -fa pen-timeout 2 pen-x -sh "set -xv; pend $SOCKET" -sl 1 -c x -c c -i
     sleep 1
 fi
 

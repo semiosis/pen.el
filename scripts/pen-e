@@ -1062,7 +1062,7 @@ case "$f" in
     ;;
 
     r|restart) {
-        timeout 5 unbuffer pen-e q
+        pen-timeout 5 unbuffer pen-e q
         pen-e k
         pen-e sd
     }
