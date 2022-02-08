@@ -10,4 +10,14 @@ if test "$PEN_NO_TIMEOUT" = "y"; then
     "$@"
 else
     timeout "$time" "$@"
+    ret="$?"
+    case "$ret" in
+        124) {
+            cmd1 "$@" >> ~/.pen/timeouts.txt
+        }
+        ;;
+
+        *)
+    esac
+    exit "$ret"
 fi
