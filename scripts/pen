@@ -53,6 +53,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 : "${PEN_CONTAINER_NAME:="pen"}"
 
+export PEN_CONTAINER_NAME:
+
 sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$bn")"
