@@ -6,6 +6,14 @@
   (interactive)
   (dired pen-engines-directory))
 
+(defun pen-acolyte-dired-personalities ()
+  (interactive)
+  (dired pen-personalities-directory))
+
+(defun pen-acolyte-dired-metaverses ()
+  (interactive)
+  (dired pen-metaverses-directory))
+
 (defun pen-acolyte-dired-penel ()
   (interactive)
   (dired pen-penel-directory))

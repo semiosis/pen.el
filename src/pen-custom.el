@@ -191,6 +191,18 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-personalities-directory (f-join user-emacs-directory "personalities")
+  "Personal personalitie respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-metaverses-directory (f-join user-emacs-directory "metaverses")
+  "Personal metaverse respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-glossaries-directory (f-join user-emacs-directory "glossaries")
   "Personal glossary respository"
   :type 'string
