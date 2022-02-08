@@ -20,7 +20,7 @@
 
 (defun apostrophe-generate-blurb (person)
   ;; (pen-car (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t))
-  (eval `(pen-some (pf-generate-wiki-blurb-for-a-famous-person/1 ,person))))
+  (eval `(pen-some (pf-generate-wiki-blurb-for-a-famous-person/1 ,person :force-interactive t))))
 
 (defun apostrophe-start-chatbot-from-name (name &optional auto)
   "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
