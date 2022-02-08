@@ -55,6 +55,13 @@ esac; done
 
 export PEN_CONTAINER_NAME
 
+get_config_dir() {
+    if test -n "$PEN_CONTAINER_NAME"; then
+        test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
+    fi
+    return 0
+}
+
 sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$bn")"
@@ -756,7 +763,11 @@ if test "$start_shell" = "y"; then
         test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
         test -d "pen.el" && : "${PENEL_DIR:="`pwd`/pen.el"}"
 
-        test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
+        if test -n "$PEN_CONTAINER_NAME"; then
+            test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
+        else
+            test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
+        fi
 
         IFS= read -r -d '' shcode <<HEREDOC
         docker run -d --rm --name "$PEN_CONTAINER_NAME" -ti \
