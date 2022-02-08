@@ -53,7 +53,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 : "${PEN_CONTAINER_NAME:="pen"}"
 
-export PEN_CONTAINER_NAME:
+export PEN_CONTAINER_NAME
 
 sn="$(basename "$0")"
 bn="$sn"
@@ -1643,6 +1643,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         --hostname pen-$(hostname) \
         --env PEN_USE_GUI \
         --env PEN_NO_TM \
+        --env PEN_CONTAINER_NAME \
         --env PEN_ENGINE \
         --env PEN_NO_TIMEOUT \
         --env PEN_N_DAEMONS \
@@ -1722,7 +1723,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice ". ~/.emacs.d/pen.el/scripts/setup-term.sh; $(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_NO_TM --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
+docker "$docker_cmd" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
 HEREDOC
     }
     ;;
