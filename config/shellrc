@@ -61,6 +61,10 @@ export PATH=$PATH:/usr/local/go/bin
 # unset TMUX
 
 term_setup_fp="$EMACSD/pen.el/scripts/setup-term.sh"
-if [ -f "$term_setup_fp" ]; then
+term_setup_host_fp="$EMACSD/host/pen.el/scripts/setup-term.sh"
+
+if [ -f "$term_setup_host_fp" ]; then
+    . "$term_setup_host_fp"
+elif [ -f "$term_setup_fp" ]; then
     . "$term_setup_fp"
 fi
