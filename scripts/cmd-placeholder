@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# cmd_placeholder - do a substitution in the arguments
+
+# https://mullikine.github.io/posts/missing-posix-shell-functions-cmd-and-myeval/
+
+substitution="$1"
+shift
+
+cmd_placeholder() {
+    for var in "$@"
+    do
+        if test "$var" = '{}'; then
+            printf "'%s' " "$(printf %s "$substitution" | sed "s/'/'\\\\''/g")";
+        elif test "$var" = '|'; then
+            printf -- "%s" '| '
+        else
+            # trailing newlines are removed for arguments. Fix this
+            printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+        fi
+    done | sed 's/ $//'
+}
+
+cmd_placeholder "$@"
