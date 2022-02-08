@@ -11,6 +11,24 @@ if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host
     exit "$?"
 fi
 
+if test -d ~/.emacs.d/host/pen.el/config; then
+    ln -sf ~/.emacs.d/host/pen.el/config/zsh/zsh_aliases ~/.zsh_aliases
+    ln -sf ~/.emacs.d/host/pen.el/config/zsh/zshenv ~/.zshenv
+    ln -sf ~/.emacs.d/host/pen.el/config/zsh/zshrc ~/.zshrc
+    ln -sf ~/.emacs.d/host/pen.el/config/shell_functions ~/.shell_functions
+    ln -sf ~/.emacs.d/host/pen.el/config/zsh/fzf.zsh ~/.fzf.zsh
+    ln -sf ~/.emacs.d/host/pen.el/config/zsh/git.zsh ~/.git.zsh
+    ln -sf ~/.emacs.d/host/pen.el/config/shellrc ~/.shellrc
+else
+    ln -sf ~/.emacs.d/pen.el/config/zsh/zsh_aliases ~/.zsh_aliases
+    ln -sf ~/.emacs.d/pen.el/config/zsh/zshenv ~/.zshenv
+    ln -sf ~/.emacs.d/pen.el/config/zsh/zshrc ~/.zshrc
+    ln -sf ~/.emacs.d/pen.el/config/shell_functions ~/.shell_functions
+    ln -sf ~/.emacs.d/pen.el/config/zsh/fzf.zsh ~/.fzf.zsh
+    ln -sf ~/.emacs.d/pen.el/config/zsh/git.zsh ~/.git.zsh
+    ln -sf ~/.emacs.d/pen.el/config/shellrc ~/.shellrc
+fi
+
 if [ -f ~/.shellrc ]; then
     . ~/.shellrc
 fi
