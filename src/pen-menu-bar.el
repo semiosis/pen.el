@@ -494,6 +494,16 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-images-menu
+  (let ((menu (make-sparse-keymap "Visualise")))
+    (bindings--define-key menu [mi-visualise-text]
+      '(menu-item "Visualise text" pf-given-a-textual-description-visualise-it-with-an-image/1
+                  :help "Given a textual description, generate and display an image"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-real-menu
   (let ((menu (make-sparse-keymap "Real Interpreter")))
     (bindings--define-key menu [mi-prolog]
