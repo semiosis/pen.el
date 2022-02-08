@@ -496,8 +496,11 @@
 
 (defset menu-bar-images-menu
   (let ((menu (make-sparse-keymap "Visualise")))
+    (bindings--define-key menu [mi-visualise-text-prompt]
+      '(menu-item "Visualise text prompt" pf-given-a-textual-description-visualise-it-with-an-image/1
+                  :help "Given a textual description, generate and display an image - Prompt function"))
     (bindings--define-key menu [mi-visualise-text]
-      '(menu-item "Visualise text" pf-given-a-textual-description-visualise-it-with-an-image/1
+      '(menu-item "Visualise text" pen-visualise-text
                   :help "Given a textual description, generate and display an image"))
     (bindings--define-key menu [mi-describe-image]
       '(menu-item "Describe image" pf-given-an-image-describe-it/1
