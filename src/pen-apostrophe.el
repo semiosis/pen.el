@@ -19,7 +19,8 @@
     (ilist 20 "Fictional characters")))
 
 (defun apostrophe-generate-blurb (person)
-  (pen-car (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t)))
+  ;; (pen-car (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t))
+  (eval `(pen-some (pf-generate-wiki-blurb-for-a-famous-person/1 ,person))))
 
 (defun apostrophe-start-chatbot-from-name (name &optional auto)
   "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
@@ -46,14 +47,18 @@
                  (eval
                   `(pen-engine
                     ,apostrophe-engine
-                    (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t)))))
+                    (apostrophe-generate-blurb ,name)
+                    ;; (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t))
+                    )))
               ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
               (pen-eipec
                (eval
                 `(upd
                   (pen-engine
                    ,apostrophe-engine
-                   (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result nil))))
+                   (apostrophe-generate-blurb ,name)
+                   ;; (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result nil)
+                   )))
                nil nil nil nil "Edit the blurb then save and quit this file."))))
 
       (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
@@ -82,7 +87,9 @@
             (eval
              `(pen-engine
                ,apostrophe-engine
-               (pf-generate-wiki-blurb-for-a-famous-person/1 sme)))))
+               (apostrophe-generate-blurb name)
+               ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
+               ))))
 
       (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" blurb))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))

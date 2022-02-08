@@ -1467,6 +1467,19 @@ But use the results-analyser."
            (pen-select-only-match t))
        ,',@body)))
 
+(defmacro pen-some (&rest body)
+  "Just generate one completion, and do not select"
+  `(eval
+    `(let ((pen-single-generation-b t)
+           (n-collate 1)
+           (n-completions 5)
+           ;; This is needed because the engine can also force n-completions
+           (force-n-completions 5)
+           (force-n-jobs 1)
+           (pen-no-select-result t)
+           (pen-select-only-match t))
+       ,',@body)))
+
 (defmacro pen-car (&rest body)
   `(eval
     `(car
