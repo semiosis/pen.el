@@ -1,5 +1,25 @@
 (require 'alist)
 
+(defvar channel-timers '())
+
+;; TODO I must make a universal timer that is able to randomize the wait for specific chatbots
+;; Therefore, the timer must run fairly frequently, and I may need to use a modulo or something to determine when chatbots speak
+
+;; The timer for each chatbot should be chaotic - use prime numbers, say, but be a fraction - i should divide by some prime number
+
+(defset channel-init-time 2)
+
+;; Don't do this too often? - Definitely not. Too short a timer (i.e. 5) will kill the timer
+;; Instead, rely on channel-chatter-amplifier
+(defset channel-read-time 5)
+
+(defset channel-base-probability 15)
+
+(defset channel-chatter-amplifier 1)
+
+(defvar channel-most-recent-mention '())
+
+
 ;; I suppose that `chann`, being the mantissa of chann.el is the unique name-or-names identifying Chann.el
 
 ;; ** TODO With Chann.el, I should be able to chat to a chatbot on IRC, and that chatbot should be able to control a terminal
@@ -177,12 +197,6 @@
   ;; (-uniq (pen-sn "cut -d : -f 1" (channel-get-conversation-from-others)))
   (-filter-not-empty-string (-uniq (pen-str2lines (pen-sn "cut -d : -f 1" (channel-get-conversation))))))
 
-(defset channel-base-probability 15)
-
-(defset channel-chatter-amplifier 1)
-
-(defvar channel-most-recent-mention '())
-
 (defun channel-probability-of-speaking (&optional base-probability n-users n-mentions n-your-comments n-conversors lines-of-conversation last-speaker-p second-last-speaker-p third-last-speaker-p)
   ;; The more often other people mention you, the more likely the bot should interject
   ;; The more you have spoken, the less likely you should speak again
@@ -296,24 +310,10 @@
 ;; TODO I have to make this bound to a certain buffer
 ;; I must ensure that for emacs daemons, they use their own stdout return file
 
-(defvar channel-timers '())
-
-
 
 (defun buffer-killed? (buffer)
   "Return t if BUFFER is killed."
   (not (buffer-live-p buffer)))
-
-;; TODO I must make a universal timer that is able to randomize the wait for specific chatbots
-;; Therefore, the timer must run fairly frequently, and I may need to use a modulo or something to determine when chatbots speak
-
-;; The timer for each chatbot should be chaotic - use prime numbers, say, but be a fraction - i should divide by some prime number
-
-(defset channel-init-time 2)
-
-;; Don't do this too often? - Definitely not. Too short a timer (i.e. 5) will kill the timer
-;; Instead, rely on channel-chatter-amplifier
-(defset channel-read-time 5)
 
 (defun channel-cancel-all-timers ()
   (interactive)
