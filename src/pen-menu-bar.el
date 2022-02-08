@@ -629,8 +629,40 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-personalities-menu
+  (let ((menu (make-sparse-keymap "Personalities")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-personalities]
+      '(menu-item "Go to personalities directory" pen-acolyte-dired-personalities
+                  :help "Go to personalities source directory"))
+    (bindings--define-key menu [mi-pen-load-personalities]
+      '(menu-item "Reload personalities" pen-load-personalities
+                  :help "Reload personalities from YAML"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-metaverses-menu
+  (let ((menu (make-sparse-keymap "Metaverses")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-metaverses]
+      '(menu-item "Go to metaverses directory" pen-acolyte-dired-metaverses
+                  :help "Go to metaverses source directory"))
+    (bindings--define-key menu [mi-pen-load-metaverses]
+      '(menu-item "Reload metaverses" pen-load-metaverses
+                  :help "Reload metaverses from YAML"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-engineering-menu
   (let ((menu (make-sparse-keymap "Engines")))
+    (bindings--define-key menu [mi-menu-bar-metaverses-menu]
+      `(menu-item "Metaverses" ,menu-bar-metaverses-menu
+                  :help "Metaverses menu"))
+    (bindings--define-key menu [mi-menu-bar-personalities-menu]
+      `(menu-item "Personalities" ,menu-bar-personalities-menu
+                  :help "Personalities menu"))
     (bindings--define-key menu [mi-menu-bar-engines-menu]
       `(menu-item "Engines" ,menu-bar-engines-menu
                   :help "Engines menu"))
