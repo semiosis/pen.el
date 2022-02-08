@@ -1484,6 +1484,12 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/engines" && : "${PEN_ENGINES_DIR:="$MYGIT/semiosis/engines"}"
     test -d "engines" && : "${PEN_ENGINES_DIR:="`pwd`/engines"}"
 
+    test -n "$MYGIT" && test -d "$MYGIT/semiosis/personalities" && : "${PERSONALITIES_DIR:="$MYGIT/semiosis/personalities"}"
+    test -d "personalities" && : "${PERSONALITIES_DIR:="`pwd`/personalities"}"
+
+    test -n "$MYGIT" && test -d "$MYGIT/semiosis/metaverses" && : "${PEN_METAVERSES_DIR:="$MYGIT/semiosis/metaverses"}"
+    test -d "metaverses" && : "${PEN_METAVERSES_DIR:="`pwd`/metaverses"}"
+
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
     test -d "pen.el" && : "${PENEL_DIR:="`pwd`/pen.el"}"
     # : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
@@ -1545,6 +1551,36 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -d "prompts" && : "${PROMPTS_DIR:="prompts"}"
 
     if ! test "$batch" = "y"; then
+        if test -d "$PERSONALITIES_DIR"; then
+            yn "Pull personalities repo? (recommended)" && (
+                cd "$PERSONALITIES_DIR"
+                git pull origin master
+            )
+        else
+            yn "Clone personalities repo here?" && (
+                git clone "http://github.com/semiosis/personalities"
+            )
+        fi
+    fi
+
+    test -d "personalities" && : "${PERSONALITIES_DIR:="personalities"}"
+
+    if ! test "$batch" = "y"; then
+        if test -d "$METAVERSES_DIR"; then
+            yn "Pull metaverses repo? (recommended)" && (
+                cd "$METAVERSES_DIR"
+                git pull origin master
+            )
+        else
+            yn "Clone metaverses repo here?" && (
+                git clone "http://github.com/semiosis/metaverses"
+            )
+        fi
+    fi
+
+    test -d "metaverses" && : "${METAVERSES_DIR:="metaverses"}"
+
+    if ! test "$batch" = "y"; then
         test -d "$PENEL_DIR" && yn "Pull pen.el repo? (recommended)" && (
             cd "$PENEL_DIR"
             git pull origin master
@@ -1585,6 +1621,14 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
 
     if test -d "$PEN_ENGINES_DIR"; then
         PEN_ENGINES_DIR="$(realpath "$PEN_ENGINES_DIR")"
+    fi
+
+    if test -d "$PERSONALITIES_DIR"; then
+        PERSONALITIES_DIR="$(realpath "$PERSONALITIES_DIR")"
+    fi
+
+    if test -d "$PEN_METAVERSES_DIR"; then
+        PEN_METAVERSES_DIR="$(realpath "$PEN_METAVERSES_DIR")"
     fi
 fi
 
@@ -1652,6 +1696,8 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
         $(test -n "$PROMPTS_DIR" && printf -- "%s " -v "$PROMPTS_DIR:/root/.emacs.d/host/prompts" ) \
         $(test -n "$PEN_ENGINES_DIR" && printf -- "%s " -v "$PEN_ENGINES_DIR:/root/.emacs.d/host/engines" ) \
+        $(test -n "$PEN_METAVERSES_DIR" && printf -- "%s " -v "$PEN_METAVERSES_DIR:/root/.emacs.d/host/metaverses" ) \
+        $(test -n "$PEN_PERSONALITIES_DIR" && printf -- "%s " -v "$PEN_PERSONALITIES_DIR:/root/.emacs.d/host/personalities" ) \
         $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
         $(test -n "$CONTRIB_DIR" && printf -- "%s " -v "$CONTRIB_DIR:/root/.emacs.d/host/pen-contrib.el" ) \
         $(test -n "$PENSIEVE_DIR" && printf -- "%s " -v "$PENSIEVE_DIR:/root/.emacs.d/host/pensieve" ) \
