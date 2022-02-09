@@ -1,11 +1,23 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -mant) {
+        mant_only=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 glossdir=$HOME/.pen/glossaries
 
-mkdir -p "$glossdir"
-
-# find "$glossdir" -maxdepth 1 -name '*.txt' -a \( -type f -o -type l \)
-
-cd "$glossdir"
-find . -maxdepth 1 -name '*.txt' -a \( -type f -o -type l \) | sed 's/^\.\///' | sed 's/\..*//'
+if test "$mant_only" = "y"; then
+    mkdir -p "$glossdir"
+    cd "$glossdir"
+    find . -maxdepth 1 -name '*.txt' -a \( -type f -o -type l \) | sed 's/^\.\///' | sed 's/\..*//'
+else
+    find "$glossdir" -maxdepth 1 -name '*.txt' -a \( -type f -o -type l \)
+fi
