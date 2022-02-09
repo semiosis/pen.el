@@ -27,13 +27,13 @@ macos-p() {
 
 pen_image_tag() {
     if ! inside-docker-p; then
-        : "${image:="$(docker image ls | grep "semiosis/pen.el *latest" | cut -d ' ' -f 1):latest"}"
-        : "${image:="$(docker image ls | grep "semiosis/pen *latest" | cut -d ' ' -f 1):latest"}"
+        : "${image:="$(docker image ls | grep "semiosis/pen.el *latest" | cut -d ' ' -f 1)"}"
+        : "${image:="$(docker image ls | grep "semiosis/pen *latest" | cut -d ' ' -f 1)"}"
     fi
 
-    : "${image:="semiosis/pen.el:latest"}"
+    : "${image:="semiosis/pen.el"}"
 
-    echo "$image"
+    echo "$image:latest"
     return 0
 }
 
