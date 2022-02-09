@@ -12,7 +12,7 @@
 (defun pen-proxy-set-localhost ()
   "This is for debugging the proxy"
   (interactive)
-  (setq pen-proxy "localhost:9837"))
+  (setq pen-proxy (concat "localhost:" (pen-get-khala-port))))
 
 ;; (defset pen-proxy nil)
 
