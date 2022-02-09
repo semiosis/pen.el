@@ -2,10 +2,15 @@
   (interactive)
   (pen-sn "pen web" nil nil nil t))
 
+(defun pen-get-ttyd-port ()
+  (string-to-number
+   (sor (pen-snc "cat ~/.pen/ports/ttyd.txt")
+        "7681")))
+
 (defun pen-public-web ()
   (interactive)
-    (if (pen-internet-connected-p)
-        (pen-sn "pen-lt --port 7681 -o" nil nil nil t)
-      (error "The internet is not connected so you won't be able to expose Pen.el publically")))
+  (if (pen-internet-connected-p)
+      (pen-sn (cmd "pen-lt" "--port" (str (pen-get-ttyd-port)) "-o") nil nil nil t)
+    (error "The internet is not connected so you won't be able to expose Pen.el publically")))
 
 (provide 'pen-web)
