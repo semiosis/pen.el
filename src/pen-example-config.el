@@ -707,4 +707,6 @@
 (define-key pen-map (kbd "M-l M-r M-i") 'channel-say-something)
 (define-key pen-map (kbd "M-l M-r M-l") 'channel-loop-chat)
 
+(define-key pen-map (kbd "C-c C-o") 'org-open-at-point)
+
 (provide 'pen-example-config)
