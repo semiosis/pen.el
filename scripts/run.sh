@@ -129,6 +129,8 @@ fi
 
 mkdir -p ~/.pen/ht-cache
 
+mkdir -p ~/.pen/prolog/databases
+
 # emacs -nw --debug-init
 
 in-tm() {
