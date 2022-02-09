@@ -284,7 +284,7 @@
                   :help "Cancel out of this menu"))
     menu))
 
-(defset menu-bar-network-menu
+(defset menu-bar-networks-menu
   (let ((menu (make-sparse-keymap "Networks")))
     (bindings--define-key menu [mi-menu-bar-protocol-menu]
       `(menu-item "࿋  Semiosis Protocol" ,menu-bar-protocol-menu
@@ -370,8 +370,8 @@
     (bindings--define-key menu [mi-menu-bar-keys-menu]
       `(menu-item "Add, remove and edit API keys" ,menu-bar-keys-menu
                   :help "e.g. Add your OpenAI key"))
-    (bindings--define-key menu [mi-menu-bar-network-menu]
-      `(menu-item "Connect to p2p networks" ,menu-bar-network-menu
+    (bindings--define-key menu [mi-menu-bar-networks-menu]
+      `(menu-item "Connect to p2p networks" ,menu-bar-networks-menu
                   :help "e.g. Connect Semiosis Protocol"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
@@ -1029,6 +1029,7 @@
       ;;   (cons "Cosm" menu-bar-paracosm-menu))
       (bindings--define-key global-map [menu-bar paracosm] nil)
       (bindings--define-key global-map [menu-bar apps] nil)
+
       (bindings--define-key global-map [menu-bar network]
         (cons "Network" menu-bar-network-menu))
 
@@ -1067,8 +1068,8 @@
         (cons "Prompting" menu-bar-prompting-menu))
 
       ;; (bindings--define-key global-map [menu-bar network]
-      ;;   (cons "Network" menu-bar-network-menu))
-      (bindings--define-key global-map [menu-bar network] nil)
+      ;;   (cons "Network" menu-bar-networks-menu))
+      ;; (bindings--define-key global-map [menu-bar network] nil)
 
       (bindings--define-key global-map [menu-bar config]
         (cons "Configure" menu-bar-configure-menu))
