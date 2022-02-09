@@ -5,7 +5,21 @@
 ;; TODO In the future, consider managing pen daemons with timp.
 ;; But not yet.
 
+(defun pen-daemon-get-port ()
+  9700)
+
 (defun pen-timp-start-listener ()
-  (timp-server-init))
+  ;; (timp-server-init)
+  (make-network-process :name timp-server-stream
+                        :server t
+                        :host 'local
+                        :service t
+                        :family 'ipv4
+                        :filter 'timp-server-receive-data
+                        :nowait t)
+  (accept-process-output nil 0.1)
+  (timp-server-send-port-data (pen-daemon-get-port))
+  (advice-add 'message :around 'timp-server-message)
+  (while t (sleep-for 0.5)))
 
 (provide 'pen-timp)
