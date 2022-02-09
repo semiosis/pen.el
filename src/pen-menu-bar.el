@@ -305,6 +305,9 @@
     (bindings--define-key menu [mi-menu-bar-alethea-ai-menu]
       `(menu-item "Alethea.AI" ,menu-bar-alethea-ai-menu
                   :help "Alethea.AI functions"))
+    (bindings--define-key menu [mi-menu-bar-laltal-menu]
+      `(menu-item "LalTal" ,menu-bar-laltal-menu
+                  :help "LalTal functions"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
