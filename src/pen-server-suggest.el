@@ -83,12 +83,12 @@
 ;; I really shouldn't be using algorithms for something like this.
 ;; However, I want to get good at algorithms, so maybe I should.
 (defset pen-server-command-tuples
-  '((22 . ((pen-sps (pen-cmd "zrepl" "-cm" "ssh" "-vvv" "-o" "BatchMode=no"
+  `((22 . ((pen-sps (pen-cmd "zrepl" "-cm" "ssh" "-vvv" "-o" "BatchMode=no"
                              hn "-p" port))))
     (80 . ((chrome (concat "http://" hn ":" port))
            (eww (concat "http://" hn ":" port))))
     (8680 . ((pen-clomacs-connect)))
-    (9837 . ((khala-stop)))
+    (,(pen-get-khala-port) . ((khala-stop)))
     ;; Unsure how to check this atm.
     ((40500 40800) . ((chrome (concat "http://" hn ":" port))
                       (eww (concat "http://" hn ":" port))))
