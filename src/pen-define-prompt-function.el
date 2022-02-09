@@ -2341,7 +2341,7 @@
                (list
                 title
                 (ht-get yaml-ht "doc")
-                (concat "\npath:\n" (pen-list-to-orglist (list path)))
+                (concat "\npath:\n" (concat "[[e:" path "]]"))
                 (if design-patterns (concat "\ndesign-patterns:\n" (pen-list-to-orglist design-patterns)))
                 (if todo (concat "\ntodo:" (pen-list-to-orglist todo)))
                 (if aims (concat "\naims:" (pen-list-to-orglist aims)))
