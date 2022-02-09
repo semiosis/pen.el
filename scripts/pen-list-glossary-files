@@ -5,4 +5,7 @@ glossdir=$HOME/.pen/glossaries
 
 mkdir -p "$glossdir"
 
-find "$glossdir" -maxdepth 1 -name '*.txt' -a \( -type f -o -type l \)
+# find "$glossdir" -maxdepth 1 -name '*.txt' -a \( -type f -o -type l \)
+
+cd "$glossdir"
+find . -maxdepth 1 -name '*.txt' -a \( -type f -o -type l \) | sed 's/^\.\///' | sed 's/\..*//'
