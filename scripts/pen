@@ -57,7 +57,7 @@ export PEN_CONTAINER_NAME
 
 get_config_dir() {
     if test -n "$PEN_CONTAINER_NAME"; then
-        test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
+        test -d "$HOME/.pen-$PEN_CONTAINER_NAME" && : "${PEN_CONFIG_DIR:="$HOME/.pen-$PEN_CONTAINER_NAME"}"
     fi
     return 0
 }
