@@ -215,7 +215,7 @@ https://github.com/semiosis/pen.el/
 Network protocols (in development):
 - ࿋ Semiosis Protocol
 - Alethea.AI
-- Laltal
+- LalTal
 HEREDOC
 
 is_tty() { [ -t 1 ]; }
