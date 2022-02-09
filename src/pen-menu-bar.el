@@ -383,6 +383,9 @@
     (bindings--define-key menu [mi-pen-go-to-documents]
       '(menu-item "Documents (shared with host)" pen-go-to-documents
                   :help "Open dired at ~/.pen/documents"))
+    ;; (bindings--define-key menu [mi-pen-go-to-glossaries]
+    ;;   '(menu-item "Go to glossaries" pen-go-to-glossaries
+    ;;               :help "Open dired at $HOME/.pen/glossaries"))
     (bindings--define-key menu [mi-pen-go-to-results]
       '(menu-item "Results (shared with host)" pen-go-to-results
                   :help "Open dired at ~/.pen/results"))
@@ -392,7 +395,7 @@
     (bindings--define-key menu [mi-pen-go-to-glossaries]
       '(menu-item "Glossaries (shared with host)" pen-go-to-glossaries
                   :help "Open dired at ~/.pen/glossaries"))
-    (bindings--define-key menu [mi-pen-go-to-glossaries]
+    (bindings--define-key menu [mi-pen-your-imagination]
       '(menu-item "Your Imagination" pen-your-imagination
                   :help "Play the best song ever"))
     (bindings--define-key menu [cancel-menu]
