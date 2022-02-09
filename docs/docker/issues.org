@@ -1,0 +1,13 @@
+If you get this issue:
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  docker: Error response from daemon: OCI runtime create failed: invalid mount
+  {Destination::/root/.emacs.d/host/engines Type:bind
+  Source:/var/lib/docker/volumes/2746ade69da1ae8ec0858ac226f1fa9cc5d3e0f847d9545ddba0b15a01dc9652/_data
+  Options:[rbind]}: mount destination :/root/.emacs.d/host/engines not
+  absolute: unknown.
+#+END_SRC
+
+Do a docker inspect on the image.
+If there is a volume specified, that's wrong.
+I need to export and squash the container again.
