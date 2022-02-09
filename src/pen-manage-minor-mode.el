@@ -33,7 +33,6 @@
          (off writegood-mode))
 
         (term-mode
-         (off pen)
          (off fringe-mode)
          (off semantic-mode)
          (off highlight-thing-mode)
