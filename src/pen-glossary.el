@@ -100,25 +100,27 @@
               (setq NLG t))))
 
     (let* ((cb (current-buffer))
-           (all-glossaries-fn-mant (pen-mnm (pen-list2str (pen-list-glossary-files t))))
+           (all-glossaries-fn-mant (pen-str2lines (pen-mnm (pen-list2str (pen-list-glossary-files t)))))
            (fp
             (if (pen-is-glossary-file)
                 (buffer-file-name)
-              (pen-umn (or
-                        (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
-                                 (not (local-variable-p 'glossary-files)))
-                             (pen-umn (fz all-glossaries-fn-mant
-                                          nil nil "glossary to add to: ")))
-                        (and
-                         (local-variable-p 'glossary-files)
-                         (if take-first
-                             (car glossary-files)
-                           (pen-umn (fz (pen-mnm (pen-list2str glossary-files))
+              (let ((sel (pen-umn
+                          (or
+                           (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
+                                    (not (local-variable-p 'glossary-files)))
+                                (pen-umn (fz all-glossaries-fn-mant
+                                             nil nil "glossary to add to: ")))
+                           (and
+                            (local-variable-p 'glossary-files)
+                            (if take-first
+                                (car glossary-files)
+                              (pen-umn (fz (pen-mnm (pen-list2str glossary-files))
+                                           "$HOME/glossaries/"
+                                           nil "glossary to add to: "))))
+                           (pen-umn (fz (pen-mnm (pen-list2str (list "$HOME/glossaries/glossary.txt")))
                                         "$HOME/glossaries/"
-                                        nil "glossary to add to: "))))
-                        (pen-umn (fz (pen-mnm (pen-list2str (list "$HOME/glossaries/glossary.txt")))
-                                     "$HOME/glossaries/"
-                                     nil "glossary to add to: ")))))))
+                                        nil "glossary to add to: "))))))
+                (f-join "/root/.pen/glossaries" (concat sel ".txt"))))))
       (with-current-buffer
           (find-file fp)
         (progn
