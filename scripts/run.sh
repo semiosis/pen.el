@@ -107,7 +107,7 @@ if ! ls ~/.pen/pool/available/* 2>/dev/null | grep -q pen-emacsd; then
 (
 export PEN_USE_GUI=n
 echo "ttyd running on port 7681, serving Pen.el on http"
-ttyd -p 7681 bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
+ttyd -p "$((7681 + $coefficient))" bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
 /inspircd-2.0.25/run/inspircd start &>/dev/null
 
 echo Postgres running
