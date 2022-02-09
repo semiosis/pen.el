@@ -6,6 +6,7 @@
 ;; But not yet.
 
 (defun pen-daemon-get-port ()
+  ;; Calculate from the daemon name
   9700)
 
 (defun pen-timp-start-listener ()
