@@ -93,6 +93,7 @@
          (off visual-line-mode))
 
         (help-mode
+         (on org-link-minor-mode)
          (off visual-line-mode))
 
         (term-mode
