@@ -66,6 +66,7 @@
 (require 'pen-ace-link)
 (require 'pen-links)
 (require 'pen-link-types)
+(require 'pen-manage-minor-mode)
 (require 'pen-handle)
 (require 'pen-edit)
 (require 'pen-client)
