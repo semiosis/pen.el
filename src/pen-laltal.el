@@ -1,7 +1,7 @@
-;; Alethea.AI
+;; LalTal
 
-(defun pen-connect-alethea-ai ()
+(defun pen-connect-laltal ()
   (interactive)
   (message "In development"))
 
-(provide 'pen-alethea-ai)
+(provide 'pen-laltal)
