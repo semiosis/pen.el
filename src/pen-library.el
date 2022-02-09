@@ -788,4 +788,7 @@ buffer which is not included when this function returns"
          (apply ',callback-fn (list (chomp (cat ,tf))))
          (f-delete ,tf))))))
 
+(defun pen-container-name ()
+  (pen-snc "cat ~/pen-container-name.txt"))
+
 (provide 'pen-library)
