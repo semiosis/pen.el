@@ -99,6 +99,13 @@ test_deps() {
     ) 2>&1
 }
 
+# port linear coefficient - pen-test encodes as 42
+# Add this number to ports.
+coefficient="$(echo "$PEN_CONTAINER_NAME" | perl -lne 'printf "%03d", ord for split ""' | fold -w1 | paste -sd+ - | bc)"
+: "${coefficient:="0"}"
+TTYD_PORT="$((7681 + $coefficient))"
+KHALA_PORT="$((9837 + $coefficient))"
+
 ensure_dependencies() {
     ds="$(test_deps)"
     code="$?"
@@ -309,7 +316,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     web) {
-        pen-gui-browser "http://localhost:7681"
+        pen-gui-browser "http://localhost:$TTYD_PORT"
         exit
     }
     ;;
@@ -1722,6 +1729,8 @@ IFS= read -r -d '' shcode <<HEREDOC
         --env PEN_USE_GUI \
         --env PEN_NO_TM \
         --env PEN_CONTAINER_NAME \
+        --env TTYD_PORT \
+        --env KHALA_PORT \
         --env PEN_ENGINE \
         --env PEN_NO_TIMEOUT \
         --env PEN_N_DAEMONS \
@@ -1777,8 +1786,8 @@ IFS= read -r -d '' shcode <<HEREDOC
             cmd --network host
         fi
         ) \
-        --expose 7681 -p 7681:7681 \
-        --expose 57575 -p 57575:57575 \
+        --expose $TTYD_PORT -p $TTYD_PORT:$TTYD_PORT \
+        --expose $KHALA_PORT -p $KHALA_PORT:$KHALA_PORT \
         --entrypoint= --name=$PEN_CONTAINER_NAME $pen_image "$remote_cmd" $CMD
 HEREDOC
     }
