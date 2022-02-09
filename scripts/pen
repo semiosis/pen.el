@@ -299,6 +299,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    simplesh) {
+        docker run --rm --name "$PEN_CONTAINER_NAME" -ti semiosis/pen.el:latest /bin/bash
+        exit "$?"
+    }
+    ;;
+
     web) {
         pen-gui-browser "http://localhost:7681"
         exit
