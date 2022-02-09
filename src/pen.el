@@ -106,6 +106,7 @@
 (require 'pen-properties)
 (require 'pen-proxy)
 (require 'pen-real)
+(require 'pen-khala)
 (require 'pen-net)
 (require 'pen-server-suggest)
 (require 'pen-vim)
@@ -2007,7 +2008,6 @@ May use to generate code from comments."
 (require 'pen-documents)
 
 (require 'pen-media)
-(require 'pen-khala)
 (require 'pen-rhizome)
 (require 'pen-net)
 (require 'pen-clojure)
