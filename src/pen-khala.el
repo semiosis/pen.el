@@ -4,7 +4,7 @@
 
 (defun khala-start ()
   (interactive)
-  (pen-sn "khala" nil nil nil t))
+  (pen-sn "unbuffer khala" nil nil nil t))
 
 (defun pen-get-khala-port ()
   (string-to-number
