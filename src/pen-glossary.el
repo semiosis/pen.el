@@ -7,8 +7,11 @@
   ;; This should be made optional, since it may be slow
   (pen-filter-shellscript "pen-pretty-paragraph"))
 
-(defun pen-list-glossary-files ()
-  (let ((glist (sor (pen-cl-sn "pen-list-glossary-files" :chomp t))))
+(defun pen-list-glossary-files (&optional mant-only)
+  (let ((glist (sor (pen-cl-sn
+                     (if mant-only
+                         (pen-cmd  "pen-list-glossary-files" "-mant")
+                       "pen-list-glossary-files") :chomp t))))
     (if glist
         (s-lines glist))))
 
@@ -42,7 +45,7 @@
                      (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
                               (not (local-variable-p 'glossary-files)))
                           (pen-umn
-                           (let ((sel (fz (pen-mnm (pen-list2str (pen-list-glossary-files)))
+                           (let ((sel (fz (pen-mnm (pen-list2str (pen-list-glossary-files t)))
                                           nil nil "pen-add-to-glossary-file-for-buffer glossary: ")))
                              (if (sor sel)
                                  (f-join "/root/.pen/glossaries" (concat sel ".txt"))
@@ -97,14 +100,14 @@
               (setq NLG t))))
 
     (let* ((cb (current-buffer))
-           (all-glossaries-fp (pen-mnm (pen-list2str (pen-list-glossary-files))))
+           (all-glossaries-fn-mant (pen-mnm (pen-list2str (pen-list-glossary-files t))))
            (fp
             (if (pen-is-glossary-file)
                 (buffer-file-name)
               (pen-umn (or
                         (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
                                  (not (local-variable-p 'glossary-files)))
-                             (pen-umn (fz all-glossaries-fp
+                             (pen-umn (fz all-glossaries-fn-mant
                                           nil nil "glossary to add to: ")))
                         (and
                          (local-variable-p 'glossary-files)
