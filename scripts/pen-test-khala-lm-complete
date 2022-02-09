@@ -1,7 +1,8 @@
 #!/bin/bash
 export TTY
 
-PEN_PROXY="localhost:9837"
+port="$(cat ~/.pen/ports/khala.txt)"
+PEN_PROXY="localhost:$port"
 
 # proxy_envs="$(pen-proxy-generate-envs)"
 # curl --header "Content-Type: application/json" --request POST --data "$proxy_envs" "http://$PEN_PROXY/lm-complete"
