@@ -41,8 +41,12 @@
            (pen-umn (or
                      (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
                               (not (local-variable-p 'glossary-files)))
-                          (pen-umn (fz (pen-mnm (pen-list2str (pen-list-glossary-files)))
-                                       nil nil "pen-add-to-glossary-file-for-buffer glossary: ")))
+                          (pen-umn
+                           (let ((sel (fz (pen-mnm (pen-list2str (pen-list-glossary-files)))
+                                          nil nil "pen-add-to-glossary-file-for-buffer glossary: ")))
+                             (if (sor sel)
+                                 (f-join "/root/.pen/glossaries" (concat sel ".txt"))
+                               "/root/.pen/glossaries/general.txt"))))
                      (and
                       (local-variable-p 'glossary-files)
                       (if take-first
