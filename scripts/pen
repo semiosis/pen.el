@@ -852,7 +852,10 @@ if test "$use_pen_config" = "y"; then
         fi
     fi
 
-    test -d "$HOME/.pen" && : "${PEN_CONFIG_DIR:="$HOME/.pen"}"
+    candidate_config_dir="$(get_config_dir)"
+    if test -n "$candidate_config_dir"; then
+        test -d "$candidate_config_dir" && : "${PEN_CONFIG_DIR:="$candidate_config_dir"}"
+    fi
 
     if ! test "$batch" = "y"; then
         : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
