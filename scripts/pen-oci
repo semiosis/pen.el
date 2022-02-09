@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+0</dev/null pen-ci "$@"
