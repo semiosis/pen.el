@@ -7,6 +7,11 @@ find ~/.emacs.d/host/ -empty -type d -exec rmdir {} \; 2>/dev/null
 
 echo "$PEN_CONTAINER_NAME" > ~/pen_container_name.txt
 
+# port linear coefficient - pen-test encodes as 42
+# Add this number to ports.
+coefficient="$(echo "$PEN_CONTAINER_NAME" | perl -lne 'printf "%03d", ord for split ""' | fold -w1 | paste -sd+ - | bc)"
+: "${coefficient:="0"}"
+
 sn="$(basename "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
     ~/.emacs.d/host/pen.el/scripts/$sn "$@"
