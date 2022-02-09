@@ -104,7 +104,9 @@ test_deps() {
 coefficient="$(echo "$PEN_CONTAINER_NAME" | perl -lne 'printf "%03d", ord for split ""' | fold -w1 | paste -sd+ - | bc)"
 : "${coefficient:="0"}"
 TTYD_PORT="$((7681 + $coefficient))"
+export TTYD_PORT
 KHALA_PORT="$((9837 + $coefficient))"
+export KHALA_PORT
 
 ensure_dependencies() {
     ds="$(test_deps)"
