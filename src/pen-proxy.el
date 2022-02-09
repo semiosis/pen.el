@@ -2,8 +2,10 @@
   "Example: localhost:9837"
   :type 'string
   :group 'pen
-  :options (list "localhost:9837")
+  :options (list "localhost")
   :set (lambda (_sym value)
+         (if (string-equal "localhost" value)
+             (setq value (concat "localhost:" (pen-get-khala-port))))
          (set _sym value))
   :get (lambda (_sym)
          (eval (sor _sym nil)))
