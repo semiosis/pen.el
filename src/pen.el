@@ -121,6 +121,8 @@
 ;; (require 'pen-lisp)
 ;; (require 'pen-lispy)
 
+(require 'pen-network)
+
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
 ;; (require 'macrostep)
