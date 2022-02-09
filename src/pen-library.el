@@ -789,6 +789,6 @@ buffer which is not included when this function returns"
          (f-delete ,tf))))))
 
 (defun pen-container-name ()
-  (pen-snc "cat ~/pen-container-name.txt"))
+  (pen-snc "cat ~/pen_container_name.txt"))
 
 (provide 'pen-library)
