@@ -8,6 +8,10 @@ test -d "$HOME/.emacs.d/host/khala" && : "${KHALA_DIR:="$HOME/.emacs.d/host/khal
 test -d "$HOME/.emacs.d/khala" && : "${KHALA_DIR:="$HOME/.emacs.d/khala"}"
 test -d "$HOME/repos/pen-emacsd/khala" && : "${KHALA_DIR:="$HOME/repos/pen-emacsd/khala"}"
 
+: "${KHALA_PORT:="$(cat ~/.pen/ports/khala.txt)"}"
+: "${KHALA_PORT:="9837"}"
+export PORT="$KHALA_PORT"
+
 set -xv
 cd "$KHALA_DIR"
 lein run
