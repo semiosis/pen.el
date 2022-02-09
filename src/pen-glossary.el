@@ -114,11 +114,12 @@
                             (local-variable-p 'glossary-files)
                             (if take-first
                                 (car glossary-files)
-                              (pen-umn (fz (pen-mnm (pen-list2str glossary-files))
-                                           "$HOME/glossaries/"
+                              (pen-umn (fz (pen-mnm (pen-list2str (mapcar (lambda (s) (s-replace-regexp "\\..*" "" s))
+                                                                          (mapcar 'f-basename glossary-files))))
+                                           nil
                                            nil "glossary to add to: "))))
-                           (pen-umn (fz (pen-mnm (pen-list2str (list "$HOME/glossaries/glossary.txt")))
-                                        "$HOME/glossaries/"
+                           (pen-umn (fz (pen-mnm (pen-list2str (list "main")))
+                                        nil
                                         nil "glossary to add to: "))))))
                 (f-join "/root/.pen/glossaries" (concat sel ".txt"))))))
       (with-current-buffer
