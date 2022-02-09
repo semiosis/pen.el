@@ -1,1 +1,32 @@
-pen-nodeapp
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+sn="$(p "$sn" | sed 's/^pen-//')"
+
+# : "${NODE_VERSION:="$(oci myrc .node_version)"}"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# . $HOME/sh-source/nvm-node
+# nvm use "$NODE_VERSION" 1>&2 || nvm install "$NODE_VERSION" 1>&2
+which "$sn" | grep -q ".nvm/" || npm install -g localtunnel
+
+export BROWSER=iceweasel
+
+IFS= read -r -d '' desktop_file <<HEREDOC
+[Desktop Entry]
+Type=Application
+Name=Iceweasel
+Comment=Web browser
+Terminal=false
+Exec=surf
+Categories=Network;WebBrowser
+HEREDOC
+
+mkdir -p ~/.local/share/applications/
+printf -- "%s\n" "$desktop_file" > ~/.local/share/applications/iceweasel.desktop
+xdg-settings set default-web-browser iceweasel.desktop
+xdg-mime default iceweasel.desktop 'x-scheme-handler/http'
+xdg-mime default iceweasel.desktop 'x-scheme-handler/https'
+
+lt "$@"
