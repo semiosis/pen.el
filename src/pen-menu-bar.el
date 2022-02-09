@@ -777,6 +777,16 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-network-menu
+  (let ((menu (make-sparse-keymap "Network")))
+    (bindings--define-key menu [mi-pen-net-show-peers]
+      '(menu-item "Show peers" pen-net-show-peers
+                  :help "Show network peers"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-apps-menu
   (let ((menu (make-sparse-keymap "Applications")))
     (bindings--define-key menu [mi-menu-bar-apostrophe-menu]
@@ -1019,6 +1029,9 @@
       ;;   (cons "Cosm" menu-bar-paracosm-menu))
       (bindings--define-key global-map [menu-bar paracosm] nil)
       (bindings--define-key global-map [menu-bar apps] nil)
+      (bindings--define-key global-map [menu-bar network]
+        (cons "Network" menu-bar-network-menu))
+
       (bindings--define-key global-map [menu-bar applications]
         (cons "Applications" menu-bar-apps-menu))
 
