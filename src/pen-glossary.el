@@ -39,7 +39,7 @@
   (let ((cb (current-buffer))
         ;; (gfs (if (local-variable-p 'glossary-files) glossary-files))
         (fp
-         (if (is-glossary-file)
+         (if (pen-is-glossary-file)
              (buffer-file-name)
            (pen-umn (or
                      (and (or (>= (prefix-numeric-value current-prefix-arg) 4)
