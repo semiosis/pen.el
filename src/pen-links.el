@@ -1,3 +1,5 @@
+(require 'org-link-minor-mode)
+
 (defun pen-go-to-prompt-function-definition (prompt-function-name-or-sym)
   (interactive (list (fz pen-prompt-functions nil nil "prompt function: ")))
 
@@ -13,5 +15,7 @@
         (find-file (f-join pen-prompts-directory "prompts" prompt-fn)))))
 
 (org-add-link-type "prompt" 'pen-go-to-prompt-function-definition)
+
+(define-key org-link-minor-mode-map (kbd "C-c C-o") 'org-open-at-point)
 
 (provide 'pen-links)

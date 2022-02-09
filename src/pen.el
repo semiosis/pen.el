@@ -2155,6 +2155,20 @@ May use to generate code from comments."
     `(let ((pen-force-engine "Human"))
        ,',@body)))
 
+(defun pen-edit-fp-on-path (fp)
+  "Edit file given by path. If not found, then look in PATH."
+  (interactive (list (read-string-hist "Edit Which: ")))
+
+  (setq fp (pen-umn fp))
+  (cond
+   ((pen-snq "which fp") (find-file (chomp (pen-sn (concat "which " fp)))))
+   ((pen-snq (pen-cmd "test" "-f" fp)) (find-file (chomp fp)))
+   ((pen-snq (pen-cmd "test" "-d" fp)) (find-file (chomp fp)))
+   (t (message (concat fp " not found")))))
+(defalias 'pen-edit-which 'pen-edit-fp-on-path)
+(defalias 'pen-ewhich 'pen-edit-fp-on-path)
+(defalias 'pen-ew 'pen-edit-fp-on-path)
+
 ;; This didn't fix the hanging
 ;; (setq after-init-hook
 ;;       '(pen-delay-memoise pen-acolyte-scratch pen-delay-add-keys package--save-selected-packages global-company-mode
