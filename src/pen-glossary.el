@@ -51,13 +51,10 @@
                       (local-variable-p 'glossary-files)
                       (if take-first
                           (car glossary-files)
-                        (pen-umn (fz (pen-mnm (list2str glossary-files))
-                                     "$HOME/glossaries/"
-                                     nil "pen-add-to-glossary-file-for-buffer glossary: "))
-                        ))
-                     (pen-umn (fz (pen-mnm (pen-list2str (list "$HOME/glossaries/glossary.txt")))
-                                  "$HOME/glossaries/"
-                                  nil "pen-add-to-glossary-file-for-buffer glossary: ")))))))
+                        (pen-umn (fz (pen-mnm (pen-list2str glossary-files))
+                                     nil nil "pen-add-to-glossary-file-for-buffer glossary: "))))
+                     (pen-umn (fz (pen-mnm (pen-list2str (list "/root/.pen/glossaries/general.txt")))
+                                  nil nil "pen-add-to-glossary-file-for-buffer glossary: ")))))))
 
     (with-current-buffer
         (find-file fp)
