@@ -87,7 +87,7 @@
             (eval
              `(pen-engine
                ,apostrophe-engine
-               (apostrophe-generate-blurb name)
+               (apostrophe-generate-blurb sme)
                ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
                ))))
 
