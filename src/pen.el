@@ -2004,6 +2004,7 @@ May use to generate code from comments."
 (require 'pen-dired)
 (require 'pen-semiosis-protocol)
 (require 'pen-alethea-ai)
+(require 'pen-laltal)
 (require 'pen-mad-teaparty)
 (require 'pen-documents)
 

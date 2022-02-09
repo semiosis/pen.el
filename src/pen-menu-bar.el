@@ -278,7 +278,20 @@
   (let ((menu (make-sparse-keymap "Alethea.AI")))
     (bindings--define-key menu [mi-pen-connect-alethea-ai]
       '(menu-item "Connect to network" pen-connect-alethea-ai
-                  :help "Connect Pen.el to the Alethea.AI"))
+                  :help "Connect Pen.el to the Alethea.AI network"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-laltal-menu
+  (let ((menu (make-sparse-keymap "LalTal")))
+    (bindings--define-key menu [mi-pen-connect-laltal]
+      '(menu-item "Connect to network" pen-connect-laltal
+                  :help "Connect Pen.el to the LalTal network"))
+    (bindings--define-key menu [mi-pen-connect-laltal]
+      '(menu-item "Connect to network" pen-connect-laltal
+                  :help "Connect Pen.el to the LalTal network"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
