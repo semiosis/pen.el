@@ -7,6 +7,7 @@ find ~/.emacs.d/host/ -empty -type d -exec rmdir {} \; 2>/dev/null
 
 echo "$PEN_CONTAINER_NAME" > ~/pen_container_name.txt
 
+mkdir -p ~/.pen/ports
 # Calculate the ports on the outside, but record them here
 : "${TTYD_PORT:="7681"}"
 echo "$TTYD_PORT" > ~/.pen/ports/ttyd.txt
