@@ -857,7 +857,7 @@ if test "$use_pen_config" = "y"; then
         test -d "$candidate_config_dir" && : "${PEN_CONFIG_DIR:="$candidate_config_dir"}"
     fi
 
-    if ! test "$batch" = "y"; then
+    if ! test "$batch" = "y" && ! test "$no" = y; then
         : "${PEN_CONFIG_DIR:="$(read -ep "PEN_CONFIG_DIR (leave empty to use docker): ")"}"
     fi
 
