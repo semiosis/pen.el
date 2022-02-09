@@ -11,6 +11,7 @@ echo "$PEN_CONTAINER_NAME" > ~/pen_container_name.txt
 # Add this number to ports.
 coefficient="$(echo "$PEN_CONTAINER_NAME" | perl -lne 'printf "%03d", ord for split ""' | fold -w1 | paste -sd+ - | bc)"
 : "${coefficient:="0"}"
+mkdir -p ~/.pen/ports
 
 sn="$(basename "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
@@ -107,6 +108,7 @@ if ! ls ~/.pen/pool/available/* 2>/dev/null | grep -q pen-emacsd; then
 (
 export PEN_USE_GUI=n
 ttyd_port="$((7681 + $coefficient))"
+echo "$ttyd_port" > ~/.pen/ports/ttyd.txt
 echo "ttyd running on port $ttyd_port, serving Pen.el on http"
 ttyd -p "$ttyd_port" bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
 /inspircd-2.0.25/run/inspircd start &>/dev/null
