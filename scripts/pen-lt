@@ -4,7 +4,7 @@ export TTY
 sn="$(basename "$0")"
 sn="$(p "$sn" | sed 's/^pen-//')"
 
-# : "${NODE_VERSION:="$(oci myrc .node_version)"}"
+# : "${NODE_VERSION:="$(pen-oci pen-rc-get .node_version)"}"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # . $HOME/sh-source/nvm-node
