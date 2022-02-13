@@ -69,7 +69,11 @@ elif [ -f "$term_setup_fp" ]; then
     . "$term_setup_fp"
 fi
 
-# # This can't be in setup-term.sh or shellrc, nvm made emacs dog slow
-# # For nvm/npm/node
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# This can't be in setup-term.sh or shellrc, nvm made emacs dog slow
+if ! test -n "$PEN_DAEMON"; then
+    . ~/.cargo/env
+
+    # For nvm/npm/node
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+fi
