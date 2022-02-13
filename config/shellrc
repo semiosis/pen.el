@@ -69,7 +69,7 @@ elif [ -f "$term_setup_fp" ]; then
     . "$term_setup_fp"
 fi
 
-# This can't be in setup-term.sh or shellrc, nvm made emacs dog slow
+# nvm can't be in setup-term.sh or shellrc, nvm made emacs dog slow
 if ! test -n "$PEN_DAEMON"; then
     . ~/.cargo/env
 
