@@ -113,15 +113,18 @@
 (require 'pen-paste)
 (require 'pen-nlsh)
 (require 'pen-continuum)
-;; Otherwise, it will break host magit
-;; I still need this for editing lisp
+
+(require 'pen-lisp)
+(require 'pen-lispy)
+
 (if (pen-snq "inside-docker-p")
     (require 'pen-auto-mode-load))
+;; Otherwise, it will break host magit
+;; I still need this for editing lisp
 (require 'pen-selected)
 ;; (require 'pen-search)
 ;; (require 'pen-doc)
-;; (require 'pen-lisp)
-;; (require 'pen-lispy)
+
 
 (require 'pen-network)
 
