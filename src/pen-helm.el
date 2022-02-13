@@ -104,11 +104,11 @@ display values."
   (define-key helm-map (kbd "C-z") 'helm-select-action)
   (define-key helm-map (kbd "M-c") #'helm-copy-selection-to-clipboard)
   (define-key helm-map (kbd "M-e") (df helm-open ;; (helm-keyboard-quit)
-                                       (find-file (pen-umn (bp head -n 1 (helm-marked-candidates-strings)))) ;; (helm-keyboard-quit) ;This works to quit helm, but when it quits, the buffer quits too; This is desirable behaviour
+                                       (find-file (pen-umn (pen-bp head -n 1 (helm-marked-candidates-strings)))) ;; (helm-keyboard-quit) ;This works to quit helm, but when it quits, the buffer quits too; This is desirable behaviour
                                        ))
-  (define-key helm-map (kbd "M-v") (df helm-open-in-vim (pen-spv (concat "v " (pen-umn (bp head -n 1 (helm-marked-candidates-strings)))))))
-  (define-key helm-map (kbd "M-o") (df helm-open-in-sps (pen-sps (concat "zrepl o " (pen-umn (bp head -n 1 (helm-marked-candidates-strings)))))))
-  (define-key helm-map (kbd "M-F") (df helm-open-in-fzf (pen-sph (concat "ca " (pen-umn (bp head -n 1 (helm-marked-candidates-strings))) " | pen-fzf -P"))))
+  (define-key helm-map (kbd "M-v") (df helm-open-in-vim (pen-tv (pen-umn (pen-bp head -n 1 (helm-marked-candidates-strings))))))
+  (define-key helm-map (kbd "M-o") (df helm-open-in-sps (pen-sps (concat "zrepl o " (pen-umn (pen-bp head -n 1 (helm-marked-candidates-strings)))))))
+  (define-key helm-map (kbd "M-F") (df helm-open-in-fzf (pen-sph (concat "ca " (pen-umn (pen-bp head -n 1 (helm-marked-candidates-strings))) " | pen-fzf -P"))))
 
   ;; helm-help to do the same thing as helm documentation
   (define-key helm-map (kbd "C-c ?")    'helm-documentation)
