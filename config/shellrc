@@ -69,7 +69,7 @@ elif [ -f "$term_setup_fp" ]; then
     . "$term_setup_fp"
 fi
 
-# When in setup-term.sh, vpm made emacs dog slow
-# For nvm/npm/node
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# # When in setup-term.sh, vpm made emacs dog slow
+# # For nvm/npm/node
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
