@@ -1526,6 +1526,14 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
 
     # yn "Pull docker image?" && docker pull $pen_image
 
+    if test -n "$PEN_CONFIG_DIR" && test -d "$PEN_CONFIG_DIR" && test -d "$PENEL_DIR"; then
+        my_config_fp="$PEN_CONFIG_DIR/pen.yaml"
+        example_config_fp="$PENEL_DIR/config/example-pen.yaml"
+        if test -f "$example_config_fp" && ! test -f "$my_config_fp"; then
+            cp -a "$example_config_fp" "$PEN_CONFIG_DIR"
+        fi
+    fi
+
     if ! test "$batch" = y && \
         ! test "$yes" = y && \
         ! test "$no" = y && \
