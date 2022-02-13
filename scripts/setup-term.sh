@@ -22,7 +22,10 @@ export PATH=$PATH:$EMACSD/host/pen.el/scripts-host:$EMACSD/pen.el/scripts-host
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 export PATH="$PATH:/root/go/bin"
 export PATH="$PATH:/root/.cargo/bin/cargo"
-. ~/.cargo/env
+
+if ! test -n "$PEN_DAEMON"; then
+    . ~/.cargo/env
+fi
 
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH

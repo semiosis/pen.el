@@ -529,7 +529,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
               (-filter 'identity
                        (list (list "DISPLAY" ":0")
                              (list "PATH" (getenv "PATH"))
-                             (list "PEN_DAEMON" (daemonp))
+                             (list "PEN_DAEMON" (sor (daemonp) "default"))
                              (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
                              (if (or (pen-var-value-maybe 'pen-sh-update)
                                      (pen-var-value-maybe 'sh-update))
