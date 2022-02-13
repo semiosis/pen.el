@@ -24,6 +24,7 @@
 (define-key paredit-mode-map (kbd "C-M-n") nil)
 (define-key paredit-mode-map (kbd ";") nil)
 (define-key paredit-mode-map (kbd "C-d") nil)
+(define-key paredit-mode-map (kbd "M-q") nil)
 (define-key lispy-mode-map-special (kbd "M-TAB") (kbd "i"))
 
 (require 'lispy)

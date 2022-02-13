@@ -674,6 +674,7 @@ otherwise the whole string is unquoted."
 (define-key lispy-mode-map (kbd "M-W") #'pen-lispy-run-inner-sexp)
 (define-key lispy-mode-map (kbd "M-.") nil)
 (define-key lispy-mode-map (kbd "M-k") nil)
+(define-key lispy-mode-map (kbd "M-q") nil)
 (define-key lispy-mode-map (kbd "C-c '") 'lispy-edit-string)
 (define-key lispy-string-edit-mode-map (kbd "C-c '") 'lispy-edit-string)
 (define-key lispy-mode-map (kbd "C-h") 'selected-backspace-delete-and-deselect)
