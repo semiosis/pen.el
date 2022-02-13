@@ -1,3 +1,5 @@
+# This file belong at ~/.pen/pen.yaml
+
 # When debug is on, try is disabled, and all errors throw an exception
 debug: on
 
