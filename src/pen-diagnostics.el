@@ -20,7 +20,8 @@
   (interactive)
   (let ((last-command
          (pen-snc "cat ~/.pen/last-final-command.txt")))
-    (pen-zrepl (concat last-command " -d"))))
+    (pen-zrepl
+     (s-replace-regexp " lm-complete$" " upd lm-complete -d" last-command))))
 
 (defun pen-diagnostics-show-context ()
   (interactive)
