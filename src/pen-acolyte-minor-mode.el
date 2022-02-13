@@ -20,13 +20,14 @@
   (interactive)
   (cond
    ((>= (prefix-numeric-value current-prefix-arg) 4)
-    (pen-kill-emacs))
-   (t (if (or
-           force
-           (yn "Close Pen buffer and frame?"))
-          (progn
-            (kill-buffer)
-            (delete-frame nil t))))))
+    (if (or
+         force
+         (yn "Close Pen buffer and frame?"))
+        (progn
+          (kill-buffer)
+          (delete-frame nil t))))
+   (t
+    (pen-kill-emacs))))
 
 (defun pen-delete-frame (&optional force)
   (interactive)

@@ -94,6 +94,7 @@
             ("PEN_ENGINE_MIN_GENERATED_TOKENS" . ,final-engine-min-generated-tokens)
             ("PEN_ENGINE_MAX_GENERATED_TOKENS" . ,final-engine-max-generated-tokens)
             ("PEN_COLLECT_FROM_POS" . ,collect-from-pos)
+            ("PEN_MEMORY_COLLECT_FROM_POS" . ,memory-collect-from-pos)
             ("PEN_END_POS" . ,end-pos)
             ("PEN_N_JOBS" . ,final-n-jobs)
             ("PEN_SEARCH_THRESHOLD" . ,final-search-threshold)
@@ -1494,14 +1495,26 @@
                         ))
             (t final-prompt)))
 
+          ;; :mem should always come before :pp
+          (memory-collect-from-pos
+           (byte-string-search "<:mem>" final-prompt))
+
+          (final-prompt (string-replace "<:mem>" "" final-prompt))
+
           (collect-from-pos
-           (or (byte-string-search "<:pp>" final-prompt)
-               ;; (length final-prompt)
-               (string-bytes final-prompt)))
+           (byte-string-search "<:pp>" final-prompt))
 
           (final-prompt (string-replace "<:pp>" "" final-prompt))
 
           (end-pos (string-bytes final-prompt))
+
+          (collect-from-pos
+           (or collect-from-pos
+               end-pos))
+
+          (memory-collect-from-pos
+           (or memory-collect-from-pos
+               end-pos))
 
           ;; pen-log-final-prompt actually chomps it
           (logged (pen-log-final-prompt (concat final-prompt "<END>")))
