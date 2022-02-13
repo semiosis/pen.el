@@ -73,7 +73,7 @@ fi
 if ! test -n "$PEN_DAEMON"; then
     . ~/.cargo/env
 
-    # nvm is just too slow. I don't even want it in etecrm
+    # nvm is just too slow. I don't even want it in eterm
     # For nvm/npm/node
     # export NVM_DIR="$HOME/.nvm"
     # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
