@@ -7,6 +7,9 @@ sh-update: off
 # In future, this would disable the use of non-libre models
 libre-only: off
 
+# Default 0
+helm_async_delay: 0
+
 # This proxy points to itself
 # proxy: "localhost:9707"
 
@@ -16,11 +19,15 @@ libre-only: off
 fav-world-language: English
 fav-programming-language: Emacs Lisp
 
+use-human-engine-if-disconnected: on
+
 ## This overrides the language model / engine used for prompting functions
 ## However, if a .prompt file specifies
 ## force-engine, then this override will not
 ## override.
-#force-engine: OpenAI Codex
+# force-engine: Human
+force-engine: OpenAI Codex
+# force-engine: Offline
 
 # Default engine is used as a last resort when selecting an engine
 default-engine: Human
@@ -53,6 +60,10 @@ force-n-completions: ~
 # Ink.el adds text properties to the emacs buffer when text has been generated.
 disable-ink: off
 
+# To limit stdin for prompt functions
+# This is fairly important.
+max-input-char-length: 1000
+
 # Disable prompt force-engine
 # This can be used to truly force an engine, because individual .prompts may
 # override the global force-engine custom variable with its own force-engine.
@@ -69,7 +80,16 @@ enable-logprobs: on
 default-logprobs: 10
 
 # This is a pool of emacs daemons used for prompting
+# n-daemons: 20
 n-daemons: 5
+
+# This may also be set with `pen -nto`
+# no-timeout: on
+
+timeout: 15
+
+# lm-complete-generic is parallelised for increased prompting throughput
+n-simultaneous-requests: 2
 
 # Default engines are used when the engine resolver (all fallbacks) fail
 default-engines:
