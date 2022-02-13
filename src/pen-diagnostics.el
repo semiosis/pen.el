@@ -13,6 +13,15 @@
        (concat (slugify slug) ".txt")))
      " | head -n 10"))))
 
+(defun pen-zrepl (c)
+  (pen-sps (pen-cmd "zrepl" "-E" c)))
+
+(defun pen-debug-last-pen-command ()
+  (interactive)
+  (let ((last-command
+         (pen-snc "cat ~/.pen/last-final-command.txt")))
+    (pen-zrepl (concat last-command " -d"))))
+
 (defun pen-diagnostics-show-context ()
   (interactive)
 

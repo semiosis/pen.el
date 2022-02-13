@@ -714,6 +714,9 @@
     (bindings--define-key menu [mi-pen-diagnostics-show-context]
       '(menu-item "Diagnostics" pen-diagnostics-show-context
                   :help "Show details of prompt function execution"))
+    (bindings--define-key menu [mi-pen-debug-last-pen-command]
+      '(menu-item "Debug last command" pen-debug-last-pen-command
+                  :help "Run the last run prompt command in debug mode in a terminal"))
     (bindings--define-key menu [mi-menu-bar-history-menu]
       `(menu-item "Prompt history" ,menu-bar-history-menu
                   :help "Work with prompt history"))
