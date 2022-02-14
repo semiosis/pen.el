@@ -709,4 +709,6 @@
 
 (define-key pen-map (kbd "C-c C-o") 'org-open-at-point)
 
+(define-key pen-map (kbd "H-c") 'pf-continue-last)
+
 (provide 'pen-example-config)
