@@ -224,7 +224,7 @@ killed after rendering."
 
 (defun lg-eww (url &optional use-chrome)
   "Same as 'eww' except it renames the buffer after loading."
-  (interactive (list (read-string "url:")))
+  (interactive (list (read-string-hist "LookingGlass url:")))
 
   (if (not url)
       (setq url '("http://google.com")))
