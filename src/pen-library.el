@@ -800,6 +800,6 @@ buffer which is not included when this function returns"
       (execute-kbd-macro (kbd "M-w"))))
   (deactivate-mark))
 
-(define-key pen-map (kbd "M-w") 'pen-m-w-copy)
+(define-key pen-map (kbd "M-w") 'xc)
 
 (provide 'pen-library)
