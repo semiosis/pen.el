@@ -1782,4 +1782,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
 (defun pen-bs (chars input)
   (escape input chars))
 
+(require 'cua-base)
+
+(define-key global-map (kbd "<M-f5>") 'cua-paste)
+
 (provide 'pen-support)
