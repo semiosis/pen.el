@@ -114,6 +114,7 @@
 (require 'pen-nlsh)
 (require 'pen-continuum)
 (require 'pen-selected)
+(require 'pen-cua)
 
 (if (pen-snq "inside-docker-p")
     (progn
