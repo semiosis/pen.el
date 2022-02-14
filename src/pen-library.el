@@ -791,6 +791,7 @@ buffer which is not included when this function returns"
 (defun pen-container-name ()
   (pen-snc "cat ~/pen_container_name.txt"))
 
+;; This wasn't great
 (defun pen-m-w-copy ()
   "Forward word if a region is not selected."
   (interactive)
