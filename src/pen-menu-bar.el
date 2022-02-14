@@ -701,6 +701,9 @@
     (bindings--define-key menu [mi-pen-continue-from-hist]
       '(menu-item "Continue prompt from history" pen-continue-from-hist
                   :help "Continue prompt from history"))
+    (bindings--define-key menu [mi-pf-continue-last]
+      '(menu-item "Continue last prompt" pf-continue-last
+                  :help "Continue last prompt from history"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
