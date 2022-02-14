@@ -791,4 +791,20 @@ buffer which is not included when this function returns"
 (defun pen-container-name ()
   (pen-snc "cat ~/pen_container_name.txt"))
 
+(defun pen-m-w-copy ()
+  "Forward word if a region is not selected."
+  (interactive)
+  (if (not (or (region-active-p) (lispy-left-p)))
+      (call-interactively 'pen-complete-words)
+    (comment (progn-noadvice
+              ;; (ad-deactivate 'evil-forward-word-begin) ;Not even this works
+              (advice-remove 'evil-forward-word-begin #'pen-doc-thing-at-point)
+              (call-interactively 'evil-forward-WORD-begin)
+              (advice-add 'evil-forward-word-begin :after #'pen-doc-thing-at-point)))
+    (let ((pen nil))
+      (execute-kbd-macro (kbd "M-w"))))
+  (deactivate-mark))
+
+(define-key pen-map (kbd "M-w") 'pen-m-w-copy)
+
 (provide 'pen-library)
