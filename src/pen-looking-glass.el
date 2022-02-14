@@ -135,6 +135,6 @@
         (eww url))))))
 (defalias 'lg-search 'pen-browse-url-for-passage)
 
-(define-key pen-map (kbd "<H-g>") 'lg-eww)
+(define-key pen-map (kbd "H-g") 'lg-eww)
 
 (provide 'pen-looking-glass)
