@@ -12,6 +12,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+func_trap() {
+    kill "$$"
+}
+trap func_trap INT
+
 if test "$here" = "y"; then
     echo "loading video..."
     echo "Use \`C-c\` to kill asciinema or \`F1 x\` to kill the window via tmux"
@@ -19,5 +24,5 @@ if test "$here" = "y"; then
 else
     CMD="$(cmd "$@")"
     : ${CMD:="$(cmd "$@")"}
-    pen-tm -d nw -sw "echo loading video...; pen-asciinema-play -h $CMD"
+    pen-tm -d nw -notrapint -sw "echo loading video...; pen-asciinema-play -h $CMD"
 fi
