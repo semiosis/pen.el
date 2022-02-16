@@ -615,3 +615,7 @@ echo 'deb http://neilalexander.s3.dualstack.eu-west-2.amazonaws.com/deb/ debian 
 apt-get update
 
 pip3 install ssdpy
+
+# python3t-fitz
+pip3 install --upgrade pip
+pip3 install PyMuPDF
