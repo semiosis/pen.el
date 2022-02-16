@@ -616,6 +616,7 @@ apt-get update
 
 pip3 install ssdpy
 
+# emacs-application-framework
 # python3t-fitz
 pip3 install --upgrade pip
 pip3 install PyMuPDF
