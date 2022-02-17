@@ -23,6 +23,9 @@ fav-programming-language: Emacs Lisp
 
 use-human-engine-if-disconnected: on
 
+# Automatically jack into cider when editing clojure
+cider: on
+
 ## This overrides the language model / engine used for prompting functions
 ## However, if a .prompt file specifies
 ## force-engine, then this override will not
