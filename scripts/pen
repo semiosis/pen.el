@@ -706,11 +706,7 @@ if stdin_exists && \
 fi
 
 if test "$sn" = penx; then
-    if inside-docker-p || docker-running-p; then
-        sn=penc
-    else
-        sn=pen
-    fi
+    sn=penc
 
     PEN_USE_GUI=y
     share_x=y

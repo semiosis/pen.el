@@ -620,3 +620,19 @@ pip3 install ssdpy
 # python3t-fitz
 pip3 install --upgrade pip
 pip3 install PyMuPDF
+
+# Install mysql -- for Croogle
+apt install default-mysql-server
+apt install php-mysqli
+echo "\nport = 3360" >> /etc/mysql/my.cnf
+
+pen-x -shE "mysql -u root" -e "MariaDB [" -s "flush privileges;" -c m \
+    -e "MariaDB [" -s "USE mysql;" -c m \
+    -e "MariaDB [" -s "UPDATE mysql.user SET authentication_string=PASSWORD('oracle') WHERE User = 'root';" -c m \
+    -e "MariaDB [" -s "CREATE DATABASE fileindexdb;" -c m \
+    -e "MariaDB [" -s "quit;" -c m \
+    -i
+
+mkdir -p /var/www/
+ln -s ~/repos/wizard /var/www/wizard
+mkdir -p /etc/apache2/sites-available
