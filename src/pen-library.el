@@ -588,7 +588,7 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
 
              ;; This is actually necessary
              ;; (eval '(redraw-glossary-buttons-when-window-scrolls-or-file-is-opened))
-             (run-buttonize-hooks)
+             (pen-run-buttonize-hooks)
 
              (message "%s" (concat "killed + reloaded: " (mnm path)))
              ;; (recenter-top-bottom)

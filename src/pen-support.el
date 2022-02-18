@@ -1782,4 +1782,45 @@ This function accepts any number of ARGUMENTS, but ignores them."
 (defun pen-bs (chars input)
   (escape input chars))
 
+(defun pen-revert (arg)
+  (interactive "P")
+  (remove-overlays (point-min) (point-max))
+  (pen-run-buttonize-hooks)
+  (let ((lambda (get-current-line-string-number-at-pos))
+        (c (current-column)))
+
+    (if arg
+        (progn (force-revert-buffer)
+               (message "%s" "Reverted from disk"))
+      (progn (try (progn (if (string-match-p "\\*Org .*" (buffer-name))
+                             (message "Not going to revert.")
+                           ;; Babel
+                           ;; (undo-tree-restore-state-from-register ?')
+                           ;; It's undo-tree-restore-state-from-register which is SLOW
+                           (undo-tree-restore-state-from-register ?^))
+                         ;; (message "%s" "Reverted to last saved state from undo-tree history")
+                         )
+                  (progn (force-revert-buffer)
+                         ;; (message "%s" "Reverted from disk because the ^ register was used elsewhere")
+                         )))       ; revert without loading from disk
+      ;; (ekm "C-x r U ^") ; revert without loading from disk
+
+      ;; (if (variable-p 'saved-undo-node)
+      ;;     (ekm C-x r U ^)
+      ;;   ;; (progn (undo-tree-node-undo saved-undo-node)
+
+      ;;   ;;        ;; (undo-tree-undo 10000)
+      ;;   ;;        (message "%s" "undid"))
+      ;;   ;; (progn
+      ;;   ;;   (message "%s" "no undid"))
+      ;;   )
+      )
+
+    (goto-line l)
+    (move-to-column c)
+    ;; For some reason, this hook is added whenever I revert. Therefore remove it. What is adding it?
+    (remove-hook 'after-save-hook (lambda nil (byte-force-recompile default-directory)) t))
+  (clear-undo-tree)
+  (company-cancel))
+
 (provide 'pen-support)

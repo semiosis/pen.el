@@ -1290,7 +1290,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
     (progn
       ;; Run if exists
       (ignore-errors
-        (run-buttonize-hooks))
+        (pen-run-buttonize-hooks))
       (pen-eww-show-status)))))
 
 (defun eww-back-url-around-advice (proc &rest args)
@@ -1298,7 +1298,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
     ;; Run if exists
     (ignore-erros
-     (run-buttonize-hooks))
+     (pen-run-buttonize-hooks))
     res))
 (advice-add 'eww-back-url :around #'eww-back-url-around-advice)
 

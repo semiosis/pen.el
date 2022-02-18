@@ -1,9 +1,9 @@
-(require 'my-regex)
-(require 'my-lists)
+(require 'pen-regex)
+(require 'pen-lists)
 
-(require 'my-glossary-error)
+(require 'pen-glossary-error)
 
-(require 'my-computed-context)
+(require 'pen-computed-context)
 
 (defvar pen-glossary-keep-tuples-up-to-date t)
 
@@ -101,7 +101,7 @@
           (derived-mode-p 'emacs-lisp-mode)
           (derived-mode-p 'Info-mode))
          "$HOME/glossaries/emacs-lisp-elisp.txt")
-        ((bound-and-true-p my/lisp-mode)
+        ((bound-and-true-p pen-lisp-mode)
          "$HOME/glossaries/lisp-based-languages.txt")
         ((or (pen-ire-p "kubernetes")
              (pen-ire-p "k8s"))
@@ -309,11 +309,11 @@
 (define-button-type 'glossary-button 'follow-link t 'help-echo "Click to go to definition" 'face 'pen-glossary-button-face)
 (define-button-type 'glossary-candidate-button 'follow-link t 'help-echo "Click to add to glossary" 'face 'pen-glossary-candidate-button-face)
 
-(defun pen-my-show-overlays-here ()
+(defun pen-show-overlays-here ()
   (interactive)
   (new-buffer-from-string (pp (cl-loop for o in (overlays-at (point)) collect (sp--get-overlay-text o)))))
 
-(defun pen-my-show-button-paths-here ()
+(defun pen-show-button-paths-here ()
   (interactive)
   (new-buffer-from-string (pp (pen-glossary-get-button-3-tuples-at (point)))))
 
@@ -340,8 +340,8 @@
   (-filter (lambda (e) (not (member (third e) pen-glossary-blacklist)))
            (glossary-sort-tuples
             (if fp
-                (pen-eval-string (sn (concat "list-glossary-terms-for-elisp " (pen-q fp))))
-              (pen-eval-string (sn "list-glossary-terms-for-elisp"))))))
+                (pen-eval-string (pen-sn (concat "list-glossary-terms-for-elisp " (pen-q fp))))
+              (pen-eval-string (pen-sn "list-glossary-terms-for-elisp"))))))
 
 (defun pen-glossary-sort-tuples (tuples)
   (sort
@@ -454,7 +454,7 @@ Use my position list code. Make it use rosie lang and external software."
          (buttons-here (pen-glossary-get-button-3-tuples-at start)))
 
     (if (< 1 (length buttons-here))
-        (let* ((button-line (umn (fz (mnm (pp-map-line buttons-here))
+        (let* ((button-line (pen-umn (fz (pen-mnm (pp-map-line buttons-here))
                                      nil nil "pen-glossary-candidate-button-pressed: ")))
                (button-tuple (if button-line
                                  (pen-eval-string (concat "'" button-line))))
@@ -476,7 +476,7 @@ Use my position list code. Make it use rosie lang and external software."
          ((equal current-prefix-arg (list 4)) (setq current-prefix-arg nil))
          ((not current-prefix-arg) (setq current-prefix-arg (list 4))))
     (with-current-buffer
-        (pen-add-to-glossary-file-for-buffer term nil (sn "oc" glossarypath)))))
+        (pen-add-to-glossary-file-for-buffer term nil (pen-sn "oc" glossarypath)))))
 
 (defun pen-glossary-button-pressed (button)
   "When I press a glossary button, it should take me to the definition"
@@ -487,7 +487,7 @@ Use my position list code. Make it use rosie lang and external software."
          (buttons-here (pen-glossary-get-button-3-tuples-at start)))
 
     (if (< 1 (length buttons-here))
-        (let* ((button-line (umn (fz (mnm (pp-map-line buttons-here))
+        (let* ((button-line (pen-umn (fz (pen-mnm (pp-map-line buttons-here))
                                      nil nil "pen-glossary-button-pressed: ")))
                (button-tuple (if button-line
                                  (pen-eval-string (concat "'" button-line))))
@@ -544,11 +544,11 @@ Use my position list code. Make it use rosie lang and external software."
   (-filter-not-empty-string
    (let ((s (buffer-substring (pen-glossary-window-start)
                               (pen-glossary-window-end))))
-     (s-lines (cl-sn "extract-keyphrases" :stdin s :chomp t)))))
+     (s-lines (pen-cl-sn "extract-keyphrases" :stdin pen-str :chomp t)))))
 
 (defun pen-recalculate-glossary-candidate-3tuples (beg end)
   (interactive "r")
-  (let* ((p (mnm (get-path-nocreate)))
+  (let* ((p (pen-mnm (get-path-nocreate)))
          (tls (mapcar
                (lambda (s) (list p nil s))
                (-distinct
@@ -579,7 +579,7 @@ Use my position list code. Make it use rosie lang and external software."
               (recalculate-glossary-error-3tuples)))
 
         (if (and
-             (myrc-test "glossary_suggest_keyphrases")
+             (pen-rc-test "glossary_suggest_keyphrases")
              (or
               (derived-mode-p 'eww-mode)
               (derived-mode-p 'text-mode)
@@ -610,7 +610,7 @@ Use my position list code. Make it use rosie lang and external software."
     (defset-local pen-glossary-files fps)))
 
 (defun pen-add-glossaries-to-buffer (fps &optional no-draw)
-  (interactive (list (-filter-not-empty-string (s-lines (umn (fz (mnm (list2str (pen-other-glossaries-not-added-yet)))))))))
+  (interactive (list (-filter-not-empty-string (s-lines (pen-umn (fz (pen-mnm (list2str (pen-other-glossaries-not-added-yet)))))))))
   (if fps
       (save-excursion
         (progn
@@ -620,12 +620,12 @@ Use my position list code. Make it use rosie lang and external software."
               (pen-draw-glossary-buttons-and-maybe-recalculate nil nil))))))
 
 (defun pen-test-f (fp)
-  (eq (progn (sn (concat "test -f " (pen-q fp)))
+  (eq (progn (pen-sn (concat "test -f " (pen-q fp)))
              (string-to-number b_exit_code))
       0))
 
 (defun pen-test-d (fp)
-  (eq (progn (sn (concat "test -d " (pen-q fp)))
+  (eq (progn (pen-sn (concat "test -d " (pen-q fp)))
              (string-to-number b_exit_code))
       0))
 
@@ -689,8 +689,8 @@ Use my position list code. Make it use rosie lang and external software."
   (if (use-region-p)
       (pen-generate-glossary-buttons-over-region beg end clear-first force)
     (unless (or
-             (string-equal (get-path-nocreate) "/home/shane/var/smulliga/source/git/config/emacs/config/my-glossary.el")
-             (and (not (myrc-test "auto_glossary_enabled"))
+             (string-equal (get-path-nocreate) "/home/shane/var/smulliga/source/git/config/emacs/config/pen-glossary.el")
+             (and (not (pen-rc-test "auto_glossary_enabled"))
                   (not (and (variable-p 'glossary-force-on) glossary-force-on))))
 
       (if clear-first (pen-remove-all-glossary-buttons))
@@ -880,8 +880,8 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-goto-glossary-definition (term)
   (interactive (list
-                (fz (sn "list-glossary-terms")
-                    (if mark-active (downcase (my/thing-at-point)))
+                (fz (pen-sn "list-glossary-terms")
+                    (if mark-active (downcase (pen-thing-at-point)))
                     nil
                     "pen-goto-glossary-definition: ")))
 
@@ -890,7 +890,7 @@ Use my position list code. Make it use rosie lang and external software."
 
   (let* ((tups (-filter (lambda (e) (string-equal (car (last e)) term)) pen-glossary-term-3tuples-global))
          (button-line (if tups
-                          (umn (fz (mnm (pp-map-line tups)) nil nil nil nil t))))
+                          (pen-umn (fz (pen-mnm (pp-map-line tups)) nil nil nil nil t))))
          (button-tuple (if button-line
                            (pen-eval-string (concat "'" button-line)))))
     (if button-tuple
@@ -905,7 +905,7 @@ Use my position list code. Make it use rosie lang and external software."
     nil))
 
 (defun pen-goto-glossary-definition-noterm (term)
-  (interactive (list (fz (sn "list-glossary-terms")
+  (interactive (list (fz (pen-sn "list-glossary-terms")
                          ""
                          nil
                          "pen-goto-glossary-definition-noterm: ")))
@@ -918,11 +918,11 @@ Use my position list code. Make it use rosie lang and external software."
                    (local-variable-p 'pen-glossary-files)
                    (if take-first
                        (car pen-glossary-files)
-                     (umn (fz (mnm (list2str pen-glossary-files))
+                     (pen-umn (fz (pen-mnm (list2str pen-glossary-files))
                               nil
                               nil
                               "pen-go-to-glossary-file-for-buffer: "))))
-              (umn (fz (mnm (list2str (list-pen-glossary-files)))
+              (pen-umn (fz (pen-mnm (list2str (list-pen-glossary-files)))
                        nil
                        nil
                        "pen-go-to-glossary-file-for-buffer: "))))))
@@ -956,14 +956,14 @@ Use my position list code. Make it use rosie lang and external software."
   (pen-remove-glossary-buttons-over-region (point-min) (point-max)))
 (defalias 'pen-clear-glossary-buttons 'pen-remove-all-glossary-buttons)
 
-(defset pen-my-buttonize-hook '())
+(defset pen-buttonize-hook '())
 
-(add-hook 'pen-my-buttonize-hook 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened)
-(add-hook 'pen-my-buttonize-hook 'make-buttons-for-all-filter-cmds)
+(add-hook 'pen-buttonize-hook 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened)
+(add-hook 'pen-buttonize-hook 'make-buttons-for-all-filter-cmds)
 
 (defun pen-run-buttonize-hooks ()
   (interactive)
-  (run-hooks 'pen-my-buttonize-hook))
+  (run-hooks 'pen-buttonize-hook))
 
 (defun pen-Info-find-node-2-around-advice (proc &rest args)
   (let ((res (apply proc args)))
@@ -975,7 +975,7 @@ Use my position list code. Make it use rosie lang and external software."
   (interactive)
   (message-no-echo (concat "redraw-glossary scroll " (get-path nil t)))
   (unless (or
-           (not (myrc-test "auto_glossary_enabled"))
+           (not (pen-rc-test "auto_glossary_enabled"))
            (derived-mode-p 'dired-mode)
            (derived-mode-p 'compilation-mode)
            (string-equal (buffer-name) "*button cloud*")
@@ -1034,13 +1034,13 @@ Use my position list code. Make it use rosie lang and external software."
   (pen-toggle-draw-glossary-buttons-timer t))
 
 (defun pen-glossary-add-link (term fp)
-  (interactive (list (read-string-hist "glossary term: " (my/thing-at-point))
-                     (umn (fz (mnm (list2str (glob "/home/shane/glossaries/*.txt")))
+  (interactive (list (read-string-hist "glossary term: " (pen-thing-at-point))
+                     (pen-umn (fz (pen-mnm (list2str (glob "/home/shane/glossaries/*.txt")))
                               "$HOME/glossaries/"
                               nil "pen-glossary-add-link: "))))
   (let ((code
          `((or (pen-istr-p ,term))
-           ,(mnm fp))))
+           ,(pen-mnm fp))))
     (j 'pen-glossary-predicate-tuples)
     (special-lispy-different)
     (-dotimes 3 'backward-char)
@@ -1086,19 +1086,19 @@ Use my position list code. Make it use rosie lang and external software."
   (button-at-point))
 (defalias 'pen-glossary-button-at-point-p 'pen-glossary-button-at-point)
 
-(defun pen-my-button-get-link (b)
+(defun pen-button-get-link (b)
   (cond
    ((eq (button-get b 'face) 'pen-glossary-button-face)
     (concat "[[y:" (pen-button-get-text b) "]]"))
    (t nil)))
 
-(defun pen-my-button-copy-link-at-point ()
+(defun pen-button-copy-link-at-point ()
   (interactive)
   (let* ((url (get-text-property (point) 'shr-url)))
     (setq url
           (cond
            (url url)
-           ((button-at-point) (pen-my-button-get-link (button-at-point)))))
+           ((button-at-point) (pen-button-get-link (button-at-point)))))
     (xc (message url))))
 
 (defun pen-ace-link-copy-button-link ()
@@ -1108,6 +1108,6 @@ Use my position list code. Make it use rosie lang and external software."
      (mapcar #'cdr (pen-buttons-collect))
      (avy--style-fn avy-style)))
   (let* ((b (button-at-point))
-         (lambda (pen-my-button-get-link b)))
+         (lambda (pen-button-get-link b)))
     (if l
         (xc l))))

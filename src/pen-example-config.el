@@ -711,4 +711,6 @@
 
 (define-key pen-map (kbd "H-c") 'pf-continue-last)
 
+(define-key pen-map (kbd "M-l M-e") 'pen-revert)
+
 (provide 'pen-example-config)
