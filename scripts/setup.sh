@@ -273,9 +273,11 @@ apt install libmbedtls12 libmbedtls-dev
 cd
 agi build-essential cmake git libjson-c-dev
 git clone https://github.com/tsl0922/ttyd.git
-cd ttyd && mkdir build && cd build
+cd ttyd
+sed -i "s/ttyd - Terminal/Pen.el/" html/webpack.config.js
+mkdir build && cd build
 cmake ..
-sed -i "s/^/# /" /usr/local/lib/cmake/libwebsockets/libwebsockets-config.cmake
+` # This was here but broke it: sed -i "s/^/# /" /usr/local/lib/cmake/libwebsockets/libwebsockets-config.cmake `
 make -j 4 && make install
 )
 
