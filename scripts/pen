@@ -49,6 +49,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -im) {
+        pen_image="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 : "${PEN_CONTAINER_NAME:="pen"}"
@@ -214,10 +221,9 @@ If you currently have a working setup, don't pull updates unless you want the ne
 Or report to mullikine on Discord: https://discord.gg/JwKGbAdNHR
 https://github.com/semiosis/pen.el/
 
-Network protocols (in development):
+In development:
 - ࿋ Semiosis Protocol
-- Alethea.AI
-- LalTal
+- TakaheAI
 HEREDOC
 
 is_tty() { [ -t 1 ]; }
