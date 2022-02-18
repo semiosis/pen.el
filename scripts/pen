@@ -1375,6 +1375,7 @@ if ! test "$show_banner" = n; then
             echo Version: ${pen_version}, License: GPL-3
             echo
             printf -- "%s\n" "$info_txt"
+            echo "Using image: $pen_image"
         }
         ;;
     esac
