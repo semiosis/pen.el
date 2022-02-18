@@ -2,7 +2,7 @@
 
 (defset glossary-error-predicate-tuples
   (pen-mu `(
-        ((ire-in-buffer-or-path-p "ghci")
+        ((pen-ire-in-buffer-or-path-p "ghci")
          "$HOME/glossaries/haskell-errors.txt"))))
 
 (defsetface glossary-error-button-face

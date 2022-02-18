@@ -119,7 +119,7 @@
 
 (defun pen-string-match-literal-insensitive (pattern string &optional start)
   (if (stringp string)
-      (re-insensitive
+      (pen-re-insensitive
        (string-match (regexp-quote pattern) string start))))
 (defalias 'istring-match-literal 'pen-string-match-literal-insensitive)
 (defalias 'istr-match-p 'pen-string-match-literal-insensitive)
@@ -128,7 +128,7 @@
 
 (defun pen-string-match-insensitive (pattern string &optional start)
   (if (stringp string)
-      (re-insensitive
+      (pen-re-insensitive
        (string-match pattern string start))))
 (defalias 'ire-match-p 'pen-string-match-insensitive)
 
@@ -212,21 +212,21 @@
 (defun pen-ire-in-region-or-path-p (s)
   (let ((p (get-path-nocreate))
         (rs (sor (pen-selection) "")))
-    (re-insensitive
+    (pen-re-insensitive
      (or (and (stringp s) (stringp rs) (string-match s rs))
          (and (stringp s) (stringp p) (string-match s p))))))
 
 (defun pen-ire-in-buffer-or-path-p (s)
   (let ((p (get-path-nocreate))
         (bs (buffer-string)))
-    (re-insensitive
+    (pen-re-insensitive
      (or (and (stringp s) (stringp bs) (string-match s bs))
          (and (stringp s) (stringp p) (string-match s p))))))
 
 ;; (pen-re-insensitive (string-match "\\bamazon\\b" (buffer-string)))
 (defun pen-ieat-in-region-or-path-p (s)
   (pen-ire-in-region-or-path-p (concat "\\b" s "\\b")))
-(defalias 'ieat-in-region-or-buffer-p 'pen-ieat-in-region-or-path-p)
+(defalias 'pen-ieat-in-region-or-buffer-p 'pen-ieat-in-region-or-path-p)
 (defun pen-eat-in-region-or-path-p (s)
   (pen-re-in-region-or-path-p (concat "\\b" s "\\b")))
 
@@ -268,8 +268,8 @@
 
 (defun pen-re-p (r)
   (if (use-region-p)
-      (re-in-region-or-path-p r)
-    (re-in-buffer-or-path-p r)))
+      (pen-re-in-region-or-path-p r)
+    (pen-re-in-buffer-or-path-p r)))
 
 (defun pen-istr-p (s)
   (if (use-region-p)
@@ -283,12 +283,12 @@
 
 (defun pen-ire-p (r)
   (if (use-region-p)
-      (ire-in-region-or-path-p r)
-    (ire-in-buffer-or-path-p r)))
+      (pen-ire-in-region-or-path-p r)
+    (pen-ire-in-buffer-or-path-p r)))
 
-(defun ieat-in-region-or-buffer-or-path-p (s)
+(defun pen-ieat-in-region-or-buffer-or-path-p (s)
   (if (use-region-p)
-      (ieat-in-region-or-path-p s)
-    (ieat-in-buffer-or-path-p s)))
+      (pen-ieat-in-region-or-path-p s)
+    (pen-ieat-in-buffer-or-path-p s)))
 
 (provide 'pen-regex)

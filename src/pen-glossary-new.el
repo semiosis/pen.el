@@ -66,14 +66,14 @@
          "$HOME/glossaries/cryptocurrencies.txt"
          "$HOME/glossaries/cryptography.txt")
         ((or (pen-istr-p "optic")
-             (ieat-in-region-or-buffer-p "lens")
+             (pen-ieat-in-region-or-buffer-p "lens")
              (pen-istr-p "prism")
              (pen-istr-p "focal")
-             (ieat-in-region-or-buffer-p "light"))
+             (pen-ieat-in-region-or-buffer-p "light"))
          "$HOME/glossaries/optics.txt"
          "$HOME/glossaries/physics.txt")
         ((or (pen-str-p "hashing")
-             (ieat-in-region-or-buffer-or-path-p "hash"))
+             (pen-ieat-in-region-or-buffer-or-path-p "hash"))
          "$HOME/glossaries/hashing.txt")
         ((or (pen-istr-p "graphql"))
          "$HOME/glossaries/graphql.txt")
@@ -94,8 +94,8 @@
         ((or (pen-ire-p "\\bnix"))
          "$HOME/glossaries/nix.txt")
         ((or (derived-mode-p 'solidity-mode)
-             (ieat-in-region-or-buffer-or-path-p "solidity")
-             (ieat-in-region-or-buffer-or-path-p "ethereum"))
+             (pen-ieat-in-region-or-buffer-or-path-p "solidity")
+             (pen-ieat-in-region-or-buffer-or-path-p "ethereum"))
          "$HOME/glossaries/ethereum.txt"
          "$HOME/glossaries/solidity.txt")
         ((or
@@ -120,22 +120,22 @@
         ((and (pen-ire-p "haskell")
               (not (derived-mode-p 'emacs-lisp-mode)))
          "$HOME/glossaries/haskell.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "AWS")
-             (ieat-in-region-or-buffer-or-path-p "awscloud")
-             (ieat-in-region-or-buffer-or-path-p "amazon"))
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "AWS")
+             (pen-ieat-in-region-or-buffer-or-path-p "awscloud")
+             (pen-ieat-in-region-or-buffer-or-path-p "amazon"))
          "$HOME/glossaries/aws.txt"
          "$HOME/glossaries/awscloud.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "RL")
-             (ieat-in-region-or-buffer-or-path-p "reinforcement"))
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "RL")
+             (pen-ieat-in-region-or-buffer-or-path-p "reinforcement"))
          "$HOME/glossaries/reinforcement-learning.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "ethereum")
-             (ieat-in-region-or-buffer-or-path-p "eth"))
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "ethereum")
+             (pen-ieat-in-region-or-buffer-or-path-p "eth"))
          "$HOME/glossaries/ethereum.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "transformer"))
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "transformer"))
          "$HOME/glossaries/transformer.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "gpt")
-             (ieat-in-region-or-buffer-or-path-p "openai")
-             (ieat-in-region-or-buffer-or-path-p "huggingface"))
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "gpt")
+             (pen-ieat-in-region-or-buffer-or-path-p "openai")
+             (pen-ieat-in-region-or-buffer-or-path-p "huggingface"))
          "$HOME/glossaries/openai.txt"
          "$HOME/glossaries/huggingface.txt"
          "$HOME/glossaries/transformer.txt"
@@ -151,7 +151,7 @@
          ,(glob "/home/shane/notes/ws/*/words.txt")
          ,(glob "/home/shane/notes/ws/*/phrases.txt")
          "$HOME/glossaries/english.txt")
-        ((ieat-in-region-or-buffer-or-path-p "Myst")
+        ((pen-ieat-in-region-or-buffer-or-path-p "Myst")
          "$HOME/glossaries/myst.txt")
         ((or (pen-istr-p "mitmproxy")
              (pen-istr-p "Filter expressions"))
@@ -171,9 +171,9 @@
         ((or (pen-istr-p "database")
              (pen-istr-p "solr")
              (pen-istr-p "elasticsearch")
-             (ieat-in-region-or-buffer-or-path-p "kibana")
-             (ieat-in-region-or-buffer-or-path-p "information retrieval")
-             (ieat-in-region-or-buffer-or-path-p "SEO"))
+             (pen-ieat-in-region-or-buffer-or-path-p "kibana")
+             (pen-ieat-in-region-or-buffer-or-path-p "information retrieval")
+             (pen-ieat-in-region-or-buffer-or-path-p "SEO"))
          "$HOME/glossaries/nlp-natural-language-processing.txt"
          "$HOME/glossaries/transformer.txt"
          "$HOME/glossaries/information-retrieval.txt"
@@ -182,14 +182,14 @@
          "$HOME/glossaries/seo-search-engine-optimisation.txt"
          "$HOME/glossaries/databases.txt")
         ((or (pen-istr-p "natural language processing")
-             (ieat-in-region-or-buffer-or-path-p "nlp")
+             (pen-ieat-in-region-or-buffer-or-path-p "nlp")
              (pen-istr-p "liguistic")
              (pen-istr-p "embedding")
-             (ieat-in-region-or-buffer-or-path-p "transformer")
-             (ieat-in-region-or-buffer-or-path-p "GPT")
-             (ieat-in-region-or-buffer-or-path-p "openai")
-             (ieat-in-region-or-buffer-or-path-p "huggingface")
-             (ieat-in-region-or-buffer-or-path-p "information retrieval"))
+             (pen-ieat-in-region-or-buffer-or-path-p "transformer")
+             (pen-ieat-in-region-or-buffer-or-path-p "GPT")
+             (pen-ieat-in-region-or-buffer-or-path-p "openai")
+             (pen-ieat-in-region-or-buffer-or-path-p "huggingface")
+             (pen-ieat-in-region-or-buffer-or-path-p "information retrieval"))
          "$HOME/glossaries/nlp-natural-language-processing.txt"
          "$HOME/glossaries/nlp-python.txt"
          "$HOME/glossaries/openai.txt"
@@ -207,14 +207,14 @@
              (pen-istr-p "King James"))
          "$HOME/glossaries/bible.txt"
          "$HOME/glossaries/bible-english.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "ADV")
-             (ieat-in-region-or-buffer-or-path-p "DET")
-             (ieat-in-region-or-buffer-or-path-p "NOUN"))
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "ADV")
+             (pen-ieat-in-region-or-buffer-or-path-p "DET")
+             (pen-ieat-in-region-or-buffer-or-path-p "NOUN"))
          "$HOME/glossaries/nlp-natural-language-processing.txt")
         ((or (pen-istr-p "relevance")
              (pen-istr-p "retrieval")
              (pen-istr-p "ranking")
-             (ieat-in-region-or-buffer-or-path-p "IR"))
+             (pen-ieat-in-region-or-buffer-or-path-p "IR"))
          "$HOME/glossaries/information-retrieval.txt"
          "$HOME/glossaries/information-ranking.txt")
         ((or (pen-istr-p "inflect"))
@@ -251,26 +251,26 @@
          "$HOME/glossaries/testing.txt")
         ((or (pen-istr-p "Aragorn"))
          "$HOME/glossaries/lotr-lord-of-the-rings.txt")
-        ((or (eat-in-buffer-or-path-p "ZooKeeper")
-             (ieat-in-region-or-buffer-or-path-p "Apache")
-             (ieat-in-region-or-buffer-or-path-p "tika"))
+        ((or (pen-eat-in-buffer-or-path-p "ZooKeeper")
+             (pen-ieat-in-region-or-buffer-or-path-p "Apache")
+             (pen-ieat-in-region-or-buffer-or-path-p "tika"))
          "$HOME/glossaries/apache.txt")
         ((or (pen-istr-p "Python")) "$HOME/glossaries/python.txt")
         ((or (pen-istr-p "tcl")) "$HOME/glossaries/tcl.txt")
         ((or (pen-istr-p "TypeScript")) "$HOME/glossaries/typescript.txt")
         ((or (pen-istr-p "Dwarf Fortress"))
          "$HOME/glossaries/dwarf-fortress.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "racket"))
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "racket"))
          "$HOME/glossaries/racket.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "unison"))
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "unison"))
          "$HOME/glossaries/unison.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "Kotlin")) "$HOME/glossaries/kotlin.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "git"))
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "Kotlin")) "$HOME/glossaries/kotlin.txt")
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "git"))
          "$HOME/glossaries/git.txt")
         ((or (pen-istr-p "Neural Network"))
          "$HOME/glossaries/deep-learning.txt")
-        ((or (ieat-in-region-or-buffer-or-path-p "food")
-             (ieat-in-region-or-buffer-or-path-p "cuisine")) "$HOME/glossaries/cooking.txt")
+        ((or (pen-ieat-in-region-or-buffer-or-path-p "food")
+             (pen-ieat-in-region-or-buffer-or-path-p "cuisine")) "$HOME/glossaries/cooking.txt")
         ((or (pen-istr-p "SQL"))
          "$HOME/glossaries/sql.txt")
         ((or (pen-istr-p "sourcegraph"))
@@ -278,9 +278,9 @@
 
 (defun pen-glossary-list-relevant-glossaries ()
   (append
-   (cl-loop for fn in (list-all-pen-glossary-files)
+   (cl-loop for fn in (pen-list-all-glossary-files)
             when
-            (pen-istr-p (string-replace ".txt$" "" (basename fn)))
+            (pen-istr-p (string-replace ".txt$" "" (f-basename fn)))
             collect fn)
    (-distinct
     (-flatten
@@ -529,10 +529,10 @@ Use my position list code. Make it use rosie lang and external software."
   (if b
       (buffer-substring (button-start b) (button-end b))))
 
-(defalias 'pen-list-all-pen-glossary-files 'pen-list-pen-glossary-files)
+(defalias 'pen-list-all-glossary-files 'pen-list-glossary-files)
 
 (defun pen-other-glossaries-not-added-yet ()
-  (let ((all-glossary-files (pen-list-pen-glossary-files)))
+  (let ((all-glossary-files (pen-list-glossary-files)))
     (if (and (local-variable-p 'pen-glossary-files) pen-glossary-files)
         (-difference
          all-glossary-files
@@ -589,7 +589,7 @@ Use my position list code. Make it use rosie lang and external software."
              (not (derived-mode-p 'yaml-mode)))
             (pen-recalculate-glossary-candidate-3tuples beg end))
 
-        (gl-beg-end
+        (pen-gl-beg-end
          (progn
            (pen-make-buttons-for-glossary-terms
             gl-draw-start
@@ -597,7 +597,7 @@ Use my position list code. Make it use rosie lang and external software."
            (pen-make-buttons-for-glossary-terms
             gl-draw-start
             gl-draw-end
-            glossary-candidate-3tuples
+            pen-glossary-candidate-3tuples
             'glossary-candidate-button)
            (pen-make-buttons-for-glossary-terms
             gl-draw-start
@@ -611,7 +611,7 @@ Use my position list code. Make it use rosie lang and external software."
     (defset-local pen-glossary-files fps)))
 
 (defun pen-add-glossaries-to-buffer (fps &optional no-draw)
-  (interactive (list (-filter-not-empty-string (s-lines (pen-umn (fz (pen-mnm (list2str (pen-other-glossaries-not-added-yet)))))))))
+  (interactive (list (-filter-not-empty-string (s-lines (pen-umn (fz (pen-mnm (pen-list2str (pen-other-glossaries-not-added-yet)))))))))
   (if fps
       (save-excursion
         (progn
@@ -716,7 +716,7 @@ Use my position list code. Make it use rosie lang and external software."
                         ((and (derived-mode-p 'text-mode)
                               (stringp (get-path-nocreate))
                               (let* ((fp (get-path-nocreate))
-                                     (bn (basename fp))
+                                     (bn (f-basename fp))
                                      (dn (f-dirname fp))
                                      (ext (file-name-extension bn))
                                      (mant (file-name-sans-extension bn))
@@ -729,9 +729,9 @@ Use my position list code. Make it use rosie lang and external software."
                              (append-glossary-files-locally (list glossary-fp)))))
                         ((and (get-path-nocreate)
                               (let* ((fp (get-path-nocreate))
-                                     (bn (basename fp))
+                                     (bn (f-basename fp))
                                      (dn (f-dirname fp))
-                                     (dnbn (basename dn))
+                                     (dnbn (f-basename dn))
                                      (ext (file-name-extension bn))
                                      (mant (file-name-sans-extension bn)))
                                 (or (and (string-equal dnbn "glossaries")
@@ -782,7 +782,7 @@ Use my position list code. Make it use rosie lang and external software."
       (with-current-buffer
           (new-buffer-from-tmux-pane-capture t)
         (pen-generate-glossary-buttons-manually))
-    (gl-beg-end
+    (pen-gl-beg-end
      (if (use-region-p)
          (pen-generate-glossary-buttons-over-region gl-beg gl-end nil t)
        (pen-generate-glossary-buttons-over-buffer gl-end gl-end nil t)))))
@@ -919,11 +919,11 @@ Use my position list code. Make it use rosie lang and external software."
                    (local-variable-p 'pen-glossary-files)
                    (if take-first
                        (car pen-glossary-files)
-                     (pen-umn (fz (pen-mnm (list2str pen-glossary-files))
+                     (pen-umn (fz (pen-mnm (pen-list2str pen-glossary-files))
                               nil
                               nil
                               "pen-go-to-glossary-file-for-buffer: "))))
-              (pen-umn (fz (pen-mnm (list2str (list-pen-glossary-files)))
+              (pen-umn (fz (pen-mnm (pen-list2str (pen-list-glossary-files)))
                        nil
                        nil
                        "pen-go-to-glossary-file-for-buffer: "))))))
@@ -1036,7 +1036,7 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-glossary-add-link (term fp)
   (interactive (list (read-string-hist "glossary term: " (pen-thing-at-point))
-                     (pen-umn (fz (pen-mnm (list2str (glob "/home/shane/glossaries/*.txt")))
+                     (pen-umn (fz (pen-mnm (pen-list2str (glob "/home/shane/glossaries/*.txt")))
                               "$HOME/glossaries/"
                               nil "pen-glossary-add-link: "))))
   (let ((code
