@@ -1786,7 +1786,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (interactive "P")
   (remove-overlays (point-min) (point-max))
   (pen-run-buttonize-hooks)
-  (let ((lambda (get-current-line-string-number-at-pos))
+  (let ((l (line-number-at-pos))
         (c (current-column)))
 
     (if arg
@@ -1820,7 +1820,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
     (move-to-column c)
     ;; For some reason, this hook is added whenever I revert. Therefore remove it. What is adding it?
     (remove-hook 'after-save-hook (lambda nil (byte-force-recompile default-directory)) t))
-  (clear-undo-tree)
+  (ignore-errors
+    (clear-undo-tree))
   (company-cancel))
 
 (provide 'pen-support)

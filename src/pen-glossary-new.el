@@ -2,6 +2,7 @@
 (require 'pen-lists)
 
 (require 'pen-glossary-error)
+(require 'pen-filter-cmd-buttonize)
 
 (require 'pen-computed-context)
 
@@ -25,7 +26,7 @@
 (define-key global-map (kbd "H-Y P") 'pen-go-glossary-predicate-tuples)
 
 (defset glossary-predicate-tuples
-  (mu `(((or (pen-re-p "\\bVault\\b")
+  (pen-mu `(((or (pen-re-p "\\bVault\\b")
              (pen-re-p "\\bConsul\\b")
              (and (not (derived-mode-p 'text-mode))
                   (pen-istr-p "terraform"))
@@ -338,7 +339,7 @@
 
 (defun pen-glossary-list-tuples (&optional fp)
   (-filter (lambda (e) (not (member (third e) pen-glossary-blacklist)))
-           (glossary-sort-tuples
+           (pen-glossary-sort-tuples
             (if fp
                 (pen-eval-string (pen-sn (concat "list-glossary-terms-for-elisp " (pen-q fp))))
               (pen-eval-string (pen-sn "list-glossary-terms-for-elisp"))))))
@@ -590,15 +591,15 @@ Use my position list code. Make it use rosie lang and external software."
 
         (gl-beg-end
          (progn
-           (make-buttons-for-glossary-terms
+           (pen-make-buttons-for-glossary-terms
             gl-draw-start
             gl-draw-end)
-           (make-buttons-for-glossary-terms
+           (pen-make-buttons-for-glossary-terms
             gl-draw-start
             gl-draw-end
             glossary-candidate-3tuples
             'glossary-candidate-button)
-           (make-buttons-for-glossary-terms
+           (pen-make-buttons-for-glossary-terms
             gl-draw-start
             gl-draw-end
             glossary-error-term-3tuples
@@ -671,7 +672,7 @@ Use my position list code. Make it use rosie lang and external software."
         (glossary-error-add-relevant-glossaries t)
         (save-excursion
           (let ((glossary-files
-                 (mu '("$NOTES/ws/english/words.txt")))
+                 (pen-mu '("$NOTES/ws/english/words.txt")))
                 (glossary-error-files nil))
             (mylog (pen-draw-glossary-buttons-and-maybe-recalculate beg end))))))))
 
@@ -704,7 +705,7 @@ Use my position list code. Make it use rosie lang and external software."
                          (string-equal (buffer-name) "*glossary cloud*"))))
 
             (progn
-              (mu (cond ((derived-mode-p 'python-mode)
+              (pen-mu (cond ((derived-mode-p 'python-mode)
                          (progn
                            (append-glossary-files-locally (list "$HOME/glossaries/python.txt"
                                                                 "$HOME/glossaries/tensorflow.txt"
@@ -914,7 +915,7 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-go-to-glossary-file-for-buffer (&optional take-first)
   (interactive)
-  (mu (find-file (or (and (not (>= (prefix-numeric-value current-prefix-arg) 4))
+  (pen-mu (find-file (or (and (not (>= (prefix-numeric-value current-prefix-arg) 4))
                    (local-variable-p 'pen-glossary-files)
                    (if take-first
                        (car pen-glossary-files)
@@ -973,7 +974,7 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened ()
   (interactive)
-  (message-no-echo (concat "redraw-glossary scroll " (get-path nil t)))
+  (pen-message-no-echo (concat "redraw-glossary scroll " (get-path nil t)))
   (unless (or
            (not (pen-rc-test "auto_glossary_enabled"))
            (derived-mode-p 'dired-mode)
