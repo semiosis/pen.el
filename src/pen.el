@@ -1977,6 +1977,7 @@ May use to generate code from comments."
 (require 'pen-messages)
 (require 'pen-yaml)
 (require 'pen-glossary)
+(require 'pen-glossary-new)
 (require 'pen-localization)
 (require 'pen-diagnostics)
 (require 'pen-examplary)
