@@ -1794,26 +1794,10 @@ This function accepts any number of ARGUMENTS, but ignores them."
                (message "%s" "Reverted from disk"))
       (progn (try (progn (if (string-match-p "\\*Org .*" (buffer-name))
                              (message "Not going to revert.")
-                           ;; Babel
-                           ;; (undo-tree-restore-state-from-register ?')
-                           ;; It's undo-tree-restore-state-from-register which is SLOW
                            (undo-tree-restore-state-from-register ?^))
-                         ;; (message "%s" "Reverted to last saved state from undo-tree history")
                          )
                   (progn (force-revert-buffer)
-                         ;; (message "%s" "Reverted from disk because the ^ register was used elsewhere")
                          )))       ; revert without loading from disk
-      ;; (ekm "C-x r U ^") ; revert without loading from disk
-
-      ;; (if (variable-p 'saved-undo-node)
-      ;;     (ekm C-x r U ^)
-      ;;   ;; (progn (undo-tree-node-undo saved-undo-node)
-
-      ;;   ;;        ;; (undo-tree-undo 10000)
-      ;;   ;;        (message "%s" "undid"))
-      ;;   ;; (progn
-      ;;   ;;   (message "%s" "no undid"))
-      ;;   )
       )
 
     (goto-line l)
