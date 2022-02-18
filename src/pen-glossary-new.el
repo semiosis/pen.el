@@ -605,7 +605,7 @@ Use my position list code. Make it use rosie lang and external software."
             glossary-error-term-3tuples
             'glossary-error-button))))))
 
-(defun pen-append-pen-glossary-files-locally (fps)
+(defun pen-append-glossary-files-locally (fps)
   (if (local-variable-p 'pen-glossary-files)
       (defset-local pen-glossary-files (-union pen-glossary-files fps))
     (defset-local pen-glossary-files fps)))
@@ -615,7 +615,7 @@ Use my position list code. Make it use rosie lang and external software."
   (if fps
       (save-excursion
         (progn
-          (append-glossary-files-locally fps)
+          (pen-append-glossary-files-locally fps)
 
           (if (not no-draw)
               (pen-draw-glossary-buttons-and-maybe-recalculate nil nil))))))
@@ -707,7 +707,7 @@ Use my position list code. Make it use rosie lang and external software."
             (progn
               (pen-mu (cond ((derived-mode-p 'python-mode)
                          (progn
-                           (append-glossary-files-locally (list "$HOME/glossaries/python.txt"
+                           (pen-append-glossary-files-locally (list "$HOME/glossaries/python.txt"
                                                                 "$HOME/glossaries/tensorflow.txt"
                                                                 "$HOME/glossaries/nlp-python.txt"
                                                                 "$HOME/glossaries/onnx.txt"
@@ -726,7 +726,7 @@ Use my position list code. Make it use rosie lang and external software."
                                     (pen-test-f PDF-fp))))
                          (progn
                            (let ((glossary-fp (concat (f-dirname (get-path-nocreate)) "/glossary.txt")))
-                             (append-glossary-files-locally (list glossary-fp)))))
+                             (pen-append-glossary-files-locally (list glossary-fp)))))
                         ((and (get-path-nocreate)
                               (let* ((fp (get-path-nocreate))
                                      (bn (f-basename fp))
@@ -737,19 +737,19 @@ Use my position list code. Make it use rosie lang and external software."
                                 (or (and (string-equal dnbn "glossaries")
                                          (derived-mode-p 'text-mode))
                                     (string-equal bn "glossary.txt"))))
-                         (append-glossary-files-locally (list (get-path-nocreate))))
+                         (pen-append-glossary-files-locally (list (get-path-nocreate))))
                         ((derived-mode-p 'prog-mode)
                          (let* ((lang (pen-detect-language))
                                 (lang (cond ((string-equal "emacs-lisp" lang) "emacs-lisp-elisp")
                                             (t lang)))
                                 (fp (concat "$HOME/glossaries/" lang ".txt")))
                            (if (pen-test-f fp)
-                               (append-glossary-files-locally (list fp)))))
+                               (pen-append-glossary-files-locally (list fp)))))
                         ((str-match-p "Lord of the Rings" (get-path-nocreate))
                          (progn
-                           (append-glossary-files-locally (list "$HOME/glossaries/lotr-lord-of-the-rings.txt"))))
+                           (pen-append-glossary-files-locally (list "$HOME/glossaries/lotr-lord-of-the-rings.txt"))))
                         ((pen-glossary-path-p (get-path-nocreate))
-                         (append-glossary-files-locally (list (get-path-nocreate))))))
+                         (pen-append-glossary-files-locally (list (get-path-nocreate))))))
 
               (pen-draw-glossary-buttons-and-maybe-recalculate beg end)))))))
 
