@@ -1112,3 +1112,5 @@ Use my position list code. Make it use rosie lang and external software."
          (lambda (pen-button-get-link b)))
     (if l
         (xc l))))
+
+(provide 'pen-glossary-new)
