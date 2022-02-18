@@ -979,6 +979,9 @@
     (bindings--define-key menu [mi-pen-nbfs]
       '(menu-item "New empty file/buffer (*untitled*)" nbfs
                   :help "Open a new buffer without a name"))
+    (bindings--define-key menu [mi-pen-pretty-paragraph-selected]
+      '(menu-item "Pretty selected prose" pen-pretty-paragraph-selected
+                  :help "Pretty selected prose"))
     (bindings--define-key menu [mi-pen-tm-edit-v-in-nw]
       '(menu-item "Open in vim" pen-tm-edit-v-in-nw
                   :help "Open the current buffer in vim"))
