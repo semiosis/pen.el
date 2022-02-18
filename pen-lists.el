@@ -16,11 +16,11 @@
         (loop for y in l2
               collect (list x y))))
 
-(defun uncdr (lambda)
+(defun uncdr (l)
   "Return car with cdr appended"
   (append (car l) (list (cdr l))))
 
-(defun unsnd (lambda &optional depth)
+(defun unsnd (l &optional depth)
   "Return car with cdr appended"
 
   (if (or (not depth)
@@ -54,7 +54,7 @@
                    ;; (-reduce 'cartesian-product-2 ls)
                    ))))
     (if (< 2 len)
-        (mapcar (lambda (lambda) (unsnd l (- len 2)))
+        (mapcar (lambda (l) (unsnd l (- len 2)))
                 result)
       result)))
 
@@ -123,7 +123,7 @@ SEQ __is__ modified."
   (if (null v) (cons a nil) (cons (car v) (endcons a (cdr v)))))
 ;; (endcons 'a '(b c d))
 
-(defun -filter-not-empty-string (lambda)
+(defun -filter-not-empty-string (l)
   (-filter 'string-not-empty-nor-nil-p l))
 (defalias '-filter-string-not-empty '-filter-not-empty-string)
 
@@ -143,7 +143,7 @@ SEQ __is__ modified."
 ;;            ("haskell" "ImpredicativeTypes" "01f5902b-0b1c-4ed1-9719-8068f609ee48")))
 
 ;; https://www.reddit.com/r/emacs/comments/jzcefc/question_keep_only_unique_elements_uniq_u/
-(defun -uniq-u (lambda &optional testfun)
+(defun -uniq-u (l &optional testfun)
   "Return a copy of LIST with all non-unique elements removed."
 
   (if (not testfun)
@@ -161,7 +161,7 @@ SEQ __is__ modified."
              unless (> (gethash key table) 1)
              collect key)))
 
-(defun -uniq-d (lambda)
+(defun -uniq-d (l)
   "Return a copy of LIST with all unique elements removed."
   (-difference l (-uniq-u l)))
 
