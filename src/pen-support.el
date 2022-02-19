@@ -1859,6 +1859,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
   (minor-mode-enabled evil-mode))
 
+;; These need more work for pen.el
 (defun pen-evil-star-maybe ()
   "Perform an evil star if text is selected."
   (interactive)
@@ -1868,7 +1869,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
         (pcre-mode -1)
         (evil-search-word-forward)
         ;; (execute-kbd-macro (kbd "p"))
-        (deselect))
+        ;; (deselect)
+        )
     (let ((pen nil))
       (execute-kbd-macro (kbd "*")))))
 
@@ -1879,8 +1881,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (progn
     (pcre-mode -1)
     (evil-search-word-forward)
-    (deselect)
-
+    ;; (deselect)
     ;; (execute-kbd-macro (kbd "p"))
     ))
 
