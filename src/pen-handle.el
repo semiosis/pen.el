@@ -8,14 +8,14 @@
 
 ;; v:pen-ask-documentation 
 
-(defmacro gen-term-command (pen-cmd &optional reuse)
+(defmacro gen-term-command (cmd &optional reuse)
   "Generate an interactive emacs command for a term command"
   (let* ((cmdslug (concat "et-" (slugify cmd)))
          (fsym (intern cmdslug))
          (bufname (concat "*" cmdslug "*")))
     `(defun ,fsym ()
        (interactive)
-       (et ,cmd nil nil ,bufname ,reuse))))
+       (pen-term ,cmd nil nil ,bufname ,reuse))))
 (defalias 'etc 'gen-term-command)
 
 (defun pen-ask-documentation (thing query)
