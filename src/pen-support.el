@@ -1879,6 +1879,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (progn
     (pcre-mode -1)
     (evil-search-word-forward)
-    (execute-kbd-macro (kbd "p"))))
+    ;; (execute-kbd-macro (kbd "p"))
+    ))
 
 (provide 'pen-support)
