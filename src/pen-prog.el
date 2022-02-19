@@ -185,7 +185,7 @@
 
 (define-key prog-mode-map (kbd "H-v") 'handlenav/body)
 
-(dk prog-mode-map "M-J" 'evil-join)
+(define-key prog-mode-map "M-J" 'evil-join)
 
 (define-key prog-mode-map (kbd "C-c C-o") 'org-open-at-point)
 (define-key prog-mode-map (kbd "C-c h f") 'handle-docfun)
