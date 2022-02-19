@@ -1808,4 +1808,9 @@ This function accepts any number of ARGUMENTS, but ignores them."
     (clear-undo-tree))
   (company-cancel))
 
+(defun pen-etv-urls-in-region (&optional s)
+  (interactive)
+  (new-buffer-from-string (urls-in-region-or-buffer s)
+                          nil 'org-mode))
+
 (provide 'pen-support)

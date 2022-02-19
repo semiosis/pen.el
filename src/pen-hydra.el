@@ -105,7 +105,7 @@
 
           (setq result
                 (mapcar
-                 (lambda (lambda)
+                 (lambda (l)
                    (-map-indexed
                     (lambda (index item)
                       (if (= index 0) (concat prefix item) item))
@@ -113,7 +113,7 @@
                  result))
 
           (cons `(sslk ,prefix nil)
-                (mapcar (lambda (lambda) (cons 'sslk l)) result)))))
+                (mapcar (lambda (l) (cons 'sslk l)) result)))))
 
 (require 'pen-yasnippet)
 
@@ -701,12 +701,12 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
 (convert-hydra-to-sslk "lp"
                        (defhydra h_n_normal_properties (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "NORMAL: properties"
                          "NORMAL: properties"
-                         ("b" #'etv-buffer-properties-json "tvipe buffer properties")
+                         ("b" #'pen-etv-buffer-properties-json "tvipe buffer properties")
                          ("o" #'parent-modes "parent modes")
-                         ("v" #'etv-buffer-variables-json "tvipe buffer variables")
-                         ("g" #'etv-global-variables-json "tvipe global variables")
-                         ("e" #'etv-emacs-properties-json "tvipe emacs properties")
-                         ("p" #'etv-properties-json "tvipe properties")
+                         ("v" #'pen-etv-buffer-variables-json "tvipe buffer variables")
+                         ("g" #'pen-etv-global-variables-json "tvipe global variables")
+                         ("e" #'pen-etv-emacs-properties-json "tvipe emacs properties")
+                         ("p" #'pen-etv-properties-json "tvipe properties")
                          ("i" #'package-install "Install Package")
                          ("r" #'pen-reload-config-file "reload config file")
                          ("y" #'copy-button-action "copy button action")
@@ -715,8 +715,8 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
                          ("m" #'list-packages "Package Manager")
                          ;; ("f" #'customize-face "customize face")
                          ("f" #'what-face "what face")
-                         ("t" #'etv-textprops "text properties")
-                         ("u" #'etv-urls-in-region "selected urls")))
+                         ("t" #'pen-etv-textprops "text properties")
+                         ("u" #'pen-etv-urls-in-region "selected urls")))
 
 (define-key global-map (kbd "M-' z") nil)
 (define-key pen-map (kbd "M-' z") nil)
