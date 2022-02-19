@@ -4,6 +4,9 @@
 ;; (require 'pen-utils)
 (require 'helm-net)
 
+;; https://github.com/emacs-helm/helm/issues/550
+(setq helm-exit-idle-delay 0)
+
 (defun fz-default-return-query (list &optional prompt)
   (setq prompt (or prompt ":"))
   (helm-comp-read prompt list :must-match 'nil))
@@ -498,5 +501,9 @@ Call `helm' only with SOURCES and BUFFER as args."
 (define-key helm-buffer-map (kbd "C-M-@") 'helm-toggle-visible-mark)
 (define-key helm-buffer-map (kbd "M-SPC") 'helm-toggle-visible-mark)
 (define-key helm-buffer-map (kbd "M-u") 'helm-unmark-all)
+
+;;use the bs-show buffer menu instead of list-buffers
+;;(global-set-key [?\C-x ?\C-b] 'bs-show)
+(global-set-key [?\C-x ?\C-b] 'helm-buffers-list)
 
 (provide 'pen-helm)
