@@ -1,4 +1,4 @@
-;; (define-key pen-map (kbd "M-l E .") (df edit-pen-editing (find-file "/home/shane/var/smulliga/source/git/config/emacs/config/pen-editing.el")))
+(define-key pen-map (kbd "M-l E .") (df edit-pen-editing (find-file "/root/.emacs.d/pen.el/pen-editing.el")))
 (define-key pen-map (kbd "M-l E d") (df deselect-i (deactivate-mark)))
 (define-key pen-map (kbd "M-l E r") (df reselect-i (reselect-last-region)))
 
