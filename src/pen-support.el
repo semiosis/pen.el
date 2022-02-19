@@ -1813,4 +1813,17 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (new-buffer-from-string (urls-in-region-or-buffer s)
                           nil 'org-mode))
 
+(defun pen-yank-dir ()
+  (interactive)
+  ;; (xc-m default-directory)
+  (cond
+   ((derived-mode-p 'proced-mode) (call-interactively 'proced-get-pwd))
+   (t (kill-new (chomp (pen-ns default-directory))))))
+
+(defun pen-yank-file ()
+  (interactive)
+  (xc (pen-ns (chomp (s/bn (get-path))))))
+
+(defalias 'pen-yank-bn 'pen-yank-file)
+
 (provide 'pen-support)
