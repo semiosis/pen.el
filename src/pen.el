@@ -127,6 +127,7 @@
 
 ;; (require 'pen-search)
 ;; (require 'pen-doc)
+;; (require 'pen-grep)
 
 
 (require 'pen-network)
