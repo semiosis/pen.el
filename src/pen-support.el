@@ -1853,4 +1853,25 @@ This function accepts any number of ARGUMENTS, but ignores them."
         (setq path (concat path "#L" (str (org-current-line)))))
     (kill-new path)))
 
+(defun pen-evil-star-maybe ()
+  "Perform an evil star if text is selected."
+  (interactive)
+
+  (if mark-active
+      (progn
+        (pcre-mode -1)
+        (evil-search-word-forward)
+        (execute-kbd-macro (kbd "p")))
+    (let ((pen nil))
+      (execute-kbd-macro (kbd "*")))))
+
+(defun pen-evil-star ()
+  "Perform an evil star if text is selected."
+  (interactive)
+
+  (progn
+    (pcre-mode -1)
+    (evil-search-word-forward)
+    (execute-kbd-macro (kbd "p"))))
+
 (provide 'pen-support)
