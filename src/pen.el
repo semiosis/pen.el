@@ -116,14 +116,13 @@
 (require 'pen-selected)
 (require 'pen-cua)
 (require 'pen-text-coding-system)
-(require 'pen-hydra)
-(require 'pen-prog)
-
 (if (pen-snq "inside-docker-p")
     (progn
       (require 'pen-lisp)
       (require 'pen-lispy)
-      (require 'pen-auto-mode-load)))
+      (require 'pen-auto-mode-load)
+      (require 'pen-hydra)
+      (require 'pen-prog)))
 
 ;; (require 'pen-search)
 ;; (require 'pen-doc)
