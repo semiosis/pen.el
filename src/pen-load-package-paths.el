@@ -80,11 +80,15 @@
           "DEFAULT")
       "")))
 
-(if (string-match "^pen-emacsd-" (pen-daemon-name))
-    (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "~/.emacs.d/elpa-light/")))))
-  (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "~/.emacs.d/elpa-full/"))))))
+(defun pen-set-package-paths ()
+  (interactive)
+  (if (string-match "^pen-emacsd-" (pen-daemon-name))
+      (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "$HOME/.emacs.d/elpa-light/")))))
+    (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "$HOME/.emacs.d/elpa-full/"))))))
 
-(if (f-directory-p (f-full "~/.emacs.d/manual-packages/"))
-    (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "~/.emacs.d/manual-packages/"))))))
+  (if (f-directory-p (f-full "$HOME/.emacs.d/manual-packages/"))
+      (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "$HOME/.emacs.d/manual-packages/")))))))
+
+(pen-set-package-paths)
 
 (provide 'pen-load-package-paths)
