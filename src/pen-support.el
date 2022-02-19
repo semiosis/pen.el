@@ -1838,7 +1838,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
 (defun yank-git-path ()
   (interactive)
   (let ((path
-         (chomp (pen-ns (bp pen-xa git-file-to-url -noask (get-path))))))
+         (chomp (pen-ns (pen-bp pen-xa git-file-to-url -noask (get-path))))))
 
     (if mark-active
         (setq path (concat path "#L" (str (org-current-line)))))
