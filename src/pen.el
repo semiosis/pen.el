@@ -117,6 +117,7 @@
 (require 'pen-cua)
 (require 'pen-text-coding-system)
 (require 'pen-hydra)
+(require 'pen-prog)
 
 (if (pen-snq "inside-docker-p")
     (progn
