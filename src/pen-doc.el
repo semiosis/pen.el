@@ -292,26 +292,6 @@
       (define-key compilation-button-map (kbd "RET") 'compile-goto-error)
       (visual-line-mode -1))))
 
-(defun pen-grep-for-thing-select ()
-  (interactive)
-  (let ((action
-         (qa
-          -g "mygit"
-          -s "similar"
-          -h "here"
-          -r "repo")))
-    (cond
-     ((string-equal "mygit" action)
-      (call-interactively 'eead-in-similar-projects))
-     ((string-equal "similar" action)
-      (call-interactively 'eead-in-similar-projects))
-     ((string-equal "here" action)
-      (call-interactively 'wgrep-thing-at-point))
-     ((string-equal "repo" action)
-      (wgrep-thing-at-point (pen-thing-at-point) (projectile-acquire-root)))
-     (t
-      (call-interactively 'wgrep-thing-at-point)))))
-
 (define-key global-map (kbd "M-3") #'pen-grep-for-thing-select)
 
 (defun pen-describe-symbol (symbol)
