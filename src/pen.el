@@ -117,6 +117,7 @@
 (require 'pen-cua)
 (require 'pen-text-coding-system)
 (require 'pen-editing)
+(require 'pen-hippie-expand)
 
 (if (pen-snq "inside-docker-p")
     (progn
