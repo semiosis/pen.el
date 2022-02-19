@@ -79,7 +79,7 @@ $0`(yas-escape-text yas-selected-text)`")
 
 (setq yas-wrap-around-region nil)
 
-(pen-bp grep / | xargs -l mkdir -p (list2lines yas-snippet-dirs))
+(pen-bp grep / | xargs -l mkdir -p (pen-list2str yas-snippet-dirs))
 
 (defun pen-yas-complete ()
   "This just makes yas-complete a whole lot more reliable."
