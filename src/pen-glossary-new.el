@@ -334,7 +334,7 @@
      (button-get o 'byteoffset)
      (button-get o 'term)))))
 
-(defset glossary-blacklist
+(defset pen-glossary-blacklist
   (s-split " " "The the and in or OR IN to TO"))
 
 (defun pen-glossary-list-tuples (&optional fp)
