@@ -2,8 +2,6 @@
 (define-key pen-map (kbd "M-l E d") (df deselect-i (deactivate-mark)))
 (define-key pen-map (kbd "M-l E r") (df reselect-i (reselect-last-region)))
 
-
-
 ;; Don't do this until I can be bothered sorting out all the quirks
 ;; (setq kill-whole-line t)
 (setq kill-whole-line nil)
