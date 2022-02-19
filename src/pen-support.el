@@ -1822,7 +1822,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defun pen-yank-file ()
   (interactive)
-  (xc (pen-ns (chomp (s/bn (get-path))))))
+  (xc (pen-ns (chomp (f-basename (get-path))))))
 
 (defalias 'pen-yank-bn 'pen-yank-file)
 
