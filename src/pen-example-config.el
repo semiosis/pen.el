@@ -719,10 +719,10 @@
 (define-key pen-map (kbd "M-S") 'pen-swipe)
 
 (define-key pen-map (kbd "M-y") nil)
-(define-key pen-map (kbd "M-y M-p") #'yank-path)
+(define-key pen-map (kbd "M-y M-p") #'pen-yank-path)
 (define-key pen-map (kbd "M-y M-d") #'yank-dir)
 (define-key pen-map (kbd "M-y M-f") #'yank-file)
-(define-key pen-map (kbd "M-y M-p") #'yank-path)
+(define-key pen-map (kbd "M-y M-p") #'pen-yank-path)
 (define-key pen-map (kbd "M-y M-g") #'yank-git-path)
 (define-key pen-map (kbd "M-y M-o") #'open-git-path-chrome)
 (define-key pen-map (kbd "M-y M-m") #'yank-git-path-master)
