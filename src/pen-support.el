@@ -1868,7 +1868,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
         (pcre-mode -1)
         (evil-search-word-forward)
         ;; (execute-kbd-macro (kbd "p"))
-        )
+        (deselect))
     (let ((pen nil))
       (execute-kbd-macro (kbd "*")))))
 
@@ -1879,6 +1879,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (progn
     (pcre-mode -1)
     (evil-search-word-forward)
+    (deselect)
+
     ;; (execute-kbd-macro (kbd "p"))
     ))
 
