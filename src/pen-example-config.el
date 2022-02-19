@@ -718,10 +718,8 @@
 (define-key pen-map (kbd "M-K") 'pen-swipe)
 (define-key pen-map (kbd "M-S") 'pen-swipe)
 
-;; Must unbind M-y for M-y M-d to work
 (define-key pen-map (kbd "M-y") nil)
 (define-key pen-map (kbd "M-y M-p") #'yank-path)
-;; (define-key pen-map (kbd "M-y M-d") #'yank-dir)
 (define-key pen-map (kbd "M-y M-d") #'yank-dir)
 (define-key pen-map (kbd "M-y M-f") #'yank-file)
 (define-key pen-map (kbd "M-y M-p") #'yank-path)
@@ -729,6 +727,5 @@
 (define-key pen-map (kbd "M-y M-o") #'open-git-path-chrome)
 (define-key pen-map (kbd "M-y M-m") #'yank-git-path-master)
 (define-key pen-map (kbd "M-y M-G") #'yank-git-path-sha)
-;; (define-key pen-map (kbd "M-y M-p") #'yank-bn)
 
 (provide 'pen-example-config)
