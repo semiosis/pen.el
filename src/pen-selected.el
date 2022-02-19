@@ -165,6 +165,6 @@
       (selected-region-active-mode 1)))
 
 (define-key selected-keymap (kbd "*") 'pen-evil-star-maybe)
-(define-key selected-keymap (kbd "M-3") #'pen-grep-for-thing-select)
+;; (define-key selected-keymap (kbd "M-3") #'pen-grep-for-thing-select)
 
 (provide 'pen-selected)
