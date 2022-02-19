@@ -1835,10 +1835,19 @@ This function accepts any number of ARGUMENTS, but ignores them."
         (kill-buffer))
     (xc (pen-ns (get-path)))))
 
-(defun yank-git-path ()
+(defun pen-yank-git-path ()
   (interactive)
   (let ((path
          (chomp (pen-ns (pen-bp pen-xa git-file-to-url -noask (get-path))))))
+
+    (if mark-active
+        (setq path (concat path "#L" (str (org-current-line)))))
+    (kill-new path)))
+
+(defun pen-yank-git-path-sha ()
+  (interactive)
+  (let ((path
+         (chomp (pen-ns (pen-bp pen-xa git-file-to-url -s -noask (get-path))))))
 
     (if mark-active
         (setq path (concat path "#L" (str (org-current-line)))))
