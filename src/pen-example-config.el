@@ -730,8 +730,8 @@
 
 (require 'counsel)
 
-;; This is too slow
-(global-set-key (kbd "M-x") 'helm-M-x)
+;; ;; This is too slow
+;; (global-set-key (kbd "M-x") 'helm-M-x)
 
 (defun pen-counsel-M-x ()
   (interactive)
