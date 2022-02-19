@@ -1826,7 +1826,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defalias 'pen-yank-bn 'pen-yank-file)
 
-(defun yank-path ()
+(defun pen-yank-path ()
   (interactive)
   (if mark-active
       (with-current-buffer (new-buffer-from-string (pen-selected-text))
