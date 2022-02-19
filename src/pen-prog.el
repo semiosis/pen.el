@@ -177,9 +177,9 @@
 (define-key prog-mode-map (kbd "C-x C-o") 'ff-find-other-file)
 
 (define-key prog-mode-map (kbd "H-{") 'handle-callees)
-((define-key prog-mode-map (kbd "H-}") 'handle-callers)
+(define-key prog-mode-map (kbd "H-}") 'handle-callers)
 
- define-key prog-mode-map (kbd "H-u") nil)
+(define-key prog-mode-map (kbd "H-u") nil)
 
 (define-key prog-mode-map (kbd "H-*") 'handle-refactor)
 
