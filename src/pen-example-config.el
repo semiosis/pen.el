@@ -713,4 +713,9 @@
 
 (define-key pen-map (kbd "M-l M-e") 'pen-revert)
 
+(define-key pen-map (kbd "M-\"") 'pen-helm-fzf)
+(define-key pen-map (kbd "M-L") 'helm-buffers-list)
+(define-key pen-map (kbd "M-K") 'pen-swipe)
+(define-key pen-map (kbd "M-S") 'pen-swipe)
+
 (provide 'pen-example-config)
