@@ -24,6 +24,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+# If already in emacs term, then start without it
+if test -n "$INSIDE_EMACS"; then
+    "$@"
+    exit "$?"
+fi
+
 : ${modename:="$1"}
 script="$(pen-nsfa "$@")"
 : "${bufname:="$(p term "$@" | slugify | cut -c 1-30)"}"
