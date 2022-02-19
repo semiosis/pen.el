@@ -728,4 +728,18 @@
 (define-key pen-map (kbd "M-y M-m") #'pen-yank-git-path-master)
 (define-key pen-map (kbd "M-y M-G") #'pen-yank-git-path-sha)
 
+(require 'counsel)
+
+;; This is too slow
+(global-set-key (kbd "M-x") 'helm-M-x)
+
+(defun pen-counsel-M-x ()
+  (interactive)
+  (counsel-M-x ""))
+
+(global-set-key (kbd "M-x") 'pen-counsel-M-x)
+(global-set-key (kbd "M-/") 'hippie-expand)
+(require 'expand-region)
+(global-set-key (kbd "M-r") 'er/expand-region)
+
 (provide 'pen-example-config)
