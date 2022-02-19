@@ -1826,4 +1826,22 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defalias 'pen-yank-bn 'pen-yank-file)
 
+(defun yank-path ()
+  (interactive)
+  (if mark-active
+      (with-current-buffer (new-buffer-from-string (pen-selected-text))
+        (guess-major-mode)
+        (xc (pen-ns (get-path nil nil t)))
+        (kill-buffer))
+    (xc (pen-ns (get-path)))))
+
+(defun yank-git-path ()
+  (interactive)
+  (let ((path
+         (chomp (pen-ns (bp pen-xa git-file-to-url -noask (get-path))))))
+
+    (if mark-active
+        (setq path (concat path "#L" (str (org-current-line)))))
+    (kill-new path)))
+
 (provide 'pen-support)
