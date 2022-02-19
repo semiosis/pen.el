@@ -118,6 +118,8 @@
 (require 'pen-text-coding-system)
 (require 'pen-editing)
 (require 'pen-hippie-expand)
+(require 'pen-compatibility)
+(require 'pen-counsel)
 
 (if (pen-snq "inside-docker-p")
     (progn
