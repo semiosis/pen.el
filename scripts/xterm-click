@@ -66,7 +66,9 @@ if test "$EXTENDED_MODE" = "y"; then
     y="$(( y + 1))"
 
     if test "$RIGHT" = "y"; then
-        mousedown_code=""
+        # mousedown_code=""
+        # This is needed for pen inside host tmux
+        mousedown_code="$(echo -n -e "\e[<$rightnum"; printf -- "%s" ";$x;${y}M")"
         mouseup_code="$(echo -n -e "\e[<$rightnum"; printf -- "%s" ";$x;${y}m")"
     else
         mousedown_code="$(echo -n -e "\e[<$leftnum"; printf -- "%s" ";$x;${y}M")"
