@@ -276,9 +276,11 @@ for normal snippets, and a list for command snippets)."
 
 (defun pen-select-from-existing-prompt-keys ()
   (interactive)
-  (concat (fz (pen-sn
-               "ci pen-list-all-prompt-keys | sed 's/^\\.//'"
-               nil pen-prompts-directory)) ": "))
+  (concat
+   (pen-sn "sed 's/[^a-z\"-].*//' | uq"
+           (fz (pen-sn
+                "ci pen-list-all-prompt-keys | sed 's/^\\.//'"
+                nil pen-prompts-directory))) ": "))
 
 (defun get-interpreter-for-file (fp)
   (chomp (pen-bp xargs get-interpreter-for-file fp)))
