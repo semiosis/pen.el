@@ -144,6 +144,7 @@ Be mindful of quoting arguments correctly."
     (progn
       (require 'pen-lisp)
       (require 'pen-lispy)
+      (require 'pen-paredit)
       (require 'pen-auto-mode-load)
       (require 'pen-hydra)
       (require 'pen-prog)
