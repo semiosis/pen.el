@@ -44,6 +44,37 @@
       (setq cmd "pen-tm filter"))
   (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))))
 
+(defun pen-fwfzf ()
+  "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only."
+  (interactive)
+  (if (region-active-p)
+      (if (>= (prefix-numeric-value current-prefix-arg) 4)
+          (region-pipe "pen-tm filter")
+        (region-pipe (chomp (esed " #.*" ""
+                                  (fz
+                                   (cat "/root/filters/filters.sh")
+                                   nil nil "pen-fwfzf: ")))))
+    (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf") " &") (buffer-string)))))
+
+(defun pen-nwp (&optional cmd input nw_args)
+  "Runs command in a new window with input"
+  (interactive)
+  (if (not cmd)
+      (setq cmd "zsh"))
+  (pen-sn (concat "pen-tm -tout -S nw " nw_args " " (pen-q cmd) " &") input (get-dir)))
+
+(defun rt-from-region ()
+  "Start an pen-rtcmd with the current region as input"
+  (interactive)
+  (if mark-active
+      (pen-nwp "pen-rtcmd awk '{$2 = gensub("$", " |", "g", $2); print $0}'" (pen-selected-text))))
+
+(defun fzf-on-buffer ()
+  (interactive)
+  (shell-command-on-region
+   (point-min) (point-max)
+   (concat "pen-tm -S -tout nw 'fzf --sync | pen-tm -S -soak -tout nw v'")))
+
 ;; cat "$PENELD/config/filters.sh"
 (require 'f)
 (defun pen-filter-shellscript (script)
