@@ -49,10 +49,12 @@
   (interactive)
   (if (region-active-p)
       (if (>= (prefix-numeric-value current-prefix-arg) 4)
-          (region-pipe "pen-tm filter")
-        (region-pipe (chomp (esed " #.*" ""
+          (pen-region-pipe "pen-tm filter")
+        (pen-region-pipe (chomp (esed " #.*" ""
                                   (fz
-                                   (cat "/root/filters/filters.sh")
+                                   (cat
+                                    (f-join pen-penel-directory
+                                            "config/filters.sh"))
                                    nil nil "pen-fwfzf: ")))))
     (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf") " &") (buffer-string)))))
 
