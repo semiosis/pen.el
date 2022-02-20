@@ -698,6 +698,9 @@
     (bindings--define-key menu [mi-menu-bar-personalities-menu]
       `(menu-item "Personalities" ,menu-bar-personalities-menu
                   :help "Personalities menu"))
+    (bindings--define-key menu [mi-menu-bar-tomes-menu]
+      `(menu-item "Tomes" ,menu-bar-tomes-menu
+                  :help "Tomes menu"))
     (bindings--define-key menu [mi-menu-bar-engines-menu]
       `(menu-item "Engines" ,menu-bar-engines-menu
                   :help "Engines menu"))
