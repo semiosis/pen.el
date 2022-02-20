@@ -853,4 +853,6 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
                ("n" ,ifno))
              (,hydrabodysym))))))
 
+(advice-add 'fit-window-to-buffer :around #'ignore-errors-around-advice)
+
 (provide 'pen-hydra)
