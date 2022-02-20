@@ -1978,6 +1978,7 @@ May use to generate code from comments."
 (require 'pen-mouse)
 (require 'pen-prompt-description)
 (require 'pen-personalities)
+(require 'pen-tomes)
 (require 'pen-metaverses)
 (require 'pen-ii-description)
 (require 'pen-engine-description)
