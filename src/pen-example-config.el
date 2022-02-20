@@ -743,8 +743,8 @@
 (require 'expand-region)
 (global-set-key (kbd "M-r") 'er/expand-region)
 
-(define-key my-mode-map (kbd "M-m f r") 'helm-mini) ; recent
-(define-key my-mode-map (kbd "M-m f R") 'sps-ranger)
+(define-key pen-map (kbd "M-m f r") 'helm-mini) ; recent
+(define-key pen-map (kbd "M-m f R") 'sps-ranger)
 
 ;; (define-key pen-map (kbd "M-\"") nil)
 (define-key pen-map (kbd "M-m f z") 'pen-helm-fzf)
