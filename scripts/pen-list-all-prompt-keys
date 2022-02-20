@@ -1,7 +1,11 @@
 #!/bin/bash
 export TTY
 
+{
 if test -d "$PROMPTS"; then
     cd "$PROMPTS"
-    find . -name '*.prompt' | while read line; do cat "$line" | yq . | jq-showschema-keys; done | uniqnosort
-fi | pen-pavs
+    find . -name '*.prompt' | while read line; do 
+        cat "$line" | ( yq . || : ) | ( jq-showschema-keys || : ) 2>/dev/null
+    done | uniqnosort
+fi
+} | pen-pavs
