@@ -274,8 +274,14 @@ for normal snippets, and a list for command snippets)."
 (define-key yas-minor-mode-map (kbd "C-c") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 
+(defun pen-select-from-existing-prompt-keys ()
+  (interactive)
+  (fz (concat (pen-sn
+               "ci pen-list-all-prompt-keys"
+               nil pen-prompts-directory) ": ")))
+
 (defun get-interpreter-for-file (fp)
-  (chomp (bp xargs get-interpreter-for-file fp)))
+  (chomp (pen-bp xargs get-interpreter-for-file fp)))
 
 (defun get-interpreter-for-buffer ()
   (let ((tf (or (if (and (not (eq major-mode 'org-mode))
@@ -285,7 +291,7 @@ for normal snippets, and a list for command snippets)."
                     "x\.sh")
                 (get-path))))
 
-    (concat "#!" (chomp (bp xargs get-shebang-for-file tf)))))
+    (concat "#!" (chomp (pen-bp xargs get-shebang-for-file tf)))))
 
 (defun yas--snippet-parse-create (snippet)
   "Parse a recently inserted snippet template, creating all
