@@ -1504,6 +1504,9 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/personalities" && : "${PEN_PERSONALITIES_DIR:="$MYGIT/semiosis/personalities"}"
     test -d "personalities" && : "${PEN_PERSONALITIES_DIR:="`pwd`/personalities"}"
 
+    test -n "$MYGIT" && test -d "$MYGIT/semiosis/tomes" && : "${PEN_TOMES_DIR:="$MYGIT/semiosis/tomes"}"
+    test -d "tomes" && : "${PEN_TOMES_DIR:="`pwd`/tomes"}"
+
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/metaverses" && : "${PEN_METAVERSES_DIR:="$MYGIT/semiosis/metaverses"}"
     test -d "metaverses" && : "${PEN_METAVERSES_DIR:="`pwd`/metaverses"}"
 
@@ -1598,6 +1601,21 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -d "personalities" && : "${PEN_PERSONALITIES_DIR:="personalities"}"
 
     if ! test "$batch" = "y"; then
+        if test -d "$PEN_TOMES_DIR"; then
+            yn "Pull tomes repo? (recommended)" && (
+                cd "$PEN_TOMES_DIR"
+                git pull origin master
+            )
+        else
+            yn "Clone tomes repo here?" && (
+                git clone "http://github.com/semiosis/tomes"
+            )
+        fi
+    fi
+
+    test -d "tomes" && : "${PEN_TOMES_DIR:="tomes"}"
+
+    if ! test "$batch" = "y"; then
         if test -d "$METAVERSES_DIR"; then
             yn "Pull metaverses repo? (recommended)" && (
                 cd "$METAVERSES_DIR"
@@ -1657,6 +1675,10 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
 
     if test -d "$PEN_PERSONALITIES_DIR"; then
         PEN_PERSONALITIES_DIR="$(realpath "$PEN_PERSONALITIES_DIR")"
+    fi
+
+    if test -d "$PEN_TOMES_DIR"; then
+        PEN_TOMES_DIR="$(realpath "$PEN_TOMES_DIR")"
     fi
 
     if test -d "$PEN_METAVERSES_DIR"; then
@@ -1730,6 +1752,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$PEN_ENGINES_DIR" && printf -- "%s " -v "$PEN_ENGINES_DIR:/root/.emacs.d/host/engines" ) \
         $(test -n "$PEN_METAVERSES_DIR" && printf -- "%s " -v "$PEN_METAVERSES_DIR:/root/.emacs.d/host/metaverses" ) \
         $(test -n "$PEN_PERSONALITIES_DIR" && printf -- "%s " -v "$PEN_PERSONALITIES_DIR:/root/.emacs.d/host/personalities" ) \
+        $(test -n "$PEN_TOMES_DIR" && printf -- "%s " -v "$PEN_TOMES_DIR:/root/.emacs.d/host/tomes" ) \
         $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
         $(test -n "$CONTRIB_DIR" && printf -- "%s " -v "$CONTRIB_DIR:/root/.emacs.d/host/pen-contrib.el" ) \
         $(test -n "$PENSIEVE_DIR" && printf -- "%s " -v "$PENSIEVE_DIR:/root/.emacs.d/host/pensieve" ) \
