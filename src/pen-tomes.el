@@ -8,7 +8,7 @@
 
 (defvar pen-tomes-failed '())
 
-;; (pen-tome-file-load "/home/shane/source/git/semiosis/tomes/tomes/libertyprime.tome")
+;; (pen-tome-file-load "$HOME/source/git/semiosis/tomes/tomes/which-owl.tome")
 (defun pen-tome-file-load (fp)
   (let* ((yaml-ht (yamlmod-read-file fp))
          (incl-name (sor (ht-get yaml-ht "include")))
