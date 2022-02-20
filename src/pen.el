@@ -110,7 +110,6 @@
 (require 'pen-net)
 (require 'pen-server-suggest)
 (require 'pen-vim)
-(require 'pen-paste)
 (require 'pen-nlsh)
 (require 'pen-continuum)
 (require 'pen-ranger)
@@ -147,7 +146,8 @@ Be mindful of quoting arguments correctly."
       (require 'pen-lispy)
       (require 'pen-auto-mode-load)
       (require 'pen-hydra)
-      (require 'pen-prog)))
+      (require 'pen-prog)
+      (require 'pen-paste)))
 
 ;; (require 'pen-search)
 ;; (require 'pen-grep)
