@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+if test -d "$PROMPTS"; then
+    cd "$PROMPTS"
+    find . -name '*.prompt' | while read line; do cat "$line" | yq . | jq-showschema-keys; done | uniqnosort
+fi | pen-pavs
