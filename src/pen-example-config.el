@@ -123,6 +123,21 @@
       (setq pen-prompts-directory hostpromptsdir)
     (setq pen-prompts-directory (f-join user-emacs-directory "prompts"))))
 
+(let ((hostpersonalitiesdir (f-join user-emacs-directory "host" "personalities")))
+  (if (f-directory-p (f-join hostpersonalitiesdir "personalities"))
+      (setq pen-personalities-directory hostpersonalitiesdir)
+    (setq pen-personalities-directory (f-join user-emacs-directory "personalities"))))
+
+(let ((hostmetaversesdir (f-join user-emacs-directory "host" "metaverses")))
+  (if (f-directory-p (f-join hostmetaversesdir "metaverses"))
+      (setq pen-metaverses-directory hostmetaversesdir)
+    (setq pen-metaverses-directory (f-join user-emacs-directory "metaverses"))))
+
+(let ((hosttomesdir (f-join user-emacs-directory "host" "tomes")))
+  (if (f-directory-p (f-join hosttomesdir "tomes"))
+      (setq pen-tomes-directory hosttomesdir)
+    (setq pen-tomes-directory (f-join user-emacs-directory "tomes"))))
+
 (let ((hostcontribdir (f-join user-emacs-directory "host" "pen-contrib.el")))
   (if (f-directory-p (f-join hostcontribdir "pen-contrib.el"))
       (setq pen-contrib-directory hostcontribdir)
