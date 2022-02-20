@@ -1885,4 +1885,26 @@ This function accepts any number of ARGUMENTS, but ignores them."
     ;; (execute-kbd-macro (kbd "p"))
     ))
 
+(defun if-shebang-exec-otherwise-remove ()
+  "Adds x perm to current file acl if file has a shebang."
+  (interactive)
+  (ignore-errors
+    (try (if (string-equal (buffer-substring (point-min) (2+ (point-min))) "#!")
+             (progn
+               (if (not (blq pen-ux isx (s/rp (buffer-name))))
+                   (progn
+                     (pen-ns "file is a shebang but not executable. making file executable.")
+                     (bl chmod a+x (buffer-file-name)))))
+           (progn
+             (if (blq pen-ux isx (s/rp (buffer-name)))
+                 (progn
+                   (pen-ns "file is not shebang and is executable. removing executable.")
+                   (bl chmod a-x (buffer-file-name)))))))))
+
+(defun pen-save ()
+  (interactive)
+  (save-buffer)
+  (shut-up (if-shebang-exec-otherwise-remove))
+  (message "%s" "File saved"))
+
 (provide 'pen-support)
