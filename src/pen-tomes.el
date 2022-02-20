@@ -43,10 +43,10 @@
 
                 (pen-try
                  (let* ((yaml-ht (pen-tome-file-load path))
-                        (full-name (ht-get yaml-ht "full-name")))
+                        (title (ht-get yaml-ht "title")))
                    (ht-set yaml-ht "tome-path" path)
-                   (message (concat "pen-mode: Loaded tome " full-name))
-                   (ht-set pen-tomes full-name yaml-ht))
+                   (message (concat "pen-mode: Loaded tome " title))
+                   (ht-set pen-tomes title yaml-ht))
                  (add-to-list 'pen-tomes-failed path)))
        (if pen-tomes-failed
            (progn
