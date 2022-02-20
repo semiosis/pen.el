@@ -664,6 +664,19 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-tomes-menu
+  (let ((menu (make-sparse-keymap "Tomes")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-tomes]
+      '(menu-item "Go to tomes directory" pen-acolyte-dired-tomes
+                  :help "Go to tomes source directory"))
+    (bindings--define-key menu [mi-pen-load-tomes]
+      '(menu-item "Reload tomes" pen-load-tomes
+                  :help "Reload tomes from YAML"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-metaverses-menu
   (let ((menu (make-sparse-keymap "Metaverses")))
     (bindings--define-key menu [mi-pen-acolyte-dired-metaverses]
