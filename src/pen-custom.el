@@ -197,6 +197,12 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-tomes-directory (f-join user-emacs-directory "tomes")
+  "Personal tomes respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-metaverses-directory (f-join user-emacs-directory "metaverses")
   "Personal metaverse respository"
   :type 'string
