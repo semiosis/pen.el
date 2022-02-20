@@ -10,6 +10,10 @@
   (interactive)
   (dired pen-personalities-directory))
 
+(defun pen-acolyte-dired-tomes ()
+  (interactive)
+  (dired pen-tomes-directory))
+
 (defun pen-acolyte-dired-metaverses ()
   (interactive)
   (dired pen-metaverses-directory))
