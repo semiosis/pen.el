@@ -635,7 +635,8 @@
 ;; (translate "def my_function(alpha, papa):" "python to elisp")
 
 ;; For VSCode terminal
-(define-key pen-map (kbd "M-m") 'right-click-context-menu)
+;; (define-key pen-map (kbd "M-m") 'right-click-context-menu)
+
 (define-key pen-map (kbd "C-M-e") (kbd "C-e"))
 (define-key selected-keymap (kbd "w") 'kill-ring-save)
 ;; (define-key org-mode-map (kbd "M-h") nil)
@@ -741,5 +742,13 @@
 (global-set-key (kbd "M-/") 'hippie-expand)
 (require 'expand-region)
 (global-set-key (kbd "M-r") 'er/expand-region)
+
+(define-key my-mode-map (kbd "M-m f r") 'helm-mini) ; recent
+(define-key my-mode-map (kbd "M-m f R") 'sps-ranger)
+
+;; (define-key pen-map (kbd "M-\"") nil)
+(define-key pen-map (kbd "M-m f z") 'pen-helm-fzf)
+(define-key pen-map (kbd "M-m f Z") 'pen-helm-fzf-top)
+(define-key pen-map (kbd "M-m f f") 'pen-helm-find-files)
 
 (provide 'pen-example-config)
