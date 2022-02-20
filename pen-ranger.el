@@ -10,7 +10,7 @@
 
 (defun pen-sps-ranger (dir)
   (interactive (list default-directory))
-  (shell-command (concat "pen-tm -f -d -te pen-sps -c " (pen-q dir) " ranger")))
+  (shell-command (concat "pen-tm -f -d -te sps -c " (pen-q dir) " ranger")))
 (defalias 'pen-sh/ranger 'pen-sps-ranger)
 
 (provide 'pen-ranger)
