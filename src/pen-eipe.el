@@ -226,12 +226,17 @@
 
 (defset pen-eipe-hook '())
 
+(defun pen-force-buffer-wrap ()
+
+  )
+
 ;; This needs to happen after the file is loaded
 (add-hook 'pen-eipe-hook 'pen-find-file-read-only-context)
 (add-hook 'pen-eipe-hook 'pen-find-file-buffer-info)
 (add-hook 'pen-eipe-hook 'pen-find-file-overlay-info)
 (add-hook 'pen-eipe-hook 'pen-find-file-preoverlay-info)
 (add-hook 'pen-eipe-hook 'pen-find-file-eipe-data)
+(add-hook 'pen-eipe-hook 'pen-force-buffer-wrap)
 
 (defun run-eipe-hooks ()
   (interactive)
