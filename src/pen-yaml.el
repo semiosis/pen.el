@@ -44,7 +44,7 @@
       (let ((key (fz (pen-sn "yq . | jq-showschema-keys" (buffer-string))
                      nil nil "Key: ")))
         (if (sor key)
-            (let ((s (pen-snc (pen-cmd "yq" "-r" key) (buffer-string))))
+            (let ((s (pen-snc (pen-cmd "yq" "-r" (concat key " // empty")) (buffer-string))))
               (with-current-buffer
                   (esps (pen-lm (nbfs s)))
                 (mark-whole-buffer)))))))
