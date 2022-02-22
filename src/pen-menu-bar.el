@@ -318,6 +318,9 @@
     (bindings--define-key menu [mi-pen-acolyte-dired-penel]
       '(menu-item "Go to Pen.el directory" pen-acolyte-dired-penel
                   :help "Go to Pen.el source code"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-dni]
+      '(menu-item "Go to dni" pen-acolyte-dired-dni
+                  :help "Go to dni source directory"))
     (bindings--define-key menu [mi-pen-acolyte-dired-prompts]
       '(menu-item "Go to prompts" pen-acolyte-dired-prompts
                   :help "Go to prompts source directory"))
