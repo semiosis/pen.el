@@ -233,4 +233,7 @@
           (message (pen-list2str pen-personalities-failed))
           (message (concat (str (length pen-personalities-failed)) " failed")))))))
 
+(defun pen-list-personalities ()
+  (ht-keys pen-personalities))
+
 (provide 'pen-personalities)

@@ -458,6 +458,9 @@
     (bindings--define-key menu [mi-apostrophe-start-chatbot-from-selection]
       '(menu-item "Start chatbot from selection" apostrophe-start-chatbot-from-selection
                   :help "Suggest some subject-matter-experts for the selected text, and speak to them"))
+    (bindings--define-key menu [mi-apostrophe-start-chatbot-from-personality]
+      '(menu-item "Start chatbot from personality" apostrophe-start-chatbot-from-personality
+                  :help "Run a generated personality as a chatbot"))
 
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
