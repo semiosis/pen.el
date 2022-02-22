@@ -6,12 +6,12 @@
 ;; TODO Make this into dni-let macro
 (defmacro dni-let (yaml &rest body)
   ;; yaml can be a string to a yaml path or a yaml-ht
-  (let* ((yaml-ht (if (strinp yaml)
+  (let* ((yaml-ht (if (stringp yaml)
                       (yamlmod-read-file yaml)
                     yaml))
 
          ;; load yaml-defs
-         (defs-htlist (pen--htlist-to-alist yaml-ht))
+         (defs-htlist (ht-to-alist yaml-ht))
          (def-values)
 
          (yaml-defs
@@ -92,7 +92,7 @@
 
 (defun pen-test-dni-let ()
   (interactive)
-  ;; (dni-let )
-  )
+  (dni-let "/home/shane/source/git/semiosis/dni/parchment/trafficked-girl.dni"
+           (pen-etv description)))
 
 (provide 'pen-dni)
