@@ -6,6 +6,9 @@
 (defvar pen-personalities (make-hash-table :test 'equal)
   "Personalities are supported personality prompts")
 
+(defvar pen-incarnations (make-hash-table :test 'equal)
+  "Incarnations are chatbots generated from personality prompts")
+
 (defvar pen-personalities-failed '())
 
 ;; (pen-personality-file-load "/home/shane/source/git/semiosis/personalities/personalities/libertyprime.person")
@@ -58,7 +61,7 @@
 ;; But I can always update them on a one-off basis.
 ;; This is the way it indeed should work.
 
-(defun pen-spawn-personality ()
+(defun pen-spawn-incarnation ()
   (interactive (list
                 (fz (pen-list-personalities)
                     nil nil "Personality: "))))
