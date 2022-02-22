@@ -130,10 +130,8 @@
                                         ;; Remove the angle brackets
                                         ;; These keys will be used in the template expansion
                                         (lambda (s)
-                                          (s-replace-regexp
-                                           "<" ""
-                                           (s-replace-regexp
-                                            ">" "" s)))
+                                          ;; This is ugly but $ didnt seem to work
+                                          (s-replace-regexp "<" "" (s-replace-regexp ">" "" (chomp s))))
                                         (append
                                          (-filter-not-empty-string
                                           (mapcar
