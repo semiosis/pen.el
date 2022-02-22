@@ -6,6 +6,10 @@
   (interactive)
   (dired pen-engines-directory))
 
+(defun pen-acolyte-dired-dni ()
+  (interactive)
+  (dired pen-dni-directory))
+
 (defun pen-acolyte-dired-personalities ()
   (interactive)
   (dired pen-personalities-directory))

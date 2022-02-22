@@ -191,8 +191,14 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-dni-directory (f-join user-emacs-directory "dni")
+  "Personal dni respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-personalities-directory (f-join user-emacs-directory "personalities")
-  "Personal personalitie respository"
+  "Personal personalities respository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
