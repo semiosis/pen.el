@@ -12,7 +12,7 @@
 
          ;; load yaml-defs
          (defs-htlist (ht-to-alist yaml-ht))
-         (def-values)
+         (dni-values)
 
          (yaml-defs
           (let* ((vars-al defs-htlist)
@@ -25,19 +25,19 @@
                           collect
                           (cdr atp))))
 
-            (setq def-values values)
+            (setq dni-values values)
             keys))
 
-         (def-slugs (mapcar 'slugify yaml-defs))
+         (dni-slugs (mapcar 'slugify yaml-defs))
 
          ;; use the slugs of the keys, so i can use them in further replacements
-         (def-keyvals (-zip def-slugs def-values))
+         (dni-keyvals (-zip dni-slugs dni-values))
 
-         (def-replacement-keyvals)
+         (dni-replacement-keyvals)
 
-         (def-keyvals
+         (dni-keyvals
            (cl-loop
-            for atp in def-keyvals
+            for atp in dni-keyvals
             collect
             (let ((defkey (car atp))
                   (val (str (cdr atp))))
@@ -67,7 +67,7 @@
                         (lambda (s)
                           (eval
                            `(pen-let-keyvals
-                             ',def-replacement-keyvals
+                             ',dni-replacement-keyvals
                              (eval-string (s-replace-regexp "<\\([^>]*\\)>" "\\1" s)))))
                         eval-template-keys))
 
@@ -76,17 +76,17 @@
                       (updated-val
                        (pen-expand-template-keyvals val eval-template-keyvals))
                       (update
-                       (setq def-replacement-keyvals
+                       (setq dni-replacement-keyvals
                              (asoc-merge
                               `((,defkey . ,updated-val))
-                              def-replacement-keyvals))))
+                              dni-replacement-keyvals))))
                  ;; for each discovered eval template, i must create a key and value
                  ;; the key is <(...)> inclusive, and the val is (eval-string "(...)")
                  ;; update the vals here
                  updated-val))))))
 
     `(pen-let-keyvals
-      ,def-keyvals
+      ,dni-keyvals
       ,@body)))
 
 (defun pen-test-dni-let ()
