@@ -4,9 +4,13 @@
 (add-to-list 'auto-mode-alist '("\\.verse\\'" . metaverse-description-mode))
 
 (defvar pen-metaverses (make-hash-table :test 'equal)
-  "Metaverses are supported metaverse prompts")
+  "Metaverses are actualised; They have been prompted into existence")
+
+(defvar pen-protoverses (make-hash-table :test 'equal)
+  "Protoverses are the seeds of metaverses")
 
 (defvar pen-metaverses-failed '())
+(defvar pen-protoverses-failed '())
 
 ;; (pen-metaverse-file-load "/home/shane/source/git/semiosis/metaverses/metaverses/mad-teaparty.verse")
 (defun pen-metaverse-file-load (fp)
