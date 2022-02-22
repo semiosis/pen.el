@@ -57,6 +57,16 @@
 ;; Yes this may prompt to define all the personalities initially.
 ;; But I can always update them on a one-off basis.
 ;; This is the way it indeed should work.
+
+(defun pen-spawn-personality ()
+  (interactive (list
+                (fz (pen-list-personalities)
+                    nil nil "Personality: "))))
+
+;; TODO Load the personalities descriptors
+;; TODO Then spawn new personalities from those descriptors
+;; TODO In apostrophe, start chatbots from previously generated personalities
+
 (defun pen-load-personalities (&optional paths)
   (interactive)
 
