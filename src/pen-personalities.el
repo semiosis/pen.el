@@ -165,62 +165,61 @@
          (def-replacement-keyvals)
 
          (def-keyvals
-           (let ((personality-keyvals))
-             (cl-loop
-              for atp in def-keyvals
-              collect
-              (let ((defkey (car atp))
-                    (val (str (cdr atp))))
-                (cons
-                 defkey
-                 ;; First, update the templateeval keyvals
-                 ;; Second, update the actual vals
-                 (let* (
-                        ;; for each .personality key, create a set of template keys by scaping the string
-                        (eval-template-keys
-                         (mapcar
-                          ;; Remove the angle brackets
-                          ;; These keys will be used in the template expansion
-                          (lambda (s)
-                            ;; This is ugly but $ didnt seem to work
-                            (s-replace-regexp "<" "" (s-replace-regexp ">" "" (chomp s))))
-                          (append
-                           (-filter-not-empty-string
-                            (mapcar
-                             (lambda (e) (scrape "<\\(.*\\)>" e))
-                             (mapcar
-                              (lambda (s) (concat s ")>"))
-                              (s-split ")>" val))))
-                           (-filter-not-empty-string
-                            (mapcar
-                             (lambda (e) (scrape "<[a-z-]+>" e))
-                             (mapcar
-                              (lambda (s) (concat s ">"))
-                              (s-split ">" val)))))))
+           (cl-loop
+            for atp in def-keyvals
+            collect
+            (let ((defkey (car atp))
+                  (val (str (cdr atp))))
+              (cons
+               defkey
+               ;; First, update the templateeval keyvals
+               ;; Second, update the actual vals
+               (let* (
+                      ;; for each .personality key, create a set of template keys by scaping the string
+                      (eval-template-keys
+                       (mapcar
+                        ;; Remove the angle brackets
+                        ;; These keys will be used in the template expansion
+                        (lambda (s)
+                          ;; This is ugly but $ didnt seem to work
+                          (s-replace-regexp "<" "" (s-replace-regexp ">" "" (chomp s))))
+                        (append
+                         (-filter-not-empty-string
+                          (mapcar
+                           (lambda (e) (scrape "<\\(.*\\)>" e))
+                           (mapcar
+                            (lambda (s) (concat s ")>"))
+                            (s-split ")>" val))))
+                         (-filter-not-empty-string
+                          (mapcar
+                           (lambda (e) (scrape "<[a-z-]+>" e))
+                           (mapcar
+                            (lambda (s) (concat s ">"))
+                            (s-split ">" val)))))))
 
-                        ;; test this
-                        (eval-template-vals
-                         (mapcar
-                          (lambda (s)
-                            (eval
-                             `(pen-let-keyvals
-                               ',def-replacement-keyvals
-                               (eval-string (s-replace-regexp "<\\([^>]*\\)>" "\\1" s)))))
-                          eval-template-keys))
+                      ;; test this
+                      (eval-template-vals
+                       (mapcar
+                        (lambda (s)
+                          (eval
+                           `(pen-let-keyvals
+                             ',def-replacement-keyvals
+                             (eval-string (s-replace-regexp "<\\([^>]*\\)>" "\\1" s)))))
+                        eval-template-keys))
 
-                        (eval-template-keyvals (-zip eval-template-keys eval-template-vals))
+                      (eval-template-keyvals (-zip eval-template-keys eval-template-vals))
 
-                        (updated-val
-                         (pen-expand-template-keyvals val eval-template-keyvals))
-                        (update
-                         (setq def-replacement-keyvals
-                               (asoc-merge
-                                `((,defkey . ,updated-val))
-                                def-replacement-keyvals))))
-                   ;; for each discovered eval template, i must create a key and value
-                   ;; the key is <(...)> inclusive, and the val is (eval-string "(...)")
-                   ;; update the vals here
-                   updated-val))))))
+                      (updated-val
+                       (pen-expand-template-keyvals val eval-template-keyvals))
+                      (update
+                       (setq def-replacement-keyvals
+                             (asoc-merge
+                              `((,defkey . ,updated-val))
+                              def-replacement-keyvals))))
+                 ;; for each discovered eval template, i must create a key and value
+                 ;; the key is <(...)> inclusive, and the val is (eval-string "(...)")
+                 ;; update the vals here
+                 updated-val)))))
 
          (defs-full-name (cdr (assoc "full-name" def-keyvals)))
          (defs-description (cdr (assoc "description" def-keyvals)))
