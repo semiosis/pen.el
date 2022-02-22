@@ -716,6 +716,9 @@
     (bindings--define-key menu [mi-menu-bar-tomes-menu]
       `(menu-item "Tomes" ,menu-bar-tomes-menu
                   :help "Tomes menu"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-dni]
+      '(menu-item "Go to dni" pen-acolyte-dired-dni
+                  :help "Go to dni source directory"))
     (bindings--define-key menu [mi-menu-bar-engines-menu]
       `(menu-item "Engines" ,menu-bar-engines-menu
                   :help "Engines menu"))
