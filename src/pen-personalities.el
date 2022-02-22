@@ -27,8 +27,9 @@
                         yaml-ht)))
     yaml-ht))
 
-;; Yes this may prompt to define all the personalities initially
-;; But I can always update them on a one-off basis
+;; Yes this may prompt to define all the personalities initially.
+;; But I can always update them on a one-off basis.
+;; This is the way it indeed should work.
 (defun pen-load-personalities (&optional paths)
   (interactive)
 
