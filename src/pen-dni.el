@@ -1,3 +1,8 @@
+(define-derived-mode dni-description-mode yaml-mode "dni"
+  "D'ni script mode")
+
+(add-to-list 'auto-mode-alist '("\\.dni\\'" . dni-description-mode))
+
 ;; TODO Make this into dni-let macro
 (defmacro dni-let (yaml &rest body)
   ;; yaml can be a string to a yaml path or a yaml-ht
