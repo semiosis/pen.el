@@ -1,18 +1,15 @@
 ;; TODO Make this into dni-let macro
-(defun dni-let (yaml)
-  (setq pen-incarnations-failed '())
-  (let* ((yaml-ht (ht-get pen-personalities personality))
-         (full-name (ht-get yaml-ht "full-name"))
-         (description (ht-get yaml-ht "description"))
-         (bio (ht-get yaml-ht "bio"))
-         (personality-path (ht-get yaml-ht "path"))
-         (full-name-and-bio (ht-get yaml-ht "full-name-and-bio"))
+(defmacro dni-let (yaml &rest body)
+  ;; yaml can be a string to a yaml path or a yaml-ht
+  (let* ((yaml-ht (if (strinp yaml)
+                      (yamlmod-read-file yaml)
+                    yaml))
 
-         ;; load person-defs
-         (defs-htlist (pen--htlist-to-alist (ht-get yaml-ht "defs")))
+         ;; load yaml-defs
+         (defs-htlist (pen--htlist-to-alist yaml-ht))
          (def-values)
 
-         (person-defs
+         (yaml-defs
           (let* ((vars-al defs-htlist)
                  (keys (cl-loop
                         for atp in vars-al
@@ -26,7 +23,7 @@
             (setq def-values values)
             keys))
 
-         (def-slugs (mapcar 'slugify person-defs))
+         (def-slugs (mapcar 'slugify yaml-defs))
 
          ;; use the slugs of the keys, so i can use them in further replacements
          (def-keyvals (-zip def-slugs def-values))
@@ -42,16 +39,10 @@
                     (val (str (cdr atp))))
                 (cons
                  defkey
-                 ;; First, update the templateeval keyvals
-                 ;; Second, update the actual vals
                  (let* (
-                        ;; for each .personality key, create a set of template keys by scaping the string
                         (eval-template-keys
                          (mapcar
-                          ;; Remove the angle brackets
-                          ;; These keys will be used in the template expansion
                           (lambda (s)
-                            ;; This is ugly but $ didnt seem to work
                             (s-replace-regexp "<" "" (s-replace-regexp ">" "" (chomp s))))
                           (append
                            (-filter-not-empty-string
@@ -67,7 +58,6 @@
                               (lambda (s) (concat s ">"))
                               (s-split ">" val)))))))
 
-                        ;; test this
                         (eval-template-vals
                          (mapcar
                           (lambda (s)
@@ -89,46 +79,15 @@
                    ;; for each discovered eval template, i must create a key and value
                    ;; the key is <(...)> inclusive, and the val is (eval-string "(...)")
                    ;; update the vals here
-                   updated-val))))))
+                   updated-val)))))))
 
-         (defs-full-name (cdr (assoc "full-name" def-keyvals)))
-         (defs-description (cdr (assoc "description" def-keyvals)))
-         ;; now i must run
-         (full-name
-          (cond
-           (defs-full-name defs-full-name)
-           (full-name full-name)
-           (t "unknown person"))
-          )
-         ;; (full-name (pen-expand-template-keyvals full-name def-replacement-keyvals))
-         ;; (description
-         ;;  (if (assoc "full-name" description)
-         ;;      (assoc "full-name" description)
-         ;;    "<description>"))
-         (description
-          (cond
-           (defs-description defs-description)
-           (description description)
-           (t "unknown bio")))
-         ;; (description (pen-expand-template-keyvals description def-replacement-keyvals))
-         )
+    `(pen-let-keyvals
+      ,def-keyvals
+      ,@body)))
 
-    (setq def-keyvals
-          (asoc-merge
-           `(("incarnation full name" ,full-name))
-           def-keyvals))
-
-    (loop for kv in def-keyvals do
-          (ht-set yaml-ht (concat "def-" (car kv)) (cdr kv)))
-
-    (ht-set yaml-ht "full-name" full-name)
-    (ht-set yaml-ht "personality-full-name-and-bio" full-name-and-bio)
-    (ht-set yaml-ht "description" description)
-    (ht-set yaml-ht "personality-path" personality-path)
-
-    (message (concat "pen-mode: Loaded incarnation " full-name))
-    (ht-set pen-incarnations full-name yaml-ht)
-
-    full-name))
+(defun pen-test-dni-let ()
+  (interactive)
+  ;; (dni-let )
+  )
 
 (provide 'pen-dni)
