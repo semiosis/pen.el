@@ -227,8 +227,11 @@
 (defset pen-eipe-hook '())
 
 (defun pen-force-buffer-wrap ()
-  (toggle-chrome)
-  (toggle-chrome))
+  ;; I need to check to be absolutely sure it's an eipe
+  ;; Because this will run everywhere
+  (comment
+   (toggle-chrome)
+   (toggle-chrome)))
 
 ;; This needs to happen after the file is loaded
 (add-hook 'pen-eipe-hook 'pen-find-file-read-only-context)
