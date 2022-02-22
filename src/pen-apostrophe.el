@@ -113,10 +113,31 @@
     (pen-e-sps (pen-lm (pen-eval-string el)))))
 
 (defun apostrophe-start-chatbot-from-personality (name &optional auto)
-  "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
+  "Spawn a new apostrophe session with a new incarnation."
   (interactive (list
                 (fz (pen-list-personalities)
                     nil nil "Personality: ")))
+
+  (if (sor name)
+      (let ((apostrophe-engine
+             (or (sor (pen-var-value-maybe 'force-engine)) "")))
+        (if (and (not (pen-inside-docker))
+                 (not (pen-container-running)))
+            (progn
+              (pen-term-nsfa (pen-cmd "pen" "-n"))
+              (message "Starting Pen server")))
+
+        (let ((yaml (ht-get pen-personalities name)))
+          (let* ((blurb (ht-get yaml "description")))
+
+            (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
+              (pen-e-sps (pen-lm (pen-eval-string el)))))))))
+
+(defun apostrophe-start-chatbot-from-incarnation (name &optional auto)
+  "Spawn a new apostrophe session from an existing incarnation."
+  (interactive (list
+                (fz (pen-list-incarnations)
+                    nil nil "Incarnation: ")))
 
   (if (sor name)
       (let ((apostrophe-engine

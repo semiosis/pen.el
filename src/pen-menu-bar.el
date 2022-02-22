@@ -662,6 +662,12 @@
     (bindings--define-key menu [mi-pen-load-personalities]
       '(menu-item "Reload personalities" pen-load-personalities
                   :help "Reload personalities from YAML"))
+    (bindings--define-key menu [mi-pen-delete-incarnations]
+      '(menu-item "Delete incarnations" pen-delete-incarnations
+                  :help "Erase all imagined personalities"))
+    (bindings--define-key menu [mi-pen-delete-incarnations]
+      '(menu-item "Spawn incarnation" pen-spawn-incarnation
+                  :help "Spawn a new incarnation from a personality"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
