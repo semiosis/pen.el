@@ -74,6 +74,7 @@
                 ;; pen-try
                 (let* ((yaml-ht (pen-personality-file-load path))
                        (full-name (ht-get yaml-ht "full-name"))
+                       (description (ht-get yaml-ht "description"))
 
                        ;; load person-defs
                        (defs-htlist (pen--htlist-to-alist (ht-get yaml-ht "defs")))
@@ -211,11 +212,16 @@
                                  ;; update the vals here
                                  updated-val))))))
                        ;; now i must run
-                       (full-name (pen-expand-template-keyvals full-name def-keyvals)))
-                  (pen-etv (pps
-                            (asoc-merge
-                             `(("personality full name" ,full-name))
-                             def-keyvals)))
+                       (full-name (pen-expand-template-keyvals full-name def-replacement-keyvals))
+                       (description (pen-expand-template-keyvals description def-replacement-keyvals)))
+                  (setq def-keyvals
+                        (asoc-merge
+                         `(("personality full name" ,full-name))
+                         def-keyvals))
+                  (loop for kv in def-keyvals do
+                        (ht-set yaml-ht (concat "def-" (car kv)) (cdr kv)))
+                  (ht-set yaml-ht "full-name" full-name)
+                  (ht-set yaml-ht "description" description)
                   (ht-set yaml-ht "personality-path" path)
                   (message (concat "pen-mode: Loaded personality " full-name))
                   (ht-set pen-personalities full-name yaml-ht))
