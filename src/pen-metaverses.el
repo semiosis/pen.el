@@ -1,3 +1,11 @@
+;; Protoverses create Metaverses
+;; A new Metaverse file should be able to be generated from a Protoverse file
+
+(define-derived-mode protoverse-description-mode yaml-mode "protoverse"
+  "Protoverse description mode")
+
+(add-to-list 'auto-mode-alist '("\\.protoverse\\'" . protoverse-description-mode))
+
 (define-derived-mode metaverse-description-mode yaml-mode "Metaverse"
   "Metaverse description mode")
 
