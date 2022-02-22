@@ -653,7 +653,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defun pen-backslashed (val)
   (pen-sn "sed 's=.=\\\\&=g'" val))
 
-(defun pen-expand-template-keyvals (s keyvals &optional encode pipelines)
+(defun pen-expand-template-keyvals (s keyvals &optional encode pipelines transform-function)
   "expand template from alist"
   (if keyvals
       (let ((i 1))
@@ -668,19 +668,23 @@ Reconstruct the entire yaml-ht for a different language."
                           val)))
 
               (cl-loop for pl
-                    in pipelines
-                    do
-                    (let ((plf (format "<%s:%s>" (car pl) key))
-                          (plf2 (format "<%s<pen-colon>%s>" (car pl) key))
-                          (plf2u (format "<%s<pen-colon><pen-colon>%s>" (car pl) key)))
+                       in pipelines
+                       do
+                       (let ((plf (format "<%s:%s>" (car pl) key))
+                             (plf2 (format "<%s<pen-colon>%s>" (car pl) key))
+                             (plf2u (format "<%s<pen-colon><pen-colon>%s>" (car pl) key)))
 
-                      (cond-all
-                       ((re-match-p (pen-unregexify plf) s)
-                        (setq s (string-replace plf (pen-snc (cdr pl) (chomp val)) s)))
-                       ((re-match-p (pen-unregexify plf2) s)
-                        (setq s (string-replace plf2 (pen-snc (cdr pl) (chomp val)) s)))
-                       ((re-match-p (pen-unregexify plf2u) s)
-                        (setq s (string-replace plf2u (pen-sn (cdr pl) val) s))))))
+                         (cond-all
+                          ((re-match-p (pen-unregexify plf) s)
+                           (setq s (string-replace plf (pen-snc (cdr pl) (chomp val)) s)))
+                          ((re-match-p (pen-unregexify plf2) s)
+                           (setq s (string-replace plf2 (pen-snc (cdr pl) (chomp val)) s)))
+                          ((re-match-p (pen-unregexify plf2u) s)
+                           (setq s (string-replace plf2u (pen-sn (cdr pl) val) s))))))
+
+              (if transform-function
+                  (if (re-match-p (pen-unregexify key) s)
+                      (setq s (string-replace (pen-unregexify key) (funcall transform-function val) s))))
 
               ;; (comment
               ;;  (pen-cartesian-product '("foo" "bar" "baz") '("einie" "mienie" "meinie" "mo"))
@@ -706,25 +710,25 @@ Reconstruct the entire yaml-ht for a different language."
                   (setq s (string-replace unchomped2 val s)))))
 
               (cl-loop for pl
-                    in '(("q" . pen-q)
-                         ("sl" . slugify)
-                         ("bx" . pen-boxify)
-                         ("bs" . pen-backslashed))
-                    do
-                    (let ((plf (format "<%s:%s>" (car pl) key))
-                          (plf2 (format "<%s<pen-colon>%s>" (car pl) key))
-                          (plfu (format "<%s::%s>" (car pl) key))
-                          (plf2u (format "<%s<pen-colon><pen-colon>%s>" (car pl) key)))
+                       in '(("q" . pen-q)
+                            ("sl" . slugify)
+                            ("bx" . pen-boxify)
+                            ("bs" . pen-backslashed))
+                       do
+                       (let ((plf (format "<%s:%s>" (car pl) key))
+                             (plf2 (format "<%s<pen-colon>%s>" (car pl) key))
+                             (plfu (format "<%s::%s>" (car pl) key))
+                             (plf2u (format "<%s<pen-colon><pen-colon>%s>" (car pl) key)))
 
-                      (cond-all
-                       ((re-match-p (pen-unregexify plf) s)
-                        (setq s (string-replace plf (apply (cdr pl) (list (chomp val))) s)))
-                       ((re-match-p (pen-unregexify plf2) s)
-                        (setq s (string-replace plf2 (apply (cdr pl) (list (chomp val))) s)))
-                       ((re-match-p (pen-unregexify plf) s)
-                        (setq s (string-replace plfu (apply (cdr pl) (list val)) s)))
-                       ((re-match-p (pen-unregexify plf2) s)
-                        (setq s (string-replace plf2u (apply (cdr pl) (list val)) s))))))
+                         (cond-all
+                          ((re-match-p (pen-unregexify plf) s)
+                           (setq s (string-replace plf (apply (cdr pl) (list (chomp val))) s)))
+                          ((re-match-p (pen-unregexify plf2) s)
+                           (setq s (string-replace plf2 (apply (cdr pl) (list (chomp val))) s)))
+                          ((re-match-p (pen-unregexify plf) s)
+                           (setq s (string-replace plfu (apply (cdr pl) (list val)) s)))
+                          ((re-match-p (pen-unregexify plf2) s)
+                           (setq s (string-replace plf2u (apply (cdr pl) (list val)) s))))))
 
               ;; Then scrape the prompt for remaining template patterns and check for existing functions that match the pattern
 
