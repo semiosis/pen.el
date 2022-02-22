@@ -460,6 +460,9 @@
                   :help "Suggest some subject-matter-experts for the selected text, and speak to them"))
     (bindings--define-key menu [mi-apostrophe-start-chatbot-from-personality]
       '(menu-item "Start chatbot from personality" apostrophe-start-chatbot-from-personality
+                  :help "Spawn a personality into an incarnate chatbot"))
+    (bindings--define-key menu [mi-apostrophe-start-chatbot-from-incarnation]
+      '(menu-item "Start chatbot from incarnation" apostrophe-start-chatbot-from-incarnation
                   :help "Run a generated personality as a chatbot"))
 
     (bindings--define-key menu [cancel-menu]
