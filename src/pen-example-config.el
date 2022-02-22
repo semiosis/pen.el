@@ -124,7 +124,7 @@
     (setq pen-prompts-directory (f-join user-emacs-directory "prompts"))))
 
 (let ((hostdnidir (f-join user-emacs-directory "host" "dni")))
-  (if (f-directory-p (f-join hostdnidir "dni"))
+  (if (f-directory-p (f-join hostdnidir))
       (setq pen-dni-directory hostdnidir)
     (setq pen-dni-directory (f-join user-emacs-directory "dni"))))
 
