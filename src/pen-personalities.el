@@ -125,6 +125,7 @@
 (defun pen-list-incarnations ()
   (ht-keys pen-incarnations))
 
+;; (pen-spawn-incarnation "name unknown - a girl who was trafficked")
 (defun pen-spawn-incarnation (personality)
   (interactive (list
                 (fz (pen-list-personalities)
@@ -220,25 +221,51 @@
                    ;; the key is <(...)> inclusive, and the val is (eval-string "(...)")
                    ;; update the vals here
                    updated-val))))))
+
+         (defs-full-name (cdr (assoc "full-name" def-keyvals)))
+         (defs-description (cdr (assoc "description" def-keyvals)))
          ;; now i must run
-         (full-name (pen-expand-template-keyvals full-name def-replacement-keyvals))
-         (description (pen-expand-template-keyvals description def-replacement-keyvals)))
+         (full-name
+          (cond
+           (defs-full-name defs-full-name)
+           (full-name full-name)
+           (t "unknown person"))
+          )
+         ;; (full-name (pen-expand-template-keyvals full-name def-replacement-keyvals))
+         ;; (description
+         ;;  (if (assoc "full-name" description)
+         ;;      (assoc "full-name" description)
+         ;;    "<description>"))
+         (description
+          (cond
+           (defs-description defs-description)
+           (description description)
+           (t "unknown bio")))
+         ;; (description (pen-expand-template-keyvals description def-replacement-keyvals))
+         )
+
     (setq def-keyvals
           (asoc-merge
            `(("incarnation full name" ,full-name))
            def-keyvals))
+
     (loop for kv in def-keyvals do
           (ht-set yaml-ht (concat "def-" (car kv)) (cdr kv)))
+
     (ht-set yaml-ht "full-name" full-name)
+    (ht-set yaml-ht "personality-full-name-and-bio" full-name-and-bio)
     (ht-set yaml-ht "description" description)
-    (ht-set yaml-ht "personality-path" path)
-    (message (concat "pen-mode: Loaded personality " full-name))
-    (ht-set pen-incarnations full-name yaml-ht))
+    (ht-set yaml-ht "personality-path" personality-path)
 
-  (if pen-incarnations-failed
-      (progn
-        (message "failed:")
-        (message (pen-list2str pen-incarnations-failed))
-        (message (concat (str (length pen-incarnations-failed)) " failed")))))
+    (message (concat "pen-mode: Loaded incarnation " full-name))
+    (ht-set pen-incarnations full-name yaml-ht)
 
-(provide 'pen-incarnations)
+    (if pen-incarnations-failed
+        (progn
+          (message "failed:")
+          (message (pen-list2str pen-incarnations-failed))
+          (message (concat (str (length pen-incarnations-failed)) " failed"))))
+
+    full-name))
+
+(provide 'pen-personalities)

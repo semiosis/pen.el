@@ -112,26 +112,36 @@
     ;; TODO Run multiple daemons and run tasks from a pool?
     (pen-e-sps (pen-lm (pen-eval-string el)))))
 
+(defun pen-list-incarnations-with-name (name)
+  (interactive (list
+                (fz (pen-list-personalities)
+                    nil nil "Personality: ")))
+  (let ((matching-incarnations
+         (-filter 'identity
+                  (loop for ik in (ht-keys pen-incarnations) collect
+                        (if (string-equal
+                             name
+                             (ht-get (ht-get pen-incarnations ik) "personality-full-name-and-bio"))
+                            ik
+                          nil)))))
+    (if (interactive-p)
+        (pen-etv (pps matching-incarnations))
+      matching-incarnations)))
+
 (defun apostrophe-start-chatbot-from-personality (name &optional auto)
   "Spawn a new apostrophe session with a new incarnation."
   (interactive (list
                 (fz (pen-list-personalities)
                     nil nil "Personality: ")))
 
-  (if (sor name)
-      (let ((apostrophe-engine
-             (or (sor (pen-var-value-maybe 'force-engine)) "")))
-        (if (and (not (pen-inside-docker))
-                 (not (pen-container-running)))
-            (progn
-              (pen-term-nsfa (pen-cmd "pen" "-n"))
-              (message "Starting Pen server")))
+  (let* ((incarnations (pen-list-incarnations-with-name name))
+         (incarnation
+          (if (and incarnations
+                   (yes-or-no-p "Use existing?"))
+              (fz incarnations nil nil "Incarnation: ")
+            (pen-spawn-incarnation name))))
 
-        (let ((yaml (ht-get pen-personalities name)))
-          (let* ((blurb (ht-get yaml "description")))
-
-            (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
-              (pen-e-sps (pen-lm (pen-eval-string el)))))))))
+    (apostrophe-start-chatbot-from-incarnation incarnation)))
 
 (defun apostrophe-start-chatbot-from-incarnation (name &optional auto)
   "Spawn a new apostrophe session from an existing incarnation."
@@ -148,7 +158,7 @@
               (pen-term-nsfa (pen-cmd "pen" "-n"))
               (message "Starting Pen server")))
 
-        (let ((yaml (ht-get pen-personalities name)))
+        (let ((yaml (ht-get pen-incarnations name)))
           (let* ((blurb (ht-get yaml "description")))
 
             (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))

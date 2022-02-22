@@ -667,7 +667,7 @@
                   :help "Erase all imagined personalities"))
     (bindings--define-key menu [mi-pen-delete-incarnations]
       '(menu-item "Spawn incarnation" pen-spawn-incarnation
-                  :help "Spawn a new incarnation from a personality"))
+                  :help "Spawn a new or replace an incarnation from a personality"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
