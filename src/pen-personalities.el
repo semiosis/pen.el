@@ -46,6 +46,14 @@
         ',kv
         (eval-string "task"))))))
 
+(defun pen-test-expand-keyvals-personalities ()
+  (interactive)
+  (pen-etv
+   (pen-expand-template-keyvals "Biography:\n<(pf-instruct-an-ai-to-write-something/1 task)>"
+                                '(("(pf-instruct-an-ai-to-write-something/1 task)" . "She was just a young girl when she was trafficked. She didn't know what was happening to her, and she certainly didn't know how to get out. She was taken from her home country and forced into a life of prostitution. She was beaten and abused, and she didn't see any way out. But she was eventually rescued, and she is now working to help other victims of trafficking. She is a powerful advocate for change, and she is determined to make a difference in the world.")))))
+
+;; mapcar((lambda (s) (eval `(pen-let-keyvals ',def-replacement-keyvals (eval-string (s-replace-regexp "<\\([^>]*\\)>" "\\1" s))))) ("biography>)" "biography"))
+
 ;; Yes this may prompt to define all the personalities initially.
 ;; But I can always update them on a one-off basis.
 ;; This is the way it indeed should work.
@@ -61,7 +69,7 @@
                 (-non-nil
                  (mapcar 'sor (glob (concat pen-personalities-directory "/personalities" "/*.person")))))))
        (cl-loop for path in paths do
-                (message (concat "pen-mode: Loading .personalitie file " path))
+                (message (concat "pen-mode: Loading .personality file " path))
 
                 ;; pen-try
                 (let* ((yaml-ht (pen-personality-file-load path))
@@ -109,27 +117,44 @@
                            (cl-loop
                             for atp in def-keyvals
                             collect
-                            (let ((key (car atp))
+                            (let ((defkey (car atp))
                                   (val (str (cdr atp))))
                               (cons
-                               key
+                               defkey
                                ;; First, update the templateeval keyvals
                                ;; Second, update the actual vals
                                (let* (
                                       ;; for each .personality key, create a set of template keys by scaping the string
                                       (eval-template-keys
-                                       (-filter-not-empty-string
+                                       (mapcar
+                                        ;; Remove the angle brackets
+                                        ;; These keys will be used in the template expansion
+                                        (lambda (s)
+                                          (s-replace-regexp
+                                           "<" ""
+                                           (s-replace-regexp
+                                            ">" "" s)))
                                         (append
-                                         (mapcar
-                                          (lambda (e) (scrape "<\\(.*\\)>" e))
+                                         (-filter-not-empty-string
                                           (mapcar
-                                           (lambda (s) (concat s ")>"))
-                                           (s-split ")>" val)))
-                                         (mapcar
-                                          (lambda (e) (scrape "<[a-z-]+>" e))
+                                           (lambda (e) (scrape "<\\(.*\\)>" e))
+                                           (mapcar
+                                            (lambda (s) (concat s ")>"))
+                                            (s-split ")>" val))))
+                                         (-filter-not-empty-string
                                           (mapcar
-                                           (lambda (s) (concat s ">"))
-                                           (s-split ">" val))))))
+                                           (lambda (e) (scrape "<[a-z-]+>" e))
+                                           (mapcar
+                                            (lambda (s) (concat s ">"))
+                                            (s-split ">" val)))))))
+
+                                      ;; (display
+                                      ;;  (tv (pps (-filter-not-empty-string
+                                      ;;     (mapcar
+                                      ;;      (lambda (e) (scrape "<[a-z-]+>" e))
+                                      ;;      (mapcar
+                                      ;;       (lambda (s) (concat s ">"))
+                                      ;;       (s-split ">" val)))))))
 
                                       ;; (display
                                       ;;  (if eval-template-keys
@@ -139,17 +164,21 @@
                                       ;;               "\npath:\n"
                                       ;;               path
                                       ;;               "\nkey:\n"
-                                      ;;               key
+                                      ;;               defkey
                                       ;;               "\nvalue:\n"
                                       ;;               val
                                       ;;               "\neval-template-keys:\n" (pps eval-template-keys)))))
 
                                       ;; (display
-                                      ;;  (pen-tv (concat path "\n" key ":" val " def-replacement-keyvals: " (pps def-replacement-keyvals))))
+                                      ;;  (pen-tv (concat path "\n" defkey ":" val " def-replacement-keyvals: " (pps def-replacement-keyvals))))
 
                                       ;; (display
                                       ;;  (if def-replacement-keyvals
-                                      ;;      (pen-tv (pps def-replacement-keyvals))))
+                                      ;;      (tv (pps def-replacement-keyvals))))
+
+                                      ;; (display
+                                      ;;  (if eval-template-keys
+                                      ;;      (tv (pps eval-template-keys))))
 
                                       ;; test this
                                       (eval-template-vals
@@ -164,16 +193,20 @@
                                       ;; (display
                                       ;;  (pen-tv (pps eval-template-vals)))
 
-                                      (personality-keyvals (-zip eval-template-keys eval-template-vals))
+                                      (eval-template-keyvals (-zip eval-template-keys eval-template-vals))
+
+                                      ;; (display
+                                      ;;  (tv (pps eval-template-keyvals)))
+
                                       (updated-val
-                                       (pen-expand-template-keyvals val personality-keyvals))
+                                       (pen-expand-template-keyvals val eval-template-keyvals))
                                       (update
                                        (setq def-replacement-keyvals
                                              (asoc-merge
-                                              `((,key . ,updated-val))
+                                              `((,defkey . ,updated-val))
                                               def-replacement-keyvals)))
                                       ;; (display
-                                      ;;  (pen-tv (concat path "\n" key " personality-keyvals: " (pps personality-keyvals))))
+                                      ;;  (pen-tv (concat path "\n" defkey " personality-keyvals: " (pps personality-keyvals))))
                                       )
                                  ;; for each discovered eval template, i must create a key and value
                                  ;; the key is <(...)> inclusive, and the val is (eval-string "(...)")
@@ -181,10 +214,10 @@
                                  updated-val))))))
                        ;; now i must run
                        (full-name (pen-expand-template-keyvals full-name def-keyvals)))
-                  ;; (pen-etv (pps
-                  ;;           (asoc-merge
-                  ;;            `(("personality full name" ,full-name))
-                  ;;            def-keyvals)))
+                  (pen-etv (pps
+                            (asoc-merge
+                             `(("personality full name" ,full-name))
+                             def-keyvals)))
                   (ht-set yaml-ht "personality-path" path)
                   (message (concat "pen-mode: Loaded personality " full-name))
                   (ht-set pen-personalities full-name yaml-ht))

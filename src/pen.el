@@ -683,7 +683,7 @@ Reconstruct the entire yaml-ht for a different language."
                            (setq s (string-replace plf2u (pen-sn (cdr pl) val) s))))))
 
               (if transform-function
-                  (if (re-match-p (pen-unregexify key) s)
+                  (if (string-match-p key s)
                       (setq s (string-replace (pen-unregexify key) (funcall transform-function val) s))))
 
               ;; (comment
