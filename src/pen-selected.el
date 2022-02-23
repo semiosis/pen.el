@@ -164,7 +164,7 @@
 
 (defun selected--on ()
   (if (not (or (bound-and-true-p lispy-mode)
-               (evil-enabled)))
+               (pen-evil-enabled)))
       (selected-region-active-mode 1)))
 
 ;; (define-key selected-keymap (kbd "M-3") #'pen-grep-for-thing-select)

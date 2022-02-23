@@ -1853,7 +1853,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
         (setq path (concat path "#L" (str (org-current-line)))))
     (kill-new path)))
 
-(defun evil-enabled ()
+(defun pen-evil-enabled ()
   "True if in evil mode. Spacemacs agnostic."
   ;; Keep in mind that evil-mode is enabled when emacs is in holy mode. I have to also check if we are spacemacs
 

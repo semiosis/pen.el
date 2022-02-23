@@ -665,6 +665,9 @@
     (bindings--define-key menu [mi-pen-acolyte-dired-personalities]
       '(menu-item "Go to personalities directory" pen-acolyte-dired-personalities
                   :help "Go to personalities source directory"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-incarnations]
+      '(menu-item "Go to incarnations directory" pen-acolyte-dired-incarnations
+                  :help "Go to incarnations source directory"))
     (bindings--define-key menu [mi-pen-load-personalities]
       '(menu-item "Reload personalities" pen-load-personalities
                   :help "Reload personalities from YAML"))
