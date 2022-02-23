@@ -1983,6 +1983,9 @@ May use to generate code from comments."
 (require 'pen-prompt-description)
 (require 'pen-dni)
 (require 'pen-creation)
+;; TODO Bring personalities, incarnations,
+;; tomes, protoverses and metaverses into
+;; creation
 (require 'pen-personalities)
 (require 'pen-incarnations)
 (require 'pen-tomes)
