@@ -26,6 +26,10 @@
   (interactive)
   (dired pen-metaverses-directory))
 
+(defun pen-acolyte-dired-protoverses ()
+  (interactive)
+  (dired pen-protoverses-directory))
+
 (defun pen-acolyte-dired-penel ()
   (interactive)
   (dired pen-penel-directory))

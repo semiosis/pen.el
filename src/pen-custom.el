@@ -215,6 +215,12 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-protoverses-directory (f-join user-emacs-directory "protoverses")
+  "Personal protoverse respository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-glossaries-directory (f-join user-emacs-directory "glossaries")
   "Personal glossary respository"
   :type 'string

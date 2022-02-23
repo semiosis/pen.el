@@ -138,6 +138,11 @@
       (setq pen-metaverses-directory hostmetaversesdir)
     (setq pen-metaverses-directory (f-join user-emacs-directory "metaverses"))))
 
+(let ((hostprotoversesdir (f-join user-emacs-directory "host" "protoverses")))
+  (if (f-directory-p (f-join hostprotoversesdir "protoverses"))
+      (setq pen-protoverses-directory hostprotoversesdir)
+    (setq pen-protoverses-directory (f-join user-emacs-directory "protoverses"))))
+
 (let ((hosttomesdir (f-join user-emacs-directory "host" "tomes")))
   (if (f-directory-p (f-join hosttomesdir "tomes"))
       (setq pen-tomes-directory hosttomesdir)

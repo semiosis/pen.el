@@ -700,6 +700,9 @@
     (bindings--define-key menu [mi-pen-acolyte-dired-metaverses]
       '(menu-item "Go to metaverses directory" pen-acolyte-dired-metaverses
                   :help "Go to metaverses source directory"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-protoverses]
+      '(menu-item "Go to protoverses directory" pen-acolyte-dired-protoverses
+                  :help "Go to protoverses source directory"))
     (bindings--define-key menu [mi-pen-load-metaverses]
       '(menu-item "Reload metaverses" pen-load-metaverses
                   :help "Reload metaverses from YAML"))
