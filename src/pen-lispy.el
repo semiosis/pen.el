@@ -424,12 +424,12 @@ The result is a string."
 
 (require 'evil-lisp-state)
 
-(defun evil-insert-sexp-before-noevil ()
+(defun pen-evil-insert-sexp-before-noevil ()
   (interactive "p")
   (evil-lisp-state-insert-sexp-before)
   (turn-off-evil-mode))
 
-(defun evil-insert-sexp-before-noevil ()
+(defun pen-evil-insert-sexp-before-noevil ()
   (interactive "p")
   (evil-lisp-state-insert-sexp-after)
   (turn-off-evil-mode))
