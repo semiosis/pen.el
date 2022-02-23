@@ -736,6 +736,40 @@
                   :help "Cancel out of this menu"))
     menu))
 
+;; This should be:
+;; - someone who knows art
+(defset menu-bar-proto-menu
+  (let ((menu (make-sparse-keymap "Proto")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-personalities]
+      '(menu-item "Personalities dir" pen-acolyte-dired-personalities
+                  :help "Go to personalities source directory"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+;; This should be:
+;; - This is like liberty prime
+(defset menu-bar-meta-menu
+  (let ((menu (make-sparse-keymap "Meta")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-personalities]
+      '(menu-item "Personalities dir" pen-acolyte-dired-personalities
+                  :help "Go to personalities source directory"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-actual-menu
+  (let ((menu (make-sparse-keymap "Actual")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-incarnations]
+      '(menu-item "Incarnations dir" pen-acolyte-dired-incarnations
+                  :help "Go to incarnations source directory"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-history-menu
   (let ((menu (make-sparse-keymap "History")))
     (bindings--define-key menu [mi-pen-continue-from-hist]

@@ -14,9 +14,9 @@
   (interactive)
   (dired pen-personalities-directory))
 
-(defun pen-acolyte-dired-personalities ()
+(defun pen-acolyte-dired-incarnations ()
   (interactive)
-  (dired pen-personalities-directory))
+  (dired pen-incarnations-directory))
 
 (defun pen-acolyte-dired-tomes ()
   (interactive)
