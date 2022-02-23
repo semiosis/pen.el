@@ -738,6 +738,20 @@
 
 ;; This should be:
 ;; - someone who knows art
+;; - This is a query, so it generates a potential type of chatbot
+(defset menu-bar-archaea-menu
+  (let ((menu (make-sparse-keymap "Archaea")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-archaea]
+      '(menu-item "Archaea dir" pen-acolyte-dired-archaea
+                  :help "Go to archaea source directory"))
+    (bindings--define-key menu [mi-pen-acolyte-dired-archaea]
+      '(menu-item "New" pen-archaea-new
+                  :help "Create a new archaea"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-proto-menu
   (let ((menu (make-sparse-keymap "Proto")))
     (bindings--define-key menu [mi-pen-acolyte-dired-personalities]
@@ -749,7 +763,7 @@
     menu))
 
 ;; This should be:
-;; - This is like liberty prime
+;; - This is like liberty prime, or the trafficked girl
 (defset menu-bar-meta-menu
   (let ((menu (make-sparse-keymap "Meta")))
     (bindings--define-key menu [mi-pen-acolyte-dired-personalities]
@@ -760,11 +774,29 @@
                   :help "Cancel out of this menu"))
     menu))
 
+;; This should be:
+;; - Finalised chatbot, that keeps history
 (defset menu-bar-actual-menu
   (let ((menu (make-sparse-keymap "Actual")))
     (bindings--define-key menu [mi-pen-acolyte-dired-incarnations]
       '(menu-item "Incarnations dir" pen-acolyte-dired-incarnations
                   :help "Go to incarnations source directory"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-creation-menu
+  (let ((menu (make-sparse-keymap "Creation")))
+    (bindings--define-key menu [mi-menu-bar-proto-menu]
+      `(menu-item "Proto" ,menu-bar-proto-menu
+                  :help "Proto menu"))
+    (bindings--define-key menu [mi-menu-bar-meta-menu]
+      `(menu-item "Meta" ,menu-bar-meta-menu
+                  :help "Meta menu"))
+    (bindings--define-key menu [mi-menu-bar-actualised-menu]
+      `(menu-item "Actualised" ,menu-bar-actualised-menu
+                  :help "Actualised menu"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))

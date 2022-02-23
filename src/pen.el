@@ -1982,6 +1982,7 @@ May use to generate code from comments."
 (require 'pen-mouse)
 (require 'pen-prompt-description)
 (require 'pen-dni)
+(require 'pen-creation)
 (require 'pen-personalities)
 (require 'pen-incarnations)
 (require 'pen-tomes)
