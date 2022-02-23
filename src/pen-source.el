@@ -10,6 +10,10 @@
   (interactive)
   (dired pen-dni-directory))
 
+(defun pen-acolyte-dired-creation ()
+  (interactive)
+  (dired pen-creation-directory))
+
 (defun pen-acolyte-dired-personalities ()
   (interactive)
   (dired pen-personalities-directory))
@@ -21,6 +25,10 @@
 (defun pen-acolyte-dired-tomes ()
   (interactive)
   (dired pen-tomes-directory))
+
+(defun pen-acolyte-dired-pictographs ()
+  (interactive)
+  (dired pen-pictographs-directory))
 
 (defun pen-acolyte-dired-metaverses ()
   (interactive)

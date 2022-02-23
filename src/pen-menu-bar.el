@@ -695,6 +695,19 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-pictographs-menu
+  (let ((menu (make-sparse-keymap "Pictographs")))
+    (bindings--define-key menu [mi-pen-acolyte-dired-pictographs]
+      '(menu-item "Go to pictographs directory" pen-acolyte-dired-pictographs
+                  :help "Go to pictographs source directory"))
+    (bindings--define-key menu [mi-pen-load-pictographs]
+      '(menu-item "Reload pictographs" pen-load-pictographs
+                  :help "Reload pictographs from YAML"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-metaverses-menu
   (let ((menu (make-sparse-keymap "Metaverses")))
     (bindings--define-key menu [mi-pen-acolyte-dired-metaverses]
@@ -722,6 +735,9 @@
     (bindings--define-key menu [mi-menu-bar-tomes-menu]
       `(menu-item "Tomes" ,menu-bar-tomes-menu
                   :help "Tomes menu"))
+    (bindings--define-key menu [mi-menu-bar-pictographs-menu]
+      `(menu-item "Pictographs" ,menu-bar-pictographs-menu
+                  :help "Pictographs menu"))
     (bindings--define-key menu [mi-pen-acolyte-dired-dni]
       '(menu-item "Go to dni" pen-acolyte-dired-dni
                   :help "Go to dni source directory"))
@@ -788,6 +804,9 @@
 
 (defset menu-bar-creation-menu
   (let ((menu (make-sparse-keymap "Creation")))
+    (bindings--define-key menu [mi-menu-bar-archaea-menu]
+      `(menu-item "Archaea" ,menu-bar-archaea-menu
+                  :help "Archaea menu"))
     (bindings--define-key menu [mi-menu-bar-proto-menu]
       `(menu-item "Proto" ,menu-bar-proto-menu
                   :help "Proto menu"))

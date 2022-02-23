@@ -1989,6 +1989,7 @@ May use to generate code from comments."
 (require 'pen-personalities)
 (require 'pen-incarnations)
 (require 'pen-tomes)
+(require 'pen-pictographs)
 (require 'pen-protoverses)
 (require 'pen-metaverses)
 (require 'pen-ii-description)
