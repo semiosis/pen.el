@@ -4,9 +4,11 @@
 
 (require 'clomacs)
 
+(setq cider-auto-jump-to-error nil)
+
 (pen-with 'cider
-         ;; Fixes super annoying message
-         (setq cider-allow-jack-in-without-project t))
+          ;; Fixes super annoying message
+          (setq cider-allow-jack-in-without-project t))
 
 (defun pen-4clojure-check-and-proceed ()
   "Check the answer and show the next question if it worked."

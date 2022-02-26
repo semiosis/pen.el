@@ -1,5 +1,7 @@
 ;; http://github.com/semiosis/creation
 
+;; Instead of doing this, have a function to go to the directory.
+
 ;; pen-personalities-directory
 ;; pen-tomes-directory
 ;; pen-pictographs-directory
