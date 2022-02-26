@@ -409,6 +409,7 @@
   (pen-dk-easy "e" nil)
   (pen-dk-easy "e f" 'pf-get-an-example-of-the-usage-of-a-function/2)
   ;; e Explain
+  (pen-dk-easy "e c" 'pf-explain-some-code/2)
   (pen-dk-easy "e t" 'pf-explain-some-code-with-steps/1)
   (pen-dk-easy "e x" 'pf-explain-the-syntax-of-code/1)
   (pen-dk-easy "e b" 'pf-explain-a-file/4)
