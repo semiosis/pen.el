@@ -4,19 +4,18 @@
 (add-to-list 'auto-mode-alist '("\\.dni\\'" . dni-description-mode))
 
 ;; TODO Make this into dni-let macro
-(defmacro dni-let (yaml &rest body)
-  ;; yaml can be a string to a yaml path or a yaml-ht
-  (let* ((yaml-ht (if (stringp yaml)
-                      (yamlmod-read-file yaml)
-                    yaml))
+;; dni is an alist
+(defmacro dni-let (dni &rest body)
+  ;; dni can be a string to a dni path or a yaml-ht
+  (let* ((yaml-al (if (stringp dni)
+                      (pen--htlist-to-alist (yamlmod-read-file dni))
+                    dni))
 
-         ;; load yaml-defs
-         ;; (defs-htlist (ht-to-alist yaml-ht))
-         (defs-htlist (pen--htlist-to-alist yaml-ht))
+         (defs-al yaml-al)
          (dni-values)
 
          (yaml-defs
-          (let* ((vars-al defs-htlist)
+          (let* ((vars-al defs-al)
                  (keys (cl-loop
                         for atp in vars-al
                         collect

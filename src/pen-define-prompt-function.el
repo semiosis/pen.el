@@ -5,6 +5,8 @@
 ;;; - postprocessing
 ;;; - analysis
 
+(require 'pen-dni)
+
 (defmacro pen-split-macro-test-inner ()
   `(progn
      (etv ,testval)))
@@ -1284,6 +1286,26 @@
             (str (or (pen-var-value-maybe 'counterquery)
                      ""))))
 
+          ;; DNI
+          ;; Combine the dni script with the prompt, as the .
+          ;; Then run the prompt as the final
+          ;; dni-based expand-template.
+          ;; Call it the final dni variable 'prompt'.
+
+          (final-prompt
+           (if dni
+               (eval
+                `(pen-let-keyvals
+                  ',(append
+                     var-keyvals
+                     defs-varvals)
+                  (dni-let
+                   ,(append
+                     dni
+                     (cons "prompt" final-prompt))
+                   prompt)))
+             final-prompt))
+
           (final-prompt
            (expand-template final-prompt))
 
@@ -2007,6 +2029,9 @@
 
         ;; internals
         (prompt (ht-get yaml-ht "prompt"))
+        (dni (let ((dni-ht (ht-get yaml-ht "dni")))
+               (if dni-ht
+                   (pen--htlist-to-alist (yamlmod-read-file dni-ht)))))
         (mode (ht-get yaml-ht "mode"))
         (search-threshold (ht-get yaml-ht "search-threshold"))
         (flags (ht-get yaml-ht "flags"))

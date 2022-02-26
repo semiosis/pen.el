@@ -813,8 +813,8 @@
     (bindings--define-key menu [mi-menu-bar-meta-menu]
       `(menu-item "Meta" ,menu-bar-meta-menu
                   :help "Meta menu"))
-    (bindings--define-key menu [mi-menu-bar-actualised-menu]
-      `(menu-item "Actualised" ,menu-bar-actualised-menu
+    (bindings--define-key menu [mi-menu-bar-actual-menu]
+      `(menu-item "Actualised" ,menu-bar-actual-menu
                   :help "Actualised menu"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command

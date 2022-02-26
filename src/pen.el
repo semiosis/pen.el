@@ -984,6 +984,7 @@ Reconstruct the entire yaml-ht for a different language."
 (require 'pen-helm)
 (require 'pen-fz)
 
+(require 'pen-dni)
 (require 'pen-define-prompt-function)
 
 (defun pen-list-to-orglist (l)
@@ -1981,7 +1982,6 @@ May use to generate code from comments."
 (require 'pen-right-click-menu)
 (require 'pen-mouse)
 (require 'pen-prompt-description)
-(require 'pen-dni)
 (require 'pen-creation)
 ;; TODO Bring personalities, incarnations,
 ;; tomes, protoverses and metaverses into

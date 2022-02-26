@@ -128,25 +128,10 @@
       (setq pen-dni-directory hostdnidir)
     (setq pen-dni-directory (f-join user-emacs-directory "dni"))))
 
-(let ((hostpersonalitiesdir (f-join user-emacs-directory "host" "personalities")))
-  (if (f-directory-p (f-join hostpersonalitiesdir "personalities"))
-      (setq pen-personalities-directory hostpersonalitiesdir)
-    (setq pen-personalities-directory (f-join user-emacs-directory "personalities"))))
-
-(let ((hostmetaversesdir (f-join user-emacs-directory "host" "metaverses")))
-  (if (f-directory-p (f-join hostmetaversesdir "metaverses"))
-      (setq pen-metaverses-directory hostmetaversesdir)
-    (setq pen-metaverses-directory (f-join user-emacs-directory "metaverses"))))
-
-(let ((hostprotoversesdir (f-join user-emacs-directory "host" "protoverses")))
-  (if (f-directory-p (f-join hostprotoversesdir "protoverses"))
-      (setq pen-protoverses-directory hostprotoversesdir)
-    (setq pen-protoverses-directory (f-join user-emacs-directory "protoverses"))))
-
-(let ((hosttomesdir (f-join user-emacs-directory "host" "tomes")))
-  (if (f-directory-p (f-join hosttomesdir "tomes"))
-      (setq pen-tomes-directory hosttomesdir)
-    (setq pen-tomes-directory (f-join user-emacs-directory "tomes"))))
+(let ((hostcreationdir (f-join user-emacs-directory "host" "creation")))
+  (if (f-directory-p (f-join hostcreationdir))
+      (setq pen-creation-directory hostcreationdir)
+    (setq pen-creation-directory (f-join user-emacs-directory "creation"))))
 
 (let ((hostcontribdir (f-join user-emacs-directory "host" "pen-contrib.el")))
   (if (f-directory-p (f-join hostcontribdir "pen-contrib.el"))
