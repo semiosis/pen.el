@@ -1,5 +1,11 @@
 ;; http://github.com/semiosis/creation
 
+;; pen-personalities-directory
+;; pen-tomes-directory
+;; pen-pictographs-directory
+;; pen-metaverses-directory
+;; pen-protoverses-directory
+
 (define-derived-mode archaea-description-mode yaml-mode "Archaea"
   "Archaea description mode")
 

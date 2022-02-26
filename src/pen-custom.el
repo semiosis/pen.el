@@ -203,36 +203,6 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-personalities-directory (f-join user-emacs-directory "personalities")
-  "Personal personalities respository"
-  :type 'string
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
-(defcustom pen-tomes-directory (f-join user-emacs-directory "tomes")
-  "Personal tomes respository"
-  :type 'string
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
-(defcustom pen-pictographs-directory (f-join user-emacs-directory "pictographs")
-  "Personal pictographs respository"
-  :type 'string
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
-(defcustom pen-metaverses-directory (f-join user-emacs-directory "metaverses")
-  "Personal metaverse respository"
-  :type 'string
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
-(defcustom pen-protoverses-directory (f-join user-emacs-directory "protoverses")
-  "Personal protoverse respository"
-  :type 'string
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
 (defcustom pen-glossaries-directory (f-join user-emacs-directory "glossaries")
   "Personal glossary respository"
   :type 'string
