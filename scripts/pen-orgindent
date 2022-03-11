@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+count="$1"
+: ${count:="1"}
+
+char="$2"
+: ${char:="*"}
+
+(( count ++ ))
+
+sed "s/^\*/$(p "$char" | pen-str rs $count | pen-esc "$char")/"
