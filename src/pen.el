@@ -38,8 +38,7 @@
 (require 'ivy)
 (require 's)
 (require 'company)
-(if (inside-docker-p)
-    (require 'selected))
+(require 'selected)
 (require 'pcsv)
 (require 'pcre2el)
 (require 'f)
@@ -136,7 +135,8 @@ Be mindful of quoting arguments correctly."
 
 (defalias 'e-cmd 'pen-quote-args)
 
-(require 'pen-selected)
+(if (inside-docker-p)
+    (require 'pen-selected))
 (require 'pen-cua)
 (require 'pen-text-coding-system)
 (require 'pen-editing)
