@@ -95,4 +95,65 @@
   (progn (if (not arg) (setq arg ""))
          (pen-region-pipe (concat "pen-str join " (str arg)))))
 
+(defun pen-fi-indent (arg)
+  "Indent by prefix arg"
+  (interactive "P")
+  ;; (pen-ns (str arg))
+  (progn (if (not arg) (setq arg 4))
+         (pen-region-pipe (concat "pen-indent " (str arg)))))
+
+(defun pen-fi-unindent (arg)
+  "Indent by prefix arg"
+  (interactive "P")
+  ;; (pen-ns (str arg))
+
+  (progn
+    (if (not arg) (setq arg 4))
+    (pen-region-pipe (concat "pen-indent -" (str arg)))))
+
+(defun pen-fi-org-indent (arg)
+  "Indent by prefix arg"
+  (interactive "P")
+  ;; (pen-ns (str arg))
+  (cond
+   ((and (equal major-mode 'org-mode)
+         (string-match-p "\\`\\*"
+                         (if mark-active
+                             (pen-selected-text)
+                           (thing-at-point 'line))))
+    (pen-region-pipe "orgindent"))
+   ((and (equal major-mode 'org-mode)
+         (string-match-p "\\` *[-+]"
+                         (if mark-active
+                             (pen-selected-text)
+                           (thing-at-point 'line))))
+    (pen-region-pipe (pen-cmd "pen-indent" "2")))
+   (t (progn (if (not arg) (setq arg 4))
+             (pen-region-pipe (concat "pen-indent " (str arg)))))))
+
+(defun pen-fi-org-unindent (arg)
+  "Indent by prefix arg"
+  (interactive "P")
+  ;; (pen-ns (str arg))
+
+  (cond
+   ((and (equal major-mode 'org-mode)
+         (not arg)
+         (string-match-p "\\`\\*"
+                         (if mark-active
+                             (pen-selected-text)
+                           (thing-at-point 'line))))
+    (pen-region-pipe "orgindent -1"))
+   ((and (equal major-mode 'org-mode)
+         (not arg))
+    (if (string-match-p "\\` *[-+]"
+                        (if mark-active
+                            (pen-selected-text)
+                          (thing-at-point 'line)))
+        (pen-region-pipe "pen-indent -2")
+      (call-interactively #'org-run-babel-template-hydra)))
+   (t (progn
+        (if (not arg) (setq arg 4))
+        (pen-region-pipe (concat "pen-indent -" (str arg)))))))
+
 (provide 'pen-filters)
