@@ -121,7 +121,7 @@
                          (if mark-active
                              (pen-selected-text)
                            (thing-at-point 'line))))
-    (pen-region-pipe "orgindent"))
+    (pen-region-pipe "pen-orgindent"))
    ((and (equal major-mode 'org-mode)
          (string-match-p "\\` *[-+]"
                          (if mark-active
@@ -143,7 +143,7 @@
                          (if mark-active
                              (pen-selected-text)
                            (thing-at-point 'line))))
-    (pen-region-pipe "orgindent -1"))
+    (pen-region-pipe "pen-orgindent -1"))
    ((and (equal major-mode 'org-mode)
          (not arg))
     (if (string-match-p "\\` *[-+]"
