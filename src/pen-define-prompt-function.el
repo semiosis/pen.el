@@ -1293,7 +1293,12 @@
           ;; Call it the final dni variable 'prompt'.
 
           (final-prompt
-           (if dni
+           (expand-template final-prompt))
+
+          ;; This must come after the initial template expand.
+          ;; Because dni-let will try to expand <...> and evaluate remaining templates.
+          (final-prompt
+           (if ',dni
                (eval
                 `(pen-let-keyvals
                   ',(append
@@ -1301,13 +1306,10 @@
                      defs-varvals)
                   (dni-let
                    ,(append
-                     dni
-                     (cons "prompt" final-prompt))
+                     ',dni
+                     (list (cons "prompt" final-prompt)))
                    prompt)))
              final-prompt))
-
-          (final-prompt
-           (expand-template final-prompt))
 
           (final-prompt
            (if ,prompt-filter
@@ -2031,7 +2033,7 @@
         (prompt (ht-get yaml-ht "prompt"))
         (dni (let ((dni-ht (ht-get yaml-ht "dni")))
                (if dni-ht
-                   (pen--htlist-to-alist (yamlmod-read-file dni-ht)))))
+                   (pen--htlist-to-alist dni-ht))))
         (mode (ht-get yaml-ht "mode"))
         (search-threshold (ht-get yaml-ht "search-threshold"))
         (flags (ht-get yaml-ht "flags"))

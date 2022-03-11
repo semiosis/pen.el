@@ -15,6 +15,9 @@
   "Interactive lambda with no arguments."
   `(lambda () (interactive) ,@body))
 
+(defun inside-docker-p ()
+  (pen-snq "inside-docker-p"))
+
 ;; builtin
 (require 'cl-macs)
 (require 'pp)
@@ -140,7 +143,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-compatibility)
 (require 'pen-counsel)
 
-(if (pen-snq "inside-docker-p")
+(if (inside-docker-p)
     (progn
       (require 'pen-lisp)
       (require 'pen-lispy)
@@ -2015,7 +2018,7 @@ May use to generate code from comments."
 (require 'pen-filters)
 (require 'pen-term)
 (require 'pen-lsp-client)
-(if (pen-snq "inside-docker-p")
+(if (inside-docker-p)
     (require 'pen-lsp-java))
 (require 'ilambda)
 (require 'pen-dap)

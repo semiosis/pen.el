@@ -1142,7 +1142,7 @@
                   :help "Cancel out of this menu"))
     menu))
 
-(if (pen-snq "inside-docker-p")
+(if (inside-docker-p)
     (progn
       (bindings--define-key global-map [menu-bar file] nil)
       (bindings--define-key global-map [menu-bar edit] nil)

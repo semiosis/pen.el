@@ -563,7 +563,8 @@ otherwise the whole string is unquoted."
     (cond ((region-active-p)
            (if arg
                (lispy-unstringify)
-             (pen-region-pipe "q -f")))
+             ;; (pen-region-pipe "q -f")
+             (pen-region-pipe "pen-xa cmd-nice-posix")))
           ((and (setq bnd (lispy--bounds-string))
                 (not (= (point) (car bnd))))
            (if arg

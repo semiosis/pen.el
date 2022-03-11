@@ -1907,4 +1907,57 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (shut-up (if-shebang-exec-otherwise-remove))
   (message "%s" "File saved"))
 
+(defmacro pen-defun (name arglist suggest-predicates &optional docstring &rest body)
+  "Same as defun, except provide context predicates.
+If any of the suggest predicates evaluated to t, then suggest the function"
+  (declare (doc-string 3) (indent 2))
+  (or name (error "Cannot define '%s' as a function" name))
+  (if (null
+       (and (listp arglist)
+            (null (delq t (mapcar #'symbolp arglist)))))
+      (error "Malformed arglist: %s" arglist))
+  (if (null suggest-predicates)
+      (error "Malformed suggest-predicates: %s" suggest-predicates))
+  (setq pen-context-tuples (-uniq (append `((,suggest-predicates
+                                         ,name))
+                                          pen-context-tuples)))
+  (let ((decls (cond
+                ((eq (car-safe docstring) 'declare)
+                 (prog1 (cdr docstring) (setq docstring nil)))
+                ((and (stringp docstring)
+                      (eq (car-safe (car body)) 'declare))
+                 (prog1 (cdr (car body)) (setq body (cdr body)))))))
+    (if docstring (setq body (cons docstring body))
+      (if (null body) (setq body '(nil))))
+    (let ((declarations
+           (mapcar
+            #'(lambda (x)
+                (let ((f (cdr (assq (car x) defun-declarations-alist))))
+                  (cond
+                   (f (apply (car f) name arglist (cdr x)))
+                   ;; Yuck!!
+                   ((and (featurep 'cl)
+                         (memq (car x)  ;C.f. cl-do-proclaim.
+                               '(special inline notinline optimize warn)))
+                    (push (list 'declare x)
+                          (if (stringp docstring)
+                              (if (eq (car-safe (cadr body)) 'interactive)
+                                  (cddr body)
+                                (cdr body))
+                            (if (eq (car-safe (car body)) 'interactive)
+                                (cdr body)
+                              body)))
+                    nil)
+                   (t (message "Warning: Unknown defun property `%S' in %S"
+                               (car x) name)))))
+            decls))
+          (def (list 'defalias
+                     (list 'quote name)
+                     (list 'function
+                           (cons 'lambda
+                                 (cons arglist body))))))
+      (if declarations
+          (cons 'prog1 (cons def declarations))
+        def))))
+
 (provide 'pen-support)

@@ -653,7 +653,7 @@
 ;; (define-key org-mode-map (kbd "M-h") nil)
 (define-key org-mode-map (kbd "M-h") 'org-mark-element)
 
-(if (pen-snq "inside-docker-p")
+(if (inside-docker-p)
     (progn
       (define-key pen-map (kbd "M-l s") 'pen-sph)
       (define-key pen-map (kbd "M-l M-s") 'pen-sph)
@@ -687,7 +687,7 @@
 (define-key pen-map (kbd "M-l M-r M-n") 'yank-function-from-binding)
 (define-key pen-map (kbd "M-l M-r M-m") 'record-keyboard-macro-string)
 
-(if (pen-snq "inside-docker-p")
+(if (inside-docker-p)
     (define-key pen-map (kbd "<M-f4>") 'pen-revert-kill-buffer-and-window))
 
 ;; Perhaps this should also kill the emacsclient
@@ -695,7 +695,7 @@
 ;; (define-key pen-map (kbd "<S-M-f4>") 'pen-revert-and-quit-emacsclient-without-killing-server)
 
 ;; Quit Pen
-(if (pen-snq "inside-docker-p")
+(if (inside-docker-p)
     (define-key pen-map (kbd "<M-f1>") 'penq))
 
 ;; Wow, it also works in the web interface
