@@ -50,7 +50,8 @@
 ;; So if I want line wrap, just toggle chrome a couple of times.
 (global-display-line-numbers-mode 1)
 (global-hide-mode-line-mode -1)
-(menu-bar-mode 1)
+(if (inside-docker-p)
+    (menu-bar-mode 1))
 (visual-line-mode 1)
 
 (define-key visual-line-mode-map (kbd "<remap>") nil)
