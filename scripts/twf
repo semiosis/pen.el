@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+# wait for
+# e:trigger
+
+sentinel="$1"
+test -n "$sentinel" || exit 1
+shift
+
+tmux wait-for "$sentinel"
+
+if test "$#" -gt 0; then
+    "$@"
+fi
