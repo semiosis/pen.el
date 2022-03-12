@@ -645,7 +645,9 @@ Use my position list code. Make it use rosie lang and external software."
   (interactive)
   (if (pen-glossary-path-p)
       (setq imenu-generic-expression pen-glossary-imenu-generic-expression)))
-(add-hook 'text-mode-hook 'pen-glossary-imenu-configure)
+
+(if (inside-docker-p)
+    (add-hook 'text-mode-hook 'pen-glossary-imenu-configure))
 
 (defun pen-button-imenu ()
   (interactive)
