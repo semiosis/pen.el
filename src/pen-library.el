@@ -791,6 +791,86 @@ buffer which is not included when this function returns"
 (defun pen-container-name ()
   (pen-snc "cat ~/pen_container_name.txt"))
 
+(defalias 'tr 's-replace)
+
+(defmacro lk (call)
+  "Create interactive function from function symbol. Create a name for it based on the first arg. Propagate interactive arg"
+  (let* ((symname (car call))
+         (args (cdr call))
+         (newsymname (intern (concat "in-" (symbol-name symname) "-" (slugify (tr "\n" "_" (pen-list2str args)))))))
+    `(defun
+         ,newsymname
+         (arg)
+       (interactive "P")
+       (call-command-or-function
+        ',symname
+        ,@args))))
+
+(defmacro defshellfilter (&rest body)
+  "Define a new string filter function based on a shell command"
+  (let* ((base (slugify (list2string body) t))
+         (sm (intern (concat "sh/m/" base)))
+         (load-file (intern (concat "sh/" base)))
+         (sfptw (intern (concat "sh/ptw/" base))))
+    `(progn (defmacro ,sm
+                (&rest body)
+              `(bp ,@',body ,@body))
+            (defun ,sf
+                (&rest body)
+              (eval `(bp ,@',body ,@body)))
+            ;; This last one is the thing the function returns.
+            (defun ,sfptw
+                (&rest body)
+              (eval `(ptw ',',sf ,@body))))))
+
+(defmacro defshellfilter-new-buffer-mode (mode &rest body)
+  (let* ((base (slugify (list2string body) t))
+         (load-file (intern (concat "sh/" base)))
+         (load-file-nb (intern (concat "sh/nb/" base))))
+    `(progn
+       (defshellfilter ,@body)
+       (defun ,sf-nb (s)
+         (new-buffer-from-string (eval `(,',sf ,s)) nil ,mode)
+         s))))
+(defmacro defshellfilter-new-buffer (&rest body)
+  (let* ((base (slugify (list2string body) t))
+         (load-file (intern (concat "sh/" base)))
+         (load-file-nb (intern (concat "sh/nb/" base))))
+    `(progn
+       (defshellfilter ,@body)
+       (defun ,sf-nb (s)
+         (new-buffer-from-string-detect-lang (eval `(,',sf ,s)))
+         s))))
+
+(defmacro defshellfilter-new-buffer-cmd (pen-cmd ext)
+  (let* ((base (slugify (list2string cmd) t))
+         (load-file (intern (concat "sh/" base)))
+         (sfptw-nb (intern (concat "sh/ptw/nb/" base))))
+    `(progn
+       (defshellfilter ,@body)
+       (defun ,sfptw-nb (s)
+         (new-buffer-from-string (eval `(ptw ',',sf ,s)))
+         s))))
+
+(defmacro defshellcommand (&rest body)
+  "Define a new string output function based on a shell command"
+  (let ((sm (intern (concat "sh/m/" (slugify (list2string body) t))))
+        (load-file (intern (concat "sh/" (slugify (list2string body) t)))))
+    `(progn (defmacro ,sm
+                (&rest body)
+              `(b ,@',body ,@body))
+            (defun ,sf
+                (&rest body)
+              (eval `(b ,@',body ,@body))))))
+
+(defmacro defshellinteractive (&rest body)
+  (let ((load-file (intern (concat "sh/t/" (slugify (list2string body) t))))
+        (sfhist (intern (concat "sh/t/" (slugify (list2string body) t) "-history")))
+        (pen-cmd (mapconcat 'str body " ")))
+    `(defun ,sf (args)
+       (interactive (list (read-string "args:" "" ',sfhist)))
+       (eval `(pen-sph (concat ,,cmd " " ,args))))))
+
 ;; This wasn't great
 (defun pen-m-w-copy ()
   "Forward word if a region is not selected."

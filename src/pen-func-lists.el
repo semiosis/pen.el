@@ -1,6 +1,3 @@
-(require 'pen-nix)
-(require 'pen-syntax-extensions)
-
 (defun eww-open-this-file ()
   (interactive)
   (eww-open-file (buffer-file-path)))
@@ -109,8 +106,6 @@
                          'rust-test
                          'rustic-cargo-current-test))
 
-;; TODO Add
-;; fiximports
 (defset go-mode-funcs '())
 (defset clojure-mode-filters (list
                               (defshellfilter cljfmt)
@@ -136,10 +131,7 @@
 
 (defset web-mode-funcs '(eww-open-this-file elinks-dump-open-this-file))
 
-;; TODO Add
-;; fix-imports -v --debug >(cat) < /home/shane/notes/ws/haskell/examples/repline/cowsay.hs | v
-;; fix-imports -v --debug >(cat)
-(defset haskell-mode-funcs '(ghcid
+;defset haskell-mode-funcs '(ghcid
                              ghcd-info
                              pen-intero-get-type
                              haskell-extend-language
@@ -179,8 +171,7 @@
 
 (defset org-brain-visualize-mode-funcs
   (list
-   ;; 'org-brain-to-dot
-   'org-brain-to-dot-associates
+     'org-brain-to-dot-associates
    'org-brain-to-dot-children
    'pp-org-brain-tree
    'org-brain-show-recursive-children
@@ -205,11 +196,9 @@
 (defset magit-log-mode-funcs '(magit-eww-releases))
 (defset mermaid-mode-funcs '(mermaid-compile))
 
-;; mermaid-show
 (defset markdown-mode-funcs '(markdown-get-mode-here
                               markdown-preview
                               md-org-export-to-org
-                              ;; md-glow
                               md-glow-vs
                               markdown-get-lang-here
                               poly-markdown-mode))
@@ -254,8 +243,6 @@
 (defset terraform-mode-funcs (list
                               (lk (lint "tflint"))))
 (defset text-mode-filters (list
-                           ;; I had to modify sh-notty to add scripts to the start of PATH
-                           ;; (defshellfilter /home/shane/scripts/grex)
                            (defshellfilter grex)
                            (defshellfilter-new-buffer-mode 'text-mode ner)
                            (defshellfilter-new-buffer-mode 'text-mode extract-keyphrases)
@@ -285,17 +272,13 @@
 (defset clql-mode-filters (list (defshellfilter extract-yaml-from-clql)))
 (defset snippet-mode-filters (list (defshellfilter escape-for-yasnippet)))
 (defset yaml-mode-filters (list
-                           ;; Not sure why this runs slowly
                            (defshellfilter compile-yaml)
                            (eval `(defshellfilter ,(intern (nsfa "yq ."))))))
-(defset hy-mode-filters (list (defshellfilter-new-buffer hy2py)
-                         ;; (defun pen-hy2py (s) (pen-sn "hy2py" s))
-                              ))
+(defset hy-mode-filters (list (defshellfilter-new-buffer hy2py)))
 (defset racket-mode-filters (list))
 
 (defset python-mode-filters (list (defshellfilter python2to3)
                                   (defshellfilter autopep8)
-                                  ;; (defshellfilter sh -c "scrape \"^(import [a-zA-Z_-]+|from [a-zA-Z_-]+)\" | cut -d ' ' -f2- | sortnouniq")
                                   (defshellfilter-new-buffer python-scrape-imports)
                                   (defshellfilter python-listify-arguments)
                                   (defshellfilter autopep8 --aggressive)
@@ -324,7 +307,6 @@
                           (defshellfilter mnm-presentation)
                           (defshellfilter-new-buffer-mode 'text-mode ner)
                           (defshellfilter-new-buffer-mode 'text-mode deplacy)
-                          ;; (defshellfilter /home/shane/scripts/grex)
                           (defshellfilter grex)
                           'sh/nb/org2md
                           (defshellfilter python-listify-arguments)
@@ -335,8 +317,6 @@
                           (defshellfilter org-capitalise-headings)
                           (defshellfilter-new-buffer mermaid-show)
                           (defshellfilter-new-buffer plantuml)))
-
-
 
 (defun major-mode-function (&optional mode)
   (interactive)
@@ -367,25 +347,7 @@
         (let* ((funname (fz (eval l)))
                (f (intern funname)))
           (if (not (string-empty-p funname))
-            (filter-selected-region-through-function (intern funname))
-              ;; (save-buffer-state
-              ;;  (filter-selected-region-through-function (intern funname)))
-              ;;(progn
-              ;;  (ignore-errors (kill-buffer "filter-indirect"))
-              ;;  (make-indirect-buffer (current-buffer) "filter-indirect" t)
-              ;;  (switch-to-buffer "filter-indirect")
-              ;;  (insert "hi")
-              ;;  ;; (sleep-for-for-for 1)
-              ;;  ;; (with-current-buffer "filter-indirect"
-              ;;  ;;   (insert "hi")
-              ;;  ;;   ;; (filter-selected-region-through-function f)
-              ;;  ;;   (kill-buffer "filter-indirect"))
-              ;;  )
-            ))
+              (filter-selected-region-through-function (intern funname))))
       (message (concat (symbol-name l) " is not defined")))))
-
-;; (fz org-mode-filters)
-
-;; (define-key pen-map (kbd "M-l") )
 
 (provide 'pen-func-lists)
