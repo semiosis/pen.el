@@ -119,13 +119,19 @@
 
 (defun force-keyvalue (e)
   ;; Make a new list
-  (list
-   (car e)
-   (if (or (stringp (cdr e))
-           (symbolp (cdr e))
-           (numberp (cdr e)))
-       (cdr e)
-     nil)))
+  (ignore-errors
+    (try
+     (list
+      (car e)
+      (if (or (stringp (cdr e))
+              (symbolp (cdr e))
+              (numberp (cdr e)))
+          (cdr e)
+        nil))
+     (list (car e) nil))))
+
+;; (advice-add 'json-encode-key :around #'ignore-errors-around-advice)
+;; (advice-remove 'json-encode-key #'ignore-errors-around-advice)
 
 (defun buffer-variables-json ()
   "Gets some properties of the current emacs buffer in json format."
