@@ -553,6 +553,13 @@ If eterm-color doesn't exist, prompt to fetch and compile it.")
         ;; (eval (car (read-from-string string 1))))
         (t)))
 
+(defun term-restart-process ()
+  (interactive)
+  (let* ((p (get-buffer-process (current-buffer)))
+         (c (car (seq-reverse (process-command p))))
+         (n (process-name p)))
+    (term-exec (current-buffer) n c nil nil)))
+
 (define-key global-map [xterm-paste] 'pen-paste)
 
 (defun term-update-mode-line ())
