@@ -8,10 +8,6 @@
   "Convert a newline delimited string to list."
   (split-string s "\n"))
 
-(defun list2string (list)
-  "Convert a list to a newline delimited string."
-  (mapconcat 'str list "\n"))
-
 (defun pen-q (&rest strings)
   (let ((print-escape-newlines t))
     (mapconcat 'identity (mapcar 'prin1-to-string strings) " ")))

@@ -806,6 +806,10 @@ buffer which is not included when this function returns"
         ',symname
         ,@args))))
 
+(defun list2string (list)
+  "Convert a list to a newline delimited string."
+  (mapconcat 'str list "\n"))
+
 (defmacro defshellfilter (&rest body)
   "Define a new string filter function based on a shell command"
   (let* ((base (slugify (list2string body) t))
