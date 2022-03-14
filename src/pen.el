@@ -41,6 +41,7 @@
 (require 'selected)
 (require 'pcsv)
 (require 'pcre2el)
+(require 'pcase)
 (require 'f)
 (require 'lsp-mode)
 (require 'lsp-ui)

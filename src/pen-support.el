@@ -372,7 +372,10 @@ Takes into account the current file name."
      (if (and
           (not dont-clean-tramp)
           (re-match-p "/[^:]+:" dir))
-         (setq dir "/"))
+         (progn
+           (let-values ())
+           ;; (tv dir :dir "/")
+           (setq dir "/")))
      dir)))
 
 (defmacro shut-up-c (&rest body)
