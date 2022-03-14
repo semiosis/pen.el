@@ -956,7 +956,9 @@ when s is a string, set the clipboard to s"
   (if s
       (if (not silent) (message "%s" (concat "Copied: " s)))
     (progn
-      (shell-command-to-string "xsel --clipboard --output"))))
+      ;; Frustratingly, shell-command-to-string uses the current directory.
+      ;; (shell-command-to-string "xsel --clipboard --output")
+      (pen-sn "xsel --clipboard --output"))))
 
 (defun pen-ivy-completing-read (prompt collection
                                        &optional predicate require-match initial-input
