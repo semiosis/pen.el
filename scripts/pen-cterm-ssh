@@ -58,6 +58,10 @@ fi
 hn="$(hostname)"
 hn="$(p "$hn" | sed 's/^pen-//')"
 
+# Just forcefully set the term to screen-256color.
+# I can remove these statements without too much trouble, but some programs such as vim don't like it.
+# If I log into a remote server while using cterm/pet then eterm-256color will cause problems.
+
 if test "$SSH_TO_HOST" = "y"; then
     ssh \
         -i "~/.pen/host_key" \
@@ -66,8 +70,8 @@ if test "$SSH_TO_HOST" = "y"; then
         -o UserKnownHostsFile=/dev/null \
         -o StrictHostKeyChecking=no \
         -t $PEN_USER@$hn \
-        "bash -l -c $(cmd-nice-posix ". ~/.profile; cd $(cmd-nice-posix "$CWD"); $CMD")"
+        "bash -l -c $(cmd-nice-posix ". ~/.profile; export TERM=screen-256color; cd $(cmd-nice-posix "$CWD"); $CMD")"
 else
     cd "$CWD"
-    eval "$CMD"
+    eval "export TERM=screen-256color; $CMD"
 fi
