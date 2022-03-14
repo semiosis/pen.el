@@ -139,6 +139,7 @@ Be mindful of quoting arguments correctly."
 (if (inside-docker-p)
     (require 'pen-selected))
 (require 'pen-cua)
+(require 'pen-tramp)
 (require 'pen-text-coding-system)
 (require 'pen-editing)
 (require 'pen-hippie-expand)
