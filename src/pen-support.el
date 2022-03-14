@@ -356,16 +356,24 @@ STRINGS will be evaluated in normal `or' order."
   (interactive)
   (f-expand (substring (shut-up-c (pwd)) 10)))
 
-(defun get-dir ()
+(defun get-dir (&optional dont-clean-tramp)
   "Gets the directory of the current buffer's file. But this could be different from emacs' working directory.
 Takes into account the current file name."
   (shut-up-c
-   (let ((filedir (if buffer-file-name
-                      (file-name-directory buffer-file-name)
-                    (file-name-directory (cwd)))))
-     (if (s-blank? filedir)
-         (cwd)
-       filedir))))
+   (let* ((filedir (if buffer-file-name
+                       (file-name-directory buffer-file-name)
+                     (file-name-directory (cwd))))
+          (dir
+           (if (s-blank? filedir)
+               (cwd)
+             filedir)))
+
+     ;; If the dir is a tramp path, just use root
+     (if (and
+          (not dont-clean-tramp)
+          (re-match-p "/[^:]+:" dir))
+         (setq dir "/"))
+     dir)))
 
 (defmacro shut-up-c (&rest body)
   "This works for c functions where shut-up does not."
