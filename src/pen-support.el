@@ -507,7 +507,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
         (setq dir (get-dir)))
 
     ;; If the dir is a tramp path, just use root
-    (if (re-match-p "/[^:]+:" (get-path))
+    (if (re-match-p "/[^:]+:" (get-dir))
         (setq dir "/"))
 
     (let ((default-directory dir))
