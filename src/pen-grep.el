@@ -93,7 +93,9 @@
                              (concat "-p " (pen-q path-re) " "))))
             (new-buffer-from-string (ignore-errors (pen-sn (concat "ead " globstr (pen-q pattern) " | pen-mnm | cat") nil wd))))
         (grep-mode)))))
-(defalias 'wgrep 'pen-wgrep)
+
+(if (inside-docker-p)
+    (defalias 'wgrep 'pen-wgrep))
 
 (define-key global-map (kbd "M-3") #'pen-grep-for-thing-select)
 
