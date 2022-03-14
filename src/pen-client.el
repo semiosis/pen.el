@@ -109,6 +109,15 @@
       (ignore-errors (pen-add-ink-change-hook)))
     buffer))
 (defalias 'nbfs 'new-buffer-from-string)
+
+(defun new-buffer-from-string-detect-lang (s &optional mode)
+  (let* ((b (new-buffer-from-string s)))
+        (with-current-buffer b
+          (switch-to-buffer b)
+          (if mode
+              (funcall mode)
+            (guess-major-mode)))))
+
 (defun new-buffer-from-o (o)
   (new-buffer-from-string
    (if (stringp o)

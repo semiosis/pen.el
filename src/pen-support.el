@@ -506,6 +506,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (if (not dir)
         (setq dir (get-dir)))
 
+    ;; If the dir is a tramp path, just use root
+    (if (re-match-p "/[^:]+:" (get-path))
+        (setq dir "/"))
+
     (let ((default-directory dir))
       (if b_unbuffer
           (setq shell-cmd (concat "unbuffer -p " shell-cmd)))
@@ -1657,7 +1661,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defun pen-save-buffer-to-file ()
   (write-to-file
-   (buffer-contents)
+   (buffer-string)
    (pen-tf
     (pen-git-buffer-name-to-file-name))))
 

@@ -68,7 +68,7 @@
   (interactive)
   (let* ((row (+ (term-current-row) 1))
          (col (term-current-column))
-         (buf (new-buffer-from-string (buffer-contents)))
+         (buf (new-buffer-from-string (buffer-string)))
          (height term-height)
          (linecontents (with-current-buffer buf
                          (let ((nbackhistory (- (count-lines (point-min) (point-max)) height)))
@@ -501,7 +501,7 @@ without any interpretation."
   (interactive)
   (let* ((row (+ (term-current-row) 1))
          (col (term-current-column))
-         (buf (new-buffer-from-string (buffer-contents)))
+         (buf (new-buffer-from-string (buffer-string)))
          (height term-height)
          (linecontents (with-current-buffer buf
                          (let ((nbackhistory (- (count-lines (point-min) (point-max)) height)))

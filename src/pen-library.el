@@ -814,14 +814,14 @@ buffer which is not included when this function returns"
   "Define a new string filter function based on a shell command"
   (let* ((base (slugify (list2string body) t))
          (sm (intern (concat "sh/m/" base)))
-         (load-file (intern (concat "sh/" base)))
+         (sf (intern (concat "sh/" base)))
          (sfptw (intern (concat "sh/ptw/" base))))
     `(progn (defmacro ,sm
                 (&rest body)
-              `(bp ,@',body ,@body))
+              `(pen-bp ,@',body ,@body))
             (defun ,sf
                 (&rest body)
-              (eval `(bp ,@',body ,@body)))
+              (eval `(pen-bp ,@',body ,@body)))
             ;; This last one is the thing the function returns.
             (defun ,sfptw
                 (&rest body)
@@ -829,8 +829,8 @@ buffer which is not included when this function returns"
 
 (defmacro defshellfilter-new-buffer-mode (mode &rest body)
   (let* ((base (slugify (list2string body) t))
-         (load-file (intern (concat "sh/" base)))
-         (load-file-nb (intern (concat "sh/nb/" base))))
+         (sf (intern (concat "sh/" base)))
+         (sf-nb (intern (concat "sh/nb/" base))))
     `(progn
        (defshellfilter ,@body)
        (defun ,sf-nb (s)
@@ -838,8 +838,8 @@ buffer which is not included when this function returns"
          s))))
 (defmacro defshellfilter-new-buffer (&rest body)
   (let* ((base (slugify (list2string body) t))
-         (load-file (intern (concat "sh/" base)))
-         (load-file-nb (intern (concat "sh/nb/" base))))
+         (sf (intern (concat "sh/" base)))
+         (sf-nb (intern (concat "sh/nb/" base))))
     `(progn
        (defshellfilter ,@body)
        (defun ,sf-nb (s)
@@ -848,7 +848,7 @@ buffer which is not included when this function returns"
 
 (defmacro defshellfilter-new-buffer-cmd (pen-cmd ext)
   (let* ((base (slugify (list2string cmd) t))
-         (load-file (intern (concat "sh/" base)))
+         (sf (intern (concat "sh/" base)))
          (sfptw-nb (intern (concat "sh/ptw/nb/" base))))
     `(progn
        (defshellfilter ,@body)
@@ -859,16 +859,16 @@ buffer which is not included when this function returns"
 (defmacro defshellcommand (&rest body)
   "Define a new string output function based on a shell command"
   (let ((sm (intern (concat "sh/m/" (slugify (list2string body) t))))
-        (load-file (intern (concat "sh/" (slugify (list2string body) t)))))
+        (sf (intern (concat "sh/" (slugify (list2string body) t)))))
     `(progn (defmacro ,sm
                 (&rest body)
-              `(b ,@',body ,@body))
+              `(pen-b ,@',body ,@body))
             (defun ,sf
                 (&rest body)
-              (eval `(b ,@',body ,@body))))))
+              (eval `(pen-b ,@',body ,@body))))))
 
 (defmacro defshellinteractive (&rest body)
-  (let ((load-file (intern (concat "sh/t/" (slugify (list2string body) t))))
+  (let ((sf (intern (concat "sh/t/" (slugify (list2string body) t))))
         (sfhist (intern (concat "sh/t/" (slugify (list2string body) t) "-history")))
         (pen-cmd (mapconcat 'str body " ")))
     `(defun ,sf (args)
