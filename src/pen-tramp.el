@@ -31,4 +31,4 @@
             (git-gutter+-process-diff (git-gutter+-remote-file-path repo-root file)))
         (git-gutter+-process-diff (git-gutter+-local-file-path file))))))
 
-(provide 'my-tramp)
+(provide 'pen-tramp)
