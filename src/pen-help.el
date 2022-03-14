@@ -74,6 +74,4 @@
          (funstr (str (key-binding (kbd sequence)))))
     (xc (concat "(define-key " mapstr " (kbd " (pen-q sequence) ") '" funstr ")"))))
 
-
-
 (provide 'pen-help)
