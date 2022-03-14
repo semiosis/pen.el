@@ -42,7 +42,7 @@
                      (get-top-level)))
   (let* ((cmd (concat "pen-ead " (pen-q (pen-eatify thing))))
          (cmdnoeat (if paths-string
-                       (concat "umn | uniqnosort | pen-ead " (pen-q thing))
+                       (concat "pen-umn | uniqnosort | pen-ead " (pen-q thing))
                      (concat "pen-ead " (pen-q thing))))
          (slug (slugify cmdnoeat))
          (bufname (concat "*grep:" slug "*"))
