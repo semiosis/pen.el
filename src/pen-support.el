@@ -373,9 +373,9 @@ Takes into account the current file name."
           (not dont-clean-tramp)
           (re-match-p "/[^:]+:" dir))
          (progn
-           (let-values ())
-           ;; (tv dir :dir "/")
-           (setq dir "/")))
+           (pcase-let (`(add ,x ,y) my-list)
+             ;; (tv dir :dir "/")
+             (setq dir "/"))))
      dir)))
 
 (defmacro shut-up-c (&rest body)
