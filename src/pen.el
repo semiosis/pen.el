@@ -28,6 +28,7 @@
 (require 'pen-global-prefix)
 (require 'pen-regex)
 (require 'pen-support)
+(require 'pen-func-lists)
 (require 'dash)
 (require 'projectile)
 (require 'transient)
