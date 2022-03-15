@@ -326,8 +326,8 @@
   (let* ((lsym (intern (concat (symbol-name mode) "-funcs")))
          (progsym (intern "prog-mode-funcs"))
          (func-list (if (variable-p lsym)
-                (symbol-value lsym)
-                nil))
+                        (symbol-value lsym)
+                      nil))
          (pl (if (variable-p progsym)
                  (symbol-value progsym)
                nil))
@@ -336,7 +336,7 @@
                         (append '() func-list pl)
                       func-list)))
     (if finallist
-        (call-interactively (intern (fz finallist)))
+        (call-interactively (intern (fz finallist nil nil "major-mode-function: ")))
       (message (concat (symbol-name finallist) " is empty")))))
 
 (defun major-mode-filter (&optional mode)
@@ -345,7 +345,7 @@
       (setq mode major-mode))
   (let ((lsym (intern (concat (symbol-name mode) "-filters"))))
     (if (variable-p lsym)
-        (let* ((funname (fz (eval lsym)))
+        (let* ((funname (fz (eval lsym) nil nil "major-mode-filter: "))
                (f (intern funname)))
           (if (not (string-empty-p funname))
               (filter-selected-region-through-function (intern funname))))

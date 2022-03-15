@@ -469,7 +469,7 @@ Takes into account the current file name."
                  ;; (setq dir tmd)
                (progn
                  (let ((default-directory "/"))
-                   (if (not (pen-snq (pen-cmd "mountpoint" tmd)))
+                   (if (not (pen-snq (pen-cmd "mountpoint" tmd) nil "/"))
                        (progn
                          ;; It may already be unmounted, but it may have
                          ;; "Transport endpoint is not connected",
@@ -717,9 +717,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (interactive)
   (pen-sn shell-cmd stdin dir nil detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code))
 
-(defun pen-snc (shell-cmd &optional stdin)
+(defun pen-snc (shell-cmd &optional stdin dir)
   "sn chomp"
-  (chomp (pen-sn shell-cmd stdin)))
+  (chomp (pen-sn shell-cmd stdin dir)))
 
 (defun pen-eval-string (string)
   "Evaluate elisp code stored in a string."
@@ -774,15 +774,17 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (let ((code (apply 'pen-sne (append (list shell-cmd stdin) args))))
     (equal code 0)))
 
+;; slugify is used in sn, so it must contain an explicit directory, to be safe,
+;; so that when called by (get-path), this does not do an infinite loop.
 (defun slugify (input &optional joinlines length)
   "Slugify input"
   (interactive)
   (let ((slug
          (if joinlines
-             (pen-sn "tr '\n' - | slugify" input)
-           (pen-sn "slugify" input))))
+             (pen-sn "tr '\n' - | slugify" input "/")
+           (pen-sn "slugify" input "/"))))
     (if length
-        (pen-snc (pen-cmd "head" "-c" length))
+        (chomp (pen-sn (pen-cmd "head" "-c" length) nil "/"))
       slug)))
 
 (defun fz-completion-second-of-tuple-annotation-function (s)

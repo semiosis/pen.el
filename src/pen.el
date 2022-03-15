@@ -765,13 +765,16 @@ Reconstruct the entire yaml-ht for a different language."
   ;;   (pen-snc cmd))
   )
 
-
-
+;; Dir is specified here to prevent a bug with tramp
+;; Call with "/"
 (defun pen-list2cmd (l)
-  (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))))
+  (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))
+           nil default-directory))
 
 (defun pen-cmd (&rest args)
-  (pen-list2cmd args))
+  ;; default-directory specified here to avoid a bug with tramp
+  (let ((default-directory "/"))
+    (pen-list2cmd args)))
 
 (defun tee (fp input)
   (pen-sn (pen-cmd "tee" fp) input))
