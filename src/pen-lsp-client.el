@@ -369,6 +369,7 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 
 ;; If I can fabricate the event I can utilise the built-in emacs menu system instead of right-click menu
 ;; I can simulate it with `(mouse-3 ,(posn-at-point))
+;; See j:lsp-mouse-click
 
 (defun pen-lsp-mouse-click (event)
   (interactive (list `(mouse-3 ,(posn-at-point))))
