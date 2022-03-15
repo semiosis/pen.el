@@ -358,10 +358,21 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 ;;            (3 . 7)
 ;;            (10 . 21)))
 
+;; (#<window 46 on pen-lsp-client.el> 15059
+;;           (5 . 18)
+;;           0 nil 15059
+;;           (5 . 18)
+;;           nil
+;;           (0 . 0)
+;;           (1 . 0))
+
+
 ;; If I can fabricate the event I can utilise the built-in emacs menu system instead of right-click menu
+;; I can simulate it with `(mouse-3 ,(posn-at-point))
 
 (defun pen-lsp-mouse-click (event)
-  (interactive "e")
+  (interactive (list `(mouse-3 ,(posn-at-point))))
+
   (let* ((ec (event-start event))
          (choice (x-popup-menu event lsp-mode-menu))
          (action (lookup-key lsp-mode-menu (apply 'vector choice))))
