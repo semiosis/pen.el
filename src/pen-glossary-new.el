@@ -999,6 +999,8 @@ Use my position list code. Make it use rosie lang and external software."
             (derived-mode-p 'special-mode))
         (pen-generate-glossary-buttons-over-buffer nil nil t))))
 
+(advice-add 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened :around #'ignore-errors-around-advice)
+
 (defvar pen-draw-glossary-buttons-timer nil)
 
 (defun pen-toggle-draw-glossary-buttons-timer (&optional newstate)
