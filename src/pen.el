@@ -2215,6 +2215,7 @@ May use to generate code from comments."
    ((pen-snq "which fp") (find-file (chomp (pen-sn (concat "which " fp)))))
    ((pen-snq (pen-cmd "test" "-f" fp)) (find-file (chomp fp)))
    ((pen-snq (pen-cmd "test" "-d" fp)) (find-file (chomp fp)))
+   ((string-match "^/[^:]+:" fp) (find-file (chomp fp)))
    (t (message (concat fp " not found")))))
 (defalias 'pen-edit-which 'pen-edit-fp-on-path)
 (defalias 'pen-ewhich 'pen-edit-fp-on-path)

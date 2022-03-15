@@ -166,7 +166,7 @@ START and END can be in either order."
   "Runs command in a new window/pane"
   (interactive)
 
-  (if (string-match "/[^:]+:" (or dir (get-path nil t)))
+  (if (string-match "/[^:]+:" (or dir (get-path nil t) ""))
       (let ((cand-dir (tramp-localdir)))
           (if (f-directory-p cand-dir)
               (setq dir cand-dir)
