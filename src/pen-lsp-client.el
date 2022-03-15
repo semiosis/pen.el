@@ -392,6 +392,8 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
              (call-interactively action))))))))
 (advice-remove 'pen-lsp-mouse-click #'ignore-errors-around-advice)
 
+(define-key lsp-mode-map (kbd "<mouse-3>") nil)
+
 ;; $EMACSD/manual-packages/company-lsp/company-lsp.el
 ;; Sadly can't override because of lexical scope
 ;; j:company-lsp--candidates-async
