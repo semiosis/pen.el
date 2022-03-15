@@ -383,7 +383,7 @@ STRINGS will be evaluated in normal `or' order."
                   (pen-sps
                    (concat
                     (pen-cmd "ssh-mount" "-sl" "-p" port host user "/")
-                    "; sps zcd " (pen-cmd mountdir))))
+                    "; pen-sps zcd " (pen-cmd mountdir))))
                 ;; (pen-term-nsfa
                 ;;  (concat
                 ;;   ;; (pen-cmd "ssh-mount" "-sshcmd" "ssh -oBatchMode=no -t" "-sl" "-p" port host user remote-dir)

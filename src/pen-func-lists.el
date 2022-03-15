@@ -274,7 +274,7 @@
 (defset snippet-mode-filters (list (defshellfilter escape-for-yasnippet)))
 (defset yaml-mode-filters (list
                            (defshellfilter compile-yaml)
-                           (eval `(defshellfilter ,(intern (nsfa "yq ."))))))
+                           (eval `(defshellfilter ,(intern (pen-nsfa "yq ."))))))
 (defset hy-mode-filters (list (defshellfilter-new-buffer hy2py)))
 (defset racket-mode-filters (list))
 
