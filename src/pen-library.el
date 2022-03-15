@@ -887,4 +887,27 @@ buffer which is not included when this function returns"
 
 (define-key pen-map (kbd "M-w") 'xc)
 
+;; Override this to use message-no-echo
+(defun toggle-truncate-lines (&optional arg)
+  "Toggle truncating of long lines for the current buffer.
+When truncating is off, long lines are folded.
+With prefix argument ARG, truncate long lines if ARG is positive,
+otherwise fold them.  Note that in side-by-side windows, this
+command has no effect if `truncate-partial-width-windows' is
+non-nil."
+  (interactive "P")
+  (setq truncate-lines
+	      (if (null arg)
+	          (not truncate-lines)
+	        (> (prefix-numeric-value arg) 0)))
+  (force-mode-line-update)
+  (unless truncate-lines
+    (let ((buffer (current-buffer)))
+      (walk-windows (lambda (window)
+		                  (if (eq buffer (window-buffer window))
+			                    (set-window-hscroll window 0)))
+		                nil t)))
+  (pen-message-no-echo "Truncate long lines %s"
+	                     (if truncate-lines "enabled" "disabled")))
+
 (provide 'pen-library)

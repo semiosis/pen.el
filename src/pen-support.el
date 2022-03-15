@@ -356,6 +356,36 @@ STRINGS will be evaluated in normal `or' order."
   (interactive)
   (f-expand (substring (shut-up-c (pwd)) 10)))
 
+(defun tramp-mount-sshfs ()
+  (interactive)
+  ;; /ssh:andrewdo@localhost#2222:/home/andrewdo/
+  (let ((dir (get-dir t))
+        (mountdir (tramp-mountdir)))
+    (if mountdir
+        (pcase-let ((`("/ssh" ,full-target ,remote-dir) (s-split ":" dir)))
+          (if (re-match-p "#" full-target)
+              (let* ((target (s-replace-regexp "#.*" "" full-target))
+                     (port (s-replace-regexp ".*#" "" full-target))
+                     (host (s-replace-regexp ".*@" "" target))
+                     (user (s-replace-regexp "@.*" "" target)))
+                (sps (concat
+                      (cmd "ssh-mount" "-p" port host user remote-dir)
+                      "; zcd .")))))
+      ;; (tv dir :dir "/")
+      (setq dir "/"))))
+
+(defun tramp-mountdir ()
+  ;; /ssh:andrewdo@localhost#2222:/home/andrewdo/
+  (let ((dir (get-dir t)))
+    (pcase-let ((`("/ssh" ,full-target ,remote-dir) (s-split ":" dir)))
+      (if (sor remote-dir)
+          (if (re-match-p "#" full-target)
+              (let* ((target (s-replace-regexp "#.*" "" full-target))
+                     (port (s-replace-regexp ".*#" "" full-target))
+                     (host (s-replace-regexp ".*@" "" target))
+                     (user (s-replace-regexp "@.*" "" target)))
+                (concat "/media/" host "_" user)))))))
+
 (defun get-dir (&optional dont-clean-tramp)
   "Gets the directory of the current buffer's file. But this could be different from emacs' working directory.
 Takes into account the current file name."
@@ -372,10 +402,17 @@ Takes into account the current file name."
      (if (and
           (not dont-clean-tramp)
           (re-match-p "/[^:]+:" dir))
-         (progn
-           (pcase-let (`(add ,x ,y) my-list)
-             ;; (tv dir :dir "/")
-             (setq dir "/"))))
+         (setq  dir "/")
+         ;; /ssh:andrewdo@localhost#2222:/home/andrewdo/
+         ;; (pcase-let (`("/ssh" ,full-target ,remote-dir) (s-split ":" dir))
+         ;;   (if (sor remote-dir)
+         ;;       (if (re-match-p "#" full-target)
+         ;;           (let ((target (s-replace-regexp "#.*" "" target))
+         ;;                 (port (s-replace-regexp ".*#" "" target)))
+         ;;             (sps )))
+         ;;     ;; (tv dir :dir "/")
+         ;;     (setq dir "/")))
+       )
      dir)))
 
 (defmacro shut-up-c (&rest body)
@@ -518,7 +555,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
         (setq dir (get-dir)))
 
     ;; If the dir is a tramp path, just use root
-    (if (re-match-p "/[^:]+:" (get-dir))
+    (if (re-match-p "/[^:]+:" (get-dir t))
         (setq dir "/"))
 
     (let ((default-directory dir))

@@ -11,11 +11,14 @@
   (xc (pen-mnm (xc nil t t)) t t)
   (call-interactively 'cua-paste))
 
-(defun cua-paste-around-advice (proc &rest args)
-  (xc (pen-mnm (xc nil t)) t)
-  (let ((res (apply proc args)))
-    res))
-(advice-add 'cua-paste :around #'cua-paste-around-advice)
+(if (inside-docker-p)
+    (progn
+      (defun cua-paste-around-advice (proc &rest args)
+        (xc (pen-mnm (xc nil t)) t)
+        (let ((default-directory "/"))
+          (let ((res (apply proc args)))
+            res)))
+      (advice-add 'cua-paste :around #'cua-paste-around-advice)))
 
 (define-key lispy-mode-map (kbd "C-y") 'pen-lispy-paste)
 
