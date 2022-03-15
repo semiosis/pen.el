@@ -128,4 +128,23 @@
         :docs '(pf-get-documentation-for-syntax-given-screen/2)
         :preverr '())
 
+(handle '(emacs-lisp-mode)
+        :repls '(ielm)
+        :formatters '(lsp-format-buffer)
+        :global-references '(my-helpful--all-references-sym)
+        :docs '(my-doc-override
+                describe-thing-at-point
+                helpful-symbol-at-point)
+        :godef '(lispy-goto-symbol
+                 elisp-slime-nav-find-elisp-thing-at-point
+                 lsp-find-definition
+                 xref-find-definitions-immediately
+                 helm-gtags-dwim)
+        :jumpto '(lispy-goto)
+        :docsearch '(my/doc)
+        :docfun '(helpful-symbol)
+        :nextdef '(my-prog-next-def
+                   lispy-flow)
+        :prevdef '(my-prog-prev-def))
+
 (provide 'pen-handle)

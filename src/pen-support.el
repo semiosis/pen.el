@@ -400,7 +400,7 @@ STRINGS will be evaluated in normal `or' order."
   (if (not tramp-dir)
       (setq tramp-dir (get-dir t)))
 
-  ;; default directory is set so that slugify does not call (get-path t)
+  ;; default directory is set so that slugify does not call (get-dir t)
   (let ((default-directory "/"))
     (pcase-let ((`("/ssh" ,full-target ,remote-dir) (s-split ":" tramp-dir)))
       (if (sor remote-dir)
@@ -420,7 +420,7 @@ STRINGS will be evaluated in normal `or' order."
   (if (not tramp-dir)
       (setq tramp-dir (get-dir t)))
 
-  ;; default directory is set so that slugify does not call (get-path t)
+  ;; default directory is set so that slugify does not call (get-dir t)
   (let ((default-directory "/"))
     (pcase-let ((`("/ssh" ,full-target ,remote-dir) (s-split ":" tramp-dir)))
       (if (sor remote-dir)
@@ -775,7 +775,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (equal code 0)))
 
 ;; slugify is used in sn, so it must contain an explicit directory, to be safe,
-;; so that when called by (get-path), this does not do an infinite loop.
+;; so that when called by (get-dir), this does not do an infinite loop.
 (defun slugify (input &optional joinlines length)
   "Slugify input"
   (interactive)
