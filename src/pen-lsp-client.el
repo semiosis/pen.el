@@ -385,9 +385,12 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
     (run-with-idle-timer
      0.001 nil
      (lambda ()
-       (cl-labels ((check (value) (not (null value))))
-         (when choice
-           (call-interactively action)))))))
+       ;; I also had to add ignore-errors here, so I can C-g the menu
+       (ignore-errors
+         (cl-labels ((check (value) (not (null value))))
+           (when choice
+             (call-interactively action))))))))
+(advice-remove 'pen-lsp-mouse-click #'ignore-errors-around-advice)
 
 ;; $EMACSD/manual-packages/company-lsp/company-lsp.el
 ;; Sadly can't override because of lexical scope
