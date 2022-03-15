@@ -16,7 +16,8 @@
    'lsp-yaml-download-schema-store-db
    (df yaml-multiline-chrome (chrome "https://yaml-multiline.info/"))
    (dff (chrome "https://lzone.de/cheat-sheet/YAML"))))
-(defset dired-mode-funcs '(dired-narrow
+(defset dired-mode-funcs '(tramp-mount-sshfs
+                           dired-narrow
                            dired-narrow-fuzzy
                            open-main
                            dired-toggle-read-only

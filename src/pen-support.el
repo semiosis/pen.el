@@ -15,8 +15,6 @@
         (shut-up (write-to-file input fp)))
     fp))
 
-(defalias 're-match-p 'string-match)
-
 (defun pen-is-glossary-file (&optional fp)
   ;; This path works also with info
   (setq fp (or fp
@@ -356,35 +354,88 @@ STRINGS will be evaluated in normal `or' order."
   (interactive)
   (f-expand (substring (shut-up-c (pwd)) 10)))
 
-(defun tramp-mount-sshfs ()
+(defun tramp-mount-sshfs (&optional tramp-dir)
   (interactive)
   ;; /ssh:andrewdo@localhost#2222:/home/andrewdo/
-  (let ((dir (get-dir t))
-        (mountdir (tramp-mountdir)))
+
+  (if (not tramp-dir)
+      (setq tramp-dir (get-dir t)))
+
+  (let ((mountdir (tramp-mountdir nil t)))
     (if mountdir
-        (pcase-let ((`("/ssh" ,full-target ,remote-dir) (s-split ":" dir)))
+        (pcase-let ((`("/ssh" ,full-target ,remote-dir) (s-split ":" tramp-dir)))
           (if (re-match-p "#" full-target)
               (let* ((target (s-replace-regexp "#.*" "" full-target))
                      (port (s-replace-regexp ".*#" "" full-target))
                      (host (s-replace-regexp ".*@" "" target))
                      (user (s-replace-regexp "@.*" "" target)))
-                (sps (concat
-                      (cmd "ssh-mount" "-p" port host user remote-dir)
-                      "; zcd .")))))
-      ;; (tv dir :dir "/")
-      (setq dir "/"))))
+                ;; (sps (concat
+                ;;       ;; (pen-cmd "ssh-mount" "-sshcmd" "ssh -oBatchMode=no -t" "-sl" "-p" port host user remote-dir)
+                ;;       ;; TMUX= new doesn't work either
+                ;;       (pen-cmd "ssh-mount" "-sl" "-p" port host user remote-dir)
+                ;;       "; zcd " (pen-cmd mountdir)))
+                ;; Even with pen-term-nsfa it's not mounting
+                ;; Also the first password always fails. What is going on?
+                ;; Sad! Just copy the command then.
+                ;; Ahhh! It's the working directory that is the problem.
+                ;; (xc (pen-cmd "ssh-mount" "-sl" "-p" port host user remote-dir))
+                (let ((default-directory "/"))
+                  (pen-sps
+                   (concat
+                    (pen-cmd "ssh-mount" "-sl" "-p" port host user "/")
+                    "; sps zcd " (pen-cmd mountdir))))
+                ;; (pen-term-nsfa
+                ;;  (concat
+                ;;   ;; (pen-cmd "ssh-mount" "-sshcmd" "ssh -oBatchMode=no -t" "-sl" "-p" port host user remote-dir)
+                ;;   ;; TMUX= new doesn't work either
+                ;;   "TMUX= "
+                ;;   (pen-cmd "tmux" "new" "ssh-mount" "-sl" "-p" port host user remote-dir)
+                ;;   "; sps zcd " (pen-cmd mountdir))
+                ;;  nil nil nil nil "/")
+                ))))))
 
-(defun tramp-mountdir ()
+(defun tramp-mountdir (&optional tramp-dir root)
   ;; /ssh:andrewdo@localhost#2222:/home/andrewdo/
-  (let ((dir (get-dir t)))
-    (pcase-let ((`("/ssh" ,full-target ,remote-dir) (s-split ":" dir)))
+
+  (if (not tramp-dir)
+      (setq tramp-dir (get-dir t)))
+
+  ;; default directory is set so that slugify does not call (get-path t)
+  (let ((default-directory "/"))
+    (pcase-let ((`("/ssh" ,full-target ,remote-dir) (s-split ":" tramp-dir)))
       (if (sor remote-dir)
           (if (re-match-p "#" full-target)
               (let* ((target (s-replace-regexp "#.*" "" full-target))
                      (port (s-replace-regexp ".*#" "" full-target))
                      (host (s-replace-regexp ".*@" "" target))
-                     (user (s-replace-regexp "@.*" "" target)))
-                (concat "/media/" host "_" user)))))))
+                     (user (s-replace-regexp "@.*" "" target))
+                     (slug (slugify remote-dir)))
+                (if root
+                    (concat "/media/ssh-" host "_" user)
+                  (concat "/media/ssh-" host "_" user "-" slug))))))))
+
+(defun tramp-remotedir (&optional tramp-dir)
+  ;; /ssh:andrewdo@localhost#2222:/home/andrewdo/
+
+  (if (not tramp-dir)
+      (setq tramp-dir (get-dir t)))
+
+  ;; default directory is set so that slugify does not call (get-path t)
+  (let ((default-directory "/"))
+    (pcase-let ((`("/ssh" ,full-target ,remote-dir) (s-split ":" tramp-dir)))
+      (if (sor remote-dir)
+          remote-dir))))
+
+(defun tramp-localdir (&optional tramp-dir)
+  ;; /ssh:andrewdo@localhost#2222:/home/andrewdo/
+
+  (if (not tramp-dir)
+      (setq tramp-dir (get-dir t)))
+
+  (if tramp-dir
+      (let ((tmd (tramp-mountdir tramp-dir t))
+            (trd (tramp-remotedir tramp-dir)))
+        (f-join tmd (s-replace-regexp "^/" "" trd)))))
 
 (defun get-dir (&optional dont-clean-tramp)
   "Gets the directory of the current buffer's file. But this could be different from emacs' working directory.
@@ -399,20 +450,39 @@ Takes into account the current file name."
              filedir)))
 
      ;; If the dir is a tramp path, just use root
+     ;; (setq dir "/")
+     ;; get-dir must provide the tramp path if requested
+     ;; not the mount path
      (if (and
-          (not dont-clean-tramp)
-          (re-match-p "/[^:]+:" dir))
-         (setq  dir "/")
-         ;; /ssh:andrewdo@localhost#2222:/home/andrewdo/
-         ;; (pcase-let (`("/ssh" ,full-target ,remote-dir) (s-split ":" dir))
-         ;;   (if (sor remote-dir)
-         ;;       (if (re-match-p "#" full-target)
-         ;;           (let ((target (s-replace-regexp "#.*" "" target))
-         ;;                 (port (s-replace-regexp ".*#" "" target)))
-         ;;             (sps )))
-         ;;     ;; (tv dir :dir "/")
-         ;;     (setq dir "/")))
-       )
+          dir
+          (string-match "/[^:]+:" dir))
+         (if dont-clean-tramp
+             dir
+           ;; (setq dir "/")
+           ;; this is crashing
+           (let* ((md dir)
+                  (tmd (tramp-mountdir dir t))
+                  (tmr (tramp-remotedir dir)))
+             (if (and
+                  tmd
+                  (f-directory-p tmd))
+                 ;; (setq dir tmd)
+               (progn
+                 (let ((default-directory "/"))
+                   (if (not (pen-snq (pen-cmd "mountpoint" tmd)))
+                       (progn
+                         ;; It may already be unmounted, but it may have
+                         ;; "Transport endpoint is not connected",
+                         ;; so umount to be sure.
+                         (pen-sn (pen-cmd "sudo" "umount" "-l" tmd))
+                         ;; get-dir gets called repeatedly so I can't do this automatically
+                         ;; (tramp-mount-sshfs dir)
+                         ;; Also, I don't get the message because the screen may be split
+                         (message "%s" (concat tmd " is not mounted"))
+                         ;; (pen-ns (concat tmd " is not mounted"))
+                         (identity-command))))
+                 (setq dir (f-join tmd (s-replace-regexp "^/" "" tmr))))
+               (setq dir "/")))))
      dir)))
 
 (defmacro shut-up-c (&rest body)
@@ -551,11 +621,15 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (if (not shell-cmd)
         (setq shell-cmd "false"))
 
+    ;; sn must never contain a tramp path
     (if (not dir)
-        (setq dir (get-dir)))
+        (let ((cand-dir (get-dir)))
+          (if (f-directory-p cand-dir)
+              (setq dir cand-dir)
+            (setq dir "/"))))
 
     ;; If the dir is a tramp path, just use root
-    (if (re-match-p "/[^:]+:" (get-dir t))
+    (if (string-match "/[^:]+:" dir)
         (setq dir "/"))
 
     (let ((default-directory dir))
@@ -598,7 +672,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
               (write-to-file stdin input_tf)
               (setq shell-cmd (concat "exec < <(cat " (pen-q input_tf) "); " shell-cmd))))
 
-        (if (not (re-match-p "[&;]$" shell-cmd))
+        (if (not (string-match "[&;]$" shell-cmd))
             (setq shell-cmd (concat shell-cmd ";")))
 
         (if (and detach
@@ -1872,7 +1946,10 @@ This function accepts any number of ARGUMENTS, but ignores them."
   ;; (xc-m default-directory)
   (cond
    ((derived-mode-p 'proced-mode) (call-interactively 'proced-get-pwd))
-   (t (kill-new (chomp (pen-ns default-directory))))))
+   (t
+    (xc (chomp (pen-ns default-directory)))
+    ;; (xc (chomp (get-dir)))
+    )))
 
 (defun pen-yank-file ()
   (interactive)

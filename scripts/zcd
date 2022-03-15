@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+fp="$1"
+: ${fp:="$(pwd)"}
+
+if test "$fp" = "/"; then
+    dn="/"
+else
+    dn="$(p "$fp" | pen-ux dn | pen-ux rp)"
+fi
+
+if is_tty; then
+    CWD="$dn" zsh
+else
+    echo "$dn"
+fi

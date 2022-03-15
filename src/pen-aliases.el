@@ -1,5 +1,6 @@
 (require 'pcase)
 
+(defalias 're-match-p 'string-match)
 (defalias 'pen-empty-string-p 's-blank?)
 (defalias 'tv 'pen-tv)
 (defalias 'etv 'pen-etv)

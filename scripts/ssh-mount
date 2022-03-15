@@ -1,0 +1,87 @@
+#!/bin/bash
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -p) {
+        port="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -sshcmd) {
+        sshcmd="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -sl) {
+        do_slugdir=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${sshcmd:="ssh"}"
+
+host="$1"
+user=$2
+remote_dir=$3
+name=$4
+
+shift "$#"
+
+set -x
+set -m
+if [[ -z "${user}" ]]
+then
+    user=''
+    vol=$host
+    volname=$host
+else
+    user_at="${user}@"
+    vol="${host}_${user}"
+    volname="${host} ${user}"
+fi
+
+if test "$do_slugdir" = "y" && test -n "$remote_dir" && ! test "$remote_dir" = "/"; then
+    slug="$(printf -- "%s\n" "$remote_dir" | tr '\n' ' ' | sed 's/ $//' | slugify)"
+    vol="$vol-$slug"
+fi
+
+if [[ -z "${remote_dir}" ]]
+then
+    remote_dir=/
+fi
+
+if [[ -z "${name}" ]]
+then
+    :
+else
+    vol=${vol}-$name
+    echo vol = $vol
+fi
+#sshfs $user$host:/ /media/ssh-$vol/ -C -o ssh_command='autossh -M0',reconnect,auto_cache,defer_permissions,noappledouble,volname=$volname
+# Can't put environment variables in like this.
+#sshfs $user$host:/ /media/ssh-$vol/ -C -o ssh_command='AUTOSSH_POLL=10 AUTOSSH_MAXSTART=10 AUTOSSH_PORT=0 autossh',reconnect,auto_cache
+# not sure which shell it's using, but putting these evironment
+# variables into ssh_command does not work
+# doesn't like setting this the same as the default for some reason
+#AUTOSSH_MAXSTART="-1"
+sudo mkdir -p /media/ssh-$vol
+sudo chown $USER /media/ssh-$vol
+sudo chgrp $USER /media/ssh-$vol
+#sshfs $user$host:/ /media/ssh-$vol/ -C -o ssh_command='autossh',reconnect,auto_cache
+# be advised, autossh will cause the shell to freeze if the remote host
+# is disconnected.
+#sshfs $user$host:$remote_dir /media/ssh-$vol/ -C -o ssh_command='autossh',idmap=user,reconnect,auto_cache -o allow_other
+echo "sshfs $user_at$host:$remote_dir /media/ssh-$vol/ -C -o ssh_command='ssh',idmap=user,reconnect,auto_cache -o allow_other"
+
+if test -n "$port"; then
+    set -- -p "$port" "$@"
+fi
+
+sshfs "$@" $user_at$host:$remote_dir /media/ssh-$vol/ -C -o ssh_command="$sshcmd",idmap=user,reconnect,auto_cache -o allow_other

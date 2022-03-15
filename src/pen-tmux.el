@@ -165,6 +165,13 @@ START and END can be in either order."
 (defun pen-tm-nw (&optional cmd window-type nw_args input dir)
   "Runs command in a new window/pane"
   (interactive)
+
+  (if (string-match "/[^:]+:" (or dir (get-path)))
+      (let ((cand-dir (tramp-localdir)))
+          (if (f-directory-p cand-dir)
+              (setq dir cand-dir)
+            (setq dir "/"))))
+
   (if (not cmd)
       (setq cmd "zsh"))
   (if (not (sor window-type))
