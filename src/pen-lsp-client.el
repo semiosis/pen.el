@@ -349,6 +349,34 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
              (lsp-diagnostics))
     l))
 
+;; (mouse-3
+;;  (#<window 33 on clojure.core.clj> 201489
+;;            (33 . 469)
+;;            44934836 nil 201489
+;;            (3 . 22)
+;;            nil
+;;            (3 . 7)
+;;            (10 . 21)))
+
+;; If I can fabricate the event I can utilise the built-in emacs menu system instead of right-click menu
+
+(defun pen-lsp-mouse-click (event)
+  (interactive "e")
+  (let* ((ec (event-start event))
+         (choice (x-popup-menu event lsp-mode-menu))
+         (action (lookup-key lsp-mode-menu (apply 'vector choice))))
+
+    (select-window (posn-window ec))
+
+    (unless (and (region-active-p) (eq action 'lsp-execute-code-action))
+      (goto-char (posn-point ec)))
+    (run-with-idle-timer
+     0.001 nil
+     (lambda ()
+       (cl-labels ((check (value) (not (null value))))
+         (when choice
+           (call-interactively action)))))))
+
 ;; $EMACSD/manual-packages/company-lsp/company-lsp.el
 ;; Sadly can't override because of lexical scope
 ;; j:company-lsp--candidates-async
