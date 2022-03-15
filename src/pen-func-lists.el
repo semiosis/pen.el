@@ -132,7 +132,7 @@
 
 (defset web-mode-funcs '(eww-open-this-file elinks-dump-open-this-file))
 
-;defset haskell-mode-funcs '(ghcid
+(defset haskell-mode-funcs '(ghcid
                              ghcd-info
                              pen-intero-get-type
                              haskell-extend-language
