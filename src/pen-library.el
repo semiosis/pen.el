@@ -910,4 +910,10 @@ non-nil."
   (pen-message-no-echo "Truncate long lines %s"
 	                     (if truncate-lines "enabled" "disabled")))
 
+(defun pen-nsfa (cmd &optional dir)
+  (pen-sn (concat
+           (if dir (concat " CWD=" (pen-q dir) " ")
+             "")
+           " pen-nsfa -E " (pen-q cmd)) nil (or dir (cwd))))
+
 (provide 'pen-library)

@@ -26,12 +26,6 @@
   (setq comint-input-ring-file-name history-file)
   (comint-read-input-ring 'silent))
 
-(defun pen-nsfa (cmd &optional dir)
-  (pen-sn (concat
-           (if dir (concat " CWD=" (pen-q dir) " ")
-             "")
-           " pen-nsfa -E " (pen-q cmd)) nil (or dir (cwd))))
-
 (defun comint-quick (cmd &optional dir prompt-regexp)
   (interactive (list (read-string-hist "comint-quick: ")))
   (let* ((slug (slugify cmd))
