@@ -73,12 +73,12 @@
           start
           end))))
 
-(defun pen-surrounding-proceeding-text (&optional preceding-lines proceeding-lines select)
-  (if (not preceding-lines)
-      (setq preceding-lines 3))
+(defun pen-surrounding-proceeding-text (&optional n-lines proceeding-lines select)
+  (if (not n-lines)
+      (setq n-lines 3))
   (if (not proceeding-lines)
       (setq proceeding-lines 10))
-  (let* ((start (get-point-start-of-nth-previous-line preceding-lines))
+  (let* ((start (get-point-start-of-nth-previous-line n-lines))
          (end (get-point-start-of-nth-next-line (+ 1 proceeding-lines))))
     (if select
         (progn
@@ -89,10 +89,10 @@
           start
           end))))
 
-(defun pen-preceeding-text (&optional preceding-lines select)
-  (if (not preceding-lines)
-      (setq preceding-lines 3))
-  (let* ((start (get-point-start-of-nth-previous-line preceding-lines))
+(defun pen-preceding-lines (&optional n-lines select)
+  (if (not n-lines)
+      (setq n-lines 3))
+  (let* ((start (get-point-start-of-nth-previous-line n-lines))
          (end (point)))
     (if select
         (progn
@@ -103,7 +103,7 @@
           start
           end))))
 
-(defun pen-proceeding-text (&optional proceeding-lines select)
+(defun pen-proceeding-lines (&optional proceeding-lines select)
   (if (not proceeding-lines)
       (setq proceeding-lines 10))
   (let* ((start (point))

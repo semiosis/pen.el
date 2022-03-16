@@ -1843,7 +1843,7 @@ But use the results-analyser."
                       (pf-generic-file-type-completion-nocode/2 (pen-detect-language) preceding-text ,@args)
                     (if pen-cost-efficient
                         (pf-generic-file-type-completion/2 (pen-detect-language) preceding-text ,@args)
-                      (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-text)) ,@args)))))
+                      (pf-generic-file-type-completion/3 (pen-detect-language) preceding-text (pen-snc "sed 1d" (pen-proceeding-lines)) ,@args)))))
        (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))))
 
 (defun ekm (binding)

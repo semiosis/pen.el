@@ -7,8 +7,8 @@
 
 (defun pen-complete-inner ()
   (interactive)
-  (let ((prefix (pen-preceding-text 2))
-        (suffix (pen-proceeding-text 2)))
+  (let ((prefix (pen-preceding-lines 2))
+        (suffix (pen-proceeding-lines 2)))
 
     (insert
      (pf-complete-inner-prose/2 prefix suffix))))
