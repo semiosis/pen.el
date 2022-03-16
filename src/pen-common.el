@@ -7,7 +7,7 @@
 
 (defun pen-complete-inner ()
   (interactive)
-  (let ((prefix (pen-preceding-text-text 2))
+  (let ((prefix (pen-preceding-text 2))
         (suffix (pen-proceeding-text 2)))
 
     (insert
