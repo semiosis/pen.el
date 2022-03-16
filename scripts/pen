@@ -404,7 +404,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    --parallel|--pool) {
+    --parallel|--pool|-l) {
         export USE_POOL=y
         shift
     }
