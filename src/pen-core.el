@@ -59,7 +59,8 @@
            (beginning-of-line)
            (point))))
     (if (< p (point))
-        (point-at-eol))))
+        (point-at-eol)
+      p)))
 
 (defun pen-surrounding-text (&optional window-line-size select)
   (if (not window-line-size)
