@@ -53,10 +53,13 @@
     (point)))
 
 (defun get-point-start-of-nth-next-line (n)
-  (save-excursion
-    (eval `(macroexpand (ntimes ,n (ignore-errors (next-line)))))
-    (beginning-of-line)
-    (point)))
+  (let ((p
+         (save-excursion
+           (eval `(macroexpand (ntimes ,n (ignore-errors (next-line)))))
+           (beginning-of-line)
+           (point))))
+    (if (< p (point))
+        (point-at-eol))))
 
 (defun pen-surrounding-text (&optional window-line-size select)
   (if (not window-line-size)
