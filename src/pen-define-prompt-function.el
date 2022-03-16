@@ -42,14 +42,20 @@
              ;; ,(pen-snc "base64" (pen-encode-string final-prompt))
              ;; ,(pen-snc "base64" final-prompt)
              )
+            ("PEN_PROMPT_FULL" .
+             ;; Sort this out later
+             ,(pen-encode-string final-prompt-full)
+             ;; ,(pen-snc "base64" (pen-encode-string final-prompt))
+             ;; ,(pen-snc "base64" final-prompt)
+             )
             ("PEN_SUFFIX" .
-             ,(pen-encode-string final-suffix))
+             ,(pen-encode-string (or final-suffix "")))
             ;; ("PEN_PROMPT" . ,(pen-encode-string final-prompt))
             ("PEN_LM_COMMAND" . ,final-lm-command)
             ("PEN_MODEL" . ,final-model)
             ("PEN_WHITESPACE_SUPPORT" . ,(if final-engine-whitespace-support
-                                              "y"
-                                            ""))
+                                             "y"
+                                           ""))
             ;; This must go into last-prompt-data for ink
             ("PEN_ENGINE" . ,final-engine)
             ("PEN_API_ENDPOINT" . ,final-api-endpoint)
