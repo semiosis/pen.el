@@ -1572,7 +1572,8 @@
              suffix-at-pos))
 
           (final-prompt (if suffix-at-pos
-                            (substring final-prompt 0 suffix-at-pos)))
+                            (substring final-prompt 0 suffix-at-pos)
+                          final-prompt))
 
           (trailing-whitespace (s-trailing-whitespace final-prompt))
 
