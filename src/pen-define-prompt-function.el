@@ -1562,7 +1562,8 @@
 
           (final-stop-sequences
            (if suffix-at-pos
-               (cons final-suffix final-stop-sequences)))
+               ;; Not sure what the max stop sequence size is.
+               (s-left 6 (cons final-suffix final-stop-sequences))))
 
           (suffix-length (- end-pos (+ 4 suffix-at-pos)))
 
