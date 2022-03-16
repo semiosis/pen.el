@@ -1566,7 +1566,10 @@
                ;; Not sure what the max stop sequence size is.
                (s-left 6 (cons final-suffix final-stop-sequences))))
 
-          (suffix-length (- end-pos (+ 4 suffix-at-pos)))
+          (suffix-length
+           (if suffix-at-pos
+               (- end-pos (+ 4 suffix-at-pos))
+             suffix-at-pos))
 
           (final-prompt (if suffix-at-pos
                             (substring final-prompt 0 suffix-at-pos)))
