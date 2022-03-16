@@ -42,6 +42,8 @@
              ;; ,(pen-snc "base64" (pen-encode-string final-prompt))
              ;; ,(pen-snc "base64" final-prompt)
              )
+            ("PEN_SUFFIX" .
+             ,(pen-encode-string final-suffix))
             ;; ("PEN_PROMPT" . ,(pen-encode-string final-prompt))
             ("PEN_LM_COMMAND" . ,final-lm-command)
             ("PEN_MODEL" . ,final-model)
@@ -1369,6 +1371,11 @@
           ;;                ""))
 
           (final-prompt
+           (if (and (string-match-p "<:s>" final-prompt)
+                    (not (string-match-p "<:pp>" final-prompt)))
+               (setq final-prompt (s-replace-regexp "<:s>" "<:pp><:s>" final-prompt))))
+
+          (final-prompt
            (if (and final-continue-default
                     ;; consider making it always run instead of checking interactive
                     is-interactive)
@@ -1532,6 +1539,9 @@
 
           (end-pos (string-bytes final-prompt))
 
+          (suffix-at-pos
+           (byte-string-search "<:s>" final-prompt))
+
           (collect-from-pos
            (or collect-from-pos
                end-pos))
@@ -1547,6 +1557,16 @@
 
           ;; (test (pen-etv (qne (s-trailing-whitespace final-prompt))))
 
+          (final-prompt-full final-prompt)
+
+          (final-suffix (if suffix-at-pos
+                            (substring final-prompt (+ 4 suffix-at-pos))))
+
+          (suffix-length (- end-pos (+ 4 suffix-at-pos)))
+
+          (final-prompt (if suffix-at-pos
+                            (substring final-prompt 0 suffix-at-pos)))
+
           (final-prompt (if final-engine-whitespace-support
                             final-prompt
                           (s-remove-trailing-whitespace final-prompt)))
@@ -1555,7 +1575,7 @@
 
           (pen-approximate-prompt-token-length
            (pen-approximate-token-length
-            final-prompt
+            final-prompt-full
             (pen-num final-approximate-token-char-length)))
 
           (final-min-generated-tokens
@@ -1671,6 +1691,13 @@
                (pen-engine-disabled-p final-engine)))
 
           (results ,(macroexpand `(pen-pfp-results)))
+
+          (results
+           (if suffix-at-pos
+               (mapcar
+                (lambda (s) (s-chop-suffix final-suffix s))
+                results)
+             results))
 
           (results
            (if final-include-prompt

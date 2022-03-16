@@ -10,6 +10,8 @@ from pathlib import Path
 HUMAN_API_KEY = os.environ.get("HUMAN_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL") or "DummyModel"
 PEN_PROMPT = os.environ.get("PEN_PROMPT")
+PEN_PROMPT_FULL = os.environ.get("PEN_PROMPT_FULL")
+PEN_SUFFIX = os.environ.get("PEN_SUFFIX")
 PEN_PAYLOADS = os.environ.get("PEN_PAYLOADS")
 PEN_PRESENCE_PENALTY = os.environ.get("PEN_PRESENCE_PENALTY") or "0"
 PEN_STOP_SEQUENCES = json.loads(os.environ.get("PEN_STOP_SEQUENCES") or "[\"\\n\"]") or ["\n"]
@@ -77,7 +79,9 @@ def b(c, inputstring="", timeout=0):
 #  result=b("pen-export-prompt pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
 #  result=b("pen-export-preoverlay pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
 #  result=b("pen-export-overlay pen-tipe -wintype nw \"pen-eipe\" 2>/dev/null", inputstring=PEN_PROMPT)[0]
-result=b("pen-prompt-human", inputstring=PEN_PROMPT)[0]
+
+# PEN_PROMPT_FULL is exported as PEN_HELP
+result=b("pen-prompt-human", inputstring=PEN_PROMPT_FULL)[0]
 
 # result = json.dumps(["PEN_MODEL: " + PEN_MODEL,
 #                      "prompt: " + PEN_PROMPT,

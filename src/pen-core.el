@@ -89,6 +89,20 @@
           start
           end))))
 
+(defun pen-preceeding-text (&optional preceding-lines select)
+  (if (not preceding-lines)
+      (setq preceding-lines 3))
+  (let* ((start (get-point-start-of-nth-previous-line preceding-lines))
+         (end (point)))
+    (if select
+        (progn
+          (set-mark start)
+          (goto-char end)
+          (activate-mark)))
+    (str (buffer-substring
+          start
+          end))))
+
 (defun pen-proceeding-text (&optional proceeding-lines select)
   (if (not proceeding-lines)
       (setq proceeding-lines 10))

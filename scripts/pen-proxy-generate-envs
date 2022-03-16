@@ -24,6 +24,8 @@ export TTY
 : "${PEN_TOP_P:=""}"
 : "${PEN_TOP_K:=""}"
 : "${PEN_PROMPT:=""}"
+: "${PEN_PROMPT_FULL:=""}"
+: "${PEN_SUFFIX:=""}"
 : "${PEN_PAYLOADS:=""}"
 : "${PEN_FLAGS:=""}"
 : "${PEN_STOP_SEQUENCE:=""}"
@@ -56,6 +58,8 @@ export PEN_TEMPERATURE
 export PEN_TOP_P
 export PEN_TOP_K
 export PEN_PROMPT
+export PEN_PROMPT_FULL
+export PEN_SUFFIX
 export PEN_PAYLOADS
 export PEN_FLAGS
 export PEN_STOP_SEQUENCE

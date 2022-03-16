@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 
 # https://beta.openai.com/docs/api-reference/completions/create
@@ -21,7 +21,8 @@ SCORE_MULTIPLIER = 100.0
 API_TOKEN = os.environ.get("OPENAI_API_KEY")
 PEN_MODEL = os.environ.get("PEN_MODEL") or "davinci"
 PEN_MODEL = os.environ.get("PEN_MODEL") or "davinci-codex"
-PEN_PROMPT = os.environ.get("PEN_PROMPT") or "Once upon a time"
+PEN_PROMPT = os.environ.get("PEN_PROMPT") or ""
+PEN_SUFFIX = os.environ.get("PEN_SUFFIX") or ""
 PEN_PAYLOADS = os.environ.get("PEN_PAYLOADS")
 # Typically used for semantic search.
 # Documents may be inserted into a prompt, exploding the prompt into a list, but only if PEN_PROMPTS doesn't already exist.
@@ -87,6 +88,10 @@ def get_score(choice) -> float:
     logits: List[float] = logprobs[last_used:]
     return sum(logits) / len(logits) * SCORE_MULTIPLIER
 
+# I think I need to build the arguments list here.
+# This is getting a bit silly.
+# Or I could write this in clojure with libpython
+
 if PEN_MODE == "search":
     cs = openai.Completion.create(
         engine=PEN_MODEL,
@@ -97,32 +102,63 @@ if PEN_MODE == "search":
         temperature=float(PEN_TEMPERATURE),
         echo=True)['choices']
 elif PEN_LOGPROBS is not None and PEN_LOGPROBS:
-    cs = openai.Completion.create(
-         n=int(PEN_N_COMPLETIONS),
-         engine=PEN_MODEL,
-         prompt=PEN_PROMPT,
-         logprobs=int(PEN_LOGPROBS),
-         frequency_penalty=float(PEN_FREQUENCY_PENALTY),
-         presence_penalty=float(PEN_PRESENCE_PENALTY),
-         top_p=float(PEN_TOP_P),
-         best_of=int(PEN_TOP_K),
-         # stop=PEN_STOP_SEQUENCE,
-         stop=PEN_STOP_SEQUENCES,
-         max_tokens=int(PEN_MAX_GENERATED_TOKENS),
-         temperature=float(PEN_TEMPERATURE))['choices']
+    if PEN_SUFFIX is not None:
+        cs = openai.Completion.create(
+            n=int(PEN_N_COMPLETIONS),
+            engine=PEN_MODEL,
+            prompt=PEN_PROMPT,
+            suffix=PEN_SUFFIX,
+            logprobs=int(PEN_LOGPROBS),
+            frequency_penalty=float(PEN_FREQUENCY_PENALTY),
+            presence_penalty=float(PEN_PRESENCE_PENALTY),
+            top_p=float(PEN_TOP_P),
+            best_of=int(PEN_TOP_K),
+            # stop=PEN_STOP_SEQUENCE,
+            stop=PEN_STOP_SEQUENCES,
+            max_tokens=int(PEN_MAX_GENERATED_TOKENS),
+            temperature=float(PEN_TEMPERATURE))['choices']
+    else:
+        cs = openai.Completion.create(
+            n=int(PEN_N_COMPLETIONS),
+            engine=PEN_MODEL,
+            prompt=PEN_PROMPT,
+            logprobs=int(PEN_LOGPROBS),
+            frequency_penalty=float(PEN_FREQUENCY_PENALTY),
+            presence_penalty=float(PEN_PRESENCE_PENALTY),
+            top_p=float(PEN_TOP_P),
+            best_of=int(PEN_TOP_K),
+            # stop=PEN_STOP_SEQUENCE,
+            stop=PEN_STOP_SEQUENCES,
+            max_tokens=int(PEN_MAX_GENERATED_TOKENS),
+            temperature=float(PEN_TEMPERATURE))['choices']
 else:
-    cs = openai.Completion.create(
-         n=int(PEN_N_COMPLETIONS),
-         engine=PEN_MODEL,
-         prompt=PEN_PROMPT,
-         frequency_penalty=float(PEN_FREQUENCY_PENALTY),
-         presence_penalty=float(PEN_PRESENCE_PENALTY),
-         top_p=float(PEN_TOP_P),
-         best_of=int(PEN_TOP_K),
-         # stop=PEN_STOP_SEQUENCE,
-         stop=PEN_STOP_SEQUENCES,
-         max_tokens=int(PEN_MAX_GENERATED_TOKENS),
-         temperature=float(PEN_TEMPERATURE))['choices']
+    if PEN_SUFFIX is not None:
+        cs = openai.Completion.create(
+            n=int(PEN_N_COMPLETIONS),
+            engine=PEN_MODEL,
+            prompt=PEN_PROMPT,
+            suffix=PEN_SUFFIX,
+            frequency_penalty=float(PEN_FREQUENCY_PENALTY),
+            presence_penalty=float(PEN_PRESENCE_PENALTY),
+            top_p=float(PEN_TOP_P),
+            best_of=int(PEN_TOP_K),
+            # stop=PEN_STOP_SEQUENCE,
+            stop=PEN_STOP_SEQUENCES,
+            max_tokens=int(PEN_MAX_GENERATED_TOKENS),
+            temperature=float(PEN_TEMPERATURE))['choices']
+    else:
+        cs = openai.Completion.create(
+            n=int(PEN_N_COMPLETIONS),
+            engine=PEN_MODEL,
+            prompt=PEN_PROMPT,
+            frequency_penalty=float(PEN_FREQUENCY_PENALTY),
+            presence_penalty=float(PEN_PRESENCE_PENALTY),
+            top_p=float(PEN_TOP_P),
+            best_of=int(PEN_TOP_K),
+            # stop=PEN_STOP_SEQUENCE,
+            stop=PEN_STOP_SEQUENCES,
+            max_tokens=int(PEN_MAX_GENERATED_TOKENS),
+            temperature=float(PEN_TEMPERATURE))['choices']
 
 if PEN_MODE == "search":
     return_data = sorted(cs, key=lambda choice: choice.index)
@@ -156,13 +192,11 @@ if PEN_MODE == "search":
             print(results[x])
 else:
     if len(cs) == 1:
-        print(PEN_PROMPT, end = '')
-        print(cs[0]['text'])
+        print(PEN_PROMPT + cs[0]['text'] + PEN_SUFFIX, end = '\n')
     else:
         for x in range(len(cs)):
             print(f"===== Completion %i =====" % x)
-            print(PEN_PROMPT, end = '')
-            print(cs[x]['text'])
+            print(PEN_PROMPT + cs[x]['text'] + PEN_SUFFIX, end = '\n')
 
 
 # with open('cs.json', 'w') as f:

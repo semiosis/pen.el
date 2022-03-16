@@ -1,0 +1,4 @@
+#!/bin/sh
+export TTY
+
+/home/shane/scripts/git -hs "$@"

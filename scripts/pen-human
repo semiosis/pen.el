@@ -21,6 +21,8 @@ fi
 
 # JSON
 export PEN_PROMPT
+export PEN_PROMPT_FULL
+export PEN_SUFFIX
 export PEN_PAYLOADS
 export PEN_MODEL
 export PEN_MAX_TOKENS

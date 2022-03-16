@@ -76,6 +76,7 @@ export PEN_TEMPERATURE
 export PEN_TOP_P
 export PEN_TOP_K
 export PEN_PROMPT
+export PEN_SUFFIX
 export PEN_API_ENDPOINT
 export PEN_PAYLOADS
 export PEN_FLAGS

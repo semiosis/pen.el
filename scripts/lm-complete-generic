@@ -193,6 +193,8 @@ nlpcloud_results_split() {
 if test "$PEN_DEBUG" = "y"; then
     echo "PEN_USER_AGENT:\"$PEN_USER_AGENT\""
     echo "PEN_PROMPT:\"$PEN_PROMPT\""
+    echo "PEN_PROMPT_FULL:\"$PEN_PROMPT_FULL\""
+    echo "PEN_SUFFIX:\"$PEN_SUFFIX\""
     echo "PEN_PAYLOADS:\"$PEN_PAYLOADS\""
     echo "PEN_WHITESPACE_SUPPORT:\"$PEN_WHITESPACE_SUPPORT\""
     echo "PEN_CACHE:\"$PEN_CACHE\""
@@ -249,6 +251,8 @@ export PEN_LM_KEY
 export PEN_API_ENDPOINT
 export PEN_MODEL
 export PEN_PROMPT
+export PEN_PROMPT_FULL
+export PEN_SUFFIX
 export PEN_PAYLOADS
 export PEN_FLAGS
 export PEN_MIN_TOKENS
@@ -282,6 +286,8 @@ trap "rm \"$tf_response\" 2>/dev/null" 0
 
 # This evaluates the newlines without trimming the prompt at the ends
 IFS= read -rd '' PEN_PROMPT < <(p "$PEN_PROMPT");typeset -p PEN_PROMPT &>/dev/null
+IFS= read -rd '' PEN_PROMPT_FULL < <(p "$PEN_PROMPT_FULL");typeset -p PEN_PROMPT_FULL &>/dev/null
+IFS= read -rd '' PEN_SUFFIX < <(p "$PEN_SUFFIX");typeset -p PEN_SUFFIX &>/dev/null
 
 # This is designed to not trim whitespace from the ends of the stop sequence
 IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE" | pen-str unonelineify-safe);typeset -p PEN_STOP_SEQUENCE &>/dev/null

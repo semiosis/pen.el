@@ -1,0 +1,191 @@
+#!/bin/bash
+export TTY
+
+# export GIT_SSH_COMMAND="ssh -vvv"
+: "${GIT_SSH_COMMAND:="ssh -v"}"
+export GIT_SSH_COMMAND
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -hs) {
+        export GIT_HS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# PPNAME="$(ps -o comm= $PPID)"
+# if test "$GIT_HS" = y || test "$PPNAME" = "emacs"; then
+#     ( hs "$(basename "$0")" "$@" "#" "<==" "$PPNAME" 0</dev/null ) &>/dev/null
+# fi
+
+if test "$GIT_HS" = y; then
+    # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+    ( hs "$(basename "$0")" "$@" 0</dev/null ) &>/dev/null
+fi
+
+# export GIT_HS=
+
+unset GIT_HS
+
+/usr/bin/git "$@"
+exit $?
+
+# TODO
+# Make it so when I push, git notices and puts the PR url into the
+# clipboard with a notification
+
+# # Do this to emulate the git error
+# /usr/bin/git2.7 "$@"
+# exit $?
+
+# Git gets called extremely often, so I can't even use 'ci'
+# Can't call anything
+# PARENT_COMMAND="$(ps -o comm= $PPID)"
+ 
+# git_command="$1"
+
+# # This doesn't really come out nicely
+# if test "$git_command" = "push"; then
+#     exec 2> >(copy-pipe-urls)
+# fi
+
+# echo "$PARENT_COMMAND" >> /tmp/git.txt
+
+# emacs is also a valid one
+#if test "$PARENT_COMMAND" = "zl" || test "$PARENT_COMMAND" = "zsh"; then
+#    if which /usr/bin/git2.19 &>/dev/null; then
+#        /usr/bin/git2.19 "$@"
+#        exit $?
+#    fi
+# fi
+
+# Then switch back to this
+if which /usr/bin/git2.19 &>/dev/null; then
+    /usr/bin/git2.19 "$@"
+    exit $?
+fi
+
+# I think the script makes magit not show diffs
+# This is true
+
+## If lingo runs a git command, we can probably consider it to not
+## require a tty. Therefore, capture its output and exit code
+#PARENT_COMMAND="$(ps -o comm= $PPID)"
+#case "$(pwd)" in
+#    $HOME/go/src/*|$HOME$MYGIT/codelingo/*) {
+#        (
+#            case "$git_command" in
+#                status|--show-toplevel) {
+#                    # Even if it's lingo that calls these, we don't want
+#                    # to report them
+#                    :
+#                }
+#                ;;
+#
+#                # symbolic-ref|ls-files|status|rev-parse|config|show-ref) {
+#                #     :
+#                # }
+#                # ;;
+#
+#                *) {
+#                    (
+#                        case "$PARENT_COMMAND" in
+#                            sh|vc|zsh|emacs) {
+#                                :
+#                            }
+#                            ;;
+#
+#                            lingo) {
+#                                (
+#                                    case "$git_command" in
+#                                        *) {
+#                                            cmdwrap="$(
+#                                            for (( i = 1; i < $#; i++ )); do
+#                                                eval ARG=\${$i}
+#                                                aq "$ARG"
+#                                                printf ' '
+#                                            done
+#                                            eval ARG=\${$i}
+#                                            aq "$ARG"
+#                                            )"
+#
+#                                            printf -- "%s\n" "$0 $cmdwrap" | si +lingo-git command
+#
+#                                            ns +lingo-git "$PARENT_COMMAND" called git "$@" &>/dev/null
+#                                        }
+#                                        ;;
+#                                    esac
+#                                )
+#                            }
+#                            ;;
+#
+#                            *) {
+#                                :
+#                            }
+#                            ;;
+#                        esac
+#                    )
+#                    
+#                }
+#                ;;
+#            esac
+#        )
+#    }
+#    ;;
+#
+#    *)
+#esac
+
+for (( i = 1; i < $#; i++ )); do
+    eval ARG=\${$i}
+    case "$ARG" in
+        --apply) {
+            ns +git-apply git "$@" &>/dev/null
+        }
+        ;;
+
+        -p) {
+            # ns +git "shifting -4" &>/dev/null
+            set -- "${@:1:i-1}" "${@:i+1}"; (( i-- )) # this does not remove it if it's the last element
+        }
+        ;;
+
+        *)
+    esac
+done
+
+#case "$PARENT_COMMAND" in
+#    lingo) {
+#        :
+#
+#        # pipe into something that records
+#        # call it stashit
+#        # it might be a streaming pipe
+#        # create go programs that handle real-time streaming
+#
+#        exec 1> >(tee >(si +lingo-git stdout))
+#        exec 2> >(tee >(si +lingo-git stderr))
+#    }
+#    ;;
+#
+#    *) {
+#        :
+#    }
+#    ;;
+#esac
+
+/usr/bin/git "$@"
+
+exit_code="$?"
+
+#case "$PARENT_COMMAND" in
+#    lingo) {
+#        printf -- "%s\n" "$exit_code" | si +lingo-git exit code
+#    }
+#    ;;
+#esac
+
+exit "$exit_code"
