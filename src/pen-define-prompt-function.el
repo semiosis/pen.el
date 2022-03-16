@@ -1373,7 +1373,8 @@
           (final-prompt
            (if (and (string-match-p "<:s>" final-prompt)
                     (not (string-match-p "<:pp>" final-prompt)))
-               (setq final-prompt (s-replace-regexp "<:s>" "<:pp><:s>" final-prompt))))
+               (setq final-prompt (s-replace-regexp "<:s>" "<:pp><:s>" final-prompt))
+             final-prompt))
 
           (final-prompt
            (if (and final-continue-default
