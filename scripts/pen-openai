@@ -19,11 +19,11 @@ openai() {
 
 # This only really uses the env vars
 if test "$LM_COMPLETE_DEBUG" = "y"; then
-    # pen-openai-complete "$@"
-    pen-openai.sh "$@"
+    pen-openai-complete "$@"
+    # pen-openai.sh "$@"
 else
-    # pen-openai-complete "$@" | pen-log openai-temp
-    pen-openai.sh "$@" | pen-log openai-temp
+    pen-openai-complete "$@" | pen-log openai-temp
+    # pen-openai.sh "$@" | pen-log openai-temp
 fi
 
 # openai "$@" | pen-log openai-temp

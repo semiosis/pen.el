@@ -192,11 +192,11 @@ if PEN_MODE == "search":
             print(results[x])
 else:
     if len(cs) == 1:
-        print(PEN_PROMPT + cs[0]['text'] + PEN_SUFFIX, end = '\n')
+        print(PEN_PROMPT + cs[0]['text'].rstrip() + PEN_SUFFIX, end = '\n')
     else:
         for x in range(len(cs)):
             print(f"===== Completion %i =====" % x)
-            print(PEN_PROMPT + cs[x]['text'] + PEN_SUFFIX, end = '\n')
+            print(PEN_PROMPT + cs[x]['text'].rstrip() + PEN_SUFFIX, end = '\n')
 
 
 # with open('cs.json', 'w') as f:

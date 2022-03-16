@@ -1553,8 +1553,6 @@
           ;; pen-log-final-prompt actually chomps it
           (logged (pen-log-final-prompt (concat final-prompt "<END>")))
 
-          (trailing-whitespace (s-trailing-whitespace final-prompt))
-
           ;; (test (pen-etv (qne (s-trailing-whitespace final-prompt))))
 
           (final-prompt-full final-prompt)
@@ -1570,6 +1568,8 @@
 
           (final-prompt (if suffix-at-pos
                             (substring final-prompt 0 suffix-at-pos)))
+
+          (trailing-whitespace (s-trailing-whitespace final-prompt))
 
           (final-prompt (if final-engine-whitespace-support
                             final-prompt
