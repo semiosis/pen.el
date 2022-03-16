@@ -102,7 +102,7 @@ if PEN_MODE == "search":
         temperature=float(PEN_TEMPERATURE),
         echo=True)['choices']
 elif PEN_LOGPROBS is not None and PEN_LOGPROBS:
-    if PEN_SUFFIX is not None:
+    if PEN_SUFFIX:
         cs = openai.Completion.create(
             n=int(PEN_N_COMPLETIONS),
             engine=PEN_MODEL,
@@ -132,7 +132,7 @@ elif PEN_LOGPROBS is not None and PEN_LOGPROBS:
             max_tokens=int(PEN_MAX_GENERATED_TOKENS),
             temperature=float(PEN_TEMPERATURE))['choices']
 else:
-    if PEN_SUFFIX is not None:
+    if PEN_SUFFIX:
         cs = openai.Completion.create(
             n=int(PEN_N_COMPLETIONS),
             engine=PEN_MODEL,
