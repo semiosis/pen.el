@@ -93,6 +93,8 @@ proxy_envs="$(jq -ne '{
 "PEN_TOP_P":( env.PEN_TOP_P // empty ),
 "PEN_TOP_K":( env.PEN_TOP_K // empty ),
 "PEN_PROMPT":( env.PEN_PROMPT // empty ),
+"PEN_PROMPT_FULL":( env.PEN_PROMPT_FULL // empty ),
+"PEN_SUFFIX":( env.PEN_SUFFIX // empty ),
 "PEN_PAYLOADS":( env.PEN_PAYLOADS // empty ),
 "PEN_FLAGS":( env.PEN_FLAGS // empty ),
 "PEN_STOP_SEQUENCE":( env.PEN_STOP_SEQUENCE // empty ),

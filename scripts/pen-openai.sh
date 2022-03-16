@@ -66,7 +66,7 @@ FINAL_PEN_PROMPT="$(printf -- "%s" "$PEN_PROMPT" | pen-q-jq)"
 FINAL_PEN_SUFFIX="$(printf -- "%s" "$PEN_SUFFIX" | pen-q-jq)"
 
 debug_cmd() {
-    cmd-nice-posix "$@" 1>&2
+    cmd-nice-posix "$@" | awk 1 1>&2
     "$@"
 }
 
