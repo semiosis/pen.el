@@ -32,4 +32,14 @@
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
+(defun engine-available-p ()
+  "Each engine has a predicate to determine if you can use it."
+
+  ;; If the engine has loaded availability-test then use it,
+  ;; otherwise return true
+
+  ;; Remember to set PEN_CACHE=y unless the prefix is set
+
+  )
+
 (provide 'pen-engine)

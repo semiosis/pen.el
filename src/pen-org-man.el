@@ -32,4 +32,4 @@ PATH should be a topic that can be thrown at the man command."
       (match-string 1 (buffer-name))
     (error "Cannot create link to this man page")))
 
-(provide 'org-man)
+(provide 'pen-org-man)
