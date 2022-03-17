@@ -15,4 +15,6 @@
     (insert
      (pf-complete-inner-prose/2 prefix suffix))))
 
+(define-key pen-map (kbd "M-6") 'pen-complete-inner)
+
 (provide 'pen-common)
