@@ -1565,8 +1565,7 @@
           (final-prompt-full final-prompt)
 
           (final-suffix (if suffix-at-pos
-                            (substring final-prompt (+ 4 suffix-at-pos))
-                          final-suffix))
+                            (substring final-prompt (+ 4 suffix-at-pos))))
 
           (final-stop-sequences
            (if suffix-at-pos

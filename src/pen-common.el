@@ -7,6 +7,8 @@
 
 (defun pen-complete-inner ()
   (interactive)
+  (if (pen-selected)
+      (call-interactively 'kill-region))
   (let ((prefix (pen-preceding-lines 2))
         (suffix (pen-proceeding-lines 2)))
 
