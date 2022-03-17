@@ -1564,6 +1564,7 @@
 
           (final-prompt-full final-prompt)
 
+          ;; This may return nil
           (final-suffix (if suffix-at-pos
                             (substring final-prompt (+ 4 suffix-at-pos))))
 
