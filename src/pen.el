@@ -118,7 +118,6 @@
 (require 'pen-continuum)
 (require 'pen-ranger)
 (require 'pen-org-man)
-(require 'pen-post-bindings)
 
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."
@@ -158,6 +157,8 @@ Be mindful of quoting arguments correctly."
       (require 'pen-hydra)
       (require 'pen-prog)
       (require 'pen-paste)))
+
+(require 'pen-post-bindings)
 
 ;; (require 'pen-search)
 ;; (require 'pen-grep)
@@ -1112,6 +1113,7 @@ Otherwise, it will be a shell expression template")
 (defvar pen-engines-failed '())
 
 ;; (pen-etv (ht-get pen-engines "OpenAI Davinci"))
+;; (pen-etv (ht-get pen-engines "OpenAI Davinci Code Edit"))
 
 (defun pen-load-engines (&optional paths)
   (interactive)

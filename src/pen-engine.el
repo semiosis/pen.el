@@ -32,14 +32,23 @@
   :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
-(defun engine-available-p ()
+(defun engine-available-p (name)
   "Each engine has a predicate to determine if you can use it."
 
   ;; If the engine has loaded availability-test then use it,
   ;; otherwise return true
 
-  ;; Remember to set PEN_CACHE=y unless the prefix is set
+  (let* ((e (ht-get pen-engines name))
+         (availability-test (ht-get e "availability-test")))
 
-  )
+    (if availability-test
+        (if (>= (prefix-numeric-value current-prefix-arg) 4)
+            (pen-snq availability-test)
+          (pen-snq (concat "export PEN_CACHE=y; " availability-test)))
+      t)))
+
+(defun test-engine-available ()
+  (interactive)
+  (engine-available-p "OpenAI Davinci Code Edit"))
 
 (provide 'pen-engine)

@@ -82,6 +82,7 @@
 
             ;; I still need to use pen-encode-string because of backticks
             ("PEN_STOP_SEQUENCES" . ,(pen-encode-string (json-encode-list final-stop-sequences) t))
+            ("PEN_VARS" . ,(pen-encode-string (json--encode-alist defs-and-vals-alist) t))
 
             ;; TODO Force multiple prompts later
             ;; Also need multi-prompts to understand different prompt lengths for results
@@ -1303,15 +1304,18 @@
           (final-prompt
            (expand-template final-prompt))
 
+          (defs-and-vals-alist
+            (append
+             var-keyvals
+             defs-varvals))
+
           ;; This must come after the initial template expand.
           ;; Because dni-let will try to expand <...> and evaluate remaining templates.
           (final-prompt
            (if ',dni
                (eval
                 `(pen-let-keyvals
-                  ',(append
-                     var-keyvals
-                     defs-varvals)
+                  ',defs-and-vals-alist
                   (dni-let
                    ,(append
                      ',dni
