@@ -1,9 +1,7 @@
 #!/bin/bash
 
 export OPENAI_API_KEY
-
 export GY_CMD
-
 export SHELL=bash
 
 stdin_exists() {
