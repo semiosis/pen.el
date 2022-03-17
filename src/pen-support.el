@@ -1493,6 +1493,8 @@ when s is a string, set the clipboard to s"
       (seds (pen-umn input)
             ((f-join pen-prompts-directory "prompts") "$PROMPTS")
             (user-emacs-directory "$EMACSD")
+            (pen-prompts-directory "$PEN_PROMPTS_DIR")
+            (pen-engines-directory "$PEN_ENGINES_DIR")
             (penconfdir "$PEN")
             ((f-join user-emacs-directory "pen.el") "$PENEL")
             (user-home-directory "$HOME"))))
@@ -1504,6 +1506,9 @@ when s is a string, set the clipboard to s"
             ("~" user-home-directory)
             ("$PROMPTS" (f-join pen-prompts-directory "prompts"))
             ("$EMACSD" user-emacs-directory)
+            ("$PEN_PROMPTS_DIR" pen-prompts-directory)
+            ("$PEN_ENGINES_DIR" pen-engines-directory)
+            ;; This is dodgy because there are other vars that are prefixed with $PEN_
             ("$PEN" penconfdir)
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
             ("$HOME" user-home-directory)

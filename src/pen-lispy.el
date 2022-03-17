@@ -660,8 +660,8 @@ otherwise the whole string is unquoted."
 (define-key pen-lisp-mode-map (kbd "K") 'pen-lisp-expand-contract-selection-left)
 (define-key lispy-mode-map (kbd "K") 'pen-lisp-expand-contract-selection-left)
 ;; This function breaks when at the top level of a sexp
-;; (define-key lispy-mode-map (kbd "M-t") 'paredit-forward-slurp-sexp)
-(define-key lispy-mode-map (kbd "M-t") nil)
+(define-key lispy-mode-map (kbd "M-t") 'paredit-forward-slurp-sexp)
+(advice-add 'paredit-forward-slurp-sexp :around #'ignore-errors-around-advice)
 (define-key global-map (kbd "C-M-f") #'forward-sexp-start)
 (define-key lispy-mode-map (kbd "M-0") #'pen-lispy-goto-start)
 (define-key lispy-mode-map (kbd "M-W") #'pen-lispy-mark-symbol)
