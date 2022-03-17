@@ -59,37 +59,6 @@
       result)))
 
 ;; Tests
-(never
- (-cx '((";" 'ansi-zsh)
-        ("'" 'eshell)
-        ("\"" 'nw-term)
-        ("s" 'eshell-sph)
-        ("S" 'eshell-spv)
-        ("g" 'split-window-below)
-        ("G" 'split-window-right))
-      '("w"
-        "C-w")
-      ;; '(pen-map
-      ;;   global-map)
-      )
-
- (-cx '((";" 'ansi-zsh)
-        ("'" 'eshell)
-        ("\"" 'nw-term)
-        ("s" 'eshell-sph)
-        ("S" 'eshell-spv)
-        ("g" 'split-window-below)
-        ("G" 'split-window-right))
-      '("w"
-        "C-w")
-      '(pen-map
-        global-map))
-
- (-cx '("w"
-        "C-w")
-      '(pen-map
-        global-map)))
-
 (defalias '-cartesian-product 'cartesian-product)
 (defalias '-cx 'cartesian-product)
 
