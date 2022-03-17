@@ -761,6 +761,7 @@
 (define-key pen-map (kbd "M-m f z") 'pen-helm-fzf)
 (define-key pen-map (kbd "M-m f Z") 'pen-helm-fzf-top)
 (define-key pen-map (kbd "M-m f f") 'pen-helm-find-files)
+;; This is needed or the combination M-l M-w M-l M-t will cause problems
 (define-key pen-map (kbd "M-l M-w") 'pen-save)
 
 (provide 'pen-example-config)
