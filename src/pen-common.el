@@ -5,8 +5,12 @@
   (let ((pf (fz pen-common-prompt-functions nil nil "Common prompt function: ")))
     (call-interactively 'pf)))
 
-(defun pen-complete-inner ()
-  (interactive)
+
+(defun pen-complete-inner (lines-context)
+  (interactive "p")
+
+  (tv lines-context)
+
   (if (pen-selected)
       (call-interactively 'kill-region))
   (let ((prefix (pen-preceding-lines 2))
