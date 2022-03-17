@@ -19,7 +19,7 @@
     (insert
      (if (pen-code-p)
          (pf-complete-inner-code/2 prefix suffix)
-       (pf-complete--prose/2 prefix suffix)))))
+       (pf-complete-inner-prose/2 prefix suffix)))))
 
 (defun pen-complete-prefix (lines-later-context)
   "Complete preceding text by providing lines-later-context lines of latter context."  
@@ -38,7 +38,7 @@
     (insert
      (if (pen-code-p)
          (pf-complete-inner-code/2 prefix suffix)
-       (pf-complete--prose/2 prefix suffix)))))
+       (pf-complete-inner-prose/2 prefix suffix)))))
 
 (define-key pen-map (kbd "M-6") 'pen-complete-inner)
 
