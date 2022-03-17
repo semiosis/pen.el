@@ -207,8 +207,8 @@
       do (eval
           `(progn (define-key ,m (kbd ,(concat k " M-k m")) #'pen-helm-imenu)
                   (define-key ,m (kbd ,(concat k " k")) #'bury-buffer)
-                  (define-key ,m (kbd ,(concat k " s")) #'sph)
-                  (define-key ,m (kbd ,(concat k " S")) #'spv)
+                  (define-key ,m (kbd ,(concat k " s")) #'pen-sph)
+                  (define-key ,m (kbd ,(concat k " S")) #'pen-spv)
                   (define-key ,m (kbd ,(concat k " y")) #'link-hint-copy-link)
                   (define-key ,m (kbd ,(concat k " M-e")) #'pen-revert)
                   (define-key ,m (kbd ,(concat k " M-w")) #'pen-save))))
