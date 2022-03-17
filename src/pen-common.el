@@ -41,5 +41,7 @@
        (pf-complete-inner-prose/2 prefix suffix)))))
 
 (define-key pen-map (kbd "M-6") 'pen-complete-inner)
+(define-key pen-map (kbd "M-_") 'pen-complete-inner)
+(define-key pen-map (kbd "M-l M-{") 'pen-complete-prefix)
 
 (provide 'pen-common)
