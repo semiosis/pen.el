@@ -330,11 +330,12 @@ semantic-path means a path suitable for google/nl searching"
 ;; DONE Make a Hyper binding for transforming prose or code using NL
 ;; This should be super easy.
 ;; I don't have a cheap version of this yet.
-;; TODO I suppose I should just test for prog-mode
-(defun pen-mode-prose-or-code-p ()
+(defun pen-code-p ()
+  "prose or code; t if code"
   ;; test for prog-mode
-  (cond
-   (body)))
+  (major-mode-p 'prog-mode))
+
+(defalias 'pen-mode-prose-or-code-p 'pen-code-p)
 
 ;; I need to force this to filter
 (comment
@@ -915,5 +916,9 @@ non-nil."
            (if dir (concat " CWD=" (pen-q dir) " ")
              "")
            " pen-nsfa -E " (pen-q cmd)) nil (or dir (cwd))))
+
+(defun cursor-at-region-start-p ()
+  "If the cursor is at the start of the region"
+  (and (region-active-p) (= (point) (region-beginning))))
 
 (provide 'pen-library)

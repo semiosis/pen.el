@@ -13,19 +13,10 @@
         (suffix (pen-proceeding-lines 2)))
 
     (insert
-     (pf-complete-inner-prose/2 prefix suffix))))
-
-(defun pen-complete-code ()
-  (interactive)
-  (if (pen-selected)
-      (call-interactively 'kill-region))
-  (let ((prefix (pen-preceding-lines 2))
-        (suffix (pen-proceeding-lines 2)))
-
-    (insert
-     (pf-complete-inner-code/2 prefix suffix))))
+     (if (pen-code-p)
+         (pf-complete-inner-code/2 prefix suffix)
+       (pf-complete--prose/2 prefix suffix)))))
 
 (define-key pen-map (kbd "M-6") 'pen-complete-inner)
-(define-key pen-map (kbd "M-7") 'pen-complete-inner)
 
 (provide 'pen-common)

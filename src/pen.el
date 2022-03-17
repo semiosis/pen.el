@@ -117,6 +117,7 @@
 (require 'pen-nlsh)
 (require 'pen-continuum)
 (require 'pen-ranger)
+(require 'pen-org-man)
 
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."
