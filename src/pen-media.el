@@ -40,7 +40,7 @@
     (if term-and-transcript
         (progn
           (eval `(,play-function path 'spv :loop ,loop))
-          (sleep-for-for-for-for-for-for-for-for 0.1)
+          (sleep-for 0.1)
           (pen-sph (concat "pen-readsubs " (pen-q path)) "-d"))
       (eval `(,play-function path))))
   nil)
@@ -143,7 +143,7 @@
       (setq lang "en"))
 
   (pen-spv (concat "youtube -tty -v " (pen-q query-or-url)) "-d")
-  (sleep-for-for-for-for-for-for-for-for 0.1)
+  (sleep-for 0.1)
   (pen-readsubs-youtube query-or-url))
 
 (defalias 'pen-ytt 'pen-search-play-yt-transcript)
