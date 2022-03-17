@@ -18,7 +18,7 @@
 (cl-defun pen-play-video-path (fp &optional window-function external-cmd &key loop)
   (pen-kill-music)
   (if (not window-function)
-      (setq window-function 'sps))
+      (setq window-function 'pen-sps))
   (if (not (sor external-cmd))
       (setq external-cmd "play-video"))
   (if loop
