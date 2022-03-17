@@ -92,7 +92,19 @@ def get_score(choice) -> float:
 # This is getting a bit silly.
 # Or I could write this in clojure with libpython
 
-if PEN_MODE == "search":
+# It might not be possible to use the Edit endpoint with the python client yet.
+# I have to be using my shell script instead.
+# Although, I should really be using a different languge.
+if PEN_MODE == "edit":
+    cs = openai.Completion.create(
+        engine=PEN_MODEL,
+        prompt=[PEN_PROMPT.replace("<document>", "")] +
+        [PEN_PROMPT.replace("<document>", doc) for doc in PEN_DOCUMENTS],
+        logprobs=0,
+        max_tokens=0,
+        temperature=float(PEN_TEMPERATURE),
+        echo=True)['choices']
+elif PEN_MODE == "search":
     cs = openai.Completion.create(
         engine=PEN_MODEL,
         prompt=[PEN_PROMPT.replace("<document>", "")] +

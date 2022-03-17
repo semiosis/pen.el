@@ -213,6 +213,7 @@ if test "$PEN_DEBUG" = "y"; then
     echo "PEN_REPETITION_PENALTY:\"$PEN_REPETITION_PENALTY\""
     echo "PEN_TOP_P:\"$PEN_TOP_P\""
     echo "PEN_TOP_K:\"$PEN_TOP_K\""
+    echo "PEN_VARS:\"$PEN_VARS\""
     echo "PEN_N_COMPLETIONS:\"$PEN_N_COMPLETIONS\""
     echo "PEN_COLLECT_FROM_POS:\"$PEN_COLLECT_FROM_POS\""
     echo "PEN_END_POS:\"$PEN_END_POS\""
@@ -265,6 +266,7 @@ export PEN_ENGINE_MAX_TOKENS
 export PEN_TEMPERATURE
 export PEN_TOP_P
 export PEN_TOP_K # best of
+export PEN_VARS
 export PEN_STOP_SEQUENCE
 export PEN_STOP_SEQUENCES
 export PEN_REPETITION_PENALTY
@@ -294,6 +296,7 @@ IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "$PEN_STOP_SEQUENCE" | pen-str unonelin
 
 # PEN_STOP_SEQUENSES is special. The json actually requires newlines inside it, so I should avoid evaluating those
 IFS= read -rd '' PEN_STOP_SEQUENCES < <(printf -- "%s" "$PEN_STOP_SEQUENCES" | pen-str unonelineify-safe);typeset -p PEN_STOP_SEQUENCES &>/dev/null
+IFS= read -rd '' PEN_VARS < <(printf -- "%s" "$PEN_VARS" | pen-str unonelineify-safe);typeset -p PEN_VARS &>/dev/null
 
 # Will it complain if PEN_STOP_SEQUENCE is empty?
 
