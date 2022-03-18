@@ -582,7 +582,11 @@
   (let ((res (apply proc args)))
     (xc (car kill-ring) t)
     res))
-(advice-add 'kill-ring-save :around #'kill-ring-save-around-advice)
+
+(if (inside-docker-p)
+    (progn
+      (advice-add 'dired-copy-filename-as-kill :around #'kill-ring-save-around-advice)
+      (advice-add 'kill-ring-save :around #'kill-ring-save-around-advice)))
 
 ;; swapped <Insert> and C-M-i (reverses tmux's swap)
 (define-key key-translation-map (kbd "<insertchar>") (kbd "C-M-i"))
