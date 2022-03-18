@@ -293,6 +293,15 @@ case "$sn" in
     }
     ;;
 
+    pind) {
+        sn=pen
+        PEN_USE_GUI=n
+        no=y
+        PEN_USE_REMOTE_PATH=y
+        export PEN_N_DAEMONS=1
+    }
+    ;;
+
     ptm) {
         sn=pen
         start_shell=y
@@ -400,6 +409,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -n) {
         no=y
+        shift
+    }
+    ;;
+
+    -rp) {
+        PEN_USE_REMOTE_PATH=y
         shift
     }
     ;;
@@ -883,6 +898,26 @@ if test -d "$PEN_CONFIG_DIR"; then
 fi
 
 if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = pent; } && \
+    test "$PEN_USE_REMOTE_PATH" = y && \
+    test "$#" -eq 1 && \
+    test -n "$1"; then
+    rp="$(realpath "$1")"
+    bn="$(basename "$rp")"
+
+    export NO_QUIT_DAEMONS=y
+
+    # This is for read-only text at the top of a potentially new file
+    export PEN_PROMPT
+    export PEN_HELP
+    export PEN_OVERLAY
+    export PEN_PREOVERLAY
+    export PEN_EIPE_DATA
+
+    if test "$USE_POOL" = "y"; then
+        remote_cmd=newframe.sh
+        # remote_cmd=/root/.emacs.d/host/pen.el/scripts/newframe.sh
+    fi
+elif { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = pent; } && \
     test "$#" -eq 1 && \
     test -n "$1" && \
     test -f "$1" && \
