@@ -767,5 +767,6 @@
 (define-key pen-map (kbd "M-m f f") 'pen-helm-find-files)
 ;; This is needed or the combination M-l M-w M-l M-t will cause problems
 (define-key pen-map (kbd "M-l M-w") 'pen-save)
+(define-key global-map (kbd "C-x ;") 'comment-line)
 
 (provide 'pen-example-config)
