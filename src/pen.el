@@ -1994,6 +1994,7 @@ May use to generate code from comments."
 (require 'pen-ink)
 (require 'pen-company)
 (require 'pen-library)
+(require 'pen-evil)
 (require 'pen-func-lists)
 (require 'pen-right-click-menu)
 (require 'pen-mouse)

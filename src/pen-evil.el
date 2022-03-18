@@ -1,3 +1,55 @@
+(require 'pen-selected)
+(require 'evil-surround)
+(require 'auto-highlight-symbol)
+
+(defun pen-copy-line (&optional arg)
+  "arg is C-u, if provided"
+  (interactive "P")
+  (if (region-active-p)
+      (progn
+        (execute-kbd-macro (kbd "M-w"))
+        (pen-ns (yanked) t)
+        (deactivate-mark))
+    (progn
+      (if (equal current-prefix-arg nil) ;; No C-u
+          (progn
+            (end-of-line)
+            (call-interactively 'cua-set-mark)
+            (beginning-of-line-or-indentation)
+            (beginning-of-line-or-indentation)
+            (call-interactively 'cua-exchange-point-and-mark))
+        (progn
+          (beginning-of-line)
+          (cua-set-mark)
+          (end-of-line))))))
+
+(defun pen-copy-line-evil-normal ()
+  (interactive)
+  (if (region-active-p)
+      (progn
+        (execute-kbd-macro (kbd "y"))
+        (deactivate-mark))
+    (progn
+      (end-of-line)
+      (execute-kbd-macro (kbd "v ^ y"))
+      (end-of-line)
+      (execute-kbd-macro (kbd "v ^")))))
+
+(defun pen-vim-star ()
+  "This is vim's * operator."
+  (interactive)
+  (if (region-active-p)
+      (progn
+        (ahs-forward)
+        (ahs-backward))))
+
+(defun CP (new-file-name)
+  "Creates a copy of the file connected to the current buffer's file with the new name new-file-name."
+  (interactive)
+  (let ((lcmd `(b cp -a ,(buffer-file-path) ,(concat (buffer-file-dir) "/" new-file-name))))
+    (eval lcmd)
+    (message (str lcmd))))
+
 (defun evil-enabled ()
   "True if in evil mode."
   (bound-and-true-p evil-mode))
@@ -8,7 +60,7 @@
      (try
       (if (not (evil-enabled))
           (progn
-            (enable-evil)
+            (pen-enable-evil)
             (try
              (progn
                (cond ((eq evil-state 'visual)
@@ -22,14 +74,14 @@
                       ))
                (with-local-quit (,@body)))
              nil)
-            (disable-evil)
+            (pen-disable-evil)
             nil)
         (progn (,@body) nil))
       nil)))
 
 (defalias 'progn-evil 'do-in-evil)
 
-(defun toggle-evil ()
+(defun pen-toggle-evil ()
   (interactive)
   "Tries Holy Mode + falls back to evil"
   (save-mark-and-excursion
@@ -39,19 +91,15 @@
     (call-interactively #'evil-mode)
     (fix-region)))
 
-(defun enable-evil ()
+(defun pen-enable-evil ()
   (interactive)
   (save-mark-and-excursion
     (evil-mode 1)))
 
-(defun disable-evil ()
+(defun pen-disable-evil ()
   (interactive)
   (save-mark-and-excursion
     (evil-mode -1)))
-
-(require 'pen-vim)
-(require 'pen-utils)
-(require 'selected)
 
 (defalias 'evil-goto-last-line 'evil-goto-line)
 
@@ -152,7 +200,7 @@
   "This binds both selected and evil visual mode keybindings"
   `(progn
      ;; Do visual maps even work?
-     (visual-map ,(sed "s/\\b\\w\\+\\b/M-&/g" KEYS)
+     (visual-map ,(pen-sed "s/\\b\\w\\+\\b/M-&/g" KEYS)
                  ,fun)
      (define-key selected-keymap (kbd ,KEYS) ,fun)))
 
@@ -174,7 +222,6 @@
 
 (pen-truly-selective-binding "G" 'egr)
 
-(require 'evil-surround)
 (visual-map "S" #'evil-surround-region)
 (pen-truly-selective-binding "S \"" (df fi-qftln (pen-region-pipe "q -ftln")))
 (pen-truly-selective-binding "S $" (df fi-surround-dollar (pen-region-pipe "surround '$' '$'")))
@@ -204,7 +251,7 @@
 (pen-truly-selective-binding "g Y" #'get-vim-link)
 (pen-truly-selective-binding "g f" #'open-selection-sps)
 (pen-truly-selective-binding "g y" #'get-emacs-link)
-(pen-truly-selective-binding "\"" (defun filter-q () "Filter selection with q" (interactive) (filter-selection 'q)))
+(pen-truly-selective-binding "\"" (defun filter-q () "Filter selection with q" (interactive) (filter-selection 'pen-q)))
 (pen-truly-selective-binding "M-g M-w" #'GoWhich)
 
 (pen-truly-evil-binding "M-(" (df pen-evil-select-word (if mark-active (progn (pen-ns "hi" t) (deactivate-mark) (left-char)) nil) (ekm "viw")))
@@ -633,13 +680,14 @@ The following special registers are supported.
       (progn
         (evil-active-region 1)
         (deactivate-mark)))
-    (kill-buffer))
+    (kill-buffer)))
 
-  (defun evil-global-marker-p (char)
-    "Whether CHAR denotes a global marker."
-    (or (and (>= char ?a) (<= char ?z))
-        (assq char (default-value 'evil-markers-alist))))
+(defun evil-global-marker-p (char)
+  "Whether CHAR denotes a global marker."
+  (or (and (>= char ?a) (<= char ?z))
+      (assq char (default-value 'evil-markers-alist))))
 
+(define-key global-map (kbd "M-Y") #'pen-copy-line)
 (define-key evil-normal-state-map (kbd "C-p") (pen-lm (evil-scroll-line-up 8)))
 (define-key evil-normal-state-map (kbd "C-n") (pen-lm (evil-scroll-line-down 8)))
 (define-key evil-insert-state-map (kbd "C-p") #'hippie-expand) ; This should start at the opposite end that C-n does

@@ -6,6 +6,18 @@
   (interactive)
   (dired pen-engines-directory))
 
+(defun pen-acolyte-dired-esp ()
+  (interactive)
+  (dired pen-esp-directory))
+
+(defun pen-dired-ilambda ()
+  (interactive)
+  (dired pen-ilambda-directory))
+
+(defun pen-dired-channel ()
+  (interactive)
+  (dired pen-channel-directory))
+
 (defun pen-acolyte-dired-dni ()
   (interactive)
   (dired pen-dni-directory))

@@ -24,7 +24,7 @@
         (if lsp-mode
             (lsp-headerline-breadcrumb-mode -1))
         (global-display-line-numbers-mode -1)
-        (if (sor header-line-format)
+        (if (ignore-errors (sor header-line-format))
             (setq header-line-format
                   (s-replace-regexp "^    " "" header-line-format)))
         (global-hide-mode-line-mode 1)
@@ -36,7 +36,7 @@
       (if lsp-mode
           (lsp-headerline-breadcrumb-mode 1))
       (global-display-line-numbers-mode 1)
-      (if (sor header-line-format)
+      (if (ignore-errors (sor header-line-format))
           (setq header-line-format (concat "    " header-line-format)))
       (global-hide-mode-line-mode -1)
       (visual-line-mode 1)

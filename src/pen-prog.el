@@ -117,7 +117,8 @@
 (defun pen-handle-repls ()
   (interactive)
   (if (str-match-p "*" (buffer-name))
-      (previous-buffer)
+      (switch-to-previous-buffer)
+      ;; (previous-buffer)
     (handle-repls nil)))
 
 (define-key prog-mode-map (kbd "M-=") 'pen-handle-repls)

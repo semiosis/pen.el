@@ -921,4 +921,8 @@ non-nil."
   "If the cursor is at the start of the region"
   (and (region-active-p) (= (point) (region-beginning))))
 
+(defun pen-concat (&rest body)
+  "Converts to string and concatenates."
+  (mapconcat 'str body ""))
+
 (provide 'pen-library)

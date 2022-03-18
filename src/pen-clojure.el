@@ -134,7 +134,7 @@ buffer."
                                    (if ;; pen-do-cider-auto-jack-in
                                        (pen-rc-test "cider")
                                        (progn
-                                         ;; (message "Jacking in")
+                                         (message "Jacking in. Please wait.")
                                          (with-current-buffer (current-buffer)
                                            (cond
                                             ((derived-mode-p 'clojure-mode)

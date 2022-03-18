@@ -144,67 +144,85 @@ This is useful for code-understanding when reading languages you don't understan
   :initialize #'custom-initialize-default)
 
 (defcustom pen-rhizome-directory (f-join user-emacs-directory "rhizome")
-  "Personal rhizome respository"
+  "Personal rhizome repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-pensieve-directory (f-join user-emacs-directory "pensieve")
-  "Personal pensieve respository"
+  "Personal pensieve repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-khala-directory (f-join user-emacs-directory "khala")
-  "Personal khala respository"
+  "Personal khala repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-penel-directory (f-join user-emacs-directory "pen.el")
-  "Personal pen.el respository"
+  "Personal pen.el repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-prompts-directory (f-join user-emacs-directory "prompts")
-  "Personal prompt respository"
+  "Personal prompt repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-contrib-directory (f-join user-emacs-directory "pen-contrib.el")
-  "Personal pen-contrib.el respository"
+  "Personal pen-contrib.el repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-snippets-directory (f-join user-emacs-directory "snippets")
-  "Personal snippets respository"
+  "Personal snippets repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-engines-directory (f-join user-emacs-directory "engines")
-  "Personal engine respository"
+  "Personal engine repository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-esp-directory "/root/repos/efm-langserver"
+  "Personal esp repository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-ilambda-directory "/root/repos/ilambda"
+  "Personal ilambda repository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
+(defcustom pen-channel-directory "/root/repos/channel"
+  "Personal channel repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-dni-directory (f-join user-emacs-directory "dni")
-  "Personal dni respository"
+  "Personal dni repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-creation-directory (f-join user-emacs-directory "creation")
-  "Personal creation respository"
+  "Personal creation repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
 
 (defcustom pen-glossaries-directory (f-join user-emacs-directory "glossaries")
-  "Personal glossary respository"
+  "Personal glossary repository"
   :type 'string
   :group 'pen
   :initialize #'custom-initialize-default)
