@@ -15,7 +15,7 @@
   (if (region-active-p)
       (let ((script
              (read-string "!")))
-        (region-pipe script))))
+        (pen-region-pipe script))))
 
 (defun selected-backspace-delete-and-deselect ()
   (interactive)

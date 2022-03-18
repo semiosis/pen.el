@@ -4,6 +4,9 @@
 
 (require 'clomacs)
 
+(if (inside-docker-p)
+    (setq cider-lein-command "pen-lein"))
+
 (setq cider-auto-jump-to-error nil)
 
 (pen-with 'cider
@@ -120,30 +123,32 @@ buffer."
 
   (if (and
        (derived-mode-p 'clojure-mode)
-       (not (derived-mode-p 'clojerl-mode)))
+       (not (derived-mode-p 'clojerl-mode))
+       (not (minor-mode-p org-src-mode)))
       (progn
         ;; (ns "running timer")
         (run-with-idle-timer 3 nil
                              (lm
-                              (try
-                               (if ;; pen-do-cider-auto-jack-in
-                                   (pen-rc-test "cider")
-                                   (progn
-                                     ;; (message "Jacking in")
-                                     (with-current-buffer (current-buffer)
-                                       (cond
-                                        ((derived-mode-p 'clojure-mode)
-                                         (auto-no
-                                          ;; (call-interactively
-                                          ;;  'cider-jack-in)
-                                          (cider-jack-in nil)))
-                                        ((derived-mode-p 'clojurescript-mode)
-                                         (auto-no
-                                          ;; (call-interactively
-                                          ;;  'cider-jack-in)
-                                          (cider-jack-in-cljs nil)))))
-                                     ;; (message "Jacked in?")
-                                     )))))
+                              (if (not (minor-mode-p org-src-mode))
+                                  (try
+                                   (if ;; pen-do-cider-auto-jack-in
+                                       (pen-rc-test "cider")
+                                       (progn
+                                         ;; (message "Jacking in")
+                                         (with-current-buffer (current-buffer)
+                                           (cond
+                                            ((derived-mode-p 'clojure-mode)
+                                             (auto-no
+                                              ;; (call-interactively
+                                              ;;  'cider-jack-in)
+                                              (cider-jack-in nil)))
+                                            ((derived-mode-p 'clojurescript-mode)
+                                             (auto-no
+                                              ;; (call-interactively
+                                              ;;  'cider-jack-in)
+                                              (cider-jack-in-cljs nil)))))
+                                         ;; (message "Jacked in?")
+                                         ))))))
 
         (enable-helm-cider-mode)))
   t)

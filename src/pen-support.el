@@ -1300,13 +1300,14 @@ when s is a string, set the clipboard to s"
 (defun maybe-lsp ()
   "Maybe run lsp."
   (interactive)
-  (cond
-   ((derived-mode-p 'prompt-description-mode)
-    (message "Disabled lsp for prompts"))
-   ((derived-mode-p 'completer-description-mode)
-    (message "Disabled lsp for completers"))
-   (t
-    (call-interactively 'lsp))))
+  (if (not (not (minor-mode-p org-src-mode)))
+      (cond
+       ((derived-mode-p 'prompt-description-mode)
+        (message "Disabled lsp for prompts"))
+       ((derived-mode-p 'completer-description-mode)
+        (message "Disabled lsp for completers"))
+       (t
+        (call-interactively 'lsp)))))
 
 (defun pen-awk1 (s)
   (pen-sn "awk 1" s))
@@ -1496,6 +1497,7 @@ when s is a string, set the clipboard to s"
             (pen-prompts-directory "$PEN_PROMPTS_DIR")
             (pen-engines-directory "$PEN_ENGINES_DIR")
             (penconfdir "$PEN")
+            ; ((f-join user-emacs-directory "pen.el") "$PENEL_DIR")
             ((f-join user-emacs-directory "pen.el") "$PENEL")
             (user-home-directory "$HOME"))))
 
@@ -1509,8 +1511,9 @@ when s is a string, set the clipboard to s"
             ("$PEN_PROMPTS_DIR" pen-prompts-directory)
             ("$PEN_ENGINES_DIR" pen-engines-directory)
             ;; This is dodgy because there are other vars that are prefixed with $PEN_
-            ("$PEN" penconfdir)
+            ("$PENEL_DIR" (f-join user-emacs-directory "pen.el"))
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
+            ("$PEN" penconfdir)
             ("$HOME" user-home-directory)
             ("//" "/"))))
 
@@ -1786,9 +1789,11 @@ This function accepts any number of ARGUMENTS, but ignores them."
 (define-key global-map (kbd "M-Y") 'pen-copy-line)
 
 (defun pen-git-buffer-name-to-file-name ()
-  (if (string-match "\.~" (buffer-name))
-      (pen-sn "tr -s \/ _" (sed "s/^\\(.*\\)\\(\\.~\\)\\(.*\\)$/\\3\\1/" (buffer-name)))
-    (buffer-name)))
+  (pen-sn "tr -s \"[/\\\\*]\" _" (pen-sed "s/^\\(.*\\)\\(\\.~\\)\\(.*\\)$/\\3\\1/" (buffer-name)))
+  ;; (if (string-match "\.~" (buffer-name))
+  ;;     (pen-sn "tr -s \"[/\\\\*]\" _" (sed "s/^\\(.*\\)\\(\\.~\\)\\(.*\\)$/\\3\\1/" (buffer-name)))
+  ;;   (buffer-name))
+  )
 
 (defun pen-save-buffer-to-file ()
   (write-to-file
@@ -1816,7 +1821,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
                (point-min)))
         (max (if (major-mode-p 'term-mode)
                  (second (buffer-string-visible-points))
-               (point-min))))
+               (point-max))))
 
     (let ((line-and-col (concat-string "+" (line-number-at-pos) ":" (current-column))))
       (if (and buffer-file-name
@@ -1824,13 +1829,15 @@ This function accepts any number of ARGUMENTS, but ignores them."
           (progn
             (save-buffer)
             (shell-command (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
-        (cond ((string-match "\.~" (buffer-name))
-               (let ((new_fp (pen-save-buffer-to-file)))
-                 (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))))
-              ((string-match "\\[*Org Src" (buffer-name))
-               (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))
-              (t
-               (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))))))))
+        (cond
+         ((or
+           (not (buffer-file-path))
+           (string-match "\.~" (buffer-name)))
+          (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))
+         ((string-match "\\[*Org Src" (buffer-name))
+          (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))
+         (t
+          (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))))))))
 (defalias 'open-in 'pen-tmux-edit)
 
 (defun pen-tm-edit-v-in-nw ()

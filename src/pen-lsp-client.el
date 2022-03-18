@@ -401,8 +401,8 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 ;; This will make emacs hang
 ;; (add-hook 'text-mode-hook #'lsp)
 
-(add-hook 'rust-mode-hook #'lsp)
-(add-hook 'clojure-mode-hook #'lsp)
+(add-hook 'rust-mode-hook #'maybe-lsp)
+(add-hook 'clojure-mode-hook #'maybe-lsp)
 
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here

@@ -466,10 +466,10 @@ The result is a string."
   (cond ((and (lispy-left-p) (not mark-active))
          (save-excursion
            (ekm "m")
-           (region-pipe formatter)))
+           (pen-region-pipe formatter)))
         (mark-active
          (save-mark-and-excursion
-           (region-pipe formatter)))
+           (pen-region-pipe formatter)))
         (t
          (pen-sn (concat formatter " " (pen-q buffer-file-name))))))
 
