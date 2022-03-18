@@ -6,6 +6,12 @@
 ;; (defun f-join (&rest strings)
 ;;   (s-join "/" strings))
 
+(defmacro never (&rest body)
+  "Do not run this code"
+  `(if nil
+       (progn
+         ,@body)))
+
 (defun pen-tf (template &optional input ext)
   "Create a temporary file."
   (setq ext (or ext "txt"))
@@ -1300,7 +1306,7 @@ when s is a string, set the clipboard to s"
 (defun maybe-lsp ()
   "Maybe run lsp."
   (interactive)
-  (if (not (not (minor-mode-p org-src-mode)))
+  (if (not (minor-mode-p org-src-mode))
       (cond
        ((derived-mode-p 'prompt-description-mode)
         (message "Disabled lsp for prompts"))
@@ -1511,9 +1517,8 @@ when s is a string, set the clipboard to s"
             ("$PEN_PROMPTS_DIR" pen-prompts-directory)
             ("$PEN_ENGINES_DIR" pen-engines-directory)
             ;; This is dodgy because there are other vars that are prefixed with $PEN_
-            ("$PENEL_DIR" (f-join user-emacs-directory "pen.el"))
-            ("$PENEL" (f-join user-emacs-directory "pen.el"))
             ("$PEN" penconfdir)
+            ("$PENEL" (f-join user-emacs-directory "pen.el"))
             ("$HOME" user-home-directory)
             ("//" "/"))))
 
