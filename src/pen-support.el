@@ -1517,6 +1517,7 @@ when s is a string, set the clipboard to s"
             ("$PEN_PROMPTS_DIR" pen-prompts-directory)
             ("$PEN_ENGINES_DIR" pen-engines-directory)
             ;; This is dodgy because there are other vars that are prefixed with $PEN_
+            ("$PENEL_DIR" (f-join user-emacs-directory "pen.el"))
             ("$PEN" penconfdir)
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
             ("$HOME" user-home-directory)
