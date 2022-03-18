@@ -51,7 +51,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-awk1 | while IFS=$'\n' read -r line; do
+awk 1 | while IFS=$'\n' read -r line; do
     {
         phrase="$line"
         oci curl -s "https://books.google.com/ngrams/json?content=$(echo "$phrase" | urlencode | sed 's/%2A/*/g')&year_start=$start&year_end=$end&corpus=$corpus&smoothing=3" | jq -r .[].ngram | htmldecode.sh | postprocess

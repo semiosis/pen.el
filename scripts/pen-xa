@@ -73,7 +73,7 @@ myeval() {
 
 
 if test "$PIPE_IT" = "y"; then
-    awk1 | while IFS=$'\n' read -r line; do
+    awk 1 | while IFS=$'\n' read -r line; do
         if test "$PRINT_INPUT" = "y"; then
             printf -- "%s\n" "$line"
         fi
@@ -103,7 +103,7 @@ if test "$PIPE_IT" = "y"; then
         fi
     done
 else
-    awk1 | while IFS=$'\n' read -r line; do
+    awk 1 | while IFS=$'\n' read -r line; do
         if test "$PRINT_INPUT" = "y"; then
             printf -- "%s\n" "$line"
         fi

@@ -233,7 +233,7 @@ test "$PCRE" = "y" && grep_opts+=" -P"
 file_filter() {
     {
         if test "$KNOWN_TEXT_FILES_ONLY" = "y"; then
-            awk1 | while IFS=$'\n' read -r line; do
+            awk 1 | while IFS=$'\n' read -r line; do
                 if pen-tt -t "$line"; then
                     printf -- "%s\n" "$line"
                 fi

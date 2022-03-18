@@ -600,7 +600,7 @@ case "$f" in
         results="$(pen-tm regex-find-coord -nohist -t "$TARGET" "$re")"
 
         if test "$ALL" = "y"; then
-            printf -- "%s\n" "$results" | awk1 | while IFS=$'\n' read -r line; do
+            printf -- "%s\n" "$results" | awk 1 | while IFS=$'\n' read -r line; do
                 printf -- "%s\n" "$line" | xargs pen-tm click -t "$TARGET"
                 sleep 0.1
             done
@@ -3403,7 +3403,7 @@ case "$f" in
         paths="$(find . -maxdepth 1 -type pen-f | sed 's/^..//')"
         if [ -n "$paths" ]; then
             paths="$(pl "$paths" | pen-str uniq | pen-tm -f -i spv -noerror "mfz -p" | umn)"
-            pl "$paths" | awk1 | while IFS=$'\n' read -r line; do
+            pl "$paths" | awk 1 | while IFS=$'\n' read -r line; do
                 if test -n "$line"; then
                     pen-tm tp "$line"
                 fi
