@@ -81,5 +81,5 @@ fi
 
 sn="$(p "$sn" | sed 's/^pen-//')"
 
-cmd1 pen-tm "${arr[@]}" "$sn" -n "$CMD_B" -args "$@" | pen-ds lastsps &>/dev/null
-pen-tm "${arr[@]}" "${tmargs[@]}" "$sn" -n "$CMD" -args "$@"
+cmd1 pen-tm -export PEN_GUI "${arr[@]}" "$sn" -n "$CMD_B" -args "$@" | pen-ds lastsps &>/dev/null
+pen-tm -export PEN_GUI "${arr[@]}" "${tmargs[@]}" "$sn" -n "$CMD" -args "$@"

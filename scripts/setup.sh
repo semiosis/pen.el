@@ -310,6 +310,14 @@ agi xclip
 agi buffer
 
 IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
+stty stop undef; stty start undef; 
+eval $(resize) &>/dev/null
+sleep 0.1
+. ~/.shell_environment
+HEREDOC
+printf -- "%s\n" "$SHELL_CODE" >> $HOME/.xterm-sh-rc
+
+IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
 export EMACSD=/root/.emacs.d
 term_setup_fp="$EMACSD/pen.el/scripts/setup-term.sh"
 if [ -f "$term_setup_fp" ]; then

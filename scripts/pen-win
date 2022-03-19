@@ -57,6 +57,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if test "$PEN_GUI" = "y"; then
+    : "${ISTTY:="n"}"
+fi
+
 sps() {
     if test "$WAIT" = "y"; then
         shift # shift the -E
@@ -222,7 +226,7 @@ EOF
             fi
         else
             if ! test -n "$USETTY"; then
-                if xterm yn "Use mplayer?"; then
+                if pen-xterm pen-yn "Use mplayer?"; then
                     USETTY=n
                 else
                     USETTY=y
@@ -264,7 +268,7 @@ EOF
         else
             if test "$USETTY" = y; then
                 pen-sps -E "pen-timg $path"
-            elif ! test "$USETTY" = y && xterm yn "Use eog?"; then
+            elif ! test "$USETTY" = y && pen-xterm pen-yn "Use eog?"; then
                 eog "$1"
             else
                 pen-sps -E "pen-timg $path"
@@ -297,7 +301,7 @@ EOF
         else
             if test "$USETTY" = y; then
                 0</dev/null pen-sps -E "sp $path"
-            elif ! test "$USETTY" = y && xterm yn "Use zathura?"; then
+            elif ! test "$USETTY" = y && pen-xterm pen-yn "Use zathura?"; then
                 z "$1"
             else
                 0</dev/null pen-sps -E "sp $path"
@@ -322,7 +326,7 @@ EOF
 
         if test "$ISTTY" = y; then
             if test "$USETTY" = y; then
-                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
+                if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     eval "unbuffer pen-timg $qpath"
                 else
                     eval "unbuffer pen-timg --frames=1 --clear -E $qpath" | less -rS
@@ -331,13 +335,13 @@ EOF
                 set -m
                 pen-ns "1:$1"
 
-                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
+                if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     eog "$1" & disown
                 else
                     feh -B black "$1" & disown
                 fi
             else
-                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
+                if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     eval "unbuffer pen-timg $qpath"
                 else
                     eval "unbuffer pen-timg --frames=1 --clear -E $qpath" | less -rS
@@ -345,19 +349,19 @@ EOF
             fi
         else
             if test "$USETTY" = y; then
-                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
+                if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
                 else
                     pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
                 fi
-            elif ! test "$USETTY" = y && xterm yn "Use feh?"; then
-                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
+            elif ! test "$USETTY" = y && pen-xterm pen-yn "Use feh?"; then
+                if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     eog "$1" & disown
                 else
                     feh -B black "$1" & disown
                 fi
             else
-                if pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
+                if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
                 else
                     pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
@@ -525,7 +529,7 @@ EOF
         cd $NOTES
         unset CWD
 
-        xterm -E "resize &> /dev/null; sleep 0.1; nvc -E $(pen-cmd "TERM=vt100rev tmux attach -t localhost:")"
+        pen-xterm -E "resize &> /dev/null; sleep 0.1; nvc -E $(pen-cmd "TERM=vt100rev tmux attach -t localhost:")"
     }
     ;;
 
@@ -533,7 +537,7 @@ EOF
         cd $NOTES
         unset CWD
 
-        xterm -E "resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:"
+        pen-xterm -E "resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:"
     }
     ;;
 
@@ -541,7 +545,7 @@ EOF
         cd $NOTES
         unset CWD
 
-        bash -c "set -x; set -m; xterm -E $(cmd-nice-posix "resize &> /dev/null; sleep 0.1; TERM=xterm-256color tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
+        bash -c "set -x; set -m; pen-xterm -E $(cmd-nice-posix "resize &> /dev/null; sleep 0.1; TERM=xterm-256color tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
     }
     ;;
 
@@ -549,7 +553,7 @@ EOF
         cd $NOTES
         unset CWD
 
-        bash -c "set -x; set -m; xterm -E $(cmd-nice-posix "resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
+        bash -c "set -x; set -m; pen-xterm -E $(cmd-nice-posix "resize &> /dev/null; sleep 0.1; TERM=vt100rev tmux attach -t localhost:")& PIDX=\$!; sleep 0.1; xprop -id \$($HOME/local/bin/getwid.sh \$PIDX) -f WM_CLASS 8s -set WM_CLASS 'compton-invert';"
 
         xprop -f WM_CLASS 8s -set WM_CLASS 'compton-invert'
         sleep 1

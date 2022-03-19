@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
+
+: ${CMD:="zsh"}
+
+statusfile=$(mktemp)
+xterm -ls -fs 11 -e ". $HOME/.xterm-sh-rc; $CMD; echo \$? > $statusfile"
+exit $(cat $statusfile && rm $statusfile)
