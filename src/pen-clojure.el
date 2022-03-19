@@ -8,6 +8,7 @@
     (setq cider-lein-command "pen-lein"))
 
 (setq cider-auto-jump-to-error nil)
+(setq cider-repl-pop-to-buffer-on-connect nil)
 
 (pen-with 'cider
           ;; Fixes super annoying message
@@ -114,6 +115,7 @@ buffer."
 (defvar pen-do-cider-auto-jack-in t)
 
 (defun cider-auto-jack-in ()
+  "cider-auto-jack-in is needed for cider-jack-in-around-advice to work."
   (interactive)
 
   ;; Make sure to be more precise. jack in with cljs too if it should
@@ -127,28 +129,30 @@ buffer."
        (not (minor-mode-p org-src-mode)))
       (progn
         ;; (ns "running timer")
-        (run-with-idle-timer 3 nil
-                             (lm
-                              (if (not (minor-mode-p org-src-mode))
-                                  (try
-                                   (if ;; pen-do-cider-auto-jack-in
-                                       (pen-rc-test "cider")
-                                       (progn
-                                         (message "Jacking in. Please wait.")
-                                         (with-current-buffer (current-buffer)
-                                           (cond
-                                            ((derived-mode-p 'clojure-mode)
-                                             (auto-no
-                                              ;; (call-interactively
-                                              ;;  'cider-jack-in)
-                                              (cider-jack-in nil)))
-                                            ((derived-mode-p 'clojurescript-mode)
-                                             (auto-no
-                                              ;; (call-interactively
-                                              ;;  'cider-jack-in)
-                                              (cider-jack-in-cljs nil)))))
-                                         ;; (message "Jacked in?")
-                                         ))))))
+        (run-with-idle-timer
+         1 nil
+         (eval
+          `(lm
+            (if (not (minor-mode-p org-src-mode))
+                (try
+                 (if ;; pen-do-cider-auto-jack-in
+                     (pen-rc-test "cider")
+                     (progn
+                       (message "Jacking in. Please wait.")
+                       (with-current-buffer ,(current-buffer)
+                         (cond
+                          ((derived-mode-p 'clojure-mode)
+                           (auto-no
+                            ;; (call-interactively
+                            ;;  'cider-jack-in)
+                            (cider-jack-in nil)))
+                          ((derived-mode-p 'clojurescript-mode)
+                           (auto-no
+                            ;; (call-interactively
+                            ;;  'cider-jack-in)
+                            (cider-jack-in-cljs nil)))))
+                       ;; (message "Jacked in?")
+                       )))))))
 
         (enable-helm-cider-mode)))
   t)
@@ -236,32 +240,34 @@ canceled the action, signal quit."
 (setq cider-lein-parameters "repl :headless :host localhost")
 
 (defun cider-jack-in-around-advice (proc &rest args)
-  (never
-   (let ((res (apply proc args)))
-     res))
-  (let ((gdir (sor
-               (locate-dominating-file default-directory ".git")
-               (projectile-acquire-root)))
-        (pdir (locate-dominating-file default-directory "project.clj")))
+  "This exists actually to ensure the nrepl directory is at the top level
+so the same nrepl is used for all files in the project"
+  (let* ((gdir (sor
+                (locate-dominating-file default-directory ".git")
+                (projectile-acquire-root)))
+         (pdir (locate-dominating-file default-directory "project.clj"))
+         (dir (or (and (string-equal gdir pdir)
+                       gdir)
+                  pdir))
+         (bufname
+          (if (re-match-p "closure" (str proc))
+              (concat "*" (slugify (concat "closure" " in " dir)) "*")
+            (concat "*" (slugify (concat "jack-in" " in " dir)) "*"))))
     (save-window-excursion
-      (let ((b (switch-to-buffer "*cd-project-clj*")))
+      (let* ((b (switch-to-buffer bufname)))
         (ignore-errors
           (with-current-buffer b
-            (cond
-             ((string-equal gdir pdir)
-              (progn
-                (message (concat "starting cider in " gdir))
-                (insert (concat "starting cider in " gdir))
-                (insert "\n")
-                (cd gdir)))
-             ((sor pdir)
-              (progn
-                (message (concat "starting cider in " pdir))
-                (insert (concat "starting cider in " pdir))
-                (insert "\n")
-                (cd pdir))))
+            (progn
+              (insert (message "%s" (concat (str proc) " in " dir)))
+              (insert "\n")
+              (cd dir))
             (let ((res (apply proc args)))
-              (bury-buffer b)
+              (if (re-match-p "closure" (str proc))
+                  (let ((jack-in-bufname (concat "*" (slugify (concat "jack-in" " in " dir)) "*")))
+                    (kill-buffer b)
+                    (if (buffer-exists jack-in-bufname)
+                        (kill-buffer jack-in-bufname)))
+                (bury-buffer b))
               res)))))))
 (advice-add 'cider-restart :around #'cider-jack-in-around-advice)
 (advice-add 'cider-jack-in :around #'cider-jack-in-around-advice)
