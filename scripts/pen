@@ -17,6 +17,11 @@
 
 pen_version=2.0
 
+# This will detach the docker container immediately - but how to disable entirely?
+# At least I have saved C-p from being highjacked.
+# C-q in emacs is used to enter the next character. This seems like an OK binding.
+docker_detach_keys="ctrl-q,ctrl-q"
+
 inside-docker-p() {
     test -f /.dockerenv
 }
@@ -1880,7 +1885,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         --env USE_NVC \
         --env TERM \
         --env USE_NVC \
-        --detach-keys="" \
+        --detach-keys="$docker_detach_keys" \
         $(if test -n "$DISPLAY"; then
         cmd --privileged \
         --env COLORFGBG \
@@ -1952,7 +1957,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice ". ~/.emacs.d/pen.el/scripts/setup-term.sh; $(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" --detach-keys="" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
+docker "$docker_cmd" --detach-keys="$docker_detach_keys" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
 HEREDOC
     }
     ;;
