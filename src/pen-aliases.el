@@ -8,5 +8,7 @@
 (defalias 'region2string 'buffer-substring)
 (defalias 'let-values 'pcase-let)
 (defalias 'string-or 'str-or)
+(defalias 'get-top-level 'projectile-project-root)
+(defalias 'current-buffer-name 'buffer-name)
 
 (provide 'pen-aliases)

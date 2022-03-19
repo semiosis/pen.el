@@ -200,11 +200,11 @@ NEEDLE is the search string."
 (defun pen-grep-eead-on-results (paths query)
   (interactive (list
                 (grep-get-paths)
-                (read-string "pen-ead:")))
+                (read-string "pen-ead:" (pen-thing-at-point))))
   (pen-eead-thing-at-point query paths))
 
 (defun pen-wgrep-thing-at-point (s &optional dir)
-  (interactive (list (pen-thing-at-point)))
+  (interactive (list (pen-thing-at-point)))  
   (if (major-mode-p 'grep-mode)
       (call-interactively 'pen-grep-eead-on-results)
     (if dir
@@ -224,12 +224,18 @@ NEEDLE is the search string."
   pat)
 
 ;; This is so nice and fast! I should definitely stay within emacs!
+
 (defun pen-eead-thing-at-point (&optional thing paths-string dir)
   (interactive (list (str (pen-thing-at-point))
                      nil
                      (get-top-level)))
+
+  ;; Sometimes the function is not called interactively
+  (setq thing (or thing (str (pen-thing-at-point))))
+  (setq dir (or dir (get-top-level)))
+  
   (let* ((cmd (concat "pen-ead " (pen-q (pen-eatify thing))))
-         (cmdnoeat (if paths-string
+         (cmdnoeat (if (sor  paths-string)
                        (concat "pen-umn | uniqnosort | pen-ead " (pen-q thing))
                      (concat "pen-ead " (pen-q thing))))
          (slug (slugify cmdnoeat))

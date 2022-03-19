@@ -775,4 +775,7 @@
 (define-key global-map (kbd "C-x C-e") 'eval-last-sexp-unknown)
 (define-key emacs-lisp-mode-map (kbd "C-x C-e") 'eval-last-sexp)
 
+(define-key pen-map (kbd "M-p") #'pen-previous-defun)
+(define-key pen-map (kbd "M-n") #'pen-next-defun)
+
 (provide 'pen-example-config)
