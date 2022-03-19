@@ -54,6 +54,10 @@
   (interactive)
   (dired pen-penel-directory))
 
+(defun pen-acolyte-dired-scripts ()
+  (interactive)
+  (dired (f-join pen-penel-directory "scripts")))
+
 (defun pen-dired-rhizome ()
   (interactive)
   (dired pen-rhizome-directory))

@@ -13,6 +13,20 @@
 
 (openwith-mode t)
 
+(defun openwith-open-unix (command arglist)
+  "Run external command COMMAND, in such a way that it is
+  disowned from the parent Emacs process.  If Emacs dies, the
+  process spawned here lives on.  ARGLIST is a list of strings,
+  each an argument to COMMAND."
+  (setq command (concat "sh -c " (pen-q (concat "export PEN_GUI=y; " command))))
+  (let ((shell-file-name "/bin/sh"))
+    (start-process-shell-command
+     "openwith-process" nil
+     (concat
+      "exec nohup " command " "
+      (mapconcat 'shell-quote-argument arglist " ")
+      " >/dev/null"))))
+
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun openwith-mode-around-advice (proc &rest args)
   (let ((res (apply proc args)))
