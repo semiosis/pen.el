@@ -1066,4 +1066,29 @@ non-nil."
             nil))
         ))
 
+(defun show-interactive-prefix ()
+  (interactive)
+  (message (str current-prefix-arg)))
+
+(defun call-interactively-with-default-prefix-and-parameters (func &rest args)
+  (setq current-prefix-arg (list 4)) ; C-u
+  (call-interactively func t (apply 'vector args)))
+
+(defun call-interactively-with-prefix-and-parameters (func prefix &rest args)
+  (setq current-prefix-arg (list prefix)) ; C-u
+  (call-interactively func t (apply 'vector args)))
+
+(defun pen-scroll-up ()
+  (interactive)
+  (call-interactively-with-prefix-and-parameters 'cua-scroll-down 8))
+
+(defun pen-scroll-down ()
+  (interactive)
+  (call-interactively-with-prefix-and-parameters 'cua-scroll-up 8))
+
+(if (inside-docker-p)
+    (progn
+      (global-set-key "\C-n" 'pen-scroll-down)
+      (global-set-key "\C-p" 'pen-scroll-up)))
+
 (provide 'pen-library)
