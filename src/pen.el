@@ -120,6 +120,7 @@
 (require 'pen-org-man)
 (require 'pen-lists)
 (require 'pen-projectile)
+(require 'pen-magit)
 
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."
