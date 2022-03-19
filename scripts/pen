@@ -906,8 +906,6 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
     test "$PEN_USE_REMOTE_PATH" = y && \
     test "$#" -eq 1 && \
     test -n "$1"; then
-    rp="$(realpath "$1")"
-    bn="$(basename "$rp")"
 
     export NO_QUIT_DAEMONS=y
 

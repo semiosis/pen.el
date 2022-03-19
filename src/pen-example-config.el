@@ -777,5 +777,7 @@
 
 (define-key pen-map (kbd "M-p") #'pen-previous-defun)
 (define-key pen-map (kbd "M-n") #'pen-next-defun)
+(define-key pen-map (kbd "M-[ M-h") #'git-gutter+-previous-hunk)
+(define-key pen-map (kbd "M-] M-h") #'git-gutter+-next-hunk)
 
 (provide 'pen-example-config)

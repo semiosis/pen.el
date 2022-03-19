@@ -501,7 +501,8 @@ The result is a string."
         (if fun
             (call-interactively fun)
           (message "Nothing bound")))
-    (ekm "M-h")))
+    (call-interactively 'pen-lisp-left-noevil)
+    (call-interactively 'er/expand-region)))
 
 (defun pen-lispy-run-inner-sexp (arg)
   (interactive "p")
