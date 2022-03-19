@@ -35,6 +35,11 @@
                projectile-mode
                dired-async-mode
                global-gumshoe-mode
+               monroe-interaction-mode
+               git-gutter+-mode
+               eldoc-mode
+               clj-refactor-mode
+               pen-lisp-mode
                right-click-context-mode))
     (ignore-errors (diminish s)))
   nil)
