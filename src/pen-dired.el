@@ -107,7 +107,7 @@
 (defun my-ranger ()
   (interactive)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
-      (call-interactively 'sps-ranger)
+      (call-interactively 'pen-sps-ranger)
     (call-interactively 'ranger)))
 
 (defun dired-open-externally-with-rifle (&optional arg)
@@ -118,7 +118,7 @@
 (defun find-here-symlink (substring)
   (interactive (list (read-string "symlink substring: ")))
   (let* ((query (concat "*" substring "*"))
-         (result (pen-sn (concat "tp find-here-symlink " (pen-q query)) nil (my/pwd))))
+         (result (pen-sn (concat "tp find-here-symlink " (pen-q query)) nil (pen-pwd))))
     (if (not (string-empty-p result))
         (with-current-buffer (nbfs result)))))
 
@@ -163,7 +163,7 @@
 (define-key ranger-mode-map (kbd "C-M-i") (dff (tsps "cr")))
 (define-key dired-mode-map (kbd "M-^") 'vc-cd-top-level)
 (define-key dired-mode-map (kbd "r") 'my-ranger)
-(define-key dired-mode-map (kbd "M-r") 'sps-ranger)
+(define-key dired-mode-map (kbd "M-r") 'pen-sps-ranger)
 (define-key dired-mode-map (kbd "[") 'peep-dired)
 (define-key dired-mode-map (kbd "f") 'dired-narrow)
 (define-key dired-mode-map (kbd "/") 'dired-narrow-fuzzy)

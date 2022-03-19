@@ -49,6 +49,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -t) {
+        RETRY_TIMEOUT="$2"
+        shift
+        shift
+    }
+    ;;
+
     -u) {
         UPDATE=y
         shift

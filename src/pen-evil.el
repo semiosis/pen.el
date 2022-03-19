@@ -453,7 +453,7 @@
 
   (if bang
       (kill-buffer)
-    (kill-buffer-immediately)))
+    (pen-kill-buffer-immediately)))
 (evil-ex-define-cmd "bd" 'evil-bd)
 
 (evil-define-command evil-other-file ()

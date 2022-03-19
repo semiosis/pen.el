@@ -491,7 +491,7 @@ Call `helm' only with SOURCES and BUFFER as args."
 (define-key helm-find-files-map (kbd "M-D") #'send-m-del)
 (define-key helm-map (kbd "C-h") nil)
 (define-key pen-map (kbd "M-l f r") 'helm-mini) ; recent
-(define-key pen-map (kbd "M-l f R") 'sps-ranger)
+(define-key pen-map (kbd "M-l f R") 'pen-sps-ranger)
 (define-key pen-map (kbd "M-\"") nil)
 (define-key pen-map (kbd "M-l f z") 'pen-helm-fzf)
 (define-key pen-map (kbd "M-l f Z") 'pen-helm-fzf-top)

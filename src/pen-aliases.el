@@ -7,5 +7,6 @@
 (defalias 'f-basename 'f-filename)
 (defalias 'region2string 'buffer-substring)
 (defalias 'let-values 'pcase-let)
+(defalias 'string-or 'str-or)
 
 (provide 'pen-aliases)

@@ -189,7 +189,7 @@ if [ -n "$input" ]; then
             # pen-mnm | orspe -noonly -e "$ecmd"
             # Sadly, pen-mnm appears to break wgrep-mode
             # grep-mode is fine.
-            pen-mnm | orspe -noonly -e "$ecmd"
+            pen-mnm | pen-e -D DEFAULT -e "$ecmd"
             result="$?"
             if ! test "$result" -eq 0; then
                 printf -- "%s\n" "$input" | pen-pager

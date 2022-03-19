@@ -246,10 +246,10 @@ file_filter() {
 
 if test "$OCCUR" = "y"; then
     slug="$(p "$pattern" | slugify)"
-    occur_string="(goto-char (point-min))(search-forward $(aqf "$pattern"))(iedit-mode)"
+    occur_string="(goto-char (point-min))(search-forward $(cmd-nice-posix "$pattern"))(iedit-mode)"
 
     # I need to be able to do multiple 'occur' modes within emacs.
-    # occur_string="(occur $(aqf "$pattern") $context)(other-window 1)"
+    # occur_string="(occur $(cmd-nice-posix "$pattern") $context)(other-window 1)"
 else
     occur_string=
 fi
@@ -276,7 +276,7 @@ filter() {
         sed -e "/log\/build_/d" -e "/\/tags:/d"
     fi
 }
-cmd="xargs -0 $grepcmd -I $grep_opts $( test "$context" != "0" && printf -- "%s" "-C $context" ) -- $(aqf "$pattern" | bs '$')"
+cmd="xargs -0 $grepcmd -I $grep_opts $( test "$context" != "0" && printf -- "%s" "-C $context" ) -- $(cmd-nice-posix "$pattern" | pen-bs '$')"
 
 {
     if [ -n "$paths_file" ]; then

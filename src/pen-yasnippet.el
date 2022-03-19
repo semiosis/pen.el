@@ -119,7 +119,7 @@ $0`(yas-escape-text yas-selected-text)`")
       (let ((fp (concat "/tmp/" ext)))
         (find-file fp)
         (yas-new-snippet)
-        (kill-buffer-immediately fp)
+        (pen-kill-buffer-immediately fp)
         (if name
             (insert contents))
         (if key

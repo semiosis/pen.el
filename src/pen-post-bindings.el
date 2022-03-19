@@ -198,7 +198,7 @@
 (sslk "lk<" 'compile-run-tm-ecompile)
 (sslk "ly" 'pen-copy-link-at-point)
 (sslk "ljh" 'cheat-sh)
-(sslk "l." 'kill-buffer-immediately)
+(sslk "l." 'pen-kill-buffer-immediately)
 (sslk "lfP" 'fi-text-to-paras-nosegregate)
 
 ;; Overrides and things that sslk doesnt support

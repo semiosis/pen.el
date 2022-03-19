@@ -925,4 +925,14 @@ non-nil."
   "Converts to string and concatenates."
   (mapconcat 'str body ""))
 
+(defmacro dk (name binding f)
+  `(define-key ,name (kbd ,binding) ,f))
+
+(defmacro uk (name binding)
+    `(define-key ,name (kbd ,binding) nil))
+
+(defun yanked ()
+  "Simply return the last string that was copied."
+  (current-kill 0))
+
 (provide 'pen-library)

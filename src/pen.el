@@ -2069,6 +2069,11 @@ May use to generate code from comments."
 (require 'pen-clojure)
 (require 'pen-racket)
 
+(if (inside-docker-p)
+    (progn
+      (require 'pen-compilation)
+      (require 'pen-grep)))
+
 (defun pen-lsp-explain-error ()
   (interactive)
   (let ((error (lsp-ui-pen-diagnostics)))

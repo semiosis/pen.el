@@ -32,7 +32,7 @@ When INITIAL-INPUT is non-nil, use it in the minibuffer during completion."
             :keymap nil
             :caller 'counsel-find-file))
 
-(setq counsel-ag-base-command "counsel-ag-cmd %s")
+(setq counsel-ag-base-command "pen-counsel-ag-cmd %s")
 
 
 ;; DONE This and counsel-ag could be used to create a genertic fuzzy finder

@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+find -L . -type f -name "*.gz" -exec zgrep -Hn "$@" {} \;

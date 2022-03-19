@@ -16,6 +16,7 @@ export OPENAI_API_KEY
 export PEN_PROMPT
 export PEN_PROMPT_FULL
 export PEN_SUFFIX
+export PEN_VARS
 export PEN_MODEL
 export PEN_MODE
 export PEN_MIN_TOKENS
@@ -82,7 +83,23 @@ pen_openai() {
 
     # \"n\": $PEN_N_COMPLETIONS,
 
-    if test -n "$PEN_SUFFIX"; then
+    if test "$PEN_MODE" = edit; then
+        input="$(PEN_STOP_SEQUENCES)"
+        debug_cmd curl "https://api.openai.com/v1/engines/$PEN_MODEL/edits" \
+             -H 'Content-Type: application/json' \
+             -H "Authorization: Bearer $OPENAI_API_KEY" \
+             -X POST \
+             -d "{\"input\": $FINAL_PEN_PROMPT,
+                  \"suffix\": $FINAL_PEN_SUFFIX,
+                  \"max_tokens\": $PEN_MAX_GENERATED_TOKENS,
+                  \"stop\": [$(cmd-nice-jq "$PEN_STOP_SEQUENCE")],
+                  \"top_p\": $PEN_TOP_P,
+                  \"best_of\": $PEN_TOP_K,
+                  \"temperature\": $PEN_TEMPERATURE,
+                  \"presence_penalty\": $PEN_PRESENCE_PENALTY,
+                  \"frequency_penalty\": $PEN_FREQUENCY_PENALTY
+                 }"
+    elif test -n "$PEN_SUFFIX"; then
         debug_cmd curl "https://api.openai.com/v1/engines/$PEN_MODEL/completions" \
              -H 'Content-Type: application/json' \
              -H "Authorization: Bearer $OPENAI_API_KEY" \

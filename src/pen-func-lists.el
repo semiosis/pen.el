@@ -25,9 +25,9 @@
                            show-extensions-below
                            run-fs-search-function
                            dired-toggle-dumpd-dir
-                           sps-ranger))
+                           pen-sps-ranger))
 (defset ranger-mode-funcs '(open-main
-                            sps-ranger))
+                            pen-sps-ranger))
 
 (defset prolog-mode-funcs '(ediprolog-consult
                             ediprolog-dwim))

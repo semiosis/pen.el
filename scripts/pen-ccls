@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+test -f "/usr/local/bin/ccls" && : "${bin:="/usr/local/bin/ccls"}"
+test -f "/usr/bin/ccls" && : "${bin:="/usr/bin/ccls"}"
+
+test -f "$bin" || (
+    agi ccls
+) &>/dev/null
+
+# So ccls doesn't store in my repositories
+mkdir -p ~/ccls-cache
+"$bin" --init="{\"cache\": {\"directory\": \"$HOME/ccls-cache\"}}"
