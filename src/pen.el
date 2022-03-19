@@ -2072,13 +2072,13 @@ May use to generate code from comments."
 (require 'pen-racket)
 
 (require 'pen-browser)
-(require 'pen-straight)
-(require 'pen-jump-tree)
 
 (if (inside-docker-p)
     (progn
       (require 'pen-compilation)
-      (require 'pen-grep)))
+      (require 'pen-grep)
+      (require 'pen-straight)
+      (require 'pen-jump-tree)))
 
 (defun pen-lsp-explain-error ()
   (interactive)
