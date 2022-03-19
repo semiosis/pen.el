@@ -2072,6 +2072,7 @@ May use to generate code from comments."
 (require 'pen-racket)
 
 (require 'pen-browser)
+(require 'pen-custom-conf)
 
 (if (inside-docker-p)
     (progn

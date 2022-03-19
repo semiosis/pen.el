@@ -1,4 +1,5 @@
-(setq custom-file "$HOME/var/smulliga/source/git/config/emacs/config/pen-custom.el")
+(require 'f)
+(setq custom-file (f-join penconfdir "emacs-custom.el"))
 
 (defmacro setface (name spec doc)
   `(custom-set-faces (list ',name
