@@ -18,7 +18,13 @@
   disowned from the parent Emacs process.  If Emacs dies, the
   process spawned here lives on.  ARGLIST is a list of strings,
   each an argument to COMMAND."
-  (setq command (concat "sh -c " (pen-q (concat "export PEN_GUI=y; " command))))
+  (setq command (concat
+                 "sh -c \""
+                 (concat
+                  "export PEN_GUI=y; "
+                  command
+                  " \\\"\\$@\\\"\"")
+                 " --"))
   (let ((shell-file-name "/bin/sh"))
     (start-process-shell-command
      "openwith-process" nil

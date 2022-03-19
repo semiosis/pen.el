@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+# TODO Implement notifications to emacs
+cmd-nice-posix "$@" | awk 1 1>&2

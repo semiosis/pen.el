@@ -3,6 +3,8 @@ export TTY
 
 is_tty() { [ -t 1 ]; }
 
+trap '' HUP
+
 yn() {
     command pen-yn "$@"
     ret="$?"

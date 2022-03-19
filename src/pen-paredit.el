@@ -22,8 +22,10 @@
 (defun paredit-kill-around-advice (proc &rest args)
   (try
    (let ((res (apply proc args)))
+     (xc (yanked) t)
      res)
    (kill-line)))
+;; (advice-remove 'paredit-kill #'paredit-kill-around-advice)
 (advice-add 'paredit-kill :around #'paredit-kill-around-advice)
 
 (provide 'pen-paredit)

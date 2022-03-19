@@ -313,7 +313,9 @@ IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
 stty stop undef; stty start undef; 
 eval $(resize) &>/dev/null
 sleep 0.1
+{
 . ~/.shell_environment
+} 2>/dev/null
 HEREDOC
 printf -- "%s\n" "$SHELL_CODE" >> $HOME/.xterm-sh-rc
 

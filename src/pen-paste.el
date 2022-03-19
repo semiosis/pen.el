@@ -26,10 +26,13 @@
 (defun pen-m-w-copy ()
   "Forward word if a region is not selected."
   (interactive)
-  (if (not (or (region-active-p) (lispy-left-p)))
-      (call-interactively 'pen-complete-words)
-    (let ((pen nil))
-      (execute-kbd-macro (kbd "M-w"))))
+  (if (or (region-active-p) (lispy-left-p))
+      (let ((pen nil))
+        ;; This may expand macros
+        (execute-kbd-macro (kbd "M-w")))
+      t
+    ;; (call-interactively 'pen-complete-words)
+      )
   (deactivate-mark))
 
 (if (inside-docker-p)

@@ -189,6 +189,7 @@
 (sslk "ldqC" 'pen-acolyte-dired-creation)
 (sslk "ldq7" 'pen-dired-channel)
 (sslk "ldqs" 'pen-acolyte-dired-scripts)
+(sslk "lds" 'pen-acolyte-dired-scripts)
 
 (sslk "lD" 'pen-swipe)
 (define-key pen-map (kbd "M-l / C-i") #'tvipe-completions)

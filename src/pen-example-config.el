@@ -781,4 +781,12 @@
 (define-key pen-map (kbd "M-] M-h") #'git-gutter+-next-hunk)
 (define-key pen-map (kbd "M-C-m") #'pen-enter-edit-emacs)
 
+;; Make paste work in the GUI version
+(define-key global-map (kbd "<M-f3>") (kbd "C-y"))
+
+(define-key pen-map (kbd "C-M-k") 'previous-line)
+(define-key pen-map (kbd "C-M-j") 'next-line)
+;; See: [[$HOME/var/smulliga/source/git/config/emacs/config/my-backspace.el][my-backspace.el]]
+(define-key pen-map (kbd "C-M-l") 'right-char)
+
 (provide 'pen-example-config)
