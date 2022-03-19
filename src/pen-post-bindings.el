@@ -221,5 +221,6 @@
 (define-key pen-map (kbd "M-m M-m") 'magit-status)
 (define-key pen-map (kbd "M-l C-s") #'pen-swipe)
 (define-key pen-map (kbd "M-' C-s") #'pen-swipe)
+(define-key pen-map (kbd "C-w") #'pen-c-w-cut)
 
 (provide 'pen-post-bindings)

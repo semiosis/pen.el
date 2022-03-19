@@ -876,17 +876,6 @@ buffer which is not included when this function returns"
        (interactive (list (read-string "args:" "" ',sfhist)))
        (eval `(pen-sph (concat ,,cmd " " ,args))))))
 
-;; This wasn't great
-(defun pen-m-w-copy ()
-  "Forward word if a region is not selected."
-  (interactive)
-  (if (not (or (region-active-p) (lispy-left-p)))
-      (call-interactively 'pen-complete-words)
-    (let ((pen nil))
-      (execute-kbd-macro (kbd "M-w"))))
-  (deactivate-mark))
-
-(define-key pen-map (kbd "M-w") 'xc)
 
 ;; Override this to use message-no-echo
 (defun toggle-truncate-lines (&optional arg)
