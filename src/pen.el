@@ -124,6 +124,8 @@
 (require 'pen-pcre)
 (require 'pen-advice)
 
+(require 'pen-aliases)
+
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."
   (if (or (string-match "\\\\" input)
@@ -2068,6 +2070,10 @@ May use to generate code from comments."
 (require 'pen-net)
 (require 'pen-clojure)
 (require 'pen-racket)
+
+(require 'pen-browser)
+(require 'pen-straight)
+(require 'pen-jump-tree)
 
 (if (inside-docker-p)
     (progn

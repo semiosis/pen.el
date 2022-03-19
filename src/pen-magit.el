@@ -22,10 +22,10 @@
   (interactive)
   (if (or enable disable)
       (if enable
-          (setq magit-git-executable "/home/shane/scripts/git-hs")
-        (string-equal magit-git-executable "/usr/bin/git"))
-    (if (string-equal magit-git-executable "/usr/bin/git")
-        (setq magit-git-executable "/home/shane/scripts/git-hs")
+          (setq magit-git-executable (locate-binary "git-hs"))
+        (string-equal magit-git-executable (locate-binary "git")))
+    (if (string-equal magit-git-executable (locate-binary "git"))
+        (setq magit-git-executable (locate-binary "git-hs"))
       (setq magit-git-executable "/usr/bin/git")))
   (message (concat "magit-git-executable: " magit-git-executable)))
 

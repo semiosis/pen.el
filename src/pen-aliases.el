@@ -10,5 +10,6 @@
 (defalias 'string-or 'str-or)
 (defalias 'get-top-level 'projectile-project-root)
 (defalias 'current-buffer-name 'buffer-name)
+(defalias 'locate-binary 'executable-find)
 
 (provide 'pen-aliases)

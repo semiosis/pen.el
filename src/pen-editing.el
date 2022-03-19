@@ -54,6 +54,35 @@
 (setq-default indent-tabs-mode nil)   ; use space
 (defalias 'yes-or-no-p #'y-or-n-p)
 
+(setq scroll-conservatively 101
+      scroll-margin 10
+      scroll-preserve-screen-position 't)
+
+(setq isearch-allow-scroll 't)
+(defadvice isearch-update (before my-isearch-update activate)
+  (sit-for 0)
+  (if (and (not (eq this-command
+                    'isearch-other-control-char))
+           (> (length isearch-string) 0)
+           (> (length isearch-cmds) 2)
+           (let ((line (count-screen-lines
+                        (point)
+                        (window-start))))
+             (or (> line
+                    (* (/ (window-height) 4) 3))
+                 (< line
+                    (* (/ (window-height) 9) 1)))))
+      (let ((recenter-position 0.3))
+        (recenter '(4)))))
+
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+
+(defun byte-recompile-directory (directory &optional arg force)
+  "I hope this disables this function"
+  nil)
+(remove-hook 'after-save-hook (lambda nil (byte-force-recompile default-directory)) t)
+
 (when (functionp 'mac-auto-ascii-mode)
   (mac-auto-ascii-mode 1))
 
