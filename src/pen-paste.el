@@ -22,6 +22,13 @@
       (execute-kbd-macro (kbd "C-w"))
       (xc (yanked) t))))
 
+(defun cua-copy-region-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (xc (yanked) t)
+    res))
+(advice-add 'cua-copy-region :around #'cua-copy-region-around-advice)
+;; (advice-remove 'cua-copy-region #'cua-copy-region-around-advice)
+
 ;; This wasn't great. But I need it to expand macros
 (defun pen-m-w-copy ()
   "Forward word if a region is not selected."
@@ -30,9 +37,9 @@
       (let ((pen nil))
         ;; This may expand macros
         (execute-kbd-macro (kbd "M-w")))
-      t
+    t
     ;; (call-interactively 'pen-complete-words)
-      )
+    )
   (deactivate-mark))
 
 (if (inside-docker-p)
