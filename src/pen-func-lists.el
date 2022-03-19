@@ -8,7 +8,8 @@
 
 (defset prog-mode-funcs '(pen-lsp-get-hover-docs
                           run-file-with-interpreter
-                          handle-projectfile))
+                          handle-projectfile
+                          magit-log-buffer-file))
 (defset yaml-mode-funcs
   (list
    'yaml-get-value-from-this-file

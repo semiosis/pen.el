@@ -480,7 +480,9 @@ The result is a string."
 
 (defun pen-lispy-format-or-company ()
   (interactive)
-  (if (lispy-left-p)
+  ;; if it's left or right. right because i may have selected the sexp
+  (if (or (lispy-left-p)
+          (lispy-right-p))
       (cond
        ((derived-mode-p 'racket-mode)
         (format-racket-at-point))

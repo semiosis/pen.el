@@ -1,4 +1,16 @@
 (require 'magit)
+(require 'magit-status)
+(require 'magithub)
+(require 'magit-section)
+
+;; magithub-issue-repo
+;; this fixes magithub and ghub+
+(defun ghub--host-around-advice (proc &rest args)
+  (if (not args)
+      (setq args '(github)))
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'ghub--host :around #'ghub--host-around-advice)
 
 (defun magit-eww-releases ()
   (interactive)
@@ -265,7 +277,7 @@ revisions (interactive.e., use a \"...\" range)."
   (interactive)
   (pen-sps (concat "magit " (pen-q (buffer-name)))))
 
-(df magit-diff-unstaged-this (magit-diff-unstaged nil `(,(get-current-path))))
+(df magit-diff-unstaged-this (magit-diff-unstaged nil `(,(get-path nil t))))
 
 (defun git-timemachine-show-revision-around-advice (proc &rest args)
   (magit-blame-quit)
@@ -322,7 +334,7 @@ revisions (interactive.e., use a \"...\" range)."
 (setq magit-circleci-token "b3963f42e3df0177260fcb4afbf6d7e32c4f968b")
 
 ;; I think that the wrong version of magit was loaded, but this appears to fix it
-(load "/home/shane/.emacs.d/packages27/magit-20200927.1644/magit-status.el")
+;; (load "/home/shane/.emacs.d/packages27/magit-20200927.1644/magit-status.el")
 ;; forge wasn't able to start
 
 (use-package forge
@@ -556,9 +568,14 @@ revisions (interactive.e., use a \"...\" range)."
 (define-key magit-log-mode-map (kbd "d") 'magit-diff)
 (define-key magit-diff-mode-map (kbd "M-P") (lambda () (interactive) (ekm "q M-p dd")))
 (define-key magit-diff-mode-map (kbd "M-N") (lambda () (interactive) (ekm "q M-n dd")))
-(define-key global-map (kbd "M-m g f h") 'magit-log-buffer-file)
+;; (define-key pen-map (kbd "M-m g f h") 'magit-log-buffer-file)
 (define-key magit-log-mode-map (kbd "H") 'magit-status)
 (define-key magit-status-mode-map (kbd "N") '-interactive-sn-git-add-a-nil-pen-pwd-)
 (define-key magit-mode-map (kbd "M-^") 'vc-cd-top-level)
+(define-key magit-section-mode-map (kbd "M-a") 'magit-section-up)
+;; (define-key magit-section-mode-map (kbd "M-E") 'magit-section-backward-sibling)
+(define-key magit-section-mode-map (kbd "M-E") 'magit-section-backward)
+;; (define-key magit-section-mode-map (kbd "M-e") 'magit-section-forward-sibling)
+(define-key magit-section-mode-map (kbd "M-e") 'magit-section-forward)
 
 (provide 'pen-magit)
