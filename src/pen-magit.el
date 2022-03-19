@@ -2,6 +2,7 @@
 (require 'magit-status)
 (require 'magithub)
 (require 'magit-section)
+(require 'git-timemachine)
 
 ;; magithub-issue-repo
 ;; this fixes magithub and ghub+
