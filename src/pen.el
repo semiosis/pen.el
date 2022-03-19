@@ -121,6 +121,8 @@
 (require 'pen-lists)
 (require 'pen-projectile)
 (require 'pen-magit)
+(require 'pen-pcre)
+(require 'pen-advice)
 
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."
@@ -2023,6 +2025,7 @@ May use to generate code from comments."
 (require 'pen-yaml)
 (require 'pen-glossary)
 (require 'pen-glossary-new)
+(require 'pen-imenu)
 (require 'pen-localization)
 (require 'pen-diagnostics)
 (require 'pen-examplary)
@@ -2036,6 +2039,7 @@ May use to generate code from comments."
 (require 'pen-lsp-client)
 (if (inside-docker-p)
     (require 'pen-lsp-java))
+(require 'pen-lsp)
 (require 'ilambda)
 (require 'pen-dap)
 (require 'pen-cacheit)

@@ -769,4 +769,10 @@
 (define-key pen-map (kbd "M-l M-w") 'pen-save)
 (define-key global-map (kbd "C-x ;") 'comment-line)
 
+(defun eval-last-sexp-unknown ()
+  (interactive)
+  (message "%s" (concat "C-x C-e unbound for " (str major-mode))))
+(define-key global-map (kbd "C-x C-e") 'eval-last-sexp-unknown)
+(define-key emacs-lisp-mode-map (kbd "C-x C-e") 'eval-last-sexp)
+
 (provide 'pen-example-config)
