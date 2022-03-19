@@ -22,7 +22,7 @@
       (execute-kbd-macro (kbd "C-w"))
       (xc (yanked) t))))
 
-;; This wasn't great
+;; This wasn't great. But I need it to expand macros
 (defun pen-m-w-copy ()
   "Forward word if a region is not selected."
   (interactive)
@@ -41,7 +41,8 @@
             res)))
       (advice-add 'cua-paste :around #'cua-paste-around-advice)))
 
-(define-key pen-map (kbd "M-w") 'xc)
+;; (define-key pen-map (kbd "M-w") 'xc)
+(define-key pen-map (kbd "M-w") 'pen-m-w-copy)
 (define-key lispy-mode-map (kbd "C-y") 'pen-lispy-paste)
 
 (provide 'pen-paste)
