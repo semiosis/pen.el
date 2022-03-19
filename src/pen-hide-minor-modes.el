@@ -30,6 +30,11 @@
                eldoc-overlay-mode
                paredit-mode
                org-link-minor-mode
+               jump-tree-mode
+               apheleia-mode
+               projectile-mode
+               dired-async-mode
+               global-gumshoe-mode
                right-click-context-mode))
     (ignore-errors (diminish s)))
   nil)
