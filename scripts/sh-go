@@ -29,8 +29,6 @@ A  pen-tm sel localhost_ws:gitlab
 U  pen-tm sel localhost_ws_music:music-videos.el.0 || nw orspv $NOTES/ws/music/music-videos.el
 E  pen-tm sel localhost_ws_music:epic.el.0 || nw orspv $NOTES/ws/music/epic.el
 V  pen-tm sel localhost_ws_videos:favs.el.0 || nw orspv $NOTES/ws/videos/favs.el
-2  pen-tm sel localhost_ws:fmg-fortesque-metals-group
-@  pen-tm sel localhost_ws_fmg-fortesque-metals-group_blog:posts
 i  pen-tm sel localhost_im:irssi
 <  pen-tm sel ':integrate.org*'
 S  pen-tm sel localhost:status
@@ -91,11 +89,9 @@ case "$d" in
     G) cmd="pen-tm sel ':google.*'" ;;
     A) cmd="pen-tm sel localhost_ws:gitlab" ;;
     1) cmd="pen-tm sel localhost_ws:codelingo" ;;
-    2) cmd="pen-tm sel localhost_ws:fmg-fortesque-metals-group" ;;
     U) cmd="pen-tm sel localhost_ws_music:music-videos.el.0 || nw orspv $NOTES/ws/music/music-videos.el" ;;
     E) cmd="pen-tm sel localhost_ws_music:epic.el.0 || nw orspv $NOTES/ws/music/epic.el" ;;
     V) cmd="pen-tm sel localhost_ws_videos:favs.el.0 || nw orspv $NOTES/ws/videos/favs.el" ;;
-    @) cmd="pen-tm sel localhost_ws_fmg-fortesque-metals-group_blog:posts" ;;
     i) cmd="pen-tm sel localhost_im:irssi" ;;
     \<) cmd="pen-tm sel ':integrate.org*'" ;;
     # S) cmd="pen-tm sel localhost_im:slack" ;;

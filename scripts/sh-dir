@@ -79,7 +79,6 @@ G  ranger $HOME/go/src/github.com
 e  /etc
 ;  go-to-dir-of-unstaged-changes
 w  /var/www
-2  $NOTES/ws/fmg-fortesque-metals-group
 3  $NOTES/ws/takaheai
 t  $DUMP/torrents
 l  $HOME/local/bin
@@ -156,7 +155,6 @@ case "$d" in
     W) cmd="fzf-dirs-cd-deep" ;;
     w) cmd="CWD=/var/www zsh" ;;
     G) cmd="CWD=$HOME/go/src/github.com ranger $HOME/go/src/github.com" ;;
-    2) cmd="CWD=$NOTES/ws/fmg-fortesque-metals-group zsh" ;;
     3) cmd="CWD=$NOTES/ws/takaheai zsh" ;;
     t) cmd="CWD=$DUMP/torrents zsh" ;;
     l) cmd="zcd $HOME/local/bin" ;;

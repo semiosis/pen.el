@@ -10,7 +10,6 @@ export TTY
 # r  sh-takaheai-rc
 # F  sh-takaheai-files
 # I  takaheai-get-issue-description
-# w  list-wiki-files-below $MYGIT/fortescue-autonomy
 # J  takaheai jargon
 
 read -r -d '' options <<HEREDOC
@@ -29,7 +28,6 @@ read -n1 d; test "$d" = "" && read -n1 d
 
 
     # w) cmd="list-wiki-files-below $MYGIT/fortescue-autonomy" ;;
-    # g) cmd="sh-takaheai-go" ;;
     # r) cmd="sh-takaheai-rc" ;;
     # F) cmd="sh-takaheai-files" ;;
     # I) cmd="takaheai-get-issue-description" ;;

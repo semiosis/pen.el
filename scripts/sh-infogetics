@@ -13,7 +13,6 @@ export TTY
 # r  sh-infogetics-rc
 # F  sh-infogetics-files
 # I  infogetics-get-issue-description
-# w  list-wiki-files-below $MYGIT/fortescue-autonomy
 # J  infogetics jargon
 
 read -r -d '' options <<HEREDOC
