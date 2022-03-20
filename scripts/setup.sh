@@ -544,6 +544,12 @@ cd ~/repos
 git clone "https://github.com/huginn/huginn"
 )
 
+(
+cd ~/repos
+git clone "https://github.com/semiosis/yas-snippets"
+ln -sf ~/repos/yas-snippets ~/.emacs.d/snippets
+)
+
 # ispell
 agi dialog apt-utils
 agi dictionaries-common

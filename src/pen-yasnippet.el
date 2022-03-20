@@ -63,7 +63,6 @@
                       (with-current-buffer "*YASnippet Tables*"
                         (ignore-errors (rename-buffer (concat "*YASnippet Tables-" (myuuidshort)) "*") t))))
 
-
 (defun yas-load-snippet-buffer-and-close-after-advice (&rest args)
   (yas-reload-all))
 
@@ -270,10 +269,6 @@ for normal snippets, and a list for command snippets)."
   (other-window 1)
   nil)
 
-(define-key help-mode-map (kbd "C-h") 'pen-yas-preview-snippet-under-cursor)
-(define-key yas-minor-mode-map (kbd "C-c") nil)
-(define-key yas-minor-mode-map (kbd "TAB") nil)
-
 (defun pen-select-from-existing-prompt-keys ()
   (interactive)
   (concat
@@ -344,12 +339,17 @@ Meant to be called in a narrowed buffer, does various passes"
     (yas--update-mirrors snippet) ; Update mirrors for the first time.
     (goto-char parse-start)))
 
-(define-key global-map (kbd "M-5") 'company-yasnippet)
-
 (defun yas-insert-snippet-around-advice (proc &rest args)
   (yas-minor-mode 1)
   (let ((res (apply proc args)))
     res))
 (advice-add 'yas-insert-snippet :around #'yas-insert-snippet-around-advice)
+
+(define-key help-mode-map (kbd "C-h") 'pen-yas-preview-snippet-under-cursor)
+(define-key yas-minor-mode-map (kbd "C-c") nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)
+(define-key global-map (kbd "M-5") 'company-yasnippet)
+(define-key pen-map (kbd "M-l M-s") nil)
+(define-key pen-map (kbd "M-l M-s M-d") 'yas-describe-tables)
 
 (provide 'pen-yasnippet)

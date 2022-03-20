@@ -2040,7 +2040,8 @@ May use to generate code from comments."
 (require 'pen-engine)
 ;; Allow Pen.el to use a docker container containing Pen.el as its 'engine'.
 (require 'pen-quineserver)
-(require 'pen-yasnippet)
+(if (inside-docker-p)
+    (require 'pen-yasnippet))
 (require 'pen-filters)
 (require 'pen-term)
 (require 'pen-lsp-client)

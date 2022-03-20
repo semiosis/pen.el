@@ -65,9 +65,9 @@ fi
 # rosie match all.things | less -r
 
 if test "$NVC" = "y"; then
-    nvc less "$@" "$fp"
+    nvc less +F "$@" "$fp"
 else
-    less "$@" "$fp"
+    less +F "$@" "$fp"
 fi
 exec 0<&-
 jobs -p | xargs kill 2>/dev/null

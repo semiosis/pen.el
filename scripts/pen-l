@@ -121,4 +121,4 @@ esac
     else
         cat
     fi
-} | pen-pager
+} | tless
