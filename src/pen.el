@@ -52,6 +52,7 @@
 (require 'shackle)
 (require 'helpful)
 (require 'vterm)
+(require 'hungry-delete)
 ;; (require 'diff-hl)
 ;; (require 'org-link-minor-mode)
 
@@ -2077,7 +2078,9 @@ May use to generate code from comments."
 (if (inside-docker-p)
     (progn
       (require 'pen-compilation)
+      (require 'pen-iedit)
       (require 'pen-grep)
+      (require 'pen-wgrep)
       (require 'pen-straight)
       (require 'pen-jump-tree)))
 

@@ -260,6 +260,10 @@ so the same nrepl is used for all files in the project"
           (insert (concat (str proc) " in " dir))
           (insert "\n")
           (cd dir)
+
+          ;; Also, clean up the buffer after 5 seconds, just in case
+          (eval `(run-with-timer 5 nil (lambda () (kill-buffer ,bufname))))
+
           (let ((res (apply proc args)))
             (if (re-match-p "closure" (str proc))
                 (progn

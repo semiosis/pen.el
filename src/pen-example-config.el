@@ -789,4 +789,6 @@
 ;; See: [[$HOME/var/smulliga/source/git/config/emacs/config/my-backspace.el][my-backspace.el]]
 (define-key pen-map (kbd "C-M-l") 'right-char)
 
+(define-key global-map (kbd "M-i") 'iedit-mode)
+
 (provide 'pen-example-config)
