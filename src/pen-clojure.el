@@ -258,7 +258,7 @@ so the same nrepl is used for all files in the project"
         (ignore-errors
           (with-current-buffer b
             (progn
-              (insert (message "%s" (concat (str proc) " in " dir)))
+              (insert (concat (str proc) " in " dir))
               (insert "\n")
               (cd dir))
             (let ((res (apply proc args)))
