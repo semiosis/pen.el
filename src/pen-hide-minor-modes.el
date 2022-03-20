@@ -19,6 +19,9 @@
                holy-mode
                repl-toggle-mode
                sotlisp-mode
+               lsp-lens-mode
+               lsp-mode
+               flycheck-mode
                company-mode
                yas-minor-mode
                selected-minor-mode
