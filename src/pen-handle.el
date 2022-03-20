@@ -34,11 +34,21 @@
   "Go to the test. DWIM"
   (interactive)
   (if (major-mode-p 'clojure-mode)
-      (let ((bn (f-basename (buffer-file-name)))
-            (funname
-             (if (s-match "_test.clj" bn)
-                 (error "You are already in a test file")
-               (substring )))))))
+      (let* ((bn (f-basename (buffer-file-name)))
+             (mant (f-mant (f-basename (buffer-file-name))))
+             (funname
+              (if (s-match "_test.clj" bn)
+                  (error "You are already in a test file")
+                (car (s-split "\\." bn))))
+             (topdir (vc-get-top-level))
+             (namespace (cider-current-ns))
+             (srcdir (cider-current-dir))
+             (testdir (s-replace-regexp "/src/" "/test/" (cider-current-dir)))
+             (testpath (f-join testdir (concat mant "_test.clj")))
+             (top-namespace (car (s-split "\\." namespace))))
+        (with-current-buffer
+            (find-file testpath)
+          ))))
 
 (handle '(clojure-mode clojurescript-mode cider-repl-mode inf-clojure)
         ;; Re-using may not be good, actually, if I'm working with multiple projects

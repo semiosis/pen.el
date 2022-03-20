@@ -147,6 +147,7 @@ Be mindful of quoting arguments correctly."
 
 (require 'pen-sh)
 (require 'pen-library)
+(require 'pen-utils)
 (require 'pen-nix)
 (require 'pen-git)
 (if (inside-docker-p)

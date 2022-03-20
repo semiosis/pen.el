@@ -140,7 +140,8 @@
                             'helm-cider-spec-symbol
                             'helm-cider-repl-history
                             'helm-cider-apropos-symbol
-                            'helm-cider-apropos-symbol-doc))
+                            'helm-cider-apropos-symbol-doc
+                            'clojure-open-test))
 (defset clojurec-mode-funcs '(cider-jack-in))
 
 (defset web-mode-funcs '(eww-open-this-file elinks-dump-open-this-file))

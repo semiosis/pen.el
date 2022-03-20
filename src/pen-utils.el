@@ -1,0 +1,12 @@
+(defun find-thing (thing)
+  (interactive)
+  (if (stringp thing)
+      (setq thing (intern thing)))
+  (try (find-function thing)
+       (find-variable thing)
+       (find-face-definition thing)
+       (pen-ns (concat (str thing) " is neither function nor variable"))))
+(defalias 'j 'find-thing)
+(defalias 'ft 'find-thing)
+
+(provide 'pen-utils)
