@@ -250,16 +250,15 @@ so the same nrepl is used for all files in the project"
          (bufname
           (if (re-match-p "closure" (str proc))
               (concat "*" (slugify (concat "closure" " in " dir)) "*")
-            (concat "*" (tv (slugify (concat "jack-in" " in " dir))) "*"))))
+            (concat "*" (slugify (concat "jack-in" " in " dir)) "*"))))
     (save-window-excursion
       (let* ((b (switch-to-buffer bufname)))
-        (tv "hi")
         (with-current-buffer b
           (insert (concat (str proc) " in " dir))
           (insert "\n")
           (cd dir)
+          ;(tv (concat "*" (slugify (concat "jack-in" " in " dir)) "*"))
           (let ((res (apply proc args)))
-            (tv (concat "*" (slugify (concat "jack-in" " in " dir)) "*"))
             (if (re-match-p "closure" (str proc))
                 (let ((jack-in-bufname (concat "*" (slugify (concat "jack-in" " in " dir)) "*")))
                   (kill-buffer b)
