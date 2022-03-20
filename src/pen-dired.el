@@ -161,7 +161,7 @@
 (define-key dired-mode-map (kbd "TAB") 'dired-subtree-toggle)
 (define-key dired-mode-map (kbd "C-M-i") (dff (tsps "cr")))
 (define-key ranger-mode-map (kbd "C-M-i") (dff (tsps "cr")))
-(define-key dired-mode-map (kbd "M-^") 'vc-cd-top-level)
+(define-key dired-mode-map (kbd "M-^") 'pen-vc-cd-top-level)
 (define-key dired-mode-map (kbd "r") 'my-ranger)
 (define-key dired-mode-map (kbd "M-r") 'pen-sps-ranger)
 (define-key dired-mode-map (kbd "[") 'peep-dired)

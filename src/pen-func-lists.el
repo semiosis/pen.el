@@ -40,6 +40,18 @@
 
 (defset web-mode-funcs '(eww-open-this-file))
 
+(defun reload-library-here ()
+  (interactive)
+  (let* ((libs (string2list
+                (pen-snc "\"pen-scrape\" \"\\(provide '[a-z-]+\\)\" | sed -e \"s/.*'//\" -e 's/)$//'" (buffer-string))))
+         (lib
+          (if (> (length libs) 1)
+              (fz libs nil nil "library")
+            (car libs))))
+    (if (sor lib)
+        (load-library lib))))
+(defset emacs-lisp-mode-funcs '(reload-library-here))
+
 (defset csv-mode-funcs '(csv-open
                          csv-open-in-numpy
                          csv-open-in-pandas

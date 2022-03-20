@@ -40,4 +40,48 @@
   "Returns the exit code."
   `(eq (pen-ble ,@body) 0))
 
+(defun e (path)
+  (interactive)
+  (if path
+      (find-file (eval `(echo -n ,path)))))
+
+(defmacro b-tty (&rest body)
+  `(sh (concat (quote-args ,@body))))
+
+(defmacro b. (&rest body)
+  "b but with chomp."
+  `(pen-sn (concat (quote-args ,@body) " | chomp")))
+
+(defmacro bd (&rest body)
+  "Like b, but detach."
+  `(shut-up (pen-sn (concat (quote-args ,@body)) nil nil nil t)))
+
+(defmacro be (&rest body)
+  "Returns the exit code."
+  (defset b_exit_code nil)
+
+  `(progn
+     (pen-sn (concat (quote-args ,@body)))
+     (string-to-number b_exit_code)))
+
+(defun sne (cmd)
+  "Returns the exit code."
+  (defset b_exit_code nil)
+
+  (progn
+    (pen-sn cmd)
+    (string-to-number b_exit_code)))
+
+(defmacro bld (&rest body)
+  "Runs and detaches."
+  `(pen-sn (pen-ns (concat (quote-args ,@(butlast body)) " " (pen-q ,@(last body)))) nil nil nil t))
+
+(defmacro bpe (&rest body)
+  "Pipe the last argument in. Returns the exit code."
+  (defset b_exit_code nil)
+
+  `(progn
+     (pen-sn (concat (quote-args ,@(butlast body))) (pen-q ,@(last body)) nil 'b_exit_code)
+     (string-to-number b_exit_code)))
+
 (provide 'pen-sh)

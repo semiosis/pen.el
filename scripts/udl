@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+# This script always underlines
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+IFS= read -rd '' input < <(cat /dev/stdin | tr -d '\n' | sed 's/\s\+$//')
+
+printf -- "%s\n" "${input}"
+printf -- "%s\n" "${input}" | sed 's/./‾/g' | {
+    if is_tty; then
+        pen-his -i -f dred -b nblack .
+    else
+        cat
+    fi
+}

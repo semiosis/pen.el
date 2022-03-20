@@ -146,6 +146,8 @@ Be mindful of quoting arguments correctly."
 (defalias 'e-cmd 'pen-quote-args)
 
 (require 'pen-sh)
+(require 'pen-nix)
+(require 'pen-git)
 (if (inside-docker-p)
     (require 'pen-selected))
 (require 'pen-cua)

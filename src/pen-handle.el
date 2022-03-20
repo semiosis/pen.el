@@ -30,6 +30,11 @@
       thing
       query))))
 
+(defun clojure-open-test ()
+  "Go to the test. DWIM"
+  (interactive)
+  )
+
 (handle '(clojure-mode clojurescript-mode cider-repl-mode inf-clojure)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list

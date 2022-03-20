@@ -605,6 +605,65 @@ delim is used to guarantee the function returns multiple matches per line
           "DEFAULT")
       "")))
 
+(defun sh (&optional cmd stdin b_output tm_session shell b_switch_to tm_wincmd dir b_wait)
+  "Runs command in a new tmux window and optionally returns the output of the command as a string.
+b_output is (t/nil) tm_session is the session of the new tmux window"
+  (interactive)
+
+  (if (not dir)
+      (setq dir (get-dir)))
+
+  (let ((default-directory dir))
+
+    (if (not shell)
+        (setq shell "bash"))
+
+    (if (not tm_wincmd)
+        (setq tm_wincmd "nw"))
+
+    (if tm_session
+        (setq tm_session (concat " -t " tm_session)))
+
+    (setq session-dir-cmd (concat tm_wincmd " -sh " shell tm_session (if b_switch_to "" " -d") " -c " (pen-q dir) " " (pen-q cmd)))
+
+    (if b_output
+        (setq pen-tf (make-temp-file "elispbash")))
+
+    (if (not cmd)
+        (setq cmd "zsh"))
+
+    (if b_output
+        (if stdin
+            (setq final_cmd (concat "pen-tm -f -s -sout " session-dir-cmd " > " tf))
+          (setq final_cmd (concat "unbuffer pen-tm -f -fout " session-dir-cmd " > " tf)))
+      (if stdin
+          (if b_wait
+              (setq final_cmd (concat "pen-tm -f -S -tout -w " session-dir-cmd))
+            (setq final_cmd (concat "pen-tm -f -S -tout " session-dir-cmd)))
+        (if b_wait
+            (setq final_cmd (concat "unbuffer pen-tm -f -tout -te -w " session-dir-cmd))
+          (setq final_cmd (concat "unbuffer pen-tm -f -d -tout -te " session-dir-cmd)))))
+
+    (if (not stdin)
+        (shell-command final_cmd)
+      (with-temp-buffer
+        (insert stdin)
+        (shell-command-on-region (point-min) (point-max) final_cmd))
+      )
+
+    (if b_output
+        (progn
+          (setq output (slurp-file tf))
+          output))))
+
+(cl-defun cl-sh (&optional cmd &key stdin &key b_output &key tm_session &key shell &key b_switch_to &key tm_wincmd &key dir &key b_wait)
+  (interactive)
+
+  (if (not tm_wincmd)
+      (setq tm_wincmd "sps"))
+
+  (sh cmd stdin b_output tm_session shell b_switch_to tm_wincmd dir b_wait))
+
 ;; Disable the finished message from appearing in all shell commands
 (defun shell-command-sentinel (process signal)
   (when (memq (process-status process) '(exit signal))))

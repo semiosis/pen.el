@@ -1,0 +1,73 @@
+#!/bin/bash
+export TTY
+
+
+# This must always work
+# yes | throttle-per-second 3 | ts | tless +F -S
+
+
+if test "$INSIDE_NEOVIM" = "y"; then
+    EDITOR="v -2"
+else
+    : ${EDITOR:="v -s"}
+fi
+
+export EDITOR
+
+fnid=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -rS) {
+        break
+    }
+    ;;
+
+    -fid) {
+        fnid="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -nv) {
+        NVC=y
+        shift
+    }
+    ;;
+
+    -s) {
+        SOAK=y
+        shift
+    }
+    ;;
+
+    -[a-z][a-z]*) {
+        # This breaks chaining multiple together.
+        ext="$(p "$opt" | pen-mcut -d- -f2)"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${ext:="txt"}
+
+fp="$(pen-tf tless "$ext" 0</dev/null | pen-ds "$fnid" | pen-xc -)" # this accepts stdin
+touch "$fp"
+
+set -m
+{ if test "$INSIDE_NEOVIM" = "y"; then pen-strip-ansi; else cat; fi; } > "$fp" &
+
+if test "$SOAK" = "y"; then
+    wait
+fi
+
+# rosie match all.things | less -r
+
+if test "$NVC" = "y"; then
+    nvc less "$@" "$fp"
+else
+    less "$@" "$fp"
+fi
+exec 0<&-
+jobs -p | xargs kill 2>/dev/null

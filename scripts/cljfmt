@@ -13,6 +13,7 @@ fi
 
 test -f "$fp" || exit 1
 
+# This is kinda slow. It would be nice if I could reflect on the app to perform this
 clojure -Sdeps '{:deps {cljfmt {:mvn/version "0.6.4"}}}' \
   -m cljfmt.main fix "$fp" &>/dev/null
 

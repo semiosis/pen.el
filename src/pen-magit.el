@@ -572,7 +572,7 @@ revisions (interactive.e., use a \"...\" range)."
 ;; (define-key pen-map (kbd "M-m g f h") 'magit-log-buffer-file)
 (define-key magit-log-mode-map (kbd "H") 'magit-status)
 (define-key magit-status-mode-map (kbd "N") '-interactive-sn-git-add-a-nil-pen-pwd-)
-(define-key magit-mode-map (kbd "M-^") 'vc-cd-top-level)
+(define-key magit-mode-map (kbd "M-^") 'pen-vc-cd-top-level)
 (define-key magit-section-mode-map (kbd "M-a") 'magit-section-up)
 ;; (define-key magit-section-mode-map (kbd "M-E") 'magit-section-backward-sibling)
 (define-key magit-section-mode-map (kbd "M-E") 'magit-section-backward)

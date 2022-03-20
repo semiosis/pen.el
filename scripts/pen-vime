@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
+
+# Examples
+# vime "\"yo\""
+# vime "strftime(\"%c\")"
+# vime "getcompletion('', 'filetype')"
+# vime "execute('scriptnames')"
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+eval_vim_expr() {
+    vim_expr="$1"
+
+    vim -u NONE -es '+:source $HOME/var/smulliga/source/git/config/vim/utils.vim' "+:call Insert($vim_expr))" '+:wq! /dev/stdout'
+}
+
+if stdin_exists; then
+    awk1 | while IFS=$'\n' read -r line; do
+        eval_vim_expr "$line"
+    done
+fi
+
+if [ -n "$1" ]; then
+    eval_vim_expr "$1"
+fi

@@ -262,7 +262,7 @@ so the same nrepl is used for all files in the project"
           (cd dir)
 
           ;; Also, clean up the buffer after 5 seconds, just in case
-          (eval `(run-with-timer 5 nil (lambda () (kill-buffer ,bufname))))
+          (eval `(run-with-timer 5 nil (lambda () (ignore-errors (kill-buffer ,bufname)))))
 
           (let ((res (apply proc args)))
             (if (re-match-p "closure" (str proc))
