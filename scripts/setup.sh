@@ -388,6 +388,8 @@ make install
 (
 cd ~/repos
 git clone --depth 1 "https://github.com/semiosis/rangerconfig"
+cd rangerconfig
+git checkout pen
 rm -rf ~/.config/ranger
 ln -sf ~/repos/rangerconfig ~/.config/ranger
 )
