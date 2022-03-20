@@ -1005,6 +1005,7 @@ Reconstruct the entire yaml-ht for a different language."
 ;; That's correct, it is. Not possible to fix without modifying emacs c code.
 ;; Instead, use C-u 0 to update cache, instead of H-u
 
+(require 'pen-sx)
 (require 'pen-helm)
 (require 'pen-fz)
 

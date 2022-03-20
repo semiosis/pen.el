@@ -1,7 +1,7 @@
 (require 'sx)
 ;; for sx-question-mode-map and other symbols
 (require 'sx-time)
-(require 'my-lists)
+(require 'pen-lists)
 (require 'sx-compose)
 (require 'sx-favorites)
 (require 'sx-auth)
@@ -79,7 +79,7 @@
         (list suggested question id))))
 
 (defun sx-search-quickly (query)
-  (interactive (list (selection)))
+  (interactive (list (pen-selected-text)))
   (cl-multiple-value-bind (site question id)
       (sx-get-appropriate-site-and-id query)
 
@@ -90,7 +90,7 @@
   (interactive
    (let* ((l (guess-lang-for-search
               "sx lang: "))
-          (sel (selection))
+          (sel (pen-selected-text))
           (cand
            (cond
             ((and (sor sel) (sor l)) (concat sel " " l))
@@ -107,7 +107,7 @@
   (interactive
    (let* ((l (guess-lang-for-search
               "sx lang: "))
-          (sel (selection))
+          (sel (pen-selected-text))
           (cand
            (cond
             ((and (sor sel) (sor l)) (concat sel " " l))
@@ -129,10 +129,10 @@
 
 (defun sx-from-url (url)
   (interactive (list (read-string-hist "sx url: " (thing-at-point 'url))))
-  (if (re-match-p "/a/[0-9]" url)
+  (if (string-match "/a/[0-9]" url)
       (setq url (chomp (pen-sn "fi-curl-get-redirect-maybe" url))))
-  (if (and (not (re-match-p "^https?://" url))
-           (re-match-p "^[a-z]" url))
+  (if (and (not (string-match "^https?://" url))
+           (string-match "^[a-z]" url))
       (setq url (concat "^http://" url)))
   (cl-multiple-value-bind (site question id)
       (sx-get-appropriate-site-and-id-from-url url)
@@ -160,7 +160,7 @@
   :supertype 'sx-button)
 
 (defun sx-get-question-url ()
-  (if (major-mode-p 'sx-question-mode)
+  (if (derived-mode-p 'sx-question-mode)
       (let ((current-prefix-arg nil))
         (save-excursion
           (beginning-of-buffer)
@@ -177,7 +177,7 @@
 
 (defun sx-button-copy-around-advice (proc &rest args)
   (if (and (>= (prefix-numeric-value current-prefix-arg) 4)
-           (major-mode-p 'sx-question-mode))
+           (derived-mode-p 'sx-question-mode))
       (sx-copy-question-url)
       (let ((res (apply proc args)))
         res)))

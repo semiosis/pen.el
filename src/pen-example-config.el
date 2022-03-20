@@ -775,11 +775,15 @@
 (define-key global-map (kbd "C-x C-e") 'eval-last-sexp-unknown)
 (define-key emacs-lisp-mode-map (kbd "C-x C-e") 'eval-last-sexp)
 
-(define-key pen-map (kbd "M-p") #'pen-previous-defun)
-(define-key pen-map (kbd "M-n") #'pen-next-defun)
+(if (inside-docker-p)
+    (progn
+      (define-key pen-map (kbd "M-p") #'pen-previous-defun)
+      (define-key pen-map (kbd "M-n") #'pen-next-defun)
+      (define-key pen-map (kbd "M-C-m") #'pen-enter-edit-emacs)))
+
 (define-key pen-map (kbd "M-[ M-h") #'git-gutter+-previous-hunk)
 (define-key pen-map (kbd "M-] M-h") #'git-gutter+-next-hunk)
-(define-key pen-map (kbd "M-C-m") #'pen-enter-edit-emacs)
+
 
 ;; Make paste work in the GUI version
 (define-key global-map (kbd "<M-f3>") (kbd "C-y"))

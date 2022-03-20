@@ -33,7 +33,12 @@
 (defun clojure-open-test ()
   "Go to the test. DWIM"
   (interactive)
-  )
+  (if (major-mode-p 'clojure-mode)
+      (let ((bn (f-basename (buffer-file-name)))
+            (funname
+             (if (s-match "_test.clj" bn)
+                 (error "You are already in a test file")
+               (substring )))))))
 
 (handle '(clojure-mode clojurescript-mode cider-repl-mode inf-clojure)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
