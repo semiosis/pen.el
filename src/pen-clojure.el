@@ -128,31 +128,36 @@ buffer."
        (not (derived-mode-p 'clojerl-mode))
        (not (minor-mode-p org-src-mode)))
       (progn
-        ;; (ns "running timer")
+        (ns "running timer")
         (run-with-idle-timer
          1 nil
          (eval
           `(lm
-            (if (not (minor-mode-p org-src-mode))
-                (try
-                 (if ;; pen-do-cider-auto-jack-in
-                     (pen-rc-test "cider")
-                     (progn
-                       (message "Jacking in. Please wait.")
-                       (with-current-buffer ,(current-buffer)
-                         (cond
-                          ((derived-mode-p 'clojure-mode)
-                           (auto-no
-                            ;; (call-interactively
-                            ;;  'cider-jack-in)
-                            (cider-jack-in nil)))
-                          ((derived-mode-p 'clojurescript-mode)
-                           (auto-no
-                            ;; (call-interactively
-                            ;;  'cider-jack-in)
-                            (cider-jack-in-cljs nil)))))
-                       ;; (message "Jacked in?")
-                       )))))))
+            ;; ignore-errors here prevents this breaking, which was annoying. I couldn't open from ranger
+            ;; pin mount.clj
+            ;; 'pen-emacsclient' '-s' '/root/.emacs.d/server/DEFAULT' '-a' '' '-t' -e "mount.clj"
+            ;; 'pen-emacsclient' '-s' '/root/.emacs.d/server/DEFAULT' '-a' '' '-t' -e "(ignore-errors (find-file \"mount.clj\"))"
+            (ignore-errors
+              (if (not (minor-mode-p org-src-mode))
+                  (try
+                   (if ;; pen-do-cider-auto-jack-in
+                       (pen-rc-test "cider")
+                       (progn
+                         (message "Jacking in. Please wait.")
+                         (with-current-buffer ,(current-buffer)
+                           (cond
+                            ((derived-mode-p 'clojure-mode)
+                             (auto-no
+                              ;; (call-interactively
+                              ;;  'cider-jack-in)
+                              (cider-jack-in nil)))
+                            ((derived-mode-p 'clojurescript-mode)
+                             (auto-no
+                              ;; (call-interactively
+                              ;;  'cider-jack-in)
+                              (cider-jack-in-cljs nil)))))
+                         ;; (message "Jacked in?")
+                         ))))))))
 
         (enable-helm-cider-mode)))
   t)
