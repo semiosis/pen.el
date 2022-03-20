@@ -540,7 +540,7 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
   (set-buffer-modified-p nil)
   (if (and (local-variable-p 'kill-window-when-done)
            kill-window-when-done)
-      (my-kill-buffer-and-window)
+      (pen-kill-buffer-and-window)
     (kill-this-buffer)))
 
 (defalias 'pen-kill-buffer-immediately 'pen-kill-this-buffer-volatile)

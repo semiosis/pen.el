@@ -128,7 +128,7 @@ buffer."
        (not (derived-mode-p 'clojerl-mode))
        (not (minor-mode-p org-src-mode)))
       (progn
-        (run-with-idle-timer
+        (run-with-timer
          1 nil
          (eval
           `(lm
