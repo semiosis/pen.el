@@ -375,14 +375,21 @@ agi libcairo2-dev python-dev
 agi python-dev git
 agi python3-dev git
 agi libpython3-dev
+
 (
-mkdir -p ~/repos/vim
 cd ~/repos
 git clone --depth 1 "https://github.com/vim/vim"
 cd vim
 ./configure --with-features=huge --enable-cscope --enable-multibyte --with-x --enable-perlinterp=yes --enable-pythoninterp=yes --enable-python3interp
 make -j8
 make install
+)
+
+(
+cd ~/repos
+git clone --depth 1 "https://github.com/semiosis/rangerconfig"
+rm -rf ~/.config/ranger
+ln -sf ~/repos/rangerconfig ~/.config/ranger
 )
 
 agi colorized-logs
