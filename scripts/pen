@@ -255,8 +255,13 @@ docker() {
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             bash) break;;
             run.sh|/root/run.sh|./run.sh) {
-                shift
-                set -- run.sh "$@"
+                if inside-docker-p; then
+                    shift
+                    set -- newframe.sh "$@"
+                else
+                    shift
+                    set -- run.sh "$@"
+                fi
                 break
             };;
             newframe.sh|/root/newframe.sh|./newframe.sh) {

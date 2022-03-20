@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# trap '' HUP
+# eval `pen-tm-resize`
+exec <&1
+
+#TMUX= tmux new "$@"
+
+"$@"
