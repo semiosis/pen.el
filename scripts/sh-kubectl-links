@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+# links
+# https://www.mankier.com/1/kubectl-exec
+
+clear
+# exec 1> >(pen-mnm)
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+x https://www.mankier.com/1/kubectl-exec
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    x) { cmd="pl https://www.mankier.com/1/kubectl-exec | pen-xc -i"; }; ;;
+    
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

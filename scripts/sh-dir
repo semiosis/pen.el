@@ -1,0 +1,183 @@
+#!/bin/bash
+export TTY
+
+clear
+
+fzf-dirs-cd-deep() {
+    # sel="$(pen-F d | pen-u bn | pen-fzf | pen-mnm)"
+    sel="$(pen-F d | pen-mnm | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        dir="$(printf -- "%s" "$sel" | pen-umn | pen-ux rp)"
+        p "$dir" | pen-mnm | pen-xc -n -i
+        cd "$dir"
+        CWD="$dir" zsh
+    fi
+}
+
+fzf-dirs-cd() {
+    sel="$(pen-F find-dirs-here | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        dir="$(printf -- "%s" "$sel" | pen-umn | pen-ux rp)"
+        p "$dir" | pen-mnm | pen-xc -n -i
+        cd "$dir"
+        CWD="$dir" zsh
+    fi
+}
+
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+TAB sh-github-dir
+s  scripts
+y  scripts-early
+S  sh-source
+u  venv-tablist
+W  fzf-dirs-cd-deep
+b  hugo-blog
+# B  mullikine.github.io
+B  blog posts
+j  jobs
+Y  $MYGIT/semiosis
+# q  $MYGIT/semiosis/pen.el
+q  sh-semiosis-dir
+a  $MYGIT/semiosis/prompts/prompts
+A  $MYGIT/semiosis/fine-tuning-gpt-3/puns
+Qx $MYGIT/semiosis/examplary
+^  $NOTES/ws/backlog
+p  $HOME/programs
++  $HOME/.config/rat
+h  $NOTES/programs/hs
+E  $EMACSD
+cC $EMACSD/config
+6  $EMACSD/packages26
+7  $EMACSD/packages27
+8  $EMACSD/packages28
+M  $EMACSD/manual-packages
+$  $NOTES/ws/tabs
+V  $VIMCONFIG
+n  notes
+v  vars
+m  music    
+k  dockerfiles
+i  org-brains
+N  $NOTES/programs/ns
+I  $NOTES/programs/ci
+1  cd CWD=$HOME/go/src/github.com/codelingo zsh
+7  notes2017
+8  notes2018
+r  notes/scratch
+f  $NOTES/ws/fuzzy
+R  select-recent-dir
+o  notes/ws
+G  ranger $HOME/go/src/github.com
+e  /etc
+;  go-to-dir-of-unstaged-changes
+w  /var/www
+2  $NOTES/ws/fmg-fortesque-metals-group
+3  $NOTES/ws/takaheai
+t  $DUMP/torrents
+l  $HOME/local/bin
+# L  $NOTES/ws/glossaries
+L  $HOME/glossaries
+J  $NOTES/ws/rules-of-thumb
+P  $NOTES/ws/playgrounds
+T  new temp git folder
+?  ag-dir $HOME/glossaries
+H  temp git repo from here
+^? cd $NOTES; tm-shortcuts
+d  $DUMP
+D  $BULK/downloads
+/  /
+h\`  ~ home
+g  sh-git-dir
+z  sh-fuzzy-dir
+O  sh-dir-ws
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+IFS="" read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    n) cmd="zcd $NOTES" ;;
+    \	) cmd="sh-github-dir" ;;
+    v) cmd="zcd $NOTES/vars" ;;
+    b) cmd="zcd $DUMP$NOTES/ws/blog/blog" ;;
+    # B) cmd="zcd $MYGIT/mullikine/mullikine.github.io" ;;
+    B) cmd="zcd $NOTES/ws/blog/posts" ;;
+    j) cmd="zcd $NOTES/ws/jobs" ;;
+    Y) cmd="zcd $MYGIT/semiosis" ;;
+    # q) cmd="zcd $MYGIT/semiosis/pen.el" ;;
+    q) cmd="sh-semiosis-dir" ;;
+    a) cmd="zcd $MYGIT/semiosis/prompts/prompts" ;;
+    A) cmd="zcd $MYGIT/semiosis/fine-tuning-gpt-3/puns" ;;
+    Q|x) cmd="zcd $MYGIT/semiosis/examplary" ;;
+    \^) cmd="zcd $NOTES/ws/backlog" ;;
+    p) cmd="zcd $HOME/programs" ;;
+    \+) cmd="zcd $HOME/.config/rat" ;;
+    h) cmd="zcd $NOTES/programs/hs" ;;
+    E) cmd="zcd $EMACSD" ;;
+    c|C) cmd="zcd $EMACSD/config" ;;
+    6) cmd="zcd $EMACSD/packages26" ;;
+    7) cmd="zcd $EMACSD/packages27" ;;
+    8) cmd="zcd $EMACSD/packages28" ;;
+    M) cmd="zcd $EMACSD/manual-packages" ;;
+    \$) cmd="zcd $NOTES/ws/tabs" ;;
+    V) cmd="zcd $VIMCONFIG" ;;
+    8) cmd="CWD=$NOTES zsh" ;;
+    7) cmd="CWD=$NOTES2017 zsh" ;;
+    m) cmd="CWD=$NOTES/ws/music zsh" ;;
+    k) cmd="CWD=$HOME/dockerfiles zsh" ;;
+    i) cmd="CWD=$HOME/org-brains zsh" ;;
+    N) cmd="CWD=$NOTES/programs/ns zsh" ;;
+    f) cmd="zcd $NOTES/ws/fuzzy" ;;
+    I) cmd="CWD=$NOTES/programs/ci zsh" ;;
+    s) cmd="CWD=$HOME/scripts zsh" ;;
+    y) cmd="CWD=$HOME/scripts-early zsh" ;;
+    S) cmd="CWD=$HOME/sh-source zsh" ;;
+    u) cmd="venv-tablist" ;;
+    r) cmd="CWD=$NOTES/scratch zsh" ;;
+    \;) cmd="go-to-dir-of-unstaged-changes" ;;
+    R) cmd="select-recent-dir" ;;
+    o) cmd="zcd $NOTES/ws" ;;
+    d) cmd="zcd $DUMP" ;;
+    D) cmd="zcd $BULK/downloads" ;;
+    O) cmd="sh-dir-ws" ;;
+    e) cmd="CWD=/etc zsh" ;;
+    W) cmd="fzf-dirs-cd-deep" ;;
+    w) cmd="CWD=/var/www zsh" ;;
+    G) cmd="CWD=$HOME/go/src/github.com ranger $HOME/go/src/github.com" ;;
+    2) cmd="CWD=$NOTES/ws/fmg-fortesque-metals-group zsh" ;;
+    3) cmd="CWD=$NOTES/ws/takaheai zsh" ;;
+    t) cmd="CWD=$DUMP/torrents zsh" ;;
+    l) cmd="zcd $HOME/local/bin" ;;
+    # L) cmd="zcd $NOTES/ws/glossaries" ;;
+    L) cmd="zcd $HOME/glossaries" ;;
+    J) cmd="CWD=$NOTES/ws/rules-of-thumb zsh" ;;
+    P) cmd="CWD=$NOTES/ws/playgrounds zsh" ;;
+    T) cmd="new-temp-folder -g" ;;
+    \?) cmd="ag-dir $HOME/glossaries" ;;
+    H) cmd="tg ." ;;
+    1) cmd="CWD=$HOME/go/src/github.com/codelingo zsh" ;;
+    /) cmd="CWD=/ zsh" ;;
+    h|\`) cmd="CWD=$HOME zsh" ;;
+    g) cmd="sh-git-dir" ;;
+    ) cmd="cd $NOTES; tm-shortcuts" ;;
+    z) cmd="sh-fuzzy-dir" ;;
+    ' ') cmd="zcd $HOME/agenda" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

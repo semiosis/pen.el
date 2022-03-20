@@ -1,0 +1,45 @@
+#!/bin/bash
+export TTY
+
+# After I set this up I should create a template for an organisation which I manage
+# I should also really code this in scheme or something rather than sh scripts
+
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+# g  sh-infogetics-go
+# r  sh-infogetics-rc
+# F  sh-infogetics-files
+# I  infogetics-get-issue-description
+# w  list-wiki-files-below $MYGIT/fortescue-autonomy
+# J  infogetics jargon
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+G  glossary.txt
+o  zcd infogetics
+d  sh-infogetics-dir
+e  sh-infogetics-exec
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    G) cmd="vs $HOME/notes/ws/infogetics/glossary.txt" ;;
+    o) cmd="zcd $NOTES/ws/infogetics" ;;
+    d) cmd="sh-infogetics-dir" ;;
+    e) cmd="sh-infogetics-exec" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

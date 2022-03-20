@@ -1,0 +1,53 @@
+#!/bin/bash
+export TTY
+
+: "${pane_id:="$1"}"
+: "${pane_id:="$TMUX_PANE"}"
+: "${pane_id:="$CALLER_TARGET"}"
+
+: "${window_id:="$1"}"
+: "${window_id:=$(tmux display-message -p '#{window_id}')}"
+
+# for i in sh-*; do sed -i 's/read -n1 d/&; test "$d" = "" \&\& read -n1 d/' "$i" ; done
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+o  tm-pane-open-file $pane_id
+i  tm-copy-pane-cmd $pane_id
+m  tm-pane-open-file $pane_id media
+F  tm-pane-open-file $pane_id feh
+V  tm-pane-open-file $pane_id vlc
+t  tm-window-ta $window_id
+n  tm-window-nvt $window_id
+e  tm-window-etermify $window_id
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+IFS="" read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    o) cmd="tm-pane-open-file $pane_id" ;;
+    i) cmd="tm-copy-pane-cmd $pane_id" ;;
+    m) cmd="tm-pane-open-file $pane_id media" ;;
+    F) cmd="tm-pane-open-file $pane_id feh" ;;
+    V) cmd="tm-pane-open-file $pane_id vlc" ;;
+    t) cmd="tm-window-ta $window_id" ;;
+    n) cmd="tm-window-nvt $window_id" ;;
+    e) cmd="tm-window-etermify $window_id" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

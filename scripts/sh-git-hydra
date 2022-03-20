@@ -1,0 +1,135 @@
+#!/bin/bash
+export TTY
+
+# go get github.com/github/hub && cd "$GOPATH"/src/github.com/github/hub; sudo make install
+
+# exec 1> >(pen-mnm)
+
+git_abort() {
+    # make this also work for merge
+    git rebase --abort
+}
+
+fzf_cmd() {
+    sel="$(fqa 'git remotes' 'hub pull-request # open PR' | sed 's/#.*//' )"
+
+    echo
+
+    if [ -n "$sel" ]; then
+        printf -- "%s\n" "Running: $sel »" 1>&2
+        eval "$sel"
+    fi
+}
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+read -r -d '' options <<HEREDOC
+.   EDIT
+l   git log
+L   magit log
+d   git log
+F   git fetch -a; git remote | xa nofail git fetch 2>/dev/null
+D   git-touched-files-since-divergence | pen-mfz -m -p
+P   gh pr
+t   git-ls-files-mtime -hr | v
+T   git-ls-files-mtime | v
+r   sh-git-reset
+R   git pull --recurse-submodules --rebase origin master
+?   git rebase --continue
+/   magit-open-unmerged
+s   git status
+m   magit
+2   nvt magit -2
+C   git clean -xfd .; git reset --hard HEAD
+M   cd "\$(pen-vc get-top-level)" && git checkout master
+S   pen-vc list-submodule-paths
+i   issues
+f   fork
+W   git-clone-wiki
+X   abort
+-   git clean -xfd .; git reset --hard HEAD"
+^   git reset --soft HEAD\^
+H   pwd; ynx -E "git add -A .; git reset --hard HEAD"
++   git reset --hard HEAD
+,z  fzf_cmd
+Z   lazygit
+h   magithub
+g   forge
+y   yank last commit as patch
+a   apply clipboard patch
+c   git diff --cached
+u   get git remote url
+7   cl-git-pull-this-on-pipeline
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+# I want to detect M-m
+#while true; do
+#    line=''
+#
+#    while IFS= read -r -N 1 ch; do
+#        case "$ch" in
+#            "")   got_esc=1   ;&
+#            $'\n')  break       ;;
+#            *)      line="$line$ch" ;;
+#        esac
+#    done
+#
+#    printf 'line: "%s"\n' "$line"
+#
+#    if (( got_eot )); then
+#        break
+#    fi
+#done
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    m) { cmd="magit"; }; ;;
+    2) { cmd="nvt magit -2"; }; ;;
+    C) { cmd="git clean -xfd .; git reset --hard HEAD"; }; ;;
+    M) { cmd="cd $(cmd-nice-posix "$(pen-vc get-top-level)") && git checkout master && zcd ."; }; ;;
+    W) { cmd="git-clone-wiki"; }; ;;
+    F) { cmd="git fetch -a; git remote | xa nofail git fetch 2>/dev/null"; }; ;;
+    S) { cmd="pen-vc list-submodule-paths | pen-fzf | pen-ux rp | pen-xc -n -i"; }; ;;
+    r) { cmd="sh-git-reset"; } ;;
+    R) { cmd="git pull --recurse-submodules --rebase origin master"; }; ;;
+    \?) { cmd="git rebase --continue"; }; ;;
+    \/) { cmd="magit-open-unmerged"; }; ;;
+    i) { cmd="hub browse -- issues"; }; ;;
+    f) { cmd="hub fork"; }; ;;
+    ,|z) { cmd="fzf_cmd"; }; ;;
+    Z) { cmd="lazygit"; }; ;;
+    h) { cmd="magithub"; }; ;;
+    g) { cmd="forge"; }; ;;
+    l) { cmd="git log"; }; ;;
+    D) { cmd="git-touched-files-since-divergence | pen-mfz -m -p"; }; ;;
+    # P) { cmd="gh pr"; }; ;;
+    P) { cmd="fzf-pr"; }; ;;
+    t) { cmd="git-ls-files-mtime -hr | v"; }; ;;
+    T) { cmd="git-ls-files-mtime | v"; }; ;;
+    H) { cmd="pwd; ynx -E \"git add -A .; git reset --hard HEAD\""; }; ;;
+    s) { cmd="git status"; }; ;;
+    L) { cmd="magit log"; }; ;;
+    -) { cmd="git clean -xfd .; git reset --hard HEAD\\^"; }; ;;
+    \^) { cmd="git reset --soft HEAD\\^"; }; ;;
+    \+) { cmd="pen-yn && git reset --hard HEAD"; }; ;;
+    d) { cmd="git diff"; }; ;;
+    X) { cmd="git_abort"; }; ;;
+    y) { cmd="git diff | pen-xc -i"; }; ;;
+    a) { cmd="pen-xc | patch -b -p 1 2>(ns)"; }; ;;
+    c) { cmd="git diff --cached"; }; ;;
+    u) { cmd="git config --get remote.origin.url | pen-xc -n -i -"; }; ;;
+    7) { cmd="cl-git-pull-this-on-pipeline"; }; ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

@@ -1,0 +1,36 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+d="$(basename "$(pwd)")"
+nd="${d}_$(k f8)"
+bcmd="cd ..; pen-yn && rs --remove-source-files $(cmd-nice-posix "$d/") $(cmd-nice-posix "$nd"); CWD=$(cmd-nice-posix "$(pwd)") zsh"
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+b  $bcmd
+t  bundle-dir
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    b) cmd="$bcmd" ;;
+    t) cmd="bundle-dir" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

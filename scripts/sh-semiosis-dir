@@ -1,0 +1,93 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# t  zcd $MYGIT/semiosis/openai-classification-training-data
+read -r -d '' options <<HEREDOC
+.  EDIT
+e  zcd $MYGIT/semiosis/efm-langserver
+S  zcd $MYGIT/semiosis
+7  zcd $MYGIT/semiosis/channel
+C  zcd $MYGIT/semiosis/creation
+Y  zcd $MYGIT/semiosis/yas-snippets
+P  zcd $MYGIT/semiosis/pensieve
+r  zcd $MYGIT/semiosis/rhizome
+l  zcd $MYGIT/semiosis/ilambda
+x  zcd $MYGIT/semiosis/examplary
+D  zcd $MYGIT/semiosis/dni
+w  sp $MYGIT/semiosis/pen.el/src/pen.el
+pq zcd $MYGIT/semiosis/pen.el
+v  zcd $MYGIT/semiosis/metaverses
+V  zcd $MYGIT/semiosis/protoverses
+H  zcd $MYGIT/semiosis/imaginary-programming-thesis
+s  zcd $MYGIT/semiosis/pen.el/scripts
+c  zcd $MYGIT/semiosis/pen.el/src
+X  sp $MYGIT/semiosis/pen.el/src/pen-examplary.el
+d  zcd $MYGIT/semiosis/prompt-design-patterns
+t  zcd $MYGIT/semiosis/personalities
+I  zcd $MYGIT/semiosis/incarnations
+T  zcd $MYGIT/semiosis/tomes
+o  zcd $MYGIT/semiosis/prompts
+O  zcd $MYGIT/semiosis/openai-complete-clj
+m  zcd $MYGIT/semiosis/engines
+n  zcd $MYGIT/semiosis/interpreters
+k  zcd $MYGIT/semiosis/ink.el
+K  zcd $MYGIT/semiosis/khala
+g  zcd $MYGIT/semiosis/glossaries
+y  zcd $MYGIT/semiosis/semiosis
+j  zcd $MYGIT/semiosis/pen-contrib.el
+i  zcd $MYGIT/semiosis/openai-api.el
+hb zcd $MYGIT/semiosis/semiosis-hugo
+a  zcd $MYGIT/semiosis/semiosis-hugo/posts
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    e) cmd="zcd $MYGIT/semiosis/efm-langserver" ;;
+    S) cmd="zcd $MYGIT/semiosis" ;;
+    7) cmd="zcd $MYGIT/semiosis/channel" ;;
+    C) cmd="zcd $MYGIT/semiosis/creation" ;;
+    Y) cmd="zcd $MYGIT/semiosis/yas-snippets" ;;
+    P) cmd="zcd $MYGIT/semiosis/pensieve" ;;
+    r) cmd="zcd $MYGIT/semiosis/rhizome" ;;
+    l) cmd="zcd $MYGIT/semiosis/ilambda" ;;
+    x) cmd="zcd $MYGIT/semiosis/examplary" ;;
+    D) cmd="zcd $MYGIT/semiosis/dni" ;;
+    w) cmd="sp $MYGIT/semiosis/pen.el/src/pen.el" ;;
+    p|q) cmd="zcd $MYGIT/semiosis/pen.el" ;;
+    v) cmd="zcd $MYGIT/semiosis/metaverses" ;;
+    V) cmd="zcd $MYGIT/semiosis/protoverses" ;;
+    H) cmd="zcd $MYGIT/semiosis/imaginary-programming-thesis" ;;
+    s) cmd="zcd $MYGIT/semiosis/pen.el/scripts" ;;
+    c) cmd="zcd $MYGIT/semiosis/pen.el/src" ;;
+    X) cmd="sp $MYGIT/semiosis/pen.el/src/pen-examplary.el" ;;
+    o) cmd="zcd $MYGIT/semiosis/prompts" ;;
+    O) cmd="zcd $MYGIT/semiosis/openai-complete-clj" ;;
+    m) cmd="zcd $MYGIT/semiosis/engines" ;;
+    n) cmd="zcd $MYGIT/semiosis/interpreters" ;;
+    k) cmd="zcd $MYGIT/semiosis/ink.el" ;;
+    K) cmd="zcd $MYGIT/semiosis/khala" ;;
+    g) cmd="zcd $MYGIT/semiosis/glossaries" ;;
+    y) cmd="zcd $MYGIT/semiosis/semiosis" ;;
+    j) cmd="zcd $MYGIT/semiosis/pen-contrib.el" ;;
+    i) cmd="zcd $MYGIT/semiosis/openai-api.el" ;;
+    d) cmd="zcd $MYGIT/semiosis/prompt-design-patterns" ;;
+    t) cmd="zcd $MYGIT/semiosis/personalities" ;;
+    I) cmd="zcd $MYGIT/semiosis/incarnations" ;;
+    T) cmd="zcd $MYGIT/semiosis/tomes" ;;
+    # t) cmd="zcd $MYGIT/semiosis/openai-classification-training-data" ;;
+    h|b) cmd="zcd $MYGIT/semiosis/semiosis-hugo" ;;
+    a) cmd="zcd $MYGIT/semiosis/semiosis-hugo/posts" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+eval "$cmd"

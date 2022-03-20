@@ -1,0 +1,60 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+r  remember.org
+c  clipboard.txt
+t  todo.org
+g  glossary.txt
+G  glossary.el
+p  perspective.org
+P  plan.org
+k  keep-in-mind.org
+n  need.org
+f  files.txt
+e  examples.txt # fuzzy search this
+l  collocations.txt (english)
+w  words.txt (english)
+W  words.txt (french)
+T  timesheet.org
+F  filters.sh
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    r) cmd="vs $NOTES/remember.org" ;;
+    c) cmd="vs $NOTES/clipboard.txt" ;;
+    t) cmd="vs $NOTES/todo.org" ;;
+    g) cmd="vs $NOTES/glossary.txt" ;;
+    G) cmd="sp $EMACSD/config/my-glossary.el" ;;
+    p) cmd="vs $NOTES/perspective.org" ;;
+    P) cmd="vs $NOTES/plan.org" ;;
+    k) cmd="vs $NOTES/keep-in-mind.org" ;;
+    n) cmd="vs $NOTES/need.org" ;;
+    f) cmd="vs $NOTES/files.txt" ;;
+    e) cmd="vs $NOTES/examples.txt" ;;
+    l) cmd="vs $NOTES/ws/english/collocations.txt" ;;
+    w) cmd="vs $NOTES/ws/english/words.txt" ;;
+    W) cmd="vs $NOTES/ws/french/words.txt" ;;
+    T) cmd="orspv $NOTES/ws/fmg-fortesque-metals-group/timesheet.org" ;;
+    F) cmd="vs $NOTES/ws/filters/filters.sh" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

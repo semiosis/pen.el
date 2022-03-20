@@ -1,0 +1,52 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+g  select-git-repo
+f  browse-git-repos
+e  select-emacs-package
+p  select-python-package
+w  select-ws-dir
+o  select-go-package
+O  zcd $HOME/go/src
+m  select-go-package "${GOPATH%%:*}/pkg/mod/github.com"
+M  zcd ${GOPATH%%:*}/pkg/mod/github.com
+r  select-recent-dir
+h  select-dir-from-here
+d  select-dir-from-directories-file
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    g) cmd="select-git-repo" ;;
+    f) cmd="browse-git-repos" ;;
+    e) cmd="select-emacs-package" ;;
+    p) cmd="select-python-package" ;;
+    w) cmd="select-ws-dir" ;;
+    o) cmd="select-go-package" ;;
+    O) cmd="zcd $HOME/go/src" ;;
+    m) cmd="select-go-package ${GOPATH%%:*}/pkg/mod/github.com" ;;
+    M) cmd="zcd ${GOPATH%%:*}/pkg/mod/github.com" ;;
+    r) cmd="select-recent-dir" ;;
+    h) cmd="select-dir-from-here" ;;
+    d) cmd="select-dir-from-directories-file" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

@@ -1,0 +1,52 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+d  dir
+s  scripts
+g  pen-tm sel glossary.txt»
+l  pen-tm sel localhost_ws:codelingo
+f  pen-tm sel localhost_im:finch
+i  pen-tm sel localhost_im:irssi
+m  ranger $HOME/notes2018/ws/music
+p  pen-tm sel :perspective.org
+t  pen-tm sel :todo.org
+n  pen-tm sel localhost:notifications.txt».0
+C  pen-tm sel localhost:clipboard.txt
+HEREDOC
+
+# t  pen-tm sel localhost_ws_functional-programming-fp:glossary.txt.0
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    d) cmd="sh-dir" ;;
+    s) cmd="CWD=$HOME/scripts zsh" ;;
+    g) cmd="pen-tm sel glossary.txt»" ;;
+    l) cmd="pen-tm sel localhost_ws:codelingo" ;;
+    f) cmd="pen-tm sel localhost:im:finch" ;;
+    i) cmd="pen-tm sel localhost:im:irssi" ;;
+    m) cmd="ranger $HOME/notes2018/ws/music" ;;
+    p) cmd="pen-tm sel perspective.org" ;;
+    t) cmd="pen-tm sel todo.org" ;;
+    n) cmd="pen-tm sel localhost:notifications.txt».0" ;;
+    C) cmd="pen-tm sel localhost:clipboard.txt" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

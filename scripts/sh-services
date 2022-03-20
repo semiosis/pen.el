@@ -1,0 +1,40 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+i  eaws-instances
+k  kubernetes-overview
+Y  echkservice
+y  daemons
+d  sh-docker
+a  sh-aws
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    i) cmd="eaws-instances" ;;
+    k) cmd="kubernetes-overview" ;;
+    Y) cmd="echkservice" ;;
+    y) cmd="daemons" ;;
+    d) cmd="sh-docker" ;;
+    a) cmd="sh-aws" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

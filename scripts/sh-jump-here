@@ -1,0 +1,38 @@
+#!/bin/bash
+export TTY
+
+# exec 1> >(pen-mnm)
+
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# Select a directory from a decision tree
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+HEREDOC
+
+eval `resize`
+
+echo "$0" | udl | pen-hls green
+{
+    echo "$options"
+    wfind . -type d | head -n "$(bc <<< "$LINES / 2")"
+} | pen-mnm
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    d) cmd="sh-dir" ;;
+    P) cmd="CWD=$(cmd-nice-posix $(pwd -P)) zsh" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

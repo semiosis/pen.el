@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+clear
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+I  continuous integration
+d  docker
+e  emacs
+L  gitlab
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+IFS="" read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    d) cmd="og $MYGIT/veggiemonk/awesome-docker/README.md" ;;
+    I) cmd="og $MYGIT/ligurio/awesome-ci/README.md" ;;
+    e) cmd="og $MYGIT/emacs-tw/awesome-emacs/README.org" ;;
+    L) cmd="og $MYGIT/timzallmann/awesome-gitlab/README.md" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+eval "$cmd"

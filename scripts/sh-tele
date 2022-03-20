@@ -1,0 +1,140 @@
+#!/bin/bash
+export TTY
+
+clear
+
+fzf-dirs-cd-deep() {
+    # sel="$(pen-F d | pen-u bn | pen-fzf | pen-mnm)"
+    sel="$(pen-F d | pen-mnm | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        dir="$(printf -- "%s" "$sel" | pen-umn | pen-ux rp)"
+        p "$dir" | pen-mnm | pen-xc -n -i
+        cd "$dir"
+        CWD="$dir" zsh
+    fi
+}
+
+fzf-dirs-cd() {
+    sel="$(pen-F find-dirs-here | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        dir="$(printf -- "%s" "$sel" | pen-umn | pen-ux rp)"
+        p "$dir" | pen-mnm | pen-xc -n -i
+        cd "$dir"
+        CWD="$dir" zsh
+    fi
+}
+
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+s  scripts
+S  sh-source
+W  fzf-dirs-cd-deep
+b  hugo-blog
+# B  mullikine.github.io
+B  blog posts
+h  programs/hs
+E  $EMACSD
+C  $EMACSD/config
+V  $VIMCONFIG
+n  notes
+v  vars
+m  music    
+k  sh-commands
+N  programs/ns
+I  programs/ci
+1  cd CWD=$HOME/go/src/github.com/codelingo zsh
+7  notes2017
+8  notes2018
+r  notes/scratch
+f  go-to-dir-of-change
+F  go-to-dir-of-important-change
+R  select-recent-dir
+o  notes/ws
+c  croogle
+G  ranger $HOME/go/src/github.com
+e  /etc
+;  go-to-dir-of-unstaged-changes
+w  /var/www
+2  /var/www/gallery
+t  $DUMP/torrents
+L  $NOTES/ws/glossaries
+J  $NOTES/ws/rules-of-thumb
+P  $NOTES/ws/playgrounds
+T  new temp git folder
+p  temp git repo from here
+^? cd $NOTES; tm-shortcuts
+d  $DUMP
+D  $BULK/downloads
+/  /
+h\`  ~ home
+g  sh-git-dir
+z  sh-fuzzy-dir
+O  sh-dir-ws
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+IFS="" read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    n) cmd="zcd $NOTES" ;;
+    v) cmd="zcd $NOTES/vars" ;;
+    b) cmd="zcd $DUMP$NOTES/ws/blog/blog" ;;
+    # B) cmd="zcd $MYGIT/mullikine/mullikine.github.io" ;;
+    B) cmd="zcd $NOTES/ws/blog/posts" ;;
+    h) cmd="CWD=$HOME/notes2018/programs/hs zsh" ;;
+    E) cmd="zcd $EMACSD" ;;
+    C) cmd="zcd $EMACSD/config" ;;
+    V) cmd="zcd $VIMCONFIG" ;;
+    8) cmd="CWD=$NOTES zsh" ;;
+    7) cmd="CWD=$NOTES2017 zsh" ;;
+    m) cmd="CWD=$NOTES/ws/music zsh" ;;
+    N) cmd="CWD=$NOTES/programs/ns zsh" ;;
+    I) cmd="CWD=$NOTES/programs/ci zsh" ;;
+    s) cmd="CWD=$HOME/scripts zsh" ;;
+    S) cmd="CWD=$HOME/sh-source zsh" ;;
+    r) cmd="CWD=$NOTES/scratch zsh" ;;
+    f) cmd="go-to-dir-of-change" ;;
+    \;) cmd="go-to-dir-of-unstaged-changes" ;;
+    F) cmd="go-to-dir-of-important-change" ;;
+    R) cmd="select-recent-dir" ;;
+    o) cmd="zcd $NOTES/ws" ;;
+    d) cmd="zcd $DUMP" ;;
+    D) cmd="zcd $BULK/downloads" ;;
+    O) cmd="sh-dir-ws" ;;
+    e) cmd="CWD=/etc zsh" ;;
+    W) cmd="fzf-dirs-cd-deep" ;;
+    w) cmd="CWD=/var/www zsh" ;;
+    G) cmd="CWD=$HOME/go/src/github.com ranger $HOME/go/src/github.com" ;;
+    2) cmd="CWD=/var/www/gallery zsh" ;;
+    c) cmd="CWD=/var/www/croogle zsh" ;;
+    t) cmd="CWD=$DUMP/torrents zsh" ;;
+    L) cmd="CWD=$NOTES/ws/glossaries zsh" ;;
+    J) cmd="CWD=$NOTES/ws/rules-of-thumb zsh" ;;
+    P) cmd="CWD=$NOTES/ws/playgrounds zsh" ;;
+    T) cmd="new-temp-folder -g" ;;
+    p) cmd="tg ." ;;
+    1) cmd="CWD=$HOME/go/src/github.com/codelingo zsh" ;;
+    /) cmd="CWD=/ zsh" ;;
+    h|\`) cmd="CWD=$HOME zsh" ;;
+    g) cmd="sh-git-dir" ;;
+    ) cmd="cd $NOTES; tm-shortcuts" ;;
+    z) cmd="sh-fuzzy-dir" ;;
+    ' ') cmd="zcd $HOME/agenda" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

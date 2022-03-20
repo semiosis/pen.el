@@ -1,0 +1,29 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+s  scripts
+h  zcd $MYGIT/arcatelier/arcatelier-hugo
+a  zcd $MYGIT/arcatelier/arcatelier-hugo/posts
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    s) cmd="zcd $MYGIT/arcatelier/scripts" ;;
+    h) cmd="zcd $MYGIT/arcatelier/arcatelier-hugo" ;;
+    a) cmd="zcd $MYGIT/arcatelier/arcatelier-hugo/posts" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+eval "$cmd"

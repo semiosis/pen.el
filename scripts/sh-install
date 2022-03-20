@@ -1,0 +1,36 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+r  z-repl "raco pkg install " 
+c  z-repl "sudo cpanm " 
+n  z-repl "npm install -g " 
+l  z-repl "l " 
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    r) cmd="z-repl \"raco pkg install \"" ;;
+    c) cmd="z-repl \"sudo cpanm \"" ;;
+    n) cmd="z-repl \"npm install -g \"" ;;
+    l) cmd="z-repl \"l \"" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

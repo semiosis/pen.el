@@ -1,0 +1,50 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+find-edit-recently-modified() {
+    result="$(pen-F recently-modified-here | pen-mfz -m)"
+
+    if [ -n "$result" ]; then
+        result="$(p "$result" | qargs)"
+
+        eval "v $result"
+    fi
+}
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+rm recently modified
+i  list-mru | v
+x  find . -type f -executable | v
+c  find-ci-here
+C  v $NOTES/ws/lists/file-types/ci.txt
+R  find-readme-here
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    r|m) cmd="find-edit-recently-modified" ;;
+    i) cmd="list-mru | v" ;;
+    x) cmd="find . -type f -executable | v" ;;
+    c) cmd="find-ci-here" ;;
+    C) cmd="v $NOTES/ws/lists/file-types/ci.txt" ;;
+    R) cmd="find-readme-here" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

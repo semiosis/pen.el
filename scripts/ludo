@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+if test "$#" -lt 1; then
+    echo "missing command" 1>&2
+    exit 1
+fi
+
+INITCMD="exec env $(cmd "PATH=$PATH") $(cmd "HOME=$HOME") bash"
+
+login_pass="$(cat ~/.myrc.yaml | yq -r .login_pass)"
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+x \
+    -sh "login -p" \
+    -off \
+    -e : \
+    -s shane \
+    -c m \
+    -e : \
+    -s "$login_pass" \
+    -c m \
+    -e "$" -s "$INITCMD" -c m \
+    -e "$" -s ". ~/.profile" -c m \
+    -e "$" \
+    -on \
+    -s "exec $CMD" -c m \
+    -i

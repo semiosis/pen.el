@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+TAB github.com/github
+s  semantic
+t  tree-sitter
+c  codeql
+f  feedback
+g  stack-graphs
+l  super-linter
+h  hub
+p  copilot-docs
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    \	) cmd="zcd $MYGIT/github" ;;
+    s) cmd="CWD=$MYGIT/github/semantic zsh" ;;
+    t) cmd="CWD=$MYGIT/tree-sitter/tree-sitter zsh" ;;
+    c) cmd="CWD=$MYGIT/github/codeql zsh" ;;
+    f) cmd="CWD=$MYGIT/github/feedback zsh" ;;
+    g) cmd="CWD=$MYGIT/github/stack-graphs zsh" ;;
+    l) cmd="CWD=$MYGIT/github/super-linter zsh" ;;
+    h) cmd="CWD=$MYGIT/github/hub zsh" ;;
+    p) cmd="CWD=$MYGIT/github/copilot-docs zsh" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+eval "$cmd"

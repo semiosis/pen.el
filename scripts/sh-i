@@ -1,0 +1,111 @@
+#!/bin/bash
+export TTY
+
+# this appears to not affect nvim
+# But it breaks xonsh
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+# e  es-shell (extensible shell)
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+\`  rlr ma calc
+b  bash
+a  awk
+N  nu
+v  nvt -vt100
+x  busybox
+k  ghci (haskell)
+K  sp ghci (haskell)
+T  turtle (haskell shellscript)
+i  sh-interpreter
+Z  zsh
+3  php
+ra racket
+R  rust-playground # R  rusti (rust)
+E  emacs-lisp (ielm)
+e  eshell (emacs-shell)
+m  mathematica
+p  python
+2  tcl
+f  fish
+F  mathics
+u  irb (ruby)
+l  perl (rlwrap perl -dwe 1)
+4  sp -ic perl-repl
+L  perl (rlwrap re.pl) # This is not a great repl. # sudo cpanm Devel::REPL
+# P  pry (ruby -- much improved)
+P  purs-repl
+U  rbs (ruby one-off commands)
+H  hy
+h  nvt racket -iI hackett
+c  clisp (common lisp)
+C  clojure
+njtJ node
+O  xonsh
+B  inf-ruby
+t  ts-node
+z  fz-repl
+/? cheat
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    \`) cmd="rlr ma calc" ;;
+    b) cmd="CWD=$NOTES bash" ;;
+    a) cmd="CWD=$NOTES awkward" ;;
+    N) cmd="CWD=$NOTES nu" ;;
+    x) cmd="CWD=$NOTES bb" ;;
+    Z) cmd="CWD=$NOTES zsh" ;;
+    3) cmd="CWD=$NOTES psysh" ;;
+    r|a) cmd="nvt racket -iI racket" ;;
+    # R) cmd="rusti" ;;
+    R) cmd="sp -ci rust-playground" ;;
+    # p) cmd="python" ;;
+    2) cmd="nvt tclsh" ;;
+    p) cmd="xpti3" ;;
+    k) cmd="nvt ghci" ;;
+    K) cmd="sp-ghci $MYGIT/mullikine/haskell-playground" ;;
+    T) cmd="xs turtle" ;;
+    f) cmd="fish" ;;
+    F) cmd="mathics" ;;
+    E) cmd="sp -ic ielm" ;; 
+    e) cmd="es" ;; 
+    m) cmd="mmr" ;; 
+    v) cmd="nvt -vt100" ;;
+    u) cmd="irb" ;;
+    # P) cmd="pry" ;;
+    P) cmd="purs-repl" ;;
+    U) cmd="rbs" ;;
+    H) cmd="hy" ;;
+    h) cmd="nvt racket -iI hackett" ;;
+    c) cmd="clisp" ;;
+    i) cmd="sh-install" ;;
+    l) cmd="rlwrap perl -dwe 1" ;;
+    4) cmd="sp -ic perl-repl" ;;
+    L) cmd="rlwrap re.pl" ;;
+    # j) cmd="clojure1.6" ;;
+    # C) cmd="clj" ;;
+    C) cmd="clojure1.6" ;; # Can I use liquid here?
+    n|j|J) cmd="node" ;;
+    O) cmd="xonsh" ;;
+    B) cmd="e -ci inf-ruby" ;;
+    t) cmd="ts-node" ;;
+    z) cmd="fz-repl" ;;
+    /|\?) cmd="cheat" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# This breaks nvim but pen-mnm does not
+# exec <`tm-tty` `# see etty`
+eval "$cmd"

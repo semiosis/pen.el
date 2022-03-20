@@ -1,0 +1,33 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+s  scripts
+t  zcd $MYGIT/takaheai/otagoai-ai
+w  zcd $MYGIT/takaheai/otagoai-website
+B  zcd $MYGIT/takaheai/otagoai-website/posts
+p  zcd $MYGIT/takaheai/takaheai.github.io
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    s) cmd="zcd $MYGIT/takaheai/takahe-scripts" ;;
+    t) cmd="zcd $MYGIT/takaheai/otagoai-ai" ;;
+    w) cmd="zcd $MYGIT/takaheai/otagoai-website" ;;
+    B) cmd="zcd $MYGIT/takaheai/otagoai-website/posts" ;;
+    p) cmd="zcd $MYGIT/takaheai/takaheai.github.io" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+eval "$cmd"

@@ -1,0 +1,46 @@
+#!/bin/bash
+export TTY
+
+url="$1"
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+d  yt -v $(cmd-nice-posix "$url") # download and watch in vlc
+tn yt -tty -v $(cmd-nice-posix "$url")
+v  yt -vlc -v $(cmd-nice-posix "$url")
+p  yt -a $(cmd-nice-posix "$url")
+s  play-song $(cmd-nice-posix "$url")
+c  chrome $(cmd-nice-posix "$url")
+f  ff $(cmd-nice-posix "$url")
+r  readsubs $(cmd-nice-posix "$url")
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    d) cmd="yt -v $(cmd-nice-posix "$url")" ;;
+    t|n) cmd="yt -tty -v $(cmd-nice-posix "$url")" ;;
+    v) cmd="yt -vlc -v $(cmd-nice-posix "$url")" ;;
+    p) cmd="yt -a $(cmd-nice-posix "$url") &" ;;
+    s) cmd="play-song $(cmd-nice-posix "$url") &" ;;
+    c) cmd="chrome $(cmd-nice-posix "$url")" ;;
+    f) cmd="ff $(cmd-nice-posix "$url")" ;;
+    r) cmd="readsubs $(cmd-nice-posix "$url")" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+#exec <`tm-tty`
+#exec 1> /dev/tty
+eval "$cmd"

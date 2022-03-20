@@ -1,0 +1,70 @@
+#!/bin/bash
+export TTY
+
+unset TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+x  slmenu
+X  slmenu | xa orspvs
+t  tools
+b  tidbit
+k  tidbits-tasks
+c  cheetsheets
+g  glossaries
+q  questions
+p  playgrounds
+a  awesome
+v  discovery
+f  functions
+T  v tools.txt (edit)
+C  zcd $NOTES/ws/cheatsheets/sheets (edit)
+A  v awesome.txt (edit)
+V  v discovery.txt (edit)
+F  v functions.txt (edit)
+u  pen-fzf utils/fuzzy.txt
+U  vim utils/fuzzy.txt
+d  sh-fuzzy-dir
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    x) cmd="slmenu" ;;
+    X) cmd="slmenu | xa orspvs" ;;
+    t) cmd="cat $NOTES/ws/fuzzy/tools.txt | pen-mfz -C | pen-xc -i" ;;
+    b) cmd="fz-org-tidbit" ;;
+    k) cmd="fz-org-tidbits-tasks" ;;
+    c) cmd="fz-cheatsheets" ;;
+    g) cmd="fz-glossaries" ;;
+    q) cmd="fz-questions" ;;
+    p) cmd="find $NOTES/ws/playgrounds -type f | pen-mfz -m | xa vs" ;;
+    a) cmd="cat $NOTES/ws/fuzzy/awesome.txt | pen-mfz -C | pen-xc -i" ;;
+    v) cmd="cat $NOTES/ws/fuzzy/discovery.txt | pen-mfz -C | pen-xc -i" ;;
+    f) cmd="cat $NOTES/ws/fuzzy/functions.txt | pen-mfz -C | pen-xc -i" ;;
+    T) cmd="v $NOTES/ws/fuzzy/tools.txt" ;;
+    C) cmd="zcd $NOTES/ws/cheatsheets/sheets" ;;
+    A) cmd="v $NOTES/ws/fuzzy/awesome.txt" ;;
+    V) cmd="v $NOTES/ws/fuzzy/discovery.txt" ;;
+    F) cmd="v $NOTES/ws/fuzzy/functions.txt" ;;
+    u) cmd="pen-fzf $NOTES/ws/utils/fuzzy.txt | pen-xc -i" ;;
+    U) cmd="vim $NOTES/ws/utils/fuzzy.txt" ;;
+    d) cmd="sh-fuzzy-dir" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

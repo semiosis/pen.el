@@ -1,0 +1,160 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+# 2  sh-pacific-edge
+
+unset TTY
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+^M show clipboard
+,  sh-config
+'  git diff
+T  pen-tm config
+\`  sh-remote
+9  git d HEAD\^!
+B  bash (useful from zsh)
+a  sh-apps
++  nvrat
+W  sh-awesome
+Y  nw customize-system
+8  sh-tele
+R  sh-rtcmd
+A  sh-apis
+y  sh-yank
+I  sh-install
+i  sh-interpreter
+t  sh-today
+f  sh-find
+F  sh-files
+;  sh-repls
+d  sh-dir
+gG sh-go
+h  sh-git GIT # Don't make this G, it was very annoying
+k  sh-kill
+H  sh-history
+r  sh-rc
+c  sh-commands
+L  sh-langs
+o  sh-clipboard
+O  open
+l  sh-links
+S  sh-ssh
+n  sh-new
+1  sh-lingo
+2  fz-sh
+4  sh-semiosis
+5  sh-infogetics
+6  sh-arcatelier
+3  sh-takaheai
+3  sh-rbp
+b  sh-backup
+j  sh-projects
+m  sh-monitor
+w  sh-tmux
+(  sh-dir
+)  sh-src
+q  sh-scratchpad-file
+Q  sh-scratchpad-org
+E  rep
+P  tmpg (playground)
+p  sh-playground
+u  sh-unix
+# C  pen-tm sel localhost:clipboard.txt
+C  sp $EMACSD/config
+z  sh-fuzzy
+U  switch-to-utility
+^? tm-shortcuts
+/  sh-search
+?  sh-man
+N  nvt zsh
+M  list-mru -m
+   agenda
+HEREDOC
+
+# n  notes
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+# The IFS is so I can read a space
+IFS="" read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    ) cmd="pen-xc | tless && pen-tm edit-x-clipboard" ;;
+    9) cmd="git d HEAD\^!" ;;
+    ,) cmd="sh-config" ;;
+    \') cmd="git diff" ;;
+    T) cmd="pen-tm config" ;;
+    \`) cmd="sh-remote" ;;
+    B) cmd="bash" ;;
+    a) cmd="sh-apps" ;;
+    \+) cmd="nvrat" ;;
+    W) cmd="sh-awesome" ;;
+    Y) cmd="nw customize-system" ;;
+    R) cmd="sh-rtcmd" ;;
+    A) cmd="sh-apis" ;;
+    n) cmd="clear; sh-new" ;;
+    i) cmd="sh-interpreter" ;;
+    t) cmd="sh-today" ;;
+    f) cmd="sh-find" ;;
+    F) cmd="sh-files" ;;
+    \;) cmd="sh-repls" ;;
+    d) cmd="sh-dir" ;;
+    r) cmd="sh-rc" ;;
+    g|G) cmd="sh-go" ;;
+    y) cmd="sh-yank" ;;
+    I) cmd="sh-install" ;;
+    h) cmd="sh-git" ;;
+    o) cmd="sh-clipboard" ;;
+    O) cmd="pen-tm -d rs -args open $(cmd-nice-posix "$(pen-xc -)")" ;;
+    c) cmd="sh-commands" ;;
+    l) cmd="sh-links" ;;
+    L) cmd="sh-langs" ;;
+    S) cmd="sh-ssh" ;;
+    k) cmd="sh-kill" ;;
+    H) cmd="sh-history" ;;
+    1) cmd="sh-lingo" ;;
+    2) cmd="fz-sh" ;;
+    4) cmd="sh-semiosis" ;;
+    5) cmd="sh-infogetics" ;;
+    6) cmd="sh-arcatelier" ;;
+    3) cmd="sh-takaheai" ;;
+    # 2) cmd="sh-pacific-edge" ;;
+    3) cmd="sh-rbp" ;;
+    b) cmd="sh-backup" ;;
+    j) cmd="sh-projects" ;;
+    m) cmd="sh-monitor" ;;
+    w) cmd="sh-tmux" ;;
+    \() cmd="tm-dir" ;;
+    \)) cmd="tm-src" ;;
+    q) cmd="sh-scratchpad-file" ;;
+    Q) cmd="sh-scratchpad-org" ;;
+    u) cmd="sh-unix" ;;
+    # C) cmd="pen-tm sel localhost:clipboard.txt" ;;
+    C) cmd="sp $EMACSD/config" ;;
+    z) cmd="sh-fuzzy" ;;
+    E) cmd="rlr tmrp" ;;
+    P) cmd="rlr tmpg" ;;
+    p) cmd="sh-playground" ;;
+    U) cmd="switch-to-utility" ;;
+    ) cmd="tm-shortcuts" ;;
+    /) cmd="sh-search" ;;
+    \?) cmd="sh-man" ;;
+    N) cmd="nvt zsh" ;;
+    M) cmd="list-mru -m" ;;
+    ' ') cmd="agenda" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+eval "$cmd"
+
+# n) cmd="CWD=$NOTES zsh" ;;

@@ -1,0 +1,174 @@
+#!/bin/bash
+export TTY
+
+unset TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+Z  zsh
+z  zsh
+^  selected.el
+s  .ssh/config
+\`  .profile
+;  .shellrc
+K  .racketrc
+a  .shell_aliases
+q  ~/.pen/pen.yaml
+Q  ~/.pen/efm-langserver-config.yaml
+b  bash
+0  my-context-functions.el
+9  my-func-lists.el
+B  irbrc (ruby)
+e  emacs
+c  scope.sh
+w  my-spacemacs.el
+|  my-aliases.el
+A  auto-mode-load.el
+D  adehome/.aderc
+)  autofiles.txt
+I  setup.sh
+n  my-ux.el
+#  my-rc.el
+m  .strings.sh
+M  my-music.el
+N  my-engine.el
+i  irssi
+[  init.sh
+# Q  bigqueryrc
+v  vim
+V  vscode extensions
+x  xmonad
+X  xmobar
+h  my-hydra.el
+t  tmux
+r  ranger rc
+R  rifle
+S  syntax.vim
+'  .spacemacs
+%  chinese.vim
+C  .clojurerc
+=  channels.txt
+p  python full
+E  my-misc.el
+4  bash-library.sh
+@  .shell_environment
+P  packages.txt
+f  filters.sh
+l  $MYGIT/semiosis/pen-efm-config/config.yaml
+u  utils.el
+U  utils.2.el
+o  org-config.el
+O  shane-minor-mode.el
+T  pen-tm
++  rat/ratrc
+g  .gitconfig
+G  $HOME/notes/ws/google/searches.org
+F  config-files.txt
+H  $HOME/.zsh_history
+k  $HOME/.ghci + $HOME/.ghci.hs
+# Y  $HOME/.pentadactylrc
+y  $HOME/notes/ws/python/shanepy/shanepy.py
+Y  $HOME/notes/ws/python/shanepy/mynlp.py
+1  $VIMSNIPPETS/codelingo.snippets
+5  $MYGIT/spacemacs/.lsp-session-v1
+W  $MYGIT/config/weechat/weechat.conf
+*  $HOME/.clisprc
+:  $MYGIT/mullikine/shane-prolog/shane.pl
+L  $HOME/.plrc
+>  $HOME/.myrc.yaml
+\`  $HOME/.Xresources
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="vs $0" ;;
+    Z|z) cmd="vs $HOME/.zshrc" ;;
+    \^) cmd="orspog $MYGIT/config/emacs/config/my-selected.el" ;;
+    \`) cmd="vs $HOME/.profile" ;;
+    a) cmd="vs $HOME/.shell_aliases" ;;
+    q) cmd="vs ~/.pen/pen.yaml" ;;
+    Q) cmd="vs ~/.pen/efm-langserver-config.yaml" ;;
+    b) cmd="vs $HOME/.bashrc" ;;
+    0) cmd="orspe $EMACSD/config/my-context-functions.el" ;;
+    9) cmd="orspe $EMACSD/config/my-func-lists.el" ;;
+    B) cmd="orspv $HOME/.irbrc" ;;
+    F) cmd="vs $NOTES/config-files.txt" ;;
+    e) cmd="orspog $HOME/.emacs" ;;
+    E) cmd="orspog $MYGIT/config/emacs/config/my-misc.el" ;;
+    4) cmd="v $SCRIPTS/libraries/bash-library.sh" ;;
+    \@) cmd="vs $HOME/.shell_environment" ;;
+    c) cmd="vs $HOME/versioned/git/config/ranger/scope.sh" ;;
+    w) cmd="orspog $MYGIT/config/emacs/config/my-spacemacs.el" ;;
+    \|) cmd="orspog $MYGIT/config/emacs/config/my-aliases.el" ;;
+    A) cmd="orspog $EMACSD/config/auto-mode-load.el" ;;
+    D) cmd="orspog $NOTES/programs/adehome/.aderc" ;;
+    \)) cmd="vs $HOME/notes/programs/tm/autofiles.txt" ;;
+    I) cmd="vs $HOME/notes/setup.sh" ;;
+    n) cmd="orspog $MYGIT/config/emacs/config/my-ux.el" ;;
+    \#) cmd="orspog $MYGIT/config/emacs/config/my-rc.el" ;;
+    i) cmd="vs $HOME/.irssi/config" ;;
+    \[) cmd="vs $HOME/scripts/init.sh" ;;
+    t) cmd="vs $HOME$MYGIT/config/tmux/tmux.conf" ;;
+    S) cmd="vs $HOME/notes/syntax.vim" ;;
+    \') cmd="vs $HOME/.spacemacs" ;;
+    %) cmd="vs $HOME/notes/chinese.vim" ;;
+    C) cmd="vs $HOME/.clojurerc" ;;
+    =) cmd="vs $HOME/notes/im/channels.txt" ;;
+    v) cmd="v $HOME$VIMCONFIG/vimrc" ;;
+    V) cmd="vs $DUMP/programs/vscode/packages.txt" ;;
+    s) cmd="vs $HOME/.ssh/config" ;;
+    \;) cmd="vs $HOME/.shellrc" ;;
+    K) cmd="vs $HOME/.racketrc" ;;
+    N) cmd="vs $HOME/source/git/config/emacs/config/my-engine.el" ;;
+    m) cmd="vs $HOME/.strings.sh" ;;
+    M) cmd="orspv $EMACSD/config/my-music.el" ;;
+    x) cmd="orspv $HOME/.xmonad/xmonad.hs" ;;
+    X) cmd="orspv $HOME/.xmobarrc" ;;
+    u) cmd="orspv $EMACSD/config/my-utils.el" ;;
+    U) cmd="orspv $EMACSD/config/my-utils.2.el" ;;
+    r) cmd="vs $HOME/.config/ranger/rc.conf" ;; # much better in vs
+    R) cmd="rifle $HOME/versioned/git/config/ranger/rifle.conf" ;;
+    h) cmd="orspog $EMACSD/config/my-hydra.el" ;;
+    p) cmd="orspvs $HOME/notes/ws/python/rc/pythonrc.full.py" ;;
+    P) cmd="vs $EMACSD/packages.txt" ;;
+    # Q) cmd="vs $HOME/.bigqueryrc" ;;
+    o) cmd="orspog $EMACSD/config/org-config.el" ;;
+    O) cmd="orspog $MYGIT/config/emacs/config/shane-minor-mode.el" ;;
+    g) cmd="vs $HOME/.gitconfig" ;;
+    G) cmd="vs $HOME/notes/ws/google/searches.org" ;;
+    T) cmd="vs $HOME/scripts/tm" ;;
+    \+) cmd="vs $HOME/.config/rat/ratrc" ;;
+    f) cmd="v $NOTES/ws/filters/filters.sh" ;;
+    l) cmd="orspog $MYGIT/semiosis/pen-efm-config/config.yaml" ;;
+    H) cmd="vs $HOME/.zsh_history" ;;
+    k) cmd="vs -o $HOME/.ghci.hs $HOME/.ghci" ;;
+    # Y) cmd="vs $HOME/.pentadactylrc" ;;
+    y) cmd="orspv $HOME/notes/ws/python/shanepy/shanepy.py" ;;
+    Y) cmd="orspv $HOME/notes/ws/python/shanepy/mynlp.py" ;;
+    1) cmd="vs $VIMSNIPPETS/codelingo.snippets" ;;
+    5) cmd="vs $MYGIT/spacemacs/.lsp-session-v1" ;;
+    W) cmd="vs $MYGIT/config/weechat/weechat.conf" ;;
+    \*) cmd="orspog $HOME/.clisprc" ;;
+    \:) cmd="orspog $MYGIT/mullikine/shane-prolog/shane.pl" ;;
+    L) cmd="orspog $HOME/.plrc" ;;
+    \>) cmd="vs +G ~/.myrc.yaml" ;;
+    \~) cmd="vs ~/.Xresources" ;;
+
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

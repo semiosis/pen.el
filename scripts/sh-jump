@@ -1,0 +1,34 @@
+#!/bin/bash
+export TTY
+
+# for i in sh-*; do sed -i 's/read -n1 d/&; test "$d" = "" \&\& read -n1 d/' "$i" ; done
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+d  dir
+P  CWD=$(cmd-nice-posix "$(pwd -P)") zsh
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+IFS="" read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    d) cmd="sh-dir" ;;
+    P) cmd="CWD=$(cmd-nice-posix "$(pwd -P)") zsh" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

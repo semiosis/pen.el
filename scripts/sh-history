@@ -1,0 +1,80 @@
+#!/bin/bash
+unset TTY
+export TTY
+
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+Z    $HOME/.zsh_history
+B    $HOME/.bash_history
+h    zrepl -E "hsqf "
+G    hsq gh
+I    hsqf openai-complete
+O    hsqf -noz hcqf
+o    hsqf o
+c    hsqf gc
+b    hsqf cr
+C    hsqf hsqc
+H    hsqf -noz hsqf
+K    hsqf killall
+D    hsqf docker
+y    hsqf yt
+vV   hsqf yt -v
+a    hsqf yt -a
+g    hsqf git
+A    hsqf new-article
+M    hsqf new-prompt
+N    hsqf new-project
+X    hsqf xrandr
+F    hsqf feh
+L    hsqf lein
+r    hsqf readsubs
+R    hsqf rt
+P    hsqf play-song
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    Z) cmd="v ~/.zsh_history" ;;
+    B) cmd="v ~/.bash_history" ;;
+    G) cmd="hsq gh" ;;
+    I) cmd="hsqf openai-complete" ;;
+    h) cmd="zrepl -E \"hsqf \"" ;;
+    O) cmd="hsqf -noz hcqf" ;;
+    o) cmd="hsqf o" ;;
+    c) cmd="hsqf gc" ;;
+    b) cmd="hsqf cr" ;;
+    C) cmd="hsqf hsqc" ;;
+    H) cmd="hsqf -noz hsqf" ;;
+    K) cmd="hsqf killall" ;;
+    D) cmd="hsqf docker" ;;
+    y) cmd="hsqf yt" ;;
+    v|V) cmd="hsqf yt -v" ;;
+    a) cmd="hsqf yt -a" ;;
+    g) cmd="hsqf git" ;;
+    A) cmd="hsqf new-article" ;;
+    M) cmd="hsqf new-prompt" ;;
+    N) cmd="hsqf new-project" ;;
+    X) cmd="hsqf xrandr" ;;
+    F) cmd="hsqf feh" ;;
+    L) cmd="hsqf lein" ;;
+    r) cmd="hsqf readsubs" ;;
+    R) cmd="hsqf rt" ;;
+    P) cmd="hsqf play-song" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

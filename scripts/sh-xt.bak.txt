@@ -1,0 +1,18 @@
+w  win xterm-tmux localhost_ws_codelingo_issues_rewrite:
+W  win xterm-tmux -b localhost_ws_codelingo_issues_rewrite:
+k  win xterm-tmux localhost_ws_codelingo_issues_kubernetes:
+K  win xterm-tmux -b localhost_ws_codelingo_issues_kubernetes:
+c  win xterm-tmux localhost_ws_codelingo_issues_create-tenets:
+C  win xterm-tmux -b localhost_ws_codelingo_issues_create-tenets:
+j  win xterm-tmux localhost_ws_codelingo_issues_jx:
+J  win xterm-tmux -b localhost_ws_codelingo_issues_jx:
+
+    w) cmd="win xterm-tmux localhost_ws_codelingo_issues_rewrite: & disown" ;;
+    W) cmd="win xterm-tmux -b localhost_ws_codelingo_issues_rewrite: & disown" ;;
+    k) cmd="win xterm-tmux localhost_ws_codelingo_issues_kubernetes: & disown" ;;
+    K) cmd="win xterm-tmux -b localhost_ws_codelingo_issues_kubernetes: & disown" ;;
+    c) cmd="win xterm-tmux localhost_ws_codelingo_issues_create-tenets: & disown" ;;
+    C) cmd="win xterm-tmux -b localhost_ws_codelingo_issues_create-tenets: & disown" ;;
+    j) cmd="win xterm-tmux localhost_ws_codelingo_issues_*jx: & disown" ;;
+    J) cmd="win xterm-tmux -b localhost_ws_codelingo_issues_*jx: & disown" ;;
+

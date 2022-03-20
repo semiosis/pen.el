@@ -1,0 +1,95 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<'HEREDOC'
+.  EDIT
+S  kubectl get services | pen-xc -p
+C  kubectl config get-contexts | pen-xc -p
+T  ci -meta "$(cl-platform)" cl-list-all-containers | v                                               # list containers
+p  cl-platform paas
+m  cl-platform modica
+a  kubectl get pods --all-namespaces | v                                                              # Get age of pods
+j  kubectl get pods --all-namespaces -o=json | jiqf
+s  cl-platform staging
+e  cl-start-pf-monitoring paas                                                                        # for logs
+t  cl-start-pf-monitoring staging                                                                     # for logs
+O  kubectl proxy                                                                                      # is this for localhost platform?
+L  cl-get-logs-for-container | v  # combines json logs. sorts by ts
+J  cl-get-logs-for-container-json 
+g  kubectl logs -f platform-0 bot-github | tless -S +F                                                #
+'  kubectl logs -f platform-0 platform | tless -S +F                                                  #
+h  kubectl logs platform-0 platform | cl-platform-log-hr 1 hour ago | v +G
+7  platform logs (the platform of current context. could be dev, paas, staging, modica, etc.)
+5  setup-kubectl-contexts
+P  nvt kubectl exec -it platform-0 -- /bin/bash
+G  nvt ssh-gogs bash
+DZ nvt kubectl exec -it "$(cl-sel-dgraph-server)" -- /bin/bash
+F  nvt kubectl exec -it "$(cl-sel-flowserver)" -- /bin/bash
+M  nvt cl-ssh-pod monitoring
+H  nvt cl-ssh-container
+l  sh-kubectl-links
+9  cl-platform staging && forward-gogs-ssh
+R  shx cl-reset-staging; pak
+X  get-commands-run-from-logstash | v
+c  sh-container-errors
+8  get-recent-platform-errors | jq -c . | cl-filter-json-errors | v
+f  tmrs flow-errors-since 1 day ago | v +G
+E  tmrs flow-errors-since 10 min ago | v +G
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    S) cmd="kubectl get services | pen-xc -p" ;;
+    C) cmd="kubectl config get-contexts | pen-xc -p" ;;
+    T) cmd="ci -meta "$(cl-platform)" cl-list-all-containers | v" ;;
+    p) cmd="cl-platform paas" ;;
+    m) cmd="cl-platform modica" ;;
+    a) cmd="kubectl get pods --all-namespaces | v" ;;
+    j) cmd="kubectl get pods --all-namespaces -o=json | jiqf" ;;
+    s) cmd="cl-platform staging" ;;
+    e) cmd="cl-start-pf-monitoring paas" ;;
+    t) cmd="cl-start-pf-monitoring staging" ;;
+    O) cmd="kubectl proxy" ;;
+    L) cmd="cl-get-logs-for-container | v" ;;
+    J) cmd="cl-get-logs-for-container-json | v" ;;
+    g) cmd="kubectl logs -f platform-0 bot-github | tless -S +F" ;;
+    \') cmd="kubectl logs -f platform-0 platform | tless -S +F" ;;
+    h) cmd="kubectl logs platform-0 platform | cl-platform-log-hr 1 hour ago | v +G" ;;
+    7) cmd="kubectl logs platform-0 platform | pager" ;;
+                       # container
+                                  # pod
+    5) cmd="setup-kubectl-contexts" ;;
+    P) cmd="nvt kubectl exec -it platform-0 -- /bin/bash" ;;
+    G) cmd="nvt ssh-gogs bash" ;;
+    D|Z) cmd="nvt kubectl exec -it \"\$(cl-sel-dgraph-server)\" -- /bin/bash" ;;
+    F) cmd="nvt kubectl exec -it \"\$(cl-sel-flowserver)\" -- /bin/bash" ;;
+    M) cmd="nvt cl-ssh-pod monitoring" ;;
+    # H) cmd="nvt cl-ssh-pod" ;;
+    H) cmd="nvt cl-ssh-container" ;;
+    l) cmd="sh-kubectl-links" ;;
+    9) cmd="cl-platform staging && forward-gogs-ssh";;
+    R) cmd="shx cl-reset-staging; pak";;
+    X) cmd="get-commands-run-from-logstash | v";;
+    c) cmd="sh-container-errors";;
+    8) cmd="get-recent-platform-errors | jq -c . | cl-filter-json-errors | v";;
+    f) cmd="tmrs eval $(cmd-nice-posix "flow-errors-since 1 day ago | v +G")";;
+    E) cmd="tmrs eval $(cmd-nice-posix "flow-errors-since 10 min ago | v +G")";;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

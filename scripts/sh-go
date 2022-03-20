@@ -1,0 +1,140 @@
+#!/bin/bash
+
+unset TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+# T  pen-tm sel localhost_current:trello-my-cards.0
+# S  pen-tm sel localhost_im:slack.0
+# S  pen-tm sel localhost_im:slack
+read -r -d '' options <<HEREDOC
+.  EDIT
+d  dir
+s  scripts
+f  pen-tm find-window-from-session -no-activate -no-split
+I  pen-tm sel localhost_im:finch
+g  pen-tm sel ':glossary.txt*' || nw v $NOTES/glossary.txt
+B  pen-tm sel ':org-brain'
+D  pen-tm sel ':dreams.org*'
+7  pen-tm sel ':biochemistry.txt'
+b  pen-tm sel localhost_ws:blog || nw orspv $HOME/blog/posts
+j  pen-tm sel localhost_ws:jobs
+G  pen-tm sel ':google.*'
+A  pen-tm sel localhost_ws:gitlab
+1  pen-tm sel localhost_ws:codelingo
+U  pen-tm sel localhost_ws_music:music-videos.el.0 || nw orspv $NOTES/ws/music/music-videos.el
+E  pen-tm sel localhost_ws_music:epic.el.0 || nw orspv $NOTES/ws/music/epic.el
+V  pen-tm sel localhost_ws_videos:favs.el.0 || nw orspv $NOTES/ws/videos/favs.el
+2  pen-tm sel localhost_ws:fmg-fortesque-metals-group
+@  pen-tm sel localhost_ws_fmg-fortesque-metals-group_blog:posts
+i  pen-tm sel localhost_im:irssi
+<  pen-tm sel ':integrate.org*'
+S  pen-tm sel localhost:status
+m  ranger $NOTES/ws/music
+e  pen-tm sel ':explanations.txt*'
+v  pen-tm sel ':investigate.org*'
+O  pen-tm sel ':models.org*'
+M  pen-tm sel ':algorithms.org*'
+q  pen-tm sel ':questions.org*'
+p  pen-tm sel ':perspective.org*'
+P  pen-tm sel ':plan.org*'
+l  pen-tm sel ':links.org*'
+L  pen-tm sel ':learn.org*'
+t  pen-tm sel ':todo.org*'
+T  pen-tm sel ':thoughts.org*'
+r  pen-tm sel ':remember.org*'
+o  pen-tm sel ':reflection.org*'
+R  pen-tm sel ':read.org*'
+F  pen-tm sel ':follow.org*'
+k  pen-tm sel ':keep-in-mind.org*'
+K  pen-tm sel ':knowledge.txt*'
+a  pen-tm sel ':racket.txt*'
+h  pen-tm sel ':haskell.txt*'
+H  pen-tm sel ':phrases.txt*'
+n  pen-tm sel ':need.org*'
+W  pen-tm sel ':watch.org*'
+Y  pen-tm sel 'localhost_im:ycombinator.0'
+N  pen-tm sel localhost:notifications.txt».0
+C  pen-tm sel localhost:clipboard.txt
+w  pen-tm sel localhost_current_repls:wolframalpha.0
+x  pen-tm sel localhost_current:mitmproxy-8555.0
+;  sh-repls
+c  sh-scratchpad
+Q  sh-questions
+HEREDOC
+
+# t  pen-tm sel localhost_ws_functional-programming-fp:glossary.txt.0
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+    # T) cmd="pen-tm sel localhost_current:trello-my-cards.0" ;;
+case "$d" in
+    .) cmd="v $0" ;;
+    d) cmd="sh-dir" ;;
+    s) cmd="CWD=$HOME/scripts zsh" ;;
+    f) cmd="pen-tm find-window-from-session -no-activate -no-split" ;;
+    I) cmd="pen-tm sel localhost_im:finch" ;;
+    g) cmd="pen-tm sel ':glossary.txt*' || nw v $NOTES/glossary.txt" ;;
+    D) cmd="pen-tm sel ':dreams.org*'" ;;
+    B) cmd="pen-tm sel ':org-brain'" ;;
+    7) cmd="pen-tm sel ':biochemistry.txt'" ;;
+    b) cmd="pen-tm sel localhost_ws:blog || nw orspv $HOME/blog/posts" ;;
+    j) cmd="pen-tm sel localhost_ws:jobs" ;;
+    G) cmd="pen-tm sel ':google.*'" ;;
+    A) cmd="pen-tm sel localhost_ws:gitlab" ;;
+    1) cmd="pen-tm sel localhost_ws:codelingo" ;;
+    2) cmd="pen-tm sel localhost_ws:fmg-fortesque-metals-group" ;;
+    U) cmd="pen-tm sel localhost_ws_music:music-videos.el.0 || nw orspv $NOTES/ws/music/music-videos.el" ;;
+    E) cmd="pen-tm sel localhost_ws_music:epic.el.0 || nw orspv $NOTES/ws/music/epic.el" ;;
+    V) cmd="pen-tm sel localhost_ws_videos:favs.el.0 || nw orspv $NOTES/ws/videos/favs.el" ;;
+    @) cmd="pen-tm sel localhost_ws_fmg-fortesque-metals-group_blog:posts" ;;
+    i) cmd="pen-tm sel localhost_im:irssi" ;;
+    \<) cmd="pen-tm sel ':integrate.org*'" ;;
+    # S) cmd="pen-tm sel localhost_im:slack" ;;
+    S) cmd="pen-tm sel localhost:status" ;;
+    m) cmd="ranger $NOTES/ws/music" ;;
+    e) cmd="pen-tm sel ':explanations.txt*'" ;;
+    v) cmd="pen-tm sel ':investigate.org*'" ;;
+    O) cmd="pen-tm sel ':models.org*'" ;;
+    M) cmd="pen-tm sel ':algorithms.org*'" ;;
+    q) cmd="pen-tm sel ':questions.org*'" ;;
+    p) cmd="pen-tm sel ':perspective.org*'" ;;
+    P) cmd="pen-tm sel ':plan.org*'" ;;
+    l) cmd="pen-tm sel ':links.org*'" ;;
+    L) cmd="pen-tm sel ':learn.org*'" ;;
+    t) cmd="pen-tm sel ':todo.org*'" ;;
+    T) cmd="pen-tm sel ':thoughts.org*'" ;;
+    r) cmd="pen-tm sel ':remember.org*'" ;;
+    o) cmd="pen-tm sel ':reflection.org*'" ;;
+    R) cmd="pen-tm sel ':read.org*'" ;;
+    F) cmd="pen-tm sel ':follow.org*'" ;;
+    k) cmd="pen-tm sel ':keep-in-mind.org*'" ;;
+    K) cmd="pen-tm sel ':knowledge.txt*'" ;;
+    a) cmd="pen-tm sel ':racket.txt*'" ;;
+    h) cmd="pen-tm sel ':haskell.txt*'" ;;
+    H) cmd="pen-tm sel ':phrases.txt*'" ;;
+    n) cmd="pen-tm sel ':need.org*'" ;;
+    W) cmd="pen-tm sel ':watch.org*'" ;;
+    Y) cmd="pen-tm sel localhost_im:ycombinator.0" ;;
+    N) cmd="pen-tm sel localhost:notifications.txt».0" ;;
+    C) cmd="pen-tm sel localhost:clipboard.txt" ;;
+    w) cmd="pen-tm sel localhost_current_repls:wolframalpha.0" ;;
+    x) cmd="pen-tm sel localhost_current:mitmproxy-8555.0" ;;
+    \;) cmd="sh-repls" ;;
+    c) cmd="sh-scratchpad" ;;
+    Q) cmd="sh-questions" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

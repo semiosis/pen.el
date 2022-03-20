@@ -1,0 +1,35 @@
+#!/bin/bash
+export TTY
+
+clear
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+g  select-git-repo
+e  select-emacs-package
+w  select-ws-dir
+o  select-go-package
+r  select-recent-dir
+h  select-dir-from-here
+d  select-dir-from-directories-file
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+
+case "$d" in
+    .) cmd="v $0" ;;
+    g) cmd="select-git-repo" ;;
+    e) cmd="select-emacs-package" ;;
+    w) cmd="select-ws-dir" ;;
+    o) cmd="select-go-package" ;;
+    r) cmd="select-recent-dir" ;;
+    h) cmd="select-dir-from-here" ;;
+    d) cmd="select-dir-from-directories-file" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+eval "$cmd"

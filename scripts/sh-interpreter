@@ -1,0 +1,163 @@
+#!/bin/bash
+
+export TTY
+
+# this appears to not affect nvim
+# But it breaks xonsh
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+# e  es-shell (extensible shell) (extsh)
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+\`  rlr ma calc
+b  bash
+I  amm (ammorite)
+s  nsh
+4  rash
+A  lua
+g  erl (erlang)
+o  go-playground (golang)
+a  awk
+#  csharp (agi mono-csharp-shell)
+N  nu
+w  pwsh (powershell)
+W  gst (smalltalk)
+v  nvt -vt100
+x  nix repl
+X  busybox
+S  Chez Scheme
+M  MIT Scheme
+7  relude
+j  xlr (examplary)
+# J  jshell
+J  fz-node-package
+^  julia
+6  classy-prelude
+# K  sp ghci (haskell)
+k  sh-ghci
+T  turtle (haskell shellscript)
+%  sh-install
+i  hsqf ii
+Z  zsh
+3  php
+r  racket
+Y  racket-repl (emacs)
+R  rust-playground # R  rusti (rust)
+E  emacs-lisp (ielm)
+&  elisp-repl
+e  eshell (emacs-shell)
+m  mathematica
+p  python (xpti)
+y  ipython
+2  tcl
+f  fish
+*  mathics
+F  lfe (lisp flavored erlang)
+u  irb (ruby)
+l  perl (pk "rlwrap perl -dwe 1 # This doesn't work well" "sp -ic perl-repl" "rlwrap re.pl # This is not a great repl. # sudo cpanm Devel::REPL")
+# P  pry (ruby -- much improved)
+# P  purs-repl
+P  fz-xpti-package
+L  swipl-playground
+:  swipl-playground $MYGIT/mullikine/shane-prolog/shane.pl
+U  rbs (ruby one-off commands)
+H  hy
+h  nvt racket -iI hackett
+c  pick clisp slime sly (common lisp) quicklisp
+C  clojure (clj-rebel) # lein-rebel
+nj node
+O  xonsh
+B  inf-ruby
+t  ts-node
+z  fz-repl
+/? cheat
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    \`) cmd="rlr ma calc" ;;
+    b) cmd="CWD=$NOTES bash" ;;
+    I) cmd="amm" ;;
+    # s) cmd="nvt scala" ;;
+    s) cmd="nsh" ;;
+    4) cmd="CWD=$NOTES rash" ;;
+    A) cmd="CWD=$NOTES nvt lua" ;;
+    a) cmd="CWD=$NOTES awkward" ;;
+    \#) cmd="CWD=$NOTES csharp" ;;
+    N) cmd="CWD=$NOTES nu" ;;
+    w) cmd="pwsh" ;;
+    W) cmd="gst" ;;
+    x) cmd="nvt nix repl" ;;
+    X) cmd="CWD=$NOTES bb" ;;
+    # S) cmd="nvt /home/shane/local/bin/scheme" ;;
+    S) cmd="$(cmd pk "nvt /home/shane/local/bin/scheme" "escheme")" ;;
+    M) cmd="nvt /usr/bin/scheme" ;;
+    Z) cmd="CWD=$NOTES zsh" ;;
+    3) cmd="CWD=$NOTES psysh" ;;
+    r) cmd="nvt racket -iI racket" ;;
+    Y) cmd="racket-repl" ;;
+    # R) cmd="rusti" ;;
+    g) cmd="nvt erl" ;;
+    o) cmd="go-playground" ;;
+    R) cmd="sp -ci rust-playground" ;;
+    # p) cmd="python" ;;
+    2) cmd="nvt tclsh" ;;
+    y) cmd="ipython" ;;
+    p) cmd="xpti" ;;
+    # Indeed it matters where you run from
+    7) cmd="cd $NOTES; nvt relude" ;;
+    j) cmd="cd $NOTES; xlr" ;;
+    # J) cmd="jshell" ;;
+    6) cmd="cd $NOTES; nvt classy-prelude" ;;
+    k) cmd="sh-ghci" ;;
+    T) cmd="xs turtle" ;;
+    f) cmd="fish" ;;
+    \*) cmd="mathics" ;;
+    F) cmd="nvt lfe" ;;
+    E) cmd="sp -ic ielm" ;; 
+    \&) cmd="elisp-repl" ;; 
+    e) cmd="es" ;; 
+    m) cmd="mmr" ;; 
+    v) cmd="nvt -vt100" ;;
+    u) cmd="irb" ;;
+    # P) cmd="pry" ;;
+    # P) cmd="purs-repl" ;;
+    P) cmd="fz-xpti-package" ;;
+    L) cmd="swipl-playground" ;;
+    \:) cmd="swipl-playground $MYGIT/mullikine/shane-prolog/shane.pl" ;;
+    U) cmd="rbs" ;;
+    H) cmd="hy" ;;
+    h) cmd="nvt racket -iI hackett" ;;
+    c) cmd="pk clisp slime sly quicklisp" ;;
+    \%) cmd="sh-install" ;;
+    i) cmd="hsqf ii" ;;
+    l) cmd="$(pen-cmd pk "nvt rlwrap perl -dwe 1" "sp -ic perl-repl" "nvt rlwrap re.pl")" ;;
+    # j) cmd="clojure1.6" ;;
+    # C) cmd="clojure" ;; # Can I use liquid here?
+    # C) cmd="clj" ;;
+    C) cmd="clj-rebel" ;; # lein-rebel
+    n|j) cmd="node" ;;
+    J) cmd="fz-node-package" ;;
+    \^) cmd="julia" ;;
+    O) cmd="xonsh" ;;
+    B) cmd="e -ci inf-ruby" ;;
+    t) cmd="ts-node" ;;
+    z) cmd="fz-repl" ;;
+    /|\?) cmd="cheat" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# This breaks nvim but pen-mnm does not
+# exec <`tm-tty` `# see etty`
+eval "$cmd"

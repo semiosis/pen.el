@@ -32,7 +32,7 @@ free_cs() {
 
 isbehind()
 {
-    vc g is-behind
+    pen-vc g is-behind
 }
 
 debug_mode_enabled() {
@@ -108,15 +108,15 @@ hasdashes() {
 }
 
 before_dashes() {
-    eval "set -- $(cmd "$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
-    printf -- "%s" "$(cmd "$@")"
+    eval "set -- $(pen-cmd "$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
+    printf -- "%s" "$(pen-cmd "$@")"
 
     return 0
 }
 
 after_dashes() {
-    eval "set -- $(cmd "$@" | sed -e "s/.* -- //" -e "s/.* --$//" -e "s/^-- //")"
-    printf -- "%s" "$(cmd "$@")"
+    eval "set -- $(pen-cmd "$@" | sed -e "s/.* -- //" -e "s/.* --$//" -e "s/^-- //")"
+    printf -- "%s" "$(pen-cmd "$@")"
 
     return 0
 }

@@ -1,0 +1,44 @@
+#!/bin/bash
+export TTY
+
+: "${fp:="$1"}"
+test -f "$fp" || exit 1
+
+# for i in sh-*; do sed -i 's/read -n1 d/&; test "$d" = "" \&\& read -n1 d/' "$i" ; done
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.   EDIT
+n   np "\$fp" (numpy)
+p   pd "\$fp" (pandas)
+fv  fpvd "\$fp"
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+
+echo
+echo "fp: $fp"
+echo
+
+echo "$options" | pen-mnm | pen-hls dgrey
+
+IFS="" read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    p) cmd="pd $fp" ;;
+    n) cmd="np $fp" ;;
+    f|v) cmd="fpvd $fp" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

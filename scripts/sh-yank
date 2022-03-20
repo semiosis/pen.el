@@ -1,0 +1,133 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+fzf-exe-deep() {
+    sel="$(find . -type f -executable | pen-mnm | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        printf -- "%s" "$sel" | pen-umn | pen-ux rp | pen-s chomp | {
+            IFS= read -rd '' input < <(cat /dev/stdin)
+
+            printf -- "%s" "$input" | pen-xc -n -i
+
+            ls -ldt --color=always "$input"
+        }
+    fi
+}
+
+fzf-files-copy-deep() {
+    sel="$(pen-F f | pen-mnm | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        printf -- "%s" "$sel" | pen-umn | pen-ux rp | pen-mnm | pen-xc -n -i
+    fi
+}
+
+fzf-dirs-copy-deep() {
+    # sel="$(pen-F d | pen-u bn | pen-fzf | pen-mnm)"
+    sel="$(pen-F d | pen-mnm | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        printf -- "%s" "$sel" | pen-umn | pen-ux rp | pen-mnm | pen-xc -n -i
+    fi
+}
+
+fzf-related-paths() {
+    # sel="$(pen-F find-files-here | pen-u bn | pen-fzf | pen-mnm)"
+    sel="$(pen-F find-files-here | xargs cat | scrape-paths-fast.sh | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        # printf -- "%s" "$(pwd)/$sel" | pen-xc -i
+        printf -- "%s" "$sel" | pen-umn | pen-ux rp | pen-mnm | pen-xc -n -i
+    fi
+}
+
+fzf-files-copy() {
+    # sel="$(pen-F find-files-here | pen-u bn | pen-fzf | pen-mnm)"
+    sel="$(pen-F find-files-here | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        # printf -- "%s" "$(pwd)/$sel" | pen-xc -i
+        printf -- "%s" "$sel" | pen-umn | pen-ux rp | pen-mnm | pen-xc -n -i
+    fi
+}
+
+fzf-dirs-copy() {
+    sel="$(pen-F find-dirs-here | pen-fzf)"
+
+    if [ -n "$sel" ]; then
+        printf -- "%s" "$sel" | pen-umn | pen-ux rp | pen-mnm | pen-xc -n -i
+    fi
+}
+
+fzf-programs() {
+    list-executables | pen-fzf
+}
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+cd current directory
+DB current directory basename
+t  tmux capture
+g  git url
+N  pen-vc bn (copy branch name)
+I  git issues url
+P  git PRs url
+G  git url (includes branch and path)
+#  pen-vc get-hash | pen-xc -n -i
+f  fzf-files-copy
+F  fzf-files-copy-deep
+xX fzf-exe-deep
+r  recent-files-here -da 3 | pen-fzf
+CR fzf-related-paths
+s  fzf-dirs-copy
+S  fzf-dirs-copy-deep
+M  copy metasyntactic variables
+s  git-show-my-files | pen-fzf
+p  fzf-programs
+m  select-kibana-query
+'  tmux capture and filter 
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    c|d) cmd="pwd | pen-xc -i -n" ;;
+    D|B) cmd="pwd | pen-u bn | pen-xc -i -n" ;;
+    t) cmd="pen-tm -te -d capture -clean -history" ;;
+    g) { cmd="pen-vc url | pen-xc -n -i -"; }; ;;
+    N) { cmd="pen-vc bn | pen-xc -n -i -"; }; ;;
+    I) { cmd="pen-vc url | add-suffix /issues | pen-xc -n -i -"; }; ;;
+    P) { cmd="pen-vc url | add-suffix /pulls | pen-xc -n -i -"; }; ;;
+    G) { cmd="git-file-to-url . | pen-xc -n -i -"; }; ;;
+    f) cmd="fzf-files-copy" ;;
+    r) cmd="recent-files-here -da 3 | pen-fzf" ;;
+    C|R) cmd="fzf-related-paths" ;;
+    F) cmd="fzf-files-copy-deep" ;;
+    x|X) cmd="fzf-exe-deep" ;;
+    s) cmd="fzf-dirs-copy" ;;
+    \#) cmd="pen-vc get-hash | pen-xc -n -i" ;;
+    M) cmd="cat $HOME/notes2018/ws/programming/metasyntactic-variable-list.txt | xc -n -i" ;;
+    S) cmd="fzf-dirs-copy-deep" ;;
+    m) cmd="git-show-my-files | pen-fzf" ;;
+    k) cmd="select-kibana-query" ;;
+    p) cmd="fzf-programs" ;;
+    \') cmd="pen-tm cap-pane | pen-tm -f -S -tout sph -noerror \"f filter-with-fzf\"" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

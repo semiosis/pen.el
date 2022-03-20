@@ -1,0 +1,99 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+A  alsamixer
+%  nw cpufetch
+V  cava (visualizer)
+u  ncdu .
+c  sh-crytpo
+p  pavucontrol
+G  gping google.com
+P  pulsemixer
+m  emount
+h  htop
+H  ehtop
+w  what (bandwidth)
+W  powertop
+t  helmtop
+L  multitail $NOTES/logs/*
+# a  sh-aws
+a  sh-services
+d  sh-docker
+i  iotop
+# w  termshark
+k  termshark
+s  s-tui
+n  sh-net
+F  fix-lag.sh
+f  iftop
+S  speedtest-cli
+IF  iftop
+E  show-extensions-below
+D  watch df -h
+M  ifs "pen-yn 'tail dmesg?'" 'dmesg -w' 'dmesg'
+b  watch sh -c "acpi -b; op cpuspeed"
+z  zenith
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    A) cmd="alsamixer" ;;
+    \%) cmd="nw cpufetch" ;;
+    V) cmd="cava" ;;
+    u) cmd="ncdu ." ;;
+    c) cmd="sh-crypto" ;;
+    p) cmd="pavucontrol" ;;
+    G) cmd="gping google.com" ;;
+    P) cmd="pulsemixer" ;;
+    m) cmd="emount" ;;
+    h) cmd="nvt -E \"sudo htop\"" ;;
+    H) cmd="ehtop" ;;
+    w) cmd="msudo what" ;;
+    # W) cmd="nvt powertop" ;;
+    W) cmd="x -sh powertop -e reports -c i -c i -i" ;;
+    t) cmd="helmtop" ;;
+    L) cmd="multitail $NOTES/logs/*" ;;
+    # a) cmd="sh-aws" ;;
+    a) cmd="sh-services" ;;
+    d) cmd="sh-docker" ;;
+    s) cmd="s-tui" ;;
+    n) cmd="sh-net" ;;
+    # w) cmd="sudop termshark" ;;
+    # k) cmd="msudo termshark -i $(i wifi)" ;;
+    k) cmd="nvt -E \"msudo termshark -i $(i wifi)\"" ;;
+    # i) cmd="sudo iotop" ;;
+    # docker iotop
+    i) cmd="iotop" ;;
+    F) cmd="fix-lag.sh" ;;
+    f) cmd="iftop" ;;
+    S) cmd="speedtest-cli" ;;
+    I|F) cmd="sudo iftop -i $(i wifi)" ;;
+    # I|F) cmd="sudo iftop -i wlan0" ;;
+    # E) cmd="show-extensions-below | xsv table" ;;
+    E) cmd="show-extensions-below" ;;
+    D) cmd="watch df -h" ;;
+    M) cmd="ifs \"pen-yn 'tail dmesg?'\" 'dmesg -w' 'dmesg'" ;;
+    b) cmd="watch sh -c \"acpi -b; op cpuspeed\"" ;;
+    z) cmd="zenith" ;;
+
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

@@ -1,0 +1,60 @@
+#!/bin/bash
+export TTY
+
+# Don't put 'clear' here. When run from zsh, you don't really want
+# to clear. Instead, put it before calling from elsewhere, i.e in sh-tmux
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+
+printexist(){
+    fn="$1"
+
+    if [ -f "$fn" ]; then
+        printf -- "%s" "$fn (exists)"
+    else
+        printf -- "%s" "$fn"
+    fi
+}
+
+
+tog() {
+    fn="$1"
+    touch "./$fn"
+    og "$fn"
+}
+
+
+# TODO It would be cool if this divided the list into files which
+# already exist. No need, just say if it exists
+
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+r  $(printexist remember.org)
+t  $(printexist todo.org)
+c  $(printexist commands.org)
+l  $(printexist links.org)
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    r) cmd="tog ./remember.org" ;;
+    t) cmd="tog ./todo.org" ;;
+    c) cmd="tog commands.org" ;;
+    l) cmd="tog links.org" ;;
+esac
+# echo
+# echo "$cmd"
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

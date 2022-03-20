@@ -1,0 +1,46 @@
+#!/bin/bash
+export TTY
+
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+clip="$(pen-xc -)"
+lit "clipboard: $(cmd-nice-posix "$clip")"
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+o  open
+c  copy
+m  my-mirror-site
+g  google
+s  summarize-page
+O  v $(which open)
+b  basenameify
+a  new-article
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    o) cmd="pen-tm -d rs -args open $(cmd-nice-posix "$clip")" ;;
+    g) cmd="pen-tm -d rs -args egr $(cmd-nice-posix "$clip")" ;;
+    s) cmd="sps summarize-page $(cmd-nice-posix "$clip")" ;;
+    m) cmd="sps my-mirror-site $(cmd-nice-posix "$clip")" ;;
+    c) cmd="xcit -i $(cmd-nice-posix "$clip")" ;;
+    O) cmd="tspv v $(which open)" ;;
+    b) cmd="basename $(cmd-nice-posix "$clip") | pen-xc -n -i" ;;
+    a) cmd="new-article $(cmd-nice-posix "$clip")" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

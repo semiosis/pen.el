@@ -1,0 +1,39 @@
+#!/bin/bash
+export TTY
+
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+read -r -d '' options <<HEREDOC
+d current directory
+t tmux capture
+g git url
+f tmux capture and filter 
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$@" | ns | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+fp="$1"
+dir="$(p "$fp" | pen-u dn)"
+cd "$dir"
+export CWD="$1"
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    d) cmd="pwd | pen-xc -i -n" ;;
+    t) cmd="pen-tm -te -d capture -clean -history" ;;
+    g) { cmd="git config --get remote.origin.url | pen-xc -n -i -"; }; ;;
+    f) cmd="pen-tm cap-pane | pen-tm -f -S -tout sph -noerror \"f filter-with-fzf\"" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

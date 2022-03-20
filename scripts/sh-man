@@ -1,0 +1,63 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+page="$1"
+
+if test -z "$page"; then
+    read -p page:  -r page
+fi
+
+test -z "$page" && exit 1
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+h  pen-tm -d sph "m u $page"
+v  pen-tm -d spv "m u $page"
+nw pen-tm -d nw "m u $page"
+p  pen-tm -d rs "m u $page"
+e  pen-tm -d rs "eman $page"
+W  pen-tm -d rs "woman $page"
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) {
+        cmd="v $0";
+        eval "$cmd"
+        exit 0
+    } ;;
+    h|V) cmd="pen-tm -d sph \"m u $page\"" ;;
+    v|H) cmd="pen-tm -d spv \"m u $page\"" ;;
+    n|w) cmd="pen-tm -d nw \"m u $page\"" ;;
+    p) {
+        eval "pen-tm -d rs \"m u $page\""
+        exit 0
+    } ;;
+    e) {
+        eval "pen-tm -d rs \"eman $page\""
+        exit 0
+    } ;;
+    W) {
+        eval "pen-tm -d rs \"woman $page\""
+        exit 0
+    } ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+
+set -m
+bash -c "sleep 0.1; $cmd" & disown

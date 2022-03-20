@@ -1,0 +1,122 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+ext=txt
+editor=v
+
+case "$sn" in
+    sh-scratchpad-org) {
+        ext=org
+        editor=og
+    }
+    ;;
+
+    *)
+esac
+
+read -r -d '' options <<HEREDOC
+This is like a glossary!
+
+.  EDIT
+,  CWD=$NOTES/ws/glossaries zsh
+l  $editor -nf lisp.$ext
+L  $editor -nf linguistics.$ext
+F  $editor -nf formal-languages.$ext
+R  $editor -nf reinforcement-learning.$ext
+G  $editor -nf abstract-algebra.$ext
+A  $editor -nf arxiv.$ext
+s  $editor -nf spacy.$ext
+g  $editor -nf golang.$ext
+j  $editor -nf javascript.$ext
+T  $editor -nf tensorflow.$ext
+P  $editor -nf probability.$ext
+B  $editor -nf bigquery.$ext
+Q  $editor -nf sql.$ext
+ra $editor -nf racket.$ext
+pl $editor -nf perl.$ext
+u  $editor -nf purescript.$ext
+hk $editor -nf haskell.$ext
+K  $editor -nf keras.$ext
+D  $editor -nf deep-learning.$ext
+M  $editor -nf machine-learning.$ext
+N  $editor -nf nlp-natural-language-processing.$ext
+y  $editor -nf python.$ext
+Y  $editor -nf numpy.$ext
+e  $editor -nf emacs-lisp.$ext
+HEREDOC
+
+# t  pen-tm sel localhost_ws_functional-programming-fp:glossary.$ext.0
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .)   {
+        v $0
+        exit $?
+    } ;;
+    \,)   {
+        CWD=$NOTES/ws/glossaries zsh
+        exit $?
+    } ;;
+    l)   fp="$NOTES/ws/glossaries/lisp.$ext" ;;
+    L)   fp="$NOTES/ws/glossaries/linguistics.$ext" ;;
+    F)   fp="$NOTES/ws/glossaries/formal-languages.$ext" ;;
+    R)   fp="$NOTES/ws/glossaries/reinforcement-learning.$ext" ;;
+    G)   fp="$NOTES/ws/glossaries/abstract-algebra.$ext" ;;
+    A)   fp="$NOTES/ws/glossaries/arxiv.$ext" ;;
+    s)   fp="$NOTES/ws/glossaries/spacy.$ext" ;;
+    g)   fp="$NOTES/ws/glossaries/golang.$ext" ;;
+    j)   fp="$NOTES/ws/glossaries/javascript.$ext" ;;
+    T)   fp="$NOTES/ws/glossaries/tensorflow.$ext" ;;
+    P)   fp="$NOTES/ws/glossaries/probability.$ext" ;;
+    B)   fp="$NOTES/ws/glossaries/bigquery.$ext" ;;
+    Q)   fp="$NOTES/ws/glossaries/sql.$ext" ;;
+    r|a) fp="$NOTES/ws/glossaries/racket.$ext" ;;
+    p|l) fp="$NOTES/ws/glossaries/perl.$ext" ;;
+    h|k) fp="$NOTES/ws/glossaries/haskell.$ext" ;;
+    K)   fp="$NOTES/ws/glossaries/keras.$ext" ;;
+    D)   fp="$NOTES/ws/glossaries/deep-learning.$ext" ;;
+    M)   fp="$NOTES/ws/glossaries/machine-learning.$ext" ;;
+    N)   fp="$NOTES/ws/glossaries/nlp-natural-language-processing.$ext" ;;
+    u)   fp="$NOTES/ws/glossaries/purescript.$ext" ;;
+    y)   fp="$NOTES/ws/glossaries/python.$ext" ;;
+    Y)   fp="$NOTES/ws/glossaries/numpy.$ext" ;;
+    e)   fp="$NOTES/ws/glossaries/emacs-lisp.$ext" ;;
+esac
+echo
+cmd="$editor -nf $fp"
+echo "$cmd" | pen-hls nearblack
+
+if test -z "$fp"; then
+    exit 0
+fi
+
+bn="$(basename "$fp")"
+fn=$(basename "$fp")
+ext="${fn##*.}"
+mant="${fn%.*}"
+
+proper_fp="$NOTES/ws/$mant/glossary.org"
+
+if ! test -f "$fp"; then
+    if ! test -f "$proper_fp"; then
+        touch "$proper_fp"
+    fi
+    ln -s "$proper_fp" "$fp"
+fi
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

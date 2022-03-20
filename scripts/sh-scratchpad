@@ -1,0 +1,40 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+This is like a glossary!
+
+.  EDIT
+L  pen-tm sel ':lisp.txt*'
+a  pen-tm sel ':racket.txt*'
+pl pen-tm sel ':perl.txt*'
+h  pen-tm sel ':haskell.txt*'
+HEREDOC
+
+# t  pen-tm sel localhost_ws_functional-programming-fp:glossary.txt.0
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    L) cmd="pen-tm sel ':lisp.txt*'" ;;
+    a) cmd="pen-tm sel ':racket.txt*'" ;;
+    p|l) cmd="pen-tm sel ':perl.txt*'" ;;
+    h) cmd="pen-tm sel ':haskell.txt*'" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

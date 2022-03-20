@@ -1,0 +1,38 @@
+#!/bin/bash
+export TTY
+
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+s  scratch/notes.org
+r  remember.org
+w  watch.org
+t  todo.org
+d  done.org
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    r) cmd="v $HOME/notes2018/remember.org" ;;
+    s) cmd="v $HOME/notes2018/scratch/notes.org" ;;
+    w) cmd="v $HOME/notes2018/watch.org" ;;
+    t) cmd="v $HOME/notes2018/todo.org" ;;
+    d) cmd="v $HOME/notes2018/done.org" ;;
+
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

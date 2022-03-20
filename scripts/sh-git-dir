@@ -1,0 +1,46 @@
+#!/bin/bash
+export TTY
+
+clear
+
+go-my-version-git-dir() {
+    pen-tm n "go-my-version-git-dir :: NOT IMPLEMENTED"
+    :
+}
+
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+m  version of git repo
+f  go-to-dir-of-change
+F  go-to-dir-of-important-change
+g  mygit
+t  mygit-tablist
+T  mygit-tablist -u
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    f) cmd="go-to-dir-of-change" ;;
+    F) cmd="go-to-dir-of-important-change" ;;
+    m) cmd="go-my-version-git-dir" ;;
+    g) cmd="CWD=$MYGIT zsh" ;;
+    t) cmd="mygit-tablist" ;;
+    T) cmd="mygit-tablist -u" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"

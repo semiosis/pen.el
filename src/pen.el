@@ -2047,7 +2047,7 @@ May use to generate code from comments."
 (require 'pen-lsp-client)
 (if (inside-docker-p)
     (require 'pen-lsp-java))
-(require 'pen-lsp)
+;; (require 'pen-lsp)
 (require 'ilambda)
 (require 'pen-dap)
 (require 'pen-cacheit)

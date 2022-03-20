@@ -1,0 +1,118 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+# F  lazydocker
+read -r -d '' options <<HEREDOC
+.  EDIT
+1  etpb webrip
+2  etpb brrip
+u  ncdu .
+w  awkward 
+B  sh-brain
+h  hackernews
++  nvrat
+'  erc
+A  alsamixer
+K  eww-list-bookmarks
+j  jenkins
+F  elpher (gemini)
+J  edbi
+f  show-map
+m  magit
+O  mastodon
+M  magithub
+e  sh-emacs
+l  eshell
+s  spacemacs
+r  reddit (useless)
+L  restclient
+R  dired-ranger
+W  wyrd (remind)
+d  prodigy
+P  proced
+p  list-processes
+t  twitter
+3  select-database
+C  e-calibredb
+# g  deadgrep
+g sh-games
+G  gist-list
+N  gnus
+(  nnn
+n  ibuffer
+E  elfeed
+3  deft -m
+I  dunnet
+=  midnight-commander
+[  rat-docker
+]  rat-dockerhub
+z  fz-run $NOTES/ws/fuzzy/apps.txt
+Z  v $NOTES/ws/fuzzy/apps.txt
+o  glow
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    w) cmd="awkward" ;;
+    B) cmd="sh-brain" ;;
+    h) cmd="hackernews" ;;
+    \+) cmd="nvrat" ;;
+    \') cmd="erc" ;;
+    1) cmd="etpb webrip" ;;
+    2) cmd="etpb brrip" ;;
+    u) cmd="ncdu ." ;;
+    A) cmd="alsamixer" ;;
+    K) cmd="eww-list-bookmarks" ;;
+    j) cmd="ejenkins" ;;
+    # F) cmd="lazydocker" ;;
+    F) cmd="elpher" ;;
+    J) cmd="edbi" ;;
+    f) cmd="show-map" ;;
+    m) cmd="magit" ;;
+    O) cmd="mastodon" ;;
+    M) cmd="magithub" ;;
+    e) cmd="sh-emacs" ;;
+    l) cmd="eshell" ;;
+    s) cmd="sp" ;;
+    r) cmd="reddit" ;;
+    L) cmd="restclient" ;;
+    R) cmd="dired-ranger" ;;
+    W) cmd="wyrd" ;;
+    d) cmd="prodigy" ;;
+    P) cmd="proced" ;;
+    p) cmd="list-processes" ;;
+    t) cmd="twitter" ;;
+    3) cmd="select-database" ;;
+    C) cmd="e-calibredb" ;;
+    D) cmd="edf" ;;
+    # g) cmd="deadgrep" ;;
+    g) cmd="sh-games" ;;
+    G) cmd="gist-list" ;;
+    N) cmd="gnus" ;;
+    \() cmd="nnn" ;;
+    n) cmd="ibuffer" ;;
+    E) cmd="elfeed" ;;
+    3) cmd="deft -m" ;;
+    I) cmd="dunnet" ;;
+    =) cmd="emc" ;;
+    \[) cmd="rat-docker" ;;
+    \]) cmd="rat-dockerhub" ;;
+    z) cmd="fz-run $NOTES/ws/fuzzy/apps.txt" ;;
+    Z) cmd="v $NOTES/ws/fuzzy/apps.txt" ;;
+    o) cmd="glow" ;;
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+eval "$cmd"

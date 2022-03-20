@@ -1,0 +1,88 @@
+#!/bin/bash
+export TTY
+
+clear
+# exec 1> >(pen-mnm)
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started already.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+D  cd-docker
+C  curl -s --unix-socket /var/run/docker.sock http://localhost/containers/json | jiq
+r  docker-run-command
+R  zre "rat-dockerhub "
+w  mkdw (make-docker-wrapper)
+p  docker-run-persistent
+d  docker-run-default
+c  docker -j container ls
+q  docker-machine-env
+e  edocker
+E  docker-exec
+I  docker-init
+k  docker kill pen-fzf
+X  sudo /etc/init.d/docker stop 
+i  docker-select-image-or-container | xa docker inspect | vs
+h  docker-select-image-or-container | xa my-docker history | vs
+t  docker-select-image-or-container | xa dockerhub-list-tags | vs
+v  docker-select-image | xa dive
+V  docker-select-image | xa edive
+f  docker-select-image | xa ff-dockerhub
+N  docker-select-image | xa docker-run-sh
+a  docker-select-image | xa docker-run-full-command
+>  docker-select-save
+l  lazydocker
+L  docker-list-images
+n  esen
+s  docker-select-image
+S  xs lazydocker-stop-all-containers
+K  docker kill all
+9  ludo docker kill \$(unbuffer ludo docker ps -q | sed 1d | pen-s chomp)
+HEREDOC
+
+echo "$0" | udl | pen-hls green
+echo "$options" | pen-mnm | pen-hls dgrey
+
+read -n1 d; test "$d" = "" && read -n1 d
+# clear
+
+case "$d" in
+    .) cmd="v $0" ;;
+    D) cmd="cd-docker" ;;
+    C) cmd="curl -s --unix-socket /var/run/docker.sock http://localhost/containers/json | jiq" ;;
+    c) cmd="docker -j container ls" ;;
+    q) cmd="docker-machine-env" ;;
+    e) cmd="edocker" ;;
+    r) cmd="docker-run-command" ;;
+    R) cmd="zre \"rat-dockerhub \"" ;;
+    w) cmd="mkdw" ;;
+    p) cmd="docker-run-persistent" ;;
+    d) cmd="docker-run-default" ;;
+    E) cmd="docker-exec" ;;
+    I) cmd="docker-init" ;;
+    k) cmd="docker kill \$(docker ps -q | pen-mfz -m)" ;;
+    X) cmd="sudo /etc/init.d/docker stop " ;;
+    i) cmd="docker-select-image-or-container | xa docker inspect | vs" ;;
+    h) cmd="docker-select-image-or-container | xa my-docker history | vs" ;;
+    t) cmd="docker-select-image-or-container | xa dockerhub-list-tags | vs" ;;
+    v) cmd="docker-select-image | xa dive" ;;
+    V) cmd="docker-select-image | xa edive" ;;
+    f) cmd="docker-select-image | xa ff-dockerhub" ;;
+    N) cmd="docker-select-image | xa docker-run-sh " ;;
+    a) cmd="docker-select-image | xa docker-run-full-command " ;;
+    \>) cmd="docker-select-save" ;;
+    l) cmd="lazydocker" ;;
+    L) cmd="docker-list-images" ;;
+    n) cmd="esen" ;;
+    s) cmd="docker-select-image" ;;
+    S) cmd="xs lazydocker-stop-all-containers" ;;
+    K) cmd="docker kill \$(docker ps -q)" ;;
+    9) cmd="ludo docker kill \$(unbuffer ludo docker ps -q | sed 1d | pen-s chomp)"
+esac
+echo
+echo "$cmd" | pen-hls nearblack
+
+# exec <`tm-tty`
+# exec 1> /dev/tty
+eval "$cmd"
