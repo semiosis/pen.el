@@ -21,6 +21,7 @@
                sotlisp-mode
                lsp-lens-mode
                lsp-mode
+               cider-mode
                flycheck-mode
                company-mode
                yas-minor-mode
