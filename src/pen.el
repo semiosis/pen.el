@@ -124,6 +124,8 @@
 (require 'pen-projectile)
 (require 'pen-magit)
 (require 'pen-advice)
+(require 'pen-context)
+(require 'pen-major-mode)
 
 (require 'pen-aliases)
 

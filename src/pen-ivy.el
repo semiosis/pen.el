@@ -112,6 +112,8 @@ of exiting.  This function is otherwise like `ivy-done'."
          ("M-D" . send-m-del)
          ("M-c" . pen-ivy-copy-selection)
          ("M-v" . pen-ivy-open-selection-in-vim)
+         ("M-p" . pen-previous-line)
+         ("M-n" . pen-next-line)
          ("M-h" . sph)
          ("M-s" . spv)
          ("M-o" . ivy-sps-open)
