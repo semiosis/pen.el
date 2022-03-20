@@ -247,20 +247,22 @@ so the same nrepl is used for all files in the project"
          (dir (or (and (string-equal gdir pdir)
                        gdir)
                   pdir))
+         ;; Timestamp is needed to ensure created buffers are unique
+         (ts (str (date-ts)))
+         (jack-in-bufname (concat "*" (slugify (concat "jack-in" " in " dir)) "-" ts "*"))
          (bufname
           (if (re-match-p "closure" (str proc))
-              (concat "*" (slugify (concat "closure" " in " dir)) "*")
-            (concat "*" (slugify (concat "jack-in" " in " dir)) "*"))))
+              (concat "*" (slugify (concat "closure" " in " dir)) "-" ts "*")
+            jack-in-bufname)))
     (save-window-excursion
       (let* ((b (switch-to-buffer bufname)))
         (with-current-buffer b
           (insert (concat (str proc) " in " dir))
           (insert "\n")
           (cd dir)
-          ;(tv (concat "*" (slugify (concat "jack-in" " in " dir)) "*"))
           (let ((res (apply proc args)))
             (if (re-match-p "closure" (str proc))
-                (let ((jack-in-bufname (concat "*" (slugify (concat "jack-in" " in " dir)) "*")))
+                (progn
                   (kill-buffer b)
                   (if (buffer-exists jack-in-bufname)
                       (kill-buffer jack-in-bufname)))

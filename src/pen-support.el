@@ -2106,4 +2106,7 @@ If any of the suggest predicates evaluated to t, then suggest the function"
           (cons 'prog1 (cons def declarations))
         def))))
 
+(defun date-ts ()
+  (string-to-number (format-time-string "%s")))
+
 (provide 'pen-support)
