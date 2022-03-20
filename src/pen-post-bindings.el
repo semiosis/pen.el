@@ -220,9 +220,11 @@
                   (define-key ,m (kbd ,(concat k " M-w")) #'pen-save))))
 
 ;; (define-key global-map (kbd "M-m M-m") 'magit-status)
-(define-key pen-map (kbd "M-m M-m") 'magit-status)
-(define-key pen-map (kbd "M-l C-s") #'pen-swipe)
-(define-key pen-map (kbd "M-' C-s") #'pen-swipe)
-(define-key pen-map (kbd "C-w") #'pen-c-w-cut)
+(if (inside-docker-p)
+    (progn
+      (define-key pen-map (kbd "C-w") #'pen-c-w-cut)
+      (define-key pen-map (kbd "M-m M-m") 'magit-status)
+      (define-key pen-map (kbd "M-l C-s") #'pen-swipe)
+      (define-key pen-map (kbd "M-' C-s") #'pen-swipe)))
 
 (provide 'pen-post-bindings)

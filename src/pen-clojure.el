@@ -250,23 +250,23 @@ so the same nrepl is used for all files in the project"
          (bufname
           (if (re-match-p "closure" (str proc))
               (concat "*" (slugify (concat "closure" " in " dir)) "*")
-            (concat "*" (slugify (concat "jack-in" " in " dir)) "*"))))
+            (concat "*" (tv (slugify (concat "jack-in" " in " dir))) "*"))))
     (save-window-excursion
       (let* ((b (switch-to-buffer bufname)))
-        (ignore-errors
-          (with-current-buffer b
-            (progn
-              (insert (concat (str proc) " in " dir))
-              (insert "\n")
-              (cd dir))
-            (let ((res (apply proc args)))
-              (if (re-match-p "closure" (str proc))
-                  (let ((jack-in-bufname (concat "*" (slugify (concat "jack-in" " in " dir)) "*")))
-                    (kill-buffer b)
-                    (if (buffer-exists jack-in-bufname)
-                        (kill-buffer jack-in-bufname)))
-                (bury-buffer b))
-              res)))))))
+        (tv "hi")
+        (with-current-buffer b
+          (insert (concat (str proc) " in " dir))
+          (insert "\n")
+          (cd dir)
+          (let ((res (apply proc args)))
+            (tv (concat "*" (slugify (concat "jack-in" " in " dir)) "*"))
+            (if (re-match-p "closure" (str proc))
+                (let ((jack-in-bufname (concat "*" (slugify (concat "jack-in" " in " dir)) "*")))
+                  (kill-buffer b)
+                  (if (buffer-exists jack-in-bufname)
+                      (kill-buffer jack-in-bufname)))
+              (bury-buffer b))
+            res))))))
 (advice-add 'cider-restart :around #'cider-jack-in-around-advice)
 (advice-add 'cider-jack-in :around #'cider-jack-in-around-advice)
 (advice-add 'cider-jack-in-clj :around #'cider-jack-in-around-advice)
