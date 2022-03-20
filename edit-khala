@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+pind /root/.emacs.d/host/khala/src/khala/core.clj
