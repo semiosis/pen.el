@@ -129,7 +129,7 @@ buffer."
        (not (minor-mode-p org-src-mode)))
       (progn
         (run-with-timer
-         1 nil
+         2 nil
          (eval
           `(lm
             ;; ignore-errors here prevents this breaking, which was annoying. I couldn't open from ranger
