@@ -128,7 +128,6 @@ buffer."
        (not (derived-mode-p 'clojerl-mode))
        (not (minor-mode-p org-src-mode)))
       (progn
-        (ns "running timer")
         (run-with-idle-timer
          1 nil
          (eval
@@ -148,16 +147,10 @@ buffer."
                            (cond
                             ((derived-mode-p 'clojure-mode)
                              (auto-no
-                              ;; (call-interactively
-                              ;;  'cider-jack-in)
                               (cider-jack-in nil)))
                             ((derived-mode-p 'clojurescript-mode)
                              (auto-no
-                              ;; (call-interactively
-                              ;;  'cider-jack-in)
-                              (cider-jack-in-cljs nil)))))
-                         ;; (message "Jacked in?")
-                         ))))))))
+                              (cider-jack-in-cljs nil)))))))))))))
 
         (enable-helm-cider-mode)))
   t)
