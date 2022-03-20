@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+export TMUX=
+
+if test $# -eq 1; then
+    case "$1" in
+        new|neww|splitw) {
+            set -- "$@" zsh
+        }
+        ;;
+
+        *)
+    esac
+
+elif test $# -eq 0; then
+    set -- "$@" new zsh
+fi
+
+tmux "$@"

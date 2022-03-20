@@ -42,7 +42,7 @@
                     (f-file-p cmd-or-csv-path)
                     (not (f-executable-p cmd-or-csv-path)))
                    cmd-or-csv-path))
-         (cmd (if (not path)
+         (pen-cmd (if (not path)
                   cmd-or-csv-path))
          (col-sizes
           (if (sor col-sizes-string)
@@ -683,7 +683,7 @@ Return t, if point is now in a visible area."
 
 (defun kill-port (port)
   (interactive (read-string "kill-port: "))
-  (pen-snc (cmd "kill-port" (str port))))
+  (pen-snc (pen-cmd "kill-port" (str port))))
 
 (defun ports-tablist-kill-port (&optional port)
 

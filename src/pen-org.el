@@ -253,7 +253,7 @@ With argument N not nil or 1, move forward N - 1 lines first."
   (interactive)
   (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
     (org-table-export newfile "orgtbl-to-tsv")
-    (esph (lm (term-nsfa (concat "vs " (q newfile)))))))
+    (esph (lm (pen-term-nsfa (concat "vs " (q newfile)))))))
 (defalias 'etv-org-table-export-tsv 'etv-org-table-export)
 
 (defun fpvd-org-table-export ()
@@ -266,7 +266,7 @@ With argument N not nil or 1, move forward N - 1 lines first."
   (interactive)
   (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
     (org-table-export newfile "orgtbl-to-tsv")
-    (esph (lm (term-nsfa (concat "fpvd " (q newfile)))))))
+    (esph (lm (pen-term-nsfa (concat "fpvd " (q newfile)))))))
 
 
 

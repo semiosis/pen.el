@@ -146,6 +146,7 @@ Be mindful of quoting arguments correctly."
 (defalias 'e-cmd 'pen-quote-args)
 
 (require 'pen-sh)
+(require 'pen-library)
 (require 'pen-nix)
 (require 'pen-git)
 (if (inside-docker-p)
@@ -2002,7 +2003,6 @@ May use to generate code from comments."
 (require 'pen-ivy)
 (require 'pen-ink)
 (require 'pen-company)
-(require 'pen-library)
 (require 'pen-evil)
 (require 'pen-func-lists)
 (require 'pen-right-click-menu)

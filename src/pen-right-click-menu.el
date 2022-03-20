@@ -169,15 +169,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
     (setq dir (or dir (pen-pwd)))
     (concat "TMUX= tmux new -c " (pen-q dir) " -n " (pen-q window-name) " " (pen-q (concat "CWD= " cmd)))))
 
-(defun pen-term-nsfa (cmd &optional input modename closeframe buffer-name dir)
-  "Like term but can run a shell command.
-`nsfa` stands for `New Script From Arguments`"
-  (interactive (list (read-string "cmd:")))
-  (if input
-      (let ((tf (make-temp-file "pen-term-nsfa" nil nil input)))
-        (pen-term (message (pen-nsfa (message (concat "( " cmd " ) < " (pen-q tf))) dir)) closeframe modename buffer-name))
-    (pen-term (pen-nsfa cmd dir) closeframe modename buffer-name)))
-
 (defun pen-term-sps (&optional cmd dir)
   "`sps` stands for `Split Sensibly`"
   (interactive)

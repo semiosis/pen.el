@@ -202,7 +202,7 @@ Be mindful of quoting arguments correctly."
         (t (error (concat "bad parameters: " (str (cons from body)))))))
 
 (defmacro sh/seq-to-list (&rest body)
-  `(mapcar 'string-to-int (str2list (chomp (pen-b seq ,@body)))))
+  `(mapcar 'string-to-int (pen-str2list (chomp (pen-b seq ,@body)))))
 
 (defalias 'seq 'e/seq)
 
@@ -262,9 +262,6 @@ Be mindful of quoting arguments correctly."
 
 (defun rb (command)
   (pen-sn (concat "rb " (pen-q command) " 2>/dev/null")))
-
-(defun glob (pattern &optional dir)
-  (str2list (pen-cl-sn (concat "glob -b " (pen-q pattern) " 2>/dev/null") :stdin nil :dir (pen-umn dir) :chomp t)))
 
 (defmacro globm (&rest pattern)
   `(pen-b glob -b ,@pattern 2>/dev/null))
@@ -374,24 +371,19 @@ Be mindful of quoting arguments correctly."
   (interactive)
   (tmux-edit "vsc" "nw"))
 
-(defun pen-nsfa (pen-cmd &optional dir)
-  (pen-sn (concat "export TTY=; "
-                    (if dir (concat " CWD=" (pen-q dir) " ")
-                      "")
-                    " pen-nsfa -E " (pen-q cmd)) nil (or dir (cwd))))
-
-(defun term-nsfa (pen-cmd &optional input modename closeframe buffer-name dir)
-  "Like term but can run a shell command."
+(defun pen-term-nsfa (cmd &optional input modename closeframe buffer-name dir)
+  "Like term but can run a shell command.
+`nsfa` stands for `New Script From Arguments`"
   (interactive (list (read-string "cmd:")))
   (if input
-      (let ((tf (make-temp-file "term-nsfa" nil nil input)))
-        (pen-term (message (nsfa (message (concat "( " cmd " ) < " (pen-q tf))) dir)) closeframe modename buffer-name))
-    (pen-term (nsfa cmd dir) closeframe modename buffer-name)))
+      (let ((tf (make-temp-file "pen-term-nsfa" nil nil input)))
+        (pen-term (message (pen-nsfa (message (concat "( " cmd " ) < " (pen-q tf))) dir)) closeframe modename buffer-name))
+    (pen-term (pen-nsfa cmd dir) closeframe modename buffer-name)))
 
 (defun tmuxify-cmd (cmd)
   (concat "t new " (pen-q (concat "TTY= " cmd))))
 
-(defun term-nsfa-tm (pen-cmd &optional input)
+(defun term-nsfa-tm (cmd &optional input)
   "Like term but can run a shell command."
   (if input
       (let ((tf (make-temp-file "term-nsfa" nil nil input)))

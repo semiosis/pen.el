@@ -37,15 +37,15 @@
 (defun pen-counsel-ag-generic (pen-cmd &optional initsearch extra-args prompt)
   (interactive (list (read-string-hist "base grep cmd: ")))
 
-  (let ((histvar (intern (slugify (concat "histvar-" cmd))))
-        (basecmd (if (not (string-match "%s" cmd))
-                     (concat cmd " %s"))))
+  (let ((histvar (intern (slugify (concat "histvar-" cm))))
+        (basecmd (if (not (string-match "%s" cm))
+                     (concat cm " %s"))))
     (eval `(defvar ,histvar '()))
     (pen-counsel-ag initsearch extra-args prompt :histvar histvar :basecmd basecmd)))
 
 (defun pen-counsel-ag-generic-e (pen-cmd &optional initsearch extra-args prompt)
   (interactive (list (read-string-hist "base grep cmd: ")))
-  (pen-counsel-ag-generic cmd initsearch extra-args prompt))
+  (pen-counsel-ag-generic cm initsearch extra-args prompt))
 
 (defun pen-counsel-ag-thing-at-point (&optional initsearch &rest body)
   (interactive)
@@ -233,14 +233,14 @@ NEEDLE is the search string."
   ;; Sometimes the function is not called interactively
   (setq thing (or thing (str (pen-thing-at-point))))
   (setq dir (or dir (get-top-level)))
-  
-  (let* ((cmd (concat "pen-ead " (pen-q (pen-eatify thing))))
+
+  (let* ((cm (concat "pen-ead " (pen-q (pen-eatify thing))))
          (cmdnoeat (if (sor  paths-string)
                        (concat "pen-umn | uniqnosort | pen-ead " (pen-q thing))
                      (concat "pen-ead " (pen-q thing))))
          (slug (slugify cmdnoeat))
          (bufname (concat "*grep:" slug "*"))
-         (results (string-or (pen-sn cmd paths-string)
+         (results (string-or (pen-sn cm paths-string)
                              (pen-sn cmdnoeat))))
 
     (with-current-buffer (new-buffer-from-string results

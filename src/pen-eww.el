@@ -1611,7 +1611,7 @@ instead of `browse-url-new-window-flag'."
 
 (defun pen-chrome (url &optional smth)
   (interactive (list (read-string-hist "chromium url: ")))
-  (pen-cl-sn (cmd "chromium" (pen-q url)) :detach t))
+  (pen-cl-sn (pen-cmd "chromium" (pen-q url)) :detach t))
 
 (defun eww-open-in-chrome (url)
   (interactive (list (if (major-mode-p 'eww-mode)

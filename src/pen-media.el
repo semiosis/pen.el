@@ -57,15 +57,15 @@
   (setq path (pen-umn path))
 
   (if loop
-      (shut-up (eval `(pen-sn (cmd "pen-play-song" "-l" ,path)
+      (shut-up (eval `(pen-sn (pen-cmd "pen-play-song" "-l" ,path)
                               nil nil nil t)))
-    (shut-up (eval `(pen-sn (cmd "pen-play-song" ,path)
+    (shut-up (eval `(pen-sn (pen-cmd "pen-play-song" ,path)
                             nil nil nil t))))
   nil)
 (defalias 'ps 'pen-play-song)
 
 (defun pen-play-playlist (path)
-  (shut-up (eval ` (pen-snc (cmd "play-yt-playlist" ,path)
+  (shut-up (eval ` (pen-snc (pen-cmd "play-yt-playlist" ,path)
                             nil nil nil t)))
   nil)
 

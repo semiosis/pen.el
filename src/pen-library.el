@@ -6,17 +6,14 @@
 (require 'pen-aliases)
 
 (defun pen-f-basename (path)
-  ;; (pen-snc (pen-cmd "basename" path))
   (s-replace-regexp ".*/" "" (or path
                                  "")))
 
 (defun f-mant (path)
-  ;; (pen-snc (pen-cmd "mant" path))
   (s-replace-regexp "\\..*" "" (pen-f-basename path)))
 
 (defalias 'f-basename 'f-filename)
 (defun f-mant (path)
-  ;; (pen-snc (pen-cmd "mant" path))
   (s-replace-regexp "\\..*" "" (pen-f-basename path)))
 
 (defalias 'sym2str 'symbol-name)
@@ -700,17 +697,7 @@ buffer which is not included when this function returns"
                                   "-ov" overlay-text
                                   "-pov" preoverlay-text
                                   "-data" data))
-          ;; don't put the detach here
-          input nil nil detach nil nil nil chomp)
-
-  ;; Sadly the following doesn't work, for reasons I don't currently understand
-  ;; (async-start
-  ;;  (eval
-  ;;   `(lambda ()
-  ;;      (pen-sn (pen-cmd "pen-tvipe" "-cl" (pen-cmd "pen-eipe" "-pt" ,prompttext))
-  ;;              ;; don't put the detach here
-  ;;              ,input nil nil nil nil nil nil ,chomp))))
-  )
+          input nil nil detach nil nil nil chomp))
 
 (defun pen-eipec (input &optional wintype prompttext helptext overlaytext preoverlaytext data detach)
   (pen-eipe input t wintype prompttext helptext overlaytext preoverlaytext data detach))
@@ -847,8 +834,8 @@ buffer which is not included when this function returns"
          (new-buffer-from-string-detect-lang (eval `(,',sf ,s)))
          s))))
 
-(defmacro defshellfilter-new-buffer-cmd (pen-cmd ext)
-  (let* ((base (slugify (list2string cmd) t))
+(defmacro defshellfilter-new-buffer-cmd (cm ext)
+  (let* ((base (slugify (list2string cm) t))
          (sf (intern (concat "sh/" base)))
          (sfptw-nb (intern (concat "sh/ptw/nb/" base))))
     `(progn
@@ -871,10 +858,10 @@ buffer which is not included when this function returns"
 (defmacro defshellinteractive (&rest body)
   (let ((sf (intern (concat "sh/t/" (slugify (list2string body) t))))
         (sfhist (intern (concat "sh/t/" (slugify (list2string body) t) "-history")))
-        (pen-cmd (mapconcat 'str body " ")))
+        (cm (mapconcat 'str body " ")))
     `(defun ,sf (args)
        (interactive (list (read-string "args:" "" ',sfhist)))
-       (eval `(pen-sph (concat ,,cmd " " ,args))))))
+       (eval `(pen-sph (concat ,,cm " " ,args))))))
 
 
 ;; Override this to use message-no-echo
@@ -900,11 +887,11 @@ non-nil."
   (pen-message-no-echo "Truncate long lines %s"
 	                     (if truncate-lines "enabled" "disabled")))
 
-(defun pen-nsfa (cmd &optional dir)
+(defun pen-nsfa (cm &optional dir)
   (pen-sn (concat
            (if dir (concat " CWD=" (pen-q dir) " ")
              "")
-           " pen-nsfa -E " (pen-q cmd)) nil (or dir (cwd))))
+           " pen-nsfa -E " (pen-q cm)) nil (or dir (cwd))))
 
 (defun cursor-at-region-start-p ()
   "If the cursor is at the start of the region"

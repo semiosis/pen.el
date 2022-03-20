@@ -31,7 +31,7 @@
              ;; -d (dictionaryapi-define term)
              ;; -g (google-define term)
              ;; -w (my-wiki-summary term)
-             ;; -W (my-wiki-summary (pen-snc (cmd "redirect-wiki-term" term)))
+             ;; -W (my-wiki-summary (pen-snc (pen-cmd "redirect-wiki-term" term)))
              -r (read-string "definition: ")
              -m ""
              -n "")))
