@@ -61,6 +61,8 @@
         :docs '(pen-doc-override
                 lsp-describe-thing-at-point
                 cider-doc-thing-at-point)
+        :toggle-test '(projectile-toggle-between-implementation-and-test
+                       clojure-open-test)
         :godef '(lsp-find-definition
                  cider-find-var
                  xref-find-definitions-immediately

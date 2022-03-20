@@ -98,7 +98,8 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :spellcorrect)
 (add-to-list 'handle-keywords :docfun)
 (add-to-list 'handle-keywords :projectfile)
-(add-to-list 'handle-keywords :go-to-test)
+;; toggle between test case
+(add-to-list 'handle-keywords :toggle-test)
 
 (defcustom handle-nice-functions nil
   "List of commands that return t on success like good citizens.

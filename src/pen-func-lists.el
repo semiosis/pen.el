@@ -141,7 +141,8 @@
                             'helm-cider-repl-history
                             'helm-cider-apropos-symbol
                             'helm-cider-apropos-symbol-doc
-                            'clojure-open-test))
+                            'clojure-open-test
+                            'projectile-toggle-between-implementation-and-test))
 (defset clojurec-mode-funcs '(cider-jack-in))
 
 (defset web-mode-funcs '(eww-open-this-file elinks-dump-open-this-file))

@@ -1,4 +1,3 @@
-
 ;; (progn
 ;;   ;; selectrum-mouse-highlight
 ;;   ;; selectrum-quick-keys-match

@@ -126,6 +126,7 @@
 (define-key global-map (kbd "M-=") 'pen-handle-repls)
 (define-key prog-mode-map (kbd "M-C") 'handle-debug)
 (define-key global-map (kbd "H-RET") 'handle-run)
+(define-key prog-mode-map (kbd "H-T") 'handle-toggle-test)
 (define-key prog-mode-map (kbd "M-\"") 'pen-helm-fzf)
 (define-key prog-mode-map (kbd "M-@") 'handle-testall)
 (define-key prog-mode-map (kbd "M-)") 'handle-assignments)
