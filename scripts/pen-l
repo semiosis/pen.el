@@ -1,0 +1,124 @@
+#!/bin/bash
+export TTY
+
+# Script for locating things
+
+# examples
+# pen-l -u l -r 'wikifil.pl'
+
+METHOD=locate
+
+: "${minimise:="y"}"
+: "${frangipanni:="n"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -f) {
+        fast=y
+        shift
+    }
+    ;;
+
+    -p) {
+        frangipanni=y
+        shift
+    }
+    ;;
+
+    -np) {
+        frangipanni=n
+        shift
+    }
+    ;;
+
+    -m) {
+        minimise=y
+        shift
+    }
+    ;;
+
+    -M) {
+        unminimise=y
+        shift
+    }
+    ;;
+
+    -u|u) {
+        sudo updatedb
+        shift
+
+        [ $# -eq 0 ] && exit 0
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${FILTER_PATHS:="y"}
+
+filter_paths() {
+    grep -v /.Trash/ | grep -v /shane-new/
+}
+
+if test -z "$minimise$unminimise"; then
+    if test "$fast" = "y"; then
+        : ${minimise:="n"}
+        : ${unminimise:="n"}
+    else
+        : ${minimise:="y"}
+        : ${unminimise:="y"}
+    fi
+fi
+
+opt="$1"
+case "$opt" in
+    l) { METHOD=locate; shift; } ;;
+    r) {
+        METHOD=locate;
+        shift;
+
+        set -- -r "$@" # This properly preserves quotes
+    } ;;
+    *)
+esac
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+finalcmd="/usr/bin/locate $CMD"
+echo "$finalcmd" 1>&2
+
+# pager -vs is too slow
+{
+case "$METHOD" in
+    locate) {
+        eval "$finalcmd"
+    }
+    ;;
+
+    *)
+esac
+} | {
+    if test "$minimise" = "y"; then
+        pen-mnm
+    else
+        cat
+    fi
+} | {
+    if test "$unminimise" = "y"; then
+        pen-umn
+    else
+        cat
+    fi
+} | {
+    if test "$FILTER_PATHS" = "y"; then
+        filter_paths
+    else
+        cat
+    fi
+} | {
+    if test "$frangipanni" = "y"; then
+        frangipanni
+    else
+        cat
+    fi
+} | pen-pager
