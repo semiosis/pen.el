@@ -396,7 +396,6 @@ BUFFER is the buffer where the request has been made."
 CONTENTS can be differents type of values:
 MarkedString | MarkedString[] | MarkupContent (as defined in the LSP).
 We don't extract the string that `lps-line' is already displaying."
-  ;; (pen-tvipe contents)
   (cond
    ((vectorp contents) ;; MarkedString[]
     (mapconcat 'lsp-ui-doc--extract-marked-string
