@@ -349,7 +349,5 @@ Meant to be called in a narrowed buffer, does various passes"
 (define-key yas-minor-mode-map (kbd "C-c") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 (define-key global-map (kbd "M-5") 'company-yasnippet)
-(define-key pen-map (kbd "M-l M-s") nil)
-(define-key pen-map (kbd "M-l M-s M-d") 'yas-describe-tables)
 
 (provide 'pen-yasnippet)

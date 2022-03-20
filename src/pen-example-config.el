@@ -660,7 +660,8 @@
 (if (inside-docker-p)
     (progn
       (define-key pen-map (kbd "M-l s") 'pen-sph)
-      (define-key pen-map (kbd "M-l M-s") 'pen-sph)
+      (define-key pen-map (kbd "M-l M-s") nil)
+      (define-key pen-map (kbd "M-l M-s M-d") 'yas-describe-tables)
       (define-key pen-map (kbd "M-l S") 'pen-spv)
       (define-key pen-map (kbd "M-l M-S") 'pen-spv)
       (define-key pen-map (kbd "M-l n") 'pen-nw)
