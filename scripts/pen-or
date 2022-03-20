@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+# This script also needs to be able to handle stdin
+# Maybe it already does? -- nah cos if a command fails it may still have
+# consumed the stdin
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+if stdin_exists; then
+    inputfp="$(pen-tf stdin)"
+fi
+
+# Unset second
+a=("$@"); unset "a[1]"
+
+# Unset first
+b=("$@"); unset "b[0]"
+
+{
+    test -n "$inputfp" && exec < <(cat "$inputfp")
+
+    "${a[@]}"
+} || {
+    test -n "$inputfp" && exec < <(cat "$inputfp")
+
+    "${b[@]}"
+}
+exit "$?"
