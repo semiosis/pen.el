@@ -76,6 +76,9 @@
         :refactor '()
         :references '(lsp-ui-peek-find-references lsp-find-references pen-counsel-ag-thing-at-point)
         :projectfile '(pen-clojure-project-file)
+        :preverr '(cider-jump-to-compilation-error)
+        :nexterr '(cider-jump-to-compilation-error)
+
         :nextdef '(pen-prog-next-def
                    lispy-flow))
 
