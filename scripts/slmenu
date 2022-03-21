@@ -1,0 +1,36 @@
+#!/bin/bash
+export TTY
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+exec 3>&0
+
+if ! stdin_exists; then
+    exec < <(list-executables|awk 1|uniqnosort)
+fi
+
+if test -z "$LINES"; then
+    eval `resize`
+fi
+
+result="$(
+    if test "$LINES" -gt "5" || ! command -v slmenu; then
+        pen-fzf "$@"
+    else
+        /usr/local/bin/slmenu $LINES "$@"
+    fi
+)"
+
+is_tty() {
+    [[ -t 1 ]]
+}
+
+exec 0>&3
+
+if is_tty; then
+    test -n "$result" && eval "$result"
+else
+    printf -- "%s\n" "$result"
+fi

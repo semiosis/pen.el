@@ -128,6 +128,7 @@
                             'cider-restart
                             'clj-rebel-doc
                             'cider-jack-in
+                            'cider-repl-set-ns
                             'clojure-find-deps
                             'pen-clojure-lein-run
                             'clojure-select-copy-dependency

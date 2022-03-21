@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Examples:
+# list-executables
+# list-executables $HOME/scripts
+# u lx $HOME/scripts:$HOME/local/bin
+
+if test -d "$1"; then
+    find . -type f -executable
+else
+    compgen -c
+fi
+
+exit 0
+
+if which "compgen" &>/dev/null; then
+    compgen -c
+    exit 0
+fi

@@ -124,6 +124,8 @@ buffer."
   ;; j:cider-jack-in-clj&cljs
 
   (if (and
+       ;; Only automatically connect if this is a git repo -- prevents cider from asking for the project
+       (projectile-project-p)
        (derived-mode-p 'clojure-mode)
        (not (derived-mode-p 'clojerl-mode))
        (not (minor-mode-p org-src-mode)))

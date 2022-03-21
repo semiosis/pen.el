@@ -35,4 +35,32 @@
 (defun date-ts ()
   (string-to-number (format-time-string "%s")))
 
+(defun edit-var-elisp (variable &optional buffer frame)
+  (interactive
+   (let ((v (variable-at-point))
+         (enable-recursive-minibuffers t)
+         (orig-buffer (current-buffer))
+         val)
+     (setq val (completing-read
+                (if (symbolp v)
+                    (format
+                     "Describe variable (default %s): " v)
+                  "Describe variable: ")
+                #'help--symbol-completion-table
+                (lambda (vv)
+                  ;; In case the variable only exists in the buffer
+                  ;; the command we switch back to that buffer before
+                  ;; we examine the variable.
+                  (with-current-buffer orig-buffer
+                    (or (get vv 'variable-documentation)
+                        (and (boundp vv) (not (keywordp vv))))))
+                t nil nil
+                (if (symbolp v) (symbol-name v))))
+     (list (if (equal val "")
+               v (intern val)))))
+  (with-current-buffer
+      (new-buffer-from-string (concat "(setq " (symbol-name variable) "\n'" (pp (eval variable)) ")"))
+    (emacs-lisp-mode)))
+(defalias 'evar 'edit-var-elisp)
+
 (provide 'pen-utils)
