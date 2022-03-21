@@ -22,16 +22,6 @@
 (require 'cl-macs)
 (require 'pp)
 
-(defmacro pen-require (library)
-  ""
-  (if (inside-docker-p)
-      `(require ,library)
-    (cond
-     ((eq 'pen-selected (eval library))
-      nil)
-     (t `(require ,library)))))
-(pen-require 'pen-selected)
-
 ;; elpa
 ;; For string-empty-p
 (require 'subr-x)
@@ -40,6 +30,18 @@
 (require 'pcre2el)
 (require 'pen-pcre)
 (require 'pen-support)
+
+(defmacro pen-require (library)
+  ""
+  (if (inside-docker-p)
+      `(require ,library)
+    (cond
+     ((eq 'pen-selected (eval library))
+      nil)
+     (t `(require ,library)))))
+
+(pen-require 'pen-selected)
+
 (require 'dash)
 (require 'projectile)
 (require 'transient)
