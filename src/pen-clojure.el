@@ -559,30 +559,31 @@ the namespace in the Clojure source buffer"
           (previous-line)
           (end-of-line))))))
 
-(defun pen-cider-insert-eval-handler (&optional buffer)
-  "Make an nREPL evaluation handler for the BUFFER.
-The handler simply inserts the result value in BUFFER."
-  (let ((eval-buffer (current-buffer)))
-    (nrepl-make-response-handler (or buffer eval-buffer)
-                                 (lambda (_buffer value)
-                                   (with-current-buffer buffer
-                                     (insert (concat "(" value ")"))
-                                     (cider-repl-return)))
-                                 (lambda (_buffer out)
-                                   (cider-repl-emit-interactive-stdout out))
-                                 (lambda (_buffer err)
-                                   (cider-handle-compilation-errors err eval-buffer))
-                                 '())))
+;; (defun pen-cider-insert-eval-handler (&optional buffer)
+;;   "Make an nREPL evaluation handler for the BUFFER.
+;; The handler simply inserts the result value in BUFFER."
+;;   (let ((eval-buffer (current-buffer)))
+;;     (nrepl-make-response-handler (or buffer eval-buffer)
+;;                                  (lambda (_buffer value)
+;;                                    (with-current-buffer buffer
+;;                                      (insert (concat "(" value ")"))
+;;                                      (cider-repl-return)))
+;;                                  (lambda (_buffer out)
+;;                                    (cider-repl-emit-interactive-stdout out))
+;;                                  (lambda (_buffer err)
+;;                                    (cider-handle-compilation-errors err eval-buffer))
+;;                                  '())))
 
-(defun pen-cider-eval-eval-last-sexp (&optional prefix)
-  (interactive "P")
-  (cider-interactive-eval nil
-                          ;; eval the result in the repl
-                          (pen-cider-insert-eval-handler (cider-current-repl))
-                          (cider-last-sexp 'bounds)
-                          (cider--nrepl-pr-request-map))
-  (when prefix
-    (cider-switch-to-repl-buffer)))
+;; This is unneccesary. It already is implemented in a better way -- see j:pen-lispy-eval-eval
+;; (defun pen-cider-eval-eval-last-sexp (&optional prefix)
+;;   (interactive "P")
+;;   (cider-interactive-eval nil
+;;                           ;; eval the result in the repl
+;;                           (pen-cider-insert-eval-handler (cider-current-repl))
+;;                           (cider-last-sexp 'bounds)
+;;                           (cider--nrepl-pr-request-map))
+;;   (when prefix
+;;     (cider-switch-to-repl-buffer)))
 
 (define-key cider-mode-map (kbd "C-c C-o") nil)
 (define-key cider-mode-map (kbd "C-M-i") nil)
