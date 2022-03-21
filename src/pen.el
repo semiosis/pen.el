@@ -125,6 +125,7 @@
 (require 'pen-magit)
 (require 'pen-advice)
 (require 'pen-context)
+(require 'pen-hooks)
 (require 'pen-major-mode)
 
 (require 'pen-aliases)
@@ -1998,7 +1999,6 @@ May use to generate code from comments."
 (defun pen-continue-prompt ())
 
 (require 'pen-borrowed)
-(require 'pen-hooks)
 (require 'pen-core)
 (require 'pen-openai)
 (require 'pen-hf)
