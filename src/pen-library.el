@@ -921,7 +921,7 @@ non-nil."
   (cond
    ;; I can't figure out how to bind the fuzzyfinders in pen.el
    ;; ivy uses minibuffer-inactive-mode. Though I should still test for ivy
-   ((string= (current-major-mode) "minibuffer-inactive-mode") (call-interactively 'ivy-previous-line))
+   ((string= (current-major-mode) "minibuffer-inactive-mode") (call-interactively 'ivy-previous-line-or-history))
    ;; ((string= (current-major-mode) "helm-mode") (call-interactively 'previous-line))
    ((string= (current-major-mode) "org-mode") (call-interactively 'org-backward-heading-same-level))
    ((string= (current-major-mode) "epa-key-list-mode") (call-interactively 'widget-backward))
@@ -988,7 +988,7 @@ non-nil."
   (cond
    ;; I can't figure out how to bind the fuzzyfinders in pen.el
    ;; ivy uses minibuffer-inactive-mode. Though I should still test for ivy
-   ((string= (current-major-mode) "minibuffer-inactive-mode") (call-interactively 'ivy-next-line))
+   ((string= (current-major-mode) "minibuffer-inactive-mode") (call-interactively 'ivy-next-line-or-history))
    ((string= (current-major-mode) "helm-mode") (call-interactively 'next-line))
    ((string= (current-major-mode) "org-mode") (call-interactively 'org-forward-heading-same-level))
    ((string= (current-major-mode) "epa-key-list-mode") (call-interactively 'widget-forward))

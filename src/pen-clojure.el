@@ -381,6 +381,17 @@ older requests with \"done\" status."
             (funcall callback response))
         (error "[nREPL] No response handler with id %s found" id)))))
 
+(defun pen-clojure-eval-last-sexp ()
+  (interactive)
+  (let ((s (eval-string (concat "'" (cider-last-sexp)))))
+    (cond
+     ((string-equal "ns" (car s))
+      (progn
+        (call-interactively 'cider-eval-last-sexp)
+        (call-interactively 'cider-repl-set-ns)))
+     ;; TODO add deftest runner
+     (t (call-interactively 'cider-eval-last-sexp)))))
+
 (defset cider-repl-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "C-c C-d") 'cider-doc-map)
@@ -548,5 +559,8 @@ the namespace in the Clojure source buffer"
 (define-key cider-repl-mode-map (kbd "M-h") 'pen-cider-select-prompt-or-result)
 (define-key clj-refactor-map (kbd "/") nil)
 (define-key cider-repl-mode-map (kbd "C-c C-c") 'pen-cider-interrupt-and-new-prompt)
+
+(define-key cider-repl-mode-map (kbd "C-x C-e") 'pen-clojure-eval-last-sexp)
+(define-key cider-mode-map (kbd "C-x C-e") 'pen-clojure-eval-last-sexp)
 
 (provide 'pen-clojure)
