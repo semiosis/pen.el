@@ -53,12 +53,14 @@
                (pen-pwd))))
     (if (equalp current-prefix-arg '(16))
         (progn
-          (helm-fzf-d2 dir
-                       (if (pen-selected-p)
-                           (concat "'" (pen-selection)))))
-      (helm-fzf dir
-                (if (pen-selected-p)
-                    (concat "'" (pen-selection)))))))
+          (let ((current-prefix-arg nil))
+            (helm-fzf-d2 dir
+                         (if (pen-selected-p)
+                             (concat "'" (pen-selection))))))
+      (let ((current-prefix-arg nil))
+        (helm-fzf dir
+                  (if (pen-selected-p)
+                      (concat "'" (pen-selection))))))))
 
 (defun pen-helm-fzf-top ()
   (interactive)
