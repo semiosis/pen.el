@@ -13,8 +13,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nd) {
+        detach=
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+
+: "${detach:="y"}"
 
 exec 3>&0
 
