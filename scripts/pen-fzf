@@ -109,7 +109,7 @@ bindings+="alt-t:top,"
 
 # tf_input
 
-mfie="lit {+}" # 'multi' field index expression
+mfie="pen-pl {+}" # 'multi' field index expression
 
 # This comes from pen-mfz script
 if test "$FZF_PREPEND_DIR" = "y"; then
