@@ -12,7 +12,7 @@
 
 (defun hs (name &rest body)
   "Function. Record the arguments into hs before running."
-  (pen-sn (concat "hist-save " (pen-q name) " " (mapconcat 'q (mapcar 'str body) " "))))
+  (pen-sn (concat "hist-save " (pen-q name) " " (mapconcat 'pen-q (mapcar 'str body) " "))))
 
 (defun hg (name)
   (s-lines (pen-cl-sn (concat "hist-get " (pen-q name)) :chomp t)))

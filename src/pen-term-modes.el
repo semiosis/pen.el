@@ -21,7 +21,7 @@
     (eval `(defun ,(intern funname) (&rest args)
              "This function expects a one term command (binary name only)."
              (interactive)
-             (pen-term-nsfa (mapconcat 'q (cons ,cmd args) " ") nil ,cmd ,closeframe)))))
+             (pen-term-nsfa (mapconcat 'pen-q (cons ,cmd args) " ") nil ,cmd ,closeframe)))))
 
 (defmacro defcmdmode (pen-cmd &optional cmdtype)
   (setq cmd (str cmd))

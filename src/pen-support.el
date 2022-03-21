@@ -181,7 +181,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   (let ((print-escape-newlines t))
     (s-join " " (mapcar 'prin1-to-string-safe strings))))
 (defalias 'pen-q 'e/escape-string)
-;; (defalias 'q 'e/escape-string)
+;; (defalias 'pen-q 'e/escape-string)
 
 (defun pen-qne (string)
   "Like q but without the end quotes"

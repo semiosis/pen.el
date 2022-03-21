@@ -93,7 +93,7 @@
              (and (major-mode-enabled 'dired-mode)
                   (sor (and
                         for-clipboard
-                        (mapconcat 'q (dired-get-marked-files) " "))
+                        (mapconcat 'pen-q (dired-get-marked-files) " "))
                        (pen-pwd)))
 
              ;; This will break on eww
