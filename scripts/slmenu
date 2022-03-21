@@ -5,6 +5,7 @@ stdin_exists() {
     ! [ -t 0 ]
 }
 
+: "${detach:="y"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -d) {
@@ -21,8 +22,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
-
-: "${detach:="y"}"
 
 exec 3>&0
 
