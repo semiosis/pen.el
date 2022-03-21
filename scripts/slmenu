@@ -51,6 +51,7 @@ exec 0>&3
 
 if is_tty; then
     if test "$detach" = "y"; then
+        # DO NOT unset TMUX.
         test -n "$result" && tmux run -b "unbuffer $result > /dev/null"
     else
         test -n "$result" && eval "$result"
