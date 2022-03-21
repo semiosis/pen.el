@@ -70,6 +70,7 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :godef)
 (add-to-list 'handle-keywords :godec)
 (add-to-list 'handle-keywords :refactor)
+(add-to-list 'handle-keywords :rename-symbol)
 (add-to-list 'handle-keywords :complete)
 (add-to-list 'handle-keywords :debug)
 (add-to-list 'handle-keywords :path)

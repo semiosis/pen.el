@@ -74,6 +74,8 @@
         ;; For clj-refactor, see:
         ;; ;; j:pen-clojure-mode-hook
         :refactor '()
+        :rename-symbol '(lsp-rename
+                         cljr-rename-symbol)
         :references '(lsp-ui-peek-find-references lsp-find-references pen-counsel-ag-thing-at-point)
         :projectfile '(pen-clojure-project-file)
         :preverr '(cider-jump-to-compilation-error)
