@@ -44,7 +44,7 @@
 
 (defun fz-map-fn (&optional mapsym)
   "fuzzy find maps and pretty print them in a new buffer"
-  (interactive (list (showmap--read-symbol "map: " (variable-name-re-p "-map$"))))
+  (interactive (list (showmap--read-symbol "map: " (variable-name-re-p "-\\(key\\)?map$"))))
 
   (if (not mapsym)
       (setq mapsym (current-major-mode-map)))
@@ -59,7 +59,7 @@
 
 (defun show-map (&optional mapsym)
   "fuzzy find maps and pretty print them in a new buffer"
-  (interactive (list (showmap--read-symbol "map: " (variable-name-re-p "-map$"))))
+  (interactive (list (showmap--read-symbol "map: " (variable-name-re-p "-\\(key\\)?map$"))))
 
   (if (not mapsym)
       (setq mapsym (current-major-mode-map)))

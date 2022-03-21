@@ -537,7 +537,7 @@ The result is a string."
                  (pen-region-pipe "uq"))))))
 (defalias 'lispy-edit-string 'emacs-lisp-edit-string)
 
-(require 'pen-selected)
+(pen-require 'pen-selected)
 
 (defun lispy--prin1-to-string (expr offset mode)
   "Return the string representation of EXPR.

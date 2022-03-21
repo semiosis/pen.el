@@ -22,6 +22,16 @@
 (require 'cl-macs)
 (require 'pp)
 
+(defmacro pen-require (library)
+  ""
+  (if (inside-docker-p)
+      `(require ,library)
+    (cond
+     ((eq 'pen-selected (eval library))
+      nil)
+     (t `(require ,library)))))
+(pen-require 'pen-selected)
+
 ;; elpa
 ;; For string-empty-p
 (require 'subr-x)
@@ -153,8 +163,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-utils)
 (require 'pen-nix)
 (require 'pen-git)
-(if (inside-docker-p)
-    (require 'pen-selected))
+(pen-require 'pen-selected)
 (require 'pen-cua)
 (require 'pen-tramp)
 (require 'pen-text-coding-system)

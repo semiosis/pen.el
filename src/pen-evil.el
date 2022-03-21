@@ -1,4 +1,6 @@
-(require 'pen-selected)
+;; Some things should not be loaded
+(pen-require 'pen-selected)
+
 (require 'evil-surround)
 (require 'auto-highlight-symbol)
 
