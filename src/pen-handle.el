@@ -47,8 +47,7 @@
              (testpath (f-join testdir (concat mant "_test.clj")))
              (top-namespace (car (s-split "\\." namespace))))
         (with-current-buffer
-            (find-file testpath)
-          ))))
+            (find-file testpath)))))
 
 (handle '(clojure-mode clojurescript-mode cider-repl-mode inf-clojure)
         ;; Re-using may not be good, actually, if I'm working with multiple projects

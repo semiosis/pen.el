@@ -41,7 +41,7 @@ stty stop undef 2>/dev/null; stty start undef 2>/dev/null;
 HEREDOC
 
 printf -- "%s\n" "$scriptcode" >> "$tf_new_script"
-export PATH=$HOME/scripts:$PATH
+export PATH=$HOME/scripts:$HOME/scripts/container:$PATH
 
 if test -n "$CWD" && test -d "$CWD"; then
     cmd cd "$CWD" | awk 1 >> "$tf_new_script"

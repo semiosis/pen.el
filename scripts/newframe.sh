@@ -56,7 +56,7 @@ esac; done
 
 export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
-export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
+export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts::$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container
 
 shopt -s nullglob
 if test "$USE_POOL" = "y"; then
