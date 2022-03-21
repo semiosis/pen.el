@@ -389,7 +389,8 @@ older requests with \"done\" status."
       (progn
         (call-interactively 'cider-eval-last-sexp)
         (call-interactively 'cider-repl-set-ns)))
-     ((string-equal "deftest" (car s))
+     ;; could be t/deftest
+     ((string-match "deftest" (str (car s)))
       (progn
         (call-interactively 'cider-eval-last-sexp)
         (call-interactively 'cider-test-run-test)))
