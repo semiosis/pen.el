@@ -40,8 +40,6 @@
       nil)
      (t `(require ,library)))))
 
-(pen-require 'pen-selected)
-
 (require 'dash)
 (require 'projectile)
 (require 'transient)
@@ -78,6 +76,7 @@
 (require 'pen-elisp)
 (require 'pen-custom)
 (require 'pen-configure)
+(pen-require 'pen-selected)
 (require 'pen-hist)
 (require 'pen-eww)
 (require 'pen-avy)
