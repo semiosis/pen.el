@@ -1,0 +1,133 @@
+#!/bin/bash
+
+# Magit related commands.
+
+sn="$(basename "$0")"
+
+case "$sn" in
+    magit) {
+        f=magit-status
+    }
+    ;;
+
+    magithub) {
+        f=magithub-dashboard
+    }
+    ;;
+
+    forge) {
+        f=forge-list-issues
+    }
+    ;;
+
+    *)
+esac
+
+opt="$1"
+shift
+case "$opt" in
+    -2) {
+        export MONOCHROME=y
+    }
+    ;;
+
+    -d|debug) {
+        wd="$(pwd | chomp | q)"
+        cd $MYGIT/magit/magit
+        make emacs-Q
+
+        # the following should work but does not. how maddening!
+        false && {
+            ELPA_DIR=$HOME/.emacs.d/elpa
+            ELPA_DIR=$$HOME$MYGIT/purcell/emacs.d/elpa-26.1
+
+            DASH_DIR="$(find -L $ELPA_DIR -maxdepth 1 -regex '.*/dash-[.0-9]*' 2> /dev/null | sort | tail -n 1)"
+            GHUB_DIR="$(find -L $ELPA_DIR -maxdepth 1 -regex '.*/ghub-[.0-9]*' 2> /dev/null | sort | tail -n 1)"
+            MAGIT_POPUP_DIR="$(find -L $ELPA_DIR -maxdepth 1 -regex '.*/magit-popup-[.0-9]*' 2> /dev/null | sort | tail -n 1)"
+            TREEPY_DIR="$(find -L $ELPA_DIR -maxdepth 1 -regex '.*/treepy-[.0-9]*' 2> /dev/null | sort | tail -n 1)"
+            WITH_EDITOR_DIR="$(find -L $ELPA_DIR -maxdepth 1 -regex '.*/with-editor-[.0-9]*' 2> /dev/null | sort | tail -n 1)"
+
+            emacs -Q -L $HOME$MYGIT/magit/magit/lisp \
+                -L "$DASH_DIR" \
+                -L "$GHUB_DIR" \
+                -L "$MAGIT_POPUP_DIR" \
+                -L "$TREEPY_DIR" \
+                -L "$WITH_EDITOR_DIR" \
+                --debug-init --eval "(progn (setq debug-on-error t) (require 'magit) (global-set-key \"\\C-xg\" 'magit-status) (cd $wd) (magit-status))"
+        }
+        exit 0
+    }
+    ;;
+
+    k|kill) {
+        pen-e -fs magit k
+
+        exit 0
+    }
+    ;;
+
+    s|status) {
+        # Magit doesn't work very well with emacs24 and spacemacs.
+        # pen-e sd
+        # pen-e c -e "(progn (magit-status)( delete-other-windows ))"
+
+        # But I'm using emacs26 now
+        # pen-e -fs magit sd
+        # pen-e -fs magit c -e "(progn (magit-status)( delete-other-windows ))"
+
+        # pen-e sd
+        # sp sd
+        # pc sd
+        # pen-e c -e "(progn (magit-status)( delete-other-windows ))"
+        # pd c -e "(progn (magit-status)( delete-other-windows ))"
+
+        if pen-vc g is-repo; then
+            export SOCKET=
+            pen-e -e "($f)"
+        else
+            p "Not a git repo"
+        fi
+
+        exit 0
+    }
+    ;;
+
+    rl|reflog) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+
+        # This should use x (terminal automation script)
+
+        exit 0
+    }
+    ;;
+
+    bl|blame) {
+        fp="$1"
+
+        if [ -n "$fp" ]; then
+            pen-e -ci magit-blame "$fp"
+        else
+            echo "Not a file: $fp" 1>&2
+        fi
+
+        exit 0
+    }
+    ;;
+
+    *) {
+        if [ -e "$opt" ]; then
+            fp="$opt"
+            rp="$(realpath "$fp")"
+
+            if test -f "$fp"; then
+                dn="$(dirname "$rp")"
+                cd "$dn"
+            fi
+
+            pen-e -e "(find-file $(p "$rp" | q -ftln))(call-interactively 'magit-log-buffer-file)"
+            exit 0
+        fi
+    }
+esac
+
+$0 s

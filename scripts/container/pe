@@ -1,0 +1,60 @@
+#!/bin/bash
+export TTY
+
+# I should turn this entire script into an elisp hydra.
+# Although that would require that emacs has been started alreaddy.
+
+read -r -d '' options <<HEREDOC
+.  EDIT
+s  pin
+pc steve purcell's
+o  og
+a  og agenda
+t  default tmux
+b  brain (spacemacs)
+d  prelude
+p  pen
+D  doom
+i  scimax
+er exordium
+m  me (magit daemon)
+# M  nvt me -2 (magit daemon)
+HEREDOC
+
+# f frank
+
+echo "emacsclient" | udl | pen-hls green
+echo "$options" | pen-hls dgrey
+
+read -n1 d
+clear
+
+case "$d" in
+    .) cmd="vim $0" ;;
+    s) cmd="pin" ;; # spacemacs
+    d) cmd="e -D prelude c" ;;
+    f) cmd="pen" ;;
+    D) cmd="dem" ;;
+    b) cmd="org-brain" ;;
+    i) cmd="sc" ;; # scimax
+    p|c) cmd="pc" ;; # purcell
+    f) cmd="e -D frank c" ;;
+    e|r) cmd="xr" ;; # exordium 
+    m) cmd="me" ;; # magit # e -D default -s magit c -ei magit-status
+    t) cmd="e -D default -s tmux c" ;;
+    v) cmd="e c" ;;
+    o) cmd="og" ;;
+
+    a) {
+        elisp="(org-agenda-list 50)(delete-other-windows)"
+
+        pen-e c -e "$elisp"
+    }
+    ;;
+
+    *)
+esac
+
+if [ -n "$cmd" ]; then
+    eval "$cmd"
+fi
