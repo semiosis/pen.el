@@ -32,7 +32,7 @@
 (require 'pen-support)
 
 (defmacro pen-require (library)
-  ""
+  "Don't require of sourced from the host machine"
   (if (inside-docker-p)
       `(require ,library)
     (cond
