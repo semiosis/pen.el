@@ -111,8 +111,11 @@ if ! stdin_exists; then
     # If no stdin, make it point to the tty
     exec <&1
 else
-    input_fp="$(cat | pen-tf txt)"
-    exec <&1
+    if ! inside-docker-p; then
+        mkdir -p ~/.pen
+        input_fp="$(cat > ~/.pen/host_stdin.txt)"
+        exec <&1
+    fi
 fi
 
 # set -xv
@@ -739,7 +742,8 @@ fi
 
 export USE_NVC
 
-if test -n "$input_fp" && \
+if ! test "$start_shell" = y && \
+    test -n "$input_fp" && \
     ! printf -- "%s\n" "$1" | grep -q -P '^pf-' && \
     ! test "$sn" = penu && \
     ! test "$sn" = pena && \
@@ -848,7 +852,6 @@ HEREDOC
     if is_tty; then
         if test -n "$input_fp"; then
             mkdir -p ~/.pen
-            cp -a "$input_fp" ~/.pen/host_stdin.txt
             docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; cat ~/.pen/host_stdin.txt | $CMD"
         else
             docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
