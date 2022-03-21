@@ -49,7 +49,6 @@ is_tty() {
 
 exec 0>&3
 
-unset TMUX
 if is_tty; then
     if test "$detach" = "y"; then
         test -n "$result" && tmux run -b "unbuffer $result > /dev/null"
