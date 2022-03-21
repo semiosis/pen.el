@@ -5,6 +5,17 @@ stdin_exists() {
     ! [ -t 0 ]
 }
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -d) {
+        detach=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 exec 3>&0
 
 if ! stdin_exists; then
@@ -29,8 +40,13 @@ is_tty() {
 
 exec 0>&3
 
+unset TMUX
 if is_tty; then
-    test -n "$result" && eval "$result"
+    if test "$detach" = "y"; then
+        test -n "$result" && tmux run -b "$result > /dev/null"
+    else
+        test -n "$result" && eval "$result"
+    fi
 else
     printf -- "%s\n" "$result"
 fi
