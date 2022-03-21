@@ -739,17 +739,14 @@ fi
 
 export USE_NVC
 
-if stdin_exists && \
+if test -n "$input_fp" && \
     ! printf -- "%s\n" "$1" | grep -q -P '^pf-' && \
     ! test "$sn" = penu && \
     ! test "$sn" = pena && \
     ! test "$sn" = penj && \
     ! test "$sn" = penf; then
 
-    fp="$(pen-tf txt)"
-
-    exec 0<&1
-
+    fp="$input_fp"
     if test "$sn" = pen && test "$#" -eq 0 && { inside-docker-p || docker-running-p; }; then
         sn=penc
     fi
