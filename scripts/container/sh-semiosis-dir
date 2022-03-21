@@ -4,43 +4,43 @@ export TTY
 clear
 # exec 1> >(pen-mnm)
 
-# t  zcd $REPOS/openai-classification-training-data
+# t  zcd ~/.emacs.d/host/openai-classification-training-data
 read -r -d '' options <<HEREDOC
 .  EDIT
-e  zcd $REPOS/efm-langserver
-S  zcd $REPOS
-7  zcd $REPOS/channel
-C  zcd $REPOS/creation
-Y  zcd $REPOS/yas-snippets
-P  zcd $REPOS/pensieve
-r  zcd $REPOS/rhizome
-l  zcd $REPOS/ilambda
-x  zcd $REPOS/examplary
-D  zcd $REPOS/dni
-w  sp $REPOS/pen.el/src/pen.el
-pq zcd $REPOS/pen.el
-v  zcd $REPOS/metaverses
-V  zcd $REPOS/protoverses
-H  zcd $REPOS/imaginary-programming-thesis
-s  zcd $REPOS/pen.el/scripts
-c  zcd $REPOS/pen.el/src
-X  sp $REPOS/pen.el/src/pen-examplary.el
-d  zcd $REPOS/prompt-design-patterns
-t  zcd $REPOS/personalities
-I  zcd $REPOS/incarnations
-T  zcd $REPOS/tomes
-o  zcd $REPOS/prompts
-O  zcd $REPOS/openai-complete-clj
-m  zcd $REPOS/engines
-n  zcd $REPOS/interpreters
-k  zcd $REPOS/ink.el
-K  zcd $REPOS/khala
-g  zcd $REPOS/glossaries
-y  zcd $REPOS/semiosis
-j  zcd $REPOS/pen-contrib.el
-i  zcd $REPOS/openai-api.el
-hb zcd $REPOS/semiosis-hugo
-a  zcd $REPOS/semiosis-hugo/posts
+e  zcd ~/.emacs.d/host/efm-langserver
+S  zcd ~/.emacs.d/host
+7  zcd ~/.emacs.d/host/channel
+C  zcd ~/.emacs.d/host/creation
+Y  zcd ~/.emacs.d/host/yas-snippets
+P  zcd ~/.emacs.d/host/pensieve
+r  zcd ~/.emacs.d/host/rhizome
+l  zcd ~/.emacs.d/host/ilambda
+x  zcd ~/.emacs.d/host/examplary
+D  zcd ~/.emacs.d/host/dni
+w  sp ~/.emacs.d/host/pen.el/src/pen.el
+pq zcd ~/.emacs.d/host/pen.el
+v  zcd ~/.emacs.d/host/metaverses
+V  zcd ~/.emacs.d/host/protoverses
+H  zcd ~/.emacs.d/host/imaginary-programming-thesis
+s  zcd ~/.emacs.d/host/pen.el/scripts
+c  zcd ~/.emacs.d/host/pen.el/src
+X  sp ~/.emacs.d/host/pen.el/src/pen-examplary.el
+d  zcd ~/.emacs.d/host/prompt-design-patterns
+t  zcd ~/.emacs.d/host/personalities
+I  zcd ~/.emacs.d/host/incarnations
+T  zcd ~/.emacs.d/host/tomes
+o  zcd ~/.emacs.d/host/prompts
+O  zcd ~/.emacs.d/host/openai-complete-clj
+m  zcd ~/.emacs.d/host/engines
+n  zcd ~/.emacs.d/host/interpreters
+k  zcd ~/.emacs.d/host/ink.el
+K  zcd ~/.emacs.d/host/khala
+g  zcd ~/.emacs.d/host/glossaries
+y  zcd ~/.emacs.d/host/semiosis
+j  zcd ~/.emacs.d/host/pen-contrib.el
+i  zcd ~/.emacs.d/host/openai-api.el
+hb zcd ~/.emacs.d/host/semiosis-hugo
+a  zcd ~/.emacs.d/host/semiosis-hugo/posts
 HEREDOC
 
 echo "$0" | udl | pen-hls green
@@ -51,41 +51,41 @@ read -n1 d
 
 case "$d" in
     .) cmd="v $0" ;;
-    e) cmd="zcd $REPOS/efm-langserver" ;;
-    S) cmd="zcd $REPOS" ;;
-    7) cmd="zcd $REPOS/channel" ;;
-    C) cmd="zcd $REPOS/creation" ;;
-    Y) cmd="zcd $REPOS/yas-snippets" ;;
-    P) cmd="zcd $REPOS/pensieve" ;;
-    r) cmd="zcd $REPOS/rhizome" ;;
-    l) cmd="zcd $REPOS/ilambda" ;;
-    x) cmd="zcd $REPOS/examplary" ;;
-    D) cmd="zcd $REPOS/dni" ;;
-    w) cmd="sp $REPOS/pen.el/src/pen.el" ;;
-    p|q) cmd="zcd $REPOS/pen.el" ;;
-    v) cmd="zcd $REPOS/metaverses" ;;
-    V) cmd="zcd $REPOS/protoverses" ;;
-    H) cmd="zcd $REPOS/imaginary-programming-thesis" ;;
-    s) cmd="zcd $REPOS/pen.el/scripts" ;;
-    c) cmd="zcd $REPOS/pen.el/src" ;;
-    X) cmd="sp $REPOS/pen.el/src/pen-examplary.el" ;;
-    o) cmd="zcd $REPOS/prompts" ;;
-    O) cmd="zcd $REPOS/openai-complete-clj" ;;
-    m) cmd="zcd $REPOS/engines" ;;
-    n) cmd="zcd $REPOS/interpreters" ;;
-    k) cmd="zcd $REPOS/ink.el" ;;
-    K) cmd="zcd $REPOS/khala" ;;
-    g) cmd="zcd $REPOS/glossaries" ;;
-    y) cmd="zcd $REPOS/semiosis" ;;
-    j) cmd="zcd $REPOS/pen-contrib.el" ;;
-    i) cmd="zcd $REPOS/openai-api.el" ;;
-    d) cmd="zcd $REPOS/prompt-design-patterns" ;;
-    t) cmd="zcd $REPOS/personalities" ;;
-    I) cmd="zcd $REPOS/incarnations" ;;
-    T) cmd="zcd $REPOS/tomes" ;;
-    # t) cmd="zcd $REPOS/openai-classification-training-data" ;;
-    h|b) cmd="zcd $REPOS/semiosis-hugo" ;;
-    a) cmd="zcd $REPOS/semiosis-hugo/posts" ;;
+    e) cmd="zcd ~/.emacs.d/host/efm-langserver" ;;
+    S) cmd="zcd ~/.emacs.d/host" ;;
+    7) cmd="zcd ~/.emacs.d/host/channel" ;;
+    C) cmd="zcd ~/.emacs.d/host/creation" ;;
+    Y) cmd="zcd ~/.emacs.d/host/yas-snippets" ;;
+    P) cmd="zcd ~/.emacs.d/host/pensieve" ;;
+    r) cmd="zcd ~/.emacs.d/host/rhizome" ;;
+    l) cmd="zcd ~/.emacs.d/host/ilambda" ;;
+    x) cmd="zcd ~/.emacs.d/host/examplary" ;;
+    D) cmd="zcd ~/.emacs.d/host/dni" ;;
+    w) cmd="sp ~/.emacs.d/host/pen.el/src/pen.el" ;;
+    p|q) cmd="zcd ~/.emacs.d/host/pen.el" ;;
+    v) cmd="zcd ~/.emacs.d/host/metaverses" ;;
+    V) cmd="zcd ~/.emacs.d/host/protoverses" ;;
+    H) cmd="zcd ~/.emacs.d/host/imaginary-programming-thesis" ;;
+    s) cmd="zcd ~/.emacs.d/host/pen.el/scripts" ;;
+    c) cmd="zcd ~/.emacs.d/host/pen.el/src" ;;
+    X) cmd="sp ~/.emacs.d/host/pen.el/src/pen-examplary.el" ;;
+    o) cmd="zcd ~/.emacs.d/host/prompts" ;;
+    O) cmd="zcd ~/.emacs.d/host/openai-complete-clj" ;;
+    m) cmd="zcd ~/.emacs.d/host/engines" ;;
+    n) cmd="zcd ~/.emacs.d/host/interpreters" ;;
+    k) cmd="zcd ~/.emacs.d/host/ink.el" ;;
+    K) cmd="zcd ~/.emacs.d/host/khala" ;;
+    g) cmd="zcd ~/.emacs.d/host/glossaries" ;;
+    y) cmd="zcd ~/.emacs.d/host/semiosis" ;;
+    j) cmd="zcd ~/.emacs.d/host/pen-contrib.el" ;;
+    i) cmd="zcd ~/.emacs.d/host/openai-api.el" ;;
+    d) cmd="zcd ~/.emacs.d/host/prompt-design-patterns" ;;
+    t) cmd="zcd ~/.emacs.d/host/personalities" ;;
+    I) cmd="zcd ~/.emacs.d/host/incarnations" ;;
+    T) cmd="zcd ~/.emacs.d/host/tomes" ;;
+    # t) cmd="zcd ~/.emacs.d/host/openai-classification-training-data" ;;
+    h|b) cmd="zcd ~/.emacs.d/host/semiosis-hugo" ;;
+    a) cmd="zcd ~/.emacs.d/host/semiosis-hugo/posts" ;;
 esac
 echo
 echo "$cmd" | pen-hls nearblack
