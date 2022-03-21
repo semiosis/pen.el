@@ -246,7 +246,8 @@ so the same nrepl is used for all files in the project"
          (pdir (locate-dominating-file default-directory "project.clj"))
          (dir (or (and (string-equal gdir pdir)
                        gdir)
-                  pdir))
+                  pdir
+                  (pen-pwd)))
          ;; Timestamp is needed to ensure created buffers are unique
          (ts (str (date-ts)))
          (jack-in-bufname (concat "*" (slugify (concat "jack-in" " in " dir)) "-" ts "*"))
