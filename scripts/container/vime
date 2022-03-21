@@ -18,7 +18,7 @@ stdin_exists() {
 eval_vim_expr() {
     vim_expr="$1"
 
-    vim -u NONE -es '+:source $HOME/var/smulliga/source/git/config/vim/utils.vim' "+:call Insert($vim_expr))" '+:wq! /dev/stdout'
+    vim -u NONE -es '+:source $HOME/.emacs.d/pen.el/config/utils.vim' "+:call Insert($vim_expr))" '+:wq! /dev/stdout'
 }
 
 if stdin_exists; then
