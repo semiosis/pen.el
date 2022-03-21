@@ -319,6 +319,12 @@ case "$sn" in
     }
     ;;
 
+    psh) {
+        sn=pen
+        start_shell=y
+    }
+    ;;
+
     *)
 esac
 
