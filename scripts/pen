@@ -100,8 +100,19 @@ docker-running-p() {
 }
 
 stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+    ! [ -t 0 ] && \
+        ! test "$(readlink /proc/$$/fd/0)" = /dev/null && \
+        ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but `test -t 0` will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
 }
+
+if ! stdin_exists; then
+    # If no stdin, make it point to the tty
+    exec <&1
+fi
+
+# set -xv
 
 test_deps() {
     (
@@ -834,7 +845,11 @@ HEREDOC
         ensure_pen_running
     fi
 
-    docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+    if is_tty; then
+        docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+    else
+        docker exec "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+    fi
 
     if test "$no_start_emacs" = y; then
         if docker-running-p && yn "Stop container?"; then
@@ -972,10 +987,6 @@ fi
 if test "$sn" = pen && test "$#" -eq 0 && { inside-docker-p || docker-running-p; }; then
     sn=penc
 fi
-
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
 
 if test "$sn" = pena; then
     sn=penf

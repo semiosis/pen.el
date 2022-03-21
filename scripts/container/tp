@@ -1,0 +1,111 @@
+#!/bin/bash
+unset TTY
+
+# This is the place for unix-like programs but ones with terminal
+# interfaces
+
+# Related:
+# $HOME/scripts/u
+
+# If stout is a tty
+is_stdout_tty() {
+    [[ -t 1 ]]
+}
+
+opt="$1"
+shift
+case "$opt" in
+    rtl|rt-locate|realtime-locate) {
+        notify-send "$opt :: NOT IMPLEMENTED"
+
+        rtcmd.py -c "/usr/bin/locate -i -P -r | less -S"
+    }
+    ;;
+
+    vipe) {
+        pen-tm sph pen-vipe
+    }
+    ;;
+
+    # This might not be very useful atm. What I reall need is to use
+    # " | f z" but for fzf to open the result in an editor if I want.
+    coe|cat-or-edit) {
+        if is_stdout_tty; then
+            head -n 1 | xargs vim
+        else
+            cat
+        fi
+    }
+    ;;
+
+    fhs|find-here-symlink) {
+        ls -ldt * | sed -n "/->/p" | sed 's/^.* \([0-9]\{4\}\|[0-9]\{2\}:[0-9]\{2\}\) //' | glob-grep "$@"
+    }
+    ;;
+
+    fhp|find-here-path) {
+        pen-F find-no-git -i "$@"
+    }
+    ;;
+
+    dp|delete-paths) {
+        # set -xv
+
+        input="$(cat | pen-mnm)"
+        files="$(printf -- "%s" "$input" | pen-ux dirsuffix)"
+        prettied_files="$(printf -- "%s" "$input" | pen-ux dirsuffix | while read line; do
+        )"
+
+        lastmessage="You are about to delete some files:\n$prettied_files"
+
+        # If not a tty but TTY is exported from outside, attach the tty
+        if test "$mytty" = "not a tty" && ! [ -z ${TTY+x} ]; then
+            p "Attaching tty" 1>&2
+            exec 0<"$TTY"
+            exec 1>"$TTY"
+        else
+            # Otherwise, this probably has its own tty and only needs normal
+            # reattachment (maybe stdin was temporarily redirected)
+            exec <`pen-tm-tty`
+        fi
+
+        if ! [[ -t 1 ]]; then
+            notify-send "No tty. Not proceeding."
+            p "No tty. Not proceeding."
+            exit 0
+        fi
+
+        clear
+        printf -- "$lastmessage"
+        echo
+
+        if ! [ "$?" -eq 0 ]; then
+            p "Not proceeding to delete files"
+            exit 0
+        fi
+
+        echo
+        p "Unminimised:"
+        p "$files" | pen-umn # | pen-str indent
+        echo
+
+        p "CWD: $(pwd)"
+        p "Command: xargs rm -rf"
+        echo
+
+        if pen-yn "Are you sure? "; then
+            p "$files" | pen-umn | while read line; do
+                rm -rf "$line"
+            done
+            p "... Done."
+            echo ls:
+            echo
+            ls
+        fi
+
+        retval=$?
+    }
+    ;;
+
+    *)
+esac

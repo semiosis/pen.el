@@ -648,6 +648,8 @@ otherwise the whole string is unquoted."
                 (widen)))
           (backward-kill-word 1))))))
 
+(advice-add 'lispy-eval :around #'ignore-errors-around-advice)
+
 (define-key lispy-mode-map (kbd "e") nil)
 (define-key lispy-mode-map (kbd "[") nil)
 (define-key lispy-mode-map (kbd "]") nil)

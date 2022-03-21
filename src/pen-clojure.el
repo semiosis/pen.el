@@ -385,14 +385,14 @@ older requests with \"done\" status."
 
 (defun pen-clojure-eval-last-sexp ()
   (interactive)
-  (let ((s (eval-string (concat "'" (cider-last-sexp)))))
+  (let ((s (regex-match-string-1 "^(\\([^ ]+\\) " (cider-last-sexp))))
     (cond
-     ((string-equal "ns" (car s))
+     ((string-equal "ns" s)
       (progn
         (call-interactively 'cider-eval-last-sexp)
         (call-interactively 'cider-repl-set-ns)))
      ;; could be t/deftest
-     ((string-match "deftest" (str (car s)))
+     ((string-match "deftest" (str s))
       (progn
         (call-interactively 'cider-eval-last-sexp)
         (call-interactively 'cider-test-run-test)))
@@ -584,6 +584,29 @@ the namespace in the Clojure source buffer"
 ;;                           (cider--nrepl-pr-request-map))
 ;;   (when prefix
 ;;     (cider-switch-to-repl-buffer)))
+
+(defun pen-cider-go-to-symbol (&optional ns symbol doc full-doc)
+  "Choose Clojure symbols across namespaces.
+
+Each Helm source is a Clojure namespace (ns), and candidates are
+symbols in the namespace."
+  (interactive)
+  (cider-ensure-connected)
+  (cl-multiple-value-bind (ns symbol) (helm-cider--resolve-symbol ns symbol)
+    (let ((symbol (cond ((and symbol doc) (regexp-quote (concat ns "/" symbol)))
+                        (symbol (helm-cider--regexp-symbol symbol)))))
+      (with-helm-after-update-hook
+        (with-helm-buffer
+          (let ((helm--force-updating-p t))
+            (if symbol
+                (helm-preselect symbol (helm-cider--source-by-name ns))
+              (helm-goto-source (or ns ""))
+              (when ns
+                (helm-next-line)))
+            (recenter 1))))
+      (helm :buffer "*Helm Clojure Symbols*"
+            :candidate-number-limit 9999
+            :sources (helm-cider--apropos-sources nil doc full-doc)))))
 
 (define-key cider-mode-map (kbd "C-c C-o") nil)
 (define-key cider-mode-map (kbd "C-M-i") nil)

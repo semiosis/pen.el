@@ -63,4 +63,17 @@
     (emacs-lisp-mode)))
 (defalias 'evar 'edit-var-elisp)
 
+;; doesn't work perrfectly. But it's useful.
+;; http:/grapevine.net.au$HOMEstriggs/elisp/emacs-homebrew.el
+;; Useful custom functions
+(defun reselect-last-region ()
+  (interactive)
+  (let ((start (mark t))
+        (end (point)))
+    (goto-char start)
+    (call-interactively' set-mark-command)
+    (goto-char end)))
+(defalias 'reselect 'reselect-last-region)
+(defalias 'activate-region 'reselect-last-region)
+
 (provide 'pen-utils)

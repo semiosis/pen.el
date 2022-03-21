@@ -1,0 +1,11 @@
+#!/bin/bash
+
+pattern="$1"
+: "${pattern:="*"}"
+
+# simplification
+# pattern=${1:-"*"}
+
+awk 1 | while IFS=$'\n' read -r line; do
+  [[ "$line" = $pattern ]] && printf '%s\n' "$line"
+done
