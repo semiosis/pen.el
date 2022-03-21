@@ -70,18 +70,4 @@
 (setq helm-fzf-executable "pen-helm-fzf.sh")
 (setq helm-fzf-executable-d2 "pen-helm-fzf-d2.sh")
 
-(defun pen-helm-fzf (&optional top depth)
-  (interactive)
-  (let ((dir (if (or top (equalp current-prefix-arg '(4)))
-                 (vc-get-top-level)
-               (pen-pwd))))
-    (if (equalp current-prefix-arg '(16))
-        (progn
-          (helm-fzf-d2 dir
-                       (if (pen-selected-p)
-                           (concat "'" (pen-selection)))))
-      (helm-fzf dir
-                (if (pen-selected-p)
-                    (concat "'" (pen-selection)))))))
-
 (provide 'pen-helm-fzf)
