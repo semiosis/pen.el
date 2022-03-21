@@ -53,8 +53,13 @@
     (message (str lcmd))))
 
 (defun evil-enabled ()
-  "True if in evil mode."
-  (bound-and-true-p evil-mode))
+  "True if in evil mode. Spacemacs agnostic."
+  ;; Keep in mind that evil-mode is enabled when emacs is in holy mode. I have to also check if we are spacemacs
+
+  ;; Keep this, even for pen. Otherwise selected will break on the host
+  (if (fboundp 'spacemacs/toggle-holy-mode-p)
+      (not (spacemacs/toggle-holy-mode-p))
+    (minor-mode-enabled evil-mode)))
 
 (defmacro do-in-evil (body)
   "This will execute the emacs lisp in evil-mode. It will switch to evil-mode temporarily if it's not enabled."
