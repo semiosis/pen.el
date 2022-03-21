@@ -110,6 +110,9 @@ stdin_exists() {
 if ! stdin_exists; then
     # If no stdin, make it point to the tty
     exec <&1
+else
+    input_fp="$(cat | pen-tf txt)"
+    exec <&1
 fi
 
 # set -xv
@@ -846,7 +849,13 @@ HEREDOC
     fi
 
     if is_tty; then
-        docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+        if test -n "$input_fp"; then
+            mkdir -p ~/.pen
+            cp -a "$input_fp" ~/.pen/host_stdin.txt
+            docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; cat ~/.pen/host_stdin.txt | $CMD"
+        else
+            docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+        fi
     else
         docker exec "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
     fi
