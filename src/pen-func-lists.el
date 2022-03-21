@@ -9,6 +9,7 @@
 (defset prog-mode-funcs '(pen-lsp-get-hover-docs
                           run-file-with-interpreter
                           handle-projectfile
+                          handle-rename-symbol
                           magit-log-buffer-file))
 (defset yaml-mode-funcs
   (list
