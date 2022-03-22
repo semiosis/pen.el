@@ -148,17 +148,9 @@ mkdir -p ~/.pen/prolog/databases
 
 # emacs -nw --debug-init
 
-in-tm() {
-    if test "$PEN_NO_TM" = "y"; then
-        "$@"
-    elif inside-docker-p && inside-tmux-p; then
-        "$@"
-    elif test "$PEN_USE_GUI" = "y"; then
-        "$@"
-    else
-        pen-tm init-or-attach "$@"
-    fi
-}
+# for in-tm
+export PEN_NO_TM
+export PEN_USE_GUI
 
 runclient() {
     if test "$USE_NVC" = "y"; then
