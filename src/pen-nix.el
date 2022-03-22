@@ -123,7 +123,7 @@ Be mindful of quoting arguments correctly."
 (defalias 'tless 'less)
 
 (defun vime (input)
-  (pen-sn "vime" input))
+  (pen-snc "vime" input))
 
 (defun xxd-spv (input)
   (sh "xxd -g1 | tless" input nil nil "sh" t "spv"))

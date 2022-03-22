@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+funcname="$1"
+
+pen-odn pen-e -e "(find-thing '$funcname)"

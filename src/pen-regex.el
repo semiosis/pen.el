@@ -242,7 +242,7 @@
          (or (match-string-no-properties 1 s)
              (match-string-no-properties 0 s)))))
 (defalias 'regex-match-string 'pen-regex-match-string-1)
-(defalias 's-substring 'regex-match-string-1)
+(defalias 's-substring 'pen-regex-match-string-1)
 
 (defun pen-re-seq (regexp string)
   "Get a list of all regexp matches in a string"

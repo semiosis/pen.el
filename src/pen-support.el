@@ -973,7 +973,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
          (or (match-string-no-properties 1 s)
              (match-string-no-properties 0 s)))))
 (defalias 'regex-match-string 'pen-regex-match-string-1)
-(defalias 's-substring 'regex-match-string-1)
+(defalias 's-substring 'pen-regex-match-string-1)
 
 (defun s-trailing-whitespace (s)
   (regex-match-string "[ \t\n]*\\'" s))
