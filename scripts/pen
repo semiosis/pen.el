@@ -2037,7 +2037,7 @@ else
     pen_eval "$shcode"
 fi
 
-if test "$docker_cmd" = exec && istty; then
+if test "$docker_cmd" = exec && is_tty; then
     clear
     echo Pen exited | pen-hls red
 fi
