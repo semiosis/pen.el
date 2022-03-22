@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+in-tm() {
+    if test "$PEN_NO_TM" = "y"; then
+        "$@"
+    elif inside-docker-p && inside-tmux-p; then
+        "$@"
+    elif test "$PEN_USE_GUI" = "y"; then
+        "$@"
+    else
+        pen-tm init-or-attach "$@"
+    fi
+}
+
+in-tm "$@"
