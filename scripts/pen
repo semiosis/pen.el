@@ -976,9 +976,15 @@ elif { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" 
     export PEN_EIPE_DATA
 
     if ! inside-docker-p; then
-        ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
-        shift
-        set -- "/root/.pen/documents/$bn" "$@"
+        local_path="$(p "$rp" | pen-convert-path-to-local)"
+        if test "$rp" = "$local_path"; then
+            ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
+            shift
+            set -- "/root/.pen/documents/$bn" "$@"
+        else
+            shift
+            set -- "$local_path" "$@"
+        fi
 
         # This is ideal, but requires more work
         # set -- -e "(find-file $(cmd-nice "/root/.pen/documents/$bn"))"

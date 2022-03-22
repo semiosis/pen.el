@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+convert_path() {
+    sed -e "s=.*/semiosis/=/root/.emacs.d/host/="
+}
+
+current_path="$(cat)"
+local_path="$(p "$current_path" | convert_path)"
+
+if ! test "$current_path" = "$local_path"; then
+    echo "$local_path"
+else
+    echo "$current_path"
+fi
+
