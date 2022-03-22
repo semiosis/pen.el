@@ -1,8 +1,18 @@
 #!/bin/bash
 export TTY
 
+IFS= read -r -d '' substitutions <<HEREDOC
+s=.*/semiosis/=/root/.emacs.d/host/=;
+HEREDOC
+
+if command -v yq &>/dev/null; then
+    substitutions="$substitutions;$(cat ~/.pen/pen.yaml | yq -r ".volumes[]" | awk 1 | sed -e 's=^=/volumes=' -e 's/$/;' | tr -d '\n')"
+else
+    substitutions="$substitutions;$(cat ~/.pen/volumes.txt | awk 1 | sed -e 's=^=/volumes=' -e 's/$/;' | tr -d '\n')"
+fi
+
 convert_path() {
-    sed -e "s=.*/semiosis/=/root/.emacs.d/host/="
+    sed -e "$substitutions"
 }
 
 current_path="$(cat)"
