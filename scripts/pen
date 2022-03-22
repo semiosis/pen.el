@@ -2038,7 +2038,7 @@ else
 fi
 
 if test "$docker_cmd" = exec && is_tty; then
-    clear
+    reset
     echo Pen exited | pen-hls red
 fi
 
