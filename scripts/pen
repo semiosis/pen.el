@@ -976,7 +976,7 @@ elif { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" 
     export PEN_EIPE_DATA
 
     if ! inside-docker-p; then
-        local_path="$(p "$rp" | pen-convert-path-to-local)"
+        local_path="$(realpath "$rp" | pen-convert-path-to-local)"
         if test "$rp" = "$local_path"; then
             ln -f "$rp" "$PEN_CONFIG_DIR/documents/$bn"
             shift
@@ -1908,10 +1908,12 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(
         if command -v yq &>/dev/null; then
             cat ~/.pen/pen.yaml | yq -r ".volumes[]" | awk 1 | while IFS=$'\n' read -r vol; do
+            vol="$(realpath "$vol")"
             test -n "$vol" && printf -- "%s " -v "$vol:/volumes/$vol" 
             done
         else
             cat ~/.pen/volumes.txt | awk 1 | while IFS=$'\n' read -r vol; do
+            vol="$(realpath "$vol")"
             test -n "$vol" && printf -- "%s " -v "$vol:/volumes/$vol" 
             done
         fi
