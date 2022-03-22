@@ -25,6 +25,8 @@ export LANG=en_US
 # For nlsh and ii
 agi rlwrap
 
+agi eog
+
 # For emacs-yamlmod
 agi clang libclang1
 
