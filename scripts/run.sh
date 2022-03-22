@@ -20,9 +20,9 @@ if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host
     exit "$?"
 fi
 
-if test -d ~/.pen/notes; then
+if test -d ~/.pen/documents/notes; then
     rm /rf ~/notes
-    ln -sf ~/.pen/notes ~/
+    ln -sf ~/.pen/documents/notes ~/
 fi
 
 if test -d ~/.emacs.d/host/pen.el/config; then
