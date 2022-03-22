@@ -2024,6 +2024,11 @@ else
     pen_eval "$shcode"
 fi
 
+if test "$docker_cmd" = exec && istty; then
+    clear
+    echo Pen exited | pen-hls red
+fi
+
 if test "$force_shutdown_container" = "y"; then
     # penq should've quit pen.el, but it may be hanging
     if docker-running-p; then
