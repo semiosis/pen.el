@@ -2038,8 +2038,9 @@ else
 fi
 
 if test "$docker_cmd" = exec && is_tty; then
-    reset
+    clear
     echo Pen exited | pen-hls red
+    tmux send C-l &>/dev/null
 fi
 
 if test "$force_shutdown_container" = "y"; then
