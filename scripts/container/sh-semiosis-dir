@@ -9,6 +9,8 @@ read -r -d '' options <<HEREDOC
 .  EDIT
 e  zcd ~/.emacs.d/host/efm-langserver
 S  zcd ~/.emacs.d/host
+d  zcd ~/.pen/documents
+n  zcd ~/notes
 7  zcd ~/.emacs.d/host/channel
 C  zcd ~/.emacs.d/host/creation
 Y  zcd ~/.emacs.d/host/yas-snippets
@@ -53,6 +55,8 @@ case "$d" in
     .) cmd="v $0" ;;
     e) cmd="zcd ~/.emacs.d/host/efm-langserver" ;;
     S) cmd="zcd ~/.emacs.d/host" ;;
+    d) cmd="zcd ~/.pen/documents" ;;
+    n) cmd="zcd ~/notes" ;;
     7) cmd="zcd ~/.emacs.d/host/channel" ;;
     C) cmd="zcd ~/.emacs.d/host/creation" ;;
     Y) cmd="zcd ~/.emacs.d/host/yas-snippets" ;;

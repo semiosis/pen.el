@@ -70,6 +70,14 @@
   (interactive)
   (dired pen-khala-directory))
 
+(defun pen-dired-documents ()
+  (interactive)
+  (dired (f-join penconfdir "documents")))
+
+(defun pen-dired-notes ()
+  (interactive)
+  (dired (f-join user-home-directory "notes")))
+
 (defun pen-reload-config-file ()
   "Fuzzy selects a selects file to be loaded."
   (interactive)

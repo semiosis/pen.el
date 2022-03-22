@@ -176,6 +176,8 @@
 (sslk "lgf" 'find-file-at-point)
 (sslk "lN" 'magit-status)
 
+(sslk "ldqd" 'pen-dired-documents)
+(sslk "ldqn" 'pen-dired-notes)
 (sslk "ldqp" 'pen-acolyte-dired-penel)
 (sslk "ldqo" 'pen-acolyte-dired-prompts)
 (sslk "ldqm" 'pen-acolyte-dired-engines)
