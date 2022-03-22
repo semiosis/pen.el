@@ -21,7 +21,7 @@ if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host
 fi
 
 if test -d ~/.pen/documents/notes; then
-    rm /rf ~/notes
+    rm -rf ~/notes
     ln -sf ~/.pen/documents/notes ~/
 fi
 
