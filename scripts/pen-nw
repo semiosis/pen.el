@@ -49,7 +49,11 @@ export TARGET
 : "${CMD:="$(0</dev/null cmd "$@" | pen-mnm | cut -c 1-30 | slugify | sed 's/^-//;s/-$//')"}"
 
 stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+    ! [ -t 0 ] && \
+        ! test "$(readlink /proc/$$/fd/0)" = /dev/null && \
+        ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
 }
 
 is_tty() {
