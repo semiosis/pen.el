@@ -116,3 +116,8 @@ disabled-prompts:
 disabled-engines:
 - "AlephAlpha.*"
 disabled-models:
+
+# Create docker container mount points for these directories
+# They are found under /volumes on the container
+volumes:
+  - /home/shane/source/git
