@@ -42,7 +42,7 @@ fi
 #          input into a variable. actually, capture to a file so fzf
 #          streams the input.
 
-#preview="p {} | umn | xargs head -n $LINES"
+#preview="p {} | pen-umn | xargs head -n $LINES"
 #preview="p {} | fzf-scope -n $LINES"
 
 preview="pen-fzf-scope"
@@ -209,7 +209,7 @@ esac; done
 filter_in() {
     {
         if test "$minimise" = "y"; then
-            mnm
+            pen-mnm
         else
             cat
         fi
@@ -231,7 +231,7 @@ filter_out() {
         fi
     } | {
         if test "$minimise" = "y"; then
-            umn
+            pen-umn
         else
             cat
         fi
@@ -279,7 +279,7 @@ if [ -n "$preview" ]; then
     fi
 
     if test "$minimise" = "y"; then
-        preview="umn | $preview"
+        preview="pen-umn | $preview"
     fi
 
     if test "$print_query" = "y"; then
