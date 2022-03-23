@@ -357,6 +357,7 @@ display values."
                          ;; ("[" #'annot-goto-previous "previous annotation")
                          ("F" #'find-function "find function")
                          ("g" #'find-function "find function")
+                         ("j" #'handle-fz-sym "find function")
                          ("v" #'find-variable "find variable")
                          ;; ("t" #'helpful-at-point "helpful thing at point")
                          ("t" 'describe-thing-at-point "describe thing at point")

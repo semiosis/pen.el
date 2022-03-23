@@ -173,23 +173,14 @@
   (newline-and-indent))
 
 (define-key prog-mode-map (kbd "M-RET") 'new-line-and-indent)
-
 (define-key prog-mode-map (kbd "M-l M-j M-w") 'handle-spellcorrect)
-
 (define-key prog-mode-map (kbd "C-x C-o") 'ff-find-other-file)
-
 (define-key prog-mode-map (kbd "H-{") 'handle-callees)
 (define-key prog-mode-map (kbd "H-}") 'handle-callers)
-
 (define-key prog-mode-map (kbd "H-u") nil)
-
 (define-key prog-mode-map (kbd "H-*") 'handle-refactor)
-
 (define-key prog-mode-map (kbd "H-v") 'handlenav/body)
-
 (define-key prog-mode-map (kbd "M-J") 'evil-join)
-(define-key prog-mode-map (kbd "M-l M-r M-j") 'handle-fz-sym)
-
 (define-key prog-mode-map (kbd "C-c C-o") 'org-open-at-point)
 (define-key prog-mode-map (kbd "C-c h f") 'handle-docfun)
 
