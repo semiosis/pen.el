@@ -857,59 +857,59 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
        (t "")))))
 
 (cl-defun cl-fz (list &key prompt &key full-frame &key initial-input &key must-match &key select-only-match &key hist-var &key add-props &key no-hist)
-          (setq select-only-match
-                (or select-only-match
-                    (pen-var-value-maybe 'pen-select-only-match)))
+  (setq select-only-match
+        (or select-only-match
+            (pen-var-value-maybe 'pen-select-only-match)))
 
-          (if no-hist
-              (setq hist-var nil)
-              (if (and (not hist-var)
-                       (sor prompt))
-                  (setq hist-var (intern (concat "histvar-fz-" (slugify prompt))))))
+  (if no-hist
+      (setq hist-var nil)
+    (if (and (not hist-var)
+             (sor prompt))
+        (setq hist-var (intern (concat "histvar-fz-" (slugify prompt))))))
 
-          (setq prompt (sor prompt ":"))
+  (setq prompt (sor prompt ":"))
 
-          (if (not (string-match " $" prompt))
-              (setq prompt (concat prompt " ")))
+  (if (not (string-match " $" prompt))
+      (setq prompt (concat prompt " ")))
 
-          (if (eq (type-of list) 'symbol)
-              (cond
-                ((variable-p 'clojure-mode-funcs) (setq list (eval list)))
-                ((fboundp 'clojure-mode-funcs) (setq list (funcall list)))))
+  (if (eq (type-of list) 'symbol)
+      (cond
+       ((variable-p 'clojure-mode-funcs) (setq list (eval list)))
+       ((fboundp 'clojure-mode-funcs) (setq list (funcall list)))))
 
-          (if (stringp list)
-              (setq list (split-string list "\n")))
+  (if (stringp list)
+      (setq list (split-string (chomp list) "\n")))
 
-          (if (and select-only-match (eq (length list) 1))
-              (car list)
-              (let ((sel))
-                (setq prompt (or prompt ":"))
-                (let ((helm-full-frame full-frame)
-                      (completion-extra-properties nil))
+  (if (and select-only-match (eq (length list) 1))
+      (car list)
+    (let ((sel))
+      (setq prompt (or prompt ":"))
+      (let ((helm-full-frame full-frame)
+            (completion-extra-properties nil))
 
-                  (if add-props
-                      (setq completion-extra-properties
-                            (append
-                             completion-extra-properties
-                             add-props)))
+        (if add-props
+            (setq completion-extra-properties
+                  (append
+                   completion-extra-properties
+                   add-props)))
 
-                  (if (and (listp (car list)))
-                      (setq completion-extra-properties
-                            (append
-                             '(:annotation-function fz-completion-second-of-tuple-annotation-function)
-                             completion-extra-properties)))
+        (if (and (listp (car list)))
+            (setq completion-extra-properties
+                  (append
+                   '(:annotation-function fz-completion-second-of-tuple-annotation-function)
+                   completion-extra-properties)))
 
-                  (setq sel (completing-read prompt list nil must-match initial-input hist-var)))
+        (setq sel (completing-read prompt list nil must-match initial-input hist-var)))
 
-                ;; This refreshes the term usually, but not always. It realigns up some REPLs, such as lein.
-                ;; Not worth it just for hhgttg
-                (if (and
-                     pen-term-cl-refresh-after-fz
-                     (major-mode-p 'term-mode)
-                     ;; char is raw mode
-                     (term-in-char-mode))
-                    (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
-                sel)))
+      ;; This refreshes the term usually, but not always. It realigns up some REPLs, such as lein.
+      ;; Not worth it just for hhgttg
+      (if (and
+           pen-term-cl-refresh-after-fz
+           (major-mode-p 'term-mode)
+           ;; char is raw mode
+           (term-in-char-mode))
+          (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
+      sel)))
 
 (defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props hist-var no-hist)
   (cl-fz

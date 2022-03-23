@@ -585,10 +585,66 @@ the namespace in the Clojure source buffer"
 ;;   (when prefix
 ;;     (cider-switch-to-repl-buffer)))
 
+;; TODO List all the project symbols then make a fuzzy finder
+(defun clojure-list-dir-symbols (dir)
+  (interactive (list (if (cider-connected-p)
+                         (clojure-project-dir (cider-current-dir))
+                       (read-directory-name "khala-go-to-symbol dir: "))))
+  (setq dir (pen-umn
+             (or (sor dir)
+                 "/root/.emacs.d/host/khala")))
+  (let* ((syms (pen-sn
+                "cut -d ' ' -f 2"
+                ;; grep -HnoP -- "defn [a-z \!?-]+" $(glob -b '**/*.clj')
+                (pen-sn (concat "cd " (pen-q dir) "; grep -HnoP -- " (pen-q (concat "(defn|deftest|def) [a-z \!?-]+( |$)")) " $(pen-glob '**/*.clj')")
+                        nil dir))))
+    syms))
+
+(defun clojure-fz-symbol (dir)
+  ;; (interactive)
+  (interactive (list
+                (if (cider-connected-p)
+                    (clojure-project-dir (cider-current-dir))
+                  (read-directory-name "khala-go-to-symbol dir: "))))
+  (let* ((syms (clojure-list-dir-symbols dir))
+         (sym (fz syms nil nil "khala-go-to-symbol: " nil t)))
+    (clojure-go-to-symbol sym dir)))
+
+(defun clojure-go-to-symbol (sym dir)
+  (interactive (list (read-string-hist "khala-go-to-symbol sym: ")
+                     (if (cider-connected-p)
+                         (clojure-project-dir (cider-current-dir))
+                       (read-directory-name "khala-go-to-symbol dir: "))))
+  (setq dir (pen-umn
+             (or (sor dir)
+                 "/root/.emacs.d/host/khala")))
+  (let* ((symstr (str sym))
+         (pat (cond
+               ((re-match-p "!$" symstr) (s-replace-regexp "!" "\\\\!" symstr))
+               ((re-match-p "?$" symstr) (s-replace-regexp "?" "\\?" symstr))
+               (t (concat symstr "( |$)"))))
+         (locs (pen-sn
+                "cut -d ':' -f 1,2"
+                (pen-sn (concat "cd " (pen-q dir) "; grep -HnoP -- " (pen-q (concat "(defn|deftest|def) " pat)) " $(pen-glob '**/*.clj')")
+                        nil dir)))
+         (loc (fz locs nil nil (format "khala-go-to-symbol (%s): " symstr) nil t))
+         (fp (pen-snc "cut -d : -f 1" loc))
+         (fp (f-join dir fp))
+         (pos (pen-snc "cut -d : -f 2" loc)))
+    (if (f-exists-p fp)
+        (with-current-buffer
+            (find-file fp)
+          (goto-line (string-to-number pos))))))
+
 (defun khala-go-to-symbol (sym)
-  (interactive)
-  ;; (pen-etv (pen-sn "cd \"$HOME/source/git/semiosis/khala\"; grep -HnoP -- \"defn [a-z \\!?-]+\" **/*.clj"))
-  (pen-etv (pen-sn "cd \"$HOME/source/git/semiosis/khala\"; grep -HnoP -- \"(defn|deftest|def) .*\\b" (str sym) "\\b\" **/*.clj")))
+  (interactive (list (read-string-hist "khala-go-to-symbol: ")))
+  (clojure-go-to-symbol sym "/root/.emacs.d/host/khala"))
+
+(comment
+ (khala-go-to-symbol "split-by-slash")
+ (khala-go-to-symbol "file-exists?")
+ (khala-go-to-symbol "get-file-list!")
+ (khala-go-to-symbol "get-rc"))
 
 (defun pen-cider-go-to-symbol (&optional ns symbol doc full-doc)
   "Choose Clojure symbols across namespaces.

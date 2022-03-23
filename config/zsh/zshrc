@@ -322,6 +322,7 @@ bindkey -s "^[J" "^A^Kf find-file-repo \"*\"^B" # find a file by name in all com
 bindkey -s "^[l" "^A^Ksh-general\r"
 bindkey -s "^[L" "^A^Ksh-ranger-lingo .\r"
 bindkey -s "^[j" "^A^Ksh-jump\r"
+bindkey -s "^[y" "^A^Ksh-yank\r"
 bindkey -s "^[;" "^A^Ksh-git-hydra\r"
 bindkey -s "^[:" "^A^Kgit diff --cached\r"
 bindkey -s "^[M" "^A^Kmagithub\r"

@@ -62,6 +62,9 @@
                 cider-doc-thing-at-point)
         :toggle-test '(projectile-toggle-between-implementation-and-test
                        clojure-open-test)
+        :fz-sym '(clojure-fz-symbol
+                  ;; clojure-go-to-symbol
+                  helm-cider-apropos-symbol)
         :godef '(lsp-find-definition
                  cider-find-var
                  xref-find-definitions-immediately
@@ -158,6 +161,7 @@
         :repls '(ielm)
         :formatters '(lsp-format-buffer)
         :global-references '(my-helpful--all-references-sym)
+        :fz-sym '(find-function)
         :docs '(my-doc-override
                 describe-thing-at-point
                 helpful-symbol-at-point)

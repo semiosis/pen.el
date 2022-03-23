@@ -101,6 +101,7 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :projectfile)
 ;; toggle between test case
 (add-to-list 'handle-keywords :toggle-test)
+(add-to-list 'handle-keywords :fz-sym)
 
 (defcustom handle-nice-functions nil
   "List of commands that return t on success like good citizens.

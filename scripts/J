@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+# find-thing, in order:
+# - symbol from elisp
+# - program on the path (i.e. shell scripts)
+
+funcname="$1"
+
+# pen sh in-tm pen-e -e "(find-file \"/root/.emacs.d/host/khala/project.clj\")(pen-cider-go-to-symbol \"mount-pensieve\")"
+
+if test -n "$funcname"; then
+    pen sh in-tm pen-e -e "(khala-go-to-symbol $(cmd-nice-posix "$1"))"
+else
+    pen sh in-tm pen-e -e "(clojure-fz-symbol \"/root/.emacs.d/host/khala\")"
+fi
+
