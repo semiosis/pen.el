@@ -84,7 +84,8 @@
         :nexterr '(cider-jump-to-compilation-error)
 
         :nextdef '(pen-prog-next-def
-                   lispy-flow))
+                   lispy-flow)
+        :prevdef '(pen-prog-prev-def))
 
 (handle '(prog-mode)
         :complete '()
