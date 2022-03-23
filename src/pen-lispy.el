@@ -38,8 +38,8 @@
                    (lambda (,@arglist)
                      (interactive (list ,@iarglist))
                      (let* ((valstr (pen-cmd ,@arglist))
-                            (clj (concat "(" symstr " " valstr ")")))
-                       (cider-nrepl-sync-request:eval clj nil))))))
+                            (clj (concat "(" ,symstr " " valstr ")")))
+                       (cider-nrepl-request:eval clj nil))))))
             (cider-nrepl-request:eval (concat "(" symstr ")") nil))))))
 
 ;; J:mount-pensieve
