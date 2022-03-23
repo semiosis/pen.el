@@ -15,6 +15,9 @@
         (get-vim-link))
     (call-interactively 'self-insert-command)))
 
+;; J:mount-pensieve
+;; (s-substring "\\[\\(.*\\)\\]" (str (caddr (sexp-at-point))))
+;; (cider-nrepl-sync-request:eval "(pen-test-interactive-clj \"hello\" \"\" \"\")" nil)
 (defun pen-lispy-eval-eval ()
   "Evaluate sexp at point and then evaluate the result as a function."
   (interactive)
@@ -45,8 +48,27 @@
          ((derived-mode-p 'clojure-mode)
           (progn
             (call-interactively 'pen-lisp-e)
-            (let ((symstr (symbol-name (cadr (sexp-at-point)))))
-              (ignore-errors
+            (let* ((sexp (sexp-at-point))
+                   ;; cadr = second
+                   (symstr (symbol-name (cadr sexp)))
+                   ;; caddr = third
+                   (argvec (third sexp))
+                   (arglist (pen-vector2list argvec))
+                   (iarglist (mapcar
+                              (lambda (e) `(read-string-hist ,(concat (str e) ": ")))
+                              arglist))
+                   (argrepr (str (third sexp)))
+                   (argstr (s-substring "\\[\\(.*\\)\\]" argrepr) ))
+              (if (re-match-p "^\\[.*\\]$" argrepr)
+                  (progn
+                    (eval
+                     `(call-interactively
+                       (lambda (,@arglist)
+                         (interactive (list ,@iarglist))
+                         (let* ((valstr (pen-cmd ,@arglist))
+                                (clj (concat "(" symstr " " valstr ")")))
+                           (pen-tv clj)
+                           (cider-nrepl-sync-request:eval clj nil))))))
                 (cider-nrepl-request:eval (concat "(" symstr ")") nil)))))
          (t (error (concat "No eval-eval handler for " (symbol-name major-mode))))))))
 

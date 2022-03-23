@@ -88,7 +88,7 @@
   (interactive)
   (avy-with ace-link-help
     (avy-process
-     (mapcar #'cdr (widgets-collect))
+     (mapcar #'cdr (pen-widgets-collect))
      (avy--style-fn avy-style))))
 
 (defun ace-link-or-button-collect ()
@@ -97,7 +97,7 @@
             (ace-link--help-collect)
             (ace-link--org-collect))
            (buttons-collect))
-   (widgets-collect)))
+   (pen-widgets-collect)))
 
 (defun ace-link-goto-link-or-button ()
   (interactive)
@@ -134,7 +134,7 @@
   (interactive)
   (avy-with ace-link-help
     (avy-process
-     (mapcar #'cdr (widgets-collect))
+     (mapcar #'cdr (pen-widgets-collect))
      (avy--style-fn avy-style)))
   (widget-button-press (point)))
 
