@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+awk 1 | pen-umn | sed 's#/$##' | while IFS=$'\n' read -r line; do
+    if [ -d "$line" ]; then
+        dls "$line" | sed "s#^#$line/#"
+    elif [ -f "$line" ]; then
+        cat "$line"
+    fi
+done | pen-mnm | pen-tm -f -i nw -noerror "pen-mfz -nm"
