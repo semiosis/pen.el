@@ -646,29 +646,6 @@ the namespace in the Clojure source buffer"
  (khala-go-to-symbol "get-file-list!")
  (khala-go-to-symbol "get-rc"))
 
-(defun pen-cider-go-to-symbol (&optional ns symbol doc full-doc)
-  "Choose Clojure symbols across namespaces.
-
-Each Helm source is a Clojure namespace (ns), and candidates are
-symbols in the namespace."
-  (interactive)
-  (cider-ensure-connected)
-  (cl-multiple-value-bind (ns symbol) (helm-cider--resolve-symbol ns symbol)
-    (let ((symbol (cond ((and symbol doc) (regexp-quote (concat ns "/" symbol)))
-                        (symbol (helm-cider--regexp-symbol symbol)))))
-      (with-helm-after-update-hook
-        (with-helm-buffer
-          (let ((helm--force-updating-p t))
-            (if symbol
-                (helm-preselect symbol (helm-cider--source-by-name ns))
-              (helm-goto-source (or ns ""))
-              (when ns
-                (helm-next-line)))
-            (recenter 1))))
-      (helm :buffer "*Helm Clojure Symbols*"
-            :candidate-number-limit 9999
-            :sources (helm-cider--apropos-sources nil doc full-doc)))))
-
 (define-key cider-mode-map (kbd "C-c C-o") nil)
 (define-key cider-mode-map (kbd "C-M-i") nil)
 (define-key cider-repl-mode-map (kbd "M-r") nil)
