@@ -107,8 +107,6 @@ bindings+="alt-t:top,"
 # No function to go to the last result
 # bindings+="alt-4:bottom,"
 
-# tf_input
-
 mfie="pen-pl {+}" # 'multi' field index expression
 
 # This comes from pen-mfz script
@@ -122,7 +120,7 @@ bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | pen-tm -S 
 bindings+="alt-y:toggle-all,"
 bindings+="alt-g:execute-silent(tmux run -b \"pen-tsk M-y M-c M-y; sleep 0.2; unbuffer pen-xc | pen-tv &>/dev/null\"),"
 bindings+="alt-l:execute-silent($mfie | pen-tm -f -S -tout spv v),"
-bindings+="alt-e:execute-silent($mfl | pen-tm -f -S -tout spv -xargs sp),"
+bindings+="alt-e:execute-silent($mfl | pen-tm -f -S -tout spv -xargs pinn),"
 bindings+="alt-v:execute-silent($mfl | pen-tm -f -S -tout sps -xargs v),"
 bindings+="alt-q:execute-silent($mfl | pen-tm -f -S -tout spv -xargs edit-with),"
 bindings+="alt-s:execute-silent($mfl | pen-umn | head -n 1 | pen-ux drn | xargs pen-tm -d spv -c),"
