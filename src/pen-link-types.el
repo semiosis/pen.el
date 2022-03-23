@@ -110,6 +110,7 @@ PATH is the sexp to evaluate, as a string."
   (pen-sps (concat "l " (pen-q pattern))))
 
 (org-add-link-type "j" 'follow-j-link)
+(org-add-link-type "pj" 'follow-j-link)
 (defun follow-j-link (pattern)
   "Run j `symbol'."
   (j (intern pattern)))
