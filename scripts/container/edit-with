@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+ans="$(qa -. edit \
+          -v v \
+          -i vi \
+          -t vs \
+          -x vs \
+          -S vs \
+          -e pin \
+          -n nano \
+          -r rifle \
+          -s pin)"
+
+case "$ans" in
+    edit) { vs $0; } ;;
+    *) {
+        "$ans" "$@"
+    }
+    ;;
+esac
