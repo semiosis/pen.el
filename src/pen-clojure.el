@@ -590,7 +590,6 @@ the namespace in the Clojure source buffer"
   ;; (pen-etv (pen-sn "cd \"$HOME/source/git/semiosis/khala\"; grep -HnoP -- \"defn [a-z \\!?-]+\" **/*.clj"))
   (pen-etv (pen-sn "cd \"$HOME/source/git/semiosis/khala\"; grep -HnoP -- \"(defn|deftest|def) .*\\b" (str sym) "\\b\" **/*.clj")))
 
-
 (defun pen-cider-go-to-symbol (&optional ns symbol doc full-doc)
   "Choose Clojure symbols across namespaces.
 
