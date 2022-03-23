@@ -4,6 +4,17 @@
 (setq dgi-auto-hide-details-p nil)
 (setq dired-listing-switches "-alh")
 
+(defun pen-open-dir (dir)
+  (setq dir (pen-umn dir))
+  (if (not (f-directory-p dir))
+      (if (yes-or-no-p (pen-cmd "mkdir"  dir))
+          (pen-snc (pen-cmd "mkdir"  dir))))
+  (cond
+   ;; Both dired-mode and ranger-mode can be true at the same time. Therefore, ranger must precede
+   ((derived-mode-p 'ranger-mode) (ranger dir))
+   ((derived-mode-p 'dired-mode) (dired dir))
+   (t (dired dir))))
+
 ;; Use steve purcell's dired pretty mode
 (use-package dired
   :hook (dired-mode . dired-hide-details-mode)

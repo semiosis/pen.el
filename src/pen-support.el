@@ -1554,12 +1554,13 @@ when s is a string, set the clipboard to s"
   ;; (pen-sn "mnm" input)
   (if input
       (seds (pen-umn input)
+            ("/root/notes" "$HOME/notes")
             ((f-join pen-prompts-directory "prompts") "$PROMPTS")
             (user-emacs-directory "$EMACSD")
             (pen-prompts-directory "$PEN_PROMPTS_DIR")
             (pen-engines-directory "$PEN_ENGINES_DIR")
             (penconfdir "$PEN")
-            ; ((f-join user-emacs-directory "pen.el") "$PENEL_DIR")
+                                        ; ((f-join user-emacs-directory "pen.el") "$PENEL_DIR")
             ((f-join user-emacs-directory "pen.el") "$PENEL")
             (user-home-directory "$HOME"))))
 
@@ -1568,6 +1569,7 @@ when s is a string, set the clipboard to s"
   (if input
       (seds input
             ("~" user-home-directory)
+            ("$NOTES" "/root/notes")
             ("$PROMPTS" (f-join pen-prompts-directory "prompts"))
             ("$EMACSD" user-emacs-directory)
             ("$PEN_PROMPTS_DIR" pen-prompts-directory)
