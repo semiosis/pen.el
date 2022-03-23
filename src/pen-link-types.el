@@ -43,20 +43,20 @@ PATH is the sexp to evaluate, as a string."
   (rgrep regexp "*" (expand-file-name "./")))
 
 ;; http://grep.app
-(org-add-link-type "grep-app" 'mullikine/follow-grep-app-link)
-(defun mullikine/follow-grep-app-link (regexp)
+(org-add-link-type "grep-app" 'follow-grep-app-link)
+(defun follow-grep-app-link (regexp)
   "Run `grep-app' with REGEXP as argument."
   (grep-app regexp))
 
 ;; https://index.ros.org/packages/
-(org-add-link-type "ros" 'mullikine/follow-rosindex-link)
-(defun mullikine/follow-rosindex-link (query)
+(org-add-link-type "ros" 'follow-rosindex-link)
+(defun follow-rosindex-link (query)
   "Search `https://index.ros.org/packages/' with QUERY as argument."
   (engine/search-rosindex query))
 
 ;; Glimpse search engine
-(org-add-link-type "gli" 'mullikine/follow-gli-link)
-(defun mullikine/follow-gli-link (regexp)
+(org-add-link-type "gli" 'follow-gli-link)
+(defun follow-gli-link (regexp)
   "Run `gli' with REGEXP as argument."
   (glimpse-thing-at-point regexp))
 
@@ -70,33 +70,33 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "r" 'rifle)
 (org-add-link-type "ri" 'rifle)
 
-(org-add-link-type "egr" 'mullikine/follow-egr-link)
-(defun mullikine/follow-egr-link (query)
+(org-add-link-type "egr" 'follow-egr-link)
+(defun follow-egr-link (query)
   "Run `egr' with QUERY as argument."
   (pen-sps (concat "egr " query)))
 
-(org-add-link-type "pa" 'mullikine/follow-pa-link)
-(defun mullikine/follow-pa-link (cmd)
+(org-add-link-type "pa" 'follow-pa-link)
+(defun follow-pa-link (cmd)
   "Run `pa' with CMD as argument."
   (pen-sps (concat cmd " | pa -vs")))
 
-(org-add-link-type "pa" 'mullikine/follow-pa-link)
-(defun mullikine/follow-pa-link (cmd)
+(org-add-link-type "pa" 'follow-pa-link)
+(defun follow-pa-link (cmd)
   "Run `pa' with CMD as argument."
   (pen-sps (concat cmd " | pa -vs")))
 
-(org-add-link-type "cmd" 'mullikine/follow-cmd-link)
-(defun mullikine/follow-cmd-link (cmd)
+(org-add-link-type "cmd" 'follow-cmd-link)
+(defun follow-cmd-link (cmd)
   "Run `CMD'."
   (pen-sps cmd))
 
-(org-add-link-type "sps" 'mullikine/follow-sps-link)
-(defun mullikine/follow-sps-link (cmd)
+(org-add-link-type "sps" 'follow-sps-link)
+(defun follow-sps-link (cmd)
   "Run pen-sps `CMD'."
   (pen-sps cmd))
 
-(org-add-link-type "yt" 'mullikine/follow-yt-link)
-(defun mullikine/follow-yt-link (cmd)
+(org-add-link-type "yt" 'follow-yt-link)
+(defun follow-yt-link (cmd)
   "Run pen-sps `CMD'."
   (pen-nw (concat "yt-search " cmd " | pen-xa o")))
 
@@ -104,23 +104,28 @@ PATH is the sexp to evaluate, as a string."
 (defun zathura (path)
   (pen-sn (pen-cmd "z" path) nil nil nil t))
 
-(org-add-link-type "l" 'mullikine/follow-l-link)
-(defun mullikine/follow-l-link (pattern)
+(org-add-link-type "l" 'follow-l-link)
+(defun follow-l-link (pattern)
   "Run l `pattern'."
   (pen-sps (concat "l " (pen-q pattern))))
 
-(org-add-link-type "j" 'mullikine/follow-j-link)
-(defun mullikine/follow-j-link (pattern)
+(org-add-link-type "j" 'follow-j-link)
+(defun follow-j-link (pattern)
   "Run j `symbol'."
   (j (intern pattern)))
 
-(org-add-link-type "ead" 'mullikine/follow-ead-link)
-(defun mullikine/follow-ead-link (pattern)
-  "Run ead `pattern'."
-  (pen-sps (concat "ead " (pen-q pattern))))
+(org-add-link-type "J" 'follow-J-link)
+(defun follow-J-link (pattern)
+  "Run b `symbol'. to go to a Clojure symbol in Pen"
+  (sps (cmd "psh" "J" pattern)))
 
-(org-add-link-type "eww" 'mullikine/follow-eww-link)
-(defun mullikine/follow-eww-link (pattern)
+(org-add-link-type "ead" 'follow-ead-link)
+(defun follow-ead-link (pattern)
+  "Run ead `pattern'."
+  (pen-sps (concat "pen-ead " (pen-q pattern))))
+
+(org-add-link-type "eww" 'follow-eww-link)
+(defun follow-eww-link (pattern)
   "Run eww `pattern'."
   (pen-sps (concat "eww " (pen-q pattern))))
 
