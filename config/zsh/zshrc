@@ -534,7 +534,7 @@ fzf-dirs() {
 
     tput sc # Set curser position
 
-    F d | pen-mfz -m -P -pscript "xa -E show-extensions-below 'echo; :' ls" | {
+    pen-F d | pen-mfz -m -P -pscript "xa -E show-extensions-below 'echo; :' ls" | {
         input="$(cat)"
         if [ -n "$input" ]; then
             printf -- "%s" "$input" | pen-xc -s -i
@@ -557,7 +557,7 @@ fzf-files() {
 
     tput sc
 
-    F f -f | pen-mfz -m | {
+    pen-F f -f | pen-mfz -m | {
         input="$(cat)"
         if [ -n "$input" ]; then
             printf -- "%s" "$input" | pen-xc -s -i
