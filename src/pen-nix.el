@@ -293,10 +293,11 @@ Be mindful of quoting arguments correctly."
   (with-temp-buffer
     (insert-file-contents path)
     (buffer-string)))
-(defun s/cat (path &optional dir)
-  "cat out a file"
-  (setq path (pen-umn path))
-  (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil dir))
+
+;; (defun s/cat (path &optional dir)
+;;   "cat out a file"
+;;   (setq path (pen-umn path))
+;;   (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil dir))
 
 (defun s/sort (path &optional dir)
   "sort out a file"

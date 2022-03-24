@@ -207,6 +207,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
       (with-temp-buffer
         (insert-file-contents path)
         (buffer-string))))
+
 (defun s/cat (path &optional dir)
   "cat out a file"
   (setq path (pen-umn path))
@@ -497,7 +498,8 @@ Takes into account the current file name."
 
 (defun pen-str2list (s)
   "Convert a newline delimited string to list."
-  (split-string s "\n"))
+  (if (sor s)
+      (split-string s "\n")))
 
 (defun pen-list2str (&rest l)
   "join the string representation of elements of a given list into a single string with newline delimiters"
