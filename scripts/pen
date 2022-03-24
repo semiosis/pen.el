@@ -776,7 +776,9 @@ if test "$sn" = pent; then
     fi
 fi
 
-if test "$sn" = lgx; then
+if test "$sn" = lg; then
+    PEN_USE_GUI=n
+elif test "$sn" = lgx; then
     sn=lg
 
     PEN_USE_GUI=y
