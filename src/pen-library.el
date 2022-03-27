@@ -140,7 +140,7 @@
   (if (stringp pen-b)
       (string-equal a pen-b)
     (eq a pen-b)))
-(defalias 'my-eq 'pen-equals)
+(defalias 'pen-eq 'pen-equals)
 
 (defun pen-error-if-equals (thing badval)
   "error if it equals something, otherwise pass it on"
@@ -163,7 +163,7 @@
           (xc link))
       link)))
 
-;; j:my-copy-link-at-point
+;; j:pen-copy-link-at-point
 (defun pen-copy-link-at-point ()
   "Copy the link with the highest priority at the point."
   (interactive)
@@ -970,7 +970,7 @@ non-nil."
    ((string= (current-major-mode) "restclient-mode") (call-interactively 'restclient-jump-prev))
    ((string= (current-major-mode) "eww-mode") (call-interactively 'eww-prev-fragment))
    ((string-match "^magit-" (current-major-mode)) (call-interactively 'magit-section-backward-sibling))
-   ((string-match "^\*YASnippet Tables-" (current-buffer-name)) (progn (call-interactively 'backward-button) (my-yas-preview-snippet-under-cursor)))
+   ((string-match "^\*YASnippet Tables" (current-buffer-name)) (progn (call-interactively 'backward-button) (pen-yas-preview-snippet-under-cursor)))
    ((string= (current-major-mode) "mastodon-mode") (call-interactively 'mastodon-tl--previous-tab-item))
    ((minor-mode-p magit-blame-mode) (magit-blame-previous-chunk))
    (t (try
@@ -1039,7 +1039,7 @@ non-nil."
    ((string= (current-major-mode) "mastodon-mode") (call-interactively 'mastodon-tl--next-tab-item))
    ((minor-mode-p magit-blame-mode) (magit-blame-next-chunk))
    ((string-match "^magit-" (current-major-mode)) (call-interactively 'magit-section-forward-sibling))
-   ((string-match "^\*YASnippet Tables-" (current-buffer-name)) (progn (call-interactively 'forward-button) (my-yas-preview-snippet-under-cursor)))
+   ((string-match "^\*YASnippet Tables" (current-buffer-name)) (progn (call-interactively 'forward-button) (pen-yas-preview-snippet-under-cursor)))
    (t (try
        (let ((start-point (point))
              (end-point))
