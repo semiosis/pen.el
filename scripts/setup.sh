@@ -323,8 +323,11 @@ printf -- "%s\n" "$SHELL_CODE" >> $HOME/.xterm-sh-rc
 
 IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
 export EMACSD=/root/.emacs.d
+term_setup_fp_host="$EMACSD/host/pen.el/scripts/setup-term.sh"
 term_setup_fp="$EMACSD/pen.el/scripts/setup-term.sh"
-if [ -f "$term_setup_fp" ]; then
+if [ -f "$term_setup_fp_host" ]; then
+    . "$term_setup_fp_host"
+elif [ -f "$term_setup_fp" ]; then
     . "$term_setup_fp"
 fi
 HEREDOC

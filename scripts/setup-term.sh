@@ -30,3 +30,5 @@ fi
 
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
+
+[ -f "/root/.ghcup/env" ] && source "/root/.ghcup/env" # ghcup-env
