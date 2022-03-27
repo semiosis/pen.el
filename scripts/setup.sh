@@ -668,3 +668,4 @@ mkdir -p /etc/apache2/sites-available
 
 # Haskell: - gcup, cabal, hls
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+# =gcup tui= to configure
