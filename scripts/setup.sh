@@ -665,3 +665,6 @@ pen-x -shE "mysql -u root" -e "MariaDB [" -s "flush privileges;" -c m \
 mkdir -p /var/www/
 ln -s ~/repos/wizard /var/www/wizard
 mkdir -p /etc/apache2/sites-available
+
+# Haskell: - gcup, cabal, hls
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
