@@ -113,11 +113,34 @@ mkdir -p ~/.pen/ht-cache
 export PEN_NO_TM
 export PEN_USE_GUI
 
+marker="🖊"
+
+unset INTERACTIVE
+# Frusratingly there is an issue with pen-x and drawing the Pen.el emacs.
+# I think the issue is most likely unicode inside my emacs, or ansi colours in my emacs.
+# Unfortunately there's no way around this.
+# Confirmed after seeing the difference with emacs -nw and emacs -nw -Q.
+# I can't use expect to run interactive emacs commands.
+# Instead, I must find another way.
 runclient() {
     if test "$USE_NVC" = "y"; then
-        in-tm nvc pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+        if test "$INTERACTIVE" = y; then
+            last_arg="${@: -1}"
+            test "$#" -gt 0 && set -- "${@:2:$(($#-2))}" # shift last 2 args
+
+            pen-x -sh "$(pen-nsfa in-tm nvc pen-emacsclient -s $HOME/.emacs.d/server/$SOCKET "$@")" -e "$marker" -m : -s "$last_arg" -c m -i
+        else
+            in-tm nvc pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+        fi
     else
-        in-tm pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+        if test "$INTERACTIVE" = y; then
+            last_arg="${@: -1}"
+            test "$#" -gt 0 && set -- "${@:2:$(($#-2))}" # shift last 2 args
+
+            pen-x -sh "$(pen-nsfa in-tm pen-emacsclient -s $HOME/.emacs.d/server/$SOCKET "$@")" -e "$marker" -m : -s "$last_arg" -c m -i
+        else
+            in-tm pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+        fi
     fi
 }
 

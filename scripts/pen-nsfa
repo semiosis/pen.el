@@ -35,8 +35,11 @@ tf_new_script="/tmp/nsfa-$slug.sh"
 rm -f "$tf_new_script"
 
 # stty stop and undef are used to prevent C-s from hanging the program.
-IFS= read -r -d '' scriptcode <<'HEREDOC'
+IFS= read -r -d '' scriptcode <<HEREDOC
 #!/bin/bash
+$(test -n "$PEN_NO_TM" && printf -- "%s\n" "export PEN_NO_TM=\"$PEN_NO_TM\"")
+$(test -n "$PEN_USE_GUI" && printf -- "%s\n" "export PEN_USE_GUI=\"$PEN_USE_GUI\"")
+$(test -n "$TMUX" && printf -- "%s\n" "export TMUX=\"$TMUX\"")
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null;
 HEREDOC
 

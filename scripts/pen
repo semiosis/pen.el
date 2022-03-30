@@ -1305,7 +1305,9 @@ case "$sn" in
 
     lg|looking-glass) {
         show_banner=y
-        set -- -ic "(funcall-interactively 'eww $(cmd-nice "$1"))"
+        # set -- -ic "(pen-funcall-interactively 'eww $(cmd-nice "$1"))"
+        # This *must* be a regular funcall.
+        set -- -ic "(funcall 'eww $(cmd-nice "$1"))"
     }
     ;;
 
@@ -1313,7 +1315,7 @@ case "$sn" in
         show_banner=y
         HAS_TTY=y
         PEN_USE_GUI=n
-        # set -- -ic "(funcall-interactively 'pen-org-brain-switch-brain $(cmd-nice "$1"))"
+        # set -- -ic "(pen-funcall-interactively 'pen-org-brain-switch-brain $(cmd-nice "$1"))"
 
         set -- -ic "(call-interactively 'pen-org-brain-switch-brain)"
     }
@@ -1502,7 +1504,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -ic) {
         batch=y
         docker_cmd=exec
-        interactive=y
+        INTERACTIVE=y
 
         shift
 
@@ -1924,6 +1926,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         --hostname pen-$(hostname) \
         --env PEN_USE_GUI \
         --env PEN_NO_TM \
+        --env INTERACTIVE \
         --env PEN_CONTAINER_NAME \
         --env TTYD_PORT \
         --env KHALA_PORT \
@@ -1997,7 +2000,7 @@ HEREDOC
             exit 1
         fi
 
-        if test "$interactive" = "y"; then
+        if test "$INTERACTIVE" = "y"; then
             elisp="$@"
             set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (max-generated-tokens $PEN_MAX_GENERATED_TOKENS) (force-temperature $PEN_TEMPERATURE) (force-stop-sequence $PEN_STOP_SEQUENCE)) $elisp)"
         fi
@@ -2033,6 +2036,7 @@ pen_eval() {
 
 # pen-pl "$shcode" | pen-tv &>/dev/null
 
+export INTERACTIVE
 if test -n "$fuzzy"; then
     pen_eval "$shcode" | eval "$fuzzy" | pen-str unonelineify
 else
@@ -2040,9 +2044,10 @@ else
 fi
 
 if test "$docker_cmd" = exec && is_tty; then
-    clear
-    echo Pen exited | pen-hls red
-    tmux send C-l &>/dev/null
+    :
+    # clear
+    # echo Pen exited | pen-hls red
+    # tmux send C-l &>/dev/null
 fi
 
 if test "$force_shutdown_container" = "y"; then
