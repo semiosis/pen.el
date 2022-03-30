@@ -305,7 +305,20 @@ argument, prompt for a regular expression using `read-regexp'."
 
 (advice-add 'pen-set-faces :around #'ignore-errors-around-advice)
 
-(add-hook 'after-init-hook 'pen-set-faces)
+(comment
+ ;; This hasn't worked. The hook is run but the faces are not set.
+ ;; Actually, it's just =eww= that changes the faces.
+ ;; When I start =penx= the faces do not change.
+ (defun pen-new-frame-set-faces ()
+   (pen-set-faces))
+ (add-hook 'server-after-make-frame-functions 'pen-new-frame-set-faces)
+
+ (add-hook 'after-make-frame-functions
+           (lambda (frame)
+             (with-selected-frame frame
+               (pen-new-frame-set-faces))))
+
+ (add-hook 'after-init-hook 'pen-set-faces))
 
 (defun pen-set-text-contrast-from-config ()
   (interactive)

@@ -85,7 +85,8 @@
 (defun pen-reload-config-file ()
   "Fuzzy selects a selects file to be loaded."
   (interactive)
-  (let ((r (pen-umn (fz (pen-sn "pen-ls-emacs-config-files") nil nil "reload config: "))))
+  ;; Can't put the sed into umn or it will break urls
+  (let ((r (pen-sed "s=//=/=g" (pen-umn (fz (pen-sn "pen-ls-emacs-config-files") nil nil "reload config: ")))))
     (if (not (s-blank? r))
         (load r))))
 

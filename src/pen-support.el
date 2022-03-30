@@ -1593,7 +1593,9 @@ when s is a string, set the clipboard to s"
             ("$HOME" user-home-directory)
             ;; ("^//" "/")
             ;; It must start with something. I still need the replace
-            ("\\(.\\)//" "\\1/"))))
+            ;; I can't do this because it runs on urls, which have http://
+            ;; ("\\(.\\)//" "\\1/")
+            )))
 
 (defun pen-topic-ask (&optional prompt)
   (setq prompt (sor prompt "pen-topic-ask"))
