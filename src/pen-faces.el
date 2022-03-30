@@ -190,6 +190,13 @@ argument, prompt for a regular expression using `read-regexp'."
     (set-face-foreground 'org-link fg)
     (set-face-background 'org-link bg)
 
+    (set-face-background 'font-lock-comment-face nil)
+    (set-face-background 'linum nil)
+    (set-face-foreground 'line-number "#444444")
+    (set-face-background 'line-number "#111111")
+    (set-face-foreground 'line-number-current-line "#444444")
+    (set-face-background 'line-number-current-line "#1c1c1c")
+
     (require 'w3m-util)
 
     (set-face-foreground 'w3m-anchor fg)
