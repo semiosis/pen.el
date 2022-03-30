@@ -142,7 +142,8 @@
 (handle '(haskell-mode)
         :navtree '()
         :run '()
-        :docs '(hoogle
+        :docs '(haskell-hdc-thing
+                hoogle
                 pen-docs-for-thing-given-screen)
         :nexterr '()
         :preverr '()
