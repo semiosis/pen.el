@@ -471,6 +471,6 @@ Be mindful of quoting arguments correctly."
                 nil
                 "eww history: ")))
       (if url
-          (pen-eww url)))))
+          (pen-lg url)))))
 
 (provide 'pen-nix)

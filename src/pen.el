@@ -2058,6 +2058,7 @@ May use to generate code from comments."
 (require 'pen-glossary-new)
 (require 'pen-imenu)
 (require 'pen-localization)
+(require 'pen-engine-mode)
 (require 'pen-diagnostics)
 (require 'pen-examplary)
 (require 'pen-transient)

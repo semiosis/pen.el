@@ -871,9 +871,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
                 (if no-hist
                     (setq hist-var nil)
-                    (if (and (not hist-var)
-                             (sor prompt))
-                        (setq hist-var (intern (concat "histvar-fz-" (slugify prompt))))))
+                  (if (and (not hist-var)
+                           (sor prompt))
+                      (setq hist-var (intern (concat "histvar-fz-" (slugify prompt))))))
 
                 (setq prompt (sor prompt ":"))
 
@@ -882,42 +882,44 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
                 (if (eq (type-of listd) 'symbol)
                     (cond
-                      ((variable-p 'clojure-mode-funcs) (setq listd (eval listd)))
-                      ((fboundp 'clojure-mode-funcs) (setq listd (funcall listd)))))
+                     ((variable-p 'clojure-mode-funcs) (setq listd (eval listd)))
+                     ((fboundp 'clojure-mode-funcs) (setq listd (funcall listd)))))
 
                 (if (stringp listd)
                     (setq listd (split-string (chomp listd) "\n")))
 
                 (if (and select-only-match (eq (length listd) 1))
                     (car listd)
-                    (let ((sel))
-                      (setq prompt (or prompt ":"))
-                      (let ((helm-full-frame full-frame)
-                            (completion-extra-properties nil))
+                  (let ((sel))
+                    (setq prompt (or prompt ":"))
+                    (let ((helm-full-frame full-frame)
+                          (completion-extra-properties nil))
 
-                        (if add-props
-                            (setq completion-extra-properties
-                                  (append
-                                   completion-extra-properties
-                                   add-props)))
+                      (if add-props
+                          (setq completion-extra-properties
+                                (append
+                                 completion-extra-properties
+                                 add-props)))
 
-                        (if (and (listp (car listd)))
-                            (setq completion-extra-properties
-                                  (append
-                                   '(:annotation-function fz-completion-second-of-tuple-annotation-function)
-                                   completion-extra-properties)))
+                      (if (and (listp (car listd)))
+                          (setq completion-extra-properties
+                                (append
+                                 '(:annotation-function fz-completion-second-of-tuple-annotation-function)
+                                 completion-extra-properties)))
 
-                        (setq sel (completing-read prompt listd nil must-match initial-input hist-var)))
+                      (setq sel (completing-read prompt listd nil must-match initial-input hist-var)))
 
-                      ;; This refreshes the term usually, but not always. It realigns up some REPLs, such as lein.
-                      ;; Not worth it just for hhgttg
-                      (if (and
-                           pen-term-cl-refresh-after-fz
-                           (major-mode-p 'term-mode)
-                           ;; char is raw mode
-                           (term-in-char-mode))
-                          (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
-                      sel)))))
+                    ;; This refreshes the term usually, but not always. It realigns up some REPLs, such as lein.
+                    ;; Not worth it just for hhgttg
+                    (if (and
+                         pen-term-cl-refresh-after-fz
+                         (major-mode-p 'term-mode)
+                         ;; char is raw mode
+                         (term-in-char-mode))
+                        (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
+                    sel)))
+            (progn (message "History empty")
+                   nil)))
 
 (defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props hist-var no-hist)
   (cl-fz
@@ -1587,7 +1589,9 @@ when s is a string, set the clipboard to s"
             ("$PEN" penconfdir)
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
             ("$HOME" user-home-directory)
-            ("//" "/"))))
+            ;; ("^//" "/")
+            ;; It must start with something. I still need the replace
+            ("\\(.\\)//" "\\1/"))))
 
 (defun pen-topic-ask (&optional prompt)
   (setq prompt (sor prompt "pen-topic-ask"))

@@ -733,12 +733,6 @@ buffer which is not included when this function returns"
   `(when (require ,package nil 'noerror)
      ,@body))
 
-(defun eww-and-search (url)
-  "This is a browser function used by ff-view and, thus, racket to search for something in the address bar and then search the resulting website."
-  (pen-b ni eww-and-search)
-  ;; (pen-tvipe (sed "s/.*q=//" url))
-  (pen-eww url))
-
 (defun pen-trim-max-chars (s n)
   (pen-sn (concat "pen-str trim-max-chars " (str n))
           s))

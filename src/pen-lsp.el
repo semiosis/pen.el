@@ -437,7 +437,7 @@ We don't extract the string that `lps-line' is already displaying."
   (interactive)
   (let* ((doc (pen-lsp-get-hover-docs))
          (url (pen-snc "scrape \"](.*)\" | sed -e 's/^..//' -e 's/)$//'" (pen-lsp-get-hover-docs))))
-    (pen-eww url)))
+    (pen-lg url)))
 
 (setq lsp-enable-on-type-formatting nil)
 

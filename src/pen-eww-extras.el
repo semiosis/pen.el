@@ -687,12 +687,12 @@ word(s) will be searched for via `eww-search-prefix'."
 (defun lg-url-is-404 (url)
   "URL is 404"
   ;; lg-url-is-404
-  (let ((info (pen-sn (concat "curl-firefox -s -I " (pen-q url))))
+  (let ((info (pen-sn (concat "pen-curl-firefox -s -I " (pen-q url))))
         (html (pen-sn (concat "dom-dump " (pen-q url)))
-              ;; (pen-sn (concat "curl-firefox -s " (pen-q url)))
+              ;; (pen-sn (concat "pen-curl-firefox -s " (pen-q url)))
               ))
     (comment
-     (pen-sn-true (concat "curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
+     (pen-sn-true (concat "pen-curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
     (or (re-match-p "Wikipedia does not have an article with this exact name" html)
         (re-match-p "404 Not Found" info)
         (re-match-p "502 Bad Gateway" info)
@@ -1349,6 +1349,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
       (lg-eww (car args)))))
 (advice-add 'browse-url-generic :around #'browse-url-generic-around-advice)
+;; (advice-remove 'browse-url-generic #'browse-url-generic-around-advice)
 
 (defun eww-reload-with-ci-cache-on ()
   (interactive)

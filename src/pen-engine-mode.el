@@ -3,10 +3,10 @@
 ;; (require 'pen-search)
 
 (defun pen-eww-js-for-browse-url (url discard)
-  (pen-eww-js url nil))
+  (lg-eww-js url nil))
 
 (defun pen-eww-for-browse-url (url discard)
-  (pen-eww url nil))
+  (lg-eww url nil))
 
 (setq engine/browser-function 'pen-eww-for-browse-url)
 
@@ -82,7 +82,7 @@
 (defengine google
   "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s"
   :keybinding "g"
-  :browser 'pen-eww)
+  :browser 'lg-eww)
 
 (defun chrome (url &optional discard)
   (interactive (read-string-hist "chrome: "))
@@ -181,4 +181,4 @@
 
 (defalias 'find-book-online 'engine/search-libgen)
 
-(provide 'pen-engine)
+(provide 'pen-engine-mode)

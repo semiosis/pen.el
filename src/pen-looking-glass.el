@@ -107,6 +107,11 @@
   (let* ((result (fz results nil nil "select rendering: ")))
     (new-buffer-from-string (ink-propertise result))))
 
+(defun test-404 ()
+  (if (lg-url-is-404 "https:/www.google.com/search?ie=utf-8&oe=utf-8&q=containers-0.4.0.0")
+      "is 404"
+    "is not 404"))
+
 (defun pen-lg-display-page (url)
   (interactive (list (read-string-hist "🔍 Enter URL: "
                                        (if (major-mode-p 'eww-mode)
