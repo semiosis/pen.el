@@ -139,6 +139,16 @@
         :complete '()
         :rc '())
 
+(handle '(haskell-mode)
+        :navtree '()
+        :run '()
+        :docs '(hoogle
+                pen-docs-for-thing-given-screen)
+        :nexterr '()
+        :preverr '()
+        :complete '()
+        :rc '())
+
 (handle '(text-mode)
         :nexterr '()
         :docs '(pen-docs-for-thing-given-screen)

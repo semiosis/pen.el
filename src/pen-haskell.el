@@ -277,4 +277,13 @@
  (define-key haskell-mode-map (kbd "C-M-@ h a") #'hasky-stack-package-action)
  (define-key haskell-mode-map (kbd "C-M-@ h n") #'hasky-stack-new))
 
+(defun hoogle-prompt ()
+  "Prompt for Hoogle query."
+  (let ((def (haskell-ident-at-point)))
+    (if (and def (symbolp def)) (setq def (symbol-name def)))
+    (list
+     (if def
+         def
+       (read-string "Hoogle query: " nil nil def)))))
+
 (provide 'pen-haskell)
