@@ -155,6 +155,7 @@
                              ;; pen-intero-get-type
                              ;; pen-haskell-get-import-for-package
                              pen-haskell-get-import
+                             haskell-show-hdc-readme
                              dante-repl
                              haskell-hdc-thing
 

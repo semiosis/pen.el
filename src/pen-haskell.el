@@ -331,8 +331,25 @@
 (defun haskell-hdc-thing (thing)
   (interactive (list (pen-thing-at-point)))
   ;; (pen-zrepl (pen-cmd "hdc" thing))
-  (pen-e-spv 'haskell-show-hdc-readme)
-  (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-i")))
+
+  ;; (pen-e-spv 'haskell-show-hdc-readme)
+
+  (let ((parts (s-split "\\." thing)))
+    (if (> (length parts) 1)
+        (let ((last (-last-item parts)))
+          (if (pen-re-sensitive (string-match "^[a-z]" last))
+              (let ((module (s-join "." (-drop-last 1 parts))))
+                ;; the last part is a function
+                (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
+                                  ;; "-s" (concat ":src " thing)
+                                  "-s" (concat ":mi " module)
+                                  "-c" "-m"
+                                  "-i")))
+            ;; the last part is just part of the module
+            (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
+                              "-s" (concat ":md " thing)
+                              "-c" "-m"
+                              "-i")))))))
 
 (defun haskell-show-hdc-readme ()
   (interactive)
