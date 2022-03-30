@@ -431,13 +431,15 @@ STRINGS will be evaluated in normal `or' order."
 (defun tramp-localdir (&optional tramp-dir)
   ;; /ssh:andrewdo@localhost#2222:/home/andrewdo/
 
-  (if (not tramp-dir)
-      (setq tramp-dir (get-dir t)))
+  ;; It fails from eww
+  (ignore-errors
+    (if (not tramp-dir)
+        (setq tramp-dir (get-dir t)))
 
-  (if tramp-dir
-      (let ((tmd (tramp-mountdir tramp-dir t))
-            (trd (tramp-remotedir tramp-dir)))
-        (f-join tmd (s-replace-regexp "^/" "" trd)))))
+    (if tramp-dir
+        (let ((tmd (tramp-mountdir tramp-dir t))
+              (trd (tramp-remotedir tramp-dir)))
+          (f-join tmd (s-replace-regexp "^/" "" trd))))))
 
 (defun get-dir (&optional dont-clean-tramp)
   "Gets the directory of the current buffer's file. But this could be different from emacs' working directory.
