@@ -21,7 +21,8 @@ modulename="$1"
 
 {
     oha -n import "$modulename" |
+        sed '/^.*\/packages\/$/d' |
         sed 's=^.*/package/==' |
         sed 's/^\([a-zA-Z0-9._-]\+\).*/\1/'
     ghc-pkg find-module "$modulename" | sed -e '/^[^ ]/d' -e '/(/d' -e '/^$/d' -e 's/^ \+//'
-} | uniqnosort | pavs
+} | uniqnosort | pen-pavs

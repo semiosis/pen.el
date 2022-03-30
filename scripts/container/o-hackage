@@ -27,7 +27,7 @@ esac; done
 downloadornot() {
     pen-ds oha-last | {
         if test "$nodownload" = "y"; then
-            pavs
+            pen-pavs
         else
             sed 1q | pen-xa zrepl -cd "$REPOS" git clone
         fi

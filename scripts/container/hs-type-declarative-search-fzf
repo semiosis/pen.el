@@ -18,4 +18,4 @@ type="$1"
 
 hs-type-declarative-search "$type" |
     pen-mfz -m -p -pscript hs-type-declarative-search-preview |
-    sed -e 's/ /./' -e "s/ ::.*//" | pavs
+    sed -e 's/ /./' -e "s/ ::.*//" | pen-pavs
