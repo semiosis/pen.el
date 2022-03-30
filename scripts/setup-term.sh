@@ -31,4 +31,7 @@ fi
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
+export EDITOR=sps-pin
+export BROWSER=sps-lg
+
 [ -f "/root/.ghcup/env" ] && . "/root/.ghcup/env" # ghcup-env
