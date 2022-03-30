@@ -161,7 +161,9 @@ argument, prompt for a regular expression using `read-regexp'."
     (set-face-background 'lsp-ui-sideline-global nil)
 
     (set-face-foreground 'header-line "#253525")
-    (set-face-background 'header-line "#202020")
+    ;; Keep it dark because the LSP breadcrumb is dark
+    (set-face-background 'header-line "#101010")
+    ;; (set-face-background 'header-line "#202020")
 
     (require 'lsp-headerline)
     (set-face-background 'lsp-headerline-breadcrumb-path-error-face nil)
@@ -304,7 +306,9 @@ argument, prompt for a regular expression using `read-regexp'."
   (set-face-background 'helm-source-header "#d72f4f")
 
   (set-face-background 'helm-selection "#262626")
-  (set-face-foreground 'helm-selection "#d72f4f"))
+  (set-face-foreground 'helm-selection "#d72f4f")
+
+  (pen-set-text-contrast-from-config))
 
 (advice-add 'pen-set-faces :around #'ignore-errors-around-advice)
 
