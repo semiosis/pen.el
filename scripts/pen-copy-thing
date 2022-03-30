@@ -2,4 +2,4 @@
 export TTY
 
 # ap- "fix-racket-doc-url | xc -i" "$@"
-ap- "xc -i" "$@"
+ap- "pen-xc -i" "$@"
