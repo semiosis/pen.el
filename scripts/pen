@@ -621,7 +621,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -gui) {
+    -gui|-x) {
         PEN_USE_GUI=y
         share_x=y
         shift
