@@ -86,8 +86,7 @@
 (if (inside-docker-p)
     (progn
       (require 'pen-eww)
-      ;;(require 'pen-eww-extras)
-      ))
+      (require 'pen-eww-extras)))
 (require 'pen-avy)
 (require 'pen-ace-link)
 (if (inside-docker-p)

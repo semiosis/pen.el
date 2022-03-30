@@ -153,12 +153,16 @@
                              hoogle
                              ghcd-info
                              ;; pen-intero-get-type
-                             pen-haskell-get-import-for-package
+                             ;; pen-haskell-get-import-for-package
+                             pen-haskell-get-import
                              dante-repl
                              pen-haskell-get-type
                              haskell-extend-language
                              pen-src-thing-at-point
+
+                             ;; uses stack
                              ;; hs-install-module-under-cursor
+
                              hs-download-packages-with-function-type))
 
 (defset eww-mode-funcs '(eww-open-in-chrome

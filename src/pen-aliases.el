@@ -11,5 +11,6 @@
 (defalias 'get-top-level 'projectile-project-root)
 (defalias 'current-buffer-name 'buffer-name)
 (defalias 'locate-binary 'executable-find)
+(defalias 'deselect 'deactivate-mark)
 
 (provide 'pen-aliases)

@@ -1,7 +1,5 @@
 (require 'pen-eww)
 
-(defalias 'deselect 'deactivate-mark)
-
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/eww.el.gz
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/shr.el.gz
 

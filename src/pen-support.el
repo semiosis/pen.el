@@ -858,60 +858,66 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
        ((stringp item) "")
        (t "")))))
 
-(cl-defun cl-fz (list &key prompt &key full-frame &key initial-input &key must-match &key select-only-match &key hist-var &key add-props &key no-hist)
-  (setq select-only-match
-        (or select-only-match
-            (pen-var-value-maybe 'pen-select-only-match)))
+(cl-defun cl-fz (listd &key prompt &key full-frame &key initial-input &key must-match &key select-only-match &key hist-var &key add-props &key no-hist)
+          (if (not
+               (or (not listd)
+                   (and (stringp listd)
+                        (not (sor listd)))))
 
-  (if no-hist
-      (setq hist-var nil)
-    (if (and (not hist-var)
-             (sor prompt))
-        (setq hist-var (intern (concat "histvar-fz-" (slugify prompt))))))
+              (progn
+                (setq select-only-match
+                      (or select-only-match
+                          (pen-var-value-maybe 'pen-select-only-match)))
 
-  (setq prompt (sor prompt ":"))
+                (if no-hist
+                    (setq hist-var nil)
+                    (if (and (not hist-var)
+                             (sor prompt))
+                        (setq hist-var (intern (concat "histvar-fz-" (slugify prompt))))))
 
-  (if (not (string-match " $" prompt))
-      (setq prompt (concat prompt " ")))
+                (setq prompt (sor prompt ":"))
 
-  (if (eq (type-of list) 'symbol)
-      (cond
-       ((variable-p 'clojure-mode-funcs) (setq list (eval list)))
-       ((fboundp 'clojure-mode-funcs) (setq list (funcall list)))))
+                (if (not (string-match " $" prompt))
+                    (setq prompt (concat prompt " ")))
 
-  (if (stringp list)
-      (setq list (split-string (chomp list) "\n")))
+                (if (eq (type-of listd) 'symbol)
+                    (cond
+                      ((variable-p 'clojure-mode-funcs) (setq listd (eval listd)))
+                      ((fboundp 'clojure-mode-funcs) (setq listd (funcall listd)))))
 
-  (if (and select-only-match (eq (length list) 1))
-      (car list)
-    (let ((sel))
-      (setq prompt (or prompt ":"))
-      (let ((helm-full-frame full-frame)
-            (completion-extra-properties nil))
+                (if (stringp listd)
+                    (setq listd (split-string (chomp listd) "\n")))
 
-        (if add-props
-            (setq completion-extra-properties
-                  (append
-                   completion-extra-properties
-                   add-props)))
+                (if (and select-only-match (eq (length listd) 1))
+                    (car listd)
+                    (let ((sel))
+                      (setq prompt (or prompt ":"))
+                      (let ((helm-full-frame full-frame)
+                            (completion-extra-properties nil))
 
-        (if (and (listp (car list)))
-            (setq completion-extra-properties
-                  (append
-                   '(:annotation-function fz-completion-second-of-tuple-annotation-function)
-                   completion-extra-properties)))
+                        (if add-props
+                            (setq completion-extra-properties
+                                  (append
+                                   completion-extra-properties
+                                   add-props)))
 
-        (setq sel (completing-read prompt list nil must-match initial-input hist-var)))
+                        (if (and (listp (car listd)))
+                            (setq completion-extra-properties
+                                  (append
+                                   '(:annotation-function fz-completion-second-of-tuple-annotation-function)
+                                   completion-extra-properties)))
 
-      ;; This refreshes the term usually, but not always. It realigns up some REPLs, such as lein.
-      ;; Not worth it just for hhgttg
-      (if (and
-           pen-term-cl-refresh-after-fz
-           (major-mode-p 'term-mode)
-           ;; char is raw mode
-           (term-in-char-mode))
-          (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
-      sel)))
+                        (setq sel (completing-read prompt listd nil must-match initial-input hist-var)))
+
+                      ;; This refreshes the term usually, but not always. It realigns up some REPLs, such as lein.
+                      ;; Not worth it just for hhgttg
+                      (if (and
+                           pen-term-cl-refresh-after-fz
+                           (major-mode-p 'term-mode)
+                           ;; char is raw mode
+                           (term-in-char-mode))
+                          (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
+                      sel)))))
 
 (defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props hist-var no-hist)
   (cl-fz

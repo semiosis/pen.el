@@ -291,7 +291,7 @@
 (defun pen-haskell-get-type ()
   (interactive)
   (let* ((si
-          (pen--lsp-get-sideline-text))
+          (pen-sed "/:: \\*$/d" (pen--lsp-get-sideline-text)))
          (thing (pen-thing-at-point))
          (ty
           (sor (s-replace-regexp (concat thing " :: ") "" (or (s-substring (concat thing " ::.*") si)
@@ -305,5 +305,27 @@
         ;; (error (concat "No known type for " thing))
         (message (concat "No known type for " thing))
         nil))))
+
+(defun pen-haskell-get-import-for-package (thing)
+  (interactive (list (pen-thing-at-point)))
+  (let ((i
+         (fz (pen-snc (concat "hs-import-to-package " (pen-q thing)))
+             nil nil "pen-haskell-get-import-for-package: ")))
+    (if i
+        (if (interactive-p)
+            (pen-etv i)
+          i)
+      (progn
+        (message "No imports found")
+        nil))))
+(defalias 'pen-haskell-get-import 'pen-haskell-get-import-for-package)
+
+(defun hs-install-module-under-cursor (thing)
+  (interactive (list (pen-thing-at-point)))
+  (pen-sps (concat "zrepl stack install " (pen-q (pen-haskell-get-import-for-package thing)))))
+
+(defun hs-download-packages-with-function-type (hs-type)
+  (interactive (list (pen-haskell-get-type)))
+  (pen-sph (concat "t new " (pen-q "hs-download-packages-with-function-type " (pen-q hs-type)))))
 
 (provide 'pen-haskell)

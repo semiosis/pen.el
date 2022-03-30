@@ -154,7 +154,8 @@
             iedit-mode)
         (pen-selected-text)
       (str
-       (or (thing-at-point 'symbol)
+       (or (pen-regex-at-point-p "[A-Za-z]+\\.[A-Za-z]+")
+           (thing-at-point 'symbol)
            (thing-at-point 'sexp)
            (let ((s (str (thing-at-point 'char))))
              (if (string-equal s "\n")
