@@ -627,6 +627,9 @@ word(s) will be searched for via `eww-search-prefix'."
                           ": ")))
      (list (read-string prompt nil nil uris))))
 
+  ;; It works when placed here
+  (pen-set-faces)
+
   (setq url (pen-snc "pen-urldecode | chomp" url))
   (setq url (pen-redirect url))
 
@@ -1306,6 +1309,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
 (advice-add 'eww-back-url :around #'eww-back-url-around-advice)
 
 (add-hook 'eww-after-render-hook #'finished-loading-page)
+;; (add-hook 'eww-after-render-hook 'pen-set-faces)
 
 (defun eww-display-html-after-advice (&rest args)
   (run-hooks 'eww-display-html-after-hook))
@@ -2002,17 +2006,18 @@ the URL of the image to the kill buffer instead."
   (if (not (get-text-property (point) 'image-url))
       (goto-char (previous-single-char-property-change (point) 'image-url))))
 
-(defun eww-setup-buffer ()
-  (pen-set-faces)
-  (when (or (plist-get eww-data :url)
-            (plist-get eww-data :dom))
-    (eww-save-history))
-  (let ((inhibit-read-only t))
-    (remove-overlays)
-    (erase-buffer))
-  (setq bidi-paragraph-direction nil)
-  (unless (eq major-mode 'eww-mode)
-    (eww-mode)))
+;; This is not needed?
+;; (defun eww-setup-buffer ()
+;;   (pen-set-faces)
+;;   (when (or (plist-get eww-data :url)
+;;             (plist-get eww-data :dom))
+;;     (eww-save-history))
+;;   (let ((inhibit-read-only t))
+;;     (remove-overlays)
+;;     (erase-buffer))
+;;   (setq bidi-paragraph-direction nil)
+;;   (unless (eq major-mode 'eww-mode)
+;;     (eww-mode)))
 
 (define-key eww-link-keymap (kbd "W") #'shr-copy-current-url)
 

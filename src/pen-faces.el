@@ -307,16 +307,18 @@ argument, prompt for a regular expression using `read-regexp'."
 
 ;; eww-browser set faces by itself.
 ;; But this is here for after emacs initially loads.
-(defun pen-new-frame-set-faces ()
-  (pen-set-faces))
-(add-hook 'server-after-make-frame-functions 'pen-new-frame-set-faces)
-
-(add-hook 'after-make-frame-functions
-          (lambda (frame)
-            (with-selected-frame frame
-              (pen-new-frame-set-faces))))
-
+;; NO, These actually *break* the faces. I must disable these hooks!
+;; Or at least, I must disable one of them.
+;; That's nuts. which ones?
+(defun pen-new-frame-set-faces (frame)
+  (with-selected-frame frame
+    (pen-set-faces)))
+;; (add-hook 'server-after-make-frame-functions 'pen-set-faces)
+;; (remove-hook 'server-after-make-frame-functions 'pen-new-frame-set-faces)
+;; (add-hook 'after-make-frame-functions 'pen-new-frame-set-faces)
+;; (remove-hook 'after-make-frame-functions 'pen-new-frame-set-faces)
 (add-hook 'after-init-hook 'pen-set-faces)
+;; (remove-hook 'after-init-hook 'pen-set-faces)
 
 (defun pen-set-text-contrast-from-config ()
   (interactive)
