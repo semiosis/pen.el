@@ -2200,4 +2200,21 @@ If any of the suggest predicates evaluated to t, then suggest the function"
 ;;    'lg-eww
 ;;    "https://vitaminc-gummies.com/health/"))
 
+(defun locate-dominating-file-glob (file-glob name)
+  (setq file-glob (abbreviate-file-name (expand-file-name file-glob)))
+  (let ((root nil)
+        try)
+    (while (not (or root
+                    (null file-glob)
+                    (string-match locate-dominating-stop-dir-regexp file-glob)))
+      (setq try (if (stringp name)
+                    (and (file-directory-p file-glob)
+                         (file-exists-p (expand-file-name name file-glob)))
+                  (funcall name file-glob)))
+      (cond (try (setq root file-glob))
+            ((equal file-glob (setq file-glob (file-name-directory
+                                     (directory-file-name file-glob))))
+             (setq file-glob nil))))
+    (if root (file-name-as-directory root))))
+
 (provide 'pen-support)

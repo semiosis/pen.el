@@ -149,6 +149,8 @@
 (handle '(haskell-mode)
         :navtree '()
         :run '()
+        :repls '(dante-repl
+                 haskell-repl)
         :docs '(pen-lsp-docs-for-thing-maybe
                 haskell-hdc-thing
                 hoogle

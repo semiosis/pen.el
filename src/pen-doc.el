@@ -187,7 +187,7 @@
 
 (defun dante-repl ()
   (interactive)
-  (pen-sps "cabal v2-repl --builddir=newdist/dante"))
+  (pen-sps "cabal v2-repl --builddir=newdist/dante" nil nil (vc-get-top-level)))
 
 (defun hs-tds-fzf (hs-type)
   (interactive (list (pen-haskell-get-type)))
