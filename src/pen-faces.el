@@ -160,6 +160,9 @@ argument, prompt for a regular expression using `read-regexp'."
     (set-face-foreground 'lsp-ui-sideline-global nil)
     (set-face-background 'lsp-ui-sideline-global nil)
 
+    (set-face-foreground 'header-line "#253525")
+    (set-face-background 'header-line "#202020")
+
     (require 'lsp-headerline)
     (set-face-background 'lsp-headerline-breadcrumb-path-error-face nil)
     (set-face-foreground 'lsp-headerline-breadcrumb-path-error-face "#662222")
