@@ -21,6 +21,7 @@
                sotlisp-mode
                lsp-lens-mode
                lsp-mode
+               haskell-doc-mode
                cider-mode
                flycheck-mode
                company-mode
@@ -40,6 +41,7 @@
                dired-async-mode
                global-gumshoe-mode
                monroe-interaction-mode
+               dante-mode
                git-gutter+-mode
                eldoc-mode
                clj-refactor-mode

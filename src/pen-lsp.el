@@ -472,7 +472,7 @@ We don't extract the string that `lps-line' is already displaying."
 (defun lsp-list-all-servers ()
   (interactive)
   (if (interactive-p)
-      (etv (pps (lsp-list-servers t)))
+      (pen-etv (pps (lsp-list-servers t)))
     (lsp-list-servers t)))
 
 (defun lsp-get-server-for-install (name)
@@ -647,23 +647,26 @@ We don't extract the string that `lps-line' is already displaying."
 (defun pen--lsp-get-sideline-text ()
   "Get text inside overlay O."
   (interactive)
-  (etv
-   (list2str
-    (reverse
-     (loop for o in lsp-ui-sideline--ovs
-           collect
-           ;; (buffer-substring (overlay-start o) (overlay-end o))
-           ;; (overlay-properties o)
-           (s-replace-regexp
-            "^\\(.*[^ ]+\\)  \\([^ ]+\\)$"
-            "\\2\n\\1\n"
-            (s-replace-regexp
-             " *$"
-             ""
-             (s-replace-regexp
-              "^ *"
-              ""
-              (str (overlay-get o 'after-string))))))))))
+  (let ((si
+         (pen-list2str
+          (reverse
+           (loop for o in lsp-ui-sideline--ovs
+                 collect
+                 ;; (buffer-substring (overlay-start o) (overlay-end o))
+                 ;; (overlay-properties o)
+                 (s-replace-regexp
+                  "^\\(.*[^ ]+\\)  \\([^ ]+\\)$"
+                  "\\2\n\\1\n"
+                  (s-replace-regexp
+                   " *$"
+                   ""
+                   (s-replace-regexp
+                    "^ *"
+                    ""
+                    (str (overlay-get o 'after-string))))))))))
+    (if (interactive-p)
+        (pen-etv si)
+      si)))
 
 ;; error list
 (defun pen-lsp-error-list (&optional path)
@@ -685,7 +688,7 @@ We don't extract the string that `lps-line' is already displaying."
                                            (car (split-string formatted-message "\n")))))
                        (add-to-list 'l text t)))))
              (lsp-diagnostics))
-    (etv (pp-to-string l))))
+    (pen-etv (pp-to-string l))))
 
 ;; Disable clicking lens stuff -- such as labels that say '2 references'
 (defun lsp-lens--keymap (command)

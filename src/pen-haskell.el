@@ -287,4 +287,23 @@
          def
        (read-string "Hoogle query: " nil nil def)))))
 
+;; If lsp files, try haskell-doc-show-type. ie. (haskell-doc-sym-doc "newtype")
+(defun pen-haskell-get-type ()
+  (interactive)
+  (let* ((si
+          (pen--lsp-get-sideline-text))
+         (thing (pen-thing-at-point))
+         (ty
+          (sor (s-replace-regexp (concat thing " :: ") "" (or (s-substring (concat thing " ::.*") si)
+                                                              ""))
+               (haskell-doc-sym-doc thing))))
+    (if (sor ty)
+        (if (interactive-p)
+            (pen-etv ty)
+          ty)
+      (progn
+        ;; (error (concat "No known type for " thing))
+        (message (concat "No known type for " thing))
+        nil))))
+
 (provide 'pen-haskell)

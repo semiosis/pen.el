@@ -155,6 +155,7 @@
                              ;; pen-intero-get-type
                              pen-haskell-get-import-for-package
                              dante-repl
+                             pen-haskell-get-type
                              haskell-extend-language
                              pen-src-thing-at-point
                              ;; hs-install-module-under-cursor
