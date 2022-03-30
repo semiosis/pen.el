@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+fp="$1"
+
+run-python-one-liner "import binaryornot; from binaryornot import check; binaryornot.check.is_binary($(cmd-nice-posix "$fp")) and exit(1)"

@@ -667,6 +667,8 @@ pip3 install ssdpy
 pip3 install --upgrade pip
 pip3 install PyMuPDF
 
+pip3 install binaryornot
+
 # Install mysql -- for Croogle
 apt install default-mysql-server
 apt install php-mysqli

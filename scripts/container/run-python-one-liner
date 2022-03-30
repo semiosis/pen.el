@@ -1,0 +1,83 @@
+#!/bin/bash
+export TTY
+
+# : "${DO_TEST:=""}"
+# : "${DO_PRINT:=""}"
+: "${PYVER:="3.7"}"
+
+# If you are trying to run a file
+if test "$#" -gt 0; then
+    last_arg="${@: -1}"
+
+    fp="$last_arg"
+
+    if [ -n "$FORCE_RC" ] && [ -f "$fp" ]; then
+        tf_script="$(pen-ux tf script || echo /dev/null)"
+        trap "rm \"$tf_script\" 2>/dev/null" 0
+
+        {
+            cat "$PYTHONSTARTUP"
+            echo
+            cat "$fp"
+        } > "$tf_script"
+
+        echo "python$PYVER $py_opts $tf_script" 1>&2
+        eval "python$PYVER $py_opts $tf_script"
+    else
+        # Only shortcut if it's only 1 argument
+        if test "$#" -eq 1; then
+            if test "$DO_TEST" = "y"; then
+                set -- -t "$@"
+            elif test "$DO_PRINT" = "y"; then
+                set -- -p "$@"
+            else
+                set -- -c "$@"
+            fi
+        fi
+
+        python_cmd=
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -c) {
+                python_cmd+="$2;"
+                shift
+                shift
+            }
+            ;;
+
+            -t) {
+                python_cmd+="exit(0 if $2 else 1);"
+                shift
+                shift
+            }
+            ;;
+
+            -p) {
+                python_cmd+="print($2);"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        CMD="$(cmd "$@")"
+
+        if test -n "$PYTHONSTARTUP"; then
+            python_cmd="-c $(cmd-nice-posix "from __future__ import print_function; exec(open($(cmd-nice-posix "$PYTHONSTARTUP")).read()); $python_cmd")"
+        else
+            python_cmd="-c $(cmd-nice-posix "$python_cmd")"
+        fi
+
+        if test "$STDIN_EXISTS" = "y"; then
+            exec < "$tf_stdin"
+        fi
+
+        eval "python$PYVER $py_opts $python_cmd $CMD"
+        exit $?
+    fi
+else
+    echo "python$PYVER" "$@"
+    eval "python$PYVER" "$@"
+fi

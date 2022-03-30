@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+fn="$1"
+
+print_next_after() {
+    sed -n "/^${fn}\$/{n;p;q}"
+}
+
+print_all_following() {
+    tac | sed "/$1/{q}" | tac | sed 1d | less -S
+}
+
+filter_unimportant() {
+    grep -v -P "~$"
+    return 0
+}
+
+find . -maxdepth 1 -type f | sort -d | sed "s/^\.\///" | tac | filter_unimportant | print_all_following "$fn" | awk 1 | while IFS=$'\n' read -r line; do
+    if isbinary "$line"  0</dev/null; then
+        continue
+    else
+        printf -- "%s\n" "$line"
+        exit 0
+    fi
+done | sed 1q
+filter-out-binary | print_next_after
