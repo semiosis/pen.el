@@ -76,4 +76,28 @@
 (defalias 'reselect 'reselect-last-region)
 (defalias 'activate-region 'reselect-last-region)
 
+(defun current-file-path ()
+  buffer-file-name)
+
+(defun current-file-name ()
+  (if buffer-file-name (basename buffer-file-name)))
+
+(defun open-next-file ()
+  (interactive)
+  ;; This works but killing the buffer is a little dangerous
+  ;; (ekm "M-m f d <up> RET M-l M-m <M-f4>")
+  (if (current-file-name)
+      (let ((next-file (chomp (pen-sn (concat "next-file " (pen-q (basename (current-file-name)))) nil (current-dir-name)))))
+        (if next-file (find-file next-file) (message "%s" "Cannot move further")))
+    (message "%s" "No current file name")))
+
+(defun open-prev-file ()
+  (interactive)
+  ;; This works but killing the buffer is a little dangerous
+  ;; (ekm "M-m f d <down> RET M-l M-m <M-f4>")
+  (if (current-file-name)
+      (let ((prev-file (chomp (pen-sn (concat "prev-file " (pen-q (basename (current-file-name)))) nil (current-dir-name)))))
+        (if prev-file (find-file prev-file) (message "%s" "Cannot move further")))
+    (message "%s" "No current file name")))
+
 (provide 'pen-utils)

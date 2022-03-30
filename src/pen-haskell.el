@@ -349,7 +349,11 @@
             (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
                               "-s" (concat ":md " thing)
                               "-c" "-m"
-                              "-i")))))))
+                              "-i"))))
+      (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
+                              "-s" (concat ":md " thing)
+                              "-c" "-m"
+                              "-i")))))
 
 (defun haskell-show-hdc-readme ()
   (interactive)
