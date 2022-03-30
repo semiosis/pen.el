@@ -31,7 +31,7 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/wikipedia.org/s/\/$//' | \
     sed '/wikipedia.org/s/\/#.*//' | \
     sed '/http:\/\/google/s/http:/https:/' | \
-    sed '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa.*=/\1/' | \
+    sed '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa=.*/\1/' | \
     sed '/.*haskell.org/s/\/$//' | \
     sed '/.*haskell.org/s/\/#.*//'
 
