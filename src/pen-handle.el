@@ -139,10 +139,18 @@
         :complete '()
         :rc '())
 
+(defun pen-lsp-docs-for-thing-maybe ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (let ((current-prefix-arg nil))
+        (call-interactively 'pf-get-documentation-for-syntax-given-screen/2))
+    (error "Fallthrough")))
+
 (handle '(haskell-mode)
         :navtree '()
         :run '()
-        :docs '(haskell-hdc-thing
+        :docs '(pen-lsp-docs-for-thing-maybe
+                haskell-hdc-thing
                 hoogle
                 pen-docs-for-thing-given-screen)
         :nexterr '()
