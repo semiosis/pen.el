@@ -130,6 +130,15 @@ argument, prompt for a regular expression using `read-regexp'."
 
     (require 'lsp-ui)
     (require 'lsp-lens)
+
+    (set-face-attribute
+     'lsp-details-face nil
+     :height 1.0
+     :inherit nil
+     :background "#151515"
+     :foreground "#222222"
+     :bold t)
+
     (set-face-attribute 'lsp-ui-sideline-symbol nil :box nil)
     (set-face-attribute 'lsp-ui-sideline-current-symbol nil :box nil)
     (set-face-foreground 'lsp-ui-sideline-current-symbol "#66ff66")
@@ -170,8 +179,8 @@ argument, prompt for a regular expression using `read-regexp'."
 
     ;; I actually do want it to be dark like this
     (require 'lsp-lens)
-    (set-face-foreground 'lsp-lens-face "#000000")
-    (set-face-background 'lsp-lens-face "#111111")
+    (set-face-foreground 'lsp-lens-face "#222222")
+    (set-face-background 'lsp-lens-face "#151515")
 
     (require 'shr)
     (set-face-foreground 'shr-link fg)
