@@ -1577,6 +1577,9 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/glossaries" && : "${GLOSSARIES_DIR:="$MYGIT/semiosis/glossaries"}"
     test -d "glossaries" && : "${GLOSSARIES_DIR:="`pwd`/glossaries"}"
 
+    test -n "$MYGIT" && test -d "$MYGIT/semiosis/ilambda" && : "${ILAMBDA_DIR:="$MYGIT/semiosis/ilambda"}"
+    test -d "ilambda" && : "${ILAMBDA_DIR:="`pwd`/ilambda"}"
+
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/prompts" && : "${PROMPTS_DIR:="$MYGIT/semiosis/prompts"}"
     test -d "prompts" && : "${PROMPTS_DIR:="`pwd`/prompts"}"
 
@@ -1663,6 +1666,21 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     fi
 
     test -d "engines" && : "${PEN_ENGINES_DIR:="engines"}"
+
+    if ! test "$batch" = "y"; then
+        if test -d "$ILAMBDA_DIR"; then
+            yn "Pull ilambda repo? (recommended)" && (
+                cd "$ILAMBDA_DIR"
+                git pull origin master
+            )
+        else
+            yn "Clone ilambda repo here?" && (
+                git clone "http://github.com/semiosis/ilambda"
+            )
+        fi
+    fi
+
+    test -d "ilambda" && : "${ILAMBDA_DIR:="ilambda"}"
 
     if ! test "$batch" = "y"; then
         if test -d "$PROMPTS_DIR"; then
@@ -1804,6 +1822,10 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
             )
     fi
 
+    if test -d "$ILAMBDA_DIR"; then
+        ILAMBDA_DIR="$(realpath "$ILAMBDA_DIR")"
+    fi
+
     if test -d "$PROMPTS_DIR"; then
         PROMPTS_DIR="$(realpath "$PROMPTS_DIR")"
     fi
@@ -1895,6 +1917,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test "$docker_cmd" = run && printf -- "%s " --rm ) \
         $(test -n "$OPENAI_API_KEY" && printf -- "%s " -e "OPENAI_API_KEY:$OPENAI_API_KEY" ) \
         $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
+        $(test -n "$ILAMBDA_DIR" && printf -- "%s " -v "$ILAMBDA_DIR:/root/.emacs.d/host/ilambda" ) \
         $(test -n "$PROMPTS_DIR" && printf -- "%s " -v "$PROMPTS_DIR:/root/.emacs.d/host/prompts" ) \
         $(test -n "$PEN_ENGINES_DIR" && printf -- "%s " -v "$PEN_ENGINES_DIR:/root/.emacs.d/host/engines" ) \
         $(test -n "$PEN_METAVERSES_DIR" && printf -- "%s " -v "$PEN_METAVERSES_DIR:/root/.emacs.d/host/metaverses" ) \
@@ -2044,10 +2067,9 @@ else
 fi
 
 if test "$docker_cmd" = exec && is_tty; then
-    :
-    # clear
-    # echo Pen exited | pen-hls red
-    # tmux send C-l &>/dev/null
+    clear
+    echo Pen exited | pen-hls red
+    tmux send C-l &>/dev/null
 fi
 
 if test "$force_shutdown_container" = "y"; then
