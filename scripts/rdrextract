@@ -13,6 +13,8 @@ trap "rm \"$input_fp\" 2>/dev/null" 0
 
 exec 0</dev/null
 
+# cat "$input_fp" | pen-tv &>/dev/null
+
 title="(READER) $(cat "$input_fp" | rdrview -M | sed -n '/^Title:/{s/^\(Title: \)\(.*\)/\2/p;q}')"
 readerable="$(cat "$input_fp" | rdrview -M | sed -n '/^Readerable:/{s/^\(Readerable: \)\(.*\)/\2/p;q}')"
 

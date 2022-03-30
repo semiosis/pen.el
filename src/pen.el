@@ -84,7 +84,10 @@
 (pen-require 'pen-selected)
 (require 'pen-hist)
 (if (inside-docker-p)
-    (require 'pen-eww))
+    (progn
+      (require 'pen-eww)
+      ;;(require 'pen-eww-extras)
+      ))
 (require 'pen-avy)
 (require 'pen-ace-link)
 (if (inside-docker-p)
