@@ -181,6 +181,7 @@
 (sslk "ldp" 'pen-acolyte-dired-penel)
 (sslk "ldqd" 'pen-dired-documents)
 (sslk "ldqn" 'pen-dired-notes)
+(sslk "ldqr" 'pen-dired-repos)
 (sslk "ldqp" 'pen-acolyte-dired-penel)
 (sslk "ldqo" 'pen-acolyte-dired-prompts)
 (sslk "ldqm" 'pen-acolyte-dired-engines)

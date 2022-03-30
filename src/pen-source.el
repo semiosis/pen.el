@@ -54,6 +54,10 @@
   (interactive)
   (dired pen-penel-directory))
 
+(defun pen-dired-repos ()
+  (interactive)
+  (dired "/root/repos"))
+
 (defun pen-acolyte-dired-scripts ()
   (interactive)
   (dired (f-join pen-penel-directory "scripts")))

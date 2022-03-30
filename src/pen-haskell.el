@@ -331,6 +331,11 @@
 (defun haskell-hdc-thing (thing)
   (interactive (list (pen-thing-at-point)))
   ;; (pen-zrepl (pen-cmd "hdc" thing))
+  (pen-e-spv 'haskell-show-hdc-readme)
   (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-i")))
+
+(defun haskell-show-hdc-readme ()
+  (interactive)
+  (find-file "/root/repos/haskell-docs-cli/README.md"))
 
 (provide 'pen-haskell)
