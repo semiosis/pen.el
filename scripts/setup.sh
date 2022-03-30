@@ -114,7 +114,7 @@ cargo install xsv
 
 (
 cd "$EMACSD/emacs-yamlmod"
-source $HOME/.cargo/env
+. $HOME/.cargo/env
 make -j 4 || :
 )
 
@@ -555,6 +555,20 @@ git clone "https://github.com/semiosis/yas-snippets"
 ln -sf ~/repos/yas-snippets ~/.emacs.d/snippets
 )
 
+(
+cd ~/repos
+git clone "https://github.com/lazamar/haskell-docs-cli"
+cd haskell-docs-cli
+cabal install
+)
+
+(
+cd ~/repos
+git clone "https://github.com/elaforge/fix-imports"
+cd fix-imports
+cabal install
+)
+
 # ispell
 agi dialog apt-utils
 agi dictionaries-common
@@ -668,6 +682,20 @@ pen-x -shE "mysql -u root" -e "MariaDB [" -s "flush privileges;" -c m \
 mkdir -p /var/www/
 ln -s ~/repos/wizard /var/www/wizard
 mkdir -p /etc/apache2/sites-available
+
+test -f $REPOS/googler/googler || (
+    cd "$REPOS"
+    git clone "https://github.com/jarun/googler"
+    cd googler
+    make
+)
+
+test -f $REPOS/ddgr/ddgr || (
+    cd "$REPOS"
+    git clone "https://github.com/jarun/ddgr"
+    cd ddgr
+    make
+)
 
 # Haskell: - gcup, cabal, hls
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh

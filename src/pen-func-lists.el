@@ -150,12 +150,16 @@
 (defset web-mode-funcs '(eww-open-this-file elinks-dump-open-this-file))
 
 (defset haskell-mode-funcs '(ghcid
+                             hoogle
                              ghcd-info
-                             pen-intero-get-type
+                             ;; pen-intero-get-type
+                             pen-haskell-get-import-for-package
+                             dante-repl
                              haskell-extend-language
                              pen-src-thing-at-point
-                             hs-install-module-under-cursor
+                             ;; hs-install-module-under-cursor
                              hs-download-packages-with-function-type))
+
 (defset eww-mode-funcs '(eww-open-in-chrome
                          pen-url-cache-delete
                          eww-add-domain-to-chrome-dom-matches

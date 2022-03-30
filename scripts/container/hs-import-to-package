@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -u) {
+        UPDATE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export UPDATE
+
+modulename="$1"
+
+# man 'ghc-pkg' | vs +/"--user"
+# man 'ghc-pkg' | vs +/"--global"
+
+{
+    oha -n import "$modulename" |
+        sed 's=^.*/package/==' |
+        sed 's/^\([a-zA-Z0-9._-]\+\).*/\1/'
+    ghc-pkg find-module "$modulename" | sed -e '/^[^ ]/d' -e '/(/d' -e '/^$/d' -e 's/^ \+//'
+} | uniqnosort | pavs

@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# Upon seeing particular patterns in a file, suggest imports
+# This is to speed up the process of writing code.
+# I write the code I mean and run the function from emacs func-lists
+# and the imports are put up the top.
+
+# TODO Actually, I should be writing this in lisp, that would be far easier.
+
+# $EMACSD/config/my-suggest-imports.el

@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -u) {
+        UPDATE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export UPDATE
+
+type="$1"
+
+hs-type-declarative-search "$type" |
+    pen-mfz -m -p -pscript hs-type-declarative-search-preview |
+    sed -e 's/ /./' -e "s/ ::.*//" | pavs

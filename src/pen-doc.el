@@ -185,9 +185,21 @@
         (xc out)
       out)))
 
+(defun pen-haskell-get-import-for-package (thing)
+  (interactive (list (pen-thing-at-point)))
+  (let ((i
+         (fz (pen-sn (concat "hs-import-to-package " (pen-q thing))))))
+    (if (interactive-p)
+        (pen-etv i)
+      i)))
+
+(defun dante-repl ()
+  (interactive)
+  (pen-sps "cabal v2-repl --builddir=newdist/dante"))
+
 (defun hs-install-module-under-cursor (thing)
   (interactive (list (pen-thing-at-point)))
-  (pen-sps (concat "zrepl stack install " (pen-q (fz (pen-sn (concat "hs-import-to-package " (pen-q thing))))))))
+  (pen-sps (concat "zrepl stack install " (pen-q (pen-haskell-get-import-for-package)))))
 
 (defun hs-download-packages-with-function-type (hs-type)
   (interactive (list (pen-intero-get-type)))

@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+test -f $REPOS/ddgr/ddgr || (
+    cd "$REPOS"
+    git clone "https://github.com/jarun/ddgr"
+    cd ddgr
+    make
+)
+
+$REPOS/ddgr/ddgr "$@"

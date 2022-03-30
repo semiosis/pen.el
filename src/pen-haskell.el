@@ -3,6 +3,7 @@
 (require 'haskell-hoogle)
 (require 'ob-haskell)
 (require 'haskell-decl-scan)
+(require 'dante)
 ;; (require 'hasky-stack)
 (require 's)
 
@@ -253,7 +254,7 @@
 
 ;; Prioritise nix
 (setq dante-methods
-      '(new-flake-impure new-flake flake-impure flake styx new-impure-nix new-nix nix impure-nix stack new-build nix-ghci mafia bare-cabal bare-v1-cabal bare-ghci))
+      '(new-flake-impure new-flake flake-impure flake styx new-impure-nix new-nix nix impure-nix cabal new-build nix-ghci mafia bare-cabal bare-v1-cabal bare-ghci))
 
 (advice-add 'dante-fontify-expression :around #'ignore-errors-passthrough-around-advice)
 (advice-add 'dante-info :around #'ignore-errors-around-advice)

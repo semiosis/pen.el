@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# sed 's=^https\?://\([a-z.]\+\)/\(.*\)=git@\1:\2.git='
+# git@gitlab.com:fortescue-autonomy/environments/fatos
+
+sed 's=^git@\([a-z.]\+\):\(.*\)\.git$=http://\1/\2=' |
+    sed 's/\.git$//' |
+    sed 's=git@github.com:=http://github.com/='

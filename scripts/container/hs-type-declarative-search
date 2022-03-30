@@ -1,0 +1,116 @@
+#!/bin/bash
+export TTY
+
+: "${EXACT:="y"}"
+: "${SMART:="y"}"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -x) {
+        EXACT=y
+        shift
+    }
+    ;;
+
+    -X) {
+        EXACT=n
+        shift
+    }
+    ;;
+
+    -S) {
+        SMART=n
+        shift
+    }
+    ;;
+
+    -s) {
+        SMART=y
+        shift
+    }
+    ;;
+
+    -u) {
+        UPDATE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export UPDATE
+
+# Remove all options
+# This ruins the command-line invocation -- fix this
+# eval "set -- $(cmd "$@" | sed 's/\(^\| \)-[^ ]\+\( \|$\)/ /g')"
+eval "set -- $(cmd "$@" | sed-pcre "s/^((^| )-[^ ]+)+//")"
+# Remove all flags up until the first non-flag
+# It should not be allowed to strip -->
+
+query="$@"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+# Keep in mind that permutations of arguments is often desired
+
+# Going to the website works for
+# hoogle "--count=10000" "[String] -> String" | v
+# hoogle "--count=10000" "$(pen-pl "[String] -> String" | urlencode)" | v
+# https://hoogle.haskell.org/?hoogle=%5BString%5D+-%3E+String&scope=set%3Astackage
+
+
+# The grep -F is for ensuring I get the results I expect
+# hs-type-declarative-search "[String] -> String"
+
+grepitsmart () {
+    IFS= read -rd '' input < <(cat /dev/stdin)
+
+    if test "$EXACT" = "y"; then
+        printf -- "%s\n" "$input" | grep -P -- ":: $(p "$query" | sed 's/\bString\b/Text/g' | pen-bs '()')$"
+        printf -- "%s\n" "$input" | grep -P -- ":: $(p "$query" | sed 's/\bText\b/String/g' | pen-bs '()')$"
+    else
+        printf -- "%s\n" "$input" | grep -F -- "$(p "$query" | sed 's/\bString\b/Text/g')"
+        printf -- "%s\n" "$input" | grep -F -- "$(p "$query" | sed 's/\bText\b/String/g')"
+    fi
+}
+
+grepit () {
+    if test "$EXACT" = "y"; then
+        grep -P -- ":: $query$"
+    else
+        grep -F -- "$query"
+    fi
+}
+
+if pen-pl "$query" | pen-ds last-hoogle-query | grep -q -P '\bText\b' && pen-pl "$query" | grep -q -P '\bString\b'; then
+    SMART=n
+fi
+
+{
+    if test "$SMART" = "y"; then
+        # TODO Run several times with all combinations of Text and String
+        :
+        # query="$(p "$query" | sed 's/\bString\b/Text/g')"
+        # Run several times with all combinations of Text and String
+        # hoogle --count=10000 "$query"
+
+        # Actually, assuming that when Text and String appear together, it's
+        # special, don't find all combinations. Instead, simply run twice
+
+        {
+            pen-ci hoogle --count=10000 "$(p "$query" | sed 's/\bString\b/Text/g')"
+            pen-ci hoogle --count=10000 "$(p "$query" | sed 's/\bText\b/String/g')"
+        } | uniqnosort | grepitsmart
+    else
+        pen-ci hoogle --count=10000 "$query" | grepit
+    fi
+} | {
+    if is_tty; then
+        vs
+    else
+        cat
+    fi
+}

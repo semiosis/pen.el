@@ -503,24 +503,28 @@ Differences in #targets are ignored."
   ;; in Chrome,
   ;; then click on the drop down and scroll to the very end
   ;; I will see that the decoding problems are in Hoogle too
-  
-  ;; (pen-tv (buffer-string))
-  ;; (decode-coding-string (buffer-substring (point-min) (point-max)) 'utf-8)
+
+  ;; This fixes a minor issue
+  (let ((newhttpdata (s-replace "charset=utf8" "charset=utf-8" (buffer-string))))
+    (delete-region
+     (point-min)
+     (point-max))
+    (insert newhttpdata))
 
   (let* ((headers (eww-parse-headers))
-	 (content-type
-	  (mail-header-parse-content-type
+         (content-type
+          (mail-header-parse-content-type
            (if (zerop (length (cdr (assoc "content-type" headers))))
-	       "text/plain"
+               "text/plain"
              (cdr (assoc "content-type" headers)))))
-	 (charset (intern
-		   (downcase
-		    (or (cdr (assq 'charset (cdr content-type)))
-			(eww-detect-charset (eww-html-p (car content-type)))
-			"utf-8"))))
-	 (data-buffer (current-buffer))
-	 (shr-target-id (url-target (url-generic-parse-url url)))
-	 last-coding-system-used)
+         (charset (intern
+                   (downcase
+                    (or (cdr (assq 'charset (cdr content-type)))
+                        (eww-detect-charset (eww-html-p (car content-type)))
+                        "utf-8"))))
+         (data-buffer (current-buffer))
+         (shr-target-id (url-target (url-generic-parse-url url)))
+         last-coding-system-used)
     (let ((redirect (plist-get status :redirect)))
       (when redirect
         (setq url redirect)))
@@ -533,9 +537,9 @@ Differences in #targets are ignored."
       ;; referer purposes.
       (setq url-current-lastloc (url-generic-parse-url url)))
     (unwind-protect
-	(progn
+        (progn
 
-	  (cond
+          (cond
            ((and eww-use-external-browser-for-content-type
                  (string-match-p eww-use-external-browser-for-content-type
                                  (car content-type)))
@@ -546,23 +550,22 @@ Differences in #targets are ignored."
             (insert (format "<a href=%S>Direct link to the document</a>"
                             url))
             (goto-char (point-min))
-	    (eww-display-html charset url nil point buffer encode use-chrome))
-	   ((eww-html-p (car content-type))
-	    (eww-display-html charset url nil point buffer encode use-chrome))
-	   ((equal (car content-type) "application/pdf")
-	    (eww-display-pdf))
-	   ((string-match-p "\\`image/" (car content-type))
-	    (eww-display-image buffer))
-	   (t
-	    (eww-display-raw buffer (or encode charset 'utf-8))
-            ))
-	  (with-current-buffer buffer
-	    (plist-put eww-data :url url)
-	    (eww-update-header-line-format)
-	    (setq eww-history-position 0)
-	    (and last-coding-system-used
-		 (set-buffer-file-coding-system last-coding-system-used))
-	    (run-hooks 'eww-after-render-hook)))
+            (eww-display-html charset url nil point buffer encode use-chrome))
+           ((eww-html-p (car content-type))
+            (eww-display-html charset url nil point buffer encode use-chrome))
+           ((equal (car content-type) "application/pdf")
+            (eww-display-pdf))
+           ((string-match-p "\\`image/" (car content-type))
+            (eww-display-image buffer))
+           (t
+            (eww-display-raw buffer (or encode charset 'utf-8))))
+          (with-current-buffer buffer
+            (plist-put eww-data :url url)
+            (eww-update-header-line-format)
+            (setq eww-history-position 0)
+            (and last-coding-system-used
+                 (set-buffer-file-coding-system last-coding-system-used))
+            (run-hooks 'eww-after-render-hook)))
       (kill-buffer data-buffer))))
 
 (defun lg-url-cache-slug-fp (url)

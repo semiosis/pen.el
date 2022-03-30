@@ -1,0 +1,110 @@
+#!/bin/bash
+export TTY
+
+export PYTHONWARNINGS=ignore
+export TF_CPP_MIN_LOG_LEVEL=3
+
+query="$@"
+
+# ddgr can't go above 25
+nresults=25
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -n) {
+        nresults="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -notty) {
+        NOTTY=y
+        shift
+    }
+    ;;
+
+    -loop) {
+        LOOPTIME="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -u) {
+        UPDATE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export UPDATE
+
+# This package is dead
+# py i google-search
+
+# This one should work
+# py i google-search-results
+
+# But it requires this:
+# https://serpapi.com/
+
+# read -r -d '' PYCODE <<HEREDOC
+# try:
+#     from googlesearch import search
+# except ImportError:
+#     print("No module named 'google' found")
+# 
+# # to search
+# query = "$query"
+# 
+# for j in search(query, tld="co.in", num=$nresults, stop=1, pause=2):
+#     print(j)
+# HEREDOC
+
+# python -c "$PYCODE"
+# python3.7 -c "$PYCODE"
+
+search_with_googler() {
+    pen-oci python $REPOS/googler/googler "$@" 2>/dev/null
+}
+
+# duck duck go
+search_with_ddg() {
+    pen-oci ddgr "$@" 2>/dev/null
+}
+
+search() {
+    results="$(search_with_googler -n "$nresults" --json "$@" | jq -r '.[].url')"
+    byc="$(printf -- "%s" "$results" | wc -c)"
+
+    if ! test "$byc" -gt 0; then
+        results="$(search_with_ddg -n "$nresults" --json "$@" | jq -r '.[].url')"
+        byc="$(printf -- "%s" "$results" | wc -c)"
+    fi
+
+    if test "$byc" -gt 0; then
+        printf -- "%s\n" "$results"
+    fi
+}
+
+if test -n "$LOOPTIME"; then
+    while :; do
+        search "$@"
+        sleep "$LOOPTIME"
+        echo
+    done
+else
+    {
+        search "$@"
+        # pen-oci emacs-google-scrape-backend "$@"
+    } | head -n "$nresults" | pen-ds last-gr | {
+        if test "$NOTTY" = "y"; then
+            cat
+        else
+            pen-pavs
+        fi
+    }
+fi

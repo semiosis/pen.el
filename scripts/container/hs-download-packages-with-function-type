@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+type="$1"
+
+if test -n "$type"; then
+    hs-type-declarative-search-fzf "$type" | sed 1q | pen-xa hs-import-to-package | fzf --sync | pen-xa o-hackage
+fi

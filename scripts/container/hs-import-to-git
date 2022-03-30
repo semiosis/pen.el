@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# If it is a fully qualified function name then remove the function bit
+awk 1 | sed 's/\.[^A-Z].*//' | while IFS=$'\n' read -r line; do
+    hs-import-to-package "$line" | pen-xa oha
+done
