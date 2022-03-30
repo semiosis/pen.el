@@ -106,6 +106,7 @@
 (require 'pen-textprops)
 (require 'pen-rc)
 (require 'pen-faces)
+(require 'pen-highlight-indent-guides)
 (require 'pen-misc)
 (require 'pen-packages)
 (require 'pen-pensieve)
