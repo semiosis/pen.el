@@ -697,6 +697,8 @@ We don't extract the string that `lps-line' is already displaying."
   (-doto (make-sparse-keymap)
     (identity)))
 
+(advice-add 'lsp-lens--display :around #'ignore-errors-around-advice)
+
 (progn
   (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
   (define-key lsp-ui-imenu-mode-map (kbd "<return>") 'lsp-ui-imenu--view)
