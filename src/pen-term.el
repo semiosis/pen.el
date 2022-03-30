@@ -326,7 +326,8 @@ commands to use in that buffer.
 (defun pen-revert-kill-buffer-and-window ()
   (interactive)
   (ignore-errors
-    (force-revert-buffer)
+    (if (not (major-mode-p 'comint-mode))
+        (force-revert-buffer))
 
     (pen-kill-buffer-and-window)))
 

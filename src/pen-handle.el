@@ -6,7 +6,13 @@
     "What are some examples of using '${query}'?"
     "What are some alternatives to using '${query}'?"))
 
-;; v:pen-ask-documentation 
+;; v:pen-ask-documentation
+
+(defun pen-docs-for-thing-given-screen ()
+  (interactive)
+  (if (yn "No docfn available. Use Pen?")
+      (call-interactively 'pf-get-documentation-for-syntax-given-screen/2)
+    (error "Pen declined")))
 
 (defmacro gen-term-command (cmd &optional reuse)
   "Generate an interactive emacs command for a term command"
@@ -96,7 +102,7 @@
         :refactor '()
         :debug '()
         :docfun '()
-        :docs '(pf-get-documentation-for-syntax-given-screen/2)
+        :docs '(pen-docs-for-thing-given-screen)
         :docsearch '()
         :godec '()
         :godef '()
@@ -116,7 +122,7 @@
         :run '()
         :repls '()
         :formatters '()
-        :docs '(pf-get-documentation-for-syntax-given-screen/2)
+        :docs '(pen-docs-for-thing-given-screen)
         :godef '()
         :docsearch '()
         :nextdef '()
@@ -127,7 +133,7 @@
 (handle '(org-mode)
         :navtree '()
         :run '()
-        :docs '(pf-get-documentation-for-syntax-given-screen/2)
+        :docs '(pen-docs-for-thing-given-screen)
         :nexterr '()
         :preverr '()
         :complete '()
@@ -135,27 +141,27 @@
 
 (handle '(text-mode)
         :nexterr '()
-        :docs '(pf-get-documentation-for-syntax-given-screen/2)
+        :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
 
 (handle '(fundamental-mode)
         :nexterr '()
-        :docs '(pf-get-documentation-for-syntax-given-screen/2)
+        :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
 
 (handle '(special-mode)
         :nexterr '()
-        :docs '(pf-get-documentation-for-syntax-given-screen/2)
+        :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
 
 (handle '(comint-mode)
         :nexterr '()
-        :docs '(pf-get-documentation-for-syntax-given-screen/2)
+        :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
 
 (handle '(term-mode)
         :nexterr '()
-        :docs '(pf-get-documentation-for-syntax-given-screen/2)
+        :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
 
 (handle '(emacs-lisp-mode)

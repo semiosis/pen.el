@@ -1,0 +1,29 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# This lets you grep with any scraper
+
+test -n "$1" || exit 1
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
+
+find . -type f | awk 1 | while IFS=$'\n' read -r line; do
+(
+    exec 0</dev/null
+    cat "$line" | awk 1
+)
+done | eval "$CMD" | pen-pavs

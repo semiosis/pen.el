@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+if test -d "$1"; then
+    cd "$1"
+else
+    is-git && cd "$(pen-vc get-top-level)" && pwd 1>&2
+fi
+
+if test -f "stack.yaml"; then
+    stack repl
+else
+    ghci
+fi

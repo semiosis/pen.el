@@ -1,5 +1,13 @@
 (require 'wgrep)
 
+(defun helpful-thing-at-point (&optional args)
+  (interactive "P")
+  (if (not args) (setq args (symbol-at-point)))
+  (if args
+      (cond ((ignore-errors (hash-table-p (eval args))) (describe-hash args))
+            (t (helpful-symbol args)))))
+(defalias 'describe-thing-at-point 'helpful-thing-at-point)
+
 (defun goto-function-from-binding (sequence)
   "Go to the function name associated with a key binding after entering it"
   (interactive (list (format "%s" (key-description (read-key-sequence-vector "Key: ")))))

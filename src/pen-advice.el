@@ -1,10 +1,5 @@
 (require 'pen-pcre)
 
-(defun ignore-errors-around-advice (proc &rest args)
-  (ignore-errors
-    (let ((res (apply proc args)))
-      res)))
-
 (advice-add 'message-no-echo :around #'ignore-errors-around-advice)
 
 (defun ignore-errors-passthrough-around-advice (proc arg)

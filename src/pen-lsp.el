@@ -131,10 +131,11 @@ This issue might be caused by:
   (add-hook 'before-save-hook #'lsp-organize-imports t t))
 (add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
 
-(use-package lsp-haskell
-  :ensure t
-  :config
-  (setq lsp-haskell-process-path-hie "haskell-language-server-wrapper"))
+(comment
+ (use-package lsp-haskell
+   :ensure t
+   :config
+   (setq lsp-haskell-process-path-hie "haskell-language-server-wrapper")))
 
 (progn
   (require 'julia-mode)
@@ -146,38 +147,42 @@ This issue might be caused by:
 ;; (add-to-list 'load-path (concat emacsdir "/manual-packages/lsp-solidity-el"))
 ;; (require 'lsp-solidity)
 
-(use-package lsp-mode
-  :config
-  (add-hook 'c++-mode-hook 'maybe-lsp)
-  (add-hook 'c-mode-hook #'maybe-lsp)
-  (add-hook 'python-mode-hook 'maybe-lsp)
-  (add-hook 'perl-mode-hook 'maybe-lsp)
-  (remove-hook 'perl-mode-hook 'maybe-lsp)
-  (add-hook 'dockerfile-mode-hook 'maybe-lsp)
-  (add-hook 'java-mode-hook 'maybe-lsp)
-  (add-hook 'kotlin-mode-hook 'maybe-lsp)
-  (add-hook 'yaml-mode-hook #'maybe-lsp)
-  (add-hook 'sql-mode-hook 'maybe-lsp)
-  (add-hook 'php-mode-hook 'maybe-lsp)
-  (add-hook 'clojure-mode-hook 'maybe-lsp)
-  (add-hook 'clojurescript-mode-hook 'maybe-lsp)
-  (add-hook 'julia-mode-hook 'maybe-lsp)
-  (add-hook 'ess-julia-mode-hook 'maybe-lsp)
-  (add-hook 'go-mode-hook 'maybe-lsp)
-  (add-hook 'cmake-mode-hook 'maybe-lsp)
-  (add-hook 'ruby-mode-hook 'maybe-lsp)
-  (add-hook 'gitlab-ci-mode-hook 'maybe-lsp)
-  (add-hook 'sh-mode-hook 'maybe-lsp)
-  (add-hook 'rust-mode-hook 'maybe-lsp)
-  (add-hook 'vimrc-mode-hook 'maybe-lsp)
-  (add-hook 'racket-mode-hook 'maybe-lsp)
-  ;; (add-hook 'solidity-mode-hook 'maybe-lsp)
-  (add-hook 'rustic-mode-hook 'maybe-lsp)
-  (add-hook 'nix-mode-hook 'maybe-lsp)
-  (add-hook 'js-mode-hook 'maybe-lsp)
-  (add-hook 'typescript-mode-hook 'maybe-lsp)
-  (add-hook 'haskell-mode-hook #'maybe-lsp)
-  (add-hook 'purescript-mode-hook 'maybe-lsp))
+(with-eval-after-load 'lsp-mode
+  (add-hook 'rust-mode-hook #'lsp))
+
+(with-eval-after-load 'lsp-ui
+  (add-hook 'lsp-mode-hook 'lsp-ui-mode))
+
+(add-hook 'c++-mode-hook 'maybe-lsp)
+(add-hook 'c-mode-hook #'maybe-lsp)
+(add-hook 'python-mode-hook 'maybe-lsp)
+(add-hook 'perl-mode-hook 'maybe-lsp)
+(remove-hook 'perl-mode-hook 'maybe-lsp)
+(add-hook 'dockerfile-mode-hook 'maybe-lsp)
+(add-hook 'java-mode-hook 'maybe-lsp)
+(add-hook 'kotlin-mode-hook 'maybe-lsp)
+(add-hook 'yaml-mode-hook #'maybe-lsp)
+(add-hook 'sql-mode-hook 'maybe-lsp)
+(add-hook 'php-mode-hook 'maybe-lsp)
+(add-hook 'clojure-mode-hook 'maybe-lsp)
+(add-hook 'clojurescript-mode-hook 'maybe-lsp)
+(add-hook 'julia-mode-hook 'maybe-lsp)
+(add-hook 'ess-julia-mode-hook 'maybe-lsp)
+(add-hook 'go-mode-hook 'maybe-lsp)
+(add-hook 'cmake-mode-hook 'maybe-lsp)
+(add-hook 'ruby-mode-hook 'maybe-lsp)
+(add-hook 'gitlab-ci-mode-hook 'maybe-lsp)
+(add-hook 'sh-mode-hook 'maybe-lsp)
+(add-hook 'rust-mode-hook 'maybe-lsp)
+(add-hook 'vimrc-mode-hook 'maybe-lsp)
+(add-hook 'racket-mode-hook 'maybe-lsp)
+;; (add-hook 'solidity-mode-hook 'maybe-lsp)
+(add-hook 'rustic-mode-hook 'maybe-lsp)
+(add-hook 'nix-mode-hook 'maybe-lsp)
+(add-hook 'js-mode-hook 'maybe-lsp)
+(add-hook 'typescript-mode-hook 'maybe-lsp)
+(add-hook 'haskell-mode-hook #'maybe-lsp)
+(add-hook 'purescript-mode-hook 'maybe-lsp)
 
 ;; These modes are "clojure"
 (dolist (m '(clojure-mode
@@ -202,16 +207,7 @@ This issue might be caused by:
     (lsp--set-configuration lsp-cfg)))
 
 ;; https://www.mortens.dev/blog/emacs-and-the-language-server-protocol/
-(use-package lsp-mode
-  :config
-  ;; `-background-index' requires clangd v8+!
-  (setq lsp-clients-clangd-args '("-j=4" "-background-index" "-log=error")))
-
-(with-eval-after-load 'lsp-mode
-  (add-hook 'rust-mode-hook #'lsp))
-
-(with-eval-after-load 'lsp-ui
-  (add-hook 'lsp-mode-hook 'lsp-ui-mode))
+(setq lsp-clients-clangd-args '("-j=4" "-background-index" "-log=error"))
 
 (use-package lsp-mode
   :hook
@@ -447,20 +443,37 @@ We don't extract the string that `lps-line' is already displaying."
 
 (advice-add 'lsp--document-highlight :around #'ignore-errors-around-advice)
 
+(require 'lsp-metals)
+
+(defun lsp--server-binary-present? (client)
+  (unless (equal (lsp--client-server-id client) 'lsp-pwsh)
+    nil
+    (condition-case ()
+        ;; Suppresses the error
+        (-some-> client lsp--client-new-connection (plist-get :test?) (lambda (&rest a) (ignore-errors funcall ,@a)))
+      ;; (-some-> client lsp--client-new-connection (plist-get :test?) funcall)
+      (error nil)
+      (args-out-of-range nil))))
+
 (defun lsp-list-servers (&optional update)
   (mapcar 'car (--map (cons (funcall
                              (-compose #'symbol-name #'lsp--client-server-id) it) it)
                       (or (->> lsp-clients
-                               (ht-values)
-                               (-filter (-andfn
-                                         (-orfn (-not #'lsp--server-binary-present?)
-                                                (-const update))
-                                         (-not #'lsp--client-download-in-progress?)
-                                         #'lsp--client-download-server-fn)))
+                            (ht-values)
+                            (-filter
+                             (-andfn
+                              (-orfn (-not #'lsp--server-binary-present?)
+                                     (-const update))
+                              (-not #'lsp--client-download-in-progress?)
+                              #'lsp--client-download-server-fn)))
                           (user-error "There are no servers with automatic installation")))))
+(advice-add 'lsp-list-servers :around #'ignore-errors-around-advice)
 
 (defun lsp-list-all-servers ()
-  (lsp-list-servers t))
+  (interactive)
+  (if (interactive-p)
+      (etv (pps (lsp-list-servers t)))
+    (lsp-list-servers t)))
 
 (defun lsp-get-server-for-install (name)
   (interactive (list (fz (lsp-list-all-servers))))

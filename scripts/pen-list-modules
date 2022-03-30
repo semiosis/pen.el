@@ -1,0 +1,46 @@
+#!/bin/bash
+export TTY
+
+# TODO Make it so this script may open to the package definition, as sp-open-main does for the main functions
+
+exec 0</dev/null
+
+show_lang=
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -sl) {
+        show_lang=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+find_python_modules() {
+    (
+        # gittop="$(is-git && pen-vc get-top-level)"
+        bn="$(basename "$(pwd)")"
+        find . -type f -name __init__.py | sed -e 's/^\.\///' | {
+            sed -e "s=^$(pwd)==" -e "s=^=${bn}/="
+        } | {
+            sed -e 's=/__init__.py$==' -e 's=/=.=g'
+        }
+    )
+}
+
+tag_with_lang() {
+    lang="$1"
+    if test "$show_lang" = y && test -n "$lang"; then
+        sed "s/$/	$lang/"
+    else
+        cat
+    fi
+}
+
+{
+    find_python_modules | tag_with_lang py
+    pen-scrape -r "^module [^ ]*" "*.hs" | sed 's/^module //' | tag_with_lang hs
+    pen-scrape -r "\\(provide '[^) ]*" "*.el" | sed "s/(provide '//" | tag_with_lang el
+} | pen-pavs

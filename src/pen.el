@@ -11,6 +11,11 @@
   (defvar pen-map (make-sparse-keymap)
     "Keymap for `pen.el'."))
 
+(defun ignore-errors-around-advice (proc &rest args)
+  (ignore-errors
+    (let ((res (apply proc args)))
+      res)))
+
 (defmacro lm (&rest body)
   "Interactive lambda with no arguments."
   `(lambda () (interactive) ,@body))
@@ -2064,7 +2069,7 @@ May use to generate code from comments."
 (require 'pen-lsp-client)
 (if (inside-docker-p)
     (require 'pen-lsp-java))
-;; (require 'pen-lsp)
+(require 'pen-lsp)
 (require 'ilambda)
 (require 'pen-dap)
 (require 'pen-cacheit)
