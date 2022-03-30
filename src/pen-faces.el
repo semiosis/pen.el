@@ -317,6 +317,8 @@ argument, prompt for a regular expression using `read-regexp'."
 ;; (remove-hook 'server-after-make-frame-functions 'pen-new-frame-set-faces)
 ;; (add-hook 'after-make-frame-functions 'pen-new-frame-set-faces)
 ;; (remove-hook 'after-make-frame-functions 'pen-new-frame-set-faces)
+
+;; This is the only place it needs to be, asides from the beginning of the eww function
 (add-hook 'after-init-hook 'pen-set-faces)
 ;; (remove-hook 'after-init-hook 'pen-set-faces)
 
