@@ -348,6 +348,31 @@ case "$sn" in
     *)
 esac
 
+if test "$sn" = penx; then
+    sn=penc
+
+    PEN_USE_GUI=y
+    share_x=y
+fi
+
+if test "$sn" = pent; then
+    if inside-docker-p || docker-running-p; then
+        sn=penc
+        HAS_TTY=y
+        show_banner=n
+        PEN_USE_GUI=n
+    fi
+fi
+
+if test "$sn" = lg; then
+    PEN_USE_GUI=n
+elif test "$sn" = lgx; then
+    sn=lg
+
+    PEN_USE_GUI=y
+    share_x=y
+fi
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     sh) {
@@ -758,31 +783,6 @@ if ! test "$start_shell" = y && \
     fi
 
     set -- "$@" /root/.pen/host_stdin.txt
-fi
-
-if test "$sn" = penx; then
-    sn=penc
-
-    PEN_USE_GUI=y
-    share_x=y
-fi
-
-if test "$sn" = pent; then
-    if inside-docker-p || docker-running-p; then
-        sn=penc
-        HAS_TTY=y
-        show_banner=n
-        PEN_USE_GUI=n
-    fi
-fi
-
-if test "$sn" = lg; then
-    PEN_USE_GUI=n
-elif test "$sn" = lgx; then
-    sn=lg
-
-    PEN_USE_GUI=y
-    share_x=y
 fi
 
 if ! test "$share_x" = "y"; then
