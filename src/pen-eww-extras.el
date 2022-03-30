@@ -2002,6 +2002,18 @@ the URL of the image to the kill buffer instead."
   (if (not (get-text-property (point) 'image-url))
       (goto-char (previous-single-char-property-change (point) 'image-url))))
 
+(defun eww-setup-buffer ()
+  (pen-set-faces)
+  (when (or (plist-get eww-data :url)
+            (plist-get eww-data :dom))
+    (eww-save-history))
+  (let ((inhibit-read-only t))
+    (remove-overlays)
+    (erase-buffer))
+  (setq bidi-paragraph-direction nil)
+  (unless (eq major-mode 'eww-mode)
+    (eww-mode)))
+
 (define-key eww-link-keymap (kbd "W") #'shr-copy-current-url)
 
 (define-key eww-mode-map (kbd ",") (pen-lm (call-interactively 'eww-lnum-universal)))
