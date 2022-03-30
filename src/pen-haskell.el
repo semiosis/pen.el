@@ -328,4 +328,9 @@
   (interactive (list (pen-haskell-get-type)))
   (pen-sph (concat "t new " (pen-q "hs-download-packages-with-function-type " (pen-q hs-type)))))
 
+(defun haskell-hdc-thing (thing)
+  (interactive (list (pen-thing-at-point)))
+  ;; (pen-zrepl (pen-cmd "hdc" thing))
+  (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-i")))
+
 (provide 'pen-haskell)

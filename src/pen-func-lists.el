@@ -156,6 +156,8 @@
                              ;; pen-haskell-get-import-for-package
                              pen-haskell-get-import
                              dante-repl
+                             haskell-hdc-thing
+
                              pen-haskell-get-type
                              haskell-extend-language
                              pen-src-thing-at-point
