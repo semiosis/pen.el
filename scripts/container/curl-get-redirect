@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+url="$1"
+
+redir="$(pen-odn curl -s -I "$url" | perl -n -e '/^[Ll]ocation: (.*)$/ && print "$1\n"')"
+
+if printf -- "%s\n" "$redir" | grep -q -P '^/'; then
+    echo "$(url-basename "$url")$redir"
+else
+    echo "$redir"
+fi

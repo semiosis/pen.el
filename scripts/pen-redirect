@@ -31,8 +31,11 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/wikipedia.org/s/\/$//' | \
     sed '/wikipedia.org/s/\/#.*//' | \
     sed '/http:\/\/google/s/http:/https:/' | \
+    sed '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa.*=/\1/' | \
     sed '/.*haskell.org/s/\/$//' | \
     sed '/.*haskell.org/s/\/#.*//'
+
+# I tried curl-get-redirect for google searches but google doesn't provide the information
 
 # https://web.archive.org/web/20161230180206/
 # https://web.archive.org/web/20161230180206/https://github.com/unisonweb/unison/blob/master/unison-src/searchengine.u
