@@ -340,17 +340,17 @@
           (if (pen-re-sensitive (string-match "^[a-z]" last))
               (let ((module (s-join "." (-drop-last 1 parts))))
                 ;; the last part is a function
-                (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
+                (pen-sps (pen-cmd "pen-x" "-allowtm" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
                                   ;; "-s" (concat ":src " thing)
                                   "-s" (concat ":mi " module)
                                   "-c" "-m"
                                   "-i")))
             ;; the last part is just part of the module
-            (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
+            (pen-sps (pen-cmd "pen-x" "-allowtm" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
                               "-s" (concat ":md " thing)
                               "-c" "-m"
                               "-i"))))
-      (pen-sps (pen-cmd "pen-x" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
+      (pen-sps (pen-cmd "pen-x" "-allowtm" "-sh" "hdc" "-e" ">" "-s" thing "-c" "m" "-e" "search: " "-e" ">" "-sl" "0.1"
                               "-s" (concat ":md " thing)
                               "-c" "-m"
                               "-i")))))

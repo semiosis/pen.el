@@ -26,7 +26,20 @@ input_filter() {
     return 0
 }
 
-export TMUX=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -allowtm) {
+        allow_tmux=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if ! test "$allow_tmux" = "y"; then
+    export TMUX=
+fi
 
 tf_script="$(pen-tf script exp || echo /dev/null)"
 chmod a+x "$tf_script"
