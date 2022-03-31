@@ -1,0 +1,86 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -f) {
+        CMD_EXPRESSION="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -E) {
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -d) {
+        CMD_DELIM="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -) {
+        USE_STDIN=y
+        shift
+    }
+    ;;
+
+    --) {
+        shift
+        break
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${CMD_EXPRESSION:="q"}
+: ${CMD_DELIM:=" "}
+
+if test -n "$CMD"; then
+    export CMD_EXPRESSION
+    export CMD_DELIM
+    CMD="$(printf -- "%s" "$CMD" | pen-bs '$')"
+    eval "cmd $CMD"
+    exit $?
+fi
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if test "$#" -eq 0 && ! { test "$USE_STDIN" = y && stdin_exists; }; then
+    exit 0
+fi
+
+if test "$#" -eq 0 && stdin_exists; then
+    awk 1 | while IFS=$'\n' read -r line; do
+        if test -n "$line"; then
+            export CMD_EXPRESSION
+            export CMD_DELIM
+            pen-odn cmd -E "$line"
+        fi
+    done
+fi
+
+printf -- "%s" "$(
+for (( i = 1; i < $#; i++ )); do
+    eval ARG=\${$i}
+    if test -z "$ARG"; then
+        printf '""'
+    else
+        printf -- "%s" "$ARG" | eval "$CMD_EXPRESSION"
+    fi
+    echo -n -e "$CMD_DELIM"
+done
+eval ARG=\${$i}
+if test -z "$ARG"; then
+    test "$#" -gt 0 && printf '""'
+else
+    printf -- "%s" "$ARG" | eval "$CMD_EXPRESSION"
+fi
+)"
