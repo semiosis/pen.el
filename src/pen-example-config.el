@@ -16,6 +16,9 @@
 (define-key function-key-map (kbd "M-h") 'hyperify)
 (define-key function-key-map (kbd "M-H") 'hyperify)
 
+(define-key global-map (kbd "M-_") 'irc-find-prev-line-with-diff-char)
+(define-key global-map (kbd "M-+") 'irc-find-next-line-with-diff-char)
+
 ;; Is this a good idea?
 ;; (define-key function-key-map (kbd "TAB") 'hyperify)
 ;; (define-key global-map (kbd "TAB") nil)
