@@ -2395,14 +2395,7 @@ case "$file_type" in
     ;;
 
     json) {
-        # I need python version detection
-
-        # pen-tm -d nw -args filter myjiq "$rp"
-
         pen-tm -d nw -args myjiq "$rp"
-
-        # filter myjiq "$rp" 2>&1
-        # pen-pak c
         exit 0
     }
     ;;
@@ -2458,6 +2451,6 @@ case "$file_type" in
 
 esac
 
-lit "no handler for $arg1" | less
+pl "no handler for $arg1" | less
 
 exit 1
