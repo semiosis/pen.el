@@ -430,6 +430,7 @@
   (pen-dk-easy "a s" 'apostrophe-start-chatbot-from-selection)
   (pen-dk-easy "a c" 'apostrophe-start-chatbot-from-selection)
   (pen-dk-easy "a n" 'apostrophe-start-chatbot-from-name)
+  (pen-dk-easy "a w" 'apostrophe-chat-about-selection)
 
   ;; h Help
   (pen-dk-easy "h" nil)
