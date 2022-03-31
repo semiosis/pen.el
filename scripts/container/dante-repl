@@ -1,6 +1,21 @@
 #!/bin/bash
 export TTY
 
-# eterm isn't able to properly handle screen-256color in this case. Use tmux
-pet tn -pak nvc cabal v2-repl --builddir=newdist/dante
-# cabal v2-repl --builddir=newdist/dante
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -bare) {
+        bare=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$bare" = "y"; then
+    cabal v2-repl --builddir=newdist/dante
+else
+    # eterm isn't able to properly handle screen-256color in this case. Use tmux
+    pet tn -pak nvc cabal v2-repl --builddir=newdist/dante
+    # cabal v2-repl --builddir=newdist/dante
+fi
