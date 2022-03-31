@@ -15,8 +15,10 @@ Exec=surf
 Categories=Network;WebBrowser
 HEREDOC
 
+{
 mkdir -p ~/.local/share/applications/
 printf -- "%s\n" "$desktop_file" > ~/.local/share/applications/$slug.desktop
 xdg-settings set default-web-browser $slug.desktop
 xdg-mime default $slug.desktop 'x-scheme-handler/http'
 xdg-mime default $slug.desktop 'x-scheme-handler/https'
+} &>/dev/null
