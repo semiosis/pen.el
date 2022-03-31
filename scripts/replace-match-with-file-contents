@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+placeholder="$1"
+test -n "$placeholder" || exit 1
+fp="$2"
+test -f "$fp" || exit 1
+
+IFS= read -rd '' contents < <(cat);typeset -p contents &>/dev/null
+
+left="$(p "$contents" | sed -z "s/$placeholder.*//")"
+right="$(p "$contents" | sed -z "s/.*$placeholder//")"
+printf -- "%s" "$left"
+cat "$fp"
+printf -- "%s" "$right"
