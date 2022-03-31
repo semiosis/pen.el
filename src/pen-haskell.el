@@ -334,6 +334,9 @@
 
   ;; (pen-e-spv 'haskell-show-hdc-readme)
 
+  (if (string-match "^[^a-zA-Z]+$" thing)
+      (setq thing (concat "(" thing ")")))
+
   (let ((parts (s-split "\\." thing)))
     (if (> (length parts) 1)
         (let ((last (-last-item parts)))
