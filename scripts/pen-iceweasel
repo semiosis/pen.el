@@ -1,6 +1,6 @@
 #!/bin/bash
 export TTY
 
-pen-set-browser iceweasel
+# pen-set-browser iceweasel
 
 iceweasel "$@"

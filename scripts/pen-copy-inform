@@ -1,8 +1,5 @@
 #!/bin/bash
 export TTY
 
-
-pen-set-browser pen-copy-inform
-
 pen-xc "$@"
 unbuffer pen-xc | pen-sps v
