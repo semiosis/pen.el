@@ -174,6 +174,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-sh)
 (require 'pen-library)
 (require 'pen-utils)
+(require 'pen-compile-run)
 (if (inside-docker-p)
     (require 'pen-nix))
 (require 'pen-git)
