@@ -66,7 +66,7 @@
       (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
-(defun apostrophe-start-chatbot-from-selection (text)
+(defun apostrophe-chat-about-selection (text)
   (interactive (list (str (pen-screen-or-selection))))
 
   (let ((apostrophe-engine
