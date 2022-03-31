@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+pet cabal v2-repl --builddir=newdist/dante

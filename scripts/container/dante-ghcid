@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+nvc ghcid --command='cabal v2-repl --builddir=newdist/dante'
