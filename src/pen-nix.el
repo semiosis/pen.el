@@ -453,10 +453,10 @@ Be mindful of quoting arguments correctly."
 
 (defun eww-list-history ()
   (interactive)
-  (let ((lambda (bp uniqnosort (sed "s/^.*cache://"
+  (let ((l (bp uniqnosort (sed "s/^.*cache://"
                                (pen-cl-sn "uq -l | tac" :stdin (lines2str (hg "eww-display-html"))
                                       ;; (sed "s/^.*cache://" (lines2str (hg "eww-display-html")))
-                                      :chomp t)))))
+                                          :chomp t)))))
     (if (interactive-p)
         (etv l)
       l)))
