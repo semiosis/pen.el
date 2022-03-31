@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+pen-xc "$@"
+pen-xc | pen-sps v
