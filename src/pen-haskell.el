@@ -365,4 +365,15 @@
   (interactive)
   (find-file "/root/repos/haskell-docs-cli/README.md"))
 
+(defun dante-repl ()
+  (interactive)
+  (pen-sps "pet cabal v2-repl --builddir=newdist/dante" nil nil (locate-dominating-file-glob default-directory "*.cabal")))
+
+(defun dante-ghcid ()
+  (interactive)
+  (pen-sps "nvc ghcid --command='cabal v2-repl --builddir=newdist/dante'"
+           "-d" nil (locate-dominating-file-glob default-directory "*.cabal"))
+  ;; (pen-sps "cabal v2-repl --builddir=newdist/dante" nil nil (locate-dominating-file-glob default-directory "*.cabal"))
+  )
+
 (provide 'pen-haskell)
