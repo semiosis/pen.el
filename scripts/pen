@@ -2034,7 +2034,6 @@ HEREDOC
             exit 1
         fi
 
-        # This breaks cterm, but is needed for looking glass
         if test "$INTERACTIVE" = "y"; then
             if test "$1" = -e; then
                 shift
