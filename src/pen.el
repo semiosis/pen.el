@@ -2117,6 +2117,7 @@ May use to generate code from comments."
       (require 'pen-grep)
       (require 'pen-wgrep)
       (require 'pen-straight)
+      (require 'pen-apheleia)
       (require 'pen-jump-tree)))
 
 (defun pen-lsp-explain-error ()
