@@ -1237,7 +1237,7 @@
               (and
                (not no-select-action)
                final-actions
-               (fz final-actions nil nil "prompt action: ")))))
+               (fz final-actions nil nil "prompt action: " nil t)))))
 
           (final-stop-patterns
            (or (pen-var-value-maybe 'stop-patterns)

@@ -110,13 +110,16 @@
     buffer))
 (defalias 'nbfs 'new-buffer-from-string)
 
+(defun nbfs-sps (s)
+  (esps (lm (nbfs s))))
+
 (defun new-buffer-from-string-detect-lang (s &optional mode)
   (let* ((b (new-buffer-from-string s)))
-        (with-current-buffer b
-          (switch-to-buffer b)
-          (if mode
-              (funcall mode)
-            (guess-major-mode)))))
+    (with-current-buffer b
+      (switch-to-buffer b)
+      (if mode
+          (funcall mode)
+        (guess-major-mode)))))
 
 (defun new-buffer-from-o (o)
   (new-buffer-from-string
