@@ -367,7 +367,9 @@
 
 (defun dante-repl ()
   (interactive)
-  (pen-sps "dante-repl" nil nil (locate-dominating-file-glob default-directory "*.cabal")))
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (pen-sps "dante-repl -bare" nil nil (locate-dominating-file-glob default-directory "*.cabal"))
+    (pen-sps "dante-repl" nil nil (locate-dominating-file-glob default-directory "*.cabal"))))
 
 (defun dante-ghcid ()
   (interactive)
