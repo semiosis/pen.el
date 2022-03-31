@@ -321,7 +321,8 @@ case "$sn" in
         sn=pen
         PEN_USE_GUI=n
         no=y
-        export PEN_N_DAEMONS=1
+        # Minimum for apostrophe is 2
+        export PEN_N_DAEMONS=2
     }
     ;;
 
@@ -330,7 +331,7 @@ case "$sn" in
         PEN_USE_GUI=n
         no=y
         PEN_USE_REMOTE_PATH=y
-        export PEN_N_DAEMONS=1
+        export PEN_N_DAEMONS=2
     }
     ;;
 
