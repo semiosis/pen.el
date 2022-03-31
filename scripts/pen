@@ -263,7 +263,7 @@ else
 fi
 
 : "${PEN_USE_GUI:="y"}"
-: "${share_x:="y"}"
+: "${PEN_SHARE_X:="y"}"
 
 docker() {
     if test "$DEBUG_ABORT" = "y"; then
@@ -354,7 +354,7 @@ if test "$sn" = penx; then
     sn=penc
 
     PEN_USE_GUI=y
-    share_x=y
+    PEN_SHARE_X=y
 fi
 
 if test "$sn" = pent; then
@@ -372,7 +372,7 @@ elif test "$sn" = lgx; then
     sn=lg
 
     PEN_USE_GUI=y
-    share_x=y
+    PEN_SHARE_X=y
 fi
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -623,14 +623,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -X) {
-        share_x=y
+        PEN_SHARE_X=y
         shift
     }
     ;;
 
     -noX|-safe) {
         PEN_USE_GUI=n
-        share_x=n
+        PEN_SHARE_X=n
         shift
     }
     ;;
@@ -650,7 +650,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -gui|-x) {
         PEN_USE_GUI=y
-        share_x=y
+        PEN_SHARE_X=y
         shift
     }
     ;;
@@ -787,7 +787,7 @@ if ! test "$start_shell" = y && \
     set -- "$@" /root/.pen/host_stdin.txt
 fi
 
-if ! test "$share_x" = "y"; then
+if ! test "$PEN_SHARE_X" = "y"; then
     export DISPLAY=
 fi
 
@@ -1529,7 +1529,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -e) {
         HAS_TTY=n
         batch=y
-        share_x=n
+        PEN_SHARE_X=n
         docker_cmd=exec
         if inside-docker-p; then
             remote_cmd=eval.sh
@@ -1550,7 +1550,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     # This is like pene, has the tty
     -t) {
         batch=y
-        share_x=n
+        PEN_SHARE_X=n
         docker_cmd=exec
         shift
 
@@ -1952,6 +1952,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test "$HAS_TTY" = y && printf -- "%s " -ti ) \
         --hostname pen-$(hostname) \
         --env PEN_USE_GUI \
+        --env PEN_SHARE_X \
         --env PEN_NO_TM \
         --env INTERACTIVE \
         --env PEN_CONTAINER_NAME \
@@ -2039,7 +2040,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice ". ~/.emacs.d/pen.el/scripts/setup-term.sh; $(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" --detach-keys="$docker_detach_keys" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
+docker "$docker_cmd" --detach-keys="$docker_detach_keys" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_SHARE_X --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
 HEREDOC
     }
     ;;
