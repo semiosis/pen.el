@@ -24,6 +24,11 @@
   ;; (pen-car (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t))
   (eval `(pen-some (pf-generate-wiki-blurb-for-a-famous-person/1 ,person))))
 
+(defun car-maybe (e)
+  (cond ((listp e)
+         (car e))
+        (t e)))
+
 (defun apostrophe-start-chatbot-from-name (name &optional auto)
   "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
   (interactive (list
@@ -45,7 +50,7 @@
 
     (let* ((blurb
             (if auto
-                (car
+                (car-maybe
                  (eval
                   `(pen-engine
                     ,apostrophe-engine
