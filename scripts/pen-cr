@@ -93,7 +93,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -ft*) { # Because "$1" == "-ft kotlin", when used in shebang
         # echo "$opt"
-        if pl "$opt" | grep -q -P -- '-ft.+'; then
+        if pen-pl "$opt" | grep -q -P -- '-ft.+'; then
             file_type="$(p "$opt" | sed 's/^-ft *//')"
             # file_type="${opt##* }"
             shift
@@ -217,7 +217,7 @@ if test -z "$fp"; then
 
     trycr -d .github
 
-    for f in $(pen-glob -b "**/Dockerfile*"); do
+    for f in $(pen-glob "**/Dockerfile*"); do
         (
             trycr "$f"
         )
@@ -298,7 +298,7 @@ if test -z "$fp"; then
     exit 1
 fi
 
-fp="$(pen-glob -b "$fp")"
+fp="$(pen-glob "$fp")"
 rp="$(realpath "$fp")"
 dn="${rp%/*}"
 dnbn="$(basename "$dn")"
@@ -1543,7 +1543,7 @@ case "$fnspec" in
     # TODO Ensure this works for yml files beneath
     .github) {
         if test -d "$fn"; then
-            fns="$(pen-glob -b ".github/workflows/*.y*ml")"
+            fns="$(pen-glob ".github/workflows/*.y*ml")"
             if test -n "$fns"; then
                 if pen-yn "vim github workflow?"; then
                     fn="$(printf -- "%s\n" "$fns" | pen-fzf -1)"
@@ -1662,7 +1662,7 @@ case "$first_line" in
 esac
 
 case "$file_type" in
-    pl) {
+    pen-pl) {
         # This could be perl or prolog
         # I should use a random forest to find out
         :
@@ -1821,7 +1821,7 @@ case "$file_type" in
     }
     ;;
 
-    pl) {
+    pen-pl) {
         eshell perl "$rp"
         exit 0
     }
@@ -1877,7 +1877,7 @@ case "$file_type" in
     ;;
 
     tsv|csv) {
-        if ! pl "$rp" | grep -q -P '.csv' && test "$file_type" = csv; then
+        if ! pen-pl "$rp" | grep -q -P '.csv' && test "$file_type" = csv; then
             cat "$rp" | pen-tf csv | pen-xa fpvd
         else
             fpvd "$rp"
@@ -2279,7 +2279,7 @@ case "$file_type" in
         # I need python version detection
         cd "$dn"
 
-        if pl "$rp" | grep -q -P 'keras-idiomatic-programmer'; then
+        if pen-pl "$rp" | grep -q -P 'keras-idiomatic-programmer'; then
             conda-run python "$rp" 2>&1
         else
             pybin="$(get-python-interp "$rp")"
@@ -2451,6 +2451,6 @@ case "$file_type" in
 
 esac
 
-pl "no handler for $arg1" | less
+pen-pl "no handler for $arg1" | less
 
 exit 1
