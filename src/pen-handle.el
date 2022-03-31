@@ -155,6 +155,7 @@
                 haskell-hdc-thing
                 hoogle
                 pen-docs-for-thing-given-screen)
+        :godef '(lsp-find-definition)
         :nexterr '()
         :preverr '()
         :complete '()

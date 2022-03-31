@@ -2066,7 +2066,7 @@ else
     pen_eval "$shcode"
 fi
 
-if test "$docker_cmd" = exec && is_tty; then
+if test "$docker_cmd" = exec && is_tty && test "$INTERACTIVE" = y; then
     clear
     echo Pen exited | pen-hls red
     tmux send C-l &>/dev/null
