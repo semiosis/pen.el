@@ -34,9 +34,9 @@ purposes."
              (when output-fname
                ;; Load output-fname contents into the stdout buffer.
                (erase-buffer)
-               (insert-file-contents-literally output-fname)))
+               (insert-file-contents-literally output-fname))
 
-           (funcall callback stdout))
+             (funcall callback stdout)))
          :ensure
          (lambda ()
            (ignore-errors

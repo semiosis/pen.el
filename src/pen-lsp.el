@@ -733,4 +733,6 @@ We don't extract the string that `lps-line' is already displaying."
   (define-key lsp-mode-map (kbd "s-l pen-str r") 'lsp-workspace-restart)
   (define-key lsp-mode-map (kbd "s-l pen-str s") 'lsp))
 
+(advice-add 'lsp--ensure-lsp-servers :around #'ignore-errors-around-advice)
+
 (provide 'pen-lsp)
