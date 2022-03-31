@@ -2043,7 +2043,7 @@ HEREDOC
                 elisp="$@"
             fi
             
-            set -- -e " (switch-to-buffer \"*scratch*\") (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (max-generated-tokens $PEN_MAX_GENERATED_TOKENS) (force-temperature $PEN_TEMPERATURE) (force-stop-sequence $PEN_STOP_SEQUENCE)) $elisp)"
+            set -- -e "(switch-to-buffer \"*scratch*\") (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (max-generated-tokens $PEN_MAX_GENERATED_TOKENS) (force-temperature $PEN_TEMPERATURE) (force-stop-sequence $PEN_STOP_SEQUENCE)) $elisp)"
         fi
 
         # Test quotes:
