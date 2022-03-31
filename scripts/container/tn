@@ -26,7 +26,7 @@ if test "$use_pak" = "y"; then
     tmux new bash -c "$CMD; pen-pak"
 else
     if test "$pak_on_error" = "y"; then
-        tmux new bash -c "$CMD || pen-pak"
+        tmux new bash -c "$CMD || ( pwd; pen-pak )"
     else
         tmux new bash -c "$CMD"
     fi
