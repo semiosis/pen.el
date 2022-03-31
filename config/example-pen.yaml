@@ -86,7 +86,8 @@ default-logprobs: 10
 
 # This is a pool of emacs daemons used for prompting
 # n-daemons: 20
-n-daemons: 5
+# n-daemons: 5
+n-daemons: 1
 
 # This may also be set with `pen -nto`
 # no-timeout: on
