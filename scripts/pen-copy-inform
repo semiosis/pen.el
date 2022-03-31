@@ -1,5 +1,6 @@
 #!/bin/bash
 export TTY
 
+exec <&1
 pen-xc "$@"
 unbuffer pen-xc | pen-sps v
