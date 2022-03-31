@@ -2188,21 +2188,33 @@ If any of the suggest predicates evaluated to t, then suggest the function"
 (defun date-ts ()
   (string-to-number (format-time-string "%s")))
 
-(defun locate-dominating-file-glob (file-glob name)
-  (setq file-glob (abbreviate-file-name (expand-file-name file-glob)))
+(defun glob-exists-p (file-glob)
+  (pen-snq (pen-cmd "pen-glob" file-glob)))
+
+(defun e/or (a b)
+  ;; or is a builtin, and doesnt work with -reduce
+  (or a b))
+
+(defun glob-dir-p (dir-glob)
+  (-reduce 'e/or (mapcar 'file-directory-p (glob dir-glob))))
+
+;; example:
+;; (locate-dominating-file-glob default-directory "*.cabal")
+(defun locate-dominating-file-glob (start-file dir-glob)
+  (setq start-file (abbreviate-file-name (expand-file-name start-file)))
   (let ((root nil)
-        try)
+        the-try)
     (while (not (or root
-                    (null file-glob)
-                    (string-match locate-dominating-stop-dir-regexp file-glob)))
-      (setq try (if (stringp name)
-                    (and (file-directory-p file-glob)
-                         (file-exists-p (expand-file-name name file-glob)))
-                  (funcall name file-glob)))
-      (cond (try (setq root file-glob))
-            ((equal file-glob (setq file-glob (file-name-directory
-                                     (directory-file-name file-glob))))
-             (setq file-glob nil))))
+                    (null start-file)
+                    (string-match locate-dominating-stop-dir-regexp start-file)))
+      (setq the-try (if (stringp dir-glob)
+                        (and (glob-dir-p start-file)
+                             (glob-exists-p (expand-file-name dir-glob start-file)))
+                      (funcall dir-glob start-file)))
+      (cond (the-try (setq root start-file))
+            ((equal start-file (setq start-file (file-name-directory
+                                                 (directory-file-name start-file))))
+             (setq start-file nil))))
     (if root (file-name-as-directory root))))
 
 (provide 'pen-support)

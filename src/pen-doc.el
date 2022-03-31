@@ -187,7 +187,7 @@
 
 (defun dante-repl ()
   (interactive)
-  (pen-sps "cabal v2-repl --builddir=newdist/dante" nil nil (vc-get-top-level)))
+  (pen-sps "cabal v2-repl --builddir=newdist/dante" nil nil (locate-dominating-file-glob default-directory "*.cabal")))
 
 (defun hs-tds-fzf (hs-type)
   (interactive (list (pen-haskell-get-type)))
