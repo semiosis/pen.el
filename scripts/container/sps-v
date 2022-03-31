@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# Meant to be used as an editor
+
+pen-sps v "$@"

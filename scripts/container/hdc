@@ -1,4 +1,5 @@
 #!/bin/bash
 export TTY
 
+export EDITOR=sps-v
 /root/.cabal/bin/hdc "$@"
