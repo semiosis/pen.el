@@ -13,6 +13,6 @@ nvm use "$NODE_VERSION" 1>&2 || nvm install "$NODE_VERSION" 1>&2
 which "$sn" | grep -q ".nvm/" || npm install -g localtunnel
 
 # export BROWSER=iceweasel
-export BROWSER=pen-copy-inform
+# export BROWSER=pen-copy-inform
 
 lt "$@"
