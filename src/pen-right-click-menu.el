@@ -264,7 +264,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (def-right-click-menu rcm-apps
   `(("Cancel" :call identity-command)
     ("start ii" :call pen-start-imaginary-interpreter)
-    ("chat to a subject-matter expert" :call apostrophe-start-chatbot-from-selection)
+    ("chat to a subject-matter expert about this text" :call apostrophe-chat-about-selection)
+    ("chat to a subject-matter expert about this text's broader topics" :call apostrophe-start-chatbot-from-selection)
     ("search the imaginary web" :call pen-browse-url-for-passage)))
 
 (def-right-click-menu rcm-prompt-functions
