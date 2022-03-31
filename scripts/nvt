@@ -1,0 +1,189 @@
+#!/bin/bash
+
+export TTY
+unset TTY
+
+if test "$INSIDE_NEOVIM" = y; then
+    "$@"
+    exit "$?"
+fi
+
+aqf() { aqf-nice "$@"; }
+cmd() { cmd-nice-posix "$@"; }
+
+# This script is misnamed
+
+# nvt -2 man less
+# nvt -2 elinks "http://news.ycombinator.com"
+
+# nvt does not change the *inner* tmux's TERM environment variable
+
+EVAL=n
+precmd=
+wd=
+use_pak=
+ttype=vt100
+lines=
+cols=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -2) { ttype=2; shift; }; ;;
+    -b+w) { ttype=b+w; shift; }; ;;
+    -vt100) { ttype=vt100; shift; }; ;;
+
+    -E) {
+        EVAL=y
+        shift
+    }
+    ;;
+
+    -noag) {
+        NO_AG=y
+        shift
+    }
+    ;;
+
+    -sl) {
+        sl=y
+        shift
+    }
+    ;;
+
+    -c) {
+        wd="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -pc) {
+        print_child=y
+        shift
+    }
+    ;;
+
+    -x|-width) {
+        cols="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -y|-height) {
+        rows="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -pak) {
+        use_pak=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+case "$ttype" in
+    -2) {
+        # precmd="TERM=xterm-2color "
+        precmd="export TERM=screen-2color; "
+        # precmd="TERM=vt100 "
+    }
+    ;;
+
+    vt100) { precmd="export TERM=vt100; "; }; ;;
+    b+w) { precmd="export TERM=xterm-2color; "; shift; }; ;;
+
+    *)
+esac
+
+# set -- "TERM=vt100 "$@"
+
+CMD="$(cmd "$@")"
+
+# echo "$@ $#" | tv
+
+if test $# -eq 0; then
+    CMD="\"zsh\""
+fi
+
+displayedname() {
+    echo -n "[ "
+    sed 's/^.*-//'
+    echo -n " ]  "
+}
+
+if test "$EVAL" = "y"; then
+    CMD="eval $CMD"
+fi
+
+if test "$use_pak" = "y"; then
+    CMD+="; pen-pak"
+fi
+
+# This broke irssi when it was above the eval ^^
+CMD="export INSIDE_NEOVIM=y; $CMD"
+
+if test -z "$cols" || test -z "$rows"; then
+    eval `resize`
+fi
+
+if test -z "$cols"; then
+    cols="$COLUMNS"
+fi
+
+if test -z "$rows"; then
+    rows="$LINES"
+fi
+
+# I need 2 tmux sessions. One nested in the other
+# One session to provide 2 windows. This is the parent session
+#   One window will have a neovim containing a tmux attach to the child session. 
+#   The other window will have a tmux attach to the child session.
+
+# Perhaps I should make q escape the $
+# Don't use the session_id because of the $. Instead, use the name
+child_session_name="$(tmux new -s "$(uuid)" -F "#{session_name}" -P -d -n "protected" "stty stop undef; stty start undef; $CMD")" # holds the program
+tmux set -t "$child_session_name" status-left "$(printf -- "%s" "$child_session_name" | displayedname)"
+
+if [ -z "$child_session_name" ]; then
+    exit 0
+fi
+
+# rows="$((rows - 3))"
+# child_rows="$((rows - 2))"
+
+parent_session_name="$(tmux new -x "$cols" -y "$rows" -s "$(uuid)" -F "#{session_name}" -P -d -n "normal" "TMUX= tmux attach -t '${child_session_name}:'")" # holds the child in 2 different windows
+tmux set -t "$parent_session_name" status-left "$(printf -- "%s" "$parent_session_name" | displayedname)"
+
+if test "$NO_AG" = "y"; then
+    tmux setw -t "$child_session_name:" aggressive-resize off
+    tmux setw -t "$parent_session_name:" aggressive-resize off
+    tmux setw -t "$parent_session_name:" force-height "$rows"
+    tmux setw -t "$parent_session_name:" force-width "$cols"
+fi
+
+# TODO Make this work with the original vim instead of neovim
+
+if [ -n "$parent_session_name" ]; then
+    # Even with single quotes here, the $ sign was breaking it
+    # somewhere. So use uuid
+    cmd="export INSIDE_NEOVIM=y; nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd tmux attach -t ${child_session_name}:"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
+    # echo "$cmd" | tv
+    tmux neww -t "${parent_session_name}:" -n "nv" "$cmd"
+fi
+
+is_tty() { [ -t 1 ]; }
+
+if is_tty; then
+    TMUX= tmux attach -t "${parent_session_name}:"
+else
+    echo parent 1>&2
+    echo "${parent_session_name}:"
+    echo child 1>&2
+    echo "${child_session_name}:"
+fi
+
+# Need ' with eval because session ids have $
+# eval "TMUX= tmux attach -t '\"${parent_session_id}:\"'"

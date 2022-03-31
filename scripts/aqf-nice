@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# Unfortunatley, qf can't handle unicode
+# But it's needed to generate emacs-lisp
+# For that purpose, use aqf-real
+# apply qf "$@"
+
+cmd-nice -f "q -f" -- "$@"
+
+# cmd "$@"
