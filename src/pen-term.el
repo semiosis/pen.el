@@ -360,8 +360,7 @@ commands to use in that buffer.
 
   (if (yn "Quit Pen?")
       ;; If the main frame, Pen.el quits entirely, currently
-      (ignore-errors
-        (pen-snc "penq &"))))
+      (pen-snc "unbuffer penq &")))
 
 (defun pen-term-kill-buffer-and-window ()
   (interactive)
