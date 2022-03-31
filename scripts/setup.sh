@@ -717,6 +717,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 # https://gitlab.cecs.anu.edu.au/pages/2020-S2/courses/comp1100/resources/10-install/
 cabal v2-install --install-method=copy ghcid
 cabal v2-install --install-method=copy doctest
+cabal install hoogle
+hoogle generate
 
 # For the clipboard
 agi xvfb
