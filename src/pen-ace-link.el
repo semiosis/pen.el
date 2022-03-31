@@ -8,7 +8,7 @@
      (mapcar #'cdr (buttons-collect))
      (avy--style-fn avy-style)))
   (let* ((b (button-at-point))
-         (lambda (pen-button-get-link b)))
+         (l (pen-button-get-link b)))
     (if l
         (xc l))))
 
