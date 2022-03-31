@@ -1656,7 +1656,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         if test -d "$PEN_ENGINES_DIR"; then
             yn "Pull engines repo? (recommended)" && (
                 cd "$PEN_ENGINES_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
         else
             yn "Clone engines repo here?" && (
@@ -1671,7 +1671,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         if test -d "$ILAMBDA_DIR"; then
             yn "Pull ilambda repo? (recommended)" && (
                 cd "$ILAMBDA_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
         else
             yn "Clone ilambda repo here?" && (
@@ -1686,7 +1686,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         if test -d "$PROMPTS_DIR"; then
             yn "Pull prompts repo? (recommended)" && (
                 cd "$PROMPTS_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
         else
             yn "Clone prompts repo here?" && (
@@ -1701,7 +1701,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         if test -d "$PEN_CREATION_DIR"; then
             yn "Pull creation repo? (recommended)" && (
                 cd "$PEN_CREATION_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
         else
             yn "Clone creation repo here?" && (
@@ -1716,7 +1716,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         if test -d "$PEN_PERSONALITIES_DIR"; then
             yn "Pull personalities repo? (recommended)" && (
                 cd "$PEN_PERSONALITIES_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
         else
             yn "Clone personalities repo here?" && (
@@ -1731,7 +1731,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         if test -d "$PEN_INCARNATIONS_DIR"; then
             yn "Pull incarnations repo? (recommended)" && (
                 cd "$PEN_INCARNATIONS_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
         else
             yn "Clone incarnations repo here?" && (
@@ -1746,7 +1746,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         if test -d "$PEN_TOMES_DIR"; then
             yn "Pull tomes repo? (recommended)" && (
                 cd "$PEN_TOMES_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
         else
             yn "Clone tomes repo here?" && (
@@ -1761,7 +1761,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         if test -d "$PEN_DNI_DIR"; then
             yn "Pull dni repo? (recommended)" && (
                 cd "$PEN_DNI_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
         else
             yn "Clone dni repo here?" && (
@@ -1776,7 +1776,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         if test -d "$PEN_METAVERSES_DIR"; then
             yn "Pull metaverses repo? (recommended)" && (
                 cd "$PEN_METAVERSES_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
         else
             yn "Clone metaverses repo here?" && (
@@ -1790,35 +1790,35 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     if ! test "$batch" = "y"; then
         test -d "$PENEL_DIR" && yn "Pull pen.el repo? (recommended)" && (
             cd "$PENEL_DIR"
-            git pull origin master
+            git pull --rebase origin master
         )
     fi
 
     if ! test "$batch" = "y"; then
         test -d "$CONTRIB_DIR" && yn "Pull pen-contrib.el repo? (recommended)" && (
             cd "$CONTRIB_DIR"
-            git pull origin master
+            git pull --rebase origin master
         )
     fi
 
     if ! test "$batch" = "y"; then
         test -d "$PENSIEVE_DIR" && yn "Pull pensieve repo? (recommended)" && (
             cd "$PENSIEVE_DIR"
-            git pull origin master
+            git pull --rebase origin master
         )
     fi
 
     if ! test "$batch" = "y"; then
         test -d "$RHIZOME_DIR" && yn "Pull rhizome repo? (recommended)" && (
             cd "$RHIZOME_DIR"
-            git pull origin master
+            git pull --rebase origin master
         )
     fi
 
     if ! test "$batch" = "y"; then
         test -d "$KHALA_DIR" && yn "Pull khala repo? (recommended)" && (
                 cd "$KHALA_DIR"
-                git pull origin master
+                git pull --rebase origin master
             )
     fi
 
