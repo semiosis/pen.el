@@ -367,11 +367,11 @@
 
 (defun dante-repl ()
   (interactive)
-  (pen-sps "pet cabal v2-repl --builddir=newdist/dante" nil nil (locate-dominating-file-glob default-directory "*.cabal")))
+  (pen-sps "dante-repl" nil nil (locate-dominating-file-glob default-directory "*.cabal")))
 
 (defun dante-ghcid ()
   (interactive)
-  (pen-sps "nvc ghcid --command='cabal v2-repl --builddir=newdist/dante'"
+  (pen-sps "dante-ghcid"
            "-d" nil (locate-dominating-file-glob default-directory "*.cabal"))
   ;; (pen-sps "cabal v2-repl --builddir=newdist/dante" nil nil (locate-dominating-file-glob default-directory "*.cabal"))
   )
