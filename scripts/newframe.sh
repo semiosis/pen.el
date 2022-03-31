@@ -115,6 +115,12 @@ export PEN_USE_GUI
 
 marker="🖊"
 
+if test "$INTERACTIVE" = "y"; then
+    last_arg="${@: -1}"
+    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+    set -- "$@" "(progn (pen-set-faces) $lastarg)"
+fi
+
 unset INTERACTIVE
 # Frusratingly there is an issue with pen-x and drawing the Pen.el emacs.
 # I think the issue is most likely unicode inside my emacs, or ansi colours in my emacs.

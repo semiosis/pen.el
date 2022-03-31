@@ -1556,6 +1556,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         batch=y
         PEN_SHARE_X=n
         docker_cmd=exec
+        INTERACTIVE=y
         shift
 
         if inside-docker-p; then
