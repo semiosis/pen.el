@@ -1698,21 +1698,6 @@ esac
 case "$file_type" in
     hs) {
         if yn "use interpreter?"; then
-            #ans="$(qa -r runhaskell -s stackghc)"
-            #case "$ans" in
-            #    runhaskell) {
-            #        runhaskell "$rp"
-            #    }
-            #    ;;
-            #
-            #    stackghc) {
-            #        # this is not an interpreter
-            #        stack ghc -- -O2 -threaded  "$rp"
-            #    }
-            #    ;;
-            #
-            #    *)
-            #esac
             zrepl -cm runhaskell "$rp"
             pen-pak
         else
