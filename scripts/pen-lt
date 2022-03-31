@@ -18,4 +18,7 @@ which "$sn" | grep -q ".nvm/" || npm install -g localtunnel
 export BROWSER=pen-copy-inform
 pen-set-browser pen-copy-inform
 
+# export BROWSER=pen-iceweasel
+# pen-set-browser pen-iceweasel
+
 unbuffer lt "$@"

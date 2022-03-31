@@ -4,5 +4,5 @@ export TTY
 # The thing to be copied is the arguments
 
 exec <&1
-pen-xc "$@"
-unbuffer pen-xc | pen-sps v
+cmd-nice "$@" | pen-xc
+unbuffer pen-xc | pen-sps -w v
