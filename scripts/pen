@@ -943,7 +943,7 @@ fi
 #     mkdir -p "$PEN_CONFIG_DIR/documents"
 # fi
 # Make it anyway, because pen-xc needs it
-mkdir -p "$PEN_CONFIG_DIR/documents"
+mkdir -p "$PEN_CONFIG_DIR/documents/notes"
 
 if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = pent; } && \
     test "$PEN_USE_REMOTE_PATH" = y && \
