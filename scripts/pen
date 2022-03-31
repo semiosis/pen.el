@@ -787,6 +787,10 @@ if ! test "$start_shell" = y && \
     set -- "$@" /root/.pen/host_stdin.txt
 fi
 
+if test -z "$DISPLAY"; then
+    export PEN_SHARE_X=n
+fi
+
 if ! test "$PEN_SHARE_X" = "y"; then
     export DISPLAY=
 fi
