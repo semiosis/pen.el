@@ -1046,7 +1046,7 @@ case "$sn" in
     penf) {
         fun="$1"
 
-        if stdin_exists; then
+        if test "$input_captured" = y; then
             arity="$(( $# ))"
         else
             arity="$(( $# - 1 ))"
@@ -1063,7 +1063,7 @@ case "$sn" in
         if ! printf -- "%s\n" "$fun" | grep -q -P "/${arity}$"; then
             sn=penh
             penl_strip_pf=y
-        elif ! stdin_exists; then
+        elif ! test "$input_captured" = y; then
             if test "$#" -eq 0; then
                 sn=penl
                 penl_strip_pf=y
@@ -1103,14 +1103,14 @@ case "$sn" in
 
             pfname="$fun"
 
-            if stdin_exists; then
+            if test "$input_captured" = y; then
                 # This has issues
                 # in="$(cat | qne)"
 
                 # So do I escape or not? Yes. Also remove final whitespace
                 # To test, ensure this works:
                 # echo -n "Once upon " | penf --pool pf-generic-completion-50-tokens/1
-                in="$(cat | sed -z 's/\s\+$//' | pen-limit-chars)"
+                in="$(cat ~/.pen/host_stdin.txt | sed -z 's/\s\+$//' | pen-limit-chars)"
 
                 if test "$1" = {}; then
                     shift
@@ -1383,8 +1383,8 @@ case "$sn" in
 
     *) {
         show_banner=n
-        if stdin_exists; then
-            in="$(cat)"
+        if test "$input_captured" = y; then
+            in="$(cat ~/.pen/host_stdin.txt)"
 
             if test "$1" = {}; then
                 shift
