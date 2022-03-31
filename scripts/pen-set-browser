@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+# command
+c="$1"
+slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify)"
+
+IFS= read -r -d '' desktop_file <<HEREDOC
+[Desktop Entry]
+Type=Application
+Name=$slug
+Comment=Web browser
+Terminal=false
+Exec=surf
+Categories=Network;WebBrowser
+HEREDOC
+
+mkdir -p ~/.local/share/applications/
+printf -- "%s\n" "$desktop_file" > ~/.local/share/applications/$slug.desktop
+xdg-settings set default-web-browser $slug.desktop
+xdg-mime default $slug.desktop 'x-scheme-handler/http'
+xdg-mime default $slug.desktop 'x-scheme-handler/https'
