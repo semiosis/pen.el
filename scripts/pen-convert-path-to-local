@@ -18,10 +18,9 @@ else
 fi
 
 substitutions="$(p "$substitutions" | tr -d '\n' | sed 's/;;/;/g')"
-substitutions="$(p "$substitutions" | tr -d '\n' | sed 's=/volumes/volumes/=/volumes/=g')"
 
 convert_path() {
-    sed -e "$substitutions"
+    sed -e "$substitutions" | sed 's=/volumes/volumes/=/volumes/=g'
 }
 
 current_path="$(cat)"
