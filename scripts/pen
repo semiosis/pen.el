@@ -939,9 +939,11 @@ if test "$use_pen_config" = "y"; then
     fi
 fi
 
-if test -d "$PEN_CONFIG_DIR"; then
-    mkdir -p "$PEN_CONFIG_DIR/documents"
-fi
+# if test -d "$PEN_CONFIG_DIR"; then
+#     mkdir -p "$PEN_CONFIG_DIR/documents"
+# fi
+# Make it anyway, because pen-xc needs it
+mkdir -p "$PEN_CONFIG_DIR/documents"
 
 if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = pent; } && \
     test "$PEN_USE_REMOTE_PATH" = y && \
