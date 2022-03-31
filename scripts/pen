@@ -133,7 +133,7 @@ test_deps() {
 
 # port linear coefficient - pen-test encodes as 42
 # Add this number to ports.
-coefficient="$(echo "$PEN_CONTAINER_NAME" | perl -lne 'printf "%03d", ord for split ""' | fold -w1 | paste -sd+ - | bc)"
+coefficient="$(echo "$PEN_CONTAINER_NAME" | perl -lne 'printf "%03d", ord for split ""' | fold -w1 | paste -sd+ - | pen-bc)"
 : "${coefficient:="0"}"
 TTYD_PORT="$((7681 + $coefficient))"
 export TTYD_PORT
@@ -1938,7 +1938,7 @@ IFS= read -r -d '' shcode <<HEREDOC
             vol="$(realpath "$vol")"
             test -n "$vol" && printf -- "%s " -v "$vol:/volumes/$vol" 
             done
-        else
+        elif test -f ~/.pen/volumes.txt; then
             cat ~/.pen/volumes.txt | awk 1 | while IFS=$'\n' read -r vol; do
             vol="$(realpath "$vol")"
             test -n "$vol" && printf -- "%s " -v "$vol:/volumes/$vol" 
