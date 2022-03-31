@@ -205,6 +205,6 @@ if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
 else
     # Start a fake X for the clipboard
-    nohup Xvfb :0 -screen 0 1x1x8
+    nohup Xvfb :0 -screen 0 1x1x8 &>/dev/null &
     runclient -a "" -t "$@"
 fi
