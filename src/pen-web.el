@@ -10,7 +10,7 @@
 (defun pen-public-web ()
   (interactive)
   (if (pen-internet-connected-p)
-      (pen-sn (pen-cmd "pen-lt" "--port" (str (pen-get-ttyd-port)) "-o") nil nil nil t)
+      (pen-sn (pen-cmd "unbuffer" "pen-lt" "--port" (str (pen-get-ttyd-port)) "-o") nil nil nil t)
     (error "The internet is not connected so you won't be able to expose Pen.el publically")))
 
 (provide 'pen-web)
