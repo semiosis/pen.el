@@ -1817,9 +1817,9 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
 
     if ! test "$batch" = "y"; then
         test -d "$KHALA_DIR" && yn "Pull khala repo? (recommended)" && (
-                cd "$KHALA_DIR"
-                git pull --rebase origin master
-            )
+            cd "$KHALA_DIR"
+            git pull --rebase origin master
+        )
     fi
 
     if test -d "$ILAMBDA_DIR"; then
