@@ -20,7 +20,8 @@
   (interactive)
   (cond
    ((>= (prefix-numeric-value current-prefix-arg) 4)
-    (pen-kill-emacs))
+    ;; (pen-kill-emacs)
+    (penq))
    (t
     (if (or
          force
@@ -50,8 +51,6 @@
   (if (or force (yn "Quit emacs?"))
       (let ((kill-emacs-hook nil))
         (kill-emacs))))
-
-(define-key pen-map (kbd "M-q") 'pen-kill-buffer-and-frame)
 
 (define-key pen-acolyte-minor-mode-map (kbd "M-q") 'pen-delete-frame)
 (define-key pen-acolyte-minor-mode-map (kbd "M-Q") 'pen-kill-emacs)

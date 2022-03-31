@@ -709,7 +709,7 @@
 
 ;; Quit Pen
 (if (inside-docker-p)
-    (define-key pen-map (kbd "<M-f1>") 'penq))
+    (define-key pen-map (kbd "<M-f1>") 'pen-kill-buffer-and-frame))
 
 ;; Wow, it also works in the web interface
 ;; I should remember that for future bindings, using Shift-Meta bypasses google chrome Meta bindings

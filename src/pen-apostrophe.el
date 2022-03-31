@@ -96,6 +96,36 @@
       (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" blurb))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
+(defun apostrophe-start-chatbot-from-selection (text)
+  (interactive (list (str (pen-screen-or-selection))))
+
+  (let ((apostrophe-engine
+         (or (sor (pen-var-value-maybe 'force-engine)) "")))
+    (if (and (not (pen-inside-docker))
+             (not (pen-container-running)))
+        (progn
+          (pen-term-nsfa (pen-cmd "pen" "-n"))
+          (message "Starting Pen server")))
+
+    (if (not text)
+        (setq text (str (pen-screen-or-selection))))
+
+    (let* ((sme
+            (eval
+             `(pen-engine
+               ,apostrophe-engine
+               (pf-who-is-the-subject-matter-expert-for-/1 text))))
+           (blurb
+            (eval
+             `(pen-engine
+               ,apostrophe-engine
+               (apostrophe-generate-blurb sme)
+               ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
+               ))))
+
+      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" blurb))))
+        (pen-e-sps (pen-lm (pen-eval-string el)))))))
+
 (defun apostrophe-a-conversation-broke-out-here (text)
   (interactive (list (str (pen-selected-or-preceding-context))))
 
