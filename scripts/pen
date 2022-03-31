@@ -970,7 +970,7 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
 elif { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = pent; } && \
     test "$#" -eq 1 && \
     test -n "$1" && \
-    test -f "$1" && \
+    { test -f "$1" || test -d "$1"; } && \
     test -d "$PEN_CONFIG_DIR/documents"; then
 
     rp="$(realpath "$1")"
