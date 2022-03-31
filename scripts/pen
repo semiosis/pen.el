@@ -1871,6 +1871,7 @@ if ! test -n "$DISPLAY"; then
 fi
 
 export PEN_USE_GUI
+export PEN_SHARE_X
 
 if test "$docker_cmd" = run && docker-running-p && ! inside-docker-p; then
     docker_cmd=exec
