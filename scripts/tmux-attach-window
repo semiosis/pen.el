@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+window_id="$1"
+test -n "$window_id" || exit 1
+
+TMUX= tmux attach -t "$(pen-tm-new-hidden-link-window "$window_id")"

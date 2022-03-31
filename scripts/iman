@@ -4,4 +4,4 @@ export TTY
 page="$1"
 test -n "$1" || exit
 
-penf pf-imagine-a-man-page/1 "$1" | pen-pavs
+penf -nto --tokens 300 pf-imagine-a-man-page/1 "$1" | pen-pavs

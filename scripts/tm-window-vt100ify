@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+: "${window_id:="$1"}"
+: "${window_id:=$(tmux display-message -p '#{window_id}')}"
+
+TMUX= tmux new-window "TERM=vt100 tmux-attach-window $window_id"
