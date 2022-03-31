@@ -10,10 +10,14 @@ normalise_paths() {
 }
 
 if command -v yq &>/dev/null; then
-    substitutions="$substitutions;$(cat ~/.pen/pen.yaml | yq -r ".volumes[]" | awk 1 | normalise_paths| sed -e 's%\(.*\)%s=\1=/volumes\1=%' -e 's/$/;/' | tr -d '\n')"
+    substitutions="$substitutions;$(cat ~/.pen/pen.yaml | yq -r ".volumes[]" | awk 1 | normalise_paths | sed -e 's%\(.*\)%s=\1=/volumes\1=%' -e 's/$/;/')"
+    substitutions="$substitutions;$(cat ~/.pen/pen.yaml | yq -r ".volumes[]" | awk 1 | sed -e 's%\(.*\)%s=\1=/volumes\1=%' -e 's/$/;/')"
 else
-    substitutions="$substitutions;$(cat ~/.pen/volumes.txt | awk 1 | normalise_paths | sed -e 's%\(.*\)%s=\1=/volumes\1=%' -e 's/$/;/' | tr -d '\n')"
+    substitutions="$substitutions;$(cat ~/.pen/volumes.txt | awk 1 | normalise_paths | sed -e 's%\(.*\)%s=\1=/volumes\1=%' -e 's/$/;/')"
+    substitutions="$substitutions;$(cat ~/.pen/volumes.txt | awk 1 | sed -e 's%\(.*\)%s=\1=/volumes\1=%' -e 's/$/;/')"
 fi
+
+substitutions="$(p "$substitutions" | tr -d '\n' | sed 's/;;/;/g')"
 
 convert_path() {
     sed -e "$substitutions"
