@@ -151,7 +151,7 @@ if ! stdin_exists && test "$#" -gt 0; then
         shift
     fi
 
-    exec < <(cmd-nice-posix "$@")
+    exec < <(cmd-nice "$@")
 fi
 
 if stdin_exists; then
