@@ -138,6 +138,11 @@
       (setq pen-contrib-directory hostcontribdir)
     (setq pen-contrib-directory (f-join user-emacs-directory "pen-contrib.el"))))
 
+(let ((hostilambdadir (f-join user-emacs-directory "host" "ilambda")))
+  (if (f-directory-p (f-join hostilambdadir))
+      (setq pen-ilambda-directory hostilambdadir)
+    (setq pen-ilambda-directory (f-join user-emacs-directory "ilambda"))))
+
 (let ((hostenginesdir (f-join user-emacs-directory "host" "engines")))
   (if (f-directory-p (f-join hostenginesdir "engines"))
       (setq pen-engines-directory hostenginesdir)
