@@ -22,3 +22,5 @@ xdg-settings set default-web-browser $slug.desktop
 xdg-mime default $slug.desktop 'x-scheme-handler/http'
 xdg-mime default $slug.desktop 'x-scheme-handler/https'
 } &>/dev/null
+
+export BROWSER="$c"
