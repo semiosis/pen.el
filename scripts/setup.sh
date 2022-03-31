@@ -712,3 +712,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 #   ghcup tui
 # 
 # If you are new to Haskell, check out https://www.haskell.org/ghcup/install/#first-steps
+
+# Install haskell dev tools
+# https://gitlab.cecs.anu.edu.au/pages/2020-S2/courses/comp1100/resources/10-install/
+cabal v2-install --install-method=copy ghcid
+cabal v2-install --install-method=copy doctest

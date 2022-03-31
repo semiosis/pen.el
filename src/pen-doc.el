@@ -189,6 +189,12 @@
   (interactive)
   (pen-sps "cabal v2-repl --builddir=newdist/dante" nil nil (locate-dominating-file-glob default-directory "*.cabal")))
 
+(defun dante-ghcid ()
+  (interactive)
+  (pen-sps "ghcid --command='cabal v2-repl --builddir=newdist/dante'" nil nil (locate-dominating-file-glob default-directory "*.cabal"))
+  ;; (pen-sps "cabal v2-repl --builddir=newdist/dante" nil nil (locate-dominating-file-glob default-directory "*.cabal"))
+  )
+
 (defun hs-tds-fzf (hs-type)
   (interactive (list (pen-haskell-get-type)))
   (pen-sph (concat "t new " (pen-q "pen-rtcmd hs-type-declarative-search-fzf " (pen-q hs-type)))))

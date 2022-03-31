@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+cabal v2-install --install-method=copy ghcid
+cabal v2-install --install-method=copy doctest

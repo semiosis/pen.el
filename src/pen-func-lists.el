@@ -157,6 +157,7 @@
                              pen-haskell-get-import
                              haskell-show-hdc-readme
                              dante-repl
+                             dante-ghcid
                              haskell-hdc-thing
 
                              pen-haskell-get-type
