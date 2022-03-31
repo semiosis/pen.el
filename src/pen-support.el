@@ -2188,18 +2188,6 @@ If any of the suggest predicates evaluated to t, then suggest the function"
 (defun date-ts ()
   (string-to-number (format-time-string "%s")))
 
-;; Can't asynchronously do an interactive funcall
-;; (defun pen-funcall-interactively (func &rest args)
-;;   (eval
-;;    `(pen-run-after-time
-;;      2 (funcall-interactively ',func ,@args))))
-
-;; (defun test-pen-funcall-interactively ()
-;;   (interactive)
-;;   (pen-funcall-interactively
-;;    'lg-eww
-;;    "https://vitaminc-gummies.com/health/"))
-
 (defun locate-dominating-file-glob (file-glob name)
   (setq file-glob (abbreviate-file-name (expand-file-name file-glob)))
   (let ((root nil)
