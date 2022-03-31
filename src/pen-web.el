@@ -1,3 +1,6 @@
+(defun pen-has-gui-p ()
+  (pen-snq "pen-has-gui-p"))
+
 (defun pen-start-gui-web-browser ()
   (interactive)
   (pen-sn "pen web" nil nil nil t))
