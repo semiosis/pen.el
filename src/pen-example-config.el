@@ -804,4 +804,22 @@
 
 (define-key global-map (kbd "M-i") 'iedit-mode)
 
+(if (inside-docker-p)
+    (progn
+      (define-key global-map (kbd "M-q") nil)
+      ;; These work in term but nowhere else
+      (define-key global-map (kbd "M-q v") #'open-in-vim)
+      (define-key global-map (kbd "M-q V") #'e/open-in-vim)
+      (define-key global-map (kbd "M-q M-V") #'e/open-in-vim)
+      (define-key global-map (kbd "M-q M-v") #'open-in-vim) ;This is like vim's M-q M-m for opening in emacs in the current pane
+
+      ;; These work everywhere except term
+      (define-key pen-map (kbd "M-q v") #'open-in-vim)
+      (define-key pen-map (kbd "M-q V") #'e/open-in-vim)
+      (define-key pen-map (kbd "M-q M-V") #'e/open-in-vim)
+      (define-key pen-map (kbd "M-q M-v") #'open-in-vim) ;This is like vim's M-q M-m for opening in emacs in the current pane
+
+      ;; (define-key pen-map (kbd "M-l V") #'e/open-in-vim)
+      (define-key pen-map (kbd "M-l M-V") #'e/open-in-vim)))
+
 (provide 'pen-example-config)

@@ -370,7 +370,7 @@ Be mindful of quoting arguments correctly."
 (defun open-in-vscode ()
   "Opens vscode in current window for buffer contents"
   (interactive)
-  (tmux-edit "vsc" "nw"))
+  (pen-tmux-edit "vsc" "nw"))
 
 (defun pen-term-nsfa (cmd &optional input modename closeframe buffer-name dir)
   "Like term but can run a shell command.
@@ -391,10 +391,20 @@ Be mindful of quoting arguments correctly."
         (term (message (nsfa (message (concat "( " cmd " ) < " (pen-q tf)))))))
     (term (nsfa (tmuxify-cmd cmd)))))
 
+(defun open-in-vim ()
+  "Opens v in current window for buffer contents"
+  (interactive)
+  (pen-tmux-edit "v" "cw"))
+
+(defun open-in-vs-for-copying ()
+  "Opens v in current window for buffer contents"
+  (interactive)
+  (pen-tmux-edit "vs" "cw"))
+
 (defun open-in-vim-in-term ()
   "Opens v in current window for buffer contents"
   (interactive)
-  (let ((get-current-line-string-and-col (pen-concat "+" (get-current-line-string-number-at-pos) ":" (current-column))))
+  (let ((line-and-col (pen-concat "+" (line-number-at-pos) ":" (current-column))))
     (if (and buffer-file-name (not (string-match "\\[*Org Src" (buffer-name))))
         (pen-term-nsfa (concat "vs -c \"set ls=0\" " line-and-col " " (pen-q (buffer-file-path))))
       (pen-term-nsfa (concat "vs -c \"set ls=0\" " line-and-col) (buffer-string)))))
