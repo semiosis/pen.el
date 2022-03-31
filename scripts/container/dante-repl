@@ -1,4 +1,6 @@
 #!/bin/bash
 export TTY
 
-pet cabal v2-repl --builddir=newdist/dante
+# eterm isn't able to properly handle screen-256color in this case. Use tmux
+pet tmux new cabal v2-repl --builddir=newdist/dante
+# cabal v2-repl --builddir=newdist/dante
