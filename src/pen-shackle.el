@@ -102,6 +102,7 @@
             ("\\*daemons .*\\*" :regexp t :ignore nil :select t :same t)
             ("\\*define-it: .*\\*" :regexp t :ignore nil :select t :same t)
             ("\\*kubel .*\\*" :regexp t :ignore nil :select t :same t)
+            ("\\*dante:.*\\*" :regexp t :ignore nil :select t :same t)
             ("\\*.*\\*\\.csv" :regexp t :ignore nil :select t :same t)
             ("magit.*\\.csv" :regexp t :ignore nil :select t :same t)
             ("*Flycheck checkers*" :ignore nil :select t :same t)
