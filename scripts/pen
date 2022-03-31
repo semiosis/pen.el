@@ -1635,7 +1635,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         my_config_fp="$PEN_CONFIG_DIR/pen.yaml"
         example_config_fp="$PENEL_DIR/config/example-pen.yaml"
         if test -f "$example_config_fp" && ! test -f "$my_config_fp"; then
-            cp -a "$example_config_fp" "$PEN_CONFIG_DIR"
+            cp -a "$example_config_fp" "$PEN_CONFIG_DIR"/pen.yaml
         fi
     fi
 

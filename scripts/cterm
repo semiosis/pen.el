@@ -40,8 +40,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -xt) {
-        export TERM=xterm-256color
+    -termxt) {
+        export USE_TERM=xterm-256color
         shift
     }
     ;;

@@ -4,6 +4,7 @@ export TTY
 # nsfa needs to be created from within elisp
 
 export USE_NVC
+export USE_TERM
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
