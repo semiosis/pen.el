@@ -151,7 +151,17 @@ test -n "$path" && test -f "$path" || {
     exit 1
 }
 
-IFS= read -rd '' kickstarter < <(cat "$conv_path" | yq -r '.subprompts[0].kickstarter // empty' | sed "s/<Person A>/you/g" | sed "s/<Person B>/$person/g" | sed "s=<info>=$info=g" | pen-str remove-trailing-whitespace);typeset -p kickstarter &>/dev/null
+# Encode to avoid = which is used for the replacement delims
+sed_encode() {
+    sed 's/=/<pen-equals>/g'
+}
+
+sed_decode() {
+    sed 's/<pen-equals>/=/g'
+}
+
+info="$(p "$info" | sed_encode)"
+IFS= read -rd '' kickstarter < <(cat "$conv_path" | yq -r '.subprompts[0].kickstarter // empty' | sed "s/<Person A>/you/g" | sed "s/<Person B>/$person/g" | sed "s=<info>=$info=g" | pen-str remove-trailing-whitespace | sed_decode);typeset -p kickstarter &>/dev/null
 IFS= read -rd '' user_prompt_re < <(cat "$path" | yq -r '.["user-prompt"] // empty' | chomp);typeset -p user_prompt_re &>/dev/null
 IFS= read -rd '' comint_user_prompt_re < <(cat "$path" | yq -r '.["comint-user-prompt-regex"] // empty' | chomp);typeset -p comint_user_prompt_re &>/dev/null
 

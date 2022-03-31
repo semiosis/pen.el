@@ -86,14 +86,17 @@
                ,apostrophe-engine
                (pf-who-is-the-subject-matter-expert-for-/1 text))))
            (blurb
-            (eval
-             `(pen-engine
-               ,apostrophe-engine
-               (apostrophe-generate-blurb sme)
-               ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
-               ))))
+            (concat
+             (eval
+              `(pen-engine
+                ,apostrophe-engine
+                (apostrophe-generate-blurb sme)
+                ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
+                ))
+             "\nThe topic of conversation is the following:\n"
+             text)))
 
-      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" blurb))))
+      (let* ((el (pen-snc (pen-etv (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" blurb)))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
 (defun apostrophe-start-chatbot-from-selection (text)
