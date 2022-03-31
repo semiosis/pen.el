@@ -2503,22 +2503,6 @@ case "$file_type" in
 
 esac
 
-# if [ -f "$1" ]; then
-#     {
-#         lit "This must compile and run"
-#         echo
-#         echo
-#         cat "$1"
-#     } | less
-#     exit 0
-# elif test -d "$1"; then
-#     lit "This must compile and run"
-#     exit 0
-# fi
-
 lit "no handler for $arg1" | less
 
 exit 1
-
-# nnoremap <silent> Zr :call ExecInTmux()<CR>
-# silent! call system('rifle-run-split.sh "'.expand('%:p').'"'))
