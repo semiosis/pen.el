@@ -443,7 +443,9 @@ It's really meant for key bindings and which-key, so they should all be interact
 
 (defun pen-start-gui ()
   (interactive)
-  (pen-sn "penx" nil nil nil t))
+  (if (pen-has-gui-p)
+      (pen-sn "penx" nil nil nil t)
+    (error "Display not available")))
 
 (defmacro never (&rest body)
   "Do not run this code"

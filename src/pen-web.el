@@ -3,7 +3,9 @@
 
 (defun pen-start-gui-web-browser ()
   (interactive)
-  (pen-sn "pen web" nil nil nil t))
+  (if (pen-has-gui-p)
+      (pen-sn "pen web" nil nil nil t)
+    (error "Display server not available")))
 
 (defun pen-get-ttyd-port ()
   (string-to-number
