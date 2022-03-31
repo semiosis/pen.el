@@ -792,7 +792,7 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
 
 (require 'flycheck)
 
-(df fi-text-to-paras-nosegregate (pen-region-pipe "tpp"))
+(df fi-text-to-paras-nosegregate (pen-region-pipe "pen-pretty-paragraph"))
 
 (defhydra hydra-apropos (:color blue)
   "Apropos"
