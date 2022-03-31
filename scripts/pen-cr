@@ -1,0 +1,2524 @@
+#!/bin/bash
+export TTY
+
+unset CWD
+
+shopt -s extglob
+shopt -s globstar
+
+# TODO Add something to activate a venv
+# x -sh bash -s '. .env/bin/activate' -c m -i
+
+# DONE Add something to run a file *AS* a type of file (such as a Dockerfile)
+# vim +/"-spec) {" "$SCRIPTS/cr"
+
+export NOPAK
+
+cd_run() {
+    CWD="$1" exec x -zsh -s "ls" -c m -s "./$mant" -c m -a
+}
+
+cd_ls() {
+    CWD="$1" exec x -zsh -s "ls" -c m -a
+}
+
+sn="$(basename "$0")"
+
+case "$sn" in
+    cri) {
+        interactive=y
+    }
+    ;;
+
+    *)
+esac
+
+pen-pak() {
+    zcd .
+}
+
+sudomaybe() {
+    if test "$DO_SUDO" = "y"; then
+        cmd m"$@" 1>&2
+        m"$@"
+    else
+        "$@"
+    fi
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -i) {
+        interactive=y
+        shift
+    }
+    ;;
+
+    -ls|-li|-list) {
+        cat "$SCRIPTS/${sn}" | pen-scrape "trycr [^\$ ]+$" | cut -d ' ' -f 2 | print-line-if-path-exists.sh | uniqnosort | pen-pavs
+        exit $?
+    }
+    ;;
+
+    -ch|-pick|-sel|-choose) {
+        sel="$("$SCRIPTS/${sn}" -li | pen-fzf)"
+        if test -n "$sel"; then
+            eval "$SCRIPTS/${sn} $sel"
+        else
+            :
+            cr
+            # echo "cr: aborting"
+        fi
+        exit $?
+    }
+    ;;
+
+    -y) {
+        export YN_DEFAULT=y
+        shift
+    }
+    ;;
+
+    -d|-ud) {
+        USE_DIR=y
+        shift
+    }
+    ;;
+
+    -spec) {
+        fnspec="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -ft*) { # Because "$1" == "-ft kotlin", when used in shebang
+        # echo "$opt"
+        if pl "$opt" | grep -q -P -- '-ft.+'; then
+            file_type="$(p "$opt" | sed 's/^-ft *//')"
+            # file_type="${opt##* }"
+            shift
+        else
+            file_type="$2"
+            shift
+            shift
+        fi
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# echo "$file_type"
+# exit 0
+
+# printf -- "%s\n" "$1"
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+if stdin_exists && ! test -f "$1"; then
+    fp="$(cat | pen-tf txt)"
+else
+    fp="$1"
+    shift
+fi
+
+arg1="$fp"
+
+if ! test -f "$1" && test -d "$fp" && ! test "$USE_DIR" = y; then
+    cd "$fp"
+    fp=
+fi
+
+tryfun() {
+    fun_name="$1"
+    eval "$1"
+}
+
+scrapefromreadme() {
+    commands="$(scrape-install-commands-from-readme)"
+    if test -n "$commands" && yn "See build commands?"; then
+        command="$(p "$commands" | pen-fzf -1)"
+        if test -n "$command"; then
+            zrepl -E "$command"
+        fi
+    fi
+}
+
+trycr() {
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        -d) {
+            USE_DIR=y
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
+    fp="$1"
+
+    # if test "$fp" = "Cargo.toml"; then
+        # set -x
+    # fi
+
+    dn="$(dirname "$fp")"
+    fn="$(basename "$fp")"
+
+    export USE_DIR
+
+    if test "$USE_DIR" = "y" && test -d "$fn"; then
+        yn "Use $fp?" && cr "$fn"
+    else
+        # the dn might not exist, actually
+        test -d "$dn" && cd "$dn"
+
+        if ! test -e "$fn"; then
+            # Can't use iname
+            # ls 1>&2
+            possible="$(find . -maxdepth 1 -name "$fn" -print -quit)"
+            if test -n "$possible"; then
+                fn="$possible"
+            fi
+        fi
+
+        if test -e "$fn" && yn "Use $fp?"; then
+            cr "$fn"
+        fi
+    fi
+    # set +x
+
+    return 0
+}
+
+if test -z "$fp"; then
+    # Look for build files
+
+    echo cr
+    echo Looking for build files | udl
+
+    # hsq cr | pen-xa cat1 | pen-scrape "\bcr [^ ]+" | uniqnosort | grep -v / | v
+
+    tryfun scrapefromreadme 2>/dev/null
+    if test -f .gitmodules && yn "update git submodules?"; then
+        # git submodule update --init
+        git submodule update --init --recursive --remote
+    fi
+    for f in install*; do
+        test -f "$f" && trycr "$f"
+
+        # if test "$(head -c 2 "$f")" = "#!"; then
+        #     perl "$f"
+        #     pen-pak
+        #     exit $?
+        # else
+        #     test -x "$f" && trycr "$f"
+        # fi
+    done
+
+    # default.nix sets the environment to do building. Therefore, it should go first
+    # $MYGIT/serokell/gui-haskell-app
+    trycr default.nix
+
+    trycr build.sh
+    trycr install.sh
+    trycr docker-compose.yml
+    # set -x
+    #find . -name "Dockerfile*" | awk1 | while IFS=$'\n' read -r f; do
+    #    (
+    #        # This subsshell is here for 1 reasons.
+    #        # - firstly to stop stdin from entering trycr
+    #        # - secondly, to prevent changing directory permanently
+    #        exec 0</dev/null
+    #        trycr "$f"
+    #    )
+    #done
+
+    trycr -d .github
+
+    for f in $(glob -b "**/Dockerfile*"); do
+        (
+            trycr "$f"
+        )
+    done
+    trycr bootstrap
+    trycr appveyor.yml
+    trycr CMakeLists.txt # Keep this before Makefile
+    USE_DIR=y trycr venv
+    # Makefile.PL must come before Makefile
+    trycr Makefile.PL
+    trycr Makefile
+    trycr GNUmakefile
+    trycr project.clj
+    trycr build.boot
+    trycr gradlew
+    trycr build.gradle
+    trycr composer.json
+    trycr build.xml
+    trycr tsconfig.json
+    trycr Pipfile
+    trycr Rakefile
+    trycr meson.build
+    trycr build.sbt
+    trycr Gemfile
+    trycr pom.xml
+    trycr deps.edn
+    trycr psc-package.json
+    trycr bower.json
+    trycr leanpkg.toml
+    trycr BUILD
+    trycr BUILD.bazel
+    trycr spago.dhall
+    trycr Gruntfile.js
+    trycr make.jl
+    trycr Project.toml
+    trycr autogen.sh
+    trycr go.mod
+    trycr environment.yml
+    trycr configure
+    trycr main.go
+    trycr yarn.lock
+    trycr brower.json
+    trycr gulpfile.js
+    trycr package.json
+    # package.yaml for hpack
+    trycr package.yaml
+    trycr Setup.hs
+    # trycr *.cabal
+    for f in *.cabal; do
+        trycr "$f"
+    done
+    trycr stack.yaml
+    trycr poetry.lock
+    trycr pyproject.toml
+    trycr setup.py
+    trycr mkdocs.yml
+    # This is so it doesnt permanently change directory.
+    ( trycr "tests/__init__.py"; )
+    ( trycr "tests/*.py"; )
+    for f in "*.ipynb"; do
+        trycr "$f"
+    done
+    for f in "*.nix"; do
+        trycr "$f"
+    done
+    trycr test.py
+    trycr tests.py
+    trycr configure.ac
+    trycr Cargo.toml
+    trycr Makefile.toml
+    trycr requirements.txt
+    trycr DotNetCoreKoans.sln
+    trycr dune-project
+    trycr config.toml
+
+    glow
+
+    exit 1
+fi
+
+fp="$(glob -b "$fp")"
+rp="$(realpath "$fp")"
+dn="${rp%/*}"
+dnbn="$(basename "$dn")"
+
+# TODO check for binary files
+if test -f "$fp"; then
+    first_line="$(head -n 1 "$fp")"
+fi
+
+td_cr="$(mktemp -t -d td_crXXXXXX || echo /dev/null)"
+trap "rmdir \"$td_cr\" 2>/dev/null" 0
+
+bn="$(basename "$rp")"
+fn=$(basename "$rp")
+ext="${fn##*.}"
+mant="${fn%.*}"
+
+if test -f "$rp" && test -s "$rp"; then
+    read first_line < "$rp"
+fi
+
+rp="$(p "$rp" | pen-mnm | pen-umn)"
+
+if [ -z "$file_type" ]; then
+    file_type="$ext"
+fi
+
+# pen-tm -d dv "$file_type"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+case "$rp" in
+    *vscode/packages*) {
+        cat "$rp" | sed '/^$/d' | sed '/^#/d' | awk1 | while IFS=$'\n' read -r line; do
+            /usr/bin/code --install-extension "$line"
+        done
+
+        exit 0
+    }
+    ;;
+
+    $MYGIT/mullikine/glossaries/*.txt|$NOTES/ws/*/glossary.txt) {
+        push-glossary
+        exit 0
+    }
+    ;;
+
+    $MYGIT/semiosis/khala*) {
+        cd $MYGIT/semiosis/khala/
+        lein run
+        zrepl -cm lein run
+        exit 0
+    }
+    ;;
+
+    $MYGIT/semiosis/pensieve*) {
+        cd $MYGIT/semiosis/pensieve/
+        zrepl lein run
+        exit 0
+    }
+    ;;
+
+    $MYGIT/semiosis/rhizome/*) {
+        cd $MYGIT/semiosis/rhizome/
+        zrepl lein run
+        exit 0
+    }
+    ;;
+
+    $DUMP$NOTES/ws/blog/blog/*|$HOME/blog/posts/*.org) {
+        ans="$(qa -. edit \
+                  -d deploy-hugo \
+                  )"
+
+        case "$ans" in
+            edit) { vs $0; } ;;
+            deploy-hugo) { deploy-hugo; } ;;
+            *) ;;
+        esac
+
+        exit 0
+    }
+    ;;
+
+    $MYGIT/mullikine/presentation-prompt-engineering-in-emacs/*) {
+        cd $MYGIT/mullikine/presentation-prompt-engineering-in-emacs
+
+        gen-slides presentation.org
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    $MYGIT/takaheai/otagoai-website/*) {
+        ans="$(qa -. edit \
+                  -t test \
+                  -d deploy )"
+
+        case "$ans" in
+            edit) { vs $0; } ;;
+            test) { shx deploy-takaheai -nd; } ;;
+            deploy) { shx deploy-takaheai; } ;;
+            *) ;;
+        esac
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    $MYGIT/infogetics/infogetics-hugo/*|$MYGIT/infogetics/infogetics.github.io/*) {
+        deploy-infogetics
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    $MYGIT/semiosis/semiosis-hugo/*|$MYGIT/semiosis/semiosis.github.io/*) {
+        deploy-semiosis
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+esac
+
+
+# echo "$fn" | tv &>/dev/null
+
+# This is the original, potential symlink file name
+: "${fnspec:="$(basename "$fp")"}"
+
+# The predicates need to be more complex than merely the file path
+
+make() {
+    # Run an implicit make config before each make
+    command make config
+    command make "$@"
+}
+
+case "$fnspec" in
+    .compton.conf) {
+        killall compton
+        set -m
+        compton & disown
+        pen-tm n "Compton restarted"
+        exit 0
+    }
+    ;;
+
+    venv) {
+        x -sh bash -s '. venv/bin/activate' -c m -i
+        exit 0
+    }
+    ;;
+
+    test.py|tests.py) {
+        cd "$dn"
+        # Do this in a split because cr may be run from emacs
+        # pen-sps sp-ic-x -cd -sn python-pytest-popup
+        # This has history
+        # sp -e "(python-pytest-file \"test.py\")"
+        # pen-sps python-eruntest
+
+        pen-sps nvt -pak mypython "$fn"
+        nvt -pak python-trace "$fn"
+
+        exit 0
+    }
+    ;;
+
+    shanepy.py) {
+        cd "$dn"
+        rm /usr/local/lib/python2.7/dist-packages/shanepy*
+        rm /usr/local/lib/python3.5/dist-packages/shanepy*
+        rm /usr/local/lib/python3.6/dist-packages/shanepy*
+        rm /usr/local/lib/python3.7/dist-packages/shanepy*
+        rm /usr/local/lib/python3.8/dist-packages/shanepy*
+        python setup.py build -b /tmp/shanepy install --record /tmp/files.txt
+        python3.5 setup.py build -b /tmp/shanepy install --record /tmp/files.txt
+        python3.6 setup.py build -b /tmp/shanepy install --record /tmp/files.txt
+        python3.7 setup.py build -b /tmp/shanepy install --record /tmp/files.txt
+        # python3.7 setup.py build -b /tmp/shanepy_user install --record /tmp/files_user.txt
+        python3.8 setup.py build -b /tmp/shanepy install --record /tmp/files.txt
+
+        . ~/sh-source/conda-init
+        chown shane:shane /tmp/files.txt
+        chown shane:shane /tmp/files_user.txt
+        python setup.py build -b /tmp/shanepy install --record /tmp/files.txt
+
+        cd $MYGIT/mullikine/shanepy
+        make clean
+
+        pen-tm n "shanepy installed"
+
+        if is_tty; then
+            pen-pak
+        fi
+
+        exit 0
+    }
+    ;;
+
+    environment.yml) {
+        cd "$dn"
+        conda env create -f environment.yml
+        name="$(cat "$fp" | yq -r .name)"
+        zrepl -cm -E ". $HOME/sh-source/miniconda3.sh; conda activate $name"
+        pen-pak c
+        exit 0
+    }
+    ;;
+
+    main.go|go.mod) {
+        cd "$dn"
+        pwd
+        if yn "Attempt go get?"; then
+            shorturl="$(vc url | sed 's/^https\?:\/\///')"
+            go get -u "$shorturl"
+        else
+            set -xv
+            go build
+            go install
+        fi
+        pen-pak c
+        exit 0
+    }
+    ;;
+
+    # Not necessarily executable
+    install.sh|build.sh) {
+        # set -xv
+        cd "$dn"
+        # This needs to be perl, not sh, in case it's a bash script and
+        # not POSIX compatible
+        perl ./"$fn"
+        exit 0
+    }
+    ;;
+
+    install*) {
+        cd "$dn"
+        if test -x "$fn"; then
+            DO_SUDO="$(yes-or-no-p "Use sudo?" && p y)"
+            if test "$DO_SUDO" = "y"; then
+                m"./$fn"
+            else
+                "./$fn"
+            fi
+        else
+            if test "$(head -c 2 "$rp")" = "#!"; then
+                perl "$rp"
+                pen-pak
+                exit $?
+            fi
+        fi
+        exit "0"
+    }
+    ;;
+
+    Makefile.toml) {
+        cd "$dn"
+        if yn "Attempt cargo install?"; then
+            set -xv
+
+            dnbn="$(basename "$dn")"
+
+            cargo install "$dnbn"
+        else
+            set -xv
+            cargo make
+            cargo make install
+        fi
+        pen-pak c
+        exit 0
+    }
+    ;;
+
+
+    # Cargo.toml
+    Cargo.*) {
+        cd "$dn"
+        if yn "Attempt cargo install?"; then
+            set -xv
+
+            dnbn="$(basename "$dn")"
+
+            cargo install "$dnbn"
+        else
+            set -xv
+            cargo build
+            cargo install --force --path .
+
+            # cargo build --release
+            # cargo run --release --bin wezterm -- start
+        fi
+        pen-pak c
+        exit 0
+    }
+    ;;
+
+    yarn.lock) {
+        cd "$dn"
+        set -xv
+        yarn install
+        # yarn run compile
+        yarn run
+
+        yn "Install globally?" && yarn global add "$dnbn"
+
+        pen-pak c
+        exit 0
+    }
+    ;;
+
+    bower.json) {
+        cd "$dn"
+        bower install
+        exit 0
+    }
+    ;;
+
+    texi) {
+        cd "$dn"
+        makeinfo "$fn"
+        exit 0
+    }
+    ;;
+
+    mkdocs.yml) {
+        cd "$dn"
+        mkdocs build
+        exit 0
+    }
+    ;;
+
+    gulpfile.js) {
+        cd "$dn"
+        npm pen-i gulp
+        gulp
+        exit 0
+    }
+    ;;
+
+    package.json) {
+        cd "$dn"
+
+        DO_SUDO="$(yes-or-no-p "Use sudo?" && p y)"
+
+        if yn "Install only (y)?\n Otherwise, select from available commands (n)"; then
+            cat package.json| jq -r ".scripts | keys[]" | tr '\n' ' ' | sed -e 's/^/npm commands: /' -e 's/ $//' | awk1
+            sudomaybe npm build
+            sudomaybe npm install
+            sudomaybe npm start
+        else
+            set -xv
+            sudomaybe npm install
+
+            key="$(cat "$fn" | jq -r ".scripts | keys[]" | pen-fzf)"
+            if test -n "$key"; then
+                sudomaybe npm run-script "$key"
+                # cmd="$(cat "$fn" | jq -r ".scripts.$key")"
+                # if tent -n "$cmd"; then
+                    # eval "$cmd"
+                # fi
+            fi
+        fi
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    bootstrap) {
+        cd "$dn"
+        sh bootstrap
+        ynx ./configure
+        ynx make
+        ynx make install
+        exit 0
+    }
+    ;;
+
+    appveyor.yml) {
+        cd "$dn"
+        v "$fn"
+        exit 0
+    }
+    ;;
+
+    autogen.sh) {
+        cd "$dn"
+        ./autogen.sh
+        ./configure && make -j 8
+        yn "make install?" && make install
+        exit 0
+    }
+    ;;
+
+    configure) {
+        # './configure', 'make config' or 'make iconfig', then 'make'
+
+        set -xv
+
+        cd "$dn"
+        if test -f config.status; then
+            pen-ns "The previous config for $dn was $(./config.status --config)"
+            if yn "Use previous config?"; then
+                ./config.status --config | v
+                eval "./configure $(./config.status --config)" && make -j 8
+            elif yn "Open previous config?"; then
+                ./config.status --config | v
+            else
+                ./configure && make -j 8
+            fi
+        else
+            ./configure && make -j 8
+        fi
+        exit 0
+    }
+    ;;
+
+    project.clj) {
+        cd "$dn"
+        set -xv
+        # lein run
+
+        if test -n "$(open-main | cat)" && yn "Run main? (y)"; then
+            echo "pass it arguments to programhere"
+            zrepl lein run
+
+            # The following isn't guaranteed to run
+            # zrepl lein run -m main
+        elif yn "Start REPL (y)?"; then
+            x -sh "lein repl" -e "=>" -s "(in-ns 'main)" -c m -i
+        elif yn "Install (y)?"; then
+            lein deps
+            lein test
+            lein install
+        else
+            :
+        fi
+
+        exit 0
+    }
+    ;;
+
+    bower.json) {
+        cd "$dn"
+        bower install
+        exit 0
+    }
+    ;;
+
+    leanpkg.toml) {
+        cd "$dn"
+        leanpkg configure && leanpkg build
+        exit 0
+    }
+    ;;
+
+    BUILD|BUILD.bazel) {
+        cd "$dn"
+        # bazel build
+
+        ## bazelisk is a wrapper that selects the correct version
+        # bazelisk query ...
+        # bazelisk build ...
+
+        # bazelisk query ... 2>/dev/null | grep -Po "^//.*" | pen-sps vs
+        # pen-sps zrepl -E "bazelisk build "
+
+        bazelisk query ... 2>/dev/null | grep -Po "^//.*" | pen-fzf -1 | pen-xa pen-sps zrepl bazelisk build
+
+        # bazelisk build //tools/tests:test_message4_proto
+
+        # bazelisk query
+        bazelisk build
+        exit 0
+    }
+    ;;
+
+    requirements.txt) {
+        cd "$dn"
+
+        # This is how it's created
+        # pip freeze > requirements.txt
+
+        # TODO Ask to use venv
+
+        if yn "Use venv?"; then
+            set -xv
+
+            upgrade-pip
+            pwd
+
+            # test -d venvdir || python3.6 -m venv venvdir
+            test -d .env || python3.6 -m venv .env
+
+            # x -shE ""
+
+            # . venvdir/bin/activate
+            source .env/bin/activate
+
+            # pip install --upgrade pip
+
+            # which -a pip
+            # which -a python
+
+            mmypip install -r "$fn"
+
+            x -sh bash -s '. .env/bin/activate' -c m -i
+        else
+            echo Installing requirements 1>&2
+
+            # pip install -r "$fn"
+            # py pen-i -r "$fn"
+
+            # This method aborts on first failed
+            # mpip3.5 install -r "$fn"
+            # mpip3.6 install -r "$fn"
+
+            export PYTHONPATH=.
+            mmypip install -r "$fn"
+
+            # mpip3.5 install -r "$fn"
+            # mpip3.6 install -r "$fn"
+            # mpip3.8 install -r "$fn"
+
+            # cat "$fn" | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 mpip3.5 install
+            # cat "$fn" | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 mpip3.6 install
+
+            # pip-install-requirements-txt
+        fi
+
+        exit 0
+    }
+    ;;
+
+    requirements*.txt) {
+        # py -38 pen-i -r requirements-dev.txt
+        py pen-i -r requirements-dev.txt
+        exit $?
+    }
+    ;;
+
+    docker-compose.yml) {
+        cd "$dn"
+
+        if yn "Generate plantuml?"; then
+            (
+                cd "$(td)"
+                cat "$rp" | docker-compose-plantuml --link-graph | pen-tf plantuml | pen-xa v
+            )
+        fi
+
+        # if yn "View plantuml svg?"; then
+        #     (
+        #         cd "$(td)"
+        #         scope.sh "$rp" | plantuml -w -svg | pen-tf svg | pen-xa win ie
+        #     )
+        # fi
+        if yn "docker compose up?"; then
+            cd "$dn"
+            set -xv
+            # docker-compose up
+            docker-compose -f "$bn" up
+            pen-pak
+        fi
+
+        # pen-pak
+        exit 0
+    }
+    ;;
+
+    Gruntfile.js) {
+        cd "$dn"
+
+        # This installs the local grunt
+        npm install
+
+        # This runs the local grunt
+        grunt
+    }
+    ;;
+
+    vagrantfile|Vagrantfile) {
+        cd "$dn"
+
+        boxname="box-$(date-ts)"
+
+        # The vagrantfile actually contains box definitions
+
+        box="$(cat "$fp" | remove-leading-and-trailing-spaces.sh | grep config.vm.define | pen-str field 2 | tr -d '[",]' | pen-fzf)"
+
+        test -n "$box" && vagrant up "$box"
+
+        # vagrant package --output "${boxname}.box" --vagrantfile Vagrantfile
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    composer.json) {
+        cd "$dn"
+        set -xv
+
+        # Install PHP
+        # https://www.php.net/downloads.php
+
+        # Build and install
+        echo Build and install
+        composer-setup
+        php composer.phar install
+
+        echo
+
+        # Install via package manager
+        echo Install via package manager
+        project_name="$(cat composer.json | jq -r .name)"
+        composer require "$project_name"
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    k8s-entrypoint.sh) {
+        ni "$fp"
+    }
+    ;;
+
+    Gemfile) {
+        cd "$dn"
+        bundle install
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    Gemfile) {
+        cd "$dn"
+        guard
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    config.toml) {
+        cd "$dn"
+        if test -d content && test -d themes; then
+            echo "$dn"
+
+            # dn="$(p "$dn" | pen-mnm | pen-umn)"
+
+            set -xv
+            if test "$dn" = "$MYGIT/takaheai/otagoai-website"; then
+                deploy-takaheai
+            else
+                hugo
+            fi
+        else
+            echo "Not sure what this config.toml is for"
+        fi
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    Dockerfile*) {
+        cd "$dn"
+
+        # TODO Figure out how to read these args and send them to docker
+        args="$(cat "$fn" | grep -Po "^ARG [^ ]+" | pen-str field 2)"
+        test -n "$args" && {
+            echo Export these and try again
+            printf -- "%s\n" "$args"
+        }
+
+        if yn "Install?"; then
+            # TODO "--squash" is only supported on a Docker daemon with experimental features enabled
+            # --squash .
+            # real-docker image build -f "$fn" --squash --no-cache --network=host -t "$(dirslug | sed 's/^-*//' | tr -d '\n';)-$(pwd | hash-crc32 | tr -d '\n'):1.0" .
+            real-docker image build -f "$fn" --no-cache --network=host -t "$(dirslug | sed 's/^-*//' | tr -d '\n';)-$(pwd | hash-crc32 | tr -d '\n'):1.0" .
+        else
+            real-docker image build -f "$fn" --no-cache --network=host .
+        fi
+
+        # This builds an image and creates a name:tag for it
+        # docker image build -t bulletinboard:1.0 .
+
+        # docker container run --publish 8000:8080 --detach --name bb bulletinboard:1.0
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    configure.ac|Makefile.am) {
+        cd "$dn"
+        # autoreconf --install
+        autoreconf -i || {
+            libtoolize --force
+            aclocal
+            autoheader
+            automake --force-missing --add-missing
+            autoconf
+            # ./configure
+        }
+
+        if ! is_tty || yn "Configure and make as well?"; then
+            ./configure
+            make -j 10
+        fi
+
+        if test -f Makefile && is_tty && yn "Install?"; then
+            mmake install
+        fi
+        exit 0
+    }
+    ;;
+
+    # Java
+    build.xml) {
+        cd "$dn"
+        # ant -f build.xml
+        # ant
+        ant local
+        exit 0
+    }
+    ;;
+
+    tsconfig.json) {
+        cd "$dn"
+        tsc
+        exit 0
+    }
+    ;;
+
+    *.xunit.xml) {
+        junit2html --summary-matrix "$fp" | pa -vs
+        exit 0
+    }
+    ;;
+
+    gitlab-ci.yml) {
+        prog="$(qa -c compile-yaml -q yiq -r run)"
+        case "$prog" in
+            compile-yaml|yiq) {
+                pen-tm -d nw -args filter "$prog" "$rp"
+            }
+            ;;
+
+            # This will run in tmp
+            run) {
+                run-gitlab-ci "$fp"
+            }
+            ;;
+
+            # run-in-tmp) {
+            #     run-gitlab-ci -t "$fp"
+            # }
+            # ;;
+
+            *)
+        esac
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    .gitlab-ci.yml) {
+        prog="$(qa -c compile-yaml -q yiq -r run)"
+        case "$prog" in
+            compile-yaml|yiq) {
+                pen-tm -d nw -args filter "$prog" "$rp"
+            }
+            ;;
+
+            run) {
+                run-gitlab-ci "$fp"
+            }
+            ;;
+            *)
+        esac
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    # Clojure build tool
+    build.boot) {
+        cd "$dn"
+        if yn "REPL?"; then
+            boot repl
+        else
+            # This will show the help
+            boot 2>&1 | pen-pavs
+        fi
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    # Clojure dependencies
+    deps.edn) {
+        cd "$dn"
+        clj
+        # clj-rebel
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    # Java
+    pom.xml) {
+        cd "$dn"
+        mvn package
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    psc-package.json) {
+        cd "$dn"
+        psc-package install
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    build.gradle) {
+        cd "$dn"
+        gradle -b "$fn"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    gradlew) {
+        cd "$dn"
+        ./"$fn"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    spago.dhall) {
+        cd "$dn"
+        spago install
+        spago build
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    .travis.yml) {
+        cd "$dn"
+        {
+            cat .travis.yml | yqy -r '(.before_install | join("\n")) + "\n" + (.install | join("\n"))' | sed 's/^travis_retry //' | awk 1
+            cmd cd "$dn"
+        } | pen-ds travis | bash -s -xv
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    meson.build) {
+        cd "$dn"
+
+        mkdir -p build
+        cd build
+
+        if test "$interactive" = "y"; then
+            z-repl -E "meson ..; ninja"
+        else
+            meson ..
+            # meson configure # list options
+            # meson configure -D disable-mtab=true # set an option
+            ninja
+            pen-pak
+        fi
+        exit 0
+    }
+    ;;
+
+    CMakeLists.txt) {
+        cd "$dn"
+
+        # mkdir -p build_debug;
+        # cd build_debug;
+        # cmake -DCMAKE_BUILD_TYPE=Debug ..;
+
+        mkdir -p build
+        cd build
+        # This is the clean of cmake
+        rm -f CMakeCache.txt
+
+        if test "$interactive" = "y"; then
+            z-repl -E "cmake -DCMAKE_BUILD_TYPE=Release ../ && make -j8"
+            yn "cmake make and install?" && z-repl -E "cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local && cmake --build . --target install"
+        else
+            cmake ..
+            # cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local
+            make
+            pen-pak
+        fi
+        exit 0
+    }
+    ;;
+
+    .aderc) {
+        set -xv
+        cd "$dn"
+
+        if test -d "$NOTES/programs/adehome"; then
+            ADE_HOME="$NOTES/programs/adehome"
+        else
+            ADE_HOME="$(pwd)"
+        fi
+        export ADE_HOME
+        ! test "$RUN_ONLY" = y && {
+            if yn "Update?"; then
+                ade start --update
+            else
+                ade start
+            fi
+        }
+        ade enter
+        # ade start -- --net=host --privileged
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    .Xresources) {
+        cd "$dn"
+        set -xv
+        xrdb -merge ~/.Xresources
+        xrdb -load ~/.Xresources
+        xmonad --restart
+        killall nautilus-desktop
+        restart-compton
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    *.ghci|.ghci*) {
+        cd "$dn"
+        babel-ghci "$fn"
+        exit 0
+    }
+    ;;
+
+    setup.py) {
+        cd "$dn"
+        wd="$(printf -- "%s" "$(pwd)" | slugify)"
+        rm -f "/tmp/$wd-files.txt"
+        touch "/tmp/$wd-files.txt"
+        chmod 777 "/tmp/$wd-files.txt"
+
+        # set -xv
+        if grep -q "extras_require={" "$fn" && yn "Install extras?"; then
+
+            # extras_require={"keyring": ["keyring >= 12.2.0"]},
+            if grep -q -P "extras_require={.*}," "$fn"; then
+                extra_target="$(sed -n "/extras_require={/p" "$fn" | sed -n "s/^[^\"]\\+\"\\([^\"]\\+\\).*/\\1/p")"
+            else
+                extra_target="$(sed -n -e "/extras_require={/,/},/p" "$fn" | sed -n "s/^\\s\\+[\"']\\([^\"']\\+\\).*/\\1/p" | pen-fzf)"
+            fi
+
+            if test -n "$extra_target"; then
+                # py pip install ".[$extra_target]"
+                mypy pen-i ".[$extra_target]"
+            fi
+        fi
+
+        # py e setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
+        mmypython setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
+        exit 0
+    }
+    ;;
+
+    poetry.lock) {
+        cd "$dn"
+        poetry install
+        poetry shell || pen-pak
+        exit 0
+    }
+    ;;
+
+    pyproject.toml) {
+        cd "$dn"
+        if yn "Use poetry (y) or pip (n)?"; then
+            poetry install
+            poetry shell || pen-pak
+        else
+            python -m pip install .
+            pen-pak
+        fi
+        exit 0
+    }
+    ;;
+
+    Pipfile|Pipfile.lock) {
+        cd "$dn"
+        pipenv install ||
+            pipenv install --dev ||
+            pipenv3.5 install --dev
+
+        # python -m pipenv install --dev
+
+        pipenv shell
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    Caddyfile) {
+        cd "$dn"
+        caddy run
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    Rakefile) {
+        cd "$dn"
+        if ! is_tty; then
+            bundle exec rake -t | strip-ansi
+            # rake | strip-ansi
+        else
+            # rake
+            bundle exec rake -t
+        fi
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    package.yaml) {
+        cd "$dn"
+        set -xv
+
+        # hpack will generate a cabal file
+
+        build_file="$(hpack | pen-scrape ".*\\.cabal")"
+        cr "$build_file"
+
+        # stack build --test
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    Setup.hs) {
+        cd "$dn"
+        set -xv
+
+        if yn "Use stack?"; then
+            stack setup
+            stack install
+        elif yn "Use runhaskell Setup.sh?"; then
+            # runhaskell Setup.hs configure
+            runhaskell Setup.hs configure --ghc
+
+            # https://downloads.haskell.org/~ghc/7.0.4/docs/html/Cabal/builders.html
+            # runhaskell Setup.hs configure --user
+            runhaskell Setup.hs build
+
+            # mrunhaskell Setup.hs install
+            runhaskell Setup.hs install
+        fi
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    pyproject.toml) {
+        cd "$dn"
+        # https://python-poetry.org/docs/basic-usage/
+
+        source $HOME/.poetry/env
+
+        poetry install
+        exit 0
+    }
+    ;;
+
+    make.jl) {
+        cd "$dn"
+        julia "$fn"
+
+        exit 0
+    }
+    ;;
+
+    Project.toml) {
+        cd "$dn"
+        package_name="$(p "$dnbn" | sed "s/\\..*//")"
+        x -sh julia -e ">" \
+            -s 'using Pkg' -c m \
+            -s "Pkg.add(\"$package_name\")" -c m \
+            -s "using $package_name" -c m -i
+        exit 0
+    }
+    ;;
+
+    build.sbt) {
+        cd "$dn"
+
+        nvt sbt-console
+
+        ## I do not think these commands are very standard
+        #sbt build
+        ## This may let you select from a list
+        #sbt run
+        ## sbt package # package up the project
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    dune-project) {
+        cd "$dn"
+        dune external-lib-deps --missing @install
+        dune build @install
+        dune install
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    mkfile) {
+        cd "$dn"
+        cat "$fn" | make-showschema | sed 's/:.*//' | pen-fzf | pen-xa unbuffer /usr/lib/plan9/bin/mk | less -rS +F
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    Makefile.PL) {
+        cd "$dn"
+
+        (
+            set -xv
+            perl "$fn"
+            make
+            make test
+        )
+
+        DO_SUDO="$(yes-or-no-p "Makefile.PL: Use sudo?" && p y)"
+        if test "$DO_SUDO" = "y"; then
+            make install
+        else
+            make install
+        fi
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    Makefile|GNUmakefile) {
+        cd "$dn"
+        # /usr/bin/make -v | pager
+        # cat "$fn" | make-showschema | sed 's/:.*//' | pen-fzf | pen-xa unbuffer make -v | less -rS +F
+        # cat "$fn" | make-showschema | sed 's/:.*//' | pen-fzf | pen-xa unbuffer /usr/bin/make -v | less -rS +F
+        # cat "$fn" | make-showschema | sed 's/:.*//' | pen-fzf | pen-xa unbuffer /usr/bin/make | less -rS +F
+
+        # mwas needed to find the go binary/ toolchain
+
+        # Lint for tabs
+        # cat -e -t -v "$fn" | pen-pavs
+
+        pwd | ns
+        # This works
+        {
+
+            sel="$(cat "$fn" | make-showschema | sed 's/:.*//' | pen-fzf)"
+            exec 2>&1
+            set -xv
+
+            # if test "$sel" = install; then
+
+            if test -n "$sel"; then
+                if yn "sudo?"; then
+                    # unbuffer make "$sel"
+                    unbuffer mmake "$sel"
+                else
+                    unbuffer make "$sel"
+                fi
+            fi
+
+            #else
+            #    unbuffer make  "$sel"
+
+            #    # unbuffer m"$sel"
+            #fi
+
+            echo "Finished."
+        } | less -rS +F
+
+        # Neither vim nor emacs has line chopping for term
+        # I need the new version of tmux for this.
+        # cat "$fn" | make-showschema | sed 's/:.*//' | pen-fzf | pen-xa e -sh make
+        # cat "$fn" | make-showschema | sed 's/:.*//' | pen-fzf | pen-xa nvc make
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    glide.yaml) {
+        echo "This is deprecated for go modules" 1>&2
+        cd "$dn"
+        glide install
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    stack.yaml) {
+        cd "$dn"
+        stack-build
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    # dir
+    # TODO Ensure this works for yml files beneath
+    .github) {
+        if test -d "$fn"; then
+            fns="$(glob -b ".github/workflows/*.y*ml")"
+            if test -n "$fns"; then
+                if yn "vim github workflow?"; then
+                    fn="$(printf -- "%s\n" "$fns" | pen-fzf -1)"
+                    if test -n "$fn"; then
+                        v "$fn"
+
+                        if yn "v job commands?"; then
+                            job="$(cat "$fn" | yq -r ".jobs | keys[]" | pen-fzf -1)"
+                            if test -n "$job"; then
+                                cat "$fn" | yq -r ".jobs.$job" | pen-mnm-cmds | pen-sps v
+                                cat "$fn" | yq -r ".jobs.$job.steps[].run // empty" | pen-mnm-cmds | v
+                            fi
+                        fi
+                    fi
+                fi
+            else
+                echo No workflows found, viewing directory in ranger
+                ranger .github
+            fi
+
+            if test -f ".github/CONTRIBUTING.md" && yn "sp CONTRIBUTING.md?"; then
+                sp ".github/CONTRIBUTING.md"
+            fi
+
+            # Sometimes, there may be a conf/ini file
+            # pen-tm -d nw -args filter iiq "$rp"
+
+            exit 0
+        fi
+    }
+    ;;
+
+    xmonad.hs|xmobarrc) {
+        xmonad --recompile && xmonad --restart
+        exit 0
+    }
+    ;;
+
+    pl-flow-*) {
+        file_type=json
+    }
+    ;;
+
+    template) {
+        :
+    }
+    ;;
+
+    *.pl) {
+        if yn "prolog?"; then
+            swipl-playground "$fp"
+            exit $?
+        fi
+    }
+    ;;
+
+    # This must come after all specs with .py
+    __init__.py|*.py) {
+        cd "$dn"
+        if test "$dnbn" = "tests"; then
+            cd ..
+            # Do this in a split because cr may be run from emacs
+            # pen-sps sp-ic-x -cd -sn python-pytest-popup
+            # This has history
+            pen-sps python-eruntest
+        else
+            set -xv
+            it="$(get-interpreter-for-file "$fp")"
+            it=mypython
+            case "$it" in
+                python3|python3.5) {
+                    it="python3.6"
+                }
+                ;;
+
+                *)
+            esac
+            zrepl -cm "$it" "$fp"
+        fi
+        exit 0
+    }
+    ;;
+
+    *.ipynb) {
+        cd "$dn"
+
+        prog="$(qa -t tui-euporie -j gui-jupyter-notebook)"
+        case "$prog" in
+            tui-euporie) {
+                euporie "$fp"
+            }
+            ;;
+
+            gui-jupyter-notebook) {
+                jupyter notebook "$fp"
+            }
+            ;;
+            *)
+        esac
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    *)
+esac
+
+case "$first_line" in
+    '{') {
+        file_type=json
+    }
+    ;;
+
+    *)
+esac
+
+case "$file_type" in
+    pl) {
+        # This could be perl or prolog
+        # I should use a random forest to find out
+        :
+    }
+    ;;
+
+    *)
+esac
+
+case "$file_type" in
+    hs) {
+        if yn "use interpreter?"; then
+            #ans="$(qa -r runhaskell -s stackghc)"
+            #case "$ans" in
+            #    runhaskell) {
+            #        runhaskell "$rp"
+            #    }
+            #    ;;
+            #
+            #    stackghc) {
+            #        # this is not an interpreter
+            #        stack ghc -- -O2 -threaded  "$rp"
+            #    }
+            #    ;;
+            #
+            #    *)
+            #esac
+            zrepl -cm runhaskell "$rp"
+            pen-pak
+        else
+            cd "$td_cr"
+            ln -s "$rp"
+
+            # zrepl -cm ghc "./$fn" -o "$mant" \; ./"$mant"
+            # Need to use -E to handle the ;.
+            zrepl -cm -E "ghc \"./$fn\" -o \"$mant\" ; ./\"$mant\""
+
+            # zrepl -cm -E "( ghc \"./$fn\" -o \"$mant\" && "./$mant" \"\\\$@\" )"
+            bash
+            # And here I could use my terminal automation script to pretype
+            # the command
+        fi
+        exit 0
+    }
+    ;;
+
+    tex) {
+        cd "$dn"
+        pdflatex "$fn"
+
+        mant="${fn%.*}"
+
+        z "${mant}.pdf"
+        exit 0
+    }
+    ;;
+
+    ansi) {
+        less -rS "$rp"
+        exit 0
+    }
+    ;;
+
+    nix) {
+        cd "$dn"
+
+        pwd
+        basename "$rp"
+
+        test -z "$NIX_PATH" && . $HOME/sh-source/nix.sh
+
+        nix-build "$rp"
+        nix-shell
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    tf) {
+        cd "$dn"
+        terraform init
+        terraform apply
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    deb) {
+        dpkg -c "$rp" | pa -vs
+        exit 0
+    }
+    ;;
+
+    docker) {
+        cd "$td_cr"
+
+        mkdir -p "shane/$mant"
+        cd "shane/$mant"
+
+        git init
+
+        # Symlinks don't work
+        # ln -s "$rp" Dockerfile
+        cp -a "$rp" Dockerfile
+
+        apply-inplace awk1 Dockerfile
+
+
+        dockerfile_dir="$dn"
+
+
+
+        pre_fp="$dockerfile_dir/${mant}.pre"
+        if test -f "$pre_fp"; then
+            # perl "$pre_fp" || bash "$pre_fp"
+            bash "$pre_fp"
+        fi
+
+
+        # cmd ln -s / "$td_cr/root"
+        # zcd
+
+        # mkdir -p root
+        # mount --bind / root
+        # mount | grep root | pen-str field 3 | pen-xa umount
+
+
+        entry_fp="$dockerfile_dir/${mant}.entrypoint"
+        if ! test -f "$entry_fp"; then
+            entry_fp=default-entrypoint.sh
+        fi
+
+        if test -f "$entry_fp"; then
+            {
+                cp -a "$entry_fp" entrypoint.sh
+                echo "COPY entrypoint.sh /entrypoint.sh"
+                echo "ENTRYPOINT [\"/entrypoint.sh\"]"
+            } >> Dockerfile
+        fi
+
+
+        setup_fp="$dockerfile_dir/${mant}.setup"
+        if ! test -f "$setup_fp"; then
+            setup_fp=default-setup.sh
+        fi
+
+        if test -f "$setup_fp"; then
+            {
+                cp -a "$setup_fp" setup.sh
+                echo "COPY setup.sh /setup.sh"
+                echo "RUN [\"/setup.sh\"]"
+            } >> Dockerfile
+        fi
+
+
+        set -xv
+
+        # zcd .
+
+        if yn "Install?"; then
+            # docker image build --network=host -t "$(dirslug | sed 's/^-*//' | tr -d '\n';)-$(pwd | hash-crc32 | tr -d '\n'):1.0" .
+
+            # Do not put a hash in the tag
+            docker image build --network=host -t "$(dirslug | sed 's/^-*//' | tr -d '\n';):latest" .
+        else
+            docker image build --network=host .
+        fi
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    gv|dot) {
+        show-dot "$rp"
+        exit 0
+    }
+    ;;
+
+    pl) {
+        eshell perl "$rp"
+        exit 0
+    }
+    ;;
+
+    egg) {
+        unzip -l "$rp" | pen-pavs
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    make) {
+        make -f "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    xml) {
+        view-xml "$rp"
+        exit 0
+    }
+    ;;
+
+    p6) {
+        perl6 "$rp" | pen-pavs
+        exit 0
+    }
+    ;;
+
+    clj) {
+        # https://stackoverflow.com/questions/7656523/how-can-i-run-a-clj-clojure-file-i-created
+
+        dn="$(dirname "$rp")"
+        cd "$dn"
+
+        if dominating-file project.clj | pen-mnm 1>&2 && yn "Use project.clj?"; then
+            cr project.clj;
+            exit "$?"
+        fi
+
+        if ! test "$dn" = "$pwd"; then
+            yn "cd to $(cmd "${dn}")?" && cd "$dn"
+        fi
+
+        clojure "$rp"
+        # clj "$rp"
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    tsv|csv) {
+        if ! pl "$rp" | grep -q -P '.csv' && test "$file_type" = csv; then
+            cat "$rp" | pen-tf csv | pen-xa fpvd
+        else
+            fpvd "$rp"
+        fi
+        exit 0
+    }
+    ;;
+
+    AppImage) {
+        cd "$dn"
+        chmod a+x "$bn"
+        ./"$bn"
+        exit 0
+    }
+    ;;
+
+    groovy) {
+        groovy "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    hy) {
+        hy "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    html) {
+        ff "$rp"
+        exit 0
+    }
+    ;;
+
+    cast) {
+        asciicast2gif "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    lfe) {
+        lfescript "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    # postscript
+    ps) {
+        evince "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    sln) {
+        cd "$dn"
+        # apt install mono-devel
+        msbuild "$fn"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    cs) {
+        cd "$dn"
+        csc "$rp"
+        mono "${mant}.exe"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    scala) {
+        sbt "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    php) {
+        php "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    mermaid) {
+        cd "$dn"
+        set -xv
+        mermaid-show "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    prolog) {
+        cd "$td_cr"
+
+        fn=$(basename "$rp")
+        dn=$(dirname "$rp")
+        ext="${fn##*.}"
+        mant="${fn%.*}"
+
+        np="${mant}.pl"
+
+        ln -s "$rp" "$np"
+
+        CWD="$td_cr" exec x -zsh -s "gprolog" -c m -s "[$mant]." -c m -a
+
+        gprolog "$rp" | pen-pavs
+        exit 0
+    }
+    ;;
+
+    problog) {
+        problog "$rp" | pen-pavs
+        exit 0
+    }
+    ;;
+
+    jsonnet) {
+        jsonnet "$rp" | pen-pavs
+        # zrepl -cm -E "jsonnet $(cmd "$rp") | pa -vs"
+        exit 0
+    }
+    ;;
+
+    m3u) {
+        cvlc "$rp"
+        exit 0
+    }
+    ;;
+
+    fmr) {
+        racket "$rp" | pen-tf cpp | pen-xa vs
+        exit 0
+    }
+    ;;
+
+    r|R) {
+        Rscript "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    el) {
+        if test "$(head -c 2 "$rp")" = "#!"; then
+            $rp
+        else
+            emacs-script "$rp"
+        fi
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    xsh) {
+        xsh "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    #go) {
+    #    cd "$td_cr"
+    #    ln -s "$rp"
+    #    go build "$rp" 2>&1 | pen-mnm | nvpager
+
+    #    fn=$(basename "$rp")
+    #    ext="${fn##*.}"
+    #    mant="${mant%.*}"
+
+    #    ./"$mant"
+    #    pen-pak
+    #    exit 0
+    #}
+    #;;
+
+    go) {
+        # This is not good enough
+        # Requires rp to have .go extension.
+
+        # This method is good enough
+        # $HOME/scripts/go-re-grep
+        # $HOME/scripts/re-grep.go
+
+        # go run "$rp"
+        zrepl -cm go run "$rp" --
+
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    lisp) {
+        cd "$dn"
+        clisp "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    md) {
+        any2org "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    es) {
+        ess "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    js) {
+        node "$rp" 2>&1 | pen-pavs
+        # pen-pak
+        exit 0
+    }
+    ;;
+
+    purs) {
+        node "$rp" 2>&1 | pen-pavs
+        # pen-pak
+        exit 0
+    }
+    ;;
+
+    st) {
+        nvt -E "gst \"$rp\"; pen-pak"
+        exit 0
+    }
+    ;;
+
+    plantuml|uml) {
+        cd "$dn"
+        # ni cr plantuml
+        if yn "ascii?"; then
+            cat "$rp" | plantuml | v
+        else
+            cat "$rp" | plantuml -w -svg | pen-tf svg | pen-xa win ie
+        fi
+        exit 0
+    }
+    ;;
+
+    ttyrec) {
+        ttyplay "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    scss) {
+        sass "$rp" | pen-pavs
+        exit 0
+    }
+    ;;
+
+    rkt) {
+        echo racket "$rp"
+        # nvt page racket "$rp"
+
+        nvt -E "racket \"$rp\"; pen-pak"
+
+        # pen-pak
+        exit 0
+    }
+    ;;
+
+    cabal) {
+        cd "$dn"
+        set -xv
+
+        # cabal configure
+        # cabal build
+
+        cabal v2-build
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    ts|type) {
+        cd "$td_cr"
+        ext="${fn##*.}"
+        mant="${fn%.*}"
+
+        # The extension is sometimes (incorrectly) type
+        ln -s "$rp" "${mant}.ts"
+
+        tsc "${mant}.ts"
+        yn "Start vd?" && vd "${mant}.ts" "${mant}.js"
+        yn "Run?" && ts-node "${mant}.ts"
+        exit 0
+    }
+    ;;
+
+    rs) {
+        cd "$td_cr"
+        ln -s "$rp"
+        # rustc "./$fn"
+        rustc -g "./$fn"
+        cd_run "$cd_cr"
+        # And here I could use my terminal automation script to pretype
+        # the command
+        exit 0
+    }
+    ;;
+
+    c) {
+        cd "$td_cr"
+        ln -s "$rp"
+        #CWD="$td_cr" zrepl -cm gcc -g "./$fn" -lm -o "$mant" \; "./$fn"
+        CWD="$td_cr" zrepl -cm -E "gcc -g \"./$fn\" -lm -o \"$mant\"; ./$mant"
+
+        # cd_run "$cd_cr"
+        # And here I could use my terminal automation script to pretype
+        # the command
+        exit 0
+    }
+    ;;
+
+    rb) {
+        cd "$td_cr"
+        # ruby "$rp"
+
+        # Load into an interpreter. That's more interesting
+        irb -r "$rp"
+        exit 0
+    }
+    ;;
+
+    cairo) {
+        cd "$td_cr"
+        cairo-compile "$rp" --output ./test_compiled.json
+        cairo-run --program=./test_compiled.json --print_output --print_info --relocate_prints
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    scrbl) {
+        cd "$td_cr"
+        scribble --pdf "$rp"
+        scribble --html "$rp"
+        if test -f "${mant}.html" && yn "eww?"; then
+            eww "${mant}.html"
+        else
+            cd_ls "$cd_cr"
+        fi
+        exit 0
+    }
+    ;;
+
+    kt) {
+        . $HOME/sh-source/sdkman.sh
+        set -x
+
+        cd "$dn"
+
+        kotlinc **/*.kt
+        kotlin "$mant"
+        pen-pak
+
+        exit 0
+    }
+    ;;
+
+    java) {
+        cd "$td_cr"
+        ln -s "$rp"
+        javac "./$fn"
+        java "$mant"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    cpp) {
+        cd "$td_cr"
+        ln -s "$rp"
+        g++ -g -march=native -lm -pthread "./$fn" -o "$mant"
+        cd_run "$cd_cr"
+        # And here I could use my terminal automation script to pretype
+        # the command
+        exit 0
+    }
+    ;;
+
+    py) {
+        # I need python version detection
+        cd "$dn"
+
+        if pl "$rp" | grep -q -P 'keras-idiomatic-programmer'; then
+            conda-run python "$rp" 2>&1
+        else
+            pybin="$(get-python-interp "$rp")"
+            : ${pybin:="python$(vermin "$rp")"}
+            : ${pybin:="mypython"}
+            if test "$pybin" = "python3" ||
+                test "$pybin" = "python3.5" ||
+                test "$pybin" = "python3.6" ||
+                test "$pybin" = "python3.7"; then
+                # This is so ptpython works
+                # pybin=python3.8
+                pybin=mypython
+            fi
+            "$pybin" "$rp" 2>&1
+        fi
+
+        echo "exit: $?" 1>&2
+        pen-pak c
+        exit 0
+    }
+    ;;
+
+    toml) {
+        filter toiq "$rp" 2>&1
+        pen-pak c
+        exit 0
+    }
+    ;;
+
+    ini) {
+        pen-tm -d nw -args filter iiq "$rp"
+        exit 0
+    }
+    ;;
+
+    prompt) {
+        prog="$(qa -. edit -o openai-complete -p pen-pf -s symlink -c compile-yaml -q yiq)"
+        case "$prog" in
+            symlink) {
+                (
+                    cd "$SCRIPTS"
+                    if ! test -f "$mant"; then
+                        ln -s openai-complete "$mant"
+                    fi
+                )
+                nw zrepl "$mant"
+            }
+            ;;
+
+            openai-complete) {
+                nw zrepl openai-complete "$fp"
+            }
+            ;;
+
+            pen-pf) {
+                titleslug="$(cat "$fp" | yq -r ".title" | slugify)"
+
+                pf_name="pen-pf-$titleslug"
+
+                cd "$SCRIPTS"
+
+                ln -sf sp-ic "$pf_name"
+
+                # nw zrepl "$pf_name"
+
+                nw "$pf_name"
+            }
+            ;;
+
+            compile-yaml|yiq) {
+                pen-tm -d nw -args filter "$prog" "$fp"
+            }
+            ;;
+
+            edit) {
+                vim +/"yml|yaml|prompt" "$SCRIPTS/cr"
+            }
+            ;;
+
+            *)
+        esac
+
+        # I need python version detection
+
+        # filter yiq "$rp" 2>&1
+        # pen-pak c
+        exit 0
+    }
+    ;;
+
+    yml|yaml) {
+        prog="$(qa -. edit -c compile-yaml -q yiq)"
+        case "$prog" in
+            compile-yaml|yiq) {
+                pen-tm -d nw -args filter "$prog" "$fp"
+            }
+            ;;
+
+            edit) {
+                vim +/"yml|yaml" "$SCRIPTS/cr"
+            }
+            ;;
+
+            *)
+        esac
+
+        # I need python version detection
+
+        # filter yiq "$rp" 2>&1
+        # pen-pak c
+        exit 0
+    }
+    ;;
+
+    json) {
+        # I need python version detection
+
+        # pen-tm -d nw -args filter myjiq "$rp"
+
+        pen-tm -d nw -args myjiq "$rp"
+
+        # filter myjiq "$rp" 2>&1
+        # pen-pak c
+        exit 0
+    }
+    ;;
+
+    ti) {
+        tic "$rp"
+        exit $?
+    }
+    ;;
+
+    kotlin|kts) {
+        np="${td_cr}/script.kts"
+        ln -s "$rp" "$np"
+        kotlinc -script "$np" -- $@
+        exit $?
+    }
+    ;;
+
+    template) {
+        :
+    }
+    ;;
+
+    sh) {
+        if test "$(head -c 2 "$rp")" = "#!"; then
+            perl "$rp"
+            # nvc -w -2 $rp
+            pen-pak
+            exit $?
+        else
+            set -xv
+            bash "$rp"
+        fi
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    *) { # does it have a shebang?
+        if test -f "$rp"; then
+            if test "$(head -c 2 "$rp")" = "#!"; then
+                cd "$dn"
+                perl "$rp"
+                # nvc -w -2 $rp
+                pen-pak
+                exit $?
+            fi
+        elif test -d "$rp"; then
+            :
+        fi
+    }
+    ;;
+
+esac
+
+# if [ -f "$1" ]; then
+#     {
+#         lit "This must compile and run"
+#         echo
+#         echo
+#         cat "$1"
+#     } | less
+#     exit 0
+# elif test -d "$1"; then
+#     lit "This must compile and run"
+#     exit 0
+# fi
+
+lit "no handler for $arg1" | less
+
+exit 1
+
+# nnoremap <silent> Zr :call ExecInTmux()<CR>
+# silent! call system('rifle-run-split.sh "'.expand('%:p').'"'))
