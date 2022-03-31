@@ -1,0 +1,33 @@
+#!/bin/bash
+export TTY
+
+pak_on_error=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -pak) {
+        use_pak=y
+        shift
+    }
+    ;;
+
+    -nopae) {
+        pak_on_error=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+if test "$use_pak" = "y"; then
+    tmux new bash -c "$CMD; pen-pak"
+else
+    if test "$pak_on_error" = "y"; then
+        tmux new bash -c "$CMD || pen-pak"
+    else
+        tmux new bash -c "$CMD"
+    fi
+fi
