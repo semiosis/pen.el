@@ -7,19 +7,19 @@ shopt -s extglob
 shopt -s globstar
 
 # TODO Add something to activate a venv
-# x -sh bash -s '. .env/bin/activate' -c m -i
+# pen-x -sh bash -s '. .env/bin/activate' -c m -i
 
 # DONE Add something to run a file *AS* a type of file (such as a Dockerfile)
-# vim +/"-spec) {" "$SCRIPTS/cr"
+# vim +/"-spec) {" "$SCRIPTS/pen-cr"
 
 export NOPAK
 
 cd_run() {
-    CWD="$1" exec x -zsh -s "ls" -c m -s "./$mant" -c m -a
+    CWD="$1" exec pen-x -zsh -s "ls" -c m -s "./$mant" -c m -a
 }
 
 cd_ls() {
-    CWD="$1" exec x -zsh -s "ls" -c m -a
+    CWD="$1" exec pen-x -zsh -s "ls" -c m -a
 }
 
 sn="$(basename "$0")"
@@ -65,7 +65,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             eval "$SCRIPTS/${sn} $sel"
         else
             :
-            cr
+            pen-cr
             # echo "cr: aborting"
         fi
         exit $?
@@ -138,7 +138,7 @@ tryfun() {
 
 scrapefromreadme() {
     commands="$(scrape-install-commands-from-readme)"
-    if test -n "$commands" && yn "See build commands?"; then
+    if test -n "$commands" && pen-yn "See build commands?"; then
         command="$(p "$commands" | pen-fzf -1)"
         if test -n "$command"; then
             zrepl -E "$command"
@@ -170,7 +170,7 @@ trycr() {
     export USE_DIR
 
     if test "$USE_DIR" = "y" && test -d "$fn"; then
-        yn "Use $fp?" && cr "$fn"
+        pen-yn "Use $fp?" && pen-cr "$fn"
     else
         # the dn might not exist, actually
         test -d "$dn" && cd "$dn"
@@ -184,11 +184,10 @@ trycr() {
             fi
         fi
 
-        if test -e "$fn" && yn "Use $fp?"; then
-            cr "$fn"
+        if test -e "$fn" && pen-yn "Use $fp?"; then
+            pen-cr "$fn"
         fi
     fi
-    # set +x
 
     return 0
 }
@@ -196,26 +195,16 @@ trycr() {
 if test -z "$fp"; then
     # Look for build files
 
-    echo cr
+    echo pen-cr
     echo Looking for build files | udl
 
-    # hsq cr | pen-xa cat1 | pen-scrape "\bcr [^ ]+" | uniqnosort | grep -v / | v
-
     tryfun scrapefromreadme 2>/dev/null
-    if test -f .gitmodules && yn "update git submodules?"; then
+    if test -f .gitmodules && pen-yn "update git submodules?"; then
         # git submodule update --init
         git submodule update --init --recursive --remote
     fi
     for f in install*; do
         test -f "$f" && trycr "$f"
-
-        # if test "$(head -c 2 "$f")" = "#!"; then
-        #     perl "$f"
-        #     pen-pak
-        #     exit $?
-        # else
-        #     test -x "$f" && trycr "$f"
-        # fi
     done
 
     # default.nix sets the environment to do building. Therefore, it should go first
@@ -225,20 +214,10 @@ if test -z "$fp"; then
     trycr build.sh
     trycr install.sh
     trycr docker-compose.yml
-    # set -x
-    #find . -name "Dockerfile*" | awk1 | while IFS=$'\n' read -r f; do
-    #    (
-    #        # This subsshell is here for 1 reasons.
-    #        # - firstly to stop stdin from entering trycr
-    #        # - secondly, to prevent changing directory permanently
-    #        exec 0</dev/null
-    #        trycr "$f"
-    #    )
-    #done
 
     trycr -d .github
 
-    for f in $(glob -b "**/Dockerfile*"); do
+    for f in $(pen-glob -b "**/Dockerfile*"); do
         (
             trycr "$f"
         )
@@ -319,7 +298,7 @@ if test -z "$fp"; then
     exit 1
 fi
 
-fp="$(glob -b "$fp")"
+fp="$(pen-glob -b "$fp")"
 rp="$(realpath "$fp")"
 dn="${rp%/*}"
 dnbn="$(basename "$dn")"
@@ -452,7 +431,6 @@ case "$rp" in
 
 esac
 
-
 # echo "$fn" | tv &>/dev/null
 
 # This is the original, potential symlink file name
@@ -477,14 +455,14 @@ case "$fnspec" in
     ;;
 
     venv) {
-        x -sh bash -s '. venv/bin/activate' -c m -i
+        pen-x -sh bash -s '. venv/bin/activate' -c m -i
         exit 0
     }
     ;;
 
     test.py|tests.py) {
         cd "$dn"
-        # Do this in a split because cr may be run from emacs
+        # Do this in a split because pen-cr may be run from emacs
         # pen-sps sp-ic-x -cd -sn python-pytest-popup
         # This has history
         # sp -e "(python-pytest-file \"test.py\")"
@@ -542,8 +520,8 @@ case "$fnspec" in
     main.go|go.mod) {
         cd "$dn"
         pwd
-        if yn "Attempt go get?"; then
-            shorturl="$(vc url | sed 's/^https\?:\/\///')"
+        if pen-yn "Attempt go get?"; then
+            shorturl="$(pen-vc url | sed 's/^https\?:\/\///')"
             go get -u "$shorturl"
         else
             set -xv
@@ -588,7 +566,7 @@ case "$fnspec" in
 
     Makefile.toml) {
         cd "$dn"
-        if yn "Attempt cargo install?"; then
+        if pen-yn "Attempt cargo install?"; then
             set -xv
 
             dnbn="$(basename "$dn")"
@@ -604,11 +582,10 @@ case "$fnspec" in
     }
     ;;
 
-
     # Cargo.toml
     Cargo.*) {
         cd "$dn"
-        if yn "Attempt cargo install?"; then
+        if pen-yn "Attempt cargo install?"; then
             set -xv
 
             dnbn="$(basename "$dn")"
@@ -634,7 +611,7 @@ case "$fnspec" in
         # yarn run compile
         yarn run
 
-        yn "Install globally?" && yarn global add "$dnbn"
+        pen-yn "Install globally?" && yarn global add "$dnbn"
 
         pen-pak c
         exit 0
@@ -675,7 +652,7 @@ case "$fnspec" in
 
         DO_SUDO="$(yes-or-no-p "Use sudo?" && p y)"
 
-        if yn "Install only (y)?\n Otherwise, select from available commands (n)"; then
+        if pen-yn "Install only (y)?\n Otherwise, select from available commands (n)"; then
             cat package.json| jq -r ".scripts | keys[]" | tr '\n' ' ' | sed -e 's/^/npm commands: /' -e 's/ $//' | awk1
             sudomaybe npm build
             sudomaybe npm install
@@ -720,7 +697,7 @@ case "$fnspec" in
         cd "$dn"
         ./autogen.sh
         ./configure && make -j 8
-        yn "make install?" && make install
+        pen-yn "make install?" && make install
         exit 0
     }
     ;;
@@ -733,10 +710,10 @@ case "$fnspec" in
         cd "$dn"
         if test -f config.status; then
             pen-ns "The previous config for $dn was $(./config.status --config)"
-            if yn "Use previous config?"; then
+            if pen-yn "Use previous config?"; then
                 ./config.status --config | v
                 eval "./configure $(./config.status --config)" && make -j 8
-            elif yn "Open previous config?"; then
+            elif pen-yn "Open previous config?"; then
                 ./config.status --config | v
             else
                 ./configure && make -j 8
@@ -753,15 +730,15 @@ case "$fnspec" in
         set -xv
         # lein run
 
-        if test -n "$(open-main | cat)" && yn "Run main? (y)"; then
+        if test -n "$(open-main | cat)" && pen-yn "Run main? (y)"; then
             echo "pass it arguments to programhere"
             zrepl lein run
 
             # The following isn't guaranteed to run
             # zrepl lein run -m main
-        elif yn "Start REPL (y)?"; then
-            x -sh "lein repl" -e "=>" -s "(in-ns 'main)" -c m -i
-        elif yn "Install (y)?"; then
+        elif pen-yn "Start REPL (y)?"; then
+            pen-x -sh "lein repl" -e "=>" -s "(in-ns 'main)" -c m -i
+        elif pen-yn "Install (y)?"; then
             lein deps
             lein test
             lein install
@@ -816,7 +793,7 @@ case "$fnspec" in
 
         # TODO Ask to use venv
 
-        if yn "Use venv?"; then
+        if pen-yn "Use venv?"; then
             set -xv
 
             upgrade-pip
@@ -825,7 +802,7 @@ case "$fnspec" in
             # test -d venvdir || python3.6 -m venv venvdir
             test -d .env || python3.6 -m venv .env
 
-            # x -shE ""
+            # pen-x -shE ""
 
             # . venvdir/bin/activate
             source .env/bin/activate
@@ -837,7 +814,7 @@ case "$fnspec" in
 
             mmypip install -r "$fn"
 
-            x -sh bash -s '. .env/bin/activate' -c m -i
+            pen-x -sh bash -s '. .env/bin/activate' -c m -i
         else
             echo Installing requirements 1>&2
 
@@ -875,20 +852,20 @@ case "$fnspec" in
     docker-compose.yml) {
         cd "$dn"
 
-        if yn "Generate plantuml?"; then
+        if pen-yn "Generate plantuml?"; then
             (
                 cd "$(td)"
                 cat "$rp" | docker-compose-plantuml --link-graph | pen-tf plantuml | pen-xa v
             )
         fi
 
-        # if yn "View plantuml svg?"; then
+        # if pen-yn "View plantuml svg?"; then
         #     (
         #         cd "$(td)"
         #         scope.sh "$rp" | plantuml -w -svg | pen-tf svg | pen-xa win ie
         #     )
         # fi
-        if yn "docker compose up?"; then
+        if pen-yn "docker compose up?"; then
             cd "$dn"
             set -xv
             # docker-compose up
@@ -1006,7 +983,7 @@ case "$fnspec" in
             printf -- "%s\n" "$args"
         }
 
-        if yn "Install?"; then
+        if pen-yn "Install?"; then
             # TODO "--squash" is only supported on a Docker daemon with experimental features enabled
             # --squash .
             # real-docker image build -f "$fn" --squash --no-cache --network=host -t "$(dirslug | sed 's/^-*//' | tr -d '\n';)-$(pwd | hash-crc32 | tr -d '\n'):1.0" .
@@ -1036,12 +1013,12 @@ case "$fnspec" in
             # ./configure
         }
 
-        if ! is_tty || yn "Configure and make as well?"; then
+        if ! is_tty || pen-yn "Configure and make as well?"; then
             ./configure
             make -j 10
         fi
 
-        if test -f Makefile && is_tty && yn "Install?"; then
+        if test -f Makefile && is_tty && pen-yn "Install?"; then
             mmake install
         fi
         exit 0
@@ -1121,7 +1098,7 @@ case "$fnspec" in
     # Clojure build tool
     build.boot) {
         cd "$dn"
-        if yn "REPL?"; then
+        if pen-yn "REPL?"; then
             boot repl
         else
             # This will show the help
@@ -1228,7 +1205,7 @@ case "$fnspec" in
 
         if test "$interactive" = "y"; then
             z-repl -E "cmake -DCMAKE_BUILD_TYPE=Release ../ && make -j8"
-            yn "cmake make and install?" && z-repl -E "cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local && cmake --build . --target install"
+            pen-yn "cmake make and install?" && z-repl -E "cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local && cmake --build . --target install"
         else
             cmake ..
             # cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local
@@ -1250,7 +1227,7 @@ case "$fnspec" in
         fi
         export ADE_HOME
         ! test "$RUN_ONLY" = y && {
-            if yn "Update?"; then
+            if pen-yn "Update?"; then
                 ade start --update
             else
                 ade start
@@ -1291,7 +1268,7 @@ case "$fnspec" in
         chmod 777 "/tmp/$wd-files.txt"
 
         # set -xv
-        if grep -q "extras_require={" "$fn" && yn "Install extras?"; then
+        if grep -q "extras_require={" "$fn" && pen-yn "Install extras?"; then
 
             # extras_require={"keyring": ["keyring >= 12.2.0"]},
             if grep -q -P "extras_require={.*}," "$fn"; then
@@ -1322,7 +1299,7 @@ case "$fnspec" in
 
     pyproject.toml) {
         cd "$dn"
-        if yn "Use poetry (y) or pip (n)?"; then
+        if pen-yn "Use poetry (y) or pip (n)?"; then
             poetry install
             poetry shell || pen-pak
         else
@@ -1376,7 +1353,7 @@ case "$fnspec" in
         # hpack will generate a cabal file
 
         build_file="$(hpack | pen-scrape ".*\\.cabal")"
-        cr "$build_file"
+        pen-cr "$build_file"
 
         # stack build --test
 
@@ -1389,10 +1366,10 @@ case "$fnspec" in
         cd "$dn"
         set -xv
 
-        if yn "Use stack?"; then
+        if pen-yn "Use stack?"; then
             stack setup
             stack install
-        elif yn "Use runhaskell Setup.sh?"; then
+        elif pen-yn "Use runhaskell Setup.sh?"; then
             # runhaskell Setup.hs configure
             runhaskell Setup.hs configure --ghc
 
@@ -1430,7 +1407,7 @@ case "$fnspec" in
     Project.toml) {
         cd "$dn"
         package_name="$(p "$dnbn" | sed "s/\\..*//")"
-        x -sh julia -e ">" \
+        pen-x -sh julia -e ">" \
             -s 'using Pkg' -c m \
             -s "Pkg.add(\"$package_name\")" -c m \
             -s "using $package_name" -c m -i
@@ -1519,7 +1496,7 @@ case "$fnspec" in
             # if test "$sel" = install; then
 
             if test -n "$sel"; then
-                if yn "sudo?"; then
+                if pen-yn "sudo?"; then
                     # unbuffer make "$sel"
                     unbuffer mmake "$sel"
                 else
@@ -1566,14 +1543,14 @@ case "$fnspec" in
     # TODO Ensure this works for yml files beneath
     .github) {
         if test -d "$fn"; then
-            fns="$(glob -b ".github/workflows/*.y*ml")"
+            fns="$(pen-glob -b ".github/workflows/*.y*ml")"
             if test -n "$fns"; then
-                if yn "vim github workflow?"; then
+                if pen-yn "vim github workflow?"; then
                     fn="$(printf -- "%s\n" "$fns" | pen-fzf -1)"
                     if test -n "$fn"; then
                         v "$fn"
 
-                        if yn "v job commands?"; then
+                        if pen-yn "v job commands?"; then
                             job="$(cat "$fn" | yq -r ".jobs | keys[]" | pen-fzf -1)"
                             if test -n "$job"; then
                                 cat "$fn" | yq -r ".jobs.$job" | pen-mnm-cmds | pen-sps v
@@ -1587,7 +1564,7 @@ case "$fnspec" in
                 ranger .github
             fi
 
-            if test -f ".github/CONTRIBUTING.md" && yn "sp CONTRIBUTING.md?"; then
+            if test -f ".github/CONTRIBUTING.md" && pen-yn "sp CONTRIBUTING.md?"; then
                 sp ".github/CONTRIBUTING.md"
             fi
 
@@ -1616,7 +1593,7 @@ case "$fnspec" in
     ;;
 
     *.pl) {
-        if yn "prolog?"; then
+        if pen-yn "prolog?"; then
             swipl-playground "$fp"
             exit $?
         fi
@@ -1628,7 +1605,7 @@ case "$fnspec" in
         cd "$dn"
         if test "$dnbn" = "tests"; then
             cd ..
-            # Do this in a split because cr may be run from emacs
+            # Do this in a split because pen-cr may be run from emacs
             # pen-sps sp-ic-x -cd -sn python-pytest-popup
             # This has history
             pen-sps python-eruntest
@@ -1697,7 +1674,7 @@ esac
 
 case "$file_type" in
     hs) {
-        if yn "use interpreter?"; then
+        if pen-yn "use interpreter?"; then
             zrepl -cm runhaskell "$rp"
             pen-pak
         else
@@ -1779,10 +1756,7 @@ case "$file_type" in
 
         apply-inplace awk1 Dockerfile
 
-
         dockerfile_dir="$dn"
-
-
 
         pre_fp="$dockerfile_dir/${mant}.pre"
         if test -f "$pre_fp"; then
@@ -1790,14 +1764,12 @@ case "$file_type" in
             bash "$pre_fp"
         fi
 
-
         # cmd ln -s / "$td_cr/root"
         # zcd
 
         # mkdir -p root
         # mount --bind / root
         # mount | grep root | pen-str field 3 | pen-xa umount
-
 
         entry_fp="$dockerfile_dir/${mant}.entrypoint"
         if ! test -f "$entry_fp"; then
@@ -1812,7 +1784,6 @@ case "$file_type" in
             } >> Dockerfile
         fi
 
-
         setup_fp="$dockerfile_dir/${mant}.setup"
         if ! test -f "$setup_fp"; then
             setup_fp=default-setup.sh
@@ -1826,12 +1797,11 @@ case "$file_type" in
             } >> Dockerfile
         fi
 
-
         set -xv
 
         # zcd .
 
-        if yn "Install?"; then
+        if pen-yn "Install?"; then
             # docker image build --network=host -t "$(dirslug | sed 's/^-*//' | tr -d '\n';)-$(pwd | hash-crc32 | tr -d '\n'):1.0" .
 
             # Do not put a hash in the tag
@@ -1889,13 +1859,13 @@ case "$file_type" in
         dn="$(dirname "$rp")"
         cd "$dn"
 
-        if dominating-file project.clj | pen-mnm 1>&2 && yn "Use project.clj?"; then
-            cr project.clj;
+        if dominating-file project.clj | pen-mnm 1>&2 && pen-yn "Use project.clj?"; then
+            pen-cr project.clj;
             exit "$?"
         fi
 
         if ! test "$dn" = "$pwd"; then
-            yn "cd to $(cmd "${dn}")?" && cd "$dn"
+            pen-yn "cd to $(cmd "${dn}")?" && cd "$dn"
         fi
 
         clojure "$rp"
@@ -2019,7 +1989,7 @@ case "$file_type" in
 
         ln -s "$rp" "$np"
 
-        CWD="$td_cr" exec x -zsh -s "gprolog" -c m -s "[$mant]." -c m -a
+        CWD="$td_cr" exec pen-x -zsh -s "gprolog" -c m -s "[$mant]." -c m -a
 
         gprolog "$rp" | pen-pavs
         exit 0
@@ -2151,8 +2121,8 @@ case "$file_type" in
 
     plantuml|uml) {
         cd "$dn"
-        # ni cr plantuml
-        if yn "ascii?"; then
+        # ni pen-cr plantuml
+        if pen-yn "ascii?"; then
             cat "$rp" | plantuml | v
         else
             cat "$rp" | plantuml -w -svg | pen-tf svg | pen-xa win ie
@@ -2207,8 +2177,8 @@ case "$file_type" in
         ln -s "$rp" "${mant}.ts"
 
         tsc "${mant}.ts"
-        yn "Start vd?" && vd "${mant}.ts" "${mant}.js"
-        yn "Run?" && ts-node "${mant}.ts"
+        pen-yn "Start vd?" && vd "${mant}.ts" "${mant}.js"
+        pen-yn "Run?" && ts-node "${mant}.ts"
         exit 0
     }
     ;;
@@ -2261,7 +2231,7 @@ case "$file_type" in
         cd "$td_cr"
         scribble --pdf "$rp"
         scribble --html "$rp"
-        if test -f "${mant}.html" && yn "eww?"; then
+        if test -f "${mant}.html" && pen-yn "eww?"; then
             eww "${mant}.html"
         else
             cd_ls "$cd_cr"
@@ -2385,7 +2355,7 @@ case "$file_type" in
             ;;
 
             edit) {
-                vim +/"yml|yaml|prompt" "$SCRIPTS/cr"
+                vim +/"yml|yaml|prompt" "$SCRIPTS/pen-cr"
             }
             ;;
 
@@ -2409,7 +2379,7 @@ case "$file_type" in
             ;;
 
             edit) {
-                vim +/"yml|yaml" "$SCRIPTS/cr"
+                vim +/"yml|yaml" "$SCRIPTS/pen-cr"
             }
             ;;
 
