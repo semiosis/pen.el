@@ -103,7 +103,7 @@ if ! test -f "$1" && test "$1" = "-e"; then
     if test "$USE_NVC" = "y"; then
         set -- -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(ignore-errors (disable-theme 'spacemacs-dark))$extra_lisp)"
     else
-        set -- -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t)$extra_lisp)"
+        set -- -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(pen-set-faces)$extra_lisp)"
     fi
 fi
 
@@ -114,12 +114,6 @@ export PEN_NO_TM
 export PEN_USE_GUI
 
 marker="🖊"
-
-if test "$INTERACTIVE" = "y"; then
-    last_arg="${@: -1}"
-    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
-    set -- "$@" "(progn (pen-set-faces) $lastarg)"
-fi
 
 unset INTERACTIVE
 # Frusratingly there is an issue with pen-x and drawing the Pen.el emacs.
