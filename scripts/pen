@@ -1770,12 +1770,12 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         fi
     fi
 
-    test -d "dni" && : "${PEN_dni_DIR:="dni"}"
+    test -d "dni" && : "${PEN_DNI_DIR:="dni"}"
 
     if ! test "$batch" = "y"; then
-        if test -d "$METAVERSES_DIR"; then
+        if test -d "$PEN_METAVERSES_DIR"; then
             yn "Pull metaverses repo? (recommended)" && (
-                cd "$METAVERSES_DIR"
+                cd "$PEN_METAVERSES_DIR"
                 git pull origin master
             )
         else
