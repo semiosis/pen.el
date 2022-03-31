@@ -1785,7 +1785,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
         fi
     fi
 
-    test -d "metaverses" && : "${METAVERSES_DIR:="metaverses"}"
+    test -d "metaverses" && : "${PEN_METAVERSES_DIR:="metaverses"}"
 
     if ! test "$batch" = "y"; then
         test -d "$PENEL_DIR" && yn "Pull pen.el repo? (recommended)" && (
