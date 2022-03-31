@@ -66,7 +66,9 @@ export PEN_ENGINE
 
 PEN_ENGINE_ELISP="$PEN_ENGINE"
 
-if test -n "$PEN_ENGINE"; then
+if test "$PEN_ENGINE" = nil; then
+    PEN_ENGINE_ELISP=nil
+elif test -n "$PEN_ENGINE"; then
     PEN_ENGINE_ELISP="\"$PEN_ENGINE\""
 else
     PEN_ENGINE_ELISP=nil
