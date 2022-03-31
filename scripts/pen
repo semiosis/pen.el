@@ -2034,11 +2034,18 @@ HEREDOC
             exit 1
         fi
 
-        # This messed with cterm
-        # if test "$INTERACTIVE" = "y"; then
-        #     elisp="$@"
-        #     set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (max-generated-tokens $PEN_MAX_GENERATED_TOKENS) (force-temperature $PEN_TEMPERATURE) (force-stop-sequence $PEN_STOP_SEQUENCE)) $elisp)"
-        # fi
+        # This breaks cterm, but is needed for looking glass
+        if test "$INTERACTIVE" = "y"; then
+            if test "$1" = -e; then
+                shift
+                elisp="$@"
+                set -- -e "$@"
+            else
+                elisp="$@"
+            fi
+            
+            set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (max-generated-tokens $PEN_MAX_GENERATED_TOKENS) (force-temperature $PEN_TEMPERATURE) (force-stop-sequence $PEN_STOP_SEQUENCE)) $elisp)"
+        fi
 
         # Test quotes:
         # pena --temp 0.9 -u pf-very-witty-pick-up-lines-for-a-topic/1 "new \"zealand" | jq-list-to-lines
