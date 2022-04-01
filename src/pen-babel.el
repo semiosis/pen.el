@@ -348,7 +348,6 @@ block."
       (completing-read "Code Block: " (org-babel-src-block-names))))
     (org-babel-execute-src-block-maybe)))
 
-
 (defun org-edit-special-around-advice (proc &rest args)
   ;; (message "org-edit-special called with args %S" args)
   (let ((res (apply proc args)))

@@ -143,7 +143,10 @@
 (require 'pen-continuum)
 (require 'pen-ranger)
 (require 'pen-org-man)
-(require 'pen-babel)
+(if (inside-docker-p)
+    (progn
+      (require 'pen-babel)
+      (require 'pen-hydra-org)))
 (require 'pen-lists)
 (require 'pen-projectile)
 (require 'pen-magit)

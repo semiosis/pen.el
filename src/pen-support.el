@@ -1069,6 +1069,11 @@ region-active-p does not work for evil selection."
         sel
       (str sel))))
 
+(defun pen-delete-selected-text ()
+       (interactive)
+       (delete-region (region-beginning) (region-end))
+       (deactivate-mark))
+
 ;; TODO collect from tmux instead
 ;; Should I start a tmux in the background and
 ;; connect to the buffer? Or always have tmux?
