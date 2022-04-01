@@ -77,7 +77,7 @@ Be mindful of quoting arguments correctly."
 (defalias 'ewhich 'edit-fp-on-path)
 (defalias 'ew 'edit-fp-on-path)
 
-(defmacro bp (&rest body)
+(defmacro pen-bp (&rest body)
   "Pipe string into bash command. Return stdout."
   `(pen-sn (concat (quote-args ,@(butlast body))) ,@(last body)))
 
@@ -271,12 +271,12 @@ Be mindful of quoting arguments correctly."
 
 (defmacro bds (stdin &rest body)
   "Save to named file on disk. (ds value key)"
-  `(bp ds ,@body ,stdin))
+  `(pen-bp pen-ds ,@body ,stdin))
 (defalias 'ds 'bds)
 
 (defmacro jq (stdin &rest body)
   "Save to named file on disk."
-  `(bp jq ,@body ,stdin))
+  `(pen-bp jq ,@body ,stdin))
 
 (defun bgs (name)
   "Get value back from named file."
@@ -463,7 +463,7 @@ Be mindful of quoting arguments correctly."
 
 (defun eww-list-history ()
   (interactive)
-  (let ((l (bp uniqnosort (pen-sed "s/^.*cache://"
+  (let ((l (pen-bp uniqnosort (pen-sed "s/^.*cache://"
                                    (pen-cl-sn "uq -l | tac" :stdin (pen-list2str (hg "eww-display-html"))
                                       ;; (pen-sed "s/^.*cache://" (pen-list2str (hg "eww-display-html")))
                                               :chomp t)))))
