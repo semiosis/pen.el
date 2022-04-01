@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+message="$@"
+: ${message:="Enter query"}
+
+read -p "$message: " line && echo "$line"
