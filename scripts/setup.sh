@@ -699,6 +699,13 @@ test -f $REPOS/ddgr/ddgr || (
     make
 )
 
+test -d $REPOS/gh-dash || (
+    cd "$REPOS"
+    git clone "https://github.com/dlvhdr/gh-dash"
+    cd gh-dash
+    go get -u github.com/dlvhdr/gh-dash
+)
+
 # Haskell: - gcup, cabal, hls
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 # =gcup tui= to configure
