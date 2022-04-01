@@ -1,4 +1,7 @@
 #!/bin/bash
 export TTY
 
-pen-tm -sout -vipe -S sps "ask-line" | cat
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+pen-tm -sout -vipe -S sps "ask-line $CMD" | cat
