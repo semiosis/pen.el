@@ -456,5 +456,23 @@ block."
     (org-babel-eval (concat "awk -f " (org-babel-process-file-name in-file)) "")
     nil))
 
+(defun org-copy-src-block ()
+  (interactive)
+  (shut-up (xc (org-get-src-block-here))))
+
+(defun org-get-src-block-here ()
+  (interactive)
+  (org-edit-src-code)
+  (mark-whole-buffer)
+  (let ((contents (chomp (pen-selection))))
+    (org-edit-src-abort)
+    contents))
+
+(defun org-copy-thing-here ()
+  (interactive)
+  (if (or (org-in-src-block-p)
+          (org-in-block-p '("src" "example" "verbatim" "clocktable" "example")))
+      (org-copy-src-block)
+    (self-insert-command 1)))
 
 (provide 'pen-babel)

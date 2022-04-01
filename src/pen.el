@@ -143,6 +143,7 @@
 (require 'pen-continuum)
 (require 'pen-ranger)
 (require 'pen-org-man)
+(require 'pen-babel)
 (require 'pen-lists)
 (require 'pen-projectile)
 (require 'pen-magit)
