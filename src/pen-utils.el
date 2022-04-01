@@ -100,4 +100,13 @@
         (if prev-file (find-file prev-file) (message "%s" "Cannot move further")))
     (message "%s" "No current file name")))
 
+(defun cat-to-file (stdin file_path)
+  ;; The ignore-errors is needed for babel for some reason
+  (ignore-errors (with-temp-buffer
+                   (insert stdin)
+                   (delete-file file_path)
+                   (write-file file_path))))
+(defalias 'write-string-to-file 'cat-to-file)
+(defalias 'write-to-file 'cat-to-file)
+
 (provide 'pen-utils)
