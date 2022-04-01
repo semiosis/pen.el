@@ -247,21 +247,21 @@ block."
                  (default-directory
                    (or (and dir (file-name-as-directory (expand-file-name dir)))
                        default-directory))
-                 (pen-cmd (intern (concat "org-babel-execute:" lang)))
+                 (c (intern (concat "org-babel-execute:" lang)))
                  result)
             (if (and (not arg) (or interpreter filter))
-                (setq cmd 'org-babel-execute:generic))
-            (unless (fboundp cmd)
+                (setq c 'org-babel-execute:generic))
+            (unless (fboundp c)
               (error "No org-babel-execute function for %s!" lang))
             (message "executing %s code block%s..."
                      (capitalize lang)
                      (let ((name (nth 4 info)))
                        (if name (format " (%s)" name) "")))
             (if (member "none" result-params)
-                (progn (funcall cmd body params)
+                (progn (funcall c body params)
                        (message "result silenced"))
               (setq result
-                    (let ((r (funcall cmd body params)))
+                    (let ((r (funcall c body params)))
                       (if (and (eq (cdr (assq :result-type params)) 'value)
                                (or (member "vector" result-params)
                                    (member "table" result-params))
@@ -324,8 +324,6 @@ block."
       (re-search-backward "[^[:space:]]")
       (call-interactively 'move-end-of-line))))
 
-
-
 (defun org-babel-change-block-type ()
   (interactive)
   (cond ((or (org-in-src-block-p)
@@ -355,7 +353,6 @@ block."
     ;; (message "org-edit-special returned %S" res)
     res))
 (advice-add 'org-edit-special :around #'org-edit-special-around-advice)
-
 
 (defun org-babel-add-src-args ()
   (interactive)
@@ -443,7 +440,6 @@ block."
    ((derived-mode-p 'eww-mode)
     (read-string-hist (concat "egr " query " lang: ")))
    (t (buffer-language))))
-
 
 ;; Use generic instead of this in templates
 (defun org-babel-execute:awk (body params)
