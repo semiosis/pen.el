@@ -966,8 +966,23 @@ fun! GeneralSyntax()
     syntax match diffRemove "<\{7\} "
     syntax match textunderlinemod "=\@<!=\{7\}\( \|$\)"
     syntax match diffAdd ">\{7\} "
-    hi blue ctermfg=063 ctermbg=019
-    syntax match blue "\<blue\>"
+    hi red ctermfg=160 ctermbg=088
+    syntax match red "\<red\>"
+    hi blue ctermfg=075 ctermbg=027
+    syntax match blue "\c\<blue\>"
+    hi green ctermfg=082 ctermbg=034
+    syntax match green "\c\<green\>"
+    hi yellow ctermfg=226 ctermbg=142
+    syntax match yellow "\c\<yellow\>"
+    hi purple cterm=NONE ctermfg=165 ctermbg=093
+    syntax match purple "\c\<purple\>"
+    hi orange cterm=NONE ctermfg=216 ctermbg=166
+    syntax match orange "\c\<orange\>"
+    " teal is the dark cyan
+    hi teal cterm=NONE ctermfg=030 ctermbg=024
+    syntax match teal "\c\<teal\>"
+    hi cyan cterm=NONE ctermfg=123 ctermbg=045
+    syntax match cyan "\c\<cyan\>"
     syntax match blue "\<Enh\>"
     hi haskellop ctermfg=130 ctermbg=250
     syntax match haskellop "\((| \)\@<=[^ ]\+\( [A-Za-z -/[\]]\+ |)\)\@="
