@@ -672,7 +672,7 @@ We don't extract the string that `lps-line' is already displaying."
 ;; error list
 (defun pen-lsp-error-list (&optional path)
   (interactive (list (get-path)))
-  (let ((lambda))
+  (let ((l))
     (maphash (lambda (file diagnostic)
                (if (string-equal path file)
                    (dolist (diag diagnostic)

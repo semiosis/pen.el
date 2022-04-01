@@ -96,7 +96,7 @@
 
       ;; It would be nice to find the approximate length of each column, but who cares for the moment
 
-      (setq-local tabulated-list-entries (-map (lambda (lambda) (list (first l) (list2vec l))) data))
+      (setq-local tabulated-list-entries (-map (lambda (l) (list (first l) (list2vec l))) data))
 
       (tabulated-list-mode)
 
