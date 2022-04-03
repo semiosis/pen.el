@@ -95,6 +95,19 @@ of exiting.  This function is otherwise like `ivy-done'."
        `(ivy-quit-and-run
           (pen-term-sps ,c))))))
 
+(defun ivy-scroll-up ()
+  (interactive)
+  (dotimes (_n 8)
+    (call-interactively 'ivy-previous-line-or-history)))
+
+(defun ivy-scroll-down ()
+  (interactive)
+  (dotimes (_n 8)
+    (call-interactively 'ivy-next-line-or-history)))
+
+(define-key ivy-minibuffer-map (kbd "<next>") 'ivy-scroll-down)
+(define-key ivy-minibuffer-map (kbd "<prior>") 'ivy-scroll-up)
+
 (define-key ivy-minibuffer-map (kbd "M-c") 'pen-ivy-copy-selection)
 (define-key ivy-minibuffer-map (kbd "M-v") 'pen-ivy-open-selection-in-vim)
 (define-key ivy-minibuffer-map (kbd "M-D") 'send-m-del)

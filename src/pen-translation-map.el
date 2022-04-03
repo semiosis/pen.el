@@ -12,6 +12,9 @@
 ;; C-x right
 (define-key key-translation-map (kbd "C-M-x") (kbd "C-x"))
 
+(define-key key-translation-map (kbd "C-M-p") (kbd "<prior>"))
+(define-key key-translation-map (kbd "C-M-n") (kbd "<next>"))
+
 (define-key key-translation-map (kbd "<f49>") (kbd "<M-f1>"))
 (define-key key-translation-map (kbd "<f50>") (kbd "<M-f2>"))
 (define-key key-translation-map (kbd "<f51>") (kbd "<M-f3>"))
