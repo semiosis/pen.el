@@ -19,7 +19,7 @@ n  ghci -norc
 N  sp -sh ghci -norc
 f  ghci -full
 F  sp -sh ghci -full
-P  sp-ghci $MYGIT/mullikine/haskell-playground
+P  sp-ghci $REPOS/haskell-playground
 HEREDOC
 
 echo "$0" | udl | pen-hls green
@@ -32,14 +32,14 @@ case "$d" in
     .) cmd="v $0" ;;
     # ghci no longer exists globally
     # k) cmd="cd $NOTES; ghci" ;;
-    k) cmd="cd $MYGIT/mullikine/haskell-playground/scratch; ghci" ;;
+    k) cmd="cd $REPOS/haskell-playground/scratch; ghci" ;;
     p) cmd="cd $NOTES; haskell-playground" ;;
     K) cmd="cd $NOTES; sp -sh ghci" ;;
     n) cmd="cd $NOTES; ghcin" ;;
     N) cmd="cd $NOTES; sp -sh ghcin" ;;
     f) cmd="cd $NOTES; ghci -full" ;;
     F) cmd="cd $NOTES; sp -sh ghci -full" ;;
-    P) cmd="sp-ghci $MYGIT/mullikine/haskell-playground" ;;
+    P) cmd="sp-ghci $REPOS/haskell-playground" ;;
 esac
 echo
 echo "$cmd" | pen-hls nearblack

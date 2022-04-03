@@ -74,7 +74,7 @@ case "$d" in
     2) cmd="nvt tclsh" ;;
     p) cmd="xpti3" ;;
     k) cmd="nvt ghci" ;;
-    K) cmd="sp-ghci $MYGIT/mullikine/haskell-playground" ;;
+    K) cmd="sp-ghci $REPOS/haskell-playground" ;;
     T) cmd="xs turtle" ;;
     f) cmd="fish" ;;
     F) cmd="mathics" ;;
