@@ -154,7 +154,8 @@
         (call-interactively f)
       (message "could infer repl"))))
 
-(define-key dired-mode-map (kbd "M-v") 'dired-view-file-v)
+(define-key dired-mode-map (kbd "v") 'dired-view-file-v)
+(define-key dired-mode-map (kbd "M-v") 'dired-view-file)
 (define-key dired-mode-map (kbd "M-1") 'dired-view-file-scope)
 (define-key dired-mode-map (kbd "M-V") 'dired-view-file-vs)
 (define-key dired-mode-map (kbd "h") 'dired-eranger-up)

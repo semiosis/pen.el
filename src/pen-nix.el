@@ -394,12 +394,16 @@ Be mindful of quoting arguments correctly."
 (defun open-in-vim ()
   "Opens v in current window for buffer contents"
   (interactive)
-  (pen-tmux-edit "v" "cw"))
+  (if (pen-display-p)
+      (open-in-vim-in-term)
+    (pen-tmux-edit "v" "cw")))
 
 (defun open-in-vs-for-copying ()
   "Opens v in current window for buffer contents"
   (interactive)
-  (pen-tmux-edit "vs" "cw"))
+  (if (pen-display-p)
+      (open-in-vim-in-term)
+    (pen-tmux-edit "vs" "cw")))
 
 (defun open-in-vim-in-term ()
   "Opens v in current window for buffer contents"

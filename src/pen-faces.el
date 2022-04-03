@@ -73,8 +73,20 @@ argument, prompt for a regular expression using `read-regexp'."
 
 (require 'flyspell)
 
+(defun org-set-heading-height-1 ()
+  (interactive)
+  (set-face-attribute 'org-document-title nil :height 1.0)
+  (set-face-attribute 'org-level-1 nil :height 1.0)
+  (set-face-attribute 'org-level-2 nil :height 1.0)
+  (set-face-attribute 'org-level-3 nil :height 1.0)
+  (set-face-attribute 'org-scheduled-today nil :height 1.0)
+  (set-face-attribute 'org-agenda-date-today nil :height 1.1)
+  (set-face-attribute 'org-table nil :foreground "#008787"))
+
 (defun pen-set-faces ()
   (interactive)
+
+  (org-set-heading-height-1)
 
   ;; I must ignore errors for everything or the frame wont even start for daemons
   ;; Be careful
