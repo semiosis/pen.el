@@ -99,9 +99,11 @@ care."
                 (puthash args
                          (run-at-time timeout-to-use nil
                                       (lambda ()
+                                        (remhash args ,table)
                                         ;; It would probably be better to alert and ignore
-                                        (try (remhash args ,table)
-                                             (message ,(concat "timer for memoized " funcslug " failed"))))) ,timeouts)))))))))
+                                        ;; (try (remhash args ,table)
+                                        ;;      (message ,(concat "timer for memoized " funcslug " failed")))
+                                        )) ,timeouts)))))))))
 
 (defun ignore-errors-around-advice (proc &rest args)
   (ignore-errors
