@@ -13,6 +13,8 @@
 (defun pen-cua-scroll-down ()
   (interactive)
   (cond
+   ((minor-mode-p helm--minor-mode)
+    (call-interactively 'helm-previous-line))
    ((major-mode-p 'minibuffer-inactive-mode)
     (call-interactively 'ivy-scroll-up))
    (t (call-interactively 'cua-scroll-down))))
@@ -20,6 +22,8 @@
 (defun pen-cua-scroll-up ()
   (interactive)
   (cond
+   ((minor-mode-p helm--minor-mode)
+    (call-interactively 'helm-next-line))
    ((major-mode-p 'minibuffer-inactive-mode)
     (call-interactively 'ivy-scroll-down))
    (t (call-interactively 'cua-scroll-up))))
