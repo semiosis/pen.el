@@ -35,7 +35,7 @@ if test -d ~/.pen/dotfiles; then
     fi
 
     for fp in ~/.pen/dotfiles/*; do
-        ln -lf "$fp" ~/
+        ln -sf "$fp" ~/
     done
 fi
 
