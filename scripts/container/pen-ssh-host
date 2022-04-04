@@ -1,0 +1,60 @@
+#!/bin/bash
+export TTY
+
+# This script *could* be symlinked to to provide host analogs
+
+is_tty() { [ -t 1 ]; }
+
+if is_tty; then
+    export USE_TTY=y
+fi
+
+sn="$(basename "$0")"
+
+: "${VERBOSE:="n"}"
+: "${QUIET:="y"}"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -q) {
+        QUIET=y
+        shift
+    }
+    ;;
+
+    -nq) {
+        QUIET=n
+        shift
+    }
+    ;;
+
+    -v) {
+        VERBOSE=y
+        shift
+    }
+    ;;
+
+    -nv) {
+        VERBOSE=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export QUIET
+export VERBOSE
+
+case "$sn" in
+    pen-ssh-host) {
+        pen-cterm-ssh -ssh-to-host y -ssh "$@"
+    }
+    ;;
+
+    *) {
+        : "${USE_PROFILE:="n"}"
+        export USE_PROFILE
+        pen-cterm-ssh -ssh-to-host y -ssh "$sn" "$@"
+    }
+    ;;
+esac

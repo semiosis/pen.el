@@ -1,11 +1,30 @@
 #!/bin/bash
 export TTY
 
+unset CWD
+
+sshargs=()
+: "${USE_TTY:="y"}"
+: "${USE_PROFILE:="y"}"
+: "${QUIET:="y"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -ssh) {
         SSH_TO_HOST=y
         shift
+
+        # All arguments that proceed -ssh should be captured and used
+        # as arguments to ssh
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -*) {
+                sshargs=( "$opt" "${sshargs[@]}" )
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
     }
     ;;
 
@@ -19,6 +38,42 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -cwd) {
         CWD="$2"
         shift
+        shift
+    }
+    ;;
+
+    -t) {
+        USE_TTY=y
+        shift
+    }
+    ;;
+
+    -q) {
+        QUIET=y
+        shift
+    }
+    ;;
+
+    -v) {
+        VERBOSE=y
+        shift
+    }
+    ;;
+
+    -p) {
+        USE_PROFILE=y
+        shift
+    }
+    ;;
+
+    -np) {
+        USE_PROFILE=n
+        shift
+    }
+    ;;
+
+    -nt) {
+        USE_TTY=n
         shift
     }
     ;;
@@ -46,13 +101,23 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if test "$USE_TTY" = "y"; then
+    sshargs=( -t "${sshargs[@]}" )
+fi
+
+if test "$QUIET" = "y"; then
+    sshargs=( -q "${sshargs[@]}" )
+fi
+
+if test "$VERBOSE" = "y"; then
+    sshargs=( -vvv "${sshargs[@]}" )
+fi
+
 if test "$DO_EXEC" = "y"; then
     CMD="$1"
 else
     : ${CMD:="$(cmd-nice-posix "$@")"}
 fi
-
-: ${CWD:="$(pwd)"}
 
 if test "$SSH_TO_HOST" = y && inside-docker-p; then
     if test -n ~/pen_user.txt; then
@@ -72,17 +137,45 @@ hn="$(p "$hn" | sed 's/^pen-//')"
 # I can remove these statements without too much trouble, but some programs such as vim don't like it.
 # If I log into a remote server while using cterm/pet then eterm-256color will cause problems.
 
+# TODO Do not necessarily source profile
+# To make commands faster
+
+SETUP="export TERM=screen-256color;"
+
+: ${CWD:="$(pwd)"}
+
+if test -n "$SSH_EXPORTS"; then
+    SETUP="export $SSH_EXPORTS;$SETUP"
+fi
+
+if test "$VERBOSE" = "y"; then
+    set -xv
+fi
+
 if test "$SSH_TO_HOST" = "y"; then
+    if test "$USE_PROFILE" = "y"; then
+        SETUP=". ~/.profile; $SETUP"
+    fi
+    
+    CWD="$(printf -- "%s" "$CWD" | sed 's=^/volumes==')"
+    CWD="$(printf -- "%s" "$CWD" | sed 's=^/root/.emacs.d/host=$HOME/.emacs.d=')"
+    CWD="$(printf -- "%s" "$CWD" | sed 's=^/root=$HOME=')"
+    SETUP="cd $(cmd-nice-posix "$CWD"); $SETUP"
+
+    if test "$SSH_HOST_CHOWN" = "y" && test -n "$PEN_USER"; then
+        SETUP="cd $(cmd-nice-posix "$CWD"); sudo chown -R $PEN_USER:$PEN_USER .;$SETUP"
+    fi
+
     ssh \
-        -q \
         -i "~/.pen/host_key" \
         -o ControlMaster=auto \
         -o ControlPath="~/ssh-controlpath-%r@%h:%p" \
         -o UserKnownHostsFile=/dev/null \
         -o StrictHostKeyChecking=no \
-        -t $PEN_USER@$hn \
-        "bash -l -c $(cmd-nice-posix ". ~/.profile; export TERM=screen-256color; cd $(cmd-nice-posix "$CWD"); $CMD")"
+        "${sshargs[@]}" \
+         $PEN_USER@$hn \
+        "bash -l -c $(cmd-nice-posix "$SETUP $CMD")"
 else
     cd "$CWD"
-    eval "export TERM=screen-256color; $CMD"
+    eval "$SETUP $CMD"
 fi

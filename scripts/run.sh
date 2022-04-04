@@ -73,6 +73,10 @@ fi
 # Actually, just use http
 # setup-ssh.sh
 
+if pen-rc-test host-ssh-master; then
+    pen-cterm-ssh -ssh -M pwd
+fi
+
 # This creates the initial frame
 
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null

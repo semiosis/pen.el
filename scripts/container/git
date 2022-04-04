@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# This will use the host git to run git commands, if ssh to host is available
+
+# It's important to disable tty for git. less will still function
+export USE_TTY=n
+export SSH_HOST_CHOWN=y
+export USE_PROFILE=n
+export SSH_EXPORTS="GIT_PAGER=less"
+pen-ssh-host git "$@"
