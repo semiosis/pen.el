@@ -141,13 +141,13 @@ case "$vc_opt" in
         shift
 
         set -x
-        ds -d push_output
+        pen-ds -d push_output
         if test "$FORCE" = "y"; then
-            cmdx git push -f "$remote" "$branch_name" | tee >(ds push_output)
+            cmdx git push -f "$remote" "$branch_name" | tee >(pen-ds push_output)
         else
-            cmdx git push "$remote" "$branch_name" | tee >(ds push_output)
+            cmdx git push "$remote" "$branch_name" | tee >(pen-ds push_output)
         fi
-        new_pr_url="$(gs push_output | xurls | grep /pull/new/)"
+        new_pr_url="$(pen-gs push_output | xurls | grep /pull/new/)"
 
         if test -n "$new_pr_url"; then
             echo "$new_pr_url" | xc -n -i
