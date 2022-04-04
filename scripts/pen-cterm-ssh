@@ -7,6 +7,7 @@ sshargs=()
 : "${USE_TTY:="y"}"
 : "${USE_PROFILE:="y"}"
 : "${QUIET:="y"}"
+: "${SSH_HOST_ALLOWED:="y"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -ssh) {
@@ -152,7 +153,7 @@ if test "$VERBOSE" = "y"; then
     set -xv
 fi
 
-if test "$SSH_TO_HOST" = "y"; then
+if test "$SSH_TO_HOST" = "y" && test "$SSH_HOST_ALLOWED" = y; then
     if test "$USE_PROFILE" = "y"; then
         SETUP=". ~/.profile; $SETUP"
     fi

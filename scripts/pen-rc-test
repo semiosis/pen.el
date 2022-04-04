@@ -26,6 +26,6 @@ jkey=".$key"
 if test "$FAST" = "n"; then
     test -n "$key" && test "$(pen-rc "$jkey")" = true
 else
-    value="$(sed -n "/^$key: \([^ ]\+\)$/{s/^\($key: \)\(.*\)$/\2/p;q}" $NOTES/myrc.yaml)"
+    value="$(sed -n "/^$key: \([^ ]\+\)$/{s/^\($key: \)\(.*\)$/\2/p;q}" ~/.pen/pen.yaml)"
     test "$value" = on
 fi
