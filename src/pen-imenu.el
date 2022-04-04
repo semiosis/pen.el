@@ -280,6 +280,8 @@
 (add-hook 'Info-mode-hook (lambda () (setq-local imenu-create-index-function #'info-collect-imenu)))
 (remove-hook 'Info-mode-hook (lambda () (setq-local imenu-create-index-function #'info-collect-imenu)))
 
+(advice-add 'imenu-list-update :around #'ignore-errors-around-advice)
+
 (define-key global-map (kbd "H-L") 'pen-toggle-show-imenu-list)
 (define-key imenu-list-major-mode-map (kbd "n") 'imenu-preview-next)
 (define-key imenu-list-major-mode-map (kbd "p") 'imenu-preview-prev)

@@ -7,6 +7,7 @@
           (equal bn "*Warnings*")
           ;; more - these should be killed automatically
           ;; (equal bn "*pen-sn-stderr*")
+          ;; (equal bn "*Helm Completions*")
           ;; (equal bn "*Ilist*")
           ;; (equal bn "*straight-process*")
           ;; (equal bn "*straight-byte-compilation*")
