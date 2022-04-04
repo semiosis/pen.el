@@ -163,7 +163,8 @@ if test "$SSH_TO_HOST" = "y"; then
     SETUP="cd $(cmd-nice-posix "$CWD"); $SETUP"
 
     if test "$SSH_HOST_CHOWN" = "y" && test -n "$PEN_USER"; then
-        SETUP="cd $(cmd-nice-posix "$CWD"); is-git && sudo chown -R $PEN_USER:$PEN_USER .;$SETUP"
+        # If is git then chown
+        SETUP="cd $(cmd-nice-posix "$CWD"); [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1 && sudo chown -R $PEN_USER:$PEN_USER .;$SETUP"
     fi
 
     ssh \
