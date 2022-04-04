@@ -27,6 +27,18 @@ if test -d ~/.pen/documents/notes; then
     ln -sf ~/.pen/documents/notes ~/
 fi
 
+if test -d ~/.pen/dotfiles; then
+    mkdir -p ~/.pen/dotfiles
+    rm_fp=~/.pen/dotfiles/README
+    if ! test -f "$rm_fp"; then
+        echo "Place dotfile hardlinks or directories in this directory to replicate them in the container."
+    fi
+
+    for fp in ~/.pen/dotfiles/*; do
+        ln -lf "$fp" ~/
+    done
+fi
+
 if test -d ~/.emacs.d/host/pen.el/config; then
     ln -sf ~/.emacs.d/host/pen.el/config/zsh/zsh_aliases ~/.zsh_aliases
     ln -sf ~/.emacs.d/host/pen.el/config/zsh/zshenv ~/.zshenv
