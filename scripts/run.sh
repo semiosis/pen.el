@@ -34,7 +34,7 @@ if test -d ~/.pen/dotfiles; then
         echo "Place dotfile hardlinks or directories in this directory to replicate them in the container."
     fi
 
-    for fp in ~/.pen/dotfiles/*; do
+    for fp in ~/.pen/dotfiles/.* ~/.pen/dotfiles/*; do
         ln -sf "$fp" ~/
     done
 fi
