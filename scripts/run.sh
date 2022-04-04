@@ -69,6 +69,10 @@ if test -f $HOME/.emacs.d/host/pen.el/config/tmux.conf; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/tmux.conf ~/.tmux.conf
 fi
 
+# Set up an ssh key for using git with github
+# Actually, just use http
+# setup-ssh.sh
+
 # This creates the initial frame
 
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null

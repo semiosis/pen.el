@@ -53,7 +53,17 @@ else
 fi
 
 : ${CWD:="$(pwd)"}
-: ${PEN_USER:="$(whoami)"}
+
+if test "$SSH_TO_HOST" = y && inside-docker-p; then
+    if test -n ~/pen_user.txt; then
+        PEN_USER="$(cat ~/pen_user.txt)"
+    fi
+
+    : ${PEN_USER:="$(pen-readln "host username")"}
+else
+    : ${USER:="$(whoami)"}
+    PEN_USER=$USER
+fi
 
 hn="$(hostname)"
 hn="$(p "$hn" | sed 's/^pen-//')"
@@ -64,6 +74,7 @@ hn="$(p "$hn" | sed 's/^pen-//')"
 
 if test "$SSH_TO_HOST" = "y"; then
     ssh \
+        -q \
         -i "~/.pen/host_key" \
         -o ControlMaster=auto \
         -o ControlPath="~/ssh-controlpath-%r@%h:%p" \
