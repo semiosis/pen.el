@@ -114,6 +114,7 @@
 (require 'pen-menu-bar)
 (require 'pen-daemons)
 (require 'pen-source)
+(require 'pen-man)
 (require 'pen-human)
 (require 'pen-cterm)
 (require 'pen-web)

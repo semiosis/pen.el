@@ -785,6 +785,19 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   "sn chomp"
   (chomp (pen-sn shell-cmd stdin dir)))
 
+(defmacro sh-notty-if (cm then else &rest sh-notty-args)
+  "Like an if statement with a first argument which specifies the command to run as the test"
+  `(let ((result (pen-sn ,cm ,@sh-notty-args)))
+     (if (string-equal b_exit_code "0")
+         ,then
+       ,else)))
+
+(defmacro sh-notty-true (cm &rest sh-notty-args)
+  "Returns t if the shell command exists with 0"
+  `(let ((result (pen-sn ,cm ,@sh-notty-args)))
+     (string-equal b_exit_code "0")))
+(defalias 'sn-true 'sh-notty-true)
+
 (defun pen-eval-string (string)
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))
