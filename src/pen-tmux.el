@@ -13,6 +13,7 @@ START and END can be in either order."
     (buffer-substring-of-visible
      (window-start cw)
      (window-end cw))))
+(defalias 'pen-screen-verbatim-text 'buffer-string-visible)
 
 (defun buffer-string-visible-points ()
   (let* ((cb (current-buffer))

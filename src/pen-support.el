@@ -1118,6 +1118,15 @@ region-active-p does not work for evil selection."
 (defun pen-screen-or-selection-ask ()
   (pen-ask (pen-screen-or-selection)))
 
+(defun pen-screen-verbatim-or-selection ()
+  (let ((sel (pen-selection)))
+    (if (sor sel)
+        sel
+      (pen-screen-verbatim-text))))
+
+(defun pen-screen-verbatim-or-selection-ask ()
+  (pen-ask (pen-screen-verbatim-or-selection)))
+
 (defun pen-selected-text-ignore-no-selection (&optional keep-properties)
   "Just give me the selected text as a string. If it's empty, then nothing was selected. region-active-p does not work for evil selection."
   (interactive)

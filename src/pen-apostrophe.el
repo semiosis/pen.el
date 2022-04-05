@@ -11,7 +11,7 @@
 (defun ihhgttg ()
   "`ihhgttg` stands for `Imaginary Hitchhiker's Guide To The Galaxy`"
   (interactive)
-  (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" blurb))))
+  (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" name "" final-blurb))))
     (pen-e-sps (pen-lm (pen-eval-string el)))))
 
 (defun pen-list-fictional-characters (&optional including)
@@ -48,7 +48,7 @@
     (if (not name)
         (setq name "Marco Polo"))
 
-    (let* ((blurb
+    (let* ((final-blurb
             (if auto
                 (car-maybe
                  (eval
@@ -66,12 +66,52 @@
                    (apostrophe-generate-blurb ,name)
                    ;; (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result nil)
                    )))
-               nil nil nil nil "Edit the blurb then save and quit this file."))))
+               nil nil nil nil "Edit the final-blurb then save and quit this file."))))
 
-      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
+      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" final-blurb))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
-(defun apostrophe-chat-about-selection (text)
+(defun apostrophe-chat-about-selection (text &optional expert blurb)
+  (interactive (list (str (pen-screen-or-selection))))
+
+  (let ((apostrophe-engine
+         (or (sor (pen-var-value-maybe 'force-engine)) "")))
+    (if (and (not (pen-inside-docker))
+             (not (pen-container-running)))
+        (progn
+          (pen-term-nsfa (pen-cmd "pen" "-n"))
+          (message "Starting Pen server")))
+
+    (if (not text)
+        (setq text (str (pen-screen-verbatim-or-selection-ask))))
+
+    (let* ((sme
+            (or expert
+                (eval
+                 `(pen-engine
+                   ,apostrophe-engine
+                   (pf-who-is-the-subject-matter-expert-for-/1 text)))))
+           (final-blurb
+            (or blurb
+                (eval
+                  `(pen-engine
+                    ,apostrophe-engine
+                    (apostrophe-generate-blurb sme)
+                    ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
+                    ))))
+           (final-blurb
+            (concat
+             final-blurb
+             ;; "<pen-newline>The topic of conversation is the following:<pen-newline>"
+             "\nThe topic of conversation is the following:\n"
+             text))
+
+           (final-blurb (pen-encode-string final-blurb)))
+
+      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" final-blurb))))
+        (pen-e-sps (pen-lm (pen-eval-string el)))))))
+
+(defun apostrophe-start-chatbot-from-selection (text &optional expert final-blurb)
   (interactive (list (str (pen-screen-or-selection))))
 
   (let ((apostrophe-engine
@@ -86,54 +126,21 @@
         (setq text (str (pen-screen-or-selection))))
 
     (let* ((sme
-            (eval
-             `(pen-engine
-               ,apostrophe-engine
-               (pf-who-is-the-subject-matter-expert-for-/1 text))))
-           (blurb
-            (pen-encode-string
-             (concat
-              (eval
-               `(pen-engine
-                 ,apostrophe-engine
-                 (apostrophe-generate-blurb sme)
-                 ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
-                 ))
-              ;; "<pen-newline>The topic of conversation is the following:<pen-newline>"
-              "\nThe topic of conversation is the following:\n"
-              text))))
+            (or expert
+                (eval
+                 `(pen-engine
+                   ,apostrophe-engine
+                   (pf-who-is-the-subject-matter-expert-for-/1 text)))))
+           (final-blurb
+            (or final-blurb
+                (eval
+                 `(pen-engine
+                   ,apostrophe-engine
+                   (apostrophe-generate-blurb sme)
+                   ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
+                   )))))
 
-      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" blurb))))
-        (pen-e-sps (pen-lm (pen-eval-string el)))))))
-
-(defun apostrophe-start-chatbot-from-selection (text)
-  (interactive (list (str (pen-screen-or-selection))))
-
-  (let ((apostrophe-engine
-         (or (sor (pen-var-value-maybe 'force-engine)) "")))
-    (if (and (not (pen-inside-docker))
-             (not (pen-container-running)))
-        (progn
-          (pen-term-nsfa (pen-cmd "pen" "-n"))
-          (message "Starting Pen server")))
-
-    (if (not text)
-        (setq text (str (pen-screen-or-selection))))
-
-    (let* ((sme
-            (eval
-             `(pen-engine
-               ,apostrophe-engine
-               (pf-who-is-the-subject-matter-expert-for-/1 text))))
-           (blurb
-            (eval
-             `(pen-engine
-               ,apostrophe-engine
-               (apostrophe-generate-blurb sme)
-               ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
-               ))))
-
-      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" blurb))))
+      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" final-blurb))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
 (defun apostrophe-a-conversation-broke-out-here (text)
@@ -199,15 +206,18 @@
               (message "Starting Pen server")))
 
         (let ((yaml (ht-get pen-incarnations name)))
-          (let* ((blurb (ht-get yaml "description")))
+          (let* ((final-blurb (ht-get yaml "description")))
 
-            (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
+            (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" final-blurb))))
               (pen-e-sps (pen-lm (pen-eval-string el)))))))))
 
 (defun guru ()
-  (insert )
-  (apostrophe-start-chatbot-from-selection)
-
-  )
+  (interactive)
+  (let* ((lang (pen-detect-language-ask))
+        (sme-name (concat lang " guru")))
+    (apostrophe-chat-about-selection
+     (pen-screen-verbatim-or-selection)
+     sme-name
+     (concat sme-name " is an expert in " lang))))
 
 (provide 'pen-apostrophe)
