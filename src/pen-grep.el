@@ -269,7 +269,7 @@ NEEDLE is the search string."
 (defun pen-sh-wgrep (pattern &optional wd)
   (interactive (list (read-string-hist "ead pattern: ")
                      (read-directory-name "ead dir: ")))
-  (e/nw (concat "set -x; cd " (pen-q wd) "; pen-ead " (pen-q (concat "\\b" pattern "\\b")) " || pak")))
+  (pen-nw (concat "set -x; cd " (pen-q wd) "; pen-ead " (pen-q (concat "\\b" pattern "\\b")) " || pak")))
 
 (defun pen-wgrep (pattern &optional wd path-re)
   (interactive (list (read-string-hist "ead pattern: ")

@@ -1092,8 +1092,15 @@ region-active-p does not work for evil selection."
 ;; TODO collect from tmux instead
 ;; Should I start a tmux in the background and
 ;; connect to the buffer? Or always have tmux?
-(defun pen-screen-text ()
+(defun pen-screen-words ()
   (pen-words 40 (pen-selection-or-surrounding-context 10))
+  ;; TODO Add tmux support - wouldn't work for GUI well though
+  ;; But in that case I would take screen shots with imagemagick
+  ;; (buffer-string)
+  )
+
+(defun pen-screen-text ()
+  (pen-selection-or-surrounding-context 10)
   ;; TODO Add tmux support - wouldn't work for GUI well though
   ;; But in that case I would take screen shots with imagemagick
   ;; (buffer-string)
@@ -1115,8 +1122,11 @@ region-active-p does not work for evil selection."
         sel
       (pen-screen-text))))
 
+(defun pen-screen-words-or-selection ()
+  (pen-words 40 (pen-screen-or-selection)))
+
 (defun pen-screen-or-selection-ask ()
-  (pen-ask (pen-screen-or-selection)))
+  (pen-ask (pen-screen-words-or-selection)))
 
 (defun pen-screen-verbatim-or-selection ()
   (let ((sel (pen-selection)))

@@ -72,7 +72,7 @@
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
 (defun apostrophe-chat-about-selection (text &optional expert blurb)
-  (interactive (list (str (pen-screen-or-selection))))
+  (interactive (list (str (pen-screen-verbatim-or-selection))))
 
   (let ((apostrophe-engine
          (or (sor (pen-var-value-maybe 'force-engine)) "")))
@@ -112,7 +112,7 @@
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
 (defun apostrophe-start-chatbot-from-selection (text &optional expert final-blurb)
-  (interactive (list (str (pen-screen-or-selection))))
+  (interactive (list (str (pen-screen-verbatim-or-selection))))
 
   (let ((apostrophe-engine
          (or (sor (pen-var-value-maybe 'force-engine)) "")))
@@ -123,7 +123,7 @@
           (message "Starting Pen server")))
 
     (if (not text)
-        (setq text (str (pen-screen-or-selection))))
+        (setq text (str (pen-screen-verbatim-or-selection))))
 
     (let* ((sme
             (or expert
@@ -153,7 +153,7 @@
         (message "Starting Pen server")))
 
   (if (not text)
-      (setq text (str (pen-screen-or-selection))))
+      (setq text (str (pen-screen-verbatim-or-selection))))
 
   (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" "" "" text))))
     ;; TODO Run multiple daemons and run tasks from a pool?
