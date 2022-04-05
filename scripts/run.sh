@@ -81,7 +81,7 @@ fi
 # setup-ssh.sh
 
 if pen-rc-test host-ssh-master; then
-    unbuffer pen-cterm-ssh -ssh -t -M sh &
+    unbuffer pen-cterm-ssh -ssh -t -M sh &>/dev/null &
 fi
 
 # This creates the initial frame
