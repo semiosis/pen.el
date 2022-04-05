@@ -10,4 +10,7 @@ export TTY
 
 # pen-ci -f -a penf -u -nj --pool pf-generic-completion-50-tokens/1
 
+# export EDITOR=sps-w-pin
+export EDITOR=pen-eipe
 pen-tvipe
+# pen-tvipe

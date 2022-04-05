@@ -11,6 +11,7 @@ export TTY
 # pen-ci -f -a penf -u -nj --pool correct-english-spelling-and-grammar-1
 # pen-ci -f -a penf -u -nj --pool pf-correct-the-syntax/2 code
 
-export EDITOR=sps-w-pin
-vipe
+# export EDITOR=sps-w-pin
+export EDITOR=pen-eipe
+pen-tvipe
 # pen-tvipe

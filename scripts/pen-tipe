@@ -61,13 +61,15 @@ export PEN_OVERLAY
 export PEN_PREOVERLAY
 export PEN_EIPE_DATA
 
-vipe_cmd="$1"
-
-if test "$USE_EMACS" = "y"; then
-    : "${vipe_cmd:="pen-eipe"}"
+if test "$#" = 1 && test -n "$1"; then
+    EDITOR="$1"
 fi
 
-: "${vipe_cmd:="vipe"}"
+if test "$USE_EMACS" = "y"; then
+    : "${EDITOR:="pen-eipe"}"
+fi
+
+: "${EDITOR:="vipe"}"
 
 # This is hanging for pen-eipe when emacs is started with run.sh
 # Therefore, pen-eipe is simply not finishing.
@@ -76,11 +78,11 @@ fi
 echo Waiting for output from promptee... | pen-hls purple 1>&2
 if pen-tm session-exists human; then
     echo Sending prompt to hidden terminal... | pen-hls red 1>&2
-    pen-tm -export "PEN_PROMPT PEN_HELP PEN_OVERLAY PEN_PREOVERLAY PEN_EIPE_DATA" -sout -vipe "$WINTYPE" -t human: "$vipe_cmd" | cat
+    pen-tm -export "PEN_PROMPT PEN_HELP PEN_OVERLAY PEN_PREOVERLAY PEN_EIPE_DATA" -sout -vipe "$WINTYPE" -t human: "$EDITOR" | cat
 else
-    pen-tm -export "PEN_PROMPT PEN_HELP PEN_OVERLAY PEN_PREOVERLAY PEN_EIPE_DATA" -sout -vipe "$WINTYPE" "$vipe_cmd" | cat
+    pen-tm -export "PEN_PROMPT PEN_HELP PEN_OVERLAY PEN_PREOVERLAY PEN_EIPE_DATA" -sout -vipe "$WINTYPE" "$EDITOR" | cat
 fi
 
-# pen-tm -w -sout -vipe spv "$vipe_cmd" | cat
+# pen-tm -w -sout -vipe spv "$EDITOR" | cat
 
 # echo end | pen-tv &>/dev/null
