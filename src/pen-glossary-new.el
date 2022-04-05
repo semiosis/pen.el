@@ -394,8 +394,9 @@ Use my position list code. Make it use rosie lang and external software."
         (let ((contents (match-string 0))
               (beg (match-beginning 0))
               (end (match-end 0)))
-          (if (or (get-text-property (+ 1 beg) 'shr-url)
-                  (get-text-property (+ 1 end) 'shr-url))
+          (if (ignore-errors
+                (or (get-text-property (+ 1 beg) 'shr-url)
+                    (get-text-property (+ 1 end) 'shr-url)))
               (setq end (+ 1 beg)))
           (make-button
            (if (string-match "^[ '.].*" contents)
