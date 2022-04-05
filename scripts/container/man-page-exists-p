@@ -2,7 +2,7 @@
 export TTY
 
 check_for_man_page () {
-    man "$1" > /dev/null 2>&1
+    /usr/bin/man "$1" > /dev/null 2>&1
 }
 
 check_for_man_page "$@"
