@@ -35,7 +35,10 @@ if test -d ~/.pen/dotfiles; then
     fi
 
     for fp in ~/.pen/dotfiles/.* ~/.pen/dotfiles/*; do
-        ln -sf "$fp" ~/
+        df_bn="$(basename "$fp")"
+        if ! test -e ~/"$df_bn"; then
+            ln -sf "$fp" ~/
+        fi
     done
 fi
 
