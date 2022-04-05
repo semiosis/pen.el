@@ -204,4 +204,10 @@
             (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" blurb))))
               (pen-e-sps (pen-lm (pen-eval-string el)))))))))
 
+(defun guru ()
+  (insert )
+  (apostrophe-start-chatbot-from-selection)
+
+  )
+
 (provide 'pen-apostrophe)
