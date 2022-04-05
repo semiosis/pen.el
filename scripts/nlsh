@@ -66,12 +66,14 @@ esac; done
 export USE_COMINT
 export USE_TERM
 
+: "${SHELL:="sh"}"
+
 if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; } && { test "$USE_COMINT" = y || test "$USE_TERM" = y; }; then
     if test "$USE_TERM" = y; then
         cterm-docker nlsh -term "$@"
-    elif test "$USE_COMINT"; then
+    elif test "$USE_COMINT" = y; then
         export NORL=y
-        pen sh nlsh -nt -norl "$@"
+        pen sh nlsh -nt -norl -shell "$SHELL" "$@"
     fi
     # pen sh nvc nlsh "$@"
     exit "$?"
@@ -87,11 +89,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -shell) {
+        SHELL="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 if test "$#" -eq 0 && test -f /etc/issue; then
-    os_or_lang="$(cat /etc/issue | sed 's/\\.*//' | chomp)"
+    os_or_lang="$(cat /etc/issue | sed 's/\\.*//' | chomp) ($(basename $SHELL))"
 elif test "$#" -eq 0; then
     os_or_lang="$(pen-readln "OS (and/or shell)")"
 else
@@ -116,7 +125,7 @@ case "$sn" in
 esac
 
 if test "$USE_COMINT" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
-    comint -p "$os_or_lang: " -E "nlsh $CMD"
+    comint -p "$os_or_lang: " -E "nlsh -shell $SHELL $CMD"
     exit $?
 fi
 

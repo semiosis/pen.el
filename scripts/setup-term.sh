@@ -35,3 +35,6 @@ export EDITOR=sps-w-pin
 export BROWSER=sps-lg
 
 [ -f "/root/.ghcup/env" ] && . "/root/.ghcup/env" # ghcup-env
+
+# Needed for nlsh
+export SHELL="$(basename $0)"
