@@ -168,6 +168,10 @@ if test "$SSH_TO_HOST" = "y" && test "$SSH_HOST_ALLOWED" = y; then
         SETUP="cd $(cmd-nice-posix "$CWD"); [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1 && sudo chown -R $PEN_USER:$PEN_USER .;$SETUP"
     fi
 
+    CMD="$(printf -- "%s" "$CMD" | sed 's=/volumes==')"
+    CMD="$(printf -- "%s" "$CMD" | sed 's=/root/.emacs.d/host=$HOME/.emacs.d=')"
+    CMD="$(printf -- "%s" "$CMD" | sed 's=/root=$HOME=')"
+
     ssh \
         -i "~/.pen/host_key" \
         -o ControlMaster=auto \
