@@ -31,23 +31,23 @@ tools:
     completion-command: 'POSITION=${POSITION} pen-lsp-complete'
     completion-stdin: true
 
-  pen-world-language-lint: &pen-world-language-lint
+  pen-world-language-lint-and-format: &pen-world-language-lint-and-format
     lint-debounce: 2s
-    lint-command: "pen-ci -f -a penf -u -nj --pool pf-generic-completion-50-tokens/1"
+    lint-command: "pen-prompt-lint"
     lint-stdin: true
     lint-offset: 1
     format-stdin: true
-    format-command: "pen-ci -f -a penf -u -nj --pool correct-english-spelling-and-grammar-1"
+    format-command: "pen-prompt-format"
 
-  pen-programming-language-lint: &pen-programming-language-lint
+  pen-programming-language-lint-and-format: &pen-programming-language-lint-and-format
     lint-debounce: 2s
     # TODO Figure out how to get the language into this script
     # I probably need to extend efm-langserver
-    lint-command: "pen-ci -f -a penf -u -nj --pool pf-generic-completion-50-tokens/1"
+    lint-command: "pen-prompt-lint"
     lint-stdin: true
     lint-offset: 1
     format-stdin: true
-    format-command: "pen-ci -f -a penf -u -nj --pool pf-correct-the-syntax/2 code"
+    format-command: "pen-prompt-format"
 
   glossary1: &glossary1
     # The impementation is a combination of documentation and hover
@@ -248,41 +248,41 @@ tools:
 
 languages:
   text:
-    - <<: *pen-world-language-lint
+    - <<: *pen-world-language-lint-and-format
     - <<: *pen-world-language-completion
     - <<: *glossary1
 
   global:
-    - <<: *pen-world-language-lint
+    - <<: *pen-world-language-lint-and-format
     - <<: *pen-world-language-completion
     - <<: *glossary1
 
   elisp:
-    - <<: *pen-world-language-lint
+    - <<: *pen-world-language-lint-and-format
     - <<: *pen-world-language-completion
     - <<: *glossary1-elisp
 
   org:
-    - <<: *pen-world-language-lint
+    - <<: *pen-world-language-lint-and-format
     - <<: *pen-world-language-completion
     - <<: *glossary1
 
   awk:
-    - <<: *pen-programming-language-lint
+    - <<: *pen-programming-language-lint-and-format
     - <<: *pen-programming-language-completion
     - <<: *glossary1
 
   eruby:
-    - <<: *pen-programming-language-lint
+    - <<: *pen-programming-language-lint-and-format
 
   vim:
-    - <<: *pen-programming-language-lint
+    - <<: *pen-programming-language-lint-and-format
 
   make:
-    - <<: *pen-programming-language-lint
+    - <<: *pen-programming-language-lint-and-format
 
   markdown:
-    - <<: *pen-programming-language-lint
+    - <<: *pen-programming-language-lint-and-format
     - <<: *markdown-pandoc
 
   rst:
