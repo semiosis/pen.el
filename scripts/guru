@@ -2,5 +2,6 @@
 export TTY
 
 # Guru takes the terminal contents and chats about it
+# pj:guru
 
 nlsh
