@@ -860,70 +860,71 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
        ((stringp item) "")
        (t "")))))
 
-(cl-defun cl-fz (listd &key prompt &key full-frame &key initial-input &key must-match &key select-only-match &key hist-var &key add-props &key no-hist)
-          (if (not
-               (or (not listd)
-                   (and (stringp listd)
-                        (not (sor listd)))))
+(cl-defun cl-fz (listd &key prompt &key full-frame &key initial-input &key must-match &key select-only-match &key hist-var &key add-props &key no-hist &key empty-hist-exit)
+  (if (not
+       (and (or (not listd)
+                (and (stringp listd)
+                     (not (sor listd))))
+            empty-hist-exit))
 
-              (progn
-                (setq select-only-match
-                      (or select-only-match
-                          (pen-var-value-maybe 'pen-select-only-match)))
+      (progn
+        (setq select-only-match
+              (or select-only-match
+                  (pen-var-value-maybe 'pen-select-only-match)))
 
-                (if no-hist
-                    (setq hist-var nil)
-                  (if (and (not hist-var)
-                           (sor prompt))
-                      (setq hist-var (intern (concat "histvar-fz-" (slugify prompt))))))
+        (if no-hist
+            (setq hist-var nil)
+          (if (and (not hist-var)
+                   (sor prompt))
+              (setq hist-var (intern (concat "histvar-fz-" (slugify prompt))))))
 
-                (setq prompt (sor prompt ":"))
+        (setq prompt (sor prompt ":"))
 
-                (if (not (string-match " $" prompt))
-                    (setq prompt (concat prompt " ")))
+        (if (not (string-match " $" prompt))
+            (setq prompt (concat prompt " ")))
 
-                (if (eq (type-of listd) 'symbol)
-                    (cond
-                     ((variable-p 'clojure-mode-funcs) (setq listd (eval listd)))
-                     ((fboundp 'clojure-mode-funcs) (setq listd (funcall listd)))))
+        (if (eq (type-of listd) 'symbol)
+            (cond
+              ((variable-p 'clojure-mode-funcs) (setq listd (eval listd)))
+              ((fboundp 'clojure-mode-funcs) (setq listd (funcall listd)))))
 
-                (if (stringp listd)
-                    (setq listd (split-string (chomp listd) "\n")))
+        (if (stringp listd)
+            (setq listd (split-string (chomp listd) "\n")))
 
-                (if (and select-only-match (eq (length listd) 1))
-                    (car listd)
-                  (let ((sel))
-                    (setq prompt (or prompt ":"))
-                    (let ((helm-full-frame full-frame)
-                          (completion-extra-properties nil))
+        (if (and select-only-match (eq (length listd) 1))
+            (car listd)
+          (let ((sel))
+            (setq prompt (or prompt ":"))
+            (let ((helm-full-frame full-frame)
+                  (completion-extra-properties nil))
 
-                      (if add-props
-                          (setq completion-extra-properties
-                                (append
-                                 completion-extra-properties
-                                 add-props)))
+              (if add-props
+                  (setq completion-extra-properties
+                        (append
+                         completion-extra-properties
+                         add-props)))
 
-                      (if (and (listp (car listd)))
-                          (setq completion-extra-properties
-                                (append
-                                 '(:annotation-function fz-completion-second-of-tuple-annotation-function)
-                                 completion-extra-properties)))
+              (if (and (listp (car listd)))
+                  (setq completion-extra-properties
+                        (append
+                         '(:annotation-function fz-completion-second-of-tuple-annotation-function)
+                         completion-extra-properties)))
 
-                      (setq sel (completing-read prompt listd nil must-match initial-input hist-var)))
+              (setq sel (completing-read prompt listd nil must-match initial-input hist-var)))
 
-                    ;; This refreshes the term usually, but not always. It realigns up some REPLs, such as lein.
-                    ;; Not worth it just for hhgttg
-                    (if (and
-                         pen-term-cl-refresh-after-fz
-                         (major-mode-p 'term-mode)
-                         ;; char is raw mode
-                         (term-in-char-mode))
-                        (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
-                    sel)))
-            (progn (message "History empty")
-                   nil)))
+            ;; This refreshes the term usually, but not always. It realigns up some REPLs, such as lein.
+            ;; Not worth it just for hhgttg
+            (if (and
+                 pen-term-cl-refresh-after-fz
+                 (major-mode-p 'term-mode)
+                 ;; char is raw mode
+                 (term-in-char-mode))
+                (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
+            sel)))
+    (progn (message "History empty")
+           nil)))
 
-(defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props hist-var no-hist)
+(defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props hist-var no-hist empty-hist-exit)
   (cl-fz
    list
    :initial-input input
@@ -933,7 +934,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
    :select-only-match select-only-match
    :add-props add-props
    :hist-var hist-var
-   :no-hist no-hist))
+   :no-hist no-hist
+   :empty-hist-exit empty-hist-exit))
 
 (defun pen-selected ()
   (or
