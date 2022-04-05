@@ -392,6 +392,20 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
              (call-interactively action))))))))
 (advice-remove 'pen-lsp-mouse-click #'ignore-errors-around-advice)
 
+(defun pen-esp-idle-update-docs ()
+  (interactive)
+  (if lsp-mode
+      (progn
+        (if lsp-ui-sideline-mode
+            (progn
+              (lsp-ui-sideline--delete-ov)
+              (lsp-ui-sideline)))
+        (if (and lsp-ui-doc-mode
+                 (lsp-ui-doc--visible-p))
+            (progn
+              (lsp-ui-doc-show))))))
+(run-with-idle-timer 10 t 'pen-esp-idle-update-docs)
+
 (define-key lsp-mode-map (kbd "<mouse-3>") nil)
 
 ;; $EMACSD/manual-packages/company-lsp/company-lsp.el
