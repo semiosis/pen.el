@@ -183,7 +183,7 @@ Be mindful of quoting arguments correctly."
     (require 'pen-nix))
 (require 'pen-git)
 (pen-require 'pen-selected)
-(require 'pen-cua)
+(pen-require 'pen-cua)
 (require 'pen-tramp)
 (require 'pen-text-coding-system)
 (require 'pen-editing)
