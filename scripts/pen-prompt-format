@@ -8,6 +8,7 @@ export TTY
 # TODO Prompt an entire file
 # TODO Create this capability
 
-# pen-ci -f -a penf -u -nj --pool pf-generic-completion-50-tokens/1
+# pen-ci -f -a penf -u -nj --pool correct-english-spelling-and-grammar-1
+# pen-ci -f -a penf -u -nj --pool pf-correct-the-syntax/2 code
 
 pen-tvipe
