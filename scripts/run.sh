@@ -72,6 +72,10 @@ if test -f $HOME/.emacs.d/host/pen.el/config/tmux.conf; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/tmux.conf ~/.tmux.conf
 fi
 
+if test -f $HOME/.emacs.d/host/pen.el/config/efm-langserver-config.yaml; then
+    ln -sf $HOME/.emacs.d/host/pen.el/config/efm-langserver-config.yaml $HOME/.config/efm-langserver/config.yaml
+fi
+
 # Set up an ssh key for using git with github
 # Actually, just use http
 # setup-ssh.sh
