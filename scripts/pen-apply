@@ -1,13 +1,1 @@
-#!/bin/bash
-export TTY
-# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
-
-# apply
-
-f="$1"
-shift
-
-for (( i = 1; i <= $#; i++ )); do
-    eval ARG=\${$i}
-    printf -- "%s" "$ARG" | eval "$f"
-done
+ap-
