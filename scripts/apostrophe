@@ -83,7 +83,11 @@ stdin_exists() {
 #     exit 1
 # }
 
-person="$@"
+if test "$#" -eq 0; then
+    person="$(pen-readln "Person's name")"
+else
+    person="$@"
+fi
 
 # PEN_USE_GUI is unset by design apparently
 
