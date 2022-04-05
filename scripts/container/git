@@ -15,4 +15,14 @@ export USE_TTY=n
 export SSH_HOST_CHOWN=y
 export USE_PROFILE=n
 export SSH_EXPORTS="GIT_PAGER=less"
-pen-ssh-host git "$@"
+case "$(pwd)" in
+    /root/notes*) {
+        /usr/bin/git "$@"
+    }
+    ;;
+
+    *) {
+        pen-ssh-host git "$@"
+    }
+    ;;
+esac
