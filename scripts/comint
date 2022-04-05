@@ -55,7 +55,7 @@ if ! printf -- "%s\n" "$user_prompt_re" | grep -q -P '<pen-'; then
     user_prompt_re="$(p "$user_prompt_re" | pen-str onelineify-safe)"
 fi
 
-elisp="(comint-quick $(cmd-nice-posix "$CMD") user-home-directory (pen-unregexify $(cmd-nice-posix "$user_prompt_re")))"
+elisp="(comint-quick $(cmd-nice-posix "$CMD") user-home-directory $(cmd-nice-posix "$user_prompt_re"))"
 
 # This is correct elisp now. So now pente must work fine
 # pen-pl "$elisp" | pen-tv &>/dev/null
