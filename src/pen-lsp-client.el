@@ -82,8 +82,11 @@
 (defun pen-lsp-update-languages ()
   (interactive)
 
+  (setq lsp-language-id-configuration nil)
   (cl-loop for m in pen-lsp-modes do
-        (add-to-list 'lsp-language-id-configuration `(,m . "global")))
+           (cond
+            ((eq m 'emacs-lisp-mode) (add-to-list 'lsp-language-id-configuration `(,m . "elisp")))
+            (t (add-to-list 'lsp-language-id-configuration `(,m . "global")))))
 
   (lsp-register-client
    (make-lsp-client :new-connection

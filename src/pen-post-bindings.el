@@ -158,6 +158,7 @@
 
 (sslk "lA" (df ansi-zsh (etansi zsh)))
 (sslk "lrre" (df edit-emacs (e "$MYGIT/config/emacs/emacs")))
+(sslk "lrl" 'pen-edit-efm-conf)
 (sslk "lrl" (df edit-emacs (e "/home/shane/.config/efm-langserver/config.yaml")))
 (sslk "lrrp" (df edit-python (e "$MYGIT/config/python/pythonrc.full.py")))
 (sslk "lrrr" (df edit-racket (e "$HOME/.racketrc")))

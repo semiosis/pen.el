@@ -16,8 +16,8 @@
 (defun pen-edit-efm-conf ()
   (interactive)
   (cond
-   ((f-exists? (f-join penconfdir "efm-langserver-config.yaml")) (find-file (f-join penconfdir "efm-langserver-config.yaml")))
    ((f-exists? (f-join pen-penel-directory "config" "efm-langserver-config.yaml")) (find-file (f-join pen-penel-directory "config" "efm-langserver-config.yaml")))
+   ((f-exists? (f-join penconfdir "efm-langserver-config.yaml")) (find-file (f-join penconfdir "efm-langserver-config.yaml")))
    (t (error "No editable `efm-langserver-config.yaml` found."))))
 
 (defun pen-edit-timeouts-log ()
