@@ -31,7 +31,7 @@ tools:
     completion-command: 'POSITION=${POSITION} pen-lsp-complete'
     completion-stdin: true
 
-  pen-world-language: &pen-world-language
+  pen-world-language-lint: &pen-world-language-lint
     lint-debounce: 2s
     lint-command: "pen-ci -f -a penf -u -nj --pool pf-generic-completion-50-tokens/1"
     lint-stdin: true
@@ -39,7 +39,7 @@ tools:
     format-stdin: true
     format-command: "pen-ci -f -a penf -u -nj --pool correct-english-spelling-and-grammar-1"
 
-  pen-programming-language: &pen-programming-language
+  pen-programming-language-lint: &pen-programming-language-lint
     lint-debounce: 2s
     # TODO Figure out how to get the language into this script
     # I probably need to extend efm-langserver
@@ -248,41 +248,41 @@ tools:
 
 languages:
   text:
-    - <<: *pen-world-language
+    - <<: *pen-world-language-lint
     - <<: *pen-world-language-completion
     - <<: *glossary1
 
   global:
-    - <<: *pen-world-language
+    - <<: *pen-world-language-lint
     - <<: *pen-world-language-completion
     - <<: *glossary1
 
   elisp:
-    - <<: *pen-world-language
+    - <<: *pen-world-language-lint
     - <<: *pen-world-language-completion
     - <<: *glossary1-elisp
 
   org:
-    - <<: *pen-world-language
+    - <<: *pen-world-language-lint
     - <<: *pen-world-language-completion
     - <<: *glossary1
 
   awk:
-    - <<: *pen-programming-language
+    - <<: *pen-programming-language-lint
     - <<: *pen-programming-language-completion
     - <<: *glossary1
 
   eruby:
-    - <<: *pen-programming-language
+    - <<: *pen-programming-language-lint
 
   vim:
-    - <<: *pen-programming-language
+    - <<: *pen-programming-language-lint
 
   make:
-    - <<: *pen-programming-language
+    - <<: *pen-programming-language-lint
 
   markdown:
-    - <<: *pen-programming-language
+    - <<: *pen-programming-language-lint
     - <<: *markdown-pandoc
 
   rst:
