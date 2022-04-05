@@ -90,7 +90,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-os_or_lang="$@"
+if test "$#" -eq 0; then
+    os_or_lang="$(cat /etc/issue | sed 's/\\.*//' | chomp)"
+else
+    os_or_lang="$@"
+fi
 
 if ! test "$NORL" = "y"; then
     pen-rlwrap "$sn" -norl "$@"
