@@ -401,7 +401,9 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
       (progn
         (if lsp-ui-sideline-mode
             (progn
+              ;; (lsp-ui-sideline-mode -1)
               (lsp-ui-sideline--delete-ov)
+              ;; (lsp-ui-sideline-mode 1)
               (lsp-ui-sideline)))
         (if (and lsp-ui-doc-mode
                  (lsp-ui-doc--visible-p))
