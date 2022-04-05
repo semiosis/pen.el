@@ -11,7 +11,14 @@ export TTY
 # pen-ci -f -a penf -u -nj --pool correct-english-spelling-and-grammar-1
 # pen-ci -f -a penf -u -nj --pool pf-correct-the-syntax/2 code
 
-# export EDITOR=sps-w-pin
-export EDITOR=pen-eipe
-pen-tvipe
+# This opens infinite eipes when I open a text file LOL
+
+# # export EDITOR=sps-w-pin
+# export EDITOR=pen-eipe
+# pen-tvipe
+
+# So I'll just 'cat' for the moment
+
+cat
+
 # pen-tvipe

@@ -9,8 +9,14 @@ export TTY
 # TODO Create this capability
 
 # pen-ci -f -a penf -u -nj --pool pf-generic-completion-50-tokens/1
+# This opens infinite eipes when I open a text file LOL
 
-# export EDITOR=sps-w-pin
-export EDITOR=pen-eipe
-pen-tvipe
+# # export EDITOR=sps-w-pin
+# export EDITOR=pen-eipe
+# pen-tvipe
+
+# So I'll just 'cat' for the moment
+
+cat
+
 # pen-tvipe
