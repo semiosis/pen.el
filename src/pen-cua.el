@@ -10,11 +10,21 @@
 
 (setq cua-enable-cua-keys nil)
 
+(defun helm-scroll-up ()
+  (interactive)
+  (dotimes (_n 8)
+    (call-interactively 'helm-previous-line)))
+
+(defun helm-scroll-down ()
+  (interactive)
+  (dotimes (_n 8)
+    (call-interactively 'helm-next-line)))
+
 (defun pen-cua-scroll-down ()
   (interactive)
   (cond
    ((minor-mode-p helm--minor-mode)
-    (call-interactively 'helm-previous-line))
+    (call-interactively 'helm-scroll-up))
    ((major-mode-p 'minibuffer-inactive-mode)
     (call-interactively 'ivy-scroll-up))
    (t (call-interactively 'cua-scroll-down))))
@@ -23,7 +33,7 @@
   (interactive)
   (cond
    ((minor-mode-p helm--minor-mode)
-    (call-interactively 'helm-next-line))
+    (call-interactively 'helm-scroll-down))
    ((major-mode-p 'minibuffer-inactive-mode)
     (call-interactively 'ivy-scroll-down))
    (t (call-interactively 'cua-scroll-up))))
