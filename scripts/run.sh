@@ -74,7 +74,7 @@ fi
 # setup-ssh.sh
 
 if pen-rc-test host-ssh-master; then
-    pen-cterm-ssh -ssh -M pwd
+    unbuffer pen-cterm-ssh -ssh -t -M sh &
 fi
 
 # This creates the initial frame
