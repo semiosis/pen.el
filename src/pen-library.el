@@ -35,8 +35,18 @@
   (interactive)
 
   (if (not (buffer-file-name))
-      (write-file
-       (make-temp-file nil nil (concat "." (get-ext-for-mode major-mode))))))
+      (let ((bn (buffer-name)))
+        (if (or (equal bn "*scratch*")
+                (equal bn "*Messages*")
+                (equal bn "*Warnings*")
+                no-create-path)
+            (let ((nb (new-buffer-from-string (buffer-string))))
+              (with-current-buffer nb
+                (write-file
+                 (make-temp-file nil nil (concat "." (get-ext-for-mode major-mode)))))
+              (switch-to-buffer nb))
+          (write-file
+           (make-temp-file nil nil (concat "." (get-ext-for-mode major-mode))))))))
 
 (defun f-realpath (path &optional dir)
   (if path
