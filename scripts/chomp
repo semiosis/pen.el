@@ -2,5 +2,6 @@
 
 # Remove surrounding whitespace
 
-in="$(cat)"
+# "$(cat) wasn't good enough if there was \s/n
+in="$(sed -z 's/[\s\t\n]$//')"
 printf -- "%s" "$in"

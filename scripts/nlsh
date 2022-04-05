@@ -90,8 +90,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if test "$#" -eq 0; then
+if test "$#" -eq 0 && test -f /etc/issue; then
     os_or_lang="$(cat /etc/issue | sed 's/\\.*//' | chomp)"
+elif test "$#" -eq 0; then
+    os_or_lang="$(pen-readln "OS (and/or shell)")"
 else
     os_or_lang="$@"
 fi
