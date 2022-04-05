@@ -84,7 +84,7 @@ stdin_exists() {
 # }
 
 if test "$#" -eq 0; then
-    person="$(pen-readln "Person's name")"
+    person="$(pen-readln "Chatbot name name")"
 else
     person="$@"
 fi
