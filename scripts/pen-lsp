@@ -35,4 +35,7 @@ ln -sf "$efm_config" $HOME/.config/efm-langserver/config.yaml
 # wait
 pen-tm -te nw -d -fa pen-e sa
 
+# I want EFM to find commands in the host PATH
+. `which setup-term.sh`
+
 efm-langserver "$@"
