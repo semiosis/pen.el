@@ -17,8 +17,19 @@ stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -tout) {
+        force_tty_out=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # These checks appear to have done the job regarding fork bombs
-if ! is_tty; then
+if ! is_tty && ! test "$force_tty_out" = y; then
     cat
     exit $?
 fi
@@ -124,7 +135,7 @@ last_arg="${@: -1}"
 pager() {
     if is_stdout_pipe; then
         cat
-    elif is_tty && stdin_exists; then
+    elif { is_tty || test "$force_tty_out" = y; } && stdin_exists; then
         inputfp="$(pen-tf pager txt)"
         if test -s "$inputfp"; then
             if test -n "$pattern"; then

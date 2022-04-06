@@ -1077,7 +1077,7 @@ case "$sn" in
             true_arity="$(printf -- "%s" "$fun" | sed 's=.*/==')"
             n_missing="$(( true_arity - arity ))"
             start_pos="$(( arity + 1 ))"
-            sig="$(penh "$fun" | sed 's=.*&optional ==' | cut -d ' ' -f "$start_pos-$true_arity" | tr ' ' '\n')"
+            sig="$(unbuffer penh "$fun" | sed 's=.*&optional ==' | cut -d ' ' -f "$start_pos-$true_arity" | tr ' ' '\n')"
             vals="$(
                 printf -- "%s\n" "$sig" | awk 1 | while IFS=$'\n' read -r varname; do
                     printf -- "%s " "$(cmd "$(ask-line "$varname")")"
