@@ -2,4 +2,24 @@
 export TTY
 
 export EDITOR=sps-v
-/root/.cabal/bin/hdc "$@"
+
+if ! inside-docker-p; then
+    pen sh hdc "$@"
+    exit "$?"
+fi
+
+if ! inside-tmux-p; then
+    in-tm hdc "$@"
+    exit "$?"
+fi
+
+thing="$1"
+
+if test -n "$thing"; then
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+
+    pen-x -allowtm -sh /root/.cabal/bin/hdc -e ">" -s "$thing" -c m -i
+else
+    eval "$CMD"
+fi
