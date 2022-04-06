@@ -1390,8 +1390,8 @@ function! VisualPrompt(fun, ...)
 endfunction
 
 function! FzVisualPrompt(input)
-    let output = system("pen-tm -w -sout -vipe sps penz | pen-xa penf -ask", a:input)
-    let @p = output
+    let fun = system("pen-tm -w -sout -vipe sps penz")
+    let @p = system("penf -ask " . fun, a:input)
 
     " paste from p register
     exe "normal! gv\"pp"
@@ -1432,6 +1432,10 @@ endfunction
 
 function! Guru()
     return system("guru -sps -win")
+endfunction
+
+function! VisualGuru(input)
+    let result = system("guru -sps", a:input)
 endfunction
 
 xnoremap Zv "py:silent! call FzVisualPrompt(@p)<CR>
