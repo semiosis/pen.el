@@ -107,7 +107,9 @@
                  "\nThe topic of conversation is the following:\n"
                  text)))
 
-           (final-blurb (pen-encode-string final-blurb)))
+           (final-blurb
+            (if final-blurb
+                (pen-encode-string final-blurb))))
 
       (let* ((el
               (if final-blurb
