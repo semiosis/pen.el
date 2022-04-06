@@ -69,11 +69,21 @@ export USE_TERM
 : "${SHELL:="sh"}"
 
 if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; } && { test "$USE_COMINT" = y || test "$USE_TERM" = y; }; then
+    if test -z "$OS_OR_LANG"; then
+        if test "$#" -eq 0 && test -f /etc/issue; then
+            OS_OR_LANG="$(cat /etc/issue | sed 's/\\.*//' | chomp) ($(basename $SHELL))"
+        elif test "$#" -eq 0; then
+            OS_OR_LANG="$(pen-readln "OS (and/or shell)")"
+        else
+            OS_OR_LANG="$@"
+        fi
+    fi
+
     if test "$USE_TERM" = y; then
-        cterm-docker nlsh -term "$@"
+        cterm-docker nlsh -term -os-or-lang "$OS_OR_LANG" -shell "$SHELL" "$@"
     elif test "$USE_COMINT" = y; then
         export NORL=y
-        pen sh nlsh -nt -norl -shell "$SHELL" "$@"
+        pen sh nlsh -nt -norl -os-or-lang "$OS_OR_LANG" -shell "$SHELL" "$@"
     fi
     # pen sh nvc nlsh "$@"
     exit "$?"
@@ -96,15 +106,24 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -os-or-lang) {
+        OS_OR_LANG="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
-if test "$#" -eq 0 && test -f /etc/issue; then
-    os_or_lang="$(cat /etc/issue | sed 's/\\.*//' | chomp) ($(basename $SHELL))"
-elif test "$#" -eq 0; then
-    os_or_lang="$(pen-readln "OS (and/or shell)")"
-else
-    os_or_lang="$@"
+if test -z "$OS_OR_LANG"; then
+    if test "$#" -eq 0 && test -f /etc/issue; then
+        OS_OR_LANG="$(cat /etc/issue | sed 's/\\.*//' | chomp) ($(basename $SHELL))"
+    elif test "$#" -eq 0; then
+        OS_OR_LANG="$(pen-readln "OS (and/or shell)")"
+    else
+        OS_OR_LANG="$@"
+    fi
 fi
 
 if ! test "$NORL" = "y"; then
@@ -125,11 +144,11 @@ case "$sn" in
 esac
 
 if test "$USE_COMINT" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
-    comint -p "$os_or_lang: " -E "nlsh -shell $SHELL $CMD"
+    comint -p "$OS_OR_LANG: " -E "nlsh -shell $SHELL $CMD"
     exit $?
 fi
 
-test -n "$os_or_lang" || {
+test -n "$OS_OR_LANG" || {
     echo "Requires 1 argument: OS or lang" 1>&2
     exit 2
 }
@@ -139,9 +158,9 @@ echo
 
 export USE_CONVERSATION_MODE=y
 
-# rlwrap openai-complete.sh prompts/nlsh-2.prompt "$os_or_lang"
+# rlwrap openai-complete.sh prompts/nlsh-2.prompt "$OS_OR_LANG"
 
-while IFS=$'\n' read -p "${os_or_lang}: " -r nlcommand; do
+while IFS=$'\n' read -p "${OS_OR_LANG}: " -r nlcommand; do
     if test "$nlcommand" = "!!"; then
         nlcommand="$lastcmd"
         UPDATE=y
@@ -151,8 +170,8 @@ while IFS=$'\n' read -p "${os_or_lang}: " -r nlcommand; do
 
     export UPDATE
 
-    pena "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ".[]"
-    # pena "$prompt" "${os_or_lang}" "$nlcommand" | jq -r ". | map(length)[]"
+    pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ".[]"
+    # pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ". | map(length)[]"
 
     lastcmd="$nlcommand"
 done
