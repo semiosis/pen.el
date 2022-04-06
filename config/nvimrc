@@ -1389,17 +1389,9 @@ function! VisualPrompt(fun, ...)
     exe "normal! gv\"pp"
 endfunction
 
-function! FzVisualPrompt(...)
-    let fun = system("pen-tm -w -sout -vipe sps penz | cat")
-    let args = a:000
-    let s = ""
-    for arg in args
-        let s = s . ' "' . arg . '"'
-    endfor
-
-    let cmd = a:fun . s
-    let s = system("pena -fz --pool -u " . cmd, @p)
-    let @p = s
+function! FzVisualPrompt(input)
+    let output = system("pen-tm -w -sout -vipe sps penz | pen-xa penf -ask", a:input)
+    let @p = output
 
     " paste from p register
     exe "normal! gv\"pp"
@@ -1442,7 +1434,7 @@ function! Guru()
     return system("guru -sps -win")
 endfunction
 
-xnoremap Zv "py:silent! call FzVisualPrompt(@p, "vim")<CR>
+xnoremap Zv "py:silent! call FzVisualPrompt(@p)<CR>
 xnoremap Zg "py:silent! call VisualGuru(@p)<CR>
 nnoremap Zg :silent! call Guru()<CR>
 
