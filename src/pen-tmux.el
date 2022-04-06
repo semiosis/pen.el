@@ -85,6 +85,7 @@ START and END can be in either order."
             (defset-local termframe-local frame)
             (current-buffer)))
       wincontents)))
+(defalias 'new-buffer-from-tmux-pane-capture 'pen-tmux-pane-capture)
 
 (defun pen-tmuxify-cmd (cmd &optional dir window-name)
   (let ((slug (slugify cmd)))
