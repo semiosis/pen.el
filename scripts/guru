@@ -123,9 +123,6 @@ if stdin_exists; then
     exec <&1
 fi
 
-# echo "context: $context"
-# echo "person: $person"
-# exit
 if test -n "$context"; then
     if ! test -n "$subject"; then
         subject="$(echo "$context" | penf --pool pf-get-language-1shot/1)"
