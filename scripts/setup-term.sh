@@ -36,5 +36,10 @@ export BROWSER=sps-lg
 
 [ -f "/root/.ghcup/env" ] && . "/root/.ghcup/env" # ghcup-env
 
-# Needed for nlsh
-export SHELL="$(basename $0)"
+# Needed for nlsh, but it killed pend because pen would infinite-loop load
+# export SHELL="$(basename $0)"
+# need to export the SHELL for apo/nlsh/guru/comint if it is a regular shell
+candidate_shell="$(basename $0)"
+if ! printf -- "%s\n" "$candidate_shell" | grep -q -P '/scripts/'; then
+    export SHELL="$candidate_shell"
+fi
