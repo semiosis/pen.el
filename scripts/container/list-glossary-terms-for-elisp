@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+grep() {
+    /bin/grep --byte-offset --with-filename -oP "^[^ \"][^\"]*$" "$@"
+}
+
+{
+    if test "$#" -eq 0; then
+        {
+            grep $NOTES/ws/*/words.txt
+            grep $NOTES/ws/*/made-up-words.txt
+            grep $NOTES/ws/*/phrases.txt
+            grep $HOME/.pen/glossaries/*.txt
+            grep $HOME/english/*.txt
+        } 2>/dev/null
+    else
+        grep "$@"
+    fi
+} | {
+    echo "'("
+ # -e 's/\(" \)\([0-9]*\)/\1"\2"/'
+    sed -e 's/\([^:]*\):/"\1" /' -e "s/:\(.*\)$/ \"\1\"/" -e 's/.*/(&)/'
+    echo ")"
+} | {
+    pen-bs '#'
+} | uniqnosort | pen-pavs
