@@ -645,7 +645,7 @@ Use my position list code. Make it use rosie lang and external software."
 (defun pen-glossary-imenu-configure ()
   (interactive)
   (if (pen-glossary-path-p)
-      (setq imenu-generic-expression pen-glossary-imenu-generic-expression)))
+      (setq imenu-generic-expression glossary-imenu-generic-expression)))
 
 (if (inside-docker-p)
     (add-hook 'text-mode-hook 'pen-glossary-imenu-configure))
@@ -661,7 +661,7 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-generate-glossary-buttons-over-region (beg end &optional clear-first force)
   (interactive "r")
-  (if glossary-keep-tuples-up-to-date
+  (if pen-glossary-keep-tuples-up-to-date
       (pen-glossary-reload-term-3tuples))
 
   (if (not (use-region-p))
@@ -889,7 +889,7 @@ Use my position list code. Make it use rosie lang and external software."
                     nil
                     "pen-goto-glossary-definition: ")))
 
-  (if glossary-keep-tuples-up-to-date
+  (if pen-glossary-keep-tuples-up-to-date
       (pen-glossary-reload-term-3tuples))
 
   (let* ((tups (-filter (lambda (e) (string-equal (car (last e)) term)) pen-glossary-term-3tuples-global))
@@ -1117,5 +1117,30 @@ Use my position list code. Make it use rosie lang and external software."
          (lambda (pen-button-get-link b)))
     (if l
         (xc l))))
+
+(defun pen-goto-glossary-definition-verbose (term-and-loc)
+  (interactive (list
+                (fz (pen-sn "list-glossary-terms -tups")
+                    (if (pen-selected-p) (downcase (pen-thing-at-point)))
+                    nil
+                    "goto-glossary-definition: ")))
+
+  (if pen-glossary-keep-tuples-up-to-date
+      (pen-glossary-reload-term-3tuples))
+
+  (let* ((file (pen-snc "cut -d : -f 1" term-and-loc))
+         (pos (string-to-number (pen-snc "cut -d : -f 2" term-and-loc)))
+         (term (pen-snc "cut -d : -f 3" term-and-loc)))
+
+    (with-current-buffer
+        (if (>= (prefix-numeric-value current-prefix-arg) 4)
+            (find-file-other-window (f-join pen-glossaries-directory file))
+          (find-file (f-join pen-glossaries-directory file)))
+      (pen-goto-byte pos)))
+  nil)
+
+(define-key global-map (kbd "H-h") 'pen-goto-glossary-definition)
+(define-key global-map (kbd "H-Y H") 'pen-goto-glossary-definition)
+(define-key global-map (kbd "H-Y J") 'pen-goto-glossary-definition-verbose)
 
 (provide 'pen-glossary-new)

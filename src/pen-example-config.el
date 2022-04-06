@@ -154,7 +154,7 @@
 (let ((hostglossariesdir (f-join user-emacs-directory "host" "glossaries")))
   (if (f-directory-p (f-join hostglossariesdir "glossaries"))
       (setq pen-glossaries-directory hostglossariesdir)
-    (setq pen-glossaries-directory (f-join user-emacs-directory "glossaries"))))
+    (setq pen-glossaries-directory (f-join penconfdir "glossaries"))))
 
 ;; nlsh
 (setq pen-nlsh-histdir (f-join user-emacs-directory "comint-history"))

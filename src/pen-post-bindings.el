@@ -148,7 +148,7 @@
   (sslk "ldJ" (dff (pen-open-dir "$NOTES/ws/jobs")))
   (sslk "ldc" (dff (pen-open-dir "$EMACSD/config")))
   (sslk "ldC" (dff (pen-open-dir "$EMACSD/config")))
-  (sslk "ldL" (dff (pen-open-dir "$HOME/glossaries")))
+  (sslk "ldL" (dff (pen-open-dir "$HOME/.pen/glossaries")))
   (sslk "ldb" (dff (pen-open-dir "$DUMP$NOTES/ws/blog/blog")))
   (sslk "ldB" (dff (pen-open-dir "$HOME/blog/posts")))
   (sslk "ldt" (dff (pen-open-dir "$DUMP/torrents")))
