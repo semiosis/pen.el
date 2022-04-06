@@ -19,7 +19,7 @@ esac; done
 
 {
     if test "$#" -eq 0; then
-        grep ~/.pen/glossaries/*
+        grep ~/.pen/glossaries/*.txt
     else
         grep "$@"
     fi
