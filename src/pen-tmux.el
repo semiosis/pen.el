@@ -55,13 +55,26 @@ START and END can be in either order."
 
 ;; tmux scripts
 
+(defun tm-cap-pane (&optional show-buffer)
+  (interactive)
+  (let ((cap (pen-sn "pen-tm cap-pane -nohist")))
+    (if (or (interactive-p)
+            show-buffer)
+        (let ((frame (make-frame-command)
+                     ;; termframe
+                     ))
+          (with-current-buffer (new-buffer-from-string cap)
+            (defset-local termframe-local frame)
+            (current-buffer)))
+      cap)))
+
 (defun pen-tmux-pane-capture (&optional show-buffer)
   (interactive)
 
   ;; Rather than toggle window margins, remove the window margin width from the start of each line
   (let* ((margin-width (or (car (window-margins))
                            0))
-         (wincontents (pen-sn (concat "pen-tm cap-pane -nohist | sed \"s/^.\\{" (str margin-width) "\\}//\""))))
+         (wincontents (pen-sn (concat "sed \"s/^.\\{" (str margin-width) "\\}//\"") (tm-cap-pane))))
 
     (if (or (interactive-p)
             show-buffer)
