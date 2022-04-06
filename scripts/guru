@@ -64,6 +64,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -subject) {
+        subject="$2"
+        shift
+        shift
+    }
+    ;;
+
     -win) {
         context="$(pen-tm cap-pane -nohist)"
         shift
@@ -103,28 +110,34 @@ stdin_exists() {
 #     exit 1
 # }
 
-if ! stdin_exists && test "$#" -eq 0; then
-    person="$(pen-readln "Chatbot name")"
-else
-    person="$@"
-fi
+# if ! stdin_exists && test "$#" -eq 0; then
+#     person="$(pen-readln "Chatbot name")"
+# else
+#     person="$@"
+# fi
 
 # PEN_USE_GUI is unset by design apparently
 
 if stdin_exists; then
     context="$(cat)"
+    exec <&1
 fi
 
 # echo "context: $context"
 # echo "person: $person"
 # exit
 if test -n "$context"; then
+    if ! test -n "$subject"; then
+        subject="$(echo "$context" | penf --pool pf-get-language-1shot/1)"
+    fi
+
+    if test -z "$subject"; then
+        subject="General knowledge"
+    fi
+
     # Rather than specifying directly to the prompt function,
     # this value is taken up and remembered for future prompting within the apostrophe
-    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru $(cmd-nice-posix "$context")))(delete-other-windows)))"
-elif test -n "$person"; then
-    exec <&1
-    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person") t))(delete-other-windows)))"
+    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru $(cmd-nice-posix "$context") $(cmd-nice-posix "$subject")))(delete-other-windows)))"
 else
-    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (call-interactively 'apostrophe-start-chatbot-from-name))(delete-other-windows)))"
+    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (call-interactively 'guru))(delete-other-windows)))"
 fi

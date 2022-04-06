@@ -112,6 +112,12 @@ if ! stdin_exists; then
     exec <&1
 else
     mkdir -p ~/.pen
+    if test -f ~/.pen/pen_stdin.txt && ! test -w ~/.pen/pen_stdin.txt; then
+        (
+        set -xv
+        sudo chown $USER:$USER ~/.pen/pen_stdin.txt
+        )
+    fi
     cat > ~/.pen/pen_stdin.txt
     input_captured=y
     exec <&1
