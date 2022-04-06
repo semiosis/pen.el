@@ -1075,13 +1075,16 @@ case "$sn" in
 
         if test "$ask_for_missing_values" = "y" && ! printf -- "%s\n" "$fun" | grep -q -P "/${arity}$"; then
             true_arity="$(printf -- "%s" "$fun" | sed 's=.*/==')"
-            sig="$(penh "$fun" | sed 's=.*&optional ==' | cut -d ' ' -f "1-$true_arity" | tr ' ' '\n')"
+            n_missing="$(( true_arity - arity ))"
+            start_pos="$(( arity + 1 ))"
+            sig="$(penh "$fun" | sed 's=.*&optional ==' | cut -d ' ' -f "$start_pos-$true_arity" | tr ' ' '\n')"
             vals="$(
                 printf -- "%s\n" "$sig" | awk 1 | while IFS=$'\n' read -r varname; do
                     printf -- "%s " "$(cmd "$(ask-line "$varname")")"
                 done
             )"
-            eval "set -- $fun $vals"
+            CMD="$(cmd "$@")"
+            eval "set -- $CMD $vals"
             arity="$true_arity"
         fi
 
