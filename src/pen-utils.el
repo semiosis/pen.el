@@ -109,4 +109,11 @@
 (defalias 'write-string-to-file 'cat-to-file)
 (defalias 'write-to-file 'cat-to-file)
 
+(defun new-buffer-from-string-or-selected (&optional s)
+  (interactive)
+  (if (and (pen-selected-p)
+           (not s))
+      (new-buffer-from-string (pen-selected-text))
+    (new-buffer-from-string s)))
+
 (provide 'pen-utils)

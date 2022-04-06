@@ -785,6 +785,7 @@ Use my position list code. Make it use rosie lang and external software."
   (if (derived-mode-p 'term-mode)
       (with-current-buffer
           (new-buffer-from-tmux-pane-capture t)
+        (get-path)
         (pen-generate-glossary-buttons-manually))
     (pen-gl-beg-end
      (if (use-region-p)

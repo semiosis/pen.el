@@ -30,7 +30,7 @@ fzf-files-copy-deep() {
 }
 
 fzf-dirs-copy-deep() {
-    # sel="$(pen-F d | pen-u bn | pen-fzf | pen-mnm)"
+    # sel="$(pen-F d | pen-ux bn | pen-fzf | pen-mnm)"
     sel="$(pen-F d | pen-mnm | pen-fzf)"
 
     if [ -n "$sel" ]; then
@@ -39,7 +39,7 @@ fzf-dirs-copy-deep() {
 }
 
 fzf-related-paths() {
-    # sel="$(pen-F find-files-here | pen-u bn | pen-fzf | pen-mnm)"
+    # sel="$(pen-F find-files-here | pen-ux bn | pen-fzf | pen-mnm)"
     sel="$(pen-F find-files-here | xargs cat | scrape-paths-fast.sh | pen-fzf)"
 
     if [ -n "$sel" ]; then
@@ -49,7 +49,7 @@ fzf-related-paths() {
 }
 
 fzf-files-copy() {
-    # sel="$(pen-F find-files-here | pen-u bn | pen-fzf | pen-mnm)"
+    # sel="$(pen-F find-files-here | pen-ux bn | pen-fzf | pen-mnm)"
     sel="$(pen-F find-files-here | pen-fzf)"
 
     if [ -n "$sel" ]; then
@@ -104,7 +104,7 @@ read -n1 d; test "$d" = "" && read -n1 d
 case "$d" in
     .) cmd="v $0" ;;
     c|d) cmd="pwd | pen-xc -i -n" ;;
-    D|B) cmd="pwd | pen-u bn | pen-xc -i -n" ;;
+    D|B) cmd="pwd | pen-ux bn | pen-xc -i -n" ;;
     t) cmd="pen-tm -te -d capture -clean -history" ;;
     g) { cmd="pen-vc url | pen-xc -n -i -"; }; ;;
     N) { cmd="pen-vc bn | pen-xc -n -i -"; }; ;;
