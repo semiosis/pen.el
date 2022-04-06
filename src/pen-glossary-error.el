@@ -37,6 +37,6 @@
 
 (defun recalculate-glossary-error-3tuples ()
   (interactive)
-  (defset-local glossary-error-term-3tuples (-distinct (flatten-once (cl-loop for fp in glossary-error-files collect (glossary-list-tuples fp))))))
+  (defset-local glossary-error-term-3tuples (-distinct (flatten-once (cl-loop for fp in glossary-error-files collect (pen-glossary-list-tuples fp))))))
 
 (provide 'pen-glossary-error)
