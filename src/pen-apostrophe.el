@@ -100,11 +100,12 @@
                     ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
                     ))))
            (final-blurb
-            (concat
-             final-blurb
-             ;; "<pen-newline>The topic of conversation is the following:<pen-newline>"
-             "\nThe topic of conversation is the following:\n"
-             text))
+            (if (not (and text (string-empty-p text)))
+                (concat
+                 final-blurb
+                 ;; "<pen-newline>The topic of conversation is the following:<pen-newline>"
+                 "\nThe topic of conversation is the following:\n"
+                 text)))
 
            (final-blurb (pen-encode-string final-blurb)))
 
@@ -211,12 +212,18 @@
             (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" final-blurb))))
               (pen-e-sps (pen-lm (pen-eval-string el)))))))))
 
-(defun guru ()
+(defun guru (&optional text language)
   (interactive)
-  (let* ((lang (pen-detect-language-ask))
-        (sme-name (concat lang " guru")))
+  (let* ((lang
+          (or
+           language
+           (if text
+               (pen-detect-language-lm-ask text)
+             (pen-detect-language-ask))))
+         (sme-name (concat lang " guru")))
     (apostrophe-chat-about-selection
-     (pen-screen-verbatim-or-selection)
+     (or text
+         (pen-screen-verbatim-or-selection))
      sme-name
      (concat sme-name " is an expert in " lang))))
 
