@@ -1,0 +1,33 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+grep() {
+    /bin/grep --byte-offset --with-filename -oP "^[a-zA-Z0-9]+[/a-zA-Z0-9 _-]+$" "$@"
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -tups) {
+        TUPS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+{
+    if test "$#" -eq 0; then
+        grep ~/.pen/glossaries/*
+    else
+        grep "$@"
+    fi
+} | {
+    if test "$TUPS" = "y"; then
+        sed 's/[^:]*\///' | uniqnosort
+    else
+        sed 's/.*://' | uniqnosort
+    fi
+} | pen-pavs
+    
