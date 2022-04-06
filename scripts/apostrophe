@@ -50,6 +50,19 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -context) {
+        context="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -win) {
+        context="$(pen-tm cap-pane -nohist)"
+        shift
+    }
+    ;;
+
     -gui) {
         export PEN_USE_GUI=y
         FRAMETYPE=gui

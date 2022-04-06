@@ -40,6 +40,7 @@ export BROWSER=sps-lg
 # export SHELL="$(basename $0)"
 # need to export the SHELL for apo/nlsh/guru/comint if it is a regular shell
 candidate_shell="$(basename $0)"
-if ! printf -- "%s\n" "$candidate_shell" | grep -q -P '/scripts/'; then
+# This will work better because when I personally override SHELL in scripts, I leave out the full path
+if printf -- "%s\n" "$candidate_shell" | grep -q -P '^/'; then
     export SHELL="$candidate_shell"
 fi
