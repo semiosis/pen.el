@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+# check for tty on stdin, not stdout
+is_tty() { [ -t 0 ]; }
+
+if ! is_tty; then
+    tm-ask-line "$@"
+    exit "$?"
+fi
+
+message="$@"
+: ${message:="Enter query"}
+
+read -p "$message: " line && echo "$line"
