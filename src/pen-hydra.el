@@ -254,7 +254,7 @@ display values."
                          ("N" (df fi-qneftln (pen-region-pipe "qne -ftln")) "wrl quote no ends")
                          ;; (","  sel/hydra-pop "exit" :color blue)
                          ("l" #'downcase-region "lcase")
-                         ("p" (df fi-text-to-paras (pen-region-pipe "text-to-paras")) "text-to-paras")
+                         ("p" 'pen-pretty-paragraph-selected "Pretty paragraph")
                          ;; ("u" upcase-region "ucase")
                          ("-" (df fi-underline (filter-selection 'udl)) "underline")
                          ("<" (df fi-orgunindent (pen-region-pipe "orgindent -1")) "org unindent")

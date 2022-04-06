@@ -181,11 +181,14 @@ START and END can be in either order."
   "Runs command in a new window/pane"
   (interactive)
 
-  (if (string-match "/[^:]+:" (or dir (get-path nil t) ""))
-      (let ((cand-dir (tramp-localdir)))
+  (let ((special-path (or dir (get-path nil t) "")))
+    (if (and (string-match "/[^:]+:" special-path)
+             ;; Don't want to match an org-link such as when using org-brain
+             (not (string-match "\\[\\[" special-path)))
+        (let ((cand-dir (tramp-localdir)))
           (if (f-directory-p cand-dir)
               (setq dir cand-dir)
-            (setq dir "/"))))
+            (setq dir "/")))))
 
   (if (not cmd)
       (setq cmd "zsh"))
