@@ -1,0 +1,36 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -s) {
+        STAY=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# rm /tmp/tmux.txt
+# tmux last-window \; run -b "tmux lsp > /tmp/tmux.txt"
+# sleep 0.1
+# pane="$(cat /tmp/tmux.txt | grep -Po "%[0-9]+ (?=.*active)")"
+
+clip="$(pen-odn unbuffer pen-xc)"
+if printf -- "%s" "$clip" | grep -Pq '^(\$[0-9]+:@[0-9]+\.)?%[0-9]+$'; then
+    paneid="$(printf -- "%s" "$clip" | pen-scrape "%[0-9]+" | pen-xc | cat)"
+    tmux swapp -s "$clip"
+    exit $?
+fi
+
+if test "$STAY" = "y"; then
+    tmux last-window
+    pane="$(tm-get-pane-id)"
+    tmux last-window
+    tmux swapp -s "$pane"
+else
+    pane="$(tm-get-pane-id)"
+    tmux last-window
+    tmux swapp -s "$pane"
+fi

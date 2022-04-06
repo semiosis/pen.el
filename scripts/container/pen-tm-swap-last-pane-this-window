@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+clip="$(pen-odn unbuffer pen-xc)"
+if printf -- "%s" "$clip" | grep -Pq '^(\$[0-9]+:@[0-9]+\.)?%[0-9]+$'; then
+    paneid="$(printf -- "%s" "$clip" | pen-scrape "%[0-9]+" | pen-xc | cat)"
+    tmux swapp -s "$clip"
+    exit $?
+fi
+
+tmux lastp
+target=$(tmux lsp | grep -Po "^[^:]+(?=.*active)")
+tmux lastp
+tmux swapp -s "$target"

@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+format_string="#{session_id}:#{window_id}.#{pane_id}"
+
+tmux display-message -p "$format_string"
