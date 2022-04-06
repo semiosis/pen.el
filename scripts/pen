@@ -1046,6 +1046,17 @@ has_placeholder() {
 
 case "$sn" in
     penf) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -ask) {
+                ask_for_missing_values=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
         fun="$1"
 
         if test "$input_captured" = y; then
@@ -1060,6 +1071,18 @@ case "$sn" in
 
         if ! printf -- "%s\n" "$fun" | grep -q -P '/[0-9]+$'; then
             fun="$(penl 2>&1 | grep -P "^(pf-)?${fun}/$arity$")"
+        fi
+
+        if test "$ask_for_missing_values" = "y" && ! printf -- "%s\n" "$fun" | grep -q -P "/${arity}$"; then
+            true_arity="$(printf -- "%s" "$fun" | sed 's=.*/==')"
+            sig="$(penh "$fun" | sed 's=.*&optional ==' | cut -d ' ' -f "1-$true_arity" | tr ' ' '\n')"
+            vals="$(
+                printf -- "%s\n" "$sig" | awk 1 | while IFS=$'\n' read -r varname; do
+                    printf -- "%s " "$(cmd "$(ask-line "$varname")")"
+                done
+            )"
+            eval "set -- $fun $vals"
+            arity="$true_arity"
         fi
 
         if ! printf -- "%s\n" "$fun" | grep -q -P "/${arity}$"; then

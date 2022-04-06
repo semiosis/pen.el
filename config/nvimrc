@@ -1389,6 +1389,22 @@ function! VisualPrompt(fun, ...)
     exe "normal! gv\"pp"
 endfunction
 
+function! FzVisualPrompt(...)
+    let fun = system("pen-tm -w -sout -vipe sps penz | cat")
+    let args = a:000
+    let s = ""
+    for arg in args
+        let s = s . ' "' . arg . '"'
+    endfor
+
+    let cmd = a:fun . s
+    let s = system("pena -fz --pool -u " . cmd, @p)
+    let @p = s
+
+    " paste from p register
+    exe "normal! gv\"pp"
+endfunction
+
 fun! Insert(text)
     let g:inserted_text = a:text
     if mode() == 'i'
@@ -1421,6 +1437,14 @@ function! InsertPrompt(fun, in, ...)
 
     return s
 endfunction
+
+function! Guru()
+    return system("guru -sps -win")
+endfunction
+
+xnoremap Zv "py:silent! call FzVisualPrompt(@p, "vim")<CR>
+xnoremap Zg "py:silent! call VisualGuru(@p)<CR>
+nnoremap Zg :silent! call Guru()<CR>
 
 xnoremap Zt "py:silent! call VisualPrompt("pf-transform-code/3", @p, "vim", input("transformation: "))<CR>
 inoremap <expr> <C-y> InsertPrompt("pf-generic-completion-50-tokens/1", GetLast20LinesBeforeCursor())

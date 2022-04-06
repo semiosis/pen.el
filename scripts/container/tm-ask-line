@@ -4,4 +4,5 @@ export TTY
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
-pen-tm -sout -vipe -S sps "ask-line $CMD" | cat
+# The -te is important if running from something like tmux run
+pen-tm -vipe -te -fout sps "ask-line $CMD" | cat
