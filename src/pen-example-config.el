@@ -172,6 +172,9 @@
 (setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
 (add-hook 'after-init-hook 'global-company-mode)
 
+(require 'pen-glossary-new)
+(set-glossary-predicate-tuples)
+
 (require 'xt-mouse)
 (xterm-mouse-mode)
 (require 'mouse)
