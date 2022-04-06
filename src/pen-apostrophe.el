@@ -109,7 +109,10 @@
 
            (final-blurb (pen-encode-string final-blurb)))
 
-      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" final-blurb))))
+      (let* ((el
+              (if final-blurb
+                  (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "" final-blurb))
+                (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" sme "")))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
 (defun apostrophe-start-chatbot-from-selection (text &optional expert final-blurb)
@@ -227,6 +230,6 @@
      (or text
          (pen-screen-verbatim-or-selection))
      sme-name
-     (concat sme-name " is an expert in " lang))))
+     (concat sme-name " is an expert in " lang "."))))
 
 (provide 'pen-apostrophe)
