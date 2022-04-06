@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+pen-tm -w -sout -vipe sps penz | pen-xa penf -ask | pavs
