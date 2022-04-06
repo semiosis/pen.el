@@ -306,8 +306,8 @@
      :underline t))
   "Face for glossary candidate buttons.")
 
-(define-button-type 'glossary-button 'follow-link t 'help-echo "Click to go to definition" 'face 'pen-glossary-button-face)
-(define-button-type 'glossary-candidate-button 'follow-link t 'help-echo "Click to add to glossary" 'face 'pen-glossary-candidate-button-face)
+(define-button-type 'glossary-button 'follow-link t 'help-echo "Click to go to definition" 'face 'glossary-button-face)
+(define-button-type 'glossary-candidate-button 'follow-link t 'help-echo "Click to add to glossary" 'face 'glossary-candidate-button-face)
 
 (defun pen-show-overlays-here ()
   (interactive)
@@ -708,52 +708,52 @@ Use my position list code. Make it use rosie lang and external software."
 
             (progn
               (pen-mu (cond ((derived-mode-p 'python-mode)
-                         (progn
-                           (pen-append-glossary-files-locally (list (f-join pen-glossaries-directory "python.txt"
-                                                                (f-join pen-glossaries-directory "tensorflow.txt"
-                                                                (f-join pen-glossaries-directory "nlp-python.txt"
-                                                                (f-join pen-glossaries-directory "onnx.txt"
-                                                                (f-join pen-glossaries-directory "deep-learning.txt"
-                                                                (f-join pen-glossaries-directory "nlp-natural-language-processing.txt"))))
-                        ((and (derived-mode-p 'text-mode)
-                              (stringp (get-path-nocreate))
-                              (let* ((fp (get-path-nocreate))
-                                     (bn (f-basename fp))
-                                     (dn (f-dirname fp))
-                                     (ext (file-name-extension bn))
-                                     (mant (file-name-sans-extension bn))
-                                     (pdf-fp (concat dn "/" mant ".pdf"))
-                                     (PDF-fp (concat dn "/" mant ".PDF")))
-                                (or (pen-test-f pdf-fp)
-                                    (pen-test-f PDF-fp))))
-                         (progn
-                           (let ((glossary-fp (concat (f-dirname (get-path-nocreate)) "/glossary.txt")))
-                             (pen-append-glossary-files-locally (list glossary-fp)))))
-                        ((and (get-path-nocreate)
-                              (let* ((fp (get-path-nocreate))
-                                     (bn (f-basename fp))
-                                     (dn (f-dirname fp))
-                                     (dnbn (f-basename dn))
-                                     (ext (file-name-extension bn))
-                                     (mant (file-name-sans-extension bn)))
-                                (or (and (string-equal dnbn "glossaries")
-                                         (derived-mode-p 'text-mode))
-                                    (string-equal bn "glossary.txt"))))
-                         (pen-append-glossary-files-locally (list (get-path-nocreate))))
-                        ((derived-mode-p 'prog-mode)
-                         (let* ((lang (pen-detect-language))
-                                (lang (cond ((string-equal "emacs-lisp" lang) "emacs-lisp-elisp")
-                                            (t lang)))
-                                (fp (concat (f-join pen-glossaries-directory (concat lang ".txt"))))
-                           (if (pen-test-f fp)
-                               (pen-append-glossary-files-locally (list fp)))))
-                        ((str-match-p "Lord of the Rings" (get-path-nocreate))
-                         (progn
-                           (pen-append-glossary-files-locally (list (f-join pen-glossaries-directory "lotr-lord-of-the-rings.txt"))))
-                        ((pen-glossary-path-p (get-path-nocreate))
-                         (pen-append-glossary-files-locally (list (get-path-nocreate))))))
+                             (progn
+                               (pen-append-glossary-files-locally (list (f-join pen-glossaries-directory "python.txt")
+                                                                        (f-join pen-glossaries-directory "tensorflow.txt")
+                                                                        (f-join pen-glossaries-directory "nlp-python.txt")
+                                                                        (f-join pen-glossaries-directory "onnx.txt")
+                                                                        (f-join pen-glossaries-directory "deep-learning.txt")
+                                                                        (f-join pen-glossaries-directory "nlp-natural-language-processing.txt")))))
+                            ((and (derived-mode-p 'text-mode)
+                                  (stringp (get-path-nocreate))
+                                  (let* ((fp (get-path-nocreate))
+                                         (bn (f-basename fp))
+                                         (dn (f-dirname fp))
+                                         (ext (file-name-extension bn))
+                                         (mant (file-name-sans-extension bn))
+                                         (pdf-fp (concat dn "/" mant ".pdf"))
+                                         (PDF-fp (concat dn "/" mant ".PDF")))
+                                    (or (pen-test-f pdf-fp)
+                                        (pen-test-f PDF-fp))))
+                             (progn
+                               (let ((glossary-fp (concat (f-dirname (get-path-nocreate)) "/glossary.txt"))))
+                               (pen-append-glossary-files-locally (list glossary-fp))))
+                            ((and (get-path-nocreate)
+                                  (let* ((fp (get-path-nocreate))
+                                         (bn (f-basename fp))
+                                         (dn (f-dirname fp))
+                                         (dnbn (f-basename dn))
+                                         (ext (file-name-extension bn))
+                                         (mant (file-name-sans-extension bn)))
+                                    (or (and (string-equal dnbn "glossaries")
+                                             (derived-mode-p 'text-mode))
+                                        (string-equal bn "glossary.txt"))))
+                             (pen-append-glossary-files-locally (list (get-path-nocreate))))
+                            ((derived-mode-p 'prog-mode)
+                             (let* ((lang (pen-detect-language))
+                                    (lang (cond ((string-equal "emacs-lisp" lang) "emacs-lisp-elisp")
+                                                (t lang)))
+                                    (fp (concat (f-join pen-glossaries-directory (concat lang ".txt")))))
+                               (if (pen-test-f fp)
+                                   (pen-append-glossary-files-locally (list fp)))))
+                            ((str-match-p "Lord of the Rings" (get-path-nocreate))
+                             (progn
+                               (pen-append-glossary-files-locally (list (f-join pen-glossaries-directory "lotr-lord-of-the-rings.txt")))))
+                            ((pen-glossary-path-p (get-path-nocreate))
+                             (pen-append-glossary-files-locally (list (get-path-nocreate))))))
 
-                        (pen-draw-glossary-buttons-and-maybe-recalculate beg end)))))))
+              (pen-draw-glossary-buttons-and-maybe-recalculate beg end)))))))
 
 (defmacro pen-gl-beg-end (&rest body)
   `(let* ((gl-beg (if mark-active
@@ -820,13 +820,13 @@ Use my position list code. Make it use rosie lang and external software."
     (save-excursion
       (let ((cand (next-button (point)))
             (bface (button-get cand 'face)))
-        (while (and cand (eq bface 'pen-glossary-button-face))
+        (while (and cand (eq bface 'glossary-button-face))
           (setq cand (next-button (point))))
         (setq pos (point))
         cand))
     (goto-char pos)))
 
-(defun pen-buttons-collect (&optional face)
+(defun buttons-collect (&optional face)
   "Collect the positions of visible links in the current `help-mode' buffer."
 
   (let* ((candidates)
@@ -869,9 +869,9 @@ Use my position list code. Make it use rosie lang and external software."
       (nreverse candidates))))
 
 (defun pen-glossary-buttons-collect ()
-  (append (pen-buttons-collect 'pen-glossary-button-face)
-          (pen-buttons-collect 'pen-glossary-candidate-button-face)
-          (pen-buttons-collect 'glossary-error-button-face)))
+  (append (buttons-collect 'glossary-button-face)
+          (buttons-collect 'glossary-candidate-button-face)
+          (buttons-collect 'glossary-error-button-face)))
 
 (defun pen-ace-link-glossary-button ()
   (interactive)
@@ -893,7 +893,8 @@ Use my position list code. Make it use rosie lang and external software."
 
   (let* ((tups (-filter (lambda (e) (string-equal (car (last e)) term)) pen-glossary-term-3tuples-global))
          (button-line (if tups
-                          (pen-umn (fz (pen-mnm (pp-map-line tups)) nil nil nil nil t))))
+                          (pen-umn (fz (pen-mnm (pp-map-line tups))
+                                       nil nil "Alt: " nil t))))
          (button-tuple (if button-line
                            (pen-eval-string (concat "'" button-line)))))
     (if button-tuple
@@ -930,8 +931,6 @@ Use my position list code. Make it use rosie lang and external software."
                        nil
                        "pen-go-to-glossary-file-for-buffer: "))))))
 
-
-
 (define-key global-map (kbd "H-i") 'pen-add-glossaries-to-buffer)
 (define-key global-map (kbd "H-Y I") 'pen-add-glossaries-to-buffer)
 
@@ -951,7 +950,7 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-remove-glossary-buttons-over-region (beg end)
   (interactive "r")
-  (remove-overlays beg end 'face 'pen-glossary-button-face))
+  (remove-overlays beg end 'face 'glossary-button-face))
 
 (defun pen-remove-all-glossary-buttons ()
   (interactive "r")
@@ -1085,7 +1084,7 @@ Use my position list code. Make it use rosie lang and external software."
         (b (button-at-point)))
     (if (and
          b
-         (eq (button-get b 'face) 'pen-glossary-button-face))
+         (eq (button-get b 'face) 'glossary-button-face))
         b
       nil))
   (button-at-point))
@@ -1093,7 +1092,7 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-button-get-link (b)
   (cond
-   ((eq (button-get b 'face) 'pen-glossary-button-face)
+   ((eq (button-get b 'face) 'glossary-button-face)
     (concat "[[y:" (pen-button-get-text b) "]]"))
    (t nil)))
 
@@ -1110,7 +1109,7 @@ Use my position list code. Make it use rosie lang and external software."
   (interactive)
   (avy-with ace-link-help
     (avy-process
-     (mapcar #'cdr (pen-buttons-collect))
+     (mapcar #'cdr (buttons-collect))
      (avy--style-fn avy-style)))
   (let* ((b (button-at-point))
          (lambda (pen-button-get-link b)))

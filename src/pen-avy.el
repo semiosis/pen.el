@@ -110,7 +110,7 @@
   (interactive)
   (avy-with ace-link-help
     (avy-process
-     (mapcar #'cdr (glossary-buttons-collect))
+     (mapcar #'cdr (pen-glossary-buttons-collect))
      (avy--style-fn avy-style))))
 
 (defun ace-link-click-glossary-button ()
@@ -118,7 +118,7 @@
   (ignore-errors
     (avy-with ace-link-help
       (avy-process
-       (mapcar #'cdr (glossary-buttons-collect))
+       (mapcar #'cdr (pen-glossary-buttons-collect))
        (avy--style-fn avy-style)))
     (push-button)))
 
