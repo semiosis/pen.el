@@ -10,13 +10,8 @@ if ! inside-tmux-p; then
     exit "$?"
 fi
 
-# Apostrophe
+# Guru
 # Version 1.0, bash
-
-# Apostrophe is a figure of speech in which a speaker directly addresses someone
-# (or something) that is not present or cannot respond in reality. ... An
-# apostrophe is often introduced by the exclamation "O," as when Juliet cries
-# out: "O Romeo, Romeo, Wherefore art thou Romeo?"
 
 FRAMETYPE=tty
 
