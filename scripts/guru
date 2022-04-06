@@ -77,6 +77,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -sps) {
+        do_split=y
+        shift
+    }
+    ;;
+
     -gui) {
         export PEN_USE_GUI=y
         FRAMETYPE=gui
@@ -86,6 +92,15 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+if test "$do_split" = "y"; then
+    if test -n "$context"; then
+        pen-sps $0 -context "$context"
+    else
+        pen-sps $0
+    fi
+    exit "$?"
+fi
 
 export USE_NVC
 export PEN_UPDATE
@@ -118,7 +133,7 @@ stdin_exists() {
 
 # PEN_USE_GUI is unset by design apparently
 
-if stdin_exists; then
+if stdin_exists && ! test -n "$context"; then
     context="$(cat)"
     exec <&1
 fi
