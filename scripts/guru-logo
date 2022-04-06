@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# penelfonts -f smbraille.tlf NL-SH
+
+cd ~/repos/figlet-fonts; echo Guru | toilet -f smbraille.tlf --gay

@@ -8,6 +8,10 @@ mkdir -p "$HOME/dump"
 mkdir -p "$HOME/repos"
 mkdir -p "$EMACSD/server"
 
+git() {
+    /usr/bin/git "$@"
+}
+
 agi() {
     apt install -y "$@"
 }
@@ -706,6 +710,11 @@ test -d $REPOS/gh-dash || (
     go get -u github.com/dlvhdr/gh-dash
 )
 
+test -d $REPOS/figlet-fonts || (
+    cd "$REPOS"
+    git clone "https://github.com/xero/figlet-fonts"
+)
+
 # Haskell: - gcup, cabal, hls
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 # =gcup tui= to configure
@@ -729,3 +738,5 @@ hoogle generate
 
 # For the clipboard
 agi xvfb
+
+agi toilet

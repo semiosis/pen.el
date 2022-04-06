@@ -3,6 +3,13 @@ export TTY
 
 sn="$(basename "$0")"
 
+if ! inside-tmux-p; then
+    # I must also cat into in-tm
+    # Make a new command for this purpose (capture stdin and send to container, then pipe into a new command)
+    in-tm "$0" "$@"
+    exit "$?"
+fi
+
 # Apostrophe
 # Version 1.0, bash
 
@@ -13,7 +20,7 @@ sn="$(basename "$0")"
 
 FRAMETYPE=tty
 
-apostrophe-logo 1>&2
+guru-logo 1>&2
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -96,7 +103,7 @@ stdin_exists() {
 #     exit 1
 # }
 
-if test "$#" -eq 0; then
+if ! stdin_exists && test "$#" -eq 0; then
     person="$(pen-readln "Chatbot name")"
 else
     person="$@"
@@ -108,7 +115,10 @@ if stdin_exists; then
     context="$(cat)"
 fi
 
-if test -n "$context"
+# echo "context: $context"
+# echo "person: $person"
+# exit
+if test -n "$context"; then
     # Rather than specifying directly to the prompt function,
     # this value is taken up and remembered for future prompting within the apostrophe
     pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru $(cmd-nice-posix "$context")))(delete-other-windows)))"
