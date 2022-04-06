@@ -140,7 +140,7 @@ fi
 
 if test -n "$context"; then
     if ! test -n "$subject"; then
-        subject="$(echo "$context" | penf --pool pf-get-language-1shot/1)"
+        subject="$(echo "$context" | pen-str words 20 | penf --pool pf-get-language-1shot/1)"
     fi
 
     if test -z "$subject"; then

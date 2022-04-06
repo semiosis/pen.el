@@ -436,6 +436,13 @@ case "$f" in
     }
     ;;
 
+    words) {
+        n="$1"
+        : "${n:="20"}"
+        pen-str garbify | pen-str join ' ' | cut -d ' ' -f "1-$n"
+    }
+    ;;
+
     one-of) {
         input="$(cat)"
         finds="$1"
