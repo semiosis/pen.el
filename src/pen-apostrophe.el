@@ -219,7 +219,9 @@
            language
            (if text
                (pen-detect-language-lm-ask text)
-             (pen-detect-language-ask))))
+             (pen-read-string "Topic:")
+             ;; (pen-batch (pen-detect-language-ask))
+             )))
          (sme-name (concat lang " guru")))
     (apostrophe-chat-about-selection
      (or text

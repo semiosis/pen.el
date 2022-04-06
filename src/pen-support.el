@@ -1060,6 +1060,11 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 ;; (let ((func-name "yo")) (pen-read-string "hi"))
 ;; TODO Use this is more places
 (defun pen-read-string (prompt &optional initial-input history default-value inherit-input-method)
+  (setq prompt
+        (cond
+         ((re-match-p ":$" prompt) (concat prompt " "))
+         ((re-match-p ": $" prompt) prompt)
+         (t (concat prompt ": "))))
   (let ((fnn (pen-var-value-maybe 'func-name)))
     (if (sor fnn)
         (setq prompt (concat fnn " ~ " prompt)))
