@@ -31,14 +31,16 @@ if test "$loop" = "y"; then
     # When ^D is used, read ends up with the exit code "1"
     while ! test "$code" -eq 1; do
         read -ep "$prompt_message: " query 1>&2
+        if test -z "$query" && test -n "$default"; then
+            query="$default"
+        fi
         code="$?"
         printf -- "%s\\n" "$query"
     done
 else
     read -ep "$prompt_message: " query 1>&2
+    if test -z "$query" && test -n "$default"; then
+        query="$default"
+    fi
     printf -- "%s\\n" "$query"
-fi
-
-if test -z "$query" && test -n "$default"; then
-    query="$default"
 fi
