@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+cd "$PENEL_DIR"
+{
+pwd
+
+echo scripts/
+find scripts -type f | while read -r line; do cat "$line" | awk 1; done | wc -l
+echo
+echo src/
+find src -type f | while read -r line; do cat "$line" | awk 1; done | wc -l
+} | pen-pavs
