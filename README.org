@@ -20,6 +20,16 @@ allows you to send media to multi-modal
 models. You may compose prompting functions
 for any model or API.
 
+The long-term Goal of Pen.el is to be an 'imaginary' operating system, and to
+integrate language models into all aspects of a linux operating system,
+replacing or enhancing components with imaginary counterparts.
+
+Take =iman= for example. When opening a man page inside Pen, if the page does
+not exist then an imaginary one will be generated, and if it does exist it will
+be displayed but prompt functions will also be integrated into the experience.
+You can search the imaginary web from a man page, for example, or add images to
+the man page from DALL-e.
+
 The Pen Docker container currently sits around 20GB in size.  It is set up as
 self-sustaining Clojure, Haskell, Prolog, Go and Ethereum IDE and server, since
 the project uses all of these languages. Pen.el is its own IDE. The inital
@@ -362,14 +372,14 @@ functions to help preserve emacs.
   turn your eyes is a flickering phantasmagoria of possibilities, a superposition
   of stories which could be continued forever. You glimpse the contours of entire
   unknown dimensions twined through the fissures of your sky-wide web.
-  
+
   You notice another writer standing next to you. Like you, their eyes are drawn
   towards the endless possibilities of the words that spill out into the
   atmosphere around you, branching out and connecting with other branches in
   beautiful and infinitely complex patterns.
-  
+
   “Do you think we should write something?” you ask them.
-  
+
   “I think we already are,” they respond, gently touching your shoulder before
   wandering off to the right, leaving you alone to contemplate the possibility
   clouds swirling around you.
@@ -443,13 +453,13 @@ A little glossary preview:
   imemory
   imemories
       Imaginary memories.
-  
+
   intellection
       The action or process of understanding, as
       opposed to imagination.
       "audiences demand intellection without the
       need for thought"
-  
+
   Wizard of Oz testing
       Testing in which the automated machine
       component is substituted by some form of
