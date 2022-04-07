@@ -238,7 +238,7 @@ killed after rendering."
 
 (defun lg-eww-browse-url (&rest body)
   "Same as 'eww-browse-url' except it renames the buffer after loading."
-  (interactive (list (read-string "url:")))
+  (interactive (list (read-string "LG url:")))
 
   (if (not body)
       (setq body '("http://google.com")))
