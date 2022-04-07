@@ -180,8 +180,15 @@ or specify any other coding system (and risk losing\n\
 ;; Disable this! purcell uses it
 (desktop-save-mode 0)
 
-(define-key global-map (kbd "C-M--") 'text-scale-decrease)
-(define-key global-map (kbd "C-M-=") 'text-scale-increase)
+(defun default-text-scale-decrease-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (pen-set-faces)
+    res))
+(advice-add 'default-text-scale-decrease :around #'default-text-scale-decrease-around-advice)
+(advice-add 'default-text-scale-increase :around #'default-text-scale-decrease-around-advice)
+
+(define-key global-map (kbd "C-M--") 'default-text-scale-decrease)
+(define-key global-map (kbd "C-M-=") 'default-text-scale-increase)
 
 ;; (setq browse-url-generic-program "google-chrome")
 ;; Make it so xmonad knows to switch to firefox. This would be good for documentation. Or I should just create a firefox wrapper for this.

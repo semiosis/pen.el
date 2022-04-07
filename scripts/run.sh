@@ -241,7 +241,7 @@ fi
 rm -f ~/.pen/pool/available/*
 if ! ls ~/.pen/pool/available/* 2>/dev/null | grep -q pen-emacsd; then
     echo Starting daemon pool in background 1>&2
-    # unbuffer pen-e sa &>/dev/null &
+    unbuffer pen-e sa &>/dev/null &
 fi
 
 # How to debug daemon

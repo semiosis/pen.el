@@ -1,5 +1,11 @@
 (require 'hide-mode-line)
 
+(require 'face-remap)
+
+(require 'default-text-scale)
+
+(default-text-scale-mode 1)
+
 (defun disable-truncate-code ()
   (setq print-level nil)
   (setq print-length nil))
