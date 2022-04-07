@@ -21,4 +21,6 @@ echo pensieve/
 cd "$MYGIT/semiosis/pensieve"
 pensieve_loc="$(find src -type f | while read -r line; do cat "$line" | awk 1; done | wc -l)"
 pl "$pensieve_loc"
+
+echo "$scripts_loc+$src_loc+$khala_loc+$pensieve_loc" | bc
 } | pen-pavs
