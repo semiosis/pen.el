@@ -28,6 +28,7 @@ func_trap() {
 }
 
 key="$1"
+key="$(p "$key" | sed -z 's/.//')"
 
 is_tty() {
     [[ -t 1 ]]
