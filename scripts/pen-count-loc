@@ -5,8 +5,16 @@ cd "$PENEL_DIR"
 pwd
 
 echo scripts/
-find scripts -type f | while read -r line; do cat "$line" | awk 1; done | wc -l
+scripts_loc="$(find scripts -type f | while read -r line; do cat "$line" | awk 1; done | wc -l)"
 echo
 echo src/
-find src -type f | while read -r line; do cat "$line" | awk 1; done | wc -l
+src_loc="$(find src -type f | while read -r line; do cat "$line" | awk 1; done | wc -l)"
+echo
+echo khala/
+cd "$MYGIT/semiosis/khala"
+khala_loc="$(find src -type f | while read -r line; do cat "$line" | awk 1; done | wc -l)"
+echo
+echo pensieve/
+cd "$MYGIT/semiosis/pensieve"
+pensieve_loc="$(find src -type f | while read -r line; do cat "$line" | awk 1; done | wc -l)"
 } | pen-pavs
