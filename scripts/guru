@@ -15,7 +15,7 @@ fi
 
 FRAMETYPE=tty
 
-guru-logo 1>&2
+guru-logo Guru 1>&2
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -128,6 +128,11 @@ stdin_exists() {
 
 # PEN_USE_GUI is unset by design apparently
 
+maybe_subject="$@"
+if test -n "$maybe_subject"; then
+    subject="$maybe_subject"
+fi
+
 if stdin_exists && ! test -n "$context"; then
     context="$(cat)"
     exec <&1
@@ -146,5 +151,9 @@ if test -n "$context"; then
     # this value is taken up and remembered for future prompting within the apostrophe
     pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru $(cmd-nice-posix "$context") $(cmd-nice-posix "$subject")))(delete-other-windows)))"
 else
-    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (call-interactively 'guru))(delete-other-windows)))"
+    if test -n "$subject"; then
+        pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru nil $(cmd-nice-posix "$subject")))(delete-other-windows)))"
+    else
+        pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (call-interactively 'guru))(delete-other-windows)))"
+    fi
 fi

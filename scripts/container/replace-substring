@@ -1,0 +1,35 @@
+#!/bin/bash
+export TTY
+
+# * This is great for templates
+# cat $HOME/scripts/replace-substring | replace-substring -m "o" -r "$(echo "hi\nyo")"
+
+pat=
+replacement=
+IGNORECASE=0
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -m) {
+        pat="$2"
+        pat="$(p "$pat" | pen-esc '\')"
+        shift
+        shift
+    }
+    ;;
+
+    -r) {
+        replacement="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -i) {
+        IGNORECASE=1
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+awk -v IGNORECASE=$IGNORECASE -v pat="$pat" -v r="$replacement" '{gsub(pat,r)}1'

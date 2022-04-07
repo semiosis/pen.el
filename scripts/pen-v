@@ -70,7 +70,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -ac|-colvim) {
-
         n_columns="$(calc-best-n-columns)"
         shift
     }

@@ -4,6 +4,8 @@ export TTY
 # NL·SH
 # Version 2.0, bash
 sn="$(basename "$0")"
+: "${PEN_APPNAME:="$sn"}"
+export PEN_APPNAME
 
 inside-docker-p() {
     test -f /.dockerenv
@@ -23,6 +25,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -nt) {
         export NO_TERM=y
+        shift
+    }
+    ;;
+
+    -appname) {
+        export PEN_APPNAME="$2"
+        shift
         shift
     }
     ;;
@@ -50,18 +59,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-     -nv) {
-         # Used by cterm-docker, not comint
-         export USE_NVC=y
-         USE_COMINT=n
-         USE_TERM=y
-         shift
-     }
-     ;;
+case "$PEN_APPNAME" in
+    nlsh) { prompt=pf-nlsh/2; } ;;
+    nlsc) { prompt=pf-code-snippet-from-natural-language/2; } ;;
+    nlq) { prompt=pf-instruct-an-ai-to-do-something/1; OS_OR_LANG=nlq; template="Show <query>"; maybe_cm=y; } ;;
 
-     *) break;
-esac; done
+    *)
+esac
 
 export USE_COMINT
 export USE_TERM
@@ -69,7 +73,7 @@ export USE_TERM
 : "${SHELL:="sh"}"
 
 if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; } && { test "$USE_COMINT" = y || test "$USE_TERM" = y; }; then
-    if test -z "$OS_OR_LANG"; then
+    if test -z "$OS_OR_LANG" && test "$arity" = 2; then
         if test "$#" -eq 0 && test -f /etc/issue; then
             OS_OR_LANG="$(cat /etc/issue | sed 's/\\.*//' | chomp) ($(basename $SHELL))"
         elif test "$#" -eq 0; then
@@ -80,10 +84,10 @@ if { ! test "$NO_DOCKER" = y; } && { ! inside-docker-p; } && { test "$USE_COMINT
     fi
 
     if test "$USE_TERM" = y; then
-        cterm-docker nlsh -term -os-or-lang "$OS_OR_LANG" -shell "$SHELL" "$@"
+        cterm-docker nlsh -appname "$PEN_APPNAME" -term -os-or-lang "$OS_OR_LANG" -shell "$SHELL" "$@"
     elif test "$USE_COMINT" = y; then
         export NORL=y
-        pen sh nlsh -nt -norl -os-or-lang "$OS_OR_LANG" -shell "$SHELL" "$@"
+        pen sh nlsh -appname "$PEN_APPNAME" -nt -norl -os-or-lang "$OS_OR_LANG" -shell "$SHELL" "$@"
     fi
     # pen sh nvc nlsh "$@"
     exit "$?"
@@ -116,6 +120,30 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+arity="$(printf -- "%s" "$prompt" | cut -d '/' -f 2)"
+
+if test "$maybe_cm" = "y"; then
+    cm="$@"
+    if test "$arity" = 1 && test -n "$cm"; then
+        # pena "$prompt" "$cm" | jq -r ".[]"
+        penf "$prompt" "$cm"
+        exit "$?"
+    fi
+fi
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+     -nv) {
+         # Used by cterm-docker, not comint
+         export USE_NVC=y
+         USE_COMINT=n
+         USE_TERM=y
+         shift
+     }
+     ;;
+
+     *) break;
+esac; done
+
 if test -z "$OS_OR_LANG"; then
     if test "$#" -eq 0 && test -f /etc/issue; then
         OS_OR_LANG="$(cat /etc/issue | sed 's/\\.*//' | chomp) ($(basename $SHELL))"
@@ -131,20 +159,24 @@ if ! test "$NORL" = "y"; then
     exit $?
 fi
 
-nlsh-logo 1>&2
+case "$PEN_APPNAME" in
+    nlsh) {
+        nlsh-logo 1>&2
+    }
+    ;;
+
+    *) {
+        pen_appname_cap="$(p "$PEN_APPNAME" | pen-str uc)"
+        generic-logo "$pen_appname_cap"
+    }
+    ;;
+esac
 
 # pf-code-snippet-from-natural-language/2
 # pf-nlsh/2
 
-case "$sn" in
-    nlsh) { prompt=pf-nlsh/2; } ;;
-    nlsc) { prompt=pf-code-snippet-from-natural-language/2; } ;;
-
-    *)
-esac
-
 if test "$USE_COMINT" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
-    comint -p "$OS_OR_LANG: " -E "nlsh -shell $SHELL $CMD"
+    comint -p "$OS_OR_LANG: " -E "nlsh -appname $PEN_APPNAME -shell $SHELL $CMD"
     exit $?
 fi
 
@@ -170,8 +202,23 @@ while IFS=$'\n' read -p "${OS_OR_LANG}: " -r nlcommand; do
 
     export UPDATE
 
-    pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ".[]"
-    # pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ". | map(length)[]"
+    if test -n "$template"; then
+        nlcommand="$(echo "$template" | template -query "$nlcommand")"
+    fi
+    case "$arity" in
+        1) {
+            pena "$prompt" "$nlcommand" | jq -r ".[]"
+        }
+        ;;
+
+        2) {
+            pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ".[]"
+            # pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ". | map(length)[]"
+        }
+        ;;
+
+        *)
+    esac
 
     lastcmd="$nlcommand"
 done

@@ -3,4 +3,16 @@ export TTY
 
 # penelfonts -f smbraille.tlf NL-SH
 
-cd ~/repos/figlet-fonts; echo Guru | toilet -f smbraille.tlf --gay
+if ! inside-docker-p; then
+    exit
+fi
+
+if test -n "$1"; then
+    appname="$1"
+else
+    sn="$(basename "$0")"
+    appname="$(p "$sn" | cut -d '-' -f 1)"
+    appname="$(p "$appname" | pen-str uc)"
+fi
+
+cd ~/repos/figlet-fonts; echo "$appname" | toilet -f smbraille.tlf --gay
