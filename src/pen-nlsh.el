@@ -21,5 +21,6 @@
   (interactive)
   ;; (pen-sps (pen-cmd "pen-eterm" "nlsh" "-nd" os))
   (pen-sps (pen-cmd "nlq")))
+(defalias 'nlq 'sps-nlq)
 
 (provide 'pen-nlsh)
