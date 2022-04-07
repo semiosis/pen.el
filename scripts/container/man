@@ -3,6 +3,14 @@ export TTY
 
 parent_bn="$(ps -o comm= $PPID)"
 
+is_tty() { [ -t 1 ]; }
+
+if is_tty; then
+    export EDITOR=v
+else
+    export EDITOR=sps-v
+fi
+
 if test "$parent_bn" = emacs || test "$TERM" = dumb; then
     /usr/bin/man "$@"
 elif man-page-exists-p "$@"; then
