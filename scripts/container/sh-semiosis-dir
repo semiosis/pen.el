@@ -16,6 +16,7 @@ C  zcd ~/.emacs.d/host/creation
 Y  zcd ~/.emacs.d/host/yas-snippets
 P  zcd ~/.emacs.d/host/pensieve
 r  zcd ~/.emacs.d/host/rhizome
+u  zcd $HOME/.emacs.d/host/pen-ethereum-development-ide
 l  zcd ~/.emacs.d/host/ilambda
 x  zcd ~/.emacs.d/host/examplary
 D  zcd ~/.emacs.d/host/dni
@@ -62,6 +63,7 @@ case "$d" in
     Y) cmd="zcd ~/.emacs.d/host/yas-snippets" ;;
     P) cmd="zcd ~/.emacs.d/host/pensieve" ;;
     r) cmd="zcd ~/.emacs.d/host/rhizome" ;;
+    u) cmd="zcd $HOME/.emacs.d/host/pen-ethereum-development-ide" ;;
     l) cmd="zcd ~/.emacs.d/host/ilambda" ;;
     x) cmd="zcd ~/.emacs.d/host/examplary" ;;
     D) cmd="zcd ~/.emacs.d/host/dni" ;;
