@@ -1,5 +1,8 @@
 (require 'term)
 
+;; (setq-default cursor-type 'bar)
+(setq-default cursor-type t)
+
 (setq explicit-shell-file-name "/bin/bash")
 
 ;; I can't abolish C-c from all the minor modes
