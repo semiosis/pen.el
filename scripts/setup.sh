@@ -317,6 +317,14 @@ agi moreutils # vipe
 agi xclip
 agi buffer
 
+IFS= read -r -d '' XR_CODE <<'HEREDOC'
+Emacs.pane.menubar.background: darkGrey
+Emacs.pane.menubar.foreground: black
+Emacs*menubar.margin: 0
+Emacs*shadowThickness: 1
+HEREDOC
+printf -- "%s\n" "$XR_CODE" >> $HOME/.Xresources
+
 IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
 stty stop undef; stty start undef; 
 eval $(resize) &>/dev/null
