@@ -767,3 +767,8 @@ agi libnotify-bin
 
 # It turns out I need a normal user to install nix, which needs sudo
 agi sudo
+
+## Install nix
+# login pen
+# sh <(curl -L https://nixos.org/nix/install) --no-daemon
+# curl https://dapp.tools/install | sh
