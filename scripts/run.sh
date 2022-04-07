@@ -22,6 +22,16 @@ if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host
     exit "$?"
 fi
 
+if test -f $HOME/.emacs.d/host/config/pen.vim; then
+    penvim_fp=$HOME/.emacs.d/host/config/pen.vim
+elif test -f $HOME/.emacs.d/host/config/pen.vim; then
+    penvim_fp=$HOME/.emacs.d/host/config/pen.vim
+fi
+
+if test -d ~/.pen && ! test -f ~/.pen/pen.vim && test -f "$penvim_fp"; then
+    cp -a "$penvim_fp" ~/.pen
+fi
+
 if test -d ~/.pen/documents/notes; then
     rm -rf ~/notes
     ln -sf ~/.pen/documents/notes ~/
