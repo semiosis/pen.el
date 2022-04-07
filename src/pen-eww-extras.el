@@ -142,7 +142,7 @@ case, this function doesn't actually fetch URL.  BUFFER will be
 killed after rendering."
   (interactive
    (let ((uris (eww-suggested-uris)))
-     (list (read-string (format-prompt "Enter URL or keywords"
+     (list (pen-read-string (format-prompt "Enter URL or keywords"
                                        (and uris (car uris)))
                         nil 'eww-prompt-history uris)
            (prefix-numeric-value current-prefix-arg))))
@@ -228,17 +228,17 @@ killed after rendering."
 
 (defun lg-eww-js (url)
   "Same as 'eww' except it renames the buffer after loading."
-  (interactive (list (read-string "url:")))
+  (interactive (list (pen-read-string "LG url:")))
   (lg-eww url t))
 
 (defun lg-eww-nojs (url)
   "Same as 'eww' except it renames the buffer after loading."
-  (interactive (list (read-string "url:")))
+  (interactive (list (pen-read-string "LG url:")))
   (lg-eww url -1))
 
 (defun lg-eww-browse-url (&rest body)
   "Same as 'eww-browse-url' except it renames the buffer after loading."
-  (interactive (list (read-string "LG url:")))
+  (interactive (list (pen-read-string "LG url:")))
 
   (if (not body)
       (setq body '("http://google.com")))
@@ -250,7 +250,7 @@ killed after rendering."
 
 (defun lg-eww-browse-url-chrome (&rest body)
   "Same as 'eww-browse-url' except it renames the buffer after loading."
-  (interactive (list (read-string "LG url:")))
+  (interactive (list (pen-read-string "LG url:")))
 
   (setq eww-use-chrome t)
 
@@ -602,7 +602,7 @@ Differences in #targets are ignored."
     (sps cmd nw_args input dir)))
 
 (defun browsh (&rest body)
-  (interactive (list (read-string "url:")))
+  (interactive (list (pen-read-string "url:")))
 
   (if (not body)
       (setq body '("http://google.com")))
@@ -625,7 +625,7 @@ word(s) will be searched for via `eww-search-prefix'."
           (prompt (concat "Enter URL or keywords"
                           (if uris (format " (default %s)" (car uris)) "")
                           ": ")))
-     (list (read-string prompt nil nil uris))))
+     (list (pen-read-string prompt nil nil uris))))
 
   ;; It works when placed here
   (pen-set-faces)
@@ -803,7 +803,7 @@ word(s) will be searched for via `eww-search-prefix'."
   eww-update-ci)
 
 (defun eww-add-bookmark-manual (uri)
-  (interactive (list (read-string "uri:")))
+  (interactive (list (pen-read-string "uri:")))
   (eww-read-bookmarks)
   (dolist (bookmark eww-bookmarks)
     (when (equal (plist-get eww-data :url) (plist-get bookmark :url))
