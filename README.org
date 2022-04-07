@@ -38,14 +38,14 @@ be displayed but prompt functions will also be integrated into the experience.
 You can search the imaginary web from a man page, for example, or add images to
 the man page from DALL-e.
 
-The Pen Docker container currently sits around 20GB in size.  It is set up as
-self-sustaining Clojure, Haskell, Prolog, Python, Go and Ethereum IDE and
-server, since the project uses all of these languages, but another reason to
-bundle toolchains is to develop imaginary programming libraries and tools for
-all of them. _Pen.el is its own IDE_. The inital emacs can be run in GUI (by
-running with =pen=) or terminal mode (running with =pin= or =pen -nw=). The
-clipboard and certain volumes specified in =~/.pen/pen.yaml=) are shared with
-the host machine.
+The Pen Docker container currently sits around 25GB in size and 92263 lines of
+code. It is set up as self-sustaining Clojure, Haskell, Prolog, Python, Go and
+Ethereum IDE and server, since the project uses all of these languages, but
+another reason to bundle toolchains is to develop imaginary programming
+libraries and tools for all of them. _Pen.el is its own IDE_. The inital emacs
+can be run in GUI (by running with =pen=) or terminal mode (running with =pin=
+or =pen -nw=). The clipboard and certain volumes specified in
+=~/.pen/pen.yaml=) are shared with the host machine.
 
 [[./docs/images/menu.png]]
 
