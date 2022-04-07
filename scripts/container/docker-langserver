@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+sn="$(basename "$0")"
+lsp_path="$(which "$sn" | grep /lsp/)"
+
+if test -n "$lsp_path"; then
+    "$lsp_path" "$@"
+fi
