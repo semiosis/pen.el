@@ -1997,6 +1997,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         --env PEN_SHARE_X \
         --env PEN_NO_TM \
         --env INTERACTIVE \
+        --env EXPOSE_ETHEREUM \
         --env PEN_CONTAINER_NAME \
         --env TTYD_PORT \
         --env KHALA_PORT \
@@ -2121,6 +2122,7 @@ pen_eval() {
 
 # pen-pl "$shcode" | pen-tv &>/dev/null
 
+export EXPOSE_ETHEREUM
 export INTERACTIVE
 if test -n "$fuzzy"; then
     pen_eval "$shcode" | eval "$fuzzy" | pen-str unonelineify
