@@ -20,12 +20,12 @@ allows you to send media to multi-modal
 models. You may compose prompting functions
 for any model or API.
 
-The Pen Docker container currently sits around 20GB in size.
-It is set up as self-sustaining Clojure, Haskell, Prolog, Go and Ethereum IDE and server,
-since it uses all of those languages. The inital emacs can be run in GUI (by
-running with =pen=) or terminal mode (running with =pin= or =pen -nw=). The
-clipboard and certain volumes specified in =~/.pen/pen.yaml=) are shared with
-the host machine.
+The Pen Docker container currently sits around 20GB in size.  It is set up as
+self-sustaining Clojure, Haskell, Prolog, Go and Ethereum IDE and server, since
+the project uses all of these languages. Pen.el is its own IDE. The inital
+emacs can be run in GUI (by running with =pen=) or terminal mode (running with
+=pin= or =pen -nw=). The clipboard and certain volumes specified in
+=~/.pen/pen.yaml=) are shared with the host machine.
 
 [[./docs/images/menu.png]]
 
