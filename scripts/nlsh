@@ -62,7 +62,7 @@ esac; done
 case "$PEN_APPNAME" in
     nlsh) { prompt=pf-nlsh/2; } ;;
     nlsc) { prompt=pf-code-snippet-from-natural-language/2; } ;;
-    nlq) { prompt=pf-instruct-an-ai-to-do-something/1; OS_OR_LANG=nlq; template="Show <query>"; maybe_cm=y; } ;;
+    nlq) { prompt=pf-instruct-an-ai-to-do-something/1; OS_OR_LANG=nlq; header="Enter queries (e.g. 'latest version of node'):" template="Show <query>"; maybe_cm=y; } ;;
 
     *)
 esac
@@ -185,7 +185,8 @@ test -n "$OS_OR_LANG" || {
     exit 2
 }
 
-echo Enter your commands in natural language.
+: "${header:="Enter your commands in natural language."}"
+echo "$header"
 echo
 
 export USE_CONVERSATION_MODE=y

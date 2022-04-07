@@ -17,4 +17,9 @@
   ;; (pen-sps (pen-cmd "pen-eterm" "nlsh" "-nd" os))
   (pen-sps (pen-cmd "nlsh" os)))
 
+(defun sps-nlq ()
+  (interactive)
+  ;; (pen-sps (pen-cmd "pen-eterm" "nlsh" "-nd" os))
+  (pen-sps (pen-cmd "nlq")))
+
 (provide 'pen-nlsh)

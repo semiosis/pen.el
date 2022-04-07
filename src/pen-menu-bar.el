@@ -573,6 +573,26 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-nlq-menu
+  (let ((menu (make-sparse-keymap "Natural language query")))
+    (bindings--define-key menu [mi-sps-nlq]
+      '(menu-item "Start an information shell" sps-nlq
+                  :help "Make queries for information using natural language"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+(defset menu-bar-guru-menu
+  (let ((menu (make-sparse-keymap "Guru")))
+    (bindings--define-key menu [mi-guru]
+      '(menu-item "Start a guru with topic and screen text" guru
+                  :help "Talk to a guru about a chosen topic. Discuss the screen text or selected text."))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-mtp-menu
   (let ((menu (make-sparse-keymap "MadTeaParty")))
     (bindings--define-key menu [mi-channel-say-something]
@@ -956,6 +976,12 @@
                   :help "Run imaginary interpreters"))
     (bindings--define-key menu [mi-menu-bar-nlsh-menu]
       `(menu-item "🗣️  Natural language shell" ,menu-bar-nlsh-menu
+                  :help "Run a natural language shell"))
+    (bindings--define-key menu [mi-menu-bar-nlq-menu]
+      `(menu-item "🛈️  Natural language query" ,menu-bar-nlq-menu
+                  :help "Run a natural language query shell"))
+    (bindings--define-key menu [mi-menu-bar-guru-menu]
+      `(menu-item "♓︎️ Guru" ,menu-bar-guru-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
       `(menu-item "👻 Chann.el" ,menu-bar-channel-menu

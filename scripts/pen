@@ -851,6 +851,7 @@ if test "$start_shell" = "y"; then
 
         IFS= read -r -d '' shcode <<HEREDOC
         docker run -d --rm --name "$PEN_CONTAINER_NAME" -ti \
+            --detach-keys="$docker_detach_keys" \
             $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
             $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
             semiosis/pen.el:latest \
@@ -865,12 +866,12 @@ HEREDOC
     if is_tty; then
         if test "$input_captured" = y; then
             mkdir -p ~/.pen
-            docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; cat ~/.pen/pen_stdin.txt | $CMD"
+            docker exec --detach-keys="$docker_detach_keys" -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; cat ~/.pen/pen_stdin.txt | $CMD"
         else
-            docker exec -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+            docker exec --detach-keys="$docker_detach_keys" -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
         fi
     else
-        docker exec "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+        docker exec --detach-keys="$docker_detach_keys" "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
     fi
 
     if test "$no_start_emacs" = y; then
