@@ -56,5 +56,8 @@ if printf -- "%s\n" "$candidate_shell" | grep -q -P '(bash|zsh|sh|fish)'; then
 
         *)
     esac
-    export SHELL="$candidate_shell"
+    : "${SHELL:="$candidate_shell"}"
+    # Interestingly, I need 'a' shell to export or Pen.el GUI will hang when initiating Pen.
+    : "${SHELL:="bash"}"
+    export SHELL
 fi
