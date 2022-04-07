@@ -23,11 +23,10 @@ allows you to send media to multi-modal
 models. You may compose prompting functions
 for any model or API.
 
-The long-term Goal of Pen.el is to be an
-'imaginary' operating system, and to integrate
-LMs into all aspects of a linux operating
-system, replacing or enhancing components with
-imaginary counterparts.
+The long-term Goal of Pen.el is to be a small 'imaginary' operating system (as emacs is regarded to be) and
+server which facilitates external applications through LSP, but internally, it
+integrates prompting into all aspects of a linux operating system, replacing or
+enhancing components with imaginary counterparts.
 
 A textual interface is of greater importance
 than graphics in Pen.el, but Pen does
