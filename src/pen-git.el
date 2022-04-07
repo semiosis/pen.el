@@ -1,3 +1,5 @@
+(setq vc-follow-symlinks t)
+
 (defun git-get-top-fast ()
   (locate-dominating-file default-directory ".git"))
 
