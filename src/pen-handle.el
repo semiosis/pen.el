@@ -93,6 +93,33 @@
                    lispy-flow)
         :prevdef '(pen-prog-prev-def))
 
+(handle '(go-mode)
+        ;; Re-using may not be good, actually, if I'm working with multiple projects
+        :repls (list)
+        :formatters '(lsp-format-buffer)
+        :docs '(pen-doc-override
+                lsp-describe-thing-at-point)
+        :toggle-test '(projectile-toggle-between-implementation-and-test
+                       clojure-open-test)
+        :fz-sym '()
+        :godef '(lsp-find-definition
+                 cider-find-var
+                 xref-find-definitions-immediately
+                 helm-gtags-dwim)
+        :errors '()
+        :docsearch '(pen-doc)
+        :docfun '()
+
+        :refactor '()
+        :rename-symbol '(lsp-rename cljr-rename-symbol)
+        :references '(lsp-ui-peek-find-references lsp-find-references pen-counsel-ag-thing-at-point)
+        :projectfile '()
+        :preverr '()
+        :nexterr '()
+
+        :nextdef '(pen-prog-next-def)
+        :prevdef '(pen-prog-prev-def))
+
 (handle '(prog-mode)
         :complete '()
         ;; This is for running the program
