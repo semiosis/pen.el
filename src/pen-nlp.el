@@ -42,7 +42,6 @@
 (defun gen-google-ngram-queries (s i)
   (-filter-not-empty-string
    (str2list
-    ;; " | perl -e 'print sort { length($b) <=> length($a) } <>'"
     (snc (concat "echo " (pen-q s) " | google-ngram-query-combinations " (str i))))))
 
 (defun ngram-query-replace-this ()
@@ -90,7 +89,7 @@
        (interactive (list (pen-selected-text)))
        (if (not input)
            (setq input (pen-selected-text)))
-       (let ((tf (pen-snc "tf txt" input)))
+       (let ((tf (pen-snc "pen-tf txt" input)))
          (pen-sps (concat "cat " (pen-q tf) " | " ,cmd " | vs"))))))
 
 (cl-loop for s in
@@ -135,7 +134,7 @@
           t)))
 
 (defun openai-correct-word (&optional word)
-  (interactive (list ;; (word-at-point-string-string)
+  (interactive (list
                 (car (flyspell-get-word))))
 
   (flyspell-auto-correct-word (chomp (pen-single-batch (pf-correct-word/1 word)))))
