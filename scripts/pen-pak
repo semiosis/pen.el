@@ -28,7 +28,7 @@ func_trap() {
 }
 
 key="$1"
-key="$(p "$key" | sed -z 's/.//')"
+key="$(p "$key" | sed -z 's/\(.\).*/\1/')"
 
 is_tty() {
     [[ -t 1 ]]
