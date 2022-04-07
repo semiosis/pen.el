@@ -2,6 +2,8 @@
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
+tmux new -d init
+
 # Do this so emacs doesn't break when using docker commit
 find ~/.emacs.d/host/ -empty -type d -exec rmdir {} \; 2>/dev/null
 
