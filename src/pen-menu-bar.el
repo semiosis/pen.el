@@ -972,16 +972,16 @@
       `(menu-item "𝑖man" iman
                   :help "Get man page"))
     (bindings--define-key menu [mi-menu-bar-real-menu]
-      `(menu-item "ℝi Real interpreters" ,menu-bar-real-menu
-                  :help "Run imaginary interpreters"))
+      `(menu-item "ℝi interpreters" ,menu-bar-real-menu
+                  :help "Real interpreters"))
     (bindings--define-key menu [mi-menu-bar-ii-menu]
-      `(menu-item "𝑖i Imaginary interpreters" ,menu-bar-ii-menu
-                  :help "Run imaginary interpreters"))
+      `(menu-item "𝑖i interpreters" ,menu-bar-ii-menu
+                  :help "Imaginary interpreters"))
     (bindings--define-key menu [mi-menu-bar-nlsh-menu]
-      `(menu-item "🗣️  Natural language shell" ,menu-bar-nlsh-menu
+      `(menu-item "🗣️  NL shell" ,menu-bar-nlsh-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-nlq-menu]
-      `(menu-item "🛈️  Natural language query" ,menu-bar-nlq-menu
+      `(menu-item "🛈️  NL query" ,menu-bar-nlq-menu
                   :help "Run a natural language query shell"))
     (bindings--define-key menu [mi-menu-bar-guru-menu]
       `(menu-item "♓︎️ Guru" ,menu-bar-guru-menu
@@ -993,8 +993,8 @@
       `(menu-item "💻 ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
     (bindings--define-key menu [mi-ielm]
-      '(menu-item "𝑖λ IELM (elisp with ilambda)" ielm
-                  :help "Work with ilambda functions and macros"))
+      '(menu-item "𝑖λ IELM" ielm
+                  :help "Work with ilambda functions and macros in elisp"))
     (bindings--define-key menu [mi-ilambda-repl]
       '(menu-item "𝑖λ quick ilambda REPL" ilambda-repl
                   :help "Run ilambda functions without coding"))
