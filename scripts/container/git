@@ -3,12 +3,17 @@ export TTY
 
 # This will use the host git to run git commands, if ssh to host is available
 
-if pen-rc-test host-ssh-master; then
-    SSH_HOST_ALLOWED=y
+if ! test -n "$SSH_HOST_ALLOWED" && pen-rc-test host-ssh-master; then
+    : "${SSH_HOST_ALLOWED:="y"}"
 else
-    SSH_HOST_ALLOWED=n
+    : "${SSH_HOST_ALLOWED:="n"}"
 fi
 export SSH_HOST_ALLOWED
+
+if test "$SSH_HOST_ALLOWED" = "n"; then
+    /usr/bin/git "$@"
+    exit "$?"
+fi
 
 # It's important to disable tty for git. less will still function
 export USE_TTY=n
