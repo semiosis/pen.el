@@ -3,7 +3,7 @@ Visit https://semiosis.github.io/ for applications and demonstrations.
 
 _Undergoing rapid development_ - Likely issues.
 
-Pen.el is an =emacs 2.0=, not a package, but you may run it as a server and integrate it with
+Pen.el is a docker application based on emacs, but you may run it as a server and integrate it with
 vim (see [[./config/pen.vim]) and your own emacs using the thin client emacs package [[./src/pen-client.el]].
 
 =Pen.el= integrates LMs (LMs) such as OpenAI's
