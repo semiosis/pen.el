@@ -229,7 +229,18 @@
 ;; (define-key global-map (kbd "M-m M-m") 'magit-status)
 (if (inside-docker-p)
     (progn
-      (define-key pen-map (kbd "C-w") #'pen-c-w-cut)
+      ;; Do these need to be pen-map?
+      ;; pen-map is annoying in term
+      ;; (define-key pen-map (kbd "C-w") nil)
+      (define-key global-map (kbd "C-w") #'pen-c-w-cut)
+      ;; (define-key pen-map (kbd "M-m M-m") 'magit-status)
+
+      ;; This is harder to remove.      
+      ;; - I'm trying to fix term by removing
+      ;; these pen bindings, but I don't think
+      ;; it's worth it. I'd have to remove all M-m pen bindings.
+      ;; (define-key global-map (kbd "M-m") nil)
+      ;; (define-key global-map (kbd "M-m M-m") 'magit-status)
       (define-key pen-map (kbd "M-m M-m") 'magit-status)
       (define-key pen-map (kbd "M-l C-s") #'pen-swipe)
       (define-key pen-map (kbd "M-' C-s") #'pen-swipe)))

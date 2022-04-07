@@ -11,16 +11,20 @@
   (xc (pen-mnm (xc nil t t)) t t)
   (call-interactively 'cua-paste))
 
+(defun backward-kill-word-or-region (&optional arg)
+  "Calls `kill-region' when a region is active and
+`backward-kill-word' otherwise. ARG is passed to
+`backward-kill-word' if no region is active."
+  (interactive "p")
+  (if (region-active-p)
+      (call-interactively #'kill-region)
+    (backward-kill-word arg)))
+
 (defun pen-c-w-cut ()
   "Cuts the word before cursor if a region is not selected, and performs regular C-w instead if there is a region"
   (interactive)
-  (if (not (region-active-p))
-      (progn
-        (call-interactively 'cua-cut-region)
-        (xc (yanked) t))
-    (let ((pen nil))
-      (execute-kbd-macro (kbd "C-w"))
-      (xc (yanked) t))))
+  (call-interactively 'backward-kill-word-or-region)
+  (xc (yanked) t))
 
 (defun cua-copy-region-around-advice (proc &rest args)
   (let ((res (apply proc args)))
