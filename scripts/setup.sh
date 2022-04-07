@@ -740,3 +740,5 @@ hoogle generate
 agi xvfb
 
 agi toilet
+
+agi bindfs
