@@ -777,3 +777,5 @@ agi sudo
 # login pen
 # sh <(curl -L https://nixos.org/nix/install) --no-daemon
 # curl https://dapp.tools/install | sh
+
+agi ispell
