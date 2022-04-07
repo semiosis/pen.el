@@ -93,9 +93,14 @@
 
     ;; Send the function key to terminal
     (dolist (spec term-function-key-alist)
+      ;; (define-key map
+      ;;   (read-kbd-macro (message (format "C-c <%s>" (car spec))))
+      ;;   'term-send-function-key)
       (define-key map
-        (read-kbd-macro (message (format "C-c <%s>" (car spec))))
-        'term-send-function-key))
+        (read-kbd-macro (message (format "<%s>" (car spec))))
+        'term-send-function-key)
+      ;; (define-key term-raw-map (kbd "C-M-\\") nil)
+      )
 
     (while (< i 128)
       ;; if not C-c
