@@ -764,3 +764,6 @@ agi elinks
 
 # notify-send
 agi libnotify-bin
+
+# It turns out I need a normal user to install nix, which needs sudo
+agi sudo
