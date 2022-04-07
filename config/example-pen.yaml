@@ -119,6 +119,15 @@ disabled-engines:
 - "AlephAlpha.*"
 disabled-models:
 
+lsp: on
+lsp_lens: on
+# ethereum: on
+notify: on
+
+# This sets up an ssh master to the host and gives permission for scripts such as git
+# to use the host
+host-ssh-master: on
+
 # Create docker container mount points for these directories
 # They are found under /volumes on the container
 volumes:

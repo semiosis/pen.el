@@ -220,9 +220,9 @@
 (pen-truly-selective-binding "P" (df pb-region () (bp-tty pb (pen-selected-text)) (deactivate-mark)))
 
 (defun spv-egr (query)
-  (interactive (list (or (selected-text)
+  (interactive (list (or (pen-selected-text)
                          (read-string "egr:"))))
-  (spv
+  (pen-spv
    (concat "egr " query))
   (deactivate-mark))
 (defalias 'egr 'spv-egr)
