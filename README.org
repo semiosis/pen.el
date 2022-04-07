@@ -1,6 +1,11 @@
 * =Pen.el= (_Prompt engineering_ in emacs)
 Visit https://semiosis.github.io/ for applications and demonstrations.
 
+_Undergoing rapid development_ - Likely issues.
+
+Pen.el is an emacs 2.0, but you may run it as a server and integrate it with
+vim and your own emacs using the thin client.
+
 =Pen.el= integrates LMs (LMs) such as OpenAI's
 =GPT-3= or EleutherAI's =GPT-J= into emacs by
 generating functions from prompts that map
