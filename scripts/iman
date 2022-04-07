@@ -1,8 +1,16 @@
 #!/bin/bash
 export TTY
 
+if ! test "$#" -eq 1; then
+    exit 1
+fi
+
+if ! printf -- "%s\n" "$1" | grep -q -P '^[a-zA-Z0-9_-]*$'; then
+    exit 1
+fi
+
 page="$1"
 test -n "$1" || exit
 
 echo Imagining man page for "$1"... 1>&2
-penf -nto --tokens 300 pf-imagine-a-man-page/1 "$1" | pen-pavs
+penf -nto --tokens 300 --pool pf-imagine-a-man-page/1 "$1" | pen-pavs
