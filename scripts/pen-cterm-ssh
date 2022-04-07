@@ -157,7 +157,7 @@ if test "$SSH_TO_HOST" = "y" && test "$SSH_HOST_ALLOWED" = y; then
     if test "$USE_PROFILE" = "y"; then
         SETUP=". ~/.profile; $SETUP"
     fi
-    
+
     CWD="$(printf -- "%s" "$CWD" | sed 's=^/volumes==')"
     CWD="$(printf -- "%s" "$CWD" | sed 's=^/root/.emacs.d/host=$HOME/.emacs.d=')"
     CWD="$(printf -- "%s" "$CWD" | sed 's=^/root=$HOME=')"
