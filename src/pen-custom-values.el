@@ -152,3 +152,5 @@
  '(vc-annotate-very-old-color nil)
  '(vc-follow-symlinks t)
  '(window-divider-mode nil))
+
+(provide 'pen-custom-values)
