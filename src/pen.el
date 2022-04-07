@@ -80,6 +80,7 @@
 (require 'pen-which-key)
 (require 'pen-elisp)
 (require 'pen-custom)
+(require 'pen-custom-values)
 (require 'pen-configure)
 (pen-require 'pen-selected)
 (require 'pen-hist)
@@ -158,7 +159,7 @@
 (require 'pen-major-mode)
 
 (require 'pen-aliases)
-;; (require 'pen-org)
+(require 'pen-org)
 
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."
