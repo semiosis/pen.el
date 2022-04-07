@@ -1570,7 +1570,8 @@ case "$f" in
         NEOVIM_TMUX=n
         : "${RETURN_ID:="n"}"
         SILENCE=n
-        TRAPINT=y # This is so the window doesn't close if you press C-c in less
+        # TRAPINT=y # This is so the window doesn't close if you press C-c in less
+        TRAPINT=n # This is so the window doesn't close if you press C-c in less
         while :; do opt="$1"; case "$opt" in
             -n) {
                 window_name="$2"
