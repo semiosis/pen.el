@@ -23,6 +23,7 @@ export PATH=$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts:$PATH
 export PATH=$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container:$PATH
 export PATH="$PATH:/root/go/bin"
 export PATH="$PATH:/root/.cargo/bin/cargo"
+export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 
 if ! test -n "$PEN_DAEMON"; then
     . ~/.cargo/env
@@ -33,6 +34,7 @@ export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
 export EDITOR=sps-w-pin
 export BROWSER=sps-lg
+export PAGER="sps -maybe v"
 
 [ -f "/root/.ghcup/env" ] && . "/root/.ghcup/env" # ghcup-env
 

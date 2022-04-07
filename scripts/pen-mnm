@@ -19,6 +19,7 @@ export PEN_SCRIPTS="$PENELD/scripts"
 export PROMPTSD="$EMACSD/prompts"
 export PROMPTS="$PROMPTSD/prompts"
 export BROWSER="eww -x"
+export MYGIT=/volumes/home/shane/var/smulliga/source/git
 
 sn="$(basename "$0")"
 
@@ -32,6 +33,7 @@ unminimise() {
                  -e "s#\$TMP#${TMP}#g" \
                  -e "s#\$HOME#${HOME}#g" \
                  -e "s#\$PENELD#${PENELD}#g" \
+                 -e "s#\$MYGIT#${MYGIT}#g" \
                  -e "s#\$PENCONF#${PENCONF}#g" \
                  -e "s#\$GLOSSARIES#${GLOSSARIES}#g" \
                  -e "s#\${GOPATH%%:\*}#${GOPATH%%:\*}#g" \
@@ -45,6 +47,7 @@ minimise() {
     sed $SEDOPTS -e "s#${HOME}${HOME}#${HOME}#g" \
                  -e "s#${NOTES}#\$NOTES#g" \
                  -e "s#${PENELD}#\$PENELD#g" \
+                 -e "s#${MYGIT}#\$MYGIT#g" \
                  -e "s#${PENCONF}#\$PENCONF#g" \
                  -e "s#${GLOSSARIES}#\$GLOSSARIES#g" \
                  -e "s#^/home/[a-zA-Z]\+#$HOME#g" \

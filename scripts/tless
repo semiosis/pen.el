@@ -56,7 +56,7 @@ fp="$(pen-tf tless "$ext" 0</dev/null | pen-ds "$fnid" | pen-xc -)" # this accep
 touch "$fp"
 
 set -m
-{ if test "$INSIDE_NEOVIM" = "y"; then pen-strip-ansi; else cat; fi; } > "$fp" &
+{ if test "$INSIDE_NEOVIM" = "y"; then pen-strip-ansi | pen-mnm; else cat | pen-mnm; fi; } > "$fp" &
 
 if test "$SOAK" = "y"; then
     wait
@@ -70,4 +70,7 @@ else
     less +F "$@" "$fp"
 fi
 exec 0<&-
-jobs -p | xargs kill 2>/dev/null
+
+{
+jobs -p | xargs kill
+} 2>/dev/null
