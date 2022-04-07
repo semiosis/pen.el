@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename -- "$0")"
+
+msudo -u pen "$sn" "$@"
