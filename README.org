@@ -26,7 +26,7 @@ for any model or API.
 The long-term Goal of Pen.el is to be a small 'imaginary' operating system (as emacs is regarded to be) and
 server which facilitates external applications through LSP, but internally, it
 integrates prompting into all aspects of a linux operating system, replacing or
-enhancing components with imaginary counterparts.
+enhancing components with imaginary counterparts. There's a microcosm of prompting within Pen.el.
 
 A textual interface is of greater importance
 than graphics in Pen.el, but Pen does
