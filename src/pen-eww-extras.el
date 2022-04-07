@@ -250,7 +250,7 @@ killed after rendering."
 
 (defun lg-eww-browse-url-chrome (&rest body)
   "Same as 'eww-browse-url' except it renames the buffer after loading."
-  (interactive (list (read-string "url:")))
+  (interactive (list (read-string "LG url:")))
 
   (setq eww-use-chrome t)
 
