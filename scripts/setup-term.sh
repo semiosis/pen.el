@@ -59,5 +59,6 @@ if printf -- "%s\n" "$candidate_shell" | grep -q -P '(bash|zsh|sh|fish)'; then
     : "${SHELL:="$candidate_shell"}"
     # Interestingly, I need 'a' shell to export or Pen.el GUI will hang when initiating Pen.
     : "${SHELL:="bash"}"
+    # echo "$SHELL" >> /tmp/shells2.txt
     export SHELL
 fi
