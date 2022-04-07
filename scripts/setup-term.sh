@@ -41,9 +41,7 @@ export PAGER="sps -maybe v"
 # Needed for nlsh, but it killed pend because pen would infinite-loop load
 # export SHELL="$(basename $0)"
 # need to export the SHELL for apo/nlsh/guru/comint if it is a regular shell
-candidate_shell="$(basename "$0")"
-# sometimes this is needed to change -bash into bash, for pen tm
-candidate_shell="$(printf -- "%s" "$candidate_shell" | sed 's/^-//')"
+candidate_shell="$(basename -- "$0")"
 # This will work better because when I personally override SHELL in scripts, I leave out the full path
 # Still had recursion with this
 # if printf -- "%s\n" "$candidate_shell" | grep -q -P '^/'; then

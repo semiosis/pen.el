@@ -16,7 +16,7 @@ echo "$TTYD_PORT" > ~/.pen/ports/ttyd.txt
 : "${KHALA_PORT:="9837"}"
 echo "$KHALA_PORT" > ~/.pen/ports/khala.txt
 
-sn="$(basename "$0")"
+sn="$(basename -- "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
     ~/.emacs.d/host/pen.el/scripts/$sn "$@"
     exit "$?"
