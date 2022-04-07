@@ -94,6 +94,10 @@ if pen-rc-test host-ssh-master; then
     unbuffer pen-cterm-ssh -ssh -t -M sh &>/dev/null &
 fi
 
+if pen-rc-test ethereum; then
+    pen-sps geth
+fi
+
 # This creates the initial frame
 
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null
