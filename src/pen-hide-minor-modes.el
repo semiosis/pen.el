@@ -30,6 +30,7 @@
                ggtags-mode
                pcre-mode
                evil-org-mode
+               org-indent-mode
                visual-line-mode
                which-key-mode
                eldoc-overlay-mode

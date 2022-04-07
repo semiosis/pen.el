@@ -153,6 +153,7 @@
 (require 'pen-magit)
 (require 'pen-advice)
 (require 'pen-context)
+(require 'pen-hl)
 (require 'pen-hooks)
 (require 'pen-major-mode)
 

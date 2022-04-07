@@ -198,6 +198,10 @@
 (sslk "ldqs" 'pen-acolyte-dired-scripts)
 (sslk "lds" 'pen-acolyte-dired-scripts)
 
+(if (inside-docker-p)
+    (sslk "ldqg" (dff (pen-open-dir "/volumes/home/shane/var/smulliga/source/git/semiosis")))
+  (sslk "ldqg" (dff (pen-open-dir "/home/shane/var/smulliga/source/git/semiosis"))))
+
 (sslk "lD" 'pen-swipe)
 (define-key pen-map (kbd "M-l / C-i") #'tvipe-completions)
 (sslk "lt" 'sh/git-add-all-below)
