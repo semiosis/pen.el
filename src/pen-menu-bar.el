@@ -968,6 +968,9 @@
     (bindings--define-key menu [mi-menu-bar-mtp-menu]
       `(menu-item "🎩Mad Tea-Party" ,menu-bar-mtp-menu
                   :help "Partake in simulated group conversation between chatbots and humans"))
+    (bindings--define-key menu [mi-menu-bar-iman-menu]
+      `(menu-item "𝑖man" iman
+                  :help "Get man page"))
     (bindings--define-key menu [mi-menu-bar-real-menu]
       `(menu-item "ℝi Real interpreters" ,menu-bar-real-menu
                   :help "Run imaginary interpreters"))
