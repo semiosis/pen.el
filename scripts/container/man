@@ -1,7 +1,11 @@
 #!/bin/bash
 export TTY
 
-if man-page-exists-p "$@"; then
+parent_bn="$(ps -o comm= $PPID)"
+
+if test "$parent_bn" = emacs; then
+    /usr/bin/man "$@"
+elif man-page-exists-p "$@"; then
     /usr/bin/man "$@"
 else
     iman "$@"
