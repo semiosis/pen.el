@@ -10,7 +10,7 @@ stdin_exists() {
 }
 
 if stdin_exists; then
-    input_fp="$(cat | tf txt)"
+    input_fp="$(cat | pen-tf txt)"
 fi
 
 if test -f "$1"; then

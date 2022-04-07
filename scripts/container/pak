@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+export TTY
+
+pen-pak "$@"
