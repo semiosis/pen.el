@@ -186,6 +186,7 @@ or specify any other coding system (and risk losing\n\
     res))
 (advice-add 'default-text-scale-decrease :around #'default-text-scale-decrease-around-advice)
 (advice-add 'default-text-scale-increase :around #'default-text-scale-decrease-around-advice)
+(advice-add 'default-text-scale--update-for-new-frame :around #'default-text-scale-decrease-around-advice)
 
 (define-key global-map (kbd "C-M--") 'default-text-scale-decrease)
 (define-key global-map (kbd "C-M-=") 'default-text-scale-increase)

@@ -150,7 +150,8 @@
   (define-key term-raw-map (kbd "C-c M-l") #'term-send-raw-meta)
   (define-key term-raw-map (kbd "C-c C-c") #'term-send-raw)
   ;; I need C-u for update
-  (define-key term-raw-map (kbd "C-c C-u") #'term-send-raw)
+  ;; (define-key term-raw-map (kbd "C-c C-u") #'term-send-raw)
+  (define-key term-raw-map (kbd "C-c C-u") #'universal-argument)
   (define-key term-raw-map (kbd "C-c M-Y") #'pen-term-clean-user-prompt)
   (define-key term-raw-map (kbd "C-c C-M-i") #'pen-company-complete)
   (define-key term-raw-map (kbd "C-c M-;") #'term-send-raw-meta)
@@ -165,7 +166,9 @@
   ;; Hyper
   (define-key term-raw-map (kbd "C-M-\\") nil)
 
-  (define-key term-raw-map (kbd "C-u") nil)
+  ;; I could make this nil, for C-u (i.e. update)
+  ;; (define-key term-raw-map (kbd "C-u") nil)
+  (define-key term-raw-map (kbd "C-u") #'term-send-raw)
 
   ;; (define-key term-raw-map (kbd "C-c o") #'pen-tm-edit-v-in-nw)
   ;; (define-key term-raw-map (kbd "C-c O") #'pen-tm-edit-vs-in-nw)

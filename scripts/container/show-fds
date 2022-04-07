@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+ls -la /proc/$$/fd 2>/dev/null
