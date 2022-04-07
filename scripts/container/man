@@ -3,7 +3,7 @@ export TTY
 
 parent_bn="$(ps -o comm= $PPID)"
 
-if test "$parent_bn" = emacs; then
+if test "$parent_bn" = emacs || test "$TERM" = dumb; then
     /usr/bin/man "$@"
 elif man-page-exists-p "$@"; then
     /usr/bin/man "$@"
