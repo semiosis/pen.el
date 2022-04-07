@@ -2058,13 +2058,11 @@ IFS= read -r -d '' shcode <<HEREDOC
         ) \
         --expose $TTYD_PORT -p $TTYD_PORT:$TTYD_PORT \
         --expose $KHALA_PORT -p $KHALA_PORT:$KHALA_PORT \
-        $(if test -n "$EXPOSE_ETHEREUM" = y; then
-            cmd --expose 8545
-            p " "
-            cmd --expose 8546
-            p " "
-            cmd --expose 30303
-            p " "
+        $(
+        if test "$EXPOSE_ETHEREUM" = y; then
+            cmd --expose 8545; p " "
+            cmd --expose 8546; p " "
+            cmd --expose 30303; p " "
             cmd --expose 30303/udp
         fi
         ) \
