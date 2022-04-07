@@ -794,6 +794,7 @@ case "$f" in
             test "$QUIET" = "y" && exec &>/dev/null
 
             export EMACS_VERSION
+            export SHELL=sh
 
             if [ -n "$SOCKET" ]; then
                 pen-e running && exit 0
