@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-if test "$(whoami)" = root; then
+if test "$(whoami)" = root && printf -- "%s\n" "$1" | grep -q -P '^-'; then
     "$@"
 else
     export ISSUDO=y
