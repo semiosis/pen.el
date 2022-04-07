@@ -90,21 +90,6 @@
 
   (pen-kill-buffer-and-window))
 
-(defun pen-go-to-emacs-el ()
-  (interactive)
-  (find-file
-   "$HOME/var/smulliga/source/git/config/emacs/emacs"))
-
-(defun pen-go-to-shane-minor-mode ()
-  (interactive)
-  (find-file
-   "$HOME/var/smulliga/source/git/config/emacs/config/shane-minor-mode.el"))
-
-(defun pen-go-to-myinit-org ()
-  (interactive)
-  (find-file
-   "$HOME/var/smulliga/source/git/config/emacs/myinit.org"))
-
 (defun pen-log-args (f &rest args)
          (message "advice for %s: %s" f args)
          (apply f args))
