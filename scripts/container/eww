@@ -18,7 +18,7 @@ fi
 
 MONOCHROME=
 
-cmd-nice-posix=c
+cmd=c
 lucky=
 emacs_script=pen-e
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
