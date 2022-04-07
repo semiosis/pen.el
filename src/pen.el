@@ -76,7 +76,7 @@
 (require 'transducer)
 (require 'handle)
 (require 'pen-company-lsp)
-(require 'pen-nlp)
+;; (require 'pen-nlp)
 (require 'pen-which-key)
 (require 'pen-elisp)
 (require 'pen-custom)
