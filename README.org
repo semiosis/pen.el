@@ -20,9 +20,15 @@ allows you to send media to multi-modal
 models. You may compose prompting functions
 for any model or API.
 
-The long-term Goal of Pen.el is to be an 'imaginary' operating system, and to
-integrate language models into all aspects of a linux operating system,
-replacing or enhancing components with imaginary counterparts.
+The long-term Goal of Pen.el is to be an
+'imaginary' operating system, and to integrate
+LMs into all aspects of a linux operating
+system, replacing or enhancing components with
+imaginary counterparts.
+
+A textual interface is of greater importance
+than graphics in Pen.el, but Pen does
+support a graphical UI.
 
 Take =iman= for example. When opening a man page inside Pen, if the page does
 not exist then an imaginary one will be generated, and if it does exist it will
