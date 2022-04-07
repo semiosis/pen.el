@@ -605,8 +605,13 @@ cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf
 
 # Sadly, the hosts file may change, so this is not good enough
 # I need to ensure that irc.localhost is in there when starting MTP
+# This does make the container host-specific though. But it doesn't appear to cause problems
+# Testing on the VPS worked fine.
+# I think the host should be added when starting pen, in run.sh
 (
-cp ~/repos/pen-emacsd/pen.el/config/hosts /etc/hosts
+touch /etc/hosts
+echo "127.0.1.1	pen-$(hostname)" >> /etc/hosts
+cat ~/repos/pen-emacsd/pen.el/config/hosts >> /etc/hosts
 )
 
 # This is what is required

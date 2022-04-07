@@ -1,6 +1,26 @@
 #!/bin/bash
 export TTY
 
+sudoargs=()
+sudoenvs=()
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -u) {
+        sudoargs=( "$opt" "$2" "${sudoargs[@]}" )
+        shift
+        shift
+    }
+    ;;
+
+    -h) {
+        sudoenvs=( "HOME=$HOME" "${sudoenvs[@]}" )
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 hasdashes() {
     cmd "$@" | grep -q -P '(^| )--( |$)'
 }
@@ -20,8 +40,8 @@ after_dashes() {
 }
 
 if hasdashes "$@"; then
-    eval /usr/bin/sudo -H -E $(before_dashes "$@") env "PATH=$PATH" "HOME=$HOME" $(after_dashes "$@")
+    eval /usr/bin/sudo "${sudoargs[@]}" -H -E $(before_dashes "$@") env "PATH=$PATH"  "${sudoenvs[@]}" $(after_dashes "$@")
 else
     # Specify HOME to env to force preservation of the HOME variable
-    /usr/bin/sudo -H -E env "PATH=$PATH" "HOME=$HOME" "$@"
+    /usr/bin/sudo "${sudoargs[@]}" -H -E env "PATH=$PATH" "${sudoenvs[@]}" "$@"
 fi

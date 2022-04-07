@@ -7,6 +7,8 @@ tmux new -d init
 xrdb -merge /root/.Xresources
 xrdb -load /root/.Xresources
 
+{ cat /etc/hosts | awk 1; echo "127.0.1.1	pen-$(hostname)"; } > /etc/hosts
+
 # Do this so emacs doesn't break when using docker commit
 find ~/.emacs.d/host/ -empty -type d -exec rmdir {} \; 2>/dev/null
 
