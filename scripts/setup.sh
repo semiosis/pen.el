@@ -2,6 +2,8 @@
 
 # Debian10 installation
 
+export SSH_HOST_ALLOWED=n
+
 export EMACSD=$HOME/.emacs.d
 mkdir -p "$EMACSD"
 mkdir -p "$HOME/dump"
@@ -713,6 +715,14 @@ test -d $REPOS/gh-dash || (
 test -d $REPOS/figlet-fonts || (
     cd "$REPOS"
     git clone "https://github.com/xero/figlet-fonts"
+)
+
+test -d $REPOS/go-ethereum || (
+    cd "$REPOS"
+    git clone "https://github.com/ethereum/go-ethereum"
+    cd go-ethereum
+    make all
+    go run build/ci.go install ./cmd/geth
 )
 
 # Haskell: - gcup, cabal, hls
