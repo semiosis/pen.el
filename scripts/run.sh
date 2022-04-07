@@ -94,7 +94,7 @@ if pen-rc-test host-ssh-master; then
     unbuffer pen-cterm-ssh -ssh -t -M sh &>/dev/null &
 fi
 
-if pen-rc-test ethereum; then
+if test "$EXPOSE_ETHEREUM" = y || pen-rc-test ethereum; then
     pen-sps geth
 fi
 
