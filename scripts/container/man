@@ -5,16 +5,24 @@ parent_bn="$(ps -o comm= $PPID)"
 
 is_tty() { [ -t 1 ]; }
 
+if [ -z "$COLUMNS" ] && is_tty; then
+    eval `resize`
+fi
+
+if [ -n "$COLUMNS" ] && [ "$COLUMNS" -gt 90 ]; then
+    COLUMNS=90
+fi
+
 if is_tty; then
-    export EDITOR=v
+    export PAGER=v
 else
-    export EDITOR=sps-v
+    export PAGER=sps-v
 fi
 
 if test "$parent_bn" = emacs || test "$TERM" = dumb; then
-    /usr/bin/man "$@"
+    /usr/bin/man "$@" | pen-pa -E "$PAGER"
 elif man-page-exists-p "$@"; then
-    /usr/bin/man "$@"
+    /usr/bin/man "$@" | pen-pa -E "$PAGER"
 else
     iman "$@"
 fi
