@@ -2,8 +2,11 @@
   (sn-true (concat "/usr/bin/man " args)))
 
 (defun iman (page)
-  (interactive (list (pen-ask (pen-words 1 (pen-thing-at-point))
-                              "man page:")))
+  (interactive (list (let ((cand (pen-words 1 (pen-thing-at-point))))
+                       (if (man-page-p cand)
+                           cand
+                         (pen-ask cand
+                                  "man page:")))))
   (let* ((query ;; (concat "3 " (pen-thing-at-point))
           (concat page))
          (exists (pen-snq (pen-cmd "man-page-exists-p" page))))
