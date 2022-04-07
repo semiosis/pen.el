@@ -2,10 +2,8 @@
 
 (require 'org)
 
-
 (org-add-link-type "rifle" 'org-rifle-open)
 (add-hook 'org-store-link-functions 'org-rifle-store-link)
-
 
 (defcustom org-rifle-command 'spv-rifle
   "The Emacs command to be used to display a rifle page."
@@ -30,7 +28,6 @@ PATH should be a topic that can be thrown at the rifle command."
        :type "rifle"
        :link link
        :description description))))
-
 
 (defun org-rifle-get-page-name ()
   "Extract the page name from the buffer name."
