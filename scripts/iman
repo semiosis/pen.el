@@ -5,7 +5,7 @@ if ! test "$#" -eq 1; then
     exit 1
 fi
 
-if ! printf -- "%s\n" "$1" | grep -q -P '^[a-zA-Z0-9_-]*$'; then
+if ! printf -- "%s\n" "$1" | grep -q -P '^[a-zA-Z0-9_][a-zA-Z0-9_-]*$'; then
     exit 1
 fi
 
