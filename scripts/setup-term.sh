@@ -47,5 +47,14 @@ candidate_shell="$(printf -- "%s" "$candidate_shell" | sed 's/^-//')"
 # if printf -- "%s\n" "$candidate_shell" | grep -q -P '^/'; then
 # I have to be explicit
 if printf -- "%s\n" "$candidate_shell" | grep -q -P '(bash|zsh|sh|fish)'; then
+    case "$candidate_shell" in
+        sh) {
+            # This is to get around an issue in startup where when SHELL=sh was exported, paths were not found
+            candidate_shell=bash
+        }
+        ;;
+
+        *)
+    esac
     export SHELL="$candidate_shell"
 fi
