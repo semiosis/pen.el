@@ -4,8 +4,7 @@ export TTY
 is_tty() { [ -t 1 ]; }
 
 if is_tty; then
-    IFS= read -rd '' contents < <(cat);typeset -p contents &>/dev/null
-    printf -- "%s" "$contents" | vim -
+    vim -
 else
     cat
 fi

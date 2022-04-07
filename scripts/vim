@@ -14,7 +14,9 @@ stdin_exists() {
 # Do this to remove the annoying message from vim
 if stdin_exists; then
     IFS= read -rd '' contents < <(cat);typeset -p contents &>/dev/null
-    printf -- "%s" "$contents" | /usr/bin/vim "$@"
+    if test -n "$contents"; then
+        printf -- "%s" "$contents" | /usr/bin/vim "$@"
+    fi
 else
     /usr/bin/vim "$@"
 fi
