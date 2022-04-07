@@ -1,0 +1,49 @@
+#!/usr/bin/env pythonn3
+# -*- coding: utf-8 -*-
+
+#  echo "For the moment, let it accept 2 words to the left and 2 to the right" | string-stuff.py 200
+
+import sys
+s = sys.stdin.read()
+
+len(sys.argv) > 1 or exit(1)
+
+i = int(sys.argv[1])
+
+# TODO Find word by character position
+# https://stackoverflow.com/questions/58753804/find-a-word-in-string-with-known-character-position
+# This is ok but I'd like to search a tokens list instead and find the word number
+# That's not hard, I guess. I'd just need to count the number of spaces to the left
+# https://stackoverflow.com/questions/33864485/how-to-count-number-of-space-in-given-string-in-python
+# (sx-search-immediately "python number of spaces in string")
+# "Make it so it first provides fuzzy selection for the set of 5 words to use"[:20].count(' ')
+
+# Get the current word 2 words to the left
+
+# Remove consecutive spaces while preserving index position
+# print("[" + s[i - 1] + "]")
+r = s[i:]
+l = s[:i]
+l = " ".join(l.split())
+
+try:
+    if s[i - 1] == ' ':
+        s = l + " " + r
+    else:
+        s = l + r
+
+    i=len(l)
+
+    tks = s.split()
+    s = " ".join(tks)
+    pos = s[:i].count(" ")
+
+    tks[pos] = "*"
+
+    for n in range(3, 6):
+        subtks = tks[max(pos - (n-1), 0):min(pos + n,len(tks))]
+
+        for l in list(zip(*(subtks[i:] for i in range(n)))):
+            print(" ".join(l))
+except:
+    pass

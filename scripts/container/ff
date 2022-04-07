@@ -1,0 +1,167 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -e) {
+        elisp="$2" # if using eww browser, run some elisp too
+        shift
+        shift
+    }
+    ;;
+
+    -w) {
+        PREFER_WEB=y
+        shift
+    }
+    ;;
+
+    -l) {
+        PREFER_WEB=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export PREFER_WEB
+
+# headless, terminal firefox
+
+url="$1"
+
+# pen-ns "$url"
+
+# Possible urls. For this reason I can't use _ to substitute in sed
+# file:///usr/local/racket/share/racket/doc/reference/require.html#(form._((lib._racket%2Fprivate%2Fbase..rkt)._provide))
+
+if pen-pl "$url" | grep -q -P 'racket.*\.html#\('; then
+    query="$(pen-pl "$url" | sed 's/.*_\([-[:alnum:]]*\).*/\1/')"
+fi
+
+if pen-pl "$url" | grep -qP '\.jpg$'; then
+    WGET_AND_OPEN=y
+fi
+
+if test "$WGET_AND_OPEN" = "y"; then
+    td_thing="$(mktemp -t -d td_thingXXXXXX || echo /dev/null)"
+    cd "$td_thing"
+    wget "$url"
+    zcd "$td_thing"
+    exit $?
+fi
+
+printf -- "%s" "$url" | pen-xc | pen-ns &>/dev/null # can't background this, annoyingly without strange things happening
+# ff "https://www.youtube.com/watch?v=KHrbDw0267I" # ... when pen-i do this
+
+if pen-pl "$url" | grep -q -P '\.onion/'; then
+    pen-yn "start pen-torify w3m?" && pen-torify w3m "$url"
+    exit 0
+elif pen-pl "$url" | grep -q -P 'youtube.com/watch' || pen-pl "$url" | grep -q -P 'youtu\.be'; then
+    open "$url"
+    exit $?
+
+    # pen-yn "start yt?" && yt -v "$url"
+
+    printf -- "%s\n" "$url"
+    ans="$(qa -. edit \
+              -c copy \
+              -a play-song \
+              -v play-video \
+              -b browsh)"
+
+    case "$ans" in
+        edit) { vs $0; } ;;
+        copy) { copy "$url"; } ;;
+        play-song) { play-song "$url"; } ;;
+        play-video) { play-video "$url"; } ;;
+        browsh) { browsh "$url"; } ;;
+        *) ;;
+    esac
+    exit 0
+fi
+
+if test -z "$ans"; then
+    printf -- "%s\n" "$url"
+    ans="$(qa -. edit \
+              -ey eww \
+              -j eww-js \
+              -e eww-ne \
+              -h ewc \
+              -m pen-mirror-site \
+              -x ewx \
+              -N nveww \
+              -n : \
+              -c copy \
+              -f firefox \
+              -p pentadactyl \
+              -r google-chrome \
+              -g google-chrome \
+              -v vim \
+              -V eww-q \
+              -b browsh \
+              -a new-article \
+              -t torbrowsh \
+              -w ew3m \
+              -W w3m \
+              -3 nvw3m \
+              -o org-browser \
+              -n nvlinks \
+              -l elinks \
+              -z scrape-and-summarize \
+              -s ca-tless \
+              -q qutebrowser \
+              -V vimlinks)"
+fi
+
+case "$ans" in
+    eww-ne) { eww-ne "$url"; } ;;
+    eww-js) { eww-js "$url"; } ;;
+    eww) {
+        eww "$url"
+    }
+    ;;
+    ewc) { ewc "$url"; exit 0; } ;;
+    ewx) { ewx "$url"; } ;;
+    copy) { xcit -i "$url"; exit 0; } ;;
+    google-chrome) { set -m; google-chrome "$url" & disown; exit 0; } ;;
+    browsh) { browsh -k "$url"; } ;;
+    new-article) { pen-nw new-article "$url"; } ;;
+    torbrowsh) { torbrowsh "$url"; } ;;
+    vim) { printf -- "%s" "$url" | v; } ;;
+    pen-mirror-site) { pen-mirror-site "$url"; } ;;
+    eww-q) { eww-q "$url"; } ;;
+    elinks) { elinks "$url"; } ;;
+    scrape-and-summarize) { scrape-and-summarize "$url" | vs; } ;;
+    nvlinks) { nvlinks "$url"; } ;;
+    firefox) { set +m; trap '' INT HUP; firefox "$url" & disown; } ;;
+    pentadactyl) { set +m; trap '' INT HUP; firefox "$url" & disown; } ;;
+    ew3m) { ew3m "$url"; } ;;
+    w3m) { w3m "$url"; } ;;
+    nvw3m) { nvw3m "$url"; } ;;
+    org-browser) { org-browser "$url"; } ;;
+    ca-tless) { ca "$url" | tless; } ;;
+    vimlinks) { vimlinks "$url"; } ;;
+    qutebrowser) { qutebrowser "$url"; } ;;
+    edit) { vs $0; } ;;
+    *) {
+        "$ans" "$url"
+    }
+    ;;
+esac
+
+ret="$?"
+
+printf -- "%s\n" "$url" | udl
+eval "$0 $CMD"
+exit "$ret"

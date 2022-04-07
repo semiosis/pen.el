@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# wfind . -type d
+
+# find things at this depth
+# wfind / | u dirsuffix
+
+first_arg="$1"
+first_arg="$(realpath "$first_arg")"
+
+
+shift
+
+eval "find $(cmd "$first_arg") -mindepth 1 -maxdepth 1" "$@"

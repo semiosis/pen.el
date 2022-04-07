@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY
+
+fp="$1"
+
+read -r -d '' pycode <<EOF
+
+import spacy
+
+# Import the English language class
+# from spacy.lang.en import English
+
+from shanepy import *
+
+# Create the nlp object
+# nlp = English()
+
+# Use a huggingface transformer
+# nlp = spacy.load("en_core_web_trf")
+
+import shanepy
+spacy_model = shanepy.myrc_get("spacy_model") or "en_core_web_md"
+nlp = spacy.load(spacy_model)
+
+# Process a text
+# doc = nlp("This is a sentence.")
+
+doc = nlp(cat("$fp"))
+
+# Print the document text
+# print(doc.text)
+
+import shanepy
+from shanepy import *
+
+from ptpython.repl import embed
+embed(globals(), locals())
+
+EOF
+python3 <(echo "$pycode") $@
+exit $?
+fi

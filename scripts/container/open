@@ -1,0 +1,514 @@
+#!/bin/bash
+
+set -m
+
+editor() {
+    if pen-e running; then
+        pen-e c "$1"
+    else
+        v "$1"
+    fi
+}
+
+: ${WAIT:="n"}
+: ${WHICH:="y"}
+: ${PREFER_EDIT:="n"}
+: ${NOCD:="n"}
+
+# Definitely make it so this function has its input filtered through a
+# scrape files script but make that happen inside the lisp for:
+# $EMACSD/shane-minor-mode.el
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+opt="$1"
+case "$opt" in
+    -w|-wait) {
+        WAIT=y
+        shift
+    }
+    ;;
+
+    -nocd) {
+        NOCD=y
+        shift
+    }
+    ;;
+
+    -eww) {
+        FORCE_EWW=y
+        shift
+    }
+    ;;
+
+    -nw|-nowhich) {
+        WHICH=n
+        shift
+    }
+    ;;
+
+    -e|-edit) {
+        PREFER_EDIT=y
+        shift
+    }
+    ;;
+
+    -t) {
+        shift
+
+        CMD="$(cmd "$@")"
+
+        pen-tm n "echo $CMD"
+
+        shift
+
+        exit $?
+    }
+    ;;
+
+    *)
+esac
+
+CMD="$(cmd "$@")"
+
+if stdin_exists; then
+    fp="$(pen-umn)"
+    fps="$fp" # lines
+    count="$(p "$fp" | wc -l)"
+    exec <`pen-tm-tty`
+else
+    fp="$(p "$CMD" | pen-umn)"
+    fps="$(pen-pl "$@")"
+    count="$#"
+fi
+
+fp="$(p "$fp" | sed 's~^http://www.google.com/url?q=~~')"
+
+if test "$count" -gt "1"; then
+    export WAIT
+    export WHICH
+    export PREFER_EDIT
+    export NOCD
+
+    printf -- "%s" "$fps" | awk 1 | tee /dev/stderr | while IFS=$'\n' read -r line; do
+        (
+            exec 0</dev/null
+            sph open "$line"
+            tmux select-layout tiled
+        )
+    done
+    printf -- "%s" "$fps" | pen-pavs
+    exit $?
+fi
+
+if test -z "$fp"; then
+    fp="$(pen-xc)"
+    o "$(pen-xc)" # Run it again so we get the history
+    exit $?
+fi
+
+fp="$(eval echo -e "$fp")" # expand
+
+pen-pl "$fp" > /tmp/open2.txt
+
+if [ -z "$fp" ]; then
+    exit 1
+fi
+
+# tramp
+if pen-pl "$fp" | grep -q -P '^/.*:'; then
+    pen-e "$fp"
+    exit 0
+fi
+
+if pen-pl "$fp" | grep -q -P '^file://'; then
+    case "$fp" in
+        *racket*) {
+            copy "$fp"
+        }
+        ;;
+
+        *) {
+            eww "$fp"
+        }
+        ;;
+    esac
+    exit 0
+fi
+
+preprocess() {
+    sed 's=^https\?://www.google.com/url?q\=\(.*\)&sa.*=\1='
+}
+
+if test "$FORCE_EWW" = "y"; then
+    # But now ff gives me a choice, which is better
+    ff "$fp"
+    exit $?h
+fi
+
+if pen-pl "$fp" | grep -Pq "^[a-zA-Z0-9]+/[a-zA-Z0-9]+$"; then
+    zcd "$MYGIT/$fp"
+    exit 0
+elif pen-pl "$fp" | grep -q -P '^(https?|git)://'; then
+    fp="$(p "$fp" | preprocess)"
+
+    case "$fp" in
+        *youtube.com*list=*) {
+            cd $NOTES/ws/music
+            yt-playlist-to-el "$fp"
+        }
+        ;;
+
+        *youtu.be/*) {
+            sh-yt "$fp"
+        }
+        ;;
+
+        *youtube.com*) {
+            sh-yt "$fp"
+        }
+        ;;
+
+        *asciinema.org/a*) {
+            asciinema-play "$fp"
+        }
+        ;;
+
+        http*jpg) {
+            pen-win ie "$fp"
+        }
+        ;;
+
+        *arxiv.org/pdf*|*arxiv.org/abs*) {
+            set -xv
+
+            id="$(p "$fp" | sed "s=.*https://arxiv.org/\\(abs\\|pdf\\)/\\([a-z0-9.]\\+\\)=\\2=")"
+            page_url="https://arxiv.org/abs/$id"
+
+            echo "please wait..." 1>&2
+            unbuffer arxiv-summary | cat &>/dev/null
+
+            unbuffer pen-sps arxiv-summary "$page_url"
+            unbuffer pen-sps -E "arxiv-summary $(cmd-nice-posix "$page_url") | tldr -pp"
+
+            # Open pdf
+            pen-sps arxiv-pdf "$fp"
+        }
+        ;;
+
+        http*.pdf) {
+            (
+                cd $DUMP$NOTES/ws/pdf/incoming
+                unset CWD
+                zrepl -cm wget "$fp"
+            )
+        }
+        ;;
+
+        http*stackoverflow.com/q*) {
+            sx-from-url "$fp"
+        }
+        ;;
+
+        http*://*.png|http*://*.jpg) {
+            pen-win ie "$fp"
+        }
+        ;;
+
+        https://raw.githubusercontent.com/*) {
+            pen-ns "raw download not implemented $fp"
+        }
+        ;;
+
+        https://bitbucket.org/*|https://gist.github.com/*) {
+            gc "$fp"
+        }
+        ;;
+
+        *://hackage.haskell.org/package/*/docs/*) {
+            ff "$fp"
+        }
+        ;;
+
+        *://hackage.haskell.org/package/*) {
+            # http://hackage.haskell.org/package/regex-compat
+            fp="$(p "$fp" | sed 's/\(package\/[a-zA-Z0-9_-]\+\).*/\1/')"
+            fp="$(elinks-dump "$fp" | sed '/Source repo/p' | xurls)"
+            o "$fp"
+            exit $?
+        }
+        ;;
+
+        *//gitlab.com/*) {
+            gc "$fp"
+        }
+        ;;
+
+        *//drive.google.com/uc*) {
+            gdown "$fp"
+        }
+        ;;
+
+        *//www.github.com/*|*//github.com/*|*//github.*.com/*) {
+            fp="$(p "$fp" | sed "s/github\\.\\([^.]*\\)\\.com/github.com/")"
+            if pen-pl "$fp" | grep -q -P '/pull/[0-9]+'; then
+
+                fp="$(p "$fp" | sed 's=\(/pull/[0-9]\+\).*=\1=')"
+
+                prid="$(p "$fp" | sed 's/.*[^0-9]\([0-9]\+\)$/\1/')"
+
+                # DONE make this repo-agnostic
+                # cd $HOME/source/git/codelingo/codelingo
+
+                newdir="$(gc -notty "$fp" 2>/dev/null)"
+
+                ! test "$NOCD" = "y" && cd "$newdir"
+
+                git checkout $(vc hash)
+                git branch -D "pr-${prid}"
+
+                git fetch origin pull/$prid/head:pr-$prid
+                git checkout pr-$prid
+
+                # CWD="$(pwd)" zsh
+                x -cd "$(pwd)" -sh "zsh" -s "go-to-dir-of-change" -c m -i
+            elif pen-pl "$fp" | grep -q -P '/search\?'; then
+                ff "$fp"
+            else
+                gc "$fp"
+            fi
+        }
+        ;;
+
+        *gobyexample*) {
+            eww "$fp"
+        }
+        ;;
+
+        # open immediately in eww if it's haskell related
+        *hackage.haskell*) {
+            eww "$fp"
+        }
+        ;;
+
+        *) {
+            # open is used by fzf. to keep the filters going I can use
+            # this. it's also kinda fast. use ca instead of elinks-dump
+            # ca -nt "$fp" | tless
+            # ca "$fp" | tless
+
+            # But now ff gives me a choice, which is better
+            ff "$fp"
+        }
+        ;;
+    esac
+    exit 0
+elif pen-pl "$fp" | grep -q -P '^(\[\[[a-z]+:)'; then
+    sp -e "(org-link-open-from-string $(aqf-nice "$fp"))"
+elif pen-pl "$fp" | grep -q -P "(^file:/.*|.*\\.html)"; then
+    eww "$fp"
+    exit 0
+elif pen-pl "$fp" | grep -q -P '^telnet:?'; then
+    case "$fp" in
+        telnet:*) {
+            tm -d nw -fargs rt "$fp" &
+        }
+        ;;
+    esac
+    exit 0
+elif pen-pl "$fp" | grep -q -P '^magnet:?'; then
+    case "$fp" in
+        magnet:*) {
+            tm -d nw -fargs rt "$fp" &
+        }
+        ;;
+    esac
+    exit 0
+elif pen-pl "$fp" | grep -q -P '^[A-Za-z0-9_]{20}$'; then
+    cl-lucene "_id:$fp"
+    exit 0
+# elif pen-pl "$fp" | grep -q -P '^([a-z]+:)'; then
+#     sp -e "(org-link-open-from-string $(aqf-nice "$fp"))"
+elif pen-pl "$fp" | grep -q -P '^(pen-e|br|egr):'; then
+    sp -e "(org-link-open-from-string $(aqf-nice "$fp"))"
+fi
+
+
+opt="$1"
+case "$opt" in
+    -nw)
+        :
+        shift
+    ;;
+esac
+
+
+bn="$(basename "$fp")"
+ext="${fp##*.}"
+fn="${fp%.*}"
+
+ofp="$fp"
+
+if ! [ -e "$fp" ] && ! test "$WHICH" = "n"; then
+    fp="$(which "$fp")"
+fi
+
+# tm n "$fp"
+# pen-pl "'$fp'"
+# exit 0
+
+# pen-pl "$fp" > /tmp/open2.txt
+
+if [ -e "$fp" ]; then
+    rp="$(realpath "$fp")"
+
+    case "$ext" in
+        org) {
+            # org pen-e "$fp"
+
+            orspog "$fp"
+            exit $?
+        }
+        ;;
+
+        mkv) {
+            vlc "$fp" &
+            exit $?
+        }
+        ;;
+
+        pkl) {
+            orpy "$fp" &
+            exit $?
+        }
+        ;;
+
+        pdf) {
+            z "$fp" & disown
+            exit $?
+        }
+        ;;
+
+        php|md|mmd) {
+            sp c "$fp"
+            exit $?
+        }
+        ;;
+
+        srt) {
+            oci clean-subs "$fp" | pavs
+            exit $?
+        }
+        ;;
+
+        emacs|el|lisp|cl) {
+            # sp c "$fp"
+
+            orspe "$fp"
+            exit $?
+        }
+        ;;
+
+        template) {
+            :
+        }
+        ;;
+
+        *)
+    esac
+
+    if test "$bn" = "tmux.conf"; then
+        # tm -tout -d nw -n "sp-$bn" "sp \"$rp\""
+        sp "$rp"
+        exit 0
+    fi
+
+    if tt -t "$rp"; then
+        if pen-pl "$rp" | grep -q -P '\.org$' && pen-e -D spacemacs running; then
+            #tm -tout -d nw -n "e-$bn" "pen-e -D spacemacs c \"$rp\""
+            pen-e -D spacemacs c "$rp"
+        else
+            #tm -tout -d nw -n "v-$bn" "v \"$rp\""
+
+            # It's a text file
+
+            #v "$rp"
+            rifle "$rp"
+        fi
+
+        exit 0
+
+    elif tt "$rp" -mt "/pdf"; then
+        if test "$WAIT" = "y"; then
+            z "$rp"
+        else
+            z "$rp" & disown
+        fi
+
+        exit $?
+
+    elif tt "$rp" -mt "officedoc"; then
+        libreoffice "$rp"
+
+        exit $?
+
+    elif tt "$rp" -mt "/directory"; then
+        #xt tm pen-ns -S ranger "$rp" ranger
+
+        # Don't use xterm here because ge in vim will open an xterm
+
+        # tm -t -d sph -c "$rp" ranger
+
+        CWD="$rp" ranger
+
+        # (
+        # xt tm pen-ns "$bn/" "$rp" ranger
+        # ) & disown
+        # sleep 0.5 # Not sure why removing this sleep may kill xterm as it's starting
+
+        exit $?
+    fi
+fi
+
+# pen-pl "($ofp) File doesn't exist or mimetype not known"
+
+mts="$(mt "$rp")"
+
+{
+    # annoyingly, vimrc files sometimes have control characters, causing
+    # this
+    if test "$mts" = "application/octet-stream"; then
+         rifle "$rp"
+         exit 0
+    fi
+
+    if test "$PREFER_EDIT" = "y"; then
+        #pen-e -D spacemacs c "$rp"
+
+        # vim handles binary files better, I think
+
+        #v "$rp"
+        rifle "$rp"
+
+        exit $?
+    else
+        pen-pl "scripts/open: Unhandled file type:" | hls blue
+        pen-pl "$(mt "$rp")" | hls purple
+        pen-pl "using rifle"
+
+        rifle "$rp"
+
+        exit 1
+    fi
+
+} 1>&2
+
+## worst case scenario, ask ranger to open it.

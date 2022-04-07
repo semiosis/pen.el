@@ -1,0 +1,29 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+is_tty() { [ -t 1 ]; }
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+fi
+
+if test -f "$1"; then
+    input_fp="$1"
+fi
+
+: "${input_fp:="/dev/null"}"
+
+if is_tty; then
+    # play-spacy-en "$input_fp"
+    x -sh "play-spacy-en $(aqf "$input_fp"); pak" -e ">>>" -s doc -c m -i
+else
+    # 0</dev/null sps x -sh "play-spacy-en $(aqf "$input_fp")" -e ">>>" -s doc -c m -i
+
+    0</dev/null sps x -sh "play-spacy-en $(aqf "$input_fp"); pak" -e ">>>" -s doc -c m -i
+fi

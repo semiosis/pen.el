@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+# Used by hsq
+# hsq
+# It's better with -p and not with -P because of long commands
+
+# This is fol allowing you to select from a list of things
+# Sometimes fzf isn't the best for it
+
+# I also want an rtcmd version
+
+pen-mfz -rev -m -p

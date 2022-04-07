@@ -1,0 +1,112 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename "$0")"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -o|-only) { # Make the window that appears the only window
+        export ONLY_WINDOW=y
+        shift
+    }
+    ;;
+
+    -df) {
+        delete_frame=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+case "$sn" in
+    cpp-playground) {
+        ic=cc-playground
+    }
+    ;;
+
+    ew3m) {
+        ic=w3m
+        export ONLY_WINDOW=y
+    }
+    ;;
+
+    emount) {
+        ic=list-fs
+        export ONLY_WINDOW=y
+    }
+    ;;
+
+    ehtop) {
+        ic=htop
+    }
+    ;;
+
+    ecreate-tablist) {
+        ic=create-tablist
+    }
+    ;;
+
+    edocker) {
+        ic=docker
+
+        disable-docker-wrapper
+    }
+    ;;
+
+    vuiet-play-song) {
+        ic=vuiet-play-track
+        vuiet-stop -df
+    }
+    ;;
+
+    vuiet-play-artist) {
+        ic=vuiet-play-artist
+        vuiet-stop -df
+    }
+    ;;
+
+    erat) {
+        ic=erat
+
+        enable-docker-wrapper
+    }
+    ;;
+
+    emms) {
+        ic=emms-browser
+    }
+    ;;
+
+    epsysh) {
+        ic=psysh
+    }
+    ;;
+
+    *) {
+        ic="$sn"
+    }
+    ;;
+esac
+
+ic="$(p "$ic" | sed "s/^e-//")"
+
+if test "$#" -gt 0; then
+    set -- -cip "$ic" "$@"
+else
+    set -- -ic "$ic"
+fi
+
+if test "$3" = "=nil"; then
+    pen-ns "grep-app doesn't work with a nil for contents"
+fi
+
+if test "$delete_frame" = "y"; then
+    set -- -df "$@"
+    unbuffer pen-e "$@" &>/dev/null
+else
+    pen-e "$@"
+fi
