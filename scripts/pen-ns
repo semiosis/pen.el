@@ -1,5 +1,92 @@
 #!/bin/bash
-export TTY
 
-# TODO Implement notifications to emacs
-cmd-nice-posix "$@" | awk 1 1>&2
+trap func_trap HUP
+func_trap() {
+    :
+}
+
+# the general category is default
+category=_
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    +*) {
+        category="$(p "$opt" | mcut -d+ -f2 | chomp)"
+        shift
+    }
+    ;;
+
+    -f) {
+        FORCE_NOTIFY=y
+        shift
+    }
+    ;;
+
+    -clip) {
+        FROM_CLIPBOARD=y
+        shift
+    }
+    ;;
+
+    nos|nosave) {
+        NOSAVE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if ! test "$FORCE_NOTIFY" = y && test "$FROM_CLIPBOARD" = y && grep -q -P '^notify_clipboard: off$' $HOME/.myrc.yaml; then
+    exit 0
+fi
+
+exec 3>&1
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+had_stdin=n
+
+if stdin_exists; then
+    had_stdin=y
+    message="$(cat)"
+fi
+
+CMD="$(cmd-nice-posix "$@")"
+
+: ${message:="$CMD"}
+
+ns_dir="$HOME/notes/programs/ns/"
+mkdir -p "$ns_dir"
+
+( printf -- "%s\n" "$message" | uq | pen-mnm | pen-ds -s ns-last-message ) &
+if ! test "$NOSAVE" = "y"; then
+    printf -- "%s\n" ": $message" | ts >> "$ns_dir/$category.txt"
+fi
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+if ! is_tty; then
+    printf -- "%s\n" "$message"
+fi
+
+if [ -n ${VISIBLE+x} ]; then
+    if test "$category" = "_"; then
+        which notify-send &>/dev/null && notify-send "$message"
+    else
+        which notify-send &>/dev/null && notify-send "$category" "$message"
+    fi
+fi
+
+if test "$had_stdin" = "y"; then
+    exec 1>&3
+fi

@@ -760,3 +760,7 @@ agi xvfb
 agi toilet
 
 agi bindfs
+agi elinks
+
+# notify-send
+agi libnotify-bin

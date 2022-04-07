@@ -1,0 +1,105 @@
+#!/bin/bash
+
+sn="$(basename "$0")"
+
+: ${lucky:=""}
+case "$sn" in
+    egl|google-lucky|*gr-lucky|ifl) {
+        lucky=y
+    }
+    ;;
+
+    *)
+esac
+
+# normal google
+enginequery="http://www.google.com/search?ie=utf-8&oe=utf-8&q=<s>"
+
+: ${lucky:=""}
+pattern=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -l|-lucky) {
+        lucky=y
+
+        enginequery="http://www.google.com/search?ie=utf-8&oe=utf-8&btnI&q=<s>"
+        shift
+    }
+    ;;
+
+    +/*) { # pattern
+        pattern="$(p "$opt" | pen-mcut -d+/ -f2 | chomp | pen-qne)"
+
+        shift
+    }
+    ;;
+
+    -ddg) {
+        enginequery="https://duckduckgo.com/?q=<s>&ia=web"
+        shift
+    }
+    ;;
+
+    -g) {
+        enginequery="http://www.google.com/search?ie=utf-8&oe=utf-8&q=<s>"
+        shift
+    }
+    ;;
+
+    -tor) {
+        export USETOR=y
+        shift
+    }
+    ;;
+
+    -uq) {
+        IMPLICIT_QUOTING=n
+        shift
+    }
+    ;;
+
+    -q) {
+        GEN_QUERY_URL=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${IMPLICIT_QUOTING:="y"}
+
+if test "$IMPLICIT_QUOTING" = "y"; then
+    query="$(cmd-nice "$@" | pen-ns | pen-ds -q ifl)"; : ${query:=""}
+else
+    query="$(echo "$@" | pen-ns | pen-ds -q ifl)"; : ${query:=""}
+fi
+
+engine=google
+
+if test "$lucky" = "y"; then
+    # query+="&btnI"
+    engine=google-lucky
+fi
+
+url="$(echo "$enginequery" | tl -s "$(p "$query" | pen-urlencode)")"
+
+if test "$GEN_URL_AND_EXIT" = "y"; then
+    echo "$url"
+    exit 0
+fi
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+if is_tty; then
+    if test -n "$pattern"; then
+        pen-xs eww "$url" "$pattern"
+    else
+        eww "$url"
+    fi
+else
+    elinks-dump "$url"
+fi

@@ -1,0 +1,187 @@
+#!/bin/bash
+
+aqf() { apply qf "$@"; }
+
+last_arg="${@: -1}"
+
+if pen-pl "$last_arg" | grep -q -P '^file:///'; then
+    last_arg="$(p "$last_arg" | sed 's=^file://==' | sed 's=#.*==')"
+fi
+
+fp="$(p "$last_arg" | sed 's/#.*//')"
+
+if test -f "$fp"; then
+    browser_function=eww-open-file
+else
+    browser_function=eww
+fi
+
+MONOCHROME=
+
+cmd-nice-posix=c
+lucky=
+emacs_script=pen-e
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -3) {
+        browser_function=w3m
+        shift
+    }
+    ;;
+
+    -js) {
+        USE_CHROME=y
+        shift
+    }
+    ;;
+
+    -nojs) {
+        USE_CHROME=n
+        shift
+    }
+    ;;
+
+    -ne) {
+        NO_EXTERNAL_HANDLERS=y
+        shift
+    }
+    ;;
+
+    -j) {
+        # Don't search for anything. Just open vim.
+        JUST_OPEN=y
+        shift
+    }
+    ;;
+
+    -em) {
+        emacs_script="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -ef) {
+        browser_function=eww
+        shift
+    }
+    ;;
+
+    -2) {
+        MONOCHROME=y
+        shift
+    }
+    ;;
+
+    -es) {
+        browser_function=eww-and-search
+        shift
+    }
+    ;;
+
+    -s) {
+        elisp+="(occur $(cmd-nice-posix "$2"))"
+        pen-ns "$0: $elisp"
+        shift
+        shift
+    }
+    ;;
+
+    -e) { # run some elisp too
+        elisp+="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -x) {
+        # cmd-nice-posix="c -x"
+        cmd-nice-posix="x"
+        shift
+    }
+    ;;
+
+    -w) {
+        PREFER_WEB=y
+        shift
+    }
+    ;;
+
+    -l) {
+        PREFER_WEB=n
+        shift
+    }
+    ;;
+
+    -c) {
+        CACHED=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+sn="$(basename "$0")"
+if [[ "$sn" == "ewc" ]]; then
+    CACHED=y
+fi
+
+export MONOCHROME
+
+url="$last_arg"; : ${url:="google.com"}
+url="$(p "$url" | pen-urldecode)"
+
+if printf -- "%s\n" "$url" | grep -q -P 'towardsdatascience'; then
+    CACHED=y
+fi
+
+if test "$CACHED" = "y"; then
+    url="http://webcache.googleusercontent.com/search?q=cache:$url"
+fi
+
+if pen-pl "$url" | grep -q '//racket/'; then
+    if test "$PREFER_WEB" = y; then
+        url="$(p "$url" | fix-racket-doc-url -w)"
+    else
+        url="$(p "$url" | fix-racket-doc-url -l)"
+    fi
+fi
+
+if test "$GEN_URL_AND_EXIT" = "y"; then
+    echo "$url"
+    exit 0
+fi
+
+if test "$USE_CHROME" = "y"; then
+    if test "$browser_function" = "eww"; then
+        browser_function="pen-eww-js"
+    fi
+elif test "$USE_CHROME" = "n"; then
+    if test "$browser_function" = "eww"; then
+        browser_function="pen-eww-nojs"
+    fi
+fi
+
+if test "$NO_EXTERNAL_HANDLERS" = "y"; then
+    extra_elisp+="(setq eww-no-external-handler t)"
+else
+    extra_elisp+="(setq eww-no-external-handler nil)"
+fi
+
+set -x
+
+if test "$cmd-nice-posix" = "x"; then
+    ( unbuffer $emacs_script $cmd-nice-posix -e "$extra_elisp(let ((force-eww t)) ($browser_function $(cmd-nice-posix "$url")))$elisp" ) &>/dev/null & disown
+else
+    if test -n "$COLUMNS" && test "$COLUMNS" -gt "100"; then
+        COLUMNS=100
+    fi
+
+    if test "$JUST_OPEN" = "y"; then
+        COLUMNS="$COLUMNS" $emacs_script
+    else
+        COLUMNS="$COLUMNS" $emacs_script -noonly -e "$extra_elisp(let ((force-eww t)) ($browser_function $(cmd-nice-posix "$url")))$elisp"
+    fi
+fi
+
+exit $?

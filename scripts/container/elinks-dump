@@ -1,0 +1,72 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -8|-utf) {
+        unicode=y
+        shift
+    }
+    ;;
+
+    -tor) {
+        export USETOR=y
+        shift
+    }
+    ;;
+
+    -u) {
+        UPDATE=y
+        shift
+    }
+    ;;
+
+    -vs) {
+        pager=pen-vs
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${pager:="v"}"
+
+export UPDATE
+
+exec 3>&2
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+fpage() {
+    if is_tty; then
+        $pager
+    else
+        cat
+    fi
+}
+
+filter() {
+    sed '/^References/,$d' | \
+    {
+        if test "$unicode" = "y"; then
+            cat
+        else
+            pen-c ascify
+        fi
+    }
+}
+
+outtf="$(pen-ci -m "$USETOR" elinks --no-numbering --dump "$@" | filter | pen-tf txt)" 
+
+if ! test -s "$outtf"; then
+    pen-ci -m "$USETOR" w3m -dump "$@" | filter > "$outtf"
+fi
+
+exec 2>&3
+cat "$outtf" | sed 's/^ \+//' | fpage
+
+exit 0
