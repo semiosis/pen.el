@@ -158,7 +158,7 @@
 (require 'pen-major-mode)
 
 (require 'pen-aliases)
-(require 'pen-org)
+;; (require 'pen-org)
 
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."
@@ -189,6 +189,7 @@ Be mindful of quoting arguments correctly."
 (if (inside-docker-p)
     (require 'pen-cua))
 (require 'pen-tramp)
+(require 'pen-gpg)
 (require 'pen-text-coding-system)
 (require 'pen-editing)
 (require 'pen-hippie-expand)
