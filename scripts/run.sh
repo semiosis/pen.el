@@ -24,8 +24,8 @@ fi
 
 if test -f $HOME/.emacs.d/host/config/pen.vim; then
     penvim_fp=$HOME/.emacs.d/host/config/pen.vim
-elif test -f $HOME/.emacs.d/host/config/pen.vim; then
-    penvim_fp=$HOME/.emacs.d/host/config/pen.vim
+elif test -f $HOME/.emacs.d/config/pen.vim; then
+    penvim_fp=$HOME/.emacs.d/config/pen.vim
 fi
 
 if test -d ~/.pen && ! test -f ~/.pen/pen.vim && test -f "$penvim_fp"; then
