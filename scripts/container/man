@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+if man-page-exists-p "$@"; then
+    /usr/bin/man "$@"
+else
+    iman "$@"
+fi
