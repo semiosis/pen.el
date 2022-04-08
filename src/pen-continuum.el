@@ -40,25 +40,18 @@
    (continuum-get-old)
    (continuum-get-current)))
 
-;; Named after Gene Wilder,
-;; gene is a purely imaginary playground.
-;; It's also inspired by gene drives and 'game of life' approach to the playground.
-
-;; Gene Wilder
-;; “Pure Imagination” was written in 1971 by
-;; Leslie Bricusse and Anthony Newley for the
-;; movie “Willy Wonka & the Chocolate Factory”,
-;; where it was sung by Gene Wilder as Willy
-;; Wonka. It has since been recorded by a wide
-;; variety of performers.
-
-;; It's a game of life for GPT-3/Codex
-;; - First iteration:
-
-(defun gene-start ()
+(defun continuum-life-start ()
   (interactive)
 
-
-  )
+  (let ((cb (current-buffer)))
+    (async-pf "pf-evaluate-entire-terminal-to-get-a-new-terminal/1"
+              (eval
+               `(lambda (result)
+                  (with-current-buffer ,cb
+                    (save-excursion-reliably
+                     (save-excursion-and-region-reliably
+                      (pen-replace-region result)))
+                    (gene-start))))
+              (buffer-string))))
 
 (provide 'pen-continuum)

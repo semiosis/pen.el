@@ -12,5 +12,6 @@
 (defalias 'current-buffer-name 'buffer-name)
 (defalias 'locate-binary 'executable-find)
 (defalias 'deselect 'deactivate-mark)
+(defalias 'sleep 'sleep-for)
 
 (provide 'pen-aliases)
