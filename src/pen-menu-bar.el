@@ -626,6 +626,15 @@
     (bindings--define-key menu [pen-continuum-backwards]
       '(menu-item "Backcast" continuum-backwards
                   :help "Backcast screen with Continuum"))
+    (bindings--define-key menu [pen-continuum-life-start]
+      '(menu-item "Life start" continuum-life-stop
+                  :help "Start Game of Life in current buffer"))
+    (bindings--define-key menu [pen-continuum-life-stop]
+      '(menu-item "Life stop" continuum-life-start
+                  :help "Start Game of Life in current buffer"))
+    (bindings--define-key menu [pen-continuum-life-update]
+      '(menu-item "Life update" continuum-life-update
+                  :help "Step Game of Life once in current buffer"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
