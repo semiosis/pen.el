@@ -501,6 +501,34 @@
                       ',info)
                   (not (pen-var-value-maybe 'no-info)))))
 
+          (final-setup
+           (if (not (pen-var-value-maybe 'do-pen-batch))
+               (or (pen-var-value-maybe 'setup)
+                   ',setup)))
+
+          (final-terminate
+           (if (not (pen-var-value-maybe 'do-pen-batch))
+               (or (pen-var-value-maybe 'terminate)
+                   ',terminate)))
+
+          (final-batch-setup
+           (if (pen-var-value-maybe 'do-pen-batch)
+               (or (pen-var-value-maybe 'batch-setup)
+                   ',batch-setup)))
+
+          (final-batch-terminate
+           (if (pen-var-value-maybe 'do-pen-batch)
+               (or (pen-var-value-maybe 'batch-terminate)
+                   ',batch-terminate)))
+
+          (final-setup
+           (if final-setup
+               (eval-string (concat "(progn " final-setup ")"))))
+
+          (final-batch-setup
+           (if final-batch-setup
+               (eval-string (concat "(progn " final-batch-setup ")"))))
+
           (final-new-document
            (and (or (pen-var-value-maybe 'do-etv)
                     (pen-var-value-maybe 'new-document)
@@ -1823,47 +1851,56 @@
                " "
                "current-prefix-arg: " (pps current-prefix-arg)))
 
-     (if no-select-result
-         results
-       (if is-interactive
-           (cond
-            ((sor final-action)
-             (progn
-               (apply (intern final-action) (list result))
-               result))
-            ((or
-              (string-equal final-mode "search")
-              final-info
-              final-new-document
-              (>= (prefix-numeric-value current-prefix-arg) 4))
-             (pen-log "pen new doc")
-             (pen-etv (ink-decode (ink-propertise result))))
-            ;; (final-analyse
-            ;;  (pen-etv result))
-            ;; Filter takes priority over insertion
-            ((and final-filter
-                  mark-active)
-             ;; (pen-replace-region (concat (pen-selected-text) result))
-             (pen-log "pen filtering")
-             (if (sor result)
-                 (pen-replace-region (ink-propertise result))
-               (error "pen filter returned empty string")))
+     (let ((ret
+            (if no-select-result
+                results
+              (if is-interactive
+                  (cond
+                   ((sor final-action)
+                    (progn
+                      (apply (intern final-action) (list result))
+                      result))
+                   ((or
+                     (string-equal final-mode "search")
+                     final-info
+                     final-new-document
+                     (>= (prefix-numeric-value current-prefix-arg) 4))
+                    (pen-log "pen new doc")
+                    (pen-etv (ink-decode (ink-propertise result))))
+                   ;; (final-analyse
+                   ;;  (pen-etv result))
+                   ;; Filter takes priority over insertion
+                   ((and final-filter
+                         mark-active)
+                    ;; (pen-replace-region (concat (pen-selected-text) result))
+                    (pen-log "pen filtering")
+                    (if (sor result)
+                        (pen-replace-region (ink-propertise result))
+                      (error "pen filter returned empty string")))
 
-            ;; These are the overrides
-            ;; Insertion is for prompts for which a new buffer is not necessary
-            ((or final-force-completion)
-             (pen-log "pen completing")
-             (pen-complete-insert (ink-propertise result)))
+                   ;; These are the overrides
+                   ;; Insertion is for prompts for which a new buffer is not necessary
+                   ((or final-force-completion)
+                    (pen-log "pen completing")
+                    (pen-complete-insert (ink-propertise result)))
 
-            ;; These are the defaults
-            ((or final-insertion
-                 final-completion)
-             (pen-log "inserting")
-             (pen-complete-insert (ink-propertise result)))
-            (t
-             (pen-log "pen defaulting")
-             (pen-etv (ink-propertise result))))
-         result))))
+                   ;; These are the defaults
+                   ((or final-insertion
+                        final-completion)
+                    (pen-log "inserting")
+                    (pen-complete-insert (ink-propertise result)))
+                   (t
+                    (pen-log "pen defaulting")
+                    (pen-etv (ink-propertise result))))
+                result))))
+
+       (if final-terminate
+           (eval-string (concat "(progn " final-terminate ")")))
+
+       (if final-batch-terminate
+           (eval-string (concat "(progn " final-batch-terminate ")")))
+
+       ret)))
 
 ;; TODO Make the transient system this way:
 ;; If initial-transient is on, then abort the function but provide
@@ -1873,6 +1910,95 @@
 ;; (defun run-prompt-function-initial-transient ()
 
 ;;   )
+
+(defmacro pen-define-prompt-function-body ()
+  `(let* ((is-interactive
+           (or (interactive-p)
+               force-interactive))
+          ;; (run-transient-prompt-config
+          ;;  (and (interactive-p)
+          ;;       (= (prefix-numeric-value current-prefix-arg) 1)))
+          (client-fn-name
+           (replace-regexp-in-string "^pf-" "pen-fn-" (str ',func-sym)))
+          (client-fn-sym
+           (intern client-fn-name))
+          (gen-id (pen-uuid))
+          (gen-time (time-to-seconds))
+          (gen-date (pen-snc (concat "date +%d.%m.%y -d @" (str gen-time))))
+          (gen-dir (f-join (pen-umn "$HOME/.pen/results")
+                           (concat "results_"
+                                   (str gen-time)
+                                   "_"
+                                   (str gen-date)
+                                   "_"
+                                   (str gen-id)))))
+     (if client
+         (apply client-fn-sym
+                (append
+                 (mapcar 'eval ',all-var-syms)
+                 (list
+                  :no-select-result no-select-result
+                  :include-prompt include-prompt
+                  :no-gen no-gen
+                  :select-only-match select-only-match
+                  :variadic-var variadic-var
+                  :inject-gen-start inject-gen-start
+                  :temperature temperature
+                  :override-prompt override-prompt
+                  :proxy proxy
+                  :force-interactive is-interactive
+                  ;; inert for client
+                  ;; client
+                  ;; server
+                  )))
+       (pen-force-custom
+        (cl-macrolet ((expand-template
+                       (string-sym)
+                       `(--> ,string-sym
+                          ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
+                          ;; The t fixes this
+                          (pen-onelineify-safe it)
+                          ;; TODO Replace the engine-delimiter
+                          ;; <delim>
+                          (pen-expand-template-keyvals it final-subprompts-al t final-pipelines)
+                          (pen-expand-template it vals t)
+                          ;; I also want to encode newlines into <pen-newline> and <pen-dnl>
+                          ;; But only for delim
+                          (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t final-pipelines)
+                          (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
+                          (pen-expand-template-keyvals it var-keyvals-slugged t final-pipelines)
+                          (pen-expand-template-keyvals it var-keyvals t final-pipelines)
+                          (pen-expand-template-keyvals it final-defs t final-pipelines)
+                          ;; (pen-expand-template-keyvals it final-expressions t final-pipelines)
+                          (pen-unonelineify-safe it)))
+                      (expand-template-al
+                       (string-sym al)
+                       `(--> ,string-sym
+                          ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
+                          ;; The t fixes this
+                          (pen-onelineify-safe it)
+                          (pen-expand-template-keyvals it ,al t final-pipelines)
+                          (pen-unonelineify-safe it))))
+
+          (setq pen-last-prompt-data `((face . ink-generated)
+                                       ;; This is necessary because most modes
+                                       ;; do not allow allow you to change the faces.
+                                       ("INK_TYPE" . "generated")
+                                       ("PEN_FUNCTION_NAME" . ,,func-name)
+                                       ("PEN_GEN_TIME" . ,(str gen-time))))
+
+          (pen-append-to-file
+           (concat
+            "\n'"
+            (pen-snc "tr -d '\\n'" (pps pen-last-prompt-data)))
+           (f-join penconfdir "prompt-hist-preselect.el"))
+
+          (if (or (pen-prompt-disabled-p ,func-name)
+                  (pen-prompt-disabled-p ,title))
+              (progn (message "Prompting function aborted")
+                     nil)
+
+            ,(macroexpand `(pen-define-prompt-function-pipeline))))))))
 
 (defun define-prompt-function ()
   (eval
@@ -1908,96 +2034,19 @@
 
       ;; force-custom, unfortunately disables call-interactively
       ;; i guess that it could also disable other values
-      (let* ((is-interactive
-              (or (interactive-p)
-                  force-interactive))
-             ;; (run-transient-prompt-config
-             ;;  (and (interactive-p)
-             ;;       (= (prefix-numeric-value current-prefix-arg) 1)))
-             (client-fn-name
-              (replace-regexp-in-string "^pf-" "pen-fn-" (str ',func-sym)))
-             (client-fn-sym
-              (intern client-fn-name))
-             (gen-id (pen-uuid))
-             (gen-time (time-to-seconds))
-             (gen-date (pen-snc (concat "date +%d.%m.%y -d @" (str gen-time)) ))
-             (gen-dir (f-join (pen-umn "$HOME/.pen/results")
-                              (concat "results_"
-                                      (str gen-time)
-                                      "_"
-                                      (str gen-date)
-                                      "_"
-                                      (str gen-id)))))
-        (if client
-            (apply client-fn-sym
-                   (append
-                    (mapcar 'eval ',all-var-syms)
-                    (list
-                     :no-select-result no-select-result
-                     :include-prompt include-prompt
-                     :no-gen no-gen
-                     :select-only-match select-only-match
-                     :variadic-var variadic-var
-                     :inject-gen-start inject-gen-start
-                     :temperature temperature
-                     :override-prompt override-prompt
-                     :proxy proxy
-                     :force-interactive is-interactive
-                     ;; inert for client
-                     ;; client
-                     ;; server
-                     )))
-          (pen-force-custom
-           (cl-macrolet ((expand-template
-                          (string-sym)
-                          `(--> ,string-sym
-                             ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
-                             ;; The t fixes this
-                             (pen-onelineify-safe it)
-                             ;; TODO Replace the engine-delimiter
-                             ;; <delim>
-                             (pen-expand-template-keyvals it final-subprompts-al t final-pipelines)
-                             (pen-expand-template it vals t)
-                             ;; I also want to encode newlines into <pen-newline> and <pen-dnl>
-                             ;; But only for delim
-                             (pen-expand-template-keyvals it (list (cons "delim" (pen-encode-string final-delimiter t))) t final-pipelines)
-                             (pen-expand-template-keyvals it (list (cons "delim-1" (pen-encode-string (pen-snc "sed 's/.$//'" final-delimiter) t))) t final-pipelines)
-                             (pen-expand-template-keyvals it var-keyvals-slugged t final-pipelines)
-                             (pen-expand-template-keyvals it var-keyvals t final-pipelines)
-                             (pen-expand-template-keyvals it final-defs t final-pipelines)
-                             ;; (pen-expand-template-keyvals it final-expressions t final-pipelines)
-                             (pen-unonelineify-safe it)))
-                         (expand-template-al
-                          (string-sym al)
-                          `(--> ,string-sym
-                             ;; Can't onelineify because some of the values substituted may have newlines and be unonelineified
-                             ;; The t fixes this
-                             (pen-onelineify-safe it)
-                             (pen-expand-template-keyvals it ,al t final-pipelines)
-                             (pen-unonelineify-safe it))))
+      (let ((final-prompt-save-mark-and-excursion
+             (if (not (pen-var-value-maybe 'do-pen-batch))
+                 (or (pen-var-value-maybe 'prompt-save-mark-and-excursion)
+                     ',prompt-save-mark-and-excursion))))
 
-             (setq pen-last-prompt-data `((face . ink-generated)
-                                          ;; This is necessary because most modes
-                                          ;; do not allow allow you to change the faces.
-                                          ("INK_TYPE" . "generated")
-                                          ("PEN_FUNCTION_NAME" . ,,func-name)
-                                          ("PEN_GEN_TIME" . ,(str gen-time))))
-
-             (pen-append-to-file
-              (concat
-               "\n'"
-               (pen-snc "tr -d '\\n'" (pps pen-last-prompt-data)))
-              (f-join penconfdir "prompt-hist-preselect.el"))
-
-             (if (or (pen-prompt-disabled-p ,func-name)
-                     (pen-prompt-disabled-p ,title))
-                 (progn (message "Prompting function aborted")
-                        nil)
-
-               ;; Many a  transformation pipeline here could benefit from transducers
-               ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
-               ;; https://github.com/FrancisMurillo/transducer.el
-               ,(macroexpand `(pen-define-prompt-function-pipeline))))))))))
+        ;; Many a  transformation pipeline here could benefit from transducers
+        ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
+        ;; https://github.com/FrancisMurillo/transducer.el
+        (if final-prompt-save-mark-and-excursion
+            (save-excursion-reliably
+             (save-excursion-and-region-reliably
+              ,(macroexpand `(pen-define-prompt-function-body))))
+          ,(macroexpand `(pen-define-prompt-function-body)))))))
 
 (defmacro pen-load-prompt-function ()
   `(let*
@@ -2086,6 +2135,11 @@
         (mode (ht-get yaml-ht "mode"))
         (search-threshold (ht-get yaml-ht "search-threshold"))
         (flags (ht-get yaml-ht "flags"))
+        (setup (ht-get yaml-ht "setup"))
+        (terminate (ht-get yaml-ht "terminate"))
+        (batch-setup (ht-get yaml-ht "batch-setup"))
+        (batch-terminate (ht-get yaml-ht "batch-terminate"))
+        (prompt-save-mark-and-excursion (pen-yaml-test yaml-ht "save-mark-and-excursion"))
         (evaluator (ht-get yaml-ht "evaluator"))
         (api-endpoint (ht-get yaml-ht "api-endpoint"))
 

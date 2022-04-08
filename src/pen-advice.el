@@ -158,6 +158,12 @@
            (deactivate-mark t))
        res)))
 
+(defmacro save-excursion-reliably (&rest body)
+  `(let* ((p (point))
+          (res (progn ,@body)))
+     (goto-char p)
+     res))
+
 (defun advise-to-save-region (proc &rest args)
   (if mark-active
       (save-excursion
