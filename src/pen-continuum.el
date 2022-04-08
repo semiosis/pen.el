@@ -40,18 +40,38 @@
    (continuum-get-old)
    (continuum-get-current)))
 
+;;; Continuum Game of Life
+
+(defvar continuum-life-ready t)
+(defset continuum-life-stop nil)
+
 (defun continuum-life-start ()
   (interactive)
 
-  (let ((cb (current-buffer)))
-    (async-pf "pf-evaluate-entire-terminal-to-get-a-new-terminal/1"
-              (eval
-               `(lambda (result)
-                  (with-current-buffer ,cb
-                    (save-excursion-reliably
-                     (save-excursion-and-region-reliably
-                      (pen-replace-region result)))
-                    (gene-start))))
-              (buffer-string))))
+  (defset continuum-life-stop nil)
+  (call-interactively 'continuum-life-update))
+
+(defun continuum-life-update (buf)
+  (interactive (list (current-buffer)))
+  (setq buf (or buf (current-buffer)))
+  (with-current-buffer buf
+    (let ((bs (buffer-string)))
+      (async-pf "pf-evaluate-entire-terminal-to-get-a-new-terminal/1"
+                (eval
+                 `(lambda (result)
+                    (with-current-buffer ,buf
+                      (if (and (string-equal (buffer-string) ,bs)
+                               (not (string-equal (buffer-string) result))
+                               (not (pen-selected)))
+                          (save-excursion-reliably
+                           (save-excursion-and-region-reliably
+                            (pen-replace-region result)))))
+                    (if (not continuum-life-stop)
+                        (continuum-life-update ,buf))))
+                bs))))
+
+(defun continuum-life-stop ()
+  (interactive)
+  (setq continuum-life-stop t))
 
 (provide 'pen-continuum)

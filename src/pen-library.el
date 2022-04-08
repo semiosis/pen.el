@@ -775,7 +775,7 @@ buffer which is not included when this function returns"
 (defun async-pf (prompt-function callback-fn &rest args)
   (let ((tf (make-temp-file "async-pf-")))
     (async-start-process
-     "pen-async-pf"
+     (concat "pen-async-pf-" (str (date-ts)))
      (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" (str prompt-function) ,@args)))
      (eval
       `(lambda (proc)
