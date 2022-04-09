@@ -671,11 +671,14 @@ case "$f" in
         # cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
         # For the best experience though I should avoid leaving it in pen-x and attach tmux because tcl/expect messes with visuals
         # Have to keep it attached and backgrounded and not kill pen-x until the session is destroyed.
-        cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
+
+        cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -e \"»\" -s \"tty > /tmp/asciinema-client.txt\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
         cmd2="TMUX= tmux attach -t \"$CALLER_TARGET\""
 
+        echo "cinema-$caller_slug" > /tmp/asciinema-x-session.txt
         tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; setw force-width "$swidth" \; setw force-height "$sheight" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
         # Therefore I need to attache a new session, which attaches the same session
+        echo "cinema-$caller_slug-user" > /tmp/asciinema-user-session.txt
         tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-${caller_slug}-user" \; setw force-width "$swidth" \; setw force-height "$sheight" \; respawnp -k -t "cinema-${caller_slug}-user:1" "$cmd2"
 
         # Somehow I must detach CALLER_TARGET from asciinema and regain control.
@@ -782,6 +785,12 @@ case "$f" in
         pen-tm n "$f :: NOT FULLY IMPLEMENTED"
 
         tmux has-session -t "$1:"
+        exit $?
+    }
+    ;;
+
+    list-sessions) {
+        session_list
         exit $?
     }
     ;;

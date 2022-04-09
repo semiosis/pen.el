@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+pen-detach-asciinema-tmux-sessions
+
+x_session="$(cat /tmp/asciinema-x-session.txt)"
+user_session="$(cat /tmp/asciinema-user-session.txt)"
+
+CALLER_TARGET="$(tmux display -p "#{session_name}")"
+
+if test -n "$TMUX" && test "$CALLER_TARGET" = "$user_session"; then
+    tmux switch-client -t "$x_session:"
+    tmux kill-session -t "$user_session"
+fi
+
+# now use pen-x to upload the asciinema recording and copy the url

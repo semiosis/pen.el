@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# I have to detach the clients of the sessions
+
+client="$(cat /tmp/asciinema-client.txt)"
+tmux detach-client -t "$client"
