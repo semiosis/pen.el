@@ -998,7 +998,8 @@
       `(menu-item "ℝi interpreters" ,menu-bar-real-menu
                   :help "Real interpreters"))
     (bindings--define-key menu [mi-menu-bar-ii-menu]
-      `(menu-item "𝑖i interpreters" ,menu-bar-ii-menu
+      ;; Can't use 𝑖 inn menu bar
+      `(menu-item "ii interpreters" ,menu-bar-ii-menu
                   :help "Imaginary interpreters"))
     (bindings--define-key menu [mi-menu-bar-nlsh-menu]
       `(menu-item "NL shell" ,menu-bar-nlsh-menu
@@ -1018,11 +1019,12 @@
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
       `(menu-item "ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
+    ;; Frustratingly, can't use λ either in the menu bar
     (bindings--define-key menu [mi-ielm]
-      '(menu-item "𝑖λ IELM" ielm
+      '(menu-item "ilambda IELM" ielm
                   :help "Work with ilambda functions and macros in elisp"))
     (bindings--define-key menu [mi-ilambda-repl]
-      '(menu-item "𝑖λ quick ilambda REPL" ilambda-repl
+      '(menu-item "ilambda quick ilambda REPL" ilambda-repl
                   :help "Run ilambda functions without coding"))
     ;; (bindings--define-key menu [mi-pen-tm-asciinema-play]
     ;;   '(menu-item "Asciinema Play" pen-tm-asciinema-play
