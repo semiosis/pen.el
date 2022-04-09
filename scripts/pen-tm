@@ -659,6 +659,7 @@ case "$f" in
     ;;
 
     ac|asciinema) {
+        # I want to set up an tmux in xterm with the same dimensions as the current screen
 
         swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
         sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
@@ -669,9 +670,9 @@ case "$f" in
 
         cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
 
-        tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
+        cmd tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd" | pen-tv
 
-        pen-xt -b tmux attach -t "cinema-$caller_slug"
+        # pen-xt -b tmux attach -t "cinema-$caller_slug"
     }
     ;;
 

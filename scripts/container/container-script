@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename -- "$0")"
+sn="pen-$sn"
+
+"$sn" "$@"

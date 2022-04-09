@@ -51,18 +51,11 @@ if test -d ~/.pen/dotfiles; then
         echo "Place dotfile hardlinks or directories in this directory to replicate them in the container."
     fi
 
-    rm -rf /tmp/dotfiles
-    cp -as ~/.pen/dotfiles /tmp/dotfiles
-    rsync -rtlphx /tmp/dotfiles/ ~
-    # for fp in ~/.pen/dotfiles/.* ~/.pen/dotfiles/*; do
-    #     df_bn="$(basename "$fp")"
-    #     if ! test -e ~/"$df_bn"; then
-    #         # sync of symlink. That way.
-    #         # Firstly, copy with `cp -as` to create symlinks
-    #         # Then rsync to merge the structure.
-    #         ln -sf "$fp" ~/
-    #     fi
-    # done
+    # This way only symlinks are sent to the docker container
+    # So if I commit, no secrets may accidentally be committed to the container
+    rm -rf ~/.pen/dotfiles-syms
+    cp -as ~/.pen/dotfiles ~/.pen/dotfiles-syms
+    rsync -rtlphx ~/.pen/dotfiles/ ~
 fi
 
 if test -d ~/.emacs.d/host/pen.el/config; then
