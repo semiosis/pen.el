@@ -94,11 +94,11 @@
            (final-blurb
             (or blurb
                 (eval
-                  `(pen-engine
-                    ,apostrophe-engine
-                    (apostrophe-generate-blurb sme)
-                    ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
-                    ))))
+                 `(pen-engine
+                   ,apostrophe-engine
+                   (apostrophe-generate-blurb sme)
+                   ;; (pf-generate-wiki-blurb-for-a-famous-person/1 sme)
+                   ))))
            (final-blurb
             (if (not (and text (string-empty-p text)))
                 (concat
@@ -230,7 +230,7 @@
          (sme-name (concat lang " guru")))
     (apostrophe-chat-about-selection
      (or text
-         (pen-screen-verbatim-or-selection))
+         (str (pen-screen-verbatim-or-selection)))
      sme-name
      (concat sme-name " is an expert in " lang "."))))
 

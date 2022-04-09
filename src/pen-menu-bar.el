@@ -1025,8 +1025,8 @@
                   :help "Run a natural language query shell"))
     (bindings--define-key menu [mi-menu-bar-guru-menu]
       `(menu-item "Guru" ,menu-bar-guru-menu
-                  :help "Run a natural language shell"))
-    (bindings--define-key menu [mi-menu-bar-guru-menu]
+                  :help "Talk to a chatbot about some text"))
+    (bindings--define-key menu [mi-menu-bar-sandbox-menu]
       `(menu-item "Sandbox" ,menu-bar-sandbox-menu
                   :help "Start an sandbox"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
