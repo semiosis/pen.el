@@ -1081,6 +1081,12 @@ non-nil."
       (global-set-key "\C-n" 'pen-scroll-down)
       (global-set-key "\C-p" 'pen-scroll-up)))
 
+(defun newline-indent ()
+  (interactive)
+  (delete-horizontal-space)
+  (newline)
+  (c-indent-line-or-region))
+
 (defun pen-enter-edit-emacs (args)
   "Opens region in a new buffer if a region is selected. If an argument is provided then the C-m falls through."
   (interactive "P")
