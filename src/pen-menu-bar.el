@@ -473,13 +473,26 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-ilambda-menu
+  (let ((menu (make-sparse-keymap "iLambda")))
+    (bindings--define-key menu [mi-ielm]
+      '(menu-item "ilambda IELM" ielm
+                  :help "Work with ilambda functions and macros in elisp"))
+    (bindings--define-key menu [mi-ilambda-repl]
+      '(menu-item "ilambda REPL" ilambda-repl
+                  :help "Run ilambda functions without coding"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-cterm-menu
   (let ((menu (make-sparse-keymap "ComplexTerm")))
     (bindings--define-key menu [mi-cterm-start]
-      '(menu-item "Start cterm (Pen.el wrapping a host terminal)" cterm-start
+      '(menu-item "Start cterm" cterm-start
                   :help "Pen.el wraps your host's terminal to provide augmented intelligence"))
     (bindings--define-key menu [mi-pet-start]
-      '(menu-item "Start pet (Pen.el wrapping a terminal within the docker container)" pet-start
+      '(menu-item "Start pet" pet-start
                   :help "Pen.el wraps your host's terminal to provide augmented intelligence"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
@@ -1023,12 +1036,10 @@
       `(menu-item "ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
     ;; Frustratingly, can't use λ either in the menu bar
-    (bindings--define-key menu [mi-ielm]
-      '(menu-item "ilambda IELM" ielm
-                  :help "Work with ilambda functions and macros in elisp"))
-    (bindings--define-key menu [mi-ilambda-repl]
-      '(menu-item "ilambda quick ilambda REPL" ilambda-repl
-                  :help "Run ilambda functions without coding"))
+    (bindings--define-key menu [mi-menu-bar-ilambda-menu]
+      `(menu-item "ilambda" ,menu-bar-ilambda-menu
+                  :help "ilambda REPLs"))
+    
     ;; (bindings--define-key menu [mi-pen-tm-asciinema-play]
     ;;   '(menu-item "Asciinema Play" pen-tm-asciinema-play
     ;;               :help "Play an asciinema recording"))
