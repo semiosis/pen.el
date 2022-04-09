@@ -8,10 +8,12 @@ xrdb -load /root/.Xresources
 # { cat /etc/hosts | awk 1; echo "127.0.1.1	pen-$(hostname)"; } > /etc/hosts
 
 hn="$(hostname)"
+hhn="$(hostname | sed 's/^pen-//')"
 
 IFS= read -r -d '' etchosts <<HEREDOC
 127.0.0.1	localhost
 127.0.1.1	$hn
+127.0.1.1	$hhn
 127.0.1.1 croogle docsets gallery racket racketpkgs wizard bodaciousblog pydoc36 $hn
 
 # The following lines are desirable for IPv6 capable hosts
@@ -269,8 +271,11 @@ if ! test -n "$DISPLAY"; then
     nohup Xvfb :0 -screen 0 1x1x8 &>/dev/null &
 fi
 
+(
+export TERM=zsh
 tmux new -d -s init
 tmux new -d -s localhost
+)
 
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
