@@ -1011,7 +1011,7 @@
       `(menu-item "Guru" ,menu-bar-guru-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-guru-menu]
-      `(menu-item "Sandbox" menu-bar-sandbox-men
+      `(menu-item "Sandbox" ,menu-bar-sandbox-menu
                   :help "Start an sandbox"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
       `(menu-item "Chann.el" ,menu-bar-channel-menu
