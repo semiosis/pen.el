@@ -1,4 +1,1 @@
-#!/bin/bash
-export TTY
-
-pen-x "$@"
+container-script

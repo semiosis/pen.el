@@ -723,6 +723,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -exit) {
+        script_append "exit"
+        shift
+    }
+    ;;
+
     -fc) {
 
         script_append "set force_conservative 0"
