@@ -2,7 +2,8 @@
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
-tmux new -d init
+tmux new -d -s init
+tmux new -d -s localhost
 
 xrdb -merge /root/.Xresources
 xrdb -load /root/.Xresources

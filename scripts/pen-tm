@@ -1050,8 +1050,10 @@ case "$f" in
             -b|-h) { xt_opt=$opt; shift; } ;;
         esac
 
-        last_arg="${@: -1}"
-        name="$last_arg"
+        if test "$#" -gt 0; then
+            last_arg="${@: -1}"
+            name="$last_arg"
+        fi
         : ${name:="localhost:"}
 
         if test "$name" = "localhost:"; then

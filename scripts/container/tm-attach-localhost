@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# This is used for tm-attach-localhost-and-record
+
+unset CWD
+# This is important! Otherwise, tmux bindings that spawn windows will
+# mess up tmux
+unset TTY
+cd $NOTES;
+tmux set -t "localhost:" status-left "[ $(hostname | sed 's/[^ _-]*/\u&/g') ]  "
+tmux attach -c $NOTES -t localhost: || tmux new -c $NOTES -s localhost "CWD=$NOTES zsh"
