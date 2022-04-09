@@ -982,13 +982,13 @@
 (defset menu-bar-apps-menu
   (let ((menu (make-sparse-keymap "Applications")))
     (bindings--define-key menu [mi-menu-bar-apostrophe-menu]
-      `(menu-item "🎤 Apostrophe" ,menu-bar-apostrophe-menu
+      `(menu-item "Apostrophe" ,menu-bar-apostrophe-menu
                   :help "Talk 1-on-1 to chatbots"))
     (bindings--define-key menu [mi-menu-bar-continuum-menu]
-      `(menu-item "∞ Continuum" ,menu-bar-continuum-menu
+      `(menu-item "Continuum" ,menu-bar-continuum-menu
                   :help "Imagine your computer's state forwards and backwards in time"))
     (bindings--define-key menu [mi-menu-bar-mtp-menu]
-      `(menu-item "🎩Mad Tea-Party" ,menu-bar-mtp-menu
+      `(menu-item "Mad Tea-Party" ,menu-bar-mtp-menu
                   :help "Partake in simulated group conversation between chatbots and humans"))
     (bindings--define-key menu [mi-menu-bar-iman-menu]
       `(menu-item "𝑖man" iman
@@ -1000,22 +1000,22 @@
       `(menu-item "𝑖i interpreters" ,menu-bar-ii-menu
                   :help "Imaginary interpreters"))
     (bindings--define-key menu [mi-menu-bar-nlsh-menu]
-      `(menu-item "🗣️  NL shell" ,menu-bar-nlsh-menu
+      `(menu-item "NL shell" ,menu-bar-nlsh-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-nlq-menu]
-      `(menu-item "🛈️  NL query" ,menu-bar-nlq-menu
+      `(menu-item "NL query" ,menu-bar-nlq-menu
                   :help "Run a natural language query shell"))
     (bindings--define-key menu [mi-menu-bar-guru-menu]
-      `(menu-item "♓︎️ Guru" ,menu-bar-guru-menu
+      `(menu-item "Guru" ,menu-bar-guru-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-guru-menu]
-      `(menu-item "🖌︎️ Sandbox" menu-bar-sandbox-men
+      `(menu-item "Sandbox" menu-bar-sandbox-men
                   :help "Start an sandbox"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
-      `(menu-item "👻 Chann.el" ,menu-bar-channel-menu
+      `(menu-item "Chann.el" ,menu-bar-channel-menu
                   :help "Channel personalities to control your computer"))
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
-      `(menu-item "💻 ComplexTerm" ,menu-bar-cterm-menu
+      `(menu-item "ComplexTerm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
     (bindings--define-key menu [mi-ielm]
       '(menu-item "𝑖λ IELM" ielm
@@ -1027,13 +1027,13 @@
     ;;   '(menu-item "Asciinema Play" pen-tm-asciinema-play
     ;;               :help "Play an asciinema recording"))
     (bindings--define-key menu [mi-menu-bar-melee-menu]
-      `(menu-item "🍓 Melee" ,menu-bar-melee-menu
+      `(menu-item "Melee" ,menu-bar-melee-menu
                   :help "Mount imaginary filesystems"))
     (bindings--define-key menu [mi-menu-bar-lookingglass-menu]
-      `(menu-item "🔍 LookingGlass" ,menu-bar-lookingglass-menu
+      `(menu-item "LookingGlass" ,menu-bar-lookingglass-menu
                   :help "Visit imaginary websites"))
     (bindings--define-key menu [mi-menu-bar-paracosm-menu]
-      `(menu-item "🧠Paracosm" ,menu-bar-paracosm-menu
+      `(menu-item "Paracosm" ,menu-bar-paracosm-menu
                   :help "AI-assisted mind-mapping"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
@@ -1051,7 +1051,8 @@
     (bindings--define-key menu [mi-pen-server-suggest]
       '(menu-item "Suggest server commands" pen-server-suggest
                   :help "When a human is prompted, it will appear in the hidden terminal"))
-    (bindings--define-key menu [mi-pen-start-hidden-terminal]
+    (bindings--define-key
+        menu [mi-pen-start-hidden-terminal]
       '(menu-item "Start hidden human terminal" pen-start-hidden-terminal
                   :help "When a human is prompted, it will appear in the hidden terminal"))
     (bindings--define-key menu [mi-pen-start-hidden-terminal-in-pet]
