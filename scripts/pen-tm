@@ -654,7 +654,7 @@ case "$f" in
 
         TMUX= tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "$tmsessionname"
 
-        xt -b -E "tmux setenv -t $(cmd-nice-posix "$tmsessionname") WINDOWID $(cmd-nice-posix "\$WINDOWID") \\; respawnp -k -t $(cmd-nice-posix "$tmsessionname:1") $(cmd-nice-posix "$cmd") \\; attach -t $(cmd-nice-posix "$tmsessionname")"
+        pen-xt -b -E "tmux setenv -t $(cmd-nice-posix "$tmsessionname") WINDOWID $(cmd-nice-posix "\$WINDOWID") \\; respawnp -k -t $(cmd-nice-posix "$tmsessionname:1") $(cmd-nice-posix "$cmd") \\; attach -t $(cmd-nice-posix "$tmsessionname")"
     }
     ;;
 
@@ -671,7 +671,7 @@ case "$f" in
 
         tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
 
-        xt -b tmux attach -t "cinema-$caller_slug"
+        pen-xt -b tmux attach -t "cinema-$caller_slug"
     }
     ;;
 
@@ -1040,7 +1040,7 @@ case "$f" in
         fi
 
         if [ -n "$name" ]; then
-            xt $xt_opt pen-tm ta "$name"
+            pen-xt $xt_opt pen-tm ta "$name"
         else
             tm-attach-localhost
         fi

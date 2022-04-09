@@ -51,12 +51,18 @@ if test -d ~/.pen/dotfiles; then
         echo "Place dotfile hardlinks or directories in this directory to replicate them in the container."
     fi
 
-    for fp in ~/.pen/dotfiles/.* ~/.pen/dotfiles/*; do
-        df_bn="$(basename "$fp")"
-        if ! test -e ~/"$df_bn"; then
-            ln -sf "$fp" ~/
-        fi
-    done
+    rm -rf /tmp/dotfiles
+    cp -a ~/.pen/dotfiles /tmp/dotfiles
+    rsync -rtlphx /tmp/dotfiles/ ~
+    # for fp in ~/.pen/dotfiles/.* ~/.pen/dotfiles/*; do
+    #     df_bn="$(basename "$fp")"
+    #     if ! test -e ~/"$df_bn"; then
+    #         # sync of symlink. That way.
+    #         # Firstly, copy with `cp -as` to create symlinks
+    #         # Then rsync to merge the structure.
+    #         ln -sf "$fp" ~/
+    #     fi
+    # done
 fi
 
 if test -d ~/.emacs.d/host/pen.el/config; then
