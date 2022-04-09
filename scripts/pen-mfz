@@ -293,7 +293,7 @@ CMD="$(cmd-nice-posix "$@")"
 : ${CMD:="$(cmd-nice-posix "$@")"}
 
 # The wrapper
-cmd="/usr/bin/fzf --algo=v2 $opts $CMD"
+cmd="fzf --algo=v2 $opts $CMD"
 
 my_out="$(cat "$tf_input" | filter_in | eval "$cmd" | { if test $ANSI = y; then pen-strip-ansi; else cat; fi; })"
 ret="$?"

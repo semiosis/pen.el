@@ -578,6 +578,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -fz) {
+        # edit match with pen-eipe
+        # --print-query
         fuzzy="pen-tm fzfh"
         one_linerise_candidates=y
         shift
