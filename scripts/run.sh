@@ -52,7 +52,7 @@ if test -d ~/.pen/dotfiles; then
     fi
 
     rm -rf /tmp/dotfiles
-    cp -a ~/.pen/dotfiles /tmp/dotfiles
+    cp -as ~/.pen/dotfiles /tmp/dotfiles
     rsync -rtlphx /tmp/dotfiles/ ~
     # for fp in ~/.pen/dotfiles/.* ~/.pen/dotfiles/*; do
     #     df_bn="$(basename "$fp")"
