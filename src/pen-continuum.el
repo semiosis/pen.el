@@ -74,4 +74,21 @@
   (interactive)
   (setq continuum-life-stop t))
 
+(defun continuum-life-demo ()
+  (interactive)
+
+  (let ((cb (nbfs
+             ":top
+i = i + 1
+show i
+=> 3
+i = i mod 5
+show i
+=> 3
+Correct!
+loop from top with i == 3")))
+    (if (yn "Start Life?")
+        (progn (switch-to-buffer cb)
+               (continuum-life-start)))))
+
 (provide 'pen-continuum)

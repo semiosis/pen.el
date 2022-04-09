@@ -645,6 +645,9 @@
     (bindings--define-key menu [pen-continuum-life-stop]
       '(menu-item "Life stop" continuum-life-start
                   :help "Start Game of Life in current buffer"))
+    (bindings--define-key menu [pen-continuum-life-demo]
+      '(menu-item "Life demo" continuum-life-demo
+                  :help "Start the Game of Life demo"))
     (bindings--define-key menu [pen-continuum-life-update]
       '(menu-item "Life update" continuum-life-update
                   :help "Step Game of Life once in current buffer"))
