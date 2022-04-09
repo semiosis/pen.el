@@ -460,7 +460,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (defun pen-start-in-xterm ()
   (interactive)
   (if (pen-has-gui-p)
-      (pen-sn "pen tmapin" nil nil nil t)
+      (pen-sn "xt tm init pin" nil nil nil t)
     (error "Display not available")))
 
 (defmacro never (&rest body)
