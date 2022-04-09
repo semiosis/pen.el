@@ -899,7 +899,7 @@
     menu))
 
 (defset menu-bar-inkwell-menu
-  (let ((menu (make-sparse-keymap "Inkw.el 𑑛")))
+  (let ((menu (make-sparse-keymap "Inkw.el")))
     (bindings--define-key menu [mi-pen-go-to-prompt-for-ink]
       '(menu-item "Go to prompt for ink" pen-go-to-prompt-for-ink
                   :help "When the cursor is on some ink, go to the prompt that generated it"))
@@ -915,7 +915,7 @@
     menu))
 
 (defset menu-bar-lookingglass-menu
-  (let ((menu (make-sparse-keymap "🔍 LookingGlass")))
+  (let ((menu (make-sparse-keymap "LookingGlass")))
     (bindings--define-key menu [mi-lg-render]
       '(menu-item "Render" lg-render
                   :help "Render to HTML"))
@@ -957,7 +957,7 @@
     menu))
 
 (defset menu-bar-melee-menu
-  (let ((menu (make-sparse-keymap "🍓 Melee")))
+  (let ((menu (make-sparse-keymap "Melee")))
     (bindings--define-key menu [mi-melee-start-immitation-game]
       '(menu-item "Immitation game" melee-start-immitation-game
                   :help "Start game of immitation"))
