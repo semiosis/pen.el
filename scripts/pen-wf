@@ -6,7 +6,7 @@ export TTY
 
 sn="$(basename "$0")"
 
-emacs_script=sp
+emacs_script=pen-e
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
 
@@ -38,17 +38,17 @@ is_stdout_pipe() {
     [[ -p /dev/stdout ]]
 }
 
-if stdin_exists && ! test "$sn" = "nff"; then
+if stdin_exists && ! test "$sn" = "pen-nff"; then
     cat > "$fp"
 fi
 
 case "$sn" in
-    wf) {
+    pen-wf) {
         cat "$fp"
     }
     ;;
 
-    nf) {
+    pen-nf) {
         if is_tty; then
             exec 0<&1
             exec 2>&1
@@ -59,7 +59,7 @@ case "$sn" in
     }
     ;;
 
-    nff) {
+    pen-nff) {
         if ! test -p "$fp"; then
             rm -f "$fp"
             0</dev/null mkfifo "$fp"

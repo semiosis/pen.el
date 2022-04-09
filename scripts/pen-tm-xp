@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-tmux load-buffer -b myclipboard "$(unbuffer xc "$@" | pen-nf /tmp/tm-xp)"
+tmux load-buffer -b myclipboard "$(unbuffer pen-xc "$@" | pen-nf /tmp/tm-xp)"
 
 # man 'tmux' | vs +/"paste-buffer \[-dpr\] \[-b buffer-name\] \[-s separator\] \[-t"
 

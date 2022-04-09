@@ -138,4 +138,4 @@ bindings="$(p "$bindings" | sed 's/.$//')"
 
 opts+=" --bind=$(cmd-nice-posix "$bindings") "
 
-eval "fzf --algo=v2 $opts $CMD"
+eval "/usr/bin/fzf --algo=v2 $opts $CMD"
