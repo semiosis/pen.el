@@ -583,6 +583,19 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-sandbox-menu
+  (let ((menu (make-sparse-keymap "Sandbox")))
+    (bindings--define-key menu [mi-sandbox-nbfs]
+      '(menu-item "Start sandbox (empty buffer)" nbfs
+                  :help "Create a new empty buffer."))
+    (bindings--define-key menu [mi-sandbox-run]
+      '(menu-item "Run selection" pf-imaginary-code-sandbox/1
+                  :help "Run some imaginary code - language agnostic."))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-guru-menu
   (let ((menu (make-sparse-keymap "Guru")))
     (bindings--define-key menu [mi-guru]
@@ -995,6 +1008,9 @@
     (bindings--define-key menu [mi-menu-bar-guru-menu]
       `(menu-item "♓︎️ Guru" ,menu-bar-guru-menu
                   :help "Run a natural language shell"))
+    (bindings--define-key menu [mi-menu-bar-guru-menu]
+      `(menu-item "🖌︎️ Sandbox" menu-bar-sandbox-men
+                  :help "Start an sandbox"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
       `(menu-item "👻 Chann.el" ,menu-bar-channel-menu
                   :help "Channel personalities to control your computer"))
