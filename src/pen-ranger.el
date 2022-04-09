@@ -1,3 +1,5 @@
+(require 'ranger)
+
 (defun pen-term-ranger ()
   (interactive)
   ;; ranger just doesn't look good in term
