@@ -1011,17 +1011,17 @@
       `(menu-item "iman" iman
                   :help "Get man page"))
     (bindings--define-key menu [mi-menu-bar-real-menu]
-      `(menu-item "ℝi interpreters" ,menu-bar-real-menu
+      `(menu-item "ℝi" ,menu-bar-real-menu
                   :help "Real interpreters"))
     (bindings--define-key menu [mi-menu-bar-ii-menu]
       ;; Can't use 𝑖 inn menu bar
-      `(menu-item "ii interpreters" ,menu-bar-ii-menu
+      `(menu-item "ii" ,menu-bar-ii-menu
                   :help "Imaginary interpreters"))
     (bindings--define-key menu [mi-menu-bar-nlsh-menu]
-      `(menu-item "NL shell" ,menu-bar-nlsh-menu
+      `(menu-item "NL·SH" ,menu-bar-nlsh-menu
                   :help "Run a natural language shell"))
     (bindings--define-key menu [mi-menu-bar-nlq-menu]
-      `(menu-item "NL query" ,menu-bar-nlq-menu
+      `(menu-item "NLQ" ,menu-bar-nlq-menu
                   :help "Run a natural language query shell"))
     (bindings--define-key menu [mi-menu-bar-guru-menu]
       `(menu-item "Guru" ,menu-bar-guru-menu
@@ -1030,10 +1030,10 @@
       `(menu-item "Sandbox" ,menu-bar-sandbox-menu
                   :help "Start an sandbox"))
     (bindings--define-key menu [mi-menu-bar-channel-menu]
-      `(menu-item "Chann.el" ,menu-bar-channel-menu
+      `(menu-item "channel" ,menu-bar-channel-menu
                   :help "Channel personalities to control your computer"))
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
-      `(menu-item "ComplexTerm" ,menu-bar-cterm-menu
+      `(menu-item "cterm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
     ;; Frustratingly, can't use λ either in the menu bar
     (bindings--define-key menu [mi-menu-bar-ilambda-menu]
