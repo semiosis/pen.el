@@ -5,6 +5,7 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 # This is needed to set tmux environment appropriately.
 # Can't simply run 'tmux new -d'
 tm init
+tmux new -d -s localhost
 
 xrdb -merge /root/.Xresources
 xrdb -load /root/.Xresources
