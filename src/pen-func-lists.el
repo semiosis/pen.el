@@ -20,6 +20,7 @@
    (dff (chrome "https://lzone.de/cheat-sheet/YAML"))))
 (defset dired-mode-funcs '(tramp-mount-sshfs
                            dired-narrow
+                           deer-from-dired
                            dired-narrow-fuzzy
                            open-main
                            dired-toggle-read-only

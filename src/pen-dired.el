@@ -154,6 +154,10 @@
         (call-interactively f)
       (message "could infer repl"))))
 
+(define-key dired-mode-map (kbd "C-p") nil)
+(remove-hook 'dired-mode-hook
+             (defun ranger-set-dired-key ()
+               (define-key dired-mode-map ranger-key 'deer-from-dired)))
 (define-key dired-mode-map (kbd "v") 'dired-view-file-v)
 (define-key dired-mode-map (kbd "M-v") 'dired-view-file)
 (define-key dired-mode-map (kbd "M-1") 'dired-view-file-scope)
