@@ -9,7 +9,7 @@ xrdb -load /root/.Xresources
 
 hn="$(hostname)"
 
-IFS= read -r -d '' PYCODE <<HEREDOC
+IFS= read -r -d '' etchosts <<HEREDOC
 127.0.0.1	localhost
 127.0.1.1	$hn
 127.0.1.1 croogle docsets gallery racket racketpkgs wizard bodaciousblog pydoc36 $hn
@@ -23,7 +23,7 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 HEREDOC
 
-printf -- "%s\n" > /etc/hosts
+printf -- "%s\n" "$etchosts" > /etc/hosts
 
 # Do this so emacs doesn't break when using docker commit
 find ~/.emacs.d/host/ -empty -type d -exec rmdir {} \; 2>/dev/null
