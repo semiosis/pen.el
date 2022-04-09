@@ -991,7 +991,8 @@
       `(menu-item "Mad Tea-Party" ,menu-bar-mtp-menu
                   :help "Partake in simulated group conversation between chatbots and humans"))
     (bindings--define-key menu [mi-menu-bar-iman-menu]
-      `(menu-item "𝑖man" iman
+      ;; For some reason 𝑖man would display only 𝑖'
+      `(menu-item "iman" iman
                   :help "Get man page"))
     (bindings--define-key menu [mi-menu-bar-real-menu]
       `(menu-item "ℝi interpreters" ,menu-bar-real-menu
