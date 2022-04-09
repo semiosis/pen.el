@@ -663,14 +663,13 @@ case "$f" in
 
         swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
         sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
-        sheight="$(( sheight + 2 ))"
+        sheight="$(( sheight + 1 ))"
 
         caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
 
-
         cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
 
-        tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
+        tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; setw force-width "$swidth" \; setw force-height "$sheight" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
 
         pen-xt -b tmux attach -t "cinema-$caller_slug"
     }
