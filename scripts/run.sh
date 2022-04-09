@@ -13,7 +13,6 @@ IFS= read -r -d '' etchosts <<HEREDOC
 127.0.0.1	localhost
 127.0.1.1	$hn
 127.0.1.1 croogle docsets gallery racket racketpkgs wizard bodaciousblog pydoc36 $hn
-95.111.216.110	pen-debian
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
