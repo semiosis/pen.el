@@ -5,7 +5,25 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 xrdb -merge /root/.Xresources
 xrdb -load /root/.Xresources
 
-{ cat /etc/hosts | awk 1; echo "127.0.1.1	pen-$(hostname)"; } > /etc/hosts
+# { cat /etc/hosts | awk 1; echo "127.0.1.1	pen-$(hostname)"; } > /etc/hosts
+
+hn="$(hostname)"
+
+IFS= read -r -d '' PYCODE <<HEREDOC
+127.0.0.1	localhost
+127.0.1.1	$hn
+127.0.1.1 croogle docsets gallery racket racketpkgs wizard bodaciousblog pydoc36 $hn
+95.111.216.110	pen-debian
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+HEREDOC
+
+printf -- "%s\n" > /etc/hosts
 
 # Do this so emacs doesn't break when using docker commit
 find ~/.emacs.d/host/ -empty -type d -exec rmdir {} \; 2>/dev/null
