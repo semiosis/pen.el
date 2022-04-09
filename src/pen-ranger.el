@@ -6,7 +6,7 @@
 
 (defun pen-spv-ranger ()
   (interactive)
-  (shell-command (concat "pen-tm -f -d -te spv -c " (pen-q default-directory) " ranger")))
+  (shell-command (concat "pen-tm -f -d -te pen-spv -c " (pen-q default-directory) " ranger")))
 
 (defun pen-sps-ranger (dir)
   (interactive (list default-directory))
@@ -254,17 +254,17 @@ is set, show literally instead of actual buffer."
                (find-file-noselect entry-name t ranger-show-literal)))
           (current-buffer))))))
 
-(define-key ranger-mode-map (kbd "s") 'sph)
-(define-key ranger-mode-map (kbd "S") 'spv)
+(define-key ranger-mode-map (kbd "s") 'pen-sph)
+(define-key ranger-mode-map (kbd "S") 'pen-spv)
 (define-key ranger-mode-map (kbd "v") nil)
 (define-key ranger-mode-map (kbd "V") 'ranger-toggle-marks)
 (define-key ranger-mode-map (kbd "M-v") 'dired-view-file-v)
 (define-key ranger-mode-map (kbd "M-V") 'dired-view-file-vs)
 (define-key ranger-mode-map (kbd "<next>") 'ranger-half-page-down)
 (define-key ranger-mode-map (kbd "<prior>") 'ranger-half-page-up)
-(define-key ranger-mode-map (kbd "M-^") 'vc-cd-top-level)
+(define-key ranger-mode-map (kbd "M-^") 'pen-vc-cd-top-level)
 (define-key ranger-mode-map (kbd "r") 'pen-ranger-to-dired)
-(define-key ranger-mode-map (kbd "M-r") 'sps-ranger)
+(define-key ranger-mode-map (kbd "M-r") 'pen-sps-ranger)
 (define-key ranger-mode-map (kbd "M-1") 'ranger-tpreview)
 
 (define-key global-map (kbd "M-R") 'ranger)
