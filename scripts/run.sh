@@ -2,11 +2,6 @@
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
-# This is needed to set tmux environment appropriately.
-# Can't simply run 'tmux new -d'
-tm init
-tmux new -d -s localhost
-
 xrdb -merge /root/.Xresources
 xrdb -load /root/.Xresources
 
@@ -256,6 +251,9 @@ fi
 if ! test -n "$DISPLAY"; then
     nohup Xvfb :0 -screen 0 1x1x8 &>/dev/null &
 fi
+
+tmux new -d -s init
+tmux new -d -s localhost
 
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
