@@ -26,6 +26,7 @@
                  :no-select-result t
                  :client iλ-thin)))
 
+;; TODO Add docfuns
 (defmacro defimacro (name &rest body)
   "Define imacro"
   (cond
@@ -43,9 +44,9 @@
       ,(cadr body)))))
 (defalias 'imacro 'defimacro)
 
-;; (defun test-imacro-1 ()
-;;   (interactive)
-;;   (imacro/1 get-real-component-from-imaginary-number))
+(defun test-imacro-1 ()
+  (interactive)
+  (imacro/1 get-real-component-from-imaginary-number))
 
 ;; (imacro red-with-addition (l))
 

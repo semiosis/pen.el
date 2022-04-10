@@ -119,7 +119,7 @@ case "$d" in
     \#) cmd="orspog $MYGIT/config/emacs/config/my-rc.el" ;;
     i) cmd="vs $HOME/.irssi/config" ;;
     \[) cmd="vs $HOME/scripts/init.sh" ;;
-    t) cmd="vs $HOME$MYGIT/config/tmux/tmux.conf" ;;
+    t) cmd="vs $HOME/.tmux.conf" ;;
     S) cmd="vs $HOME/notes/syntax.vim" ;;
     \') cmd="vs $HOME/.spacemacs" ;;
     %) cmd="vs $HOME/notes/chinese.vim" ;;
