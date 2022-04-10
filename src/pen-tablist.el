@@ -62,7 +62,7 @@
         (error "tablist not created")
         nil))))
 
-(defset my-tablist-min-column-width 10)
+(defset pen-tablist-min-column-width 10)
 
 ;; (tablist-buffer-from-csv-string (pen-sn "arp -a | spaces2tabs | tsv2csv"))
 (defun tablist-buffer-from-csv-string (csvstring &optional has-header col-sizes)
@@ -86,7 +86,7 @@
                        (let* ((sizes
                                (or col-sizes
                                    (mapcar (lambda (e) ;; (si "tabulated-list-format column-size" (max 10 (min 30 (length e))))
-                                             (max my-tablist-min-column-width (min 30 (length e))))
+                                             (max pen-tablist-min-column-width (min 30 (length e))))
                                            header)))
                               (trues (mapcar (lambda (e) t)
                                              header)))
@@ -96,7 +96,7 @@
 
       ;; It would be nice to find the approximate length of each column, but who cares for the moment
 
-      (setq-local tabulated-list-entries (-map (lambda (l) (list (first l) (list2vec l))) data))
+      (setq-local tabulated-list-entries (-map (lambda (lst) (list (first lst) (list2vec lst))) data))
 
       (tabulated-list-mode)
 
@@ -237,7 +237,7 @@ Return the output buffer."
 
 (defun tablist-open-in-fpvd ()
   (interactive)
-  (nw "fpvd -csv" nil (tablist-to-csv)))
+  (pen-nw "fpvd -csv" nil (tablist-to-csv)))
 
 
 (defun tablist-shrink-column-around-advice (proc &rest args)
@@ -265,7 +265,7 @@ Return the output buffer."
   "Return a list of column positions.
 
 This is a list of offsets from the beginning of the line."
-  (let ((my-concat tabulated-list-padding)
+  (let ((cc tabulated-list-padding)
         columns)
     (dotimes (interactive (length tabulated-list-format))
       (let* ((c (aref tabulated-list-format i))
@@ -332,7 +332,7 @@ as the ewoc pretty-printer."
   (add-hook 'window-scroll-functions
             #'tabulated-list-window-scroll-function nil t))
 
-(defset my-tablist-min-padding 0)
+(defset pen-tablist-min-padding 0)
 
 (defun tablist-put-mark (&optional pos)
   "Put a mark before the entry at POS.
@@ -342,8 +342,8 @@ POS defaults to point. Use `tablist-marker-char',
 `tablist-major-columns' to determine how to mark and what to put
 a face on."
   (when (or (null tabulated-list-padding)
-            (< tabulated-list-padding my-tablist-min-padding))
-    (setq tabulated-list-padding my-tablist-min-padding)
+            (< tabulated-list-padding pen-tablist-min-padding))
+    (setq tabulated-list-padding pen-tablist-min-padding)
     (tabulated-list-revert))
   (save-excursion
     (and pos (goto-char pos))
@@ -386,7 +386,7 @@ If ADVANCE is non-nil, move forward by one line afterwards."
        ;; Annoyingly, this gets run when the tablist mode is set up
        (never
         (setq-local tabulated-list-padding 1)
-        (setq-local my-tablist-min-padding 1)
+        (setq-local pen-tablist-min-padding 1)
         ;; Also I havent got this going yet
         (let ((cl (current-line)))
           (tabulated-list-revert t)
@@ -412,7 +412,7 @@ If ADVANCE is non-nil, move forward by one line afterwards."
 ;; tabulated list mode must not be using this
 ;; method of making invisible characters
 (defun current-visible-column-bak ()
-  (let ((my-concat (current-column))
+  (let ((cc (current-column))
         (cp (point))
         (vcs 0))
     (message (str cp))
@@ -453,7 +453,7 @@ Returns nil, if point is before the first column."
   "Return a list of column positions.
 
 This is a list of offsets from the beginning of the line."
-  (let ((my-concat tabulated-list-padding)
+  (let ((cc tabulated-list-padding)
         columns)
     (dotimes (interactive (length tabulated-list-format))
       (let* ((c (aref tabulated-list-format i))
@@ -559,13 +559,13 @@ Return t, if point is now in a visible area."
   '(buffer-menu
     bluetooth-list-devices))
 
-(defun run-tlm (tlmcmd &optional pak)
+(defun run-tlm (tlmcmd &optional pen-pak)
   (interactive (list (fz list-of-tlm
                          nil nil "run-tlm: ")))
   (call-interactively (intern tlmcmd)))
 
 
-(defset my-tablist-modes-cmds-or-paths
+(defset pen-tablist-modes-cmds-or-paths
   '(
     ;; "arp -a | spaces2tabs | tsv2csv"
     "arp"
@@ -577,26 +577,26 @@ Return t, if point is now in a visible area."
     "mygit")
   "A list of commands or csv paths to create tablist minor modes for")
 
-(defset my-tablist-mode-tuples
+(defset pen-tablist-mode-tuples
   '(("list-venv-dirs-csv" . ("venv" t "30 40 20"))
     ("pen-n-list-open-ports" . ("ports" t))
     ("mygit-tablist" . ("mygit" t))
     ("list-current-subnet-computers-details" . ("subnetscan" t))
     ("arp-details" . ("arp" t "20 20 20 20 20 20"))
     ("list-aws-iam-policies-csv" . ("aws-policies" t "30 80"))
-    ("oci prompts-details -csv" . ("prompts" t "30 30 20 10 15 15 15 10"))
+    ("unbuffer pen-ci prompts-details -csv" . ("prompts" t "30 30 20 10 15 15 15 10"))
     ("upd list-aws-iam-users-csv" . ("aws-users" t "20 60 20"))))
 
-(defset my-tablist-modes
-  (cl-loop for cmd in my-tablist-modes-cmds-or-paths collect (eval `(defcmdmode ,cmd "tablist"))))
+(defset pen-tablist-modes
+  (cl-loop for cmd in pen-tablist-modes-cmds-or-paths collect (eval `(defcmdmode ,cmd "tablist"))))
 
-(defun my-start-tablist ()
+(defun pen-start-tablist ()
   (interactive)
   (let* ((sh-update (>= (prefix-numeric-value current-global-prefix-arg) 16))
-         (tlname (fz (mapcar 'car my-tablist-mode-tuples) nil nil "start tablist: "))
+         (tlname (fz (mapcar 'car pen-tablist-mode-tuples) nil nil "start tablist: "))
          (args
           (if (sor tlname)
-              (assoc tlname my-tablist-mode-tuples))))
+              (assoc tlname pen-tablist-mode-tuples))))
     (apply 'create-tablist args)))
 
 (defun arp-tablist-get-ip ()
@@ -604,21 +604,21 @@ Return t, if point is now in a visible area."
 
 (defun arp-tablist-ping ()
   (interactive)
-  (sps (concat "ping " (pen-q (arp-tablist-get-ip)) " || pak")))
+  (pen-sps (concat "ping " (pen-q (arp-tablist-get-ip)) " || pen-pak")))
 
 (defun arp-tablist-nmap-os-detect (&optional ip)
   (interactive)
   (setq ip (or ip (arp-tablist-get-ip)))
-  (sps (concat "msudo nmap -O " (pen-q ip) " 2>&1 | vs")))
+  (pen-sps (concat "msudo nmap -O " (pen-q ip) " 2>&1 | vs")))
 
 (defun arp-tablist-nmap-ports (&optional ip)
   (interactive)
   (setq ip (or ip (arp-tablist-get-ip)))
-  (sps (concat "nmap -sT " (pen-q ip) " 2>&1 | vs")))
+  (pen-sps (concat "nmap -sT " (pen-q ip) " 2>&1 | vs")))
 
 (defun arp-tablist-ssh ()
   (interactive)
-  (sps (concat "zrepl ssh " (pen-q (arp-tablist-get-ip)))))
+  (pen-sps (concat "zrepl ssh " (pen-q (arp-tablist-get-ip)))))
 
 
 (defun mygit-tablist-get-url ()
@@ -626,7 +626,7 @@ Return t, if point is now in a visible area."
 
 (defun mygit-tablist-gc ()
   (interactive)
-  ;; (sps (concat "zrepl gc " (pen-q (mygit-tablist-get-url))))
+  ;; (pen-sps (concat "zrepl gc " (pen-q (mygit-tablist-get-url))))
   (gc (mygit-tablist-get-url)))
 
 
@@ -663,7 +663,7 @@ Return t, if point is now in a visible area."
   (interactive (list (or (sor (str (tabulated-list-get-id)))
                          (read-string-hist "Add policy to user: "))))
   (let ((policy (fz (pen-snc "list-aws-iam-policies-csv | sed 1d | cut -d , -f 2 | uq -l"))))
-    (pen-snc (concat "oci aws iam attach-user-policy --user-name " name " --policy-arn \"" policy "\""))
+    (pen-snc (concat "unbuffer pen-ci aws iam attach-user-policy --user-name " name " --policy-arn \"" policy "\""))
     (if (derived-mode-p 'tabulated-list-mode)
         (revert-buffer))))
 
@@ -671,7 +671,7 @@ Return t, if point is now in a visible area."
   (interactive (list (or (sor (str (tabulated-list-get-id)))
                          (read-string-hist "Remove policy from user: "))))
   (let ((policy (fz (pen-snc "list-aws-iam-policies-csv | sed 1d | cut -d , -f 2 | uq -l"))))
-    (pen-snc (concat "oci aws iam detach-user-policy --user-name " name " --policy-arn \"" policy "\""))
+    (pen-snc (concat "unbuffer pen-ci aws iam detach-user-policy --user-name " name " --policy-arn \"" policy "\""))
     (if (derived-mode-p 'tabulated-list-mode)
         (revert-buffer))))
 
@@ -693,7 +693,7 @@ Return t, if point is now in a visible area."
 (define-key tabulated-list-mode-map (kbd "w") 'tabulated-list-current-cell-contents)
 (define-key tabulated-list-mode-map (kbd "C-c C-o") 'org-open-at-point)
 (define-key global-map (kbd "H-F") 'run-tlm)
-(define-key my-mode-map (kbd "H-\\") 'my-start-tablist)
+(define-key pen-map (kbd "H-\\") 'pen-start-tablist)
 (define-key arp-tablist-mode-map (kbd "p") 'arp-tablist-ping)
 (define-key arp-tablist-mode-map (kbd "s") 'arp-tablist-ssh)
 (define-key arp-tablist-mode-map (kbd "N") 'arp-tablist-nmap-ports)

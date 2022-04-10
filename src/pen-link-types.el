@@ -118,7 +118,7 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "J" 'follow-J-link)
 (defun follow-J-link (pattern)
   "Run b `symbol'. to go to a Clojure symbol in Pen"
-  (sps (cmd "psh" "J" pattern)))
+  (pen-sps (cmd "psh" "J" pattern)))
 
 (org-add-link-type "ead" 'follow-ead-link)
 (defun follow-ead-link (pattern)

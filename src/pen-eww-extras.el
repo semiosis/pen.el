@@ -599,7 +599,7 @@ Differences in #targets are ignored."
 
   ;; Only run if available
   (ignore-errors
-    (sps cmd nw_args input dir)))
+    (pen-sps cmd nw_args input dir)))
 
 (defun browsh (&rest body)
   (interactive (list (pen-read-string "url:")))

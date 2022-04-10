@@ -160,6 +160,8 @@
 
 (require 'pen-aliases)
 (require 'pen-org)
+(require 'pen-term-modes)
+(require 'pen-tablist)
 
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."

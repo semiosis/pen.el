@@ -371,7 +371,7 @@ STRINGS will be evaluated in normal `or' order."
                      (port (s-replace-regexp ".*#" "" full-target))
                      (host (s-replace-regexp ".*@" "" target))
                      (user (s-replace-regexp "@.*" "" target)))
-                ;; (sps (concat
+                ;; (pen-sps (concat
                 ;;       ;; (pen-cmd "ssh-mount" "-sshcmd" "ssh -oBatchMode=no -t" "-sl" "-p" port host user remote-dir)
                 ;;       ;; TMUX= new doesn't work either
                 ;;       (pen-cmd "ssh-mount" "-sl" "-p" port host user remote-dir)
