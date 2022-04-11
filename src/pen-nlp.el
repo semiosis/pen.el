@@ -47,7 +47,7 @@
 (defun ngram-query-replace-this ()
   (interactive)
   (if (not (selectedp))
-      (let* ((get-current-line-string-str (chomp (get-current-line-string)))
+      (let* ((pen-str2lines (chomp (get-current-line-string)))
              (col (+ 1 (current-column)))
              (suggestions (ngram-suggest (fz (gen-google-ngram-queries line-str col)
                                              nil nil "ngram-query-replace-this query: "))))

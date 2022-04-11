@@ -779,3 +779,6 @@ agi sudo
 # curl https://dapp.tools/install | sh
 
 agi ispell
+
+# Without gpg2, package-refresh will not work alongside my gpg config
+agi gnupg2
