@@ -72,7 +72,7 @@ if test -d ~/.pen/dotfiles; then
     # So if I commit, no secrets may accidentally be committed to the container
     rm -rf ~/.pen/dotfiles-syms
     cp -as ~/.pen/dotfiles ~/.pen/dotfiles-syms
-    rsync -rtlphx ~/.pen/dotfiles/ ~
+    rsync -rtlphx ~/.pen/dotfiles-syms/ ~
 fi
 
 if test -d ~/.emacs.d/host/pen.el/config; then
