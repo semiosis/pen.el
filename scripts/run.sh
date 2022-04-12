@@ -105,7 +105,8 @@ if test -f $HOME/.emacs.d/host/pen.el/config/tmux.conf; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/tmux.conf ~/.tmux.conf
 fi
 
-if test -f $HOME/.emacs.d/host/pen.el/config/efm-langserver-config.yaml; then
+if test -f $HOME/.emacs.d/host/pen.el/config/efm-langserver-config.yaml && ! test -f $HOME/.config/efm-langserver; then
+    mkdir -p $HOME/.config/efm-langserver
     ln -sf $HOME/.emacs.d/host/pen.el/config/efm-langserver-config.yaml $HOME/.config/efm-langserver/config.yaml
 fi
 
