@@ -1,5 +1,6 @@
 * Ideation for metacognitive functions
-Metacognitive functions are used by the subject/user when interfacing with the external world/AI systems.
+Metacognitive functions are used by the subject/user when interfacing with the
+external world/AI systems.
 
 - [[./summarisation.org]]
 - [[./explanation.org]]
