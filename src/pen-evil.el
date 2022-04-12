@@ -306,7 +306,7 @@
 (defun evil-mark-from-point-to-end-of-line ()
   "Marks everything from point to end of line"
   (interactive)
-  (set-mark (get-current-line-string-end-position))
+  (set-mark (line-end-position))
   (activate-mark))
 
 (defun evil-visual-copy ()

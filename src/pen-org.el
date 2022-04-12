@@ -103,8 +103,8 @@
     Consecutive calls to this command append each line to the
     kill-ring."
   (interactive)
-  (let ((beg (get-current-line-string-beginning-position 1))
-        (end (get-current-line-string-beginning-position 2)))
+  (let ((beg (line-beginning-position 1))
+        (end (line-beginning-position 2)))
     (if (eq last-command 'quick-copy-line)
         (kill-append (buffer-substring beg end) (< end beg))
       (kill-new (buffer-substring beg end))))
@@ -314,12 +314,12 @@ With argument N not nil or 1, move forward N - 1 lines first."
                     (skip-chars-backward " \t")
                     (point))))
         (cond ((eq special 'reversed)
-               (if (and (= origin (get-current-line-string-end-position))
+               (if (and (= origin (line-end-position))
                         (eq this-command last-command))
                    (goto-char tags)
                  (end-of-line)))
               (t
-               (if (or (< origin tags) (= origin (get-current-line-string-end-position)))
+               (if (or (< origin tags) (= origin (line-end-position)))
                    (goto-char tags)
                  (end-of-line))))))
      (t (end-of-line)))))

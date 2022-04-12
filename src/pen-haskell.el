@@ -74,7 +74,7 @@
   "Generate font lock eywords."
   (let* (;; Bird-style literate scripts start a line of code with
          ;; "^>", otherwise a line of code starts with "^".
-         (get-current-line-string-prefix "^\\(?:> ?\\)?")
+         (line-prefix "^\\(?:> ?\\)?")
 
          (varid "[[:lower:]_][[:alnum:]'_]*")
          ;; We allow ' preceding conids because of DataKinds/PolyKinds
