@@ -2089,6 +2089,7 @@ May use to generate code from comments."
     (require 'pen-lsp-java))
 (require 'pen-lsp)
 (require 'ilambda)
+(require 'pen-metacognition)
 (require 'pen-dap)
 (require 'pen-cacheit)
 (require 'pen-ii)
