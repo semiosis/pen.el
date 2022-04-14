@@ -16,7 +16,7 @@ set fileencodings=ucs-bom,utf-8
 set nocompatible
 set listchars=nbsp:¬,tab:>-
 set list
-set cursorline
+" set cursorline
 set diffopt+=vertical
 set isk+=é
 " this allows filename completion with spaces. however, it also means spaces before the path name mess it up
