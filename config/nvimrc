@@ -1,3 +1,133 @@
+set mouse=a
+silent! set ttymouse=xterm2
+highlight Cursor gui=reverse guifg=NONE guibg=NONE
+set notimeout
+set nottimeout
+set nocscopeverbose
+set modelines=0 nomodeline
+set guicursor=
+set imsearch=0
+set redrawtime=10000
+set sessionoptions-=options
+set nowarn
+set nolinebreak
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8
+set nocompatible
+set listchars=nbsp:¬,tab:>-
+set list
+set cursorline
+set diffopt+=vertical
+set isk+=é
+" this allows filename completion with spaces. however, it also means spaces before the path name mess it up
+set isf+=32
+set isf+=\*
+set isf+={
+set isf+=}
+set isf+=(
+set isf+=)
+set isf+=[
+set isf+=]
+set isf+=:
+set isf+=;
+set isf+=\\
+set isf+=\?
+set isf+=#
+set isf+=%
+" @ sign doesn't appar to work for cfile
+" @re
+" echom expand('<cfile>')
+set isf+=@
+" add ampersand to filename selection
+" ASCII number
+"set isf+=38
+" add questionmark to filename selection for urls
+set isf+=63
+" add ampersand ( use ascii command line  to work these out )
+set isf+=38
+silent! set norelativenumber
+" this stops commands like :grep outputting to the shell
+"set relativenumber
+set shellpipe=&>
+set maxmempattern=2000
+set switchbuf=usetab
+" this means that F7 toggles paste in input mode as well as normal mode
+set pastetoggle=<F7>
+" doesn't work unless binary is set (which is an annoying predicament)
+set nostartofline
+set noeol
+set hidden
+set autoindent
+set autoread
+set autowrite
+set backspace=indent,eol,start
+set lazyredraw
+set expandtab
+set formatoptions-=t
+au BufEnter * set formatoptions-=cro
+set history=50
+set nohlsearch
+set ignorecase smartcase
+set incsearch
+silent! set ls=2
+set nobackup
+set nomousehide
+set nowrap
+set vb t_vb=
+set novisualbell
+set scrolloff=5
+set sidescrolloff=12
+set shiftwidth=4
+set shortmess+=r
+set shortmess+=F
+set showmode
+set showcmd
+set showtabline=0
+set sm
+" spellfile must end in ".{encoding}.add".
+"set spellfile=$HOME/notes/ws/vim/spellfile.utf-8.add
+set smartcase
+set smartindent
+set copyindent
+set preserveindent
+set smarttab
+set splitright
+set tabstop=4
+silent! set nomodelineeexpr " disable modelineexpr if it's available
+" set nomle
+set tags=~/.tags
+set notitle
+" setting virtualedit to onemore fixes the ‘cw’ bug for words at end of
+" file
+"set virtualedit=onemore
+set virtualedit=all
+if &term == "xterm"
+  set title
+endif
+" This disables automatic line breaking
+set textwidth=0
+set visualbell t_vb=
+if version > 720
+    set undoreload=0
+endif
+set matchpairs+=<:>
+set matchpairs+=‘:’
+set matchpairs+=“:”
+set thesaurus+=~/.vim/mthes10/thesaurus.txt
+set completeopt=longest,menuone
+" vim command-line autocomplete, not regular autocomplete
+set wildmenu
+set wildmode=list:longest,full
+" where swap files go now
+set noswapfile " Swap is disabled. Using git anyway.
+"swap messages are super annoying
+"set swapfile
+" Vim is scaring me by deleting files.
+
+" set backupdir=/dev/shm/var/tmp/shane/vim
+" set directory=/dev/shm/var/tmp/shane/vim
+" set undodir=/dev/shm/var/tmp/shane/vim
+
 " extra digraphs
 " sp +/"extra digraphs" "$EMACSD/config/my-evil.el"
 digr ZZ 8484
@@ -68,9 +198,6 @@ command! StartAppend call StartAppend()
 
 
 
-
-set modelines=0 nomodeline
-set guicursor=
 
 hi Normal       ctermfg=60
 if !has('nvim')
