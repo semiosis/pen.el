@@ -110,6 +110,8 @@
               ((or (pen-istr-p "lotr")
                    (pen-istr-p "lord of the rings"))
                ,(f-join pen-glossaries-directory "lotr-lord-of-the-rings.txt"))
+              ((or (pen-istr-p "transient"))
+               ,(f-join pen-glossaries-directory "transient.txt"))
               ((pen-ire-p "docker")
                ,(f-join pen-glossaries-directory "docker.txt"))
               ((pen-ire-p "/elisp/")

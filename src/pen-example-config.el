@@ -1,3 +1,5 @@
+(setq enable-local-variables :all)
+
 ;; This was interfering with completion
 (setq company-backends '())
 

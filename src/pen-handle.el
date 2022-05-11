@@ -1,5 +1,19 @@
 (require 'handle)
 
+(defun xref-find-definitions-immediately ()
+  (interactive)
+  (deselect)
+  (xref-find-definitions
+   (pen-thing-at-point)))
+
+(defun xref-find-definitions-around-advice (proc &rest args)
+  (deselect)
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'xref-find-definitions :around #'xref-find-definitions-around-advice)
+(advice-add 'lsp-find-references :around #'xref-find-definitions-around-advice)
+;; (advice-remove 'xref-find-definitions #'xref-find-definitions-around-advice)
+
 (defset pen-doc-queries
   '(
     "What is '${query}' and what how is it used?"

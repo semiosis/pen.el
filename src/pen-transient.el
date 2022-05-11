@@ -62,4 +62,49 @@
 ;; (pen-create-transient "github" pen-github-key-value-predicates 'pen-github-transient-search 'pen-github-transient-search-with-keywords)
 (define-key pen-map (kbd "H-? h") 'github-transient)
 
+;; https://github.com/magit/transient/wiki/Developer-Quick-Start-Guide
+
+(transient-define-prefix transient-toys-hello ()
+  "Say hello"
+  [("h" "hello" (lambda () (interactive) (message "hello")))])
+
+;; (transient-toys-hello)
+
+(defun transient-toys--wave ()
+  "Wave at the user"
+  (interactive)
+  (message (propertize
+            (format "Waves at %s" (current-time-string))
+            'face 'success)))
+
+;; (comment
+;;  (transient-define-prefix transient-toys-wave ()
+;;    "Wave at the user"
+;;    [("w" "wave" transient-toys--wave)])
+
+;;  (transient-toys-wave))
+
+;; Transient set to t means the suffix wont exit
+(transient-define-prefix transient-toys-wave ()
+  "Wave at the user"
+  [("w" "wave" transient-toys--wave :transient t)])
+
+;; (transient-toys-wave)
+
+(transient-define-suffix transient-toys--wave ()
+  "Wave at the user"
+  :transient t
+  :key "C-w"
+  :description "wave"
+  (interactive)
+  (message (propertize
+            (format "Waves at %s" (current-time-string))
+            'face 'success)))
+
+(transient-define-prefix transient-toys-wave ()
+  "Wave at the user"
+  [(transient-toys--wave)])
+
+;; (transient-toys-wave)
+
 (provide 'pen-transient)

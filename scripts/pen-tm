@@ -156,8 +156,8 @@ pl() {
 }
 
 shell="bash; pen-pak ."
-shell="zsh"
 shell="bash"
+shell="zsh"
 
 if ! test "$FAST" = y && ! tmux info &> /dev/null; then # it's important to have the tmux info check here to prevent infinite init loop
 
