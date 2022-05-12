@@ -37,7 +37,9 @@ omzdir=/root/repos/oh-my-zsh
 if test -f "$omzdir/oh-my-zsh.sh"; then
     export ZSH="$omzdir"
     export ZSH_THEME="more-minimal" # - fav
-    plugins=(command-not-found git)
+    # plugins=(command-not-found git)
+    # git is just too slow, especially when I'm using the git wrapper
+    plugins=(command-not-found)
     source "$omzdir/oh-my-zsh.sh"
 fi
 
