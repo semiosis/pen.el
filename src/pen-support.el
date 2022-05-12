@@ -1189,7 +1189,7 @@ when s is a string, set the clipboard to s"
   (if (not (s-blank? s))
       (progn
         (kill-new s)
-        (pen-sn "xsel --clipboard -i" s))
+        (pen-sn "tee >(xsel -b -i) | tee >(xsel -p -i) | tee >(xsel -s -i)" s))
     (if (and (pen-selected-p)
              (not noautosave))
         (progn
