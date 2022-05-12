@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -m
 export DISPLAY=:0
 exec &>/dev/null
 killall -9 parcellite; parcellite & disown
