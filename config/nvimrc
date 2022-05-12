@@ -200,11 +200,18 @@ command! StartAppend call StartAppend()
 
 
 hi Normal       ctermfg=60
-if !has('nvim')
-    set clipboard=unnamedplus
-else
-    set clipboard=unnamed
-endif
+
+" Will work with zsh but not emacs
+set clipboard=unnamed
+
+" Will work with emacs but not zsh
+set clipboard=unnamedplus
+
+" if !has('nvim')
+"     set clipboard=unnamedplus
+" else
+"     set clipboard=unnamed
+" endif
 fun! QuitNvim(...)
     q!
 endf
