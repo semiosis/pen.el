@@ -103,6 +103,7 @@ copytoboth() {
     IFS= read -rd '' input < <(cat /dev/stdin);typeset -p input &>/dev/null
 
     printf -- "%s" "$input" | ( xclip -i -f &>/dev/null ) & disown
+    printf -- "%s" "$input" | ( xsel -b -i &>/dev/null ) & disown
     printf -- "%s" "$input" | ( xclip -i -selection clipboard -f | tmux load-buffer - ) & disown
 
     if [ -n "$tag" ]; then
