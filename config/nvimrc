@@ -205,7 +205,7 @@ hi Normal       ctermfg=60
 set clipboard=unnamed
 
 " Will work with emacs but not zsh
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 " if !has('nvim')
 "     set clipboard=unnamedplus
