@@ -479,4 +479,8 @@ example: (ilm internet-is-connected-p ())
 
 ;; (imacro sqrt (a))
 
+;; (idefun half-it (x))
+
+;; (half-it "twenty")
+
 (provide 'ilambda)
