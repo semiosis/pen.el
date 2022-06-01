@@ -287,7 +287,9 @@ case "$vc_opt" in
                 fi
 
                 # Test if git first
-                git rev-parse --show-toplevel 2>/dev/null | pen-convert-path-to-local || pwd
+                git rev-parse --show-toplevel 2>/dev/null | pen-convert-path-to-local | {
+                    sed 's=/home/shane/=/root/='
+                } || pwd
 
                 exit $?
             }
