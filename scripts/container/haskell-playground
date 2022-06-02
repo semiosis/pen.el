@@ -1,0 +1,25 @@
+#!/bin/bash
+
+dbpath="$1"
+if test -f "$dbpath"; then
+    fp="$dbpath"
+    rp="$(realpath "$fp")"
+    wd="$(dirname "$rp")"
+    fn="$(basename "$rp")"
+else
+    wd="$(td swipl)"
+    fn=playground.hs
+fi
+
+export CWD="$wd"
+cd "$wd"
+
+touch "$fn"
+
+mant="${fn%.*}"
+
+sessions="$(nvt -pc -c "$wd" x -sh ghci -e ">" -sl 0.2 -s ":load $mant" -c m -i)"
+parent="$(p "$sessions" | sed -n 1p)"
+child="$(p "$sessions" | sed -n 2p)"
+tmux splitw -t "$child" -v v "$fn"
+TMUX= tmux attach -t "$parent"

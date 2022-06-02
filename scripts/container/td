@@ -1,0 +1,36 @@
+#!/bin/bash
+export TTY
+
+USE_MY_TMPDIR=y
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -md) {
+        USE_MY_TMPDIR=y
+        shift
+        shift
+    }
+    ;;
+
+    -nomd) {
+        USE_MY_TMPDIR=n
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$USE_MY_TMPDIR" = "y"; then
+    TMPDIR=$NOTES/programs/tf
+fi
+
+mkdir -p "$TMPDIR"
+
+: "${name:="$1"}"
+: "${name:="thing"}"
+
+td_thing="$(mktemp -t -d td_${name}XXXXXX || echo /dev/null)"
+
+zcd "$td_thing"
