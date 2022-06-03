@@ -1,3 +1,9 @@
+;; Games are important not only as a form of recreation but as a method of
+;; investigation. The intention is to cut away the constraints of rationalism
+;; and allow concepts to develop more freely and in a more random manner. The
+;; aim is to break traditional thought patterns and create a more original
+;; outcome.
+
 ;; TODO
 ;; Time Travelers' Potlatch
 ;; A game in which two or more players say what gift they would give to
