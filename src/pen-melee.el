@@ -22,8 +22,6 @@
 ;; and poems are complete, they are shared among the players, with a
 ;; comparison of the results.
 
-
-
 (defun melee-start-immitation-game ()
   (interactive)
   (message "In development"))
