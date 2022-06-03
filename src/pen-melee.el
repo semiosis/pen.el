@@ -1,5 +1,8 @@
 ;; TODO
 ;; Time Travelers' Potlatch
+;; A game in which two or more players say what gift they would give to
+;; another person - this is usually an historical person who played a role
+;; in, or had an influence on, the formation of Surrealism.
 
 ;; TODO
 ;; Parallel Collage
