@@ -22,6 +22,12 @@
 ;; and poems are complete, they are shared among the players, with a
 ;; comparison of the results.
 
+;; TODO
+;; - exquisite corpse
+;; - Time Travelers' Potlatch
+;; - Parallel Collage
+;; - echo poem
+
 (defun melee-start-immitation-game ()
   (interactive)
   (message "In development"))
