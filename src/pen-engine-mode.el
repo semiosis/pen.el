@@ -44,9 +44,9 @@
   :keybinding "/")
 
 (defengine wordincontext
-  ;; "https://wordincontext.com/en"
   ;; Ludwig has a very low limit
-  "https://ludwig.guru/s/%s"
+  ;; "https://ludwig.guru/s/%s"
+  "https://wordincontext.com/en/%s"
   :keybinding "c")
 
 (defengine libgen
