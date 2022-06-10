@@ -43,6 +43,11 @@
   "https://libraries.io/search?q=%s"
   :keybinding "/")
 
+(defengine wordincontext
+  ;; "https://wordincontext.com/en"
+  "https://ludwig.guru/s/%s"
+  :keybinding "c")
+
 (defengine libgen
   "http://gen.lib.rus.ec/search.php?req=%s&lg_topic=libgen&open=0&view=simple&res=25&phrase=1&column=def"
   :keybinding "I")
