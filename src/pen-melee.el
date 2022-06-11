@@ -28,6 +28,9 @@
 ;; - Parallel Collage
 ;; - echo poem
 
+;; Make this thing
+;; https://youtu.be/HyOW6fmkgrc?t=67
+
 (defun melee-start-immitation-game ()
   (interactive)
   (message "In development"))
