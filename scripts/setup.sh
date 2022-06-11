@@ -782,3 +782,9 @@ agi ispell
 
 # Without gpg2, package-refresh will not work alongside my gpg config
 agi gnupg2
+
+(
+cd
+wget "https://github.com/smallhadroncollider/taskell/releases/download/1.11.4/taskell-1.11.4_x86-64-linux.deb"
+dpkg -i taskell-1.11.4_x86-64-linux.deb
+)
