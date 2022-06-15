@@ -1,4 +1,4 @@
 #!/bin/bash
 export TTY
 
-pen-openai-official api engines.list | jq -r '.data[].id'
+pen-openai-official api engines.list | jq -r '.data[].id' | pavs
