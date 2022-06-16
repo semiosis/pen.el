@@ -104,7 +104,8 @@ case "$d" in
     M) cmd="nvt /usr/bin/scheme" ;;
     Z) cmd="CWD=$NOTES zsh" ;;
     3) cmd="CWD=$NOTES psysh" ;;
-    r) cmd="nvt racket -iI racket" ;;
+    #r) cmd="nvt racket -iI racket" ;;
+    r) cmd="cterm racket -iI racket" ;;
     Y) cmd="racket-repl" ;;
     # R) cmd="rusti" ;;
     g) cmd="nvt erl" ;;
