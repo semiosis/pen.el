@@ -24,6 +24,7 @@
 (sslk "lah" #'htop)
 (sslk "laH" #'hackernews)
 (sslk "lan" #'ibuffer)
+(sslk "lam" #'tzc-world-clock)
 (sslk "law" #'aws-instances)
 (sslk "lak" #'kubernetes-overview)
 (sslk "laf" #'deft)
