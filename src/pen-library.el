@@ -174,20 +174,24 @@
       link)))
 
 ;; j:pen-copy-link-at-point
+(defun link-at-point ()
+  "Copy the link with the highest priority at the point."
+  (interactive)
+  (try
+   ;; (progn (pen-error-if-equals (link-hint--action-at-point :copy) "There is no link supporting the :copy action at the point.")
+   ;;        (e/xc))
+   (pen-error-if-equals (calibre-copy-org-link) "[[calibre:]]")
+   (pen-error-if-equals (pen-button-get-link (glossary-button-at-point)) nil)
+   (pen-error-if-equals (pen-clean-up-copy-link (plist-get (link-hint--get-link-at-point) :args)) nil)
+   (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
+   (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'url)))) "")
+   (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'line)))) "")
+   ""))
+
 (defun pen-copy-link-at-point ()
   "Copy the link with the highest priority at the point."
   (interactive)
-  (xc
-   (try
-    ;; (progn (pen-error-if-equals (link-hint--action-at-point :copy) "There is no link supporting the :copy action at the point.")
-    ;;        (e/xc))
-    (pen-error-if-equals (calibre-copy-org-link) "[[calibre:]]")
-    (pen-error-if-equals (pen-button-get-link (glossary-button-at-point)) nil)
-    (pen-error-if-equals (pen-clean-up-copy-link (plist-get (link-hint--get-link-at-point) :args)) nil)
-    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
-    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'url)))) "")
-    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'line)))) "")
-    "")))
+  (xc (link-at-point)))
 
 (defun get-path-for-thing (&optional soft no-create-path for-clipboard semantic-path)
   "Get path for thing at point.
