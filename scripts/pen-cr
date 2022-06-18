@@ -1816,7 +1816,11 @@ case "$file_type" in
     ;;
 
     gv|dot) {
-        show-dot "$rp"
+        if pl "$rp" | grep -q -P '{'; then
+            show-dot "$rp"
+        else
+            cat "$rp" | dot-digraph-ascii-lr
+        fi
         exit 0
     }
     ;;

@@ -1,0 +1,174 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+is_tty() { [ -t 1 ]; }
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -cd) {
+        docd=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${author:="semiosis"}"
+
+name="$1"
+type="$2"
+
+if test -n "$name"; then
+    project_name="$(p "$name" | slugify)"
+fi
+
+! test -n "$project_name" && exit 1
+
+if test -d "$MYGIT/takaheai/$project_name" || test -d "$MYGIT/semiosis/$project_name"; then
+    already_exists=0
+
+cd "$MYGIT/$author" || exit 1
+mkdir -p "$project_name"
+cd "$project_name" || exit 1
+
+if ! test -d .git; then
+    git init &>/dev/null
+fi
+
+is_tty() { [ -t 1 ]; }
+
+sp-open-main() {
+    if is_tty; then
+        command sp-open-main
+    else
+        echo "$(realpath ".")"
+    fi
+}
+
+sp() {
+    last_arg="${@: -1}"
+    fp="$last_arg"
+    rp="$(realpath "$fp")"
+    if is_tty; then
+        command sp "$rp"
+    else
+        echo "$rp"
+    fi
+}
+
+test "$already_exists" = 0 && ns already exists &>/dev/null
+
+# only run the case if the dir didn't already exist
+test "$already_exists" = 0 || case "$type" in
+    go) {
+IFS= read -r -d '' goscript <<HEREDOC
+package main
+
+func main() {
+}
+HEREDOC
+        test -f main.go || printf -- "%s\n" "$goscript" > main.go
+        test -f go.mod || go mod init github.com/semiosis/$project_name/m/v2
+
+        test -f main.go && {
+            # sp -ic open-main
+            sp-open-main
+            # sp main.go
+            exit "$?"
+        }
+    }
+    ;;
+
+    java) {
+        ns "Implment gradle"
+        # gradle init --type java-library
+    }
+    ;;
+
+    hs) {
+        # Not sure how to make it work on an existing project. Use rsync instead
+        stack new "$project_name" rio &>/dev/null
+        rsync -a "$project_name/" .
+        rm -rf "$project_name"
+    }
+    ;;
+
+    py) {
+        poetry new "$project_name" &>/dev/null
+        rsync -a "$project_name/" .
+        rm -rf "$project_name"
+
+        if is_tty; then
+            if test -n "$(open-main)"; then
+                # sp -ic open-main
+                sp-open-main
+            else
+                sp "${project_name}.py"
+            fi
+        fi
+    }
+    ;;
+
+    clojure|clj) {
+        # sp "project.clj"
+        # ns "$project_name"
+        # zcd .
+        # eranger "$project_name"
+        if test -d "$project_name"; then
+            eranger "$project_name"
+        else
+            ans="$(qa -. edit \
+                      -a app \
+                      -l library \
+                      -">" other)"
+
+            case "$ans" in
+                library) {
+                    ans=default
+                    # vim +/"\`default\` template" ""
+                    # $HOME/local/bin/lein 'help' 'tutorial' | vs +/"\`default\` template"
+                }
+                ;;
+
+                other) {
+                    read -ep "clj template: " ans
+                } ;;
+                *) ;;
+            esac
+            lein new "$ans" "$project_name"
+            p="$(ls)"
+            if test -d "$p"; then
+                rsync -rtlphx "$p/" .
+                rm -rf "$p"
+            fi
+            zcd .
+        fi
+        exit $?
+        :
+    }
+    ;;
+
+    *)
+esac
+
+unset CWD
+
+if ! is_tty; then
+    printf -- "%s\n" "$(pwd)"
+    exit 0
+else
+    if test "$docd"; then
+        # zcd .
+        x -sh "zcd ." -e "»" -s "dired -g" -c m -a
+    else
+        # export CWD="$(pwd)"
+        # start-ide || zcd .
+        start-ide || x -sh "zcd ." -e "»" -s "dired -g || ranger" -c m -a
+        # CWD="$(pwd)" zsh
+    fi
+fi
+
+exit $?
