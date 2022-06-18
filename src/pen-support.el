@@ -1400,6 +1400,7 @@ when s is a string, set the clipboard to s"
   (cond ((eq major-mode 'json-mode) "json")
         ((eq major-mode 'python-mode) "py")
         ((eq major-mode 'fundamental-mode) "txt")
+        ((eq major-mode 'graphviz-dot-mode) "dot")
         (t (try (let ((result (chomp (s-replace-regexp "^\." "" (scrape "\\.[a-z0-9A-Z]+" (car (rassq m auto-mode-alist)))))))
                   (setq result (cond ((string-equal result "pythonrc") "py")
                                      (t result)))
