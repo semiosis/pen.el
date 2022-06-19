@@ -31,7 +31,16 @@
     (pen-get-glossary-topic (get-path nil t)))
    (t (pen-detect-language))))
 
+(defun get-temp-fp ()
+  "Create a temp file with appropriate extension, but don't assign to the current buffer"
+  (interactive)
+
+  (let ((tf (make-temp-file nil nil (concat "." (get-ext-for-mode major-mode)))))
+
+    (write-to-file (buffer-string) tf)))
+
 (defun save-temp-if-no-file ()
+  "Creates a file path for the buffer if the buffer doesn't have one. Otherwise, does nothing."
   (interactive)
 
   (if (not (buffer-file-name))
@@ -39,7 +48,8 @@
         (if (or (equal bn "*scratch*")
                 (equal bn "*Messages*")
                 (equal bn "*Warnings*")
-                no-create-path)
+                ;; no-create-path
+                )
             (let ((nb (new-buffer-from-string (buffer-string))))
               (with-current-buffer nb
                 (write-file

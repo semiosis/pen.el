@@ -4,6 +4,10 @@
   (cond ((bound-and-true-p go-playground-mode) (call-interactively 'go-playground-exec))
         ;; Unfortunately, cant use ~tm sps~ because the command can't find the LINES and COLUMNS, even with eval resize
         ;; sps works now
+
+        ;; TODO use the current directory?
+        ;; (get-temp-fp)
+
         (t ;; (pen-snc (concat "unbuffer pen-tm -f -te -d sps -x -pak -args pen-cr " crstr))
          (let ((crstr
                 (cond ((derived-mode-p 'json-mode) (concat "-ft json " (pen-q (str (buffer-file-name)))))
@@ -11,6 +15,7 @@
                       (t (pen-q (str (buffer-file-name))))
                       )
                 ))
+           ;; (save-temp-if-no-file)
            (if (not (buffer-file-name))
                (pen-sn (concat "pen-tm -f -S -i -tout sps -x -pak -args pen-cr " crstr) (awk1 (buffer-string)))
              (pen-snc (concat "unbuffer pen-tm -f -te -d sps -x -pak -args pen-cr " crstr)))))))
