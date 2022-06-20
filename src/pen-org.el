@@ -130,7 +130,9 @@
   (dotimes (interactive 100)
     (outline-up-heading arg)))
 
-; HIGHLIGHT LATEX TEXT IN ORG MODE
+(advice-add 'output-up-heading-top :around #'ignore-errors-around-advice)
+
+                                        ; HIGHLIGHT LATEX TEXT IN ORG MODE
 (setq org-highlight-latex-and-related '(latex))
 
 (use-package org-table
