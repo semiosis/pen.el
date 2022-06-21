@@ -1397,8 +1397,9 @@ when s is a string, set the clipboard to s"
   (interactive)
   (if (not m) (setq m major-mode))
 
-  (cond ((eq major-mode 'json-mode) "json")
+  (cond ((derived-mode-p 'json-mode) "json")
         ((eq major-mode 'python-mode) "py")
+        ((derived-mode-p 'csv-mode) "csv")
         ((eq major-mode 'fundamental-mode) "txt")
         ((eq major-mode 'graphviz-dot-mode) "dot")
         (t (try (let ((result (chomp (s-replace-regexp "^\." "" (scrape "\\.[a-z0-9A-Z]+" (car (rassq m auto-mode-alist)))))))

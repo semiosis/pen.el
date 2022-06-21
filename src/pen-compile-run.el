@@ -9,12 +9,15 @@
         ;; (get-temp-fp)
 
         (t ;; (pen-snc (concat "unbuffer pen-tm -f -te -d sps -x -pak -args pen-cr " crstr))
-         (let ((crstr
-                (cond ((derived-mode-p 'json-mode) (concat "-ft json " (pen-q (str (buffer-file-name)))))
-                      ((derived-mode-p 'csv-mode) (concat "-ft csv " (pen-q (str (buffer-file-name)))))
-                      (t (pen-q (str (buffer-file-name))))
-                      )
-                ))
+
+         ;; crstr is the filetype and the path
+         ;; Handle this better. Sometimes the buffer does not have a path.
+         ;; If it doesn't have a path.
+         ;; get-path-ext-from-mode-alist
+         (let* ((ext (get-ext-for-mode))
+                (crstr
+                 (cond ((sor ext) (concat "-ft " ext " " (pen-q (str (buffer-file-name)))))
+                       (t (pen-q (str (buffer-file-name)))))))
            ;; (save-temp-if-no-file)
            (if (not (buffer-file-name))
                (pen-sn (concat "pen-tm -f -S -i -tout sps -x -pak -args pen-cr " crstr) (awk1 (buffer-string)))
