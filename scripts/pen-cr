@@ -1816,10 +1816,23 @@ case "$file_type" in
     ;;
 
     gv|dot) {
-        if pl "$rp" | grep -q -P '{'; then
-            show-dot "$rp"
+        if yn "ASCII?"; then
+            use_ascii=y
+        fi
+        
+        if test "$use_ascii" = "y"; then
+            if pl "$rp" | grep -q -P '{'; then
+                show-dot "$rp"
+            else
+                cat "$rp" | dot-digraph-ascii-lr
+            fi
         else
-            cat "$rp" | dot-digraph-ascii-lr
+            if pl "$rp" | grep -q -P '{'; then
+                tf_dotgraph="$(0</dev/null tf png | cat || echo /dev/null)"
+                cat "$rp" | dot-png "$tf_dotgraph"
+            else
+                cat "$rp" | dot-digraph-lr
+            fi
         fi
         exit 0
     }
