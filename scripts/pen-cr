@@ -119,6 +119,7 @@ stdin_exists() {
 
 if stdin_exists && ! test -f "$1"; then
     fp="$(cat | pen-tf txt)"
+    exec <&2
 else
     fp="$1"
     shift
