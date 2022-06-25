@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+: "${window_id:="$1"}"
+: "${window_id:=$(tmux display-message -p '#{window_id}')}"
+
+# This should
+
+# - firstly need a command which wraps a pane in a tmux inside a new window?
+# Yeah, I probably need to do that.
+# - do it inside a new tmux session? I need to, I think.
+# - but I still have to rely on linking the pane. I can't link a pane with tmux, sadly.
+# - I have to link the entire window
+
+TMUX= tmux new-window "nvc -22 tmux-attach-window $window_id"
