@@ -183,6 +183,13 @@
           (xc link))
       link)))
 
+(defun calibredb-org-link-copy-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (xc)
+    res))
+(advice-add 'calibredb-org-link-copy :around #'calibredb-org-link-copy-around-advice)
+;; (advice-remove 'calibredb-org-link-copy #'calibredb-org-link-copy-around-advice)
+
 ;; j:pen-copy-link-at-point
 (defun link-at-point ()
   "Copy the link with the highest priority at the point."
@@ -190,7 +197,8 @@
   (try
    ;; (progn (pen-error-if-equals (link-hint--action-at-point :copy) "There is no link supporting the :copy action at the point.")
    ;;        (e/xc))
-   (pen-error-if-equals (calibre-copy-org-link) "[[calibre:]]")
+   ;; (pen-error-if-equals (calibre-copy-org-link) "[[calibre:]]")
+   (pen-error-if-equals (calibredb-org-link-copy) "[[calibredb:nil][ nil - nil]]")
    (pen-error-if-equals (pen-button-get-link (glossary-button-at-point)) nil)
    (pen-error-if-equals (pen-clean-up-copy-link (plist-get (link-hint--get-link-at-point) :args)) nil)
    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
