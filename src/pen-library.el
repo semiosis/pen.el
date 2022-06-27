@@ -197,8 +197,8 @@
   (try
    ;; (progn (pen-error-if-equals (link-hint--action-at-point :copy) "There is no link supporting the :copy action at the point.")
    ;;        (e/xc))
-   ;; (pen-error-if-equals (calibre-copy-org-link) "[[calibre:]]")
-   (pen-error-if-equals (calibredb-org-link-copy) "[[calibredb:nil][ nil - nil]]")
+   (pen-error-if-equals (calibre-copy-org-link) "[[calibre:]]")
+   ;; (pen-error-if-equals (calibredb-org-link-copy) "[[calibredb:nil][ nil - nil]]")
    (pen-error-if-equals (pen-button-get-link (glossary-button-at-point)) nil)
    (pen-error-if-equals (pen-clean-up-copy-link (plist-get (link-hint--get-link-at-point) :args)) nil)
    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
