@@ -332,11 +332,16 @@
                                   (+ x 5))
                '(8))))
 
-(defun ilist (n type-of-thing)
+(defun ilist (n type-of-thing &rest examples)
   (interactive (list (read-string-hist "ilist n: ")
                      (read-string-hist "ilist type-of-thing: ")))
   (pen-single-generation
-   (pen-fn-list-of/2
+   ;; (pen-fn-list-of/2
+   ;;  (str n)
+   ;;  (str type-of-thing)
+   ;;  :no-select-result t
+   ;;  :client iλ-thin)
+   (pf-list-of/2
     (str n)
     (str type-of-thing)
     :no-select-result t

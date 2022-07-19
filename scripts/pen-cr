@@ -138,7 +138,7 @@ tryfun() {
 }
 
 scrapefromreadme() {
-    commands="$(scrape-install-commands-from-readme)"
+    commands="$(timeout 3 scrape-install-commands-from-readme 2>/dev/null)"
     if test -n "$commands" && pen-yn "See build commands?"; then
         command="$(p "$commands" | pen-fzf -1)"
         if test -n "$command"; then
@@ -199,7 +199,7 @@ if test -z "$fp"; then
     echo pen-cr
     echo Looking for build files | udl
 
-    tryfun scrapefromreadme 2>/dev/null
+    tryfun scrapefromreadme # 2>/dev/null
     if test -f .gitmodules && pen-yn "update git submodules?"; then
         # git submodule update --init
         git submodule update --init --recursive --remote
