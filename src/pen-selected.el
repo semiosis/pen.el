@@ -67,7 +67,7 @@
 
   (if mark-active
       (let ((sel (pen-umn (pen-selected-text))))
-        (edit-fp-on-path sel))))
+        (pen-edit-fp-on-path sel))))
 
 (defun sel-flush-left-p ()
   (let ((bol (point-at-bol))

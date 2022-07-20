@@ -73,9 +73,9 @@ Be mindful of quoting arguments correctly."
 (defmacro echo (&rest body)
   `(pen-b echo ,@body))
 
-(defalias 'edit-which 'edit-fp-on-path)
-(defalias 'ewhich 'edit-fp-on-path)
-(defalias 'ew 'edit-fp-on-path)
+(defalias 'edit-which 'pen-edit-fp-on-path)
+(defalias 'ewhich 'pen-edit-fp-on-path)
+(defalias 'ew 'pen-edit-fp-on-path)
 
 (defmacro pen-bp (&rest body)
   "Pipe string into bash command. Return stdout."

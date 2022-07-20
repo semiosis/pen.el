@@ -449,7 +449,7 @@
   ;; If bang then just edit fp which is here.
   (if bang
       (find-fp fp)
-    (edit-fp-on-path fp)))
+    (pen-edit-fp-on-path fp)))
 (evil-ex-define-cmd "vw" 'evil-vw)
 (evil-ex-define-cmd "ew" 'evil-vw)
 
