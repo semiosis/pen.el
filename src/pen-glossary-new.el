@@ -886,6 +886,14 @@ Use my position list code. Make it use rosie lang and external software."
                (avy--style-fn avy-style)))))
     (ace-link--help-action pt)))
 
+(defun lookup-thing-glossary-definition (term)
+  (interactive (list
+                (fz (pen-sn "list-glossary-terms")
+                    (downcase (pen-thing-at-point))
+                    nil
+                    "goto-glossary-definition: ")))
+  (pen-goto-glossary-definition term))
+
 (defun pen-goto-glossary-definition (term)
   (interactive (list
                 (fz (pen-sn "list-glossary-terms")

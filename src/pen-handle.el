@@ -174,7 +174,10 @@
 (handle '(org-mode)
         :navtree '()
         :run '()
-        :docs '(pen-docs-for-thing-given-screen)
+        :docs '(
+                lookup-thing-glossary-definition
+                dict-word
+                pen-docs-for-thing-given-screen)
         :nexterr '()
         :preverr '()
         :complete '()
