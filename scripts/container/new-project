@@ -3,6 +3,8 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+export MYGIT=~/.pen/documents
+
 is_tty() { [ -t 1 ]; }
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -16,8 +18,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-: "${author:="semiosis"}"
-
 name="$1"
 type="$2"
 
@@ -25,14 +25,20 @@ if test -n "$name"; then
     project_name="$(p "$name" | slugify)"
 fi
 
-! test -n "$project_name" && exit 1
+abortscript() {
+    echo "<name> <type>" 1>&2
+    exit 1
+}
 
-if test -d "$MYGIT/takaheai/$project_name" || test -d "$MYGIT/semiosis/$project_name"; then
+! test -n "$project_name" && abortscript
+! test -n "$type" && abortscript
+
+if test -d "$MYGIT/$project_name"; then
     already_exists=0
+fi
 
-cd "$MYGIT/$author" || exit 1
 mkdir -p "$project_name"
-cd "$project_name" || exit 1
+cd "$project_name" || abortscript
 
 if ! test -d .git; then
     git init &>/dev/null
@@ -164,10 +170,7 @@ else
         # zcd .
         x -sh "zcd ." -e "»" -s "dired -g" -c m -a
     else
-        # export CWD="$(pwd)"
-        # start-ide || zcd .
         start-ide || x -sh "zcd ." -e "»" -s "dired -g || ranger" -c m -a
-        # CWD="$(pwd)" zsh
     fi
 fi
 
