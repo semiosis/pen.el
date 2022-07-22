@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+export CWD=
+
+if test -f Main.hs; then
+    # spv sp Main.hs
+    # spv ghci Main.hs
+    # spv ghcid Main.hs
+
+    # This is more reliable and less janky, but is it worth it?
+
+    # Actually, it appears to kill the tmux server if I try this from
+    # emacs and quit windows with C-d
+
+    NEWSESSION="$(TMUX= tmux new -d -F "#{session_id}" -P "vs -nf Main.hs")"
+    spv -t "$NEWSESSION" ghci Main.hs
+    spv -t "$NEWSESSION" ghcid Main.hs
+    spv -t "$NEWSESSION" og -nf ./remember.org
+    TMUX= tmux select-layout -t "$NEWSESSION" tiled
+    if test -f .iderc.sh; then
+        ( . .iderc.sh; ) &>/dev/null
+    fi
+
+    TMUX= tmux attach -t "$NEWSESSION"
+    exit 0
+fi
+exit 1
