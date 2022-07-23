@@ -21,6 +21,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nocl) {
+        nocl=y
+        shift
+    }
+    ;;
+
     -cd) {
         CWD="$2"
         shift
@@ -58,7 +64,11 @@ printf -- "%s" "$CMD " >> "$tf_command"
 : "${CWD:="$(pwd)"}"
 
 if test "$cm" = "y"; then
-    CWD="$CWD" pen-x -c l -sf "$tf_command" -c m -i
+    if test "$nocl" = "y"; then
+        CWD="$CWD" pen-x -sf "$tf_command" -sl 0.5 -c m -i
+    else
+        CWD="$CWD" pen-x -c l -sf "$tf_command" -sl 0.5 -c m -i
+    fi
 else
-    CWD="$CWD" pen-x -c l -sf "$tf_command" -i
+    CWD="$CWD" pen-x -c l -sf "$tf_command" -sl 0.5 -i
 fi
