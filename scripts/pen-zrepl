@@ -63,6 +63,9 @@ printf -- "%s" "$CMD " >> "$tf_command"
 
 : "${CWD:="$(pwd)"}"
 
+# For some reason the sleep is required for
+# cr /root/.pen/documents/haskell-test/app/Main.hs
+
 if test "$cm" = "y"; then
     if test "$nocl" = "y"; then
         CWD="$CWD" pen-x -sf "$tf_command" -sl 0.5 -c m -i
