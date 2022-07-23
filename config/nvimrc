@@ -1494,3 +1494,7 @@ let pen_path = expand("~/.pen/pen.vim")
 if filereadable(pen_path)
   exe "source " . pen_path
 endif
+
+noremap <silent> ZB :call system("tm -f -d nw -c \"".expand('%:p:h')."\" zsh &")<CR>
+noremap <silent> ZC :call system("tm -f -d sph -c \"".expand('%:p:h')."\" zsh &")<CR>
+noremap <silent> ZV :call system("tm -f -d spv -c \"".expand('%:p:h')."\" zsh &")<CR>
