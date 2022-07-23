@@ -1398,6 +1398,7 @@ when s is a string, set the clipboard to s"
   (if (not m) (setq m major-mode))
 
   (cond ((derived-mode-p 'json-mode) "json")
+        ((derived-mode-p 'haskell-mode) "hs")
         ((eq major-mode 'python-mode) "py")
         ((derived-mode-p 'csv-mode) "csv")
         ((eq major-mode 'fundamental-mode) "txt")

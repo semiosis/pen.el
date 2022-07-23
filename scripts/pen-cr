@@ -1676,6 +1676,7 @@ esac
 case "$file_type" in
     hs) {
         if pen-yn "use interpreter?"; then
+            # zrepl -cm runhaskell "$rp"
             zrepl -cm runhaskell "$rp"
             pen-pak
         else
