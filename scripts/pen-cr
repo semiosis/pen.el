@@ -1601,6 +1601,14 @@ case "$fnspec" in
     }
     ;;
 
+    *.cabal) {
+        cd "$dn"
+        cabal build
+        cabal repl
+        exit "$?"
+    }
+    ;;
+
     # This must come after all specs with .py
     __init__.py|*.py) {
         cd "$dn"
