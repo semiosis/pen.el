@@ -172,10 +172,17 @@ if ! is_tty; then
     exit 0
 else
     if test "$docd"; then
+        # emacs doesn't work well inside of x.
+        # Therefore, do a respawn pane
+        # tm -S rsp -args vim /
+
         # zcd .
-        x -sh "zcd ." -e "»" -s "dired -g" -c m -a
+        # x -sh "zcd ." -e "»" -s "dired -g" -c m -a
+        # x -sh "zcd ." -e "»" -s "tm -S rsp -args dired -g" -c m -a
+        x -sh "zcd ." -e "»" -s "tm -S rsp -args dired" -c m -a
     else
-        start-ide || x -sh "zcd ." -e "»" -s "dired -g || ranger" -c m -a
+        # start-ide || x -sh "zcd ." -e "»" -s "tm -S rsp 'dired -g || ranger'" -c m -a
+        start-ide || x -sh "zcd ." -e "»" -s "tm -S rsp 'dired || ranger'" -c m -a
     fi
 fi
 

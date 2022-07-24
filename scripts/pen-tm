@@ -1803,7 +1803,7 @@ case "$f" in
             }
             ;;
 
-            -c) {
+            -c|-cd) {
                 dir="$(p "$2" | pen-bs "()'")"
                 dir="$(eval echo -e "$dir")" # expand
                 CWD="$dir"
