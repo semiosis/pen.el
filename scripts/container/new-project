@@ -9,6 +9,13 @@ is_tty() { [ -t 1 ]; }
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+
+    -drop) {
+        dodrop=y
+        shift
+    }
+    ;;
+
     -cd) {
         docd=y
         shift
@@ -171,7 +178,9 @@ if ! is_tty; then
     printf -- "%s\n" "$(pwd)"
     exit 0
 else
-    if test "$docd"; then
+    if test "$dodrop" = "y"; then
+        zcd "$(pwd)"
+    elif test "$docd"; then
         # emacs doesn't work well inside of x.
         # Therefore, do a respawn pane
         # tm -S rsp -args vim /
@@ -180,14 +189,16 @@ else
         # x -sh "zcd ." -e "»" -s "dired -g" -c m -a
         # x -sh "zcd ." -e "»" -s "tm -S rsp -args dired -g" -c m -a
 
-        mysh="$(nsfa -E "cd $(aqf-nice "$(pwd)"); dired")"
-        x -sh "zcd ." -e "»" -s "tm -S rsp $mysh" -c m -a
-        pak
+        # mysh="$(nsfa -E "cd $(aqf-nice "$(pwd)"); dired")"
+        # x -sh "zcd ." -e "»" -s "tm -S rsp $mysh" -c m -a
+        dired
+        # pak
     else
         # start-ide || x -sh "zcd ." -e "»" -s "tm -S rsp 'dired -g || ranger'" -c m -a
-        mysh="$(nsfa -E "cd $(aqf-nice "$(pwd)"); dired || ranger")"
-        start-ide || x -sh "zcd ." -e "»" -s "tm -S rsp $mysh" -c m -a
-        pak
+        # mysh="$(nsfa -E "cd $(aqf-nice "$(pwd)"); dired || ranger")"
+        # start-ide || x -sh "zcd ." -e "»" -s "tm -S rsp $mysh" -c m -a
+        start-ide || dired || ranger
+        # pak
     fi
 fi
 
