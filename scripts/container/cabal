@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+/root/.ghcup/bin/cabal "$@"
+
+# This works for pet. Make it so I can do this by default with pet
+# tmwr /root/.ghcup/bin/cabal "$@"

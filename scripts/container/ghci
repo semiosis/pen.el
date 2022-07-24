@@ -3,4 +3,4 @@ export TTY
 
 export TERM=vt100
 
-/root/.ghcup/bin/ghci "$@"
+tmwr /root/.ghcup/bin/ghci "$@"
