@@ -2685,50 +2685,6 @@ case "$f" in
     }
     ;;
 
-    rsp|respawn-pane) {
-        pen-tm n "$f :: NEEDS WORK"
-
-        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-            -t) {
-                TARGET="$2"
-
-                shift
-                shift
-            }
-            ;;
-
-            -w) {
-                SET_REMAIN_ON_EXIT=y
-
-                shift
-            }
-            ;;
-
-            -f) {
-                FORCE=y
-
-                shift
-            }
-            ;;
-
-            *) break;
-        esac; done
-
-        CMD="$(cmd "$@")"
-
-        if test "$FORCE" = "y"; then
-            OPS+=" -f "
-        fi
-
-        if [ -n "$CMD" ]; then
-            tmux respawn-pane -t "$CALLER_TARGET" $OPS -k "$CMD"
-        else
-            tmux respawn-pane -t "$CALLER_TARGET" $OPS -k
-        fi
-
-    }
-    ;;
-
     project-edit) {
         pen-tm n "$f :: NOT IMPLEMENTED. Use projectile"
         exit 1
