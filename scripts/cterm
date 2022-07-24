@@ -46,6 +46,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -tm) {
+        export USE_TMUX=y
+        shift
+    }
+    ;;
+
     -nv) {
         export USE_NVC=y
         shift
@@ -70,6 +76,11 @@ if test "$DO_EXEC" = "y"; then
     CMD="$1"
 else
     CMD="$(cmd-nice-posix "$@")"
+fi
+
+if test "$USE_TMUX" = "y"; then
+    # tmmaybe=(tmwr)
+    CMD="tmwr $CMD"
 fi
 
 inside-docker-p() {
