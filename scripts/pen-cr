@@ -1604,6 +1604,7 @@ case "$fnspec" in
     *.cabal) {
         cd "$dn"
         cabal build
+        # pet cabal repl
         cabal repl
         exit "$?"
     }
