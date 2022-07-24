@@ -170,6 +170,8 @@
 
                              hs-download-packages-with-function-type))
 
+(defset haskell-cabal-mode-funcs '(haskell-cabal-add-dependency))
+
 (defset eww-mode-funcs '(eww-open-in-chrome
                          pen-url-cache-delete
                          eww-add-domain-to-chrome-dom-matches

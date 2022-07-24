@@ -1132,4 +1132,18 @@ non-nil."
 (defun current-line-string ()
   (thing-at-point 'line t))
 
+(defun urls-in-region-or-buffer (&optional s)
+  (let ((mediastring
+         (cond
+          ((major-mode-p 'eww-mode) (textprops-in-region-or-buffer))
+          (t (selection-or-buffer-string)))))
+    (sh/ptw/uniqnosort (sh/ptw/xurls mediastring))))
+
+(defun region-or-buffer-string ()
+  (interactive)
+  (if (or (region-active-p) (eq evil-state 'visual))
+      (str (buffer-substring (region-beginning) (region-end)))
+    (str (buffer-substring (point-min) (point-max)))))
+(defalias 'selection-or-buffer-string 'region-or-buffer-string)
+
 (provide 'pen-library)
