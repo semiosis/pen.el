@@ -354,7 +354,10 @@ STRINGS will be evaluated in normal `or' order."
 (defun cwd ()
   "Gets the current working directory"
   (interactive)
-  (f-expand (substring (shut-up-c (pwd)) 10)))
+  (let ((c (shut-up-c (pwd))))
+    (if c
+        (f-expand (substring c 10))
+      default-directory)))
 
 (defun tramp-mount-sshfs (&optional tramp-dir)
   (interactive)

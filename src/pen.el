@@ -2111,6 +2111,7 @@ May use to generate code from comments."
 (require 'pen-mad-teaparty)
 (require 'pen-documents)
 (require 'pen-show-map)
+(require 'pen-isearch)
 
 (require 'pen-media)
 (require 'pen-rhizome)
