@@ -1129,4 +1129,7 @@ non-nil."
           (ekm "M-C-m")
         (newline-indent)))))
 
+(defun current-line-string ()
+  (thing-at-point 'line t))
+
 (provide 'pen-library)
