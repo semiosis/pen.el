@@ -64,10 +64,10 @@
   (interactive)
   (dired (projectile-acquire-root) "-alXGh --group-directories-first"))
 
-(defun dired-cmd (pen-cmd dirname &optional switches)
+(defun dired-cmd (c dirname &optional switches)
   (interactive (cons (read-string "cmd:") (dired-read-dir-and-switches "")))
   (ignore-errors (kill-buffer dirname))
-  (let ((insert-directory-program cmd))
+  (let ((insert-directory-program c))
     (dired dirname switches)))
 
 (defun ev (&optional path)
