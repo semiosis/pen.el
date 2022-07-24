@@ -179,10 +179,15 @@ else
         # zcd .
         # x -sh "zcd ." -e "»" -s "dired -g" -c m -a
         # x -sh "zcd ." -e "»" -s "tm -S rsp -args dired -g" -c m -a
-        x -sh "zcd ." -e "»" -s "tm -S rsp -args dired" -c m -a
+
+        mysh="$(nsfa -E "cd $(aqf-nice "$(pwd)"); dired")"
+        x -sh "zcd ." -e "»" -s "tm -S rsp $mysh" -c m -a
+        pak
     else
         # start-ide || x -sh "zcd ." -e "»" -s "tm -S rsp 'dired -g || ranger'" -c m -a
-        start-ide || x -sh "zcd ." -e "»" -s "tm -S rsp 'dired || ranger'" -c m -a
+        mysh="$(nsfa -E "cd $(aqf-nice "$(pwd)"); dired || ranger")"
+        start-ide || x -sh "zcd ." -e "»" -s "tm -S rsp $mysh" -c m -a
+        pak
     fi
 fi
 
