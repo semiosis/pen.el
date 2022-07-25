@@ -4,7 +4,8 @@ export TTY
 is_tty() { [ -t 1 ]; }
 
 if is_tty && inside-docker-p; then
-    pet tmwr /root/.ghcup/bin/cabal "$@"
+    # pet tmwr /root/.ghcup/bin/cabal "$@"
+    pet nvc -2 tmwr /root/.ghcup/bin/cabal "$@"
 else
     /root/.ghcup/bin/cabal "$@"
 fi
