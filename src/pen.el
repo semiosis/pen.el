@@ -2112,6 +2112,7 @@ May use to generate code from comments."
 (require 'pen-documents)
 (require 'pen-show-map)
 (require 'pen-isearch)
+(require 'pen-find-file)
 
 (require 'pen-media)
 (require 'pen-rhizome)
