@@ -1,7 +1,13 @@
 #!/bin/bash
 export TTY
 
-/root/.ghcup/bin/cabal "$@"
+is_tty() { [ -t 1 ]; }
+
+if is_tty && inside-docker-p; then
+    tmwr /root/.ghcup/bin/cabal "$@"
+else
+    /root/.ghcup/bin/cabal "$@"
+fi
 
 # This works for pet. Make it so I can do this by default with pet
 # tmwr /root/.ghcup/bin/cabal "$@"
