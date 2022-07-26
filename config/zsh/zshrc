@@ -323,6 +323,7 @@ bindkey -s "^[K" "^A^Kvc g dt -c\r" #bindkey -s "^[K" "^A^Kgit d --cached\r"
 bindkey -s "^[J" "^A^Kf find-file-repo \"*\"^B" # find a file by name in all commits
 bindkey -s "^[l" "^A^Ksh-general\r"
 bindkey -s "^[L" "^A^Ksh-ranger-lingo .\r"
+bindkey -s "^[B" "^A^Kbr\r"
 bindkey -s "^[j" "^A^Ksh-jump\r"
 bindkey -s "^[y" "^A^Ksh-yank\r"
 bindkey -s "^[;" "^A^Ksh-git-hydra\r"
@@ -640,3 +641,5 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 PATH="$(uniqpath)"
 
 stty stop undef 2>/dev/null; stty start undef 2>/dev/null
+
+source /root/.config/broot/launcher/bash/br
