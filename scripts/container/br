@@ -1,0 +1,39 @@
+#!/bin/bash
+export TTY
+
+# x -sh br -s :filesystems -sl 0.1 -c m -i
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -2) {
+        DO_VT00=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_VT00" = "y"; then
+    nvc -22 br "$@"
+    exit "$?"
+fi
+
+. $HOME/.config/broot/launcher/bash/br
+
+export PAGER="nw tless"
+export EDITOR="nw vs"
+
+# https://dystroy.org/broot
+which broot &>/dev/null || {
+    wget -O /usr/local/bin/broot https://dystroy.org/broot/download/x86_64-linux/broot; chmod a+x /usr/local/bin/broot
+    broot --install
+    source $HOME/.config/broot/launcher/bash/br
+}
+
+br "$@"
+
+# nvc vt100 tmux new br
+# nvc vt100 -tm br
