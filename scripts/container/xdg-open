@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# remove_deprecated_args() {
+#     sed 's/--ignore-close-implementation//'
+# }
+# 
+# eval "set -- $(cmd "$@" | umn)"
+
+# Just no
+# /usr/bin/xdg-open "$@"
+
+# nw o "$@"
+
+nw zrepl -0 "$@"
