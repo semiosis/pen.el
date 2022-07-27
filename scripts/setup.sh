@@ -384,6 +384,12 @@ go get "golang.org/x/tools/gopls@latest"
 cp -a "$EMACSD/pen.el/config/nvimrc" ~/.vimrc
 )
 
+(
+mkdir -p $HOME/.config/broot/
+cp -a "$EMACSD/pen.el/config/broot-conf.toml" $HOME/.config/broot/conf.toml 
+rm -f $HOME/.config/broot/conf.hjson
+)
+
 # For compiling vim
 agi ruby-dev
 agi gettext

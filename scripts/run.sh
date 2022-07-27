@@ -85,6 +85,10 @@ if test -d ~/.emacs.d/host/pen.el/config; then
     ln -sf ~/.emacs.d/host/pen.el/config/zsh/fzf.zsh ~/.fzf.zsh
     ln -sf ~/.emacs.d/host/pen.el/config/zsh/git.zsh ~/.git.zsh
     ln -sf ~/.emacs.d/host/pen.el/config/shellrc ~/.shellrc
+
+    mkdir -p $HOME/.config/broot/
+    ln -sf ~/.emacs.d/host/pen.el/config/broot-conf.toml ~/.config/broot/conf.toml
+    rm -f ~/.config/broot/conf.hjson
 else
     ln -sf ~/.emacs.d/pen.el/config/zsh/zsh_aliases ~/.zsh_aliases
     ln -sf ~/.emacs.d/pen.el/config/zsh/zshenv ~/.zshenv
@@ -93,6 +97,10 @@ else
     ln -sf ~/.emacs.d/pen.el/config/zsh/fzf.zsh ~/.fzf.zsh
     ln -sf ~/.emacs.d/pen.el/config/zsh/git.zsh ~/.git.zsh
     ln -sf ~/.emacs.d/pen.el/config/shellrc ~/.shellrc
+
+    mkdir -p $HOME/.config/broot/
+    ln -sf ~/.emacs.d/pen.el/config/broot-conf.toml ~/.config/broot/conf.toml
+    rm -f ~/.config/broot/conf.hjson
 fi
 
 if [ -f ~/.shellrc ]; then
