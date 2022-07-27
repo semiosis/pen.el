@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+f="$1"
+shift
+
+cat1 "$@" | eval "$f"
