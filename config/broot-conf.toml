@@ -51,7 +51,7 @@ invocation = "emacs"
 key = "alt-e"
 leave_broot = false
 shortcut = "nw"
-execution = "tm -d nw -args sp {file}"
+execution = "tm -d nw -args pin {file}"
 
 [[verbs]]
 invocation = "emacs"
