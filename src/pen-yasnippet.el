@@ -99,6 +99,7 @@ $0`(yas-escape-text yas-selected-text)`")
 (defun yas-tables-imenu ()
   (interactive)
   (let ((b (call-interactively 'yas-describe-tables)))
+    ;; TODO Ensure that
     (switch-to-buffer "*YASnippet Tables*"))
   (call-interactively 'pen-helm-imenu))
 

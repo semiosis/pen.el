@@ -78,7 +78,14 @@ display values."
 
 (defmacro helm-marked-candidates-strings (&rest body)
   ""
-  `(s-join "\n" (helm-marked-candidates ,@body)))
+  `(s-join "\n"
+           (mapcar
+            (lambda (e)
+              (cond
+               ((listp e)
+                (car e))
+               e))
+            (helm-marked-candidates ,@body))))
 
 (defun helm-copy-selection-to-clipboard ()
   "Copy selection or marked candidates to `helm-current-buffer'.
