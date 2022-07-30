@@ -142,16 +142,20 @@
                            (list (if (with-current-buffer bufname
                                        (derived-mode-p 'prog-mode))
                                      "Function"
-                                   "Top level")
+                                   "Top level"
+                                   )
                                  k))
-           for disp1 = (mapconcat
-                        (lambda (x)
-                          (propertize
-                           x 'face
-                           (cl-loop for (p . f) in helm-imenu-type-faces
-                                    when (string-match p x) return f
-                                    finally return 'default)))
-                        types helm-imenu-delimiter)
+           for disp1 = (let* ((inter (mapconcat
+                                      (lambda (x)
+                                        (propertize
+                                         x 'face
+                                         (cl-loop for (p . f) in helm-imenu-type-faces
+                                                  when (string-match p x) return f
+                                                  finally return 'default)))
+                                      types helm-imenu-delimiter))
+                              (inter (string-replace "Top level / " "" inter)))
+
+                         inter)
            for disp = (propertize disp1 'help-echo bufname 'types types)
            collect
            (cons disp (cons k v))))
