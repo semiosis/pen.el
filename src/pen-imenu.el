@@ -171,7 +171,7 @@
   (cond
    ((pen-is-glossary-file (get-path nil t))
     (call-interactively 'helm-imenu))
-   ((eq major-mode 'help-mode) (call-interactively 'button-imenu))
+   ((eq major-mode 'help-mode) (call-interactively 'pen-button-imenu))
    ((derived-mode-p 'Info-mode)
     (if (>= (prefix-numeric-value current-prefix-arg) 4)
         (try (call-interactively 'info-buttons-imenu)
@@ -181,7 +181,7 @@
    ((derived-mode-p 'eww-mode)
     (if (>= (prefix-numeric-value current-prefix-arg) 4)
         (let ((current-prefix-arg nil))
-          (call-interactively 'button-imenu))
+          (call-interactively 'pen-button-imenu))
       (call-interactively 'eww-imenu)))
    (t (call-interactively 'helm-imenu))))
 
