@@ -153,7 +153,7 @@
                                                   when (string-match p x) return f
                                                   finally return 'default)))
                                       types helm-imenu-delimiter))
-                              (inter (string-replace "Top level / " "" inter)))
+                              (inter (s-replace-regexp "^\\(Top level\\)? / " "" inter)))
 
                          inter)
            for disp = (propertize disp1 'help-echo bufname 'types types)
