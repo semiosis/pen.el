@@ -96,6 +96,12 @@ $0`(yas-escape-text yas-selected-text)`")
   (with-temp-buffer
     (yas-describe-tables)))
 
+(defun yas-tables-imenu ()
+  (interactive)
+  (let ((b (call-interactively 'yas-describe-tables)))
+    (switch-to-buffer "*YASnippet Tables*"))
+  (call-interactively 'pen-helm-imenu))
+
 (add-hook 'yas-minor-mode-hook
           (lambda ()
             (yas-activate-extra-mode '_)))
