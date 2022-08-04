@@ -84,7 +84,7 @@ display values."
               (cond
                ((listp e)
                 (car e))
-               e))
+               (t e)))
             (helm-marked-candidates ,@body))))
 
 (defun helm-copy-selection-to-clipboard ()
