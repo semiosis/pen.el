@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+CMD="$(cmd "$@")"
+
+x -sh "br $CMD" -e "few letters to search" -c n -s ":img" -c m -i

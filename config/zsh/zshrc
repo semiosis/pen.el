@@ -323,7 +323,13 @@ bindkey -s "^[K" "^A^Kvc g dt -c\r" #bindkey -s "^[K" "^A^Kgit d --cached\r"
 bindkey -s "^[J" "^A^Kf find-file-repo \"*\"^B" # find a file by name in all commits
 bindkey -s "^[l" "^A^Ksh-general\r"
 bindkey -s "^[L" "^A^Ksh-ranger-lingo .\r"
+
+# M-B
 bindkey -s "^[B" "^A^Kbr\r"
+
+# M-N
+bindkey -s "^[N" "^A^Kbr-img\r"
+
 bindkey -s "^[j" "^A^Ksh-jump\r"
 bindkey -s "^[y" "^A^Ksh-yank\r"
 bindkey -s "^[;" "^A^Ksh-git-hydra\r"
