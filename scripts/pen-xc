@@ -74,6 +74,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -posix) {
+        DO_POSIX=y
+        shift
+    }
+    ;;
+
+    -uq) {
+        UNQUOTE_IT=y
+        shift
+    }
+    ;;
+
     -m) {
         MINIMISE_IT=y
         shift
@@ -94,6 +106,15 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+case "$sn" in
+    xcp) {
+        DO_POSIX=y
+    }
+    ;;
+
+    *)
+esac
 
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
@@ -152,7 +173,21 @@ if ! stdin_exists && test "$#" -gt 0; then
         shift
     fi
 
-    exec < <(cmd-nice "$@")
+    if test "$UNQUOTE_IT" = "y"; then
+        exec < <(p "$@")
+    elif test "$DO_POSIX" = "y"; then
+        if test "$#" -eq 1; then
+            exec < <(printf -- "%s" "$@")
+        else
+            exec < <(cmd "$@")
+        fi
+    else
+        if test "$#" -eq 1; then
+            exec < <(printf -- "%s" "$@")
+        else
+            exec < <(cmd-nice "$@")
+        fi
+    fi
 fi
 
 if stdin_exists; then
@@ -168,10 +203,10 @@ if stdin_exists; then
         input="$(printf -- "%s" "$input" | chomp)"
     fi
     if test "$MINIMISE_IT" = "y"; then
-        input="$(printf -- "%s" "$input" | pen-mnm)"
+        input="$(printf -- "%s" "$input" | mnm)"
     fi
     if test "$UNMINIMISE_IT" = "y"; then
-        input="$(printf -- "%s" "$input" | pen-umn)"
+        input="$(printf -- "%s" "$input" | umn)"
     fi
     if test "$NOTIFY" = "y"; then
         ns "xc: $input" &>/dev/null
@@ -185,7 +220,7 @@ if stdin_exists; then
 
     if test "$USE_PAGER" = "y" || test "$FORCE_OUT" = "y" || is_stdout_pipe; then
         if test "$USE_PAGER" = "y"; then
-            printf -- "%s" "$input" | pen-pager
+            printf -- "%s" "$input" | pager
         else
             printf -- "%s" "$input"
         fi
@@ -200,19 +235,19 @@ else
 
     {
         if test "$TRIM" = "y"; then
-            xclip -o 2>/dev/null | pen-soak | chomp
+            xclip -o 2>/dev/null | soak | chomp
         else
             xclip -o 2>/dev/null
         fi
     } | {
         if test "$UNMINIMISE_IT" = "y"; then
-            pen-umn
+            umn
         else
             cat
         fi
     } | {
         if test "$USE_PAGER" = "y"; then
-            pen-pager
+            pager
         else
             cat
         fi
