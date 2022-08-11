@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+is_tty() { [ -t 1 ]; }
+
+if is_tty && inside-docker-p; then
+    # pet tmwr /root/.ghcup/bin/cabal "$@"
+    # pet nvc -2 tmwr /root/.ghcup/bin/cabal "$@"
+    # test "$#" -gt 0 || exit 1
+
+    opt="$1"
+    case "$opt" in
+        build) {
+            /root/.ghcup/bin/cabal "$@"
+            exit "$?"
+        }
+        ;;
+
+        *) {
+            nvc -2 tmwr /root/.ghcup/bin/cabal "$@"
+            exit "$?"
+        }
+        ;;
+    esac
+
+else
+    /root/.ghcup/bin/cabal "$@"
+fi
+
+# This works for pet. Make it so I can do this by default with pet
+# tmwr /root/.ghcup/bin/cabal "$@"
