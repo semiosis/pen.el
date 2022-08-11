@@ -736,6 +736,13 @@ test -d $REPOS/figlet-fonts || (
     git clone "https://github.com/xero/figlet-fonts"
 )
 
+test -d $REPOS/glow || (
+    cd "$REPOS"
+    git clone "https://github.com/charmbracelet/glow"
+    cd glow
+    go build
+)
+
 test -d $REPOS/go-ethereum || (
     cd "$REPOS"
     git clone "https://github.com/ethereum/go-ethereum"

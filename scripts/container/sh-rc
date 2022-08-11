@@ -81,7 +81,7 @@ W  $MYGIT/config/weechat/weechat.conf
 *  $HOME/.clisprc
 :  $MYGIT/mullikine/shane-prolog/shane.pl
 L  $HOME/.plrc
->  $HOME/.myrc.yaml
+>  $HOME/.pen/pen.yaml
 \`  $HOME/.Xresources
 HEREDOC
 
@@ -162,7 +162,7 @@ case "$d" in
     \*) cmd="orspog $HOME/.clisprc" ;;
     \:) cmd="orspog $MYGIT/mullikine/shane-prolog/shane.pl" ;;
     L) cmd="orspog $HOME/.plrc" ;;
-    \>) cmd="vs +G ~/.myrc.yaml" ;;
+    \>) cmd="vs +G $HOME/.pen/pen.yaml" ;;
     \~) cmd="vs ~/.Xresources" ;;
 
 esac
