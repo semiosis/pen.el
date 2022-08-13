@@ -841,7 +841,7 @@ If EXTERNAL is double prefix, browse in new buffer."
       (message "No link under point"))
      ((string-match "^mailto:" url)
       (browse-url-mail url))
-     ((string-match "^https?://asciinema.org/a/[a-zA-Z0-9]+$" url)
+     ((string-match "^https?://asciinema.org/a/[a-zA-Z0-9]+/?$" url)
       (pen-tm-asciinema-play url))
      ((and (consp external) (<= (car external) 4))
       (funcall shr-external-browser url))
@@ -1453,6 +1453,8 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
     (cond ((string-match-p "https?://github.com/.*/issues" url)
            (let ((res (apply proc args))) res))
+          ((string-match "^https?://asciinema.org/a/[a-zA-Z0-9]+/?$" url)
+           (pen-tm-asciinema-play url))
           ((string-match-p "https?://gist.github.com/" url)
            (pen-sps (concat "o " (pen-q url))))
           ((-reduce (lambda (a b) (or a b))
