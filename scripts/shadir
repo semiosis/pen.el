@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+: "${dir:="$1"}"
+: "${dir:="$(pwd)"}"
+
+dir="$(realpath "$dir")"
+tar cvf - "$dir" 2>/dev/null | sha1sum | awk '{print $1}'
