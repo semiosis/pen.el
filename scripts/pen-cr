@@ -350,6 +350,13 @@ case "$rp" in
     }
     ;;
 
+    */ilambda/hs/*) {
+        cd $MYGIT/semiosis/khala/
+        ilambda-hs
+        exit 0
+    }
+    ;;
+
     $MYGIT/semiosis/khala*) {
         cd $MYGIT/semiosis/khala/
         lein run
