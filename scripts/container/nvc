@@ -24,6 +24,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -22) {
+        shift
+        set -- vt100 -tm "$@"
+    }
+    ;;
+
     -pak|-w) {
         postcmd="; pak"
         shift

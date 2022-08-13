@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+unset TMUX
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -tm) {
+        USE_TMUX=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$USE_TMUX" = "y"; then
+    vt100 tmux new -s "$(cmd "$@" | slugify)" "$@"
+    exit "$?"
+fi
+
+if test "$#" -gt 0; then
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+    TERM=vt100 sh -c "$CMD"
+else
+    TERM=vt100 sh
+fi

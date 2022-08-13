@@ -1686,7 +1686,12 @@ case "$file_type" in
     hs) {
         if pen-yn "use interpreter?"; then
             # zrepl -cm runhaskell "$rp"
-            zrepl -cm runhaskell "$rp"
+            if yn "cd into dir?"; then
+                cd "$dn"
+                zrepl -cm runhaskell "$fn"
+            else
+                zrepl -cm runhaskell "$rp"
+            fi
             pen-pak
         else
             cd "$td_cr"
