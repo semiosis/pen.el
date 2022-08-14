@@ -1,10 +1,1 @@
-#!/bin/bash
-export TTY
-
-slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
-
-if test "$TERM" = "dumb"; then
-    "$@"
-else
-    TMUX= tmux new -s "tmwr-$slug" "$@"
-fi
+container-script

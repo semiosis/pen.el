@@ -127,7 +127,10 @@ START and END can be in either order."
         ;; (setq cmd (concat "TMUX= tmux new -c " (pen-q dir) " -n zsh \"CWD= zsh\""))
         (setq cmd "zsh")
         (setq cmd (tmuxify-cmd cmd dir cmd))))
-  (pen-e-sps (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
+  ;; This resorts to =e=
+  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+      (pen-e-sps (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir)))
+    (pen-sps cmd)))
 (defalias 'term-sps 'pen-e-sps-zsh)
 (defalias 'tsps 'pen-e-sps-zsh)
 

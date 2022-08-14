@@ -1,0 +1,81 @@
+#!/bin/bash
+export TTY
+
+aqf() {
+    cmd-nice-without-bs "$@"
+}
+
+pl() {
+    printf -- "%s\n" "$@"
+}
+
+# This script is misnamed
+
+# nvt -2 man less
+# nvt -2 elinks "http://news.ycombinator.com"
+
+EVAL=n
+precmd=
+postcmd=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -2) {
+        precmd="export TERM=screen-2color; "
+        shift
+    }
+    ;;
+
+    -22) {
+        shift
+        set -- vt100 -tm "$@"
+    }
+    ;;
+
+    -pak|-w) {
+        postcmd="; pak"
+        shift
+    }
+    ;;
+
+    -E) {
+        EVAL=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(cmd-nice-posix "$@")"
+
+if test $# -eq 0; then
+    CMD="\"zsh\""
+fi
+
+
+if test "$EVAL" = "y"; then
+    CMD="eval $CMD"
+fi
+
+if pl "$INSIDE_EMACS" | grep -q ',comint'; then
+    "$@"
+    exit "$?"
+fi
+
+if test "$INSIDE_NEOVIM" = y; then
+    "$@"
+    exit "$?"
+fi
+
+export INSIDE_NEOVIM=y
+export NO_DEFAULT_BG=y # This is so any script that uses colorize-build looks better inside neovim
+
+# I have a wrapper script now, so this will always happen
+
+if test "$TERM" = "dumb"; then
+    eval "$CMD"
+elif which -a nvim &>/dev/null; then
+    cmd="nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
+    eval "$cmd"
+else
+    eval "$CMD"
+fi
