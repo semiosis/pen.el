@@ -120,6 +120,9 @@ care."
 (memoize 'url-cache-is-404)
 
 (defun test-memo ()
-  (ilist 10 "tree species"))
+  (interactive)
+  (let ((result
+         (ilist 10 "tree species")))
+    (etv result)))
 
 (provide 'pen-memoize)

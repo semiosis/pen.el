@@ -1943,7 +1943,8 @@
                   :select-only-match select-only-match
                   :variadic-var variadic-var
                   :inject-gen-start inject-gen-start
-                  :temperature temperature
+                  ;; TODO Implement temperature
+                  ;; :temperature temperature
                   :override-prompt override-prompt
                   :proxy proxy
                   :force-interactive is-interactive
