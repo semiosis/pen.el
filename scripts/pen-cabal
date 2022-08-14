@@ -17,7 +17,8 @@ if is_tty && inside-docker-p; then
         ;;
 
         *) {
-            nvc -2 tmwr /root/.ghcup/bin/cabal "$@"
+            # nvc -2 tmwr /root/.ghcup/bin/cabal "$@"
+            pet tmwr /root/.ghcup/bin/cabal "$@"
             exit "$?"
         }
         ;;

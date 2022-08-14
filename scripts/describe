@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# Describe an image
+
+file_path="$1"
+test -f "$file_path" || exit 1
+
+penf pf-given-an-image-describe-it/1 "$file_path"
