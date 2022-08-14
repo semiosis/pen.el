@@ -716,6 +716,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+# Not sure exactly why but this export is needed right here after opts
+export UPDATE
+
 if test "$PEN_UPDATE" = "y"; then
     PEN_UPDATE=t
 fi
