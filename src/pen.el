@@ -126,6 +126,7 @@
 (require 'pen-keys)
 (require 'pen-swipe)
 (require 'pen-ilambda)
+(require 'pen-tetris)
 (require 'pen-demos)
 (require 'pen-command-log)
 (require 'pen-buttons)

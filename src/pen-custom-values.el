@@ -127,7 +127,7 @@
  '(tetris-buffer-height 27)
  '(tetris-buffer-width 30)
  '(tetris-height 25)
- '(tetris-update-speed-function 'my-tetris-update-speed-function)
+ '(tetris-update-speed-function 'tetris-update-speed-function)
  '(tetris-width 10)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map

@@ -104,7 +104,7 @@ care."
                                         `(lambda ()
                                            (remhash ,args ,,table)
                                            ;; It would probably be better to alert and ignore
-                                           ;; (try (remhash args ,table)
+                                           n ;; (try (remhash args ,table)
                                            ;;      (message ,(concat "timer for memoized " funcslug " failed")))
                                            ))) ,,timeouts))))))))))
 
@@ -133,7 +133,10 @@ care."
           (unwind-protect
               ;; (or value (puthash args (apply ,func args) ,table))
               (let ((ret (or (and
-                              ;; (not (>= (prefix-numeric-value current-global-prefix-arg) 4))
+                              (not (pen-var-value-maybe 'pen-sh-update))
+                              (not (pen-var-value-maybe 'do-pen-update))
+                              (not (>= (prefix-numeric-value current-global-prefix-arg) 4))
+                              (not (>= (prefix-numeric-value current-prefix-arg) 4))
                               value)
                              ;; Add to the hash table and save the hash table
                              (let ((newret (puthash args
@@ -161,7 +164,8 @@ care."
                                         ;; It would probably be better to alert and ignore
                                         (try (remhash args ,table)
                                              ;; (message ,(concat "timer for memoized " funcslug " failed"))
-                                             ))) ,timeouts)))))))))
+                                             )))
+                         ,timeouts)))))))))
 
 (defun ignore-errors-around-advice (proc &rest args)
   (ignore-errors
@@ -184,5 +188,10 @@ care."
   (let ((result
          (ilist 10 "tree species")))
     (etv result)))
+
+(defun pen-rememoize ()
+  (interactive)  
+  (memoize-restore 'pen-prompt-snc)
+  (memoize 'pen-prompt-snc))
 
 (provide 'pen-memoize)
