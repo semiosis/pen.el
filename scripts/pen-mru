@@ -1,0 +1,61 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -v) {
+        vimonly=y
+        shift
+    }
+    ;;
+
+    -e) {
+        emacsonly=y
+        shift
+    }
+    ;;
+
+    -m) {
+        minimise=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+pager() {
+    if is_tty; then
+        v $@
+    else
+        cat
+    fi
+}
+
+{
+    if test "$vimonly" = "y"; then
+        cat "$HOME/notes/vim_mru_files.txt" | sed 1d
+    elif test "$emacsonly" = "y"; then
+        cat "$EMACSD/recentf" | rosie grep -o subs net.path
+    else
+        (
+            cat "$HOME/notes/vim_mru_files.txt" | sed 1d
+            cat "$EMACSD/recentf" | rosie grep -o subs net.path
+            ` # cat "$HOME$MYGIT/spacemacs/.cache/recentf"          `
+            ` # cat "$HOME$MYGIT/purcell/emacs.d/recentf"           `
+            ` # cat "$HOME$MYGIT/jkitchin/scimax/user/recentf"      `
+            ` # cat "$HOME$MYGIT/philippe-grenet/exordium/recentf"  `
+        )
+    fi
+} 2>/dev/null | {
+    if test "$minimise" = "y"; then
+        mnm
+    else
+        cat
+    fi
+} | pager

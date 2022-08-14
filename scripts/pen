@@ -1269,7 +1269,7 @@ case "$sn" in
 
     # pen call ilambda function
     # Example: peni list-programming-languages 5
-    # pene "(pps (progn (idefun list-programming-languages)) (list-programming-languages \"5\"))"
+    # pene "(pps (progn (idefun list-programming-languages) (list-programming-languages \"5\")))"
     # peni color-of-thing watermelon
     peni) {
         show_banner=n
