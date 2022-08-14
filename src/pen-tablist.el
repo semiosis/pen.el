@@ -267,7 +267,7 @@ Return the output buffer."
 This is a list of offsets from the beginning of the line."
   (let ((cc tabulated-list-padding)
         columns)
-    (dotimes (interactive (length tabulated-list-format))
+    (dotimes (i (length tabulated-list-format))
       (let* ((c (aref tabulated-list-format i))
              (len (nth 1 c))
              (pad (or (plist-get (nthcdr 3 c) :pad-right)

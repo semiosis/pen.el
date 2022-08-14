@@ -70,7 +70,10 @@ export INSIDE_NEOVIM=y
 export NO_DEFAULT_BG=y # This is so any script that uses colorize-build looks better inside neovim
 
 # I have a wrapper script now, so this will always happen
-if which -a nvim &>/dev/null; then
+
+if test "$TERM" = "dumb"; then
+    eval "$CMD"
+elif which -a nvim &>/dev/null; then
     cmd="nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
     eval "$cmd"
 else

@@ -3,4 +3,8 @@ export TTY
 
 slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
 
-TMUX= tmux new -s "tmwr-$slug" "$@"
+if test "$TERM" = "dumb"; then
+    "$@"
+else
+    TMUX= tmux new -s "tmwr-$slug" "$@"
+fi
