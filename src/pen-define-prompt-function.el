@@ -97,7 +97,6 @@
             ;; ("PEN_BEST_OF" . ,final-best-of)
             ("PEN_CACHE" . ,(if cache "y" ""))
             ;; This is also handled by default in pen-sn
-            ("UPDATE" . ,(if pen-sh-update "y" ""))
             ("PEN_USER_AGENT" . ,pen-user-agent)
             ("PEN_TRAILING_WHITESPACE" . ,trailing-whitespace)
             ("PEN_N_COMPLETIONS" . ,(str final-n-completions))
@@ -1714,7 +1713,8 @@
                   `(
                     ("PEN_GEN_UUID" . ,gen-id)
                     ("PEN_GEN_TIME" . ,gen-time)
-                    ("PEN_GEN_DIR" . ,gen-dir))))
+                    ("PEN_GEN_DIR" . ,gen-dir)
+                    ("UPDATE" . ,(if pen-sh-update "y" "")))))
              data))
 
           (tempa
