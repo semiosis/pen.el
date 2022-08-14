@@ -639,7 +639,8 @@ word(s) will be searched for via `eww-search-prefix'."
       (setq url (concat "file://" url))
     (setq url (eww--dwim-expand-url url)))
 
-  (if (lg-url-is-404 url)
+  (if (or pen-lg-always
+          (lg-url-is-404 url))
       (pen-lg-display-page url)
     (progn
       ;; *eww-racket-doc*

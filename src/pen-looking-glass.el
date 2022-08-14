@@ -15,6 +15,13 @@
 ;; (require 'eww-lnum)
 (require 'pen-asciinema)
 
+
+(defcustom pen-lg-always ""
+  "Always use LG instead of real websites"
+  :type 'boolean
+  :group 'pen)
+
+
 (defun pen-uniqify-buffer (b)
   "Give the buffer a unique name"
   (with-current-buffer b
