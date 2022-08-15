@@ -1498,3 +1498,37 @@ endif
 noremap <silent> ZB :call system("tm -f -d nw -c \"".expand('%:p:h')."\" zsh &")<CR>
 noremap <silent> ZC :call system("tm -f -d sph -c \"".expand('%:p:h')."\" zsh &")<CR>
 noremap <silent> ZV :call system("tm -f -d spv -c \"".expand('%:p:h')."\" zsh &")<CR>
+
+" echom Byte()
+" echom Byte(".")
+" echom Byte("'<")
+" echom Byte("'>")
+fun! Byte(...)
+    " https://vi.stackexchange.com/questions/2410/how-to-make-a-vimscript-function-with-optional-arguments
+    let indicator = get(a:, 1, ".")
+    return line2byte(line(indicator))+col(indicator)-1
+endf
+
+" Reselect visual only works if the cursor is not moved;
+" You can't relocate and then run ReselectVisual
+fun! ReselectVisualTL()
+    if visualmode() == "V"
+       " we are in visual line mode
+        normal! mxgv`x
+    elseif visualmode() == "\<C-V>"
+       " we are in visual block mode
+        normal! mxgv`x
+    else
+        normal! mxgv
+    endif
+
+    if Byte(".") != Byte("'<")
+        normal o
+    endif
+
+    if ! visualmode() == "V"
+        if col(".") > col("'>")
+            normal O
+        endif
+    endif
+endf
