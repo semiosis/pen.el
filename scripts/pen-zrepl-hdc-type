@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+ty="$@"
+
+zrepl -cm -E "hdc '$ty'; exit"

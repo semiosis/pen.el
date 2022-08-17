@@ -156,6 +156,8 @@
                              ;; pen-intero-get-type
                              ;; pen-haskell-get-import-for-package
                              pen-haskell-get-import
+                             pen-haskell-hoogle-type
+                             pen-haskell-fill-hole
                              haskell-show-hdc-readme
                              dante-repl
                              dante-ghcid

@@ -645,15 +645,15 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -s|-send) { # Send something
-
         input="$2"
 
         if test -n "$input"; then
             if test "$input" = "\\"; then
                 script_append "send -- \"\\\\\""
             else
-                input="$(printf -- "%s" "$input" | pen-bs "\\" | pen-bs "[" | pen-bs "]")"
-                script_append "send -- $(cmd-nice-posix "$input")"
+                input="$(printf -- "%s" "$input" | pen-bs "\\")"
+                # [] must be escaped only once
+                script_append "send -- $(cmd-nice-posix "$input" | pen-bs "[" | pen-bs "]")"
             fi
         fi
 
@@ -787,7 +787,7 @@ fi
 
 script_append "$expect_script"
 
-printf -- "%s" "$script" >> "$tf_script"
+# printf -- "%s" "$expect_script" | tv >> "$tf_script"
 
 export SHELL
 

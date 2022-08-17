@@ -290,13 +290,16 @@
 ;; If lsp files, try haskell-doc-show-type. ie. (haskell-doc-sym-doc "newtype")
 (defun pen-haskell-get-type ()
   (interactive)
-  (let* ((si
-          (pen-sed "/:: \\*$/d" (pen--lsp-get-sideline-text)))
-         (thing (pen-thing-at-point))
+  (let* ((thing (pen-thing-at-point))
+         (si (pen--lsp-get-sideline-text))
+         (hd (pen-lsp-get-hover-docs))
+         (si (pen-sed "s/ t0/ Any/" (pen-sed "s/ \\[-W.*//" (sor (pen-sed "/:: \\*$/d" si)))))
          (ty
           (sor (s-replace-regexp (concat thing " :: ") "" (or (s-substring (concat thing " ::.*") si)
                                                               ""))
-               (haskell-doc-sym-doc thing))))
+               (haskell-doc-sym-doc thing)
+               (sor (pen-snc (concat "sed -n 's/^" thing " :: \\(.*\\)$/\\1/p'") hd))))
+         (ty (pen-sed "s/\\[Char\\]/String/" ty)))
     (if (sor ty)
         (if (interactive-p)
             (pen-etv ty)
@@ -305,6 +308,11 @@
         ;; (error (concat "No known type for " thing))
         (message (concat "No known type for " thing))
         nil))))
+
+(defun pen-haskell-hoogle-type ()
+  "This is great for looking for functions to fill a hole"
+  (interactive)
+  (pen-sps (concat "pen-zrepl-hdc-type '" (pen-haskell-get-type) "'")))
 
 (defun pen-haskell-get-import-for-package (thing)
   (interactive (list (pen-thing-at-point)))
