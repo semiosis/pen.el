@@ -35,6 +35,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -maybe) {
+        maybe=y
+        shift
+    }
+    ;;
+
     -tmarg) {
         tmargs+=("$2")
         shift
@@ -52,6 +58,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 export TARGET
+
+is_tty() { [ -t 1 ]; }
+
+if test "$maybe" = "y" && is_tty; then
+    "$@"
+    exit "$?"
+fi
 
 : "${CMD:="$(0</dev/null cmd "$@" | pen-mnm | cut -c 1-30 | slugify | sed 's/^-//;s/-$//')"}"
 

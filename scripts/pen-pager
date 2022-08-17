@@ -6,9 +6,13 @@ is_tty() {
     [ -t 1 ]
 }
 
+export EDITOR=v
+
 pager() {
     if is_tty; then
-        less -rS "$@"
+        fp="$(tf txt)"
+        exec <&1
+        v "$fp"
     else
         cat
     fi
