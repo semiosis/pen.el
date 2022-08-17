@@ -114,7 +114,8 @@ if test "$FZF_PREPEND_DIR" = "y"; then
     mfie="$mfie | prepend-string $(cmd-nice-posix "$CWD/")"
 fi
 
-mfl="$mfie | q -l | tr -d '\n'"
+# mfl="$mfie | q -l | tr -d '\\n'"
+mfl="cmd-nice {+}"
 bindings+="alt-r:execute-silent($mfie | awk 1 | head -n 1 | pen-ux drn | pen-tm -f -S -tout spv -xargs ranger),"
 bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | pen-tm -S -tout nw -xargs o),"
 bindings+="alt-y:toggle-all,"
