@@ -354,7 +354,7 @@ case "$rp" in
         cd /root/.emacs.d/host/ilambda/hs/
         cabal build
         # pet cabal repl
-        cabal repl
+        pet cabal repl
         exit 0
     }
     ;;
@@ -1614,7 +1614,7 @@ case "$fnspec" in
         cd "$dn"
         cabal build
         # pet cabal repl
-        cabal repl
+        pet cabal repl
         exit "$?"
     }
     ;;
