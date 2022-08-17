@@ -193,6 +193,7 @@
 (handle '(haskell-mode)
         :navtree '()
         :run '()
+        :projectfile '(pen-haskell-project-file)
         :repls '(dante-repl
                  haskell-repl)
         :docs '(pen-lsp-docs-for-thing-maybe

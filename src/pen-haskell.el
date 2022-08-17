@@ -389,4 +389,12 @@
   ;; (pen-sps "cabal v2-repl --builddir=newdist/dante" nil nil (locate-dominating-file-glob default-directory "*.cabal"))
   )
 
+(defun pen-haskell-project-file ()
+  (interactive)
+  (let* ((dir (locate-dominating-file-glob default-directory "*.cabal"))
+         (pfp (car (glob (f-join dir "*.cabal")))))
+    (if (interactive-p)
+        (e pfp)
+      pfp)))
+
 (provide 'pen-haskell)
