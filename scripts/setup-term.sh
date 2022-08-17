@@ -34,7 +34,8 @@ export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
 export EDITOR=sps-w-pin
 export BROWSER=sps-lg
-export PAGER="sps -maybe v"
+# export PAGER="sps -maybe v"
+export PAGER="pen-tpager"
 
 [ -f "/root/.ghcup/env" ] && . "/root/.ghcup/env" # ghcup-env
 
