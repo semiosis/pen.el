@@ -1508,27 +1508,3 @@ fun! Byte(...)
     let indicator = get(a:, 1, ".")
     return line2byte(line(indicator))+col(indicator)-1
 endf
-
-" Reselect visual only works if the cursor is not moved;
-" You can't relocate and then run ReselectVisual
-fun! ReselectVisualTL()
-    if visualmode() == "V"
-       " we are in visual line mode
-        normal! mxgv`x
-    elseif visualmode() == "\<C-V>"
-       " we are in visual block mode
-        normal! mxgv`x
-    else
-        normal! mxgv
-    endif
-
-    if Byte(".") != Byte("'<")
-        normal o
-    endif
-
-    if ! visualmode() == "V"
-        if col(".") > col("'>")
-            normal O
-        endif
-    endif
-endf
