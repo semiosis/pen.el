@@ -26,7 +26,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 # If already in emacs term, then start without it
-if test -n "$INSIDE_EMACS"; then
+if test -n "$INSIDE_EMACS" || test "$TERM" = dumb; then
     "$@"
     exit "$?"
 fi
