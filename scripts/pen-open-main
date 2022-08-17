@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+exec 0</dev/null
+
+rg() {
+    command rg --no-heading --line-buffered -b -g "$@"
+}
+
+{
+    rg '**/*.py'  "__name__.*__main__"
+    rg '**/*.py'  '^def main\b'
+    # rg '**/*.{c,cc,cpp}' '\b main\(\b'
+    rg '**/*.c' '\b main\(\b'
+    rg '**/*.cc' '\b main\(\b'
+    rg '**/*.cpp' '\b main\(\b'
+    # rg '**/*.clj{,c}' 'defn -main\b'
+    rg '**/*.clj' 'defn -main\b'
+    rg '**/*.cljc' 'defn -main\b'
+    rg '**/*.cljs' 'defn -main\b'
+    rg '**/*.hs'  '^main :: IO\b'
+    rg '**/*.go'  '^func main\b'
+    rg '**/*.rs'  '^pub fn main\b'
+    rg '**/*.rkt' "module\\+ main\\b"
+    rg '**/*.rkt' "\\(define \\(main-loop\\)"
+} | sort-by-line-length.sh | sort-by-path-depth.sh | pavs

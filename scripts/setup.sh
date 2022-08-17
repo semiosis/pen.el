@@ -801,3 +801,5 @@ cd
 wget "https://github.com/smallhadroncollider/taskell/releases/download/1.11.4/taskell-1.11.4_x86-64-linux.deb"
 dpkg -i taskell-1.11.4_x86-64-linux.deb
 )
+
+agi ripgrep
