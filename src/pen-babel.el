@@ -346,13 +346,14 @@ block."
       (completing-read "Code Block: " (org-babel-src-block-names))))
     (org-babel-execute-src-block-maybe)))
 
-(defun org-edit-special-around-advice (proc &rest args)
-  ;; (message "org-edit-special called with args %S" args)
-  (let ((res (apply proc args)))
-    (undo-tree-save-root ?')
-    ;; (message "org-edit-special returned %S" res)
-    res))
-(advice-add 'org-edit-special :around #'org-edit-special-around-advice)
+;; (defun org-edit-special-around-advice (proc &rest args)
+;;   ;; (message "org-edit-special called with args %S" args)
+;;   (let ((res (apply proc args)))
+;;     (undo-tree-save-root ?')
+;;     ;; (message "org-edit-special returned %S" res)
+;;     res))
+;; (advice-add 'org-edit-special :around #'org-edit-special-around-advice)
+;; (advice-remove 'org-edit-special #'org-edit-special-around-advice)
 
 (defun org-babel-add-src-args ()
   (interactive)
@@ -469,5 +470,12 @@ block."
           (org-in-block-p '("src" "example" "verbatim" "clocktable" "example")))
       (org-copy-src-block)
     (self-insert-command 1)))
+
+;; This is the easiest way to get around the issue of
+;; the major mode changing within a babel block.
+(define-key pen-map (kbd "C-c '") 'org-edit-special)
+
+;; (define-key org-babel-map (kbd "C-c") nil)
+;; (define-key org-babel-map (kbd "C-c '") 'org-edit-special)
 
 (provide 'pen-babel)

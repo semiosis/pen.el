@@ -312,7 +312,7 @@
 (defun pen-haskell-hoogle-type ()
   "This is great for looking for functions to fill a hole"
   (interactive)
-  (pen-sps (concat "pen-zrepl-hdc-type '" (pen-haskell-get-type) "'")))
+  (pen-sps (concat "pet pen-zrepl-hdc-type '" (pen-haskell-get-type) "'")))
 
 (defun pen-haskell-get-import-for-package (thing)
   (interactive (list (pen-thing-at-point)))
