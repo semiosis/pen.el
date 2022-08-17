@@ -25,4 +25,4 @@ rg() {
     rg '**/*.rs'  '^pub fn main\b'
     rg '**/*.rkt' "module\\+ main\\b"
     rg '**/*.rkt' "\\(define \\(main-loop\\)"
-} | sort-by-line-length.sh | sort-by-path-depth.sh | pavs
+} | pen-sort line-length | pen-sort path-depth | pavs
