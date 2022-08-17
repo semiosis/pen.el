@@ -10,7 +10,7 @@ export EDITOR=v
 
 pager() {
     if is_tty; then
-        fp="$(tf txt)"
+        fp="$(pen-strip-ansi | tf txt)"
         exec <&1
         v "$fp"
     else

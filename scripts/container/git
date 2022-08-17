@@ -19,7 +19,8 @@ fi
 export USE_TTY=n
 export SSH_HOST_CHOWN=y
 export USE_PROFILE=n
-export SSH_EXPORTS="GIT_PAGER=less"
+# export SSH_EXPORTS="GIT_PAGER=less"
+export SSH_EXPORTS="GIT_PAGER=pen-pager"
 case "$(pwd)" in
     /root/notes*) {
         /usr/bin/git "$@"
