@@ -14,5 +14,6 @@
 (defalias 'deselect 'deactivate-mark)
 (defalias 'sleep 'sleep-for)
 (defalias 'tryonce 'tryelse)
+(defalias 'goto-byte 'pen-goto-byte)
 
 (provide 'pen-aliases)
