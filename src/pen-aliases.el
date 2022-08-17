@@ -15,5 +15,6 @@
 (defalias 'sleep 'sleep-for)
 (defalias 'tryonce 'tryelse)
 (defalias 'goto-byte 'pen-goto-byte)
+(defalias 'pen-haskell-fill-hole 'pen-haskell-hoogle-type)
 
 (provide 'pen-aliases)
