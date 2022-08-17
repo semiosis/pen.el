@@ -579,4 +579,15 @@ revisions (interactive.e., use a \"...\" range)."
 ;; (define-key magit-section-mode-map (kbd "M-e") 'magit-section-forward-sibling)
 (define-key magit-section-mode-map (kbd "M-e") 'magit-section-forward)
 
+(defun git-this-file ()
+  (interactive)
+
+  (tryonce
+   (if (>= (prefix-numeric-value current-prefix-arg) 4)
+       (magit-blame-addition-toggle)
+     (magit-log-buffer-file))
+   (user-error "File not associated with a git repository.")))
+
+(define-key global-map (kbd "C-x l") 'git-this-file)
+
 (provide 'pen-magit)

@@ -167,5 +167,6 @@ prompt additionally for EXTRA-AG-ARGS."
             :dynamic-collection t
             :caller 'counsel-search))
 
+(define-key pen-map (kbd "M-q M-q") 'counsel-fzf)
 
 (provide 'pen-counsel)

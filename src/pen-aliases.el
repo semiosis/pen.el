@@ -13,5 +13,6 @@
 (defalias 'locate-binary 'executable-find)
 (defalias 'deselect 'deactivate-mark)
 (defalias 'sleep 'sleep-for)
+(defalias 'tryonce 'tryelse)
 
 (provide 'pen-aliases)

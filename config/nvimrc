@@ -1508,3 +1508,29 @@ fun! Byte(...)
     let indicator = get(a:, 1, ".")
     return line2byte(line(indicator))+col(indicator)-1
 endf
+
+" vimhelp a:000
+fun! MapM(func, ...)
+    let m = ''
+    for s in a:000
+        let m = m.'<Esc>'.s
+    endfor
+
+    if a:func =~ ")$"
+        exec 'nnoremap '.m.' :call '.a:func.'<CR>'
+        exec 'inoremap '.m.' <Esc>:call '.a:func.'<CR>'
+        exec 'xnoremap '.m.' "zy:call '.a:func.'<CR>'
+    else
+        exec 'nnoremap '.m.' :call '.a:func.'()<CR>'
+        exec 'inoremap '.m.' <Esc>:call '.a:func.'()<CR>'
+        exec 'xnoremap '.m.' "zy:call '.a:func.'()<CR>'
+    endif
+endf
+command! -nargs=+ MapM call MapM(<f-args>)
+
+fun! OpenInEmacsSameWindow()
+    exe "silent! !TTY=`tm-tty` e +".line('.').":".(col('.') - 1)." ".Q(expand('%:p'))
+    redraw!
+endf
+
+MapM OpenInEmacsSameWindow q v
