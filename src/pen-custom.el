@@ -203,6 +203,13 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-imonad-directory "/root/.pen/documents/haskell-test"
+  ;; "/root/repos/ilambda"
+  "Personal imonad repository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-channel-directory "/root/repos/channel"
   "Personal channel repository"
   :type 'string

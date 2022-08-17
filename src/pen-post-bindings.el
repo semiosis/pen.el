@@ -192,6 +192,7 @@
 (sslk "ldqR" 'pen-dired-rhizome)
 (sslk "ldqP" 'pen-dired-pensieve)
 (sslk "ldql" 'pen-dired-ilambda)
+(sslk "ldqa" 'pen-dired-imonad)
 (sslk "ldqV" 'pen-acolyte-dired-protoverses)
 (sslk "ldqv" 'pen-acolyte-dired-metaverses)
 (sslk "ldqC" 'pen-acolyte-dired-creation)

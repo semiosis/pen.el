@@ -261,23 +261,24 @@ Return the output buffer."
 (advice-add 'tablist-enlarge-column :around #'tablist-enlarge-column-around-advice)
 
 ;; TODO Fix this so that tabbing to the correct column works
-(defun tablist-column-offsets ()
-  "Return a list of column positions.
+(comment
+ (defun tablist-column-offsets ()
+   "Return a list of column positions.
 
 This is a list of offsets from the beginning of the line."
-  (let ((cc tabulated-list-padding)
-        columns)
-    (dotimes (i (length tabulated-list-format))
-      (let* ((c (aref tabulated-list-format i))
-             (len (nth 1 c))
-             (pad (or (plist-get (nthcdr 3 c) :pad-right)
-                      1)))
-        (push cc columns)
-        (when (numberp len)
-          (cl-incf cc len))
-        (when pad
-          (cl-incf cc pad))))
-    (nreverse columns)))
+   (let ((cc tabulated-list-padding)
+         columns)
+     (dotimes (i (length tabulated-list-format))
+       (let* ((c (aref tabulated-list-format i))
+              (len (nth 1 c))
+              (pad (or (plist-get (nthcdr 3 c) :pad-right)
+                       1)))
+         (push cc columns)
+         (when (numberp len)
+           (cl-incf cc len))
+         (when pad
+           (cl-incf cc pad))))
+     (nreverse columns))))
 
 (define-derived-mode tabulated-list-mode special-mode "Tabulated"
   "Generic major mode for browsing a list of items.
@@ -455,7 +456,7 @@ Returns nil, if point is before the first column."
 This is a list of offsets from the beginning of the line."
   (let ((cc tabulated-list-padding)
         columns)
-    (dotimes (interactive (length tabulated-list-format))
+    (dotimes (i (length tabulated-list-format))
       (let* ((c (aref tabulated-list-format i))
              (len (nth 1 c))
              (pad (or (plist-get (nthcdr 3 c) :pad-right)

@@ -14,6 +14,10 @@
   (interactive)
   (dired pen-ilambda-directory))
 
+(defun pen-dired-imonad ()
+  (interactive)
+  (dired pen-imonad-directory))
+
 (defun pen-dired-channel ()
   (interactive)
   (dired pen-channel-directory))
