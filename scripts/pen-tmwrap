@@ -6,5 +6,6 @@ slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -2
 if test "$TERM" = "dumb"; then
     "$@"
 else
-    TMUX= tmux new -s "tmwr-$slug" "$@"
+    unset TMUx
+    tmux attach -t "tmwr-$slug" || tmux new -s "tmwr-$slug" "$@"
 fi
