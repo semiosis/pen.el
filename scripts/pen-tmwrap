@@ -7,5 +7,7 @@ if test "$TERM" = "dumb"; then
     "$@"
 else
     unset TMUX
-    tmux attach -t "tmwr-$slug" || tmux new -s "tmwr-$slug" "$@"
+    h="$(sha "$(pwd)")"
+    n="tmwr-$slug-$h"
+    tmux attach -t "$n" || tmux new -s "$n" "$@"
 fi

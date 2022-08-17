@@ -13,8 +13,10 @@ stdin_exists() {
     } &>/dev/null
 }
 
+{
 if stdin_exists; then
     sha256sum | str field 1
 else
     echo -n "$@" | sha256sum | str field 1
 fi
+} | cut -c1-10
