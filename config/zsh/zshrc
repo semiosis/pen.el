@@ -570,8 +570,11 @@ fzf-files() {
         input="$(cat)"
         if [ -n "$input" ]; then
             printf -- "%s" "$input" | pen-xc -s -i
-            exec </dev/tty
-            rifle -- "$(printf -- "%s" "$input" | pen-umn)"
+            # exec </dev/tty
+            # This might be more stable:
+            # exec <&2
+            # Actually, it's inside Pen.el, so make a split pane
+            sps rifle -- "$(printf -- "%s" "$input" | pen-umn)"
         fi
     }
 }
