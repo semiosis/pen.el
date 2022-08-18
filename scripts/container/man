@@ -19,6 +19,21 @@ else
     export PAGER=sps-v
 fi
 
+if test "$#" -gt 0; then
+    last_arg="${@: -1}"
+
+    case "$last_arg" in
+        hdc) {
+            x -sh hdc -e '>' -s :help -c m -i
+        }
+        ;;
+
+        *)
+    esac
+
+    exit "$?"
+fi
+
 if test "$parent_bn" = emacs || test "$TERM" = dumb; then
     /usr/bin/man "$@" | pen-pa -E "$PAGER"
 elif man-page-exists-p "$@"; then
