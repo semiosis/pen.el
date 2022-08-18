@@ -1,0 +1,101 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename "$0")"
+
+: "${frangipanni:="n"}"
+
+case "$sn" in
+    ler) {
+        use_multiple_for_regex=y
+    }
+    ;;
+
+    *)
+esac
+
+minimise=n
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -m) {
+        minimise=y
+        shift
+    }
+    ;;
+
+    -p) {
+        frangipanni=y
+        shift
+    }
+    ;;
+
+    -np) {
+        frangipanni=n
+        shift
+    }
+    ;;
+
+    -M) {
+        minimise=n
+        shift
+    }
+    ;;
+
+    -r) {
+        use_multiple_for_regex=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$use_multiple_for_regex" = "y"; then
+    # sed 's/^.*/\\.&/' | 
+    ext_re="$(printf -- "%s\n" "$@" | pen-str join '\\|' | sed 's/^/\\(/;s/$/\\)/')"
+    shift "$#"
+
+    ext="$ext_re"
+
+    ext_re="\.$ext\$"
+else
+    last_arg="${@: -1}"
+    ext="$last_arg"
+    set -- "${@:1:$(($#-1))}" # shift last arg
+
+    ext_re="\.$ext\$"
+fi
+
+# echo "$ext"
+# exit 0
+
+l -np "$@" -r "$ext_re" | {
+        sed '/\.cache\//d'
+    } | {
+        if test "$PEDANTIC" = "y"; then
+            case "$ext" in
+                tmpl) {
+                    eipct -E "pen-xa cat | grep -q -P \"{.*}\""
+                }
+                ;;
+
+                *)
+            esac
+        else
+            cat
+        fi
+    } | {
+        if test "$minimise" = "y"; then
+            mnm
+        else
+            cat
+        fi
+    } | {
+        if test "$frangipanni" = "y"; then
+            frangipanni
+        else
+            cat
+        fi
+    } | pager -vs

@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -h|--help) {
+        runhelp=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+bin=/root/repos/go-ethereum/build/bin/geth
+
+if test "$runhelp" = "y"; then
+    sudo -u pen "$bin" --help | pavs
+    exit "$?"
+fi
+
+sudo -u pen "$bin"
