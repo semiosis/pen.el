@@ -23,7 +23,6 @@
 (defun plist2yaml (plist)
   (json2yaml (json-encode-plist plist)))
 
-
 (define-key yaml-mode-map (kbd "C-c e") 'yaml-get-value-from-this-file)
 
 (defun sh/yaml-get-value-from-this-file ()
@@ -52,6 +51,5 @@
                 (if (re-match-p "^\\[.*\\]$" s)
                     (json-mode))
                 (mark-whole-buffer)))))))
-
 
 (provide 'pen-yaml)
