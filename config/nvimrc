@@ -1536,8 +1536,6 @@ endf
 MapM OpenInEmacsSameWindow q v
 
 function! RTCmdSetup(cmd)
-    " exe("autocmd TextChanged * silent! call system(".Q(BSbacktick(a:cmd)).", GetBufferContents())")
-
     exe("autocmd TextChanged * silent! call system(".Q(a:cmd).", GetBufferContents())")
     exe("autocmd TextChangedI * silent! call system(".Q(a:cmd).", GetBufferContents())")
 endfunction
