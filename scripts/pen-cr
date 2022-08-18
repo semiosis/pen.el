@@ -2437,7 +2437,7 @@ case "$file_type" in
     ;;
 
     json) {
-        pen-tm -d nw -args myjiq "$rp"
+        pen-tm -d nw -args jiq "$rp"
         exit 0
     }
     ;;

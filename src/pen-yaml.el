@@ -36,6 +36,8 @@
          (pen-cmd "yaml-get-value"
                   (buffer-file-name)))))))
 
+;; ."last-prompt-data".PEN_RESULTS
+
 (defun yaml-get-value-from-this-file ()
   (interactive)
   (if (and (major-mode-p 'yaml-mode)
@@ -47,6 +49,8 @@
             (let ((s (pen-snc (pen-cmd "yq" "-r" (concat key " // empty")) (buffer-string))))
               (with-current-buffer
                   (esps (pen-lm (nbfs s)))
+                (if (re-match-p "^\\[.*\\]$" s)
+                    (json-mode))
                 (mark-whole-buffer)))))))
 
 
