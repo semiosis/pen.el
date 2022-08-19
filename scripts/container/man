@@ -25,13 +25,12 @@ if test "$#" -gt 0; then
     case "$last_arg" in
         hdc) {
             x -sh hdc -e '>' -s :help -c m -i
+            exit "$?"
         }
         ;;
 
         *)
     esac
-
-    exit "$?"
 fi
 
 if test "$parent_bn" = emacs || test "$TERM" = dumb; then
