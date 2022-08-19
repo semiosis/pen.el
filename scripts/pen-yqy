@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+noconvert=n
+for var in "$@"
+do
+    case "$var" in
+        -r) {
+            noconvert=y
+        }
+        ;;
+
+        *)
+    esac
+done
+
+yq "$@" | {
+    if test "$noconvert" = "y"; then
+        cat
+    else
+        # Not sure if yamlfmt does anything
+        json2yaml | sed '1{/^---$/d}' | yamlfmt 
+    fi
+}

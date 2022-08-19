@@ -307,7 +307,9 @@ fi
 
 if test "$NOAUTOCHDIR" = "y" || stdin_exists; then
     echo "$extra_commands" | tee -a /tmp/extra.txt &>/dev/null
-    extra_commands+="|set noautochdir"
+    # Put it at the start because there might be Commands at the beginning
+    # extra_commands+="|set noautochdir"
+    extra_commands="set noautochdir|$extra_commands"
 fi
 
 if test "$ANSI" = "y"; then

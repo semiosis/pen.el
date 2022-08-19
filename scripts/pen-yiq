@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+last_arg="${@: -1}"
+
+if test "$#" -gt 0 && ! stdin_exists && test -f "$last_arg"; then
+
+    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+    # exec < "$last_arg"
+    exec < <(-s cat "$last_arg")
+fi
+
+CMD="$(cmd "$@")"
+: ${CMD:="-r $(cmd ".")"}
+
+# * Annoyingly this seems to not deal well with free values
+# json2yaml
+# Converting 'mullikine' to yaml would result in 'mullikine', I think.
+
+# pen-str chomp | pen-rtcmd ++yq -E "yq $CMD | json2yaml | vs"
+str chomp | pen-rtcmd ++yqy -E "yqy $CMD | vs"
