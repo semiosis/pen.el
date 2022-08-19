@@ -1336,6 +1336,10 @@
              var-keyvals
              defs-varvals))
 
+          (defs-and-vals-alist
+            ;; Filter out anything with a nil key
+            (-filter (lambda (e) (car e)) defs-and-vals-alist))
+
           ;; This must come after the initial template expand.
           ;; Because dni-let will try to expand <...> and evaluate remaining templates.
           (final-prompt
