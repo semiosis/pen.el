@@ -1545,3 +1545,22 @@ fun! StartAppend()
     call cursor( line('.'), col('.') + 1)
 endf
 command! StartAppend call StartAppend()
+
+" output of ex command into new buffer
+function! Message(cmd)
+  let cmd = a:cmd
+  if len(cmd) == 0
+      let cmd = "mess"
+  endif
+  redir => message
+  silent execute cmd
+  redir END
+  "vsplit
+  enew
+  silent put=message
+  set nomodified
+endfunction
+command! -nargs=* -complete=command Message call Message(<q-args>)
+command! -nargs=* -complete=command M call Message(<q-args>)
+command! Messages call Message("mess")
+
