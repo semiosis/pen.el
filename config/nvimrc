@@ -1564,3 +1564,28 @@ command! -nargs=* -complete=command Message call Message(<q-args>)
 command! -nargs=* -complete=command M call Message(<q-args>)
 command! Messages call Message("mess")
 
+"Sadly this interferes with vim-sneak
+"Hardcode into vim?
+"swap colon and semicolon
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+
+" This fixes select-mode when needing to enter dvorak letters (e.g. in
+" snipmate)
+sunmap ;
+
+"swap j with gj and k with gk
+nnoremap j gj
+nnoremap k gk
+xnoremap j gj
+xnoremap k gk
+nnoremap gj j
+nnoremap gk k
+xnoremap gj j
+xnoremap gk k
+
+"swap quote and backtick
+nnoremap ' `
+nnoremap ` '
