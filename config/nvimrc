@@ -159,8 +159,8 @@ function! ToggleKeymap()
     endif
 endfunction
 
-" set keymap=dvorak
-call ToggleKeymap
+set keymap=
+silent! call ToggleKeymap()
 
 " Hacky solution to dvorak issue inside select mode
 smap : <C-h>S
