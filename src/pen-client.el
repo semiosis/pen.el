@@ -57,34 +57,35 @@
 (defun pen-sn-basic (cmd &optional stdin dir)
   (interactive)
 
-  (let ((output))
-    (if (not cmd)
-        (setq cmd "false"))
+  (shut-up
+    (let ((output))
+      (if (not cmd)
+          (setq cmd "false"))
 
-    (if (not dir)
-        (setq dir default-directory))
+      (if (not dir)
+          (setq dir default-directory))
 
-    (let ((default-directory dir))
-      (if (or
-           (and (variable-p 'sh-update)
-                (eval 'sh-update))
-           (>= (prefix-numeric-value current-prefix-arg) 16))
-          (setq cmd (concat "export UPDATE=y; " cmd)))
+      (let ((default-directory dir))
+        (if (or
+             (and (variable-p 'sh-update)
+                  (eval 'sh-update))
+             (>= (prefix-numeric-value current-prefix-arg) 16))
+            (setq cmd (concat "export UPDATE=y; " cmd)))
 
-      (setq tf (make-temp-file "elisp_bash"))
-      (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
+        (setq tf (make-temp-file "elisp_bash"))
+        (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
 
-      (setq final_cmd (concat "( cd " (pen-q dir) "; " cmd " ) > " tf))
+        (setq final_cmd (concat "( cd " (pen-q dir) "; " cmd " ) > " tf))
 
-      (shut-up-c
-       (with-temp-buffer
-         (insert (or stdin ""))
-         (shell-command-on-region (point-min) (point-max) final_cmd)))
-      (setq output (slurp-file tf))
-      (ignore-errors
-        (progn (f-delete tf)
-               (f-delete tf_exit_code)))
-      output)))
+        (shut-up-c
+         (with-temp-buffer
+           (insert (or stdin ""))
+           (shell-command-on-region (point-min) (point-max) final_cmd)))
+        (setq output (slurp-file tf))
+        (ignore-errors
+          (progn (f-delete tf)
+                 (f-delete tf_exit_code)))
+        output))))
 
 (defun vector2list (v)
   (append v nil))

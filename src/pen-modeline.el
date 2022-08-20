@@ -10,12 +10,35 @@
           (t
            "emacs"))))
 
-(setq-default mode-line-format
-      `(" "
-        ,(pen-modeline-name)
-        ("  "
-         mode-line-buffer-identification "   "
-         "  " mode-line-modes)))
+(defun ascii-letter-from-int (char)
+  "convert number to letter of alphabet; 1 = a, 2 = b, etc."
+  (let ((i (- char 1)))
+    (if (and (>= i 0) (< i 26))
+        (string (+ ?a i))
+      ""
+      ;; (error "ascii-letter-from-int: invalid character")
+      )))
+
+(defun pen-daemons-modeline ()
+  (mapconcat 'identity
+             (mapcar
+              'ascii-letter-from-int
+              (mapcar
+               'string-to-int
+               (split-string 
+                (e/chomp-all
+                 (pen-sn-basic "pen-ls-daemons"))
+                "\n")))
+             ""))
+
+(setq mode-line-format
+              `(" "
+                ,(pen-modeline-name)
+                ("  "
+                 mode-line-buffer-identification "   "
+                 "  " mode-line-modes)
+                ;; ,(pen-daemons-modeline)
+                ))
 
 (defun pen-modeline-progressbar-demo (&optional duration)
   "Displays a progressbar in the mode-line."

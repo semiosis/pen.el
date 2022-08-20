@@ -249,8 +249,8 @@ Be mindful of quoting arguments correctly."
            ((eq 8 m) " ◎")
            ((eq 9 m) " ○")
            (t " ⊚"))))
-    (setq pen-current-lighter newlighter)
-    newlighter))
+    (setq pen-current-lighter (concat newlighter " <" (pen-daemons-modeline) ">"))
+    pen-current-lighter))
 
 (define-minor-mode pen
   "Mode for working with language models in your buffers."

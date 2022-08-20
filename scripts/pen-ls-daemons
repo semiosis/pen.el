@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+cd ~/.pen/pool/available
+ls | grep -o '[0-9]*'

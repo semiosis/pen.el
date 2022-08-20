@@ -12,4 +12,5 @@ export TTY
 # - but I still have to rely on linking the pane. I can't link a pane with tmux, sadly.
 # - I have to link the entire window
 
-TMUX= tmux new-window "nvc -22 tmux-attach-window $window_id"
+# TMUX= tmux new-window "nvc -22 tmux-attach-window $window_id"
+TMUX= tmux new-window "nvt -2 tmux-attach-window $window_id"
