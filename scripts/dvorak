@@ -1,0 +1,117 @@
+#!/bin/bash
+
+# Look at implementing this in c:
+# What's the fastest way to do this using any language?
+# $HOME/notes2018/ws/dvorak/scratch/dvorak.c
+
+option="$2"
+
+if [ "$option" = "-x" ]; then
+    # dvorak to qwerty
+    tr "_}w[vzSsW]VZ@AXJE>UIDCHTNMBRL\"POYGK<QF:/={xje.uidchtnmbrl'poygk,qf;?+-" '"+-/:-[]_b-{}'\'
+else
+    # qwerty to dvorak
+    tr \''"+-/:-[]_b-{}' "-_}w[vzSsW]VZ@AXJE>UIDCHTNMBRL\"POYGK<QF:/={xje.uidchtnmbrl'poygk,qf;?+"
+fi
+
+exit 0
+
+read -r -d '' translation_table <<HEREDOC
+=	]
+|	|
+_	{
+-	[
+'	-
+[	/
+]	=
+{	?
+}	+
+\"	_
+\\	\\
++	}
+a	a
+A	A
+b	x
+B	X
+c	j
+C	J
+d	e
+D	E
+e	.
+E	>
+f	u
+F	U
+g	i
+G	I
+h	d
+H	D
+i	c
+I	C
+j	h
+J	H
+k	t
+K	T
+l	n
+L	N
+m	m
+M	M
+n	b
+N	B
+o	r
+O	R
+p	l
+P	L
+q	'
+Q	"
+r	p
+R	P
+;	s
+:	S
+s	o
+S	O
+t	y
+T	Y
+u	g
+U	G
+.	v
+>	V
+v	k
+V	K
+,	w
+w	,
+<	W
+W	<
+x	q
+X	Q
+y	f
+Y	F
+/	z
+z	;
+?	Z
+Z	:
+HEREDOC
+
+option="$2"
+
+# Maybe use this
+# $HOME$MYGIT/acmeism/RosettaCodeData/Task/Caesar-cipher/AWK/caesar-cipher.awk
+# Or this
+# $HOME$MYGIT/acmeism/RosettaCodeData/Task/Caesar-cipher/UNIX-Shell/caesar-cipher.sh
+
+# "https://codegolf.stackexchange.com/questions/22704/dvorak-keyboard-layout?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa"
+
+if [ "$option" = "-x" ]; then
+    awk 1 | while read -n1 c; do
+       printf -- "%s" "$c"
+       # p "$c"
+       # lit
+    done
+else
+    awk 1 | while read -n1 c; do
+        printf -- "%s" "$c"
+        # p "$c"
+        # lit
+    done
+fi
+
+# This program must be able to translate between querty and dvorak

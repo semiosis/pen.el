@@ -128,6 +128,94 @@ set noswapfile " Swap is disabled. Using git anyway.
 " set directory=/dev/shm/var/tmp/shane/vim
 " set undodir=/dev/shm/var/tmp/shane/vim
 
+set foldexpr=FoldBrace()
+function! FoldBrace()
+  if getline(v:lnum+1)[0] == '{'
+    return '>1'
+  endif
+  if getline(v:lnum)[0] == '}'
+    return '<1'
+  endif
+  return foldlevel(v:lnum-1)
+endfunction
+
+function! ToggleKeymap()
+    if &keymap == ""
+        set keymap=dvorak
+        set imsearch=0
+        echom "dvorak"
+    elseif &keymap == "dvorak"
+        set keymap=colemak
+        set imsearch=0
+        echom "colemak"
+    elseif &keymap == "colemak"
+        set keymap=dvorak-german
+        set imsearch=0
+        echom "dvorak-german"
+    else
+        set keymap=
+        set iminsert=0
+        echom "qwerty"
+    endif
+endfunction
+
+" set keymap=dvorak
+call ToggleKeymap
+
+" Hacky solution to dvorak issue inside select mode
+smap : <C-h>S
+
+fun! GetCharDvorak()
+    return system('dvorak', nr2char(getchar()))
+endf
+
+" SUPER IMPORTANT
+function FindChar(mode, count)
+    if a:mode ==# 'v'
+        normal! gv
+    endif
+
+    let c = escape( GetCharDvorak(), "^.*$~")
+
+    let @/=c
+
+    let i=count
+    if ! i > 0
+        let i=1
+    endif
+    for i in range(1, i)
+        let match = search(c)
+    endfor
+endfunction
+
+nnoremap f :call FindChar('n', v:count1)<CR>
+xnoremap f :<C-u>call FindChar('v', v:count1)<CR>
+
+" SUPER IMPORTANT
+function FindCharBack(mode, count)
+    if a:mode ==# 'v'
+        normal! gv
+    endif
+
+    let c = escape( GetCharDvorak(), "^.*$~")
+
+    let @/=c
+
+    let i=count
+    if ! i > 0
+        let i=1
+    endif
+    for i in range(1, i)
+        let match = search(c, 'b')
+    endfor
+endfunction
+
+nnoremap F :call FindCharBack('n', v:count1)<CR>
+xnoremap F :<C-u>call FindCharBack('v', v:count1)<CR>
+
+command! K call ToggleKeymap() " This is the one I should use
+command! TK call ToggleKeymap()
+
 " extra digraphs
 " sp +/"extra digraphs" "$EMACSD/config/my-evil.el"
 digr ZZ 8484
