@@ -770,6 +770,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 cabal v2-install --install-method=copy ghcid
 cabal v2-install --install-method=copy doctest
 cabal install hoogle
+cabal install stack2cabal
 hoogle generate
 
 # For the clipboard
