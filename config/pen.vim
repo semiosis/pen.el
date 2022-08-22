@@ -63,7 +63,8 @@ function! InsertPrompt(fun, in, ...)
 
     " In order for this to work, I need to put each generation into a one-liner
     " One-linerise the json
-    let s = Chomp(system("pena -fz --pool -u " . cmd, a:in))
+    " let s = Chomp(system("pena -fz --pool -u " . cmd, a:in))
+    let s = Chomp(system("pena -fz " . cmd, a:in))
 
     " call Insert(s)
     " return ""

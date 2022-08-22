@@ -826,3 +826,4 @@ ros install fukamachi/cl-project
 mkdir -p /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/paste-replace.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/utils.vim /root/.vim
+cp -a /root/repos/pen-emacsd/pen.el/config/pen.vim /root/.vim

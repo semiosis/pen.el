@@ -1578,11 +1578,6 @@ inoremap <M-+> <Esc>+
 inoremap <M-]> <Esc>]
 inoremap <M-}> <Esc>}
 
-let pen_path = expand("~/.pen/pen.vim")
-if filereadable(pen_path)
-  exe "source " . pen_path
-endif
-
 noremap <silent> ZB :call system("tm -f -d nw -c \"".expand('%:p:h')."\" zsh &")<CR>
 noremap <silent> ZC :call system("tm -f -d sph -c \"".expand('%:p:h')."\" zsh &")<CR>
 noremap <silent> ZV :call system("tm -f -d spv -c \"".expand('%:p:h')."\" zsh &")<CR>
@@ -1680,6 +1675,12 @@ nnoremap ` '
 
 source ~/.vim/paste-replace.vim
 source ~/.vim/utils.vim
+source ~/.vim/pen.vim
+
+let pen_path = expand("~/.pen/pen.vim")
+if filereadable(pen_path)
+  exe "source " . pen_path
+endif
 
 cmap <Esc>f <C-e><C-u>mess<CR>
 cmap <Esc>d <Esc>dd
