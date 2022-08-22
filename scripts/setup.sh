@@ -817,6 +817,9 @@ test -d "$REPOS/roswell" || (
     ros setup
 )
 
+# https://stackoverflow.com/q/70483583
+ros install fukamachi/cl-project
+
 # mkdir -p /root/.emacs.d
 # cp -a "$REPOS/roswell/lisp/helper.el" /root/.emacs.d/roswell-helper.el
 
