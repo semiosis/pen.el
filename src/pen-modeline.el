@@ -31,7 +31,7 @@
                 "\n")))
              ""))
 
-(setq mode-line-format
+(setq-default mode-line-format
               `(" "
                 ,(pen-modeline-name)
                 ("  "
