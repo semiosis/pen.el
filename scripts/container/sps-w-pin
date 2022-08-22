@@ -3,4 +3,11 @@ export TTY
 
 # Meant to be used as an editor
 
-pen-sps -w pin "$@"
+is_tty() { [ -t 1 ]; }
+
+if is_tty; then
+    pen-e "$@"
+else
+    # pen-sps -w pin "$@"
+    pen-sps -w pen-e "$@"
+fi

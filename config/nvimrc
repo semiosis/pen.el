@@ -1679,6 +1679,7 @@ nnoremap ' `
 nnoremap ` '
 
 source ~/.vim/paste-replace.vim
+source ~/.vim/utils.vim
 
 cmap <Esc>f <C-e><C-u>mess<CR>
 cmap <Esc>d <Esc>dd
