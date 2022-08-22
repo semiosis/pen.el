@@ -1677,3 +1677,5 @@ xnoremap gk k
 "swap quote and backtick
 nnoremap ' `
 nnoremap ` '
+
+source ~/.vim/helper.el

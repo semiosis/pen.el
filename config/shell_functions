@@ -99,7 +99,7 @@ snewenv3.5() {
 cd () {
     ret=0
 
-    if test "$#" -eq 1 && test -h "$1"
+    if test "$#" -eq 1 && { test -h "$1" || test -f "$1" }
     then
         rp="$(realpath "$1")"
         if test -d "$rp"

@@ -806,7 +806,7 @@ agi ripgrep
 
 # common lisp
 agi git build-essential automake libcurl4-openssl-dev
-test -d $REPOS/roswell || (
+test -d "$REPOS/roswell" || (
     cd "$REPOS"
     git clone -b release https://github.com/roswell/roswell
     cd roswell
@@ -816,3 +816,9 @@ test -d $REPOS/roswell || (
     sudo make install
     ros setup
 )
+
+# mkdir -p /root/.emacs.d
+# cp -a "$REPOS/roswell/lisp/helper.el" /root/.emacs.d/roswell-helper.el
+
+mkdir -p /root/.vim
+cp -a /root/repos/pen-emacsd/pen.el/config/paste-replace.vim /root/.vim
