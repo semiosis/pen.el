@@ -115,6 +115,7 @@
 (require 'pen-menu-bar)
 (require 'pen-daemons)
 (require 'pen-source)
+(require 'pen-common-lisp)
 ;; (require 'pen-undo-tree)
 (require 'pen-man)
 (require 'pen-human)
