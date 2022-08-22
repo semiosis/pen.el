@@ -19,11 +19,13 @@ function! VisualPrompt(fun, ...)
     let args = a:000
     let s = ""
     for arg in args
-        let s = s . ' "' . arg . '"'
+        let s = s . ' ' . Q(arg) . ''
     endfor
 
     let cmd = a:fun . s
-    let s = system("pena -fz --pool -u " . cmd, @p)
+    " let s = system("pena -fz --pool -u " . cmd, @p)
+    " let s = system(Tv("pena -fz " . cmd), @p)
+    let s = system("pena -fz " . cmd, @p)
     let @p = s
 
     " paste from p register
@@ -56,7 +58,7 @@ function! InsertPrompt(fun, in, ...)
     let s = ""
     " skip the first of the variadic args because it's the input
     for arg in args[1:]
-        let s = s . ' "' . arg . '"'
+        let s = s . ' ' . Q(arg) . ''
     endfor
 
     let cmd = a:fun . s
@@ -66,10 +68,17 @@ function! InsertPrompt(fun, in, ...)
     " let s = Chomp(system("pena -fz --pool -u " . cmd, a:in))
     let s = Chomp(system("pena -fz " . cmd, a:in))
 
+    " Write s to file /tmp/test.txt
+
     " call Insert(s)
     " return ""
 
-    return s
+    " return s."\n"
+    " return s
+
+    " This adds a newline and backspaces it so
+    " The screen is properly flushed.
+    exec "return s.\"\\n\<C-h>\""
 endfunction
 
 function! Guru()
@@ -84,5 +93,5 @@ xnoremap Zv "py:silent! call FzVisualPrompt(@p)<CR>
 xnoremap Zg "py:silent! call VisualGuru(@p)<CR>
 nnoremap Zg :silent! call Guru()<CR>
 
-xnoremap Zt "py:silent! call VisualPrompt("pf-transform-code/3", @p, "vim", input("transformation: "))<CR>
+xnoremap Zt "py:silent! call VisualPrompt("pf-transform-code/3", expand("%:e"), input("transformation: "))<CR>
 inoremap <expr> <C-y> InsertPrompt("pf-generic-completion-50-tokens/1", GetLast20LinesBeforeCursor())

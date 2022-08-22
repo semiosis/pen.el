@@ -1061,6 +1061,7 @@ has_placeholder() {
 
 case "$sn" in
     penf) {
+        # cmd "$@" | tv &>/dev/null
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             "") { shift; }; ;;
             -ask) {
