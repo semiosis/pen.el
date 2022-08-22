@@ -11,6 +11,8 @@ export TTY
 
 # e  es-shell (extensible shell) (extsh)
 
+# O  xonsh
+# s  scala
 read -r -d '' options <<HEREDOC
 .  EDIT
 \`  rlr ma calc
@@ -70,10 +72,11 @@ h  nvt racket -iI hackett
 c  pick clisp slime sly (common lisp) quicklisp
 C  clojure (clj-rebel) # lein-rebel
 nj node
-O  xonsh
+O  ros run (common lisp)
 B  inf-ruby
 t  ts-node
 z  fz-repl
+=  semantic-bible-search -oc
 /? cheat
 HEREDOC
 
@@ -83,6 +86,7 @@ echo "$options" | pen-hls dgrey
 read -n1 d; test "$d" = "" && read -n1 d
 # clear
 
+# O) cmd="xonsh" ;;
 case "$d" in
     .) cmd="v $0" ;;
     \`) cmd="rlr ma calc" ;;
@@ -103,9 +107,9 @@ case "$d" in
     S) cmd="$(cmd pk "nvt /home/shane/local/bin/scheme" "escheme")" ;;
     M) cmd="nvt /usr/bin/scheme" ;;
     Z) cmd="CWD=$NOTES zsh" ;;
+    =) cmd="semantic-bible-search -oc" ;;
     3) cmd="CWD=$NOTES psysh" ;;
     r) cmd="nvt racket -iI racket" ;;
-    # r) cmd="cterm racket -iI racket" ;;
     Y) cmd="racket-repl" ;;
     # R) cmd="rusti" ;;
     g) cmd="nvt erl" ;;
@@ -150,7 +154,7 @@ case "$d" in
     n|j) cmd="node" ;;
     J) cmd="fz-node-package" ;;
     \^) cmd="julia" ;;
-    O) cmd="xonsh" ;;
+    O) cmd="ros run" ;;
     B) cmd="e -ci inf-ruby" ;;
     t) cmd="ts-node" ;;
     z) cmd="fz-repl" ;;
