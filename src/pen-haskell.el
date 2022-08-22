@@ -271,7 +271,7 @@
 (define-key haskell-mode-map (kbd "C-c ,") 'haskell-add-import)
 (define-key haskell-interactive-mode-map (kbd "C-a") 'haskell-repl-go-to-start)
 (define-key haskell-interactive-mode-map (kbd "C-c C-a") 'haskell-repl-go-to-0)
-(define-key global-map (kbd "H-U") 'pen-interpreter-import)
+;; (define-key global-map (kbd "H-U") 'pen-interpreter-import)
 
 (comment
  (define-key haskell-mode-map (kbd "C-M-@ h e") #'hasky-stack-execute)

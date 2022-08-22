@@ -82,4 +82,17 @@
          (funstr (str (key-binding (kbd sequence)))))
     (xc (concat "(define-key " mapstr " (kbd " (pen-q sequence) ") '" funstr ")"))))
 
+
+(defun ead-show-super-key ()
+  (interactive)
+  (wgrep "\"s-" "/root/.emacs.d/host/pen.el/"))
+(define-key global-map (kbd "C-s-h") 'ead-show-super-key)
+
+(defun ead-show-hyper-key ()
+  (interactive)
+  (wgrep "\"H-" "/root/.emacs.d/host/pen.el/"))
+(define-key global-map (kbd "C-H-h") 'ead-show-hyper-key)
+
+(define-key global-map (kbd "<help> g") #'widget-browse)
+
 (provide 'pen-help)

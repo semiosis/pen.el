@@ -149,11 +149,15 @@ if test -n "$context"; then
 
     # Rather than specifying directly to the prompt function,
     # this value is taken up and remembered for future prompting within the apostrophe
-    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru $(cmd-nice-posix "$context") $(cmd-nice-posix "$subject")))(delete-other-windows)))"
+
+    # Perhaps I should actually not use the pool
+    # pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru $(cmd-nice-posix "$context") $(cmd-nice-posix "$subject")))(delete-other-windows)))"
+
+    pen -nn -frametype "$FRAMETYPE" -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru $(cmd-nice-posix "$context") $(cmd-nice-posix "$subject")))(delete-other-windows)))"
 else
     if test -n "$subject"; then
-        pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru nil $(cmd-nice-posix "$subject")))(delete-other-windows)))"
+        pen -nn -frametype "$FRAMETYPE" -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (guru nil $(cmd-nice-posix "$subject")))(delete-other-windows)))"
     else
-        pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (call-interactively 'guru))(delete-other-windows)))"
+        pen -nn -frametype "$FRAMETYPE" -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (call-interactively 'guru))(delete-other-windows)))"
     fi
 fi

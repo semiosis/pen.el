@@ -224,7 +224,7 @@
            language
            (if text
                (pen-detect-language-lm-ask text)
-             (pen-read-string "Topic:")
+             (pen-read-string "Guru Topic:")
              ;; (pen-batch (pen-detect-language-ask))
              )))
          (sme-name (concat lang " guru")))
@@ -233,5 +233,7 @@
          (str (pen-screen-verbatim-or-selection)))
      sme-name
      (concat sme-name " is an expert in " lang "."))))
+
+(define-key global-map (kbd "H-U") 'guru)
 
 (provide 'pen-apostrophe)

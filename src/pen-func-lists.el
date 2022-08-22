@@ -158,6 +158,7 @@
                              pen-haskell-get-import
                              pen-haskell-hoogle-type
                              pen-haskell-fill-hole
+                             pen-interpreter-import
                              haskell-show-hdc-readme
                              dante-repl
                              dante-ghcid
