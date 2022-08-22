@@ -803,3 +803,16 @@ dpkg -i taskell-1.11.4_x86-64-linux.deb
 )
 
 agi ripgrep
+
+# common lisp
+agi git build-essential automake libcurl4-openssl-dev
+test -d $REPOS/roswell || (
+    cd "$REPOS"
+    git clone -b release https://github.com/roswell/roswell
+    cd roswell
+    sh bootstrap
+    ./configure
+    make
+    sudo make install
+    ros setup
+)
