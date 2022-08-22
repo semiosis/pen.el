@@ -87,6 +87,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nv) {
+        use_nvc=y
+        shift
+    }
+    ;;
+
     -nm) {
         MULTI=n
         shift
@@ -294,6 +300,10 @@ CMD="$(cmd-nice-posix "$@")"
 
 # The wrapper
 cmd="fzf --algo=v2 $opts $CMD"
+
+if test "$use_nvc" = "y"; then
+    cmd="nvc $cmd"
+fi
 
 my_out="$(cat "$tf_input" | filter_in | eval "$cmd" | { if test $ANSI = y; then pen-strip-ansi; else cat; fi; })"
 ret="$?"

@@ -45,24 +45,60 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-CMD="$(cmd-nice-posix "$@")"
+if test "$NO_NVC" = "y"; then
+    "$@"
+    exit "$?"
+fi
+
+CMD="$(cmd "$@")"
 
 if test $# -eq 0; then
     CMD="\"zsh\""
 fi
 
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
 
 if test "$EVAL" = "y"; then
     CMD="eval $CMD"
 fi
 
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+    CMD="cat $(cmd "$input_fp") | $CMD"
+    exec <&2
+fi
+
+is_stdout_pipe() {
+    # If stdout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+is_stdout_pipe
+ispipe="$?"
+
+if test "$ispipe" -eq 0; then
+    output_fp="$(0</dev/null tf txt)"
+    CMD="$CMD > $(cmd "$output_fp")"
+    
+    exec 3>&1
+    exec 1>&2
+fi
+
 if pl "$INSIDE_EMACS" | grep -q ',comint'; then
-    "$@"
+    eval "$CMD"
     exit "$?"
 fi
 
 if test "$INSIDE_NEOVIM" = y; then
-    "$@"
+    eval "$CMD"
     exit "$?"
 fi
 
@@ -70,12 +106,15 @@ export INSIDE_NEOVIM=y
 export NO_DEFAULT_BG=y # This is so any script that uses colorize-build looks better inside neovim
 
 # I have a wrapper script now, so this will always happen
-
-if test "$TERM" = "dumb"; then
-    eval "$CMD"
-elif which -a nvim &>/dev/null; then
+if which -a nvim &>/dev/null; then
     cmd="nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
     eval "$cmd"
 else
     eval "$CMD"
+fi
+
+if test "$ispipe" -eq 0; then
+    exec 1>&3
+    cat "$output_fp"
+    # exit "$?"
 fi
