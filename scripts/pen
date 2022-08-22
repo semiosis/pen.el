@@ -580,7 +580,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -fz) {
         # edit match with pen-eipe
         # --print-query
-        fuzzy="pen-tm mfz -pq -nv"
+        # fuzzy="pen-tm mfz -pq -nv"
+        # -pq will break pen.vim
+        # echo "Once upon " | mfz -pq | v
+        fuzzy="pen-tm mfz -nv"
         one_linerise_candidates=y
         shift
     }
