@@ -1682,18 +1682,20 @@ if filereadable(pen_path)
   exe "source " . pen_path
 endif
 
+call NumberSyntax() | call GeneralSyntax()
+
 cmap <Esc>f <C-e><C-u>mess<CR>
 cmap <Esc>d <Esc>dd
 imap <Esc>[2~ <Esc>ZX
 nmap <Esc>[2~ ZX
 cmap <Esc>t normal ge<CR>
-cmap <Esc>e silent! e!<CR>
+cmap <Esc>e silent! e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
 cmap <Esc>w silent! w!<CR>
 cmap <Esc>p normal <leader>tb<CR>
 cmap <Esc>q silent! q!<CR>
 cmap <Esc>s silent! wqa!<CR>
 cmap <Esc>x silent! bd!<CR>
-cmap <Esc>r silent! wa! \| e!<CR>
+cmap <Esc>r silent! wa! \| e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
 "cmap <Esc>g call MinimiseAndWrap()<CR>
 cmap <Esc>g .!mnm<CR>
 cmap <Esc>G .!acronymise \| mnm<CR>
