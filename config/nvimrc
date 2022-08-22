@@ -1678,4 +1678,4 @@ xnoremap gk k
 nnoremap ' `
 nnoremap ` '
 
-source ~/.vim/helper.el
+source ~/.vim/paste-replace.vim
