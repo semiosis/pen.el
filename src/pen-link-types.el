@@ -205,6 +205,7 @@ With prefix argument, also display headlines without a TODO keyword."
 
 (org-add-link-type "tcq" 'tcq)
 
-(org-add-link-type "y" 'goto-glossary-definition-noterm)
+(org-add-link-type "y" 'pen-goto-glossary-definition-noterm)
+(org-add-link-type "Y" 'pen-go-to-glossary-file-for-buffer)
 
 (provide 'pen-link-types)

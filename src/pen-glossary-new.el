@@ -929,18 +929,18 @@ Use my position list code. Make it use rosie lang and external software."
 
   (pen-goto-glossary-definition term))
 
-(defun pen-go-to-glossary-file-for-buffer (&optional take-first)
+(defun pen-go-to-glossary-file-for-buffer (&optional topic take-first)
   (interactive)
   (pen-mu (find-file (or (and (not (>= (prefix-numeric-value current-prefix-arg) 4))
                    (local-variable-p 'pen-glossary-files)
                    (if take-first
                        (car pen-glossary-files)
                      (pen-umn (fz (pen-mnm (pen-list2str pen-glossary-files))
-                              nil
+                              topic
                               nil
                               "pen-go-to-glossary-file-for-buffer: "))))
               (pen-umn (fz (pen-mnm (pen-list2str (pen-list-glossary-files)))
-                       nil
+                       topic
                        nil
                        "pen-go-to-glossary-file-for-buffer: "))))))
 
