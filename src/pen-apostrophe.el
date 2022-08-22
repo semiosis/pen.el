@@ -230,7 +230,7 @@
          (sme-name (concat lang " guru")))
     (apostrophe-chat-about-selection
      (or text
-         (str (pen-screen-verbatim-or-selection)))
+         (str (pen-screen-verbatim-or-selection t)))
      sme-name
      (concat sme-name " is an expert in " lang "."))))
 

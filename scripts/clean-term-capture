@@ -26,7 +26,8 @@ sed -e 's/\( ·\)\+ *$//g' ` # jupyter tui ` \
     -e 's/\( ·\)\+ *$/ /g' ` # jupyter tui ` \
     -e 's/\s\+$//g' ` # remove trailing whitespace ` \
     -e '/^\~$/d' ` # vim ` |
-    sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba'
+sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba' |
+sed "s/^\\s\\+$//" | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
 
 
 # -e 's/^  \(· \)\+//g' ` # jupyter tui ` \

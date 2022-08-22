@@ -1136,11 +1136,15 @@ region-active-p does not work for evil selection."
 (defun pen-screen-or-selection-ask ()
   (pen-ask (pen-screen-words-or-selection)))
 
-(defun pen-screen-verbatim-or-selection ()
-  (let ((sel (pen-selection)))
-    (if (sor sel)
-        sel
-      (pen-screen-verbatim-text))))
+(defun pen-screen-verbatim-or-selection (&optional clean)
+  (let* ((sel (pen-selection))
+         (ret
+          (if (sor sel)
+              sel
+            (pen-screen-verbatim-text))))
+    (if clean
+        (pen-snc "clean-term-capture" ret)
+      ret)))
 
 (defun pen-screen-verbatim-or-selection-ask ()
   (pen-ask (pen-screen-verbatim-or-selection)))
