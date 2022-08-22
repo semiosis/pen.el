@@ -2337,6 +2337,7 @@ case "$f" in
 
             -c|-clean) {
 
+                CLEAN=y
                 ANSI=n
 
                 shift
