@@ -23,6 +23,8 @@
 (defun inside-docker-p ()
   (pen-snq "inside-docker-p"))
 
+(setq disabled-command-function nil)
+
 ;; builtin
 (require 'cl-macs)
 (require 'pp)
