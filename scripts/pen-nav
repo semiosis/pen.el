@@ -1,0 +1,60 @@
+#!/bin/bash
+export TTY
+
+# All things navigation. Changing directory in zsh to and from dump for
+# example
+
+# What about ux?
+# What about new?
+# Why navigation?
+
+: ${CWD:="$(pwd)"}; cd "$CWD"
+
+# This determines the actual shell that runs this script. But what about
+# the shell this script is run from? Need to expont.
+# readlink /proc/$$/exe
+
+opt="$1"
+shift
+case "$opt" in
+    menu) {
+        # pen-tm n "$opt :: NOT FULLY IMPLEMENTED"
+        if p "$CWD" | grep -q -P "^$DUMP"; then
+            ndir="$(p "$CWD" | sed "s=^$DUMP==")"
+            mkdir -p "$ndir"
+            cd "$ndir"
+            CWD="$ndir" $SHELL
+        else
+            ndir="$(p "$CWD" | sed "s=^=$DUMP=")"
+            mkdir -p "$ndir"
+            cd "$ndir"
+            CWD="$ndir" $SHELL
+        fi
+    }
+    ;;
+
+    ade) {
+        ndir="$(p "$CWD" | pen-mnm | pen-umn | sed "s=^$MYGIT=/media/mygit=")"
+        x \
+            -sh \
+            fmg-ade-enter \
+            -e "\$" \
+            -s ". /opt/ApexAuto/setup.sh" \
+            -c m \
+            -s ". /opt/ApexOS/local_setup.sh" \
+            -c m \
+            -s ". /opt/ApexTools/local_setup.sh" \
+            -c m \
+            -s "cd \"$ndir\"" \
+            -c m \
+            -i
+    }
+    ;;
+
+    template) {
+        :
+    }
+    ;;
+
+    *)
+esac

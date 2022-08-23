@@ -4,6 +4,7 @@ export TTY
 
 grep() {
     /bin/grep --byte-offset --with-filename -oP "^[a-zA-Z0-9]+[/a-zA-Z0-9 _-]+$" "$@"
+    /bin/grep --byte-offset --with-filename -oP "^[^a-zA-Z0-9 ]+$" "$@"
 }
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in

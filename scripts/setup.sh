@@ -828,3 +828,7 @@ mkdir -p /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/paste-replace.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/utils.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/pen.vim /root/.vim
+
+# Ansible
+agi libonig-dev
+pip3 install 'ansible-navigator[ansible-core]'
