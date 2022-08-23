@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+fp="$1"
+
+if test -f "$fp"; then
+    rp="$(realpath "$fp")"
+    dn="$(dirname "$rp")"
+    bn="$(basename -- "$rp")"
+
+    cp -a "$fp" "$dn/keep_$bn"
+    v "$dn/keep_$bn"
+else
+    v
+fi

@@ -1673,6 +1673,7 @@ xnoremap gk k
 nnoremap ' `
 nnoremap ` '
 
+source ~/.vim/inkpot.vim
 source ~/.vim/paste-replace.vim
 source ~/.vim/utils.vim
 source ~/.vim/pen.vim
