@@ -116,6 +116,7 @@
 (require 'pen-pensieve)
 (require 'pen-menu-bar)
 (require 'pen-daemons)
+(require 'pen-clipboard)
 (require 'pen-source)
 ;; (if (inside-docker-p)
 ;;     (require 'pen-common-lisp))
