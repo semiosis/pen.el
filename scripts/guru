@@ -3,11 +3,13 @@ export TTY
 
 sn="$(basename "$0")"
 
-if ! inside-tmux-p; then
-    # I must also cat into in-tm
-    # Make a new command for this purpose (capture stdin and send to container, then pipe into a new command)
-    in-tm "$0" "$@"
-    exit "$?"
+if inside-docker-p; then
+    if ! inside-tmux-p; then
+        # I must also cat into in-tm
+        # Make a new command for this purpose (capture stdin and send to container, then pipe into a new command)
+        in-tm "$0" "$@"
+        exit "$?"
+    fi
 fi
 
 # Guru
