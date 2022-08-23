@@ -127,6 +127,7 @@ set noswapfile " Swap is disabled. Using git anyway.
 " set backupdir=/dev/shm/var/tmp/shane/vim
 " set directory=/dev/shm/var/tmp/shane/vim
 " set undodir=/dev/shm/var/tmp/shane/vim
+set foldcolumn=0 " margin, gutter
 
 call pathogen#infect()
 
@@ -1438,6 +1439,7 @@ noremap <M-F2> :bd!<CR>i
 inoremap <M-F3> <Esc>:call QuitJump()<CR>
 noremap <M-F3> :call QuitJump()<CR>
 nnoremap <f1> <nop>
+map <F1> <Nop>
 tmap <S-Tab> [Z
 nnoremap <M-a> <Esc>a
 nnoremap <M-b> <Esc>b
@@ -1679,6 +1681,7 @@ source ~/.vim/inkpot.vim
 source ~/.vim/paste-replace.vim
 source ~/.vim/utils.vim
 source ~/.vim/pen.vim
+source ~/.vim/nvim-function-keysvimrc
 
 let pen_path = expand("~/.pen/pen.vim")
 if filereadable(pen_path)
@@ -1852,6 +1855,13 @@ map <S-ScrollWheelUp> 6<C-U>
 nnoremap <ScrollWheelDown> 6<C-e>
 map <S-ScrollWheelDown> 6<C-D>
 
+function! OpenClipInWin()
+    let cmd = "tm -f -S -tout -i nw v"
+    silent! call system(cmd, @z)
+endfunction
+xmap <CR> "zy;silent! call OpenClipInWin()<CR>"
+
+
 nnoremap <silent> <C-e> :call MovePercent(-5, 'n')<CR>
 nnoremap <silent> <C-t> :call MovePercent(5, 'n')<CR>
 
@@ -1989,3 +1999,30 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:indent_guides_default_mapping = 0
 let g:indent_guides_enable_on_vim_startup = 1
+
+map <F12> ;call ToggleCommentSyntax()<CR>
+map <F11> ;call ToggleBrightness()<CR>
+map <F10> ;call ToggleSyntax()<CR>
+
+" delete buffer without closing window
+function! Bclose()
+    let curbufnr = bufnr("%")
+    let altbufnr = bufnr("#")
+    if buflisted(altbufnr)
+        buffer #
+    else
+        bnext
+    endif
+    if bufnr("%") == curbufnr
+        new
+    endif
+    if buflisted(curbufnr)
+        execute("bdelete! " . curbufnr)
+    endif
+endfunction
+
+function! ForceQuit()
+    qa!
+endfunction
+
+command! ForceQuit silent! call ForceQuit()

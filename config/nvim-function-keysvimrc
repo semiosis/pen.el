@@ -1,0 +1,174 @@
+" if has('nvim')
+    tnoremap <C-@> <C-Space>
+
+    tmap <LeftMouse> <LeftMouse>
+    tmap <C-LeftMouse> [<16;1;7M
+
+    tmap <RightMouse> <RightMouse>
+
+    tmap <C-M-O> <BS>
+    "tmap <C-M-U> <Del>
+
+    tmap <S-Up> [1;2A
+    tmap <S-Down> [1;2B
+    tmap <S-Right> [1;2C
+    tmap <S-Left> [1;2D
+
+    tmap <M-Up> [1;3A
+    tmap <M-Down> [1;3B
+    tmap <M-Right> [1;3C
+    tmap <M-Left> [1;3D
+
+    tmap <M-S-Up> [1;4A
+    tmap <M-S-Down> [1;4B
+    tmap <M-S-Right> [1;4C
+    tmap <M-S-Left> [1;4D
+
+    tmap <C-Up> [1;5A
+    tmap <C-Down> [1;5B
+    tmap <C-Right> [1;5C
+    tmap <C-Left> [1;5D
+
+    tmap <C-S-Up> [1;6A
+    tmap <C-S-Down> [1;6B
+    tmap <C-S-Right> [1;6C
+    tmap <C-S-Left> [1;6D
+
+    tmap <M-C-Up> [1;7A
+    tmap <M-C-Down> [1;7B
+    tmap <M-C-Right> [1;7C
+    tmap <M-C-Left> [1;7D
+
+    tmap <M-C-S-Up> [1;8A
+    tmap <M-C-S-Down> [1;8B
+    tmap <M-C-S-Right> [1;8C
+    tmap <M-C-S-Left> [1;8D
+
+    tmap <F1> OP
+    
+    tmap <S-F1> [1;2P
+    tmap <F1> [1;3P
+
+    " xterm
+    tmap <M-F1> [1;9P
+    " screen
+    tmap <M-F1> [1;3P
+
+    tmap <S-M-F1> [1;4P
+    tmap <C-F1> [1;5P
+    tmap <C-S-F1> [1;6P
+    tmap <C-S-M-F1> [1;8P
+    tmap <F2> OQ
+    tmap <S-F2> [1;2Q
+    tmap <S-F2> [26~
+    tmap <F2> [1;3Q
+    tmap <M-F2> [1;3Q
+    tmap <S-M-F2> [1;4Q
+    tmap <C-F2> [1;5Q
+    tmap <C-S-M-F2> [1;8Q
+    tmap <F3> OR
+    tmap <S-F3> [1;2R
+    tmap <F3> [1;3R
+    tmap <M-F3> [1;3R
+    tmap <S-M-F3> [1;4R
+    tmap <C-F3> [1;5R
+    tmap <C-S-M-F3> [1;8R
+    tmap <F4> OS
+    tmap <S-F4> [1;2S
+    tmap <F4> [1;3S
+    tmap <M-F4> [1;3S
+    tmap <S-M-F4> [1;4S
+    tmap <C-F4> [1;5S
+    tmap <S-M-F4> [1;8S
+    tmap <F5> [15~
+    tmap <S-F5> [15;2~
+    " putty's <S-F5> gives <F15>
+    tmap <F15> [15;2~
+    tmap <F5> [15;3~
+    tmap <M-F5> [15;3~
+    tmap <S-M-F5> [15;4~
+    tmap <C-F5> [15;5~
+    tmap <C-S-M-F5> [15;8~
+    tmap <F6> [17~
+    " putty's <S-F6> gives <F16>
+    tmap <F16> [17;2~
+    tmap <S-F6> [17;2~
+    tmap <F6> [17;3~
+    tmap <M-F6> [17;3~
+    tmap <S-M-F6> [17;4~
+    tmap <C-F6> [17;5~
+    tmap <C-S-M-F6> [17;8~
+    tmap <F7> [18~
+    " putty's <S-F7> gives <F17>
+    tmap <F17> [18;2~
+    tmap <S-F7> [18;2~
+    tmap <F7> [18;3~
+    tmap <M-F7> [18;3~
+    tmap <S-M-F7> [18;4~
+    tmap <C-F7> [18;5~
+    tmap <C-S-M-F7> [18;8~
+    tmap <F8> [19~
+    " putty's <S-F8> gives <F18>
+    tmap <F18> [19;2~
+    tmap <S-F8> [19;2~
+    tmap <F8> [19;3~
+    tmap <M-F8> [19;3~
+    tmap <S-M-F8> [19;4~
+    tmap <C-F8> [19;5~
+    tmap <C-S-M-F8> [19;8~
+    tmap <F9> [20~
+    " putty's <S-F9> gives <F19>
+    tmap <F19> [20;2~
+    tmap <S-F9> [20;2~
+    tmap <F9> [20;3~
+    tmap <M-F9> [20;3~
+    tmap <S-M-F9> [20;4~
+    tmap <C-F9> [20;5~
+    tmap <C-S-M-F9> [20;8~
+    tmap <F10> [21~
+    " putty's <S-F10> gives <F20>
+    tmap <F20> [21;2~
+    tmap <S-F10> [21;2~
+    tmap <F10> [21;3~
+    tmap <M-F10> [21;3~
+    tmap <S-M-F10> [21;4~
+    tmap <C-F10> [21;5~
+    tmap <C-S-M-F10> [21;8~
+    tmap <F11> [23~
+    tmap <S-F11> [23;2~
+    tmap <F11> [23;3~
+    tmap <M-F11> [23;3~
+    tmap <S-M-F11> [23;4~
+    tmap <C-F11> [23;5~
+    tmap <C-S-M-F11> [23;8~
+    tmap <F12> [24~
+    tmap <S-F12> [24;2~
+    tmap <F12> [24;3~
+    tmap <M-F12> [24;3~
+    tmap <S-M-F12> [24;4~
+    tmap <C-F12> [24;5~
+    tmap <C-S-M-F12> [24;8~
+    tmap <F13> [25~
+    tmap <S-F13> [25;2~
+    tmap <M-F13> [25;3~
+    tmap <S-M-F13> [25;4~
+    tmap <C-F13> [25;5~
+    tmap <C-S-M-F13> [25;8~
+    tmap <F14> [26~
+    tmap <S-F14> [26;2~
+    tmap <M-F14> [26;3~
+    tmap <S-M-F14> [26;4~
+    tmap <C-F14> [26;5~
+    tmap <C-S-M-F14> [26;8~
+" endif
+
+inoremap <M-F1> <Esc>:bd!<CR>i
+noremap <M-F1> :bd!<CR>i
+
+inoremap <M-F2> <Esc>:bd!<CR>i
+noremap <M-F2> :bd!<CR>i
+
+inoremap <M-F3> <Esc>:call QuitJump()<CR>
+noremap <M-F3> :call QuitJump()<CR>
+
+nnoremap <f1> <nop>

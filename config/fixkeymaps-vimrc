@@ -1,0 +1,364 @@
+" Keys from nvim
+imap [3~" <Delete>
+map [3~" <Delete>
+
+" This is the code for <M-Tab>
+imap [2~ <Insert>
+nmap [2~ <Insert>
+cmap [2~ <Insert>
+
+" C-M-y
+imap [1~ <Home>
+nmap [1~ <Home>
+cmap [1~ <Home>
+
+" C-M-b
+imap [4~ <End>
+nmap [4~ <End>
+cmap [4~ <End>
+
+" Enable M-Space
+map <Space> <M-Space>
+
+" F1
+imap OP <C-o><F1>
+map OP <F1>
+" S-F1
+imap [1;2P <F1>
+map [1;2P <F1>
+" S-F1 screen
+imap [25~ <C-o><F1>
+map [25~ <F1>
+
+" M-F1 xterm (without tmux)
+imap [1;9P <Esc>;ForceQuit<CR>
+map [1;9P <Esc>;ForceQuit<CR>
+" M-F1
+" Was ZQ
+" this can't possibly work in paste mode because paste mode disables
+" mappings
+imap [1;3P <Esc>;ForceQuit<CR>
+map [1;3P <Esc>;ForceQuit<CR>
+" catch some other common ones
+map m[1;3P <Esc>;ForceQuit<CR>
+map [[1;3P <Esc>;ForceQuit<CR>
+map ][1;3P <Esc>;ForceQuit<CR>
+map f[1;3P <Esc>;ForceQuit<CR>
+" This is whene I press q to quit, thinking it's less and then press
+" M-f1 when I realise I was wrong. It would produce ;3P
+map q[1;3P <Esc>;ForceQuit<CR>
+" done
+xmap [1;3P <Esc>;ForceQuit<CR>
+"" For some reason, this is also necessary, but I can's use is. see
+"" below
+" I think a combination of these is the way to do it
+cmap [1; ForceQuit<CR>
+cmap [1;3P <C-u>ForceQuit<CR>
+" S-M-F1
+imap [1;4P <C-o><F1><ESC><C-g>
+map [1;4P <F1>
+" C-F1
+imap [1;5P <F1>
+map [1;5P <F1>
+" C-S-F1
+imap [1;6P <C-o><F1>
+map [1;6P <F1>
+
+" C-S-M-F1
+imap [1;8P <C-o><F1><ESC><C-g>
+map [1;8P <F1>
+
+" F2
+imap OQ <C-o><F2>
+map OQ <F2>
+" S-F2
+imap [1;2Q <C-o><F2>
+map [1;2Q <F2>
+" S-F2 screen
+imap [26~ <C-o><F2>
+map [26~ <F2>
+" M-F2
+imap [1;3Q <C-o><F2><ESC><C-g>
+"map [1;3Q ;bd!<CR>
+map [1;3Q ;call Bclose()<CR>
+
+" done
+xmap [1;3Q <Esc>ZQ
+cmap [1;3Q <Esc>ZQ
+" S-M-F2
+imap [1;4Q <C-o><F2><ESC><C-g>
+map [1;4Q <F2>
+" C-F2
+imap [1;5Q <C-o><F2>
+map [1;5Q <F2>
+" C-S-M-F2
+imap [1;8Q <C-o><F2><ESC><C-g>
+map [1;8Q <F2>
+
+" F3
+imap OR <C-o><F3>
+map OR <F3>
+" S-F3
+imap [1;2R <C-o><F3>
+map [1;2R <F3>
+" S-F3 screen
+imap [28~ <C-o><F3>
+map [28~ <F3>
+" M-F3
+" This doesn't work because tmux uses F3 for paste
+imap [1;3R <C-o><F3><ESC><C-g>
+map [1;3R <F3>
+" S-M-F3
+imap [1;4R <C-o><F3><ESC><C-g>
+"map [1;4R <F3>
+map [1;4R ;windo set diff scrollbind<BAR>let g:diff_syntax_on = 2<BAR>ToggleDiffSyntax<CR>
+" C-F3
+imap [1;5R <C-o><F3>
+map [1;5R <F3>
+" C-S-M-F3
+imap [1;8R <C-o><F3><ESC><C-g>
+map [1;8R <F3>
+
+" F4
+imap OS <C-o><F4>
+map OS <F4>
+" S-F4
+imap [1;2S <C-o><F4>
+map [1;2S <F4>
+" S-F4 screen
+imap [29~ <C-o><F4>
+map [29~ <F4>
+" M-F4
+imap [1;3S <C-o><F4><ESC><C-g>
+map [1;3S ;bd!<CR>
+
+" S-M-F4
+imap [1;4S <C-o><F4><ESC><C-g>
+map [1;4S <F4>
+" C-F4
+imap [1;5S <C-o><F4>
+map [1;5S <F4>
+" S-M-F4
+imap [1;8S <C-o><F4><ESC><C-g>
+map [1;8S <F4>
+
+" F5
+imap [15~ <C-o><F5>
+map [15~ <F5>
+" S-F5
+imap [15;2~ <C-o><F5>
+map [15;2~ <F5>
+" S-F5 screen
+imap [31~ <C-o><F5>
+map [31~ <F5>
+" M-F5
+imap [15;3~ <C-o><F5><ESC><C-g>
+map [15;3~ <F5>
+" S-M-F5
+imap [15;4~ <C-o><F5><ESC><C-g>
+map [15;4~ <F5>
+" C-F5
+imap [15;5~ <C-o><F5>
+map [15;5~ <F5>
+" C-S-M-F5
+imap [15;8~ <C-o><F5><ESC><C-g>
+map [15;8~ <F5>
+
+" F6
+imap [17~ <C-o><F6>
+map [17~ <F6>
+" S-F6
+imap [17;2~ <C-o><F6>
+map [17;2~ <F6>
+" S-F6 screen
+imap [32~ <C-o><F6>
+map [32~ <F6>
+" M-F6
+imap [17;3~ <C-o><F6><ESC><C-g>
+map [17;3~ <F6>
+" S-M-F6
+imap [17;4~ <C-o><F6><ESC><C-g>
+map [17;4~ <F6>
+" C-F6
+imap [17;5~ <C-o><F6>
+map [17;5~ <F6>
+" C-S-M-F6
+imap [17;8~ <C-o><F6><ESC><C-g>
+map [17;8~ <F6>
+
+" F7
+imap [18~ <C-o><F7>
+map [18~ <F7>
+" S-F7
+imap [18;2~ <C-o><F7>
+map [18;2~ <F7>
+" S-F7 screen
+imap [33~ <C-o><F7>
+map [33~ <F7>
+" M-F7
+imap [18;3~ <C-o><F7><ESC><C-g>
+map [18;3~ <F7>
+" S-M-F7
+imap [18;4~ <C-o><F7><ESC><C-g>
+map [18;4~ <F7>
+" C-F7
+imap [18;5~ <C-o><F7>
+map [18;5~ <F7>
+" C-S-M-F7
+imap [18;8~ <C-o><F7><ESC><C-g>
+map [18;8~ <F7>
+
+" F8
+imap [19~ <C-o><F8>
+map [19~ <F8>
+" S-F8
+imap [19;2~ <C-o><F8>
+cmap [19;2~ <C-o><F8>
+map [19;2~ <F8>
+" S-F8 screen
+imap [34~ <C-o><F8>
+map [34~ <F8>
+" M-F8
+imap [19;3~ <C-R>=strftime("%d.%m.%y")<CR>
+cmap [19;3~ <C-R>=strftime("%d.%m.%y")<CR>
+map [19;3~ "=strftime("%d.%m.%y")<CR>P
+" S-M-F8
+imap [19;4~ <C-o><F8><ESC><C-g>
+imap [19;4~ <C-o><F8><ESC><C-g>
+map [19;4~ <F8>
+" C-F8
+imap [19;5~ <C-o><F8>
+map [19;5~ <F8>
+" C-S-M-F8
+imap [19;8~ <C-o><F8><ESC><C-g>
+map [19;8~ <F8>
+
+" F9
+imap [20~ <C-o><F9>
+map [20~ <F9>
+" S-F9
+imap [20;2~ <C-o><F9>
+map [20;2~ <F9>
+" M-F9
+imap [20;3~ <C-o><F9><ESC><C-g>
+"map [20;3~ ZQ
+map [20;3~ <F9>
+" S-M-F9
+imap [20;4~ <C-o><F9><ESC><C-g>
+map [20;4~ <F9>
+" C-F9
+imap [20;5~ <C-o><F9>
+map [20;5~ <F9>
+" C-S-M-F9
+imap [20;8~ <C-o><F9><ESC><C-g>
+map [20;8~ <F9>
+
+" F10
+imap [21~ <C-o><F10>
+map [21~ <F10>
+" S-F10
+imap [21;2~ <C-o><F10>
+map [21;2~ <F10>
+" M-F10
+imap [21;3~ <C-o><F10><ESC><C-g>
+map [21;3~ <F10>
+" S-M-F10
+imap [21;4~ <C-o><F10><ESC><C-g>
+map [21;4~ <F10>
+" C-F10
+imap [21;5~ <C-o><F10>
+map [21;5~ <F10>
+" C-S-M-F10
+imap [21;8~ <C-o><F10><ESC><C-g>
+map [21;8~ <F10>
+
+" F11
+imap [23~ <C-o><F11>
+map [23~ <F11>
+" S-F11
+imap [23;2~ <C-o><F11>
+map [23;2~ <F11>
+" M-F11
+imap [23;3~ <C-o><F11><ESC><C-g>
+map [23;3~ <F11>
+" S-M-F11
+imap [23;4~ <C-o><F11><ESC><C-g>
+map [23;4~ <F11>
+" C-F11
+imap [23;5~ <C-o><F11>
+map [23;5~ <F11>
+" C-S-M-F11
+imap [23;8~ <C-o><F11><ESC><C-g>
+map [23;8~ <F11>
+
+" F12
+imap [24~ <C-o><F12>
+map [24~ <F12>
+" S-F12
+imap [24;2~ <C-o><F12>
+map [24;2~ <F12>
+" M-F12
+imap [24;3~ <C-o><F12><ESC><C-g>
+map [24;3~ ZQ
+" S-M-F12
+imap [24;4~ <C-o><F12><ESC><C-g>
+map [24;4~ <F12>
+" C-F12
+imap [24;5~ <C-o><F12>
+map [24;5~ <F12>
+" C-S-M-F12
+imap [24;8~ <C-o><F12><ESC><C-g>
+map [24;8~ <F12>
+
+
+
+if ! has('nvim')
+    " Only works in vim, not nvim
+    set <M-!>=!
+endif
+inoremap <M-!> !
+nnoremap <M-!> !
+xnoremap <M-!> <ESC>!
+
+inoremap @ @
+nnoremap @ @
+xnoremap @ <ESC>@
+
+" this is all you need. now it inserts a pound
+if ! has('nvim')
+    " Only works in vim, not nvim
+    set <M-#>=#
+endif
+""inoremap <M-#> #
+nnoremap <M-#> #
+xnoremap <M-#> <ESC>#
+
+" Here we go
+inoremap <M-#> h#
+
+" Available mappings:
+" Suggest grouping these to be used for useful language-specific
+" commands.
+" For the moment, just prevent them from making weird characters
+" C-;
+noremap [27;5;59~ ;
+"this prevents C-;C-; from making strange characters, but wont stop
+"other combinations
+noremap [27;5;59~[27;5;59~ ;;
+" C-:
+noremap [27;6;58~ :
+noremap [27;6;58~[27;6;58~ ::
+" C-'
+noremap [27;5;39~ '
+noremap [27;5;39~[27;5;39~ ''
+" C-"
+noremap [27;6;34~ "
+noremap [27;6;34~[27;6;34~ ""
+" C-,
+noremap [27;5;44~ ,
+" C-.
+noremap [27;5;46~ .
+" C-<
+noremap [27;6;60~ <
+" C->
+noremap [27;6;62~ >

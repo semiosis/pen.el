@@ -829,6 +829,8 @@ cp -a /root/repos/pen-emacsd/pen.el/config/inkpot.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/paste-replace.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/utils.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/pen.vim /root/.vim
+cp -a /root/repos/pen-emacsd/pen.el/config/nvim-function-keysvimrc /root/.vim
+cp -a /root/repos/pen-emacsd/pen.el/config/fixkeymaps-vimrc /root/.vim
 
 # Ansible
 agi libonig-dev
