@@ -833,3 +833,12 @@ cp -a /root/repos/pen-emacsd/pen.el/config/pen.vim /root/.vim
 # Ansible
 agi libonig-dev
 pip3 install 'ansible-navigator[ansible-core]'
+
+# vim
+(
+cd ~/.vim
+git clone "https://github.com/tpope/vim-pathogen"
+ln -sf ~/.vim/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload
+mkdir -p ~/.vim/bundle
+cp -a /root/repos/pen-emacsd/pen.el/config/vim-bundles/* /root/.vim/bundle
+)

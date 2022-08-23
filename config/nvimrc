@@ -128,6 +128,8 @@ set noswapfile " Swap is disabled. Using git anyway.
 " set directory=/dev/shm/var/tmp/shane/vim
 " set undodir=/dev/shm/var/tmp/shane/vim
 
+call pathogen#infect()
+
 set foldexpr=FoldBrace()
 function! FoldBrace()
   if getline(v:lnum+1)[0] == '{'
@@ -1700,3 +1702,281 @@ cmap <Esc>r silent! wa! \| e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
 "cmap <Esc>g call MinimiseAndWrap()<CR>
 cmap <Esc>g .!mnm<CR>
 cmap <Esc>G .!acronymise \| mnm<CR>
+
+" Make C-g from inside command mode work like emacs, in that in
+" cancels any current operation.
+cmap  
+
+nmap yc ggVG
+
+map  <left>
+map  <right>
+map  <up>
+map <C-J> <down>
+
+" having these are more important than being able to quickly enter
+" easymotion.
+imap  <left>
+imap  <right>
+imap  <up>
+imap <C-J> <down>
+
+" important fix (hopefully there are no escape code conflicts)
+imap $ l$
+
+xnoremap t lt
+xnoremap T hT
+
+"xnoremap $ $h
+xnoremap $ g_
+xnoremap g_ $
+
+xnoremap . s<C-R>.
+
+inoremap <C-h> <Left>
+
+if ! has('nvim')
+    " Only works in vim, not nvim
+    set <M-$>=$
+endif
+" need this for going to the end of a line after editing something.
+"inoremap <M-$> $
+nnoremap <M-$> $
+xnoremap <M-$> <ESC>$
+
+nmap <C-w>h <C-w>h
+nmap <C-w>l <C-w>l
+nmap <silent> g<C-w>k ;let linenum=getpos('.')[1]\|:wincmd k\|;call cursor(linenum,0)<cr>
+nmap <silent> g<C-w>i ;let linenum=getpos('.')[1]\|:wincmd i\|;call cursor(linenum,0)<cr>
+nmap <silent> g<C-w>h ;let linenum=getpos('.')[1]\|:wincmd h\|;call cursor(linenum,0)<cr>
+nmap <silent> g<C-w>l ;let linenum=getpos('.')[1]\|:wincmd l\|;call cursor(linenum,0)<cr>
+nmap <silent> <C-w><down> ;let linenum=getpos('.')[1]\|:wincmd k\|;call cursor(linenum,0)<cr>
+nmap <silent> <C-w><up> ;let linenum=getpos('.')[1]\|:wincmd i\|;call cursor(linenum,0)<cr>
+nmap <silent> <C-w><left> ;let linenum=getpos('.')[1]\|:wincmd h\|;call cursor(linenum,0)<cr>
+nmap <silent> <C-w><right> ;let linenum=getpos('.')[1]\|:wincmd l\|;call cursor(linenum,0)<cr>
+nmap <silent> <C-w>w ;let linenum=getpos('.')[1]\|:wincmd w\|;call cursor(linenum,0)<cr>
+nmap <silent> <C-w><C-w> <C-w>w
+
+if !exists("g:ncolumns")
+    let g:ncolumns=1
+endif
+
+" these function allows you to put a number prefix before <C-u>, which
+" means before <C-b> as well in our case.
+" Note: The <C-U> is required to remove the line range that you get when
+" typing ':' after a count.
+function! ScrollUp(count)
+    let c=a:count * g:ncolumns
+    if ! c > 0
+        let c=1
+    endif
+    let c = c * 2
+    for i in range(1, c)
+        exec "normal! \<C-u>"
+    endfor
+endfunction
+function! ScrollDown(count)
+    let c=a:count * g:ncolumns
+    if ! c > 0
+        let c=1
+    endif
+    let c = c * 2
+    for i in range(1, c)
+        exec "normal! \<C-d>"
+    endfor
+endfunction
+function! HalfscrollUp(count)
+    let c=a:count * g:ncolumns
+    if ! c > 0
+        let c=1
+    endif
+    for i in range(1, c)
+        exec "normal! \<C-u>"
+    endfor
+endfunction
+function! HalfscrollDown(count)
+    let c=a:count * g:ncolumns
+    if ! c > 0
+        let c=1
+    endif
+    for i in range(1, c)
+        exec "normal! \<C-d>"
+    endfor
+endfunction
+
+nnoremap <silent> <C-u> :<C-U>call HalfscrollUp(v:count1)<CR>
+nnoremap <silent> <C-d> :<C-U>call HalfscrollDown(v:count1)<CR>
+nnoremap <silent> <C-b> :<C-U>call ScrollUp(v:count1)<CR>
+nnoremap <silent> <C-f> :<C-U>call ScrollDown(v:count1)<CR>
+nnoremap <silent> <pageup> :<C-U>call ScrollUp(v:count1)<CR>
+nnoremap <silent> <pagedown> :<C-U>call ScrollDown(v:count1)<CR>
+"nmap <pageup> ;PreviousChange<CR>zz
+"nmap <pagedown> ;NextChange<CR>zz
+
+nnoremap y/ /<up><C-f><left>v0y<C-c><C-c>
+nmap 1<C-g> ;echo expand('%:p')<CR>
+nmap 2<C-g> ;echo @%<CR>
+
+nmap <2-LeftMouse> *
+xmap <2-LeftMouse> *
+
+nmap <RightMouse> *
+xmap <RightMouse> *
+
+nmap ch ;bprev<CR>
+nmap cl ;bnext<CR>
+nmap gt gt
+
+nmap gd gdzt
+vmap gd *gg0n
+
+function! MovePercent(signedpercent, mode)
+    if a:mode ==# 'v'
+        normal! gv
+    endif
+
+    let step = max([abs(a:signedpercent) * winheight(0) / 100, 1])
+    if a:signedpercent < 0
+        for i in range(1,step)
+            exec "normal! \<C-e>"
+        endfor
+    elseif a:signedpercent > 0
+        for i in range(1,step)
+            exec "normal! \<C-y>"
+        endfor
+    endif
+endfunction
+
+nnoremap <ScrollWheelUp> 6<C-y>
+map <S-ScrollWheelUp> 6<C-U>
+nnoremap <ScrollWheelDown> 6<C-e>
+map <S-ScrollWheelDown> 6<C-D>
+
+nnoremap <silent> <C-e> :call MovePercent(-5, 'n')<CR>
+nnoremap <silent> <C-t> :call MovePercent(5, 'n')<CR>
+
+xnoremap <silent> <C-e> :call MovePercent(-5, 'v')<CR>
+xnoremap <silent> <C-t> :call MovePercent(5, 'v')<CR>
+
+nnoremap <silent> <C-n> :call MovePercent(-10, 'n')<CR>
+nnoremap <silent> <C-p> :call MovePercent(10, 'n')<CR>
+
+xnoremap <silent> <C-n> :call MovePercent(-10, 'v')<CR>
+xnoremap <silent> <C-p> :call MovePercent(10, 'v')<CR>
+
+nmap [u ;cprev<CR>
+nmap ]u ;cnext<CR>
+nmap [e ;ERRP<CR>
+nmap ]e ;ERR<CR>
+nmap [/ 0;COMP<CR>
+nmap ]/ $;COM<CR>
+nmap ZU ;Ctoggle<CR>
+
+map w <Plug>CamelCaseMotion_w
+map b <Plug>CamelCaseMotion_b
+map e <Plug>CamelCaseMotion_e
+omap iw <Plug>CamelCaseMotion_iw
+xmap iw <Plug>CamelCaseMotion_iw
+omap ib <Plug>CamelCaseMotion_ib
+xmap ib <Plug>CamelCaseMotion_ib
+omap ie <Plug>CamelCaseMotion_ie
+xmap ie <Plug>CamelCaseMotion_ie
+nmap cw ce
+omap iw ie
+xmap iw ie
+nmap vit ;normal! viw<CR>
+nmap vir ;call SelectWordAndDots()<cr>
+nmap viq ;call SelectArgument()<cr>
+
+imap <C-w> vlbs
+nmap <C-w><C-c> <NOP>
+
+" use the search register to find the next thing directly above or below
+nmap ]> ;exe '/\%'.virtcol('.').'v'.@/<CR>
+nmap [> ;exe '?\%'.virtcol('.').'v'<CR>
+xmap ]> <C-c>;exe '/\%'.virtcol('.').'v'.@/<CR>mxgv`x
+xmap [> <C-c>;exe '?\%'.virtcol('.').'v'.@/<CR>mxgv`x
+
+" Find next
+nmap ]? ;exe '/\%'.virtcol('.').'v\S'<CR>
+nmap [? ;exe '?\%'.virtcol('.').'v\S'<CR>
+xmap ]? <C-c>;exe '/\%'.virtcol('.').'v\S'<CR>mxgv`x
+xmap [? <C-c>;exe '?\%'.virtcol('.').'v\S'<CR>mxgv`x
+
+function! SelectWordAndDots()
+    set iskeyword+=.
+    set iskeyword+=-
+    normal! viw
+    set iskeyword-=.
+    set iskeyword-=-
+endfunction
+
+" It would be nice if this function could work out what () it should
+" select. I.e. You're selecting an argument inside a pair of parenthesis
+" and the argument has parenthesis itself, so only select the pair
+" belonging to the argument.
+function! SelectArgument()
+    set iskeyword+=.
+    set iskeyword+=-
+    set iskeyword+=[
+    set iskeyword+=]
+    "set iskeyword+== "why equals?
+    set iskeyword+='
+    set iskeyword+="
+    normal! viw
+    set iskeyword-=.
+    set iskeyword-=-
+    set iskeyword-=[
+    set iskeyword-=]
+    "set iskeyword-== "why equals?
+    set iskeyword-='
+    set iskeyword-="
+endfunction
+
+" counters the issue with smartindent that affects making comments in
+" python (puts comment on the first column).
+inoremap # X#
+
+nnoremap gl <C-^>
+
+" unmap annoying keys
+nnoremap K <Nop>
+nnoremap q: <Nop>
+nnoremap q/ <Nop>
+nnoremap q? <Nop>
+
+" This makes it faster to do ;<C-f> or ;<C-r>
+"   -- can do <C-;><C-f>
+"nnoremap <C-;> ;
+nnoremap [27;5;59~ :
+
+nnoremap ZQ :qa!<CR>
+
+imap <C-b> <Left>
+imap <C-f> <Right>
+
+nnoremap <F8> "=strftime("%c")<CR>P
+inoremap <F8> <C-R>=strftime("%c")<CR>
+cnoremap <F8> <C-R>=strftime("%c")<CR>
+
+if has('autocmd')
+    autocmd BufWrite * if &diff | diffu | endif
+
+    au FileType vim  set foldmethod=marker
+
+    augroup vimrc
+        au BufReadPre * setlocal foldmethod=manual
+    augroup END
+
+    autocmd BufEnter * if &filetype == "" | setlocal ft=txt | endif
+
+    au BufWritePost * silent call ModeChange()
+endif
+
+imap <C-d> <Delete>
+cmap <C-d> <Delete>
+
+noremap <Esc>< gg0
+noremap <Esc>> G$ " emacs G
+
+" https://github.com/tpope/vim-pathogen
