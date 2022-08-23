@@ -1681,7 +1681,8 @@ source ~/.vim/inkpot.vim
 source ~/.vim/paste-replace.vim
 source ~/.vim/utils.vim
 source ~/.vim/pen.vim
-source ~/.vim/nvim-function-keysvimrc
+" source ~/.vim/nvim-function-keysvimrc
+source ~/.vim/fixkeymaps-vimrc
 
 let pen_path = expand("~/.pen/pen.vim")
 if filereadable(pen_path)
