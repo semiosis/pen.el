@@ -81,12 +81,13 @@ function! InsertPrompt(fun, in, ...)
     exec "return s.\"\\n\<C-h>\""
 endfunction
 
+" tmux neww seems to circumvent an issue on the host
 function! Guru()
-    return system("guru -sps -win")
+    return system("tmux neww -d guru -sps -win")
 endfunction
 
 function! VisualGuru(input)
-    let result = system("guru -sps", a:input)
+    let result = system("tmux neww -d guru -sps", a:input)
 endfunction
 
 xnoremap Zv "py:silent! call FzVisualPrompt(@p)<CR>
