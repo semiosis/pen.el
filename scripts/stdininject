@@ -2,7 +2,8 @@
 export TTY
 
 if test -f /tmp/stdincap; then
-    exec < <(cat /tmp/stdincap)
+    in="$(cat /tmp/stdincap)"
+    exec < <(printf -- "%s" "$in")
     rm -f /tmp/stdincap
 fi
 
