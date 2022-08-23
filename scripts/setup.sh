@@ -825,6 +825,7 @@ ros install fukamachi/cl-project
 # cp -a "$REPOS/roswell/lisp/helper.el" /root/.emacs.d/roswell-helper.el
 
 mkdir -p /root/.vim
+cp -a /root/repos/pen-emacsd/pen.el/config/inkpot.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/paste-replace.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/utils.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/pen.vim /root/.vim
