@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+if test -f /tmp/stdincap; then
+    exec < <(cat /tmp/stdincap)
+    rm -f /tmp/stdincap
+fi
+
+"$@"
