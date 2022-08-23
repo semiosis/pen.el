@@ -96,3 +96,74 @@ nnoremap Zg :silent! call Guru()<CR>
 
 xnoremap Zt "py:silent! call VisualPrompt("pf-transform-code/3", expand("%:e"), input("transformation: "))<CR>
 inoremap <expr> <C-y> InsertPrompt("pf-generic-completion-50-tokens/1", GetLast20LinesBeforeCursor())
+
+fun! CharAtCursor()
+    return matchstr(getline('.'), '\%' . col('.') . 'c.')
+endf
+
+fun! ReselectVisual()
+    " New function
+    " echom visualmode()
+    " call system("tv", visualmode())
+    if visualmode() == "V"
+       " we are in visual line mode
+        normal! mxgv`x
+    elseif visualmode() == "\<C-V>"
+       " we are in visual block mode
+        normal! mxgv`x
+    else
+        normal! mxgv
+    endif
+endf
+
+fun! Byte(...)
+    " https://vi.stackexchange.com/questions/2410/how-to-make-a-vimscript-function-with-optional-arguments
+    let indicator = get(a:, 1, ".")
+    return line2byte(line(indicator))+col(indicator)-1
+endf
+
+" I can improve on these to be more picky
+fun! SearchUpDiffColPicky()
+    let charatcursor = escape(CharAtCursor(), "*./\\")
+    if empty(charatcursor)
+        let charatcursor = ' '
+    endif
+    "exe '?\%'.virtcol('.').'v'.charatcursor.'\@!'
+    silent! exe '?\%'.virtcol('.').'v'.charatcursor.'\@!'
+endf
+
+fun! SearchDownDiffColPicky()
+    let charatcursor = escape(CharAtCursor(), "*./\\")
+    if empty(charatcursor)
+        let charatcursor = ' '
+    endif
+    "exe '/\%'.virtcol('.').'v'.charatcursor.'\@!'
+    silent! exe '/\%'.virtcol('.').'v'.charatcursor.'\@!'
+endf
+
+fun! SearchUpDiffCol()
+    let charatcursor = escape(CharAtCursor(), "*./\\")
+    if empty(charatcursor)
+        let charatcursor = ' '
+    endif
+    "exe '?\%'.virtcol('.').'v'.charatcursor.'\@!'
+    silent! exe '?\C\%'.virtcol('.').'v\('.charatcursor.'\| \|$\)\@!'
+endf
+
+fun! SearchDownDiffCol()
+    let charatcursor = escape(CharAtCursor(), "*./\\")
+    if empty(charatcursor)
+        let charatcursor = ' '
+    endif
+    "exe '/\%'.virtcol('.').'v'.charatcursor.'\@!'
+    silent! exe '/\C\%'.virtcol('.').'v\('.charatcursor.'\| \|$\)\@!'
+endf
+
+nnoremap <Esc>_ :call SearchUpDiffCol()<CR>
+nnoremap <Esc>+ :call SearchDownDiffCol()<CR>
+xnoremap <Esc>_ <C-c>:call SearchUpDiffCol() \| call ReselectVisual()<CR>
+xnoremap <Esc>+ <C-c>:call SearchDownDiffCol() \| call ReselectVisual()<CR>
+nnoremap <Esc>- :call SearchUpDiffColPicky()<CR>
+nnoremap <Esc>= :call SearchDownDiffColPicky()<CR>
+xnoremap <Esc>- <C-c>:call SearchUpDiffColPicky() \| call ReselectVisual()<CR>
+xnoremap <Esc>= <C-c>:call SearchDownDiffColPicky() \| call ReselectVisual()<CR>
