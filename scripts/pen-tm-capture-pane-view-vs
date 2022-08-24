@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+tm -te -d capture -nohist -tty -clean -editor "vs"

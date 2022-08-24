@@ -2262,12 +2262,14 @@ case "$f" in
     ;;
 
     search) {
-        pen-tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y orve" -wrap
+        # pen-tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y pen-e" -wrap
+        pen-tm -f -te -d capture -clean -editor "JUSTIFY_LEFT=y pen-e" -wrap
     }
     ;;
 
     visor) {
-        pen-tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y orspe -ic generate-glossary-buttons-over-buffer-force-on" -wrap
+        # pen-tm -f -te -d capture -t localhost -clean -editor "JUSTIFY_LEFT=y pen-e -ic generate-glossary-buttons-over-buffer-force-on" -wrap
+        pen-tm -f -te -d capture -clean -editor "JUSTIFY_LEFT=y pen-e -ic generate-glossary-buttons-over-buffer-force-on" -wrap
     }
     ;;
 
