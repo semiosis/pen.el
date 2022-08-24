@@ -153,6 +153,14 @@ This issue might be caused by:
 (with-eval-after-load 'lsp-ui
   (add-hook 'lsp-mode-hook 'lsp-ui-mode))
 
+;; I don't want the doc overlays to appear automatically
+;; To turn back on:
+;; (define-key lsp-mode-map (kbd "C-c d") 'ladicle/toggle-lsp-ui-doc)
+(defun pen-hide-lsp-ui-doc-mode ()
+  (interactive)
+  (lsp-ui-doc-mode -1))
+(add-hook 'lsp-ui-mode-hook 'pen-hide-lsp-ui-doc-mode)
+
 (add-hook 'c++-mode-hook 'maybe-lsp)
 (add-hook 'c-mode-hook #'maybe-lsp)
 (add-hook 'python-mode-hook 'maybe-lsp)
