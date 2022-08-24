@@ -217,22 +217,25 @@
             (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" final-blurb))))
               (pen-e-sps (pen-lm (pen-eval-string el)))))))))
 
-(defun guru (&optional text language)
+(defun guru (&optional a:text a:topic)
   (interactive)
-  (let* ((lang
-          (or
-           language
-           (if text
-               (pen-detect-language-lm-ask text)
-             (pen-read-string "Guru Topic:")
-             ;; (pen-batch (pen-detect-language-ask))
-             )))
-         (sme-name (concat lang " guru")))
+  (let* ((text
+          (or (sor a:text)
+              (str (pen-screen-verbatim-or-selection t))))
+         (topic
+          (or (sor a:topic)
+              (pen-read-string "Guru Topic:")
+              ;; (pen-batch (pen-detect-language-ask))
+              ))
+         (topic (or (sor topic)
+                    (and (sor text)
+                         (pen-detect-language-lm-ask a:text))
+                    "knowledge"))
+         (sme-name (concat topic " guru")))
     (apostrophe-chat-about-selection
-     (or text
-         (str (pen-screen-verbatim-or-selection t)))
+     text
      sme-name
-     (concat sme-name " is an expert in " lang "."))))
+     (concat sme-name " is an expert in " topic "."))))
 
 (define-key global-map (kbd "H-U") 'guru)
 

@@ -146,7 +146,8 @@
   (pen-etv
    (concat (awk1 (upd (show-color-and-print "blueberries")))
            (awk1 (show-color-and-print "strawberries"))
-           (awk1 (show-color-and-print "banana")))))
+           (awk1 (pen-no-prepend-previous
+                  (show-color-and-print "banana"))))))
 
 (defun test-pen-baby-name ()
   (idefun baby-name-for-country (country gender))

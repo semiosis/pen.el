@@ -542,8 +542,10 @@
                      ',utilises-code-off))))
 
           (final-prepend-previous
-           (or (pen-var-value-maybe 'prepend-previous)
-               ',prepend-previous))
+           (and
+            (not (pen-var-value-maybe 'no-prepend-previous))
+            (or (pen-var-value-maybe 'prepend-previous)
+                ',prepend-previous)))
 
           (final-hover
            (or (pen-var-value-maybe 'hover)

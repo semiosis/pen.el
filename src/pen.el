@@ -1460,6 +1460,18 @@ But use the results-analyser."
 ;;   (let ((alpha (or alpha 100)))
 ;;     (message (str alpha))))
 
+(defmacro pen-prepend-previous (&rest body)
+  "This wraps around pen function calls to make them prepend-previous"
+  `(eval
+    `(let ((prepend-previous t))
+       ,',@body)))
+
+(defmacro pen-no-prepend-previous (&rest body)
+  "This wraps around pen function calls to make them prepend-previous"
+  `(eval
+    `(let ((no-prepend-previous t))
+       ,',@body)))
+
 (defmacro pen-update (&rest body)
   "This wraps around pen function calls to make them update the memoization"
   `(eval
