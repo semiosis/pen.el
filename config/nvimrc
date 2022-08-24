@@ -1739,31 +1739,31 @@ fun! SearchDownDiffCol()
     silent! exe '/\C\%'.virtcol('.').'v\('.charatcursor.'\| \|$\)\@!'
 endf
 
-nnoremap <Esc>_ :call SearchUpDiffCol()<CR>
-nnoremap <Esc>+ :call SearchDownDiffCol()<CR>
-xnoremap <Esc>_ <C-c>:call SearchUpDiffCol() \| call ReselectVisual()<CR>
-xnoremap <Esc>+ <C-c>:call SearchDownDiffCol() \| call ReselectVisual()<CR>
-nnoremap <Esc>- :call SearchUpDiffColPicky()<CR>
-nnoremap <Esc>= :call SearchDownDiffColPicky()<CR>
-xnoremap <Esc>- <C-c>:call SearchUpDiffColPicky() \| call ReselectVisual()<CR>
-xnoremap <Esc>= <C-c>:call SearchDownDiffColPicky() \| call ReselectVisual()<CR>
+nnoremap <silent> <Esc>_ :call SearchUpDiffCol()<CR>
+nnoremap <silent> <Esc>+ :call SearchDownDiffCol()<CR>
+xnoremap <silent> <Esc>_ <C-c>:call SearchUpDiffCol() \| call ReselectVisual()<CR>
+xnoremap <silent> <Esc>+ <C-c>:call SearchDownDiffCol() \| call ReselectVisual()<CR>
+nnoremap <silent> <Esc>- :call SearchUpDiffColPicky()<CR>
+nnoremap <silent> <Esc>= :call SearchDownDiffColPicky()<CR>
+xnoremap <silent> <Esc>- <C-c>:call SearchUpDiffColPicky() \| call ReselectVisual()<CR>
+xnoremap <silent> <Esc>= <C-c>:call SearchDownDiffColPicky() \| call ReselectVisual()<CR>
 
-cmap <Esc>f <C-e><C-u>mess<CR>
-cmap <Esc>d <Esc>dd
-imap <Esc>[2~ <Esc>ZX
-nmap <Esc>[2~ ZX
-cmap <Esc>t normal ge<CR>
-cmap <Esc>e silent! e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
-cmap <Esc>w silent! w!<CR>
-cmap <Esc>; silent! wa!<CR>
-cmap <Esc>p normal <leader>tb<CR>
-cmap <Esc>q silent! q!<CR>
-cmap <Esc>s silent! wqa!<CR>
-cmap <Esc>x silent! bd!<CR>
-cmap <Esc>r silent! wa! \| e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
-"cmap <Esc>g call MinimiseAndWrap()<CR>
-cmap <Esc>g .!mnm<CR>
-cmap <Esc>G .!acronymise \| mnm<CR>
+cmap <silent> <Esc>f <C-e><C-u>mess<CR>
+cmap <silent> <Esc>d <Esc>dd
+imap <silent> <Esc>[2~ <Esc>ZX
+nmap <silent> <Esc>[2~ ZX
+cmap <silent> <Esc>t normal ge<CR>
+cmap <silent> <Esc>e silent! e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
+cmap <silent> <Esc>w silent! w!<CR>
+cmap <silent> <Esc>; silent! wa!<CR>
+cmap <silent> <Esc>p normal <leader>tb<CR>
+cmap <silent> <Esc>q silent! q!<CR>
+cmap <silent> <Esc>s silent! wqa!<CR>
+cmap <silent> <Esc>x silent! bd!<CR>
+cmap <silent> <Esc>r silent! wa! \| e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
+"cmap <silent> <Esc>g call MinimiseAndWrap()<CR>
+cmap <silent> <Esc>g .!mnm<CR>
+cmap <silent> <Esc>G .!acronymise \| mnm<CR>
 
 " Make C-g from inside command mode work like emacs, in that in
 " cancels any current operation.
@@ -1918,8 +1918,7 @@ function! OpenClipInWin()
     let cmd = "tm -f -S -tout -i nw v"
     silent! call system(cmd, @z)
 endfunction
-xmap <CR> "zy;silent! call OpenClipInWin()<CR>"
-
+xmap <CR> "zy;silent! call OpenClipInWin()<CR>
 
 nnoremap <silent> <C-e> :call MovePercent(-5, 'n')<CR>
 nnoremap <silent> <C-t> :call MovePercent(5, 'n')<CR>
