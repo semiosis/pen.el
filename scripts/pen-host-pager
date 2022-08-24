@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ]
+}
+
+: "${EDITOR:="vim"}"
+export EDITOR
+
+pager() {
+    if is_tty; then
+        vim -
+    else
+        cat
+    fi
+}
+
+pager "$@"

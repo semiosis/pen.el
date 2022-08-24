@@ -1281,6 +1281,18 @@ case "$sn" in
     peni) {
         show_banner=n
         sn=pene
+        do_page=y
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -npp) {
+                no_prepend_previous=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
 
         ifunc_name="$1"
         shift
@@ -1291,7 +1303,11 @@ case "$sn" in
 
         ARGS="$(cmd-nice-posix "$@")"
 
-        set -- -e "(pps (progn (idefun $ifunc_name) ($ifunc_name $ARGS)))"
+        if test "$no_prepend_previous" = "y"; then
+            set -- -e "(pps (progn (idefun $ifunc_name) (pen-no-prepend-previous ($ifunc_name $ARGS))))"
+        else
+            set -- -e "(pps (progn (idefun $ifunc_name) ($ifunc_name $ARGS)))"
+        fi
     }
     ;;
 
@@ -2133,10 +2149,19 @@ pen_eval() {
 
 export EXPOSE_ETHEREUM
 export INTERACTIVE
-if test -n "$fuzzy"; then
-    pen_eval "$shcode" | eval "$fuzzy" | pen-str unonelineify
+
+pen_eval_fuzzy_maybe() {
+    if test -n "$fuzzy"; then
+        pen_eval "$shcode" | eval "$fuzzy" | pen-str unonelineify
+    else
+        pen_eval "$shcode"
+    fi
+}
+
+if test "$do_page" = y; then
+    pen_eval_fuzzy_maybe | pen-host-pager
 else
-    pen_eval "$shcode"
+    pen_eval_fuzzy_maybe
 fi
 
 if test "$docker_cmd" = exec && is_tty && test "$INTERACTIVE" = y; then
