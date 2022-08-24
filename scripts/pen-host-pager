@@ -3,8 +3,10 @@ export TTY
 
 is_tty() {
     # If stout is a tty
-    [ -t 1 ]
+    [ -t 1 ] && ! test "$TERM" = "dumb"
 }
+
+echo "$TERM" | tv &>/dev/null
 
 : "${EDITOR:="vim"}"
 export EDITOR

@@ -173,7 +173,7 @@ fun! GetCharDvorak()
 endf
 
 " SUPER IMPORTANT
-function FindChar(mode, count)
+function! FindChar(mode, count)
     if a:mode ==# 'v'
         normal! gv
     endif
@@ -195,7 +195,7 @@ nnoremap f :call FindChar('n', v:count1)<CR>
 xnoremap f :<C-u>call FindChar('v', v:count1)<CR>
 
 " SUPER IMPORTANT
-function FindCharBack(mode, count)
+function! FindCharBack(mode, count)
     if a:mode ==# 'v'
         normal! gv
     endif
@@ -1755,6 +1755,7 @@ nmap <Esc>[2~ ZX
 cmap <Esc>t normal ge<CR>
 cmap <Esc>e silent! e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
 cmap <Esc>w silent! w!<CR>
+cmap <Esc>; silent! wa!<CR>
 cmap <Esc>p normal <leader>tb<CR>
 cmap <Esc>q silent! q!<CR>
 cmap <Esc>s silent! wqa!<CR>
@@ -1977,6 +1978,15 @@ function! SelectWordAndDots()
     normal! viw
     set iskeyword-=.
     set iskeyword-=-
+endfunction
+
+" automatically give executable permissions if file begins with #! and contains
+" '/bin/' in the path
+"use function! not function to overwrite
+function! ModeChange()
+  if getline(1) =~ "^#!"
+      silent !chmod a+x %
+  endif
 endfunction
 
 " It would be nice if this function could work out what () it should
