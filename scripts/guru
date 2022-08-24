@@ -3,6 +3,10 @@ export TTY
 
 sn="$(basename "$0")"
 
+inside-docker-p() {
+    test -f /.dockerenv
+}
+
 if inside-docker-p; then
     if ! inside-tmux-p; then
         # I must also cat into in-tm
@@ -141,6 +145,10 @@ if stdin_exists && ! test -n "$context"; then
 fi
 
 if test -n "$context"; then
+    if ! test -n "$subject"; then
+        subject="$(pen-readln "Guru Topic")"
+    fi
+
     if ! test -n "$subject"; then
         subject="$(echo "$context" | pen-str words 20 | penf --pool pf-get-language-1shot/1)"
     fi
