@@ -1303,27 +1303,13 @@ case "$sn" in
 
         ARGS="$(cmd-nice-posix "$@")"
 
-        # if test "$one_linerise_candidates" = "y"; then
-        #     output_fn=pen-list2str-oneliners
-        # elif test "$output_json" = "y"; then
-        #     output_fn=json-encode-list
-        # else
-        #     output_fn=pen-list2str
-        # fi
-
-        if test "$all" = "y"; then
-            ncompletions_limiter_fn="mapcar 'identity"
-        else
-            ncompletions_limiter_fn=pen-single-generation
-        fi
-
         if test "$no_prepend_previous" = "y"; then
             code="(pps (progn (idefun $ifunc_name) (pen-no-prepend-previous ($ifunc_name $ARGS))))"
         else
             code="(pps (progn (idefun $ifunc_name) ($ifunc_name $ARGS)))"
         fi
 
-        set -- -e "(pen-batch ($ncompletions_limiter_fn (pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (max-generated-tokens $PEN_MAX_GENERATED_TOKENS) (force-temperature $PEN_TEMPERATURE) (force-stop-sequence $PEN_STOP_SEQUENCE)) $code)))"
+        set -- -e "(pen-force ((do-pen-update $PEN_UPDATE) (pen-force-engine $PEN_ENGINE_Q) (max-generated-tokens $PEN_MAX_GENERATED_TOKENS) (force-temperature $PEN_TEMPERATURE) (force-stop-sequence $PEN_STOP_SEQUENCE)) $code)"
     }
     ;;
 
