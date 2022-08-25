@@ -206,6 +206,9 @@ Be mindful of quoting arguments correctly."
 (require 'pen-hippie-expand)
 (require 'pen-compatibility)
 (require 'pen-counsel)
+(require 'pen-selectrum)
+(require 'pen-marginalia)
+(require 'pen-external-tools)
 
 (if (inside-docker-p)
     (progn

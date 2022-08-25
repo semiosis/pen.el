@@ -27,7 +27,7 @@
     (call-interactively 'helm-scroll-up))
    ((major-mode-p 'minibuffer-inactive-mode)
     (call-interactively 'ivy-scroll-up))
-   ((major-mode-p 'dired-mode)
+   ((major-mode-p 'ranger-mode)
     (call-interactively 'ranger-half-page-up))
    (t (call-interactively 'cua-scroll-down))))
 
@@ -38,7 +38,7 @@
     (call-interactively 'helm-scroll-down))
    ((major-mode-p 'minibuffer-inactive-mode)
     (call-interactively 'ivy-scroll-down))
-   ((major-mode-p 'dired-mode)
+   ((major-mode-p 'ranger-mode)
     (call-interactively 'ranger-half-page-down))
    (t (call-interactively 'cua-scroll-up))))
 
