@@ -98,12 +98,14 @@ of exiting.  This function is otherwise like `ivy-done'."
 (defun ivy-scroll-up ()
   (interactive)
   (dotimes (_n 8)
-    (call-interactively 'ivy-previous-line-or-history)))
+    ;; (call-interactively 'ivy-previous-line-or-history)
+    (call-interactively 'ivy-previous-line)))
 
 (defun ivy-scroll-down ()
   (interactive)
   (dotimes (_n 8)
-    (call-interactively 'ivy-next-line-or-history)))
+    ;; (call-interactively 'ivy-next-line-or-history)
+    (call-interactively 'ivy-next-line)))
 
 (define-key ivy-minibuffer-map (kbd "<next>") 'ivy-scroll-down)
 (define-key ivy-minibuffer-map (kbd "<prior>") 'ivy-scroll-up)
