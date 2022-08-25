@@ -308,21 +308,22 @@ commands to use in that buffer.
           (rename-buffer buffer-name t))
       (current-buffer))))
 
-(defun pen-kill-buffer-and-window ()
+(defun pen-kill-buffer-and-window (&optional window-only)
   "Kill the current buffer and delete the selected window."
   (interactive)
   (let ((window-to-delete (selected-window))
-    (buffer-to-kill (current-buffer))
-    (delete-window-hook (lambda () (ignore-errors (delete-window)))))
+        (buffer-to-kill (current-buffer))
+        (delete-window-hook (lambda () (ignore-errors (delete-window)))))
     (unwind-protect
-    (progn
-      (add-hook 'kill-buffer-hook delete-window-hook t t)
-      (if (kill-buffer (current-buffer))
-          (when (eq (selected-window) window-to-delete)
-              (delete-window))))
+        (progn
+          (add-hook 'kill-buffer-hook delete-window-hook t t)
+          (if (or window-only
+                  (kill-buffer (current-buffer)))
+              (when (eq (selected-window) window-to-delete)
+                (delete-window))))
       (ignore-errors
-       (with-current-buffer buffer-to-kill
-         (remove-hook 'kill-buffer-hook delete-window-hook t))))))
+        (with-current-buffer buffer-to-kill
+          (remove-hook 'kill-buffer-hook delete-window-hook t))))))
 
 (defun revert-buffer-no-confirm ()
   "Revert buffer without confirmation."
@@ -574,5 +575,8 @@ If eterm-color doesn't exist, prompt to fetch and compile it.")
 (define-key global-map [xterm-paste] 'pen-paste)
 
 (defun term-update-mode-line ())
+
+(advice-add 'term-set-goto-process-mark :around #'ignore-errors-around-advice)
+(advice-add 'term-goto-process-mark-maybe :around #'ignore-errors-around-advice)
 
 (provide 'pen-term)

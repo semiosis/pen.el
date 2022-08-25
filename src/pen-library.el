@@ -569,19 +569,41 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
           (recenter))
       (widen))))
 
+(defun delay-kill-buffer (&optional b)
+  (let ((buf (or b (current-buffer))))
+    (run-with-timer
+     2 nil
+     (eval
+      `(lambda ()
+         (kill-buffer ,buf))))))
+
+(defun pen-maybe-delay-kill-buffer (&optional b)
+  (let ((buf (or b (current-buffer))))
+    (with-current-buffer buf
+      (if (major-mode-p 'term-mode)
+          (progn
+            (ignore-errors (term-kill-subjob))
+            (delay-kill-buffer b)
+            (bury-buffer b))
+        (kill-this-buffer)))))
+
 (defun pen-kill-this-buffer-volatile (&optional buffer-name)
   "Kill current buffer, even if it has been modified."
   (interactive)
-  ;; This prevents the hang
-  (if (major-mode-p 'term-mode)
-      (term-kill-subjob))
+
+  ;; Kill the process and bury the buffer
+  ;; Use bury buffer
+  
   (if buffer-name
       (switch-to-buffer buffer-name))
   (set-buffer-modified-p nil)
+
   (if (and (local-variable-p 'kill-window-when-done)
            kill-window-when-done)
-      (pen-kill-buffer-and-window)
-    (kill-this-buffer)))
+      (progn
+        (pen-maybe-delay-kill-buffer)
+        (pen-kill-buffer-and-window t))
+    (pen-maybe-delay-kill-buffer)))
 
 (defalias 'pen-kill-buffer-immediately 'pen-kill-this-buffer-volatile)
 
