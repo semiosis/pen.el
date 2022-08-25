@@ -821,6 +821,10 @@ test -d "$REPOS/roswell" || (
 # https://stackoverflow.com/q/70483583
 ros install fukamachi/cl-project
 
+# To use, add this to your $HOME/.emacs:
+# (load (expand-file-name "$HOME/.roswell/helper.el"))
+ros install slime
+
 # mkdir -p /root/.emacs.d
 # cp -a "$REPOS/roswell/lisp/helper.el" /root/.emacs.d/roswell-helper.el
 

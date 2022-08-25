@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -e) {
+        evalit=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+sn="$(basename "$0")"
+
+case "$sn" in
+    *pk) {
+        evalit=y
+    }
+    ;;
+
+    *)
+esac
+
+i=1
+for var in "$@"
+do
+    echo "$i) " "$var" 1>&2
+    i="$(( i + 1))"
+done
+read -n1 c
+if test "$c" = "."; then
+    v pk
+elif test -n "$c" && test "$c" -ge 1 && test "$c" -le "$#"; then
+    if test "$evalit" = "y"; then
+        eval "\$$c"
+    else
+        eval p "\$$c"
+    fi
+fi
