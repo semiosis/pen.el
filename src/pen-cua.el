@@ -27,6 +27,8 @@
     (call-interactively 'helm-scroll-up))
    ((major-mode-p 'minibuffer-inactive-mode)
     (call-interactively 'ivy-scroll-up))
+   ((major-mode-p 'dired-mode)
+    (call-interactively 'ranger-half-page-up))
    (t (call-interactively 'cua-scroll-down))))
 
 (defun pen-cua-scroll-up ()
@@ -36,6 +38,8 @@
     (call-interactively 'helm-scroll-down))
    ((major-mode-p 'minibuffer-inactive-mode)
     (call-interactively 'ivy-scroll-down))
+   ((major-mode-p 'dired-mode)
+    (call-interactively 'ranger-half-page-down))
    (t (call-interactively 'cua-scroll-up))))
 
 (define-key cua-global-keymap (kbd "<prior>") 'pen-cua-scroll-down)
