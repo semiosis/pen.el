@@ -99,19 +99,25 @@
             (new-buffer-from-string output)
           (error "No preview data"))))))
 
-(defun dired-view-file-v (&optional arg)
-  (interactive "P")
-  (let ((file (dired-get-file-for-visit)))
-    (if (or arg (string-equal (current-major-mode-string) "ranger-mode"))
-        (pen-sps (concat "pen-v " (pen-q file)))
-      (ev file))))
-
 (defun dired-view-file-vs (&optional arg)
   (interactive "P")
   (let ((file (dired-get-file-for-visit)))
-    (if (or arg (string-equal (current-major-mode-string) "ranger-mode"))
-        (pen-sps (concat "pen-vs " (pen-q file)))
-      (evs file))))
+    (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
+            (string-equal (current-major-mode-string) "ranger-mode"))
+        (evs file)
+      (progn
+          (setq current-prefix-arg nil)
+          (pen-sps (concat "pen-vs " (pen-q file)))))))
+
+(defun dired-view-file-v (&optional arg)
+  (interactive "P")
+  (let ((file (dired-get-file-for-visit)))
+    (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
+            (string-equal (current-major-mode-string) "ranger-mode"))
+        (ev file)
+      (progn
+          (setq current-prefix-arg nil)
+          (pen-sps (concat "pen-v " (pen-q file)))))))
 
 (defalias 'dired-filter 'dired-narrow)
 
