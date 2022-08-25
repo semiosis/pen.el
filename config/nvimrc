@@ -1620,8 +1620,6 @@ fun! OpenInEmacsSameWindow()
     redraw!
 endf
 
-MapM OpenInEmacsSameWindow q v
-
 function! RTCmdSetup(cmd)
     exe("autocmd TextChanged * silent! call system(".Q(a:cmd).", GetBufferContents())")
     exe("autocmd TextChangedI * silent! call system(".Q(a:cmd).", GetBufferContents())")
@@ -2118,3 +2116,39 @@ xmap <Esc>w y
 nmap <Esc>y<Esc>p yp
 " not really emacs but related
 xmap <Esc>Y Y
+
+fun! MQQuit()
+    if @% == ""
+        qa!
+    else
+        wqa!
+    else
+endf
+
+fun! GoToTop()
+    exe expand("normal! \<Esc>gg")
+endf
+
+fun! Anywhere_gf()
+    silent! normal! gf
+endf
+
+function! AmendRespawn()
+    !vc amend-respawn
+    redraw!
+endfunction
+
+function! CommitRespawn()
+    !vc commit-respawn
+    redraw!
+endfunction
+
+MapM MQQuit q q
+MapM GoToTop g g
+MapM OpenInEmacsSameWindow q v
+MapM Anywhere_gf g f
+MapM ForceQuit g q
+nmap <silent> <Leader>7 ;silent! call AmendRespawn()<CR>
+nmap <silent> <Leader>8 ;silent! call CommitRespawn()<CR>
+nmap <silent> <Leader>9 ;!git difftool HEAD\^\! -- %<CR><C-L>
+
