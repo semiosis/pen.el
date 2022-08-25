@@ -6,8 +6,8 @@ export TTY
 is_tty() { [ -t 1 ]; }
 
 if is_tty; then
-    pen-e "$@"
+    pool pen-e "$@"
 else
     # pen-sps -w pin "$@"
-    pen-sps -w pen-e "$@"
+    pen-sps -w pool pen-e "$@"
 fi

@@ -356,6 +356,11 @@ if [ $# -eq 1 ]; then
     if ! [ -f "$1" ]; then
         w="$(which "$1")"
         r="$?"
+        bn="pen-$(basename -- "$w")"
+        w2="$(which "$bn")"
+        if test -f "$w2"; then
+            w="$w2"
+        fi
 
         if [ "$r" -eq 0 ]; then
 

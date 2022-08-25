@@ -844,3 +844,7 @@ ln -sf ~/.vim/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload
 mkdir -p ~/.vim/bundle
 cp -a /root/repos/pen-emacsd/pen.el/config/vim-bundles/* /root/.vim/bundle
 )
+
+# Required by SaveTemp():
+# /root/.emacs.d/host/pen.el/config/utils.vim
+mkdir -p ~/dump/tmp/

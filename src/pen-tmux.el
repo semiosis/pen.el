@@ -180,7 +180,7 @@ START and END can be in either order."
 
 (defset pen-tm-extra-exports "PEN_PROMPTS_DIR PROMPTS PENEL_DIR PEN_ENGINES_DIR ENGINES PENSIEVE_DIR KHALA_DIR OPENAI_API_EL_DIR")
 
-(defun pen-tm-nw (&optional cmd window-type nw_args input dir)
+(defun pen-tm-nw (&optional cmd window-type nw_args input dir output_b)
   "Runs command in a new window/pane"
   (interactive)
 
@@ -197,47 +197,59 @@ START and END can be in either order."
       (setq cmd "zsh"))
   (if (not (sor window-type))
       (setq window-type "nw"))
-  (if input
-      (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -tout -S " window-type " " nw_args " " (pen-q cmd) " &") input (or dir (get-dir)))
-    (if (display-graphic-p)
-        (pen-e-nw-zsh cmd window-type)
-      (progn
-        (if (and (variable-p 'sh-update)
-                 (eval 'sh-update))
-            (setq cmd (concat "upd " cmd)))
-        (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te " window-type " " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))
-              (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q (or dir (get-dir))) " " (pen-q cmd))))
-          (if (>= (prefix-numeric-value current-prefix-arg) 4)
-              (pen-e-nw-zsh cmd-tm-here window-type)
-            (pen-snc cmd-tm-split)))))))
+  (if output_b
+      (if input
+          (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -sout -S " window-type " " nw_args " " (pen-q cmd) " | cat") input (or dir (get-dir)))
+        (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -sout -S " window-type " " nw_args " " (pen-q cmd) " &") input (or dir (get-dir))))
+    (if input
+        (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -tout -S " window-type " " nw_args " " (pen-q cmd)) input (or dir (get-dir)))
+      (if (display-graphic-p)
+          (pen-e-nw-zsh cmd window-type)
+        (progn
+          (if (and (variable-p 'sh-update)
+                   (eval 'sh-update))
+              (setq cmd (concat "upd " cmd)))
+          (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te " window-type " " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))
+                (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q (or dir (get-dir))) " " (pen-q cmd))))
+            (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                (pen-e-nw-zsh cmd-tm-here window-type)
+              (pen-snc cmd-tm-split))))))))
 
-(defun pen-nw (&optional cmd nw_args input dir)
+(defun pen-nw (&optional cmd nw_args input dir output_b)
   "Runs command in a sensible split"
   (interactive)
-  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+  (if (and
+       (not output_b)
+       (>= (prefix-numeric-value current-prefix-arg) 8))
       (pen-e-nw 'new-buffer-from-string)
-    (pen-tm-nw cmd "nw" nw_args input dir)))
+    (pen-tm-nw cmd "nw" nw_args input dir output_b)))
 
-(defun pen-sps (&optional cmd nw_args input dir)
+(defun pen-sps (&optional cmd nw_args input dir output_b)
   "Runs command in a sensible split"
   (interactive)
-  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+  (if (and
+       (not output_b)
+       (>= (prefix-numeric-value current-prefix-arg) 8))
       (pen-e-sps 'new-buffer-from-string)
     (pen-tm-nw cmd "sps" nw_args input dir)))
 (defalias 'pen-tm-sps 'pen-sps)
 
-(defun pen-sph (&optional cmd nw_args input dir)
+(defun pen-sph (&optional cmd nw_args input dir output_b)
   "Runs command in a horizontal split"
   (interactive)
-  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+  (if (and
+       (not output_b)
+       (>= (prefix-numeric-value current-prefix-arg) 8))
       (pen-e-sph 'new-buffer-from-string)
     (pen-tm-nw cmd "sph" nw_args input dir)))
 (defalias 'pen-tm-sph 'pen-sph)
 
-(defun pen-spv (&optional cmd nw_args input dir)
+(defun pen-spv (&optional cmd nw_args input dir output_b)
   "Runs command in a vertical split"
   (interactive)
-  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+  (if (and
+       (not output_b)
+       (>= (prefix-numeric-value current-prefix-arg) 8))
       (pen-e-spv 'new-buffer-from-string)
     (pen-tm-nw cmd "spv" nw_args input dir)))
 (defalias 'pen-tm-spv 'pen-spv)
