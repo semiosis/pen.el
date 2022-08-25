@@ -2,7 +2,7 @@
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
-pen-restart-clipboard
+# pen-restart-clipboard
 
 xrdb -merge /root/.Xresources
 xrdb -load /root/.Xresources

@@ -1614,7 +1614,7 @@ case "$fnspec" in
         cd "$dn"
         cabal build
         # pet cabal repl
-        pet cabal repl
+        pet nvt -2 cabal repl
         exit "$?"
     }
     ;;
