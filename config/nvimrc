@@ -2104,8 +2104,6 @@ if filereadable(pen_path)
   exe "source " . pen_path
 endif
 
-call NumberSyntax() | call GeneralSyntax()
-
 nnoremap Y ^vg_o
 nnoremap z= :set spellz=
 
@@ -2152,3 +2150,8 @@ nmap <silent> <Leader>7 ;silent! call AmendRespawn()<CR>
 nmap <silent> <Leader>8 ;silent! call CommitRespawn()<CR>
 nmap <silent> <Leader>9 ;!git difftool HEAD\^\! -- %<CR><C-L>
 
+autocmd BufEnter * call GeneralSyntax()
+" autocmd BufEnter * call NumberSyntax()
+" autocmd BufEnter * call GeneralSyntax()
+" autocmd BufReadPre * call NumberSyntax()
+" autocmd BufReadPre * call GeneralSyntax()

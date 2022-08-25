@@ -1,7 +1,7 @@
+(require 'hl-line)
+
 ;; This didn't quite work to remove the highlighted line
 ;; From term running nvc ghci
-
-(require 'hl-line)
 (defun hl-line-highlight ()
   "Activate the Hl-Line overlay on the current line."
   (if hl-line-mode       ; Might be changed outside the mode function.
