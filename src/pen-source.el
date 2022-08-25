@@ -66,6 +66,10 @@
   (interactive)
   (dired (f-join pen-penel-directory "scripts")))
 
+(defun pen-acolyte-dired-config ()
+  (interactive)
+  (dired (f-join pen-penel-directory "config")))
+
 (defun pen-dired-rhizome ()
   (interactive)
   (dired pen-rhizome-directory))

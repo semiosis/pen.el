@@ -572,6 +572,9 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
 (defun pen-kill-this-buffer-volatile (&optional buffer-name)
   "Kill current buffer, even if it has been modified."
   (interactive)
+  ;; This prevents the hang
+  (if (major-mode-p 'term-mode)
+      (term-kill-subjob))
   (if buffer-name
       (switch-to-buffer buffer-name))
   (set-buffer-modified-p nil)

@@ -198,6 +198,7 @@
 (sslk "ldqC" 'pen-acolyte-dired-creation)
 (sslk "ldq7" 'pen-dired-channel)
 (sslk "ldqs" 'pen-acolyte-dired-scripts)
+(sslk "ldqc" 'pen-acolyte-dired-config)
 (sslk "lds" 'pen-acolyte-dired-scripts)
 
 (if (inside-docker-p)
