@@ -2271,4 +2271,6 @@ If any of the suggest predicates evaluated to t, then suggest the function"
              (setq start-file nil))))
     (if root (file-name-as-directory root))))
 
+(define-key global-map (kbd "C-a") 'beginning-of-line-or-indentation)
+
 (provide 'pen-support)
