@@ -16,6 +16,9 @@ export TERM=screen-256color
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 
+export SCRIPTS=$HOME/scripts
+export SCRIPTS=/root/.emacs.d/host/pen.el/scripts
+
 export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$EMACSD/host/pen.el/scripts-host:$EMACSD/pen.el/scripts-host:$PATH

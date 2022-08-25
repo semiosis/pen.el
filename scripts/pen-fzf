@@ -1,7 +1,8 @@
 #!/bin/bash
 # export TTY="$(tty)"
 
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+: "${FZF_DEFAULT_COMMAND:="ag --hidden --ignore .git -g '' \ pen-find-ignore-filter"}"
+export FZF_DEFAULT_COMMAND
 
 # export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
 # export FZF_DEFAULT_COMMAND="find . -maxdepth 1 -printf '%P\n'"

@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+# emacs M-" and M-q M-q
+# pen-helm-fzf.sh
+# pen-helm-fzf-d2.sh
+
+# Ignore directories which are not relevent for the above commands
+
+sed -e '/^newdist\//d' \
+    -e '/^\.stack-work\//d' \
+    -e '/\.git\//d' \
+    -e '/^dist-newstyle\//d'

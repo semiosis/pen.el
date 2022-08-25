@@ -173,4 +173,7 @@ prompt additionally for EXTRA-AG-ARGS."
 
 (define-key pen-map (kbd "M-q M-q") 'counsel-fzf-here)
 
+;; (setq counsel-fzf-cmd "fzf -f \"%s\"")
+(setq counsel-fzf-cmd "helm-fzf-d2.sh -f \"%s\"")
+
 (provide 'pen-counsel)
