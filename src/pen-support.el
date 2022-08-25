@@ -1374,6 +1374,9 @@ when s is a string, set the clipboard to s"
     (kill-buffer buf)
     (str lang)))
 
+(defalias 'current-lang 'pen-detect-language)
+(defalias 'buffer-language 'pen-detect-language)
+
 (defun mode-to-lang (&optional modesym)
   (if (not modesym)
       (setq modesym major-mode))

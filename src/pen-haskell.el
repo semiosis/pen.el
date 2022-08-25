@@ -410,4 +410,21 @@
         (e pfp)
       pfp)))
 
+(defun haskell-session-choose ()
+  "Find a session by choosing from a list of the current sessions."
+  (when haskell-sessions
+    (let* ((session-name (funcall haskell-completing-read-function
+                                  "Choose Haskell session: "
+                                  (mapcar 'haskell-session-name haskell-sessions)
+                                  (comment (cl-remove-if (lambda (name)
+                                                           (and haskell-session
+                                                                (string= (haskell-session-name haskell-session)
+                                                                         name)))
+                                                         (mapcar 'haskell-session-name haskell-sessions)))))
+           (session (cl-find-if (lambda (session)
+                                  (string= (haskell-session-name session)
+                                           session-name))
+                                haskell-sessions)))
+      session)))
+
 (provide 'pen-haskell)

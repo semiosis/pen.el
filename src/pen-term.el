@@ -341,7 +341,9 @@ commands to use in that buffer.
     (if (not (major-mode-p 'comint-mode))
         (force-revert-buffer))
 
-    (pen-kill-buffer-and-window)))
+    (if (major-mode-p 'term-mode)
+        (pen-kill-this-buffer-volatile)
+      (pen-kill-buffer-and-window))))
 
 (defun pen-save-and-kill-buffer-and-window ()
   (interactive)
