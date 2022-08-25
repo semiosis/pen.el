@@ -2309,7 +2309,7 @@ May use to generate code from comments."
 
   (setq fp (pen-umn fp))
   (cond
-   ((pen-snq "which fp") (find-file (chomp (pen-sn (concat "which " fp)))))
+   ((pen-snq (pen-cmd "which" fp)) (find-file (chomp (pen-sn (concat "which " fp)))))
    ((pen-snq (pen-cmd "test" "-f" fp)) (find-file (chomp fp)))
    ((pen-snq (pen-cmd "test" "-d" fp)) (find-file (chomp fp)))
    ((string-match "^/[^:]+:" fp) (find-file (chomp fp)))

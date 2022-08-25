@@ -425,6 +425,19 @@
                                   (string= (haskell-session-name session)
                                            session-name))
                                 haskell-sessions)))
+      (haskell-interactive-bring)
       session)))
+
+(defun haskell-interactive-kill ()
+  "Kill the buffer and (maybe) the session."
+  (interactive)
+  (when (eq major-mode 'haskell-interactive-mode)
+    (haskell-mode-toggle-interactive-prompt-state)
+    (unwind-protect
+        (when (and (boundp 'haskell-session)
+                   haskell-session
+                   t)
+          (haskell-session-kill t)))
+    (haskell-mode-toggle-interactive-prompt-state t)))
 
 (provide 'pen-haskell)
