@@ -114,6 +114,7 @@
   ("r" (hot-expand "<s" "racket") "racket")
   ("~" (hot-expand "<s" "racket-sublang") "racket")
   ("L" (hot-expand "<s" "prolog") "prolog")
+  ("I" (hot-expand "<s" "common-lisp") "common lisp")
   (":" (hot-expand "<s" "problog") "problog")
   ("f" (hot-expand "<s" "conf") "conf")
   ;; ("H" (hot-expand "<s" "hy") "hy")
