@@ -10,4 +10,7 @@ export TTY
 sed -e '/^newdist\//d' \
     -e '/^\.stack-work\//d' \
     -e '/\.git\//d' \
+    -e '/\.clj-kondo\//d' \
+    -e '/\.lsp\//d' \
+    -e '/^target\//d' \
     -e '/^dist-newstyle\//d'
