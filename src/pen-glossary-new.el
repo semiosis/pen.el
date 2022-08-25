@@ -15,7 +15,7 @@
 (defvar pen-glossary-files nil)
 
 (defun pen-glossary-window-start ()
-  (max 1 (- (window-start) pen-glossary-overflow-chars)))
+  (max (point-min) (- (window-start) pen-glossary-overflow-chars)))
 
 (defun pen-glossary-window-end ()
   (min (point-max) (+ (window-end) pen-glossary-overflow-chars)))
