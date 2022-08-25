@@ -598,12 +598,19 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
       (switch-to-buffer buffer-name))
   (set-buffer-modified-p nil)
 
-  (if (and (local-variable-p 'kill-window-when-done)
-           kill-window-when-done)
-      (progn
-        (pen-maybe-delay-kill-buffer)
-        (pen-kill-buffer-and-window t))
-    (pen-maybe-delay-kill-buffer)))
+  (let ((win (selected-window))
+        (isterm (major-mode-p 'term-mode)))
+    (pen-maybe-delay-kill-buffer)
+    (if (or (and (local-variable-p 'kill-window-when-done)
+                 kill-window-when-done)
+            isterm)
+        (if (eq win (selected-window))
+            (try
+             (pen-kill-buffer-and-window t)
+             ;; when killing pet with pen-kill-buffer-immediately
+             ;; pen-kill-buffer-and-window will error. On that case,
+             ;; delete the frame
+             (delete-frame))))))
 
 (defalias 'pen-kill-buffer-immediately 'pen-kill-this-buffer-volatile)
 
