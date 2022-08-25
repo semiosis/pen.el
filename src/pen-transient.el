@@ -101,6 +101,8 @@ ARGLIST.  The infix arguments are usually accessed by using
        ;; Add name to the end so I can execute and run a transient definition
        ',name)))
 
+(defalias 'tdp 'transient-define-prefix)
+(defalias 'tds 'transient-define-suffix)
 
 (defun pen-create-transient (name kvps searchfun kwsearchfun)
   (let ((sym (intern (concat name "-transient")))
@@ -166,7 +168,7 @@ ARGLIST.  The infix arguments are usually accessed by using
 
 ;; https://github.com/magit/transient/wiki/Developer-Quick-Start-Guide
 
-(transient-define-prefix transient-toys-hello ()
+(tdp transient-toys-hello ()
   "Say hello"
   [("h" "hello" (lambda () (interactive) (message "hello")))])
 
@@ -180,20 +182,20 @@ ARGLIST.  The infix arguments are usually accessed by using
             'face 'success)))
 
 ;; (comment
-;;  (transient-define-prefix transient-toys-wave ()
+;;  (tdp transient-toys-wave ()
 ;;    "Wave at the user"
 ;;    [("w" "wave" transient-toys--wave)])
 
 ;;  (transient-toys-wave))
 
 ;; Transient set to t means the suffix wont exit
-(transient-define-prefix transient-toys-wave ()
+(tdp transient-toys-wave ()
   "Wave at the user"
   [("w" "wave" transient-toys--wave :transient t)])
 
 ;; (transient-toys-wave)
 
-(transient-define-suffix transient-toys--wave ()
+(tds transient-toys--wave ()
   "Wave at the user"
   :transient t
   :key "C-w"
@@ -203,7 +205,7 @@ ARGLIST.  The infix arguments are usually accessed by using
             (format "Waves at %s" (current-time-string))
             'face 'success)))
 
-(transient-define-prefix transient-toys-wave ()
+(tdp transient-toys-wave ()
   "Wave at the user"
   [(transient-toys--wave)])
 

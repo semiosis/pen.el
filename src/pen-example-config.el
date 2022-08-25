@@ -680,8 +680,12 @@
       (define-key pen-map (kbd "M-l M-s M-f") 'yas-tables-imenu)
       (define-key pen-map (kbd "M-l S") 'pen-spv)
       (define-key pen-map (kbd "M-l M-S") 'pen-spv)
-      (define-key pen-map (kbd "M-l n") 'pen-nw)
-      (define-key pen-map (kbd "M-l M-n") 'pen-nw)
+
+      ;; Reserve for this
+      ;; (define-key global-map (kbd "M-l M-n M-n") 'open-next-file)
+
+      ;; (define-key pen-map (kbd "M-l n") 'pen-nw)
+      ;; (define-key pen-map (kbd "M-l M-n") 'pen-nw)
       (define-key pen-map (kbd "M-l N") 'pen-sps)
       (define-key pen-map (kbd "M-l M-N") 'pen-sps)))
 

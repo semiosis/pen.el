@@ -242,4 +242,8 @@ START and END can be in either order."
     (pen-tm-nw cmd "spv" nw_args input dir)))
 (defalias 'pen-tm-spv 'pen-spv)
 
+(define-key pen-map (kbd "M-l M-I M-N") 'pen-nw)
+(define-key pen-map (kbd "M-l M-I M-I") 'pen-sps)
+(define-key pen-map (kbd "M-l M-I M-J") 'pen-spv)
+
 (provide 'pen-tmux)
