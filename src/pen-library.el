@@ -954,10 +954,12 @@ non-nil."
 	                     (if truncate-lines "enabled" "disabled")))
 
 (defun pen-nsfa (cm &optional dir)
-  (pen-sn (concat
-           (if dir (concat " CWD=" (pen-q dir) " ")
-             "")
-           " pen-nsfa -E " (pen-q cm)) nil (or dir (cwd))))
+  (let ((qdir (pen-q dir)))
+    (pen-sn (concat
+             (if dir (concat " cd " qdir "; "
+                             " CWD=" qdir " ")
+               "")
+             " pen-nsfa -E " (pen-q cm)) nil (or dir (cwd)))))
 
 (defun cursor-at-region-start-p ()
   "If the cursor is at the start of the region"

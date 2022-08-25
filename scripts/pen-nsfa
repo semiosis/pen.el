@@ -29,7 +29,7 @@ else
     CMD="$(cmd "$@")"
 fi
 
-slug="$(echo "$CMD" | tr -d '\n' | slugify | cut -c -40)"
+slug="$(echo "$CMD--$CWD" | tr -d '\n' | slugify | cut -c -40)"
 
 tf_new_script="/tmp/nsfa-$slug.sh"
 rm -f "$tf_new_script"
@@ -46,6 +46,7 @@ HEREDOC
 printf -- "%s\n" "$scriptcode" >> "$tf_new_script"
 export PATH=$HOME/scripts:$HOME/scripts/container:$PATH
 
+CWD="$(printf -- "%s" "$CWD" | sed "s=^~=$HOME=")"
 if test -n "$CWD" && test -d "$CWD"; then
     cmd cd "$CWD" | awk 1 >> "$tf_new_script"
 fi

@@ -391,7 +391,14 @@
 (defun dante-ghcid ()
   (interactive)
   (pen-sps "dante-ghcid"
-           "-d" nil (locate-dominating-file-glob default-directory "*.cabal"))
+           "-d" nil (locate-dominating-file-glob default-directory "*.cabal")))
+
+(defalias 'sps-dante-ghcid 'dante-ghcid)
+
+(defun esps-dante-ghcid ()
+  (interactive)
+  (pen-term-sps "dante-ghcid"
+                (locate-dominating-file-glob default-directory "*.cabal"))
   ;; (pen-sps "cabal v2-repl --builddir=newdist/dante" nil nil (locate-dominating-file-glob default-directory "*.cabal"))
   )
 

@@ -161,7 +161,8 @@
                              pen-interpreter-import
                              haskell-show-hdc-readme
                              dante-repl
-                             dante-ghcid
+                             sps-dante-ghcid
+                             esps-dante-ghcid
                              haskell-hdc-thing
 
                              pen-haskell-get-type
