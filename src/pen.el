@@ -218,7 +218,8 @@ Be mindful of quoting arguments correctly."
       (require 'pen-auto-mode-load)
       (require 'pen-hydra)
       (require 'pen-prog)
-      (require 'pen-paste)))
+      (require 'pen-paste)
+      (require 'pen-only)))
 
 (require 'pen-post-bindings)
 

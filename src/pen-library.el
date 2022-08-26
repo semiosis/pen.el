@@ -798,7 +798,9 @@ buffer which is not included when this function returns"
 
 (defun switch-to-previous-buffer ()
   (interactive)
-  (switch-to-buffer (other-buffer (current-buffer) 1)))
+  (if (string-equal (current-major-mode-string) "ranger-mode")
+      (ranger-close)
+    (switch-to-buffer (other-buffer (current-buffer) 1))))
 
 (defmacro pen-with (package &rest body)
   "This attempts to run code dependent on a package and otherwise doesn't run the code."

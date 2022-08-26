@@ -1,5 +1,7 @@
 (require 'ranger)
 
+(setq ranger-key nil)
+
 (defun pen-term-ranger ()
   (interactive)
   ;; ranger just doesn't look good in term
@@ -264,6 +266,11 @@ is set, show literally instead of actual buffer."
 (define-key ranger-mode-map (kbd "M-V") 'dired-view-file-vs)
 (define-key ranger-mode-map (kbd "<next>") 'ranger-half-page-down)
 (define-key ranger-mode-map (kbd "<prior>") 'ranger-half-page-up)
+(define-key ranger-mode-map (kbd "C-u") nil)
+(define-key ranger-mode-map (kbd "C-d") nil)
+;; new tab
+(define-key ranger-mode-map (kbd "C-n") nil)
+(define-key ranger-mode-map (kbd "C-p") nil)
 (define-key ranger-mode-map (kbd "M-^") 'pen-vc-cd-top-level)
 (define-key ranger-mode-map (kbd "r") 'pen-ranger-to-dired)
 (define-key ranger-mode-map (kbd "M-r") 'pen-sps-ranger)
@@ -271,5 +278,17 @@ is set, show literally instead of actual buffer."
 
 (define-key global-map (kbd "M-R") 'ranger)
 (define-key global-map (kbd "M-E") 'ranger)
+
+;; Setting window-dedicated solves the ranger crashes
+;; when running term, switching buffers etc.
+(defun ranger-sub-window-setup ()
+  "Parent window options."
+  ;; allow mouse click to jump to that directory
+  (setq-local mouse-1-click-follows-link nil)
+  (local-set-key (kbd  "<mouse-1>") 'ranger-find-file)
+  (set-window-dedicated-p (selected-window) t)
+  ;; set header-line
+  (when ranger-modify-header
+    (setq header-line-format `(:eval (,ranger-header-func)))))
 
 (provide 'pen-ranger)

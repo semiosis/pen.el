@@ -517,4 +517,6 @@ Call `helm' only with SOURCES and BUFFER as args."
 ;; This seems dodgy but it's needed to prevent errors after killing a terminal with pen-kill-buffer-immediately
 (advice-add 'set-buffer :around #'ignore-errors-around-advice)
 
+(define-key helm-read-file-map (kbd "C-h") (kbd "DEL"))
+
 (provide 'pen-helm)

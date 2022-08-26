@@ -112,12 +112,12 @@
 (defun dired-view-file-v (&optional arg)
   (interactive "P")
   (let ((file (dired-get-file-for-visit)))
-    (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
+    (if (or (not (>= (prefix-numeric-value current-prefix-arg) 4))
             (string-equal (current-major-mode-string) "ranger-mode"))
-        (ev file)
-      (progn
-          (setq current-prefix-arg nil)
-          (pen-sps (concat "pen-v " (pen-q file)))))))
+        (progn
+        (setq current-prefix-arg nil)
+        (pen-sps (concat "pen-v " (pen-q file))))
+      (ev file))))
 
 (defalias 'dired-filter 'dired-narrow)
 
