@@ -833,6 +833,11 @@ ros install fukamachi/cl-project
 # (load (expand-file-name "$HOME/.roswell/helper.el"))
 ros install slime
 
+quicklisp-install str
+quicklisp-install listopia
+quicklisp-install sycamore
+quicklisp-install access
+
 # mkdir -p /root/.emacs.d
 # cp -a "$REPOS/roswell/lisp/helper.el" /root/.emacs.d/roswell-helper.el
 
