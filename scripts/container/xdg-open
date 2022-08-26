@@ -14,4 +14,5 @@ export TTY
 
 # nw o "$@"
 
-nw zrepl -0 "$@"
+# The unbuffer is needed to prevent nw from thinking it has stdin
+unbuffer nw zrepl -0 "$@"
