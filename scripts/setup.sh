@@ -865,3 +865,5 @@ cp -a /root/repos/pen-emacsd/pen.el/config/vim-bundles/* /root/.vim/bundle
 mkdir -p ~/dump/tmp/
 
 pyf problog
+
+cargo install grex

@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+if stdin_exists; then
+    input="$(cat)"
+    nlines="$(p "$input" | awk 1 | wc -l)"
+
+    if test "$nlines" = 1; then
+        cases="$input"
+    else
+        cases="$(p "$input" | q -l | s join ' ')"
+    fi
+
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+
+    eval "$HOME/.cargo/bin/grex $CMD $cases" | awk 1
+else
+    $HOME/.cargo/bin/grex "$@" | awk 1
+fi
