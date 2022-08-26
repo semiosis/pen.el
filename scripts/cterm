@@ -78,9 +78,19 @@ else
     CMD="$(cmd-nice-posix "$@")"
 fi
 
+case "$CMD" in
+    zsh|"\"zsh"\") {
+        USE_TMUX=y
+    }
+    ;;
+
+    *)
+esac
+
 if test "$USE_TMUX" = "y"; then
     # tmmaybe=(tmwr)
     CMD="tmwr $CMD"
+    set -- tmwr "$@"
 fi
 
 inside-docker-p() {

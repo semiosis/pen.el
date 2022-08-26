@@ -140,7 +140,7 @@ case "$d" in
     N) cmd="CWD=$NOTES/programs/ns zsh" ;;
     f) cmd="zcd $NOTES/ws/fuzzy" ;;
     I) cmd="CWD=$NOTES/programs/ci zsh" ;;
-    s) cmd="CWD=$HOME/scripts zsh" ;;
+    s) cmd="CWD=$SCRIPTS zsh" ;;
     y) cmd="CWD=$HOME/scripts-early zsh" ;;
     S) cmd="CWD=$HOME/sh-source zsh" ;;
     u) cmd="venv-tablist" ;;
