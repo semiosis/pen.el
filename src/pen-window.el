@@ -2,6 +2,9 @@
 
 (setq split-height-threshold 80)
 (setq split-width-threshold 80)
+;; Ignore split window horizontally
+;; (setq split-width-threshold nil)
+;; (setq split-width-threshold 160)
 
 ;; This is no longer necessary. I have solved the problem with j:ranger-sub-window-setup
 (comment

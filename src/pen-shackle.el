@@ -16,10 +16,11 @@
 (defun pen--shackle-sensible-alignment (&optional window)
   (interactive)
   (let ((window (or window (selected-window))))
-    (or (and (window-splittable-p window)
-             'below)
-        (and (window-splittable-p window t)
+    ;; Prioritise splitting right
+    (or (and (window-splittable-p window t)
              'right)
+        (and (window-splittable-p window)
+             'below)
         (and
          ;; If WINDOW is the only usable window on its frame (it is
          ;; the only one or, not being the only one, all the other
@@ -117,6 +118,7 @@
             ("\\* docker image inspect.*" :regexp t :ignore nil :select t :same t)
             ("\\* docker container inspect.*" :regexp t :ignore nil :select t :same t)
             ("*undo-tree*" :size 0.25 :align pen--shackle-sensible-alignment)
+            ("*haskell-test*" :size 0.25 :align pen--shackle-sensible-alignment)
             ("\\*doc-override.*" :regexp t :size 0.25 :align pen--shackle-sensible-alignment)
             ("*Google Translate*" :size 0.25 :align pen--shackle-sensible-alignment :select t)
             ("*Flycheck error messages*" :size 0.25 :align pen--shackle-sensible-alignment :select nil)
