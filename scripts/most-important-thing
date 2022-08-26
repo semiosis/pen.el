@@ -4,10 +4,15 @@ export TTY
 export UPDATE=y
 
 statement="$@"
-: "${statement:="The best things in life are free."}"
-while :; do
-    statement="$(pen -u pf-most-important-thing/1 "$statement")"
-    echo "$statement"
+: "${statement:="Love the Lord your God with all your heart, soul and mind, and love your neighbour as yourself."}"
 
+if ! test "$#" -gt 0; then
+    echo "$statement"
+    echo
+fi
+
+while :; do
+    statement="$(pen --pool pf-most-important-thing/1 "$statement")"
+    echo "$statement"
     echo
 done
