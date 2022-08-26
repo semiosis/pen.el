@@ -118,7 +118,7 @@
             ("\\* docker image inspect.*" :regexp t :ignore nil :select t :same t)
             ("\\* docker container inspect.*" :regexp t :ignore nil :select t :same t)
             ("*undo-tree*" :size 0.25 :align pen--shackle-sensible-alignment)
-            ("*haskell-test*" :size 0.25 :align pen--shackle-sensible-alignment)
+            ("*haskell-test*" :size 0.40 :align pen--shackle-sensible-alignment)
             ("\\*doc-override.*" :regexp t :size 0.25 :align pen--shackle-sensible-alignment)
             ("*Google Translate*" :size 0.25 :align pen--shackle-sensible-alignment :select t)
             ("*Flycheck error messages*" :size 0.25 :align pen--shackle-sensible-alignment :select nil)

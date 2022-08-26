@@ -8,7 +8,6 @@
 
 (column-number-mode 1)
 
-
 ;; Default Encoding
 (prefer-coding-system 'utf-8-unix)
 (set-locale-environment "en_US.UTF-8")

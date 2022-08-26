@@ -31,6 +31,10 @@
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))
+(defset haskell-interactive-mode-funcs `(haskell-process-restart
+                                         ,(dff (customize-variable 'haskell-process-log))
+                                         ,(dff (customize-variable 'haskell-process-show-debug-tips))
+                                         customize-mode))
 
 (defset prolog-mode-funcs '(ediprolog-consult
                             ediprolog-dwim))

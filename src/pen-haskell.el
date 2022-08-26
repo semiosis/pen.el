@@ -440,4 +440,6 @@
           (haskell-session-kill t)))
     (haskell-mode-toggle-interactive-prompt-state t)))
 
+(setq haskell-process-show-debug-tips nil)
+
 (provide 'pen-haskell)
