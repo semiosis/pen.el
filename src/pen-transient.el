@@ -243,6 +243,7 @@ ARGLIST.  The infix arguments are usually accessed by using
    [:description (lambda () (format "Group %s" (cl-gensym)))
                  ("wa" "wave all" transient-toys--wave)]])
 
+;; Arguments
 (tdp transient-toys-wave ()
   "Wave at the user"
 
@@ -256,6 +257,22 @@ ARGLIST.  The infix arguments are usually accessed by using
     ("-f" "argument with forced classs" "--forced-class " :class transient-option)
     ("I" "argument with inline" ("-i" "--inline-shortarg="))
     ("S" "inline shortarg switch" ("-n" "--inline-shortarg-switch"))]]
+
+  ["Commands"
+   ("ws" "wave some" transient-toys--wave)
+   ("wb" "wave better" transient-toys--wave)])
+
+;; default values
+(tdp transient-toys-wave ()
+  "Wave at the user"
+
+  :value '("--toggle" "--value=default")
+
+  ["Arguments"
+   ("-s" "switch" "--switch")
+   ("-a" "argument" "--argument=")
+   ("t" "toggle" "--toggle")
+   ("v" "value" "--value=")]
 
   ["Commands"
    ("ws" "wave some" transient-toys--wave)

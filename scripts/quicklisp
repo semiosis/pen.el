@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+# Installed through ros
+
+script="/root/.roswell/lisp/quicklisp/setup.lisp"
+
+bin=sbcl
+bin="ros -Q run"
+
+logdir="$NOTES/ws/lisp/rlwrap"
+mkdir -p "$logdir"
+histfile="$logdir/quicklisp_history.log"
+compfile="$logdir/quicklisp_completions.log"
+touch "$histfile"
+touch "$compfile"
+eval "rlwrap -H \"$histfile\" -f \"$compfile\" $bin --load \"$script\""
