@@ -29,6 +29,7 @@
                            dired-toggle-dumpd-dir
                            pen-sps-ranger))
 (defset ranger-mode-funcs '(open-main
+                            ranger-hacky-fix
                             pen-sps-ranger))
 
 (defset prolog-mode-funcs '(ediprolog-consult

@@ -291,4 +291,21 @@ is set, show literally instead of actual buffer."
   (when ranger-modify-header
     (setq header-line-format `(:eval (,ranger-header-func)))))
 
+;; Tabs have been a problem
+(defun ranger-make-tab (index name path)
+  (never
+   (let ((new-tab (ranger--new-tab :name name :path path)))
+     (r--aput ranger-t-alist
+              index
+              new-tab))))
+
+(defun ranger-hacky-fix ()
+  (interactive)
+
+  (setq ranger-w-alist nil)
+  (setq ranger-t-alist nil)
+  (setq ranger-current-tab nil)
+  (setq ranger-undo-tab nil)
+  (ranger-close))
+
 (provide 'pen-ranger)
