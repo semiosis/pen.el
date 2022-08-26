@@ -19,8 +19,11 @@
 ;; I probably don't want either of these:
 ;; The problem is the browser GUI needs it.
 ;; (define-key function-key-map (kbd "M-h") 'hyperify)
+(define-key global-map (kbd "C-M-t") nil)
+(define-key function-key-map (kbd "C-M-t") 'hyperify)
 ;; M-h is usually used for org-mark-element, my-lispy-select-parent-sexp, etc.
-;; However, it's an incredibly convenient binding...
+;; However, it's an incredibly convenient binding..
+;; Which would be great for hyper
 (define-key function-key-map (kbd "M-H") 'hyperify)
 
 (define-key global-map (kbd "M-_") 'irc-find-prev-line-with-diff-char)
