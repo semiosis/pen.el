@@ -53,10 +53,14 @@
 
 (defun pen-term-paste ()
   (interactive)
-  (xc (pen-mnm (xc nil t t)) t t)
-  (if (>= (prefix-numeric-value current-prefix-arg) 4)
-      (term--xterm-paste)
-    (term-paste)))
+  (if (major-mode-p 'term-mode)
+      ;; M-F3
+      (term-send-raw-string "[1;3R")
+    (progn
+      (xc (pen-mnm (xc nil t t)) t t)
+      (if (>= (prefix-numeric-value current-prefix-arg) 4)
+          (term--xterm-paste)
+        (term-paste)))))
 
 (defun pen-term-clean-user-prompt (&optional input)
   (interactive (list (pen-preceding-text-line)))
@@ -337,13 +341,16 @@ commands to use in that buffer.
 
 (defun pen-revert-kill-buffer-and-window ()
   (interactive)
-  (ignore-errors
-    (if (not (major-mode-p 'comint-mode))
-        (force-revert-buffer))
+  (if (major-mode-p 'term-mode)
+      ;; M-F4
+      (term-send-raw-string "[1;3S")
+    (ignore-errors
+      (if (not (major-mode-p 'comint-mode))
+          (force-revert-buffer))
 
-    (if (major-mode-p 'term-mode)
-        (pen-kill-this-buffer-volatile)
-      (pen-kill-buffer-and-window))))
+      (if (major-mode-p 'term-mode)
+          (pen-kill-this-buffer-volatile)
+        (pen-kill-buffer-and-window)))))
 
 (defun pen-save-and-kill-buffer-and-window ()
   (interactive)

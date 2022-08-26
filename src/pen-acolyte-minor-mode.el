@@ -18,17 +18,20 @@
 
 (defun pen-kill-buffer-and-frame (&optional force)
   (interactive)
-  (cond
-   ((>= (prefix-numeric-value current-prefix-arg) 4)
-    ;; (pen-kill-emacs)
-    (penq))
-   (t
-    (if (or
-         force
-         (yn "Close Pen buffer and frame?"))
-        (progn
-          (kill-buffer)
-          (delete-frame nil t))))))
+  (if (major-mode-p 'term-mode)
+      ;; M-F1
+      (term-send-raw-string "[1;9P")
+    (cond
+     ((>= (prefix-numeric-value current-prefix-arg) 4)
+      ;; (pen-kill-emacs)
+      (penq))
+     (t
+      (if (or
+           force
+           (yn "Close Pen buffer and frame?"))
+          (progn
+            (kill-buffer)
+            (delete-frame nil t)))))))
 
 (defun pen-delete-frame (&optional force)
   (interactive)
