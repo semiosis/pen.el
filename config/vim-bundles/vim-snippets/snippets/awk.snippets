@@ -1,0 +1,271 @@
+extends awkshell
+
+# cannot use /usr/bin/env because it does not support parameters (as -f)
+snippet #g
+	#!/usr/bin/gawk -f
+
+snippet # #!/usr/bin/awk -f
+	#!/usr/bin/awk -f
+
+# @include is a gawk extension
+snippet inc @include
+	@include "${1}"${0}
+
+# @load is a gawk extension
+snippet loa @load
+	@load "${1}"${0}
+
+snippet abs
+	function abs(x) { if (x >= 0) { return x } else { return -x } }
+
+snippet beg BEGIN { ... }
+	BEGIN {
+		${0}
+	}
+
+# BEGINFILE is a gawk extension
+snippet begf BEGINFILE { ... }
+	BEGINFILE {
+		${0}
+	}
+
+snippet end END { ... }
+	END {
+		${0}
+	}
+
+# ENDFILE is a gawk extension
+snippet endf ENDFILE { ... }
+	ENDFILE {
+		${0}
+	}
+
+snippet pri print
+	print ${1:"${2}"}${0}
+
+snippet printf printf
+	printf("${1:%s}\n", ${2})${0}
+
+snippet ign IGNORECASE
+	IGNORECASE = ${1:1}
+
+snippet if if {...}
+	if (${1}) {
+		${0}
+	}
+
+snippet ife if ... else ...
+	if (${1}) {
+		${2}
+	} else {
+		${0}
+	}
+
+snippet eif else if ...
+	else if (${1}) {
+		${0}
+	}
+
+snippet el else {...}
+	else {
+		${0}
+	}
+
+snippet wh while
+	while (${1}) {
+		${2}
+	}
+
+snippet do do ... while
+	do {
+		${0}
+	} while (${1})
+snippet forin
+	delete ARGV[0]
+
+	for (i in ARGV) {
+		print "Generating sql to insert " i " into database."
+	}
+snippet for
+	delete ARGV[0]
+
+	for (i in ARGV) {
+		print "Generating sql to insert " i " into database."
+	}
+snippet fi for
+	for (${2:i} = 0; i < ${1:n}; ${3:++i}) {
+		${0}
+	}
+snippet fori for
+	for (${2:i} = 0; i < ${1:n}; ${3:++i}) {
+		${0}
+	}
+snippet fore for each
+	for (${1:i} in ${2:array}) {
+		${0}
+	}
+
+# the switch is a gawk extension
+snippet sw switch
+	switch (${1}) {
+	case ${2}:
+		${3}
+		break
+	default:
+		${0}
+		break
+	}
+
+# the switch is a gawk extension
+snippet case case
+	case ${1}:
+		${0}
+		break
+
+snippet bytes_to_human_readable
+	# function bytes_to_human
+	#
+	# given bytes, converts them to human readable format like 13.2mb
+	#
+	function bytes_to_human(bytes,    MAP, map_idx, bytes_copy) {
+		MAP[0] = "b"
+		MAP[1] = "kb"
+		MAP[2] = "mb"
+		MAP[3] = "gb"
+		MAP[4] = "tb"
+	   
+		map_idx = 0
+		bytes_copy = int(bytes)
+		while (bytes_copy > 1024) {
+			bytes_copy /= 1024
+			map_idx++
+		}
+
+		if (map_idx > 4)
+			return sprintf("%d bytes", bytes, MAP[map_idx])
+		else
+			return sprintf("%.02f%s", bytes_copy, MAP[map_idx])
+	}
+snippet fileexists
+	fe
+snippet fe
+	# function file_exists
+	#
+	# given a path to file, returns 1 if the file exists, or 0 if it doesn't
+	#
+	function file_exists(file,    foo) {
+		if ((getline foo <file) >= 0) {
+			close(file)
+			return 1
+		}
+		return 0
+	}
+snippet urldecode
+	#
+	# function url_unescape
+	#
+	# given a string, it url-unescapes it.
+	# charactes such as %20 get converted to their ascii counterparts.
+	#
+	function url_unescape(str,    nmatches, entity, entities, seen, i) {
+		nmatches = find_all_matches(str, "%[0-9A-Fa-f][0-9A-Fa-f]", entities)
+		for (i = 1; i <= nmatches; i++) {
+			entity = entities[i]
+			if (!seen[entity]) {
+				if (entity == "%26") { # special case for gsub(s, r, t), when r = '&'
+					gsub(entity, "\\&", str)
+				}
+				else {
+					gsub(entity, url_entity_unescape(entity), str)
+				}
+				seen[entity] = 1
+			}
+		}
+		return str
+	}
+snippet usage
+	function usage() {
+		print "Downloading YouTube Videos with GNU Awk"
+		print
+		print "Peteris Krumins (peter@catonmat.net)"
+		print "http://www.catonmat.net  --  good coders code, great reuse"
+		print 
+		print "Usage: gawk -f get_youtube_vids.awk <http://youtube.com/watch?v=ID1 | ID1> ..."
+		print "or just ./get_youtube_vids.awk <http://youtube.com/watch?v=ID1 | ID1> ..."
+		exit 1
+	}
+snippet getopts
+	BEGIN {
+		#$FSTREAM=ARGV[1]
+
+		if (ARGC == 1) usage();
+
+		BINMODE = 3
+
+		delete ARGV[0]
+		print "Parsing YouTube video urls/IDs..."
+		for (i in ARGV) {
+			vid_id = parse_url(ARGV[i])
+			if (length(vid_id) < 6) { # havent seen youtube vids with IDs < 6 chars
+				print "Invalid YouTube video specified: " ARGV[i] ", not downloading!"
+				continue
+			}
+			VIDS[i] = vid_id
+		}
+
+		for (i in VIDS) {
+			print "Getting video information for video: " VIDS[i] "..."
+			get_vid_info(VIDS[i], INFO)
+
+			if (INFO["_redirected"]) {
+				print "Could not get video info for video: " VIDS[i]
+				continue 
+			}
+
+			if (!INFO["video_url"]) {
+				print "Could not get video_url for video: " VIDS[i]
+				print "Please goto my website, and submit a comment with an URL to this video, so that I can fix it!"
+				print "Url: http://www.catonmat.net/blog/downloading-youtube-videos-with-gawk/"
+				continue
+			}
+			if ("title" in INFO) {
+				print "Downloading: " INFO["title"] "..."
+				title = INFO["title"]
+			}
+			else {
+				print "Could not get title for video: " VIDS[i]
+				print "Trying to download " VIDS[i] " anyway"
+				title = VIDS[i]
+			}
+			download_video(INFO["video_url"], title)
+		}
+	}
+snippet remove_field
+	remove_field() {
+		field="$1"
+		awk -F' *\t *' 'BEGIN{OFS=""}{$'$field' = ""; print $0}'
+		return 0
+	}
+	remove_field $@
+snippet print_field
+	print_field() {
+		field="$1"
+		awk -F' *\t *' 'BEGIN{OFS=""}{print $'$field'}'
+		return 0
+	}
+	print_field $@
+snippet fac
+	#!/usr/bin/awk -f
+	
+	{ print factorial(\$0); }
+	
+	function factorial(n) {
+	 if (n == 0) 
+	   return 1;
+	 else 
+	   return n*factorial(n-1);
+	}
+snippet disable-buffering
+	{ print; system("") }
+snippet fm "field matches"
+	$6~/^(([1-9]|[1-9][0-9]|100)[SM]){2}$/

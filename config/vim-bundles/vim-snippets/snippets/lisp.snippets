@@ -1,0 +1,22 @@
+extends elisp
+
+snippet f
+	(defun ${1:func-name} ()
+		${2:"description string can flow to next line without continuation character"}
+		${3:(interactive)}
+		${4:(message "Lisp Code '%s'..." (buffer-name))}
+		)
+snippet match
+	(if (string-match "\.~" (buffer-name))
+		(message "Matches '%s'..." (buffer-name))
+		(message "Does not match '%s'..." (buffer-name))
+		)
+snippet echo
+	(message "Lisp Code '%s'..." (buffer-name))
+snippet bash
+	( shell-command-on-region (point-min) (point-max) "tvimbg.sh" nil nil)
+snippet require
+	(when (require 'slime nil 'noerror)
+		(add-to-list 'auto-mode-alist '("\\\\.cl\\\\'" . slime-mode))
+		(add-to-list 'auto-mode-alist '("\\\\.asd\\\\'" . slime-mode))
+		)

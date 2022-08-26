@@ -1,0 +1,79 @@
+snippet path 
+	println System.getenv("PATH")
+snippet uname
+	println "uname -a".execute().text
+snippet getenv
+	import hudson.model.*
+	import hudson.node_monitors.*
+	import hudson.slaves.*
+	import java.util.concurrent.*
+
+	def computer = slave.computer
+
+	def getEnviron(computer) {
+	   def env
+	   def thread = Thread.start("Getting env from ${computer.name}", { env = computer.environment })
+	   thread.join(2000)
+	   if (thread.isAlive()) thread.interrupt()
+	   env
+	}
+snippet slaveaccessible
+	import hudson.model.*
+	import hudson.node_monitors.*
+	import hudson.slaves.*
+	import java.util.concurrent.*
+
+	def computer = slave.computer
+
+	def getEnviron(computer) {
+	   def env
+	   def thread = Thread.start("Getting env from ${computer.name}", { env = computer.environment })
+	   thread.join(2000)
+	   if (thread.isAlive()) thread.interrupt()
+	   env
+	}
+	
+	def slaveAccessible(computer) {
+	    getEnviron(computer)?.get('PATH') != null
+	}
+snippet sendmail
+	import javax.mail.internet.*;
+	import javax.mail.*
+	import javax.activation.*
+
+
+	def sendMail (slave, cause) {
+		message = slave + " slave is down. Check http://JENKINS_HOSTNAME:JENKINS_PORT/computer/" + slave + "\nBecause " + cause
+		subject = slave + " slave is offline"
+		toAddress = "JENKINS_ADMIN@YOUR_DOMAIN"
+		fromAddress = "JENKINS@YOUR_DOMAIN"
+		host = "SMTP_SERVER"
+		port = "SMTP_PORT"
+
+		Properties mprops = new Properties();
+		mprops.setProperty("mail.transport.protocol","smtp");
+		mprops.setProperty("mail.host",host);
+		mprops.setProperty("mail.smtp.port",port);
+
+		Session lSession = Session.getDefaultInstance(mprops,null);
+		MimeMessage msg = new MimeMessage(lSession);
+
+		//tokenize out the recipients in case they came in as a list
+		StringTokenizer tok = new StringTokenizer(toAddress,";");
+		ArrayList emailTos = new ArrayList();
+		while(tok.hasMoreElements()){
+			emailTos.add(new InternetAddress(tok.nextElement().toString()));
+		}
+		InternetAddress[] to = new InternetAddress[emailTos.size()];
+		to = (InternetAddress[]) emailTos.toArray(to);
+		msg.setRecipients(MimeMessage.RecipientType.TO,to);
+		InternetAddress fromAddr = new InternetAddress(fromAddress);
+		msg.setFrom(fromAddr);
+		msg.setFrom(new InternetAddress(fromAddress));
+		msg.setSubject(subject);
+		msg.setText(message)
+
+		Transport transporter = lSession.getTransport("smtp");
+		transporter.connect();
+		transporter.send(msg);
+	}

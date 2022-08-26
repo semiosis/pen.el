@@ -1,0 +1,11 @@
+snippet `
+	(* Run a command, return stdout data as a string *)
+	let backtick =
+		let trim_endline_ = trim_endline in (* keep the original trim_endline *)
+		let backtick ?(trim_endline=false) cmd =
+			log (Printf.sprintf "Command %S" (BatString.join " " cmd));
+			let out_pipe = SubprocessWithBatIO.open_process_in (Array.of_list cmd) in
+			let r = BatIO.read_all out_pipe in
+			require_normal_exit out_pipe;
+			if trim_endline then trim_endline_ r else r
+	in backtick

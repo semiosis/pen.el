@@ -1,0 +1,4 @@
+snippet x-iex-help "Get the help for something in iex"
+	x -r iex -e "iex(1)>" -s "h(${0:Enum})" -s "\r" -w
+snippet x-ghci-help "Get the help for something in ghci"
+	x -r ghci -e Prelude -s ":info ${0:sqrt}" -s "\r" -s '\004' -w

@@ -1,0 +1,215 @@
+snippet #
+	#!/usr/bin/env runhaskell
+snippet lang
+	{-# LANGUAGE ${0:OverloadedStrings} #-}
+snippet haddock
+	{-# OPTIONS_HADDOCK ${0:hide} #-}
+snippet ghc
+	{-# OPTIONS_GHC ${0:-fno-warn-unused-imports} #-}
+snippet inline
+	{-# INLINE ${0:name} #-}
+snippet info
+	-- |
+	-- Module      :  ${1:`substitute(substitute(expand('%:r'), '[/\\]','.','g'),'^\%(\l*\.\)\?','','')`}
+	-- Copyright   :  ${2:Author} ${3:2011-2012}
+	-- License     :  ${4:BSD3}
+	--
+	-- Maintainer  :  ${5:email@something.com}
+	-- Stability   :  ${6:experimental}
+	-- Portability :  ${7:unknown}
+	--
+	-- ${0:Description}
+	--
+snippet imp
+	import ${0:Data.Text}
+snippet import
+	import           ${0:Data.Text}
+snippet import2
+	import           ${1:Data.Text} (${0:head})
+snippet impq
+	import qualified ${1:Data.Text} as ${0:T}
+snippet importq
+	import qualified ${1:Data.Text} as ${0:T}
+snippet inst
+	instance ${1:Monoid} ${2:Type} where
+		${0}
+snippet type
+	type ${1:Type} = ${0:Type}
+snippet data
+	data ${1:Type} = ${2:$1} ${0:Int}
+snippet newtype
+	newtype ${1:Type} = ${2:$1} ${0:Int}
+snippet class
+	class ${1:Class} a where
+		${0}
+snippet module
+	module `substitute(substitute(expand('%:r'), '[/\\]','.','g'),'^\%(\l*\.\)\?','','')` (
+	) where
+	`expand('%') =~ 'Main' ? "\nmain :: IO ()\nmain = undefined" : ""`
+
+snippet main
+	main :: IO ()
+	main = ${0:undefined}
+snippet const
+	${1:name} :: ${2:a}
+	$1 = ${0:undefined}
+snippet fn
+	${1:fn} :: ${2:a} -> ${3:a}
+	$1 ${4} = ${0:undefined}
+snippet fn2
+	${1:fn} :: ${2:a} -> ${3:a} -> ${4:a}
+	$1 ${5} = ${0:undefined}
+snippet fn3
+	${1:fn} :: ${2:a} -> ${3:a} -> ${4:a} -> ${5:a}
+	$1 ${6} = ${0:undefined}
+snippet => "Type constraint"
+	(${1:Class} ${2:a}) => $2
+snippet ap
+	${1:map} ${2:fn} ${0:list}
+snippet \
+	\\${1:x} -> ${0:expression}
+snippet (\
+	(\\${1:x} -> ${0:expression})
+snippet <-
+	${1:a} <- ${0:m a}
+snippet ->
+	${1:m a} -> ${0:a}
+snippet tup
+	(${1:a}, ${0:b})
+snippet tup2
+	(${1:a}, ${2:b}, ${0:c})
+snippet tup3
+	(${1:a}, ${2:b}, ${3:c}, ${0:d})
+snippet rec
+	${1:Record} { ${2:recFieldA} = ${3:undefined}
+				, ${4:recFieldB} = ${0:undefined}
+				}
+snippet case
+	case ${1:something} of
+		${2} -> ${0}
+snippet let
+	let ${1} = ${2}
+	in ${3}
+snippet where
+	where
+		${1:fn} = ${0:undefined}
+snippet spec
+	module `substitute(substitute(expand('%:r'), '[/\\]','.','g'),'^\%(\l*\.\)\?','','')` (main, spec) where
+
+	import Test.Hspec
+	import Test.QuickCheck
+
+	main :: IO ()
+	main = hspec spec
+
+	spec :: Spec
+	spec =
+		describe "${1}" $ do
+			$0
+snippet desc
+	describe "${1}" $ do
+		$0
+snippet it
+	it "${1}" $
+		$0
+snippet itp
+	it "${1}" $ property $
+		$0
+snippet division
+	-- Division is not integer division by default
+	35 / 4 -- 8.75
+	-- integer division
+	35 `div` 4 -- 8
+snippet integer_division
+	35 `div` 4 -- 8
+snippet concatenation
+	++
+snippet fun
+	lucky :: (Integral a) => a -> String
+	lucky 7 = "LUCKY NUMBER SEVEN!"
+	lucky x = "Sorry, you're out of luck, pal!"
+snippet len
+	lineLength s = show (length s)
+snippet wrl
+	main = interact (unlines . map translateLn . lines)
+snippet hw
+	#!/usr/bin/env runhaskell
+	main :: IO ()
+	main = putStrLn "Hello World"
+snippet hw2
+	#!/usr/bin/env runhaskell
+
+	import Control.Applicative
+
+	{- main = translateLn <\$> getLine >>= putStrLn -}
+
+	main = interact (unlines . map translateLn . lines)
+
+	translateLn :: String -> String
+	translateLn = unwords . map t . words
+
+	t :: String -> String 
+
+	t ">>=" = "(| >>= bind |)"
+	t "*>"  = "(| *> then |)"
+	t "->"  = "(| -> to |)"                   
+	t "<\$"  = "(| <\$ map-replace by |)"       
+	t "<*>" = "(| <*> ap[ply] |)"              
+	t "!!"  = "(| !! index |)"
+	t "!"   = "(| ! index/strict |)"         
+	t "<|>" = "(| <|> or/alternative |)"       
+	t "[]"  = "(| [] empty list |)"
+	t ":"   = "(| : cons |)"
+	t "\\"  = "(| \\ lambda |)"
+	t "@"   = "(| @ as |)"                   
+	t "~"   = "(| ~ lazy |)"                 
+	t "|"   = "(| | such that |)"
+	t "<-"  = "(| <- is drawn from |)"
+	t "="   = "(| = is defined as |)"
+	t "::"  = "(| :: is of type |)" 
+	t "_"   = "(| _ whatever |)"
+	t "++"  = "(| ++ append |)"
+	t "=>"  = "(| => implies |)"
+	t "."   = "(| . compose |)"
+	t "<=<" = "(| <=< left fish |)"
+	t "\$"   = "(| \$ of |)" 
+	t ">>"  = "(| >> sequence |)"
+	t "(:)" = "(| : Cons |)"
+	t "Just" = "(| Just just |)"
+	t "<\$>"  = "(| <\$> applied to |)"
+	t "3"    = "(| 3 three |)" 
+	t "[4]"  = "(|  [4] list with one element four |)" 
+	t "(,)" = "(|  , tuple constructor |)"
+	t "&" = "(| & then |)" 
+	t x = x
+snippet parallel
+	import Control.Parallel
+	 
+	main = a \`par\` b \`par\` c \`pseq\` print (a + b + c)
+		where
+			a = ack 3 10
+			b = fac 42
+			c = fib 34
+	 
+	fac 0 = 1
+	fac n = n * fac (n-1)
+	 
+	ack 0 n = n+1
+	ack m 0 = ack (m-1) 1
+	ack m n = ack (m-1) (ack m (n-1))
+	 
+	fib 0 = 0
+	fib 1 = 1
+	fib n = fib (n-1) + fib (n-2)
+snippet lambda
+	map (\x -> x + 1) [1..5]
+snippet lm
+	map (\x -> x + 1) [1..5]
+snippet ris "read ints into array"
+	a <- liftA (map (\x -> read x :: Int) . words) getLine
+snippet readints "read ints into array"
+	a <- liftA (map (\x -> read x :: Int) . words) getLine
+snippet panic
+	tail []     = error "tail: empty list"
+snippet error
+	tail []     = error "tail: empty list"

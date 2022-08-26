@@ -1,0 +1,28 @@
+extends jqshell
+
+snippet pa "push to array"
+	. + [ 4 ] # result: [ 1, 2, 3, 4 ]
+snippet ota "object to array"
+	to_entries | map_values(.value + { slug: .key })
+snippet ato "array to keyed object. opposito of ota"
+	map({ (.slug): . }) | add
+snippet skv "swap key and value"
+	to_entries | map( {(.value) : .key } ) | add
+snippet rl "read lines. raw string to array"
+	split("\n")[:-1]
+snippet date
+	split("\n")[:-1] | map({
+	  date: (. | strptime("%a, %d %b %Y %H:%M:%S") | todate[0:10]),
+	  time: (. | strptime("%a, %d %b %Y %H:%M:%S") | todate[11:19])
+	}) | reduce .[] as \$item (
+	  {}; # initial value
+	  .[\$item.date] += 1 # reducer
+	)
+snippet np "add a new property to every object (map)"
+	map(. + { "draft": true })
+snippet ap "add a new property to every object (map)"
+	map(. + { "draft": true })
+snippet ap "add a new property to every object ([])"
+	[.[] | . + { "draft" : true }]
+snippet np "add a new property to every object ([])"
+	[.[] | . + { "draft" : true }]

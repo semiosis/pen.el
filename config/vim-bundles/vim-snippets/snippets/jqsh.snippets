@@ -1,0 +1,21 @@
+snippet rlsh
+	echo "1\n2\n3" | jq --slurp --raw-input 'split("\n")[:-1]'
+snippet sh
+	eval "\$(
+	  curl https://api.github.com/gists/968b8937a153127cfae4a173b6000c1e |
+	  jq -r '
+	    .files |
+	    to_entries |
+	    .[].value |
+	    @sh "echo \\(.content) > \\(.filename)"
+	  '
+	)"
+snippet eetj
+	{
+		exports="FLOW_TIME_LIMIT RESULTS_REPO_DIR RERUN INTERACTIVE LINGOOPTS TIDY_UP CLEAN_SLATE"
+		for e in \$exports; do
+			eval val=\\${\$e}
+			echo "\$e:\$val"
+			export \$e
+		done
+	} | jq -r -R -s 'split("\n")[:-1] | map( split(":") | {(.[0]): .[1]} )'

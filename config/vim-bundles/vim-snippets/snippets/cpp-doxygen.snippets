@@ -1,0 +1,31 @@
+snippet c-constructor-doxygen-imm
+	/**
+	 ************************************************************************************************************************
+	 *
+	 * @fn      screen_flow_class::screen_flow_class(boolean show_messages,
+	 *                                               shared_data_class *shared,
+	 *                                               user_interface_class *ui,
+	 *                                               db_access_class *db,
+	 *                                               sb_comm_class *sb,
+	 *                                               kpm_class *kpm)
+	 *
+	 * @brief   Class constructor
+	 *
+	 * @param   show_messages = Show debug messages on console
+	 * @param   shared = Pointer to the shared data class
+	 * @param   ui = Pointer to the user interface class
+	 * @param   db = Pointer to the database class
+	 * @param   sb = Pointer to the system bus class
+	 * @param   kpm = Pointer to the kpm class
+	 *
+	 * @return  N/A
+	 *
+	 * @author  Walt Conley
+	 *
+	 * @note    N/A
+	 *
+	 ************************************************************************************************************************
+	 */
+snippet doxy-member
+	/** @brief Topic server / client is subscribed to, if applicable */
+	const string topic;

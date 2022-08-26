@@ -130,6 +130,7 @@ set noswapfile " Swap is disabled. Using git anyway.
 set foldcolumn=0 " margin, gutter
 
 call pathogen#infect()
+call pathogen#infect("/root/.pen/vim-bundles/{}")
 
 set foldexpr=FoldBrace()
 function! FoldBrace()
@@ -2155,3 +2156,26 @@ autocmd BufEnter * call GeneralSyntax()
 " autocmd BufEnter * call GeneralSyntax()
 " autocmd BufReadPre * call NumberSyntax()
 " autocmd BufReadPre * call GeneralSyntax()
+
+fun! OpenSnippets()
+    let fp = '$VIMSNIPPETS/'.&filetype.'.snippets'
+
+    call system('tm -f -te -d sps -n snippets "vs '.fp.'" &')
+endf
+
+MapM OpenSnippets q d
+
+" This fixes select-mode when needing to enter dvorak letters (e.g. in
+" snipmate)
+sunmap ;
+
+" for starting a new snippet complete from within a snippet
+" i'm not sure how to break out of select mode without using a motion
+" smap means it must be selected
+smap <Esc>L <Esc>a<Esc>ljki<C-l>
+" snipmate global variables might be bringing me back into select mode
+" but nothing to fear, this takes care of it
+imap <Esc>L <Esc>a<Esc>ljki<C-l>
+" Swapping C-l with <Esc>L only makes it worse
+imap <C-l> <Plug>snipMateNextOrTrigger
+smap <C-l> <Plug>snipMateNextOrTrigger

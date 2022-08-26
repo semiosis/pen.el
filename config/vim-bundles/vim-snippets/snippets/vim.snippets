@@ -1,0 +1,209 @@
+# Actually maybe I dont' want this. Functions
+#extends sh
+
+snippet header standard Vim script file header
+	" File: ${1:`expand('%:t')`}
+	" Author: ${2:`g:snips_author`}
+	" Description: ${3}
+	${0:" Last Modified: `strftime("%B %d, %Y")`}
+snippet guard script reload guard
+	if exists('${1:did_`vim_snippets#Filename()`}') || &cp${2: || version < 700}
+		finish
+	endif
+	let $1 = 1${0}
+snippet fun function
+	fun! ${1:`expand('%') =~ 'autoload' ? substitute(matchstr(expand('%:p'),'autoload/\zs.*\ze.vim'),'[/\\]','#','g').'#' : ''`}${2:FuncName}(${3})
+		${0}
+	endf
+snippet f function
+	fun! ${1:`expand('%') =~ 'autoload' ? substitute(matchstr(expand('%:p'),'autoload/\zs.*\ze.vim'),'[/\\]','#','g').'#' : ''`}${2:FuncName}(${3})
+		${0}
+	endf
+snippet try try ... catch statement
+	try
+		${1}
+	catch ${2}
+		${0}
+	endtry
+snippet t try ... catch statement
+	try
+		${1}
+	catch ${2}
+		${0}
+	endtry
+snippet t try ... catch ... throw statement
+	try
+		${1}
+	catch ${2}
+		${0}
+		throw ${3}
+	endtry
+snippet for for ... in loop
+	for ${1} in ${2}
+		${0}
+	endfor
+snippet forkv for [key, value] in loop
+	for [${1},${2}] in items(${3})
+		${0}
+		unlet $1 $2
+	endfor
+snippet wh while loop
+	while ${1}
+		${0}
+	endw
+snippet if if statement
+	if ${1}
+		${0}
+	endif
+snippet ife if ... else statement
+	if ${1}
+		${2}
+	else
+		${0}
+	endif
+snippet au augroup ... autocmd block
+	augroup ${1:AU_NAME}
+		" this one is which you're most likely to use?
+		autocmd ${2:BufRead,BufNewFile} ${3:*.ext,*.ext3|<buffer[=N]>} ${0}
+	augroup end
+snippet bun Vundle.vim Plugin definition
+	Plugin '${0}'
+snippet plug Vundle.vim Plugin definition
+	Plugin '${0}'
+snippet pyf
+	function! ${1:MyCoolFunction}(${2:anArg})
+	python << endpython
+	import vim
+	anArg = vim.eval("a:anArg")
+	# do important stuff
+	vim.command("return 1") # return from the Vim function!
+	endpython
+	endfunction
+snippet pyfun
+	function! ${1:MyCoolFunction}(${2:anArg})
+	python << endpython
+	import vim
+	anArg = vim.eval("a:anArg")
+	# do important stuff
+	vim.command("return 1") # return from the Vim function!
+	endpython
+	endfunction
+snippet fmap
+	nmap <silent> ${1:Zxc} Y"zy;call ${2:MapFun}(@z)<CR>
+	xmap <silent> $1 "zy;call $2(@z)<CR>
+	function! $2(para)
+		silent! call system('${3:vim-run-in-tmux.sh} '.escape(shellescape(a:para${4:.'; pak;'}),"\""))
+	endfunction
+snippet funmap
+	nmap <silent> ${1:Zxc} Y"zy;call ${2:MapFun}(@z)<CR>
+	xmap <silent> $1 "zy;call $2(@z)<CR>
+	function! $2(para)
+		silent! call system('${3:vim-run-in-tmux.sh} '.escape(shellescape(a:para${4:.'; pak;'}),"\""))
+	endfunction
+snippet mapf
+	nmap <silent> ${1:Zxc} Y"zy;call ${2:MapFun}(@z)<CR>
+	xmap <silent> $1 "zy;call $2(@z)<CR>
+	function! $2(para)
+		silent! call system('${3:vim-run-in-tmux.sh} '.escape(shellescape(a:para${4:.'; pak;'}),"\""))
+	endfunction
+snippet mapfun
+	nmap <silent> ${1:Zxc} Y"zy;call ${2:MapFun}(@z)<CR>
+	xmap <silent> $1 "zy;call $2(@z)<CR>
+	function! $2(para)
+		silent! call system('${3:vim-run-in-tmux.sh} '.escape(shellescape(a:para${4:.'; pak;'}),"\""))
+	endfunction
+snippet case
+	switch
+snippet switch
+	if 0
+		echom "if"
+	elseif "nope!"
+		echom "elseif"
+	else
+		echom "finally!"
+	endif
+snippet hi
+	hi tilde ctermfg=033 ctermbg=019
+	syntax match tilde "\(\(^\||\|│\) *\)\@<!\~\(\/\([a-z]\+\/\)\?\)\?"
+	syntax match tilde "\(\(^\||\|│\) *\)\@<=\~\/\([a-z]\+\/\)\?"
+snippet sm
+	syntax match${0}
+snippet M
+	Message 
+snippet sys 
+	let @x = system('google-spell-check.sh '.escape(shellescape(a:para),"\""))[:-2]
+	if v:shell_error == 0
+		echom "success"
+	endif
+snippet hd "python heredoc for vim plugins"
+	python << EOF
+	import os, vim, time, json
+	EOF
+snippet ifp
+	if expand("%:p:h") =~ '/var/smulliga/source/git/config/vim/common/bundle/vim-snippets/snippets'
+		RetabIndent
+	endif
+snippet en "Expand normal"
+	" Don't forget the \ before <
+	exe expand("normal! GA\<CR>\<CR>\<Esc>0")
+	startinsert
+snippet igt
+	if 10 > 1
+		echom "foo"
+	endif
+snippet ifgt
+	if 10 > 1
+		echom "foo"
+	endif
+snippet ifse
+	if "foo" == "bar"
+		echom "one"
+	elseif "foo" == "foo"
+		echom "two"
+	endif
+snippet ifsnr
+	if a:func !~ ")\$"
+		exec 'nnoremap '.m.' :call '.a:func.'<CR>'
+	endif
+snippet ifsr
+	if a:func =~ ")\$"
+		exec 'nnoremap '.m.' :call '.a:func.'<CR>'
+	else
+		exec 'nnoremap '.m.' :call '.a:func.'()<CR>'
+	endif
+snippet ifseregex
+	if a:func =~ ")\$"
+		exec 'nnoremap '.m.' :call '.a:func.'<CR>'
+	else
+		exec 'nnoremap '.m.' :call '.a:func.'()<CR>'
+	endif
+snippet xmap "call function that moves the cursor without leaving visual mode"
+	function FindCharBack(mode)
+		if a:mode ==# 'v'
+			normal! gv
+		endif
+
+		let c = escape( GetCharDvorak(), "^.*\$~")
+
+		let @/=c
+		let match = search(c, 'b')
+	endfunction
+
+	nnoremap F :call FindCharBack('n')<CR>
+	xnoremap F :<C-u>call FindCharBack('v')<CR>
+snippet call-function-that-moves-the-cursor-without-leaving-visual-mode
+	function FindCharBack(mode)
+		if a:mode ==# 'v'
+			normal! gv
+		endif
+
+		let c = escape( GetCharDvorak(), "^.*\$~")
+
+		let @/=c
+		let match = search(c, 'b')
+	endfunction
+
+	nnoremap F :call FindCharBack('n')<CR>
+	xnoremap F :<C-u>call FindCharBack('v')<CR>
+snippet e0
+	q

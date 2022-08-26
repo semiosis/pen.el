@@ -1,0 +1,31 @@
+snippet getopts-pass-on
+	while getopts ":[-][[n]:][99:verbose][s]" opt
+	do  case \$opt in
+		(n) n_arg=\$OPTARG ;;
+		(99) verbose=1 ;;
+		(s) s=1 ;;
+		(*) arg_rest+=( "\${@:OPTIND-1:1}" ) ;;
+		esac
+	done
+	shift OPTIND-1
+
+	printf "main opt(%s)=%s\n" "-n" "\$n_arg"
+	printf "main opt(%s)=%s\n" "--verbose" "\$verbose"
+	printf "main opt(%s)=%s\n" "-s" "\$s"
+
+	function delegate
+	{
+		while getopts ":[-][i][98:long]" opt
+		do  case \$opt in
+			(i) int=1 ;;
+			(98) long=1 ;;
+			esac
+		done
+		shift OPTIND-1
+
+		printf "func opt(%s)=%s\n" "-i" "\$int"
+		printf "func opt(%s)=%s\n" "--long" "\$long"
+	}
+
+	printf "Delegate: '%s'\n" "\${arg_rest[@]}"
+	delegate "\${arg_rest[@]}"

@@ -1,0 +1,15 @@
+snippet ppid
+	gppid() {
+		p=$1
+		cat /proc/$p/status |awk '$1=="PPid:"{print $2}'
+	}
+
+	ppid=$(gppid $$)
+	ps |grep $ppid
+	sleep 2
+  
+	ppid=$(gppid $ppid)
+	ps |grep $ppid
+	sleep 200
+snippet command "command exists"
+	which psplash 1>/dev/null 2>/dev/null

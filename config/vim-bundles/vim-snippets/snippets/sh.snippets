@@ -1,0 +1,3802 @@
+extends pcre
+extends sed
+extends tmuxcommands
+extends awkshell
+extends jqsh
+extends gr
+extends dialog
+extends x
+extends bash
+extends ksh
+extends pysh
+extends posixsh
+
+# In theory these snippets should be able to be simply copied across to
+# yasnippet after unindenting.
+
+# Get additional snippets from:
+# http://www.etalabs.net/sh_tricks.html
+
+# Shebang. Executing bash via /usr/bin/env makes scripts more portable.
+snippet u
+	sudo${0} 
+snippet goc "getopts colour"
+	sn="$(basename -- "\$0")"
+	printf -- "%s" "$sn: getopts " | hls -c 6 '.*'
+	if [ -n "\$OPTARG" ]; then
+		printf -- "-%s" "\$name " | hls -c 5 '.*'
+		printf -- " %s\n" "\$OPTARG" | hls '.*'
+	else
+		printf -- "-%s\n" "\$name" | hls -c 5 '.*'
+	fi
+snippet getopts
+	while getopts -- l:- o &>/dev/null; do
+	case \$o in
+		l)  location="\$OPTARG";;
+		-)  break ;;
+	esac
+	done
+	shift "\$((OPTIND-1))"
+snippet go-old
+	while getopts -- f:d: opt &>/dev/null; do
+	case \$opt in
+		f)  field="\$OPTARG";;
+		d)  delim="\$OPTARG";;
+	esac
+	done
+snippet go-bigandclunky
+	if [ $# -eq 0 ] ; then
+		\$0 -h
+		exit 0
+	fi
+
+	: ${FUN_RUN:="runit"}
+	sn="\$(basename -- "\$0")"
+	rsp="\$(rsp "\$sn")"
+	while getopts -- hsr:- name &>/dev/null; do
+	sn="$(basename -- "\$0")"
+	{
+	printf -- "%s" "$sn: getopts " | hls -c 6 '.*'
+	if [ -n "\$OPTARG" ]; then
+		printf -- "-%s" "\$name " | hls -c 5 '.*'
+		printf -- " %s\n" "\$OPTARG" | hls '.*'
+	else
+		printf -- "-%s\n" "\$name" | hls -c 5 '.*'
+	fi
+	cat "\$rsp" | sed -n "/^\s\+\.*\$name)\s\+/p"
+	} 1>&2
+	case $name in
+		[0-9]|p|g)
+			OPTS="$OPTS $name \"$OPTARG\"" ;;
+		h)  sed -n '/^while getopts/,/^done/p' $0;;
+		s)  do_something;;
+		r)  FUN_RUN="$OPTARG";;
+		*)  eval ARG=\${$((OPTIND - 1))}; pl "unknown option: $ARG"; ((OPTIND--)); exit 1;;
+		*)  ((OPTIND--)); break ;;
+		-)  break;;
+	esac
+	done
+	shift "$((OPTIND-1))"
+	OPTIND=1
+#*)  OPTIND=$((OPTIND-1)); break ;;
+snippet getopts-3
+	while getopts -- l:- o &>/dev/null; do
+	case \$o in
+		l)  location="\$OPTARG";;
+		-)  break ;;
+	esac
+	done
+	shift "\$((OPTIND-1))"
+#snippet getopts-2
+#	if [ $# -eq 0 ] ; then
+#		\$0 -h
+#		exit 0
+#	fi
+#
+#	: ${FUN_RUN:="runit"}
+#	sn="\$(basename -- "\$0")"
+#	rsp="\$(rsp "\$sn")"
+#	while getopts -- hsr:- name &>/dev/null; do
+#	sn="$(basename -- "\$0")"
+#	{
+#	printf -- "%s" "$sn: getopts " | hls -c 6 '.*'
+#	if [ -n "\$OPTARG" ]; then
+#		printf -- "-%s" "\$name " | hls -c 5 '.*'
+#		printf -- " %s\n" "\$OPTARG" | hls '.*'
+#	else
+#		printf -- "-%s\n" "\$name" | hls -c 5 '.*'
+#	fi
+#	cat "\$rsp" | sed -n "/^\s\+\.*\$name)\s\+/p"
+#	} 1>&2
+#	case $name in
+#		[0-9]|p|g)
+#			OPTS="$OPTS $name \"$OPTARG\"" ;;
+#		h)  sed -n '/^while getopts/,/^done/p' $0;;
+#		s)  do_something;;
+#		r)  FUN_RUN="$OPTARG";;
+#		*)  eval ARG=\${$((OPTIND - 1))}; pl "unknown option: $ARG"; ((OPTIND--)); exit 1;;
+#		-)  break ;;
+#		*)  ((OPTIND--)); break ;;
+#	esac
+#	done
+#	shift "$((OPTIND-1))"
+#	OPTIND=1
+snippet timstampifyself
+	#!/bin/bash -x
+	exec 1> >(timestampify.pl)
+	exec 2>&1
+# local vars are not posix compliant. but they work on busybox. keep them
+snippet lv
+	local ${1:var}=${2:lvexample}
+snippet r0
+	return 0
+snippet r
+	# exit status, not return value
+	return 0
+snippet #
+	#!/usr/bin/env sh
+	${0}
+snippet #!
+	#!/usr/bin/env sh
+	${0}
+snippet cr
+	#!/usr/bin/env compilerun.sh
+	${0}
+snippet crs
+	#!/usr/bin/env compilerun.sh
+	#!/usr/bin/env sh
+	${0}
+snippet bash
+	#!/usr/bin/env bash
+
+snippet pf
+	set -o pipefail
+snippet setpipefail
+	set -o pipefail
+snippet pipefail
+	set -o pipefail
+snippet safe
+	set -euo pipefail
+	IFS=$'\n\t'
+snippet sbash
+	#!/usr/bin/env bash
+	set -euo pipefail
+	IFS=$'\n\t'
+
+snippet if
+	if [ ${1:condition} ]; then
+		${0:#statements}
+	fi
+snippet elif
+	elif [ ${1:condition} ]; then
+		${0:#statements}
+snippet 4
+	for (( ${2:i} = 0; $2 < ${1:count}; $2++ )); do
+		${0:#statements}
+	done
+snippet for
+	for (( ${2:i} = 0; $2 < ${1:count}; $2++ )); do
+		${0:#statements}
+		continue
+	done
+snippet 4i
+	for ${1:needle} in ${2:\$(seq 1 5)} ; do
+		${0:#statements}
+		continue
+	done
+snippet fori
+	for ${1:needle} in ${2:haystack} ; do
+		${0:#statements}
+		continue
+	done
+snippet wh
+	while [ ${1:condition} ]; do
+		${0:#statements}
+	done
+snippet wht
+	while :; do
+		${0:#statements}
+	done
+snippet until
+	until [ ${1:condition} ]; do
+		${0:#statements}
+	done
+snippet case ";pack;.sh;case"
+	opt="\$1"
+	shift
+	case "\$${1:opt}" in
+		${2:first}) {
+			:
+		}
+		;;
+
+		${0:template}) {
+			:
+		}
+		;;
+
+		*)
+	esac
+# Set SCRIPT_DIR variable to directory script is located.
+snippet sdir
+	SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+snippet root
+	if [ \$(id -u) -ne 0 ]; then exec sudo \$0; fi
+snippet fb "bash function with local var"
+	function ${1:function_name}() {
+		local var=lvexample
+		${0:#function_body}
+		# exit status, not return value
+		return 0
+	}
+snippet fpx "POSIX function"
+	# using lowercase snake case is correct.
+	update_imm() {
+		backupDatabase
+	}
+	${1:function_name}() {
+		${0:#function_body}
+		# exit status, not return value
+		return 0
+	}
+snippet f "POSIX function"
+	${1:function_name}() {
+		# local vars are not posix (local var=lvexample), use fb
+		${0:#function_body}
+		# exit status, not return value
+		return 0
+	}
+snippet trapall
+	trap_with_arg() {
+		func="\$1" ; shift
+		for sig ; do
+			trap "\$func \$sig" "\$sig"
+		done
+	}
+
+	func_trap() {
+		trap - \$1 # untrap
+		notify-send "\$0 Trapped: \$1"
+		/bin/kill -1 "$$"
+	}
+
+	eval "trap_with_arg func_trap $(/bin/kill -l | tr -d '\n')"
+snippet no
+	notify-send "${1:$@}"
+	
+snippet not
+	notify-send "${1:$@}"
+	
+snippet uno
+	/usr/bin/notify-send "$0"
+snippet hdbb "heredoc for busybox"
+	echo_exit_codes() { cat <<'HEREDOC'
+	0	SUCCESS
+	201	HELP
+	HEREDOC
+	}
+	exit_codes="$(echo_exit_codes)"
+# this doesn't work without -d ''. But that means the any indent doesn't
+# work(in regular bash at least)
+#snippet hdv "heredoc var"
+#	IFS= read -r -d '' DB_FILES <<-HEREDOC
+#		${DOM_PATH}db/TruckDB.dbs
+#		${DOM_PATH}db/TruckDB.log
+#	HEREDOC
+snippet hdv "heredoc var"
+	IFS= read -r -d '' maps <<- 'HEREDOC'
+	$<tab>(define-key compilation-button-map (kbd "C-m") 'grep-go-vim)
+	$<tab>(define-key compilation-button-map (kbd "C-j") 'compile-goto-error)
+	$<tab>HEREDOC
+	maps="$(p "$maps" | tr -d '\n')"
+snippet hdvf "heredoc var func"
+	# works in busybox
+	func() {
+		res=$(cat)
+	}
+	func <<'HEREDOC'
+	multiline
+	text
+	HEREDOC
+snippet hd
+	IFS= read -r -d '' PYCODE <<HEREDOC
+	import sys
+	data = sys.stdin.read()
+
+	import csv
+	import json
+
+	print(data)
+	HEREDOC
+snippet hd-pipe
+	cat <<EO${1:F | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+# cat <<-EO${1:F | sed 's/a/b/' # pipe heredoc into sed}
+snippet hdai "heredoc <<- strips leading space. any indent. variable substitution"
+	cat <<-EOF | sed 's/a/b/' # pipe heredoc into sed
+	${1:foo bar baz}
+	EOF
+snippet hdanyindent "heredoc <<- strips leading space. any indent. variable substitution"
+	cat <<-EOF | sed 's/a/b/' # pipe heredoc into sed
+	${1:foo bar baz}
+	EOF
+snippet hdl
+	cat <<'EOF${1:' | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+snippet hdliteral
+	cat <<'EOF${1:' | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+snippet hdlai
+	cat <<-'EOF${1:' | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+snippet hdliteralanyindent
+	cat <<-'EOF${1:' | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+snippet hdvrd "heredoc var read"
+	IFS= read -r -d '' VAR <<EO${1:F | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+	echo "$VAR"
+snippet hdvar
+	IFS= read -r -d '' VAR <<EO${1:F | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+	echo "$VAR"
+snippet hdvai
+	IFS= read -r -d '' VAR <<-EO${1:F | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+	echo "$VAR"
+snippet hdvaranyindent
+	IFS= read -r -d '' VAR <<-EO${1:F | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+	echo "$VAR"
+snippet hdvl
+	IFS= read -r -d '' VAR <<'EOF${1:' | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+	echo "$VAR"
+snippet hdvarliteral
+	IFS= read -r -d '' VAR <<'EOF${1:' | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+	echo "$VAR"
+snippet hdvlai
+	IFS= read -r -d '' VAR <<-'EOF${1:' | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+	echo "$VAR"
+snippet hdvarliteralanyindent
+	IFS= read -r -d '' VAR <<-'EOF${1:' | sed 's/a/b/' # pipe heredoc into sed}
+	${2:foo bar baz}
+	EOF
+	echo "$VAR"
+snippet shpy
+	#!/usr/bin/env bash
+	# usage: cat \$0 | ssh remote "bash -s -- pyargs"
+	IFS= read -r -d '' VAR <<'EOF'
+	${1:import sys}
+	EOF
+	python <(echo "$VAR") "$@"
+snippet python-bash-call-python-stdin "pipe python commands into this script"
+	#!/usr/bin/env bash
+	# usage: cat \$0 | ssh remote "bash -s -- pyargs"
+	IFS= read -r -d '' VAR <<'EOF'
+	${1:import sys}
+	EOF
+	python <(echo "$VAR") "$@"
+snippet tsel
+	tmux-select.sh 
+snippet echotmp
+	( date; echo "$${1:logs}" ) >> "$TMPDIR/$(basename -- "\$0" )-${2:logs}.txt"
+snippet tpw get-tmux-panes-from-window
+	CURRENT_TMUX_WINDOW="$(get-tmux-from-pid.sh $$ | awk '{print \$5}')"
+	PANES="$(tmux list-panes -t "$CURRENT_TMUX_WINDOW" | sed 's/.*\(%[0-9]\+\).*/\1/')"
+	${1}
+snippet quoted
+	quoted="$(printf -- "%s" "\$${1:param}" | quote.pl)"; quotednoends="$(echo "\$quoted" | sed 's/^.\(.*\).$/\1/')"
+snippet qp
+	q${1:param}="$(printf -- "%s" "\$${2:param}" | quote.pl | sed 's/^.\(.*\).$/\1/')"
+snippet qparam
+	q${1:param}="$(printf -- "%s" "\$${2:param}" | quote.pl | sed 's/^.\(.*\).$/\1/')"
+snippet qne
+	quotednoends="$(printf -- "%s" "\$${1:param}" | quote-no-outside-quotes.pl)"
+snippet qne-old
+	quotednoends="$(printf -- "%s" "\$${1:param}" | quote.pl | sed 's/^.\(.*\).$/\1/')"
+snippet qnei
+	| quote.pl | sed 's/^.\(.*\).$/\1/'
+
+snippet cmdexists
+	has_command()
+	{
+		command -v "$1" >/dev/null 2>&1 || {
+			#echo >&2 "I require $1 but it's not installed.  Aborting."
+			return 1
+		}
+	}
+snippet mkfifo
+	ff="\$(ux mkfifo${0: "template"})"
+snippet to
+	tmpfifo_${1:thing}="\$(mkfifo -t ${TMPDIR}/tmpfifo_${2:$1}XXXXXX || echo /dev/null)"
+	# rm "\$tmpfifo_${3:$1}"
+	trap "rm \"\$tmpfifo_${3:$1}\" 2>/dev/null" 0
+snippet ti
+	tmpfifo_${1:thing}="\$(mkfifo -t ${TMPDIR}/tmpfifo_${2:$1}XXXXXX || echo /dev/null)"
+	# rm "\$tmpfifo_${3:$1}"
+	trap "rm \"\$tmpfifo_${3:$1}\" 2>/dev/null" 0
+snippet tf
+	tf_${1:thing}="\$(ux tf ${2:$1} || echo /dev/null)"
+	trap "rm \"\$tf_${0:$1}\" 2>/dev/null" 0
+snippet tf-old
+	tf_${1:thing}="\$(mktemp -t tf_${2:$1}XXXXXX || echo /dev/null)"
+	trap "rm \"\$tf_${0:$1}\" 2>/dev/null" 0
+snippet mktemp
+	#tf_${1:thing}="\$(mktemp ${TMPDIR}/tf_${2:$1}XXXXXX || echo /dev/null)"
+	tf_${1:thing}="\$(mktemp -t tf_${2:$1}XXXXXX || echo /dev/null)"
+	# rm "\$tf_${3:$1}"
+	trap "rm \"\$tf_${3:$1}\" 2>/dev/null" 0
+snippet td
+	td_${1:thing}="\$(mktemp -t -d td_${2:$1}XXXXXX || echo /dev/null)"
+	trap "rmdir \"\$td_${3:$1}\" 2>/dev/null" 0
+snippet srp
+	srp="$(realpath "\$0")"
+snippet rp0
+	srp="$(realpath "\$0")"
+snippet srn "scriptname"
+	sn="$(basename -- "\$0")"
+snippet bn0 "scriptname"
+	sn="$(basename -- "\$0")"
+snippet sn
+	sn="$(basename -- "\$0")"
+snippet sn0
+	sn="$(basename -- "\$0")"
+snippet dn0
+	dn0="$(dirname "$(realpath "\$0")")"
+snippet scn
+	sn="$(basename -- "\$0")"
+snippet sn-scriptname
+	sn="$(basename -- "\$0")"
+snippet scriptname
+	sn="$(basename -- "\$0")"
+snippet ig
+	inifile=${1:\$NOTES/ws/desktop/config.ini}
+	section=${3:tmux}
+	var_name=${2:EDITOR}
+	eval "val=\"\$$var_name\""
+	if [ -z "$val" ]; then
+		cmd="\$var_name=\$(ini-io.py get \$inifile \$section \$var_name)"
+		eval "\$cmd"
+	fi
+snippet iniget
+	inifile=${1:\$NOTES/ws/desktop/config.ini}
+	var_name=${2:EDITOR}
+	section=${3:tmux}
+	cmd="\$var_name=\$(ini-io.py get \$inifile \$section \$var_name)"
+	eval "\$cmd"
+snippet is
+	inifile=${1:\$NOTES/ws/desktop/config.ini}
+	var_name=${2:EDITOR}
+	section=${3:tmux}
+	cmd="\$var_name=\$(ini-io.py set \$inifile \$section \$var_name '"${4:vi}"')"
+	eval "\$cmd"
+snippet iniset
+	inifile=${1:\$NOTES/ws/desktop/config.ini}
+	var_name=${2:EDITOR}
+	section=${3:tmux}
+	eval "\$var_name=\$(ini-io.py set \$inifile \$section \$var_name '"${4:vi}"')"
+snippet spinner
+	spinner()
+	{
+		local pid=\$1
+		if set -o | grep -q "xtrace.*on"; then
+			wait "\$pid"
+		else
+			local delay=0.75
+			local spinstr='|/-\'
+			tput civis
+			while [ "\$(ps a | awk '{print \$1}' | grep \$pid)" ]; do
+				local temp=\${spinstr#?}
+				printf -- " [%c]  " "\$spinstr"
+				local spinstr=\$temp\${spinstr%"\$temp"}
+				sleep \$delay
+				printf -- "\b\b\b\b\b\b"
+			done
+			tput cnorm
+			printf -- "    \b\b\b\b"
+		fi
+	}
+snippet async
+	exec 3< <(${1:yes}) 
+	read <&3 line
+	echo "$line"
+snippet ci
+	echo "$(cacheit.sh "$DUMP$NOTES/ws/programs/hiltestsh/masterconfig" "echo hi")" | minimise.sh
+snippet recparas
+	echo "$@" > "$TMPDIR/$(basename -- "\$0")"
+snippet inc
+	((var=var+1))
+snippet inc-wrong
+	: \$((++i))
+snippet inc
+	((++i))
+snippet inc-all
+	count=$((count+1))
+	((count=count+1))
+	((count+=1))
+	((count++))
+	let "count=count+1"
+	let "count+=1"
+	let "count++"
+snippet pst
+	pstree -A -s -l -p \$\$ | head -n 1 | sed 's/.*tmux: server([^(]\+(\([[:digit:]]\+\)).*/\1/'
+snippet array
+	autofolders=(
+		important
+		"remember this"
+		)
+	count=0
+	while [ "x${autofolders[count]}" != "x" ]; do
+		toopen="$(ls -d $sessionfolder/* | grep -P "${autofolders[count]}")"
+		count=$(( $count + 1 ))
+	done
+snippet iarr
+	autofolders=(
+		important
+		"remember this"
+		)
+	count=0
+	while [ "x${autofolders[count]}" != "x" ]; do
+		toopen="$(ls -d $sessionfolder/* | grep -P "${autofolders[count]}")"
+		count=$(( $count + 1 ))
+	done
+snippet if!? nice
+	result="$?"
+	if ! test "$result" -eq 0; then
+		${0}
+	fi
+snippet if? nice
+	result="$?"
+	if test "$result" -eq 0; then
+		${0}
+	fi
+snippet if? short
+	if [ "$?" -eq 0 ]; then
+		${0}
+	fi
+snippet ifsuccess
+	result="$?"
+	if test "$result" -eq 0; then
+		${0}
+	fi
+snippet dv
+	: "\${${1:QUIET}:="${0:n}"}"
+snippet dv_opt
+	$1="\$1"; : \${${1:FUN_RUN}:="${0:runit}"}
+snippet dv_old
+	: ${FUN_RUN:="runit"}
+	if [ -z "$${1:ENVVAR}" ]; then
+		${2:$1}="${3:defaultval}"
+	fi
+snippet lastargbash
+	lastarg = "${@: -1}"
+snippet wrap
+	CMD="\$(cmd "\$@")"
+	: \${CMD:="\$(cmd "$@")"}
+snippet wrap-old
+	for (( i = 1; i < \$#; i++ )); do
+		eval ARG=\\${\$i}
+		aq "$ARG"
+		printf ' '
+	done
+	eval ARG=\\${\$i}
+	aq "$ARG"
+	)"
+snippet wrap-older
+	CMD="\$(
+	for (( i = 1; i < \$#; i++ )); do
+		eval ARG=\\${\$i}
+		printf -- "%s" "\$ARG" | q
+		printf ' '
+	done
+	eval ARG=\\${\$i}
+	printf -- "%s" "\$ARG" | q
+	)"
+snippet wrap-crown
+	ARGS=''
+	for (( i = 1; i <= $#; i++ )); do
+		eval ARG=\\${$i}
+		ARGS="$ARGS $(printf -- "%s" "$ARG" | q)"
+	done
+	eval "${0:/usr/bin/xterm -ls -en en_US.UTF-8} $ARGS"
+snippet wrap-quote.pl
+	#!/bin/bash
+	CMD=''
+	for (( i = 1; i <= $#; i++ )); do
+		eval ARG=\\${$i}
+		CMD="$CMD $(printf -- "%s" "$ARG" | q)"
+	done
+	cmd="${0:/usr/bin/xterm -ls -en en_US.UTF-8} $CMD"
+	eval "$cmd"
+snippet wrap-old
+	#!/bin/bash
+	CMD=''
+	for (( i = 1; i <= $#; i++ )); do
+		eval ARG=\\${$i}
+		CMD="$CMD \"$ARG\""
+	done
+	cmd="${0:/usr/bin/xterm -ls -en en_US.UTF-8} $CMD"
+	eval "$cmd"
+snippet bn-sh
+	bn="\${fp##*/}"
+snippet bn
+	bn="\$(basename -- "${1:$fp}")"
+snippet ext
+	fn=\$(basename -- "\$fp")
+	dn=\$(dirname "\$fp")
+	ext="\${fn##*.}"
+	mant="\${fn%.*}"
+snippet awktrace
+	tf_awk="$(mktemp ${TMPDIR}/tf_awkXXXXXX || echo /dev/null)"
+	
+	IFS= read -r -d '' AWKSCRIPT <<'EOF'
+	BEGIN { RS="\n" } {
+		subbed=\$0;
+		printf -- "print \"%s\";\n", subbed;
+		printf -- "%s;\n", subbed;
+	}
+	EOF
+	echo "$AWKSCRIPT" > "$tf_awk"
+	
+	cat "\$tf_prog" | awk -f "$tf_awk" | sponge "$tf_prog"
+snippet tnwr
+	tmux-neww-run.sh -c "$CFOLDER" -n "$winname" "${1:gr -- XMMS2}'"
+snippet twf
+	tmux neww -n zshvim "stty stop undef; stty start undef; vim $@; tmux wait-for -S linevim"
+	tmux wait-for linevim
+snippet wr
+	while read f; do
+		${0::}
+	done <<<"$bufs"
+snippet wrloneliner
+	DONE=false; until \$DONE; do IFS= read -r line || DONE=true; ${0}; done
+snippet wrloneliner-old
+	# This version sometimes misses the last line
+	# https://stackoverflow.com/questions/4165135/how-to-use-while-read-bash-to-read-the-last-line-in-a-file-if-there-s-no-new
+	while read line; do ${0}; done
+snippet wrl "# This removes starting whitespace"
+	awk1 | while IFS=$'\n' read -r line; do
+		${0}
+	done
+snippet wrln "# This removes starting whitespace and traling newlines (good)"
+	while IFS= read -r line; do
+		${0}
+	done
+snippet wrl-old2 "# This removes starting whitespace"
+	awk1 | while IFS= read -r line; do
+		${0}
+	done
+snippet wrc "# While read char"
+	awk1 | while read -n1 c; do
+		${0}
+	done
+snippet wrl-old
+	# This version sometimes misses the last line
+	# https://stackoverflow.com/questions/4165135/how-to-use-while-read-bash-to-read-the-last-line-in-a-file-if-there-s-no-new
+	while read line; do
+		${0}
+	done
+snippet wrl-0
+	while IFS= read -r -d $'\0' line; do
+		${0}
+	done
+snippet wrl-nul
+	while IFS= read -r -d $'\0' line; do
+		${0}
+	done
+snippet wrl-var
+	while read line; do
+		${0}
+	done <<< "$VAR"
+snippet wrl-done
+	DONE=false; until \$DONE; do IFS= read -r line || DONE=true
+		${0}
+	done
+snippet envsave
+	env > /tmp/eblenv
+	# sourcing isn't enough
+	cat /tmp/eblenv|sed 's/^/export /'|while read line; do eval "$line"; done 2>/dev/null
+# This is in global snippets
+#snippet ub
+#	/usr/bin/
+snippet e
+	/etc/
+snippet x
+	exec 
+snippet v
+	/var/
+snippet vl
+	/var/log/
+snippet tgd "git repo's top directory"
+	tgd="$(cd "${1:$dn}"; git rev-parse --show-toplevel)"
+#snippet dnl
+#	&>/dev/null
+# This works in POSIX sh
+snippet e21dn
+	exec 1>/dev/null 2>/dev/null
+snippet 12dn
+	1>/dev/null 2>/dev/null
+# Its in _
+#snippet adn
+#	1>/dev/null 2>/dev/null
+snippet &dn
+	1>/dev/null 2>/dev/null
+snippet dnl
+	1>/dev/null 2>/dev/null
+snippet >dn
+	>/dev/null
+snippet e1tf
+	exec 1> >(etf.sh);
+snippet 1t
+	1tf
+# snippet et
+# 	exec atf${0};
+snippet etf
+	exec atf${0};
+snippet eatf
+	exec 1> >(etf.sh) 2>&1;
+snippet aetf
+	1> >(etf.sh) 2>&1
+snippet atf
+	1> >(etf.sh) 2>&1
+snippet 1tf
+	1> >(etf.sh)
+snippet dn
+	>dn
+	drn
+snippet ifwhich
+	if which "${1:compgen}" &>/dev/null; then
+		${0::}
+	fi
+snippet which
+	wp="$(which "${1:$fn}")"
+snippet wp
+	wp="$(which "${1:$fn}")"
+snippet rp
+	rp="$(realpath "${1:$fp}")"
+snippet dn_dirname
+	dn="$(dirname "${1:$rp}")"
+snippet dirname
+	dn="$(dirname "${1:$rp}")"
+snippet dn-sh
+	dn="${rp%/*}"
+snippet drn
+	dn="$(dirname "${1:$rp}")"
+snippet dn=
+	dn="$(dirname "${1:$rp}")"
+# It's in _
+#snippet 1dn "what about dirname?"
+#	1>/dev/null
+#snippet 2dn
+#	2>/dev/null
+snippet edn
+	exec &>/dev/null
+snippet e1dn
+	exec 1>/dev/null
+snippet e2dn
+	exec 2>/dev/null
+snippet eadn
+	exec &>/dev/null
+snippet ea3
+	exec &>&3
+snippet e&dn
+	exec &>/dev/null
+snippet e
+	exec ${0};
+snippet ea1
+	exec 2>&1;
+snippet e21
+	exec 2>&1;
+snippet 21
+	2>&1
+snippet e12
+	exec 1>&2
+snippet e10
+	exec 0<&1
+snippet 12
+	1>&2
+snippet e13
+	exec 1>&3
+snippet 13
+	1>&3
+snippet e31
+	exec 3>&1
+snippet 31
+	3>&1
+snippet e23
+	exec 2>&3
+snippet 23
+	2>&3
+snippet e32
+	exec 3>&2
+snippet 32
+	3>&2
+snippet expandglob
+	eg "*.txt"
+	# glob="directories.*"
+	# paths="$(shopt -s nullglob; shopt -s extglob; eval printf -- "%s\\\n" "$glob" | qargs)" # expand
+	#way1=(/content/{dev01,dev01})
+	#way2="$(shopt -s nullglob; eval echo -e "$RET")" # expand
+	#paths="directories.*"
+	#paths="\$(shopt -s nullglob; eval pl "\$paths")" # expand
+	#[ -n "\$paths" ] && tm -t nw "vim \$paths"
+snippet stdinparafile
+	# This is how it should be done. Not below
+	if [ -t 0 ]; then
+		echo "No stdin."
+		exit 0
+	fi
+
+	if [ "\$#" -gt 0 ]; then
+		#input="\$@"
+		input="\$(cat "\$@")"
+	else
+		input="\$(cat)"
+	fi
+snippet stdin1
+	stdin_exists() {
+		{
+	    ! [ -t 0 ] && \
+	    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+	    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+	    # stdin may be redirected to the tty, but `test -t 0` will continue to say false (due to a bash bug)
+	    # So test to make sure 0 does not point to 1
+		} &>/dev/null
+	}
+
+	if stdin_exists; then
+		input_fp="\$(cat | tf txt)"
+	fi
+
+	if test -f "\$1"; then
+		input_fp="\$1"
+	fi
+
+	: "\${input_fp:="/dev/null"}"
+snippet stdinpara
+	# Soak up input from stdin or from the given file
+	if [ -t 0 ]; then
+		last_oarg() {
+			if [ \$# -gt 0 ]; then
+				n=\$((\$#-0))
+				eval ARG=\\${\$n}
+				echo "\$ARG"
+			fi
+		}
+
+		file=\$(last_arg "\$@")
+
+		if [ "\$#" -gt 0 ] && [ -f "\$file" ]; then
+			input="\$(cat "\$file")"
+		else
+			exit 0
+		fi
+	else
+		input="\$(cat)"
+	fi
+snippet stdinparaold
+	CMD=''
+	for (( i = 1; i <= \$#; i++ )); do
+		eval ARG=\\\${\$i}
+		CMD="\$CMD $\(echo "\$ARG" | sed 's/^/\"/' | sed 's/$/\"/')"
+	done
+	
+	firstpath="\$ARG"
+	
+	if ! [ -f "\$firstpath" ]; then
+		input="\$(cat)"
+		# remove ansi and save
+		stdinpath="\$(echo "\$input" | sed 's/\x1b\[[0-9;]*m//g' | hashsave.sh "\$DUMP$NOTES/ws/programs/editor/tmp")"
+		aupath="\$stdinpath"
+	else
+		aupath="\$firstpath"
+		stdinpath=
+	fi
+	
+	if [ -n "\$stdinpath" ]; then
+		eval "CWD=$CWD EDITOR=\"editor.sh\" /usr/bin/gedit \$CMD \"\$stdinpath\""
+	else
+		eval "CWD=\$CWD EDITOR=\"editor.sh\" /usr/bin/gedit \$CMD"
+	fi
+snippet tnw
+	ranstr="$(dd bs=18 count=1 if=/dev/urandom 2>/dev/null | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)"
+
+	# consider tnwr
+	CURRENT_TMUX_SESSION_NAME="$(tmux display-message -p -t $TMUX_PANE '#{session_name}')"
+	slug="$(echo "$@" | slugify.py | cut -c -30)"
+	NEWWIN="$(tmux neww -n "$slug" -t "${CURRENT_TMUX_SESSION_NAME}:" $TARGS -P -F "#{window_id}" "trap '' INT; stty stop undef; stty start undef; ${2:true;echo hi | less}${3:; tmux wait-for -S nw$ranstr; tmux kill-pane -t \"\\\$TMUX_PANE\"}")"
+	${4:tmux wait-for nw$ranstr}
+snippet tnwsigkill
+	# Unfortunately, tmux doesn't send a SIGHUP when you close it
+	# using F1-x. I shouldn't wait for HUP. I should wait for whatever
+	# tmux sends, or I should make a wrapper to the kill command to
+	# send HUP.
+	# I should force it to do that, with a rebinding maybe.
+
+	ranstr="$(dd bs=18 count=1 if=/dev/urandom 2>/dev/null | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)"
+	# INT is C-c. Hup is no hangup when tty is killed
+	trap func_trap HUP
+	func_trap() {
+		tmux wait-for "nw$ranstr"
+		exit 0
+	}
+
+	# consider tnwr
+	CURRENT_TMUX_SESSION_NAME="$(tmux display-message -p -t $TMUX_PANE '#{session_name}')"
+	slug="$(echo "$@" | slugify.py | cut -c -30)"
+	NEWWIN="$(tmux neww -n "$slug" -t "${CURRENT_TMUX_SESSION_NAME}:" $TARGS -P -F "#{window_id}" -n "${1:$name}" "trap '' INT; stty stop undef; stty start undef; ${2:true;echo hi | less}${3:; tmux wait-for -S nw$ranstr; tmux kill-pane -t \"\\\$TMUX_PANE\"}")"
+	${4:tmux wait-for nw$ranstr}
+snippet -p "remove prefix"
+	ss="${${1:fp}#${2:$prefix}}"
+snippet rmp "remove prefix"
+	ss="${${1:fp}#${2:$prefix}}"
+snippet -s "remove suffix"
+	sp="${${1:fp}%${2:$suffix}}"
+snippet rms "remove suffix"
+	sp="${${1:fp}%${2:$suffix}}"
+snippet nh
+	nohup
+snippet nohup
+	trap '' HUP
+snippet ti "nohup"
+	trap '' HUP
+snippet tif "nohup"
+	trap func_trap INT
+	func_trap() {
+	}
+snippet trap "noint"
+	trap func_trap INT
+	func_trap() {
+	}
+snippet trapint "noint"
+	trap '' INT
+snippet trapintfunc "noint"
+	trap func_trap INT
+	func_trap() {
+	}
+snippet th "nohup"
+	# INT is C-c. Hup is no hangup when tty is killed
+	trap '' HUP
+snippet thf "nohup"
+	# INT is C-c. Hup is no hangup when tty is killed
+	trap func_trap HUP
+	func_trap() {
+	}
+snippet traphup "nohup"
+	# INT is C-c. Hup is no hangup when tty is killed
+	trap '' HUP
+snippet traphupfunc "nohup"
+	# INT is C-c. Hup is no hangup when tty is killed
+	trap func_trap HUP
+	func_trap() {
+	}
+snippet tplc
+	eval \`resize\`
+	LINES=$(tput lines)
+	COLUMNS=$(tput cols)
+snippet cols
+	eval \`resize\`
+	LINES=$(tput lines)
+	COLUMNS=$(tput cols)
+snippet max
+	colsmax
+snippet colsmax
+	# This appears to work only while bash has control of the shell
+	# If control is given to a subprocess such as browsh, bash doesn't
+	# appear to control it or be able to trap it anymore.
+
+	MAXCOLS=181
+	MAXROWS=56
+
+	# Doesn't appear to work very well
+	LINES=\$(tput lines)
+	COLUMNS=\$(tput cols)
+	
+	if [ "\$COLUMNS" -gt "\$MAXCOLS" ]; then
+		stty cols \$MAXCOLS
+	fi
+	if [ "\$LINES" -gt "\$MAXROWS" ]; then
+		stty rows \$MAXROWS
+	fi
+	
+	trap 'get_window_size' WINCH                    # trap when a user has resized the window
+	get_window_size() {
+		LINES=\$(tput lines)
+		COLUMNS=\$(tput cols)
+	
+		if [ "\$COLUMNS" -gt "\$MAXCOLS" ]; then
+			stty cols \$MAXCOLS
+		fi
+		if [ "\$LINES" -gt "\$MAXROWS" ]; then
+			stty rows \$MAXROWS
+		fi
+	
+		trap WINCH
+		eval \`resize\`
+		trap 'get_window_size' WINCH
+		return 0
+	}
+snippet s1
+	sleep ${1:1}
+snippet s5
+	sleep ${1:5}
+snippet s
+	sleep ${1:1}
+snippet sttyundef
+	stty stop undef 2>/dev/null
+	stty start undef 2>/dev/null
+snippet stopundef
+	stty stop undef 2>/dev/null
+	stty start undef 2>/dev/null
+snippet php
+	php_cwd=\`/usr/bin/php << 'EOF'
+	<?php echo getcwd(); ?>
+	EOF\`
+	echo "$php_cwd" # Or do something else with it
+snippet phpo2ne5liner
+	php_cwd = \`php -r 'echo getcwd();'\`
+snippet el
+	exit $?
+snippet e?
+	exit $?
+snippet e0
+	exit 0
+snippet e1
+	exit 1
+# echo to 2 instead
+# snippet e2
+# 	# exit 2
+snippet wait
+	import -window root /tmp/screen.png &
+	pid=$!
+	sudo cpulimit -p $! --limit=10
+	wait $pid
+snippet nice
+	pid=$!
+	# cpulimit is actuall blocking
+	nice-and-easy.sh $pid &
+snippet nae
+	pid=$!
+	# cpulimit is actuall blocking
+	nice-and-easy.sh $pid &
+snippet jobcontrol
+	set -m
+	echo -n "Compressed size: $(it "gh size" "$url")" 1>&2 &
+	kill $(jobs -p) &>/dev/null
+	# adding job-control like this can make scripts unkillable, I think
+snippet parapos
+	${1:parapos}="\$1"
+	if [ -z "$$1" ]; then
+		$1="${2:defvalue}"
+	fi
+snippet args
+	for var in "$@"
+	do
+		echo "$var"
+	done
+snippet iterargs
+	for var in "$@"
+	do
+		echo "$var"
+	done
+snippet in
+	fdata="$(cat|mktempstdin)"
+snippet mktempstdin
+	fdata="$(cat|mktempstdin)"
+snippet cacheit
+	#!/bin/bash
+	CMD=''
+	for (( i = 1; i <= $#; i++ )); do
+		eval ARG=\\\${$i}
+		# the -- is to fix echo where ARG = "-e"
+		CMD="$CMD $(echo "--$ARG" | sed 's/^--//' | sed 's/^/\"/' | sed 's/$/\"/')"
+	done
+	cat "$(cacheit.sh "$DUMP$NOTES/ws/programs/cached/$0" "/usr/bin/id $CMD")"
+snippet ciw
+	#!/bin/bash
+	CMD=''
+	for (( i = 1; i <= $#; i++ )); do
+		eval ARG=\\\${$i}
+		# the -- is to fix echo where ARG = "-e"
+		CMD="$CMD $(echo "--$ARG" | sed 's/^--//' | sed 's/^/\"/' | sed 's/$/\"/')"
+	done
+	cat "$(cacheit.sh "$DUMP$NOTES/ws/programs/cached/$0" "/usr/bin/id $CMD")"
+snippet wrapcach
+	#!/bin/bash
+	CMD=''
+	for (( i = 1; i <= $#; i++ )); do
+		eval ARG=\\\${$i}
+		# the -- is to fix echo where ARG = "-e"
+		CMD="$CMD $(echo "--$ARG" | sed 's/^--//' | sed 's/^/\"/' | sed 's/$/\"/')"
+	done
+	cat "$(cacheit.sh "$DUMP$NOTES/ws/programs/cached/$0" "/usr/bin/id $CMD")"
+snippet getopt-4
+	while getopts -- '${1:o}' ${2:opts}
+	do
+		case $$2 in
+		${3:o0})
+			${0:#staments};;
+		esac
+	done
+snippet go5
+	getopt5
+snippet sw
+	case $name in
+		h) show_usage; exit 2;;
+		l) list_steps; exit 2;;
+		x) DEBUG_MODE="y";;
+		p) PERMISSIVE_MODE="y";;
+		n) DRY_RUN="y";;
+		r) FUN_RUN="$OPTARG";;
+		*) pl "unknown option: $name"; show_usage;;
+	esac
+snippet switch
+	case $name in
+		h) show_usage; exit 2;;
+		l) list_steps; exit 2;;
+		x) DEBUG_MODE="y";;
+		p) PERMISSIVE_MODE="y";;
+		n) DRY_RUN="y";;
+		r) FUN_RUN="$OPTARG";;
+		*) pl "unknown option: $name"; show_usage;;
+	esac
+snippet switch-glob
+	case "\$fp" in
+		*NumericValues*) {
+			SORT_KEYS="[\"CDID\",\"ModelID\",\"PerfLevel\",\"NumericValue\"]"
+			DUP_KEYS="[\"CDID\",\"ModelID\",\"PerfLevel\"]"
+		} ;;
+		*StringValues*) {
+			SORT_KEYS="[\"CDID\",\"ModelID\",\"PerfLevel\"]"
+			DUP_KEYS="[\"CDID\",\"ModelID\",\"PerfLevel\"]"
+		} ;;
+		*/source_data/*) {
+			SORT_KEYS="[\"Cdid\"]"
+			DUP_KEYS="[\"Cdid\"]"
+		} ;;
+	esac
+#snippet getopts-clunky
+#	while getopts -- ":a:" opt; do
+#		switch
+#	done
+#snippet getopt
+#	#!/bin/bash
+#	while getopts -- ":a:" opt; do
+#		case $opt in
+#			a)
+#				echo "-a was triggered, Parameter: $OPTARG" >&2
+#				;;
+#			\?)
+#				echo "Invalid option: -$OPTARG" >&2
+#				exit 1
+#				;;
+#			:)
+#				echo "Option -$OPTARG requires an argument." >&2
+#				exit 1
+#				;;
+#		esac
+#	done
+snippet gof
+	getoptfull
+snippet getoptfull
+	__ScriptVersion="${1:version}"
+
+	function usage ()
+	{
+		echo "Usage :  $${0:0} [options] [--]
+
+		Options:
+		-h|help       Display this message
+		-v|version    Display script version"
+
+	}    # ----------  end of function usage  ----------
+
+	while getopts -- ":hv" opt
+	do
+	  case $opt in
+
+		h|help     )  usage; exit 0   ;;
+
+		v|version  )  echo "$${0:0} -- Version $__ScriptVersion"; exit 0   ;;
+
+		* )  echo -e "\n  Option does not exist : $OPTARG\n"
+			  usage; exit 1   ;;
+
+	  esac    # --- end of case ---
+	done
+	shift $(($OPTIND-1))
+snippet tmux_w
+	ttw
+snippet tmux_s
+	tts
+snippet ttw
+	TMUXNOWAIT= tmux_w scrape localhost${1:_current}: "${2:press-key-to-continue.sh y; while :; do ocr-from-x.sh; sleep 1; done; pak}" "${3:\$NOTES/current}"
+snippet tts
+	TMUXNOWAIT= tmux_s localhost_${1:ws} $1 localhost "$NOTES/$1"
+snippet au
+	echo "\$@" | append-uniq.sh $NOTES/current/google/searches.txt
+snippet appenduniq
+	echo "\@$" | append-uniq.sh $NOTES/current/google/searches.txt
+snippet ns
+	notify-send "${0}"
+snippet v
+	vim "${0}"
+snippet wt
+	while :; do ${1}; done;
+snippet roe
+	roe=$(tmux show -t "$CURRENT_TMUX_SESSION:" set-remain-on-exit | cut -d ' ' -f 2)
+	if [ -z "$roe" ]; then
+		roe="off"
+	fi
+	# do something
+	tmux set -t "$CURRENT_TMUX_SESSION:" set-remain-on-exit "$roe"
+snippet tnr
+	tmux-neww-run.sh "${0}"
+snippet syn
+	hi interface cterm=NONE ctermfg=228 ctermbg=148
+	syntax match interface '\<enp[0-9]\@='
+snippet fi
+	# Did you mean 4i ?
+	pcrefiltercapgroup${0}
+snippet fl
+	pcrefiltercapgroup
+snippet ml
+	sedmaxlen${0}
+snippet sedmaxlenfilter
+	sed -n '/.\{8,\}/p'
+snippet pa
+	pak
+snippet e0dn
+	exec 0</dev/null
+snippet e0-
+	exec 0<&-
+snippet 0[
+	0<&-
+snippet 0-
+	0<&-
+snippet ak
+	pak
+snippet pak
+	pak
+# ./a.out 3>&1 1>&2 2>&3 3>&- | sed 's/e/E/g'
+snippet 12s
+	3>&1 1>&2 2>&3 3>&-
+snippet swap12
+	>&2 2>&3 3>&-
+snippet ah
+	echo "$superquery" | add-to-history.sh $NOTES/ws/programs/croogle/clihistory.txt
+snippet hist
+	echo "$superquery" | add-to-history.sh $NOTES/ws/programs/croogle/clihistory.txt
+snippet la
+	lastarg
+snippet allbutlast
+	newlength=$(($#-1))
+	allbutlast=${@:1:$newlength}
+	echo $allbutlast
+snippet lastarg
+	last_arg="\${@: -1}"
+snippet secondlastarg
+	second_to_last="\${@:(-2):1}"
+snippet lastarg_idk
+	last_arg() {
+		if [ "\$#" -gt "0" ]; then
+			n=\$((\$#-0))
+			eval ARG=\\${\$n}
+			echo "\$ARG"
+		fi
+	}
+
+	file=\$(last_arg "\$@")
+snippet lastarg3
+	file="\${!#}"
+snippet lastargbash2
+	n=$(($#-0))
+	echo ${!n}
+snippet 2l
+	2ndlast
+snippet 2ndlast
+	n=$(($#-1))
+	echo ${!n}
+snippet 3l
+	3rdlast
+snippet 3rdlast
+	n=$(($#-2))
+	echo ${!n}
+snippet is-stdout-tty
+	is_tty() {
+		# If stout is a tty
+		[ -t 1 ] && ! test "$TERM" = "dumb"
+	}
+snippet ispipe
+	is_stdout_pipe() {
+		# If stout is a pipe
+		[[ -p /dev/stdout ]]
+	}
+	is_stdout_pipe
+	ispipe="\$?"
+snippet ifstdoutpipe
+	ispipe
+snippet ifp
+	is_stdout_pipe() {
+		# If stout is a pipe
+		[[ -p /dev/stdout ]]
+	}
+	is_stdout_pipe
+	ispipe="\$?"
+snippet ifpipe
+	is_stdout_pipe() {
+		# If stout is a pipe
+		[[ -p /dev/stdout ]]
+	}
+	is_stdout_pipe
+	ispipe="\$?"
+snippet is-stdout-pipe
+	is_stdout_pipe() {
+		# If stout is a pipe
+		[[ -p /dev/stdout ]]
+	}
+snippet is-stdout-redirection
+	# If stout is a redirection
+	if [[ ! -t 1 && ! -p /dev/stdout ]]; then
+		echo 'STDOUT is attached to a redirection'
+	fi
+snippet interactive
+	# run inside script
+	isbatch
+
+	# run inside terminal
+	isterminal
+
+	# receiving from stdin
+	stdin_exists
+
+	# sending to stdout
+	# ?
+	# $NOTES/ws/bash/interactive.txt
+	# SIGPIPE tells you when the thing being piped to no longer wants
+	# output
+	# this works! -- is-stdout-tty
+	is-stdout-tty
+	is-stdout-pipe
+	is-stdout-redirection
+snippet noninteracive
+	# run inside script
+	isbatch
+
+	# run inside terminal
+	isterminal
+
+	# receiving from stdin
+	stdin_exists
+
+	# sending to stdout
+	# ?
+	# SIGPIPE tells you when the thing being piped to no longer wants
+	# output
+snippet isbatch
+	is_batch() {
+		# run inside script
+		# If not running interactively, don't continue
+		[ -z "\$PS1" ] && return 2>/dev/null
+	}
+snippet isterminal
+	# run inside terminal (this is almost everything)
+	tty -s; if [ "0" == "$?" ]; then
+		echo "Terminal attached, you can print data as there might be a user viewing it.";
+	else
+		echo "No terminal attached, there might not be a reason to print everything.";
+	fi
+snippet tmpcpyrun
+	#!/bin/bash
+
+	p="$1"
+	f="$(basename -- "$p")"
+	n="${f%.opkg}"
+
+	TD="$(mktemp -d $TMPDIR/fileXXXXXX || exit 1)"
+
+	TMPSYM="$TD/${n}.zip"
+	ln -s "$p" "$TMPSYM"
+
+	file-roller "$TMPSYM" & disown
+snippet randstr
+	# https://gist.github.com/earthgecko/3089509
+	# never 'cat' urandom
+	ranstr="$(dd bs=18 count=1 if=/dev/urandom 2>/dev/null | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)"
+snippet slu
+	slug="$(echo "$@" | tr -d '\n' | slugify | cut -c -10)"
+snippet slug
+	slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -10)"
+snippet slug-old
+	slug="$(echo "$@" | tr -d '\n' | slugify | cut -c -10)"
+snippet ctime
+	ctime="$(stat -t -c "%X" "$fp")"
+	now="$(date +%s)"
+	tdiff="$(( now - ctime ))"
+snippet removeansi
+	sed 's/\x1b\[[0-9;]*m//g'
+snippet hasprefix
+	echo "${1:something}" | if grep -q -P "^${0:prefix}"; then
+	fi
+snippet hassuffix
+	echo "${1:something}" | if grep -q -P "^${0:prefix}"; then
+	fi
+snippet glob
+	shopt -s globstar
+snippet monitorvarin
+	results="$(getresults|pv)"
+snippet stdoutcaptureexists
+	if [ -t 1 ]; then
+		echo "No stdout capture."
+		exit 0
+	fi
+snippet if0
+	stdin_exists
+snippet hasstdin
+	stdin_exists() {
+		{
+	    ! [ -t 0 ] && \
+	    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+	    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+	    # stdin may be redirected to the tty, but `test -t 0` will continue to say false (due to a bash bug)
+	    # So test to make sure 0 does not point to 1
+		} &>/dev/null
+	}
+
+	if stdin_exists; then
+		:
+	fi
+snippet ifstdin-old
+	stdin_exists() {
+		# this makes it so the first key pressed in the terminal is a
+		# dead key. it's broken
+		# IFS= read -t0.1 -rd '' input < <(cat /dev/stdin)
+		# exec < <(printf -- "%s" "\$input")
+		# [ -n "\$input" ]
+
+		! [ -t 0 ] && ! test "\$(readlink /proc/\$\$/fd/0)" = /dev/null
+		# ! [ -t 0 ] && read -t 0
+	}
+
+	if stdin_exists; then
+		:
+	fi
+snippet ifstdin
+	stdin_exists() {
+		{
+	    ! [ -t 0 ] && \
+	    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+	    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+	    # stdin may be redirected to the tty, but `test -t 0` will continue to say false (due to a bash bug)
+	    # So test to make sure 0 does not point to 1
+		} &>/dev/null
+	}
+
+	if stdin_exists; then
+		:
+	fi
+snippet stdinexists
+	stdin_exists() {
+		{
+	    ! [ -t 0 ] && \
+	    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+	    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+	    # stdin may be redirected to the tty, but `test -t 0` will continue to say false (due to a bash bug)
+	    # So test to make sure 0 does not point to 1
+		} &>/dev/null
+	}
+snippet stdin_exists
+	stdin_exists() {
+		{
+	    ! [ -t 0 ] && \
+	    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+	    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+	    # stdin may be redirected to the tty, but `test -t 0` will continue to say false (due to a bash bug)
+	    # So test to make sure 0 does not point to 1
+		} &>/dev/null
+	}
+snippet piperestofthisscriptbinary
+	# Actually this should point to the first line that isn't script
+	LINES_IN_SCRIPT=48
+	tail --lines=+$LINES_IN_SCRIPT $0 | gzip -d | tar --no-same-owner -x -C ${MY_TMP}
+	exit 0
+	## Line 47 END OF SCRIPT ##
+snippet 2
+	>&2
+snippet e1f
+	bn="$(basename -- "\$0")"
+	exec >${0:/tmp/\$bn.log}
+# snippet read
+# 	echo -e "mac\niphone horizontal half\niphone vertical half"
+# 	read ans
+# 	clear
+snippet read
+	IFS= read -rd '' PEN_STOP_SEQUENCE < <(p "\$PEN_STOP_SEQUENCE");typeset -p PEN_STOP_SEQUENCE &>/dev/null
+# snippet read
+# 	read -ep "docker search: " query
+# # snippet read
+# # 	while read -ep "Type something: " -i "My text is " text; do 
+# # 		echo "\$text";
+# # 	done
+snippet readc
+	echo -e "m mac\nh iphone horizontal half\nv iphone vertical half"
+	read -n1 ans
+	clear
+snippet ask
+	#read -p "${1:Do you wish to install this program?}" ans
+	echo -e "m mac\nh iphone horizontal half\nv iphone vertical half"
+	read -n1 ans
+snippet quotepara
+	regex="\$(pl -n "\$regex" | quote-no-outside-quotes.pl)"
+snippet searchstdin
+	if [ -t 0 ]; then
+		echo "No stdin."
+		exit 0
+	fi
+
+	query="$(cat | no-trailing-whitespace.sh | quote-no-outside-quotes.pl)"
+snippet no_args
+	no_args() {
+		# Usage: "if no_args \$@; then"...
+
+		nargs=\$#
+		[ \$nargs -eq 0 ]
+	}
+
+	if no_args $@; then
+		pl "No parameters given."
+		echo
+		show_usage
+		exit 2
+	fi
+snippet script
+	g_bn="$(basename -- "$0")"
+
+	# Set if not already set by environment
+	: ${SHELL_CMD:="sh"}
+	: ${DEBUG_MODE:="n"}
+	: ${PERMISSIVE_MODE:="n"}
+	: ${DRY_RUN:="n"}
+	: ${FUN_RUN:="update_imm"}
+
+	no_args() {
+		# Usage: "if no_args \$@; then"...
+
+		nargs=\$#
+		[ \$nargs -eq 0 ]
+	}
+
+	if no_args $@; then
+		pl "No parameters given."
+		echo
+		show_usage
+		exit 2
+	fi
+
+	while getopts -- plxhnd:t:b:a:r:i:y:- name; do
+	case $name in
+		h) show_usage; exit 2;;
+		l) list_steps; exit 2;;
+		x) DEBUG_MODE="y";;
+		p) PERMISSIVE_MODE="y";;
+		n) DRY_RUN="y";;
+		r) FUN_RUN="$OPTARG";;
+		-)  break;;
+		*) pl "unknown option: $name"; show_usage;;
+	esac
+	done
+
+	not_dryrun() {
+		! [ "$DRY_RUN" == y ]
+	}
+
+	permit() {
+		[ "$PERMISSIVE_MODE" == y ]
+	}
+
+	debug_mode() {
+		[ "$DEBUG_MODE" == y ]
+	}
+
+	if debug_mode; then
+		set -x
+		set -v
+		SHELL_CMD="sh -x -v"
+	fi
+snippet getoptsterse
+	while getopts -- ep:s:l:c:g:- name
+	do case $name in
+		e) EXCLUDE="1";;
+		p) PATTERN="$OPTARG";;
+		s) SPLITMODE="$OPTARG";;
+		l) LISTARGS="$OPTARG";;
+		c) CAPTUREARGS="$OPTARG";;
+		g) GREPARGS="$OPTARG";;
+		-)  break;;
+		*) echo "Usage: $0 [-p pattern] [-s splitmode] [-l listargs] [-f <file>] [-c captureargs] [-g grepargs] [test1 [test2 [...]]]\n"
+			exit 2;;
+	esac
+	done
+snippet exthandler
+	#!/bin/sh
+	
+	case "$1" in
+		*.extension)
+			extension-handler "$1"
+			;;
+		*)
+			# We don't handle this format.
+			exit 1
+	esac
+	
+	# No further processing by lesspipe necessary
+	exit 0
+snippet usage
+	echo "Usage: $0 [-c|--clean] [-v|--verbose] [-p|--permissive] [-f <file>] [test1 [test2 [...]]]"
+snippet noargs
+	if [[ $# -eq 0 ]] ; then
+		echo 'some message'
+		exit 0
+	fi
+snippet unexport_all
+	# Removing all exports
+	unexport_all () {
+		eval set -- `export -p`
+		for i do case "$i" in
+			*=*) unset ${i%%=*} ; eval "${i%%=*}=\${i#*=}" ;;
+		esac ; done
+	}
+snippet myfind
+	# Recursive directory processing without find
+
+	# Since find is difficult or impossible to use robustly, why not
+	# write the recursion in shell script instead? Unfortunately I
+	# have not worked out a way to do this that does not require one
+	# level of subshell nesting per directory tree level, but here’s a
+	# shot at it with subshells:
+
+	myfind () (
+		cd -P -- "$1"
+		[ $# -lt 3 ] || [ "$PWD" = "$3" ] || exit 1
+		for i in ..?* .[!.]* * ; do
+			[ -e "$i" ] && eval "$2 \"\$i\""
+			[ -d "$i" ] && myfind "$i" "$2" "${PWD%/}/$i"
+		done
+	)
+snippet readpass
+	# -s hides the input
+	echo -n Password: 
+	read -s password
+snippet ss "subshell POSIX Compliant"
+	#!/bin/sh
+	echo 'Unzipping VCM Truck Bundle...'
+	pwd
+	(
+		cd "/tmp"
+		pwd
+	)
+snippet blockcomment "use quotes to prevent command substitutions in the heredoc"
+	: << 'SKIP'
+
+	your code block here
+
+	SKIP
+snippet setifnotset
+	# Set if not already set by environment
+	: ${SHELL_CMD:="sh"}
+snippet conditionalset
+	# Set if not already set by environment
+	: ${SHELL_CMD:="sh"}
+snippet spawn_in_background
+	spawn_in_background() {
+		if not_dryrun; then
+			CMD=$1
+			shift
+			/sbin/start-stop-daemon -b --exec $CMD -S -- $*
+		fi
+	}
+snippet no0
+	nostdin() {
+		[ -t 0 ]
+	}
+snippet no<
+	nostdin() {
+		[ -t 0 ]
+	}
+snippet nostdin
+	nostdin() {
+		[ -t 0 ]
+	}
+snippet runext
+	# Set if not already set by environment
+	: ${SHELL_CMD:="sh"}
+
+	while getopts -- lxhn1d:t:b:a:r:i:y: name; do
+	case $name in
+		x) DEBUG_MODE="y";;
+		*) pl "unknown option: $name"; show_usage;;
+	esac
+	done
+
+	debug_mode() {
+		[ "$DEBUG_MODE" == y ]
+	}
+
+	if debug_mode; then
+		set -x
+		set -v
+		SHELL_CMD="sh -x -v"
+	fi
+
+	run_shell_cmd() {
+		# This ensures we do not wait for output from any processes
+		# backgrounded by external scripts but at the same time allow
+		# debugging output from stderr and run the script synchronously.
+		# $SHELL_CMD $* >&-
+		# closing the file descriptor means that external scripts get
+		# a 'bad file descriptor error'. What I really want is to
+		# redirect it to dev null.
+		# Alternatively, I could probably write it to a fifo and read
+		# from that fifo in a background job.
+		$SHELL_CMD $* >/dev/null
+	}
+snippet ashhd
+	# It's not possible to save a heredoc to a variable in ash but you
+	# can pipe it to a command
+	cat <<-HEREDOC |
+		${DOM_PATH}db/TruckDB.dbs
+		${DOM_PATH}db/TruckDB.log
+		/root/eXtremeDB.TruckDB-cache
+		/root/eXtremeDB.TruckDB-db
+		/root/eXtremeDB_registry
+		/eXtremeDB.TruckDB-cache
+		/eXtremeDB.TruckDB-db
+		/eXtremeDB_registry
+	HEREDOC
+	awk '{print $1}'
+snippet ashmultilineread
+	STEPS="\
+		   backup_database    : Backing up database   \n\
+		   shutdown_vcm       : Shutting down VCM     \n\
+		   shutdown_apps      : Shutting down apps    \n\
+		   clean_imm_data     : Cleaning imm data     \n\
+		   vcm_setup          : Setting up VCM        \n\
+		   apply_imm_overlays : Apply IMM overlays    \n\
+		   upgrade_vcm        : Upgrading VCM         \n\
+		   clean_imm_overlays : Cleaning IMM overlays \n\
+		   start_apps         : Starting Apps         \n\
+		   apply_truck_config : Apply truck config    "
+
+	update_imm() {
+		i=0
+		n="$(($(echo -e "$STEPS" | wc -l) + 1))"
+		echo -e "$STEPS" | while read s; do
+			i=$((i + 1))
+			fn="$(pl "$s" | awk '{print \$1}')"
+			caption="$(pl "$s" | awk '{\$1=""; \$2=""; print \$0}' | sed 's/^\s\+//')"
+			pl "=== $i/$n $caption"
+			trap '' PIPE CHLD HUP
+			$fn
+			retval=$?
+			if ! [ $retval -eq 0 ] && ! permit; then
+				return "$retval"
+			fi
+			sleep 1
+		done
+	}
+snippet onexit
+	trap '' 0
+snippet pgrep_alternative
+	if ! pidof MenuEngine; then
+snippet pipe_column
+	# The entire column gets piped through as multi-line input to the
+	# external program
+	# I don't think this works. But I want to figure it out.
+	csvtool readable <(find "." | sed -n 's/^.*\.\([a-z0-9A-Z]\+\)$/\1/p' | sort | logtop -q | sed '1d' | awk '{print $2 "," $3;}') | awk "{ print \$1 \$2 | \"tr -s 't' 'z'\" }"
+snippet check_option_set
+	debug_mode_enabled
+snippet debug_mode_enabled "check an option is set"
+	debug_mode_enabled() {
+		case "$-" in
+			*x*) true;;
+			*v*) true;;
+			*) false;;
+		esac
+	}
+snippet code-to-string
+	# These need to be tabs.
+	echo_exit_codes() { cat <<'HEREDOC'
+	0	SUCCESS
+	51	INSTALL FAILED: File not found
+	52	INSTALL FAILED: DB command failed
+	80	Nothing to do
+	201	HELP
+	202	HELP NO ARGS
+	203	WRONG ARGUMENTS
+	HEREDOC
+	}
+	
+	code_to_string() {
+		code="\$1"
+		if ! [ -n "\$code" ]; then return 1; fi
+		string="\$(echo_exit_codes | awk -F'\t' 'BEGIN{OFS=""}\$1 == '\$code' {\$1 = ""; print \$0}')"
+		if [ -n "\$string" ]; then
+			pl "\$string"
+			return
+		else
+			if [ \$code -ge 100 ] && [ \$code -lt 200 ]; then
+				echo "STEP \$(( \$code - 100 )) FAILED"
+			else
+				echo "FAILURE"
+			fi
+		fi
+	}
+snippet slw "sleep wrapper"
+	sleep() {
+		/bin/sleep $@
+	}
+snippet array_copy
+	a=(foo bar "foo 1" "bar two")  #create an array
+	b=("\${a[@]}")                  #copy the array in another one 
+	
+	for value in "\${b[@]}" ; do    #print the new array 
+	echo "\$value" 
+	done   
+snippet shift_end "remove last argument from argument list"
+	set -- "\${@:1:\$((\$#-1))}" # shift last arg
+snippet pa
+	\$${1:GOPATH}="$(path-append-no-dup.sh \$"$1" "${0:$VAS/projects/imm/go}")"
+snippet pathappend
+	\$${1:GOPATH}="$(path-append-no-dup.sh \$"$1" "${0:$VAS/projects/imm/go}")"
+snippet pp
+	\$${1:GOPATH}="$(path-prepend-no-dup.sh \$"$1" "${0:$VAS/projects/imm/go}")"
+snippet pathprepend
+	\$${1:GOPATH}="$(path-prepend-no-dup.sh \$"$1" "${0:$VAS/projects/imm/go}")"
+snippet read_from_path
+	OIFS=$IFS
+	IFS=:
+	for p in $PATH; do
+		echo "$p"
+	done
+	IFS=$OIFS
+snippet 1
+	${1:p1}="\$1"
+snippet 2
+	${2:p2}="\$2"
+snippet p1l
+	local ${1:p1}="\$1"
+snippet p1d
+	local ${1:p1}="\$1"; : ${$1:="${0:default_val}"}
+snippet p2
+	local ${1:p2}="\$2"
+snippet p2d
+	local ${1:p2}=\$2; : ${$1:="${0:default_val}"}
+snippet p3
+	local ${1:p3}="\$3"
+snippet p3d
+	local ${1:p3}=\$3; : ${$1:="${0:default_val}"}
+snippet p4
+	local ${1:p4}="\$4"
+snippet p4d
+	local ${1:p4}=\$4; : ${$1:="${0:default_val}"}
+snippet p5
+	local ${1:p5}="\$5"
+snippet p5d
+	local ${1:p5}=\$5; : ${$1:="${0:default_val}"}
+snippet inv "invocation"
+	# Usage: \$0 -h
+	
+	invocation="\$0 \$@"
+snippet nsinv "notify-send invocation"
+	# Usage: \$0 -h
+	
+	invocation="\$0 \$@"
+	ns "invoked: \$invocation"
+snippet loop
+	for ARG in "\$@"
+	do
+		:
+	done
+snippet reverse_loop
+	snippet for_reverse
+snippet for_reverse
+	for ((i=\$#; i>0; i--)); 
+	do
+		ARG=\${!i}
+	done
+snippet cwd
+	: ${CWD:="$(pwd)"}; cd "$CWD"
+snippet cwd-old
+	cwd="$(pwd)"
+snippet ee
+	pl "${SHELL_CMD:="ash"}"
+	cd "${V:="$(echo /)"}"
+	echo "$V"
+snippet echoandequals
+	pl "${SHELL_CMD:="ash"}"
+	cd "${V:="$(echo /)"}"
+	echo "$V"
+snippet min
+	exec > >(mnm)
+snippet emnm
+	exec > >(mnm)
+snippet em
+	exec > >(mnm)
+snippet em
+	exec &> >(mnm)
+snippet e0m
+	exec < <(mnm)
+snippet e1m
+	exec 1> >(mnm)
+snippet e1-
+	exec 1>&-
+snippet e2-
+	exec 2>&-
+snippet 2-
+	2>&-
+snippet 1-
+	1>&-
+snippet 2m
+	2> >(mnm)
+snippet e2m
+	exec 2> >(mnm)
+snippet am
+	1> >(mnm) 2> >(mnm)
+snippet eam
+	exec 1> >(mnm)
+	exec 2> >(mnm)
+snippet em
+	exec 1> >(mnm)
+	exec 2> >(mnm)
+snippet e12m
+	exec 1> >(mnm)
+	exec 2> >(mnm)
+snippet shebang
+	getshebang() {
+		head -n 1 "\$1" | sed 's/^..//'
+	}
+
+	hasshebang() {
+		[[ "\$(head -c 2 "\$1")" == "#!" ]]
+	}
+
+	if hasshebang "\$rp"; then
+		eval "\$(getshebang "\$rp") \"\$rp\""
+		exit \$?
+	fi
+snippet listarray
+	ar=(10 30 44 44 69 12 11)
+	IFS=\$'\n'
+	echo "\${ar[*]}"
+snippet max
+	sort -nr | head -n1
+snippet maxofargs
+	max()
+	{
+		local m="$1"
+		for n in "$@"
+		do
+			[ "$n" -gt "$m" ] && m="$n"
+		done
+		echo "$m"
+	}
+snippet rs
+	# argument to yes can be \n
+	rs "${1:sup}" ${2:50}
+snippet repeatstring
+	rs "${1:sup}" ${2:50}
+snippet rsnl
+	# argument to yes can be empty string (to make newlines)
+	yes "${1:sup}"|head -${2:50}|tr -d '\n'
+snippet optift
+	OPTIND=1
+	KEEP_OPTS=0
+	: \${${1:TRICKLE}:="n"}
+	while getopts -- t name; do
+	case \$name in
+		t) $1=y;;
+		T) $1=n;;
+		#*) pl "unknown option: \$name"; exit 1;;
+		*) KEEP_OPTS=$((KEEP_OPTS+1));;
+	esac
+	done
+	
+	# options removed thanks to OPTIND
+	#shift \$((OPTIND-1))
+	shift $((OPTIND-1-KEEP_OPTS))
+
+	
+	if [[ "\$$1" == y ]]; then
+		:
+	fi
+snippet trunc
+	exec 1> >(cut -c 1-30)
+	exec &> >(cut -c 1-30)
+	#cut -c 1-30
+	#fmt -s -w 30
+snippet fold "fold wraps onto new lines"
+	fold -w 80
+snippet asciionly
+	asciionly() {
+		iconv -f utf8 -t ascii//TRANSLIT
+	}
+snippet ini
+	# load_ini_vars
+	# get_ini_var
+	. $BULK/projects/scripts/ebl-common.sh
+
+	inivars=(
+		"TMUXEDITOR tmux \$NOTES/ws/desktop/config.ini"
+		)
+
+	load_ini_vars
+snippet pl "print literal"
+	printf -- "%s\n"
+snippet pl.bak "print literal"
+	printf -- "%s\n" "${0:\$VAR}"
+snippet pln "print literal with newline"
+	pl "${0:\$VAR}"
+snippet p
+	printf -- "%s"
+# snippet p
+# 	printf -- "%s" "${0:\$VAR}"
+snippet e
+	pl "${0:\$VAR}"
+snippet ep
+	pl "${0:\$VAR}"
+snippet ec
+	pl "${0:\$VAR}"
+snippet el "pl literal"
+	pl "${0:\$VAR}"
+snippet ee
+	echo -e "${0:\$VAR}"
+snippet ig "if glob exists"
+	ifg
+snippet ige "if glob exists"
+	ifg
+snippet ifns
+	if ! test -s "\$tf"; then
+		${0}
+	fi
+snippet ifs
+	if test -s "\$tf"; then
+		${0}
+	fi
+snippet sizemorethan1
+	test -s "\$tf"
+snippet ifgl
+	ifglob
+snippet ifglob "if glob exists"
+	if test -n "\$(find . -maxdepth 1 -name '${0:*.vtt}' -print -quit)"; then
+		echo found
+	else
+		echo not found
+	fi
+snippet igr
+	if pl "\$rp" | grep -q -P '\.mma\$'; then
+		:
+	fi
+snippet iffz
+	if tt "${1:\$rp}" -fz "${0:Source}"; then
+		:
+	fi
+snippet ifgr
+	if pl "\$rp" | grep -q -P '\.mma\$'; then
+		:
+	fi
+snippet cw reword
+	${1:folder}="$(pl "\$$1" | sed 's/${0:.git\$}//')"
+snippet rw reword
+	${1:folder}="$(pl "\$$1" | sed 's/${0:.git\$}//')"
+snippet sen sedn
+	${1:stuff}="$(pl "\$$1" | sed -n 's/${0:.*\(something\).*\}/\1/p')"
+snippet lc
+	lc="$(pl "${0}" | wc -l)"
+snippet wcl "wc -l"
+	lc="$(pl "${0}" | wc -l)"
+snippet ten "test n"
+	[ -n "\$${1:string}" ]
+snippet itn
+	if [ -n "\$${1:string}" ]; then
+		${0::}
+	fi
+snippet tse
+	test "\$${1:string}" = "${0:y}"
+snippet ifse
+	if test "\$${1:string}" = "${2:y}"; then
+		${0::}
+	fi
+snippet se
+	test "\$${1:string}" = "${0:y}"
+snippet ifse-posix
+	if test "\$${1:string}" = "${2:y}"; then
+		${0::}
+	fi
+snippet ifsey
+	if test "\$${1:string}" = "y" ; then
+		${0::}
+	fi
+#snippet tn
+#	then
+#		${0::}
+#	fi
+snippet ifz
+	if test -z "\$${1:string}"; then
+		${0::}
+	fi
+snippet ifee
+	test -e "\$${1:string}" && 
+snippet iffe
+	test -f "\$${1:string}" && 
+snippet ifne
+	test -n "\$${1:string}" && 
+snippet ifze
+	test -z "\$${1:string}" && 
+snippet ifd
+	if test -d "\$${1:string}"; then
+		${0::}
+	fi
+snippet if=
+	if test "\$${1:string}" -eq "0"; then
+		${0::}
+	fi
+snippet ifeq
+	if test "\$${1:num}" -eq "0"; then
+		${0::}
+	fi
+snippet if>
+	if test "\$${1:num}" -gt "0"; then
+		${0::}
+	fi
+snippet ifgt
+	if test "\$${1:num}" -gt "0"; then
+		${0::}
+	fi
+# Instead of having using !, I should use the non-! snippet
+#snippet ifne
+#	if ! test "\$${1:string}" -eq "0"; then
+#		${0::}
+#	fi
+snippet ifle
+	if test "\$${1:string}" -le "${2:0}"; then
+		${0::}
+	fi
+snippet ifge
+	if test "\$${1:string}" -ge "${2:0}"; then
+		${0::}
+	fi
+snippet ifn
+	if test -n "\$${1:string}"; then
+		${0::}
+	fi
+snippet iff
+	if test -f "${1:/path/to/file}"; then
+		:
+	fi
+snippet ife
+	if test -e "${1:/path/to/file}"; then
+		:
+	fi
+snippet ify
+	if test "\$${1:JUSTPASTE}" = "y"; then
+		:
+	fi
+snippet sp "string prepend"
+	${1:varname}="${0:prependage}\${$1}"
+snippet sa "string append"
+	${1:varname}="\${$1}${0:appendage}"
+snippet emacs_wrapper "run emacs commands from command-line"
+	$VAS/projects/scripts/eww
+	$VAS/local/bin/magit
+
+	# Use arguments as command
+	$VAS/local/bin/ems
+snippet 2e
+	>&2 echo "${0:message}"
+snippet 2e
+	>&2 echo "${0:message}"
+snippet ex
+	echo "\$(${0:pwd})"
+snippet wd
+	wd="\$(pwd)"
+snippet calledfrom
+	calledfrom="\$(ps -o comm= \$PPID)"
+snippet calledfromold
+	# This is slow. Prefer a new script that wraps this one
+	if pstree -A -s -l -p \$\$ | grep -q -P 'ranger'; then
+		echo "Called from ranger. SCOPE_CAT=y"
+		SCOPE_CAT=y
+	fi
+snippet ifsn
+	sn="\$(basename -- "\$0")"
+	if [[ "\$sn" == "scope-for-ranger.sh" ]]; then
+		echo "Called from ranger. SCOPE_CAT=y"
+		SCOPE_CAT=y
+	fi
+snippet ifscriptname
+	bn="\$(basename -- "\$0")"
+	if [[ "\$bn" == "scope-for-ranger.sh" ]]; then
+		echo "Called from ranger. SCOPE_CAT=y"
+		SCOPE_CAT=y
+	fi
+snippet symcond "symlink condition"
+	bn="\$(basename -- "\$0")"
+	if [[ "\$bn" == "scope-for-ranger.sh" ]]; then
+		echo "Called from ranger. SCOPE_CAT=y"
+		SCOPE_CAT=y
+	fi
+snippet iterargs
+	for var in "\$@"
+	do
+		echo "\$var"
+	done
+snippet 0[range
+	{
+	} 0<&-
+snippet 0dn
+	0</dev/null
+snippet close_stdin
+	0<&-
+snippet e0-
+	exec 0<&-
+snippet 0-
+	0<&-
+snippet ecfd "Close input file descriptor n."
+	exec ${0:n}<&-
+snippet fp
+	last_arg="\${@: -1}"
+	fp="\$last_arg"
+	rp="\$(realpath "\$fp")"
+	dn="\$(dirname "\$rp")"
+	cd "\$dn"
+	bn="\$(basename -- "\$fp")"
+	ext="\${bn##*.}"
+	fn="\${bn%.*}"
+snippet al
+	${1:SOMETHING}="\$$1\n${0:SOMETHING_ELSE}"
+snippet appendline
+	${1:SOMETHING}="\$$1\n${0:SOMETHING_ELSE}"
+snippet ppd "prepend"
+	${1:SOMETHING}="${0:SOMETHING_ELSE}\n\$$1"
+snippet prependline
+	${1:SOMETHING}="${0:SOMETHING_ELSE}\n\$$1"
+snippet column
+	print_field() {
+		field="\$1"
+		awk -F' *\t *' 'BEGIN{OFS=""}{print \$'\$field'}'
+		return 0
+	}
+snippet print_field
+	print_field() {
+		field="\$1"
+		awk -F' *\t *' 'BEGIN{OFS=""}{print \$'\$field'}'
+		return 0
+	}
+	${0}
+snippet phpstdin
+	input="\$(cat)"
+
+	# ENT_QUOTES is required for &quot; (html5 only)
+	echo "\$input" | php -R 'echo html_entity_decode(\$argn, ENT_QUOTES | ENT_XML1, "UTF-8")."\n";' 2>/dev/null
+snippet catv
+	IFS='' read -d '' -r input
+	# IFS= read -rd '' input < <(cat /dev/stdin)
+	# input="\$(cat)"
+snippet cat
+	input_fp="\$(cat | tf txt)"
+snippet catf
+	input_fp="\$(cat | tf txt)"
+snippet catfp
+	input_fp="\$(cat | tf txt)"
+snippet catn
+	IFS='' read -d '' -r input
+	# input="\$(cat)"
+snippet catold
+	IFS='' read -d '' -r input
+	# input="\$(cat)"
+snippet stdinallvar
+	IFS='' read -d '' -r input
+	# input="\$(cat)"
+snippet readall
+	IFS='' read -d '' -r input
+	# input="\$(cat)"
+snippet tea "test and"
+	if ! test -e \$TMPDIR/DB_CMD_In -a -e \$TMPDIR/DB_CMD_Out; then
+snippet supports-array
+	 whotest[0]='test' || (echo 'Failure: arrays not supported in this version of bash.' && exit 2)
+snippet associativearray
+	declare -A aa
+	aa=([first]="f" [second]="s")
+	aa[vas]="/var/smulliga"
+	aa["some key"]="some value"
+	pl "\${aa[some key]}"
+	c=5
+	aa+=([b]=c)
+	pl "\${aa[vas]}"
+
+	# iterate keys
+	for i in "\${!aa[@]}"; do
+		echo "\$i"
+	done
+snippet b4appendstring "bash 4"
+	aa="hello"
+	aa+=" world
+snippet orl "or return last"
+	|| return $?
+snippet hda "heredoc array bash 4"
+	usage () {
+		# No tabs necessary!
+		closing="That's all"
+		readarray message <<EOF
+		   : Hello, this is a cool program.
+		   : This should get unindented.
+		   : This code should stay indented:
+		   :      something() {
+		   :          echo It works, yo!;
+		   :      }
+		   : \$closing
+	EOF
+		shopt -s extglob
+		printf -- '%s' "\${message[@]#+( ): }"
+		shopt -u extglob
+	}
+snippet tohex
+	xxd -p
+snippet hextotext
+	echo -n 5a | xxd -r -p
+snippet tohexescaped "for sed"
+	xxd -p | sed 's/\(..\)/\\\\x&/g'
+#snippet hexsed
+#	delim="\$1"; : \${delim:=","}
+#	hex="\$(pl -n "\$delim" | xxd -p | sed 's/\(..\)/\\x&/g')"
+#	sed 's/^.*'\$hex'\(.*\)\$/\1/'
+snippet invalidprintfargtype_sint "%d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'."
+	-    snprintf(sql, sizeof(sql), "select * from CalibrationText where ((ModelID = 0) or (ModelID = %d)) and (CalModeID = %d)", this->present_config.ModelID, calmode_id);
+	+    snprintf(sql, sizeof(sql), "select * from CalibrationText where ((ModelID = 0) or (ModelID = %d)) and (CalModeID = %u)", this->present_config.ModelID, calmode_id);
+snippet hexsed
+	heading="$(pl "$fullthing" | sed 's/^${2}'$(echo -n -E "${1:\$startremove}" | sedhex)'${3}/${0}/')"
+snippet sedhex
+	heading="$(pl "$fullthing" | sed 's/^${2}'$(echo -n -E "${1:\$startremove}" | sedhex)'${3}/${0}/')"
+snippet to
+	( sleep 0.2; kill -SIGINT \$\$ ) &
+snippet timeout
+	( sleep 0.2; kill -SIGINT \$\$ ) &
+snippet cddn
+	cd "\$dn"
+snippet s01
+	sleep 0.1;
+snippet s02
+	sleep 0.2;
+snippet math-echo
+	echo "$((20.0/7))"
+snippet math-bc-i # divide by one to enforce scale
+	bc <<< "scale=0;(20 + 5 / 2)/1"
+snippet /
+	bc <<< '20+5/2'
+snippet div
+	bc <<< '20+5/2'
+snippet divisin
+	bc <<< '20+5/2'
+snippet math-bc-f
+	bc <<< '20+5/2'
+snippet math-bc-var
+	bc <<< "scale=10;f=(3/55);scale=0;(312*f)/1"
+snippet math-expr
+	expr 20 + 5
+snippet math-calc
+	calc 2 + 4
+snippet math-node # Get javascript builtins
+	node -pe 20+5/Math.PI
+snippet math-dc-1
+	echo 20 5 2 / + p | dc 
+snippet math-dc-2
+	echo 4 k 20 5 2 / + p | dc 
+snippet math-perl
+	perl -E "say 20+5/2"
+snippet math-python-i
+	python -c "print 20+5/2"
+snippet math-python-f
+	python -c "print 20+5/2.0"
+snippet math-clisp
+	clisp -x "(+ 2 2)"
+snippet math-lua
+	lua -e "print(20+5/2)"
+snippet math-php-nice
+	php -r 'echo 20+5/2;'
+snippet math-ruby-i
+	ruby -e 'p 20+5/2'
+snippet math-ruby-f
+	ruby -e 'p 20+5/2.0'
+snippet math-guile-i
+	guile -c '(display (+ 20 (/ 5 2)))'
+snippet math-guile-f
+	guile -c '(display (+ 20 (/ 5 2.0)))'
+snippet math-slsh-i
+	slsh -e 'printf("%f",20+5/2)'
+snippet math-slsh-f
+	slsh -e 'printf("%f",20+5/2.0)'
+snippet math-tclsh-i
+	tclsh <<< 'puts [expr 20+5/2]'
+snippet math-tclsh-f
+	tclsh <<< 'puts [expr 20+5/2.0]'
+snippet math-sqlite-i
+	sqlite3 <<< 'select 20+5/2;'
+snippet math-sqlite-f
+	sqlite3 <<< 'select 20+5/2.0;'
+snippet math-sqlite-i-pipe
+	echo 'select 1 + 1;' | sqlite3 
+snippet math-psql-i
+	psql -tAc 'select 1+1'
+snippet math-r-1
+	R -q -e 'print(sd(rnorm(1000)))'
+snippet math-r-2
+	R -q -e 'cat(pi^2, "\n")'
+snippet math-r-3
+	R -q -e 'print(sum(1:100))'
+snippet help
+	no_args() {
+		[ $nargs -eq 0 ]
+	}
+
+	show_help() {
+		# If no arguments to this function
+		if no_args \$@; then
+			pl "General options:"
+			show_help -m
+			echo
+			return 201
+		fi
+
+		while getopts -- m name; do
+		case \$name in
+			m)  {
+				printf -- "%s\t%s\n" "-\$name" "Model name."
+			};;
+			*)  pl "unknown option: \$name" ;;
+		esac
+		done
+	}
+
+	while getopts -- h name; do
+	case \$name in
+		h)  show_help; exit;;
+		*)  pl "unknown option: \$name"; exit 1;;
+	esac
+	done
+
+	# options removed thanks to OPTIND echo "\$@"
+	shift "\$((OPTIND-1))"
+	OPTIND=1
+snippet hsh
+	hashsave.sh "$DUMP$NOTES/ws/programs/hiltestsh/masterconfig" "timeout 0.7 ssh hil2 -oBatchMode=yes 'curl --retry 3 --retry-delay 1 --connect-timeout 0.3 --max-time 1 -f http://hil-rtm-local/dynamic/state/config/master 2>/dev/null'"
+snippet hse "history save with environment"
+	( hs "$(basename -- "\$0")" "\$@" "#" "<==" "\$(ps -o comm= \$PPID)" "<==" "\$(printenv | tf sh | cat)" 0</dev/null ) &>/dev/null
+snippet hs "history save"
+	( hs "$(basename -- "\$0")" "\$@" "#" "<==" "\$(ps -o comm= \$PPID)" 0</dev/null ) &>/dev/null
+snippet hsbak "history save old"
+	( hs "\$(basename -- "\$0")" "\$@" <`tm-tty` \` # Disable tty to pipe content into hs \` )
+snippet tp "has prefxx"
+	grep -q -P "^${0:prefix}"
+snippet ts "has suffix"
+	grep -q -P "${0:suffix}$"
+snippet wrap-doesntwork
+	CMD="\$(echo -n -E "\$@" | quote-no-outside-quotes.pl)"
+	cmd="${0:/usr/bin/xterm -ls -en en_US.UTF-8} $CMD"
+	eval "$cmd"
+snippet fexists
+	fexists() {
+		[ -e "${0:/path/to/file}" ]
+	}
+snippet tn1
+	test -n "${0:\$1}"
+snippet tn2
+	test -n "${0:\$2}"
+snippet interact
+	( compgen -v | while read var; do eval val="\\$\$var"; export \$var; done 2>/dev/null; bash -c env; ) | bash-interact.sh "\$(pwd)"
+snippet interact-old
+	# This does not capture local variables...
+	env | bash-interact-old.sh "$(pwd)"
+snippet evalvar
+	hi=yo
+	yo=sup
+	eval val=\\\$\$hi
+	echo \$val
+snippet save-restore-cursor-location "good for fzf"
+	trap func_trap EXIT
+	func_trap() {
+		tput rc 0<&- &>/dev/null
+	}
+	
+	tput sc 0<&- &>/dev/null
+	echo hi | fzf
+snippet pwd
+	\$(pwd)
+snippet char
+	read -n1 c
+snippet readchar
+	read -n1 c
+snippet spf-po
+	char buffer[128];
+	sprintf(buffer, "echo -n %d >> /tmp/fblog.txt", c); popen(buffer, "r");
+snippet fp1
+	fp="\$1"
+snippet wd 
+	wd="\$(pwd)"
+snippet change-arg-3-of-4
+	set -- "\${@:1:2}" "${0:new value}" "\${@:4}"
+snippet sl
+	test "\$#" -gt 0 && set -- "\${@:1:\$((\$#-1))}" # shift last arg
+snippet shiftlast
+	test "\$#" -gt 0 && set -- "\${@:1:\$((\$#-1))}" # shift last arg
+snippet shift-last-arg
+	test "\$#" -gt 0 && set -- "\${@:1:\$((\$#-1))}" # shift last arg
+snippet shift-last-arg-dosentwork
+	unset "array[\${#array[@]}-1]"
+snippet unset-last-arg
+	set -- "\${@:1:\$((\$#-1))}"
+snippet unset-last-arg-dosentwork
+	unset "array[\${#array[@]}-1]"
+snippet dp
+	dp="$DUMP$fp"
+snippet q
+	# kill child processes
+	on_quit() {
+		jobs -p | xargs kill
+	
+		trap '' PIPE CHLD HUP
+	}
+	
+	trap on_quit EXIT
+snippet quit
+	on_quit() {
+		jobs -p | xargs kill
+	
+		trap '' PIPE CHLD HUP
+	}
+	
+	trap on_quit EXIT
+snippet quit.bak
+	# This fifo is used to capture stdout from external processes and access
+	# it as we want rather than giving external scripts direct access to
+	# script's stdout which causes tee to hang waiting for the fd to close.
+	ffp="\$TMPDIR/fifo_\${g_bn}_\$\$_out"
+	rm -f "\$ffp"
+	mkfifo "\$ffp"
+	tail -f "\$ffp" &
+	
+	on_quit() {
+		echo "Cleaning up processes for \$\$ and exiting."
+		{
+			echo "=== Exiting \$\$ (\$invocation) with code \$EXIT_CODE (\$(code_to_string \$EXIT_CODE))"
+		}
+
+		# This will kill our fifo tail
+		jobs -p | xargs kill
+
+		# This trap is needed to ensure that HUP and CHLD, which normally occur
+		# when the script finishes, do not propagate to any of the scripts and
+		# programs we have spawned so that applications we started continue
+		# running after this script is completed.
+		trap '' PIPE CHLD HUP
+	}
+
+	trap on_quit EXIT
+snippet fv
+	${1:VARNAME}="$(p "\$$1" | ${0:filter})"
+snippet filtervar
+	${1:VARNAME}="$(p "\$$1" | ${0:filter})"
+snippet ev
+	${1:VARNAME}="$(p "\$$1" | ${0:filter})"
+snippet ve
+	${1:VARNAME}="$(p "\$$1" | ${0:filter})"
+snippet vep
+	${1:VARNAME}="$(p "\$$1" | ${0:filter})"
+#snippet ep
+#	${1:VARNAME}="$(p "\$$1" | ${0:filter})"
+snippet evarmnm
+	${1:VARNAME}="$(p "\$$1" | mnm)"
+snippet mnm-var
+	${1:VARNAME}="$(p "\$$1" | mnm)"
+snippet x2c
+	export TERM=xterm-2color
+snippet first-n-chars-of-line
+	cut -c 1-N
+snippet nth-char
+	var=shane
+	# shell is base 0
+	echo "\${var:${0:2}:$0}"
+	# cut is base 1
+	echo "\$var" | cut -c$0
+snippet eu
+	pl "${0}" | udl -e
+snippet e2
+	pl "${0}" 1>&2
+snippet et2
+	pl "${0}" 1>&2
+snippet e>2
+	pl "${0}" 1>&2
+snippet t2
+	1>&2
+snippet python-bash "run python which calls bash"
+	python -c "import shanepy; print(shanepy.bash(\"cat want.txt\")[0].decode(\"utf-8\"))" | less
+snippet sync
+	sync && echo 3 > /proc/sys/vm/drop_caches
+snippet ici
+	import bpython; bpython.embed(locals_=dict(globals(), **locals()))
+snippet go
+	options=\$(getopt -o brg --long color: -- "\$@")
+	options=\$(getopt -o '' -l shane: -- --shane=yo "\$@")
+	aptions="\$(getopt -o H:f: -- "\$@")"
+	if [ \$? != 0 ] ; then echo "Failed parsing options." >&2 ; exit 1 ; fi
+	
+	eval set -- "\$options"
+	
+	while true; do
+	  case "\$1" in
+		-H ) hf="\$2"; shift 2 ;;
+		-f ) cf="\$2"; shift 2 ;;
+		-- ) shift; break ;;
+		* ) break ;;
+	  esac
+	done
+# snippet getopt "handle long options"
+# 	OPTS=\`getopt -o vhns: --long verbose,dry-run,help,stack-size: -n 'parse-options' -- "\$@"\`
+# 
+# 	if [ \$? != 0 ] ; then echo "Failed parsing options." >&2 ; exit 1 ; fi
+# 
+# 	echo "\$OPTS"
+# 	eval set -- "\$OPTS"
+# 
+# 	VERBOSE=false
+# 	HELP=false
+# 	DRY_RUN=false
+# 	STACK_SIZE=0
+# 
+# 	while true; do
+# 	  case "\$1" in
+# 		-v | --verbose ) VERBOSE=true; shift ;;
+# 		-h | --help )    HELP=true; shift ;;
+# 		-n | --dry-run ) DRY_RUN=true; shift ;;
+# 		-s | --stack-size ) STACK_SIZE="\$2"; shift; shift ;;
+# 		-- ) shift; break ;;
+# 		* ) break ;;
+# 	  esac
+# 	done
+# 
+# 	echo VERBOSE=\$VERBOSE
+# 	echo HELP=\$HELP
+# 	echo DRY_RUN=\$DRY_RUN
+# 	echo STACK_SIZE=\$STACK_SIZE
+snippet ping
+	ping -W 2 -c 2 \${VEHICLE}
+	if [ \$? != 0 ]
+	then
+		echo "No ping response from vehicle \${VEHICLE} - moving on"
+	fi
+snippet ssh-hd
+		cat <<'EOF' | ssh imm "sh -s"
+	f="\$(mktemp)"
+	echo "\$f"
+	EOF
+snippet hd-ssh
+		cat <<'EOF' | ssh imm "sh -s"
+	f="\$(mktemp)"
+	echo "\$f"
+	EOF
+snippet mva "multiple variable assignment - here string - not busybox compatible"
+	read a b c <<<\$(echo 1 2 3) ; echo "\$a|\$b|\$c"
+	read -d "\n" v1 v2 <<<\$(cmd)
+snippet mathlog
+	# Still not working accurately enough
+	log10() {
+		local x="\$1"
+		printf -- "%s" "\$x" | wc -c
+	}
+
+	logn() {
+		local b="\$1"
+		local x="\$2"
+		expr `log10 \$x` / `log10 \$b`
+	}
+snippet repeat-string
+	printf -- "%-30s" "*" | tr '[:print:]' f
+snippet trapwinch
+	trap 'eval \`resize\`' SIGWINCH
+	# or
+	trap '' SIGWINCH
+snippet only
+	# Kill other instances
+	pidof -x "\$(basename -- "\$0")" | tr -s ' ' '\\n' | grep -P -v "\\b\$\$\\b" | xargs kill &>/dev/null
+snippet kill-other-instances
+	# Kill other instances
+	pidof -x "\$(basename -- "\$0")" | tr -s ' ' '\\n' | grep -P -v "\\b\$\$\\b" | xargs kill &>/dev/null
+snippet tz
+	if test -z "$TMUXCLIENT"; then
+		TMUXCLIENT=$TMUXHOST
+	fi
+snippet se
+	if test "$TMUXHOST" = "$TMUXCLIENT"; then
+snippet er
+	eval \`resize\`
+snippet rz
+	eval \`resize\`
+snippet resize
+	eval \`resize\`
+snippet sp "super awesome script"
+	#!/bin/bash
+
+	hs "\$(basename -- "\$0")" \$@
+
+	while getopts -- mksrg- name &>/dev/null; do
+	case \$name in
+		k)  ka gradle-wrapper;;
+		g)  tspbg.sh -p 50 -o -v "tmux-tail-pane.sh \"\$TMUX_PANE\" | filter-infolinkclient.sh";;
+		r)  run;;
+		-)  break;;
+		*)  ((OPTIND--)); break;;
+	esac
+	done
+snippet rtl
+	runtolog
+snippet capturetee
+	runtolog
+snippet runtolog
+	tf_${0:make_infolink}="\$(mktemp -t tf_$0_XXXXX || echo /dev/null)"
+	trap "rm \"\$tf_$0\" 2>/dev/null" 0
+
+	run_to_log() {
+		lf="\$1"
+		shift
+		rm -f "\$lf"
+		touch "\$lf"
+		tail -f "\$lf" &
+		tpid=\$!
+		\$@ 2>&1 >> "\$lf"
+		retval=\$?
+		# pipe kills without a message.
+		kill -PIPE "\$tpid" &>/dev/null
+		return "\$retval"
+	}
+
+	run_to_log "\$tf_$0" some_program 2>/dev/null
+snippet replace
+	attributes="${attributes//Data/NumericValue}"
+snippet sr
+	attributes="${attributes//Data/NumericValue}"
+snippet eo
+	echo
+snippet es
+	pl 
+snippet istty
+	is-stdout-tty
+snippet is_tty
+	is-stdout-tty
+snippet is-tty
+	is-stdout-tty
+snippet tty
+	is-stdout-tty
+snippet pv
+	pl "${0:invocation}: \$$0"
+snippet printvar
+	pl "${0:invocation}: \$$0"
+
+snippet yn
+	DO_SUDO="\$(yn "Use sudo?" && p y)"
+snippet ifyn
+	if yn "${0:Run vimdiff?}"; then
+		:
+	fi
+snippet 2db
+	exec 2>"/tmp/\$0-\$\$.txt"
+snippet cd
+	cd() {
+		pwd | mnm
+		builtin cd "\$@" 2>/dev/null
+	}
+snippet finv
+	mk() {
+		invocation="\$0 \$@"
+
+		cd . | chomp.sh | hls -c 5 '.*'
+		printf -- "; %s\n" "\$invocation" | hls '.*'
+		\$mkp "\$@"
+	}
+snippet detach
+	# By closing these, the script detaches, without needing &, from
+	# emacs anyway.
+	# What about trapping HUP and PIPE ?
+	exec 0<&-
+	exec 1>/dev/null
+	exec 2>/dev/null
+snippet comment-line-continuation
+	# This is how you do comments before line continuation:
+	test_it() {
+		x -n "\$0 -csr" -e Exit \
+						-K 1 -k Enter -e "Exit"       ` # Open ports           ` \
+						-K 3 -k Enter -e "Exit"       ` # Client register      ` \
+						-K 4 -k Enter -e "Exit"       ` # Server register      ` \
+						-K 5 -k Enter -e "Exit"       ` # Client subscribe     ` \
+						-K 7 -k Enter -e "Status: 1"  ` # Port status client   ` \
+						-K 8 -k Enter -e "Status: 1"  ` # Port status server   ` \
+						-K 9 -k Enter -e "Exit"       ` # Client send packet   ` \
+						-K 12 -k Enter -e "requested" ` # Server get packet    ` \
+						-K 11 -k Enter -e "Exit"      ` # Server send packet   ` \
+						-K 10 -k Enter -e "Result: 1" ` # Client get packet    ` \
+						-K 15 -k Enter -e "Released"  ` # Client semaphor test ` \
+						-K 16 -k Enter -e "Released"  ` # Server semaphor test ` \
+						-l 0.1 -a
+	}
+snippet d
+	: ${EDIT_EXPECT_SCRIPT:="n"}
+snippet c "inline comment"
+	\` # ${0:Open ports} \`
+snippet ic "inline comment"
+	\` # ${0:Open ports} \`
+snippet pinv
+	invocation="\$0 \$@"
+
+	no_args() {
+		# Usage: "if no_args \$@; then"...
+
+		nargs=\$#
+		[ \$nargs -eq 0 ]
+	}
+
+	if no_args \$@; then
+		pl "\$(basename -- "\$0")" | hls -c 3 '.*'
+	else
+		
+		printf -- "%s" "\$(basename -- "\$0") " | hls -c 3 '.*'
+		args="\$@"; pl "\$args" | hls -c 2 '.*'
+	fi
+snippet hls
+	hls -c 1 '.*'
+snippet hlred
+	hls -c red '.*'
+snippet hlredn
+	hls -c 1 '.*'
+snippet hlgreen
+	hls -c green '.*'
+snippet hlgreend
+	hls -c 2 '.*'
+snippet hlreverse
+	hls '.*'
+snippet hlyellow
+	hls -c yellow '.*'
+snippet hlyellowd
+	hls -c 3 '.*'
+snippet hlblue
+	hls -c blue '.*'
+snippet hlblued
+	hls -c 4 '.*'
+snippet hlpurple
+	hls -c purple '.*'
+snippet hlpurpled
+	hls -c 5 '.*'
+snippet hlteal
+	hls -c teal '.*'
+snippet hlteald
+	hls -c 6 '.*'
+snippet hlwhite
+	hls -c white '.*'
+snippet hlwhited
+	hls -c 8 '.*'
+snippet hldblue
+	hls -c 20 '.*'
+snippet hllgreen
+	hls -c 120 '.*'
+snippet hlpink
+	hls -c 170 '.*'
+snippet hldgrey
+	hls -c 240 '.*'
+snippet hlspacegrey
+	hls -c 60 '.*'
+snippet hldteal
+	hls -c 30 '.*'
+snippet hldpurple
+	hls -c 90 '.*'
+snippet hlcamogreen
+	hls -c 65 '.*'
+snippet hldinogreen
+	hls -c 35 '.*'
+snippet hlredcmd "Highlights command output red and exits if failed"
+	set -o pipefail; { ${0:command} } | hls -c 1 '.*' || exit $?
+snippet wrap-perfect
+	#!/bin/bash
+	exec bash -c "\$*"
+	ret=\$?
+	exit \$ret
+snippet e1tty
+	exec <\`tm-tty\`
+	# exec </dev/tty
+snippet edt
+	# enables xargs to support tty programs within scripts
+	exec <\`tm-tty\`
+	# exec </dev/tty
+snippet hlcpperrors
+	exec 2> >(hl-cpp-errors.sh)
+snippet awk-variable-pipe
+	awk "/there are no arguments.*that depend on a template parameter/ { print \$0; print \"\tProbably missing the include\" |& \"hls -c 1 '.*'\"; \"hls -c 1 '.*'\" |& getline; } { print; system(\"\") }"
+snippet r1
+	return 1
+snippet bashs
+	echo "exec <\`tm-tty\`; nano; exit" | bash -s
+snippet print "print function"
+	# Print literally
+	print() {
+		args="\$@"
+		printf -- "%s" "\$args"
+	}
+snippet plf "print line function"
+	# Print literally with newline
+	println() {
+		args="\$@"
+		pl "\$args"
+	}
+snippet awkhd "awk heredoc"
+	df | awk -f <(cat - <<-'EOD'
+		BEGIN{
+			print "test"
+		}
+		{print \$3}
+	EOD
+	)
+snippet ahdps "awk heredoc"
+	df | awk -f <(cat - <<-'EOD'
+		BEGIN{
+			print "test"
+		}
+		{print \$3}
+	EOD
+	)
+snippet hdps "heredoc process substitution"
+	<(cat - <<-'EOD'
+		BEGIN{
+			print "test"
+		}
+		{print \$3}
+	EOD
+	)
+snippet partition-script
+	#!/bin/bash
+	df | awk -f <(sed -e '0,/^#!.*awk/d' \$0)
+	exit \$PIPESTATUS
+
+	#!/usr/bin/awk -f
+	BEGIN {
+		print "test"
+	}
+	{print \$3}
+snippet ff
+	ff=/tmp/\$\$.data; trap "rm -f \$ff" EXIT; mknod \$ff p
+snippet ahd "posix"
+	awkscript="\$(cat << EOT
+	BEGIN{
+		print "test"
+	}
+	{print \$3}
+	EOT
+	)"
+
+	df | awk "\$awkscript"
+snippet ahd-posix-tff
+	f=/tmp/\$\$.data; trap "rm -f \$f" EXIT; mknod \$f p
+	(df > \$f) &
+	awk -f- \$f <<EOF
+	{ print }
+	EOF
+snippet pager
+	is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+	pager() { is_tty && less -rS \$@ || cat; }
+snippet input
+	stdin_exists() {
+	    ! [ -t 0 ] && \
+	        ! test "$(readlink /proc/$$/fd/0)" = /dev/null && \
+	        ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+	    # stdin may be redirected to the tty, but `test -t 0` will continue to say false (due to a bash bug)
+	    # So test to make sure 0 does not point to 1
+	}
+
+	last_arg() {
+		if [ \$# -gt 0 ]; then
+			n=\$((\$#-0))
+			eval ARG=\\${\$n}
+			echo "\$ARG"
+		fi
+	}
+
+	if stdin_exists; then
+		tf_stdin="\$(mktemp -t tf_stdinXXXXXX || echo /dev/null)"
+		trap "rm \"\$tf_stdin\" 2>/dev/null" 0
+
+		cat > "\$tf_stdin"
+		file="\$tf_stdin"
+	else
+		file=\$(last_arg "\$@")
+	fi
+snippet ift
+	is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+	is_tty
+	istty="\$?"
+snippet iftty
+	is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+	if is_tty; then
+		${0::}
+	fi
+snippet wrap-posix
+	#!/bin/sh
+
+	args=''
+	i=1
+	while [ \$i -le \$# ]; do
+		eval ARG=\\${\$i}
+		args="\$args \"\$ARG\""
+		((++i))
+	done
+snippet strlen
+	stringZ=abcABC123ABCabc
+
+	echo \${#stringZ}                 # 15
+	echo \`expr length \$stringZ\`      # 15
+	echo \`expr "\$stringZ" : '.*'\`    # 15
+snippet re
+	s='Abc'
+	expr \$s : '^[[:alpha:]]\+'
+snippet ub
+	stdbuf -i0 -o0 -e0 
+snippet ub2
+	stdbuf -oL 
+snippet tp
+	TMUX_PANE="$(tmux display-message -p '#{pane_id}')"
+snippet TMUX_PANE
+	TMUX_PANE="$(tmux display-message -p '#{pane_id}')"
+snippet write
+	write() {
+		pl "\$1"
+		return 0
+	}
+snippet vv
+	$1="\$${1:FILTER} ${0:hex2byte}"
+snippet awk "chomp -- no last record separator"
+	awk "y {print s} {s=\$0;y=1} END {ORS=\"\"; print s}"
+snippet c0 "captures stdin then uses it in current script"
+	input="$(IFS= read -rd '' input < <(cat /dev/stdin))"
+	exec < <(s chomp <<< "$input") # Bash adds a newline. Perl removes it
+snippet et "captures stdin then uses it in current script"
+	input="$(IFS= read -rd '' input < <(cat /dev/stdin))"
+	exec < <(s chomp <<< "$input") # Bash adds a newline. Perl removes it
+snippet >0 "to stdin"
+	IFS= read -rd '' input < <(cat /dev/stdin)
+	exec < <(printf -- "%s" "\$input")
+snippet ep0 "to stdin"
+	exec < <(cat "\$tf_input")
+snippet exectee "captures stdin then uses it in current script"
+	input="$(cat)"
+	# exec < <(cat <<< "$input") # This does not strip whitespace. But it does add a newline. Even if it already ended with a newline
+	exec < <(s chomp <<< "$input")
+	# exec < <(p "$input") # if input is too big, arg list may be too long
+	# exec < <(printf -- "%s" "$input") # hopefully this works
+	# a=$'\n\n\n\n' ; xxd -p <<<"$a" # works
+	# IFS= read -rd '' input < <(cat t.txt); ( exec < <(cat <<< "$input"); cat ) # This works fine
+snippet trapinthupchldpipe
+	trap '' INT HUP CHLD PIPE
+snippet trapihcp
+	trap '' INT HUP CHLD PIPE
+snippet bg
+	&>/dev/null & disown -h %1
+snippet w
+	write() {
+		pl "\$1"
+		return 0
+	}
+snippet ppe
+	perl -pe 's/echo( -E)?(?\! -n)/write/g'
+snippet pcre
+	perl -pe 's/echo( -E)?(?\! -n)/write/g'
+snippet rsp
+	rsp="\$(rsp "\$fp")"
+snippet first-glob "set the positional parameters to glob and use the first one"
+	echo "$(set -- *.txt; echo "$1")"
+snippet ptv
+	printf -- "%s" "\$REMOTE_TEST" | tv
+snippet sshtail
+	unbuffer ssh -t imm "tail -n+0 -f \"\$fp\""
+snippet ssh-tail
+	unbuffer ssh -t imm "tail -n+0 -f \"\$fp\""
+snippet tail-ssh
+	unbuffer ssh -t imm "tail -n+0 -f \"\$fp\""
+snippet pd "default variable"
+	: \${${1:QUIET}:="${0:n}"}
+snippet go1
+	: \${QUIET:="n"}
+	while getopts q name &>/dev/null; do
+	case \$name in
+		q)  QUIET=y; shift; shift ;;
+		*)  ((OPTIND--)); break ;;
+	esac
+	done
+	shift "$((OPTIND-1))"
+	OPTIND=1
+	if test "\$QUIET" = "y"; then
+		exec 2>/dev/null
+	fi
+snippet quiet
+	# Process this first
+	: \${QUIET:="n"}
+	while getopts q name &>/dev/null; do
+	case \$name in
+		q)  QUIET=y; shift; shift ;;
+		*)  ((OPTIND--)); break ;;
+	esac
+	done
+	shift "$((OPTIND-1))"
+	OPTIND=1
+	if test "\$QUIET" = "y"; then
+		exec 2>/dev/null
+	fi
+snippet ifsuccess
+	if test \$? -eq 0 ]; then
+		:
+	fi
+snippet patch
+	cat <<'EOF' | base64 -d | zcat | timeout 0.1 patch -p1
+	H4sIAKWI3lkAA5WQX2vCMBTFn5tPcRf20NJ/Vp3CQHDopg42B774VmKbdmE1KWkUYfjdd6NMmLrBHtqm
+	5+b87rk3F0UBYVgKAyyuxCrOlSlExZuoVLA6V4iQOd9Bn3fyTq8fRXmWt/P2CpJWq9ftkjAMLynE9/0r
+	pOEQwnbQB78d9AB/apZ9sJKDZoYAAbGulTbgEnCoaigJ7SfeNFxTK9XMvMeWZQ+oeOixxCQJkjvwk1aQ
+	JJa6ZdoybBmKjcxASGFcDz4RuMvLNFOyEGVqKXA/ANVEE2643Lp0OZ6ko/nr02ySTucvj9QDiGN4my9m
+	S0DXlksjlCT+vzHXKOCIAs5BNwOgFJOC44wO8lhoGMD31NGzEtI9MwVAcYEU53X2wKuGHyZ1No0OgGtt
+	w9kdRqON1tjb9WwVe9sa9pOiOhqcmkmRuSgfbuzt6/cQiI+mas2xhgGiYx56yuL/5aW3di/xhQkHwGfB
+	zYOUyjCjdIN296f5hEUbO92jHtr35AvJQ/NB2wIAAA==
+	EOF
+snippet trapexit "https://stackoverflow.com/questions/360201/how-do-i-kill-background-processes-jobs-when-my-shell-script-exits"
+	trap "exit" INT TERM
+	trap on_exit EXIT
+	on_exit() {
+		exec 2>/dev/null
+		kill 0
+	}
+snippet exithandler "https://stackoverflow.com/questions/360201/how-do-i-kill-background-processes-jobs-when-my-shell-script-exits"
+	trap "exit" INT TERM
+	trap on_exit EXIT
+	on_exit() {
+		exec 2>/dev/null
+		kill 0
+	}
+snippet onexit "https://stackoverflow.com/questions/360201/how-do-i-kill-background-processes-jobs-when-my-shell-script-exits"
+	trap "exit" INT TERM
+	trap on_exit EXIT
+	on_exit() {
+		exec 2>/dev/null
+		kill 0
+	}
+snippet ifset
+	if [ -z ${var+x} ]; then
+		:
+	fi
+snippet logme
+	rp="$(realpath "\$0")"
+	bn="$(basename -- "\$rp")"
+	slogdir="\$LOGDIR/\$bn"
+	mkdir -p  "\$slogdir"
+	exec &> >(ts >> "\$slogdir/\$(date +%s).log");
+snippet val
+	eval val=\\\${\$e}
+snippet e< "it could also be cat"
+	exec < <(printf -- "%s" "\$input")
+snippet e0
+	exec < <(printf -- "%s" "\$input")
+snippet e0var
+	exec < <(printf -- "%s" "\$input")
+snippet estdin
+	exec < <(printf -- "%s" "\$input")
+snippet e0tty
+	exec <&1
+	# exec <\`tm-tty\` \`# see etty\`
+snippet etty
+	exec <&1
+	# restore with exec <&1, not exec <$TTY nor exec <`tm-tty`
+	# exec <\`tm-tty\` \`# see etty\` 
+snippet settya
+	exec <&1
+	# exec <\`tm-tty\` \`# see etty\`
+snippet setty
+	# exec <&1
+	# The following is incorrect
+	exec 0<"\$TTY"
+	exec 1>"\$TTY"
+	exec 2>"\$TTY"
+snippet etty-full
+	# If not a tty but TTY is exported from outside, attach the tty
+	if test "\$mytty" = "not a tty" && ! [ -z \${TTY+x} ]; then
+		pl "Attaching tty"
+		exec 0<"\$TTY"
+		exec 1>"\$TTY"
+	else
+		# Otherwise, this probably has its own tty and only needs normal
+		# reattachment (maybe stdin was temporarily redirected)
+		exec <\`tm-tty\`
+	fi
+	vim
+snippet seq
+	for i in \`seq 1 10\`; do
+		sed -u 's/^/	/'
+	done
+snippet whilecase
+	opt
+snippet wcase
+	opt
+snippet opts
+	opt
+snippet iopt
+	while [ $# -gt 0 ]; do opt="\$1"
+		:
+
+		shift
+	done
+snippet opt
+	while [ $# -gt 0 ]; do opt="\$1"; case "\$opt" in
+		"") { shift; }; ;;
+		-n) {
+			window_name="\$2"
+			shift
+			shift
+		}
+		;;
+
+		*) break;
+	esac; done
+snippet ret
+	ret="$?"
+snippet result
+	result="$?"
+snippet c1 "Change parameter 1"
+	if test "\$1" = "-e"; then
+		# Change parameter 1
+		set -- "--exec" "\${@:2}"
+	fi
+snippet ni
+	tm n "\$f :: NOT IMPLEMENTED"
+snippet sncase
+	sn="\$(basename -- "\$0")"
+
+	if test "\$sn" = "op"; then
+		opt="\$1"
+		shift
+	else
+		case "\$sn" in
+			suspend|suspend.sh) {
+				opt=suspend
+			}
+			;;
+
+			*)
+				opt="\$sn"
+		esac
+	fi
+snippet ++
+	((++c))
+snippet old
+	test \`find /tmp/beeping -mmin +10 2>/dev/null\` && rm /tmp/beeping
+snippet size-greater
+	[[ $(find "$rp" -type f -size +51200c 2>/dev/null) ]] && echo true || echo false
+snippet size
+	minimumsize=90
+	actualsize=\$(du -k "\$file" | cut -f 1)
+	if [ \$actualsize -ge \$minimumsize ]; then
+		:
+	fi
+
+	[[ $(find "$rp" -type f -size +51200c 2>/dev/null) ]] && echo true || echo false
+snippet p2stdin
+	# Put each parameter on a line of the stdin
+	while [ \$# -gt 0 ]; do
+		opt="\$1";
+		shift
+
+		exec < <(printf -- "%s\n" "\$opt")
+	done
+snippet p1
+	if [ -n "\$1" ]; then
+		first_fp="\$1"
+		shift
+	fi
+snippet pusharg "pushes an argument to the front of the list"
+	set -- ${0:foo} "$@"
+snippet caparg "pushes an argument to the end of the list"
+	set -- "$@" ${0:foo} 
+snippet shiftallfor
+	for i in "\$@"; do shift; done
+snippet shiftall
+	shift "\$#"
+snippet shiftallopts
+			for arg in "\$@"; do case "\$arg" in
+				-*) shift ;;
+				*) break ;;
+			esac; done
+snippet opts
+	for ${0:var} in "\$@"
+	do
+		echo "\$0"
+	done
+snippet sn-case
+	w-sed
+snippet awk1
+	awk '{ print ; system("")}'
+snippet wrc
+	while true; do
+		line=''
+
+		while IFS= read -r -N 1 ch; do
+			case "\$ch" in
+				\$'\04') got_eot=1   ;&
+				\$'\n')  break       ;;
+				*)      line="\$line\$ch" ;;
+			esac
+		done
+
+		printf 'line: "%s"\n' "\$line"
+
+		if (( got_eot )); then
+			break
+		fi
+	done
+snippet top
+	CWD="\$(vc get-top-level)"; cd "\$CWD" && pwd
+snippet shifti
+	set -- "\${@:1:i-1}" "\${@:i+1}"; (( i-- )) # this does not remove it if it's the last element
+snippet aa
+	declare -A MYMAP
+	MYMAP[\$key]="\$2"
+	printf -- "%s\n" "[\$key] \${MYMAP[\$key]}" 1>&2
+snippet forchar
+	while read -n1 c; do
+		MYMAP[\$c]="\$2"
+	done < <(printf -- "%s" "\$key")
+snippet async
+	exec 3< <(date | udl; echo "Starting &3" | indent 2; echo)
+	exec 4< <(date | udl; echo "Starting &4" | indent 2; echo)
+	while :; do
+		timeout --foreground 300 less -rS +G <&3; exec 3< <(date | udl; lingo-list-open-prs | indent 2; echo)
+		timeout --foreground 300 less -rS +G <&4; exec 4< <(date | udl; lingo-list-open-prs | indent 2; echo)
+	done
+snippet nocc
+	trap func_trap INT
+	func_trap() {
+		ns "C-c disabled" &>/dev/null
+	}
+snippet is_multiline
+	is_multiline() {
+		NL="\n"
+		case "\$1" in
+		  *"\$NL"*) true ;;
+				*) false ;;
+		esac
+	}
+snippet dnbn
+	dnbn="\$(basename -- "\$dn")"
+snippet rematch
+	x='foo bar bletch'
+	if [[ \$x =~ foo[[:space:]](bar)[[:space:]]bl(.*) ]]
+	then
+		echo The regex matches!
+		echo \$BASH_REMATCH      
+		echo \${BASH_REMATCH[1]} 
+		echo \${BASH_REMATCH[2]} 
+	fi
+snippet time
+	start_time="\$(date +%s)"
+	trap func_trap INT HUP
+	\$HOME/go/bin/lingo "\$@"
+	end_time="\$(date +%s)"
+snippet start_time
+	start_time="\$(date +%s)"
+snippet st
+	start_time="\$(date +%s)"
+snippet end_time
+	end_time="\$(date +%s)"
+snippet et
+	end_time="\$(date +%s)"
+snippet fin
+	OIFS="\$IFS"
+	IFS="
+	"
+	for line in \$(run some command)
+	do
+		process each "\$line"
+	done
+	IFS="\$OIFS"
+snippet tojson
+	echo -e "one\ntwo\nthree" | jq -R . | jq -s '{"arr": .}'
+snippet toj
+	echo -e "one\ntwo\nthree" | jq -R . | jq -s '{"arr": .}'
+snippet inputbg "background input"
+	set -m
+	cat > "\$fp" && ns dead &
+
+	# rosie match all.things | less -r
+
+	less +F "\$@" "\$fp"
+	exec 0<&-
+	jobs -p | xargs kill
+snippet parent
+	PARENT_COMMAND="$(ps -o comm= $PPID)"
+snippet psn
+	PARENT_COMMAND="$(ps -o comm= $PPID)"
+snippet export-all-functions
+	sfp="\$0"; declare -fx \$(bash -c "source \$sfp &> /dev/null; compgen -A function") # export all functions
+snippet sph
+	tm -d sph -d -P zsh
+snippet cf "current function"
+	func=${FUNCNAME[0]} # this array contains the call stack
+snippet func
+	func=${FUNCNAME[0]}
+snippet funcname
+	func=${FUNCNAME[0]}
+snippet -E
+	while [ \$# -gt 0 ]; do opt="\$1"; case "\$opt" in
+		-E) {
+			DO_EXEC=y
+			shift
+		}
+		;;
+
+		*) break;
+	esac; done
+
+	if test "\$DO_EXEC" = "y"; then
+		CMD="\$1"
+	else
+		CMD="\$(cmd "\$@")"
+	fi
+snippet sed
+	perl -p -e "s/([\$chars])/\\\\\\$1/g"
+snippet awk1
+	awk '{ print \$0; system("")}'
+snippet &
+	bg_pid=\$!
+snippet ifarg
+	if ! lit "\$@" | grep -q -- --info; then
+		:
+	fi
+snippet ef
+	command="\$1"
+	shift
+
+	if [ -z "\$command" ]; then
+		exit 0
+	fi
+
+	# Can't use eval here or it will un-group arguments"
+	"\$command" "\$@"
+snippet map
+	IFS= read -r -d '' map <<HEREDOC
+	effective-go/update-comment-first-word-as-subject):function comments
+	HEREDOC
+
+	printf -- "%s\n" "\$map" | maptojson :
+snippet trace
+	echo "\$sn: \${LINENO}	" "Using local tenet".
+snippet log
+	echo "\$sn: \${LINENO}	" "Using local tenet".
+snippet menu
+	#!/bin/bash
+	export TTY
+	
+	clear
+	# exec 1> >(mnm)
+	
+	# I should turn this entire script into an elisp hydra.
+	# Although that would require that emacs has been started alreaddy.
+	
+	IFS= read -r -d '' options <<HEREDOC
+	.  EDIT
+	d pipdeptree
+	v py venv # make or start venv
+	HEREDOC
+	
+	echo "\$0" | udl
+	echo "\$options"
+	
+	read -n1 d
+	# clear
+	
+	case "\$d" in
+		.) cmd="v \$0" ;;
+		d) { cmd="pipdeptree"; }; ;;
+		v) { cmd="py venv"; }; ;;
+		
+	esac
+	echo
+	echo "\$cmd"
+	
+	# exec <`tm-tty`
+	# exec 1> /dev/tty
+	eval "\$cmd"
+snippet record
+	CMD="\$(cmd "\$@")"; exec &> >(tee >(ds -q "\$sn \$CMD"))
+snippet hn
+	hn="\$(hostname)"
+snippet enable
+	enable=y
+	while [ \$# -gt 0 ]; do opt="\$1"; case "\$opt" in
+		"") { shift; }; ;;
+		-f) {
+			enable=y
+			shift
+		}
+		;;
+	
+		*) break;
+	esac; done
+	
+	if ! test "\$enable" = "y"; then
+		echo "You need -f for this to run." 1>&2
+		exit 1
+	fi
+snippet firstchar
+	[[ "\$str" =~ ^/ ]]
+snippet python
+	IFS= read -r -d '' PYCODE <<HEREDOC
+	import sys
+	from efficient_apriori import apriori
+
+	try:
+		tuples=[]
+		for line in sys.stdin:
+			tuples.append(tuple(line.rstrip().split(" ")))
+
+		itemsets, rules = apriori(tuples, min_support=\$min_support,  min_confidence=\$min_confidence)
+
+		for rule in rules:
+			print(rule)
+	except:
+		pass
+	HEREDOC
+
+	python3.6 -c "\$PYCODE"
+snippet sfd "show fds"
+	ls -la /proc/\$\$/fd
+snippet eargs "edit args"
+	remove_deprecated_args() {
+		sed 's/--ignore-close-implementation//'
+	}
+
+	eval "set -- \$(cmd "\$@" | remove_deprecated_args)"
+snippet ea "edit args"
+	remove_deprecated_args() {
+		sed 's/--ignore-close-implementation//'
+	}
+
+	eval "set -- \$(cmd "\$@" | remove_deprecated_args)"
+snippet fa "filter args"
+	remove_deprecated_args() {
+		sed 's/--ignore-close-implementation//'
+	}
+
+	eval "set -- \$(cmd "\$@" | remove_deprecated_args)"
+snippet shiftn "this shifts a specific arg"
+	args=("\$@"); unset "args[\$(( ${0:i} - 1 ))]"; set -- "\${args[@]}"
+snippet argedit
+	a=("\$@")
+
+	echo 0
+	cmd "\$@" | awk 1
+
+	echo 1
+	set --
+	cmd "\$@" | awk 1
+
+	echo 2
+	set -- "\${a[@]}"
+	cmd "\$@" | awk 1
+
+	echo 3
+	eval "set -- \$(cmd "\$@" | sed "s/ -- .*//")"
+	b=("\$@")
+	cmd "\$@" | awk 1
+
+	echo 4
+	set -- "\${a[@]}"
+	cmd "\$@" | awk 1
+
+	echo 5
+	eval "set -- \$(cmd "\$@" | sed "s/.* --//")"
+	c=("\$@")
+	cmd "\$@" | awk 1
+
+	# Copy c
+	cc=("\${c[@]}")
+
+	# Set the arguments to this range
+	set -- {1..10};
+
+	args=("\$@"); unset 'args[4]'
+
+	printf '<%s>' "\${args[@]}"
+	echo
+	printf '<%s>' "\${@}"
+
+	# restore
+	set -- "\${args[@]}"
+	echo
+	printf '<%s>' "\${@}"
+
+	# shiftn "this shifts a specific arg"
+	args=("\$@"); unset "args[\$(( ${0:i} - 1 ))]"; set -- "\${args[@]}"
+snippet ++
+	i=\$((i+1))
+snippet --
+	i=\$((i-1))
+snippet wrc
+	grep -o . | while IFS=\$'\n' read -r char; do
+		(
+		exec 0</dev/null
+		:
+		)
+	done
+snippet ifneli
+	if test "\$(hostname)" = "neli"; then
+		:
+	fi
+snippet ifmorgan
+	if test "\$(hostname)" = "morgan"; then
+		:
+	fi
+
+snippet sbn
+	sbn="\$(basename -- "\$0")"
+snippet hdr
+	file="\$(tf xsh <<'HEREDOC'
+	#!/usr/bin/env xsh
+	echo hi
+	HEREDOC
+	)"
+	perl "\$file"
+snippet rl
+	IFS= read -r line
+snippet readl
+	IFS= read -r line
+snippet readline
+	IFS= read -r line
+snippet pusharr
+	arr=( "new_element" "\${arr[@]}" )
+snippet fd
+	ls -la /proc/\$\$/fd
+snippet e0f
+	if [ -t 0 ] && test -f "\$1"; then
+		exec < <(cat "\$1")
+	fi
+snippet mant
+	mant="\${fn%.*}"
+snippet qa
+	ans="\$(qa -. edit \\
+			  -c copy \\
+			  -a play-song \\
+			  -v play-video \\
+			  -b browsh)"
+
+	case "\$ans" in
+		edit) { vs \$0; } ;;
+		copy) { copy "\$url"; } ;;
+		play-song) { play-song "\$url"; } ;;
+		play-video) { play-video "\$url"; } ;;
+		browsh) { browsh "\$url"; } ;;
+		*) ;;
+	esac
+snippet len
+	len=\${#array[@]}
+snippet str2arr
+	IFS=" +" read -r -a array <<< "\$string"
+snippet aqf
+	aqf () { aqf-real "\$@"; }
+snippet rmpath
+	. \$HOME/scripts/libraries/bash-library.sh
+	export PATH="\$(remove_from_path \$HOME/scripts)"
+
+snippet glh
+	test -f \$HOME/.cargo/bin/rga || (
+		cd "\$(glh ripgrep | head -n 1 | gc)"
+	)
+snippet fn
+	bn="\$(basename -- "\$fp")"
+snippet checkargs
+	options=\$(getopt -o brg --long color: -- "\$@")
+	aptions="\$(getopt -o H:f: -- "\$@")"
+	options=\$(getopt -o '' -l shane: -- --shane=yo "\$@")
+	if [ \$? != 0 ] ; then echo "Failed parsing options." >&2 ; exit 1 ; fi
+snippet ca
+	options=\$(getopt -o brg --long color: -- "\$@")
+	aptions="\$(getopt -o H:f: -- "\$@")"
+	options=\$(getopt -o '' -l shane: -- --shane=yo "\$@")
+	if [ \$? != 0 ] ; then echo "Failed parsing options." >&2 ; exit 1 ; fi
+snippet dvz
+	query="\$1"
+	
+	test -n "\$query" || query="\$(rlwrap readln "docker search")"
+	test -n "\$query" || exit 1
+snippet l0
+	stdin_exists() {
+	    ! [ -t 0 ] && \
+	        ! test "$(readlink /proc/$$/fd/0)" = /dev/null && \
+	        ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+	    # stdin may be redirected to the tty, but `test -t 0` will continue to say false (due to a bash bug)
+	    # So test to make sure 0 does not point to 1
+	}
+	
+	last_arg="\${@: -1}"
+	
+	if test "\$#" -gt 0 && ! stdin_exists && test -f "\$last_arg"; then
+	
+		test "\$#" -gt 0 && set -- "\${@:1:\$((\$#-1))}" # shift last arg
+		# exec < "\$last_arg"
+		exec < <(alt -s sudo cat "\$last_arg")
+	fi
+snippet str2args
+	string="og sp \\"vs 2\\""
+	eval "set -- \$string"
+	cmd1 "\$@"
+snippet arraydelete
+	# This properly deletes
+	array=(pluto pippo bob)
+	delete_list=(pippo)
+	for target in "\${delete_list[@]}"; do
+	  for i in "\${!array[@]}"; do
+		if [[ \${array[i]} = \$target ]]; then
+		  unset 'array[i]'
+		fi
+	  done
+	done
+snippet ifr
+	pl "\$rp" | grep -q -P "^\$SCRIPTS"
+snippet hc
+	# Keep at top
+	oargs=("\$@")
+	| hc "\$(basename -- "\${oargs[0]}")" "\$@" "#" "<==" "\$(ps -o comm= \$PPID)"
+snippet arraydelete2
+	# This makes a blank entry. It doesn't delete completely
+	array=( "\${array[@]/\$delete}" )
+snippet gy
+	CMD="\$(cmd "\$@")"
+	export GY_CMD="man \$CMD"
+snippet extglob
+	shopt -s extglob
+	shopt -s globstar
+snippet tmi
+	tm yn "arbitrate stdin?" && exec < <(tmi)
+	tm yn "arbitrate stdout?" && exec 1> >(tmi)
+snippet eot
+	tm yn "arbitrate stdin?" && exec < <(tmi)
+snippet e0t
+	tm yn "arbitrate stdin?" && exec < <(tmi)
+snippet e1t
+	tm yn "arbitrate stdout?" && exec 1> >(tmi)
+snippet -h
+	last_arg="\${@: -1}"
+	if test "\$last_arg" = "-h"; then
+		/usr/local/bin/openai "\$@" | pavs
+		exit \$?
+	fi
+snippet jqm
+	delim="¬"
+	IFS="\$delim" read -r -d$'\1' prompt first_stop_sequence haspreprocessors temperature engine preferred_openai_engine max_tokens top_p postprocessor < <(
+	cat "\$prompt_fp" | yq -r '[.prompt,."stop-sequences"[0],.preprocessors[0],.temperature,.engine,."preferred-openai-engine",."max-tokens",."top-p",.postprocessor] | join("'\$delim'")')
+snippet bin
+	test -f "${1:path}" && : "${bin:="$1"}"
+snippet fc
+	IFS= read -rd '' file_contents < <(cat);typeset -p file_contents &>/dev/null

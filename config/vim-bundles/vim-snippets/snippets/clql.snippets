@@ -1,0 +1,103 @@
+snippet da
+	(depth = any)
+snippet lf "line fact -- shoehorned"
+	go.element:
+	  end_column >= 100
+snippet re
+	name as printName
+	regex(/^Print.*\$/, printName)
+snippet regex
+	go.ident:
+	  name as listName
+	  regex(/List$/, listName)
+snippet regexjs
+	funcs:
+	  - name: missingTestSuffix
+	    type: asserter
+	    body: |
+	  	function (str) {
+	  	  return !str.match(/.*_test\$/);
+	  	}
+	go.ident:
+	  @var name
+	  name as packageName
+	  missingTestSuffix(packageName)
+snippet arity
+	child_count == 0
+snippet playground
+	@ playground.highlight
+snippet action
+	@ filter.action
+snippet controller
+	@ filter.controller
+snippet filename
+	@ filter.filename
+snippet namespace
+	@ filter.namespace
+snippet c
+	@ review.comment
+snippet comment
+	@ review.comment
+snippet category
+	@ review.vars.category
+snippet text
+	@ review.vars.text
+snippet f-c "function concat"
+	functions:
+	  - name: newConcat
+		type: resolver
+		body: |
+		  function (a, b) {
+			c = a.concat(b)
+			return c
+		  }
+	tenets:
+	  - flows:
+		  codelingo/review:
+			comment: |
+			  This method appears to be a constructor
+		name: constructor-finder
+		query: |
+		  class(depth = any):
+			name as className
+			@review.comment
+			method:
+			  name == newConcat("New", className)
+
+snippet f "function"
+	functions:
+	  - name: ${0:stringLengthGreaterThan}
+		type: resolver
+		body: |
+		  function (str, minLen) {
+			return str.length > minLen
+		  }
+	tenets:
+	  - flows:
+		  codelingo/review:
+			comment: |
+			  This method has a long name
+		name: long-method-name
+		query: |
+		  method:
+			name as methodName
+			$0(methodName, 15)
+
+snippet t template
+	tenets:
+	  - name: go-lint-rules
+		doc: |
+		  Find all go linter rules.
+		flows:
+		  codelingo/review:
+			comment: |
+			  {{text}}
+		query: |
+		  import (
+			codelingo/ast/golint
+		  )
+	
+		  @ review.comment
+		  golint.lint_rule(depth = any):
+			@ review.vars.text
+			text

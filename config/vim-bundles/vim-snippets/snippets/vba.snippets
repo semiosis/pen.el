@@ -1,0 +1,12 @@
+snippet m
+	MsgBox i
+snippet dn
+	fp
+snippet fn
+	fp
+snippet fp
+	Dim FilePath, FileOnly, PathOnly As String
+
+	FilePath = ThisWorkbook.FullName
+	FileOnly = ThisWorkbook.Name
+	PathOnly = Left(FilePath, Len(FilePath) - Len(FileOnly))

@@ -1,0 +1,20 @@
+snippet unpack-numpy
+	import numpy as NP  
+	M = NP.arange(5)  
+	a, b, c, d, e = M  
+	# so of course, a = 0, b = 1, etc.  
+	 
+	M = NP.arange(20).reshape(5, 4)     # numpy 5x4 array  
+	a, b, c, d, e = M  
+	# here, a = M[0,:], b = M[1,:], etc. (ie, a single row of M is assigned each to a through e)  
+snippet matmulnp
+	import tensorflow as tf
+
+	x = tf.random_normal([10, 10])
+	y = tf.random_normal([10, 10])
+	z = tf.matmul(x, y)
+
+	sess = tf.Session()
+	z_val = sess.run(z)
+
+	print(z_val)

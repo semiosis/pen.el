@@ -1,0 +1,119 @@
+snippet i
+	import numpy as np
+	import sonnet as snt
+	import tensorflow as tf
+snippet dm "define matrix"
+	m1 = [[1.0, 2.0], 
+		  [3.0, 4.0]]
+
+	m2 = np.array([[1.0, 2.0], 
+				   [3.0, 4.0]], dtype=np.float32)
+
+	m3 = tf.constant([[1.0, 2.0], 
+					  [3.0, 4.0]])
+snippet save_model
+	w1 = tf.Variable(tf.truncated_normal(shape=[10]), name='w1')
+	w2 = tf.Variable(tf.truncated_normal(shape=[20]), name='w2')
+	tf.add_to_collection('vars', w1)
+	tf.add_to_collection('vars', w2)
+	saver = tf.train.Saver()
+	sess = tf.Session()
+	sess.run(tf.global_variables_initializer())
+	saver.save(sess, 'my-model')
+	# `save` method will call `export_meta_graph` implicitly.
+	# you will get saved graph files:my-model.meta
+snippet save_model_modelsaver
+	model_saver = tf.train.Saver()
+	# Train the model and save it in the end
+	model_saver.save(session, "saved_models/CNN_New.ckpt")
+snippet restore_model_modelsaver
+	with tf.Session(graph=graph_cnn) as session:
+		model_saver.restore(session, "saved_models/CNN_New.ckpt")
+		print("Model restored.") 
+		print('Initialized')
+snippet restore_model
+	sess = tf.Session()
+	new_saver = tf.train.import_meta_graph('my-model.meta')
+	new_saver.restore(sess, tf.train.latest_checkpoint('./'))
+	all_vars = tf.get_collection('vars')
+	for v in all_vars:
+		v_ = sess.run(v)
+		print(v_)
+snippet initialize_variables
+	W1 = tf.Variable(tf.truncated_normal([6, 6, 1, K], stddev=0.1), name="W1")
+	B1 = tf.Variable(tf.constant(0.1, tf.float32, [K]), name="B1")
+snippet print_variable
+	W1 = session.run(W1)
+	print(W1)
+snippet linear_regression_with_training_loop_that_saves_variable_checkpoints_and_an_evaluation_section_that_will_restore_variables_saved_in_a_prior_run_and_compute_predictions
+	x = tf.placeholder(tf.float32)
+	y = tf.placeholder(tf.float32)
+
+	w = tf.Variable(tf.zeros([1, 1], dtype=tf.float32))
+	b = tf.Variable(tf.ones([1, 1], dtype=tf.float32))
+	y_hat = tf.add(b, tf.matmul(x, w))
+
+	...more setup for optimization and what not...
+
+	saver = tf.train.Saver()  # defaults to saving all variables - in this case w and b
+
+	with tf.Session() as sess:
+		sess.run(tf.initialize_all_variables())
+		if FLAGS.train:
+			for i in xrange(FLAGS.training_steps):
+				...training loop...
+				if (i + 1) % FLAGS.checkpoint_steps == 0:
+					saver.save(sess, FLAGS.checkpoint_dir + 'model.ckpt',
+							   global_step=i+1)
+		else:
+			# Here's where you're restoring the variables w and b.
+			# Note that the graph is exactly as it was when the variables were
+			# saved in a prior training run.
+			ckpt = tf.train.get_checkpoint_state(FLAGS.checkpoint_dir)
+			if ckpt and ckpt.model_checkpoint_path:
+				saver.restore(sess, ckpt.model_checkpoint_path)
+			else:
+				...no checkpoint found...
+
+			# Now you can run the model to get predictions
+			batch_x = ...load some data...
+			predictions = sess.run(y_hat, feed_dict={x: batch_x})
+snippet la
+	tf.logical_and(
+		x,
+		y,
+		name=None
+	)
+snippet mm
+	import tensorflow as tf
+
+	x = tf.random_normal([10, 10])
+	y = tf.random_normal([10, 10])
+	z = tf.matmul(x, y)
+
+	sess = tf.Session()
+	z_val = sess.run(z)
+
+	print(z_val)
+snippet matmul
+	# $MYGIT/vahidk/EffectiveTensorflow/README.md
+	import tensorflow as tf
+
+	x = tf.random_normal([10, 10])
+	y = tf.random_normal([10, 10])
+	z = tf.matmul(x, y)
+
+	sess = tf.Session()
+	z_val = sess.run(z)
+
+	print(z_val)
+snippet const
+	a = tf.constant(1)
+	b = tf.constant(2)
+	p = tf.constant(True)
+snippet cond
+	# $MYGIT/vahidk/EffectiveTensorflow/README.md
+	a = tf.constant(1)
+	b = tf.constant(2)
+	p = tf.constant(True)
+	x = tf.cond(p, lambda: a + b, lambda: a * b)

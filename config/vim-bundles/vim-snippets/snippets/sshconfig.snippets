@@ -1,0 +1,17 @@
+snippet h
+	Host ${1:hostname}
+		${0::}
+snippet hn
+	HostName ${0:localhost}
+snippet u
+	User ${0:shane}
+snippet i
+	IdentityFile ${0:/home/shane/.ssh/ids/codelingobot_rsa}
+snippet rf
+	#             con to (on remote)
+	#                            go to (local)
+	RemoteForward localhost:9922 localhost:22
+snippet lf
+	#             con to (on local)
+	#                            go to (remote)
+	RemoteForward localhost:9000 localhost:5432

@@ -1,0 +1,125 @@
+snippet k
+	(define-key ${1:global-map} (kbd "${2:M-m}") 'magit-status)
+snippet dk
+	(define-key ${1:global-map} (kbd "${2:M-m}") 'magit-status)
+snippet exec
+	(shell-command (concat
+					   (read-shell-command "Open current file with: ")
+					 " "
+					 buffer-file-name))
+snippet mapexec
+	(define-key my-mode-map (kbd "M-y M-p")
+	 (lambda ()
+	  (interactive)
+	  (shell-command (concat "echo -E \"" buffer-file-name "\" | xclip-in.sh &>/dev/null") t)
+	  ))
+snippet mapshell
+	(define-key my-mode-map (kbd "M-y M-p")
+	 (lambda ()
+	  (interactive)
+	  (shell-command (concat "echo -E \"" buffer-file-name "\" | xclip-in.sh &>/dev/null") t)
+	  ))
+snippet bindshell
+	(define-key my-mode-map (kbd "M-y M-p")
+	 (lambda ()
+	  (interactive)
+	  (shell-command (concat "echo -E \"" buffer-file-name "\" | xclip-in.sh &>/dev/null") t)
+	  ))
+snippet me
+	(define-key my-mode-map (kbd "M-y M-p")
+	 (lambda ()
+	  (interactive)
+	  (shell-command (concat "echo -E \"" buffer-file-name "\" | xclip-in.sh &>/dev/null") t)
+	  ))
+snippet ms
+	(define-key my-mode-map (kbd "M-y M-p")
+	 (lambda ()
+	  (interactive)
+	  (shell-command (concat "echo -E \"" buffer-file-name "\" | xclip-in.sh &>/dev/null") t)
+	  ))
+snippet bs
+	(define-key my-mode-map (kbd "M-y M-p")
+	 (lambda ()
+	  (interactive)
+	  (shell-command (concat "echo -E \"" buffer-file-name "\" | xclip-in.sh &>/dev/null") t)
+	  ))
+snippet advice
+	(defun his-tracing-function (orig-fun &rest args)
+	  (message "display-buffer called with args %S" args)
+	  (let ((res (apply orig-fun args)))
+		(message "display-buffer returned %S" res)
+		res))
+
+	(advice-add 'display-buffer :around #'his-tracing-function)
+snippet addfunc "works similarly to advice"
+	(advice-remove 'display-buffer #'his-tracing-function)
+	 (defun my-tracing-function (proc string)
+	   (message "Proc %S received %S" proc string))
+	 
+	 (add-function :before (process-filter proc) #'my-tracing-function)
+snippet load
+	(load "${0:/var/smulliga/source/git/config/emacs/multi-occur-bindings.el}")
+snippet save-excursion
+	;; Create a function that inserts a line
+	;; ’above’ the current cursor position.
+	(defun my/insert—line—before ()
+	  "Inserts a newline(s) above the 'Line containing
+	  the cursor."
+	  (interactive)
+	  (save-excursion
+		(move-beginning-of-line 1)
+		(newline)))
+snippet ns
+	(with-timeout (1 nil) (call-process "/bin/bash" nil t nil "-c" "notify-send hi"))
+snippet timeout
+	(with-timeout (1 nil) (call-process "/bin/bash" nil t nil "-c" "notify-send hi"))
+snippet sys
+	(with-timeout (1 nil) (call-process "/bin/bash" nil t nil "-c" "notify-send hi"))
+snippet e0
+	(catch 'my-catch (when t (throw 'my-catch "always going to throw"))
+snippet exit
+	(catch 'my-catch (when t (throw 'my-catch "always going to throw"))
+snippet daemonnname
+	;Try each clause until one succeeds.
+	(cond
+	 ((string= "scimax" (daemonp))
+	  (load-theme 'solarized-light)
+	 )
+	 (t
+	  (load-theme 'solarized-dark)
+	 )
+snippet servername
+	;Try each clause until one succeeds.
+	(cond
+	 ((string= "scimax" (daemonp))
+	  (load-theme 'solarized-light)
+	 )
+	 (t
+	  (load-theme 'solarized-dark)
+	 )
+snippet switch
+	;Try each clause until one succeeds.
+	;remaining clauses are ignored, supposedly.
+	; this example only works if running as a daemon.
+	(cond
+	 ((string= "scimax" (daemonp))
+	  (load-theme 'solarized-light)
+	 )
+	 (t
+	  (load-theme 'solarized-dark)
+	 )
+snippet noop
+	(identity nil)
+snippet noop-identity "This function returns arg and has no side effects"
+	(identity "example arg")
+snippet noop-ignore "This function ignores any arguments and returns nil"
+	(ignore "ignored")
+snippet e "echo message print"
+	(message "display-buffer returned %S" res)
+	(message "hi")
+snippet progn
+	(progn (identity nil))
+snippet var-exists
+	(boundp 'abracadabra)
+snippet fun-exists
+	(fboundp 'abracadabra)
