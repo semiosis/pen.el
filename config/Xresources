@@ -1,0 +1,104 @@
+Xcursor.theme: Vanilla-DMZ-AA
+
+Xft.dpi: 110
+
+Xft.lcdfilter: lcddefault
+
+Xft.antialias: true
+Xft.hinting:true
+Xft.rgba: rgb
+*customization: -color
+
+Emacs.FontBackend: xft
+
+xclock*analog:            false
+xclock*Foreground:        white
+xclock*background:        black
+
+! xterm*faceSize: 20
+! *font: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
+! *boldfont: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
+! xterm*font: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
+! xterm*boldfont: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
+
+xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20
+! xterm*faceSize: 10
+
+! *font: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+! *boldfont: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+! xterm*font: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+! xterm*boldfont: -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+
+XTerm*allowBoldFonts: true
+xterm.*.boldMode: true
+
+*pointerShape: arrow
+*pointerColor: red
+xterm*dynamicColors: true
+xterm*pointerColorBackground: black
+
+xterm*internalBorder: 0
+
+xterm*loginshell: true
+
+xterm*scrollbar: false
+xterm*scrollKey: true
+xterm*saveLines: 0
+xterm*eightBitInput: false
+*utf8: 1
+xterm*utf8: 1
+*altSendsEscape: true
+*metaSendsEscape: true
+*backarrowKey: false
+xterm*termName: xterm-256color
+xterm*scrollTtyOutput: false
+
+xterm*background: #050005
+xterm*foreground: #aaaaaa
+*color1:  #ff6565
+*color2:  #93d44f
+*color3:  #eab93d
+XTerm*color4: DodgerBlue1
+XTerm*color12: DodgerBlue1
+*color4:  DodgerBlue1
+*color5:  #993370
+*color7:  #ededed
+*color9:  #ff8d8d
+*color10: #c8e7a8
+*color11: #ffc123
+*color12: DodgerBlue1
+*color13: #f970c9
+*color15: #f7f7f7
+vncviewer*compressLevel: 9
+vncviewer*qualityLevel: 5
+xterm*disallowedWindowOps: 20,21,SetXprop,SetSelection,GetSelection
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48
+xterm*keepSelection: false
+xterm*on2Clicks: none
+xterm*on3Clicks: none
+xterm*on4Clicks: none
+xterm*on5Clicks: none
+
+URxvt*background: #050005
+URxvt*foreground: #aaaaaa
+URxvt.font: -*-fixed-*-13-*
+URxvt.boldFont: -*-fixed-*-13-*
+URxvt.italicFont: -*-fixed-*-13-*
+URxvt.boldItalicfont: -*-fixed-*-13-*
+URxvt.internalBorder: 0
+URxvt.cursorBlink: false
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+URxvt.underlineURLs: false
+URxvt.urlButton: 1
+
+URxvt.perl-ext:
+URxvt.perl-ext-common:
+
+Emacs.pane.menubar.background: darkGrey
+Emacs.pane.menubar.foreground: black
+Emacs*menubar.margin: 0
+Emacs*shadowThickness: 1

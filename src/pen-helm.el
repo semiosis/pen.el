@@ -519,4 +519,85 @@ Call `helm' only with SOURCES and BUFFER as args."
 
 (define-key helm-read-file-map (kbd "C-h") (kbd "DEL"))
 
+(require 'helm-files)
+;; (defun helm-define-key-with-subkeys (map key subkey command
+;;                                          &optional other-subkeys prompt exit-fn)
+;;   "Define in MAP a KEY and SUBKEY to COMMAND.
+;; 
+;; This allows typing KEY to call COMMAND the first time and
+;; type only SUBKEY on subsequent calls.
+;; 
+;; Arg MAP is the keymap to use, SUBKEY is the initial short
+;; key binding to call COMMAND.
+;; 
+;; Arg OTHER-SUBKEYS is an alist specifying other short key bindings
+;; to use once started, e.g.:
+;; 
+;;     (helm-define-key-with-subkeys global-map
+;;        (kbd \"C-x v n\") ?n 'git-gutter:next-hunk
+;;        '((?p . git-gutter:previous-hunk))\)
+;; 
+;; In this example, `C-x v n' will run `git-gutter:next-hunk'
+;; subsequent \"n\" will run this command again and subsequent \"p\"
+;; will run `git-gutter:previous-hunk'.
+;; 
+;; If specified PROMPT can be displayed in minibuffer to describe
+;; SUBKEY and OTHER-SUBKEYS.  Arg EXIT-FN specifies a function to run
+;; on exit.
+;; 
+;; For any other key pressed, run their assigned command as defined
+;; in MAP and then exit the loop running EXIT-FN, if specified.
+;; 
+;; NOTE: SUBKEY and OTHER-SUBKEYS bindings support only char syntax
+;; and vectors, so don't use strings to define them."
+;;   (declare (indent 1))
+;;   (define-key map key
+;;     (lambda ()
+;;       (interactive)
+;;       (unwind-protect
+;;           (ignore-errors
+;;             (progn
+;;               (call-interactively command)
+;;               (while (let ((input (read-key prompt)) other kb com)
+;;                        (setq last-command-event input)
+;;                        (cond
+;;                         ((eq input subkey)
+;;                          (call-interactively command)
+;;                          t)
+;;                         ((setq other (assoc input other-subkeys))
+;;                          (call-interactively (cdr other))
+;;                          t)
+;;                         (t
+;;                          (setq kb (vector last-command-event))
+;;                          (setq com (lookup-key map kb))
+;;                          (if (commandp com)
+;;                              (call-interactively com)
+;;                            (setq unread-command-events
+;;                                  (nconc (mapcar 'identity kb)
+;;                                         unread-command-events)))
+;;                          nil))))))
+;;         (and exit-fn (funcall exit-fn))))))
+;; (defun helm-ff-delete-char-backward--exit-fn ()
+;;   (setq helm-ff-auto-update-flag helm-ff--auto-update-state)
+;;   (setq helm-ff--deleting-char-backward nil))
+;; (defset helm-read-file-map
+;;   (let ((map (make-sparse-keymap)))
+;;     (set-keymap-parent map helm-map)
+;;     (define-key map (kbd "<C-return>")    'helm-cr-empty-string)
+;;     (define-key map (kbd "M-RET")         'helm-cr-empty-string)
+;;     (define-key map (kbd "C-]")           'helm-ff-run-toggle-basename)
+;;     (define-key map (kbd "C-.")           'helm-find-files-up-one-level)
+;;     (define-key map (kbd "C-l")           'helm-find-files-up-one-level)
+;;     (define-key map (kbd "C-_")           'helm-ff-undo)
+;;     (define-key map (kbd "C-r")           'helm-find-files-down-last-level)
+;;     (define-key map (kbd "C-c h")         'helm-ff-file-name-history)
+;;     (define-key map (kbd "C-<backspace>") 'helm-ff-run-toggle-auto-update)
+;;     (define-key map (kbd "C-c <DEL>")     'helm-ff-run-toggle-auto-update)
+;;     (define-key map (kbd "RET")           'helm-ff-RET)
+;;     (helm-define-key-with-subkeys map (kbd "DEL") ?\d 'helm-ff-delete-char-backward
+;;                                   '((C-backspace . helm-ff-run-toggle-auto-update)
+;;                                     ([C-c DEL] . helm-ff-run-toggle-auto-update))
+;;                                   nil 'helm-ff-delete-char-backward--exit-fn)
+;;     map))
+
 (provide 'pen-helm)

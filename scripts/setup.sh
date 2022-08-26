@@ -317,13 +317,21 @@ agi moreutils # vipe
 agi xclip
 agi buffer
 
-IFS= read -r -d '' XR_CODE <<'HEREDOC'
-Emacs.pane.menubar.background: darkGrey
-Emacs.pane.menubar.foreground: black
-Emacs*menubar.margin: 0
-Emacs*shadowThickness: 1
-HEREDOC
-printf -- "%s\n" "$XR_CODE" >> $HOME/.Xresources
+# IFS= read -r -d '' XR_CODE <<'HEREDOC'
+# Emacs.pane.menubar.background: darkGrey
+# Emacs.pane.menubar.foreground: black
+# Emacs*menubar.margin: 0
+# Emacs*shadowThickness: 1
+# 
+# ! xterm*faceSize: 20
+# ! *font: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
+# ! *boldfont: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
+# ! xterm*font: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
+# ! xterm*boldfont: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
+# 
+# xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20
+# HEREDOC
+# printf -- "%s\n" "$XR_CODE" >> $HOME/.Xresources
 
 IFS= read -r -d '' SHELL_CODE <<'HEREDOC'
 stty stop undef; stty start undef; 
@@ -839,6 +847,9 @@ cp -a /root/repos/pen-emacsd/pen.el/config/fixkeymaps-vimrc /root/.vim
 # Ansible
 agi libonig-dev
 pip3 install 'ansible-navigator[ansible-core]'
+
+# Xterm, etc.
+cp -a /root/repos/pen-emacsd/pen.el/config/Xresources /root/.Xresources
 
 # vim
 (
