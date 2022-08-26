@@ -16,6 +16,14 @@
 (define-key function-key-map (kbd "C-M-\\") 'hyperify)
 (define-key global-map (kbd "M-h") nil)
 
+;; Hyperify is bound to M-h because it's not
+;; possible to press M-SPC or C-M-\ while in the
+;; web app
+(define-key global-map (kbd "M-h") nil)
+;; (define-key function-key-map (kbd "M-h") nil)
+;; (define-key function-key-map (kbd "M-h") 'hyperify)
+
+
 ;; I probably don't want either of these:
 ;; The problem is the browser GUI needs it.
 ;; (define-key function-key-map (kbd "M-h") 'hyperify)
@@ -634,12 +642,6 @@
 (define-key isearch-mode-map (kbd "C-h") #'isearch-delete-char)
 (define-key global-map (kbd "C-h") (kbd "DEL"))
 (global-set-key (kbd "C-c h") help-map)
-
-;; Hyperify is bound to M-h because it's not
-;; possible to press M-SPC or C-M-\ while in the
-;; web app
-(define-key global-map (kbd "M-h") nil)
-(define-key function-key-map (kbd "M-h") 'hyperify)
 
 (add-to-list 'default-frame-alist '(set-foreground-color "white"))
 ;; American flag red background theme was a cool idea, but impractical.
