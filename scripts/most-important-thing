@@ -1,18 +1,22 @@
 #!/bin/bash
 export TTY
 
-export UPDATE=y
+# export UPDATE=y
 
 statement="$@"
-: "${statement:="Love the Lord your God with all your heart, soul and mind, and love your neighbour as yourself."}"
+: "${statement:="Love the Lord your God with all your heart, soul, mind and strength, and love your neighbour as yourself."}"
 
-if ! test "$#" -gt 0; then
-    echo "$statement"
-    echo
-fi
+n=1
+echo "$n"
+echo
+echo "$statement"
+echo
 
 while :; do
-    statement="$(pen --pool pf-most-important-thing/1 "$statement")"
+    statement="$(penf --pool pf-most-important-thing/1 "$statement")"
+    n="$((n + 1))"
+    echo "$n"
+    echo
     echo "$statement"
     echo
 done
