@@ -1,0 +1,92 @@
+#!/bin/bash
+export TTY
+
+# This is so I can supply multiple options to emacs in a shebang line
+
+# This also provides base functionality
+
+# Alternative method
+# https://swsnr.de/emacs/2014/08/12/emacs-script-pitfalls.html
+
+QUIET=y
+
+sn="$(basename "$0")"
+case "$sn" in
+    emacs-script-debug) {
+        QUIET=n
+    }
+    ;;
+
+    *)
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -v|-d) {
+        QUIET=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+script_path="$1"
+script_path="$(p "$script_path" | q -ftln | q -ftln)"
+
+shift
+
+# This is redundant now. I am silencing emacs completely
+silence_load="(defadvice load (before quiet-loading activate) (ad-set-arg 2 t))"
+
+e_stdin=/tmp/$$_in.data; trap "rm -f $e_stdin" EXIT; mknod $e_stdin p
+e_stdout=/tmp/$$_out.data; trap "rm -f $e_stdout" EXIT; mknod $e_stdout p
+e_stderr=/tmp/$$_err.data; trap "rm -f $e_stderr" EXIT; mknod $e_stderr p
+
+read -r -d '' run_before <<HEREDOC
+$silence_load
+(defvar emacsdir "$HOME/var/smulliga/source/git/config/emacs")
+(defvar im-an-emacs-script t)
+(load "$(glob -b "$HOME/var/smulliga/source/git/spacemacs/packages26/dash-[0-9]*/dash.el")")
+(load "$(glob -b "$HOME/var/smulliga/source/git/spacemacs/packages26/s-[0-9]*/s.el")")
+(load "$(glob -b "$HOME/var/smulliga/source/git/spacemacs/packages26/f-[0-9]*/f.el")")
+(load "$EMACSD/manual-packages/emacs-memoize/memoize.el")
+(load "$HOME/var/smulliga/source/git/config/emacs/config/my-syntax-extensions.el")
+(load "$HOME/var/smulliga/source/git/config/emacs/config/my-aliases.el")
+(load "$HOME/var/smulliga/source/git/config/emacs/config/my-utils.el")
+(load "$HOME/var/smulliga/source/git/config/emacs/config/my-utils.2.el")
+(load "$HOME/var/smulliga/source/git/config/emacs/config/my-filters.el")
+(load "$HOME/var/smulliga/source/git/config/emacs/config/my-nix.el")
+HEREDOC
+
+if [ -n "$e_stdin" ]; then
+    run_before="$run_before(defvar _stdin \"$e_stdin\")"
+fi
+
+if [ -n "$e_stdout" ]; then
+    run_before="$run_before(defvar _stdout \"$e_stdout\")"
+fi
+
+if [ -n "$e_stderr" ]; then
+    run_before="$run_before(defvar _stderr \"$e_stderr\")"
+fi
+
+# Not sure while I couldn't use a heredoc pipe
+run_before="$(p "$run_before" | tr -d '\n' | qne)"
+
+#eval "/usr/bin/emacs --batch -Q --eval \"$silence_load\" --script $CMD"
+
+# echo "/usr/bin/emacs --batch -Q --eval \"(progn $run_before (load $script_path nil t))\""
+
+
+# TODO
+# create fifos for sdtin, stdout and stderr
+# pass a variable into emacs to ask it to direct streams through these
+# tail the output streams just before I run the following emeacs command
+
+
+final_cmd="/usr/bin/emacs --batch -Q --eval \"(progn $run_before (load $script_path nil t))\""
+if test "$QUIET" = "y"; then
+    eval "$final_cmd" "$@" &>/dev/null
+else
+    eval "$final_cmd" "$@" 2>&1 | colorise.sh
+fi
