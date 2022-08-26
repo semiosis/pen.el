@@ -191,7 +191,75 @@ ARGLIST.  The infix arguments are usually accessed by using
 ;; Transient set to t means the suffix wont exit
 (tdp transient-toys-wave ()
   "Wave at the user"
-  [("w" "wave" transient-toys--wave :transient t)])
+  ["Group 1"
+   ("o" "wave once" transient-toys--wave :transient t)
+   ("P" "wave a little" transient-toys--wave :transient t)]
+  [("L" "wave a lot" transient-toys--wave :transient t)]
+  ["Group 3"
+   (transient-toys--wave :transient nil :key "wf" :description "wave furiously")])
+
+;; Stacked groups
+(tdp transient-toys-wave ()
+  "Wave at the user"
+  ["Top Group" ("wo" "wave one" transient-toys--wave)]
+  ["Bottom Group" ("wt" "wave two" transient-toys--wave)])
+
+;; Side by side (adjacent) groups
+(tdp transient-toys-wave ()
+  "Wave at the user"
+  [["Left Group" ("wo" "wave one" transient-toys--wave)]
+   ["Right Group" ("wt" "wave two" transient-toys--wave)]])
+
+(tdp transient-toys-wave ()
+  "Wave at the user"
+  ["Group One"
+   ("wo" "wave one" transient-toys--wave)
+   ("we" "wave emotionally" transient-toys--wave)]
+
+  ["Group Two"
+   ("ws" "wave some" transient-toys--wave)
+   ("wb" "wave better" transient-toys--wave)]
+
+  [["Group Three" ("wt" "wave two" transient-toys--wave)]
+   ["Group Four" ("wa" "wave all" transient-toys--wave)]])
+
+(require 'cl-lib)
+
+;; Dynamic lables
+(tdp transient-toys-wave ()
+  "Wave at the user"
+  ["Group One"
+   ("o" "wave one" transient-toys--wave)
+   ("e" "wave emotionally" transient-toys--wave)]
+
+  [:description current-time-string
+                ("ws" transient-toys--wave
+                 :description (lambda ()
+                                (format "Wave at %s" (current-time-string))))
+                ("wb" "wave better" transient-toys--wave)]
+
+  [[:description (lambda () (format "Group %s" (cl-gensym)))
+                 ("wt" "wave two" transient-toys--wave)]
+   [:description (lambda () (format "Group %s" (cl-gensym)))
+                 ("wa" "wave all" transient-toys--wave)]])
+
+(tdp transient-toys-wave ()
+  "Wave at the user"
+
+  [["Arguments"
+    ("-s" "switch" "--switch")
+    ("-a" "argument" "--argument=")
+    ("t" "toggle" "--toggle")
+    ("v" "value" "--value=")]
+
+   ["More Arguments"
+    ("-f" "argument with forced classs" "--forced-class " :class transient-option)
+    ("I" "argument with inline" ("-i" "--inline-shortarg="))
+    ("S" "inline shortarg switch" ("-n" "--inline-shortarg-switch"))]]
+
+  ["Commands"
+   ("ws" "wave some" transient-toys--wave)
+   ("wb" "wave better" transient-toys--wave)])
 
 ;; (transient-toys-wave)
 
@@ -201,9 +269,10 @@ ARGLIST.  The infix arguments are usually accessed by using
   :key "C-w"
   :description "wave"
   (interactive)
-  (message (propertize
-            (format "Waves at %s" (current-time-string))
-            'face 'success)))
+  
+  (message
+   (pen-colour-success
+    (format "Waves at %s" (current-time-string)))))
 
 (tdp transient-toys-wave ()
   "Wave at the user"

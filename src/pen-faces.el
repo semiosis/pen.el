@@ -172,6 +172,11 @@ argument, prompt for a regular expression using `read-regexp'."
     (set-face-foreground 'lsp-ui-sideline-global nil)
     (set-face-background 'lsp-ui-sideline-global nil)
 
+    (require 'transient)
+    (set-face-foreground 'transient-unreachable "#333333")
+    ;; Hopefully, invisible
+    (set-face-foreground 'transient-unreachable-key "#111111")
+
     (set-face-foreground 'header-line "#253525")
     ;; Keep it dark because the LSP breadcrumb is dark
     (set-face-background 'header-line "#101010")

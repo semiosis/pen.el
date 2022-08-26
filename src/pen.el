@@ -2074,6 +2074,7 @@ May use to generate code from comments."
 (require 'pen-right-click-menu)
 (require 'pen-mouse)
 (require 'pen-prompt-description)
+(require 'pen-colorise)
 (require 'pen-creation)
 ;; TODO Bring personalities, incarnations,
 ;; tomes, protoverses and metaverses into
