@@ -68,7 +68,6 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :navtree)
 (add-to-list 'handle-keywords :playground)
 (add-to-list 'handle-keywords :godef)
-(add-to-list 'handle-keywords :godec)
 (add-to-list 'handle-keywords :refactor)
 (add-to-list 'handle-keywords :rename-symbol)
 (add-to-list 'handle-keywords :complete)
@@ -78,7 +77,14 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :compile)
 (add-to-list 'handle-keywords :rc)
 (add-to-list 'handle-keywords :jumpto)
+
+;; Thing at point (builtin keyword)
+;; (add-to-list 'handle-keywords :docs)
+;; Not at point - manual entry of symbol with fuzzy finder
+(add-to-list 'handle-keywords :docfun)        
+;; Not at point - manual entry of symbol
 (add-to-list 'handle-keywords :docsearch)
+
 (add-to-list 'handle-keywords :testall)
 (add-to-list 'handle-keywords :navleft)
 (add-to-list 'handle-keywords :navright)
@@ -97,7 +103,7 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :implementaions)
 ;; This may use GPT-2 at some stage
 (add-to-list 'handle-keywords :spellcorrect)
-(add-to-list 'handle-keywords :docfun)
+
 (add-to-list 'handle-keywords :projectfile)
 ;; toggle between test case
 (add-to-list 'handle-keywords :toggle-test)

@@ -31,4 +31,9 @@
 
 (define-key slime-repl-mode-map (kbd "M-h") 'pen-slime-select-prompt-or-result)
 
+;; j:pen-godef-or-global-references
+(defun pen-slime-godef (thing)
+  (interactive (list (pen-thing-at-point)))
+  (slime-edit-definition thing))
+
 (provide 'pen-common-lisp)

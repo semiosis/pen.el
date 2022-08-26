@@ -107,6 +107,51 @@
                    lispy-flow)
         :prevdef '(pen-prog-prev-def))
 
+(handle '(lisp-mode common-lisp-mode slime-repl-mode)
+        ;; Re-using may not be good, actually, if I'm working with multiple projects
+        :repls (list
+                'slime-repl)
+        :formatters '(lsp-format-buffer)
+        :docs '(pen-doc-override
+                lsp-describe-thing-at-point
+                slime-autodoc-manually)
+
+        ;; Not at point - manual entry of symbol
+        :docsearch '(slime-autodoc-manually)
+        
+        ;; Not at point - manual entry of symbol with fuzzy finder
+        :docfun '()
+        
+        :toggle-test '(projectile-toggle-between-implementation-and-test
+                       common-lisp-open-test)
+        :fz-sym '(
+                  ;; common-lisp-fz-symbol
+                  ;; common-lisp-go-to-symbol
+                  helm-cider-apropos-symbol)
+        :godef '(lsp-find-definition
+                 pen-slime-godef
+                 slime-show-xref
+                 xref-find-definitions-immediately
+                 helm-gtags-dwim)
+        :errors '(pen-common-lisp-switch-to-errors)
+
+        ;; For clj-refactor, see:
+        ;; ;; j:pen-common-lisp-mode-hook
+        :refactor '()
+        :rename-symbol '(lsp-rename
+                         ;; cljr-rename-symbol
+                         )
+        :references '(lsp-ui-peek-find-references lsp-find-references pen-counsel-ag-thing-at-point)
+        :projectfile '(
+                       ;; pen-common-lisp-project-file
+                       )
+        :preverr '(cider-jump-to-compilation-error)
+        :nexterr '(cider-jump-to-compilation-error)
+
+        :nextdef '(pen-prog-next-def
+                   lispy-flow)
+        :prevdef '(pen-prog-prev-def))
+
 (handle '(go-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list)
@@ -145,7 +190,6 @@
         :docfun '()
         :docs '(pen-docs-for-thing-given-screen)
         :docsearch '()
-        :godec '()
         :godef '()
         :showuml '()
         :nextdef '()

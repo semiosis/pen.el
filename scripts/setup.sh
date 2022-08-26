@@ -837,6 +837,7 @@ quicklisp-install str
 quicklisp-install listopia
 quicklisp-install sycamore
 quicklisp-install access
+quicklisp-install closer-mop
 
 # mkdir -p /root/.emacs.d
 # cp -a "$REPOS/roswell/lisp/helper.el" /root/.emacs.d/roswell-helper.el
