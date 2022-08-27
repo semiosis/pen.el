@@ -844,6 +844,11 @@ ros install fukamachi/cl-project
 # (load (expand-file-name "$HOME/.roswell/helper.el"))
 ros install slime
 
+touch ~/.sbclrc
+test -s ~/.sbclrc || echo > ~/.sbclrc
+
+ros install sbcl
+
 quicklisp-install str
 quicklisp-install listopia
 quicklisp-install sycamore
