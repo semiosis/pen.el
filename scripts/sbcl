@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+ros -L sbcl -Q -l /root/.sbclrc run "$@"
