@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# agi caca-utils &>/dev/null
+
+last_arg="${@: -1}"
+
+set -- "$last_arg"
+
+timg "$@"
