@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+wd="$(pwd)"
+
+if test "$wd" = "$HOME"; then
+    wd="$HOME/notes"
+    cd "$wd"
+fi
+
+paths="directories.*"
+paths="$(shopt -s nullglob; shopt -s extglob; eval printf -- "%s\\\n" "$paths" | qargs)" # expand
+printf -- "%s\n" "$paths" | xargs cat1 | scrape-dirs-fast.sh | mnm
+# | {
+#     # it's just too slow. i really need racket
+#     # wrla1 "glob -b"
+#     # cat
+#     # xa1 glob -b
+# } | scrape-dirs-fast.sh | mnm

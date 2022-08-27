@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+sel="$(tm-list-shortcuts | s uniq | mfz -nm)"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+if test -n "$sel"; then
+    sel="$(printf -- "%s" "$sel" | umn)"
+fi
+
+if is_tty && test -d "$sel"; then
+    CWD="$sel" zsh
+    exit $?
+fi
+
+printf -- "%s" "$sel"
