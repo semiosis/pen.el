@@ -48,6 +48,8 @@ width="$2"   # Width of the preview pane (number of fitting characters)
 height="$3"  # Height of the preview pane (number of fitting characters)
 cached="$4"  # Path that should be used to cache image previews
 
+test -f "$path" || exit 1
+
 fp="$path"
 fn=$(basename "$fp")
 rp="$(realpath "$fp")"

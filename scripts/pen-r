@@ -1,0 +1,227 @@
+#!/bin/bash
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# remember: $HOME/scripts/ux
+# This file is where I should put commands that ranger hotkeys link to
+# e.g. Deleting and copying paths
+# I can therefore use this script with other programs such as dired or
+# org-mode
+
+# dp - delete path/s
+# yp - yank path/s
+
+cmd="$1"
+
+# pen-tm -tout nw v
+# notify-send hi
+# exit 0
+
+is_multiline() {
+    NL="\n"
+    case "$1" in
+      *"$NL"*) true ;;
+            *) false ;;
+    esac
+}
+
+line_deliminate() {
+    input="$(cat)"
+    # xargs is actually a limiting factor with %s
+    linedelimited="$(pl "$input" | xargs lit)"
+    pl "$linedelimited"
+
+    return 0
+}
+
+# ranger's %s
+# %s doesn't work well
+from_s() {
+    # line_deliminate |
+    ( xargs -L 20 printf -- '%s\n' ) | sed "s#^#$(pwd | bs '&')/#"
+
+    # line_deliminate | sed "s#^#$(pwd)/#"
+
+    return 0
+}
+
+if [ $# -eq 0 ]; then
+    ranger
+    exit 0
+fi
+
+if [ $# -eq 1 ] && test -d "$1"; then
+    ranger "$1"
+    exit 0
+fi
+
+export FAST=y
+case "$cmd" in
+    t|tree) {
+        pen-tm -d -tout spv "tree | less"
+    }
+    ;;
+
+    e|edit) {
+        pen-tm -S nw "pen-tm -S split \"v $HOME/.config/ranger/rifle.conf\"; v $HOME/.config/ranger/rc.conf"
+    }
+    ;;
+
+    tp) { # excects list of paths. Path as appears.
+        path="$(from_s | pen-umn | ux -t logtee tp | soak)"
+
+        p "$path" | pen-tm tp
+    }
+    ;;
+
+    ts) { # excects list of paths. Path as appears.
+        path="$(from_s | pen-umn | ux -t logtee ts | soak)"
+
+        pen-tm -d sph -fa open "$path"
+    }
+    ;;
+
+    th) { # excects list of paths. Path as appears.
+        path="$(from_s | pen-umn | ux -t logtee th | soak)"
+
+        pen-tm -d spv -fa open "$path"
+    }
+    ;;
+
+    yp) { # excects list of paths. Path as appears.
+         # | ux -t logtee yp
+        from_s | pen-umn | pen-ns | soak | ux -t logtee yp | pen-xc -n -m
+    }
+    ;;
+
+    yl) { # excects list of paths. Path as appears.
+        from_s | q -l | pen-umn | pen-ns | soak | pen-str join | ux -t logtee yl | pen-xc -n -m
+    }
+    ;;
+
+    yP) { # excects list of paths. Path as appears.
+        from_s | pen-umn | pen-ns | soak | ux -t logtee yP | pen-xc -n -u
+    }
+    ;;
+
+    yg) { # yank git
+        from_s | pen-umn | soak | ux -t logtee yg | pen-xa -1 -E git-file-to-url | pen-xc -n -i
+    }
+    ;;
+
+    yP|YP) { # excects list of paths. copies as arguments
+        from_s | pen-umn | pen-ns | soak | ux -t logtee yp | qargs | pen-xc -n
+    }
+    ;;
+
+    yap) { # excects list of paths. Path as appears.
+        # Don't use pen-xc here because we appending
+        from_s | pen-umn | ux -t logtee yp | soak | pen-xc -a
+        # soak | xc
+    }
+    ;;
+
+    yr) { # excects list of paths. Real/Canonical path
+        from_s | tp vipe | ( mnm | ux logtee yp | pen-umn ) | ux rp | ( mnm | tp vipe | pen-xc -n )
+    }
+    ;;
+
+    yd) { # excects list of paths. converts file paths to parent dir
+        from_s | pen-umn | chomp | wrl q | xargs -L1 dirname | pen-str uniq | pen-xc -n
+    }
+    ;;
+
+    yF|yB) {
+        from_s | pen-umn | xargs -L1 basename | pen-ns | soak | ux -t logtee yp | qargs | pen-xc -n
+    }
+    ;;
+
+    # Dirname basename
+    yD) {
+        from_s | pen-umn | xargs -L1 dirname | xargs -L1 basename | pen-ns | soak | ux -t logtee yp | qargs | pen-xc -n
+    }
+    ;;
+
+    yf|yb) { # excects list of paths. copy the filename only
+        # This should only open vim if there is only 1 line
+
+        IFS= read -rd '' paths < <(from_s | pen-umn | xargs -L1 basename | pen-ns | soak | ux -t logtee yp)
+
+        # Don't trim if it's multiline
+        # TODO This isn't working though. It's always trimming
+        if is_multiline "$paths"; then
+            pen-ns "It's multiline!"
+            printf -- "%s" "$paths" | xc
+        else
+            printf -- "%s" "$paths" | pen-xc -n
+        fi
+
+        # from_s | pen-mnm | chomp | wrl q | xargs -L1 basename | pen-str uniq | chomp | xc
+
+        # from_s | ( mnm | ux -t logtee yf | pen-umn ) | uxx bn | (
+        #     input="$(cat)"
+        #     lines="$(pl "$input" | wc -l)"
+
+        #     # pen-tm dv "$lines"
+
+        #     if test "$lines" -eq 1; then
+        #         pl "$input" | pen-mnm | xc
+        #     else
+        #         pl "$input" | pen-mnm | tp vipe | xc
+        #     fi
+        # )
+    }
+    ;;
+
+    yt) { # excects list of files or paths and puts into vim
+        # exec 1>&-
+
+        # input="$(cat)"
+        # pen-ns "$(tty)" # This isn't a tty when run from
+
+        # printf -- '%s\n' "$input" | pen-tm -tout nw "vim -"
+
+        from_s | ( mnm | ux logtee yd | pen-umn ) | ux rp | ux dn | xc
+
+        pen-tm -tout nw -n "ranger copy test" v
+        #printf -- "%s\n" "$input" | line_deliminate | ux -t logtee yt | pen-tm -tout nw v
+    }
+    ;;
+
+    preview) {
+        shift
+
+        scope.sh "$@" | pager -vs
+    }
+    ;;
+
+    dp) { # excects list of paths
+        paths="$(
+        from_s | awk 1 | while IFS=$'\n' read -r line; do
+            if [ -f "$line" ]; then
+                rm -f "$line"
+            else
+                pl "$line"
+            fi
+        done; )"
+
+        if [ -n "$paths" ]; then
+            pl "$paths" | pen-tm -tout nw "ux dp"
+        fi
+    }
+    ;;
+
+    open) {
+        open "$1"
+    }
+    ;;
+
+    template) {
+        :
+    }
+    ;;
+
+    *) {
+        rifle "$@"
+    }
+esac
