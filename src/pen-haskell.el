@@ -442,4 +442,9 @@
 
 (setq haskell-process-show-debug-tips nil)
 
+(require 'haskell-indentation)
+(define-key haskell-indentation-mode-map (kbd "RET") nil)
+(define-key haskell-mode-map (kbd "RET") 'haskell-indentation-newline-and-indent)
+;; haskell-indentation-mode-map was overriding pen-map
+
 (provide 'pen-haskell)
