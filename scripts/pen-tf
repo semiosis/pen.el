@@ -11,8 +11,16 @@ ext="$2"
 
 fp="$(mktemp -t "tf_${name}XXXXXXX.${ext}" 2>/dev/null || :)"
 
+# TODO
+# Use ~/.pen first
+# TMPDIR=$NOTES/programs/tf
+
 if stdin_exists; then
     cat > "$fp"
+    fp_sha="$(sha "$fp")"
+    fp_sha="/tmp/tf_${name}_${fp_sha}.${ext}"
+    mv "$fp" "$fp_sha"
+    fp="$fp_sha"
 fi
 
 echo "$fp"

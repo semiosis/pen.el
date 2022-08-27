@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+# cmd | tv | &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -*) {
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+pen-strip-ansi | pen-nw-v-keep

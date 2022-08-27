@@ -2069,7 +2069,11 @@ May use to generate code from comments."
     (require 'pen-ivy))
 (require 'pen-ink)
 (require 'pen-company)
+
+;; I also need the bindings
 (require 'pen-evil)
+(load-library "pen-evil")
+
 (require 'pen-func-lists)
 (require 'pen-right-click-menu)
 (require 'pen-mouse)

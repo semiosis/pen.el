@@ -1,7 +1,12 @@
 #!/bin/bash
 export TTY
 
+# hdc actually asks for less directly, which is annoyying
+# So I need to make PATH state which points to a different less
+
+# export PAGER=sps-v-keep
 export EDITOR=sps-v-keep
+# export EDITOR=nw-v-keep
 
 if ! inside-docker-p; then
     pen sh hdc "$@"
@@ -14,6 +19,13 @@ if ! inside-tmux-p; then
 fi
 
 thing="$@"
+
+if ! test -f /tmp/hdc-less/hdc-less; then
+    mkdir -p /tmp/hdc-less/
+    ln -s `which hdc-less` /tmp/hdc-less/less
+fi
+
+export PATH="/tmp/hdc-less/:$PATH"
 
 if test -n "$thing"; then
     pen-x -allowtm -sh /root/.cabal/bin/hdc -e ">" -s "$thing" -c m -i

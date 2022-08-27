@@ -71,8 +71,7 @@
             (try
              (progn
                (cond ((eq evil-state 'visual)
-                      nil
-                      )
+                      nil)
                      ((eq evil-state 'normal)
                       (if mark-active
                           (evil-visual-state)))

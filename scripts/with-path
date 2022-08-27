@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+dir="$1"
+if test -n "$dir"; then
+    export PATH="$dir:$PATH"
+fi
+shift
+"$@"

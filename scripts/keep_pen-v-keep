@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+if test "$#" -eq 0; then
+    v "$@"
+fi
+
+last_arg="${@: -1}"
+
+if test -f "$1"; then
+    fp="$1"
+    shift
+elif test -f "$last_arg"; then
+    fp="$last_arg"
+    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+fi
+
+if test -f "$fp"; then
+    rp="$(realpath "$fp")"
+    dn="$(dirname "$rp")"
+    bn="$(basename -- "$rp")"
+
+    cp -a "$fp" "$dn/keep_$bn"
+    v "$@" "$dn/keep_$bn"
+else
+    v "$@"
+fi

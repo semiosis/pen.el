@@ -110,7 +110,9 @@
 (handle '(lisp-mode common-lisp-mode slime-repl-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list
-                'slime-repl)
+                'slime
+                ;; 'slime-repl
+                )
         :formatters '(lsp-format-buffer)
         :docs '(pen-doc-override
                 lsp-describe-thing-at-point

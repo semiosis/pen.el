@@ -58,4 +58,7 @@
           (not (y-or-n-p "Create an additional *inferior-lisp*? ")))))
   t)
 
+;; (define-key lisp-mode-map (kbd "C-x C-e") 'slime-eval-last-expression-in-repl)
+(define-key lisp-mode-map (kbd "C-x C-e") 'slime-eval-last-expression)
+
 (provide 'pen-common-lisp)
