@@ -4,6 +4,8 @@
 (load (expand-file-name (pen-umn "$HOME/.roswell/helper.el")))
 (setq inferior-lisp-program "ros -Q run")
 
+(require 'slime)
+
 (defun pen-slime-select-prompt-or-result ()
   (interactive)
 
@@ -35,5 +37,14 @@
 (defun pen-slime-godef (thing)
   (interactive (list (pen-thing-at-point)))
   (slime-edit-definition thing))
+
+(defun slime-reinitialize-inferior-lisp-p (program program-args env buffer)
+  (never
+   (let ((args (slime-inferior-lisp-args (get-buffer-process buffer))))
+     (and (equal (plist-get args :program) program)
+          (equal (plist-get args :program-args) program-args)
+          (equal (plist-get args :env) env)
+          (not (y-or-n-p "Create an additional *inferior-lisp*? ")))))
+  t)
 
 (provide 'pen-common-lisp)

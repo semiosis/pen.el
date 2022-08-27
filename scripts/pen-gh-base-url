@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+# Convert any dirs given into their urls. (to make the list all urls)
+awk 1 | sed 's/[#?].*//' | while IFS=$'\n' read -r line; do
+    if test -d "$line"; then
+        (
+            cd "$line"
+
+            vc_url="$(vc url)"
+
+            if test -n "$vc_url"; then
+                pl "$vc_url"
+            fi
+        )
+    else
+        pl "$line" | sed "s=\(/home/[^/]\+/source/git\)=https://github.com="
+    fi
+done |
+    sed 's=^\(.*github.com/[^/]\+/[^/]\+\).*=\1=' |
+    sed 's=^\(.*gitlab.com/[^/]\+/[^/]\+/[^/]\+\).*=\1='

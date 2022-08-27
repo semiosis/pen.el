@@ -1,0 +1,138 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+
+    -cl|-clone) {
+        # Side-effects only
+        NO_CLONE=n
+        shift
+    }
+    ;;
+
+    # Extra text for the dirname
+    -dirname-extra) {
+        DIRNAME_EXTRA="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -nc|-noclone) {
+        # Side-effects only
+        NO_CLONE=y
+        shift
+    }
+    ;;
+
+    -s) {
+        export SHALLOW=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+sed 's~^http://www.google.com/url?q=\([^&]*\)&.*~\1~' | gh-base-url | awk 1 | sed 's/#.*//' | while IFS=$'\n' read -r line; do
+    line="$(p "$line" | sed 's=^\(github.com\)=http://\1=')"
+
+    if pl "$line" | grep -q -P '//gist\.github.com'; then
+        gist_author="$(lit "$line" | sed 's#.*/\([^/]\+\)/[^/]\+$#\1#')"
+        gist_id="$(lit "$line" | sed 's#.*/\([^/]\+\)$#\1#')"
+        MYGISTS="/var/smulliga/source/gist"
+        mkdir -p "$MYGISTS"
+        cd "$MYGISTS"
+
+        gist_dir="$gist_author/$gist_id"
+        if ! test -d "$gist_dir"; then
+            mkdir -p "$gist_dir"
+            cd "$gist_dir"
+            dg "$gist_id"
+
+            # getgist "$gist_author"
+        else
+            cd "$gist_dir"
+        fi
+        pwd
+    else
+        domain=github.com # default
+
+        re='(github|gitlab|bitbucket|gopkg).(com|org|in)'
+        slashed="$(p "$re" | bs '|().')"
+
+        re_subgroup='gitlab.com/[a-z.-]+/[^/]+/[^/]+$'
+
+        # echo "$line" | tv &>/dev/null
+
+        if pl "$line" | grep -q -P "$re_subgroup"; then
+            domain="$(pl "$line" | sed -n "s_^[a-z]\\+://[w.]*$slashed.*_\\1.\\2_p")"
+            author="$(pl "$line" | sed -n "s_^[a-z]\\+://[w.]*$slashed/\\([^/]\+\\).*_\\3_p")"
+            subgroup="$(pl "$line" | sed -n "s_^[a-z]\\+://[w.]*$slashed/[^/]\+/\\([^/]\+\\).*_\\3_p")"
+            repo="$(pl "$line" | sed -n "s_^[a-z]\\+://[w.]*$slashed/[^/]\+/[^/]\+/\\([^/]\+\\)\+.*_\\3_p" | sed 's/\.git$//')"
+            # repo="$(pl "$line" | sed -n "s_^[a-z]\\+://[w.]*$slashed/[^/]\\+/[^/]\\+/[^/]\\+/\\([^/]\\+\\).*_\\3_p" | sed 's/\.git$//')"
+            # echo "$domain / $author / $subgroup / $repo" 1>&2
+        elif pl "$line" | grep -q -P "$re"; then
+            domain="$(pl "$line" | sed -n "s_^[a-z]\\+://[w.]*$slashed.*_\\1.\\2_p")"
+            author="$(pl "$line" | sed -n "s_^[a-z]\\+://[w.]*$slashed/\\([^/]\+\\).*_\\3_p")"
+            repo="$(pl "$line" | sed -n "s_^[a-z]\\+://[w.]*$slashed/[^/]\\+/\\([^/]\\+\\).*_\\3_p" | sed 's/\.git$//')"
+        elif printf -- "%s\n" "$line" | grep -q -P '[^/]+/[^/]'; then
+            author="$(lit "$line" | s field -d / 1)"
+            repo="$(lit "$line" | s field -d /  2)"
+        else
+            author="$(lit "$line" | s field 1)"
+            repo="$(lit "$line" | s field 2)"
+        fi
+        # echo "$author $repo" > /tmp/gc.txt
+
+        if [ -n "$author" ] && [ -n "$repo" ]; then
+            cd "$MYGIT"
+
+            mkdir -p "$author"
+            cd "$author"
+
+            if test -n "$subgroup"; then
+                mkdir -p "$subgroup"
+                cd "$subgroup"
+
+                url="https://$domain/$author/$subgroup/$repo"
+            else
+                case "$domain" in
+                    bitbucket.org) {
+                        url="git@$domain:$author/$repo"
+                    }
+                    ;;
+
+                    *) {
+                        url="https://$domain/$author/$repo"
+                    }
+                    ;;
+                esac
+            fi
+
+            # pwd 1>&2
+
+            # echo "${url}_$DIRNAME_EXTRA" | tv
+            # echo "${url}_$NO_CLONE" | tv
+
+            if test "$NO_CLONE" = "y"; then
+                echo "NO_CLONE=y # Not cloning" 1>&2
+            else
+                pl "Cloning $url" 1>&2
+                (
+                export SHALLOW
+                vc g cl "$url" 0</dev/null
+                ) 1>/dev/null
+            fi
+
+            repdir="$(pwd)/$repo"
+
+            if test -n "$DIRNAME_EXTRA"; then
+                printf -- "%s\n" "$repdir-$DIRNAME_EXTRA"
+            else
+                printf -- "%s\n" "$repdir"
+            fi
+        fi
+    fi
+done

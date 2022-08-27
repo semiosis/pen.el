@@ -1,0 +1,151 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+gitfolder="$MYGIT"
+
+# DONE -- it's in vc, getgist and dg
+# * Make an option within this script to set up this script
+# npm install -g download-gist
+# * Make this script download gists
+
+stdin_exists() {
+    ! [ -t 0 ]
+    # ! [ -t 0 ] && read -t 0
+}
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+is_tty && DROP_TO_SHELL=y
+
+disable_stdin=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -notty) {
+        DROP_TO_SHELL=n
+        shift
+    }
+    ;;
+
+    -tty) {
+        DROP_TO_SHELL=y
+        shift
+    }
+    ;;
+
+    -i) {
+        disable_stdin=n
+        shift
+    }
+    ;;
+
+    -s) {
+        export SHALLOW=y
+        shift
+    }
+    ;;
+
+    -p) {
+        PRINT_DIRS=y
+        shift
+    }
+    ;;
+
+    # Extra text for the dirname
+    -dirname-extra) {
+        export DIRNAME_EXTRA="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -cl|-clone) {
+        # Side-effects only
+        NO_CLONE=n
+        shift
+    }
+    ;;
+
+    -nc|-noclone) {
+        # Side-effects only
+        NO_CLONE=y
+        shift
+    }
+    ;;
+
+    -nn|-nonotify) {
+        NO_NOTIFY=y
+        export LIGHT=y # Don't smash the github API
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# # This doesn't work, sadly
+# Also, it maybe breaks when I actually want to use stdin
+# if test "$disable_stdin" = "y"; then
+#     eval 0<&-
+# fi
+
+stdin_exists && : "${DROP_TO_SHELL:="n"}"
+
+export NO_CLONE SHALLOW NO_NOTIFY
+
+{
+    stdin_exists && awk1
+
+    # send arguments to stdin
+    test "$#" -gt 0 && pl "$@"
+} | gh-url-to-dir | {
+    if test "$PRINT_DIRS" = "y"; then
+        cat
+        exit 0
+    fi
+
+    lastclonedrepo="$(tail -n 1 | pen-umn)"
+
+    # cd "$lastclonedrepo"
+
+    if ! test "$NO_NOTIFY" = "y"; then
+        printf -- "%s" "$lastclonedrepo" | pen-xc -m &>/dev/null
+    fi
+
+    if ! test "$NO_NOTIFY" = "y"; then
+        pen-ns "$lastclonedrepo" &>/dev/null 0</dev/null # This must have dev null or the next pipe will break
+    fi
+
+    if ! test -d "$lastclonedrepo"; then
+        pl "repo not created $lastclonedrepo" 1>&2
+    else
+        ( cd "$lastclonedrepo"; github-add-upstream 1>&2; )
+    fi
+
+    if test "$DROP_TO_SHELL" = "y" && test -d "$lastclonedrepo"; then
+        #if test -n "$TTY"; then
+        #    # echo "$TTY"
+        #    exec < "$TTY"
+        #fi
+        # exec <`pen-tm-tty` # why does this break the tty? Darn it, it's needed. # IDK. it appeared last time to break the terminal. confirm
+        # exec < "$TTY"
+        # bash
+
+        # The fix! # https://unix.stackexchange.com/questions/404173/shell-command-tmux-throws-cant-use-dev-tty-error/512979#512979
+        exec <&1
+
+        cd "$lastclonedrepo"
+
+        pen-ns "drop"
+
+        # pen-tm -d sph -c "$lastclonedrepo" ranger # This is annoying
+
+        CWD="$lastclonedrepo" zsh 
+        # zcd "$lastclonedrepo"
+    else
+        printf -- "%s\n" "$lastclonedrepo"
+    fi
+}

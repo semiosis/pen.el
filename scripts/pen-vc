@@ -317,7 +317,7 @@ case "$vc_opt" in
                 if printf -- "%s\n" "$url" | grep -q -P '//gitlab.com/'; then
                     url="$(p "$url" | git-http-to-ssh)"
                 else
-                    pen-ns "$(it "ghb size" "$url")" &>/dev/null & disown
+                    pen-ns "$(apply "ghb size" "$url")" &>/dev/null & disown
                 fi
 
                 set -m
