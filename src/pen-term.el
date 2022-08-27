@@ -372,8 +372,12 @@ commands to use in that buffer.
   (interactive)
 
   ;; If the main frame, Pen.el quits entirely, currently
-  (ignore-errors
-    (delete-frame)))
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (progn
+        (setq current-prefix-arg nil)
+        (pen-kill-buffer-and-frame))
+    (ignore-errors
+      (delete-frame))))
 
 (defun penq ()
   "Quit Pen"
