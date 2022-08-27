@@ -826,6 +826,12 @@ test -d "$REPOS/roswell" || (
     ros setup
 )
 
+# This is for browsing source code
+(
+cd /tmp
+/usr/bin/git clone "https://github.com/sbcl/sbcl"
+)
+
 # https://stackoverflow.com/q/70483583
 ros install fukamachi/cl-project
 
