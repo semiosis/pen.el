@@ -832,6 +832,11 @@ cd /tmp
 /usr/bin/git clone "https://github.com/sbcl/sbcl"
 )
 
+# This failed, annoyingly
+# ros install clisp
+# Perhaps I should just install clisp through apt. Yeah, I should do that.
+agi clisp
+
 # https://stackoverflow.com/q/70483583
 ros install fukamachi/cl-project
 
