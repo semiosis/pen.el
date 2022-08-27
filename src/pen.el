@@ -2146,13 +2146,13 @@ May use to generate code from comments."
 (require 'pen-clojure)
 (require 'pen-racket)
 (require 'pen-haskell)
-(require 'pen-perl)
 
 (require 'pen-browser)
 (require 'pen-custom-conf)
 
 (if (inside-docker-p)
     (progn
+      (require 'pen-perl)
       (require 'pen-compilation)
       (require 'pen-iedit)
       (require 'pen-grep)
