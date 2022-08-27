@@ -6,6 +6,17 @@
 
 (require 'slime)
 
+(setf slime-lisp-implementations
+      `((sbcl
+         ("sbcl"
+          "--dynamic-space-size"
+          "2000"))
+        (roswell ("ros" "-Q" "run"))))
+
+(setq inferior-lisp-program "ros -L sbcl -Q -l /root/.sbclrc run")
+
+(setf slime-default-lisp 'roswell)
+
 (defun pen-slime-select-prompt-or-result ()
   (interactive)
 
