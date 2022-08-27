@@ -2146,6 +2146,7 @@ May use to generate code from comments."
 (require 'pen-clojure)
 (require 'pen-racket)
 (require 'pen-haskell)
+(require 'pen-perl)
 
 (require 'pen-browser)
 (require 'pen-custom-conf)

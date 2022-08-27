@@ -249,6 +249,7 @@ agi libperl-dev # IO::AIO needs this to compile
 cpanm IO::AIO
 cpanm AnyEvent::AIO
 cpanm Perl::LanguageServer
+cpanm Emacs::PDE
 
 mkdir -p ~/.config/efm-langserver
 
