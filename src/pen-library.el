@@ -1165,6 +1165,21 @@ non-nil."
           (ekm "M-C-m")
         (newline-indent)))))
 
+(defun pen-enter-edit ()
+  "Runs 'tvipe' if a region is selected."
+  (interactive)
+  (if (region-active-p)
+      (pen-tvipe (pen-selected-text))
+    ;; Disabling =my-mode= isnt enough for custom
+    (if (derived-mode-p 'Custom-mode)
+        (call-interactively 'Custom-newline)
+      ;; Custom-newline
+      (let ((my-mode nil)
+            (fun (key-binding (kbd "C-m"))))
+        (if fun
+            (call-interactively fun)
+          (execute-kbd-macro (kbd "C-m")))))))
+
 (defun current-line-string ()
   (thing-at-point 'line t))
 

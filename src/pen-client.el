@@ -406,7 +406,11 @@ This function doesn't really like it when you put 'sp' as the editor."
       (if (region-active-p)
           (progn
             ;; (select-tmux-current)
-            (let ((stdout (pen-sn editor (format "%s" stdin) (not b_nowait) nil t tm_wincmd dir (not b_nowait))))
+            (let ((stdout (pen-sn (concat "ptw tm vipe -wintype " tm_wincmd " " (e/q editor))
+                                  (format "%s" stdin)
+                                  dir
+                                  nil
+                                  b_nowait)))
               (if (not b_nowait)
                   (progn
                     (delete-region (region-beginning) (region-end))

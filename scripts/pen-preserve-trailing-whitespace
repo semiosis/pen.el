@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+infile="$(pen-tf txt)"
+filteredfile="$(cat "$infile" | "$@" | pen-tf txt)"
+
+cat "$infile" | preserve-trailing-whitespace.py "$filteredfile"

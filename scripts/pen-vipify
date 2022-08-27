@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+which "$1" &>/dev/null || cat
+EDITOR="$1" vipe
