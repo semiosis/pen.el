@@ -1,0 +1,37 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -q|-w) {
+        query=y
+        shift
+    }
+    ;;
+
+    -s) {
+        silent=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+app="$1"
+app="$(which -a "$app" | grep -v /scripts/ | uniqnosort | head -n 2 | tail -n 1)"
+# Don't use realpath. Things like snap and npm use symlinks
+# app="$(which -a "$app" | xargs -l1 realpath | grep -v $HOME/scripts/ | uniqnosort | head -n 2 | tail -n 1)"
+if test "$query" = "y"; then
+    if test -n "$app"; then
+        printf -- "%s" "$app"
+        exit 0
+    else
+        exit 1
+    fi
+else
+    test "$silent" = y ||  echo "using alternative $app" 1>&2
+    shift
+    $app "$@"
+fi

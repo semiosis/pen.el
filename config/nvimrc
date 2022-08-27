@@ -2188,3 +2188,10 @@ endfunction
 
 nnoremap <silent> Zh :call SchemaInTmux()<CR>
 xnoremap <silent> Zh <ESC>:call SchemaInTmux()<CR>
+
+fun! GoogleWithEww(incmd)
+    let cmd = 'nw egr '.escape(fnameescape(a:incmd), "()<>")
+    call system(cmd.'&')
+endf
+
+xmap H "zy;call GoogleWithEww(@z)<CR>
