@@ -74,7 +74,6 @@
                 (if mark-active
                     (pen-selected-text)
                   (read-string "query:"))
-                t
                 "spv"))
 
   (if (not winfunc)
@@ -89,6 +88,9 @@
 
    ((derived-mode-p 'haskell-mode)
     (progn (hoogle thing t)))
+   
+   ((derived-mode-p 'lisp-mode)
+    (progn (slime-hyperspec-lookup (str thing))))
 
    ((derived-mode-p 'racket-mode)
     (progn (pen-tvipe "hi") (pen-racket-doc winfunc thing) (deactivate-mark)))

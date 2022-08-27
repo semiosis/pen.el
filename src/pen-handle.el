@@ -114,13 +114,18 @@
         :formatters '(lsp-format-buffer)
         :docs '(pen-doc-override
                 lsp-describe-thing-at-point
-                slime-autodoc-manually)
+                slime-documentation
 
-        ;; Not at point - manual entry of symbol
-        :docsearch '(slime-autodoc-manually)
+                ;; slime-autodoc-manually
+                )
+
+        ;; Not at point - manual entry of symbol, searches web
+        :docsearch '(slime-documentation-lookup
+                                     pen-doc
+)
         
         ;; Not at point - manual entry of symbol with fuzzy finder
-        :docfun '()
+        :docfun '(slime-documentation-lookup)
         
         :toggle-test '(projectile-toggle-between-implementation-and-test
                        common-lisp-open-test)

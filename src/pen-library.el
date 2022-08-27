@@ -1174,7 +1174,7 @@ non-nil."
     (if (derived-mode-p 'Custom-mode)
         (call-interactively 'Custom-newline)
       ;; Custom-newline
-      (let ((my-mode nil)
+      (let ((pen nil)
             (fun (key-binding (kbd "C-m"))))
         (if fun
             (call-interactively fun)
