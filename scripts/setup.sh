@@ -890,3 +890,6 @@ mkdir -p ~/dump/tmp/
 pyf problog
 
 cargo install grex
+
+# Perl
+agi perl-doc
