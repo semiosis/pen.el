@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+# jq -n -f <(cat /home/shane/notes/404.json | jq-showschema-values) | vim -
+
+jq -r '
+ ( tostream
+   | select(length > 1)
+   | (
+     .[0] | map(
+       if type == "number"
+       then "[" + tostring + "]"
+       else "." + .
+       end
+     ) | join("")
+   )
+   + " = "
+   + (.[1] | @json)
+   + " |"
+ ),
+ "."
+'

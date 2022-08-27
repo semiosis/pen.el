@@ -1,0 +1,130 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Show schema for document
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -ft*) { # Because "$1" == "-ft kotlin", when used in shebang
+        file_type="${opt##* }"
+        shift
+    }
+    ;;
+
+    -j) {
+        file_type=json
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+fp="$1"
+shift
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+if stdin_exists; then
+    fp="$(tf bin)"
+fi
+
+rp="$(realpath "$fp")"
+dn="${rp%/*}"
+
+first_line="$(head -n 1 "$fp")"
+
+bn="$(basename "$rp")"
+
+fn=$(basename "$rp")
+ext="${fn##*.}"
+mant="${fn%.*}"
+
+read first_line < "$rp"
+
+if [ -z "$file_type" ]; then
+    file_type="$ext"
+fi
+
+# tm -d dv "$file_type"
+
+case "$fn" in
+    pl-flow-*) {
+        file_type=json
+    }
+    ;;
+
+    Makefile*) {
+        file_type=make
+    }
+    ;;
+
+    template) {
+        :
+    }
+    ;;
+
+    *)
+esac
+
+case "$first_line" in
+    '{'|'[') {
+        file_type=json
+    }
+    ;;
+
+    *)
+esac
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+pager() {
+    if is_tty; then
+        vs
+    else
+        cat
+    fi
+}
+
+case "$file_type" in
+    json) {
+        cat "$rp" | jq-showschema | pager
+        exit 0
+    }
+    ;;
+
+    xml) {
+        cat "$rp" | xml-showschema | pager
+        exit 0
+    }
+    ;;
+
+    make) {
+        cat "$rp" | make-showschema | pager
+        exit 0
+    }
+    ;;
+
+    *) {
+        :
+    }
+    ;;
+esac
+
+if [ -f "$1" ]; then
+    {
+        lit "This must compile and run"
+        echo
+        echo
+        cat "$1" 
+    } | pager
+    exit 0
+fi
+
+lit "$1" | pager

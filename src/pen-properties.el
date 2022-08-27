@@ -85,7 +85,8 @@
   (interactive)
   (new-buffer-from-string (pen-json-encode-alist
                            `(("emacs-properties" ,(emacs-properties))
-                             ("pen-buffer-properties " ,(pen-buffer-properties))))))
+                             ("pen-buffer-properties " ,(pen-buffer-properties))))
+                          nil 'json-mode))
 
 (defun pen-tvipe-emacs-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
@@ -95,7 +96,8 @@
 (defun pen-etv-emacs-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (new-buffer-from-string (pen-emacs-properties-json)))
+  (new-buffer-from-string (pen-emacs-properties-json)
+                          nil 'json-mode))
 
 (defun pen-jiq-buffer-variables-json ()
   "Gets the local variables of the current emacs buffer in json format and puts it into tmux."
@@ -110,12 +112,14 @@
 (defun pen-etv-buffer-variables-json ()
   "Gets the local variables of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (new-buffer-from-string (pen-buffer-variables-json)))
+  (new-buffer-from-string (pen-buffer-variables-json)
+                          nil 'json-mode))
 
 (defun pen-etv-global-variables-json ()
   "Gets the local variables of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (new-buffer-from-string (pen-global-variables-json)))
+  (new-buffer-from-string (pen-global-variables-json)
+                          nil 'json-mode))
 
 (defun force-keyvalue (e)
   ;; Make a new list
@@ -145,7 +149,9 @@
 (defun pen-etv-buffer-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
   (interactive)
-  (new-buffer-from-string (pen-buffer-variables-json)))
+  (new-buffer-from-string
+   (pen-buffer-variables-json)
+   nil 'json-mode))
 
 (define-key pen-map (kbd "M-l M-p M-v") 'pen-etv-buffer-properties-json)
 
