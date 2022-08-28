@@ -61,6 +61,7 @@ case "$category" in
     *)
 esac
 
+category="$(printf -- "%s" "$category" | sed 's/^pen-//')"
 dir="$topdir/$category"
 shift
 
