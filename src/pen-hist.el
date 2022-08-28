@@ -24,6 +24,7 @@
     (gc url)))
 
 (define-key global-map (kbd "M-m") nil)
+(define-key global-map (kbd "M-l") nil)
 (pen-mu
  (pen-ms "/M-m/{p;s/M-m/M-l/}"
          (define-key global-map (kbd "M-m H Z") (dff (find-file "$HOME/.zsh_history")))
