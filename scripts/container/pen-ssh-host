@@ -11,6 +11,7 @@ fi
 
 sn="$(basename "$0")"
 
+: "${USE_PROFILE:="y"}"
 : "${VERBOSE:="n"}"
 : "${QUIET:="y"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
