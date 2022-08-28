@@ -650,7 +650,8 @@
 (remove-from-list 'default-frame-alist '(set-background-color "#660000"))
 
 ;; This is still needed for term/cterm, for some reason
-(pen-term-set-raw-map)
+(if (inside-docker-p)
+    (pen-term-set-raw-map))
 
 ;; Easily kill comint buffers
 (setq kill-buffer-query-functions nil)
