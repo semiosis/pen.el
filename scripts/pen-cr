@@ -54,7 +54,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -ls|-li|-list) {
-        cat "$SCRIPTS/${sn}" | pen-scrape "trycr [^\$ ]+$" | cut -d ' ' -f 2 | print-line-if-path-exists.sh | uniqnosort | pen-pavs
+        cat "$SCRIPTS/${sn}" | pen-scrape "trycr [^\$ ]+$" | cut -d ' ' -f 2 | print-line-if-path-exists | uniqnosort | pen-pavs
         exit $?
     }
     ;;

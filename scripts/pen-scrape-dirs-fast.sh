@@ -1,4 +1,4 @@
 #!/bin/bash
 export TTY
 
-filter-partial-paths.sh | print-line-if-path-exists.sh | sort | uniq | dirs-only.sh
+filter-partial-paths | print-line-if-path-exists | sort | uniq | dirs-only.sh
