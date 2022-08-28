@@ -116,4 +116,17 @@
       (new-buffer-from-string (pen-selected-text))
     (new-buffer-from-string s)))
 
+;; si and uncmd are used for tabulated list
+(defun si (category input &rest args)
+  ;; input may also be nil
+
+  (ignore-errors (pen-snc (concat "si +" category " " (pen-list2cmd args)) (pps input)))
+  input)
+
+(defun uncmd (s)
+  (pen-str2lines (pen-snc (concat "pl " s))))
+
+(defun list2vec (l)
+  (apply 'vector l))
+
 (provide 'pen-utils)

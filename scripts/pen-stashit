@@ -1,0 +1,57 @@
+#!/bin/bash
+export TTY
+
+# Ideally, this would stream to a server
+# But I can log to my own computer for the time being
+
+# For the moment just store it
+
+if [ $# -eq 0 ] ; then
+    $0 -h
+    exit 0
+fi
+
+
+# the general category is default
+category=_
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    +*) {
+        category="$(p "$opt" | mcut -d+ -f2 | s chomp)"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+
+# stdin always exits in this script
+
+# TODO This should stream
+input="$(cat)"
+
+if [ -z "$input" ]; then
+    exit 0
+fi
+
+# Just use all the arguments to construct a name
+CMD="$(cmd "$@")"
+
+: ${cmdname:="$CMD"}
+
+si_dir="$HOME/notes/programs/si/"
+mkdir -p "$si_dir"
+
+{
+    printf -- "\n%s\n" "$cmdname"
+    printf -- "%s\n" "$input" | ts
+} >> "$si_dir/$category.txt"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+if ! is_tty; then
+    printf -- "%s\n" "$input"
+fi
