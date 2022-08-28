@@ -73,13 +73,17 @@ printf -- "%s" "$CMD " >> "$tf_command"
 # cr /root/.pen/documents/haskell-test/app/Main.hs
 
 if test "$start" = "y"; then
-    CWD="$CWD" pen-x -c l -s ' ' -sf "$tf_command" -c a -i
+    CWD="$CWD" pen-x -c l -e "»" -s ' ' -sf "$tf_command" -c a -i
 elif test "$cm" = "y"; then
     if test "$nocl" = "y"; then
-        CWD="$CWD" pen-x -sf "$tf_command" -sl 0.5 -c m -i
+        CWD="$CWD" pen-x -e "»" -sf "$tf_command" -sl 0.5 -c m -i
     else
-        CWD="$CWD" pen-x -c l -sf "$tf_command" -sl 0.5 -c m -i
+        CWD="$CWD" pen-x -c l -e "»" -sf "$tf_command" -sl 0.5 -c m -i
     fi
 else
-    CWD="$CWD" pen-x -c l -sf "$tf_command" -sl 0.5 -i
+    if test "$nocl" = "y"; then
+        CWD="$CWD" pen-x -e "»" -sf "$tf_command" -sl 0.5 -i
+    else
+        CWD="$CWD" pen-x -c l -e "»" -sf "$tf_command" -sl 0.5 -i
+    fi
 fi

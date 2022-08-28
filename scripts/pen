@@ -1438,7 +1438,7 @@ case "$sn" in
 
     penz) {
         show_banner=n
-        fuzzy=pen-fzf
+        fuzzy="mfz -nv"
         set -- -e '(pen-list2str pen-prompt-functions)'
     }
     ;;
@@ -2165,6 +2165,7 @@ if test "$do_page" = y; then
 else
     pen_eval_fuzzy_maybe
 fi
+ret="$?"
 
 if test "$docker_cmd" = exec && is_tty && test "$INTERACTIVE" = y; then
     clear
@@ -2179,4 +2180,10 @@ if test "$force_shutdown_container" = "y"; then
         echo Force quitting Pen.el container | pen-hls red 1>&2
         docker container stop "$PEN_CONTAINER_NAME" 2>/dev/null
     fi
+fi
+
+if test "$sn" = penh; then
+    zrepl -nocl -E "penf $fun"
+else
+    exit "$ret"
 fi
