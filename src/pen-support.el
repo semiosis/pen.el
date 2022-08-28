@@ -12,6 +12,14 @@
        (progn
          ,@body)))
 
+(defun buffer2string (buffer)
+  (if (not buffer)
+      ""
+    (with-current-buffer buffer
+      (save-restriction
+        (widen)
+        (buffer-substring-no-properties (point-min) (point-max))))))
+
 (defun pen-tf (template &optional input ext)
   "Create a temporary file."
   (setq ext (or ext "txt"))

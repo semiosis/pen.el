@@ -314,7 +314,7 @@ display values."
                        (defhydra h_nq (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "NORMAL: quoting"
                          "NORMAL: quoting"
                          ;; ("q" (pen-region-pipe "q -ftln") "wrl quote")
-                         ("d" #'major-mode-function "run major mode function")
+                         ("d" #'major-mode-functions "run major mode function")
                          ("q" (df fi-wrl-quote (pen-region-pipe "qftln")) "wrl quote")
                          ("l" (df fi-wrl-quote (pen-region-pipe "qftln")) "wrl quote")
                          ("u" (df fi-wrl-unquote (pen-region-pipe "uq -ftln")) "wrl unquote")

@@ -363,6 +363,7 @@
 
 (defun major-mode-function (&optional mode)
   (interactive)
+  ;; TODO Go through all parent modes
   (if (not mode)
       (setq mode major-mode))
   (let* ((lsym (intern (concat (symbol-name mode) "-funcs")))
@@ -373,13 +374,31 @@
          (pl (if (variable-p progsym)
                  (symbol-value progsym)
                nil))
-         (finallist (if (and (derived-mode-p 'prog-mode)
-                             pl)
-                        (append '() func-list pl)
-                      func-list)))
-    (if finallist
-        (call-interactively (intern (fz finallist nil nil "major-mode-function: ")))
-      (message (concat (symbol-name finallist) " is empty")))))
+         (finallist
+          func-list
+          ;; (if (and (derived-mode-p 'prog-mode)
+          ;;          pl)
+          ;;     (append '() func-list pl)
+          ;;   func-list)
+          ))
+    (if (interactive-p)
+        (if finallist
+            (call-interactively (intern (fz finallist nil nil "major-mode-function: ")))
+          (message (concat (symbol-name finallist) " is empty")))
+      finallist)))
+
+(defun major-mode-functions (&optional mode)
+  (interactive)
+  (let* ((modes (parent-mode-list major-mode))
+         (funs
+          (flatten-list
+           (loop for m in modes collect
+                 (major-mode-function m)))))
+    (if (interactive-p)
+        (if funs
+            (call-interactively (intern (fz funs nil nil "major-mode-function: ")))
+          (message (concat (symbol-name funs) " is empty")))
+      funs)))
 
 (defun major-mode-filter (&optional mode)
   (interactive)

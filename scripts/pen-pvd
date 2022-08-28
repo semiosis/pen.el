@@ -1,0 +1,67 @@
+#!/bin/bash
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# I should be able to cat into vd
+# There should be no errors. vd might already be ok.
+
+# It still doesn't treat piped input particularly well I should extend
+# vd
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nh) {
+        shift
+        set -- --header=0 "$@"
+    }
+    ;;
+
+    -csv) {
+        iscsv=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -2) {
+        # precmd="TERM=xterm-2color "
+        precmd="export TERM=screen-2color; "
+        # precmd="TERM=vt100 "
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+eval `resize`
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    if test "$iscsv" = "y"; then
+        infp="$(tf csv)"
+    else
+        infp="$(tf tsv)"
+    fi
+
+    set -- "$infp" "$@"
+    exec <&2
+fi
+
+if is_tty; then
+    vd "$@"
+else
+    cat
+fi
