@@ -1,7 +1,9 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+sn="$(basename -- "$0")"
+sn="$(p "$sn" | sed 's/^pen-//')"
+( hs "$(basename "$sn")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -36,7 +38,7 @@ case "$CMD" in
     }
     ;;
 esac
-} | mfz +s -m -nv | awk 1 | mnm | while IFS=$'\n' read -r line; do
+} | mfz +s -m -nv | awk 1 | mnm | hsqf-clean | while IFS=$'\n' read -r line; do
     exec <&1
     # eval "$line"
     # sps -E "$line"

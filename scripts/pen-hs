@@ -49,6 +49,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+category="$(printf -- "%s" "$1" | sed 's/^pen-//')"
+shift
+set -- "$category" "$@"
 
 CMD="$(cmd-nice-posix "$@" | pen-esc '`!')"
 parameters="$CMD"
@@ -61,7 +64,6 @@ case "$category" in
     *)
 esac
 
-category="$(printf -- "%s" "$category" | sed 's/^pen-//')"
 dir="$topdir/$category"
 shift
 
@@ -76,8 +78,9 @@ is_tty() {
 }
 
 sn="$(basename "$0")"
+sn="$(p "$sn" | sed 's/^pen-//')"
 case "$sn" in
-    *hsq) {
+    hsq) {
         if ! test -d "$dir"; then
             echo "$sn: $dir does not exist" 1>&1
             exit 1

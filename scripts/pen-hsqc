@@ -35,7 +35,7 @@ pager() {
 
 hsq "$cmd" | tail -n 50 | xa cat1 | tac | {
     if test "$clean" = "y"; then
-        sed "s/^[^;]\+; $cmd //" | sed -e 's/ "# .*$//' -e 's/ # .*$//' -e 's/^# .*$//'
+        sed "s/^[^;]\+; $cmd //" | hsqf-clean
     else
         cat
     fi
