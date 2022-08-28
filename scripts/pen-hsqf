@@ -1,0 +1,50 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -noz) {
+        nozrepl=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+is_stdout_pipe
+ispipe="$?"
+
+CMD="$(cmd-nice "$@")"
+
+{
+case "$CMD" in
+    pyi|"py i") {
+        hsqc py i | awk 1
+        hsqc pyi | awk 1
+    }
+    ;;
+
+    *) {
+        hsqc "$@"
+    }
+    ;;
+esac
+} | mfz +s -m -nv | awk1 | mnm | while IFS=$'\n' read -r line; do
+    exec <&1
+    # eval "$line"
+    # sps -E "$line"
+    # sps zrepl -E "$line"
+    if test "$nozrepl" = "y"; then
+        eval "$line"
+    else
+        nw zrepl -E "$line"
+    fi
+    break
+done

@@ -1,0 +1,50 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "# <==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -ao|-args-only|-clean) {
+        clean=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+cmd="$1"
+shift
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+pager() {
+    if is_tty; then
+        v
+    else
+        cat
+    fi
+}
+
+# some commands like gc may have too many hist files
+# make a limit of 50
+
+hsq "$cmd" | tail -n 50 | xa cat1 | tac | {
+    if test "$clean" = "y"; then
+        sed "s/^[^;]\+; $cmd //" | sed -e 's/ "# .*$//' -e 's/ # .*$//' -e 's/^# .*$//'
+    else
+        cat
+    fi
+} | {
+    if test "$#" -gt "0"; then
+        CMD="$(cmd-nice "$@")"
+        : ${CMD:="$(cmd-nice "$@")"}
+        grep -P "; *$cmd $CMD"
+    else
+        cat
+    fi
+} | uniqnosort | mnm | pager
