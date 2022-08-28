@@ -893,3 +893,5 @@ cargo install grex
 
 # Perl
 agi perl-doc
+
+agi wordnet

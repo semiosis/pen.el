@@ -114,7 +114,7 @@ case "$d" in
     A) cmd="orspog $EMACSD/config/auto-mode-load.el" ;;
     D) cmd="orspog $NOTES/programs/adehome/.aderc" ;;
     \)) cmd="vs $HOME/notes/programs/tm/autofiles.txt" ;;
-    I) cmd="vs $HOME/notes/setup.sh" ;;
+    I) cmd="vs $EMACSD/host/pen.el/scripts/setup.sh" ;;
     n) cmd="orspog $MYGIT/config/emacs/config/my-ux.el" ;;
     \#) cmd="orspog $MYGIT/config/emacs/config/my-rc.el" ;;
     i) cmd="vs $HOME/.irssi/config" ;;
