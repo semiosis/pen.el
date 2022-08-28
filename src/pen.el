@@ -86,7 +86,6 @@
 (require 'pen-custom-values)
 (require 'pen-configure)
 (pen-require 'pen-selected)
-(require 'pen-hist)
 (if (inside-docker-p)
     (progn
       (require 'pen-eww)
@@ -106,6 +105,7 @@
 (require 'helm-fzf)
 (require 'pen-helm-fzf)
 (require 'pen-help)
+(require 'pen-hist)
 (require 'pen-eipe)
 (require 'pen-textprops)
 (require 'pen-rc)
