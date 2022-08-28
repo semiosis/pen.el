@@ -207,7 +207,7 @@ display values."
                          ("D" #'pen-swipe "swiper")
                          ("M" #'git-timemachine "git timemachine")
                          ("9" #'describe-foo-at-point "describe")
-                         ("h" #'pen-toggle-evil "Toggle Evil")
+                         ;; ("h" #'pen-toggle-evil "Toggle Evil")
                          ("l" #'pen-yas-complete "yasnippet menu")
                          ("b" #'list-buffers "List buffers")))
 

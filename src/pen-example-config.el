@@ -847,6 +847,30 @@
       (define-key pen-map (kbd "M-q M-v") #'open-in-vim) ;This is like vim's M-q M-m for opening in emacs in the current pane
 
       ;; (define-key pen-map (kbd "M-l V") #'e/open-in-vim)
-      (define-key pen-map (kbd "M-l M-V") #'e/open-in-vim)))
+      (define-key pen-map (kbd "M-l M-V") #'e/open-in-vim)
+
+      (pen-mu
+       ;; (pen-ms "/M-m/{p;s/M-m/M-l/}")
+       (define-key pen-map (kbd "M-m H Z") (dff (find-file "$HOME/.zsh_history")))
+       (define-key pen-map (kbd "M-m H B") (dff (find-file "$HOME/.bash_history")))
+       ;; (define-key pen-map (kbd "M-m H G") (dff (hsqf "gh")))
+       (define-key pen-map (kbd "M-m H c") 'hsqf-gc)
+       (define-key pen-map (kbd "M-m H b") (dff (hsqf "cr")))
+       (define-key pen-map (kbd "M-m H H") (dff (hsqf "hsqf")))
+       (define-key pen-map (kbd "M-m H r") (dff (hsqf "readsubs")))
+       (define-key pen-map (kbd "M-m H A") (dff (hsqf "new-article")))
+       ;; (define-key pen-map (kbd "M-m H N") (dff (hsqf "new-project")))
+       (define-key pen-map (kbd "M-m H N") 'new-project)
+       (define-key pen-map (kbd "M-m H K") (dff (hsqf "killall")))
+       (define-key pen-map (kbd "M-m H X") (dff (hsqf "xrandr")))
+       (define-key pen-map (kbd "M-m H F") (dff (hsqf "feh")))
+       (define-key pen-map (kbd "M-m H P") (dff (hsqf "play-song")))
+       (define-key pen-map (kbd "M-m H D") (dff (hsqf "docker")))
+       (define-key pen-map (kbd "M-m H g") (dff (hsqf "git")))
+       (define-key pen-map (kbd "M-m H O") (dff (hsqf "o")))
+       (define-key pen-map (kbd "M-m H o") (dff (hsqf "o")))
+       (define-key pen-map (kbd "M-m H y") (dff (hsqf "yt")))
+       (define-key pen-map (kbd "M-m H C") (dff (hsqf "hcqf")))
+       (define-key pen-map (kbd "M-m H h") #'hsqf))))
 
 (provide 'pen-example-config)
