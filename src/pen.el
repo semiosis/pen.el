@@ -105,7 +105,6 @@
 (require 'helm-fzf)
 (require 'pen-helm-fzf)
 (require 'pen-help)
-(require 'pen-hist)
 (require 'pen-eipe)
 (require 'pen-textprops)
 (require 'pen-rc)
@@ -192,6 +191,7 @@ Be mindful of quoting arguments correctly."
 
 (require 'pen-sh)
 (require 'pen-library)
+(require 'pen-hist)
 (require 'pen-utils)
 (if (inside-docker-p)
     (progn
