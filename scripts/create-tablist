@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+    ecreate-tablist "$input_fp" "$@"
+else
+    ecreate-tablist "$@"
+fi

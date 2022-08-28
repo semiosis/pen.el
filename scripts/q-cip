@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+# Quote for "sp -cip"
+
+# Not sure if this even takes all input
+
+# if it starts with = then it's an unquoted symbol
+# if it starts with - then it's a quoted symbol
+# otherwise, it's a string
+
+IFS= read -rd '' input < <(cat /dev/stdin)
+
+if [[ "$input" == =* ]]; then
+    # VALUE - leave as-is, e.g. =nil
+    printf -- "%s" "${input#=}"
+
+elif [[ "$input" == -* ]]; then
+    # SYMBOL - prefix with '
+    printf -- "%s" "'${input#-}"
+
+else
+    # STRING - encase in quotes
+    printf -- "%s" "$input" | q -f
+
+fi

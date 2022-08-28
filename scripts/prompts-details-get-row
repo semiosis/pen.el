@@ -1,0 +1,37 @@
+#!/bin/bash
+export TTY
+
+# exec 3>&0;
+# exec 0>/dev/null;
+
+           # then join(":")
+IFS= read -r -d '' jqsrc <<HEREDOC
+[
+.title,
+(
+.vars | (
+           if type == "array"
+           then join(":")
+           else .
+           end
+         )
+),
+.filter,
+.conversation,
+.external,
+.["needs-work"],
+.["in-development"]
+] | @csv
+HEREDOC
+
+# exec 0>&3;
+
+# echo "$jqsrc" | tv
+
+VERBOSE=y yq -r "$jqsrc"
+
+# sed -z -e "s/\\n//g" -e "s/ \\+/ /g"
+
+# sp +/"if type == \"number\"" "$NOTES/ws/jq/schema"
+
+# https://stackoverflow.com/questions/54191177/check-json-data-type-using-jq

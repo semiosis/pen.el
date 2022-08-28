@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -u) {
+        UPDATE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$UPDATE" = "y"; then
+    update_str="UPDATE=y "
+fi
+
+# TODO Make it so prompts-details saves to a database for super fast lookup and caching
+# TODO I should also save each individual one
+
+# Use an oci command here to speed it up
+create-tablist "${update_str}oci prompts-details -csv" prompts t "30 30 20 10 15 15 15 10" $MYGIT/semiosis/prompts/prompts
