@@ -36,7 +36,7 @@ case "$CMD" in
     }
     ;;
 esac
-} | mfz +s -m -nv | awk1 | mnm | while IFS=$'\n' read -r line; do
+} | mfz +s -m -nv | awk 1 | mnm | while IFS=$'\n' read -r line; do
     exec <&1
     # eval "$line"
     # sps -E "$line"

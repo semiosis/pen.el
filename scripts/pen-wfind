@@ -14,4 +14,4 @@ first_arg="$(realpath "$first_arg")"
 
 shift
 
-eval "find $(aqf "$first_arg") -mindepth 1 -maxdepth 1" "$@"
+eval "find $(cmd "$first_arg") -mindepth 1 -maxdepth 1" "$@"
