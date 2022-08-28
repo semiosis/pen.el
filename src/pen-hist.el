@@ -6,6 +6,7 @@
   "Run a command from history"
   (interactive (list (read-string-hist "hsqf command:")))
   (let* ((selected-command (fz (pen-mnm (pen-sn (concat "hsqc " cmdname))) nil nil "hsqf past cmd: "))
+         (selected-command (pen-sn "hsqf-clean" selected-command))
          (wd (pen-uq (s-replace-regexp "^cd \"\\([^\"]+\\)\".*$" "\\1" selected-command)))
          (pen-cmd (s-replace-regexp (concat "^[^;]*; \\([^ ]+\\).*") "\\1" selected-command)))
 
