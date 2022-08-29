@@ -14,7 +14,12 @@
          ;; Handle this better. Sometimes the buffer does not have a path.
          ;; If it doesn't have a path.
          ;; get-path-ext-from-mode-alist
-         (let* ((ext (get-ext-for-mode))
+         (let* ((ext
+                 (if (buffer-file-name)
+                     (f-ext (buffer-file-name))))
+                (ext (or ext
+                         (get-ext-for-mode)
+                         ""))
                 (crstr
                  (cond ((sor ext) (concat "-ft " ext " " (pen-q (str (buffer-file-name)))))
                        (t (pen-q (str (buffer-file-name)))))))
