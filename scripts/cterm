@@ -78,8 +78,9 @@ else
     CMD="$(cmd-nice-posix "$@")"
 fi
 
+USE_TMUX=y
 case "$CMD" in
-    zsh|"\"zsh"\") {
+    zsh|"\"zsh"\"|vd*) {
         USE_TMUX=y
     }
     ;;
