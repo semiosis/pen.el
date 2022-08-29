@@ -1,0 +1,107 @@
+#!/bin/bash
+export TTY
+
+IFS= read -r -d '' shcode <<HEREDOC
+sed \\
+$(
+cat $EMACSD/pen.el/src/pen-aliases.el | sed -n "/^ *(defalias/{s=(defalias '\([^ ]*\) '\([^ ]*\)).*=-e 's~(\\\\b\1\\\\b~(\2~' \\\\=p}"
+)
+| cat
+HEREDOC
+
+eval "$shcode" |
+    sed \
+    -e 's/(snc /(pen-snc /g' \
+    -e 's/(sn /(pen-sn /g' \
+    -e 's/(sph /(pen-sph /g' \
+    -e 's/(spv /(pen-spv /g' \
+    -e 's/(sps /(pen-sps /g' \
+    -e 's/(mnm /(pen-mnm /g' \
+    -e 's/(umn /(pen-umn /g' \
+    -e 's/(lm /(pen-lm /g' \
+    -e 's/(ns /(pen-ns /g' \
+    -e 's/| v /| pen-v /g' \
+    -e 's/| vs /| pen-vs /g' \
+    -e 's/(term-nsfa /(pen-term-nsfa /g' \
+    -e 's/(current-major-mode)/(current-major-mode-string)/g' \
+    -e 's/| scrape /| pen-scrape /g' \
+    -e 's/| esc /| pen-esc /g' \
+    -e 's/| ds /| pen-ds /g' \
+    -e 's/| tm /| pen-tm /g' \
+    -e 's/| mfz /| pen-mfz /g' \
+    -e 's/| pl /| pen-pl /g' \
+    -e 's/| xc /| pen-xc /g' \
+    -e 's/ xc / pen-xc /g' \
+    -e 's/ xct/ pen-xct/g' \
+    -e 's/ zl / pen-zl /g' \
+    -e 's/ show-extensions-below / pen-show-extensions-below /g' \
+    -e 's/| mnm/| pen-mnm/g' \
+    -e 's/| umn/| pen-umn/g' \
+    -e 's/| qtv/| pen-qtv/g' \
+    -e 's/| hls/| pen-hls/g' \
+    -e 's/| fzf/| pen-fzf/g' \
+    -e 's/| s chomp\b/| chomp/g' \
+    -e 's/  s chomp\b/  chomp/g' \
+    -e 's/"tm /"pen-tm /g' \
+    -e 's/`tm-tty/`pen-tm-tty/g' \
+    -e 's/\$(new-script-from-args /\$(nsfa /g' \
+    -e 's/\$(nsfa /\$(pen-nsfa /g' \
+    -e 's/\$(aqf /\$(cmd /g' \
+    -e 's/\$(aq /\$(cmd-nice-posix /g' \
+    -e 's/\$(cmd-real /\$(cmd-nice-posix /g' \
+    -e 's/\$(xc /\$(pen-xc /g' \
+    -e 's/\$(zl /\$(pen-zl /g' \
+    -e 's/ u / pen-ux /g' \
+    -e 's/ F / pen-F /g' \
+    -e 's/ i / pen-i /g' \
+    -e 's/ xa / pen-xa /g' \
+    -e 's/\$(cmd-nice /\$(cmd-nice-posix /g' \
+    -e 's/\$(i /\$(pen-i /g' \
+    -e 's/"cmd-nice /"cmd-nice-posix /g' \
+    -e 's/"xa /"pen-xa /g' \
+    -e 's/(ux /(pen-ux /g' \
+    -e 's/(nw /(pen-nw /g' \
+    -e 's/(tvipe /(pen-tvipe /g' \
+    -e 's/ (cmd / (pen-cmd /g' \
+    -e 's/(mime /(pen-mime /g' \
+    ` # we want to replace (cmd, not $(cmd ` \
+    -e 's=(e/chomp =(chomp =g' \
+    -e 's=(e/q =(pen-q =g' \
+    -e 's/(cl-sn /(pen-cl-sn /g' \
+    -e 's/(umn /(pen-umn /g' \
+    -e 's/myrc /pen-rc /g' \
+    -e 's/myrc-test /pen-rc-test /g' \
+    -e 's/ timg / pen-timg /g' \
+    -e 's/ timgv / pen-timgv /g' \
+    -e 's/ tm / pen-tm /g' \
+    -e 's/ ns / pen-ns /g' \
+    -e 's/ xt / pen-xt /g' \
+    -e 's/ tf / pen-tf /g' \
+    -e 's/pen-ux pen-tf /pen-ux tf /g' \
+    -e 's/ ttp / pen-pretty-paragraph /g' \
+    -e 's/ tpp / pen-pretty-paragraph /g' \
+    -e 's/ pavs/ pen-pavs/g' \
+    -e 's/ nsfa / pen-nsfa /g' \
+    -e 's/ s / pen-str /g' \
+    -e 's/ugrep /pen-ugrep /g' \
+    -e 's/sudo //g' \
+    -e 's/\blit /pl /g' \
+    -e 's/dhclient /pen-dhclient /g' \
+    -e 's/awk-apply-to-record/pen-aatr/g' \
+    -e 's/alt //g' \
+    -e 's/ sps / pen-sps /g' \
+    -e 's/ pak/ pen-pak/g' \
+    -e 's/^pak/pen-pak/g' \
+    -e 's/(q /(pen-q /g' \
+    -e 's/\([" ]\)\(rtcmd\) /\1pen-\2 /g' \
+    -e 's/"ci /"pen-ci /g' \
+    -e 's/"z-repl /"zrepl /g' \
+    -e 's/"oci /"unbuffer pen-ci /g' \
+    -e 's/(my-copy /(xc /g' \
+    -e 's/(selection)/(pen-selected-text)/g' \
+    -e 's/my-mode/pen/g' \
+    -e 's/my\//pen-/g' \
+    -e 's/my-/pen-/g' \
+    -e 's/pen-pen-/pen-/g' \
+    -e 's/\$(interactive /\$(pen-i /g' \
+    -e 's/pen-my/oh-my/g'

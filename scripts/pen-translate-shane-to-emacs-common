@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+IFS= read -r -d '' shcode <<HEREDOC
+sed \\
+$(
+cat $EMACSD/pen.el/src/pen-aliases.el | sed -n "/^ *(defalias/{s=(defalias '\([^ ]*\) '\([^ ]*\)).*=-e 's~(\\\\b\1\\\\b~(\2~' \\\\=p}"
+)
+| cat
+HEREDOC
+
+eval "$shcode" |
+    sed \
+    -e 's/(selected)/mark-active/g' \
+    -e 's/(vc-root-dir/(projectile-acquire-root/g' \
+    -e 's/(vc-get-top-level/(projectile-acquire-root/g' \
+    -e 's/(second /(cadr /g' \
+    -e 's/(major-mode-enabled /(derived-mode-p /g' \
+    -e 's/(varexists /(variable-p /g' \
+    -e 's/(expand-macro /(macroexpand /g' \
+    -e 's/(major-mode-p /(derived-mode-p /g' \
+    -e 's/(string-to-int /(string-to-number /g' \
+    -e 's/(cfilter /(pen-region-pipe /g' \
+    -e 's/(buffer-contents)/(buffer-string)/g' \
+    -e 's/(re-match-p /(string-match /g' |
+pen-translate-shane-to-pen

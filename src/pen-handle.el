@@ -123,12 +123,11 @@
 
         ;; Not at point - manual entry of symbol, searches web
         :docsearch '(slime-documentation-lookup
-                                     pen-doc
-)
-        
+                     pen-doc)
+
         ;; Not at point - manual entry of symbol with fuzzy finder
         :docfun '(slime-documentation-lookup)
-        
+
         :toggle-test '(projectile-toggle-between-implementation-and-test
                        common-lisp-open-test)
         :fz-sym '(
@@ -158,6 +157,27 @@
         :nextdef '(pen-prog-next-def
                    lispy-flow)
         :prevdef '(pen-prog-prev-def))
+
+(handle '(racket-mode)
+        :repls '(pen-racket-run
+                 ;; racket-run
+                 racket-repl)
+        ;; This is for running the program
+        :run '(pen-racket-run-main)
+        :formatters '(lsp-format-buffer)
+        :docs '(pen-doc-override
+                pen-doc-thing-at-point)
+        :references '(lsp-ui-peek-find-references
+                      ;; lsp-find-references
+                      pen-counsel-ag-thing-at-point)
+        :docsearch '(pen-doc-ask)
+        :godef '(racket-visit-definition
+                 lsp-find-definition
+                 xref-find-definitions-immediately
+                 helm-gtags-dwim)
+        :docsearch '(pen-doc)
+        :nextdef '(pen-prog-next-def
+                   lispy-flow))
 
 (handle '(go-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects

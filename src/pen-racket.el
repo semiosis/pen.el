@@ -117,6 +117,24 @@
   (if (bq racket-main-exists)
       (pen-sps "racket-run-main")))
 
+(defun pen-racket-run (&optional noselect)
+  (interactive "P")
+  (racket-call-racket-repl-buffer-name-function)
+  (cl-flet
+      ((display-and-maybe-select
+        ()
+        (display-buffer racket-repl-buffer-name)
+        (unless noselect
+          (select-window (get-buffer-window racket-repl-buffer-name t)))))
+    (if (racket--repl-live-p)
+        (display-and-maybe-select)
+      (racket-run)
+      ;; (racket--repl-start
+      ;;  (lambda ()
+      ;;    (racket--repl-refresh-namespace-symbols)
+      ;;    (display-and-maybe-select)))
+      )))
+
 (define-key racket-mode-map (kbd "M-w") #'pen-racket-expand-macro-or-copy)
 (define-key racket-mode-map (kbd "M-w") 'racket-expand-at-point)
 (define-key racket-mode-map (kbd "C-M-i") 'racket-format-at-point)
