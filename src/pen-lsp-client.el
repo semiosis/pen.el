@@ -296,16 +296,21 @@ This issue might be caused by:
            "No LSP server for current mode")
          major-mode major-mode major-mode))))))
 
+;; TODO Make this default to Pen ESP
 (defun lsp--matching-clients? (client)
   (and
    ;; both file and client remote or both local
+   ;; (get-path nil nil nil nil t)
    (eq (---truthy? (file-remote-p (buffer-file-name)))
        (---truthy? (lsp--client-remote? client)))
 
    ;; activation function or major-mode match.
    (if-let ((activation-fn (lsp--client-activation-fn client)))
        (funcall activation-fn (buffer-file-name) major-mode)
-     (-contains? (lsp--client-major-modes client) major-mode))
+     (or
+      (-contains? (lsp--client-major-modes client) major-mode)
+      ;; Frustratingly, it still doesn't work
+      (string-equal "pen" (str (lsp--client-server-id client)))))
 
    ;; check whether it is enabled if `lsp-enabled-clients' is not null
    (or (null lsp-enabled-clients)

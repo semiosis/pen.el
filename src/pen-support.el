@@ -562,7 +562,7 @@ delim is used to guarantee the function returns multiple matches per line
 
 (defun find-package (thing)
   (pen-mu
-   (let ((pat (concat "(provide '" thing ")"))
+   (let ((pat (concat "(provide '" (str thing) ")"))
          (dir "$HOME/.emacs.d/host/pen.el/src"))
      (open-pat pat ".el" dir))))
 
