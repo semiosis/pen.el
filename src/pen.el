@@ -57,6 +57,7 @@
 (require 'ivy)
 (require 's)
 (require 'company)
+;; (require 'pen-dashboard)
 (require 'pen-window)
 (require 'selected)
 (require 'pcsv)
