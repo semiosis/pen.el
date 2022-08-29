@@ -62,6 +62,7 @@
                         prompt-description-mode
                         emacs-lisp-mode
                         sh-mode
+                        ;; prolog-mode
                         org-mode awk-mode eww-mode
                         special-mode python-mode
                         prog-mode))
@@ -307,10 +308,12 @@ This issue might be caused by:
    ;; activation function or major-mode match.
    (if-let ((activation-fn (lsp--client-activation-fn client)))
        (funcall activation-fn (buffer-file-name) major-mode)
-     (or
-      (-contains? (lsp--client-major-modes client) major-mode)
-      ;; Frustratingly, it still doesn't work
-      (string-equal "pen" (str (lsp--client-server-id client)))))
+     (-contains? (lsp--client-major-modes client) major-mode)
+     ;; (or
+     ;;  (-contains? (lsp--client-major-modes client) major-mode)
+     ;;  ;; Frustratingly, it still doesn't work
+     ;;  (string-equal "pen" (str (lsp--client-server-id client))))
+     )
 
    ;; check whether it is enabled if `lsp-enabled-clients' is not null
    (or (null lsp-enabled-clients)
