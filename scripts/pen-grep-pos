@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+exec 0</dev/null
+
+pat="$1"
+test -n "$pat" || exit 1
+ext="$2"
+: "${ext:="*"}"
+
+rg() {
+    command rg --no-heading --line-buffered -b -g "$@"
+}
+
+{
+    rg "**/*.$ext"  "$pat"
+} | pen-sort line-length | pen-sort path-depth | pavs

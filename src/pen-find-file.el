@@ -88,6 +88,23 @@
 
 (add-hook 'find-file-hooks 'find-file-change-dir)
 
+(defun open-pat (pat &optional ext a_dir)
+  (interactive (list (read-string-hist "open-pat: ")))
+  (let* ((dir (or
+               (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                   (get-top-level))
+               a_dir
+               (get-dir)))
+         (found (sor (fz (chomp (pen-sn (pen-cmd "pen-grep-pos" pat) nil dir)) nil nil nil nil t) nil)))
+    (if found
+        (let ((path (s-replace-regexp "^\\([^:]+\\).*" "\\1" found))
+              (pos (s-replace-regexp "^[^:]+:\\([0-9]+\\):.*" "\\1" found)))
+          (with-current-buffer (find-file (if dir
+                                              (concat dir "/" path)
+                                            (concat dir path)))
+            (goto-byte (string-to-number pos))))
+      (message "Pattern " pat " not found"))))
+
 (defun open-main ()
   (interactive)
   (let* ((cwd (get-dir))

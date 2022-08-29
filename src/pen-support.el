@@ -560,6 +560,12 @@ delim is used to guarantee the function returns multiple matches per line
     (insert-file-contents filePath)
     (buffer-string)))
 
+(defun find-package (thing)
+  (pen-mu
+   (let ((pat (concat "(provide '" thing ")"))
+         (dir "$HOME/.emacs.d/host/pen.el/src"))
+     (open-pat pat ".el" dir))))
+
 (defun pen-find-thing (thing)
   (interactive)
   (if (stringp thing)
@@ -567,6 +573,7 @@ delim is used to guarantee the function returns multiple matches per line
   (try (find-function thing)
        (find-variable thing)
        (find-face-definition thing)
+       (find-package thing)
        t))
 (defalias 'pen-j 'pen-find-thing)
 (defalias 'pen-ft 'pen-find-thing)

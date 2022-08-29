@@ -296,6 +296,26 @@ This issue might be caused by:
            "No LSP server for current mode")
          major-mode major-mode major-mode))))))
 
+(defun lsp--matching-clients? (client)
+  (and
+   ;; both file and client remote or both local
+   (eq (---truthy? (file-remote-p (buffer-file-name)))
+       (---truthy? (lsp--client-remote? client)))
+
+   ;; activation function or major-mode match.
+   (if-let ((activation-fn (lsp--client-activation-fn client)))
+       (funcall activation-fn (buffer-file-name) major-mode)
+     (-contains? (lsp--client-major-modes client) major-mode))
+
+   ;; check whether it is enabled if `lsp-enabled-clients' is not null
+   (or (null lsp-enabled-clients)
+       (or (member (lsp--client-server-id client) lsp-enabled-clients)
+           (ignore (lsp--info "Client %s is not in lsp-enabled-clients"
+                              (lsp--client-server-id client)))))
+
+   ;; check whether it is not disabled.
+   (not (lsp--client-disabled-p major-mode (lsp--client-server-id client)))))
+
 (defun lsp-ui-pen-diagnostics ()
   "Show diagnostics belonging to the current line.
 Loop over flycheck errors with `flycheck-overlay-errors-in'.

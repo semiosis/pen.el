@@ -36,13 +36,19 @@
             (iedit-mode))
         (iedit-mode)))))
 
-;; This inverts the prefix arg
-(defun iedit-mode-around-advice (proc &rest args)
+;; This inverts the prefix.
+;; It's a bit different from the one on my host machine.
+;; Something is different in Pen emacs
+(defun iedit-mode-around-advice (proc &optional arg)
   (cond
-   ((equal current-prefix-arg (list 4)) (setq current-prefix-arg nil))
+   ((equal current-prefix-arg (list 4)) (setq current-prefix-arg (list 0)))
    ((not current-prefix-arg) (setq current-prefix-arg (list 4))))
 
-  (let ((res (apply proc args)))
+  ;; This is not propagating current-prefix-arg
+
+  (setq arg (or arg current-prefix-arg))
+
+  (let ((res (apply proc (list arg))))
     res))
 (advice-add 'iedit-mode :around #'iedit-mode-around-advice)
 

@@ -873,4 +873,6 @@
        (define-key pen-map (kbd "M-m H C") (dff (hsqf "hcqf")))
        (define-key pen-map (kbd "M-m H h") #'hsqf))))
 
+(define-key global-map (kbd "C-c h I") 'package-install)
+
 (provide 'pen-example-config)

@@ -96,6 +96,4 @@
 ;;                    "DEFAULT")
 ;;      (pen-auto-load-packages)))
 
-(define-key global-map (kbd "C-c h I") 'package-install)
-
 (provide 'pen-packages)
