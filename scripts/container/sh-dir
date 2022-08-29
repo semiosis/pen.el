@@ -83,7 +83,7 @@ w  /var/www
 t  $DUMP/torrents
 l  $HOME/local/bin
 # L  $NOTES/ws/glossaries
-L  $HOME/glossaries
+L  $HOME/.pen/glossaries
 J  $NOTES/ws/rules-of-thumb
 P  $NOTES/ws/playgrounds
 T  new temp git folder
@@ -159,7 +159,7 @@ case "$d" in
     t) cmd="CWD=$DUMP/torrents zsh" ;;
     l) cmd="zcd $HOME/local/bin" ;;
     # L) cmd="zcd $NOTES/ws/glossaries" ;;
-    L) cmd="zcd $HOME/glossaries" ;;
+    L) cmd="zcd $HOME/.pen/glossaries" ;;
     J) cmd="CWD=$NOTES/ws/rules-of-thumb zsh" ;;
     P) cmd="CWD=$NOTES/ws/playgrounds zsh" ;;
     T) cmd="new-temp-folder -g" ;;

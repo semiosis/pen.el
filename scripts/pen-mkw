@@ -1,0 +1,172 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+no_checks=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -sn) {
+        scriptname="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -f) {
+        no_checks=y
+        shift
+    }
+    ;;
+
+    -gy) {
+        make_gy=y
+        shift
+    }
+    ;;
+
+    -apt) {
+        make_apt=y
+        shift
+    }
+    ;;
+
+    -npm) {
+        make_npm=y
+        shift
+    }
+    ;;
+
+    -pip) {
+        make_pip=y
+        shift
+    }
+    ;;
+
+    -cargo) {
+        make_cargo=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# # This is also needed so it can be found
+if test "$make_npm" = "y"; then
+    : "${NODE_VERSION:="$(oci pen-rc .node_version)"}"
+    . $HOME/sh-source/nvm-node
+    nvm use "$NODE_VERSION" 1>&2 || nvm install "$NODE_VERSION" 1>&2
+fi
+
+# Or path to binary
+fp="$1"
+
+if test -f "$fp"; then
+    fp="$(realpath "$fp")"
+fi
+
+bn="$(basename "$fp")"
+: "${scriptname:="$(basename "$fp")"}"
+dn="$(dirname "$fp")"
+
+if test -n "$dn" && ! test "$dn" = . && ! pl "$dn" | grep -q -P "^$SCRIPTS"; then
+    fp="$fp"
+else
+    fp="$(which "$scriptname" | pen-mnm)"
+fi
+
+! test "$no_checks" = y && ! which "$bn" &>/dev/null && { echo "'$bn'" does not exist. Aborted. 2>/dev/null; exit 1; }
+test -f "$SCRIPTS/$scriptname" && {
+    v "$SCRIPTS/$scriptname"
+    exit "$?"
+    # exit 1
+}
+
+cd $SCRIPTS
+
+IFS= read -r -d '' wrapcode <<'HEREDOC'
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+HEREDOC
+
+printf -- "%s\n" "$wrapcode" > ./$scriptname
+
+# ----
+
+if test "$make_npm" = "y"; then
+
+IFS= read -r -d '' npmcode <<HEREDOC
+sn="\$(basename "\$0")"
+: "\${NODE_VERSION:="\$(oci pen-rc .node_version)"}"
+. \$HOME/sh-source/nvm-node
+nvm use "\$NODE_VERSION" 1>&2 || nvm install "\$NODE_VERSION" 1>&2
+which "\$sn" | grep -q ".nvm/" || npm install -g "\$sn"
+HEREDOC
+
+    printf -- "%s\n" "$npmcode" | pen-mnm >> ./$scriptname
+fi
+
+# ----
+
+if printf -- "%s\n" "$fp" | grep -q -P '/\.cargo/'; then
+    make_cargo=y
+fi
+
+if test "$make_cargo" = "y"; then
+IFS= read -r -d '' CGCODE <<HEREDOC
+test -f $HOME/.cargo/bin/$bn || cargo install "$bn" &>/dev/null
+HEREDOC
+
+    printf -- "%s\n" "$CGCODE" | pen-mnm >> ./$scriptname
+fi
+
+# ----
+
+if test "$make_pip" = "y"; then
+IFS= read -r -d '' PIPCODE <<HEREDOC
+test -f "$fp" || pyf "$bn" &>/dev/null
+HEREDOC
+
+    printf -- "%s\n" "$PIPCODE" | pen-mnm >> ./$scriptname
+fi
+
+# ----
+
+if test "$make_apt" = "y"; then
+IFS= read -r -d '' CGCODE <<HEREDOC
+test -f "$fp" || agi "$bn" &>/dev/null
+HEREDOC
+
+    printf -- "%s\n" "$CGCODE" | pen-mnm >> ./$scriptname
+fi
+
+# printf -- "%s\n" "$fp \"\$@\" | pa -vs" | pen-mnm >> "./$scriptname"
+
+# ----
+
+if test "$make_npm" = "y"; then
+    printf -- "%s\n" "$bn \"\$@\"" >> "./$scriptname"
+else
+    if test "$make_gy" = "y"; then
+        printf -- "%s\n" "CMD=\"\$(cmd \"\$@\")\"" | pen-mnm >> "./$scriptname"
+        printf -- "%s\n" ": \${CMD:=\"\$(cmd \"\$@\")\"}" | pen-mnm >> "./$scriptname"
+        printf -- "%s\n" "gy -E $(aqf-nice "$fp \$CMD | pen-pavs")" | pen-mnm >> "./$scriptname"
+    else
+        printf -- "%s\n" "$fp \"\$@\"" | pen-mnm >> "./$scriptname"
+    fi
+fi
+
+chmod a+x "./$scriptname"
+
+is_tty() {
+    [[ -t 1 ]]
+}
+
+if is_tty; then
+    v +G +A "./$scriptname"
+else
+    printf -- "%s\n" "$(realpath "./$scriptname")"
+fi
