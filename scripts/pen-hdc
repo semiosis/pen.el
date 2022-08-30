@@ -20,9 +20,9 @@ fi
 
 thing="$@"
 
-if ! test -f /tmp/hdc-less/hdc-less; then
+if ! test -f /tmp/hdc-less/less; then
     mkdir -p /tmp/hdc-less/
-    ln -s `which hdc-less` /tmp/hdc-less/less
+    ln -sf `which hdc-less` /tmp/hdc-less/less
 fi
 
 export PATH="/tmp/hdc-less/:$PATH"

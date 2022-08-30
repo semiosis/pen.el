@@ -178,9 +178,4 @@
   (interactive)
   (pen-find-thing 'pen-context-tuples))
 
-(define-key pen-map (kbd "H-TAB t") 'pen-suggest-funcs)
-(define-key pen-map (kbd "<H-tab> t") 'pen-suggest-funcs)
-(define-key pen-map (kbd "H-TAB T") 'pen-edit-context)
-(define-key pen-map (kbd "<H-tab> T") 'pen-edit-context)
-
 (provide 'pen-context)

@@ -3,6 +3,10 @@
 ;; This was interfering with completion
 (setq company-backends '())
 
+(define-key global-map (kbd "C-\\") nil)
+(define-key global-map (kbd "C-\\ '") 'git-d-unstaged)
+(define-key global-map (kbd "M-^") 'cd-vc-cd-top-level)
+
 ;; These bindings will allow you to use Space Cadet keyboard modifiers
 ;; https://mullikine.github.io/posts/add-super-and-hyper-to-terminal-emacs/
 ;; C-M-6 = Super (s-)
@@ -874,5 +878,11 @@
        (define-key pen-map (kbd "M-m H h") #'hsqf))))
 
 (define-key global-map (kbd "C-c h I") 'package-install)
+
+(ignore-errors
+  (define-key pen-map (kbd "H-TAB t") 'pen-suggest-funcs)
+  (define-key pen-map (kbd "<H-tab> t") 'pen-suggest-funcs)
+  (define-key pen-map (kbd "H-TAB T") 'pen-edit-context)
+  (define-key pen-map (kbd "<H-tab> T") 'pen-edit-context))
 
 (provide 'pen-example-config)

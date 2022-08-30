@@ -31,6 +31,7 @@
                           arglist))
                (argrepr (str (third sexp)))
                (argstr (s-substring "\\[\\(.*\\)\\]" argrepr)))
+          ;; (tv (str symstr))
           (if (re-match-p "^\\[.*\\]$" argrepr)
               (progn
                 (eval

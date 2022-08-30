@@ -692,7 +692,7 @@ We don't extract the string that `lps-line' is already displaying."
                                            :range (&Range :start (&Position :line start-line))) diag)
                              (formatted-message (or (if source? (format "%s: %s" source? message) message) "???"))
                              (severity (or severity? 1))
-                             (get-current-line-string (1+ start-line))
+                             (line (1+ start-line))
                              (face (cond ((= severity 1) 'error)
                                          ((= severity 2) 'warning)
                                          (t 'success)))

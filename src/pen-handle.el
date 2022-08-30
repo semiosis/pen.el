@@ -89,7 +89,8 @@
                  cider-find-var
                  xref-find-definitions-immediately
                  helm-gtags-dwim)
-        :errors '(pen-clojure-switch-to-errors)
+        :errors '(lsp-ui-flycheck-list
+                  pen-clojure-switch-to-errors)
         :docsearch '(pen-doc)
         :docfun '(pen-cider-docfun)
 

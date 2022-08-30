@@ -250,22 +250,23 @@ Be mindful of quoting arguments correctly."
 (defvar pen-current-lighter " ⊚")
 (defun pen-compose-mode-line ()
   ;; Only change every second
-  (let* ((m (mod (second (org-time-since 0)) 10))
-         (newlighter
-          (cond
-           ((eq 0 m) " ☆")
-           ((eq 1 m) " ○")
-           ((eq 2 m) " ◎")
-           ((eq 3 m) " ⊙")
-           ((eq 4 m) " ⊚")
-           ((eq 5 m) " ◎")
-           ((eq 6 m) " ⊙")
-           ((eq 7 m) " ⊚")
-           ((eq 8 m) " ◎")
-           ((eq 9 m) " ○")
-           (t " ⊚"))))
-    (setq pen-current-lighter (concat newlighter " <" (pen-daemons-modeline) ">"))
-    pen-current-lighter))
+  (ignore-errors
+    (let* ((m (mod (second (org-time-since 0)) 10))
+           (newlighter
+            (cond
+             ((eq 0 m) " ☆")
+             ((eq 1 m) " ○")
+             ((eq 2 m) " ◎")
+             ((eq 3 m) " ⊙")
+             ((eq 4 m) " ⊚")
+             ((eq 5 m) " ◎")
+             ((eq 6 m) " ⊙")
+             ((eq 7 m) " ⊚")
+             ((eq 8 m) " ◎")
+             ((eq 9 m) " ○")
+             (t " ⊚"))))
+      (setq pen-current-lighter (concat newlighter " <" (pen-daemons-modeline) ">"))
+      pen-current-lighter)))
 
 (define-minor-mode pen
   "Mode for working with language models in your buffers."

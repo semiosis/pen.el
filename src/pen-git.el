@@ -64,8 +64,7 @@
   (interactive)
   (dired (get-top-level)))
 
-(define-key global-map (kbd "C-\\") nil)
-(define-key global-map (kbd "C-\\ '") 'git-d-unstaged)
-(define-key global-map (kbd "M-^") 'cd-vc-cd-top-level)
+(require 'git-gutter+)
+(advice-add 'git-gutter+-diff :around #'advise-to-shut-up)
 
 (provide 'pen-git)

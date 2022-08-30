@@ -188,6 +188,8 @@
       res)))
 (advice-add 'yas-reload-all :around #'advise-to-yes)
 
+(advice-add 'kill-buffer :around #'advise-to-yes)
+
 (defun cgify-around-advice (proc &rest args)
   (let ((inhibit-quit t))
     (unless (with-local-quit
