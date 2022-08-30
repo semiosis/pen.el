@@ -18,6 +18,7 @@ export LC_ALL=en_US.UTF-8
 
 export SCRIPTS=$HOME/scripts
 export SCRIPTS=/root/.emacs.d/host/pen.el/scripts
+export PEN=/root/.pen
 
 export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod

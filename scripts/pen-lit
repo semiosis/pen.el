@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# print literally
+
+# This could have been for perl-related stuff
+# So make a new perl-related install script
+
+NEWLINE=y
+SPACES=n
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -n) {
+        NEWLINE=n
+        shift
+    }
+    ;;
+
+    -s) {
+        SPACES=y
+        NEWLINE=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+
+if test "$NEWLINE" = "y"; then
+    printf -- "%s\n" "$@"
+else
+    if test "$SPACES" = "y"; then
+        printf -- "%s\n" "$@" | tr -s '\n' ' ' | sed 's/ $//'
+
+        # The purpose of this script is to print its arguments
+        # literally, not to generate an argument list
+        # printf -- "%s\n" "$@" | qargs
+    else
+        printf -- "%s" "$@"
+    fi
+fi

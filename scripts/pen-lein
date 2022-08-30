@@ -3,4 +3,9 @@ export TTY
 
 export OPENAI_API_KEY="$(cat ~/.pen/openai_api_key)"
 
+export HOME=/root
+export SCRIPTS=$HOME/scripts
+export SCRIPTS=/root/.emacs.d/host/pen.el/scripts
+export PEN=/root/.pen
+
 lein "$@"

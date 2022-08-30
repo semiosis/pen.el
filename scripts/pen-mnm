@@ -5,6 +5,8 @@ export TTY
 
 # . $HOME/.shell_environment
 # . $HOME/.shellrc
+export PEN=/root/.pen
+export PENCONF="$HOME/.pen"
 export DUMP="$HOME/dump"
 export REPOS="$HOME/repos"
 export NOTES="/root/notes"
@@ -12,7 +14,6 @@ export EMACSD="/root/.emacs.d"
 export GOPATH="$HOME/go"
 export GOBIN="$HOME/go/bin"
 export TMPDIR="/tmp"
-export PENCONF="$HOME/.pen"
 export GLOSSARIES="$PENCONF/glossaries"
 export PENELD="$EMACSD/pen.el"
 export PEN_SCRIPTS="$PENELD/scripts"
@@ -35,6 +36,7 @@ unminimise() {
                  -e "s#\$PENELD#${PENELD}#g" \
                  -e "s#\$MYGIT#${MYGIT}#g" \
                  -e "s#\$PENCONF#${PENCONF}#g" \
+                 -e "s#\$PEN#${PEN}#g" \
                  -e "s#\$GLOSSARIES#${GLOSSARIES}#g" \
                  -e "s#\${GOPATH%%:\*}#${GOPATH%%:\*}#g" \
                  -e "s#\$PEN_SCRIPTS#${PEN_SCRIPTS}#g" \
@@ -49,6 +51,7 @@ minimise() {
                  -e "s#${PENELD}#\$PENELD#g" \
                  -e "s#${MYGIT}#\$MYGIT#g" \
                  -e "s#${PENCONF}#\$PENCONF#g" \
+                 -e "s#${PEN}#\$PEN#g" \
                  -e "s#${GLOSSARIES}#\$GLOSSARIES#g" \
                  -e "s#^/home/[a-zA-Z]\+#$HOME#g" \
                  -e "s#^/root#$HOME#g" \
