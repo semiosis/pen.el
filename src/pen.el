@@ -164,7 +164,6 @@
 (require 'pen-advice)
 (require 'pen-flyspell)
 (require 'pen-github)
-(require 'pen-context)
 (require 'pen-hl)
 (require 'pen-hooks)
 (require 'pen-major-mode)
@@ -194,6 +193,7 @@ Be mindful of quoting arguments correctly."
 
 (require 'pen-sh)
 (require 'pen-library)
+(require 'pen-context)
 (require 'pen-hist)
 (require 'pen-utils)
 (if (inside-docker-p)
