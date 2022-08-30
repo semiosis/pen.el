@@ -346,6 +346,9 @@ With argument N not nil or 1, move forward N - 1 lines first."
     (org-table-export newfile "orgtbl-to-tsv")
     (pen-sps (concat "fpvd " (pen-q newfile)))))
 
+(advice-add 'kill-buffer :around #'advise-to-yes)
+;; (advice-add 'fpvd-org-table-export :around #'advise-to-yes)
+
 (defun efpvd-org-table-export ()
   (interactive)
   (let ((newfile (org-babel-temp-file "org-table" ".tsv")))

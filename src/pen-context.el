@@ -66,14 +66,14 @@
         (((or (derived-mode-p 'org-mode)
               (derived-mode-p 'text-mode)
               (derived-mode-p 'markdown-mode))
-          (rpl-at-line-p "net.email"))
+          (pen-rpl-at-line-p "net.email"))
          (copy-email-here))
         (((or (string-match "streamr" (buffer-string))
               (string-match "DATA" (buffer-string))
               (string-match "DATAcoin" (buffer-string))))
          ;; writing 'list' is needed because an invocation is required, not a symbol
          ,(list (dff (chrome "https://www.binance.com/en/trade/DATA_ETH"))))
-        (((buffer-cron-lines))
+        (((pen-buffer-cron-lines))
          (crontab-guru))
         (((org-at-table-p))
          (fpvd-org-table-export

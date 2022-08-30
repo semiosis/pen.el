@@ -5,8 +5,9 @@
   "Formats the json."
   (pen-sn "python -m json.tool" stdin))
 
-(defun true ()
+(defun true (&rest args)
   t)
+(defalias 'always-true 'true)
 
 (defun true-p (e)
   (if e t))

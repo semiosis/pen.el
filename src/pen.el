@@ -162,6 +162,8 @@
 (require 'pen-projectile)
 (require 'pen-magit)
 (require 'pen-advice)
+(require 'pen-flyspell)
+(require 'pen-github)
 (require 'pen-context)
 (require 'pen-hl)
 (require 'pen-hooks)

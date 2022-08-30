@@ -42,11 +42,13 @@
 (defun iedit-mode-around-advice (proc &optional arg)
   (cond
    ((equal current-prefix-arg (list 4)) (setq current-prefix-arg (list 0)))
-   ((not current-prefix-arg) (setq current-prefix-arg (list 4))))
+   ;; ((not current-prefix-arg) (setq current-prefix-arg (list 4)))
+   )
 
   ;; This is not propagating current-prefix-arg
 
   (setq arg (or arg current-prefix-arg))
+  ;; (tv (str arg))
 
   (let ((res (apply proc (list arg))))
     res))
