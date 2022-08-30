@@ -2,6 +2,7 @@
 (pen-require 'pen-selected)
 
 (require 'evil-surround)
+(global-evil-surround-mode 1)
 (require 'auto-highlight-symbol)
 
 (defun pen-copy-line (&optional arg)

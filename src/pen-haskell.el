@@ -449,4 +449,33 @@
 (define-key haskell-mode-map (kbd "RET") 'haskell-indentation-newline-and-indent)
 ;; haskell-indentation-mode-map was overriding pen-map
 
+;; Disable switch-to-buffer
+(require 'dante)
+(defun dante-show-process-problem (process change)
+  "Report to the user that PROCESS reported CHANGE, causing it to end."
+  (message "Problem with GHCi process!")
+  ;; (switch-to-buffer (process-buffer process))
+  (goto-char (point-max))
+  (insert "\n---\n\n")
+  (insert
+   (propertize
+    (concat "This is the buffer associated with the GHCi session. This buffer
+is normally hidden, but the GHCi process ended.
+
+WHAT TO DO NEXT
+
+Verify that the GHCi REPL can be loaded manually, then try to
+customize (probably file-locally or directory-locally)
+`dante-project-root' and/or `dante-repl-command-line'.  If you
+fixed the problem, just kill this buffer, Dante will make a fresh
+one and attempt to restart GHCi automatically.
+If you leave this buffer around Dante will not attempt to restart
+GHCi.  You can always run `dante-restart' to make it try again.
+
+EXTRA TROUBLESHOOTING INFO
+
+Process state change: " change "
+" (dante-debug-info (current-buffer)))
+    'face 'compilation-error)))
+
 (provide 'pen-haskell)
