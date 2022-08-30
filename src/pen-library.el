@@ -467,17 +467,6 @@ semantic-path means a path suitable for google/nl searching"
                  s)))
     (pen-replace-region fixed)))
 
-(defmacro dff (&rest body)
-  "This defines a 0 arity function with name based on the contents of the function.
-It should only really be used to create names for one-liners.
-It's really meant for key bindings and which-key, so they should all be interactive."
-  (let* ((slugsym (intern
-                   (s-replace-regexp
-                    "^-" "dff-"
-                    (slugify
-                     (pp body) t)))))
-    `(defun ,slugsym () (interactive) ,@body)))
-
 (defun pen-start-gui ()
   (interactive)
   (if (pen-has-gui-p)

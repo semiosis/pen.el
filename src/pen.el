@@ -29,6 +29,17 @@
 (require 'cl-macs)
 (require 'pp)
 
+(defmacro dff (&rest body)
+  "This defines a 0 arity function with name based on the contents of the function.
+It should only really be used to create names for one-liners.
+It's really meant for key bindings and which-key, so they should all be interactive."
+  (let* ((slugsym (intern
+                   (s-replace-regexp
+                    "^-" "dff-"
+                    (slugify
+                     (pp body) t)))))
+    `(defun ,slugsym () (interactive) ,@body)))
+
 ;; elpa
 ;; For string-empty-p
 (require 'subr-x)
