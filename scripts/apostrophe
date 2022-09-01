@@ -117,7 +117,7 @@ if stdin_exists; then
     context="$(cat)"
 fi
 
-if test -n "$context"
+if test -n "$context"; then
     # Rather than specifying directly to the prompt function,
     # this value is taken up and remembered for future prompting within the apostrophe
     pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (apostrophe-start-chatbot-from-selection $(cmd-nice-posix "$context")))(delete-other-windows)))"
