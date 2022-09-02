@@ -942,5 +942,5 @@ done
 mkdir -p $HOME/.config
 (
 cd $HOME/.config
-git clone "http://github.com/mullikine/.ptpython"
+git clone "http://github.com/mullikine/.ptpython" ptpython
 )
