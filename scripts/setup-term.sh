@@ -67,3 +67,6 @@ if printf -- "%s\n" "$candidate_shell" | grep -q -P '(bash|zsh|sh|fish)'; then
     # echo "$SHELL" >> /tmp/shells2.txt
     export SHELL
 fi
+
+# shanepy
+export PYTHONPATH="$PYTHONPATH:$(glob "/root/pen_python_modules/*" | tr '\n' : | sed 's/:$//')"

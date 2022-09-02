@@ -922,3 +922,25 @@ make altinstall
 pip3.8 install --force-reinstall ipython
 pip3.8 install --force-reinstall aleph-alpha-client
 
+
+pip3.8 install bpython
+pip3 install bpython
+
+(
+cd
+git clone "http://github.com/mullikine/shanepy"
+)
+
+export PYTHONPATH="$PYTHONPATH:$(glob "/root/pen_python_modules/*" | tr '\n' : | sed 's/:$//')"
+
+# For shanepy
+for i in jsonpickle config ptpython pyyaml; do
+    pip3 install "$i"
+    pip3.8 install "$i"
+done
+
+mkdir -p $HOME/.config
+(
+cd $HOME/.config
+git clone "http://github.com/mullikine/.ptpython"
+)

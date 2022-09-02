@@ -21,7 +21,9 @@ fi
 td_thing="$(mktemp -t -d td_thingXXXXXX || echo /dev/null)"
 cd "$td_thing"
 
-if ! test -f "$rp" && printf -- "%s\n" "$rp" | grep -q -P '^https?://'; then
+if test -f "$rp"; then
+    cp -a "$rp" old
+elif ! test -f "$rp" && printf -- "%s\n" "$rp" | grep -q -P '^https?://'; then
     wget "$rp" -O old
 fi
 
