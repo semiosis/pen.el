@@ -934,7 +934,7 @@ git clone "http://github.com/mullikine/shanepy"
 export PYTHONPATH="$PYTHONPATH:$(glob "/root/pen_python_modules/*" | tr '\n' : | sed 's/:$//')"
 
 # For shanepy
-for i in jsonpickle config ptpython pyyaml; do
+for i in jsonpickle ptpython pyyaml; do
     pip3 install "$i"
     pip3.8 install "$i"
 done
