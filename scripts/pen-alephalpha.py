@@ -32,7 +32,12 @@ PEN_API_ENDPOINT = os.environ.get("PEN_API_ENDPOINT") or "https://api.aleph-alph
 PEN_MODE = os.environ.get("PEN_MODE")
 PEN_TRAILING_WHITESPACE = os.environ.get("PEN_TRAILING_WHITESPACE")
 
-from aleph_alpha_client import ImagePrompt, AlephAlphaClient
+from aleph_alpha_client import ImagePrompt, AlephAlphaModel, AlephAlphaClient, CompletionRequest, Prompt
+
+model = AlephAlphaModel(
+    AlephAlphaClient(host="https://api.aleph-alpha.com", token=ALEPHALPHA_API_KEY),
+    model_name = PEN_MODEL
+)
 
 client = AlephAlphaClient(
     host=PEN_API_ENDPOINT,
@@ -51,8 +56,8 @@ if type(PEN_PAYLOADS) == dict:
         elif key == "image" and Path(value).exists():
             payloads.append(ImagePrompt.from_file(Path(value)))
 
-from shanepy import *
-myembed(globals(), locals())
+# from shanepy import *
+# myembed(globals(), locals())
 
 if payloads is not None and not payloads == []:
     payloads.append(PEN_PROMPT)

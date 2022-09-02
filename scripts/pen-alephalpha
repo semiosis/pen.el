@@ -37,7 +37,11 @@ sedstop="$(printf -- "%s" "$PEN_STOP_SEQUENCE" | sed -z 's/\\/\\\\/g')"
 
 # pen-alephalpha.py "$@" | sed -z "s~${PEN_STOP_SEQUENCE}.*~~"
 
-{
-# printf -- "%s" "$PEN_PROMPT"
-pen-alephalpha.py "$@" | pen-log alephalpha-temp | sed -z "s~${sedstop}$~~"
-} | pen-log alephalpha
+if test "$LM_COMPLETE_DEBUG" = "y"; then
+    pen-alephalpha.py "$@"
+else
+    {
+    # printf -- "%s" "$PEN_PROMPT"
+    pen-alephalpha.py "$@" | pen-log alephalpha-temp | sed -z "s~${sedstop}$~~"
+    } | pen-log alephalpha
+fi

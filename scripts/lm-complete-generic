@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -xv
+
 # Example of usage:
 # export OPENAI_API_KEY
 # export PEN_ environment variables

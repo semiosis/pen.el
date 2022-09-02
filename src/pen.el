@@ -2146,6 +2146,7 @@ May use to generate code from comments."
 (require 'pen-looking-glass)
 (require 'pen-buffer-state)
 (require 'pen-apostrophe)
+(require 'pen-python)
 (require 'pen-melee)
 (require 'pen-channel)
 (require 'pen-scratch)
