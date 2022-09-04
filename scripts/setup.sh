@@ -944,3 +944,9 @@ mkdir -p $HOME/.config
 cd $HOME/.config
 git clone "http://github.com/mullikine/.ptpython" ptpython
 )
+
+mkdir -p /root/.pen/documents/notes/ws/python
+(
+cd /root/.pen/documents/notes/ws/python
+ln -sf /root/pen_python_modules/shanepy
+)

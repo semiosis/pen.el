@@ -56,8 +56,8 @@ if type(PEN_PAYLOADS) == dict:
         elif key == "image" and Path(value).exists():
             payloads.append(ImagePrompt.from_file(Path(value)))
 
-# from shanepy import *
-# myembed(globals(), locals())
+from shanepy import *
+myembed(globals(), locals())
 
 if payloads is not None and not payloads == []:
     payloads.append(PEN_PROMPT)

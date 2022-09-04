@@ -13,7 +13,18 @@
         (custom-imenu (imenu--generic-function imenu-generic-expression)))
     (append mode-imenu custom-imenu)))
 
-(add-hook 'python-mode-hook
+(never
+ (add-hook 'python-mode-hook
+           (lambda ()
+             (add-to-list
+              'imenu-generic-expression
+              ;; menu title, regex, index
+              ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Imenu.html
+              '("Sections" "^#### \\[ \\(.*\\) \\]$" 1))
+             (imenu-add-to-menubar "Position")
+             (setq imenu-create-index-function 'pen-merge-imenu))))
+
+(remove-hook 'python-mode-hook
           (lambda ()
             (add-to-list
              'imenu-generic-expression
