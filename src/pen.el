@@ -161,6 +161,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-net)
 (require 'pen-server-suggest)
 (require 'pen-vim)
+(require 'pen-insert-shebang)
 (require 'pen-nlsh)
 (require 'pen-continuum)
 (require 'pen-ranger)

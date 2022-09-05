@@ -216,9 +216,10 @@
         :refactor '()
         :debug '()
         :docfun '()
-        :docs '(pen-docs-for-thing-given-screen)
+        :docs '(pen-lsp-docs-for-thing-maybe
+                pen-docs-for-thing-given-screen)
         :docsearch '()
-        :godef '()
+        :godef '(lsp-find-definition)
         :showuml '()
         :nextdef '()
         :prevdef '()
