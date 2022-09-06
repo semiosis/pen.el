@@ -226,7 +226,9 @@ if test -z "$fp"; then
     trycr bootstrap
     trycr appveyor.yml
     trycr CMakeLists.txt # Keep this before Makefile
+    USE_DIR=y trycr .env
     USE_DIR=y trycr venv
+    USE_DIR=y trycr .venv
     # Makefile.PL must come before Makefile
     trycr Makefile.PL
     trycr Makefile
@@ -454,12 +456,28 @@ make() {
     command make "$@"
 }
 
+python() {
+    python3.7 "$@"
+}
+
 case "$fnspec" in
     .compton.conf) {
         killall compton
         set -m
         compton & disown
         pen-tm n "Compton restarted"
+        exit 0
+    }
+    ;;
+
+    .env) {
+        pen-x -sh bash -s '. .env/bin/activate' -c m -i
+        exit 0
+    }
+    ;;
+
+    .venv) {
+        pen-x -sh bash -s '. .venv/bin/activate' -c m -i
         exit 0
     }
     ;;
@@ -810,7 +828,7 @@ case "$fnspec" in
             pwd
 
             # test -d venvdir || python3.6 -m venv venvdir
-            test -d .env || python3.6 -m venv .env
+            test -d .env || python -m venv .env
 
             # pen-x -shE ""
 
@@ -822,7 +840,7 @@ case "$fnspec" in
             # which -a pip
             # which -a python
 
-            mmypip install -r "$fn"
+            pip install -r "$fn"
 
             pen-x -sh bash -s '. .env/bin/activate' -c m -i
         else
@@ -836,7 +854,7 @@ case "$fnspec" in
             # mpip3.6 install -r "$fn"
 
             export PYTHONPATH=.
-            mmypip install -r "$fn"
+            pip install -r "$fn"
 
             # mpip3.5 install -r "$fn"
             # mpip3.6 install -r "$fn"

@@ -137,6 +137,7 @@
             ("*Apropos*" :ignore nil :select t :same t)
             ("*prodigy*" :select t :same t)
             ("*lsp-diagnostics*" :select t :same t)
+            ("*lsp-help*" :select t :same nil)
             ;; ("*Shell Command Output*" :select nil)
             ("*Shell Command Output*" :ignore t :select nil :same nil)
             ("\\*Async Shell.*" :regexp t :ignore t)

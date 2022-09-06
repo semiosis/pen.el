@@ -216,7 +216,9 @@
         :refactor '()
         :debug '()
         :docfun '()
-        :docs '(pen-lsp-docs-for-thing-maybe
+        :docs '(pen-esp-docs-for-thing-if-prefix
+                pen-doc-override
+                lsp-describe-thing-at-point
                 pen-docs-for-thing-given-screen)
         :docsearch '()
         :godef '(lsp-find-definition)
@@ -256,7 +258,8 @@
         :complete '()
         :rc '())
 
-(defun pen-lsp-docs-for-thing-maybe ()
+(defun pen-esp-docs-for-thing-if-prefix ()
+  "This does `pen-docs-for-thing-given-screen` if prefix is set."
   (interactive)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (let ((current-prefix-arg nil))
@@ -269,7 +272,7 @@
         :projectfile '(pen-haskell-project-file)
         :repls '(dante-repl
                  haskell-repl)
-        :docs '(pen-lsp-docs-for-thing-maybe
+        :docs '(pen-esp-docs-for-thing-if-prefix
                 haskell-hdc-thing
                 hoogle
                 pen-docs-for-thing-given-screen)

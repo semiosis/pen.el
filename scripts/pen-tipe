@@ -63,6 +63,9 @@ export PEN_EIPE_DATA
 
 if test "$#" = 1 && test -n "$1"; then
     EDITOR="$1"
+elif test "$#" -gt 1 && test -n "$1"; then
+    CMD="$(cmd "$@")"
+    EDITOR="$CMD"
 fi
 
 if test "$USE_EMACS" = "y"; then

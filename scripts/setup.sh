@@ -950,3 +950,7 @@ mkdir -p /root/.pen/documents/notes/ws/python
 cd /root/.pen/documents/notes/ws/python
 ln -sf /root/pen_python_modules/shanepy
 )
+
+apt-get install python3-venv
+pip3 install --upgrade --force-reinstall virtualenv
+pip3.8 install --upgrade --force-reinstall virtualenv
