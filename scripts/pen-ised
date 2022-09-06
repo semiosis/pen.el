@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+ff_stdin="$1"
+ff_stdout="$2"
+
+: "${ff_stdin:="/dev/stdin"}"
+: "${ff_stdout:="/dev/stdout"}"
+
+code=0
+nextlinecode=0
+# When ^D is used, read ends up with the exit code "1"
+while ! test "$code" -eq 1 &&  ! test "$nextlinecode" -eq 1; do
+    IFS=$'\n' read -r line <"$ff_stdin" 
+    nextlinecode="$?"
+
+    <&2 read -e -p ":" -i "$line" query
+
+    # printf -- "%s\\n" "$line"
+    # read -ep "$prompt_message: " query
+
+    code="$?"
+
+    # printf -- "%s" "$query" > "$ff_stdout"
+    printf -- "%s\\n" "$query" >> "$ff_stdout"
+done
