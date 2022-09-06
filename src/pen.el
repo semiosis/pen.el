@@ -218,6 +218,7 @@ Be mindful of quoting arguments correctly."
     (require 'pen-cua))
 (require 'pen-tramp)
 (require 'pen-gpg)
+(require 'pen-eldoc)
 (require 'pen-text-coding-system)
 (require 'pen-editing)
 (require 'pen-hippie-expand)

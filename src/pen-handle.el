@@ -172,8 +172,8 @@
                       ;; lsp-find-references
                       pen-counsel-ag-thing-at-point)
         :docsearch '(pen-doc-ask)
-        :godef '(racket-visit-definition
-                 lsp-find-definition
+        :godef '(lsp-find-definition
+                 racket-visit-definition
                  xref-find-definitions-immediately
                  helm-gtags-dwim)
         :docsearch '(pen-doc)
