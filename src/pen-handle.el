@@ -166,8 +166,11 @@
         ;; This is for running the program
         :run '(pen-racket-run-main)
         :formatters '(lsp-format-buffer)
-        :docs '(pen-doc-override
-                pen-doc-thing-at-point)
+        :docs '(pen-esp-docs-for-thing-if-prefix
+                pen-doc-override
+                lsp-describe-thing-at-point
+                pen-doc-thing-at-point
+                pen-docs-for-thing-given-screen)
         :references '(lsp-ui-peek-find-references
                       ;; lsp-find-references
                       pen-counsel-ag-thing-at-point)
