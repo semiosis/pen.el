@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+key="$1"
+key="$(p "$key" | sed 's/^\.//')"
+jkey=".$key"
+
+# value="$2"
+
+if pen-rc-test "$key"; then
+    pen-rc-set "$key" off
+    exit 1
+else
+    pen-rc-set "$key" on
+    exit 0
+fi
+
+# test -n "$key" && test "$(pen-rc "$key")" = true

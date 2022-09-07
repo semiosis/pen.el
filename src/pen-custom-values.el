@@ -123,7 +123,7 @@
  '(psc-ide-add-import-on-completion t t)
  '(psc-ide-rebuild-on-save nil t)
  '(session-use-package t nil (session))
- '(sh-update nil)
+ '(pen-sh-update nil)
  '(tetris-buffer-height 27)
  '(tetris-buffer-width 30)
  '(tetris-height 25)

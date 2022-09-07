@@ -164,6 +164,7 @@ care."
                                         ;; It would probably be better to alert and ignore
                                         (try (remhash args ,table)
                                              ;; (message ,(concat "timer for memoized " funcslug " failed"))
+                                             t
                                              )))
                          ,timeouts)))))))))
 

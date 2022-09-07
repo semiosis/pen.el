@@ -722,8 +722,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                (pen-var-value-maybe 'pen-sh-update)
                (>= (prefix-numeric-value current-global-prefix-arg) 16))
               (or
-               (and (variable-p 'sh-update)
-                    (eval 'sh-update))
+               (and (variable-p 'pen-sh-update)
+                    (eval 'pen-sh-update))
                (>= (prefix-numeric-value current-prefix-arg) 16)))
           (setq shell-cmd (concat "export UPDATE=y; " shell-cmd)))
 
@@ -740,7 +740,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                              (list "PEN_DAEMON" (sor (daemonp) "default"))
                              (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
                              (if (or (pen-var-value-maybe 'pen-sh-update)
-                                     (pen-var-value-maybe 'sh-update))
+                                     (pen-var-value-maybe 'pen-sh-update))
                                  (list "UPDATE" "y"))
                              (if (or (pen-var-value-maybe 'pen-force-engine))
                                  (list "PEN_ENGINE" (pen-var-value-maybe 'pen-force-engine)))
@@ -1664,6 +1664,8 @@ when s is a string, set the clipboard to s"
             ("$PENEL_DIR" (f-join user-emacs-directory "pen.el"))
             ("$PEN" penconfdir)
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
+            ("$SCRIPTS" (f-join user-emacs-directory "pen.el/scripts"))
+            ("$MYGIT" "/volumes/home/shane/var/smulliga/source/git")
             ("$HOME" user-home-directory)
             ;; ("^//" "/")
             ;; It must start with something. I still need the replace

@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+# since this may be called from the system, from tabnine,
+# redirect to firefox
+
+url="$1"
+
+case "$url" in
+    *app.tabnine.com*) {
+        unbuffer firefox "$@" &>/dev/null &
+        disown
+        exit 0
+    }
+    ;;
+
+    *)
+esac
+
+# Not handled
+exit 1

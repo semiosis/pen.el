@@ -593,7 +593,7 @@ Return t, if point is now in a visible area."
 
 (defun pen-start-tablist ()
   (interactive)
-  (let* ((sh-update (>= (prefix-numeric-value current-global-prefix-arg) 16))
+  (let* ((pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 16))
          (tlname (fz (mapcar 'car pen-tablist-mode-tuples) nil nil "start tablist: "))
          (args
           (if (sor tlname)

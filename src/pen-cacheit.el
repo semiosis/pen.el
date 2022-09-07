@@ -11,7 +11,7 @@
          (b_update
           (or
            (pen-var-value-maybe 'pen-sh-update)
-           (pen-var-value-maybe 'sh-update)
+           (pen-var-value-maybe 'pen-sh-update)
            b_update
            (>= (prefix-numeric-value current-prefix-arg) 4)))
          (fp (f-join pen-ci-cache-dir (slugify name))))

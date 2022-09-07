@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+: "${BROWSER:="sps-lg"}"
+
+# If handled with something else, abort browser
+pen-handle-url "$@" && exit "$?"
+
+"$BROWSER" "$@"

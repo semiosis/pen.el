@@ -648,7 +648,7 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
            (with-current-buffer
                (find-file path)
              (goto-char pos)
-             ;; (eval '(generate-glossary-buttons-over-buffer nil nil t))
+             ;; (eval '(pen-generate-glossary-buttons-over-buffer nil nil t))
 
              ;; This is actually necessary
              ;; (eval '(redraw-glossary-buttons-when-window-scrolls-or-file-is-opened))

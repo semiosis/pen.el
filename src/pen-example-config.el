@@ -885,4 +885,6 @@
   (define-key pen-map (kbd "H-TAB T") 'pen-edit-context)
   (define-key pen-map (kbd "<H-tab> T") 'pen-edit-context))
 
+(global-company-mode 1)
+
 (provide 'pen-example-config)

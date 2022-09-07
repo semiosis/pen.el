@@ -129,4 +129,8 @@
 (defun list2vec (l)
   (apply 'vector l))
 
+(defun pen-apropos-function (pattern)
+  (-filter 'functionp
+           (apropos-internal pattern)))
+
 (provide 'pen-utils)

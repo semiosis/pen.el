@@ -680,7 +680,7 @@ Use my position list code. Make it use rosie lang and external software."
           (let ((glossary-files
                  (pen-mu '("$NOTES/ws/english/words.txt")))
                 (glossary-error-files nil))
-            (mylog (pen-draw-glossary-buttons-and-maybe-recalculate beg end))))))))
+            (penlog (pen-draw-glossary-buttons-and-maybe-recalculate beg end))))))))
 
 (defun pen-generate-glossary-buttons-over-buffer-around-advice (proc &rest args)
   (let ((res (apply proc args)))

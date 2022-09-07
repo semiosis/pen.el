@@ -67,8 +67,8 @@
 
       (let ((default-directory dir))
         (if (or
-             (and (variable-p 'sh-update)
-                  (eval 'sh-update))
+             (and (variable-p 'pen-sh-update)
+                  (eval 'pen-sh-update))
              (>= (prefix-numeric-value current-prefix-arg) 16))
             (setq cmd (concat "export UPDATE=y; " cmd)))
 

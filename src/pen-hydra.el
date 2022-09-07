@@ -337,7 +337,7 @@ display values."
                          "NORMAL: emacs"
                          ("e" (df efs () (pen-sn (concat "sed -i 's/\\s\\+$//' " (pen-q buffer-file-name)))) "erase free/end whitespace")
                          ("m" #'record-keyboard-macro-string "yank keys")
-                         (">" (dff (e "~/.myrc.yaml")) "myrc")
+                         (">" (dff (e "/root/.pen/pen.yaml")) "pen-rc")
                          ("M" #'copy-keybinding-as-table-row-or-macro-string "yank key binding as table row")
                          ("b" #'copy-keybinding-as-elisp "yank key binding as elisp")
                          ("n" #'yank-function-from-binding "yank function")

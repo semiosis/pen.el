@@ -206,8 +206,8 @@ START and END can be in either order."
       (if (display-graphic-p)
           (pen-e-nw-zsh cmd window-type)
         (progn
-          (if (and (variable-p 'sh-update)
-                   (eval 'sh-update))
+          (if (and (variable-p 'pen-sh-update)
+                   (eval 'pen-sh-update))
               (setq cmd (concat "upd " cmd)))
           (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te " window-type " " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))
                 (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q (or dir (get-dir))) " " (pen-q cmd))))

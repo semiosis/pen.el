@@ -683,7 +683,7 @@ suggest-full-list will ask if you want to add the entire list as subtopics to th
                   ;; The prompt does "- " removal on its own now
                   ;; (setq subtopic-candidates
                   ;;       (pen-str2list
-                  ;;        (cl-sn
+                  ;;        (pen-cl-sn
                   ;;         "sed 's/^- //'"
                   ;;         :stdin
                   ;;         (chomp

@@ -954,3 +954,7 @@ ln -sf /root/pen_python_modules/shanepy
 apt-get install python3-venv
 pip3 install --upgrade --force-reinstall virtualenv
 pip3.8 install --upgrade --force-reinstall virtualenv
+
+# For gtags
+agi global
+  

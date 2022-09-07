@@ -237,7 +237,10 @@ Be mindful of quoting arguments correctly."
       (require 'pen-hydra)
       (require 'pen-prog)
       (require 'pen-paste)
-      (require 'pen-only)))
+      (require 'pen-only)
+      (require 'pen-toggle-scripts)
+      (require 'pen-buttoncloud)
+      (require 'pen-log)))
 
 (require 'pen-post-bindings)
 
@@ -1440,6 +1443,7 @@ But use the results-analyser."
         (delete-region (- (point) (length company-prefix)) (point))
         (pen-insert (ink-propertise candidate))))))
 
+(require 'memoize)
 (defun pen-company-filetype--candidates (prefix)
   (let* ((preceding-text (pen-preceding-text))
          (response
@@ -1447,23 +1451,23 @@ But use the results-analyser."
            ((>= (prefix-numeric-value current-prefix-arg) 64)
             (pen-words-complete-nongreedy
              (-->
-                 preceding-text
-               (pen-complete-function it :no-select-result t))))
+              preceding-text
+              (pen-complete-function it :no-select-result t))))
            ((>= (prefix-numeric-value current-prefix-arg) 16)
             (pen-word-complete-nongreedy
              (-->
-                 preceding-text
-               (pen-complete-function it :no-select-result t))))
+              preceding-text
+              (pen-complete-function it :no-select-result t))))
            ((>= (prefix-numeric-value current-prefix-arg) 4)
             (pen-long-complete-nongreedy
              (-->
-                 preceding-text
-               (pen-complete-function it :no-select-result t))))
+              preceding-text
+              (pen-complete-function it :no-select-result t))))
            (t
             (pen-line-complete-nongreedy
              (-->
-                 preceding-text
-               (pen-complete-function it :no-select-result t))))))
+              preceding-text
+              (pen-complete-function it :no-select-result t))))))
          (res
           response))
 
@@ -1471,6 +1475,7 @@ But use the results-analyser."
               (concat (pen-company-filetype--prefix)
                       s))
             res)))
+(memoize 'pen-company-filetype--candidates)
 
 (defun pen-completion-at-point ()
   (interactive)

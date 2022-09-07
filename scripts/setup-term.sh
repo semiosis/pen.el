@@ -37,7 +37,8 @@ fi
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
 export EDITOR=sps-w-pin
-export BROWSER=sps-lg
+# export BROWSER=sps-lg
+export BROWSER=browser
 # export PAGER="sps -maybe v"
 export PAGER="pen-tpager"
 

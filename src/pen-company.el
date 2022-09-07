@@ -1,3 +1,6 @@
+(require 'handle)
+(require 'company-try-hard)
+
 (defun pen-company-grab-symbol ()
   (buffer-substring (point) (save-excursion (skip-syntax-backward "w_.")
                                             (point))))
@@ -13,10 +16,35 @@
   (if (not company-mode)
       (company-mode 1))
 
+  (never (let ((results
+                (cl-case command
+                  (is-interactive (company-begin-backend 'pen-company-filetype))
+                  (prefix (pen-company-filetype--prefix))
+                  (candidates (pen-company-filetype--candidates arg)))))
+           ;; Can't use be user-error. Must be error, to be handled
+           (if results
+               results
+             (error "Cannot complete at point"))))
+
   (cl-case command
-    (is-interactive (company-begin-backend 'pen-company-filetype))
-    (prefix (pen-company-filetype--prefix))
-    (candidates (pen-company-filetype--candidates arg))))
+           (is-interactive (company-begin-backend 'pen-company-filetype))
+           (prefix (pen-company-filetype--prefix))
+           (candidates (pen-company-filetype--candidates arg))))
+
+(defun pen-company-filetype-if-prefix (command &optional arg &rest ignored)
+  (interactive (list 'is-interactive))
+
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (let ((current-prefix-arg nil))
+        (progn
+          (if (not company-mode)
+              (company-mode 1))
+
+          (cl-case command
+            (is-interactive (company-begin-backend 'pen-company-filetype))
+            (prefix (pen-company-filetype--prefix))
+            (candidates (pen-company-filetype--candidates arg)))))
+    (error "Fallthrough")))
 
 (defun pen-company-filetype-line (command &optional arg &rest ignored)
   (interactive (list 'is-interactive))
@@ -43,13 +71,23 @@
     ;; pf-generic-completion-200-tokens-max/1
     ;; pf-generic-completion-50-tokens/1
     ;; pf-shell-bash-terminal-command-completion/1
-    pen-company-filetype
+    pen-company-filetype-if-prefix
     company-complete
-    company-tabnine
+    ;; company-tabnine
     company-yasnippet
     company-lsp
     ;; pen-complete-long
-    company-org-block))
+    company-org-block
+    company-dabbrev
+    
+    ;; This is self-referential
+    ;; pen-company-filetype
+    ))
+
+
+(define-key company-active-map (kbd "C-z") #'company-try-hard)
+
+(setq company-backends pen-company-all-backends)
 
 (defset pen-company-selected-backends '(pen-company-filetype))
 
@@ -57,10 +95,18 @@
 (defun pen-company-complete ()
   (interactive)
 
-  (let ((company-backends pen-company-selected-backends))
+  ;; pen-
+  (let ((company-backends pen-company-all-backends))
     (if (equal (length company-backends) 1)
         (message (str (car company-backends))))
-    (call-interactively 'company-complete)))
+
+    ;; Try each one until failure, like handle
+    ;; Use j:handle--command-execute
+    ;; (call-interactively 'company-complete)
+    ;; (handle--command-execute (append company-backends (list 'hippie-expand)) current-prefix-arg)
+    (handle--command-execute company-backends current-prefix-arg)
+    ;; (handle--command-execute (list 'hippie-expand) current-prefix-arg)
+    ))
 
 (defun pen-company-complete-choose ()
   (interactive)
