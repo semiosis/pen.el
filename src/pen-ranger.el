@@ -279,6 +279,17 @@ is set, show literally instead of actual buffer."
 (define-key global-map (kbd "M-R") 'ranger)
 (define-key global-map (kbd "M-E") 'ranger)
 
+(defun ranger-disable ()
+  "Interactively disable ranger-mode."
+  (interactive)
+  ;; don't kill ranger buffer if open somewhere else
+  (if (> (length (get-buffer-window-list)) 1)
+      ;; There was a bug in ranger
+      (progn
+        (delete-window)
+        (delete-window ranger-preview-window))
+    (ranger-revert)))
+
 ;; Setting window-dedicated solves the ranger crashes
 ;; when running term, switching buffers etc.
 (defun ranger-sub-window-setup ()
