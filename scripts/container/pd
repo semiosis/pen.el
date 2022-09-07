@@ -4,12 +4,14 @@ export TTY
 num="$1"
 shift
 
-test -n "$num" || exit 1
+: "${SOCKET:="DEFAULT"}"
 
-if printf -- "%s\n" "$num" | grep -q -P '^pen-emacsd-'; then
-    SOCKET="$num"
-else
-    SOCKET="pen-emacsd-$num"
+if test -n "$num"; then
+    if printf -- "%s\n" "$num" | grep -q -P '^pen-emacsd-'; then
+        SOCKET="$num"
+    else
+        SOCKET="pen-emacsd-$num"
+    fi
 fi
 
 pen-e -D "$SOCKET" "$@"
