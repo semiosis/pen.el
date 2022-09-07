@@ -290,6 +290,58 @@ is set, show literally instead of actual buffer."
         (delete-window ranger-preview-window))
     (ranger-revert)))
 
+;; Sadly, still, ranger crashes, even after adding
+;; (set-window-dedicated-p window t)
+(defun ranger-setup-parents ()
+  "Setup all parent directories."
+  (let ((parent-name (ranger-parent-directory default-directory))
+        (current-name (expand-file-name default-directory))
+        (i 0)
+        (unused-windows ()))
+
+    (setq ranger-buffer (current-buffer))
+
+    (setq ranger-window (get-buffer-window (current-buffer)))
+
+    (setq ranger-visited-buffers (append ranger-parent-buffers ranger-visited-buffers))
+
+    (setq ranger-parent-buffers ())
+    (setq ranger-parent-windows ())
+    (setq ranger-parent-dirs ())
+
+    (unless (r--fget ranger-minimal)
+      (while (and parent-name
+                  (file-directory-p parent-name)
+                  (< i ranger-parent-depth))
+        (setq i (+ i 1))
+        (unless (string-equal current-name parent-name)
+          ;; (walk-window-tree
+          ;;  (lambda (window)
+          ;;    (when (eq (window-parameter window 'window-slot) (- 0 i))
+          ;;      (setq unused-window window)
+          ;;      ))
+          ;;  nil nil 'nomini)
+          (progn
+            (add-to-list 'ranger-parent-dirs (cons (cons current-name parent-name) i))
+            (setq current-name (ranger-parent-directory current-name))
+            (setq parent-name (ranger-parent-directory parent-name)))))
+      (mapc 'ranger-make-parent ranger-parent-dirs)
+
+      ;; select child folder in each parent
+      (save-excursion
+        (walk-window-tree
+         (lambda (window)
+           (progn
+             (when (member window ranger-parent-windows)
+               (with-selected-window window
+                 (set-window-dedicated-p window t)
+                 (ranger-parent-child-select)
+                 (ranger-hide-the-cursor)))))
+         nil nil 'nomini))
+
+      ;; (select-window ranger-window)
+      )))
+
 ;; Setting window-dedicated solves the ranger crashes
 ;; when running term, switching buffers etc.
 (defun ranger-sub-window-setup ()
@@ -301,6 +353,75 @@ is set, show literally instead of actual buffer."
   ;; set header-line
   (when ranger-modify-header
     (setq header-line-format `(:eval (,ranger-header-func)))))
+
+;; I had to add set-window-dedicated-p to this as well
+;; Actually, the preview window screws up when going from file to directory
+;; while dedicated is set
+(comment
+ (defun ranger-setup-preview ()
+   "Setup ranger preview window."
+   (let* ((entry-name (dired-get-filename nil t))
+          (window-configuration-change-hook nil)
+          (original-buffer-list (buffer-list))
+          (inhibit-modification-hooks t)
+          (fsize
+           (nth 7 (file-attributes entry-name))))
+     (when ranger-cleanup-eagerly
+       (mapc 'ranger-kill-buffer
+             (remove (current-buffer) ranger-preview-buffers))
+       (setq ranger-preview-buffers (delq nil ranger-preview-buffers)))
+     (when (and (not (r--fget ranger-minimal))
+                entry-name
+                ranger-preview-file)
+       (unless (or
+                (> fsize (* 1024 1024 ranger-max-preview-size))
+                (member (file-name-extension entry-name)
+                        ranger-excluded-extensions))
+         (with-demoted-errors "%S"
+           (let* ((dir (file-directory-p entry-name))
+                  (dired-listing-switches ranger-listing-switches)
+                  (preview-buffer (if dir
+                                      (ranger-dir-buffer entry-name t)
+                                    ;; (ranger-dir-contents entry-name)
+                                    (ranger-preview-buffer entry-name)))
+                  ;; check for existance of *ranger-prev* buffer
+                  (preview-window (and (window-live-p ranger-preview-window)
+                                       (eq (selected-frame) (window-frame ranger-preview-window))
+                                       ranger-preview-window))
+                  )
+             (if preview-window
+                 (with-selected-window preview-window
+                   ;; (set-window-dedicated-p (selected-window) t)
+                   (switch-to-buffer preview-buffer))
+               (unless (and (not dir) ranger-dont-show-binary (ranger--prev-binary-p))
+                 (setq preview-window
+                       (display-buffer
+                        preview-buffer
+                        `(ranger-display-buffer-at-side . ((side . right)
+                                                           (slot . 1)
+                                                           (inhibit-same-window . t)
+                                                           (window-width . ,(- ranger-width-preview
+                                                                               (min
+                                                                                (- ranger-max-parent-width
+                                                                                   ranger-width-parents)
+                                                                                (* (- ranger-parent-depth 1)
+                                                                                   ranger-width-parents))))))))))
+             (with-current-buffer preview-buffer
+               (setq-local cursor-type nil)
+               (setq-local mouse-1-click-follows-link nil)
+               (local-set-key (kbd  "<mouse-1>") #'(lambda ()
+                                                     (interactive)
+                                                     (select-window ranger-window)
+                                                     (call-interactively
+                                                      'ranger-find-file)))
+               (when ranger-modify-header
+                 (setq header-line-format `(:eval (,ranger-header-func))))
+               (ranger-hide-the-cursor))
+             (when (not (memq preview-buffer original-buffer-list))
+               (add-to-list 'ranger-preview-buffers preview-buffer))
+             (setq ranger-preview-window preview-window)
+             ;; (ranger-hide-details)
+             (ranger-hide-details))))))))
 
 ;; Tabs have been a problem
 (defun ranger-make-tab (index name path)

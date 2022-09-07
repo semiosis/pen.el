@@ -2,6 +2,12 @@
 export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -ff) {
+        CMD_EXPRESSION="q -f"
+        shift
+    }
+    ;;
+
     -f) {
         CMD_EXPRESSION="$2"
         shift
