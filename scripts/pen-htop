@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+last_arg="${@: -1}"
+
+if test "$#" -gt 0 && ! [[ "$last_arg" == -* ]]; then
+    #query="$last_arg"
+    #test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+
+    query="$*"
+    shift "$#"
+fi
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+test -f /usr/local/bin/htop && : "${bin:="/usr/local/bin/htop"}"
+test -f /usr/bin/htop && : "${bin:="/usr/bin/htop"}"
+
+if test -n "$query"; then
+    # x -sh "/usr/bin/htop $CMD" -f4 -s "$query" -c m -i
+    x -sh "$bin $CMD" -f4 -s "$query" -c m -i
+else
+    # /usr/bin/htop "$@"
+    $bin "$@"
+fi

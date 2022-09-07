@@ -13,6 +13,8 @@
                   "a cat playing checkers"))))
 
 
-(etv (ilist 10 "art style"
-            ;; examples
-            "surrealist"))
+(etv
+ (pen-update
+  (ilist 10 "art style"
+         ;; examples
+         "surrealist")))

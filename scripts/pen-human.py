@@ -56,7 +56,9 @@ def b(c, inputstring="", timeout=0):
         executable="/bin/sh",
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
+        stderr=subprocess.PIPE,
+        # This would result in collecting stderr too
+        # stderr=subprocess.STDOUT,
         close_fds=True,
     )
     p.stdin.write(str(inputstring).encode("utf-8"))
