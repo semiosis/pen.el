@@ -58,7 +58,8 @@
             ;; (mapcar (lambda (func) (concat "func " (sym2str func))) toggle-functions)
             (mapcar (lambda (c) (concat "cmd " (sym2str c))) toggle-commands)
             (mapcar (lambda (sym) (concat "var " (sym2str sym))) toggle-values)
-            (mapcar (lambda (mode) (concat "mode " (sym2str mode))) toggle-modes))))
+            (mapcar (lambda (mode) (concat "mode " (sym2str mode))) toggle-modes))
+           nil nil "fz-toggle: "))
          (spl (s-split " " sel))
          (type (car spl))
          (name (nth 1 spl)))
@@ -232,7 +233,7 @@
 ;; (define-key global-map (kbd "M-l M-t") nil)
 ;; (define-key global-map (kbd "M-m M-t") nil)
 (define-key global-map (kbd "M-c") 'toggle-buttoncloud)
-(define-key pen-map (kbd "M-c") 'toggle-buttoncloud)
+(define-key pen-map (kbd "M-c") nil)
 (define-key global-map (kbd "H-_") 'toggle-script)
 
 (defun toggle-imenu ()

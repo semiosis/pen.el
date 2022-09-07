@@ -987,6 +987,7 @@ non-nil."
    ;; ivy uses minibuffer-inactive-mode. Though I should still test for ivy
    ((string= (current-major-mode) "minibuffer-inactive-mode") (call-interactively 'ivy-previous-line-or-history))
    ;; ((string= (current-major-mode) "helm-mode") (call-interactively 'previous-line))
+   ((string= (current-major-mode) "selectrum-mode") (call-interactively 'selectrum-previous-candidate))
    ((string= (current-major-mode) "org-mode") (call-interactively 'org-backward-heading-same-level))
    ((string= (current-major-mode) "epa-key-list-mode") (call-interactively 'widget-backward))
    ((string= (current-major-mode) "circe-query-mode") (call-interactively 'lui-previous-input))
@@ -1054,6 +1055,7 @@ non-nil."
    ;; ivy uses minibuffer-inactive-mode. Though I should still test for ivy
    ((string= (current-major-mode) "minibuffer-inactive-mode") (call-interactively 'ivy-next-line-or-history))
    ((string= (current-major-mode) "helm-mode") (call-interactively 'next-line))
+   ((string= (current-major-mode) "selectrum-mode") (call-interactively 'selectrum-next-candidate))
    ((string= (current-major-mode) "org-mode") (call-interactively 'org-forward-heading-same-level))
    ((string= (current-major-mode) "epa-key-list-mode") (call-interactively 'widget-forward))
    ((string= (current-major-mode) "lsp-browser-mode") (call-interactively 'widget-forward))
