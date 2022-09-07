@@ -87,6 +87,7 @@
             ;; ("\\*Puppet Lint:.*" :regexp t :ignore nil :select t :same t)
             ("*Occur*" :ignore nil :select t :same t)
             ("*Phases of Moon*" :ignore nil :select t :same t)
+            ("*button cloud*" :ignore nil :select t :same nil)
             (inf-ruby-mode :ignore nil :select t :same t)
             (apu-mode :ignore nil :select t :same t)
             (geiser-repl-mode :ignore nil :select t :same t)
