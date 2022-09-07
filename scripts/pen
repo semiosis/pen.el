@@ -337,6 +337,15 @@ case "$sn" in
     }
     ;;
 
+    pend) {
+        sn=pen
+        PEN_USE_GUI=y
+        no=y
+        PEN_USE_REMOTE_PATH=y
+        export PEN_N_DAEMONS=2
+    }
+    ;;
+
     ptm) {
         sn=pen
         start_shell=y
