@@ -1,5 +1,6 @@
 (require 'flymake-racket)
 (require 'racket-mode)
+;; (require 'racket-repl-buffer-name)
 
 (defun racket--do-visit-def-or-mod (pen-cmd sym)
   "CMD must be \"def\" or \"mod\". SYM must be `symbolp`."
@@ -119,8 +120,15 @@
 
 (defun pen-racket-run (&optional noselect)
   (interactive "P")
-  (racket-call-racket-repl-buffer-name-function)
-  (cl-flet
+  ;; (call-interactively 'racket-run)
+  ;; (racket--repl-run (list (racket--buffer-file-name))
+  ;;                   racket-submodules-to-run
+  ;;                   (pcase prefix
+  ;;                     (`(4)  'high)
+  ;;                     (`(16) 'debug)
+  ;;                     (_     racket-error-context)))
+  ;; (racket-call-racket-repl-buffer-name-function)
+  (cl-labels
       ((display-and-maybe-select
         ()
         (display-buffer racket-repl-buffer-name)
@@ -128,12 +136,11 @@
           (select-window (get-buffer-window racket-repl-buffer-name t)))))
     (if (racket--repl-live-p)
         (display-and-maybe-select)
-      (racket-run)
-      ;; (racket--repl-start
-      ;;  (lambda ()
-      ;;    (racket--repl-refresh-namespace-symbols)
-      ;;    (display-and-maybe-select)))
-      )))
+      (progn (call-interactively 'racket-run)
+             (comment (racket--repl-start
+                       (lambda ()
+                         (racket--repl-refresh-namespace-symbols)
+                         (display-and-maybe-select))))))))
 
 (define-key racket-mode-map (kbd "M-w") #'pen-racket-expand-macro-or-copy)
 (define-key racket-mode-map (kbd "M-w") 'racket-expand-at-point)

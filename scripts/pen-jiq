@@ -60,6 +60,7 @@ else
         if test -f "$CMD"; then
             CMD="cat $(cmd "$CMD")"
         fi
-        pen-rtcmd ++jq -E "$CMD | jq \".\" | pen-v"
+        # Use '' rather than "" so I can copy from zh
+        pen-rtcmd ++jq -E "$CMD | jq '.' | pen-v"
     fi
 fi

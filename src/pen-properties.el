@@ -79,14 +79,14 @@
   (interactive)
   (pen-cl-tvipe (pen-json-encode-alist
           `(("emacs-properties" ,(emacs-properties))
-            ("pen-buffer-properties " ,(pen-buffer-properties)))) :tm_wincmd "sph" :b-nowait t :b-quiet t))
+            ("pen-buffer-properties" ,(pen-buffer-properties)))) :tm_wincmd "sph" :b-nowait t :b-quiet t))
 
 (defun pen-etv-properties-json ()
   "Gets some properties of the current emacs buffer in json format and puts it into tmux."
   (interactive)
   (new-buffer-from-string (pen-json-encode-alist
                            `(("emacs-properties" ,(emacs-properties))
-                             ("pen-buffer-properties " ,(pen-buffer-properties))))
+                             ("pen-buffer-properties" ,(pen-buffer-properties))))
                           nil 'json-mode))
 
 (defun pen-tvipe-emacs-properties-json ()
