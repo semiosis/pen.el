@@ -18,6 +18,10 @@
   (interactive)
   (dired pen-imonad-directory))
 
+(defun pen-dired-src ()
+  (interactive)
+  (dired pen-imonad-directory))
+
 (defun pen-dired-channel ()
   (interactive)
   (dired pen-channel-directory))
