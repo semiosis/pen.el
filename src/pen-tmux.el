@@ -193,24 +193,28 @@ START and END can be in either order."
               (setq dir cand-dir)
             (setq dir "/")))))
 
+  (if (not dir)
+      (setq dir (get-dir)))
+
   (if (not cmd)
       (setq cmd "zsh"))
   (if (not (sor window-type))
       (setq window-type "nw"))
   (if output_b
       (if input
-          (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -sout -S " window-type " " nw_args " " (pen-q cmd) " | cat") input (or dir (get-dir)))
-        (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -sout -S " window-type " " nw_args " " (pen-q cmd) " &") input (or dir (get-dir))))
+          (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -sout -S " window-type " " nw_args " " (pen-q cmd) " | cat") input dir)
+        (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -sout -S " window-type " " nw_args " " (pen-q cmd) " &") input dir))
     (if input
-        (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -tout -S " window-type " " nw_args " " (pen-q cmd)) input (or dir (get-dir)))
+        (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -tout -S " window-type " " nw_args " " (pen-q cmd)) input dir)
       (if (display-graphic-p)
-          (pen-e-nw-zsh cmd window-type)
+          ;; (pen-e-nw-zsh cmd window-type (xtv dir))
+          (pen-e-nw-zsh cmd window-type dir)
         (progn
           (if (and (variable-p 'pen-sh-update)
                    (eval 'pen-sh-update))
               (setq cmd (concat "upd " cmd)))
-          (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te " window-type " " nw_args " -c " (pen-q (or dir (get-dir))) " " (pen-q cmd) " &"))
-                (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q (or dir (get-dir))) " " (pen-q cmd))))
+          (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te " window-type " " nw_args " -c " (pen-q dir) " " (pen-q cmd) " &"))
+                (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q dir) " " (pen-q cmd))))
             (if (>= (prefix-numeric-value current-prefix-arg) 4)
                 (pen-e-nw-zsh cmd-tm-here window-type)
               (pen-snc cmd-tm-split))))))))

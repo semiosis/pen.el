@@ -48,6 +48,7 @@ export PATH=$HOME/scripts:$HOME/scripts/container:$PATH
 
 CWD="$(printf -- "%s" "$CWD" | sed "s=^~=$HOME=")"
 if test -n "$CWD" && test -d "$CWD"; then
+    printf -- "%s\n" "export CWD=$(cmd-nice "$CWD")" | awk 1 >> "$tf_new_script"
     cmd cd "$CWD" | awk 1 >> "$tf_new_script"
 fi
 

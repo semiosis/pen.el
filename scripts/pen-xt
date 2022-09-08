@@ -4,6 +4,22 @@
 
 exec 2>/dev/null
 
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+fi
+
+exec <&1
+
 : "${DISPLAY:=":0"}"
 export DISPLAY
 
@@ -86,6 +102,10 @@ fi
 
 if [ -z "$CMD" ]; then
     CMD=bash
+fi
+
+if test -n "$input_fp"; then
+    CMD="cat $(cmd-nice-posix "$input_fp") | $CMD"
 fi
 
 if test "$HIDDEN" = "y"; then

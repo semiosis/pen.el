@@ -182,6 +182,26 @@ argument, prompt for a regular expression using `read-regexp'."
     (set-face-background 'header-line "#101010")
     ;; (set-face-background 'header-line "#202020")
 
+    (require 'markdown-mode)
+    (set-face-attribute 'markdown-header-face nil :height 'unspecified)
+    ;; (face-attribute 'markdown-header-face-1 :height)
+    ;; (face-attribute 'lsp-headerline-breadcrumb-path-error-face :height)
+    (set-face-attribute 'markdown-header-face-1 nil :height 'unspecified)
+    (set-face-attribute 'markdown-header-face-2 nil :height 'unspecified)
+    (set-face-attribute 'markdown-header-face-3 nil :height 'unspecified)
+    (set-face-attribute 'markdown-header-face-4 nil :height 'unspecified)
+    (set-face-attribute 'markdown-header-face-5 nil :height 'unspecified)
+    (set-face-attribute 'markdown-header-face-6 nil :height 'unspecified)
+    ;; (face-all-attributes 'markdown-header-face)
+    ;; (face-all-attributes 'markdown-header-face-1)
+    markdown-header-face
+    markdown-header-face-1
+    markdown-header-face-2
+    markdown-header-face-3
+    markdown-header-face-4
+    markdown-header-face-5
+    markdown-header-face-6
+
     (require 'lsp-headerline)
     (set-face-background 'lsp-headerline-breadcrumb-path-error-face nil)
     (set-face-foreground 'lsp-headerline-breadcrumb-path-error-face "#662222")

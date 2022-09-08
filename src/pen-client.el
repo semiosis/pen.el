@@ -413,14 +413,20 @@ This function doesn't really like it when you put 'sp' as the editor."
 (cl-defun pen-cl-tv (&optional stdin &key editor &key tm_wincmd &key dir)
   "Setting b-wait to -1 disables waiting."
   (interactive)
-  (if stdin
-      (progn
-        (if (not (stringp stdin))
-            (setq stdin (pp-to-string stdin)))
-        (pen-sh/tvipe stdin editor tm_wincmd nil t t dir))
-    (message "tv: no input"))
+  (if (display-graphic-p)
+      (etv stdin)
+      ;; (xtv stdin)
+      (if stdin
+          (progn
+            (if (not (stringp stdin))
+                (setq stdin (pp-to-string stdin)))
+            (pen-sh/tvipe stdin editor tm_wincmd nil t t dir))
+        (message "tv: no input")))
   stdin)
 (defalias 'pen-tv 'pen-cl-tv)
+
+(defun xtv (stdin)
+  (pen-sn "xt v" stdin nil nil t))
 
 (cl-defun pen-cl-tvipe (&optional stdin &key editor &key tm_wincmd &key b-quiet &key b-nowait &key dir)
   "Setting b-wait to -1 disables waiting."
