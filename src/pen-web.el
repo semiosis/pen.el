@@ -1,4 +1,5 @@
 (defun pen-has-gui-p ()
+  "True if X server connected."
   (pen-snq "pen-has-gui-p"))
 
 (defun pen-start-gui-web-browser ()

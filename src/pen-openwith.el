@@ -21,7 +21,10 @@
   (setq command (concat
                  "sh -c \""
                  (concat
-                  "export PEN_GUI=y; "
+                  "export PEN_GUI=" (if (display-graphic-p)
+                                        "y"
+                                      "n")
+                  "; "
                   command
                   " \\\"\\$@\\\"\"")
                  " --"))

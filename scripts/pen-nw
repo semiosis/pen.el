@@ -59,7 +59,7 @@ esac; done
 
 export TARGET
 
-is_tty() { [ -t 1 ]; }
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 if test "$maybe" = "y" && is_tty; then
     "$@"
@@ -74,11 +74,6 @@ stdin_exists() {
         ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
     # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
     # So test to make sure 0 does not point to 1
-}
-
-is_tty() {
-    # If stout is a tty
-    [[ -t 1 ]]
 }
 
 pp="$(ps -o comm= $PPID)"

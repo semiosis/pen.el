@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-is_tty() { [ -t 1 ]; }
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 trap '' HUP
 
