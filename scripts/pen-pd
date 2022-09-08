@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+num="$1"
+shift
+
+: "${SOCKET:="DEFAULT"}"
+
+if test -n "$num"; then
+    if printf -- "%s\n" "$num" | grep -q -P '^pen-emacsd-'; then
+        SOCKET="$num"
+    else
+        SOCKET="pen-emacsd-$num"
+    fi
+fi
+
+pen-e -D "$SOCKET" "$@"
