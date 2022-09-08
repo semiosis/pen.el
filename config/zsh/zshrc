@@ -424,6 +424,14 @@ bindkey -e '\e[1;3Q' vi-yank-x-selection
 
 zmodload -i zsh/parameter
 
+zsh-open-main() {
+    eopen-main "$(pwd)"
+}
+zle -N zsh-open-main
+# H-o
+bindkey "^[^\\\o" zsh-open-main
+
+
 copy-last-command-output() {
     pen-zl copy-last-output &>/dev/null
 }
