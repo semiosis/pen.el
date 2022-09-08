@@ -77,7 +77,11 @@
 (defset Custom-mode-funcs (list
                            'configure-chrome-permissions))
 
-(defset racket-mode-funcs (list ))
+(defset racket-mode-funcs (list
+                           (df drracket
+                               (pen-sn
+                                (cmd "drracket" (get-path nil t))
+                                nil nil nil t))))
 (defset org-mode-funcs ;; (list 'org-latex-export-to-pdf 'tvipe-org-table-export)
   (list
    'org-ascii-convert-region-to-utf8
