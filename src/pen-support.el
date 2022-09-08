@@ -228,6 +228,19 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   (and (not (eq s nil))
        (boundp s)))
 
+(defun calling-function ()
+  "Gets the name of the function you are inside. Does not work for byte-compiled."
+  (let ((n 6) ;; nestings in this function + 1 to get out of it
+        func
+        bt)
+    (while (and (setq bt (backtrace-frame n))
+                (not func))
+      (setq n (1+ n)
+            func (and bt
+                      (nth 0 bt)
+                      (nth 1 bt))))
+    func))
+
 ;; For docker
 (if (not (variable-p 'user-home-directory))
     (defvar user-home-directory nil))

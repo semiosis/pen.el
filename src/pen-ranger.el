@@ -442,15 +442,32 @@ is set, show literally instead of actual buffer."
 
 (require 'shackle)
 
-;; nadvice - proc is the original function, passed in. do not modify
+;; OK, for starters, the current buffer is the "*Help*" buffer.
+;; So, rather, I should be interested int he current window
 (defun disable-if-ranger-around-advice (proc &rest args)
   (unless (major-mode-p 'ranger-mode)
-    (let ((res (apply proc args)))
-      res)))
-(advice-add 'shackle--display-buffer :around #'disable-if-ranger-around-advice)
-(advice-add 'shackle--display-buffer-same :around #'disable-if-ranger-around-advice)
-(advice-add 'shackle--display-buffer-reuse :around #'disable-if-ranger-around-advice)
+    ;; (tv (concat (str (selected-window))
+    ;;             " " (str proc)))
+
+    ;; This prevents ranger from crashing emacs
+    ;; When applied to shackle--window-display-buffer
+    (never
+     (let ((res (apply proc args)))
+       res))))
+
+;; (advice-add 'shackle-display-buffer :around #'disable-if-ranger-around-advice)
+;; (advice-add 'shackle--display-buffer :around #'disable-if-ranger-around-advice)
+;; (advice-add 'shackle--display-buffer-same :around #'disable-if-ranger-around-advice)
+;; (advice-add 'shackle--display-buffer-reuse :around #'disable-if-ranger-around-advice)
+;; (advice-remove 'shackle-display-buffer #'disable-if-ranger-around-advice)
+;; (advice-remove 'shackle--display-buffer #'disable-if-ranger-around-advice)
+;; (advice-remove 'shackle--display-buffer-same #'disable-if-ranger-around-advice)
+;; (advice-remove 'shackle--display-buffer-reuse #'disable-if-ranger-around-advice)
+
+;; Is this is the one that breaks it? Yes.
+;; It still appears.
 (advice-add 'shackle--window-display-buffer :around #'disable-if-ranger-around-advice)
+
 ;; (advice-remove 'shackle--display-buffer #'disable-if-ranger-around-advice)
 
 (provide 'pen-ranger)
