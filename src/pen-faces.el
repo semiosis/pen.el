@@ -1,6 +1,3 @@
-
-
-
 (require 'spacemacs-dark-theme)
 (load-theme 'spacemacs-dark t)
 
@@ -180,13 +177,6 @@ argument, prompt for a regular expression using `read-regexp'."
     (set-face-attribute 'markdown-header-face-6 nil :height 'unspecified)
     ;; (face-all-attributes 'markdown-header-face)
     ;; (face-all-attributes 'markdown-header-face-1)
-    markdown-header-face
-    markdown-header-face-1
-    markdown-header-face-2
-    markdown-header-face-3
-    markdown-header-face-4
-    markdown-header-face-5
-    markdown-header-face-6
 
     (require 'lsp-headerline)
     (set-face-background 'lsp-headerline-breadcrumb-path-error-face nil)
@@ -421,6 +411,5 @@ argument, prompt for a regular expression using `read-regexp'."
 ;; (pen-set-text-contrast-from-config)
 
 (define-key pen-map (kbd "M-l M-q M-f") 'pen-customize-face)
-
 
 (provide 'pen-faces)
