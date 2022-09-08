@@ -3,6 +3,8 @@
 ;; This was interfering with completion
 (setq company-backends '())
 
+(global-unset-key (kbd "C-z"))
+
 (define-key global-map (kbd "C-\\") nil)
 (define-key global-map (kbd "C-\\ '") 'git-d-unstaged)
 (define-key global-map (kbd "M-^") 'cd-vc-cd-top-level)

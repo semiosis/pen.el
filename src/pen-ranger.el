@@ -440,4 +440,17 @@ is set, show literally instead of actual buffer."
   (setq ranger-undo-tab nil)
   (ranger-close))
 
+(require 'shackle)
+
+;; nadvice - proc is the original function, passed in. do not modify
+(defun disable-if-ranger-around-advice (proc &rest args)
+  (unless (major-mode-p 'ranger-mode)
+    (let ((res (apply proc args)))
+      res)))
+(advice-add 'shackle--display-buffer :around #'disable-if-ranger-around-advice)
+(advice-add 'shackle--display-buffer-same :around #'disable-if-ranger-around-advice)
+(advice-add 'shackle--display-buffer-reuse :around #'disable-if-ranger-around-advice)
+(advice-add 'shackle--window-display-buffer :around #'disable-if-ranger-around-advice)
+;; (advice-remove 'shackle--display-buffer #'disable-if-ranger-around-advice)
+
 (provide 'pen-ranger)

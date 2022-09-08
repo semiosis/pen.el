@@ -72,7 +72,7 @@
     ;; pf-generic-completion-50-tokens/1
     ;; pf-shell-bash-terminal-command-completion/1
     pen-company-filetype-if-prefix
-    company-complete
+    ;; company-complete
     ;; company-tabnine
     company-yasnippet
     company-lsp
@@ -84,9 +84,6 @@
     ;; pen-company-filetype
     ))
 
-
-(define-key company-active-map (kbd "C-z") #'company-try-hard)
-
 (setq company-backends pen-company-all-backends)
 
 (defset pen-company-selected-backends '(pen-company-filetype))
@@ -95,18 +92,20 @@
 (defun pen-company-complete ()
   (interactive)
 
-  ;; pen-
-  (let ((company-backends pen-company-all-backends))
-    (if (equal (length company-backends) 1)
-        (message (str (car company-backends))))
+  (never (let ((company-backends pen-company-all-backends))
+           (if (equal (length company-backends) 1)
+               (message (str (car company-backends))))
 
-    ;; Try each one until failure, like handle
-    ;; Use j:handle--command-execute
-    ;; (call-interactively 'company-complete)
-    ;; (handle--command-execute (append company-backends (list 'hippie-expand)) current-prefix-arg)
-    (handle--command-execute company-backends current-prefix-arg)
-    ;; (handle--command-execute (list 'hippie-expand) current-prefix-arg)
-    ))
+           ;; Try each one until failure, like handle
+           ;; Use j:handle--command-execute
+           ;; (call-interactively 'company-complete)
+           ;; (handle--command-execute (append company-backends (list 'hippie-expand)) current-prefix-arg)
+           (handle--command-execute company-backends current-prefix-arg)
+           ;; (handle--command-execute (list 'hippie-expand) current-prefix-arg)
+           ))
+  (call-interactively 'company-try-hard))
+
+(define-key company-active-map (kbd "C-z") #'company-try-hard)
 
 (defun pen-company-complete-choose ()
   (interactive)
