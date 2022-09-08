@@ -44,6 +44,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-regex)
 (require 'pcre2el)
 (require 'pen-pcre)
+(require 'pen-custom)
 (require 'pen-support)
 
 (defmacro pen-require (library)
@@ -91,7 +92,6 @@ It's really meant for key bindings and which-key, so they should all be interact
 ;; (require 'pen-nlp)
 (require 'pen-which-key)
 (require 'pen-elisp)
-(require 'pen-custom)
 (require 'pen-custom-values)
 (require 'pen-configure)
 (pen-require 'pen-selected)
