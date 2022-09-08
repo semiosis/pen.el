@@ -1,6 +1,12 @@
 (require 'handle)
 (require 'company-try-hard)
 
+;; This is supposed to disable the automatic selection (and disappearance of completions list) of a completion candidate
+;; But it doesn't seem to have affected deep tabnine
+(setq company-auto-complete nil)
+(setq company-auto-complete-chars '())
+(setq company-minimum-prefix-length 0)
+
 (defun pen-company-grab-symbol ()
   (buffer-substring (point) (save-excursion (skip-syntax-backward "w_.")
                                             (point))))
@@ -108,7 +114,9 @@
            ))
   (call-interactively 'company-try-hard))
 
+(define-key global-map (kbd "C-z") #'company-try-hard)
 (define-key company-active-map (kbd "C-z") #'company-try-hard)
+(define-key company-active-map (kbd "C-f") #'company-complete-common)
 
 (defun pen-company-complete-choose ()
   (interactive)
