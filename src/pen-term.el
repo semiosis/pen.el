@@ -339,6 +339,13 @@ commands to use in that buffer.
   (ignore-errors
     (revert-buffer-no-confirm)))
 
+;; nadvice - proc is the original function, passed in. do not modify
+(defun if-ranger-close-around-advice (proc &rest args)
+  (if (major-mode-p 'ranger-mode)
+      (ranger-close)
+    (let ((res (apply proc args)))
+      res)))
+
 (defun pen-revert-kill-buffer-and-window ()
   (interactive)
   (if (major-mode-p 'term-mode)
@@ -352,12 +359,16 @@ commands to use in that buffer.
           (pen-kill-this-buffer-volatile)
         (pen-kill-buffer-and-window)))))
 
+(advice-add 'pen-revert-kill-buffer-and-window :around #'if-ranger-close-around-advice)
+
 (defun pen-save-and-kill-buffer-and-window ()
   (interactive)
   (ignore-errors
     (save-buffer)
     ;; (shut-up (annotate-save-annotations))
     (kill-buffer-and-window)))
+
+(advice-add 'pen-save-and-kill-buffer-and-window :around #'if-ranger-close-around-advice)
 
 (defun pen-save-and-kill-buffer-window-and-emacsclient ()
   (interactive)
@@ -366,6 +377,8 @@ commands to use in that buffer.
   (kill-buffer-and-window)
   (ignore-errors
     (delete-frame)))
+
+(advice-add 'pen-save-and-kill-buffer-window-and-emacsclient :around #'if-ranger-close-around-advice)
 
 (defun pen-revert-and-quit-emacsclient-without-killing-server ()
   "description string can flow to next line without continuation character"
