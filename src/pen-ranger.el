@@ -445,15 +445,29 @@ is set, show literally instead of actual buffer."
 ;; OK, for starters, the current buffer is the "*Help*" buffer.
 ;; So, rather, I should be interested int he current window
 (defun disable-if-ranger-around-advice (proc &rest args)
-  (unless (major-mode-p 'ranger-mode)
-    ;; (tv (concat (str (selected-window))
-    ;;             " " (str proc)))
+  (never (if (-contains? (r--akeys ranger-w-alist)
+                         (selected-window))
+             (tv (concat (str (selected-window))
+                         ":"
+                         (str (r--akeys ranger-w-alist))
+                         " " (str proc)))))
 
-    ;; This prevents ranger from crashing emacs
-    ;; When applied to shackle--window-display-buffer
-    (never
-     (let ((res (apply proc args)))
-       res))))
+
+
+  ;; This prevents ranger from crashing emacs
+  ;; When applied to shackle--window-display-buffer
+
+  ;; However, now shackle just doesn't select things like "*lsp-help*"
+  ;; So I need to finish this
+
+  ;; Maybe do a test to see if the window is in
+  ;; ranger's window set
+
+  ;; This works, but I also want to abort if it's on the parent directory
+  (if (not (-contains? (r--akeys ranger-w-alist)
+                       (selected-window)))
+      (let ((res (apply proc args)))
+        res)))
 
 ;; (advice-add 'shackle-display-buffer :around #'disable-if-ranger-around-advice)
 ;; (advice-add 'shackle--display-buffer :around #'disable-if-ranger-around-advice)
