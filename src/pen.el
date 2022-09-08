@@ -20,9 +20,6 @@
   "Interactive lambda with no arguments."
   `(lambda () (interactive) ,@body))
 
-(defun inside-docker-p ()
-  (pen-snq "inside-docker-p"))
-
 (setq disabled-command-function nil)
 
 ;; builtin
@@ -48,6 +45,9 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pcre2el)
 (require 'pen-pcre)
 (require 'pen-support)
+
+(defun inside-docker-p ()
+  (pen-snq "inside-docker-p"))
 
 (defmacro pen-require (library)
   "Don't require of sourced from the host machine"
