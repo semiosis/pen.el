@@ -46,9 +46,6 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-pcre)
 (require 'pen-support)
 
-(defun inside-docker-p ()
-  (pen-snq "inside-docker-p"))
-
 (defmacro pen-require (library)
   "Don't require of sourced from the host machine"
   (if (inside-docker-p)

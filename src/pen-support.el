@@ -216,6 +216,9 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
         (insert-file-contents path)
         (buffer-string))))
 
+(defun inside-docker-p ()
+  (pen-snq "inside-docker-p"))
+
 (if (inside-docker-p)
     (progn
       (defun s/cat (path &optional dir)
