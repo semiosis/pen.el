@@ -5,8 +5,16 @@ stdin_exists() {
 }
 
 # Completely optional
-name="$1"
-ext="$2"
+if test "$#" -eq 1; then
+    name="temp"
+    ext="$1"
+elif test "$#" -eq 2; then
+    name="$1"
+    ext="$2"
+else
+    name="temp"
+    ext="txt"
+fi
 : "${ext:="txt"}"
 
 fp="$(mktemp -t "tf_${name}XXXXXXX.${ext}" 2>/dev/null || :)"

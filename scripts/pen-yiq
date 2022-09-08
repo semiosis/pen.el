@@ -17,7 +17,7 @@ if test "$#" -gt 0 && ! stdin_exists && test -f "$last_arg"; then
 
     test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
     # exec < "$last_arg"
-    exec < <(-s cat "$last_arg")
+    exec < <(cat "$last_arg")
 fi
 
 CMD="$(cmd "$@")"
@@ -28,4 +28,4 @@ CMD="$(cmd "$@")"
 # Converting 'mullikine' to yaml would result in 'mullikine', I think.
 
 # pen-str chomp | pen-rtcmd ++yq -E "yq $CMD | json2yaml | vs"
-str chomp | pen-rtcmd ++yqy -E "yqy $CMD | vs"
+chomp | pen-rtcmd ++yqy -E "yqy $CMD | vs"

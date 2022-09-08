@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if ! stdin_exists && test -f "$1"; then
+    exec < "$1"
+fi
+
+# This will do things like compile anchors
+
+yaml2json | json2yaml | pa -E "tf yml | xa e"
