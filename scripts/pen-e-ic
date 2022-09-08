@@ -45,6 +45,11 @@ case "$sn" in
     }
     ;;
 
+    eopen-main) {
+        ic=open-main
+    }
+    ;;
+
     ecreate-tablist) {
         ic=create-tablist
     }

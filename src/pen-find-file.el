@@ -105,19 +105,21 @@
             (goto-byte (string-to-number pos))))
       (message "Pattern " pat " not found"))))
 
-(defun open-main (&optional dir)
+(defun open-main (&optional a_dir)
   (interactive)
-  (let* ((cwd (or dir
-                  (get-dir)))
-         (dir (if (>= (prefix-numeric-value current-prefix-arg) 4)
-                  (get-top-level)))
-         (found (sor (fz (chomp (pen-sn "open-main" nil dir)) nil nil nil nil t) nil)))
+  (let* ((dir (or
+               (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                   (get-top-level))
+               a_dir
+               (get-dir)))
+         (found (sor (fz (chomp (pen-sn "open-main" nil dir)) nil nil
+                         "open-main: " nil t) nil)))
     (if found
         (let ((path (s-replace-regexp "^\\([^:]+\\).*" "\\1" found))
               (pos (s-replace-regexp "^[^:]+:\\([0-9]+\\):.*" "\\1" found)))
           (with-current-buffer (find-file (if dir
                                               (concat dir "/" path)
-                                            (concat cwd path)))
+                                            (concat dir path)))
             (goto-byte (string-to-number pos))))
       (message "Main function not found"))))
 
