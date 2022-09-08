@@ -981,6 +981,11 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
     test "$#" -eq 1 && \
     test -n "$1"; then
 
+    remote_path="$1"
+    remote_path="$(realpath "$remote_path")"
+    shift
+    set -- "$remote_path"
+
     export NO_QUIT_DAEMONS=y
 
     # This is for read-only text at the top of a potentially new file
