@@ -14,6 +14,9 @@
 
 (define-key org-link-minor-mode-map (kbd "C-c C-o") 'org-open-at-point)
 
+;; Disable indentation
+(setq org-adapt-indentation nil)
+
 (setq org-blank-before-new-entry '((heading . t) (plain-list-item . t)))
 (setq org-todo-keywords
       '((sequence "TODO" "|" "DONE" "DISCARD" "FAILED")))
