@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+# I need to expand globs first.
+# config-files.txt
+
+pp="$(ps -o comm= $PPID)"
+
+if test "$pp" = "sh-general"; then
+    cd $NOTES
+fi
+
+paths='files\.* source?(s)\.* autofiles.txt'
+paths="$(shopt -s nullglob; shopt -s extglob; eval lit -s "$paths")" # expand
+
+if [ -n "$paths" ]; then
+    eval "vs -nad $paths"
+else
+    vs -nad source.txt
+fi
