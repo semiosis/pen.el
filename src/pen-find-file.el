@@ -105,9 +105,10 @@
             (goto-byte (string-to-number pos))))
       (message "Pattern " pat " not found"))))
 
-(defun open-main ()
+(defun open-main (&optional dir)
   (interactive)
-  (let* ((cwd (get-dir))
+  (let* ((cwd (or dir
+                  (get-dir)))
          (dir (if (>= (prefix-numeric-value current-prefix-arg) 4)
                   (get-top-level)))
          (found (sor (fz (chomp (pen-sn "open-main" nil dir)) nil nil nil nil t) nil)))
