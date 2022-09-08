@@ -136,4 +136,13 @@
                       nil nil "pen-company-complete add:"))
           pen-company-selected-backends))))
 
+(defun company-copy-current ()
+  "Copy the currently highlighted candidate."
+  (interactive)
+  (let ((other-window-scroll-buffer)
+        (selection (or company-selection 0)))
+    (company--electric-do
+      (let* ((selected (nth selection company-candidates)))
+        (xc selected)))))
+
 (provide 'pen-company)

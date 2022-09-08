@@ -253,4 +253,8 @@
       (define-key pen-map (kbd "M-l C-s") #'pen-swipe)
       (define-key pen-map (kbd "M-' C-s") #'pen-swipe)))
 
+(define-key company-active-map (kbd "C-h") 'delete-backward-char)
+(define-key company-active-map (kbd "C-c C-h") 'company-show-doc-buffer)
+(define-key company-active-map (kbd "M-c") 'company-copy-current)
+
 (provide 'pen-post-bindings)

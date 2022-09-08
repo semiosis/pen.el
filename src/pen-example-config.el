@@ -889,7 +889,4 @@
 
 (global-company-mode 1)
 
-(define-key company-active-map (kbd "C-h") 'delete-backward-char)
-(define-key company-active-map (kbd "C-c C-h") 'company-show-doc-buffer)
-
 (provide 'pen-example-config)
