@@ -1,13 +1,50 @@
 #!/bin/bash
 export TTY
 
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+fi
+
+exec <&1
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd-nice-posix "$@")"
+fi
+
+if test -n "$input_fp"; then
+    CMD="cat $(cmd-nice-posix "$input_fp") | $CMD"
+fi
+
 slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
 
 if test "$TERM" = "dumb"; then
-    "$@"
+    eval "$CMD"
 else
     unset TMUX
     h="$(sha "$(pwd)")"
     n="tmwr-$slug-$h"
-    tmux attach -t "$n" || tmux new -s "$n" "$@"
+    tmux attach -t "$n" 2>/dev/null || tmux new -s "$n" "$CMD"
 fi

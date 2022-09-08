@@ -156,5 +156,7 @@ cterm-docker \
     -ssh-to-host "$SSH_TO_HOST" \
     -cwd "$CWD" \
     -cmd "$CMD" \
-    -user "$PEN_USER" \
-    "$@"
+    -user "$PEN_USER"
+
+    # -user "$PEN_USER" \
+    # "$@"

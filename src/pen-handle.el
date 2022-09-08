@@ -252,9 +252,21 @@
 (handle '(org-mode)
         :navtree '()
         :run '()
-        :docs '(
-                lookup-thing-glossary-definition
+        :docs '(lookup-thing-glossary-definition
                 dict-word
+                helm-wordnet-suggest
+                pen-docs-for-thing-given-screen)
+        :nexterr '()
+        :preverr '()
+        :complete '()
+        :rc '())
+
+(handle '(help-mode)
+        :navtree '()
+        :run '()
+        :docs '(lookup-thing-glossary-definition
+                dict-word
+                helm-wordnet-suggest
                 pen-docs-for-thing-given-screen)
         :nexterr '()
         :preverr '()

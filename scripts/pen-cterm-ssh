@@ -114,7 +114,9 @@ if test "$VERBOSE" = "y"; then
     sshargs=( -vvv "${sshargs[@]}" )
 fi
 
-if test "$DO_EXEC" = "y"; then
+if test -n "$CMD"; then
+    :
+elif test "$DO_EXEC" = "y"; then
     CMD="$1"
 else
     : ${CMD:="$(cmd-nice-posix "$@")"}
