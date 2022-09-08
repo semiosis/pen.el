@@ -73,7 +73,10 @@
     ;; pf-shell-bash-terminal-command-completion/1
     pen-company-filetype-if-prefix
     ;; company-complete
-    ;; company-tabnine
+
+    ;; Continue using tabnine -- it's really good, actually
+    company-tabnine
+
     company-yasnippet
     company-lsp
     ;; pen-complete-long
