@@ -20,6 +20,8 @@
   "Interactive lambda with no arguments."
   `(lambda () (interactive) ,@body))
 
+(defmacro comment (&rest body) nil)
+
 (setq disabled-command-function nil)
 
 ;; builtin

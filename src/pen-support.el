@@ -224,8 +224,6 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
         (insert-file-contents path)
         (buffer-string))))
 
-(defmacro comment (&rest body) nil)
-
 (defun variable-p (s)
   (and (not (eq s nil))
        (boundp s)))
