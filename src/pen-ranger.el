@@ -484,4 +484,36 @@ is set, show literally instead of actual buffer."
 
 ;; (advice-remove 'shackle--display-buffer #'disable-if-ranger-around-advice)
 
+(defun ranger-open-file (&optional mode)
+      "Find file in ranger buffer.  `ENTRY' can be used as path or filename, else will use
+currently selected file in ranger. `IGNORE-HISTORY' will not update history-ring on change"
+      (let ((marked-files (dired-get-marked-files)))
+        (ranger-close)
+        (cl-loop for find-name in marked-files do
+                 (let ((dir-p (file-directory-p find-name))
+                       (min (r--fget ranger-minimal)))
+                   (when (and find-name)
+                     (cl-case mode
+                       ('frame
+                        (let ((goto-frame (make-frame)))
+                          (select-frame-set-input-focus goto-frame)))
+                       ('horizontal
+                        (when (or min (not  dir-p))
+                          (unless min
+                            (ranger-disable))
+                          (split-window-right)
+                          (windmove-right)))
+                       ('vertical
+                        (when (or min (not dir-p))
+                          (unless min
+                            (ranger-disable))
+                          (split-window-below)
+                          (windmove-down)))
+                       ('other
+                        (when (or min (not dir-p))
+                          (unless min
+                            (ranger-disable))
+                          (other-window 1))))
+                     (ranger-find-file find-name))))))
+
 (provide 'pen-ranger)

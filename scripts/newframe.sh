@@ -173,6 +173,20 @@ if test -n "$PEN_EIPE_DATA"; then
     printf -- "%s" "$PEN_EIPE_DATA" > "/root/.pen/eipe/${SOCKET}_eipe_data"
 fi
 
+if test "$#" -eq 1 && test -d "$1"; then
+    dir="$1"
+    shift
+    set -- -e "(dired $(cmd-nice -ff "$dir"))"
+elif test "$#" -eq 1 && test -f "$1"; then
+    file="$1"
+    shift
+    set -- -e "(find-file $(cmd-nice -ff "$file"))"
+fi
+
+# I don't want to open directly or killing the buffer will kill the frame
+# pen-emacsclient -s ~/.emacs.d/server/DEFAULT '-a' '' '-t' '/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans'
+# pen-emacsclient -s ~/.emacs.d/server/DEFAULT '-a' '' '-t' -e '(dired "/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans")'
+
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
 else

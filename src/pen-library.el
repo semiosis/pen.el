@@ -601,6 +601,7 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
         (if (eq win (selected-window))
             (try
              (pen-kill-buffer-and-window t)
+             
              ;; when killing pet with pen-kill-buffer-immediately
              ;; pen-kill-buffer-and-window will error. On that case,
              ;; delete the frame
