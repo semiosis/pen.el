@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+test -f "/usr/local/bin/yq" || pyf yq &>/dev/null
+
+if test -n "$VERBOSE"; then
+    /usr/local/bin/yq "$@"
+else
+    /usr/local/bin/yq "$@" 2>/dev/null
+fi

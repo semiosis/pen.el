@@ -960,3 +960,5 @@ agi global
 
 # https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/
 cargo install difftastic
+
+pyf yamlfmt
