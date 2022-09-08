@@ -216,11 +216,13 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
         (insert-file-contents path)
         (buffer-string))))
 
-(defun s/cat (path &optional dir)
-  "cat out a file"
-  (setq path (pen-umn path))
-  (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil dir))
-(defalias 'cat 's/cat)
+(if (inside-docker-p)
+    (progn
+      (defun s/cat (path &optional dir)
+        "cat out a file"
+        (setq path (pen-umn path))
+        (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil dir))
+      (defalias 'cat 's/cat)))
 
 (defmacro comment (&rest body) nil)
 

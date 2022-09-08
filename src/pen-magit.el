@@ -118,6 +118,13 @@
                      (magit-diff-arguments)))
   (term-sph (concat "git d " rev-or-range " -- " (mapconcat 'identity files " "))))
 
+(defun magit-diff-difft-term (rev-or-range &optional args files)
+       "Show differences between two commits."
+       (interactive (cons (magit-diff-read-range-or-commit "Diff for range"
+                                                           nil current-prefix-arg)
+                          (magit-diff-arguments)))
+       (term-sph (concat "git d -t difft " rev-or-range " -- " (mapconcat 'identity files " "))))
+
 (defun git-get-files-for-commit (&optional commit)
   (if (not commit)
       (setq commit (cdr (magit-diff--dwim))))
@@ -190,6 +197,26 @@
      (magit-diff-vim-term range args files))
     (_
      (call-interactively #'magit-diff-vim-term))))
+
+(defun magit-diff-dwim-difft-term (&optional args files)
+       "Show changes for the thing at point."
+       (interactive (magit-diff-arguments))
+       (pcase (magit-diff--dwim)
+         (`unmerged (magit-diff-unmerged args files))
+         (`unstaged (magit-diff-unstaged args files))
+         (`staged
+          (let ((file (magit-file-at-point)))
+            (if (and file (equal (cddr (car (magit-file-status file))) '(?D ?U)))
+                ;; File was deleted by us and modified by them.  Show the latter.
+                (magit-diff-vim-unmerged args (list file))
+              (magit-diff-vim-staged nil args files))))
+         (`(commit . ,value)
+          (magit-diff-difft-term (format "%s^..%s" value value) args files))
+         (`(stash  . ,value) (magit-stash-show value args))
+         ((and range (pred stringp))
+          (magit-diff-difft-term range args files))
+         (_
+          (call-interactively #'magit-diff-difft-term))))
 
 (defun magit-diff-dwim-vim-term (&optional args files)
   "Show changes for the thing at point."
@@ -327,6 +354,7 @@ revisions (interactive.e., use a \"...\" range)."
     ("f" "Dwim vim term choose" magit-diff-dwim-vim-term-choose)]
    [("c" "Show commit"   magit-show-commit)
     ("t" "Show stash"    magit-stash-show)
+    ("T" "Dwim difftastic" magit-diff-dwim-difft-term)
     ("V" "Dwim vim" magit-diff-dwim-vim)
     ("v" "Dwim vim term" magit-diff-dwim-vim-term)
     ("v" "Dwim git diff pretty" magit-diff-dwim-vim-term)]])

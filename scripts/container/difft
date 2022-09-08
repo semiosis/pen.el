@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/
+
+test -f $HOME/.cargo/bin/difft || cargo install "difft" &>/dev/null
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    clear
+fi
+
+unbuffer $HOME/.cargo/bin/difft "$@" | less -rS

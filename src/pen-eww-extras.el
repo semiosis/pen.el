@@ -1444,7 +1444,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 ;; TODO Add sps to pen.el
 
-(defun advice-handle-url (proc &rest args)
+(defun pen-advice-handle-url (proc &rest args)
   (let ((url (car args)))
 
     (setq url (pen-redirect url))
@@ -1529,17 +1529,17 @@ xdg-open is a desktop utility that calls your preferred web browser."
                res)))))
 
 ;; This is needed because so many functions are missing in Pen.el
-(advice-add 'advice-handle-url :around #'ignore-errors-around-advice)
-;; (advice-remove 'advice-handle-url #'ignore-errors-around-advice)
+(advice-add 'pen-advice-handle-url :around #'ignore-errors-around-advice)
+;; (advice-remove 'pen-advice-handle-url #'ignore-errors-around-advice)
 
-(advice-add 'eww-browse-url :around #'advice-handle-url)
+(advice-add 'eww-browse-url :around #'pen-advice-handle-url)
 
 ;; Don't do this until I'm sure it works
-(advice-add 'eww :around #'advice-handle-url)
-(advice-remove 'eww #'advice-handle-url)
+(advice-add 'eww :around #'pen-advice-handle-url)
+(advice-remove 'eww #'pen-advice-handle-url)
 
-(advice-add 'lg-eww :around #'advice-handle-url)
-(advice-remove 'lg-eww #'advice-handle-url)
+(advice-add 'lg-eww :around #'pen-advice-handle-url)
+(advice-remove 'lg-eww #'pen-advice-handle-url)
 
 (defun lg-eww-follow-link ()
   (interactive)
