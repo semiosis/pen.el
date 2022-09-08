@@ -158,14 +158,6 @@
       (setq l (car l)))
   (pen-list2str (mapcar 'pen-onelineify l)))
 
-(defun pen-var-value-maybe (sym)
-  (cond
-   ((symbolp sym) (if (variable-p sym)
-                      (eval sym)))
-   ((numberp sym) sym)
-   ((stringp sym) sym)
-   (t sym)))
-
 (defun pen-list-signatures-for-client ()
   (cl-loop for nm in pen-prompt-functions collect
            (downcase (replace-regexp-in-string " &key.*" ")" (helpful--signature nm)))))

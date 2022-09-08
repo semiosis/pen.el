@@ -12,6 +12,14 @@
        (progn
          ,@body)))
 
+(defun pen-var-value-maybe (sym)
+  (cond
+   ((symbolp sym) (if (variable-p sym)
+                      (eval sym)))
+   ((numberp sym) sym)
+   ((stringp sym) sym)
+   (t sym)))
+
 (defun buffer2string (buffer)
   (if (not buffer)
       ""
