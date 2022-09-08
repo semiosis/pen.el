@@ -216,17 +216,6 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
         (insert-file-contents path)
         (buffer-string))))
 
-(defun inside-docker-p ()
-  (pen-snq "inside-docker-p"))
-
-(if (inside-docker-p)
-    (progn
-      (defun s/cat (path &optional dir)
-        "cat out a file"
-        (setq path (pen-umn path))
-        (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil dir))
-      (defalias 'cat 's/cat)))
-
 (defmacro comment (&rest body) nil)
 
 (defun variable-p (s)
@@ -873,6 +862,17 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 (defun pen-snq (shell-cmd &optional stdin &rest args)
   (let ((code (apply 'pen-sne (append (list shell-cmd stdin) args))))
     (equal code 0)))
+
+(defun inside-docker-p ()
+  (pen-snq "inside-docker-p"))
+
+(if (inside-docker-p)
+    (progn
+      (defun s/cat (path &optional dir)
+        "cat out a file"
+        (setq path (pen-umn path))
+        (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil dir))
+      (defalias 'cat 's/cat)))
 
 ;; slugify is used in sn, so it must contain an explicit directory, to be safe,
 ;; so that when called by (get-dir), this does not do an infinite loop.
