@@ -253,15 +253,11 @@
       (define-key pen-map (kbd "M-l C-s") #'pen-swipe)
       (define-key pen-map (kbd "M-' C-s") #'pen-swipe)))
 
-(define-key company-active-map (kbd "C-h") 'delete-backward-char)
+;; (define-key company-active-map (kbd "C-h") 'delete-backward-char)
+(define-key company-active-map (kbd "C-h") 'company-delete-backward-char-and-retry)
 (define-key company-active-map (kbd "C-c C-h") 'company-show-doc-buffer)
 (define-key company-active-map (kbd "M-c") 'company-copy-current)
 ;; (define-key company-active-map (kbd " ") 'self-insert-command)
-
-(defun company-self-insert-and-retry ()
-  (interactive)
-  (call-interactively 'self-insert-command)
-  (call-interactively 'company-try-hard))
 
 (define-key company-active-map (kbd " ") 'company-self-insert-and-retry)
 

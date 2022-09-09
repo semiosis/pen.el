@@ -161,4 +161,37 @@
 
 ;; Or simply: (company-tabnine--prefix)
 
+(defun company-delete-backward-char-and-retry ()
+  (interactive)
+  (call-interactively 'delete-backward-char)
+  (call-interactively 'company-try-hard)
+  ;; (call-interactively 'company-tabnine)
+  )
+
+(defun company-self-insert-and-retry ()
+  (interactive)
+  (call-interactively 'self-insert-command)
+  (call-interactively 'company-try-hard)
+  ;; (call-interactively 'company-tabnine)
+  )
+
+;; This makes TabNine autocomplete a lot more fluid
+(defun company-typing-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    res)
+  (if (company--active-p)
+      ;; (call-interactively 'company-tabnine)
+    (call-interactively 'company-try-hard)
+    ;; (call-interactively 'company-self-insert-and-retry)
+    ))
+(advice-add 'lispy-tick :around #'company-typing-around-advice)
+(advice-add 'lispy-quotes :around #'company-typing-around-advice)
+(advice-add 'lispy-space :around #'company-typing-around-advice)
+(advice-add 'lispy-colon :around #'company-typing-around-advice)
+
+(advice-add 'company-try-hard :around #'shut-up-around-advice)
+
+;; Doesn't seem to work
+(advice-add 'company-complete-quick-access :around #'company-typing-around-advice)
+
 (provide 'pen-company)

@@ -719,15 +719,4 @@ otherwise the whole string is unquoted."
 (define-key lispy-mode-map (kbd "M-RET") nil)
 (define-key lispy-mode-map (kbd "M-s [") 'geiser-squarify)
 
-(require 'company)
-
-(defun company-typing-around-advice (proc &rest args)
-  (if (company--active-p)
-      (call-interactively 'company-self-insert-and-retry)
-    (let ((res (apply proc args)))
-      res)))
-(advice-add 'lispy-tick :around #'company-typing-around-advice)
-(advice-add 'lispy-quotes :around #'company-typing-around-advice)
-(advice-add 'lispy-space :around #'company-typing-around-advice)
-
 (provide 'pen-lispy)
