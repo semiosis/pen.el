@@ -1,7 +1,3 @@
-(define-key pen-map (kbd "M-l E .") (df edit-pen-editing (find-file (f-join pen-src-dir "pen-editing.el"))))
-(define-key pen-map (kbd "M-l E d") (df deselect-i (deactivate-mark)))
-(define-key pen-map (kbd "M-l E r") (df reselect-i (reselect-last-region)))
-
 ;; Don't do this until I can be bothered sorting out all the quirks
 ;; (setq kill-whole-line t)
 (setq kill-whole-line nil)
@@ -112,7 +108,5 @@
 ;; Please answer y or n. A command is running in the default buffer. Use
 ;; a new buffer? (y or n)
 (setq async-shell-command-buffer 'new-buffer)
-
-(define-key global-map (kbd "C-q") #'quoted-insert-nooctal)
 
 (provide 'pen-editing)
