@@ -890,4 +890,8 @@
 
 (global-company-mode 1)
 
+(define-key global-map (kbd "C-z") #'company-try-hard)
+(define-key company-active-map (kbd "C-z") #'company-try-hard)
+(define-key company-active-map (kbd "C-f") #'company-complete-common)
+
 (provide 'pen-example-config)

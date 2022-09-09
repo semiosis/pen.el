@@ -117,10 +117,6 @@
            ))
   (call-interactively 'company-try-hard))
 
-(define-key global-map (kbd "C-z") #'company-try-hard)
-(define-key company-active-map (kbd "C-z") #'company-try-hard)
-(define-key company-active-map (kbd "C-f") #'company-complete-common)
-
 (defun pen-company-complete-choose ()
   (interactive)
 
@@ -187,10 +183,17 @@
     (call-interactively 'company-try-hard)
     ;; (call-interactively 'company-self-insert-and-retry)
     ))
-(advice-add 'lispy-tick :around #'company-typing-around-advice)
+;; (advice-add 'lispy-tick :around #'company-typing-around-advice)
 (advice-add 'lispy-quotes :around #'company-typing-around-advice)
-(advice-add 'lispy-space :around #'company-typing-around-advice)
+;; (advice-add 'lispy-space :around #'company-typing-around-advice)
 (advice-add 'lispy-colon :around #'company-typing-around-advice)
+
+(advice-remove 'lispy-tick #'company-typing-around-advice)
+;; (advice-remove 'lispy-quotes #'company-typing-around-advice)
+;; (advice-remove 'lispy-space #'company-typing-around-advice)
+;; (advice-remove 'lispy-colon #'company-typing-around-advice)
+
+(advice-add 'self-insert-command :around #'company-typing-around-advice)
 
 (advice-add 'company-try-hard :around #'shut-up-around-advice)
 
