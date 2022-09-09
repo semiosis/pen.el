@@ -746,4 +746,6 @@ The following special registers are supported.
 (define-key evil-motion-state-map (kbd "n") 'isearch-repeat-forward)
 (define-key evil-list-view-mode-map (kbd "RET") 'evil-list-view-goto-entry)
 
+(define-key evil-ex-completion-map (kbd "M-m") 'run-line-or-region-in-tmux)
+
 (provide 'pen-evil)

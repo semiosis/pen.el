@@ -1196,4 +1196,11 @@ non-nil."
     (str (buffer-substring (point-min) (point-max)))))
 (defalias 'selection-or-buffer-string 'region-or-buffer-string)
 
+(defun pen-select-current-line ()
+  (interactive)
+  (move-beginning-of-line nil)
+  (set-mark-command nil)
+  (move-end-of-line nil)
+  (setq deactivate-mark nil))
+
 (provide 'pen-library)

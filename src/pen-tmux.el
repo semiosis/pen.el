@@ -258,8 +258,16 @@ START and END can be in either order."
     (pen-tm-nw cmd "spv" nw_args input dir)))
 (defalias 'pen-tm-spv 'pen-spv)
 
-(define-key pen-map (kbd "M-l M-I M-N") 'pen-nw)
-(define-key pen-map (kbd "M-l M-I M-I") 'pen-sps)
-(define-key pen-map (kbd "M-l M-I M-J") 'pen-spv)
+(defun run-line-or-region-in-tmux ()
+  "description string"
+  (interactive)
+  ;; let allows you to create local variables.
+  ;; setq makes global variables
+  (if (not (region-active-p))
+      (pen-select-current-line))
+  (let ((rstart (region-beginning))
+        (rend (region-end)))
+    (shell-command-on-region rstart rend "tm -tout -S nw -pakf -rsi"))
+  (deselect))
 
 (provide 'pen-tmux)

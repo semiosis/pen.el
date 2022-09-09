@@ -77,9 +77,12 @@
                 (etc "clj-rebel" t)
                 (etc "lein repl" t))
         :formatters '(lsp-format-buffer)
-        :docs '(pen-doc-override
+        :docs '(pen-esp-docs-for-thing-if-prefix
+                pen-doc-override
                 lsp-describe-thing-at-point
-                cider-doc-thing-at-point)
+                pen-doc-thing-at-point
+                cider-doc-thing-at-point
+                pen-docs-for-thing-given-screen)
         :toggle-test '(projectile-toggle-between-implementation-and-test
                        clojure-open-test)
         :fz-sym '(clojure-fz-symbol

@@ -261,4 +261,8 @@
 
 (define-key company-active-map (kbd " ") 'company-self-insert-and-retry)
 
+(define-key pen-map (kbd "M-l M-I M-N") 'pen-nw)
+(define-key pen-map (kbd "M-l M-I M-I") 'pen-sps)
+(define-key pen-map (kbd "M-l M-I M-J") 'pen-spv)
+
 (provide 'pen-post-bindings)

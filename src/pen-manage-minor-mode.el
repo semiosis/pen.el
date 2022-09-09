@@ -26,6 +26,9 @@
          (off flycheck-mode)
          (off eldoc-mode))
 
+        ;; (minibuffer-inactive-mode
+        ;;  (off pen))
+
         (js-mode
          (off electric-pair-local-mode))
 
