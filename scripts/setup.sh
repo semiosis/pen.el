@@ -968,3 +968,6 @@ rustup toolchain install nightly --component rust-analyzer-preview
 
 # For scope
 agi mediainfo
+
+# For fuse
+agi libfuse3-dev libfuse3-3

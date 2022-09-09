@@ -1884,7 +1884,12 @@ case "$f" in
             pen-tm op default-shell "$DEFAULT_SHELL"
         fi
 
-        : ${window_name:="new-window"}
+        if test "$#" -gt 0; then
+            slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
+            : ${window_name:="$slug"}
+        else
+            : ${window_name:="new-window"}
+        fi
 
         sentinal_string="tm_sentinal_${RANDOM}_$$"
 
