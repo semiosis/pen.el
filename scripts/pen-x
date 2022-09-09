@@ -182,6 +182,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # Attach an existing tmux session
     -tma) {
         uses_tmux=y
         target="$2"
@@ -203,6 +204,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # Do the work inside of a tmux session mirroring the current window
     -tmw) {
         uses_tmux=y
         tmux_session="$(pen-tm-new-hidden-link-window "$WIN_ID")"
@@ -212,6 +214,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # Do the work inside of a tmux session
     -tm) {
         uses_tmux=y
         if [ -z "$PANE_ID" ]; then

@@ -498,4 +498,7 @@ This includes angle, plain, and bracket links."
 (define-key org-mode-map (kbd "M-c") 'nil)
 (define-key org-mode-map (kbd "M-*") 'pen-evil-star-maybe)
 
+(require 'poly-org-mode)
+(remove-from-list 'auto-mode-alist '("\\.org\\'" . poly-org-mode))
+
 (provide 'pen-org)
