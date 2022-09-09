@@ -62,6 +62,7 @@ esac; done
 case "$PEN_APPNAME" in
     nlsh) { prompt=pf-nlsh/2; } ;;
     nlsc) { prompt=pf-code-snippet-from-natural-language/2; } ;;
+    nlsu|nlsx) { prompt=pf-get-an-example-of-the-usage-of-a-function/2; SWAP_ARGS=y; } ;;
     nlq) { prompt=pf-instruct-an-ai-to-do-something/1; OS_OR_LANG=nlq; header="Enter queries (e.g. 'latest version of node'):" template="Show <query>"; maybe_cm=y; } ;;
 
     *)
@@ -99,6 +100,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -norl) {
         NORL=y
+        shift
+    }
+    ;;
+
+    -swapargs) {
+        SWAP_ARGS=y
         shift
     }
     ;;
@@ -213,8 +220,12 @@ while IFS=$'\n' read -p "${OS_OR_LANG}: " -r nlcommand; do
         ;;
 
         2) {
-            pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ".[]"
-            # pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ". | map(length)[]"
+            if test "$SWAP_ARGS" = "y"; then
+                pena "$prompt" "$nlcommand" "${OS_OR_LANG}" | jq -r ".[]"
+            else
+                pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ".[]"
+                # pena "$prompt" "${OS_OR_LANG}" "$nlcommand" | jq -r ". | map(length)[]"
+            fi
         }
         ;;
 
