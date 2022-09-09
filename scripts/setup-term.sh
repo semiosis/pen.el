@@ -16,6 +16,10 @@ export TERM=screen-256color
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 
+# This fixes an issue where you only have one or the other
+: "${TMUX:="$PEN_TMUX"}"
+: "${PEN_TMUX:="$TMUX"}"
+
 export SCRIPTS=$HOME/scripts
 export SCRIPTS=/root/.emacs.d/host/pen.el/scripts
 export PEN=/root/.pen
