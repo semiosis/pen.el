@@ -894,4 +894,14 @@
 (define-key company-active-map (kbd "C-z") #'company-try-hard)
 (define-key company-active-map (kbd "C-f") #'company-complete-common)
 
+(require 'pen-helpful)
+;; Keybindings.
+(global-set-key (kbd "C-c h o") #'pen-describe-symbol)
+(global-set-key (kbd "<help> o") #'pen-describe-symbol)
+(global-set-key (kbd "C-c h k") #'helpful-key)
+(global-set-key (kbd "<help> k") #'helpful-key)
+;; (global-set-key (kbd "C-c h f") #'helpful-function)
+(global-set-key (kbd "C-c h f") #'helpful-symbol)
+(global-set-key (kbd "<help> f") #'helpful-symbol)
+
 (provide 'pen-example-config)

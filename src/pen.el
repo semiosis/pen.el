@@ -116,6 +116,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'helm-fzf)
 (require 'pen-helm-fzf)
 (require 'pen-help)
+(require 'pen-helpful)
 (require 'pen-eipe)
 (require 'pen-textprops)
 (require 'pen-rc)
