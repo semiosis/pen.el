@@ -50,10 +50,15 @@
                      :lm-complete-stdout (pen-tmp-preview "lm-complete-stdout")
                      :lm-complete-results
                      (pen-snc
+                      ;; Don't cat it unless it's text
+                      ;; Or perhaps cat the scope fo the file
                       (concat
                        "find "
-                       (pen-q (pen-snc (pen-cmd "cat" (f-join penconfdir "temp" "lm-complete-stdout.txt"))))
-                       " | while read line; do cat \$line; echo; done"))
+                       (pen-q (pen-snc
+                               (pen-cmd
+                                "cat"
+                                (f-join penconfdir "temp" "lm-complete-stdout.txt"))))
+                       " | while read line; do TEXT_ONLY=y scope \$line; echo; done"))
                      :openai-last-output (pen-tmp-preview "openai-temp")
                      :openai-last-output-fp (f-join penconfdir "temp" "openai-temp.txt")
                      :hf-last-output (pen-tmp-preview "hf-temp")
