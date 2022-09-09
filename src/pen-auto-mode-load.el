@@ -96,7 +96,7 @@
 (add-to-list 'auto-mode-alist '("\\.rcp\\'" . emacs-lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.ini\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\.bzl\\'" . bazel-mode))
-(add-to-list 'auto-mode-alist '("\\(\\.pl\\|\\.pm\\)\\'" . perl-mode))
+(add-to-list 'auto-mode-alist '("\\(\\.pl\\|\\.psgi\\|\\.pm\\)\\'" . perl-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.pro\\|\\.problog\\)\\'" . prolog-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.yas\\|\\.snippet\\)\\'" . snippet-mode))
 (add-to-list 'auto-mode-alist '("\\(shellrc\\|\\.shell_aliases\\|profile\\|\\.profile\\|\\.bashrc\\|\\.bash_logout\\|\\.bash_profile\\|\\.zshrc\\|\\.shell_environment\\|\\.shell_functions\\|zshrc\\)\\'" . sh-mode))

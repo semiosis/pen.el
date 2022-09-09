@@ -145,4 +145,20 @@
       (let* ((selected (nth selection company-candidates)))
         (xc selected)))))
 
+;; This ameliorates the problem with company tabnine not allowing you to enter space.
+;; However, company still exits.
+(setq company-require-match nil)
+(setq company-idle-delay 0)
+(setq company-show-numbers t)
+
+;; The issue with the space is the backend 'prefix'.
+;; To test this, place the cursor after a space and run (company-tabnine--prefix)
+
+;; Can play around with it like this:
+
+;; (company-tabnine-query)
+;; (tv company-tabnine--response)
+
+;; Or simply: (company-tabnine--prefix)
+
 (provide 'pen-company)

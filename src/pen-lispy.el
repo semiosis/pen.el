@@ -719,4 +719,57 @@ otherwise the whole string is unquoted."
 (define-key lispy-mode-map (kbd "M-RET") nil)
 (define-key lispy-mode-map (kbd "M-s [") 'geiser-squarify)
 
+(require 'company)
+(defun lispy-space (arg)
+  "Insert one space, with position depending on ARG.
+If ARG is 2, amend the current list with a space from current side.
+If ARG is 3, switch to the different side beforehand.
+If jammed between parens, \"(|(\" unjam: \"(| (\". If after an opening delimiter
+and before a space (after wrapping a sexp, for example), do the opposite and
+delete the extra space, \"(| foo)\" to \"(|foo)\"."
+  (interactive "p")
+  (cond ((bound-and-true-p edebug-active)
+         (edebug-step-mode))
+        ;; I added this but it's still not allowing me to enter space without quitting company
+        ((company--active-p)
+         (call-interactively 'company-self-insert-and-retry))
+        ((region-active-p)
+         (goto-char (region-end))
+         (deactivate-mark)
+         (insert " "))
+        ((lispy--in-string-or-comment-p)
+         (call-interactively 'self-insert-command))
+        ((eq arg 4)
+         (when (lispy--leftp)
+           (lispy-different))
+         (backward-char)
+         (unless (lispy-bolp)
+           (newline-and-indent)))
+        ((or (eq arg 2)
+             (when (eq arg 3)
+               (lispy-different)
+               t))
+
+         (if (lispy-left-p)
+             (progn
+               (forward-char)
+               (just-one-space)
+               (backward-char))
+           (backward-char)
+           (just-one-space)))
+        ((and (lispy-looking-back lispy-left)
+              (not (eq ?\\ (char-before (match-beginning 0)))))
+         (if (looking-at "[[:space:]]")
+             (delete-region (point)
+                            (progn
+                              (skip-chars-forward "[:space:]")
+                              (point)))
+           (call-interactively 'self-insert-command)
+           (backward-char)))
+        (t
+         (call-interactively 'self-insert-command)
+         (when (and (lispy-left-p)
+                    (lispy-looking-back "[[({] "))
+           (backward-char)))))
+
 (provide 'pen-lispy)
