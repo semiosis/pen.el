@@ -187,7 +187,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         uses_tmux=y
         target="$2"
         shift
-        if [ -z "$target" ]; then
+        if test -z "$target"; then
             echo "No tmux target given."
             exit 1
         fi
@@ -217,7 +217,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     # Do the work inside of a tmux session
     -tm) {
         uses_tmux=y
-        if [ -z "$PANE_ID" ]; then
+        if test -z "$PANE_ID"; then
             echo "No tmux pane. Can't swap pane so not trying."
             exit 1
         fi
@@ -317,18 +317,18 @@ if test "$uses_tmux" = "y"; then
     if test "$tmux_attached_init" = y; then
 
         script_append "set win [exec pen-tm-new-hidden-link-window \"$target\"]"
-        script_append "spawn \"tmux\" \"attach\" \"-t\" \"\$win\""
+        script_append "spawn \"clear-tm\" \"tmux\" \"attach\" \"-t\" \"\$win\""
         script_append "sleep 0.1"
     elif [ -n "$tmux_command" ]; then
 
         script_append "sleep 0.2"
 
-        script_append "spawn \"tmux\" \"respawn-pane\" \"-t\" \"$tmux_session_qne\" \"-k\" $(cmd-nice-posix "$tmux_command" | pen-bs '][')"
+        script_append "spawn \"clear-tm\" \"tmux\" \"respawn-pane\" \"-t\" \"$tmux_session_qne\" \"-k\" $(cmd-nice-posix "$tmux_command" | pen-bs '][')"
 
-        script_append "spawn \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
+        script_append "spawn \"clear-tm\" \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
 
     else
-        script_append "spawn \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
+        script_append "spawn \"clear-tm\" \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
         script_append "expect -exact \"sh\""
     fi
 elif test "$INIT_SPAWN" = "zsh"; then

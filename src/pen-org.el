@@ -366,7 +366,7 @@ With argument N not nil or 1, move forward N - 1 lines first."
   (interactive)
   (org-edit-src-code)
   (mark-whole-buffer)
-  (let ((contents (sh/chomp (pen-selected-text))))
+  (let ((contents (chomp (pen-selected-text))))
     ;; (easy-kill 1)
     (org-edit-src-abort)
     contents))
