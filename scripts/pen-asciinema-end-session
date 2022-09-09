@@ -1,8 +1,6 @@
 #!/bin/bash
 export TTY
 
-# https://www.youtube.com/watch?v=6VD61WLNY_o
-
 pen-detach-asciinema-tmux-sessions
 
 x_session="$(cat /tmp/asciinema-x-session.txt)"
