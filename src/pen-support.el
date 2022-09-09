@@ -13,6 +13,7 @@
          ,@body)))
 
 (defun pen-var-value-maybe (sym)
+  "This function gets the value of the symbol"
   (cond
    ((symbolp sym) (if (variable-p sym)
                       (eval sym)))
@@ -21,6 +22,7 @@
    (t sym)))
 
 (defun buffer2string (buffer)
+  "This function gets the contents of the buffer"
   (if (not buffer)
       ""
     (with-current-buffer buffer
@@ -38,6 +40,7 @@
     fp))
 
 (defun pen-is-glossary-file (&optional fp)
+  "This function returns true if the file is a glossary file."
   ;; This path works also with info
   (setq fp (or fp
                (get-path nil t)
@@ -49,6 +52,7 @@
    (re-match-p "glossaries/.*\\.txt$" fp)))
 
 (defun pen-yas-expand-string (ys)
+  "This function expands the string according to yasnippet syntax"
   (interactive)
   (save-window-excursion
     (save-excursion
