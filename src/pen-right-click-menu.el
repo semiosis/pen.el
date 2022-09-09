@@ -185,10 +185,13 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
                      (pen-preceding-text)))
   (pen-term-sps (pen-cmd "comint" "-E" (pen-cmd "ii" lang history))))
 
-(defmacro pen-sn-true (cmd &rest sh-notty-args)
-  "Returns t if the shell command exists with 0"
-  `(let ((result (pen-sn ,cmd ,@sh-notty-args)))
-     (string-equal b_exit_code "0")))
+(defun show-suggest-funcs-context-menu ()
+  (interactive)
+
+  (eval
+   `(def-right-click-menu rcm-suggest-funcs
+      (quote ,(mapcar (lambda (sym) (list (sym2str sym) :call sym)) (pen-suggest-funcs-collect)))))
+  (rcm-suggest-funcs))
 
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
@@ -237,7 +240,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("generate regex for above" :call pf-gpt-j-generate-regex/2))
         ("Kill current buffer" :call kill-current-buffer)
         ("(Accept) Save then kill buffer and emacsclient" :call pen-save-and-kill-buffer-window-and-emacsclient)
-        ("(Abort) Revert and kill buffer and emacsclient" :call pen-revert-kill-buffer-and-window)))
+        ("(Abort) Revert and kill buffer and emacsclient" :call pen-revert-kill-buffer-and-window)
+        ("Context functions" :call show-suggest-funcs-context-menu)))
 
 (defmacro def-right-click-menu (name
                                 ;; predicates
@@ -315,10 +319,6 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
 ;; (define-key pen-map (kbd "H-m") 'right-click-context-menu)
 ;; (define-key pen-map (kbd "C-M-z") 'right-click-context-menu)
-
-(define-key pen-map (kbd "H-m") 'right-click-context-menu)
-(define-key pen-map (kbd "<C-down-mouse-1>") 'right-click-context-menu)
-(define-key pen-map (kbd "C-M-z") 'right-click-context-menu)
 
 (defun right-click-context-menu-around-advice-remove-overlays (proc &rest args)
   (lsp-ui-sideline--delete-ov)

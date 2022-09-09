@@ -146,6 +146,7 @@
 
 (pen-build-context-functions)
 
+;; The memoization only lasts over a single suggestion
 (defun pen-suggest-funcs-unmemoize ()
   (interactive)
   (cl-loop for f in context-pred-funcs do (ignore-errors (memoize-restore f))))

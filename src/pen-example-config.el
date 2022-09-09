@@ -917,4 +917,9 @@
 (define-key prog-mode-map (kbd "C-c C-o") 'org-open-at-point)
 (define-key prog-mode-map (kbd "<help> f") 'handle-docfun)
 
+(require 'pen-right-click-menu)
+(define-key pen-map (kbd "H-m") 'right-click-context-menu)
+(define-key pen-map (kbd "<C-down-mouse-1>") 'right-click-context-menu)
+(define-key pen-map (kbd "C-M-z") 'right-click-context-menu)
+
 (provide 'pen-example-config)

@@ -1203,4 +1203,9 @@ non-nil."
   (move-end-of-line nil)
   (setq deactivate-mark nil))
 
+(defmacro pen-sn-true (cmd &rest sh-notty-args)
+  "Returns t if the shell command exists with 0"
+  `(let ((result (pen-sn ,cmd ,@sh-notty-args)))
+     (string-equal b_exit_code "0")))
+
 (provide 'pen-library)

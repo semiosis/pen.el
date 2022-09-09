@@ -164,8 +164,7 @@ care."
                                         ;; It would probably be better to alert and ignore
                                         (try (remhash args ,table)
                                              ;; (message ,(concat "timer for memoized " funcslug " failed"))
-                                             t
-                                             )))
+                                             t)))
                          ,timeouts)))))))))
 
 (defun ignore-errors-around-advice (proc &rest args)

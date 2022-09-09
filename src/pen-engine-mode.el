@@ -91,9 +91,9 @@
   :browser 'lg-eww)
 
 (defun chrome (url &optional discard)
-  (interactive (read-string-hist "chrome: "))
+  (interactive (list (read-string-hist "chrome: ")))
   (pen-ns (concat "Chrome: " url))
-  (pen-sn (concat "chrome " (pen-q url))))
+  (pen-sn (concat "unbuffer chrome " (pen-q url) " &") nil nil nil t))
 
 ;; Unfortunately, search requires that I am logged in
 (defengine github-advanced
