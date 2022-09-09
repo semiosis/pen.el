@@ -962,3 +962,6 @@ agi global
 cargo install difftastic
 
 pyf yamlfmt
+
+# Install the rust language server (rust-analyzer) manually (rather than through emacs)
+rustup toolchain install nightly --component rust-analyzer-preview

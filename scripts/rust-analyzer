@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+/root/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer "$@"

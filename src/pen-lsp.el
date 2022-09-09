@@ -748,4 +748,7 @@ We don't extract the string that `lps-line' is already displaying."
 (advice-add 'lsp--ensure-lsp-servers :around #'ignore-errors-around-advice)
 (advice-add 'lsp--on-idle :around #'ignore-errors-around-advice)
 
+(setq lsp-rust-analyzer-store-path "/root/.emacs.d/host/pen.el/scripts/rust-analyzer")
+;; (setq lsp-rust-analyzer-store-path "/root/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer")
+
 (provide 'pen-lsp)
