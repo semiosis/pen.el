@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# From tmux, press `F1 M-x` to end the asciinema session
+
 pen-detach-asciinema-tmux-sessions
 
 x_session="$(cat /tmp/asciinema-x-session.txt)"
