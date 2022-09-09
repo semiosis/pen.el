@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+tmux run -b "tm cap | xurls | xt -d v &"

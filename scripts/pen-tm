@@ -685,7 +685,7 @@ case "$f" in
         # Do this via a separate tmux command.
         # Therefore I need a tmux command fuzzy finder
 
-        pen-xt -b tmux attach -t "cinema-${caller_slug}-user"
+        unbuffer pen-xt -b tmux attach -t "cinema-${caller_slug}-user"
     }
     ;;
 
