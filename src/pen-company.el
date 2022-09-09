@@ -80,11 +80,14 @@
     pen-company-filetype-if-prefix
     ;; company-complete
 
-    ;; Continue using tabnine -- it's really good, actually
+    ;; LSP complete is more important than tabnine
+    company-lsp
+    
+    ;; Continue using tabnine -- it's really good, actually.
+    ;; But dodgy.
     company-tabnine
 
     company-yasnippet
-    company-lsp
     ;; pen-complete-long
     company-org-block
     company-dabbrev

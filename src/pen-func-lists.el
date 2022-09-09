@@ -91,6 +91,7 @@
    'unidify-org-file
    'idify-org-files-here
    'unidify-org-files-here
+   'org-copy-thing-here
    'generate-glossary-buttons-over-buffer-force-on
    'org-latex-export-to-pdf
    'org-latex-export-to-pdf

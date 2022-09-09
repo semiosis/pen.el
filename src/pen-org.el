@@ -495,6 +495,7 @@ This includes angle, plain, and bracket links."
 (define-key org-mode-map (kbd "M-l M-j M-w") 'handle-spellcorrect)
 (define-key org-mode-map (kbd "M-RET") 'org-meta-return)
 (define-key org-mode-map (kbd "M-c") 'org-copy-thing-here)
+(define-key org-mode-map (kbd "M-c") 'nil)
 (define-key org-mode-map (kbd "M-*") 'pen-evil-star-maybe)
 
 (provide 'pen-org)
