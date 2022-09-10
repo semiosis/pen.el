@@ -33,6 +33,7 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/http:\/\/google/s/http:/https:/' | \
     sed '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa=.*/\1/' | \
     sed '/.*clojure.org/s/\/$//' | \
+    sed '/.*clojuredocs.org/s/\/$//' | \
     sed '/.*haskell.org/s/\/$//' | \
     sed '/.*haskell.org/s/\/#.*//'
 

@@ -201,6 +201,7 @@
 (sslk "ldqs" 'pen-acolyte-dired-scripts)
 (sslk "ldqc" 'pen-acolyte-dired-config)
 (sslk "lds" 'pen-acolyte-dired-scripts)
+(sslk "ldqS" (df edit-ruse (e "/volumes/home/shane/var/smulliga/source/git/ahungry/ruse/src/ruse/core.clj")))
 
 (if (inside-docker-p)
     (sslk "ldqg" (dff (pen-open-dir "/volumes/home/shane/var/smulliga/source/git/semiosis")))
