@@ -528,8 +528,6 @@ Call `helm' only with SOURCES and BUFFER as args."
     (cdar (-filter (lambda (s) (string-match "^DEL$" (car s)))
                    (let ((which-key-pps t)) (which-key--get-keymap-bindings helm-read-file-map)))))))
 
-(define-key helm-read-file-map (kbd "C-h") (kbd "DEL"))
-
 (require 'helm-files)
 
 ;; This works perfectly to add C-h as the delete key to the ranger minibuffer
