@@ -29,7 +29,6 @@
 ;; (define-key function-key-map (kbd "M-h") nil)
 ;; (define-key function-key-map (kbd "M-h") 'hyperify)
 
-
 ;; I probably don't want either of these:
 ;; The problem is the browser GUI needs it.
 ;; (define-key function-key-map (kbd "M-h") 'hyperify)
@@ -829,7 +828,6 @@
 (define-key pen-map (kbd "M-[ M-h") #'git-gutter+-previous-hunk)
 (define-key pen-map (kbd "M-] M-h") #'git-gutter+-next-hunk)
 
-
 ;; Make paste work in the GUI version
 (define-key global-map (kbd "<M-f3>") (kbd "C-y"))
 
@@ -952,5 +950,20 @@
 (define-key selected-keymap (kbd "J") 'pen-fi-join)
 (define-key selected-keymap (kbd "d") 'deselect-i)
 (define-key selected-keymap (kbd "*") 'pen-evil-star-maybe)
+
+(require 'pen-grep)
+(define-key global-map (kbd "H-H") 'pen-counsel-ag-generic)
+(define-key grep-mode-map (kbd "C-c C-p") #'ivy-wgrep-change-to-wgrep-mode)
+(define-key global-map (kbd "M-?") #'pen-counsel-ag)
+(define-key global-map (kbd "M-\"") #'pen-helm-fzf)
+(define-key grep-mode-map (kbd "h") nil)
+(define-key global-map (kbd "RET") 'newline)
+(define-key grep-mode-map (kbd "RET") 'compile-goto-error)
+(define-key grep-mode-map (kbd "C-x C-q") #'ivy-wgrep-change-to-wgrep-mode)
+(define-key grep-mode-map (kbd "M-3") 'grep-eead-on-results)
+(define-key global-map (kbd "M-3") #'pen-grep-for-thing-select)
+
+(require 'pen-buffer-state)
+(define-key pen-map (kbd "H-H") 'buffer-hyperparameters-transient)
 
 (provide 'pen-example-config)

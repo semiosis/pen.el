@@ -295,15 +295,4 @@ NEEDLE is the search string."
 (if (inside-docker-p)
     (defalias 'wgrep 'pen-wgrep))
 
-(define-key global-map (kbd "H-H") 'pen-counsel-ag-generic)
-(define-key grep-mode-map (kbd "C-c C-p") #'ivy-wgrep-change-to-wgrep-mode)
-(define-key global-map (kbd "M-?") #'pen-counsel-ag)
-(define-key global-map (kbd "M-\"") #'pen-helm-fzf)
-(define-key grep-mode-map (kbd "h") nil)
-(define-key global-map (kbd "RET") 'newline)
-(define-key grep-mode-map (kbd "RET") 'compile-goto-error)
-(define-key grep-mode-map (kbd "C-x C-q") #'ivy-wgrep-change-to-wgrep-mode)
-(define-key grep-mode-map (kbd "M-3") 'grep-eead-on-results)
-(define-key global-map (kbd "M-3") #'pen-grep-for-thing-select)
-
 (provide 'pen-grep)
