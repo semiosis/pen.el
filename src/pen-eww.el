@@ -14,10 +14,4 @@
 (setq shr-external-rendering-functions '((pre . eww-tag-pre)))
 (setq shr-use-colors nil)
 
-(define-key eww-mode-map (kbd "]") 'eww-next-image)
-(define-key eww-mode-map (kbd "[") 'eww-previous-image)
-(define-key eww-mode-map (kbd "M-]") nil)
-(define-key eww-mode-map (kbd "M-[") nil)
-(define-key image-map (kbd "r") nil)
-
 (provide 'pen-eww)
