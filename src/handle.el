@@ -85,6 +85,9 @@ their needs, and to do so before the package is loaded."
 ;; Not at point - manual entry of symbol
 (add-to-list 'handle-keywords :docsearch)
 
+;; Project syms
+(add-to-list 'handle-keywords :fz-sym)
+
 (add-to-list 'handle-keywords :testall)
 (add-to-list 'handle-keywords :navleft)
 (add-to-list 'handle-keywords :navright)
@@ -107,7 +110,7 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :projectfile)
 ;; toggle between test case
 (add-to-list 'handle-keywords :toggle-test)
-(add-to-list 'handle-keywords :fz-sym)
+
 
 (defcustom handle-nice-functions nil
   "List of commands that return t on success like good citizens.

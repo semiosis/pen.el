@@ -85,9 +85,10 @@
                 pen-docs-for-thing-given-screen)
         :toggle-test '(projectile-toggle-between-implementation-and-test
                        clojure-open-test)
+        ;; Project syms (not general syms)
         :fz-sym '(clojure-fz-symbol
                   ;; clojure-go-to-symbol
-                  helm-cider-apropos-symbol)
+                  )
         :godef '(lsp-find-definition
                  cider-find-var
                  xref-find-definitions-immediately
@@ -95,7 +96,11 @@
         :errors '(lsp-ui-flycheck-list
                   pen-clojure-switch-to-errors)
         :docsearch '(pen-doc)
-        :docfun '(pen-cider-docfun)
+
+        ;; <help> f
+        ;; Docfun is global symbol search
+        :docfun '(helm-cider-apropos-symbol
+                  pen-cider-docfun)
 
         ;; For clj-refactor, see:
         ;; ;; j:pen-clojure-mode-hook
@@ -196,7 +201,6 @@
                        clojure-open-test)
         :fz-sym '()
         :godef '(lsp-find-definition
-                 cider-find-var
                  xref-find-definitions-immediately
                  helm-gtags-dwim)
         :errors '()
