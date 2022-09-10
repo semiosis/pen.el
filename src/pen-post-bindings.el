@@ -266,7 +266,7 @@
 (define-key pen-map (kbd "M-l M-I M-J") 'pen-spv)
 
 (define-key pen-map (kbd "M-l E .") (df edit-pen-editing (find-file (f-join pen-src-dir "pen-editing.el"))))
-(define-key pen-map (kbd "M-l E d") (df deselect-i (deactivate-mark)))
+(define-key pen-map (kbd "M-l E d") 'deselect-i)
 (define-key pen-map (kbd "M-l E r") (df reselect-i (reselect-last-region)))
 (define-key global-map (kbd "C-q") #'quoted-insert-nooctal)
 

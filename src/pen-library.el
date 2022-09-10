@@ -1208,4 +1208,8 @@ non-nil."
   `(let ((result (pen-sn ,cmd ,@sh-notty-args)))
      (string-equal b_exit_code "0")))
 
+(defun deselect-i ()
+  (interactive)
+  (deactivate-mark))
+
 (provide 'pen-library)
