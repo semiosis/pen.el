@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+
+( hs "$sn" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+case "$sn" in
+    ga) {
+        sn="grep-app"
+    }
+    ;;
+
+    *)
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -cd) {
+        dn="$(pwd)"
+        shift
+    }
+    ;;
+
+    -sn) {
+        sn="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(cmd-cip "$@")"
+shift "$#"
+
+if test -d "$dn"; then
+    x -shE "sp -s" -m '<' -c p -e "Beginning of buffer" -m : -s "(progn (find-file $(aqf-nice "$dn")) ($sn $CMD))" -c m -i
+else
+    x -shE "sp -s" -m '<' -c p -e "Beginning of buffer" -m : -s "($sn $CMD)" -c m -i
+fi
