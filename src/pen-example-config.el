@@ -966,4 +966,7 @@
 (require 'pen-buffer-state)
 (define-key pen-map (kbd "H-H") 'buffer-hyperparameters-transient)
 
+(require 'pen-micro-blogging)
+(define-key pen-map (kbd "H-)") 'open-micro-blogging)
+
 (provide 'pen-example-config)

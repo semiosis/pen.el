@@ -17,6 +17,8 @@
 (defalias 'goto-byte 'pen-goto-byte)
 (defalias 'function-p 'fboundp)
 (defalias 'cmd 'pen-cmd)
+(defalias 'mu 'pen-mu)
+(defalias 'mm 'pen-mm)
 (defalias 'pen-haskell-fill-hole 'pen-haskell-hoogle-type)
 
 (provide 'pen-aliases)

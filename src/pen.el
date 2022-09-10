@@ -181,10 +181,12 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-hooks)
 (require 'pen-major-mode)
 
-(require 'pen-aliases)
+(if (inside-docker-p)
+    (require 'pen-aliases))
 (require 'pen-org)
 (require 'pen-term-modes)
 (require 'pen-tablist)
+(require 'pen-micro-blogging)
 
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."
