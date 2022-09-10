@@ -211,7 +211,6 @@
 
 ;; Simplify the experience -- Super newb mode
 
-
 (defun pen-acolyte-scratch ()
   (interactive)
   (switch-to-buffer "*scratch*"))
@@ -329,7 +328,6 @@
     (call-interactively fun)))
 
 (define-key pen-map (kbd "H-l") 'pen-run)
-
 
 ;; code M-SPC c
 ;; prose H-"
@@ -598,14 +596,11 @@
                                       pf-explain-haskell-code/1
                                       pf-explain-code-with-bulleted-docstring/1)))
 
-
-
 (define-key global-map (kbd "M-2") #'company-lsp)
 
 ;; (call-interactively 'pen-add-key-booste)
 
 (add-hook 'emacs-lisp-mode-hook '(lambda () (lispy-mode 1)))
-
 
 (advice-add 'kill-buffer-and-window :around #'ignore-errors-around-advice)
 
@@ -753,7 +748,6 @@
 (set-face-foreground 'eterm-256color-black "#000000")
 ;; This is needed for zsh
 (set-face-foreground 'eterm-256color-bright-black "#303030")
-
 
 (define-key pen-map (kbd "M-l M-.") 'pen-kill-buffer-immediately)
 
