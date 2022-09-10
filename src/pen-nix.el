@@ -191,6 +191,7 @@ Be mindful of quoting arguments correctly."
 (defshellfilter head)
 (defshellfilter head -n 5)
 (defshellfilter xurls)
+(defalias 'xurls 'sh/xurls)
 (defshellfilter cat)
 (defshellfilter c uc)
 

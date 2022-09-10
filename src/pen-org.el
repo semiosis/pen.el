@@ -14,6 +14,21 @@
 
 (define-key org-link-minor-mode-map (kbd "C-c C-o") 'org-open-at-point)
 
+;; nadvice - proc is the original function, passed in. do not modify
+;; nadvice - proc is the original function, passed in. do not modify
+(defun org-open-at-point-around-advice (proc &rest args)  
+  (try
+   (let ((res (apply proc args)))
+     res)
+   (let ((url (sor (sh/xurls (current-line-string)))))
+     (if url
+         (cond
+          ((string-match-p "^file://" url) (find-file (pen-cl-sn "sed 's=^file://=='" :stdin url :chomp t)))
+          (t (eww url)))))
+   (error "Nothing found here")))
+(advice-add 'org-open-at-point :around #'org-open-at-point-around-advice)
+(advice-remove 'org-open-at-point #'org-open-at-point-around-advice)
+
 ;; Disable indentation
 (setq org-adapt-indentation nil)
 
