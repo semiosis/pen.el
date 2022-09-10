@@ -93,7 +93,7 @@
 (defun chrome (url &optional discard)
   (interactive (list (read-string-hist "chrome: ")))
   (pen-ns (concat "Chrome: " url))
-  (pen-sn (concat "unbuffer chrome " (pen-q url) " &") nil nil nil t))
+  (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer chrome " (pen-q url)))) nil nil nil t))
 
 ;; Unfortunately, search requires that I am logged in
 (defengine github-advanced
