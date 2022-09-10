@@ -142,8 +142,8 @@
      (comment
       (if (url-is-404 url)
           (cl-loop for pg in
-                (pf-imagine-a-website-from-a-url/1 url :no-select-result t)
-                do (pen-etv (ink-propertise pg)))
+                   (pf-imagine-a-website-from-a-url/1 url :no-select-result t)
+                   do (pen-etv (ink-propertise pg)))
         (eww url))))))
 (defalias 'lg-search 'pen-browse-url-for-passage)
 

@@ -71,6 +71,60 @@
       (which-key--hide-popup-ignore-command))
     (describe-bindings bindings)))
 
-(define-key which-key-C-h-map (kbd "k") 'which-key-describe-prefix-bindings)
+(defun which-key--get-keymap-bindings-1
+    (keymap start &optional prefix filter all ignore-commands)
+  "See `which-key--get-keymap-bindings'."
+  (let ((bindings start)
+        (prefix-map (if prefix (lookup-key keymap prefix) keymap)))
+    (when (keymapp prefix-map)
+      (map-keymap
+       (lambda (ev def)
+         (let* ((key (vconcat prefix (list ev)))
+                (key-desc (key-description key)))
+           (cond
+            ((assoc key-desc bindings))
+            ((and (listp ignore-commands) (symbolp def) (memq def ignore-commands)))
+            ((or (string-match-p
+                  which-key--ignore-non-evil-keys-regexp key-desc)
+                 (eq ev 'menu-bar)))
+            ((and (keymapp def)
+                  (string-match-p which-key--evil-keys-regexp key-desc)))
+            ((and (keymapp def)
+                  (or all
+                      ;; event 27 is escape, so this will pick up meta
+                      ;; bindings and hopefully not too much more
+                      (and (numberp ev) (= ev 27))))
+             (setq bindings
+                   (which-key--get-keymap-bindings-1
+                    keymap bindings key nil all ignore-commands)))
+            (def
+             (let* ((def (if (eq 'menu-item (car-safe def))
+                             (which-key--get-menu-item-binding def)
+                           def))
+                    (binding
+                     (cons key-desc
+                           (cond
+                            ;; I added this
+                            ((pen-var-value-maybe 'which-key-pps)
+                             (pps def))
+                            ((symbolp def) (which-key--compute-binding def))
+                            ((keymapp def) "prefix")
+                            ((eq 'lambda (car-safe def)) "lambda")
+                            ((eq 'closure (car-safe def)) "closure")
+                            ((stringp def) def)
+                            ((vectorp def) (key-description def))
+                            ((and (consp def)
+                                  ;; looking for (STRING . DEFN)
+                                  (stringp (car def)))
+                             (concat (when (keymapp (cdr-safe def))
+                                       "group:")
+                                     (car def)))
+                            (t "unknown")))))
+               (when (or (null filter)
+                         (and (functionp filter)
+                              (funcall filter binding)))
+                 (push binding bindings)))))))
+       prefix-map))
+    bindings))
 
 (provide 'pen-which-key)

@@ -1041,4 +1041,7 @@
 (define-key eww-mode-map (kbd "C-c C-o") 'eww-follow-link)
 (define-key eww-mode-map (kbd "M-e") 'eww-reload-cache-for-page)
 
+(require 'pen-which-key)
+(define-key which-key-C-h-map (kbd "k") 'which-key-describe-prefix-bindings)
+
 (provide 'pen-example-config)

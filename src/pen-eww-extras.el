@@ -639,9 +639,16 @@ word(s) will be searched for via `eww-search-prefix'."
       (setq url (concat "file://" url))
     (setq url (eww--dwim-expand-url url)))
 
-  (if (or pen-lg-always
-          (lg-url-is-404 url))
-      (pen-lg-display-page url)
+  (if (and (not pen-lg-always)
+           (lg-url-is-404 url)
+           (yn "Try wayback?"))
+      (setq url (eww-select-wayback-for-url url)))
+
+  (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 16) (pen-lg-display-page url))
+   (pen-lg-always (pen-lg-display-page url))
+   ((lg-url-is-404 url) (pen-lg-display-page url))
+   (t
     (progn
       ;; *eww-racket-doc*
       (if (and (string-match "^\\*.*\\*$" (buffer-name))
@@ -683,7 +690,7 @@ word(s) will be searched for via `eww-search-prefix'."
           ;; (pen-tv (buffer-string))
           (url-retrieve url 'eww-render
                         (list url nil (current-buffer) nil use-chrome))))
-      (current-buffer))))
+      (current-buffer)))))
 
 (defun dom-to-str () (
                       (format "%S" (plist-get eww-data :dom))))

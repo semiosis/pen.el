@@ -227,6 +227,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-editing)
 (require 'pen-hippie-expand)
 (require 'pen-compatibility)
+(require 'pen-test-case-mode)
 (require 'pen-counsel)
 (require 'pen-selectrum)
 (require 'pen-marginalia)
