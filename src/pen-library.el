@@ -231,30 +231,60 @@ semantic-path means a path suitable for google/nl searching"
 (defun get-path-nocreate ()
   (get-path nil t))
 
+(defun read-char-picky (prompt chars &optional inherit-input-method seconds)
+  "Read characters like in `read-char-exclusive', but if input is
+not one of CHARS, return nil.  CHARS may be a list of characters,
+single-character strings, or a string of characters."
+  (let ((chars (mapcar (lambda (x)
+                         (if (characterp x) x (string-to-char x)))
+                       (append chars nil)))
+        (char  (read-char-exclusive prompt inherit-input-method seconds)))
+    (when (memq char chars)
+      char)))
+
+(defmacro pen-sw (expr &rest body)
+  "Switch; cond for strings. Probably should use pcase instead. The syntax is the same"
+  (let ((b
+         (mapcar
+          (lambda (e)
+            (list
+             (list 'string-equal expr (car e))
+             (cadr e)))
+          body)))
+    `(
+      cond
+      ,@b)))
+
+(defun test-sw ()
+  (interactive)
+  (etv
+   (sw "hello"
+     ("hello" "hi"))))
+
 (defmacro pen-qa (&rest body)
   ""
   (let ((m
          (pen-list2str (cl-loop for i from 0 to (- (length body) 1) by 2
-                             collect
-                             (pp-oneline
-                              (list
-                               (try
-                                (symbol-name
-                                 (nth i body))
-                                (str
-                                 (nth i body)))
-                               (nth (+ i 1) body))))))
+                                collect
+                                (pp-oneline
+                                 (list
+                                  (try
+                                   (symbol-name
+                                    (nth i body))
+                                   (str
+                                    (nth i body)))
+                                  (nth (+ i 1) body))))))
         (code
          (cl-loop for i from 0 to (- (length body) 1) by 2
-               collect
-               (let ((fstone (nth i body))
-                     (sndone (nth (+ i 1) body)))
-                 (list
-                  (string-to-char
-                   (string-reverse
-                    (symbol-name
-                     fstone)))
-                  sndone)))))
+                  collect
+                  (let ((fstone (nth i body))
+                        (sndone (nth (+ i 1) body)))
+                    (list
+                     (string-to-char
+                      (string-reverse
+                       (symbol-name
+                        fstone)))
+                     sndone)))))
     (append
      `(case
           (let ((r))

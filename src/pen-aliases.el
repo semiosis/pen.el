@@ -19,6 +19,10 @@
 (defalias 'cmd 'pen-cmd)
 (defalias 'mu 'pen-mu)
 (defalias 'mm 'pen-mm)
+(defalias 'qa 'pen-qa)
+;; (defalias 'sw 'pen-sw)
+(defalias 'sw 'pcase)
+(defalias 'list2str 'pen-list2str)
 (defalias 'pen-haskell-fill-hole 'pen-haskell-hoogle-type)
 
 (provide 'pen-aliases)
