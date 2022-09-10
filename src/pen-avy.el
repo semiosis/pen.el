@@ -74,9 +74,6 @@
   (with-current-buffer (pen-tmux-pane-capture t)
     (call-interactively 'avy-goto-char)))
 
-(define-key pen-map (kbd "M-j u") 'avy-new-buffer-from-tmux-pane-capture)
-(define-key pen-map (kbd "M-j M-u") 'avy-new-buffer-from-tmux-pane-capture)
-
 (defun ace-link-goto-button ()
   (interactive)
   (avy-with ace-link-help
@@ -138,22 +135,6 @@
      (avy--style-fn avy-style)))
   (widget-button-press (point)))
 
-(define-key pen-map (kbd "M-j M-l") #'run-line-or-region-in-tmux)
-(define-key pen-map (kbd "M-j M-i") #'ace-link)
-(define-key pen-map (kbd "M-j M-g") 'ace-link-goto-link-or-button)
-(define-key pen-map (kbd "M-j M-a") #'ace-link-click-glossary-button)
-(define-key pen-map (kbd "M-j M-k") #'avy-goto-char-all-windows)
-(define-key pen-map (kbd "M-j M-m") #'avy-goto-char-enter)
-(define-key pen-map (kbd "M-j M-9") #'avy-goto-char-9)
-(define-key pen-map (kbd "M-j M-w") #'avy-goto-link-or-button-w)
-(define-key pen-map (kbd "M-j M-o") #'avy-goto-char-c-o)
-(define-key pen-map (kbd "M-j M-9") #'avy-goto-char-doc)
-(define-key pen-map (kbd "M-j M-.") #'avy-goto-char-goto-def)
-(define-key pen-map (kbd "M-j M-x") #'avy-goto-char-left-click)
-(define-key pen-map (kbd "M-j M-z") #'avy-goto-char-right-click)
-(define-key pen-map (kbd "M-j M-j") #'avy-goto-symbol-1-below)
-(define-key pen-map (kbd "M-j M-s") #'avy-isearch)
-
 (defun avy-jump-around-advice (proc &rest args)
   (lsp-ui-doc-hide)
   (let ((res (apply proc args)))
@@ -183,9 +164,5 @@ values to copy the link to the clipboard and/or primary as well."
              (button-label button)))
        (t
         (button-label button))))))
-
-(require 'ivy-avy)
-
-(define-key ivy-minibuffer-map (kbd "M-k") 'ivy-avy)
 
 (provide 'pen-avy)
