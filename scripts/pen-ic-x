@@ -5,6 +5,8 @@ sn="$(basename "$0")"
 
 ( hs "$sn" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+sn="$(p "$sn" | sed 's/^pen-//')"
+
 case "$sn" in
     ga) {
         sn="grep-app"
