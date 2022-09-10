@@ -38,7 +38,7 @@ CMD="$(cmd-cip "$@")"
 shift "$#"
 
 if test -d "$dn"; then
-    x -shE "sp -s" -m '<' -c p -e "Beginning of buffer" -m : -s "(progn (find-file $(aqf-nice "$dn")) ($sn $CMD))" -c m -i
+    x -shE "pen-e -s" -m '<' -c p -e "Beginning of buffer" -m : -s "(progn (find-file $(aqf-nice "$dn")) ($sn $CMD))" -c m -i
 else
-    x -shE "sp -s" -m '<' -c p -e "Beginning of buffer" -m : -s "($sn $CMD)" -c m -i
+    x -shE "pen-e -s" -m '<' -c p -e "Beginning of buffer" -m : -s "($sn $CMD)" -c m -i
 fi
