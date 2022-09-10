@@ -35,6 +35,8 @@
 ;; (define-key function-key-map (kbd "M-h") 'hyperify)
 (define-key global-map (kbd "C-M-t") nil)
 (define-key function-key-map (kbd "C-M-t") 'hyperify)
+;; For GUI
+(define-key function-key-map (kbd "C-c H") 'hyperify)
 ;; M-h is usually used for org-mark-element, my-lispy-select-parent-sexp, etc.
 ;; However, it's an incredibly convenient binding..
 ;; Which would be great for hyper
