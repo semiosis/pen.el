@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -h) {
+        here=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$here" = "y"; then
+    echo "loading video..."
+    asciinema play "$@"
+else
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+    tm -d nw -sw "echo loading video...; asciinema-play -h $CMD"
+fi

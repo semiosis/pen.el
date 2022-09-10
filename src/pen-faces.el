@@ -1,6 +1,57 @@
 (require 'spacemacs-dark-theme)
 (load-theme 'spacemacs-dark t)
 
+(defface org-bold
+  '((t :foreground "#d2268b"
+       :background "#2e2e2e"
+       :weight bold
+       :underline t))
+  "Face for org-mode bold."
+  :group 'org-faces)
+
+(defface org-italic
+  '((t :foreground "#8bd226"
+       :background "#2e2e2e"
+       :weight normal
+       :slant italic
+       :underline t))
+  "Face for org-mode italic."
+  :group 'org-faces)
+
+(defface org-underline
+  '((t :foreground "#8b26d2"
+       :background "#2e2e2e"
+       :weight normal
+       :slant italic
+       :underline t))
+  "Face for org-mode underline."
+  :group 'org-faces)
+
+(defsetface org-strikethrough
+  '((t :foreground "#660000"
+       :weight normal
+       :strike-through t))
+  "Face for org-mode strikethrough.")
+
+(setq org-emphasis-alist
+  '(("*" ;; (bold :foreground "Orange" )
+     org-bold)
+    ("/" ;; italic
+     org-italic)
+    ("_" ;; underline
+     org-underline
+     )
+    ("=" ;; (:background "maroon" :foreground "white")
+     org-verbatim verbatim)
+    ("$HOME" ;; (:background "deep sky blue" :foreground "MidnightBlue")
+     org-code verbatim)
+    ;; ("+" (:strike-through t))
+    ("+" org-strikethrough)))
+
+(set-face-foreground 'org-verbatim "#f07000")
+;; (set-face-foreground 'org-code "#f070f0")
+(set-face-foreground 'org-code "#c0c0c0")
+
 (defun pen-list-faces (&optional regexp)
   "List all faces, using the same sample text in each.
 The sample text is a string that comes from the variable
