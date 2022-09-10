@@ -17,13 +17,6 @@ blacklist() {
         grep -v /.atom/
 }
 
-# grep "$HOME/text-mirror"
-
-#real_path_if_possible() {
-#    awk1 | while IFS=$'\n' read -r line; do
-#        real_path="$(p "$real_path" | filter)"
-#    done
-#}
 
 alt -s glimpse -n "$@" | blacklist | sed "s=^$HOME/text-mirror\\(.*\\)\\.txt:=\\1:=" | {
     if is_tty; then
