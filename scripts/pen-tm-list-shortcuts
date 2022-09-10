@@ -10,4 +10,4 @@ fi
 
 paths="directories.*"
 paths="$(shopt -s nullglob; shopt -s extglob; eval printf -- "%s\\\n" "$paths" | qargs)" # expand
-printf -- "%s\n" "$paths" | xargs cat1 | scrape-dirs-fast.sh | pen-print-line-if-directory-exists | mnm
+printf -- "%s\n" "$paths" | xargs cat1 | pen-scrape-dirs-fast.sh | pen-print-line-if-directory-exists | mnm

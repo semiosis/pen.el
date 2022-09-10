@@ -2233,7 +2233,7 @@ case "$f" in
 
     scrape|scrape-filter) {
         cap="$(pen-tm cap)"
-        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "pen-f filter-with-fzf"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "pen-F filter-with-fzf"
     }
     ;;
 
@@ -2245,7 +2245,7 @@ case "$f" in
 
     scrape-things) {
         cap="$(pen-tm cap)"
-        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "pen-f filter-things"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "pen-F filter-things"
     }
     ;;
 
@@ -2262,7 +2262,7 @@ case "$f" in
 
     scrapep) {
         cap="$(pen-tm capp)"
-        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "pen-f filter-with-fzf"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "pen-F filter-with-fzf"
     }
     ;;
 
@@ -3268,7 +3268,7 @@ case "$f" in
         pl "Use a command from the git hydra"
 
         pl "Remotes"
-        git remote -v | pen-f urls
+        git remote -v | pen-F urls
 
         pen-pak
     }
@@ -3387,7 +3387,7 @@ case "$f" in
     ;;
 
     edit-file) {
-        paths="$(find . -maxdepth 1 -type pen-f | sed 's/^..//')"
+        paths="$(find . -maxdepth 1 -type pen-F | sed 's/^..//')"
         if [ -n "$paths" ]; then
             paths="$(pl "$paths" | pen-str uniq | pen-tm -f -i spv -noerror "mfz -p" | umn)"
             pl "$paths" | awk 1 | while IFS=$'\n' read -r line; do
@@ -3443,7 +3443,7 @@ case "$f" in
     ;;
 
     open-dirs) {
-        selections="$(pen-tm -s -fout spv -noerror "pen-f find-no-git -d | mfz")"
+        selections="$(pen-tm -s -fout spv -noerror "pen-F find-no-git -d | mfz")"
         if [ -n "$selections" ]; then
             printf -- "%s\n" "$selections" | \
             while read -r line; do
@@ -3458,7 +3458,7 @@ case "$f" in
     ;;
 
     open-files) {
-        selections="$(pen-tm -s -fout spv -noerror "pen-f f | mfz")"
+        selections="$(pen-tm -s -fout spv -noerror "pen-F f | mfz")"
         if [ -n "$selections" ]; then
             printf -- "%s\n" "$selections" | \
             while read -r line; do
@@ -3494,7 +3494,7 @@ case "$f" in
         IFS= read -rd '' input < <(cat /dev/stdin)
 
         export HAS_STDOUT
-        sout="$(set -o pipefail; printf -- "%s" "$input" | pen-tm spv -noerror "pen-f filter-with-fzf" | cat)"
+        sout="$(set -o pipefail; printf -- "%s" "$input" | pen-tm spv -noerror "pen-F filter-with-fzf" | cat)"
         ret="$?"
 
         if test "$ret" -eq 0; then

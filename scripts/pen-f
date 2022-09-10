@@ -114,12 +114,12 @@ case "$opt" in
     ;;
 
     d|donly|dirs|dirs-only) {
-        scrape-dirs-fast.sh
+        pen-scrape-dirs-fast.sh
     }
     ;;
 
     f|fonly|files|files-only) {
-        scrape-files-fast.sh
+        pen-scrape-files-fast.sh
     }
     ;;
 
