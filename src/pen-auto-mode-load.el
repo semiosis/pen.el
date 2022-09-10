@@ -194,6 +194,7 @@
 (add-hook 'org-mode-hook '(lambda () (selected-minor-mode 1)))
 
 (add-hook 'occur-hook '(lambda () (toggle-truncate-lines 1)))
+;; (remove-hook 'occur-hook '(lambda () (toggle-truncate-lines 1)))
 
 (defun enable-chop-lines ()
   (visual-line-mode -1)
@@ -201,7 +202,9 @@
 
 (remove-hook 'org-mode-hook #'enable-chop-lines)
 
-(add-hook 'yas-minor-mode-hook '(lambda () (toggle-truncate-lines 1))) ;This is for snippets
+;; This spams "*messages*" with 'Truncate long lines enabled'
+(add-hook 'yas-minor-mode-hook '(lambda () (toggle-truncate-lines 1)))
+;; (remove-hook 'yas-minor-mode-hook '(lambda () (toggle-truncate-lines 1)))
 
 (defmacro enable-major-mode (mode_symbol)
   (quote mode_symbol))

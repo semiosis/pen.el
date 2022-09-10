@@ -950,7 +950,7 @@ non-nil."
 			                    (set-window-hscroll window 0)))
 		                nil t)))
   (pen-message-no-echo "Truncate long lines %s"
-	                     (if truncate-lines "enabled" "disabled")))
+	               (if truncate-lines "enabled" "disabled")))
 
 (defun pen-nsfa (cm &optional dir)
   (let ((qdir (pen-q dir)))
