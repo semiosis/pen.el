@@ -187,6 +187,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-term-modes)
 (require 'pen-tablist)
 (require 'pen-micro-blogging)
+(require 'pen-org-tidbits)
 
 (defun pen-shellquote (input)
   "If string contains spaces or backslashes, put quotes around it, but only if it is not surrounded by ''."

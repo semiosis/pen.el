@@ -19,6 +19,8 @@
               (ignore-errors (kill-buffer name))
               (message (concat "killed buffer " name " because it's slow")))))))
 
+(scroll-bar-mode -1)
+
 (defun toggle-chrome ()
   (interactive)
   (kill-buffer-if-not-current "*aws-instances*")
