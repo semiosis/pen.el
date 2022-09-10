@@ -284,9 +284,13 @@ NEEDLE is the search string."
       (with-current-buffer
           ;; How can I use pen-mnm but only on the file paths? -- I want to be able to filter on a column only
           (let ((globstr (if (sor path-re)
-                             (concat "-p " (pen-q path-re) " "))))
-            (new-buffer-from-string (ignore-errors (pen-sn (concat "pen-ead " globstr (pen-q pattern) " | pen-mnm | cat") nil wd))))
+                             (concat "-p " (pen-q path-re) " ")
+                           "")))
+            (new-buffer-from-string
+             (ignore-errors (pen-sn (concat "pen-ead -f " globstr (pen-q pattern) " | pen-mnm | cat") nil wd))
+             "*wgrep*"))
         (grep-mode)))))
+(defalias 'ead 'pen-wgrep)
 
 (if (inside-docker-p)
     (defalias 'wgrep 'pen-wgrep))

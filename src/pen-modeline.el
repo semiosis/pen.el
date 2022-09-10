@@ -59,4 +59,7 @@
             (sit-for delta)))
       (force-mode-line-update))))
 
+;; (define-key mode-line-map 'mouse-movement 'tty-menu-mouse-movement)
+;; (define-key my-mode-map (kbd "key") )
+
 (provide 'pen-modeline)
