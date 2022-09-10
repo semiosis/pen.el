@@ -1,0 +1,29 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+# | sed "s=$HOME/text-mirror\(.*\).txt$=\1="
+
+blacklist() {
+    grep -v /programs/ci/ |
+        grep -v /.atom/
+}
+
+if is_tty; then
+    /usr/bin/glimpse -1 -n "$@" | blacklist | ead -j
+else
+    /usr/bin/glimpse -1 "$@" | blacklist
+fi
+
+# glimpse -F '-1 \.html' "a" | cat
+# glimpse -F '-1 \.html' pattern
+# 
+# will allow one spelling error when matching  .html  to
+# the  file  names (so ".htm" and ".shtml" will match as
+# well).

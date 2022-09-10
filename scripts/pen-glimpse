@@ -1,0 +1,34 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+# | sed "s=$HOME/text-mirror\(.*\).txt$=\1="
+
+blacklist() {
+    grep -v /programs/ci/ |
+        grep -v clipboard.txt |
+        grep -v /ns/ |
+        grep -v /.atom/
+}
+
+# grep "$HOME/text-mirror"
+
+#real_path_if_possible() {
+#    awk1 | while IFS=$'\n' read -r line; do
+#        real_path="$(p "$real_path" | filter)"
+#    done
+#}
+
+alt -s glimpse -n "$@" | blacklist | sed "s=^$HOME/text-mirror\\(.*\\)\\.txt:=\\1:=" | {
+    if is_tty; then
+        ead -j || pak
+    else
+        cat
+    fi
+}

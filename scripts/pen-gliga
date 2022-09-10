@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -n "$1" || exit 1
+test -n "$2" || exit 1
+
+contentspat="$1"
+pathpat="$2"
+
+sps -pak gli -F "$pathpat" -i "$contentspat"
+ga "$contentspat" "$pathpat"
