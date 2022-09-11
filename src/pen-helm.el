@@ -1,4 +1,5 @@
 (require 'helm-buffers)
+(require 'helm-descbinds)
 (require 'helm-google)
 (require 'helm)
 ;; (require 'pen-utils)
@@ -554,5 +555,7 @@ Call `helm' only with SOURCES and BUFFER as args."
                                     ([C-c DEL] . helm-ff-run-toggle-auto-update))
                                   nil 'helm-ff-delete-char-backward--exit-fn)
     map))
+
+(helm-descbinds-mode 1)
 
 (provide 'pen-helm)
