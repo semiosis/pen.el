@@ -963,6 +963,7 @@ cargo install difftastic
 
 pyf yamlfmt
 
+# Currently not working. Apparantly, it's normal for the latest version to not work
 # Install the rust language server (rust-analyzer) manually (rather than through emacs)
 rustup toolchain install nightly --component rust-analyzer-preview
 (
