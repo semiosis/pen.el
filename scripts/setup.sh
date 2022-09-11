@@ -986,3 +986,9 @@ agi tclsh
 agi elinks
 
 pyf pdf2txt
+
+# Solidity
+(
+cd ~/repos/
+git clone "http://github.com/mullikine/lsp-solidity-el"
+)
