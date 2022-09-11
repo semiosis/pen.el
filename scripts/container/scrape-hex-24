@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# scrape '[:xdigit:]{24}'
+
+scrape "[0-9a-fA-F]{24}"

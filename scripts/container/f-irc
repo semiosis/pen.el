@@ -1,0 +1,3 @@
+#!/bin/bash
+
+scrape -r '[\x23][\x23]?[a-z0-9.A-Z-]+' | sed '/^$/d' | uniqnosort

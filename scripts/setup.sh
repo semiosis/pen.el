@@ -981,3 +981,5 @@ agi libfuse3-dev libfuse3-3
 agi glimpse
 
 agi tclsh
+
+agi elinks
