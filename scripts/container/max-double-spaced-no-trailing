@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+# Only remove trailing, not leading
+sed 's/\s\+$//' | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'

@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# ncdu actually takes some interesting parameters, such as --exclude
+# I have to know how to use this.
+# It doesn't seem to be PCRE
+
+# This is the way
+# ncdu --exclude "/media/*"
+
+# This is needed so when ncdu spawns zsh it doesn't revert the directory
+unset CWD
+
+if test "$#" -eq 1 && test "$1" = "/"; then
+    set -- --exclude "/media/*" "$@"
+fi
+
+if ! test "$INSIDE_NEOVIM" = y; then
+    nvc ncdu "$@"
+    exit "$?"
+fi
+
+SHELL=nw /usr/bin/ncdu "$@"
