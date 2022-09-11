@@ -2013,7 +2013,7 @@ case "$f" in
         fi
 
         if test "$NEOVIM" = "y"; then
-            cmd="nv -E -term $(cmd-nice-posix "$cmd")"
+            cmd="nvc -E $(cmd-nice-posix "$cmd")"
         elif test "$NEOVIM_TMUX" = "y"; then
             cmd="nvt -E $(cmd-nice-posix "$cmd")"
         fi
@@ -3044,7 +3044,7 @@ case "$f" in
         stdinfd=/proc/$$/fd/0
         stdoutfd=/proc/$$/fd/1
 
-        0</dev/null pen-tm -te sps -w "ised $stdinfd $stdoutfd" | cat
+        0</dev/null pen-tm -te sps -w "nvc ised $stdinfd $stdoutfd" | cat
     }
     ;;
 

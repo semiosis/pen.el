@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# tmi
+# interactive sed
+
+# interactively arbitrate lines of stdin to stdout
+
+tm icat
+
+# see tmi
