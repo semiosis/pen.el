@@ -454,5 +454,8 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 (add-hook 'rust-mode-hook #'maybe-lsp)
 (add-hook 'clojure-mode-hook #'maybe-lsp)
 
+(require 'lsp-rust)
+(setq lsp-rust-server 'rust-analyzer)
+
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here

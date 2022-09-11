@@ -85,6 +85,8 @@ if test -d ~/.emacs.d/host/pen.el/config; then
     ln -sf ~/.emacs.d/host/pen.el/config/zsh/fzf.zsh ~/.fzf.zsh
     ln -sf ~/.emacs.d/host/pen.el/config/zsh/git.zsh ~/.git.zsh
     ln -sf ~/.emacs.d/host/pen.el/config/shellrc ~/.shellrc
+    ln -sf ~/.emacs.d/host/pen.el/config/visidatarc ~/.visidatarc
+    ln -sf ~/.emacs.d/host/pen.el/config/files.txt ~/notes/files.txt
 
     mkdir -p $HOME/.config/broot/
     ln -sf ~/.emacs.d/host/pen.el/config/broot-conf.toml ~/.config/broot/conf.toml
@@ -97,6 +99,8 @@ else
     ln -sf ~/.emacs.d/pen.el/config/zsh/fzf.zsh ~/.fzf.zsh
     ln -sf ~/.emacs.d/pen.el/config/zsh/git.zsh ~/.git.zsh
     ln -sf ~/.emacs.d/pen.el/config/shellrc ~/.shellrc
+    ln -sf ~/.emacs.d/pen.el/config/visidatarc ~/.visidatarc
+    ln -sf ~/.emacs.d/pen.el/config/files.txt ~/notes/files.txt
 
     mkdir -p $HOME/.config/broot/
     ln -sf ~/.emacs.d/pen.el/config/broot-conf.toml ~/.config/broot/conf.toml
@@ -113,6 +117,10 @@ fi
 
 if test -f $HOME/.emacs.d/host/pen.el/config/tmux.conf; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/tmux.conf ~/.tmux.conf
+fi
+
+if test -f $HOME/.emacs.d/host/pen.el/config/tmux.conf; then
+    ln -sf $HOME/.emacs.d/host/pen.el/config/tmux.conf $HOME/.tmux.conf
 fi
 
 if test -f $HOME/.emacs.d/host/pen.el/config/efm-langserver-config.yaml && ! test -f $HOME/.config/efm-langserver; then

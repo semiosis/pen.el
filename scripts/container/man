@@ -1,7 +1,17 @@
 #!/bin/bash
 export TTY
 
+# Remember:
+# $EMACSD/host/pen.el/scripts/container/man /usr/local/lib/python3.7/dist-packages/visidata/man/vd.1
+
 parent_bn="$(ps -o comm= $PPID)"
+
+caller_tree="$(pstree -lAsp "$PPID")"
+# When fpdv calls 'man' break it into a separate tmux window
+if pl "$caller_tree" | grep -q -P 'pvd'; then
+    nw "$0" "$@"
+    exit "$?"
+fi
 
 is_tty() { [ -t 1 ]; }
 
@@ -34,9 +44,9 @@ if test "$#" -gt 0; then
 fi
 
 if test "$parent_bn" = emacs || test "$TERM" = dumb; then
-    /usr/bin/man "$@" | pen-pa -E "$PAGER"
+    /usr/bin/man "$@" 2>/dev/null | pen-pa -E "$PAGER"
 elif man-page-exists-p "$@"; then
-    /usr/bin/man "$@" | pen-pa -E "$PAGER"
+    /usr/bin/man "$@" 2>/dev/null | pen-pa -E "$PAGER"
 else
     iman "$@"
 fi

@@ -1,0 +1,11 @@
+# -*- mode: python; -*-
+
+options.min_memory_mb=100  # stop processing without 100MB free
+
+bindkey('0', 'go-leftmost')   # alias '0' to move to first column, like vim
+
+def median(values):
+    L = sorted(values)
+    return L[len(L)//2]
+
+aggregator('median', median)

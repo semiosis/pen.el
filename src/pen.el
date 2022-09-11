@@ -253,6 +253,7 @@ Be mindful of quoting arguments correctly."
 ;; (require 'pen-doc)
 
 
+(require 'pen-apps)
 (require 'pen-network)
 
 ;; Not sure I need the following in pen.el
