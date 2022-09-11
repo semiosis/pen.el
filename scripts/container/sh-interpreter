@@ -116,7 +116,7 @@ case "$d" in
     o) cmd="go-playground" ;;
     R) cmd="sp -ci rust-playground" ;;
     # p) cmd="python" ;;
-    2) cmd="pet nvt tclsh" ;;
+    2) cmd="nvt pet tclsh" ;;
     y) cmd="ipython" ;;
     p) cmd="xpti" ;;
     # Indeed it matters where you run from
