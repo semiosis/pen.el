@@ -20,7 +20,7 @@
 
 (defun pen-dired-src ()
   (interactive)
-  (dired pen-imonad-directory))
+  (dired (f-join pen-penel-directory "src")))
 
 (defun pen-dired-channel ()
   (interactive)
