@@ -38,4 +38,23 @@ pen-tm -te nw -d -fa pen-e sa
 # I want EFM to find commands in the host PATH
 . `which setup-term.sh`
 
+if pen-rc-test ask_view_pen_lsp; then
+    pen-tm yn "view stdin?" && exec < <(tmicat)
+    pen-tm yn "view stdout?" && exec 1> >(tmicat)
+elif pen-rc-test ask_log_pen_lsp; then
+    pen-tm yn "log stdin?" && {
+        tf_in="$(pen-ux tf in || echo /dev/null)"
+        exec < <(tee "$tf_in")
+        0</dev/null pen-sps -E "$(cmd-nice-posix v "$tf_in")"
+    }
+    pen-tm yn "log stdout?" && {
+        tf_out="$(pen-ux tf out || echo /dev/null)"
+        exec 1> >(tee "$tf_out")
+        0</dev/null pen-sps -E "$(cmd-nice-posix v "$tf_out")"
+    }
+elif pen-rc-test ask_arbitrate_pen_lsp; then
+    pen-tm yn "arbitrate stdin?" && exec < <(tmi)
+    pen-tm yn "arbitrate stdout?" && exec 1> >(tmi)
+fi
+
 efm-langserver "$@"
