@@ -457,5 +457,8 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 (require 'lsp-rust)
 (setq lsp-rust-server 'rust-analyzer)
 
+(remove-from-list 'exec-path "/root/.cargo/bin")
+(add-to-list 'exec-path "/root/.cargo/bin" t)
+
 (provide 'pen-lsp-client)
 ;;; pen-lsp.el ends here
