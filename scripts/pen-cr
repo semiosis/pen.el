@@ -1273,9 +1273,9 @@ case "$fnspec" in
         set -xv
         xrdb -merge ~/.Xresources
         xrdb -load ~/.Xresources
-        xmonad --restart
-        killall nautilus-desktop
-        restart-compton
+        # xmonad --restart
+        # killall nautilus-desktop
+        # restart-compton
         pen-pak
         exit 0
     }

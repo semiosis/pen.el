@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -k) {
+        killall compton
+        exit 0
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+killall /usr/bin/compton 2>/dev/null
+
+# /usr/bin/compton --backend=glx -d :0 -S -c -r7 -l -10 -t-8 -o0.5 -G -b
+# --blur-background --invert-color-include "class_i = \"compton-invert\"" --shadow-exclude 'class_i = "compton-invert"' --shadow-exclude 'class_g = "VirtualBox"' --opacity-rule "85:name *= \"ace localhost\"" --opacity-rule "85:name *= \"xterm\""
+ # --blur-background-include "name = \"morgan localhost\""
+  # --blur-background-include "name = \"xterm\""
+
+# Backgrounding within a scripts is effectively the same as disowning it
+# if it's in the background as the script ends
+/usr/bin/compton --backend=glx "$@" &

@@ -2180,6 +2180,15 @@ imap <Esc>L <Esc>a<Esc>ljki<C-l>
 imap <C-l> <Plug>snipMateNextOrTrigger
 smap <C-l> <Plug>snipMateNextOrTrigger
 
+function! ExecInTmux()
+    silent! call SaveTemp()
+    silent! call TmuxBaseWait()
+    silent! call system('tm -f -te -d sps -c "'.fnameescape(expand('%:p:h')).'" "cr '.fnameescape(expand('%:p')).'"'))
+endfunction
+
+nnoremap <silent> Zr :call ExecInTmux()<CR>
+xnoremap <silent> Zr <ESC>:call ExecInTmux()<CR>
+
 function! SchemaInTmux()
     silent! call SaveTemp()
     silent! call TmuxBaseWait()
