@@ -9,26 +9,15 @@
 ;; When running an imaginary web search, optionally say which ones are real
 
 (require 'eww)
-
-(require 'eww)
+(require 'pen-eww-extras)
 (require 'cl-lib)
 ;; (require 'eww-lnum)
 (require 'pen-asciinema)
-
 
 (defcustom pen-lg-always ""
   "Always use LG instead of real websites"
   :type 'boolean
   :group 'pen)
-
-
-(defun pen-uniqify-buffer (b)
-  "Give the buffer a unique name"
-  (with-current-buffer b
-    (ignore-errors (let* ((hash (short-hash (str (time-to-seconds))))
-                          (new-buffer-name (pcre-replace-string "(\\*?)$" (concat "-" hash "\\1") (current-buffer-name))))
-                     (rename-buffer new-buffer-name)))
-    b))
 
 ;; TODO Also make one that re-renders an eww website, imaginarily
 (defun lg-render (ascii &optional url)
@@ -106,18 +95,9 @@
         (pen-etv alttext-and-description)
       (ink-propertise alttext-and-description))))
 
-(defun url-is-404 (url)
-  "URL is 404"
-  (pen-sn-true (concat "pen-curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
-
 (defun pen-lg-select-rendering (results)
   (let* ((result (fz results nil nil "select rendering: ")))
     (new-buffer-from-string (ink-propertise result))))
-
-(defun test-404 ()
-  (if (lg-url-is-404 "https:/www.google.com/search?ie=utf-8&oe=utf-8&q=containers-0.4.0.0")
-      "is 404"
-    "is not 404"))
 
 (defun pen-lg-display-page (url)
   (interactive (list (read-string-hist "🔍 Enter URL: "
@@ -146,8 +126,5 @@
                    do (pen-etv (ink-propertise pg)))
         (eww url))))))
 (defalias 'lg-search 'pen-browse-url-for-passage)
-
-(define-key pen-map (kbd "H-g") 'lg-eww)
-(define-key pen-map (kbd "H-/") 'lg-search)
 
 (provide 'pen-looking-glass)

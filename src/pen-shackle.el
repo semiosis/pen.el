@@ -175,7 +175,7 @@
             ;; (setq help-window-select nil)
             ("*Help*" :select t :same t :align pen--shackle-sensible-alignment)
             ;; ("*Help*" :other t :select nil :same nil :align pen--shackle-sensible-alignment :size 0.5)
-            ("\\*helpful .*" :regexp t :other t :select nil :same nil :align pen--shackle-sensible-alignment :size 0.5)
+            ("\\*helpful .*" :regexp t :other t :select t :same nil :align pen--shackle-sensible-alignment :size 0.5)
             ;; ("*Help*" :other t :select nil :same nil :align pen--shackle-sensible-alignment :size 0.25)
             ;; ("*Help*" :other t :select t)
             (circe-channel-mode :select t :same t)

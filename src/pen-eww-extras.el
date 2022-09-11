@@ -2031,4 +2031,21 @@ the URL of the image to the kill buffer instead."
 ;;   (unless (eq major-mode 'eww-mode)
 ;;     (eww-mode)))
 
+(defun url-is-404 (url)
+  "URL is 404"
+  (pen-sn-true (concat "pen-curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
+
+(defun test-404 ()
+  (if (lg-url-is-404 "https:/www.google.com/search?ie=utf-8&oe=utf-8&q=containers-0.4.0.0")
+      "is 404"
+    "is not 404"))
+
+(defun pen-uniqify-buffer (b)
+  "Give the buffer a unique name"
+  (with-current-buffer b
+    (ignore-errors (let* ((hash (short-hash (str (time-to-seconds))))
+                          (new-buffer-name (pcre-replace-string "(\\*?)$" (concat "-" hash "\\1") (current-buffer-name))))
+                     (rename-buffer new-buffer-name)))
+    b))
+
 (provide 'pen-eww-extras)

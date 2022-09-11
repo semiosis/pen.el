@@ -1067,4 +1067,8 @@
 (define-key comint-mode-map (kbd "C-a") 'comint-bol)
 (define-key comint-mode-map (kbd "C-e") 'end-of-line)
 
+(require 'pen-looking-glass)
+(define-key pen-map (kbd "H-g") 'lg-eww)
+(define-key pen-map (kbd "H-/") 'lg-search)
+
 (provide 'pen-example-config)
