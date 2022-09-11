@@ -1044,4 +1044,7 @@
 (require 'pen-which-key)
 (define-key which-key-C-h-map (kbd "k") 'which-key-describe-prefix-bindings)
 
+(require 'pen-post-bindings)
+(load-library "pen-post-bindings")
+
 (provide 'pen-example-config)

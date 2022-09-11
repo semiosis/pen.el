@@ -23,6 +23,7 @@ rg() {
     rg '**/*.hs'  '^main :: IO\b'
     rg '**/*.go'  '^func main\b'
     rg '**/*.rs'  '^pub fn main\b'
+    rg '**/*.rs'  '^fn main\b'
     rg '**/*.rkt' "module\\+ main\\b"
     rg '**/*.rkt' "\\(define \\(main-loop\\)"
 } | pen-sort line-length | pen-sort path-depth | pavs

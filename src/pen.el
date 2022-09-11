@@ -248,8 +248,6 @@ Be mindful of quoting arguments correctly."
       (require 'pen-buttoncloud)
       (require 'pen-log)))
 
-(require 'pen-post-bindings)
-
 ;; (require 'pen-search)
 ;; (require 'pen-grep)
 ;; (require 'pen-doc)
