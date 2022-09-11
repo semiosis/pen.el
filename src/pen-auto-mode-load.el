@@ -203,7 +203,7 @@
 (remove-hook 'org-mode-hook #'enable-chop-lines)
 
 ;; This spams "*messages*" with 'Truncate long lines enabled'
-(add-hook 'yas-minor-mode-hook '(lambda () (toggle-truncate-lines 1)))
+;; (add-hook 'yas-minor-mode-hook '(lambda () (toggle-truncate-lines 1)))
 ;; (remove-hook 'yas-minor-mode-hook '(lambda () (toggle-truncate-lines 1)))
 
 (defmacro enable-major-mode (mode_symbol)
