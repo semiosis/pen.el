@@ -983,6 +983,19 @@
 (define-key pen-map (kbd "M-j u") 'avy-new-buffer-from-tmux-pane-capture)
 (define-key pen-map (kbd "M-j M-u") 'avy-new-buffer-from-tmux-pane-capture)
 
+(require 'pen-babel)
+(define-key org-mode-map (kbd "M-.") 'org-babel-change-block-type)
+(define-key org-mode-map (kbd "M-@") 'org-babel-add-src-args)
+(define-key org-mode-map (kbd "C-c N") 'org-babel-add-name)
+(define-key org-mode-map (kbd "M-!") 'org-babel-add-stdin-arg-for-previous-block)
+(define-key org-mode-map (kbd "M-q M-r") #'org-babel-open-src-block-result-maybe)
+(define-key org-src-mode-map (kbd "C-c C-c") #'org-edit-src-exit)
+;; This is the easiest way to get around the issue of
+;; the major mode changing within a babel block.
+(define-key pen-map (kbd "C-c '") 'org-edit-special)
+;; (define-key org-babel-map (kbd "C-c") nil)
+;; (define-key org-babel-map (kbd "C-c '") 'org-edit-special)
+
 (require 'pen-eww)
 (define-key eww-mode-map (kbd "]") 'eww-next-image)
 (define-key eww-mode-map (kbd "[") 'eww-previous-image)

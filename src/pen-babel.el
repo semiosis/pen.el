@@ -31,10 +31,6 @@
 
 (setq org-src-window-setup 'current-window)
 
-(define-key org-mode-map (kbd "M-q M-r") #'org-babel-open-src-block-result-maybe)
-
-(define-key org-src-mode-map (kbd "C-c C-c") #'org-edit-src-exit)
-
 ;; Not sure why this is not collecting the output
 (defun org-babel-execute:powershell (body params)
   (let* ((coding-system-for-read 'utf-8) ;use utf-8 with sub-processes
@@ -334,8 +330,6 @@ block."
         (t
          (self-insert-command 1))))
 
-(define-key org-mode-map (kbd "M-.") 'org-babel-change-block-type)
-
 (setq org-confirm-babel-evaluate nil)
 
 (defun org-babel-execute-named-block ()
@@ -359,8 +353,6 @@ block."
   (interactive)
   (if (org-in-src-block-p)
       (org-babel-insert-header-arg "args" (read-string "arguments:"))))
-
-(define-key org-mode-map (kbd "M-@") 'org-babel-add-src-args)
 
 (defun pen-org-babel-goto-block-head (p)
   "Go to the beginning of the current block.
@@ -393,8 +385,6 @@ block."
         (previous-line)
         (insert "n")
         (call-interactively 'pen-yas-complete))))
-(define-key org-mode-map (kbd "C-c N") 'org-babel-add-name)
-
 
 (defun org-babel-previous-src-name ()
   (save-excursion
@@ -415,8 +405,6 @@ block."
             (org-babel-insert-header-arg "inr" prevres)
           (if prevsrc
               (org-babel-insert-header-arg "inb" prevsrc))))))
-
-(define-key org-mode-map (kbd "M-!") 'org-babel-add-stdin-arg-for-previous-block)
 
 (defun org-get-src-block-language ()
   (interactive)
@@ -470,12 +458,5 @@ block."
           (org-in-block-p '("src" "example" "verbatim" "clocktable" "example")))
       (org-copy-src-block)
     (self-insert-command 1)))
-
-;; This is the easiest way to get around the issue of
-;; the major mode changing within a babel block.
-(define-key pen-map (kbd "C-c '") 'org-edit-special)
-
-;; (define-key org-babel-map (kbd "C-c") nil)
-;; (define-key org-babel-map (kbd "C-c '") 'org-edit-special)
 
 (provide 'pen-babel)
