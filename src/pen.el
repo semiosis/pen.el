@@ -2148,6 +2148,7 @@ May use to generate code from comments."
 (require 'ilambda)
 (require 'pen-metacognition)
 (require 'pen-dap)
+(require 'pen-solidity)
 (require 'pen-cacheit)
 (require 'pen-ii)
 (require 'pen-comint)

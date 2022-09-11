@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+# Updating the library recently fixed some issues. It's worth doing this
+# py f pdfminer
+
+is_stdout_pipe() {
+    [[ -p /dev/stdout ]]
+}
+
+# Calibre uses this
+# pdftohtml -enc UTF-8 -noframes -p -nomerge -nodrm src.pdf index.html
+
+if is_stdout_pipe; then
+    pdf2txt.py "$@" | c ascify | {
+        # Some book generate tabs instead of spaces
+        sed 's/	\+/ /g' | sed 's/ \+/ /g' | sed 's/ . . ./.../g' | sed 's//\n&\n/g'
+    }
+else
+    pdf2txt.py "$@"
+fi

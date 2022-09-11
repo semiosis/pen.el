@@ -984,3 +984,5 @@ agi glimpse
 agi tclsh
 
 agi elinks
+
+pyf pdf2txt
