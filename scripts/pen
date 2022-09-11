@@ -1074,6 +1074,8 @@ has_placeholder() {
     test "$found" = y
 }
 
+export PEN_INVOCATION="$(cmd "$@")"
+
 case "$sn" in
     penf) {
         # cmd "$@" | tv &>/dev/null
@@ -1187,6 +1189,8 @@ case "$sn" in
                     set -- "$in" "$@"
                 fi
             fi
+
+            export PEN_INVOCATION="$pfname $(cmd "$@")"
 
             if ! printf -- "%s\n" "$pfname" | grep -q -P '/[0-9]*'; then
                 pfname="$pfname/$#"

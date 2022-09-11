@@ -100,7 +100,7 @@ fi
 # The bash interop isn't normally *supposed* to use the human engine, so, this is ok to keep it as default here.
 sentinel_string="tm_sentinel_${RANDOM}_$$"
 # unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"
-tmux neww -d -n eval-ec-$SOCKET "PEN_NO_TIMEOUT=$PEN_NO_TIMEOUT $(cmd pen-timeout 10 unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
+tmux neww -d -n eval-ec-$SOCKET "echo $(cmd "$PEN_INVOCATION") | hls green 1>&2; PEN_NO_TIMEOUT=$PEN_NO_TIMEOUT $(cmd pen-timeout 10 unbuffer pen-emacsclient -a "" -s ~/.emacs.d/server/$SOCKET -e "(pen-eval-for-host \"$fp\" \"~/.pen/pool/available/$SOCKET\" $last_arg)"); tmux wait-for -S '$sentinel_string';"
 tmux wait-for "$sentinel_string"
 
 export SOCKET
@@ -115,6 +115,8 @@ sleep 0.1
 if test -s "$fp"; then
     0</dev/null cat "$fp" 2>/dev/null
 fi
+
+rm -f "$fp"
 
 # touch ~/.pen/pool/available/$SOCKET
 
