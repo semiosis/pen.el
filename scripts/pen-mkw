@@ -55,7 +55,7 @@ esac; done
 # # This is also needed so it can be found
 if test "$make_npm" = "y"; then
     : "${NODE_VERSION:="$(oci pen-rc .node_version)"}"
-    . $HOME/sh-source/nvm-node
+    . $HOME/repos/sh-source/nvm-node
     nvm use "$NODE_VERSION" 1>&2 || nvm install "$NODE_VERSION" 1>&2
 fi
 
@@ -101,7 +101,7 @@ if test "$make_npm" = "y"; then
 IFS= read -r -d '' npmcode <<HEREDOC
 sn="\$(basename "\$0")"
 : "\${NODE_VERSION:="\$(oci pen-rc .node_version)"}"
-. \$HOME/sh-source/nvm-node
+. \$HOME/repos/sh-source/nvm-node
 nvm use "\$NODE_VERSION" 1>&2 || nvm install "\$NODE_VERSION" 1>&2
 which "\$sn" | grep -q ".nvm/" || npm install -g "\$sn"
 HEREDOC

@@ -188,7 +188,7 @@ This issue might be caused by:
 (add-hook 'rust-mode-hook 'maybe-lsp)
 (add-hook 'vimrc-mode-hook 'maybe-lsp)
 (add-hook 'racket-mode-hook 'maybe-lsp)
-;; (add-hook 'solidity-mode-hook 'maybe-lsp)
+(add-hook 'solidity-mode-hook 'maybe-lsp)
 (add-hook 'rustic-mode-hook 'maybe-lsp)
 (add-hook 'nix-mode-hook 'maybe-lsp)
 (add-hook 'js-mode-hook 'maybe-lsp)

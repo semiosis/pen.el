@@ -1,14 +1,1 @@
-#!/bin/bash
-export TTY
-
-sn="$(basename "$0")"
-sn="$(p "$sn" | sed 's/^pen-//')"
-
-# : "${NODE_VERSION:="$(pen-oci pen-rc-get .node_version)"}"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# . $HOME/sh-source/nvm-node
-# nvm use "$NODE_VERSION" 1>&2 || nvm install "$NODE_VERSION" 1>&2
-which "$sn" | grep -q ".nvm/" || npm install -g localtunnel
-
-"$sn" "$@"
+pen-solidity-language-server

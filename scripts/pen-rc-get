@@ -5,7 +5,12 @@ export TTY
 
 key="$1"
 
+if pl "$key" | grep -q -P '^\..*'; then
+    key="$(p "$key" | sed 's/^\.//')"
+fi
+
 val="$(yq -r ".[$(cmd-nice-posix "$key")] // empty" ~/.pen/pen.yaml)"
+
 
 if test -f "/tmp/pen.yaml"; then
     runtime_val="$(yq -r ".[$(cmd-nice-posix "$key")] // empty" /tmp/pen.yaml)"

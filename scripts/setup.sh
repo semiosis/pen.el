@@ -987,8 +987,26 @@ agi elinks
 
 pyf pdf2txt
 
+# node
+(
+npm install -g npm@8.19.1
+)
+
 # Solidity
 (
 cd ~/repos/
 git clone "http://github.com/mullikine/lsp-solidity-el"
+cd /usr/local/bin/
+wget https://github.com/ethereum/solidity/releases/download/v0.8.17/solc-static-linux -O solc
+chmod a+x solc
+)
+
+(
+npm install -g solidity-language-server
+# https://github.com/ethereum/solidity/releases
+)
+
+(
+cd "$HOME/repos"
+git clone "http://github.com/mullikine/sh-source"
 )
