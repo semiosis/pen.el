@@ -965,6 +965,11 @@ pyf yamlfmt
 
 # Install the rust language server (rust-analyzer) manually (rather than through emacs)
 rustup toolchain install nightly --component rust-analyzer-preview
+(
+cd ~/repos/
+git clone "https://github.com/rust-analyzer/rust-analyzer"
+cargo xtask install --server
+)
 
 # For scope
 agi mediainfo
