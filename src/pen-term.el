@@ -605,7 +605,6 @@ If eterm-color doesn't exist, prompt to fetch and compile it.")
 (advice-add 'term-set-goto-process-mark :around #'ignore-errors-around-advice)
 (advice-add 'term-goto-process-mark-maybe :around #'ignore-errors-around-advice)
 
-
 (defun pen-term-detect-program ()
   (interactive)
   

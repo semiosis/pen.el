@@ -582,6 +582,8 @@ Differences in #targets are ignored."
       (write-to-file contents (lg-url-cache-slug-fp url))
     (cat (lg-url-cache-slug-fp url))))
 
+(advice-add 'pen-url-cache :around #'shut-up-around-advice)
+
 (defun eww-reload-cache-for-page (url)
   (interactive (list (get-path)))
   (if (major-mode-p 'eww-mode)

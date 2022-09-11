@@ -180,9 +180,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-hl)
 (require 'pen-hooks)
 (require 'pen-major-mode)
-
-(if (inside-docker-p)
-    (require 'pen-aliases))
+(require 'pen-aliases)
 (require 'pen-org)
 (require 'pen-term-modes)
 (require 'pen-tablist)
