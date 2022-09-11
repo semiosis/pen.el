@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+rlwrap /usr/bin/tclsh "$@"

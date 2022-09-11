@@ -974,3 +974,5 @@ agi libfuse3-dev libfuse3-3
 
 # For glimpse search engine
 agi glimpse
+
+agi tclsh

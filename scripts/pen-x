@@ -317,18 +317,18 @@ if test "$uses_tmux" = "y"; then
     if test "$tmux_attached_init" = y; then
 
         script_append "set win [exec pen-tm-new-hidden-link-window \"$target\"]"
-        script_append "spawn \"clear-tm\" \"tmux\" \"attach\" \"-t\" \"\$win\""
+        script_append "spawn \"clear-tm\" \"tmux\" \"attach\" \"-t\" '\$win'"
         script_append "sleep 0.1"
     elif [ -n "$tmux_command" ]; then
 
         script_append "sleep 0.2"
 
-        script_append "spawn \"clear-tm\" \"tmux\" \"respawn-pane\" \"-t\" \"$tmux_session_qne\" \"-k\" $(cmd-nice-posix "$tmux_command" | pen-bs '][')"
+        script_append "spawn \"clear-tm\" \"tmux\" \"respawn-pane\" \"-t\" '$tmux_session_qne' \"-k\" $(cmd-nice-posix "$tmux_command" | pen-bs '][')"
 
-        script_append "spawn \"clear-tm\" \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
+        script_append "spawn \"clear-tm\" \"tmux\" \"attach\" \"-t\" '$tmux_session_qne'"
 
     else
-        script_append "spawn \"clear-tm\" \"tmux\" \"attach\" \"-t\" \"$tmux_session_qne\""
+        script_append "spawn \"clear-tm\" \"tmux\" \"attach\" \"-t\" '$tmux_session_qne'"
         script_append "expect -exact \"sh\""
     fi
 elif test "$INIT_SPAWN" = "zsh"; then
