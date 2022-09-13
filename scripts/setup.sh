@@ -1012,3 +1012,28 @@ git clone "http://github.com/mullikine/sh-source"
 )
 
 e ia quelpa quelpa-use-package
+
+(
+cat /etc/apt/sources.list | awk 1
+echo deb http://deb.debian.org/debian bullseye-backports main
+) | sponge /etc/apt/sources.list
+
+# gomuks
+# https://backports.debian.org/Instructions/
+# need backports for libolm3
+# libolm-dev is not available. Manually copy the .h file
+(
+agi libolm3
+cd "$HOME/repos"
+git clone "http://github.com/tulir/gomuks"
+mkdir -p /usr/include/
+cp /root/repos/pen.el/config/olm /usr/include/
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/:${LD_LIBRARY_PATH}
+ln -sf /usr/lib/x86_64-linux-gnu/libolm.so.3 /usr/lib/x86_64-linux-gnu/libolm.so
+cd gomuks
+go build
+go install
+)
+
+# For markdown-mode
+agi pandoc

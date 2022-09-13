@@ -2194,6 +2194,7 @@ May use to generate code from comments."
       (require 'pen-straight)
       (require 'pen-quelpa)
       (require 'pen-apheleia)
+      (require 'pen-markdown)
       (require 'pen-jump-tree)))
 
 (defun pen-lsp-explain-error ()
