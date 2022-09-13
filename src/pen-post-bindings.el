@@ -259,14 +259,6 @@
       (define-key pen-map (kbd "M-l C-s") #'pen-swipe)
       (define-key pen-map (kbd "M-' C-s") #'pen-swipe)))
 
-;; (define-key company-active-map (kbd "C-h") 'delete-backward-char)
-(define-key company-active-map (kbd "C-h") 'company-delete-backward-char-and-retry)
-(define-key company-active-map (kbd "C-c C-h") 'company-show-doc-buffer)
-(define-key company-active-map (kbd "M-c") 'company-copy-current)
-;; (define-key company-active-map (kbd " ") 'self-insert-command)
-
-(define-key company-active-map (kbd " ") 'company-self-insert-and-retry)
-
 (define-key pen-map (kbd "M-l M-I M-N") 'pen-nw)
 (define-key pen-map (kbd "M-l M-I M-I") 'pen-sps)
 (define-key pen-map (kbd "M-l M-I M-J") 'pen-spv)
@@ -279,8 +271,15 @@
 (defun company-mode-around-advice (proc &rest args)
   (define-key company-active-map (kbd "C-z") #'company-try-hard)
   (define-key company-active-map (kbd "C-f") #'company-complete-common)
-  (define-key company-active-map (kbd "C-h") #'delete-backward-char)
-  
+  ;; (define-key company-active-map (kbd "C-h") #'delete-backward-char)
+  (define-key company-active-map (kbd "C-h") 'company-delete-backward-char-and-retry)
+  ;; (define-key company-active-map (kbd "C-h") 'delete-backward-char)
+  (define-key company-active-map (kbd "C-c C-h") 'company-show-doc-buffer)
+  (define-key company-active-map (kbd "M-c") 'company-copy-current)
+  ;; (define-key company-active-map (kbd " ") 'self-insert-command)
+
+  (define-key company-active-map (kbd " ") 'company-self-insert-and-retry)
+
   (let ((res (apply proc args)))
     res))
 (advice-add 'company-mode :around #'company-mode-around-advice)
