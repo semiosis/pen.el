@@ -11,4 +11,8 @@ ff="$(ux mkfifo xc)"
 
 export EDITOR=v
 
-xc - | vipe | soak | xc
+IFS= read -rd '' input < <(xc - | vipe | soak);typeset -p input &>/dev/null
+ret="$?"
+if test "$ret" -eq 0; then
+    printf -- "%s" "$input" | xc
+fi

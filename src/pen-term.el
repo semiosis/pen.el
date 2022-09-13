@@ -383,14 +383,17 @@ commands to use in that buffer.
 (defun pen-revert-and-quit-emacsclient-without-killing-server ()
   "description string can flow to next line without continuation character"
   (interactive)
+    (if (major-mode-p 'term-mode)
+        ;; M-F4
+        (call-interactively 'pen-kill-buffer-immediately)
 
-  ;; If the main frame, Pen.el quits entirely, currently
-  (if (>= (prefix-numeric-value current-prefix-arg) 4)
-      (progn
-        (setq current-prefix-arg nil)
-        (pen-kill-buffer-and-frame))
-    (ignore-errors
-      (delete-frame))))
+      ;; If the main frame, Pen.el quits entirely, currently
+      (if (>= (prefix-numeric-value current-prefix-arg) 4)
+          (progn
+            (setq current-prefix-arg nil)
+            (pen-kill-buffer-and-frame))
+        (ignore-errors
+          (delete-frame)))))
 
 (defun penq ()
   "Quit Pen"

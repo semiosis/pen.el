@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tf_soak="$(pen-tf soak || echo /dev/null)"
+tf_soak="$(0</dev/null pen-tf soak || echo /dev/null)"
 trap "rm \"$tf_soak\" 2>/dev/null" 0
 
 cat > "$tf_soak"
