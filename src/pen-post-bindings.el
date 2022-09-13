@@ -276,4 +276,9 @@
 (define-key pen-map (kbd "M-l E r") (df reselect-i (reselect-last-region)))
 (define-key global-map (kbd "C-q") #'quoted-insert-nooctal)
 
+(require 'company)
+(define-key company-active-map (kbd "C-z") #'company-try-hard)
+(define-key company-active-map (kbd "C-f") #'company-complete-common)
+(define-key company-active-map (kbd "C-h") #'delete-backward-char)
+
 (provide 'pen-post-bindings)
