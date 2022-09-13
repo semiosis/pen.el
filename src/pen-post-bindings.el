@@ -289,6 +289,6 @@
   (define-key company-active-map (kbd "C-f") #'company-complete-common)
   (define-key company-active-map (kbd "C-h") #'delete-backward-char))
 
-(add-hook 'after-init-hook 'pen-very-late-bindings)
+(add-hook-last 'after-init-hook 'pen-very-late-bindings)
 
 (provide 'pen-post-bindings)
