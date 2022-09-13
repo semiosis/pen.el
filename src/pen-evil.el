@@ -632,11 +632,10 @@ The following special registers are supported.
 (evil-define-command evil-ead (pattern)
   "Ead pattern."
   :repeat nil
-  (interactive "<f><!>")
-  (if bang
-      (ead pattern)
-    (ead pattern)))
+  (interactive "<f>")
+  (ead pattern))
 
 (evil-ex-define-cmd "Ead" 'evil-ead)
+(evil-ex-define-cmd "ead" 'evil-ead)
 
 (provide 'pen-evil)
