@@ -277,6 +277,9 @@
 (define-key global-map (kbd "C-q") #'quoted-insert-nooctal)
 
 (require 'company)
+;; This load-library is confirmed needed to readyy the company-active-map in advance.
+;; Otherwise, C-h here will not be overriden.
+(load-library "company")
 (define-key company-active-map (kbd "C-z") #'company-try-hard)
 (define-key company-active-map (kbd "C-f") #'company-complete-common)
 (define-key company-active-map (kbd "C-h") #'delete-backward-char)
