@@ -1,9 +1,18 @@
 #!/bin/bash
 export TTY
 
+unset TMUX
+
 pak_on_error=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    -c) {
+        cwd="$2"
+        shift
+        shift
+    }
+    ;;
+
     -pak) {
         use_pak=y
         shift
@@ -19,15 +28,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+: ${CWD:="$(pwd)"}
+
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
 if test "$use_pak" = "y"; then
-    tmux new bash -c "$CMD; pen-pak"
+    tmux new -c "$CWD" bash -c "$CMD; pen-pak"
 else
     if test "$pak_on_error" = "y"; then
-        tmux new bash -c "$CMD || ( pwd; pen-pak )"
+        tmux new -c "$CWD" bash -c "$CMD || ( pwd; pen-pak )"
     else
-        tmux new bash -c "$CMD"
+        tmux new -c "$CWD" bash -c "$CMD"
     fi
 fi
