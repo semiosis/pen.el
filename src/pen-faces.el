@@ -356,6 +356,12 @@ argument, prompt for a regular expression using `read-regexp'."
   (set-face-foreground 'org-block "#447744")
   (set-face-background 'org-block "#151515")
 
+  (require 'ement-room)
+  (set-face-attribute 'ement-room-membership nil :height 1.0)
+  (set-face-attribute 'ement-room-timestamp-header nil :height 1.0)
+  (set-face-attribute 'ement-room-reactions nil :height 1.0)
+  (set-face-attribute 'ement-room-reactions-key nil :height 1.0)
+  (set-face-attribute 'ement-room-wrap-prefix nil :height 1.0)
 
   (require 'ivy)
   (set-face-foreground 'ivy-current-match "#262626")
