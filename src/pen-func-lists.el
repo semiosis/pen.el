@@ -24,6 +24,7 @@
                            dired-narrow-fuzzy
                            open-main
                            dired-toggle-read-only
+                           find-ci-here
                            show-extensions-below
                            run-fs-search-function
                            dired-toggle-dumpd-dir
