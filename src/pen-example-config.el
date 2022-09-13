@@ -1111,7 +1111,7 @@
 (pen-truly-selective-binding "S $" (df fi-surround-dollar (pen-region-pipe "surround '$' '$'")))
 (pen-truly-selective-binding "S =" (df fi-surround-equals (pen-region-pipe "surround '=' '='")))
 (pen-truly-selective-binding "S _" (df fi-surround-underscore (pen-region-pipe "surround '_' '_'")))
-(pen-truly-selective-binding "S $HOME" (df fi-surround-tilde (pen-region-pipe "surround '$HOME' '$HOME'")))
+(pen-truly-selective-binding "S ~" (df fi-surround-tilde (pen-region-pipe "surround '~' '~'")))
 (pen-truly-selective-binding "S {" (df fi-surround-parens (pen-region-pipe "surround '{' '}'")))
 (pen-truly-selective-binding "S }" (df fi-surround-parens-pad (pen-region-pipe "surround '{' '}'")))
 (pen-truly-selective-binding "S )" (df fi-surround-parens (pen-region-pipe "surround '(' ')'")))
