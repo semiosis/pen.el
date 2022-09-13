@@ -276,19 +276,14 @@
 (define-key pen-map (kbd "M-l E r") (df reselect-i (reselect-last-region)))
 (define-key global-map (kbd "C-q") #'quoted-insert-nooctal)
 
-(defun pen-very-late-bindings ()
-  (interactive)
-
-  (require 'company)
-  ;; This load-library is confirmed needed to readyy the company-active-map in advance.
-  ;; Otherwise, C-h here will not be overriden.
-  ;; It also needs to be in after-init-hook.
-  ;; That may be because global-company-mode is also in after-init-hook; I'm unsure.
-  (load-library "company")
+(defun company-mode-around-advice (proc &rest args)
   (define-key company-active-map (kbd "C-z") #'company-try-hard)
   (define-key company-active-map (kbd "C-f") #'company-complete-common)
-  (define-key company-active-map (kbd "C-h") #'delete-backward-char))
-
-(add-hook-last 'after-init-hook 'pen-very-late-bindings)
+  (define-key company-active-map (kbd "C-h") #'delete-backward-char)
+  
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'company-mode :around #'company-mode-around-advice)
+;; (advice-remove 'company-mode #'company-mode-around-advice)
 
 (provide 'pen-post-bindings)
