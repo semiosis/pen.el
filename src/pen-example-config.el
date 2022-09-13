@@ -1055,9 +1055,6 @@
 (require 'pen-which-key)
 (define-key which-key-C-h-map (kbd "k") 'which-key-describe-prefix-bindings)
 
-(require 'pen-post-bindings)
-(load-library "pen-post-bindings")
-
 (require 'pen-comint)
 (define-key pen-map (kbd "DEL") 'pen-comint-del)
 (define-key comint-mode-map (kbd "C-j") 'comint-accumulate)
@@ -1220,5 +1217,8 @@
 (define-key evil-list-view-mode-map (kbd "RET") 'evil-list-view-goto-entry)
 
 (define-key evil-ex-completion-map (kbd "M-m") 'run-line-or-region-in-tmux)
+
+(require 'pen-post-bindings)
+(load-library "pen-post-bindings")
 
 (provide 'pen-example-config)
