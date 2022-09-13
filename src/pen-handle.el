@@ -238,7 +238,9 @@
         :nexterr '()
         :preverr '()
         :rc '()
-        :errors '()
+        :errors '(lsp-ui-flycheck-list
+                  ;; pen-lsp-error-list
+                  )
         :assignments '()
         :references '()
         :definitions '()

@@ -16,7 +16,7 @@
 (require 'anaconda-mode) ;; provides anaconda-eldoc-mode
 
 (add-hook 'python-mode-hook 'eldoc-mode)
-(setq python-shell-interpreter "ipython3"
+(setq python-shell-interpreter "ipython3.8"
       python-shell-interpreter-args "--simple-prompt -i")
 
 (use-package importmagic
