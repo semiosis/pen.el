@@ -1747,6 +1747,7 @@ nnoremap <silent> <Esc>= :call SearchDownDiffColPicky()<CR>
 xnoremap <silent> <Esc>- <C-c>:call SearchUpDiffColPicky() \| call ReselectVisual()<CR>
 xnoremap <silent> <Esc>= <C-c>:call SearchDownDiffColPicky() \| call ReselectVisual()<CR>
 
+nmap <C-s> /
 cmap <silent> <Esc>f <C-e><C-u>mess<CR>
 cmap <silent> <Esc>d <Esc>dd
 imap <silent> <Esc>[2~ <Esc>ZX
