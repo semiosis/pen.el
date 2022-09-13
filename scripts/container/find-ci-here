@@ -19,7 +19,9 @@ exec 2>/dev/null
 {
     # wildcards work
     # vim +/"\*.circleci" "$NOTES/ws/lists/file-types/ci.txt"
-    eval "$(cmd find . -type f) $(cat "$NOTES/ws/lists/file-types/ci.txt" | sed -n "s/.*/-name '&'/ip" | s join ' -or ')"
+    if test -f "$NOTES/ws/lists/file-types/ci.txt"; then
+        eval "$(cmd find . -type f) $(cat "$NOTES/ws/lists/file-types/ci.txt" | sed -n "s/.*/-name '&'/ip" | s join ' -or ')"
+    fi
 
     # Files
     {
