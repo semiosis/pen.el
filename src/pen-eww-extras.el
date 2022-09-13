@@ -588,7 +588,8 @@ Differences in #targets are ignored."
   (interactive (list (get-path)))
   (if (major-mode-p 'eww-mode)
       (progn
-        (pen-url-cache-delete url)
+        (let ((current-prefix-arg nil))
+          (pen-url-cache-delete url))
         (call-interactively 'pen-eww-reload))))
 
 (defun pen-url-cache-delete (url)

@@ -1010,3 +1010,5 @@ npm install -g solidity-language-server
 cd "$HOME/repos"
 git clone "http://github.com/mullikine/sh-source"
 )
+
+e ia quelpa quelpa-use-package

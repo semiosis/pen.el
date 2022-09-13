@@ -41,6 +41,8 @@
   (global-gumshoe-mode 1))
 (advice-add 'gumshoe-log-current-position :around #'ignore-errors-around-advice)
 
+
+
 ;; Gumshoe requires this:
 (defalias 'math-pow 'expt)
 

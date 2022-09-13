@@ -2192,6 +2192,7 @@ May use to generate code from comments."
       (require 'pen-grep)
       (require 'pen-wgrep)
       (require 'pen-straight)
+      (require 'pen-quelpa)
       (require 'pen-apheleia)
       (require 'pen-jump-tree)))
 
