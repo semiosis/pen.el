@@ -65,7 +65,7 @@ stdin_exists() {
 if stdin_exists; then
     joined_list="$(sed 's/^\.\///' | sed "s=${dired_dir}/==" | lines-to-args)"
     # dired_ls_cmd="shift 3; cd \"\$1\"; shift; dired-ls-d --dired -alh -- $joined_list"
-    dired_ls_cmd="shift; dired-ls-d --dired -alh -- $joined_list"
+    dired_ls_cmd="shift 2; dired-ls-d --dired -alh -- $joined_list"
     dired_cmd="$(nsfa -E "$dired_ls_cmd")"
 fi
 
