@@ -123,7 +123,8 @@
   (setq pen-company-selected-backends
         (list
          (intern (fz pen-company-all-backends
-                     nil nil "pen-company-complete select:")))))
+                     nil nil "pen-company-complete select:"))))
+  (setq company-backends (-uniq (cons 'pen-company-filetype-if-prefix (cons (car pen-company-selected-backends) pen-company-all-backends)))))
 
 (defun pen-company-complete-add ()
   (interactive)
