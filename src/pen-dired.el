@@ -67,7 +67,8 @@
 (defun dired-cmd (c dirname &optional switches)
   (interactive (cons (read-string "cmd:") (dired-read-dir-and-switches "")))
   (ignore-errors (kill-buffer dirname))
-  (let ((insert-directory-program c))
+  (let ((ls-lisp-use-insert-directory-program t)
+        (insert-directory-program c))
     (dired dirname switches)))
 
 (defun ev (&optional path)
