@@ -13,6 +13,7 @@
   (interactive)
   (pen-sps "open-colors" nil nil default-directory))
 
+;; I guess if I need to quickly create tab-indented lists, hmm is the tool
 (defun hmm ()
   (interactive)
   ;; Sadly, doesn't work well with eterm
