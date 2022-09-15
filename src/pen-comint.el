@@ -43,7 +43,7 @@
     (call-interactively 'lispy-move-beginning-of-line))
 
    (t
-    (call-interactively 'beginning-of-line))))
+    (call-interactively 'beginning-of-line-or-indentation))))
 
 (advice-add 'pen-comint-bol :around #'shut-up-around-advice)
 
