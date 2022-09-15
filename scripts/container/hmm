@@ -1,0 +1,3 @@
+#!/bin/bash
+
+$HOME/repos/h-m-m/h-m-m "$@" 2>/dev/null

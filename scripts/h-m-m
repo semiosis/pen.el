@@ -1,3 +1,0 @@
-#!/bin/bash
-
-$HOME/repos/h-m-m/h-m-m "$@"
