@@ -11,7 +11,10 @@
 
 (defun open-colors ()
   (interactive)
-  (pen-sps "open-colors" nil nil default-directory))
+  (pen-sps "open-colors" nil nil default-directory)
+  ;; (pen-use-vterm
+  ;;  (pen-term "open-colors" nil nil default-directory))
+  )
 
 ;; I guess if I need to quickly create tab-indented lists, hmm is the tool
 (defun hmm ()

@@ -5,6 +5,10 @@ export TTY
 
 : "${BROWSER:="sps-lg"}"
 
+if test "$BROWSER" = pen-browser || test "$BROWSER" = browser; then
+    export BROWSER=sps-lg
+fi
+
 # If handled with something else, abort browser
 pen-handle-url "$@" && exit "$?"
 
