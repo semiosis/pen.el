@@ -35,11 +35,7 @@
         (text-mode
          (off writegood-mode))
 
-        (term-mode
-         (off fringe-mode)
-         (off semantic-mode)
-         (off highlight-thing-mode)
-         (off ivy-mode))
+        
 
         (global
          (off prettify-symbols-mode)
@@ -99,11 +95,15 @@
          (off visual-line-mode))
 
         (term-mode
-         (off yas-minor-mode)
+         (off fringe-mode)
+         (off semantic-mode)
+         (off highlight-thing-mode)
+         (off ivy-mode)
+         (on yas-minor-mode)
          (off org-indent-mode)
          (off persp-mode)
          (off which-key-mode)
-         (off company-mode)
+         (on company-mode)
          (off gud-minor-mode))
 
         (magit-log-mode
