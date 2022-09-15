@@ -1038,8 +1038,13 @@ go install
 # For markdown-mode
 agi pandoc
 
+(
 # h-m-m is cool but it doesn't play well with terminals for typing, and gets buggy
 # http://github.com/nadrad/h-m-m
-# agi php
-# agi php-mbstring
-# sed -i '/;extension=mbstring/s/;//' /etc/php/7.3/cli/php.ini
+agi php php-mbstring
+sed -i '/;extension=mbstring/s/;//' /etc/php/7.3/cli/php.ini
+cd "$HOME/repos"
+git clone "http://github.com/nadrad/h-m-m"
+cd h-m-m
+sed -i '/<?php/aerror_reporting(0);' h-m-m
+)
