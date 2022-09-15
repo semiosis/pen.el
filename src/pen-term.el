@@ -163,6 +163,8 @@
   (define-key term-raw-map (kbd "C-c ESC") #'pen-term-c-c-esc)
   (define-key term-raw-map (kbd "C-c M-l") #'term-send-raw-meta)
   (define-key term-raw-map (kbd "C-c C-c") #'term-send-raw)
+  ;; (define-key term-raw-map (kbd "") nil)
+  ;; (define-key term-raw-map (kbd "DEL") nil)
   ;; I need C-u for update
   ;; (define-key term-raw-map (kbd "C-c C-u") #'term-send-raw)
   (define-key term-raw-map (kbd "C-c C-u") #'universal-argument)

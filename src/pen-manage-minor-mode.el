@@ -1,5 +1,12 @@
 (require 'manage-minor-mode)
 
+;; Disable hl-line-mode for term
+(defun hl-line-mode-around-advice (proc &rest args)
+  (if (not (major-mode-p 'term-mode))
+      (let ((res (apply proc args)))
+        res)))
+(advice-add 'global-hl-line-highlight :around #'hl-line-mode-around-advice)
+
 (setq manage-minor-mode-default
       '((aws-instances-mode
          (on tablist-minor-mode)
@@ -99,6 +106,8 @@
          (off semantic-mode)
          (off highlight-thing-mode)
          (off ivy-mode)
+         ;; (off global-hl-line-mode)
+         ;; (off hl-line-mode)
          (on yas-minor-mode)
          (off org-indent-mode)
          (off persp-mode)
