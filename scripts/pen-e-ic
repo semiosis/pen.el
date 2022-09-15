@@ -19,6 +19,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -sn) {
+        sn="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 

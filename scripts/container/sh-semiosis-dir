@@ -26,6 +26,7 @@ v  zcd ~/.emacs.d/host/metaverses
 V  zcd ~/.emacs.d/host/protoverses
 H  zcd ~/.emacs.d/host/imaginary-programming-thesis
 s  zcd ~/.emacs.d/host/pen.el/scripts
+z  zcd ~/.emacs.d/host/pen.el/scripts/container
 c  zcd ~/.emacs.d/host/pen.el/config
 R  zcd ~/.emacs.d/host/rhizome
 f  zcd ~/.emacs.d/host/pen.el/src
@@ -75,6 +76,7 @@ case "$d" in
     V) cmd="zcd ~/.emacs.d/host/protoverses" ;;
     H) cmd="zcd ~/.emacs.d/host/imaginary-programming-thesis" ;;
     s) cmd="zcd ~/.emacs.d/host/pen.el/scripts" ;;
+    z) cmd="zcd ~/.emacs.d/host/pen.el/scripts/container" ;;
     c) cmd="zcd ~/.emacs.d/host/pen.el/config" ;;
     R) cmd="zcd ~/.emacs.d/host/rhizome" ;;
     f) cmd="zcd ~/.emacs.d/host/pen.el/src" ;;
