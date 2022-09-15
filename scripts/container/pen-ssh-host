@@ -61,6 +61,7 @@ export USE_PROFILE
 
 case "$sn" in
     pen-ssh-host) {
+        :
         pen-cterm-ssh -ssh-to-host y -ssh "$@"
     }
     ;;

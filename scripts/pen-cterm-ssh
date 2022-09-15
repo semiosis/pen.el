@@ -155,7 +155,19 @@ if test "$VERBOSE" = "y"; then
     set -xv
 fi
 
-if test "$SSH_TO_HOST" = "y" && test "$SSH_HOST_ALLOWED" = y; then
+if ! test -n "$SSH_HOST_ALLOWED" && pen-rc-test host-ssh-master; then
+    : "${SSH_HOST_ALLOWED:="y"}"
+else
+    : "${SSH_HOST_ALLOWED:="n"}"
+fi
+export SSH_HOST_ALLOWED
+
+if test "$SSH_TO_HOST" = "y"; then
+    if test "$SSH_HOST_ALLOWED" = n; then
+        echo ssh to host not enabled in pen.yaml | hls red 1>&2
+        exit 1
+    fi
+
     if test "$USE_PROFILE" = "y"; then
         SETUP=". ~/.profile; $SETUP"
     fi
