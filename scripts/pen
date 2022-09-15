@@ -2121,7 +2121,7 @@ IFS= read -r -d '' shcode <<HEREDOC
 
     # After it has started, simply run again
     # "$sn" tm new pen-watch-daemons
-    "$sn" sh pen-tm init-or-attach -n run
+    "$sn" sh pen-tm init-or-attach -n Melee
 HEREDOC
     }
     ;;
