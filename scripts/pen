@@ -2117,10 +2117,11 @@ IFS= read -r -d '' shcode <<HEREDOC
         --entrypoint= --name=$PEN_CONTAINER_NAME $pen_image "$remote_cmd" $CMD
 
     echo Starting Pen.el 1>&2
-    sleep 10
+    sleep 15
 
     # After it has started, simply run again
-    "$sn" tm new pen-watch-daemons
+    # "$sn" tm new pen-watch-daemons
+    "$sn" sh pen-tm init-or-attach -n run
 HEREDOC
     }
     ;;
