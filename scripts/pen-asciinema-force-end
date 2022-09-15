@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+tmux list-sessions|cut -d : -f 1 | grep -P "^cinema" | while read line; do tmux kill-session -t "$line"; done
