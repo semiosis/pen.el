@@ -138,13 +138,39 @@ prompt additionally for EXTRA-AG-ARGS."
   )
 
 
+;; This is used to run counsel search prompt;
+;; I should build custom ones that do prompting instead.
+;; But I have to make a fast prompt mechanism.
+(defun counsel-search-function (input)
+  "Create a request to a search engine with INPUT.
+Return 0 tells `ivy--exhibit' not to update the minibuffer.
+We update it in the callback with `ivy-update-candidates'."
+  (or
+   (ivy-more-chars)
+   (let ((engine (cdr (assoc counsel-search-engine counsel-search-engines-alist))))
+     (request
+       (nth 0 engine)
+       :type "GET"
+       :params (list
+                (cons "client" "firefox")
+                (cons "q" input))
+       :parser 'json-read
+       :success (cl-function
+                 (lambda (&key data &allow-other-keys)
+                   (ivy-update-candidates
+                    (funcall (nth 2 engine) data)))))
+     0)))
+
 (defun counsel-search ()
   "Ivy interface for dynamically querying a search engine."
   (interactive)
   (require 'request)
   (require 'json)
+  ;; The search function generates candidates
   (ivy-read "search: " #'counsel-search-function
             ;; helm-google-suggest-actions
+
+            ;; The action runs the final google search
             :action #'counsel-search-action
             :dynamic-collection t
             :caller 'counsel-search))
