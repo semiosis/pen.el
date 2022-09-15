@@ -7,6 +7,9 @@
    ((derived-mode-p 'comint-mode)
     (comint-bol))
    
+   ((derived-mode-p 'eshell-mode)
+    (eshell-bol))
+   
    ;; ((and (derived-mode-p 'term-mode)
    ;;       (minor-mode-enabled term-char-mode)
    ;;       ;; (term-in-char-mode)
@@ -34,6 +37,8 @@
    (t
     (call-interactively 'beginning-of-line))))
 
+(advice-add 'pen-comint-bol :around #'shut-up-around-advice)
+
 (defun comint-delchar ()
   (interactive)
   (let ((pos
@@ -47,6 +52,9 @@
 
   (cond
    ((derived-mode-p 'comint-mode)
+    (comint-delchar))
+   
+   ((derived-mode-p 'eshell-mode)
     (comint-delchar))
 
    ((derived-mode-p 'term-mode)
@@ -63,5 +71,8 @@
     ;; (let ((pen-mode nil))
     ;;   (execute-kbd-macro (kbd "C-h")))
     )))
+
+(advice-add 'pen-comint-del :around #'shut-up-around-advice)
+;; (advice-remove 'pen-comint-del #'shut-up-around-advice)
 
 (provide 'pen-comint)

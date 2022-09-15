@@ -131,9 +131,10 @@
 (advice-add 'eval-last-sexp :around #'eval-last-sexp-around-advice)
 
 (defun advise-to-shut-up (proc &rest args)
-  (shut-up
-    (let ((res (apply proc args)))
-      res)))
+  (shut-up-c
+   (shut-up
+     (let ((res (apply proc args)))
+       res))))
 (defalias 'shut-up-around-advice 'advise-to-shut-up)
 
 (defun advise-to-ignore-errors (proc &rest args)

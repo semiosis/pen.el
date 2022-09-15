@@ -2155,6 +2155,7 @@ May use to generate code from comments."
 (require 'pen-tty)
 (require 'pen-tmux)
 (require 'pen-looking-glass)
+(require 'pen-eshell)
 (require 'pen-buffer-state)
 (require 'pen-apostrophe)
 (require 'pen-python)
