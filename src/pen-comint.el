@@ -23,7 +23,7 @@
     (if (term-in-line-mode)
         (let ((comint-use-prompt-regexp t)
               ;; Really need to derive this from scrraping the line
-              (comint-prompt-regexp "^.*[#\\$] "))
+              (comint-prompt-regexp "^.*[»#\\$] "))
           ;; (call-interactively 'term-bol)
           (call-interactively 'comint-bol))
       (term-send-raw)))

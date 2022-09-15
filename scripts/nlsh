@@ -192,8 +192,8 @@ test -n "$OS_OR_LANG" || {
     exit 2
 }
 
-: "${header:="Enter your commands in natural language."}"
-echo "$header"
+: "${header:="Enter your commands in natural language.\\nOperating system: $OS_OR_LANG"}"
+echo -e "$header"
 echo
 
 export USE_CONVERSATION_MODE=y
