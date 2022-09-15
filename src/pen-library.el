@@ -519,13 +519,13 @@ single-character strings, or a string of characters."
   "Probably a CRC hash of the input."
   (chomp (pen-snc "short-hash" input)))
 
-(defun uniqify-buffer (pen-b)
+(defun uniqify-buffer (b)
   "Give the buffer a unique name"
-  (with-current-buffer pen-b
+  (with-current-buffer b
     (ignore-errors (let* ((hash (short-hash (str (time-to-seconds))))
                           (new-buffer-name (pcre-replace-string "(\\*?)$" (concat "-" hash "\\1") (current-buffer-name))))
                      (rename-buffer new-buffer-name)))
-    pen-b))
+    b))
 
 (defun pen-local-variable-p (sym)
   (and (variable-p sym)

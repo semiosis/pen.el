@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+cat "$PEN/temp/lm-complete-stdout.txt" | xa find {} -type f -name response.txt | xa cat | pavs

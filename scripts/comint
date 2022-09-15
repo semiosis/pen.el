@@ -47,15 +47,13 @@ if test -n "$load_hs"; then
     # hsqc -ao "$load_hs" | tac > "$NOTES/programs/comint/history/$slug"
 fi
 
-# sp -e "(comint-quick $(cmd-nice-posix "$CMD") $(cmd-nice-posix "$(pwd -P)") $(cmd-nice-posix "$user_prompt_re"))"
-
 # This can get pretty hairy, so use escapes
 
 if ! printf -- "%s\n" "$user_prompt_re" | grep -q -P '<pen-'; then
     user_prompt_re="$(p "$user_prompt_re" | pen-str onelineify-safe)"
 fi
 
-elisp="(comint-quick $(cmd-nice-posix "$CMD") user-home-directory $(cmd-nice-posix "$user_prompt_re"))"
+elisp="(comint-quick $(cmd-nice-posix "$CMD") user-home-directory $(cmd-nice-posix "$user_prompt_re") t)"
 
 # This is correct elisp now. So now pente must work fine
 # pen-pl "$elisp" | pen-tv &>/dev/null

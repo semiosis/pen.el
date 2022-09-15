@@ -83,4 +83,6 @@
 (advice-add 'pen-comint-del :around #'shut-up-around-advice)
 ;; (advice-remove 'pen-comint-del #'shut-up-around-advice)
 
+(define-key comint-mode-map (kbd "M-r") nil)
+
 (provide 'pen-comint)

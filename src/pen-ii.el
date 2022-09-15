@@ -26,9 +26,11 @@
   (setq comint-input-ring-file-name history-file)
   (comint-read-input-ring 'silent))
 
-(defun comint-quick (cmd &optional dir prompt-regexp)
+(defun comint-quick (cmd &optional dir prompt-regexp unique)
   (interactive (list (read-string-hist "comint-quick: ")))
   (let* ((slug (slugify cmd))
+         (slug (if unique
+                   (concat slug "<" (substring (uuidgen-4) 0 8) ">")))
          (buf (make-comint slug (pen-nsfa cmd dir))))
     (with-current-buffer buf
       (setq-local comint-use-prompt-regexp (if (sor prompt-regexp) t))

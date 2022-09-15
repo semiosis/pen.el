@@ -11,6 +11,9 @@
                           handle-projectfile
                           handle-rename-symbol
                           magit-log-buffer-file))
+
+(defset comint-mode-funcs '(comint-history-isearch-backward-regexp))
+
 (defset yaml-mode-funcs
   (list
    'yaml-get-value-from-this-file

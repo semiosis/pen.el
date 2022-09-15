@@ -200,6 +200,14 @@ export USE_CONVERSATION_MODE=y
 
 # rlwrap openai-complete.sh prompts/nlsh-2.prompt "$OS_OR_LANG"
 
+pena() {
+    command pena --pool "$@"
+}
+
+penf() {
+    command penf --pool "$@"
+}
+
 while IFS=$'\n' read -p "${OS_OR_LANG}: " -r nlcommand; do
     if test "$nlcommand" = "!!"; then
         nlcommand="$lastcmd"
