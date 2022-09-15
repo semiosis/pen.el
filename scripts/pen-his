@@ -139,4 +139,8 @@ else
 fi
 )"
 
+# tput sgr0
+
 sed -u "s/\($pattern\)/$code\1$post_code/g$sedinneropts"
+
+# lit "${code}"
