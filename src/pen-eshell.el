@@ -77,11 +77,35 @@
 (setq eshell-cmpl-ignore-case t)
 (setq eshell-ask-to-save-history (quote always))
 (setq eshell-prompt-regexp "❯❯❯ ")
+
+(defun cljr--point-after (&rest actions)
+  "Returns POINT after performing ACTIONS.
+
+An action is either the symbol of a function or a two element
+list of (fn args) to pass to `apply''"
+  (save-excursion
+    (dolist (fn-and-args actions)
+      (let ((f (if (listp fn-and-args) (car fn-and-args) fn-and-args))
+            (args (if (listp fn-and-args) (cdr fn-and-args) nil)))
+        (apply f args)))
+    (point)))
+
+(defun cljr--end-of-buffer-p ()
+  "True if point is at end of buffer"
+  (= (point) (cljr--point-after 'end-of-buffer)))
+
+(defun eshell-delete-char-maybe-quit ()
+  (interactive)
+  (if (cljr--end-of-buffer-p)
+      (pen-revert-kill-buffer-and-window)
+    (delete-char)))
+
 (add-hook 'eshell-mode-hook
           '(lambda ()
              (progn
                ;; define-key must go here becasue eshell-mode-map doesn't exist until it's started
                (define-key eshell-mode-map "\C-a" 'eshell-bol)
+               (define-key eshell-mode-map "\C-d" 'eshell-delete-char-maybe-quit)
                (define-key eshell-mode-map "\C-r" 'counsel-esh-history)
                (define-key eshell-mode-map [up] 'previous-line)
                (define-key eshell-mode-map [down] 'next-line)
@@ -157,5 +181,79 @@ or an external command."
 
   (let* ((esym (eshell-find-alias-function command))
          (sym (or esym (intern-soft command))))))
+
+(defun eshell-unique (&optional arg)
+  (interactive "P")
+  (progn
+    (eshell arg)
+    (rename-buffer (concat "*eshell-" (substring (uuidgen-4) 0 8) "*")
+                   )))
+
+(defun e/nw (&optional run)
+  (interactive)
+  (if run
+      (call-interactively run)))
+(defalias 'enw 'e/nw)
+
+(defun e/sps (&optional run)
+  (interactive)
+  (split-window-sensibly)
+  (other-window 1)
+  (if run
+      (call-interactively run)))
+(defalias 'esps 'e/sps)
+
+
+(defun e/spv (&optional run)
+  (interactive)
+  (split-window-horizontally)
+  (other-window 1)
+  (if run
+      (call-interactively run)))
+(defalias 'espv 'e/spv)
+
+(defun e/sph (&optional run)
+  (interactive)
+  (split-window-vertically)
+  (other-window 1)
+  (if run
+      (call-interactively run)))
+(defalias 'esph 'e/sph)
+
+(defun eshell-nw ()
+  (interactive)
+  (e/nw 'eshell-unique)
+  ;; (split-window-vertically)
+  ;; (other-window 1)
+  ;; (shell) ; this is a real terminal
+  ;; (eshell)
+  )
+
+(defun eshell-sps ()
+  (interactive)
+  (e/sps 'eshell-unique)
+  ;; (split-window-vertically)
+  ;; (other-window 1)
+  ;; (shell) ; this is a real terminal
+  ;; (eshell)
+  )
+
+(defun eshell-sph ()
+  (interactive)
+  (e/sph 'eshell-unique)
+  ;; (split-window-vertically)
+  ;; (other-window 1)
+  ;; (shell) ; this is a real terminal
+  ;; (eshell)
+  )
+
+(defun eshell-spv ()
+  (interactive)
+  (e/spv 'eshell-unique)
+  ;; (split-window-horizontally)
+  ;; (other-window 1)
+  ;; (shell) ; shell is zsh or whatever the default shell is
+  ;; (eshell)
+  )
 
 (provide 'pen-eshell)
