@@ -1476,8 +1476,9 @@ case "$f" in
         esac; done
 
         unbuffer pen-xc | while IFS= read -N 1 char; do
-                tmux send-keys -l "$char"
-
+            # Minimum required sleep for h-m-m
+            sleep 0.01
+            tmux send-keys -l "$char"
         done
         exit 0
 
