@@ -55,6 +55,18 @@ export PEN_TMUX="$TMUX"
 unset TMUX
 
 init-tm() {
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        -n) {
+            session_name="$2"
+            shift
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
     # Unique ID -- prompt for a random thing such as a pokemon, if pen server is running
     uid="$(date +%s)"
 
@@ -67,8 +79,10 @@ init-tm() {
     tmux new-session -d -s localhost -c "$HOME/notes" bash
     tmux set-option -t localhost: lock-after-time 36000
 
-    tmux new-session -d -s "${uid}" -c "$HOME/notes" bash
-    tmux set-option -t "${uid}": lock-after-time 36000
+    : "${session_name:="${uid}"}"
+
+    tmux new-session -d -s "${session_name}" -c "$HOME/notes" bash
+    tmux set-option -t "${session_name}": lock-after-time 36000
 
     if test "$#" -gt 0; then
         # I want multiple views on the same emacs
@@ -77,11 +91,11 @@ init-tm() {
 
         slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
 
-        tmux neww -t "${uid}": -t "${uid}": -c "$HOME/notes" -n "$slug" "$@"
-        tmux kill-window -t "${uid}":1.
+        tmux neww -t "${session_name}": -c "$HOME/notes" -n "$slug" "$@"
+        tmux kill-window -t "${session_name}":1.
     fi
 
-    TMUX= tmux attach -t "${uid}":
+    TMUX= tmux attach -t "${session_name}":
     echo init
     exit 0
 }

@@ -239,9 +239,9 @@ export PEN_USE_GUI
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        in-tm nvc pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+        unbuffer in-tm -n run nvc pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
     else
-        in-tm pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+        unbuffer in-tm -n run pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
     fi
 }
 
@@ -302,3 +302,9 @@ else
     # Start a fake X for the clipboard
     runclient -a "" -t "$@"
 fi
+
+# The clients are backgrounded
+
+while true; do
+  sleep 1000
+done

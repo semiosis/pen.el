@@ -2,6 +2,18 @@
 export TTY
 
 in-tm() {
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        -n) {
+            session_name="$2"
+            shift
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
     if test "$PEN_NO_TM" = "y"; then
         "$@"
     elif inside-docker-p && inside-tmux-p; then
@@ -9,7 +21,11 @@ in-tm() {
     elif test "$PEN_USE_GUI" = "y"; then
         "$@"
     else
-        pen-tm init-or-attach "$@"
+        if test -n "$session_name"; then
+            pen-tm init-or-attach "$@"
+        else
+            pen-tm init-or-attach -n "$session_name" "$@"
+        fi
     fi
 }
 

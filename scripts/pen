@@ -2006,6 +2006,7 @@ IFS= read -r -d '' shcode <<HEREDOC
     docker container rm "$PEN_CONTAINER_NAME" &>/dev/null
 
     docker "$docker_cmd" \
+        -d \
         $(test "$docker_cmd" = run && printf -- "%s " --rm ) \
         $(test -n "$OPENAI_API_KEY" && printf -- "%s " -e "OPENAI_API_KEY:$OPENAI_API_KEY" ) \
         $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
@@ -2114,6 +2115,12 @@ IFS= read -r -d '' shcode <<HEREDOC
         fi
         ) \
         --entrypoint= --name=$PEN_CONTAINER_NAME $pen_image "$remote_cmd" $CMD
+
+    echo Starting Pen.el 1>&2
+    sleep 10
+
+    # After it has started, simply run again
+    "$sn" tm attach -t run
 HEREDOC
     }
     ;;
