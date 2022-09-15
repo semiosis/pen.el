@@ -7,14 +7,14 @@ export TTY
 url="$1"
 
 runexit() {
-    unbuffer "$@" &>/dev/null &
+    "$@" &>/dev/null &
     disown
     exit 0
 }
 
 case "$url" in
     *app.tabnine.com*) {
-        runexit firefox "$@"
+        runexit unbuffer firefox "$@"
     }
     ;;
 

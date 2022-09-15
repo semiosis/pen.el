@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+sn="$(basename -- "$0")"
+
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 url="$1"
@@ -9,7 +11,7 @@ test -n "$1" || exit 1
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 if ! is_tty; then
-    sps "$@"
+    sps "$sn" "$@"
     exit "$?"
 fi
 
