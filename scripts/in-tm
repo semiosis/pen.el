@@ -35,7 +35,7 @@ in-tm() {
             set -- -n "$session_name" "$@"
         fi
 
-        pen-tm init-or-attach -d "$@"
+        pen-tm init-or-attach "$@"
     fi
 }
 
