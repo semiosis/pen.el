@@ -1474,8 +1474,8 @@ xdg-open is a desktop utility that calls your preferred web browser."
            (setq url (urldecode (pen-sed "/.*google.com\\/url?q=/{s/^.*google.com\\/url?q=\\([^&]*\\)&.*/\\1/}" url)))))
 
     (cond
-     ((pen-snq (pen-cmd "pen-handle-url" url))
-      t)
+     ;; ((pen-snq (pen-cmd "pen-handle-url" url))
+     ;;  t)
      ((string-match-p "https?://github.com/.*/issues" url)
       (let ((res (apply proc args))) res))
      ((string-match "^https?://asciinema.org/a/[a-zA-Z0-9]+/?$" url)
@@ -1554,7 +1554,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 ;; This is needed because so many functions are missing in Pen.el
 (advice-add 'pen-advice-handle-url :around #'ignore-errors-around-advice)
-;; (advice-remove 'pen-advice-handle-url #'ignore-errors-around-advice)
+(advice-remove 'pen-advice-handle-url #'ignore-errors-around-advice)
 
 (advice-remove 'eww-browse-url #'pen-advice-handle-url)
 (advice-add 'eww-browse-url :around #'pen-advice-handle-url)
