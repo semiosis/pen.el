@@ -13,7 +13,7 @@
   (interactive)
   (pen-sps "open-colors" nil nil default-directory))
 
-(defun h-m-m ()
+(defun hmm ()
   (interactive)
   ;; Sadly, doesn't work well with eterm
 
