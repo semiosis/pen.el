@@ -239,9 +239,9 @@ export PEN_USE_GUI
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        unbuffer in-tm -d -n Melee nvc pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
+        unbuffer in-tm -d -n pen nvc pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
     else
-        unbuffer in-tm -d -n Melee pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
+        unbuffer in-tm -d -n pen pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
     fi
 }
 
