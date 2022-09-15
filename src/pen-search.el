@@ -167,7 +167,9 @@
   (pen-sn "urlencode | chomp" url))
 
 (defun urldecode (url)
-  (pen-sn "urldecode | chomp" url))
+  (url-unhex-string url)
+  ;; (pen-sn "urldecode | chomp" url)
+  )
 
 (defun google-code-search (pattern &optional path lang)
   (interactive (list (read-string-hist "google code pattern:")

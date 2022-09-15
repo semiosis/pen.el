@@ -137,6 +137,37 @@ prompt additionally for EXTRA-AG-ARGS."
   ;;   (url-hexify-string x)))
   )
 
+;; I need to urldecode
+(defun helm-google-search (&optional engine)
+  "Query the search engine, parse the response and fontify the candidates."
+  (let* ((engine (or engine helm-google-default-engine))
+         (results (helm-google--search helm-pattern engine)))
+
+    (let ((ret
+           (mapcar (lambda (result)
+                     (let ((cite (plist-get result :cite)))
+                       (cons
+                        (concat
+                         (propertize
+                          (plist-get result :title)
+                          'face 'font-lock-variable-name-face)
+                         "\n"
+                         (plist-get result :content)
+                         "\n"
+                         (when cite
+                           (concat
+                            (propertize
+                             cite
+                             'face 'link)
+                            "\n"))
+                         (propertize
+                          (url-unhex-string
+                           (plist-get result :url))
+                          'face (if cite 'glyphless-char 'link)))
+                        (url-unhex-string (plist-get result :url)))))
+                   results)))
+      ;; (tv (pps ret))
+      ret)))
 
 ;; This is used to run counsel search prompt;
 ;; I should build custom ones that do prompting instead.
