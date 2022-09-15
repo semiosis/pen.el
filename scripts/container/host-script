@@ -14,10 +14,10 @@ else
 fi
 export SSH_HOST_ALLOWED
 
-if test "$SSH_HOST_ALLOWED" = "n"; then
-    alt "$sn" "$@"
-    exit "$?"
-fi
+# if test "$SSH_HOST_ALLOWED" = "n"; then
+#     alt "$sn" "$@"
+#     exit "$?"
+# fi
 
 # It's important to disable tty for git. less will still function
 export USE_TTY=n
