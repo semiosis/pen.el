@@ -4,6 +4,9 @@
   (interactive)
 
   (cond
+   ((derived-mode-p 'comint-mode)
+    (comint-bol))
+   
    ;; ((and (derived-mode-p 'term-mode)
    ;;       (minor-mode-enabled term-char-mode)
    ;;       ;; (term-in-char-mode)
