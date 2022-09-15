@@ -268,6 +268,13 @@
 (define-key pen-map (kbd "M-l E r") (df reselect-i (reselect-last-region)))
 (define-key global-map (kbd "C-q") #'quoted-insert-nooctal)
 
+(defun company-complete-quick-access-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (call-interactively 'company-try-hard)
+    res))
+(advice-add 'company-complete-quick-access :around #'company-complete-quick-access-around-advice)
+;; (advice-remove 'company-complete-quick-access #'company-complete-quick-access-around-advice)
+
 (defun company-mode-around-advice (proc &rest args)
   (define-key company-active-map (kbd "C-z") #'company-try-hard)
   (define-key company-active-map (kbd "C-f") #'company-complete-common)
