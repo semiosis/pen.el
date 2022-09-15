@@ -1057,6 +1057,7 @@
 
 (require 'pen-comint)
 (define-key pen-map (kbd "DEL") 'pen-comint-del)
+(define-key pen-map (kbd "C-a") 'pen-comint-bol)
 (define-key comint-mode-map (kbd "C-j") 'comint-accumulate)
 (define-key comint-mode-map (kbd "C-a") 'comint-bol)
 (define-key comint-mode-map (kbd "C-e") 'end-of-line)
