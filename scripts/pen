@@ -2120,7 +2120,7 @@ IFS= read -r -d '' shcode <<HEREDOC
     sleep 10
 
     # After it has started, simply run again
-    "$sn" tm attach -t run
+    "$sn" tm attach
 HEREDOC
     }
     ;;
