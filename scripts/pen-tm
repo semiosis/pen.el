@@ -64,6 +64,12 @@ init-tm() {
         }
         ;;
 
+        -d) {
+            detached=y
+            shift
+        }
+        ;;
+
         *) break;
     esac; done
 
@@ -95,8 +101,13 @@ init-tm() {
         tmux kill-window -t "${session_name}":1.
     fi
 
-    TMUX= tmux attach -t "${session_name}":
-    echo init
+    if test "$detached" = "y"; then
+        :
+    else
+        TMUX= tmux attach -t "${session_name}":
+        echo init
+    fi
+
     exit 0
 }
 
