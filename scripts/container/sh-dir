@@ -149,7 +149,7 @@ case "$d" in
     R) cmd="select-recent-dir" ;;
     o) cmd="zcd $NOTES/ws" ;;
     d) cmd="zcd $DUMP" ;;
-    D) cmd="zcd $BULK/downloads" ;;
+    D) cmd="zcd $HOME/downloads" ;;
     O) cmd="sh-dir-ws" ;;
     e) cmd="CWD=/etc zsh" ;;
     W) cmd="fzf-dirs-cd-deep" ;;

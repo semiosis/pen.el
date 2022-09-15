@@ -22,6 +22,8 @@
       (defalias 'cmd 'pen-cmd)
       (defalias 'mu 'pen-mu)
       (defalias 'mm 'pen-mm)
+      (defalias 'mnm 'pen-mnm)
+      (defalias 'umn 'pen-umn)
       (defalias 'qa 'pen-qa)
       ;; (defalias 'sw 'pen-sw)
       (defalias 'sw 'pcase)

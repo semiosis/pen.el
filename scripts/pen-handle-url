@@ -6,11 +6,20 @@ export TTY
 
 url="$1"
 
+runexit() {
+    unbuffer "$@" &>/dev/null &
+    disown
+    exit 0
+}
+
 case "$url" in
     *app.tabnine.com*) {
-        unbuffer firefox "$@" &>/dev/null &
-        disown
-        exit 0
+        runexit firefox "$@"
+    }
+    ;;
+
+    *.csv) {
+        runexit download-file "$@"
     }
     ;;
 

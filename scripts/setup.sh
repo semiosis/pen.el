@@ -1048,3 +1048,5 @@ git clone "http://github.com/nadrad/h-m-m"
 cd h-m-m
 sed -i '/<?php/aerror_reporting(0);' h-m-m
 )
+
+mkdir -p $HOME/downloads
