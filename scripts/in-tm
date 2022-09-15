@@ -22,9 +22,9 @@ in-tm() {
         "$@"
     else
         if test -n "$session_name"; then
-            pen-tm init-or-attach -d "$@"
-        else
             pen-tm init-or-attach -d -n "$session_name" "$@"
+        else
+            pen-tm init-or-attach -d "$@"
         fi
     fi
 }

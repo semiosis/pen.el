@@ -82,7 +82,7 @@ init-tm() {
 
     cd "$HOME/notes"
     tmux start-server
-    tmux new-session -d -s localhost -c "$HOME/notes" bash
+    tmux new-session -d -s localhost -c "$HOME/notes" bash 2>/dev/null
     tmux set-option -t localhost: lock-after-time 36000
 
     : "${session_name:="${uid}"}"
