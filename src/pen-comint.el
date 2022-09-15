@@ -29,8 +29,7 @@
     (call-interactively 'lispy-move-beginning-of-line))
 
    (t
-    (call-interactively 'bei)
-    (beginning-of-line))))
+    (call-interactively 'beginning-of-line))))
 
 (defun comint-delchar ()
   (interactive)
