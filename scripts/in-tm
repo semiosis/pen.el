@@ -11,6 +11,12 @@ in-tm() {
         }
         ;;
 
+        -d) {
+            detached=y
+            shift
+        }
+        ;;
+
         *) break;
     esac; done
 
@@ -21,11 +27,15 @@ in-tm() {
     elif test "$PEN_USE_GUI" = "y"; then
         "$@"
     else
-        if test -n "$session_name"; then
-            pen-tm init-or-attach -d -n "$session_name" "$@"
-        else
-            pen-tm init-or-attach -d "$@"
+        if test -n "$detached"; then
+            set -- -d "$@"
         fi
+
+        if test -n "$session_name"; then
+            set -- -n "$session_name" "$@"
+        fi
+
+        pen-tm init-or-attach -d "$@"
     fi
 }
 
