@@ -1,5 +1,8 @@
 #!/bin/bash
 export TTY
 
+(
 pen-e qa
 tmux kill-server
+killall run.sh
+) & disown
