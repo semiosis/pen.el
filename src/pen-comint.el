@@ -8,7 +8,15 @@
     (comint-bol))
    
    ((derived-mode-p 'eshell-mode)
-    (eshell-bol))
+
+    (let ((comint-use-prompt-regexp t)
+              ;; Really need to derive this from scrraping the line
+              (comint-prompt-regexp "^.*[»#\\$] "))
+          ;; (call-interactively 'term-bol)
+          (call-interactively 'comint-bol))
+    
+    ;; (eshell-bol)
+    )
    
    ;; ((and (derived-mode-p 'term-mode)
    ;;       (minor-mode-enabled term-char-mode)

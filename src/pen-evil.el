@@ -22,7 +22,7 @@
             (beginning-of-line-or-indentation)
             (call-interactively 'cua-exchange-point-and-mark))
         (progn
-          (beginning-of-line)
+          (pen-comint-bol)
           (cua-set-mark)
           (end-of-line))))))
 
