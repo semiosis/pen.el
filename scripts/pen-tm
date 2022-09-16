@@ -686,6 +686,9 @@ case "$f" in
     ac|asciinema) {
         # I want to set up an tmux in xterm with the same dimensions as the current screen
 
+        rm -f /tmp/asciinema-x-session.txt
+        rm -f /tmp/asciinema-user-session.txt
+
         swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
         sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
         sheight="$(( sheight + 1 ))"
@@ -693,11 +696,16 @@ case "$f" in
         caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
 
         # I have to expect » twice because when asciinema starts it clears and repeats what's on screen
+        # I may have fixed or made this issue more complicated when I changed tmux bind C-l
+        
         # cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
         # For the best experience though I should avoid leaving it in pen-x and attach tmux because tcl/expect messes with visuals
         # Have to keep it attached and backgrounded and not kill pen-x until the session is destroyed.
 
-        cmd="unset TTY; pen-x -s \"asciinema rec\" -c m -e \"»\" -e \"»\" -s \"tty > /tmp/asciinema-client.txt\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
+        # Ahh, there was a double "-e »".
+
+        # Also, the sleep before asciinema rec is required
+        cmd="unset TTY; pen-x -s.2 -s \"asciinema rec\" -c m -e \"»\" -s \"tty > /tmp/asciinema-client.txt\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
         cmd2="TMUX= tmux attach -t \"$CALLER_TARGET\""
 
         echo "cinema-$caller_slug" > /tmp/asciinema-x-session.txt

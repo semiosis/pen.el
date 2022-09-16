@@ -15,9 +15,22 @@ if test -n "$TMUX" && test "$CALLER_TARGET" = "$user_session"; then
     tmux kill-session -t "$user_session"
 fi
 
+# » asciinema rec                                                              
+# asciinema: recording asciicast to /tmp/tmp14j2x_vp-ascii.cast                
+# asciinema: press <ctrl-d> or type "exit" when you're done                    
+# »                                                                            
+# »                                                                            
+# asciinema: recording finished                                                
+# asciinema: press <enter> to upload to asciinema.org, <ctrl-c> to save locally
+# asciinema: asciicast saved to /tmp/tmp14j2x_vp-ascii.cast                    
+# »                                                                            
+
+# This script most likely works already.
+# But the attached cinema session never successfully started recording
+
 if test -n "$x_session"; then
-    # cmd="unset TTY; pen-x -sl .5 -s \"TMUX= tmux attach -t ${x_session}:\" -c m -sl .2 -c d -e \"<enter>\" -c m -e \"»\" -sl .2 -f1 -s L -sl .2 -e \"»\" -x \"tmux kill-session -t $x_session:\" -exit"
-    cmd="unset TTY; pen-x -sl .5 -s \"TMUX= tmux attach -t ${x_session}:\" -c m -sl .2 -c d -e \"<enter>\" -c m -e \"»\" -sl .2 -x \"tm-xturls\" -sl .2 -x \"tmux kill-session -t $x_session:\" -exit"
+    # cmd="unset TTY; pen-x -s.2 -s \"TMUX= tmux attach -t ${x_session}:\" -c m -sl .2 -c d -e \"<enter>\" -c m -e \"»\" -sl .2 -f1 -s L -sl .2 -e \"»\" -x \"tmux kill-session -t $x_session:\" -exit"
+    cmd="unset TTY; pen-x -s.2 -s \"TMUX= tmux attach -t ${x_session}:\" -c m -sl .2 -c d -e \"<enter>\" -c m -e \"»\" -sl .2 -x \"tm-xturls\" -sl .2 -x \"tmux kill-session -t $x_session:\" -exit"
     tmux new-session -d -A -s "cinema-ender" \; respawnp -k -t "cinema-ender:1" "$cmd"
 fi
 
