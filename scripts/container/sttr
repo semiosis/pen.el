@@ -1,9 +1,21 @@
 #!/bin/bash
 export TTY
 
-if test "$VIPIFY" = "y"; then
-    cat "$1" | /root/go/bin/sttr
+# sttr still can't be used as a filter, sadly
+# Because it's output is sent to the tty, not stdout or stderr
+# echo "dfjskl fskldfj dksklfd" | tm vipe -wintype spv "vipify sttr" | cat
+# I could, in theory make a tmux wrapper to capture the tty then close the tty
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if ! test "$VIPIFY" = y && ! is_tty; then
+    tm vipe -wintype spv "vipify sttr"
 else
-    # The first argument is the transformation function
-    /root/go/bin/sttr "$@"
+    if test "$VIPIFY" = "y"; then
+        cat "$1" | /root/go/bin/sttr
+        pen-tm -te -d capture - | strip-ansi | tac | sed '/^$/,/═/d' | sed '/═/,$d' | tac | sponge "$1"
+    else
+        # The first argument is the transformation function
+        /root/go/bin/sttr "$@"
+    fi
 fi
