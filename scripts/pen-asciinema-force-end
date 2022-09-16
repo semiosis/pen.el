@@ -4,3 +4,4 @@ export TTY
 tmux switch-client -t localhost || :
 
 tmux list-sessions|cut -d : -f 1 | grep -P "^cinema" | while read line; do tmux kill-session -t "$line"; done
+tmux kill-session -t wrap || :

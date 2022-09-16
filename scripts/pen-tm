@@ -2559,7 +2559,7 @@ case "$f" in
 
             while ! grep -q "\[ $grepstring \]" "$np"; do
                 ((++c))
-                if test "$NOABORT" = "n" && [ "$c" -eq 10 ]; then
+                if test "$NOABORT" = "n" && [ "$c" -gt 10 ]; then
                     notify-send "Leaving capture \"[ $grepstring ]\" because it took too long."
                     break
                 fi

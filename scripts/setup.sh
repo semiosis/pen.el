@@ -1050,3 +1050,5 @@ sed -i '/<?php/aerror_reporting(0);' h-m-m
 )
 
 mkdir -p $HOME/downloads
+
+agi strace
