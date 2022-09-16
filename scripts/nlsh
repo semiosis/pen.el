@@ -7,6 +7,14 @@ sn="$(basename "$0")"
 : "${PEN_APPNAME:="$sn"}"
 export PEN_APPNAME
 
+pena() {
+    command pena --pool "$@"
+}
+
+penf() {
+    command penf --pool "$@"
+}
+
 inside-docker-p() {
     test -f /.dockerenv
 }
@@ -61,7 +69,7 @@ esac; done
 
 case "$PEN_APPNAME" in
     nlsh) { prompt=pf-nlsh/2; } ;;
-    nlsc) { prompt=pf-code-snippet-from-natural-language/2; } ;;
+    nlsc) { prompt=pf-code-snippet-from-natural-language/2; header="Describe the coding problem that you need a snippet for:"; } ;;
     nlsu|nlsx) { prompt=pf-get-an-example-of-the-usage-of-a-function/2; SWAP_ARGS=y; header="What would you like examples for?"; } ;;
     nlq) { prompt=pf-instruct-an-ai-to-do-something/1; OS_OR_LANG=nlq; header="Enter queries (e.g. 'latest version of node'):" template="Show <query>"; maybe_cm=y; } ;;
 
@@ -199,14 +207,6 @@ echo
 export USE_CONVERSATION_MODE=y
 
 # rlwrap openai-complete.sh prompts/nlsh-2.prompt "$OS_OR_LANG"
-
-pena() {
-    command pena --pool "$@"
-}
-
-penf() {
-    command penf --pool "$@"
-}
 
 while IFS=$'\n' read -p "${OS_OR_LANG}: " -r nlcommand; do
     if test "$nlcommand" = "!!"; then

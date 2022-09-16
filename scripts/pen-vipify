@@ -1,5 +1,8 @@
 #!/bin/bash
 export TTY
 
+# This is for sttr
+export VIPIFY=y
+
 which "$1" &>/dev/null || cat
 EDITOR="$1" vipe

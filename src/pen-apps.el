@@ -5,6 +5,18 @@
   (interactive)
   (term-sps (concat (pen-cmd "cd" default-directory) "; br")))
 
+(defun gambit ()
+  (interactive)
+  (term-sps (concat (pen-cmd "cd" default-directory) "; gambit")))
+
+(defun slides ()
+  (interactive)
+  (term-sps (concat (pen-cmd "cd" default-directory) "; slides")))
+
+(defun noted ()
+  (interactive)
+  (term-sps (concat (pen-cmd "cd" default-directory) "; noted")))
+
 (defun broot ()
   (interactive)
   (pen-sps "br" nil nil default-directory))

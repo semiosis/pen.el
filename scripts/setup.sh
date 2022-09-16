@@ -1052,3 +1052,13 @@ sed -i '/<?php/aerror_reporting(0);' h-m-m
 mkdir -p $HOME/downloads
 
 agi strace
+
+# bubbletea apps
+go install github.com/maaslalani/gambit@latest
+go install github.com/maaslalani/slides@latest
+go install github.com/abhimanyu003/sttr@latest
+go install github.com/torbratsberg/noted@latest
+
+# These did not install
+# go install github.com/MicheleFiladelfia/mandelbrot-cli@latest
+# go install github.com/mergestat/mergestat@latest

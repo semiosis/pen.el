@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+export VIPIFY
+
 is_tty() {
     [[ -t 1 ]]
 }

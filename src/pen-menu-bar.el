@@ -583,6 +583,16 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-nlsc-menu
+  (let ((menu (make-sparse-keymap "Natural language code snippets")))
+    (bindings--define-key menu [mi-sps-nlsc]
+      '(menu-item "Start a snippet shell" sps-nlsc
+                  :help "Generate snippets using natural language"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
 (defset menu-bar-sandbox-menu
   (let ((menu (make-sparse-keymap "Sandbox")))
     (bindings--define-key menu [mi-sandbox-nbfs]
@@ -1010,6 +1020,9 @@
     (bindings--define-key menu [mi-menu-bar-nlq-menu]
       `(menu-item "NLQ" ,menu-bar-nlq-menu
                   :help "Run a natural language query shell"))
+    (bindings--define-key menu [mi-menu-bar-nlsc-menu]
+      `(menu-item "NLSC" ,menu-bar-nlsc-menu
+                  :help "Run a natural language snippet shell"))
     (bindings--define-key menu [mi-menu-bar-guru-menu]
       `(menu-item "Guru" ,menu-bar-guru-menu
                   :help "Talk to a chatbot about some text"))
