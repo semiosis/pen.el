@@ -9,9 +9,16 @@
   (interactive)
   (term-sps (concat (pen-cmd "cd" default-directory) "; gambit")))
 
-(defun slides ()
+(defun slides (&optional path)
   (interactive)
-  (term-sps (concat (pen-cmd "cd" default-directory) "; slides")))
+  (let ((bpath (get-path nil t)))
+    (cond
+     (path
+      (term-sps (cmd "slides" path)))
+     ((string-match "\\.md$" bpath)
+      (term-sps (cmd "slides" bpath)))
+     (t
+      (term-sps "slides")))))
 
 (defun noted ()
   (interactive)

@@ -251,6 +251,7 @@
 
 (defset markdown-mode-funcs '(markdown-get-mode-here
                               markdown-preview
+                              slides
                               md-org-export-to-org
                               md-glow-vs
                               markdown-get-lang-here
