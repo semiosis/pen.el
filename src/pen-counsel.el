@@ -8,8 +8,8 @@
     (defun ivy-make-magic-action (a b) nil))
 
 (require 'counsel)
-
-; vim +/"ivy-height" "$EMACSD/config/pen-ivy.el"
+(load-library "counsel")
+                                        ; vim +/"ivy-height" "$EMACSD/config/pen-ivy.el"
 
 ;; Spacemacs' find file was annoying because of C-h.
 ;; Remove the keymap from M-m f f
@@ -169,28 +169,12 @@ prompt additionally for EXTRA-AG-ARGS."
       ;; (tv (pps ret))
       ret)))
 
+(setq counsel-search-engine 'google)
+
 ;; This is used to run counsel search prompt;
 ;; I should build custom ones that do prompting instead.
 ;; But I have to make a fast prompt mechanism.
-(defun counsel-search-function (input)
-  "Create a request to a search engine with INPUT.
-Return 0 tells `ivy--exhibit' not to update the minibuffer.
-We update it in the callback with `ivy-update-candidates'."
-  (or
-   (ivy-more-chars)
-   (let ((engine (cdr (assoc counsel-search-engine counsel-search-engines-alist))))
-     (request
-       (nth 0 engine)
-       :type "GET"
-       :params (list
-                (cons "client" "firefox")
-                (cons "q" input))
-       :parser 'json-read
-       :success (cl-function
-                 (lambda (&key data &allow-other-keys)
-                   (ivy-update-candidates
-                    (funcall (nth 2 engine) data)))))
-     0)))
+;; j:counsel-search-function
 
 (defun counsel-search ()
   "Ivy interface for dynamically querying a search engine."
