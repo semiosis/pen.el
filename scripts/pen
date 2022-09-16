@@ -356,7 +356,7 @@ case "$sn" in
     pan) {
         sn=pen
         start_shell=y
-        set -- /bin/sh -c "tmux attach -t pen || tmux attach -t localhost || tmux attach -t init || tmux attach"
+        set -- /bin/sh -c "tmux attach -t pen 2>/dev/null || tmux attach -t localhost 2>/dev/null || tmux attach -t init 2>/dev/null || tmux attach"
     }
     ;;
 
