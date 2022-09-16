@@ -353,6 +353,13 @@ case "$sn" in
     }
     ;;
 
+    pan) {
+        sn=pen
+        start_shell=y
+        set -- tmux attach -t pen
+    }
+    ;;
+
     psh) {
         sn=pen
         start_shell=y

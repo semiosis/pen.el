@@ -3155,6 +3155,15 @@ case "$f" in
     }
     ;;
 
+    ksr|kill-sesions) {
+        pat="$1"
+        test -n "$pat" || exit 1
+        shift
+
+        tmux list-sessions | cut -d : -f 1 | grep -P "$pat" | while read line; do tmux kill-session -t "$line"; done
+    }
+    ;;
+
     bh|base-here) {
         pen-tm n "$f :: NOT IMPLEMENTED"
     }
