@@ -1219,6 +1219,10 @@
 
 (define-key evil-ex-completion-map (kbd "M-m") 'run-line-or-region-in-tmux)
 
+
+(define-key pen-map (kbd "M-J") 'pen-join-line)
+(define-key pen-map (kbd "H-w") 'get-path)
+
 (require 'pen-post-bindings)
 (load-library "pen-post-bindings")
 

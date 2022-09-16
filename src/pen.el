@@ -2232,6 +2232,10 @@ May use to generate code from comments."
   (interactive)
   (pen-continue-from-hist t force-interactive))
 
+;; TODO Make a way to
+
+;; TODO Make a way to take the last generated prompt and simply start completing with it
+
 (defun pen-continue-from-hist (&optional last force-interactive)
   (interactive)
   (let* ((fp (f-join penconfdir "prompt-hist.el"))

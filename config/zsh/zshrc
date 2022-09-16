@@ -325,7 +325,8 @@ bindkey -s "^[l" "^A^Ksh-general\r"
 bindkey -s "^[L" "^A^Ksh-ranger-lingo .\r"
 
 # M-B
-bindkey -s "^[B" "^A^Kbr\r"
+# bindkey -s "^[B" "^A^Kbr\r"
+bindkey -s "^[B" "^A^Kbr-txt\r"
 
 # M-N
 bindkey -s "^[N" "^A^Kbr-img\r"

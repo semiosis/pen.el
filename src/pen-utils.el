@@ -133,4 +133,10 @@
   (-filter 'functionp
            (apropos-internal pattern)))
 
+(defun pen-join-line ()
+  (interactive)
+  (save-excursion
+    (next-line)
+    (join-line)))
+
 (provide 'pen-utils)
