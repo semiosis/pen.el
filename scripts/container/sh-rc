@@ -138,7 +138,7 @@ case "$d" in
     u) cmd="pin $EMACSD/config/my-utils.el" ;;
     U) cmd="pin $EMACSD/config/my-utils.2.el" ;;
     r) cmd="vs $HOME/.config/ranger/rc.conf" ;; # much better in vs
-    R) cmd="rifle $HOME/versioned/git/config/ranger/rifle.conf" ;;
+    R) cmd="rifle $HOME/.config/ranger/rifle.conf" ;;
     h) cmd="pin $EMACSD/config/my-hydra.el" ;;
     p) cmd="pins $HOME/notes/ws/python/rc/pythonrc.full.py" ;;
     P) cmd="vs $EMACSD/packages.txt" ;;
