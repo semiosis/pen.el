@@ -705,7 +705,7 @@ case "$f" in
         # Ahh, there was a double "-e »".
 
         # Also, the sleep before asciinema rec is required
-        cmd="unset TTY; pen-x -s.2 -s \"asciinema rec\" -c m -e \"»\" -s \"tty > /tmp/asciinema-client.txt\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
+        cmd="unset TTY; pen-x -s.2 -s \"asciinema rec\" -c m -e \"»\" -e \"»\" -s \"tty > /tmp/asciinema-client.txt\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
         cmd2="TMUX= tmux attach -t \"$CALLER_TARGET\""
 
         echo "cinema-$caller_slug" > /tmp/asciinema-x-session.txt
