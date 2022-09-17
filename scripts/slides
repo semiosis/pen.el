@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fp="$1"
+
+if ! pl "$fp" | grep -i -q -P '\.md$'; then
+    exit 1
+fi
+
+${GOPATH%%:*}/bin/slides "$@"

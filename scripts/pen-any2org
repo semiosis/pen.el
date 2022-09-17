@@ -1,0 +1,70 @@
+#!/bin/bash
+export TTY
+
+fp="$1"
+fn=$(basename "$fp")
+dn=$(dirname "$fp")
+ext="${fn##*.}"
+mant="${fn%.*}"
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if ! test -f "$fp"; then
+    if stdin_exists; then
+        echo Need to know the extension | hls red 1>&2
+    fi
+    exit 1
+fi
+
+if pl "$fp" | grep -q -P '\.org$'; then
+    if is_tty; then
+        pin "$fp"
+    else
+        echo "$fp"
+    fi
+    exit "$?"
+fi
+
+cd "$dn"
+
+# Sometimes both a README.rst and README.org exist so use fn
+# newfp="${mant}.org"
+newfp="${fn}.org"
+
+if ! test -f "$newfp"; then
+    case "$ext" in
+        tsv) {
+            cat "$fp" | tsv2org-table > "$newfp"
+        }
+        ;;
+
+        xml) {
+            # iconv | 
+            pandoc -f "docbook" -t org "$fp" | max-one-empty-line.sh > "$newfp"
+        }
+        ;;
+
+        *) {
+            # iconv | 
+            pandoc -f "$ext" -t org "$fp" | max-one-empty-line.sh > "$newfp"
+        }
+        ;;
+    esac
+fi
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+if is_tty; then
+    pin "$newfp"
+fi

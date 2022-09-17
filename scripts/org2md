@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+if [ -t 0 ] && test -f "$1"; then
+    exec < <(cat "$1")
+fi
+
+pandoc -f org -t markdown |
+    sed -e 's/^\\\*/**/' -e 's/\\\*$/**/' |
+    sed -e 's/\\\[/[/' -e 's/\\\]/]/' |
+    sed -e 's/\[-\]/\[ \]/' |
+    sed -e 's/\[\\#A\]/Top priority - /' |
+    sed -e 's/\[\\#A\]/Next highest priority - /' |
+    sed -e 's/\[\\#A\]/Last priority - /'

@@ -541,12 +541,15 @@ single-character strings, or a string of characters."
         (start-ch (char-after (point))))
     (cl-loop
      while (zerop (forward-line step))
-     when (and (not (string-equal "\n" (str (thing-at-point 'line))))
-               (not (string-equal " " (str (thing-at-point 'char))))
-               (not (string-equal "	" (str (thing-at-point 'char))))
-               (= (move-to-column start-col) start-col)
-               (/= (char-after (point)) start-ch)
-               (/= (char-after (point)) (string-to-char " ")))
+     when
+     (or
+      (cljr--end-of-buffer-p)
+      (and (not (string-equal "\n" (str (thing-at-point 'line))))
+           (not (string-equal " " (str (thing-at-point 'char))))
+           (not (string-equal "	" (str (thing-at-point 'char))))
+           (= (move-to-column start-col) start-col)
+           (/= (char-after (point)) start-ch)
+           (/= (char-after (point)) (string-to-char " "))))
      return t)))
 
 (defun irc-find-prev-line-with-diff-char ()

@@ -125,7 +125,7 @@ case "$d" in
     %) cmd="vs $HOME/notes/chinese.vim" ;;
     C) cmd="vs $HOME/.clojurerc" ;;
     =) cmd="vs $HOME/notes/im/channels.txt" ;;
-    v) cmd="v $HOME$VIMCONFIG/vimrc" ;;
+    v) cmd="v $HOME/.vimrc" ;;
     V) cmd="vs $DUMP/programs/vscode/packages.txt" ;;
     s) cmd="vs $HOME/.ssh/config" ;;
     \;) cmd="vs $HOME/.shellrc" ;;

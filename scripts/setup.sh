@@ -1062,3 +1062,6 @@ go install github.com/torbratsberg/noted@latest
 # These did not install
 # go install github.com/MicheleFiladelfia/mandelbrot-cli@latest
 # go install github.com/mergestat/mergestat@latest
+
+# For any2org
+agi pandoc
