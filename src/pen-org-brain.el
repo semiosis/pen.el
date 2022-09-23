@@ -1149,10 +1149,11 @@ Also stop descending if a node has been visited before.
 
     (nbfs (pen-snc "uniqnosort" (pen-list2str tre)) nil 'graphviz-dot-mode)))
 
-(defun uniqify-buffer-around-advice (proc &rest args)
-  (let ((res (uniqify-buffer (apply proc args))))
-    res))
-(advice-add 'org-brain-visualize :around #'uniqify-buffer-around-advice)
+;; (defun uniqify-buffer-around-advice (proc &rest args)
+;;   (let ((res (uniqify-buffer (apply proc args))))
+;;     res))
+;; (advice-add 'org-brain-visualize :around #'uniqify-buffer-around-advice)
+;; (advice-remove 'org-brain-visualize #'uniqify-buffer-around-advice)
 
 (define-key org-brain-visualize-mode-map (kbd "C-c C-d") 'org-brain-to-dot-associates)
 (define-key org-brain-visualize-mode-map (kbd "R") 'org-brain-rename-file)

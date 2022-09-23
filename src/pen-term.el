@@ -268,15 +268,27 @@ commands to use in that buffer.
 (defun pen-term (program &optional closeframe modename buffer-name reuse starting-elisp)
   (interactive (list (read-string "program:")))
   (let ((termcmd (pen-var-value-maybe 'pen-termcmd)))
-    (if (and termcmd
-             (not (eq termcmd 'pen-eterm)))
-        ;; (apply termcmd (list program closeframe modename buffer-name reuse))
-        (let ((buf ;; (apply termcmd (list program))
-               (call-interactively termcmd)))
-          (switch-to-buffer buf)
-          (pen-insert (concat program "; exit"))
-          (ekm "C-m"))
-      (pen-eterm program closeframe modename buffer-name reuse starting-elisp))))
+    (cond
+     ((eq termcmd 'vterm)
+      (pen-vterm program closeframe modename buffer-name reuse starting-elisp))
+     (t (pen-eterm program closeframe modename buffer-name reuse starting-elisp)))
+
+    ;; (if (and termcmd
+    ;;          (not (eq termcmd 'pen-eterm)))
+    ;;     ;; (apply termcmd (list program closeframe modename buffer-name reuse))
+    ;;     (let ((buf ;; (apply termcmd (list program))
+    ;;            (call-interactively termcmd)))
+    ;;       (switch-to-buffer buf)
+    ;;       (pen-insert (concat program "; exit"))
+    ;;       (ekm "C-m"))
+    ;;   (pen-eterm program closeframe modename buffer-name reuse starting-elisp))
+    ))
+
+(defun pen-vterm (program &optional closeframe modename buffer-name reuse starting-elisp)
+  (interactive (list (read-string "program:")))
+  (let ((vterm-shell (or program
+                         vterm-shell)))
+    (vterm)))
 
 (defun pen-eterm (program &optional closeframe modename buffer-name reuse starting-elisp)
   (interactive (list (read-string "program:")))

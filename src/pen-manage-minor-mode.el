@@ -1,11 +1,13 @@
 (require 'manage-minor-mode)
 
 ;; Disable hl-line-mode for term
-(defun hl-line-mode-around-advice (proc &rest args)
-  (if (not (major-mode-p 'term-mode))
+(defun not-terminal-around-advice (proc &rest args)
+  (if (not (or (major-mode-p 'term-mode)
+               (major-mode-p 'vterm-mode)))
       (let ((res (apply proc args)))
         res)))
-(advice-add 'global-hl-line-highlight :around #'hl-line-mode-around-advice)
+(advice-add 'global-hl-line-highlight :around #'not-terminal-around-advice)
+(advice-add 'display-line-numbers--turn-on :around #'not-terminal-around-advice)
 
 (setq manage-minor-mode-default
       '((aws-instances-mode
