@@ -137,6 +137,9 @@
       (setq pen-snippets-directory hostsnippetsdir)
     (setq pen-snippets-directory (f-join user-emacs-directory "snippets"))))
 
+(add-to-list 'yas-snippet-dirs "/root/.pen/host/snippets")
+(yas-reload-all)
+
 (let ((hostkhaladir (f-join user-emacs-directory "host" "khala")))
   (if (f-directory-p (f-join hostkhaladir "src"))
       (setq pen-khala-directory hostkhaladir)
