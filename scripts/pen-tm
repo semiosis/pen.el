@@ -2612,6 +2612,35 @@ case "$f" in
     }
     ;;
 
+    xt) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -t) {
+                TARGET="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -p) {
+                pop_out=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        : "${TARGET:="$(TMUX= tmux display-message -p -t "$TARGET" '#{session_name}')"}"
+
+        if test "$pop_out" = "y"; then
+            tmux detach-client -s "$TARGET:"
+        fi
+
+        xt tmux attach -t "$TARGET"
+    }
+    ;;
+
     tnf|new-file) {
         tf="$(u pen-tf new txt)"
 
