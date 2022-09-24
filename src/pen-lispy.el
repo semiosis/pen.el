@@ -26,6 +26,10 @@
                ;; caddr = third
                (argvec (third sexp))
                (arglist (pen-vector2list argvec))
+               ;; Probably the simplest fix is to remove the &
+               ;; Rather than implementing variable arguments
+               (arglist (-filter (lambda (s) (not (string-equal "&" s)))
+                                 arglist))
                (iarglist (mapcar
                           (lambda (e) `(read-string-hist ,(concat (str e) ": ")))
                           arglist))

@@ -32,6 +32,8 @@
                            run-fs-search-function
                            dired-toggle-dumpd-dir
                            pen-sps-ranger))
+(defset magit-status-mode-funcs '(magit-section-cycle-diffs
+                                  magit-dired-jump))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))
