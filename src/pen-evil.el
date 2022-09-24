@@ -18,8 +18,9 @@
           (progn
             (end-of-line)
             (call-interactively 'cua-set-mark)
-            (beginning-of-line-or-indentation)
-            (beginning-of-line-or-indentation)
+            (pen-comint-bol)
+            ;; (beginning-of-line-or-indentation)
+            ;; (beginning-of-line-or-indentation)
             (call-interactively 'cua-exchange-point-and-mark))
         (progn
           (pen-comint-bol)
