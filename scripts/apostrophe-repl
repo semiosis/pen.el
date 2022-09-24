@@ -35,7 +35,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -your-name) {
+    -me|-your-name) {
         PEN_YOUR_NAME="$2"
         shift
         shift

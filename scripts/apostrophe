@@ -70,6 +70,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -me|-your-name) {
+        PEN_YOUR_NAME="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -blurb) {
+        blurb="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
