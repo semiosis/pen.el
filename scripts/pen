@@ -1984,6 +1984,11 @@ fi
 #     remote_cmd="/root/run.sh"
 # fi
 
+# docker_cmd should only = run if it hasn't started yet
+if inside-docker-p && test "$docker_cmd" = run; then
+    docker_cmd=exec
+fi
+
 case "$docker_cmd" in
     run) {
 
