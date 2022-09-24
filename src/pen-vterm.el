@@ -3,6 +3,16 @@
 ;; (setq vterm-keymap-exceptions
 ;;       '("C-c" "C-x" "C-u" "C-g" "C-h" "C-l" "M-x" "M-o" "C-v" "M-v" "C-y" "M-y"))
 
+(defun vterm-send-meta-colon ()
+  "Send `M-:' to the libvterm."
+  (interactive)
+  (vterm-send-key ":" nil t))
+
+(defun vterm-send-meta-semicolon ()
+  "Send `M-:' to the libvterm."
+  (interactive)
+  (vterm-send-key ";" nil t))
+
 (setq vterm-keymap-exceptions
       '("C-c"))
 
@@ -52,6 +62,8 @@
     (define-key map (kbd "C-/")                 #'vterm-undo)
     (define-key map (kbd "M-.")                 #'vterm-send-meta-dot)
     (define-key map (kbd "M-,")                 #'vterm-send-meta-comma)
+    (define-key map (kbd "M-:")                 #'vterm-send-meta-colon)
+    (define-key map (kbd "M-;")                 #'vterm-send-meta-semicolon)
     (define-key map (kbd "C-c C-y")             #'vterm--self-insert)
     (define-key map (kbd "C-c C-c")             #'vterm-send-C-c)
     (define-key map (kbd "C-c C-l")             #'vterm-clear-scrollback)
@@ -63,6 +75,7 @@
     (define-key map (kbd "C-c C-r")             #'vterm-reset-cursor-point)
     (define-key map (kbd "C-c C-n")             #'vterm-next-prompt)
     (define-key map (kbd "C-c C-p")             #'vterm-previous-prompt)
+    (define-key map (kbd "C-c M-x")             #'pen-counsel-M-x)
     (define-key map (kbd "C-c C-t")             #'vterm-copy-mode)
     map))
 
@@ -73,7 +86,7 @@
     (define-key map (kbd "RET")            #'vterm-copy-mode-done)
     (define-key map (kbd "C-c C-r")        #'vterm-reset-cursor-point)
     (define-key map (kbd "C-a")            #'vterm-beginning-of-line)
-    (define-key map (kbd "C-e")            #'vterm-end-of-line)
+    (define-key map (kbd "C-e")            #'vterm-end-of-line)    
     (define-key map (kbd "C-c C-n")        #'vterm-next-prompt)
     (define-key map (kbd "C-c C-p")        #'vterm-previous-prompt)
     map))
