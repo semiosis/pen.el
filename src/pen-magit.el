@@ -617,7 +617,9 @@ revisions (interactive.e., use a \"...\" range)."
    (user-error "File not associated with a git repository.")))
 
 (define-key global-map (kbd "C-x l") 'git-this-file)
-(define-key magit-status-mode-map (kbd "M-TAB") nil)
 (define-key magit-status-mode-map (kbd "M-TAB") 'magit-section-cycle-diffs)
+(define-key magit-status-mode-map (kbd "<M-tab>") 'magit-section-cycle-diffs)
+(define-key magit-diff-mode-map (kbd "M-TAB") 'magit-section-cycle-diffs)
+(define-key magit-diff-mode-map (kbd "<M-tab>") 'magit-section-cycle-diffs)
 
 (provide 'pen-magit)
