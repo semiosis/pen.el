@@ -59,6 +59,10 @@ export QUIET
 export VERBOSE
 export USE_PROFILE
 
+if test "$#" -eq 0; then
+    set -- sh -c "/bin/bash || /bin/zsh || sh" "$@"
+fi
+
 case "$sn" in
     pen-ssh-host) {
         :
