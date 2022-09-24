@@ -25,6 +25,7 @@
       (defalias 'mnm 'pen-mnm)
       (defalias 'umn 'pen-umn)
       (defalias 'qa 'pen-qa)
+      (defalias 'q 'pen-q)
       ;; (defalias 'sw 'pen-sw)
       (defalias 'sw 'pcase)
       (defalias 'list2str 'pen-list2str)

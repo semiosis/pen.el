@@ -29,7 +29,7 @@
          (car e))
         (t e)))
 
-(defun apostrophe-start-chatbot-from-name (name &optional auto)
+(defun apostrophe-start-chatbot-from-name (their-name &optional auto blurb your-name)
   "A simple tit-for-tat conversation interface that prompts a language model for an interlocutor."
   (interactive (list
                 (fz (pen-list-fictional-characters)
@@ -45,30 +45,32 @@
           (pen-term-nsfa (pen-cmd "pen" "-n"))
           (message "Starting Pen server")))
 
-    (if (not name)
-        (setq name "Marco Polo"))
+    (if (not their-name)
+        (setq their-name "Marco Polo"))
 
-    (let* ((final-blurb
-            (if auto
-                (car-maybe
-                 (eval
-                  `(pen-engine
+    (let* ((final-your-name (or your-name "you"))
+           (final-blurb
+            (or blurb
+             (if auto
+                 (car-maybe
+                  (eval
+                   `(pen-engine
+                     ,apostrophe-engine
+                     (apostrophe-generate-blurb ,their-name)
+                     ;; (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 ,their-name :no-select-result t))
+                     )))
+               ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
+               (pen-eipec
+                (eval
+                 `(upd
+                   (pen-engine
                     ,apostrophe-engine
-                    (apostrophe-generate-blurb ,name)
-                    ;; (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result t))
+                    (apostrophe-generate-blurb ,their-name)
+                    ;; (pf-generate-wiki-blurb-for-a-famous-person/1 ,their-name :no-select-result nil)
                     )))
-              ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
-              (pen-eipec
-               (eval
-                `(upd
-                  (pen-engine
-                   ,apostrophe-engine
-                   (apostrophe-generate-blurb ,name)
-                   ;; (pf-generate-wiki-blurb-for-a-famous-person/1 ,name :no-select-result nil)
-                   )))
-               nil nil nil nil "Edit the final-blurb then save and quit this file."))))
+                nil nil nil nil "Edit the final-blurb then save and quit this file.")))))
 
-      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-getcomintcmd" name "" final-blurb))))
+      (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-engine" apostrophe-engine "-your-name" final-your-name "-getcomintcmd" their-name "" final-blurb))))
         (pen-e-sps (pen-lm (pen-eval-string el)))))))
 
 (defun apostrophe-chat-about-selection (text &optional expert blurb)

@@ -161,6 +161,14 @@ PATH is the sexp to evaluate, as a string."
   "Run ff `pattern'."
   (pen-sps (concat "ff " (pen-q pattern))))
 
+(org-add-link-type "replace" 'mullikine/follow-replace-link)
+(defun mullikine/follow-replace-link (pattern)
+  "Run replace `pattern'."
+  (let ((result (chomp (eval-string pattern))))
+    (pen-select-regex-at-point "\\[\\[.*\\]\\]")
+    (pen-delete-selected-text)
+    (insert result)))
+
 (org-add-link-type "v" 'mullikine/follow-v-link)
 (defun mullikine/follow-v-link (pattern)
   "Run v `pattern'."

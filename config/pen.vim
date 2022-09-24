@@ -25,7 +25,7 @@ function! VisualPrompt(fun, ...)
     let cmd = a:fun . s
     " let s = system("pena -fz --pool -u " . cmd, @p)
     " let s = system(Tv("pena -fz " . cmd), @p)
-    let s = system("pena -fz " . cmd, @p)
+    let s = system("pena --pool -fz " . cmd, @p)
     let @p = s
 
     " paste from p register
@@ -66,7 +66,7 @@ function! InsertPrompt(fun, in, ...)
     " In order for this to work, I need to put each generation into a one-liner
     " One-linerise the json
     " let s = Chomp(system("pena -fz --pool -u " . cmd, a:in))
-    let s = Chomp(system("pena -fz " . cmd, a:in))
+    let s = Chomp(system("pena --pool -fz " . cmd, a:in))
 
     " Write s to file /tmp/test.txt
 
