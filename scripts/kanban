@@ -9,7 +9,7 @@ kanban=/root/repos/kanban.bash/kanban
 
 opt="$1"
 case "$opt" in
-    show) {
+    show|list) {
         use_less=y
     }
     ;;
@@ -18,7 +18,8 @@ case "$opt" in
 esac
 
 if test "$use_less" = "y"; then
-    nvc -E "$kanban $@ | less"
+    # nvc -E "unbuffer $kanban $@ | less -rS"
+    nvc -E "$kanban $@ | strip-ansi | less -S"
     exit "$?"
 else
     "$kanban" "$@"
