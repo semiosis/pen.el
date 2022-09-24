@@ -3,5 +3,23 @@ export TTY
 
 ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-/root/repos/kanban.bash/kanban "$@"
+export EDITOR=v
 
+kanban=/root/repos/kanban.bash/kanban
+
+opt="$1"
+case "$opt" in
+    show) {
+        use_less=y
+    }
+    ;;
+
+    *)
+esac
+
+if test "$use_less" = "y"; then
+    nvc -E "$kanban $@ | less"
+    exit "$?"
+else
+    "$kanban" "$@"
+fi
