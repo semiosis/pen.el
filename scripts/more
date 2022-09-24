@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# Use less instead of more
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    nvc less "$@"
+else
+    less "$@"
+fi

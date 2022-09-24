@@ -1067,3 +1067,10 @@ go install github.com/torbratsberg/noted@latest
 agi pandoc
 
 agi unionfs-fuse
+
+# kanban
+(
+agi gawk
+cd "$HOME/repos"
+git clone "http://github.com/coderofsalvation/kanban.bash"
+)
