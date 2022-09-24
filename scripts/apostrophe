@@ -112,7 +112,7 @@ stdin_exists() {
 
 if test "$#" -eq 0; then
     person="$(pen-readln "Chatbot name")"
-    your_name="$(pen-readln "Your name")"
+    PEN_YOUR_NAME?g="$(pen-readln "Your name")"
     blurb="$(pen-readln "Chatroom blurb")"
 else
     person="$@"
@@ -133,8 +133,8 @@ if stdin_exists; then
     context="$(cat)"
 fi
 
-if test -n "$person" && test -n "$your_name" && test -n "$blurb"; then
-    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person") nil $(cmd-nice-posix "$blurb") $(cmd-nice-posix "$your_name")))(delete-other-windows)))"
+if test -n "$person" && test -n "$PEN_YOUR_NAME?g" && test -n "$blurb"; then
+    pen -nn -frametype "$FRAMETYPE" --pool -ic "(pen-engine $PEN_ENGINE_ELISP (progn (upd (apostrophe-start-chatbot-from-name $(cmd-nice-posix "$person") nil $(cmd-nice-posix "$blurb") $(cmd-nice-posix "$PEN_YOUR_NAME?g")))(delete-other-windows)))"
 elif test -n "$context"; then
     # Rather than specifying directly to the prompt function,
     # this value is taken up and remembered for future prompting within the apostrophe
