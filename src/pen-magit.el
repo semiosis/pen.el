@@ -116,14 +116,14 @@
   (interactive (cons (magit-diff-read-range-or-commit "Diff for range"
                                                       nil current-prefix-arg)
                      (magit-diff-arguments)))
-  (term-sph (concat "git d " rev-or-range " -- " (mapconcat 'identity files " "))))
+  (pen-sph (concat "git d " rev-or-range " -- " (mapconcat 'identity files " "))))
 
 (defun magit-diff-difft-term (rev-or-range &optional args files)
        "Show differences between two commits."
        (interactive (cons (magit-diff-read-range-or-commit "Diff for range"
                                                            nil current-prefix-arg)
                           (magit-diff-arguments)))
-       (term-sph (concat "git d -t difft " rev-or-range " -- " (mapconcat 'identity files " "))))
+       (pen-sph (concat "git d -t difft " rev-or-range " -- " (mapconcat 'identity files " "))))
 
 (defun git-get-files-for-commit (&optional commit)
   (if (not commit)
