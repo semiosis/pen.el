@@ -241,7 +241,7 @@ while read -e -r user_input; do
     gen="$(prompt_the_lm "$user_input" | chomp | sed -z 's/^\n\+//')"
     last_last_memory="$last_memory"; last_memory="$memory"
     memory+="$user_input\n"
-    gen="${gen}\n- you: "
+    gen="${gen}\n- $PEN_YOUR_NAME: "
     p "$gen"
     memory+="$gen"
     p "$memory" > "/tmp/memory.txt"
