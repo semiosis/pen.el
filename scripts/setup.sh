@@ -1065,3 +1065,5 @@ go install github.com/torbratsberg/noted@latest
 
 # For any2org
 agi pandoc
+
+agi unionfs-fuse

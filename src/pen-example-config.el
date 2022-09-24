@@ -132,6 +132,11 @@
       (setq pen-pensieve-directory hostpensievedir)
     (setq pen-pensieve-directory (f-join user-emacs-directory "pensieve"))))
 
+(let ((hostsnippetsdir (f-join "/root/.pen/" "host" "snippets")))
+  (if (f-directory-p (f-join hostsnippetsdir))
+      (setq pen-snippets-directory hostsnippetsdir)
+    (setq pen-snippets-directory (f-join user-emacs-directory "snippets"))))
+
 (let ((hostkhaladir (f-join user-emacs-directory "host" "khala")))
   (if (f-directory-p (f-join hostkhaladir "src"))
       (setq pen-khala-directory hostkhaladir)
