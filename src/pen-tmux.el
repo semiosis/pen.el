@@ -208,7 +208,7 @@ START and END can be in either order."
         (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -tout -S " window-type " " nw_args " " (pen-q cmd)) input dir)
       (if (display-graphic-p)
           ;; (pen-e-nw-zsh cmd window-type (xtv dir))
-          (pen-e-nw-zsh cmd window-type dir)
+          (pen-e-nw-zsh (cmd "tmwr" "-E" cmd) window-type dir)
         (progn
           (if (and (variable-p 'pen-sh-update)
                    (eval 'pen-sh-update))

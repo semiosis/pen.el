@@ -382,8 +382,11 @@ Be mindful of quoting arguments correctly."
         (pen-term (message (pen-nsfa (message (concat "( " cmd " ) < " (pen-q tf))) dir)) closeframe modename buffer-name))
     (pen-term (pen-nsfa cmd dir) closeframe modename buffer-name)))
 
-(defun tmuxify-cmd (cmd)
-  (concat "t new " (pen-q (concat "TTY= " cmd))))
+;; (defun tmuxify-cmd (cmd)
+;;   (concat "t new " (pen-q (concat "TTY= " cmd))))
+
+(defun tmuxify-cmd (command)
+  (cmd "tmwr"  "-E" (concat "TTY= " command)))
 
 (defun term-nsfa-tm (cmd &optional input)
   "Like term but can run a shell command."

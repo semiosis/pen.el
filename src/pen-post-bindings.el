@@ -67,8 +67,8 @@
   (define-key pen-map (kbd "M-m w g") #'split-window-below)
   (define-key pen-map (kbd "M-m w G") #'split-window-right)
 
-  (define-key pen-map (kbd "M-m w v") #'e/sph-zsh)
-  (define-key pen-map (kbd "M-m w V") #'e/spv-zsh)
+  (define-key pen-map (kbd "M-m w v") #'pen-e-sph-zsh)
+  (define-key pen-map (kbd "M-m w V") #'pen-e-spv-zsh)
 
   (define-key pen-map (kbd "M-m w N") #'spv-new-buffer)
   (define-key pen-map (kbd "M-m w n") #'sph-new-buffer)
