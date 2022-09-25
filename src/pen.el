@@ -221,6 +221,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-tramp)
 (require 'pen-gpg)
 (require 'pen-eldoc)
+(require 'pen-json)
 (if (inside-docker-p)
     (require 'pen-auth-source))
 (require 'pen-text-coding-system)
