@@ -1537,7 +1537,7 @@ case "$f" in
     ;;
 
     nextlayout) {
-        tmux next-layout -t "$CALLER_TARGET"
+        tmux next-layout -t "$CALLER_TARGET:"
     }
     ;;
 
