@@ -3,6 +3,7 @@
 # sct "$(pen-rc .screen_temperature)"
 
 exec 2>/dev/null
+unset TTY
 
 stdin_exists() {
     {
