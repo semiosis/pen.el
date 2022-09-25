@@ -1,4 +1,5 @@
 (require 'cl-macs)
+(require 'select)
 
 ;; This doesn't work for the terminal version though
 ;; after copy Ctrl+c in Linux X11, you can paste by `yank' in emacs
@@ -14,6 +15,10 @@
 ;; I just want the clipboard to work
 (setq x-select-enable-primary t)
 (setq x-select-enable-clipboard t)
+
+;; This prevents selections (while using the GUI) from affecting the clipboard.
+;; It also makes the GUI function more like the terminal.
+(defun gui-set-selection (&rest args))
 
 (ignore-errors
   (xclip-mode 1)

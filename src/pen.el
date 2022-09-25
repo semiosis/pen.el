@@ -254,6 +254,7 @@ Be mindful of quoting arguments correctly."
 
 
 (require 'pen-apps)
+(require 'pen-kanban)
 (require 'pen-network)
 
 ;; Not sure I need the following in pen.el
