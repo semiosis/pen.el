@@ -3,5 +3,6 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-pip install --upgrade --force-reinstall "$@"
-pip3 install --upgrade --force-reinstall "$@"
+# pip install --upgrade --force-reinstall "$@"
+# pip3 install --upgrade --force-reinstall "$@"
+pip3.8 install --upgrade --force-reinstall "$@"

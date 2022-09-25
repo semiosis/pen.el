@@ -2012,16 +2012,20 @@ This function accepts any number of ARGUMENTS, but ignores them."
                (not (string-match "\\[*Org Src" (buffer-name))))
           (progn
             (save-buffer)
-            (shell-command (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
-        (cond
-         ((or
-           (not (buffer-file-path))
-           (string-match "\.~" (buffer-name)))
-          (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))
-         ((string-match "\\[*Org Src" (buffer-name))
-          (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))
-         (t
-          (shell-command-on-region min max (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))))))))
+            (let ((c 
+                   (concat-string "xt pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
+              (shell-command c)))
+        (let ((c
+               (cond
+                ((or
+                  (not (buffer-file-path))
+                  (string-match "\.~" (buffer-name)))
+                 (concat-string "xt pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
+                ((string-match "\\[*Org Src" (buffer-name))
+                 (concat-string "xt pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
+                (t
+                 (concat-string "xt pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))))
+          (shell-command-on-region min max c))))))
 (defalias 'open-in 'pen-tmux-edit)
 
 (defun pen-tm-edit-v-in-nw ()

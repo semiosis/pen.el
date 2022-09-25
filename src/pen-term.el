@@ -172,6 +172,7 @@
   (define-key term-raw-map (kbd "C-c C-M-i") #'pen-company-complete)
   (define-key term-raw-map (kbd "C-c M-;") #'term-send-raw-meta)
   (define-key term-raw-map (kbd "C-c M-m") #'term-send-raw-meta)
+  (define-key term-raw-map (kbd "C-c M-S") #'term-send-raw-meta)
 
   (cl-loop for i in (number-sequence 0 9) do
            (define-key term-raw-map (kbd (concat "C-c M-" (str i))) #'term-send-raw-meta))
@@ -626,7 +627,7 @@ If eterm-color doesn't exist, prompt to fetch and compile it.")
 
 (defun pen-term-detect-program ()
   (interactive)
-  
+
   (let ((prog "tclsh"))
     (if (interactive-p)
         (etv (str prog)))))
