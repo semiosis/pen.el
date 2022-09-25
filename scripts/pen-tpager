@@ -1,4 +1,8 @@
 #!/bin/bash
 export TTY
 
-sps -maybe pager "$@"
+# tpager should never call pager directly, to prevent recursion
+
+: "${PAGER:="less"}"
+
+sps -maybe $PAGER" "$@"

@@ -8,9 +8,6 @@ is_tty() {
 
 export EDITOR=v
 
-echo "$PAGER"
-exit
-
 pager() {
     if is_tty; then
         fp="$(pen-strip-ansi | tf txt)"
