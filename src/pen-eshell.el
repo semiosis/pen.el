@@ -1,5 +1,13 @@
 (require 'eshell)
 (require 'pcomplete-extension)
+(require 'eshell-git-prompt)
+(require 'eshell-prompt-extras)
+
+(with-eval-after-load "esh-opt"
+  (autoload 'epe-theme-lambda "eshell-prompt-extras")
+  (setq eshell-highlight-prompt nil
+        eshell-prompt-function 'epe-theme-lambda))
+
 
 ;; Not very good.
 ;; (require 'eshell-vterm)
@@ -40,12 +48,14 @@
 ;; (eshell/alias "ff" "find-file $1")
 ;; (eshell/alias "e" "find-file $1")
 
-(eshell/alias "emacs" "find-file $1")
-(eshell/alias "ee" "find-file-other-window $1")
-
-(eshell/alias "gd" "magit-diff-unstaged")
-(eshell/alias "gds" "magit-diff-staged")
-(eshell/alias "d" "dired $1")
+;; These aliases are made permanent by writing to this file
+;; e:$EMACSD/eshell/alias
+;; And they no longer need to be run
+;; (eshell/alias "emacs" "find-file $1")
+;; (eshell/alias "ee" "find-file-other-window $1")
+;; (eshell/alias "gd" "magit-diff-unstaged")
+;; (eshell/alias "gds" "magit-diff-staged")
+;; (eshell/alias "d" "dired $1")
 
 ;; The 'ls' executable requires the Gnu version on the Mac
 (let ((ls (if (file-exists-p "/usr/local/bin/gls")
