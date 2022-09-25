@@ -2008,24 +2008,31 @@ This function accepts any number of ARGUMENTS, but ignores them."
                (point-max))))
 
     (let ((line-and-col (concat-string "+" (line-number-at-pos) ":" (current-column))))
+      (if (display-graphic-p)
+          (progn
+            ;; (pen-sn "xt tmux" nil nil nil t)
+            ;; This could be improved
+            (pen-sps "sh -c 'sleep 1'" nil nil nil t)
+            (sleep-for 0.5)))
       (if (and buffer-file-name
                (not (string-match "\\[*Org Src" (buffer-name))))
           (progn
             (save-buffer)
             (let ((c 
-                   (concat-string "xt pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
+                   (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
               (shell-command c)))
         (let ((c
                (cond
                 ((or
                   (not (buffer-file-path))
                   (string-match "\.~" (buffer-name)))
-                 (concat-string "xt pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
+                 (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
                 ((string-match "\\[*Org Src" (buffer-name))
-                 (concat-string "xt pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
+                 (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
                 (t
-                 (concat-string "xt pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))))
+                 (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))))
           (shell-command-on-region min max c))))))
+
 (defalias 'open-in 'pen-tmux-edit)
 
 (defun pen-tm-edit-v-in-nw ()
