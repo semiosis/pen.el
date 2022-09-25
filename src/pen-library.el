@@ -1187,10 +1187,13 @@ non-nil."
   "Opens region in a new buffer if a region is selected. If an argument is provided then the C-m falls through."
   (interactive "P")
   (if (region-active-p)
-      (if (>= (prefix-numeric-value current-prefix-arg) 4)
-          (new-buffer-from-string-or-selected)
-        (progn (recursive-narrow-or-widen-dwim)
-               (deactivate-mark)))
+      (cond
+       ((>= (prefix-numeric-value current-prefix-arg) 16)
+        (sps "unbuffer tm -te -d edit-x-clipboard"))
+       ((>= (prefix-numeric-value current-prefix-arg) 4)
+        (new-buffer-from-string-or-selected))
+       (t (progn (recursive-narrow-or-widen-dwim)
+                 (deactivate-mark))))
     (let ((pen nil)
           (global-map org-mode-map))
       (if (eolp)
@@ -1211,6 +1214,7 @@ non-nil."
         (if fun
             (call-interactively fun)
           (execute-kbd-macro (kbd "C-m")))))))
+
 
 (defun current-line-string ()
   (thing-at-point 'line t))
