@@ -4,7 +4,7 @@
 (require 'magit-section)
 (require 'git-timemachine)
 
-(setq magit-git-executable (locate-binary "git"))
+(setq magit-git-executable (executable-find "git"))
 
 ;; magithub-issue-repo
 ;; this fixes magithub and ghub+
@@ -24,10 +24,10 @@
   (interactive)
   (if (or enable disable)
       (if enable
-          (setq magit-git-executable (locate-binary "git-hs"))
-        (string-equal magit-git-executable (locate-binary "git")))
-    (if (string-equal magit-git-executable (locate-binary "git"))
-        (setq magit-git-executable (locate-binary "git-hs"))
+          (setq magit-git-executable (executable-find "git-hs"))
+        (string-equal magit-git-executable (executable-find "git")))
+    (if (string-equal magit-git-executable (executable-find "git"))
+        (setq magit-git-executable (executable-find "git-hs"))
       (setq magit-git-executable "/usr/bin/git")))
   (message (concat "magit-git-executable: " magit-git-executable)))
 

@@ -288,7 +288,7 @@
   ["Docker images help"
    ("D" "Remove"  docker-image-rm)
    ("F" "Pull"    docker-image-pull)
-   ("I" "Inspect" docker-image-inspect)
+   ("I" "Inspect" docker-utils-inspect)
    ("P" "Push"    docker-image-push)
    ("v" "edive"    docker-image-dive-selection)
    ("r" "zrepl run"    docker-image-run-command-selection)
@@ -308,7 +308,7 @@
     (define-key map "?" 'docker-image-help)
     (define-key map "D" 'docker-image-rm)
     (define-key map "F" 'docker-image-pull)
-    (define-key map "I" 'docker-image-inspect)
+    (define-key map "I" 'docker-utils-inspect)
     (define-key map "P" 'docker-image-push)
     (define-key map "v" 'docker-image-dive-selection)
     (define-key map "r" 'docker-image-run-command-selection)
