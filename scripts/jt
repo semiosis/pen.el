@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f $HOME/.cargo/bin/jt || cargo install "jt" &>/dev/null
+
+if test "$#" -eq 0; then
+    unbuffer $HOME/.cargo/bin/jt | less -rS
+else
+    $HOME/.cargo/bin/jt "$@"
+fi
