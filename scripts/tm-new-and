@@ -11,6 +11,5 @@ CMD="$(cmd "$@")"
 
 tmux new \; run -b "$CMD"
 
-session="$(tmux new -d -P)"
-
-"$@"
+# session="$(tmux new -d -P)"
+# "$@"
