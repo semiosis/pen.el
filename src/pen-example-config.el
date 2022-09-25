@@ -998,7 +998,7 @@
 (define-key org-src-mode-map (kbd "C-c C-c") #'org-edit-src-exit)
 ;; This is the easiest way to get around the issue of
 ;; the major mode changing within a babel block.
-(define-key pen-map (kbd "C-c '") 'org-edit-special)
+(define-key org-mode-map (kbd "C-c '") 'org-edit-special)
 ;; (define-key org-babel-map (kbd "C-c") nil)
 ;; (define-key org-babel-map (kbd "C-c '") 'org-edit-special)
 

@@ -96,6 +96,11 @@
                   flycheck-list-errors
                   lsp-ui-flycheck-list)
         :docsearch '(pen-doc)
+
+        :runmain '(cider-run)
+
+        ;; mx
+        :runfunc '(pen-cider-run-function)
         
         :test '(cider-test-run-test)
         :testall '(cider-test-run-ns-tests)
@@ -178,7 +183,7 @@
                  ;; racket-run
                  racket-repl)
         ;; This is for running the program
-        :run '(pen-racket-run-main)
+        :runmain '(pen-racket-run-main)
         :formatters '(lsp-format-buffer)
         :docs '(pen-esp-docs-for-thing-if-prefix
                 pen-doc-override
@@ -226,7 +231,7 @@
 (handle '(prog-mode)
         :complete '()
         ;; This is for running the program
-        :run '()
+        :runmain '()
         :repls '()
         :formatters '()
         :refactor '()
@@ -253,7 +258,7 @@
         :implementations '())
 
 (handle '(conf-mode feature-mode)
-        :run '()
+        :runmain '()
         :repls '()
         :formatters '()
         :docs '(pen-docs-for-thing-given-screen)
@@ -266,7 +271,7 @@
 
 (handle '(org-mode)
         :navtree '()
-        :run '()
+        :runmain '()
         :docs '(pen-esp-docs-for-thing-if-prefix
                 lookup-thing-glossary-definition
                 dict-word
@@ -279,7 +284,7 @@
 
 (handle '(help-mode)
         :navtree '()
-        :run '()
+        :runmain '()
         :docs '(lookup-thing-glossary-definition
                 dict-word
                 helm-wordnet-suggest
@@ -299,7 +304,7 @@
 
 (handle '(haskell-mode)
         :navtree '()
-        :run '()
+        :runmain '()
         :projectfile '(pen-haskell-project-file)
         :repls '(dante-repl
                  haskell-repl)

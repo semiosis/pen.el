@@ -646,6 +646,9 @@ the namespace in the Clojure source buffer"
  (khala-go-to-symbol "get-file-list!")
  (khala-go-to-symbol "get-rc"))
 
+(defun pen-cider-run-function ()
+  (interactive))
+
 (define-key cider-mode-map (kbd "C-c C-o") nil)
 (define-key cider-mode-map (kbd "C-M-i") nil)
 (define-key cider-repl-mode-map (kbd "M-r") nil)

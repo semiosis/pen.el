@@ -73,7 +73,11 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :complete)
 (add-to-list 'handle-keywords :debug)
 (add-to-list 'handle-keywords :path)
-(add-to-list 'handle-keywords :run)
+
+(add-to-list 'handle-keywords :runmain)
+;; mx
+(add-to-list 'handle-keywords :runfunc)
+
 (add-to-list 'handle-keywords :compile)
 (add-to-list 'handle-keywords :rc)
 (add-to-list 'handle-keywords :jumpto)
