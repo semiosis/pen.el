@@ -1,0 +1,11 @@
+alias v pen-ewhich $1
+alias sp pen-ewhich $1
+alias e pen-find-file-create $1
+alias f find-file $1
+alias ff find-file $1
+alias gd magit-diff-unstaged
+alias emacs find-file $1
+alias ee find-file-other-window $1
+alias gds magit-diff-staged
+alias d dired $1
+alias ll /bin/ls -AlohG --color=always

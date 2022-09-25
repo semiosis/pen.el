@@ -46,7 +46,9 @@
 ;; Put the aliases outside
 ;; They're now in $PENELD/config/eshellrc.el
 ;; (eshell/alias "ff" "find-file $1")
-;; (eshell/alias "e" "find-file $1")
+;; (eshell/alias "v" "pen-ewhich $1")
+;; (eshell/alias "sp" "pen-ewhich $1")
+;; (eshell/alias "e" "pen-find-file-create $1")
 
 ;; These aliases are made permanent by writing to this file
 ;; e:$EMACSD/eshell/alias

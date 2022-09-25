@@ -1027,7 +1027,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defmacro pen-n-words->n-tokens/m (n-words)
   `(pen-n-words->n-tokens ,n-words (pen-num token-char-length)))
 
-(defun pen-find-file (path)
+(defun pen-find-file-create (path)
   "Create directories and edit file"
   (pen-snc (pen-cmd "mkdir" "-p" (f-dirname path)))
   (if (re-match-p "/$" path)
@@ -1044,7 +1044,7 @@ Reconstruct the entire yaml-ht for a different language."
         do
         (ignore-errors
           (with-current-buffer
-              (pen-find-file path)
+              (pen-find-file-create path)
             (kill-buffer)))))
 
 (defun pen-touch-file (path)
