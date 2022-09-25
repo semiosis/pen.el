@@ -2,7 +2,7 @@
 export TTY
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
-set -xv
+# set -xv
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -83,6 +83,3 @@ else
 fi
 
 trap "rm $(cmd "$tf_pipe_buffer") 2>/dev/null" 0
-
-echo "$TTY"
-pak
