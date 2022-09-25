@@ -222,7 +222,10 @@ Be mindful of quoting arguments correctly."
 (require 'pen-gpg)
 (require 'pen-eldoc)
 (require 'pen-json)
-(require 'pen-corfu)
+
+;; Don't use corfu because it's incompatible with the terminal, as it uses overlay frames
+;; (require 'pen-corfu)
+
 (if (inside-docker-p)
     (require 'pen-auth-source))
 (require 'pen-text-coding-system)
