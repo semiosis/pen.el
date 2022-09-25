@@ -287,4 +287,17 @@ or an external command."
 (defun eshell-bol ()
   (pen-comint-bol))
 
+;; Custom commands
+;; eshell gives higher precedence to functions with eshell/ prefixed.
+;; Also, in order to mash arguments, i need &rest args.
+;; Otherwise, I might only have the positional args.
+
+(defun eshell/listify (&rest args)
+  "Return the argument(s) as a single list."
+  (if (> (length args) 1)
+      args
+    (if (listp (car args))
+	      (car args)
+      (list (car args)))))
+
 (provide 'pen-eshell)
