@@ -30,7 +30,8 @@
   (interactive (list (read-string-hist "comint-quick: ")))
   (let* ((slug (slugify cmd))
          (slug (if unique
-                   (concat slug "<" (substring (uuidgen-4) 0 8) ">")))
+                   (concat slug "<" (substring (uuidgen-4) 0 8) ">")
+                 slug))
          (buf (make-comint slug (pen-nsfa cmd dir))))
     (with-current-buffer buf
       (setq-local comint-use-prompt-regexp (if (sor prompt-regexp) t))
