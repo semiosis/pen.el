@@ -11,7 +11,7 @@
 
 
 (setq eshell-buffer-shorthand t)
-(setq eshell-rc-script "~/.emacs.d/eshellrc.el")
+(setq eshell-rc-script "~/.emacs.d/pen.el/config/eshellrc.el")
 
 
 ;; Scrolling through the output and searching for results that can be copied to the kill ring is a great feature of Eshell. However, instead of running end-of-buffer key-binding, the following setting means any other key will jump back to the prompt:
@@ -40,9 +40,12 @@
 
 
 (require 'em-alias)
+
 ;; Put the aliases outside
-(eshell/alias "e" "find-file $1")
-(eshell/alias "ff" "find-file $1")
+;; They're now in $PENELD/config/eshellrc.el
+;; (eshell/alias "ff" "find-file $1")
+;; (eshell/alias "e" "find-file $1")
+
 (eshell/alias "emacs" "find-file $1")
 (eshell/alias "ee" "find-file-other-window $1")
 
@@ -258,5 +261,27 @@ or an external command."
   ;; (shell) ; shell is zsh or whatever the default shell is
   ;; (eshell)
   )
+
+;; Do the following even work?
+(defun eshell-run-command (cmd)
+  (interactive (list (read-string-hist "eshell$ ")))
+  (eshell)
+  (with-current-buffer "*eshell*"
+    (eshell-return-to-prompt)
+    (eshell-kill-input)
+    ;; (kill-line)
+    (insert cmd)
+    (eshell-send-input)))
+
+;; shell (not eshell)
+(defun shell-run-command (cmd)
+  (interactive (list (read-string-hist "shell$ ")))
+  (shell)
+  (with-current-buffer "*shell*"
+    (eshell-return-to-prompt)
+    (eshell-kill-input)
+    ;; (kill-line)
+    (insert cmd)
+    (eshell-send-input)))
 
 (provide 'pen-eshell)

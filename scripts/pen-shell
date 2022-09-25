@@ -1,0 +1,52 @@
+#!/bin/bash
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -c) {
+        CWD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -B) {
+        to_buffer="shell_default_output"
+        shift
+    }
+    ;;
+
+    -b) {
+        to_buffer="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${CWD:="$(pwd)"}; cd "$CWD"
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd-nice-posix "$@")"
+fi
+
+if test -n "$to_buffer"; then
+    CMD="$CMD > #<buffer $to_buffer>"
+fi
+
+if test -z "$CMD"; then
+    e -e "(cd (cast-dirname $(cmd-nice-posix "$CWD")))(shell)"
+else
+    e -e "(cd (cast-dirname $(cmd-nice-posix "$CWD")))(shell-run-command $(cmd-nice-posix "$CMD"))"
+fi

@@ -152,6 +152,7 @@
             ("\\*Perl-REPL.*\\*" :regexp t :select t :same t)
             ("\\*GHCi-REPL.*\\*" :regexp t :select t :same t)
             ("*eshell*" :select t :other t)
+            ("*shell*" :select t :same t :other t)
             ;; ("*Python*" :ignore t :select nil :same nil)
             ("*Python*" :ignore nil :select t :same t)
             ("*eww bookmarks*" :select nil :same t)

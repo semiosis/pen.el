@@ -1,0 +1,62 @@
+#!/bin/bash
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Or should this be for ElasticSearch?
+# No. Make 'elk' the elasticsearch script.
+
+# How about both?
+# What about explainshell
+
+# eshell takes an optional numeric argument that does nothing useful
+
+# e -D spacemacs c -e "(progn (eshell)(delete-other-windows))"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -c) {
+        CWD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -B) {
+        to_buffer="eshell_default_output"
+        shift
+    }
+    ;;
+
+    -b) {
+        to_buffer="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${CWD:="$(pwd)"}; cd "$CWD"
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd-nice-posix "$@")"
+fi
+
+if test -n "$to_buffer"; then
+    CMD="$CMD > #<buffer $to_buffer>"
+fi
+
+if test -z "$CMD"; then
+    e -e "(cd (cast-dirname $(cmd-nice-posix "$CWD")))(eshell)"
+else
+    e -e "(cd (cast-dirname $(cmd-nice-posix "$CWD")))(eshell-run-command $(cmd-nice-posix "$CMD"))"
+fi
