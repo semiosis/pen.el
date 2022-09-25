@@ -868,6 +868,9 @@ cp -a /root/repos/pen-emacsd/pen.el/config/pen.vim /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/nvim-function-keysvimrc /root/.vim
 cp -a /root/repos/pen-emacsd/pen.el/config/fixkeymaps-vimrc /root/.vim
 
+mkdir -p /root/.emacs.d/eshell
+cp -a /root/repos/pen-emacsd/pen.el/config/eshell/* /root/.emacs.d/eshell
+
 # Ansible
 agi libonig-dev
 pip3 install 'ansible-navigator[ansible-core]'
