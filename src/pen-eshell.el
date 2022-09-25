@@ -300,4 +300,8 @@ or an external command."
 	      (car args)
       (list (car args)))))
 
+(defun eshell/slugify (&rest args)
+  "Return the argument(s) as a single slug."
+  (slugify (mapconcat 'str args " ")))
+
 (provide 'pen-eshell)
