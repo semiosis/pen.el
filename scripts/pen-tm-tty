@@ -12,7 +12,8 @@
     fi
 } || {
     {
-       exec 5>/dev/tty && echo /dev/tty
+       # exec 5>/dev/tty && echo /dev/tty
+       exec 5>/dev/tty && tty
     } 2>/dev/null
 } || {
     TTY="$(tmux display-message -p '#{pane_tty}')"

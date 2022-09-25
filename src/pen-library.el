@@ -791,15 +791,23 @@ buffer which is not included when this function returns"
   (if (not (sor data))
       (setq data "{\"buttons\": [{\"label\": \"Abort\", \"command\": \"pen-revert-kill-buffer-and-window\", \"type\": \"off-button\"},{\"label\": \"Accept\", \"command\": \"pen-save-and-kill-buffer-window-and-emacsclient\", \"type\": \"on-button\"}]}"))
 
-  (pen-sn (pen-cmd "pen-tvipe"
-                   "-wintype" wintype
-                   "-cl" (pen-cmd "pen-eipe"
-                                  "-pt" prompttext
-                                  "-help" helptext
-                                  "-ov" overlay-text
-                                  "-pov" preoverlay-text
-                                  "-data" data))
-          input nil nil detach nil nil nil chomp))
+  (if (display-graphic-p)
+      (pen-sn (pen-cmd "xt pen-eipe"
+                     "-pt" prompttext
+                     "-help" helptext
+                     "-ov" overlay-text
+                     "-pov" preoverlay-text
+                     "-data" data)
+            input nil nil detach nil nil nil chomp)
+    (pen-sn (pen-cmd "pen-tvipe"
+                       "-wintype" wintype
+                       "-cl" (pen-cmd "pen-eipe"
+                                      "-pt" prompttext
+                                      "-help" helptext
+                                      "-ov" overlay-text
+                                      "-pov" preoverlay-text
+                                      "-data" data))
+            input nil nil detach nil nil nil chomp)))
 
 (defun pen-eipec (input &optional wintype prompttext helptext overlaytext preoverlaytext data detach)
   (pen-eipe input t wintype prompttext helptext overlaytext preoverlaytext data detach))
