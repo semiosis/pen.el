@@ -1,4 +1,5 @@
 (require 'eshell)
+(require 'pcomplete-extension)
 
 ;; Not very good.
 ;; (require 'eshell-vterm)
@@ -6,15 +7,8 @@
 
 ;; https://github.com/howardabrams/dot-files/blob/master/emacs-eshell.org
 
-;; Reload the aliases file:
-;; eshell-read-aliases-list
-
-
 (setq eshell-buffer-shorthand t)
 (setq eshell-rc-script "~/.emacs.d/pen.el/config/eshellrc.el")
-
-
-;; Scrolling through the output and searching for results that can be copied to the kill ring is a great feature of Eshell. However, instead of running end-of-buffer key-binding, the following setting means any other key will jump back to the prompt:
 
 ;; I can never seem to remember that find and chmod behave differently from Emacs than their Unix counterparts, so the last setting will prefer the native implementations.
 (use-package eshell
@@ -65,17 +59,6 @@
 (defun eshell/gst (&rest args)
   (magit-status (pop args) nil)
   (eshell/echo))   ;; The echo command suppresses output
-
-
-;; (use-package all-the-icons
-;;   (setq eshell-prompt-function
-;;         (lambda ()
-;;           (format "%s %s\n%s%s%s "
-;;                   (all-the-icons-octicon "repo")
-;;                   (propertize (cdr (shrink-path-prompt default-directory)) 'face `(:foreground "white"))
-;;                   (propertize "❯" 'face `(:foreground "#ff79c6"))
-;;                   (propertize "❯" 'face `(:foreground "#f1fa8c"))
-;;                   (propertize "❯" 'face `(:foreground "#50fa7b"))))))
 
 
 (setq eshell-hist-ignoredups t)
@@ -283,5 +266,8 @@ or an external command."
     ;; (kill-line)
     (insert cmd)
     (eshell-send-input)))
+
+;; (define-key eshell-mode-map (kbd "C-l") 'eshell/clear)
+(define-key eshell-mode-map (kbd "C-l") 'identity-command)
 
 (provide 'pen-eshell)

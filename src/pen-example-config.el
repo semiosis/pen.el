@@ -1234,4 +1234,6 @@
 (require 'pen-post-bindings)
 (load-library "pen-post-bindings")
 
+(define-key global-map (kbd "C-l") 'identity-command)
+
 (provide 'pen-example-config)
