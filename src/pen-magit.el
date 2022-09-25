@@ -4,6 +4,8 @@
 (require 'magit-section)
 (require 'git-timemachine)
 
+(setq magit-git-executable (locate-binary "git"))
+
 ;; magithub-issue-repo
 ;; this fixes magithub and ghub+
 (defun ghub--host-around-advice (proc &rest args)

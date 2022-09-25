@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -xv
+# set -xv
 
 # Example of usage:
 # export OPENAI_API_KEY
