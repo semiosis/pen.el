@@ -83,8 +83,7 @@
                 pen-doc-thing-at-point
                 cider-doc-thing-at-point
                 pen-docs-for-thing-given-screen)
-        :toggle-test '(projectile-toggle-between-implementation-and-test
-                       clojure-open-test)
+        
         ;; Project syms (not general syms)
         :fz-sym '(clojure-fz-symbol
                   ;; clojure-go-to-symbol
@@ -93,9 +92,16 @@
                  cider-find-var
                  xref-find-definitions-immediately
                  helm-gtags-dwim)
-        :errors '(lsp-ui-flycheck-list
-                  pen-clojure-switch-to-errors)
+        :errors '(pen-clojure-switch-to-errors
+                  flycheck-list-errors
+                  lsp-ui-flycheck-list)
         :docsearch '(pen-doc)
+        
+        :test '(cider-test-run-test)
+        :testall '(cider-test-run-ns-tests)
+        :testreport '(cider-test-show-report)
+        :toggle-test '(projectile-toggle-between-implementation-and-test
+                       clojure-open-test)
 
         ;; <help> f
         ;; Docfun is global symbol search

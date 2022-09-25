@@ -78,6 +78,11 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :rc)
 (add-to-list 'handle-keywords :jumpto)
 
+(add-to-list 'handle-keywords :test)
+(add-to-list 'handle-keywords :testall)
+(add-to-list 'handle-keywords :testreport)
+(add-to-list 'handle-keywords :toggle-test)
+
 ;; Thing at point (builtin keyword)
 ;; (add-to-list 'handle-keywords :docs)
 ;; Not at point - manual entry of symbol with fuzzy finder
@@ -88,7 +93,7 @@ their needs, and to do so before the package is loaded."
 ;; Project syms
 (add-to-list 'handle-keywords :fz-sym)
 
-(add-to-list 'handle-keywords :testall)
+
 (add-to-list 'handle-keywords :navleft)
 (add-to-list 'handle-keywords :navright)
 (add-to-list 'handle-keywords :navup)
@@ -109,7 +114,7 @@ their needs, and to do so before the package is loaded."
 
 (add-to-list 'handle-keywords :projectfile)
 ;; toggle between test case
-(add-to-list 'handle-keywords :toggle-test)
+
 
 
 (defcustom handle-nice-functions nil
