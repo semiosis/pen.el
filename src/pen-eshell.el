@@ -1,5 +1,8 @@
 (require 'eshell)
 
+;; Not very good.
+;; (require 'eshell-vterm)
+
 
 ;; https://github.com/howardabrams/dot-files/blob/master/emacs-eshell.org
 
