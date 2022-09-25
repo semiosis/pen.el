@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+curl --header "Content-Type: application/json" --request POST --data "{\"fun\": \"pf-tweet-sentiment/1\", \"args\": \"[\\\"I love chocolate\\\"]\"}" http:/127.0.0.1:9837/prompt
