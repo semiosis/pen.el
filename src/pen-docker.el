@@ -1,4 +1,5 @@
 (require 'docker-compose)
+(require 'docker-utils)
 
 ;; # Because of lexical-binding, I must edit the plugin directly
 ;; Although that seems to no longer be required
@@ -272,7 +273,7 @@
    ("l" "List"       docker-container-ls)
    ("r" "Rename"     docker-container-rename-selection)])
 
-(docker-utils-define-transient-command docker-container-shells ()
+(docker-utils-transient-define-prefix docker-container-shells ()
   "Transient for doing M-x `shell'/`eshell' to containers."
   [:description docker-utils-generic-actions-heading
    ("b" "Shell" docker-container-shell-selection)
@@ -338,7 +339,7 @@
     (docker-machine-ssh-one (car marked))
     (tablist-revert)))
 
-(docker-utils-define-transient-command docker-machine-ssh ()
+(docker-utils-transient-define-prefix docker-machine-ssh ()
   "Transient for running ssh commands."
   :man-page "docker-machine-ssh"
   [:description docker-utils-generic-actions-heading
