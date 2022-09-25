@@ -3,6 +3,11 @@
 (defun pen-comint-bol ()
   (interactive)
 
+  ;; Don't use eshell-bol in this function
+  ;; or eshell-bol will become recursive
+  ;; (defun eshell-bol ()
+  ;; (pen-comint-bol))
+
   (cond
    ((derived-mode-p 'comint-mode)
     (comint-bol))
@@ -10,10 +15,10 @@
    ((derived-mode-p 'eshell-mode)
 
     (let ((comint-use-prompt-regexp t)
-              ;; Really need to derive this from scrraping the line
-              (comint-prompt-regexp "^.*[»#\\$] "))
-          ;; (call-interactively 'term-bol)
-          (call-interactively 'comint-bol))
+          ;; Really need to derive this from scrraping the line
+          (comint-prompt-regexp "^.*[»#\\$] "))
+      ;; (call-interactively 'term-bol)
+      (call-interactively 'comint-bol))
     
     ;; (eshell-bol)
     )

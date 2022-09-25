@@ -280,4 +280,9 @@ or an external command."
 ;; (define-key eshell-mode-map (kbd "C-l") 'eshell/clear)
 (define-key eshell-mode-map (kbd "C-l") 'identity-command)
 
+;; This fixes eshell-pcomplete.
+;; eshell-bol was going to the very beginning of the line
+(defun eshell-bol ()
+  (pen-comint-bol))
+
 (provide 'pen-eshell)
