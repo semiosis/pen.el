@@ -2183,7 +2183,8 @@ May use to generate code from comments."
 (require 'pen-show-map)
 (require 'pen-isearch)
 (require 'pen-find-file)
-(require 'pen-docker)
+(if (inside-docker-p)
+    (require 'pen-docker))
 
 (require 'pen-media)
 (require 'pen-rhizome)
