@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# This doesn't yet capture and forward stdin
+
+# Example
+# xt pen-tsp v
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+tmux new \; run -b "$CMD"
