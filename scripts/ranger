@@ -3,7 +3,7 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-export PAGER=less
-export EDITOR=vim
+# export PAGER=less
+# export EDITOR=vim
 
 /usr/bin/ranger "$@"

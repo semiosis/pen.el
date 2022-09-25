@@ -5,4 +5,4 @@ export TTY
 
 : "${PAGER:="less"}"
 
-sps -maybe $PAGER" "$@"
+sps -maybe "$PAGER" "$@"
