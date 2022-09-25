@@ -3,6 +3,6 @@ export TTY
 
 # tpager should never call pager directly, to prevent recursion
 
-: "${PAGER:="less"}"
+PAGER=pen-tless
 
 sps -maybe "$PAGER" "$@"
