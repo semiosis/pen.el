@@ -22,6 +22,7 @@
       (defalias 'cmd 'pen-cmd)
       (defalias 'mu 'pen-mu)
       (defalias 'ff 'find-file)
+      (defalias 'zrepl 'pen-zrepl)
       (defalias 'mm 'pen-mm)
       (defalias 'mnm 'pen-mnm)
       (defalias 'umn 'pen-umn)

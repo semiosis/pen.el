@@ -12,7 +12,7 @@
   (docker-utils-ensure-items)
   (--each
       (docker-utils-get-marked-items-ids)
-    (pen-copy (chomp (pen-sn (concat "docker inspect " it " | jq -r \".[].NetworkSettings.IPAddress\""))))))
+    (xc (chomp (pen-sn (concat "docker inspect " it " | jq -r \".[].NetworkSettings.IPAddress\""))))))
 
 (defun docker-container-commit (container)
   "Open a zrepl with docker commit."
@@ -230,7 +230,7 @@
     (define-key map "?" 'docker-container-help)
     (define-key map "C" 'docker-container-cp)
     (define-key map "D" 'docker-container-rm)
-    (define-key map "I" 'docker-container-inspect)
+    (define-key map "I" 'docker-utils-inspect)
     (define-key map "K" 'docker-container-kill)
     (define-key map "L" 'docker-container-logs)
     (define-key map "O" 'docker-container-stop)
@@ -255,7 +255,7 @@
   ["Docker containers help"
    ("C" "Copy"       docker-container-cp)
    ("D" "Remove"     docker-container-rm)
-   ("I" "Inspect"    docker-container-inspect)
+   ("I" "Inspect"    docker-utils-inspect)
    ("K" "Kill"       docker-container-kill)
    ("L" "Logs"       docker-container-logs)
    ("O" "Stop"       docker-container-stop)
