@@ -1253,7 +1253,6 @@
 (define-key global-map (kbd "H-Y F") 'pen-go-to-glossary-file-for-buffer)
 (define-key global-map (kbd "H-Y A") 'pen-add-to-glossary-file-for-buffer)
 (define-key global-map (kbd "H-Y G") 'pen-glossary-reload-term-3tuples)
-(define-key global-map (kbd "H-h") 'pen-goto-glossary-definition)
 (define-key global-map (kbd "H-Y H") 'pen-goto-glossary-definition)
 (define-key global-map (kbd "H-Y L") 'go-to-glossary)
 (define-key global-map (kbd "<help> y") 'pen-goto-glossary-definition)
