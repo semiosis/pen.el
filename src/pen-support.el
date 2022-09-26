@@ -632,7 +632,7 @@ delim is used to guarantee the function returns multiple matches per line
                     (if rhs
                         (if (booleanp rhs)
                             "y"
-                          (pen-q rhs))
+                          (pen-bs "`" (pen-q rhs)))
                       ""))))))))
 
 (defun pen-daemon-name ()
@@ -2116,7 +2116,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
     (replace-regexp-in-string re "\\\\\\1" input)))
 
 (defun pen-bs (chars input)
-  (escape input chars))
+  (escape chars input))
 
 (defun pen-revert (arg)
   (interactive "P")

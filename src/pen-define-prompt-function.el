@@ -1785,8 +1785,12 @@
              (if no-select-result
                  ;; This behaviour isn't the best
                  (length results)
-               ;; This may insert immediately, so it's important to force selection
-               (pen-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match))))
+               (if results
+                   ;; This may insert immediately, so it's important to force selection
+                   (pen-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match)
+                 (progn
+                   (message "No results")
+                   results)))))
 
           (result
            (if (and final-return-postprocessor (sor final-return-postprocessor))
