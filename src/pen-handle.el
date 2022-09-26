@@ -363,4 +363,19 @@
                    lispy-flow)
         :prevdef '(my-prog-prev-def))
 
+(defun fz-run-handle ()
+  (interactive)
+  (let ((sym
+         (str2sym
+          (fz
+           (mapcar 'str2sym
+                   (mapcar
+                    (lambda (e)
+                      (replace-regexp-in-string "^:" "handle-"
+                                                (str e)))
+                    handle-keywords))
+           nil nil "Handle Run"))))
+    (if sym
+        (call-interactively sym))))
+
 (provide 'pen-handle)

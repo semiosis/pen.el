@@ -1133,23 +1133,4 @@ Use my position list code. Make it use rosie lang and external software."
       (pen-goto-byte pos)))
   nil)
 
-(define-key global-map (kbd "H-h") 'pen-goto-glossary-definition)
-(define-key global-map (kbd "H-Y H") 'pen-goto-glossary-definition)
-(define-key global-map (kbd "H-Y J") 'pen-goto-glossary-definition-verbose)
-(define-key global-map (kbd "H-i") 'pen-add-glossaries-to-buffer)
-(define-key global-map (kbd "H-Y I") 'pen-add-glossaries-to-buffer)
-
-(define-key global-map (kbd "H-d") 'pen-generate-glossary-buttons-manually)
-(define-key global-map (kbd "H-Y d") 'pen-generate-glossary-buttons-manually)
-(define-key global-map (kbd "H-Y F") 'pen-go-to-glossary-file-for-buffer)
-(define-key global-map (kbd "H-Y A") 'pen-add-to-glossary-file-for-buffer)
-(define-key global-map (kbd "H-Y G") 'pen-glossary-reload-term-3tuples)
-(define-key global-map (kbd "H-h") 'pen-goto-glossary-definition)
-(define-key global-map (kbd "H-Y H") 'pen-goto-glossary-definition)
-(define-key global-map (kbd "H-Y L") 'go-to-glossary)
-(define-key global-map (kbd "<help> y") 'pen-goto-glossary-definition)
-(define-key global-map (kbd "<help> C-y") 'go-to-glossary)
-(define-key global-map (kbd "H-y") 'pen-go-to-glossary-file-for-buffer)
-(define-key selected-keymap (kbd "A") 'pen-add-to-glossary-file-for-buffer)
-
 (provide 'pen-glossary-new)
