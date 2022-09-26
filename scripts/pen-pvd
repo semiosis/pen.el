@@ -61,7 +61,7 @@ if stdin_exists; then
 fi
 
 if is_tty; then
-    vd "$@"
+    visidata "$@"
 else
     cat
 fi

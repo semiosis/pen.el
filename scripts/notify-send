@@ -5,7 +5,8 @@ pen-rc-test notify || exit 0
 
 # Instead of using display-message, change the name of the session?
 set -m
-tmux display-message "$@" &>/dev/null & disown
+# tmux display-message "$@" &>/dev/null & disown
+tm-notify "$@" &>/dev/null & disown
 
 # Doesn't work in docker
 # /usr/bin/notify-send -t 500 "$@"
