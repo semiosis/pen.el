@@ -116,7 +116,7 @@
 (require 'auto-minor-mode)
 
 (add-to-list 'auto-minor-mode-alist '("\\.org\\'" . evil-org-mode))
-(add-to-list 'auto-mode-alist `(,(pen-bs "(.vim|.vimrc|vimrc|pentadactylrc)'" ".()'|") . vimrc-mode))
+(add-to-list 'auto-mode-alist `(,(pen-bs ".()'|" "(.vim|.vimrc|vimrc|pentadactylrc)'") . vimrc-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.py\\|.pythonrc\\)\\'" . python-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.psh\\)\\'" . powershell-mode))
 (add-to-list 'auto-mode-alist '("\\.exs\\'" . elixir-mode))
