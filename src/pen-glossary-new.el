@@ -25,10 +25,26 @@
   (j 'pen-glossary-predicate-tuples))
 (define-key global-map (kbd "H-Y P") 'pen-go-glossary-predicate-tuples)
 
+(defun pen-get-mode-glossary-file ()
+  (let* ((n (s-replace-regexp "-mode$" "" (current-major-mode-string)))
+         (n
+          (cond
+           ((string-equal n "emacs-lisp") "emacs-lisp-elisp")
+           ((string-equal n "go") "golang")
+           (t n))))
+
+    (f-join pen-glossaries-directory
+            (concat
+             n
+             ".txt"))))
+
 (defun set-glossary-predicate-tuples ()
   (interactive)
   (defset glossary-predicate-tuples
-    (pen-mu `(((or (pen-re-p "\\bVault\\b")
+    (pen-mu `(((and
+                (f-exists? (pen-get-mode-glossary-file)))
+               (pen-get-mode-glossary-file))
+              ((or (pen-re-p "\\bVault\\b")
                    (pen-re-p "\\bConsul\\b")
                    (and (not (derived-mode-p 'text-mode))
                         (pen-istr-p "terraform"))
@@ -230,17 +246,20 @@
                ,(f-join pen-glossaries-directory "concurrent-programming.txt"))
               ((or (pen-istr-p "Solr"))
                ,(f-join pen-glossaries-directory "solr.txt"))
-              ((or (pen-istr-p "Random")
-                   (pen-istr-p "probability")
-                   (pen-istr-p "outcome")
-                   (pen-istr-p "information")
-                   (pen-istr-p "distribution"))
+              ((or
+                ;; I really need a scoring mechanism, rather than simply
+                ;;  matching terms.
+                (pen-istr-p "Random")
+                (pen-istr-p "probability")
+                (pen-istr-p "outcome")
+                (pen-istr-p "information")
+                (pen-istr-p "distribution"))
                ,(f-join pen-glossaries-directory "probability.txt")
                ,(f-join pen-glossaries-directory "data-science.txt")
                ,(f-join pen-glossaries-directory "statistics.txt"))
               ((or (pen-istr-p "classification")
                    (pen-istr-p "regression")
-                   (pen-istr-p "model")
+                   ;; (pen-istr-p "model")
                    (pen-istr-p "computer vision"))
                ,(f-join pen-glossaries-directory "machine-learning.txt")
                ,(f-join pen-glossaries-directory "deep-learning.txt"))
@@ -285,12 +304,18 @@
             when
             (pen-istr-p (string-replace ".txt$" "" (f-basename fn)))
             collect fn)
-   (-distinct
-    (-flatten
-     (cl-loop for tup in
-              glossary-predicate-tuples
-              collect
-              (if (eval (car tup)) (cdr tup)))))))
+
+   ;; The final eval means that I can place results in the tuples such as
+   ;; (pen-get-mode-glossary-file), and they will be evaluated later.
+   (mapcar
+    'eval
+    (-distinct
+     (-flatten
+      (cl-loop for tup in
+               glossary-predicate-tuples
+               collect
+               (if (eval (car tup))
+                   (cdr tup))))))))
 
 (defun pen-glossary-add-relevant-glossaries (&optional no-draw)
   (interactive)
