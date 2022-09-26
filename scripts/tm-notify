@@ -1,6 +1,18 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -t) {
+        delay="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 stdin_exists() {
     {
     ! [ -t 0 ] && \
@@ -22,8 +34,10 @@ if test "$#" -gt 0; then
     printf -- "%s\n" "$@" >> "$input_fp"
 fi
 
-slug="$(cat "$input_fp" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
+slug="$(cat "$input_fp" | tr '\n' ' ' | sed 's/ $//' | cut -c -30)"
 
-paneid="$(tmux neww -P -d -n "N($slug)" "cat $input_fp; sleep 10")"
+# I could technically animate the notifications
+: "${delay:="10"}"
+paneid="$(tmux neww -P -d -n "N($delay:${slug})" "cat $input_fp; sleep $delay")"
 
 tmux setw -t "$paneid" window-status-format '#[bg=colour237]#[fg=colour240]#I #F#[bg=colour237]#[fg=colour250]#W'
