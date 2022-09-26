@@ -32,7 +32,7 @@
   (message (concat "magit-git-executable: " magit-git-executable)))
 
 ;; (setq magit-git-executable "/home/shane/scripts/git-hs")
-(setq magit-git-executable "/usr/bin/git")
+;; (setq magit-git-executable "/usr/bin/git")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
