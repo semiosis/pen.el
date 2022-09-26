@@ -161,7 +161,7 @@
 (add-to-list 'auto-mode-alist '("\\(\\.clje\\)\\'" . clojerl-mode))
 (add-to-list 'auto-mode-alist '("\\.sol\\'" . solidity-mode))
 (add-to-list 'auto-mode-alist '("\\.julia\\'" . julia-mode))
-(add-to-list 'auto-mode-alist `(,(pen-bs ".(360|6502|6800|8051|8080|8086|68000|arm|as)'" ".()'|") . asm-mode))
+(add-to-list 'auto-mode-alist `(,(pen-bs ".()'|" ".(360|6502|6800|8051|8080|8086|68000|arm|as)'") . asm-mode))
 
 (require 'selected)
 
