@@ -18,7 +18,8 @@ if stdin_exists; then
 fi
 
 if test "$#" -gt 0; then
-    cmd-nice "$@" >> "$input_fp"
+    # cmd-nice "$@" >> "$input_fp"
+    printf -- "%s\n" "$@" >> "$input_fp"
 fi
 
 slug="$(cat "$input_fp" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
