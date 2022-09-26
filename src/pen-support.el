@@ -611,6 +611,11 @@ delim is used to guarantee the function returns multiple matches per line
           thing))
     ""))
 
+(defun escape (chars input)
+  "Escapes chars inside a string"
+  (let ((re (eval `(rx (group (any ,@(butlast (cdr (split-string chars "")))))))))
+    (replace-regexp-in-string re "\\\\\\1" input)))
+
 (defun pen-bs (chars input)
   (escape chars input))
 
