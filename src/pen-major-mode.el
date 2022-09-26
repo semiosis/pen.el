@@ -33,9 +33,6 @@
     (if (commandp fun)
         (call-interactively fun))))
 
-(define-key global-map (kbd "M-z") 'run-major-mode-function)
-(define-key pen-map (kbd "M-z") 'run-major-mode-function)
-
 (defcustom custom-defined-keys nil
   "Custom defined keys"
   :type 'list
@@ -78,9 +75,6 @@
       (if (not wassym)
           (edit-var-elisp 'custom-defined-keys)))))
 
-(define-key global-map (kbd "<help> j") 'custom-define-key)
-(define-key pen-map (kbd "<help> j") 'custom-define-key)
-
 (defun custom-keys-edit ()
   (interactive)
   (edit-var-elisp 'custom-defined-keys))
@@ -101,9 +95,6 @@
         (eval e))))
 
 (add-hook-last 'window-setup-hook 'custom-keys-define-all)
-
-(define-key global-map (kbd "<help> J") 'custom-keys-goto)
-(define-key pen-map (kbd "<help> J") 'custom-keys-goto)
 
 (defun custom-keys-undefine-all (&optional permanent)
   (interactive "P")

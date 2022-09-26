@@ -1241,6 +1241,11 @@
 
 (require 'pen-handle)
 (define-key global-map (kbd "H-h") 'fz-run-handle)
+;; Use <help> for handle bindings
+(define-key global-map (kbd "<help> h") 'fz-run-handle)
+(define-key global-map (kbd "<help> x") 'handle-runfunc)
+(define-key global-map (kbd "<help> T") 'handle-toggle-test)
+(define-key global-map (kbd "<help> M-x") 'handle-runfunc)
 
 (require 'pen-glossary-new)
 (define-key global-map (kbd "H-Y H") 'pen-goto-glossary-definition)
@@ -1259,5 +1264,13 @@
 (define-key global-map (kbd "<help> C-y") 'go-to-glossary)
 (define-key global-map (kbd "H-y") 'pen-go-to-glossary-file-for-buffer)
 (define-key selected-keymap (kbd "A") 'pen-add-to-glossary-file-for-buffer)
+
+(require 'pen-major-mode)
+(define-key global-map (kbd "M-z") 'run-major-mode-function)
+(define-key pen-map (kbd "M-z") 'run-major-mode-function)
+(define-key global-map (kbd "<help> j") 'custom-define-key)
+(define-key pen-map (kbd "<help> j") 'custom-define-key)
+(define-key global-map (kbd "<help> J") 'custom-keys-goto)
+(define-key pen-map (kbd "<help> J") 'custom-keys-goto)
 
 (provide 'pen-example-config)
