@@ -1,4 +1,5 @@
 (setq enable-local-variables :all)
+(setq-default tab-width 2)
 
 ;; This was interfering with completion
 (setq company-backends '())
