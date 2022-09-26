@@ -1970,7 +1970,6 @@ This function accepts any number of ARGUMENTS, but ignores them."
           (beginning-of-line)
           (cua-set-mark)
           (end-of-line))))))
-(define-key global-map (kbd "M-Y") 'pen-copy-line)
 
 (defun pen-git-buffer-name-to-file-name ()
   (pen-sn "tr -s \"[/\\\\*]\" _" (pen-sed "s/^\\(.*\\)\\(\\.~\\)\\(.*\\)$/\\3\\1/" (buffer-name)))

@@ -646,8 +646,76 @@ the namespace in the Clojure source buffer"
  (khala-go-to-symbol "get-file-list!")
  (khala-go-to-symbol "get-rc"))
 
+(defun helm-cider--apropos-sources-nodoc ()  
+  (-map
+   (lambda (e)
+     ;; (setq e (delq (assoc 'action e) e))
+     (setq e (delq (assoc 'persistent-action e) e))
+     
+     ;; This action means helm will return the value. So helm functions like fzf.
+     ;; 
+     (setcdr (assq 'action e) (lambda (c) (helm-marked-candidates)))
+     e)
+   (helm-cider--apropos-sources)))
+
+;; This needs to also handle arguments.
+;; If the function has arguments I need to ask for them.
+;; Perhaps I can go to the function, then run it with E
+;; j:pen-clojure-eval-eval
 (defun pen-cider-run-function ()
-  (interactive))
+  (interactive)
+  (let* ((ret
+          (car
+           (helm
+            :buffer "*Helm Clojure Symbols*"
+            :candidate-number-limit 9999
+            :sources (helm-cider--apropos-sources-nodoc)
+            ;; (helm-cider--apropos-sources)
+            )))
+         (shortname (if ret
+                        (replace-regexp-in-string
+                         "^.*\\/" ""
+                         ret)))
+
+         ;; khala.core/start-khala: ([port])
+         ;; khala.core/-main: ([& args])
+         ;; ring.core.protocols/write-body-to-stream: ([body response output-stream])
+         ;; that is for: write-body-to-stream [body response output-stream]
+         (sig (cider-company-docsig ret))
+         (arglist (pen-vector2list
+                   (eval-string
+                    (concat
+                     "'"
+                     (replace-regexp-in-string
+                      "^.*: (\\(.*\\))$" "\\1"
+                      (cider-company-docsig ret))))))
+         (arglist (-filter (lambda (s) (not (string-equal "&" s)))
+                           arglist)))
+
+    ;; khala.core/start-khala: ([port])
+    ;; (tv args)
+
+    ;; (cider-company-docsig "start-khala")
+    ;; (cider-company-docsig "start-khala")
+
+    (if ret
+        (pen-cider-repl-run-function-interactively ret arglist)
+      ;; (cider-run shortname)
+      )))
+
+(defun pen-cider-repl-run-function-interactively (funname argnames)
+  (let* ((iarglist (mapcar
+                    (lambda (e) `(read-string-hist ,(concat (str e) ": ")))
+                    argnames)))
+
+    (eval
+     `(call-interactively
+       (lambda (,@arglist)
+         (interactive (list ,@iarglist))
+         (let* ((valstr (pen-cmd ,@arglist))
+                (clj (concat "(" ,funname " " valstr ")")))
+           (cider-nrepl-request:eval clj nil)))))
+    (cider-nrepl-request:eval (concat "(" funname ")") nil)))
 
 (define-key cider-mode-map (kbd "C-c C-o") nil)
 (define-key cider-mode-map (kbd "C-M-i") nil)

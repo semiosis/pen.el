@@ -15,6 +15,7 @@
         (get-vim-link))
     (call-interactively 'self-insert-command)))
 
+;; j:pen-cider-run-function
 (defun pen-clojure-eval-eval ()
   (interactive)
   (if (derived-mode-p 'clojure-mode)
@@ -46,6 +47,8 @@
                             (clj (concat "(" ,symstr " " valstr ")")))
                        (cider-nrepl-request:eval clj nil))))))
             (cider-nrepl-request:eval (concat "(" symstr ")") nil))))))
+
+
 
 ;; J:mount-pensieve
 ;; (s-substring "\\[\\(.*\\)\\]" (str (caddr (sexp-at-point))))

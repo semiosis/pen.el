@@ -1236,4 +1236,7 @@
 
 (define-key global-map (kbd "C-l") 'identity-command)
 
+(if (inside-docker-p)
+    (define-key global-map (kbd "M-Y") 'pen-copy-line))
+
 (provide 'pen-example-config)
