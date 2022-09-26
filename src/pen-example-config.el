@@ -1245,6 +1245,7 @@
 (define-key global-map (kbd "<help> h") 'fz-run-handle)
 (define-key global-map (kbd "<help> x") 'handle-runfunc)
 (define-key global-map (kbd "<help> T") 'handle-toggle-test)
+(define-key global-map (kbd "<help> t") 'handle-toggle-test)
 (define-key global-map (kbd "<help> M-x") 'handle-runfunc)
 
 (require 'pen-glossary-new)

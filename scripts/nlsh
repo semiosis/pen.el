@@ -67,15 +67,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-case "$PEN_APPNAME" in
-    nlsh) { prompt=pf-nlsh/2; } ;;
-    nlsc) { prompt=pf-code-snippet-from-natural-language/2; header="Describe the coding problem that you need a snippet for:"; } ;;
-    nlsu|nlsx) { prompt=pf-get-an-example-of-the-usage-of-a-function/2; SWAP_ARGS=y; header="What would you like examples for?"; } ;;
-    nlq) { prompt=pf-instruct-an-ai-to-do-something/1; OS_OR_LANG=nlq; header="Enter queries (e.g. 'latest version of node'):" template="Show <query>"; maybe_cm=y; } ;;
-
-    *)
-esac
-
 export USE_COMINT
 export USE_TERM
 
@@ -169,23 +160,55 @@ if test -z "$OS_OR_LANG"; then
     fi
 fi
 
+case "$PEN_APPNAME" in
+    nlsh) {
+        prompt="pf-nlsh/2";
+        header="Enter your commands in natural language.\\nOperating system: $OS_OR_LANG"
+    } ;;
+    
+    nlsc) {
+        prompt="pf-code-snippet-from-natural-language/2";
+        header="Describe the coding problem that you need a snippet for:";
+    } ;;
+    
+    nlsu|nlsx) {
+        prompt="pf-get-an-example-of-the-usage-of-a-function/2";
+        SWAP_ARGS="y";
+        header="What would you like examples for?\nNL description or function name:";
+    } ;;
+    
+    nlq) {
+        prompt="pf-instruct-an-ai-to-do-something/1";
+        OS_OR_LANG=nlq;
+        header="Enter queries (e.g. 'latest version of node'):"
+        template="Show <query>";
+        maybe_cm=y;
+    } ;;
+
+    *)
+esac
+
 if ! test "$NORL" = "y"; then
     pen-rlwrap "$sn" -norl "$@"
     exit $?
 fi
 
+{
 case "$PEN_APPNAME" in
     nlsh) {
-        nlsh-logo 1>&2
+        nlsh-logo
     }
     ;;
 
     *) {
         pen_appname_cap="$(p "$PEN_APPNAME" | pen-str uc)"
+        echo
         generic-logo "$pen_appname_cap"
+        echo
     }
     ;;
 esac
+} 1>&2
 
 # pf-code-snippet-from-natural-language/2
 # pf-nlsh/2
