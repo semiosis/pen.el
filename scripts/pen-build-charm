@@ -7,6 +7,7 @@ for d in /root/repos/bubbletea \
     /root/repos/charm; do
 (
     cd "$d"
+    git pull
     go build
     go install
 )

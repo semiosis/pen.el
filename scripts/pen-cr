@@ -545,10 +545,28 @@ case "$fnspec" in
     }
     ;;
 
-    main.go|go.mod) {
+    go.mod) {
         cd "$dn"
         pwd
         if pen-yn "Attempt go get?"; then
+            shorturl="$(pen-vc url | sed 's/^https\?:\/\///')"
+            go get -u "$shorturl"
+        else
+            set -xv
+            go build
+            go install
+        fi
+        pen-pak c
+        exit 0
+    }
+    ;;
+
+    main.go) {
+        cd "$dn"
+        pwd
+        if pen-yn "Attempt go run?"; then
+            go run main.go
+        elif pen-yn "Attempt go get?"; then
             shorturl="$(pen-vc url | sed 's/^https\?:\/\///')"
             go get -u "$shorturl"
         else

@@ -1257,4 +1257,12 @@ non-nil."
   (interactive)
   (deactivate-mark))
 
+;; TODO Make this file mirrored elsewhere
+(defun switch-to-org-for-this-file ()
+  (interactive)
+  (let* ((fn (f-filename (get-path nil t)))
+         (mant (f-mant fn))
+         (nf (concat (slugify mant) ".org")))
+    (find-file nf)))
+
 (provide 'pen-library)

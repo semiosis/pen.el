@@ -1,5 +1,15 @@
 ;; A database to store prompts and generations
 
+(defun retrieve-last-prompt-data ()  
+  (let ((s
+         (sor
+          (pen-sn
+           (concat (cmd "cat" (f-join penconfdir "prompt-hist.el"))
+                   " | awk 1 | sed -n '$p'")))))
+    (if s
+        (eval-string s)
+      s)))
+
 (defun rhizome-last-prompt-data-json ()
   (interactive)
 
@@ -10,7 +20,11 @@
                       ;; Use the empty string (not ideal)
                       (cons (car e) "")
                     e))
-                pen-last-prompt-data))
+                (or pen-last-prompt-data
+                    (sor
+                     (pen-sn
+                      (concat (cmd "cat" (f-join penconfdir "prompt-hist.el"))
+                              " | awk 1 | sed -n '$p'"))))))
          (json
 
           (pen-snc "jq ." (json-encode-alist json-pen-last-prompt-data))))
