@@ -611,6 +611,9 @@ delim is used to guarantee the function returns multiple matches per line
           thing))
     ""))
 
+(defun pen-bs (chars input)
+  (escape chars input))
+
 (defun sh-construct-exports (varval-tuples)
   (concat
    "export "
@@ -2114,9 +2117,6 @@ This function accepts any number of ARGUMENTS, but ignores them."
   "Escapes chars inside a string"
   (let ((re (eval `(rx (group (any ,@(butlast (cdr (split-string chars "")))))))))
     (replace-regexp-in-string re "\\\\\\1" input)))
-
-(defun pen-bs (chars input)
-  (escape chars input))
 
 (defun pen-revert (arg)
   (interactive "P")

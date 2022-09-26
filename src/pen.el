@@ -210,6 +210,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-context)
 (require 'pen-hist)
 (require 'pen-utils)
+(require 'pen-rhizome)
 (if (inside-docker-p)
     (progn
       (require 'pen-compile-run)

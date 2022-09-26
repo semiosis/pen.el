@@ -1838,17 +1838,11 @@
            (asoc-merge pen-last-prompt-data (list (cons "PEN_RESULT" (str result))
                                                   (cons "PEN_RESULTS" (json-encode-list results)))))
 
-     ;; Remove everything with no value.
-     ;; It might be better to keep but make nil
-     (setq pen-last-prompt-data
-           ;; (-filter (lambda (e) (cdr e)) pen-last-prompt-data)
-           (-map (lambda (e)
-                   (if (not (cdr e))
-                       (cons e nil))) pen-last-prompt-data))
+     ;; Send last prompt information to rhizome, through khala.
+     ;; Consider making this asynchronous.
+     (rhizome-stash-last-prompt-data)
 
-     ;; Now save this to a list somewhere
-     ;; Also send it to rhizome, through khala
-     ;; (json-encode-plist pen-last-prompt-data)
+     ;; Also, save this to a list somewhere on disk.
      (pen-append-to-file
       (concat
        "\n'"
