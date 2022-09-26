@@ -206,8 +206,11 @@
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list)
         :formatters '(lsp-format-buffer)
-        :docs '(pen-doc-override
-                lsp-describe-thing-at-point)
+        :docs '(pen-esp-docs-for-thing-if-prefix
+                pen-doc-override
+                lsp-describe-thing-at-point
+                pen-doc-thing-at-point
+                pen-docs-for-thing-given-screen)
         :toggle-test '(projectile-toggle-between-implementation-and-test
                        clojure-open-test)
         :fz-sym '()
