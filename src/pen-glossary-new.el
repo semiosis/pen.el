@@ -38,6 +38,8 @@
              n
              ".txt"))))
 
+;; TODO Make this a predicate tree and not a predicate list.
+;; Having a tree, would mean can overload predicates using scope/environmental hyperparameters, instead of repeating them.
 (defun set-glossary-predicate-tuples ()
   (interactive)
   (defset glossary-predicate-tuples
