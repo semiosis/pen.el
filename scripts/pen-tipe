@@ -1,6 +1,10 @@
 #!/bin/bash
 export TTY
 
+unset EDITOR
+# For pen-tvipe, the editor is special.
+# It must be vipe, pen-eipe, etc.
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -wintype) {
