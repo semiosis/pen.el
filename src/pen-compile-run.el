@@ -25,8 +25,10 @@
                        (t (pen-q (str (buffer-file-name)))))))
            ;; (save-temp-if-no-file)
            (if (not (buffer-file-name))
-               (pen-sn (concat "pen-tm -f -S -i -tout sps -x -pak -args pen-cr " crstr) (awk1 (buffer-string)))
-             (pen-snc (concat "unbuffer pen-tm -f -te -d sps -x -pak -args pen-cr " crstr)))))))
+               ;; (pen-sn (concat "pen-tm -f -S -i -tout sps -x -pak -args pen-cr " crstr) (awk1 (buffer-string)))
+               (sps (cmd "pen-cr" crstr) nil (awk1 (buffer-string)))
+             ;; (pen-snc (concat "unbuffer pen-tm -f -te -d sps -x -pak -args pen-cr " crstr))
+             (sps (cmd "pen-cr" crstr)))))))
 
 (defun compile-run-term ()
   "This is used to compile and run a source file."
