@@ -609,6 +609,12 @@ revisions (interactive.e., use a \"...\" range)."
 ;; (define-key magit-section-mode-map (kbd "M-e") 'magit-section-forward-sibling)
 (define-key magit-section-mode-map (kbd "M-e") 'magit-section-forward)
 
+(defun magit-blame-addition-toggle ()
+  (interactive)
+  (if (minor-mode-p magit-blame-mode)
+      (call-interactively 'magit-blame-quit)
+    (call-interactively 'magit-blame-addition)))
+
 (defun git-this-file ()
   (interactive)
 
