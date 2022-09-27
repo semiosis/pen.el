@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+function add_upstream() {
+    url=$(git config --get remote.origin.url)
+    repo=${url##*/}
+    user=$(echo "$url" | awk -F/ '{print $4}')
+    echo "https://api.github.com/repos/$user/$repo" 1>&2
+    remote=$(ci -t 86400 curl -s "https://api.github.com/repos/$user/$repo" | jq -r '.parent.clone_url')
+    if [ "$remote" != "null" ]; then
+        git remote add upstream "$remote"
+    else
+        echo "no upstream found"
+    fi
+}
+
+add_upstream "$@"

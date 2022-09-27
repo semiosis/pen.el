@@ -4,6 +4,7 @@ export TTY
 for d in /root/repos/bubbletea \
     /root/repos/wish \
     /root/repos/lipgloss \
+    /root/repos/soft-serve \
     /root/repos/charm; do
 (
     cd "$d"

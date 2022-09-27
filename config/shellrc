@@ -1,5 +1,6 @@
 export DUMP="$HOME/dump"
 export REPOS="$HOME/repos"
+export MYGIT="$HOME/repos"
 export NOTES="/root/notes"
 export EMACSD="/root/.emacs.d"
 export GOPATH="$HOME/go"

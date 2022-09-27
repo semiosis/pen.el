@@ -572,6 +572,7 @@ git clone "https://github.com/charmbracelet/charm"
 git clone "https://github.com/charmbracelet/bubbletea"
 git clone "https://github.com/charmbracelet/lipgloss"
 git clone "https://github.com/charmbracelet/wish"
+git clone "https://github.com/charmbracelet/soft-serve"
 )
 pen-build-charm
 

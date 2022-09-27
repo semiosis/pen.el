@@ -26,7 +26,7 @@ case "$ext" in
     scrbl) { which scribble; } ;; 
     py) { 
         ver="$(vermin "$fp")"
-awk1 <<HEREDOC
+awk 1 <<HEREDOC
 python$ver
 HEREDOC
 

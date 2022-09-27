@@ -338,7 +338,7 @@ is_tty() {
 
 case "$rp" in
     *vscode/packages*) {
-        cat "$rp" | sed '/^$/d' | sed '/^#/d' | awk1 | while IFS=$'\n' read -r line; do
+        cat "$rp" | sed '/^$/d' | sed '/^#/d' | awk 1 | while IFS=$'\n' read -r line; do
             /usr/bin/code --install-extension "$line"
         done
 
@@ -699,7 +699,7 @@ case "$fnspec" in
         DO_SUDO="$(yes-or-no-p "Use sudo?" && p y)"
 
         if pen-yn "Install only (y)?\n Otherwise, select from available commands (n)"; then
-            cat package.json| jq -r ".scripts | keys[]" | tr '\n' ' ' | sed -e 's/^/npm commands: /' -e 's/ $//' | awk1
+            cat package.json| jq -r ".scripts | keys[]" | tr '\n' ' ' | sed -e 's/^/npm commands: /' -e 's/ $//' | awk 1
             sudomaybe npm build
             sudomaybe npm install
             sudomaybe npm start
@@ -1815,7 +1815,7 @@ case "$file_type" in
         # ln -s "$rp" Dockerfile
         cp -a "$rp" Dockerfile
 
-        apply-inplace awk1 Dockerfile
+        apply-inplace "awk 1" Dockerfile
 
         dockerfile_dir="$dn"
 

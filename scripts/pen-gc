@@ -97,7 +97,7 @@ stdin_exists && : "${DROP_TO_SHELL:="n"}"
 export NO_CLONE SHALLOW NO_NOTIFY
 
 {
-    stdin_exists && awk1
+    stdin_exists && awk 1
 
     # send arguments to stdin
     test "$#" -gt 0 && pl "$@"

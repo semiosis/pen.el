@@ -1,0 +1,190 @@
+#!/bin/bash
+export TTY
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+# example
+# gh f ".rkt" "(\(compress )"
+
+slug="$(echo "$@" | tr -d '\n' | slugify)"
+
+( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
+
+# Everything to do with github
+
+limit=1000
+FULL_SEARCH=
+: ${MAX_FILE_SIZE:="500"}
+USE_VIM=
+# GHTORRENT=
+
+opt="$1"
+case "$opt" in
+    stars) {
+        url="$1"
+        notify-send "Not implemented"
+        # get-stars-for-repo
+    }
+    ;;
+
+    cs|f|find) {
+        shift
+
+        # record the command here into something
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -fs) { # full search
+                FULL_SEARCH=y
+                ! yn "This is expensive. Proceed?" && exit 0
+                shift
+            }
+            ;;
+
+            -l|-n) {
+                limit="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -L|-lang) {
+                export LANGUAGE="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -p|-path) {
+                path="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -np|-notpath) {
+                exclude_path_re="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -c|-contents) {
+                contents="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -ght) {
+                GHTORRENT=y
+                ! yn "This is expensive. Proceed?" && exit 0
+                shift
+            }
+            ;;
+
+            -b) {
+                export MAX_FILE_SIZE=100000000
+                USE_VIM=y # use vim for massive files (alternatively, vlf)
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        # : ${path:="\.el$"}
+        # : ${contents:="\bgithub"}
+
+        echo "$limit"
+
+        export FULL_SEARCH
+        export GHTORRENT
+
+        # ntf="$(gh-query -T -p "$path" -np "$exclude_path_re" -n "$limit" -c "$contents" | tf org)"
+        # export SLUG="$slug"
+        ntf="$(gh-query -T -p "$path" -np "$exclude_path_re" -n "$limit" -c "$contents" | nf $NOTES/programs/gh-query/${slug}.org)"
+
+        notify-send "Query complete"
+
+        if is_tty; then
+            if test "$USE_VIM" = "y"; then
+                v "$ntf"
+            else
+                sp "$ntf"
+            fi
+        else
+            echo "$ntf"
+        fi
+    }
+    ;;
+
+    size) {
+        shift
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -b) {
+                BYTES=y
+                shift
+            }
+            ;;
+
+            -u) {
+                export UPDATE=y
+                shift
+            }
+            ;;
+
+            -x) {
+                EXPANDED_ESTIMATE=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        awk 1 | while IFS=$'\n' read -r line; do
+            api_url="https://api.github.com/repos/$(printf -- "%s\n" "$line" | perl -ne 'print $1 if m!([^/]+/[^/]+?)(?:\.git)?$!' | ds gh-size-url 2>/dev/null)"
+
+            kb="$(
+                timeout 5 ci -t 86400 gh-curl -s -k "$api_url" | grep size | {
+                    # tr -dc '[0-9]'
+                    scrape '[0-9]+'
+                } 2>/dev/null
+            )"
+
+            if test -z "$kb"; then
+                echo "API did not return data for $api_url" 1>&2
+                continue
+            fi
+
+            echo "$kb * 1024" | bc | {
+                if test "$EXPANDED_ESTIMATE" = "y"; then
+                    # 5 is a good factor. It's cutting it close but it
+                    # should be on the larger side of reality
+
+                    # df / | sed 1d | s field 4 | math-times 1000 | bytes2human
+                    math-times 5
+                else
+                    cat
+                fi
+            } | {
+                if test "$BYTES" = "y"; then
+                    cat
+                else
+                    bytes2human
+                fi
+            } | remove-starting-and-trailing-whitespace.sh
+        done
+    }
+    ;;
+
+    *) {
+        # For everything else, use the node command I installed
+        ngh "$@"
+    }
+esac
