@@ -42,30 +42,30 @@
 ;; Having a tree, would mean can overload predicates using scope/environmental hyperparameters, instead of repeating them.
 ;; The tree should condense into the list.
 
-(defun predicate-tree-flatten (&optional tree)
-  ;; recursively descend into the cdr of each tuples,
-  ;; if subtuple predicate is true, descend
-  ;; bring back the predicate and the results (some of which might be tuples),
-  ;; ;; and merge with the current tuple
+;; (defun predicate-tree-flatten (&optional tree)
+;;   ;; recursively descend into the cdr of each tuples,
+;;   ;; if subtuple predicate is true, descend
+;;   ;; bring back the predicate and the results (some of which might be tuples),
+;;   ;; ;; and merge with the current tuple
 
-  ;; (mapcar (lambda (tp))
-  ;;         tree)
+;;   ;; (mapcar (lambda (tp))
+;;   ;;         tree)
 
-  `(((and
-      (f-exists? (pen-get-mode-glossary-file)))
-     (pen-get-mode-glossary-file))
-    ((or (pen-re-p "\\bVault\\b")
-         (pen-re-p "\\bConsul\\b")
-         (and (not (derived-mode-p 'text-mode))
-              (pen-istr-p "terraform"))
-         (and (not (derived-mode-p 'text-mode))
-              (pen-ire-p "\\bvagrant\\b")))
-     ,(f-join pen-glossaries-directory "hashicorp.txt")
-     ,(f-join pen-glossaries-directory "terraform.txt"))
-    ((or (pen-istr-p "French")
-         (pen-istr-p "france")
-         (istr-match-p "French" (get-path nil t)))
-     ,(f-join pen-glossaries-directory "french.txt"))))
+;;   `(((and
+;;       (f-exists? (pen-get-mode-glossary-file)))
+;;      (pen-get-mode-glossary-file))
+;;     ((or (pen-re-p "\\bVault\\b")
+;;          (pen-re-p "\\bConsul\\b")
+;;          (and (not (derived-mode-p 'text-mode))
+;;               (pen-istr-p "terraform"))
+;;          (and (not (derived-mode-p 'text-mode))
+;;               (pen-ire-p "\\bvagrant\\b")))
+;;      ,(f-join pen-glossaries-directory "hashicorp.txt")
+;;      ,(f-join pen-glossaries-directory "terraform.txt"))
+;;     ((or (pen-istr-p "French")
+;;          (pen-istr-p "france")
+;;          (istr-match-p "French" (get-path nil t)))
+;;      ,(f-join pen-glossaries-directory "french.txt"))))
 
 (defun set-glossary-predicate-tuples ()
   (interactive)
