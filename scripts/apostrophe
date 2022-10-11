@@ -13,6 +13,9 @@ sn="$(basename "$0")"
 # apostrophe is often introduced by the exclamation "O," as when Juliet cries
 # out: "O Romeo, Romeo, Wherefore art thou Romeo?"
 
+# Commercial alternative:
+# https://beta.character.ai/
+
 FRAMETYPE=tty
 
 apostrophe-logo 1>&2

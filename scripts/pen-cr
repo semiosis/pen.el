@@ -1307,30 +1307,38 @@ case "$fnspec" in
     ;;
 
     setup.py) {
-        cd "$dn"
-        wd="$(printf -- "%s" "$(pwd)" | slugify)"
-        rm -f "/tmp/$wd-files.txt"
-        touch "/tmp/$wd-files.txt"
-        chmod 777 "/tmp/$wd-files.txt"
+        if yn "Create venv and build setup.py (y)? or install directly with setup.py (n)"; then
+            python3 -m venv venv/
 
-        # set -xv
-        if grep -q "extras_require={" "$fn" && pen-yn "Install extras?"; then
+            x -sh bash -s '. venv/bin/activate' -c m \
+                -s 'pip install -e .[dev,deploy]' -c m \
+                -s 'pre-commit install' -c m -i
+        else
+            cd "$dn"
+            wd="$(printf -- "%s" "$(pwd)" | slugify)"
+            rm -f "/tmp/$wd-files.txt"
+            touch "/tmp/$wd-files.txt"
+            chmod 777 "/tmp/$wd-files.txt"
 
-            # extras_require={"keyring": ["keyring >= 12.2.0"]},
-            if grep -q -P "extras_require={.*}," "$fn"; then
-                extra_target="$(sed -n "/extras_require={/p" "$fn" | sed -n "s/^[^\"]\\+\"\\([^\"]\\+\\).*/\\1/p")"
-            else
-                extra_target="$(sed -n -e "/extras_require={/,/},/p" "$fn" | sed -n "s/^\\s\\+[\"']\\([^\"']\\+\\).*/\\1/p" | pen-fzf)"
+            # set -xv
+            if grep -q "extras_require={" "$fn" && pen-yn "Install extras?"; then
+
+                # extras_require={"keyring": ["keyring >= 12.2.0"]},
+                if grep -q -P "extras_require={.*}," "$fn"; then
+                    extra_target="$(sed -n "/extras_require={/p" "$fn" | sed -n "s/^[^\"]\\+\"\\([^\"]\\+\\).*/\\1/p")"
+                else
+                    extra_target="$(sed -n -e "/extras_require={/,/},/p" "$fn" | sed -n "s/^\\s\\+[\"']\\([^\"']\\+\\).*/\\1/p" | pen-fzf)"
+                fi
+
+                if test -n "$extra_target"; then
+                    # py pip install ".[$extra_target]"
+                    mypy pen-i ".[$extra_target]"
+                fi
             fi
 
-            if test -n "$extra_target"; then
-                # py pip install ".[$extra_target]"
-                mypy pen-i ".[$extra_target]"
-            fi
+            # py e setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
+            mmypython setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
         fi
-
-        # py e setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
-        mmypython setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
         exit 0
     }
     ;;

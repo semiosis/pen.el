@@ -20,6 +20,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -t) {
+        delay="$2"
+        shift
+        shift
+    }
+    ;;
+
     -clip) {
         FROM_CLIPBOARD=y
         shift
@@ -79,11 +86,13 @@ if ! is_tty; then
     printf -- "%s\n" "$message"
 fi
 
+: "${delay:="10"}"
+
 if [ -n ${VISIBLE+x} ]; then
     if test "$category" = "_"; then
-        which notify-send &>/dev/null && notify-send "$message"
+        which notify-send &>/dev/null && notify-send -t "$delay" "$message"
     else
-        which notify-send &>/dev/null && notify-send "$category" "$message"
+        which notify-send &>/dev/null && notify-send -t "$delay" "$category" "$message"
     fi
 fi
 

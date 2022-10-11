@@ -575,6 +575,7 @@ git clone "https://github.com/charmbracelet/wish"
 git clone "https://github.com/charmbracelet/soft-serve"
 )
 pen-build-charm
+go install github.com/charmbracelet/soft-serve/cmd/soft@latest
 
 (
 cd ~/repos

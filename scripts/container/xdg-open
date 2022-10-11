@@ -15,4 +15,13 @@ export TTY
 # nw o "$@"
 
 # The unbuffer is needed to prevent nw from thinking it has stdin
-unbuffer nw zrepl -0 "$@"
+
+fp="$1"
+fp="$(p "$fp" | sed 's/^file:\/\///')"
+test -n "$fp" || exit 1
+
+if test -d "$fp"; then
+    unbuffer nw ranger "$fp"
+else
+    unbuffer nw zrepl -0 "$@"
+fi

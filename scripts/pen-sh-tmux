@@ -7,6 +7,18 @@ clear
 # I should turn this entire script into an elisp hydra.
 # Although that would require that emacs has been started already.
 
+# This can't work because the menu prints before it runs. The menu must appear elsewhere
+fzf_cmd_last_output() {
+    sel="$(fqa 'first-column-field-1-space' | sed 's/#.*//' )"
+
+    echo
+
+    if [ -n "$sel" ]; then
+        printf -- "%s\n" "Running: $sel »" 1>&2
+        pen-tm -f get-last-output '»' | eval "$sel"
+    fi
+}
+
 # S  pen-tm -f -d spv
 # p  sps slmenu
 read -r -d '' options <<HEREDOC
@@ -20,6 +32,7 @@ b  pen-tm breakp
 p  slmenu
 P  slmenu | xa orspvs
 d  mkdw (make-docker-wrapper)
+N  nw -n notifications pen-watch-notifications 
 e  mkew (make-etui-wrapper)
 v  pen-tm capture vim (TODO)
 m  pen-tm ttystudio-gif
@@ -65,6 +78,7 @@ case "$d" in
     p) cmd="slmenu" ;;
     P) cmd="slmenu | xa orspvs" ;;
     d) cmd="mkdw" ;;
+    N) cmd="nw -n notifications pen-watch-notifications" ;;
     e) cmd="mkew" ;;
     m) cmd="tmux run -b $(cmd-nice-posix "pen-tm ttystudio-gif")" ;;
     r) cmd="tmux run -b $(cmd-nice-posix "pen-tm asciinema")" ;;
