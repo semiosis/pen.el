@@ -1079,6 +1079,7 @@
 
 (require 'pen-dired)
 (define-key dired-mode-map (kbd "v") 'dired-view-file-v)
+(define-key dired-mode-map (kbd "a") 'pen-swipe)
 (define-key dired-mode-map (kbd "M-v") 'dired-view-file-v)
 (define-key dired-mode-map (kbd "M-e") 'dired-view-file)
 (define-key dired-mode-map (kbd "M-1") 'dired-view-file-scope)

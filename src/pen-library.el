@@ -1265,4 +1265,14 @@ non-nil."
          (nf (concat (slugify mant) ".org")))
     (find-file nf)))
 
+(defun tm-notify (s &optional delay)
+  (setq delay (or delay 10))
+  ;; (pen-sn (pen-cmd "tm-notify" "-t" (str delay)) (pps s))
+  (pen-sn (pen-cmd "ns" "-t" (str delay)) (pps s))
+  s)
+
+(defun tm-notifications ()
+  (interactive)
+  (sps "pen-watch-notifications"))
+
 (provide 'pen-library)

@@ -186,7 +186,9 @@
   (cond
    ((pen-is-glossary-file (get-path nil t))
     (call-interactively 'helm-imenu))
+   ;; (eq major-mode 'text-mode)
    ((eq major-mode 'help-mode) (call-interactively 'pen-button-imenu))
+   ((eq major-mode 'org-brain-visualize-mode) (call-interactively 'button-imenu))
    ((derived-mode-p 'Info-mode)
     (if (>= (prefix-numeric-value current-prefix-arg) 4)
         (try (call-interactively 'info-buttons-imenu)

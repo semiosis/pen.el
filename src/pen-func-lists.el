@@ -23,6 +23,7 @@
    (df yaml-multiline-chrome (chrome "https://yaml-multiline.info/"))
    (dff (chrome "https://lzone.de/cheat-sheet/YAML"))))
 (defset dired-mode-funcs '(tramp-mount-sshfs
+                           dired-find-alternate-file
                            dired-narrow
                            deer-from-dired
                            dired-narrow-fuzzy

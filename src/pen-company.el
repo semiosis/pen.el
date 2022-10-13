@@ -87,9 +87,11 @@
     ;; But dodgy.
     company-tabnine
 
-    company-yasnippet
+    ;; company-yasnippet
+    
     ;; pen-complete-long
-    company-org-block
+    ;; company-org-block
+    
     company-dabbrev
     
     ;; This is self-referential

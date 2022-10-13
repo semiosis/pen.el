@@ -655,6 +655,9 @@ the namespace in the Clojure source buffer"
      ;; This action means helm will return the value. So helm functions like fzf.
      ;; 
      (setcdr (assq 'action e) (lambda (c) (helm-marked-candidates)))
+     (setcdr (assq 'persistent-help e) "Run function")
+     ;; (setcdr (assq 'header-line e) "C-j: Run function")
+     (setcdr (assq 'header-line e) "C-m: Run function")
      e)
    (helm-cider--apropos-sources)))
 
@@ -714,8 +717,10 @@ the namespace in the Clojure source buffer"
          (interactive (list ,@iarglist))
          (let* ((valstr (pen-cmd ,@arglist))
                 (clj (concat "(" ,funname " " valstr ")")))
-           (cider-nrepl-request:eval clj nil)))))
-    (cider-nrepl-request:eval (concat "(" funname ")") nil)))
+           (cider-nrepl-request:eval clj
+                                     (lambda (response) (tm-notify response)))))))
+    (cider-nrepl-request:eval (concat "(" funname ")")
+                              (lambda (response) (tm-notify response)))))
 
 (define-key cider-mode-map (kbd "C-c C-o") nil)
 (define-key cider-mode-map (kbd "C-M-i") nil)
