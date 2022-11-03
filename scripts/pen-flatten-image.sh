@@ -7,9 +7,7 @@ pwd
 docker export pen -o pen.tar
 
 if test -f "pen.tar"; then
-    :
+    if yn "Import?"; then
+        cat pen.tar | docker import - semiosis/pen.el
+    fi
 fi
-cat pen.tar | docker import - semiosis/pen.el
-
-
-

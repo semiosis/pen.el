@@ -1084,3 +1084,5 @@ git clone "http://github.com/coderofsalvation/kanban.bash"
 # jot
 # https://github.com/araekiel/jot
 cargo install jt
+
+pip install jc
