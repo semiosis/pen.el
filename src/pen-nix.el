@@ -160,8 +160,11 @@ Be mindful of quoting arguments correctly."
 (defun aes-xxd (input)
   (sh "openssl aes-128-cbc -K 61 -e -iv 61 -nopad -nosalt | tless" input nil nil "sh" t "spv"))
 
-(defun vim (path)
-  (sh (concat "vim " (pen-q (concat path))) nil nil nil "sh" t "sph"))
+(defun vim (&optional path)
+  (interactive)
+  (if path
+      (sh (concat "vim " (pen-q (concat path))) nil nil nil "sh" t "nw")
+    (sh "vim" nil nil nil "sh" t "nw")))
 
 (defvaralias '_pwd 'default-directory)
 

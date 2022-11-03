@@ -22,6 +22,9 @@ PATH is the sexp to evaluate, as a string."
 
 (org-add-link-type "el" 'org-link--open-elisp)
 
+(org-add-link-type "o" 'open)
+(org-add-link-type "open" 'open)
+
 (defun org-link--edit-var (varname)
   (edit-var-elisp (intern varname)))
 

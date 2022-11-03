@@ -1275,4 +1275,11 @@ non-nil."
   (interactive)
   (sps "pen-watch-notifications"))
 
+(defun open (path)
+  ;;   "This executes open <path> in a split"
+  (interactive (list (read-file-name "path:")))
+  (sps (concat "trap '' HUP; o " (q path))))
+(defalias 'spv-open 'open)
+(defalias 'o 'open)
+
 (provide 'pen-library)

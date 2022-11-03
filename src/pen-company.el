@@ -203,4 +203,16 @@
 ;; Doesn't seem to work
 (advice-add 'company-complete-quick-access :around #'company-typing-around-advice)
 
+;; For global-company-mode
+;; Disable it for eshell-mode
+(defun company-mode-on ()
+  (when (and (not (or noninteractive (eq (aref (buffer-name) 0) ?\s)))
+             (not (memq major-mode '(eshell-mode)))
+             (cond ((eq company-global-modes t)
+                    t)
+                   ((eq (car-safe company-global-modes) 'not)
+                    (not (memq major-mode (cdr company-global-modes))))
+                   (t (memq major-mode company-global-modes))))
+    (company-mode 1)))
+
 (provide 'pen-company)
