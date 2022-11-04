@@ -48,6 +48,14 @@ QUIET=y
 : "${EMACSCLIENT_BIN:="$(command -v emacsclient)"}"
 : "${EMACS_USER_DIRECTORY:="/root/.emacs.d"}"
 
+
+if test -f $EMACSD/host/pen.el/config/emacs-packages.txt; then
+    PACKAGES_TXT=$EMACSD/host/pen.el/config/emacs-packages.txt
+else
+    PACKAGES_TXT=$EMACSD/pen.el/config/emacs-packages.txt
+    # PACKAGES_TXT=$EMACSD/packages.txt
+fi
+
 if test "$1" = "-v"; then
     QUIET=n
     shift
@@ -885,7 +893,7 @@ case "$f" in
 
                 $d c -e "$pre_cmd(ignore-errors (my-delete-package '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
-                cat1 $EMACSD/packages.txt | sed "/$pkg_name/d" | pen-sponge $EMACSD/packages.txt
+                cat1 $PACKAGES_TXT | sed "/$pkg_name/d" | pen-sponge $PACKAGES_TXT
 
                 shift
             done
@@ -914,7 +922,7 @@ case "$f" in
 
                 $d c -e "$pre_cmd(ignore-errors (package-reinstall '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
-                echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
+                echo "$pkg_name" | pen-append-uniq $PACKAGES_TXT
 
                 shift
             done
@@ -957,7 +965,7 @@ case "$f" in
 
                 $d c -e "$pre_cmd(ignore-errors (package-install '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
-                echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
+                echo "$pkg_name" | pen-append-uniq $PACKAGES_TXT
 
                 shift
             done
@@ -978,7 +986,7 @@ case "$f" in
 
             pen-e c -e "(ignore-errors (package-install '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
-            echo "$pkg_name" | pen-append-uniq $EMACSD/packages.txt
+            echo "$pkg_name" | pen-append-uniq $PACKAGES_TXT
 
             shift
         done
