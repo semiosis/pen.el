@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+export PAGER=pen-pager
+
 # This will use the host git to run git commands, if ssh to host is available
 
 if ! test -n "$SSH_HOST_ALLOWED" && pen-rc-test host-ssh-master; then
