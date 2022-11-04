@@ -14,7 +14,7 @@ export TTY
 unset CWD
 
 if test "$#" -eq 1 && test "$1" = "/"; then
-    set -- --exclude "/media/*" "$@"
+    set -- --exclude "/volumes/*" --exclude "/media/*" "$@"
 fi
 
 if ! test "$INSIDE_NEOVIM" = y; then
