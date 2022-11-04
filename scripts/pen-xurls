@@ -1,4 +1,19 @@
 #!/bin/bash
 export TTY
 
-/root/go/bin/xurls "$@"
+{
+    # e:$HOME/blog/posts/thy-kingdom-come.org
+    sed 's%< youtube \([^ ]\+\) >%https://www.youtube.com/watch?v=\1%'
+} | {
+    if test -f ${GOPATH%%:*}/bin/xurls; then
+        ${GOPATH%%:*}/bin/xurls "$@"
+    else
+        rosie-urls "$@"
+    fi
+} | 
+    sed "/\/\/www.youtube.com/{s~/embed/~/watch?v=~}" |
+    sed "/\/\/www.youtube.com/{s=\&ab.*==}" |
+    sed "s=^http://www.google.com/url?q\===" | sed "s/&sa=.*//" |
+    sed "s=^http.\\?://webcache\\.googleusercontent\\.com/search?q\\=cache:==" | sed-pcre "s/(?<!(m\/url|earch|forum|watch|ylist))\?.*//" | sed 's/&fbcli.*//' |
+    sed "s=\\\n$=="
+

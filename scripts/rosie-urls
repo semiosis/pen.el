@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+rosie grep -o subs net.url_common |
+    sed "/\/\/www.youtube.com/{s~/embed/~/watch?v=~}"
