@@ -631,4 +631,7 @@ revisions (interactive.e., use a \"...\" range)."
 (define-key magit-diff-mode-map (kbd "M-TAB") 'magit-section-cycle-diffs)
 (define-key magit-diff-mode-map (kbd "<M-tab>") 'magit-section-cycle-diffs)
 
+(require 'pen-magit-section)
+(require 'pen-magithub)
+
 (provide 'pen-magit)
