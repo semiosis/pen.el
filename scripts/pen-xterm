@@ -1,6 +1,13 @@
 #!/bin/bash
 export TTY
 
+sn="$(basename -- "$0")"
+
+if ! { inside-docker-p && test -n ~/pen_user.txt; }; then
+    pen sh "$sn" "$@"
+    exit "$?"
+fi
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -E) {
         DO_EXEC=y

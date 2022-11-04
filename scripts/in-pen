@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+if ! { inside-docker-p && test -n ~/pen_user.txt; }; then
+    pen sh "$sn" "$@"
+    exit "$?"
+fi
+
+"$@"
