@@ -1,3 +1,6 @@
+filetype plugin indent on
+" syntax on
+
 set mouse=a
 silent! set ttymouse=xterm2
 highlight Cursor gui=reverse guifg=NONE guibg=NONE
@@ -2092,6 +2095,33 @@ function! ForceQuit()
     qa!
 endfunction
 
+fun! ToggleOpt(opt)
+    exec 'windo set '.a:opt.'!'
+    exec 'set '.a:opt.'?'
+endf
+
+function! MapToggle(key, opt)
+    let savepos = getpos('.')
+    let cmd = ':silent! call ToggleOpt("'.a:opt.'")<CR>'
+    exec 'nnoremap '.a:key.' '.cmd
+    exec 'inoremap '.a:key." \<C-O>".cmd
+    call setpos('.', savepos)
+    "echom a:opt
+endfunction
+
+command! -nargs=+ MapToggle call MapToggle(<f-args>)
+
+function! MapToggleBoth(key, opt_a, opt_b)
+    let savepos = getpos('.')
+    let cmd = ':silent! call ToggleOpt("'.a:opt_a.'") \| silent! call ToggleOpt("'.a:opt_b.'")<CR>'
+    exec 'nnoremap '.a:key.' '.cmd
+    exec 'inoremap '.a:key." \<C-O>".cmd
+    call setpos('.', savepos)
+    "echom a:opt_a a:opt_b
+endfunction
+
+command! -nargs=+ MapToggleBoth call MapToggleBoth(<f-args>)
+
 command! ForceQuit silent! call ForceQuit()
 
 source ~/.vim/inkpot.vim
@@ -2100,6 +2130,12 @@ source ~/.vim/utils.vim
 source ~/.vim/pen.vim
 " source ~/.vim/nvim-function-keysvimrc
 source ~/.vim/fixkeymaps-vimrc
+
+silent! MapToggleBoth <F4> wrap number
+silent! MapToggle <F5> number
+" silent! MapToggleBoth <F5> number relativenumber
+silent! MapToggle <F6> spell
+silent! MapToggle <F7> paste
 
 let pen_path = expand("~/.pen/pen.vim")
 if filereadable(pen_path)

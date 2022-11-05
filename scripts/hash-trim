@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+input="$(cat)"
+
+hash="$(p "$input" | pen-sha)"
+name="$(p "$input" | cut -c1-15)-$hash"
+strl=$(echo -n "$input" | wc -m)
+if test "$strl" -gt "20"; then
+    echo -n "$name"
+else
+    echo -n "$hash"
+fi

@@ -214,10 +214,16 @@ START and END can be in either order."
                    (eval 'pen-sh-update))
               (setq cmd (concat "upd " cmd)))
           (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te " window-type " " nw_args " -c " (pen-q dir) " " (pen-q cmd) " &"))
-                (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q dir) " " (pen-q cmd))))
+                ;; The last cmd here must not be quoted
+                (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q dir) " " cmd)))
             (if (>= (prefix-numeric-value current-prefix-arg) 4)
                 (pen-e-nw-zsh cmd-tm-here window-type)
               (pen-snc cmd-tm-split))))))))
+
+(defun test-pen-tm-nw ()
+  (interactive)
+  (let ((current-prefix-arg '(4)))
+    (pen-tm-nw (pen-cmd "pen-win" "ie" "$PEN/results/results_1667625716.9521382_05.11.22_91155942-917e-48d9-baad-bec94794036c/results_05.11.22__1667625720_91155942-917e-48d9-baad-bec94794036c_TeaH2/images/result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png"))))
 
 (defun pen-nw (&optional cmd nw_args input dir output_b)
   "Runs command in a sensible split"

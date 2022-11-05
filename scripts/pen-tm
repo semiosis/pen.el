@@ -1309,7 +1309,7 @@ case "$f" in
             fi
         fi
 
-        session_name="$(p "$session_name" | slugify)"
+        session_name="$(p "$session_name" | slugify | hash-trim)"
 
         if [ -z "$TARGET" ] && test "$HAS_PARENT" = "y"; then
             TARGET="$CALLER_TARGET"

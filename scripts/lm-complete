@@ -318,7 +318,18 @@ else
             cmd-nice-posix "$PEN_LM_COMMAND" | awk 1
             continue
         done | parallel -j "$PEN_N_JOBS" | awk 1 | while IFS=$'\n' read -r result_dir; do
+
+            # I need a hack here.
+            # The response from dalle-complete.sh must be modified
             mv "$result_dir" "$PEN_GEN_DIR/"
+
+            bndn="$(basename -- "$result_dir")"
+            if test -d "$PEN_GEN_DIR/$bndn/images"; then
+                sed -i "s=^=$PEN_GEN_DIR/=" "$PEN_GEN_DIR/$bndn/response.txt"
+            fi
+
+            # the contents of reponse.txt is memoised
+
         done &>/dev/null
         echo "$PEN_GEN_DIR" | tee "$tmpdir/lm-complete-stdout.txt"
     else
