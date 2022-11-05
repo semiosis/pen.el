@@ -1787,8 +1787,9 @@
                  ;; This behaviour isn't the best
                  (length results)
                (if results
-                   ;; This may insert immediately, so it's important to force selection
-                   (pen-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match)
+                   (progn
+                     ;; This may insert immediately, so it's important to force selection
+                     (pen-fz results :prompt (concat ,func-name ": ") :select-only-match select-only-match))
                  (progn
                    (message "No results")
                    results)))))
