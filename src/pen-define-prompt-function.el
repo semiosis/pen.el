@@ -2001,7 +2001,8 @@
                                        ;; do not allow allow you to change the faces.
                                        ("INK_TYPE" . "generated")
                                        ("PEN_FUNCTION_NAME" . ,,func-name)
-                                       ("PEN_GEN_TIME" . ,(str gen-time))))
+                                       ("PEN_GEN_TIME" . ,(str gen-time))
+                                       ("PEN_GEN_DIR" . ,(str gen-dir))))
 
           (pen-append-to-file
            (concat
