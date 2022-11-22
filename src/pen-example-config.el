@@ -1278,9 +1278,11 @@
 (define-key global-map (kbd "<help> J") 'custom-keys-goto)
 (define-key pen-map (kbd "<help> J") 'custom-keys-goto)
 
+(define-key global-map (kbd "M-g M-f") 'find-file-at-point)
+
 (defun test-surreal-strawberry ()
   (interactive)
-  
+
   (car (pf-given-a-textual-description-visualise-it-with-an-image/1 "A surreal strawberry" :no-select-result t)))
 
 (defalias 'dalle 'pf-given-a-textual-description-visualise-it-with-an-image/1)
