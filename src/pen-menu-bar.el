@@ -426,6 +426,9 @@
     (bindings--define-key menu [mi-pen-start-in-xterm]
       '(menu-item "Start Pen.el in an xterm" pen-start-in-xterm
                   :help "Start Pen.el in an xterm"))
+    (bindings--define-key menu [mi-pen-banner]
+      '(menu-item "Pen.el Banner" pen-banner
+                  :help "Display the startup banner"))
     (bindings--define-key menu [mi-pen-of-imagination]
       '(menu-item "The pen of imagination - |:ϝ∷¦ϝ" pen-of-imagination
                   :help "The pen of imagination - |:ϝ∷¦ϝ"))

@@ -226,6 +226,43 @@
   (interactive)
   (switch-to-buffer "*scratch*"))
 
+(require 'ansi-color)
+(defun display-ansi-colors ()
+  (interactive)
+  (ansi-color-apply-on-region (point-min) (point-max)))
+
+(defun pen-banner ()
+  (interactive)
+  (ignore-errors
+    (if (buffer-exists "*pen-banner*")
+        (switch-to-buffer "*pen-banner*")
+
+      (let ((b (new-buffer-from-string (pen-sn "pen-banner.sh -xterm|cat"))))
+        (with-current-buffer b
+            ;; (new-buffer-from-string (pen-sn "pen-banner.sh|cat"))
+
+            ;; I think this only works for xterm, not xterm256
+            (display-ansi-colors)
+          (rename-buffer "*pen-banner*")
+          (read-only-mode t)
+
+          ;; (use-local-map (copy-keymap foo-mode-map))
+          (local-set-key "q" 'kill-current-buffer)
+          (local-set-key "d" 'kill-current-buffer)
+
+
+          ;; TODO Make something to convert ansi 256 colors to ansi xterm color
+          ;; This works:
+          ;; TERM=xterm TMUX= tmux new pen-banner.sh
+          ;; Then export the basic ansi codes.
+          )
+        (switch-to-buffer b)))))
+
+;; (defun pen-banner ()
+;;   (interactive)
+
+;;   (term "pen-banner.sh"))
+
 ;; defvar this in your own config and load first to disable
 ;; (defvar pen-init-with-acolyte-mode t)
 
@@ -239,7 +276,9 @@
 (setq message-log-max 20000)
 
 (right-click-context-mode t)
-(pen-acolyte-scratch)
+;; (pen-acolyte-scratch)
+
+(call-interactively 'pen-banner)
 
 (defun pen-default-add-keys (;; frame
                              )
@@ -304,7 +343,8 @@
 
 ;; (add-hook 'after-make-frame-functions 'pen-default-add-keys)
 (add-hook 'after-init-hook 'pen-delay-add-keys)
-(add-hook 'after-init-hook 'pen-acolyte-scratch)
+;; (add-hook 'after-init-hook 'pen-acolyte-scratch)
+(add-hook 'after-init-hook 'pen-banner)
 (add-hook 'after-init-hook 'pen-load-config t)
 (add-hook 'after-init-hook 'pen-delay-memoise)
 
