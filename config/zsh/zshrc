@@ -330,6 +330,7 @@ bindkey -s "^[B" "^A^Kbr-txt\r"
 
 # M-N
 bindkey -s "^[N" "^A^Kbr-img\r"
+bindkey -s "^[U" "^A^Kncdu\r"
 
 bindkey -s "^[j" "^A^Ksh-jump\r"
 bindkey -s "^[y" "^A^Ksh-yank\r"

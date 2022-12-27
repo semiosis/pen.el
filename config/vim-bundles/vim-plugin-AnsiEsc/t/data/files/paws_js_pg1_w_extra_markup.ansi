@@ -1,0 +1,25 @@
+[7m- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - [27m
+
+Hi! My name's
+ ______                          __        
+|   __ \.---.-.--.--.--.-----.  |__|.-----.
+|    __/|  _  |  |  |  |__ --|__|  ||__ --|
+|___|   |___._|________|_____|__|  ||_____|  ... and I love you lots.  ♥️ 
+                               |___|       
+[1m[4mUsage:[24m[22m
+   [7m[90m [27m[3D[37m> [39m[7m[90m paws.js [[46mflags[49m] [42moperation[49m [operation parameters]                         [39m[27m   
+   [7m[90m                                                                          [39m[27m   
+   [7m[90m # for example,                                                           [39m[27m   
+   [7m[90m [27m[3D[37m> [39m[7m[90m paws.js [4mfoo.paws[24m [[--] arguments]                                        [39m[27m   
+   [7m[90m [27m[3D[37m> [39m[7m[90m paws.js [42minteract[49m                                                         [39m[27m   
+   [7m[90m [27m[3D[37m> [39m[7m[90m paws.js [42mparse[49m [4mbar.paws[24m                                                   [39m[27m   
+
+The [1;39mfirst non-flag[m argument will be an operation to perform; the second depends
+on the operation, but is usually a path to a file to load. If no operation is
+given, then the [32mstart[39m operation is assumed.
+
+In true [1m[31mUNIX[0m style, single-letter [47m[31mflags[39m m[30may[0m be combined serially; that is, [7m-aBc[27m
+is synonymous with [7m-a -B -c[27m. Furthermore, all arguments following a bare [7m--[27m are
+passed to the [46m[32mprogram [31mun-parsed [35m(that is,[0m even if it's a flag that would
+otherwise be interpreted by the Paws.js CLI, it will be ignored and passed
+Verbatim to the Paws program being run.)

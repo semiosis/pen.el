@@ -204,6 +204,9 @@ This issue might be caused by:
              clojurex-mode))
   (add-to-list 'lsp-language-id-configuration `(,m . "clojure")))
 
+(dolist (m '(rustic-mode))
+  (add-to-list 'lsp-language-id-configuration `(,m . "rust")))
+
 (setq lsp-enable-indentation nil)
 
 (if (not (inside-docker-p))
