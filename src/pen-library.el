@@ -1282,4 +1282,8 @@ non-nil."
 (defalias 'spv-open 'open)
 (defalias 'o 'open)
 
+(defun sps-top ()
+  (interactive)
+  (sps "zsh-top"))
+
 (provide 'pen-library)

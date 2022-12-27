@@ -128,4 +128,6 @@
          :target nil
          :cwd nil)))
 
+(require 'dap-cpptools)
+
 (provide 'pen-rust)
