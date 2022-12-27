@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# tv error
+
+slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
+
+"$@" 2>"/tmp/${slug}.txt"
+ret="$?"
+
+if test -s "/tmp/${slug}.txt"; then
+    unbuffer sps vs "/tmp/${slug}.txt"
+fi
+
+exit "$ret"

@@ -52,7 +52,7 @@ case "$sn" in
     }
     ;;
 
-    eopen-main) {
+    pen-om|eopen-main) {
         ic=open-main
     }
     ;;

@@ -1,4 +1,4 @@
-#!/usr/bin/env mypython
+#!/usr/bin/env pen-python
 
 # import tensorflow as tf
 # import tensorflow_hub as hub

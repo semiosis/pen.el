@@ -1086,3 +1086,20 @@ git clone "http://github.com/coderofsalvation/kanban.bash"
 cargo install jt
 
 pip install jc
+
+# For eaf
+# agi libgit2-dev - doesn't seem to be the right version
+# Don't bother building it. Rather, find the right deb. But forget eaf.
+
+# For goaccess
+# agi libmaxminddb-dev libmaxminddb0
+
+agi ssdeep
+
+pip install textual-markdown
+
+cargo install teetty
+
+mkdir -p ~/.local/bin
+curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
+chmod +x ~/.local/bin/rust-analyzer

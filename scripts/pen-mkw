@@ -37,6 +37,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -go) {
+        make_go=y
+        shift
+    }
+    ;;
+
     -pip) {
         make_pip=y
         shift
@@ -114,6 +120,17 @@ fi
 if printf -- "%s\n" "$fp" | grep -q -P '/\.cargo/'; then
     make_cargo=y
 fi
+
+if test "$make_go" = "y"; then
+IFS= read -r -d '' GOCODE <<HEREDOC
+# github author/repo may need adjustment
+test -f "\${GOPATH%%:*}/bin/up" || go install github.com/$bn/$bn@latest" &>/dev/null
+HEREDOC
+
+    printf -- "%s\n" "$GOCODE" | pen-mnm >> ./$scriptname
+fi
+
+# ----
 
 if test "$make_cargo" = "y"; then
 IFS= read -r -d '' CGCODE <<HEREDOC

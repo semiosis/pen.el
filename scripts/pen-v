@@ -24,7 +24,7 @@ extra_commands="silent! echom"
 ANSI=n
 bn="$(basename "$0")"
 case "$bn" in
-    avim|ansivim) {
+    *avim|*ansivim) {
         ANSI=y
     }
     ;;

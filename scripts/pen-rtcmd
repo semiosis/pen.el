@@ -81,6 +81,7 @@ fi
 exec 0</dev/null
 
 : ${CMD:="$(cmd "$@")"}
+: "${CMD:="cat | less -rS"}"
 
 printf -- "%s\n" "$CMD" | pen-ds -s rtcmd_init
 

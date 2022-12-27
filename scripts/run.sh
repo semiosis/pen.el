@@ -211,12 +211,6 @@ fi
 # Right-click isn't very well supported with nvc, so I have disabled it
 # ttyd -p 7681 nvc bash -l /root/.emacs.d/pen.el/scripts/newframe.sh &>/dev/null &
 
-# if test "$USE_NVC" = "y"; then
-#     set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(ignore-errors (disable-theme 'spacemacs-dark)))"
-# else
-#     set -- "$@" -e "(progn (get-buffer-create $(cmd-nice-posix "*scratch*"))(load-theme 'spacemacs-dark t))"
-# fi
-
 # # This should be 'pen' if on the host but 'emacs -nwemacsclient -a "" -t' if inside docker
 # butterfly.server.py \
 #     --login=False \

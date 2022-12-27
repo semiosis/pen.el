@@ -496,7 +496,7 @@ case "$fnspec" in
         # sp -e "(python-pytest-file \"test.py\")"
         # pen-sps python-eruntest
 
-        pen-sps nvt -pak mypython "$fn"
+        pen-sps nvt -pak pen-python "$fn"
         nvt -pak python-trace "$fn"
 
         exit 0
@@ -1337,7 +1337,7 @@ case "$fnspec" in
             fi
 
             # py e setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
-            mmypython setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
+            mpen-python setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
         fi
         exit 0
     }
@@ -1675,7 +1675,7 @@ case "$fnspec" in
         else
             set -xv
             it="$(get-interpreter-for-file "$fp")"
-            it=mypython
+            it=pen-python
             case "$it" in
                 python3|python3.5) {
                     it="python3.6"
@@ -2370,14 +2370,14 @@ case "$file_type" in
         else
             pybin="$(get-python-interp "$rp")"
             : ${pybin:="python$(vermin "$rp")"}
-            : ${pybin:="mypython"}
+            : ${pybin:="pen-python"}
             if test "$pybin" = "python3" ||
                 test "$pybin" = "python3.5" ||
                 test "$pybin" = "python3.6" ||
                 test "$pybin" = "python3.7"; then
                 # This is so ptpython works
                 # pybin=python3.8
-                pybin=mypython
+                pybin=pen-python
             fi
             "$pybin" "$rp" 2>&1
         fi

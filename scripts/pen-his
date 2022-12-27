@@ -48,8 +48,13 @@ colour_name_to_number() {
             # Check is valid or don't use
             c="$colour_name"
 
-            # to be safe
-            c=255
+            re='^[0-9]+$'
+            if ! [[ $c =~ $re ]] ; then
+                # echo "error: Not a number" >&2; exit 1
+                c=255
+            else
+                c="$c"
+            fi
         }
     esac
 

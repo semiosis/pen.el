@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# test -f "${GOPATH%%:*}/bin/up" || go get -u github.com/akavel/up
+test -f "${GOPATH%%:*}/bin/up" || go install github.com/akavel/up@latest
+
+${GOPATH%%:*}/bin/up "$@"

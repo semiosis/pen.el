@@ -1,5 +1,7 @@
 #!/bin/bash
 
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
 topic="$1"
 test -n "$topic" || exit 1
 shift

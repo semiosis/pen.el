@@ -47,7 +47,7 @@ export UPDATE
 
 search_with_googler() {
     if test "$USETOR" = "y"; then
-        oci my-torify mypython $MYGIT/jarun/googler/googler "$@"
+        oci my-torify pen-python $MYGIT/jarun/googler/googler "$@"
     else
         oci $MYGIT/jarun/googler/googler "$@"
     fi
