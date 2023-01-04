@@ -1,3 +1,5 @@
+;; suggest-funcs
+
 ;; This system is basically the way I structure things in the future
 ;; I must start creating and get very good at emacs lisp.
 
@@ -75,6 +77,8 @@
          ,(list (dff (chrome "https://www.binance.com/en/trade/DATA_ETH"))))
         (((pen-buffer-cron-lines))
          (crontab-guru))
+        ((lsp-lens--overlays)
+         (lsp-avy-lens))
         (((org-at-table-p))
          (fpvd-org-table-export
           efpvd-org-table-export))

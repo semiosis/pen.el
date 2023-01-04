@@ -139,7 +139,8 @@
 ;; Any way to combine these?
 (defset rust-mode-funcs (list
                          'rust-test
-                         'rustic-cargo-current-test))
+                         'rustic-cargo-current-test
+                         'lsp-avy-lens))
 
 (defset go-mode-funcs '())
 (defset clojure-mode-filters (list

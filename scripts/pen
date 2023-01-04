@@ -319,10 +319,18 @@ case "$sn" in
     }
     ;;
 
+    pen) {
+        sn=pen
+        PEN_USE_GUI=y
+        # Minimum for apostrophe is 2
+        # export PEN_N_DAEMONS=2
+    }
+    ;;
+
     pin) {
         sn=pen
         PEN_USE_GUI=n
-        no=y
+        : "${no:="y"}"
         # Minimum for apostrophe is 2
         export PEN_N_DAEMONS=2
     }
@@ -331,7 +339,7 @@ case "$sn" in
     pind) {
         sn=pen
         PEN_USE_GUI=n
-        no=y
+        : "${no:="y"}"
         PEN_USE_REMOTE_PATH=y
         export PEN_N_DAEMONS=2
     }
@@ -340,7 +348,7 @@ case "$sn" in
     pend) {
         sn=pen
         PEN_USE_GUI=y
-        no=y
+        : "${no:="y"}"
         PEN_USE_REMOTE_PATH=y
         export PEN_N_DAEMONS=2
     }

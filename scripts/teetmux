@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Similar:
+# tm readline-server
+
+# This should be similar to the teetty functionality.
+# But it's a little different in that it's always linewise.
+
+# And should be used in conjunction with mkrepl.
+# And by default it should provide the user with a repl using mkrepl.
+
+# By default it should just present the tmux terminal directly.
+# But it should also be capable of connecting to an existing tmux window.
+# And it should be capable of connecting to an existing tmux window without attaching.
+
+pen-tm readline-server
+
+"$@"

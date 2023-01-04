@@ -3,6 +3,9 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# Connect to it like a server.
+# mkrepl --in /tmp/stdin --out /tmp/stdout
+
 # update-rust 
 
 test -f $HOME/.cargo/bin/teetty || cargo install "teetty" &>/dev/null

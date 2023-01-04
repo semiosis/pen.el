@@ -1,0 +1,44 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -t) {
+        CALLER_PANE="$2"
+        shift
+        shift
+    }
+    ;;
+
+    --in) {
+        in="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${CALLER_PANE:="$(tmux neww -d -P -F "#{pane_id}" "$@")"}"
+
+(
+if test -p "$in"; then
+    (
+        while test -p "$in"; do
+            0</dev/null cat "$in"
+        done
+    )
+elif test -f "$in"; then
+    tail -f "$in"
+else
+    cat
+fi
+) | while IFS=$'\n' read -r line; do
+    # | unbuffer -p awk 1
+    tmux send-keys -t "$CALLER_PANE" -l "$line"
+    # awk 1 adds the required CM
+    tmux send-keys -t "$CALLER_PANE" "C-m"
+done

@@ -6,7 +6,13 @@ s=.*/semiosis/=/root/.emacs.d/host/=;
 HEREDOC
 
 normalise_paths() {
-    while IFS=$'\n' read -r line; do realpath "$line"; done
+    while IFS=$'\n' read -r line; do 
+        if test -e "$line"; then
+            realpath "$line";
+        else
+            echo "$line"
+        fi
+    done
 }
 
 if command -v yq &>/dev/null; then

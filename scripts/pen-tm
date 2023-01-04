@@ -1466,6 +1466,48 @@ case "$f" in
     }
     ;;
 
+    readline-server) {
+        # vim +/"s  tm readline-server" "$SCRIPTS/sh-tmux"
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -s) {
+                CALLER_PANE="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if test "$#" -eq 0; then
+            set -- "$@" zsh
+        fi
+
+        : "${CALLER_PANE:="$(tmux neww -d -P -F "#{pane_id}" "$@")"}"
+
+        in="$(pen-tf stdin_ txt)"
+        out="$(pen-tf stdout_ txt)"
+
+        if test -e "$in"; then
+            # I should use
+            {
+                cmd-nice tm-wrlsend --in "$in" -t "$CALLER_PANE" 
+                echo
+                cmd-nice tmux pipe-pane -t "$CALLER_PANE" "cat >> $out"
+                echo
+                cmd-nice mkrepl --in "$in" --out "$out"
+                echo
+                cmd-nice tmux2repl --in "$in" --out "$out"
+                echo
+            } | sps v
+            # unbuffer sps cmd-nice tm-wrlsend --in "$in" -t "$CALLER_PANE"
+            # tm-wrlsend --in /tmp/stdin -t "%612"
+        fi
+    }
+    ;;
+
     type) {
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             "") { shift; }; ;;
