@@ -1108,3 +1108,6 @@ chmod +x ~/.local/bin/rust-analyzer
 playwright install
 pip install epc
 pip install git+https://github.com/mmabrouk/chatgpt-wrapper
+
+# Used to display man pages for go files
+go get -u github.com/appliedgocode/goman
