@@ -1,3 +1,6 @@
+(require 'epc)
+(defset python-interpreter "/usr/bin/python")
+
 (use-package chatgpt
   :straight (:host github :repo "mullikine/ChatGPT-pen.el" :files ("dist" "*.el"))
   :init
