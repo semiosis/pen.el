@@ -1,5 +1,7 @@
 (require 'epc)
-(defset python-interpreter "/usr/bin/python")
+
+;; This needs to point to the script
+(defset python-interpreter (snc "which python"))
 
 (use-package chatgpt
   :straight (:host github :repo "mullikine/ChatGPT-pen.el" :files ("dist" "*.el"))

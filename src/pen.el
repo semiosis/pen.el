@@ -2197,6 +2197,7 @@ May use to generate code from comments."
 (require 'pen-haskell)
 
 (require 'pen-browser)
+(require 'pen-chatgpt)
 (require 'pen-custom-conf)
 
 (if (inside-docker-p)

@@ -1105,9 +1105,10 @@ curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust
 chmod +x ~/.local/bin/rust-analyzer
 
 # http://github.com/joshcho/ChatGPT.el/blob/main/README.org
-playwright install
+# https://github.com/mullikine/ChatGPT-pen.el
 pip install epc
 pip install git+https://github.com/mmabrouk/chatgpt-wrapper
+playwright install
 
 # Used to display man pages for go files
-go get -u github.com/appliedgocode/goman@latest
+go install github.com/appliedgocode/goman@latest
