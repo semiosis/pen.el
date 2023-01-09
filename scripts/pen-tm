@@ -2630,7 +2630,7 @@ case "$f" in
             full_lines="$(wc -l "$np" | awk '{print $1}')"
             final_x=$x
             final_y="$(( y + 1 ))"
-            pane_id="$(tmux neww -t "$CALLER_TARGET" -F "#{pane_id}" -P -n capture "stty stop undef; stty start undef; TTY= GOTO_COLUMN=$final_x GOTO_LINE=$final_y $EDITOR \"$np\"")"
+            pane_id="$(tmux neww -t "$CALLER_TARGET:" -F "#{pane_id}" -P -n capture "stty stop undef; stty start undef; TTY= GOTO_COLUMN=$final_x GOTO_LINE=$final_y $EDITOR \"$np\"")"
 
             if test $DO_SEND_KEYS = "pen-f" && test "$EDITOR" = "pen-v"; then
                 tmux send-keys -t "$pane_id" "C-k"

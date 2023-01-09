@@ -1634,6 +1634,10 @@ when s is a string, set the clipboard to s"
   ;; (message (lm-define term t "general knowledge"))
   )
 
+(defun pen-define-general-knowledge-immediate ()
+  (interactive)
+  (pen-define-general-knowledge (pen-thing-at-point)))
+
 (defun pen-define-detectlang (term)
   (interactive (list (pen-thing-at-point-ask "word" t)))
   (pen-add-to-glossary term nil nil (pen-detect-language)))

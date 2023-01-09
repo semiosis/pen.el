@@ -79,6 +79,7 @@ When FACELESS is non-nil, do not return matches where faces have been applied."
   (interactive)
   (if (and
        (derived-mode-p 'markdown-mode)
+       (get-path-nocreate)
        (f-file-p (get-path-nocreate)))
       (nw-term (concat "glow " (pen-q (get-path-nocreate)) " | pen-mnm | vs"))
     (message "not a markdown mode")))

@@ -2046,12 +2046,12 @@ IFS= read -r -d '' shcode <<HEREDOC
         $(test -n "$GLOSSARIES_DIR" && printf -- "%s " -v "$GLOSSARIES_DIR:/root/.emacs.d/host/glossaries" ) \
         $(test -n "$OPENAI_API_EL_DIR" && printf -- "%s " -v "$OPENAI_API_EL_DIR:/root/.emacs.d/host/openai-api.el" ) \
         $(
-        if command -v yq &>/dev/null; then
+        if command -v yq &>/dev/null && test -f ~/.pen/pen.yaml; then
             cat ~/.pen/pen.yaml | yq -r ".volumes[]" | awk 1 | while IFS=$'\n' read -r vol; do
             vol="$(realpath "$vol")"
             test -n "$vol" && printf -- "%s " -v "$vol:/volumes/$vol" 
             done
-        elif test -f ~/.pen/volumes.txt; then
+        elif test -f ~/.pen/volumes.txt && test -f cat ~/.pen/volumes.txt; then
             cat ~/.pen/volumes.txt | awk 1 | while IFS=$'\n' read -r vol; do
             vol="$(realpath "$vol")"
             test -n "$vol" && printf -- "%s " -v "$vol:/volumes/$vol" 

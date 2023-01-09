@@ -75,6 +75,7 @@
             ("*flycheck-error-list-mode*" :ignore nil :select t :same t)
             ("*Bluetooth device info*" :ignore nil :select t :same t)
             ("*kubernetes logs*" :ignore nil :select t :same t)
+            ("*ChatGPT*" :ignore nil :select t :same t)
             ("*slime-description*" :ignore nil :select t :same nil)
             ;; ("*Free keys*" :ignore nil :select nil :same nil :align pen--shackle-sensible-alignment)
             (hackernews-mode :ignore nil :select t :same t)

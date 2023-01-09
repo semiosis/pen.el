@@ -597,6 +597,7 @@
   (define-key pen-map (kbd "H-^") 'pen-transform)
   (define-key pen-map (kbd "<S-f9> Y") 'pen-add-to-glossary)
   (define-key pen-map (kbd "<S-f9> G") 'pen-define-general-knowledge)
+  (define-key pen-map (kbd "M-8 M-9") 'pen-define-general-knowledge-immediate)
   (define-key pen-map (kbd "<S-f9> L") 'pen-define-detectlang)
   (define-key pen-map (kbd "<S-f9> T") 'pen-define-word-for-topic)
   (define-key pen-map (kbd "<f12>") nil)
