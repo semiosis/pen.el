@@ -16,7 +16,7 @@
 
 ;; nadvice - proc is the original function, passed in. do not modify
 ;; nadvice - proc is the original function, passed in. do not modify
-(defun org-open-at-point-around-advice (proc &rest args)  
+(defun org-open-at-point-around-advice (proc &rest args)
   (try
    (let ((res (apply proc args)))
      res)
