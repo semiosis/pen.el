@@ -37,9 +37,10 @@
       '((sequence "TODO" "|" "DONE" "DISCARD" "FAILED")))
 
 (defvar docsdir (f-join penconfdir "documents"))
-(defvar agendadir (f-join penconfdir "documents/agenda"))
 (if (not (f-directory-p docsdir))
     (f-mkdir docsdir))
+
+(defvar agendadir (f-join penconfdir "documents/agenda"))
 (if (not (f-directory-p agendadir))
     (f-mkdir agendadir))
 
