@@ -3,6 +3,7 @@ export TTY
 
 # export PEN_PROXY=localhost:9837 PEN_LM_COMPLETE=openai-complete.sh; shx pen-test-lm-complete
 
+export PEN_MODEL=davinci
 export PEN_LM_COMMAND="openai-complete.sh"
 export PEN_UPDATE=""
 export PEN_PROXY_REPONSE=""
@@ -36,4 +37,4 @@ export PEN_GEN_DATE="01.02.22"
 : "${PEN_GEN_DIR:="/root/.pen/results/results_1643707250.073039_01.02.22_163df8e3-443c-48fb-852f-5451027bc96b"}"
 export PEN_GEN_DIR
 
-lm-complete
+lm-complete -d

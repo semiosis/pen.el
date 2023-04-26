@@ -83,7 +83,7 @@
                 pen-doc-thing-at-point
                 cider-doc-thing-at-point
                 pen-docs-for-thing-given-screen)
-        
+
         ;; Project syms (not general syms)
         :fz-sym '(clojure-fz-symbol
                   ;; clojure-go-to-symbol
@@ -101,7 +101,7 @@
 
         ;; mx
         :runfunc '(pen-cider-run-function)
-        
+
         :test '(cider-test-run-test)
         :testall '(cider-test-run-ns-tests)
         :testreport '(cider-test-show-report)
@@ -356,6 +356,7 @@
                 haskell-hdc-thing
                 hoogle
                 pen-docs-for-thing-given-screen)
+        :references '(lsp-ui-peek-find-references lsp-find-references pen-counsel-ag-thing-at-point)
         :godef '(lsp-find-definition)
         :nexterr '()
         :preverr '()
