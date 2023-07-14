@@ -1017,6 +1017,33 @@ cd "$HOME/repos"
 git clone "http://github.com/mullikine/sh-source"
 )
 
+agi asciidoc
+(
+cd "$HOME/repos"
+git clone "https://github.com/git/git"
+cd git
+make configure
+./configure --prefix=/usr
+make all doc
+
+# make install install-doc install-html
+# faster git:
+
+make prefix=/usr profile
+make prefix=/usr PROFILE=BUILD install
+)
+
+(
+# cd "$HOME/programs"
+# wget "https://github.com/helix-editor/helix/releases/download/23.05/helix-23.05-x86_64-linux.tar.xz"
+# tar Jxf helix-23.05-x86_64-linux.tar.xz 
+cd "$HOME/repos"
+# update-rust
+git clone "https://github.com/helix-editor/helix"
+cd helix
+cargo install --path helix-term --locked
+)
+
 e ia quelpa quelpa-use-package
 
 (

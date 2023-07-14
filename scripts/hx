@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# export PAGER=less
+# export EDITOR=vim
+
+# (
+# cd ~/.config/helix
+# ln -sf $MYGIT/helix-editor/helix/runtime/
+# )
+# export HELIX_RUNTIME=$MYGIT/helix-editor/helix/runtime/
+
+# $HOME/programs/helix-23.05-x86_64-linux/hx "$@"
+$HOME/.cargo/bin/hx "$@"
