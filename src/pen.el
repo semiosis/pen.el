@@ -225,6 +225,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-eldoc)
 (require 'pen-json)
 (require 'pen-minibuffer)
+(require 'pen-load-manually)
 
 ;; Don't use corfu because it's incompatible with the terminal, as it uses overlay frames
 ;; (require 'pen-corfu)
