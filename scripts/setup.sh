@@ -1166,3 +1166,9 @@ agi xiphos xiphos-data
 cd "/root/.emacs.d/manual-packages/"
 git clone "https://github.com/Zacalot/bible-mode"
 )
+
+(
+cd "$HOME/repos"
+git clone "http://github.com/g4jc/diatheke-tui"
+cd xiphos
+)

@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# diatheke-tui uses cacaview
+
+feh "$@"
+
+# CMD="$(cmd "$@")"
+# : ${CMD:="$(cmd "$@")"}
+# 
+# nw -E "unbuffer timg $CMD | less -rS"
