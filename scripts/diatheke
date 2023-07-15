@@ -5,4 +5,6 @@ export TTY
 
 # $SCRIPTS/diatheke-list-bibles
 
+test -f /usr/bin/diatheke || agi diatheke &>/dev/null
+
 /usr/bin/diatheke "$@"
