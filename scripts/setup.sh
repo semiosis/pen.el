@@ -1149,3 +1149,14 @@ cd xiphos
 )
 
 agi xiphos xiphos-data
+
+# For latest tmux, which is needed for helix (hx) to display truecolor, which is not that important
+# (
+# cd "$HOME/repos"
+# git clone "https://github.com/libevent/libevent"
+# cd libevent
+# mkdir build && cd build
+# cmake ..     # Default to Unix Makefiles.
+# make
+# make install
+# )
