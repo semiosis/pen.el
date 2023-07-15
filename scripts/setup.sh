@@ -1160,3 +1160,9 @@ agi xiphos xiphos-data
 # make
 # make install
 # )
+
+
+(
+cd "/root/.emacs.d/manual-packages/"
+git clone "https://github.com/Zacalot/bible-mode"
+)
