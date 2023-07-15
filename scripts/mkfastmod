@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# E.g. for xiphos, bible-mode etc. make the index for searching
+# mkfastmod NASB
+
+/usr/bin/mkfastmod "$@"
