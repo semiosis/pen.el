@@ -11,6 +11,15 @@ export TTY
 # ln -sf $MYGIT/helix-editor/helix/runtime/
 # )
 # export HELIX_RUNTIME=$MYGIT/helix-editor/helix/runtime/
+export HELIX_RUNTIME=~/repos/helix/runtime
+
+# truecolour support is not available in pen
+# because I need a new tmux version
 
 # $HOME/programs/helix-23.05-x86_64-linux/hx "$@"
+export TERM=screen-256color
+# export TERM=screen-2color
+# nvc $HOME/.cargo/bin/hx "$@"
+# $HOME/.cargo/bin/hx -c "$HOME/.config/helix/config.toml" "$@"
+# $HOME/.cargo/bin/hx -c "$HOME/.config/helix/config.toml" "$@"
 $HOME/.cargo/bin/hx "$@"

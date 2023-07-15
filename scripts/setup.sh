@@ -1025,12 +1025,7 @@ cd git
 make configure
 ./configure --prefix=/usr
 make all doc
-
-# make install install-doc install-html
-# faster git:
-
-make prefix=/usr profile
-make prefix=/usr PROFILE=BUILD install
+make install install-doc install-html
 )
 
 (
@@ -1042,6 +1037,8 @@ cd "$HOME/repos"
 git clone "https://github.com/helix-editor/helix"
 cd helix
 cargo install --path helix-term --locked
+cd /root/.config/helix
+ln -sf /root/repos/helix/runtime
 )
 
 e ia quelpa quelpa-use-package
