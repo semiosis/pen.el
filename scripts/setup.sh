@@ -1141,3 +1141,11 @@ go install github.com/appliedgocode/goman@latest
 agi software-properties-common
 # add-apt-repository ppa:pkgcrosswire/ppa
 # add-apt-repository --remove ppa:pkgcrosswire/ppa
+
+(
+cd "$HOME/repos"
+git clone "https://github.com/crosswire/xiphos"
+cd xiphos
+)
+
+agi xiphos xiphos-data
