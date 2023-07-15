@@ -1136,3 +1136,8 @@ playwright install
 
 # Used to display man pages for go files
 go install github.com/appliedgocode/goman@latest
+
+# For add-apt-repository
+agi software-properties-common
+# add-apt-repository ppa:pkgcrosswire/ppa
+# add-apt-repository --remove ppa:pkgcrosswire/ppa
