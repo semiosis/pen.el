@@ -1172,3 +1172,5 @@ cd "$HOME/repos"
 git clone "http://github.com/g4jc/diatheke-tui"
 cd xiphos
 )
+
+mkfastmod NASB

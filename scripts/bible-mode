@@ -4,4 +4,8 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-nvt sp -ic bible-open
+if docker-running-p; then
+    nvt sp -ic bible-open
+else
+    nvt sp -ic bible-open
+fi
