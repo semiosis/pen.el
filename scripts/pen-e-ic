@@ -47,6 +47,11 @@ case "$sn" in
     }
     ;;
 
+    eftp) {
+        ic=ftp
+    }
+    ;;
+
     ehtop) {
         ic=htop
     }
