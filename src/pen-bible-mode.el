@@ -53,7 +53,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
     (string-match ":[0-9]?[0-9]?[0-9]?" text)
     (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
     (setq book (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))
-    (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter)) (string-to-number verse))))
+    (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter)) (string-to-number verse) bible-mode-book-module)))
 
 (defun bible-mode-copy-link (text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
