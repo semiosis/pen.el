@@ -2002,7 +2002,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defun pen-tmux-edit (&optional editor window_type)
   "Simple function that allows us to open the underlying file of a buffer in an external program."
-  (interactive (list "pen-v" "spv"))
+
+   (interactive (list "pen-v" "spv"))
   (if (not editor)
       (setq editor "pen-v"))
 
@@ -2049,8 +2050,15 @@ This function accepts any number of ARGUMENTS, but ignores them."
 (defun pen-tm-edit-v-in-nw ()
   "Opens pen-v in new window for buffer contents"
   (interactive)
-  (pen-tmux-edit "pen-v" "nw"))
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (pen-tm-edit-hx-in-nw)
+    (pen-tmux-edit "pen-v" "nw")))
 (define-key pen-map (kbd "C-c o") #'pen-tm-edit-v-in-nw)
+
+(defun pen-tm-edit-hx-in-nw ()
+  "Opens hx in new window for buffer contents"
+  (interactive)
+  (pen-tmux-edit "hx" "nw"))
 
 (defun pen-tm-edit-pet-v-in-nw ()
   "Opens pen-v in new window for buffer contents"
