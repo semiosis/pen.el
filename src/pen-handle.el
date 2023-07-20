@@ -243,7 +243,7 @@
         :nextdef '(pen-prog-next-def
                    lispy-flow))
 
- (handle '(bible-mode)
+(handle '(bible-mode bible-search-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list)
         :formatters '(lsp-format-buffer)

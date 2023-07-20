@@ -220,6 +220,7 @@ Be mindful of quoting arguments correctly."
 (pen-require 'pen-selected)
 (if (inside-docker-p)
     (require 'pen-cua))
+(require 'pen-ftp)
 (require 'pen-tramp)
 (require 'pen-gpg)
 (require 'pen-eldoc)

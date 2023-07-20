@@ -157,6 +157,7 @@
             ;; ("*Python*" :ignore t :select nil :same nil)
             ("*Python*" :ignore nil :select t :same t)
             ("*eww bookmarks*" :select nil :same t)
+            (ftp-mode :select t :same t)
             (eww-bookmark-mode :select nil :same t)
             (python-pytest-mode :select nil :same t)
             (snippet-mode :select t :same t)

@@ -172,6 +172,11 @@ PATH is the sexp to evaluate, as a string."
     (pen-delete-selected-text)
     (insert result)))
 
+(org-add-link-type "bible" 'follow-bible-link)
+(defun follow-bible-link (query)
+  "Run `bible' with QUERY as argument."
+  (bible-mode-lookup query))
+
 (org-add-link-type "v" 'mullikine/follow-v-link)
 (defun mullikine/follow-v-link (pattern)
   "Run v `pattern'."
