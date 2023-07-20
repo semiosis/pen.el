@@ -1,3 +1,24 @@
+(defun bible-open(&optional global-chapter verse module)
+  "Creates and opens a `bible-mode' buffer"
+  (interactive)
+  (let
+      (
+       (buf (get-buffer-create (generate-new-buffer-name "*bible*"))))
+    (set-buffer buf)
+    (bible-mode)
+    (if module
+        (setq bible-mode-book-module module))
+    (bible-mode--set-global-chapter (or global-chapter 1) verse)
+    (set-window-buffer (get-buffer-window (current-buffer)) buf)))
+
+(defun bible-open-version (version)
+  (interactive (list (completing-read "Module: " (bible-mode--list-biblical-modules))))
+  (if (not version)
+      (setq version "NASB"))
+
+  (let ((bible-mode-book-module version))
+    (bible-open nil nil version)))
+
 (defun bible-mode-lookup (text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."

@@ -10,7 +10,8 @@ else
     if docker-running-p; then
         nvt sp -ic bible-open
     else
-        sp -ic bible-open
+        # sp -ic bible-open
+        sp -cip bible-open =nil =nil NASB
     fi
 fi
 
