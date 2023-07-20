@@ -97,9 +97,12 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (setq mode-name (concat "Bible (" bible-mode-book-module ")"))
   (setq buffer-read-only t)
   (goto-char (point-min))
+  ;; (tv (concat ":" (number-to-string verse) ": "))
   (if verse
       (progn
-        (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ": "))) (buffer-string)))
+        ;; Can't use ": " because sometimes like with Psalms 40:1
+        ;; there is no space
+        (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
         (beginning-of-line))))
 
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
