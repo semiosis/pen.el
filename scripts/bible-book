@@ -30,4 +30,12 @@ esac; done
 
 : "${version:="nasb"}"
 
-"$version" "$book" "$@"
+query="$@"
+
+if test -n "$query"; then
+    if ! printf -- "%s\n" "$query" | grep -q -P ':'; then
+        query="$query:1"
+    fi
+fi
+
+"$version" "$book" "$query"

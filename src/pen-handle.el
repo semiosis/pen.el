@@ -381,6 +381,7 @@
         :repls '(dante-repl
                  haskell-repl)
         :docs '(pen-esp-docs-for-thing-if-prefix
+                pen-lsp-get-hover-docs
                 haskell-hdc-thing
                 hoogle
                 pen-docs-for-thing-given-screen)

@@ -443,9 +443,18 @@ We don't extract the string that `lps-line' is already displaying."
             "")))
     (if (and docs (not (string-empty-p docs))) (if (called-interactively-p 'interactive)
                                                    ;; (tvd docs)
-                                                   (new-buffer-from-string
-                                                    docs
-                                                    nil 'text-mode)
+
+                                                   (cond
+                                                    ;; If it looks like markdown, then render markdown
+                                                    ((or ;; (eq major-mode 'haskell-mode)
+                                                      (re-match-p "```" docs))
+                                                     (new-buffer-from-string
+                                                      docs
+                                                      nil 'markdown-mode))
+                                                    (t
+                                                     (new-buffer-from-string
+                                                      docs
+                                                      nil 'text-mode)))
                                                  docs)
       (error "No docs"))))
 
