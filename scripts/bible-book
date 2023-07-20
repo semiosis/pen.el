@@ -16,4 +16,18 @@ case "$sn" in
         book="$sn"
 esac
 
-nasb "$book" "$@"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -v) {
+        version="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${version:="nasb"}"
+
+"$version" "$book" "$@"
