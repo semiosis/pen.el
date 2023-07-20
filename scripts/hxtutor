@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+x -sh hx -e scratch -s ":tutor" -c m -i

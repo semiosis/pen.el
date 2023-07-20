@@ -1,0 +1,71 @@
+#!/bin/bash
+export TTY
+
+# https://docs.helix-editor.com/keymap.html
+# https://docs.helix-editor.com/remapping.html
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -line) {
+        line="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -col) {
+        col="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -norm) {
+        norm="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# export PAGER=less
+# export EDITOR=vim
+
+# (
+# cd ~/.config/helix
+# ln -sf $MYGIT/helix-editor/helix/runtime/
+# )
+# export HELIX_RUNTIME=$MYGIT/helix-editor/helix/runtime/
+export HELIX_RUNTIME=~/repos/helix/runtime
+
+# truecolour support is not available in pen
+# because I need a new tmux version
+
+# $HOME/programs/helix-23.05-x86_64-linux/hx "$@"
+export TERM=screen-256color
+# export TERM=screen-2color
+
+# hx doesn't respect TERM
+# nvc -2 $HOME/.cargo/bin/hx "$@"
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+if test -n "$line"; then
+    if test -n "$col"; then
+        col="$((col - 1))"
+        x -shE "$HOME/.cargo/bin/hx $CMD" -e NOR -s ":goto $line" -c m -s "$(pen-s rs $col l)" -s "$norm" -i
+    else
+        x -shE "$HOME/.cargo/bin/hx $CMD" -e NOR -s ":goto $line" -c m -s "$norm" -i
+    fi
+else
+    x -shE "$HOME/.cargo/bin/hx $CMD" -e NOR -s "$norm" -i
+fi
+
+# $HOME/.cargo/bin/hx -c "$HOME/.config/helix/config.toml" "$@"
+# $HOME/.cargo/bin/hx -c "$HOME/.config/helix/config.toml" "$@"
+# $HOME/.cargo/bin/hx "$@"
