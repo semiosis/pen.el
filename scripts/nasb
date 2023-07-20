@@ -3,4 +3,9 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-sp -cip bible-open =nil =nil NASB "$@"
+if test "$1"; then
+    ref="$@"
+    sp -cip bible-open =nil =nil NASB "$ref"
+else
+    sp -cip bible-open =nil =nil NASB
+fi
