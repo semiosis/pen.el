@@ -179,9 +179,17 @@ PATH is the sexp to evaluate, as a string."
   ;; The easiest way is to open up with tramp,
   ;; and then switch to the inferior ftp server.
 
+  (if (not (re-match-p "@" query))
+      (setq query (concat "Anonymous@" query)))
+
+  (if (not (re-match-p ":" query))
+      (setq query (concat query ":/")))
+
   (let ((bufname (concat "*ftp " (car (s-split ":" query)) "*")))
     (find-file (concat "/ftp:" query))
-    (switch-to-buffer bufname))
+    (let ((cbuf (current-buffer)))
+      (split-window-no-error)
+      (switch-to-buffer bufname)))
 
   ;; "buffer-name": "*ftp Anonymous@ftp.crosswire.org*"
   ;; (ange-ftp-smart-login)

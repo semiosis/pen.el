@@ -1150,6 +1150,8 @@ cd xiphos
 
 agi xiphos xiphos-data
 
+agi ftp
+
 # For latest tmux, which is needed for helix (hx) to display truecolor, which is not that important
 # (
 # cd "$HOME/repos"

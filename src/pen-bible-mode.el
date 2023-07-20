@@ -67,4 +67,26 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
 
+(define-key bible-mode-map "f" 'bible-mode-next-chapter)
+(define-key bible-mode-map "b" 'bible-mode-previous-chapter)
+(define-key bible-mode-map "g" 'bible-mode-select-book)
+(define-key bible-mode-map "c" 'bible-mode-select-chapter)
+(define-key bible-mode-map "s" 'bible-search)
+(define-key bible-mode-map "m" 'bible-mode-select-module)
+(define-key bible-mode-map "x" 'bible-mode-split-display)
+
+(define-key bible-search-mode-map "s" 'bible-search)
+(define-key bible-search-mode-map "w" 'bible-mode-toggle-word-study)
+(define-key bible-search-mode-map (kbd "RET") 'bible-search-mode-follow-verse)
+
+(define-key bible-mode-greek-keymap (kbd "RET") (lambda ()
+                                                  (interactive)
+                                                  (bible-term-greek (replace-regexp-in-string "[^0-9]*" "" (thing-at-point 'word t)))))
+
+(define-key bible-mode-lemma-keymap (kbd "RET") (lambda ()(interactive)))
+
+(define-key bible-mode-hebrew-keymap (kbd "RET") (lambda ()
+                                                   (interactive)
+                                                   (bible-term-hebrew (replace-regexp-in-string "[a-z]+" "" (thing-at-point 'word t)))))
+
 (provide 'pen-bible-mode)
