@@ -39,7 +39,19 @@
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (thing-at-point 'line t)))
-  (setq text (concat text ":"))
+
+  (cond
+   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
+    nil)
+   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?" text)
+    (setq text (concat (match-string 0 text) ":")))
+   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:" text)
+    (setq text (concat text "1:")))
+   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?" text)
+    (setq text (concat text ":1:"))))
+
+  ;; (tv text)
+
   (let* (
          book
          chapter
@@ -53,7 +65,10 @@ creating a new `bible-mode' buffer positioned at the specified verse."
     (string-match ":[0-9]?[0-9]?[0-9]?" text)
     (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
     (setq book (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))
-    (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter)) (string-to-number verse) bible-mode-book-module)))
+
+    (tryelse
+     (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter)) (string-to-number verse) bible-mode-book-module)
+     (error "Error. Book not found?"))))
 
 (defun bible-mode-copy-link (text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
