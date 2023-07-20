@@ -40,6 +40,8 @@
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (thing-at-point 'line t)))
 
+  ;; (mapcar 'car bible-mode-book-chapters)
+
   (cond
    ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
     nil)
@@ -48,7 +50,11 @@ creating a new `bible-mode' buffer positioned at the specified verse."
    ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:" text)
     (setq text (concat text "1:")))
    ((re-match-p ".+ [0-9]?[0-9]?[0-9]?" text)
-    (setq text (concat text ":1:"))))
+    (setq text (concat text ":1:")))
+   ((re-match-p ".+ " text)
+    (setq text (concat text "1:1:")))
+   ((re-match-p ".+" text)
+    (setq text (concat text " 1:1:"))))
 
   ;; (tv text)
 
