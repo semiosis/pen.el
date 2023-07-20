@@ -11,7 +11,7 @@ else
         nvt sp -ic bible-open
     else
         # sp -ic bible-open
-        sp -cip bible-open =nil =nil NASB
+        sp -cip bible-open =nil =nil NASB "$@"
     fi
 fi
 
