@@ -1,6 +1,1 @@
-#!/bin/bash
-export TTY
-
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
-
-sp -cip bible-open =nil =nil KJV "$@"
+nasb

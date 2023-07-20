@@ -83,9 +83,10 @@
     ;; LSP complete is more important than tabnine
     company-lsp
     
-    ;; Continue using tabnine -- it's really good, actually.
+    ;; Continue using tabnine? -- it's really good, actually.
     ;; But dodgy.
-    company-tabnine
+    ;; Disabled 20.07.23
+    ;; company-tabnine
 
     ;; company-yasnippet
     

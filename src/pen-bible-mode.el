@@ -1,4 +1,4 @@
-(defun bible-open(&optional global-chapter verse module)
+(defun bible-open(&optional global-chapter verse module ref)
   "Creates and opens a `bible-mode' buffer"
   (interactive)
   (let
@@ -9,7 +9,11 @@
     (if module
         (setq bible-mode-book-module module))
     (bible-mode--set-global-chapter (or global-chapter 1) verse)
-    (set-window-buffer (get-buffer-window (current-buffer)) buf)))
+    (set-window-buffer (get-buffer-window (current-buffer)) buf)
+
+    (if (and ref
+             (sor ref))
+        (bible-mode-lookup ref))))
 
 (defun bible-open-version (version)
   (interactive (list (completing-read "Module: " (bible-mode--list-biblical-modules))))
@@ -18,6 +22,18 @@
 
   (let ((bible-mode-book-module version))
     (bible-open nil nil version)))
+
+(defun nasb ()
+  (interactive)
+  (bible-open-version "NASB"))
+
+(defun kjv ()
+  (interactive)
+  (bible-open-version "KJV"))
+
+(defun bsb ()
+  (interactive)
+  (bible-open-version "engbsb2020eb"))
 
 (defun bible-mode-lookup (text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
@@ -64,6 +80,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
 (defun bible-mode--display(&optional verse)
   "Renders text for `bible-mode'"
+  (interactive)
   (setq buffer-read-only nil)
   (erase-buffer)
 
@@ -88,9 +105,10 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
 
-(define-key bible-mode-map "f" 'bible-mode-next-chapter)
-(define-key bible-mode-map "b" 'bible-mode-previous-chapter)
-(define-key bible-mode-map "g" 'bible-mode-select-book)
+(define-key bible-mode-map "n" 'bible-mode-next-chapter)
+(define-key bible-mode-map "p" 'bible-mode-previous-chapter)
+(define-key bible-mode-map "b" 'bible-mode-select-book)
+(define-key bible-mode-map "g" 'bible-mode--display)
 (define-key bible-mode-map "c" 'bible-mode-select-chapter)
 (define-key bible-mode-map "s" 'bible-search)
 (define-key bible-mode-map "m" 'bible-mode-select-module)
@@ -109,5 +127,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 (define-key bible-mode-hebrew-keymap (kbd "RET") (lambda ()
                                                    (interactive)
                                                    (bible-term-hebrew (replace-regexp-in-string "[a-z]+" "" (thing-at-point 'word t)))))
+
+(define-key global-map (kbd "H-v") 'nasb)
+(define-key global-map (kbd "v") 'bible-mode-select-module)
 
 (provide 'pen-bible-mode)

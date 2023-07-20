@@ -3,9 +3,33 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+sn="$(basename -- "$0")"
+
+case "$sn" in
+    nasb) {
+        module=NASB
+    }
+    ;;
+
+    kjv) {
+        module=KJV
+    }
+    ;;
+
+    bsb) {
+        module=engbsb2020eb
+    }
+    ;;
+
+    *) {
+        module="$sn"
+    }
+    ;;
+esac
+
 if test "$1"; then
     ref="$@"
-    sp -cip bible-open =nil =nil NASB "$ref"
+    sp -cip bible-open =nil =nil "$module" "$ref"
 else
-    sp -cip bible-open =nil =nil NASB
+    sp -cip bible-open =nil =nil "$module"
 fi

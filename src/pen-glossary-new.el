@@ -85,6 +85,10 @@
            (pen-istr-p "france")
            (istr-match-p "French" (get-path nil t)))
        ,(f-join pen-glossaries-directory "french.txt"))
+      ((or (pen-istr-p "Genesis")
+           (pen-istr-p "Exodus")
+           (istr-match-p "Bible" (get-path nil t)))
+       ,(f-join pen-glossaries-directory "bible.txt"))
       ((pen-istr-p "fasttext")
        ,(f-join pen-glossaries-directory "fasttext.txt"))
       ((pen-istr-p "tensorflow")
@@ -336,15 +340,24 @@
 
    ;; The final eval means that I can place results in the tuples such as
    ;; (pen-get-mode-glossary-file), and they will be evaluated later.
-   (mapcar
-    'eval
-    (-distinct
-     (-flatten
-      (cl-loop for tup in
-               glossary-predicate-tuples
-               collect
-               (if (eval (car tup))
-                   (cdr tup))))))))
+   ;; (mapcar
+   ;;  'eval
+   ;;  (-distinct
+   ;;   (-flatten
+   ;;    (cl-loop for tup in
+   ;;             glossary-predicate-tuples
+   ;;             collect
+   ;;             (if (eval (car tup))
+   ;;                 (cdr tup))))))
+
+   ;; I had problems with it in bible-mode
+   (-distinct
+    (-flatten
+     (cl-loop for tup in
+              glossary-predicate-tuples
+              collect
+              (if (eval (car tup))
+                  (cdr tup)))))))
 
 (defun pen-glossary-add-relevant-glossaries (&optional no-draw)
   (interactive)
