@@ -129,6 +129,6 @@ creating a new `bible-mode' buffer positioned at the specified verse."
                                                    (bible-term-hebrew (replace-regexp-in-string "[a-z]+" "" (thing-at-point 'word t)))))
 
 (define-key global-map (kbd "H-v") 'nasb)
-(define-key global-map (kbd "v") 'bible-mode-select-module)
+(define-key bible-mode-map (kbd "v") 'bible-mode-select-module)
 
 (provide 'pen-bible-mode)

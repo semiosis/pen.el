@@ -1,1 +1,41 @@
-bible-mode
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+case "$sn" in
+    ebible) {
+        # default
+        module=NASB
+    }
+    ;;
+
+    nasb) {
+        module=NASB
+    }
+    ;;
+
+    kjv) {
+        module=KJV
+    }
+    ;;
+
+    bsb) {
+        module=engbsb2020eb
+    }
+    ;;
+
+    *) {
+        module="$sn"
+    }
+    ;;
+esac
+
+if test "$1"; then
+    ref="$@"
+    sp -cip bible-open =nil =nil "$module" "$ref"
+else
+    sp -cip bible-open =nil =nil "$module"
+fi
