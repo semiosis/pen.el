@@ -172,6 +172,21 @@ PATH is the sexp to evaluate, as a string."
     (pen-delete-selected-text)
     (insert result)))
 
+(org-add-link-type "ftp" 'follow-ftp-link)
+(defun follow-ftp-link (query)
+  "Run `ftp' with QUERY as argument."
+
+  ;; The easiest way is to open up with tramp,
+  ;; and then switch to the inferior ftp server.
+
+  (let ((bufname (concat "*ftp " (car (s-split ":" query)) "*")))
+    (find-file (concat "/ftp:" query))
+    (switch-to-buffer bufname))
+
+  ;; "buffer-name": "*ftp Anonymous@ftp.crosswire.org*"
+  ;; (ange-ftp-smart-login)
+  )
+
 (org-add-link-type "bible" 'follow-bible-link)
 (defun follow-bible-link (query)
   "Run `bible' with QUERY as argument."
