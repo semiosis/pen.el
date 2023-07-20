@@ -8,6 +8,21 @@ export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    +*:*) {
+        line="$(p "$opt" | mcut -d'[+:]' -f2)"
+        col="$(p "$opt" | mcut -d'[+:]' -f3)"
+
+        shift
+    }
+    ;;
+
+    +[0-9]*) {
+        line="$(p "$opt" | mcut -d+ -f2)"
+
+        shift
+    }
+    ;;
+
     -line) {
         line="$2"
         shift
@@ -57,7 +72,7 @@ CMD="$(cmd "$@")"
 
 if test -n "$line"; then
     if test -n "$col"; then
-        col="$((col - 1))"
+        # col="$((col - 1))"
         x -shE "$HOME/.cargo/bin/hx $CMD" -e NOR -s ":goto $line" -c m -s "$(pen-s rs $col l)" -s "$norm" -i
     else
         x -shE "$HOME/.cargo/bin/hx $CMD" -e NOR -s ":goto $line" -c m -s "$norm" -i
