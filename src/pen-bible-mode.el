@@ -39,7 +39,7 @@
   ;; Here, use scrape-bible-references
 
   (let* ((found
-          (pen-str2list (pen-snc "scrape-bible-references" (thing-at-point 'line t))))
+          (pen-str2list (pen-snc "scrape-bible-references | pen-sort line-length-desc" (thing-at-point 'line t))))
          (matched
           (-filter 'looking-at-p found)))
 

@@ -212,7 +212,7 @@ values to copy the link to the clipboard and/or primary as well."
          (tuples (pen-eval-string
                   (concat
                    "'("
-                   (pen-sn (concat filter-cmd "|" "parallel --group --pipe -L 10 --halt never -j1 -N1 words-to-avy-tuples -nbe " (pen-q tempf) " | uniqnosort")
+                   (pen-sn (concat filter-cmd "| pen-sort line-length-desc |" "parallel --group --pipe -L 10 --halt never -j1 -N1 words-to-avy-tuples -nbe " (pen-q tempf) " | uniqnosort")
                            input
                            nil)
                    ")"))))
@@ -320,7 +320,7 @@ values to copy the link to the clipboard and/or primary as well."
   ;; I should also have actions associated with each filter
 
   ;; (ace-link-goto-filter-cmd-button (select-filter) 'bible-mode-lookup)
-  (ace-link-goto-filter-cmd-button (select-filter)))
+  (ace-link-goto-filter-cmd-button (select-filter) nil))
 
 (defun ace-link-goto-filter-cmd-button (filter-script callback)
   (interactive (list (read-string "Filter script: ")))
