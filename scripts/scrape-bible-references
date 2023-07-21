@@ -4,7 +4,15 @@ export TTY
 # TODO Start by generating all the desired regexes for all
 # bible references.
 
+# $EMACSD/config/my-bible-mode.el
+# $DUMP/tmp/scratch0Ppvf4.txt
+
 # sed -n 's/.*\(Psalms\?\)\( [0-9]\+\)\?\(:[0-9]\+\)\?.*/\1\2\3/p' | uniqnosort
+
+# cat $PENEL_DIR/src/pen-avy.el | scrape-bible-references
+
+# I need to combine a lot of seds
+# use sed's -f script-file
 
 input_fp="$(cat | tf txt)"
 {
