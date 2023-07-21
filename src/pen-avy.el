@@ -196,18 +196,20 @@ values to copy the link to the clipboard and/or primary as well."
          (winstart (window-start))
          (winend (window-end))
 
+         (input (cond
+                 ((and
+                   (stringp tempf)
+                   (f-file-p tempf))
+                  (e/cat tempf))
+                 (t
+                  (buffer-string))))
+
          ;; Because this always needs a file, I should just simplify all this by creating a temp file
          (tuples (pen-eval-string
                   (concat
                    "'("
-                   (pen-sn (concat filter-cmd "|" "parallel --pipe -L 10 -N1 words-to-avy-tuples -nbe " (pen-q tempf))
-                           (cond
-                            ((and
-                              (stringp tempf)
-                              (f-file-p tempf))
-                             (e/cat tempf))
-                            (t
-                             (buffer-string)))
+                   (pen-sn (concat filter-cmd "|" "parallel --group --pipe -L 10 --halt never -j1 -N1 words-to-avy-tuples -nbe " (pen-q tempf) " | uniqnosort")
+                           input
                            nil)
                    ")"))))
 
@@ -216,11 +218,11 @@ values to copy the link to the clipboard and/or primary as well."
              (f-file-p tempf))
         (f-delete tempf))
 
-    (mapcar (lambda (tp) (cons (car tp)
-                               (+ 1 (cdr tp))))
-            (-filter (lambda (tp) (and
-                                   (>= (cdr tp) winstart)
-                                   (<= (cdr tp) winend)))
+    (-filter (lambda (tp) (and
+                           (>= (cdr tp) winstart)
+                           (<= (cdr tp) winend)))
+             (mapcar (lambda (tp) (cons (car tp)
+                                        (+ 1 (cdr tp))))
                      tuples)))
 
   ;; (etv (pen-sn (concat (pen-q fp-or-buf) "|" filter-cmd "|" "words-to-avy-tuples " (pen-q fp-or-buf))))
@@ -330,7 +332,10 @@ values to copy the link to the clipboard and/or primary as well."
          ;; filter-cmd-collect handles nil buffer path
          (filter-cmd-collect filter-script
                              ;; This could be nil, ie. for *scratch*
-                             buffer-file-name)))
+                             ;; Keep it nil because in bible-mode, if I do yp, the tempfile remains
+                             ;; even when the buffer changes
+                             ;; buffer-file-name
+                             )))
     (avy-with ace-link-help
       (let ((avy-action
              (eval
