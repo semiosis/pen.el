@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+sed -n 's/.*\(Psalms\?\)\( [0-9]\+\)\?\(:[0-9]\+\)\?.*/\1\2\3/p' | uniqnosort

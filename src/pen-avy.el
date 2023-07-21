@@ -165,4 +165,54 @@ values to copy the link to the clipboard and/or primary as well."
        (t
         (button-label button))))))
 
+;; (buttons-collect)
+;; (("Psalms 27:10" . 1)
+;;  ("Psalms 103:13" . 87))
+
+;; File looks like this: (i.e. 1 means the first char).
+;; Psalms 27:10: When my father and my mother forsake me, then the Lord will take me up.
+;; Psalms 103:13: Like as a father pitieth his children, so the Lord pitieth them that fear him.
+
+;; TODO Use these two scripts
+;; cat $NOTES/perspective.org | scrape-bible-references
+;; list-glossary-terms-for-elisp
+
+;; Then sort them
+;; (defun pen-glossary-list-tuples (&optional fp)
+;;   (-filter (lambda (e) (not (member (third e) pen-glossary-blacklist)))
+;;            (pen-glossary-sort-tuples
+;;             (if fp
+;;                 (pen-eval-string (pen-sn (concat "list-glossary-terms-for-elisp " (pen-q fp))))
+;;               (pen-eval-string (pen-sn "list-glossary-terms-for-elisp"))))))
+
+(defun filter-cmd-collect (filter-cmd fp)
+  (let ((winstart (window-start))
+        (winend (window-end))
+        (tuples (pen-eval-string (pen-sn (concat "cat " (pen-q fp) "|" filter-cmd "|" "words-to-avy-tuples " (pen-q fp))))))
+    
+    (mapcar (lambda (tp) (cons (car tp)
+                               (+ 1 (cdr tp))))
+            (-filter (lambda (tp) (and
+                                   (>= (cdr tp) winstart)
+                                   (<= (cdr tp) winend)))
+                     tuples)))
+
+  ;; (etv (pen-sn (concat (pen-q fp) "|" filter-cmd "|" "words-to-avy-tuples " (pen-q fp))))
+  ;; (append (buttons-collect 'glossary-button-face)
+  ;;         (buttons-collect 'glossary-candidate-button-face)
+  ;;         (buttons-collect 'glossary-error-button-face))
+  )
+
+(defun ace-link-goto-filter-cmd-button ()
+  (interactive)
+  ;; OK, so without buttons I can go to something.
+  ;; But how do I perform an action on it without without buttons?
+  ;; I may need a separate function to see what ones exist at the point,
+  ;; and choose an action based on that.
+
+  (avy-with ace-link-help
+    (avy-process
+     (mapcar #'cdr (filter-cmd-collect "scrape-bible-references" buffer-file-name))
+     (avy--style-fn avy-style))))
+
 (provide 'pen-avy)

@@ -16,14 +16,16 @@
 
 (defset filter-cmd-buttonize-2-tuples
   ;; TODO Replace %q with a quoted argument
-  '(("scrape \"\\bami-[a-z0-9]+\\b\"" "sps zrepl -cm pavit aws ec2 describe-images --image-ids %q")
+  '(
+    ;; ("scrape \"\\bami-[a-z0-9]+\\b\"" "sps zrepl -cm pavit aws ec2 describe-images --image-ids %q")
     ;; ("sed -n 's/.*instance_type\\s*=\\s*\"\\([^\"]*\\)\".*/\\1/p'" "sps zrepl -cm pavit aws ec2 describe-instance-types --instance-types")
-    ("sed -n 's/.*instance_type\\s*=\\s*\"\\([^\"]*\\)\".*/\\1/p'" "sps aws-list-instance-types")
-    ("sed -n 's/\\bregion\\s*=\\s*\"\\([^\"]*\\)\".*/\\1/p'" "sps aws-list-regions")
+    ;; ("sed -n 's/.*instance_type\\s*=\\s*\"\\([^\"]*\\)\".*/\\1/p'" "sps aws-list-instance-types")
+    ;; ("sed -n 's/\\bregion\\s*=\\s*\"\\([^\"]*\\)\".*/\\1/p'" "sps aws-list-regions")
     ;; ("sed -n 's/.*\\bowners\\s*=\\s*\\[\"\\([^\"]*\\)\"\\].*/\\1/p'" "sps aws-list-image-names-from-owner")
-    ("json2hcl -reverse | jq -r '.data[].aws_ami[][][].owners[]'" "sps aws-list-image-names-from-owner")
+    ;; ("json2hcl -reverse | jq -r '.data[].aws_ami[][][].owners[]'" "sps aws-list-image-names-from-owner")
     ;; ("sed -n 's/^resource \\s*\"\\([^\\\"]*\\)\" \"[^\\\"]*\" *{$/\\1/p'" "go-to-terraform-resource %q")
-    ("scrape-terraform-resource" "go-to-terraform-resource %q")))
+    ;; ("scrape-terraform-resource" "go-to-terraform-resource %q")
+    ("scrape-bible-references" "bible-open %q")))
 
 
 (add-hook 'terraform-mode-hook 'make-buttons-for-all-filter-cmds)
@@ -119,7 +121,6 @@
            'filtercmd filtercmd
            'action 'filter-cmd-button-pressed
            'type buttontype))))))
-
 
 (defun make-buttons-for-filter-cmd (beg end filtercmd runcmd &optional clear-first)
   "Makes buttons for terms found by filter-cmd in this buffer."
