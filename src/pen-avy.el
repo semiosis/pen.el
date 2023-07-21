@@ -174,10 +174,34 @@ values to copy the link to the clipboard and/or primary as well."
 ;; Psalms 103:13: Like as a father pitieth his children, so the Lord pitieth them that fear him.
 ;; psalms
 
-(defun filter-cmd-collect (filter-cmd fp)
-  (let ((winstart (window-start))
-        (winend (window-end))
-        (tuples (pen-eval-string (pen-sn (concat "cat " (pen-q fp) "|" filter-cmd "|" "words-to-avy-tuples " (pen-q fp))))))
+(defun filter-cmd-collect (filter-cmd &optional fp-or-buf)
+  (let* ((tempf
+          (cond
+           ((bufferp fp-or-buf)
+            (with-current-buffer
+                fp-or-buf
+              (pen-tf "avy-bible" (buffer-string))))
+           ((f-file-p fp-or-buf)
+            fp-or-buf)
+           (t
+            buffer-file-name)))
+         (winstart (window-start))
+         (winend (window-end))
+         (tuples (pen-eval-string (pen-sn (concat filter-cmd "|" "words-to-avy-tuples " (pen-q tempf))
+                                          (cond
+                                           ((bufferp fp-or-buf)
+                                            (with-current-buffer
+                                                fp-or-buf
+                                              (buffer-string)))
+                                           ((f-file-p fp-or-buf)
+                                            (e/cat fp-or-buf))
+                                           (t
+                                            (buffer-string)))
+                                          nil))))
+
+    (if (and (stringp fp-or-buf)
+             (f-file-p fp-or-buf))
+        (f-delete fp-or-buf))
 
     (mapcar (lambda (tp) (cons (car tp)
                                (+ 1 (cdr tp))))
@@ -186,7 +210,7 @@ values to copy the link to the clipboard and/or primary as well."
                                    (<= (cdr tp) winend)))
                      tuples)))
 
-  ;; (etv (pen-sn (concat (pen-q fp) "|" filter-cmd "|" "words-to-avy-tuples " (pen-q fp))))
+  ;; (etv (pen-sn (concat (pen-q fp-or-buf) "|" filter-cmd "|" "words-to-avy-tuples " (pen-q fp-or-buf))))
   ;; (append (buttons-collect 'glossary-button-face)
   ;;         (buttons-collect 'glossary-candidate-button-face)
   ;;         (buttons-collect 'glossary-error-button-face))
