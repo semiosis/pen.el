@@ -512,3 +512,4 @@ translate-shane-to-emacs-common
 emacs-convert-symbols-to-pen
 snake-case2words
 unsnakecase
+scrape-bible-references

@@ -44,19 +44,24 @@
       (setq cmd "pen-tm filter"))
   (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))))
 
+(defun select-filter ()
+  (chomp (esed " #.*" ""
+               (fz
+                (cat
+                 (f-join pen-penel-directory
+                         "config/filters.sh"))
+                nil nil "pen-fwfzf: "))))
+
 (defun pen-fwfzf ()
   "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only."
   (interactive)
   (if (region-active-p)
       (if (>= (prefix-numeric-value current-prefix-arg) 4)
           (pen-region-pipe "pen-tm filter")
-        (pen-region-pipe (chomp (esed " #.*" ""
-                                  (fz
-                                   (cat
-                                    (f-join pen-penel-directory
-                                            "config/filters.sh"))
-                                   nil nil "pen-fwfzf: ")))))
+        (pen-region-pipe (select-filter)))
     (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf") " &") (buffer-string)))))
+
+(define-key pen-map (kbd "M-q M-f") 'pen-fwfzf)
 
 (defun pen-nwp (&optional cmd input nw_args)
   "Runs command in a new window with input"

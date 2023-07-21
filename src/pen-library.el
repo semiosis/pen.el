@@ -64,6 +64,11 @@
 
 (defalias 'major-mode-enabled 'derived-mode-p)
 
+(defmacro pen-nil (body)
+  "Do not return anything."
+  ;; body
+  `(progn (,@body) nil))
+
 (defun buffer-file-path ()
   (if (derived-mode-p 'eww-mode)
       (or (eww-current-url)

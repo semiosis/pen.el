@@ -12,7 +12,9 @@ export TTY
 # cat $PENEL_DIR/src/pen-avy.el | scrape-bible-references
 
 # I need to combine a lot of seds
-# use sed's -f script-file
+# use sed's -f script.sed
+
+# The most efficient way to do this is probably with perl, but oh well.
 
 input_fp="$(cat | tf txt)"
 {

@@ -177,31 +177,38 @@ values to copy the link to the clipboard and/or primary as well."
 (defun filter-cmd-collect (filter-cmd &optional fp-or-buf)
   (let* ((tempf
           (cond
+           ((not fp-or-buf)
+            (with-current-buffer
+                (current-buffer)
+              (pen-tf "avy-bible" (buffer-string))))
            ((bufferp fp-or-buf)
             (with-current-buffer
                 fp-or-buf
               (pen-tf "avy-bible" (buffer-string))))
-           ((f-file-p fp-or-buf)
-            fp-or-buf)
-           (t
-            buffer-file-name)))
+           ((and
+             (stringp fp-or-buf)
+             (f-file-p fp-or-buf))
+            (pen-tf "avy-bible" (e/cat fp-or-buf)))
+           ((f-file-p buffer-file-name)
+            (pen-tf "avy-bible" (e/cat buffer-file-name)))))
          (winstart (window-start))
          (winend (window-end))
+
+         ;; Because this always needs a file, I should just simplify all this by creating a temp file
          (tuples (pen-eval-string (pen-sn (concat filter-cmd "|" "words-to-avy-tuples " (pen-q tempf))
                                           (cond
-                                           ((bufferp fp-or-buf)
-                                            (with-current-buffer
-                                                fp-or-buf
-                                              (buffer-string)))
-                                           ((f-file-p fp-or-buf)
-                                            (e/cat fp-or-buf))
+                                           ((and
+                                             (stringp tempf)
+                                             (f-file-p tempf))
+                                            (e/cat tempf))
                                            (t
                                             (buffer-string)))
                                           nil))))
 
-    (if (and (stringp fp-or-buf)
-             (f-file-p fp-or-buf))
-        (f-delete fp-or-buf))
+    ;; Only delete it if it is a temp file
+    (if (and (stringp tempf)
+             (f-file-p tempf))
+        (f-delete tempf))
 
     (mapcar (lambda (tp) (cons (car tp)
                                (+ 1 (cdr tp))))
@@ -216,9 +223,19 @@ values to copy the link to the clipboard and/or primary as well."
   ;;         (buttons-collect 'glossary-error-button-face))
   )
 
+;; | =M-j M-v= | =ace-link-bible-ref= | =pen-map=
 (defun ace-link-bible-ref ()
   (interactive)
   (ace-link-goto-filter-cmd-button "scrape-bible-references" 'bible-mode-lookup))
+
+;; TODO Make a binding for this
+(defun ace-link-filter-ref ()
+  (interactive)
+
+  ;; I should also have actions associated with each filter
+  
+  ;; (ace-link-goto-filter-cmd-button (select-filter) 'bible-mode-lookup)
+  (ace-link-goto-filter-cmd-button (select-filter)))
 
 (defun ace-link-goto-filter-cmd-button (filter-script callback)
   (interactive (list (read-string "Filter script: ")))
@@ -230,22 +247,29 @@ values to copy the link to the clipboard and/or primary as well."
 
   ;; (filter-cmd-collect "scrape-bible-references" buffer-file-name)
 
-  (let ((wordtuples (filter-cmd-collect filter-script buffer-file-name)))
+  (let ((wordtuples
+         ;; filter-cmd-collect handles nil buffer path
+         (filter-cmd-collect filter-script
+                             ;; This could be nil, ie. for *scratch*
+                             buffer-file-name)))
     (avy-with ace-link-help
-      (avy-process
-       ;; There doesn't appear to be an easy way to get the avy string
-       ;; Well, it's discarded here.
-       ;; So I need to run the filter again
-       (mapcar #'cdr wordtuples)
-       (avy--style-fn avy-style)))
-
-    (let ((result
-           (cl-loop for tp in wordtuples
-                    until (looking-at-p (car tp))
-                    finally return (car tp))))
-      (if (and result
-               callback)
-          (call-function callback result)))))
+      (let ((avy-action
+             (eval
+              `(lambda (pt)
+                 (avy-action-goto pt)
+                 (let ((result
+                        (cl-loop for tp in ',wordtuples
+                                 until (looking-at-p (car tp))
+                                 finally return (car tp))))
+                   (if (and result
+                            ',callback)
+                       (call-function ',callback result)))))))
+        (avy-process
+         ;; There doesn't appear to be an easy way to get the avy string
+         ;; Well, it's discarded here.
+         ;; So I need to run the filter again
+         (mapcar #'cdr wordtuples)
+         (avy--style-fn avy-style))))))
 
 (define-key pen-map (kbd "M-j M-v") 'ace-link-bible-ref)
 
