@@ -175,7 +175,11 @@ values to copy the link to the clipboard and/or primary as well."
 ;; psalms
 
 ;; cat $HOME/.emacs.d/host/pen.el/src/pen-avy.el | scrape-bible-references | parallel --pipe -L 10 -N1 words-to-avy-tuples -nbe $HOME/.emacs.d/host/pen.el/src/pen-avy.el | v
+;; cat $HOME/.emacs.d/host/pen.el/src/pen-avy.el | scrape-bible-references | parallel --group --pipe -l 10 --halt never -j 1 -N1 words-to-avy-tuples -nbe $HOME/.emacs.d/host/pen.el/src/pen-avy.el | uniqnosort
 
+;; TODO Make it only use the visible window contents instead of (buffer-string)
+;; Use (window-start) to get the starting byte.
+;; It's already not using buffer-file-name, so it should be easy
 (defun filter-cmd-collect (filter-cmd &optional fp-or-buf)
   (let* ((tempf
           (cond
