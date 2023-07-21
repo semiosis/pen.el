@@ -233,7 +233,7 @@ values to copy the link to the clipboard and/or primary as well."
   (interactive)
 
   ;; I should also have actions associated with each filter
-  
+
   ;; (ace-link-goto-filter-cmd-button (select-filter) 'bible-mode-lookup)
   (ace-link-goto-filter-cmd-button (select-filter)))
 
