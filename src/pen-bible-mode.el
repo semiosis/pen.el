@@ -37,7 +37,16 @@
 
 (defun bible-get-text-here ()
   ;; Here, use scrape-bible-references
-  (thing-at-point 'line t))
+
+  (let* ((found
+          (pen-str2list (pen-snc "scrape-bible-references" (thing-at-point 'line t))))
+         (matched
+          (-filter 'looking-at-p found)))
+
+    (cond
+     (matched (car matched))
+     (found (car found))
+     (t (thing-at-point 'line t)))))
 
 (defun bible-mode-lookup (text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
