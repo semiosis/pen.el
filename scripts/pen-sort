@@ -21,6 +21,12 @@ case "$f" in
     }
     ;;
     
+    line-length-desc) {
+        # perl sort with custom comparator
+        perl -e 'print sort { length($b) <=> length($a) } <>'
+    }
+    ;;
+    
     path-depth) {
         # perl sort with custom comparator
         perl -e 'print sort { ($a =~ tr!/!!) <=> ($b =~ tr!/!!) } <>'

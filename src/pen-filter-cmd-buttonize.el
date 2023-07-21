@@ -25,7 +25,8 @@
     ;; ("json2hcl -reverse | jq -r '.data[].aws_ami[][][].owners[]'" "sps aws-list-image-names-from-owner")
     ;; ("sed -n 's/^resource \\s*\"\\([^\\\"]*\\)\" \"[^\\\"]*\" *{$/\\1/p'" "go-to-terraform-resource %q")
     ;; ("scrape-terraform-resource" "go-to-terraform-resource %q")
-    ("scrape-bible-references" "bible-open %q")))
+    ;; ("scrape-bible-references" "bible-open %q")
+    ))
 
 
 (add-hook 'terraform-mode-hook 'make-buttons-for-all-filter-cmds)

@@ -1,0 +1,55 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Derived from:
+# $SCRIPTS/list-glossary-terms-for-elisp
+
+# Original design script:
+# $SCRIPTS/test-bible-ref
+
+# If there are 2 args:
+# "$1" is the needle/word/string list (one per line) file path
+# "$2" is the haystack path.
+
+# If there is 1 arg:
+# stdin is the needle/word/string list - one per line
+# "$1" is the haystack path.
+
+if test "$#" -eq 1; then
+    input_fp="$(cat | tf txt)"
+    haystack="$1"
+    shift
+elif test "$#" -eq 2; then
+    input_fp="$1"
+    haystack="$2"
+    shift
+    shift
+else
+    exit 0;
+fi
+
+# Test:
+# cat $PENEL_DIR/src/pen-avy.el | scrape-bible-references | words-to-avy-tuples $PENEL_DIR/src/pen-avy.el
+
+# Remove the ones which are not visible?
+# Or, rather, do that from emacs.
+# --line-number
+
+# sort by longest line first
+# That way basic book titles will come after fully qualified verse references
+
+# Both the pattern and the results need to be
+# sorted by line-length-desc
+/bin/grep --byte-offset -oP \
+    "($( cat "$input_fp" | uniqnosort | pen-sort line-length-desc | pen-s join ")|(" ))" \
+    "$haystack" \
+| pen-sort line-length-desc | {
+    echo "'("
+    sed -e 's/\([0-9]\+\):\(.*\)/"\2" . \1/' -e 's/.*/(&)/'
+    echo ")"
+} | {
+    bs '#'
+} | uniqnosort | pavs

@@ -35,10 +35,16 @@
   (interactive)
   (bible-open-version "engbsb2020eb"))
 
+(defun bible-get-text-here ()
+  ;; Here, use scrape-bible-references
+  (thing-at-point 'line t))
+
 (defun bible-mode-lookup (text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
-  (interactive (list (thing-at-point 'line t)))
+  (interactive (list (bible-get-text-here)))
+
+  (setq text (or text (bible-get-text-here)))
 
   ;; (mapcar 'car bible-mode-book-chapters)
 
@@ -56,8 +62,6 @@ creating a new `bible-mode' buffer positioned at the specified verse."
    ((re-match-p ".+" text)
     (setq text (concat text " 1:1:"))))
 
-  ;; (tv text)
-
   (let* (
          book
          chapter
@@ -74,7 +78,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
     (tryelse
      (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter)) (string-to-number verse) bible-mode-book-module)
-     (error "Error. Book not found?"))))
+     (error "Error. Incorrect Bible reference?"))))
 
 (defun bible-mode-copy-link (text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
