@@ -919,6 +919,17 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
       slug)))
 
 (defun fz-completion-second-of-tuple-annotation-function (s)
+  ;; (tv minibuffer-completion-table)
+  ;; I need more information than s. s is the first element.
+  ;; Sadly, after investigating, it's too hard.
+  ;; The best way to get what I want is to add #numbers, then remove them
+
+  ;; (defset filter-cmd-2-tuples
+  ;;   ;; They have to be different
+  ;;   '(("scrape-bible-references # 1" 'bible-mode-lookup)
+  ;;     ("scrape-bible-references # 2" "ebible %q")))
+  ;; (fz filter-cmd-2-tuples nil nil "filter-cmd: ")
+
   (let ((item (assoc s minibuffer-completion-table)))
     (when item
       ;; (concat " # " (second item))
@@ -971,9 +982,11 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                          completion-extra-properties
                          add-props)))
 
+              ;; my-ivy-result-tuple is set to the full tuple in ivy-call
               (if (and (listp (car listd)))
                   (setq completion-extra-properties
                         (append
+                         ;; my-ivy-result-tuple is set to the full tuple in ivy-call
                          '(:annotation-function fz-completion-second-of-tuple-annotation-function)
                          completion-extra-properties)))
 

@@ -308,10 +308,26 @@ values to copy the link to the clipboard and/or primary as well."
     ("Jude" "Jud" "Jd")
     ("Revelation of John" "Revelation" "Rev" "Re")))
 
+;; j:filter-cmd-buttonize-2-tuples
+(defset filter-cmd-2-tuples
+  ;; They have to be different
+  '(("scrape-bible-references # 1" bible-mode-lookup)
+    ("scrape-bible-references # 2" "sps ebible")))
+
 ;; | =M-j M-v= | =ace-link-bible-ref= | =pen-map=
 (defun ace-link-bible-ref ()
   (interactive)
-  (ace-link-goto-filter-cmd-button "scrape-bible-references" 'bible-mode-lookup))
+  ;; (ace-link-goto-filter-cmd-button "scrape-bible-references" 'bible-mode-lookup)
+  (ace-link-goto-filter-cmd-button "scrape-bible-references" "sps ebible"))
+
+(defun ace-link-filter-cmd ()
+  (interactive)
+  (let ((scraper
+         (s-replace-regexp
+          " #.*" ""
+          (fz filter-cmd-2-tuples nil nil "filter-cmd: ")))
+        (tup (cadr pen-ivy-result-tuple)))
+    (ace-link-goto-filter-cmd-button scraper tup)))
 
 ;; TODO Make a binding for this
 (defun ace-link-filter-ref ()
@@ -350,7 +366,7 @@ values to copy the link to the clipboard and/or primary as well."
                      (if (and result
                               cb)
                          (if (stringp cb)
-                             (pen-snc (concat cb (pen-q result)))
+                             (pen-snc (concat cb " " (pen-q result)))
                            (call-function cb result)))))))))
         (avy-process
          ;; There doesn't appear to be an easy way to get the avy string

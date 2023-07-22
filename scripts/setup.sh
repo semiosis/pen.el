@@ -1176,3 +1176,6 @@ cd xiphos
 )
 
 mkfastmod NASB
+
+
+go install github.com/maaslalani/draw@latest

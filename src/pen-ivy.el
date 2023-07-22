@@ -248,4 +248,50 @@ prompt additionally for EXTRA-AG-ARGS."
          (cf (eval `(gen-counsel-function ,(concat "loop lm-complete -s " (pen-q pfp)) 'pen-etv))))
     (call-interactively cf)))
 
+(defvar pen-ivy-result-tuple)
+
+(defun ivy-call ()
+  "Call the current action without exiting completion."
+  (interactive)
+  ;; Testing with `ivy-with' seems to call `ivy-call' again,
+  ;; in which case `this-command' is nil; so check for this.
+  (unless (memq this-command '(nil
+                               ivy-done
+                               ivy-alt-done
+                               ivy-dispatching-done))
+    (setq ivy-current-prefix-arg current-prefix-arg))
+  (let* ((action
+          (if (functionp ivy-inhibit-action)
+              ivy-inhibit-action
+            (and (not ivy-inhibit-action)
+                 (ivy--get-action ivy-last))))
+         (current (ivy-state-current ivy-last))
+         (x (ivy--call-cand current))
+         (res
+          (cond
+           ((null action)
+            current)
+           (t
+            (select-window (ivy--get-window ivy-last))
+            (set-buffer (ivy-state-buffer ivy-last))
+            (prog1 (unwind-protect
+                       (if ivy-marked-candidates
+                           (ivy--call-marked action)
+                         (funcall action x))
+                     (ivy-recursive-restore))
+              (unless (or (eq ivy-exit 'done)
+                          (minibuffer-window-active-p (selected-window))
+                          (null (active-minibuffer-window)))
+                (select-window (active-minibuffer-window))))))))
+
+    ;; This is needed, and the best way to get the tuple,
+    ;; because when res is the tuple, ivy-inhibit-action is nil.
+    ;; And when ivy-inhibit-action is t, res is not the tuple.
+    ;; I can't be bothered digging further and changing behaviour.
+    (setq pen-ivy-result-tuple res)
+    
+    (if ivy-inhibit-action
+        res
+      current)))
+
 (provide 'pen-ivy)

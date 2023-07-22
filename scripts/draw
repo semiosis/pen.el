@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# go install github.com/maaslalani/draw@latest
+
+# ctrl+c to exit.
+# Press any key to draw with that character.
+# Press 1 for red.
+# Press 2 for green.
+# Press 3 for yellow.
+# Press 4 for blue.
+# Press 5 for magenta.
+# Press 6 for cyan.
+# Press 7 for gray.
+# Press Alt+0 - Alt+9 to draw with digits.
+
+# export TERM=xterm-256color
+
+export DRAW_FILE=/tmp/draw.txt
+
+${GOPATH%%:*}/bin/draw "$@"
+
+export EDITOR=pen-ansivim
+less -rS "$DRAW_FILE"
