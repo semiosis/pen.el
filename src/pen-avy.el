@@ -308,6 +308,10 @@ values to copy the link to the clipboard and/or primary as well."
     ("Jude" "Jud" "Jd")
     ("Revelation of John" "Revelation" "Rev" "Re")))
 
+(defun fully-qualify-bible-book-name (s)
+  bible-book-map-names
+  s)
+
 ;; j:filter-cmd-buttonize-2-tuples
 (defset filter-cmd-2-tuples
   ;; They have to be different
