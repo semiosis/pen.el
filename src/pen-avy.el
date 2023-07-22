@@ -212,7 +212,7 @@ values to copy the link to the clipboard and/or primary as well."
          (tuples (pen-eval-string
                   (concat
                    "'("
-                   (pen-sn (concat filter-cmd "| pen-sort line-length-desc |" "parallel --group --pipe -L 10 --halt never -j1 -N1 words-to-avy-tuples -nbe " (pen-q tempf) " | uniqnosort")
+                   (pen-sn (concat filter-cmd "| pen-sort line-length-desc |" "serialsplit -l 10 words-to-avy-tuples -nbe " (pen-q tempf) " | uniqnosort")
                            input
                            nil)
                    ")"))))
@@ -226,7 +226,7 @@ values to copy the link to the clipboard and/or primary as well."
                            (>= (cdr tp) winstart)
                            (<= (cdr tp) winend)))
              (mapcar (lambda (tp) (cons (car tp)
-                                        (+ 1 (cdr tp))))
+                                        (byte-to-position (+ 1 (cdr tp)))))
                      tuples)))
 
   ;; (etv (pen-sn (concat (pen-q fp-or-buf) "|" filter-cmd "|" "words-to-avy-tuples " (pen-q fp-or-buf))))
@@ -336,11 +336,8 @@ values to copy the link to the clipboard and/or primary as well."
          ;; filter-cmd-collect handles nil buffer path
          (filter-cmd-collect filter-script
                              ;; This could be nil, ie. for *scratch*
-                             ;; Keep it nil because in bible-mode, if I do yp, the tempfile remains
-                             ;; even when the buffer changes
-                             ;; buffer-file-name
-                             )))
-    (avy-with ace-link-help
+                             buffer-file-name)))
+      (avy-with ace-link-help
       (let ((avy-action
              (eval
               `(lambda (pt)
@@ -349,9 +346,12 @@ values to copy the link to the clipboard and/or primary as well."
                         (cl-loop for tp in ',wordtuples
                                  until (looking-at-p (car tp))
                                  finally return (car tp))))
-                   (if (and result
-                            ',callback)
-                       (call-function ',callback result)))))))
+                   (let ((cb ',callback))
+                     (if (and result
+                              cb)
+                         (if (stringp cb)
+                             (pen-snc (concat cb (pen-q result)))
+                           (call-function cb result)))))))))
         (avy-process
          ;; There doesn't appear to be an easy way to get the avy string
          ;; Well, it's discarded here.

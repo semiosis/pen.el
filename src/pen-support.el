@@ -923,7 +923,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (when item
       ;; (concat " # " (second item))
       (cond
-       ((listp item) (concat " # " (second item)))
+       ((listp item) (concat " # " (str (second item))))
        ((stringp item) "")
        (t "")))))
 

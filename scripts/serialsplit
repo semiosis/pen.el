@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# cat $HOME/.emacs.d/host/pen.el/src/pen-avy.el | scrape-bible-references | parallel --group --pipe -l 10 --halt never -j 1 -N1 words-to-avy-tuples -nbe $HOME/.emacs.d/host/pen.el/src/pen-avy.el | uniqnosort
+
+# the remaining commands are the script to pipe into
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -l) {
+        lines="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${lines:="10"}"
+
+parallel --group --pipe -L "$lines" --halt never -j1 -N1 "$@"
