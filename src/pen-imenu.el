@@ -74,6 +74,17 @@
   (setq imenu-generic-expression sx-question-imenu-generic-expression))
 (add-hook 'sx-question-mode-hook 'sx-question-imenu-configure)
 
+(defset bible-imenu-generic-expression
+  '(    ("" "^\\([^:]+:[^:]+:[^:]+\\):.*$" 1)))
+
+(defun bible-imenu-configure ()
+  (interactive)
+  (defset bible-imenu-generic-expression
+    `(    (,bible-mode-book-module
+           "^\\([^:]+:[^:]+\\):.*$" 1)))
+  (setq imenu-generic-expression bible-imenu-generic-expression))
+(add-hook 'bible-mode-hook 'bible-imenu-configure)
+
 (imenu-list-minor-mode 1)
 
 (defun imenu-preview-prev ()
