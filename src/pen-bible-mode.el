@@ -1,3 +1,11 @@
+;; This is a new variable, nonexistent in the original package
+(defcustom default-bible-mode-book-module
+  "NASB"
+  "Default book module for Diatheke to query."
+  :type '(choice (const :tag "None" nil)
+                 (string :tag "Module abbreviation (e.g. \"KJV\")"))
+  :group 'bible-mode)
+
 (defun bible-open(&optional global-chapter verse module ref)
   "Creates and opens a `bible-mode' buffer"
   (interactive)
