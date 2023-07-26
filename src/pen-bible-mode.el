@@ -6,16 +6,22 @@
                  (string :tag "Module abbreviation (e.g. \"KJV\")"))
   :group 'bible-mode)
 
-(defun bible-open(&optional global-chapter verse module ref)
+(defun bible-open (&optional global-chapter verse module ref)
   "Creates and opens a `bible-mode' buffer"
   (interactive)
   (let
       (
        (buf (get-buffer-create (generate-new-buffer-name "*bible*"))))
     (set-buffer buf)
+    (if (not module)
+        ;; (setq bible-mode-book-module module)
+        (setq module default-bible-mode-book-module))
+
     (bible-mode)
-    (if module
-        (setq bible-mode-book-module module))
+
+    (setq bible-mode-book-module module)
+
+
     (bible-mode--set-global-chapter (or global-chapter 1) verse)
     (set-window-buffer (get-buffer-window (current-buffer)) buf)
 
@@ -256,8 +262,13 @@ creating a new `bible-mode' buffer positioned at the specified verse."
           (bible-canonicalise-ref
            (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text)))
 
+    (if (not (major-mode-p 'bible-mode))
+        (setq bible-mode-book-module default-bible-mode-book-module))
+
     (tryelse
-     (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter)) (string-to-number verse) bible-mode-book-module)
+     (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
+                 (string-to-number verse)
+                 bible-mode-book-module)
      (error "Error. Incorrect Bible reference?"))))
 
 (defun bible-mode-copy-link (text)
