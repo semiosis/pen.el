@@ -7,3 +7,4 @@ printf -- "%s\n" "$input" | xurls
 printf -- "%s\n" "$input" | scrape-dirs-fast.sh
 printf -- "%s\n" "$input" | scrape-files-fast.sh
 printf -- "%s\n" "$input" | scrape-hex-24
+printf -- "%s\n" "$input" | scrape-bible-references
