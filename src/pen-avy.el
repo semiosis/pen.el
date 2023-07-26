@@ -205,7 +205,7 @@ values to copy the link to the clipboard and/or primary as well."
         (tup (cadr pen-ivy-result-tuple)))
     (ace-link-goto-filter-cmd-button scraper tup)))
 
-(define-key my-mode-map (kbd "H-l") 'ace-link-filter-cmd)
+(define-key pen-map (kbd "H-l") 'ace-link-filter-cmd)
 
 ;; TODO Make a binding for this
 (defun ace-link-filter-ref ()
