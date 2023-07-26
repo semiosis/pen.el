@@ -59,7 +59,7 @@
       (if (>= (prefix-numeric-value current-prefix-arg) 4)
           (pen-region-pipe "pen-tm filter")
         (pen-region-pipe (select-filter)))
-    (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf") " &") (buffer-string)))))
+    (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf")) (buffer-string) nil nil t))))
 
 (define-key pen-map (kbd "M-q M-f") 'pen-fwfzf)
 
