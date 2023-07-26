@@ -37,6 +37,22 @@
   (let ((bible-mode-book-module version))
     (bible-open nil nil version)))
 
+;; (defun bible-mode-fun-around-advice (proc &rest args)
+;;   (let ((res (apply proc args)))
+;;     res))
+;; (advice-add 'bible-mode--exec-diatheke :around #'bible-mode-fun-around-advice)
+;; (advice-remove 'bible-mode--exec-diatheke #'bible-mode-fun-around-advice)
+
+(defun bible-mode--open-search(query searchmode)
+  "Opens a search buffer of QUERY using SEARCHMODE."
+  (let 
+      (
+       (buf (get-buffer-create (concat "*bible-search-" (downcase bible-mode-book-module) "-" query "*"))))
+    (set-buffer buf)
+    (bible-search-mode)
+    (bible-mode--display-search query searchmode)
+    (pop-to-buffer buf nil t)))
+
 (defun nasb ()
   (interactive)
   (bible-open-version "NASB"))
