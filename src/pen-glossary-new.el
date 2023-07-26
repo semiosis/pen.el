@@ -869,6 +869,8 @@ Use my position list code. Make it use rosie lang and external software."
 
 (defun pen-after-emacs-loaded-add-hooks-for-glossary ()
   (add-hook 'find-file-hooks 'pen-run-buttonize-hooks t)
+  ;; (remove-hook 'bible-mode-hook 'pen-generate-glossary-buttons-manually)
+  (add-hook 'bible-mode-hook 'pen-generate-glossary-buttons-manually t)
   (remove-hook 'new-buffer-hooks 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened)
   (pen-restart-glossary))
 

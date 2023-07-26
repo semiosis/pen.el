@@ -321,6 +321,14 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
         (beginning-of-line))))
 
+;; nadvice - proc is the original function, passed in. do not modify
+(defun bible-mode--display-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (pen-generate-glossary-buttons-manually)
+    res))
+(advice-add 'bible-mode--display :around #'bible-mode--display-around-advice)
+;; (advice-remove 'bible-mode--display #'bible-mode--display-around-advice)
+
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
 
