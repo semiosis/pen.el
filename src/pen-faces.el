@@ -378,6 +378,11 @@ argument, prompt for a regular expression using `read-regexp'."
   (set-face-background 'helm-selection "#262626")
   (set-face-foreground 'helm-selection "#d72f4f")
 
+  (require 'avy)
+  (setq avy-background t)
+  (set-face-background 'avy-background-face nil)
+  (set-face-foreground 'avy-background-face "#222222")
+
   (require 'selectrum)
   (progn
     ;; selectrum-mouse-highlight
