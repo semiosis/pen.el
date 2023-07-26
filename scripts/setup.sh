@@ -1179,3 +1179,7 @@ mkfastmod NASB
 
 
 go install github.com/maaslalani/draw@latest
+
+agi yasm nasm
+
+go install github.com/charmbracelet/gum@latest
