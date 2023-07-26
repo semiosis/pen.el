@@ -425,6 +425,22 @@ This function doesn't really like it when you put 'sp' as the editor."
   stdin)
 (defalias 'pen-tv 'pen-cl-tv)
 
+(defmacro qtv (&rest args)
+  "Quiet tv"
+  ;; body
+  `(pen-nil (pen-tv ,@args)))
+
+(defmacro tvd (&rest args)
+  "tvipe detached"
+  ;; body
+  ;; (eval `(pen-nil (pen-tvipe ,@args :editor "colvs" :tm_wincmd "sps" :b-quiet t :b-nowait t)))
+  `(pen-nil (pen-tvipe ,@args :editor "colv" :tm_wincmd "sps" :b-quiet t :b-nowait t)))
+
+(defmacro qtvd (&rest args)
+  "Quiet tvd"
+  ;; body
+  `(pen-nil (tvd ,@args)))
+
 (defun xtv (stdin)
   (pen-sn "xt v" stdin nil nil t))
 

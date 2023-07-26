@@ -177,6 +177,46 @@ values to copy the link to the clipboard and/or primary as well."
 ;; cat $HOME/.emacs.d/host/pen.el/src/pen-avy.el | scrape-bible-references | parallel --pipe -L 10 -N1 words-to-avy-tuples -nbe $HOME/.emacs.d/host/pen.el/src/pen-avy.el | v
 ;; cat $HOME/.emacs.d/host/pen.el/src/pen-avy.el | scrape-bible-references | parallel --group --pipe -l 10 --halt never -j 1 -N1 words-to-avy-tuples -nbe $HOME/.emacs.d/host/pen.el/src/pen-avy.el | uniqnosort
 
+;; j:filter-cmd-buttonize-2-tuples
+(defset filter-cmd-2-tuples
+  ;; They have to be different
+
+  ;; I number them to differentiate them
+  (let ((tps '(("scrape-bible-references" bible-mode-lookup)
+               ("scrape-bible-references" "sps ebible")
+               ("scrape \"[^\\\"<>]+\" | xurls | uniqnosort" "tm-nohup chrome"))))
+    (cl-loop for index from 0
+             for e in tps
+             collect (cons (concat (car e) " # " (str index)) (cdr e)))))
+
+;; | =M-j M-v= | =ace-link-bible-ref= | =pen-map=
+(defun ace-link-bible-ref ()
+  (interactive)
+  (ace-link-goto-filter-cmd-button "scrape-bible-references" 'bible-mode-lookup)
+  ;; (ace-link-goto-filter-cmd-button "scrape-bible-references" "sps ebible")
+  )
+
+(defun ace-link-filter-cmd ()
+  (interactive)
+  (let ((scraper
+         (s-replace-regexp
+          " #.*" ""
+          (fz filter-cmd-2-tuples nil nil "filter-cmd: ")))
+        (tup (cadr pen-ivy-result-tuple)))
+    (ace-link-goto-filter-cmd-button scraper tup)))
+
+(define-key my-mode-map (kbd "H-l") 'ace-link-filter-cmd)
+
+;; TODO Make a binding for this
+(defun ace-link-filter-ref ()
+  (interactive)
+
+  ;; I should also have actions associated with each filter
+
+  ;; (ace-link-goto-filter-cmd-button (select-filter) 'bible-mode-lookup)
+  (ace-link-goto-filter-cmd-button (select-filter) nil))
+
+
 ;; TODO Make it only use the visible window contents instead of (buffer-string)
 ;; Use (window-start) to get the starting byte.
 ;; It's already not using buffer-file-name, so it should be easy
@@ -186,11 +226,11 @@ values to copy the link to the clipboard and/or primary as well."
            ((not fp-or-buf)
             (with-current-buffer
                 (current-buffer)
-              (pen-tf "avy-bible" (buffer-string))))
+              (pen-tf "avy-bible" (window-string))))
            ((bufferp fp-or-buf)
             (with-current-buffer
                 fp-or-buf
-              (pen-tf "avy-bible" (buffer-string))))
+              (pen-tf "avy-bible" (window-string))))
            ((and
              (stringp fp-or-buf)
              (f-file-p fp-or-buf))
@@ -235,113 +275,6 @@ values to copy the link to the clipboard and/or primary as well."
   ;;         (buttons-collect 'glossary-error-button-face))
   )
 
-(defvar bible-book-map-names
-  ;; Used to translate any of the latter elements into the first element of each tuple.
-  ;; I should also make I, 1, First, 2, 3, etc part of the generic regex.
-  ;; I still need to be able to translate them. So I still need this.
-  '(("Genesis" "Gen" "Ge" "Gn")
-    ("Exodus" "Ex" "Exod" "Exo")
-    ("Leviticus" "Lev" "Le" "Lv")
-    ("Numbers" "Num" "Nu" "Nm" "Nb")
-    ("Deuteronomy" "Deut" "De" "Dt")
-    ("Joshua" "Josh" "Jos" "Jsh")
-    ("Judges" "Judg" "Jdg" "Jg" "Jdgs")
-    ("Ruth" "Rth" "Ru")
-    ("I Samuel" "1 Samuel" "1 Sam" "1 Sm" "1 Sa" "I Sam" "I Sa" "1Sam" "1Sa" "1S" "1st Samuel" "1st Sam" "First Samuel" "First Sam")
-    ("II Samuel" "2 Samuel" "2 Sam" "2 Sm" "2 Sa" "II Sam" "II Sa" "2Sam" "2Sa" "2S" "2nd Samuel" "2nd Sam" "First Samuel" "First Sam")
-    ("I Kings" "1 Kings" "1 Kgs" "1 Ki" "1Kgs" "1Kin" "1Ki" "1K" "1st Kings" "1st Kgs" "First Kings" "First Kgs")
-    ("II Kings" "2 Kings" "2 Kgs" "2 Ki" "2Kgs" "2Kin" "2Ki" "2K" "2nd Kings" "2nd Kgs" "Second Kings" "Second Kgs")
-    ("I Chronicles" "1 Chronicles" "1 Chron" "1 Chr" "1 Ch" "1Chron" "1Chr" "I Chron" "I Chr" "I Ch" "1st Chronicles" "1st Chron" "First Chronicles" "First Chron")
-    ("II Chronicles" "2 Chronicles" "2 Chron" "2 Chr" "2 Ch" "2Chron" "2Chr" "II Chron" "II Chr" "II Ch" "2nd Chronicles" "2nd Chron" "Second Chronicles" "Second Chron")
-    ("Ezra" "Ezr" "Ez")
-    ("Nehemiah" "Neh" "Ne")
-    ("Esther" "Est" "Esth" "Es")
-    ("Job" "Jb")
-    ("Psalms" "Ps" "Psalm" "Pslm" "Psa" "Psm" "Pss")
-    ("Proverbs" "Prov" "Pro" "Prv" "Pr")
-    ("Ecclesiastes" "Eccles" "Eccle" "Ecc" "Ec" "Qoh")
-    ("Song of Solomon" "Song" "Song of Songs" "SOS" "So" "Canticle of Canticles" "Canticles" "Cant")
-    ("Isaiah" "Isa" "Is")
-    ("Jeremiah" "Je" "Jr")
-    ("Lamentations" "Lam" "La")
-    ("Ezekiel" "Ezek" "Eze" "Ezk")
-    ("Daniel" "Dan" "Da" "Dn")
-    ("Hosea" "Hos" "Ho")
-    ("Joel" "Jl")
-    ("Amos" "Am")
-    ("Obadiah" "Obad" "Ob")
-    ("Jonah" "Jnh" "Jon")
-    ("Micah" "Mic" "Mc")
-    ("Nahum" "Nah" "Na")
-    ("Habakkuk" "Hab" "Hb")
-    ("Zephaniah" "Zeph" "Zep" "Zp")
-    ("Haggai" "Hag" "Hg")
-    ("Zechariah" "Zech" "Zec" "Zc")
-    ("Malachi" "Mal" "Ml")
-    ("Matthew" "Matt" "Mt")
-    ("Mark" "Mrk" "Mar" "Mk" "Mr")
-    ("Luke" "Luk" "Lk")
-    ("John" "Joh" "Jhn" "Jn")
-    ("Acts" "Act" "Ac")
-    ("Romans" "Rom" "Ro" "Rm")
-    ("I Corinthians" "1 Corinthians" "1 Cor" "1 Co" "I Cor" "I Co" "1Cor" "1Co" "1Corinthians" "1st Corinthians" "First Corinthians")
-    ("II Corinthians" "2 Corinthians" "2 Cor" "2 Co" "II Cor" "II Co" "2Cor" "2Co" "2Corinthians" "2nd Corinthians" "Second Corinthians")
-    ("Galatians" "Gal" "Ga")
-    ("Ephesians" "Eph" "Ephes")
-    ("Philippians" "Phil" "Php" "Pp")
-    ("Colossians" "Col" "Co")
-    ("I Thessalonians" "1 Thess" "1 Thes" "1 Th" "1 Thessalonians" "I Thess" "I Thes" "I Th" "1Thessalonians" "1Thess" "1Thes" "1Th" "1st Thessalonians" "1st Thess" "First Thessalonians" "First Thess")
-    ("II Thessalonians" "2 Thess" "2 Thes" "2 Th" "2 Thessalonians" "II Thess" "II Thes" "II Th" "2Thessalonians" "2Thess" "2Thes" "2Th" "2nd Thessalonians" "2nd Thess" "Second Thessalonians" "Second Thess")
-    ("I Timothy" "1 Timothy" "1 Tim" "1 Ti" "I Timothy" "I Tim" "I Ti" "1Timothy" "1Tim" "1Ti" "1st Timothy" "1st Tim" "First Timothy" "First Time")
-    ("II Timothy" "2 Timothy" "2 Tim" "2 Ti" "II Timothy" "II Tim" "II Ti" "2Timothy" "2Tim" "2Ti" "2nd Timothy" "2nd Tim" "Second Timothy" "Second Time")
-    ("Titus" "Tit"
-     ;; "ti"
-     )
-    ("Philemon" "Philem" "Phm" "Pm")
-    ("Hebrews" "Heb")
-    ("James" "Jas" "Jm")
-    ("I Peter" "1 Peter" "1 Pet" "1 Pe" "1 Pt" "1 P" "I Pet" "I Pt" "I Pe" "1Peter" "1Pet" "1Pe" "1Pt" "1P" "I Peter" "1st Peter" "First Peter")
-    ("II Peter" "2 Peter" "2 Pet" "2 Pe" "2 Pt" "2 P" "II Pet" "II Pt" "II Pe" "2Peter" "2Pet" "2Pe" "2Pt" "2P" "II Peter" "2nd Peter" "Second Peter")
-    ("I John" "1 John" "1 Jhn" "1 Jn" "1 J" "1John" "1Jhn" "1Joh" "1Jn" "1Jo" "1st John" "First John")
-    ("II John" "2 John" "2 Jhn" "2 Jn" "2 J" "2John" "2Jhn" "2Joh" "2Jn" "2Jo" "2nd John" "Second John")
-    ("III John" "3 John" "3 Jhn" "3 Jn" "3 J" "3John" "3Jhn" "3Joh" "3Jn" "3Jo" "3rd John" "Third John")
-    ("Jude" "Jud" "Jd")
-    ("Revelation of John" "Revelation" "Rev" "Re")))
-
-(defun fully-qualify-bible-book-name (s)
-  bible-book-map-names
-  s)
-
-;; j:filter-cmd-buttonize-2-tuples
-(defset filter-cmd-2-tuples
-  ;; They have to be different
-  '(("scrape-bible-references # 1" bible-mode-lookup)
-    ("scrape-bible-references # 2" "sps ebible")))
-
-;; | =M-j M-v= | =ace-link-bible-ref= | =pen-map=
-(defun ace-link-bible-ref ()
-  (interactive)
-  ;; (ace-link-goto-filter-cmd-button "scrape-bible-references" 'bible-mode-lookup)
-  (ace-link-goto-filter-cmd-button "scrape-bible-references" "sps ebible"))
-
-(defun ace-link-filter-cmd ()
-  (interactive)
-  (let ((scraper
-         (s-replace-regexp
-          " #.*" ""
-          (fz filter-cmd-2-tuples nil nil "filter-cmd: ")))
-        (tup (cadr pen-ivy-result-tuple)))
-    (ace-link-goto-filter-cmd-button scraper tup)))
-
-;; TODO Make a binding for this
-(defun ace-link-filter-ref ()
-  (interactive)
-
-  ;; I should also have actions associated with each filter
-
-  ;; (ace-link-goto-filter-cmd-button (select-filter) 'bible-mode-lookup)
-  (ace-link-goto-filter-cmd-button (select-filter) nil))
-
 (defun ace-link-goto-filter-cmd-button (filter-script callback)
   (interactive (list (read-string "Filter script: ")))
 
@@ -354,9 +287,14 @@ values to copy the link to the clipboard and/or primary as well."
 
   (let ((wordtuples
          ;; filter-cmd-collect handles nil buffer path
-         (filter-cmd-collect filter-script
-                             ;; This could be nil, ie. for *scratch*
-                             buffer-file-name)))
+         (filter-cmd-collect
+          filter-script
+
+          ;; This could be nil, ie. for *scratch*
+          ;; In-fact, it should always be nil, because I want to only use the visible contents of the buffer.
+          ;; buffer-file-name
+
+          nil)))
       (avy-with ace-link-help
       (let ((avy-action
              (eval
@@ -364,7 +302,7 @@ values to copy the link to the clipboard and/or primary as well."
                  (avy-action-goto pt)
                  (let ((result
                         (cl-loop for tp in ',wordtuples
-                                 until (looking-at-p (car tp))
+                                 until (looking-at-p (unregexify (car tp)))
                                  finally return (car tp))))
                    (let ((cb ',callback))
                      (if (and result

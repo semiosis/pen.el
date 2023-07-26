@@ -454,9 +454,10 @@ input_fp="$(cat | tf txt)"
         # cat "$input_fp" | sed -n "s/.*\\b\\($title\\|$title2\\|$title3\\|$title4\\|$title5\\|$title6\\|$title7\\|$title8\\|$title9\?\\)\\b\\( [0-9]\+\\)\?\\(:[0-9]\+\\)\\?.*/\\1\\2\\3/pI"
 
         # This is slow but it works
-        cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b.*/\\1/p"
-        cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\( [0-9]\+\\).*/\\1\\2/pI"
-        cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\( [0-9]\+\\)\\(:[0-9]\+\\).*/\\1\\2\\3/pI"
+        # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b.*/\\1/p"
+        # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\( [0-9]\+\\).*/\\1\\2/pI"
+
+        cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( [0-9]\+\\)\\(:[0-9]\+\\).*/\\1\\2\\3\\4/p"
     done
 } | uniqnosort
 rm "$input_fp"

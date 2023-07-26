@@ -1,5 +1,13 @@
 (require 'subr+)
 
+(defun window-string ()
+  "This gets the string from window-start to window-end"
+  (let* ((cb (current-buffer))
+         (cw (get-buffer-window cb t)))
+    (buffer-substring
+     (window-start cw)
+     (window-end cw))))
+
 ;; tmux avoidance scripts
 
 (defun buffer-substring-of-visible (start end)

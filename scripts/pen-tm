@@ -2726,9 +2726,13 @@ case "$f" in
     ;;
 
     scrapep|scrape-paths) {
-        pen-tm n "$f :: NOT IMPLEMENTED"
-        exit 1
+        cap="$(pen-tm cap)"
+        printf -- "%s" "$cap" | pen-tm -f -S -tout nw -noerror "f filter-things"
 
+        # tm n "$f :: NOT IMPLEMENTED"
+        # exit 1
+
+        # bind J run 'tmux-scrape-path.sh'
     }
     ;;
 
