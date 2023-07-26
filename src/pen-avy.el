@@ -265,8 +265,12 @@ values to copy the link to the clipboard and/or primary as well."
     (-filter (lambda (tp) (and
                            (>= (cdr tp) winstart)
                            (<= (cdr tp) winend)))
-             (mapcar (lambda (tp) (cons (car tp)
-                                        (byte-to-position (+ 1 (cdr tp)))))
+             (mapcar (lambda (tp)
+                       (cons (car tp)
+                             (- (byte-to-position
+                                 (+ (position-bytes winstart)
+                                    (+ 1 (cdr tp))))
+                                1)))
                      tuples)))
 
   ;; (etv (pen-sn (concat (pen-q fp-or-buf) "|" filter-cmd "|" "words-to-avy-tuples " (pen-q fp-or-buf))))
@@ -302,7 +306,7 @@ values to copy the link to the clipboard and/or primary as well."
                  (avy-action-goto pt)
                  (let ((result
                         (cl-loop for tp in ',wordtuples
-                                 until (looking-at-p (unregexify (car tp)))
+                                 until (looking-at-p (pen-unregexify (car tp)))
                                  finally return (car tp))))
                    (let ((cb ',callback))
                      (if (and result
