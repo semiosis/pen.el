@@ -263,7 +263,7 @@
                               poly-markdown-mode))
 
 ;; (defset lisp-mode-funcs '(sly))
-(defset lisp-mode-funcs '())
+(defset lisp-mode-funcs '(slime-edit-uses))
 
 (defset Man-mode-funcs '(Man-follow-manual-reference
                          Man-goto-section))

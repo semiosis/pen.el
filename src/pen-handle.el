@@ -130,8 +130,8 @@
 (handle '(lisp-mode common-lisp-mode slime-repl-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list
-                'sly-mrepl
-                ;; 'slime
+                ;; 'sly-mrepl
+                'slime
                 ;; 'slime-repl
                 )
         :formatters '(lsp-format-buffer)

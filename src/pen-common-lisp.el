@@ -89,6 +89,11 @@
 ;; I don't actually know exactly where this should go.
 (remove-hook 'lisp-mode-hook 'sly-editing-mode)
 
+(define-key slime-mode-indirect-map (kbd "M-?") nil)
+(define-key slime-mode-indirect-map (kbd "M-_") nil)
+
+
+
 ;; sly
 
 ;;(remove-hook lisp-mode-hook 'slime-lisp-mode-hook)
