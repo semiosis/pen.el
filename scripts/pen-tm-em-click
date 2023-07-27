@@ -5,7 +5,7 @@ export TTY
 
 # set -xv
 
-cap_file="$(pen-tm cap -nc -ascify | pen-tf txt; sleep 0.5)"
+cap_file="$(pen-tm cap -nc -ascify | pen-tf txt; sleep 0.1)"
 if [ -s "$cap_file" ]; then
     pen-tm -te nw -n em-click "pen-v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
 
