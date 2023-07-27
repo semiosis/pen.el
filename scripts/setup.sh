@@ -932,6 +932,24 @@ pip3.8 install --force-reinstall aleph-alpha-client
 pip3.8 install bpython
 pip3 install bpython
 
+# Python3.10 for baca - epub viewer
+# apt update
+# make -j 4, also runs tests, annoyingly
+(
+agi build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+mcd $DUMP/programs
+curl -O https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz
+tar Jxf Python-3.10.0.tar.xz
+cd Python-3.10.0
+./configure --enable-optimizations
+make -j 4
+make altinstall
+)
+
+pip3.10 install --force-reinstall ipython
+pip3.10 install bpython
+pip3.10 install baca
+
 (
 cd
 git clone "http://github.com/mullikine/shanepy"
@@ -1183,3 +1201,6 @@ go install github.com/maaslalani/draw@latest
 agi yasm nasm
 
 go install github.com/charmbracelet/gum@latest
+
+agi calibre
+agi sqlite3

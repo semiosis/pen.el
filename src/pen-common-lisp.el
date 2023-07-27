@@ -91,7 +91,7 @@
 
 (define-key slime-mode-indirect-map (kbd "M-?") nil)
 (define-key slime-mode-indirect-map (kbd "M-_") nil)
-
+(define-key slime-editing-map (kbd "M-w") 'slime-macroexpand-all)
 
 
 ;; sly
