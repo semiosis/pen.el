@@ -88,9 +88,9 @@
 
 ;; sly
 
-(require 'sly)
-
 (remove-hook lisp-mode-hook 'slime-lisp-mode-hook)
+
+(require 'sly)
 
 (define-key sly-editing-mode-map (kbd "M-p") nil)
 (define-key sly-editing-mode-map (kbd "M-n") nil)
