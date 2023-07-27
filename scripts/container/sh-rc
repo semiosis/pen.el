@@ -149,7 +149,7 @@ case "$d" in
     G) cmd="vs $HOME/notes/ws/google/searches.org" ;;
     T) cmd="vs $HOME/scripts/tm" ;;
     \+) cmd="vs $HOME/.config/rat/ratrc" ;;
-    f) cmd="v $NOTES/ws/filters/filters.sh" ;;
+    f) cmd="v $PENELD/config/filters.sh" ;;
     l) cmd="pin $MYGIT/semiosis/pen-efm-config/config.yaml" ;;
     H) cmd="vs $HOME/.zsh_history" ;;
     k) cmd="vs -o $HOME/.ghci.hs $HOME/.ghci" ;;

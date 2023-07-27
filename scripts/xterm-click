@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# set -xv
+
 : "${UP:="y"}"
 : "${DOWN:="y"}"
 : "${EXTENDED_MODE:="n"}"
@@ -76,6 +78,8 @@ if test "$EXTENDED_MODE" = "y"; then
     fi
 
 else
+    # j:xterm-mouse--read-number-from-terminal
+
     x="$(pen-chr $(( 33 + $x )) )"
     y="$(pen-chr $(( 33 + $y )) )"
     mousedown="$(pen-chr 32)" # ' '
@@ -93,4 +97,10 @@ else
     code="$mousedown_code$mouseup_code"
 fi
 
-printf -- "%s" "$code"
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    printf -- "%s" "$code" | showansi | hls purple
+else
+    printf -- "%s" "$code"
+fi

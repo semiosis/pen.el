@@ -312,4 +312,4 @@ Argument EVENT mouse event."
     (with-current-buffer (window-buffer window)
       (pen-sn (pen-cmd "z" (get-text-property pos 'help-echo nil))))))
 
-(provide 'pen-calibredb)
+(provide 'pen-calibre)
