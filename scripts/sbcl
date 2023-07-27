@@ -1,4 +1,8 @@
 #!/bin/bash
 export TTY
 
-ros -L sbcl -Q -l /root/.sbclrc run "$@"
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# https://grep.app/search?q=ros.%2Asbcl.%2A--&regexp=true
+
+ros -L sbcl -Q -l /root/.sbclrc run -- "$@"

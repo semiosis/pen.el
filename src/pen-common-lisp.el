@@ -6,6 +6,30 @@
 
 (require 'slime)
 
+(use-package slime
+  :ensure t
+  
+  ;; :config
+  ;; (load (expand-file-name "$HOME/.roswell/helper.el"))
+  
+  ;; $ ros config
+  ;; $ ros use sbcl dynamic-space-size=3905
+  ;; query with: (/ (- sb-vm:dynamic-space-end sb-vm:dynamic-space-start) (expt 1024 2))
+  ;; set memory of sbcl to your machine's RAM size for sbcl and clisp
+  ;; (but for others - I didn't used them yet)
+  (defun linux-system-ram-size ()
+    (string-to-number (shell-command-to-string "free --mega | awk 'FNR == 2 {print $2}'")))
+  ;; (linux-system-ram-size)
+  ;; (setq inferior-lisp-program (concat "ros -Q dynamic-space-size="     
+  ;;                                     (number-to-string (linux-system-ram-size)) 
+  ;;                                     " run"))
+  ;; and for fancier look I personally add:
+  (setq slime-contribs '(slime-fancy))
+  ;; ensure correct indentation e.g. of `loop` form
+  (add-to-list 'slime-contribs 'slime-cl-indent)
+  ;; don't use tabs
+  (setq-default indent-tabs-mode nil))
+
 (setf slime-lisp-implementations
       `((sbcl
          ("sbcl"
@@ -13,6 +37,7 @@
           "2000"))
         (roswell ("ros" "-Q" "run"))))
 
+;; (setq inferior-lisp-program (concat "ros -Q dynamic-space-size=" (number-to-string (linux-system-ram-size)) " run"))
 (setq inferior-lisp-program "ros -L sbcl -Q -l /root/.sbclrc run")
 
 (setf slime-default-lisp 'roswell)
@@ -60,5 +85,14 @@
 
 ;; (define-key lisp-mode-map (kbd "C-x C-e") 'slime-eval-last-expression-in-repl)
 (define-key lisp-mode-map (kbd "C-x C-e") 'slime-eval-last-expression)
+
+;; sly
+
+(require 'sly)
+
+(remove-hook lisp-mode-hook 'slime-lisp-mode-hook)
+
+(define-key sly-editing-mode-map (kbd "M-p") nil)
+(define-key sly-editing-mode-map (kbd "M-n") nil)
 
 (provide 'pen-common-lisp)

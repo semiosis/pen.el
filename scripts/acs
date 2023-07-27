@@ -1,0 +1,15 @@
+#!/bin/bash
+
+( hs "$(basename "$0")" "$@" "#" <== "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+#apt search $@
+
+# using apt-cache instead of apt will do an AND on each argument and
+# bulid a regex to search
+
+# apt-cache search $@
+
+# This makes an emacs split
+# sps search-libraries "$@"
+
+library-search "$@"

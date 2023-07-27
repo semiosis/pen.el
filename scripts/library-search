@@ -1,0 +1,59 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# set -xv
+
+query="$1"
+encoded_query="$(p "$query" | urlencode)"
+
+# Ensure I can search throuh these package managers
+# apt
+# pip (Python)
+# _ (Go) -- Use google to search for go packages. Dep works on URLs for found packages only.
+# raco (Racket)
+
+# ocaml
+# Rust
+# Node
+# Haskell
+# Clojure
+
+{
+    exec 2>&1;
+    set -x
+
+    echo "* apt"
+    # apt-cache search "$query"
+    apt search "$query"
+    echo
+
+    echo "* npm (js)"
+    npm search "$query"
+    echo
+
+    echo "* opam (ocaml)"
+    opam search "$query"
+    echo
+
+    echo "* pip"
+    echo "REMEMBER: pip-show-contents <library>"
+    mypip search "$query"
+    echo
+
+    # website dead?
+    # echo "* go"
+    # timeout 5 elinks-dump "https://go-search.org/search?q=$encoded_query" | sed -n '/^\s\+[0-9]/{p;n;p;n;p}' | s efs
+    # echo
+
+    echo "* raco"
+    # Scrape this somehow
+    # elinks-dump "https://pkgd.racket-lang.org/pkgn/search?q=google" | v
+    curl "https://pkgd.racket-lang.org/pkgn/search?q=$encoded_query" | xurls | grep /package/
+    echo
+
+    echo "* rust"
+    cargo search "$query"
+    echo
+} | pavs
