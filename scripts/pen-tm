@@ -518,7 +518,9 @@ case "$f" in
 
     em-click) { # easymotion click
 
-        cap_file="$(pen-tm cap | pen-tf txt; sleep 0.5)"
+        # set -xv
+
+        cap_file="$(pen-tm cap -nc -ascify | pen-tf txt; sleep 0.5)"
         if [ -s "$cap_file" ]; then
             pen-tm -te nw -n em-click "pen-v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
 
@@ -656,11 +658,11 @@ case "$f" in
         [ -n "$1" ] && x="$1" && shift
         [ -n "$1" ] && y="$1" && shift
 
-        while tmux has-session -t ":em-click"; do
+        while tmux has-session -t ":em-click" 2>/dev/null; do
             sleep 0.1
         done
 
-        pen-tm click -t "wrap:1" "$x" "$y"
+        pen-tm click -x -t "wrap:1" "$x" "$y"
 
         tmux kill-pane -t "wrap:1.0"
     }
@@ -2298,7 +2300,42 @@ case "$f" in
     ;;
 
     cap) {
-        pen-tm -te -d capture -clean -wrap -noabort -
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -c|-clean) {
+                CLEAN=y
+                shift
+            }
+            ;;
+
+            -nc|-noclean) {
+                CLEAN=n
+                shift
+            }
+            ;;
+
+            -ascify) {
+                ASCIFY=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        : "${CLEAN:="y"}"
+
+        if test "$CLEAN" = "y"; then
+            set -- -clean "$@"
+        else
+            set -- -nc "$@"
+        fi
+
+        if test "$ASCIFY" = "y"; then
+            set -- -ascify "$@"
+        fi
+
+        pen-tm -te -d capture "$@" -wrap -noabort -
     }
     ;;
 
@@ -2403,6 +2440,7 @@ case "$f" in
 
         ANSI=n
         ANSI=y
+        CLEAN=y
         DO_SEND_KEYS=n
         SCROLLBACK=-32768
         CAPTURE_OPTIONS=" -J "
@@ -2419,13 +2457,34 @@ case "$f" in
             ;;
 
             -c|-clean) {
-
+                ANSI=n
                 CLEAN=y
+
+                shift
+            }
+            ;;
+
+            -nc|-noclean) {
+                CLEAN=n
+
+                shift
+            }
+            ;;
+
+            -ascify) {
+                ASCIFY=y
+
+                shift
+            }
+            ;;
+
+            -noansi) {
                 ANSI=n
 
                 shift
             }
             ;;
+
 
             -tty) {
                 STDOUT=n
@@ -2616,7 +2675,13 @@ case "$f" in
             tmux save-buffer "$np"
         fi
 
-        cat "$np" | clean-term-capture | pen-sponge "$np"
+        if test "$CLEAN" = "y"; then
+            cat "$np" | clean-term-capture | sponge "$np"
+        fi
+
+        if test "$ASCIFY" = "y"; then
+            cat "$np" | pen-c ascify | sponge "$np"
+        fi
 
         if test "$STDOUT" = ""; then
             if is_tty; then
