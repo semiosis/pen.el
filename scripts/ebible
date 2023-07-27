@@ -6,7 +6,7 @@ export TTY
 sn="$(basename -- "$0")"
 
 case "$sn" in
-    ebible) {
+    bl:ebible) {
         # default
         module=NASB
     }
@@ -32,6 +32,8 @@ case "$sn" in
     }
     ;;
 esac
+
+: "${module:="NASB"}"
 
 if test "$1"; then
     ref="$@"
