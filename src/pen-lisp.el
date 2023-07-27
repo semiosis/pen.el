@@ -177,20 +177,20 @@ clojure and perhaps all lisp modes. Done."
 (define-key pen-lisp-mode-map (kbd "h") #'pen-lispy-delete-or-h)
 (define-key pen-lisp-mode-map (kbd "DEL") #'pen-lispy-delete-or-c-h) ; C-h is translated to DEL which is bound to this
 
-(defun sly-db-goto-source ()
-  (interactive)
-  (message "sly-db-goto-source: Not implemented"))
+;; (defun sly-db-goto-source ()
+;;   (interactive)
+;;   (message "sly-db-goto-source: Not implemented"))
 
-(defun pen-sly-connect ()
-  (interactive)
-  (let ((sb (get-buffer "*sly-mrepl for sbcl*")))
-    (if sb
-        (progn
-          (message "sly already running"))
-      (progn
-        (sly--purge-connections)
-        (sly "sbcl" nil t)))))
+;; (defun pen-sly-connect ()
+;;   (interactive)
+;;   (let ((sb (get-buffer "*sly-mrepl for sbcl*")))
+;;     (if sb
+;;         (progn
+;;           (message "sly already running"))
+;;       (progn
+;;         (sly--purge-connections)
+;;         (sly "sbcl" nil t)))))
 
-(add-hook 'lisp-mode-hook 'pen-sly-connect)
+;; (add-hook 'lisp-mode-hook 'pen-sly-connect)
 
 (provide 'pen-lisp)
