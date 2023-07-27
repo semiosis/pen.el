@@ -519,23 +519,7 @@ case "$f" in
     em-click) { # easymotion click
 
         # set -xv
-
-        cap_file="$(pen-tm cap -nc -ascify | pen-tf txt; sleep 0.5)"
-        if [ -s "$cap_file" ]; then
-            pen-tm -te nw -n em-click "pen-v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
-
-            x="$(cat /tmp/em-click.txt | cut -d ' ' -f 2)"
-            y="$(cat /tmp/em-click.txt | cut -d ' ' -f 1)"
-
-            if [ -n "$x" ] && [ -n "$y" ]; then
-                x=$((x - 1))
-                y=$((y - 1))
-
-                sleep 1
-
-                pen-tm click-wrap $x $y
-            fi
-        fi
+        pen-tm-em-click
 
         exit 0
     }
@@ -640,31 +624,8 @@ case "$f" in
     ;;
 
     click-wrap) { # start wrapper and then click on it
-        swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
-        sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
-        sheight="$(( sheight + 2 ))"
-
-        tmux \
-            new-session -d \
-                -x "$swidth" \
-                -y "$sheight" \
-                -A \
-                -s wrap \
-                \; \
-            respawnp -k \
-                -t "wrap:1" \
-                "TMUX= tmux attach -t \"$CALLER_TARGET\""
-
-        [ -n "$1" ] && x="$1" && shift
-        [ -n "$1" ] && y="$1" && shift
-
-        while tmux has-session -t ":em-click" 2>/dev/null; do
-            sleep 0.1
-        done
-
-        pen-tm click -x -t "wrap:1" "$x" "$y"
-
-        tmux kill-pane -t "wrap:1.0"
+        export CALLER_TARGET
+        tm-click-wrap "$@"
     }
     ;;
 

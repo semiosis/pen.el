@@ -1,0 +1,35 @@
+#!/bin/bash
+export TTY
+
+swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
+sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
+sheight="$(( sheight + 2 ))"
+
+server="$(pen-tm-get-server)"
+
+# Don't use tm attach, to make this faster.
+tmux \
+    new-session -d \
+        -x "$swidth" \
+        -y "$sheight" \
+        -A \
+        -s wrap \
+        \; \
+    respawnp -k \
+        -t "wrap:1" \
+        "TMUX= tmux -L $server attach -t \"$CALLER_TARGET\""
+
+[ -n "$1" ] && x="$1" && shift
+[ -n "$1" ] && y="$1" && shift
+
+# Wait for C-M-f to close
+while tmux has-session -t ":em-click"; do
+    sleep 0.1
+done
+
+# sleep 1
+tm-click -x -t "wrap:1" "$x" "$y"
+
+# sleep 0.2
+
+tmux kill-pane -t "wrap:1.0"

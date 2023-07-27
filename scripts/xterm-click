@@ -51,7 +51,9 @@ fi
 
 : ${TTY:="$(tty)"}
 
-pen-chr () {
+
+# Make it faster
+chr () {
 	printf "\\$(printf '%03o' "$1")"
 }
 

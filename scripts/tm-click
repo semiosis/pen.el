@@ -1,0 +1,68 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -t) {
+        TMUX_PANE="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -x) {
+        export EXTENDED_MODE=y
+        shift
+    }
+    ;;
+
+    -r) {
+        export RIGHT=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+[ -n "$1" ] && x="$1" && shift
+[ -n "$1" ] && y="$1" && shift
+
+: ${TMUX_PANE:="$CALLER_PANE"}
+
+# tm cursor
+if test -z "$x"; then
+    x="$(tmux display -t "$TMUX_PANE" -p "#{cursor_x}")"
+fi
+if test -z "$y"; then
+    y="$(tmux display -t "$TMUX_PANE" -p "#{cursor_y}")"
+fi
+
+# ns "$f $TMUX_PANE $x $y" &>/dev/null
+
+if [ -n "$TMUX_PANE" ] && [ -n "$x" ] && [ -n "$y" ]; then
+    case "$f" in
+        mousedown) {
+            tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -d $x $y)"
+        }
+        ;;
+
+        mouseup) {
+            tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -u $x $y)"
+        }
+        ;;
+
+        click|mouseclick|*) {
+            downcode="$(xterm-click -d $x $y)"
+            upcode="$(xterm-click -u $x $y)"
+            tmux send-keys -t "$TMUX_PANE" -l "$downcode"
+            sleep 0.2
+            tmux send-keys -t "$TMUX_PANE" -l "$upcode"
+        }
+        ;;
+
+        *)
+    esac
+fi
+exit 0

@@ -1,0 +1,57 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -x) {
+        export EXTENDED_MODE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+pane="$1"
+
+x="$2"
+y="$3"
+
+export TMUX_PANE="$pane"
+
+# This breaks it
+# test-tty-click "%1420" 159 26
+
+if test -n "$x"; then
+    # tm click -t "$pane" "$x" "$y"
+    tm-click -t "$pane" "$x" "$y"
+    exit
+fi
+
+w="$(tmux display -t "$pane" -p "#{pane_width}")"
+h="$(tmux display -t "$pane" -p "#{pane_height}")"
+
+w="$(( w - 1 ))"
+h="$(( h - 1 ))"
+
+for (( i = 0; i <= "$w"; i++ )); do
+    for (( j = 0; j <= "$h"; j++ )); do
+        # tm click is far too slow
+        # tm click -t "$pane" "$i" "$j"
+        tm-click -t "$pane" "$i" "$j"
+    done
+done
+
+for (( i = "$w"; i >= 0; i-- )); do
+    for (( j = "$h"; j >= 0; j-- )); do
+        echo "$j"
+        # tmux send-keys -t "$pane" -l "$j"
+        # tm click is far too slow
+        # tm click -t "$pane" "$i" "$j"
+
+        # Put into separate script to speed it up
+        tm-click -t "$pane" "$i" "$j"
+    done
+done

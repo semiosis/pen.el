@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+# I want to avoid the tm script
+
+# set -xv
+
+cap_file="$(pen-tm cap -nc -ascify | pen-tf txt; sleep 0.5)"
+if [ -s "$cap_file" ]; then
+    pen-tm -te nw -n em-click "pen-v -c 'set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
+
+    x="$(cat /tmp/em-click.txt | cut -d ' ' -f 2)"
+    y="$(cat /tmp/em-click.txt | cut -d ' ' -f 1)"
+
+    if [ -n "$x" ] && [ -n "$y" ]; then
+        x=$((x - 1))
+        y=$((y - 1))
+
+        # The little sleep after vim closes
+        # sleep 0.5
+        sleep 0.1
+
+        # click-wrap has as a side-effect the important job of
+        # converting extended-mode clicks into
+        # more compatible ones
+        pen-tm click-wrap $x $y
+    fi
+fi
