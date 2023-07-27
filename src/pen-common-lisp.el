@@ -86,6 +86,8 @@
 ;; (define-key lisp-mode-map (kbd "C-x C-e") 'slime-eval-last-expression-in-repl)
 (define-key lisp-mode-map (kbd "C-x C-e") 'slime-eval-last-expression)
 
+(remove-hook 'lisp-mode-hook 'sly-editing-mode)
+
 ;; sly
 
 ;;(remove-hook lisp-mode-hook 'slime-lisp-mode-hook)
