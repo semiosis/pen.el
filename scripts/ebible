@@ -6,7 +6,7 @@ export TTY
 sn="$(basename -- "$0")"
 
 case "$sn" in
-    bl:ebible) {
+    bl|ebible) {
         # default
         module=NASB
     }
