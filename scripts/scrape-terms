@@ -9,7 +9,7 @@ if test -x "$terms_script"; then
 elif test -f "$terms_script"; then
     # terms_fp="$terms_script"
     terms_fp="$(0</dev/null cat "$terms_script" | tf txt)"
-elif which "$terms_script"; then
+elif which "$terms_script" &>/dev/null; then
     terms_fp="$(0</dev/null "$terms_script" | tf txt)"
 elif test -n "$terms_script"; then
     terms_fp="$(0</dev/null eval "$terms_script" | tf txt)"
