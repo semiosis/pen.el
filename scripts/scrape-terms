@@ -1,0 +1,35 @@
+#!/bin/bash
+export TTY
+
+terms_script="$1"
+test -n "$terms_script" || exit
+
+if test -x "$terms_script"; then
+    terms_fp="$(0</dev/null "$terms_script" | tf txt)"
+elif test -f "$terms_script"; then
+    # terms_fp="$terms_script"
+    terms_fp="$(0</dev/null cat "$terms_script" | tf txt)"
+elif which "$terms_script"; then
+    terms_fp="$(0</dev/null "$terms_script" | tf txt)"
+elif test -n "$terms_script"; then
+    terms_fp="$(0</dev/null eval "$terms_script" | tf txt)"
+fi
+
+# cat > /dev/null
+0</dev/null cat "$terms_fp" | grep -iP "^[a-zA-Z ]+$" | sed 's/^\(.*\)$/\\b\1\\b/' | sponge "$terms_fp"
+
+# unbuffer sps v "$terms_fp"
+# exit
+
+grep -f "$terms_fp" -o | uniqnosort
+rm "$terms_fp"
+
+# input_fp="$(cat | tf txt)"
+# {
+#     printf -- "%s" "$terms" | head -n 10 | grep -P "^[a-zA-Z ]+$" | while IFS=$'\n' read -r term; do
+#         0</dev/null cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($term\\)\\b.*/\\1\\n/p"
+#         # 0</dev/null cmd sed -n "s/\\b\\($term\\)\\b/\\1\\n/p"
+#         echo
+#     done
+# } # | uniqnosort
+# rm "$input_fp"
