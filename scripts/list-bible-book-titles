@@ -1,23 +1,6 @@
 #!/bin/bash
 export TTY
 
-# TODO Start by generating all the desired regexes for all
-# bible references.
-
-# $EMACSD/config/my-bible-mode.el
-# $DUMP/tmp/scratch0Ppvf4.txt
-
-# sed -n 's/.*\(Psalms\?\)\( [0-9]\+\)\?\(:[0-9]\+\)\?.*/\1\2\3/p' | uniqnosort
-
-# cat $PENEL_DIR/src/pen-avy.el | scrape-bible-references
-
-# I need to combine a lot of seds
-# use sed's -f script.sed
-
-# The most efficient way to do this is probably with perl, but oh well.
-# I have to make this very efficient
-
-# list-bible-book-titles
 IFS= read -r -d '' booktitles <<HEREDOC
 Genesis
 Gen
@@ -431,34 +414,4 @@ Rev
 Re
 HEREDOC
 
-# Thankfully there is a multiple of 10 number of books
-
-input_fp="$(cat | tf txt)"
-{
-    
-    printf -- "%s" "$booktitles" | while IFS=$'\n' read -r title; do
-        #read -r title2
-        #read -r title3
-        #read -r title4
-        #read -r title5
-        #read -r title6
-        #read -r title7
-        #read -r title8
-        #read -r title9
-
-        # But there might be more than one verse on the same line
-        # But it's unlikely, so keep it like this.
-        # Otherwise, I can reduce it to one title,
-        # and it will be slower, but more accurate
-        # cat "$input_fp" | sed -n "s/.*\\b\\($title\\|$title2\\|$title3\\|$title4\\|$title5\\|$title6\\|$title7\\|$title8\\|$title9\?\\)\\b.*/\\1/p"
-        # cat "$input_fp" | sed -n "s/.*\\b\\($title\\|$title2\\|$title3\\|$title4\\|$title5\\|$title6\\|$title7\\|$title8\\|$title9\?\\)\\b\\( [0-9]\+\\)\?.*/\\1\\2/pI"
-        # cat "$input_fp" | sed -n "s/.*\\b\\($title\\|$title2\\|$title3\\|$title4\\|$title5\\|$title6\\|$title7\\|$title8\\|$title9\?\\)\\b\\( [0-9]\+\\)\?\\(:[0-9]\+\\)\\?.*/\\1\\2\\3/pI"
-
-        # This is slow but it works
-        # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b.*/\\1/p"
-        # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\( [0-9]\+\\).*/\\1\\2/pI"
-
-        cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( [0-9]\+\\)\\?\\(:[0-9]\+\\)\\?.*/\\1\\2\\3\\4/p"
-    done
-} | uniqnosort
-rm "$input_fp"
+printf -- "%s\n" "$booktitles"
