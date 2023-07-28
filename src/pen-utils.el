@@ -109,6 +109,16 @@
 (defalias 'write-string-to-file 'cat-to-file)
 (defalias 'write-to-file 'cat-to-file)
 
+(defun append-uniq-to-file (stdin file_path)
+  (sn
+   (concat "cat " (q file_path) " | uniqnosort | sponge " (q file_path)) stdin))
+
+;; append-to-file is a builtin. I shouldn't do this
+(defun my-append-to-file (stdin file_path)
+  (sn
+   (concat "cat >> " (q file_path)) stdin))
+(defalias 'append-string-to-file 'my-append-to-file)
+
 (defun new-buffer-from-string-or-selected (&optional s)
   (interactive)
   (if (and (pen-selected-p)

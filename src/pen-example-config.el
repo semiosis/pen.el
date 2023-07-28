@@ -956,7 +956,10 @@
 (define-key prog-mode-map (kbd "H-}") 'handle-callers)
 (define-key prog-mode-map (kbd "H-u") nil)
 (define-key prog-mode-map (kbd "H-*") 'handle-refactor)
-(define-key prog-mode-map (kbd "H-v") 'handlenav/body)
+
+;; Bible
+;; (define-key prog-mode-map (kbd "H-v") 'handlenav/body)
+;; (define-key prog-mode-map (kbd "H-v") nil)
 (define-key prog-mode-map (kbd "M-J") 'evil-join)
 (define-key prog-mode-map (kbd "C-c C-o") 'org-open-at-point)
 (define-key prog-mode-map (kbd "<help> f") 'handle-docfun)

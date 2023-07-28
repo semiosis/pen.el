@@ -1235,7 +1235,7 @@ non-nil."
 (defun urls-in-region-or-buffer (&optional s)
   (let ((mediastring
          (cond
-          ((major-mode-p 'eww-mode) (textprops-in-region-or-buffer))
+          ((major-mode-p 'eww-mode) (pen-textprops-in-region-or-buffer))
           (t (selection-or-buffer-string)))))
     (sh/ptw/uniqnosort (sh/ptw/xurls mediastring))))
 

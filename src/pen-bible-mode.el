@@ -345,6 +345,111 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 (advice-add 'bible-mode--display :around #'bible-mode--display-around-advice)
 ;; (advice-remove 'bible-mode--display #'bible-mode--display-around-advice)
 
+
+;; TODO Make it so God's names are all highlighted by passing each bit of text through a matcher?
+(defun bible-mode--insert-domnode-recursive(node dom &optional iproperties notitle)
+  "Recursively parses a domnode from `libxml-parse-html-region''s usage on text
+produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with properties."
+  ;; (lo node)
+  ;; (lo (dom-tag node))
+  ;; (lo (dom-text node))
+  (if (equal (dom-tag node) 'divinename)
+      (progn
+        ;; (lo node)
+        (setq iproperties (plist-put iproperties 'divinename t))))
+  
+  (if (equal (dom-attr node 'who) "Jesus") 
+      (setq iproperties (plist-put iproperties 'jesus t)))
+
+  (if (and (not notitle) (equal (dom-tag node) 'title)) ;;newline at start of title (i.e. those in Psalms)
+      (insert "\n"))
+
+  (dolist (subnode (dom-children node))
+    (if (and notitle (equal (dom-tag node) 'title))
+        (return))
+    (if (stringp subnode)
+        (progn
+          (let* (
+                 (verse-start (string-match ".+?:[0-9]?[0-9]?[0-9]?:" subnode))
+                 verse-start-text
+                 verse-match)
+            (if verse-start
+                (setq verse-match (string-trim (match-string 0 subnode))
+                      verse-start-text (string-trim-left (substring subnode verse-start (length subnode)))
+                      subnode (concat (substring subnode 0 verse-start) verse-start-text)))
+            (insert (string-trim-right subnode))
+            ;; (lo iproperties)
+            (cond
+             ((plist-get iproperties 'jesus)
+              (put-text-property (- (point) (length (string-trim-right subnode))) (point) 'font-lock-face '(:foreground "red")))
+             ((plist-get iproperties 'divinename)
+              (put-text-property (- (point) (length (string-trim-right subnode))) (point) 'font-lock-face '(:foreground "orange")))
+             (verse-start
+              (let* (
+                     (start (- (point) (length (string-trim-right verse-start-text)))))
+                (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "purple")))))))
+      (progn
+        ;; This does more than just the starting space
+        (if (and (not (eq (dom-tag subnode) 'p)) (not (eq (dom-tag subnode) 'q)) (not (eq "" (dom-text subnode))))
+            (insert " "))
+
+        (bible-mode--insert-domnode-recursive subnode dom iproperties notitle)
+
+        (if (and bible-mode-word-study-enabled (not (stringp subnode))) ;;word study. Must be done after subnode is inserted recursively.
+            (let (
+                  (savlm (dom-attr subnode 'savlm))
+                  (match 0)
+                  (matchstrlen 0)
+                  (iter 0)
+                  floating
+                  refstart
+                  refend)
+              (if savlm
+                  (progn
+                    (while match ;;Greek
+                      (if (> match 0)
+                          (progn
+                            (setq floating (or (> matchstrlen 0) (string-empty-p (dom-text subnode)))
+                                  matchstrlen (length (match-string 0 savlm)))
+                            (insert (if floating " " "") (match-string 0 savlm))
+                            (setq refstart (- (point) matchstrlen)
+                                  refend (point))
+                            (put-text-property refstart refend 'font-lock-face `(
+                                                                                 :foreground "cyan"
+                                                                                 :height ,(if (not floating) .7)))
+                            (put-text-property refstart refend 'keymap bible-mode-greek-keymap)
+                            (if (not floating)
+                                (put-text-property refstart refend 'display '(raise .6)))))
+                      (setq match (string-match "G[0-9]+" savlm (+ match matchstrlen))))
+
+                    (if (string-match "lemma.TR:.*" savlm) ;;Lemma
+                        (dolist (word (split-string (match-string 0 savlm) " "))
+                          (setq word (replace-regexp-in-string "[.:a-zA-Z0-9]+" "" word))
+                          (insert " " word)
+                          (setq refstart (- (point) (length word))
+                                refend (point))
+                          (put-text-property refstart refend 'font-lock-face `(:foreground "cyan"))
+                          (put-text-property refstart refend 'keymap bible-mode-lemma-keymap)))
+
+                    (if (string-match "strong:H.*" savlm) ;;Hebrew
+                        (dolist (word (split-string (match-string 0 savlm) " "))
+                          (setq iter (+ iter 1))
+                          (setq word (replace-regexp-in-string "strong:" "" word))
+                          (insert (if (eq iter 1) "" " ") word)
+                          (setq refstart (- (point) (length word))
+                                refend (point))
+                          (put-text-property refstart refend 'font-lock-face `(
+                                                                               :foreground "cyan"
+                                                                               :height ,(if (eq iter 1) .7)))
+                          (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))))))))))
+
+  (if (equal (dom-tag node) 'title) ;;newline at end of title (i.e. those in Psalms)
+      (insert "\n"))
+
+  ;; (while (re-search-forward ":[^0-9]" nil t)
+  ;;   (replace-match ": "))
+  )
+
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
 

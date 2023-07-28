@@ -1775,7 +1775,7 @@ instead of `browse-url-new-window-flag'."
     (sleep 2)))
 
 (defun buffer-links ()
-  (urls-in-region-or-buffer (textprops-in-region-or-buffer)))
+  (urls-in-region-or-buffer (pen-textprops-in-region-or-buffer)))
 (defalias 'eww-buffer-links 'buffer-links)
 
 (defun eww-crawl (url)
