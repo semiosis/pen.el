@@ -396,7 +396,6 @@ argument, prompt for a regular expression using `read-regexp'."
     (set-face-foreground 'selectrum-group-title "#262626")
     ;; (set-face-foreground 'selectrum-quick-keys-highlight "#262626")
 
-
     (set-face-background 'selectrum-completion-annotation "#d72f4f")
     (set-face-background 'selectrum-completion-docsig "#d72f4f")
     (set-face-background 'selectrum-current-candidate "#d72f4f")
