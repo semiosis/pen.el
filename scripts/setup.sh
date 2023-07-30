@@ -1204,3 +1204,6 @@ go install github.com/charmbracelet/gum@latest
 
 agi calibre
 agi sqlite3
+
+# Generate epub from website, then use it in Baca
+npm install -g percollate

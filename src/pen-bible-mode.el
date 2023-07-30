@@ -45,7 +45,7 @@
 
 (defun bible-mode--open-search(query searchmode)
   "Opens a search buffer of QUERY using SEARCHMODE."
-  (let 
+  (let
       (
        (buf (get-buffer-create (concat "*bible-search-" (downcase bible-mode-book-module) "-" query "*"))))
     (set-buffer buf)
@@ -357,8 +357,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (progn
         ;; (lo node)
         (setq iproperties (plist-put iproperties 'divinename t))))
-  
-  (if (equal (dom-attr node 'who) "Jesus") 
+
+  (if (equal (dom-attr node 'who) "Jesus")
       (setq iproperties (plist-put iproperties 'jesus t)))
 
   (if (and (not notitle) (equal (dom-tag node) 'title)) ;;newline at start of title (i.e. those in Psalms)
@@ -367,6 +367,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (dolist (subnode (dom-children node))
     (if (and notitle (equal (dom-tag node) 'title))
         (return))
+
+    ;; (lo subnode)
+
     (if (stringp subnode)
         (progn
           (let* (
@@ -377,7 +380,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                 (setq verse-match (string-trim (match-string 0 subnode))
                       verse-start-text (string-trim-left (substring subnode verse-start (length subnode)))
                       subnode (concat (substring subnode 0 verse-start) verse-start-text)))
-            (insert (string-trim-right subnode))
+            ;; (insert (string-trim-right subnode))
+            (insert subnode)
             ;; (lo iproperties)
             (cond
              ((plist-get iproperties 'jesus)
@@ -386,7 +390,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
               (put-text-property (- (point) (length (string-trim-right subnode))) (point) 'font-lock-face '(:foreground "orange")))
              (verse-start
               (let* (
-                     (start (- (point) (length (string-trim-right verse-start-text)))))
+                     ;; (start (- (point) (length (string-trim-right verse-start-text))))
+                     (start (- (point) (length verse-start-text))))
+                ;; (lo verse-start-text)
                 (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "purple")))))))
       (progn
         ;; This does more than just the starting space
@@ -448,7 +454,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   ;; (while (re-search-forward ":[^0-9]" nil t)
   ;;   (replace-match ": "))
-  )
+
+  ;; This must be a hack but it seems to work
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward "  " nil t)
+      (replace-match " "))))
 
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)

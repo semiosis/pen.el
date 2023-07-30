@@ -20,6 +20,11 @@ fp="$1"
 fp="$(p "$fp" | sed 's/^file:\/\///')"
 test -n "$fp" || exit 1
 
+if pl "$fp" | grep -q -P 'https?://'; then
+    unbuffer nw eww "$fp"
+    exit
+fi
+
 if test -d "$fp"; then
     unbuffer nw ranger "$fp"
 else

@@ -1,5 +1,8 @@
 ;; This is so emacs can run in a terminal
 
+(defun lo-display ()
+  (interactive)
+  (sps "tail -f /tmp/yo.txt"))
 
 (defun lo (o)
   "log object"
@@ -24,7 +27,7 @@
         (let ((n 0))
           (while (progn
                    (setq c (read-char))
-                   (lo (char-to-string c))
+                   ;; (lo (char-to-string c))
                    (<= ?0 c ?9))
             (setq n (+ (* 10 n) c (- ?0))))
           (cons n c))
@@ -44,7 +47,8 @@
        (`(,y . ,c) (xterm-mouse--read-number-from-terminal extension))
        (wheel (/= (logand code 64) 0))
        (move (/= (logand code 32) 0))
-       (ctrl (/= (lo (logand (lo code) 16)) 0))
+       ;; (ctrl (/= (lo (logand (lo code) 16)) 0))
+       (ctrl (/= (logand code 16) 0))
        (meta (/= (logand code 8) 0))
        (shift (/= (logand code 4) 0))
        (down (and (not wheel)
@@ -97,7 +101,7 @@
                               ;; (mouse-5 13 13)
                               (number-to-string btn))))))
 
-    (lo (list sym (1- x) (1- y)))
+    ;; (lo (list sym (1- x) (1- y)))
     (list sym (1- x) (1- y))))
 
 ;; (defun xterm-mouse--read-coordinate ()

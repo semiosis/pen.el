@@ -2116,6 +2116,7 @@ May use to generate code from comments."
 (require 'pen-func-lists)
 (require 'pen-right-click-menu)
 (require 'pen-mouse)
+(require 'pen-xt-mouse)
 (require 'pen-prompt-description)
 (require 'pen-colorise)
 (require 'pen-creation)
