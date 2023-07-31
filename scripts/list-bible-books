@@ -70,4 +70,4 @@ Jude
 Revelation of John
 HEREDOC
 
-printf -- "%s\n" "$booktitles" | pa -E colvs
+printf -- "%s" "$booktitles" | pa -E colvs

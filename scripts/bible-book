@@ -11,7 +11,7 @@ is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 case "$sn" in
     bible-book) {
         if is_tty; then
-            book="$(list-bible-books | mfz)"
+            book="$(list-bible-books | mfz -nv)"
             if test -z "$book"; then
                 exit
             fi

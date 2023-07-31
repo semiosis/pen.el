@@ -73,6 +73,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         :
     }
     ;;
+    
+    -num) {
+        enumerate=y
+        shift
+    }
+    ;;
 
     -pd) {
         export FZF_PREPEND_DIR=y
@@ -220,6 +226,12 @@ filter_in() {
             cat
         fi
     } | {
+        if test "$enumerate" = "y"; then
+            cat -n
+        else
+            cat
+        fi
+    } | {
         if test "$do_reverse" = "y"; then
             tac
         else
@@ -232,6 +244,12 @@ filter_out() {
     {
         if test "$FZF_PREPEND_DIR" = "y"; then
             prepend-string "$CWD/"
+        else
+            cat
+        fi
+    } | {
+        if test "$enumerate" = "y"; then
+            sed 's/^\s\+[0-9]\+\s\+//'
         else
             cat
         fi
