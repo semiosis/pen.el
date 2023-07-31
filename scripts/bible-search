@@ -3,10 +3,30 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+sn="$(basename -- "$0")"
+
+if ! inside-docker-p && docker-running-p; then
+    is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+    if is_tty; then
+        in-pen in-tm "$sn" "$@"
+    else
+        in-pen "$sn" "$@"
+    fi
+
+    exit "$?"
+fi
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -g) {
         getverses=y
+        shift
+    }
+    ;;
+
+    -j) {
+        getverses=n
         shift
     }
     ;;
@@ -29,6 +49,7 @@ esac; done
 
 : "${module:="NASB"}"
 : "${searchtype:="phrase"}"
+: "${getverses:="n"}"
 
 # phrase search is much better
 # : "${searchtype:="lucene"}"
