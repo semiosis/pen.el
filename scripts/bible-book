@@ -12,6 +12,9 @@ case "$sn" in
     bible-book) {
         if is_tty; then
             book="$(list-bible-books | mfz)"
+            if test -z "$book"; then
+                exit
+            fi
         else
             book=Genesis
         fi
