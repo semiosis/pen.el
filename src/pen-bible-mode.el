@@ -146,14 +146,18 @@
     ("Jude" "Jud" "Jd")
     ("Revelation of John" "Revelation" "Rev" "Re")))
 
-(defun bible-canonicalise-ref (ref)
+(defun bible-canonicalise-ref (ref &optional nilfailure)
   (setq ref (esed "\\.$" "" ref))
   (cl-loop for tp in bible-book-map-names
-           until (member ref (cdr tp))
+           until ;; (member ref (cdr tp))
+           (member ref tp)
            finally return
-           (if (member ref (cdr tp))
+           (if ;; (member ref (cdr tp))
+               (member ref tp)
                (car tp)
-             ref)))
+             (if nilfailure
+                 nil
+               ref))))
 
 ;; TODO Generate this list
 ;; TODO Also have a map which translates into these
@@ -248,24 +252,35 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
   ;; (mapcar 'car bible-mode-book-chapters)
 
-  (cond
-   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
-    nil)
-   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?" text)
-    (setq text (concat (match-string 0 text) ":")))
-   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:" text)
-    (setq text (concat text "1:")))
-   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?" text)
-    (setq text (concat text ":1:")))
-   ((re-match-p ".+ " text)
-    (setq text (concat text "1:1:")))
-   ((re-match-p ".+" text)
-    (setq text (concat text " 1:1:"))))
+  (let* ((ot text)
 
-  (let* (
+         (maybebook
+          (bible-canonicalise-ref ot t))
+
+         (text
+          (if maybebook
+              (concat maybebook " 1")
+            text))
+
+         (text (cond
+                ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
+                 text)
+                ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?" text)
+                 (concat (match-string 0 text) ":"))
+                ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:" text)
+                 (concat text "1:"))
+                ((re-match-p ".+ [0-9]?[0-9]?[0-9]?" text)
+                 (concat text ":1:"))
+                ((re-match-p ".+ " text)
+                 (concat text "1:1:"))
+                ((re-match-p ".+" text)
+                 (concat text " 1:1:"))
+                (t text)))
+
          book
          chapter
          verse)
+
     (string-match ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
     (setq text (match-string 0 text))
 
@@ -274,6 +289,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
     (string-match ":[0-9]?[0-9]?[0-9]?" text)
     (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
+
     (setq book
           (bible-canonicalise-ref
            (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text)))
@@ -459,7 +475,18 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (save-excursion
     (beginning-of-buffer)
     (while (re-search-forward "  " nil t)
-      (replace-match " "))))
+      (replace-match " ")))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward " $" nil t)
+      (delete-backward-char 1)))
+
+  (save-excursion
+    (end-of-buffer)
+    (while (looking-at-p "^$")
+      (delete-backward-char 1)
+      (end-of-buffer))))
 
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
