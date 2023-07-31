@@ -363,7 +363,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
 
 ;; TODO Make it so God's names are all highlighted by passing each bit of text through a matcher?
-(defun bible-mode--insert-domnode-recursive(node dom &optional iproperties notitle)
+(defun bible-mode--insert-domnode-recursive (node dom &optional iproperties notitle)
   "Recursively parses a domnode from `libxml-parse-html-region''s usage on text
 produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with properties."
   ;; (lo node)
@@ -438,10 +438,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                   refend (point))
                             (put-text-property refstart refend 'font-lock-face `(
                                                                                  :foreground "cyan"
-                                                                                 :height ,(if (not floating) .7)))
+                                                                                 :height ,(if (not floating) 0.7)))
                             (put-text-property refstart refend 'keymap bible-mode-greek-keymap)
                             (if (not floating)
-                                (put-text-property refstart refend 'display '(raise .6)))))
+                                (put-text-property refstart refend 'display '(raise 0.6)))))
                       (setq match (string-match "G[0-9]+" savlm (+ match matchstrlen))))
 
                     (if (string-match "lemma.TR:.*" savlm) ;;Lemma
@@ -462,20 +462,47 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                 refend (point))
                           (put-text-property refstart refend 'font-lock-face `(
                                                                                :foreground "cyan"
-                                                                               :height ,(if (eq iter 1) .7)))
+                                                                               :height ,(if (eq iter 1) 0.7)))
                           (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))))))))))
 
   (if (equal (dom-tag node) 'title) ;;newline at end of title (i.e. those in Psalms)
       (insert "\n"))
 
-  ;; (while (re-search-forward ":[^0-9]" nil t)
-  ;;   (replace-match ": "))
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward ":[^0-9 ]" nil t)
+      (backward-char)
+      (insert " ")
+      ;; (replace-match ": ")
+      ))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward "[;,.!?]" nil t)
+      (insert " ")))
 
   ;; This must be a hack but it seems to work
   (save-excursion
     (beginning-of-buffer)
-    (while (re-search-forward "  " nil t)
+    (while (re-search-forward "  +" nil t)
       (replace-match " ")))
+
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward " [’”]" nil t)
+      (backward-char 1)
+      (delete-backward-char 1)))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward "[‘“] " nil t)
+      (delete-backward-char 1)))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward " , " nil t)
+      (replace-match ", ")))
 
   (save-excursion
     (beginning-of-buffer)
