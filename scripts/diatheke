@@ -7,4 +7,15 @@ export TTY
 
 test -f /usr/bin/diatheke || agi diatheke &>/dev/null
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    --help) {
+        in-pen /usr/bin/diatheke "$@" 2>&1 | pavs
+        exit "$?"
+    }
+    ;;
+
+    *) break;
+esac; done
+
 in-pen /usr/bin/diatheke "$@"
