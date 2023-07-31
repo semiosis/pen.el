@@ -83,7 +83,9 @@
                            (let* (
                                   (html-dom-tree (libxml-parse-html-region (point-min) (point-max))))
                              (erase-buffer)
-                             (bible-mode--insert-domnode-recursive (dom-by-tag html-dom-tree 'body) html-dom-tree nil t)
+                             (bible-mode--insert-domnode-recursive
+                              (dom-by-tag html-dom-tree 'body) html-dom-tree nil t
+                              term)
 
                              (goto-char (point-min))
                              (while (search-forward (concat "(" bible-mode-book-module ")") nil t)
@@ -406,17 +408,21 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
 
 ;; TODO Make it so God's names are all highlighted by passing each bit of text through a matcher?
-(defun bible-mode--insert-domnode-recursive (node dom &optional iproperties notitle)
+(defun bible-mode--insert-domnode-recursive (node dom &optional iproperties notitle query)
   "Recursively parses a domnode from `libxml-parse-html-region''s usage on text
 produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with properties."
   ;; (lo node)
   ;; (lo (dom-tag node))
   ;; (lo (dom-text node))
+  
   (if (equal (dom-tag node) 'divinename)
       (progn
         ;; (lo node)
         (setq iproperties (plist-put iproperties 'divinename t))))
 
+  ;; (if (equal (dom-text node) query)
+  ;;     (setq iproperties (plist-put iproperties 'jesus t)))
+  
   (if (equal (dom-attr node 'who) "Jesus")
       (setq iproperties (plist-put iproperties 'jesus t)))
 
@@ -551,6 +557,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (beginning-of-buffer)
     (while (re-search-forward " $" nil t)
       (delete-backward-char 1)))
+
+  (if query
+      (save-excursion
+        (beginning-of-buffer)
+        (while (re-search-forward query nil t)
+          (put-text-property
+           (- (point) (length query))
+           (point) 'font-lock-face '(:foreground "green" :background "darkgreen")))))
 
   (save-excursion
     (end-of-buffer)
