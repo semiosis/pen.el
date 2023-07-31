@@ -6,7 +6,14 @@ export TTY
 sn="$(basename -- "$0")"
 
 if ! inside-docker-p && docker-running-p; then
-    in-pen in-tm "$sn" "$@"
+    is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+    if is_tty; then
+        in-pen in-tm "$sn" "$@"
+    else
+        in-pen "$sn" "$@"
+    fi
+
     exit "$?"
 fi
 
