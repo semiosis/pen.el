@@ -111,7 +111,8 @@ fi
 
 if test -z "$fp"; then
     fp="$(pen-xc)"
-    o "$(pen-xc)" # Run it again so we get the history
+    echo "reopening: $fp" 1>&2
+    o "$fp" # Run it again so we get the history
     exit $?
 fi
 
@@ -341,7 +342,6 @@ elif pen-pl "$fp" | grep -q -P '^(pen-e|br|egr):'; then
     sp -e "(org-link-open-from-string $(aqf-nice "$fp"))"
 fi
 
-
 opt="$1"
 case "$opt" in
     -nw)
@@ -358,7 +358,9 @@ fn="${fp%.*}"
 ofp="$fp"
 
 if ! [ -e "$fp" ] && ! test "$WHICH" = "n"; then
-    fp="$(which "$fp")"
+    if which "$fp" &>/dev/null; then
+        fp="$(which "$fp")"
+    fi
 fi
 
 # tm n "$fp"
@@ -478,9 +480,10 @@ if [ -e "$fp" ]; then
     fi
 fi
 
+
 # pen-pl "($ofp) File doesn't exist or mimetype not known"
 
-mts="$(mt "$rp")"
+mts="$(mt "$fp")"
 
 {
     # annoyingly, vimrc files sometimes have control characters, causing
@@ -488,6 +491,13 @@ mts="$(mt "$rp")"
     if test "$mts" = "application/octet-stream"; then
          rifle "$rp"
          exit 0
+    fi
+
+    bibleverse="$(echo "$fp" | scrape-bible-references)"
+
+    if test -n "$bibleverse"; then
+        ebible "$bibleverse" | pavs
+        exit "$?"
     fi
 
     if test "$PREFER_EDIT" = "y"; then
