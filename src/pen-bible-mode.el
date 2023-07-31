@@ -43,15 +43,58 @@
 ;; (advice-add 'bible-mode--exec-diatheke :around #'bible-mode-fun-around-advice)
 ;; (advice-remove 'bible-mode--exec-diatheke #'bible-mode-fun-around-advice)
 
-(defun bible-mode--open-search(query searchmode)
+(defun bible-mode--open-search(query searchmode &optional module)
   "Opens a search buffer of QUERY using SEARCHMODE."
   (let
       (
-       (buf (get-buffer-create (concat "*bible-search-" (downcase bible-mode-book-module) "-" query "*"))))
+       (buf (get-buffer-create (concat "*bible-search-" (downcase (or module default-bible-mode-book-module)) "-" query "*"))))
     (set-buffer buf)
     (bible-search-mode)
-    (bible-mode--display-search query searchmode)
+    (setq bible-mode-book-module (or module default-bible-mode-book-module))
+    ;; (lo module)
+    (bible-mode--display-search query searchmode bible-mode-book-module)
     (pop-to-buffer buf nil t)))
+
+(defun bible-mode--display-search(query searchmode &optional module)
+  "Renders results of search QUERY from SEARHCMODE"
+  (setq buffer-read-only nil)
+  (erase-buffer)
+
+  (if (catch 'no-results (let* (
+                                (term query)
+                                (result (string-trim (replace-regexp-in-string "Entries .+?--" "" (bible-mode--exec-diatheke query nil "plain" searchmode module))))
+                                (match 0)
+                                (matchstr "")
+                                (verses "")
+                                fullverses)
+                           (if (equal result (concat "none (" bible-mode-book-module ")"))
+                               (throw 'no-results t))
+                           (while match
+                             (setq match (string-match ".+?:[0-9]?[0-9]?"
+                                                       result (+ match (length matchstr)))
+                                   matchstr (match-string 0 result))
+                             (if match
+                                 (setq verses (concat verses (replace-regexp-in-string ".+; " "" matchstr) ";"))))
+
+                           (setq match 0)
+                           (setq fullverses (bible-mode--exec-diatheke verses nil nil nil module))
+
+                           (insert fullverses)
+                           (let* (
+                                  (html-dom-tree (libxml-parse-html-region (point-min) (point-max))))
+                             (erase-buffer)
+                             (bible-mode--insert-domnode-recursive (dom-by-tag html-dom-tree 'body) html-dom-tree nil t)
+
+                             (goto-char (point-min))
+                             (while (search-forward (concat "(" bible-mode-book-module ")") nil t)
+                               (replace-match "")))))
+      (insert (concat "No results found." (if (equal searchmode "lucene") " Verify index has been build with mkfastmod."))))
+
+  (setq mode-name (concat "Bible Search (" bible-mode-book-module ")"))
+  (setq buffer-read-only t)
+  (setq-local bible-mode-search-query query)
+  (setq-local bible-mode-search-mode searchmode)
+  (goto-char (point-min)))
 
 (defun nasb ()
   (interactive)
@@ -515,6 +558,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (delete-backward-char 1)
       (end-of-buffer))))
 
+(defun bible-search-lucene (query &optional module)
+  (interactive (list (read-string "Bible query: ")))
+  ;; lucene or phrase
+
+  (bible-mode--open-search query "lucene" (or module default-bible-mode-book-module)))
+
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
 
@@ -528,7 +577,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map "x" 'bible-mode-split-display)
 
 (define-key bible-search-mode-map "s" 'bible-search)
-(define-key bible-search-mode-map "w" 'bible-mode-toggle-word-study)
+
+(define-key bible-search-mode-map (kbd "d") 'bible-mode-toggle-word-study)
+(define-key bible-search-mode-map (kbd "w") 'bible-mode-copy-link)
+
 (define-key bible-search-mode-map (kbd "RET") 'bible-search-mode-follow-verse)
 
 (define-key bible-mode-greek-keymap (kbd "RET") (lambda ()

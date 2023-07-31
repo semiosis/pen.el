@@ -44,6 +44,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -s) {
+        SEARCH=y
+        shift
+    }
+    ;;
+
     -nottp) {
         USE_TTP=n
         shift
@@ -61,6 +67,11 @@ is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 doublespacemax () {
     sed 's/\s\+$//' | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
 }
+
+if test "$SEARCH" = "y"; then
+    bible-search -m "$module" -g "$@"
+    exit "$?"
+fi
 
 if is_tty; then
     if test "$1"; then

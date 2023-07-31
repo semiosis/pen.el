@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -g) {
+        getverses=y
+        shift
+    }
+    ;;
+
+    -m) {
+        module="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${module:="NASB"}"
+
+query="$@"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    pen-e -cip bible-search-lucene "$query" "$module"
+else
+    # phrase / lucene
+    in-pen oci "diatheke" "-b" "$module" "-s" "lucene" "-o" "w" "-f" "phrase" "-k" "$query" |
+        sed 's/^[^-]*-- //' | sed 's/ --.*//' | sed 's/ ; /\n/g' | sed '1{s/\([0-9]\)\([A-Z]\)/\1\n\2/}' | {
+        if test "$getverses" = "y"; then
+            s join ";" | xargs "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" | sed -z 's/\([0-9]:\) *\n/\1 /g'
+        else
+            sed -z 's/\n$//'
+        fi
+    } | pavs
+fi

@@ -98,6 +98,8 @@
             (sx-question-mode :ignore nil :select t :same t)
             (emoji-github-mode :ignore nil :select t :same t)
             (dogears-list-mode :ignore nil :select t :same t)
+            (bible-mode :ignore nil :select t :same t)
+            (bible-search-mode :ignore nil :select t :same t)
             ("*GitHub Emoji*" nil :select t :same t)
             ("*magit-prettier-graph*" :ignore nil :select t :same t)
             ("*xbm life*" :ignore nil :select t :same t)
