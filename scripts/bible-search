@@ -18,20 +18,32 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -l) {
+        searchtype=lucene
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 : "${module:="NASB"}"
+: "${searchtype:="phrase"}"
+
+# phrase search is much better
+# : "${searchtype:="lucene"}"
 
 query="$@"
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 if is_tty; then
-    pen-e -cip bible-search-lucene "$query" "$module"
+    # pen-e -cip bible-search-lucene "$query" "$module"
+    # pen-e -cip bible-search-phrase "$query" "$module"
+    pen-e -cip bible-search "$query" "$module" "$searchtype"
 else
     # phrase / lucene
-    in-pen oci "diatheke" "-b" "$module" "-s" "lucene" "-o" "w" "-f" "phrase" "-k" "$query" |
+    in-pen oci "diatheke" "-b" "$module" "-s" "$searchtype" "-o" "w" "-f" "phrase" "-k" "$query" |
         sed 's/^[^-]*-- //' | sed 's/ --.*//' | sed 's/ ; /\n/g' | sed '1{s/\([0-9]\)\([A-Z]\)/\1\n\2/}' | {
         if test "$getverses" = "y"; then
             s join ";" | xargs "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" | sed -z 's/\([0-9]:\) *\n/\1 /g'

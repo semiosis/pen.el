@@ -558,11 +558,28 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (delete-backward-char 1)
       (end-of-buffer))))
 
+(defun bible-search(query &optional module searchtype)
+  "Queries the user for a Bible search query. 
+'lucene' mode requires an index to be built using the `mkfastmod' program."
+  (interactive  (list (pen-ask (pen-selection) "Bible Search: ")))
+  (if (> (length query) 0)
+      (let* (
+             (searchmode (or
+                          searchtype
+                          (completing-read "Search Mode: " '("lucene" "phrase")))))
+        (bible-mode--open-search query searchmode (or module default-bible-mode-book-module)))))
+
 (defun bible-search-lucene (query &optional module)
   (interactive (list (read-string "Bible query: ")))
   ;; lucene or phrase
 
   (bible-mode--open-search query "lucene" (or module default-bible-mode-book-module)))
+
+(defun bible-search-phrase (query &optional module)
+  (interactive (list (read-string "Bible query: ")))
+  ;; lucene or phrase
+
+  (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module)))
 
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
