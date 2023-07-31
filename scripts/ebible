@@ -6,7 +6,7 @@ export TTY
 sn="$(basename -- "$0")"
 
 if ! inside-docker-p && docker-running-p; then
-    in-pen "$sn" "$@"
+    in-pen in-tm "$sn" "$@"
     exit "$?"
 fi
 
