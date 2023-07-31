@@ -37,12 +37,12 @@ message="$@"
 exec 1>&2
 
 echo
-message="$(printf -- "%s" "$message")"
+message="$(printf -- "%s" "$message" | his -f lgreen '.*')"
 echo -e " $message"
 echo
 
 allowed_re="$(printf -- "%s" "$allowed_re")"
-allowed_re_color="$(printf -- "%s" "$allowed_re")"
+allowed_re_color="$(printf -- "%s" "$allowed_re" | his -r -f dred '.*')"
 
 if test "$YN_DEFAULT" = "y"; then
     echo y
