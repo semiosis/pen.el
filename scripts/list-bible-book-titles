@@ -61,8 +61,6 @@ II Sa
 2S
 2nd Samuel
 2nd Sam
-First Samuel
-First Sam
 I Kings
 1 Kings
 1 Kgs
@@ -299,7 +297,6 @@ I Timothy
 1 Timothy
 1 Tim
 1 Ti
-I Timothy
 I Tim
 I Ti
 1Timothy
@@ -313,7 +310,6 @@ II Timothy
 2 Timothy
 2 Tim
 2 Ti
-II Timothy
 II Tim
 II Ti
 2Timothy
@@ -349,7 +345,6 @@ I Pe
 1Pe
 1Pt
 1P
-I Peter
 1st Peter
 First Peter
 II Peter
@@ -366,7 +361,6 @@ II Pe
 2Pe
 2Pt
 2P
-II Peter
 2nd Peter
 Second Peter
 I John
@@ -414,4 +408,4 @@ Rev
 Re
 HEREDOC
 
-printf -- "%s\n" "$booktitles"
+printf -- "%s\n" "$booktitles" | pavs
