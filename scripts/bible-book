@@ -6,9 +6,15 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
 case "$sn" in
     bible-book) {
-        book=Genesis
+        if is_tty; then
+            book="$(list-bible-books | mfz)"
+        else
+            book=Genesis
+        fi
     }
     ;;
 
