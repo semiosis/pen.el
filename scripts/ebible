@@ -59,7 +59,7 @@ esac; done
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 doublespacemax () {
-    sed ':a;N;$!ba;s/\n\n/\n/g'
+    sed 's/\s\+$//' | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
 }
 
 if is_tty; then
@@ -72,13 +72,13 @@ if is_tty; then
 else
     {
     echo "$@" | udl
-    "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" "$@" | sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d' | sed '$s/\( *\)\(([^)]\+)\)$/\n\n\2/' | doublespacemax | {
+    "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" "$@" | sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d' | {
         if test "$USE_TTP" = "y"; then
             ttp
         else
             cat
         fi
     }
-    } | pavs
+    } | sed '$s/\( *\)\(([^)]\+)\)$/\n\n\n\2/' | doublespacemax | pavs
     # | pen-s remove-trailing-whitespace | pen-s join ' ' | sed 's/[0-9]: /&\n/g' | sed '/^$/d' | awk 'NR%2==0' | pavs
 fi

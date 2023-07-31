@@ -77,7 +77,7 @@ case "$opt" in
     *)
 esac
 
-CMD="$(cmd "$@")"
+CMD="$(cmd-nice "$@")"
 
 if stdin_exists; then
     fp="$(pen-umn)"
@@ -92,22 +92,22 @@ fi
 
 fp="$(p "$fp" | sed 's~^http://www.google.com/url?q=~~')"
 
-if test "$count" -gt "1"; then
-    export WAIT
-    export WHICH
-    export PREFER_EDIT
-    export NOCD
-
-    printf -- "%s" "$fps" | awk 1 | tee /dev/stderr | while IFS=$'\n' read -r line; do
-        (
-            exec 0</dev/null
-            sph open "$line"
-            tmux select-layout tiled
-        )
-    done
-    printf -- "%s" "$fps" | pen-pavs
-    exit $?
-fi
+# if test "$count" -gt "1"; then
+#     export WAIT
+#     export WHICH
+#     export PREFER_EDIT
+#     export NOCD
+# 
+#     printf -- "%s" "$fps" | awk 1 | tee /dev/stderr | while IFS=$'\n' read -r line; do
+#         (
+#             exec 0</dev/null
+#             sph open "$line"
+#             tmux select-layout tiled
+#         )
+#     done
+#     printf -- "%s" "$fps" | pen-pavs
+#     exit $?
+# fi
 
 if test -z "$fp"; then
     fp="$(pen-xc)"
