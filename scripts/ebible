@@ -40,7 +40,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -ttp) {
         USE_TTP=y
         shift
-        shift
     }
     ;;
 
@@ -50,9 +49,15 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -m) {
+        module="$2"
+        shift
+        shift
+    }
+    ;;
+
     -nottp) {
         USE_TTP=n
-        shift
         shift
     }
     ;;

@@ -879,6 +879,15 @@ Reconstruct the entire yaml-ht for a different language."
   (let ((default-directory "/"))
     (pen-list2cmd args)))
 
+(defun pen-list2cmd-nice (l)
+  (pen-snc (concat "cmd-nice " (mapconcat 'pen-q l " "))
+           nil default-directory))
+
+(defun pen-cmd-nice (&rest args)
+  (let ((default-directory "/"))
+    (pen-list2cmd-nice args)))
+(defalias 'cmd-nice 'pen-cmd-nice)
+
 (defun tee (fp input)
   (pen-sn (pen-cmd "tee" fp) input))
 

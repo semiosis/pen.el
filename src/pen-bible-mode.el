@@ -348,28 +348,40 @@ creating a new `bible-mode' buffer positioned at the specified verse."
                  bible-mode-book-module)
      (error "Error. Incorrect Bible reference?"))))
 
+(defun bible-search-mode-copy-search ()
+  (interactive)
+  (xc (cmd-nice
+       (downcase bible-mode-book-module)
+       "-s"
+       bible-mode-search-query)))
+
 (defun bible-mode-copy-link (text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (thing-at-point 'line t)))
-  (setq text (concat text ":"))
-  (let* (
-         book
-         chapter
-         verse)
-    (string-match ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
-    (setq text (match-string 0 text))
 
-    (string-match " [0-9]?[0-9]?[0-9]?:" text)
-    (setq chapter (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (bible-search-mode-copy-search)
 
-    (string-match ":[0-9]?[0-9]?[0-9]?" text)
-    (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
-    (setq book (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))
+    (progn
+      (setq text (concat text ":"))
+      (let* (
+             book
+             chapter
+             verse)
+        (string-match ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
+        (setq text (match-string 0 text))
 
-    (if (>= (prefix-numeric-value current-prefix-arg) 4)
-        (xc (concat "[[bible:" book " " chapter ":" verse "]]"))
-      (xc (concat book " " chapter ":" verse)))))
+        (string-match " [0-9]?[0-9]?[0-9]?:" text)
+        (setq chapter (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
+
+        (string-match ":[0-9]?[0-9]?[0-9]?" text)
+        (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
+        (setq book (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))
+
+        (if (>= (prefix-numeric-value current-prefix-arg) 4)
+            (xc (concat "[[bible:" book " " chapter ":" verse "]]"))
+          (xc (concat book " " chapter ":" verse)))))))
 
 (defun bible-mode--display(&optional verse)
   "Renders text for `bible-mode'"
