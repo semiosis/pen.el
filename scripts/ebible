@@ -72,7 +72,7 @@ if is_tty; then
 else
     {
     echo "$@" | udl
-    "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" "$@" | sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d' | {
+    in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" "$@" | sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d' | {
         if test "$USE_TTP" = "y"; then
             ttp
         else

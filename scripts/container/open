@@ -10,6 +10,22 @@ editor() {
     fi
 }
 
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb"
+}
+
+is_stdout_pipe
+ISPIPE="$?"
+
+is_tty
+ISTTY="$?"
+
 : ${WAIT:="n"}
 : ${WHICH:="y"}
 : ${PREFER_EDIT:="n"}
@@ -496,7 +512,13 @@ mts="$(mt "$fp")"
     bibleverse="$(echo "$fp" | scrape-bible-references)"
 
     if test -n "$bibleverse"; then
-        ebible "$bibleverse" | pavs
+        if test "$ISPIPE" = 0; then
+            ebible "$bibleverse" | cat
+        elif yn "emacs?"; then
+            ebible "$bibleverse"
+        else
+            ebible "$bibleverse" | pavs
+        fi
         exit "$?"
     fi
 
