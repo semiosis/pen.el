@@ -570,13 +570,13 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (bible-mode--open-search query searchmode (or module default-bible-mode-book-module)))))
 
 (defun bible-search-lucene (query &optional module)
-  (interactive (list (read-string "Bible query: ")))
+  (interactive  (list (pen-ask (pen-selection) "Bible Search: ")))
   ;; lucene or phrase
 
   (bible-mode--open-search query "lucene" (or module default-bible-mode-book-module)))
 
 (defun bible-search-phrase (query &optional module)
-  (interactive (list (read-string "Bible query: ")))
+  (interactive  (list (pen-ask (pen-selection) "Bible Search: ")))
   ;; lucene or phrase
 
   (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module)))
@@ -589,11 +589,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map "b" 'bible-mode-select-book)
 (define-key bible-mode-map "g" 'bible-mode--display)
 (define-key bible-mode-map "c" 'bible-mode-select-chapter)
-(define-key bible-mode-map "s" 'bible-search)
+(define-key bible-mode-map "s" 'bible-search-phrase)
 (define-key bible-mode-map "m" 'bible-mode-select-module)
 (define-key bible-mode-map "x" 'bible-mode-split-display)
 
-(define-key bible-search-mode-map "s" 'bible-search)
+(define-key bible-search-mode-map "s" 'bible-search-phrase)
 
 (define-key bible-search-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-search-mode-map (kbd "w") 'bible-mode-copy-link)
