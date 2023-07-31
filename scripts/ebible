@@ -5,6 +5,11 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+if ! inside-docker-p; then
+    in-pen "$sn" "$@"
+    exit "$?"
+fi
+
 case "$sn" in
     bl|ebible) {
         # default
