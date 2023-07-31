@@ -69,7 +69,8 @@ set expandtab
 set formatoptions-=t
 au BufEnter * set formatoptions-=cro
 set history=50
-set nohlsearch
+" set nohlsearch
+set hlsearch
 set ignorecase smartcase
 set incsearch
 silent! set ls=2

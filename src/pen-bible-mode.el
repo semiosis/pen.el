@@ -607,6 +607,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module)))
 
+(defun bible-search-mode-select-book ()
+  (interactive)
+  (nasb)
+  (bible-mode-select-book))
+
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
 
@@ -620,7 +625,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map "x" 'bible-mode-split-display)
 
 (define-key bible-search-mode-map "s" 'bible-search-phrase)
-(define-key bible-search-mode-map "b" 'bible-mode-select-book)
+(define-key bible-search-mode-map "b" 'bible-search-mode-select-book)
 (define-key bible-search-mode-map "g" nil)
 
 (define-key bible-search-mode-map (kbd "d") 'bible-mode-toggle-word-study)

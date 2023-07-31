@@ -49,7 +49,7 @@ esac; done
 
 : "${module:="NASB"}"
 : "${searchtype:="phrase"}"
-: "${getverses:="n"}"
+: "${getverses:="y"}"
 
 # phrase search is much better
 # : "${searchtype:="lucene"}"
