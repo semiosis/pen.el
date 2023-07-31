@@ -35,9 +35,15 @@ esac
 
 : "${module:="NASB"}"
 
-if test "$1"; then
-    ref="$@"
-    sp -cip bible-open =nil =nil "$module" "$ref"
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    if test "$1"; then
+        ref="$@"
+        sp -cip bible-open =nil =nil "$module" "$ref"
+    else
+        sp -cip bible-open =nil =nil "$module"
+    fi
 else
-    sp -cip bible-open =nil =nil "$module"
+    "diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "$@" | pen-s remove-trailing-whitespace | sed 's/[0-9]: /&\n/' | sed '/^$/d' | awk 'NR%2==0' | pavs
 fi
