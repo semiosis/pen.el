@@ -499,6 +499,19 @@ fi
 
 # pen-pl "($ofp) File doesn't exist or mimetype not known"
 
+bibleverse="$(echo "$fp" | scrape-bible-references)"
+
+if test -n "$bibleverse"; then
+    if test "$ISPIPE" = 0; then
+        ebible "$bibleverse" | cat
+    elif yn "emacs?"; then
+        ebible "$bibleverse"
+    else
+        ebible "$bibleverse" | pavs
+    fi
+    exit "$?"
+fi
+
 mts="$(mt "$fp")"
 
 {
@@ -507,19 +520,6 @@ mts="$(mt "$fp")"
     if test "$mts" = "application/octet-stream"; then
          rifle "$rp"
          exit 0
-    fi
-
-    bibleverse="$(echo "$fp" | scrape-bible-references)"
-
-    if test -n "$bibleverse"; then
-        if test "$ISPIPE" = 0; then
-            ebible "$bibleverse" | cat
-        elif yn "emacs?"; then
-            ebible "$bibleverse"
-        else
-            ebible "$bibleverse" | pavs
-        fi
-        exit "$?"
     fi
 
     if test "$PREFER_EDIT" = "y"; then
