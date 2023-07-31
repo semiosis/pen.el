@@ -11,7 +11,7 @@ is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 case "$sn" in
     bible-book) {
         if is_tty; then
-            book="$(list-bible-books | mfz -nv)"
+            book="$(list-bible-books | mfz -num -nv)"
             if test -z "$book"; then
                 exit
             fi
@@ -30,6 +30,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -v) {
         version="$2"
         shift
+        shift
+    }
+    ;;
+
+    -noemacs) {
+        export NOEMACS=y
         shift
     }
     ;;

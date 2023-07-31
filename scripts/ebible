@@ -90,7 +90,7 @@ if test "$SEARCH" = "y"; then
     exit "$?"
 fi
 
-if is_tty; then
+if is_tty && ! test "$NOEMACS" = y; then
     if test "$1"; then
         ref="$@"
         sp -cip bible-open =nil =nil "$module" "$ref"
