@@ -29,6 +29,11 @@ case "$sn" in
     }
     ;;
 
+    maori) {
+        module=Maori
+    }
+    ;;
+
     kjv) {
         module=KJV
     }

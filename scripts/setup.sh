@@ -1207,3 +1207,20 @@ agi sqlite3
 
 # Generate epub from website, then use it in Baca
 npm install -g percollate
+
+# Sadly, the GUI doesn't seem to work
+# goldendict - for Maori language, etc.
+agi git pkg-config build-essential qt5-qmake \
+    libvorbis-dev zlib1g-dev libhunspell-dev x11proto-record-dev \
+    qtdeclarative5-dev libxtst-dev liblzo2-dev libbz2-dev \
+    libao-dev libavutil-dev libavformat-dev libtiff5-dev libeb16-dev \
+    libqt5webkit5-dev libqt5svg5-dev libqt5x11extras5-dev qttools5-dev \
+    qttools5-dev-tools qtmultimedia5-dev libqt5multimedia5-plugins
+# qmake-qt4 && make
+# https://github.com/goldendict/goldendict
+
+# https://github.com/konstare/gdcv
+agi zlib1g-dev unzip
+# cd "$HOME/repos/konstare/gdcv"; make gdcv
+
+# cd "$(o "'https://github.com/konstare/gdcv")"
