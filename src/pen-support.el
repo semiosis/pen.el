@@ -1928,6 +1928,14 @@ This function accepts any number of ARGUMENTS, but ignores them."
              ((symbol-function 'y-or-n-p) #'ignore))
      (progn ,@body)))
 
+;; nadvice - proc is the original function, passed in. do not modify
+(defun save-buffers-kill-terminal-around-advice (proc &rest args)
+  (let ((res
+         (eval `(auto-no (apply ,proc ,args)))))
+    res))
+(advice-add 'save-buffers-kill-terminal :around #'save-buffers-kill-terminal-around-advice)
+(advice-remove 'save-buffers-kill-terminal #'save-buffers-kill-terminal-around-advice)
+
 (defun pen-go-to-last-results-dir ()
   (interactive)
   (let ((user (pen-snc "whoami")))

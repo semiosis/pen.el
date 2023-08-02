@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# ag -r -z "$@"
+
+pat="$@"
+
+find -L . -type f -name "*.gz" -exec zgrep -Hn "$pat" {} \; | pavs
