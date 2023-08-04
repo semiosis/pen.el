@@ -57,7 +57,9 @@ if [ -n "$TMUX_PANE" ] && [ -n "$x" ] && [ -n "$y" ]; then
             downcode="$(xterm-click -d $x $y)"
             upcode="$(xterm-click -u $x $y)"
             tmux send-keys -t "$TMUX_PANE" -l "$downcode"
-            sleep 0.2
+            # Needs to be 0.1 for minesweeper clicks to work
+            sleep 0.1
+            # Even 0.2 is too slow
             tmux send-keys -t "$TMUX_PANE" -l "$upcode"
         }
         ;;

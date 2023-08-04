@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
 sn="$(basename "$0")"
 sn="$(p "$sn" | sed 's/^pen-//')"
 

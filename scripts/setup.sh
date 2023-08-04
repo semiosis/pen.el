@@ -949,6 +949,8 @@ make altinstall
 pip3.10 install --force-reinstall ipython
 pip3.10 install bpython
 pip3.10 install baca
+# paint for the terminal
+pip3.10 install textual-paint
 
 (
 cd
