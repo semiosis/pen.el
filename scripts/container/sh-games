@@ -21,6 +21,8 @@ t  tetris-rs
 T  etetris-vt100
 X  etetris-xterm
 S  snake
+s  csol (solitaire)
+w  minesweeper
 C  chenvaders
 o  project-cosmos
 c  pacman4console
@@ -56,6 +58,8 @@ case "$d" in
     T) cmd="etetris-vt100" ;;
     X) cmd="etetris-xterm" ;;
     S) cmd="snake" ;;
+    s) cmd="csol" ;;
+    w) cmd="minesweeper" ;;
     C) cmd="chenvaders" ;;
     # C) cmd="e-calibredb" ;;
     o) cmd="project-cosmos" ;;

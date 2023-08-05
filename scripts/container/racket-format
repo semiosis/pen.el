@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+script_fp="$HOME$MYGIT/russellw/racket-format/racket-format.rkt"
+
+test -f "$script_fp" || (
+    exec 0</dev/null
+    raco pkg install memoize
+    gc "https://github.com/russellw/racket-format" | cat 1>&2
+    chmod a+x "$script_fp"
+)
+
+if stdin_exists && ! test -f "$1"; then
+    tf_rkt="$(ux tf rkt rkt || echo /dev/null)"
+    # trap "rm \"$tf_rkt\" 2>/dev/null" 0
+
+    cat > "$tf_rkt"
+    eval "alt -s racket $script_fp -i $(aqf "$tf_rkt")"
+    cat "$tf_rkt"
+else
+    alt -s racket "$script_fp" -i "$@"
+fi

@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# Installed through ros
+
+script="/root/.roswell/lisp/quicklisp/setup.lisp"
+
+bin=sbcl
+# eval "rlwrap -H \"$histfile\" -f \"$compfile\" $bin --load \"$script\""
+# rlwrap -H "$histfile" -f "$compfile" $bin --load "$script" "$@"
+
+$bin --load "$script" "$@"

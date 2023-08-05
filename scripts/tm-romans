@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="Romans"
+
+for i in $(seq 1 16); do
+    name="$(printf -- "%s\n" "$sn" | tr '\n' ' ' | sed 's/ $//') $i"
+    tmux neww -n "$name" "nasb $sn $i | cvs"
+done

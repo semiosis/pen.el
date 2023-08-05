@@ -6,7 +6,7 @@ width="$1"
 
 if test -z "$COLUMNS"; then
     # eval `resize`
-    eval `tm-resize`
+    eval `pen-tm-resize`
 fi
 
 bc <<< "scale=0;$COLUMNS / $width + 1"
