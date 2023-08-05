@@ -97,6 +97,17 @@
 (remove-hook 'lisp-mode-hook 'sly-editing-mode)
 
 (define-key slime-mode-indirect-map (kbd "M-w") nil)
+(define-key slime-repl-mode-map (kbd "M-w") nil)
+(define-key slime-editing-map (kbd "M-w") nil)
+
+(define-key slime-mode-indirect-map (kbd "C-M-a") nil)
+(define-key slime-repl-mode-map (kbd "C-M-a") nil)
+(define-key slime-editing-map (kbd "C-M-a") nil)
+
+;; (define-key slime-mode-indirect-map (kbd "M-w") 'slime-macroexpand-all)
+;; (define-key slime-repl-mode-map (kbd "M-w") 'slime-macroexpand-all)
+;; (define-key slime-editing-map (kbd "M-w") 'slime-macroexpand-all)
+
 (define-key slime-mode-indirect-map (kbd "M-?") nil)
 (define-key slime-mode-indirect-map (kbd "M-_") nil)
 (define-key slime-editing-map (kbd "M-w") 'slime-macroexpand-all)

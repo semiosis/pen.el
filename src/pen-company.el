@@ -1,5 +1,6 @@
 (require 'handle)
 (require 'company-try-hard)
+(require 'slime-company)
 
 ;; This is supposed to disable the automatic selection (and disappearance of completions list) of a completion candidate
 ;; But it doesn't seem to have affected deep tabnine
@@ -73,6 +74,14 @@
 
 (defset pen-company-all-backends
   '(
+
+    ;; These should only work with their modes
+    ;; so i can line up the company modes for
+    ;; various modes here and there
+    ;; should be some fallthrough
+    company-slime
+    company-elisp
+    
     ;; pf-generic-file-type-completion/2
     ;; pf-generic-completion-200-tokens-max/1
     ;; pf-generic-completion-50-tokens/1
@@ -82,19 +91,20 @@
 
     ;; LSP complete is more important than tabnine
     company-lsp
-    
+
     ;; Continue using tabnine? -- it's really good, actually.
     ;; But dodgy.
     ;; Disabled 20.07.23
     ;; company-tabnine
 
     ;; company-yasnippet
-    
+
     ;; pen-complete-long
     ;; company-org-block
-    
+
+    ;; slime-simple-complete-symbol
     company-dabbrev
-    
+
     ;; This is self-referential
     ;; pen-company-filetype
     ))
