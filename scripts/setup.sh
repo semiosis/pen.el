@@ -1228,3 +1228,6 @@ agi zlib1g-dev unzip
 # cd "$(o "'https://github.com/konstare/gdcv")"
 
 agi socat cpipe
+
+# This is for the tm-vimbible command
+mkdir -p $PENCONF/documents/notes/ws/vimbible
