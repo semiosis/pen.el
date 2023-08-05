@@ -66,6 +66,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nem) {
+        NOEMACS=y
+        shift
+    }
+    ;;
+
     -m) {
         module="$2"
         shift

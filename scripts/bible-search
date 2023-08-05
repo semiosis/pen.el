@@ -5,8 +5,32 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    input="$(cat)"
+    arg="$(printf -- "%s" "$input" | s join ' ')"
+    set -- "$@" "$arg"
+
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+
+    unbuffer sph "$sn" -nem "$@"
+    printf -- "%s" "$input"
+    exit
+fi
+
 if ! inside-docker-p && docker-running-p; then
-    is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
     if is_tty; then
         in-pen in-tm "$sn" "$@"
@@ -38,6 +62,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nem) {
+        export NOEMACS=y
+        shift
+    }
+    ;;
+
     -l) {
         searchtype=lucene
         shift
@@ -58,7 +88,7 @@ query="$@"
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-if is_tty; then
+if is_tty && ! test "$NOEMACS" = y; then
     # pen-e -cip bible-search-lucene "$query" "$module"
     # pen-e -cip bible-search-phrase "$query" "$module"
     pen-e -cip bible-search "$query" "$module" "$searchtype"

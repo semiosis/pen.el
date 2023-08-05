@@ -2218,6 +2218,29 @@ imap <Esc>L <Esc>a<Esc>ljki<C-l>
 imap <C-l> <Plug>snipMateNextOrTrigger
 smap <C-l> <Plug>snipMateNextOrTrigger
 
+nnoremap <silent> <leader>! :set opfunc=ProgramFilter<cr>g@
+vnoremap <silent> <leader>! :<c-u>call ProgramFilter(visualmode(), 1)<cr>
+function! ProgramFilter(vt, ...)
+    let [qr, qt] = [getreg('"'), getregtype('"')]
+    let [oai, ocin, osi, oinde] = [&ai, &cin, &si, &inde]
+    setl noai nocin nosi inde=
+
+    let [sm, em] = ['[<'[a:0], ']>'[a:0]]
+    exe 'norm!`' . sm . a:vt . '`' . em . 'x'
+
+    call inputsave()
+    let cmd = input('!')
+    call inputrestore()
+
+    " let out = system("ptw ".cmd, @")
+    let out = system(cmd, @")
+    let out = substitute(out, '\n$', '', '')
+    exe "norm!i\<c-r>=out\r"
+
+    let [&ai, &cin, &si, &inde] = [oai, ocin, osi, oinde]
+    call setreg('"', qr, qt)
+endfunction
+
 function! ExecInTmux()
     silent! call SaveTemp()
     silent! call TmuxBaseWait()
