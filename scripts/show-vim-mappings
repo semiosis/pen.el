@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+{
+unbuffer bash -c 'vim +":Message imap" +"w!/tmp/vim-imap.txt" +:q'
+unbuffer bash -c 'vim +":Message nmap" +"w!/tmp/vim-nmap.txt" +:q'
+unbuffer bash -c 'vim +":Message xmap" +"w!/tmp/vim-xmap.txt" +:q'
+unbuffer bash -c 'vim +":Message map" +"w!/tmp/vim-map.txt" +:q'
+} &>/dev/null
+
+{
+cat /tmp/vim-imap.txt | awk 1 
+cat /tmp/vim-nmap.txt | awk 1 
+cat /tmp/vim-xmap.txt | awk 1 
+cat /tmp/vim-map.txt | awk 1 
+} | uniqnosort | sort | sed '/^$/d' | pavs
