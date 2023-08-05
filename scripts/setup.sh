@@ -1226,3 +1226,5 @@ agi zlib1g-dev unzip
 # cd "$HOME/repos/konstare/gdcv"; make gdcv
 
 # cd "$(o "'https://github.com/konstare/gdcv")"
+
+agi socat cpipe

@@ -1,11 +1,47 @@
 #!/bin/bash
 export TTY
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# 
+# npm_path="$(which npm | grep /root/.nvm/)"
+# 
+# if test -n "$npm_path"; then
+#     "$npm_path" "$@"
+# fi
 
-npm_path="$(which npm | grep /root/.nvm/)"
+remove_from_path () {
+        pattern="$1"
+        (
+                exec < /dev/null
+                pattern="$(printf -- "%s" "$pattern" | bs /)"
+                printf -- "%s\n" "${PATH}" | awk -v RS=: -v ORS=: "/^$pattern$/ {next} {print}" | sed -e 's/^:*//' -e 's/:*$//'
+        )
+        return 0
+}
 
-if test -n "$npm_path"; then
-    "$npm_path" "$@"
+export NODE_NO_WARNINGS=1
+
+: "${NODE_VERSION:="$(oci -t 60 pen-rc .node_version)"}"
+
+. $HOME/repos/sh-source/nvm-node
+
+is_tty() { [ -t 1 ]; }
+
+# This fixes the infinite loop. I think npm is broken though
+if is_tty && ! test "$IN_NPM" = y; then
+    export IN_NPM=y
+
+    # It's the nvm install command that hangs
+    # Just don't do it unless I'm running interactively
+    # That way I probably invoked it in a terminal and can see what's going on
+    nvm use "$NODE_VERSION" 1>&2 || nvm install "$NODE_VERSION" 1>&2
+fi
+
+# Why was this added? - Fuck. Without removing SCRIPTS here I can't use a million tools
+export PATH="$(remove_from_path "$SCRIPTS")"
+
+# I don't want an infinite loop. Hopefully this stops it
+if ! { /usr/bin/which npm &>/dev/null | grep -q -P 'scripts/'; }; then
+    npm "$@"
 fi

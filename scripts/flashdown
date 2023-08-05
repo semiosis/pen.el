@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename "$0")"
+: "${NODE_VERSION:="v12.14.1"}"
+: "${NODE_VERSION:="$(oci pen-rc .node_version)"}"
+. $HOME/repos/sh-source/nvm-node
+nvm use "$NODE_VERSION" 1>&2 || nvm install "$NODE_VERSION" 1>&2
+which "$sn" | grep -q ".nvm/" || npm install -g "$sn"
+
+flashdown "$@"

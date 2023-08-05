@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+remove_from_path () {
+        pattern="$1"
+        (
+                exec < /dev/null
+                pattern="$(printf -- "%s" "$pattern" | bs /)"
+                printf -- "%s\n" "${PATH}" | awk -v RS=: -v ORS=: "/^$pattern$/ {next} {print}" | sed -e 's/^:*//' -e 's/:*$//'
+        )
+        return 0
+}
+
+export PATH="$(remove_from_path "$SCRIPTS")"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# nvm should now be a function
+
+nvm "$@"
