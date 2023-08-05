@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# pip3.10 install bs4
+# pip3.10 install html5lib
+# pip3.10 install lxml
+
+# python3.10 $HOME/repos/popovicn/grepgithub/grepgithub.py "$@" | strip-ansi | pavs
+python3.10 $HOME/repos/popovicn/grepgithub/grepgithub.py -m -json -q "$@" | strip-ansi | pavs

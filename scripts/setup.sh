@@ -1233,3 +1233,8 @@ agi socat cpipe
 mkdir -p $PENCONF/documents/notes/ws/vimbible
 
 agi direnv
+
+# For $EMACSD/host/pen.el/scripts/grepgithub.py
+pip3.10 install bs4
+pip3.10 install html5lib
+pip3.10 install lxml

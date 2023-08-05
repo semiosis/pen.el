@@ -192,7 +192,7 @@
      (if mark-active
          (list (pen-selected-text)
                (if path
-                   (file-name-extension path)
+                   (concat "." (file-name-extension path))
                  (read-string-hist "grep.app path:"))
                nil)
        (list (read-string-hist "grep.app pattern:" (pen-thing-at-point))

@@ -3,9 +3,6 @@
 
 (ql:quickload "external-program" :silent t)
 
-;; This gets me 'defmacro'
-(ql:quickload "serapeum")
-
 ;; quicklisp after being set up in ros sbcl is admittedly slow,
 ;; but I'm sure I will have these scripts running much faster
 ;; later on.
@@ -102,17 +99,13 @@
 
 ;; (external-program:run "nw" '("vim"))
 
-
-
 #+(or)
 (external-program:run "nw" '("vim"))
 
 #+(or)
 (external-program:run "tv" '("") :input "hi")
 
-
 (setf (fdefinition 'doc) #'documentation)
-
 
 (defun str (o)
   "Convert object to string"  
