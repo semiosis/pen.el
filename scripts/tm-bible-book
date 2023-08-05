@@ -1,0 +1,40 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+case "$sn" in
+    tm-bible-book) {
+        if is_tty; then
+            book="$(list-bible-books | mfz -num -nv)"
+            if test -z "$book"; then
+                exit
+            fi
+        else
+            book=Genesis
+        fi
+    }
+    ;;
+
+    *)
+        book="$sn"
+esac
+
+book="$(printf -- "%s" "$book" | sed 's/^tm-//')"
+: "${book:="Romans"}"
+
+nchapters="$(get-bible-book-chapter "$book")"
+
+test -n "$nchapters" || exit
+
+echo "$book $nchapters"
+exit
+
+for i in $(seq 1 $nchapters); do
+    name="$(printf -- "%s\n" "$book" | tr '\n' ' ' | sed 's/ $//') $i"
+    tmux neww -n "$name" "nasb $book $i | cvs"
+done
