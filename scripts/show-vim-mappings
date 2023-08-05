@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# Just cache this
+# I should be caching heredocs
 {
 unbuffer bash -c 'vim +":Message imap" +"w!/tmp/vim-imap.txt" +:q'
 unbuffer bash -c 'vim +":Message nmap" +"w!/tmp/vim-nmap.txt" +:q'
