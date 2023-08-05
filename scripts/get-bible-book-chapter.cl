@@ -3,6 +3,9 @@
 
 (ql:quickload "external-program" :silent t)
 
+;; This gets me 'defmacro'
+(ql:quickload "serapeum")
+
 ;; quicklisp after being set up in ros sbcl is admittedly slow,
 ;; but I'm sure I will have these scripts running much faster
 ;; later on.
@@ -107,6 +110,16 @@
 #+(or)
 (external-program:run "tv" '("") :input "hi")
 
+
+(setf (fdefinition 'doc) #'documentation)
+
+
+(defun str (o)
+  "Convert object to string"  
+  #+(or)
+  (format nil "~&~S~&" o)
+  (write-to-string o))
+
 (defun tv (stdin &optional (tm_wincmd "sps"))
   "tv"
   (with-output-to-string (out) 
@@ -149,8 +162,7 @@
           ;;          (cdr res)))
           (write-string
            (write-to-string
-            (cdr res))))
-        )))
+            (cdr res)))))))
 
 ;; bookname=$1""
 ;; test -n "$bookname" || exit 1
