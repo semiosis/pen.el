@@ -19,5 +19,4 @@ cat /tmp/vim-map.txt | awk 1
 } | uniqnosort | sort | sed '/^$/d'
 HEREDOC
 
-# printf -- "%s\n" "$shcode" | ci xargs myeval
 printf -- "%s\n" "$shcode" | ci myeval | pavs
