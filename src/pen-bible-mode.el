@@ -348,21 +348,28 @@ creating a new `bible-mode' buffer positioned at the specified verse."
                  bible-mode-book-module)
      (error "Error. Incorrect Bible reference?"))))
 
+(defun bible-search-mode-get-search ()
+  (interactive)
+  (cmd-nice
+   (downcase bible-mode-book-module)
+   "-s"
+   bible-mode-search-query))
+
 (defun bible-search-mode-copy-search ()
   (interactive)
-  (xc (cmd-nice
-       (downcase bible-mode-book-module)
-       "-s"
-       bible-mode-search-query)))
+  (xc (bible-search-mode-get-search)))
 
-(defun bible-mode-copy-link (text)
+(defun bible-mode-get-link (&optional text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (thing-at-point 'line t)))
+  
+  (setq text (or text (thing-at-point 'line t)))
 
-  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+  (if (and
+       (>= (prefix-numeric-value current-prefix-arg) 4)
+       (major-mode-p 'bible-search-mode))
       (bible-search-mode-copy-search)
-
     (progn
       (setq text (concat text ":"))
       (let* (
@@ -380,8 +387,15 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (setq book (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))
 
         (if (>= (prefix-numeric-value current-prefix-arg) 4)
-            (xc (concat "[[bible:" book " " chapter ":" verse "]]"))
-          (xc (concat book " " chapter ":" verse)))))))
+            (concat "[[bible:" book " " chapter ":" verse "]]")
+          (concat book " " chapter ":" verse))))))
+
+(defun bible-mode-copy-link (text)
+  "Follows the hovered verse in a `bible-search-mode' buffer,
+creating a new `bible-mode' buffer positioned at the specified verse."
+  (interactive (list (thing-at-point 'line t)))
+
+  (xc (bible-mode-get-link text)))
 
 (defun bible-mode--display(&optional verse)
   "Renders text for `bible-mode'"
@@ -584,7 +598,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (delete-backward-char 1)
       (end-of-buffer))))
 
-(defun bible-search(query &optional module searchtype)
+(defun bible-search (query &optional module searchtype)
   "Queries the user for a Bible search query. 
 'lucene' mode requires an index to be built using the `mkfastmod' program."
   (interactive  (list (pen-ask (pen-selection) "Bible Search: ")))
@@ -611,6 +625,23 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive)
   (nasb)
   (bible-mode-select-book))
+
+(defun fz-bible-book ()
+  (completing-read "Book: " bible-mode-book-chapters nil t))
+j
+(defun fz-bible-version ()
+  (completing-read "Module: " (bible-mode--list-biblical-modules)))
+
+(defun bible-mode-verse-other-version (version)
+  (interactive (list (fz-bible-version)))
+
+  (let ((ver (sor version))
+        (ref (sor (bible-mode-get-link))))
+    (if (and version
+             ref)
+        (sps (concat "ebible -m " version " " ref " | cvs")))))
+
+(define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
 
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
