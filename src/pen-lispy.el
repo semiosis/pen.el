@@ -518,6 +518,8 @@ The result is a string."
   (if (or (lispy-left-p)
           (lispy-right-p))
       (cond
+       ((derived-mode-p 'lisp-mode)
+        (format-lisp-at-point))
        ((derived-mode-p 'racket-mode)
         (format-racket-at-point))
        ((derived-mode-p 'clojure-mode)

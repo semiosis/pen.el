@@ -1,10 +1,26 @@
 (require 'cua-base)
 (require 'lispy)
 
+(defun mnm-xc-get ()
+  (pen-mnm (xc nil t t)))
+
+(defun mnm-xc-yank ()
+  (insert (pen-mnm (xc nil t t))))
+
 (defun pen-lispy-paste ()
   (interactive)
-  (xc (pen-mnm (xc nil t t)) t t)
-  (call-interactively 'lispy-yank))
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (call-interactively 'lispy-yank)
+    (cl-letf (((symbol-function 'lispy--maybe-safe-current-kill)
+               'mnm-xc-get))
+      (call-interactively 'lispy-yank))
+
+    ;; (progn
+    ;;   (xc (pen-mnm (xc nil t t)) t t)
+    ;;   (call-interactively 'lispy-yank))
+    ))
+
+(defalias 'pen-lispy-yank 'pen-lispy-paste)
 
 (defun pen-paste ()
   (interactive)
@@ -46,14 +62,17 @@
     )
   (deactivate-mark))
 
+(defun cua-paste-around-advice (proc &rest args)
+  (let ((default-directory "/"))    
+    (cl-letf (((symbol-function 'clipboard-yank)
+               'mnm-xc-yank)
+              ((symbol-function 'x-clipboard-yank)
+               'mnm-xc-yank))
+      (let ((res (apply proc args)))
+        res))))
+
 (if (inside-docker-p)
-    (progn
-      (defun cua-paste-around-advice (proc &rest args)
-        (xc (pen-mnm (xc nil t)) t)
-        (let ((default-directory "/"))
-          (let ((res (apply proc args)))
-            res)))
-      (advice-add 'cua-paste :around #'cua-paste-around-advice)))
+    (advice-add 'cua-paste :around #'cua-paste-around-advice))
 
 ;; (define-key pen-map (kbd "M-w") 'xc)
 (define-key pen-map (kbd "M-w") 'pen-m-w-copy)

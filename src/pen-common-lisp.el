@@ -83,12 +83,20 @@
           (not (y-or-n-p "Create an additional *inferior-lisp*? ")))))
   t)
 
+(defun format-lisp-at-point ()
+  "Formats racket code, if selected or on a starting parenthesis."
+  (interactive)
+  (slime-reindent-defun)
+  ;; (format-sexp-at-point "racket-format")
+  )
+
 ;; (define-key lisp-mode-map (kbd "C-x C-e") 'slime-eval-last-expression-in-repl)
 (define-key lisp-mode-map (kbd "C-x C-e") 'slime-eval-last-expression)
 
 ;; I don't actually know exactly where this should go.
 (remove-hook 'lisp-mode-hook 'sly-editing-mode)
 
+(define-key slime-mode-indirect-map (kbd "M-w") nil)
 (define-key slime-mode-indirect-map (kbd "M-?") nil)
 (define-key slime-mode-indirect-map (kbd "M-_") nil)
 (define-key slime-editing-map (kbd "M-w") 'slime-macroexpand-all)
