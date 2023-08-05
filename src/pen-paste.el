@@ -5,7 +5,7 @@
   (pen-mnm (xc nil t t)))
 
 (defun mnm-xc-yank ()
-  (insert (pen-mnm (xc nil t t))))
+  (insert (mnm-xc-get)))
 
 (defun pen-lispy-paste ()
   (interactive)
@@ -63,7 +63,7 @@
   (deactivate-mark))
 
 (defun cua-paste-around-advice (proc &rest args)
-  (let ((default-directory "/"))    
+  (let ((default-directory "/"))
     (cl-letf (((symbol-function 'clipboard-yank)
                'mnm-xc-yank)
               ((symbol-function 'x-clipboard-yank)

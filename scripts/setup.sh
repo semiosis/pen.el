@@ -1231,3 +1231,5 @@ agi socat cpipe
 
 # This is for the tm-vimbible command
 mkdir -p $PENCONF/documents/notes/ws/vimbible
+
+agi direnv
