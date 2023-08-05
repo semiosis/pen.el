@@ -1,6 +1,7 @@
 #!/bin/bash
 export TTY
 
+IFS= read -r -d '' shcode <<HEREDOC
 # Just cache this
 # I should be caching heredocs
 {
@@ -15,4 +16,8 @@ cat /tmp/vim-imap.txt | awk 1
 cat /tmp/vim-nmap.txt | awk 1 
 cat /tmp/vim-xmap.txt | awk 1 
 cat /tmp/vim-map.txt | awk 1 
-} | uniqnosort | sort | sed '/^$/d' | pavs
+} | uniqnosort | sort | sed '/^$/d'
+HEREDOC
+
+# printf -- "%s\n" "$shcode" | ci xargs myeval
+printf -- "%s\n" "$shcode" | ci myeval | pavs
