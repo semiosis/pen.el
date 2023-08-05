@@ -12,10 +12,10 @@ unbuffer bash -c 'vim +":Message map" +"w!/tmp/vim-map.txt" +:q'
 } &>/dev/null
 
 {
-cat /tmp/vim-imap.txt | awk 1 
-cat /tmp/vim-nmap.txt | awk 1 
-cat /tmp/vim-xmap.txt | awk 1 
-cat /tmp/vim-map.txt | awk 1 
+cat /tmp/vim-imap.txt | awk 1
+cat /tmp/vim-nmap.txt | awk 1
+cat /tmp/vim-xmap.txt | awk 1
+cat /tmp/vim-map.txt | awk 1
 } | uniqnosort | sort | sed '/^$/d'
 HEREDOC
 
