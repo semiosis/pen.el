@@ -628,7 +628,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun fz-bible-book ()
   (completing-read "Book: " bible-mode-book-chapters nil t))
-j
+
 (defun fz-bible-version ()
   (completing-read "Module: " (bible-mode--list-biblical-modules)))
 

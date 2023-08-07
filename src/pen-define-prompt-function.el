@@ -647,7 +647,7 @@
            (or (pen-var-value-maybe 'pipelines)
                ',pipelines))
 
-          ;; To use in preprocessors, postprocessor postpostprocessor 
+          ;; To use in preprocessors, postprocessor postpostprocessor
           (pipelines-varvals
            (asoc-merge
             final-pipelines))
@@ -764,7 +764,7 @@
           (last-vals vals)
 
           (final-preprocessors
-           ;; Unfortunately, can't do full template expansion here because we don't have vals. final-preprocessors is needed for vals 
+           ;; Unfortunately, can't do full template expansion here because we don't have vals. final-preprocessors is needed for vals
            (cl-loop for fpp in final-preprocessors collect
                     (if fpp
                         (--> fpp
@@ -1128,7 +1128,7 @@
                 )))
 
           ;; This could be a pf- function, elisp or shell command.
-          ;; It completes until it doesn't complete anymore. 
+          ;; It completes until it doesn't complete anymore.
           (final-closer
            (expand-template
             (str (or (pen-var-value-maybe 'closer)

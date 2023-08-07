@@ -1245,3 +1245,5 @@ agi direnv
 pip3.10 install bs4
 pip3.10 install html5lib
 pip3.10 install lxml
+
+e ia topsy prism

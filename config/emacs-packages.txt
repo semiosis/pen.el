@@ -2239,8 +2239,7 @@ gpt
 run-stuff
 pyvenv-auto
 khoj
-org-gtd
-semi
-mentor
 websearch
 spatial-navigate
+topsy
+prism
