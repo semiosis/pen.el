@@ -45,7 +45,7 @@ esac; done
 
 : "${version:="nasb"}"
 
-ref="$(cmd-nice "$book" "$@" | scrape-bible-references)"
+ref="$(cmd-nice "$book" "$@" | scrape-bible-references | pen-sort line-length-desc | head -n 1)"
 
 # query="$@"
 # 

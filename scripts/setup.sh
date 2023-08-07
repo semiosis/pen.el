@@ -395,6 +395,13 @@ go get "golang.org/x/tools/gopls@latest"
 cp -a "$EMACSD/pen.el/config/nvimrc" ~/.vimrc
 )
 
+mkdir -p "$HOME/.pen/conf/"
+for fn in ff-url-patterns.txt reader-url-patterns.txt chrome-dom-url-patterns.txt; do
+    test -f "$HOME/.pen/conf/$fn" ||
+        cp -a "$EMACSD/host/pen.el/config/$fn" ~/.pen/conf ||
+        cp -a "$EMACSD/pen.el/config/$fn" ~/.pen/conf
+done
+
 (
 mkdir -p $HOME/.config/broot/
 cp -a "$EMACSD/pen.el/config/broot-conf.toml" $HOME/.config/broot/conf.toml 

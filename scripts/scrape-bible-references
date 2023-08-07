@@ -1,6 +1,29 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -b) {
+        books_only=y
+        shift
+    }
+    ;;
+
+    -v) {
+        verses_only=y
+        shift
+    }
+    ;;
+
+    -c) {
+        chapters_only=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # TODO Start by generating all the desired regexes for all
 # bible references.
 
@@ -460,5 +483,23 @@ input_fp="$(cat | tf txt)"
 
         cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( [0-9]\+\\)\\?\\(:[0-9]\+\\)\\?.*/\\1\\2\\3\\4/p"
     done
+} | {
+    if test "$verses_only" = "y"; then
+        grep :
+    else
+        cat
+    fi
+} | {
+    if test "$chapters_only" = "y"; then
+        grep -P "[0-9]$" | sed 's/:.*//'
+    else
+        cat
+    fi
+} | {
+    if test "$books_only" = "y"; then
+        sed 's/ [0-9].*//'
+    else
+        cat
+    fi
 } | uniqnosort
 rm "$input_fp"

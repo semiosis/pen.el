@@ -45,6 +45,7 @@
   (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))))
 
 (defun select-filter ()
+  (interactive)
   (chomp (esed " #.*" ""
                (fz
                 (cat
