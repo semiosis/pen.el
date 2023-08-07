@@ -510,6 +510,7 @@ awk '{ for (i=NF; i>1; i--) printf("%s ",$i); print $1; }' # reverse words of st
 s-reverse-words-of-string
 translate-shane-to-emacs-common
 emacs-convert-symbols-to-pen
+snake-case2words
 unsnakecase
 filter-define-key-to-end.sh
 filter-require-to-start.sh
@@ -522,4 +523,4 @@ scrape-bible-references
 scrape-bible-references -v     # verses only
 scrape-bible-references -c     # chapters only
 scrape-bible-references -b     # books only
-snake-case2words
+canonicalise-bible-book-title
