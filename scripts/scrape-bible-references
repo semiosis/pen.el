@@ -456,7 +456,7 @@ HEREDOC
 
 # Thankfully there is a multiple of 10 number of books
 
-input_fp="$(cat | tf txt)"
+input_fp="$(cat | c ascify | tf txt)"
 {
     
     printf -- "%s" "$booktitles" | while IFS=$'\n' read -r title; do
