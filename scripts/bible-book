@@ -45,6 +45,8 @@ esac; done
 
 : "${version:="nasb"}"
 
+ref="$(cmd-nice "$book" "$@" | scrape-bible-references)"
+
 # query="$@"
 # 
 # if test -n "$query"; then
@@ -55,4 +57,6 @@ esac; done
 
 # "$version" "$book" "$query"
 
-"$version" "$book" "$@"
+# "$version" "$book" "$@"
+
+eval "$version $ref"
