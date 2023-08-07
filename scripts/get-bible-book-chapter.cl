@@ -105,7 +105,7 @@
 #+(or)
 (external-program:run "tv" '("") :input "hi")
 
-(setf (fdefinition 'doc) #'documentation)
+;; (setf (fdefinition 'doc) #'documentation)
 
 (defun str (o)
   "Convert object to string"  

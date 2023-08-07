@@ -19,4 +19,4 @@ esac; done
 
 s join ";" |
     xargs "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" |
-    sed -z 's/\([0-9]:\) *\n/\1 /g' | pavs
+    sed -z 's/\([0-9]:\) *\n/\1 /g' | sed 's/^\s*//' | pavs

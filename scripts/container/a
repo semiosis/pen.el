@@ -1,0 +1,568 @@
+#!/bin/bash
+export TTY
+
+exec 0</dev/null
+
+: ${QUIET:="n"}
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -q) {
+        QUIET=y
+        export QUIET
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# for ns
+export NOSAVE=y
+
+# If more than 10 sec old then delete this
+test `find /tmp/beeping -mmin +10 2>/dev/null` && rm -f /tmp/beeping
+
+# This script is for all things audio
+
+amixer() {
+    /usr/bin/amixer $@ &>/dev/null
+}
+
+DEVID=1
+
+getpavol() {
+    # pactl list sinks | grep "Volume: 1:" | awk '{print $3}' | tr -d %
+    pactl list sinks | sed -n '/Name: alsa_output.pci.*analog/,/Sink #/p' | sed -n '/Volume: front/p' | sed 's/^.* \([0-9]\+\)%.*$/\1/'
+}
+
+# VOL="$(awk -F"[][]" '/dB/ { print $2 }' <(amixer -c $DEVID sget Master) | sed 's/.$//')"
+# if [ "$VOL" -ge 100 ]; then
+#     VOL="$(getpavol)"
+# fi
+
+VOL="$(getpavol)"
+
+# This makes beeping easier on the ears.
+# beep_gain=0.1
+beep_gain=0.05
+# beep_gain=0.2
+#beep_gain=1
+# beep_gain=0.5
+
+unmute() {
+    amixer -c $DEVID set PCM 100%
+    amixer -c $DEVID set Headphone 100%
+    amixer -c $DEVID set Speaker 100%
+    amixer -c $DEVID set "Bass Speaker" 100%
+    # amixer -c $DEVID set PCM 255
+    # amixer -c $DEVID set Headphone 127
+    # amixer -c $DEVID set Speaker 127
+    # amixer -c $DEVID set "Bass Speaker" 127
+    amixer -c $DEVID set Headphone unmute
+    amixer -c $DEVID set Speaker unmute
+    amixer -c $DEVID set "Bass Speaker" unmute
+}
+
+setvol() {
+    pactl set-sink-volume $DEVID "$1"
+}
+
+opt="$1"
+shift
+case "$opt" in
+    pulseaudio-restart) {
+        if pulseaudio --check; then
+            # kill it
+            pulseaudio -k
+        fi
+        # sleep here?
+        if ! pulseaudio --check; then
+            # restart it
+            pulseaudio -D
+        fi
+    }
+    ;;
+
+    vol) {
+        printf -- "%s" "$VOL"
+        exit 0
+    }
+    ;;
+
+    beep) {
+        if test "$QUIET" = "y"; then
+            exit 0
+        fi
+
+        echo "$VOL" 1>&2
+
+        type="$1"
+        shift
+
+        case "$type" in
+            warning) {
+                # type="$HOME/dump/audio/sfx/ocarina/OOT_SilverRupee1.wav"
+                beepwait=0.3
+                beep_gain=0.1
+                type="$HOME/dump/audio/sfx/ocarina/OOT_LowHealth.wav"
+                # a set 100
+            }
+            ;;
+
+            *) {
+                case "$VOL" in
+                    200) {
+                        type=fanfare
+                        beepwait=1.2
+                    }
+                    ;;
+
+                    190|195) {
+                        type="$HOME/dump/audio/sfx/ocarina/OOT_SilverRupee4.wav"
+                        beepwait=0.7
+                    }
+                    ;;
+
+                    180|185) {
+                        type="$HOME/dump/audio/sfx/ocarina/OOT_SilverRupee3.wav"
+                        beepwait=0.7
+                    }
+                    ;;
+
+                    170|175) {
+                        type="$HOME/dump/audio/sfx/ocarina/OOT_SilverRupee2.wav"
+                        beepwait=0.7
+                    }
+                    ;;
+
+                    160|165) {
+                        type="$HOME/dump/audio/sfx/ocarina/OOT_SilverRupee1.wav"
+                        beepwait=0.7
+                    }
+                    ;;
+
+                    100) {
+                        type=pause
+                    }
+                    ;;
+                    
+                    *) {
+                        if test "$VOL" -gt 150; then
+                            type=carrot
+                        elif test "$VOL" -gt 100; then
+                            type=random
+                        elif test "$VOL" -gt 50; then
+                            type=ocarina
+                        elif test "$VOL" -gt 10; then
+                            type=voice
+                        else
+                            type=laser
+                        fi
+                    }
+                    ;;
+                esac
+                }
+        esac
+
+        case "$type" in
+            voice) {
+                read -r -d '' files <<HEREDOC
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Voice_A_med.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Voice_B_med.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Voice_D2_med.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Voice_D_med.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Voice_F_med.wav
+HEREDOC
+
+                sound="$( printf -- "%s\n" "$files" | s random_line )"
+                beepwait=0.2
+            }
+            ;;
+
+            ocarina) {
+                read -r -d '' files <<HEREDOC
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Ocarina_A_med.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Ocarina_B_med.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Ocarina_D2_med.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Ocarina_D_med.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Notes_Ocarina_F_med.wav
+HEREDOC
+
+                sound="$( printf -- "%s\n" "$files" | s random_line )"
+                beepwait=0.4
+            }
+            ;;
+
+            
+            7|random2) {
+                read -r -d '' files <<HEREDOC
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Close.wav
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Close_Mono.wav
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Cursor.wav
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Open.wav
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Open_Mono.wav
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Select.wav
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Select_Mono.wav
+$HOME/dump/audio/sfx/ocarina/OOT_YoungLink_Attack1.wav
+HEREDOC
+
+                sound="$( printf -- "%s\n" "$files" | s random_line )"
+                beepwait=0.2
+            }
+            ;;
+
+            10|random) {
+                read -r -d '' files <<HEREDOC
+$HOME/dump/audio/sfx/ocarina/OOT_YoungLink_Attack1.wav
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Turn_Left.wav
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Turn_Mono.wav
+$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Turn_Right.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Night_Crow.wav
+$HOME/dump/audio/sfx/ocarina/OOT_LowHealth.wav
+$HOME/dump/audio/sfx/ocarina/OOT_MiniMap_Off.wav
+$HOME/dump/audio/sfx/ocarina/OOT_MiniMap_On.wav
+$HOME/dump/audio/sfx/ocarina/OOT_AdultZelda_Huh.wav
+$HOME/dump/audio/sfx/ocarina/OOT_MagicRefill.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Dog.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Navi_Hello5.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Navi_Hey1.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Navi_Listen3.wav
+$HOME/dump/audio/sfx/ocarina/OOT_NayrusLove2.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Night_Bird2.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Arrow_Select.wav
+$HOME/dump/audio/sfx/ocarina/OOT_LensOfTruth_On.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Bari_Split.wav
+$HOME/dump/audio/sfx/ocarina/OOT_Bari_Hit.wav
+$HOME/dump/audio/sfx/ocarina/OOT_BigOcto_HitX.wav
+HEREDOC
+
+                sound="$( printf -- "%s\n" "$files" | s random_line )"
+                beepwait=0.2
+            }
+            ;;
+
+            10|laser) {
+                sound="$HOME/dump/audio/sfx/rogue/BANK_00_INSTR_00A3_SND_0000.wav"
+                beepwait=0.3
+            }
+            ;;
+
+            2|heart) {
+                sound="$HOME/dump/audio/sfx/ocarina/OOT_Get_Heart.wav"
+                beepwait=0.12
+            }
+            ;;
+            
+            6|carrot) {
+                sound="$HOME/dump/audio/sfx/ocarina/OOT_Carrot.wav"
+                beepwait=0.3
+            }
+            ;;
+
+            3|pause) {
+                sound="$HOME/dump/audio/sfx/ocarina/OOT_PauseMenu_Open.wav"
+                beepwait=0.5
+            }
+            ;;
+
+            4|fanfare) {
+                # sound="$HOME/dump/audio/sfx/ocarina/OOT_Fanfare_Item.wav"
+                sound="$HOME/dump/audio/sfx/ocarina/OOT_Fanfare_SmallItem.wav"
+            }
+            ;;
+
+            1|item) {
+                sound="$HOME/dump/audio/sfx/ocarina/OOT_Get_SmallItem1.wav"
+                beepwait=0.4
+            }
+            ;;
+
+            *) {
+                if [ -e "$type" ]; then
+                    sound="$type"
+                else
+                    sound="$HOME/dump/audio/sfx/ocarina/OOT_Get_SmallItem1.wav"
+                    beepwait=0.4
+                fi
+            }
+            ;;
+            
+        esac
+        
+        # sound="$HOME/dump/audio/OOT_Get_Rupee.wav"
+
+        # sound="$HOME/dump/audio/sfx/OOT_Epona_Gallop.wav"
+
+        # sound="$HOME/dump/audio/sfx/OOT_FlyingPlant.wav"
+        # beepwait=0.13
+
+
+        exec &>/dev/null
+        
+        if test -n "$beepwait"; then
+            (sleep $beepwait && rm /tmp/beeping) & disown
+        fi
+
+        ! test -e /tmp/beeping && (
+        touch /tmp/beeping
+
+        # This is affected by VLC's volume. It might sound like the
+        # volume is not going up. Therefore, can't use VLC.
+
+        # https://superuser.com/questions/276596/play-mp3-or-wav-file-via-linux-command-line
+        # Although the sound is sketchy -- and I can't reduce it here
+        # gst-launch-1.0 playbin uri=file://"$sound"
+
+        bn="$(basename "$sound")"
+        mant="${bn%.*}"
+
+        vlc_vol="$(a get-application-volume VLC)"
+        # if [ -z "$vlc_vol" ]; then
+        #     vlc_vol="may be different"
+        # fi
+
+        message="vol: $VOL"
+        if test -n "$vlc_vol"; then
+            message="$message vlc: $vlc_vol"
+        fi
+
+        ns "$message"
+
+        # ns +"volume: $VOL ($mant)" "vlc: $vlc_vol"
+
+        unbuffer vlc --gain $beep_gain --intf dummy --play-and-exit "$sound" &>/dev/null
+
+        ! test -n "$beepwait" && rm /tmp/beeping
+        )
+
+        exit 0
+        
+        shift
+    }
+    ;;
+
+    down|vd|volume-down) {
+        PERCENT_CHANGE=20
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -pc) {
+                PERCENT_CHANGE="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        unmute
+
+        test -e /tmp/beeping && exit
+
+        amixer -c $DEVID set Master ${PERCENT_CHANGE}-
+        if [ -z "$NOFEEDBACK" ]; then
+            a beep
+        fi
+        
+        # if [ "$VOL" -ge "150" ]; then
+        #     pactl set-sink-volume $DEVID $(( $VOL - 20 ))%
+        # elif [ "$VOL" -ge "105" ]; then
+        #     pactl set-sink-volume $DEVID $(( $VOL - 15 ))%
+        # else
+        #     amixer -c $DEVID set Master 10-
+        # fi
+
+        # if [ -z "$NOFEEDBACK" ]; then
+        #     a beep
+        # fi
+
+        shift
+    }
+    ;;
+
+
+    set|set-volume) {
+        value="$1"
+        amixer -c $DEVID set Master "$value"
+    }
+    ;;
+
+    up|vu|volume-up) {
+        PERCENT_CHANGE=30
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -pc) {
+                PERCENT_CHANGE="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        unmute
+
+        test -e /tmp/beeping && exit
+
+        # Debugging: It's working but the value of VOL isn't changing
+
+        amixer -c $DEVID set Master ${PERCENT_CHANGE}+
+
+        if [ -z "$NOFEEDBACK" ]; then
+            a beep
+        fi
+
+        # pactl is dodgy
+        # But sometimes I want higher than 100% volume :(
+
+        #if [ "$VOL" -ge "0" ] && [ "$VOL" -lt "50" ]; then
+        #    echo "$VOL" | tv
+        #elif [ "$VOL" -ge "100" ] && [ "$VOL" -lt "200" ]; then
+        #    pactl set-sink-volume $DEVID $(( $VOL + 15 ))%
+        #else
+        #    pactl set-sink-volume $DEVID $(( $VOL + 10 ))%
+        #fi
+
+        # if [ "$VOL" -ge "200" ]; then
+        #     pactl set-sink-volume $DEVID 200%
+        # fi
+
+        shift
+    }
+    ;;
+
+    off|volume-off) {
+        test -e /tmp/beeping && exit
+
+        if [ "$VOL" -ge "110" ]; then
+            setvol 100%
+        elif [ "$VOL" -ge "75" ]; then
+            setvol 50%
+        elif [ "$VOL" -ge "50" ]; then
+            setvol 25%
+        else
+            setvol 0%
+        fi
+
+        a beep
+
+        shift
+    }
+    ;;
+
+    max|volume-max) {
+
+        test -e /tmp/beeping && exit
+
+        # scp home:local/bin/volumemax.sh $SCRIPTS
+
+        if [ "$VOL" -eq "200" ]; then
+            # pactl set-sink-volume $DEVID 100%
+            :
+        elif [ "$VOL" -eq "175" ]; then
+            setvol 200%
+        elif [ "$VOL" -eq "150" ]; then
+            setvol 175%
+        elif [ "$VOL" -eq "125" ]; then
+            setvol 150%
+        elif [ "$VOL" -eq "100" ]; then
+            setvol 125%
+        # elif [ "$VOL" -ge "75" ]; then
+            # amixer -c $DEVID set Master 127
+        else
+            setvol 100%
+            # amixer -c $DEVID set Master 96 # why not 100?
+        fi
+
+        a beep
+
+        shift
+    }
+    ;;
+
+    mute) {
+        # scp home:local/bin/volumemute.sh $SCRIPTS
+
+        amixer set Speaker toggle;
+
+        # amixer set 'Bass Speaker' toggle;amixer set Speaker toggle;amixer set Master toggle;amixer set Headphone toggle;
+
+        a beep
+
+        # volumemute.sh
+        shift
+    }
+    ;;
+
+    record) {
+        arecord -f cd -t raw | lame -x -r – out.mp3
+    }
+    ;;
+
+    get-application-volume) {
+        $0 get-application-volumes "$1" | head -n 1
+    }
+    ;;
+
+    get-application-volumes) {
+        app_name="$1"
+
+        pactl list sink-inputs | awk-record "$1" | sed -n '/Volume:/ {s/.*[^0-9]\([0-9]\+%\).*/\1/p}'
+    }
+    ;;
+
+    get-application-sink-details) {
+        app_name="$1"
+
+        pactl list sink-inputs | awk-rec VLC
+
+        #  | awk -v app="$app_name" 'BEGIN {RS="\n\n"} $0 ~ app'
+        #  | awk -v app="VLC" 'BEGIN {RS="\n\n"} $0 ~ app'
+    }
+    ;;
+
+    get-application-sink-id) {
+        $0 get-application-sink-ids "$1" | head -n 1
+    }
+    ;;
+
+    get-application-sink-ids) {
+        app_name="$1"
+
+        #  | awk 'BEGIN {RS="\n\n"} /VLC/'
+
+        pactl list sink-inputs | awk-record "$app_name" | sed -n '/^Sink Input #/{s/.*#\([0-9]\+\)/\1/p}'
+    }
+    ;;
+
+    # this is currently fading in from 50 and takes a sink id, but you
+    # should just supply the app name
+    # a fade-out-applation $(a get-application-sink-ids VLC)
+    fade-out-applation) {
+        app_sink_id="$1"
+
+        for ((i=50;i<100;i+=1)); do
+            pactl set-sink-input-volume "$app_sink_id" $i%
+            sleep 0.05
+        done
+    }
+    ;;
+
+    
+    # application volume (including vlc's volume) is stored in a config
+    # file somewhere on this system
+    set-application-volume) {
+        app_name="$1"
+        vol="$2"
+
+        a get-application-sink-ids "$app_name" | awk1 | while IFS=$'\n' read -r line; do
+            pactl set-sink-input-volume "$line" "${vol}%"
+        done
+    }
+    ;;
+
+
+    *) 
+        :
+    ;;
+esac
