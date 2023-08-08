@@ -127,11 +127,20 @@
                    lispy-flow)
         :prevdef '(pen-prog-prev-def))
 
+(defun repl-or-slime ()
+  (interactive)
+
+  (let ((bn "*slime-repl roswell*"))
+    (if (buffer-exists bn)
+        (switch-to-buffer bn)
+      (call-interactively 'slime))))
+
 (handle '(lisp-mode common-lisp-mode slime-repl-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list
                 ;; 'sly-mrepl
-                'slime
+                ;; 'slime
+                'repl-or-slime
                 ;; 'slime-repl
                 )
         :formatters '(lsp-format-buffer)
