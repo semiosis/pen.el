@@ -1251,3 +1251,13 @@ e ia topsy prism
 cd "$EMACSD/manual-packages"
 git clone "https://github.com/alphapapa/obvious.el"
 )
+
+# A TUI common-lisp IDE
+ros install lem-project/lem
+
+(
+cd "$HOME/repos"
+git clone --recursive https://github.com/lem-project/lem
+cd Lem
+)
+ 

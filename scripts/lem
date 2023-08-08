@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+# export TERM=xterm-256color
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# This works but
+
+# --rm 
+# docker run -ti -v `pwd`:/app 40ants/lem:latest
+
+$HOME/.roswell/bin/lem-ncurses "$@"
