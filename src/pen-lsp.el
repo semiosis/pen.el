@@ -8,6 +8,7 @@
 (require 'rust-mode)
 (require 'helm-lsp)
 (require 'lsp-headerline)
+(require 'lsp-common-lisp)
 
 (el-patch-feature lsp-mode)
 (el-patch-defun lsp (&optional arg)
@@ -188,6 +189,7 @@ This issue might be caused by:
 (add-hook 'rust-mode-hook 'maybe-lsp)
 (add-hook 'vimrc-mode-hook 'maybe-lsp)
 (add-hook 'racket-mode-hook 'maybe-lsp)
+(add-hook 'lisp-mode-hook 'maybe-lsp)
 (add-hook 'solidity-mode-hook 'maybe-lsp)
 (add-hook 'rustic-mode-hook 'maybe-lsp)
 (add-hook 'nix-mode-hook 'maybe-lsp)
@@ -580,6 +582,12 @@ We don't extract the string that `lps-line' is already displaying."
   :type 'string
   :package-version '(lsp-mode . "7.1"))
 (setq lsp-racket-langserver-command "racket-lsp")
+
+(defcustom lsp-common-lisp-langserver-command '("cl-lsp")
+  "Command to start the server."
+  :type 'string
+  :package-version '(lsp-mode . "7.1"))
+(setq lsp-common-lisp-langserver-command "cl-lsp")
 
 (lsp-register-client
  (make-lsp-client :new-connection (lsp-stdio-connection

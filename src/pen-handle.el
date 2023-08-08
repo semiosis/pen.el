@@ -156,6 +156,7 @@
                   ;; common-lisp-go-to-symbol
                   helm-cider-apropos-symbol)
         :godef '(lsp-find-definition
+                 slime-edit-definition
                  pen-slime-godef
                  slime-show-xref
                  xref-find-definitions-immediately

@@ -1258,6 +1258,20 @@ ros install lem-project/lem
 (
 cd "$HOME/repos"
 git clone --recursive https://github.com/lem-project/lem
-cd Lem
+git clone https://github.com/lem-project/micros
+cd lem
 )
  
+
+# (ql:quickload :swank)
+xs quicklisp-install swank
+
+# cd "$HOME/.roswell/local-projects/lem-project/lem"; sh-yank
+{
+cd $(ros -e '(princ (ql:where-is-system :lem))')
+git submodule update --init --recursive
+ros follow-dependency=t install lem-project/lem
+}
+
+# LSP - use this also in emacs
+ros install lem-project/lem cxxxr/cl-lsp

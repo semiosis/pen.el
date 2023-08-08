@@ -481,7 +481,9 @@ input_fp="$(cat | c ascify | tf txt)"
         # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b.*/\\1/p"
         # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\( [0-9]\+\\).*/\\1\\2/pI"
 
-        cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( [0-9-]\+\\)\\?\\(:[0-9-]\+\\)\\?.*/\\1\\2\\3\\4/p"
+        cat "$input_fp" | awk 1 | 
+            sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( [0-9-]\+\\)\\?\\(:[0-9-]\+\\)\\?.*/\\1\\2\\3\\4/p" |
+            sed '/^$/d'
     done
 } | {
     if test "$verses_only" = "y"; then
