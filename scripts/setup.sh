@@ -1204,7 +1204,6 @@ cd xiphos
 
 mkfastmod NASB
 
-
 go install github.com/maaslalani/draw@latest
 
 agi yasm nasm
@@ -1247,3 +1246,8 @@ pip3.10 install html5lib
 pip3.10 install lxml
 
 e ia topsy prism
+
+(
+cd "$EMACSD/manual-packages"
+git clone "https://github.com/alphapapa/obvious.el"
+)

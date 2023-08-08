@@ -243,8 +243,8 @@ Be mindful of quoting arguments correctly."
 (require 'pen-marginalia)
 (require 'pen-minimap)
 (require 'pen-external-tools)
-(require 'pen-topsy)
-(require 'pen-prism)
+;; (require 'pen-topsy)
+;; (require 'pen-prism)
 
 (if (inside-docker-p)
     (progn

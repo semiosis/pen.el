@@ -322,7 +322,6 @@ bindkey -s "^[%" "^A^Kgit stash show -u \t"
 bindkey -s "^[K" "^A^Kvc g dt -c\r" #bindkey -s "^[K" "^A^Kgit d --cached\r"
 bindkey -s "^[J" "^A^Kf find-file-repo \"*\"^B" # find a file by name in all commits
 bindkey -s "^[l" "^A^Ksh-general\r"
-bindkey -s "^[L" "^A^Ksh-ranger-lingo .\r"
 
 # M-B
 # bindkey -s "^[B" "^A^Kbr\r"
