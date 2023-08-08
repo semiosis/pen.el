@@ -1,0 +1,121 @@
+#!/bin/bash
+sn="$(basename "$0")"
+
+if test "$sn" = "etetris-xterm"; then
+    nw=" -nw "
+elif test "$sn" = "etetris-vt100"; then
+    nw=" -nw "
+    export TERM=vt100
+else
+    extra="(load \"/tmp/tetris-load.el\")"
+fi
+
+cat <<HEREDOC > /tmp/tetris-load.el
+(defun str (thing)
+  "Converts object or string to an unformatted string."
+  (setq thing (format "%s" thing))
+  (set-text-properties 0 (length thing) nil thing)
+  thing)
+
+(defun my-new-buffer-frame (&optional contents bufname)
+  "Create a new frame with a new empty buffer."
+  (interactive)
+  (if (not bufname)
+      (setq bufname "*untitled*"))
+  (let ((buffer (generate-new-buffer bufname)))
+    (set-buffer-major-mode buffer)
+    ;; (display-buffer buffer '(display-buffer-pop-up-frame . nil))
+    (display-buffer buffer '(display-buffer-same-window . nil))
+    (with-current-buffer buffer
+      (insert (str contents))
+      (beginning-of-buffer))
+    buffer))
+(defalias 'new-buffer-from-string 'my-new-buffer-frame)
+
+(defun buffer2string (buffer)
+  (with-current-buffer buffer
+    (save-restriction
+      (widen)
+      (buffer-substring-no-properties (point-min) (point-max))
+      ;;(buffer-substring-no-properties buffer (point-min) (point-max))
+      )))
+
+(defun ecurl (url)
+  (with-current-buffer (url-retrieve-synchronously url t t 5)
+    (goto-char (point-min))
+    (re-search-forward "^$")
+    (delete-region (point) (point-min))
+    (kill-line)
+    (let ((result (buffer2string (current-buffer))))
+      (kill-buffer)
+      result)))
+
+;; Can't use setq because you haven't required yet. Need to use custom-set-variables
+; ;(setq tetris-width 10)
+; ;(setq tetris-height 20)
+; 
+; (setq tetris-width (+ tetris-width 5))
+; (setq tetris-height (+ tetris-height 5))
+; 
+; 
+; ;(setq tetris-buffer-width 30)
+; ;(setq tetris-buffer-height 22)
+; 
+; (setq tetris-buffer-width (+ tetris-buffer-width 5))
+; (setq tetris-buffer-height (+ tetris-buffer-height 5))
+; 
+; ; (set tetris-score-x (+ tetris-score-x 5))
+; ; (set tetris-score-y (+ tetris-score-y 5))
+
+(custom-set-variables
+'(tetris-width 10)
+'(tetris-height 25)
+'(tetris-buffer-width 30)
+'(tetris-buffer-height 27))
+
+
+(require 'tetris)
+
+(define-key tetris-mode-map (kbd "k") (kbd "<up>"))
+(define-key tetris-mode-map (kbd "j") (kbd "<down>"))
+(define-key tetris-mode-map (kbd "h") (kbd "<left>"))
+(define-key tetris-mode-map (kbd "l") (kbd "<right>"))
+
+(define-key key-translation-map (kbd "C-M-k") (kbd "<up>"))
+(define-key key-translation-map (kbd "C-M-j") (kbd "<down>"))
+(define-key key-translation-map (kbd "C-M-h") (kbd "<left>"))
+(define-key key-translation-map (kbd "C-M-l") (kbd "<right>"))
+
+(progn
+  (set-foreground-color "#404040")
+  (set-background-color "#151515")
+
+  (set-face-foreground 'default "#404040")
+  (set-face-background 'default "#151515")
+  )
+
+  ;; (defun load-tetris-update ()
+  ;;   (with-current-buffer
+  ;;       (new-buffer-from-string
+  ;;        (ecurl
+  ;;         "http://git.savannah.gnu.org/cgit/emacs.git/plain/lisp/play/gamegrid.el"))
+  ;;     (eval-buffer (current-buffer))
+  ;;     (kill-buffer)))
+  ;; 
+  ;; (load-tetris-update)
+HEREDOC
+
+# (execute-kbd-macro (kbd \"C-l\"))
+
+read -r -d '' elisp_command <<HEREDOC
+(progn
+  $extra
+  (define-key global-map (kbd "q") #'save-buffers-kill-terminal)
+  (tool-bar-mode -1)
+  (menu-bar-mode -1)
+  (call-interactively 'tetris)
+  (setq mode-line-format '())
+  (message ""))
+HEREDOC
+
+emacs $nw -q --eval "$elisp_command"
