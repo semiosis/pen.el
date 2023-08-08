@@ -737,7 +737,9 @@ We don't extract the string that `lps-line' is already displaying."
   (let ((r
          (lsp-find-locations "textDocument/definition" nil :display-action display-action)))
 
-    (if (re-match-p "LSP :: Not found" r)
+    (if (and
+         (stringp r)
+         (re-match-p "LSP :: Not found" r))
         (error r)
       r)))
 
