@@ -731,6 +731,16 @@ We don't extract the string that `lps-line' is already displaying."
 
 (advice-add 'lsp-lens--display :around #'ignore-errors-around-advice)
 
+(cl-defun lsp-find-definition (&key display-action)
+  "Find definitions of the symbol under point."
+  (interactive)
+  (let ((r
+         (lsp-find-locations "textDocument/definition" nil :display-action display-action)))
+
+    (if (re-match-p "LSP :: Not found" r)
+        (error r)
+      r)))
+
 (progn
   (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
   (define-key lsp-ui-imenu-mode-map (kbd "<return>") 'lsp-ui-imenu--view)
