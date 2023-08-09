@@ -18,6 +18,7 @@
       (defalias 'sleep 'sleep-for)
       (defalias 'tryonce 'tryelse)
       (defalias 'goto-byte 'pen-goto-byte)
+      (defalias 'goto-glossary-definition 'pen-goto-glossary-definition)
       (defalias 'function-p 'fboundp)
       (defalias 'cmd 'pen-cmd)
       (defalias 'mu 'pen-mu)

@@ -6,5 +6,15 @@ export TTY
 ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 term="$@"
+: "${term:="$(list-glossary-terms | mfz -nv)"}"
 
-odn orspe -e "(goto-glossary-definition $(cmd-nice-posix "$term"))"
+test -n "$term" || exit 1
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    odn sp -e "(goto-glossary-definition $(cmd-nice-posix "$term"))"
+else
+    list-glossary-terms-for-elisp | grep "\"$term\""
+    # tail -c +1768 /root/.pen/glossaries/translation.txt | v
+fi
