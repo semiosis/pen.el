@@ -32,6 +32,7 @@
                            find-ci-here
                            show-extensions-below
                            run-fs-search-function
+                           todayfile
                            dired-toggle-dumpd-dir
                            pen-sps-ranger))
 (defset magit-status-mode-funcs '(magit-section-cycle-diffs
