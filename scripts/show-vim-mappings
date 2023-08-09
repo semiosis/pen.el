@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# snippet hdci
+
 IFS= read -r -d '' shcode <<HEREDOC
 # Just cache this
 # I should be caching heredocs
