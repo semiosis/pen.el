@@ -1,0 +1,39 @@
+#!/bin/bash
+export TTY
+
+fp="`date +%d.%m.%y`.org"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -cd) {
+        dir="$2"
+        full_path=y
+        shift
+        shift
+    }
+    ;;
+
+    -P) {
+        full_path=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$full_path" = "y"; then
+    : "${dir:="$(pwd)"}"
+    fp="$dir/$fp"
+fi
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    ns +todayfile "$fp"
+
+    touch "$fp"
+    sp "$fp"
+else
+    echo "$fp"
+fi

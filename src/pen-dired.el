@@ -177,4 +177,13 @@
              (defun ranger-set-dired-key ()
                (define-key dired-mode-map ranger-key 'deer-from-dired)))
 
+(defun todayfile ()
+  (interactive)
+  (let ((fp
+         (snc "todayfile -P | cat")))
+
+    (if (interactive-p)
+        (find-file fp)
+      fp)))
+
 (provide 'pen-dired)
