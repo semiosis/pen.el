@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# See also Y
+
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+term="$@"
+
+odn orspe -e "(goto-glossary-definition $(cmd-nice-posix "$term"))"
