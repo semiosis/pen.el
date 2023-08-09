@@ -15,6 +15,23 @@ is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 if is_tty; then
     odn sp -e "(goto-glossary-definition $(cmd-nice-posix "$term"))"
 else
-    list-glossary-terms-for-elisp | grep "\"$term\""
+    sexp="$(list-glossary-terms-for-elisp | grep "\"$term\"" | head -n 1)"
+
+    # printf -- "%s" "$sexp"
+
+    bytepos="$(printf -- "%s" "$sexp" | grep -oP "\" [0-9]+ \"" | grep -oP "[0-9]+")"
+    path="$(printf -- "%s" "$sexp" | grep -oP ".*\" " | sed 's/^("\(.*\)".*/\1/')"
+
+    {
+    echo "$term" | udl
+    tail -c +"$bytepos" "$path" |
+        sed -z 's/^\n*//' |
+        sed -z 's/^\([^ ][^\n]\+\n\)*//' |
+        sed '/^[^ ]/{s/.*//;q}' |
+        sed -e 's/^\s*//' |
+        sed -z 's/\n*$//'
+    } | pavs
+
     # tail -c +1768 /root/.pen/glossaries/translation.txt | v
+    # tail -c +1768 /root/.pen/glossaries/translation.txt | sed -z 's/^\n*//' | sed -z 's/^\([^ ][^\n]\+\n\)*//' | sed '/^[^ ]/{s/.*//;q}' | sed -e 's/^\s*//' | v
 fi
