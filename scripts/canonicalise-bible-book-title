@@ -23,7 +23,7 @@ stdin_exists() {
 }
 
 if stdin_exists; then
-    while read line; do
+    awk 1 | while read line; do
         if printf -- "%s\n" "$line" | grep -q -P '[0-9]$'; then
             # separate book title from chapter:verse
             booktitle="$(printf -- "%s" "$line" | sed 's/ [0-9].*//')"
