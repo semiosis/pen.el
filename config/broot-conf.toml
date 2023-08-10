@@ -46,7 +46,8 @@ invocation = "vim"
 key = "alt-v"
 leave_broot = false
 shortcut = "nw"
-execution = "tm -d nw -args cmd-nice-pavs {file}"
+# execution = "tm -d nw -args cmd-nice-pavs {file}"
+execution = "tm -d nw -args v {file}"
 
 [[verbs]]
 invocation = "emacs"

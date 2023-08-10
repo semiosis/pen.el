@@ -2197,6 +2197,7 @@ May use to generate code from comments."
 (require 'pen-alethea-ai)
 (require 'pen-mad-teaparty)
 (require 'pen-games)
+(require 'pen-popwin)
 (require 'pen-documents)
 (require 'pen-show-map)
 (require 'pen-isearch)
