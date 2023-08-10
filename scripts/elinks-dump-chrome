@@ -1,0 +1,37 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -n) {
+        window_name="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -t) {
+        export USE_TOR=y
+    }
+    ;;
+
+    -w) {
+        WAITTIME="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export WAITTIME
+
+url="$1"
+test -n "$url" || exit 1
+
+# I get an iframe from dockerhub when I use https
+url="$(p "$url" | sed '/hub.docker.com/s/^https/http/')"
+
+dom-dump "$url" | tf html | xa elinks-dump

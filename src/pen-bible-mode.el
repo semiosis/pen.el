@@ -638,18 +638,26 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-mode-verse-other-version (version)
   (interactive (list (fz-bible-version)))
-
-  (if (>= (prefix-numeric-value current-prefix-arg) 4)
-      (let ((prefix-numeric-value nil)
-            (current-prefix-arg nil))
-        (sps (concat "ebible -m " version " " ref " | cvs")))
-    (bible-mode-lookup ref version))
-
-  (let ((ver (sor version))
-        (ref (sor (bible-mode-get-link))))
-    (if (and version
-             ref)
-        (sps (concat "ebible -m " version " " ref " | cvs")))))
+  (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 16) (let ((prefix-numeric-value nil)
+                                                           (current-prefix-arg nil))
+                                                       (let ((ver (sor version))
+                                                             (ref (sor (bible-mode-get-link))))
+                                                         (if (and version
+                                                                  ref)
+                                                             (sps (concat "ebible -m " version " " ref " | cvs"))))))
+   ((>= (prefix-numeric-value current-prefix-arg) 4) (let ((prefix-numeric-value nil)
+                                                           (current-prefix-arg nil))
+                                                       (let ((ver (sor version))
+                                                             (ref (sor (bible-mode-get-link))))
+                                                         (if (and version
+                                                                  ref)
+                                                             (pen-e-sps (lm (etv (snc (concat "ebible -m " version " " ref " | cat")))))))))
+   (t (let ((ver (sor version))
+            (ref (sor (bible-mode-get-link))))
+        (if (and version
+                 ref)
+            (pen-e-sps (lm (bible-mode-lookup ref version))))))))
 
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
 
