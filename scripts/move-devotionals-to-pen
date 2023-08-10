@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+for dp in \
+    "$DUMP/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-"; do
+
+    (
+        rsync -am --include='index.txt' --include='*/' --exclude='*' "$dp/" $HOME/.pen/documents/devotionals/
+    )
+done
