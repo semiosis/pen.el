@@ -1275,3 +1275,24 @@ ros follow-dependency=t install lem-project/lem
 
 # LSP - use this also in emacs
 ros install lem-project/lem cxxxr/cl-lsp
+
+pip install pip-search
+pip3.8 install pip-search
+pip3.10 install pip-search
+
+
+# Python3.11 for baca - epub viewer
+# apt update
+# make -j 4, also runs tests, annoyingly
+(
+agi build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+mcd $DUMP/programs
+curl -O https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz
+tar Jxf Python-3.11.4.tar.xz
+cd Python-3.11.4
+./configure --enable-optimizations
+make -j 4
+make altinstall
+
+# broot
+cargo install --locked --features clipboard broot

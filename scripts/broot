@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# cargo install --locked --features clipboard broot
+
+: "${bin_fp:="$(test-and-echo -f "/root/.cargo/bin/broot")"}"
+: "${bin_fp:="$(test-and-echo -f "$HOME/local/bin/broot")"}"
+: "${bin_fp:="$(test-and-echo -f "/usr/local/bin/broot")"}"
+
+"$bin_fp" "$@"
