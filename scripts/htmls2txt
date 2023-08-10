@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -p) {
+        fn_pattern="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+convert_html_to_txt() {
+    fp="$1"
+    dn="$(dirname "$fp")"
+    bn="$(basename -- "$fp")"
+
+    (
+        cd "$dn"
+        slug="$(printf -- "%s\n" "$bn" | tr '\n' ' ' | sed 's/ $//' | sed 's/\.html$//' | slugify)"
+
+        elinks-dump "$bn" > "${slug}.txt"
+    )
+}
+
+if test -n "$fn_pattern"; then
+    find . -name "$fn_pattern" | awk 1 | while IFS=$'\n' read -r fp; do
+        0</dev/null cmd-nice convert_html_to_txt "$fp" | awk 1 | hls blue 1>&2
+        0</dev/null convert_html_to_txt "$fp"
+    done
+else
+    for fp in *.html; do
+        convert_html_to_txt "$fp"
+    done
+fi
+
