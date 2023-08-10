@@ -1,0 +1,6 @@
+#!/bin/sh
+export TTY
+
+# annoyingly, awk 1 does not flush
+
+awk '{ print $0; system("")}'
