@@ -1,7 +1,0 @@
-#!/bin/bash
-export TTY
-
-# Purpose: echo and run
-
-cmd "$@" | awk 1 1>&2
-"$@"
