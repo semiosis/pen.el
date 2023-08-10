@@ -1,6 +1,10 @@
 #!/bin/bash
 export TTY
 
+# https://dystroy.org/broot/#apply-a-standard-or-personal-command-to-a-file
+# Apply commands on several files
+# Add files to the staging area then execute any command on all of them.
+
 # x -sh br -s :filesystems -sl 0.1 -c m -i
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
