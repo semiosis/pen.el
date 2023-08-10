@@ -307,6 +307,10 @@ creating a new `bible-mode' buffer positioned at the specified verse."
               (concat maybebook " 1")
             text))
 
+         ;; To make refs like this work:
+         ;; Lev 18-20
+         (text (s-replace-regexp "-[0-9].*" "" text))
+
          (text (cond
                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
                  text)
