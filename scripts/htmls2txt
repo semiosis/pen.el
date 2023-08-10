@@ -24,6 +24,8 @@ convert_html_to_txt() {
         cd "$dn"
         slug="$(printf -- "%s\n" "$bn" | tr '\n' ' ' | sed 's/ $//' | sed 's/\.html$//' | slugify)"
 
+        # pwd | hls orange | awk 1 1>&2
+        export EXTRA_METADATA="$(pwd)"
         elinks-dump "$bn" > "${slug}.txt"
     )
 }
