@@ -444,7 +444,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   ;; (lo node)
   ;; (lo (dom-tag node))
   ;; (lo (dom-text node))
-  
+
   (if (equal (dom-tag node) 'divinename)
       (progn
         ;; (lo node)
@@ -452,7 +452,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   ;; (if (equal (dom-text node) query)
   ;;     (setq iproperties (plist-put iproperties 'jesus t)))
-  
+
   (if (equal (dom-attr node 'who) "Jesus")
       (setq iproperties (plist-put iproperties 'jesus t)))
 
@@ -488,7 +488,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                      ;; (start (- (point) (length (string-trim-right verse-start-text))))
                      (start (- (point) (length verse-start-text))))
                 ;; (lo verse-start-text)
-                (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "purple")))))))
+                (let* ((ref (s-replace-regexp ":$" "" verse-match))
+                       (fp (bible-mode-get-notes-fp-for-verse ref)))
+                  ;; (lo ref)
+                  (if (f-exists-p fp)
+                      (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "green"))
+                    (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "purple")))))))))
       (progn
         ;; This does more than just the starting space
         (if (and (not (eq (dom-tag subnode) 'p)) (not (eq (dom-tag subnode) 'q)) (not (eq "" (dom-text subnode))))
@@ -661,13 +666,23 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-mode-open-notes-for-verse (text)
   (interactive (list (thing-at-point 'line t)))
+  (setq text (or text (thing-at-point 'line t)))
   (let* ((ref (bible-mode-get-link text))
          (refslug (slugify (s-replace-regexp "," " " (s-replace-regexp "-" " to " (s-replace-regexp ":" " v" ref)))))
          (dp (f-join penconfdir "documents" "bible-notes" "verse"))
-         (fn (concat refslug ".txt"))
+         (fn (concat refslug ".org"))
          (fp (f-join dp fn)))
     (f-mkdir dp)
     (find-file fp)))
+
+(defun bible-mode-get-notes-fp-for-verse (&optional ref)
+  (setq ref (or ref (bible-mode-get-link (thing-at-point 'line t))))
+  (let* ((refslug (slugify (s-replace-regexp "," " " (s-replace-regexp "-" " to " (s-replace-regexp ":" " v" ref)))))
+         (dp (f-join penconfdir "documents" "bible-notes" "verse"))
+         (fn (concat refslug ".org"))
+         (fp (f-join dp fn)))
+    (f-mkdir dp)
+    fp))
 
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
