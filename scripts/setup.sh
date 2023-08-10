@@ -1296,3 +1296,6 @@ make altinstall
 
 # broot
 cargo install --locked --features clipboard broot
+
+# crossword is amazing
+e ia crossword wordel most-used-words
