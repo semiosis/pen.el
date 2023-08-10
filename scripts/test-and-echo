@@ -1,0 +1,18 @@
+#!/bin/bash
+export TTY
+
+test_and_echo() {
+    # For unary operations like -f, but not =
+    # echo also the operator if it is true
+
+    test "$@"
+    ret="$?"
+
+    last_arg="${@: -1}"
+
+    test "$ret" -eq 0 && printf -- "%s" "$last_arg"
+
+    return "$ret"
+}
+
+test_and_echo "$@"

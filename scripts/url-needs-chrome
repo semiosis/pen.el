@@ -1,0 +1,37 @@
+#!/bin/bash
+export TTY
+
+test_and_echo() {
+    # For unary operations like -f, but not =
+    # echo also the operator if it is true
+
+    test "$@"
+    ret="$?"
+
+    last_arg="${@: -1}"
+
+    test "$ret" -eq 0 && printf -- "%s" "$last_arg"
+
+    return "$ret"
+}
+
+url_needs_chrome() {
+    : "${chrome_patterns_fp:="$(test_and_echo -f "$NOTES/programs/eww/chrome-dom-url-patterns.txt")"}"
+    : "${chrome_patterns_fp:="$(test_and_echo -f "$HOME/.pen/conf/chrome-dom-url-patterns.txt")"}"
+    : "${chrome_patterns_fp:="$(test_and_echo -f "$EMACSD/host/pen.el/config/chrome-dom-url-patterns.txt")"}"
+    : "${chrome_patterns_fp:="$(test_and_echo -f "$EMACSD/pen.el/config/chrome-dom-url-patterns.txt")"}"
+
+    url="$1"
+    : "${url:="$(cat)"}"
+
+    matches="$(
+    0</dev/null cat "$chrome_patterns_fp" | awk 1 | while IFS=$'\n' read -r pat; do
+    printf -- "%s\n" "$url" | grep -P "$pat"
+    done
+    )"
+
+    test -n "$matches" && printf -- "%s\n" "$matches" | hls red 1>&2
+    test -n "$matches"
+}
+
+url_needs_chrome "$@"

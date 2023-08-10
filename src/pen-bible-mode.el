@@ -288,7 +288,7 @@
      (found (car found))
      (t (thing-at-point 'line t)))))
 
-(defun bible-mode-lookup (&optional text)
+(defun bible-mode-lookup (&optional text module)
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (bible-get-text-here)))
@@ -340,12 +340,16 @@ creating a new `bible-mode' buffer positioned at the specified verse."
            (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text)))
 
     (if (not (major-mode-p 'bible-mode))
-        (setq bible-mode-book-module default-bible-mode-book-module))
+        (setq bible-mode-book-module (or
+                                      module
+                                      default-bible-mode-book-module)))
 
     (tryelse
      (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
                  (string-to-number verse)
-                 bible-mode-book-module)
+                 (or
+                  module
+                  bible-mode-book-module))
      (error "Error. Incorrect Bible reference?"))))
 
 (defun bible-search-mode-get-search ()
@@ -634,6 +638,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-mode-verse-other-version (version)
   (interactive (list (fz-bible-version)))
+
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (let ((prefix-numeric-value nil)
+            (current-prefix-arg nil))
+        (sps (concat "ebible -m " version " " ref " | cvs")))
+    (bible-mode-lookup ref version))
 
   (let ((ver (sor version))
         (ref (sor (bible-mode-get-link))))

@@ -1,0 +1,34 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -d) {
+        date="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# date-short
+
+: "${date:="$(date +%d.%m.%y)"}"
+
+url="$1"
+test -n "$url" || exit 1
+
+( hs "$(basename "$0")" -d "$date" "$url" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Sadly, -P doesn't support -f
+# if printf -- "%s\n" "$url" | grep -Pf "$chrome_patters_fp" -q; then
+
+{
+if url-needs-chrome "$url"; then
+    oci -m "$date" elinks-dump-chrome "$url"
+else
+    oci -m "$date" elinks-dump "$url"
+fi
+} | pavs
