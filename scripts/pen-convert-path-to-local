@@ -26,7 +26,7 @@ fi
 substitutions="$(p "$substitutions" | tr -d '\n' | sed 's/;;/;/g')"
 
 convert_path() {
-    sed -e "$substitutions" | sed 's=/volumes/volumes/=/volumes/=g'
+    sed -e "$substitutions" | sed -e ':loop' -e 's=/volumes/volumes/=/volumes/=g' -e 't loop'
 }
 
 current_path="$(cat)"

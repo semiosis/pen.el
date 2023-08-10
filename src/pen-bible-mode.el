@@ -659,6 +659,17 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                  ref)
             (pen-e-sps (lm (bible-mode-lookup ref version))))))))
 
+(defun bible-mode-open-notes-for-verse (text)
+  (interactive (list (thing-at-point 'line t)))
+  (let* ((ref (bible-mode-get-link text))
+         (refslug (slugify (s-replace-regexp "," " " (s-replace-regexp "-" " to " (s-replace-regexp ":" " v" ref)))))
+         (dp (f-join penconfdir "documents" "bible-notes" "verse"))
+         (fn (concat refslug ".txt"))
+         (fp (f-join dp fn)))
+    (f-mkdir dp)
+    (find-file fp)))
+
+(define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
 
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
