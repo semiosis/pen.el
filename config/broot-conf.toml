@@ -22,6 +22,8 @@
 # - focus
 # Therefore, how to disable xdg-open?
 
+# modal = true
+
 # [[verbs]]
 # invocation = "edit"
 # key = "enter"
