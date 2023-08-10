@@ -32,6 +32,7 @@ export EDITOR="nw vs"
 
 # https://dystroy.org/broot
 which broot &>/dev/null || {
+    # cargo install --locked --features clipboard broot
     wget -O /usr/local/bin/broot https://dystroy.org/broot/download/x86_64-linux/broot; chmod a+x /usr/local/bin/broot
     broot --install
     source $HOME/.config/broot/launcher/bash/br
