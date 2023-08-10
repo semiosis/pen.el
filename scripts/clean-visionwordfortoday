@@ -3,11 +3,14 @@ export TTY
 
 dp=$DUMP/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-/vision.org.au/the-word-for-today-reading
 
+cd "$dp"
+htmls2txt -p index.html
+
 {
 find "$dp" -name index.txt | awk1 | while IFS=$'\n' read -r fp; do
     (
         exec 0</dev/null
-        cat "$fp" |
+        cmdx cat "$fp" |
         sed '0,/Text size:/d' |
             sed '/The Word for Today is authored/,$d' |
             sponge "$fp"
