@@ -13,6 +13,8 @@ find "$dp" -name index.txt | awk1 | while IFS=$'\n' read -r fp; do
         cmdx cat "$fp" |
         sed '0,/Text size:/d' |
             sed '/The Word for Today is authored/,$d' |
+            sed -z 's/^\n*//g' |
+            sed -z 's/\n*$//g' |
             sponge "$fp"
     )
 done
