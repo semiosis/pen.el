@@ -4,7 +4,8 @@ export TTY
 # Purpose: echo and run
 
 {
-echo "exec: " | hls red
-cmd "$@" | awk 1 | hls blue
-} | 1>&2
+echo -n "exec: " | hls red
+cmd-nice "$@" | awk 1 | hls blue
+} 1>&2
+
 "$@"
