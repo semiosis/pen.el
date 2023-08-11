@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+dp=$DUMP/programs/httrack/mirrors/https-www-truthnetwork-com-/www.truthnetwork.com/show
+
+cd "$dp"
+htmls2txt -p index.html
+
+# {
+# find "$dp" -name index.txt | awk1 | while IFS=$'\n' read -r fp; do
+#     (
+#         exec 0</dev/null
+#         cmdx cat "$fp" |
+#         sed '0,/Text size:/d' |
+#             sed '/The Word for Today is authored/,$d' |
+#             sed -z 's/^\n*//g' |
+#             sed -z 's/\n*$//g' |
+#             sponge "$fp"
+#     )
+# done
+# }
+
+# $HOME/.pen/documents/devotionals/jeffvines
+
+# | pavs

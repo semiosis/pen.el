@@ -12,6 +12,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -c) {
+        continue=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -26,7 +32,9 @@ convert_html_to_txt() {
 
         # pwd | hls orange | awk 1 1>&2
         export EXTRA_METADATA="$(pwd)"
-        elinks-dump "$bn" > "${slug}.txt"
+        if ! test -f "${slug}.txt"; then
+            elinks-dump "$bn" > "${slug}.txt"
+        fi
     )
 }
 
