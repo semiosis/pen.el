@@ -1299,3 +1299,8 @@ cargo install --locked --features clipboard broot
 
 # crossword is amazing
 e ia crossword wordel most-used-words
+
+# We don't need nvim yet
+# ln -sf /root/.emacs.d/host/pen.el/config/nvimrc ~/.nvimrc
+# ln -sf /root/.emacs.d/host/pen.el/config/nvim ~/.config/
+# ln -sf /root/.emacs.d/host/pen.el/config/nvim/nvimrc ~/.nvimrc

@@ -6,7 +6,9 @@ silent! set ttymouse=xterm2
 highlight Cursor gui=reverse guifg=NONE guibg=NONE
 set notimeout
 set nottimeout
-set nocscopeverbose
+if !has('nvim')
+    set nocscopeverbose
+endif
 set modelines=0 nomodeline
 set guicursor=
 set imsearch=0
