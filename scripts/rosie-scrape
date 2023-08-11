@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+pattern="$1"
+test -n "$pattern" || exit 1
+
+rosie grep -o subs "$1"
