@@ -10,8 +10,8 @@ read -r -d '' options <<HEREDOC
 p	localhost_scratch:perspective.org.0
 HEREDOC
 
-echo "sh-tmux-hydra" | udl | pen-hls green
-echo "$options" | pen-hls dgrey
+echo "sh-tmux-hydra" | udl | hls green
+echo "$options" | hls dgrey
 
 read -n1 d; test "$d" = "" && read -n1 d
 

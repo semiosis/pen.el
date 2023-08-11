@@ -15,7 +15,7 @@ for fp in *; do
         continue
     fi
 
-    echo "$fp" | udl | pen-hls purple
+    echo "$fp" | udl | hls purple
     delim="¬"
     IFS="$delim" read -r -d$'\1' version title external n < <(
         cat "$fp" | yq -r '[."version",.title,.external,."n-test-runs"] | join("'$delim'")')
@@ -60,7 +60,7 @@ for fp in *; do
     touch "$testfp"
 
     for (( i = 0; i < ${n}; i++ )); do
-        echo Running "$i/$n" | pen-hls orange
+        echo Running "$i/$n" | hls orange
 
         IFS="$delim" read -r -d$'\1' RESULT < <(upd openai-complete "$fp" "$@")
 

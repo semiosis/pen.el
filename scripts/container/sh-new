@@ -15,8 +15,8 @@ r  sp $HOME/notes2018/ws/rest/scratch.restclient
 f  sh-newfile
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | hls dgrey
 
 read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -28,7 +28,7 @@ case "$d" in
     f) cmd="sh-newfile" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

@@ -11,8 +11,8 @@ e  emacs
 L  gitlab
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | pen-mnm | hls dgrey
 
 IFS="" read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -25,6 +25,6 @@ case "$d" in
     L) cmd="og $MYGIT/timzallmann/awesome-gitlab/README.md" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 eval "$cmd"

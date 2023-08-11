@@ -13,8 +13,8 @@ B  zcd $MYGIT/takaheai/otagoai-website/posts
 p  zcd $MYGIT/takaheai/takaheai.github.io
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | pen-mnm | hls dgrey
 
 read -n1 d
 # clear
@@ -28,6 +28,6 @@ case "$d" in
     p) cmd="zcd $MYGIT/takaheai/takaheai.github.io" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 eval "$cmd"

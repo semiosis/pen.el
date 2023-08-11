@@ -24,8 +24,8 @@ B  TERM=xterm-2color btscanner
 R  sudo /etc/init.d/networking restart; sudo /etc/init.d/network-manager restart; sudo sed -i "s/^\\(nameserver \\)127.0.0.53$/\\18.8.8.8/" /etc/resolv.conf
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | pen-mnm | hls dgrey
 
 IFS="" read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -45,7 +45,7 @@ case "$d" in
     R) cmd="sudo /etc/init.d/networking restart; sudo /etc/init.d/network-manager restart; sudo sed -i \"s/^\\\\(nameserver \\\\)127.0.0.53$/\\\\18.8.8.8/\" /etc/resolv.conf" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

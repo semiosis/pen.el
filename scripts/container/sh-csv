@@ -19,13 +19,13 @@ p   pd "\$fp" (pandas)
 fv  fpvd "\$fp"
 HEREDOC
 
-echo "$0" | udl | pen-hls green
+echo "$0" | udl | hls green
 
 echo
 echo "fp: $fp"
 echo
 
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$options" | pen-mnm | hls dgrey
 
 IFS="" read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -37,7 +37,7 @@ case "$d" in
     f|v) cmd="fpvd $fp" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

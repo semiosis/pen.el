@@ -82,9 +82,9 @@ fi
 # Therefore, pen-eipe is simply not finishing.
 # Well, actually pen-eipe *does* finish.
 
-echo Waiting for output from promptee... | pen-hls purple 1>&2
+echo Waiting for output from promptee... | hls purple 1>&2
 if pen-tm session-exists human; then
-    echo Sending prompt to hidden terminal... | pen-hls red 1>&2
+    echo Sending prompt to hidden terminal... | hls red 1>&2
     pen-tm -export "PEN_PROMPT PEN_HELP PEN_OVERLAY PEN_PREOVERLAY PEN_EIPE_DATA" -sout -vipe "$WINTYPE" -t human: "$EDITOR" | cat
 else
     pen-tm -export "PEN_PROMPT PEN_HELP PEN_OVERLAY PEN_PREOVERLAY PEN_EIPE_DATA" -sout -vipe "$WINTYPE" "$EDITOR" | cat

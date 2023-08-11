@@ -19,8 +19,8 @@ HEREDOC
 
 # t  pen-tm sel localhost_ws_functional-programming-fp:glossary.txt.0
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | pen-mnm | hls dgrey
 
 read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -33,7 +33,7 @@ case "$d" in
     h) cmd="pen-tm sel ':haskell.txt*'" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

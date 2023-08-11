@@ -38,7 +38,7 @@ eval "$shcode" |
     -e 's/| mnm/| pen-mnm/g' \
     -e 's/| umn/| pen-umn/g' \
     -e 's/| qtv/| pen-qtv/g' \
-    -e 's/| hls/| pen-hls/g' \
+    -e 's/| hls/| hls/g' \
     -e 's/| fzf/| pen-fzf/g' \
     -e 's/| s chomp\b/| chomp/g' \
     -e 's/  s chomp\b/  chomp/g' \

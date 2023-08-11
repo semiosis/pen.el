@@ -22,8 +22,8 @@ o  fz-poetry-activate
 HEREDOC
 
 {
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | pen-mnm | hls dgrey
 } 1>&2
 
 read -n1 d; test "$d" = "" && read -n1 d

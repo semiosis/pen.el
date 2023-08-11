@@ -23,8 +23,8 @@ t  mygit-tablist
 T  mygit-tablist -u
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | hls dgrey
 
 read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -39,7 +39,7 @@ case "$d" in
     T) cmd="mygit-tablist -u" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

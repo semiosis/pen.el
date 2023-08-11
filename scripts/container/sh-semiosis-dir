@@ -49,8 +49,8 @@ hb zcd ~/.emacs.d/host/semiosis-hugo
 a  zcd ~/.emacs.d/host/semiosis-hugo/posts
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | pen-mnm | hls dgrey
 
 read -n1 d
 # clear
@@ -100,6 +100,6 @@ case "$d" in
     a) cmd="zcd ~/.emacs.d/host/semiosis-hugo/posts" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 eval "$cmd"

@@ -32,7 +32,9 @@ convert_html_to_txt() {
 
         # pwd | hls orange | awk 1 1>&2
         export EXTRA_METADATA="$(pwd)"
-        if ! test -f "${slug}.txt" || ( test -f "${slug}.txt" && ! test "$do_continue" = y ); then
+        if test -f "${slug}.txt" && test "$do_continue" = y; then
+            echo Already exists | hls -bg blue -fg black 1>&2
+        else
             elinks-dump "$bn" > "${slug}.txt"
         fi
     )

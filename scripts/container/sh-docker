@@ -41,8 +41,8 @@ K  docker kill all
 9  ludo docker kill \$(unbuffer ludo docker ps -q | sed 1d | pen-s chomp)
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | pen-mnm | hls dgrey
 
 read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -81,7 +81,7 @@ case "$d" in
     9) cmd="ludo docker kill \$(unbuffer ludo docker ps -q | sed 1d | pen-s chomp)"
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

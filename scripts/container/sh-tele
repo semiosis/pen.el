@@ -79,8 +79,8 @@ z  sh-fuzzy-dir
 O  sh-dir-ws
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | hls dgrey
 
 IFS="" read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -133,7 +133,7 @@ case "$d" in
     ' ') cmd="zcd $HOME/agenda" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

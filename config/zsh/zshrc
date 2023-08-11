@@ -107,7 +107,7 @@ unsetopt autocd
 unsetopt auto_name_dirs
 
 if [ -n "$CWD" ] && ! test "$CWD" = "$(pwd)"; then
-    printf -- "%s\n" "Inherited CWD: $CWD" | pen-mnm | pen-hls nearblack 1>&2
+    printf -- "%s\n" "Inherited CWD: $CWD" | pen-mnm | hls nearblack 1>&2
 
     cd "$CWD"
 else

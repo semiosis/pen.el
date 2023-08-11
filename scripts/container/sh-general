@@ -80,8 +80,8 @@ HEREDOC
 
 # n  notes
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | hls dgrey
 
 # The IFS is so I can read a space
 IFS="" read -n1 d; test "$d" = "" && read -n1 d
@@ -154,7 +154,7 @@ case "$d" in
     ' ') cmd="agenda" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 eval "$cmd"
 
 # n) cmd="CWD=$NOTES zsh" ;;

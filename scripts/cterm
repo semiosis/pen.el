@@ -29,7 +29,7 @@ cterm-logo 1>&2
 
 {
 echo -n Running
-echo -n " $(cmd-nice-posix "$@") " | pen-hls red
+echo -n " $(cmd-nice-posix "$@") " | hls red
 echo in cterm
 } 1>&2
 

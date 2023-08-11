@@ -11,8 +11,8 @@ h  zcd $MYGIT/arcatelier/arcatelier-hugo
 a  zcd $MYGIT/arcatelier/arcatelier-hugo/posts
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | pen-mnm | hls dgrey
 
 read -n1 d
 # clear
@@ -24,6 +24,6 @@ case "$d" in
     a) cmd="zcd $MYGIT/arcatelier/arcatelier-hugo/posts" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 eval "$cmd"

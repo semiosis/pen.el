@@ -68,8 +68,8 @@ u   get git remote url
 7   cl-git-pull-this-on-pipeline
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | hls dgrey
 
 # I want to detect M-m
 #while true; do
@@ -139,7 +139,7 @@ case "$d" in
     7) { cmd="cl-git-pull-this-on-pipeline"; }; ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

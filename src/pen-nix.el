@@ -142,7 +142,7 @@ Be mindful of quoting arguments correctly."
   (pen-sn (concat "pen-bs " (pen-q chars)) input))
 
 (defun hls (input pattern)
-  (sh (concat "pen-hls -r " pattern) input t))
+  (sh (concat "hls -r " pattern) input t))
 
 (defun udl (input)
   (pen-sn "udl | chomp" input))

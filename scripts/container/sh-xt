@@ -33,8 +33,8 @@ j  win xterm-tmux localhost_ws_codelingo_journal:
 J  win xterm-tmux -b localhost_ws_codelingo_journal:
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$options" | pen-mnm | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$options" | pen-mnm | hls dgrey
 
 read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -59,7 +59,7 @@ case "$d" in
     J) cmd="win xterm-tmux -b localhost_ws_codelingo_journal: & disown" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+# A more basic version of 'pen-his'
+
+colour_fg="$1"
+test -n "$1" && shift
+
+colour_bg="$1"
+test -n "$1" && shift
+
+: "${colour_fg:="reverse"}"
+
+case "$colour_fg" in
+    reverse|inverted) {
+        pen-his -i ".*"
+    }
+    ;;
+
+    *)
+        if test -n "$colour_bg"; then
+            pen-his -f "$colour_fg" -b "$colour_bg" ".*"
+        else
+            pen-his -f "$colour_fg" ".*"
+        fi
+esac

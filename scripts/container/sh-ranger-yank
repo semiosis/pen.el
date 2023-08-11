@@ -13,9 +13,9 @@ g git url
 f tmux capture and filter 
 HEREDOC
 
-echo "$0" | udl | pen-hls green
-echo "$@" | ns | udl | pen-hls green
-echo "$options" | pen-hls dgrey
+echo "$0" | udl | hls green
+echo "$@" | ns | udl | hls green
+echo "$options" | hls dgrey
 
 fp="$1"
 dir="$(p "$fp" | pen-u dn)"
@@ -32,7 +32,7 @@ case "$d" in
     f) cmd="pen-tm cap-pane | pen-tm -f -S -tout sph -noerror \"f filter-with-fzf\"" ;;
 esac
 echo
-echo "$cmd" | pen-hls nearblack
+echo "$cmd" | hls nearblack
 
 # exec <`tm-tty`
 # exec 1> /dev/tty

@@ -23,8 +23,8 @@ HEREDOC
 
 # f frank
 
-echo "emacsclient" | udl | pen-hls green
-echo "$options" | pen-hls dgrey
+echo "emacsclient" | udl | hls green
+echo "$options" | hls dgrey
 
 read -n1 d
 clear
