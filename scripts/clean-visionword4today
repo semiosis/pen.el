@@ -3,7 +3,7 @@ export TTY
 
 clean_visionwordfortoday_transcript() {
     sed '0,/Text size:/d' |
-        sed '/The Word for Today is authored/,$d' |
+        sed '/an adaptation of The Word For Today/,$d' |
         sed -z 's/^\n*//g' |
         sed -z 's/\n*$//g'
 }
