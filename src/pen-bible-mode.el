@@ -315,7 +315,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
              )
         (sps (cmd "ebible" "-m" module "-nem"
                   text)))
-    
+
     (let* (
           ;; To make refs like this work:
           ;; Lev 18-20
@@ -376,7 +376,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (thing-at-point 'line t)))
-  
+
   (setq text (or text (thing-at-point 'line t)))
 
   (if (and
@@ -623,7 +623,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (end-of-buffer))))
 
 (defun bible-search (query &optional module searchtype)
-  "Queries the user for a Bible search query. 
+  "Queries the user for a Bible search query.
 'lucene' mode requires an index to be built using the `mkfastmod' program."
   (interactive  (list (pen-ask (pen-selection) "Bible Search: ")))
   (if (> (length query) 0)
