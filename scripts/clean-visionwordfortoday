@@ -1,22 +1,38 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -c) {
+        do_continue=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 : "${dp:="$1"}"
 : "${dp:="$DUMP/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-/vision.org.au/the-word-for-today-reading"}"
 
 cd "$dp"
-htmls2txt -p index.html
+remove-empty-files-here
+htmls2txt -p index.html -c
 
 {
 find "$dp" -name index.txt | awk1 | while IFS=$'\n' read -r fp; do
     (
-        exec 0</dev/null
-        cmdx cat "$fp" |
-        sed '0,/Text size:/d' |
-            sed '/The Word for Today is authored/,$d' |
-            sed -z 's/^\n*//g' |
-            sed -z 's/\n*$//g' |
-            sponge "$fp"
+        if test "$do_continue" = "y"; then
+            :
+        else
+            exec 0</dev/null
+            cmdx cat "$fp" |
+            sed '0,/Text size:/d' |
+                sed '/The Word for Today is authored/,$d' |
+                sed -z 's/^\n*//g' |
+                sed -z 's/\n*$//g' |
+                sponge "$fp"
+        fi
     )
 done
 }
