@@ -4,16 +4,20 @@ export TTY
 ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 : "${dp:="$1"}"
+dp="$(realpath "$dp")"
+cd /
+
+mkdir -p $HOME/.pen/documents/devotionals/
 
 if test -n "$dp"; then
-    rsync -am --include='clean.txt' --include='*/' --exclude='*' "$dp/" $HOME/.pen/documents/devotionals/
+    rsync -am --include='clean.txt' --include='*/' --exclude='*' "$dp" $HOME/.pen/documents/devotionals/
 else
     for dp in \
         "$DUMP/programs/httrack/mirrors/https-www-truthnetwork-com-/www.truthnetwork.com/show" \
         "$DUMP/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-"; do
 
         (
-            rsync -am --include='clean.txt' --include='*/' --exclude='*' "$dp/" $HOME/.pen/documents/devotionals/
+            rsync -am --include='clean.txt' --include='*/' --exclude='*' "$dp" $HOME/.pen/documents/devotionals/
         )
     done
 fi
