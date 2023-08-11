@@ -2199,6 +2199,7 @@ May use to generate code from comments."
 (require 'pen-games)
 (require 'pen-popwin)
 (require 'pen-documents)
+(require 'pen-shebang)
 (require 'pen-show-map)
 (require 'pen-isearch)
 (require 'pen-find-file)

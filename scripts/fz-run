@@ -6,7 +6,7 @@ export TTY
 fp="$1"
 
 if test -f "$fp"; then
-    sel="$(cat "$fp" | fzf)"
+    sel="$(cat "$fp" | mfz -nv)"
     if test -n "$sel"; then
         # sel="$(p "$sel" | cut -d ' ' -f 1)"
         zrepl -E "$sel; exit"

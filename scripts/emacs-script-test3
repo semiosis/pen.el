@@ -1,0 +1,5 @@
+#!/usr/bin/env -S emacs --quick --script
+
+;; emacs-script-test hi yo
+
+(message "Hello: %S" argv)
