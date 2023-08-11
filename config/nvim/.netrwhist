@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/shane/notes2018'
+let g:netrw_dirhist_2='/home/shane/notes2018/projects'
+let g:netrw_dirhist_3='/home/shane/notes2018/projects/ir-assignment-1'
+let g:netrw_dirhist_4='/home/shane/notes2018'
