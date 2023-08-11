@@ -11,29 +11,48 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -fast) {
+        FAST=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
+if test "$FAST" = "y"; then
+    cmd_nice() {
+        cm="$@"
+        printf -- "%s\n" "$cm"
+        return "$?"
+    }
+else
+    cmd_nice() {
+        cmd-nice "$@"
+        return "$?"
+    }
+fi
+
 if test "$do_sps" = y; then
     {
     echo -n "exec: "
-    cmd-nice "$@" | awk 1
+    cmd_nice "$@" | awk 1
 
     "$@"
     } | sps pavs
 elif is_tty; then
     {
     echo -n "exec: "
-    cmd-nice "$@" | awk 1
+    cmd_nice "$@" | awk 1
 
     "$@"
     } | pavs
 else
     {
     echo -n "exec: " | hls red
-    cmd-nice "$@" | awk 1 | hls blue
+    cmd_nice "$@" | awk 1 | hls blue
     } 1>&2
 
     "$@"

@@ -16,7 +16,9 @@ esac; done
 : "${dp:="$DUMP/programs/httrack/mirrors/https-www-truthnetwork-com-/www.truthnetwork.com/show"}"
 
 cd "$dp"
-htmls2txt -p index.html
+FAST=y find . -type f -empty -exec cmdx rm -- {} \; | cat
+
+htmls2txt -p index.html -c
 
 {
 find "$dp" -name index.txt | awk1 | while IFS=$'\n' read -r fp; do
