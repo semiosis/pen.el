@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fp="$1"
+
+if test -f "$fp"; then
+    sel="$(cat "$fp" | fzf)"
+    if test -n "$sel"; then
+        # sel="$(p "$sel" | cut -d ' ' -f 1)"
+        zrepl -E "$sel; exit"
+    fi
+fi
