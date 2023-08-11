@@ -3,9 +3,38 @@ export TTY
 
 # Purpose: echo and run
 
-{
-echo -n "exec: " | hls red
-cmd-nice "$@" | awk 1 | hls blue
-} 1>&2
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -sps) {
+        do_sps=y
+        shift
+    }
+    ;;
 
-"$@"
+    *) break;
+esac; done
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if test "$do_sps" = y; then
+    {
+    echo -n "exec: "
+    cmd-nice "$@" | awk 1
+
+    "$@"
+    } | sps pavs
+elif is_tty; then
+    {
+    echo -n "exec: "
+    cmd-nice "$@" | awk 1
+
+    "$@"
+    } | pavs
+else
+    {
+    echo -n "exec: " | hls red
+    cmd-nice "$@" | awk 1 | hls blue
+    } 1>&2
+
+    "$@"
+fi

@@ -1,7 +1,8 @@
 #!/bin/bash
 export TTY
 
-dp=$DUMP/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-/vision.org.au/the-word-for-today-reading
+: "${dp:="$1"}"
+: "${dp:="$DUMP/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-/vision.org.au/the-word-for-today-reading"}"
 
 cd "$dp"
 htmls2txt -p index.html

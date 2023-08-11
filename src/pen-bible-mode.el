@@ -297,7 +297,9 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
   ;; (mapcar 'car bible-mode-book-chapters)
 
-  (let* ((ot text)
+  (let* ((module
+          (or module default-bible-mode-book-module))
+         (ot text)
 
          (maybebook
           (bible-canonicalise-ref ot t))
@@ -309,7 +311,13 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
          ;; To make refs like this work:
          ;; Lev 18-20
-         (text (s-replace-regexp "-[0-9].*" "" text))
+         (text
+          (progn
+            (if (and (re-match-p "[-,]" text)
+                     (yn (concat "Also show " text " in vim?")))
+                (sps (cmd "ebible" "-m" module "-nem"
+                          text)))
+            (s-replace-regexp "-[0-9].*" "" text)))
 
          (text (cond
                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
@@ -344,16 +352,12 @@ creating a new `bible-mode' buffer positioned at the specified verse."
            (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text)))
 
     (if (not (major-mode-p 'bible-mode))
-        (setq bible-mode-book-module (or
-                                      module
-                                      default-bible-mode-book-module)))
+        (setq bible-mode-book-module module))
 
     (tryelse
      (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
                  (string-to-number verse)
-                 (or
-                  module
-                  bible-mode-book-module))
+                 module)
      (error "Error. Incorrect Bible reference?"))))
 
 (defun bible-search-mode-get-search ()
@@ -591,6 +595,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (beginning-of-buffer)
     (while (re-search-forward " , " nil t)
       (replace-match ", ")))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (sp--with-case-sensitive (re-search-forward "[a-z][A-Z]" nil t))
+      (backward-char 1)
+      (insert " ")))
 
   (save-excursion
     (beginning-of-buffer)
