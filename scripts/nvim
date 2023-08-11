@@ -8,6 +8,9 @@ export TTY
 # It doesn't have a tty for ! commands.
 
 # nvim changed my cursor from block into line
-/usr/local/bin/nvim "$@"
+
+test -f "/usr/local/bin/nvim" && : "${bin:="/usr/local/bin/nvim"}"
+test -f "/usr/bin/nvim" && : "${bin:="/usr/bin/nvim"}"
+"$bin" "$@"
 
 # alt nvim "$@"
