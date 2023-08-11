@@ -307,58 +307,59 @@ creating a new `bible-mode' buffer positioned at the specified verse."
          (text
           (if maybebook
               (concat maybebook " 1")
-            text))
+            text)))
 
-         ;; To make refs like this work:
-         ;; Lev 18-20
-         (text
-          (progn
-            (if (and (re-match-p "[-,]" text)
-                     (yn (concat "Also show " text " in vim?")))
-                (sps (cmd "ebible" "-m" module "-nem"
-                          text)))
-            (s-replace-regexp "-[0-9].*" "" text)))
+    (if (and (re-match-p "[-,]" text)
+             ;; (yn (concat "Also show " text " in vim?"))
+             ;; (yn (concat "Show " text " in vim?"))
+             )
+        (sps (cmd "ebible" "-m" module "-nem"
+                  text)))
+    
+    (let* (
+          ;; To make refs like this work:
+          ;; Lev 18-20
+          (text (s-replace-regexp "-[0-9].*" "" text))
+          (text (cond
+                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
+                  text)
+                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?" text)
+                  (concat (match-string 0 text) ":"))
+                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:" text)
+                  (concat text "1:"))
+                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?" text)
+                  (concat text ":1:"))
+                 ((re-match-p ".+ " text)
+                  (concat text "1:1:"))
+                 ((re-match-p ".+" text)
+                  (concat text " 1:1:"))
+                 (t text)))
 
-         (text (cond
-                ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
-                 text)
-                ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?" text)
-                 (concat (match-string 0 text) ":"))
-                ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:" text)
-                 (concat text "1:"))
-                ((re-match-p ".+ [0-9]?[0-9]?[0-9]?" text)
-                 (concat text ":1:"))
-                ((re-match-p ".+ " text)
-                 (concat text "1:1:"))
-                ((re-match-p ".+" text)
-                 (concat text " 1:1:"))
-                (t text)))
+          book
+          chapter
+          verse)
 
-         book
-         chapter
-         verse)
+      (string-match ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
+      (setq text (match-string 0 text))
 
-    (string-match ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
-    (setq text (match-string 0 text))
+      (string-match " [0-9]?[0-9]?[0-9]?:" text)
+      (setq chapter (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
 
-    (string-match " [0-9]?[0-9]?[0-9]?:" text)
-    (setq chapter (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
+      (string-match ":[0-9]?[0-9]?[0-9]?" text)
+      (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
 
-    (string-match ":[0-9]?[0-9]?[0-9]?" text)
-    (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
+      (setq book
+            (bible-canonicalise-ref
+             (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text)))
 
-    (setq book
-          (bible-canonicalise-ref
-           (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text)))
+      (if (not (major-mode-p 'bible-mode))
+          (setq bible-mode-book-module module))
 
-    (if (not (major-mode-p 'bible-mode))
-        (setq bible-mode-book-module module))
-
-    (tryelse
-     (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
-                 (string-to-number verse)
-                 module)
-     (error "Error. Incorrect Bible reference?"))))
+      (tryelse
+       (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
+                   (string-to-number verse)
+                   module)
+       (error "Error. Incorrect Bible reference?")))))
 
 (defun bible-search-mode-get-search ()
   (interactive)

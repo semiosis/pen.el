@@ -16,7 +16,7 @@ esac; done
 : "${dp:="$DUMP/programs/httrack/mirrors/https-www-truthnetwork-com-/www.truthnetwork.com/show"}"
 
 cd "$dp"
-FAST=y find . -type f -empty -exec cmdx rm -- {} \; | cat
+remove-empty-files-here
 
 htmls2txt -p index.html -c
 
