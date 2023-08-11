@@ -28,8 +28,13 @@ htmls2txt -p index.html -c
 
 {
 find "$dp" -name index.txt | awk 1 | while IFS=$'\n' read -r fp; do
+    fn=$(basename -- "$fp")
+    dn=$(dirname "$fp")
+    ext="${fn##*.}"
+    mant="${fn%.*}"
+    cleaned_fp="$dn/clean.txt"
     (
-        if test "$do_continue" = "y"; then
+        if test "$do_continue" = "y" && test -f "$cleaned_fp"; then
             :
         else
             exec 0</dev/null

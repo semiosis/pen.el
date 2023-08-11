@@ -26,15 +26,15 @@ find "$dp" -name index.txt | awk 1 | while IFS=$'\n' read -r fp; do
     dn=$(dirname "$fp")
     ext="${fn##*.}"
     mant="${fn%.*}"
-
+    cleaned_fp="$dn/clean.txt"
     (
-        if test "$do_continue" = "y"; then
+        if test "$do_continue" = "y" && test -f "$cleaned_fp"; then
             :
         else
             exec 0</dev/null
             cmdx cat "$fp" |
             clean-truthnetwork-transcript |
-                sponge "$fp"
+                sponge "$cleaned_fp"
         fi
     )
 done
