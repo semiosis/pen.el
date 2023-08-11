@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+git clean -xfd .
+git reset --hard HEAD

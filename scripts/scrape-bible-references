@@ -9,6 +9,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -vc) {
+        verses_or_chapters_only=y
+        shift
+    }
+    ;;
+
+    -c) {
+        chapters_only=y
+        shift
+    }
+    ;;
+
     -v) {
         verses_only=y
         shift
@@ -492,6 +504,12 @@ input_fp="$(cat | c ascify | tf txt)"
         cat
     fi
 } | {
+    if test "$verses_or_chapters_only" = "y"; then
+        grep -P "[0-9]"
+    else
+        cat
+    fi
+} | {
     if test "$chapters_only" = "y"; then
         grep -P "[0-9]$" | sed 's/:.*//'
     else
@@ -503,5 +521,5 @@ input_fp="$(cat | c ascify | tf txt)"
     else
         cat
     fi
-} | uniqnosort
+} | uniqnosort | sed '/^..$/d'
 rm "$input_fp"

@@ -22,6 +22,11 @@ htmls2txt -p index.html -c
 
 {
 find "$dp" -name index.txt | awk1 | while IFS=$'\n' read -r fp; do
+    fn=$(basename -- "$fp")
+    dn=$(dirname "$fp")
+    ext="${fn##*.}"
+    mant="${fn%.*}"
+
     (
         if test "$do_continue" = "y"; then
             :

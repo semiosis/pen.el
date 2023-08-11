@@ -520,6 +520,7 @@ showansi
 scrape-terms list-glossary-terms
 scrape-terms list-bible-book-titles
 scrape-bible-references
+scrape-bible-references -vc    # verse or chapter
 scrape-bible-references -v     # verses only
 scrape-bible-references -c     # chapters only
 scrape-bible-references -b     # books only
