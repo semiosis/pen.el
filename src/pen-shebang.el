@@ -21,6 +21,7 @@
 (add-to-list 'interpreter-mode-alist '("emacs" . emacs-lisp-mode))
 ;; (add-to-list 'interpreter-mode-alist '("kotlin-script" . kotlin-mode))
 
+(add-to-list 'interpreter-mode-alist '("pen-e" . emacs-lisp-mode))
 (add-to-list 'interpreter-mode-alist '("emacs-script" . emacs-lisp-mode))
 (add-to-list 'interpreter-mode-alist '("emacs-script-debug" . emacs-lisp-mode))
 

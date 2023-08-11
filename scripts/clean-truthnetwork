@@ -33,11 +33,7 @@ find "$dp" -name index.txt | awk1 | while IFS=$'\n' read -r fp; do
         else
             exec 0</dev/null
             cmdx cat "$fp" |
-            sed '0,/Transcript.*BETA/d' |
-                sed '/COVERED TOPICS/,/IMG/d' |
-                sed '/Whisper/,$d' |
-                sed -z 's/^\n*//g' |
-                sed -z 's/\n*$//g' |
+            clean-truthnetwork-transcript |
                 sponge "$fp"
         fi
     )
