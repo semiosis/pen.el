@@ -1304,3 +1304,9 @@ e ia crossword wordel most-used-words
 # ln -sf /root/.emacs.d/host/pen.el/config/nvimrc ~/.nvimrc
 # ln -sf /root/.emacs.d/host/pen.el/config/nvim ~/.config/
 # ln -sf /root/.emacs.d/host/pen.el/config/nvim/nvimrc ~/.nvimrc
+
+# For bpython
+pip3.10 install urwid
+
+# BM25
+pip3.10  install -qr requirements.txt

@@ -1,3 +1,20 @@
 #!/bin/bash
 
+getshebang() {
+    head -n 1 "$1" | sed 's/^..//'
+}
+
+hasshebang() {
+    [[ "$(head -c 2 "$1")" == "#!" ]]
+}
+
+first_arg="$1"
+
+if test -f "$first_arg" && hasshebang "$first_arg"; then
+    shift
+
+    myeval $(getshebang "$first_arg") "$first_arg" "$@"
+    exit $?
+fi
+
 python3.8 "$@"
