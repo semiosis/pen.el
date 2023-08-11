@@ -32,9 +32,10 @@ find "$dp" -name index.txt | awk 1 | while IFS=$'\n' read -r fp; do
             :
         else
             exec 0</dev/null
-            cmdx cat "$fp" |
-            clean-truthnetwork-transcript |
-                sponge "$cleaned_fp"
+            cmdx cat "$fp" | clean-truthnetwork-transcript > "$cleaned_fp"
+            if ! test -s "$cleaned_fp"; then
+                cp -a "$fp" "$cleaned_fp"
+            fi
         fi
     )
 done
