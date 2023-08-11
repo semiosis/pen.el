@@ -27,7 +27,7 @@ remove-empty-files-here
 htmls2txt -p index.html -c
 
 {
-find "$dp" -name index.txt | awk1 | while IFS=$'\n' read -r fp; do
+find "$dp" -name index.txt | awk 1 | while IFS=$'\n' read -r fp; do
     (
         if test "$do_continue" = "y"; then
             :
