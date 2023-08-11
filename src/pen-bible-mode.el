@@ -384,7 +384,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
        (major-mode-p 'bible-search-mode))
       (bible-search-mode-copy-search)
     (progn
-      (setq text (concat text ":"))
+      (if (not (string-match ":$" text))
+          (setq text (concat text ":")))
       (let* (
              book
              chapter

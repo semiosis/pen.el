@@ -221,6 +221,7 @@ Be mindful of quoting arguments correctly."
     (require 'pen-cua))
 (require 'pen-ftp)
 (require 'pen-tramp)
+(require 'pen-script)
 (require 'pen-calibre)
 (require 'pen-gpg)
 (require 'pen-eldoc)

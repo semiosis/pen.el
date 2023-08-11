@@ -1499,6 +1499,8 @@ when s is a string, set the clipboard to s"
   (interactive)
   (if (not (minor-mode-p org-src-mode))
       (cond
+       ((derived-mode-p 'sh-mode)
+        (message "Disabled lsp for sh"))
        ((derived-mode-p 'lisp-mode)
         (message "Disabled lsp for common-lisp"))
        ((derived-mode-p 'prompt-description-mode)
