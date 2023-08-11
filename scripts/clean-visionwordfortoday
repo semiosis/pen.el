@@ -1,6 +1,13 @@
 #!/bin/bash
 export TTY
 
+clean_visionwordfortoday_transcript() {
+    sed '0,/Text size:/d' |
+        sed '/The Word for Today is authored/,$d' |
+        sed -z 's/^\n*//g' |
+        sed -z 's/\n*$//g'
+}
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -c) {
@@ -27,10 +34,7 @@ find "$dp" -name index.txt | awk1 | while IFS=$'\n' read -r fp; do
         else
             exec 0</dev/null
             cmdx cat "$fp" |
-            sed '0,/Text size:/d' |
-                sed '/The Word for Today is authored/,$d' |
-                sed -z 's/^\n*//g' |
-                sed -z 's/\n*$//g' |
+                clean_visionwordfortoday_transcript |
                 sponge "$fp"
         fi
     )
