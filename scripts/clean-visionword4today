@@ -1,0 +1,57 @@
+#!/bin/bash
+export TTY
+
+clean_visionwordfortoday_transcript() {
+    sed '0,/Text size:/d' |
+        sed '/The Word for Today is authored/,$d' |
+        sed -z 's/^\n*//g' |
+        sed -z 's/\n*$//g'
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -c) {
+        do_continue=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# my-mirror-site -c "https://vision.org.au/word4today-devotional/"
+
+: "${dp:="$1"}"
+: "${dp:="$DUMP/programs/httrack/mirrors/https-vision-org-au-word4today-devotional-/vision.org.au/word4today-devotional"}"
+: "${dp:="$DUMP/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-/vision.org.au/the-word-for-today-reading"}"
+
+cd "$dp"
+remove-empty-files-here
+htmls2txt -p index.html -c
+
+{
+find "$dp" -name index.txt | awk 1 | while IFS=$'\n' read -r fp; do
+    fn=$(basename -- "$fp")
+    dn=$(dirname "$fp")
+    ext="${fn##*.}"
+    mant="${fn%.*}"
+    cleaned_fp="$dn/clean.txt"
+    (
+        if test "$do_continue" = "y" && test -f "$cleaned_fp"; then
+            :
+        else
+            exec 0</dev/null
+            cmdx cat "$fp" | clean_visionwordfortoday_transcript > "$cleaned_fp"
+            if ! test -s "$cleaned_fp"; then
+                cp -a "$fp" "$cleaned_fp"
+            fi
+        fi
+    )
+done
+}
+
+move-devotionals-to-pen "$dp"
+
+# $HOME/.pen/documents/devotionals/jeffvines
+
+# | pavs

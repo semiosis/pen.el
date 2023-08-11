@@ -22,4 +22,4 @@ else
     done
 fi
 
-find $HOME/.pen/documents/devotionals/ -name Firefox -type d -exec rm -rf -- {} \;
+find $HOME/.pen/documents/devotionals/ -name Firefox -type d -exec rm -rf -- {} \; 2>/dev/null
