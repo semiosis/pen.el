@@ -18,4 +18,4 @@ else
     done
 fi
 
-cmdx find $HOME/.pen/documents/devotionals/ -name Firefox -type d -exec rm -rf -- {} \; 2>/dev/null
+find $HOME/.pen/documents/devotionals/ -name Firefox -type d -exec rm -rf -- {} \;

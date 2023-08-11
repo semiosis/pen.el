@@ -1,0 +1,48 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+: "${dp:="$1"}"
+
+find_clean() {
+    dir="$1"
+    (
+    cd "$dir"
+    find . -name clean.txt | sed 's/^\.\///'
+    )
+}
+
+copy_clean() {
+    source_dp="$1"
+    dest_dp="$2"
+
+    (
+    cd "$source_dp"
+    find_clean "$source_dp" | awk 1 | while IFS=$'\n' read -r fp; do
+        fn=$(basename -- "$fp")
+        dn=$(dirname "$fp")
+        ext="${fn##*.}"
+        mant="${fn%.*}"
+        newdest_dp="$dest_dp/$dn"
+
+        mkdir -p "$newdest_dp"
+        cmdx cp -a "$fp" "$newdest_dp" | cat
+    done
+)
+}
+
+if test -n "$dp"; then
+    copy_clean "$dp" $HOME/.pen/documents/devotionals
+else
+    for dp in \
+        "$DUMP/programs/httrack/mirrors/https-www-truthnetwork-com-/www.truthnetwork.com/show" \
+        "$DUMP/programs/httrack/mirrors/https-vision-org-au-the-word-for-today-reading-"; do
+
+        (
+            copy_clean "$dp" $HOME/.pen/documents/devotionals
+        )
+    done
+fi
+
+cmdx find $HOME/.pen/documents/devotionals/ -name Firefox -type d -exec rm -rf -- {} \; 2>/dev/null | cat
