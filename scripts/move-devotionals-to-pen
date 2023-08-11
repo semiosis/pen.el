@@ -8,3 +8,4 @@ for dp in \
         rsync -am --include='clean.txt' --include='*/' --exclude='*' "$dp/" $HOME/.pen/documents/devotionals/
     )
 done
+cmdx find $HOME/.pen/documents/devotionals/ -name Firefox -type d -exec rm -rf -- {} \;
