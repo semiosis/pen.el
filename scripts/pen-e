@@ -373,6 +373,26 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    --script) {
+        shift
+        # The emacsclient should run in the background
+        test -f "$1" || exit 1
+        script_path="$1"
+        shift
+
+
+        # Test with e:emacs-script-test4
+
+        CMD="$(cmd-cip "$@")"
+        : ${CMD:="$(cmd-cip "$@")"}
+
+        elisp="(runscript \"$script_path\" $CMD)$elisp(delete-frame)"
+
+        export do_unbuffer=y
+        shift "$#"
+    }
+    ;;
+
     -e) {
         elisp="$2$elisp"
         shift
@@ -1464,7 +1484,15 @@ case "$f" in
             fi
         fi
 
-        eval "pen-e c $CMD"
+        if test "$do_unbuffer" = "y"; then
+            # hmm.. with unbuffer it's still using the terminal
+            # so i'll run it in a hidden tmux window.
+            # for the best anyway, in case something goes wrong.
+            tmux neww -d "pen-e c $CMD"
+            # Now I still need to capture stdin, stdout, etc
+        else
+            eval "pen-e c $CMD"
+        fi
         exit $?
 
     }

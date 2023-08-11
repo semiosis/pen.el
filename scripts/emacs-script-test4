@@ -1,0 +1,6 @@
+#!/usr/bin/env -S pen-e --script
+
+;; emacs-script-test hi yo
+
+;; (message "Hello: %S" argv)
+(tv (cmd "Hello: %S" (str argv)))
