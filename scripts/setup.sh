@@ -1310,3 +1310,9 @@ pip3.10 install urwid
 
 # BM25
 pip3.10  install -qr requirements.txt
+
+# rust disk usage analyzer
+cargo install dua-cli --no-default-features --features tui-crossplatform
+
+# go disk usage analyzer
+go install github.com/dundee/gdu/v5/cmd/gdu@latest

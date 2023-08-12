@@ -3,6 +3,10 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# alternatives
+# - gdu (go)
+# - dua (rust)
+
 # ncdu actually takes some interesting parameters, such as --exclude
 # I have to know how to use this.
 # It doesn't seem to be PCRE

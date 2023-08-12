@@ -8,4 +8,15 @@ def median(values):
     L = sorted(values)
     return L[len(L)//2]
 
-aggregator('median', median)
+# aggregator('median', median)
+
+import vdplus
+vd.use_light_colors()
+
+vd.options.color_default      = 'black on white'  # the default fg and bg colors
+vd.options.color_key_col      = '20 blue'   # color of key columns
+vd.options.color_edit_cell    = '234 black'     # cell color to use when editing cell
+vd.options.color_selected_row = '164 magenta'  # color of selected rows
+vd.options.color_note_row     = '164 magenta'  # color of row note on left edge
+vd.options.color_note_type    = '88 red'  # color of cell note for non-str types in anytype columns
+vd.options.plot_colors = '20 red magenta black 28 88 94 99 106'

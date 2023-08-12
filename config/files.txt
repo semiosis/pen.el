@@ -196,7 +196,6 @@ $HOME/.authinfo
 $HOME/.authinfo.gpg
 $HOME/.visidatarc
 $HOME/.ghci.hs
-$HOME/.visidatarc
 $HOME/.pry_history
 $HOME/.clojurerc
 $HOME/.ipython/profile_default/history.sqlite
