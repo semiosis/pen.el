@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+string="$1"
+
+grep -o . <<< "$string" | while IFS=$'\n' read -r char; do
+    tmux send -l "$char"
+done

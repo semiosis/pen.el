@@ -17,6 +17,10 @@
   (shell-command (concat "pen-tm -f -d -te sps -c " (pen-q dir) " ranger")))
 (defalias 'pen-sh/ranger 'pen-sps-ranger)
 
+(defun pen-sps-ncdu (dir)
+  (interactive (list default-directory))
+  (shell-command (concat "pen-tm -f -d -te sps -c " (pen-q dir) " ncdu")))
+
 
 ;;; Now emacs ranger
 
