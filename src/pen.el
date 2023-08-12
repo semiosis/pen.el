@@ -242,6 +242,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-counsel)
 (require 'pen-selectrum)
 (require 'pen-marginalia)
+(require 'pen-directory-navigation)
 (require 'pen-minimap)
 (require 'pen-external-tools)
 ;; (require 'pen-topsy)
