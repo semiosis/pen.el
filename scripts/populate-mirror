@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+{
+    if stdin_exists; then
+        cat
+    fi
+
+    file_fp="$1"
+    if test -f "$file_fp"; then
+        0</dev/null cat "$file_fp"
+    elif test -d "$file_fp"; then
+        find "$file_fp" -type f
+    fi
+} | {
+    umn | files-only.sh | awk 1
+} | files2text-mirror
+

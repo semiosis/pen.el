@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -maxdepth) {
+        maxdepth=1
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${maxdepth:="100"}"
+
+where="$1"
+
+: "${where:="."}"
+
+test -d "$where" || exit 1
+
+find "$where" -maxdepth "$maxdepth" -type f -exec grep -I -q . {} \; -print

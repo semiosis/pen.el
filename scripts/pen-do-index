@@ -23,6 +23,41 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+# cd $HOME/OneDrive
+# find `pwd` -type f | files2text-mirror
+
+# upd do-index-full
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+
+if stdin_exists; then
+    cat | populate-mirror
+fi
+
+: "${file_list_fp:="$1"}"
+: "${file_list_fp:="$NOTES/files.txt"}"
+
+# Can be a directory to run 'find' or a file (of a list of file paths)
+if test -e "$file_list_fp"; then
+    shift
+    cmdx populate-mirror "$file_list_fp"
+else
+    populate-mirror
+fi
+
+# (
+# cd "$MIRRORD$MYGIT"; find . -type d -name 'vendor' -exec rm -rf {} \;
+# )
+
 if test "$reindex_full" = "y"; then
     :
 else
@@ -34,21 +69,8 @@ else
     #              after the current index was built.
 fi
 
-# cd $HOME/OneDrive
-# find `pwd` -type f | files2text-mirror
-
-# upd do-index-full
-
-{
-    cat $NOTES/files.txt | umn | files-only.sh | awk 1
-} | files2text-mirror
-
-(
-cd "$MIRRORD$MYGIT"; find . -type d -name 'vendor' -exec rm -rf {} \;
-)
 CMD="$(cmd-nice "$@")"
 : ${CMD:="$(cmd-nice "$@")"}
-
 
 # This would include $MYGIT and other large directories. Therefore, it's
 # not possible
