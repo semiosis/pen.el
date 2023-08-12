@@ -132,12 +132,12 @@ read -r -d '' maps <<- 'HEREDOC'
 	(define-key compilation-button-map (kbd "RET") 'compile-goto-error)
 	HEREDOC
 
-CWD="$(pwd)"
-
 if test "$PREGREPPED" = "y"; then
     # This is for gli
     cd /
 fi
+
+CWD="$(pwd)"
 
 ecmd="(cd $(cmd-nice-posix "$CWD"))(grep-mode)"
 ecmd="(ignore-errors $ecmd)"
