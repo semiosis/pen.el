@@ -14,17 +14,20 @@
 (defun sh-file-p (fp)
   (pen-snq (cmd "test" "-f" fp)))
 
-(defun cat-filter-exists (fp)
-  ;; (-filter 'f-exists-p (pen-str2lines (cat fp)))
-  ;; (-filter 'sh-file-p (pen-str2lines (cat fp)))
+(defun cat-filter-exists (fpoffps_or_fps)
+  ;; (-filter 'f-exists-p (pen-str2lines (cat fpoffps_or_fps)))
+  ;; (-filter 'sh-file-p (pen-str2lines (cat fpoffps_or_fps)))
 
-  (snc "print-line-if-path-exists.sh" (cat fp)))
+  (setq fpoffps_or_fps (umn fpoffps_or_fps))
+  (snc "umn | print-line-if-path-exists.sh" (if (f-exists-p fpoffps_or_fps)
+                                                (cat fpoffps_or_fps)
+                                              fpoffps_or_fps)))
 
 (df fz-find-ws-music (e (concat "$HOME/notes/ws/music/" (fz (b find "$HOME/notes/ws/music" -type f -mindepth 1 -maxdepth 1 | sed "s=.*/==") nil nil "fz-find-ws-music: "))))
 (df fz-find-ws (e (concat "$HOME/notes/ws/" (fz (b find "$HOME/notes/ws" -type d -mindepth 1 -maxdepth 1 | sed "s=.*/==") nil nil "fz-find-ws: "))))
-(df fz-find-dir (e (fz (cat-filter-exists "$HOME/notes/directories.org") nil nil "fz-find-dir: ")))
-(df fz-find-src (e (fz (cat-filter-exists "$HOME/notes/files.txt") nil nil "fz-find-src: ")))
-(df fz-find-config (e (fz (b tm-list-config | pen-mnm | pen-str uniq) nil nil "fz-find-config: ")))
+(df fz-find-dir (e (fz (mnm (cat-filter-exists "$HOME/notes/directories.org")) nil nil "fz-find-dir: ")))
+(df fz-find-src (e (fz (mnm (cat-filter-exists "$HOME/notes/files.txt")) nil nil "fz-find-src: ")))
+(df fz-find-config (e (fz (mnm (cat-filter-exists (pen-b tm-list-config | pen-mnm | pen-str uniq))) nil nil "fz-find-config: ")))
 
 (defun swiper-swiper-dir (&optional dir)
   (interactive (list (read-string-hist "swiper dir:")))

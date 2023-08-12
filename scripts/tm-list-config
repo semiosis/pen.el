@@ -1,0 +1,18 @@
+#!/bin/bash
+export TTY
+
+VERIFY_EXISTS=n
+
+cd "$NOTES" # I may not want this
+# config-files.txt
+# this syntax is zsh only: sources{s,}\.*
+
+paths='files\.* source?(s)\.*'
+paths="$(shopt -s nullglob; shopt -s extglob; eval printf -- "%s\\\n" "$paths" | qargs)" # expand
+{ pl "$paths"; find $NOTES -type f -name 'config.txt'; } | xargs cat1 | {
+    if test "$VERIFY_EXISTS" = "y"; then
+        scrape-files-fast.sh
+    else
+        cat
+    fi
+}
