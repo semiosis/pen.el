@@ -16,7 +16,9 @@
 
 (defun cat-filter-exists (fp)
   ;; (-filter 'f-exists-p (pen-str2lines (cat fp)))
-  (-filter 'sh-file-p (pen-str2lines (cat fp))))
+  ;; (-filter 'sh-file-p (pen-str2lines (cat fp)))
+
+  (snc "print-line-if-path-exists.sh" (cat fp)))
 
 (df fz-find-ws-music (e (concat "$HOME/notes/ws/music/" (fz (b find "$HOME/notes/ws/music" -type f -mindepth 1 -maxdepth 1 | sed "s=.*/==") nil nil "fz-find-ws-music: "))))
 (df fz-find-ws (e (concat "$HOME/notes/ws/" (fz (b find "$HOME/notes/ws" -type d -mindepth 1 -maxdepth 1 | sed "s=.*/==") nil nil "fz-find-ws: "))))
