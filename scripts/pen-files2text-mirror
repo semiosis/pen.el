@@ -18,7 +18,7 @@ umn | awk 1 | files-only.sh | while IFS=$'\n' read -r fp; do
     ext="${fn##*.}"
     mant="${fn%.*}"
 
-    newdn="$HOME/text-mirror/$dn"
+    newdn="$MIRRORD/$dn"
     np="$newdn/$fn.txt"
 
     if test -s "$fp" && { { ! test "$UPDATE" = y; } || ! test -s "$np"; }; then

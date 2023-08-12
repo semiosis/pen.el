@@ -42,12 +42,10 @@ fi
     cat $NOTES/files.txt | umn | files-only.sh | awk 1
 } | files2text-mirror
 
-(
-cd "$HOME/text-mirror$MYGIT"; find . -type d -name 'vendor' -exec rm -rf {} \;
-)
-
+# (
+# cd "$MIRRORD$MYGIT"; find . -type d -name 'vendor' -exec rm -rf {} \;
+# )
 # glimpseindex "$@" -o $NOTES $MYGIT/ApexAI $MYGIT/fortescue-autonomy $HOME/text-mirror $MYGIT/AutowareAuto $MYGIT/autowarefoundation
-
 # glimpseindex "$@" -o $NOTES $MYGIT
 
 CMD="$(cmd-nice "$@")"

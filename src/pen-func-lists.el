@@ -2,6 +2,18 @@
   (interactive)
   (eww-open-file (buffer-file-path)))
 
+(defun w3m-open-this-file ()
+  (interactive)
+  (w3m-find-file (buffer-file-path)))
+
+(defun elinks-dump-this-file ()
+  (interactive)
+  (nw (cmd "elinks-dump" (buffer-file-path))))
+
+(defun elinks-this-file ()
+  (interactive)
+  (nw (cmd "elinks" (buffer-file-path))))
+
 (defun elinks-dump-open-this-file ()
   (interactive)
   (new-buffer-from-string (pen-sn (concat "elinks-dump " (pen-q (buffer-file-path))))))
@@ -41,6 +53,10 @@
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))
+(defset html-mode-funcs '(w3m-open-this-file
+                          eww-open-this-file
+                          elinks-dump-this-file
+                          elinks-this-file))
 (defset solidity-mode-funcs '(find-file-at-point))
 (defset haskell-interactive-mode-funcs `(haskell-process-restart
                                          ,(dff (customize-variable 'haskell-process-log))

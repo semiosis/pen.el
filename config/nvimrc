@@ -2192,6 +2192,7 @@ nmap <silent> <Leader>8 ;silent! call CommitRespawn()<CR>
 nmap <silent> <Leader>9 ;!git difftool HEAD\^\! -- %<CR><C-L>
 
 autocmd BufEnter * call GeneralSyntax()
+
 " autocmd BufEnter * call NumberSyntax()
 " autocmd BufEnter * call GeneralSyntax()
 " autocmd BufReadPre * call NumberSyntax()

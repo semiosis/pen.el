@@ -1332,3 +1332,23 @@ pen_python install requests_cache
 
 # codesplunker
 go install github.com/boyter/cs@v1.3.0
+
+# ugrep is an advanced grep, with indexing.
+# This might be quite useful, perhaps with emacs' counsel.
+# ugrep -HnRi "Derek Prince" . | v
+(
+cd "$(gc "https://github.com/Genivia/ugrep")"
+./build.sh --enable-pager
+make install
+agi antiword
+)
+
+(
+cd "$(gc "https://github.com/exiftool/exiftool")"
+perl Makefile.PL
+make
+make test
+make install
+)
+
+ln -sf /root/.pen/documents/textmirror /root/text-mirror

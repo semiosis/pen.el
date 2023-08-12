@@ -241,6 +241,7 @@ START and END can be in either order."
        (>= (prefix-numeric-value current-prefix-arg) 8))
       (pen-e-nw 'new-buffer-from-string)
     (pen-tm-nw cmd "nw" nw_args input dir output_b)))
+(defalias 'nw 'pen-nw)
 
 (defun pen-sps (&optional cmd nw_args input dir output_b)
   "Runs command in a sensible split"
