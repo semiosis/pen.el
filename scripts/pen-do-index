@@ -27,6 +27,11 @@ if test "$reindex_full" = "y"; then
     :
 else
     set -- -f "$@"
+
+    # man glimpseindex
+    # -f     incremental  indexing.   glimpseindex scans all files and adds
+    #              to the index only those files that were  created  or  modified
+    #              after the current index was built.
 fi
 
 # cd $HOME/OneDrive

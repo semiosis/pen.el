@@ -7,7 +7,7 @@ export TEXT_ONLY
 
 # read in list of files
 
-mkdir -p $HOME/text-mirror
+mkdir -p "$MIRRORD"
 
 umn | awk 1 | files-only.sh | while IFS=$'\n' read -r fp; do
 (
@@ -42,7 +42,7 @@ umn | awk 1 | files-only.sh | while IFS=$'\n' read -r fp; do
 )
 done
 
-## $HOME/text-mirror
+## $MIRRORD
 #
 #if lit "$CWD" | grep -q -P "^$DUMP"; then
 #    ndir="$(p "$CWD" | sed "s=^$DUMP==")"
