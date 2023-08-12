@@ -8,7 +8,7 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-# | sed "s=$HOME/text-mirror\(.*\).txt$=\1="
+# | sed "s=$MIRRORD\(.*\).txt$=\1="
 
 blacklist() {
     grep -v /programs/ci/ |
@@ -18,7 +18,7 @@ blacklist() {
 }
 
 
-alt -s glimpse -n "$@" | blacklist | sed "s=^$HOME/text-mirror\\(.*\\)\\.txt:=\\1:=" | {
+alt -s glimpse -n "$@" | blacklist | sed "s=^$MIRRORD\\(.*\\)\\.txt:=\\1:=" | {
     if is_tty; then
         ead -j || pak
     else

@@ -57,7 +57,7 @@ dn=$(dirname "$fp")
 ext="${fn##*.}"
 mant="${fn%.*}"
 
-export MIRRORD="$HOME/text-mirror"
+export MIRRORD="/root/text-mirror"
 mirror_path="${MIRRORD}${path}.txt"
 
 if test -p "$fp"; then

@@ -8,7 +8,7 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-# | sed "s=$HOME/text-mirror\(.*\).txt$=\1="
+# | sed "s=$MIRRORD\(.*\).txt$=\1="
 
 blacklist() {
     grep -v /programs/ci/ |

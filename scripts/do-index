@@ -45,7 +45,7 @@ fi
 # (
 # cd "$MIRRORD$MYGIT"; find . -type d -name 'vendor' -exec rm -rf {} \;
 # )
-# glimpseindex "$@" -o $NOTES $MYGIT/ApexAI $MYGIT/fortescue-autonomy $HOME/text-mirror $MYGIT/AutowareAuto $MYGIT/autowarefoundation
+# glimpseindex "$@" -o $NOTES $MYGIT/ApexAI $MYGIT/fortescue-autonomy $MIRRORD $MYGIT/AutowareAuto $MYGIT/autowarefoundation
 # glimpseindex "$@" -o $NOTES $MYGIT
 
 CMD="$(cmd-nice "$@")"
@@ -54,6 +54,6 @@ CMD="$(cmd-nice "$@")"
 
 # This would include $MYGIT and other large directories. Therefore, it's
 # not possible
-# eval "glimpseindex $CMD -o $NOTES $HOME/text-mirror $(cat $NOTES/directories.org | umn | dirs-only.sh | s join ' ')"
+# eval "glimpseindex $CMD -o $NOTES $MIRRORD $(cat $NOTES/directories.org | umn | dirs-only.sh | s join ' ')"
 
-eval "glimpseindex $CMD -o $NOTES $HOME/text-mirror"
+eval "glimpseindex $CMD -o $NOTES $MIRRORD"

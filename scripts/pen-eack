@@ -24,6 +24,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nm) {
+        NO_MINIMISE=y
+        shift
+    }
+    ;;
+
     -j) {
         PREGREPPED=y
         shift
@@ -166,12 +172,20 @@ else
     IFS= read -rd '' input < <(export UPDATE; 0</dev/null pen-ci -t 300 pen-find-and-grep "$@" | filter)
 fi
 
+maybe_mnm() {
+    if test "$NO_MINIMISE" = "y"; then
+        cat
+    else
+        pen-mnm
+    fi
+}
+
 if [ -n "$input" ]; then
     {
         if test "$PREGREPPED" = "y"; then
             echo "pregrepped input"
         else
-            echo "cd $(cmd-nice-posix $CWD); $0 $origcmd" | pen-mnm
+            echo "cd $(cmd-nice-posix $CWD); $0 $origcmd" | maybe_mnm
         fi
         echo These extra lines are needed for the compilation-mode issue
         echo See "wgrep-prepare-header/footer"
@@ -186,10 +200,10 @@ if [ -n "$input" ]; then
         }
     } | pen-dos2unix | {
         if is_tty; then
-            # pen-mnm | orspe -noonly -e "$ecmd"
+            # maybe_mnm | orspe -noonly -e "$ecmd"
             # Sadly, pen-mnm appears to break wgrep-mode
             # grep-mode is fine.
-            pen-mnm | pen-e -D DEFAULT -e "$ecmd"
+            maybe_mnm | pen-e -D DEFAULT -e "$ecmd"
             result="$?"
             if ! test "$result" -eq 0; then
                 printf -- "%s\n" "$input" | pen-pager
