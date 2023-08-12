@@ -1,7 +1,11 @@
 #!/bin/sh
 
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
 pl() {
     printf -- "%s\n" "$@"
 }
 
-pl "$@"
+# 0</dev/null pl "$@" | sps v
+
+0</dev/null pl "$@"

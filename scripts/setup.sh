@@ -1324,7 +1324,7 @@ pen_python() {
 }
 # for scraping with visidata
 # https://github.com/visidata/vdplus/tree/develop/scraper
-pen_python install visidata
+pen_python install --upgrade visidata
 pen_python install bs4
 pen_python install html5lib
 pen_python install lxml

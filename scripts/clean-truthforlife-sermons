@@ -1,0 +1,54 @@
+#!/bin/bash
+export TTY
+
+clean_truthforlife_sermons_transcript() {
+    sed '0,/• Apps/d' |
+        sed '/Copyright/,$d' |
+        sed -z 's/^\n*//g' |
+        sed -z 's/\n*$//g'
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -c) {
+        do_continue=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${dp:="$1"}"
+: "${dp:="/volumes/home/shane/dump/programs/httrack/mirrors/https-www-truthforlife-org/www.truthforlife.org/resources/sermon"}"
+
+cd "$dp"
+remove-empty-files-here
+htmls2txt -p index.html -c
+
+{
+find "$dp" -name index.txt | awk 1 | while IFS=$'\n' read -r fp; do
+    fn=$(basename -- "$fp")
+    dn=$(dirname "$fp")
+    ext="${fn##*.}"
+    mant="${fn%.*}"
+    cleaned_fp="$dn/clean.txt"
+    (
+        if test "$do_continue" = "y" && test -f "$cleaned_fp"; then
+            :
+        else
+            exec 0</dev/null
+            cmdx cat "$fp" | clean_truthforlife_sermons_transcript > "$cleaned_fp"
+            if ! test -s "$cleaned_fp"; then
+                cp -a "$fp" "$cleaned_fp"
+            fi
+        fi
+    )
+done
+}
+
+move-devotionals-to-pen "$dp"
+
+# $HOME/.pen/documents/devotionals/jeffvines
+
+# | pavs

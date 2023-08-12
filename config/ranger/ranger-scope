@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+# scope.sh "$@"
+pen-scope.sh "$@"

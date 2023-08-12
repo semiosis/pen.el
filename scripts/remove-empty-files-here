@@ -3,9 +3,6 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-# export PAGER=less
-# export EDITOR=vim
+: "${dir:="."}"
 
-# printf -- "%s\n" "$SHELL" | tv &>/dev/null
-
-/usr/bin/ranger "$@"
+FAST=y find "$dir" -type f -empty -exec cmdx rm -- {} \; | cat
