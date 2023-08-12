@@ -339,6 +339,7 @@
    (t (find-file (tv fp)))))
 
 (evil-ex-define-cmd "O" 'evil-open)
+(evil-ex-define-cmd "Eww" 'evil-open)
 
 (evil-define-command evil-dired (dir &optional bang)
   "Open DIR with dired."

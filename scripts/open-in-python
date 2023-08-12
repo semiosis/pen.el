@@ -1,0 +1,55 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -e) {
+        sp +/"def o(fp):" "$MYGIT/mullikine/shanepy/shanepy.py"
+        exit
+    }
+    ;;
+
+    -show) {
+        SHOW=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+fp="$1"
+type="$2"
+
+read -r -d '' PYCODE <<HEREDOC
+import sys
+
+import shanepy
+from shanepy import *
+
+try:
+    oon = o("$fp", "$type")
+except:
+    pass
+
+from shanepy import *
+myembed(globals(), locals())
+
+# from ptpython.repl import embed
+# embed(globals(), locals())
+HEREDOC
+
+fp="$(printf -- "%s\n" "$PYCODE" | tf py)"
+
+# cmd python3.6 -c "$PYCODE" | nsfa | less
+echo "'oon' is your object"
+
+if test "$SHOW" = "y"; then
+    # x -sh "mypython \"$fp\"" -c m -e "]:" -s oon -c m -i
+    x -sh "python3.6 \"$fp\"" -c m -e "]:" -s oon -c m -i
+else
+    # mypython -c "$PYCODE"
+    python3.6 -c "$PYCODE"
+fi

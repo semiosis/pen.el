@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+# Pipe into this to pipe into numpy
+# Just use opy
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename "$0")"
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    if test "$iscsv" = "y"; then
+        infp="$(tf csv)"
+    else
+        infp="$(tf tsv)"
+    fi
+
+    set -- "$infp" "$@"
+    exec <&2
+fi
+
+opy -show "$@" "$sn"
