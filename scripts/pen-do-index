@@ -76,4 +76,5 @@ CMD="$(cmd-nice "$@")"
 # not possible
 # eval "glimpseindex $CMD -o $NOTES $MIRRORD $(cat $NOTES/directories.org | umn | dirs-only.sh | s join ' ')"
 
-eval "glimpseindex $CMD -o $NOTES $MIRRORD"
+# eval "glimpseindex $CMD -o $NOTES $MIRRORD"
+eval "glimpseindex $CMD -o $MIRRORD"
