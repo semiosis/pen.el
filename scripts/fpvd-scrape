@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# https://github.com/visidata/vdplus/tree/develop/scraper
+
+url="$1"
+test -n "$url" || exit 1
+
+fpvd -f scrape "$url"

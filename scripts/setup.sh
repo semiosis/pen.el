@@ -1316,3 +1316,16 @@ cargo install dua-cli --no-default-features --features tui-crossplatform
 
 # go disk usage analyzer
 go install github.com/dundee/gdu/v5/cmd/gdu@latest
+
+# visidata
+pen_python_version="$(pen-python --version | scrape '[0-9]+.[0-9]+')"
+pen_python() {
+    "pip$pen_python_version" "$@"
+}
+# for scraping with visidata
+# https://github.com/visidata/vdplus/tree/develop/scraper
+pen_python install visidata
+pen_python install bs4
+pen_python install html5lib
+pen_python install lxml
+pen_python install requests_cache
