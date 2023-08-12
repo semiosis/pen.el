@@ -1,0 +1,57 @@
+#!/bin/bash
+export TTY
+
+set -xv
+
+export TEXT_ONLY
+
+# read in list of files
+
+mkdir -p $HOME/text-mirror
+
+umn | awk 1 | files-only.sh | while IFS=$'\n' read -r fp; do
+(
+    exec 0</dev/null
+
+    fn=$(basename "$fp")
+    dn=$(dirname "$fp")
+    ext="${fn##*.}"
+    mant="${fn%.*}"
+
+    newdn="$HOME/text-mirror/$dn"
+    np="$newdn/$fn.txt"
+
+    if test -s "$fp" && { { ! test "$UPDATE" = y; } || ! test -s "$np"; }; then
+        mkdir -p "$newdn"
+        # Use fp2txt maybe at some stage
+        scope.sh "$fp" > "$np"
+    fi
+
+    #case "$ext" in
+    #    pdf|txt|docx|xlsx|pptx|csv|ipynb|doc|md|xlsm|xls|PDF|dotm|url|sql|config|xml|ppt|ini|c|srt|sh|plist|py|info|cmake|log|json|htm|CSV|bat|TXT|tsv|PPTX|cpp|conf|gitignore|bash) {
+    #        if test -s "$fp" && ! test -s "$np"; then
+    #            mkdir -p "$newdn"
+    #            # Use fp2txt maybe at some stage
+    #            scope.sh "$fp" > "$np"
+    #        fi
+    #    }
+    #    ;;
+
+    #    *)
+    #esac
+)
+done
+
+## $HOME/text-mirror
+#
+#if lit "$CWD" | grep -q -P "^$DUMP"; then
+#    ndir="$(p "$CWD" | sed "s=^$DUMP==")"
+#    mkdir -p "$ndir"
+#    cd "$ndir"
+#    CWD="$ndir" $SHELL
+#else
+#    ndir="$(p "$CWD" | sed "s=^=$DUMP=")"
+#    mkdir -p "$ndir"
+#    cd "$ndir"
+#    CWD="$ndir" $SHELL
+#fi

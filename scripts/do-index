@@ -1,0 +1,61 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+
+case "$sn" in
+    do-index-full) {
+        reindex_full=y
+    }
+    ;;
+
+    *)
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -g) {
+        dogit=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$reindex_full" = "y"; then
+    :
+else
+    set -- -f "$@"
+fi
+
+# cd $HOME/OneDrive
+# find `pwd` -type f | files2text-mirror
+
+# upd do-index-full
+
+{
+    if test "$dogit" = "y"; then
+        find-all-no-git.sh "$MYGIT"
+    fi
+
+    cat $NOTES/files.txt | umn | files-only.sh | awk 1
+} | files2text-mirror
+
+(
+cd "$HOME/text-mirror$MYGIT"; find . -type d -name 'vendor' -exec rm -rf {} \;
+)
+
+# glimpseindex "$@" -o $NOTES $MYGIT/ApexAI $MYGIT/fortescue-autonomy $HOME/text-mirror $MYGIT/AutowareAuto $MYGIT/autowarefoundation
+
+# glimpseindex "$@" -o $NOTES $MYGIT
+
+CMD="$(cmd-nice "$@")"
+: ${CMD:="$(cmd-nice "$@")"}
+
+
+# This would include $MYGIT and other large directories. Therefore, it's
+# not possible
+# eval "glimpseindex $CMD -o $NOTES $HOME/text-mirror $(cat $NOTES/directories.org | umn | dirs-only.sh | s join ' ')"
+
+eval "glimpseindex $CMD -o $NOTES $HOME/text-mirror"
