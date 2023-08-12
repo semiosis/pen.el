@@ -22,7 +22,12 @@ stdin_exists() {
     if test -f "$file_fp"; then
         0</dev/null cat "$file_fp"
     elif test -d "$file_fp"; then
-        find "$file_fp" -type f
+        (
+            cd "$file_fp"
+            F fng | sed "s=^=$file_fp/="
+
+            # find "$file_fp" -type f
+        )
     fi
 } | {
     umn | files-only.sh | awk 1

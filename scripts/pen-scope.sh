@@ -57,6 +57,11 @@ dn=$(dirname "$fp")
 ext="${fn##*.}"
 mant="${fn%.*}"
 
+if test "$fn" = clean.txt; then
+    cat "$fp"
+    exit "$?"
+fi
+
 export MIRRORD="/root/text-mirror"
 mirror_path="${MIRRORD}${path}.txt"
 

@@ -49,7 +49,7 @@ fi
 # Can be a directory to run 'find' or a file (of a list of file paths)
 if test -e "$file_list_fp"; then
     shift
-    cmdx populate-mirror "$file_list_fp"
+    populate-mirror "$file_list_fp"
 else
     populate-mirror
 fi
