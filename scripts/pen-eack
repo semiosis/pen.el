@@ -132,12 +132,12 @@ read -r -d '' maps <<- 'HEREDOC'
 	(define-key compilation-button-map (kbd "RET") 'compile-goto-error)
 	HEREDOC
 
+CWD="$(pwd)"
+
 if test "$PREGREPPED" = "y"; then
     # This is for gli
     cd /
 fi
-
-CWD="$(pwd)"
 
 ecmd="(cd $(cmd-nice-posix "$CWD"))(grep-mode)"
 ecmd="(ignore-errors $ecmd)"
@@ -193,7 +193,8 @@ if [ -n "$input" ]; then
         printf -- "%s" "$input" |
         {
             if test "$PREGREPPED" = "y" && printf -- "%s" "$input" | pen-empty-line-exists; then
-                awk 1 | sed "0,/^$/d"
+                # awk 1 | sed "0,/^$/d"
+                awk 1 | sed -z 's/^\n*//'
             else
                 cat
             fi
@@ -203,6 +204,7 @@ if [ -n "$input" ]; then
             # maybe_mnm | orspe -noonly -e "$ecmd"
             # Sadly, pen-mnm appears to break wgrep-mode
             # grep-mode is fine.
+            # echo "maybe_mnm | pen-e -D DEFAULT -e $ecmd" | tv &>/dev/null
             maybe_mnm | pen-e -D DEFAULT -e "$ecmd"
             result="$?"
             if ! test "$result" -eq 0; then
