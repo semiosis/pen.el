@@ -86,7 +86,8 @@
 (sslk "lT" 'fz-find-config)
 (sslk "lO" 'fz-find-ws)
 
-(define-key pen-map (kbd "M-l DEL") (df fz-find-dir (e (fz (cat "$NOTES/directories.org")))))
+(define-key pen-map (kbd "M-l DEL") (df fz-find-dir (e (fz (cat "$NOTES/directories.org")
+                                                           nil nil "tm-dir: "))))
 
 (defun fz-select-git-repo ()
   (interactive)
