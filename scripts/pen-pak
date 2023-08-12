@@ -8,6 +8,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -k) {
+        key="$2"
+        shift
+        shift
+    }
+    ;;
+
     -m) {
         MESSAGE="$2. "
         shift
@@ -27,10 +34,10 @@ func_trap() {
     :
 }
 
-key="$1"
 key="$(p "$key" | sed -z 's/\(.\).*/\1/')"
 
 is_tty() {
+    # If stout is a tty
     [[ -t 1 ]]
 }
 
@@ -46,9 +53,18 @@ fi
 
 (  exec <`pen-tm-tty`  ) &>/dev/null
 
+if test "$#" -gt 0; then
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+fi
+
 if [ -n "$key" ]; then
     if ! test "$HIDDEN" = "y"; then
-        printf -- "%s\n" "${MESSAGE}Press '$key' to continue"
+        if test -n "$CMD"; then
+            printf -- "%s\n" "${MESSAGE}Press '$key' to run: $CMD" | hls teal
+        else
+            printf -- "%s\n" "${MESSAGE}Press '$key' to continue..." | hls teal
+        fi
     else
         tput civis
     fi
@@ -66,6 +82,20 @@ if [ -n "$key" ]; then
         ns "pak can't read. quitting"
     fi
 else
-    printf -- "%s\n" "${MESSAGE}Press any key..."
+    if test -n "$CMD"; then
+        printf -- "%s\n" "${MESSAGE}Press any key to run $CMD" | hls teal
+    else
+        printf -- "%s\n" "${MESSAGE}Press any key..." | hls teal
+    fi
     read -n 1 -s
 fi
+
+# Run after pak
+if test "$#" -gt 0; then
+    "$@"
+fi
+
+# This doesn't work
+# Sleep a little so loak up spurrious key bidings
+# Such as: [1;3P
+# sleep 1

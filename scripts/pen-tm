@@ -180,7 +180,7 @@ pl() {
     return 0
 }
 
-shell="bash; pen-pak ."
+shell="bash; pen-pak -k ."
 shell="bash"
 shell="zsh"
 
@@ -1390,7 +1390,7 @@ case "$f" in
         }
     else
             printf -- "%s\n" "session: $session_name does not exist"
-            pen-pak c
+            pen-pak -k c
         fi
         exit $?
     }
@@ -1953,7 +1953,7 @@ case "$f" in
         esac
 
         cmd_pre="$cmd_pre stty stop undef; stty start undef; "
-        test "$PRESS_ANY_KEY_START" = "y" && cmd_pre="$cmd_pre pen-pak s; "
+        test "$PRESS_ANY_KEY_START" = "y" && cmd_pre="$cmd_pre pen-pak -k s; "
 
         if test "$HAS_STDIN" = "y"; then
             ff0="$(pen-ux mkfifo tm_stdin)"
@@ -2000,7 +2000,7 @@ case "$f" in
         cmd_post="$cmd_post; ret=\$?; printf -- \"%s\" \$ret > \"$tf_rc\""
 
         if test "$PRESS_ANY_KEY_FINISH" = "y"; then
-            cmd_post="$cmd_post; pen-pak -f $PRESS_ANY_KEY_FINISH_KEY"
+            cmd_post="$cmd_post; pen-pak -k $PRESS_ANY_KEY_FINISH_KEY"
         elif test "$PRESS_ANY_KEY_ON_ERROR" = "y"; then
             cmd_post="$cmd_post; test \$ret -ne 0 && ( p 'exit code '\$ret' => '; pen-pak )"
         fi

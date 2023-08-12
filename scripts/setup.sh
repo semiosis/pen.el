@@ -1329,3 +1329,6 @@ pen_python install bs4
 pen_python install html5lib
 pen_python install lxml
 pen_python install requests_cache
+
+# codesplunker
+go install github.com/boyter/cs@v1.3.0

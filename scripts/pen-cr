@@ -540,7 +540,7 @@ case "$fnspec" in
         conda env create -f environment.yml
         name="$(cat "$fp" | yq -r .name)"
         zrepl -cm -E ". $HOME/sh-source/miniconda3.sh; conda activate $name"
-        pen-pak c
+        pen-pak -k c
         exit 0
     }
     ;;
@@ -556,7 +556,7 @@ case "$fnspec" in
             go build
             go install
         fi
-        pen-pak c
+        pen-pak -k c
         exit 0
     }
     ;;
@@ -574,7 +574,7 @@ case "$fnspec" in
             go build
             go install
         fi
-        pen-pak c
+        pen-pak -k c
         exit 0
     }
     ;;
@@ -623,7 +623,7 @@ case "$fnspec" in
             cargo make
             cargo make install
         fi
-        pen-pak c
+        pen-pak -k c
         exit 0
     }
     ;;
@@ -645,7 +645,7 @@ case "$fnspec" in
             # cargo build --release
             # cargo run --release --bin wezterm -- start
         fi
-        pen-pak c
+        pen-pak -k c
         exit 0
     }
     ;;
@@ -659,7 +659,7 @@ case "$fnspec" in
 
         pen-yn "Install globally?" && yarn global add "$dnbn"
 
-        pen-pak c
+        pen-pak -k c
         exit 0
     }
     ;;
@@ -2383,14 +2383,14 @@ case "$file_type" in
         fi
 
         echo "exit: $?" 1>&2
-        pen-pak c
+        pen-pak -k c
         exit 0
     }
     ;;
 
     toml) {
         filter toiq "$rp" 2>&1
-        pen-pak c
+        pen-pak -k c
         exit 0
     }
     ;;
@@ -2451,7 +2451,7 @@ case "$file_type" in
         # I need python version detection
 
         # filter yiq "$rp" 2>&1
-        # pen-pak c
+        # pen-pak -k c
         exit 0
     }
     ;;
@@ -2475,7 +2475,7 @@ case "$file_type" in
         # I need python version detection
 
         # filter yiq "$rp" 2>&1
-        # pen-pak c
+        # pen-pak -k c
         exit 0
     }
     ;;
