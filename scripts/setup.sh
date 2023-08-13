@@ -1373,3 +1373,8 @@ cd "$(gc "http://github.com/rkd77/elinks")"
 
 e ia meson-mode
 # /volumes/home/shane/var/smulliga/source/git/rkd77/elinks/meson.build
+
+# for 'calc'
+agi apcalc
+
+agi libevent-dev
