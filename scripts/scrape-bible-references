@@ -497,7 +497,7 @@ input_fp="$(cat | c ascify | tf txt)"
             sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( [0-9-]\+\\)\\?\\(:[0-9-]\+\\)\\?.*/\\1\\2\\3\\4/p" |
             sed '/^$/d'
     done
-} | {
+} | sed -e 's/\.$//' | {
     if test "$verses_only" = "y"; then
         grep :
     else
@@ -505,7 +505,7 @@ input_fp="$(cat | c ascify | tf txt)"
     fi
 } | {
     if test "$verses_or_chapters_only" = "y"; then
-        grep -P "[0-9]"
+        grep -P "[0-9]$"
     else
         cat
     fi

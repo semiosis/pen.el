@@ -2,6 +2,9 @@
 
 # Debian10 installation
 
+agi apt-file
+apt-file update
+
 export SSH_HOST_ALLOWED=n
 
 export DUMP=/root/dump
@@ -1352,3 +1355,8 @@ make install
 )
 
 ln -sf /root/.pen/documents/textmirror /root/text-mirror
+
+# visidata
+pip3.8 install tomli
+
+pip3.8 install remarshal

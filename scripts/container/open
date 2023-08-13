@@ -331,7 +331,24 @@ elif pen-pl "$fp" | grep -q -P '^(https?|git)://'; then
 elif pen-pl "$fp" | grep -q -P '^(\[\[[a-z]+:)'; then
     sp -e "(org-link-open-from-string $(aqf-nice "$fp"))"
 elif pen-pl "$fp" | grep -q -P "(^file:/.*|.*\\.html)"; then
-    eww "$fp"
+    ff "$fp"
+
+    # binbn="$(0</dev/null
+    #         qa -. edit \
+    #           -e eww \
+    #           -d elinks-dump \
+    #           -l elinks)"
+
+    # case "$binbn" in
+    #     edit) { vs $0; } ;;
+    #     eww) { eww "$fp"; } ;;
+    #     elinks-dump) { elinks-dump "$fp"; } ;;
+    #     elinks) { elinks "$fp"; } ;;
+    #     *) ;;
+    # esac
+
+    # : "${binbn:="eww"}"
+    # "$binbn" "$fp"
     exit 0
 elif pen-pl "$fp" | grep -q -P '^telnet:?'; then
     case "$fp" in

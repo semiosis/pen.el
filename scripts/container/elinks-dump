@@ -50,23 +50,38 @@ fpage() {
 }
 
 filter() {
-    sed '/^References/,$d' | \
+    sed '/^References/,$d' | sed 's/^ \+//' | \
     {
         if test "$unicode" = "y"; then
             cat
         else
+            # pen-c ascify
+            # clean-term-capture
             pen-c ascify
+            # cat
         fi
     }
 }
 
-outtf="$(pen-ci -m "$USETOR" elinks --no-numbering --dump "$@" | filter | pen-tf txt)" 
+is_tty() { [ -t 1 ]; }
+
+if [ -z "$COLUMNS" ] && is_tty; then
+    eval `resize`
+fi
+
+if [ -n "$COLUMNS" ] && [ "$COLUMNS" -gt 120 ]; then
+    COLUMNS=120
+fi
+
+export COLUMNS
+
+outtf="$(pen-ci -m "$USETOR" elinks -dump-width "$COLUMNS" --no-numbering --dump "$@" | filter | pen-tf txt)" 
 
 if ! test -s "$outtf"; then
     pen-ci -m "$USETOR" w3m -dump "$@" | filter > "$outtf"
 fi
 
 exec 2>&3
-cat "$outtf" | sed 's/^ \+//' | fpage
+cat "$outtf" | fpage
 
 exit 0

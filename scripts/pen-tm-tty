@@ -11,10 +11,18 @@
         false
     fi
 } || {
+    ttymaybe="$(
     {
        # exec 5>/dev/tty && echo /dev/tty
        exec 5>/dev/tty && tty
     } 2>/dev/null
+    )"
+    if [[ "${ttymaybe:0:1}" == "/" ]]; then
+        printf -- "%s\n" "$ttymaybe"
+        :
+    else
+        false
+    fi
 } || {
     TTY="$(tmux display-message -p '#{pane_tty}')"
     echo "$TTY"

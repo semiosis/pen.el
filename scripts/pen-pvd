@@ -4,6 +4,17 @@
 
 # https://www.visidata.org/install/
 
+# Run a command like M-x
+# https://www.visidata.org/docs/plugins/
+# Use "space" - it's like spacemacs.
+
+# Delete a column
+# https://github.com/saulpw/visidata/issues/1366
+# As you noted you can use - (hyphen) to hide the column. This is good enough
+# for most of my use cases, but to actually delete the column you'll need to
+# open the columns sheet SHIFT+C and press delete (d) on the column you want to
+# remove +1
+
 # I should be able to cat into vd
 # There should be no errors. vd might already be ok.
 

@@ -108,7 +108,7 @@ case "$d" in
     E) cmd="pin $MYGIT/config/emacs/config/my-misc.el" ;;
     4) cmd="v $SCRIPTS/libraries/bash-library.sh" ;;
     \@) cmd="vs $HOME/.shell_environment" ;;
-    c) cmd="vs $HOME/versioned/git/config/ranger/scope.sh" ;;
+    c) cmd="vs scope.sh" ;;
     w) cmd="pin $MYGIT/config/emacs/config/my-spacemacs.el" ;;
     \|) cmd="pin $MYGIT/config/emacs/config/my-aliases.el" ;;
     A) cmd="pin $EMACSD/config/auto-mode-load.el" ;;

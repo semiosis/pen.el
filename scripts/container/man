@@ -23,6 +23,9 @@ if [ -n "$COLUMNS" ] && [ "$COLUMNS" -gt 90 ]; then
     COLUMNS=90
 fi
 
+export COLUMNS
+export MANWIDTH="$COLUMNS"
+
 if is_tty; then
     export PAGER=v
 else

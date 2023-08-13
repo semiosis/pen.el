@@ -18,7 +18,7 @@ case "$opt" in
     rtl|rt-locate|realtime-locate) {
         notify-send "$opt :: NOT IMPLEMENTED"
 
-        rtcmd.py -c "/usr/bin/locate -i -P -r | less -S"
+        rtcmd.py -c "/usr/bin/locate -i -pl -r | less -S"
     }
     ;;
 
@@ -39,7 +39,7 @@ case "$opt" in
     ;;
 
     fhs|find-here-symlink) {
-        ls -ldt -- * | sed -n "/->/p" | sed 's/^.* \([0-9]\{4\}\|[0-9]\{2\}:[0-9]\{2\}\) //' | glob-grep "$@"
+        ls -ldt -- * | sed -n "/->/pl" | sed 's/^.* \([0-9]\{4\}\|[0-9]\{2\}:[0-9]\{2\}\) //' | glob-grep "$@"
     }
     ;;
 
@@ -54,13 +54,15 @@ case "$opt" in
         input="$(cat | pen-mnm)"
         files="$(printf -- "%s" "$input" | pen-ux dirsuffix)"
         prettied_files="$(printf -- "%s" "$input" | pen-ux dirsuffix | while read line; do
+        printf -- "%s\n" "$line"
+        done
         )"
 
         lastmessage="You are about to delete some files:\n$prettied_files"
 
         # If not a tty but TTY is exported from outside, attach the tty
         if test "$mytty" = "not a tty" && ! [ -z ${TTY+x} ]; then
-            p "Attaching tty" 1>&2
+            pl "Attaching tty" 1>&2
             exec 0<"$TTY"
             exec 1>"$TTY"
         else
@@ -71,7 +73,7 @@ case "$opt" in
 
         if ! [[ -t 1 ]]; then
             notify-send "No tty. Not proceeding."
-            p "No tty. Not proceeding."
+            pl "No tty. Not proceeding."
             exit 0
         fi
 
@@ -80,24 +82,24 @@ case "$opt" in
         echo
 
         if ! [ "$?" -eq 0 ]; then
-            p "Not proceeding to delete files"
+            pl "Not proceeding to delete files"
             exit 0
         fi
 
         echo
-        p "Unminimised:"
-        p "$files" | pen-umn # | pen-str indent
+        pl "Unminimised:"
+        pl "$files" | pen-umn # | pen-str indent
         echo
 
-        p "CWD: $(pwd)"
-        p "Command: xargs rm -rf"
+        pl "CWD: $(pwd)"
+        pl "Command: xargs rm -rf"
         echo
 
-        if pen-yn "Are you sure? "; then
-            p "$files" | pen-umn | while read line; do
+        if pen-yn "Are you sure?"; then
+            pl "$files" | pen-umn | while read line; do
                 rm -rf "$line"
             done
-            p "... Done."
+            pl "... Done."
             echo ls:
             echo
             ls

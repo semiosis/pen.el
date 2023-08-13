@@ -98,6 +98,7 @@ if test -z "$ans"; then
               -j eww-js \
               -e eww-ne \
               -h ewc \
+              -d elinks-dump \
               -m pen-mirror-site \
               -x ewx \
               -N nveww \
@@ -120,8 +121,8 @@ if test -z "$ans"; then
               -l elinks \
               -z scrape-and-summarize \
               -s ca-tless \
-              -q qutebrowser \
-              -V vimlinks)"
+              -V vimlinks \
+              -q QUIT )"
 fi
 
 case "$ans" in
@@ -132,6 +133,7 @@ case "$ans" in
     }
     ;;
     ewc) { ewc "$url"; exit 0; } ;;
+    elinks-dump) { elinks-dump "$url"; exit 0; } ;;
     ewx) { ewx "$url"; } ;;
     copy) { xcit -i "$url"; exit 0; } ;;
     google-chrome) { set -m; google-chrome "$url" & disown; exit 0; } ;;
@@ -153,6 +155,7 @@ case "$ans" in
     ca-tless) { ca "$url" | tless; } ;;
     vimlinks) { vimlinks "$url"; } ;;
     qutebrowser) { qutebrowser "$url"; } ;;
+    QUIT) { exit 0; } ;;
     edit) { vs $0; } ;;
     *) {
         "$ans" "$url"

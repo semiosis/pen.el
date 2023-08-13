@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+fp="$1"
+shift
+
+if { ! stdin_exists; } && test -n "$fp"; then
+    cmd_prefix+="cat $(aqf "$fp") | "
+fi
+
+rtcmd "+/\(\"\.\)\@<=\"" -E "$cmd_prefix remarshal -if toml -of yaml | yq -r \".\" | vi -"
