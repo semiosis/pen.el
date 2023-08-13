@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fp="$1"
+cat "$fp" | sed q | scrape "i?python[0-9.]+"

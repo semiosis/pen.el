@@ -39,7 +39,7 @@ case "$opt" in
     ;;
 
     fhs|find-here-symlink) {
-        ls -ldt -- * | sed -n "/->/pl" | sed 's/^.* \([0-9]\{4\}\|[0-9]\{2\}:[0-9]\{2\}\) //' | glob-grep "$@"
+        ls -ldt -- * | sed -n "/->/p" | sed 's/^.* \([0-9]\{4\}\|[0-9]\{2\}:[0-9]\{2\}\) //' | glob-grep "$@"
     }
     ;;
 

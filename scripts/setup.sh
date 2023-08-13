@@ -1360,3 +1360,16 @@ ln -sf /root/.pen/documents/textmirror /root/text-mirror
 pip3.8 install tomli
 
 pip3.8 install remarshal
+
+
+# elinks
+agi libmozjs-60-0 libmozjs-60-dev
+agi python3-bs4
+(
+cd "$(gc "http://github.com/rkd77/elinks")"
+./autogen.sh 
+./configure --with-python=python3.8 && make && make install
+)
+
+e ia meson-mode
+# /volumes/home/shane/var/smulliga/source/git/rkd77/elinks/meson.build

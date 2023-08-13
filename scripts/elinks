@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# https://hellricer.github.io/2019/05/29/elinks-with-beautifulsoup.html
+
+test -f "/usr/local/bin/elinks" && : "${bin:="/usr/local/bin/elinks"}"
+test -f "/usr/bin/elinks" && : "${bin:="/usr/bin/elinks"}"
+
+"$bin" "$@"

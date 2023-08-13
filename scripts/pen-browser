@@ -6,7 +6,7 @@ export TTY
 : "${BROWSER:="sps-lg"}"
 
 if test "$BROWSER" = pen-browser || test "$BROWSER" = browser; then
-    export BROWSER=sps-lg
+    export BROWSER=nw-lg
 fi
 
 # If handled with something else, abort browser

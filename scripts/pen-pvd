@@ -73,8 +73,10 @@ if stdin_exists; then
     exec <&2
 fi
 
-if is_tty; then
-    visidata "$@"
-else
-    cat
-fi
+visidata "$@"
+
+# if is_tty; then
+#     visidata "$@"
+# else
+#     cat
+# fi

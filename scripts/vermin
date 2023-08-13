@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+# Gets the minimum required version to run some python code
+
+# /usr/local/bin/vermin "$@" | awk '/Minimum required ver/{print gensub(/\.0$/,"","g",gensub(/.* /,"","g",$0))}'
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+if stdin_exists; then
+    fp="$(cat | tf py)"
+    set -- "$@" "$fp"
+fi
+
+# This is simply easier to read
+ver="$(/usr/local/bin/vermin "$@" | awk '/Minimum required ver/{print gensub(/.* /,"","g",$0)}' | sed 's/\.0$//')"
+
+case "$ver" in
+    3.1|3.2|3.3|3.4) {
+        ver=3.5
+    }
+    ;;
+
+    *)
+esac
+
+: ${ver:="3.6"}
+
+printf -- "%s" "$ver" | sed 's/^~//'

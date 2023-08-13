@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# This is meant to be used as a browser
+
+pen-nw lg "$@"
