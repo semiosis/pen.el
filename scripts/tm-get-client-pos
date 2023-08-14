@@ -1,0 +1,75 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -tp) {
+        tuple=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if ! test "$FAST" = y; then
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        -p) { # session that called the tmux script
+            CALLER_TARGET="$2"
+            shift
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+fi
+
+if [ -n "$CALLER_TARGET" ]; then
+    CALLER_TARGET="$CALLER_TARGET"
+else
+    CALLER_TARGET="$(tmux display -p "#{session_name}")"
+fi
+
+swidth="$(tmux display -t "$CALLER_TARGET" -p "#{client_width}")"
+sheight="$(tmux display -t "$CALLER_TARGET" -p "#{client_height}")"
+
+# since upgrading from tmux 2.8 to 3.4, this line is no longer needed
+# sheight="$(( sheight + 2 ))"
+
+server="$(pen-tm-get-server)"
+
+wrapsession_name="wrap$$"
+
+# Don't use tm attach, to make this faster.
+tmux \
+    new-session -d \
+        -x "$swidth" \
+        -y "$sheight" \
+        -A \
+        -s "$wrapsession_name" \
+        \; \
+    resize-window -t wrap: -x "$swidth" -y "$sheight" \
+    \; \
+    respawnp -k \
+        -t "$wrapsession_name:1" \
+        "TMUX= tmux -L $server attach -t \"$CALLER_TARGET\""
+
+# while ! test -f /tmp/tmux_cursor_pos.txt; do
+    sleep 0.1
+# done
+
+: ${y:="$(tmux display -t "$wrapsession_name:" -p "#{cursor_y}")"}
+: ${x:="$(tmux display -t "$wrapsession_name:" -p "#{cursor_x}")"}
+
+# echo "$x,$y" > /tmp/tmux_cursor_pos.txt
+if test "$tuple" = "y"; then
+    echo "$x,$y"
+else
+    echo -e "CURSOR_X=$x\nCURSOR_Y=$y"
+fi
+tmux kill-session -t "$wrapsession_name:"
+
+# sleep 0.2
+
+# tmux kill-pane -t "$wrapsession_name:1.0"

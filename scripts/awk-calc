@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# awk-calc "($width/100) * $client_width"
+# awk-calc "(50/100) * 160"
+
+equation="$@"
+test -n "$equation" || exit 1
+
+echo "$(awk "BEGIN {print ($equation)}")"

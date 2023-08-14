@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -2) {
+        NO_NVC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$NO_NVC" = "y"; then
+    hide-cursor telnet towel.blinkenlights.nl
+else
+    nvc hide-cursor telnet towel.blinkenlights.nl
+fi

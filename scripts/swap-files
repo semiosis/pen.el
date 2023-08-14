@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+set -x
+
+a="$1"
+b="$2"
+
+test -f "$a" && test -f "$b" || exit 1
+
+tf_swap="$(ux tf swap || echo /dev/null)"
+
+mv "$a" "$tf_swap" || exit 1
+mv "$b" "$a" || exit 1
+mv "$tf_swap" "$b" || exit 1

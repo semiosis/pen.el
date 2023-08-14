@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+a="$1"
+b="$2"
+
+test -n "$a" || exit 1
+test -n "$b" || exit 1
+
+intermediate='$#@!'
+
+sed -e "s=$a=$intermediate=g" -e "s=$b=$a=g" -e "s=$intermediate=$b=g"

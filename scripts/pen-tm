@@ -127,6 +127,7 @@ for arg in "$@"; do case "$arg" in
     copy-pane-command|\
     editsession|\
     send-keys|\
+    get-client-pos|\
     click|em-click|regex-find|regex-find-coord|regex-click|click-wrap|\
     ep|edit-paste|vp|vipe-paste|\
     edit-file|\
@@ -629,9 +630,18 @@ case "$f" in
     }
     ;;
 
+    # cursor position for client (not pane)
+    # cursor_x
+    # cursor_y
+    get-client-pos) {
+        export CALLER_TARGET
+        tm-get-client-pos "$@"
+    }
+    ;;
+
     ttyrec-auto|recterm|ttystudio-gif|ascl|asciinema-local) {
-        swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
-        sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
+        swidth="$(tmux display -t "$CALLER_TARGET" -p "#{client_width}")"
+        sheight="$(tmux display -t "$CALLER_TARGET" -p "#{client_height}")"
         sheight="$(( sheight + 2 ))"
 
         caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
@@ -652,8 +662,8 @@ case "$f" in
         rm -f /tmp/asciinema-x-session.txt
         rm -f /tmp/asciinema-user-session.txt
 
-        swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
-        sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
+        swidth="$(tmux display -t "$CALLER_TARGET" -p "#{client_width}")"
+        sheight="$(tmux display -t "$CALLER_TARGET" -p "#{client_height}")"
         sheight="$(( sheight + 1 ))"
 
         caller_slug="$(printf -- "%s" "$CALLER_TARGET" | slugify)"
@@ -672,10 +682,10 @@ case "$f" in
         cmd2="TMUX= tmux attach -t \"$CALLER_TARGET\""
 
         echo "cinema-$caller_slug" > /tmp/asciinema-x-session.txt
-        tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; setw force-width "$swidth" \; setw force-height "$sheight" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
+        tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; resize-window -t "cinema-$caller_slug:" -x "$swidth" -y "$sheight" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
         # Therefore I need to attache a new session, which attaches the same session
         echo "cinema-$caller_slug-user" > /tmp/asciinema-user-session.txt
-        tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-${caller_slug}-user" \; setw force-width "$swidth" \; setw force-height "$sheight" \; respawnp -k -t "cinema-${caller_slug}-user:1" "$cmd2"
+        tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-${caller_slug}-user" \; resize-window -t "cinema-${caller_slug}-user:" -x "$swidth" -y "$sheight" \; respawnp -k -t "cinema-${caller_slug}-user:1" "$cmd2"
 
         # Somehow I must detach CALLER_TARGET from asciinema and regain control.
         # Do this via a separate tmux command.
@@ -2606,11 +2616,14 @@ case "$f" in
         mv "$tf_tmcapture" "$np"
 
         if test "$WRAP" = "y"; then
-            swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
-            sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
-            sheight="$(( sheight + 2 ))"
+            swidth="$(tmux display -t "$CALLER_TARGET" -p "#{client_width}")"
+            sheight="$(tmux display -t "$CALLER_TARGET" -p "#{client_height}")"
 
-            tmux new-session -d -x "$swidth" -y "$sheight" -A -s wrap \; respawnp -k -t "wrap:1" "TMUX= tmux attach -t \"$CALLER_TARGET\""
+            # since upgrading from tmux 2.8 to 3.4, this line is no longer needed
+            # sheight="$(( sheight + 2 ))"
+
+            # tmux new-session -d -x "$swidth" -y "$sheight" -A -s wrap \; respawnp -k -t "wrap:1" "TMUX= tmux attach -t \"$CALLER_TARGET\""
+            tmux new-session -d -x "$swidth" -y "$sheight" -A -s wrap \; resize-window -t wrap: -x "$swidth" -y "$sheight" \; respawnp -k -t "wrap:1" "TMUX= tmux attach -t \"$CALLER_TARGET\""
 
             c=0
 

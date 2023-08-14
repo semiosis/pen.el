@@ -1,7 +1,179 @@
 #!/bin/bash
 
-if [ "$(tmux display-message -p -F "#{session_name}")" = "popup" ];then
+# toggle-tmux-popup -x M -y M -w 50% -h 50% bash -c "list-bible-books | mfz -nv"
+# toggle-tmux-popup -x M+10 -y M+5 -w 50% -h 50% bash -c "list-bible-books | mfz"
+
+: "${CALLER_TMUX_SESSION:="$(tmux display -pF '#{session_id}')"}"
+
+tm_getvar() {
+    name="$1"
+    tmux display-message -pF "#{$name}"
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -E) {
+        shcmd="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -nos) {
+        hide_status=y
+        shift
+    }
+    ;;
+
+    -nob) {
+        no_border=y
+        shift
+    }
+    ;;
+
+    -c) {
+        position=center
+        shift
+    }
+    ;;
+
+    -w) {
+        width="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -h) {
+        height="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -x) {
+        x="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -y) {
+        y="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${CMD:="$shcmd"}
+: ${CMD:="$(cmd "$@")"}
+
+: "${position:="center"}"
+
+# may be a percentage or a fixed integer number of characters
+: "${width:="80%"}"
+: "${height:="75%"}"
+: "${x:="C"}"
+: "${y:="C"}"
+
+: "${client_width:="$(tm_getvar client_width)"}"
+: "${client_height:="$(tm_getvar client_height)"}"
+
+pl() {
+    printf -- "%s\n" "$@"
+}
+
+if pl "$width" | grep -q '%'; then
+    width="$(pl "$width" | grep -o -P '[0-9]+')"
+    width="$(awk-calc "($width/100) * $client_width" | sed 's/\..*//')"
+fi
+
+if pl "$height" | grep -q '%'; then
+    height="$(pl "$height" | grep -o -P '[0-9]+')"
+    height="$(awk-calc "($height/100) * $client_height" | sed 's/\..*//')"
+fi
+
+# half_height="$(awk-calc "0.5 * $height" | sed 's/\..*//')"
+# y="$((y + half_height))"
+
+if printf -- "%s\n" "$x$y" | grep -q -P 'M'; then
+    eval `tm-get-client-pos`
+fi
+
+case "$x" in
+    M) { x="$CURSOR_X"; } ;;
+    M-[0-9]*) {
+        n="$(printf -- "%s\n" "$x" | grep -oP "[0-9]+")"
+        x="$(( CURSOR_X - n ))";
+    } ;;
+    M+[0-9]*) {
+        n="$(printf -- "%s\n" "$x" | grep -oP "[0-9]+")"
+        x="$(( CURSOR_X + n ))";
+    } ;;
+
+    *)
+esac
+
+case "$y" in
+    M) { y="$CURSOR_Y"; } ;;
+    M-[0-9]*) {
+        n="$(printf -- "%s\n" "$y" | grep -oP "[0-9]+")"
+        y="$(( CURSOR_Y - n ))";
+    } ;;
+    M+[0-9]*) {
+        n="$(printf -- "%s\n" "$y" | grep -oP "[0-9]+")"
+        y="$(( CURSOR_Y + n ))";
+    } ;;
+
+    *)
+esac
+
+if pl "$y" | grep -q -P '^[0-9]+$'; then
+    y="$((y + height))"
+fi
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+    CMD="tmux set-option -t popup: status off; cat \"$input_fp\" | $CMD"
+fi
+
+if test "$hide_status" = "y"; then
+    CMD="tmux set-option -t popup: status off; $CMD"
+fi
+
+if test "$no_border" = "y"; then
+    border_style=none
+else
+    border_style=rounded
+fi
+
+if [ "$(tm_getvar session_name)" = "popup" ];then
     tmux detach-client
 else
-    tmux popup -d '#{pane_current_path}' -xC -yC -w80% -h75% -E "tmux attach -t popup || tmux new -s popup"
+    case "$position" in
+        center) {
+            tmux popup -d '#{pane_current_path}' \
+                -b "$border_style" \
+                "-x$x" "-y$y" "-w$width" "-h$height" \
+                -E "tmux attach -t popup 2>/dev/null || \
+                tmux new -s popup env \"CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION\" \
+                bash -c $(cmd "$CMD")"
+        }
+        ;;
+
+        *)
+    esac
 fi

@@ -1,9 +1,11 @@
 #!/bin/bash
 export TTY
 
-swidth="$(tmux display -t "$CALLER_TARGET" -p "#{session_width}")"
-sheight="$(tmux display -t "$CALLER_TARGET" -p "#{session_height}")"
-sheight="$(( sheight + 2 ))"
+swidth="$(tmux display -t "$CALLER_TARGET" -p "#{client_width}")"
+sheight="$(tmux display -t "$CALLER_TARGET" -p "#{client_height}")"
+
+# since upgrading from tmux 2.8 to 3.4, this line is no longer needed
+# sheight="$(( sheight + 2 ))"
 
 server="$(pen-tm-get-server)"
 
@@ -15,6 +17,8 @@ tmux \
         -A \
         -s wrap \
         \; \
+    resize-window -t wrap: -x "$swidth" -y "$sheight" \
+    \; \
     respawnp -k \
         -t "wrap:1" \
         "TMUX= tmux -L $server attach -t \"$CALLER_TARGET\""

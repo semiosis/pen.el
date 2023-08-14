@@ -160,8 +160,7 @@ tmux set -t "$parent_session_name" status-left "$(printf -- "%s" "$parent_sessio
 if test "$NO_AG" = "y"; then
     tmux setw -t "$child_session_name:" aggressive-resize off
     tmux setw -t "$parent_session_name:" aggressive-resize off
-    tmux setw -t "$parent_session_name:" force-height "$rows"
-    tmux setw -t "$parent_session_name:" force-width "$cols"
+    tmux resize-window -t "$parent_session_name:" -x "$cols" -y "$rows"
 fi
 
 # TODO Make this work with the original vim instead of neovim

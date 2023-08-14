@@ -1378,3 +1378,7 @@ e ia meson-mode
 agi apcalc
 
 agi libevent-dev
+
+agi cmatrix
+
+agi telnet
