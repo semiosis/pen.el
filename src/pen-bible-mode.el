@@ -13,21 +13,20 @@
       (
        (buf (get-buffer-create (generate-new-buffer-name "*bible*"))))
     (set-buffer buf)
-    (if (not module)
-        ;; (setq bible-mode-book-module module)
-        (setq module default-bible-mode-book-module))
+    (setq module (or module
+                     default-bible-mode-book-module
+                     "NASB"))
 
     (bible-mode)
 
     (setq bible-mode-book-module module)
 
-
-    (bible-mode--set-global-chapter (or global-chapter 1) verse)
-    (set-window-buffer (get-buffer-window (current-buffer)) buf)
-
     (if (and ref
              (sor ref))
-        (bible-mode-lookup ref))))
+        (bible-mode-lookup ref)
+      (progn
+        (bible-mode--set-global-chapter (or global-chapter 1) verse)
+        (set-window-buffer (get-buffer-window (current-buffer)) buf)))))
 
 (defun bible-open-version (version)
   (interactive (list (completing-read "Module: " (bible-mode--list-biblical-modules))))
@@ -699,6 +698,20 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (fp (f-join dp fn)))
     (f-mkdir dp)
     fp))
+
+(defun bible-mode-search-for-verse (text)
+  (interactive (list (thing-at-point 'line t)))
+  (setq text (or text (thing-at-point 'line t)))
+  (let* ((ref (bible-mode-get-link text))
+         (refslug (slugify (s-replace-regexp "," " " (s-replace-regexp "-" " to " (s-replace-regexp ":" " v" ref)))))
+         (dp (f-join penconfdir "documents" "bible-notes" "verse"))
+         (fn (concat refslug ".org"))
+         (fp (f-join dp fn)))
+
+    ;; (glimpse-thing-at-point "txt" "Galatians 3")
+    ;; gli -F .txt -i "Galatians 3" | v
+    (f-mkdir dp)
+    (find-file fp)))
 
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)

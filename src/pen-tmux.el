@@ -290,7 +290,7 @@ START and END can be in either order."
 ;; tmux-popup appears to be quite a lot like =tm sps=
 ;; I don't think there's enough overlap to be able to combine them.
 ;; I'll just have to reimplement some things
-(defun tmux-popup (shcmd &optional width_pc height_pc x_pos y_pos hide_status_b stdin output_b dir noborder)
+(defun tmux-popup (shcmd &optional width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b)
   (interactive (list (read-string "popup shell command: ")))
   (let ((args (list "toggle-tmux-popup" "-E" shcmd)))
     (if width_pc
@@ -310,17 +310,14 @@ START and END can be in either order."
 
     (if hide_status_b
         (setq args (append args (list "-nos"))))
-    
+
     (if noborder
         (setq args (append args (list "-nob"))))
 
     (let ((c (eval `(cmd ,@args))))
-
       (if output_b
-          (pen-sn (concat c " | cat")
-                  stdin
-                  dir)
-        (pen-sn c stdin dir)))))
+          (setq c (concat c "| cat")))
+      (pen-sn c stdin dir))))
 
 (defun tm-cursor-pos-client ()
   (mapcar 'string-to-number (s-split "," (pen-snc "tm-get-client-pos -tp"))))
@@ -354,29 +351,51 @@ START and END can be in either order."
      ;; (tmux-popup "cmatrix" 50 50 83 3)
      ))))
 
-(defun popup-snc (shell-cmd &optional stdin dir)
+(defun popup-snc (shell-cmd &optional stdin dir output_b hide_status_b)
   (tmux-popup shell-cmd
               "50%" "50%"
               "M+1"
               "M+1"
-              nil stdin t dir))
+              hide_status_b stdin dir nil output_b))
 (defalias 'ppup 'popup-snc)
+
+(defun pvipe (listd &optional fuzzy-cmd dir tall)
+  (setq fuzzy-cmd (or fuzzy-cmd "vvipe"))
+
+  (if (eq (type-of listd) 'symbol)
+      (cond
+       ((variable-p 'clojure-mode-funcs) (setq listd (eval listd)))
+       ((fboundp 'clojure-mode-funcs) (setq listd (funcall listd)))))
+
+  ;; (if (stringp listd)
+  ;;     (setq listd (split-string (chomp listd) "\n")))
+
+  (if (listp listd)
+      (setq listd (list2str)))
+
+  (tmux-popup fuzzy-cmd
+              (if tall "40%" "90%")
+              "50%"
+              "M+1"
+              "M+1"
+              nil listd dir nil t))
+
+(defun pfz (listd &optional dir)
+  (pvipe listd "mfz -nv" dir t))
 
 (comment
  (tmux-popup "cmatrix")
  (tmux-popup "cmatrix" "90%" 10)
- (tmux-popup "cmatrix" "90%" 10 nil nil t)
+
  (let* ((pos (tm-cursor-pos-client))
         (x (car pos))
         (y (car (cdr pos))))
    (tmux-popup "cmatrix" "30%" 10 x y))
 
- (tmux-popup "vvipe" nil nil nil nil nil (thing-at-point 'sexp)
-             t)
+ (tmux-popup "vvipe" nil nil nil nil nil (thing-at-point 'sexp))
 
  ;; This edits a sexp in vim - looks like an embedded vim
- (tmux-popup "vvipe" "90%" 2 "M" "M" nil (thing-at-point 'sexp)
-             t nil t)
+ (tmux-popup "vvipe" "90%" 2 "M" "M" nil (thing-at-point 'sexp) nil t t)
  
  (tmux-popup (cmd "cmatrix" "-absu" "3" "-C" "blue")
              30 20
@@ -399,15 +418,18 @@ START and END can be in either order."
  (tmux-popup "list-bible-books | mfz -nv"
              "50%" "50%"
              (tmux-cursor-x t)
-             (tmux-cursor-y)
-             nil nil t)
+             (tmux-cursor-y))
  
  (tmux-popup "list-bible-books | mfz -nv"
              "50%" "50%"
              "M+1"
-             "M+1"
-             nil nil t)
+             "M+1")
 
- (ppup "list-bible-books | mfz -nv"))
+ (tv (ppup "list-bible-books | mfz -nv" nil nil t))
+ (tmux-popup "etetris-vt100" 33 26 "M" "M" t nil nil t)
+ (tmux-popup "etetris-vt100" 33 26 "C" "C" t nil nil)
+ (tv (pvipe (snc "list-bible-books")))
+ (bible-open nil nil "NASB" (pfz (snc "list-bible-books")))
+ (follow-bible-link (pfz (snc "list-bible-books"))))
 
 (provide 'pen-tmux)

@@ -130,8 +130,8 @@
   (interactive (list (read-string-hist "gli path: " (file-name-extension (get-path)))
                      (read-string-hist "gli: " (concat (pen-q (pen-thing-at-point)) " "))))
   (if (str-or path)
-      (pen-nw (concat "gli -F " (pen-q (concat (unregexify (concat "." path)) "$")) " " query))
-    (pen-nw (concat "gli " query))))
+      (pen-nw (concat "gli -F " (pen-q (concat (unregexify (concat "." path)) "$")) " " (pen-q query)))
+    (pen-nw (concat "gli " (pen-q query)))))
 (add-to-list 'search-functions 'glimpse-thing-at-point)
 
 (defun glimpse-thing-at-point-immediate (path query)
