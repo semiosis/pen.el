@@ -285,4 +285,129 @@ START and END can be in either order."
     (shell-command-on-region rstart rend "tm -tout -S nw -pakf -rsi"))
   (deselect))
 
+;; TODO Make it so tmux-popup can return stdout
+;; TODO Make it so tmux-popup can accept stdin
+;; tmux-popup appears to be quite a lot like =tm sps=
+;; I don't think there's enough overlap to be able to combine them.
+;; I'll just have to reimplement some things
+(defun tmux-popup (shcmd &optional width_pc height_pc x_pos y_pos hide_status_b stdin output_b dir noborder)
+  (interactive (list (read-string "popup shell command: ")))
+  (let ((args (list "toggle-tmux-popup" "-E" shcmd)))
+    (if width_pc
+        (setq args (append args (list "-w" (concat (str width_pc))))))
+    (if height_pc
+        (setq args (append args (list "-h" (concat (str height_pc))))))
+
+    ;; examples
+    ;; M, M+1, M-1, M+10
+    (if x_pos
+        (setq args (append args (list "-x" (str x_pos)))))
+
+    ;; examples
+    ;; M, M+1, M-1, M+10
+    (if y_pos
+        (setq args (append args (list "-y" (str y_pos)))))
+
+    (if hide_status_b
+        (setq args (append args (list "-nos"))))
+    
+    (if noborder
+        (setq args (append args (list "-nob"))))
+
+    (let ((c (eval `(cmd ,@args))))
+
+      (if output_b
+          (pen-sn (concat c " | cat")
+                  stdin
+                  dir)
+        (pen-sn c stdin dir)))))
+
+(defun tm-cursor-pos-client ()
+  (mapcar 'string-to-number (s-split "," (pen-snc "tm-get-client-pos -tp"))))
+
+(defun tmux-cursor-x (&optional echo)
+  (tryelse
+   (let ((y
+          (car (tm-cursor-pos-client))))
+     (if echo
+         (message (str y)))
+     y)
+   (error "Can't get column from tmux")))
+
+(defun tmux-cursor-y (&optional echo)
+  (tryelse
+   (let ((y
+          (car (cdr (tm-cursor-pos-client)))))
+     (if echo
+         (message (str y)))
+     y)
+   (error "Can't get row from tmux")))
+
+(comment
+ (run-with-timer
+  2 nil
+  (lambda ()
+    (tmux-popup "cmatrix" 50 50 (tmux-cursor-x) (tmux-cursor-y))
+    (comment
+     (etv (tmux-cursor-y))
+     (tmux-popup "cmatrix" 50 50 (tmux-cursor-x) (tmux-cursor-y))
+     ;; (tmux-popup "cmatrix" 50 50 83 3)
+     ))))
+
+(defun popup-snc (shell-cmd &optional stdin dir)
+  (tmux-popup shell-cmd
+              "50%" "50%"
+              "M+1"
+              "M+1"
+              nil stdin t dir))
+(defalias 'ppup 'popup-snc)
+
+(comment
+ (tmux-popup "cmatrix")
+ (tmux-popup "cmatrix" "90%" 10)
+ (tmux-popup "cmatrix" "90%" 10 nil nil t)
+ (let* ((pos (tm-cursor-pos-client))
+        (x (car pos))
+        (y (car (cdr pos))))
+   (tmux-popup "cmatrix" "30%" 10 x y))
+
+ (tmux-popup "vvipe" nil nil nil nil nil (thing-at-point 'sexp)
+             t)
+
+ ;; This edits a sexp in vim - looks like an embedded vim
+ (tmux-popup "vvipe" "90%" 2 "M" "M" nil (thing-at-point 'sexp)
+             t nil t)
+ 
+ (tmux-popup (cmd "cmatrix" "-absu" "3" "-C" "blue")
+             30 20
+             (tmux-cursor-x)
+             (tmux-cursor-y t)
+             t)
+
+ (tmux-popup (cmd "cmatrix" "-absu" "3" "-C" "magenta")
+             "50%" "50%"
+             (tmux-cursor-x)
+             (tmux-cursor-y))
+
+ (let* ((pos (tm-cursor-pos-client))
+        (x (car pos))
+        (y (+ 1 (car (cdr pos)))))
+   (tmux-popup (cmd "asciimation" "-2") "60%" "60%" x y))
+ 
+ (tmux-popup (cmd "asciimation") "60%" "60%" "M" "M+1")
+
+ (tmux-popup "list-bible-books | mfz -nv"
+             "50%" "50%"
+             (tmux-cursor-x t)
+             (tmux-cursor-y)
+             nil nil t)
+ 
+ (tmux-popup "list-bible-books | mfz -nv"
+             "50%" "50%"
+             "M+1"
+             "M+1"
+             nil nil t)
+
+ (ppup "list-bible-books | mfz -nv"))
+
 (provide 'pen-tmux)

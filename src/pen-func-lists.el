@@ -4,13 +4,16 @@
 
 (defun w3m-open-this-file ()
   (interactive)
-  (w3m-find-file (buffer-file-path)))
+  (let ((path (buffer-file-path)))
+    (if (f-exists-p path)
+        (w3m-find-file (buffer-file-path))
+      (w3m (buffer-file-path)))))
 
 (defun elinks-dump-this-file ()
   (interactive)
   (nw (cmd "elinks-dump" (buffer-file-path))))
 
-(defun elinks-this-file ()
+(defun elinks-open-this-file ()
   (interactive)
   (nw (cmd "elinks" (buffer-file-path))))
 
@@ -56,7 +59,7 @@
 (defset html-mode-funcs '(w3m-open-this-file
                           eww-open-this-file
                           elinks-dump-this-file
-                          elinks-this-file))
+                          elinks-open-this-file))
 (defset solidity-mode-funcs '(find-file-at-point))
 (defset haskell-interactive-mode-funcs `(haskell-process-restart
                                          ,(dff (customize-variable 'haskell-process-log))
@@ -215,6 +218,9 @@
 (defset haskell-cabal-mode-funcs '(haskell-cabal-add-dependency))
 
 (defset eww-mode-funcs '(eww-open-in-chrome
+                         w3m-open-this-file
+                         elinks-open-this-file
+                         elinks-dump-this-file
                          pen-url-cache-delete
                          eww-add-domain-to-chrome-dom-matches
                          pen-lg-display-page

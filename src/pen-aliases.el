@@ -31,6 +31,7 @@
       (defalias 'mnm 'pen-mnm)
       (defalias 'umn 'pen-umn)
       (defalias 'cmd 'pen-cmd)
+      (defalias 'unregexify 'pen-unregexify)
       (defalias 'qa 'pen-qa)
       (defalias 'q 'pen-q)
       ;; (defalias 'sw 'pen-sw)

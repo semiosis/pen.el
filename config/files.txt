@@ -329,3 +329,6 @@ $HOME/learn-functions/haskell/learned.txt
 $HOME/learn-functions/common-lisp/learned.txt
 $HOME/learn-functions/racket/learned.txt
 $HOME/learn-functions/prolog/learned.txt
+$HOME/.elinks/devtools.py
+$HOME/.elinks/hooks.py
+$HOME/.elinks/rules.py

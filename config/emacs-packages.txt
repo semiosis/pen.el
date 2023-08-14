@@ -2244,3 +2244,5 @@ spatial-navigate
 topsy
 prism
 wordel
+bazel
+meson-mode

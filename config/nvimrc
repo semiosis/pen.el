@@ -320,7 +320,7 @@ fun! TermAndQuit(...)
                 \ }
     let jobid = termopen(s:cmd, s:callbacks)
 endf
-set ls=0
+" set ls=0
 set mouse=a
 hi morediscrete cterm=NONE ctermfg=236 ctermbg=NONE
 fun! NumberSyntax()
@@ -1588,6 +1588,9 @@ inoremap <M-=> <Esc>=
 inoremap <M-+> <Esc>+
 inoremap <M-]> <Esc>]
 inoremap <M-}> <Esc>}
+
+nmap <C-^> ;echo "USE gl, ca OR cm"<CR>
+nnoremap ca <C-^>
 
 noremap <silent> ZB :call system("tm -f -d nw -c \"".expand('%:p:h')."\" zsh &")<CR>
 noremap <silent> ZC :call system("tm -f -d sph -c \"".expand('%:p:h')."\" zsh &")<CR>
