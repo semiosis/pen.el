@@ -5,6 +5,13 @@
 
 : "${CALLER_TMUX_SESSION:="$(tmux display -pF '#{session_id}')"}"
 
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+is_stdout_pipe
+ispipe="$?"
+
 tm_getvar() {
     name="$1"
     tmux display-message -pF "#{$name}"
@@ -21,6 +28,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -nos) {
         hide_status=y
+        shift
+    }
+    ;;
+
+    -b) {
+        border_style="$2"
+        shift
         shift
     }
     ;;
@@ -157,7 +171,14 @@ fi
 if test "$no_border" = "y"; then
     border_style=none
 else
-    border_style=rounded
+    : "${border_style:="rounded"}"
+fi
+
+sentinal_string="tm_sentinal_${RANDOM}_$$"
+if test "$ispipe" = 0; then
+    output_fp="$(cat | tf txt)"
+    CMD="$CMD > \"$output_fp\""
+    CMD="$CMD; tmux wait-for -S $sentinal_string"
 fi
 
 if [ "$(tm_getvar session_name)" = "popup" ];then
@@ -176,4 +197,9 @@ else
 
         *)
     esac
+fi
+
+if test "$ispipe" = 0; then
+    tmux wait-for "$sentinal_string"
+    cat "$output_fp"
 fi

@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+unbuffer toggle-tmux-popup -b double -nos -w 30% -h 80% -x L nvc hide-cursor tmux-choose-window -t "$(tmux display -pF "#{session_name}")"

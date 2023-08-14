@@ -350,7 +350,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -tt) {
-
         invocation="$(printf -- "%s\n" "$invocation" | sed 's/ -tt\b//')"
 
         exec script -q --return -c "$invocation" /dev/null
@@ -689,7 +688,7 @@ case "$f" in
 
         # Somehow I must detach CALLER_TARGET from asciinema and regain control.
         # Do this via a separate tmux command.
-        # Therefore I need a tmux command fuzzy finder
+        # Therefore, I need a tmux command fuzzy finder
 
         unbuffer pen-xt -b tmux attach -t "cinema-${caller_slug}-user"
     }
