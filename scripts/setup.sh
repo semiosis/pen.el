@@ -1382,3 +1382,8 @@ agi libevent-dev
 agi cmatrix
 
 agi telnet
+
+# Search and download transcripts
+pip3.8 install ytps
+pip3.8 install youtube-transcript-api
+pip3.8 install trafilatura

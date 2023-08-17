@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f "/usr/local/bin/ytps" || pyf "ytps" &>/dev/null
+
+if test "$#" -gt 0; then
+    # last_arg="${@: -1}"
+    # test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+    # query="$last_arg"
+
+    query="$@"
+fi
+
+# /usr/local/bin/ytps "$@" "$query"
+oci /usr/local/bin/ytps -l "$query" | strip-ansi  | pavs

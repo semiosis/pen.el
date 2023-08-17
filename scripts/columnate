@@ -1,0 +1,132 @@
+#!/bin/sh
+# The proper term for this is columniate
+
+# This is free and unencumbered software released into the public domain
+# See file LICENSE or refer to <http://unlicense.org/>
+rowmajor=0 COLUMNS=${COLUMNS:-`tput cols`}
+while getopts vD\?w:Cx opt ; do case $opt in
+	v) set -xv ;; \?) sed /^$/q $0 ; exit 1 ;;
+	w) COLUMNS=$((OPTARG+0)) ;;
+	C) rowmajor=0 ;; x) rowmajor=1 ;;
+	D) debug=1 ;;
+
+esac; done; shift $((OPTIND-1)); test -- = "$1" && shift 1
+
+f=`mktemp -t`
+trap "rm '$f'" 0 1 2 3 15
+cat >"$f" <<\EOF
+#!/bin/awk -f
+# This is free and unencumbered software released into the public domain
+# See file LICENSE or refer to <http://unlicense.org/>
+#
+# toy implementation for exploring minimum-width columnation algorithm.
+#
+# run with e.g. ls|sort|columnate rowmajor=1 COLUMNS=$COLUMNS
+
+    {
+	    item[NR-1]=$0
+	    l=length($0)
+	    if (!minlen || l<minlen)
+		    minlen=l
+	    if (maxlen<l)
+		    maxlen=l
+    }
+
+END {
+	if (NR==0)
+		exit
+	sep="  "
+	if (COLUMNS<=0)
+		COLUMNS=80
+
+	mincols=int((COLUMNS+length(sep)+maxlen+length(sep)-1)/(maxlen+length(sep)))
+	maxcols=int(((COLUMNS-(maxlen-minlen)+length(sep)+minlen+length(sep)-1))/(minlen+length(sep)))
+	if (maxcols<1) maxcols=1
+	if (maxcols>NR) maxcols=NR
+
+	for ( cols = 1 ; cols <= maxcols ; ++cols ) {
+		nlines[cols] = int((NR+cols-1)/cols)
+		# +1 to match ls's output, for the \n I guess
+		linewidth[cols] = length(sep)*(cols-1)+1
+	}
+
+	if (rowmajor) for ( i=0 ; i<NR ; ++i ) {
+		ilen = length(item[i])
+		for ( cols=mincols ; cols <= maxcols ; ++cols ) {
+			icol  = i%cols
+			iline = int(i/cols)
+			if ( ilen > colwidths[cols,icol] ) {
+				linewidth[cols] += ilen - colwidths[cols,icol]
+				colwidths[cols,icol] = ilen;
+			}
+		}
+		while ( linewidth[maxcols] > COLUMNS )
+			--maxcols
+	} else for ( i=NR ; i-- ;) {
+		ilen = length(item[i])
+		for ( cols=mincols ; cols <= maxcols ; ++cols ) {
+			lines=nlines[cols]
+			fullcols = cols-(cols*lines-NR)
+			filled	 = fullcols*lines
+			if ( i < filled ) {
+				icol   = int(i/lines)
+				iline  = i%lines
+			} else {
+				over	 = i-filled
+				short	 = lines-1
+				icol   = fullcols+int(over/short)
+				iline  = over%short
+			}
+			if ( ilen > colwidths[cols,icol] ) {
+				linewidth[cols] += ilen - colwidths[cols,icol]
+				colwidths[cols,icol] = ilen
+			}
+			if (debug) print i+1,icol+1"/"cols,ilen"/"colwidths[cols,icol]
+		}
+		while ( linewidth[maxcols] > COLUMNS )
+			--maxcols
+	}
+
+	if ( !maxcols ) cols = 1
+	else {
+		cols=maxcols
+		lines=nlines[maxcols]
+		bestwidth=linewidth[maxcols]
+		for (nc = maxcols-1 ; nlines[nc] == lines ; --nc)
+			if ( linewidth[nc] < bestwidth ) {
+				cols = nc
+				bestwidth = linewidth[nc]
+			}
+	}
+
+	lines=nlines[cols]
+	fullcols=cols-(cols*lines-NR)
+	filled=fullcols*lines
+
+	for ( line = 0 ; line < lines ; ++line ) {
+		for ( col = 0 ; col < cols ; ++col ) {
+			innerfmt="%-"colwidths[cols,col]"s%s"
+
+			if (rowmajor)
+				i = line*cols+col
+			else if (col < fullcols)
+				i=col*lines+line
+			else if (line+1==lines)
+				continue
+			else
+				i=filled+(col-fullcols)*(lines-1)+line
+
+			if ( i >= NR )
+				break
+
+			if (debug) printf "%d:%d/%d[%s]:",i+1,col+1,cols,innerfmt
+
+			fmt= i+1==NR? "%s": col+1<cols? innerfmt: "%s"
+
+			printf fmt,item[i],sep
+		}
+		print "";
+	}
+}
+EOF
+awk -f "$f" -v rowmajor=$rowmajor -v COLUMNS=$COLUMNS -v debug=$debug "$@"

@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -pakf|-pak) {
+        pak_finish=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+if test "$pak_finish" = "y"; then
+    CMD="$CMD; pak"
+fi
+
+toggle-tmux-popup bash -c "$CMD"

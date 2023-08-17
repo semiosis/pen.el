@@ -493,8 +493,11 @@ input_fp="$(cat | c ascify | tf txt)"
         # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b.*/\\1/p"
         # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\( [0-9]\+\\).*/\\1\\2/pI"
 
+        # Mark 6:1-13Psalms 119:73-80Proverbs 17:27-28
+
         cat "$input_fp" | awk 1 | 
-            sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( [0-9-]\+\\)\\?\\(:[0-9-]\+\\)\\?.*/\\1\\2\\3\\4/p" |
+            sed 's/\([0-9]\)\([A-Za-z]\)/\1\r\2/g' |
+            sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( \?[0-9-]\+\\)\\?\\(:[0-9-]\+\\)\\?.*/\\1\\2\\3\\4/p" |
             sed '/^$/d'
     done
 } | sed -e 's/\.$//' | {
@@ -517,7 +520,7 @@ input_fp="$(cat | c ascify | tf txt)"
     fi
 } | {
     if test "$books_only" = "y"; then
-        sed 's/ [0-9].*//'
+        sed 's/ \?[0-9].*//'
     else
         cat
     fi

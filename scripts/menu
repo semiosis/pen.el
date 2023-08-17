@@ -1,6 +1,77 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-unbuffer toggle-tmux-popup -b double -nos -w 30% -h 80% -x L nvc hide-cursor tmux-choose-window -t "$(tmux display -pF "#{session_name}")"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -t) {
+        sess="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${sess:="$CALLER_TMUX_SESSION"}"
+: "${sess:="$(tmux display -pF '#{session_id}')"}"
+
+
+IFS= read -r -d '' window_keys <<HEREDOC
+(0)
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+(g)
+(h)
+(i)
+(j)
+(k)
+(l)
+(m)
+(n)
+(o)
+(p)
+(r)
+(s)
+(t)
+(u)
+(v)
+(w)
+(x)
+(y)
+(z)
+HEREDOC
+
+wins="$(tmux list-windows -t "$sess:" -F "#I #W#{window_flags}")"
+n_wins="$(printf -- "%s\n" "$wins" | wc -l)"
+
+disp="$(paste <(printf -- "%s\n" "$window_keys" | head -n "$n_wins") <(printf -- "%s\n" "$wins"))"
+printf -- "%s\n" "$disp" 1>&2
+read -n 1 -s ret
+
+if test "$ret" = q; then
+    exit 0
+fi
+
+sel="$(echo "$disp" | grep -P "^\\($ret\\)" | sed 's/(.*)\t\([0-9]\+\) .*/\1/')"
+
+if test -n "$sel"; then
+    tmux select-window -t "$sess:${sel}.0" #| tv
+fi
+
+# no q
