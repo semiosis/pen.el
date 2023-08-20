@@ -316,27 +316,30 @@ creating a new `bible-mode' buffer positioned at the specified verse."
                   text)))
 
     (let* (
-          ;; To make refs like this work:
-          ;; Lev 18-20
-          (text (s-replace-regexp "-[0-9].*" "" text))
-          (text (cond
-                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
-                  text)
-                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?" text)
-                  (concat (match-string 0 text) ":"))
-                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:" text)
-                  (concat text "1:"))
-                 ((re-match-p ".+ [0-9]?[0-9]?[0-9]?" text)
-                  (concat text ":1:"))
-                 ((re-match-p ".+ " text)
-                  (concat text "1:1:"))
-                 ((re-match-p ".+" text)
-                  (concat text " 1:1:"))
-                 (t text)))
+           ;; To make refs like this work:
+           ;; Lev 18-20
+           (text (s-replace-regexp "-[0-9].*" "" text))
+           ;; Make this one work too
+           ;; Lev.19:18
+           (text (s-replace-regexp "\\." " " text))
+           (text (cond
+                  ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
+                   text)
+                  ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?" text)
+                   (concat (match-string 0 text) ":"))
+                  ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:" text)
+                   (concat text "1:"))
+                  ((re-match-p ".+ [0-9]?[0-9]?[0-9]?" text)
+                   (concat text ":1:"))
+                  ((re-match-p ".+ " text)
+                   (concat text "1:1:"))
+                  ((re-match-p ".+" text)
+                   (concat text " 1:1:"))
+                  (t text)))
 
-          book
-          chapter
-          verse)
+           book
+           chapter
+           verse)
 
       (string-match ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
       (setq text (match-string 0 text))
