@@ -2209,6 +2209,14 @@ endf
 
 MapM OpenSnippets q d
 
+fun! InsertParaAbove()
+    "exe expand("normal! 0O\<Esc>O")
+    exe expand("normal! 0O\<Esc>O")
+    startinsert
+endf
+
+MapM InsertParaAbove q o
+
 " This fixes select-mode when needing to enter dvorak letters (e.g. in
 " snipmate)
 sunmap ;

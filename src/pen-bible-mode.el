@@ -363,6 +363,14 @@ creating a new `bible-mode' buffer positioned at the specified verse."
                    module)
        (error "Error. Incorrect Bible reference?")))))
 
+(defun scrape-bible-references (text)
+  (pen-str2lines (pen-snc "scrape-bible-references" text)))
+(defalias 'scrape-bible-verses 'scrape-bible-references)
+
+(defun bible-mode-lookup-ref (text)
+  (interactive (list (read-string "Bible reference: " (car (scrape-bible-references (bible-get-text-here))))))
+  (bible-mode-lookup text))
+
 (defun bible-search-mode-get-search ()
   (interactive)
   (cmd-nice
@@ -438,7 +446,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         ;; Can't use ": " because sometimes like with Psalms 40:1
         ;; there is no space
         (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
-        (beginning-of-line))))
+        (beginning-of-line)))
+  (run-hooks 'bible-mode-hook))
 
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun bible-mode--display-around-advice (proc &rest args)
@@ -730,6 +739,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map "s" 'bible-search-phrase)
 (define-key bible-mode-map "m" 'bible-mode-select-module)
 (define-key bible-mode-map "x" 'bible-mode-split-display)
+(define-key bible-mode-map "l" 'bible-mode-lookup-ref)
 
 (define-key bible-search-mode-map "s" 'bible-search-phrase)
 (define-key bible-search-mode-map "b" 'bible-search-mode-select-book)

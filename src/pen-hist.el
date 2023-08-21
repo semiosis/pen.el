@@ -31,6 +31,7 @@
   (pen-sn (concat "hist-save " (pen-q name) " " (mapconcat 'pen-q (mapcar 'str body) " "))))
 
 (defalias 'pen-str2lines 's-lines)
+(defalias 'str2lines 's-lines)
 
 (defun pen-hg (name)
   (pen-str2lines (pen-cl-sn (concat "hist-get " (pen-q name)) :chomp t)))

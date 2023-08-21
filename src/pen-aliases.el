@@ -34,6 +34,7 @@
       (defalias 'unregexify 'pen-unregexify)
       (defalias 'qa 'pen-qa)
       (defalias 'q 'pen-q)
+      (defalias 'ns 'pen-ns)
       ;; (defalias 'sw 'pen-sw)
       (defalias 'sw 'pcase)
       (defalias 'list2str 'pen-list2str)

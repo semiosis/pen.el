@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# (
+    cd $NOTES/ws/bible-studies
+    find . -type f -exec cat1 {} \; |
+        scrape-bible-references |
+        bible-show-verses
+# ) # | pavs

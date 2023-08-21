@@ -72,7 +72,7 @@
   (defset glossary-predicate-tuples
     `(((and
         (f-exists? (pen-get-mode-glossary-file)))
-       (pen-get-mode-glossary-file))
+       ,(pen-get-mode-glossary-file))
       ((or (pen-re-p "\\bVault\\b")
            (pen-re-p "\\bConsul\\b")
            (and (not (derived-mode-p 'text-mode))
@@ -85,9 +85,11 @@
            (pen-istr-p "france")
            (istr-match-p "French" (get-path nil t)))
        ,(f-join pen-glossaries-directory "french.txt"))
-      ((or (pen-istr-p "Genesis")
-           (pen-istr-p "Exodus")
-           (istr-match-p "Bible" (get-path nil t)))
+      ((or
+        (major-mode-p 'bible-mode)
+        (pen-istr-p "Genesis")
+        (pen-istr-p "Exodus")
+        (istr-match-p "Bible" (get-path nil t)))
        ,(f-join pen-glossaries-directory "bible.txt"))
       ((pen-istr-p "fasttext")
        ,(f-join pen-glossaries-directory "fasttext.txt"))
@@ -420,13 +422,23 @@
    (lambda (e1 e2) (< (length (third e1))
                       (length (third e2))))))
 
-(defset pen-glossary-term-3tuples (pen-glossary-list-tuples))
-(defset pen-glossary-term-3tuples-global pen-glossary-term-3tuples)
-(defset pen-glossary-candidate-3tuples nil)
+(defvar pen-glossary-term-3tuples nil)
+(defvar pen-glossary-term-3tuples-global nil)
+(defvar pen-glossary-candidate-3tuples nil)
 
+;; This needs to happen in the buffer individually, not globally
+(comment
+ (defset pen-glossary-term-3tuples (pen-glossary-list-tuples))
+ (defset pen-glossary-term-3tuples-global pen-glossary-term-3tuples)
+ (defset pen-glossary-candidate-3tuples nil))
+
+;; This is what needs to run
 (defun pen-recalculate-glossary-3tuples ()
   (interactive)
   (defset-local pen-glossary-term-3tuples (-distinct (flatten-once (cl-loop for fp in pen-glossary-files collect (pen-glossary-list-tuples fp))))))
+
+;; Like this
+(add-hook 'bible-mode-hook 'pen-recalculate-glossary-3tuples)
 
 (defun pen-glossary-reload-term-3tuples ()
   (interactive)
@@ -1136,7 +1148,9 @@ Use my position list code. Make it use rosie lang and external software."
 (define-key selected-keymap (kbd "Z g g") 'pen-generate-glossary-term-and-definition)
 
 (defun pen-is-glossary-file (&optional fp)
-  (setq fp (or fp (get-path)))
+  (setq fp (or fp
+               (get-path nil t)
+               ""))
   (or
    (string-match "glossary\\.txt$" fp)
    (string-match "words\\.txt$" fp)
