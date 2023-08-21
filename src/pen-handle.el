@@ -423,6 +423,12 @@
         :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
 
+(handle '(c-mode)
+        :nexterr '()
+        :docs '(man-thing-at-point-cpp
+                pen-docs-for-thing-given-screen)
+        :preverr '())
+
 (handle '(term-mode)
         :nexterr '()
         :docs '(pen-docs-for-thing-given-screen)

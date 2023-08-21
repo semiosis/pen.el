@@ -1,9 +1,13 @@
 #!/bin/bash
 export TTY
 
-export UPDATE
-
 sn="$(basename "$0")"
+
+if ! test "$CI_CACHED" = "y"; then oci "$sn" "$@" | pavs; exit "$?"; fi
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+export UPDATE
 
 url="$1"
 test -n "$url" || exit 1
@@ -20,7 +24,7 @@ cd "$subs_dir"
 
 raw="$(
     oci yt-subs.sh "$url" |
-        grep -i -P "\\.(en|fr)\\." |
+        grep -i -P "\\.(en|fr).*\\." |
         head -n 1 | awk 1 |
         while IFS=$'\n' read -r line; do
             # echo "$line" 1>&2

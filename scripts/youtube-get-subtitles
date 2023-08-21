@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f $HOME/.local/bin/youtube_transcript_api && : "${bin:="$HOME/.local/bin/youtube_transcript_api"}"
+test -f /usr/local/bin/youtube_transcript_api && : "${bin:="/usr/local/bin/youtube_transcript_api"}"
+
+test -f "$bin" || pip3.8 install youtube-transcript-api &>/dev/null
+
+tidy_youtube_links() {
+    awk 1 | while IFS=$'\n' read -r line; do
+        if printf -- "%s\n" "$line" | grep -q -P 'youtube.com'; then
+            :
+        fi
+    done
+}
+
+last_arg="${@}"
+id="$(p "$last_arg" | sed 's/.*v=//' | sed 's=.*/==')"
+
+test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+set -- "$@" "$id"
+
+test -n "$id" || exit 1
+
+# oci "$bin" "$@" | pavs
+oci "$bin" --format text "$@" | pavs
