@@ -752,8 +752,10 @@
 
       ;; (define-key pen-map (kbd "M-l n") 'pen-nw)
       ;; (define-key pen-map (kbd "M-l M-n") 'pen-nw)
-      (define-key pen-map (kbd "M-l N") 'pen-sps)
-      (define-key pen-map (kbd "M-l M-N") 'pen-sps)))
+      (define-key pen-map (kbd "M-l B") 'pen-sps)
+      (define-key pen-map (kbd "M-l M-B") 'pen-sps)
+      (define-key pen-map (kbd "M-l N") 'pen-nw)
+      (define-key pen-map (kbd "M-l M-N") 'pen-nw)))
 
 (pen-autosuggest-mode t)
 

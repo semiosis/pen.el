@@ -159,9 +159,11 @@ stdin_exists() {
     } &>/dev/null
 }
 
+CMD="bash -c $(cmd "$CMD")"
+
 if stdin_exists; then
     input_fp="$(cat | tf txt)"
-    CMD="cat \"$input_fp\" | bash -c $CMD"
+    CMD="cat \"$input_fp\" | $CMD"
 fi
 
 if test "$hide_status" = "y"; then

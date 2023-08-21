@@ -21,6 +21,7 @@
       (defalias 'goto-glossary-definition 'pen-goto-glossary-definition)
       (defalias 'function-p 'fboundp)
       (defalias 'cmd 'pen-cmd)
+      (defalias 'tvipe 'pen-tvipe)
       (defalias 'mu 'pen-mu)
       (defalias 'ff 'find-file)
       (defalias 'zrepl 'pen-zrepl)

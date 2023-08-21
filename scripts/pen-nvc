@@ -54,7 +54,7 @@ fi
 
 CMD="$(cmd "$@")"
 
-if test $# -eq 0; then
+if test "$#" -eq 0; then
     CMD="\"zsh\""
 fi
 

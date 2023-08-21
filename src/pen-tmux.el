@@ -233,44 +233,41 @@ START and END can be in either order."
   (let ((current-prefix-arg '(4)))
     (pen-tm-nw (pen-cmd "pen-win" "ie" "$PEN/results/results_1667625716.9521382_05.11.22_91155942-917e-48d9-baad-bec94794036c/results_05.11.22__1667625720_91155942-917e-48d9-baad-bec94794036c_TeaH2/images/result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png"))))
 
+(defun pen-window (&optional wintype cmd nw_args input dir output_b)
+  (interactive)
+  (setq wintype (or wintype 'sps))
+  (if (major-mode-p 'calibredb-search-mode)
+      (setq dir (pen-cl-sn (concat "dirname " (pen-q (expand-file-name (calibredb-getattr (car (calibredb-find-candidate-at-point)) :file-path))) "") :chomp t)))
+  (let* ((s_wintype (sym2str wintype))
+         (fun (str2sym (concat "pen-e-" s_wintype))))
+    (if (and
+         (not output_b)
+         (>= (prefix-numeric-value current-prefix-arg) 8))
+        (funcall fun 'new-buffer-from-string)
+      (pen-tm-nw cmd s_wintype nw_args input dir output_b))))
+
 (defun pen-nw (&optional cmd nw_args input dir output_b)
   "Runs command in a sensible split"
   (interactive)
-  (if (and
-       (not output_b)
-       (>= (prefix-numeric-value current-prefix-arg) 8))
-      (pen-e-nw 'new-buffer-from-string)
-    (pen-tm-nw cmd "nw" nw_args input dir output_b)))
+  (pen-window 'nw cmd nw_args input dir output_b))
 (defalias 'nw 'pen-nw)
 
 (defun pen-sps (&optional cmd nw_args input dir output_b)
   "Runs command in a sensible split"
   (interactive)
-  (if (and
-       (not output_b)
-       (>= (prefix-numeric-value current-prefix-arg) 8))
-      (pen-e-sps 'new-buffer-from-string)
-    (pen-tm-nw cmd "sps" nw_args input dir)))
+  (pen-window 'sps cmd nw_args input dir output_b))
 (defalias 'pen-tm-sps 'pen-sps)
 
 (defun pen-sph (&optional cmd nw_args input dir output_b)
   "Runs command in a horizontal split"
   (interactive)
-  (if (and
-       (not output_b)
-       (>= (prefix-numeric-value current-prefix-arg) 8))
-      (pen-e-sph 'new-buffer-from-string)
-    (pen-tm-nw cmd "sph" nw_args input dir)))
+  (pen-window 'sph cmd nw_args input dir output_b))
 (defalias 'pen-tm-sph 'pen-sph)
 
 (defun pen-spv (&optional cmd nw_args input dir output_b)
   "Runs command in a vertical split"
   (interactive)
-  (if (and
-       (not output_b)
-       (>= (prefix-numeric-value current-prefix-arg) 8))
-      (pen-e-spv 'new-buffer-from-string)
-    (pen-tm-nw cmd "spv" nw_args input dir)))
+  (pen-window 'spv cmd nw_args input dir output_b))
 (defalias 'pen-tm-spv 'pen-spv)
 
 (defun run-line-or-region-in-tmux ()
@@ -380,6 +377,9 @@ START and END can be in either order."
               "M+1"
               nil listd dir nil t))
 
+(defun vvipe (stdin)
+  (tvipe stdin))
+
 (defun pfz (listd &optional dir)
   (pvipe listd "mfz -nv" dir t))
 
@@ -464,5 +464,9 @@ START and END can be in either order."
 
 (defun vwrap (input)
   (tpop "vwrap" input))
+
+(defun sttr (input)
+  (snc "sttr" input)
+  :tm_wincmd "nw")
 
 (provide 'pen-tmux)

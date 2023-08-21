@@ -4,7 +4,8 @@ export TTY
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 if ! test "$VIPIFY" = y && ! is_tty; then
-    tm vipe -wintype spv "vipify sttr"
+    # tm vipe -wintype spv "vipify sttr"
+    pfilter "vipify sttr"
 else
     if test "$VIPIFY" = "y"; then
         cat "$1" | /root/go/bin/sttr

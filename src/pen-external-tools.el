@@ -8,6 +8,7 @@
 
 (defun vipe (input)
   (interactive)  
-  (pen-nw "vipe" nil input nil t))
+  ;; (pen-nw "vipe" nil input nil t)
+  (pen-nw "vvipe" nil input nil t))
 
 (provide 'pen-external-tools)

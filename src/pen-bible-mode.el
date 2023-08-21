@@ -321,7 +321,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
            (text (s-replace-regexp "-[0-9].*" "" text))
            ;; Make this one work too
            ;; Lev.19:18
-           (text (s-replace-regexp "\\." " " text))
+           (text (s-replace-regexp "\\. \\?" " " text))
            (text (cond
                   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
                    text)
@@ -703,6 +703,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (find-file fp)))
 
 (defun bible-mode-get-notes-fp-for-verse (&optional ref)
+  (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
   (setq ref (or ref (bible-mode-get-link (thing-at-point 'line t))))
   (let* ((refslug (slugify (s-replace-regexp "," " " (s-replace-regexp "-" " to " (s-replace-regexp ":" " v" ref)))))
          (dp (f-join penconfdir "documents" "bible-notes" "verse"))
@@ -725,6 +726,19 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (f-mkdir dp)
     (find-file fp)))
 
+(defun view-notes-fp-verse (&optional ref)
+  (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
+  (setq ref (or ref (bible-mode-get-link (thing-at-point 'line t))))
+  ;; (tpop (cmd "less" "-rS") (cat (bible-mode-get-notes-fp-for-verse ref)))
+
+  (let ((fp (bible-mode-get-notes-fp-for-verse ref)))
+    (if (f-exists-p fp)
+        (if (f-empty-p fp)
+            (tpop (cmd "vimpager" (bible-mode-get-notes-fp-for-verse ref)))
+          (tpop (cmd "v" (bible-mode-get-notes-fp-for-verse ref))))
+      (tpop (cmd "v" (bible-mode-get-notes-fp-for-verse ref))))))
+
+(define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
 
