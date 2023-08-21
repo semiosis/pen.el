@@ -3650,7 +3650,8 @@ case "$f" in
         IFS= read -rd '' input < <(cat /dev/stdin)
 
         export HAS_STDOUT
-        sout="$(set -o pipefail; printf -- "%s" "$input" | pen-tm spv -noerror "pen-f filter-with-fzf" | cat)"
+        # sout="$(set -o pipefail; printf -- "%s" "$input" | pen-tm spv -noerror "pen-f filter-with-fzf" | cat)"
+        sout="$(set -o pipefail; printf -- "%s" "$input" | pfilter | cat)"
         ret="$?"
 
         if test "$ret" -eq 0; then

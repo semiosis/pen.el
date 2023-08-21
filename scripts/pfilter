@@ -4,8 +4,8 @@ export TTY
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 vipe_cmd="$@"
-: "${vipe_cmd:="vvipe"}"
+: "${vipe_cmd:="pen-f filter-with-fzf"}"
 
 # CMD="bash -c $(cmd "$vipe_cmd")"
 
-toggle-tmux-popup -x M+1 -y M+1 -w 90% -h 30% "$vipe_cmd" | cat
+toggle-tmux-popup -x C -y C -w 90% -h 90% "$vipe_cmd" | cat

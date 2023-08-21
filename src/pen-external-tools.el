@@ -6,8 +6,8 @@
   (interactive)  
   (pen-nw "jiq" nil json_input nil t))
 
-(defun vipe (json_input)
+(defun vipe (input)
   (interactive)  
-  (pen-nw "vipe" nil json_input nil t))
+  (pen-nw "vipe" nil input nil t))
 
 (provide 'pen-external-tools)
