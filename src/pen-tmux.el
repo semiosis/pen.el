@@ -433,20 +433,36 @@ START and END can be in either order."
  (follow-bible-link (pfz (snc "list-bible-books"))))
 
 (cl-defun cl-tmux-popup (shcmd
+                         &optional stdin
                          &key width_pc
                          &key height_pc
                          &key x_pos
                          &key y_pos
                          &key hide_status_b
-                         &key stdin
                          &key dir
                          &key noborder
                          &key output_b)
   (tmux-popup shcmd width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b))
 
-(defalias 'tpop 'cl-tmux-popup)
+(cl-defun tpop (shcmd
+                &optional stdin
+                &key width_pc
+                &key height_pc
+                &key x_pos
+                &key y_pos
+                &key show_status_b
+                &key dir
+                &key noborder
+                &key output_b)
+  "Behaviour is a little different from cl-tmux-popup, as the status bar is hidden by default"
+  (tmux-popup shcmd width_pc height_pc x_pos y_pos (not show_status_b) stdin dir noborder output_b))
+
+;; (defalias 'tpop 'cl-tmux-popup)
 
 (comment
  (tpop "v" :stdin "hello"))
+
+(defun vwrap (input)
+  (tpop "vwrap" input))
 
 (provide 'pen-tmux)
