@@ -161,7 +161,7 @@ stdin_exists() {
 
 if stdin_exists; then
     input_fp="$(cat | tf txt)"
-    CMD="tmux set-option -t popup: status off; cat \"$input_fp\" | $CMD"
+    CMD="cat \"$input_fp\" | $CMD"
 fi
 
 if test "$hide_status" = "y"; then
