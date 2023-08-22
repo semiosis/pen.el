@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fp="$1"
+test -f "$fp" || exit 1
+
+rp="$(realpath "$fp")"
+fn=$(basename -- "$fp")
+dn=$(dirname "$fp")
+ext="${fn##*.}"
+mant="${fn%.*}"
+
+slug="$(printf -- "%s\n" "$fn" | tr '\n' ' ' | sed 's/ $//' | slugify)"
+
+dir="$(td "book_$slug")"
+
+unzip -d "$dir" "$rp"
+zcd "$dir"

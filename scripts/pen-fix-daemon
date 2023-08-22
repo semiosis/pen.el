@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+set -x
+
 SOCKET="$1"
 test -n "$SOCKET" || exit 1
 

@@ -42,7 +42,7 @@
 ;; (advice-add 'bible-mode--exec-diatheke :around #'bible-mode-fun-around-advice)
 ;; (advice-remove 'bible-mode--exec-diatheke #'bible-mode-fun-around-advice)
 
-(defun bible-mode--open-search(query searchmode &optional module)
+(defun bible-mode--open-search(query searchmode &optional module range)
   "Opens a search buffer of QUERY using SEARCHMODE."
   (let
       (
@@ -51,17 +51,52 @@
     (bible-search-mode)
     (setq bible-mode-book-module (or module default-bible-mode-book-module))
     ;; (lo module)
-    (bible-mode--display-search query searchmode bible-mode-book-module)
+    (bible-mode--display-search query searchmode bible-mode-book-module range)
     (pop-to-buffer buf nil t)))
 
-(defun bible-mode--display-search(query searchmode &optional module)
+(defun bible-mode--exec-diatheke(query &optional filter format searchtype module range)
+  "Executes `diatheke' with specified query options, returning the output."
+  (with-temp-buffer
+    (let (
+          (args (list "diatheke"
+                      nil
+                      (current-buffer)
+                      t
+                      "-b" (or module bible-mode-book-module))))
+      (if filter (setq args (append args (list
+                                          "-o" (pcase filter
+                                                 ("jesus" "w"))
+                                          ))))
+      (if searchtype (setq args (append args (list
+                                              "-s" (pcase searchtype
+                                                     ("lucene" "lucene")
+                                                     ("phrase" "phrase")
+                                                     )
+                                              ))))
+      (setq args (append args
+                         (if range
+                             (list
+                              "-r" range)
+                           nil)
+                         (list
+                          "-o" (pcase filter
+                                 (_ "w"))
+                          "-f" (pcase format
+                                 ("plain" "plain")
+                                 (_ "internal"))
+                          "-k" query
+                          )))
+      (apply 'call-process args))
+    (buffer-string)))
+
+(defun bible-mode--display-search(query searchmode &optional module range)
   "Renders results of search QUERY from SEARHCMODE"
   (setq buffer-read-only nil)
   (erase-buffer)
 
   (if (catch 'no-results (let* (
                                 (term query)
-                                (result (string-trim (replace-regexp-in-string "Entries .+?--" "" (bible-mode--exec-diatheke query nil "plain" searchmode module))))
+                                (result (string-trim (replace-regexp-in-string "Entries .+?--" "" (bible-mode--exec-diatheke query nil "plain" searchmode module range))))
                                 (match 0)
                                 (matchstr "")
                                 (verses "")
@@ -646,24 +681,30 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (bible-mode--open-search query searchmode (or module default-bible-mode-book-module)))))
 
 (defun bible-search-lucene (query &optional module)
-  (interactive  (list (pen-ask (pen-selection) "Bible Search: ")))
+  (interactive  (list (pen-ask (pen-selection) "Bible Search (lucene): ")))
   ;; lucene or phrase
 
   (bible-mode--open-search query "lucene" (or module default-bible-mode-book-module)))
 
-(defun bible-search-phrase (query &optional module)
-  (interactive  (list (pen-ask (pen-selection) "Bible Search: ")))
+(defun bible-search-phrase (query &optional module range)
+  (interactive
+   (if (>= (prefix-numeric-value current-prefix-arg) 4)
+       (let ((book (fz-bible-book "Bible Search (book): "))
+             (query (pen-ask (pen-selection) "Bible Search: ")))
+         (list query nil book))
+     (list (pen-ask (pen-selection) "Bible Search: ") nil nil)))
   ;; lucene or phrase
 
-  (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module)))
+  (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module) range))
 
 (defun bible-search-mode-select-book ()
   (interactive)
   (nasb)
   (bible-mode-select-book))
 
-(defun fz-bible-book ()
-  (completing-read "Book: " bible-mode-book-chapters nil t))
+(defun fz-bible-book (prompt)
+  (setq prompt (or prompt "Book: "))
+  (completing-read prompt bible-mode-book-chapters nil t))
 
 (defun fz-bible-version ()
   (completing-read "Module: " (bible-mode--list-biblical-modules)))
@@ -751,11 +792,13 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map "g" 'bible-mode--display)
 (define-key bible-mode-map "c" 'bible-mode-select-chapter)
 (define-key bible-mode-map "s" 'bible-search-phrase)
+(define-key bible-mode-map "S" 'bible-search-lucene)
 (define-key bible-mode-map "m" 'bible-mode-select-module)
 (define-key bible-mode-map "x" 'bible-mode-split-display)
 (define-key bible-mode-map "l" 'bible-mode-lookup-ref)
 
 (define-key bible-search-mode-map "s" 'bible-search-phrase)
+(define-key bible-search-mode-map "S" 'bible-search-lucene)
 (define-key bible-search-mode-map "b" 'bible-search-mode-select-book)
 (define-key bible-search-mode-map "g" nil)
 

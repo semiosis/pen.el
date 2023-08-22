@@ -17,10 +17,19 @@ fi
 
 exec <&1
 
+PRINTOUT=y
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -E) {
         DO_EXEC=y
+        shift
+    }
+    ;;
+
+    # Print output after exiting
+    -nopr) {
+        PRINTOUT=n
         shift
     }
     ;;
@@ -38,6 +47,12 @@ if test -n "$input_fp"; then
     CMD="cat $(cmd-nice-posix "$input_fp") | $CMD"
 fi
 
+if test "$PRINTOUT" = "y"; then
+    tf_paneprintout="$(ux tf paneprintout || echo /dev/null)"
+    trap "rm \"$tf_paneprintout\" 2>/dev/null" 0
+    CMD="$CMD; tm capp > \"$tf_paneprintout\""
+fi
+
 slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
 
 if test "$TERM" = "dumb"; then
@@ -48,3 +63,5 @@ else
     n="tmwr-$slug-$h"
     tmux attach -t "$n" 2>/dev/null || tmux new -s "$n" "$CMD"
 fi
+
+test -f "$tf_paneprintout" && cat "$tf_paneprintout" | hls spacegrey

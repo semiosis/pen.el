@@ -10,34 +10,34 @@ colour_name_to_number() {
 
     case "$colour_name" in
         red) c=196;;
-        dred|redd) c=88;;
+        darkred|dred|redd) c=88;;
 
         lgreen) c=114;;
         green) c=34;;
-        dgreen|greend) c=28;;
+        darkgreen|dgreen|greend) c=28;;
 
         yellow) c=226;;
-        yellowd) c=100;;
+        darkyellow|yellowd) c=100;;
 
         blue) c=4;;
-        dblue|blued) c=19;;
+        darkblue|dblue|blued) c=19;;
 
         purple) c=171;;
-        dpurple|purpled) c=53;;
+        darkpurple|dpurple|purpled) c=53;;
 
         orange) c=202;;
 
         teal) c=45;;
-        dteal|teald) c=31;;
+        darkteal|dteal|teald) c=31;;
 
         white) c=255;;
-        dwhite|whited) c=253;;
+        darkwhite|dwhite|whited) c=253;;
 
         black) c=000;;
 
         pink) c=205;;
 
-        dgrey|spacegrey) c=240;;
+        darkgrey|dgrey|spacegrey) c=240;;
 
         nblack|nearblack) c=235;;
 

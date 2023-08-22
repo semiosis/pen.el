@@ -2666,8 +2666,18 @@ case "$f" in
             cat "$np"
         else
             full_lines="$(wc -l "$np" | awk '{print $1}')"
+            # Where the cursor was
             final_x=$x
             final_y="$(( y + 1 ))"
+
+            # the actual length of the cursor line
+            length_cursor_line="$(cat "$np" | sed -n "${final_y}p" | wc -c)"
+
+            # echo "$final_y $length_cursor_line" | tv -nw &>/dev/null
+            # if test "$final_x" -gt "$length_cursor_line" && test "$SCROLLBACK" = "0"; then
+            #     final_x="$length_cursor_line"
+            # fi
+
             pane_id="$(tmux neww -t "$CALLER_TARGET:" -F "#{pane_id}" -P -n capture "stty stop undef; stty start undef; TTY= GOTO_COLUMN=$final_x GOTO_LINE=$final_y $EDITOR \"$np\"")"
 
             if test $DO_SEND_KEYS = "pen-f" && test "$EDITOR" = "pen-v"; then

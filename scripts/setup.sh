@@ -1387,3 +1387,7 @@ agi telnet
 pip3.8 install ytps
 pip3.8 install youtube-transcript-api
 pip3.8 install trafilatura
+
+# Haskell - but is this OK for Pen.el? Will it take much space to install?
+# I guess I'll find out.
+cabal install xml-to-json
