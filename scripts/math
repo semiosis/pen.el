@@ -1,0 +1,128 @@
+#!/bin/bash
+export TTY
+
+# Remember
+# hsq "math calc" | q -lf | xa cat1
+
+# Math functions
+
+# https://rosettacode.org/wiki/Shell_one-liner
+
+e() {
+    # https://rosettacode.org/wiki/Real_constants_and_functions#Haskell
+
+    arg="$1"
+    : ${arg:="1"}
+
+    ghc -e "putStrLn \$ show \$ exp $arg"
+
+    # awk 'BEGIN {print exp(1)}'
+
+    return 0
+}
+
+pi() {
+    ghc -e "putStrLn \$ show \$ pi"
+
+    # awk 'BEGIN {print atan2(0, -1)}'
+
+    return 0
+}
+
+human_to_bytes() {
+    # TODO Handle both
+
+    # echo "155.52 KiB" | human2bytes
+
+    awk1 | sed -e 's/ //' -e 's/B$//' | while IFS=$'\n' read -r line; do
+        if printf -- "%s\n" "$line" | grep -q -P 'i$'; then
+            printf -- "%s\n" "$line" | numfmt --from=iec-i
+        else
+            printf -- "%s\n" "$line" | numfmt --from=iec
+        fi
+    done
+
+    # iec ==> KB
+    # iec-i ==> KiB
+
+    # numfmt --from=iec
+    # numfmt --from=iec-i
+    return 0
+}
+
+bytes_to_human() {
+    scrape '\d+' | xargs -L1 numfmt --to=iec-i --suffix=B --padding=7 | s efs
+    return 0
+}
+ 
+# ascii() {
+#     char="$1"
+#     shift
+# 
+#     # /usr/bin/ascii "$char" | scrape "decimal [0-9]+" | head -n 1 | cut -d ' ' -f  2 | sed 's/^0\+//'
+# 
+#     ord "$char"
+#     # chr
+# }
+
+# int to ascii char
+chr () {
+        printf "\\$(printf '%03o' "$1")"
+}
+
+# ascii char to int
+ord () {
+        LC_CTYPE=C printf '%d' "'$1"
+}
+
+calc() {
+    func=${FUNCNAME[0]}
+
+    ( hs "$(basename "$0") $func" "$@" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+    # CMD="$(cmd "$@")"
+
+    # Flatten it. Don't want extra quotes
+    CMD="$@"
+
+    # set -xv
+    apply "math solve" "$CMD" | {
+        sed 's/,.*//' # Get rid of everything after ',' "67.5, with fractions it is: 135/2"
+    }
+
+    return 0
+}
+
+solve() {
+    # mathomatic <<< "$2"
+    # echo "5 * 5" | math solve
+
+    wrlp mathomatic -r -q -d -c | sed '/Calculating.../d' | sed 's/^ answer = //'
+    # xa mathomatic -q <<< "$2"
+
+    return 0
+}
+
+tau() {
+    ghc -e "putStrLn \$ show \$ pi * 2"
+
+    return 0
+}
+
+sum() {
+    paste -s -d+ - | bc
+    # s join + | bc
+    # dm sum 1 # sum column 1
+
+    return 0
+}
+
+command="$1"
+shift
+
+if [ -z "$command" ]; then
+    exit 0
+fi
+
+# Can't use eval here or it will un-group arguments"
+"$command" "$@"

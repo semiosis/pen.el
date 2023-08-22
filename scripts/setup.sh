@@ -1404,3 +1404,5 @@ pip install defusedxml
 (
 cd "$(gc "https://github.com/eliask/xml2json")"
 )
+
+agi coreutils
