@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
 # toggle-tmux-popup -x M -y M -w 50% -h 50% bash -c "list-bible-books | mfz -nv"
 # toggle-tmux-popup -x M+10 -y M+5 -w 50% -h 50% bash -c "list-bible-books | mfz"
 

@@ -782,7 +782,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
-
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
 
@@ -802,6 +801,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-search-mode-map "b" 'bible-search-mode-select-book)
 (define-key bible-search-mode-map "g" nil)
 
+(define-key bible-search-mode-map (kbd "M-e") 'view-notes-fp-verse)
+(define-key bible-search-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
+(define-key bible-search-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-search-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-search-mode-map (kbd "w") 'bible-mode-copy-link)
 

@@ -124,12 +124,33 @@ argument, prompt for a regular expression using `read-regexp'."
 
   ;; I must ignore errors for everything or the frame wont even start for daemons
   ;; Be careful
-  (set-face-attribute
-   'menu nil
-   :inverse-video nil
-   :background "#1565c0"
-   :foreground "#64b5f6"
-   :bold t)
+  (progn
+    (set-face-attribute
+     'menu nil
+     :inverse-video nil
+     :background "#005FAF"
+     :foreground "#64b5f6"
+     :bold t)
+
+    (set-face-attribute
+     'tty-menu-disabled-face nil
+     :inverse-video nil
+     :background "#1565c0"
+     :foreground "lightgray"
+     :bold t)
+
+    (set-face-attribute
+     'tty-menu-enabled-face nil
+     :inverse-video nil
+     :background "#1565c0"
+     :foreground "#f9a822"
+     :bold t)
+
+    (set-face-attribute
+     'tty-menu-selected-face nil
+     :inverse-video nil
+     :background "red"
+     :bold t))
 
   (set-face-attribute
    'mode-line nil

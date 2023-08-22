@@ -52,6 +52,9 @@
          ,(dff (eww (concat "http://reddit.com/" (pen-regex-at-point-p "r/[a-z]+")))))
         (((derived-mode-p 'eww-mode))
          (eww-open-browsh))
+        (((derived-mode-p 'calibredb-search-mode))
+         (pen-sph
+          calibre-open-file-externally))
         (((string-equal "Haskell" (pen-snc "onefetch --output json | jq -r \".dominantLanguage\"")))
          ,(list (dff (pen-sps "ghcid"))))
         (((or (string-match-p "/glossary.txt$" (or (get-path-nocreate) ""))

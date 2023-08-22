@@ -16,5 +16,25 @@ slug="$(printf -- "%s\n" "$fn" | tr '\n' ' ' | sed 's/ $//' | slugify)"
 
 dir="$(td "book_$slug")"
 
-unzip -d "$dir" "$rp"
+unzip -d "$dir" "$rp" &>/dev/null || exit 1
 zcd "$dir"
+exit
+
+cd "$dir"
+
+# This is the order
+cat OEBPS/content.opf |
+    grep "<itemref " |
+    grep -o "\"[^\"]\+\"" |
+    urldecode | uq -l |
+        pavs
+
+# This is an alist of file path to id
+cat OEBPS/content.opf |
+    grep "<item " |
+    grep -o "\"[^\"]\+\" id=\"[^\"]\+\"" |
+    urldecode | sed 's/^"\([^"]\+\)" id="\([^"]\+\)"/\2\t\1/' |
+    grep -P ".xhtml$" |
+        pavs
+
+test -d "$dir" && rm -rf "$dir"

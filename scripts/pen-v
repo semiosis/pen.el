@@ -150,7 +150,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -c) {
-
         if ! test "$parent_sn" = "rtcmd"; then
             extra_commands+="|$2"
         fi

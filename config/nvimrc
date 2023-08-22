@@ -1255,8 +1255,9 @@ fun! GeneralSyntax()
     syntax match buildfiles "\c\<cabal\>"
     syntax match buildfiles "\c\<ghc-pkg\>"
     syntax match gitRtcPackage "=== \d\+\/\d\+\( \w\+\)\+"
-    syntax match kashyap "(\@<=\([a-z-]\+\)\( \|$\)\@="
-    syntax match justin "(\@<=:\([a-z-]\+\)\( \|$\)\@="
+    " emacs keywords - fist element of sexp
+    syntax match kashyap "(\@<=\([a-z:-]\+\)\( \|$\)\@="
+    syntax match justin "(\@<=:\([a-z:-]\+\)\( \|$\)\@="
     syntax match toby "(\@<=\(unless\|def[a-z]\+\|add-to-list\|if\|let\|and\|not\|set\|setq\|or\|when\)\( \|$\)\@="
     syntax match diffRemove "|\@<=---\@!"
     syntax match morediscrete "\<Domain Users\>"

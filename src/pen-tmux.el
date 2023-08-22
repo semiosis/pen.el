@@ -237,7 +237,8 @@ START and END can be in either order."
   (interactive)
   (setq wintype (or wintype 'sps))
   (if (major-mode-p 'calibredb-search-mode)
-      (setq dir (pen-cl-sn (concat "dirname " (pen-q (expand-file-name (calibredb-getattr (car (calibredb-find-candidate-at-point)) :file-path))) "") :chomp t)))
+      (setq dir (pen-cl-sn (concat "dirname " (pen-q (expand-file-name
+                                                      (or (calibredb-getattr (car (calibredb-find-candidate-at-point)) :file-path) ""))) "") :chomp t)))
   (let* ((s_wintype (sym2str wintype))
          (fun (str2sym (concat "pen-e-" s_wintype))))
     (if (and

@@ -2671,7 +2671,7 @@ case "$f" in
             final_y="$(( y + 1 ))"
 
             # the actual length of the cursor line
-            length_cursor_line="$(cat "$np" | sed -n "${final_y}p" | wc -c)"
+            # length_cursor_line="$(cat "$np" | sed -n "${final_y}p" | wc -c)"
 
             # echo "$final_y $length_cursor_line" | tv -nw &>/dev/null
             # if test "$final_x" -gt "$length_cursor_line" && test "$SCROLLBACK" = "0"; then

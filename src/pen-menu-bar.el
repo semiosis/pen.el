@@ -1,5 +1,5 @@
 ;; Known issues:
-;; - To select from a menu, while in the terminal
+;; - DISCARD To select from a menu, while in the terminal
 ;;   you must drag the mouse across the menu item you want
 
 (tool-bar-mode -1) ; "M-x tool-bar-mode"
@@ -1353,13 +1353,18 @@
                     (previous-line . tty-menu-prev-item)
                     (newline . tty-menu-select)
                     (newline-and-indent . tty-menu-select)
-		                (menu-bar-open . tty-menu-exit)))
+		            (menu-bar-open . tty-menu-exit)))
       (substitute-key-definition (car bind) (cdr bind)
                                  map (current-global-map)))
 
     ;; The bindings of menu-bar items are so that clicking on the menu
     ;; bar when a menu is already shown pops down that menu.
     (define-key map [menu-bar t] 'tty-menu-exit)
+    (define-key map [?\C-g] 'tty-menu-exit)
+    (define-key map [?\C-c] 'tty-menu-exit)
+    
+    ;; Need 2 escapes, or it breaks arrow keys
+    (define-key map (kbd "ESC ESC") 'tty-menu-exit)
 
     (define-key map [?\C-r] 'tty-menu-select)
     (define-key map [?\C-j] 'tty-menu-select)
@@ -1385,7 +1390,11 @@
     (menu-bar-define-mouse-key map 'S-drag-mouse-3 'tty-menu-prev-item)
     ;; The down-mouse events must be bound to tty-menu-ignore, so that
     ;; only releasing the mouse button pops up the menu.
-    (menu-bar-define-mouse-key map 'down-mouse-1 'tty-menu-ignore)
+    ;; (menu-bar-define-mouse-key map 'down-mouse-1 'tty-menu-ignore)
+    ;; This is the fix
+    ;; menu-bar.el.gz
+    (menu-bar-define-mouse-key map 'down-mouse-1 'tty-menu-mouse-movement)
+    ;; (menu-bar-define-mouse-key map 'down-mouse-1 'tty-menu-select)
     ;; Don't change this until I can figure it out properly
     ;; For the moment, if in the terminal, drag across a menu item to select it
     ;; (menu-bar-define-mouse-key map 'down-mouse-1 'tty-menu-select)

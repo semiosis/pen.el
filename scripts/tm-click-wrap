@@ -1,27 +1,44 @@
 #!/bin/bash
 export TTY
 
-swidth="$(tmux display -t "$CALLER_TARGET" -p "#{client_width}")"
-sheight="$(tmux display -t "$CALLER_TARGET" -p "#{client_height}")"
+# echo "$CALLER_TARGET"
+
+swidth="$(tmux display -t "$CALLER_TARGET:" -p "#{client_width}")"
+sheight="$(tmux display -t "$CALLER_TARGET:" -p "#{client_height}")"
 
 # since upgrading from tmux 2.8 to 3.4, this line is no longer needed
 # sheight="$(( sheight + 2 ))"
 
 server="$(pen-tm-get-server)"
 
-# Don't use tm attach, to make this faster.
-tmux \
-    new-session -d \
-        -x "$swidth" \
-        -y "$sheight" \
-        -A \
-        -s wrap \
+if tmux -V | grep -q 'tmux 3.0'; then
+    # Don't use tm attach, to make this faster.
+    tmux -L "$server" \
+        new-session -d \
+            -x "$swidth" \
+            -y "$sheight" \
+            -A \
+            -s wrap \
         \; \
-    resize-window -t wrap: -x "$swidth" -y "$sheight" \
-    \; \
-    respawnp -k \
-        -t "wrap:1" \
-        "TMUX= tmux -L $server attach -t \"$CALLER_TARGET\""
+        respawnp -k \
+            -t "wrap:1" \
+            "TMUX= tmux -L $server attach -t \"$CALLER_TARGET:\""
+# elif tmux -V | grep -q 'tmux next-3.4'; then
+else
+    # Don't use tm attach, to make this faster.
+    tmux -L "$server" \
+        new-session -d \
+            -x "$swidth" \
+            -y "$sheight" \
+            -A \
+            -s wrap \
+            \; \
+        resize-window -t wrap: -x "$swidth" -y "$sheight" \
+        \; \
+        respawnp -k \
+            -t "wrap:1" \
+            "TMUX= tmux -L $server attach -t \"$CALLER_TARGET:\""
+fi
 
 [ -n "$1" ] && x="$1" && shift
 [ -n "$1" ] && y="$1" && shift

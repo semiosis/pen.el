@@ -1342,6 +1342,8 @@ case "$f" in
             :
         fi
 
+        # This just fixes scratch everytime if it may have been closed,
+        # but doesn't actually switch to scratch
         elisp+="(get-buffer-create $(cmd-nice-posix "*scratch*"))"
 
         if [ -n "$GOTO_BUFFER" ]; then

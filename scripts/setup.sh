@@ -1390,4 +1390,17 @@ pip3.8 install trafilatura
 
 # Haskell - but is this OK for Pen.el? Will it take much space to install?
 # I guess I'll find out.
-cabal install xml-to-json
+# cabal install xml-to-json
+
+cargo install cargo-quickinstall
+# xml-to-json STILL doesn't install
+# cargo-quickinstall xml-to-json
+cargo-quickinstall ripgrep
+
+agi xmlstarlet
+
+pip install defusedxml
+
+(
+cd "$(gc "https://github.com/eliask/xml2json")"
+)

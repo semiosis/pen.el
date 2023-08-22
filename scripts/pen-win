@@ -259,7 +259,8 @@ EOF
 
         if test "$ISTTY" = y; then
             if test "$USETTY" = y; then
-                eval "unbuffer pen-timg $path" | less -rS
+                # eval "unbuffer pen-timg $path" | less -rS
+                eval "pen-timg $path" | less -rS
             elif ! test "$USETTY" = y && yn "Use eog?"; then
                 set -m
                 pen-ns "1:$1"
@@ -329,9 +330,11 @@ EOF
         if test "$ISTTY" = y; then
             if test "$USETTY" = y; then
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
-                    eval "unbuffer pen-timg $qpath"
+                    # eval "unbuffer pen-timg $qpath"
+                    eval "pen-timg $qpath"
                 else
-                    eval "unbuffer pen-timg --frames=1 --clear -E $qpath" | less -rS
+                    # eval "unbuffer pen-timg --frames=1 --clear -E $qpath" | less -rS
+                    eval "pen-timg --frames=1 --clear -E $qpath" | less -rS
                 fi
             elif ! test "$USETTY" = y && yn "Use feh?"; then
                 set -m
@@ -344,17 +347,22 @@ EOF
                 fi
             else
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
-                    eval "unbuffer pen-timg $qpath"
+                    # eval "unbuffer pen-timg $qpath"
+                    eval "pen-timg $qpath"
                 else
-                    eval "unbuffer pen-timg --frames=1 --clear -E $qpath" | less -rS
+                    # The new tmux can't handle unbuffer here
+                    # eval "unbuffer pen-timg --frames=1 --clear -E $qpath" # | less -rS
+                    eval "pen-timg --frames=1 --clear -E $qpath" | less -rS
                 fi
             fi
         else
             if test "$USETTY" = y; then
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
-                    pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
+                    # pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
+                    pen-sps -E "pen-timg $qpath | tless -rS +F"
                 else
-                    pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
+                    # pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
+                    pen-sps -E "pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
                 fi
             elif ! test "$USETTY" = y && pen-xterm pen-yn "Use feh?"; then
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
@@ -364,9 +372,11 @@ EOF
                 fi
             else
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
-                    pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
+                    # pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
+                    pen-sps -E "pen-timg $qpath | tless -rS +F"
                 else
-                    pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
+                    # pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
+                    pen-sps -E "pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
                 fi
             fi
         fi
