@@ -5,4 +5,10 @@ export TTY
 
 test -f "/usr/local/bin/cli-chess" || pyf "cli-chess" &>/dev/null
 
+: "${LICHESS_TOKEN:="$(oci pen-rc .lichess_token)"}"
+
+if test -n "$LICHESS_TOKEN"; then
+    set -- --token "$LICHESS_TOKEN" "$@"
+fi
+
 /usr/local/bin/cli-chess "$@"

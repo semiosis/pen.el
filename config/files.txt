@@ -332,3 +332,5 @@ $HOME/learn-functions/prolog/learned.txt
 $HOME/.elinks/devtools.py
 $HOME/.elinks/hooks.py
 $HOME/.elinks/rules.py
+$HOME/.config/cli-chess/custom_style.py
+$HOME/.config/cli-chess/config.ini

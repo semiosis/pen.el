@@ -135,7 +135,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -compile) {
         cd $HOME/source/git/vim-ace
 
-        ./configure --prefix=$HOME/local --with-features=huge --enable-cscope --enable-multibyte --with-x --enable-rubyinterp=yes --enable-perlinterp=yes --enable-pythoninterp=yes
+        ./configure --prefix=$HOME/local \
+            --with-features=huge \
+            --enable-cscope \
+            --enable-multibyte \
+            --with-x \
+            --enable-rubyinterp=yes \
+            --enable-perlinterp=yes \
+            --enable-pythoninterp=yes
 
         make -j8
         sudo make install

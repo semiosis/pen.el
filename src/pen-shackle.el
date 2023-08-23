@@ -42,6 +42,20 @@
            (when (window-splittable-p window)
              'below))))))
 
+(defun lsp-help-detect-mode (buffer alist plist)
+  (shackle--display-buffer-popup-window buffer alist plist)
+  (cond
+   ((re-match-p "```" (buffer-string)) (markdown-mode)))
+
+  (read-only-mode t)
+
+  ;; https://www.masteringemacs.org/article/mastering-key-bindings-emacs
+
+  (local-set-key "q" 'quit-window)
+
+  ;; Must end in nil
+  nil)
+
 (use-package shackle
   :if (not (bound-and-true-p disable-pkg-shackle))
   :config
@@ -141,7 +155,7 @@
             ("*Apropos*" :ignore nil :select t :same t)
             ("*prodigy*" :select t :same t)
             ("*lsp-diagnostics*" :select t :same t)
-            ("*lsp-help*" :select t :same nil)
+            ("*lsp-help*" :select t :same nil :custom lsp-help-detect-mode)
             ;; ("*Shell Command Output*" :select nil)
             ("*Shell Command Output*" :ignore t :select nil :same nil)
             ("\\*Async Shell.*" :regexp t :ignore t)
