@@ -43,5 +43,6 @@ if test "$use_xterm_color" = "y"; then
 else
     printf -- "%s" "$banner"
 fi
+    penelfonts -f smbraille.tlf Genesis 32:30 | lolcat
 echo
 ) | less -rS

@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# github author/repo may need adjustment
+test -f "${GOPATH%%:*}/bin/up" || go install github.com/antonmedv/walk@latest &>/dev/null
+
+# nvc env EDITOR="zrepl -0 xc -P" ${GOPATH%%:*}/bin/walk "$@"
+nvt env EDITOR="zcdf" ${GOPATH%%:*}/bin/walk "$@"
+# nvt env EDITOR="cmdv" ${GOPATH%%:*}/bin/walk "$@"

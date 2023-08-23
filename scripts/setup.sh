@@ -1405,4 +1405,9 @@ pip install defusedxml
 cd "$(gc "https://github.com/eliask/xml2json")"
 )
 
+agi nvi
 agi coreutils
+
+go install github.com/antonmedv/walk@latest
+
+ https://github.com/xero/figlet-fonts

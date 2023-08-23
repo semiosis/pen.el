@@ -1,6 +1,28 @@
 #!/bin/bash
 export TTY
 
+sn="$(basename -- "$0")"
+
+case "$sn" in
+    zcdf) {
+        do_zreplf=y
+    }
+    ;;
+
+    *)
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -f|-zreplf) {
+        do_zreplf=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 is_tty() {
     # If stout is a tty
     [[ -t 1 ]]
@@ -16,7 +38,17 @@ else
 fi
 
 if is_tty; then
-    CWD="$dn" zsh
+    if test "$do_zreplf" = "y"; then
+        rp="$(realpath "$fp")"
+        fn=$(basename -- "$rp")
+        dn=$(dirname "$rp")
+        ext="${fn##*.}"
+        mant="${fn%.*}"
+
+        zrepl -cd "$dn" -0 "$fn"
+    else
+        CWD="$dn" zsh
+    fi
 else
     echo "$dn"
 fi

@@ -178,7 +178,7 @@ case "$opt" in
                 else
                     bytes2human
                 fi
-            } | remove-starting-and-trailing-whitespace.sh
+            } | pen-str remove-starting-and-trailing-whitespace
         done
     }
     ;;

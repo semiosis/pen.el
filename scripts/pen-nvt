@@ -22,11 +22,16 @@ EVAL=n
 precmd=
 wd=
 use_pak=
-ttype=vt100
+# ttype=vt100
+# ttype=22
+ttype=2i
 lines=
 cols=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-    -2) { ttype=2; shift; }; ;;
+    -2) { ttype=-2; shift; }; ;;
+    -22) { ttype=-22; shift; }; ;;
+    -2i) { ttype=-2i; shift; }; ;;
+    -2e) { ttype=-2e; shift; }; ;;
     -b+w) { ttype=b+w; shift; }; ;;
     -vt100) { ttype=vt100; shift; }; ;;
 
@@ -84,16 +89,39 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+: "${prefix_external_cmd:="y"}"
+
 case "$ttype" in
-    -2) {
+    2|-2) {
         # precmd="TERM=xterm-2color "
         precmd="export TERM=screen-2color; "
         # precmd="TERM=vt100 "
     }
     ;;
 
+    2e|-2e) {
+        precmd="export TERM=screen-2color; "
+        prefix_external_cmd=y
+        prefix_internal_cmd=n
+    }
+    ;;
+
+    2i|-2i) {
+        precmd="export TERM=screen-2color; "
+        prefix_external_cmd=n
+        prefix_internal_cmd=y
+    }
+    ;;
+
+    22|-22) {
+        precmd="export TERM=screen-2color; "
+        prefix_internal_cmd=y
+        prefix_internal_cmd=y
+    }
+    ;;
+
     vt100) { precmd="export TERM=vt100; "; }; ;;
-    b+w) { precmd="export TERM=xterm-2color; "; shift; }; ;;
+    b+w) { precmd="export TERM=xterm-2color; "; }; ;;
 
     *)
 esac
@@ -125,6 +153,14 @@ fi
 # This broke irssi when it was above the eval ^^
 CMD="export INSIDE_NEOVIM=y; $CMD"
 
+if test "$prefix_internal_cmd" = "y"; then
+    CMD="$precmd $CMD"
+fi
+
+if test "$prefix_external_cmd" = "y"; then
+    external_precmd="$precmd"
+fi
+
 if test -z "$cols" || test -z "$rows"; then
     eval `resize`
 fi
@@ -144,6 +180,7 @@ fi
 
 # Perhaps I should make q escape the $
 # Don't use the session_id because of the $. Instead, use the name
+
 child_session_name="$(tmux new -s "$(uuid)" -F "#{session_name}" -P -d -n "protected" "stty stop undef; stty start undef; $CMD")" # holds the program
 tmux set -t "$child_session_name" status-left "$(printf -- "%s" "$child_session_name" | displayedname)"
 
@@ -168,7 +205,7 @@ fi
 if [ -n "$parent_session_name" ]; then
     # Even with single quotes here, the $ sign was breaking it
     # somewhere. So use uuid
-    cmd="export INSIDE_NEOVIM=y; nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd tmux attach -t ${child_session_name}:"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
+    cmd="export INSIDE_NEOVIM=y; nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$external_precmd tmux attach -t ${child_session_name}:"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
     # echo "$cmd" | tv
     tmux neww -t "${parent_session_name}:" -n "nv" "$cmd"
 fi

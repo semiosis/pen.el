@@ -195,7 +195,7 @@ else
                 "-x$x" "-y$y" "-w$width" "-h$height" \
                 -E "tmux attach -t popup 2>/dev/null || \
                 tmux new -s popup env \"CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION\" \
-                bash -c $(cmd "$CMD")"
+                bash -c $(cmd ". ~/.profile; $CMD")"
         }
         ;;
 

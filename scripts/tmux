@@ -4,5 +4,6 @@ export TTY
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 test -f "/root/.local/bin/tmux" && : "${bin:="/root/.local/bin/tmux"}"
+test -f "$HOME/local/bin/tmux" && : "${bin:="$HOME/local/bin/tmux"}"
 test -f "/usr/bin/tmux" && : "${bin:="/usr/bin/tmux"}"
 "$bin" "$@"

@@ -4,7 +4,8 @@ export TTY
 is_tty() { [ -t 1 ]; }
 
 if is_tty; then
-    vim -
+    # vim -
+    v
 else
     cat
 fi
