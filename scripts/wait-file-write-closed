@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+fp="$1"
+
+inotifywait -e close_write "$fp" 2>/dev/null
