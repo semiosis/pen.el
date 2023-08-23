@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# This works
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fp="$1"
+
+tmux run "ino-wait-file-exist $(aqf "$fp") || :" | cat

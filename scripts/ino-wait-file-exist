@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+fp="$1"
+
+exec &>/dev/null
+
+# This works
+
+trap on_exit EXIT
+on_exit() {
+    echo "$(jobs -p)"
+    kill -9 $(jobs -p)
+    exit 0
+}
+
+dn="$(dirname "$fp")"
+bn="$(basename "$fp")"
+
+inotifywait -m "$dn" -e create | while read -r path action file; do
+    echo "path: $path, action: $action, file: $file"
+    if [[ "$file" =~ $bn$ ]]; then
+        kill $$
+        exit 0
+    fi
+done
