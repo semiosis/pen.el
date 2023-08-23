@@ -319,7 +319,8 @@ bindkey -s "^[~" "^A^Kgit commit --amend -m \"\"^B"
 bindkey -s "^[" "^A^Kgit amend\r" # C-M-S-~
 bindkey -s "^[5" "^A^Kgit show --name-only \`tmux show-buffer|head -1|sed \"s/^\\\[ \t\\\]*//\"|cut -d ' ' -f 1\`\t"
 bindkey -s "^[%" "^A^Kgit stash show -u \t"
-bindkey -s "^[K" "^A^Kvc g dt -c\r" #bindkey -s "^[K" "^A^Kgit d --cached\r"
+# bindkey -s "^[K" "^A^Kvc g dt -c\r" #bindkey -s "^[K" "^A^Kgit d --cached\r"
+bindkey -s "^[K" "^A^Ktwalk\r"
 bindkey -s "^[J" "^A^Kf find-file-repo \"*\"^B" # find a file by name in all commits
 bindkey -s "^[l" "^A^Ksh-general\r"
 

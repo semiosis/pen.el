@@ -12,6 +12,7 @@ clear
 read -r -d '' options <<HEREDOC
 .  EDIT
 a  easciimation
+e  cli-chess
 B  moon-buggy
 m  myman
 ^  endless-sky
@@ -49,6 +50,7 @@ read -n1 d; test "$d" = "" && read -n1 d
 case "$d" in
     .) cmd="v $0" ;;
     a) cmd="easciimation" ;;
+    e) cmd="cli-chess" ;;
     B) cmd="moon-buggy" ;;
     m) cmd="myman" ;;
     \^) cmd="endless-sky" ;;

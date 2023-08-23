@@ -1,0 +1,5 @@
+#!/bin/bash
+
+page="$1"; : ${page:="man"}
+
+sp -e "(woman \"$page\")"

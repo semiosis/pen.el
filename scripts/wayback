@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+cd $NOTES/programs/wayback
+
+url="$1"
+shift
+
+domain="$(p "$url" | sed -n 's=^https*://\([^/]*\).*=\1=p')"
+
+page="$(p "$url" | sed -n 's=^https*://\([^/]*\)\(.*\)=\2=p')"
+
+unbuffer mypython $MYGIT/t0thkr1s/wayback/wayback.py -t "$domain" &>/dev/null
+
+is_tty() { [ -t 1 ]; }
+
+if is_tty; then
+    newurl="$(cat "${domain}.txt" | xurls | fzf)"
+    eww "$newurl$page"
+else
+    cat "${domain}.txt" | xurls | grep -P "^http.*web.archive.org"
+fi

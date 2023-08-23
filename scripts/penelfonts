@@ -22,7 +22,8 @@ text="$@"
 : "${text:="Pen.el"}"
 
 if test -n "$font"; then
-    cd $MYGIT/xero/figlet-fonts
+    test -d $MYGIT/xero/figlet-fonts && cd $MYGIT/xero/figlet-fonts
+    test -d $MYGIT/figlet-fonts && cd $MYGIT/figlet-fonts
 
     if ! test "$charwise" = "y"; then
         # echo "$font"

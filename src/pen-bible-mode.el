@@ -134,7 +134,10 @@
 
 (defun nasb ()
   (interactive)
-  (bible-open-version "NASB"))
+  (if (pen-selected-p)
+      (call-interactively-with-prefix-and-parameters 'bible-search-phrase (prefix-numeric-value current-prefix-arg) (pen-selection))
+    ;; (bible-search-phrase (pen-selection))
+    (bible-open-version "NASB")))
 
 (defun kjv ()
   (interactive)

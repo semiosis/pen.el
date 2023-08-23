@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+if inside-docker-p; then
+    oci -f -nd notty "$@"
+else
+    oci notty "$@"
+fi

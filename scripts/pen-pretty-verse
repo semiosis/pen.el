@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+(
+penelfonts -f smbraille.tlf Genesis 32:30 | lolcat -f | sed 's/^/         /'
+echo
+ocif Genesis 32:30 | sed '1,2d' | lolcat -f | sed 's/^/     /'
+echo
+) | less -rS

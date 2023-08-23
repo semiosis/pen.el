@@ -1410,4 +1410,9 @@ agi coreutils
 
 go install github.com/antonmedv/walk@latest
 
- https://github.com/xero/figlet-fonts
+(
+cd "$(gc "https://github.com/xero/figlet-fonts")"
+)
+
+# Possible to play online against opponents
+pip install cli-chess
