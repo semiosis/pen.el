@@ -138,6 +138,15 @@ set foldcolumn=0 " margin, gutter
 call pathogen#infect()
 call pathogen#infect("/root/.pen/vim-bundles/{}")
 
+""" NERDCommenter
+"let NERDCreateDefaultMappings=0 " disable default mappings
+let NERDMenuMode=0              " disable menu
+let NERDSpaceDelims=1           " place spaces after comment chars
+let NERDDefaultNesting=0        " don't recomment commented lines
+
+xmap # <Plug>NERDCommenterToggle
+nmap # <Plug>NERDCommenterToggle
+
 set foldexpr=FoldBrace()
 function! FoldBrace()
   if getline(v:lnum+1)[0] == '{'
