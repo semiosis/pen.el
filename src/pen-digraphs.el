@@ -48,7 +48,7 @@
 
 (defun symbol-select (&optional filter)
   (interactive)
-  (let ((digraph (tpop (cmd "digraph-select" filter) nil
+  (let ((digraph (tpop (cmd "unicode-select" filter) nil
                        :output_b t
                        :width_pc 90)))
     (if (interactive-p)

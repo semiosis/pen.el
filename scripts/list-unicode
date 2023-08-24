@@ -1,49 +1,47 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+IFS= read -r -d '' "categories" <<HEREDOC
+General Punctuation (U+2000 to U+206F)
+Superscripts and Subscripts (U+2070 to U+209F)
+Currency Symbols (U+20A0 to U+20CF)
+Letterlike Symbols (U+2100 to U+214F)
+Greek Characters (U+0391 to U+03C9)
+Number Forms (U+2150 to U+218F)
+Arrows (U+2190 to U+21FF)
+Supplemental Arrows - A (U+27F0 to U+27FF)
+Supplemental Arrows - B (U+2900 to U+297F)
+Supplemental Arrows (U+1F800 to U+1F8FF)
+Mathematical Operators (U+2200 to U+22FF)
+Misc. Math Symbols -A (U+27C0 to U+27EF)
+Misc. Math Symbols - B (U+2980 to U+29FF)
+Supplemental Math Operators (U+2A00 to U+2AFF)
+Miscellaneous Technical (U+2300 to U+23FF)
+Control Pictures (U+2400 to U+243F)
+Optical Character Recognition (U+2440 to U+245F)
+Enclosed Alphanumerics (U+2460 to U+24FF)
+Box Drawing (U+2500 to U+257F)
+Block Elements (U+2580 to U+259F)
+Geometric Shapes (U+25A0 to U+25FF)
+Geometric Shapes Extended (U+1F780 to U+1F7FF)
+Miscellaneous Symbols (U+2600 to U+26FF)
+Dingbats (U+2700 to U+27BF)
+Braille Patterns (U+2800 to U+28FF)
+Misc Symbols and Arrows (U+2B00 to U+2BFF)
+Musical Symbols (U+1D100 to U+1D1FF)
+Domino Tiles (U+1F030 to U+1F09F)
+Playing Cards (U+1F0A0 to U+1F0FF)
+Emoticons (U+1F600 to U+1F64F)
+Misc Symbols and Pictographs (U+1F300 to U+1F5FF)
+Supplemental Symbols and Pictographs (U+1F900 to U+1F9FF)
+Transport/Map (U+1F680 to U+1F6FF)
+HEREDOC
 
-while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-    "") { shift; }; ;;
-    -first) {
-        first="$2"
-        shift
-        shift
-    }
-    ;;
-
-    -last) {
-        last="$2"
-        shift
-        shift
-    }
-    ;;
-
-    -n) {
-        n="$2"
-        shift
-        shift
-    } ;;
-
-    *) break;
-esac; done
-
-test "$#" -ge 1 && : "${first:="$1"}" && shift
-test "$#" -ge 1 && : "${last:="$1"}" && shift
-test "$#" -ge 1 && : "${n:="$1"}" && shift
-
-test -n "$first" && first="$(hex2dec "$first")"
-test -n "$last" && last="$(hex2dec "$last")"
-
-test -n "$first" && test -n "$n" && : "${last:="$(( first + n ))"}"
-test -n "$first" && test -n "$last" && : "${n:="$(( 1 + last - first ))"}"
-
-if test -z "$first" || test -z "$last"; then
-    exit 1
-fi
-
-seq "$first" "$last" | serialsplit
-
-# unicode --brief -m 0 -x 1F680 -x 1F681
-
-# hex2dec 1F680
+printf -- "%s\n" "$categories" | awk 1 | while IFS=$'\n' read -r heading; do
+    first="$(echo "$heading" | scrape "U\\+[A-F0-9]+" | sed -n 1p | sed 's/^U+//')"
+    last="$(echo "$heading" | scrape "U\\+[A-F0-9]+" | sed -n 2p | sed 's/^U+//')"
+    echo "$heading" | udl
+    # 0</dev/null ci -f -nd unbuffer list-unicode-range "$first" "$last"
+    0</dev/null ci -f -nd odn list-unicode-range "$first" "$last"
+    echo
+done

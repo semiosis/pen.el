@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+list-unicode | mfz -nv | cut -d '	' -f 1 | chomp

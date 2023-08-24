@@ -1,0 +1,54 @@
+#!/bin/bash
+export TTY
+
+# list-unicode 1F680 1F6FF | v
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -first) {
+        first="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -last) {
+        last="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -n) {
+        n="$2"
+        shift
+        shift
+    } ;;
+
+    *) break;
+esac; done
+
+test "$#" -ge 1 && : "${first:="$1"}" && shift
+test "$#" -ge 1 && : "${last:="$1"}" && shift
+test "$#" -ge 1 && : "${n:="$1"}" && shift
+
+test -n "$first" && first="$(hex2dec "$first")"
+test -n "$last" && last="$(hex2dec "$last")"
+
+test -n "$first" && test -n "$n" && : "${last:="$(( first + n ))"}"
+test -n "$first" && test -n "$last" && : "${n:="$(( 1 + last - first ))"}"
+
+if test -z "$first" || test -z "$last"; then
+    exit 1
+fi
+
+# first="$(dec2hex "$first")"
+# last="$(dec2hex "$last")"
+
+seq "$first" "$last" | xargs -L 10 unicode --brief -m 0 -d | grep -v "No such unicode" | sed 's/ \+/\t/'
+
+# unicode --brief -m 0 -x 1F680 -x 1F681
+
+# hex2dec 1F680
