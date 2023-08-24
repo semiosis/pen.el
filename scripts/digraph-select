@@ -13,7 +13,7 @@ test -f "$TESTFP" && : "${DIGRAPH_FP:="$TESTFP"}"
 
 test -f "$DIGRAPH_FP" && cat "$DIGRAPH_FP" | {
     if test -n "$filter"; then
-        grep "$filter"
+        grep -P "$filter"
     else
         cat
     fi

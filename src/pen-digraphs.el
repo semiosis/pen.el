@@ -1,3 +1,22 @@
+(defun japanese-digraph-select ()
+  (interactive)
+  (let ((filter "(KATAKANA|HIRAGANA|BOPOMOFO|PARENTHESIZED IDEOGRAPH)"))
+    (if (interactive-p)
+        (funcall-interactively 'digraph-select filter)
+      (digraph-select filter))))
+
+(defun latin-digraph-select ()
+  (interactive)
+  (if (interactive-p)
+      (funcall-interactively 'digraph-select "LATIN")
+    (digraph-select "LATIN")))
+
+(defun cyrillic-digraph-select ()
+  (interactive)
+  (if (interactive-p)
+      (funcall-interactively 'digraph-select "CYRILLIC")
+    (digraph-select "CYRILLIC")))
+
 (defun greek-digraph-select ()
   (interactive)
   (if (interactive-p)
@@ -14,7 +33,7 @@
   (interactive)
   (let ((digraph (tpop (cmd "digraph-select" filter) nil
                        :output_b t
-                       :width_pc 80)))
+                       :width_pc 90)))
     (if (interactive-p)
         (if buffer-read-only
             (xc digraph)
