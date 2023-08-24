@@ -877,10 +877,15 @@ Reconstruct the entire yaml-ht for a different language."
   ;;   (pen-snc cmd))
   )
 
+(defun qf-or-empty (input)
+  (if input
+      (pen-q input)
+    ""))
+
 ;; Dir is specified here to prevent a bug with tramp
 ;; Call with "/"
 (defun pen-list2cmd (l)
-  (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))
+  (pen-snc (concat "cmd-nice-posix " (mapconcat 'qf-or-empty l " "))
            nil default-directory))
 
 (defun pen-cmd (&rest args)
@@ -889,7 +894,7 @@ Reconstruct the entire yaml-ht for a different language."
     (pen-list2cmd args)))
 
 (defun pen-list2cmd-nice (l)
-  (pen-snc (concat "cmd-nice " (mapconcat 'pen-q l " "))
+  (pen-snc (concat "cmd-nice " (mapconcat 'qf-or-empty l " "))
            nil default-directory))
 
 (defun pen-cmd-nice (&rest args)

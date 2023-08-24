@@ -1,24 +1,20 @@
-(defun hebrew-digraph-select ()
-  (interactive)
-  (let ((digraph (tpop "hebrew-digraphs" nil :output_b t)))
-    (if (interactive-p)
-        (if buffer-read-only
-            (xc digraph)
-          (insert digraph))
-      digraph)))
-
 (defun greek-digraph-select ()
   (interactive)
-  (let ((digraph (tpop "digraph-select GREEK" nil :output_b t)))
-    (if (interactive-p)
-        (if buffer-read-only
-            (xc digraph)
-          (insert digraph))
-      digraph)))
+  (if (interactive-p)
+      (funcall-interactively 'digraph-select "GREEK")
+    (digraph-select "GREEK")))
 
-(defun digraph-select ()
+(defun hebrew-digraph-select ()
   (interactive)
-  (let ((digraph (tpop "digraph-select" nil :output_b t)))
+  (if (interactive-p)
+      (funcall-interactively 'digraph-select "HEBREW")
+    (digraph-select "HEBREW")))
+
+(defun digraph-select (&optional filter)
+  (interactive)
+  (let ((digraph (tpop (cmd "digraph-select" filter) nil
+                       :output_b t
+                       :width_pc 80)))
     (if (interactive-p)
         (if buffer-read-only
             (xc digraph)
