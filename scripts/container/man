@@ -4,6 +4,17 @@ export TTY
 # Remember:
 # $EMACSD/host/pen.el/scripts/container/man /usr/local/lib/python3.7/dist-packages/visidata/man/vd.1
 
+IFS= read -r -d '' shcode <<'HEREDOC'
+/usr/bin/man bash-builtins | sed -e '0,/SYNOPSIS/d' -e '/^$/,$d' | sed -e 's/^\s\+//' -e 's/, */\n/g' | sed '/^$/d' | sed '1s/.*: //' | sed -z 's/‐\n//g' | sed '$s/\.$//'
+HEREDOC
+
+# builtins_list="$(printf -- "%s\n" "$shcode" | ci -f -nd myeval)"
+# I need to fix stdin caching
+builtins_list="$(printf -- "%s\n" "$shcode" | myeval)"
+
+CMD="$(cmd "$@")"
+export GY_CMD="man $CMD"
+
 parent_bn="$(ps -o comm= $PPID)"
 
 caller_tree="$(pstree -lAsp "$PPID")"
@@ -44,6 +55,20 @@ if test "$#" -gt 0; then
 
         *)
     esac
+
+    last_arg="${@: -1}"
+    len=${#last_arg}
+    builtin_match="$(printf "%s\n" -- "$builtins_list" | grep -F "$last_arg" | grep -P "^$(0</dev/null rps "$len" .)$")"
+
+    if test "$builtin_match" = "["; then
+        builtin_match=test
+    fi
+
+    if test -n "$builtin_match"; then
+        vimcmd="vs +/$(cmd-nice "$builtin_match") -ft man"
+        eval "/usr/bin/man bash-builtins 2>&1 | $vimcmd"
+        exit "$?"
+    fi
 fi
 
 if test "$parent_bn" = emacs || test "$TERM" = dumb; then

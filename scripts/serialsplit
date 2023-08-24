@@ -10,6 +10,7 @@ export TTY
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -l) {
+        # -L max-lines for parallel
         lines="$2"
         shift
         shift

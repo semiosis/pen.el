@@ -15,7 +15,7 @@ if stdin_exists && test "$#" -eq 0; then
     input_fp="$(cat | tf sh)"
     exec 2>&0;
 
-    bash  "$input_fp"
+    unbuffer bash "$input_fp"
 else
     eval "$(cmd "$@")"
 fi

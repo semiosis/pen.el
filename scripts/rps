@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
+
+pen-str rs "$@"

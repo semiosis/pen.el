@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+# http://go2linux.garron.me/shell-command-convert-binary-octal-decimal-hexadecimal/
+
+stdin_exists() {
+    ! [ -t 0 ]
+    # ! [ -t 0 ] && read -t 0
+}
+
+if stdin_exists; then
+    IFS= read -rd '' input < <(cat /dev/stdin)
+else
+    input="$1"
+fi
+
+echo "obase=10;ibase=16;$input" | bc

@@ -2291,3 +2291,42 @@ fun! GoogleWithEww(incmd)
 endf
 
 xmap H "zy;call GoogleWithEww(@z)<CR>
+
+fun! GetCopySearchFileProgram()
+     if &ft=='help'
+        return "vimhelp"
+     elseif &ft=='man'
+        return "man"
+     else
+        return "vim"
+     endif
+endf
+
+fun! GetCopySearchFilePath()
+     if &ft=='help'
+        return tolower(substitute(getline(1), "^\\([^	 ]\\+\\).*", "\\1", ""))
+     elseif &ft=='man'
+        " return getline(1)
+        return tolower(substitute(getline(1), "^\\([^	 ]\\+\\).*", "\\1", ""))
+     else
+        return expand('%:p')
+     endif
+endf
+
+" line
+fun! CopySearchFile(sel)
+    if has_key(environ(), "GY_CMD")
+        let result=substitute(environ()["GY_CMD"], "^pvr ", "", "") . ' | vs +/"'.escape(escape(a:sel, '\\'),'`"$*[]\\').'"'
+    else
+        let result=GetCopySearchFileProgram() . ' +/"'.escape(escape(a:sel, '\\'),'`"$*[]\\').'" "'.GetCopySearchFilePath().'"'
+        " silent! call system('xc -m', 'vim +/"'.escape(a:sel, '`/"$*[]').'" "'.expand('%:p').'"')
+    endif
+
+    silent! call system('xc -m', result)
+    " silent! call system('xc -m', 'vim +/"'.escape(a:sel,'`"$*').'" "'.expand('%:p').'"')
+
+    if v:shell_error == 0
+        echom "Copied: " . result
+    endif
+endf
+xmap gy "zy;call CopySearchFile(@z)<CR>
