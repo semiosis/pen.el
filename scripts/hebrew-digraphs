@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+digraph-select HEBREW
+
+# vimhelp +/HEBREW digraph-table
+
+# printf -- "%s\n" "$digraphs" | mfz -nv | cut -d '	' -f 1 | chomp

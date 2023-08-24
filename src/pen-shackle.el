@@ -44,6 +44,8 @@
 
 (defun lsp-help-detect-mode (buffer alist plist)
   (shackle--display-buffer-popup-window buffer alist plist)
+
+  ;; Add some extra behaviour
   (cond
    ((re-match-p "```" (buffer-string)) (markdown-mode)))
 

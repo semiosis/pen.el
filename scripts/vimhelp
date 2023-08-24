@@ -1,0 +1,64 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+GLOBAL_SYNTAX_HIGHLIGHTING=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    +/*) { # pattern
+        pattern="$(p "$opt" | sed 's=^+/==' | s chomp)"
+
+        shift
+    }
+    ;;
+
+    -s) {
+        GLOBAL_SYNTAX_HIGHLIGHTING=y
+        shift
+    }
+    ;;
+
+    -nsyn) {
+        GLOBAL_SYNTAX_HIGHLIGHTING=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+last_arg="${@: -1}"
+section="$last_arg"
+set -- "${@:1:$(($#-1))}" # shift last arg
+
+# Example
+# vimhelp digraph-table
+
+: ${CMD:="$(cmd "$@")"}
+
+#if test -n "$CMD"; then
+#    CMD="+$(cmd-nice "silent! /$CMD")"
+#fi
+
+# Do it this way instead of via +/"" so the command is silenced if it
+# fails
+if [ -n "$pattern" ]; then
+    ncmd="/$pattern"
+
+    ncmd="$(p "silent! normal! $ncmd" | qne)"
+    ncmd="$(p "exe \"$ncmd\r\"" | q)"
+    opts+=" -c $ncmd "
+fi
+
+extra_commands="silent! echom"
+if test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "y" || { test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "" && { test "$bn" = "glossary.txt" || test "$ext" = "clql"; }; }; then
+    extra_commands+="|windo silent! call GeneralSyntax()|au BufEnter * call GeneralSyntax()"
+fi
+
+# echo "vim +$(cmd-nice "help $section") +only $CMD"
+# exit 0
+cmd="vim -c $(cmd-nice "$extra_commands_prepend$extra_commands") --not-a-term +$(cmd-nice "help $section") +only $CMD $opts"
+# cmd="vim --not-a-term +$(cmd-nice "help $section") +only $CMD $opts"
+printf -- "%s" "$cmd" | ds vhlast &>/dev/null
+eval "$cmd"

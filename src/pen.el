@@ -243,6 +243,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-selectrum)
 (require 'pen-marginalia)
 (require 'pen-glimpse)
+(require 'pen-digraphs)
 (require 'pen-meson)
 (require 'pen-bazel)
 (require 'pen-csv)

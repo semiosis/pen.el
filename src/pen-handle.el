@@ -352,6 +352,22 @@
         :nexterr '()
         :preverr '())
 
+(handle '(bible-term-greek-mode)
+        :runmain '()
+        :repls '()
+        :formatters '()
+        :docs '(pen-esp-docs-for-thing-if-prefix
+                lookup-thing-glossary-definition
+                dict-word
+                helm-wordnet-suggest
+                pen-docs-for-thing-given-screen)
+        :godef '()
+        :docsearch '()
+        :nextdef '()
+        :prevdef '()
+        :nexterr '()
+        :preverr '())
+
 (handle '(org-mode)
         :navtree '()
         :runmain '()

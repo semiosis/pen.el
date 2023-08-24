@@ -6,7 +6,13 @@
 sn="$(basename "$0")"
 
 stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
 }
 
 sn="$(p "$sn" | sed 's/^pen-//')"
@@ -76,6 +82,10 @@ case "$f" in
     lc) {
         tr '[:upper:]' '[:lower:]'
     }
+    ;;
+
+    chomp|chomp-last-line)
+        perl -pe 'chomp if eof'
     ;;
 
     random-line) {
