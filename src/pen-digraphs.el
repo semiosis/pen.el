@@ -17,6 +17,12 @@
       (funcall-interactively 'digraph-select "CYRILLIC")
     (digraph-select "CYRILLIC")))
 
+(defun arabic-digraph-select ()
+  (interactive)
+  (if (interactive-p)
+      (funcall-interactively 'digraph-select "ARABIC")
+    (digraph-select "ARABIC")))
+
 (defun greek-digraph-select ()
   (interactive)
   (if (interactive-p)
