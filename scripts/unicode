@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+# unicode arrow | sed -e '/^[a-zA-Z]/d' -e '/^$/d' | tr '\n' ' ' | wrap 90 | sed '1,2d' | sed '8q'
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+set -- --max 1000 "$@"
+
+if is_tty; then
+    /usr/bin/unicode "$@" | pavs
+else
+    /usr/bin/unicode "$@"
+fi

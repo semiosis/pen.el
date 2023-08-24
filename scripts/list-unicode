@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+unicode --brief -x 1F680 -x 1F681 -m 10

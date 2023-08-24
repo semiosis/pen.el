@@ -2218,6 +2218,8 @@ endf
 
 MapM InsertParaAbove q o
 
+MapM FilterWithFzf q f
+
 " This fixes select-mode when needing to enter dvorak letters (e.g. in
 " snipmate)
 sunmap ;

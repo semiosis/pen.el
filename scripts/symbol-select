@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+# vimhelp +/HEBREW digraph-table
+
+filter="$@"
+
+ocif elinks-dump "https://www.vertex42.com/ExcelTips/unicode-symbols.html" | {
+    if test -n "$filter"; then
+        grep -P "$filter"
+    else
+        cat
+    fi
+} | mfz -nv | cut -d '	' -f 1 | chomp

@@ -1416,3 +1416,5 @@ cd "$(gc "https://github.com/xero/figlet-fonts")"
 
 # Possible to play online against opponents
 pip install cli-chess
+
+agi unicode

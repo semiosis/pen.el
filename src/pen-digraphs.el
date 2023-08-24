@@ -46,4 +46,15 @@
           (insert digraph))
       digraph)))
 
+(defun symbol-select (&optional filter)
+  (interactive)
+  (let ((digraph (tpop (cmd "digraph-select" filter) nil
+                       :output_b t
+                       :width_pc 90)))
+    (if (interactive-p)
+        (if buffer-read-only
+            (xc digraph)
+          (insert digraph))
+      digraph)))
+
 (provide 'pen-digraphs)
