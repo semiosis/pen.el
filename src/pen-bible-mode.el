@@ -786,7 +786,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-mode-cross-references (ref)
   (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
-  (eww (concat "https://www.openbible.info/labs/cross-references/search?q=" (urlencode ref))))
+  (let ((link (concat "https://www.openbible.info/labs/cross-references/search?q=" (urlencode ref))))
+    (message (concat "Visiting: " link))
+    (eww link)))
 
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
@@ -802,12 +804,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map "s" 'bible-search-phrase)
 (define-key bible-mode-map "S" 'bible-search-lucene)
 (define-key bible-mode-map "m" 'bible-mode-select-module)
-(define-key bible-mode-map "x" 'bible-mode-split-display)
+;; (define-key bible-mode-map "x" 'bible-mode-split-display)
+(define-key bible-mode-map "x" 'bible-mode-cross-references)
 (define-key bible-mode-map "l" 'bible-mode-lookup-ref)
 
 (define-key bible-search-mode-map "s" 'bible-search-phrase)
 (define-key bible-search-mode-map "S" 'bible-search-lucene)
 (define-key bible-search-mode-map "b" 'bible-search-mode-select-book)
+(define-key bible-search-mode-map "x" 'bible-mode-cross-references)
 (define-key bible-search-mode-map "g" nil)
 
 (define-key bible-search-mode-map (kbd "M-e") 'view-notes-fp-verse)
