@@ -197,7 +197,9 @@ START and END can be in either order."
              ;; Don't want to match an org-link such as when using org-brain
              (not (string-match "\\[\\[" special-path)))
         (let ((cand-dir (tramp-localdir)))
-          (if (f-directory-p cand-dir)
+          (if (and
+               cand-dir
+               (f-directory-p cand-dir))
               (setq dir cand-dir)
             (setq dir "/")))))
 

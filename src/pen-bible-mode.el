@@ -782,6 +782,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           (tpop (cmd "v" (bible-mode-get-notes-fp-for-verse ref))))
       (tpop (cmd "v" (bible-mode-get-notes-fp-for-verse ref))))))
 
+;; https://www.openbible.info/labs/cross-references/search?q=1+Samuel+7%3A3
+
+(defun bible-mode-cross-references (ref)
+  (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
+  (eww (concat "https://www.openbible.info/labs/cross-references/search?q=" (urlencode ref))))
+
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)

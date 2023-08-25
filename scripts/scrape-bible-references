@@ -494,6 +494,7 @@ input_fp="$(cat | c ascify | tf txt)"
         # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\( [0-9]\+\\).*/\\1\\2/pI"
 
         # Mark 6:1-13Psalms 119:73-80Proverbs 17:27-28
+        # SoulFood: Heb 11:17-13:25, Mark 10:1-12, Ps 88:1-9a, Pr 11:24-26
 
         cat "$input_fp" | awk 1 | 
             sed 's/\([0-9]\)\([A-Za-z]\)/\1\r\2/g' |

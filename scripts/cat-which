@@ -1,0 +1,94 @@
+#!/bin/bash
+export TTY
+
+# cat something from the path
+# It's not ofter useful, but as an example,
+# I might have some examples of verses I want to scrape inside the script I am writing.
+# Then to test:
+# catw scrape-bible-references | scrape-bible-references
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+if [ $# -eq 1 ]; then
+    if ! [ -f "$1" ]; then
+        w="$(which "$1")"
+        r="$?"
+        bn="pen-$(basename -- "$w")"
+        w2="$(which "$bn")"
+        if test -f "$w2"; then
+            w="$w2"
+        fi
+
+        if [ "$r" -eq 0 ]; then
+            shift
+
+            CMD="$(cmd "$@")"
+
+            cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
+
+            cmd="$bin $cmd $w"
+        else
+            last_arg="${@: -1}"
+            fp="$last_arg"
+
+            if pl "$fp" | grep -q -P ':[^/].*$'; then
+                fp="$(p "$last_arg" | cut -d : -f 1)"
+                GOTO_LINE="$(p "$last_arg" | cut -d : -f 2)"
+                GOTO_COLUMN=0
+                opts+=" -c $(cmd-nice-posix "cal cursor($GOTO_LINE, $GOTO_COLUMN)") "
+            fi
+
+            ext="${fp##*.}"
+            fn="${fp%.*}"
+
+            if printf -- "%s\n" "$last_arg" | grep -q -P '^file:///'; then
+                last_arg="$(printf -- "%s" "$last_arg" | sed 's=file://==')"
+                set -- "${@:1:$(($#-1))}" # shift last arg
+                set -- "$@" "$last_arg"
+
+                cmd="$(cmd "$@")"
+
+            fi
+
+            if printf -- "%s" "$last_arg" | grep -q -P '^http.?://github.com'; then
+                gc -notty "$last_arg" &>/dev/null
+                last_arg="$(p "$last_arg" | sed "s=^http.\?://github.com=$MYGIT=" | sed "s=/\(blob\|tree\)/[a-z]\+==")"
+                set -- "${@:1:$(($#-1))}" # shift last arg
+
+                CMD="$(cmd "$@")"
+
+                cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
+
+                cmd="$bin $cmd $last_arg"
+            else
+                if printf -- "%s" "$last_arg" | grep -q -P '^http.?:'; then
+                    tf_webpage="$(make-path-for-uri "$last_arg")"
+
+                    set -- "${@:1:$(($#-1))}" # shift last arg
+
+                    CMD="$(cmd "$@")"
+
+                    cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
+
+                    cmd="$bin $cmd $tf_webpage"
+                else
+
+                    cmd="$bin $cmd $fp"
+                fi
+            fi
+        fi
+    else
+        rp="$(realpath "$1")"
+        shift
+
+        CMD="$(cmd "$@")"
+
+        cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
+
+        cmd="$bin $(cmd-nice-posix "$rp") $cmd"
+    fi
+else
+    cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
+
+    cmd="$bin $cmd"
+fi
