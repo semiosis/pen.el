@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+hebrew_chars="$(0</dev/null digraph-list HEBREW)"
+
+grep -o . | while IFS=$'\n' read -r char; do
+    (
+    exec 0</dev/null
+    printf -- "%s\n" "$hebrew_chars" | grep "$char"
+    :
+    )
+done

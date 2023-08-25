@@ -23,7 +23,7 @@
 
     (if (and ref
              (sor ref))
-        (bible-mode-lookup ref)
+        (bible-mode-lookup (bible-canonicalise-ref ref))
       (progn
         (bible-mode--set-global-chapter (or global-chapter 1) verse)
         (set-window-buffer (get-buffer-window (current-buffer)) buf)))))

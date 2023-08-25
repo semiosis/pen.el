@@ -17,24 +17,32 @@ slug="$(printf -- "%s\n" "$fn" | tr '\n' ' ' | sed 's/ $//' | slugify)"
 dir="$(td "book_$slug")"
 
 unzip -d "$dir" "$rp" &>/dev/null || exit 1
-zcd "$dir"
-exit
 
 cd "$dir"
 
 # This is the order
+IFS= read -r -d '' order_tsv <<'HEREDOC'
 cat OEBPS/content.opf |
     grep "<itemref " |
     grep -o "\"[^\"]\+\"" |
     urldecode | uq -l |
         pavs
+HEREDOC
 
 # This is an alist of file path to id
+IFS= read -r -d '' path_id_tsv <<'HEREDOC'
 cat OEBPS/content.opf |
     grep "<item " |
     grep -o "\"[^\"]\+\" id=\"[^\"]\+\"" |
     urldecode | sed 's/^"\([^"]\+\)" id="\([^"]\+\)"/\2\t\1/' |
     grep -P ".xhtml$" |
         pavs
+HEREDOC
+
+eval "$order_tsv" > order.tsv
+eval "$path_id_tsv" > path_id.tsv
+
+zcd "$dir"
+exit
 
 test -d "$dir" && rm -rf "$dir"

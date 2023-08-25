@@ -235,28 +235,29 @@
   (interactive)
   (ignore-errors
     (if (buffer-exists "*pen-banner*")
-        (switch-to-buffer "*pen-banner*")
+        ;; (switch-to-buffer "*pen-banner*")
+        (kill-buffer "*pen-banner*"))
 
-      (let ((b (new-buffer-from-string (pen-sn "pen-banner.sh -xterm|cat"))))
-        (with-current-buffer b
-            ;; (new-buffer-from-string (pen-sn "pen-banner.sh|cat"))
+    (let ((b (new-buffer-from-string (pen-sn "pen-banner.sh -xterm|cat"))))
+      (with-current-buffer b
+        ;; (new-buffer-from-string (pen-sn "pen-banner.sh|cat"))
 
-            ;; I think this only works for xterm, not xterm256
-            (display-ansi-colors)
-          (rename-buffer "*pen-banner*")
-          (read-only-mode t)
+        ;; I think this only works for xterm, not xterm256
+        (display-ansi-colors)
+        (rename-buffer "*pen-banner*")
+        (read-only-mode t)
 
-          ;; (use-local-map (copy-keymap foo-mode-map))
-          (local-set-key "q" 'kill-current-buffer)
-          (local-set-key "d" 'kill-current-buffer)
+        ;; (use-local-map (copy-keymap foo-mode-map))
+        (local-set-key "q" 'kill-current-buffer)
+        (local-set-key "d" 'kill-current-buffer)
 
 
-          ;; TODO Make something to convert ansi 256 colors to ansi xterm color
-          ;; This works:
-          ;; TERM=xterm TMUX= tmux new pen-banner.sh
-          ;; Then export the basic ansi codes.
-          )
-        (switch-to-buffer b)))))
+        ;; TODO Make something to convert ansi 256 colors to ansi xterm color
+        ;; This works:
+        ;; TERM=xterm TMUX= tmux new pen-banner.sh
+        ;; Then export the basic ansi codes.
+        )
+      (switch-to-buffer b))))
 
 ;; (defun pen-banner ()
 ;;   (interactive)

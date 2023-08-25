@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+# vimhelp +/HEBREW digraph-table
+
+filter="$@"
+
+TESTFP="$HOME/local/share/vim/vim82/doc/digraph.txt"
+test -f "$TESTFP" && : "${DIGRAPH_FP:="$TESTFP"}"
+
+TESTFP="/usr/local/share/vim/vim82/doc/digraph.txt"
+test -f "$TESTFP" && : "${DIGRAPH_FP:="$TESTFP"}"
+
+test -f "$DIGRAPH_FP" && cat "$DIGRAPH_FP" | {
+    if test -n "$filter"; then
+        grep -P "$filter"
+    else
+        cat
+    fi
+}

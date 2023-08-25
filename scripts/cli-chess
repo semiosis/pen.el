@@ -3,6 +3,13 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+sn="$(basename -- "$0")"
+
+if ! inside-docker-p; then
+    in-pen "$sn" "$@"
+    exit
+fi
+
 test -f "/usr/local/bin/cli-chess" || pyf "cli-chess" &>/dev/null
 
 : "${LICHESS_TOKEN:="$(oci pen-rc .lichess_token)"}"

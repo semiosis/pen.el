@@ -26,8 +26,8 @@ if stdin_exists; then
     awk 1 | while read line; do
         if printf -- "%s\n" "$line" | grep -q -P '[0-9]$'; then
             # separate book title from chapter:verse
-            booktitle="$(printf -- "%s" "$line" | sed 's/ [0-9].*//')"
-            chapverse="$(printf -- "%s" "$line" | sed -n 's/.* \([0-9].*\)/\1/p')"
+            booktitle="$(printf -- "%s" "$line" | sed 's/[. ][0-9].*//')"
+            chapverse="$(printf -- "%s" "$line" | sed -n 's/.*[. ]\([0-9].*\)/\1/p')"
             {
                 canonicalise-bible-book-title.cl "$booktitle"
                 if test -n "$chapverse"; then

@@ -190,7 +190,7 @@ function zsh-tmux-edit-pane {
     tf_zle="$(mktemp ${TMPDIR}/tf_zleXXXXXX || echo /dev/null)"
     print -R - "$PREBUFFER$BUFFER" > "$tf_zle"
 
-    pen-tm -te -d capture -clean -noabort - 2>/dev/null | pen-vs +G
+    pen-tm -te -d capture -clean -noabort - 2>/dev/null &>/dev/null | pen-vs +G
 
     print -Rz - "$(<$tf_zle)"
     zle send-break		# Force reload from the buffer stack

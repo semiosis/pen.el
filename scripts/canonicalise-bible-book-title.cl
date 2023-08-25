@@ -133,10 +133,12 @@
   (setq ref (cl-ppcre:regex-replace-all "\\.$" ref ""))
   (loop for tp in *bible-book-map-names*
         until ;; (member ref (cdr tp))
-        (member ref tp :test #'string=)
+        ;; (member ref tp :test #'string=)
+        (member ref tp :test #'string-equal)
         finally (return
                   (if ;; (member ref (cdr tp))
-                   (member ref tp :test #'string=)
+                   ;; (member ref tp :test #'string=)
+                   (member ref tp :test #'string-equal)
                    (car tp)
                    (if nilfailure
                        nil

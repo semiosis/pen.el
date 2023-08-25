@@ -17,6 +17,8 @@ esac; done
 
 : "${module:="NASB"}"
 
+# scrape-bible-references | 
+
 s join ";" |
     xargs "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" |
     sed -z 's/\([0-9]:\) *\n/\1 /g' | sed 's/^\s*//' | pavs

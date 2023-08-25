@@ -5,16 +5,4 @@ export TTY
 
 filter="$@"
 
-TESTFP="$HOME/local/share/vim/vim82/doc/digraph.txt"
-test -f "$TESTFP" && : "${DIGRAPH_FP:="$TESTFP"}"
-
-TESTFP="/usr/local/share/vim/vim82/doc/digraph.txt"
-test -f "$TESTFP" && : "${DIGRAPH_FP:="$TESTFP"}"
-
-test -f "$DIGRAPH_FP" && cat "$DIGRAPH_FP" | {
-    if test -n "$filter"; then
-        grep -P "$filter"
-    else
-        cat
-    fi
-} | mfz -nv | cut -d '	' -f 1 | chomp
+digraph-list "$filter" | mfz -nv | cut -d '	' -f 1 | chomp

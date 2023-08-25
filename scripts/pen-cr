@@ -1920,6 +1920,13 @@ case "$file_type" in
     }
     ;;
 
+    # ansi
+    ans) {
+        cat "$rp" | less -rS
+        exit 0
+    }
+    ;;
+
     make) {
         make -f "$rp"
         pen-pak
