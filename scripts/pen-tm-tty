@@ -1,7 +1,7 @@
 #!/bin/bash
 
 {
-    test -n "$TTY" && echo "$TTY"
+    test -e "$TTY" && echo "$TTY"
 } || {
     ttymaybe="$(tty 2>&1)"
     if [[ "${ttymaybe:0:1}" == "/" ]]; then

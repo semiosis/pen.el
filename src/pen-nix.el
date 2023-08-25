@@ -166,6 +166,12 @@ Be mindful of quoting arguments correctly."
       (sh (concat "vim " (pen-q (concat path))) nil nil nil "sh" t "nw")
     (sh "vim" nil nil nil "sh" t "nw")))
 
+(defun nano (&optional path)
+  (interactive)
+  (if path
+      (sh (concat "nano " (pen-q (concat path))) nil nil nil "sh" t "nw")
+    (sh "nano" nil nil nil "sh" t "nw")))
+
 (defvaralias '_pwd 'default-directory)
 
 (defun e/pwd ()

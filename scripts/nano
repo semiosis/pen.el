@@ -3,5 +3,32 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-# nvc /bin/nano "$@"
-/bin/nano "$@"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nv) {
+        NEOVIM=y
+        shift
+    }
+    ;;
+
+    -nnv) {
+        NEOVIM=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${NEOVIM:="y"}"
+
+if test "$NEOVIM" = "y"; then
+    # nvc /bin/nano "$@"
+    nvc /bin/nano "$@"
+else
+    # nvc /bin/nano "$@"
+    /bin/nano "$@"
+fi
+
+:
+

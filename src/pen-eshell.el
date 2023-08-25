@@ -304,4 +304,8 @@ or an external command."
   "Return the argument(s) as a single slug."
   (slugify (mapconcat 'str args " ")))
 
+;; (define-key eshell-mode-map (kbd "M-h") 'pen-sph)
+;; (define-key eshell-mode-map (kbd "M-h") 'eshell-sph)
+(define-key eshell-mode-map (kbd "M-h") 'eshell-sps)
+
 (provide 'pen-eshell)
