@@ -5,10 +5,12 @@ export TTY
 
 hebrew_chars="$(0</dev/null digraph-list HEBREW)"
 
+# echo "אבגדהכמ" | hebrew-letters-explain
+
 grep -o . | while IFS=$'\n' read -r char; do
     (
     exec 0</dev/null
     printf -- "%s\n" "$hebrew_chars" | grep "$char"
     :
     )
-done
+done | pavs
