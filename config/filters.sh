@@ -526,3 +526,4 @@ scrape-bible-references -c     # chapters only
 scrape-bible-references -b     # books only
 canonicalise-bible-book-title
 bible-show-verses
+hebrew-letters-explain

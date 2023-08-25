@@ -228,6 +228,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-json)
 (require 'pen-minibuffer)
 (require 'pen-load-manually)
+(require 'pen-hebrew)
 
 ;; Don't use corfu because it's incompatible with the terminal, as it uses overlay frames
 ;; (require 'pen-corfu)

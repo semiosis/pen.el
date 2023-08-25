@@ -5,12 +5,17 @@ export TTY
 
 hebrew_chars="$(0</dev/null digraph-list HEBREW)"
 
-# echo "אבגדהכמ" | hebrew-letters-explain
+# echo "אבגדהכמ" | tpop hebrew-letters-explain
 
 grep -o . | while IFS=$'\n' read -r char; do
     (
     exec 0</dev/null
-    printf -- "%s\n" "$hebrew_chars" | grep "$char"
+    line="$(printf -- "%s\n" "$hebrew_chars" | grep -P "^$char")"
+    if test -n "$line"; then
+        echo "$line"
+    else
+        echo -n "$char"
+    fi
     :
     )
 done | pavs
