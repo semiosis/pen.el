@@ -12,7 +12,7 @@ grep -o . | while IFS=$'\n' read -r char; do
     exec 0</dev/null
     line="$(printf -- "%s\n" "$hebrew_chars" | grep -P "^$char")"
     if test -n "$line"; then
-        echo "$line"
+        echo "$char $line"
     else
         echo -n "$char"
     fi
