@@ -6,3 +6,7 @@ export TTY
 # https://grep.app/search?q=ros.%2Asbcl.%2A--&regexp=true
 
 ros -L sbcl -Q -l /root/.sbclrc run -- "$@"
+
+# speedup (I haven't figured it out yet)
+# https://fukamachi.hashnode.dev/day-4-roswell-how-to-make-roswell-scripts-faster
+# ros -L sbcl -Q -m hello -l /root/.sbclrc run -- "$@"

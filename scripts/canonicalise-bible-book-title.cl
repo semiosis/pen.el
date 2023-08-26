@@ -1,6 +1,9 @@
 #!/usr/bin/env -S sbcl-ql --script
 ;; #!sbcl --script
 
+;; TODO
+;; https://fukamachi.hashnode.dev/day-3-roswell-common-lisp-scripting
+
 (ql:quickload "external-program" :silent t)
 (ql:quickload "cl-ppcre" :silent t)
 
