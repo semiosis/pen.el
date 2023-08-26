@@ -228,14 +228,28 @@
     ("Jude" "Jud" "Jd")
     ("Revelation of John" "Revelation" "Rev" "Re")))
 
+;; (member-similar "jas" '(Hi "Jas"))
+(defun member-similar (elt lst)
+  "works between floats and ints. and compares strings insensitively"
+  (catch 'foo
+    (dolist (x lst)
+      (when (cl-equalp x elt)
+        (throw 'foo x))))
+
+  ;; (cl-member elt lst)
+  ;; (member elt lst)
+  )
+
+(defalias 'member-caseinsensitive 'member-similar)
+
 (defun bible-canonicalise-ref (ref &optional nilfailure)
   (setq ref (esed "\\.$" "" ref))
   (cl-loop for tp in bible-book-map-names
            until ;; (member ref (cdr tp))
-           (member ref tp)
+           (member-similar ref tp)
            finally return
            (if ;; (member ref (cdr tp))
-               (member ref tp)
+               (member-similar ref tp)
                (car tp)
              (if nilfailure
                  nil
@@ -359,7 +373,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
            (text (s-replace-regexp "-[0-9].*" "" text))
            ;; Make this one work too
            ;; Lev.19:18
-           (text (s-replace-regexp "\\. \\?" " " text))
+           (text (s-replace-regexp "(\\. \\?|\\.)" " " text))
            (text (cond
                   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
                    text)
@@ -395,11 +409,15 @@ creating a new `bible-mode' buffer positioned at the specified verse."
       (if (not (major-mode-p 'bible-mode))
           (setq bible-mode-book-module module))
 
-      (tryelse
-       (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
+      (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
                    (string-to-number verse)
                    module)
-       (error "Error. Incorrect Bible reference?")))))
+      ;; (tryelse
+      ;;  (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
+      ;;              (string-to-number verse)
+      ;;              module)
+      ;;  (error "Error. Incorrect Bible reference?"))
+      )))
 
 (defun scrape-bible-references (text)
   (pen-str2lines (pen-snc "scrape-bible-references" text)))
@@ -784,10 +802,21 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 ;; https://www.openbible.info/labs/cross-references/search?q=1+Samuel+7%3A3
 
+;; https://www.openbible.info/labs/cross-references/search?q=Revelation+7%3A3
+
+(defun openbible-canonicalise-ref (ref)
+  (let ((ref (bible-canonicalise-ref ref)))
+
+    (setq ref (s-replace-regexp "^III" "3" ref))
+    (setq ref (s-replace-regexp "^II" "2" ref))
+    (setq ref (s-replace-regexp "^I" "1" ref))
+    (setq ref (s-replace-regexp "^Revelation of John" "Revelation" ref))
+    ref))
+
 (defun bible-mode-cross-references (ref)
   (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
-  (let ((link (concat "https://www.openbible.info/labs/cross-references/search?q=" (urlencode ref))))
-    (message (concat "Visiting: " link))
+  (let ((link (concat "https://www.openbible.info/labs/cross-references/search?q=" (urlencode (openbible-canonicalise-ref ref)))))
+    (message "%s" (concat "Visiting: " link))
     (eww link)))
 
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
