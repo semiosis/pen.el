@@ -1,0 +1,106 @@
+#!/bin/bash
+export TTY
+
+## Alternatives
+# https://paste.debian.net
+## Use this for the go pastebin
+# https://play.golang.org
+
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# If you pipe into pb, then p1 is the filename hinted to pastebin
+# If you provide a path to a file, then it will simply upload that file
+
+( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -b) {
+        binary=y
+        shift
+    }
+    ;;
+
+    -c) {
+        encrypt=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+fp="$1"
+
+ext=
+
+if stdin_exists; then
+    lit "stdin paste" | udl 1>&2
+
+    if [ -n "$fp" ]; then
+        ext="$fp"
+
+        # fp is the desired extension
+        fp="/tmp/paste.$$.$fp"
+    else
+        fp="/tmp/paste-$$.txt"
+    fi
+
+    rm -f "$fp"
+
+    cat > "$fp"
+elif test -f "$fp"; then
+    lit "file paste" | udl 1>&2
+
+    rp="$(realpath "$fp")"
+    bn="$(basename "$fp")"
+    dn="${fp%/*}"
+    if [ -d "dn" ]; then
+        cd "$dn"
+    fi
+    if pl "$bn" | grep -q -P '\.'; then
+        ext="${bn##*.}"
+    fi
+    : "${ext:="txt"}"
+else
+    lit "xc paste" | udl 1>&2
+
+    fp="/tmp/paste-$$.txt"
+    xc - > "$fp"
+fi
+
+slug="$(printf -- "%s\n" "$bn" | tr '\n' ' ' | sed 's/ $//' | slugify)"
+
+if test "$binary" = "y"; then
+    output="$(curl --upload-file "$fp" "https://transfer.sh/$slug.$ext" 2>/dev/null)"
+else
+    output="$(cat "$fp" | curl -F 'f:1=<-' ix.io 2>/dev/null)"
+fi
+
+echo "$output" | tv
+
+# output="$(curl -F c=@"$fp" https://ptpb.pw/ 2>/dev/null)"
+
+is_tty() { [ -t 1 ]; }
+
+{
+    url="$output"
+    if test -n "$ext" && ! test "$ext" = "txt"; then
+        printf -- "%s" "$url/$ext" | xc -i - | awk 1
+    else
+        printf -- "%s" "$url" | xc -i - | awk 1
+    fi
+
+    paste="$(curl "$url" 2>/dev/null)"
+    printf -- "%s" "$paste" | head -n 5
+} | hc "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" | {
+    if is_tty; then
+        cat
+    else
+        sed -n 1p
+    fi
+}

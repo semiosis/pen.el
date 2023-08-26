@@ -1,0 +1,107 @@
+#!/bin/bash
+export TTY
+
+topdir="$HOME/notes/programs/hc"
+topdir="$(realpath "$topdir")"
+
+mkdir -p "$topdir"
+
+if [ -z "$1" ]; then
+
+    echo "$topdir"
+    # help
+    wfind "$topdir" | xargs -l1 basename
+
+    exit 0
+fi
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -q) {
+        IS_QUERY=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(cmd-nice "$@" | esc '`!')"
+parameters="$CMD"
+
+category="$1"
+case "$category" in
+    etpb) { category=tpb; } ;;
+    playground) { category=pg; } ;;
+
+    *)
+esac
+
+dir="$topdir/$category"
+shift
+
+if test "$IS_QUERY" = "y"; then
+    echo "$dir"
+    exit 0
+fi
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+sn="$(basename "$0")"
+case "$sn" in
+    hcq) {
+        if ! test -d "$dir"; then
+            echo "$sn: $dir does not exist" 1>&1
+            exit 1
+        fi
+
+        wfind "$dir" | sort -n -t . -k3,3 -k2,2 -k1,1 | {
+            if is_tty; then
+                ifilter
+            else
+                cat
+                # sync
+            fi
+        }
+        
+        # query the history
+        exit 0
+    }
+    ;;
+
+    *)
+esac
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    content_fp="$(tf txt)"
+fi
+
+mkdir -p "$dir"
+wd="$(pwd)"
+
+full_command="$(
+(
+    printf -- "%s" "cd "$(aqf-real "$wd")"; "
+
+    # This include the category
+    printf -- "%s" "$parameters"
+
+    echo
+) 2>/dev/null
+)"
+
+slug="$(echo "$full_command" | mnm | tr -d '\n' | slugify | cut -c -40)"
+
+cd "$dir"
+fp="$(date-ts-hr)-${slug}.txt"
+touch "$fp"
+
+pl "$full_command" >> "$fp"
+cat "$content_fp" | tee -a "$fp"

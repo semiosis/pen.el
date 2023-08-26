@@ -100,7 +100,6 @@
     ("Jude" "Jud" "Jd")
     ("Revelation of John" "Revelation" "Rev" "Re")))
 
-
 #+(or)
 (external-program:run "nw" '("vim"))
 
