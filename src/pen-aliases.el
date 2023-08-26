@@ -1,5 +1,10 @@
 (require 'pcase)
 
+(defalias 'test-z 'string-empty-p)
+
+(defun test-n (s)
+  (not (string-empty-p s)))
+
 ;; Do it this way because it's required in several places
 (if (inside-docker-p)
     (progn

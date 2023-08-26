@@ -242,18 +242,32 @@
 
 (defalias 'member-caseinsensitive 'member-similar)
 
-(defun bible-canonicalise-ref (ref &optional nilfailure)
+(defun sh-canonicalise-bible-ref (ref)
+  (pen-snc "canonicalise-bible-book-title" ref))
+
+(defun bible-canonicalise-book-title (ref &optional nilfailure)
+  (setq ref (s-replace-regexp "\\(\\. \\?\\|\\.\\)" " " ref))
   (setq ref (esed "\\.$" "" ref))
   (cl-loop for tp in bible-book-map-names
            until ;; (member ref (cdr tp))
            (member-similar ref tp)
+           ;; (member ref tp)
            finally return
            (if ;; (member ref (cdr tp))
                (member-similar ref tp)
+               ;; (member ref tp)
                (car tp)
              (if nilfailure
                  nil
                ref))))
+
+(defun bible-canonicalise-ref (ref &optional nilfailure)
+  (let* ((booktitle (s-replace-regexp "[. ][0-9].*" "" ref))
+         (chapverse (pen-snc "sed -n 's/.*[. ]\\([0-9].*\\)/\\1/p'" ref))
+         (booktitle (bible-canonicalise-book-title booktitle nilfailure)))
+    (if (test-n chapverse)
+        (concat booktitle " " chapverse)
+      booktitle)))
 
 ;; TODO Generate this list
 ;; TODO Also have a map which translates into these
@@ -373,7 +387,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
            (text (s-replace-regexp "-[0-9].*" "" text))
            ;; Make this one work too
            ;; Lev.19:18
-           (text (s-replace-regexp "(\\. \\?|\\.)" " " text))
+           (text (s-replace-regexp "\\(\\. \\?\\|\\.\\)" " " text))
            (text (cond
                   ((re-match-p ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
                    text)
