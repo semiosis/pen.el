@@ -158,4 +158,10 @@
     (xc path-with-line-number)
     (message "%s" (concat path-with-line-number " copied to clipboard"))))
 
+(defun pen-what-face ()
+  "Shows the face for what's under the cursor."
+  (interactive)
+  (ekm "C-u C-x ="))
+(defalias 'what-face 'pen-what-face)
+
 (provide 'pen-utils)

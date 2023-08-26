@@ -146,18 +146,21 @@
                        nil
                        ref)))))
 
-(let* ((args
-         (cdr
-          *posix-argv*))
-       (bookname
-         (if args
-             #+(or)
-             (string-trim
-              '(#\space
-                #\newline)
-              ;; (format nil "~&~S~&" args)
-              (write-to-string args))
-             (car args)
-             "2 Tim")))
+(defun main (&rest argv)
+  (declare (ignorable argv))
 
-  (write-string (bible-canonicalise-ref bookname)))
+  (let* ( (bookname
+           (if argv
+               #+(or)
+               (string-trim
+                '(#\space
+                  #\newline)
+                ;; (format nil "~&~S~&" argv)
+                (write-to-string argv))
+               (car argv)
+               "2 Tim")))
+
+    (write-string (bible-canonicalise-ref bookname))))
+
+;; This only runs when run as a script
+(apply 'main (cdr *posix-argv*))

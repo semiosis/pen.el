@@ -1,0 +1,46 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+last_arg="${@: -1}"
+fp="$last_arg"
+rp="$(realpath "$fp")"
+dn="$(dirname "$rp")"
+cd "$dn"
+bn="$(basename -- "$fp")"
+fn="$bn"
+ext="${bn##*.}"
+mant="${bn%.*}"
+ros_fn="${mant}.ros"
+slug="$(printf -- "%s\n" "$mant" | tr '\n' ' ' | sed 's/ $//' | slugify)"
+date_ts="$(date-ts)"
+
+IFS= read -r -d '' template <<HEREDOC
+#!/bin/sh
+#|
+exec ros -Q -- \$0 "\$@"
+|#
+(progn ;;init forms
+  (ros:ensure-asdf)
+  #+quicklisp(ql:quickload '() :silent t)
+  )
+
+(defpackage :ros.script.${slug}.${date_ts}
+  (:use :cl))
+(in-package :ros.script.${slug}.${date_ts})
+HEREDOC
+
+td_thing="$(mktemp -t -d td_thingXXXXXX || echo /dev/null)"
+
+cd "$td_thing"
+cp -a "$rp" "$ros_fn"
+(
+printf -- "%s\n" "$template"
+# delete the shebang
+cat "$ros_fn" | sed 1d | awk 1 | sed '/posix-argv/{s/^/;; /}'
+) | sponge "$ros_fn"
+
+ros build "$ros_fn" && ros install "$mant"
+
+trap "rmdir \"$td_thing\" 2>/dev/null" 0

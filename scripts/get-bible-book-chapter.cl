@@ -1,5 +1,4 @@
 #!/usr/bin/env -S sbcl-ql --script
-;; #!sbcl --script
 
 (ql:quickload "external-program" :silent t)
 

@@ -1418,3 +1418,5 @@ cd "$(gc "https://github.com/xero/figlet-fonts")"
 pip install cli-chess
 
 agi unicode
+
+ros install koji-kojiro/cl-repl

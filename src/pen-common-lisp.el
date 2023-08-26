@@ -6,6 +6,11 @@
 
 (require 'slime)
 
+(defun sbcl-web-docs (funname)
+  (interactive (list (str (symbol-at-point))))
+
+  (eww (concat "http://clhs.lisp.se/Body/f_" funname ".htm")))
+
 (use-package slime
   :ensure t
   

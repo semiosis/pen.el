@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+bin=$HOME/.roswell/bin/cl-repl
+test -f "$bin" || ros install koji-kojiro/cl-repl
+
+"$bin" "$@"

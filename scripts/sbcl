@@ -7,6 +7,9 @@ export TTY
 
 ros -L sbcl -Q -l /root/.sbclrc run -- "$@"
 
+# It's not easy to load libraries via Quicklisp. Because sbcl --script doesn't read .sbclrc, and don't load Quicklisp even if it's installed.
+# i.e. #!/usr/bin/env -S sbcl-ql --script
+
 # speedup (I haven't figured it out yet)
 # https://fukamachi.hashnode.dev/day-4-roswell-how-to-make-roswell-scripts-faster
 # ros -L sbcl -Q -m hello -l /root/.sbclrc run -- "$@"

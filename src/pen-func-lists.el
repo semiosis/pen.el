@@ -291,7 +291,8 @@
                               poly-markdown-mode))
 
 ;; (defset lisp-mode-funcs '(sly))
-(defset lisp-mode-funcs '(slime-edit-uses))
+(defset lisp-mode-funcs '(slime-edit-uses
+                          sbcl-web-docs))
 
 (defset Man-mode-funcs '(Man-follow-manual-reference
                          Man-goto-section))
