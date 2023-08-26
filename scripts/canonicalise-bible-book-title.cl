@@ -1,7 +1,7 @@
 #!/usr/bin/env -S sbcl-ql --script
 ;; #!sbcl --script
 
-;; TODO
+;; TODO use the proper roswell scripting technique
 ;; https://fukamachi.hashnode.dev/day-3-roswell-common-lisp-scripting
 
 (ql:quickload "external-program" :silent t)
