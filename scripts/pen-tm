@@ -53,6 +53,7 @@ editor() {
 export PEN_TMUX="$TMUX"
 # This must be unset so terminal open in the correct places
 unset TMUX
+unset TMUX_PANE
 
 init-tm() {
     while [ $# -gt 0 ]; do opt="$1"; case "$opt" in

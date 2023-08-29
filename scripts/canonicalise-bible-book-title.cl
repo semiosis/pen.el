@@ -1,4 +1,4 @@
-#!/usr/bin/env -S sbcl-ql --script
+#!/usr/bin/env -S sbcl-compile-run
 ;; #!sbcl --script
 
 ;; TODO use the proper roswell scripting technique

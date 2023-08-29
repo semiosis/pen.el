@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+TTY= TMUX= TMUX_PANE= tmux display -p "#{session_name}"

@@ -12,8 +12,11 @@ is_tty() {
 
 set -- --max 1000 "$@"
 
+bin=/usr/bin/unicode
+test -f "$bin" || agi unicode &>/dev/null
+
 if is_tty; then
-    /usr/bin/unicode "$@" | pavs
+    "$bin" "$@" | pavs
 else
-    /usr/bin/unicode "$@"
+    "$bin" "$@"
 fi
