@@ -1424,6 +1424,7 @@ ros install koji-kojiro/cl-repl
 e ia mini-frame
 
 # https://asciinema.org/~ronilan
+# The games look cool but they haven't run
 npm install -g impossible-flappy
 npm install -g impossible-breakout
 npm install -g impossible-hn
