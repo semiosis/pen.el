@@ -229,11 +229,14 @@
     ("Revelation of John" "Revelation" "Rev" "Re")))
 
 ;; (member-similar "jas" '(Hi "Jas"))
-(defun member-similar (elt lst)
+(defun member-similar (elt lst &optional comparator)
   "works between floats and ints. and compares strings insensitively"
+
+  (setq comparator (or comparator 'cl-equalp))
+  
   (catch 'foo
     (dolist (x lst)
-      (when (cl-equalp x elt)
+      (when (funcall comparator x elt)
         (throw 'foo x))))
 
   ;; (cl-member elt lst)
@@ -269,13 +272,10 @@
         (concat booktitle " " chapverse)
       booktitle)))
 
-(defun member-lambda ()
-
-  )
-
 (defun bible-book-only-p (s)
-  (member (bible-canonicalise-ref s)
-          bible-mode-book-chapters))
+  (member-similar
+   (bible-canonicalise-ref s)
+   (mapcar 'car bible-mode-book-chapters)))
 
 ;; TODO Generate this list
 ;; TODO Also have a map which translates into these
@@ -375,7 +375,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
          (ot text)
 
          (maybebook
-          (bible-canonicalise-ref ot t))
+          (bible-book-only-p (bible-canonicalise-ref ot t)))
 
          (text
           (if maybebook

@@ -64,5 +64,7 @@
 
 (define-key visual-line-mode-map (kbd "<remap>") nil)
 (global-set-key (kbd "<S-f4>") 'toggle-chrome)
+(global-set-key (kbd "<S-f5>") 'global-display-line-numbers-mode)
+(global-set-key (kbd "<S-f6>") 'toggle-truncate-lines)
 
 (provide 'pen-ui)

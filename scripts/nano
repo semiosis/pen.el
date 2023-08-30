@@ -24,10 +24,10 @@ esac; done
 
 if test "$NEOVIM" = "y"; then
     # nvc /bin/nano "$@"
-    nvc /bin/nano "$@"
+    nvc /bin/nano -m "$@"
 else
     # nvc /bin/nano "$@"
-    /bin/nano "$@"
+    /bin/nano -m "$@"
 fi
 
 :

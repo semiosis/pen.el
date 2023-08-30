@@ -11,6 +11,13 @@ stdin_exists() {
     ! [ -t 0 ]
 }
 
+export VIPIFY=y
+
+if test -n "$1"; then
+    : ${CMD:="$(cmd-nice "$@")"}
+    export EDITOR="$CMD"
+fi
+
 if is_tty; then
     /usr/bin/vipe "$@"
 else

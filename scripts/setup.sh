@@ -1420,3 +1420,5 @@ pip install cli-chess
 agi unicode
 
 ros install koji-kojiro/cl-repl
+
+e ia mini-frame

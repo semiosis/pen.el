@@ -5,7 +5,7 @@ export TTY
 # Version 1.0, bash
 
 # Mad Tea-Party is a sandbox for language-model-powered chatbots and human interaction.
-# AI personalities may be created and join the IRC server, interact inside of channels, etc.
+# AI personalities may be created and join the IRC server, interact inside of chans, etc.
 # Human users may take the role of added characters.
 
 inside-docker-p() {
@@ -15,7 +15,7 @@ inside-docker-p() {
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -join) {
-        irc_channel_name="$2"
+        irc_chan_name="$2"
         shift
         shift
     }
@@ -43,7 +43,7 @@ if { ! inside-docker-p; }; then
     exit "$?"
 fi
 
-: "${irc_channel_name:="metameetup"}"
+: "${irc_chan_name:="metameetup"}"
 
 username="$1"
 shift
@@ -93,12 +93,12 @@ else
     # Kill the initial tmux window
     tmux kill-window -t "$session_name:1"
 
-    # Attach the user's session and automate it to log in and switch channel
+    # Attach the user's session and automate it to log in and switch chan
     pen-x \
         -sh "TMUX= tmux attach -t '$session_name'" \
         -e "irssi" \
         -s "/connect $server $port $password $username_irc" -c m \
         -e "Mode change" \
-        -s "/join #$irc_channel_name" -c m \
+        -s "/join #$irc_chan_name" -c m \
         -i
 fi

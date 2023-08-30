@@ -274,6 +274,24 @@
           (eww-next-fragment))
         (nreverse points)))))
 
+(defun ace-link--info-current ()
+  "Return the node at point."
+  (cons
+   (s-replace-regexp
+    "\s+" " "
+    (s-replace-regexp
+     "\n" " "
+     (s-replace-regexp
+      "\s+" " "
+      
+      (cl-letf (((symbol-function #'Info-goto-node)
+                 (lambda (node _) node))
+                (browse-url-browser-function
+                 (lambda (url &rest _) url)))
+        (Info-try-follow-nearest-node)))))
+   
+   (point)))
+
 (defun info-collect-imenu (&optional min max)
   "Collect the positions of visible links in the current `Info-mode' buffer."
   (setq min (or min (point-min)))

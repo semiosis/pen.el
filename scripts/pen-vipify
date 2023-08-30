@@ -4,5 +4,9 @@ export TTY
 # This is for sttr
 export VIPIFY=y
 
-which "$1" &>/dev/null || cat
-EDITOR="$1" vipe
+if test -n "$1"; then
+    : ${CMD:="$(cmd-nice "$@")"}
+    export EDITOR="$CMD"
+fi
+
+vipe

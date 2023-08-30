@@ -53,7 +53,7 @@ S  syntax.vim
 '  .spacemacs
 %  chinese.vim
 C  .clojurerc
-=  channels.txt
+=  chans.txt
 p  python full
 E  my-misc.el
 4  bash-library.sh

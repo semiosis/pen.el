@@ -2246,3 +2246,4 @@ prism
 wordel
 bazel
 meson-mode
+mini-frame

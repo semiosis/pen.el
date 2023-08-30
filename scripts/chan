@@ -4,8 +4,8 @@ export TTY
 # Chann.el
 # Version 1.0, bash
 
-# The practice of channeling - a person's body being taken over by a spirit for
-# the purpose of communication - has been around for millennia.
+# In Jesus Christ's name I fall out of agreement with and rebuke anything to
+# do with channeling spirits.
 
 # Chann.el v1.0
 # - Run a chatbot that sees only a terminal (program independent)
@@ -16,14 +16,14 @@ export TTY
 #     - Possibly a set of prescribed valid commands together with NLSH-style prompting
 
 # Version 2.0, clojure
-# http://github.com/semiosis/channel/blob/master/README.md
+# http://github.com/semiosis/chan/blob/master/README.md
 
 # Examples:
-# channel "White Rabbit"
-# channel "The March Hare, the Hatter and the Dormouse"
-# channel -on-behalf-of "Mad Tea-Party group" "March Hare, the Hatter and the Dormouse"
-# channel -who "March Hare, the Hatter and the Dormouse" -on-behalf-of "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
-# channel -who "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
+# chan "White Rabbit"
+# chan "The March Hare, the Hatter and the Dormouse"
+# chan -on-behalf-of "Mad Tea-Party group" "March Hare, the Hatter and the Dormouse"
+# chan -who "March Hare, the Hatter and the Dormouse" -on-behalf-of "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
+# chan -who "March Hare, the Hatter and the Dormouse" "Mad Tea-Party group" madteaparty "Mad Tea-Party group"
 
 # Without an explicit command to connect to, run a madteaparty client
 
@@ -42,7 +42,7 @@ if { ! inside-docker-p; }; then
     exit "$?"
 fi
 
-channel-logo 1>&2
+chan-logo 1>&2
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -85,4 +85,4 @@ fi
 
 escaped_command="$(cmd-nice-posix "$(cmd-nice-posix "$@")")"
 FRAMETYPE=tty
-pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (channel-chatbot-from-name $(cmd-nice-posix "$who") $escaped_command t t))(delete-other-windows))"
+pen -nn -frametype "$FRAMETYPE" --pool -ic "(progn (upd (chan-chatbot-from-name $(cmd-nice-posix "$who") $escaped_command t t))(delete-other-windows))"

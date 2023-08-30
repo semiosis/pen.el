@@ -11,7 +11,7 @@ e  zcd ~/.emacs.d/host/efm-langserver
 S  zcd ~/.emacs.d/host
 d  zcd ~/.pen/documents
 n  zcd ~/notes
-7  zcd ~/.emacs.d/host/channel
+7  zcd ~/.emacs.d/host/chan
 C  zcd ~/.emacs.d/host/creation
 Y  zcd ~/.emacs.d/host/yas-snippets
 P  zcd ~/.emacs.d/host/pensieve
@@ -61,7 +61,7 @@ case "$d" in
     S) cmd="zcd ~/.emacs.d/host" ;;
     d) cmd="zcd ~/.pen/documents" ;;
     n) cmd="zcd ~/notes" ;;
-    7) cmd="zcd ~/.emacs.d/host/channel" ;;
+    7) cmd="zcd ~/.emacs.d/host/chan" ;;
     C) cmd="zcd ~/.emacs.d/host/creation" ;;
     Y) cmd="zcd ~/.emacs.d/host/yas-snippets" ;;
     P) cmd="zcd ~/.emacs.d/host/pensieve" ;;

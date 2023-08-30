@@ -5,8 +5,60 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    has_stdin=y
+    input_fp="$(cat | tf txt)"
+    exec 0<&2
+fi
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+if is_stdout_pipe; then
+    has_stdout=y
+    output_fp="$(0</dev/null tf txt)"
+    exec 1>&2
+fi
+
+IFS= read -r -d '' elisp_stdin <<HEREDOC
+(with-current-buffer (find-file "$input_fp")
+  (local-set-key "q" 'save-buffers-kill-terminal)
+  (read-only-mode 1))
+(message "")
+HEREDOC
+
+IFS= read -r -d '' elisp_default <<HEREDOC
+(with-current-buffer (nbfs (cat "/root/.emacs.d/host/pen.el/scripts/lambda-emacs"))
+  (local-set-key "q" 'save-buffers-kill-terminal)
+  (read-only-mode 1))
+(message "")
+HEREDOC
+
+IFS= read -r -d '' elisp_stdout <<HEREDOC
+(local-set-key "q" 'save-buffers-kill-terminal)
+HEREDOC
+
 read -r -d '' elisp_command <<HEREDOC
-$(cat "$(which lambda-emacs.el)")
+$(cat "$(which lambda-emacs.el)" | awk 1)
+$(
+if test "$has_stdin" = "y"; then
+    printf -- "%s\n" "$elisp_stdin"
+else
+    printf -- "%s\n" "$elisp_default"
+fi
+)
 HEREDOC
 
 : "${elisp_command:="t"}"
@@ -14,3 +66,7 @@ HEREDOC
 elisp_command="(progn $elisp_command)"
 
 nvc -2 emacs -nw -q --eval "$elisp_command"
+
+if test "$has_stdout" = "y"; then
+    cat "$output_fp"
+fi

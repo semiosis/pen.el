@@ -1,0 +1,86 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -t) {
+        sess="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${sess:="$CALLER_TMUX_SESSION"}"
+: "${sess:="$(tmux display -pF '#{session_id}')"}"
+
+
+IFS= read -r -d '' window_keys <<HEREDOC
+(0)
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+(g)
+(h)
+(i)
+(j)
+(k)
+(l)
+(m)
+(n)
+(o)
+(p)
+(r)
+(s)
+(t)
+(u)
+(v)
+(w)
+(x)
+(y)
+(z)
+HEREDOC
+
+wins="$(tmux list-windows -t "$sess:" -F "#I #W#{window_flags}")"
+n_wins="$(printf -- "%s\n" "$wins" | wc -l)"
+
+eval `tm-resize`
+
+disp="$(paste <(printf -- "%s\n" "$window_keys" | head -n "$n_wins") <(printf -- "%s\n" "$wins"))"
+lastwindow="$(printf -- "%s\n" "$disp" | sed -n '$p')"
+disp="$(echo -e "(=)$lastwindow\n$disp")"
+
+ret="$(printf -- "%s\n" "$disp" | lambda-emacs -choose)"
+
+# printf -- "%s\n" "$disp" | head -n "$(( LINES - 2 ))" 1>&2
+# read -n 1 -s ret
+
+if test "$ret" = q; then
+    exit 0
+fi
+
+sel="$(echo "$disp" | grep -P "^\\($ret\\)" | sed 's/(.*)\t\([0-9=]\+\) .*/\1/')"
+
+# echo "$sel" | tv
+
+if test -n "$sel"; then
+    tmux select-window -t "$sess:${sel}.0" #| tv
+fi
+
+# no q

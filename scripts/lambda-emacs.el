@@ -1,6 +1,15 @@
 ;; Used by:
 ;; $HOME/.emacs.d/host/pen.el/scripts/lambda-emacs
 
+(defmacro df (name &rest body)
+  "Named interactive lambda with no arguments"
+  `(defun ,name ()
+     (interactive)
+     ,@body))
+
+(load "/root/.emacs.d/host/pen.el/src/pen-translation-map.el")
+(define-key global-map (kbd "C-h") (kbd "DEL"))
+
 (load "/root/.emacs.d/elpa/shut-up-20210403.1249/shut-up.el")
 
 (defmacro defset (symbol value &optional documentation)
@@ -60,10 +69,10 @@
                     (if rhs
                         (if (booleanp rhs)
                             "y"
-                          (lam-q rhs))
+                          (q rhs))
                       ""))))))))
 
-(defun lam-var-value-maybe (sym)
+(defun var-value-maybe (sym)
   "This function gets the value of the symbol"
   (cond
    ((symbolp sym) (if (variable-p sym)
@@ -90,7 +99,7 @@
   (declare (pure t) (side-effect-free t))
   (or (null s) (string= "" s)))
 
-(defun lam-get-dir (&optional dont-clean-tramp)
+(defun get-dir (&optional dont-clean-tramp)
   "Gets the directory of the current buffer's file. But this could be different from emacs' working directory.
 Takes into account the current file name."
   (shut-up-c
@@ -113,7 +122,7 @@ Takes into account the current file name."
   (and (not (eq s nil))
        (boundp s)))
 
-(defun lam-sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer lam-chomp b_output-return-code)
+(defun sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
 This appears to strip ansi codes.
 \(sh) does not.
@@ -128,7 +137,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
     ;; sn must never contain a tramp path
     (if (not dir)
-        (let ((cand-dir (lam-get-dir)))
+        (let ((cand-dir (get-dir)))
           (if (file-directory-p cand-dir)
               (setq dir cand-dir)
             (setq dir "/"))))
@@ -142,8 +151,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
           (setq shell-cmd (concat "unbuffer -p " shell-cmd)))
 
       (if (or (or
-               (and (variable-p 'lam-sh-update)
-                    (eval 'lam-sh-update))
+               (and (variable-p 'sh-update)
+                    (eval 'sh-update))
                (>= (prefix-numeric-value current-prefix-arg) 16)))
           (setq shell-cmd (concat "export UPDATE=y; " shell-cmd)))
 
@@ -165,22 +174,22 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
             (progn
               (setq input_tf (make-temp-file "elisp_bash_input"))
               (cat input_tf stdin)
-              (setq shell-cmd (concat "exec < <(cat " (lam-q input_tf) "); " shell-cmd))))
+              (setq shell-cmd (concat "exec < <(cat " (q input_tf) "); " shell-cmd))))
 
         (if (not (string-match "[&;]$" shell-cmd))
             (setq shell-cmd (concat shell-cmd ";")))
 
         (if (and detach
                  stdin)
-            (setq final_cmd (concat final_cmd " rm -f " (lam-q input_tf) ";")))
+            (setq final_cmd (concat final_cmd " rm -f " (q input_tf) ";")))
 
         ;; I need a log level here. This will be too verbose
-        (setq final_cmd (concat exps "; ( cd " (lam-q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " output_tf)))
+        (setq final_cmd (concat exps "; ( cd " (q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " output_tf)))
 
       (if detach
           (if stdin
-              (setq final_cmd (concat "trap '' HUP; bash -c " (lam-q final_cmd) " &"))
-            (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (lam-q final_cmd) " &"))))
+              (setq final_cmd (concat "trap '' HUP; bash -c " (q final_cmd) " &"))
+            (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (q final_cmd) " &"))))
 
       (shut-up-c
        (if (or
@@ -195,8 +204,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
           t
         (progn
           (setq output (cat output_tf))
-          (if lam-chomp
-              (setq output (lam-chomp output)))
+          (if chomp
+              (setq output (chomp output)))
           (progn
             (defset b_exit_code (cat tf_exit_code)))
 
@@ -207,11 +216,11 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                    (file-delete tf_exit_code)))
           output)))))
 
-(defun lam-snc (shell-cmd &optional stdin dir)
-  "sn lam-chomp"
-  (lam-chomp (lam-sn shell-cmd stdin dir)))
+(defun snc (shell-cmd &optional stdin dir)
+  "sn chomp"
+  (chomp (sn shell-cmd stdin dir)))
 
-(defun lam-chomp (str)
+(defun chomp (str)
   "Chomp (remove tailing newline from) STR."
   (replace-regexp-in-string "\n\\'" "" str))
 
@@ -220,7 +229,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
       (prin1-to-string s)
     "\"\""))
 
-(defun lam-q (&rest strings)
+(defun q (&rest strings)
   (let ((print-escape-newlines t))
     (mapconcat 'identity (mapcar 'prin1-to-string-safe strings) " ")))
 
@@ -245,7 +254,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 (defun pen-tf (template &optional input ext)
   "Create a temporary file."
   (setq ext (or ext "txt"))
-  (let ((fp (lam-snc (concat "mktemp -p /tmp " (lam-q (concat "XXXX" (slugify template) "." ext))))))
+  (let ((fp (snc (concat "mktemp -p /tmp " (q (concat "XXXX" (slugify template) "." ext))))))
     (if (and (sor fp)
              (sor input))
         (shut-up (cat fp input)))
@@ -293,7 +302,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
 (defvar new-buffer-hooks '())
 
-(defun new-buffer-from-string (&optional contents bufname mode nodisplay)
+(defun nbfs (&optional contents bufname mode nodisplay)
   "Create a new untitled buffer from a string."
   (interactive)
   (if (not bufname)
@@ -312,11 +321,6 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
       ;; This may not be available
       (ignore-errors (pen-add-ink-change-hook)))
     buffer))
-(defalias 'nbfs 'new-buffer-from-string)
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-(with-current-buffer (nbfs (cat "/root/.emacs.d/host/pen.el/scripts/lambda-emacs"))
-  (local-set-key "q" 'save-buffers-kill-terminal)
-  (read-only-mode 1))
-(message "")

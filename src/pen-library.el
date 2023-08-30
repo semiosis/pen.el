@@ -976,7 +976,7 @@ buffer which is not included when this function returns"
 
 
 ;; Override this to use message-no-echo
-(defun toggle-truncate-lines (&optional arg)
+(defun toggle-truncate-lines-local (&optional arg)
   "Toggle truncating of long lines for the current buffer.
 When truncating is off, long lines are folded.
 With prefix argument ARG, truncate long lines if ARG is positive,
@@ -996,7 +996,17 @@ non-nil."
 			                    (set-window-hscroll window 0)))
 		                nil t)))
   (pen-message-no-echo "Truncate long lines %s"
-	               (if truncate-lines "enabled" "disabled")))
+	                     (if truncate-lines "enabled" "disabled")))
+
+(defun toggle-truncate-lines (arg)
+  (interactive "P")
+  (if truncate-lines
+      (progn
+        (setq truncate-lines nil)
+        (setq-default truncate-lines nil))
+    (progn
+      (setq truncate-lines t)
+      (setq-default truncate-lines t))))
 
 (defun pen-nsfa (cm &optional dir)
   (let ((qdir (pen-q dir)))
@@ -1290,5 +1300,17 @@ non-nil."
 (defun sps-top ()
   (interactive)
   (sps "zsh-top"))
+
+(defun toggle-truncate-lines (arg)
+  (interactive "P")
+  (if truncate-lines
+      (progn
+        (setq truncate-lines nil)
+        (setq-default truncate-lines nil)
+        (message "%s" "truncate-lines disabled"))
+    (progn
+      (setq truncate-lines t)
+      (setq-default truncate-lines t)
+      (message "%s" "truncate-lines enabled"))))
 
 (provide 'pen-library)
