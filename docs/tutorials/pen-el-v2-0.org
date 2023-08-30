@@ -134,9 +134,6 @@ My internet connection is a little slow :'(
 <script src="https://asciinema.org/a/O6PEQQ7kbaLuaWrNMXE597p97.js" id="asciicast-O6PEQQ7kbaLuaWrNMXE597p97" async></script>
 #+END_EXPORT
 
-*** Channel - Channel personalities to control your terminal
-- https://semiosis.github.io/channel/
-
 *** iLambda - Imaginary programming libaries
 - https://semiosis.github.io/ilambda/
 
