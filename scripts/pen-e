@@ -1115,13 +1115,13 @@ case "$f" in
                 lc_socket="$(pen-pl "$SOCKET" | sed 's/_.*$//' | pen-c lc)"
                 COLUMNS=10000 ps -ef |grep "pen-e -D $lc_socket"
 
-                COLUMNS=10000 ps -ef | grep emacs | sed -n "/emacs --worker=.*\/$SOCKET\$/p"
+                COLUMNS=10000 ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/$SOCKET\$/p"
             } | pen-str field 2 | {
                 pids="$(cat)"
                 pen-pl "$pids" | xargs kill -"$signal"
             }
         else
-            ps -ef | grep emacs | sed -n "/emacs --worker=.*\/DEFAULT\$/p" | field 2 | {
+            ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/DEFAULT\$/p" | field 2 | {
                 pids="$(cat)"
                 pen-pl "$pids" | xargs kill -"$signal"
                 pen-pl "$pids" | xargs kill -9

@@ -278,7 +278,7 @@ if ! ls ~/.pen/pool/available/* 2>/dev/null | grep -q pen-emacsd; then
 fi
 
 # How to debug worker
-# emacs -nw --worker --debug-init
+# emacs -nw --daemon --debug-init
 # How to debug non-worker
 # emacs -nw --debug-init
 
