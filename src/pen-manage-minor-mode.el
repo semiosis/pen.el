@@ -22,6 +22,12 @@
          (off display-line-numbers-mode)
          (off visual-line-mode))
 
+        (life-mode
+         (off hl-line-mode)
+         (off hide-mode-line-mode)
+         (off display-line-numbers-mode)
+         (off visual-line-mode))
+
         (Info-mode
          (off highlight-thing-mode))
 

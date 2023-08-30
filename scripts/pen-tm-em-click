@@ -8,7 +8,7 @@ export TTY
 cap_file="$(pen-tm cap -nc -ascify | pen-tf txt; sleep 0.1)"
 if [ -s "$cap_file" ]; then
     # disabling syntax here makes it nice and fast
-    pen-tm -te nw -n em-click "pen-v -c 'syntax off | set nohlsearch | set t_Co=0 | set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
+    pen-tm -te nw -n em-click "nvc -2 pen-v -c 'syntax off | set nohlsearch | set t_Co=0 | set foldcolumn=0 ls=0 | call EasyMotion#WB(0,2) | q!' \"$cap_file\""
 
     x="$(cat /tmp/em-click.txt | cut -d ' ' -f 2)"
     y="$(cat /tmp/em-click.txt | cut -d ' ' -f 1)"

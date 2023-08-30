@@ -323,7 +323,7 @@ case "$sn" in
         sn=pen
         PEN_USE_GUI=y
         # Minimum for apostrophe is 2
-        # export PEN_N_DAEMONS=2
+        # export PEN_N_WORKERS=2
     }
     ;;
 
@@ -332,7 +332,7 @@ case "$sn" in
         PEN_USE_GUI=n
         : "${no:="y"}"
         # Minimum for apostrophe is 2
-        export PEN_N_DAEMONS=2
+        export PEN_N_WORKERS=2
     }
     ;;
 
@@ -341,7 +341,7 @@ case "$sn" in
         PEN_USE_GUI=n
         : "${no:="y"}"
         PEN_USE_REMOTE_PATH=y
-        export PEN_N_DAEMONS=2
+        export PEN_N_WORKERS=2
     }
     ;;
 
@@ -350,7 +350,7 @@ case "$sn" in
         PEN_USE_GUI=y
         : "${no:="y"}"
         PEN_USE_REMOTE_PATH=y
-        export PEN_N_DAEMONS=2
+        export PEN_N_WORKERS=2
     }
     ;;
 
@@ -465,20 +465,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     # Keep a second YAML or a directory with the values.
     # Would be great to be using a virtual filesystem as the abstraction, actually.
     -n1) {
-        export PEN_N_DAEMONS=1
+        export PEN_N_WORKERS=1
         shift
     }
     ;;
 
-    -ndaemons) {
-        export PEN_N_DAEMONS="$2"
+    -nworkers) {
+        export PEN_N_WORKERS="$2"
         shift
         shift
     }
     ;;
 
     -n1) {
-        export PEN_N_DAEMONS=1
+        export PEN_N_WORKERS=1
         shift
     }
     ;;
@@ -1002,7 +1002,7 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
     shift
     set -- "$remote_path"
 
-    export NO_QUIT_DAEMONS=y
+    export NO_QUIT_WORKERS=y
 
     # This is for read-only text at the top of a potentially new file
     export PEN_PROMPT
@@ -1024,7 +1024,7 @@ elif { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" 
     rp="$(realpath "$1")"
     bn="$(basename "$rp")"
 
-    export NO_QUIT_DAEMONS=y
+    export NO_QUIT_WORKERS=y
 
     # This is for read-only text at the top of a potentially new file
     export PEN_PROMPT
@@ -2070,11 +2070,11 @@ IFS= read -r -d '' shcode <<HEREDOC
         --env KHALA_PORT \
         --env PEN_ENGINE \
         --env PEN_NO_TIMEOUT \
-        --env PEN_N_DAEMONS \
+        --env PEN_N_WORKERS \
         --env PEN_PROMPT \
         --env PEN_HELP \
         --env PEN_OVERLAY \
-        --env NO_QUIT_DAEMONS \
+        --env NO_QUIT_WORKERS \
         --env USE_NVC \
         --env TERM \
         --env USE_NVC \
@@ -2107,7 +2107,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         fi
         ) \
         $(if test "$network" = swarm; then
-        ` #  Overlay networks connect multiple Docker daemons together and enable swarm services to communicate with each other. `
+        ` #  Overlay networks connect multiple Docker workers together and enable swarm services to communicate with each other. `
         (
         docker swarm init
         docker network create --driver=overlay --attachable --subnet=192.168.0.0/16 pennet
@@ -2140,7 +2140,7 @@ IFS= read -r -d '' shcode <<HEREDOC
     sleep 15
 
     # After it has started, simply run again
-    # "$sn" tm new pen-watch-daemons
+    # "$sn" tm new pen-watch-workers
     "$sn" sh pen-tm init-or-attach -n pen
 HEREDOC
     }

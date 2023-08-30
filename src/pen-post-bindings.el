@@ -4,7 +4,7 @@
 
 (sslk "lVc" 'toggle-chrome)
 (sslk "lVr" 'toggle-read-only)
-(sslk "lay" #'daemons)
+(sslk "lay" #'workers)
 (sslk "laY" (make-etui-cmd "chkservice" nil))
 (sslk "law" 'aws-instances)
 (sslk "lap" #'list-processes)

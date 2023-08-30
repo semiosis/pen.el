@@ -67,7 +67,7 @@
   (pen-list-global-variables))
 
 (defun emacs-properties ()
-  `(("daemon/server name" . ,(pen-daemon-name))
+  `(("worker/server name" . ,(pen-worker-name))
     ("after-init-hook" . ,(str after-init-hook))))
 
 (defun pen-emacs-properties-json ()

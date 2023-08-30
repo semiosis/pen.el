@@ -1707,7 +1707,7 @@ snippet spawn_in_background
 		if not_dryrun; then
 			CMD=$1
 			shift
-			/sbin/start-stop-daemon -b --exec $CMD -S -- $*
+			/sbin/start-stop-worker -b --exec $CMD -S -- $*
 		fi
 	}
 snippet no0

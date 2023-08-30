@@ -176,8 +176,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -no-quit-daemons) {
-        NO_QUIT_DAEMONS=y
+    -no-quit-workers) {
+        NO_QUIT_WORKERS=y
         shift
     }
     ;;
@@ -188,10 +188,10 @@ esac; done
 # for ttyd
 export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 
-# Must quit all emacs daemons and relinquish their reservations before ever checking available pool
+# Must quit all emacs workers and relinquish their reservations before ever checking available pool
 # run.sh *should* only happen when starting Pen for the first time, except for when the first argument is a file.
-if ! test "$NO_QUIT_DAEMONS" = y; then
-    echo -n Resetting daemons... 1>&2
+if ! test "$NO_QUIT_WORKERS" = y; then
+    echo -n Resetting workers... 1>&2
     unbuffer pen-e qa &>/dev/null
     echo " done."
 fi
@@ -263,7 +263,7 @@ pen-of-imagination | cat
 # In case I accidentally committed it
 rm -f /tmp/pen.yaml
 if test -n "$PEN_N_DAEMONS"; then
-    pen-rc-set -fp /tmp/pen.yaml n-daemons "$PEN_N_DAEMONS"
+    pen-rc-set -fp /tmp/pen.yaml n-daemons "$PEN_N_WORKERS"
 fi
 
 if test -n "$PEN_NO_TIMEOUT"; then
@@ -273,13 +273,13 @@ fi
 # On startup these should always be offline
 rm -f ~/.pen/pool/available/*
 if ! ls ~/.pen/pool/available/* 2>/dev/null | grep -q pen-emacsd; then
-    echo Starting daemon pool in background 1>&2
+    echo Starting worker pool in background 1>&2
     unbuffer pen-e sa &>/dev/null &
 fi
 
-# How to debug daemon
-# emacs -nw --daemon --debug-init
-# How to debug non-daemon
+# How to debug worker
+# emacs -nw --worker --debug-init
+# How to debug non-worker
 # emacs -nw --debug-init
 
 if ! test -n "$DISPLAY"; then

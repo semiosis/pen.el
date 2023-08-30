@@ -120,7 +120,7 @@
             ("*magit-prettier-graph*" :ignore nil :select t :same t)
             ("*xbm life*" :ignore nil :select t :same t)
             ("\\*docker.*\\*" :regexp t :ignore nil :select t :same t)
-            ;; v +/";; I had to modify this function because shackled didn't work" "$HOME/local/bin/my-daemons.el"
+            ;; v +/";; I had to modify this function because shackled didn't work" "$HOME/local/bin/my-workers.el"
             ("\\*daemons .*\\*" :regexp t :ignore nil :select t :same t)
             ("\\*define-it: .*\\*" :regexp t :ignore nil :select t :same t)
             ("\\*kubel .*\\*" :regexp t :ignore nil :select t :same t)

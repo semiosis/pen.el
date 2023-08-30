@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+n="$(pen-rc-get n-workers)"
+
+test -n "$n" || exit 1
+
+for i in $(seq 1 $n); do
+    cmd1 pen-fix-worker "$i" 1>&2
+    pen-fix-worker "$i"
+done

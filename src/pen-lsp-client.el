@@ -423,8 +423,8 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
              (call-interactively action))))))))
 (advice-remove 'pen-lsp-mouse-click #'ignore-errors-around-advice)
 
-;; TODO Test that the daemons are all ready before refreshing
-;; make that check because it means the daemons have finished prompting.
+;; TODO Test that the workers are all ready before refreshing
+;; make that check because it means the workers have finished prompting.
 ;; I could also check more frequently that way
 (defun pen-esp-idle-update-docs ()
   (interactive)

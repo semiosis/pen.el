@@ -195,5 +195,5 @@ fi
 
 if test "$USE_POOL" = "y"; then
     touch ~/.pen/pool/available/$SOCKET
-    # tmux neww -d -n fix-$SOCKET "shx pen-fix-daemon $SOCKET"
+    # tmux neww -d -n fix-$SOCKET "shx pen-fix-worker $SOCKET"
 fi

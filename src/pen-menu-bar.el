@@ -211,26 +211,26 @@
            '(menu-item "About Emacs..." ns-do-emacs-info-panel)))
     menu))
 
-(defset menu-bar-daemons-menu
-  (let ((menu (make-sparse-keymap "Daemons")))
+(defset menu-bar-workers-menu
+  (let ((menu (make-sparse-keymap "Workers")))
     (bindings--define-key menu [mi-pen-reload-all]
-      '(menu-item "Reload Pen.el config, engines and prompts for all daemons" pen-reload-all
-                  :help "Reload Pen.el config, engines and prompts for all daemons"))
-    (bindings--define-key menu [mi-pen-watch-daemons]
-      '(menu-item "Watch daemons" pen-watch-daemons
-                  :help "Watch daemons as their availability changes"))
+      '(menu-item "Reload Pen.el config, engines and prompts for all workers" pen-reload-all
+                  :help "Reload Pen.el config, engines and prompts for all workers"))
+    (bindings--define-key menu [mi-pen-watch-workers]
+      '(menu-item "Watch workers" pen-watch-workers
+                  :help "Watch workers as their availability changes"))
     (bindings--define-key menu [mi-pen-ka]
-      '(menu-item "Kill all daemons" pen-ka
-                  :help "Kill all daemon instances"))
-    (bindings--define-key menu [mi-pen-fix-daemons]
-      '(menu-item "Reset all daemons" pen-fix-daemons
-                  :help "Reset all daemon instances"))
+      '(menu-item "Kill all workers" pen-ka
+                  :help "Kill all worker instances"))
+    (bindings--define-key menu [mi-pen-fix-workers]
+      '(menu-item "Reset all workers" pen-fix-workers
+                  :help "Reset all worker instances"))
     (bindings--define-key menu [mi-pen-qa]
-      '(menu-item "Quit all daemons" pen-qa
-                  :help "Quit all daemon instances"))
+      '(menu-item "Quit all workers" pen-qa
+                  :help "Quit all worker instances"))
     (bindings--define-key menu [mi-pen-sa]
-      '(menu-item "Start all daemons" pen-sa
-                  :help "Start all daemon instances"))
+      '(menu-item "Start all workers" pen-sa
+                  :help "Start all worker instances"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -432,9 +432,9 @@
     (bindings--define-key menu [mi-pen-of-imagination]
       '(menu-item "The pen of imagination - |:ϝ∷¦ϝ" pen-of-imagination
                   :help "The pen of imagination - |:ϝ∷¦ϝ"))
-    (bindings--define-key menu [mi-menu-bar-daemons-menu]
-      `(menu-item "Daemons" ,menu-bar-daemons-menu
-                  :help "Control Pen.el daemons"))
+    (bindings--define-key menu [mi-menu-bar-workers-menu]
+      `(menu-item "Daemons" ,menu-bar-workers-menu
+                  :help "Control Pen.el workers"))
     (bindings--define-key menu [mi-pen-quit]
       '(menu-item "Shutdown Pen.el" pen-kill-emacs
                   :help "Shutdown everything"))
@@ -1216,9 +1216,9 @@
       (bindings--define-key global-map [menu-bar pen]
         (cons "Pen.el" menu-bar-pen-menu))
 
-      ;; (bindings--define-key global-map [menu-bar daemons]
-      ;;   (cons "Daemons" menu-bar-daemons-menu))
-      (bindings--define-key global-map [menu-bar daemons] nil)
+      ;; (bindings--define-key global-map [menu-bar workers]
+      ;;   (cons "Daemons" menu-bar-workers-menu))
+      (bindings--define-key global-map [menu-bar workers] nil)
 
       ;; (bindings--define-key global-map [menu-bar cterm]
       ;;   (cons "ct" menu-bar-cterm-menu))

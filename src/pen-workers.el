@@ -1,10 +1,16 @@
-(defun pen-fix-daemons ()
+(defun pen-sps-worker (&optional id_num)
   (interactive)
-  (pen-sps "pen-fix-daemons"))
+  (if id_num
+      (pen-sps (cmd "penw" id_num))
+    (pen-sps (cmd "penw"))))
 
-(defun pen-watch-daemons ()
+(defun pen-fix-workers ()
   (interactive)
-  (pen-sps "pen-watch-daemons"))
+  (pen-sps "pen-fix-workers"))
+
+(defun pen-watch-workers ()
+  (interactive)
+  (pen-sps "pen-watch-workers"))
 
 (defun pen-rla ()
   (interactive)
@@ -27,4 +33,4 @@
   (pen-sps
    (pen-cmd "pen-e" "sa")))
 
-(provide 'pen-daemons)
+(provide 'pen-workers)

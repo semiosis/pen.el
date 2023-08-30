@@ -298,7 +298,7 @@ revisions (interactive.e., use a \"...\" range)."
 (defun magit-sph ()
   "Run magit in a split window."
   (interactive)
-  (if (cl-search "magit" pen-daemon-name)
+  (if (cl-search "magit" pen-worker-name)
       (magit-status)
     (pen-sph "magit")))
 

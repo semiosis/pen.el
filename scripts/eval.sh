@@ -121,8 +121,8 @@ rm -f "$fp"
 # touch ~/.pen/pool/available/$SOCKET
 
 # sleep 1
-# nohup pen-fix-daemon $SOCKET
+# nohup pen-fix-worker $SOCKET
 
 if test "$USE_POOL" = "y"; then
-    tmux neww -d -n fix-$SOCKET "shx pen-fix-daemon $SOCKET"
+    tmux neww -d -n fix-$SOCKET "shx pen-fix-worker $SOCKET"
 fi

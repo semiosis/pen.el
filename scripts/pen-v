@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# env | tv &>/dev/null
+
 export OPENAI_API_KEY
 export GY_CMD
 export SHELL=bash
+export VIMRUNTIME=
 
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null

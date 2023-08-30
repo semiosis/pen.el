@@ -71,7 +71,7 @@
   (if path
       (chomp (pen-sn-basic (concat "realpath " (pen-q path) " 2>/dev/null") nil dir))))
 
-(defun pen-daemon-name ()
+(defun pen-worker-name ()
   (let ((d (daemonp)))
     (if d
         (if (stringp d)
@@ -82,7 +82,7 @@
 
 (defun pen-set-package-paths ()
   (interactive)
-  (if (string-match "^pen-emacsd-" (pen-daemon-name))
+  (if (string-match "^pen-emacsd-" (pen-worker-name))
       (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "/root/.emacs.d/elpa-light/")))))
     (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "/root/.emacs.d/elpa-full/"))))))
 

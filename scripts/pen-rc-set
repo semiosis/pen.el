@@ -22,7 +22,7 @@ esac; done
 
 : "${yaml_file:="~/.pen/pen.yaml"}"
 
-# pen-rc-set n-daemons 10
+# pen-rc-set n-workers 10
 
 key="$1"
 test -n "$key" || exit 1

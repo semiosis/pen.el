@@ -1,5 +1,5 @@
 (defun pen-modeline-name ()
-  (let ((dn (pen-daemon-name)))
+  (let ((dn (pen-worker-name)))
     (cond ((string-equal "DEFAULT" dn)
            "🖊")
           ((s-matches? "pen-" dn)
@@ -19,7 +19,7 @@
       ;; (error "ascii-letter-from-int: invalid character")
       )))
 
-(defun pen-daemons-modeline ()
+(defun pen-workers-modeline ()
   (mapconcat 'identity
              (mapcar
               'ascii-letter-from-int
@@ -27,7 +27,7 @@
                'string-to-int
                (split-string 
                 (e/chomp-all
-                 (pen-sn-basic "pen-ls-daemons"))
+                 (pen-sn-basic "pen-ls-workers"))
                 "\n")))
              ""))
 
@@ -37,7 +37,7 @@
                 ("  "
                  mode-line-buffer-identification "   "
                  "  " mode-line-modes)
-                ;; ,(pen-daemons-modeline)
+                ;; ,(pen-workers-modeline)
                 ))
 
 (defun pen-modeline-progressbar-demo (&optional duration)

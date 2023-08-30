@@ -188,10 +188,10 @@ print_err() {
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     sa|-sa|-startall|-start-all) {
-        # This should start n daemons
+        # This should start n workers
         # set -x
 
-        : "${n:="$(pen-rc-get n-daemons)"}"
+        : "${n:="$(pen-rc-get n-workers)"}"
         : "${n:="5"}"
 
         mkdir -p ~/.pen/pool/available
@@ -200,7 +200,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         for i in $(seq 1 $n); do
             pool_socket="pen-emacsd-$i"
             cmd1 pen-e -D "$pool_socket" sd 1>&2
-            # Use gnu parallel  to start all daemons at once
+            # Use gnu parallel  to start all workers at once
             pen-e -D "$pool_socket" sd
             if pen-e -D "$pool_socket" running; then
                 touch ~/".pen/pool/available/$pool_socket"
@@ -213,7 +213,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     ka|-ka|-killall|-kill-all) {
-        # This should kill all n daemons
+        # This should kill all n workers
         shift
 
         signal="$1"; : ${signal:="INT"}
@@ -234,8 +234,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         config_fp=~/.pen/pen.yaml
         if test -f "$config_fp"; then
-            # IFS= read -rd '' n < <(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null);typeset -p n &>/dev/null
-            n="$(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null)"
+            # IFS= read -rd '' n < <(cat "$config_fp" | yq -r '.["n-workers"] // empty' 2>/dev/null);typeset -p n &>/dev/null
+            n="$(cat "$config_fp" | yq -r '.["n-workers"] // empty' 2>/dev/null)"
         fi
         : "${n:="5"}"
 
@@ -264,8 +264,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         config_fp=$HOME/.pen/pen.yaml
         if test -f "$config_fp"; then
-            # IFS= read -rd '' n < <(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null);typeset -p n &>/dev/null
-            n="$(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null)"
+            # IFS= read -rd '' n < <(cat "$config_fp" | yq -r '.["n-workers"] // empty' 2>/dev/null);typeset -p n &>/dev/null
+            n="$(cat "$config_fp" | yq -r '.["n-workers"] // empty' 2>/dev/null)"
         fi
         : "${n:="5"}"
 
@@ -293,8 +293,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         config_fp=~/.pen/pen.yaml
         if test -f "$config_fp"; then
-            # IFS= read -rd '' n < <(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null);typeset -p n &>/dev/null
-            n="$(cat "$config_fp" | yq -r '.["n-daemons"] // empty' 2>/dev/null)"
+            # IFS= read -rd '' n < <(cat "$config_fp" | yq -r '.["n-workers"] // empty' 2>/dev/null);typeset -p n &>/dev/null
+            n="$(cat "$config_fp" | yq -r '.["n-workers"] // empty' 2>/dev/null)"
         fi
         : "${n:="5"}"
 
@@ -796,13 +796,13 @@ case "$f" in
     }
     ;;
 
-    sd|start-daemon) # start daemon
+    sd|start-worker) # start worker
         {
             while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
                 "") { shift; }; ;;
                 -d) {
                     QUIET=n
-                    DEBUG_DAEMON=y
+                    DEBUG_WORKER=y
                     shift
                     shift
                 }
@@ -815,7 +815,7 @@ case "$f" in
 
         : ${SOCKET:="DEFAULT"}
 
-        ! test "$QUIET" = "y" && print_err "Boostrapping emacs daemon $SOCKET... "
+        ! test "$QUIET" = "y" && print_err "Boostrapping emacs worker $SOCKET... "
 
         (
 
@@ -827,7 +827,7 @@ case "$f" in
             if [ -n "$SOCKET" ]; then
                 pen-e running && exit 0
 
-                if test "$DEBUG_DAEMON" = "y"; then
+                if test "$DEBUG_WORKER" = "y"; then
                     eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -ta '' -s ~/.emacs.d/server/$SOCKET $CMD"
                 else
                     eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET $CMD"
@@ -835,7 +835,7 @@ case "$f" in
             else
                 pen-e running && exit 0
 
-                if test "$DEBUG_DAEMON" = "y"; then
+                if test "$DEBUG_WORKER" = "y"; then
                     eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -ta '' $CMD"
                 else
                     eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -nta '' $CMD"
@@ -843,7 +843,7 @@ case "$f" in
             fi
         )
 
-        # unbuffer pen-e -e "(progn (try (run-hooks 'my-daemon-start-hook))(try (delete-frame)))" &>/dev/null
+        # unbuffer pen-e -e "(progn (try (run-hooks 'my-worker-start-hook))(try (delete-frame)))" &>/dev/null
         unbuffer pen-e -e "(progn (try (delete-frame)))" &>/dev/null
 
         ! test "$QUIET" = "y" && print_err "server now running."
@@ -1115,13 +1115,13 @@ case "$f" in
                 lc_socket="$(pen-pl "$SOCKET" | sed 's/_.*$//' | pen-c lc)"
                 COLUMNS=10000 ps -ef |grep "pen-e -D $lc_socket"
 
-                COLUMNS=10000 ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/$SOCKET\$/p"
+                COLUMNS=10000 ps -ef | grep emacs | sed -n "/emacs --worker=.*\/$SOCKET\$/p"
             } | pen-str field 2 | {
                 pids="$(cat)"
                 pen-pl "$pids" | xargs kill -"$signal"
             }
         else
-            ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/DEFAULT\$/p" | field 2 | {
+            ps -ef | grep emacs | sed -n "/emacs --worker=.*\/DEFAULT\$/p" | field 2 | {
                 pids="$(cat)"
                 pen-pl "$pids" | xargs kill -"$signal"
                 pen-pl "$pids" | xargs kill -9
@@ -1163,7 +1163,7 @@ case "$f" in
 
     c|-x|x|pen-e|client) { # start emacs client
         if ! pen-e running; then
-            echo "$SOCKET not started yet. Starting daemon." 1>&2
+            echo "$SOCKET not started yet. Starting worker." 1>&2
             pen-e sd
             # exit $?
         fi

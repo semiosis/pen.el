@@ -35,7 +35,7 @@
 (defun pen-find-file-read-only-context ()
   ;; Also ensure this is an eipe in the first place
   ;; Either that or remove the file when done with it
-  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_prompt")))
+  (let ((fp (concat "~/.pen/eipe/" (pen-worker-name) "_prompt")))
     (if (f-exists-p fp)
         (let* ((prompt (slurp-file fp))
                ;; (charlen (string-bytes prompt))
@@ -82,7 +82,7 @@
 ;; This isn't ideal for human prompting because not all of the docs are displayed.
 ;; I might have to stick with an inline text prompt, sadly.
 (defun pen-find-file-overlay-info ()
-  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_overlay")))
+  (let ((fp (concat "~/.pen/eipe/" (pen-worker-name) "_overlay")))
     (if (f-exists-p fp)
         (let* ((info (slurp-file fp)))
           ;; (end-of-buffer)
@@ -110,7 +110,7 @@
        (window-height . fit-window-to-buffer)))))
 
 (defun pen-find-file-buffer-info ()
-  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_help")))
+  (let ((fp (concat "~/.pen/eipe/" (pen-worker-name) "_help")))
     (if (f-exists-p fp)
         (let* ((info (slurp-file fp)))
           (pen-eipe-set-info-buffer info)
@@ -124,7 +124,7 @@
            (propertize "\n" 'face 'pen-none-face))))
 
 (defun pen-find-file-preoverlay-info ()
-  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_preoverlay")))
+  (let ((fp (concat "~/.pen/eipe/" (pen-worker-name) "_preoverlay")))
     (if (f-exists-p fp)
         (let* ((info (slurp-file fp)))
           (pen-eipe-set-info-preoverlay info)
@@ -218,7 +218,7 @@
           ))))
 
 (defun pen-find-file-eipe-data ()
-  (let ((fp (concat "~/.pen/eipe/" (pen-daemon-name) "_eipe_data")))
+  (let ((fp (concat "~/.pen/eipe/" (pen-worker-name) "_eipe_data")))
     (if (f-exists-p fp)
         (let* ((info (slurp-file fp)))
           (pen-eipe-set-eipe-data info)

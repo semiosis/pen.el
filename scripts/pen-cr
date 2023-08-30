@@ -1030,7 +1030,7 @@ case "$fnspec" in
         }
 
         if pen-yn "Install?"; then
-            # TODO "--squash" is only supported on a Docker daemon with experimental features enabled
+            # TODO "--squash" is only supported on a Docker worker with experimental features enabled
             # --squash .
             # real-docker image build -f "$fn" --squash --no-cache --network=host -t "$(dirslug | sed 's/^-*//' | tr -d '\n';)-$(pwd | hash-crc32 | tr -d '\n'):1.0" .
             real-docker image build -f "$fn" --no-cache --network=host -t "$(dirslug | sed 's/^-*//' | tr -d '\n';)-$(pwd | hash-crc32 | tr -d '\n'):1.0" .

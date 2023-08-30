@@ -72,7 +72,7 @@ or place it inside of =~/.pen=.
 *** elisp
 + =pen-support.el= :: http://github.com/semiosis/pen.el/blob/master/src/pen-support.el
 #+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (defun pen-daemon-name ()
+  (defun pen-worker-name ()
     (let ((d (daemonp)))
       (if d
           (if (stringp d)

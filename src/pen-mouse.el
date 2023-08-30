@@ -1,5 +1,11 @@
 (require 'mwheel)
 
+;; mouse tracking seems to work in the terminal anyway
+;; especially with tmux next-3.4.
+;; But track-mouse appears to actually change the active frame
+(setq track-mouse t)
+;; (setq track-mouse nil)
+
 ;; This breaks from emacs27
 
 (defun mouse-wheel-scroll-more (event)

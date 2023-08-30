@@ -61,7 +61,7 @@ test -n "$ALSO_EXPORT" && {
 : "${PEN_USER_AGENT:="emacs/pen"}"
 
 export PEN_LM_COMMAND
-export PEN_DAEMON
+export PEN_WORKER
 export PEN_USER_AGENT
 export PEN_LM_KEY
 export PEN_MIN_TOKENS

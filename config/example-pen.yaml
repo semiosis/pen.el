@@ -85,10 +85,10 @@ enable-logprobs: on
 default-logprobs: 10
 
 # This is a pool of emacs daemons used for prompting
-# n-daemons: 20
-# n-daemons: 5
+# n-workers: 20
+# n-workers: 5
 # The minimum number of daemons for apostrophe to work correctly is 2
-n-daemons: 2
+n-workers: 2
 
 # This may also be set with `pen -nto`
 # no-timeout: on

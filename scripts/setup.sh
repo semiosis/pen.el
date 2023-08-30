@@ -812,7 +812,7 @@ agi sudo
 
 ## Install nix and dap tools under the pen user
 # login pen
-# sh <(curl -L https://nixos.org/nix/install) --no-daemon
+# sh <(curl -L https://nixos.org/nix/install) --no-worker
 # curl https://dapp.tools/install | sh
 
 agi ispell

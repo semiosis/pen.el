@@ -122,7 +122,7 @@ argument, prompt for a regular expression using `read-regexp'."
 
   (org-set-heading-height-1)
 
-  ;; I must ignore errors for everything or the frame wont even start for daemons
+  ;; I must ignore errors for everything or the frame wont even start for workers
   ;; Be careful
   (progn
     (set-face-attribute

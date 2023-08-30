@@ -12,7 +12,7 @@ read -r -d '' options <<HEREDOC
 i  eaws-instances
 k  kubernetes-overview
 Y  echkservice
-y  daemons
+y  workers
 d  sh-docker
 a  sh-aws
 HEREDOC
@@ -28,7 +28,7 @@ case "$d" in
     i) cmd="eaws-instances" ;;
     k) cmd="kubernetes-overview" ;;
     Y) cmd="echkservice" ;;
-    y) cmd="daemons" ;;
+    y) cmd="workers" ;;
     d) cmd="sh-docker" ;;
     a) cmd="sh-aws" ;;
 esac

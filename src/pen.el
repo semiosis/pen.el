@@ -126,7 +126,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-packages)
 (require 'pen-pensieve)
 (require 'pen-menu-bar)
-(require 'pen-daemons)
+(require 'pen-workers)
 (require 'pen-lentic)
 (require 'pen-clipboard)
 (require 'pen-source)
@@ -307,7 +307,7 @@ Be mindful of quoting arguments correctly."
              ((eq 8 m) " ◎")
              ((eq 9 m) " ○")
              (t " ⊚"))))
-      (setq pen-current-lighter (concat newlighter " <" (pen-daemons-modeline) ">"))
+      (setq pen-current-lighter (concat newlighter " <" (pen-workers-modeline) ">"))
       pen-current-lighter)))
 
 (define-minor-mode pen

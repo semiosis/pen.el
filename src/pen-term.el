@@ -530,7 +530,7 @@ without any interpretation."
 (add-hook 'term-mode-hook 'pen-disable-ivy-mode)
 
 (comment
- (if (cl-search "SPACEMACS" pen-daemon-name)
+ (if (cl-search "SPACEMACS" pen-worker-name)
      (progn
        (remove-hook 'term-mode-hook 'ansi-term-handle-close))))
 

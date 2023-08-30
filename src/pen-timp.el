@@ -2,10 +2,10 @@
 (require 'timp-packet)
 (require 'timp-server)
 
-;; TODO In the future, consider managing pen daemons with timp.
+;; TODO In the future, consider managing pen workers with timp.
 ;; But not yet.
 
-(defun pen-daemon-get-port ()
+(defun pen-worker-get-port ()
   ;; Calculate from the daemon name
   9700)
 
@@ -19,7 +19,7 @@
                         :filter 'timp-server-receive-data
                         :nowait t)
   (accept-process-output nil 0.1)
-  (timp-server-send-port-data (pen-daemon-get-port))
+  (timp-server-send-port-data (pen-worker-get-port))
   (advice-add 'message :around 'timp-server-message)
   (while t (sleep-for 0.5)))
 

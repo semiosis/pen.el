@@ -643,7 +643,7 @@ delim is used to guarantee the function returns multiple matches per line
                           (pen-bs "`" (pen-q rhs)))
                       ""))))))))
 
-(defun pen-daemon-name ()
+(defun pen-worker-name ()
   (let ((d (daemonp)))
     (if d
         (if (stringp d)

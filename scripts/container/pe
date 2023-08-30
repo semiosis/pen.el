@@ -17,8 +17,8 @@ p  pen
 D  doom
 i  scimax
 er exordium
-m  me (magit daemon)
-# M  nvt me -2 (magit daemon)
+m  me (magit worker)
+# M  nvt me -2 (magit worker)
 HEREDOC
 
 # f frank

@@ -165,7 +165,7 @@
       (setq text (str (pen-screen-verbatim-or-selection))))
 
   (let* ((el (pen-snc (pen-cmd "apostrophe-repl" "-getcomintcmd" "" "" text))))
-    ;; TODO Run multiple daemons and run tasks from a pool?
+    ;; TODO Run multiple workers and run tasks from a pool?
     (pen-e-sps (pen-lm (pen-eval-string el)))))
 
 (defun pen-list-incarnations-with-name (name)

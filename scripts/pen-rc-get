@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-# pen-rc-get n-daemons
+# pen-rc-get n-workers
 
 key="$1"
 

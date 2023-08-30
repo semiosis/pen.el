@@ -1,5 +1,3 @@
-(defvar-local lsp-ui-doc--inline-ov nil
-  "Overlay used to display the documentation in the buffer.")
+;; e:$HOME/.emacs.d/host/pen.el/src/pen-overlay-doc.el
 
-(defvar-local lsp-ui-doc--highlight-ov nil
-  "Overlay used to highlight the hover symbol.")
+(provide 'pen-bible-mode-doc)
