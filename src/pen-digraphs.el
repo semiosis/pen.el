@@ -48,13 +48,27 @@
 
 (defun symbol-select (&optional filter)
   (interactive)
-  (let ((digraph (tpop (cmd "unicode-select" filter) nil
-                       :output_b t
-                       :width_pc 90)))
-    (if (interactive-p)
-        (if buffer-read-only
-            (xc digraph)
-          (insert digraph))
-      digraph)))
+
+  (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 16)
+    (progn (tpop "list-unicode -lc"
+                 nil
+                 :width_pc 90)
+           nil))
+
+   ((>= (prefix-numeric-value current-prefix-arg) 4)
+    (progn (tpop "list-unicode"
+                 nil
+                 :width_pc 90)
+           nil))
+   
+   (t (let ((digraph (tpop (cmd "unicode-select" filter) nil
+                           :output_b t
+                           :width_pc 90)))
+        (if (interactive-p)
+            (if buffer-read-only
+                (xc digraph)
+              (insert digraph))
+          digraph)))))
 
 (provide 'pen-digraphs)

@@ -1,6 +1,17 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -lc) {
+        list_categories=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 IFS= read -r -d '' "categories" <<HEREDOC
 General Punctuation (U+2000 to U+206F)
 Superscripts and Subscripts (U+2070 to U+209F)
@@ -37,11 +48,17 @@ Supplemental Symbols and Pictographs (U+1F900 to U+1F9FF)
 Transport/Map (U+1F680 to U+1F6FF)
 HEREDOC
 
-printf -- "%s\n" "$categories" | awk 1 | while IFS=$'\n' read -r heading; do
-    first="$(echo "$heading" | scrape "U\\+[A-F0-9]+" | sed -n 1p | sed 's/^U+//')"
-    last="$(echo "$heading" | scrape "U\\+[A-F0-9]+" | sed -n 2p | sed 's/^U+//')"
-    echo "$heading" | udl
-    # 0</dev/null ci -f -nd unbuffer list-unicode-range "$first" "$last"
-    0</dev/null ci -f -nd odn list-unicode-range "$first" "$last"
-    echo
-done
+{
+if test "$list_categories" = "y"; then
+    printf -- "%s\n" "$categories" | awk 1
+else
+    printf -- "%s\n" "$categories" | awk 1 | while IFS=$'\n' read -r heading; do
+        first="$(echo "$heading" | scrape "U\\+[A-F0-9]+" | sed -n 1p | sed 's/^U+//')"
+        last="$(echo "$heading" | scrape "U\\+[A-F0-9]+" | sed -n 2p | sed 's/^U+//')"
+        echo "$heading" | udl
+        # 0</dev/null ci -f -nd unbuffer list-unicode-range "$first" "$last"
+        0</dev/null ci -f -nd odn list-unicode-range "$first" "$last"
+        echo
+    done
+fi
+} | pavs
