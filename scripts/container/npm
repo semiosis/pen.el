@@ -38,7 +38,6 @@ if is_tty && ! test "$IN_NPM" = y; then
     nvm use "$NODE_VERSION" 1>&2 || nvm install "$NODE_VERSION" 1>&2
 fi
 
-# Why was this added? - Fuck. Without removing SCRIPTS here I can't use a million tools
 export PATH="$(remove_from_path "$SCRIPTS")"
 
 # I don't want an infinite loop. Hopefully this stops it

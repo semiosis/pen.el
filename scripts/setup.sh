@@ -1422,3 +1422,8 @@ agi unicode
 ros install koji-kojiro/cl-repl
 
 e ia mini-frame
+
+# https://asciinema.org/~ronilan
+npm install -g impossible-flappy
+npm install -g impossible-breakout
+npm install -g impossible-hn
