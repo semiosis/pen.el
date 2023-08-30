@@ -1022,9 +1022,6 @@
     (bindings--define-key menu [mi-menu-bar-sandbox-menu]
       `(menu-item "Sandbox" ,menu-bar-sandbox-menu
                   :help "Start an sandbox"))
-    (bindings--define-key menu [mi-menu-bar-chan-menu]
-      `(menu-item "chan" ,menu-bar-chan-menu
-                  :help "Channel personalities to control your computer"))
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
       `(menu-item "cterm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
