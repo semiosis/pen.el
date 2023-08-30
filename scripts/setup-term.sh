@@ -33,7 +33,7 @@ export PATH="$PATH:/root/go/bin"
 export PATH="$PATH:/root/.cargo/bin/cargo"
 export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 
-if ! test -n "$PEN_DAEMON"; then
+if ! test -n "$PEN_WORKER"; then
     . ~/.cargo/env
 fi
 

@@ -262,8 +262,8 @@ pen-of-imagination | cat
 
 # In case I accidentally committed it
 rm -f /tmp/pen.yaml
-if test -n "$PEN_N_DAEMONS"; then
-    pen-rc-set -fp /tmp/pen.yaml n-daemons "$PEN_N_WORKERS"
+if test -n "$PEN_N_WORKERS"; then
+    pen-rc-set -fp /tmp/pen.yaml n-workers "$PEN_N_WORKERS"
 fi
 
 if test -n "$PEN_NO_TIMEOUT"; then

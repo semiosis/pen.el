@@ -68,6 +68,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    --header|-H) {
+        header="$2"
+        shift
+        shift
+    }
+    ;;
+
+    --prompt|-P) {
+        prompt="$2"
+        shift
+        shift
+    }
+    ;;
+
     -R) {
         # rosie match all things
         :
@@ -269,6 +283,14 @@ filter_out() {
 }
 
 opts=""
+
+if test -n "$header"; then
+    opts+=" $(cmd --header "$header")"
+fi
+
+if test -n "$prompt"; then
+    opts+=" $(cmd --prompt "${prompt}: ")"
+fi
 
 if test "$MULTI" = "y"; then
     opts+=" -m "

@@ -219,6 +219,9 @@
     (bindings--define-key menu [mi-pen-watch-workers]
       '(menu-item "Watch workers" pen-watch-workers
                   :help "Watch workers as their availability changes"))
+    (bindings--define-key menu [mi-pen-sps-worker]
+      '(menu-item "Show worker in tmux" pen-sps-worker
+                  :help "Open up a Pen worker in a tmux window"))
     (bindings--define-key menu [mi-pen-ka]
       '(menu-item "Kill all workers" pen-ka
                   :help "Kill all worker instances"))

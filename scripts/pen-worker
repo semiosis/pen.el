@@ -4,6 +4,13 @@ export TTY
 num="$1"
 shift
 
+if ! test -n "$num"; then
+    n_workers="$(pen-ls-workers)"
+    : "${n_workers:="1"}"
+    num="$(seq 1 $n_workers | mfz -P "Worker ID")"
+    : "${num:="1"}"
+fi
+
 : "${SOCKET:="DEFAULT"}"
 
 if test -n "$num"; then
