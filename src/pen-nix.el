@@ -147,6 +147,17 @@ Be mindful of quoting arguments correctly."
 (defun udl (input)
   (pen-sn "udl | chomp" input))
 
+(defun sh/cat (&optional path input no_unminimise)
+  "cat out a file, or write to one"
+  (if (not no_unminimise)
+      (setq path (pen-umn path)))
+  (cond
+   ((and (test-f path) input)
+    (pen-sn (concat "sponge " (pen-q path) " 2>/dev/null") input))
+   ((test-f path)
+    (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil nil nil nil nil t))
+   (t (error "Bad path"))))
+
 (defun sh/cat (input)
   "This is useful as a sponge sometimes. I honestly don't know why fzf doesn't like being passed to filter-selection."
   (sh "cat" input t))
@@ -298,11 +309,17 @@ Be mindful of quoting arguments correctly."
 (defun s/cat-awk1 (path &optional dir)
   (setq path (pen-umn path))
   (pen-sn (concat "cat " (pen-q path) " | awk 1" " 2>/dev/null") nil dir))
-(defun e/cat (path)
-  "Return the contents of FILENAME."
-  (with-temp-buffer
-    (insert-file-contents path)
-    (buffer-string)))
+
+(defun e/cat (&optional path input no_unminimise)
+  "cat out a file, or write to one"
+  (if (not no_unminimise)
+      (setq path (pen-umn path)))
+  (cond
+   ((and (test-f path) input) (write-to-file input path))
+   ((test-f path) (with-temp-buffer
+                    (insert-file-contents path)
+                    (buffer-string)))
+   (t (error "Bad path"))))
 
 ;; (defun s/cat (path &optional dir)
 ;;   "cat out a file"

@@ -269,6 +269,14 @@
         (concat booktitle " " chapverse)
       booktitle)))
 
+(defun member-lambda ()
+
+  )
+
+(defun bible-book-only-p (s)
+  (member (bible-canonicalise-ref s)
+          bible-mode-book-chapters))
+
 ;; TODO Generate this list
 ;; TODO Also have a map which translates into these
 (defvar bible-mode-book-chapters

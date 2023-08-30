@@ -3,9 +3,11 @@ export TTY
 
 # export "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION"
 
-aqf() {
-    cmd-nice-without-bs "$@"
-}
+aqf() { apply q "$@"; }
+
+# aqf() {
+#     cmd-nice-without-bs "$@"
+# }
 
 pl() {
     printf -- "%s\n" "$@"

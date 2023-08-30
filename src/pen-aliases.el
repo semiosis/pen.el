@@ -1,6 +1,7 @@
 (require 'pcase)
 
 (defalias 'test-z 'string-empty-p)
+(defalias 'test-f 'file-exists-p)
 
 (defun test-n (s)
   (not (string-empty-p s)))

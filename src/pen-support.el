@@ -762,6 +762,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
               (-filter 'identity
                        (list (list "DISPLAY" ":0")
                              (list "PATH" (getenv "PATH"))
+                             (list "TMUX" "")
+                             (list "TMUX_PANE" "")
                              (list "PEN_DAEMON" (sor (daemonp) "default"))
                              (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
                              (if (or (pen-var-value-maybe 'pen-sh-update)
@@ -899,10 +901,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
 (if (inside-docker-p)
     (progn
-      (defun s/cat (path &optional dir)
+      (defun s/cat (&optional path input)
         "cat out a file"
         (setq path (pen-umn path))
-        (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") nil dir))
+        (pen-sn (concat "cat " (pen-q path) " 2>/dev/null") input))
       (defalias 'cat 's/cat)))
 
 ;; slugify is used in sn, so it must contain an explicit directory, to be safe,

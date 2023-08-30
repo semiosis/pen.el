@@ -211,9 +211,11 @@ START and END can be in either order."
   (if (not (sor window-type))
       (setq window-type "nw"))
   (if output_b
-      (if input
-          (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -sout -S " window-type " " nw_args " " (pen-q cmd) " | cat") input dir)
-        (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -sout -S " window-type " " nw_args " " (pen-q cmd) " &") input dir))
+      (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -sout -S " window-type " " nw_args " " (pen-q cmd)
+                      (if input
+                          " | cat"
+                        " &"))
+              input dir)
     (if input
         (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -tout -S " window-type " " nw_args " " (pen-q cmd)) input dir)
       (if (display-graphic-p)
