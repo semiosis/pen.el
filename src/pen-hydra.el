@@ -305,7 +305,7 @@ display values."
                                   (let ((d (daemonp)))
                                     (if d
                                         (message d)
-                                      (message "not a daemon")
+                                      (message "not a worker")
                                       nil))))
                          ("r" #'restart-emacs "restart emacs")
                          ("q" #'pen-quit "quit emacs frame")))
@@ -828,7 +828,7 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
   ("e" #'pen-revert "revert")
   ("x" #'kill-emacs "kill emacs")
   ("c" #'revert-and-quit-emacsclient-without-killing-server "kill emacsclient")
-  ("d" (df show-workerp () (message (workerp))) "(workerp)")
+  ("d" (df show-workerp () (message (daemonp))) "(daemonp)")
   ("r" #'restart-emacs "restart emacs")
   ("q" #'pen-quit "quit emacs frame"))
 

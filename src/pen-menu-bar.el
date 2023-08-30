@@ -433,7 +433,7 @@
       '(menu-item "The pen of imagination - |:ϝ∷¦ϝ" pen-of-imagination
                   :help "The pen of imagination - |:ϝ∷¦ϝ"))
     (bindings--define-key menu [mi-menu-bar-workers-menu]
-      `(menu-item "Daemons" ,menu-bar-workers-menu
+      `(menu-item "Workers" ,menu-bar-workers-menu
                   :help "Control Pen.el workers"))
     (bindings--define-key menu [mi-pen-quit]
       '(menu-item "Shutdown Pen.el" pen-kill-emacs
@@ -1217,7 +1217,7 @@
         (cons "Pen.el" menu-bar-pen-menu))
 
       ;; (bindings--define-key global-map [menu-bar workers]
-      ;;   (cons "Daemons" menu-bar-workers-menu))
+      ;;   (cons "Workers" menu-bar-workers-menu))
       (bindings--define-key global-map [menu-bar workers] nil)
 
       ;; (bindings--define-key global-map [menu-bar cterm]

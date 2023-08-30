@@ -60,7 +60,7 @@
                         (apostrophe-generate-blurb ,their-name)
                         ;; (pen-one (pf-generate-wiki-blurb-for-a-famous-person/1 ,their-name :no-select-result t))
                         )))
-                  ;; Select from possible blurbs, then do a final human edit with a different emacs daemon
+                  ;; Select from possible blurbs, then do a final human edit with a different emacs worker
                   (pen-eipec
                    (eval
                     `(upd

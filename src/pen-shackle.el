@@ -121,7 +121,7 @@
             ("*xbm life*" :ignore nil :select t :same t)
             ("\\*docker.*\\*" :regexp t :ignore nil :select t :same t)
             ;; v +/";; I had to modify this function because shackled didn't work" "$HOME/local/bin/my-workers.el"
-            ("\\*daemons .*\\*" :regexp t :ignore nil :select t :same t)
+            ("\\*workers .*\\*" :regexp t :ignore nil :select t :same t)
             ("\\*define-it: .*\\*" :regexp t :ignore nil :select t :same t)
             ("\\*kubel .*\\*" :regexp t :ignore nil :select t :same t)
             ("\\*dante:.*\\*" :regexp t :ignore nil :select t :same t)

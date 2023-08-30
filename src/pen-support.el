@@ -764,7 +764,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                              (list "PATH" (getenv "PATH"))
                              (list "TMUX" "")
                              (list "TMUX_PANE" "")
-                             (list "PEN_DAEMON" (sor (daemonp) "default"))
+                             (list "PEN_WORKER" (sor (daemonp) "default"))
                              (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
                              (if (or (pen-var-value-maybe 'pen-sh-update)
                                      (pen-var-value-maybe 'pen-sh-update))
@@ -1567,7 +1567,7 @@ when s is a string, set the clipboard to s"
                              &rest body)
   `(let ((result
           (progn ,@body)))
-     ;; (message (concat "writing to /tmp/eval-output-" ,daemon-name ".txt"))
+     ;; (message (concat "writing to /tmp/eval-output-" ,worker-name ".txt"))
 
      (shut-up
        (if result
