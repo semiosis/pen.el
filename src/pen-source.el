@@ -22,10 +22,6 @@
   (interactive)
   (dired (f-join pen-penel-directory "src")))
 
-(defun pen-dired-chan ()
-  (interactive)
-  (dired pen-chan-directory))
-
 (defun pen-acolyte-dired-dni ()
   (interactive)
   (dired pen-dni-directory))

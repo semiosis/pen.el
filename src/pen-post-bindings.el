@@ -203,7 +203,6 @@
   (sslk "ldqV" 'pen-acolyte-dired-protoverses)
   (sslk "ldqv" 'pen-acolyte-dired-metaverses)
   (sslk "ldqC" 'pen-acolyte-dired-creation)
-  (sslk "ldq7" 'pen-dired-chan)
   (sslk "ldqs" 'pen-acolyte-dired-scripts)
   (sslk "ldqc" 'pen-acolyte-dired-config)
   (sslk "lds" 'pen-acolyte-dired-scripts)
