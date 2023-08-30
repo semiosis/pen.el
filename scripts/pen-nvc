@@ -3,7 +3,7 @@ export TTY
 
 # export "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION"
 
-aqf() { apply q "$@"; }
+aqf() { apply q "$@" | bs '`'; }
 
 # aqf() {
 #     cmd-nice-without-bs "$@"

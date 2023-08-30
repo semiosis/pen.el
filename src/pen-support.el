@@ -154,7 +154,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 (defun pen-alist-set (alist-symbol key value)
   "Set KEY to VALUE in alist ALIST-SYMBOL."
   (set alist-symbol
-       (cons (list key value) 
+       (cons (list key value)
              (assq-delete-all key (eval alist-symbol)))))
 
 (defun pen-alist-setcdr (alist-symbol key value)
@@ -789,8 +789,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
             (setq final_cmd (concat final_cmd " rm -f " (pen-q input_tf) ";")))
 
         ;; I need a log level here. This will be too verbose
-        (setq final_cmd (pen-log-verbose
-                         (concat exps "; ( cd " (pen-q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " tf))))
+        (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " tf)))
 
       (if detach
           (if stdin
@@ -2058,7 +2057,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
                (not (string-match "\\[*Org Src" (buffer-name))))
           (progn
             (save-buffer)
-            (let ((c 
+            (let ((c
                    (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
               (shell-command c)))
         (let ((c

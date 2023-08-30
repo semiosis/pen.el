@@ -32,6 +32,7 @@
       (defalias 'ff 'find-file)
       (defalias 'zrepl 'pen-zrepl)
       (defalias 'pen-copy 'xc)
+      (defalias 'tf 'pen-tf)
       (defalias 'mm 'pen-mm)
       (defalias 'sn 'pen-sn)
       (defalias 'snc 'pen-snc)

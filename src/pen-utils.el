@@ -82,6 +82,12 @@
 (defun current-file-name ()
   (if buffer-file-name (basename buffer-file-name)))
 
+(defun file-delete (path &optional force)
+  "Delete PATH, which can be file or directory."
+  (if (or (file-regular-p path) (not (not (file-symlink-p path))))
+      (delete-file path)
+    (delete-directory path force)))
+
 (defun open-next-file ()
   (interactive)
   ;; This works but killing the buffer is a little dangerous

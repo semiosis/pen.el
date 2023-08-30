@@ -6,7 +6,7 @@ export TTY
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 read -r -d '' elisp_command <<HEREDOC
-$(cat "/root/.pen/documents/notes/lambda-emacs.el")
+$(cat "$(which lambda-emacs.el)")
 HEREDOC
 
 : "${elisp_command:="t"}"
