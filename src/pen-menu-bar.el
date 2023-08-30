@@ -489,16 +489,6 @@
                   :help "Cancel out of this menu"))
     menu))
 
-(defset menu-bar-channel-menu
-  (let ((menu (make-sparse-keymap "Chann.el")))
-    (bindings--define-key menu [mi-channel-chatbot-from-name]
-      '(menu-item "Channel a chatbot to control your terminal" channel-chatbot-from-name
-                  :help "A chatbot takes command of your host terminal"))
-    (bindings--define-key menu [cancel-menu]
-      '(menu-item "Cancel" identity-command
-                  :help "Cancel out of this menu"))
-    menu))
-
 (defset menu-bar-ii-lang-menu
   (let ((menu (make-sparse-keymap "Imaginary Interpreter")))
     (bindings--define-key menu [mi-ii-python]
@@ -621,11 +611,11 @@
 
 (defset menu-bar-mtp-menu
   (let ((menu (make-sparse-keymap "MadTeaParty")))
-    (bindings--define-key menu [mi-channel-say-something]
-      '(menu-item "Say something" channel-say-something
+    (bindings--define-key menu [mi-chan-say-something]
+      '(menu-item "Say something" chan-say-something
                   :help "While running MTP in pet you can run this to suggest something to say"))
-    (bindings--define-key menu [mi-channel-loop-chat]
-      '(menu-item "This loops 'Say something'" channel-loop-chat
+    (bindings--define-key menu [mi-chan-loop-chat]
+      '(menu-item "This loops 'Say something'" chan-loop-chat
                   :help "While running MTP in pet you can run this to create a loop which talks continually"))
     (bindings--define-key menu [mi-mtp-connect-with-name]
       '(menu-item "Spawn a new user in Mad Tea-Party" pen-mtp-connect-with-name
@@ -1032,8 +1022,8 @@
     (bindings--define-key menu [mi-menu-bar-sandbox-menu]
       `(menu-item "Sandbox" ,menu-bar-sandbox-menu
                   :help "Start an sandbox"))
-    (bindings--define-key menu [mi-menu-bar-channel-menu]
-      `(menu-item "channel" ,menu-bar-channel-menu
+    (bindings--define-key menu [mi-menu-bar-chan-menu]
+      `(menu-item "chan" ,menu-bar-chan-menu
                   :help "Channel personalities to control your computer"))
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
       `(menu-item "cterm" ,menu-bar-cterm-menu
@@ -1241,9 +1231,9 @@
       ;;   (cons "Melee" menu-bar-melee-menu))
       (bindings--define-key global-map [menu-bar melee] nil)
 
-      ;; (bindings--define-key global-map [menu-bar channel]
-      ;;   (cons "Chann" menu-bar-channel-menu))
-      (bindings--define-key global-map [menu-bar channel] nil)
+      ;; (bindings--define-key global-map [menu-bar chan]
+      ;;   (cons "Chann" menu-bar-chan-menu))
+      (bindings--define-key global-map [menu-bar chan] nil)
 
       ;; (bindings--define-key global-map [menu-bar ii]
       ;;   (cons "𝑖i" menu-bar-ii-menu))

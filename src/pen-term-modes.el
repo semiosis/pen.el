@@ -290,7 +290,7 @@
                (insert-file-contents "/tmp/emacskbm.txt")
                (buffer-string)))))
 
-(defun irssi-search-channels (pattern)
+(defun irssi-search-chans (pattern)
   (interactive (list (read-string "pattern:")))
   ;; The 7th window is probably a freenode window
   (pen-snc "pen-tm sel localhost_im:irssi")
@@ -302,7 +302,7 @@
   (ekm (edmacro-format-keys "/query alis"))
   (ekm "C-m"))
 
-(define-key irssi-term-mode-map (kbd "M-/") #'irssi-search-channels)
+(define-key irssi-term-mode-map (kbd "M-/") #'irssi-search-chans)
 
 (define-key br-term-mode-map (kbd "C-h") (pen-lm (ekm "DEL")))
 

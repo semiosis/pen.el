@@ -22,9 +22,9 @@
   (interactive)
   (dired (f-join pen-penel-directory "src")))
 
-(defun pen-dired-channel ()
+(defun pen-dired-chan ()
   (interactive)
-  (dired pen-channel-directory))
+  (dired pen-chan-directory))
 
 (defun pen-acolyte-dired-dni ()
   (interactive)

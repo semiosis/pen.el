@@ -36,9 +36,9 @@
             (setq header-line-format
                   (s-replace-regexp "^    " "" header-line-format)))
         (global-hide-mode-line-mode 1)
-        (visual-line-mode -1)
-        (setq-default truncate-lines t)
-        (setq truncate-lines t)
+        ;; (visual-line-mode -1)
+        ;; (setq-default truncate-lines t)
+        ;; (setq truncate-lines t)
         (menu-bar-mode -1))
     (progn
       (if lsp-mode
@@ -47,11 +47,15 @@
       (if (stringp header-line-format)
           (setq header-line-format (concat "    " header-line-format)))
       (global-hide-mode-line-mode -1)
-      (visual-line-mode 1)
-      (setq-default truncate-lines nil)
-      (setq truncate-lines nil)
+      ;; (visual-line-mode 1)
+      ;; (setq-default truncate-lines nil)
+      ;; (setq truncate-lines nil)
       (menu-bar-mode 1))))
 (defalias 'toggle-minimal-clutter 'toggle-chrome)
+
+(visual-line-mode 1)
+(setq-default truncate-lines nil)
+(setq truncate-lines nil)
 
 ;; There's no way to get truncate-lines from being enabled by default.
 ;; It must be set as default to t for visual-line mode to work.

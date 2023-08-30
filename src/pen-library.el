@@ -1002,9 +1002,11 @@ non-nil."
   (interactive "P")
   (if truncate-lines
       (progn
+        (visual-line-mode 1)
         (setq truncate-lines nil)
         (setq-default truncate-lines nil))
     (progn
+      (visual-line-mode -1)
       (setq truncate-lines t)
       (setq-default truncate-lines t))))
 

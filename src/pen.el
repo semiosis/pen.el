@@ -2199,7 +2199,7 @@ May use to generate code from comments."
 (require 'pen-apostrophe)
 (require 'pen-python)
 (require 'pen-melee)
-(require 'pen-channel)
+(require 'pen-chan)
 (require 'pen-scratch)
 (require 'pen-minor-modes)
 (require 'pen-modeline)

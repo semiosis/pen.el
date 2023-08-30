@@ -210,12 +210,6 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
-(defcustom pen-channel-directory "/root/repos/channel"
-  "Personal channel repository"
-  :type 'string
-  :group 'pen
-  :initialize #'custom-initialize-default)
-
 (defcustom pen-dni-directory (f-join user-emacs-directory "dni")
   "Personal dni repository"
   :type 'string

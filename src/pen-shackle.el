@@ -201,7 +201,7 @@
             ("\\*helpful .*" :regexp t :other t :select t :same nil :align pen--shackle-sensible-alignment :size 0.5)
             ;; ("*Help*" :other t :select nil :same nil :align pen--shackle-sensible-alignment :size 0.25)
             ;; ("*Help*" :other t :select t)
-            (circe-channel-mode :select t :same t)
+            (circe-chan-mode :select t :same t)
             (circe-server-mode :select t :same t)
             ("*org-brain*" :select t :same t)
             ("*Bufler*" :select t :same t)
