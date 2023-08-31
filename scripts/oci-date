@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -d) {
+        date="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# date-short
+
+: "${date:="$(date +%d.%m.%y)"}"
+
+oci -f -m "$date" "$@"

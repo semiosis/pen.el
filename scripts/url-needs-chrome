@@ -17,8 +17,8 @@ test_and_echo() {
 
 url_needs_chrome() {
     : "${chrome_patterns_fp:="$(test_and_echo -f "$NOTES/programs/eww/chrome-dom-url-patterns.txt")"}"
-    : "${chrome_patterns_fp:="$(test_and_echo -f "$HOME/.pen/conf/chrome-dom-url-patterns.txt")"}"
     : "${chrome_patterns_fp:="$(test_and_echo -f "$EMACSD/host/pen.el/config/chrome-dom-url-patterns.txt")"}"
+    : "${chrome_patterns_fp:="$(test_and_echo -f "$HOME/.pen/conf/chrome-dom-url-patterns.txt")"}"
     : "${chrome_patterns_fp:="$(test_and_echo -f "$EMACSD/pen.el/config/chrome-dom-url-patterns.txt")"}"
 
     url="$1"

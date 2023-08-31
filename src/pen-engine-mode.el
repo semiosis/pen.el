@@ -90,10 +90,15 @@
   :keybinding "g"
   :browser 'lg-eww)
 
-(defun chrome (url &optional discard)
+(defun chrome (url &optional discard no_xurls)
   (interactive (list (read-string-hist "chrome: ")))
   (pen-ns (concat "Chrome: " url))
-  (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer chrome " (pen-q (xurls url))))) nil nil nil t))
+  (if (not no_xurls)
+      (let ((url_xurls (xurls url)))
+        (if (and (not (string-equal url url_xurls))
+                 (yn "xurls changed the url. Use xurls?"))
+            (setq url url_xurls))))
+  (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer chrome " (pen-q url)))) nil nil nil t))
 
 ;; Unfortunately, search requires that I am logged in
 (defengine github-advanced

@@ -301,10 +301,10 @@ $HOME/.config/lab/lab.toml
 $NOTES/ws/english/my-words.txt
 $MYGIT/eggheads/eggdrop/eggdrop.conf
 $NOTES/programs/ns/_.txt
-$NOTES/programs/eww/google-cache-url-patterns.txt
-$NOTES/programs/eww/chrome-dom-url-patterns.txt
-$NOTES/programs/eww/reader-url-patterns.txt
-$NOTES/programs/eww/ff-url-patterns.txt
+/root/.emacs.d/host/pen.el/config/google-cache-url-patterns.txt
+/root/.emacs.d/host/pen.el/config/chrome-dom-url-patterns.txt
+/root/.emacs.d/host/pen.el/config/reader-url-patterns.txt
+/root/.emacs.d/host/pen.el/config/ff-url-patterns.txt
 $NOTES/ws/services/fuzzy.txt
 $NOTES/ws/utils/fuzzy.txt
 $HOME/.pen/openai_api_key

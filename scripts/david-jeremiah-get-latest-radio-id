@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+ocid curl-get-redirect "https://www.davidjeremiah.org/radio/player" | scrape 'id=[0-9]+' | scrape '[0-9]+'

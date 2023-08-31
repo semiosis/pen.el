@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# see e:oci-date
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -d) {

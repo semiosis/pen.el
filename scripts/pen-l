@@ -6,6 +6,10 @@ export TTY
 # examples
 # pen-l -u l -r 'wikifil.pl'
 
+sn="$(basename -- "$0")"
+
+test "$#" -gt 0 || { printf -- "%s\n" "$sn <options> <pattern>" | hls red 1>&2; exit 1; }
+
 METHOD=locate
 
 : "${minimise:="y"}"

@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+id="$1"
+: "${id:="$(david-jeremiah-get-latest-radio-id)"}"
+: "${id:="1"}"
+
+oci -f elinks-dump "https://www.davidjeremiah.org/radio/player?id=$id" | sed '/^$/d' | sed '1,3d' | sed '3,$d' | s join ' -  '
