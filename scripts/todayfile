@@ -37,7 +37,7 @@ is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 editor() {
     if test "$NOEMACS" = "y"; then
-        v "$@"
+        vs "$@"
     else
         sp "$@"
     fi

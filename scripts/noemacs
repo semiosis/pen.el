@@ -4,4 +4,11 @@ export TTY
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 export NOEMACS=y
-"$@"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty && test "$#" -eq 0; then
+    zsh
+else
+    "$@"
+fi

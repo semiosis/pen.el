@@ -20,6 +20,10 @@ in-tm() {
         *) break;
     esac; done
 
+    if test "$NOEMACS" = "y"; then
+        set -- env NOEMACS=y "$@"
+    fi
+
     if test "$PEN_NO_TM" = "y"; then
         "$@"
     elif inside-docker-p && inside-tmux-p; then

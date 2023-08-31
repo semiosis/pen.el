@@ -1,5 +1,8 @@
 (require 'org-link-minor-mode)
 
+;; This is to fix org-links for emacs29
+(advice-add 'org-fold-core-set-folding-spec-property :around #'ignore-errors-around-advice)
+
 (defun pen-go-to-prompt-function-definition (prompt-function-name-or-sym)
   (interactive (list (fz pen-prompt-functions nil nil "prompt function: ")))
 
@@ -7,11 +10,11 @@
   (if (sor prompt-function-name-or-sym)
       (let* ((prompt-fn
               (->> (str prompt-function-name-or-sym)
-                (s-replace-regexp "\\.prompt$" "")
-                (s-replace-regexp "^\\(pf\\|pen-fn\\)-" "")
-                (s-replace-regexp "/" "-")
-                (string-replace "--" "-")
-                (s-replace-regexp "$" ".prompt"))))
+                   (s-replace-regexp "\\.prompt$" "")
+                   (s-replace-regexp "^\\(pf\\|pen-fn\\)-" "")
+                   (s-replace-regexp "/" "-")
+                   (string-replace "--" "-")
+                   (s-replace-regexp "$" ".prompt"))))
         (find-file (f-join pen-prompts-directory "prompts" prompt-fn)))))
 
 (org-add-link-type "prompt" 'pen-go-to-prompt-function-definition)

@@ -1124,6 +1124,18 @@ Reconstruct the entire yaml-ht for a different language."
 (require 'pen-helm)
 (require 'pen-fz)
 
+(defun pen--htlist-to-alist (htlist)
+  (if (vectorp htlist)
+      (setq htlist (pen-vector2list htlist)))
+  (mapcar
+   (lambda (e)
+     (if (ht-p e)
+         (let ((key (car (ht-keys e))))
+           (cons key
+                 (ht-get e key)))
+       e))
+   htlist))
+
 (require 'pen-dni)
 (require 'pen-define-prompt-function)
 
@@ -1321,17 +1333,6 @@ Otherwise, it will be a shell expression template")
   (-non-nil
    (mapcar 'sor (glob (concat pen-prompts-directory "/prompts" "/*.prompt")))))
 
-(defun pen--htlist-to-alist (htlist)
-  (if (vectorp htlist)
-      (setq htlist (pen-vector2list htlist)))
-  (mapcar
-   (lambda (e)
-     (if (ht-p e)
-         (let ((key (car (ht-keys e))))
-           (cons key
-                 (ht-get e key)))
-       e))
-   htlist))
 
 (defun pen--test-resolve-engine ()
   (interactive)

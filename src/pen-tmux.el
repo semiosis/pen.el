@@ -319,7 +319,7 @@ START and END can be in either order."
     (let ((c (eval `(cmd ,@args))))
       (if output_b
           (setq c (concat c "| cat")))
-      (pen-sn c stdin dir))))
+      (pen-sn c stdin dir nil (not output_b)))))
 
 (defun tm-cursor-pos-client ()
   (mapcar 'string-to-number (s-split "," (pen-snc "tm-get-client-pos -tp"))))

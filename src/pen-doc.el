@@ -1,6 +1,6 @@
 ;; (require 'pen-utils)
 ;; (require 'pen-engine-mode)
-(require 'go-mode)
+;; (require 'go-mode)
 
 (defun clj-rebel-doc (func)
   (interactive (list (read-string-hist "clj-rebel-doc: " (pen-thing-at-point))))

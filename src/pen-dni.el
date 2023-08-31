@@ -91,9 +91,18 @@
       ',dni-keyvals
       ,@body)))
 
-(defun pen-test-dni-let ()
-  (interactive)
-  (dni-let "/home/shane/source/git/semiosis/dni/parchment/trafficked-girl.dni"
-           (pen-etv description)))
+;; require called with args (pen-dni)
+;;  ■  Warning (initialization): An error occurred while loading ‘/root/.emacs’:
+;; 
+;; error: Eager macro-expansion failure: (file-missing "Opening input file" "No such file or directory" "/home/shane/source/git/semiosis/dni/parchment/trafficked-girl.dni")
+;; 
+;; To ensure normal operation, you should investigate and remove the
+;; cause of the error in your initialization file.  Start Emacs with
+;; the ‘--debug-init’ option to view a complete error backtrace.
+
+;; (defun pen-test-dni-let ()
+;;   (interactive)
+;;   (dni-let "/home/shane/source/git/semiosis/dni/parchment/trafficked-girl.dni"
+;;            (pen-etv description)))
 
 (provide 'pen-dni)

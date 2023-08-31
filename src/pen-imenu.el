@@ -85,7 +85,10 @@
   (setq imenu-generic-expression bible-imenu-generic-expression))
 (add-hook 'bible-mode-hook 'bible-imenu-configure)
 
-(imenu-list-minor-mode 1)
+(ignore-errors
+  ;; Wrong number of arguments: (lambda (bufname) (not (eq nil (get-buffer bufname)))), 3
+  ;; this is buggy:
+  (imenu-list-minor-mode 1))
 
 (defun imenu-preview-prev ()
   (interactive)
