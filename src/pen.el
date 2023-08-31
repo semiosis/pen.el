@@ -243,6 +243,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-counsel)
 (require 'pen-selectrum)
 (require 'pen-marginalia)
+(require 'pen-devotionals)
 (require 'pen-glimpse)
 (require 'pen-digraphs)
 (require 'pen-meson)
