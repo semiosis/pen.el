@@ -150,12 +150,39 @@ apt install libgtk-3-0 libgtk-3-dev
 apt install cargo
 
 (
+cd "$DUMP/programs"
+wget "http://ftp.us.debian.org/debian/pool/main/t/tree-sitter/libtree-sitter0_0.20.8-2_amd64.deb"
+dpkg -i "libtree-sitter0_0.20.8-2_amd64.deb"
+wget "http://ftp.us.debian.org/debian/pool/main/t/tree-sitter/libtree-sitter-dev_0.20.8-2_amd64.deb"
+dpkg -i "libtree-sitter-dev_0.20.8-2_amd64.deb"
+)
+
+(
     cd /root/emacs
     # Has object-intervals
-    git checkout df882c9701
+    # emacs 28
+    # git checkout df882c9701
+    # ./autogen.sh
+    # ./configure --with-all --with-x-toolkit=yes --without-makeinfo --with-modules --with-gnutls=yes
+
+    # emacs 29
+    git checkout ec4d29c4494f32acf0ff7c5632a1d951d957f084
+    # git clone --branch emacs-29 --depth 1 "https://github.com/emacs-mirror/emacs"
+    # --with-native-compilation takes longer
+    # --with-small-ja-dic appears to make it hang
     ./autogen.sh
-    ./configure --with-all --with-x-toolkit=yes --without-makeinfo --with-modules --with-gnutls=yes
-    make
+    sudo apt install libsqlite3-dev libgccjit0 libgccjit-8-dev
+    #./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes \
+    #    --with-native-compilation --with-tree-sitter --with-small-ja-dic \
+    #    --with-gif --with-png --with-jpeg --with-rsvg --with-tiff \
+    #    --with-imagemagick
+    ./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes --with-tree-sitter --with-small-ja-dic --with-gif --with-png --with-jpeg --with-rsvg --with-tiff --with-imagemagick
+    # make
+    # Remove scripts from the path (because emacs will hang when it looks for
+    # and finds cvs, and tries to run it.)
+
+    export PATH="$(echo "$PATH" | sed 's/:/\n/g' | grep -v pen.el | sed '/^$/d' | s join :)"
+    make -j$(nproc)
     make install
 )
 rm -rf /root/emacs

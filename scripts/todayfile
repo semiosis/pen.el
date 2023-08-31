@@ -19,6 +19,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nem) {
+        NOEMACS=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -29,11 +35,19 @@ fi
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
+editor() {
+    if test "$NOEMACS" = "y"; then
+        v "$@"
+    else
+        sp "$@"
+    fi
+}
+
 if is_tty; then
     ns +todayfile "$fp"
 
     touch "$fp"
-    sp "$fp"
+    editor "$fp"
 else
     echo "$fp"
 fi

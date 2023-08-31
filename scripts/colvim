@@ -3,4 +3,16 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-v -ac "$@"
+# This will make a window split when the cvs script is called
+caller_bin="$(ps -o comm= $PPID)"
+
+# should byte compiling be allowed to call external programs?
+# bug in emacs?
+# https://asciinema.org/a/Gn1LQg3xvaKWGhwy4rQMYdT9U
+if test "$caller_bin" = emacs; then
+    # due to a hang while byte compiling during emacs compiling, cvs must exit if it is called in this way
+    # cd "$MYGIT/emacs-mirror/emacs"; ./src/emacs -batch --no-site-file --no-site-lisp --eval "(setq load-prefer-newer t byte-compile-warnings 'all)" -f batch-byte-compile lisp/vc/pcvs.el
+    exit
+else
+    vs -ac "$@"
+fi

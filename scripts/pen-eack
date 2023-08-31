@@ -30,6 +30,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nem) {
+        NOEMACS=y
+        shift
+    }
+    ;;
+
     -j) {
         PREGREPPED=y
         shift
@@ -110,10 +116,7 @@ export LITERAL
 export FOLLOW
 export USE_ZGREP
 
-is_tty() {
-    # If stout is a tty
-    [[ -t 1 ]]
-}
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 #export EXCLUDE_VENDOR
 #export EXCLUDE_GIT
@@ -180,6 +183,18 @@ maybe_mnm() {
     fi
 }
 
+editor() {
+    if is_tty; then
+        if test "$NOEMACS" = "y"; then
+            vs
+        else
+            pen-e -D DEFAULT -e "$ecmd"
+        fi
+    else
+        cat
+    fi
+}
+
 if [ -n "$input" ]; then
     {
         if test "$PREGREPPED" = "y"; then
@@ -205,7 +220,7 @@ if [ -n "$input" ]; then
             # Sadly, pen-mnm appears to break wgrep-mode
             # grep-mode is fine.
             # echo "maybe_mnm | pen-e -D DEFAULT -e $ecmd" | tv &>/dev/null
-            maybe_mnm | pen-e -D DEFAULT -e "$ecmd"
+            maybe_mnm | editor
             result="$?"
             if ! test "$result" -eq 0; then
                 printf -- "%s\n" "$input" | pen-pager

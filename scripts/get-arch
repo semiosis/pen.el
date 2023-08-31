@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# The type of deb I should download
+# https://wiki.debian.org/DebianAMD64
+# https://packages.debian.org/unstable/libtree-sitter-dev
+
+dpkg --print-architecture
+
