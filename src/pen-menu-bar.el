@@ -1396,4 +1396,11 @@
     (menu-bar-define-mouse-key map 'mouse-movement 'tty-menu-mouse-movement)
     map))
 
+;; (global-set-key [tool-bar mouse-movement] 'tty-menu-mouse-movement)
+
+(comment (global-set-key [menu-bar mouse-movement] 'menu-bar-open-mouse))
+(comment (global-set-key [menu-bar mouse-movement] 'identity-command))
+(global-set-key [menu-bar mouse-movement] 'identity-command)
+(global-set-key [mode-line mouse-movement] 'identity-command)
+
 (provide 'pen-menu-bar)
