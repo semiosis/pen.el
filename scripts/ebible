@@ -75,7 +75,7 @@ if test -n "$maybemod"; then
     module="$maybemod"
     ref="$(printf -- "%s\n" "$ref" | sed 's/ *(.*//')"
 else
-    : "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/ [a-zA-Z]\+$/s/.* \([a-zA-Z]\+\)$/\1/p')"}"
+    : "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/[0-9] [a-zA-Z]\+$/s/.* \([a-zA-Z]\+\)$/\1/p')"}"
     if test -n "$maybemod"; then
         module="$maybemod"
         ref="$(printf -- "%s\n" "$ref" | sed 's/ *[a-zA-Z]\+$//')"
