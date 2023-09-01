@@ -1455,3 +1455,16 @@ e ia mini-frame
 npm install -g impossible-flappy
 npm install -g impossible-breakout
 npm install -g impossible-hn
+
+# Sadly can't install this -- too many new dependencies
+# (
+# cd "$DUMP/programs"
+# wget "http://ftp.us.debian.org/debian/pool/main/g/gcc-13/libgcc-s1_13.2.0-2_amd64.deb"
+# dpkg -i libgcc-s1_13.2.0-2_amd64.deb 
+# wget "http://ftp.us.debian.org/debian/pool/main/e/enchant-2/libenchant-2-2_2.3.3-2_amd64.deb"
+# dpkg -i libenchant-2-2_2.3.3-2_amd64.deb 
+# wget "http://ftp.us.debian.org/debian/pool/main/e/enchant-2/libenchant-2-dev_2.3.3-2_amd64.deb"
+# dpkg -i libenchant-2-dev_2.3.3-2_amd64.deb 
+# cd "$(gc "https://github.com/eschluntz/compress")"
+# ./install.sh
+# )
