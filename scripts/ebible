@@ -70,10 +70,16 @@ if test "$SEARCH" = "y"; then
 fi
 
 ref="$@"
-maybemod="$(printf -- "%s\n" "$ref" | sed -n '/(.*)/s/.*(\([^)]\+\)).*/\1/p')"
+: "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/(.*)/s/.*(\([^)]\+\)).*/\1/p')"}"
 if test -n "$maybemod"; then
     module="$maybemod"
-    ref="$(printf -- "%s\n" "$ref" | sed 's/(.*//')"
+    ref="$(printf -- "%s\n" "$ref" | sed 's/ *(.*//')"
+else
+    : "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/ [a-zA-Z]\+$/s/.* \([a-zA-Z]\+\)$/\1/p')"}"
+    if test -n "$maybemod"; then
+        module="$maybemod"
+        ref="$(printf -- "%s\n" "$ref" | sed 's/ *[a-zA-Z]\+$//')"
+    fi
 fi
 
 if is_tty && ! test "$NOEMACS" = y; then
