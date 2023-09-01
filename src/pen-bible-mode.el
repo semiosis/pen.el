@@ -22,18 +22,26 @@
      G907
      G1035
      G1080
+     G1781
+     G1785
      G2198
      G2222
      G2962
      G2919
      G2316
      G3056
+     G3140
+     G3404
      G3439
+     G3962
      G4151
+     G5087
      G5204
      G5368
      G5457
-     G5485)))
+     G5479
+     G5485
+     G5590)))
 
 ;; For some words, I should actually use the strongs instead, for example with 'truly' in John 5:24
 
