@@ -10,38 +10,15 @@
   (mapcar
    (lambda (e)
      (concat "strong:" (str e)))
-   '(G25
-     G26
-     G166
-     G225
-     G227
-     G228
-     G281
-     G286
-     G746
-     G907
-     G1035
-     G1080
-     G1781
-     G1785
-     G2198
-     G2222
-     G2962
-     G2919
-     G2316
-     G3056
-     G3140
-     G3404
-     G3439
-     G3962
-     G4151
-     G5087
-     G5204
-     G5368
-     G5457
-     G5479
-     G5485
-     G5590)))
+   '(G25 G26 G40 G166 G225 G227 G228 G281 G286 G386
+         G746 G757 G758 G907 G1035 G1080 G1110 G1258
+         G1411 G1781 G1785 G1799 G2198 G2222 G2424
+         G2588 G2730 G2962 G2919 G2316 G2413 G2842
+         G3056 G3140 G3340 G3404 G3439 G3772 G3962
+         G4102 G4151 G4982 G5087 G5204 G5368 G5457
+         G5479 G5485 G5547 G5590
+
+         H1 H430 H410 H1121 H8544 H4687 H5921 H6440 H6942 H8034 H8130)))
 
 ;; For some words, I should actually use the strongs instead, for example with 'truly' in John 5:24
 
@@ -759,23 +736,36 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                   (if strongs_word
                                       (concat strongs_code "-" strongs_word)
                                     strongs_code))
-                                 (strongs_len (length strongs_anno)))
+                                 (strongs_len (length strongs_anno))
+                                 (strongs_code_len (length strongs_code))
+                                 (strongs_word_len (length strongs_word)))
                               (progn
                                 (setq floating (or (> matchstrlen 0) (string-empty-p (dom-text subnode)))
-                                      matchstrlen (length strongs_code))
+                                      matchstrlen strongs_code_len)
                                 (insert (if floating " " "")
                                         (concat strongs_code " " strongs_word))
-                                (setq refstart (- (point)
-                                                  strongs_len
-                                                  ;; matchstrlen
-                                                  )
-                                      refend (point))
-                                (put-text-property refstart refend 'font-lock-face `(
-                                                                                     :foreground "cyan"
-                                                                                     :height ,(if (not floating) 0.7)))
-                                (put-text-property refstart refend 'keymap bible-mode-greek-keymap)
-                                (if (not floating)
-                                    (put-text-property refstart refend 'display '(raise 0.6))))))
+
+                                (let ((refstart (- (point)
+                                                    strongs_len))
+                                      (refend (+ (- (point)
+                                                    strongs_len)
+                                                 strongs_code_len)))
+                                  (put-text-property refstart refend 'font-lock-face `(
+                                                                                       :foreground "cyan"
+                                                                                       :height ,(if (not floating) 0.7)))
+                                  (put-text-property refstart refend 'keymap bible-mode-greek-keymap)
+                                  (if (not floating)
+                                      (put-text-property refstart refend 'display '(raise 0.6))))
+                                (let ((refstart (- (point)
+                                                   strongs_word_len
+                                                   ;; matchstrlen
+                                                   ))
+                                      (refend (point)))
+                                  (put-text-property refstart refend 'font-lock-face `(
+                                                                                       :foreground "blue"
+                                                                                       :height ,(if (not floating) 0.7)))
+                                  (if (not floating)
+                                      (put-text-property refstart refend 'display '(raise 0.6)))))))
                       (setq match (string-match "G[0-9]+" savlm (+ match matchstrlen))))
 
                     (if (string-match "lemma.TR:.*" savlm) ;;Lemma

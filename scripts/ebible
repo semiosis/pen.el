@@ -78,6 +78,9 @@ if test "$SEARCH" = "y"; then
 fi
 
 ref="$@"
+: "${ref:="Genesis 1"}"
+
+ref="$(echo "$ref" | canonicalise-bible-ref)"
 : "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/(.*)/s/.*(\([^)]\+\)).*/\1/p')"}"
 if test -n "$maybemod"; then
     module="$maybemod"
