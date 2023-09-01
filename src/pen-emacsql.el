@@ -6,6 +6,7 @@
 
 ;; TODO Figure out how to generate sql
 ;; TODO Make some wrapper functions for caching things
+;; Then make some shell scripts for the same
 
 (defset db (emacsql-sqlite (f-join penconfdir "pen.db")))
 
