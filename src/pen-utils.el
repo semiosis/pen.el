@@ -170,4 +170,9 @@
   (ekm "C-u C-x ="))
 (defalias 'what-face 'pen-what-face)
 
+(defun last-line-of-buffer-p ()
+  "Return non-nil if the cursor is at the last line of the
+buffer."
+  (save-excursion (end-of-line) (/= (forward-line) 0)))
+
 (provide 'pen-utils)

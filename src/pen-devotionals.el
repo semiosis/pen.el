@@ -1,6 +1,6 @@
 (defun davidjeremiah ()
   (interactive)
-  (let ((id (string-to-int (s-replace-regexp ":.*" "" (fz (davidjeremiah-list 100)
+  (let ((id (string-to-int (s-replace-regexp ":.*" "" (fz (davidjeremiah-list 5000)
                                                           nil nil "Devotional:")))))
 
     (listen-to-davidjeremiah id)))

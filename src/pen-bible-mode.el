@@ -89,6 +89,84 @@
       (apply 'call-process args))
     (buffer-string)))
 
+(defun bible-mode-display-final-tidy (&optional query)
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward ":[^0-9 ]" nil t)
+      (backward-char)
+      (insert " ")
+      ;; (replace-match ": ")
+      ))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward "[;,.!?]" nil t)
+      (insert " ")))
+
+  ;; This must be a hack but it seems to work
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward "  +" nil t)
+      (replace-match " ")))
+
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward " [’”]" nil t)
+      (backward-char 1)
+      (delete-backward-char 1)))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward "[‘“] " nil t)
+      (delete-backward-char 1)))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward " , " nil t)
+      (replace-match ", ")))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (sp--with-case-sensitive (re-search-forward "[a-z][A-Z]" nil t))
+      (backward-char 1)
+      (insert " ")))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward " $" nil t)
+      (delete-backward-char 1)))
+
+  (if query
+      (save-excursion
+        (beginning-of-buffer)
+        (while (re-search-forward query nil t)
+          (put-text-property
+           (- (point) (length query))
+           (point) 'font-lock-face '(:foreground "green" :background "darkgreen")))))
+
+  (save-excursion
+    (end-of-buffer)
+    (while (looking-at-p "^$")
+      (delete-backward-char 1)
+      (end-of-buffer)))
+
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward ":[0-9]+: " nil t)
+      (let* ((end (point))
+             (start
+              (progn
+                (beginning-of-line)
+                (point)))
+             (ref (s-replace-regexp ": " "" (buffer-substring start end)))
+             (fp (bible-mode-get-notes-fp-for-verse ref)))
+        (if (f-exists-p fp)
+            (put-text-property start end 'font-lock-face '(:foreground "green"))
+          (put-text-property start end 'font-lock-face '(:foreground "purple"))))
+      ;; (message "%s" (current-line-string))
+      (end-of-line))))
+
 (defun bible-mode--display-search(query searchmode &optional module range)
   "Renders results of search QUERY from SEARHCMODE"
   (setq buffer-read-only nil)
@@ -120,6 +198,8 @@
                              (bible-mode--insert-domnode-recursive
                               (dom-by-tag html-dom-tree 'body) html-dom-tree nil t
                               term)
+
+                             (bible-mode-display-final-tidy term)
 
                              (goto-char (point-min))
                              (while (search-forward (concat "(" bible-mode-book-module ")") nil t)
@@ -511,6 +591,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
          (html-dom-tree (libxml-parse-html-region (point-min) (point-max))))
     (erase-buffer)
     (bible-mode--insert-domnode-recursive (dom-by-tag html-dom-tree 'body) html-dom-tree)
+    (bible-mode-display-final-tidy)
     (goto-char (point-min))
     (while (search-forward (concat "(" bible-mode-book-module ")") nil t)
       (replace-match "")))
@@ -575,24 +656,28 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                       verse-start-text (string-trim-left (substring subnode verse-start (length subnode)))
                       subnode (concat (substring subnode 0 verse-start) verse-start-text)))
             ;; (insert (string-trim-right subnode))
+            ;; (if (plist-get iproperties 'jesus)
+            ;;     (insert (str (length (string-trim-right subnode)))))
             (insert subnode)
             ;; (lo iproperties)
             (cond
              ((plist-get iproperties 'jesus)
-              (put-text-property (- (point) (length (string-trim-right subnode))) (point) 'font-lock-face '(:foreground "red")))
+              (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face '(:foreground "red" :background "black")))
              ((plist-get iproperties 'divinename)
-              (put-text-property (- (point) (length (string-trim-right subnode))) (point) 'font-lock-face '(:foreground "orange")))
+              (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face '(:foreground "orange")))
              (verse-start
-              (let* (
-                     ;; (start (- (point) (length (string-trim-right verse-start-text))))
-                     (start (- (point) (length verse-start-text))))
-                ;; (lo verse-start-text)
-                (let* ((ref (s-replace-regexp ":$" "" verse-match))
-                       (fp (bible-mode-get-notes-fp-for-verse ref)))
-                  ;; (lo ref)
-                  (if (f-exists-p fp)
-                      (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "green"))
-                    (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "purple")))))))))
+              t
+              ;; (let* (
+              ;;        ;; (start (- (point) (length (string-trim-right verse-start-text))))
+              ;;        (start (- (point) (length verse-start-text))))
+              ;;   ;; (lo verse-start-text)
+              ;;   (let* ((ref (s-replace-regexp ":$" "" verse-match))
+              ;;          (fp (bible-mode-get-notes-fp-for-verse ref)))
+              ;;     ;; (lo ref)
+              ;;     (if (f-exists-p fp)
+              ;;         (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "green"))
+              ;;       (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "purple")))))
+              ))))
       (progn
         ;; This does more than just the starting space
         (if (and (not (eq (dom-tag subnode) 'p)) (not (eq (dom-tag subnode) 'q)) (not (eq "" (dom-text subnode))))
@@ -651,66 +736,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (if (equal (dom-tag node) 'title) ;;newline at end of title (i.e. those in Psalms)
       (insert "\n"))
 
-  (save-excursion
-    (beginning-of-buffer)
-    (while (re-search-forward ":[^0-9 ]" nil t)
-      (backward-char)
-      (insert " ")
-      ;; (replace-match ": ")
-      ))
-
-  (save-excursion
-    (beginning-of-buffer)
-    (while (re-search-forward "[;,.!?]" nil t)
-      (insert " ")))
-
-  ;; This must be a hack but it seems to work
-  (save-excursion
-    (beginning-of-buffer)
-    (while (re-search-forward "  +" nil t)
-      (replace-match " ")))
-
-
-  (save-excursion
-    (beginning-of-buffer)
-    (while (re-search-forward " [’”]" nil t)
-      (backward-char 1)
-      (delete-backward-char 1)))
-
-  (save-excursion
-    (beginning-of-buffer)
-    (while (re-search-forward "[‘“] " nil t)
-      (delete-backward-char 1)))
-
-  (save-excursion
-    (beginning-of-buffer)
-    (while (re-search-forward " , " nil t)
-      (replace-match ", ")))
-
-  (save-excursion
-    (beginning-of-buffer)
-    (while (sp--with-case-sensitive (re-search-forward "[a-z][A-Z]" nil t))
-      (backward-char 1)
-      (insert " ")))
-
-  (save-excursion
-    (beginning-of-buffer)
-    (while (re-search-forward " $" nil t)
-      (delete-backward-char 1)))
-
-  (if query
-      (save-excursion
-        (beginning-of-buffer)
-        (while (re-search-forward query nil t)
-          (put-text-property
-           (- (point) (length query))
-           (point) 'font-lock-face '(:foreground "green" :background "darkgreen")))))
-
-  (save-excursion
-    (end-of-buffer)
-    (while (looking-at-p "^$")
-      (delete-backward-char 1)
-      (end-of-buffer))))
+  
+  t)
 
 (defun bible-search (query &optional module searchtype)
   "Queries the user for a Bible search query.
