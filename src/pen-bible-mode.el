@@ -12,12 +12,28 @@
      (concat "strong:" (str e)))
    '(G25
      G26
+     G166
      G225
      G227
+     G228
      G281
+     G286
+     G746
+     G907
+     G1035
+     G1080
+     G2198
+     G2222
      G2962
      G2919
-     G5368)))
+     G2316
+     G3056
+     G3439
+     G4151
+     G5204
+     G5368
+     G5457
+     G5485)))
 
 ;; For some words, I should actually use the strongs instead, for example with 'truly' in John 5:24
 
@@ -720,13 +736,16 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                   refend)
               (if savlm
                   (progn
-                    (lo savlm)
+                    ;; (lo savlm)
                     (while match ;;Greek
                       (if (> match 0)
                           (progn
                             (setq floating (or (> matchstrlen 0) (string-empty-p (dom-text subnode)))
                                   matchstrlen (length (match-string 0 savlm)))
-                            (insert (if floating " " "") (match-string 0 savlm))
+                            (insert (if floating " " "")
+                                    (if bible-mode-word-study-enabled
+                                        (match-string 0 savlm)
+                                      (bible-term-greek-get-word (match-string 0 savlm))))
                             (setq refstart (- (point) matchstrlen)
                                   refend (point))
                             (put-text-property refstart refend 'font-lock-face `(
@@ -892,6 +911,19 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (let ((link (concat "https://www.openbible.info/labs/cross-references/search?q=" (urlencode (openbible-canonicalise-ref ref)))))
     (message "%s" (concat "Visiting: " link))
     (eww link)))
+
+(defun bible-term-greek-get (term_g_num)
+  "Queries user for a Strong Greek Lexicon term."
+  (interactive "sTerm: ")
+  (replace-regexp-in-string (regexp-opt '("(StrongsGreek)")) "" (bible-mode--exec-diatheke term_g_num nil nil nil "StrongsGreek")))
+
+(defun bible-term-greek-get-word (term_g_num)
+  (interactive "sTerm: ")
+  (let* ((term_g_num (str term_g_num))
+         (term_g_num (s-replace-regexp "^G" "" term_g_num))
+         (info (bible-term-greek-get term_g_num))
+         (word (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info)))))
+    word))
 
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
