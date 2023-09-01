@@ -4,6 +4,9 @@
 (require 'emacsql-sqlite)
 (require 'emacsql-sqlite3)
 
+;; TODO Figure out how to generate sql
+;; TODO Make some wrapper functions for caching things
+
 (defset db (emacsql-sqlite (f-join penconfdir "pen.db")))
 
 ;; Create a table. Table and column identifiers are symbols.
