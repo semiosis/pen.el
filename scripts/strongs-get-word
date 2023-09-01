@@ -1,0 +1,35 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    code="$(cat)"
+else
+    code="$1"
+fi
+
+test -n "$code" || exit
+code="${code#G}"
+
+codes=(25 26 166 225 227 228 281 286 746 907 1035 1080 1781 1785 2198 2222 2962 2919
+    2316 3056 3140 3404 3439 3962 4151 5087 5204 5368 5457 5479 5485 5590)
+value="\<${code}\>"
+
+if [[ ${codes[@]} =~ $value ]]; then
+out="$(
+"diatheke" "-b" "StrongsGreek" "-o" "w" "-f" "internal" "-k" "$code" |
+    sed -n 1p | sed 's/ \+/ /g' | cut -d ' ' -f 3
+)"
+printf -- "%s" "($out)"
+fi

@@ -187,12 +187,6 @@
            (point) 'font-lock-face '(:foreground "green" :background "darkgreen")))))
 
   (save-excursion
-    (end-of-buffer)
-    (while (looking-at-p "^$")
-      (delete-backward-char 1)
-      (end-of-buffer)))
-
-  (save-excursion
     (beginning-of-buffer)
     (while (re-search-forward ":[0-9]+: " nil t)
       (let* ((end (point))
@@ -206,7 +200,13 @@
             (put-text-property start end 'font-lock-face '(:foreground "green"))
           (put-text-property start end 'font-lock-face '(:foreground "purple"))))
       ;; (message "%s" (current-line-string))
-      (end-of-line))))
+      (end-of-line)))
+
+  (save-excursion
+    (end-of-buffer)
+    (while (looking-at-p "^$")
+      (delete-backward-char 1)
+      (end-of-buffer))))
 
 (defun bible-mode--display-search(query searchmode &optional module range)
   "Renders results of search QUERY from SEARHCMODE"
@@ -734,34 +734,48 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
              (or bible-mode-word-study-enabled
                  (member (dom-attr subnode 'savlm)
                          bible-strongs-always-show-wordlist))) ;;word study. Must be done after subnode is inserted recursively.
-            (let (
-                  (savlm (dom-attr subnode 'savlm))
-                  (match 0)
-                  (matchstrlen 0)
-                  (iter 0)
-                  floating
-                  refstart
-                  refend)
+            (let* (
+                   (savlm (dom-attr subnode 'savlm))
+                   (match 0)
+                   (matchstrlen 0)
+                   (iter 0)
+                   floating
+                   refstart
+                   refend)
               (if savlm
                   (progn
                     ;; (lo savlm)
+                    ;; 0 is still truthy, so the thing will run
                     (while match ;;Greek
                       (if (> match 0)
-                          (progn
-                            (setq floating (or (> matchstrlen 0) (string-empty-p (dom-text subnode)))
-                                  matchstrlen (length (match-string 0 savlm)))
-                            (insert (if floating " " "")
-                                    (if bible-mode-word-study-enabled
-                                        (match-string 0 savlm)
-                                      (bible-term-greek-get-word (match-string 0 savlm))))
-                            (setq refstart (- (point) matchstrlen)
-                                  refend (point))
-                            (put-text-property refstart refend 'font-lock-face `(
-                                                                                 :foreground "cyan"
-                                                                                 :height ,(if (not floating) 0.7)))
-                            (put-text-property refstart refend 'keymap bible-mode-greek-keymap)
-                            (if (not floating)
-                                (put-text-property refstart refend 'display '(raise 0.6)))))
+                          (let* ((strongs_code (match-string 0 savlm))
+                                 (strongs_word
+                                  (bible-term-greek-get-word (match-string 0 savlm))
+                                  ;; (if bible-mode-word-study-enabled
+                                  ;;     nil
+                                  ;;   (bible-term-greek-get-word (match-string 0 savlm)))
+                                  )
+                                 (strongs_anno
+                                  (if strongs_word
+                                      (concat strongs_code "-" strongs_word)
+                                    strongs_code))
+                                 (strongs_len (length strongs_anno)))
+                              (progn
+                                (setq floating (or (> matchstrlen 0) (string-empty-p (dom-text subnode)))
+                                      matchstrlen (length strongs_code))
+                                (insert (if floating " " "")
+                                        (concat strongs_code " " strongs_word))
+                                (setq refstart (- (point)
+                                                  strongs_len
+                                                  ;; matchstrlen
+                                                  )
+                                      refend (point))
+                                (put-text-property refstart refend 'font-lock-face `(
+                                                                                     :foreground "cyan"
+                                                                                     :height ,(if (not floating) 0.7)))
+                                (put-text-property refstart refend 'keymap bible-mode-greek-keymap)
+                                (if (not floating)
+                                    (put-text-property refstart refend 'display '(raise 0.6))))))
                       (setq match (string-match "G[0-9]+" savlm (+ match matchstrlen))))
 
                     (if (string-match "lemma.TR:.*" savlm) ;;Lemma
@@ -788,7 +802,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (if (equal (dom-tag node) 'title) ;;newline at end of title (i.e. those in Psalms)
       (insert "\n"))
 
-  
+
   t)
 
 (defun bible-search (query &optional module searchtype)
@@ -932,6 +946,15 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (info (bible-term-greek-get term_g_num))
          (word (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info)))))
     word))
+
+;; TODO Make it so it resumes the same place
+(defun bible-mode-toggle-word-study()
+  "Toggles the inclusion of word study for the active `bible-mode' buffer."
+  (interactive)
+  (setq bible-mode-word-study-enabled (not bible-mode-word-study-enabled))
+  (if (equal major-mode 'bible-search-mode)
+      (bible-mode--display-search bible-mode-search-query bible-mode-search-mode)
+    (bible-mode--display)))
 
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
