@@ -104,7 +104,7 @@ else
         if test "$CONCORDANCE" = "y"; then
             sed -e 's/<w savlm="strong:\([^"]*\)">\([^<]*\)<\/w>/\2 \1/g' -e 's/\bstrong://g'|
             sed 's/<[^>]*>//g' |
-            patm -r "G[0-9]+[a-z]?" "echo -n ✓; strongs-get-word | tr '[:lower:]' '[:upper:]'" |
+            patm -r "[HG][0-9]+[a-z]?" "echo -n ✓; strongs-get-word | tr '[:lower:]' '[:upper:]'" |
             sed 's/\( ✓\)\+\([^(]\)/\2/g' | sed 's/✓//g'
         else
             cat

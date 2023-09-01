@@ -20,15 +20,27 @@ else
 fi
 
 test -n "$code" || exit
-code="${code#G}"
+# code="${code#G}"
 
-codes=(25 26 166 225 227 228 281 286 746 907 1035 1080 1781 1785 2198 2222 2962 2919
-    2316 3056 3140 3404 3439 3962 4151 5087 5204 5368 5457 5479 5485 5590)
+codes=(G25 G26 G166 G225 G227 G228 G281 G286 G746 G907 G1035 G1080
+    G1781 G1785 G2198 G2222 G2962 G2919 G2316 G3056 G3140 G3404
+    G3439 G3962 G4151 G5087 G5204 G5368 G5457 G5479 G5485 G5590
+
+    H1 H430 H410 H1121 H8544 H4687 H5921 H6440 H6942 H8034 H8130)
 value="\<${code}\>"
 
 if [[ ${codes[@]} =~ $value ]]; then
-out="$(
-"diatheke" "-b" "StrongsGreek" "-o" "w" "-f" "internal" "-k" "$code" |
+
+    if [[ $code =~ G.* ]]; then
+        module=StrongsGreek
+        code="${code#G}"
+    else
+        module=StrongsHebrew
+        code="${code#H}"
+    fi
+
+    out="$(
+"diatheke" "-b" "$module" "-o" "w" "-f" "internal" "-k" "$code" |
     sed -n 1p | sed 's/ \+/ /g' | cut -d ' ' -f 3
 )"
 printf -- "%s" "($out)"
