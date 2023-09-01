@@ -6,6 +6,23 @@
                  (string :tag "Module abbreviation (e.g. \"KJV\")"))
   :group 'bible-mode)
 
+(defset bible-strongs-always-show-wordlist
+  (mapcar
+   (lambda (e)
+     (concat "strong:" (str e)))
+   '(G25
+     G26
+     G225
+     G227
+     G281
+     G2962
+     G2919
+     G5368)))
+
+;; For some words, I should actually use the strongs instead, for example with 'truly' in John 5:24
+
+;; This will turn out to be a great way of learning greek
+
 (defun bible-open (&optional global-chapter verse module ref)
   "Creates and opens a `bible-mode' buffer"
   (interactive)
@@ -648,13 +665,15 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (if (stringp subnode)
         (progn
           (let* (
-                 (verse-start (string-match ".+?:[0-9]?[0-9]?[0-9]?:" subnode))
-                 verse-start-text
-                 verse-match)
-            (if verse-start
-                (setq verse-match (string-trim (match-string 0 subnode))
-                      verse-start-text (string-trim-left (substring subnode verse-start (length subnode)))
-                      subnode (concat (substring subnode 0 verse-start) verse-start-text)))
+                 (is-love (string-match "love" subnode))
+                 ;; (verse-start (string-match ".+?:[0-9]?[0-9]?[0-9]?:" subnode))
+                 ;; verse-start-text
+                 ;; verse-match
+                 )
+            ;; (if verse-start
+            ;;     (setq verse-match (string-trim (match-string 0 subnode))
+            ;;           verse-start-text (string-trim-left (substring subnode verse-start (length subnode)))
+            ;;           subnode (concat (substring subnode 0 verse-start) verse-start-text)))
             ;; (insert (string-trim-right subnode))
             ;; (if (plist-get iproperties 'jesus)
             ;;     (insert (str (length (string-trim-right subnode)))))
@@ -665,19 +684,20 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
               (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face '(:foreground "red" :background "black")))
              ((plist-get iproperties 'divinename)
               (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face '(:foreground "orange")))
-             (verse-start
-              t
-              ;; (let* (
-              ;;        ;; (start (- (point) (length (string-trim-right verse-start-text))))
-              ;;        (start (- (point) (length verse-start-text))))
-              ;;   ;; (lo verse-start-text)
-              ;;   (let* ((ref (s-replace-regexp ":$" "" verse-match))
-              ;;          (fp (bible-mode-get-notes-fp-for-verse ref)))
-              ;;     ;; (lo ref)
-              ;;     (if (f-exists-p fp)
-              ;;         (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "green"))
-              ;;       (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "purple")))))
-              ))))
+             ;; (verse-start
+             ;;  t
+             ;;  ;; (let* (
+             ;;  ;;        ;; (start (- (point) (length (string-trim-right verse-start-text))))
+             ;;  ;;        (start (- (point) (length verse-start-text))))
+             ;;  ;;   ;; (lo verse-start-text)
+             ;;  ;;   (let* ((ref (s-replace-regexp ":$" "" verse-match))
+             ;;  ;;          (fp (bible-mode-get-notes-fp-for-verse ref)))
+             ;;  ;;     ;; (lo ref)
+             ;;  ;;     (if (f-exists-p fp)
+             ;;  ;;         (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "green"))
+             ;;  ;;       (put-text-property start (+ start (length (string-trim-right verse-match))) 'font-lock-face '(:foreground "purple")))))
+             ;;  )
+             )))
       (progn
         ;; This does more than just the starting space
         (if (and (not (eq (dom-tag subnode) 'p)) (not (eq (dom-tag subnode) 'q)) (not (eq "" (dom-text subnode))))
@@ -685,7 +705,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
         (bible-mode--insert-domnode-recursive subnode dom iproperties notitle)
 
-        (if (and bible-mode-word-study-enabled (not (stringp subnode))) ;;word study. Must be done after subnode is inserted recursively.
+        (if (and
+             (not (stringp subnode))
+             (or bible-mode-word-study-enabled
+                 (member (dom-attr subnode 'savlm)
+                         bible-strongs-always-show-wordlist))) ;;word study. Must be done after subnode is inserted recursively.
             (let (
                   (savlm (dom-attr subnode 'savlm))
                   (match 0)
@@ -696,6 +720,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                   refend)
               (if savlm
                   (progn
+                    (lo savlm)
                     (while match ;;Greek
                       (if (> match 0)
                           (progn

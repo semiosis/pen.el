@@ -10,6 +10,7 @@
 
 (defset db (emacsql-sqlite (f-join penconfdir "pen.db")))
 
+(comment
 ;; Create a table. Table and column identifiers are symbols.
 (emacsql db [:create-table people ([name id salary])])
 
@@ -32,5 +33,6 @@
              :from people
              :where (> salary $s1)]
          50000)
+)
 
 (provide 'pen-emacsql)
