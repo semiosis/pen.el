@@ -13,11 +13,28 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nd) {
+        IGNORE_DIR=y
+        shift
+    }
+    ;;
+
+    -nnd) {
+        IGNORE_DIR=n
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 # date-short
 
 : "${date:="$(date +%d.%m.%y)"}"
+: "${IGNORE_DIR:="n"}"
 
-oci -f -m "$date" "$@"
+if test "$IGNORE_DIR" = "y"; then
+    oci -f -nd -m "$date" "$@"
+else
+    oci -f -m "$date" "$@"
+fi

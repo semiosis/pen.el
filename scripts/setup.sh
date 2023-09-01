@@ -1468,3 +1468,6 @@ npm install -g impossible-hn
 # cd "$(gc "https://github.com/eschluntz/compress")"
 # ./install.sh
 # )
+
+# a database is a good idea to start speeding things up
+e ia emacsql emacsql-mysql emacsql-psql emacsql-sqlite emacsql-sqlite3

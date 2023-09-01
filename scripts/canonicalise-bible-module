@@ -1,0 +1,61 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    awk 1 | while IFS=$'\n' read -r module; do
+        0</dev/null "$sn" "$module"
+    done
+    exit "$?"
+fi
+
+module="$@"
+
+case "$module" in
+    nasb) {
+        module=NASB
+    }
+    ;;
+
+    asv) {
+        module=ASV
+    }
+    ;;
+
+    maori) {
+        module=Maori
+    }
+    ;;
+
+    kjv) {
+        module=KJV
+    }
+    ;;
+
+    bsb) {
+        module=engbsb2020eb
+    }
+    ;;
+
+    *) {
+        module=NASB
+    }
+    ;;
+
+esac
+
+echo "$module"

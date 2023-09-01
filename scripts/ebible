@@ -17,44 +17,7 @@ if ! inside-docker-p && docker-running-p; then
     exit "$?"
 fi
 
-case "$sn" in
-    bl|ebible) {
-        # default
-        module=NASB
-    }
-    ;;
-
-    nasb) {
-        module=NASB
-    }
-    ;;
-
-    asv) {
-        module=ASV
-    }
-    ;;
-
-    maori) {
-        module=Maori
-    }
-    ;;
-
-    kjv) {
-        module=KJV
-    }
-    ;;
-
-    bsb) {
-        module=engbsb2020eb
-    }
-    ;;
-
-    *) {
-        module="$sn"
-    }
-    ;;
-esac
-
+module="$(0</dev/null canonicalise-bible-module "$sn")"
 : "${module:="NASB"}"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -106,17 +69,23 @@ if test "$SEARCH" = "y"; then
     exit "$?"
 fi
 
+ref="$@"
+maybemod="$(printf -- "%s\n" "$ref" | sed -n '/(.*)/s/.*(\([^)]\+\)).*/\1/p')"
+if test -n "$maybemod"; then
+    module="$maybemod"
+    ref="$(printf -- "%s\n" "$ref" | sed 's/(.*//')"
+fi
+
 if is_tty && ! test "$NOEMACS" = y; then
     if test "$1"; then
-        ref="$@"
         sp -cip bible-open =nil =nil "$module" "$ref"
     else
         sp -cip bible-open =nil =nil "$module"
     fi
 else
     {
-    echo "$@" | openbible-canonicalise-ref | udl
-    in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" "$@" | sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d' | {
+    echo "$ref" | openbible-canonicalise-ref | udl
+    in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" "$ref" | sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d' | {
         if test "$USE_TTP" = "y"; then
             ttp
         else
