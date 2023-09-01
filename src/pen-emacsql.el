@@ -1,0 +1,32 @@
+(require 'emacsql)
+(require 'emacsql-mysql)
+(require 'emacsql-psql)
+(require 'emacsql-sqlite)
+(require 'emacsql-sqlite3)
+
+(defset db (emacsql-sqlite (f-join penconfdir "pen.db")))
+
+;; Create a table. Table and column identifiers are symbols.
+(emacsql db [:create-table people ([name id salary])])
+
+;; Or optionally provide column constraints.
+(emacsql db [:create-table people
+             ([name (id integer :primary-key) (salary float)])])
+
+;; Insert some data:
+(emacsql db [:insert :into people
+             :values (["Jeff" 1000 60000.0] ["Susan" 1001 64000.0])])
+
+;; Query the database for results:
+(emacsql db [:select [name id]
+             :from people
+             :where (> salary 62000)])
+;; => (("Susan" 1001))
+
+;; Queries can be templates, using $1, $2, etc.:
+(emacsql db [:select [name id]
+             :from people
+             :where (> salary $s1)]
+         50000)
+
+(provide 'pen-emacsql)
