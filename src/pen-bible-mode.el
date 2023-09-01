@@ -6,22 +6,27 @@
                  (string :tag "Module abbreviation (e.g. \"KJV\")"))
   :group 'bible-mode)
 
-(defset bible-strongs-always-show-wordlist
+(defset bible-strongs-always-show-codelist
+  '(G25 G26 G38 G40 G53 G76 G129 G165 G166 G225 G227 G228 G266 G281 G286 G386
+        G458 G487 G517
+        G746 G757 G758 G907 G908 G1035 G1080 G1103 G1107 G1108 G1110 G1242 G1258 G1336
+        G1390 G1391 G1411 G1504 G1515 G1680 G1781 G1785 G1799 G1922 G2041 G2098
+        G2096
+        G2150 G2198 G2222 G2378 G2409 G2424         
+        G2588 G2730 G2839 G2889 G2937 G2962 G2919 G2307 G2316 G2413 G2842
+        G3056 G3140 G3340 G3404 G3417 G3439 G3609 G3772 G3870 G3900
+        G3939 G3962 G4102 G4103 G4138 G1479 G4151 G4178 G4190
+        G4375 G4416 G4487 G4678 G4716 G4891 G4990 G4982 G4991 G5046
+        G5048 G5087 G5204 G5360 G5368 G5426 G5457 G5479 G5485 G5547 G5583
+        G5590
+
+        H1 H430 H410 H1121 H8544 H4687 H5921 H6440 H6942 H8034 H8130))
+
+(defset bible-strongs-always-show-xmllist
   (mapcar
    (lambda (e)
      (concat "strong:" (str e)))
-   '(G25 G26 G40 G129 G165 G166 G225 G227 G228 G266 G281 G286 G386
-         G458
-         G746 G757 G758 G907 G1035 G1080 G1107 G1110 G1242 G1258 G1336
-         G1411 G1680 G1781 G1785 G1799 G2041 G2098
-         G2198 G2222 G2378 G2409 G2424
-         G2588 G2730 G2839 G2889 G2962 G2919 G2307 G2316 G2413 G2842
-         G3056 G3140 G3340 G3404 G3417 G3439 G3609 G3772 G3939 G3962
-         G4102 G4151 G4178 G4487 G4982 G4991 G5048 G5087 G5204 G5360
-         G5368 G5426 G5457
-         G5479 G5485 G5547 G5590
-
-         H1 H430 H410 H1121 H8544 H4687 H5921 H6440 H6942 H8034 H8130)))
+   bible-strongs-always-show-codelist))
 
 ;; For some words, I should actually use the strongs instead, for example with 'truly' in John 5:24
 
@@ -713,7 +718,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
              (not (stringp subnode))
              (or bible-mode-word-study-enabled
                  (member (dom-attr subnode 'savlm)
-                         bible-strongs-always-show-wordlist))) ;;word study. Must be done after subnode is inserted recursively.
+                         bible-strongs-always-show-xmllist))) ;;word study. Must be done after subnode is inserted recursively.
             (let* (
                    (savlm (dom-attr subnode 'savlm))
                    (match 0)
@@ -764,9 +769,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                                    ;; matchstrlen
                                                    ))
                                       (refend (point)))
-                                  (put-text-property refstart refend 'font-lock-face `(
-                                                                                       :foreground "blue"
-                                                                                       :height ,(if (not floating) 0.7)))
+                                  (if (member (str2sym strongs_code)
+                                              bible-strongs-always-show-codelist)
+                                      (put-text-property refstart refend 'font-lock-face `(
+                                                                                           :foreground "blue"
+                                                                                           :height ,(if (not floating) 0.7)))
+                                    (put-text-property refstart refend 'font-lock-face `(
+                                                                                         :foreground "#d2268b"
+                                                                                                     :height ,(if (not floating) 0.7))))
                                   (if (not floating)
                                       (put-text-property refstart refend 'display '(raise 0.6)))))))
                       (setq match (string-match "G[0-9]+" savlm (+ match matchstrlen))))
@@ -939,6 +949,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (info (bible-term-greek-get term_g_num))
          (word (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info)))))
     word))
+
+(memoize 'bible-term-greek-get-word)
 
 ;; TODO Make it so it resumes the same place
 (defun bible-mode-toggle-word-study()
