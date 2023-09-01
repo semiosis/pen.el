@@ -25,6 +25,7 @@ fi
 
 module="$@"
 
+module="$(p "$module" | tr '[:upper:]' '[:lower:]')"
 case "$module" in
     nasb) {
         module=NASB

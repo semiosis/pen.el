@@ -1,0 +1,60 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -v) {
+        and_verse=y
+        shift
+    }
+    ;;
+
+    -df) {
+        default_module="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    awk 1 | while IFS=$'\n' read -r ref; do
+        0</dev/null "$sn" "$ref"
+    done
+    exit "$?"
+fi
+
+ref="$@"
+: "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/(.*)/s/.*(\([^)]\+\)).*/\1/p')"}"
+if test -n "$maybemod"; then
+    module="$maybemod"
+    ref="$(printf -- "%s\n" "$ref" | sed 's/ *(.*//')"
+else
+    : "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/[0-9] [a-zA-Z]\+$/s/.* \([a-zA-Z]\+\)$/\1/p')"}"
+    if test -n "$maybemod"; then
+        module="$maybemod"
+        ref="$(printf -- "%s\n" "$ref" | sed 's/ *[a-zA-Z]\+$//')"
+    fi
+fi
+: "${module:="$default_module"}"
+: "${module:="NASB"}"
+echo "$module" | canonicalise-bible-module
+if test "$and_verse" = "y"; then
+    echo "$ref"
+fi

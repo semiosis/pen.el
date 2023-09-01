@@ -45,7 +45,11 @@ esac; done
 
 : "${version:="nasb"}"
 
+maybe_version="$(cmd-nice "$book" "$@" | bible-get-module-from-ref -df "$version")"
 ref="$(cmd-nice "$book" "$@" | scrape-bible-references | pen-sort line-length-desc | head -n 1)"
+if test -n "$maybe_version"; then
+    version="$maybe_version"
+fi
 
 # query="$@"
 # 
@@ -59,4 +63,4 @@ ref="$(cmd-nice "$book" "$@" | scrape-bible-references | pen-sort line-length-de
 
 # "$version" "$book" "$@"
 
-eval "$version $ref"
+ebible -m "$version" "$ref"
