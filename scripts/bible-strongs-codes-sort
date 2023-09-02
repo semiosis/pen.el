@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -w) {
+        wrap=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+is_tty && wrap=y
+
+sed 's/^\s\+//' | sed 's/\s/\n/g' | sed '/^$/d' | sed 's/\(.\)/\1 /' | sort -k1d,1 -k2g,2 | sed 's/ //' | {
+    if test "$wrap" = y; then
+        paste -d " " - - - - - - - -
+    else
+        cat
+    fi
+} | pavs
