@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename -- "$0")"
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+case "$sn" in
+    waa) {
+        : "${ANNOTATED:="all"}"
+    }
+    ;;
+
+    *)
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -a) {
+        : "${ANNOTATED:="all"}"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${ANNOTATED:="y"}"
+export ANNOTATED
+
+"$@"

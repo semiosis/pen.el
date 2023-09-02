@@ -9,13 +9,13 @@
 ;; (define-key pen-map (kbd "M-m r w") 'edit-var-elisp)
 (defun bible-strongs-codes-sort (codeslist)
   (let ((lines (list2str codeslist)))
-    (mapcar 'str2sym (str2lines (snc "sed 's/\\(.\\)/\\1 /' | sort -k1d,1 -k2g,2 | sed 's/ //'" lines)))))
+    (mapcar 'str2sym (str2lines (snc "bible-strongs-codes-sort" lines)))))
 
 ;; sort
 ;; 
 (defset bible-strongs-always-show-codelist
   (bible-strongs-codes-sort
-   '(G25 G26 G38 G40 G53 G76 G129 G165 G166 G169 G225
+   '(G25 G299 G26 G38 G40 G53 G76 G129 G165 G166 G169 G225
          G227 G228 G266 G281 G286 G386 G458 G487 G517
          G571 G721 G746 G757 G758 G907 G908 G932 G935
          G948 G1035 G1080 G1100 G1103 G1107 G1108 G1110

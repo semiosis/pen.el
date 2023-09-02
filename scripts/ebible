@@ -42,6 +42,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -ca) {
+        format=internal
+        CONCORDANCE=all
+        shift
+    }
+    ;;
+
     -nem) {
         NOEMACS=y
         shift
@@ -63,6 +70,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+if test "$ANNOTATED" = n; then
+    format=plain
+    CONCORDANCE=
+elif test -n "$ANNOTATED"; then
+    format=internal
+    CONCORDANCE="$ANNOTATED"
+fi
 
 : "${USE_TTP:="y"}"
 
@@ -93,6 +108,11 @@ else
     fi
 fi
 
+strongs_cmd=strongs-get-word
+if test "$CONCORDANCE" = "all"; then
+    strongs_cmd="strongs-get-word -f"
+fi
+
 if is_tty && ! test "$NOEMACS" = y; then
     if test "$1"; then
         sp -cip bible-open =nil =nil "$module" "$ref"
@@ -104,10 +124,10 @@ else
     echo "$ref" | openbible-canonicalise-ref | udl
     {
     in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "$format" "-k" "$ref" | sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d' |
-        if test "$CONCORDANCE" = "y"; then
-            sed -e 's/<w savlm="strong:\([^"]*\)">\([^<]*\)<\/w>/\2 \1/g' -e 's/\bstrong://g'|
+        if test "$CONCORDANCE" = "y" || test "$CONCORDANCE" = "all"; then
+            sed -e 's/<w savlm="strong:\([^"]*\)">\([^<]*\)<\/w>/\2 \1/g' -e 's/\bstrong://g' |
             sed 's/<[^>]*>//g' |
-            patm -r "[HG][0-9]+[a-z]?" "echo -n ✓; strongs-get-word | tr '[:lower:]' '[:upper:]'" |
+            patm -r "[HG][0-9]+[a-z]?" "echo -n ✓; $strongs_cmd | tr '[:lower:]' '[:upper:]'" |
             sed 's/\( ✓\)\+\([^(]\)/\2/g' | sed 's/✓//g'
         else
             cat

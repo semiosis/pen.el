@@ -3,6 +3,17 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -f) {
+        force=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 stdin_exists() {
     {
     ! [ -t 0 ] && \
@@ -50,7 +61,7 @@ codes=(
 
 value="\<${code}\>"
 
-if [[ ${codes[@]} =~ $value ]]; then
+if test "$force" = y || [[ ${codes[@]} =~ $value ]]; then
 
     if [[ $code =~ G.* ]]; then
         module=StrongsGreek
