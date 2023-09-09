@@ -44,7 +44,7 @@
 (defun get-filter-cmd-button-data-at (p)
   (interactive (list (point)))
   (-filter
-   (lambda (tp)
+   (λ (tp)
      (apply 'gnus-and tp))
    (cl-loop
     for
@@ -72,7 +72,7 @@
                (button-tuple (if button-line
                                  (pen-eval-string (concat "'" button-line))))
                (selected-button (if button-tuple
-                                    (car (-filter (lambda (li) (and (equal (first button-tuple) (button-get li 'term))
+                                    (car (-filter (λ (li) (and (equal (first button-tuple) (button-get li 'term))
                                                                (equal (cadr button-tuple) (button-get li 'runfunc))
                                                                (equal (third button-tuple) (button-get li 'filtercmd))))
                                                   (overlays-at start))))))
@@ -133,7 +133,7 @@
   (if clear-first (remove-all-filter-cmd-buttons))
 
   (let* ((terms (-filter 'sor (-uniq (pen-str2list (pen-snc filtercmd (region2string beg end))))))
-         (runfunc (eval `(lambda (term) (sn
+         (runfunc (eval `(λ (term) (sn
                                          (if (string-match "%q" ,runcmd)
                                              (s-replace-regexp "%q" (pen-q term) ,runcmd)
                                            (concat ,runcmd " " (pen-q term))))))))

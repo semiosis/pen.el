@@ -20,7 +20,7 @@ Suffix and Infix Commands'.
 The BODY is optional.  If it is omitted, then ARGLIST is also
 ignored and the function definition becomes:
 
-  (lambda ()
+  (λ ()
     (interactive)
     (transient-setup \\='NAME))
 
@@ -52,8 +52,8 @@ to the setup function:
     `(progn
        (defalias ',name
          ,(if body
-              `(lambda ,arglist ,@body)
-            `(lambda ()
+              `(λ ,arglist ,@body)
+            `(λ ()
                (interactive)
                (transient-setup ',name))))
        (put ',name 'interactive-only t)
@@ -61,7 +61,7 @@ to the setup function:
        (put ',name 'transient--prefix
             (,(or class 'transient-prefix) :command ',name ,@slots))
        (put ',name 'transient--layout
-            ',(cl-mapcan (lambda (s) (transient--parse-child name s))
+            ',(cl-mapcan (λ (s) (transient--parse-child name s))
                          suffixes))
        ;; Add name to the end so I can execute and run a transient definition
        ',name)))
@@ -93,7 +93,7 @@ ARGLIST.  The infix arguments are usually accessed by using
   (pcase-let ((`(,class ,slots ,_ ,docstr ,body)
                (transient--expand-define-args args)))
     `(progn
-       (defalias ',name (lambda ,arglist ,@body))
+       (defalias ',name (λ ,arglist ,@body))
        (put ',name 'interactive-only t)
        (put ',name 'function-documentation ,docstr)
        (put ',name 'transient--suffix
@@ -170,7 +170,7 @@ ARGLIST.  The infix arguments are usually accessed by using
 
 (tdp transient-toys-hello ()
   "Say hello"
-  [("h" "hello" (lambda () (interactive) (message "hello")))])
+  [("h" "hello" (λ () (interactive) (message "hello")))])
 
 ;; (transient-toys-hello)
 
@@ -234,13 +234,13 @@ ARGLIST.  The infix arguments are usually accessed by using
 
   [:description current-time-string
                 ("ws" transient-toys--wave
-                 :description (lambda ()
+                 :description (λ ()
                                 (format "Wave at %s" (current-time-string))))
                 ("wb" "wave better" transient-toys--wave)]
 
-  [[:description (lambda () (format "Group %s" (cl-gensym)))
+  [[:description (λ () (format "Group %s" (cl-gensym)))
                  ("wt" "wave two" transient-toys--wave)]
-   [:description (lambda () (format "Group %s" (cl-gensym)))
+   [:description (λ () (format "Group %s" (cl-gensym)))
                  ("wa" "wave all" transient-toys--wave)]])
 
 ;; Arguments

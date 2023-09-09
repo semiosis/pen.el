@@ -1471,3 +1471,12 @@ npm install -g impossible-hn
 
 # a database is a good idea to start speeding things up
 e ia emacsql emacsql-mysql emacsql-psql emacsql-sqlite emacsql-sqlite3
+
+(
+if ! test -f ~/.pen/cross_references.tsv && test -d ~/.pen; then
+    cd ~/.pen
+    wget "https://a.openbible.info/data/cross-references.zip"
+    unzip cross-references.zip
+    mv cross_references.txt cross_references.tsv
+fi
+)

@@ -51,7 +51,7 @@
 
 (setq org-agenda-files (find-lisp-find-files agendadir "\.org$"))
 
-(add-hook 'org-mode-hook (lambda () (modify-syntax-entry (string-to-char "\u25bc") "w"))) ; Down arrow for collapsed drawer.
+(add-hook 'org-mode-hook (λ () (modify-syntax-entry (string-to-char "\u25bc") "w"))) ; Down arrow for collapsed drawer.
 
 ; Speed up org-mode
 ; Reduce the number of Org agenda files to avoid slowdowns due to hard drive accesses.
@@ -181,12 +181,12 @@
   ^^      _j_     ^^
 "
       ("x" exchange-point-and-mark "exchange point/mark")
-      ("l" (lambda (arg)
+      ("l" (λ (arg)
              (interactive "p")
              (when (eq 1 arg)
                (setq arg 2))
              (org-table-end-of-field arg)))
-      ("h" (lambda (arg)
+      ("h" (λ (arg)
              (interactive "p")
              (when (eq 1 arg)
                (setq arg 2))
@@ -281,7 +281,7 @@ When LINE is given, assume it represents a line and compute its indentation."
       (current-column))))
 
 ;; This works! The function moved to org-compat
-(advice-add 'org-goto--set-map :after '(lambda (&rest args) (define-key org-goto-map (kbd "<next>") nil)))
+(advice-add 'org-goto--set-map :after '(λ (&rest args) (define-key org-goto-map (kbd "<next>") nil)))
 
 (defun org-mode-hook-after ()
   (interactive)
@@ -404,7 +404,7 @@ With argument N not nil or 1, move forward N - 1 lines first."
 
 (defun pen-org-select-heading (name)
   (interactive (list (fz (pen-org-list-top-level-headings))))
-  (let* ((lambda (-filter (lambda (e) (string-equal name (car e))) (org-imenu-get-tree)))
+  (let* ((λ (-filter (λ (e) (string-equal name (car e))) (org-imenu-get-tree)))
          (sel (if (> 0 (length l))
                   ;; I need an fz that lets me pick by a different thing
                   ;; (fz l)

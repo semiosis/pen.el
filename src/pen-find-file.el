@@ -58,7 +58,7 @@
            (if (>= (prefix-numeric-value current-prefix-arg) 4)
                (find-file fp)
              (progn
-               (eval `(run-with-timer 0.1 nil (lambda () (kill-buffer (find-file ,fp)))))
+               (eval `(run-with-timer 0.1 nil (λ () (kill-buffer (find-file ,fp)))))
                (snd (concat "fehdf " (pen-q fp))))))
 
           ((string-equal "jpg" ext)

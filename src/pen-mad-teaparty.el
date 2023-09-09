@@ -1,6 +1,6 @@
 (defun pen-run-after-time (secs &rest body)
   (eval
-   `(run-with-timer ,secs nil (lambda () ,@body))))
+   `(run-with-timer ,secs nil (λ () ,@body))))
 
 (defun mtp-delay-start-chan ()
   (eval `(pen-run-after-time 3 '(with-current-buffer ,(current-buffer) (chan-loop-chat)))))

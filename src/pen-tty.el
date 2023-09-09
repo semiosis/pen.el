@@ -1,5 +1,5 @@
 ;; (add-hook 'buffer-list-update-hook
-;;           '(lambda ()
+;;           '(λ ()
 ;;              (unless (display-graphic-p)
 ;;                (if (equal major-mode 'org-mode)
 ;;                    (progn

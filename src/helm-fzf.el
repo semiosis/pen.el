@@ -46,9 +46,9 @@
     (prog1 proc
       (set-process-sentinel
        (get-buffer-process helm-buffer)
-       #'(lambda (process event)
-         (helm-process-deferred-sentinel-hook
-          process event (helm-default-directory)))))))
+       '(lambda (process event)
+          (helm-process-deferred-sentinel-hook
+           process event (helm-default-directory)))))))
 
 ;;;###autoload
 (defun helm-fzf (directory)

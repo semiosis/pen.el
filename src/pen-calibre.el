@@ -218,7 +218,7 @@ Optional argument CANDIDATE is the selected item."
 
 (defun calibre-find-book-by-title (title)
   (-filter
-   (lambda (c)
+   (λ (c)
      (string-equal
       title
       (second
@@ -245,7 +245,7 @@ Optional argument CANDIDATE is the selected item."
 
 
 (never
- (mapcar (lambda (c) (calibredb-getattr (car c) :book-title)) (calibredb-candidates)))
+ (mapcar (λ (c) (calibredb-getattr (car c) :book-title)) (calibredb-candidates)))
 
 ;; (calibredb-getattr (car (calibredb-candidates)) :book-title)
 

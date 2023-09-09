@@ -48,7 +48,7 @@
 ;;   ;; bring back the predicate and the results (some of which might be tuples),
 ;;   ;; ;; and merge with the current tuple
 
-;;   ;; (mapcar (lambda (tp))
+;;   ;; (mapcar (λ (tp))
 ;;   ;;         tree)
 
 ;;   `(((and
@@ -393,7 +393,7 @@
 (defun pen-glossary-get-button-3-tuples-at (p)
   (interactive (list (point)))
   (-filter
-   (lambda (tp)
+   (λ (tp)
      (apply 'gnus-and tp))
    (cl-loop
     for
@@ -410,7 +410,7 @@
   (s-split " " "The the and in or OR IN to TO"))
 
 (defun pen-glossary-list-tuples (&optional fp)
-  (-filter (lambda (e) (not (member (third e) pen-glossary-blacklist)))
+  (-filter (λ (e) (not (member (third e) pen-glossary-blacklist)))
            (pen-glossary-sort-tuples
             (if fp
                 (pen-eval-string (pen-sn (concat "list-glossary-terms-for-elisp " (pen-q fp))))
@@ -419,7 +419,7 @@
 (defun pen-glossary-sort-tuples (tuples)
   (sort
    tuples
-   (lambda (e1 e2) (< (length (third e1))
+   (λ (e1 e2) (< (length (third e1))
                       (length (third e2))))))
 
 (defvar pen-glossary-term-3tuples nil)
@@ -543,7 +543,7 @@ Use my position list code. Make it use rosie lang and external software."
                (button-tuple (if button-line
                                  (pen-eval-string (concat "'" button-line))))
                (selected-button (if button-tuple
-                                    (car (-filter (lambda (li) (and (equal (first button-tuple) (button-get li 'glossarypath))
+                                    (car (-filter (λ (li) (and (equal (first button-tuple) (button-get li 'glossarypath))
                                                                (equal (cadr button-tuple) (button-get li 'byteoffset))
                                                                (equal (third button-tuple) (button-get li 'term))))
                                                   (overlays-at start))))))
@@ -576,7 +576,7 @@ Use my position list code. Make it use rosie lang and external software."
                (button-tuple (if button-line
                                  (pen-eval-string (concat "'" button-line))))
                (selected-button (if button-tuple
-                                    (car (-filter (lambda (li) (and (equal (first button-tuple) (button-get li 'glossarypath))
+                                    (car (-filter (λ (li) (and (equal (first button-tuple) (button-get li 'glossarypath))
                                                                (equal (cadr button-tuple) (button-get li 'byteoffset))
                                                                (equal (third button-tuple) (button-get li 'term))))
                                                   (overlays-at start))))))
@@ -634,12 +634,12 @@ Use my position list code. Make it use rosie lang and external software."
   (interactive "r")
   (let* ((p (pen-mnm (get-path-nocreate)))
          (tls (mapcar
-               (lambda (s) (list p nil s))
+               (λ (s) (list p nil s))
                (-distinct
                 (if glossary-term-3tuples
                     (let ((tl (mapcar 'downcase (mapcar 'third pen-glossary-term-3tuples))))
                       (-filter
-                       (lambda (s) (not (-contains? tl (downcase s))))
+                       (λ (s) (not (-contains? tl (downcase s))))
                        (pen-get-keyphrases-for-buffer beg end)))
                   (pen-get-keyphrases-for-buffer beg end))))))
     (if (not (use-region-p))
@@ -985,7 +985,7 @@ Use my position list code. Make it use rosie lang and external software."
   (if pen-glossary-keep-tuples-up-to-date
       (pen-glossary-reload-term-3tuples))
 
-  (let* ((tups (-filter (lambda (e) (string-equal (car (last e)) term)) pen-glossary-term-3tuples-global))
+  (let* ((tups (-filter (λ (e) (string-equal (car (last e)) term)) pen-glossary-term-3tuples-global))
          (button-line (if tups
                           (pen-umn (fz (pen-mnm (pp-map-line tups))
                                        nil nil "Alt: " nil t))))
@@ -1191,7 +1191,7 @@ Use my position list code. Make it use rosie lang and external software."
      (mapcar #'cdr (buttons-collect))
      (avy--style-fn avy-style)))
   (let* ((b (button-at-point))
-         (lambda (pen-button-get-link b)))
+         (λ (pen-button-get-link b)))
     (if l
         (xc l))))
 

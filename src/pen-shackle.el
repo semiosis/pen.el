@@ -31,7 +31,7 @@
            (or
             (eq window (frame-root-window frame))
             (catch 'done
-              (walk-window-tree (lambda (w)
+              (walk-window-tree (λ (w)
                                   (unless (or (eq w window)
                                               (window-dedicated-p w))
                                     (throw 'done nil)))

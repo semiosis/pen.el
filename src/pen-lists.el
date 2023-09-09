@@ -54,7 +54,7 @@
                    ;; (-reduce 'cartesian-product-2 ls)
                    ))))
     (if (< 2 len)
-        (mapcar (lambda (l) (unsnd l (- len 2)))
+        (mapcar (λ (l) (unsnd l (- len 2)))
                 result)
       result)))
 

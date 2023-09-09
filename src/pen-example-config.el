@@ -653,7 +653,7 @@
 
 ;; (call-interactively 'pen-add-key-booste)
 
-(add-hook 'emacs-lisp-mode-hook '(lambda () (lispy-mode 1)))
+(add-hook 'emacs-lisp-mode-hook (λ () (lispy-mode 1)))
 
 (advice-add 'kill-buffer-and-window :around #'ignore-errors-around-advice)
 
@@ -1241,7 +1241,7 @@
 (define-key evil-normal-state-map (kbd "M-Y") #'pen-copy-line-evil-normal)
 (define-key evil-insert-state-map (kbd "C-k") 'avy-goto-char)
 (define-key evil-normal-state-map (kbd "C-k") 'avy-goto-char)
-(define-key evil-insert-state-map (kbd "M-d") (lambda () (interactive) (pen-evil-insert-normal-kbd "define-key")))
+(define-key evil-insert-state-map (kbd "M-d") (λ () (interactive) (pen-evil-insert-normal-kbd "define-key")))
 (define-key evil-insert-state-map (kbd "M-g") (pen-lm (evil-normal-state) (tsk "M-g")))
 (define-key evil-normal-state-map (kbd "M-g g") 'evil-goto-first-line)
 (define-key evil-normal-state-map (kbd "M-g M-g") 'evil-goto-first-line)

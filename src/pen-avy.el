@@ -262,10 +262,10 @@ values to copy the link to the clipboard and/or primary as well."
              (f-file-p tempf))
         (f-delete tempf))
 
-    (-filter (lambda (tp) (and
+    (-filter (λ (tp) (and
                            (>= (cdr tp) winstart)
                            (<= (cdr tp) winend)))
-             (mapcar (lambda (tp)
+             (mapcar (λ (tp)
                        (cons (car tp)
                              (- (byte-to-position
                                  (+ (position-bytes winstart)
@@ -302,7 +302,7 @@ values to copy the link to the clipboard and/or primary as well."
       (avy-with ace-link-help
       (let ((avy-action
              (eval
-              `(lambda (pt)
+              `(λ (pt)
                  (avy-action-goto pt)
                  (let ((result
                         (cl-loop for tp in ',wordtuples

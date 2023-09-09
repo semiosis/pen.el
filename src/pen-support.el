@@ -177,7 +177,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
                   (t
                    (-reduce 'cartesian-product-2 ls)))))
     (if (< 2 len)
-        (mapcar (lambda (l) (unsnd l (- len 2)))
+        (mapcar (λ (l) (unsnd l (- len 2)))
                 result)
       result)))
 
@@ -596,8 +596,8 @@ delim is used to guarantee the function returns multiple matches per line
 (defalias 'pen-ft 'pen-find-thing)
 
 (defmacro pen-lm (&rest body)
-  "Interactive lambda with no arguments."
-  `(lambda () (interactive) ,@body))
+  "Interactive λ with no arguments."
+  `(λ () (interactive) ,@body))
 
 (defun str (thing)
   "Converts object or string to an unformatted string."
@@ -1000,7 +1000,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                  (major-mode-p 'term-mode)
                  ;; char is raw mode
                  (term-in-char-mode))
-                (run-with-timer 0.2 nil (lambda () (term-send-raw-string "\C-l"))))
+                (run-with-timer 0.2 nil (λ () (term-send-raw-string "\C-l"))))
             sel)))
     (progn (message "History empty")
            nil)))
@@ -1687,7 +1687,7 @@ when s is a string, set the clipboard to s"
 
 (defmacro do-substitutions (str &rest tups)
   ""
-  (let* ((newtups (mapcar (lambda (tup) (cons 's-replace-regexp-thread tup)) tups)))
+  (let* ((newtups (mapcar (λ (tup) (cons 's-replace-regexp-thread tup)) tups)))
     `(progn (->>
                 ,str
               ,@newtups))))
@@ -1759,7 +1759,7 @@ when s is a string, set the clipboard to s"
   (pen-set-major-mode (lang-to-mode lang)))
 
 (defmacro df (name &rest body)
-  "Named interactive lambda with no arguments"
+  "Named interactive λ with no arguments"
   `(defun ,name ()
      (interactive)
      ,@body))
@@ -1775,13 +1775,13 @@ when s is a string, set the clipboard to s"
 ;; (alist2pairs '(("hi" . "yo") ("my day" . "is good")))
 ;; (alist2pairs '((hi . "yo") (my-day . "is good")))
 (defun alist2pairs (al)
-  (mapcar (lambda (e)
+  (mapcar (λ (e)
             (list (intern (slugify (str (car e))))
                   (cdr e)))
           al))
 
 (defun pen-safe-alist2pairs (al)
-  (mapcar (lambda (e)
+  (mapcar (λ (e)
             (list (intern (slugify (str (car e))))
                   (if (listp (cdr e))
                       ""
@@ -1903,8 +1903,6 @@ Out
   (macroexpand
    `(pen-ms "/H-[A-Z]\\+/{p;s/H-\\([A-Z]\\+\\)/<H-\\L\\1>/;}"
             (define-key ,map ,kbd-expr ,func-sym))))
-
-(defalias 'λ 'lambda)
 
 (defun pen-round-to-dec (n &optional decimal-count)
   (setq decimal-count (or decimal-count 1))
@@ -2106,10 +2104,10 @@ This function accepts any number of ARGUMENTS, but ignores them."
     (dolist (p
              (-filter 'identity
                       (mapcar
-                       (lambda (f)
+                       (λ (f)
                          (frame-parameter f 'client))
                        (-filter
-                        (lambda (f) (or including-this-client
+                        (λ (f) (or including-this-client
                                         (not (equal this-frame f))))
                         (frame-list)))))
       (delete-process p))))
@@ -2183,7 +2181,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
     (goto-line l)
     (move-to-column c)
     ;; For some reason, this hook is added whenever I revert. Therefore remove it. What is adding it?
-    (remove-hook 'after-save-hook (lambda nil (byte-force-recompile default-directory)) t))
+    (remove-hook 'after-save-hook (λ nil (byte-force-recompile default-directory)) t))
   (ignore-errors
     (clear-undo-tree))
   (company-cancel))
@@ -2314,7 +2312,7 @@ If any of the suggest predicates evaluated to t, then suggest the function"
       (if (null body) (setq body '(nil))))
     (let ((declarations
            (mapcar
-            #'(lambda (x)
+            #'(λ (x)
                 (let ((f (cdr (assq (car x) defun-declarations-alist))))
                   (cond
                    (f (apply (car f) name arglist (cdr x)))
@@ -2337,7 +2335,7 @@ If any of the suggest predicates evaluated to t, then suggest the function"
           (def (list 'defalias
                      (list 'quote name)
                      (list 'function
-                           (cons 'lambda
+                           (cons 'λ
                                  (cons arglist body))))))
       (if declarations
           (cons 'prog1 (cons def declarations))

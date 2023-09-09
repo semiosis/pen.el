@@ -240,7 +240,7 @@ semantic-path means a path suitable for google/nl searching"
   "Read characters like in `read-char-exclusive', but if input is
 not one of CHARS, return nil.  CHARS may be a list of characters,
 single-character strings, or a string of characters."
-  (let ((chars (mapcar (lambda (x)
+  (let ((chars (mapcar (λ (x)
                          (if (characterp x) x (string-to-char x)))
                        (append chars nil)))
         (char  (read-char-exclusive prompt inherit-input-method seconds)))
@@ -251,7 +251,7 @@ single-character strings, or a string of characters."
   "Switch; cond for strings. Probably should use pcase instead. The syntax is the same"
   (let ((b
          (mapcar
-          (lambda (e)
+          (λ (e)
             (list
              (list 'string-equal expr (car e))
              (cadr e)))
@@ -606,7 +606,7 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
     (run-with-timer
      2 nil
      (eval
-      `(lambda ()
+      `(λ ()
          (kill-buffer ,buf))))))
 
 (defun pen-maybe-delay-kill-buffer (&optional b)
@@ -883,7 +883,7 @@ buffer which is not included when this function returns"
      (concat "pen-async-pf-" (str (date-ts)))
      (eval `(pen-nsfa (pen-cmd "pen-run-and-write" tf "unbuffer" "pen" "-u" "--pool" (str prompt-function) ,@args)))
      (eval
-      `(lambda (proc)
+      `(λ (proc)
          (apply ',callback-fn (list (chomp (cat ,tf))))
          (f-delete ,tf))))))
 
@@ -991,7 +991,7 @@ non-nil."
   (force-mode-line-update)
   (unless truncate-lines
     (let ((buffer (current-buffer)))
-      (walk-windows (lambda (window)
+      (walk-windows (λ (window)
 		                  (if (eq buffer (window-buffer window))
 			                    (set-window-hscroll window 0)))
 		                nil t)))

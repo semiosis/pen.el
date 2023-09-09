@@ -192,8 +192,8 @@
   (define-key term-raw-map (kbd "C-c M-:") #'pp-eval-expression)
   (define-key term-raw-map (kbd "C-c M-x") #'helm-M-x)
   (define-key term-raw-map (kbd "C-x C-x") #'term-send-raw)
-  (define-key term-raw-map (kbd "<backtab>") (lambda () (interactive) (term-send-raw-string "[Z")))
-  ;; (define-key term-raw-map (kbd "DEL") (lambda () (interactive) (term-send-raw-string "?")))
+  (define-key term-raw-map (kbd "<backtab>") (λ () (interactive) (term-send-raw-string "[Z")))
+  ;; (define-key term-raw-map (kbd "DEL") (λ () (interactive) (term-send-raw-string "?")))
   ;; (define-key term-raw-map (kbd "C-s") #'term-line-mode)
   (define-key term-raw-map (kbd "C-c C-j") #'term-line-mode)
   (define-key term-raw-map (kbd "C-c C-h") #'describe-mode)
@@ -303,7 +303,7 @@ commands to use in that buffer.
            ;; pen-term-cl-refresh-after-fz
            (major-mode-p 'term-mode))
           (run-with-idle-timer 0.2 nil
-                               `(lambda ()
+                               `(λ ()
                                   (ignore-errors
                                     (if (buffer-exists ,(current-buffer))
                                         (with-current-buffer
@@ -334,7 +334,7 @@ commands to use in that buffer.
   (interactive)
   (let ((window-to-delete (selected-window))
         (buffer-to-kill (current-buffer))
-        (delete-window-hook (lambda () (ignore-errors (delete-window)))))
+        (delete-window-hook (λ () (ignore-errors (delete-window)))))
     (unwind-protect
         (progn
           (add-hook 'kill-buffer-hook delete-window-hook t t)

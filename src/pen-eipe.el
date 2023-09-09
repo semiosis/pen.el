@@ -172,7 +172,7 @@
                           (image (lsp-ui-sideline--code-actions-image))
                           (margin (lsp-ui-sideline--margin-width))
                           (keymap (let ((map (make-sparse-keymap)))
-                                    (define-key map [down-mouse-1] (eval `(lambda () (interactive) (funcall ',(intern command)))))
+                                    (define-key map [down-mouse-1] (eval `(λ () (interactive) (funcall ',(intern command)))))
                                     map))
                           (len (length title))
                           (title (progn (add-face-text-property 0 len 'lsp-ui-sideline-global nil title)
@@ -208,7 +208,7 @@
                   ;;                'type
                   ;;                (intern type)
                   ;;                'action
-                  ;;                (eval `(lambda (b) (funcall ',(intern command)))))
+                  ;;                (eval `(λ (b) (funcall ',(intern command)))))
                   ))
 
           ;; (overlay-put

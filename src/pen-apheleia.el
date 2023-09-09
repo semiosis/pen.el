@@ -29,7 +29,7 @@ purposes."
          :stdin (unless input-fname
                   stdin)
          :callback
-         (lambda (stdout)
+         (λ (stdout)
            (ignore-errors
              (when output-fname
                ;; Load output-fname contents into the stdout buffer.
@@ -38,7 +38,7 @@ purposes."
 
              (funcall callback stdout)))
          :ensure
-         (lambda ()
+         (λ ()
            (ignore-errors
              (when input-fname
                (delete-file input-fname))

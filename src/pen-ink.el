@@ -115,7 +115,7 @@
   (let ((ink s))
     (if (interactive-p)
         (if (pen-selected-p)
-            (pen-region-filter (eval `(lambda (s) ,ink)))
+            (pen-region-filter (eval `(λ (s) ,ink)))
           (pen-etv ink))
       ink)))
 
@@ -198,7 +198,7 @@
                    (ink ink))
               (if (interactive-p)
                   (if (pen-selected-p)
-                      (pen-region-filter (eval `(lambda (s) ,ink)))
+                      (pen-region-filter (eval `(λ (s) ,ink)))
                     (pen-etv ink))
                 ink))))
     ""))
@@ -220,7 +220,7 @@
  ;; (pen-etv (pps (ink-list-all-bad-properties (pen-selected-text nil t))))
  (defun ink-list-all-bad-properties (s)
    (-filter
-    (lambda (e)
+    (λ (e)
       (not (string-match "^PEN_" (str (car e)))))
     (-uniq
      (flatten-once
@@ -237,7 +237,7 @@
 
 (defun ink-list-all-bad-properties (s)
    (-filter
-    (lambda (e)
+    (λ (e)
       (not (string-match "^PEN_" (str (car e)))))
     (-uniq
      (flatten-once
@@ -255,7 +255,7 @@
 
   (let ((props
          (-filter
-          (lambda (e)
+          (λ (e)
             (string-match "^PEN_" (str (car e))))
           (-uniq
            (flatten-once
@@ -280,7 +280,7 @@
                      text)))
         (if (interactive-p)
             (if (pen-selected-p)
-                (pen-region-filter (eval `(lambda (s) ,text)))
+                (pen-region-filter (eval `(λ (s) ,text)))
               (pen-etv text))
           text))
     ""))

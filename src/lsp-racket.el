@@ -22,7 +22,7 @@
                   (lsp-stdio-connection 'lsp-racket--server-command)
                   :major-modes '(racket-mode)
                   :server-id 'racket
-                  :initialized-fn (lambda (workspace)
+                  :initialized-fn (λ (workspace)
                                     (with-lsp-workspace workspace
                                       (lsp--set-configuration
                                        `(:racket ,lsp-racket--config-options))))))

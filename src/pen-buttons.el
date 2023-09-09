@@ -48,7 +48,7 @@
 
   (if overlay
       (let* ((ps (overlay-properties overlay))
-             (lambda (- (length ps) 2))
+             (λ (- (length ps) 2))
              (a (cl-loop for pen-i in (number-sequence 0 l 2) collect (cons (nth pen-i ps)
                                                                             (nth (+ 1 i) ps)))))
         (if (interactive-p)

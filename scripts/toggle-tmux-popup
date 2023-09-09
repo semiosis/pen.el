@@ -41,6 +41,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -d) {
+        detach=y
+        shift
+        shift
+    }
+    ;;
+
     -nob) {
         no_border=y
         shift

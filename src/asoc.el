@@ -98,14 +98,14 @@ determined by `asoc-compare-fn'."
   (let ((DELMARKER (make-symbol "DEL")))
     (delq
      DELMARKER
-     (mapcar (lambda (x) (if (funcall pred x) x DELMARKER))
+     (mapcar (λ (x) (if (funcall pred x) x DELMARKER))
              list))))
 
 (defun asoc---list-remove (pred list)
       (let ((DELMARKER (make-symbol "DEL")))
         (delq
         DELMARKER
-        (mapcar (lambda (x) (if (funcall pred x) DELMARKER x))
+        (mapcar (λ (x) (if (funcall pred x) DELMARKER x))
                 list))))
 
 (defun asoc---list-take (n list)
@@ -173,7 +173,7 @@ Example:
       (asoc-sort-keys a))
     ;; ((a . 1) (b . 2) (c . 3) (d . 4) (e . 5))"
   (sort (copy-sequence alist)
-        (lambda (pair1 pair2)
+        (λ (pair1 pair2)
           (funcall (or comparator #'string<) (car pair1) (car pair2)))))
 
 (defun asoc-filter (predicate alist)
@@ -187,7 +187,7 @@ Example: filter for pairs where KEY > VALUE
                  (5 . 5)  (6 . 8)  (7 . 13)  (8 . 21))))
       (asoc-filter #'> fib))
     ;; ((2 . 1) (3 . 2) (4 . 3))"
-  (asoc---list-filter (lambda (pair) (funcall predicate (car pair) (cdr pair)))
+  (asoc---list-filter (λ (pair) (funcall predicate (car pair) (cdr pair)))
                       alist))
 
 (defmacro asoc--filter (form alist)
@@ -206,7 +206,7 @@ Examples:
     ;; ((a . b) (b . c) (d . a))"
   (declare (debug (form sexp))
            (indent 1))
-  `(asoc-filter (lambda (key value) ,form) ,alist))
+  `(asoc-filter (λ (key value) ,form) ,alist))
 
 (defun asoc-filter-keys (predicate alist)
   "Return a copy of ALIST with keys failing PREDICATE removed.
@@ -215,9 +215,9 @@ Example: filter for pairs where KEY <= 3
 
     (let ((fib '((1 . 1)  (2 . 1)  (3 . 2)  (4 . 3)
                  (5 . 5)  (6 . 8)  (7 . 13)  (8 . 21))))
-      (asoc-filter-keys (lambda (k) (<= k 3)) fib))
+      (asoc-filter-keys (λ (k) (<= k 3)) fib))
     ;; ((1 . 1) (2 . 1) (3 . 2))"
-  (asoc---list-filter (lambda (pair) (funcall predicate (car pair))) alist))
+  (asoc---list-filter (λ (pair) (funcall predicate (car pair))) alist))
 
 (defun asoc-filter-values (predicate alist)
   "Return a copy of ALIST with pairs whose value fails PREDICATE removed.
@@ -226,9 +226,9 @@ Example: filter for pairs where VALUE <= 3
 
     (let ((fib '((1 . 1)  (2 . 1)  (3 . 2)  (4 . 3)
                  (5 . 5)  (6 . 8)  (7 . 13)  (8 . 21))))
-      (asoc-filter-values (lambda (v) (<= v 3)) fib))
+      (asoc-filter-values (λ (v) (<= v 3)) fib))
     ;; ((1 . 1) (2 . 1) (3 . 2) (4 . 3))"
-  (asoc---list-filter (lambda (pair) (funcall predicate (cdr pair))) alist))
+  (asoc---list-filter (λ (pair) (funcall predicate (cdr pair))) alist))
 
 (defun asoc-remove (predicate alist)
   "Return a copy of ALIST with key-value pairs satisfying PREDICATE removed.
@@ -245,7 +245,7 @@ Example: filter out pairs where KEY > VALUE
                  (5 . 5)  (6 . 8)  (7 . 13)  (8 . 21))))
       (asoc-remove #'> fib))
     ;; ((1 . 1) (5 . 5) (6 . 8) (7 . 13) (8 . 21))"
-  (asoc---list-remove (lambda (pair) (funcall predicate (car pair) (cdr pair)))
+  (asoc---list-remove (λ (pair) (funcall predicate (car pair) (cdr pair)))
                       alist))
 
 (defun asoc-remove-keys (predicate alist)
@@ -259,9 +259,9 @@ Example: filter out pairs where KEY <= 3
 
     (let ((fib '((1 . 1)  (2 . 1)  (3 . 2)  (4 . 3)
                  (5 . 5)  (6 . 8)  (7 . 13)  (8 . 21))))
-      (asoc-remove-keys (lambda (k) (<= k 3)) fib))
+      (asoc-remove-keys (λ (k) (<= k 3)) fib))
     ;; ((4 . 3) (5 . 5) (6 . 8) (7 . 13) (8 . 21))"
-  (asoc---list-remove (lambda (pair) (funcall predicate (car pair))) alist))
+  (asoc---list-remove (λ (pair) (funcall predicate (car pair))) alist))
 
 (defun asoc-remove-values (predicate alist)
   "Return a copy of ALIST with pairs whose value satisfying PREDICATE removed.
@@ -274,9 +274,9 @@ Example: filter out pairs where VALUE <= 3
 
     (let ((fib '((1 . 1)  (2 . 1)  (3 . 2)  (4 . 3)
                  (5 . 5)  (6 . 8)  (7 . 13)  (8 . 21))))
-      (asoc-remove-values (lambda (v) (<= v 3)) fib))
+      (asoc-remove-values (λ (v) (<= v 3)) fib))
     ;; ((5 . 5) (6 . 8) (7 . 13) (8 . 21))"
-  (asoc---list-remove (lambda (pair) (funcall predicate (cdr pair))) alist))
+  (asoc---list-remove (λ (pair) (funcall predicate (cdr pair))) alist))
 
 (defalias 'asoc-reject 'asoc-remove)
 (defalias 'asoc-reject-keys 'asoc-remove-keys)
@@ -339,7 +339,7 @@ are removed. Otherwise, the pair is simply consed on the front of the alist."
   `(progn
      (when ,replace
        (setq ,alist (asoc---list-filter
-                     (lambda (pair)
+                     (λ (pair)
                        (not (asoc---compare (car pair) ,key)))
                      ,alist)))
      (push (cons ,key ,value) ,alist)))
@@ -390,7 +390,7 @@ The anaphoric variables 'key and 'value are available for use in FORM.
 For all associations satisfying FORM, use `asoc--filter'"
     (declare (debug (form sexp))
              (indent 1))
-    `(asoc-find (lambda (key value) ,form) ,alist))
+    `(asoc-find (λ (key value) ,form) ,alist))
 
 (defun asoc-find-key (key alist)
     "Return the first association of ALIST with KEY, or nil if none match.
@@ -494,14 +494,14 @@ Example:
          (pairsym (make-symbol "pair")))
     (if result
         `(progn
-           (mapcar (lambda (pair)
+           (mapcar (λ (pair)
                      (let ((,kvar (car pair))
                            (,vvar (cdr pair)))
                        ,@body))
                    ,alist)
            ,result)
       `(progn
-         (mapcar (lambda (,pairsym)
+         (mapcar (λ (,pairsym)
                    (let ((,kvar (car ,pairsym))
                          (,vvar (cdr ,pairsym)))
                      ,@body))
@@ -562,15 +562,15 @@ FUNCTION should be a function of two arguments (KEY VALUE).
 Examples:
 
     ;; map value to nil when key is not a symbol...
-    (asoc-map (lambda (k v) (cons k (when (symbolp k) v)))
+    (asoc-map (λ (k v) (cons k (when (symbolp k) v)))
               '((one . 1) (two . 4) (3 . 9) (4 . 16) (five . 25) (6 . 36)))
     ;; ((one . 1) (two . 4) (3 . nil) (4 . nil) (five . 25) (6 . nil))
 
     ;; list of values for symbol keys (nil for other keys)
-    (asoc-map (lambda (k v) (when (symbolp k) v))
+    (asoc-map (λ (k v) (when (symbolp k) v))
               '((one . 1) (two . 4) (3 . 9) (4 . 16) (five . 25) (6 . 36)))
     ;; (1 4 nil nil 25 nil)"
-  (mapcar (lambda (k.v)
+  (mapcar (λ (k.v)
             (let ((key   (car k.v))
                   (value (cdr k.v)))
               (funcall func key value)))
@@ -600,7 +600,7 @@ Examples:
     (\"one=1;\" \"two=2;\" \"three=3;\" \"four=4;\")"
   (declare (debug (form sexp))
            (indent 1))
-  `(asoc-map (lambda (key value) ,form) ,alist))
+  `(asoc-map (λ (key value) ,form) ,alist))
 
 (defun asoc-map-keys (func alist)
   "Return a modified copy of alist with keys transformed by FUNC.
@@ -610,7 +610,7 @@ Example: convert symbolic keys to strings
     (asoc-map-keys #'symbol-name
                   '((one . 1) (two . 4) (three . 9) (four . 16)))
     ;; ((\"one\" . 1) (\"two\" . 4) (\"three\" . 9) (\"four\" . 16))"
-  (mapcar (lambda (k.v)
+  (mapcar (λ (k.v)
             (let ((k (car k.v))
                   (v (cdr k.v)))
               (cons (funcall func k) v)))
@@ -624,7 +624,7 @@ Example: convert alist to nested list
     (let ((a '((1 . 1) (2 . 4) (3 . 9) (4 . 16) (5 . 25))))
       (asoc-map-values #'list a))
     ;; ((1 1) (2 4) (3 9) (4 16) (5 25))"
-  (mapcar (lambda (k.v)
+  (mapcar (λ (k.v)
             (let ((k (car k.v))
                   (v (cdr k.v)))
               (cons k (funcall func v))))
@@ -659,7 +659,7 @@ Example: list of keys with value of 0
 
     (let ((a '((1 . 0) (2 . 0) (3 . 0) (4 . 1) (5 . 0)
                (6 . 2) (7 . 7) (8 . 3) (9 . 2) (10 . 0))))
-      (asoc-fold (lambda (k v acc) (if (zerop v) (cons k acc) acc))
+      (asoc-fold (λ (k v acc) (if (zerop v) (cons k acc) acc))
                  (reverse a) nil))
     ;; (1 2 3 5 10)"
   (let ((result init))
@@ -688,7 +688,7 @@ Example: list of keys with value of 0
     ;; (1 2 3 5 10)"
   (declare (debug (form sexp sexp))
            (indent 1))
-  `(asoc-fold (lambda (key value acc) ,form)
+  `(asoc-fold (λ (key value acc) ,form)
               ,alist ,init))
 
 (defun asoc-merge-values (&rest alists)

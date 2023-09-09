@@ -33,7 +33,7 @@
 (case system-type
   ('darwin (unless window-system
              (setq interprogram-cut-function
-                   (lambda (text &optional push)
+                   (λ (text &optional push)
                      (let* ((process-connection-type nil)
                             (pbproxy (start-process "pbcopy" "pbcopy" "/usr/bin/pbcopy")))
                        (process-send-string pbproxy text)

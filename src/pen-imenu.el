@@ -15,7 +15,7 @@
 
 (never
  (add-hook 'python-mode-hook
-           (lambda ()
+           (λ ()
              (add-to-list
               'imenu-generic-expression
               ;; menu title, regex, index
@@ -25,7 +25,7 @@
              (setq imenu-create-index-function 'pen-merge-imenu))))
 
 (remove-hook 'python-mode-hook
-          (lambda ()
+          (λ ()
             (add-to-list
              'imenu-generic-expression
              ;; menu title, regex, index
@@ -35,7 +35,7 @@
             (setq imenu-create-index-function 'pen-merge-imenu)))
 
 (add-hook 'sx-question-mode
-          (lambda ()
+          (λ ()
             (add-to-list
              'imenu-generic-expression
              ;; menu title, regex, index
@@ -45,7 +45,7 @@
             (setq imenu-create-index-function 'pen-merge-imenu)))
 
 (add-hook 'Custom-mode-hook
-          (lambda ()
+          (λ ()
             (add-to-list
              'imenu-generic-expression
              '("*" "^\\(Show Value [a-z-]*\\|Hide [a-z-]*\\)" 1))
@@ -86,7 +86,7 @@
 (add-hook 'bible-mode-hook 'bible-imenu-configure)
 
 (ignore-errors
-  ;; Wrong number of arguments: (lambda (bufname) (not (eq nil (get-buffer bufname)))), 3
+  ;; Wrong number of arguments: (λ (bufname) (not (eq nil (get-buffer bufname)))), 3
   ;; this is buggy:
   (imenu-list-minor-mode 1))
 
@@ -113,7 +113,7 @@
     (switch-to-buffer cb)))
 
 (defun button-cloud-create-imenu-index ()
-  (mapcar (lambda (e)
+  (mapcar (λ (e)
             (cons (car e) (set-marker (make-marker) (cdr e)))
             ;; e
             )
@@ -148,7 +148,7 @@
 
 (defun helm-imenu-filter-correct-candidates (candidates)
   (-filter
-   (lambda (e)
+   (λ (e)
      (and
       (sequencep (car e))
       (or (bufferp (cdr e))
@@ -171,7 +171,7 @@
                                    )
                                  k))
            for disp1 = (let* ((inter (mapconcat
-                                      (lambda (x)
+                                      (λ (x)
                                         (propertize
                                          x 'face
                                          (cl-loop for (p . f) in helm-imenu-type-faces
@@ -187,7 +187,7 @@
 
 (defun imenu--truncate-items (menulist)
   "Truncate all strings in MENULIST to `imenu-max-item-length'."
-  (mapc (lambda (item)
+  (mapc (λ (item)
 	        (when (and (numberp imenu-max-item-length)
 		                 (> (length (car item)) imenu-max-item-length))
 	          (setcar item (substring (car item) 0 imenu-max-item-length)))
@@ -219,7 +219,7 @@
 (defun ace-to-imenu (tps)
   (-filter 'sequencep
            (mapcar
-            (lambda (tp)
+            (λ (tp)
               (cons (car tp)
                     (byte-to-marker (cdr tp))))
             tps)))
@@ -288,9 +288,9 @@
       "\s+" " "
       
       (cl-letf (((symbol-function #'Info-goto-node)
-                 (lambda (node _) node))
+                 (λ (node _) node))
                 (browse-url-browser-function
-                 (lambda (url &rest _) url)))
+                 (λ (url &rest _) url)))
         (Info-try-follow-nearest-node)))))
    
    (point)))
@@ -317,17 +317,17 @@
   "Different from Info-menu which lists the headings only."
   (interactive)
 
-  (let* ((imenu-create-index-function (eval `(lambda () (info-collect-imenu ,(point-min) ,(point-max))))))
+  (let* ((imenu-create-index-function (eval `(λ () (info-collect-imenu ,(point-min) ,(point-max))))))
     (helm-imenu)))
 
 (defun eww-imenu ()
   (interactive)
 
-  (let* ((imenu-create-index-function (eval `(lambda () (eww-collect-imenu ,(point-min) ,(point-max))))))
+  (let* ((imenu-create-index-function (eval `(λ () (eww-collect-imenu ,(point-min) ,(point-max))))))
     (helm-imenu)))
 
-(add-hook 'Info-mode-hook (lambda () (setq-local imenu-create-index-function #'info-collect-imenu)))
-(remove-hook 'Info-mode-hook (lambda () (setq-local imenu-create-index-function #'info-collect-imenu)))
+(add-hook 'Info-mode-hook (λ () (setq-local imenu-create-index-function #'info-collect-imenu)))
+(remove-hook 'Info-mode-hook (λ () (setq-local imenu-create-index-function #'info-collect-imenu)))
 
 (advice-add 'imenu-list-update :around #'ignore-errors-around-advice)
 

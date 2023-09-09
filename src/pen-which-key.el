@@ -78,7 +78,7 @@
         (prefix-map (if prefix (lookup-key keymap prefix) keymap)))
     (when (keymapp prefix-map)
       (map-keymap
-       (lambda (ev def)
+       (λ (ev def)
          (let* ((key (vconcat prefix (list ev)))
                 (key-desc (key-description key)))
            (cond
@@ -109,7 +109,7 @@
                              (pps def))
                             ((symbolp def) (which-key--compute-binding def))
                             ((keymapp def) "prefix")
-                            ((eq 'lambda (car-safe def)) "lambda")
+                            ((eq 'λ (car-safe def)) "λ")
                             ((eq 'closure (car-safe def)) "closure")
                             ((stringp def) def)
                             ((vectorp def) (key-description def))

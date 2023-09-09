@@ -24,7 +24,7 @@
                   (lsp-stdio-connection 'lsp-common-lisp--server-command)
                   :major-modes '(lisp-mode)
                   :server-id 'common-lisp
-                  :initialized-fn (lambda (workspace)
+                  :initialized-fn (λ (workspace)
                                     (with-lsp-workspace workspace
                                       (lsp--set-configuration
                                        `(:common-lisp ,lsp-common-lisp--config-options))))))

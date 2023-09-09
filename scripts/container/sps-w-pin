@@ -3,11 +3,13 @@ export TTY
 
 # Meant to be used as an editor
 
-is_tty() { [ -t 1 ]; }
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 if is_tty; then
-    pool pen-e "$@"
+    # pool pen-e "$@"
+    v "$@"
 else
     # pen-sps -w pin "$@"
-    pen-sps -w pool pen-e "$@"
+    # pen-sps -w pool pen-e "$@"
+    pen-sps -w v "$@"
 fi

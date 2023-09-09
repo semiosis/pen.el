@@ -26,7 +26,7 @@
 
 (defmacro variable-name-re-p (re)
   "Predicate for a variable with name matching regex"
-  `(lambda (object)
+  `(λ (object)
        (and (variable-p object)
             (not (not (string-match-p ,re (symbol-name object)))))))
 

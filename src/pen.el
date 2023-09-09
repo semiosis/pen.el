@@ -16,9 +16,12 @@
     (let ((res (apply proc args)))
       res)))
 
+(defalias 'λ 'lambda)
+(defalias 'y 'lambda)
+
 (defmacro lm (&rest body)
-  "Interactive lambda with no arguments."
-  `(lambda () (interactive) ,@body))
+  "Interactive λ with no arguments."
+  `(λ () (interactive) ,@body))
 
 (defmacro comment (&rest body) nil)
 
@@ -200,7 +203,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (defmacro pen-quote-args (&rest body)
   "Join all the arguments in a sexp into a single string.
 Be mindful of quoting arguments correctly."
-  `(mapconcat (lambda (input)
+  `(mapconcat (λ (input)
                 (pen-shellquote (str input))) ',body " "))
 
 (defalias 'e-cmd 'pen-quote-args)
@@ -449,7 +452,7 @@ Reconstruct the entire yaml-ht for a different language."
                  (new-examples
                   (if (vectorp (car examples))
                       (mapcar
-                       (lambda (v)
+                       (λ (v)
                          (cl-loop for e in (pen-vector2list v) collect
                                (translate e)))
                        examples)
@@ -458,7 +461,7 @@ Reconstruct the entire yaml-ht for a different language."
                  (new-prompt
                   (pen-expand-template-keyvals
                    new-prompt
-                   (-zip vars (mapcar (lambda (s) (format "<%s>" s)) new-vars))))
+                   (-zip vars (mapcar (λ (s) (format "<%s>" s)) new-vars))))
                  (newht (let ((h (make-hash-table :test 'equal)))
                           (ht-set h "prompt" new-prompt)
                           (ht-set h "title" new-title)
@@ -493,7 +496,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-list-filterers ()
   (interactive)
-  (let ((funs (-filter (lambda (y) (pen-yaml-test y "filter"))
+  (let ((funs (-filter (λ (y) (pen-yaml-test y "filter"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
         (pen-etv (pps (pen--htlist-to-alist funs)))
@@ -501,7 +504,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-list-completers ()
   (interactive)
-  (let ((funs (-filter (lambda (y) (pen-yaml-test y "completion"))
+  (let ((funs (-filter (λ (y) (pen-yaml-test y "completion"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
         (pen-etv (pps (pen--htlist-to-alist funs)))
@@ -509,7 +512,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-list-inserters ()
   (interactive)
-  (let ((funs (-filter (lambda (y) (pen-yaml-test y "insertion"))
+  (let ((funs (-filter (λ (y) (pen-yaml-test y "insertion"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
         (pen-etv (pps (pen--htlist-to-alist funs)))
@@ -517,7 +520,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-list-infos ()
   (interactive)
-  (let ((funs (-filter (lambda (y) (pen-yaml-test y "info"))
+  (let ((funs (-filter (λ (y) (pen-yaml-test y "info"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
         (pen-etv (pps (pen--htlist-to-alist funs)))
@@ -525,7 +528,7 @@ Reconstruct the entire yaml-ht for a different language."
 
 (defun pen-list-interpreters ()
   (interactive)
-  (let ((funs (-filter (lambda (y) (pen-yaml-test y "interpreter"))
+  (let ((funs (-filter (λ (y) (pen-yaml-test y "interpreter"))
                        pen-prompt-functions-meta)))
     (if (interactive-p)
         (pen-etv (pps (pen--htlist-to-alist funs)))
@@ -1098,7 +1101,7 @@ Reconstruct the entire yaml-ht for a different language."
 (comment
  (pen-etv (pps (tuplist-to-alist '((a b) (c d))))))
 (defun tuplist-to-alist (tuplist)
-  (mapcar (lambda (tup)
+  (mapcar (λ (tup)
             (cons (car tup) (second tup)))
           tuplist))
 (defalias 'pen-list2alist 'tuplist-to-alist)
@@ -1129,7 +1132,7 @@ Reconstruct the entire yaml-ht for a different language."
   (if (vectorp htlist)
       (setq htlist (pen-vector2list htlist)))
   (mapcar
-   (lambda (e)
+   (λ (e)
      (if (ht-p e)
          (let ((key (car (ht-keys e))))
            (cons key
@@ -1141,7 +1144,7 @@ Reconstruct the entire yaml-ht for a different language."
 (require 'pen-define-prompt-function)
 
 (defun pen-list-to-orglist (l)
-  (mapconcat 'identity (mapcar (lambda (s) (concat "- " s)) l)
+  (mapconcat 'identity (mapcar (λ (s) (concat "- " s)) l)
              "\n"))
 
 (defun test-subprompts ()
@@ -1294,9 +1297,9 @@ Otherwise, it will be a shell expression template")
     :type 'string
     :group 'pen
     :options (ht-keys pen-engines)
-    :set (lambda (_sym value)
+    :set (λ (_sym value)
            (set _sym value))
-    :get (lambda (_sym)
+    :get (λ (_sym)
            (eval (sor _sym nil)))
     :initialize #'custom-initialize-default))
 
@@ -1375,7 +1378,7 @@ Otherwise, it will be a shell expression template")
                              (newengine (cdr d))
                              ;; (newengine-ht (ht-get pen-engines newengine))
                              (satisfies (-reduce-from
-                                         (lambda (a r)
+                                         (λ (a r)
                                            (and a (-contains-p defer-provisions r)))
                                          t
                                          requirements)))
@@ -1397,7 +1400,7 @@ Otherwise, it will be a shell expression template")
      ;; - if it has the appropriate speciality then select it
      ;; - otherwise
 
-     (-reduce (lambda (c e)))
+     (-reduce (λ (c e)))
 
      ;; Select the first from family which satisfies the requirements
 
@@ -1514,7 +1517,7 @@ But use the results-analyser."
          (res
           response))
 
-    (mapcar (lambda (s)
+    (mapcar (λ (s)
               (concat (pen-company-filetype--prefix)
                       s))
             res)))

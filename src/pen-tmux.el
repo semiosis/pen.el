@@ -345,7 +345,7 @@ START and END can be in either order."
 (comment
  (run-with-timer
   2 nil
-  (lambda ()
+  (λ ()
     (tmux-popup "cmatrix" 50 50 (tmux-cursor-x) (tmux-cursor-y))
     (comment
      (etv (tmux-cursor-y))

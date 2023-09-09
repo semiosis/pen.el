@@ -217,7 +217,7 @@ Return nil if no completion should be triggered. Return a string
 as the prefix to be completed, or a cons cell of (prefix . t) to bypass
 `company-minimum-prefix-length' for trigger characters."
   (if-let ((trigger-chars (company-lsp--trigger-characters)))
-      (let* ((max-trigger-len (apply 'max (mapcar (lambda (trigger-char)
+      (let* ((max-trigger-len (apply 'max (mapcar (λ (trigger-char)
                                                     (length trigger-char))
                                                   trigger-chars)))
              (trigger-regex (s-join "\\|" (mapcar #'regexp-quote trigger-chars)))
@@ -230,7 +230,7 @@ as the prefix to be completed, or a cons cell of (prefix . t) to bypass
         (let* ((symbol (if (consp symbol-cons)
                            (car symbol-cons)
                          symbol-cons))
-               (trigger-char (seq-find (lambda (trigger-char)
+               (trigger-char (seq-find (λ (trigger-char)
                                          (s-starts-with? trigger-char symbol))
                                        trigger-chars)))
           (if trigger-char
@@ -276,7 +276,7 @@ one of the PROPS of the CompletionItem is missing.
 Returns CANDIDATE with the resolved CompletionItem."
   (unless (plist-get (text-properties-at 0 candidate) 'company-lsp-resolved)
     (let ((item (company-lsp--candidate-item candidate)))
-      (when (seq-some (lambda (prop)
+      (when (seq-some (λ (prop)
                         (null (gethash prop item)))
                       props)
         (let ((resolved-item (lsp--resolve-completion item))
@@ -301,7 +301,7 @@ to expand its arguments."
                                 (replace-regexp-in-string "^[^,]*self\\(, \\)?" "" it)
                                 (and (not (s-blank-str? it)) it)
                                 (s-split ", " it)
-                                (mapconcat (lambda (x) (format "${%s}" x)) it ", ")))))
+                                (mapconcat (λ (x) (format "${%s}" x)) it ", ")))))
       (concat "(" (or snippet "$1") ")$0"))))
 
 (defun company-lsp--fallback-snippet (item)
@@ -320,7 +320,7 @@ Return a string of the snippet to expand, or nil if no snippet is available."
 (defun company-lsp--looking-back-trigger-characters-p ()
   "Return non-nil if text before point matches any of the trigger characters."
   (let ((trigger-chars (company-lsp--trigger-characters)))
-    (cl-some (lambda (trigger-char)
+    (cl-some (λ (trigger-char)
                (equal (buffer-substring-no-properties (- (point) (length trigger-char)) (point))
                       trigger-char))
              trigger-chars)))
@@ -421,7 +421,7 @@ Return a list of strings as the completion candidates."
   (let* ((incomplete (and (hash-table-p response) (gethash "isIncomplete" response)))
          (items (cond ((hash-table-p response) (gethash "items" response))
                       ((sequencep response) response)))
-         (candidates (mapcar (lambda (item)
+         (candidates (mapcar (λ (item)
                                (company-lsp--make-candidate item prefix))
                              (lsp--sort-completions items)))
          (server-id (lsp--client-server-id (lsp--workspace-client lsp--cur-workspace)))
@@ -451,7 +451,7 @@ Returns a new list of candidates."
   (let (resort)
     (--> candidates
          ;; candidate -> (score matched candidate)
-         (mapcar (lambda (candidate)
+         (mapcar (λ (candidate)
                    (let ((match (funcall company-lsp-match-candidate-predicate candidate prefix)))
                      (if (consp match)
                          (progn
@@ -459,13 +459,13 @@ Returns a new list of candidates."
                            (list (car match) (cdr match) candidate))
                        (list -1 match candidate))))
                  it)
-         (-filter (lambda (item)
+         (-filter (λ (item)
                     (nth 1 item))
                   it)
          (if resort
-             (sort it (lambda (a b) (< (car a) (car b))))
+             (sort it (λ (a b) (< (car a) (car b))))
            it)
-         (mapcar (lambda (item) (nth 2 item))
+         (mapcar (λ (item) (nth 2 item))
                  it))))
 
 (defun company-lsp-match-candidate-prefix (candidate prefix)
@@ -597,7 +597,7 @@ CALLBACK is a function that takes a list of strings as completion candidates."
     (company-lsp--cancel-outstanding-request)
     (setq body
           (lsp--send-request-async req
-                                   (lambda (resp)
+                                   (λ (resp)
                                      (setq company-lsp--last-request-id nil)
                                      (funcall callback (company-lsp--on-completion resp prefix)))))
     (setq company-lsp--last-request-id (plist-get body :id))))
@@ -675,7 +675,7 @@ If there are multiple trigger characters matched (e.g. one is a
 suffix of another), return any of them. If no trigger characters
 match, return nil."
   (let ((trigger-chars (company-lsp--trigger-characters)))
-    (seq-find (lambda (trigger-char)
+    (seq-find (λ (trigger-char)
                 (and (>= (point) (length trigger-char))
                      (string= (buffer-substring (- (point) (length trigger-char))
                                                 (point))
@@ -768,7 +768,7 @@ See the documentation of `company-backends' for COMMAND and ARG."
      ;; is restored and textEdit actions can be applied.
      (or (company-lsp--cache-item-candidates (company-lsp--cache-get arg))
          (and company-lsp-async
-              (cons :async (lambda (callback)
+              (cons :async (λ (callback)
                              (company-lsp--candidates-async arg callback))))
          (company-lsp--candidates-sync arg)))
     (sorted t)
@@ -785,7 +785,7 @@ See the documentation of `company-backends' for COMMAND and ARG."
     '(:textDocument (:completion (:completionItem (:snippetSupport t))))))
 
 (add-hook 'lsp-before-initialize-hook
-          (lambda ()
+          (λ ()
             (lsp-register-client-capabilities 'company-lsp #'company-lsp--client-capabilities)))
 
 (provide 'pen-company-lsp)

@@ -1,7 +1,7 @@
 (package-initialize)
 
 (eval-after-load "polymode"
-  (lambda nil
+  (λ nil
     (define-hostmode org-brain-poly-hostmode :mode 'org-brain-visualize-mode)
     (define-innermode org-brain-poly-innermode :mode 'org-mode :head-matcher "^[─-]\\{3\\} Entry [─-]+
 " :tail-matcher "\\'" :head-mode 'host :tail-mode 'host)

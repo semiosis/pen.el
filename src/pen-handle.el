@@ -41,7 +41,7 @@
 (defun pen-ask-documentation (thing query)
   (interactive
    (let* ((thing (pen-thing-at-point))
-          (qs (mapcar (lambda (s) (s-format s 'aget `(("query" . ,thing)))) pen-doc-queries))
+          (qs (mapcar (λ (s) (s-format s 'aget `(("query" . ,thing)))) pen-doc-queries))
           (query
            (fz qs
                nil nil
@@ -477,7 +477,7 @@
           (fz
            (mapcar 'str2sym
                    (mapcar
-                    (lambda (e)
+                    (λ (e)
                       (replace-regexp-in-string "^:" "handle-"
                                                 (str e)))
                     handle-keywords))

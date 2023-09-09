@@ -30,7 +30,7 @@
 (defmacro quote-args (&rest body)
   "Join all the arguments in a sexp into a single string.
 Be mindful of quoting arguments correctly."
-  `(mapconcat (lambda (input)
+  `(mapconcat (λ (input)
                 (shellquote (str input))) ',body " "))
 
 (defun shellquote (input)
@@ -239,7 +239,24 @@ Be mindful of quoting arguments correctly."
 
   (if (not f)
       (setq f "1"))
-  (pen-sn (concat "cut -d " (pen-q d) " -f " (pen-q f) " 2>/dev/null") stdin))
+  (s-preserve-trailing-whitespace  
+   (pen-sn (concat "cut -d " (pen-q d) " -f " (pen-q f) " 2>/dev/null") stdin)
+   stdin))
+
+(cl-defun e/cut (stdin &key d &key f)
+  (if (not d)
+      (setq d " "))
+
+  (if (not f)
+      (setq f "1")
+    (setq f (str f)))
+
+  (setq f (- (string-to-int f) 1))
+
+  (let ((lines (str2lines stdin)))
+    (list2str (mapcar (λ (line) (nth f (s-split d line)))
+                      lines))))
+
 (defalias 'cut 'sh/cut)
 
 (defun sh/u-rm-dirsuffix (nl-paths)
@@ -353,7 +370,7 @@ Be mindful of quoting arguments correctly."
   (pen-sn (concat "u dn | chomp") paths dir))
 
 (defun e/dn (paths &optional dir)
-  (mapcar (lambda (path) (file-name-directory path)) (split-string paths "\n")))
+  (mapcar (λ (path) (file-name-directory path)) (split-string paths "\n")))
 (defalias 'dn 'e/dn)
 
 (defun /rp (path &optional dir)

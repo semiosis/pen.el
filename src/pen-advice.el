@@ -22,7 +22,7 @@
 (defun advice-unadvice (sym)
   "Remove all advices from symbol SYM."
   (interactive "aFunction symbol: ")
-  (advice-mapc (lambda (advice _props) (advice-remove sym advice)) sym))
+  (advice-mapc (λ (advice _props) (advice-remove sym advice)) sym))
 (defalias 'advice-remove-all-from 'advice-unadvice)
 
 (defun unique-buffer-generic-after-advice (&rest args)
@@ -116,7 +116,7 @@
 (advice-add 'org-kill-line :around #'org-kill-line-around-advice)
 
 (defun helm-etags-select-around-advice (proc &rest args)
-  (cl-letf (((symbol-function 'thing-at-point) (lambda (&rest body) "")))
+  (cl-letf (((symbol-function 'thing-at-point) (λ (&rest body) "")))
     (let ((res (apply proc args)))
       res)))
 

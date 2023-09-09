@@ -115,7 +115,7 @@
     (if (and b (button-face-p-here 'org-brain-local-child))
         (progn
           (car (-filter
-                (lambda (e)
+                (λ (e)
                   (and (equal (car e) org-brain--vis-entry))
                   (equal (second e) (str (button-get-text b))))
                 (org-brain-headline-entries)))))))
@@ -188,7 +188,7 @@ raw entry data."
    (funcall (or func #'identity) entry)
    (when (> max-level 0)
      (flatten-once
-      (mapcar (lambda (x) (org-brain-recursive-children-flat x (1- max-level) func))
+      (mapcar (λ (x) (org-brain-recursive-children-flat x (1- max-level) func))
               (org-brain-children entry))))))
 (defun org-brain-visualize-goto-recursive-children-flat (entry &optional max-level)
   ""
@@ -348,14 +348,14 @@ If ALL is nil, choose only between externally linked children."
   (cons 'qa
         (flatten-once
          (mapcar
-          (lambda (tp)
+          (λ (tp)
             (list
              (str2sym (concat "-"
                               ;; get the first letter of the first element
                               (car tp)))
              (cadr tp)))
           (-filter
-           (lambda (tp)
+           (λ (tp)
              (equal 1 (length (car tp))))
            brainkeys))))))
 
@@ -444,7 +444,7 @@ If ALL is nil, choose only between externally linked children."
 
                                               (string-match "\\.org$" (buffer-file-name)))
                                          (buffer-file-name))
-                                     (lambda (fp)
+                                     (λ (fp)
                                        (and (file-exists-p fp)
 
                                             (string-match "\\.org$" fp))))))
@@ -477,7 +477,7 @@ Update the `org-id-locations' global hash-table, and update the
 
                                               (string-match "\\.org$" (buffer-file-name)))
                                          (buffer-file-name))
-                                     (lambda (fp)
+                                     (λ (fp)
                                        (and (file-exists-p fp)
 
                                             (string-match "\\.org$" fp))))))
@@ -485,7 +485,7 @@ Update the `org-id-locations' global hash-table, and update the
   (if (string-match "\\.org$" path)
       (with-current-buffer
           (find-file path)
-        (org-map-entries (lambda () (org-id-remove-entry t)) t)
+        (org-map-entries (λ () (org-id-remove-entry t)) t)
         (org-id-update-id-locations nil 'silent)
         (if save
             (save-buffer)))))
@@ -498,11 +498,11 @@ Update the `org-id-locations' global hash-table, and update the
 
 (defun org-brain-remove-irrelevant-names-from-path (path)
   (-filter
-   (lambda (e)
+   (λ (e)
      (not (or
            (string-equal "infogetics" e)
            (string-equal "fungible" e))))
-   (mapcar (lambda (e)
+   (mapcar (λ (e)
              (if (string-equal "infogetics" e)
                  "deep learning"
                e))
@@ -584,7 +584,7 @@ Update the `org-id-locations' global hash-table, and update the
           cn)))))
 
 (defun org-brain-existing-subtopics ()
-  (mapcar (lambda (s) (s-replace-regexp ".*::" "" s))
+  (mapcar (λ (s) (s-replace-regexp ".*::" "" s))
           (mapcar 'org-brain-entry-name
                   (org-brain-list-child-nodes))))
 
@@ -594,7 +594,7 @@ Update the `org-id-locations' global hash-table, and update the
    (pen-list2str
     (if add-dash
         (mapcar
-         (lambda (s) (concat "- " s))
+         (λ (s) (concat "- " s))
          (org-brain-existing-subtopics))
       (org-brain-existing-subtopics)))))
 
@@ -933,7 +933,7 @@ Unless WANDER is t, `org-brain-stop-wandering' will be run."
       (org-brain--vis-selected)
       (when (not nohistory)
         (setq org-brain--vis-history
-              (seq-filter (lambda (elt) (not (equal elt entry))) org-brain--vis-history))
+              (seq-filter (λ (elt) (not (equal elt entry))) org-brain--vis-history))
         (setq org-brain--vis-history (seq-take org-brain--vis-history 15))
         (push entry org-brain--vis-history))
       (when org-brain-show-history (org-brain--vis-history))
@@ -1040,7 +1040,7 @@ If run interactively use `org-brain-entry-at-pt' and prompt for NICKNAME."
 (defun pp-org-brain-tree (tre &optional parent)
   (interactive (list (org-brain-recursive-children
                       (org-brain-current-entry) 100
-                      (lambda (e)
+                      (λ (e)
                         (cons (org-brain-entry-name e)
                               (let* ((f (org-brain-friends e)))
                                 (if f
@@ -1062,7 +1062,7 @@ Also stop descending if a node has been visited before.
         (cons (funcall (or func #'identity) entry)
               (when (> max-level 0)
                 (ht-set org-brain-visited-ht (sxhash-equal en) t)
-                (mapcar (lambda (x) (org-brain-recursive-children-visited x (1- max-level) visited func))
+                (mapcar (λ (x) (org-brain-recursive-children-visited x (1- max-level) visited func))
                         (org-brain-children entry)))))))
 
 (defvar org-brain-visited-ht)
@@ -1079,7 +1079,7 @@ Also stop descending if a node has been visited before.
         (cons (funcall (or func #'identity) entry)
               (when (> max-level 0)
                 (ht-set org-brain-visited-ht (sxhash-equal en) t)
-                (mapcar (lambda (x) (org-brain-recursive-associates-visited x (1- max-level) func))
+                (mapcar (λ (x) (org-brain-recursive-associates-visited x (1- max-level) func))
                         (org-brain-associates entry)))))))
 
 (defun org-brain-to-dot-associates (&optional depth)
@@ -1098,7 +1098,7 @@ Also stop descending if a node has been visited before.
              (setq org-brain-visited-ht (make-hash-table))
              (funcall recurfun
                       (org-brain-current-entry) depth
-                      (lambda (e)
+                      (λ (e)
                         (let* ((n (org-brain-entry-name e))
                                (fs (mapcar 'org-brain-entry-name (org-brain-friends e)))
                                (cs (mapcar 'org-brain-entry-name (org-brain-children e))))
@@ -1132,7 +1132,7 @@ Also stop descending if a node has been visited before.
              (setq org-brain-visited-ht (make-hash-table))
              (funcall recurfun
                       (org-brain-current-entry) depth
-                      (lambda (e)
+                      (λ (e)
                         (let* ((n (org-brain-entry-name e))
                                (cs (mapcar 'org-brain-entry-name (org-brain-children e))))
                           (list

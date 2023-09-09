@@ -58,7 +58,7 @@
     (vterm-insert s)))
 
 (advice-add 'yas-describe-tables
-            :after '(lambda (&rest args)
+            :after '(λ (&rest args)
                       "Give the buffer a unique name and recenter to the top"
                       (with-current-buffer "*YASnippet Tables*"
                         (ignore-errors (rename-buffer (concat "*YASnippet Tables-" (myuuidshort)) "*") t))))
@@ -104,7 +104,7 @@ $0`(yas-escape-text yas-selected-text)`")
   (call-interactively 'pen-helm-imenu))
 
 (add-hook 'yas-minor-mode-hook
-          (lambda ()
+          (λ ()
             (yas-activate-extra-mode '_)))
 
 (defun activate-yas-python-interpreter ()
@@ -163,7 +163,7 @@ NO-TEMPLATE is non-nil."
     (snippet-mode)
     (yas-minor-mode 1)
     (set (make-local-variable 'yas--guessed-modes)
-         (mapcar (lambda (d) (yas--table-mode (car d)))
+         (mapcar (λ (d) (yas--table-mode (car d)))
                  guessed-directories))
     (set (make-local-variable 'default-directory)
          (car (cdr (car guessed-directories))))
@@ -271,7 +271,7 @@ for normal snippets, and a list for command snippets)."
   "Preview the snippet under the cursor"
   (interactive)
   (apply
-   (lambda (template) (yas--visit-snippet-file-1 template))
+   (λ (template) (yas--visit-snippet-file-1 template))
    (button-get (button-at (point)) (quote help-args)))
   (other-window 1)
   nil)

@@ -1,6 +1,6 @@
 ; from enberg on #emacs
 (setq compilation-finish-function
-  (lambda (buf str)
+  (λ (buf str)
     (if (and (null (string-match ".*exited abnormally.*" str))
              (null (string-match ".*recipe for target.*failed.*" str)))
         ;;no errors, make the compilation window go away in a few seconds
@@ -15,7 +15,7 @@
 ;; TODO Blog about fixing glimpse.el
 (defun compile-internal (command done name unk1 unk2)
   (compilation-start command
-                     'grep-mode (lambda (n) name)))
+                     'grep-mode (λ (n) name)))
 
 (defun compilation-find-file-projectile-find-compilation-buffer (orig-fun marker filename directory &rest formats)
   "Try to find a buffer for FILENAME, if we cannot find it,
@@ -28,7 +28,7 @@ fallback to the original function."
            (new-filename (car (cl-remove-if-not
                                #'file-exists-p
                                (mapcar
-                                (lambda (f)
+                                (λ (f)
                                   (expand-file-name
                                    filename
                                    (expand-file-name f root)))

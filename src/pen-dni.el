@@ -48,25 +48,25 @@
               defkey
               (let* ((eval-template-keys
                       (mapcar
-                       (lambda (s)
+                       (λ (s)
                          (s-replace-regexp "<" "" (s-replace-regexp ">" "" (chomp s))))
                        (append
                         (-filter-not-empty-string
                          (mapcar
-                          (lambda (e) (scrape "<\\(.*\\)>" e))
+                          (λ (e) (scrape "<\\(.*\\)>" e))
                           (mapcar
-                           (lambda (s) (concat s ")>"))
+                           (λ (s) (concat s ")>"))
                            (s-split ")>" val))))
                         (-filter-not-empty-string
                          (mapcar
-                          (lambda (e) (scrape "<[a-z-]+>" e))
+                          (λ (e) (scrape "<[a-z-]+>" e))
                           (mapcar
-                           (lambda (s) (concat s ">"))
+                           (λ (s) (concat s ">"))
                            (s-split ">" val)))))))
 
                      (eval-template-vals
                       (mapcar
-                       (lambda (s)
+                       (λ (s)
                          (eval
                           `(pen-let-keyvals
                             ',dni-replacement-keyvals

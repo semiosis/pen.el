@@ -34,7 +34,7 @@
 (use-package eshell
   :init
   (add-hook 'eshell-mode-hook
-            (lambda ()
+            (λ ()
               (setq eshell-prefer-lisp-functions t)
               (add-to-list 'eshell-visual-commands "ssh")
               (add-to-list 'eshell-visual-commands "tail")
@@ -102,7 +102,7 @@ list of (fn args) to pass to `apply''"
     (delete-char)))
 
 (add-hook 'eshell-mode-hook
-          '(lambda ()
+          '(λ ()
              (progn
                ;; define-key must go here becasue eshell-mode-map doesn't exist until it's started
                (define-key eshell-mode-map "\C-a" 'eshell-bol)

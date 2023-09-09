@@ -61,9 +61,9 @@ fi
 if [ -n "$key" ]; then
     if ! test "$HIDDEN" = "y"; then
         if test -n "$CMD"; then
-            printf -- "%s\n" "${MESSAGE}Press '$key' to run: $CMD" | hls teal
+            printf -- "%s\n" "${MESSAGE}Press '$key' to run: $CMD" | lolcat
         else
-            printf -- "%s\n" "${MESSAGE}Press '$key' to continue..." | hls teal
+            printf -- "%s\n" "${MESSAGE}Press '$key' to continue..." | lolcat
         fi
     else
         tput civis
@@ -83,9 +83,9 @@ if [ -n "$key" ]; then
     fi
 else
     if test -n "$CMD"; then
-        printf -- "%s\n" "${MESSAGE}Press any key to run $CMD" | hls teal
+        printf -- "%s\n" "${MESSAGE}Press any key to run $CMD" | lolcat
     else
-        printf -- "%s\n" "${MESSAGE}Press any key..." | hls teal
+        printf -- "%s\n" "${MESSAGE}Press any key..." | lolcat
     fi
     read -n 1 -s
 fi

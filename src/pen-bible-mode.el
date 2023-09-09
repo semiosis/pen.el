@@ -12,34 +12,41 @@
     (mapcar 'str2sym (str2lines (snc "bible-strongs-codes-sort" lines)))))
 
 ;; sort
-;; 
+;;
 (defset bible-strongs-always-show-codelist
   (bible-strongs-codes-sort
-   '(G25 G299 G26 G38 G40 G53 G76 G129 G165 G166 G169 G225
-         G227 G228 G266 G281 G286 G386 G458 G487 G517
-         G571 G721 G746 G757 G758 G907 G908 G932 G935
-         G948 G1035 G1080 G1100 G1103 G1107 G1108 G1110
-         G1140 G1169 G1169 G1208 G1242 G1258 G1336 G1390
-         G1391 G1401 G1410 G1411 G1438 G1438 G1479 G1496
-         G1497 G1504 G1515 G1680 G1781 G1785 G1799 G1849
-         G1922 G2032 G2032 G2041 G2096 G2098 G2150 G2198
-         G2222 G2226 G2246 G2250 G2288 G2303 G2307 G2316
-         G2374 G2378 G2379 G2409 G2413 G2424 G2545 G2588
-         G2730 G2809 G2839 G2842 G2889 G2919 G2937 G2962
-         G3041 G3056 G3140 G3313 G3321 G3340 G3404 G3417
-         G3439 G3466 G3485 G3528 G3609 G3739 G3741 G3772
-         G3841 G3870 G3900 G3939 G3956 G3962 G4073 G4102
-         G4103 G4138 G4151 G4178 G4190 G4202 G4203 G4205
-         G4276 G4375 G4416 G4442 G4487 G4561 G4561 G4592
-         G4633 G4637 G4678 G4716 G4891 G4982 G4990 G4991
-         G5046 G5048 G5055 G5087 G5204 G5206 G5206 G5331
-         G5333 G5360 G5368 G5399 G5406 G5426 G5457 G5479
-         G5485 G5547 G5571 G5578 G5583 G5590
-         H1 H410 H430 H1121 H4687 H5921 H6440 H6942 H8034 H8130 H8544)))
+   '(G25
+     G1679 G5287
+     G299 G26 G38 G40 G53 G76 G129 G165 G166 G169 G225
+     G227 G228 G266 G281 G286 G386 G458 G487 G517
+     G571 G721 G746 G757 G758 G907 G908 G932 G935
+     G948 G1035 G1080 G1100 G1103 G1107 G1108 G1110
+     G1140 G1169 G1169 G1208 G1242 G1258 G1336 G1390
+     G1391 G1401 G1410 G1411 G1438 G1438 G1479 G1496
+     G1497 G1504 G1515 G1680 G1781 G1785 G1799 G1849
+     G1922 G2032 G2032 G2041 G2096 G2098 G2150 G2198
+     G2222 G2226 G2246 G2250 G2288 G2303 G2307 G2316
+     G2374 G2378 G2379 G2409 G2413 G2424 G2545 G2588
+     G2730 G2809 G2839 G2842 G2889 G2919 G2937 G2962
+     G3041 G3056 G3140 G3313 G3321 G3340 G3404 G3417
+     G3439 G3466 G3485 G3528 G3609 G3739 G3741 G3772
+     G3841 G3870 G3900 G3939 G3956 G3962 G4073 G4102
+     G4103 G4138 G4151 G4178 G4190 G4202 G4203 G4205
+     G4276 G4375 G4416 G4442 G4487 G4561 G4561 G4592
+     G4633 G4637 G4678 G4716 G4891 G4982 G4990 G4991
+     G5046 G5048 G5055 G5087 G5204 G5206 G5206 G5331
+     G5333 G5360 G5368 G5399 G5406 G5426 G5457 G5479
+     G5485 G5547 G5571 G5578 G5583 G5590
+     H1 H410 H430 H1121 H4687 H5921 H6440 H6942 H8034 H8130 H8544)))
+
+(comment
+ (defset bible-strongs-always-show-code-tuples
+   (mapcar (λ (e) (list e (bible-term-get-word e)))
+           bible-strongs-always-show-codelist)))
 
 (defset bible-strongs-always-show-xmllist
   (mapcar
-   (lambda (e)
+   (λ (e)
      (concat "strong:" (str e)))
    bible-strongs-always-show-codelist))
 
@@ -208,6 +215,10 @@
       (delete-backward-char 1)
       (end-of-buffer))))
 
+(defun string-match-capture (regexp string &optional start)
+  (string-match regexp string start)
+  (match-string ))
+
 (defun bible-mode--display-search(query searchmode &optional module range)
   "Renders results of search QUERY from SEARHCMODE"
   (setq buffer-read-only nil)
@@ -354,7 +365,7 @@
   "works between floats and ints. and compares strings insensitively"
 
   (setq comparator (or comparator 'cl-equalp))
-  
+
   (catch 'foo
     (dolist (x lst)
       (when (funcall comparator x elt)
@@ -750,10 +761,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                       (if (> match 0)
                           (let* ((strongs_code (match-string 0 savlm))
                                  (strongs_word
-                                  (bible-term-greek-get-word (match-string 0 savlm))
+                                  (bible-term-get-word (match-string 0 savlm))
                                   ;; (if bible-mode-word-study-enabled
                                   ;;     nil
-                                  ;;   (bible-term-greek-get-word (match-string 0 savlm)))
+                                  ;;   (bible-term-get-word (match-string 0 savlm)))
                                   )
                                  (strongs_anno
                                   (if strongs_word
@@ -957,15 +968,28 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive "sTerm: ")
   (replace-regexp-in-string (regexp-opt '("(StrongsGreek)")) "" (bible-mode--exec-diatheke term_g_num nil nil nil "StrongsGreek")))
 
-(defun bible-term-greek-get-word (term_g_num)
+(defun bible-term-hebrew-get (term_h_num)
+  "Queries user for a Strong Hebrew Lexicon term."
   (interactive "sTerm: ")
-  (let* ((term_g_num (str term_g_num))
-         (term_g_num (s-replace-regexp "^G" "" term_g_num))
-         (info (bible-term-greek-get term_g_num))
-         (word (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info)))))
+  (replace-regexp-in-string (regexp-opt '("(StrongsHebrew)")) "" (bible-mode--exec-diatheke term_h_num nil nil nil "StrongsHebrew")))
+
+(defun bible-term-get-word (term_code)
+  (interactive "sTerm: ")
+  (let* ((term_code (str term_code))
+         (split_code (s-replace-regexp "." "" term_code))
+         (is_greek (re-match-p "^G" term_code))
+         (is_hebrew (re-match-p "^H" term_code))
+         (term_code (s-replace-regexp "^[GH]" "" term_code))
+         (info
+          (cond
+           (is_greek (bible-term-greek-get term_code))
+           (is_hebrew (bible-term-hebrew-get term_code))
+           (t nil)))
+         (word (if info
+                   (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info))))))
     word))
 
-(memoize 'bible-term-greek-get-word)
+(memoize 'bible-term-get-word)
 
 ;; TODO Make it so it resumes the same place
 (defun bible-mode-toggle-word-study()
@@ -1008,13 +1032,13 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (define-key bible-search-mode-map (kbd "RET") 'bible-search-mode-follow-verse)
 
-(define-key bible-mode-greek-keymap (kbd "RET") (lambda ()
+(define-key bible-mode-greek-keymap (kbd "RET") (λ ()
                                                   (interactive)
                                                   (bible-term-greek (replace-regexp-in-string "[^0-9]*" "" (thing-at-point 'word t)))))
 
-(define-key bible-mode-lemma-keymap (kbd "RET") (lambda ()(interactive)))
+(define-key bible-mode-lemma-keymap (kbd "RET") (λ ()(interactive)))
 
-(define-key bible-mode-hebrew-keymap (kbd "RET") (lambda ()
+(define-key bible-mode-hebrew-keymap (kbd "RET") (λ ()
                                                    (interactive)
                                                    (bible-term-hebrew (replace-regexp-in-string "[a-z]+" "" (thing-at-point 'word t)))))
 

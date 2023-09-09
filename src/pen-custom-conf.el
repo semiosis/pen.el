@@ -26,12 +26,12 @@
 (defun list-colors-print (list &optional callback)
   (let ((callback-fn
            (if callback
-               `(lambda (button)
+               `(λ (button)
                     (funcall ,callback (button-get button 'color-name))))))
     (dolist (color list)
       (if (consp color)
             (if (cdr color)
-                (setq color (sort color (lambda (a b)
+                (setq color (sort color (λ (a b)
                                                   (string< (downcase a)
                                                              (downcase b))))))
           (setq color (list color)))
@@ -53,7 +53,7 @@
           (insert " ")
           (insert (propertize
                      (apply 'format "#%02x%02x%02x"
-                              (mapcar (lambda (c) (ash c -8))
+                              (mapcar (λ (c) (ash c -8))
                                       color-values))
                      'mouse-face 'highlight
                      'help-echo
@@ -140,7 +140,7 @@ to switch between two values."
 
 (defset custom-variable-menu
   `(("Set for Current Session" custom-variable-set
-     (lambda (widget)
+     (λ (widget)
        (eq (widget-get widget :custom-state) 'modified)))
     ;; Note that in all the backquoted code in this file, we test
     ;; init-file-user rather than user-init-file.  This is in case
@@ -149,44 +149,44 @@ to switch between two values."
     ;; https://lists.gnu.org/r/emacs-devel/2007-10/msg00310.html
     ,@(when (or custom-file init-file-user)
 	      '(("Save for Future Sessions" custom-variable-save
-	         (lambda (widget)
+	         (λ (widget)
 	           (memq (widget-get widget :custom-state)
 		               '(modified set changed rogue))))))
     ("Undo Edits" custom-redraw
-     (lambda (widget)
+     (λ (widget)
        (and (default-boundp (widget-value widget))
 	          (memq (widget-get widget :custom-state) '(modified changed)))))
     ("Revert This Session's Customization" custom-variable-reset-saved
-     (lambda (widget)
+     (λ (widget)
        (memq (widget-get widget :custom-state)
 	           '(modified set changed rogue))))
     ,@(when (or custom-file init-file-user)
 	      '(("Erase Customization" custom-variable-reset-standard
-	         (lambda (widget)
+	         (λ (widget)
 	           (and (get (widget-value widget) 'standard-value)
 		              (memq (widget-get widget :custom-state)
 			                  '(modified set changed saved rogue)))))))
     ("Set to Backup Value" custom-variable-reset-backup
-     (lambda (widget)
+     (λ (widget)
        (get (widget-value widget) 'backup-value)))
     ;; ("Select from Options"
     ;;  ;; this runs when you select the option
     ;;  custom-variable-select-option
-    ;;  (lambda (widget)
+    ;;  (λ (widget)
     ;;    ;; this runs when you click the button
     ;;    ;; (btv widget)
     ;;    (get (widget-value widget) 'backup-value)))
     ;; ("Select from Options" custom-variable-edit
-    ;;  (lambda (widget)
+    ;;  (λ (widget)
     ;;    (eq (widget-get widget :custom-form) 'lisp)))
     ("---" ignore ignore)
     ("Add Comment" custom-comment-show custom-comment-invisible-p)
     ("---" ignore ignore)
     ("Show Current Value" custom-variable-edit
-     (lambda (widget)
+     (λ (widget)
        (eq (widget-get widget :custom-form) 'lisp)))
     ("Show Saved Lisp Expression" custom-variable-edit-lisp
-     (lambda (widget)
+     (λ (widget)
        (eq (widget-get widget :custom-form) 'edit))))
   "Alist of actions for the `custom-variable' widget.
 Each entry has the form (NAME ACTION FILTER) where NAME is the name of

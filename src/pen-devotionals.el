@@ -12,7 +12,7 @@
          (min_id (max 1 (- max_id last_n))))
 
     (mapcar
-     (lambda (tp)
+     (λ (tp)
        (concat (str (car tp)) ": " (cadr tp)))
      (reverse (cl-loop for x from min_id to max_id
                        collect

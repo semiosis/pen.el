@@ -158,7 +158,7 @@ Consult `handle-nice-functions'."
   (substring (symbol-name keyword) 1))
 
 (defalias 'handle
-  (lambda (modes &rest args)
+  (λ (modes &rest args)
     (let ((modes (handle--enlist modes))
           (args (cl-loop
                  for arg in args collect
@@ -211,7 +211,7 @@ Try next command on `error', passing ARG as `prefix-arg'."
 (dolist (keyword handle-keywords)
   (let ((keyword-name (handle--keyword-name keyword)))
     (defalias (intern (format "handle-%s" keyword-name))
-      (lambda (arg)
+      (λ (arg)
         (interactive "P")
         (handle--mode-execute
          (reverse (parent-mode-list major-mode))

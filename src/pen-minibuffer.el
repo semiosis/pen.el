@@ -12,7 +12,7 @@
 (define-key minibuffer-local-map (kbd "M-;") (pen-lm (pen-beep)))
 
 ;; This doesn't save and I don't need it because I'm using the evil-minibuffer for saving
-;; (define-key minibuffer-local-map (kbd "M-;") '(lambda () (interactive) (ignore-errors (exit-minibuffer) (pen-save-buffer))))
+;; (define-key minibuffer-local-map (kbd "M-;") '(λ () (interactive) (ignore-errors (exit-minibuffer) (pen-save-buffer))))
 
 
 ;; This changes the mode. I don't want this.

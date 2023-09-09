@@ -1,6 +1,9 @@
 (require 'popup)
 (require 'right-click-context)
 
+;; Not sure if this does anything. Perhaps one of my mods broke this
+(setq right-click-context-mouse-set-point-before-open-menu 'not-region)
+
 ;; Configure the right click menu to have more height
 (defset popup-max-height 30)
 (cl-defun popup-menu* (list
@@ -148,7 +151,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (defun pen-detect-imaginary-interpreter ()
   ;; TODO Check for user prompt on current line first
   ;; TODO Then do a language detect
-  (-filter (lambda (i) (istr-match-p (ht-get i "language") lang)) (pen-list-interpreters))
+  (-filter (λ (i) (istr-match-p (ht-get i "language") lang)) (pen-list-interpreters))
   (re-match-p "^In \\[[0-9]*\\]: " (current-line-string)))
 
 (defun pen-e-sps (&optional run)
@@ -190,7 +193,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
   (eval
    `(def-right-click-menu rcm-suggest-funcs
-      (quote ,(mapcar (lambda (sym) (list (sym2str sym) :call sym)) (pen-suggest-funcs-collect)))))
+      (quote ,(mapcar (λ (sym) (list (sym2str sym) :call sym)) (pen-suggest-funcs-collect)))))
   (rcm-suggest-funcs))
 
 (setq right-click-context-global-menu-tree

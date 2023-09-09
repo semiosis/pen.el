@@ -320,7 +320,7 @@ is set, show literally instead of actual buffer."
         (setq i (+ i 1))
         (unless (string-equal current-name parent-name)
           ;; (walk-window-tree
-          ;;  (lambda (window)
+          ;;  (λ (window)
           ;;    (when (eq (window-parameter window 'window-slot) (- 0 i))
           ;;      (setq unused-window window)
           ;;      ))
@@ -334,7 +334,7 @@ is set, show literally instead of actual buffer."
       ;; select child folder in each parent
       (save-excursion
         (walk-window-tree
-         (lambda (window)
+         (λ (window)
            (progn
              (when (member window ranger-parent-windows)
                (with-selected-window window
@@ -413,7 +413,7 @@ is set, show literally instead of actual buffer."
              (with-current-buffer preview-buffer
                (setq-local cursor-type nil)
                (setq-local mouse-1-click-follows-link nil)
-               (local-set-key (kbd  "<mouse-1>") #'(lambda ()
+               (local-set-key (kbd  "<mouse-1>") #'(λ ()
                                                      (interactive)
                                                      (select-window ranger-window)
                                                      (call-interactively

@@ -418,12 +418,12 @@
     (let* ((session-name (funcall haskell-completing-read-function
                                   "Choose Haskell session: "
                                   (mapcar 'haskell-session-name haskell-sessions)
-                                  (comment (cl-remove-if (lambda (name)
+                                  (comment (cl-remove-if (λ (name)
                                                            (and haskell-session
                                                                 (string= (haskell-session-name haskell-session)
                                                                          name)))
                                                          (mapcar 'haskell-session-name haskell-sessions)))))
-           (session (cl-find-if (lambda (session)
+           (session (cl-find-if (λ (session)
                                   (string= (haskell-session-name session)
                                            session-name))
                                 haskell-sessions)))

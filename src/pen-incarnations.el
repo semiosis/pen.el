@@ -71,27 +71,27 @@
                        (mapcar
                         ;; Remove the angle brackets
                         ;; These keys will be used in the template expansion
-                        (lambda (s)
+                        (λ (s)
                           ;; This is ugly but $ didnt seem to work
                           (s-replace-regexp "<" "" (s-replace-regexp ">" "" (chomp s))))
                         (append
                          (-filter-not-empty-string
                           (mapcar
-                           (lambda (e) (scrape "<\\(.*\\)>" e))
+                           (λ (e) (scrape "<\\(.*\\)>" e))
                            (mapcar
-                            (lambda (s) (concat s ")>"))
+                            (λ (s) (concat s ")>"))
                             (s-split ")>" val))))
                          (-filter-not-empty-string
                           (mapcar
-                           (lambda (e) (scrape "<[a-z-]+>" e))
+                           (λ (e) (scrape "<[a-z-]+>" e))
                            (mapcar
-                            (lambda (s) (concat s ">"))
+                            (λ (s) (concat s ">"))
                             (s-split ">" val)))))))
 
                       ;; test this
                       (eval-template-vals
                        (mapcar
-                        (lambda (s)
+                        (λ (s)
                           (eval
                            `(pen-let-keyvals
                              ',def-replacement-keyvals

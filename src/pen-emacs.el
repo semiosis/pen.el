@@ -17,15 +17,15 @@ DEFAULT is the coding system to use by default in the query."
   ;;	((CODING (POS . CHAR) (POS . CHAR) ...) ...)
   (if unsafe
       (setq unsafe
-            (mapcar #'(lambda (coding)
+            (mapcar #'(λ (coding)
                         (cons coding
                               (if (stringp from)
-                                  (mapcar #'(lambda (pos)
+                                  (mapcar #'(λ (pos)
                                               (cons pos (aref from pos)))
                                           (unencodable-char-position
                                            0 (length from) coding
                                            11 from))
-                                (mapcar #'(lambda (pos)
+                                (mapcar #'(λ (pos)
                                             (cons pos (char-after pos)))
                                         (unencodable-char-position
                                          from to coding 11)))))
@@ -41,7 +41,7 @@ DEFAULT is the coding system to use by default in the query."
       ;; buffer is displayed.
       (when (and unsafe (not (stringp from)))
         (pop-to-buffer bufname)
-        (goto-char (apply #'min (mapcar (lambda (x) (or (car (cadr x)) (point-max)))
+        (goto-char (apply #'min (mapcar (λ (x) (or (car (cadr x)) (point-max)))
                                         unsafe))))
       ;; Then ask users to select one from CODINGS while showing
       ;; the reason why none of the defaults are not used.
@@ -82,12 +82,12 @@ e.g., for sending an email message.\n ")
                 (insert (format "  %s cannot encode these:" (car coding)))
                 (let ((interactive 0)
                       (func1
-                       #'(lambda (bufname pos)
+                       #'(λ (bufname pos)
                            (when (buffer-live-p (get-buffer bufname))
                              (pop-to-buffer bufname)
                              (goto-char pos))))
                       (func2
-                       #'(lambda (bufname pos coding)
+                       #'(λ (bufname pos coding)
                            (when (buffer-live-p (get-buffer bufname))
                              (pop-to-buffer bufname)
                              (if (< (point) pos)
@@ -234,7 +234,7 @@ if any returns nil.  If `confirm-kill-emacs' is non-nil, calls it."
   (let ((confirm confirm-kill-emacs))
     (and
      (or (not (memq t (mapcar (function
-                               (lambda (buf) (and (buffer-file-name buf)
+                               (λ (buf) (and (buffer-file-name buf)
                                                   (buffer-modified-p buf))))
                               (buffer-list))))
          (progn (setq confirm nil)
@@ -257,9 +257,9 @@ if any returns nil.  If `confirm-kill-emacs' is non-nil, calls it."
                      (window-height . fit-window-to-buffer)
                      (preserve-size . (nil . t))
                      (body-function
-                      . ,#'(lambda (_window)
+                      . ,#'(λ (_window)
                              (list-processes t))))
-                   #'(lambda (window _value)
+                   #'(λ (window _value)
                        (with-selected-window window
                          (unwind-protect
                              (progn

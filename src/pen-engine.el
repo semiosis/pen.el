@@ -19,9 +19,9 @@
   :type 'string
   :group 'pen
   :options (ht-keys pen-engines)
-  :set (lambda (_sym value)
+  :set (λ (_sym value)
          (set _sym value))
-  :get (lambda (_sym)
+  :get (λ (_sym)
          (eval (sor _sym nil)))
   :initialize #'custom-initialize-default)
 
@@ -29,7 +29,7 @@
   "Do not allow prompts to override the engine override"
   :type 'boolean
   :group 'pen
-  :initialize (lambda(_sym _exp)
+  :initialize (λ(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defun engine-available-p (name)

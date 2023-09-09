@@ -114,7 +114,7 @@
                             (local-variable-p 'glossary-files)
                             (if take-first
                                 (car glossary-files)
-                              (pen-umn (fz (pen-mnm (pen-list2str (mapcar (lambda (s) (s-replace-regexp "\\..*" "" s))
+                              (pen-umn (fz (pen-mnm (pen-list2str (mapcar (λ (s) (s-replace-regexp "\\..*" "" s))
                                                                           (mapcar 'f-basename glossary-files))))
                                            nil
                                            nil "glossary to add to: "))))

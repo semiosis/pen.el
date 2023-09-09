@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-# A more basic version of 'pen-his'
+# A more basic version of 'his'
 
 colour_fg="$1"
 test -n "$1" && shift
@@ -13,14 +13,14 @@ test -n "$1" && shift
 
 case "$colour_fg" in
     reverse|inverted) {
-        pen-his -i ".*"
+        his -i ".*"
     }
     ;;
 
     *)
         if test -n "$colour_bg"; then
-            pen-his -f "$colour_fg" -b "$colour_bg" ".*"
+            his -f "$colour_fg" -b "$colour_bg" ".*"
         else
-            pen-his -f "$colour_fg" ".*"
+            his -f "$colour_fg" ".*"
         fi
 esac

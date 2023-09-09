@@ -47,7 +47,7 @@
                      "Describe variable (default %s): " v)
                   "Describe variable: ")
                 #'help--symbol-completion-table
-                (lambda (vv)
+                (λ (vv)
                   ;; In case the variable only exists in the buffer
                   ;; the command we switch back to that buffer before
                   ;; we examine the variable.

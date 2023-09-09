@@ -3,11 +3,11 @@
   :type 'string
   :group 'pen
   :options (list "localhost")
-  :set (lambda (_sym value)
+  :set (λ (_sym value)
          (if (string-equal "localhost" value)
              (setq value (concat "localhost:" (str (pen-get-khala-port)))))
          (set _sym value))
-  :get (lambda (_sym)
+  :get (λ (_sym)
          (eval (sor _sym nil)))
   :initialize #'custom-initialize-default)
 

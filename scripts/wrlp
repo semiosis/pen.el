@@ -5,10 +5,12 @@
 # This script is a lot like xargs
 # awk 1 is used to ensure that input and output text finishes with a newline
 
+CMD="$(cmd "$@")"
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -E) {
-        thecmd="$2"
+        CMD="$2"
         shift
         shift
     }
@@ -18,21 +20,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 awk 1 | {
-    if test -n "$thecmd"; then
-        while IFS=$'\n' read -r line; do
-            if test -n "$line"; then
-                printf -- "%s" "$line" | eval "$thecmd" | awk 1
-            else
-                echo
-            fi
-        done
-    else
-        while IFS=$'\n' read -r line; do
-            if test -n "$line"; then
-                printf -- "%s" "$line" | "$@" | awk 1
-            else
-                echo
-            fi
-        done
-    fi
+    while IFS=$'\n' read -r line; do
+        if test -n "$line"; then
+            printf -- "%s" "$line" | eval "$CMD" | awk 1
+        else
+            echo
+        fi
+    done
 }

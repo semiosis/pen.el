@@ -51,7 +51,7 @@
 (defun transducer-reducer (initial-fn complete-fn step-fn)
   "Create a reducer with an initial seed function INITIAL-FN,
 a final function COMPLETE-FN, and a step function STEP-FN."
-  (lambda (&rest args)
+  (λ (&rest args)
     (let ((arity (length args)))
       (pcase arity
         (0 (funcall initial-fn))
@@ -61,35 +61,35 @@ a final function COMPLETE-FN, and a step function STEP-FN."
 (defun transducer-wrapped-reducer (initial-fn complete-fn step-fn)
   "Just a wrapper over `transducer-reducer' so that the closure
 can be removed with INITIAL-FN, COMPLETE-FN and STEP-FN."
-  (lambda (reducer)
+  (λ (reducer)
     (transducer-reducer
-     (lambda () (funcall initial-fn reducer))
-     (lambda (result) (funcall complete-fn reducer result))
-     (lambda (result item) (funcall step-fn reducer result item)))))
+     (λ () (funcall initial-fn reducer))
+     (λ (result) (funcall complete-fn reducer result))
+     (λ (result item) (funcall step-fn reducer result item)))))
 
 (defun transducer-step-reducer (step-fn)
   "Return a reducer with just mainly a STEP-FN and a default
 INITIAL-FN and COMPLETE-FN."
   (transducer-wrapped-reducer
-   (lambda (reducer) (funcall reducer))
-   (lambda (reducer result) (funcall reducer result))
-   (lambda (reducer result item) (funcall step-fn reducer result item))))
+   (λ (reducer) (funcall reducer))
+   (λ (reducer result) (funcall reducer result))
+   (λ (reducer result item) (funcall step-fn reducer result item))))
 
 
 (defun transducer-list-reducer ()
   "A reducer for lists."
   (transducer-reducer
-   (lambda () (list))
-   (lambda (result) result)
-   (lambda (result item) (append result (list item)))))
+   (λ () (list))
+   (λ (result) result)
+   (λ (result item) (append result (list item)))))
 
 
 (defun transducer-plist-reducer ()
   "A reducer for plists."
   (transducer-reducer
-   (lambda () (list))
-   (lambda (result) result)
-   (lambda (result item)
+   (λ () (list))
+   (λ (result) result)
+   (λ (result item)
      (let ((key (car item))
          (value (cdr item)))
        (plist-put result key value)))))
@@ -99,18 +99,18 @@ INITIAL-FN and COMPLETE-FN."
 (defun transducer-identity ()
   "An identity reducer."
   (transducer-step-reducer
-   (lambda (reducer result item) (funcall reducer result item))))
+   (λ (reducer result item) (funcall reducer result item))))
 
 (defun transducer-map (mapper)
   "Map reducer with MAPPER function."
   (transducer-step-reducer
-   (lambda (reducer result item) (funcall reducer result (funcall mapper item)))))
+   (λ (reducer result item) (funcall reducer result (funcall mapper item)))))
 
 (defun transducer-map-indexed (mapper)
   "Map reducer with MAPPER function with index and item as arguments."
   (lexical-let ((count 0))
     (transducer-map
-     (lambda (item)
+     (λ (item)
        (prog1
            (funcall mapper count item)
          (setq count (1+ count)))))))
@@ -118,7 +118,7 @@ INITIAL-FN and COMPLETE-FN."
 (defun transducer-filter (filterer)
   "Filter reducer with FILTERER predicate."
   (transducer-step-reducer
-   (lambda (reducer result item)
+   (λ (reducer result item)
      (if (funcall filterer item)
          (funcall reducer result item)
        result))))
@@ -127,9 +127,9 @@ INITIAL-FN and COMPLETE-FN."
   "Compose transducers REDUCERS.
 The order is left to right instead of the standard right to left
 due to the implementation of transducers in general."
-  (lambda (reducer)
+  (λ (reducer)
     (cl-reduce
-     (lambda ( accumulated-reducer new-reducer)
+     (λ ( accumulated-reducer new-reducer)
        (funcall new-reducer accumulated-reducer))
      (reverse reducers)
      :initial-value
@@ -138,13 +138,13 @@ due to the implementation of transducers in general."
 
 (defun transducer-distinct ()
   "Distinct reducer with EQUALITY predicate."
-  (lambda (reducer)
+  (λ (reducer)
     (lexical-let ((cache-table (make-hash-table))
                   (not-found (make-symbol "distinct-not-found")))
       (transducer-reducer
-       (lambda () (funcall reducer))
-       (lambda (result) (funcall reducer result))
-       (lambda (result item)
+       (λ () (funcall reducer))
+       (λ (result) (funcall reducer result))
+       (λ (result item)
          (let ((found-item (gethash item cache-table not-found)))
            (if (not (eq found-item not-found))
                result
@@ -154,7 +154,7 @@ due to the implementation of transducers in general."
 (defun transducer-first (firster)
   "First reducer with FIRSTER predicate."
   (transducer-step-reducer
-   (lambda (reducer result item)
+   (λ (reducer result item)
      (if (funcall firster item)
          (transducer-reduced-value
           (funcall reducer result item))
@@ -165,7 +165,7 @@ due to the implementation of transducers in general."
   "Get the first N results of a STREAM."
   (lexical-let ((count 0))
     (transducer-step-reducer
-     (lambda (reducer result item)
+     (λ (reducer result item)
        (if (>= count n)
            (transducer-reduced-value result)
          (setq count (1+ count))
@@ -179,9 +179,9 @@ Not to be used directly.")
   "A transducer that pairs values together."
   (lexical-let ((head nil))
     (transducer-wrapped-reducer
-     (lambda (reducer) (setq head transducer--pair-empty) (funcall reducer))
-     (lambda (reducer result) (setq head nil) (funcall reducer result))
-     (lambda (reducer result item)
+     (λ (reducer) (setq head transducer--pair-empty) (funcall reducer))
+     (λ (reducer result) (setq head nil) (funcall reducer result))
+     (λ (reducer result item)
        (if (eq head transducer--pair-empty)
            (prog1
                result
@@ -241,11 +241,11 @@ Not to be used directly.")
   (lexical-let* ((reductor
        (funcall transducer
           (transducer-reducer
-           (lambda () transducer--stream-skip)
-           (lambda (_) transducer--stream-skip)
-           (lambda (_ item) item)))))
+           (λ () transducer--stream-skip)
+           (λ (_) transducer--stream-skip)
+           (λ (_ item) item)))))
     (stream
-     (lambda (&rest args)
+     (λ (&rest args)
        (lexical-let* ((value (apply stream args))
            (state nil)
            (result nil))

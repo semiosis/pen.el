@@ -138,7 +138,7 @@
         (display-and-maybe-select)
       (progn (call-interactively 'racket-run)
              (comment (racket--repl-start
-                       (lambda ()
+                       (λ ()
                          (racket--repl-refresh-namespace-symbols)
                          (display-and-maybe-select))))))))
 

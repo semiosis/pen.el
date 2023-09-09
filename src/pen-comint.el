@@ -71,7 +71,7 @@
     (comint-delchar))
 
    ((derived-mode-p 'term-mode)
-    ;; (lambda () (interactive) (term-send-raw-string "?"))
+    ;; (λ () (interactive) (term-send-raw-string "?"))
     (if (term-in-line-mode)
         (let ((comint-use-prompt-regexp t)
               ;; Really need to derive this from scrraping the line
