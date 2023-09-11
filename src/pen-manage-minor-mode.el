@@ -103,7 +103,14 @@
          (off visual-line-mode))
 
         (org-mode
+         (on auto-highlight-symbol-mode)
          (off visual-line-mode))
+
+        (yaml-mode
+         (on auto-highlight-symbol-mode))
+
+        (prompt-description-mode
+         (on auto-highlight-symbol-mode))
 
         (help-mode
          (on org-link-minor-mode)
