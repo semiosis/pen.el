@@ -182,19 +182,19 @@
 (add-hook 'magit-status-mode-hook #'pen-magit-status-hook-body)
 (add-hook 'emacs-lisp-mode-hook #'pen-emacs-lisp-mode-hook-body)
 (add-hook 'ielm-mode-hook #'pen-emacs-lisp-mode-hook-body)
-(add-hook 'hy-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'per-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'clojure-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'lisp-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'lfe-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'cider-repl-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'inferior-hy-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'scheme-mode-hook '(λ () (pen-lisp-mode 1)))
+(add-hook 'hy-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'per-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'clojure-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'lisp-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'lfe-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'cider-repl-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'inferior-hy-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'scheme-mode-hook '(lambda () (pen-lisp-mode 1)))
 
-(add-hook 'org-mode-hook '(λ () (selected-minor-mode 1)))
+(add-hook 'org-mode-hook '(lambda () (selected-minor-mode 1)))
 
-(add-hook 'occur-hook '(λ () (toggle-truncate-lines 1)))
-;; (remove-hook 'occur-hook '(λ () (toggle-truncate-lines 1)))
+(add-hook 'occur-hook '(lambda () (toggle-truncate-lines 1)))
+;; (remove-hook 'occur-hook '(lambda () (toggle-truncate-lines 1)))
 
 (defun enable-chop-lines ()
   (visual-line-mode -1)
@@ -203,8 +203,8 @@
 (remove-hook 'org-mode-hook #'enable-chop-lines)
 
 ;; This spams "*messages*" with 'Truncate long lines enabled'
-;; (add-hook 'yas-minor-mode-hook '(λ () (toggle-truncate-lines 1)))
-;; (remove-hook 'yas-minor-mode-hook '(λ () (toggle-truncate-lines 1)))
+;; (add-hook 'yas-minor-mode-hook '(lambda () (toggle-truncate-lines 1)))
+;; (remove-hook 'yas-minor-mode-hook '(lambda () (toggle-truncate-lines 1)))
 
 (defmacro enable-major-mode (mode_symbol)
   (quote mode_symbol))
@@ -215,8 +215,8 @@
     (setq completion-at-point-functions
           '())))
 
-(add-hook 'org-mode-hook '(λ () (fix-completion)))
-(add-hook 'javascript-mode-hook '(λ () (fix-completion)))
+(add-hook 'org-mode-hook '(lambda () (fix-completion)))
+(add-hook 'javascript-mode-hook '(lambda () (fix-completion)))
 
 (defun pen-auto-clojure-minor-modes ()
   (interactive)
@@ -225,10 +225,10 @@
 
 (add-hook 'clojure-mode-hook #'pen-auto-clojure-minor-modes)
 
-(add-hook 'helm-cider-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'clojurescript-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'racket-mode-hook '(λ () (pen-lisp-mode 1)))
-(add-hook 'racket-repl-mode-hook '(λ () (pen-lisp-mode 1)))
+(add-hook 'helm-cider-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'clojurescript-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'racket-mode-hook '(lambda () (pen-lisp-mode 1)))
+(add-hook 'racket-repl-mode-hook '(lambda () (pen-lisp-mode 1)))
 
 ;; This is perfect! -- for all programming language modes
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)

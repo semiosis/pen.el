@@ -173,6 +173,37 @@ argument, prompt for a regular expression using `read-regexp'."
    :foreground "#646464"
    :bold t)
 
+  (require 'auto-highlight-symbol)
+  ;; (global-auto-highlight-symbol-mode -1)
+  (global-auto-highlight-symbol-mode 1)
+  (setq ahs-idle-interval 0)
+  (let ((bg "#151515")
+        (fg "#333333"))
+    (set-face-attribute
+     'ahs-plugin-default-face nil
+     :inverse-video nil
+     :background bg
+     :foreground fg
+     :bold t)
+    (set-face-attribute
+     'ahs-plugin-default-face-unfocused nil
+     :inverse-video nil
+     :background bg
+     :foreground fg
+     :bold t)
+    (set-face-attribute
+     'ahs-face nil
+     :inverse-video nil
+     :background bg
+     :foreground fg
+     :bold t)
+    (set-face-attribute
+     'ahs-face-unfocused nil
+     :inverse-video nil
+     :background bg
+     :foreground fg
+     :bold t))
+
   ;; This doesn't work well with nvc
   ;; (set-face-foreground 'default "#404040")
   (set-face-foreground 'default nil)

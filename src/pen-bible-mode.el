@@ -760,12 +760,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                     (while match ;;Greek
                       (if (> match 0)
                           (let* ((strongs_code (match-string 0 savlm))
-                                 (strongs_word
-                                  (bible-term-get-word (match-string 0 savlm))
-                                  ;; (if bible-mode-word-study-enabled
-                                  ;;     nil
-                                  ;;   (bible-term-get-word (match-string 0 savlm)))
-                                  )
+                                 (strongs_word (bible-term-get-word strongs_code))
                                  (strongs_anno
                                   (if strongs_word
                                       (concat strongs_code "-" strongs_word)
@@ -830,8 +825,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   (if (equal (dom-tag node) 'title) ;;newline at end of title (i.e. those in Psalms)
       (insert "\n"))
-
-
   t)
 
 (defun bible-search (query &optional module searchtype)
