@@ -1,7 +1,8 @@
 127.0.0.1	localhost
 127.0.0.1	irc.localhost
 127.0.1.1	pen-mele
-127.0.1.1 croogle docsets gallery racket racketpkgs wizard bodaciousblog pydoc36 mele
+127.0.1.1	pen-agia
+127.0.1.1 croogle docsets gallery racket racketpkgs wizard bodaciousblog pydoc36 mele agia
 95.111.216.110	pen-debian
 
 # The following lines are desirable for IPv6 capable hosts
