@@ -624,12 +624,16 @@ creating a new `bible-mode' buffer positioned at the specified verse."
             (concat "[[bible:" book " " chapter ":" verse "]]")
           (concat book " " chapter ":" verse))))))
 
-(defun bible-mode-copy-link (text)
+(defun bible-mode-copy-link (&optional text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (thing-at-point 'line t)))
 
-  (xc (bible-mode-get-link text)))
+  (setq text (or text (thing-at-point 'line t)))
+
+  (if (interactive-p)
+      (xc (bible-mode-get-link text))
+    (bible-mode-get-link text)))
 
 (defun bible-mode--display(&optional verse)
   "Renders text for `bible-mode'"
@@ -993,6 +997,16 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (bible-mode--display-search bible-mode-search-query bible-mode-search-mode)
     (bible-mode--display)))
 
+(defun bible-mode-tpop ()
+  (interactive)
+  (tpop (cmd "nem" "ebible" "-m" bible-mode-book-module (bible-mode-copy-link))
+        nil
+        :x_pos "M+1"
+        :y_pos "M+1"
+        :width_pc 50
+        :height_pc 20))
+
+(define-key bible-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
