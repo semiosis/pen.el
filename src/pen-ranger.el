@@ -413,7 +413,7 @@ is set, show literally instead of actual buffer."
              (with-current-buffer preview-buffer
                (setq-local cursor-type nil)
                (setq-local mouse-1-click-follows-link nil)
-               (local-set-key (kbd  "<mouse-1>") #'(λ ()
+               (local-set-key (kbd  "<mouse-1>") #'(lambda ()
                                                      (interactive)
                                                      (select-window ranger-window)
                                                      (call-interactively

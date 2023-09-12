@@ -102,7 +102,7 @@ list of (fn args) to pass to `apply''"
     (delete-char)))
 
 (add-hook 'eshell-mode-hook
-          '(λ ()
+          '(lambda ()
              (progn
                ;; define-key must go here becasue eshell-mode-map doesn't exist until it's started
                (define-key eshell-mode-map "\C-a" 'eshell-bol)
@@ -116,7 +116,8 @@ list of (fn args) to pass to `apply''"
                (define-key eshell-hist-mode-map (kbd "M-r") nil)
                ;; (define-key eshell-mode-map (kbd "M-r") nil)
 
-               (define-key eshell-mode-map (kbd "M-R") 'eshell-previous-matching-input))))
+               (define-key eshell-mode-map
+                 (kbd "M-R") 'eshell-previous-matching-input))))
 
 
 

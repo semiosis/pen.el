@@ -398,7 +398,7 @@
 (defun test-itest-1 ()
   (interactive)
   (pen-etv
-   (itest '(λ (l) (= 5 (length l)))
+   (itest '(lambda (l) (= 5 (length l)))
           '(a b c d))))
 
 (defun test-itest-2 ()
@@ -441,7 +441,7 @@
 (defun test-equals-1 ()
   (interactive)
   (pen-etv
-   (iequal '(λ (l) '(= 5 (length l)))
+   (iequal '(lambda (l) '(= 5 (length l)))
             '(a b c d))))
 
 ;; assertions create prompt examples which are prepended

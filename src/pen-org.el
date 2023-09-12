@@ -281,7 +281,7 @@ When LINE is given, assume it represents a line and compute its indentation."
       (current-column))))
 
 ;; This works! The function moved to org-compat
-(advice-add 'org-goto--set-map :after '(λ (&rest args) (define-key org-goto-map (kbd "<next>") nil)))
+(advice-add 'org-goto--set-map :after '(lambda (&rest args) (define-key org-goto-map (kbd "<next>") nil)))
 
 (defun org-mode-hook-after ()
   (interactive)

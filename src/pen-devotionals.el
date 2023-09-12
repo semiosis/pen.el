@@ -1,6 +1,7 @@
-(defun davidjeremiah ()
-  (interactive)
-  (let ((id (string-to-int (s-replace-regexp ":.*" "" (fz (davidjeremiah-list 5000)
+(defun davidjeremiah (&optional last_n)
+  (interactive (list (string-to-int (sor (read-string-hist "last `n` devotionals:")
+                                         "0"))))
+  (let ((id (string-to-int (s-replace-regexp ":.*" "" (fz (davidjeremiah-list last_n)
                                                           nil nil "Devotional:")))))
 
     (listen-to-davidjeremiah id)))

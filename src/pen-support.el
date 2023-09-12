@@ -2312,7 +2312,7 @@ If any of the suggest predicates evaluated to t, then suggest the function"
       (if (null body) (setq body '(nil))))
     (let ((declarations
            (mapcar
-            #'(λ (x)
+            #'(lambda (x)
                 (let ((f (cdr (assq (car x) defun-declarations-alist))))
                   (cond
                    (f (apply (car f) name arglist (cdr x)))

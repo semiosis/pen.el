@@ -276,7 +276,7 @@ filter() {
         sed -e "/log\/build_/d" -e "/\/tags:/d"
     fi
 }
-cmd="xargs -0 $grepcmd -I $grep_opts $( test "$context" != "0" && printf -- "%s" "-C $context" ) -- $(cmd-nice-posix "$pattern" | pen-bs '$')"
+cmd="xargs -0 $grepcmd -I $grep_opts $( test "$context" != "0" && printf -- "%s" "-C $context" ) -- $(cmd-nice-posix "$pattern" | pen-bs '`$')"
 
 {
     if [ -n "$paths_file" ]; then

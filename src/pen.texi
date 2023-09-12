@@ -3108,7 +3108,7 @@ Apply @var{fn} to each element of @var{tree} while preserving the tree structure
     @result{} '(2 (3 4) (5 (6 7) 8))
 @end group
 @group
-(-tree-map '(λ (x) (cons x (expt 2 x))) '(1 (2 3) 4))
+(-tree-map '(lambda (x) (cons x (expt 2 x))) '(1 (2 3) 4))
     @result{} '((1 . 2) ((2 . 4) (3 . 8)) (4 . 16))
 @end group
 @group

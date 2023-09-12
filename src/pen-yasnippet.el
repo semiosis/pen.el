@@ -58,7 +58,7 @@
     (vterm-insert s)))
 
 (advice-add 'yas-describe-tables
-            :after '(λ (&rest args)
+            :after '(lambda (&rest args)
                       "Give the buffer a unique name and recenter to the top"
                       (with-current-buffer "*YASnippet Tables*"
                         (ignore-errors (rename-buffer (concat "*YASnippet Tables-" (myuuidshort)) "*") t))))

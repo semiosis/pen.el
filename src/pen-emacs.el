@@ -17,15 +17,15 @@ DEFAULT is the coding system to use by default in the query."
   ;;	((CODING (POS . CHAR) (POS . CHAR) ...) ...)
   (if unsafe
       (setq unsafe
-            (mapcar #'(λ (coding)
+            (mapcar #'(lambda (coding)
                         (cons coding
                               (if (stringp from)
-                                  (mapcar #'(λ (pos)
+                                  (mapcar #'(lambda (pos)
                                               (cons pos (aref from pos)))
                                           (unencodable-char-position
                                            0 (length from) coding
                                            11 from))
-                                (mapcar #'(λ (pos)
+                                (mapcar #'(lambda (pos)
                                             (cons pos (char-after pos)))
                                         (unencodable-char-position
                                          from to coding 11)))))
@@ -82,12 +82,12 @@ e.g., for sending an email message.\n ")
                 (insert (format "  %s cannot encode these:" (car coding)))
                 (let ((interactive 0)
                       (func1
-                       #'(λ (bufname pos)
+                       #'(lambda (bufname pos)
                            (when (buffer-live-p (get-buffer bufname))
                              (pop-to-buffer bufname)
                              (goto-char pos))))
                       (func2
-                       #'(λ (bufname pos coding)
+                       #'(lambda (bufname pos coding)
                            (when (buffer-live-p (get-buffer bufname))
                              (pop-to-buffer bufname)
                              (if (< (point) pos)
@@ -257,9 +257,9 @@ if any returns nil.  If `confirm-kill-emacs' is non-nil, calls it."
                      (window-height . fit-window-to-buffer)
                      (preserve-size . (nil . t))
                      (body-function
-                      . ,#'(λ (_window)
+                      . ,#'(lambda (_window)
                              (list-processes t))))
-                   #'(λ (window _value)
+                   #'(lambda (window _value)
                        (with-selected-window window
                          (unwind-protect
                              (progn
