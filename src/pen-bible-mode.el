@@ -929,17 +929,20 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (f-mkdir dp)
     (find-file fp)))
 
-(defun view-notes-fp-verse (&optional ref)
+(defun view-notes-fp-verse (&optional ref editor)
   (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
   (setq ref (or ref (bible-mode-get-link (thing-at-point 'line t))))
   ;; (tpop (cmd "less" "-rS") (cat (bible-mode-get-notes-fp-for-verse ref)))
 
   (let ((fp (bible-mode-get-notes-fp-for-verse ref)))
-    (if (f-exists-p fp)
-        (if (f-empty-p fp)
-            (tpop (cmd "vimpager" (bible-mode-get-notes-fp-for-verse ref)))
-          (tpop (cmd "v" (bible-mode-get-notes-fp-for-verse ref))))
-      (tpop (cmd "v" (bible-mode-get-notes-fp-for-verse ref))))))
+    (if (sor editor)
+        (tpop (cmd editor (bible-mode-get-notes-fp-for-verse ref)))
+      (find-file-other-window (bible-mode-get-notes-fp-for-verse ref)))))
+
+(defun view-notes-fp-verse-v (&optional ref editor)
+  (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
+  (setq ref (or ref (bible-mode-get-link (thing-at-point 'line t))))
+  (view-notes-fp-verse ref "v"))
 
 ;; https://www.openbible.info/labs/cross-references/search?q=1+Samuel+7%3A3
 
@@ -999,7 +1002,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-mode-tpop ()
   (interactive)
-  (tpop (cmd "nem" "ebible" "-m" bible-mode-book-module (bible-mode-copy-link))
+  (tpop (cmd "nem" "fast" "ebible" "-m" bible-mode-book-module (bible-mode-copy-link))
         nil
         :x_pos "M+1"
         :y_pos "M+1"
@@ -1008,6 +1011,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (define-key bible-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
+(define-key bible-mode-map (kbd "M-v") 'view-notes-fp-verse-v)
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
@@ -1032,6 +1036,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-search-mode-map "g" nil)
 
 (define-key bible-search-mode-map (kbd "M-e") 'view-notes-fp-verse)
+(define-key bible-search-mode-map (kbd "M-v") 'view-notes-fp-verse-v)
 (define-key bible-search-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-search-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-search-mode-map (kbd "d") 'bible-mode-toggle-word-study)

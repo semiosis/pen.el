@@ -17,8 +17,15 @@ if ! inside-docker-p && docker-running-p; then
     exit "$?"
 fi
 
-module="$(0</dev/null canonicalise-bible-module "$sn")"
-: "${module:="NASB"}"
+if test "$FAST" = "y"; then
+    if test "$sn" = ebible; then
+        module=NASB
+    fi
+    : "${module:="NASB"}"
+else
+    module="$(0</dev/null canonicalise-bible-module "$sn")"
+    : "${module:="NASB"}"
+fi
 
 format=plain
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -95,7 +102,10 @@ fi
 ref="$@"
 : "${ref:="Genesis 1"}"
 
-ref="$(echo "$ref" | canonicalise-bible-ref)"
+if ! test "$FAST" = "y"; then
+    ref="$(echo "$ref" | canonicalise-bible-ref)"
+fi
+
 : "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/(.*)/s/.*(\([^)]\+\)).*/\1/p')"}"
 if test -n "$maybemod"; then
     module="$maybemod"
@@ -121,7 +131,11 @@ if is_tty && ! test "$NOEMACS" = y; then
     fi
 else
     {
-    echo "$ref" | openbible-canonicalise-ref | udl
+    if test "$FAST" = "y"; then
+        echo "$ref" | udl
+    else
+        echo "$ref" | openbible-canonicalise-ref | udl
+    fi
     {
     in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "$format" "-k" "$ref" | sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d' |
         if test "$CONCORDANCE" = "y" || test "$CONCORDANCE" = "all"; then

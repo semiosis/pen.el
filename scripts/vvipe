@@ -3,4 +3,20 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-EDITOR="v -ac -nsl" vipe "$@"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -e) {
+        EDITOR="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${EDITOR:="v -ac -nsl"}"
+
+export EDITOR
+
+vipe "$@"

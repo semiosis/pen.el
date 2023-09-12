@@ -388,6 +388,10 @@ START and END can be in either order."
 (defun pfz (listd &optional dir)
   (pvipe listd "mfz -nv" dir t))
 
+(defun ledit ()
+  (interactive)
+  (tmux-popup "vvipe -e v" "90%" 1 "M" "M" t (thing-at-point 'line) nil t t))
+
 (comment
  (tmux-popup "cmatrix")
  (tmux-popup "cmatrix" "90%" 10)
@@ -400,7 +404,7 @@ START and END can be in either order."
  (tmux-popup "vvipe" nil nil nil nil nil (thing-at-point 'sexp))
 
  ;; This edits a sexp in vim - looks like an embedded vim
- (tmux-popup "vvipe" "90%" 2 "M" "M" nil (thing-at-point 'sexp) nil t t)
+ (ledit)
  
  (tmux-popup (cmd "cmatrix" "-absu" "3" "-C" "blue")
              30 20

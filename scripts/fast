@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+export FAST=y
+
+"$@"
