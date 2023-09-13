@@ -196,6 +196,13 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
       (quote ,(mapcar (λ (sym) (list (sym2str sym) :call sym)) (pen-suggest-funcs-collect)))))
   (rcm-suggest-funcs))
 
+(defun ekbd (keys)
+  (execute-kbd-macro (kbd keys)))
+
+(defun press-return ()
+  (interactive)
+  (ekbd "RET"))
+
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("> prompt functions" :call rcm-prompt-functions)
@@ -241,6 +248,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("add comments" :call pf-add-comments-to-code/2)
          ("generate from description" :call pf-code-generator-from-description/1)
          ("generate regex for above" :call pf-gpt-j-generate-regex/2))
+        ("Press return" :call press-return)
         ("Kill current buffer" :call kill-current-buffer)
         ("(Accept) Save then kill buffer and emacsclient" :call pen-save-and-kill-buffer-window-and-emacsclient)
         ("(Abort) Revert and kill buffer and emacsclient" :call pen-revert-kill-buffer-and-window)

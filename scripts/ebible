@@ -42,6 +42,21 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -cac) {
+        format=internal
+        CONCORDANCE=all
+        CODES=y
+        shift
+    }
+    ;;
+
+    -codes) {
+        : "${CONCORDANCE:="y"}"
+        CODES=y
+        shift
+    }
+    ;;
+
     -c) {
         format=internal
         CONCORDANCE=y

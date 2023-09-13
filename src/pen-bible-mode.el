@@ -36,7 +36,9 @@
      G4633 G4637 G4678 G4716 G4891 G4982 G4990 G4991
      G5046 G5048 G5055 G5087 G5204 G5206 G5206 G5331
      G5333 G5360 G5368 G5399 G5406 G5426 G5457 G5479
-     G5485 G5547 G5571 G5578 G5583 G5590
+     G5485 G5547 G5571 G5578 G5583 G5590 G3614 G4160
+     G2570 G4550 G3551 G727 G154 G1097 G5429 G4160 G1857 G4655
+     G1342
      H1 H410 H430 H1121 H4687 H5921 H6440 H6942 H8034 H8130 H8544)))
 
 (comment
@@ -631,9 +633,11 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
   (setq text (or text (thing-at-point 'line t)))
 
-  (if (interactive-p)
-      (xc (bible-mode-get-link text))
-    (bible-mode-get-link text)))
+  (if (major-mode-p 'bible-mode)
+      (if (interactive-p)
+          (xc (bible-mode-get-link text))
+        (bible-mode-get-link text))
+    nil))
 
 (defun bible-mode--display(&optional verse)
   "Renders text for `bible-mode'"
@@ -999,6 +1003,35 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (if (equal major-mode 'bible-search-mode)
       (bible-mode--display-search bible-mode-search-query bible-mode-search-mode)
     (bible-mode--display)))
+
+(defun bible-random-verse-ref ()
+
+  )
+
+(defun bible-verse-get-quote-cmd ()
+
+  )
+(defun bible-get-quote (&optional backticks)
+  (interactive)
+
+  ;; major-mode
+
+  (let* ((concordance_arg
+          (cond
+           ((>= (prefix-numeric-value current-prefix-arg) 64) "-cac")
+           ((>= (prefix-numeric-value current-prefix-arg) 16) "-ca")
+           ((>= (prefix-numeric-value current-prefix-arg) 4) "-c")
+           (t nil)))
+         (current-prefix-arg nil))
+  
+    (tpop (cmd "nem" "fast" "ebible"
+               concordance_arg
+               "-m" bible-mode-book-module (bible-mode-copy-link))
+          nil
+          :x_pos "M+1"
+          :y_pos "M+1"
+          :width_pc 50
+          :height_pc 20)))
 
 (defun bible-mode-tpop ()
   (interactive)
