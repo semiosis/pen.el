@@ -1002,12 +1002,22 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-mode-tpop ()
   (interactive)
-  (tpop (cmd "nem" "fast" "ebible" "-m" bible-mode-book-module (bible-mode-copy-link))
-        nil
-        :x_pos "M+1"
-        :y_pos "M+1"
-        :width_pc 50
-        :height_pc 20))
+  (let* ((concordance_arg
+          (cond
+           ((>= (prefix-numeric-value current-prefix-arg) 64) "-cac")
+           ((>= (prefix-numeric-value current-prefix-arg) 16) "-ca")
+           ((>= (prefix-numeric-value current-prefix-arg) 4) "-c")
+           (t nil)))
+         (current-prefix-arg nil))
+  
+    (tpop (cmd "nem" "fast" "ebible"
+               concordance_arg
+               "-m" bible-mode-book-module (bible-mode-copy-link))
+          nil
+          :x_pos "M+1"
+          :y_pos "M+1"
+          :width_pc 50
+          :height_pc 20)))
 
 (define-key bible-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
