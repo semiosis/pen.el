@@ -292,7 +292,7 @@ START and END can be in either order."
 ;; tmux-popup appears to be quite a lot like =tm sps=
 ;; I don't think there's enough overlap to be able to combine them.
 ;; I'll just have to reimplement some things
-(defun tmux-popup (shcmd &optional width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b)
+(defun tmux-popup (shcmd &optional width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b bg fg)
   (interactive (list (read-string "popup shell command: ")))
   (let ((args (list "toggle-tmux-popup" "-E" shcmd)))
     (if width_pc
@@ -315,6 +315,12 @@ START and END can be in either order."
 
     (if noborder
         (setq args (append args (list "-nob"))))
+
+    (if bg
+        (setq args (append args (list "-bg" (str bg)))))
+    
+    (if fg
+        (setq args (append args (list "-bg" (str bg)))))
 
     (let ((c (eval `(cmd ,@args))))
       (if output_b
@@ -394,7 +400,7 @@ START and END can be in either order."
 
 (comment
  (tmux-popup "cmatrix")
- (tmux-popup "cmatrix" "90%" 10)
+ (tmux-popup "cmatrix" "90%" 10 nil nil t)
 
  (let* ((pos (tm-cursor-pos-client))
         (x (car pos))
@@ -437,6 +443,9 @@ START and END can be in either order."
  (tv (ppup "list-bible-books | mfz -nv" nil nil t))
  (tmux-popup "etetris-vt100" 33 26 "M" "M" t nil nil t)
  (tmux-popup "etetris-vt100" 33 26 "C" "C" t nil nil)
+ (tpop "etetris-vt100" nil :width_pc 33 :height_pc 26 :x_pos "C" :y_pos "C" :show_status_b t)
+ (tpop "etetris-vt100" nil :width_pc 33 :height_pc 26 :x_pos "C" :y_pos "C" :show_status_b nil :bg 100 :fg 200)
+ (tpop "cmatrix" nil :width_pc 33 :height_pc 26 :x_pos "C" :y_pos "C" :show_status_b nil :bg 100 :fg 200)
  (tv (pvipe (snc "list-bible-books")))
  (bible-open nil nil "NASB" (pfz (snc "list-bible-books")))
  (follow-bible-link (pfz (snc "list-bible-books"))))
@@ -450,8 +459,10 @@ START and END can be in either order."
                          &key hide_status_b
                          &key dir
                          &key noborder
-                         &key output_b)
-  (tmux-popup shcmd width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b))
+                         &key output_b
+                         &key bg
+                         &key fg)
+  (tmux-popup shcmd width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b bg fg))
 
 (cl-defun tpop (shcmd
                 &optional stdin
@@ -462,9 +473,11 @@ START and END can be in either order."
                 &key show_status_b
                 &key dir
                 &key noborder
-                &key output_b)
+                &key output_b
+                &key bg
+                &key fg)
   "Behaviour is a little different from cl-tmux-popup, as the status bar is hidden by default"
-  (tmux-popup shcmd width_pc height_pc x_pos y_pos (not show_status_b) stdin dir noborder output_b))
+  (tmux-popup shcmd width_pc height_pc x_pos y_pos (not show_status_b) stdin dir noborder output_b bg fg))
 
 ;; (defalias 'tpop 'cl-tmux-popup)
 

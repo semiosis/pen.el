@@ -6,6 +6,18 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -b|-book) {
+        book="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 stdin_exists() {
     {
     ! [ -t 0 ] && \
@@ -39,6 +51,15 @@ case "$module" in
 
     maori) {
         module=Maori
+    }
+    ;;
+
+    irish|gaelic) {
+        case "$book" in
+            Mark) { module=ScotsGaelic; } ;;
+            Matthew|John) { module=ManxGaelic; } ;;
+            *|Luke) { module=IriODomhnuill; } ;;
+        esac
     }
     ;;
 

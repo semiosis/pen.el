@@ -7,3 +7,4 @@ set window-status-current-style fg=colour197,bg=colour088
 set window-status-last-style fg=colour088,bg=colour052
 set window-status-format "#I #W"
 set window-status-current-format "#I #W"
+set status-bg colour052

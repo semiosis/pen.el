@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fp="$1"
+test -f "$fp" || exit 1
+
+if printf -- "%s\n" "$fp" | xa file | grep -q SQLite; then
+    edbi "$fp"
+else
+    printf -- "%s\n" "$fp" | xa file
+    pak
+fi

@@ -131,6 +131,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-menu-bar)
 (require 'pen-workers)
 (require 'pen-lentic)
+(require 'pen-edbi)
 (require 'pen-clipboard)
 (require 'pen-source)
 (if (inside-docker-p)

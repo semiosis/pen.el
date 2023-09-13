@@ -41,6 +41,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -bg) {
+        bgc="colour$2"
+        shift
+        shift
+    }
+    ;;
+
+    -fg) {
+        fgc="colour$2"
+        shift
+        shift
+    }
+    ;;
+
     -d) {
         detach=y
         shift
@@ -176,15 +190,20 @@ if stdin_exists; then
 fi
 
 if test "$hide_status" = "y"; then
-    CMD="tmux set-option -t popup: status off; $CMD"
+    # CMD="tmux set-option -t popup: status off; $CMD"
+    PRE_CMD="tmux set-option -t popup: status off;"
 fi
+
+: "${bgc:="default"}"
+: "${fgc:="colour025"}"
+
+tmux set-option -g popup-border-style "bg=$bgc,fg=$fgc";
 
 if test "$no_border" = "y"; then
     border_style=none
 else
     : "${border_style:="rounded"}"
 fi
-
 sentinal_string="tm_sentinal_${RANDOM}_$$"
 if test "$ispipe" = 0; then
     output_fp="$(cat | tf txt)"
@@ -192,17 +211,21 @@ if test "$ispipe" = 0; then
     CMD="$CMD; tmux wait-for -S $sentinal_string"
 fi
 
-if [ "$(tm_getvar session_name)" = "popup" ];then
+if test "$(tm_getvar session_name)" = "popup";then
     tmux detach-client
 else
     case "$position" in
         center) {
+            # This speeds it up if the status needs to be hidden in advance of appearing
+            tmux has-session -t popup 2>/dev/null || tmux new -d -s popup env "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION" \
+                bash -c "${PRE_CMD}. ~/.profile; $CMD"
+
             tmux popup -d '#{pane_current_path}' \
                 -b "$border_style" \
                 "-x$x" "-y$y" "-w$width" "-h$height" \
                 -E "tmux attach -t popup 2>/dev/null || \
                 tmux new -s popup env \"CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION\" \
-                bash -c $(cmd ". ~/.profile; $CMD")"
+                bash -c $(cmd "${PRE_CMD}. ~/.profile; $CMD")"
         }
         ;;
 

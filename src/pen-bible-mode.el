@@ -1008,9 +1008,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   )
 
-(defun bible-verse-get-quote-cmd ()
+(defun bible-verse-get-quote-cmd (concordance_arg)
+  (cmd "nem" "fast" "ebible"
+       concordance_arg
+       "-m" bible-mode-book-module (bible-mode-copy-link)))
 
-  )
 (defun bible-get-quote (&optional backticks)
   (interactive)
 
@@ -1024,9 +1026,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
            (t nil)))
          (current-prefix-arg nil))
   
-    (tpop (cmd "nem" "fast" "ebible"
-               concordance_arg
-               "-m" bible-mode-book-module (bible-mode-copy-link))
+    (tpop (bible-verse-get-quote-cmd concordance_arg)
           nil
           :x_pos "M+1"
           :y_pos "M+1"

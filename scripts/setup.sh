@@ -1480,3 +1480,14 @@ if ! test -f ~/.pen/cross_references.tsv && test -d ~/.pen; then
     mv cross_references.txt cross_references.tsv
 fi
 )
+
+# Database
+(
+cd /root/dump/root/notes/databases/
+test -f kjv.db || http://simoncozens.github.io/open-source-bible-data/cooked/sqlite/kjv.db
+)
+e ia edbi
+
+# for emacs edbi
+plf install DBD::SQLite 
+plf install RPC::EPC::Service

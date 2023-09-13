@@ -1280,9 +1280,9 @@ case "$f" in
             else
                 session_name="${d_bn}"
             fi
-        fi
 
-        session_name="$(p "$session_name" | slugify | hash-trim)"
+            session_name="$(p "$session_name" | slugify | hash-trim)"
+        fi
 
         if [ -z "$TARGET" ] && test "$HAS_PARENT" = "y"; then
             TARGET="$CALLER_TARGET"

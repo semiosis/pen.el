@@ -512,8 +512,21 @@ The result is a string."
   (interactive)
   (format-sexp-at-point "cljfmt"))
 
+(require 'auto-highlight-symbol)
+(defun without-ahs-around-advice (proc &rest args)
+  (let ((ahs_status global-auto-highlight-symbol-mode))
+    (if ahs_status
+        (global-auto-highlight-symbol-mode -1))
+    (let ((res (apply proc args)))
+      (if ahs_status
+          (global-auto-highlight-symbol-mode 1))
+      res)))
+(advice-add 'pen-lispy-format-or-company :around #'without-ahs-around-advice)
+;; (advice-remove 'pen-lispy-format-or-company #'without-ahs-around-advice)
+
 (defun pen-lispy-format-or-company ()
   (interactive)
+
   ;; if it's left or right. right because i may have selected the sexp
   (if (or (lispy-left-p)
           (lispy-right-p))

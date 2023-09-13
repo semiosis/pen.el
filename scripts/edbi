@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+path="$1"
+
+# sudo cpan install DBD::SQLite; sudo cpan install RPC::EPC::Service
+
+case "$path" in
+    *.anki2|*.sqlite*|*.db|*.db3) {
+        sp -e "(edbi-sqlite $(aqf-nice "$path"))"
+        # sp -e '(edbi-sqlite "/home/shane/source/git/rpereira/real-world-haskell/.stack-work/stack.sqlite3")'
+    }
+    ;;
+
+    *) {
+        sp -ci "edbi:open-db-viewer"
+    }
+    ;;
+esac

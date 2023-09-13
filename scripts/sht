@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# e21 shx "$@"
+
+{
+exec 2>&1;
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+bash -x "$@" 
+} | ts -i '[%H:%M:%.S]'
