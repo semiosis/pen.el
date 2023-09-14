@@ -5,6 +5,8 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# cat /root/.pen/cross_references.tsv | csvq -f tsv 'select * from stdin limit 10' | v
+
 # github author/repo may need adjustment
 test -f "${GOPATH%%:*}/bin/up" || go install github.com/mithrandie/csvq@latest &>/dev/null
 
