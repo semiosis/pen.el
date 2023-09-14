@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+last_arg="${@: -1}"
+
+if stdin_exists; then
+    tsv2csv.py "$@" | /usr/bin/dos2unix
+elif test "$#" -gt 0 && test -f "$last_arg"; then
+    cat "$last_arg" | tsv2csv.py "$@" | /usr/bin/dos2unix
+fi
+

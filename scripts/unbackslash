@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+char="$1"
+
+sed -e 's/\\\(\\*\)'$char'/\1'$char'/g' -e 's/\\\\'$char'/\\'$char'/g'
+       # substract one        then half

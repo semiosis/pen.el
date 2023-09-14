@@ -157,18 +157,59 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "\ev" edit-command-line
 
-function cmd-niceify() {
+function cmd-niceify-posix() {
     tf_zle="$(mktemp ${TMPDIR}/tf_zleXXXXXX || echo /dev/null)"
 
-    print -Rz - "$(eval "cmd-nice-posix $(print -R - "$PREBUFFER$BUFFER")")"
+    print -Rz - "$(cmd "$(print -R - "$PREBUFFER$BUFFER")")"
 
     zle send-break		# Force reload from the buffer stack
 }
 
-# M-N
+# M-"
+autoload -z cmd-niceify-posix
+zle -N cmd-niceify-posix
+bindkey "\e'" cmd-niceify-posix
+
+function cmd-unniceify-posix() {
+    tf_zle="$(mktemp ${TMPDIR}/tf_zleXXXXXX || echo /dev/null)"
+
+    print -Rz - "$(print -R - "$PREBUFFER$BUFFER" | uqs)"
+
+    zle send-break		# Force reload from the buffer stack
+}
+
+# M-"
+autoload -z cmd-unniceify-posix
+zle -N cmd-unniceify-posix
+bindkey "\e\"" cmd-unniceify-posix
+
+function cmd-niceify() {
+    tf_zle="$(mktemp ${TMPDIR}/tf_zleXXXXXX || echo /dev/null)"
+
+    print -Rz - "$(q-cmd "$(print -R - "$PREBUFFER$BUFFER")")"
+
+    zle send-break		# Force reload from the buffer stack
+}
+
+# M-"
 autoload -z cmd-niceify
 zle -N cmd-niceify
-bindkey "\eN" cmd-niceify
+bindkey "\e\\" cmd-niceify
+
+function cmd-unniceify() {
+    tf_zle="$(mktemp ${TMPDIR}/tf_zleXXXXXX || echo /dev/null)"
+
+    # print -Rz - "$(eval "cmd-nice-posix $(print -R - "$PREBUFFER$BUFFER")")"
+
+    print -Rz - "$(print -R - "$PREBUFFER$BUFFER" | uq-cmd)"
+
+    zle send-break		# Force reload from the buffer stack
+}
+
+# M-"
+autoload -z cmd-unniceify
+zle -N cmd-unniceify
+bindkey "\e|" cmd-unniceify
 
 function edit-command-line-sp() {
     tf_zle="$(mktemp ${TMPDIR}/tf_zleXXXXXX || echo /dev/null)"

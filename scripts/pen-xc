@@ -168,7 +168,12 @@ fi
 # fi
 
 if ! stdin_exists && test "$#" -gt 0; then
-    if test "$#" -eq 1 && test "$copy_full_path" = "y" && test -e "$1"; then
+    if test "$#" -eq 1 && test "$copy_full_path" = "y" && { { ! test -e "$1"; } && test -L "$1"; }; then
+        set -- "$@" "$(realpath -s "$1")"
+        shift
+    elif test "$#" -eq 1 && test "$copy_full_path" = "y" && { test -e "$1" || test -L "$1"; }; then
+        # Maybe this case should also have -s
+        # i.e. do not resolve
         set -- "$@" "$(realpath "$1")"
         shift
     fi
