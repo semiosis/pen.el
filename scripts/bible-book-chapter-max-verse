@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+book="$1"
+# : "${book:="Gen"}"
+test -n "$book" || exit 1
+
+chapter="$2"
+# : "${chapter:="1"}"
+test -n "$chapter" || exit 1
+
+sqlite3 $DUMP$NOTES/databases/kjv.db "select max(verse) as max_verse from bible where book = \"$book\" and chapter = $chapter"

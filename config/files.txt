@@ -334,3 +334,4 @@ $HOME/.elinks/hooks.py
 $HOME/.elinks/rules.py
 $HOME/.config/cli-chess/custom_style.py
 $HOME/.config/cli-chess/config.ini
+$HOME/.config/litecli/config

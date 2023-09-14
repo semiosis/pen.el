@@ -2205,6 +2205,7 @@ May use to generate code from comments."
 (require 'pen-buffer-state)
 (require 'pen-apostrophe)
 (require 'pen-python)
+(require 'pen-quit)
 (require 'pen-melee)
 (require 'pen-scratch)
 (require 'pen-minor-modes)

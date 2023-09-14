@@ -7,7 +7,8 @@ fp="$1"
 test -f "$fp" || exit 1
 
 if printf -- "%s\n" "$fp" | xa file | grep -q SQLite; then
-    edbi "$fp"
+    # edbi "$fp"
+    litecli "$fp"
 else
     printf -- "%s\n" "$fp" | xa file
     pak

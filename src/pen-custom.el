@@ -143,6 +143,12 @@ This is useful for code-understanding when reading languages you don't understan
   :group 'pen
   :initialize #'custom-initialize-default)
 
+(defcustom pen-confdir (expand-file-name ".pen" (getenv "HOME"))
+  "Pen config repository"
+  :type 'string
+  :group 'pen
+  :initialize #'custom-initialize-default)
+
 (defcustom pen-rhizome-directory (f-join user-emacs-directory "rhizome")
   "Personal rhizome repository"
   :type 'string

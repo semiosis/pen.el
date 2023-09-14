@@ -176,7 +176,8 @@ argument, prompt for a regular expression using `read-regexp'."
   (require 'auto-highlight-symbol)
   ;; (global-auto-highlight-symbol-mode -1)
   (global-auto-highlight-symbol-mode 1)
-  (setq ahs-idle-interval 0)
+  ;; Keep it at 0.2 so that as I am typing, it doesn't flicker
+  (setq ahs-idle-interval 0.2)
   (let ((bg "#151515")
         (fg "#333333"))
     (set-face-attribute

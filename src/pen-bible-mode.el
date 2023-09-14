@@ -1050,7 +1050,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           :x_pos "M+1"
           :y_pos "M+1"
           :width_pc 50
-          :height_pc 20)))
+          :height_pc 20
+          :style "heavy")))
 
 (define-key bible-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)

@@ -1491,3 +1491,9 @@ e ia edbi
 # for emacs edbi
 plf install DBD::SQLite 
 plf install RPC::EPC::Service
+
+pip install -U litecli
+
+(
+cd "$(gc "https://github.com/aaronjohnsabu1999/bible-databases/")"
+)

@@ -73,6 +73,8 @@ if stdin_exists; then
     exec <&2
 fi
 
+export EDITOR=fpvd-editor
+
 visidata "$@"
 
 # if is_tty; then

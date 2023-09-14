@@ -34,6 +34,9 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa=.*/\1/' | \
     sed '/.*clojure.org/s/\/$//' | \
     sed '/.*clojuredocs.org/s/\/$//' | \
+    sed '/jsvine.github.io/s=jsvine.github.io/basics/=jsvine.github.io/intro-to-visidata/basics/=' | \
+    sed '/jsvine.github.io/s=jsvine.github.io/advanced/=jsvine.github.io/intro-to-visidata/advanced/=' | \
+    sed '/jsvine.github.io/s=jsvine.github.io/intermediate/=jsvine.github.io/intro-to-visidata/intermediate/=' | \
     sed '/.*haskell.org/s/\/$//' | \
     sed '/.*haskell.org/s/\/#.*//'
 

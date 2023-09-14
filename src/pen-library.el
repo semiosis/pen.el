@@ -508,6 +508,11 @@ single-character strings, or a string of characters."
       (pen-sn "penx" nil nil nil t)
     (error "Display not available")))
 
+(defun xterm (cmd)
+  (pen-sn (concat "xt in-pen in-tm " cmd) nil nil nil t))
+(defalias 'xt 'xterm)
+(defalias 'pen-xt 'xterm)
+
 (defun pen-start-in-xterm ()
   (interactive)
   (if (pen-has-gui-p)

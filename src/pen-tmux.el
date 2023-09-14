@@ -292,7 +292,7 @@ START and END can be in either order."
 ;; tmux-popup appears to be quite a lot like =tm sps=
 ;; I don't think there's enough overlap to be able to combine them.
 ;; I'll just have to reimplement some things
-(defun tmux-popup (shcmd &optional width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b bg fg)
+(defun tmux-popup (shcmd &optional width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b bg fg style)
   (interactive (list (read-string "popup shell command: ")))
   (let ((args (list "toggle-tmux-popup" "-E" shcmd)))
     (if width_pc
@@ -316,6 +316,12 @@ START and END can be in either order."
     (if noborder
         (setq args (append args (list "-nob"))))
 
+    (setq style ;; (or style "rounded")
+          (or style "heavy"))
+
+    (if style
+        (setq args (append args (list "-b" (str style)))))
+    
     (if bg
         (setq args (append args (list "-bg" (str bg)))))
     
@@ -461,8 +467,9 @@ START and END can be in either order."
                          &key noborder
                          &key output_b
                          &key bg
-                         &key fg)
-  (tmux-popup shcmd width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b bg fg))
+                         &key fg
+                         &key style)
+  (tmux-popup shcmd width_pc height_pc x_pos y_pos hide_status_b stdin dir noborder output_b bg fg style))
 
 (cl-defun tpop (shcmd
                 &optional stdin
@@ -475,9 +482,27 @@ START and END can be in either order."
                 &key noborder
                 &key output_b
                 &key bg
-                &key fg)
-  "Behaviour is a little different from cl-tmux-popup, as the status bar is hidden by default"
-  (tmux-popup shcmd width_pc height_pc x_pos y_pos (not show_status_b) stdin dir noborder output_b bg fg))
+                &key fg
+                &key style)
+  "Behaviour is a little different from cl-tmux-popup, as the status bar is hidden by default
+
+  ;; STYLE
+  ;; rounded
+  ;;         variation of single with rounded corners using UTF-8
+  ;;         characters
+  ;; double  double lines using UTF-8 characters
+  ;; heavy   heavy lines using UTF-8 characters
+  ;; simple  simple ASCII characters
+  ;; padded  simple ASCII space character
+  ;; none    no border
+  "
+  
+  (if (display-graphic-p)
+      (xt shcmd)
+    ;; (pen-eterm (pen-nsfa shcmd)
+    ;;          ;; stdin dir noborder output_b
+    ;;              )
+    (tmux-popup shcmd width_pc height_pc x_pos y_pos (not show_status_b) stdin dir noborder output_b bg fg style)))
 
 ;; (defalias 'tpop 'cl-tmux-popup)
 

@@ -303,7 +303,7 @@ commands to use in that buffer.
            ;; pen-term-cl-refresh-after-fz
            (major-mode-p 'term-mode))
           (run-with-idle-timer 0.2 nil
-                               `(λ ()
+                               `(lambda ()
                                   (ignore-errors
                                     (if (buffer-exists ,(current-buffer))
                                         (with-current-buffer
@@ -365,16 +365,19 @@ commands to use in that buffer.
 
 (defun pen-revert-kill-buffer-and-window ()
   (interactive)
-  (if (major-mode-p 'term-mode)
-      ;; M-F4
-      (term-send-raw-string "[1;3S")
-    (ignore-errors
-      (if (not (major-mode-p 'comint-mode))
-          (force-revert-buffer))
+  (cond
+   ;; ((major-mode-p 'crossword-mode)
+   ;;  (crossword-quit))
+   ((major-mode-p 'term-mode)
+    ;; M-F4
+    (term-send-raw-string "[1;3S"))
+   (t (ignore-errors
+        (if (not (major-mode-p 'comint-mode))
+            (force-revert-buffer))
 
-      (if (major-mode-p 'term-mode)
-          (pen-kill-this-buffer-volatile)
-        (pen-kill-buffer-and-window)))))
+        (if (major-mode-p 'term-mode)
+            (pen-kill-this-buffer-volatile)
+          (pen-kill-buffer-and-window))))))
 
 (advice-add 'pen-revert-kill-buffer-and-window :around #'if-ranger-close-around-advice)
 
