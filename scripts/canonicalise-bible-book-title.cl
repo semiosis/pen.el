@@ -54,10 +54,10 @@
     ("Job" "Jb")
     ("Psalms" "Ps" "psalm" "Psalm" "Pslm" "Psa" "Psm" "Pss")
     ("Proverbs" "Prov" "Pro" "Prv" "Pr")
-    ("Ecclesiastes" "Eccles" "Eccle" "Ecc" "Ec" "Qoh")
+    ("Ecclesiastes" "Eccl" "Eccles" "Eccle" "Ecc" "Ec" "Qoh")
     ("Song of Solomon" "Song" "Song of Songs" "SOS" "So" "Canticle of Canticles" "Canticles" "Cant")
     ("Isaiah" "Isa" "Is")
-    ("Jeremiah" "Je" "Jr")
+    ("Jeremiah" "Jer" "Je" "Jr")
     ("Lamentations" "Lam" "La")
     ("Ezekiel" "Ezek" "Eze" "Ezk")
     ("Daniel" "Dan" "Da" "Dn")
@@ -92,7 +92,7 @@
     ("Titus" "Tit"
      ;; "ti"
      )
-    ("Philemon" "Philem" "Phm" "Pm")
+    ("Philemon" "Philem" "Phlm" "Phm" "Pm")
     ("Hebrews" "Heb")
     ("James" "Jas" "Jm")
     ("I Peter" "1 Peter" "1 Pet" "1 Pe" "1 Pt" "1 P" "I Pet" "I Pt" "I Pe" "1Peter" "1Pet" "1Pe" "1Pt" "1P" "I Peter" "1st Peter" "First Peter")

@@ -17,4 +17,4 @@ if stdin_exists; then
     set -- "$(cat)" "$@"
 fi
 
-printf -- "%s" "$@" | uq | tv
+printf -- "%s" "$@" | uq | unbs '`'

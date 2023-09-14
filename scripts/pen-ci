@@ -49,6 +49,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -E) {
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
     -t) {
         RETRY_TIMEOUT="$2"
         shift
@@ -78,8 +85,11 @@ getpwd() {
 
 wdmd5="_$(printf -- "%s\n" "$(getpwd)$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1)"
 
+# CMD="$(cmd "$@")"
+: "${CMD:="$(cmd "$@")"}"
+
 # This must come after the initial arguments
-cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify)$sha.txt"
+cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify)$sha.txt"
 
 age() {
     fileMod="$(stat -c %Y -- "$1")"
@@ -101,7 +111,6 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
             # TODO Put a delay before this is allowed to run again
 
             if test "$USING_STDIN" = y; then
-                CMD="$(cmd "$@")"
                 # date
                 # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path"
                 # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path" >> /tmp/lsp2.log
@@ -111,12 +120,20 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
 
                 nohup tmux neww -n pen-ci -d "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
             else
-                "$@" > "$cache_file_path" &
+                eval "$CMD" > "$cache_file_path" &
             fi
         else
-            "$@" | tee "$cache_file_path"
+            if test "$USING_STDIN" = y; then
+                cat $tf_thing | eval "$CMD" | tee "$cache_file_path"
+            else
+                eval "$CMD" | tee "$cache_file_path"
+            fi
         fi
     fi
 else
-    "$@"
+    if test "$USING_STDIN" = y; then
+        cat $tf_thing | eval "$CMD"
+    else
+        eval "$CMD"
+    fi
 fi
