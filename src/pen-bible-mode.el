@@ -961,11 +961,17 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (setq ref (s-replace-regexp "^Revelation of John" "Revelation" ref))
     ref))
 
-(defun bible-mode-cross-references (ref)
+(defun bible-mode-cross-references-ext (ref)
   (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
   (let ((link (concat "https://www.openbible.info/labs/cross-references/search?q=" (urlencode (openbible-canonicalise-ref ref)))))
     (message "%s" (concat "Visiting: " link))
     (eww link)))
+
+(defun bible-mode-cross-references (ref)
+  (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (bible-mode-cross-references-ext ref)
+    (etv (snc "bible-get-cross-references" ref))))
 
 (defun bible-term-greek-get (term_g_num)
   "Queries user for a Strong Greek Lexicon term."

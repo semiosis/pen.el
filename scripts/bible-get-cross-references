@@ -1,0 +1,34 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Jer.10.14
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    set -- "$(cat)" "$@"
+fi
+
+ref="$@"
+test -n "$ref" || exit 1
+
+ref="$(printf -- "%s" "$ref" | cif -nd canonicalise-bible-ref)"
+
+book="$(printf -- "%s" "$ref" | cut -d : -f 1 | sed 's/ .*//' | crossref-canonicalise-ref)"
+chap="$(printf -- "%s" "$ref" | cut -d : -f 1 | sed 's/.* //')"
+verse="$(printf -- "%s" "$ref" | cut -d : -f 2)"
+
+ref="${book}.${chap}.${verse}"
+
+sqlite3 /root/.pen/refs.db 'select `To Verse` from refstable where `From Verse` = "'$ref'" and `Votes` > 0 order by cast(`Votes` as unsigned) desc' | pavs
