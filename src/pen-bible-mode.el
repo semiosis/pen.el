@@ -968,9 +968,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (eww link)))
 
 (defun bible-mode-cross-references (ref)
-  (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
+  (interactive (list
+                (let ((current-prefix-arg nil))
+                  (bible-mode-get-link (thing-at-point 'line t)))))
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
-      (bible-mode-cross-references-ext ref)
+      (let ((current-prefix-arg nil))
+        (bible-mode-cross-references-ext ref))
     (etv (snc "bible-get-cross-references" ref))))
 
 (defun bible-term-greek-get (term_g_num)
