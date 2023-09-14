@@ -1,0 +1,50 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -r) {
+        reverse=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+key="$1"
+test -n "$key" || exit 1
+shift
+
+if ! stdin_exists; then
+    last_arg="${@: -1}"
+
+    if ! test -f "$last_arg"; then
+        exit 1
+    fi
+
+    exec < <(cat "$last_arg")
+fi
+
+# awk -F"\t" "/$key/{print \$2}"
+
+if test "$reverse" = "y"; then
+    awk -F"\t" -v key="$key" "\$2 == key { print \$1; }"
+else
+    awk -F"\t" -v key="$key" "\$1 == key { print \$2; }"
+fi
+
+# Regex
+# awk -F"\t" -v key="$key" "\$1 ~ key { print \$2; }"
