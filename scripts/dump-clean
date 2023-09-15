@@ -24,3 +24,10 @@ if ! stdin_exists; then
     echo "dump-clean: No html stdin" | hls red
     exit 1
 fi
+
+input_fp="$(cat | tf txt)"
+
+if pl "$rp" | grep -q -P 'christianityworks.co.nz.*fresh'; then
+    :
+    exit "$?"
+fi
