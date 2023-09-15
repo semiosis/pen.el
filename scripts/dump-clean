@@ -15,7 +15,12 @@ stdin_exists() {
     } &>/dev/null
 }
 
+if ! test -n "$url"; then
+    echo "dump-clean: No url / name as first arg" | hls red
+    exit 1
+fi
+
 if ! stdin_exists; then
-    echo "dump-clean: No stdin" | hls red
+    echo "dump-clean: No html stdin" | hls red
     exit 1
 fi
