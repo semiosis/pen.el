@@ -1499,5 +1499,3 @@ cd "$(gc "https://github.com/aaronjohnsabu1999/bible-databases/")"
 )
 
 go install github.com/mithrandie/csvq@latest
-
-go install github.com/mathaou/termdbms@latest

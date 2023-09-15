@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+sed -e 's/\([a-z]\)\./\1 /' -e 's/\./:/' |
+    cat
+    # canonicalise-bible-book-title

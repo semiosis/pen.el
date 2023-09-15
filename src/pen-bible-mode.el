@@ -633,7 +633,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
   (setq text (or text (thing-at-point 'line t)))
 
-  (if (major-mode-p 'bible-mode)
+  (if (or (major-mode-p 'bible-mode)
+          (major-mode-p 'bible-search-mode))
       (if (interactive-p)
           (xc (bible-mode-get-link text))
         (bible-mode-get-link text))
@@ -974,7 +975,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (let ((current-prefix-arg nil))
         (bible-mode-cross-references-ext ref))
-    (etv (snc "bible-get-cross-references" ref))))
+    (etv (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference" ref))))
 
 (defun bible-term-greek-get (term_g_num)
   "Queries user for a Strong Greek Lexicon term."
@@ -1069,6 +1070,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
+(define-key bible-mode-map (kbd "M-w") 'bible-mode-copy-link)
 
 (define-key bible-mode-map "n" 'bible-mode-next-chapter)
 (define-key bible-mode-map "p" 'bible-mode-previous-chapter)
@@ -1088,12 +1090,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-search-mode-map "x" 'bible-mode-cross-references)
 (define-key bible-search-mode-map "g" nil)
 
+(define-key bible-search-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-search-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-search-mode-map (kbd "M-v") 'view-notes-fp-verse-v)
 (define-key bible-search-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-search-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-search-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-search-mode-map (kbd "w") 'bible-mode-copy-link)
+(define-key bible-search-mode-map (kbd "M-w") 'bible-mode-copy-link)
 
 (define-key bible-search-mode-map (kbd "RET") 'bible-search-mode-follow-verse)
 

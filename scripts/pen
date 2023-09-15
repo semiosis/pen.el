@@ -910,7 +910,12 @@ HEREDOC
             docker exec --detach-keys="$docker_detach_keys" -e DISPLAY=${DISPLAY} -it "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
         fi
     else
-        docker exec --detach-keys="$docker_detach_keys" -e DISPLAY=${DISPLAY} "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+        if test "$input_captured" = y; then
+            mkdir -p ~/.pen
+            docker exec --detach-keys="$docker_detach_keys" -e DISPLAY=${DISPLAY} "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; cat ~/.pen/pen_stdin.txt | $CMD"
+        else
+            docker exec --detach-keys="$docker_detach_keys" -e DISPLAY=${DISPLAY} "$PEN_CONTAINER_NAME" 'sh' '-c' ". /root/.emacs.d/pen.el/scripts/setup-term.sh; $CMD"
+        fi
     fi
 
     if test "$no_start_emacs" = y; then

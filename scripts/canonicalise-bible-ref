@@ -39,7 +39,6 @@ if stdin_exists; then
         fi
     done
 else
-    test -n "$ref" || exit 1
+    test -n "$ref" || { echo "canonicalise-bible-ref: No ref" | hls red 1>&2; exit 1; }
     echo "$ref" | canonicalise-bible-book-title
 fi
-

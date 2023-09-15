@@ -53,14 +53,24 @@
 (defun pen-m-w-copy ()
   "Forward word if a region is not selected."
   (interactive)
-  (if (or (region-active-p) (lispy-left-p))
-      (let ((pen nil))
-        ;; This may expand macros
-        (execute-kbd-macro (kbd "M-w")))
-    t
-    ;; (call-interactively 'pen-complete-words)
-    )
-  (deactivate-mark))
+  (cond
+   ((or (major-mode-p 'bible-mode)
+        (major-mode-p 'bible-search-mode))
+    (if (or (region-active-p))
+        (progn (call-interactively 'cua-copy-region)
+               (deselect))
+      (call-interactively 'bible-mode-copy-link)))
+   (t
+    (progn
+      (if (or (region-active-p)
+              (lispy-left-p))
+          (let ((pen nil))
+            ;; This may expand macros
+            (execute-kbd-macro (kbd "M-w")))
+        t
+        ;; (call-interactively 'pen-complete-words)
+        )
+      (deactivate-mark)))))
 
 (defun cua-paste-around-advice (proc &rest args)
   (let ((default-directory "/"))

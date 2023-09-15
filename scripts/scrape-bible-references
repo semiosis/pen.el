@@ -498,12 +498,21 @@ input_fp="$(cat | c ascify | tf txt)"
 
         # Mark 6:1-13Psalms 119:73-80Proverbs 17:27-28
         # SoulFood: Heb 11:17-13:25, Mark 10:1-12, Ps 88:1-9a, Pr 11:24-26
+        # Ps.33.6
+        # Ps.136.5-Ps.136.8
 
         cat "$input_fp" | awk 1 | 
             sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g' |
-            sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( \?[0-9][0-9-]*\\)\\?\\(:[0-9][0-9-]*\\)\\?.*/\\1\\2\\3\\4/p" |
+            sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( \?[0-9][0-9-]*\\)\\?\\([:.][0-9][0-9-]*\\)\\?.*/\\1\\2\\3\\4/p" |
             sed '/^$/d'
     done
+} | {
+    # This takes care of such:
+    # Ps.33.6
+    # Ps.136.5-Ps.136.8
+    # bible-canonicalise-cross-reference
+    # Actually, this script is not allowed to transform references, only scrape them
+    cat
 } | sed -e 's/\.$//' | {
     if test "$verses_only" = "y"; then
         grep :

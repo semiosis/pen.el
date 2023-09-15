@@ -31,4 +31,4 @@ verse="$(printf -- "%s" "$ref" | cut -d : -f 2)"
 
 ref="${book}.${chap}.${verse}"
 
-sqlite3 /root/.pen/refs.db 'select `To Verse` from refstable where `From Verse` = "'$ref'" and `Votes` > 0 order by cast(`Votes` as unsigned) desc' | pavs
+sqlite3 $HOME/.pen/refs.db 'select `To Verse` from refstable where `From Verse` = "'$ref'" and `Votes` > 0 order by cast(`Votes` as unsigned) desc' | pavs
