@@ -105,6 +105,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if test "$detach" = "y"; then
+    ispipe=1
+fi
+
 : ${CMD:="$shcmd"}
 : ${CMD:="$(cmd-nice "$@")"}
 
