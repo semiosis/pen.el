@@ -306,6 +306,7 @@
 ;; (pen-acolyte-scratch)
 
 (call-interactively 'pen-banner-emacs)
+;; (call-interactively 'pen-banner)
 
 (defun pen-default-add-keys (;; frame
                              )
@@ -371,7 +372,13 @@
 ;; (add-hook 'after-make-frame-functions 'pen-default-add-keys)
 (add-hook 'after-init-hook 'pen-delay-add-keys)
 ;; (add-hook 'after-init-hook 'pen-acolyte-scratch)
-(add-hook 'after-init-hook 'pen-banner)
+
+(defun pen-display-banner ()
+  (interactive)
+  (run-with-idle-timer 1 nil (lambda () (call-interactively 'pen-banner))))
+
+;; (add-hook 'after-init-hook 'pen-banner-emacs)
+(add-hook 'after-init-hook 'pen-display-banner)
 (add-hook 'after-init-hook 'pen-load-config t)
 (add-hook 'after-init-hook 'pen-delay-memoise)
 
