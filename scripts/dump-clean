@@ -20,14 +20,32 @@ if ! test -n "$url"; then
     exit 1
 fi
 
+dump_url() {
+    d_url="$1"
+    test -n "$d_url" || return 1
+
+    if printf -- "%s\n" "$d_url" | url-needs-chrome; then
+        0</dev/null elinks-dump-chrome "$d_url" | cat
+    else
+        0</dev/null elinks-dump "$d_url" | cat
+    fi
+    return 0
+}
+
 if ! stdin_exists; then
-    echo "dump-clean: No html stdin" | hls red
-    exit 1
+    exec < <(dump_url "$url")
 fi
 
 input_fp="$(cat | tf txt)"
 
-if pl "$rp" | grep -q -P 'christianityworks.co.nz.*fresh'; then
-    :
-    exit "$?"
+if printf -- "%s\n" "$url" | grep -q -P 'christianityworks.co.nz.*fresh'; then
+    sed -i '0,/Next/d' "$input_fp"
+    sed -i '/glad you like it/,/to your account/d' "$input_fp"
+    sed -i '/Register or Login/,/Add to Favourites/d' "$input_fp"
+    sed -i '/IFrame/,/Download audio/d' "$input_fp"
+    sed -i '/═══/,$d' "$input_fp"
+    cat "$input_fp" | max-double-spaced-no-trailing | sponge "$input_fp"
+    sed -i -z 's/^\n//' "$input_fp"
 fi
+
+cat "$input_fp" | pavs
