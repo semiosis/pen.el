@@ -36,10 +36,7 @@ export UPDATE
 
 exec 3>&2
 
-is_tty() {
-    # If stout is a tty
-    [[ -t 1 ]]
-}
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 fpage() {
     if is_tty; then
@@ -63,8 +60,6 @@ filter() {
     }
 }
 
-is_tty() { [ -t 1 ]; }
-
 if [ -z "$COLUMNS" ] && is_tty; then
     eval `resize`
 fi
@@ -72,6 +67,12 @@ fi
 if [ -n "$COLUMNS" ] && [ "$COLUMNS" -gt 120 ]; then
     COLUMNS=120
 fi
+
+if [ -z "$COLUMNS" ]; then
+    eval `tm-resize`
+fi
+
+# : "${COLUMNS:="120"}"
 
 export COLUMNS
 

@@ -39,13 +39,7 @@ fi
 input_fp="$(cat | tf txt)"
 
 if printf -- "%s\n" "$url" | grep -q -P 'christianityworks.co.nz.*fresh'; then
-    sed -i '0,/Next/d' "$input_fp"
-    sed -i '/glad you like it/,/to your account/d' "$input_fp"
-    sed -i '/Register or Login/,/Add to Favourites/d' "$input_fp"
-    sed -i '/IFrame/,/Download audio/d' "$input_fp"
-    sed -i '/═══/,$d' "$input_fp"
-    cat "$input_fp" | max-double-spaced-no-trailing | sponge "$input_fp"
-    sed -i -z 's/^\n//' "$input_fp"
+    cat "$input_fp" | clean-christianityworks-co-nz-fresh | sponge "$input_fp"
 fi
 
 cat "$input_fp" | pavs

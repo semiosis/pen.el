@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+cat |
+    sed '0,/Next/d' |
+    sed '/glad you like it/,/to your account/d' |
+    sed '/Register or Login/,/Add to Favourites/d' |
+    sed '/IFrame/,/Download audio/d' |
+    sed '/═══/,$d' |
+    max-double-spaced-no-trailing |
+    sed -z 's/^\n//'

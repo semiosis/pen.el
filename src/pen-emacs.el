@@ -234,7 +234,7 @@ if any returns nil.  If `confirm-kill-emacs' is non-nil, calls it."
   (let ((confirm confirm-kill-emacs))
     (and
      (or (not (memq t (mapcar (function
-                               (λ (buf) (and (buffer-file-name buf)
+                               (lambda (buf) (and (buffer-file-name buf)
                                                   (buffer-modified-p buf))))
                               (buffer-list))))
          (progn (setq confirm nil)

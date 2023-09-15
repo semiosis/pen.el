@@ -130,7 +130,7 @@ correspond to previously loaded files (those returned by
 (require 'emacsql)
 (require 'guess-language)
 (require 'language-detection)
-(require 'org-roam)
+;; (require 'org-roam)
 (require 'org-brain)
 (require 'dash)
 (require 'eterm-256color)

@@ -789,11 +789,13 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                                     strongs_len)
                                                  strongs_code_len)))
                                   (put-text-property refstart refend 'font-lock-face `(
-                                                                                       :foreground "cyan"
-                                                                                       :height ,(if (not floating) 0.7)))
+                                                                                       :foreground "#77ffff"
+                                                                                       ;; :height ,(if (not floating) 0.7)
+                                                                                                   ))
                                   (put-text-property refstart refend 'keymap bible-mode-greek-keymap)
-                                  (if (not floating)
-                                      (put-text-property refstart refend 'display '(raise 0.6))))
+                                  ;; (if (not floating)
+                                  ;;     (put-text-property refstart refend 'display '(raise 0.6)))
+                                  )
                                 (let ((refstart (- (point)
                                                    strongs_word_len
                                                    ;; matchstrlen
@@ -802,13 +804,16 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                   (if (member (str2sym strongs_code)
                                               bible-strongs-always-show-codelist)
                                       (put-text-property refstart refend 'font-lock-face `(
-                                                                                           :foreground "blue"
-                                                                                           :height ,(if (not floating) 0.7)))
+                                                                                           :foreground "#7777ff"
+                                                                                           ;; :height ,(if (not floating) 0.7)
+                                                                                                       ))
                                     (put-text-property refstart refend 'font-lock-face `(
                                                                                          :foreground "#d2268b"
-                                                                                                     :height ,(if (not floating) 0.7))))
-                                  (if (not floating)
-                                      (put-text-property refstart refend 'display '(raise 0.6)))))))
+                                                                                                     ;; :height ,(if (not floating) 0.7)
+                                                                                                     )))
+                                  ;; (if (not floating)
+                                  ;;     (put-text-property refstart refend 'display '(raise 0.6)))
+                                  ))))
                       (setq match (string-match "G[0-9]+" savlm (+ match matchstrlen))))
 
                     (if (string-match "lemma.TR:.*" savlm) ;;Lemma

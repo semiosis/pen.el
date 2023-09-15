@@ -584,6 +584,13 @@ Differences in #targets are ignored."
 
 (advice-add 'pen-url-cache :around #'shut-up-around-advice)
 
+(defun eww-dump-vim (url)
+  (interactive (list (get-path)))
+  (if (or (major-mode-p 'eww-mode)
+          (major-mode-p 'html-mode))
+      ;; (term-nsfa (cmd "dump-clean" url))
+      (tpop (cmd "dump-clean" url))))
+
 (defun eww-reload-cache-for-page (url)
   (interactive (list (get-path)))
   (if (major-mode-p 'eww-mode)
