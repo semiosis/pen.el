@@ -12,4 +12,6 @@ export TTY
 # export TERM="xterm-24bit"
 # export EMACS_TERM_TYPE="$TERM"
 
+echo "$COLORTERM $TERM" | tv
+
 /usr/local/bin/emacsclient "$@"

@@ -136,6 +136,8 @@ color.  The function should accept a single argument, the color name."
     (with-current-buffer b
       (rename-buffer "*Colors*")
 
+      (font-lock-mode 1)
+
       (cl-loop
        for r from 7 to 255 by resolution
        do
@@ -166,7 +168,7 @@ color.  The function should accept a single argument, the color name."
             ))
          ;; (insert "\n")
          ))
-      
+
       ;; (setq truncate-lines nil)
 
       (read-only-mode t)
@@ -178,29 +180,4 @@ color.  The function should accept a single argument, the color name."
       (beginning-of-buffer))
     (switch-to-buffer b)))
 
-
-(defun pen-banner ()
-  (interactive)
-
-  ;; Although the term version looks much nicer
-  ;; it breaks startup
-  (ignore-errors
-    (if (buffer-exists "*pen-banner*")
-        ;; (switch-to-buffer "*pen-banner*")
-        (kill-buffer "*pen-banner*"))
-
-    (let ((b (term "pen-banner.sh")))
-      (with-current-buffer b
-        (rename-buffer "*pen-banner*")
-        (read-only-mode t)
-
-        ;; (use-local-map (copy-keymap foo-mode-map))
-        (local-set-key "q" 'kill-current-buffer)
-        (local-set-key "d" 'kill-current-buffer)
-
-        ;; TODO Make something to convert ansi 256 colors to ansi xterm color
-        ;; This works:
-        ;; TERM=xterm TMUX= tmux new pen-banner.sh
-        ;; Then export the basic ansi codes.
-        )
-      (switch-to-buffer b))))
+(provide 'pen-colors)
