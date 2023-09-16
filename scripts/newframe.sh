@@ -17,6 +17,7 @@ stty stop undef 2>/dev/null; stty start undef 2>/dev/null
 # export PEN_DEBUG=y
 
 export TERM=screen-256color
+
 export LANG=en_US
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
@@ -56,7 +57,14 @@ esac; done
 
 export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
+
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts::$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container
+
+if pen-rc-test truecolor; then
+    export COLORTERM=truecolor
+    export TERM="xterm-24bit"
+    export EMACS_TERM_TYPE="$TERM"
+fi
 
 shopt -s nullglob
 if test "$USE_POOL" = "y"; then

@@ -321,10 +321,10 @@ START and END can be in either order."
 
     (if style
         (setq args (append args (list "-b" (str style)))))
-    
+
     (if bg
         (setq args (append args (list "-bg" (str bg)))))
-    
+
     (if fg
         (setq args (append args (list "-bg" (str bg)))))
 
@@ -417,7 +417,7 @@ START and END can be in either order."
 
  ;; This edits a sexp in vim - looks like an embedded vim
  (ledit)
- 
+
  (tmux-popup (cmd "cmatrix" "-absu" "3" "-C" "blue")
              30 20
              (tmux-cursor-x)
@@ -433,14 +433,14 @@ START and END can be in either order."
         (x (car pos))
         (y (+ 1 (car (cdr pos)))))
    (tmux-popup (cmd "asciimation" "-2") "60%" "60%" x y))
- 
+
  (tmux-popup (cmd "asciimation") "60%" "60%" "M" "M+1")
 
  (tmux-popup "list-bible-books | mfz -nv"
              "50%" "50%"
              (tmux-cursor-x t)
              (tmux-cursor-y))
- 
+
  (tmux-popup "list-bible-books | mfz -nv"
              "50%" "50%"
              "M+1"
@@ -496,7 +496,7 @@ START and END can be in either order."
   ;; padded  simple ASCII space character
   ;; none    no border
   "
-  
+
   (if (display-graphic-p)
       (xt shcmd)
     ;; (pen-eterm (pen-nsfa shcmd)
