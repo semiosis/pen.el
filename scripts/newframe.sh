@@ -60,12 +60,6 @@ export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts::$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container
 
-if pen-rc-test truecolor; then
-    export COLORTERM=truecolor
-    export TERM="xterm-24bit"
-    export EMACS_TERM_TYPE="$TERM"
-fi
-
 shopt -s nullglob
 if test "$USE_POOL" = "y"; then
     # ugh... using sentinels is a pain. Just select one.

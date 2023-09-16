@@ -2,6 +2,12 @@
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
+sn="$(basename -- "$0")"
+if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
+    ~/.emacs.d/host/pen.el/scripts/$sn "$@"
+    exit "$?"
+fi
+
 # pen-restart-clipboard
 
 xrdb -merge /root/.Xresources
@@ -41,12 +47,6 @@ mkdir -p ~/.pen/ports
 echo "$TTYD_PORT" > ~/.pen/ports/ttyd.txt
 : "${KHALA_PORT:="9837"}"
 echo "$KHALA_PORT" > ~/.pen/ports/khala.txt
-
-sn="$(basename -- "$0")"
-if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
-    ~/.emacs.d/host/pen.el/scripts/$sn "$@"
-    exit "$?"
-fi
 
 if test -f $HOME/.emacs.d/host/pen.el/config/pen.vim; then
     penvim_fp=$HOME/.emacs.d/host/pen.el/config/pen.vim
@@ -233,11 +233,17 @@ mkdir -p ~/.pen/prolog/databases
 export PEN_NO_TM
 export PEN_USE_GUI
 
+term_env_arr=()
+
+if pen-rc-test truecolor; then
+    term_env_arr=(env COLORTERM=truecolor TERM="xterm-24bit" EMACS_TERM_TYPE="xterm-24bit")
+fi
+
 runclient() {
     if test "$USE_NVC" = "y"; then
-        unbuffer in-tm -d -n pen nvc pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
+        unbuffer in-tm -d -n pen nvc "${term_env_arr[@]}" pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
     else
-        unbuffer in-tm -d -n pen pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
+        unbuffer in-tm -d -n pen "${term_env_arr[@]}" pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
     fi
 }
 
