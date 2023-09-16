@@ -8,8 +8,8 @@ export TTY
 # sn="$(basename "$0")"
 # cmd-onelineify-safe "$sn" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null | awk 1 >> "/tmp/$sn.txt"
 
-export COLORTERM=truecolor
-export TERM="xterm-24bit"
-export EMACS_TERM_TYPE="$TERM"
+# export COLORTERM=truecolor
+# export TERM="xterm-24bit"
+# export EMACS_TERM_TYPE="$TERM"
 
 /usr/local/bin/emacsclient "$@"
