@@ -1,5 +1,6 @@
 (require 'crossword)
 (require 'wordel)
+(require 'rubik)
 
 (setq crossword-save-path (concat (f-join pen-confdir "documents" "Crosswords") "/"))
 (mkdir-p (f-join pen-confdir "documents" "Crosswords"))

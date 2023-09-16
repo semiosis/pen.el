@@ -901,6 +901,8 @@
 
 (if (inside-docker-p)
     (progn
+      (define-key pen-map (kbd "M-p") #'pen-previous-defun)
+      (define-key pen-map (kbd "M-n") #'pen-next-defun)
       (define-key global-map (kbd "M-p") #'pen-previous-defun)
       (define-key global-map (kbd "M-n") #'pen-next-defun)
       (define-key pen-map (kbd "M-C-m") #'pen-enter-edit-emacs)

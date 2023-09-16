@@ -11,6 +11,9 @@
   (defvar pen-map (make-sparse-keymap)
     "Keymap for `pen.el'."))
 
+(defun f-join (&rest bits)
+  (s-join "/" bits))
+
 (defun ignore-errors-around-advice (proc &rest args)
   (ignore-errors
     (let ((res (apply proc args)))

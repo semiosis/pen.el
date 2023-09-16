@@ -2644,9 +2644,11 @@ case "$f" in
 
             tmux kill-pane -t "wrap:1.0"
         else
-            eval "tmux capture-pane -t "$CALLER_PANE" $CAPTURE_OPTIONS -S $SCROLLBACK"
+            # A bug https://asciinema.org/a/qpBUMp7biFuTzJ9ba0LMztBB6
+            # eval "tmux capture-pane -t "$CALLER_PANE" $CAPTURE_OPTIONS -S $SCROLLBACK"
+            # tmux save-buffer "$np"
 
-            tmux save-buffer "$np"
+            tmux capture-pane -t "$CALLER_PANE" $CAPTURE_OPTIONS -S $SCROLLBACK \; save-buffer "$np"
         fi
 
         if test "$CLEAN" = "y"; then

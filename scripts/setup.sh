@@ -1499,3 +1499,14 @@ cd "$(gc "https://github.com/aaronjohnsabu1999/bible-databases/")"
 )
 
 go install github.com/mithrandie/csvq@latest
+
+(
+cd ~/repos/
+git clone git://repo.or.cz/cwc.git
+cd cwc
+make -j$(nproc)
+)
+
+e ia rubik
+
+env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
