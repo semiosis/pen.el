@@ -141,7 +141,7 @@ Be mindful of quoting arguments correctly."
       (setq chars "\\"))
   (pen-sn (concat "pen-bs " (pen-q chars)) input))
 
-(defun hls (input pattern)
+(defun sh/hls (input pattern)
   (sh (concat "hls -r " pattern) input t))
 
 (defun udl (input)

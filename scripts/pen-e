@@ -5,8 +5,10 @@ export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 
 sn="$(basename "$0")"
 
+: ${EMACS_TERM_TYPE:="xterm-24bit"}
 : ${EMACS_TERM_TYPE:="screen-256color"}
-export EMACS_TERM_TYPE
+
+# Force emacs to believe the terminal supports truecolor
 
 shopt -s nullglob
 
@@ -15,6 +17,13 @@ mkdir -p $EMACSD/server
 eval "set -- $(cmd "$@" | sed 's/--init-debug/--debug-init/')"
 
 . $HOME/.shellrc
+
+export COLORTERM=truecolor
+export EMACS_TERM_TYPE
+export TERM="$EMACS_TERM_TYPE"
+
+# These were not making it all the way to emacsclient so I override them inside the emacsclient script
+# vim +/"export COLORTERM=truecolor" "$EMACSD/host/pen.el/scripts/pen-emacsclient"
 
 find_file_command=find-file
 

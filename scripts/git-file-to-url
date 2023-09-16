@@ -1,0 +1,131 @@
+#!/bin/bash
+export TTY
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+# TODO this should ensure remote branch exists and only give a valid URL
+# git ls-remote --heads https://github.com/rails/rails.git
+
+master=
+noask=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -s) {
+        sha=y
+        shift
+    }
+    ;;
+
+    -m) {
+        master=y
+        shift
+    }
+    ;;
+
+    -ask) {
+        noask=n
+        shift
+    }
+    ;;
+
+    -noask|-notty|-) {
+        noask=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$#" -eq 0; then
+    set -- . "$@"
+fi
+
+last_arg="${@: -1}"
+test -z "$last_arg" && exit 1
+
+
+fp="$last_arg"
+bn="$(basename "$fp")"
+ext="${bn##*.}"
+fn="${bn%.*}"
+
+fpd="$(printf -- "%s" "$fp" | u dn)"
+cd "$fpd"
+fp="$(realpath "$bn" | remove-prefix "$fpd/")"
+
+top="$(vc get-top-level)"
+
+if [ -z "$top" ]; then # not a git dir
+    if [ -d "$bn" ]; then
+        cd "$bn"
+        bn=.
+        top="$(vc get-top-level)"
+    fi
+fi
+
+if [ -f "$bn" ]; then
+    type=blob
+else
+    type=tree
+fi
+
+if ! [ -z "$bn" ]; then
+    rp="$(realpath "$bn")"
+else
+    rp="$(pwd -P)"
+fi
+
+base_path="$(printf -- "%s\n" "$rp" | remove-prefix "$top")"
+
+if test "$rp" = "$(pwd -P)" || test "$rp" = ""; then
+    dn="$rp"
+else
+    dn="$(dirname "$rp")"
+    cd "$dn"
+    cd "$top"
+fi
+
+base_url="$(vc url)"
+
+branch_or_commit="$(git rev-parse --abbrev-ref HEAD)"
+
+if test "$sha" = "y"; then
+    branch_or_commit="$(git-get-sha-short)"
+fi
+
+# full path is a url
+if pl "$base_url" | grep -q -P 'gitlab.com'; then
+    full_path="$base_url/-/$type/$branch_or_commit$base_path"
+else
+    full_path="$base_url/$type/$branch_or_commit$base_path"
+fi
+
+# fix for wiki
+full_path="$(p "$full_path" | sed '/github.com/ s=\.wiki/blob/master/=/wiki/=')"
+full_path="$(p "$full_path" | sed '/gitlab.com/ s=\.wiki/-/blob/master=/-/wikis=')"
+full_path="$(p "$full_path" | sed '/gitlab.com/ s=\.wiki/blob/master/=/-/wikis/=' | sed '/gitlab.com.*\/-\/wikis/ s=\.md$==')"
+
+if test "$master" = "y"; then
+    full_path="$(printf -- "%s" "$full_path" | sed 's=\(github.com/[^]]\+\)\(/[^]]\+/\(blob\|tree\)/\)[a-z-]\+\(/\)=\1\2master\4=')"
+    full_path="$(printf -- "%s" "$full_path" | sed 's=\(gitlab.com/.*/-/blob/\)[^/]\+\(/.*\)=\1master\2=')"
+fi
+
+if lit "$full_path" | test -n "$(sed -n '/github\.com\/mullikine\/mullikine\.github\.io\/\(blob\|tree\)\/master/p')"; then
+    if ! lit "$full_path" | grep -q -P '\.org$'; then
+        full_path="$(printf -- "%s" "$full_path" | sed 's=github\.com/mullikine/\(mullikine\.github\.io\)/\(blob\|tree\)/master=\1=')"
+    else
+        notify-send "Get the path of the html file instead to get a published url."
+
+        if ! test "$noask" = "y" && is_tty && yn "Do you want the url to the published html instead?"; then
+            full_path="$(printf -- "%s" "$full_path" | sed 's/\.org$/.html/g' | sed 's=github\.com/mullikine/\(mullikine\.github\.io\)/\(blob\|tree\)/master=\1=')"
+        fi
+    fi
+fi
+
+full_path="$(p "$full_path" | sed '/\.com\/mullikine\/glossaries\/.*glossary\.txt$/s=^.*\/\([^/]*\)\/glossary\.txt$=http://github.com/semiosis/glossaries-gh/blob/master/\1.txt=' )"
+full_path="$(p "$full_path" | sed '/\.com\/mullikine\/notes\/.*glossary\.txt$/s=^.*\/\([^/]*\)\/glossary\.txt$=http://github.com/semiosis/glossaries-gh/blob/master/\1.txt=' )"
+
+printf -- "%s" "$full_path" | xct

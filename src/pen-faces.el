@@ -422,6 +422,10 @@ argument, prompt for a regular expression using `read-regexp'."
 
   (set-face-background 'ivy-minibuffer-match-face-2 "#562626")
   (set-face-foreground 'ivy-minibuffer-match-face-2 "#d72f4f")
+
+  ;; Especially needed after getting truecolor
+  (set-face-foreground 'completions-annotations "#d72f4f")
+  (set-face-background 'completions-annotations "#111111")
   (require 'helm)
   (set-face-background 'helm-separator "#262626")
   (set-face-foreground 'helm-separator "#d72f4f")

@@ -1003,9 +1003,8 @@ non-nil."
   (pen-message-no-echo "Truncate long lines %s"
 	                     (if truncate-lines "enabled" "disabled")))
 
-(defun toggle-truncate-lines (arg)
-  (interactive "P")
-  (if truncate-lines
+(defun pen-truncate-lines (on_or_off)
+  (if (not on_or_off)
       (progn
         (visual-line-mode 1)
         (setq truncate-lines nil)
@@ -1014,6 +1013,13 @@ non-nil."
       (visual-line-mode -1)
       (setq truncate-lines t)
       (setq-default truncate-lines t))))
+
+(defun tuple-swap (tp)
+  (list (car (cdr tp)) (car tp)))
+
+(defun toggle-truncate-lines (arg)
+  (interactive "P")
+  (pen-truncate-lines (not truncate-lines)))
 
 (defun pen-nsfa (cm &optional dir)
   (let ((qdir (pen-q dir)))

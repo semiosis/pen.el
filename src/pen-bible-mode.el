@@ -207,7 +207,14 @@
              (fp (bible-mode-get-notes-fp-for-verse ref)))
         (if (f-exists-p fp)
             (put-text-property start end 'font-lock-face '(:foreground "green"))
-          (put-text-property start end 'font-lock-face '(:foreground "purple"))))
+
+          ;; #rrggbb works with truecolor, and to get nice blues, truecolor is required
+          ;; (put-text-property start end 'font-lock-face '(:foreground
+          ;;                                                ;; "#443344"
+          ;;                                                "#222255"))
+          (put-text-property start end 'font-lock-face '(:foreground
+                                                         ;; "#443344"
+                                                         "#333377"))))
       ;; (message "%s" (current-line-string))
       (end-of-line)))
 

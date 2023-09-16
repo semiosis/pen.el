@@ -3,6 +3,10 @@
 (defalias 'test-z 'string-empty-p)
 (defalias 'test-f 'file-exists-p)
 
+(defalias 'undefvar 'makunbound)
+(defalias 'undefun 'fmakunbound)
+
+
 (defun test-n (s)
   (not (string-empty-p s)))
 

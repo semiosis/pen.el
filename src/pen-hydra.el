@@ -477,6 +477,8 @@ display values."
                          ("g" (dff (call-interactively 'greek-digraph-select)) "Insert Greek digraph")
                          ("h" (dff (call-interactively 'hebrew-digraph-select)) "Insert Hebrew digraph")
                          ("d" (dff (call-interactively 'digraph-select)) "Insert digraph")
+                         ("y" (dff (call-interactively 'symbol-select)) "Insert symbol")
+                         ("p" (dff (call-interactively 'pick-emoji)) "Insert emoji")
                          ("i" #'global-rainbow-identifiers-always-mode "Rainbow identifiers")
                          ("j" #'compile-run "compile-run")
                          ("J" #'compile-run-term "compile-run-term")
@@ -498,7 +500,7 @@ display values."
                          ("n" #'helm-buffers-list "Helm Buffers list")
                          ("o" (df h-checkprose (flycheck-compile 'proselint)) "check prose")
                          ("O" #'rotate:even-horizontal "Horizontal")
-                         ("p" #'org-plot/gnuplot "GnuPlot")
+                         ;; ("p" #'org-plot/gnuplot "GnuPlot")
                          ;; ("p" #'org-plot/gnuplot "GnuPlot") ; projectile, aboove
                          ("P" #'paradox-list-packages "Paradox List Packages")
                          ;; ("p" (progn (save-excursion (hydra-projectile/body) (norm/hydra-push '(h_nx/body)))) "projectile hydra")
@@ -516,7 +518,8 @@ display values."
                          ("W" #'pen-flyspell-add-word "add word to dictionary")
                          ;; ("W" #'wttrin "weather")
                          ("x" #'eval-defun "eval defun")
-                         ("y" #'call-graph "Call graph")))
+                         ;; ("y" #'call-graph "Call graph")
+                         ))
 
 (convert-hydra-to-sslk "ls"
                        (defhydra h_ns (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "NORMAL: snippets"

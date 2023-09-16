@@ -32,7 +32,7 @@ export PATH=$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/contain
 export PATH="$PATH:/root/go/bin"
 export PATH="$PATH:/root/.cargo/bin/cargo"
 export PATH="$PATH:/root/repos/go-ethereum/build/bin"
-export PATH="$PATH:$(find "$SCRIPTS" -mindepth 1 -type d | sed -z "s~\n~:~g" | sed "s/:\$//")"
+export PATH="$PATH:$(find "$SCRIPTS" -maxdepth 1 -mindepth 1 -type d | sed -z "s~\n~:~g" | sed "s/:\$//")"
 
 if ! test -n "$PEN_WORKER"; then
     . ~/.cargo/env

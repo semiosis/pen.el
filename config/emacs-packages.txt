@@ -2247,3 +2247,5 @@ wordel
 bazel
 meson-mode
 mini-frame
+adaptive-wrap
+rubik

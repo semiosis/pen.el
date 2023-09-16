@@ -96,6 +96,9 @@ test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/em
 tic $HOME/repos/pen-emacsd/pen.el/config/eterm-256color.ti
 tic $HOME/repos/pen-emacsd/pen.el/config/screen-256color.ti
 tic $HOME/repos/pen-emacsd/pen.el/config/screen-2color.ti
+tic $HOME/repos/pen-emacsd/pen.el/config/screen-2color.ti
+tic $HOME/repos/pen-emacsd/pen.el/config/xterm-24bit.ti
+# tic /root/.emacs.d/host/pen.el/config/xterm-24bit.ti
 
 rm -rf ~/.emacs.d
 ln -s ~/repos/pen-emacsd ~/.emacs.d
@@ -1510,3 +1513,14 @@ make -j$(nproc)
 e ia rubik
 
 env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
+
+# Indent line wrap
+e ia adaptive-wrap
+
+# Rust file manager - pretty cool
+cargo install --git https://github.com/sxyazi/yazi.git
+# sadly, doesn't exist:
+# cargo-quickinstall yazi
+
+# I really don't want numpy actually
+# pip install numpy
