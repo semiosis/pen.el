@@ -138,6 +138,8 @@ cd
 test -d emacs || git clone "https://github.com/emacs-mirror/emacs"
 )
 
+apt install cargo
+
 apt install libx11-dev
 apt install libgtk2.0-dev
 apt install libjpeg-dev
@@ -150,7 +152,6 @@ apt install libgnutls28-dev
 apt install libjansson-dev
 apt install imagemagick-6.q16 libmagick++-6-headers libmagick++-dev
 apt install libgtk-3-0 libgtk-3-dev
-apt install cargo
 
 (
 cd "$DUMP/programs"

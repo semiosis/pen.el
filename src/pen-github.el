@@ -1,7 +1,8 @@
 ;; v +/"github-search-clone-repo" "$EMACSD/packages27/github-search-20170824.323/github-search.el"
 ;; github-search-clone-repo
 
-(require 'github-search)
+;; breaks emacs 29
+;; (require 'github-search)
 
 (require 'license-templates)
 

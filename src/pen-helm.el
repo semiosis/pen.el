@@ -1,5 +1,10 @@
 (require 'helm-buffers)
 (require 'helm-descbinds)
+
+;; fixes issue with helm-net.el and emacs 29
+(defvar browse-url-galeon-program "" "")
+(defvar browse-url-netscape-program "" "")
+
 (require 'helm-google)
 (require 'helm)
 ;; (require 'pen-utils)

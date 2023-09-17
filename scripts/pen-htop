@@ -19,7 +19,7 @@ CMD="$(cmd "$@")"
 test -f /usr/local/bin/htop && : "${bin:="/usr/local/bin/htop"}"
 test -f /usr/bin/htop && : "${bin:="/usr/bin/htop"}"
 
-: "${query:="$(pen-readln "htop filter")"}"
+: "${query:="$(rl pen-readln "htop filter")"}"
 
 if test -n "$query"; then
     # x -sh "/usr/bin/htop $CMD" -f4 -s "$query" -c m -i

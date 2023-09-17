@@ -1,0 +1,4 @@
+#!/bin/sh
+export TTY
+
+COLUMNS=1000 /bin/ps $@

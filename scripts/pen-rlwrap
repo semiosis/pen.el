@@ -2,7 +2,76 @@
 export TTY
 
 if printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+    # skip rlwrap
     "$@"
-else
-    /usr/bin/rlwrap "$@"
+    exit "$?"
 fi
+
+# /usr/bin/rlwrap "$@"
+
+ppid="$(ps -o comm= $PPID)"
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$ppid" 0</dev/null ) &>/dev/null
+
+sn="$(basename "$0")"
+
+# Also, use this to determine if we're inside rlwrap
+export RLWRAP_EDITOR="$EDITOR"
+
+# Frustratingly, I can't use getopt here because it fails when the
+# command has options not listed here.
+
+# OPTS="$(getopt -o H:f: -- "$@")"
+# 
+# if [ $? != 0 ] ; then
+#     cmd1 "$@"
+#     echo "Failed parsing options." >&2 ; exit 1 ;
+# fi
+# 
+# eval set -- "$OPTS"
+# 
+# while true; do
+#   case "$1" in
+#     -H ) hf="$2"; shift 2 ;;
+#     # -f can actually be given multiple times.
+#     -f ) cf="$2"; shift 2 ;;
+#     -- ) shift; break ;;
+#     * ) break ;;
+#   esac
+# done
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -H) {
+        hf="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -c) {
+        cf="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# last_arg="${@: -1}"
+# hfn="$(printf -- "%s" "$last_arg" | slugify)"
+
+hfn="$(cmd "$@" | slugify)"
+
+mkdir -p $NOTES/programs/rlwrap/completions
+mkdir -p $NOTES/programs/rlwrap/history
+
+: "${cf:="$NOTES/programs/rlwrap/completions/${hfn}"}"
+: "${hf:="$NOTES/programs/rlwrap/history/${hfn}"}"
+
+touch "$hf"
+touch "$cf"
+
+# cmd1 /usr/bin/rlwrap -a -H "$hf" -f "$cf" "$@" 1>&2
+/usr/bin/rlwrap -n -a -s 1000 -H "$hf" -f "$cf" "$@"
