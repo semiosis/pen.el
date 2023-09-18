@@ -1,24 +1,53 @@
 #!/bin/bash
 export TTY
 
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
 # Meant to be used as an editor
+
+# This is opened by litecli when doing a select
+# It is also opened by visidata/fpvd when opening a row inside an external editor
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 last_arg="${@: -1}"
 
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
 if is_tty; then
     # pool pen-e "$@"
 
     if printf -- "%s\n" "$last_arg" | grep -q -P '\.(csv|tsv)$'; then
-        fpvd "$@"
+         
+        pen-sps -w fpvd "$@"
+        # fpvd "$@"
     else
-        v "$@"
+        if stdin_exists; then
+            # input="$(cat)"
+            # exec < <(printf -- "%s" "$input" | awk 1)
+            # if test -n "$(printf -- "%s" "$input" | sed -n 1p | sed -n '/\t/p')"; then
+            #     # pen-sps -w -tmarg -d fpvd "$@"
+            #     # v
+            #     ebg pen-sps -w fpvd "$@"
+            # fi
+            ebg pen-sps -w fpvd "$@"
+        else
+            v "$@"
+        fi
     fi
 else
     # pen-sps -w pin "$@"
     # pen-sps -w pool pen-e "$@"
 
     # This recalls in a new tmux window
+    # reopen
     pen-sps -w fpvd-editor "$@"
 fi

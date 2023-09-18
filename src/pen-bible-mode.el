@@ -1,3 +1,5 @@
+(require 'sqlite-mode)
+
 ;; This is a new variable, nonexistent in the original package
 (defcustom default-bible-mode-book-module
   "NASB"
@@ -1027,8 +1029,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (bible-mode--display)))
 
 (defun bible-random-verse-ref ()
+  (interactive)
+  (let ((book (pen-snc "list-bible-books"))
+        (chapter (pen-snc (cmd "bible-book-max-chapter" "3John")))
+        (verse (pen-snc (cmd "bible-book-chapter-max-verse" book chapter))))
 
-  )
+    (etv (cmd book chap verse))))
 
 (defun bible-verse-get-quote-cmd (concordance_arg)
   (cmd "nem" "fast" "ebible"

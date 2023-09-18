@@ -122,18 +122,17 @@
           (funcall mode)
         (guess-major-mode)))))
 
-(defun new-buffer-from-o (o)
-  (new-buffer-from-string
-   (if (stringp o)
-       o
-     (pp-to-string o))))
-(defun pen-etv (o)
+(defun new-buffer-from-o (o &optional mode)
   "Returns the object. This is a way to see the contents of a variable while not interrupting the flow of code.
  Example:
  (message (pen-etv \"shane\"))"
-  (new-buffer-from-o o)
-  o)
+  (new-buffer-from-string
+   (if (stringp o)
+       o
+     (pp-to-string o))
+   nil mode))
 
+(defalias 'pen-etv 'new-buffer-from-o)
 (defun str (thing)
   "Converts object or string to an unformatted string."
 

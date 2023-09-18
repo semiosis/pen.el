@@ -5,6 +5,8 @@ export TTY
 
 test -f "/usr/local/bin/litecli" || pyf "litecli" &>/dev/null
 
-export PAGER=fpvd
+# export PAGER=fpvd
+# export PAGER=litecli-editor
+# vim +/"pager = litecli-editor" "$HOME/.config/litecli/config"
 
 /usr/local/bin/litecli "$@"
