@@ -3,4 +3,4 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-sqlite3 $DUMP$NOTES/databases/kjv.db 'select distinct (book) from bible order by rowid'
+sqlite3 $DUMP$NOTES/databases/kjv.db 'select distinct (book) from bible order by rowid' | pavs

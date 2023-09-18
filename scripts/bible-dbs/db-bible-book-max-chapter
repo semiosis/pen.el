@@ -3,8 +3,14 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+sn="$(basename -- "$0")"
+
+help() {
+    echo "$sn <book>" | hls red 1>&2
+}
+
 book="$1"
 # : "${book:="Gen"}"
-test -n "$book" || exit 1
+test -n "$book" || { help; exit 1; }
 
-sqlite3 $DUMP$NOTES/databases/kjv.db "select max(chapter) as max_chapter from bible where book = \"$book\""
+sqlite3 $DUMP$NOTES/databases/kjv.db "select max(chapter) as max_chapter from bible where book = \"$book\"" | pavs
