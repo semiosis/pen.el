@@ -11,7 +11,8 @@
                (tsx . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src"))
                (yaml "https://github.com/ikatyang/tree-sitter-yaml")
                (bash "https://github.com/tree-sitter/tree-sitter-bash")
-               (rust "https://github.com/tree-sitter/tree-sitter-rust")))
+               (rust "https://github.com/tree-sitter/tree-sitter-rust")
+               (elisp "https://github.com/Wilfred/tree-sitter-elisp")))
       (add-to-list 'treesit-language-source-alist grammar)
       ;; Only install `grammar' if we don't already have it
       ;; installed. However, if you want to *update* a grammar then
@@ -33,7 +34,8 @@
                      (css-mode . css-ts-mode)
                      (yaml-mode . yaml-ts-mode)
                      (sh-mode . bash-ts-mode)
-                     (rust-mode . rust-ts-mode)))
+                     (rust-mode . rust-ts-mode)
+                     (emacs-lisp-mode . rust-elisp-mode)))
     (add-to-list 'major-mode-remap-alist mapping))
 
   :config
