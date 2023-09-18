@@ -1288,6 +1288,11 @@ e ia topsy prism
 
 (
 cd "$EMACSD/manual-packages"
+git clone "https://github.com/mickeynp/combobulate"
+)
+
+(
+cd "$EMACSD/manual-packages"
 git clone "https://github.com/alphapapa/obvious.el"
 )
 

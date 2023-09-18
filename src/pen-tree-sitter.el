@@ -1,33 +1,67 @@
-;; TODO Automate
-;; - After making changes to your grammar, just run tree-sitter generate again.
-;; - Run tests:
-;;   tree-sitter parse 'examples/**/*.go' --quiet --stat
+;; `M-x combobulate' (default: `C-c o o') to start using Combobulate
+(use-package treesit
+  :preface
+  (defun mp-setup-install-grammars ()
+    "Install Tree-sitter grammars if they are absent."
+    (interactive)
+    (dolist (grammar
+             '((css "https://github.com/tree-sitter/tree-sitter-css")
+               (javascript . ("https://github.com/tree-sitter/tree-sitter-javascript" "master" "src"))
+               (python "https://github.com/tree-sitter/tree-sitter-python")
+               (tsx . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src"))
+               (yaml "https://github.com/ikatyang/tree-sitter-yaml")
+               (bash "https://github.com/tree-sitter/tree-sitter-bash")))
+      (add-to-list 'treesit-language-source-alist grammar)
+      ;; Only install `grammar' if we don't already have it
+      ;; installed. However, if you want to *update* a grammar then
+      ;; this obviously prevents that from happening.
+      (unless (treesit-language-available-p (car grammar))
+        (treesit-install-language-grammar (car grammar)))))
 
-(require 'tree-sitter)
-(require 'tree-sitter-langs)
-(require 'tree-sitter-indent)
-(require 'tree-sitter-hl)
-(require 'tree-sitter-debug)
-(require 'tree-sitter-query)
+  ;; Optional, but recommended. Tree-sitter enabled major modes are
+  ;; distinct from their ordinary counterparts.
+  ;;
+  ;; You can remap major modes with `major-mode-remap-alist'. Note
+  ;; that this does *not* extend to hooks! Make sure you migrate them
+  ;; also
+  (dolist (mapping '((python-mode . python-ts-mode)
+                     (css-mode . css-ts-mode)
+                     (typescript-mode . tsx-ts-mode)
+                     (json-mode . json-ts-mode)
+                     (js-mode . js-ts-mode)
+                     (css-mode . css-ts-mode)
+                     (yaml-mode . yaml-ts-mode)
+                     (sh-mode . bash-ts-mode)))
+    (add-to-list 'major-mode-remap-alist mapping))
 
-;; Install .so files from a version bundle.
-;; mx:tree-sitter-langs-install-grammars
+  :config
+  (mp-setup-install-grammars)
+  
+  ;; Do not forget to customize Combobulate to your liking:
+  ;;
+  ;;  M-x customize-group RET combobulate RET
+  ;;
+  ;; https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter
+  (use-package combobulate
+    :preface
+    ;; You can customize Combobulate's key prefix here.
+    ;; Note that you may have to restart Emacs for this to take effect!
+    (setq combobulate-key-prefix "C-c o")
 
-;; ev:tree-sitter-langs-grammar-dir
-
-;; To get elisp, I need to compile it, I think
-
-(tree-sitter-require 'rust)
-(tree-sitter-require 'python)
-(tree-sitter-require 'javascript)
-
-;; ;; Elisp is currently not useful for syntax highlighting because everything is currently considered a sexp
-;; Besides, it's not working very well right now
-;; vim +/"## Limitations" "$MYGIT/Wilfred/tree-sitter-elisp/README.md"
-;; (tree-sitter-require 'elisp)
-
-(tree-sitter-require 'go)
-
-(global-tree-sitter-mode)
+    ;; Optional, but recommended.
+    ;;
+    ;; You can manually enable Combobulate with `M-x
+    ;; combobulate-mode'.
+    :hook ((python-ts-mode . combobulate-mode)
+           (js-ts-mode . combobulate-mode)
+           (css-ts-mode . combobulate-mode)
+           (yaml-ts-mode . combobulate-mode)
+           (json-ts-mode . combobulate-mode)
+           (typescript-ts-mode . combobulate-mode)
+           (tsx-ts-mode . combobulate-mode)
+           (sh-mode . combobulate-mode))
+    ;; Amend this to the directory where you keep Combobulate's source
+    ;; code.
+    :load-path ("/root/.emacs.d/manual-packages/combobulate")))
 
 (provide 'pen-tree-sitter)
