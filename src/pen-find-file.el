@@ -48,9 +48,11 @@
                (string-equal "db" ext)
                (string-equal "db3" ext))
            (progn
-             (let ((b (current-buffer)))
-               (edbi-sqlite fp)
-               (kill-buffer b))))
+             (sqlite-open fp)
+             ;; (let ((b (current-buffer)))
+             ;;   (edbi-sqlite fp)
+             ;;   (kill-buffer b))
+             ))
 
           ((istr-match-p "html" ext)
            (find-file fp))

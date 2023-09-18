@@ -1030,11 +1030,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-random-verse-ref ()
   (interactive)
-  (let ((book (pen-snc "list-bible-books"))
-        (chapter (pen-snc (cmd "bible-book-max-chapter" "3John")))
-        (verse (pen-snc (cmd "bible-book-chapter-max-verse" book chapter))))
+  (let* ((book (pen-snc "db-bible-book-list| sort -R | head -n 1"))
+         (chapter (+ 1 (random (string-to-int (pen-snc (cmd "db-bible-book-max-chapter" book))))))
+         (verse (+ 1 (random (string-to-int (pen-snc (cmd "db-bible-book-chapter-max-verse" book chapter)))))))
 
-    (etv (cmd book chap verse))))
+    (bible-mode-lookup-ref (concat book " " (str chapter) ":" (str verse)))))
 
 (defun bible-verse-get-quote-cmd (concordance_arg)
   (cmd "nem" "fast" "ebible"

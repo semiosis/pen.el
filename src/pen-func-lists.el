@@ -54,9 +54,11 @@
 (defset magit-status-mode-funcs '(magit-section-cycle-diffs
                                   magit-dired-jump))
 (defset bible-mode-funcs '(bible-mode-cross-references
-                           bible-mode-split-display))
+                           bible-mode-split-display
+                           bible-random-verse-ref))
 (defset bible-search-mode-funcs '(bible-mode-cross-references
-                                  bible-mode-split-display))
+                                  bible-mode-split-display
+                                  bible-random-verse-ref))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))
