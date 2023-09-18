@@ -1543,3 +1543,6 @@ git config --global --add safe.directory '*'
 # To add an exception for this directory, call:
 # 
 #         git config --global --add safe.directory /volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs
+
+# emacs29
+e ia treesit-auto
