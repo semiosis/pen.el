@@ -838,9 +838,9 @@ case "$f" in
                 pen-e running && exit 0
 
                 if test "$DEBUG_WORKER" = "y"; then
-                    eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -ta '' -s ~/.emacs.d/server/$SOCKET $CMD"
+                    eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -ta '' -s $SOCKET $CMD"
                 else
-                    eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET $CMD"
+                    eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -nta '' -s $SOCKET $CMD"
                 fi
             else
                 pen-e running && exit 0
@@ -862,14 +862,14 @@ case "$f" in
     ;;
 
     fs|-fs|-fixscratch|fixscratch) {
-        $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET -e "(get-buffer-create $(cmd-nice-posix "*scratch*"))"
+        $EMACSCLIENT_BIN -nta '' -s $SOCKET -e "(get-buffer-create $(cmd-nice-posix "*scratch*"))"
         pen-e -s
         exit 0
     }
     ;;
 
     kaf|kof|-kof|-kill-other-frames|-kill-all-frames) {
-        $EMACSCLIENT_BIN -nta '' -s ~/.emacs.d/server/$SOCKET -e "(progn (kill-other-clients t))"
+        $EMACSCLIENT_BIN -nta '' -s $SOCKET -e "(progn (kill-other-clients t))"
         pen-e -s
         exit 0
     }
@@ -877,7 +877,7 @@ case "$f" in
 
     running) { # test running
         if [ -n "$SOCKET" ]; then
-            $EMACSCLIENT_BIN -a false -e 't' -s ~/.emacs.d/server/$SOCKET &>/dev/null
+            $EMACSCLIENT_BIN -a false -e 't' -s $SOCKET &>/dev/null
         else
             $EMACSCLIENT_BIN -a false -e 't' &>/dev/null
         fi
@@ -1381,7 +1381,7 @@ case "$f" in
         if [ -n "$SOCKET" ]; then
             ! pen-e running && ( pen-pl "emacs ~ Starting $SOCKET server" 1>&2; pen-e sd )
 
-            new_cmd="TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -a '' $client_ops -s ~/.emacs.d/server/$SOCKET $elispsh $CMD"
+            new_cmd="TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -a '' $client_ops -s $SOCKET $elispsh $CMD"
 
             exec 3>&1
             exec 4>&2

@@ -136,8 +136,8 @@ buffer."
           `(lm
             ;; ignore-errors here prevents this breaking, which was annoying. I couldn't open from ranger
             ;; pin mount.clj
-            ;; 'pen-emacsclient' '-s' '/root/.emacs.d/server/DEFAULT' '-a' '' '-t' -e "mount.clj"
-            ;; 'pen-emacsclient' '-s' '/root/.emacs.d/server/DEFAULT' '-a' '' '-t' -e "(ignore-errors (find-file \"mount.clj\"))"
+            ;; 'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t' -e "mount.clj"
+            ;; 'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t' -e "(ignore-errors (find-file \"mount.clj\"))"
             (ignore-errors
               (if (not (minor-mode-p org-src-mode))
                   (try
