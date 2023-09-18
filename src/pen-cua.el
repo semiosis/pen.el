@@ -23,8 +23,6 @@
 (defun pen-cua-scroll-down ()
   (interactive)
   (cond
-   ((major-mode-p 'minibuffer-mode)
-    (call-interactively 'ivy-scroll-up))
    ((minor-mode-p helm--minor-mode)
     (call-interactively 'helm-scroll-up))
    ((major-mode-p 'minibuffer-inactive-mode)
@@ -33,13 +31,14 @@
      (t (call-interactively 'ivy-scroll-up))))
    ((major-mode-p 'ranger-mode)
     (call-interactively 'ranger-half-page-up))
+   ;; keep this below helm
+   ((major-mode-p 'minibuffer-mode)
+    (call-interactively 'ivy-scroll-up))
    (t (call-interactively 'cua-scroll-down))))
 
 (defun pen-cua-scroll-up ()
   (interactive)
   (cond
-   ((major-mode-p 'minibuffer-mode)
-    (call-interactively 'ivy-scroll-down))
    ((minor-mode-p helm--minor-mode)
     (call-interactively 'helm-scroll-down))
    ((major-mode-p 'minibuffer-inactive-mode)
@@ -48,6 +47,9 @@
      (t (call-interactively 'ivy-scroll-down))))
    ((major-mode-p 'ranger-mode)
     (call-interactively 'ranger-half-page-down))
+   ;; keep this below helm
+   ((major-mode-p 'minibuffer-mode)
+    (call-interactively 'ivy-scroll-down))
    ;; (define-key selectrum-minibuffer-map (kbd "<next>") 'selectrum-next-page)
    ;; (define-key selectrum-minibuffer-map (kbd "<prior>") 'selectrum-previous-page)
    (t (call-interactively 'cua-scroll-up))))
