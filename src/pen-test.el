@@ -103,7 +103,7 @@
                      (cons (car pl) v)))))
     ;; (var (pen-yaml-test yaml-ht "filter"))
     ;; (var (ht-get yaml-ht "filter")))
-    ;; (pen-etv (json--encode-alist var))
+    ;; (pen-etv (json-encode-alist var))
     (pen-etv (pps var))))
 
 ;; (idefun add-5-to-x (x))

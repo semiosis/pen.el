@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+cd /root/.pen/documents
+cat english-kjv.txt | sed 's/[^a-zA-Ze]/\r\n/g' | dos2unix | sed '/^$/d' | sort | uniq | tr '[:upper:]' '[:lower:]' | sort | uniq | sed -n '/.../p' | pavs

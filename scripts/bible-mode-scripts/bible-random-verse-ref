@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+book="$(db-bible-book-list| sort -R | head -n 1)"
+chapter="$(( 1 + $RANDOM % "$(db-bible-book-max-chapter "$book")" ))"
+verse="$(( 1 + $RANDOM % "$(db-bible-book-chapter-max-verse "$book" "$chapter")" ))"
+
+echo "$book $chapter:$verse" | pavs

@@ -1,0 +1,53 @@
+#!/bin/bash
+export TTY
+
+# examples:
+# seq 1 100 | random +1
+# seq 1 10 | random
+# random 20
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    +1|-+1) {
+        PLUS_ONE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export PLUS_ONE
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    (
+    awk 1 | while IFS=$'\n' read -r line; do
+        0</dev/null random "$line"
+    done
+    ) | pa -E colvs
+    exit "$?"
+fi
+
+test "$#" -gt 0 || exit 1
+
+last_arg="${@: -1}"
+max="$last_arg"
+test -n "$max" || exit 1
+
+res="$(( $RANDOM % "$max" ))"
+
+if test "$PLUS_ONE" = "y"; then
+    res="$(( 1 + $res ))"
+fi
+
+echo "$res" | pavs

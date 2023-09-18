@@ -82,7 +82,7 @@
 
             ;; I still need to use pen-encode-string because of backticks
             ("PEN_STOP_SEQUENCES" . ,(pen-encode-string (json-encode-list final-stop-sequences) t))
-            ("PEN_VARS" . ,(pen-encode-string (json--encode-alist defs-and-vals-alist) t))
+            ("PEN_VARS" . ,(pen-encode-string (json-encode-alist defs-and-vals-alist) t))
 
             ;; TODO Force multiple prompts later
             ;; Also need multi-prompts to understand different prompt lengths for results
@@ -1223,7 +1223,7 @@
           (final-payloads
            (or
             (if final-payloads
-                (json--encode-alist final-payloads)
+                (json-encode-alist final-payloads)
               nil)
             ""))
 
