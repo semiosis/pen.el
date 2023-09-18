@@ -1546,3 +1546,5 @@ git config --global --add safe.directory '*'
 
 # emacs29
 e ia treesit-auto
+
+e ia gumshoe

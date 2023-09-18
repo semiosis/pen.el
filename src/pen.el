@@ -2159,6 +2159,7 @@ May use to generate code from comments."
 (require 'pen-evil)
 (load-library "pen-evil")
 
+(require 'pen-gumshoe)
 (require 'pen-func-lists)
 (require 'pen-right-click-menu)
 (require 'pen-mouse)
