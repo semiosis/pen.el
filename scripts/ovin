@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# Use this to create some text
+
+odn vipe "$@"

@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# ap- "fix-racket-doc-url | pen-xc -i" "$@"
+
+ap- "pen-xc -i" "$@"
