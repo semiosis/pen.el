@@ -45,6 +45,15 @@ It's really meant for key bindings and which-key, so they should all be interact
                      (pp body) t)))))
     `(defun ,slugsym () (interactive) ,@body)))
 
+;; emacs 29
+(defalias 'major-mode-p 'derived-mode-p)
+(defalias 'major-mode-enabled 'derived-mode-p)
+(defalias 'minor-mode-p 'bound-and-true-p)
+(defalias 'minor-mode-enabled 'bound-and-true-p)
+;; emacs29 has transient builtin now
+(defalias 'define-transient-command 'transient-define-prefix)
+(defalias 'define-infix-command 'transient-define-infix)
+
 ;; elpa
 ;; For string-empty-p
 (require 'subr-x)

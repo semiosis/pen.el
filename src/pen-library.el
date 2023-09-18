@@ -427,11 +427,6 @@ single-character strings, or a string of characters."
           (pen-filter
            (call-interactively 'pf-transform-code/3))))))))
 
-(defalias 'major-mode-p 'derived-mode-p)
-(defalias 'major-mode-enabled 'derived-mode-p)
-(defalias 'minor-mode-p 'bound-and-true-p)
-(defalias 'minor-mode-enabled 'bound-and-true-p)
-
 (defun pen-transform ()
   (interactive)
   ;; pen-mode-prose-or-code-p
