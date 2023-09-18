@@ -1562,7 +1562,7 @@ if ! test "$show_banner" = n; then
 
         *) {
             pen-banner.sh | cat
-            printf -- "%s" "[38;5;240m"
+            printf -- "%s" "[38;5;240m" # dgrey
             echo
             echo Version: ${pen_version}, License: GPL-3
             echo
