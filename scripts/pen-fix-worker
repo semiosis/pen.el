@@ -12,7 +12,7 @@ fi
 
 # This refreshes it after prompting
 # What a dirty hack.
-# tmux neww -d pen-x -sh "pen-emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -e UUU -c g -sl 0.2 -m : -s "(delete-frame)" -c m -i
+# tmux neww -d pen-x -sh "pen-emacsclient -t -a '' -s $SOCKET" -e UUU -c g -sl 0.2 -m : -s "(delete-frame)" -c m -i
 
 ID_FORMAT="#{session_id}:#{window_id}.#{pane_id}"
 
@@ -25,16 +25,16 @@ winname="prompt-$SOCKET-$(date +%s)"
 # SOCKET=pen-emacsd-5
 # sentinal_string="tm_sentinal_${RANDOM}_$$"
 # -x "tmux wait-for -S '$sentinal_string'"
-# pen-tm -te -S nw -d -n "prompt-$SOCKET" -fa pen-x -sh "set -xv; pen-emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 1 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -x "tmux wait-for -S '$sentinal_string'" -i
-pen-tm -te -S nw -d -n "prompt-$SOCKET" -fa pen-timeout 2 pen-x -sh "set -xv; pen-emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 1 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -i
+# pen-tm -te -S nw -d -n "prompt-$SOCKET" -fa pen-x -sh "set -xv; pen-emacsclient -t -a '' -s $SOCKET" -sl 1 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -x "tmux wait-for -S '$sentinal_string'" -i
+pen-tm -te -S nw -d -n "prompt-$SOCKET" -fa pen-timeout 2 pen-x -sh "set -xv; pen-emacsclient -t -a '' -s $SOCKET" -sl 1 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -i
 sleep 1
 # tmux wait-for "$sentinal_string"
 
-# pen-tm -te nw -d -n "prompt-$SOCKET" -fa pen-x -sh "set -xv; pen-emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.5 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -i
+# pen-tm -te nw -d -n "prompt-$SOCKET" -fa pen-x -sh "set -xv; pen-emacsclient -t -a '' -s $SOCKET" -sl 0.5 -c g -sl 0.5 -m : -sl 0.5 -s "(pen-kill-other-clients t)" -c m -i
 
-# pen-emacsclient -a '' -s $HOME/.emacs.d/server/$SOCKET -e "(pen-kill-other-clients t)"
+# pen-emacsclient -a '' -s $SOCKET -e "(pen-kill-other-clients t)"
 # sleep 0.5
-# pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "pen-emacsclient -t -a '' -s $HOME/.emacs.d/server/$SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(pen-kill-other-clients t)" -c m -i
+# pen-tm nw -n "prompt-$SOCKET" -fa pen-x -sh "pen-emacsclient -t -a '' -s $SOCKET" -sl 0.1 -c g -sl 1 -m : -s "(pen-kill-other-clients t)" -c m -i
 
 if ! unbuffer pen-e -D $SOCKET running; then
     cmd1 pen-x -sh "set -xv; pend $SOCKET" -sl 1 -c x -c c -i

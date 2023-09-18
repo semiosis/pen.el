@@ -241,9 +241,9 @@ fi
 
 runclient() {
     if test "$USE_NVC" = "y"; then
-        unbuffer in-tm -d -n pen nvc "${term_env_arr[@]}" pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
+        unbuffer in-tm -d -n pen nvc "${term_env_arr[@]}" pen-emacsclient -s $SOCKET "$@" & disown
     else
-        unbuffer in-tm -d -n pen "${term_env_arr[@]}" pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@" & disown
+        unbuffer in-tm -d -n pen "${term_env_arr[@]}" pen-emacsclient -s $SOCKET "$@" & disown
     fi
 }
 

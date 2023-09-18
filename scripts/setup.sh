@@ -180,7 +180,12 @@ dpkg -i "libtree-sitter-dev_0.20.8-2_amd64.deb"
     #    --with-native-compilation --with-tree-sitter --with-small-ja-dic \
     #    --with-gif --with-png --with-jpeg --with-rsvg --with-tiff \
     #    --with-imagemagick
+
+    # emacs-29
     ./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes --with-tree-sitter --with-small-ja-dic --with-gif --with-png --with-jpeg --with-rsvg --with-tiff --with-imagemagick
+
+    # emacs-28
+    ./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes --with-gif --with-png --with-jpeg --with-rsvg --with-tiff --with-imagemagick
     # make
     # Remove scripts from the path (because emacs will hang when it looks for
     # and finds cvs, and tries to run it.)
@@ -1525,3 +1530,11 @@ cargo install --git https://github.com/sxyazi/yazi.git
 
 # I really don't want numpy actually
 # pip install numpy
+
+# This solves some problems:
+git config --global --add safe.directory '*'
+# Such as:
+#  fatal: detected dubious ownership in repository at '/volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs'
+# To add an exception for this directory, call:
+# 
+#         git config --global --add safe.directory /volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs

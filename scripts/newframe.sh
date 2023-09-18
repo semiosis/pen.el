@@ -130,18 +130,18 @@ runclient() {
             last_arg="${@: -1}"
             test "$#" -gt 0 && set -- "${@:2:$(($#-2))}" # shift last 2 args
 
-            pen-x -sh "$(pen-nsfa in-tm nvc pen-emacsclient -s $HOME/.emacs.d/server/$SOCKET "$@")" -e "$marker" -m : -s "$last_arg" -c m -i
+            pen-x -sh "$(pen-nsfa in-tm nvc pen-emacsclient -s $SOCKET "$@")" -e "$marker" -m : -s "$last_arg" -c m -i
         else
-            in-tm nvc pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+            in-tm nvc pen-emacsclient -s $SOCKET "$@"
         fi
     else
         if test "$INTERACTIVE" = y; then
             last_arg="${@: -1}"
             test "$#" -gt 0 && set -- "${@:2:$(($#-2))}" # shift last 2 args
 
-            pen-x -sh "$(pen-nsfa in-tm pen-emacsclient -s $HOME/.emacs.d/server/$SOCKET "$@")" -e "$marker" -m : -s "$last_arg" -c m -i
+            pen-x -sh "$(pen-nsfa in-tm pen-emacsclient -s $SOCKET "$@")" -e "$marker" -m : -s "$last_arg" -c m -i
         else
-            in-tm pen-emacsclient -s ~/.emacs.d/server/$SOCKET "$@"
+            in-tm pen-emacsclient -s $SOCKET "$@"
         fi
     fi
 }
@@ -186,8 +186,8 @@ elif test "$#" -eq 1 && test -f "$1"; then
 fi
 
 # I don't want to open directly or killing the buffer will kill the frame
-# pen-emacsclient -s ~/.emacs.d/server/DEFAULT '-a' '' '-t' '/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans'
-# pen-emacsclient -s ~/.emacs.d/server/DEFAULT '-a' '' '-t' -e '(dired "/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans")'
+# pen-emacsclient -s DEFAULT '-a' '' '-t' '/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans'
+# pen-emacsclient -s DEFAULT '-a' '' '-t' -e '(dired "/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans")'
 
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
