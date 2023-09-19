@@ -1573,3 +1573,5 @@ cd "$(gc "https://github.com/erikgeiser/promptkit")"
 
 agi telnet
 agi zathura
+
+pip install synonym-cli

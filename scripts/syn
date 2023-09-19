@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f "/usr/local/bin/syn" || pyf "synonym-cli" &>/dev/null
+
+/usr/local/bin/syn "$@" | {
+    strip-ansi | 
+    strip-unicode |
+    sed 's/^\s*//' |
+    sed '/^$/d' |
+    sed '/thesaurus.com/d'
+} | pavs

@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# mypython -c "import sys,re,shanepy;[sys.stdout.write(shanepy.make_unicode(line).encode('ascii', 'ignore').decode()) for line in sys.stdin]"
+# python3.6 -c "import sys,re,shanepy;[sys.stdout.write(shanepy.make_unicode(line).encode('ascii', 'ignore').decode()) for line in sys.stdin]"
+python3.8 -c "import sys,re,shanepy;[sys.stdout.write(shanepy.make_unicode(line).encode('ascii', 'ignore').decode()) for line in sys.stdin]"

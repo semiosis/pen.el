@@ -24,6 +24,7 @@
   (json2yaml (json-encode-plist plist)))
 
 (define-key yaml-mode-map (kbd "C-c e") 'yaml-get-value-from-this-file)
+(define-key yaml-ts-mode-map (kbd "C-c e") 'yaml-get-value-from-this-file)
 
 (defun sh/yaml-get-value-from-this-file ()
   (interactive)
@@ -39,7 +40,8 @@
 
 (defun yaml-get-value-from-this-file ()
   (interactive)
-  (if (and (major-mode-p 'yaml-mode)
+  (if (and (or (major-mode-p 'yaml-mode)
+               (major-mode-p 'yaml-ts-mode))
            ;; (f-file-p (buffer-file-name))
            )
       (let ((key (fz (pen-sn "yq . | jq-showschema-keys" (buffer-string))

@@ -37,6 +37,7 @@
    'lsp-yaml-download-schema-store-db
    (df yaml-multiline-chrome (chrome "https://yaml-multiline.info/"))
    (dff (chrome "https://lzone.de/cheat-sheet/YAML"))))
+(defset yaml-ts-mode-funcs yaml-mode-funcs)
 (defset dired-mode-funcs '(tramp-mount-sshfs
                            dired-find-alternate-file
                            dired-narrow
