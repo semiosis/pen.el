@@ -166,6 +166,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-buttons)
 (if (inside-docker-p)
     (require 'pen-tree-sitter))
+(require 'pen-func-lists)
 (require 'pen-prompt-function-library)
 (require 'pen-docs)
 (require 'pen-common)
@@ -2162,7 +2163,6 @@ May use to generate code from comments."
 (load-library "pen-evil")
 
 (require 'pen-gumshoe)
-(require 'pen-func-lists)
 (require 'pen-right-click-menu)
 (require 'pen-mouse)
 (require 'pen-xt-mouse)
