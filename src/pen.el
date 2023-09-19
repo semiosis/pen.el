@@ -2252,10 +2252,13 @@ May use to generate code from comments."
 (require 'pen-clojure)
 (require 'pen-racket)
 (require 'pen-haskell)
-
 (require 'pen-browser)
-(require 'pen-chatgpt)
-(load-library "pen-chatgpt")
+
+(if (inside-docker-p)
+    (progn
+      (require 'pen-chatgpt)
+      (load-library "pen-chatgpt"))
+
 (require 'pen-custom-conf)
 
 (if (inside-docker-p)
