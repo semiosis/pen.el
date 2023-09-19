@@ -120,4 +120,7 @@ point determined by `mouse-select-region-move-to-beginning'."
 
 (advice-add 'mouse-drag-region :around #'ignore-errors-around-advice)
 
+;; mouse hover over just left of the line numbers - the left edge of the screen
+(define-key global-map (kbd "<left-margin> <mouse-movement>") 'ignore)
+
 (provide 'pen-mouse)
