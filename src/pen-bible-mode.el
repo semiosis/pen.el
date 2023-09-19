@@ -764,9 +764,13 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
              (not (stringp subnode))
              (or bible-mode-word-study-enabled
                  (member (dom-attr subnode 'savlm)
-                         bible-strongs-always-show-xmllist))) ;;word study. Must be done after subnode is inserted recursively.
+                         bible-strongs-always-show-xmllist)
+                 ))
+            ;; (plist-get iproperties 'jesus)
+            ;; (plist-get iproperties 'divinename)
+            
+            ;;word study. Must be done after subnode is inserted recursively.
 
-            ;; This code is awful...
             (let* (
                    (savlm (dom-attr subnode 'savlm))
               
