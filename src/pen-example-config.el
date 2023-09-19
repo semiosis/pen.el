@@ -66,11 +66,11 @@
 (require 'pen)
 (pen 1)
 
-(let ((d "/root/dump/ubolonton/emacs-tree-sitter/lisp"))
-  (if (f-directory-p d)
-      (progn
-        (add-to-list 'load-path d)
-        (require 'tree-sitter))))
+;; (let ((d "/root/dump/ubolonton/emacs-tree-sitter/lisp"))
+;;   (if (f-directory-p d)
+;;       (progn
+;;         (add-to-list 'load-path d)
+;;         (require 'tree-sitter))))
 
 ;; Camille-complete (because I press SPC to replace)
 (defalias 'camille-complete 'pen-run-prompt-function)

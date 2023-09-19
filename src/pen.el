@@ -164,7 +164,8 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-demos)
 (require 'pen-command-log)
 (require 'pen-buttons)
-(pen-require 'pen-tree-sitter)
+(if (inside-docker-p)
+    (require 'pen-tree-sitter))
 (require 'pen-prompt-function-library)
 (require 'pen-docs)
 (require 'pen-common)
@@ -259,7 +260,8 @@ Be mindful of quoting arguments correctly."
 (require 'pen-counsel)
 (require 'pen-selectrum)
 (require 'pen-marginalia)
-(require 'pen-sqlite)
+(if (inside-docker-p)
+    (require 'pen-sqlite))
 
 ;; breaks emacs 29
 ;; (require 'pen-emacsql)

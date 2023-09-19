@@ -1,4 +1,5 @@
-(require 'sqlite-mode)
+;; Can't require sqlite here or it will break bible-mode on the host
+;; (require 'sqlite-mode)
 
 ;; This is a new variable, nonexistent in the original package
 (defcustom default-bible-mode-book-module
