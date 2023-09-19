@@ -6,6 +6,16 @@
 
 (uk grep-mode-map "g")
 
+
+;; Used in fz, ivy, helm,
+(defun default-search-string ()
+  (if (pen-selected-p)
+      (pen-selection)
+    (if (or (major-mode-p 'dired-mode)
+            (major-mode-p 'ranger-mode))
+        nil
+      (pen-thing-at-point))))
+
 (cl-defun pen-counsel-ag (&optional initsearch extra-args prompt &key histvar &key basecmd)
   (interactive)
 
