@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+# # Compile the app
+# go install github.com/gabe565/ascii-movie@latest
+# 
+# # Run the app in your terminal
+# ascii-movie play
+# 
+# # Or run it as a server
+# ascii-movie serve
+
+# Now, run `ssh localhost` or `telnet localhost` to watch the movie!
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# github author/repo may need adjustment
+test -f "${GOPATH%%:*}/bin/up" || go install github.com/gabe565/ascii-movie@latest &>/dev/null
+
+${GOPATH%%:*}/bin/ascii-movie "$@"

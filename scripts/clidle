@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# github author/repo may need adjustment
+test -f "${GOPATH%%:*}/bin/up" || go install github.com/ajeetdsouza/clidle@latest &>/dev/null
+
+${GOPATH%%:*}/bin/clidle "$@"

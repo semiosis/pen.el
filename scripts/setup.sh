@@ -246,12 +246,12 @@ agi libhtml-html5-parser-perl
 agi libhtml-html5-entities-perl
 )
 
-# wget "https://golang.org/dl/go1.17.linux-amd64.tar.gz"
+# https://go.dev/doc/install
 (
 cd
 apt install wget
-wget "https://go.dev/dl/go1.19.1.linux-amd64.tar.gz"
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.1.linux-amd64.tar.gz
+wget "https://go.dev/dl/go1.21.1.linux-amd64.tar.gz"
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz
 )
 
 (
@@ -1548,3 +1548,21 @@ git config --global --add safe.directory '*'
 e ia treesit-auto
 
 e ia gumshoe
+
+# I should collect TUI tools because they could be useful
+# for drawing ideas from to create widgets myself.
+go install github.com/maaslalani/typer@latest
+
+(
+gc "https://github.com/gabe565/ascii-movie"
+
+go install github.com/gabe565/ascii-movie@latest
+)
+
+# wordle
+go install github.com/ajeetdsouza/clidle@latest
+
+# For json
+go install github.com/antonmedv/fx@latest
+# https://manpages.debian.org/bookworm/gron/gron.1.en.html#BASIC_USAGE
+agi gron

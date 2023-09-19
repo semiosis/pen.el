@@ -3,4 +3,40 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-sqlite3 $DUMP$NOTES/databases/kjv.db 'select distinct (book) from bible order by rowid' | pavs
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -ot) {
+        subset=ot
+        shift
+        shift
+    }
+    ;;
+
+    -nt) {
+        subset=nt
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+{
+case "$subset" in
+    ot) {
+        sqlite3 $DUMP$NOTES/databases/kjv.db 'select distinct (book) from bible order by rowid limit 39'
+    }
+    ;;
+
+    nt) {
+        sqlite3 $DUMP$NOTES/databases/kjv.db 'select distinct (book) from bible where rowid >= 40 order by rowid'
+    }
+    ;;
+
+    *) {
+        sqlite3 $DUMP$NOTES/databases/kjv.db 'select distinct (book) from bible order by rowid'
+    }
+    ;;
+esac
+} | pavs
