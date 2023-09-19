@@ -2257,7 +2257,7 @@ May use to generate code from comments."
 (if (inside-docker-p)
     (progn
       (require 'pen-chatgpt)
-      (load-library "pen-chatgpt"))
+      (load-library "pen-chatgpt")))
 
 (require 'pen-custom-conf)
 
