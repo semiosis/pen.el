@@ -1566,3 +1566,9 @@ go install github.com/ajeetdsouza/clidle@latest
 go install github.com/antonmedv/fx@latest
 # https://manpages.debian.org/bookworm/gron/gron.1.en.html#BASIC_USAGE
 agi gron
+
+(
+cd "$(gc "https://github.com/erikgeiser/promptkit")"
+)
+
+agi telnet
