@@ -164,7 +164,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-demos)
 (require 'pen-command-log)
 (require 'pen-buttons)
-(require 'pen-tree-sitter)
+(pen-require 'pen-tree-sitter)
 (require 'pen-prompt-function-library)
 (require 'pen-docs)
 (require 'pen-common)

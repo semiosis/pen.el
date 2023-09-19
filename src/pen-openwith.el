@@ -1,5 +1,4 @@
 (require 'openwith)
-
 (setq openwith-associations '(
                               ("\\.mp4\\'" "pen-sps pen-win vp" (file))
                               ("\\.webm\\'" "pen-sps pen-win vp" (file))

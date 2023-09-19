@@ -34,6 +34,10 @@ export PATH="$PATH:/root/.cargo/bin/cargo"
 export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 export PATH="$PATH:$(find "$SCRIPTS" -maxdepth 1 -mindepth 1 -type d | sed -z "s~\n~:~g" | sed "s/:\$//")"
 
+# For the host:
+# export PATH="$PATH:$(find "$SCRIPTS" -maxdepth 1 -mindepth 1 -type d | grep -v '/\.git' | sed -z "s~\n~:~g" | sed "s/:\$//")"
+# export PATH="$PATH:$(find "$PENEL_DIR/scripts" -maxdepth 1 -mindepth 1 -type d | grep -v '/\.git' | grep -v /container/ | sed -z "s~\n~:~g" | sed "s/:\$//")"
+
 if ! test -n "$PEN_WORKER"; then
     . ~/.cargo/env
 fi

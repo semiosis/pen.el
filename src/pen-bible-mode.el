@@ -763,48 +763,50 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
              (or bible-mode-word-study-enabled
                  (member (dom-attr subnode 'savlm)
                          bible-strongs-always-show-xmllist))) ;;word study. Must be done after subnode is inserted recursively.
+
+            ;; This code is awful...
             (let* (
                    (savlm (dom-attr subnode 'savlm))
-                   (match 0)
-                   (matchstrlen 0)
+              
                    (iter 0)
                    floating
                    refstart
                    refend)
               (if savlm
+                  ;; code
                   (progn
-                    ;; (lo savlm)
-                    ;; 0 is still truthy, so the thing will run
-                    (while match ;;Greek
-                      (if (> match 0)
-                          (let* ((strongs_code (match-string 0 savlm))
-                                 (strongs_word (bible-term-get-word strongs_code))
-                                 (strongs_anno
-                                  (if strongs_word
-                                      (concat strongs_code "-" strongs_word)
-                                    strongs_code))
-                                 (strongs_len (length strongs_anno))
-                                 (strongs_code_len (length strongs_code))
-                                 (strongs_word_len (length strongs_word)))
+                    ;; Greek, hebrew and lemma are independant of each other
+
+                    (let (
+                          ;; used by greek only
+                          (match 0)
+                          (matchstrlen 0))
+                      ;; (lo savlm)
+                      ;; 0 is still truthy, so the thing will run
+                      (while match ;;Greek
+                        (if (> match 0)
+                            (let* ((strongs_code (match-string 0 savlm))
+                                   (strongs_word (bible-term-get-word strongs_code))
+                                   (strongs_anno
+                                    (if strongs_word
+                                        (concat strongs_code "-" strongs_word)
+                                      strongs_code))
+                                   (strongs_len (length strongs_anno))
+                                   (strongs_code_len (length strongs_code))
+                                   (strongs_word_len (length strongs_word)))
                               (progn
-                                (setq floating (or (> matchstrlen 0) (string-empty-p (dom-text subnode)))
-                                      matchstrlen strongs_code_len)
-                                (insert (if floating " " "")
-                                        (concat strongs_code " " strongs_word))
+                                (setq matchstrlen strongs_code_len)
+                                (insert (concat strongs_code " " strongs_word))
 
                                 (let ((refstart (- (point)
-                                                    strongs_len))
+                                                   strongs_len))
                                       (refend (+ (- (point)
                                                     strongs_len)
                                                  strongs_code_len)))
                                   (put-text-property refstart refend 'font-lock-face `(
-                                                                                       :foreground "#77ffff"
-                                                                                       ;; :height ,(if (not floating) 0.7)
-                                                                                                   ))
-                                  (put-text-property refstart refend 'keymap bible-mode-greek-keymap)
-                                  ;; (if (not floating)
-                                  ;;     (put-text-property refstart refend 'display '(raise 0.6)))
-                                  )
+                                                                                       ;; bright cyan - codes
+                                                                                       :foreground "#77ffff"))
+                                  (put-text-property refstart refend 'keymap bible-mode-greek-keymap))
                                 (let ((refstart (- (point)
                                                    strongs_word_len
                                                    ;; matchstrlen
@@ -813,38 +815,36 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                   (if (member (str2sym strongs_code)
                                               bible-strongs-always-show-codelist)
                                       (put-text-property refstart refend 'font-lock-face `(
-                                                                                           :foreground "#7777ff"
-                                                                                           ;; :height ,(if (not floating) 0.7)
-                                                                                                       ))
+                                                                                           ;; light blue - always show greek words
+                                                                                           :foreground "#7777ff"))
                                     (put-text-property refstart refend 'font-lock-face `(
-                                                                                         :foreground "#d2268b"
-                                                                                                     ;; :height ,(if (not floating) 0.7)
-                                                                                                     )))
-                                  ;; (if (not floating)
-                                  ;;     (put-text-property refstart refend 'display '(raise 0.6)))
-                                  ))))
-                      (setq match (string-match "G[0-9]+" savlm (+ match matchstrlen))))
+                                                                                         ;; pink - greek words
+                                                                                         :foreground "#d2268b")))))))
+                        (setq match (string-match "[GH][0-9]+" savlm (+ match matchstrlen)))))
 
                     (if (string-match "lemma.TR:.*" savlm) ;;Lemma
-                        (dolist (word (split-string (match-string 0 savlm) " "))
-                          (setq word (replace-regexp-in-string "[.:a-zA-Z0-9]+" "" word))
-                          (insert " " word)
-                          (setq refstart (- (point) (length word))
-                                refend (point))
-                          (put-text-property refstart refend 'font-lock-face `(:foreground "cyan"))
-                          (put-text-property refstart refend 'keymap bible-mode-lemma-keymap)))
+                        (let* ((strongs_code (match-string 0 savlm))
+                               (strongs_word (bible-term-get-word strongs_code)))
+                          (dolist (word (split-string strongs_code " "))
+                            (setq word (replace-regexp-in-string "[.:a-zA-Z0-9]+" "" word))
+                            (insert " " word)
+                            (setq refstart (- (point) (length word))
+                                  refend (point))
+                            (put-text-property refstart refend 'font-lock-face `(:foreground "cyan"))
+                            (put-text-property refstart refend 'keymap bible-mode-lemma-keymap))))
 
-                    (if (string-match "strong:H.*" savlm) ;;Hebrew
-                        (dolist (word (split-string (match-string 0 savlm) " "))
-                          (setq iter (+ iter 1))
-                          (setq word (replace-regexp-in-string "strong:" "" word))
-                          (insert (if (eq iter 1) "" " ") word)
-                          (setq refstart (- (point) (length word))
-                                refend (point))
-                          (put-text-property refstart refend 'font-lock-face `(
-                                                                               :foreground "cyan"
-                                                                               :height ,(if (eq iter 1) 0.7)))
-                          (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))))))))))
+                    (ignore
+                     (if (string-match "strong:H.*" savlm) ;;Hebrew
+                         (let* ((strongs_code (match-string 0 savlm))
+                                (strongs_word (bible-term-get-word strongs_code)))
+                           (dolist (word (split-string strongs_code " "))
+                             (setq iter (+ iter 1))
+                             (setq word (replace-regexp-in-string "strong:" "" word))
+                             (insert (if (eq iter 1) "" " ") word)
+                             (setq refstart (- (point) (length word))
+                                   refend (point))
+                             (put-text-property refstart refend 'font-lock-face `(:foreground "cyan"))
+                             (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))))))))))))
 
   (if (equal (dom-tag node) 'title) ;;newline at end of title (i.e. those in Psalms)
       (insert "\n"))
