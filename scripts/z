@@ -1,0 +1,73 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
+
+set -m
+
+# All things opening documents that don't do well in the terminal. pdfs
+
+page_number=
+z_opts=
+DISOWN=n
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -P|-p) {
+        page_number="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -d)
+        DISOWN=y
+        shift
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(
+for (( i = 1; i < $#; i++ )); do
+    eval ARG=\${$i}
+    printf -- "%s" "$ARG" | qne
+    printf ' '
+done
+eval ARG=\${$i}
+printf -- "%s" "$ARG" | qne
+)"
+
+if tt "$CMD" -fz "Source Code Retrieval"; then
+    if [ -n "$page_number" ]; then
+        page_number="$((page_number + 12))"
+    fi
+fi
+
+if tt "$CMD" -fz "Rojas"; then
+    if [ -n "$page_number" ]; then
+        page_number="$((page_number + 9 ))"
+    fi
+fi
+
+if [ -n "$page_number" ]; then
+    z_opts+=" -P $page_number "
+fi
+
+if ! [ -f "$CMD" ] && ! pcre-test "^http.*arxiv.*/pdf" "$CMD"; then
+    ns "file not found"
+    exit 0
+fi
+
+# echo "$CMD"
+# exit 0
+
+cmd="zathura $z_opts \"$CMD\""
+
+if test "$DISOWN" = "y"; then
+    exec &>/dev/null
+    eval "$cmd" & disown
+else
+    echo "$cmd" 1>&2
+
+    exec &>/dev/null
+    eval "$cmd"
+fi

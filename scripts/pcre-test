@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+pattern="$1"
+shift
+
+apply "grep -q -P $(cmd-nice "$pattern")" "$@"
