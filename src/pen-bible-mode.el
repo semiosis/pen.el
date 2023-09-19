@@ -42,7 +42,8 @@
      G5485 G5547 G5571 G5578 G5583 G5590 G3614 G4160
      G2570 G4550 G3551 G727 G154 G1097 G5429 G4160 G1857 G4655
      G1342
-     H1 H410 H430 H1121 H4687 H5921 H6440 H6942 H8034 H8130 H8544)))
+     H1 H410 H3068 H430 H1121 H4687 H5921 H6440 H6942
+     H8034 H8130 H8544)))
 
 (comment
  (defset bible-strongs-always-show-code-tuples
@@ -834,7 +835,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                             (put-text-property refstart refend 'font-lock-face `(:foreground "cyan"))
                             (put-text-property refstart refend 'keymap bible-mode-lemma-keymap))))
 
-                    (ignore
+                    (comment
                      (if (string-match "strong:H.*" savlm) ;;Hebrew
                          (let* ((strongs_code (match-string 0 savlm))
                                 (strongs_word (bible-term-get-word strongs_code)))
