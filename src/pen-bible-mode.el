@@ -808,7 +808,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                   (put-text-property refstart refend 'font-lock-face `(
                                                                                        ;; bright cyan - codes
                                                                                        :foreground "#77ffff"))
-                                  (put-text-property refstart refend 'keymap bible-mode-greek-keymap))
+                                  (cond ((re-match-p "^G" strongs_code)
+                                         (put-text-property refstart refend 'keymap bible-mode-greek-keymap))
+                                        ((re-match-p "^H" strongs_code)
+                                         (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))
+                                        (t
+                                         nil)))
                                 (let ((refstart (- (point)
                                                    strongs_word_len
                                                    ;; matchstrlen
