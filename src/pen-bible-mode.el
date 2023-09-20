@@ -763,12 +763,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (if (and
              (not (stringp subnode))
              (or bible-mode-word-study-enabled
-                 (or (member (dom-attr subnode 'savlm)
-                             bible-strongs-always-show-xmllist)
-                     ;; 'divinename
-                     (member (replace-regexp-in-string "strong:" ""
-                                                       (str (dom-attr subnode 'savlm)))
-                             bible-strongs-always-show-xmllist))))
+                 (member (dom-attr subnode 'savlm)
+                         bible-strongs-always-show-xmllist)))
             ;; (plist-get iproperties 'jesus)
             ;; (plist-get iproperties 'divinename)
             
