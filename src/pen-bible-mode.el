@@ -763,9 +763,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (if (and
              (not (stringp subnode))
              (or bible-mode-word-study-enabled
-                 (member (dom-attr subnode 'savlm)
-                         bible-strongs-always-show-xmllist)
-                 ))
+                 (or (member (dom-attr subnode 'savlm)
+                             bible-strongs-always-show-xmllist)
+                     ;; 'divinename
+                     (member (replace-regexp-in-string "strong:" ""
+                                                       (str (dom-attr subnode 'savlm)))
+                             bible-strongs-always-show-xmllist))))
             ;; (plist-get iproperties 'jesus)
             ;; (plist-get iproperties 'divinename)
             
@@ -855,7 +858,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                              (setq refstart (- (point) (length word))
                                    refend (point))
                              (put-text-property refstart refend 'font-lock-face `(:foreground "cyan"))
-                             (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))))))))))))
+                             (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))))))))
+          (insert )))))
 
   (if (equal (dom-tag node) 'title) ;;newline at end of title (i.e. those in Psalms)
       (insert "\n"))
