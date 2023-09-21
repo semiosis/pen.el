@@ -140,4 +140,7 @@ bindings="$(p "$bindings" | sed 's/.$//')"
 
 opts+=" --bind=$(cmd-nice-posix "$bindings") "
 
-eval "/usr/bin/fzf --algo=v2 $opts $CMD"
+test -f "/usr/bin/fzf" && : "${bin:="/usr/bin/fzf"}"
+test -f "/home/shane/local/bin/fzf" && : "${bin:="/home/shane/local/bin/fzf"}"
+
+eval "$bin --algo=v2 $opts $CMD"
