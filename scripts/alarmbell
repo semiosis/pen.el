@@ -16,6 +16,9 @@ esac; done
 
 # sps vlc -l "$@"
 
+exec 1> >(lolcat -f)
+exec 2> >(lolcat -f)
+
 if test "$once" = "y"; then
     mplayer "$@"
 else
