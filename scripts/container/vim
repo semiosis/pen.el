@@ -16,7 +16,7 @@ stdin_exists() {
 if stdin_exists; then
     IFS= read -rd '' contents < <(cat);typeset -p contents &>/dev/null
     if test -n "$contents"; then
-        printf -- "%s" "$contents" | /usr/local/bin/vim "$@"
+        printf -- "%s" "$contents" | /usr/bin/vim "$@"
     fi
 else
     /usr/bin/vim "$@"
