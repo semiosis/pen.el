@@ -31,7 +31,7 @@ This is useful for code-understanding when reading languages you don't understan
   "Also query for the probabilities, when prompting"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 ;; This should not even be expensive because it should be going via a p2p network
@@ -39,56 +39,56 @@ This is useful for code-understanding when reading languages you don't understan
   "Describe images"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-eww-text-only t
   "eww text mode only"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-force-strip-unicode t
   "Strip unicode from input"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-cost-efficient t
   "Avoid spending money"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-avoid-divulging t
   "Avoid divulging information"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-debug nil
   "When debug is on, try is disabled, and all errors throw an exception"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-use-human-engine-if-disconnected t
   "If on, resort to the Human engine when disconnected from the internet"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-sh-update nil
   "Export UPDATE=y when executing sn and such"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defun pen-get-hostname ()
@@ -109,14 +109,14 @@ This is useful for code-understanding when reading languages you don't understan
   "Only use libre engines"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-term-cl-refresh-after-fz nil
   "While in term, send a C-l just after selecting for insertion"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 
 (defcustom pen-default-lm-command "openai-complete.sh"
@@ -406,7 +406,7 @@ to switch between two values."
 
 (defset custom-variable-menu
   `(("Set for Current Session" custom-variable-set
-     (λ (widget)
+     (lambda (widget)
        (eq (widget-get widget :custom-state) 'modified)))
     ;; Note that in all the backquoted code in this file, we test
     ;; init-file-user rather than user-init-file.  This is in case
@@ -415,44 +415,44 @@ to switch between two values."
     ;; https://lists.gnu.org/r/emacs-devel/2007-10/msg00310.html
     ,@(when (or custom-file init-file-user)
 	      '(("Save for Future Sessions" custom-variable-save
-	         (λ (widget)
+	         (lambda (widget)
 	           (memq (widget-get widget :custom-state)
 		               '(modified set changed rogue))))))
     ("Undo Edits" custom-redraw
-     (λ (widget)
+     (lambda (widget)
        (and (default-boundp (widget-value widget))
 	          (memq (widget-get widget :custom-state) '(modified changed)))))
     ("Revert This Session's Customization" custom-variable-reset-saved
-     (λ (widget)
+     (lambda (widget)
        (memq (widget-get widget :custom-state)
 	           '(modified set changed rogue))))
     ,@(when (or custom-file init-file-user)
 	      '(("Erase Customization" custom-variable-reset-standard
-	         (λ (widget)
+	         (lambda (widget)
 	           (and (get (widget-value widget) 'standard-value)
 		              (memq (widget-get widget :custom-state)
 			                  '(modified set changed saved rogue)))))))
     ("Set to Backup Value" custom-variable-reset-backup
-     (λ (widget)
+     (lambda (widget)
        (get (widget-value widget) 'backup-value)))
     ;; ("Select from Options"
     ;;  ;; this runs when you select the option
     ;;  custom-variable-select-option
-    ;;  (λ (widget)
+    ;;  (lambda (widget)
     ;;    ;; this runs when you click the button
     ;;    ;; (btv widget)
     ;;    (get (widget-value widget) 'backup-value)))
     ;; ("Select from Options" custom-variable-edit
-    ;;  (λ (widget)
+    ;;  (lambda (widget)
     ;;    (eq (widget-get widget :custom-form) 'lisp)))
     ("---" ignore ignore)
     ("Add Comment" custom-comment-show custom-comment-invisible-p)
     ("---" ignore ignore)
     ("Show Current Value" custom-variable-edit
-     (λ (widget)
+     (lambda (widget)
        (eq (widget-get widget :custom-form) 'lisp)))
     ("Show Saved Lisp Expression" custom-variable-edit-lisp
-     (λ (widget)
+     (lambda (widget)
        (eq (widget-get widget :custom-form) 'edit))))
   "Alist of actions for the `custom-variable' widget.
 Each entry has the form (NAME ACTION FILTER) where NAME is the name of

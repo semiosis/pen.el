@@ -1,6 +1,26 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -once) {
+        once=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # (alarm-clock-set "1:34" "Shower and go to Anak")
 
-sps vlc -l "$@"
+# sps vlc -l "$@"
+
+if test "$once" = "y"; then
+    mplayer "$@"
+else
+    while :; do
+        mplayer "$@"
+        sleep 5
+    done
+fi

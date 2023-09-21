@@ -2249,6 +2249,7 @@ May use to generate code from comments."
 (require 'pen-media)
 (require 'pen-rhizome)
 (require 'pen-net)
+(require 'pen-alarm)
 (require 'pen-clojure)
 (require 'pen-racket)
 (require 'pen-haskell)
