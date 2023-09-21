@@ -30,7 +30,7 @@
   
   (let* ((db
           (sqlite-open "/root/repos/aaronjohnsabu1999/bible-databases/DB/NASBBible_Database.db"))
-         (refs (sqlite-select db "select `To Verse` from refstable where `From Verse` = \"Jer.10.14\" and `Votes` > 0 order by cast(`Votes` as unsigned) desc") ))
+         (refs (sqlite-select db "select * from bible where verse LIKE \"%Jesus%\"") ))
 
     (etv refs 'emacs-lisp-mode)
 
