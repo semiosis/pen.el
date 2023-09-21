@@ -76,10 +76,8 @@ and 'mpg123' in linux"
   ;; (alarm-clock-set "11:23pm" "Wake up!")
   )
 
-(defun pen-show-alarm-clock-list ()
-  (interactive)
-  (call-interactively 'alarm-clock-list-view))
-
+;; interactive
+(defalias 'pen-show-alarm-clock-list 'alarm-clock-list-view)
 (defalias 'pen-test-alarm-bell 'alarm-clock--ding)
 
 (provide 'pen-alarm)
