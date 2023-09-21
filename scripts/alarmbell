@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# (alarm-clock-set "1:34" "Shower and go to Anak")
+
+sps vlc -l "$@"
