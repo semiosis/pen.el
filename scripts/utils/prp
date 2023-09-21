@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+thing="$1"
+
+# This is not the best way to prepend
+sed "s~^~$thing~"
