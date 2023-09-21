@@ -71,7 +71,7 @@ and 'mpg123' in linux"
 (defun pen-test-alarm-clock ()
   (interactive)
   ;; (alarm-clock-set "08:23am" "Wake up!")
-  (alarm-clock-set "02:16am" "Wake up!")
+  (alarm-clock-set "02:17am" "Wake up!")
   ;; (alarm-clock-set "11:23pm" "Wake up!")
   )
 
