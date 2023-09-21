@@ -20,9 +20,11 @@ exec 1> >(lolcat -f)
 exec 2> >(lolcat -f)
 
 if test "$once" = "y"; then
+    echo "WAKE UP!!" | toilet
     mplayer "$@"
 else
     while :; do
+        echo "WAKE UP!!" | toilet
         mplayer "$@"
         sleep 5
     done

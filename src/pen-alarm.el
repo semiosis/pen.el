@@ -66,7 +66,7 @@ and 'mpg123' in linux"
                                       nil nil alarm-min)
                      (completing-read "am/pm: " (list "am" "pm")
                                       nil nil alarm-ampm)))
-  (alarm-clock-set (concat alarm-hour ":" (time-preceeding-zero alarm-min) alarm-ampm) "Wake up!"))
+  (alarm-clock-set (concat hour ":" (time-preceeding-zero min) ampm) "Wake up!"))
 
 (defun pen-test-alarm-clock ()
   (interactive)
