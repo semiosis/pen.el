@@ -38,6 +38,7 @@
 ;; sps vlc -l "$@"
 
 (defun alarm-clock--ding ()
+  (interactive)
   "Play ding.
 In osx operating system, 'afplay' will be used to play sound,
 and 'mpg123' in linux"
@@ -78,5 +79,7 @@ and 'mpg123' in linux"
 (defun pen-show-alarm-clock-list ()
   (interactive)
   (call-interactively 'alarm-clock-list-view))
+
+(defalias 'pen-test-alarm-bell 'alarm-clock--ding)
 
 (provide 'pen-alarm)
