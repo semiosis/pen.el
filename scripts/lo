@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+tmux neww -n lo vs +G /tmp/lo.txt

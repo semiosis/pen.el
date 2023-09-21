@@ -9,7 +9,7 @@
   (append-string-to-file (concat
                           (pps o)
                           "\n")
-                         "/tmp/yo.txt")
+                         "/tmp/lo.txt")
   o)
 
 ;; In default mode, each numeric parameter of XTerm's mouse report is
