@@ -5,4 +5,5 @@ export TTY
 
 # pip install --upgrade --force-reinstall "$@"
 # pip3 install --upgrade --force-reinstall "$@"
-pip3.8 install --upgrade --force-reinstall "$@"
+# pip3.8 install --upgrade --force-reinstall "$@"
+pipx install "$@"

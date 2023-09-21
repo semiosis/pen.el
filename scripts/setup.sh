@@ -1575,3 +1575,7 @@ agi telnet
 agi zathura
 
 pip install synonym-cli
+
+pip install pipx
+pipx install harlequin
+pip3.10 install seagoat
