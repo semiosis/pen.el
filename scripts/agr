@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# This will only work when apt is not in a bad state
+# sudo apt remove "$@"
+
+# This works more often
+sudo dpkg -P "$@"
+
+# If nothing works, do this:
+# sudo rm -rf /var/lib/dpkg/info/libapache2-mod-dnssd.*
+# sudo rm -rf /var/lib/dpkg/info/$1.*

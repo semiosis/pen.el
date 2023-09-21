@@ -1,5 +1,19 @@
 (require 'sqlite-mode)
 
+(defun sqlite-open-refs ()
+  (interactive)
+  (mu
+   (sqlite-mode-open-file "$PEN/refs.db")))
+
+(defun sqlite-open-nasb ()
+  (interactive)
+  (mu
+   (sqlite-mode-open-file "$HOME/repos/aaronjohnsabu1999/bible-databases/DB/NASBBible_Database.db")))
+
+(defun sqlite-open-kjv ()
+  (interactive)
+  (sqlite-mode-open-file "/root/dump/root/notes/databases/kjv.db"))
+
 (defun sqlite-test-cross-refs ()
   (interactive)
   

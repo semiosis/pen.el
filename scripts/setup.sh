@@ -282,6 +282,7 @@ apt install bc
 
 curl -L http://cpanmin.us | perl - App::cpanminus
 cpanm --force String::Escape
+plf String::Escape
 cpanm String::Scanf
 cpanm List::Gen
 cpanm Graph::Easy

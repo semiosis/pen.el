@@ -188,6 +188,7 @@
             ("*slime-description*" :select nil :same nil)
             (slime-repl-mode :select nil :same nil)
             ("*Proced*" :select t :same t)
+            ("\\*SQLite .*" :regexp t :select t :same t)
             ("\\*edbi.*" :regexp t :select t :same t)
             ("\\*jenkins.*" :regexp t :select t :same t)
             ;; ("*Help*"  :select nil :align pen--shackle-sensible-alignment)
