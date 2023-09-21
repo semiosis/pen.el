@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+phrase="$@"
+test -n "$phrase" || exit 1
+
+elinks-dump "https://maoridictionary.co.nz/search?idiom=&phrase=&proverb=&loan=&histLoanWords=&keywords=$phrase" | {
+    sed '1,/^Audio/d' |
+    sed '/3rd Edition/,$d'
+} | pavs
