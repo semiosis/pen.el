@@ -37,8 +37,8 @@
 ;; #!/bin/bash
 ;; sps vlc -l "$@"
 
-(defun alarm-clock--ding ()
-  (interactive)
+(defun alarm-clock--ding (&optional message)
+  (interactive (list (read-string-hist "message: " "Wake up!!")))
   "Play ding.
 In osx operating system, 'afplay' will be used to play sound,
 and 'mpg123' in linux"
@@ -60,6 +60,14 @@ and 'mpg123' in linux"
 ;; timezone must be correctly set
 (setenv "TZ" "UTC+12")
 
+(defun alarm-clock--notify (title message)
+  "Notify in status bar with formatted TITLE and MESSAGE."
+  (when alarm-clock-play-sound
+    (alarm-clock--ding message))
+  (when alarm-clock-system-notify
+    (alarm-clock--system-notify title message))
+  (message (format "[%s] - %s" title message)))
+
 (defun pen-alarm-set (hour min ampm)
   (interactive (list (completing-read "hour: " (mapcar 'str (seq 1 12))
                                       nil nil alarm-hour)
@@ -67,7 +75,7 @@ and 'mpg123' in linux"
                                       nil nil alarm-min)
                      (completing-read "am/pm: " (list "am" "pm")
                                       nil nil alarm-ampm)))
-  (alarm-clock-set (concat hour ":" (time-preceeding-zero min) ampm) "Wake up!"))
+  (alarm-clock-set (concat hour ":" (time-preceeding-zero min) ampm) "Wake up!!"))
 
 (defun pen-test-alarm-clock ()
   (interactive)

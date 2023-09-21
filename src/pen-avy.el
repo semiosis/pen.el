@@ -3,6 +3,10 @@
 
 (setq avy-all-windows nil)
 
+;; This style is better than at-full because sometimes faces do not
+;; display properly.
+(setq avy-style 'at)
+
 ;; For avy-goto-char-timer
 (setq avy-timeout-seconds 0.2)
 
