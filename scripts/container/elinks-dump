@@ -76,7 +76,7 @@ fi
 
 export COLUMNS
 
-outtf="$(pen-ci -m "$USETOR" elinks -dump-width "$COLUMNS" --no-numbering --dump "$@" | filter | pen-tf txt)" 
+outtf="$(pen-ci -f -m "$USETOR" elinks -dump-width "$COLUMNS" --no-numbering --dump "$@" | filter | pen-tf txt)" 
 
 if ! test -s "$outtf"; then
     pen-ci -m "$USETOR" w3m -dump "$@" | filter > "$outtf"

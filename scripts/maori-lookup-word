@@ -3,7 +3,14 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-# There is a problem with this dictionary though, because it includes anti-gender stuff:
+# There is a problem with this dictionary though, because it includes anti-gender stuff, for example.
+# But there are also other problems. I don't want to link to a marori dictionary.
+# Rather, I want to be able to translate into english words, and then get the definitions from a different dictionary!
+# Because the originar meanings of the words must be preserved, and we're not translating Maori or anti-gender ideologies into bible-language.
+# I need to translate the original meanings of the words into Maori.
+# The dictionaries I use must be taken from official resources such as:
+# https://www.swordsearcher.com/index.html?source=adwords&campaign=swordsearcher-search&adgroup=swordsearcher&adnum=005
+# Therefore, what I need is
 # maori-lookup-word wahine
 
 phrase="$@"
