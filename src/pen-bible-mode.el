@@ -1092,6 +1092,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           :height_pc 20
           :style "heavy")))
 
+(defun bible-mode-show-definition ()
+  (interactive)
+  (cond
+   ((string-equal "Maori" bible-mode-book-module) (call-interactively 'maori-dictionary))
+   (t nil)))
+
 (define-key bible-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-mode-map (kbd "M-v") 'view-notes-fp-verse-v)

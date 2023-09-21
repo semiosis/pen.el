@@ -368,6 +368,18 @@
         :nexterr '()
         :preverr '())
 
+(handle '(bible-mode)
+        :runmain '()
+        :repls '()
+        :formatters '()
+        :docs '(bible-mode-show-definition)
+        :godef '()
+        :docsearch '()
+        :nextdef '()
+        :prevdef '()
+        :nexterr '()
+        :preverr '())
+
 (handle '(org-mode)
         :navtree '()
         :runmain '()

@@ -3,10 +3,19 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# There is a problem with this dictionary though, because it includes anti-gender stuff:
+# maori-lookup-word wahine
+
 phrase="$@"
 test -n "$phrase" || exit 1
 
 elinks-dump "https://maoridictionary.co.nz/search?idiom=&phrase=&proverb=&loan=&histLoanWords=&keywords=$phrase" | {
     sed '1,/^Audio/d' |
-    sed '/3rd Edition/,$d'
+    sed '/3rd Edition/,$d' |
+    sed '/^$/d' |
+    sed '/Audio:/d' |
+    sed '/See also:/d' |
+    sed '/Show example/d' |
+    sed '/Hide example/d' |
+    sed '/═══════/s/.*//'
 } | pavs
