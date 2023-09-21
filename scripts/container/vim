@@ -19,5 +19,5 @@ if stdin_exists; then
         printf -- "%s" "$contents" | /usr/local/bin/vim "$@"
     fi
 else
-    /usr/local/bin/vim "$@"
+    /usr/bin/vim "$@"
 fi
