@@ -4,7 +4,7 @@
 (setq avy-all-windows nil)
 
 ;; This style is better than at-full because sometimes faces do not
-;; display properly.
+;; display properly, such as in Customize.
 (setq avy-style 'at)
 
 ;; For avy-goto-char-timer
