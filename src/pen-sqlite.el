@@ -25,12 +25,12 @@
 
     (sqlite-close db)))
 
-(defun sqlite-test-cross-refs ()
+(defun sqlite-test-nasb ()
   (interactive)
   
   (let* ((db
           (sqlite-open "/root/repos/aaronjohnsabu1999/bible-databases/DB/NASBBible_Database.db"))
-         (refs (sqlite-select db "select * from bible where verse LIKE \"%Jesus%\"") ))
+         (refs (sqlite-select db "select * from bible where verse LIKE \"%Jesus%\"")))
 
     (etv refs 'emacs-lisp-mode)
 
