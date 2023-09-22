@@ -1,6 +1,6 @@
 (require 'alarm-clock)
 
-(defcustom alarm-hour ""
+(defcustom alarm-default-hour ""
   "Hour of alarm clock"
   :type 'string
   :group 'alarmclock
@@ -11,7 +11,7 @@
          (eval (sor _sym nil)))
   :initialize #'custom-initialize-default)
 
-(defcustom alarm-min ""
+(defcustom alarm-default-minutes ""
   "Minutes of alarm clock"
   :type 'string
   :group 'alarmclock
@@ -22,7 +22,7 @@
          (eval (sor _sym nil)))
   :initialize #'custom-initialize-default)
 
-(defcustom alarm-ampm ""
+(defcustom alarm-default-ampm ""
   "AM/PM of alarm clock"
   :type 'string
   :group 'alarmclock
@@ -70,11 +70,14 @@ and 'mpg123' in linux"
 
 (defun pen-alarm-set (hour min ampm)
   (interactive (list (completing-read "hour: " (mapcar 'str (seq 1 12))
-                                      nil nil alarm-hour)
+                                      nil nil (or alarm-default-hour
+                                                  "8"))
                      (completing-read "min: " (mapcar 'str (list 0 15 30 45))
-                                      nil nil alarm-min)
+                                      nil nil (or alarm-default-minutes
+                                                  "30"))
                      (completing-read "am/pm: " (list "am" "pm")
-                                      nil nil alarm-ampm)))
+                                      nil nil (or alarm-default-ampm
+                                                  "pm"))))
   (alarm-clock-set (concat hour ":" (time-preceeding-zero min) ampm) "Wake up!!"))
 
 (defun pen-test-alarm-clock ()
