@@ -93,11 +93,11 @@ test -d glossaries || git clone --depth 1 "https://github.com/semiosis/glossarie
 test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
 
-tic $HOME/repos/pen-emacsd/pen.el/config/eterm-256color.ti
-tic $HOME/repos/pen-emacsd/pen.el/config/screen-256color.ti
-tic $HOME/repos/pen-emacsd/pen.el/config/screen-2color.ti
-tic $HOME/repos/pen-emacsd/pen.el/config/screen-2color.ti
-tic $HOME/repos/pen-emacsd/pen.el/config/xterm-24bit.ti
+tic $HOME/repos/pen.el/config/eterm-256color.ti
+tic $HOME/repos/pen.el/config/screen-256color.ti
+tic $HOME/repos/pen.el/config/screen-2color.ti
+tic $HOME/repos/pen.el/config/screen-2color.ti
+tic $HOME/repos/pen.el/config/xterm-24bit.ti
 # tic /root/.emacs.d/host/pen.el/config/xterm-24bit.ti
 
 rm -rf ~/.emacs.d
@@ -532,7 +532,7 @@ pen-x \
 make -j 5
 ./configure --uid "$pen_id"
 make install
-cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf/inspircd.conf
+cp -a ~/repos/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf/inspircd.conf
 )
 
 agi irssi
@@ -666,7 +666,7 @@ npm install -g localtunnel
 agi iceweasel
 
 (
-cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf/inspircd.conf
+cp -a ~/repos/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf/inspircd.conf
 )
 
 # Sadly, the hosts file may change, so this is not good enough
@@ -677,7 +677,7 @@ cp -a ~/repos/pen-emacsd/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf
 (
 touch /etc/hosts
 echo "127.0.1.1	pen-$(hostname)" >> /etc/hosts
-cat ~/repos/pen-emacsd/pen.el/config/hosts >> /etc/hosts
+cat ~/repos/pen.el/config/hosts >> /etc/hosts
 )
 
 # This is what is required
@@ -911,22 +911,22 @@ quicklisp-install closer-mop
 # cp -a "$REPOS/roswell/lisp/helper.el" /root/.emacs.d/roswell-helper.el
 
 mkdir -p /root/.vim
-cp -a /root/repos/pen-emacsd/pen.el/config/inkpot.vim /root/.vim
-cp -a /root/repos/pen-emacsd/pen.el/config/paste-replace.vim /root/.vim
-cp -a /root/repos/pen-emacsd/pen.el/config/utils.vim /root/.vim
-cp -a /root/repos/pen-emacsd/pen.el/config/pen.vim /root/.vim
-cp -a /root/repos/pen-emacsd/pen.el/config/nvim-function-keysvimrc /root/.vim
-cp -a /root/repos/pen-emacsd/pen.el/config/fixkeymaps-vimrc /root/.vim
+cp -a /root/repos/pen.el/config/inkpot.vim /root/.vim
+cp -a /root/repos/pen.el/config/paste-replace.vim /root/.vim
+cp -a /root/repos/pen.el/config/utils.vim /root/.vim
+cp -a /root/repos/pen.el/config/pen.vim /root/.vim
+cp -a /root/repos/pen.el/config/nvim-function-keysvimrc /root/.vim
+cp -a /root/repos/pen.el/config/fixkeymaps-vimrc /root/.vim
 
 mkdir -p /root/.emacs.d/eshell
-cp -a /root/repos/pen-emacsd/pen.el/config/eshell/* /root/.emacs.d/eshell
+cp -a /root/repos/pen.el/config/eshell/* /root/.emacs.d/eshell
 
 # Ansible
 agi libonig-dev
 pip3 install 'ansible-navigator[ansible-core]'
 
 # Xterm, etc.
-cp -a /root/repos/pen-emacsd/pen.el/config/Xresources /root/.Xresources
+cp -a /root/repos/pen.el/config/Xresources /root/.Xresources
 
 # vim
 (
@@ -934,7 +934,7 @@ cd ~/.vim
 git clone "https://github.com/tpope/vim-pathogen"
 ln -sf ~/.vim/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload
 mkdir -p ~/.vim/bundle
-cp -a /root/repos/pen-emacsd/pen.el/config/vim-bundles/* /root/.vim/bundle
+cp -a /root/repos/pen.el/config/vim-bundles/* /root/.vim/bundle
 )
 
 # Required by SaveTemp():
