@@ -12,12 +12,15 @@ stdin_exists() {
     } &>/dev/null
 }
 
+test -f "/usr/local/bin/vim" && : "${bin:="/usr/local/bin/vim"}"
+test -f "/usr/bin/vim" && : "${bin:="/usr/bin/vim"}"
+
 # Do this to remove the annoying message from vim
 if stdin_exists; then
     IFS= read -rd '' contents < <(cat);typeset -p contents &>/dev/null
     if test -n "$contents"; then
-        printf -- "%s" "$contents" | /usr/bin/vim "$@"
+        printf -- "%s" "$contents" | "$bin" "$@"
     fi
 else
-    /usr/bin/vim "$@"
+    "$bin" "$@"
 fi
