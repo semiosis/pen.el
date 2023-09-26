@@ -5,6 +5,23 @@ export TTY
 
 test -f "/usr/local/bin/litecli" || pyf "litecli" &>/dev/null
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -H) {
+        histfile="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test -n "$histfile"; then
+    SQLITE_HISTORY="$histfile"
+    export SQLITE_HISTORY
+fi
+
 # export PAGER=fpvd
 # export PAGER=litecli-editor
 # vim +/"pager = litecli-editor" "$HOME/.config/litecli/config"

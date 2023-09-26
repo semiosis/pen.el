@@ -1079,7 +1079,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
            ((>= (prefix-numeric-value current-prefix-arg) 64) "-cac")
            ((>= (prefix-numeric-value current-prefix-arg) 16) "-ca")
            ((>= (prefix-numeric-value current-prefix-arg) 4) "-c")
-           (t nil)))
+           (t (if (and
+                   (major-mode-p 'bible-mode)
+                   bible-mode-word-study-enabled)
+                  "-ca"
+                "-c"))))
          (current-prefix-arg nil))
   
     (tpop (cmd "nem" "fast" "ebible"

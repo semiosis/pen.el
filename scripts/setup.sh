@@ -1580,3 +1580,11 @@ pip install synonym-cli
 pip install pipx
 pipx install harlequin
 pip3.10 install seagoat
+
+# One day this might be great
+# cargo install ruscii --examples
+
+# For paper soccer - i need more updated versions
+# agi libprotoc-dev libprotoc17
+# agi libprotobuf17 libprotobuf-dev
+# agi libprotobuf-c-dev libprotobuf-c1

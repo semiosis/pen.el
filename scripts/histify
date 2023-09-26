@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    *=*) {
+        envname="$(p "$opt" | pen-mcut -d= -f1)"
+        histfile="$(p "$opt" | pen-mcut -d= -f2)"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+cmdname="$1"
+case "$cmdname" in
+    litecli) {
+        envname=SQLITE_HISTORY
+    }
+    ;;
+
+    *)
+esac
+
+SQLITE_HISTORY="$histfile"
+export SQLITE_HISTORY
+
+"$@"
