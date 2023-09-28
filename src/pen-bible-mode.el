@@ -63,8 +63,8 @@
 (defun bible-open (&optional global-chapter verse module ref)
   "Creates and opens a `bible-mode' buffer"
   (interactive)
-  (let
-      (
+  (let*
+      ((slug (slufigy ref))
        (buf (get-buffer-create (generate-new-buffer-name "*bible*"))))
     (set-buffer buf)
     (setq module (or module
