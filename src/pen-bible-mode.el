@@ -64,8 +64,10 @@
   "Creates and opens a `bible-mode' buffer"
   (interactive)
   (let*
-      ((slug (slufigy ref))
-       (buf (get-buffer-create (generate-new-buffer-name "*bible*"))))
+      ((slug (slugify ref))
+       (buf (get-buffer-create (generate-new-buffer-name (if (sor ref)
+                                                             (concat "*bible-" slug "*")
+                                                           (concat "*bible*"))))))
     (set-buffer buf)
     (setq module (or module
                      default-bible-mode-book-module
@@ -577,8 +579,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
           (setq bible-mode-book-module module))
 
       (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
-                   (string-to-number verse)
-                   module)
+                  (string-to-number verse)
+                  module)
       ;; (tryelse
       ;;  (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
       ;;              (string-to-number verse)
@@ -633,9 +635,23 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
         (setq book (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))
 
+        (setq-local bible-mode-chapter (concat book " " chapter))
+
         (if (>= (prefix-numeric-value current-prefix-arg) 4)
-            (concat "[[bible:" book " " chapter ":" verse "]]")
-          (concat book " " chapter ":" verse))))))
+            (concat "[[bible:" (concat bible-mode-chapter ":" verse) "]]")
+          (concat bible-mode-chapter ":" verse))))))
+
+(defun bible-mode-get-book-and-chapter (&optional text)
+  (interactive (list (thing-at-point 'line t)))
+
+  (setq text (or text (thing-at-point 'line t)))
+
+  (let ((ref (bible-mode-get-link text)))
+    (setq ref (s-replace-regexp ":[^:]*" "" ref))
+    ref))
+
+(defalias 'bible-mode-get-ref 'bible-mode-get-link)
+(defalias 'bible-mode-get-verse 'bible-mode-get-link)
 
 (defun bible-mode-copy-link (&optional text)
   "Follows the hovered verse in a `bible-search-mode' buffer,
@@ -650,6 +666,68 @@ creating a new `bible-mode' buffer positioned at the specified verse."
           (xc (bible-mode-get-link text))
         (bible-mode-get-link text))
     nil))
+
+(defun tmux-rename-current-window (name &optional win_id)
+  (interactive (list (read-string "new tmux window name: ")))
+
+  (if win_id
+      (pen-snc (cmd "tmux" "renamew" "-t" (str win_id) name))
+    (pen-snc (cmd "tmux" "renamew" name))))
+
+(comment
+ (defun bible-mode--display (&optional verse)
+   "Renders text for `bible-mode'"
+   (interactive)
+   (setq buffer-read-only nil)
+   (erase-buffer)
+           
+   (let ((tmux_win (tm-get-window)))
+
+     (insert (bible-mode--exec-diatheke (concat "Genesis " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
+
+     (let* (
+            (html-dom-tree (libxml-parse-html-region (point-min) (point-max)))
+            )
+       (erase-buffer)
+       (bible-mode--insert-domnode-recursive (dom-by-tag html-dom-tree 'body) html-dom-tree)
+       (bible-mode-display-final-tidy)
+       (goto-char (point-min))
+       (while (search-forward (concat "(" bible-mode-book-module ")") nil t)
+         (replace-match "")))
+
+     (setq mode-name (concat "Bible (" bible-mode-book-module ")"))
+     (setq buffer-read-only t)
+     (goto-char (point-min))
+     ;; (tv (concat ":" (number-to-string verse) ": "))
+     (if verse
+         (progn
+           ;; Can't use ": " because sometimes like with Psalms 40:1
+           ;; there is no space
+           (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
+           (beginning-of-line)))
+
+     (let* ((slug (slugify
+                   (concat bible-mode-book-module
+                           "-"
+                           (or verse
+                               (bible-mode-get-book-and-chapter)))))
+            (bufname (generate-new-buffer-name (if (and (sor slug)
+                                                        nil)
+                                                   (concat "*bible-" slug "*")
+                                                 (concat "*bible*"))))
+            (tmuxname (concat
+                       "("
+                       bible-mode-book-module
+                       " "
+                       (s-replace-regexp
+                        " "
+                        ""
+                        (bible-mode-get-book-and-chapter))
+                       ")")))
+       (rename-buffer bufname t)
+       (tmux-rename-current-window tmuxname tmux_win)))
+
+   (run-hooks 'bible-mode-hook)))
 
 (defun bible-mode--display(&optional verse)
   "Renders text for `bible-mode'"

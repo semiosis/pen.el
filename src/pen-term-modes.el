@@ -108,12 +108,6 @@
                                                  (let ((asciimation-term-mode nil))
                                                    (ekm "C-\\ C-n : q C-m"))))
 
-(defun tm-get-window ()
-  (chomp (pen-sn "TMUX= tmux display-message -p '#{window_id}' 2>/dev/null")))
-
-(defun tm-get-pane ()
-  (chomp (pen-sn "TMUX= tmux display-message -p '#{pane_id}' 2>/dev/null")))
-
 (defun df-test ()
     (interactive)
   (pen-sh

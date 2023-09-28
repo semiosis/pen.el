@@ -237,6 +237,22 @@ START and END can be in either order."
   (let ((current-prefix-arg '(4)))
     (pen-tm-nw (pen-cmd "pen-win" "ie" "$PEN/results/results_1667625716.9521382_05.11.22_91155942-917e-48d9-baad-bec94794036c/results_05.11.22__1667625720_91155942-917e-48d9-baad-bec94794036c_TeaH2/images/result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png"))))
 
+(defun tm-get-window ()
+  (interactive)
+  (let ((win (chomp (pen-sn "TMUX= tmux display-message -p '#{window_id}' 2>/dev/null"))))
+
+    (if (interactive-p)
+        (etv win)
+      win)))
+
+(defun tm-get-pane ()
+  (let ((pane
+         (chomp (pen-sn "TMUX= tmux display-message -p '#{pane_id}' 2>/dev/null"))))
+
+    (if (interactive-p)
+        (etv pane)
+      pane)))
+
 (defun pen-window (&optional wintype cmd nw_args input dir output_b)
   (interactive)
   (setq wintype (or wintype 'sps))
