@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+
+# if ! test "$CI_CACHED" = "y"; then oci "$sn" "$@" | pavs; exit "$?"; fi
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+export UPDATE
+
+url="$1"
+test -n "$url" || exit 1
+
+url="$(p "$url" | xurls)"
+url="$(p "$url" | sed 's/?t=*//')"
+url="$(p "$url" | sed 's/.*v=\(*\)/\1/')"
+url="https://youtubetranscript.com/?v=$url"
+
+# echo "$url" | tv
+elinks -js "$url"

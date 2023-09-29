@@ -8,4 +8,80 @@ export TTY
 test -f "/usr/local/bin/elinks" && : "${bin:="/usr/local/bin/elinks"}"
 test -f "/usr/bin/elinks" && : "${bin:="/usr/bin/elinks"}"
 
-"$bin" "$@"
+export HTTP_PROXY=localhost:8555
+export HTTPS_PROXY=localhost:8555
+
+alt -q elinks &>/dev/null || agi elinks &>/dev/null
+
+# It's annoying when vim shows elinks errors
+exec 2>/dev/null
+
+USE_CHROME=n
+
+precmd=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -2) {
+        precmd="TERM=xterm-2color "
+        shift
+    }
+    ;;
+
+    -nochrome) {
+        USE_CHROME=n
+        shift
+    }
+    ;;
+
+    -js|-chrome) {
+        USE_CHROME=y
+        shift
+    }
+    ;;
+
+    -tor) {
+        export USE_TOR=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$#" -gt 0; then
+    last_arg="${@: -1}"
+    url="$last_arg"
+    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+
+    if test "$USE_CHROME" = "y"; then
+        if pl "$url" | grep -q -P '^http'; then
+            url="$(dom-dump "$url" | tf html)"
+        fi
+    fi
+
+    set -- "$@" "$url"
+fi
+
+CMD="$(cmd "$@")"
+
+# I want to change the url argument to remove any fragments
+# What is the best way to do this?
+
+
+# Do this, even for racket
+# if ! pl "$CMD" | grep -q -P 'racket-lang'; then
+#     CMD="$(p "$CMD" | sed 's/https:/http:/')"
+# fi
+
+CMD="$(p "$CMD" | sed 's/https:/http:/')"
+
+# Something else on the page requests SSL and elinks can't handle it
+# Pity, because elinks works well for racket documentation.
+
+if ! test -n "$USE_CHROME" && test "$USE_TOR" = "y"; then
+    precmd="$precmd my-torify"
+fi
+ 
+# even with  the eval it's not working.
+cmd="$precmd $bin -eval 'set connection.ssl.cert_verify = 0' $CMD"
+# lit "$cmd" | tv
+eval "$cmd"
