@@ -135,12 +135,11 @@
       (setq pen-pensieve-directory hostpensievedir)
     (setq pen-pensieve-directory (f-join user-emacs-directory "pensieve"))))
 
-(let ((hostsnippetsdir (f-join "/root/.pen/" "host" "snippets")))
+(let ((hostsnippetsdir (f-join "/root/.pen" "host" "snippets")))
   (if (f-directory-p (f-join hostsnippetsdir))
       (setq pen-snippets-directory hostsnippetsdir)
-    (setq pen-snippets-directory (f-join user-emacs-directory "snippets"))))
-
-(add-to-list 'yas-snippet-dirs "/root/.pen/host/snippets")
+    (setq pen-snippets-directory (f-join user-emacs-directory "snippets")))
+  (add-to-list 'yas-snippet-dirs pen-snippets-directory))
 (yas-reload-all)
 
 (let ((hostkhaladir (f-join user-emacs-directory "host" "khala")))
