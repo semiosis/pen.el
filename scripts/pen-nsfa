@@ -52,6 +52,6 @@ if test -n "$CWD" && test -d "$CWD"; then
     cmd cd "$CWD" | awk 1 >> "$tf_new_script"
 fi
 
-printf -- "%s\n" "$CMD" >> "$tf_new_script"
+printf -- "%s\n" "$CMD \"\$@\"" >> "$tf_new_script"
 chmod a+x "$tf_new_script"
 echo -n "$tf_new_script"

@@ -145,7 +145,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -shE|-sh|-is) {
+    -E|-shE|-sh|-is) {
         INIT_SPAWN="$2"
         shift
         shift
@@ -157,13 +157,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         args=("$@")
 
-        eval "set -- $(cmd-nice-posix"$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
+        eval "set -- $(cmd-nice-posix "$@" | sed -e "s/^-- .*//"  -e "s/ -- .*//" -e "s/ --$//")"
         command_terms=("$@")
-        INIT_SPAWN="$(cmd-nice-posix"$@")"
+        INIT_SPAWN="$(cmd-nice-posix "$@")"
 
         set -- "${args[@]}"
 
-        eval "set -- $(cmd-nice-posix"$@" | sed -e "s/.*-- //")"
+        eval "set -- $(cmd-nice-posix "$@" | sed -e "s/.*-- //")"
 
     }
     ;;
@@ -332,7 +332,10 @@ if test "$uses_tmux" = "y"; then
         script_append "expect -exact \"sh\""
     fi
 elif test "$INIT_SPAWN" = "zsh"; then
-    script_append "spawn $(cmd-nice-posix "$INIT_SPAWN")"
+    # Backslashed "\$INIT_SPAWN" to substitute it at the end of the x script
+    # to add extra arguments to x script to INIT_SPAWN
+
+    script_append "spawn $(cmd-nice-posix "\$INIT_SPAWN")"
     # script_append "expect -exact \"»\""
 else
     if test -n "$tfstdin" && test -n "$INIT_SPAWN"; then
@@ -344,9 +347,10 @@ else
         INIT_SPAWN="$INIT_SPAWN > $tfstdout"
     fi
 
-    INIT_SPAWN="$(pen-nsfa -E "$INIT_SPAWN")"
+    # Backslashed "\$INIT_SPAWN" to substitute it at the end of the x script
+    # to add extra arguments to x script to INIT_SPAWN
 
-    script_append "spawn $(cmd-nice-posix "$INIT_SPAWN")"
+    script_append "spawn $(cmd-nice-posix "\$INIT_SPAWN")"
 
 fi
 script_append "log_user 1"
@@ -823,6 +827,23 @@ unansiify() {
         "$@"
     fi
 }
+
+# Now this works:
+# echo hi | vipe $(odn nsfa x -E 'v -nls' -s A -i)
+
+if test "$#" -gt 0; then
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+
+    INIT_SPAWN="$INIT_SPAWN $CMD"
+    shift "$#"
+fi
+
+if printf -- "%s\n" "$INIT_SPAWN" | grep -q -P ' '; then
+    INIT_SPAWN="$(pen-nsfa -E "$INIT_SPAWN")"
+fi
+
+cat "$tf_script" | sed "s=\$INIT_SPAWN=$INIT_SPAWN=" | sponge "$tf_script"
 
 ret=0
 if test "$DRY_RUN" = "y"; then
