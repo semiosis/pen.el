@@ -1,5 +1,6 @@
 #!/bin/bash
 export TTY
+echo pen-banner.sh
 
 (
 IFS= read -r -d '' banner <<HEREDOC

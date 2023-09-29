@@ -1316,6 +1316,17 @@
 (define-key pen-map (kbd "M-J") 'pen-join-line)
 (define-key pen-map (kbd "H-w") 'get-path)
 
+(defun pen-find-file ()
+  (interactive)
+  (let ((maybe_path
+         (ffap-guesser)))
+
+    (if (sor maybe_path)
+        (call-interactively 'find-file-at-point)
+      (call-interactively 'find-file))))
+
+(define-key global-map (kbd "C-x C-f") 'pen-find-file)
+
 (require 'pen-post-bindings)
 (load-library "pen-post-bindings")
 
