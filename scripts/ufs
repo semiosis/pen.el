@@ -1,0 +1,47 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Mount yas-snippets at snippets
+# ufs $MYGIT/semiosis/yas-snippets $HOME/.pen/host/snippets
+
+# /usr/bin/unionfs "$@"
+
+# cow = copy on write
+# man:unionfs
+
+# I should specify a bunch of directories and generate the command
+
+test "$#" -gt 1 || exit 1
+
+# First arg read-write directory
+readwrite="$1"
+test -d "$1" || exit 1
+shift
+
+readwrite="$(realpath "$readwrite")"
+
+# Last arg mountpoint
+mountpoint="${@: -1}"
+test -d "$mountpoint" || mkdir -p "$mountpoint"
+test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+
+mountpoint="$(realpath "$mountpoint")"
+if mount | grep -q "unionfs on $mountpoint type"; then
+    echo already mounted. unmounting
+    sudo umount "$mountpoint"
+    exit 1
+fi
+
+# Middle args read-only directories
+if test "$#" -gt 0; then
+    mounts="$(printf -- "$readwrite=RW:%s=RO\n" "$@" | s join :)"
+else
+    mounts="$readwrite=RW"
+fi
+
+unionfs -o cow,max_files=32768 \
+                     -o allow_other,use_ino,suid,dev,nonempty \
+                     "$mounts" \
+                     "$mountpoint"

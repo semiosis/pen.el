@@ -15,6 +15,10 @@
 # - nlsh
 # - apo/apostrophe
 
+# On the host: for Pen
+# ufs $MYGIT/semiosis/yas-snippets $HOME/.pen/host/snippets
+# ufs $HOME/learn-functions $HOME/.pen/documents/learn-functions
+
 pen_version=2.0
 
 # This will detach the docker container immediately - but how to disable entirely?
@@ -1458,6 +1462,17 @@ case "$sn" in
     ;;
 
     penq) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -f) {
+                force_shutdown_now=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
         show_banner=n
 
         # Attempting shutdown of Pen.el
@@ -1465,6 +1480,11 @@ case "$sn" in
         if { ! inside-docker-p; } && docker-running-p; then
             set -- -e "(progn (pen-sn \"pen-shutdown\")(kill-emacs))"
             force_shutdown_container=y
+
+            if test "$force_shutdown_now" = "y"; then
+                docker container stop "$PEN_CONTAINER_NAME" 2>/dev/null
+                exit "$?"
+            fi
         elif inside-docker-p; then
             pen-shutdown
             killall emacs
