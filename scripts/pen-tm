@@ -935,7 +935,9 @@ case "$f" in
 
     ep|edit-paste|vp|vipe-paste) {
         # zsh --no-rcs -c "tmux load-buffer -b myclipboard =(pen-tm -sout sph \"echo -n '' | vipe\" | cat | chomp)"
-        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(echo -n '' | tpop -nos -w 30 -h 13 -b heavy vipe x -E 'v -nls' -s A -i -i  cat | chomp)"
+        # echo hi | vipe $(odn nsfa x -E 'v -nls' -s A -i)
+        # zsh --no-rcs -c "tmux load-buffer -b myclipboard =(echo -n '' | tpop -nos -w 30 -h 13 -b heavy vipe $(odn nsfa x -E 'v -nls' -s A -i) | cat | chomp)"
+        zsh --no-rcs -c "tmux load-buffer -b myclipboard =(odn xc | tpop -nos -w 30 -h 13 -b heavy vipe $(odn nsfa x -E 'v -nls' -s A -i) | xc | chomp)"
 
         tmux paste-buffer -r -b myclipboard
     }
