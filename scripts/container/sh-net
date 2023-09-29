@@ -16,6 +16,7 @@ i  vd <(ifconfig -a) <(ifconfig)
 a  arp-tablist
 n  route -n
 D  sudo dhclient -v
+h  sudo nethogs
 T  nmtui
 m  mitm \$(read cmd; echo "\$cmd")
 p  mitmproxy -p 8080
@@ -37,6 +38,7 @@ case "$d" in
     a) cmd="arp-tablist" ;;
     n) cmd="route -n | pa -vs" ;;
     D) cmd="sudo dhclient -v 2>&1 | pa -vs" ;;
+    h) cmd="sudo nethogs" ;;
     T) cmd="nmtui" ;;
     m) cmd="rlwrap rlmitm" ;;
     p) cmd="mitmproxy -p 8080" ;;

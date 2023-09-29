@@ -58,7 +58,9 @@ and 'mpg123' in linux"
     c))
 
 ;; timezone must be correctly set
-(setenv "TZ" "UTC+12")
+;; (setenv "TZ" "UTC+12")
+;; (setenv "TZ" "UTC+13")
+(setenv "TZ" "NZ")
 
 (defun alarm-clock--notify (title message)
   "Notify in status bar with formatted TITLE and MESSAGE."

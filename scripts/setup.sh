@@ -1588,3 +1588,11 @@ pip3.10 install seagoat
 # agi libprotoc-dev libprotoc17
 # agi libprotobuf17 libprotobuf-dev
 # agi libprotobuf-c-dev libprotobuf-c1
+
+# Greek and Hebrew Bibles
+(
+cd "$(gc "https://github.com/eliranwong/OpenHebrewBible")"
+cd "$(gc "https://github.com/eliranwong/OpenGNT/")"
+)
+
+agi iftop nethogs
