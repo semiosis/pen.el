@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null

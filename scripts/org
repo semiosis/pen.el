@@ -1,0 +1,179 @@
+#!/bin/bash
+export TTY
+
+. ~/scripts/libraries/bash-library.sh
+
+# Organisational tools and org-mode related scripts
+
+
+get_titles=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -no-titles) {
+        get_titles=n
+        shift
+    }
+    ;;
+
+    -bn) {
+        BASENAME=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+
+get_link() {
+    if test "$get_titles" = "y"; then
+        # Timeout here was causing problems
+        # I guess that a timeout of 10 is still not enough
+        # timeout 10 ci web title "$@"
+        ci web title "$@"
+    else
+        # p "$@" | sed 's/^https\?:\/\///'
+
+        p "$@" | xargs basename
+    fi
+}
+
+
+opt="$1"
+shift
+
+case "$opt" in
+
+    # To debug it:
+    # upd ci web title "https://www.youtube.com/watch?v=RKelBDsTae4"
+    # upd wget -qO- "https://www.youtube.com/watch?v=RKelBDsTae4" | scrape-title-from-html | recode html.. | c ascify
+
+    clink|create-link) {
+        GOOGLE_LINK=n
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            -g) {
+                GOOGLE_LINK=y
+                shift
+            }
+            ;;
+
+            -l) {
+                # flush after each line
+                LINEWISE=y
+                shift
+            }
+            ;;
+
+            -u) {
+                export UPDATE=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        uris="$1"
+
+        {
+            if test "$LINEWISE" = "y"; then
+                cat
+            else
+                if [ -z "$uris" ] && stdin_exists; then
+                    uris="$(cat)"
+                fi
+
+                test -n "$(lit "$uris" | xurls)"
+                has_urls="$?"
+
+                lit "$uris" | {
+                    if test "$has_urls" -eq 0; then
+                        xurls
+                    else
+                        # It might be file paths
+                        cat
+                    fi
+                }  | awk 1 | {
+                    cat
+                    # unarchive-slack-message-url
+                } 
+            fi
+        } | while read -r uri; do
+            (
+            exec 0</dev/null
+
+            unminimised="$(p "$uri" | umn)"
+
+            if test "$GOOGLE_LINK" = "y"; then
+                printf -- "%s\n" "[[gr:$uri]]"
+            elif lit "$uri" | grep -q -P '^https?://'; then
+                # The : must be escaped so URLs can be placed in an org
+                # definition
+                title="$(get_link "$uri" | c ascify | tr -d '\n' | sed 's/ \+/ /' | sed 's/\(\[\|\]\)/ /g' | tr ')' '}' | tr '(' '{' | sed 's/::/=::=/' | strip-unicode)"
+                if [ -z "$title" ]; then
+                    title="$(p "$uri" | sed 's/^https\?:\/\///')"
+                fi
+                if test "$BASENAME" = "y"; then
+                    title="$(basename "$title")"
+                fi
+                printf -- "%s\n" "[[$uri][$title]]"
+            elif test -e "$unminimised"; then
+                bn="$(basename "$uri")"
+                dn="$(dirname "$uri")"
+                if ! test "$dn" = "."; then # if there is a dirname, use it
+                    dn="$(basename "$dn")"
+                    dbn="$dn/$bn"
+                else
+                    dbn="$bn"
+                fi
+                printf -- "%s\n" "[[$unminimised][$dbn]]"
+            else
+                printf -- "%s\n" "$uri"
+            fi
+
+            )
+        done
+        exit 0
+    }
+    ;;
+
+    manual) {
+        td_conv="$(mktemp -t -d td_convXXXXXX || echo /dev/null)"
+
+        cd "$td_conv"
+
+        fp="$(locate org.texi | head -n 1)"
+        
+        # texi2html org.texi org.html
+        # pandoc -t org org.html -o org.org
+    }
+    ;;
+
+    -e|e|edit|emacs) {
+        CMD="$(
+        for (( i = 1; i < $#; i++ )); do
+            eval ARG=\${$i}
+            printf -- "%s" "$ARG" | q
+            printf ' '
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG" | q
+        )"
+
+        # echo "e -D default -s org c $CMD"
+        # exit $?
+
+        # This doesn't work anymore
+        # eval "e -D default -s org c $CMD"
+
+        eval "og $CMD"
+        exit $?
+    }
+    ;;
+
+    *)
+esac
+
+if [ -f "$opt" ]; then
+    eval "$0 edit $CMD"
+    exit $?
+fi
