@@ -3,6 +3,8 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-test -f "/usr/bin/recode" || agi "recode" &>/dev/null
+set -xv
+
+test -f "/usr/bin/recode" || agi "recode" # &>/dev/null
 
 /usr/bin/recode "$@"

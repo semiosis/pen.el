@@ -1,0 +1,16 @@
+#!/bin/bash
+
+( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
+
+echo "Consider switching to ux-env, which is like apt-get" 1>&2
+
+# Don't do this because it will make interactive installations hang
+# (ones that use ncurses configuration menus)
+# exec > >(his -c red Error)
+
+# Deprioritise snap
+# sudo snap install "$@" || ( sudo apt install -y --force-yes "$@" && dpkg -L "$@" )
+
+# ( sudo apt install -y --force-yes  --allow-unauthenticated --allow-insecure-repositories "$@" && dpkg -L "$@" ) || sudo snap install "$@"
+
+( sudo apt install -y --force-yes  --allow-unauthenticated "$@" && dpkg -L "$@" ) || yes | sudo snap install "$@"
