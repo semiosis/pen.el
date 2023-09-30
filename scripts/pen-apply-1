@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# apply
+
+f="$1"
+shift
+
+"$@" | eval "$f"
