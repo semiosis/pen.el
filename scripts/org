@@ -25,16 +25,20 @@ esac; done
 
 
 get_link() {
+    (
+    exec 0</dev/null
+
     if test "$get_titles" = "y"; then
         # Timeout here was causing problems
         # I guess that a timeout of 10 is still not enough
         # timeout 10 ci web title "$@"
-        ci web title "$@"
+        ci in-pen web title "$@"
     else
         # p "$@" | sed 's/^https\?:\/\///'
 
         p "$@" | xargs basename
     fi
+    )
 }
 
 

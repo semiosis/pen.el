@@ -411,6 +411,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     sh) {
         start_shell=y
         shift
+        break
     }
     ;;
 
@@ -418,6 +419,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         start_shell=y
         shift
         set -- tmux "$@"
+        break
     }
     ;;
 
@@ -437,6 +439,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         shift
         set -- sh pen-lsp "$@"
         start_shell=y
+        break
     }
     ;;
 
@@ -444,6 +447,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         start_shell=y
         shift
         set -- "$@" eval "tmux attach || tmux || zsh"
+        break
     }
     ;;
 
