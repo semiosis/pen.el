@@ -35,7 +35,7 @@ get_link() {
         # in-pen ci -nd apply-1 tv web title "$@"
         # in-pen ci -nd apply-1 tv env
         # in-pen apply-1 tv which python
-        in-pen upd oci -nd web title "$@"
+        in-pen oci -f -nd web title "$@"
     else
         # p "$@" | sed 's/^https\?:\/\///'
 
