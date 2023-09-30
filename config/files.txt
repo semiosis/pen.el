@@ -305,6 +305,7 @@ $NOTES/programs/ns/_.txt
 /root/.emacs.d/host/pen.el/config/chrome-dom-url-patterns.txt
 /root/.emacs.d/host/pen.el/config/reader-url-patterns.txt
 /root/.emacs.d/host/pen.el/config/ff-url-patterns.txt
+/root/.emacs.d/host/pen.el/config/blocked-patterns.txt
 $NOTES/ws/services/fuzzy.txt
 $NOTES/ws/utils/fuzzy.txt
 $HOME/.pen/openai_api_key

@@ -1,0 +1,85 @@
+#!/bin/bash
+export TTY
+
+# For all things web
+# Youtube, etc.
+
+( which recode || agi recode; ) &>/dev/null
+
+stdinexists() {
+    ! [ -t 0 ]
+}
+
+opt="$1"
+shift
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+wget_title() {
+    url="$1"
+    shift
+    
+    case "$url" in
+        *onion*) { eval "oci my-torify wget -qO- $(aqf "$url")"; } ;;
+        *) { oci wget -qO- "$url"; } ;;
+    esac | \
+        scrape-title-from-html | recode html.. | c ascify
+}
+
+chrome_title() {
+    url="$1"
+    shift
+    
+    case "$url" in
+        *onion*) { eval "oci my-torify wget -qO- $(aqf "$url")"; } ;;
+        *) { dom-dump "$url"; } ;;
+    esac | \
+        scrape-title-from-html | recode html.. | c ascify
+}
+
+case "$opt" in
+    title|get-title) {
+        url="$1"
+
+        if [ -z "$url" ] && stdinexists; then
+            url="$(cat)"
+        fi
+
+        title="$(wget_title "$url")"
+        : "${title:="$(chrome_title "$url")"}"
+
+        if test -z "$title"; then
+            title="$(basename "$url" | sed 's/\..*//')"
+        fi
+        printf -- "%s" "$title"
+    }
+    ;;
+
+    hn) {
+        eww "https://news.ycombinator.com"
+    }
+    ;;
+
+    g) {
+        eww "https://google.com"
+    }
+    ;;
+
+    mp|mirrorpage) {
+        eval "wget -pkE $CMD"
+    }
+    ;;
+
+    ms|mirrorsite) {
+        eval "wget -w1 -NpmkKEct1 $CMD"
+    }
+    ;;
+
+    mss|mirrorsubsite) {
+        eval "wget -np -rNpmkKEl 1 $CMD"
+    }
+    ;;
+
+    *)
+esac
