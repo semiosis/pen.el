@@ -3,4 +3,6 @@
 ;; emacs-script-test hi yo
 
 ;; (message "Hello: %S" argv)
+;; (cmd "Hello: %S" (str argv))
 (tv (cmd "Hello: %S" (str argv)))
+"Hallelujah!"

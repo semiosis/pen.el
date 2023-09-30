@@ -1171,7 +1171,7 @@ case "$f" in
     }
     ;;
 
-    c|-x|x|pen-e|client) { # start emacs client
+    c|-x|x|e|client) { # start emacs client
         if ! pen-e running; then
             echo "$SOCKET not started yet. Starting worker." 1>&2
             pen-e sd
@@ -1466,8 +1466,18 @@ case "$f" in
     }
     ;;
 
-    *) # normal emacs parameters
+    -|*) # normal emacs parameters
         {
+
+        # if test "$f" = "-"; then
+        #     # shift
+        #     f="$1"
+        #     echo "$@"
+        #     exit
+        #     if test -z "$f"; then
+        #         exit 1
+        #     fi
+        # fi
 
         if test -n "$f"; then
             set -- "$f" "$@"

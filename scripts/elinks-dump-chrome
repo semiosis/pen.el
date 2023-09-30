@@ -23,10 +23,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -refs) {
+        KEEP_REFS=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 export WAITTIME
+export KEEP_REFS
 
 url="$1"
 test -n "$url" || exit 1
@@ -34,4 +41,4 @@ test -n "$url" || exit 1
 # I get an iframe from dockerhub when I use https
 url="$(p "$url" | sed '/hub.docker.com/s/^https/http/')"
 
-dom-dump "$url" | tf html | xa elinks-dump
+oci -f -nd dom-dump "$url" | tf html | xa elinks-dump

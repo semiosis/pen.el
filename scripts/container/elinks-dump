@@ -27,6 +27,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -refs) {
+        KEEP_REFS=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -47,7 +53,13 @@ fpage() {
 }
 
 filter() {
-    sed '/^References/,$d' | sed 's/^ \+//' | \
+    {
+        if ! test "$KEEP_REFS" = "y"; then
+            sed '/^References/,$d'
+        else
+            cat
+        fi
+    } | sed 's/^ \+//' | \
     {
         if test "$unicode" = "y"; then
             cat
