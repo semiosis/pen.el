@@ -5,4 +5,4 @@ export TTY
 
 test -f "/usr/bin/recode" || agi "recode" &>/dev/null
 
-/usr/bin/recode "$@"
+in-pen /usr/bin/recode "$@"
