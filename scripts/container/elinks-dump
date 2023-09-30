@@ -33,8 +33,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -orefs) {
+        ONLY_REFS=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+
+if test "$ONLY_REFS" = "y"; then
+    export KEEP_REFS=y
+fi
 
 : "${pager:="v"}"
 
@@ -53,23 +63,27 @@ fpage() {
 }
 
 filter() {
-    {
-        if ! test "$KEEP_REFS" = "y"; then
-            sed '/^References/,$d'
-        else
-            cat
-        fi
-    } | sed 's/^ \+//' | \
-    {
-        if test "$unicode" = "y"; then
-            cat
-        else
-            # pen-c ascify
-            # clean-term-capture
-            pen-c ascify
-            # cat
-        fi
-    }
+    if test "$ONLY_REFS" = "y"; then
+        sed '0,/^References/d' | sed -n "/^   \\./s/^   \\. //p"
+    else
+        {
+            if ! test "$KEEP_REFS" = "y"; then
+                sed '/^References/,$d'
+            else
+                cat
+            fi
+        } | sed 's/^ \+//' | \
+        {
+            if test "$unicode" = "y"; then
+                cat
+            else
+                # pen-c ascify
+                # clean-term-capture
+                pen-c ascify
+                # cat
+            fi
+        }
+    fi
 }
 
 if [ -z "$COLUMNS" ] && is_tty; then

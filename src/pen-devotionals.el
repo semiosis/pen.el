@@ -1,3 +1,12 @@
+(defun michael-youseff ()
+  (interactive)
+  (let ((devurl
+         (fz (pen-snc "leading-the-way-recent")
+             nil nil "Leading the way: ")))
+
+    (chrome devurl)))
+
+
 (defun davidjeremiah (&optional last_n)
   (interactive (list (string-to-int (sor (read-string-hist "last `n` devotionals:")
                                          "0"))))

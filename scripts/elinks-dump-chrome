@@ -29,11 +29,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -orefs) {
+        ONLY_REFS=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 export WAITTIME
 export KEEP_REFS
+export ONLY_REFS
 
 url="$1"
 test -n "$url" || exit 1

@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# https://au.ltw.org/listen
+
+for url in \
+     "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=0" \
+     "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=1" \
+     "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=2" \
+     "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=1"; do
+        {
+            elinks-dump-chrome -orefs "$url" |
+                sed '0,/au.ltw.org\/listen#q=&h/d' |
+                uniqnosort | sed -n '/file:.*\/listen\//s=file:///=https://au.ltw.org/=p'
+        }
+    done |
+    pavs
