@@ -115,7 +115,7 @@ case "$opt" in
             elif lit "$uri" | grep -q -P '^https?://'; then
                 # The : must be escaped so URLs can be placed in an org
                 # definition
-                title="$(get_link "$uri" | c ascify | tr -d '\n' | sed 's/ \+/ /' | sed 's/\(\[\|\]\)/ /g' | tr ')' '}' | tr '(' '{' | sed 's/::/=::=/' | strip-unicode | tv)"
+                title="$(get_link "$uri" | c ascify | tr -d '\n' | sed 's/ \+/ /' | sed 's/\(\[\|\]\)/ /g' | tr ')' '}' | tr '(' '{' | sed 's/::/=::=/' | strip-unicode)"
                 if [ -z "$title" ]; then
                     title="$(p "$uri" | sed 's/^https\?:\/\///')"
                 fi
