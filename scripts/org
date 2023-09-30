@@ -34,7 +34,8 @@ get_link() {
         # timeout 10 ci web title "$@"
         # in-pen ci -nd apply-1 tv web title "$@"
         # in-pen ci -nd apply-1 tv env
-        in-pen ci -nd web title "$@"
+        # in-pen apply-1 tv which python
+        in-pen upd oci -nd web title "$@"
     else
         # p "$@" | sed 's/^https\?:\/\///'
 
@@ -114,7 +115,7 @@ case "$opt" in
             elif lit "$uri" | grep -q -P '^https?://'; then
                 # The : must be escaped so URLs can be placed in an org
                 # definition
-                title="$(get_link "$uri" | c ascify | tr -d '\n' | sed 's/ \+/ /' | sed 's/\(\[\|\]\)/ /g' | tr ')' '}' | tr '(' '{' | sed 's/::/=::=/' | strip-unicode)"
+                title="$(get_link "$uri" | c ascify | tr -d '\n' | sed 's/ \+/ /' | sed 's/\(\[\|\]\)/ /g' | tr ')' '}' | tr '(' '{' | sed 's/::/=::=/' | strip-unicode | tv)"
                 if [ -z "$title" ]; then
                     title="$(p "$uri" | sed 's/^https\?:\/\///')"
                 fi
