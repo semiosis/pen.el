@@ -32,7 +32,7 @@ get_link() {
         # Timeout here was causing problems
         # I guess that a timeout of 10 is still not enough
         # timeout 10 ci web title "$@"
-        ci in-pen web title "$@"
+        ci -nd in-pen web title "$@"
     else
         # p "$@" | sed 's/^https\?:\/\///'
 
