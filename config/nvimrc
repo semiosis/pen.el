@@ -129,6 +129,7 @@ set noswapfile " Swap is disabled. Using git anyway.
 "swap messages are super annoying
 "set swapfile
 " Vim is scaring me by deleting files.
+set nofixendofline
 
 " set backupdir=/dev/shm/var/tmp/shane/vim
 " set directory=/dev/shm/var/tmp/shane/vim

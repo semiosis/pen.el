@@ -1572,8 +1572,7 @@ agi gron
 cd "$(gc "https://github.com/erikgeiser/promptkit")"
 )
 
-agi telnet
-agi zathura
+agi telnet zathura
 
 pip install synonym-cli
 
@@ -1596,3 +1595,5 @@ cd "$(gc "https://github.com/eliranwong/OpenGNT/")"
 )
 
 agi iftop nethogs
+
+e ia mw-thesaurus

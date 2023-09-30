@@ -2250,3 +2250,4 @@ mini-frame
 adaptive-wrap
 rubik
 treesit-auto
+mw-thesaurus
