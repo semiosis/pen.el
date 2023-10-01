@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fsn="$(basename -- "$0")"
+
+sn="${fsn:0:2}" 
+paras="${fsn:2}" 
+
+cmd "$sn" -"$paras" | awk 1 | hls red 1>&2
+"$sn" -"$paras" | pavs

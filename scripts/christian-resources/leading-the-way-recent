@@ -19,17 +19,27 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+IFS= read -r -d '' elisp <<HEREDOC
+    (list2str
+    (loop for i in (seq 0 3)
+     collect
+     (format
+      "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=%d"
+      i)))
+HEREDOC
+
 ltw() {
     {
         for url in \
              "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=0" \
              "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=1" \
              "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=2" \
-             "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=1"; do
+             "https://au.ltw.org/listen#q=&hPP=4&idx=prod-ltw-site-recent-desc&p=3"; do
                 {
                     elinks-dump-chrome -orefs "$url" |
                         sed '0,/au.ltw.org\/listen#q=&h/d' |
-                        uniqnosort | sed -n '/file:.*\/listen\//s=file:///=https://au.ltw.org/=p'
+                        uniqnosort | sed -n '/file:.*\/listen\//s=file:///=https://au.ltw.org/=p' |
+                        while read line; do odn org clink "$line"; done
                 }
             done
     } | pavs
