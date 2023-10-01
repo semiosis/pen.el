@@ -1,6 +1,10 @@
 #!/bin/bash
 export TTY
 
+# examples:
+# ln -sf single-cmd-auto-pavs-2 dfh
+# dfh
+
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 fsn="$(basename -- "$0")"
