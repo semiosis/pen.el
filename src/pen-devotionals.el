@@ -1,6 +1,6 @@
-;; TODO Make this handle 'recent' properly
 (defun michael-youseff ()
   (interactive)
+  ;; TODO Make this handle 'recent' properly
   (let* ((links (string2list (pen-snc "leading-the-way-recent")))
          (tuples (mapcar
                   (λ (e)
