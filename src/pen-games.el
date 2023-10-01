@@ -1,5 +1,7 @@
 (require 'crossword)
 (require 'wordel)
+(require 'maces-game)
+
 ;; (require 'rubik)
 
 (setq crossword-save-path (concat (f-join pen-confdir "documents" "Crosswords") "/"))

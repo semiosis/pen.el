@@ -1597,3 +1597,5 @@ cd "$(gc "https://github.com/eliranwong/OpenGNT/")"
 agi iftop nethogs
 
 e ia mw-thesaurus
+
+e ia maces-game typing-game

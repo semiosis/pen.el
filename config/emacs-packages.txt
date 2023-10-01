@@ -2251,3 +2251,5 @@ adaptive-wrap
 rubik
 treesit-auto
 mw-thesaurus
+maces-game
+typing-game

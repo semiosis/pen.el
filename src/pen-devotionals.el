@@ -1,10 +1,21 @@
+;; TODO Make this handle 'recent' properly
 (defun michael-youseff ()
   (interactive)
-  (let ((devurl
-         (fz (pen-snc "leading-the-way-recent")
-             nil nil "Leading the way: ")))
+  (let* ((links (string2list (pen-snc "leading-the-way-recent")))
+         (tuples (mapcar
+                  (λ (e)
+                    (list
+                     (--> e
+                          (s-replace-regexp "^\\[\\[" "" it)
+                          (s-replace-regexp "\\]\\[.*" "" it))
+                     (--> e
+                          (s-replace-regexp "^\\[\\[.*\\]\\[" "" it)
+                          (s-replace-regexp "\\]\\]$" "" it))))
+                  links))
+         (devurl
+          (fz tuples nil nil "Leading the way: ")))
 
-    (chrome devurl)))
+    (chrome devurl nil t)))
 
 
 (defun davidjeremiah (&optional last_n)
