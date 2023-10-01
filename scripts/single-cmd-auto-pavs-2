@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-# examples:
+# example:
 # ln -sf single-cmd-auto-pavs-2 dfh
 # dfh
 
