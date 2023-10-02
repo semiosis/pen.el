@@ -165,11 +165,16 @@
     (while (re-search-forward "  +" nil t)
       (replace-match " ")))
 
-
   (save-excursion
     (beginning-of-buffer)
     (while (re-search-forward " [’”]" nil t)
       (backward-char 1)
+      (delete-backward-char 1)))
+
+  ;; For Psalm 3 - NASB
+  (save-excursion
+    (beginning-of-buffer)
+    (while (re-search-forward "^ " nil t)
       (delete-backward-char 1)))
 
   (save-excursion
