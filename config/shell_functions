@@ -1,3 +1,16 @@
+# ohmyzsh set this
+unalias ls 2>/dev/null || :
+
+# ls
+for sn in pwd df du ifconfig route mount netstat; do
+IFS= read -r -d '' shcode <<HEREDOC
+    $sn() {
+        command "$sn" "\$@" | pa -E colvs
+    }
+HEREDOC
+eval "$shcode"
+done
+
 apply() {
     f="$1"
     shift

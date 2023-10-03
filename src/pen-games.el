@@ -1,6 +1,6 @@
 (require 'crossword)
 (require 'wordel)
-(require 'maces-game)
+;; (require 'maces-game)
 
 ;; (require 'rubik)
 
