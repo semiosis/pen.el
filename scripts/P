@@ -3,6 +3,9 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-# "$@" | v
+test "$#" -gt 1 || exit 1
 
-P v "$@"
+pipeinto="$1"
+shift
+
+"$@" | eval "$pipeinto"
