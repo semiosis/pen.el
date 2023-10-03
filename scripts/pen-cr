@@ -2499,6 +2499,38 @@ case "$file_type" in
     }
     ;;
 
+    org) {
+        cd "$dn"
+
+        prog="$(qa -p org2pdf -h org2html)"
+
+        fn=$(basename -- "$fp")
+        dn=$(dirname "$fp")
+        ext="${fn##*.}"
+        mant="${fn%.*}"
+
+        case "$prog" in
+            org2pdf) {
+                "$prog" "$fn"
+
+                z "${mant}.pdf"
+            }
+            ;;
+
+            org2html) {
+                "$prog" "$fn"
+
+                nvc -2 elinks "${mant}.html"
+            }
+            ;;
+
+            *)
+        esac
+
+        exit $?
+    }
+    ;;
+
     kotlin|kts) {
         np="${td_cr}/script.kts"
         ln -s "$rp" "$np"
