@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+fp="$1"
+test -f "$fp" || exit 1
+rp="$(realpath "$fp")"
+
+sn="$(basename -- "$0")"
+
+case "$sn" in
+    org2pdf) {
+        f=org-latex-export-to-pdf
+    }
+    ;;
+
+    org2html) {
+        f=org-html-export-to-html
+    }
+    ;;
+
+    *)
+esac
+
+unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UUU -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i
