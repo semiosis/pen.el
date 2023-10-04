@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+find /root/.emacs.d/elpa-light -maxdepth 1 | sort -g | sed "s=.*/==" | sed 's=-[0-9].*==' | uniq -d > /tmp/dupspackages.txt
+find /root/.emacs.d/elpa-light -maxdepth 1 | sort -g | sed "s=.*/==" | sed 's=-[0-9].*==' | uniqnosort > /tmp/uniqpackages.txt
+find /root/.emacs.d/elpa-light -maxdepth 1 | sort -g | sed "s=.*/==" > /tmp/currentpackages.txt
+cat /tmp/currentpackages.txt > /tmp/tac-packages.txt
+
+(
+cat /tmp/dupspackages.txt | awk 1 | while read line; do
+    cat /tmp/tac-packages.txt | grep -P "^$line-[0-9]" | sed '$d'
+done
+) | awk 1 |
+    while read line; do
+        test -n "$line" && rm -rf "/root/.emacs.d/elpa-light/$line"
+        # cmd-nice rm -rf "/root/.emacs.d/elpa-light/$line" | awk 1
+done
+
+# v /tmp/dupspackages.txt
+# v /tmp/uniqpackages.txt
+# cat /tmp/currentpackages.txt | tac | v
