@@ -4,6 +4,9 @@
 
 aqf() { aqf-nice "$@"; }
 
+# cd /; find $NOTES/ws/lisp -type f -name '*.lisp' | dired
+# cd $MYGIT/mullikine/systemd-services.el; dired .
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -g) {
@@ -66,16 +69,22 @@ if stdin_exists; then
     joined_list="$(sed 's/^\.\///' | sed "s=${dired_dir}/==" | lines-to-args)"
     # dired_ls_cmd="shift 3; cd \"\$1\"; shift; dired-ls-d --dired -alh -- $joined_list"
     dired_ls_cmd="shift 2; dired-ls-d --dired -alh -- $joined_list"
+    # dired_ls_cmd="dired-ls-d $joined_list"
     dired_cmd="$(nsfa -E "$dired_ls_cmd")"
 fi
 
 exec <&1
+
+# eval "dired-ls --dired -alhd -- $joined_list"
 
 if test "$#" -gt 0; then
     last_arg="${@: -1}"
     dired_dir="$last_arg"; : ${dired_dir:="$(pwd)"}
     test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
 fi
+
+# This can only be used retroactively
+# (dired-sort-other "-alR")
 
 : "${paras:="--dired -alh"}"
 : ${dired_cmd:="dired-ls"}
