@@ -16,5 +16,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-# /usr/bin/watch "$@"
-viddy "$@"
+test -f "${GOPATH%%:*}/bin/viddy" && : "${bin:="${GOPATH%%:*}/bin/viddy"}"
+test -f "/usr/bin/watch" && : "${bin:="/usr/bin/watch"}"
+"$bin" "$@"
