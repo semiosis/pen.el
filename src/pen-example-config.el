@@ -211,12 +211,6 @@
 (require 'pen-glossary-new)
 (set-glossary-predicate-tuples)
 
-(require 'xt-mouse)
-(xterm-mouse-mode)
-(require 'mouse)
-(xterm-mouse-mode t)
-;; (defun track-mouse (e))
-
 (setq x-alt-keysym 'meta)
 
 ;; Simplify the experience -- Super newb mode

@@ -2164,6 +2164,7 @@ May use to generate code from comments."
 (require 'pen-gumshoe)
 (require 'pen-func-lists)
 (require 'pen-right-click-menu)
+(require 'pen-enable-mouse)
 (require 'pen-mouse)
 (require 'pen-xt-mouse)
 (require 'pen-prompt-description)

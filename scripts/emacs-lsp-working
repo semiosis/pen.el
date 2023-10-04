@@ -3,4 +3,4 @@ export TTY
 
 ocif curl -s "https://raw.githubusercontent.com/emacs-lsp/lsp-mode/master/scripts/lsp-start-plain.el" > /tmp/plain.el
 
-/usr/local/bin/emacs -q -l /tmp/plain.el /root/.emacs.d/elpa/lsp-mode-20230914.1237/lsp-mode.el "$@"
+/usr/local/bin/emacs -nw -q -l /tmp/plain.el -l /root/.emacs.d/host/pen.el/src/pen-enable-mouse.el /root/.emacs.d/elpa/lsp-mode-20230914.1237/lsp-mode.el "$@"
