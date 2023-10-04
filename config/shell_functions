@@ -1,5 +1,5 @@
 # ohmyzsh set this
-unalias ls 2>/dev/null || :
+# unalias ls 2>/dev/null || :
 
 # ls pwd
 for sn in df du ifconfig route mount netstat; do
