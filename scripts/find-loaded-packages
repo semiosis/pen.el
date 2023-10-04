@@ -1,0 +1,37 @@
+#!/bin/bash
+export TTY
+
+elpa_full_dir="$1"
+: "${elpa_full_dir:="/root/.emacs.d/elpa"}"
+
+elpa_full_dir="$(realpath "$elpa_full_dir")"
+
+find "$elpa_full_dir" -type f -name '*.el' | xargs grep -Hno "(provide '.*" > /tmp/allprovides.txt
+
+(
+cat ~/.pen/loaded-packages.txt | while read packagename; do
+    grep "'$packagename)" /tmp/allprovides.txt
+done
+) | sed -e "s=$elpa_full_dir/==" -e 's=/.*==' | uniqnosort | pavs
+
+
+# First do this:
+
+# find-loaded-packages elpa-full | while read line; do mv "elpa-full/$line" elpa/; done
+
+# Also, these were needed:
+
+# » mv shut-up-20210403.1249 ../elpa-light
+# » mv guess-language-20210623.1505 ../elpa-light
+# » mv language-detection-20161123.1813 ../elpa-light
+# » mv xterm-color-20200605.2017 ../elpa-light
+# » mv ordinal-20210519.1442 ../elpa-light
+# » mv lv-20200507.1518 ../elpa-light/
+# » mv elisp-refs-20230831.1516 ../elpa-light
+# » mv mwim-20181110.1900 ../elpa-light
+# » mv unicode-fonts-20200803.1335 ../elpa-light
+# » mv uuidgen-20200816.1308 ../elpa-light
+# » mv with-editor-20230917.958 ../elpa-light
+# » rm -rf with-editor-20220107.1056
+# » mv diff-hl-20211106.2353 ../elpa-light
+# » mv pydoc-20211119.2211 ../elpa-light

@@ -82,9 +82,11 @@
 
 (defun pen-set-package-paths ()
   (interactive)
-  (if (string-match "^pen-emacsd-" (pen-worker-name))
-      (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "/root/.emacs.d/elpa-light/")))))
-    (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "/root/.emacs.d/elpa-full/"))))))
+  (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "/root/.emacs.d/elpa-light")))))
+
+  ;; (if (string-match "^pen-emacsd-" (pen-worker-name))
+  ;;     (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "/root/.emacs.d/elpa-light/")))))
+  ;;   (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "/root/.emacs.d/elpa-full/"))))))
 
   (if (f-directory-p (f-full "/root/.emacs.d/manual-packages/"))
       (setq load-path (cl-union load-path (list-directories-recursively (f-realpath (f-full "/root/.emacs.d/manual-packages/")))))))

@@ -5,6 +5,15 @@
 
 (setq large-file-warning-threshold nil)
 
+;; ;; nadvice - proc is the original function, passed in. do not modify
+;; (defun require-around-advice (proc &rest args)
+;;   (message "require called with args %S" args)
+;;   (let ((res (apply proc args)))
+;;     (message "require returned %S" res)
+;;     res))
+;; (advice-add 'require :around #'require-around-advice)
+;; (advice-remove 'require #'require-around-advice)
+
 ;; This may have been defined in init,
 ;; for contrib, etc.
 (ignore-errors
