@@ -2253,3 +2253,14 @@ treesit-auto
 mw-thesaurus
 maces-game
 typing-game
+iterators
+math-symbol-lists
+org-contacts
+org-transclusion
+osm
+parser-generator
+paced
+relint
+shelisp
+shell-command+
+eat
