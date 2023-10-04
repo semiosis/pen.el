@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+test -f "$EMACSD/host/pen.el/config/emacs-lsp-plain-pen.el" && : "${script_fp:="$EMACSD/host/pen.el/config/emacs-lsp-plain-pen.el"}"
+test -f "$EMACSD/host/pen.el/config/emacs-lsp-plain.el" && : "${script_fp:="$EMACSD/host/pen.el/config/emacs-lsp-plain.el"}"
 test -f "/root/emacs-lsp-plain-pen.el" && : "${script_fp:="/root/emacs-lsp-plain-pen.el"}"
 test -f "/root/emacs-lsp-plain.el" && : "${script_fp:="/root/emacs-lsp-plain.el"}"
 : "${script_fp:="/root/emacs-lsp-plain.el"}"
