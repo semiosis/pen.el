@@ -4,7 +4,9 @@
 (setq show-paren-delay 0
       show-paren-style 'parenthesis)
 
-(show-paren-mode 1)
+;; seems to have broken after updating lsp -- it's not this mode that's broken but something else
+;; (show-paren-mode 1)
+(show-paren-mode -1)
 
 (defvar pen-lisp-mode-map (make-sparse-keymap)
   "Keymap for `pen-lisp-mode'.")

@@ -1607,3 +1607,5 @@ e ia maces-game typing-game
 
 # eat sounds very cool
 e ia iterators math-symbol-lists org-contacts org-transclusion osm parser-generator paced relint shelisp "shell-command+" eat
+
+e ia lsp-origami lsp-dart lsp-pyright
