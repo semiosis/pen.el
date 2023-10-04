@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -c|-E) {
+        cmd="$2"
+        shift
+        shift
+        set -- "$@" sh -c "$cmd"
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# /usr/bin/watch "$@"
+viddy "$@"
