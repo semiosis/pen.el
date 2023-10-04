@@ -5,8 +5,8 @@
       show-paren-style 'parenthesis)
 
 ;; seems to have broken after updating lsp -- it's not this mode that's broken but something else
-;; (show-paren-mode 1)
-(show-paren-mode -1)
+(show-paren-mode 1)
+;; (show-paren-mode -1)
 
 (defvar pen-lisp-mode-map (make-sparse-keymap)
   "Keymap for `pen-lisp-mode'.")
