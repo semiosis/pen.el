@@ -1,6 +1,7 @@
 #!/bin/bash
 export TTY
 
-ocif curl -s "https://raw.githubusercontent.com/emacs-lsp/lsp-mode/master/scripts/lsp-start-plain.el" > /tmp/plain.el
+script_fp=~/emacs-lsp-plain.el
+test -f "$script_fp" || ocif curl -s "https://raw.githubusercontent.com/emacs-lsp/lsp-mode/master/scripts/lsp-start-plain.el" > "$script_fp"
 
-/usr/local/bin/emacs -nw -q -l /tmp/plain.el -l /root/.emacs.d/host/pen.el/src/pen-enable-mouse.el /root/.emacs.d/elpa/lsp-mode-20230914.1237/lsp-mode.el "$@"
+/usr/local/bin/emacs -nw -q -l "$script_fp" -l /root/.emacs.d/host/pen.el/src/pen-enable-mouse.el /root/.emacs.d/elpa/lsp-mode-20230914.1237/lsp-mode.el "$@"
