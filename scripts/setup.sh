@@ -1036,6 +1036,9 @@ cargo install difftastic
 
 pyf yamlfmt
 
+# rls is deprecated
+# cargo install rls
+
 # Currently not working. Apparantly, it's normal for the latest version to not work
 # Install the rust language server (rust-analyzer) manually (rather than through emacs)
 rm -f ~/.cargo/bin/rust-analyzer
