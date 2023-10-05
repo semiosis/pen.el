@@ -175,4 +175,6 @@
 buffer."
   (save-excursion (end-of-line) (/= (forward-line) 0)))
 
+(defalias 'detect-language-set-mode 'guess-major-mode)
+
 (provide 'pen-utils)

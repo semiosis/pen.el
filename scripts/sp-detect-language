@@ -1,7 +1,13 @@
 #!/bin/bash
 export TTY
 
-fp="$1"
+getinput() {
+    if test -f "$1"; then
+        cat "$1"
+    else
+        cat
+    fi
+}
 
-lang="$(cat "$fp" | sp -aft +ooq "(buffer-language)" +e "(kill-buffer)" | cat)" 2>/dev/null
+lang="$(getinput "$@" | sp -aft +ooq "(buffer-language)" +e "(kill-buffer)" | cat)" 2>/dev/null
 printf -- "%s\n" "$lang"
