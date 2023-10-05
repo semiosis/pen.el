@@ -250,6 +250,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-script)
 (require 'pen-calibre)
 (require 'pen-gpg)
+(require 'pen-frame)
 (require 'pen-eldoc)
 (require 'pen-json)
 (require 'pen-minibuffer)

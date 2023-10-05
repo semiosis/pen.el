@@ -175,6 +175,15 @@
 buffer."
   (save-excursion (end-of-line) (/= (forward-line) 0)))
 
+(defun pen-start-process (command)
+  (interactive (list (read-string-hist "command: ")))
+  (with-current-buffer
+      (switch-to-buffer command)
+    (start-process
+     command
+     (current-buffer)
+     command)))
+
 (defalias 'detect-language-set-mode 'guess-major-mode)
 
 (provide 'pen-utils)

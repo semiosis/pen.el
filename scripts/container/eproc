@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Start a process inside emacs
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd-nice-posix "$@")"
+fi
+
+# CMD="$(aqf "$CMD")"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+if is_tty; then
+    # This is simply to add a 0.5 second delay before sending M-<
+    # It seems a bit excessive
+    # sp -e "(my-start-process $(aqf "$CMD"))"
+
+    x -sh "$(cmd sp -e "(my-start-process $(cmd-nice-posix "$CMD"))")" -e "When done with this frame" -sl 0.5 -m '<' -sl 0.5 -m '>' -i
+else
+    # sp -e "(add-hook 'after-make-frame-functions 'after-make-frame-close-frame)" -e "(delete-frame)"
+    sp -e "(my-start-process $(cmd-nice-posix "$CMD"))" +ofq "(current-buffer-name)" | cat
+     # +e "(with-current-buffer (current-buffer) (delete-frame nil t))"
+    # +e "(delete-frame)"
+fi
