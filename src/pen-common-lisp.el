@@ -11,10 +11,14 @@
 
   (eww (concat "http://clhs.lisp.se/Body/f_" funname ".htm")))
 
+(defun linux-system-ram-size ()
+   (string-to-number (shell-command-to-string "free --mega | awk 'FNR == 2 {print $2}'")))
+
 (use-package slime
-  :ensure t
+  ;; following line broke it
+  ;; :ensure t
   
-  ;; :config
+  :config
   ;; (load (expand-file-name "$HOME/.roswell/helper.el"))
   
   ;; $ ros config
@@ -22,8 +26,7 @@
   ;; query with: (/ (- sb-vm:dynamic-space-end sb-vm:dynamic-space-start) (expt 1024 2))
   ;; set memory of sbcl to your machine's RAM size for sbcl and clisp
   ;; (but for others - I didn't used them yet)
-  (defun linux-system-ram-size ()
-    (string-to-number (shell-command-to-string "free --mega | awk 'FNR == 2 {print $2}'")))
+  
   ;; (linux-system-ram-size)
   ;; (setq inferior-lisp-program (concat "ros -Q dynamic-space-size="     
   ;;                                     (number-to-string (linux-system-ram-size)) 

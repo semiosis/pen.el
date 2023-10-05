@@ -41,7 +41,6 @@
  '(ediprolog-system 'swi t)
  '(elfeed-feeds
    '("https://news.ycombinator.com/rss" "https://mullikine.github.io/index.xml" "https://lexi-lambda.github.io/feeds/all.rss.xml" "https://ahungry.com/blog/rss.xml"))
- '(epg-gpg-program "$HOME/scripts/gpg2")
  '(evil-want-Y-yank-to-eol nil)
  '(fci-rule-color "#424242" t)
  '(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)

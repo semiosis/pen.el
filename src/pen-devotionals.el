@@ -27,6 +27,15 @@
     (listen-to-davidjeremiah id)))
 
 
+(defun chuckswindoll (&optional last_n)
+  (interactive (list (string-to-int (sor (read-string-hist "last `n` devotionals:")
+                                         "0"))))
+  (let ((id (string-to-int (s-replace-regexp ":.*" "" (fz (davidjeremiah-list last_n)
+                                                          nil nil "Devotional:")))))
+
+    (listen-to-davidjeremiah id)))
+
+
 (defun davidjeremiah-list (&optional last_n)
   (interactive (list (string-to-int (read-string-hist "last `n` devotionals:"))))
   (let* ((max_id (string-to-int (pen-snc "david-jeremiah-get-latest-radio-id")))

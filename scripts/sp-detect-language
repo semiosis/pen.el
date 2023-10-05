@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+fp="$1"
+
+lang="$(cat "$fp" | sp -aft +ooq "(buffer-language)" +e "(kill-buffer)" | cat)" 2>/dev/null
+printf -- "%s\n" "$lang"

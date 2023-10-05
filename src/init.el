@@ -95,7 +95,10 @@
 (require 'guess-language)
 (require 'language-detection)
 ;; (require 'org-roam)
-(require 'org-brain)
+
+;; currently broken
+;; (require 'org-brain)
+
 (require 'dash)
 (require 'eterm-256color)
 ;; (require 'flyspell)

@@ -364,15 +364,17 @@ revisions (interactive.e., use a \"...\" range)."
     ("v" "Dwim vim term" magit-diff-dwim-vim-term)
     ("v" "Dwim git diff pretty" magit-diff-dwim-vim-term)]])
 
-(require 'magit-circleci)
-(setq magit-circleci-token "b3963f42e3df0177260fcb4afbf6d7e32c4f968b")
+;; (require 'magit-circleci)
+;; (setq magit-circleci-token "b3963f42e3df0177260fcb4afbf6d7e32c4f968b")
 
 ;; I think that the wrong version of magit was loaded, but this appears to fix it
 ;; (load "/home/shane/.emacs.d/packages27/magit-20200927.1644/magit-status.el")
 ;; forge wasn't able to start
 
-(use-package forge
-  :after magit)
+;; broken
+;; (use-package forge
+;;   :after magit)
+
 ;; forge uses ghub
 ;; https://github.com/magit/ghub
 
