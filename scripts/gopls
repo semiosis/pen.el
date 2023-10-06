@@ -8,4 +8,4 @@ export TTY
 # github author/repo may need adjustment
 test -f "${GOPATH%%:*}/bin/up" || go install golang.org/x/tools/gopls@latest &>/dev/null
  
-${GOPATH%%:*}/bin/gopls "$@"
+arbritrate ${GOPATH%%:*}/bin/gopls "$@"

@@ -7,23 +7,4 @@ export TTY
 
 # raco pkg update --batch racket-langserver
 
-if pen-rc-test ask_view_lsp; then
-    pen-tm yn "view stdin?" && exec < <(tmicat)
-    pen-tm yn "view stdout?" && exec 1> >(tmicat)
-elif pen-rc-test ask_log_lsp; then
-    pen-tm yn "log stdin?" && {
-        tf_in="$(pen-ux tf in || echo /dev/null)"
-        exec < <(tee "$tf_in")
-        0</dev/null pen-sps -E "$(cmd-nice-posix v "$tf_in")"
-    }
-    pen-tm yn "log stdout?" && {
-        tf_out="$(pen-ux tf out || echo /dev/null)"
-        exec 1> >(tee "$tf_out")
-        0</dev/null pen-sps -E "$(cmd-nice-posix v "$tf_out")"
-    }
-elif pen-rc-test ask_arbitrate_lsp; then
-    pen-tm yn "arbitrate stdin?" && exec < <(tmi)
-    pen-tm yn "arbitrate stdout?" && exec 1> >(tmi)
-fi
-
-"racket" "--lib" "racket-langserver" "$@"
+arbitrate "racket" "--lib" "racket-langserver" "$@"
