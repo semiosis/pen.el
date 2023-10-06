@@ -1,11 +1,18 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+parent="$(ps -o comm= $PPID)"
+( hs "$(basename "$0")" "$@" "#" "<==" "$parent" 0</dev/null ) &>/dev/null
 
 test -f "/root/.cargo/bin/rust-analyzer" && : "${bin:="/root/.cargo/bin/rust-analyzer"}"
-test -f "/root/.local/bin/rust-analyzer" && : "${bin:="/root/.local/bin/rust-analyzer"}"
+# test -f "/root/.local/bin/rust-analyzer" && : "${bin:="/root/.local/bin/rust-analyzer"}"
  
-test -f "$bin" || cargo install "rust-analyzer" &>/dev/null
+test -f "$bin" || rustup toolchain install nightly --component rust-analyzer-preview &>/dev/null
 
-arbitrate "$bin" "$@"
+"$bin" "$@"
+
+if test "$parent" = emacs; then
+    "$bin" "$@"
+else
+    arbitrate "$bin" "$@"
+fi

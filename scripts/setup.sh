@@ -1043,8 +1043,9 @@ pyf yamlfmt
 # Currently not working. Apparantly, it's normal for the latest version to not work
 # Install the rust language server (rust-analyzer) manually (rather than through emacs)
 rm -f ~/.cargo/bin/rust-analyzer
-rm -f ~/.local/bin/rust-analyzer
 rustup toolchain install nightly --component rust-analyzer-preview
+
+rm -f ~/.local/bin/rust-analyzer
 
 (
 cd "$(gc "https://github.com/rust-analyzer/rust-analyzer")"
