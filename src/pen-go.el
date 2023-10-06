@@ -1,3 +1,3 @@
-(use-package go-mode :defer t)
+(use-package go-mode :ensure t)
 
 (provide 'pen-go)
