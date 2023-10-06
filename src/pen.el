@@ -2262,6 +2262,7 @@ May use to generate code from comments."
 (require 'pen-net)
 (require 'pen-alarm)
 (require 'pen-clojure)
+(require 'pen-go)
 (require 'pen-racket)
 (require 'pen-lsp-go)
 (require 'pen-lsp-rust)
