@@ -27,5 +27,5 @@
                                       (lsp--set-configuration
                                        `(:racket ,lsp-racket--config-options))))))
 
-(provide 'lsp-racket)
+(provide 'pen-lsp-racket)
 ;;; lsp-racket.el ends here
