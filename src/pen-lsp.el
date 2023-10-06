@@ -1,7 +1,7 @@
 (require 'lsp-mode)
 (require 'el-patch)
 (require 'lsp-haskell)
-(require 'lsp-racket)
+(require 'pen-lsp-racket)
 (require 'lsp-go)
 (require 'lsp-clojure)
 (require 'ccls)
@@ -9,7 +9,7 @@
 (require 'rust-mode)
 (require 'helm-lsp)
 (require 'lsp-headerline)
-(require 'lsp-common-lisp)
+(require 'pen-lsp-common-lisp)
 
 (el-patch-feature lsp-mode)
 (el-patch-defun lsp (&optional arg)
@@ -138,6 +138,7 @@ This issue might be caused by:
   (add-hook 'before-save-hook #'lsp-format-buffer t t)
   (add-hook 'before-save-hook #'lsp-organize-imports t t))
 (add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
+(add-hook 'go-ts-mode-hook #'lsp-go-install-save-hooks)
 
 (comment
  (use-package lsp-haskell

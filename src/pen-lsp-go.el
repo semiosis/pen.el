@@ -28,5 +28,5 @@
                                       (lsp--set-configuration
                                        `(:go ,lsp-go--config-options))))))
 
-(provide 'lsp-go)
+(provide 'pen-lsp-go)
 ;;; lsp-go.el ends here

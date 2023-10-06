@@ -29,5 +29,5 @@
                                       (lsp--set-configuration
                                        `(:common-lisp ,lsp-common-lisp--config-options))))))
 
-(provide 'lsp-common-lisp)
+(provide 'pen-lsp-common-lisp)
 ;;; lsp-common-lisp.el ends here

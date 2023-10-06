@@ -28,5 +28,5 @@
                                       (lsp--set-configuration
                                        `(:rust ,lsp-rust--config-options))))))
 
-(provide 'lsp-rust)
+(provide 'pen-lsp-rust)
 ;;; lsp-rust.el ends here

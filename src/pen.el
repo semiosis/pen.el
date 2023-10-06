@@ -2263,8 +2263,8 @@ May use to generate code from comments."
 (require 'pen-alarm)
 (require 'pen-clojure)
 (require 'pen-racket)
-(require 'lsp-go)
-(require 'lsp-rust)
+(require 'pen-lsp-go)
+(require 'pen-lsp-rust)
 (require 'pen-haskell)
 (require 'pen-browser)
 
