@@ -191,6 +191,7 @@ This issue might be caused by:
 (add-hook 'gitlab-ci-mode-hook 'maybe-lsp)
 (add-hook 'sh-mode-hook 'maybe-lsp)
 (add-hook 'rust-mode-hook 'maybe-lsp)
+(add-hook 'rust-ts-mode-hook 'maybe-lsp)
 (add-hook 'vimrc-mode-hook 'maybe-lsp)
 (add-hook 'racket-mode-hook 'maybe-lsp)
 (add-hook 'lisp-mode-hook 'maybe-lsp)
@@ -210,7 +211,7 @@ This issue might be caused by:
              clojurex-mode))
   (add-to-list 'lsp-language-id-configuration `(,m . "clojure")))
 
-(dolist (m '(rustic-mode))
+(dolist (m '(rustic-mode rust-ts-mode))
   (add-to-list 'lsp-language-id-configuration `(,m . "rust")))
 
 (setq lsp-enable-indentation nil)
@@ -587,11 +588,17 @@ We don't extract the string that `lps-line' is already displaying."
   :package-version '(lsp-mode . "7.1"))
 (setq lsp-go-langserver-command "gopls")
 
-(defcustom lsp-racket-langserver-command '("racket-langserver")
+(defcustom lsp-racket-langserver-command '("racket-lsp")
   "Command to start the server."
   :type 'string
   :package-version '(lsp-mode . "7.1"))
 (setq lsp-racket-langserver-command "racket-lsp")
+
+(defcustom lsp-rust-langserver-command '("rust-analyzer")
+  "Command to start the server."
+  :type 'string
+  :package-version '(lsp-mode . "7.1"))
+(setq lsp-rust-langserver-command "rust-analyzer")
 
 (defcustom lsp-common-lisp-langserver-command '("cl-lsp")
   "Command to start the server."
