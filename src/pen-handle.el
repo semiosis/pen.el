@@ -189,7 +189,7 @@
                    lispy-flow)
         :prevdef '(pen-prog-prev-def))
 
-(handle '(rust-mode rustic-mode)
+(handle '(rust-mode rustic-mode rust-ts-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list
                 'sps-top
@@ -282,7 +282,7 @@
         :nextdef '(pen-prog-next-def)
         :prevdef '(pen-prog-prev-def))
 
-(handle '(go-mode)
+(handle '(go-mode go-ts-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list)
         :formatters '(lsp-format-buffer)
