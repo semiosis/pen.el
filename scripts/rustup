@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f $HOME/.cargo/bin/rustup || cargo install "rustup" &>/dev/null
+
+# Remove 'scripts' so rustup replaces binaries such as:
+# /root/.cargo/bin/rust-analyzer
+# in te correct place
+
+$HOME/.cargo/bin/rustup "$@"

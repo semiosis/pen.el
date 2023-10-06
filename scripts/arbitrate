@@ -2,7 +2,7 @@
 export TTY
 # shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+( 0</dev/null hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 if pen-rc-test ask_view_lsp; then
     pen-tm yn "view stdin?" && exec < <(tmicat)
