@@ -2,6 +2,7 @@
 (require 'el-patch)
 (require 'lsp-haskell)
 (require 'lsp-racket)
+(require 'lsp-go)
 (require 'lsp-clojure)
 (require 'ccls)
 (require 'lsp-ui)
@@ -576,6 +577,12 @@ We don't extract the string that `lps-line' is already displaying."
             '(progn
                (deactivate-mark)))
          (error "lsp-ui-peek-find-references failed"))))))
+
+(defcustom lsp-go-langserver-command '("gopls")
+  "Command to start the server."
+  :type 'string
+  :package-version '(lsp-mode . "7.1"))
+(setq lsp-go-langserver-command "gopls")
 
 (defcustom lsp-racket-langserver-command '("racket-langserver")
   "Command to start the server."

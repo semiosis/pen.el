@@ -21,10 +21,23 @@ else
     CMD="$(cmd-nice-posix "$@")"
 fi
 
-is_tty() {
-    # If stout is a tty
-    [[ -t 1 ]]
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
 }
+
+if stdin_exists || printf -- "%s\n" "$CMD" | grep -q -P ' '; then
+    CMD="$(nsfa "$CMD")"
+
+    exec <&1
+fi
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 if is_tty; then
     x -sh "$(cmd sp -e "(pen-start-process $(cmd-nice-posix "$CMD"))")" -e "When done with this frame" -sl 0.5 -m '<' -sl 0.5 -m '>' -i

@@ -429,7 +429,8 @@ git clone "https://github.com/semiosis/efm-langserver"
 cd "efm-langserver"
 )
 
-go get "golang.org/x/tools/gopls@latest"
+# go language server
+go install golang.org/x/tools/gopls@latest
 
 (
 cp -a "$EMACSD/pen.el/config/nvimrc" ~/.vimrc
