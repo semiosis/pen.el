@@ -1,10 +1,11 @@
 ;;; lsp-go.el --- go support for lsp-mode -*- lexical-binding: t -*-
 (require 'lsp-mode)
 
-(defcustom lsp-go-executable-path "go"
+(defcustom lsp-go-executable-path "gopls"
   "Path to go executable."
   :group 'lsp-go
   :type 'string)
+(setq lsp-go-executable-path "gopls")
 
 (defcustom lsp-go-server-args '()
   "Extra arguments for the go language server."
@@ -20,7 +21,7 @@
 (lsp-register-client
  (make-lsp-client :new-connection
                   (lsp-stdio-connection 'lsp-go--server-command)
-                  :major-modes '(go-mode)
+                  :major-modes '(go-mode go-ts-mode)
                   :server-id 'go
                   :initialized-fn (λ (workspace)
                                     (with-lsp-workspace workspace

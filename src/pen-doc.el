@@ -120,7 +120,8 @@
    ((derived-mode-p 'lisp-mode)
     (call-interactively 'slime-documentation))
 
-   ((derived-mode-p 'go-mode)
+   ((or (derived-mode-p 'go-mode)
+        (derived-mode-p 'go-ts-mode))
     (progn (godoc-at-point (point))))
 
    ((derived-mode-p 'python-mode)
@@ -159,7 +160,8 @@
   (if (string-equal (preceding-sexp-or-element) "#lang")
       (racket--repl-command "doc %s" (concat "H:" (str (sexp-at-point))))
     (cond
-     ((derived-mode-p 'go-mode)
+     ((or (derived-mode-p 'go-mode)
+          (derived-mode-p 'go-ts-mode))
       (progn (spacemacs/jump-to-definition)))
 
      (t (let ((lang (current-lang t))

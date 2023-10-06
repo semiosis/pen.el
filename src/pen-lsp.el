@@ -129,7 +129,9 @@ This issue might be caused by:
 (use-package lsp-mode
   :ensure t
   :commands (lsp lsp-deferred)
-  :hook (go-mode . lsp-deferred))
+  ;; :hook (go-mode . lsp-deferred)
+  :hook ((go-mode . lsp-deferred)
+         (go-ts-mode . lsp-deferred)))
 
 (remove-hook 'before-save-hook 'gofmt-before-save)
 (defun lsp-go-install-save-hooks ()
@@ -183,6 +185,7 @@ This issue might be caused by:
 (add-hook 'julia-mode-hook 'maybe-lsp)
 (add-hook 'ess-julia-mode-hook 'maybe-lsp)
 (add-hook 'go-mode-hook 'maybe-lsp)
+(add-hook 'go-ts-mode-hook 'maybe-lsp)
 (add-hook 'cmake-mode-hook 'maybe-lsp)
 (add-hook 'ruby-mode-hook 'maybe-lsp)
 (add-hook 'gitlab-ci-mode-hook 'maybe-lsp)
