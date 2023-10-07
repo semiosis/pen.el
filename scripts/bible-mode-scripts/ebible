@@ -57,6 +57,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -n) {
+        VERSE_NUMBERS=y
+        shift
+    }
+    ;;
+
     -c) {
         format=internal
         CONCORDANCE=y

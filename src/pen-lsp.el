@@ -173,6 +173,7 @@ This issue might be caused by:
 (add-hook 'c++-mode-hook 'maybe-lsp)
 (add-hook 'c-mode-hook #'maybe-lsp)
 (add-hook 'python-mode-hook 'maybe-lsp)
+(add-hook 'python-ts-mode-hook 'maybe-lsp)
 (add-hook 'perl-mode-hook 'maybe-lsp)
 ;; (remove-hook 'perl-mode-hook 'maybe-lsp)
 (add-hook 'dockerfile-mode-hook 'maybe-lsp)

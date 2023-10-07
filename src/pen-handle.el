@@ -311,6 +311,35 @@
         :nextdef '(pen-prog-next-def)
         :prevdef '(pen-prog-prev-def))
 
+(handle '(python-mode python-ts-mode)
+        ;; Re-using may not be pythonod, actually, if I'm working with multiple projects
+        :repls (list)
+        :formatters '(lsp-format-buffer)
+        :docs '(pen-esp-docs-for-thing-if-prefix
+                pen-doc-override
+                lsp-describe-thing-at-point
+                pen-doc-thing-at-point
+                pen-docs-for-thing-given-screen)
+        :toggle-test '(projectile-toggle-between-implementation-and-test
+                       clojure-open-test)
+        :fz-sym '()
+        :pythondef '(lsp-find-definition
+                 xref-find-definitions-immediately
+                 helm-gtags-dwim)
+        :errors '()
+        :docsearch '(pen-doc)
+        :docfun '()
+
+        :refactor '()
+        :rename-symbol '(lsp-rename cljr-rename-symbol)
+        :references '(lsp-ui-peek-find-references lsp-find-references pen-counsel-ag-thing-at-point)
+        :projectfile '()
+        :preverr '()
+        :nexterr '()
+
+        :nextdef '(pen-prog-next-def)
+        :prevdef '(pen-prog-prev-def))
+
 (handle '(prog-mode)
         :complete '()
         ;; This is for running the program
