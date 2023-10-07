@@ -36,10 +36,7 @@ func_trap() {
 
 key="$(p "$key" | sed -z 's/\(.\).*/\1/')"
 
-is_tty() {
-    # If stout is a tty
-    [[ -t 1 ]]
-}
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 ns() {
     printf -- "%s\n" "$@" 2>&1
@@ -49,7 +46,6 @@ if ! is_tty; then
     ns "pak can't read. continuing"
     exit 0
 fi
-
 
 (  exec <`pen-tm-tty`  ) &>/dev/null
 

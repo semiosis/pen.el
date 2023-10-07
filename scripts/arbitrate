@@ -23,4 +23,14 @@ elif pen-rc-test ask_arbitrate_lsp; then
     pen-tm yn "arbitrate stdout?" && exec 1> >(tmi)
 fi
 
-"$@"
+strace "$@"
+ret="$?"
+
+set -xv
+echo "Finished with '$ret'" | hls red 1>&2
+exec <`tm-tty` `# see etty` 
+exec 2>&1;
+exec 0<&1
+pak
+sleep 10
+exit "$ret"

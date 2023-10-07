@@ -3,4 +3,14 @@ export TTY
 
 # ap- "fix-racket-doc-url | pen-xc -i" "$@"
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -i) {
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 ap- "pen-xc -i" "$@"
