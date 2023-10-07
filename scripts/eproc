@@ -31,11 +31,12 @@ stdin_exists() {
     } &>/dev/null
 }
 
-if stdin_exists || printf -- "%s\n" "$CMD" | grep -q -P ' '; then
-    CMD="$(nsfa "$CMD")"
-
-    exec <&1
-fi
+# TODO Make stdin go into snfa
+# if stdin_exists || printf -- "%s\n" "$CMD" | grep -q -P ' '; then
+#     CMD="$(nsfa "$CMD")"
+# 
+#     exec <&1
+# fi
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
