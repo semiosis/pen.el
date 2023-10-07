@@ -41,7 +41,7 @@ stdin_exists() {
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 if is_tty; then
-    x -sh "$(cmd sp -e "(pen-start-process $(cmd-nice-posix "$CMD"))")" -e "When done with this frame" -sl 0.5 -m '<' -sl 0.5 -m '>' -i
+    cmd-nice x -sh "$(cmd sp -e "(pen-start-process $(cmd-nice-posix "$CMD"))")" -e "When done with this frame" -sl 0.5 -m '<' -sl 0.5 -m '>' -i
 else
-    sp -e "(pen-start-process $(cmd-nice-posix "$CMD"))" +ofq "(current-buffer-name)" | cat
+    cmd-nice sp -e "(pen-start-process $(cmd-nice-posix "$CMD"))" +ofq "(current-buffer-name)" | cat
 fi
