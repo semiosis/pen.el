@@ -30,3 +30,6 @@
 
 (provide 'pen-lsp-rust)
 ;;; lsp-rust.el ends here
+
+;; (dolist (m '(rustic-mode rust-ts-mode))
+;;   (add-to-list 'lsp-language-id-configuration `(,m . "rust")))

@@ -9,10 +9,4 @@ test -f "/root/.cargo/bin/rust-analyzer" && : "${bin:="/root/.cargo/bin/rust-ana
  
 test -f "$bin" || rustup toolchain install nightly --component rust-analyzer-preview &>/dev/null
 
-"$bin" "$@"
-
-if test "$parent" = emacs; then
-    "$bin" "$@"
-else
-    arbitrate "$bin" "$@"
-fi
+arbitrate "$bin" "$@"
