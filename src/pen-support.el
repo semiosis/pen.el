@@ -1758,6 +1758,8 @@ when s is a string, set the clipboard to s"
   ;; (setq lang (language-detection-string (buffer-string))
   (pen-set-major-mode (lang-to-mode lang)))
 
+(defalias 'guess-major-mode 'pen-guess-major-mode-set)
+
 (defmacro df (name &rest body)
   "Named interactive λ with no arguments"
   `(defun ,name ()

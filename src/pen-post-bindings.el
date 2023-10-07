@@ -153,8 +153,8 @@
         (sslk "ldc" (dff (pen-open-dir "$HOME/.emacs.d/host/pen.el/src")))
         (sslk "ldC" (dff (pen-open-dir "$HOME/.emacs.d/host/pen.el/src"))))
     (progn
-        (sslk "ldc" (dff (pen-open-dir "$HOME/.emacs.d/config")))
-        (sslk "ldC" (dff (pen-open-dir "$HOME/.emacs.d/config")))))
+      (sslk "ldc" (dff (pen-open-dir "$HOME/.emacs.d/config")))
+      (sslk "ldC" (dff (pen-open-dir "$HOME/.emacs.d/config")))))
   (sslk "ldL" (dff (pen-open-dir "$HOME/.pen/glossaries")))
   (sslk "ldb" (dff (pen-open-dir "$DUMP$NOTES/ws/blog/blog")))
   (sslk "ldB" (dff (pen-open-dir "$HOME/blog/posts")))
@@ -173,10 +173,16 @@
   (sslk "lrr." (df edit-pen-spacemacs (e "$MYGIT/config/emacs/config/pen-spacemacs.el")))
   (sslk "lrrv" (df edit-pen-spacemacs (e "$MYGIT/config/emacs/config/pen-evil.el")))
   (sslk "lghc/" #'pen-github-search-and-clone)
-  (sslk "lpJ" (df play-js (et playground js)))
-  (sslk "lpj" (df tm-play-js (etm playground js)))
-  (sslk "lpG" (df play-github (et playground github)))
-  (sslk "lp." (df edit-play-github (e (b which playground))))
+
+  (defshellfilter-new-buffer scrape-bible-references)
+  (sslk "lpjv" 'sh/nb/scrape-bible-references)
+  (define-key global-map (kbd "M-l M-p M-j") nil)
+
+  ;; (sslk "lpJ" (df play-js (et "playground js")))
+  ;; (sslk "lpj" (df tm-play-js (etm "playground js")))
+  ;; (sslk "lpG" (df play-github (et "playground github")))
+  ;; (sslk "lp." (df edit-play-github (e (b which playground))))
+
   (sslk "lgde" #'end-of-defun)
   (sslk "l7" #'pen-selection-note)
   (sslk "l9" #'search-google-for-doc)

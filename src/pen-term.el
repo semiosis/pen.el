@@ -285,6 +285,8 @@ commands to use in that buffer.
     ;;   (pen-eterm program closeframe modename buffer-name reuse starting-elisp))
     ))
 
+(defalias 'et 'pen-term)
+
 (defun pen-vterm (program &optional closeframe modename buffer-name reuse starting-elisp)
   (interactive (list (read-string "program:")))
   (let ((vterm-shell (or program

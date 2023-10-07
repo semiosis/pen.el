@@ -933,6 +933,7 @@ buffer which is not included when this function returns"
     `(progn
        (defshellfilter ,@body)
        (defun ,sf-nb (s)
+         (interactive (list (pen-buffer-string-or-selection)))
          (new-buffer-from-string (eval `(,',sf ,s)) nil ,mode)
          s))))
 (defmacro defshellfilter-new-buffer (&rest body)
@@ -942,6 +943,7 @@ buffer which is not included when this function returns"
     `(progn
        (defshellfilter ,@body)
        (defun ,sf-nb (s)
+         (interactive (list (pen-buffer-string-or-selection)))
          (new-buffer-from-string-detect-lang (eval `(,',sf ,s)))
          s))))
 
