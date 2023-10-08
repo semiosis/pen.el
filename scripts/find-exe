@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+if test -d "$1"; then
+    cd "$1"
+fi
+
+find . -mindepth 1 -path '*/.git/*' -prune -o \( -type f -a -executable \) -print | sed 's/^\.\///' | pavs

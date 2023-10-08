@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# extractcpx extract The\ Anarchy\ of\ King\ Stephen.aoe2campaign
+/volumes/home/shane/var/smulliga/source/git/SiegeEngineers/genie-rs/target/debug/examples/extractcpx extract "$@"
