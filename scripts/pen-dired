@@ -67,9 +67,10 @@ stdin_exists() {
 if stdin_exists; then
     joined_list="$(sed 's/^\.\///' | sed "s=${dired_dir}/==" | lines-to-args)"
     # dired_ls_cmd="shift 3; cd \"\$1\"; shift; dired-ls-d --dired -alh -- $joined_list"
+    size="total $(eval "ls -d $joined_list" | tail -n 1 | cut -d '	' -f 1)"
     dired_ls_cmd="shift 2; dired-ls-d --dired -alh -- $joined_list"
     # dired_ls_cmd="dired-ls-d $joined_list"
-    dired_cmd="$(nsfa -E "$dired_ls_cmd")"
+    dired_cmd="$(nsfa -E "echo $total; $dired_ls_cmd" | tv)"
 fi
 
 exec <&1

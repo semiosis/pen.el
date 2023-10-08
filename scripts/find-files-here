@@ -1,0 +1,35 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+dir="$1"
+: "${dir:="."}"
+
+if test -n "$dir"; then
+    FULLY_QUALIFIED=y
+fi
+
+: ${dir:="."}
+
+cd "$dir"
+
+exec 3>&2
+exec 2>/dev/null
+
+{
+    # Files
+    {
+        find . -type f
+    }
+
+} | remove-prefix "./" | {
+    if test "$FULLY_QUALIFIED" = "y"; then
+        sed "s=^=$dir/="
+    else
+        cat
+    fi
+} | uniqnosort | {
+    exec 2>&3;
+    pa -vs
+}

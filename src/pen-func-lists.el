@@ -46,6 +46,7 @@
                            open-main
                            dired-toggle-read-only
                            find-ci-here
+                           find-src-here
                            show-extensions-below
                            run-fs-search-function
                            todayfile

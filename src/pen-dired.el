@@ -173,6 +173,28 @@
          (paras "--dired -alh"))
     (dired-cmd script dir paras)))
 
+(defun find-src-here (&optional a_dir)
+  (interactive)
+  (let* ((dir (or
+               (sor a_dir)
+               (pen-umn default-directory)))
+         (joined-list (pen-snc "find-src-here | sed 's/^\\.\\///' | lines-to-args" nil dir))
+         (dired-ls-cmd (concat "shift 2; dired-ls-d --dired -alh -- " joined-list))
+         (script (pen-nsfa dired-ls-cmd dir))
+         (paras "--dired -alh"))
+    (dired-cmd script dir paras)))
+
+(defun find-files-here (&optional a_dir)
+  (interactive)
+  (let* ((dir (or
+               (sor a_dir)
+               (pen-umn default-directory)))
+         (joined-list (pen-snc "find-no-git -f | lines-to-args" nil dir))
+         (dired-ls-cmd (concat "shift 2; dired-ls-d --dired -alh -- " joined-list))
+         (script (pen-nsfa dired-ls-cmd dir))
+         (paras "--dired -alh"))
+    (dired-cmd script dir paras)))
+
 (define-key dired-mode-map (kbd "C-p") nil)
 (remove-hook 'dired-mode-hook
              (defun ranger-set-dired-key ()
@@ -231,5 +253,9 @@ read from minibuffer."
       (cond
        ((equal disable-narrow "dired-narrow-enter-directory")
         (dired-narrow--internal filter-function))))))
+
+(define-key dired-mode-map (kbd "@") 'find-src-here)
+(define-key dired-mode-map (kbd "{") 'find-ci-here)
+(define-key dired-mode-map (kbd "}") 'find-files-here)
 
 (provide 'pen-dired)
