@@ -26,20 +26,7 @@ exec 2>/dev/null
     # Files
     {
         # find . -type f -name '.ament_pclint-ignore-headers'
-        find . -type f -name '.appveyor.yml'
-        find . -type f -name 'cucumber.yml'
-        find . -type f -name 'appveyor.yml'
-        find . -type f -name '.codebeatignore'
-        find . -type f -name '.clang-format'
-        find . -type f -name '.clang-tidy'
-        find . -type f -name '.classpath'
-        find . -type f -name '.flake8'
-        find . -type f -name '.gitattributes'
-        # find . -type f -name '.gitignore'
-        find . -type f \( \
-            -name '.aderc' -o \
-            -name 'docker-compose.yml' -o \
-            \)
+        find . -type f -name '.emacs'
     }
 
     # Files under dir
