@@ -1182,8 +1182,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-mode-show-definition ()
   (interactive)
   (cond
+   ;; TODO Translate Maori into English, then look up word in theological dictionary
+   ;; TODO Translate theological dictionary definition into Maori
    ((string-equal "Maori" bible-mode-book-module) (call-interactively 'maori-dictionary))
-   (t nil)))
+   ;; TODO Use theological dictionaries
+   ;; https://www.swordsearcher.com/resources.html
+   (t (call-interactively 'wordnut-lookup-current-word))
+   ;; (t nil)
+   ))
 
 (define-key bible-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
