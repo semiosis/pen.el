@@ -39,7 +39,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         dired_dir="$(realpath "$dired_dir")"
         shift
         cd "$dired_dir"
-        # find_cmd="$(find . "$@")"
         exec < <(find . "$@")
         shift "$#"
     }
@@ -55,7 +54,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if test "$(pwd)" = "$SCRIPTS"; then
-    ns "The scripts git repo is huge. Disable dired git info."
+    0</dev/null ns "The scripts git repo is huge. Disable dired git info."
     dogit=n
 fi
 
