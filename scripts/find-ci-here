@@ -1,0 +1,84 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+dir="$1"
+
+if test -n "$dir"; then
+    FULLY_QUALIFIED=y
+fi
+
+: ${dir:="."}
+
+cd "$dir"
+
+exec 3>&2
+exec 2>/dev/null
+
+{
+    # wildcards work
+    # vim +/"\*.circleci" "$NOTES/ws/lists/file-types/ci.txt"
+    if "$NOTES/ws/lists/file-types/ci.txt"; then
+        eval "$(cmd find . -type f) $(cat "$NOTES/ws/lists/file-types/ci.txt" | sed -n "s/.*/-name '&'/ip" | s join ' -or ')"
+    fi
+
+    # Files
+    {
+        # find . -type f -name '.ament_pclint-ignore-headers'
+        find . -type f -name '.appveyor.yml'
+        find . -type f -name 'cucumber.yml'
+        find . -type f -name 'appveyor.yml'
+        find . -type f -name '.codebeatignore'
+        find . -type f -name '.clang-format'
+        find . -type f -name '.clang-tidy'
+        find . -type f -name '.classpath'
+        find . -type f -name '.flake8'
+        find . -type f -name '.gitattributes'
+        # find . -type f -name '.gitignore'
+        find . -type f \( \
+            -name '.aderc' -o \
+            -name 'docker-compose.yml' -o \
+            -name 'actions.yml' -o \
+            -name 'pylintrc' -o \
+            -name '.vimrc' -o \
+            -name '.gitkeep' -o \
+            -name '.gitlab-ci.yml' -o \
+            -name '.gitmodules' -o \
+            -name '.gitrepo' -o \
+            -name '.keep' -o \
+            -name '.project' -o \
+            -name '.travis.yml' -o \
+            -name '.ycm_extra_conf.py' \
+            \)
+    }
+
+    # Files under dir
+    {
+        find . -type f -path '*.appveyor/*'
+        find . -type f -path '*.circleci/*'
+        find . -type f -path '*.colcon/*'
+        find . -type f -path '*.config/*'
+        # find . -type f -path '*.docker_images/*'
+        find . -type f -path '*.github/*'
+        find . -type f -path '*.local/*'
+        find . -type f -path '*.settings/*'
+        find . -type f -path '*.travis/*'
+    }
+
+    # Dirs
+    {
+        find . -type d -name '.msvs'
+        find . -type d -name '.vscode'
+        find . -type d -name '.doxygen'
+    } | sed 's=$=/='
+} | remove-prefix "./" | {
+    if test "$FULLY_QUALIFIED" = "y"; then
+        sed "s=^=$dir/="
+    else
+        cat
+    fi
+} | uniqnosort | {
+    exec 2>&3;
+    pa -vs
+}
