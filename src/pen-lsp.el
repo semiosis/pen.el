@@ -743,10 +743,25 @@ We don't extract the string that `lps-line' is already displaying."
     (pen-etv (pp-to-string l))))
 
 ;; Disable clicking lens stuff -- such as labels that say '2 references'
+;; (defun lsp-lens--keymap (command)
+;;   "Build the lens keymap for COMMAND."
+;;   (-doto (make-sparse-keymap)
+;;     (identity)))
+
+;; Instead, I changed the keymap to be right-click instead of remove it.
+;; This is so I can freely click around code.
+;; Sadly, that didn't work because right-click menu runs
+;; (defun lsp-lens--keymap (command)
+;;   "Build the lens keymap for COMMAND."
+;;   (-doto (make-sparse-keymap)
+;;     (define-key [mouse-3] (lsp-lens--create-interactive-command command))))
+
+;; And C-click is taken by right click menu
 (defun lsp-lens--keymap (command)
   "Build the lens keymap for COMMAND."
   (-doto (make-sparse-keymap)
-    (identity)))
+    ;; (define-key (kbd "C-<down-mouse-1>") (lsp-lens--create-interactive-command command))
+    (define-key (kbd "M-<down-mouse-1>") (lsp-lens--create-interactive-command command))))
 
 (advice-add 'lsp-lens--display :around #'ignore-errors-around-advice)
 

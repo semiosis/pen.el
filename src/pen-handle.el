@@ -480,11 +480,48 @@
         :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
 
-(handle '(c-mode)
-        :nexterr '()
-        :docs '(man-thing-at-point-cpp
-                pen-docs-for-thing-given-screen)
-        :preverr '())
+(handle '(c-mode c-ts-base-mode c++-ts-mode)
+        ;; Re-using may not be good, actually, if I'm working with multiple projects
+        :repls (list
+                'sps-top
+                ;; 'slime-repl
+                )
+        :formatters '(lsp-format-buffer)
+        :docs '(pen-doc-override
+                man-thing-at-point-cpp
+                pen-docs-for-thing-given-screen
+                lsp-describe-thing-at-point)
+
+        ;; Not at point - manual entry of symbol, searches web
+        :docsearch '(pen-doc)
+
+        ;; Not at point - manual entry of symbol with fuzzy finder
+        :docfun '()
+
+        :toggle-test '(projectile-toggle-between-implementation-and-test
+                       common-lisp-open-test)
+        :fz-sym '(
+                  ;; This seems to not be the correct one
+                  lsp-ivy-global-workspace-symbol)
+        :godef '(lsp-find-definition
+                 xref-find-definitions-immediately
+                 helm-gtags-dwim)
+        :errors '(lsp-treemacs-errors-list)
+
+        :refactor '()
+        :rename-symbol '(lsp-rename
+                         )
+        :references '(lsp-ui-peek-find-references lsp-find-references pen-counsel-ag-thing-at-point)
+        :projectfile '(
+                       ;; pen-common-lisp-project-file
+                       )
+
+        ;; Improve this
+        :preverr '(lsp-treemacs-errors-list)
+        :nexterr '(lsp-treemacs-errors-list)
+
+        :nextdef '(pen-prog-next-def)
+        :prevdef '(pen-prog-prev-def))
 
 (handle '(term-mode)
         :nexterr '()
