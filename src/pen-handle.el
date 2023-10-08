@@ -488,9 +488,9 @@
                 )
         :formatters '(lsp-format-buffer)
         :docs '(pen-doc-override
+                lsp-describe-thing-at-point
                 man-thing-at-point-cpp
-                pen-docs-for-thing-given-screen
-                lsp-describe-thing-at-point)
+                pen-docs-for-thing-given-screen)
 
         ;; Not at point - manual entry of symbol, searches web
         :docsearch '(pen-doc)
