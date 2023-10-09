@@ -10,6 +10,7 @@
 (sslk "lap" #'list-processes)
 (sslk "laS" #'list-clients)
 (sslk "lal" #'bufler)
+(sslk "lqtt" #'todayfile)
 (sslk "laU" #'bluetooth-list-devices)
 (sslk "lag" #'gist-list)
 (sslk "laN" #'gnus)
