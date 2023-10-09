@@ -2271,10 +2271,10 @@ May use to generate code from comments."
 (require 'pen-haskell)
 (require 'pen-browser)
 
-(if (inside-docker-p)
-    (progn
-      (require 'pen-chatgpt)
-      (load-library "pen-chatgpt")))
+;; (if (inside-docker-p)
+;;     (progn
+;;       (require 'pen-chatgpt)
+;;       (load-library "pen-chatgpt")))
 
 (require 'pen-custom-conf)
 

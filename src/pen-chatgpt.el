@@ -1,5 +1,8 @@
 (require 'epc)
 
+;; chatgpt-shell
+;; ob-chatgpt-shell
+
 ;; This needs to point to the script
 (defset python-interpreter (snc "which python"))
 
