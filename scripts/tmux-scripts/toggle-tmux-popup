@@ -61,6 +61,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -time) {
+        display_time="$2"
+        shift
+        shift
+    }
+    ;;
+
     -nob) {
         no_border=y
         shift
@@ -219,9 +226,17 @@ tmuxdetach() {
         command tmux "$@" &
         disown
     else
-        command tmux "$@"
+        command tmux "$@" &
     fi
 }
+
+if test -n "$display_time"; then
+    ( sleep "$display_time"; tmux popup -C; ) &
+
+    if test "$detach" = "y"; then
+        disown
+    fi
+fi
 
 if test "$(tm_getvar session_name)" = "popup";then
     tmux detach-client
@@ -244,6 +259,8 @@ else
         *)
     esac
 fi
+
+wait
 
 if test "$ispipe" = 0; then
     tmux wait-for "$sentinal_string"
