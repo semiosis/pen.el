@@ -58,7 +58,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -d) {
         detach=y
         shift
-        shift
     }
     ;;
 
@@ -215,6 +214,15 @@ if test "$ispipe" = 0; then
     CMD="$CMD; tmux wait-for -S $sentinal_string"
 fi
 
+tmuxdetach() {
+    if test "$detach" = "y"; then
+        command tmux "$@" &
+        disown
+    else
+        command tmux "$@"
+    fi
+}
+
 if test "$(tm_getvar session_name)" = "popup";then
     tmux detach-client
 else
@@ -224,7 +232,7 @@ else
             tmux has-session -t popup 2>/dev/null || tmux new -d -s popup env "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION" \
                 bash -c "${PRE_CMD}. ~/.profile; $CMD"
 
-            tmux popup -d '#{pane_current_path}' \
+            tmuxdetach popup -d '#{pane_current_path}' \
                 -b "$border_style" \
                 "-x$x" "-y$y" "-w$width" "-h$height" \
                 -E "tmux attach -t popup 2>/dev/null || \
