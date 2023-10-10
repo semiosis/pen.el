@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+tpop -d -b rounded -nos -x 0 -y H-1 -w 12 -h 3 -fg 233 spinner

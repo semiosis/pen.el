@@ -166,6 +166,10 @@ esac
 
 case "$y" in
     M) { y="$CURSOR_Y"; } ;;
+    H-[0-9]*) {
+        n="$(printf -- "%s\n" "$y" | grep -oP "[0-9]+")"
+        y="$(( client_height - height - n ))";
+    } ;;
     M-[0-9]*) {
         n="$(printf -- "%s\n" "$y" | grep -oP "[0-9]+")"
         y="$(( CURSOR_Y - n ))";

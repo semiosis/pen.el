@@ -77,12 +77,7 @@
 
     (setq bible-mode-book-module module)
     (switch-to-buffer buf)
-    (with-current-buffer buf
-      (setq buffer-read-only nil)
-      (message "Loading...")
-      (setq buffer-read-only t)
-      ;; (spinner-start)
-      )
+    
 
     ;; (redraw-frame)
 
@@ -91,9 +86,7 @@
         (bible-mode-lookup (bible-canonicalise-ref ref))
       (progn
         (bible-mode--set-global-chapter (or global-chapter 1) verse)
-        (set-window-buffer (get-buffer-window (current-buffer)) buf)))
-    ;; (spinner-stop)
-    ))
+        (set-window-buffer (get-buffer-window (current-buffer)) buf)))))
 
 (defun bible-open-version (version)
   (interactive (list (completing-read "Module: " (bible-mode--list-biblical-modules))))
@@ -749,7 +742,9 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   "Renders text for `bible-mode'"
   (interactive)
   (setq buffer-read-only nil)
-  (erase-buffer)  
+  (erase-buffer)
+  
+  (message "Loading...")
 
   (insert (bible-mode--exec-diatheke (concat "Genesis " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
   (let* (
@@ -758,6 +753,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
     (spinner-start)
     (bible-mode--insert-domnode-recursive (dom-by-tag html-dom-tree 'body) html-dom-tree)
     (spinner-stop)
+    (pen-snc "spinner-start")
     (bible-mode-display-final-tidy)
     (goto-char (point-min))
     (while (search-forward (concat "(" bible-mode-book-module ")") nil t)
@@ -774,7 +770,9 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
         (beginning-of-line)))
   
-  (run-hooks 'bible-mode-hook))
+  (run-hooks 'bible-mode-hook)
+  (spinner-stop)
+  (pen-snc "spinner-stop"))
 
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun bible-mode--display-around-advice (proc &rest args)
