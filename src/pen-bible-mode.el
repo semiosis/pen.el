@@ -750,10 +750,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (let* (
          (html-dom-tree (libxml-parse-html-region (point-min) (point-max))))
     (erase-buffer)
-    (spinner-start)
     (bible-mode--insert-domnode-recursive (dom-by-tag html-dom-tree 'body) html-dom-tree)
-    (spinner-stop)
-    (pen-snc "spinner-start")
     (bible-mode-display-final-tidy)
     (goto-char (point-min))
     (while (search-forward (concat "(" bible-mode-book-module ")") nil t)
@@ -770,16 +767,21 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
         (beginning-of-line)))
   
-  (run-hooks 'bible-mode-hook)
-  (spinner-stop)
-  (pen-snc "spinner-stop"))
+  (run-hooks 'bible-mode-hook))
 
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun bible-mode--display-around-advice (proc &rest args)
+  (spinner-start)
+  (spinner-stop)
+  (pen-snc "spinner-start")
+  
   (let ((res (apply proc args)))
     (message "%s" "Generating glossary buttons...")
     (pen-generate-glossary-buttons-manually)
     ;; (message "%s" "Done.")
+
+    (spinner-stop)
+    (pen-snc "spinner-stop")
     res))
 (advice-add 'bible-mode--display :around #'bible-mode--display-around-advice)
 ;; (advice-remove 'bible-mode--display #'bible-mode--display-around-advice)
