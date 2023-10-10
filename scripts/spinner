@@ -16,7 +16,8 @@ i=1
 while :; do
     colored="$(echo "$colourwheel" | awk 1 | sed -n "${i}p" )"
     clear
-    printf -- "%s" "$colored"
+    printf -- "%s" "[44m"
+    printf -- "%s" "$colored" | sed -u 's=\(.\)\(\[38\)=\1[44m\1\2=g'
 
     i=$(( (i + 1) % 314 ))
     if test "$i" = 0; then

@@ -744,7 +744,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (setq buffer-read-only nil)
   (erase-buffer)
   
-  (message "Loading...")
+  (message "Rendering page...")
 
   (insert (bible-mode--exec-diatheke (concat "Genesis " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
   (let* (
@@ -777,6 +777,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun bible-mode--display-around-advice (proc &rest args)
   (let ((res (apply proc args)))
+    (message "%s" "Generating glossary buttons...")
     (pen-generate-glossary-buttons-manually)
     res))
 (advice-add 'bible-mode--display :around #'bible-mode--display-around-advice)

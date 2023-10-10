@@ -3,4 +3,11 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-tmux popup -C
+client_tty="$(cat spinner_client_tty.txt)"
+
+if test -n "$client_tty"; then
+    tmux popup -C -c "$client_tty"
+else
+    tmux popup -C
+fi
+sleep 1
