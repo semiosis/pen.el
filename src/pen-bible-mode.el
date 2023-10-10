@@ -738,7 +738,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
    (run-hooks 'bible-mode-hook)))
 
-(defun bible-mode--display(&optional verse)
+(defun bible-mode--display (&optional verse)
   "Renders text for `bible-mode'"
   (interactive)
   (setq buffer-read-only nil)
@@ -779,6 +779,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (let ((res (apply proc args)))
     (message "%s" "Generating glossary buttons...")
     (pen-generate-glossary-buttons-manually)
+    ;; (message "%s" "Done.")
     res))
 (advice-add 'bible-mode--display :around #'bible-mode--display-around-advice)
 ;; (advice-remove 'bible-mode--display #'bible-mode--display-around-advice)
