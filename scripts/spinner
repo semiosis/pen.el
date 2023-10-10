@@ -15,7 +15,8 @@ colourwheel="$(for i in $(seq 1 314); do echo "$message"; done | lolcat -f)"
 i=1
 while :; do
     colored="$(echo "$colourwheel" | awk 1 | sed -n "${i}p" )"
-    clear
+    # clear
+    printf -- "%s" "[H"
     printf -- "%s" "[44m"
     printf -- "%s" "$colored" | sed -u 's=\(.\)\(\[38\)=\1[44m\1\2=g'
 
@@ -24,5 +25,6 @@ while :; do
         i=1
     fi
     sleep 0.1
+    # sleep 0.3
 done
 tput cnorm
