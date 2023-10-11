@@ -743,7 +743,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive)
   (setq buffer-read-only nil)
   (erase-buffer)
-  
+
   (message "Rendering page...")
 
   (insert (bible-mode--exec-diatheke (concat "Genesis " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
@@ -768,29 +768,34 @@ creating a new `bible-mode' buffer positioned at the specified verse."
       (progn
         ;; Can't use ": " because sometimes like with Psalms 40:1
         ;; there is no space
-        (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
-        (beginning-of-line)))
-  (goto-char (point-min))
-  
-  (run-hooks 'bible-mode-hook))
+        (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string))))
+    (goto-char (point-min)))
 
-;; nadvice - proc is the original function, passed in. do not modify
-(defun bible-mode--display-around-advice (proc &rest args)
   (spinner-start)
   (spinner-stop)
   (pen-snc "spinner-start")
-  
-  (let ((res (apply proc args)))
-    (redisplay)
-    (message "%s" "Generating glossary buttons...")
-    (pen-generate-glossary-buttons-manually)
-    ;; (message "%s" "Done.")
+  (run-hooks 'bible-mode-hook)
+  (spinner-stop)
+  (pen-snc "spinner-stop")
 
-    (spinner-stop)
-    (pen-snc "spinner-stop")
-    res))
-(advice-add 'bible-mode--display :around #'bible-mode--display-around-advice)
-;; (advice-remove 'bible-mode--display #'bible-mode--display-around-advice)
+  (if verse
+      (progn
+        (beginning-of-line)
+        (cua-set-mark)
+        (end-of-line)
+        (recursive-narrow-or-widen-dwim)
+        (deselect))))
+
+;; Use hooks instead
+;; nadvice - proc is the original function, passed in. do not modify
+;; (defun bible-mode--display-around-advice (proc &rest args)
+;;   (let ((res (apply proc args)))
+;;     ;; (pen-generate-glossary-buttons-manually)
+;;     ;; (message "%s" "Done.")
+    
+;;     res))
+;; (advice-add 'bible-mode--display :around #'bible-mode--display-around-advice)
+(advice-remove 'bible-mode--display #'bible-mode--display-around-advice)
 
 
 ;; TODO Make it so God's names are all highlighted by passing each bit of text through a matcher?

@@ -863,6 +863,9 @@ Use my position list code. Make it use rosie lang and external software."
 (defun pen-generate-glossary-buttons-manually ()
   (interactive)
 
+  (redisplay)
+  (message "%s" "Generating glossary buttons...")
+
   (if (derived-mode-p 'term-mode)
       (with-current-buffer
           (new-buffer-from-tmux-pane-capture t)
