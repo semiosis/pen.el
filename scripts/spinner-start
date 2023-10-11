@@ -3,6 +3,6 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-tpop -d -b none -nos -x 1 -y H-2 -w 10 -h 1 -bg 004 spinner
+tpop -d -b none -nos -x 1 -y H-2 -w 18 -h 1 -bg 004 spinner
 
 tmux display -pF "#{client_tty}:" > spinner_client_tty.txt
