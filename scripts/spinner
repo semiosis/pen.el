@@ -19,25 +19,39 @@ message="$@"
 # script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f'
 # script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
 # script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
-script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f'
+script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f | sed -u "s=\(.\)\(\[38\)=\1[44m\1\2=g"'
 colourwheel="$(ocif bash -c "message=\"$message\"; $script")"
 
-i=1
+trap func_trap INT
+func_trap() {
+    tput cnorm
+    kill "$$"
+}
+                   
 while :; do
-    colored="$(echo "$colourwheel" | awk 1 | sed -n "${i}p" )"
-    # clear
-    printf -- "%s" "[H"
-    printf -- "%s" "[44m"
-    printf -- "%s" "$colored" | sed -u 's=\(.\)\(\[38\)=\1[44m\1\2=g'
-    # printf -- "%s" "$colored"
-
-    i=$(( (i + 1) % 314 ))
-    if test "$i" = 0; then
-        i=1
-    fi
-    sleep 0.1
-    # sleep 0.05
-    # sleep 0.03
-    # sleep 0.3
+    printf -- "%s\n" "$colourwheel" | while read line; do
+        printf -- "%s" "[H"
+        printf -- "%s" "$line"
+        sleep 0.1
+    done
 done
+
+# i=1
+# while :; do
+#     colored="$(echo "$colourwheel" | awk 1 | sed -n "${i}p" )"
+#     # clear
+#     printf -- "%s" "[H"
+#     printf -- "%s" "[44m"
+#     printf -- "%s" "$colored" | sed -u 's=\(.\)\(\[38\)=\1[44m\1\2=g'
+#     # printf -- "%s" "$colored"
+# 
+#     i=$(( (i + 1) % 314 ))
+#     if test "$i" = 0; then
+#         i=1
+#     fi
+#     sleep 0.1
+#     # sleep 0.05
+#     # sleep 0.03
+#     # sleep 0.3
+# done
 tput cnorm

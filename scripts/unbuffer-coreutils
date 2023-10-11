@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+if test "$#" -gt 1; then
+    stdbuf -i0 -o0 -e0 "$@"
+else
+    stdbuf -i0 -o0 -e0 cat
+fi

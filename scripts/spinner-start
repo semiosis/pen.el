@@ -3,6 +3,14 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-tpop -d -b none -nos -x 1 -y H-2 -w 19 -h 1 -bg 004 spinner
+: "${TMUX_PANE:="$(tmux display-message -p '#{pane_id}')"}"
+# top="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_top}' 2>/dev/null)"
+bottom="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_bottom}' 2>/dev/null)"
+left="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_left}' 2>/dev/null)"
+# right="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_right}' 2>/dev/null)"
+
+# tpop -d -b none -nos -x 1 -y H-2 -w 19 -h 1 -bg 004 spinner
+
+tpop -d -b none -nos -x "$(( 1 + left ))" -y "$(( bottom - 1 ))" -w 19 -h 1 -bg 004 spinner
 
 tmux display -pF "#{client_tty}:" > spinner_client_tty.txt

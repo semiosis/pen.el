@@ -1615,3 +1615,5 @@ e ia iterators math-symbol-lists org-contacts org-transclusion osm parser-genera
 e ia lsp-origami lsp-dart lsp-pyright
 
 pip3.8 install python-lsp-server
+
+agi pv

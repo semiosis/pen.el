@@ -745,6 +745,9 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (erase-buffer)
 
   (message "Rendering page...")
+  (spinner-start)
+  (spinner-stop)
+  (pen-snc "spinner-start")
 
   (insert (bible-mode--exec-diatheke (concat "Genesis " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
   (let* (
@@ -771,9 +774,6 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string))))
     (goto-char (point-min)))
 
-  (spinner-start)
-  (spinner-stop)
-  (pen-snc "spinner-start")
   (run-hooks 'bible-mode-hook)
   (spinner-stop)
   (pen-snc "spinner-stop")
