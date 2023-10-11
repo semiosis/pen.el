@@ -10,3 +10,4 @@ if test -n "$client_tty"; then
 else
     tmux popup -C
 fi
+tmux kill-session -t popup:

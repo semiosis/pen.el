@@ -753,11 +753,13 @@ creating a new `bible-mode' buffer positioned at the specified verse."
     (bible-mode--insert-domnode-recursive (dom-by-tag html-dom-tree 'body) html-dom-tree)
     (message "Final tidying...")
     (bible-mode-display-final-tidy)
-    (redisplay)
     (goto-char (point-min))
     (while (search-forward (concat "(" bible-mode-book-module ")") nil t)
-      (replace-match "")))
+      (replace-match ""))
+    (goto-char (point-min))
+    (redisplay))
 
+  (message "Final tidying...")
   (setq mode-name (concat "Bible (" bible-mode-book-module ")"))
   (setq buffer-read-only t)
   (goto-char (point-min))
@@ -768,6 +770,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         ;; there is no space
         (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
         (beginning-of-line)))
+  (goto-char (point-min))
   
   (run-hooks 'bible-mode-hook))
 
@@ -778,6 +781,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (pen-snc "spinner-start")
   
   (let ((res (apply proc args)))
+    (redisplay)
     (message "%s" "Generating glossary buttons...")
     (pen-generate-glossary-buttons-manually)
     ;; (message "%s" "Done.")
