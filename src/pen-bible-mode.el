@@ -751,7 +751,9 @@ creating a new `bible-mode' buffer positioned at the specified verse."
          (html-dom-tree (libxml-parse-html-region (point-min) (point-max))))
     (erase-buffer)
     (bible-mode--insert-domnode-recursive (dom-by-tag html-dom-tree 'body) html-dom-tree)
+    (message "Final tidying...")
     (bible-mode-display-final-tidy)
+    (redisplay)
     (goto-char (point-min))
     (while (search-forward (concat "(" bible-mode-book-module ")") nil t)
       (replace-match "")))
@@ -957,6 +959,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   (if (equal (dom-tag node) 'title) ;;newline at end of title (i.e. those in Psalms)
       (insert "\n"))
+  (redisplay)
   t)
 
 (defun bible-search (query &optional module searchtype)

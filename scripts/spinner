@@ -8,18 +8,18 @@ export TTY
 
 tput civis
 message="$@"
-: "${message:="LOADING »»»»»»»»»»"}"
+: "${message:="» Loading »»»»»»»»»"}"
 
 # colourwheel="$(for i in $(seq 1 314); do echo "$message"; done | lolcat -f)"
 # colourwheel="$(for i in $(seq 1 314); do echo "$message" | sed "s/.....\$/...../"; done | lolcat -f)"
 
 # Caching scripts:
 # Firstly the variables I want must be included as such.
-# script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 + 1 ))")"; echo "$message" | sed "s/$pattern\$/$pattern/"; done | lolcat -f'
-# script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 + 1 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f'
-# script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 + 1 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
-# script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 + 1 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
-script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 + 1 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f'
+# script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; echo "$message" | sed "s/$pattern\$/$pattern/"; done | lolcat -f'
+# script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f'
+# script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
+# script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
+script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f'
 colourwheel="$(ocif bash -c "message=\"$message\"; $script")"
 
 i=1
