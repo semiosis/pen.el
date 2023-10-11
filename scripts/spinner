@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+exec 2>/dev/null
+
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 # 314 seems to be the number to make lolcat wheel around modulo
