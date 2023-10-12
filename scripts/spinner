@@ -164,7 +164,6 @@ run_small() {
 
             printf -- "%s" "$clear_sequence"
             printf -- "%s" "$line"
-            # echo
             sleep 0.1
         done || exit 1
     done || return 1
