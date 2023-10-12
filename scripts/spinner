@@ -209,6 +209,7 @@ changevar() {
 
     test -n "$varname" || exit 1
 
+    # I do this instead of use sponge because sponge has an issue with /dev/shm
     cat /dev/shm/spinnervars.txt | sed "/^${varname}=\"/s/\".*\"/\"$val\"/" | soak | tee /dev/shm/spinnervars.txt &>/dev/null
 }
 
