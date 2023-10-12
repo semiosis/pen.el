@@ -3,6 +3,17 @@ export TTY
 
 exec 2>/dev/null
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -b) {
+        big=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 # 314 seems to be the number to make lolcat wheel around modulo
@@ -21,7 +32,12 @@ message="$@"
 # script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f'
 # script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
 # script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
-script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f | sed -u "s=\(.\)\(\[38\)=\1[44m\1\2=g"'
+
+if test "$big" = "y"; then
+    script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/" | smbraille; done | lolcat -f | sed -u "s=\(.\)\(\[38\)=\1[44m\1\2=g"'
+else
+    script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f | sed -u "s=\(.\)\(\[38\)=\1[44m\1\2=g"'
+fi
 colourwheel="$(ocif bash -c "message=\"$message\"; $script")"
 
 trap func_trap INT
@@ -29,14 +45,29 @@ func_trap() {
     tput cnorm
     kill "$$"
 }
-                   
-while :; do
-    printf -- "%s\n" "$colourwheel" | while read line; do
-        printf -- "%s" "[H"
-        printf -- "%s" "$line"
-        sleep 0.1
+
+clear
+
+if test "$big" = "y"; then
+    while :; do
+        printf -- "%s\n" "$colourwheel" | while read line; do
+            read line2
+            # printf -- "%s" "[H"
+            clear
+            printf -- "%s\n" "$line"
+            printf -- "%s" "$line2"
+            sleep 0.1
+        done
     done
-done
+else
+    while :; do
+        printf -- "%s\n" "$colourwheel" | while read line; do
+            printf -- "%s" "[H"
+            printf -- "%s" "$line"
+            sleep 0.1
+        done
+    done
+fi
 
 # i=1
 # while :; do

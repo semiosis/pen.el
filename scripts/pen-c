@@ -58,7 +58,8 @@ case "$opt" in
          -e 's/©/(c)/g' \
          -e 's/[“”]/"/g' \
          -e "s/[‘’]/'/g" \
-         -e "s/[−–—­]/-/g"
+         -e "s/[−–—­]/-/g" |
+         unicode-to-ascii
          # c strip-unicode || ns "c strip-unicode probably failed"
     } ;;
 
