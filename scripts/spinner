@@ -212,6 +212,17 @@ changevar() {
     cat /dev/shm/spinnervars.txt | sed "/^${varname}=\"/s/\".*\"/\"$val\"/" | soak | tee /dev/shm/spinnervars.txt &>/dev/null
 }
 
+togglevar() {
+    varname="$1"
+    val="${!varname}"
+
+    if test "$val" = "y"; then
+        changevar "$varname" ""
+    else
+        changevar "$varname" "y"
+    fi
+}
+
 pid="$$"
 while read_char; do
     case "$char" in
@@ -222,12 +233,9 @@ while read_char; do
         }
         ;;
 
-        G) { changevar bluebg ""; reload_job; } ;;
-        g) { changevar bluebg "y"; reload_job; } ;;
-        B) { changevar big ""; reload_job; } ;;
-        b) { changevar big "y"; reload_job; } ;;
-        R) { changevar rainbow ""; reload_job; } ;;
-        r) { changevar rainbow "y"; reload_job; } ;;
+        g) { togglevar bluebg; reload_job; } ;;
+        b) { togglevar big; reload_job; } ;;
+        r) { togglevar rainbow; reload_job; } ;;
 
         *) {
             endr -INT "$pid" 2>/dev/null
