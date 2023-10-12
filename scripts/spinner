@@ -79,16 +79,6 @@ tput civis
 message="$@"
 : "${message:="» Loading »»»»»»»»»"}"
 
-# colourwheel="$(for i in $(seq 1 314); do echo "$message"; done | lolcat -f)"
-# colourwheel="$(for i in $(seq 1 314); do echo "$message" | sed "s/.....\$/...../"; done | lolcat -f)"
-
-# Caching scripts:
-# Firstly the variables I want must be included as such.
-# script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; echo "$message" | sed "s/$pattern\$/$pattern/"; done | lolcat -f'
-# script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f'
-# script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
-# script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
-
 IFS= read -r -d '' script <<'HEREDOC'
 for i in $(seq 314 -1 1); do
     pattern="$(echo -n . | rps "$(( i % 10 ))")";
@@ -133,20 +123,22 @@ stdin_exists() {
     } &>/dev/null
 }
 
+awk 1 <<HEREDOC > /dev/shm/spinnervars.txt
+bluebg="$bluebg"
+rainbow="$rainbow"
+big="$big"
+message="$message"
+HEREDOC
+
+# Main subprocess
 (
     # This subshell responds to the INT propagated from parent script
     trap func_exit INT; func_exit() { exit; }
 
     # This works:
-    trap func_makesmall USR1; func_makesmall() {
-        big=
-        colourwheel="$(ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$big\"; message=\"$message\"; $script")"
-        run
-    }
-
-    trap func_makebig USR2; func_makebig() {
-        big=y
-        colourwheel="$(ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$big\"; message=\"$message\"; $script")"
+    trap func_rerun USR1; func_rerun() {
+        vars="$(cat /dev/shm/spinnervars.txt | tr -s '\n' ';')"
+        colourwheel="$(ocif bash -c "$vars $script")"
         run
     }
 
@@ -159,6 +151,11 @@ stdin_exists() {
                     trap func_exit INT; func_exit() { exit 1; }
 
                     read line2
+
+                    # sadly, it's not possible to change the tmux popup border after it has been made, AFAIK
+                    # firstcol="$(echo "line2" | sed -n 's/[^;]*;5;\([0-9]\+\)m.*/\1/p;q;')"
+                    # tmux set popup-border-style 'bg=default,fg=colour012'
+
                     printf -- "%s" "$clear_sequence"
                     printf -- "%s\n" "$line"
                     printf -- "%s" "$line2"
@@ -206,21 +203,27 @@ while read_char; do
 
         s) {
             # window_name="$2"
-            # echo Not quite stopped
             endr -INT "$jobid" 2>/dev/null
+            printf -- "%s" "$clear_sequence"
+            echo loop stopped
             # spinner -nobgb -norb &
         }
         ;;
 
         m) {
+            # The 'Main subprocess' is not quit, but its children are
             endr -np -INT "$jobid" 2>/dev/null
+            # Before the 'Main subprocess' discovers its child processes have ended, trigger it to start a new job
+            # sed -i '/^big="/s/".*"/"y"/' /dev/shm/spinnervars.txt
+            cat /dev/shm/spinnervars.txt | sed '/^big="/s/".*"/""/' | soak | tee /dev/shm/spinnervars.txt &>/dev/null
             kill -USR1 "$jobid" 2>/dev/null
         }
         ;;
 
         b) {
             endr -np -INT "$jobid" 2>/dev/null
-            kill -USR2 "$jobid" 2>/dev/null
+            cat /dev/shm/spinnervars.txt | sed '/^big="/s/".*"/"y"/' | soak | tee /dev/shm/spinnervars.txt &>/dev/null
+            kill -USR1 "$jobid" 2>/dev/null
         }
         ;;
 
