@@ -39,10 +39,10 @@ if test "$big" = "y"; then
     h=4
     x="$(( (right - left - w) / 2 + left ))"
     y="$(( (bottom - top - h) / 2 + top ))"
-    tpop "${extraargs[@]}" -d -b heavy -nos -x $x -y $y -w $w -h $h -bg 004 -fg 049 spinner -b "$@" # -nobgb -norb
+    tpop "${extraargs[@]}" -d -delay 0.1 -b heavy -nos -x $x -y $y -w $w -h $h -bg 004 -fg 049 spinner -b "$@" # -nobgb -norb
     # tpop -d -b padded -nos -w 46 -h 4 -bg 004 -fg 049 spinner -b
 else
-    tpop "${extraargs[@]}" -d -b none -nos -x "$(( 1 + left ))" -y "$(( bottom - 1 ))" -w 19 -h 1 -bg 004 spinner "$@" # -nobgb -norb
+    tpop "${extraargs[@]}" -d -delay 0.1 -b none -nos -x "$(( 1 + left ))" -y "$(( bottom - 1 ))" -w 19 -h 1 -bg 004 spinner "$@" # -nobgb -norb
 fi
 
 tmux display -pF "#{client_tty}:" > spinner_client_tty.txt

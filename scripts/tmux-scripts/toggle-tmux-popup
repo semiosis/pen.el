@@ -61,6 +61,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -delay) {
+        delay="$2"
+        shift
+        shift
+    }
+    ;;
+
     -time) {
         display_time="$2"
         shift
@@ -117,8 +124,6 @@ fi
 
 : ${CMD:="$shcmd"}
 : ${CMD:="$(cmd-nice "$@")"}
-
-: "${position:="center"}"
 
 # may be a percentage or a fixed integer number of characters
 : "${width:="80%"}"
@@ -242,26 +247,23 @@ if test -n "$display_time"; then
     fi
 fi
 
-if test "$(tm_getvar session_name)" = "popup";then
+if test "$(tm_getvar session_name)" = "popup"; then
     tmux detach-client
 else
-    case "$position" in
-        center) {
-            # This speeds it up if the status needs to be hidden in advance of appearing
-            tmux has-session -t popup 2>/dev/null || tmux new -d -s popup env "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION" \
-                bash -c "${PRE_CMD}. ~/.profile; $CMD"
+    # This speeds it up if the status needs to be hidden in advance of appearing
+    tmux has-session -t popup 2>/dev/null || tmux new -d -s popup env "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION" \
+        bash -c "${PRE_CMD}. ~/.profile; $CMD"
 
-            tmuxdetach popup -d '#{pane_current_path}' \
-                -b "$border_style" \
-                "-x$x" "-y$y" "-w$width" "-h$height" \
-                -E "tmux attach -t popup 2>/dev/null || \
-                tmux new -s popup env \"CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION\" \
-                bash -c $(cmd "${PRE_CMD}. ~/.profile; $CMD")"
-        }
-        ;;
+    if test -n "$delay"; then
+        sleep "$delay"
+    fi
 
-        *)
-    esac
+    tmuxdetach popup -d '#{pane_current_path}' \
+        -b "$border_style" \
+        "-x$x" "-y$y" "-w$width" "-h$height" \
+        -E "tmux attach -t popup 2>/dev/null || \
+        tmux new -s popup env \"CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION\" \
+        bash -c $(cmd "${PRE_CMD}. ~/.profile; $CMD")"
 fi
 
 wait
