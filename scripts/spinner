@@ -90,11 +90,7 @@ done |
 HEREDOC
 script="$(printf -- "%s" "$script" | sed -z "s/\n */ /g")"
 
-# cmd ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$big\"; message=\"$message\"; $script"
-# exit
 colourwheel="$(ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$big\"; message=\"$message\"; $script")"
-
-# printf -- "%s\n" "$colourwheel" | tv
 
 trap func_trap INT
 func_trap() {
@@ -130,13 +126,15 @@ big="$big"
 message="$message"
 HEREDOC
 
+func_exit() { exit 1; }
+
 run() {
     if test "$big" = "y"; then
         while :; do
-            trap func_exit INT; func_exit() { exit 1; }
+            trap func_exit INT
 
             printf -- "%s\n" "$colourwheel" | while IFS= read line; do
-                trap func_exit INT; func_exit() { exit 1; }
+                trap func_exit INT
 
                 read line2
 
@@ -153,10 +151,10 @@ run() {
         done || exit 1
     else
         while :; do
-            trap func_exit INT; func_exit() { exit 1; }
+            trap func_exit INT
 
             printf -- "%s\n" "$colourwheel" | while IFS= read line; do
-                trap func_exit INT; func_exit() { exit 1; }
+                trap func_exit INT
 
                 printf -- "%s" "$clear_sequence"
                 printf -- "%s" "$line"
@@ -193,20 +191,10 @@ read_char() {
 pid="$$"
 while read_char; do
     case "$char" in
-        t) {
-            # window_name="$2"
-            echo Changed settings | tv &>/dev/null
-            # endr -INT "$jobid" 2>/dev/null
-            # spinner -nobgb -norb &
-        }
-        ;;
-
-        s) {
-            # window_name="$2"
+        k) {
             endr -INT "$jobid" 2>/dev/null
             printf -- "%s" "$clear_sequence"
             echo loop stopped
-            # spinner -nobgb -norb &
         }
         ;;
 
