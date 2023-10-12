@@ -225,20 +225,17 @@ while read_char; do
         ;;
 
         b) {
-            changevar big "y"
-            reload_job
+            changevar big "y"; reload_job
         }
         ;;
 
         n) {
-            changevar rainbow ""
-            reload_job
+            changevar rainbow ""; reload_job
         }
         ;;
 
         r) {
-            changevar rainbow "y"
-            reload_job
+            changevar rainbow "y"; reload_job
         }
         ;;
 
