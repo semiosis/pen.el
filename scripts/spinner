@@ -213,6 +213,9 @@ changevar() {
 }
 
 togglevar() {
+    vars="$(cat /dev/shm/spinnervars.txt | tr -s '\n' ';')"
+    eval "$vars"
+
     varname="$1"
     val="${!varname}"
 
