@@ -126,11 +126,13 @@ big="$big"
 message="$message"
 HEREDOC
 
+set -xv
+
 run() {
     if test "$big" = y; then
-        run_big || exit 1
+        run_big
     else
-        run_small || exit 1
+        run_small
     fi
 }
 
@@ -153,7 +155,7 @@ run_big() {
             echo Big
             sleep 0.1
         done || exit 1
-    done || exit 1
+    done || return 1
 }
 
 run_small() {
@@ -169,7 +171,7 @@ run_small() {
             # echo
             sleep 0.1
         done || exit 1
-    done || exit 1
+    done || return 1
 }
 
 # Main subprocess
