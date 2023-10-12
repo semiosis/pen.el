@@ -1,6 +1,17 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -b) {
+        big=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 : "${TMUX_PANE:="$(tmux display-message -p '#{pane_id}')"}"
@@ -11,6 +22,11 @@ left="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_left}' 2>/dev/null)"
 
 # tpop -d -b none -nos -x 1 -y H-2 -w 19 -h 1 -bg 004 spinner
 
-tpop -d -b none -nos -x "$(( 1 + left ))" -y "$(( bottom - 1 ))" -w 19 -h 1 -bg 004 spinner
+if test "$big" = "y"; then
+    tpop -d -b heavy -nos -w 46 -h 4 -bg 004 -fg 049 spinner -b
+    # tpop -d -b padded -nos -w 46 -h 4 -bg 004 -fg 049 spinner -b
+else
+    tpop -d -b none -nos -x "$(( 1 + left ))" -y "$(( bottom - 1 ))" -w 19 -h 1 -bg 004 spinner
+fi
 
 tmux display -pF "#{client_tty}:" > spinner_client_tty.txt

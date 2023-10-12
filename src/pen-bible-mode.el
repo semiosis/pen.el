@@ -747,7 +747,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (message "Rendering page...")
   (spinner-start)
   (spinner-stop)
-  (pen-snc "spinner-start")
+  (pen-snc "spinner-start -b")
 
   (insert (bible-mode--exec-diatheke (concat "Genesis " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
   (let* (
