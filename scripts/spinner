@@ -109,8 +109,11 @@ colourwheel="$(ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$bi
 trap func_trap INT
 func_trap() {
     tput cnorm
-    kill "$$"
+    endr -INT $$ &>/dev/null
+    kill -9 "$$"
 }
+
+# trap "trap - SIGTERM && echo quitting && kill -- -$$" SIGINT SIGTERM EXIT
 
 clear
 
@@ -119,6 +122,20 @@ if test "$fastclear" = "y"; then
 else
     clear_sequence="[H[J"
 fi
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+(
+# This subshell responds to the INT propagated from parent script
+trap func_trap_inner INT; func_trap_inner() { exit; }
 
 if test "$big" = "y"; then
     while :; do
@@ -142,22 +159,37 @@ else
     done
 fi
 
-# i=1
-# while :; do
-#     colored="$(echo "$colourwheel" | awk 1 | sed -n "${i}p" )"
-#     # clear
-#     printf -- "%s" "[H"
-#     printf -- "%s" "[44m"
-#     printf -- "%s" "$colored" | sed -u 's=\(.\)\(\[38\)=\1[44m\1\2=g'
-#     # printf -- "%s" "$colored"
-# 
-#     i=$(( (i + 1) % 314 ))
-#     if test "$i" = 0; then
-#         i=1
-#     fi
-#     sleep 0.1
-#     # sleep 0.05
-#     # sleep 0.03
-#     # sleep 0.3
-# done
+) &
+jobid="$!"
+
+read_char() {
+    stty -icanon -echo
+    eval "$1=\$(dd bs=1 count=1 2>/dev/null)"
+    stty icanon echo
+}
+
+pid="$$"
+while read -n1 char; do
+    case "$char" in
+        b) {
+            # window_name="$2"
+            echo Changed settings | tv
+            endr -INT "$jobid" 2>/dev/null
+            # spinner -nobgb -norb &
+        }
+        ;;
+
+        *) {
+            endr -INT "$pid" 2>/dev/null
+            tput cnorm
+
+            break;
+        }
+        ;;
+    esac
+done
+
+endr -INT $$ 2>/dev/null
+wait
 tput cnorm
+exit
