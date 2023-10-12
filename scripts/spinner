@@ -1,12 +1,68 @@
 #!/bin/bash
 export TTY
 
-exec 2>/dev/null
+# exec 2>/dev/null
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -fn) {
+        runfn="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+colorize() { lolcat -f; }
+makebluebg() { printf -- "%s" "[44m"; sed -u "s=\(.\)\(\[38\)=\1[44m\1\2=g"; }
+fontify() { smbraille; }
+
+if test -n "$runfn"; then
+    "$runfn" "$@"
+    exit "$?"
+fi
+
+rainbow=y
+bluebg=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -b) {
         big=y
+        shift
+    }
+    ;;
+
+    -bgb) {
+        bluebg=y
+        # writing backgrounded spaces is effectively clearing
+        # so we don't need to clear completely
+        fastclear=y
+        shift
+    }
+    ;;
+
+    -nobgb) {
+        bluebg=
+        shift
+    }
+    ;;
+
+    -fastclear) {
+        fastclear=y
+        shift
+    }
+    ;;
+
+    -rb) {
+        rainbow=y
+        shift
+    }
+    ;;
+
+    -norb) {
+        rainbow=
         shift
     }
     ;;
@@ -33,12 +89,20 @@ message="$@"
 # script='for i in $(seq 1 314); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
 # script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/^$pattern/$replacement/"; done | lolcat -f'
 
-if test "$big" = "y"; then
-    script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/" | smbraille; done | lolcat -f | sed -u "s=\(.\)\(\[38\)=\1[44m\1\2=g"'
-else
-    script='for i in $(seq 314 -1 1); do pattern="$(echo -n . | rps "$(( i % 10 ))")"; replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")"; echo "$message" | sed "s/$pattern\$/$replacement/"; done | lolcat -f | sed -u "s=\(.\)\(\[38\)=\1[44m\1\2=g"'
-fi
-colourwheel="$(ocif bash -c "message=\"$message\"; $script")"
+IFS= read -r -d '' script <<'HEREDOC'
+for i in $(seq 314 -1 1); do
+    pattern="$(echo -n . | rps "$(( i % 10 ))")";
+    replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")";
+    echo "$message" | sed "s/$pattern\$/$replacement/" | ( if test "$big" = y; then fontify; else cat; fi; );
+done |
+    ( if test "$rainbow" = y; then spinner -fn colorize; else cat; fi; ) |
+    ( if test "$bluebg" = y; then spinner -fn makebluebg; else cat; fi; )
+HEREDOC
+script="$(printf -- "%s" "$script" | sed -z "s/\n */ /g")"
+
+# cmd ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$big\"; message=\"$message\"; $script"
+# exit
+colourwheel="$(ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$big\"; message=\"$message\"; $script")"
 
 trap func_trap INT
 func_trap() {
@@ -48,11 +112,17 @@ func_trap() {
 
 clear
 
+if test "$fastclear" = "y"; then
+    clear_sequence="[H"
+else
+    clear_sequence="[H[J"
+fi
+
 if test "$big" = "y"; then
     while :; do
         printf -- "%s\n" "$colourwheel" | while read line; do
             read line2
-            printf -- "%s" "[H"
+            printf -- "%s" "$clear_sequence"
             printf -- "%s\n" "$line"
             printf -- "%s" "$line2"
             sleep 0.1
@@ -61,7 +131,7 @@ if test "$big" = "y"; then
 else
     while :; do
         printf -- "%s\n" "$colourwheel" | while read line; do
-            printf -- "%s" "[H"
+            printf -- "%s" "$clear_sequence"
             printf -- "%s" "$line"
             sleep 0.1
         done

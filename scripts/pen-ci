@@ -89,7 +89,8 @@ wdmd5="_$(printf -- "%s\n" "$(getpwd)$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1
 : "${CMD:="$(cmd "$@")"}"
 
 # This must come after the initial arguments
-cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify)$sha.txt"
+cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha.txt"
+# echo "$cache_file_path" 1>&2
 
 age() {
     fileMod="$(stat -c %Y -- "$1")"

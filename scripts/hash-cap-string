@@ -1,0 +1,38 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -l|-maxlen) {
+        maxlen="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -f) {
+        force=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+string="$(cat)"
+hash="$(printf -- "%s" "$string" | sha)"
+: "${hashlen:="10"}"
+: "${hashlen:="$(printf -- "%s" "$hash" | wc -c)"}"
+len="$(printf -- "%s" "$string" | wc -c)"
+: "${maxlen:="100"}"
+if test "$len" -gt "$maxlen" || test "$force" = y; then
+    leftlen="$(( maxlen - 1 - hashlen ))"
+    if test "$leftlen" -gt 0; then
+        string="$(printf -- "%s" "$string" | head -c "$leftlen" )-$hash"
+    else
+        string="$(printf -- "%s" "$hash")"
+    fi
+fi
+printf -- "%s" "$string"
