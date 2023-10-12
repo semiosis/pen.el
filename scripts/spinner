@@ -129,7 +129,6 @@ HEREDOC
 run() {
     if test "$big" = "y"; then
         while :; do
-            # prevent orphaning of background child processes
             trap exit INT
 
             printf -- "%s\n" "$colourwheel" | while IFS= read line; do
@@ -166,8 +165,9 @@ run() {
 
 # Main subprocess
 (
-    # This subshell responds to the INT propagated from parent script
-    trap func_exit INT; func_exit() { exit; }
+    # This subshell responds to the INT propagated from parent script to
+    # prevent orphaning of background child processes
+    trap exit INT
 
     # This works:
     trap func_rerun USR1; func_rerun() {
