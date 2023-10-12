@@ -129,6 +129,7 @@ HEREDOC
 run() {
     if test "$big" = "y"; then
         while :; do
+            # prevent orphaning of background child processes
             trap exit INT
 
             printf -- "%s\n" "$colourwheel" | while IFS= read line; do
