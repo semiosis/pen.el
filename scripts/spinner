@@ -126,8 +126,6 @@ big="$big"
 message="$message"
 HEREDOC
 
-set -xv
-
 run() {
     if test "$big" = y; then
         run_big
@@ -185,6 +183,7 @@ run_small() {
         vars="$(cat /dev/shm/spinnervars.txt | tr -s '\n' ';')"
         colourwheel="$(ocif bash -c "$vars $script")"
         eval "$vars"
+        run
     }
 
     run
