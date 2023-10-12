@@ -135,29 +135,46 @@ stdin_exists() {
 
 (
 # This subshell responds to the INT propagated from parent script
-trap func_trap_inner INT; func_trap_inner() { exit; }
+trap func_exit INT; func_exit() { exit; }
 
+# This works:
+trap func_makesmall USR1; func_makesmall() {
+    echo hi | tv; big=; colourwheel="$(ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$big\"; message=\"$message\"; $script")"; run;
+}
+
+run() {
 if test "$big" = "y"; then
     while :; do
+        trap func_exit INT; func_exit() { exit 1; }
+
         printf -- "%s\n" "$colourwheel" | while IFS= read line; do
+            trap func_exit INT; func_exit() { exit 1; }
+
             read line2
             printf -- "%s" "$clear_sequence"
             printf -- "%s\n" "$line"
             printf -- "%s" "$line2"
             # echo
             sleep 0.1
-        done
-    done
+        done || exit 1
+    done || exit 1
 else
     while :; do
+        trap func_exit INT; func_exit() { exit 1; }
+
         printf -- "%s\n" "$colourwheel" | while IFS= read line; do
+            trap func_exit INT; func_exit() { exit 1; }
+
             printf -- "%s" "$clear_sequence"
             printf -- "%s" "$line"
             # echo
             sleep 0.1
-        done
-    done
+        done || exit 1
+    done || exit 1
 fi
+}
+
+run
 
 ) &
 jobid="$!"
@@ -184,6 +201,15 @@ while read_char; do
             # window_name="$2"
             # echo Not quite stopped
             endr -INT "$jobid" 2>/dev/null
+            # spinner -nobgb -norb &
+        }
+        ;;
+
+        m) {
+            # window_name="$2"
+            # echo Not quite stopped
+            endr -np -INT "$jobid" 2>/dev/null
+            kill -USR1 "$jobid" 2>/dev/null
             # spinner -nobgb -norb &
         }
         ;;

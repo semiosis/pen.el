@@ -3,6 +3,17 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -np) {
+        not_parent=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 list_descendants ()
 {
   local children=$(ps -o pid= --ppid "$1")
@@ -21,4 +32,7 @@ last_arg="${@: -1}"
 test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
 
 kill "$@" $(list_descendants "$last_arg")
-kill "$@" "$last_arg"
+
+if ! test "$not_parent" = "y"; then
+    kill "$@" "$last_arg"
+fi
