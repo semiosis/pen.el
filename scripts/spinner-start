@@ -1,10 +1,18 @@
 #!/bin/bash
 export TTY
 
+extraargs=()
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -b) {
         big=y
+        shift
+    }
+    ;;
+
+    -time) {
+        extraargs=( "$opt" "$2" "${extraargs[@]}" )
+        shift
         shift
     }
     ;;
@@ -31,10 +39,10 @@ if test "$big" = "y"; then
     h=4
     x="$(( (right - left - w) / 2 + left ))"
     y="$(( (bottom - top - h) / 2 + top ))"
-    tpop -d -b heavy -nos -x $x -y $y -w $w -h $h -bg 004 -fg 049 spinner -b
+    tpop "${extraargs[@]}" -d -b heavy -nos -x $x -y $y -w $w -h $h -bg 004 -fg 049 spinner -b
     # tpop -d -b padded -nos -w 46 -h 4 -bg 004 -fg 049 spinner -b
 else
-    tpop -d -b none -nos -x "$(( 1 + left ))" -y "$(( bottom - 1 ))" -w 19 -h 1 -bg 004 spinner
+    tpop "${extraargs[@]}" -d -b none -nos -x "$(( 1 + left ))" -y "$(( bottom - 1 ))" -w 19 -h 1 -bg 004 spinner
 fi
 
 tmux display -pF "#{client_tty}:" > spinner_client_tty.txt
