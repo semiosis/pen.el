@@ -150,7 +150,6 @@ run_big() {
             printf -- "%s" "$clear_sequence"
             printf -- "%s\n" "$line"
             printf -- "%s" "$line2"
-            echo Big
             sleep 0.1
         done || exit 1
     done || return 1
