@@ -182,7 +182,7 @@ while read_char; do
 
         s) {
             # window_name="$2"
-            echo Not quite stopped
+            # echo Not quite stopped
             endr -INT "$jobid" 2>/dev/null
             # spinner -nobgb -norb &
         }
