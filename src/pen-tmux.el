@@ -422,6 +422,11 @@ START and END can be in either order."
 
 (comment
  (tmux-popup "cmatrix")
+ (pen-snc "spinner-start")
+ (pen-snc "spinner-start -b")
+ (pen-snc "spinner-start -b -nobgb")
+ (pen-snc "spinner-start -b -nobgb -norb")
+ (pen-snc "spinner-start -b -norb")
  (tmux-popup "cmatrix" "90%" 10 nil nil t)
 
  (let* ((pos (tm-cursor-pos-client))
