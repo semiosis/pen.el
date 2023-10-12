@@ -93,7 +93,7 @@ IFS= read -r -d '' script <<'HEREDOC'
 for i in $(seq 314 -1 1); do
     pattern="$(echo -n . | rps "$(( i % 10 ))")";
     replacement="$(printf -- "%s" "$pattern" | sed "s=\.= =g")";
-    echo "$message" | sed "s/$pattern\$/$replacement/" | ( if test "$big" = y; then fontify; else cat; fi; );
+    echo "$message" | sed "s/$pattern\$/$replacement/" | ( if test "$big" = y; then spinner -fn fontify; else cat; fi; );
 done |
     ( if test "$rainbow" = y; then spinner -fn colorize; else cat; fi; ) |
     ( if test "$bluebg" = y; then spinner -fn makebluebg; else cat; fi; )
@@ -103,6 +103,8 @@ script="$(printf -- "%s" "$script" | sed -z "s/\n */ /g")"
 # cmd ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$big\"; message=\"$message\"; $script"
 # exit
 colourwheel="$(ocif bash -c "bluebg=\"$bluebg\"; rainbow=\"$rainbow\"; big=\"$big\"; message=\"$message\"; $script")"
+
+# printf -- "%s\n" "$colourwheel" | tv
 
 trap func_trap INT
 func_trap() {
@@ -120,19 +122,21 @@ fi
 
 if test "$big" = "y"; then
     while :; do
-        printf -- "%s\n" "$colourwheel" | while read line; do
+        printf -- "%s\n" "$colourwheel" | while IFS= read line; do
             read line2
             printf -- "%s" "$clear_sequence"
             printf -- "%s\n" "$line"
             printf -- "%s" "$line2"
+            # echo
             sleep 0.1
         done
     done
 else
     while :; do
-        printf -- "%s\n" "$colourwheel" | while read line; do
+        printf -- "%s\n" "$colourwheel" | while IFS= read line; do
             printf -- "%s" "$clear_sequence"
             printf -- "%s" "$line"
+            # echo
             sleep 0.1
         done
     done
