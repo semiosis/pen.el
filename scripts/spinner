@@ -126,41 +126,42 @@ big="$big"
 message="$message"
 HEREDOC
 
-run() {
-    if test "$big" = "y"; then
-        while :; do
+run_big() {
+    while :; do
+        trap exit INT
+
+        printf -- "%s\n" "$colourwheel" | while IFS= read line; do
             trap exit INT
 
-            printf -- "%s\n" "$colourwheel" | while IFS= read line; do
-                trap exit INT
+            read line2
 
-                read line2
+            # sadly, it's not possible to change the tmux popup border after it has been made, AFAIK
+            # firstcol="$(echo "line2" | sed -n 's/[^;]*;5;\([0-9]\+\)m.*/\1/p;q;')"
+            # tmux set popup-border-style 'bg=default,fg=colour012'
 
-                # sadly, it's not possible to change the tmux popup border after it has been made, AFAIK
-                # firstcol="$(echo "line2" | sed -n 's/[^;]*;5;\([0-9]\+\)m.*/\1/p;q;')"
-                # tmux set popup-border-style 'bg=default,fg=colour012'
-
-                printf -- "%s" "$clear_sequence"
-                printf -- "%s\n" "$line"
-                printf -- "%s" "$line2"
-                # echo
-                sleep 0.1
-            done || exit 1
+            printf -- "%s" "$clear_sequence"
+            printf -- "%s\n" "$line"
+            printf -- "%s" "$line2"
+            echo Big
+            sleep 0.1
         done || exit 1
-    else
-        while :; do
+    done || exit 1
+}
+
+run_small() {
+    while :; do
+        trap exit INT
+
+        printf -- "%s\n" "$colourwheel" | while IFS= read line; do
             trap exit INT
 
-            printf -- "%s\n" "$colourwheel" | while IFS= read line; do
-                trap exit INT
-
-                printf -- "%s" "$clear_sequence"
-                printf -- "%s" "$line"
-                # echo
-                sleep 0.1
-            done || exit 1
+            printf -- "%s" "$clear_sequence"
+            printf -- "%s" "$line"
+            echo Small
+            # echo
+            sleep 0.1
         done || exit 1
-    fi
+    done || exit 1
 }
 
 # Main subprocess
