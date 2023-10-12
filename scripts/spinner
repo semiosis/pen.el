@@ -187,6 +187,22 @@ read_char() {
     stty icanon echo
 }
 
+changevar() {
+    varname="$1"
+    val="$2"
+
+    test -n "$varname" || exit 1
+
+    cat /dev/shm/spinnervars.txt | sed "/^${varname}=\"/s/\".*\"/\"$val\"/" | soak | tee /dev/shm/spinnervars.txt &>/dev/null
+}
+
+reload_job() {
+    # This is really dodgy. At least one process must survive or it will die
+    # These commands need to happen at the same time...
+    endr -np -INT "$jobid" 2>/dev/null
+    kill -USR1 "$jobid" 2>/dev/null
+}
+
 pid="$$"
 while read_char; do
     case "$char" in
@@ -201,7 +217,7 @@ while read_char; do
             # The 'Main subprocess' is not quit, but its children are
             # Before the 'Main subprocess' discovers its child processes have ended, trigger it to start a new job
             # sed -i '/^big="/s/".*"/"y"/' /dev/shm/spinnervars.txt
-            cat /dev/shm/spinnervars.txt | sed '/^big="/s/".*"/""/' | soak | tee /dev/shm/spinnervars.txt &>/dev/null
+            changevar big ""
 
             endr -np -INT "$jobid" 2>/dev/null
             kill -USR1 "$jobid" 2>/dev/null
@@ -209,12 +225,20 @@ while read_char; do
         ;;
 
         b) {
-            cat /dev/shm/spinnervars.txt | sed '/^big="/s/".*"/"y"/' | soak | tee /dev/shm/spinnervars.txt &>/dev/null
+            changevar big "y"
+            reload_job
+        }
+        ;;
 
-            # This is really dodgy. At least one process must survive or it will die
-            # These commands need to happen at the same time...
-            endr -np -INT "$jobid" 2>/dev/null
-            kill -USR1 "$jobid" 2>/dev/null
+        n) {
+            changevar rainbow ""
+            reload_job
+        }
+        ;;
+
+        r) {
+            changevar rainbow "y"
+            reload_job
         }
         ;;
 
