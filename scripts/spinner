@@ -126,6 +126,14 @@ big="$big"
 message="$message"
 HEREDOC
 
+run() {
+    if test "$big" = y; then
+        run_big
+    else
+        run_small
+    fi
+}
+
 run_big() {
     while :; do
         trap exit INT
@@ -174,7 +182,7 @@ run_small() {
     trap func_rerun USR1; func_rerun() {
         vars="$(cat /dev/shm/spinnervars.txt | tr -s '\n' ';')"
         colourwheel="$(ocif bash -c "$vars $script")"
-        run
+        eval "$vars"
     }
 
     run
