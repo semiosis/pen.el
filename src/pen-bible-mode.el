@@ -60,14 +60,16 @@
 
 ;; This will turn out to be a great way of learning greek
 
-(defun bible-open (&optional global-chapter verse module ref)
+(defun bible-open (&optional global-chapter verse module ref buffer)
   "Creates and opens a `bible-mode' buffer"
   (interactive)
   (let*
-      ((slug (slugify ref))
-       (buf (get-buffer-create (generate-new-buffer-name (if (sor ref)
-                                                             (concat "*bible-" slug "*")
-                                                           (concat "*bible*"))))))
+      ((buffername_ref (or ref "Genesis"))
+       (slug (slugify buffername_ref))
+       (buf (or
+             buffer
+             (get-buffer-create (generate-new-buffer-name
+                                 (concat "*bible-" slug "*"))))))
     (set-buffer buf)
     (setq module (or module
                      default-bible-mode-book-module
@@ -83,10 +85,11 @@
 
     (if (and ref
              (sor ref))
-        (bible-mode-lookup (bible-canonicalise-ref ref))
+        (bible-mode-lookup (bible-canonicalise-ref ref) module buf)
       (progn
         (bible-mode--set-global-chapter (or global-chapter 1) verse)
-        (set-window-buffer (get-buffer-window (current-buffer)) buf)))))
+        (set-window-buffer (get-buffer-window (current-buffer)) buf)))
+    buf))
 
 (defun bible-open-version (version)
   (interactive (list (completing-read "Module: " (bible-mode--list-biblical-modules))))
@@ -517,7 +520,7 @@
      (found (car found))
      (t (thing-at-point 'line t)))))
 
-(defun bible-mode-lookup (&optional text module)
+(defun bible-mode-lookup (&optional text module buf)
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (bible-get-text-here)))
@@ -589,7 +592,9 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
       (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
                   (string-to-number verse)
-                  module)
+                  module
+                  nil
+                  buf)
       ;; (tryelse
       ;;  (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter))
       ;;              (string-to-number verse)

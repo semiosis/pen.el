@@ -460,10 +460,11 @@ START and END can be in either order."
 
  (tmux-popup (cmd "asciimation") "60%" "60%" "M" "M+1")
 
- (tmux-popup "list-bible-books | mfz -nv"
-             "50%" "50%"
-             (tmux-cursor-x t)
-             (tmux-cursor-y))
+ (message (tmux-popup "list-bible-books | mfz -nv"
+                  "50%" "50%"
+                  (tmux-cursor-x t)
+                  (tmux-cursor-y)
+                  nil nil nil nil t))
 
  (tmux-popup "list-bible-books | mfz -nv"
              "50%" "50%"

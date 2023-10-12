@@ -46,16 +46,18 @@
   "I want this to work in elisp as well as
 clojure and perhaps all lisp modes. Done."
   (interactive)
-  (save-window-excursion
-    (cond ((lispy-left-p)
-           (if (derived-mode-p 'emacs-lisp-mode)
-               (eval (sexp-at-point))
-             (save-mark-and-excursion
-               (ekm "d C-x C-e"))))
-          ((lispy-right-p)
-           (ekm "C-x C-e"))
-          (t
-           (special-lispy-eval)))))
+  ;; save-window-excursion makes it so executing elisp in this way returns you to the code
+  ;; but I don't usually want that
+  ;; (save-window-excursion)
+  (cond ((lispy-left-p)
+         (if (derived-mode-p 'emacs-lisp-mode)
+             (eval (sexp-at-point))
+           (save-mark-and-excursion
+             (ekm "d C-x C-e"))))
+        ((lispy-right-p)
+         (ekm "C-x C-e"))
+        (t
+         (special-lispy-eval))))
 
 (define-key pen-lisp-mode-map (kbd "e") #'pen-lisp-e)
 (define-key pen-lisp-mode-map (kbd "M-a") #'pen-lisp-left-noevil)
