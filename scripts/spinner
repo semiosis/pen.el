@@ -128,9 +128,9 @@ HEREDOC
 
 run() {
     if test "$big" = y; then
-        run_big
+        run_big || exit 1
     else
-        run_small
+        run_small || exit 1
     fi
 }
 
