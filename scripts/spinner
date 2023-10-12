@@ -215,9 +215,11 @@ while read_char; do
         }
         ;;
 
-        m) { changevar big ""; reload_job; } ;;
+        G) { changevar bluebg ""; reload_job; } ;;
+        g) { changevar bluebg "y"; reload_job; } ;;
+        B) { changevar big ""; reload_job; } ;;
         b) { changevar big "y"; reload_job; } ;;
-        n) { changevar rainbow ""; reload_job; } ;;
+        R) { changevar rainbow ""; reload_job; } ;;
         r) { changevar rainbow "y"; reload_job; } ;;
 
         *) {
