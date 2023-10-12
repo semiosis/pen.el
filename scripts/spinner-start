@@ -15,15 +15,23 @@ esac; done
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 : "${TMUX_PANE:="$(tmux display-message -p '#{pane_id}')"}"
-# top="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_top}' 2>/dev/null)"
 bottom="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_bottom}' 2>/dev/null)"
 left="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_left}' 2>/dev/null)"
-# right="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_right}' 2>/dev/null)"
+
+if test "$big" = "y"; then
+    # We want to center the LOADING spinner
+    top="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_top}' 2>/dev/null)"
+    right="$(tmux display-message -p -t "$TMUX_PANE" '#{pane_right}' 2>/dev/null)"
+fi
 
 # tpop -d -b none -nos -x 1 -y H-2 -w 19 -h 1 -bg 004 spinner
 
 if test "$big" = "y"; then
-    tpop -d -b heavy -nos -w 46 -h 4 -bg 004 -fg 049 spinner -b
+    w=46
+    h=4
+    x="$(( (right - left - w) / 2 + left ))"
+    y="$(( (bottom - top - h) / 2 + top ))"
+    tpop -d -b heavy -nos -x $x -y $y -w $w -h $h -bg 004 -fg 049 spinner -b
     # tpop -d -b padded -nos -w 46 -h 4 -bg 004 -fg 049 spinner -b
 else
     tpop -d -b none -nos -x "$(( 1 + left ))" -y "$(( bottom - 1 ))" -w 19 -h 1 -bg 004 spinner
