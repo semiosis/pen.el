@@ -1,7 +1,15 @@
 #!/bin/bash
 
+exec 2>/dev/null
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    -cd) {
+        cdinto=y
+        shift
+    }
+    ;;
+
     -c) {
         charwise=y
         shift
@@ -21,10 +29,22 @@ esac; done
 text="$@"
 : "${text:="Pen.el"}"
 
-if test -n "$font"; then
-    test -d $MYGIT/xero/figlet-fonts && cd $MYGIT/xero/figlet-fonts
-    test -d $MYGIT/figlet-fonts && cd $MYGIT/figlet-fonts
+! test -d "$fontdir" && { maybepath="/root/repos/figlet-fonts"; test -d "$maybepath" && : "${fontdir:="$maybepath"}"; }
+! test -d "$fontdir" && { maybepath="$MYGIT/xero/figlet-fonts"; test -d "$maybepath" && : "${fontdir:="$maybepath"}"; }
+! test -d "$fontdir" && { maybepath="$MYGIT/figlet-fonts"; test -d "$maybepath" && : "${fontdir:="$maybepath"}"; }
 
+test -d "$fontdir" || exit 1
+cd "$fontdir"
+
+if test "$cdinto" = "y"; then
+    pwd
+    zcd .
+    exit "$?"
+fi
+
+(
+
+if test -n "$font"; then
     if ! test "$charwise" = "y"; then
         # echo "$font"
         echo "$text" | toilet -f "$font";
@@ -34,12 +54,11 @@ if test -n "$font"; then
         done
     fi
 else
-    cd $MYGIT/xero/figlet-fonts
-
     if ! test "$charwise" = "y"; then
         for bn in *; do
             echo "$bn"
-            echo "$text" | toilet -f "$bn" --gay;
+            # echo "$text" | toilet -f "$bn" --gay;
+            echo "$text" | toilet -f "$bn";
             echo
         done
     else
@@ -48,3 +67,5 @@ else
         done
     fi
 fi
+
+) | lolcat -f | less -rS
