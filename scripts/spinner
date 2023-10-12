@@ -126,15 +126,13 @@ big="$big"
 message="$message"
 HEREDOC
 
-func_exit() { exit 1; }
-
 run() {
     if test "$big" = "y"; then
         while :; do
-            trap func_exit INT
+            trap exit INT
 
             printf -- "%s\n" "$colourwheel" | while IFS= read line; do
-                trap func_exit INT
+                trap exit INT
 
                 read line2
 
@@ -151,10 +149,10 @@ run() {
         done || exit 1
     else
         while :; do
-            trap func_exit INT
+            trap exit INT
 
             printf -- "%s\n" "$colourwheel" | while IFS= read line; do
-                trap func_exit INT
+                trap exit INT
 
                 printf -- "%s" "$clear_sequence"
                 printf -- "%s" "$line"
