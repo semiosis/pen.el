@@ -52,8 +52,7 @@ if test "$big" = "y"; then
     while :; do
         printf -- "%s\n" "$colourwheel" | while read line; do
             read line2
-            # printf -- "%s" "[H"
-            clear
+            printf -- "%s" "[H"
             printf -- "%s\n" "$line"
             printf -- "%s" "$line2"
             sleep 0.1
