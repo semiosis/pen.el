@@ -7,6 +7,13 @@ export TTY
 sn="$(basename -- "$0")"
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_stdout_pipe() { [[ -p /dev/stdout ]]; }
+
+if ! { is_tty || is_stdout_pipe; }; then
+    # e.g. (pen-snc "1John")
+    in-pen unbuffer xt in-tm "$sn" "$@" & disown
+    exit "$?"
+fi
 
 case "$sn" in
     bible-book) {

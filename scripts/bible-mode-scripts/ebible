@@ -10,7 +10,7 @@ is_stdout_pipe() { [[ -p /dev/stdout ]]; }
 
 if ! { is_tty || is_stdout_pipe; }; then
     # e.g. (pen-snc "1John")
-    unbuffer xt in-tm "$sn" "$@" & disown
+    in-pen unbuffer xt in-tm "$sn" "$@" & disown
     exit "$?"
 fi
 

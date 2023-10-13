@@ -1617,3 +1617,5 @@ e ia lsp-origami lsp-dart lsp-pyright
 pip3.8 install python-lsp-server
 
 agi pv
+
+e ia vimrc-mode
