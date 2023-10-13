@@ -66,10 +66,10 @@
   (let*
       ((buffername_ref (or ref "Genesis"))
        (slug (slugify buffername_ref))
-       (buf (or
-             buffer
-             (get-buffer-create (generate-new-buffer-name
-                                 (concat "*bible-" slug "*"))))))
+       (buf (or buffer
+                (get-buffer-create "*bible*"))))
+    
+    (bible-rename-buffer buffername_ref buf)
     (set-buffer buf)
     (setq module (or module
                      default-bible-mode-book-module
@@ -79,7 +79,6 @@
 
     (setq bible-mode-book-module module)
     (switch-to-buffer buf)
-    
 
     ;; (redraw-frame)
 
@@ -519,6 +518,22 @@
      (matched (car matched))
      (found (car found))
      (t (thing-at-point 'line t)))))
+
+(defun bible-rename-buffer (ref &optional buffer)
+  "if create-if-buf-is-nil is true then when buf is nil, a buffer is created rather than renaming the current buffer"
+  (let* ((buf (or
+               buffer
+               (current-buffer)))
+         (slug (slugify ref))
+         (current_name (buffer-name buf))
+         (optimal_name (concat "*bible-" slug "*"))
+         (next_name (generate-new-buffer-name
+                     optimal_name)))
+    
+    (if (not (string-equal current_name optimal_name))
+        (with-current-buffer buf
+          (rename-buffer next_name)))
+    buf))
 
 (defun bible-mode-lookup (&optional text module buf)
   "Follows the hovered verse in a `bible-search-mode' buffer,
