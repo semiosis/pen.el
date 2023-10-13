@@ -798,7 +798,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (spinner-stop)
   (pen-snc "spinner-stop")
 
-  (if verse
+  (if (re-match-p ":" verse)
       (progn
         (beginning-of-line)
         (cua-set-mark)

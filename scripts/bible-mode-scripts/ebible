@@ -9,7 +9,8 @@ is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 is_stdout_pipe() { [[ -p /dev/stdout ]]; }
 
 if ! { is_tty || is_stdout_pipe; }; then
-    xterm "$sn" "$@"
+    # e.g. (pen-snc "1John")
+    unbuffer xt in-tm "$sn" "$@" & disown
     exit "$?"
 fi
 
