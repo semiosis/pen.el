@@ -1,4 +1,4 @@
-(require 'vimrc-mode)
+(use-package vimrc-mode :ensure t)
 
 (defun vimhelp (thing)
   ;; (interactive (list (ask (pen-thing-at-point))))
