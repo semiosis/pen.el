@@ -55,6 +55,7 @@
                            pen-sps-ncdu))
 (defset magit-status-mode-funcs '(magit-section-cycle-diffs
                                   magit-dired-jump))
+(defset vimrc-mode-funcs '(vimhelp))
 (defset bible-mode-funcs '(bible-mode-cross-references
                            bible-mode-split-display
                            bible-random-verse-ref))

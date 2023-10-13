@@ -308,6 +308,8 @@ single-character strings, or a string of characters."
        (concat "pen-ask: "))
    thing))
 
+(defalias 'ask 'pen-ask)
+
 (cl-defun pen-topic (&optional short semantic-only &key no-select-result)
   "Determine the topic used for pen functions"
   (interactive)
