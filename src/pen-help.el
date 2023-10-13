@@ -90,7 +90,7 @@
 
 (defun ead-show-hyper-key ()
   (interactive)
-  (wgrep "\"H-" "/root/.emacs.d/host/pen.el/"))
+  (wgrep "\"H-" "/root/.emacs.d/host/pen.el/src"))
 (define-key global-map (kbd "C-H-h") 'ead-show-hyper-key)
 
 (define-key global-map (kbd "<help> g") #'widget-browse)
