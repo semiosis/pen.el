@@ -5,6 +5,14 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_stdout_pipe() { [[ -p /dev/stdout ]]; }
+
+if ! { is_tty || is_stdout_pipe; }; then
+    xterm "$sn" "$@"
+    exit "$?"
+fi
+
 if ! inside-docker-p && docker-running-p; then
     is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
@@ -108,8 +116,6 @@ elif test -n "$ANNOTATED"; then
 fi
 
 : "${USE_TTP:="y"}"
-
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 doublespacemax () {
     sed 's/\s\+$//' | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
