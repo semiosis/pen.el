@@ -343,6 +343,13 @@ This issue might be caused by:
          string))
       (t (lsp--render-element (lsp-ui-doc--inline-formatted-string string)))))))
 
+(defun clean-sideline (s)
+  (--> s
+       ;; for vim-language-server
+       (s-replace-regexp "```[a-z]*" "" it)
+       ;; can't remember what for
+       (pen-mnm it)))
+
 ;; This minimises the sideline strings
 (defun lsp-ui-sideline--extract-info (contents)
   "Extract the line to print from CONTENTS.
@@ -353,15 +360,15 @@ function signature)."
   (when contents
     (cond
      ((lsp-marked-string? contents)
-      (lsp:set-marked-string-value contents (pen-mnm (lsp:marked-string-value contents)))
+      (lsp:set-marked-string-value contents (clean-sideline (lsp:marked-string-value contents)))
       contents)
      ((vectorp contents)
       (seq-find (λ (it) (and (lsp-marked-string? it)
-                                  (lsp-get-renderer (lsp:marked-string-language it))))
+                             (lsp-get-renderer (lsp:marked-string-language it))))
                 contents))
      ((lsp-markup-content? contents)
       ;; This successfully minimises haskell sideline strings
-      (lsp:set-markup-content-value contents (pen-mnm (lsp:markup-content-value contents)))
+      (lsp:set-markup-content-value contents (clean-sideline (lsp:markup-content-value contents)))
       contents))))
 
 (advice-remove-all-from 'lsp-ui-peek-find-references)
