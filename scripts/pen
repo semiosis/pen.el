@@ -21,6 +21,14 @@
 
 pen_version=2.0
 
+sn="$(basename "$0")"
+bn="$sn"
+rp="$(realpath "$bn")"
+
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+
+export PEN_INVOCATION="$sn $(cmd "$@")"
+
 # This will detach the docker container immediately - but how to disable entirely?
 # At least I have saved C-p from being highjacked.
 # C-q in emacs is used to enter the next character. This seems like an OK binding.
@@ -80,12 +88,6 @@ get_config_dir() {
     echo "$PEN_CONFIG_DIR"
     return 0
 }
-
-sn="$(basename "$0")"
-bn="$sn"
-rp="$(realpath "$bn")"
-
-export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 unset PEN_USE_GUI
 
@@ -846,7 +848,13 @@ fi
 
 ensure_pen_running() {
     if ! inside-docker-p && ! docker-running-p; then
-        echo "Please start Pen.el server first: pen -nw" | hls red 1>&2
+        {
+            echo "Failed {"
+            echo "    $PEN_INVOCATION"
+            echo
+            echo "    Please start Pen.el server first: pen -nw"
+            echo "}"
+        } | hls red 1>&2
         exit 1
 
         echo Starting Pen. Please wait... 1>&2
@@ -1102,7 +1110,7 @@ has_placeholder() {
     test "$found" = y
 }
 
-export PEN_INVOCATION="$(cmd "$@")"
+export PEN_PF_INVOCATION="$(cmd "$@")"
 
 case "$sn" in
     penf) {
@@ -1218,7 +1226,7 @@ case "$sn" in
                 fi
             fi
 
-            export PEN_INVOCATION="$pfname $(cmd "$@")"
+            export PEN_PF_INVOCATION="$pfname $(cmd "$@")"
 
             if ! printf -- "%s\n" "$pfname" | grep -q -P '/[0-9]*'; then
                 pfname="$pfname/$#"

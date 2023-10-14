@@ -288,7 +288,8 @@ case "$vc_opt" in
 
                 # Test if git first
                 git rev-parse --show-toplevel 2>/dev/null | pen-convert-path-to-local | {
-                    sed 's=/home/shane/=/root/='
+                    sed 's=/home/shane/=/root/=' |
+                    sed 's=/root/var/smulliga/=/home/shane/var/smulliga/='
                 } || pwd
 
                 exit $?
@@ -403,21 +404,6 @@ HEREDOC
                 esac; done
 
                 eval "git difftool $opts"
-            }
-            ;;
-
-            gtl|get-top-level) {
-                if test "$1" = "y"; then
-                    dn="$(p "$dn" | pen-u drn)"
-                    cd "$dn"
-                fi
-
-                # Test if git first
-                git rev-parse --show-toplevel 2>/dev/null | pen-convert-path-to-local | {
-                    sed 's=/home/shane/=/root/='
-                } || pwd
-
-                exit $?
             }
             ;;
 
