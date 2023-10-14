@@ -1531,6 +1531,14 @@ cd cwc
 make -j$(nproc)
 )
 
+(
+cd ~/repos/
+git clone --recursive "https://github.com/chr15m/flk"
+cd flk
+make
+newscript="$(mkw -f flk)"
+)
+
 e ia rubik
 
 env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
