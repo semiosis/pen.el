@@ -519,6 +519,8 @@ We don't extract the string that `lps-line' is already displaying."
 
 (defun lsp-get-server-for-install (name)
   (interactive (list (fz (lsp-list-all-servers))))
+  (setq name (or name (fz (lsp-list-all-servers))))
+  
   (cdr (car (-filter (λ (sv) (string-equal (car sv) name))
                      (--map (cons (funcall
                                    (-compose #'symbol-name #'lsp--client-server-id) it) it)
@@ -534,6 +536,12 @@ We don't extract the string that `lps-line' is already displaying."
 (defun lsp-install-server-by-name (name)
   (interactive (list (fz (lsp-list-all-servers))))
   (lsp--install-server-internal (lsp-get-server-for-install name)))
+
+(defun lsp-install-all-servers ()
+  (interactive)
+  (loop for s in (lsp-list-all-servers)
+        do
+        (lsp-install-server-by-name s)))
 
 (defun lsp--sort-completions (completions)
   (lsp-completion--sort-completions completions))
