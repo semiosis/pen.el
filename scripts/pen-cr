@@ -2115,7 +2115,7 @@ case "$file_type" in
     ;;
 
     r|R) {
-        Rscript "$rp"
+        Rscript "$rp" "$@"
         pen-pak
         exit 0
     }

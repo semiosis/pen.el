@@ -4,4 +4,7 @@
       do
       (eval `(use-package ,p :ensure t)))
 
+;; (define-key ess-r-mode-map (kbd "M-?") 'ess-complete-object-name)
+(define-key ess-r-mode-map (kbd "M-?") nil)
+
 (provide 'pen-r)
