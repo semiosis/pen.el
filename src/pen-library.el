@@ -1327,4 +1327,10 @@ non-nil."
       (setq-default truncate-lines t)
       (message "%s" "truncate-lines enabled"))))
 
+(defmacro unprefix (&rest body)
+  ""
+  `(let ((current-prefix-arg nil)
+         (current-global-prefix-arg nil))
+     ,@body))
+
 (provide 'pen-library)

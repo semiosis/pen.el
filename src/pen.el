@@ -2253,6 +2253,7 @@ May use to generate code from comments."
 (require 'pen-shebang)
 (require 'pen-show-map)
 (require 'pen-isearch)
+(require 'pen-r)
 (require 'pen-find-file)
 (if (inside-docker-p)
     (require 'pen-docker))

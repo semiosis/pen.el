@@ -443,9 +443,17 @@
   (interactive)
   (let* ((modes (parent-mode-list major-mode))
          (funs
-          (flatten-list
-           (loop for m in modes collect
-                 (major-mode-function m)))))
+          (if (>= (prefix-numeric-value current-prefix-arg) 4)
+              (flatten-list
+               (loop for m in modes collect
+                     (major-mode-function m)))
+            (append (flatten-list
+                     (loop for m in modes collect
+                           (major-mode-function m)))
+                    (get-major-mode-functions mode)))))
+
+    ;; ess-mode-map
+
     (if (interactive-p)
         (if funs
             (call-interactively (intern (fz funs nil nil "major-mode-function: ")))

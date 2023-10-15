@@ -12,6 +12,17 @@
   (completing-read prompt
                    collection nil t nil nil))
 
+(defun get-major-mode-functions (&optional map)
+  (if (not map)
+      (setq map (current-major-mode-map)))
+
+  (let ((ms (show-map-as-string map)))
+    (if (sor ms)
+        (let* ((funstr
+                (pen-snc "sed -e '/^ /d' -e '/Prefix Command/d' -e '/^$/d' -e '/^--/d' -e '/^key/d' -e '/Key.*Binding/d' | rev | pen-str field 1 | rev" ms)))
+          (if (sor funstr)
+              (-filter 'commandp (mapcar 'intern (str2lines funstr))))))))
+
 (defun select-major-mode-function (&optional map)
   (if (not map)
       (setq map (current-major-mode-map)))
@@ -21,7 +32,7 @@
         (let* ((funstr
                 (fz-syms
                  "select-major-mode-function: "
-                 (pen-snc "sed -e '/^ /d' -e '/Prefix Command/d' -e '/^$/d' -e '/^--/d' -e '/^key/d' | rev | pen-str field 1 | rev" ms))))
+                 (pen-snc "sed -e '/^ /d' -e '/Prefix Command/d' -e '/^$/d' -e '/^--/d' -e '/^key/d' -e '/Key.*Binding/d' | rev | pen-str field 1 | rev" ms))))
           (if (sor funstr)
               (let ((fun (intern funstr)))
                 (if (commandp fun)
