@@ -1,5 +1,7 @@
 (package-initialize)
 
+(use-package paradox :ensure t)
+
 (defun pen-slurp-file (f)
   (with-temp-buffer
     (insert-file-contents f)

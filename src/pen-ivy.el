@@ -43,6 +43,11 @@
              ;; (xc ivy-text t)
              (setq ret (pen-ivy-current-string))
              (ivy--exhibit))))
+
+    (setq ret (--> ret
+                   ;; remove grep numbers
+                   (s-replace-regexp "^[^:]+:[0-9]+:[0-9]+: *" "" it)))
+    
     ret))
 
 (defun pen-ivy-copy-selection ()

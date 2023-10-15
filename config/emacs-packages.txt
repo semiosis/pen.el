@@ -2264,3 +2264,5 @@ relint
 shelisp
 shell-command+
 eat
+keypression
+keypress-multi-event
