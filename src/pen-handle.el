@@ -254,6 +254,27 @@
         :nextdef '(pen-prog-next-def
                    lispy-flow))
 
+(handle '(ess-r-mode)
+        :repls '()
+        ;; This is for running the program
+        :runmain '()
+        :formatters '(lsp-format-buffer)
+        :docs '(pen-esp-docs-for-thing-if-prefix
+                pen-doc-override
+                lsp-describe-thing-at-point
+                pen-doc-thing-at-point
+                pen-docs-for-thing-given-screen)
+        :references '(lsp-ui-peek-find-references
+                      ;; lsp-find-references
+                      pen-counsel-ag-thing-at-point)
+        :docsearch '(pen-doc-ask)
+        :godef '(lsp-find-definition
+                 xref-find-definitions-immediately
+                 helm-gtags-dwim)
+        :docsearch '(pen-doc)
+        :nextdef '(pen-prog-next-def
+                   lispy-flow))
+
 (handle '(bible-mode bible-search-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list)

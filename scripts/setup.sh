@@ -1634,3 +1634,26 @@ e ia keypress-multi-event
 # R
 e ia tree-sitter-ess-r express ess-view-data ess-view ess-smart-underscore ess-smart-equals ess-r-insert-obj ess-R-data-view ess
 agi r-base
+
+# R language server
+apt-get install git ssh curl bzip2 libffi-dev -y
+
+sudo rm -rf /usr/local/lib/R
+(
+cd ~/dump/programs
+wget "https://cran.r-project.org/src/base/R-4/R-4.3.1.tar.gz"
+tar xf R-4.3.1.tar.gz 
+cd R-4.3.1/
+agi libpcre2-32-0 libpcre2-dev
+./configure 
+make -j 10
+make install
+)
+
+# This debian version of R is not new enough
+(
+cd "$(gc "https://github.com/REditorSupport/languageserver")"
+Rscript -e "install.packages(c('remotes', 'rcmdcheck'), repos = 'https://cloud.r-project.org')"
+Rscript -e "remotes::install_deps(dependencies = TRUE)"
+Rscript -e "install.packages('languageserver', repos = 'https://cloud.r-project.org')"
+)

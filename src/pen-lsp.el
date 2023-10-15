@@ -183,6 +183,7 @@ This issue might be caused by:
 (add-hook 'yaml-mode-hook #'maybe-lsp)
 (add-hook 'sql-mode-hook 'maybe-lsp)
 (add-hook 'php-mode-hook 'maybe-lsp)
+(add-hook 'ess-r-mode-hook 'maybe-lsp)
 (add-hook 'clojure-mode-hook 'maybe-lsp)
 (add-hook 'clojurescript-mode-hook 'maybe-lsp)
 (add-hook 'julia-mode-hook 'maybe-lsp)
@@ -347,6 +348,8 @@ This issue might be caused by:
   (--> s
        ;; for vim-language-server
        (s-replace-regexp "```[a-z]*" "" it)
+       ;; for c
+       (s-replace-regexp "^### " "" it)
        ;; can't remember what for
        (pen-mnm it)))
 
