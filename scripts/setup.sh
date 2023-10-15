@@ -1655,5 +1655,6 @@ make install
 cd "$(gc "https://github.com/REditorSupport/languageserver")"
 Rscript -e "install.packages(c('remotes', 'rcmdcheck'), repos = 'https://cloud.r-project.org')"
 Rscript -e "remotes::install_deps(dependencies = TRUE)"
-Rscript -e "install.packages('languageserver', repos = 'https://cloud.r-project.org')"
+r-install-package languageserver
+r-install-package lubridate
 )
