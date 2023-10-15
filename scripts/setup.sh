@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Debian10 installation
+# Debian11 installation
 
 agi apt-file
 apt-file update
@@ -1657,4 +1657,12 @@ Rscript -e "install.packages(c('remotes', 'rcmdcheck'), repos = 'https://cloud.r
 Rscript -e "remotes::install_deps(dependencies = TRUE)"
 r-install-package languageserver
 r-install-package lubridate
+)
+
+(
+cd ~/dump/programs
+wget "https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.09.0-463-amd64.deb"
+agi libclang-dev
+# sudo apt --fix-broken install
+sudo dpkg -i "rstudio-2023.09.0-463-amd64.deb"
 )
