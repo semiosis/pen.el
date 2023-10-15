@@ -2,6 +2,7 @@
 export TTY
 
 # This keeps getting replaced
+# mkimmutable rust-analyzer
 
 parent="$(ps -o comm= $PPID)"
 ( hs "$(basename "$0")" "$@" "#" "<==" "$parent" 0</dev/null ) &>/dev/null
