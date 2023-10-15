@@ -2266,3 +2266,9 @@ shell-command+
 eat
 keypression
 keypress-multi-event
+tree-sitter-ess-r
+express
+ess-view-data
+ess-view
+ess-smart-underscore
+ess-r-insert-obj

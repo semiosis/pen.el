@@ -1633,3 +1633,4 @@ e ia keypress-multi-event
 
 # R
 e ia tree-sitter-ess-r express ess-view-data ess-view ess-smart-underscore ess-smart-equals ess-r-insert-obj ess-R-data-view ess
+agi r-base
