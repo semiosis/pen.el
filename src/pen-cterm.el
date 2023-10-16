@@ -9,6 +9,10 @@
   ;; (pen-sps (pen-cmd "pet" "-E" command))
   (eval-string (pen-snc (pen-cmd "pet" "-E" command) stdin dir)))
 
+(defun sps-pet (command &optional stdin dir)
+  (interactive (list (read-string-hist "Shell command: ")))
+  (esps (lm (pet command stdin dir))))
+
 (defun testpet ()
   (interactive)
   (progn

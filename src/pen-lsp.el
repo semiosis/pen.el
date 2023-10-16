@@ -468,7 +468,7 @@ We don't extract the string that `lps-line' is already displaying."
     (if (and contents (not (equal contents "")))
         (let ((s
                (string-trim-right (lsp--render-on-hover-content contents t))))
-          (pet (cmd "glow") s)
+          (sps-pet (cmd "glow") s)
 
           ;; old code
           (comment
