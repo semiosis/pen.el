@@ -1,0 +1,51 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    tf_in="$(tf md || echo /dev/null)"
+    set -- "$tf_in" "$@"
+fi
+
+fp="$1"
+
+td_md="$(mktemp -t -d td_mdXXXXXX || echo /dev/null)"
+
+fn=$(basename "$fp")
+dn=$(dirname "$fp")
+ext="${fn##*.}"
+mant="${fn%.*}"
+
+cp -a "$fp" "$td_md"
+cd "$td_md"
+
+# echo "$td_md"
+# exit 0
+
+newfn="${mant}.txt"
+
+# echo "$newfn"
+# exit 1
+
+pandoc -f markdown -t plain "$fn" -o "$newfn"
+
+nrp="$(realpath "$newfn")"
+
+# pwd
+# realpath "$newfn"
+# echo "$nrp"
+# exit 1
+
+is_tty() { [ -t 1 ]; }
+
+if is_tty; then
+    exec <&1
+    vs "$nrp"
+else
+    cat "$nrp"
+fi

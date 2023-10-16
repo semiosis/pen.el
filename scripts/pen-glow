@@ -3,6 +3,23 @@ export TTY
 
 # $MYGIT/charmbracelet/glow/glow "$@"
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nc) {
+        nocolor=y
+        shift
+    }
+    ;;
+
+    -f) {
+        force_color=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 stdin_exists() {
     {
     ! [ -t 0 ] && \
@@ -20,4 +37,14 @@ if stdin_exists; then
     exec <`tm-tty` `# see etty` 
 fi
 
-unbuffer ~/repos/glow/glow "$@" | pa -E "less -rS"
+unbuffer_maybe() {
+    if test "$nocolor" = "y"; then
+        "$@" | pavs
+    elif test "$force_color" = "y"; then
+        unbuffer "$@"
+    else
+        "$@"
+    fi
+}
+
+unbuffer_maybe ~/repos/glow/glow "$@" | s remove-leading-and-trailing-newlines | pa -E "less -rS"

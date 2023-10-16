@@ -1047,12 +1047,11 @@ rm -f ~/.cargo/bin/rust-analyzer
 rustup component add rust-analyzer
 rustup toolchain install nightly --component rust-analyzer-preview
 
-rm -f ~/.local/bin/rust-analyzer
-
-(
-cd "$(gc "https://github.com/rust-analyzer/rust-analyzer")"
-cargo xtask install --server
-)
+# rm -f ~/.local/bin/rust-analyzer
+# (
+# cd "$(gc "https://github.com/rust-analyzer/rust-analyzer")"
+# cargo xtask install --server
+# )
 
 # For scope
 agi mediainfo

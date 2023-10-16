@@ -468,22 +468,25 @@ We don't extract the string that `lps-line' is already displaying."
     (if (and contents (not (equal contents "")))
         (let ((s
                (string-trim-right (lsp--render-on-hover-content contents t))))
-          (sps-pet (cmd "glow") s)
-
-          ;; old code
           (comment
-           (let ((lsp-help-buf-name "*lsp-help*"))
-             (with-current-buffer (get-buffer-create lsp-help-buf-name)
-               (let ((delay-mode-hooks t))
-                 (lsp-help-mode)
-                 (with-help-window lsp-help-buf-name
-                   (insert (string-trim-right (lsp--render-on-hover-content contents t))))
-                 (run-mode-hooks)
+           (sps-pet (cmd "glow") s))
 
-                 ;; consider opening in glow
-                 (if (looks-like-markdown-p (buffer-string))
-                     (let ((buf (current-buffer)))
-                       (markdown-mode))))))))
+          (comment
+           (tpop "v" (pen-snc "glow -nc" (string-trim-right (lsp--render-on-hover-content contents t)))))
+
+          ;; old code - still the best
+          (let ((lsp-help-buf-name "*lsp-help*"))
+            (with-current-buffer (get-buffer-create lsp-help-buf-name)
+              (let ((delay-mode-hooks t))
+                (lsp-help-mode)
+                (with-help-window lsp-help-buf-name
+                  (insert (string-trim-right (lsp--render-on-hover-content contents t))))
+                (run-mode-hooks)
+
+                ;; consider opening in glow
+                (if (looks-like-markdown-p (buffer-string))
+                    (let ((buf (current-buffer)))
+                      (markdown-mode)))))))
       (lsp--info "No content at point."))))
 
 (defun pen-lsp-get-hover-docs ()
