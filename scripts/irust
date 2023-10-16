@@ -21,4 +21,5 @@ fi
 
 test -f $HOME/.cargo/bin/irust || cargo install "irust" &>/dev/null
 
+echo "irust: $(pwd)" | mnm | lolcat
 $HOME/.cargo/bin/irust "$@"
