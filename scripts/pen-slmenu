@@ -2,7 +2,13 @@
 export TTY
 
 stdin_exists() {
-    ! [ -t 0 ]
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
 }
 
 # Don't detach by default because most of the time I will open a TUI
@@ -43,13 +49,18 @@ result="$(
     fi
 )"
 
-is_tty() {
-    [[ -t 1 ]]
-}
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 exec 0>&3
 
-if is_tty; then
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+if is_stdout_pipe; then
+    printf -- "%s\n" "$result"
+elif is_tty; then
     if test "$detach" = "y"; then
         # DO NOT unset TMUX.
         test -n "$result" && tmux run -b "unbuffer $result > /dev/null"

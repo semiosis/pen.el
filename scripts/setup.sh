@@ -1669,3 +1669,5 @@ agi libclang-dev
 # sudo apt --fix-broken install
 sudo dpkg -i "rstudio-2023.09.0-463-amd64.deb"
 )
+
+e ia smalltalk-mode
