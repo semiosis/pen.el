@@ -379,9 +379,15 @@
 (add-hook 'after-init-hook 'pen-load-config t)
 
 (defun pen-after-init-package-loads ()
-  (load-library "pen-term")())
+  (interactive)
+  (message "pen-after-init-package-loads")
+  
+  (load-library "pen-term"))
 
-(add-hook 'window-setup-hook 'pen-after-init-package-loads t)
+;; This is the latest you can get before making the frame
+;; (add-hook 'window-setup-hook 'pen-after-init-package-loads t)
+;; But it might need to go to 'after-make-frame-functions
+(add-hook 'after-make-frame-functions 'pen-after-init-package-loads t)
 
 (define-key pen-map (kbd "C-c n") #'nbfs)
 
