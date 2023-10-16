@@ -3,9 +3,11 @@
 ;;; Prompt Engineering in Emacs
 ;;; The Pen of Imagination
 
+;; why did this run twice?
+(message "start of pen.el")
+
 (setq large-file-warning-threshold nil)
 
-;; ;; nadvice - proc is the original function, passed in. do not modify
 ;; (defun require-around-advice (proc &rest args)
 ;;   (message "require called with args %S" args)
 ;;   (let ((res (apply proc args)))
@@ -2217,7 +2219,12 @@ May use to generate code from comments."
 (if (inside-docker-p)
     (progn
       (require 'pen-term)
-      (require 'pen-lsp-java)))
+      (require 'pen-lsp-java)
+      ))
+
+;; why did this run twice?
+(message "running 2222nd line")
+
 (require 'pen-lsp)
 (require 'ilambda)
 (require 'pen-metacognition)
@@ -2466,5 +2473,9 @@ May use to generate code from comments."
 ;;                           pen-set-faces
 ;;                           ;; tramp-register-archive-file-name-handler magit-maybe-define-global-key-bindings
 ;;                           pen-load-config))
+
+;; why did this run twice?
+(message "end of pen.el")
+;; reload this when the frame starts
 
 (provide 'pen)

@@ -63,6 +63,7 @@
       (require 'yamlmod)
       (require 'yamlmod-wrapper)))
 
+;; this is the first time it runs
 (require 'pen)
 (pen 1)
 
@@ -376,6 +377,11 @@
 (add-hook 'after-init-hook 'pen-delay-memoise)
 
 (add-hook 'after-init-hook 'pen-load-config t)
+
+(defun pen-after-init-package-loads ()
+  (load-library "pen-term")())
+
+(add-hook 'window-setup-hook 'pen-after-init-package-loads t)
 
 (define-key pen-map (kbd "C-c n") #'nbfs)
 
