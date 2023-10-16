@@ -420,10 +420,14 @@ Be mindful of quoting arguments correctly."
   "Like term but can run a shell command.
 `nsfa` stands for `New Script From Arguments`"
   (interactive (list (read-string "cmd:")))
-  (if input
-      (let ((tf (make-temp-file "pen-term-nsfa" nil nil input)))
-        (pen-term (message (pen-nsfa (message (concat "( " cmd " ) < " (pen-q tf))) dir)) closeframe modename buffer-name))
-    (pen-term (pen-nsfa cmd dir) closeframe modename buffer-name)))
+  (pen-term (pen-nsfa cmd dir input) closeframe modename buffer-name)
+  ;; (if input
+  ;;     (let ((tf (make-temp-file "pen-term-nsfa" nil nil input)))
+  ;;       (pen-term (message (pen-nsfa (message (concat "( " cmd " ) < " (pen-q tf))) dir)) closeframe modename buffer-name))
+  ;;   (pen-term (pen-nsfa cmd dir input) closeframe modename buffer-name))
+  )
+
+(defalias 'term-nsfa 'pen-term-nsfa)
 
 ;; (defun tmuxify-cmd (cmd)
 ;;   (concat "t new " (pen-q (concat "TTY= " cmd))))

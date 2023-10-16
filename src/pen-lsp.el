@@ -454,6 +454,38 @@ We don't extract the string that `lps-line' is already displaying."
     ;; This makes python work
     contents)))
 
+(defun looks-like-markdown-p (s)
+ (or (re-match-p "```" s)
+     (re-match-p "^###? " s)))
+
+(defun lsp-describe-thing-at-point ()
+  "Display the type signature and documentation of the thing at point."
+  (interactive)
+  (let ((contents (-some->> (lsp--text-document-position-params)
+                    (lsp--make-request "textDocument/hover")
+                    (lsp--send-request)
+                    (lsp:hover-contents))))
+    (if (and contents (not (equal contents "")))
+        (let ((s
+               (string-trim-right (lsp--render-on-hover-content contents t))))
+          (pet (cmd "glow") s)
+
+          ;; old code
+          (comment
+           (let ((lsp-help-buf-name "*lsp-help*"))
+             (with-current-buffer (get-buffer-create lsp-help-buf-name)
+               (let ((delay-mode-hooks t))
+                 (lsp-help-mode)
+                 (with-help-window lsp-help-buf-name
+                   (insert (string-trim-right (lsp--render-on-hover-content contents t))))
+                 (run-mode-hooks)
+
+                 ;; consider opening in glow
+                 (if (looks-like-markdown-p (buffer-string))
+                     (let ((buf (current-buffer)))
+                       (markdown-mode))))))))
+      (lsp--info "No content at point."))))
+
 (defun pen-lsp-get-hover-docs ()
   (interactive)
   (let* ((ht (lsp-request "textDocument/hover" (lsp--text-document-position-params)))
@@ -466,8 +498,7 @@ We don't extract the string that `lps-line' is already displaying."
 
                                                    (cond
                                                     ;; If it looks like markdown, then render markdown
-                                                    ((or ;; (eq major-mode 'haskell-mode)
-                                                      (re-match-p "```" docs))
+                                                    ((looks-like-markdown-p docs)
                                                      (new-buffer-from-string
                                                       docs
                                                       nil 'markdown-mode))

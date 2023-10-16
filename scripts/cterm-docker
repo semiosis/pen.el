@@ -22,6 +22,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -elisp_out) {
+        elisp_out=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -41,10 +47,19 @@ if test -n "$extra_elisp"; then
     extra_elisp="$(cmd-nice-posix "$extra_elisp")"
 fi
 
-# I need jqs here to force quotes if empty
-elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-jq "$modename") $(cmd-nice-jq "$bufname") nil $extra_elisp))"
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-# the nsfa must be created on the docker side, so I can't use this
-# elisp="(progn (pen-term $(cmd-nice-posix "$script") t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
+if is_tty && ! test "$elisp_out" = y; then
+    # I need jqs here to force quotes if empty
+    elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) t $(cmd-nice-jq "$modename") $(cmd-nice-jq "$bufname") nil $extra_elisp))"
 
-pente "$elisp"
+    # the nsfa must be created on the docker side, so I can't use this
+    # elisp="(progn (pen-term $(cmd-nice-posix "$script") t $(cmd-nice-posix "$modename") $(cmd-nice-posix "$bufname")))"
+
+    pente "$elisp"
+else
+    # I need jqs here to force quotes if empty
+    elisp="(progn (pen-term (pen-nsfa $(cmd-nice-posix "$(cmd-nice-posix "$@")")) nil $(cmd-nice-jq "$modename") $(cmd-nice-jq "$bufname") nil $extra_elisp))"
+
+    printf -- "%s" "$elisp" | pavs
+fi

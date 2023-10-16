@@ -90,7 +90,7 @@ esac
 
 if test "$USE_TMUX" = "y"; then
     # tmmaybe=(tmwr)
-    CMD="tmwr $CMD"
+    CMD="tmwr -nopr $CMD"
     set -- tmwr "$@"
 fi
 

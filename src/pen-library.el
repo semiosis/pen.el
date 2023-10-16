@@ -1020,13 +1020,13 @@ non-nil."
   (interactive "P")
   (pen-truncate-lines (not truncate-lines)))
 
-(defun pen-nsfa (cm &optional dir)
+(defun pen-nsfa (cm &optional dir input)
   (let ((qdir (pen-q dir)))
     (pen-sn (concat
              (if dir (concat " cd " qdir "; "
                              " CWD=" qdir " ")
                "")
-             " pen-nsfa -E " (pen-q cm)) nil (or dir (cwd)))))
+             " pen-nsfa -resize -E " (pen-q cm)) input (or dir (cwd)))))
 
 (defun cursor-at-region-start-p ()
   "If the cursor is at the start of the region"

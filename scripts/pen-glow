@@ -2,4 +2,22 @@
 export TTY
 
 # $MYGIT/charmbracelet/glow/glow "$@"
-~/repos/glow/glow "$@"
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(cat | tf md)"
+    set -- "$@" "$input_fp"
+    exec <&2
+    exec <`tm-tty` `# see etty` 
+fi
+
+unbuffer ~/repos/glow/glow "$@" | pa -E "less -rS"

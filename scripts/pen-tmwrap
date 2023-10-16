@@ -53,7 +53,12 @@ if test "$PRINTOUT" = "y"; then
     CMD="$CMD; tm capp > \"$tf_paneprintout\""
 fi
 
+# CMD="$(resize | tr -d '\n')$CMD"
+# eval `resize`
+
 slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
+
+cmd tmux new -s "$n" -y "$LINES" "$CMD" > /tmp/tmlog.txt
 
 if test "$TERM" = "dumb"; then
     eval "$CMD"

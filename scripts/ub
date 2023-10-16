@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# If this breaks because of expect not being available, it might be because anaconda tclsh8.6 is in the path
+# This maybe because of the gnome-terminal default command
+
+# TODO: make it execute the arguments while clearing stderr
+# Because by default unbuffer mixes stderr into stdout
+
+/usr/bin/unbuffer bash -c "$@" 2>/dev/null
