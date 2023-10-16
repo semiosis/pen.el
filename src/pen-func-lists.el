@@ -292,7 +292,7 @@
                               markdown-preview
                               slides
                               md-org-export-to-org
-                              md-glow-vs
+                              md-glow-this-buffer
                               markdown-get-lang-here
                               poly-markdown-mode))
 

@@ -75,14 +75,17 @@ When FACELESS is non-nil, do not return matches where faces have been applied."
       res)))
 (advice-add 'markdown--browse-url :around #'markdown--browse-url-around-advice)
 
-(defun md-glow-vs ()
+(defun md-glow-this-buffer ()
   (interactive)
-  (if (and
-       (derived-mode-p 'markdown-mode)
-       (get-path-nocreate)
-       (f-file-p (get-path-nocreate)))
-      (nw-term (concat "glow " (pen-q (get-path-nocreate)) " | pen-mnm | vs"))
-    (message "not a markdown mode")))
+  (let ((fp (get-path-nocreate))
+        (s (buffer-string)))
+    (if (derived-mode-p 'markdown-mode)
+        (if (and (get-path-nocreate)
+                 (f-file-p (get-path-nocreate)))
+            (sps-pet (cmd "glow" "-f" fp))
+          (sps-pet (cmd "glow" "-f") s))
+      ;; (nw-term (concat "glow " (pen-q (get-path-nocreate)) " | pen-mnm | vs"))
+      (message "not a markdown mode"))))
 
 (advice-add 'markdown-syntax-propertize :around #'ignore-errors-around-advice)
 

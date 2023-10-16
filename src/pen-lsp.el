@@ -468,25 +468,26 @@ We don't extract the string that `lps-line' is already displaying."
     (if (and contents (not (equal contents "")))
         (let ((s
                (string-trim-right (lsp--render-on-hover-content contents t))))
-          (comment
-           (sps-pet (cmd "glow") s))
 
-          (comment
-           (tpop "v" (pen-snc "glow -nc" (string-trim-right (lsp--render-on-hover-content contents t)))))
+          (cond
+           ((>= (prefix-numeric-value current-prefix-arg) 16)
+            (tpop "v" (pen-snc "glow -nc" (string-trim-right (lsp--render-on-hover-content contents t)))))
+           ((>= (prefix-numeric-value current-prefix-arg) 4)
+            (sps-pet (cmd "glow" "-f") s))
+           (t
+            ;; old code - still the best
+            (let ((lsp-help-buf-name "*lsp-help*"))
+              (with-current-buffer (get-buffer-create lsp-help-buf-name)
+                (let ((delay-mode-hooks t))
+                  (lsp-help-mode)
+                  (with-help-window lsp-help-buf-name
+                    (insert (string-trim-right (lsp--render-on-hover-content contents t))))
+                  (run-mode-hooks)
 
-          ;; old code - still the best
-          (let ((lsp-help-buf-name "*lsp-help*"))
-            (with-current-buffer (get-buffer-create lsp-help-buf-name)
-              (let ((delay-mode-hooks t))
-                (lsp-help-mode)
-                (with-help-window lsp-help-buf-name
-                  (insert (string-trim-right (lsp--render-on-hover-content contents t))))
-                (run-mode-hooks)
-
-                ;; consider opening in glow
-                (if (looks-like-markdown-p (buffer-string))
-                    (let ((buf (current-buffer)))
-                      (markdown-mode)))))))
+                  ;; consider opening in glow
+                  (if (looks-like-markdown-p (buffer-string))
+                      (let ((buf (current-buffer)))
+                        (markdown-mode)))))))))
       (lsp--info "No content at point."))))
 
 (defun pen-lsp-get-hover-docs ()
