@@ -53,6 +53,13 @@ if test "$#" -gt 0; then
         }
         ;;
 
+        irust) {
+            # x -sh irust -z 'In:' -s ":help full" -c m -i
+            x -sh "tmwr irust" -e 'In:' -s ":help full" -c m -i
+            exit "$?"
+        }
+        ;;
+
         *)
     esac
 

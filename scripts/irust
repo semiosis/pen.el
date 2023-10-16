@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -zcd) {
+        do_zcd=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$do_zcd" = "y"; then
+    zcd $MYGIT/sigmaSd/IRust
+    exit "$cd"
+fi
+
+test -f $HOME/.cargo/bin/irust || cargo install "irust" &>/dev/null
+
+$HOME/.cargo/bin/irust "$@"

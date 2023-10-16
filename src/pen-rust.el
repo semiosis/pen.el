@@ -128,6 +128,10 @@
          :target nil
          :cwd nil)))
 
+(defun irust ()
+  (interactive)
+  (sps "irust" nil nil default-directory))
+
 (require 'dap-cpptools)
 
 (provide 'pen-rust)

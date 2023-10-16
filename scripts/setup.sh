@@ -1053,6 +1053,10 @@ rustup toolchain install nightly --component rust-analyzer-preview
 # cargo xtask install --server
 # )
 
+# REPL
+# $MYGIT/sigmaSd/IRust/README.md
+cargo install irust
+
 # For scope
 agi mediainfo
 

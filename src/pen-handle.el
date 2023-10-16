@@ -192,9 +192,7 @@
 (handle '(rust-mode rustic-mode rust-ts-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list
-                'sps-top
-                ;; 'slime-repl
-                )
+                'irust)
         :formatters '(lsp-format-buffer)
         :docs '(pen-doc-override
                 lsp-describe-thing-at-point)
