@@ -1,0 +1,127 @@
+#!/bin/bash
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+unset CWD
+
+aqf() { aqf-real "$@"; }
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -p) {
+        prompt="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -vt|-vt100) {
+        export TERM=vt100
+        shift
+    }
+    ;;
+
+    -xt) {
+        export TERM=xterm
+        shift
+    }
+    ;;
+
+    -c) {
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -o) {
+        # This only works if x also uses -tmc rather than -sh
+        print_output=y
+        shift
+    }
+    ;;
+
+    -C) {
+        shift
+        CMD="$(cmd "$@")"
+        shift "$#"
+    }
+    ;;
+
+    *) break;
+esac; done
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+# ls -la /proc/$$/fd | tv &>/dev/null
+
+# Lines. Expect '$' after running each
+
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+else
+    if test "$#" -gt 0 && test -f "$1"; then
+        input_fp="$1"
+    elif test -n "$CMD"; then
+        input_fp="$(odn tf txt)"
+        echo "$CMD" >> "$input_fp"
+    elif test "$#" -gt 0; then
+        CMD="$(cmd "$@")"
+        input_fp="$(odn tf txt)"
+        echo "$CMD" >> "$input_fp"
+    else
+        exit 1
+    fi
+fi
+
+new_input_fp="$(cat "$input_fp" | tf sh)"
+
+# So it can run from a shebang
+cat "$new_input_fp" | sed -e "/^\s*$/d" -e "/^\s*#/d" | sponge "$new_input_fp"
+cat "$new_input_fp" | sed -z "s/\\s*\\\\\n\\s*/ /g" | sponge "$new_input_fp"
+
+: ${prompt:="\\([#\$] \\|(»|>>>)\\)"}
+
+# -tmc will respawn the outer tmux pane when the scripts ends
+# This is not what I want
+
+if test "$print_output" = "y"; then
+    end_function=" -o "
+else
+    end_function=" -i "
+fi
+
+sponge "$new_input_fp" <<HEREDOC
+x \\
+    -h -d \\
+    -sh bash \\
+    -nto \\
+$(
+{
+    cat "$new_input_fp" | awk1 | while IFS=$'\n' read -r line; do
+        # Sadly this doesn't really do the full trick.
+        if pl "$line" | grep -q -P '^\s*interact$'; then
+            echo "    $end_function \\"
+        else
+            # >>> and ... are for python. No need for ...
+            echo "    -r \"$prompt\" \\"
+            echo "    -s $(aqf "$line") \\"
+            echo "    -c m \\"
+            # echo "    -e \"\$\" \\"
+        fi
+    done
+    echo "    -r \"\\([#\$] \\|»\\)\" \\"
+} | sed 's/\([`$]\)/\\\1/g' | awk1 | sed '$d'
+)
+    $end_function
+HEREDOC
+
+ # | sed '${/^$/d;}' | s chomp
+
+# exec <&1
+
+echo "$new_input_fp" | ds -s xshlast
+
+bash "$new_input_fp"

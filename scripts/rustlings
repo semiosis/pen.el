@@ -10,5 +10,11 @@ test -f $HOME/.cargo/bin/rustlings || {
     cargo install --force --path .
 }
 
+unset CWD
+
+IFS= read -r -d '' xshcode <<HEREDOC
 cd /volumes/home/shane/var/smulliga/source/git/rust-lang/rustlings
-$HOME/.cargo/bin/rustlings "$@"
+zrepl $HOME/.cargo/bin/rustlings "$@"
+HEREDOC
+
+printf -- "%s\n" xshcode | xsh

@@ -2342,7 +2342,6 @@ case "$f" in
     ;;
 
     lasturl) {
-
         urls="$(pen-tm cap | xurls | chomp)"
         if test "$(printf -- "%s" "$urls" | wc -l)" -gt 0; then
             printf -- "%s" "$urls" | pen-tm fzf -1 | pen-xc -i -n

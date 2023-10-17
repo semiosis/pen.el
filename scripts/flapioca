@@ -6,4 +6,7 @@ export TTY
 # github author/repo may need adjustment
 test -f "${GOPATH%%:*}/bin/flapioca" || go install github.com/kbrgl/flapioca@latest &>/dev/null
 
-${GOPATH%%:*}/bin/flapioca "$@"
+while :; do
+    ${GOPATH%%:*}/bin/flapioca "$@"
+    pak -m "Press any key to restart"
+done
