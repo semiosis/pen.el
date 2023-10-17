@@ -4,7 +4,7 @@
 
 unset CWD
 
-aqf() { aqf-real "$@"; }
+SHELL=bash
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -34,6 +34,31 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -shell|-sh) {
+        SHELL="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -zsh) {
+        SHELL=zsh
+        shift
+    }
+    ;;
+
+    -bash) {
+        SHELL=bash
+        shift
+    }
+    ;;
+
+    -sh) {
+        SHELL=sh
+        shift
+    }
+    ;;
+
     -o) {
         # This only works if x also uses -tmc rather than -sh
         print_output=y
@@ -43,7 +68,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -C) {
         shift
-        CMD="$(cmd "$@")"
+        CMD="$(cmd-nice-posix "$@")"
         shift "$#"
     }
     ;;
@@ -60,23 +85,24 @@ stdin_exists() {
 # Lines. Expect '$' after running each
 
 if stdin_exists; then
-    input_fp="$(cat | tf txt)"
+    input_fp="$(cat | pen-tf xsh)"
+    exec <&1
 else
     if test "$#" -gt 0 && test -f "$1"; then
         input_fp="$1"
     elif test -n "$CMD"; then
-        input_fp="$(odn tf txt)"
+        input_fp="$(odn pen-tf xsh)"
         echo "$CMD" >> "$input_fp"
     elif test "$#" -gt 0; then
-        CMD="$(cmd "$@")"
-        input_fp="$(odn tf txt)"
+        CMD="$(cmd-nice-posix "$@")"
+        input_fp="$(odn pen-tf xsh)"
         echo "$CMD" >> "$input_fp"
     else
         exit 1
     fi
 fi
 
-new_input_fp="$(cat "$input_fp" | tf sh)"
+new_input_fp="$(cat "$input_fp" | pen-tf sh)"
 
 # So it can run from a shebang
 cat "$new_input_fp" | sed -e "/^\s*$/d" -e "/^\s*#/d" | sponge "$new_input_fp"
@@ -96,7 +122,7 @@ fi
 sponge "$new_input_fp" <<HEREDOC
 x \\
     -h -d \\
-    -sh bash \\
+    -sh "$SHELL" \\
     -nto \\
 $(
 {
@@ -107,7 +133,7 @@ $(
         else
             # >>> and ... are for python. No need for ...
             echo "    -r \"$prompt\" \\"
-            echo "    -s $(aqf "$line") \\"
+            echo "    -s $(cmd-nice-posix "$line") \\"
             echo "    -c m \\"
             # echo "    -e \"\$\" \\"
         fi
@@ -118,10 +144,10 @@ $(
     $end_function
 HEREDOC
 
- # | sed '${/^$/d;}' | s chomp
+ # | sed '${/^$/d;}' | chomp
 
 # exec <&1
 
-echo "$new_input_fp" | ds -s xshlast
+echo "$new_input_fp" | pen-ds -s xshlast
 
 bash "$new_input_fp"
