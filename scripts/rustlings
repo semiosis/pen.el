@@ -24,9 +24,35 @@ test -f $HOME/.cargo/bin/rustlings || {
 
 unset CWD
 
-IFS= read -r -d '' xshcode <<'HEREDOC'
 cd /volumes/home/shane/var/smulliga/source/git/rust-lang/rustlings
-/root/.cargo/bin/rustlings "$@"
+bin=/root/.cargo/bin/rustlings
+
+opt="$1"
+shift
+case "$opt" in
+    hint) {
+        "$bin" "$opt" "$@" | pavs
+        exit "$?"
+    }
+    ;;
+
+    watch) {
+        "$bin" "$opt" "$@"
+        exit "$?"
+    }
+    ;;
+
+    *)
+esac
+
+set -- "$opt" "$@"
+
+# sps pin `pwd`/exercises
+
+IFS= read -r -d '' xshcode <<"HEREDOC"
+unset CWD
+cd /volumes/home/shane/var/smulliga/source/git/rust-lang/rustlings
+"$bin" "\$@"
 HEREDOC
 
 printf -- "%s\n" "$xshcode" | xsh -zsh "$@"

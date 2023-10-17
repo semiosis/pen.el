@@ -1,0 +1,5 @@
+#!/bin/bash
+
+( hs "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+"$@"

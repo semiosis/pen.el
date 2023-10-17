@@ -125,8 +125,11 @@ else
     end_function=" -i "
 fi
 
+# -allowtm is needed for rustlings in pen
+
 sponge "$input_fp" <<HEREDOC
 x \\
+    -allowtm \\
     -h -d \\
     -sh "$SHELL" \\
     -nto \\

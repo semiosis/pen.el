@@ -168,13 +168,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    --top) {
+    --top|-tp) {
         do_bottom=n
         shift
     }
     ;;
 
-    --bottom) {
+    --bottom|-bt) {
         do_bottom=y
         shift
     }
