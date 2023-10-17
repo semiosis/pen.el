@@ -102,11 +102,17 @@ else
     fi
 fi
 
-new_input_fp="$(cat "$input_fp" | pen-tf sh)"
+CMD="$(cmd "$@")"
 
 # So it can run from a shebang
-cat "$new_input_fp" | sed -e "/^\s*$/d" -e "/^\s*#/d" | sponge "$new_input_fp"
-cat "$new_input_fp" | sed -z "s/\\s*\\\\\n\\s*/ /g" | sponge "$new_input_fp"
+cat "$input_fp" | {
+    sed -e "/^\s*$/d" -e "/^\s*#/d" |
+    sed -z "s/\\s*\\\\\n\\s*/ /g"
+} | sponge "$input_fp"
+
+if test "$#" -gt 0; then
+    cat "$input_fp" | sed "s=\"\$@\"=$CMD=g" | sponge "$input_fp"
+fi
 
 : ${prompt:="\\([#\$] \\|(»|>>>)\\)"}
 
@@ -119,14 +125,14 @@ else
     end_function=" -i "
 fi
 
-sponge "$new_input_fp" <<HEREDOC
+sponge "$input_fp" <<HEREDOC
 x \\
     -h -d \\
     -sh "$SHELL" \\
     -nto \\
 $(
 {
-    cat "$new_input_fp" | awk1 | while IFS=$'\n' read -r line; do
+    cat "$input_fp" | awk1 | while IFS=$'\n' read -r line; do
         # Sadly this doesn't really do the full trick.
         if pl "$line" | grep -q -P '^\s*interact$'; then
             echo "    $end_function \\"
@@ -148,6 +154,6 @@ HEREDOC
 
 # exec <&1
 
-echo "$new_input_fp" | pen-ds -s xshlast
+echo "$input_fp" | pen-ds -s xshlast
 
-bash "$new_input_fp"
+bash "$input_fp"

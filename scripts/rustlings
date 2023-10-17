@@ -3,6 +3,18 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+sn="$(basename -- "$0")"
+
+if ! inside-docker-p; then
+    in-pen "$sn" "$@"
+    exit "$?"
+fi
+
+if ! inside-tmux-p; then
+    in-tm "$sn" "$@"
+    exit "$?"
+fi
+
 test -f $HOME/.cargo/bin/rustlings || {
     # cd "$(gc "http://github.com/rust-lang/rustlings")"
     # cd $MYGIT/rust-lang/rustlings
@@ -14,7 +26,7 @@ unset CWD
 
 IFS= read -r -d '' xshcode <<'HEREDOC'
 cd /volumes/home/shane/var/smulliga/source/git/rust-lang/rustlings
-zrepl /root/.cargo/bin/rustlings "$@"
+/root/.cargo/bin/rustlings "$@"
 HEREDOC
 
-printf -- "%s\n" "$xshcode" | xsh -zsh
+printf -- "%s\n" "$xshcode" | xsh -zsh "$@"
