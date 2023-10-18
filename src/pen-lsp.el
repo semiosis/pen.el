@@ -815,6 +815,7 @@ We don't extract the string that `lps-line' is already displaying."
   "Build the lens keymap for COMMAND."
   (-doto (make-sparse-keymap)
     ;; (define-key (kbd "C-<down-mouse-1>") (lsp-lens--create-interactive-command command))
+    (define-key (kbd "<down-mouse-1>") (lambda () (interactive) (message "Use M-<down-mouse-1>")))
     (define-key (kbd "M-<down-mouse-1>") (lsp-lens--create-interactive-command command))))
 
 (advice-add 'lsp-lens--display :around #'ignore-errors-around-advice)
