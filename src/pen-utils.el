@@ -184,6 +184,11 @@ buffer."
      (current-buffer)
      command)))
 
+(defun pen-join (list-of-things &optional delim)
+  "Joins a list of strings."
+  (if (not delim) (setq delim "\n"))
+  (mapconcat 'identity (mapcar 'str list-of-things) delim))
+
 (defalias 'detect-language-set-mode 'guess-major-mode)
 
 (provide 'pen-utils)

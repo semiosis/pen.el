@@ -226,4 +226,44 @@
                    (t (memq major-mode company-global-modes))))
     (company-mode 1)))
 
+
+(defun company-select-next-page-or-abort (&optional arg)
+  " With ARG, move by that many elements."
+  (interactive "p")
+  (if (> company-candidates-length 1)
+      (company-select-next-or-abort arg)
+    (company-abort)
+    (company--unread-this-command-keys)))
+
+(defun company-next-5 (&optional arg)
+  (interactive "p")
+  (dotimes (_n 5)
+    (company-select-next arg)))
+
+(defun company-previous-5 (&optional arg)
+  (interactive "p")
+  (dotimes (_n 5)
+    (company-select-previous arg)))
+
+(defun pen-tvipe-company-candidates ()
+  (interactive)
+  (sps "vs -ac"
+       nil
+        (pen-join
+         (mapcar
+          (lambda (c) (concat (str c) " " (company-call-backend 'annotation c)))
+          company-candidates)
+         "\n")))
+
+(define-key company-active-map (kbd "M-C-i") #'company-abort)
+(define-key company-active-map (kbd "<prior>") #'company-previous-page)
+(define-key company-active-map (kbd "<next>") #'company-next-page)
+(define-key company-active-map (kbd "<prior>") 'company-previous-5)
+(define-key company-active-map (kbd "<next>") 'company-next-5)
+(define-key company-active-map (kbd "C-o") #'pen-tvipe-company-candidates)
+(define-key company-active-map (kbd "C-c o") #'pen-tvipe-company-candidates)
+(define-key company-active-map (kbd "M-l") nil)
+(define-key company-active-map (kbd "SPC") nil)
+(define-key company-active-map (kbd "(") 'self-insert-command)
+
 (provide 'pen-company)

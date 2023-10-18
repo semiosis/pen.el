@@ -416,6 +416,11 @@ argument, prompt for a regular expression using `read-regexp'."
   (set-face-attribute 'ement-room-reactions-key nil :height 1.0)
   (set-face-attribute 'ement-room-wrap-prefix nil :height 1.0)
 
+  (require 'company)
+  (set-face-foreground 'company-tooltip-annotation "#d72f4f")
+  ;; (set-face-background 'company-tooltip-annotation "#262626")
+  (set-face-background 'company-tooltip-annotation nil)
+
   (require 'ivy)
   (set-face-foreground 'ivy-current-match "#262626")
   (set-face-background 'ivy-current-match "#d72f4f")
