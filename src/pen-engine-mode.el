@@ -90,13 +90,16 @@
   :keybinding "g"
   :browser 'lg-eww)
 
-(defun chrome (url &optional discard no_xurls)
+(defun chrome (url &optional discard no_xurls force_xurls)
   (interactive (list (read-string-hist "chrome: ")))
   (pen-ns (concat "Chrome: " url))
+  (if force_xurls
+      (setq no_xurls nil))
   (if (not no_xurls)
       (let ((url_xurls (xurls url)))
         (if (and (not (string-equal url url_xurls))
-                 (yn "xurls changed the url. Use xurls?"))
+                 (or force_xurls
+                     (yn "xurls changed the url. Use xurls?")))
             (setq url url_xurls))))
   (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer chrome " (pen-q url)))) nil nil nil t))
 

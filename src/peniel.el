@@ -19,8 +19,10 @@
          (ocs_s (pen-snc "oc" urls_s))
          (ocs (str2lines ocs_s))
          (titles (mapcar 'org-link-get-title ocs))
-         (annoed_tps (-zip-lists urls titles)))
-    (fz annoed_tps
-        nil nil "Praise song: ")))
+         (annoed_tps (-zip-lists urls titles))
+         (sel (fz annoed_tps
+                  nil nil "Praise song: ")))
+    (if (test-n sel)
+        (chrome sel nil nil t))))
 
 (provide 'peniel)
