@@ -6,6 +6,9 @@
 # Kernel update broke fzf
 # https://github.com/junegunn/fzf/issues/1486#start-of-content
 
+: "${FZF_DEFAULT_COMMAND:="ag --hidden --ignore .git -g '' | pen-find-ignore-filter"}"
+export FZF_DEFAULT_COMMAND
+
 unset CWD
 
 stdin_exists() {
@@ -28,6 +31,8 @@ elif test -f "$last_arg"; then
     exit
     set -- "${@:1:$(($#-1))}" # shift last
     cat "$last_arg" > "$tf_input"
+elif test -n "$FZF_DEFAULT_COMMAND"; then
+    eval "$FZF_DEFAULT_COMMAND" > "$tf_input"
 else
     exit 0
 fi
@@ -59,9 +64,6 @@ ANSI=n
 MULTI=y
 COMPLETE_WITH_PREVIEW=n
 
-: "${FZF_DEFAULT_COMMAND:="ag --hidden --ignore .git -g '' | pen-find-ignore-filter"}"
-export FZF_DEFAULT_COMMAND
-
 do_top=y
 do_reverse=n
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -79,9 +81,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -P) {
-        preview_hidden=n
-        preview_opts="right:50%"
         # fzf --preview='head -$LINES {}' --preview-window=top:3
+
+        preview_hidden=n
+        # preview_opts="right:50%"
+        preview_opts="top:3"
+        : "${preview:="head -$LINES {}"}"
         shift
     }
     ;;

@@ -251,7 +251,7 @@
        nil
         (pen-join
          (mapcar
-          (lambda (c) (concat (str c) " " (company-call-backend 'annotation c)))
+          (lambda (c) (concat (str c) "\t" (company-call-backend 'annotation c)))
           company-candidates)
          "\n")))
 
