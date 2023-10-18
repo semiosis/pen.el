@@ -3,7 +3,7 @@ export TTY # shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
 
 # This is based on the extension, which is not nice
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 fp="$last_arg"
 rp="$(realpath "$fp")"
 dn="$(dirname "$rp")"

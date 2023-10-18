@@ -2,7 +2,7 @@
 
 aqf() { apply qf "$@"; }
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 
 if pen-pl "$last_arg" | grep -q -P '^file:///'; then
     last_arg="$(p "$last_arg" | sed 's=^file://==' | sed 's=#.*==')"

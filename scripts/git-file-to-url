@@ -43,7 +43,7 @@ if test "$#" -eq 0; then
     set -- . "$@"
 fi
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 test -z "$last_arg" && exit 1
 
 

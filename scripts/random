@@ -40,7 +40,7 @@ fi
 
 test "$#" -gt 0 || exit 1
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 max="$last_arg"
 test -n "$max" || exit 1
 

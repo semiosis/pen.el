@@ -20,7 +20,7 @@ elif test "$#" -eq 0; then
     exit "$?"
 fi
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 
 if test -f "$1"; then
     fp="$1"

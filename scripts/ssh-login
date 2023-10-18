@@ -75,7 +75,7 @@ if test "$#" -eq 1; then
     set -- -t "$@" "zsh || bash || sh"
 fi
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 
 if test "$FORCE_PIPE" = "y"; then
     last_arg="$last_arg | cat"

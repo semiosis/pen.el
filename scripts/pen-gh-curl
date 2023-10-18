@@ -40,7 +40,7 @@ esac; done
 
 : ${SORT_BY:="created"}
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 set -- "${@:1:$(($#-1))}" # shift last arg
 url="$last_arg"
 

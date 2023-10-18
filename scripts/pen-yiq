@@ -11,7 +11,7 @@ stdin_exists() {
     } &>/dev/null
 }
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 
 if test "$#" -gt 0 && ! stdin_exists && test -f "$last_arg"; then
 

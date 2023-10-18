@@ -16,7 +16,7 @@ tidy_youtube_links() {
     done
 }
 
-last_arg="${@}"
+test "$#" -gt 0 && last_arg="${@}"
 id="$(p "$last_arg" | sed 's/.*v=//' | sed 's=.*/==')"
 
 test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg

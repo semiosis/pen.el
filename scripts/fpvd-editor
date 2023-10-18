@@ -10,7 +10,7 @@ export TTY
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 
 stdin_exists() {
     {

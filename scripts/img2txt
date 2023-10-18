@@ -3,7 +3,7 @@ export TTY
 
 # agi caca-utils &>/dev/null
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 
 set -- "$last_arg"
 

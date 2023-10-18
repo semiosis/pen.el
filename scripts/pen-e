@@ -677,7 +677,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 if test "$#" -gt 0 && test -e "$last_arg"; then
     last_arg_path="$last_arg"
 fi

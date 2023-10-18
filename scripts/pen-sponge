@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 
 # If a symlink, then do this. Unfortunately, sponge overwrites symlinks
 if test -h "$last_arg"; then

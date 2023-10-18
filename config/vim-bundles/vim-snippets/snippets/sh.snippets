@@ -1289,7 +1289,7 @@ snippet allbutlast
 	allbutlast=${@:1:$newlength}
 	echo $allbutlast
 snippet lastarg
-	last_arg="\${@: -1}"
+	test "$#" -gt 0 && last_arg="\${@: -1}"
 snippet secondlastarg
 	second_to_last="\${@:(-2):1}"
 snippet lastarg_idk
@@ -2259,7 +2259,7 @@ snippet 0-
 snippet ecfd "Close input file descriptor n."
 	exec ${0:n}<&-
 snippet fp
-	last_arg="\${@: -1}"
+	test "$#" -gt 0 && last_arg="\${@: -1}"
 	fp="\$last_arg"
 	rp="\$(realpath "\$fp")"
 	dn="\$(dirname "\$rp")"
@@ -3739,7 +3739,7 @@ snippet l0
 	    # So test to make sure 0 does not point to 1
 	}
 	
-	last_arg="\${@: -1}"
+	test "$#" -gt 0 && last_arg="\${@: -1}"
 	
 	if test "\$#" -gt 0 && ! stdin_exists && test -f "\$last_arg"; then
 	
@@ -3787,7 +3787,7 @@ snippet e0t
 snippet e1t
 	tm yn "arbitrate stdout?" && exec 1> >(tmi)
 snippet -h
-	last_arg="\${@: -1}"
+	test "$#" -gt 0 && last_arg="\${@: -1}"
 	if test "\$last_arg" = "-h"; then
 		/usr/local/bin/openai "\$@" | pavs
 		exit \$?

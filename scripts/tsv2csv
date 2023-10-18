@@ -11,7 +11,7 @@ stdin_exists() {
     } &>/dev/null
 }
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 
 if stdin_exists; then
     tsv2csv.py "$@" | /usr/bin/dos2unix

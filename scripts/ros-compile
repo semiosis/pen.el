@@ -3,7 +3,7 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 fp="$last_arg"
 rp="$(realpath "$fp")"
 dn="$(dirname "$rp")"

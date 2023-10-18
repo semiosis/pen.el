@@ -28,7 +28,7 @@ list_descendants ()
 
 test "$#" -gt 0 || exit 1
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
 
 kill "$@" $(list_descendants "$last_arg")

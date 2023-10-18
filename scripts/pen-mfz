@@ -15,7 +15,7 @@ stdin_exists() {
 tf_input="$(pen-ux tf fzf txt || echo /dev/null)"
 trap "rm \"$tf_input\" 2>/dev/null" 0
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 
 : ${CWD:="$(pwd)"}
 
@@ -23,13 +23,13 @@ last_arg="${@: -1}"
 
 if stdin_exists; then
     cat > "$tf_input"
+elif test -f "$last_arg"; then
+    echo "$last_arg"
+    exit
+    set -- "${@:1:$(($#-1))}" # shift last
+    cat "$last_arg" > "$tf_input"
 else
-    if test -f "$last_arg"; then
-        set -- "${@:1:$(($#-1))}" # shift last
-        cat "$last_arg" > "$tf_input"
-    else
-        exit 0
-    fi
+    exit 0
 fi
 
 # This is so we have LINES and COLUMNS to play with
@@ -59,6 +59,9 @@ ANSI=n
 MULTI=y
 COMPLETE_WITH_PREVIEW=n
 
+: "${FZF_DEFAULT_COMMAND:="ag --hidden --ignore .git -g '' | pen-find-ignore-filter"}"
+export FZF_DEFAULT_COMMAND
+
 do_top=y
 do_reverse=n
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -75,7 +78,15 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    --prompt|-P) {
+    -P) {
+        preview_hidden=n
+        preview_opts="right:50%"
+        # fzf --preview='head -$LINES {}' --preview-window=top:3
+        shift
+    }
+    ;;
+
+    --prompt) {
         prompt="$2"
         shift
         shift
@@ -139,13 +150,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -p) {
         preview_hidden=n
-        shift
-    }
-    ;;
-
-    -P) {
-        preview_hidden=n
-        preview_opts="right:50%"
         shift
     }
     ;;

@@ -54,7 +54,7 @@ export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts::$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 last_arg="$(p "$last_arg" | pen-str unonelineify-safe)"
 # last_arg="$(p "$last_arg" | pen-bs '\\')"
 

@@ -17,7 +17,7 @@ parent_sn="$(ps -o comm= $PPID)"
 
 bin="vim --not-a-term"
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 if test "$last_arg" = "-"; then
     shift
 fi
@@ -306,7 +306,7 @@ if [ -n "$pattern" ]; then
     opts+=" -c $ncmd "
 fi
 
-last_arg="${@: -1}"
+test "$#" -gt 0 && last_arg="${@: -1}"
 ext="${fp##*.}"
 
 bn="$(basename "$fp")"
