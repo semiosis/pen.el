@@ -123,7 +123,7 @@ color.  The function should accept a single argument, the color name."
       (concat "0" c)
     c))
 
-(defun list-colors-display (&optional list buffer-name callback)
+(defun list-colors-display-24bit (&optional list buffer-name callback)
   (interactive)
   (if (buffer-exists "*Colors*")
       (kill-buffer "*Colors*"))

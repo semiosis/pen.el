@@ -122,5 +122,7 @@ point determined by `mouse-select-region-move-to-beginning'."
 
 ;; mouse hover over just left of the line numbers - the left edge of the screen
 (define-key global-map (kbd "<left-margin> <mouse-movement>") 'ignore)
+;; lsp breadcrumbs, for example
+(define-key global-map (kbd "<header-line> <mouse-movement>") 'ignore)
 
 (provide 'pen-mouse)

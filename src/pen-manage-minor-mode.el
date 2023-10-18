@@ -119,7 +119,9 @@
          (on auto-highlight-symbol-mode))
 
         (help-mode
-         (on org-link-minor-mode)
+         ;; org-link-minor-mode in help-mode broke colors in list-colors-display
+         ;; it also broke lsp-doctor colors
+         ;; (on org-link-minor-mode)
          (off visual-line-mode))
 
         (term-mode
