@@ -43,9 +43,9 @@ fi
 
 result="$(
     if test "$LINES" -gt "5" || ! command -v slmenu; then
-        pen-fzf "$@"
+        nvc pen-fzf "$@"
     else
-        /usr/local/bin/slmenu $LINES "$@"
+        nvc /usr/local/bin/slmenu $LINES "$@"
     fi
 )"
 
