@@ -2278,6 +2278,7 @@ May use to generate code from comments."
 (require 'pen-lsp-rust)
 (require 'pen-haskell)
 (require 'pen-browser)
+(require 'peniel)
 
 ;; (if (inside-docker-p)
 ;;     (progn
