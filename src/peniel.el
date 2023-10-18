@@ -3,8 +3,6 @@
        (s-replace-regexp ".*\\]\\[" "" it)
        (s-replace-regexp "\\]\\]$" "" it)))
 
-(-zip-with 'cons '(a) '(b))
-
 (defun praise-edit-list ()
   (interactive)
   (find-file (umn "$PEN/documents/notes/ws/lists/peniel/praise-songs.txt")))
