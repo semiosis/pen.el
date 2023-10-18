@@ -5,7 +5,13 @@ export TTY
 
 sn="$(basename "$0")"
 : "${NODE_VERSION:="$(oci -t 60 pen-rc .node_version)"}"
-. $HOME/repos/sh-source/nvm-node
+
+if test -f $HOME/repos/sh-source/nvm-node; then
+    . $HOME/repos/sh-source/nvm-node
+elif test -f $HOME/sh-source/nvm-node; then
+    . $HOME/sh-source/nvm-node
+fi
+
 nvm use "$NODE_VERSION" 1>&2 || nvm install "$NODE_VERSION" 1>&2
 which "$sn" | grep -q ".nvm/" || npm install -g "$sn"
 
