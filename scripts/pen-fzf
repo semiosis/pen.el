@@ -2,9 +2,8 @@
 # export TTY="$(tty)"
 
 # ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
-# env | tv &>/dev/null
 
-: "${FZF_DEFAULT_COMMAND:="ag --hidden --ignore .git -g '' \ pen-find-ignore-filter"}"
+: "${FZF_DEFAULT_COMMAND:="ag --hidden --ignore .git -g '' | pen-find-ignore-filter"}"
 export FZF_DEFAULT_COMMAND
 
 # export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
