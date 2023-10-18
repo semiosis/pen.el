@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+list_fp="/root/.pen/documents/notes/ws/lists/peniel/praise-songs.txt"
+
+sel="$(cat "$list_fp" | awk 1 | fzf | xurls)"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    if test -n "$sel"; then
+        chrome "$sel"
+    fi
+else
+    echo "$sel"
+fi

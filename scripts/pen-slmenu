@@ -43,7 +43,7 @@ fi
 
 result="$(
     if test "$LINES" -gt "5" || ! command -v slmenu; then
-        nvc pen-fzf "$@"
+        nvc pen-fzf "$@" | cat
     else
         nvc /usr/local/bin/slmenu $LINES "$@"
     fi
@@ -70,3 +70,4 @@ elif is_tty; then
 else
     printf -- "%s\n" "$result"
 fi
+pak

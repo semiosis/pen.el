@@ -94,18 +94,23 @@ if inside-emacs-p; then
     exit "$?"
 fi
 
-# This must come *after* insite-emacs-p
+# This must come *BEFORE* output_fp=
+if test "$INSIDE_NEOVIM" = y; then
+    if test "$ispipe" -eq 0; then
+        eval "$CMD | cat"
+    else
+        eval "$CMD"
+    fi
+    exit "$?"
+fi
+
+# This must come *AFTER* insite-emacs-p
 if test "$ispipe" -eq 0; then
     output_fp="$(0</dev/null tf txt)"
     CMD="$CMD > $(cmd "$output_fp")"
     
     exec 3>&1
     exec 1>&2
-fi
-
-if test "$INSIDE_NEOVIM" = y; then
-    eval "$CMD"
-    exit "$?"
 fi
 
 export INSIDE_NEOVIM=y
