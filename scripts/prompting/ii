@@ -142,7 +142,7 @@ fi
 
 : "${user_prompt_re:="$comint_user_prompt_re"}"
 
-if test "$use_comint" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+if test "$use_comint" = y && ! inside-emacs-comint-p; then
     comint -p "$user_prompt_re" -E "ii -s $CMD"
     exit $?
 fi

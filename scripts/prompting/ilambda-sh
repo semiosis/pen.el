@@ -106,7 +106,7 @@ case "$sn" in
     *)
 esac
 
-if test "$USE_COMINT" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+if test "$USE_COMINT" = y && ! inside-emacs-comint-p; then
     comint -p "𝑖λ: " -E "ilambda-sh $CMD"
     exit $?
 fi

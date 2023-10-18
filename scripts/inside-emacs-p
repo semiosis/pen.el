@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+test -n "$EMACS_TERM_TYPE" || test -n "$INSIDE_EMACS"

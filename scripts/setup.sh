@@ -1672,9 +1672,10 @@ sudo dpkg -i "rstudio-2023.09.0-463-amd64.deb"
 
 e ia smalltalk-mode
 
-{
-agi libfixposix3 libfixposix-dev
-cd "$(gc https://github.com/atlas-engineer/nyxt)"
-git-pull-submodules
-make all
-}
+# Failed to compile last time I tried
+# {
+# agi libfixposix3 libfixposix-dev
+# cd "$(gc https://github.com/atlas-engineer/nyxt)"
+# git-pull-submodules
+# make all
+# }

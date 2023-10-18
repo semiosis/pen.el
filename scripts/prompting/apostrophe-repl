@@ -184,7 +184,7 @@ IFS= read -rd '' comint_user_prompt_re < <(cat "$path" | yq -r '.["comint-user-p
 
 user_prompt_re="$(p "$user_prompt_re" | sed 's/:$/: /')"
 
-if test "$use_comint" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+if test "$use_comint" = y && ! inside-emacs-comint-p; then
     comint -p "$user_prompt_re" -E "apostrophe-repl $CMD"
     exit $?
 fi

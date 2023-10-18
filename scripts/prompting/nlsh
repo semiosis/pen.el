@@ -213,7 +213,7 @@ esac
 # pf-code-snippet-from-natural-language/2
 # pf-nlsh/2
 
-if test "$USE_COMINT" = y && ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+if inside-emacs-comint-p; then
     comint -p "$OS_OR_LANG: " -E "nlsh -appname $PEN_APPNAME -shell $SHELL $CMD"
     exit $?
 fi
