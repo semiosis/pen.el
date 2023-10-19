@@ -15,6 +15,9 @@ fi
 
 : ${RETRY_TIMEOUT:="15"} # 15 seconds
 
+# Just says that the command being run is run inside ci
+export CI_CACHED=y
+
 # ci means "cache it"
 
 IGNORE_DIR=y

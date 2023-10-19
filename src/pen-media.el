@@ -156,6 +156,8 @@
   (interactive (list (read-string-hist "youtube query: ")))
   (pen-ytt query "it"))
 
+;; I really should have test functions for functions
+;; (pen-readsubs "https://www.youtube.com/watch?v=f2oxGYpuLkw")
 (defun pen-readsubs (url &optional do-etv)
   (interactive (list (read-string-hist "youtube query: ")))
 
@@ -171,7 +173,7 @@
          do-etv
          (interactive-p)))
 
-  (let ((transcript (pen-cl-sn (concat "unbuffer pen-ci pen-readsubs " (pen-q url) " | cat") :chomp t)))
+  (let ((transcript (pen-cl-sn (concat "pen-readsubs " (pen-q url) " | cat") :chomp t)))
     (if do-etv
         (tvs transcript)
       transcript)))

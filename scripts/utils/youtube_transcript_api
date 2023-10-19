@@ -3,6 +3,9 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-test -f "/usr/local/bin/youtube_transcript_api" || pyf "youtube-transcript-api" &>/dev/null
+test -f $HOME/.local/bin/youtube_transcript_api && : "${bin:="$HOME/.local/bin/youtube_transcript_api"}"
+test -f "/usr/local/bin/youtube_transcript_api" && : "${bin:="$HOME/.local/bin/youtube_transcript_api"}"
 
-/usr/local/bin/youtube_transcript_api "$@"
+test -f "$bin" || pip3.8 install youtube-transcript-api &>/dev/null
+
+"$bin" "$@"

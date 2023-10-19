@@ -3,7 +3,7 @@ export TTY
 
 sn="$(basename "$0")"
 
-if ! test "$CI_CACHED" = "y"; then oci "$sn" "$@" | pavs; exit "$?"; fi
+if ! test "$CI_CACHED" = "y"; then ocif "$sn" "$@" | pavs; exit "$?"; fi
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
@@ -19,6 +19,9 @@ transcript_dir="$DUMP$NOTES/ws/youtube/transcripts"
 subs_dir="$DUMP$NOTES/ws/youtube/subs"
 
 cd "$subs_dir"
+
+youtube-get-subtitles "$url"
+exit "$?"
 
 # clean-subs is used in yt-subs.sh
 

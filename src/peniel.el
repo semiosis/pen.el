@@ -21,6 +21,8 @@
          (sel (fz annoed_tps
                   nil nil "Praise song: ")))
     (if (test-n sel)
-        (chrome sel nil nil t))))
+        (progn
+          (new-buffer-from-string (pen-readsubs sel))
+          (chrome sel nil nil t)))))
 
 (provide 'peniel)

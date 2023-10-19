@@ -3,11 +3,6 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-test -f $HOME/.local/bin/youtube_transcript_api && : "${bin:="$HOME/.local/bin/youtube_transcript_api"}"
-test -f /usr/local/bin/youtube_transcript_api && : "${bin:="/usr/local/bin/youtube_transcript_api"}"
-
-test -f "$bin" || pip3.8 install youtube-transcript-api &>/dev/null
-
 tidy_youtube_links() {
     awk 1 | while IFS=$'\n' read -r line; do
         if printf -- "%s\n" "$line" | grep -q -P 'youtube.com'; then
@@ -25,4 +20,4 @@ set -- "$@" "$id"
 test -n "$id" || exit 1
 
 # oci "$bin" "$@" | pavs
-oci "$bin" --format text "$@" | pavs
+ocif youtube_transcript_api --format text "$@" | pavs

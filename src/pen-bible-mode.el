@@ -1224,6 +1224,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           nil
           :x_pos "M+1"
           :y_pos "M+1"
+          :bg 233
           :width_pc 50
           :height_pc 20
           :style "heavy")))
