@@ -32,6 +32,7 @@ case "$sn" in
         book="$sn"
 esac
 
+fargs=()
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -v) {
@@ -49,6 +50,19 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -noemacs) {
         export NOEMACS=y
+        shift
+    }
+    ;;
+
+    -m) {
+        fargs+=("$1" "$2")
+        shift
+        shift
+    }
+    ;;
+
+    -*) {
+        fargs+=("$1")
         shift
     }
     ;;
@@ -84,4 +98,4 @@ fi
 
 # "$version" "$book" "$@"
 
-ebible -m "$version" "$ref"
+ebible -m "$version" "${fargs[@]}" "$ref"

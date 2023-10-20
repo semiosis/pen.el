@@ -15,8 +15,6 @@ if ! { is_tty || is_stdout_pipe; }; then
 fi
 
 if ! inside-docker-p && docker-running-p; then
-    is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
-
     if is_tty; then
         in-pen in-tm "$sn" "$@"
     else
@@ -37,6 +35,7 @@ else
 fi
 
 format=plain
+BORDER=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -ttp) {
@@ -47,6 +46,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -s) {
         SEARCH=y
+        shift
+    }
+    ;;
+
+    -bd) {
+        BORDER=y
+        shift
+    }
+    ;;
+
+    -nbd) {
+        BORDER=
         shift
     }
     ;;
@@ -181,6 +192,12 @@ else
             cat
         fi
     }
-    } | sed '$s/\( *\)\(([^)]\+)\)$/\n\n\n\2/' | doublespacemax | pa -E "colvs -nls"
+    } | sed '$s/\( *\)\(([^)]\+)\)$/\n\n\n\2/' | doublespacemax | {
+        if test "$BORDER" = "y"; then
+            sed 's/^/| /'
+        else
+            cat
+        fi
+    } | pa -E "colvs -nls"
     # | pen-s remove-trailing-whitespace | pen-s join ' ' | sed 's/[0-9]: /&\n/g' | sed '/^$/d' | awk 'NR%2==0' | pavs
 fi
