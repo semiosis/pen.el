@@ -3,7 +3,7 @@ export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -test-filter) {
+    -test-filter|-tfi) {
         test_filter="$2"
         shift
         shift

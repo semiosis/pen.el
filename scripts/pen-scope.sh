@@ -58,13 +58,13 @@ cached="$4"  # Path that should be used to cache image previews
 
 # Make a default ocif here
 
-if adn url-p "$path"; then
-    if pl "$path" | grep -q -P '\.[a-zA-Z0-9]+$'; then
-        # download it and then rerun scope.sh
-        ocif scope.sh -dl "$path"
-    else
-        elinks-dump "$path"
-    fi
+if adn url-file-p "$path"; then
+    # download it and then rerun scope.sh
+    ocif scope.sh -dl "$path"
+    exit "$?"
+elif adn url-p "$path"; then
+    elinks-dump "$path"
+    exit "$?"
 fi
 
 test -f "$path" || exit 1
