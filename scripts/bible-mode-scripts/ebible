@@ -5,6 +5,12 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+if test "$EMACS_BABEL" = "y"; then
+    set -- -nbd "$@"
+else
+    set -- -bd "$@"
+fi
+
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 is_stdout_pipe() { [[ -p /dev/stdout ]]; }
 
@@ -35,7 +41,8 @@ else
 fi
 
 format=plain
-BORDER=y
+
+: "${BORDER:="y"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -ttp) {

@@ -32,6 +32,7 @@ case "$sn" in
         book="$sn"
 esac
 
+export EMACS_BABEL
 fargs=()
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;

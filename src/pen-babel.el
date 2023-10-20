@@ -135,7 +135,7 @@ to `org-babel-named-src-block-regexp'."
            (args (str args))
            (filter (str filter))
            (com (ds (format
-                     ". ~/.profile; %s %s%s%s %s"
+                     ". ~/.profile; export EMACS_BABEL=y; %s %s%s%s %s"
                      "ls -la /proc/$$/fd/2 2>/dev/null | grep -q pty && exec <&2;"
                      stdincmd
                      (if (string-match-p "{}" interpreter)
