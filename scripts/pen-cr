@@ -1065,7 +1065,7 @@ case "$fnspec" in
         fi
 
         if test -f Makefile && is_tty && pen-yn "Install?"; then
-            mmake install
+            make install
         fi
         exit 0
     }

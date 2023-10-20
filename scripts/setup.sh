@@ -1,5 +1,10 @@
 #!/bin/bash
 
+mcd () {
+    last_arg="${@: -1}"
+    mkdir -p "$@" && cd "$last_arg"
+}
+
 # Debian11 installation
 
 agi apt-file
@@ -1681,3 +1686,10 @@ e ia smalltalk-mode
 # }
 
 pip install lyricy
+
+(
+cd "$(gc "https://github.com/flonatel/pipexec")"
+autoreconf -i 
+./configure
+make -j 10
+)
