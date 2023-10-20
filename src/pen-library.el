@@ -822,6 +822,10 @@ buffer which is not included when this function returns"
 (defun pen-internet-connected-p ()
   (pen-snq "internet-connected-p"))
 
+;; (url-file-p "https://crosslakeefc.org/wp-content/uploads/2020/10/365-PROMISES.pdf")
+(defun url-file-p (url)
+  (pen-snq "url-file-p" url))
+
 (defalias 'internet-connected-p 'pen-internet-connected-p)
 
 (defvar pen-tutor-common-questions
