@@ -56,11 +56,11 @@ width="$2"   # Width of the preview pane (number of fitting characters)
 height="$3"  # Height of the preview pane (number of fitting characters)
 cached="$4"  # Path that should be used to cache image previews
 
-# Make a default ocif here
+# Make a default ocif here and a default pavs
 
 if adn url-file-p "$path"; then
     # download it and then rerun scope.sh
-    ocif scope.sh "$(download-file "$path")"
+    ocif scope.sh "$(ocif download-file "$path")" | pavs
     exit "$?"
 elif adn url-p "$path"; then
     elinks-dump "$path"
