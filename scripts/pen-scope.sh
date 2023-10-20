@@ -58,11 +58,13 @@ cached="$4"  # Path that should be used to cache image previews
 
 # Make a default ocif here and a default pavs
 
-if adn url-file-p "$path"; then
+exec 0</dev/null
+
+if odn adn url-file-p "$path"; then
     # download it and then rerun scope.sh
     ocif scope.sh "$(ocif download-file "$path")" | pavs
     exit "$?"
-elif adn url-p "$path"; then
+elif odn adn url-p "$path"; then
     elinks-dump "$path"
     exit "$?"
 fi
