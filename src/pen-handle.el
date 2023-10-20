@@ -400,6 +400,18 @@
         :nexterr '()
         :preverr '())
 
+(handle '(sh-base-mode bash-ts-mode)
+        :runmain '()
+        :repls '()
+        :formatters '()
+        :docs '(man-thing-at-point)
+        :godef '()
+        :docsearch '()
+        :nextdef '()
+        :prevdef '()
+        :nexterr '()
+        :preverr '())
+
 (handle '(bible-term-greek-mode)
         :runmain '()
         :repls '()

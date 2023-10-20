@@ -3,8 +3,6 @@ export TTY
 
 sn="$(basename "$0")"
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
-
 export UPDATE
 
 if test "$#" -eq 0; then
@@ -25,6 +23,8 @@ url="$(p "$url" | sed 's/?t=*//')"
 test -n "$url" || { echo "url: $url\nNot a youtube url" | hls red 1>&2; exit 1; }
 
 if ! test "$CI_CACHED" = "y"; then ocif "$sn" "$@" | pavs; exit "$?"; fi
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 transcript_dir="$DUMP$NOTES/ws/youtube/transcripts"
 subs_dir="$DUMP$NOTES/ws/youtube/subs"
