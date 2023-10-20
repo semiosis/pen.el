@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+filter-p -test-filter "xurls | grep -P '\\.[a-zA-Z0-9]+\$'" "$@"
