@@ -895,8 +895,17 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (let ((code (apply 'pen-sne (append (list shell-cmd stdin) args))))
     (equal code 0)))
 
+(defun inside-tmux-p ()
+  (or
+   (test-n
+    (getenv "TMUX"))
+   (pen-snq "inside-tmux-p")))
+
 (defun inside-docker-p ()
   (pen-snq "inside-docker-p"))
+
+;; (if (inside-tmux-p) (message "inside tmux"))
+;; (if (inside-docker-p) (message "inside docker"))
 
 (if (inside-docker-p)
     (progn

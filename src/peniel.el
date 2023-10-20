@@ -5,12 +5,12 @@
 
 (defun praise-edit-list ()
   (interactive)
-  (find-file (umn "$PEN/documents/notes/ws/lists/peniel/praise-songs.txt")))
+  (find-file (umn "$PEN/documents/notes/ws/lists/peniel/praise-songs.org")))
 
 (defun praise ()
   ;; e:$HOME/.emacs.d/host/pen.el/scripts/praise
   (interactive)
-  (let* ((fp "$PEN/documents/notes/ws/lists/peniel/praise-songs.txt")
+  (let* ((fp "$PEN/documents/notes/ws/lists/peniel/praise-songs.org")
          (contents_s (cat fp))
          (urls_s (xurls contents_s))
          (urls (str2lines urls_s))
