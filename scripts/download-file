@@ -37,7 +37,9 @@ if is_stdout_pipe || test "$sn" = downloaded; then
     cd "$dir"
     # Make a slugged fn?
     fn="$(basename "$url")"
-    wget -c "$url" -O "$fn"
+    if ! test -f "$fn"; then
+        wget -c "$url" -O "$fn"
+    fi
     rp="$(realpath "$fn")"
     echo "$rp"
     exit "$?"
