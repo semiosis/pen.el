@@ -15,7 +15,7 @@ is_stdout_pipe() {
     [[ -p /dev/stdout ]]
 }
 
-if is_stdout_pipe; then
+if is_stdout_pipe || test "$sn" = downloaded; then
     echo "https://crosslakeefc.org/wp-content/uploads/2020/10/365-PROMISES.pdf" | xurls
 
     dir="$HOME/downloads/"
