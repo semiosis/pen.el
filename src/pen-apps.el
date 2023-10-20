@@ -57,5 +57,8 @@
   ;;  (pen-term "h-m-m" nil nil default-directory))
   )
 
+(defun hmm-help ()
+  (interactive)
+  (find-file (umn "$HOME/repos/h-m-m/readme.md")))
 
 (provide 'pen-apps)
