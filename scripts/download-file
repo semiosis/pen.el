@@ -5,6 +5,22 @@ sn="$(basename -- "$0")"
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+# Perhaps I could extend this to do a list of files
+if stdin_exists; then
+    url="$(cat | head -n 1)"
+    set -- "$url" "$@"
+fi
+
 url="$1"
 test -n "$1" || exit 1
 
@@ -16,12 +32,15 @@ is_stdout_pipe() {
 }
 
 if is_stdout_pipe || test "$sn" = downloaded; then
-    echo "https://crosslakeefc.org/wp-content/uploads/2020/10/365-PROMISES.pdf" | xurls
-
     dir="$HOME/downloads/"
     mkdir -p "$dir"
     cd "$dir"
-    wget -c "$url"
+    # Make a slugged fn?
+    fn="$(basename "$url")"
+    wget -c "$url" -O "$fn"
+    rp="$(realpath "$fn")"
+    echo "$rp"
+    exit "$?"
 fi
 
 if ! is_tty; then
