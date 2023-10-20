@@ -27,4 +27,9 @@
           (new-buffer-from-string (pen-readsubs sel))
           (play-song-chrome sel)))))
 
+;; TODO Make this open up in BIble-mode
+(defun blessings ()
+  (interactive)
+  (tpop "blessings"))
+
 (provide 'peniel)

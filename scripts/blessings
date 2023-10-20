@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+cat $PENCONF/documents/notes/ws/lists/peniel/promises.org | while read line; do
+    odn scope.sh "$line"
+done | scrape-bible-references -v | bible-show-verses
