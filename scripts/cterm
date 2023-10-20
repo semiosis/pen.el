@@ -33,6 +33,8 @@ echo -n " $(cmd-nice-posix "$@") " | hls red
 echo in cterm
 } 1>&2
 
+: "${USE_TMUX:="y"}"
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -E) {
         DO_EXEC=y
@@ -48,6 +50,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -tm) {
         export USE_TMUX=y
+        shift
+    }
+    ;;
+
+    -ntm) {
+        export USE_TMUX=n
         shift
     }
     ;;
@@ -78,7 +86,6 @@ else
     CMD="$(cmd-nice-posix "$@")"
 fi
 
-USE_TMUX=y
 case "$CMD" in
     zsh|"\"zsh"\"|vd*) {
         USE_TMUX=y
