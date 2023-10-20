@@ -3,8 +3,6 @@ export TTY
 
 sn="$(basename "$0")"
 
-if ! test "$CI_CACHED" = "y"; then ocif "$sn" "$@" | pavs; exit "$?"; fi
-
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 export UPDATE
@@ -21,12 +19,12 @@ test "$#" -gt 0 || { echo "No url supplied" | hls red 1>&2; exit 1; }
 url="$1"
 test -n "$url" || { echo "Empty url" | hls red 1>&2; exit 1; }
 
-# https://www.youtube.com/watch?v=xhyi3H7beEA
-
 url="$(p "$url" | xurls)"
 url="$(p "$url" | sed 's/?t=*//')"
 
 test -n "$url" || { echo "url: $url\nNot a youtube url" | hls red 1>&2; exit 1; }
+
+if ! test "$CI_CACHED" = "y"; then ocif "$sn" "$@" | pavs; exit "$?"; fi
 
 transcript_dir="$DUMP$NOTES/ws/youtube/transcripts"
 subs_dir="$DUMP$NOTES/ws/youtube/subs"
