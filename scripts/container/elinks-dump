@@ -54,14 +54,6 @@ exec 3>&2
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-fpage() {
-    if is_tty; then
-        $pager
-    else
-        cat
-    fi
-}
-
 filter() {
     if test "$ONLY_REFS" = "y"; then
         sed '0,/^References/d' | sed -n "/^   \\./s/^   \\. //p"
@@ -109,6 +101,6 @@ if ! test -s "$outtf"; then
 fi
 
 exec 2>&3
-cat "$outtf" | fpage
+cat "$outtf" | pa -E "$pager"
 
 exit 0
