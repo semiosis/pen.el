@@ -1,3 +1,5 @@
+(load-library "transient")
+
 ;; TODO Also have a transient to set
 
 (defmacro transient-define-prefix (name arglist &rest args)
@@ -20,7 +22,7 @@ Suffix and Infix Commands'.
 The BODY is optional.  If it is omitted, then ARGLIST is also
 ignored and the function definition becomes:
 
-  (λ ()
+  (lambda ()
     (interactive)
     (transient-setup \\='NAME))
 
@@ -48,12 +50,12 @@ to the setup function:
            (indent defun)
            (doc-string 3))
   (pcase-let ((`(,class ,slots ,suffixes ,docstr ,body)
-               (transient--expand-define-args args)))
+               (transient--expand-define-args args arglist)))
     `(progn
        (defalias ',name
          ,(if body
-              `(λ ,arglist ,@body)
-            `(λ ()
+              `(lambda ,arglist ,@body)
+            `(lambda ()
                (interactive)
                (transient-setup ',name))))
        (put ',name 'interactive-only t)
@@ -61,8 +63,9 @@ to the setup function:
        (put ',name 'transient--prefix
             (,(or class 'transient-prefix) :command ',name ,@slots))
        (put ',name 'transient--layout
-            ',(cl-mapcan (λ (s) (transient--parse-child name s))
-                         suffixes))
+            (list ,@(cl-mapcan (lambda (s) (transient--parse-child name s))
+                               suffixes)))
+
        ;; Add name to the end so I can execute and run a transient definition
        ',name)))
 
@@ -91,9 +94,9 @@ ARGLIST.  The infix arguments are usually accessed by using
            (indent defun)
            (doc-string 3))
   (pcase-let ((`(,class ,slots ,_ ,docstr ,body)
-               (transient--expand-define-args args)))
+               (transient--expand-define-args args arglist)))
     `(progn
-       (defalias ',name (λ ,arglist ,@body))
+       (defalias ',name (lambda ,arglist ,@body))
        (put ',name 'interactive-only t)
        (put ',name 'function-documentation ,docstr)
        (put ',name 'transient--suffix
@@ -170,7 +173,7 @@ ARGLIST.  The infix arguments are usually accessed by using
 
 (tdp transient-toys-hello ()
   "Say hello"
-  [("h" "hello" (λ () (interactive) (message "hello")))])
+  [("h" "hello" (lambda () (interactive) (message "hello")))])
 
 ;; (transient-toys-hello)
 
@@ -234,13 +237,13 @@ ARGLIST.  The infix arguments are usually accessed by using
 
   [:description current-time-string
                 ("ws" transient-toys--wave
-                 :description (λ ()
+                 :description (lambda ()
                                 (format "Wave at %s" (current-time-string))))
                 ("wb" "wave better" transient-toys--wave)]
 
-  [[:description (λ () (format "Group %s" (cl-gensym)))
+  [[:description (lambda () (format "Group %s" (cl-gensym)))
                  ("wt" "wave two" transient-toys--wave)]
-   [:description (λ () (format "Group %s" (cl-gensym)))
+   [:description (lambda () (format "Group %s" (cl-gensym)))
                  ("wa" "wave all" transient-toys--wave)]])
 
 ;; Arguments
