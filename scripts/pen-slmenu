@@ -70,4 +70,4 @@ elif is_tty; then
 else
     printf -- "%s\n" "$result"
 fi
-pak
+# pak

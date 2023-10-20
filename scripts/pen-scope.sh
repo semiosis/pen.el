@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sn="$(basename -- "$0")"
+
 # Don't do this under normal circumstances.
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
@@ -39,6 +41,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -dl) {
+        download_it=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -47,6 +55,17 @@ path="$1"    # Full path of the selected file
 width="$2"   # Width of the preview pane (number of fitting characters)
 height="$3"  # Height of the preview pane (number of fitting characters)
 cached="$4"  # Path that should be used to cache image previews
+
+# Make a default ocif here
+
+if adn url-p "$path"; then
+    if printf -- "%s\n" "$path" | grep -q -P '\.[a-zA-Z0-9]+$'; then
+        # download it and then rerun scope.sh
+        ocif scope.sh -dl "$path"
+    else
+        elinks-dump "$path"
+    fi
+fi
 
 test -f "$path" || exit 1
 
