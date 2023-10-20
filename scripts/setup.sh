@@ -1692,4 +1692,5 @@ cd "$(gc "https://github.com/flonatel/pipexec")"
 autoreconf -i 
 ./configure
 make -j 10
+make install
 )
