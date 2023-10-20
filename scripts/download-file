@@ -10,6 +10,20 @@ test -n "$1" || exit 1
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+if is_stdout_pipe; then
+    echo "https://crosslakeefc.org/wp-content/uploads/2020/10/365-PROMISES.pdf" | xurls
+
+    dir="$HOME/downloads/"
+    mkdir -p "$dir"
+    cd "$dir"
+    wget -c "$url"
+fi
+
 if ! is_tty; then
     sps "$sn" "$@"
     exit "$?"

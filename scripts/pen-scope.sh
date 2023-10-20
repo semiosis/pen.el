@@ -60,7 +60,7 @@ cached="$4"  # Path that should be used to cache image previews
 
 if adn url-file-p "$path"; then
     # download it and then rerun scope.sh
-    ocif scope.sh -dl "$path"
+    ocif scope.sh "$(download-file "$path")"
     exit "$?"
 elif adn url-p "$path"; then
     elinks-dump "$path"
