@@ -1,3 +1,5 @@
+;; e:$PEN/documents/notes/ws/lists/peniel/star.el
+
 (defun org-link-get-title (s)
   (--> s
        (s-replace-regexp ".*\\]\\[" "" it)
