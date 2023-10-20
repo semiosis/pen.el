@@ -101,7 +101,7 @@
                  (or force_xurls
                      (yn "xurls changed the url. Use xurls?")))
             (setq url url_xurls))))
-  (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer chrome " (pen-q url)))) nil nil nil t))
+  (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer pen-ssh-host-run-or-local-run chrome " (pen-q url)))) nil nil nil t))
 
 ;; Unfortunately, search requires that I am logged in
 (defengine github-advanced

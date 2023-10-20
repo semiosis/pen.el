@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+cat1 "$PEN/documents/notes/ws/lists/peniel/praise-songs.org"
+cat1 "$PEN/documents/notes/ws/lists/peniel/star.el"
