@@ -56,17 +56,17 @@ fi
 # CMD="$(resize | tr -d '\n')$CMD"
 # eval `resize`
 
-slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
-
-cmd tmux new -s "$n" -y "$LINES" "$CMD" > /tmp/tmlog.txt
-
 if test "$TERM" = "dumb"; then
     eval "$CMD"
 else
     unset TMUX
+
+    slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
     h="$(sha "$(pwd)")"
     n="tmwr-$slug-$h"
-    tmux attach -t "$n" 2>/dev/null || tmux new -s "$n" "$CMD"
+
+    cmd tmux new -s "$n" -n "$slug" "$CMD" > /tmp/tmlog.txt
+    tmux attach -t "$n" 2>/dev/null || tmux new -s "$n" -n "$slug" "$CMD"
 fi
 
 test -f "$tf_paneprintout" && cat "$tf_paneprintout" | hls spacegrey

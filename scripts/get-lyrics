@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# If a youtube url then get subtitles, and get the video title
+# If a not a youtube url then treat it as
+
+readsubs "$@"

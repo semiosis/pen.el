@@ -1679,3 +1679,5 @@ e ia smalltalk-mode
 # git-pull-submodules
 # make all
 # }
+
+pip install lyricy
