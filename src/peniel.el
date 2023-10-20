@@ -21,7 +21,8 @@
                   nil nil "Praise song: ")))
     (if (test-n sel)
         (progn
+          ;; YouTube subtitles are not accurate
           (new-buffer-from-string (pen-readsubs sel))
-          (chrome sel nil nil t)))))
+          (play-song-chrome sel)))))
 
 (provide 'peniel)

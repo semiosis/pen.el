@@ -90,7 +90,7 @@
   :keybinding "g"
   :browser 'lg-eww)
 
-(defun chrome (url &optional discard no_xurls force_xurls)
+(defun chrome (url &optional no_xurls force_xurls)
   (interactive (list (read-string-hist "chrome: ")))
   (pen-ns (concat "Chrome: " url))
   (if force_xurls
@@ -103,11 +103,15 @@
             (setq url url_xurls))))
   (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer pen-ssh-host-run-or-local-run chrome " (pen-q url)))) nil nil nil t))
 
+(defun play-song-chrome (url)
+  (interactive (list (read-string-hist "chrome: ")))
+  (chrome url nil t))
+
 ;; Unfortunately, search requires that I am logged in
 (defengine github-advanced
-  "https://github.com/search?q=%s&type=Code&ref=advsearch&l=GraphQL&l="
-  :keybinding "H"
-  :browser 'chrome)
+           "https://github.com/search?q=%s&type=Code&ref=advsearch&l=GraphQL&l="
+           :keybinding "H"
+           :browser 'chrome)
 
 (defengine github
   "https://github.com/search?ref=simplesearch&q=%s"
