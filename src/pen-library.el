@@ -822,6 +822,8 @@ buffer which is not included when this function returns"
 (defun pen-internet-connected-p ()
   (pen-snq "internet-connected-p"))
 
+(defalias 'internet-connected-p 'pen-internet-connected-p)
+
 (defvar pen-tutor-common-questions
   '("What is <1:q> used for?"
     "What are some good learning materials"))

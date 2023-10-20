@@ -189,6 +189,14 @@ buffer."
   (if (not delim) (setq delim "\n"))
   (mapconcat 'identity (mapcar 'str list-of-things) delim))
 
+(defun show-environment ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (tpop "vs" (list2str process-environment))
+    (if (inside-tmux-p)
+        (nbfs (list2str process-environment))
+      (tpop "vs" (list2str process-environment)))))
+
 (defalias 'detect-language-set-mode 'guess-major-mode)
 
 (provide 'pen-utils)
