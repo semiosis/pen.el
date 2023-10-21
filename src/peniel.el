@@ -28,8 +28,11 @@
           (play-song-chrome sel)))))
 
 ;; TODO Make this open up in BIble-mode
+;; j:bible-mode--open-search
+;; j:bible-mode--display-search
 (defun blessings ()
   (interactive)
-  (tpop "blessings"))
+  ;; (tpop "blessings")
+  (nbfs (snc "blessings")))
 
 (provide 'peniel)

@@ -197,6 +197,10 @@ buffer."
         (nbfs (list2str process-environment))
       (tpop "vs" (list2str process-environment)))))
 
+(defun noop (&rest args)
+  "Do nothing."
+  nil)
+
 (defalias 'detect-language-set-mode 'guess-major-mode)
 
 (provide 'pen-utils)

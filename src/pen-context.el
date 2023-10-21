@@ -120,6 +120,11 @@
   ;; (build-context-functions)
   )
 
+;; I'd have to look up the tuple first?
+;; I don't really know how it works
+(defun pen-add-context-function (predicate-list-or-sexp f)
+  (noop))
+
 (defun pen-hash-expression (expr)
   (sha1 (str expr)))
 
