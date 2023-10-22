@@ -12,6 +12,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -pp) {
+        pretty=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -41,6 +47,42 @@ if ! stdin_exists; then
     fi
 fi
 
-s join ";" |
-    xargs "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" |
-    sed -z 's/\([0-9]:\) *\n/\1 /g' | sed 's/^\s*//' | pavs
+raw="$(s join ";" | xargs "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k")"
+mod="$(printf -- "%s\n" "$raw" | sed -n '$p')"
+raw="$(printf -- "%s\n" "$raw" | sed '$d')"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+: "${COLS:="50"}"
+
+unset COLUMNS
+if test "$pretty" = "y"; then
+    if is_tty; then
+        eval `resize`
+        LINES=$(tput lines)
+        COLUMNS=$(tput cols)
+
+        if test "$COLUMNS" -lt "$COLS"; then
+            COLS="$COLUMNS"
+        fi
+    fi
+fi
+
+{
+    printf -- "%s\n" "$raw"
+} |
+    sed -z 's/\([0-9]:\) *\n/\1 /g' | sed 's/^\s*//' | {
+    if test "$pretty" = "y"; then
+        awk1 | while IFS=$'\n' read -r line; do
+        (
+            exec 0</dev/null
+            printf -- "%s\n" "$line" | sed 's/: .*//' | udl
+            printf -- "%s\n" "$line" | sed 's/.*: //' | fold -w "$COLS" -s
+            echo
+        )
+        done
+    else
+        cat
+    fi
+    echo "$mod"
+} | pavs
