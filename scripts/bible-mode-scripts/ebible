@@ -152,7 +152,8 @@ if test "$SEARCH" = "y"; then
     exit "$?"
 fi
 
-: ${CMD:="$(cmd "$@")"}
+# Remove quotes (don't use cmd)
+: ${CMD:="$@"}
 
 ref="$CMD"
 : "${ref:="Genesis 1"}"
