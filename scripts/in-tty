@@ -1,0 +1,32 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_tty_stderr() { [ -t 2 ] && ! test "$TERM" = "dumb"; }
+
+CMD="$(cmd "$@")"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -E) {
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if is_tty; then
+    eval "$CMD"
+elif is_tty_stderr; then
+    (
+    exec <&2
+    eval "$CMD"
+    )
+else
+    tpop -E "$CMD"
+fi
