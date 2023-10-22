@@ -19,6 +19,28 @@ esac; done
 
 # scrape-bible-references | 
 
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if ! stdin_exists; then
+    if test "$#" -eq 1 && test -f "$1"; then
+        exec < <(cat "$1")
+    elif test "$#" -gt 0; then
+        CMD="$(cmd "$@")"
+        exec < <(printf -- "%s\n" "$CMD")
+    else
+        echo "bible-show-verses: No input" | hls red 1>&2
+        exit "$#"
+    fi
+fi
+
 s join ";" |
     xargs "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k" |
     sed -z 's/\([0-9]:\) *\n/\1 /g' | sed 's/^\s*//' | pavs
