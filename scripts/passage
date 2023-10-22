@@ -3,4 +3,9 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-in-tty -E "cat $PENCONF/documents/notes/ws/lists/peniel/passage-titles.org | fzf"
+sel="$(in-tty -E "cat $PENCONF/documents/notes/ws/lists/peniel/passage-titles.org | fzf")"
+
+if test -n "$sel"; then
+    sel="$(p "$sel" | sed -e 's/^\[\[bible://' -e 's/\]\[.*//')"
+    nasb -E "$sel"
+fi

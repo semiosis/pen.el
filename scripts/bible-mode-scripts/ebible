@@ -110,6 +110,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -E) {
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
     -m) {
         module="$2"
         shift
@@ -145,7 +152,9 @@ if test "$SEARCH" = "y"; then
     exit "$?"
 fi
 
-ref="$@"
+: ${CMD:="$(cmd "$@")"}
+
+ref="$CMD"
 : "${ref:="Genesis 1"}"
 
 if ! test "$FAST" = "y"; then
