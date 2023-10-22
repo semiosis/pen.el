@@ -88,7 +88,7 @@ input_fp="$(cat | c ascify | tf txt)"
             sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( \?[0-9][0-9-]*\\)\\?\\([:.][0-9][0-9-]*\\)\\?.*/\\1\\2\\3\\4/p" |
             sed '/^$/d'
     done
-} | {
+} | sponge "$input_fp" | {
     # This takes care of such:
     # Ps.33.6
     # Ps.136.5-Ps.136.8
@@ -119,5 +119,4 @@ input_fp="$(cat | c ascify | tf txt)"
     else
         cat
     fi
-} | uniqnosort | sed '/^..$/d'
-rm "$input_fp"
+} | uniqnosort | sed '/^..$/d' | pavs

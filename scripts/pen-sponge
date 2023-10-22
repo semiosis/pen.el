@@ -11,12 +11,27 @@ if test -h "$last_arg"; then
     test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
     set -- "$@" "$tf_thing"
 
-    sponge "$@"
+    /usr/bin/sponge "$@"
     ret="$?"
 
     0</dev/null cat "$tf_thing" > "$last_arg"
     trap "rm \"$tf_thing\" 2>/dev/null" 0
     exit "$ret"
 else
-    sponge "$@"
+    /usr/bin/sponge "$@"
 fi
+ret="$?"
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+ispipe="$?"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if test "$ispipe" = 0 && test -f "$last_arg" && ! is_tty; then
+    cat "$last_arg"
+fi
+exit "$ret"
+
