@@ -13,8 +13,12 @@ stdin_exists() {
     } &>/dev/null
 }
 
+# This certainly works
+IFS= read -rd '' input < <(cat);typeset -p input &>/dev/null
+
 if stdin_exists; then
-    set -- "$(cat)" "$@"
+    set -- "${input}" "$@"
 fi
 
+# But command substitution in cmd-nice-posix removes the trailing newlines
 cmd-nice-posix "$@" | bs '$`'

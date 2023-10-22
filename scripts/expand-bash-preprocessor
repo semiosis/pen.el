@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# This is quite crude. I really need to do this in bash code or with m4
+
+# IFS= read -r -d '' pattern <<'HEREDOC'
+# @($cmd)
+# HEREDOC
+# 
+# IFS= read -r -d '' expansion <<'HEREDOC'
+# IFS= read -rd '' quoted < <($cmd);typeset -p quoted &>/dev/null
+# HEREDOC
+
+sed "s~\\([a-zA-Z_]\\)=@(\\(.*\\))~IFS= read -rd '' \\1 < <(\\2);typeset -p \\1 &>/dev/null~"

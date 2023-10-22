@@ -1,4 +1,51 @@
 #!/bin/bash
 export TTY
 
-( crc32 <(cat) )
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if test "$#" -gt 0; then
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        -s) {
+            /usr/bin/crc32 <(printf -- "%s" "$2")
+            shift
+            shift
+        }
+        ;;
+
+        -sa) {
+            shift
+            /usr/bin/crc32 <(printf -- "%s" "$@")
+            shift "$#"
+            exit "$?"
+        }
+        ;;
+
+        -f) {
+            /usr/bin/crc32 "$2"
+            shift
+            shift
+        }
+        ;;
+
+        *) {
+            /usr/bin/crc32 "$1"
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+elif stdin_exists; then
+    ( /usr/bin/crc32 <(cat) )
+else
+    /usr/bin/crc32 "$@"
+fi

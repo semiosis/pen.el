@@ -233,7 +233,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     +/*) { # pattern
-        pattern="$(p "$opt" | sed 's=^+/==' | chomp)"
+        pattern="$(printf -- "%s" "$opt" | sed 's=^+/==' | chomp)"
 
         shift
     }
@@ -302,7 +302,8 @@ if [ -n "$pattern" ]; then
     ncmd="/$pattern"
 
     ncmd="$(p "silent! normal! $ncmd" | pen-qne)"
-    ncmd="$(p "exe \"$ncmd\r\"" | q)"
+    # use q-cmd and not q
+    ncmd="$(p "exe \"$ncmd\r\"" | q-cmd)"
     opts+=" -c $ncmd "
 fi
 

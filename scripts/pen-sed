@@ -1,0 +1,45 @@
+#!/bin/bash
+export TTY
+
+# export all functions
+set -a
+# Alternatively:
+# declare -fx $(bash -c 'source /path/to/my-file &> /dev/null; compgen -A function')
+
+# https://askubuntu.com/questions/1182632/using-sed-with-a-custom-function-fails
+
+sim() {
+    # sed-improved
+    sedcommand=sed
+
+    # # restore quotes around each script
+    # while test $# -gt 0; do
+    #     [[ "$1" == "-e" ]] && { shift; sedcommand="$sedcommand -e '$1'"; } || sedcommand="$sedcommand $1"; shift
+    # done
+    # unshare -m -r bash -c "mount --bind /bin/bash /bin/dash && $sedcommand"
+
+    CMD="$(cmd "$@")"
+
+    unshare -m -r bash -c "mount --bind /bin/bash /bin/dash && command sed $CMD"
+}
+
+# Add functions here
+sh_urldecode() {
+    local url_encoded="${1//+/ }"
+    printf '%b' "${url_encoded//%/\\x}"
+}
+
+# Add functions here
+sed_crc32() {
+    0</dev/null crc32 "$@"
+}
+
+# We are using `set -a` instead
+# export -f sh_urldecode
+# export -f test_crc32
+
+# sim -e 's|.*|urldecode &|e' big_file.csv
+# cat mygit-30.08.22.csv | pen-sed -e 's|.*|sh_urldecode &|e'
+# cat mygit-30.08.22.csv | pen-sed -e 's|.*|sed_crc32 -sa &|e'
+
+sim "$@"

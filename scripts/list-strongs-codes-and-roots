@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sqlite3 -separator $'\t' /root/.pen/gematria-interlinear.db "select StrongsNumber, Root from Strongs_"

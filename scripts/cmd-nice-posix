@@ -29,7 +29,13 @@ cmd-nice() {
         # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
 
         # TODO Ensure that the first \ to touch the non-" is not doubled?
-        printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
+        # printf %s "$var"
+        # sadlly, command substitution removes the trailing newlines
+        # printf '"%s" ' "$(printf %s "$var")"
+        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
+
+        IFS= read -rd '' quoted < <(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g');typeset -p quoted &>/dev/null
+        printf '"%s" ' "$quoted";
     done | sed 's/ $//'
 }
 

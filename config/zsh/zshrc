@@ -569,6 +569,18 @@ zle -N copy-last-command-with-wd
 bindkey "\ek" copy-last-command-with-wd
 
 {
+    function zsh-insert-program() {
+        text_to_add="$(slmenu | chomp)"
+        LBUFFER="${LBUFFER}${text_to_add}"
+    }
+
+    autoload -z zsh-insert-program
+    zle -N zsh-insert-program
+    bindkey "\e0" zsh-insert-program
+
+}
+
+{
     function zsh-paste-after() {
         text_to_add="$(pen-xc -ub | chomp)"
         RBUFFER="${text_to_add}${RBUFFER}"

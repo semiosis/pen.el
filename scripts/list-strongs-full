@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+format() {
+    awk -F '\t' "{print \$2 \"\\t\" \$1 \"\\t\" \$4 \"\\t(\" \$3 \")\"}" |
+        cat
+    # column -s "	" -t
+}
+
+# sqlite3 -separator $'\t' /root/.pen/gematria-interlinear.db "select StrongsNumber, Root, Part_of_Speech, Meaning from Strongs_"
+
+sql="select StrongsNumber, Root, Part_of_Speech, Meaning from Strongs_"
+
+sqlite3 -separator $'\t' /root/.pen/gematria-interlinear.db "$sql" | format | pavs

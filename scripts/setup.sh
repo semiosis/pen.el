@@ -1694,3 +1694,9 @@ autoreconf -i
 make -j 10
 make install
 )
+
+(
+# cd "$(gc "http://github.com/theprophetictimeline/Bible-Gematria-Interlinear-Explorer")"
+cd /volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer
+cp -a Complete.db ~/.pen/gematria-interlinear.db
+)

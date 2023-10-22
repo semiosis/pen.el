@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# Don't actually use this script until this is finished.
+# Also, this seems like a big task, so it's very far down the pipeline
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Run the preprocessor on any opened file
+# expand-bash-preprocessor
+
+bash "$@"

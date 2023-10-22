@@ -871,7 +871,7 @@ snippet stdin1
 snippet stdinpara
 	# Soak up input from stdin or from the given file
 	if [ -t 0 ]; then
-		last_oarg() {
+		last_arg() {
 			if [ \$# -gt 0 ]; then
 				n=\$((\$#-0))
 				eval ARG=\\${\$n}

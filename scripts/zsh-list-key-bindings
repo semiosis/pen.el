@@ -1,0 +1,10 @@
+#!/usr/bin/zsh -i
+# -i means that zshrc and oh my zsh will be loaded
+
+{
+bindkey -l | awk1 | while IFS=$'\n' read -r line; do
+    echo "$line" | udl
+    bindkey -M "$line"
+    echo
+done 
+} | pavs

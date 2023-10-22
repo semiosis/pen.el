@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# sqlite3 /root/.pen/gematria-interlinear.db "select StrongsNumber from Strongs_ where Root='אֲבַגְתָא'"
+
+# strongs-commands.sh 'אֲבַגְתָא'
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+root="$1"
+
+test -n "$root" || {
+    if is_tty; then
+        root="$(list-strongs-roots | fzf)"
+    fi
+
+    if ! test -n "$root"; then
+        exit 1
+    fi
+}
+
+sqlite3 $PENCONF/gematria-interlinear.db "select StrongsNumber from Strongs_ where Root='$root'"
