@@ -27,12 +27,15 @@
           (new-buffer-from-string (pen-readsubs sel))
           (play-song-chrome sel)))))
 
-;; TODO Make this open up in BIble-mode
+;; TODO Make this open up in bible-mode
 ;; j:bible-mode--open-search
 ;; j:bible-mode--display-search
 (defun blessings ()
   (interactive)
   ;; (tpop "blessings")
-  (nbfs (snc "blessings")))
+  (nbfs (snc "ocif blessings"))
+  ;; (nbfs (snc "ocif show-promises"))
+  )
+(defalias 'promises 'blessings)
 
 (provide 'peniel)
