@@ -1,4 +1,6 @@
-HISTFILE=$HOME/programs/zsh/dotfiles/.zsh_history
+unset HISTFILE
+test -f "$HOME/.pen/zsh_history" && : "${HISTFILE:="$HOME/.pen/zsh_history"}"
+test -f "$HOME/programs/zsh/dotfiles/.zsh_history" && : "${HISTFILE:="$HOME/programs/zsh/dotfiles/.zsh_history"}"
 
 autoload up-line-or-beginning-search
 autoload down-line-or-beginning-search
