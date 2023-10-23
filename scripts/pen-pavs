@@ -16,9 +16,11 @@ ispipe="$?"
 # This needs engineering - it's not finished
 if test "$istty" = 0 && ! test "$ispipe" = 0; then
     v
-elif test "$istty" = 0 && test "$ispipe" = 0; then
-    exec 2>&1;
-    vipe
+
+# # This is dodgy because vipe may spawn eipe
+# elif test "$istty" = 0 && test "$ispipe" = 0; then
+#     exec 2>&1;
+#     vipe
 else
     cat
 fi
