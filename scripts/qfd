@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+# Do not escape \ here unless it is followed by a special char
+# Need a new esc script.
+
+# Do not use the bs script at all because it indiscriminately
+# escapes escapes, even if those escapes are not related to one of the
+# escaped.
+
+# bs "\"\\\$" | sed 's/^.*$/"&"/'
+
+esc "\"\$" | sed 's/^.*$/"&"/'
+
+# the 'escape' script should be called 'backslash'
+# the 'backslash' script should be called 'escape'
