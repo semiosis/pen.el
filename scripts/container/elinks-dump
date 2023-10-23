@@ -49,6 +49,7 @@ fi
 : "${pager:="v"}"
 
 export UPDATE
+export EXTRA_METADATA
 
 exec 3>&2
 
@@ -94,10 +95,10 @@ fi
 
 export COLUMNS
 
-outtf="$(pen-ci -f -m "$USETOR" elinks -dump-width "$COLUMNS" --no-numbering --dump "$@" | filter | pen-tf txt)" 
+outtf="$(pen-ci -f -m "$EXTRA_METADATA$USETOR" elinks -dump-width "$COLUMNS" --no-numbering --dump "$@" | filter | pen-tf -X "$EXTRA_METADATA" txt)" 
 
 if ! test -s "$outtf"; then
-    pen-ci -m "$USETOR" w3m -dump "$@" | filter > "$outtf"
+    pen-ci -m "$EXTRA_METADATA$USETOR" w3m -dump "$@" | filter > "$outtf"
 fi
 
 exec 2>&3

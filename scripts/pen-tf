@@ -4,6 +4,22 @@ stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -X|-extraslug) {
+        extraslug="$2"
+        extraslug="$(printf -- "%s" "$extraslug" | sed -e 's/^[-_ ]*//' -e 's/[-_ ]*$//' | slugify)"
+        if test -n "$extraslug"; then
+            extraslug="_$extraslug"
+        fi
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # Completely optional
 if test "$#" -eq 1; then
     name="temp"
@@ -17,7 +33,7 @@ else
 fi
 : "${ext:="txt"}"
 
-fp="$(mktemp -t "tf_${name}XXXXXXX.${ext}" 2>/dev/null || :)"
+fp="$(mktemp -t "tf_${name}XXXXXXX${extraslug}.${ext}" 2>/dev/null || :)"
 
 # TODO
 # Use ~/.pen first
@@ -26,7 +42,7 @@ fp="$(mktemp -t "tf_${name}XXXXXXX.${ext}" 2>/dev/null || :)"
 if stdin_exists; then
     cat > "$fp"
     fp_sha="$(0</dev/null sha "$fp")"
-    fp_sha="/tmp/tf_${name}_${fp_sha}.${ext}"
+    fp_sha="/tmp/tf_${name}_${fp_sha}${extraslug}.${ext}"
     mv "$fp" "$fp_sha"
     fp="$fp_sha"
 fi

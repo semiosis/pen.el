@@ -46,6 +46,22 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -dt|-date) {
+        : "${date:="$2"}"
+        : "${date:="$(date +%d.%m.%y)"}"
+        EXTRA_METADATA="${EXTRA_METADATA}_${date}"
+        shift
+        shift
+    }
+    ;;
+
+    -today) {
+        : "${date:="$(date +%d.%m.%y)"}"
+        EXTRA_METADATA="${EXTRA_METADATA}_${date}"
+        shift
+    }
+    ;;
+
     -f) {
         force_on=y
         shift
