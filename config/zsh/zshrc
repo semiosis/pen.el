@@ -349,7 +349,7 @@ function zsh-slmenu() {
     tput sc
 
     exec <&1
-    slmenu
+    slmenu -q "'"
 }
 
 # M-SPC
@@ -572,7 +572,7 @@ bindkey "\ek" copy-last-command-with-wd
 
 {
     function zsh-insert-program() {
-        text_to_add="$(slmenu | chomp)"
+        text_to_add="$(slmenu -q "'" | chomp)"
         LBUFFER="${LBUFFER}${text_to_add}"
     }
 

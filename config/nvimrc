@@ -131,6 +131,9 @@ set noswapfile " Swap is disabled. Using git anyway.
 " Vim is scaring me by deleting files.
 set nofixendofline
 
+" This should be default
+set autochdir
+
 " set backupdir=/dev/shm/var/tmp/shane/vim
 " set directory=/dev/shm/var/tmp/shane/vim
 " set undodir=/dev/shm/var/tmp/shane/vim

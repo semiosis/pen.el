@@ -56,7 +56,7 @@ esac; done
 
 input_fp="$(cat | c ascify | tf txt)"
 {
-    list-bible-books | while IFS=$'\n' read -r title; do
+    list-bible-books | tv | while IFS=$'\n' read -r title; do
         #read -r title2
         #read -r title3
         #read -r title4

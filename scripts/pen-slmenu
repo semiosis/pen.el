@@ -43,6 +43,9 @@ fi
 
 result="$(
     if test "$LINES" -gt "5" || ! command -v slmenu; then
+        if test "$#" -eq 0; then
+            set -- -q "'" "$@"
+        fi
         nvc pen-fzf "$@" | cat
     else
         nvc /usr/local/bin/slmenu $LINES "$@"
