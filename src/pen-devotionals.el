@@ -28,12 +28,24 @@
 
 
 (defun chuckswindoll (&optional last_n)
-  (interactive (list (string-to-int (sor (read-string-hist "last `n` devotionals:")
-                                         "0"))))
-  (let ((id (string-to-int (s-replace-regexp ":.*" "" (fz (davidjeremiah-list last_n)
-                                                          nil nil "Devotional:")))))
+  (interactive)
 
-    (listen-to-davidjeremiah id)))
+  (let ((url (chomp (xurls (tpop "mfz -q \"'\""
+                                 (snc "ocif chuckswindoll")
+                                 :width_pc 50
+                                 :output_b t)))))
+
+    (if (test-n url)
+        (chrome url nil t)))
+
+  
+  ;; (interactive (list (string-to-int (sor (read-string-hist "last `n` devotionals:")
+  ;;                                        "0"))))
+  ;; (let ((id (string-to-int (s-replace-regexp ":.*" "" (fz (davidjeremiah-list last_n)
+  ;;                                                         nil nil "Devotional:")))))
+
+  ;;   (listen-to-davidjeremiah id))
+  )
 
 
 (defun davidjeremiah-list (&optional last_n)

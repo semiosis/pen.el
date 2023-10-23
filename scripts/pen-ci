@@ -68,6 +68,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -v) {
+        CI_VERBOSE=y
+        shift
+    }
+    ;;
+
     -E) {
         CMD="$2"
         shift
@@ -102,10 +108,20 @@ getpwd() {
     test "$IGNORE_DIR" = "y" || pwd
 }
 
-wdmd5="_$(printf -- "%s\n" "$(getpwd)$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1)"
+test "$IGNORE_DIR" = "y" || EXTRA_METADATA="$(getpwd)$EXTRA_METADATA"
+
+wdmd5="_$(printf -- "%s\n" "$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1)"
 
 # CMD="$(cmd "$@")"
 : "${CMD:="$(cmd "$@")"}"
+
+if test "$CI_VERBOSE" = "y"; then
+    {
+        echo "ci $CMD"
+        echo "EXTRA_METADATA=$EXTRA_METADATA" 
+        echo
+    } | hls blue 1>&2
+fi
 
 # This must come after the initial arguments
 cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha.txt"

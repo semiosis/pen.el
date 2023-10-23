@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+CI_VERBOSE=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -disable) {
+        CI_VERBOSE=
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export CI_VERBOSE
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if test "$#" -gt 1; then
+    "$@"
+elif is_tty; then
+    zcd .
+else
+    # Useful for sourcing
+    # eval "$(verbose-ci)"
+    cmd-nice export CI_VERBOSE="$CI_VERBOSE"
+fi
