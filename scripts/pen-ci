@@ -115,17 +115,18 @@ wdmd5="_$(printf -- "%s\n" "$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1)"
 # CMD="$(cmd "$@")"
 : "${CMD:="$(cmd "$@")"}"
 
+# This must come after the initial arguments
+cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha.txt"
+# echo "$cache_file_path" 1>&2
+
 if test "$CI_VERBOSE" = "y"; then
     {
         echo "ci $CMD"
         echo "EXTRA_METADATA=$EXTRA_METADATA" 
+        echo "cache_file_path=$cache_file_path" 
         echo
     } | hls blue 1>&2
 fi
-
-# This must come after the initial arguments
-cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha.txt"
-# echo "$cache_file_path" 1>&2
 
 age() {
     fileMod="$(stat -c %Y -- "$1")"
