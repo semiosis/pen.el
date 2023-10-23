@@ -33,7 +33,7 @@
 (defun blessings ()
   (interactive)
   ;; (tpop "blessings")
-  (nbfs (snc "upd ocif blessings -pp"))
+  (nbfs (snc "ocif blessings -pp"))
   ;; (nbfs (snc "ocif show-promises"))
   )
 (defalias 'promises 'blessings)

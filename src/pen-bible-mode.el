@@ -18,7 +18,7 @@
 ;;
 (defset bible-strongs-always-show-codelist
   (bible-strongs-codes-sort
-   '(G25
+   '(G25 G859 G2983 G1431
      G1679 G5287
      G299 G26 G38 G40 G53 G76 G129 G165 G166 G169 G225
      G227 G228 G266 G281 G286 G386 G458 G487 G517
