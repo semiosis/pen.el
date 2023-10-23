@@ -85,4 +85,4 @@ fi
         cat
     fi
     echo "$mod"
-} | pavs
+} | in-tty pen-pavs

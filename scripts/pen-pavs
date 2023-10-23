@@ -1,11 +1,25 @@
 #!/bin/bash
 export TTY
 
-is_tty() { [ -t 1 ]; }
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-if is_tty; then
-    # vim -
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+is_tty
+istty="$?"
+
+is_stdout_pipe
+ispipe="$?"
+
+set -xv
+
+if test "$istty" = 0 && ! test "$ispipe" = 0; then
     v
+elif test "$istty" = 0 && test "$ispipe" = 0; then
+    exec 2>&1;
+    vipe
 else
     cat
 fi

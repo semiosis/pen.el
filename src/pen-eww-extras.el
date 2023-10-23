@@ -2072,4 +2072,11 @@ the URL of the image to the kill buffer instead."
                      (rename-buffer new-buffer-name)))
     b))
 
+(defun eww-open-url-maybe-file (url &optional use-chrome)
+  (interactive (list (read-string "url:")))
+
+  (if (f-exists-p (umn url))
+      (eww-open-file (umn url))
+    (eww url use-chrome)))
+
 (provide 'pen-eww-extras)

@@ -25,6 +25,7 @@ if is_tty; then
 elif is_tty_stderr; then
     (
     exec <&2
+    exec 1>&2
     eval "$CMD"
     )
 else

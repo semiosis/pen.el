@@ -138,7 +138,8 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "eww" 'follow-eww-link)
 (defun follow-eww-link (pattern)
   "Run eww `pattern'."
-  (pen-sps (concat "eww " (pen-q pattern))))
+  ;; (pen-sps (concat "eww " (pen-q pattern)))
+  (eww-open-url-maybe-file pattern))
 
 (org-add-link-type "ob" 'mullikine/follow-brain-link)
 (org-add-link-type "br" 'mullikine/follow-brain-link)
