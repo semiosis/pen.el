@@ -1,0 +1,97 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# ed -- improved. uses real vim
+
+tf_temp="$(ux tf temp || echo /dev/null)"
+trap "rm \"$tf_temp\" 2>/dev/null" 0
+
+cat > "$tf_temp"
+
+# macro="$1"
+# unbuffer vim -c "e! $tf_temp" -c "$macro" -c w -c "sleep 100m" -c q &>/dev/null
+
+unescapevimspecial() {
+    :
+}
+
+read -r -d '' shell_cmd <<HEREDOC
+unbuffer vim -c 'set noswapfile' \\
+    -c "e! $tf_temp" \\
+$(
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -n) {
+        printf -- "%s\n" "    -c $(aqfd ":norm! $2") \\"
+        shift
+        shift
+    }
+    ;;
+
+    -m) {
+        macro="$2"
+
+        # macro="$(echo -e "$macro")"
+        # It's not escaping \s properly
+        # egr Coordinating conjunction | edm -m "/Verbatim$\<CR>jjV/^\\s*http\<CR>d" | v
+        # printf -- "%s\n" "    -c $(aqfd "exe expand(\"$(abs ":norm $macro")\")") \\" | ds lastvimmacro
+        # printf -- "%s\n" "    -c $(aqfd "exe expand(\":norm $macro\")") \\" | ds lastvimmacro
+
+        # Expand does not expand "\<CR>", it expands things like "<cfile>"
+
+        # printf -- "%s\n" "    -c $(aqfd "exe expand(\"$(abs ":norm $macro")\")") \\" | ds lastvimmacro
+
+        # sed 's/\\\\s/\\s/g' 
+
+        printf -- "%s\n" "    -c $(aqfd "exe \"$(printf -- "%s" ":norm $macro" | sed 's/\\s/\\&/' | esc '"' | sed 's/\\\\</\\</g')\"") \\" | ds lastvimmacro
+        shift
+        shift
+    }
+    ;;
+
+    -m!) {
+        macro="$2"
+        # macro="$(echo -e "$macro")"
+        printf -- "%s\n" "    -c $(aqfd "exe \"$(printf -- "%s" ":norm! $macro" | sed 's/\\s/\\&/' | esc '"' | sed 's/\\\\</\\</g')\"") \\" | ds lastvimmacro
+        shift
+        shift
+    }
+    ;;
+
+    -x) {
+        printf -- "%s\n" "    -c $(aqfd ":$2") \\"
+        shift
+        shift
+    }
+    ;;
+
+    -e) {
+        printf -- "%s\n" "    -c $(aqfd "exe expand($(aqfd ":$2"))") \\"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+for var in "$@"
+do
+    printf -- "%s\n" "    -c $(aqfd "$var") \\"
+done
+)
+    -c wq &>/dev/null
+HEREDOC
+
+shell_cmd="$(printf -- "%s" "$shell_cmd" | esc '`')"
+
+printf -- "%s\n" "$shell_cmd" | ds last-edm &>/dev/null
+
+eval "$shell_cmd"
+
+# exec <`tm-tty` `# see etty`
+# vim -c "e! $tf_temp" -c "$macro" -c w
+
+# vim -c "e! $tf_temp" -c "$macro" -c w -c q
+cat "$tf_temp"
