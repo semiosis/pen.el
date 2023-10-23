@@ -76,8 +76,8 @@ fi
         awk1 | while IFS=$'\n' read -r line; do
         (
             exec 0</dev/null
-            printf -- "%s\n" "$line" | sed 's/: .*//' | udl
-            printf -- "%s\n" "$line" | sed 's/.*: //' | fold -w "$COLS" -s
+            printf -- "%s\n" "$line" | sed 's/\([0-9]\): .*/\1/' | udl
+            printf -- "%s\n" "$line" | sed 's/.*\([0-9]\): //' | fold -w "$COLS" -s
             echo
         )
         done
