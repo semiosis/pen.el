@@ -3,4 +3,6 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# meta-date elinks-dump "https://www.oneplace.com/ministries/insight-for-living/listen/?page=1" | sed -e '0,/By Date/d' | sed -e '/Previous Next/,$d' | ved -m "ddA\\<C-v>\\<C-i>\\<C-c>Jj" | v
+
 "https://www.oneplace.com/ministries/insight-for-living/listen/?page=1"
