@@ -29,6 +29,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -gm) {
+        pattern="$2"
+        macro="$3"
+
+        printf -- "%s\n" "    -c $(aqfd "g/$pattern/exe \"$(printf -- "%s" ":norm $macro" | sed 's/\\s/\\&/' | esc '"' | sed 's/\\\\</\\</g')\"") \\" | ds lastvimmacro
+        shift
+        shift
+        shift
+    }
+    ;;
+
     -m) {
         macro="$2"
 

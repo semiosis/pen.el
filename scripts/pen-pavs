@@ -13,8 +13,7 @@ istty="$?"
 is_stdout_pipe
 ispipe="$?"
 
-set -xv
-
+# This needs engineering - it's not finished
 if test "$istty" = 0 && ! test "$ispipe" = 0; then
     v
 elif test "$istty" = 0 && test "$ispipe" = 0; then

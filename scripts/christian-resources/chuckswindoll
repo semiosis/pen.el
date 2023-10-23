@@ -3,6 +3,18 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-# meta-date elinks-dump "https://www.oneplace.com/ministries/insight-for-living/listen/?page=1" | sed -e '0,/By Date/d' | sed -e '/Previous Next/,$d' | ved -m "ddA\\<C-v>\\<C-i>\\<C-c>Jj" | v
+getpage() {
+    page="$1"
+    : "${page:="1"}"
+    # meta-date elinks-dump ...
+    elinks-dump "https://www.oneplace.com/ministries/insight-for-living/listen/?page=$page" | sed -e '0,/By Date/d' -e '/Previous Next/,$d' -e '/play-butto/d' | ved -gm IMG "ddA\\<C-v>\\<C-i>\\<C-c>Jj"
+}
 
-"https://www.oneplace.com/ministries/insight-for-living/listen/?page=1"
+eval "$(meta-date)"
+for i in $(seq 1 20); do
+    getpage "$i" | awk 1
+done | pavs
+
+# 
+
+# "https://www.oneplace.com/ministries/insight-for-living/listen/?page=1"

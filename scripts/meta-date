@@ -22,4 +22,15 @@ test -n "$date" || exit 1
 EXTRA_METADATA="${EXTRA_METADATA}_${date}"
 
 export EXTRA_METADATA
-"$@"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if test "$#" -gt 1; then
+    "$@"
+elif is_tty; then
+    zcd .
+else
+    # Useful for sourcing
+    # eval "$(meta-date)"
+    cmd-nice export EXTRA_METADATA="\${EXTRA_METADATA}$EXTRA_METADATA"
+fi
