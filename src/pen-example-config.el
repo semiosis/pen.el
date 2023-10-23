@@ -1334,12 +1334,12 @@
 
 (defun insert-program ()
   (interactive)
-  (insert (tpop "slmenu | cat" nil
-                :width_pc "50%"
-                :height_pc "50%"
-                :x_pos "M+1"
-                :y_pos "M+1"
-                :output_b t)))
+  (insert (chomp (tpop "slmenu | cat" nil
+                       :width_pc "50%"
+                       :height_pc "50%"
+                       :x_pos "M+1"
+                       :y_pos "M+1"
+                       :output_b t))))
 (define-key global-map (kbd "M-0") 'insert-program)
 
 (define-key global-map (kbd "C-x C-f") 'pen-find-file)

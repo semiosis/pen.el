@@ -3,4 +3,4 @@ export TTY
 
 cat $PENCONF/documents/notes/ws/lists/peniel/promises.org | awk1 | while read line; do
     odn scope.sh "$line" | awk 1
-done | scrape-bible-references -v | bible-show-verses | pavs
+done | scrape-bible-references -v | bible-show-verses "$@" | pavs
