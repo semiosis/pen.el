@@ -1332,6 +1332,14 @@
         (call-interactively 'find-file-at-point)
       (call-interactively 'find-file))))
 
+(defun insert-program ()
+  (interactive)
+  (insert (tpop "slmenu | cat" nil
+                :x_pos "M+1"
+                :y_pos "M+1"
+                :output_b t)))
+(define-key global-map (kbd "M-0") 'insert-program)
+
 (define-key global-map (kbd "C-x C-f") 'pen-find-file)
 
 (require 'pen-post-bindings)

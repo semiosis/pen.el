@@ -576,6 +576,7 @@ bindkey "\ek" copy-last-command-with-wd
         LBUFFER="${LBUFFER}${text_to_add}"
     }
 
+    # M-0
     autoload -z zsh-insert-program
     zle -N zsh-insert-program
     bindkey "\e0" zsh-insert-program

@@ -175,7 +175,7 @@
                      (eval `(,(intern (concat "engine/search-google-lucky")) (concat (construct-google-query lang 'lang) (concat "+" (pen-q symstring)))))
                      (message "%s" (concat "no doc handler for " lang ". searching google"))))))))))
 
-(define-key global-map (kbd "M-0") #'pen-doc-thing-at-point-list)
+;; (define-key global-map (kbd "M-0") #'pen-doc-thing-at-point-list)
 
 (defun pen-doc-thing-at-point-immediate ()
   (interactive)
