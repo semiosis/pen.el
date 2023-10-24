@@ -5,6 +5,9 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+# Automatically cache
+if ! test "$CI_CACHED" = "y"; then cif "$sn" "$@"; exit "$?"; fi
+
 ref="$@"
 
 if ! inside-docker-p; then

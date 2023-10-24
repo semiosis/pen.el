@@ -1,3 +1,5 @@
+;; using dogears now, because gumshoe doesnt work with emacs29
+
 ;; melpa
 (require 'gumshoe)
 

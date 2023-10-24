@@ -1,8 +1,25 @@
 (require 'jump-tree)
 ;; comes from straight
-(require 'gumshoe)
+;; (require 'gumshoe)
 
 (global-jump-tree-mode 1)
+
+;; Install and load `quelpa-use-package'.
+(package-install 'quelpa-use-package)
+(require 'quelpa-use-package)
+
+(use-package dogears
+
+  ;; These bindings are optional, of course:
+  :bind (:map global-map
+              ("M-g d" . dogears-go)
+              ("M-g M-b" . dogears-back)
+              ("M-g M-f" . dogears-forward)
+              ("M-g M-d" . dogears-list)
+              ("M-g M-D" . dogears-sidebar)))
+
+;; minor mode
+(dogears-mode 1)
 
 (advice-add 'jump-tree-visualize-jump-next :around #'ignore-errors-around-advice)
 
@@ -11,7 +28,8 @@
   (cond
    ((>= (prefix-numeric-value current-prefix-arg) 4) (call-interactively 'dogears-list))
    ;; (t (call-interactively 'consult-gumshoe))
-   (t (call-interactively 'gumshoe-peruse-in-buffer))))
+   ;; (t (call-interactively 'gumshoe-peruse-in-buffer))
+   (t (call-interactively 'dogears-back))))
 (advice-add 'jump-tree-visualize-jump-prev :around #'ignore-errors-around-advice)
 
 (define-key pen-map (kbd "C-o") #'pen-holy-jump)

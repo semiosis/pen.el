@@ -1709,3 +1709,5 @@ make install
 cd /volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer
 cp -a Complete.db ~/.pen/gematria-interlinear.db
 )
+
+e ia helm-dogears dogears

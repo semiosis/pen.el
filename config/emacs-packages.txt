@@ -2272,3 +2272,5 @@ ess-view-data
 ess-view
 ess-smart-underscore
 ess-r-insert-obj
+helm-dogears
+dogears
