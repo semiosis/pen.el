@@ -170,7 +170,11 @@ test -d "/root/.vim/host" && : "${VIMCONFIG:="/root/.vim/host"}"
 test -d "/root/.vim" && : "${VIMCONFIG:="/root/.vim"}"
 export VIMCONFIG
 
-export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
+unset YAMLMOD_PATH
+test -d "$EMACSD/emacs-yamlmod" && : "${YAMLMOD_PATH:="$EMACSD/emacs-yamlmod"}"
+test -d "$EMACSD_BUILTIN/emacs-yamlmod" && : "${YAMLMOD_PATH:="$EMACSD_BUILTIN/emacs-yamlmod"}"
+export YAMLMOD_PATH
+
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 export PATH=$PATH:$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container
 export PATH="$PATH:/root/go/bin"

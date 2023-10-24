@@ -55,8 +55,24 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-export EMACSD=/root/.emacs.d
-export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
+unset EMACSD_BUILTIN
+test -d "/root/.emacs.d" && : "${EMACSD_BUILTIN:="/root/.emacs.d"}"
+export EMACSD_BUILTIN
+
+unset EMACSD
+test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
+test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
+export EMACSD
+
+unset VIMCONFIG
+test -d "/root/.vim/host" && : "${VIMCONFIG:="/root/.vim/host"}"
+test -d "/root/.vim" && : "${VIMCONFIG:="/root/.vim"}"
+export VIMCONFIG
+
+unset YAMLMOD_PATH
+test -d "$EMACSD/emacs-yamlmod" && : "${YAMLMOD_PATH:="$EMACSD/emacs-yamlmod"}"
+test -d "$EMACSD_BUILTIN/emacs-yamlmod" && : "${YAMLMOD_PATH:="$EMACSD_BUILTIN/emacs-yamlmod"}"
+export YAMLMOD_PATH
 
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts::$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container
 

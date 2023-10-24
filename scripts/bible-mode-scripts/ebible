@@ -13,10 +13,12 @@ sn="$(basename -- "$0")"
 
 # set -a # export the functions and variables
 
-if test "$EMACS_BABEL" = "y"; then
-    set -- -nbd "$@"
-else
-    set -- -bd "$@"
+if ! test -n "$BORDER"; then
+    if test "$EMACS_BABEL" = "y"; then
+        set -- -nbd "$@"
+    else
+        set -- -bd "$@"
+    fi
 fi
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
