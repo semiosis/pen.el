@@ -20,7 +20,7 @@ extends posixsh
 # Shebang. Executing bash via /usr/bin/env makes scripts more portable.
 snippet ac
 	# Automatically cache
-	if ! test "$CI_CACHED" = "y"; then sn="$(basename -- "$0")"; cif "$sn" "$@"; exit "$?"; fi
+	if ! test "\$CI_CACHED" = "y"; then sn="\$(basename -- "\$0")"; cif "\$sn" "\$@"; exit "\$?"; fi
 snippet u
 	sudo${0} 
 snippet goc "getopts colour"

@@ -39,7 +39,7 @@ if ! inside-docker-p && docker-running-p; then
     if test "$istty" = 0 && { ! test "$isstdoutpipe" = 0; }; then
         in-pen in-tm "$sn" "$@"
     else
-        ocif in-pen "$sn" "$@"
+        ocif -nd in-pen "$sn" "$@"
     fi
 
     exit "$?"
@@ -51,7 +51,7 @@ if test "$FAST" = "y"; then
     fi
     : "${module:="NASB"}"
 else
-    module="$(0</dev/null ocif canonicalise-bible-module "$sn")"
+    module="$(0</dev/null ocif -nd canonicalise-bible-module "$sn")"
     : "${module:="NASB"}"
 fi
 
@@ -240,7 +240,7 @@ else
     assignments="$(printf -- "%s\n" "$pipeline" | getvars -eval-pp)"
     assignments="$(eval "$assignments" | s join " ")"
     export -f doublespacemax
-    output="$(ocif bash -c "$assignments $pipeline")"
+    output="$(ocif -nd bash -c "$assignments $pipeline")"
     slug="$(printf -- "%s\n" "$output" | head -n 1 | slugify)"
     printf -- "%s\n" "$output" | pa -E "tf -sha -X $slug txt | xa colvs -nls -num"
     # printf -- "%s\n" "$output" | pavs

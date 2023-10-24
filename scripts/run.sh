@@ -117,6 +117,12 @@ if test -f $HOME/.emacs.d/host/pen.el/config/nvimrc; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/nvimrc ~/.vimrc
 fi
 
+if test -d /root/.emacs.d/host/pen.el/config/vim-bundles; then
+    rm -rf ~/.vim/bundle
+    mkdir -p ~/.vim/bundle
+    ln -sf /root/.emacs.d/host/pen.el/config/vim-bundles/* ~/.vim/bundle
+fi
+
 if test -f $HOME/.emacs.d/host/pen.el/config/tmux.conf; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/tmux.conf ~/.tmux.conf
 fi
