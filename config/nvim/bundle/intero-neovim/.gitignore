@@ -1,0 +1,10 @@
+doc/tags
+vimproc
+tinytest
+verbose.log
+stdout.log
+*.pyc
+*.egg*
+.cache
+vader.vim
+test/vader.log

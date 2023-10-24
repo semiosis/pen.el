@@ -1712,6 +1712,7 @@ when s is a string, set the clipboard to s"
             (user-emacs-directory "$EMACSD")
             (pen-prompts-directory "$PEN_PROMPTS_DIR")
             (pen-engines-directory "$PEN_ENGINES_DIR")
+            ((getenv "PENELD") "$PENELD")
             (penconfdir "$PEN")
                                         ; ((f-join user-emacs-directory "pen.el") "$PENEL_DIR")
             ((f-join user-emacs-directory "pen.el") "$PENEL")
@@ -1730,6 +1731,7 @@ when s is a string, set the clipboard to s"
             ;; This is dodgy because there are other vars that are prefixed with $PEN_
             ("$PENEL_DIR" (f-join user-emacs-directory "pen.el"))
             ("$PENCONF" penconfdir)
+            ("$PENELD" (getenv "PENELD"))
             ("$PEN" penconfdir)
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
             ("$SCRIPTS" (f-join user-emacs-directory "pen.el/scripts"))

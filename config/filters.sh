@@ -528,3 +528,4 @@ canonicalise-bible-book-title
 cif -nd bible-show-verses
 cif -nd bible-show-verses -pp
 hebrew-letters-explain
+cat -A
