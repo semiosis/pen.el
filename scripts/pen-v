@@ -184,6 +184,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -num) {
+        extra_commands+="|silent! call ToggleOpt(\"number\")"
+        shift
+    }
+    ;;
+
     -wrap) {
         extra_commands+="|silent! call ToggleOpt(\"wrap\") | silent! call ToggleOpt(\"number\")"
         shift

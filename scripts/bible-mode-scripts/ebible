@@ -234,6 +234,6 @@ else
     assignments="$(eval "$assignments" | s join " ")"
     export -f doublespacemax
     output="$(ocif bash -c "$assignments $pipeline")"
-    printf -- "%s\n" "$output" | pa -E "colvs -nls"
+    printf -- "%s\n" "$output" | pa -E "tf -sha txt | xa colvs -nls -num"
     # printf -- "%s\n" "$output" | pavs
 fi
