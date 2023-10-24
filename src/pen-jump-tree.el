@@ -9,6 +9,7 @@
 (require 'quelpa-use-package)
 
 (use-package dogears
+  :ensure t
 
   ;; These bindings are optional, of course:
   :bind (:map global-map
