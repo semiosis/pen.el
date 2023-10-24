@@ -12,7 +12,9 @@
 (defun praise ()
   ;; e:$HOME/.emacs.d/host/pen.el/scripts/praise
   (interactive)
-  (let* ((contents_s (pen-snc "ocif praise-list-songs"))
+  (let* ((contents_fp (pen-snc "ocif -otf praise-list-songs"))
+         ;; (contents_s (pen-snc "ocif praise-list-songs"))
+         (contents_s (cat contents_fp))
          (urls_s (awk1 (xurls contents_s)))
          (urls (str2lines urls_s))
          (ocs_s (pen-snc "ci -nd -f oc" urls_s))
