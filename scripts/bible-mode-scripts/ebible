@@ -5,6 +5,8 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+# set -a # export the functions and variables
+
 if test "$EMACS_BABEL" = "y"; then
     set -- -nbd "$@"
 else
@@ -36,7 +38,7 @@ if test "$FAST" = "y"; then
     fi
     : "${module:="NASB"}"
 else
-    module="$(0</dev/null canonicalise-bible-module "$sn")"
+    module="$(0</dev/null ocif canonicalise-bible-module "$sn")"
     : "${module:="NASB"}"
 fi
 
@@ -159,7 +161,7 @@ ref="$CMD"
 : "${ref:="Genesis 1"}"
 
 if ! test "$FAST" = "y"; then
-    ref="$(echo "$ref" | canonicalise-bible-ref)"
+    ref="$(echo "$ref" | cif canonicalise-bible-ref)"
 fi
 
 : "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/(.*)/s/.*(\([^)]\+\)).*/\1/p')"}"
@@ -179,13 +181,7 @@ if test "$CONCORDANCE" = "all"; then
     strongs_cmd="strongs-get-word -f"
 fi
 
-if is_tty && ! test "$NOEMACS" = y; then
-    if test "$1"; then
-        sp -cip bible-open =nil =nil "$module" "$ref"
-    else
-        sp -cip bible-open =nil =nil "$module"
-    fi
-else
+IFS= read -r -d '' pipeline <<'HEREDOC'
     {
     if test "$FAST" = "y"; then
         echo "$ref" | udl
@@ -215,6 +211,22 @@ else
         else
             cat
         fi
-    } | pa -E "colvs -nls"
+    }
     # | pen-s remove-trailing-whitespace | pen-s join ' ' | sed 's/[0-9]: /&\n/g' | sed '/^$/d' | awk 'NR%2==0' | pavs
+HEREDOC
+
+# TODO Cache this pipeline
+# I can also cache pipelines with the new pipe utility pipexec (for certain cases, anyway)
+if is_tty && ! test "$NOEMACS" = y; then
+    if test "$1"; then
+        sp -cip bible-open =nil =nil "$module" "$ref"
+    else
+        sp -cip bible-open =nil =nil "$module"
+    fi
+else
+    assignments="$(printf -- "%s\n" "$pipeline" | getvars -eval-pp)"
+    assignments="$(eval "$assignments" | s join " ")"
+    export -f doublespacemax
+    output="$(ocif bash -c "$assignments $pipeline")"
+    printf -- "%s\n" "$output" | pa -E "colvs -nls"
 fi

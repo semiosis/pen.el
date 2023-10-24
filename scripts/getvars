@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -eval-pp) {
+        eval_pp=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# Scrape the var names from a bash input
+scrape "\$\\{?[a-zA-Z_]+" | sed -e 's/^\$//' -e 's/{//' | uniqnosort | {
+    if test "$eval_pp" = "y"; then
+        sed 's/.*/printf -- "%s\\\\n" \"&=\\"$&\\";\";/'
+    else
+        cat
+    fi
+}

@@ -1,10 +1,19 @@
 #!/bin/bash
 
 stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
 }
 
-if stdin_exists; then
+stdin_exists
+hasstdin="$?"
+
+if test "$hasstdin" = 0; then
     export USING_STDIN=y
 
     tf_thing="$(0</dev/null pen-tf thing || echo /dev/null)"
@@ -94,6 +103,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -otf) {
+        output_tf=y
+        shift
+    }
+    ;;
+
     --enabled=) {
         PEN_CACHE="$2"
         shift
@@ -103,6 +118,21 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+# output cat
+o_cat() {
+    if test "$output_tf" = "y"; then
+        :
+    else
+        command cat "$@"
+    fi
+}
+
+# output tee
+o_tee() {
+    command tee "$@"
+}
+
 
 getpwd() {
     test "$IGNORE_DIR" = "y" || pwd
@@ -141,7 +171,7 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
     if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && test "$(age "$cache_file_path")" -lt "$RETRY_TIMEOUT"; then
         exit 0
     elif test -f "$cache_file_path" && test -s "$cache_file_path" && ! test "$UPDATE" = y; then
-        cat "$cache_file_path"
+        o_cat "$cache_file_path"
     else
         rm -f "$cache_file_path"
         if test "$asynchronous" = "y"; then

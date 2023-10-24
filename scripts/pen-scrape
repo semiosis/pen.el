@@ -41,9 +41,11 @@ if test "$#" -eq 2; then
 fi
 
 {
+    pat="$1"
+    pat="$(printf -- "%s" "$pat" | bs "\$")"
 if test "$#" -eq "1"; then
     # grep -Po "$1"
-    scrape-words-from-string.pl -r "$1"
+    scrape-words-from-string.pl -r "$pat"
 else
     # grep -Po "$1"
     scrape-words-from-string.pl
