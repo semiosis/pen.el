@@ -5,7 +5,9 @@ export TTY
 : "${TMPDIR:="/tmp"}"
 
 export PENCONF="$HOME/.pen"
-export PENELD="$EMACSD/pen.el"
+test -d "$EMACSD/host/pen.el" && : "${PENELD:="$EMACSD/host/pen.el"}"
+test -d "$EMACSD/pen.el" && : "${PENELD:="$EMACSD/pen.el"}"
+export PENELD
 
 # See also: 'F' find commands
 

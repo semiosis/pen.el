@@ -5,10 +5,15 @@ export NOTES="/root/notes"
 export EMACSD="/root/.emacs.d"
 export GOPATH="$HOME/go"
 export GOBIN="$HOME/go/bin"
-export TMPDIR="/tmp"
+unset TMPDIR
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+export TMPDIR
 export PENCONF="$HOME/.pen"
 export GLOSSARIES="$PENCONF/glossaries"
-export PENELD="$EMACSD/pen.el"
+test -d "$EMACSD/host/pen.el" && : "${PENELD:="$EMACSD/host/pen.el"}"
+test -d "$EMACSD/pen.el" && : "${PENELD:="$EMACSD/pen.el"}"
+export PENELD
 export PEN_SCRIPTS="$PENELD/scripts"
 export PROMPTSD="$EMACSD/prompts"
 export BROWSER="eww -x"
