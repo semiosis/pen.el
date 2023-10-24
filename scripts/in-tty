@@ -24,13 +24,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if is_tty; then
+    # echo is tty 1>&2
     eval "$CMD"
-elif is_tty_stderr; then
-    (
-    exec <&2
-    exec 1>&2
-    eval "$CMD"
-    )
+# elif is_tty_stderr; then
+#     echo is tty stderr 1>&2
+#     (
+#     exec <&2
+#     exec 1>&2
+#     eval "$CMD"
+#     )
 else
+    # echo tpop 1>&2
     tpop -E "$CMD"
 fi
