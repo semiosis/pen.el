@@ -34,10 +34,12 @@ if { ! test "$istty" = 0; } && { ! test "$isstdoutpipe" = 0; }; then
 fi
 
 if ! inside-docker-p && docker-running-p; then
-    if test "$istty" = 0; then
-        cmd in-pen in-tm "$sn" "$@"
+    # Testing against the output pipe is necessary
+    # Or this on host would not work: Romans 3:21-26 | cat
+    if test "$istty" = 0 && { ! test "$isstdoutpipe" = 0; }; then
+        in-pen in-tm "$sn" "$@"
     else
-        cmd in-pen "$sn" "$@"
+        in-pen "$sn" "$@"
     fi
 
     exit "$?"

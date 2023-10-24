@@ -301,11 +301,11 @@ $HOME/.config/lab/lab.toml
 $NOTES/ws/english/my-words.txt
 $MYGIT/eggheads/eggdrop/eggdrop.conf
 $NOTES/programs/ns/_.txt
-/root/.emacs.d/host/pen.el/config/google-cache-url-patterns.txt
-/root/.emacs.d/host/pen.el/config/chrome-dom-url-patterns.txt
-/root/.emacs.d/host/pen.el/config/reader-url-patterns.txt
-/root/.emacs.d/host/pen.el/config/ff-url-patterns.txt
-/root/.emacs.d/host/pen.el/config/blocked-patterns.txt
+$PENELD/config/google-cache-url-patterns.txt
+$PENELD/config/chrome-dom-url-patterns.txt
+$PENELD/config/reader-url-patterns.txt
+$PENELD/config/ff-url-patterns.txt
+$PENELD/config/blocked-patterns.txt
 $NOTES/ws/services/fuzzy.txt
 $NOTES/ws/utils/fuzzy.txt
 $HOME/.pen/openai_api_key
@@ -337,4 +337,4 @@ $HOME/.config/cli-chess/custom_style.py
 $HOME/.config/cli-chess/config.ini
 $HOME/.config/litecli/config
 $HOME/.config/irust/config.toml
-$EMACSD/host/pen.el/config/vim-bundles/vim-snippets/snippets/sh.snippets
+$EMACSD/pen.el/config/vim-bundles/vim-snippets/snippets/sh.snippets

@@ -17,6 +17,10 @@ test -d "/root/.vim/host" && : "${VIMCONFIG:="/root/.vim/host"}"
 test -d "/root/.vim" && : "${VIMCONFIG:="/root/.vim"}"
 export VIMCONFIG
 
+unset VIMSNIPPETS
+test -d "$EMACSD/pen.el/config/vim-bundles/vim-snippets/snippets" && : "${VIMSNIPPETS:="$EMACSD/pen.el/config/vim-bundles/vim-snippets/snippets"}"
+export VIMSNIPPETS
+
 export GOPATH="$HOME/go"
 export GOBIN="$HOME/go/bin"
 unset TMPDIR

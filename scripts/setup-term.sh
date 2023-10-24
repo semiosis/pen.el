@@ -42,6 +42,10 @@ test -d "/root/.vim/host" && : "${VIMCONFIG:="/root/.vim/host"}"
 test -d "/root/.vim" && : "${VIMCONFIG:="/root/.vim"}"
 export VIMCONFIG
 
+unset VIMSNIPPETS
+test -d "$EMACSD/pen.el/config/vim-bundles/vim-snippets/snippets" && : "${VIMSNIPPETS:="$EMACSD/pen.el/config/vim-bundles/vim-snippets/snippets"}"
+export VIMSNIPPETS
+
 unset YAMLMOD_PATH
 test -d "$EMACSD/emacs-yamlmod" && : "${YAMLMOD_PATH:="$EMACSD/emacs-yamlmod"}"
 test -d "$EMACSD_BUILTIN/emacs-yamlmod" && : "${YAMLMOD_PATH:="$EMACSD_BUILTIN/emacs-yamlmod"}"
