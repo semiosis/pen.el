@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+
 export PENCONF="$HOME/.pen"
 export PENELD="$EMACSD/pen.el"
 
@@ -150,7 +153,7 @@ case "$opt" in
         # annotation="$1"
         # shift
 
-        p "$@" >> /tmp/cmd.sh
+        p "$@" >> $TMPDIR/cmd.sh
 
         # his -c 1 '.*'
 

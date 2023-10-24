@@ -1,10 +1,13 @@
 #!/bin/bash
 export TTY
 
-if test -f /tmp/stdincap; then
-    in="$(cat /tmp/stdincap)"
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+
+if test -f $TMPDIR/stdincap; then
+    in="$(cat $TMPDIR/stdincap)"
     exec < <(printf -- "%s" "$in")
-    rm -f /tmp/stdincap
+    rm -f $TMPDIR/stdincap
 fi
 
 "$@"

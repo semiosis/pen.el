@@ -1,5 +1,8 @@
 #!/bin/bash
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 if test "$DEBUG_MODE" = "y"; then
@@ -659,8 +662,8 @@ case "$f" in
     ac|asciinema) {
         # I want to set up an tmux in xterm with the same dimensions as the current screen
 
-        rm -f /tmp/asciinema-x-session.txt
-        rm -f /tmp/asciinema-user-session.txt
+        rm -f $TMPDIR/asciinema-x-session.txt
+        rm -f $TMPDIR/asciinema-user-session.txt
 
         swidth="$(tmux display -t "$CALLER_TARGET" -p "#{client_width}")"
         sheight="$(tmux display -t "$CALLER_TARGET" -p "#{client_height}")"
@@ -678,13 +681,13 @@ case "$f" in
         # Ahh, there was a double "-e »".
 
         # Also, the sleep before asciinema rec is required
-        cmd="unset TTY; pen-x -s.2 -s \"asciinema rec\" -c m -e \"»\" -e \"»\" -s \"tty > /tmp/asciinema-client.txt\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
+        cmd="unset TTY; pen-x -s.2 -s \"asciinema rec\" -c m -e \"»\" -e \"»\" -s \"tty > $TMPDIR/asciinema-client.txt\" -c m -e \"»\" -s \"TMUX= tmux attach -t $(cmd-nice-posix \"$CALLER_TARGET\":)\" -c m -i"
         cmd2="TMUX= tmux attach -t \"$CALLER_TARGET\""
 
-        echo "cinema-$caller_slug" > /tmp/asciinema-x-session.txt
+        echo "cinema-$caller_slug" > $TMPDIR/asciinema-x-session.txt
         tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-$caller_slug" \; resize-window -t "cinema-$caller_slug:" -x "$swidth" -y "$sheight" \; respawnp -k -t "cinema-$caller_slug:1" "$cmd"
         # Therefore I need to attache a new session, which attaches the same session
-        echo "cinema-$caller_slug-user" > /tmp/asciinema-user-session.txt
+        echo "cinema-$caller_slug-user" > $TMPDIR/asciinema-user-session.txt
         tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "cinema-${caller_slug}-user" \; resize-window -t "cinema-${caller_slug}-user:" -x "$swidth" -y "$sheight" \; respawnp -k -t "cinema-${caller_slug}-user:1" "$cmd2"
 
         # Somehow I must detach CALLER_TARGET from asciinema and regain control.
@@ -884,7 +887,7 @@ case "$f" in
             tmux swap-pane -s "$new_pane" -t "$CALLER_PANE"
             tmux rename-window -t "$CALLER_PANE" "$new_pane"
 
-            tmux respawn-pane -k -t "$new_pane" "$CMD; tmux swap-pane -s $(cmd-nice-posix "$new_pane") -t $(cmd-nice-posix "$CALLER_PANE")" > /tmp/utehont.txt
+            tmux respawn-pane -k -t "$new_pane" "$CMD; tmux swap-pane -s $(cmd-nice-posix "$new_pane") -t $(cmd-nice-posix "$CALLER_PANE")" > $TMPDIR/utehont.txt
 
             if test "$RESERVE" = "y"; then
                 tmux select-window -t "$CALLER_PANE"
@@ -1478,7 +1481,7 @@ case "$f" in
                 echo
             } | sps v
             # unbuffer sps cmd-nice tm-wrlsend --in "$in" -t "$CALLER_PANE"
-            # tm-wrlsend --in /tmp/stdin -t "%612"
+            # tm-wrlsend --in $TMPDIR/stdin -t "%612"
         fi
     }
     ;;
@@ -1879,7 +1882,7 @@ case "$f" in
 
                 dir="$(tpwd -t "$TARGET")"
                 dir="$(eval echo -e "$dir")"
-                printf -- "%s\n" "$dir" > /tmp/tm.txt
+                printf -- "%s\n" "$dir" > $TMPDIR/tm.txt
                 pen-tm n "$dir"
                 export CWD
 
@@ -3107,7 +3110,7 @@ case "$f" in
             *) break;
         esac; done
 
-        ff=/tmp/$$.data; trap "rm -f $ff" EXIT; mknod $ff p
+        ff=$TMPDIR/$$.data; trap "rm -f $ff" EXIT; mknod $ff p
 
         target="$1"
 

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+
 # pen-nsfa - new script from args
 
 # This will return the path to a new script in
@@ -52,7 +55,7 @@ fi
 
 slug="$(echo "$CMD--$CWD" | tr -d '\n' | slugify | cut -c -40)"
 
-tf_new_script="/tmp/nsfa-$slug.sh"
+tf_new_script="$TMPDIR/nsfa-$slug.sh"
 rm -f "$tf_new_script"
 
 # stty stop and undef are used to prevent C-s from hanging the program.

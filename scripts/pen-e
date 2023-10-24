@@ -1,5 +1,9 @@
 #!/bin/bash
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+export TMPDIR
+
 export EMACSD=/root/.emacs.d
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 
@@ -344,7 +348,7 @@ esac; done
 
 eclog() {
 
-    pen-pl "$1: $2" >> /tmp/ec.txt
+    pen-pl "$1: $2" >> $TMPDIR/ec.txt
     return 0
 }
 
@@ -1029,7 +1033,7 @@ case "$f" in
 
         pkg_name=$1
 
-        elisp_script_name=$(mktemp /tmp/emacs-pkg-install-el.XXXXXX)
+        elisp_script_name=$(mktemp $TMPDIR/emacs-pkg-install-el.XXXXXX)
         elisp_code="
 ;; Install package from command line. Example:
 ;;

@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+
 unset CWD
 
 shopt -s extglob
@@ -510,17 +513,17 @@ case "$fnspec" in
         rm /usr/local/lib/python3.6/dist-packages/shanepy*
         rm /usr/local/lib/python3.7/dist-packages/shanepy*
         rm /usr/local/lib/python3.8/dist-packages/shanepy*
-        python setup.py build -b /tmp/shanepy install --record /tmp/files.txt
-        python3.5 setup.py build -b /tmp/shanepy install --record /tmp/files.txt
-        python3.6 setup.py build -b /tmp/shanepy install --record /tmp/files.txt
-        python3.7 setup.py build -b /tmp/shanepy install --record /tmp/files.txt
-        # python3.7 setup.py build -b /tmp/shanepy_user install --record /tmp/files_user.txt
-        python3.8 setup.py build -b /tmp/shanepy install --record /tmp/files.txt
+        python setup.py build -b $TMPDIR/shanepy install --record $TMPDIR/files.txt
+        python3.5 setup.py build -b $TMPDIR/shanepy install --record $TMPDIR/files.txt
+        python3.6 setup.py build -b $TMPDIR/shanepy install --record $TMPDIR/files.txt
+        python3.7 setup.py build -b $TMPDIR/shanepy install --record $TMPDIR/files.txt
+        # python3.7 setup.py build -b $TMPDIR/shanepy_user install --record $TMPDIR/files_user.txt
+        python3.8 setup.py build -b $TMPDIR/shanepy install --record $TMPDIR/files.txt
 
         . ~/sh-source/conda-init
-        chown shane:shane /tmp/files.txt
-        chown shane:shane /tmp/files_user.txt
-        python setup.py build -b /tmp/shanepy install --record /tmp/files.txt
+        chown shane:shane $TMPDIR/files.txt
+        chown shane:shane $TMPDIR/files_user.txt
+        python setup.py build -b $TMPDIR/shanepy install --record $TMPDIR/files.txt
 
         cd $MYGIT/mullikine/shanepy
         make clean
@@ -1316,9 +1319,9 @@ case "$fnspec" in
         else
             cd "$dn"
             wd="$(printf -- "%s" "$(pwd)" | slugify)"
-            rm -f "/tmp/$wd-files.txt"
-            touch "/tmp/$wd-files.txt"
-            chmod 777 "/tmp/$wd-files.txt"
+            rm -f "$TMPDIR/$wd-files.txt"
+            touch "$TMPDIR/$wd-files.txt"
+            chmod 777 "$TMPDIR/$wd-files.txt"
 
             # set -xv
             if grep -q "extras_require={" "$fn" && pen-yn "Install extras?"; then
@@ -1336,8 +1339,8 @@ case "$fnspec" in
                 fi
             fi
 
-            # py e setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
-            mpen-python setup.py build -b "/tmp/$wd" install --record "/tmp/$wd-files.txt"
+            # py e setup.py build -b "$TMPDIR/$wd" install --record "$TMPDIR/$wd-files.txt"
+            mpen-python setup.py build -b "$TMPDIR/$wd" install --record "$TMPDIR/$wd-files.txt"
         fi
         exit 0
     }

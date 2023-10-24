@@ -1,5 +1,8 @@
 #!/bin/bash
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 sn="$(basename "$0")"
@@ -58,7 +61,7 @@ test "$#" -gt 0 && last_arg="${@: -1}"
 last_arg="$(p "$last_arg" | pen-str unonelineify-safe)"
 # last_arg="$(p "$last_arg" | pen-bs '\\')"
 
-# echo "$last_arg" > /tmp/yo.txt
+# echo "$last_arg" > $TMPDIR/yo.txt
 
 shopt -s nullglob
 if test "$USE_POOL" = "y"; then
@@ -69,7 +72,7 @@ if test "$USE_POOL" = "y"; then
     mkdir -p ~/.pen/pool/available
     for socket_fp in ~/.pen/pool/available/pen-emacsd-*; do
         SOCKET="$(basename "$socket_fp")"
-        echo "$SOCKET" >> /tmp/d.txt
+        echo "$SOCKET" >> $TMPDIR/d.txt
         break
     done
 
@@ -82,11 +85,11 @@ fi
 # prompt_id="$(cmd "$@" | sha1sum | awk '{print $1}')"
 
 # Add the date so never any collisions
-# fp="/tmp/eval-output-${SOCKET}-$prompt_id.txt"
-# fp="/tmp/eval-output-${SOCKET}-$prompt_id.txt"
+# fp="$TMPDIR/eval-output-${SOCKET}-$prompt_id.txt"
+# fp="$TMPDIR/eval-output-${SOCKET}-$prompt_id.txt"
 
 # This is not the place to memoise with prompt sha
-fp="/tmp/eval-output-${SOCKET}-$(uuid || :).txt"
+fp="$TMPDIR/eval-output-${SOCKET}-$(uuid || :).txt"
 if ! test -s "$fp"; then
     rm -f "$fp"
 fi

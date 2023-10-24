@@ -1,5 +1,8 @@
 #!/bin/bash
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+
 # env | tv &>/dev/null
 
 export OPENAI_API_KEY
@@ -328,7 +331,7 @@ if test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "y" || { test "$GLOBAL_SYNTAX_HIGHLIGHTI
 fi
 
 if test "$NOAUTOCHDIR" = "y" || stdin_exists; then
-    echo "$extra_commands" | tee -a /tmp/extra.txt &>/dev/null
+    echo "$extra_commands" | tee -a $TMPDIR/extra.txt &>/dev/null
     # Put it at the start because there might be Commands at the beginning. Otherwise, rtcmd will break
     # extra_commands+="|set noautochdir"
     extra_commands="set noautochdir|$extra_commands"

@@ -1,6 +1,10 @@
 #!/bin/bash
 export TTY
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+export TMPDIR
+
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 sn="$(basename -- "$0")"

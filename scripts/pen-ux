@@ -1,5 +1,9 @@
 #!/bin/bash
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+export TMPDIR
+
 # ( echo "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null >> /tmp/pen-ux.log ) &>/dev/null
 
 # must be bash and not zsh

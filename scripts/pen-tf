@@ -1,5 +1,9 @@
 #!/bin/bash
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+export TMPDIR
+
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
@@ -50,7 +54,7 @@ if stdin_exists; then
     if test "$use_sha_fn" = "y"; then
         # idempotent fn
         fp_sha="$(0</dev/null cat "$fp" | sha)"
-        fp_sha="/tmp/tf_${name}_${fp_sha}${extraslug}.${ext}"
+        fp_sha="$TMPDIR/tf_${name}_${fp_sha}${extraslug}.${ext}"
         mv "$fp" "$fp_sha"
         fp="$fp_sha"
     else

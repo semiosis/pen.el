@@ -1,6 +1,10 @@
 #!/bin/bash
 export TTY
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+export TMPDIR
+
 # This script is sourced
 
 {

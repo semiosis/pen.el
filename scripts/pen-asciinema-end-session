@@ -1,12 +1,15 @@
 #!/bin/bash
 export TTY
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+
 # From tmux, press `F1 M-x` to end the asciinema session
 
 pen-detach-asciinema-tmux-sessions
 
-x_session="$(cat /tmp/asciinema-x-session.txt)"
-user_session="$(cat /tmp/asciinema-user-session.txt)"
+x_session="$(cat $TMPDIR/asciinema-x-session.txt)"
+user_session="$(cat $TMPDIR/asciinema-user-session.txt)"
 
 CALLER_TARGET="$(tmux display -p "#{session_name}")"
 
@@ -16,13 +19,13 @@ if test -n "$TMUX" && test "$CALLER_TARGET" = "$user_session"; then
 fi
 
 # » asciinema rec                                                              
-# asciinema: recording asciicast to /tmp/tmp14j2x_vp-ascii.cast                
+# asciinema: recording asciicast to $TMPDIR$TMPDIR14j2x_vp-ascii.cast                
 # asciinema: press <ctrl-d> or type "exit" when you're done                    
 # »                                                                            
 # »                                                                            
 # asciinema: recording finished                                                
 # asciinema: press <enter> to upload to asciinema.org, <ctrl-c> to save locally
-# asciinema: asciicast saved to /tmp/tmp14j2x_vp-ascii.cast                    
+# asciinema: asciicast saved to $TMPDIR$TMPDIR14j2x_vp-ascii.cast                    
 # »                                                                            
 
 # This script most likely works already.
