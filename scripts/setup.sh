@@ -13,7 +13,16 @@ apt-file update
 export SSH_HOST_ALLOWED=n
 
 export DUMP=/root/dump
-export EMACSD=$HOME/.emacs.d
+
+unset EMACSD_BUILTIN
+test -d "/root/.emacs.d" && : "${EMACSD_BUILTIN:="/root/.emacs.d"}"
+export EMACSD_BUILTIN
+
+unset EMACSD
+test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
+test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
+export EMACSD
+
 mkdir -p "$EMACSD"
 mkdir -p "$HOME/dump"
 mkdir -p "$HOME/repos"

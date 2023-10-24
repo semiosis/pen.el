@@ -230,7 +230,7 @@ if is_tty && ! test "$NOEMACS" = y; then
         sp -cip bible-open =nil =nil "$module"
     fi
 else
-    assignments="$(printf -- "%s\n" "$pipeline" | cif getvars -eval-pp)"
+    assignments="$(printf -- "%s\n" "$pipeline" | getvars -eval-pp)"
     assignments="$(eval "$assignments" | s join " ")"
     export -f doublespacemax
     output="$(ocif bash -c "$assignments $pipeline")"

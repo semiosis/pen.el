@@ -28,7 +28,15 @@ export SCRIPTS=$HOME/scripts
 export SCRIPTS=/root/.emacs.d/host/pen.el/scripts
 export PEN=/root/.pen
 
-export EMACSD=/root/.emacs.d
+unset EMACSD_BUILTIN
+test -d "/root/.emacs.d" && : "${EMACSD_BUILTIN:="/root/.emacs.d"}"
+export EMACSD_BUILTIN
+
+unset EMACSD
+test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
+test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
+export EMACSD
+
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$EMACSD/host/pen.el/scripts-host:$EMACSD/pen.el/scripts-host:$PATH
 export PATH=$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts:$PATH

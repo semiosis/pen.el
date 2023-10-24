@@ -10,7 +10,16 @@ export PENCONF="$HOME/.pen"
 export DUMP="$HOME/dump"
 export REPOS="$HOME/repos"
 export NOTES="/root/notes"
-export EMACSD="/root/.emacs.d"
+
+unset EMACSD_BUILTIN
+test -d "/root/.emacs.d" && : "${EMACSD_BUILTIN:="/root/.emacs.d"}"
+export EMACSD_BUILTIN
+
+unset EMACSD
+test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
+test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
+export EMACSD
+
 export GOPATH="$HOME/go"
 export GOBIN="$HOME/go/bin"
 export TMPDIR="/tmp"
@@ -32,6 +41,7 @@ unminimise() {
                  -e "s#\$NOTES#${NOTES}#g" \
                  -e "s#\$PROMPTS#${PROMPTS}#g" \
                  -e "s#\$EMACSD#${EMACSD}#g" \
+                 -e "s#\$EMACSD_BUILTIN#${EMACSD_BUILTIN}#g" \
                  -e "s#\$TMP#${TMP}#g" \
                  -e "s#\$HOME#${HOME}#g" \
                  -e "s#\$PENELD#${PENELD}#g" \
@@ -64,6 +74,7 @@ minimise() {
                  -e "s#${DUMP}#\$DUMP#g" \
                  -e "s#${PROMPTS}#\$PROMPTS#g" \
                  -e "s#${EMACSD}#\$EMACSD#g" \
+                 -e "s#${EMACSD_BUILTIN}#\$EMACSD_BUILTIN#g" \
                  -e "s#${TMP}#\$TMP#g" \
                  -e "s#${PEN_SCRIPTS}#\$PEN_SCRIPTS#g" \
                  -e "s#${GOPATH%%:*}#\${GOPATH%%:\*}#g" \

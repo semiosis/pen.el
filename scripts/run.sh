@@ -155,7 +155,21 @@ export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 
 export TERM=screen-256color
-export EMACSD=/root/.emacs.d
+
+unset EMACSD_BUILTIN
+test -d "/root/.emacs.d" && : "${EMACSD_BUILTIN:="/root/.emacs.d"}"
+export EMACSD_BUILTIN
+
+unset EMACSD
+test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
+test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
+export EMACSD
+
+unset VIMCONFIG
+test -d "/root/.vim/host" && : "${VIMCONFIG:="/root/.vim/host"}"
+test -d "/root/.vim" && : "${VIMCONFIG:="/root/.vim"}"
+export VIMCONFIG
+
 export YAMLMOD_PATH=$EMACSD/emacs-yamlmod
 export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
 export PATH=$PATH:$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container

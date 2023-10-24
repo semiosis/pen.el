@@ -337,3 +337,4 @@ $HOME/.config/cli-chess/custom_style.py
 $HOME/.config/cli-chess/config.ini
 $HOME/.config/litecli/config
 $HOME/.config/irust/config.toml
+$EMACSD/host/pen.el/config/vim-bundles/vim-snippets/snippets/sh.snippets
