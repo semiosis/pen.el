@@ -19,6 +19,15 @@ stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
 }
 
+is_tty
+istty="$?"
+
+stdin_exists
+hasstdin="$?"
+
+is_stdout_pipe
+ispipe="$?"
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -tout) {
@@ -31,12 +40,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 # These checks appear to have done the job regarding fork bombs
-if ! is_tty && ! test "$force_tty_out" = y; then
+if { ! test "$istty" = 0; } && { ! test "$force_tty_out" = y; }; then
     cat
     exit $?
 fi
 
-if ! stdin_exists; then
+if ! test "$hasstdin" = 0; then
+    echo "pa does not have stdin" | hls red 1>&2
     exit 1
 fi
 
@@ -65,6 +75,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -l) {
         PEN_PAGER="tless +F -S"
+        shift
+    }
+    ;;
+
+    -tf) {
+        open_as_file=y
         shift
     }
     ;;
@@ -134,16 +150,33 @@ test "$#" -gt 0 && last_arg="${@: -1}"
 : ${defaultcommand:="$last_arg"}
 : ${defaultcommand:="cat"}
 
+open_fp() {
+    fp="$1"
+    shift
+
+    CMD="$(cmd "$@")"
+    if test "$open_as_file" = "y"; then
+        # etty
+        exec <&1
+
+        # in-tty -E "${PEN_PAGER} ${CMD} \"$inputfp\""
+
+        eval "${PEN_PAGER} ${CMD} \"$inputfp\""
+    else
+        cat "$inputfp" | eval "${PEN_PAGER} ${CMD}"
+    fi
+}
+
 pager() {
-    if is_stdout_pipe; then
+    if test "$ispipe" = 0; then
         cat
-    elif { is_tty || test "$force_tty_out" = y; } && stdin_exists; then
+    elif { test "$istty" = 0 || test "$force_tty_out" = y; } && test "$hasstdin" = 0; then
         inputfp="$(pen-tf pager txt)"
         if test -s "$inputfp"; then
             if test -n "$pattern"; then
-                cat "$inputfp" | eval "$PEN_PAGER" +/"$pattern"
+                open_fp "$inputfp" +/"$pattern"
             else
-                cat "$inputfp" | eval "$PEN_PAGER"
+                open_fp "$inputfp"
             fi
         fi
     else

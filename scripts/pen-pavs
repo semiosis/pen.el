@@ -1,26 +1,28 @@
 #!/bin/bash
 export TTY
 
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+# is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+# 
+# is_stdout_pipe() {
+#     # If stout is a pipe
+#     [[ -p /dev/stdout ]]
+# }
+# is_tty
+# istty="$?"
+# 
+# is_stdout_pipe
+# ispipe="$?"
+# 
+# # This needs engineering - it's not finished
+# if test "$istty" = 0 && ! test "$ispipe" = 0; then
+#     v
+# 
+# # # This is dodgy because vipe may spawn eipe
+# # elif test "$istty" = 0 && test "$ispipe" = 0; then
+# #     exec 2>&1;
+# #     vipe
+# else
+#     cat
+# fi
 
-is_stdout_pipe() {
-    # If stout is a pipe
-    [[ -p /dev/stdout ]]
-}
-is_tty
-istty="$?"
-
-is_stdout_pipe
-ispipe="$?"
-
-# This needs engineering - it's not finished
-if test "$istty" = 0 && ! test "$ispipe" = 0; then
-    v
-
-# # This is dodgy because vipe may spawn eipe
-# elif test "$istty" = 0 && test "$ispipe" = 0; then
-#     exec 2>&1;
-#     vipe
-else
-    cat
-fi
+pen-pa -E vs "$@"
