@@ -1205,9 +1205,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           :height_pc 20)))
 
 (defun tpop-fit-vim-string (s)
-  (let ((nlines (snc "wc -l" s)))
+  (let* ((nlines (snc "wc -l" s))
+         (lines (string2list s))
+         (first_line (car lines))
+         (slug (slugify first_line)))
     (tpop
-     "pa -E \"tf -sha txt | xa colvs -nls -num\""
+     (concat "pa -E \"tf -sha -X " slug " txt | xa colvs -nls -num\"")
      s
      :x_pos "M+1"
      :y_pos "M+1"
