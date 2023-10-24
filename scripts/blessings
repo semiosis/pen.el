@@ -1,8 +1,17 @@
 #!/bin/bash
 export TTY
 
-cat $PENCONF/documents/notes/ws/lists/peniel/promises.org | awk1 | while read line; do
-    odn scope.sh "$line" | awk 1
-done | scrape-bible-references -v | {
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+IFS= read -r -d '' script <<HEREDOC
+cat \$PENCONF/documents/notes/ws/lists/peniel/promises.org | awk1 | while read line; do
+    odn scope.sh "\$line" | awk 1
+done | cif scrape-bible-references -v | {
     sed "/Exodus 5:6-8/d" ` # Remove some passages from the website which are extraneous `
-} | bible-show-verses "$@" | pavs
+} | cif bible-show-verses $CMD
+HEREDOC
+
+# eval "$script" | pavs
+# printf -- "%s\n" "$script" | pavs
+ocif eval "$script" | pavs
