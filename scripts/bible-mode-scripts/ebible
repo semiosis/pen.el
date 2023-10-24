@@ -20,16 +20,19 @@ else
 fi
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
-is_stdout_pipe() { [[ -p /dev/stdout ]]; }
+istty="$?"
 
-if ! { is_tty || is_stdout_pipe; }; then
+is_stdout_pipe() { [[ -p /dev/stdout ]]; }
+isstdoutpipe="$?"
+
+if { ! test "$istty" = 0; } && { ! test "$isstdoutpipe" = 0; }; then
     # e.g. (pen-snc "1John")
     in-pen unbuffer xt in-tm "$sn" "$@" & disown
     exit "$?"
 fi
 
 if ! inside-docker-p && docker-running-p; then
-    if is_tty; then
+    if test "$istty" = 0; then
         in-pen in-tm "$sn" "$@"
     else
         in-pen "$sn" "$@"

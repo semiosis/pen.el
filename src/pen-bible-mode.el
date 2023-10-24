@@ -1204,6 +1204,19 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           :width_pc 50
           :height_pc 20)))
 
+(defun tpop-fit-vim-string (s)
+  (let ((nlines (snc "wc -l" s)))
+    (tpop
+     "pa -E \"tf -sha txt | xa colvs -nls -num\""
+     s
+     :x_pos "M+1"
+     :y_pos "M+1"
+     :bg 233
+     :width_pc 55
+     :height_pc (+ 4 (string-to-int nlines))
+     ;; 20
+     :style "heavy")))
+
 (defun bible-mode-tpop ()
   (interactive)
   (let* ((concordance_arg
@@ -1216,18 +1229,24 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                    bible-mode-word-study-enabled)
                   "-ca"
                 "-c"))))
-         (current-prefix-arg nil))
+         (current-prefix-arg nil)
+         (s (snc (cmd "nem" "fast" "ebible"
+                      concordance_arg
+                      "-m" bible-mode-book-module (bible-mode-copy-link)))))
+
+    (tpop-fit-vim-string s)
   
-    (tpop (cmd "nem" "fast" "ebible"
-               concordance_arg
-               "-m" bible-mode-book-module (bible-mode-copy-link))
-          nil
-          :x_pos "M+1"
-          :y_pos "M+1"
-          :bg 233
-          :width_pc 55
-          :height_pc 20
-          :style "heavy")))
+    ;; (tpop (cmd "nem" "fast" "ebible"
+    ;;            concordance_arg
+    ;;            "-m" bible-mode-book-module (bible-mode-copy-link))
+    ;;       nil
+    ;;       :x_pos "M+1"
+    ;;       :y_pos "M+1"
+    ;;       :bg 233
+    ;;       :width_pc 55
+    ;;       :height_pc 20
+    ;;       :style "heavy")
+    ))
 
 (defun bible-mode-show-definition ()
   (interactive)
