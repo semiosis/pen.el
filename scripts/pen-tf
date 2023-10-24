@@ -17,6 +17,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -sha) {
+        use_sha_fn=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -41,10 +47,15 @@ fp="$(mktemp -t "tf_${name}XXXXXXX${extraslug}.${ext}" 2>/dev/null || :)"
 
 if stdin_exists; then
     cat > "$fp"
-    fp_sha="$(0</dev/null sha "$fp")"
-    fp_sha="/tmp/tf_${name}_${fp_sha}${extraslug}.${ext}"
-    mv "$fp" "$fp_sha"
-    fp="$fp_sha"
+    if test "$use_sha_fn" = "y"; then
+        # idempotent fn
+        fp_sha="$(0</dev/null cat "$fp" | sha)"
+        fp_sha="/tmp/tf_${name}_${fp_sha}${extraslug}.${ext}"
+        mv "$fp" "$fp_sha"
+        fp="$fp_sha"
+    else
+        :
+    fi
 fi
 
 echo "$fp"

@@ -16,7 +16,7 @@ hasstdin="$?"
 if test "$hasstdin" = 0; then
     export USING_STDIN=y
 
-    tf_thing="$(0</dev/null pen-tf thing || echo /dev/null)"
+    tf_thing="$(0</dev/null pen-tf -sha thing || echo /dev/null)"
     # This chomp prevents hangs when piping a single space into a prompt function
     cat | sed -z 's/^\s*$//' > "$tf_thing"
     sha="$(sha1sum "$tf_thing" | awk '{print $1}')"
@@ -119,20 +119,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-# output cat
-o_cat() {
-    if test "$output_tf" = "y"; then
-        :
-    else
-        command cat "$@"
-    fi
-}
-
-# output tee
-o_tee() {
-    command tee "$@"
-}
-
+test "$#" -gt 0 || { echo "ci: no command" | hls red 1>&2; exit 1; }
 
 getpwd() {
     test "$IGNORE_DIR" = "y" || pwd
@@ -148,6 +135,34 @@ wdmd5="_$(printf -- "%s\n" "$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1)"
 # This must come after the initial arguments
 cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha.txt"
 # echo "$cache_file_path" 1>&2
+
+# output cat
+o_cat() {
+    local o_cat_last_arg=
+    test "$#" -gt 0 && o_cat_last_arg="${@: -1}"
+
+    if test "$output_tf" = "y" && { ! stdin_exists; } && test -f "$o_cat_last_arg"; then
+        printf -- "%s" "$o_cat_last_arg"
+    else
+        command cat "$@"
+    fi
+}
+
+# output tee
+o_tee() {
+    local o_cat_last_arg=
+    test "$#" -gt 0 && o_cat_last_arg="${@: -1}"
+
+    # stdin always exists
+
+    if test "$output_tf" = "y" && ! test -f "$o_cat_last_arg"; then
+        # stdin goes into tee
+        command tee "$@" &>/dev/null
+        printf -- "%s\n" "$o_cat_last_arg"
+    else
+        command tee "$@"
+    fi
+}
 
 if test "$CI_VERBOSE" = "y"; then
     {
@@ -171,7 +186,7 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
     if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && test "$(age "$cache_file_path")" -lt "$RETRY_TIMEOUT"; then
         exit 0
     elif test -f "$cache_file_path" && test -s "$cache_file_path" && ! test "$UPDATE" = y; then
-        o_cat "$cache_file_path"
+        0</dev/null o_cat "$cache_file_path"
     else
         rm -f "$cache_file_path"
         if test "$asynchronous" = "y"; then
@@ -191,13 +206,14 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
             fi
         else
             if test "$USING_STDIN" = y; then
-                cat $tf_thing | eval "$CMD" | tee "$cache_file_path"
+                cat $tf_thing | eval "$CMD" | o_tee "$cache_file_path"
             else
-                eval "$CMD" | tee "$cache_file_path"
+                eval "$CMD" | o_tee "$cache_file_path"
             fi
         fi
     fi
 else
+    # Not caching
     if test "$USING_STDIN" = y; then
         cat $tf_thing | eval "$CMD"
     else
