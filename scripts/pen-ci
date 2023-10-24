@@ -1,5 +1,8 @@
 #!/bin/bash
 
+: "${TMPDIR:="/root/.pen/tmp"}"
+: "${TMPDIR:="/tmp"}"
+
 stdin_exists() {
     {
     ! [ -t 0 ] && \
@@ -133,7 +136,7 @@ wdmd5="_$(printf -- "%s\n" "$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1)"
 : "${CMD:="$(cmd "$@")"}"
 
 # This must come after the initial arguments
-cache_file_path="/tmp/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha.txt"
+cache_file_path="$TMPDIR/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha.txt"
 # echo "$cache_file_path" 1>&2
 
 # CMD="notty $CMD"
@@ -197,7 +200,7 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
             if test "$USING_STDIN" = y; then
                 # date
                 # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path"
-                # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path" >> /tmp/lsp2.log
+                # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path" >> $TMPDIR/lsp2.log
 
                 # Both nohup and & are necessary
                 # nohup sh -c "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
