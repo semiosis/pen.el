@@ -19,10 +19,8 @@ hasstdin="$?"
 if test "$hasstdin" = 0; then
     export USING_STDIN=y
 
-    tf_thing="$(0</dev/null pen-tf -sha thing || echo /dev/null)"
-    # This chomp prevents hangs when piping a single space into a prompt function
-    cat | sed -z 's/^\s*$//' > "$tf_thing"
-    sha="$(sha1sum "$tf_thing" | awk '{print $1}')"
+    tf_stdin="$(cat | sed -z 's/^\s*$//' | pen-tf -sha pen-tf-stdin-sha.txt)"
+    sha="$(sha1sum "$tf_stdin" | awk '{print $1}')"
 fi
 
 : ${RETRY_TIMEOUT:="15"} # 15 seconds
@@ -203,15 +201,15 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
 
             if test "$USING_STDIN" = y; then
                 # Both nohup and & are necessary
-                # nohup sh -c "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
+                # nohup sh -c "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
 
-                nohup tmux neww -n running-pen-ci -d "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
+                nohup tmux neww -n running-pen-ci -d "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
             else
                 eval "$CMD" > "$cache_file_path" &
             fi
         else
             if test "$USING_STDIN" = y; then
-                cat $tf_thing | eval "$CMD" | o_tee "$cache_file_path"
+                cat $tf_stdin | eval "$CMD" | o_tee "$cache_file_path"
             else
                 eval "$CMD" | o_tee "$cache_file_path"
             fi
@@ -220,7 +218,7 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
 else
     # Not caching
     if test "$USING_STDIN" = y; then
-        cat $tf_thing | eval "$CMD"
+        cat $tf_stdin | eval "$CMD"
     else
         eval "$CMD"
     fi
