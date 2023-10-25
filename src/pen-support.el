@@ -715,7 +715,7 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 (defun shell-command-sentinel (process signal)
   (when (memq (process-status process) '(exit signal))))
 
-(defun eslugify (title)
+(defun eslugify (title &optional joinlines length)
   "Return the slug of NODE."
   (let ((slug-trim-chars '(;; Combining Diacritical Marks https://www.unicode.org/charts/PDF/U0300.pdf
                            768 ; U+0300 COMBINING GRAVE ACCENT
@@ -751,8 +751,13 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
                       ("--*" . "-")                   ;; remove sequential dashes
                       ("^_" . "")                     ;; remove starting underscore
                       ("_$" . "")))                   ;; remove ending underscore
-             (slug (-reduce-from #'cl-replace (strip-nonspacing-marks title) pairs)))
-        (downcase slug)))))
+             (slug (-reduce-from #'cl-replace (strip-nonspacing-marks title) pairs))
+             (slug (downcase slug))
+             (slug (if length
+                      (substring slug 0 (- length 1))
+                      slug)))
+        slug)
+      )))
 
 (defalias 'slugify 'eslugify)
 
