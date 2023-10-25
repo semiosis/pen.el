@@ -681,8 +681,8 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 
     (if b_output
         (if stdin
-            (setq final_cmd (concat "pen-tm -f -s -sout " session-dir-cmd " > " tf))
-          (setq final_cmd (concat "unbuffer pen-tm -f -fout " session-dir-cmd " > " tf)))
+            (setq final_cmd (concat "pen-tm -f -s -sout " session-dir-cmd " > " tf_output))
+          (setq final_cmd (concat "unbuffer pen-tm -f -fout " session-dir-cmd " > " tf_output)))
       (if stdin
           (if b_wait
               (setq final_cmd (concat "pen-tm -f -S -tout -w " session-dir-cmd))
@@ -700,7 +700,7 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 
     (if b_output
         (progn
-          (setq output (slurp-file tf))
+          (setq output (slurp-file tf_output))
           output))))
 
 (cl-defun cl-sh (&optional cmd &key stdin &key b_output &key tm_session &key shell &key b_switch_to &key tm_wincmd &key dir &key b_wait)
@@ -715,6 +715,7 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 (defun shell-command-sentinel (process signal)
   (when (memq (process-status process) '(exit signal))))
 
+;; I think this always assumes output
 (defun pen-sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
 This appears to strip ansi codes.
@@ -723,8 +724,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (interactive)
 
   (let ((output)
-        (tf)
-        (input_tf))
+        (tf_output)
+        (tf_input))
     (if (not shell-cmd)
         (setq shell-cmd "false"))
 
@@ -754,7 +755,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
       (setq shell-cmd (concat ". $HOME/.shellrc; " shell-cmd))
 
-      (setq tf (make-temp-file "elisp_bash"))
+      (setq tf_output (make-temp-file "elisp_bash_output"))
       (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
 
       (let ((exps
@@ -777,19 +778,19 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
         (if (and detach
                  stdin)
             (progn
-              (setq input_tf (make-temp-file "elisp_bash_input"))
-              (write-to-file stdin input_tf)
-              (setq shell-cmd (concat "exec < <(cat " (pen-q input_tf) "); " shell-cmd))))
+              (setq tf_input (make-temp-file "elisp_bash_input"))
+              (write-to-file stdin tf_input)
+              (setq shell-cmd (concat "exec < <(cat " (pen-q tf_input) "); " shell-cmd))))
 
         (if (not (string-match "[&;]$" shell-cmd))
             (setq shell-cmd (concat shell-cmd ";")))
 
         (if (and detach
                  stdin)
-            (setq final_cmd (concat final_cmd " rm -f " (pen-q input_tf) ";")))
+            (setq final_cmd (concat final_cmd " rm -f " (pen-q tf_input) ";")))
 
         ;; I need a log level here. This will be too verbose
-        (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " tf)))
+        (setq final_cmd (concat exps "; ( cd " (pen-q dir) "; " shell-cmd " echo -n $? > " tf_exit_code " ) > " tf_output)))
 
       (if detach
           (if stdin
@@ -808,7 +809,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
       (if detach
           t
         (progn
-          (setq output (slurp-file tf))
+          (setq output (slurp-file tf_output))
           (if chomp
               (setq output (chomp output)))
           (progn
@@ -816,9 +817,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
           (if b_output-return-code
               (setq output (str b_exit_code)))
-          (ignore-errors
-            (progn (f-delete tf)
-                   (f-delete tf_exit_code)))
+          ;; deleting the temp files needs to happen inside the actual CMD
+          (progn (ignore-errors (f-delete tf_input))
+                 (ignore-errors (f-delete tf_output))
+                 (ignore-errors (f-delete tf_exit_code)))
           output)))))
 
 (cl-defun pen-cl-sn (shell-cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)

@@ -136,7 +136,9 @@ wdmd5="_$(printf -- "%s\n" "$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1)"
 : "${CMD:="$(cmd "$@")"}"
 
 # This must come after the initial arguments
-cache_file_path="$TMPDIR/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha.txt"
+cache_file_path_mant="$TMPDIR/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha"
+cache_file_path="${cache_file_path_mant}.txt"
+cache_file_path_exitcode="${cache_file_path_mant}.code"
 # echo "$cache_file_path" 1>&2
 
 # CMD="notty $CMD"
@@ -187,6 +189,8 @@ age() {
     fi
 }
 
+CMD="$CMD; echo \"\$?\" > \"\$cache_file_path_exitcode\""
+
 if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
     if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && test "$(age "$cache_file_path")" -lt "$RETRY_TIMEOUT"; then
         exit 0
@@ -198,14 +202,10 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
             # TODO Put a delay before this is allowed to run again
 
             if test "$USING_STDIN" = y; then
-                # date
-                # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path"
-                # cmd1 sh -c "cat $tf_thing | $CMD > $cache_file_path" >> $TMPDIR/lsp2.log
-
                 # Both nohup and & are necessary
                 # nohup sh -c "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
 
-                nohup tmux neww -n pen-ci -d "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
+                nohup tmux neww -n running-pen-ci -d "cat $tf_thing | $CMD > $cache_file_path" 2>/dev/null &
             else
                 eval "$CMD" > "$cache_file_path" &
             fi
@@ -224,4 +224,9 @@ else
     else
         eval "$CMD"
     fi
+fi
+
+exit_code="$(cat "$cache_file_path_exitcode")"
+if test -n "$exit_code"; then
+    exit "$exit_code"
 fi
