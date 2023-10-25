@@ -8,7 +8,7 @@
 (package-install 'quelpa-use-package)
 (require 'quelpa-use-package)
 
-(package-refresh-contents)
+;; (package-refresh-contents)
 (use-package dogears
   :ensure t
 
