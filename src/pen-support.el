@@ -715,6 +715,44 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 (defun shell-command-sentinel (process signal)
   (when (memq (process-status process) '(exit signal))))
 
+(defun eslugify (title)
+  "Return the slug of NODE."
+  (let ((slug-trim-chars '(;; Combining Diacritical Marks https://www.unicode.org/charts/PDF/U0300.pdf
+                           768 ; U+0300 COMBINING GRAVE ACCENT
+                           769 ; U+0301 COMBINING ACUTE ACCENT
+                           770 ; U+0302 COMBINING CIRCUMFLEX ACCENT
+                           771 ; U+0303 COMBINING TILDE
+                           772 ; U+0304 COMBINING MACRON
+                           774 ; U+0306 COMBINING BREVE
+                           775 ; U+0307 COMBINING DOT ABOVE
+                           776 ; U+0308 COMBINING DIAERESIS
+                           777 ; U+0309 COMBINING HOOK ABOVE
+                           778 ; U+030A COMBINING RING ABOVE
+                           779 ; U+030B COMBINING DOUBLE ACUTE ACCENT
+                           780 ; U+030C COMBINING CARON
+                           795 ; U+031B COMBINING HORN
+                           803 ; U+0323 COMBINING DOT BELOW
+                           804 ; U+0324 COMBINING DIAERESIS BELOW
+                           805 ; U+0325 COMBINING RING BELOW
+                           807 ; U+0327 COMBINING CEDILLA
+                           813 ; U+032D COMBINING CIRCUMFLEX ACCENT BELOW
+                           814 ; U+032E COMBINING BREVE BELOW
+                           816 ; U+0330 COMBINING TILDE BELOW
+                           817 ; U+0331 COMBINING MACRON BELOW
+                           )))
+    (cl-flet* ((nonspacing-mark-p (char) (memq char slug-trim-chars))
+               (strip-nonspacing-marks (s) (string-glyph-compose
+                                            (apply #'string
+                                                   (seq-remove #'nonspacing-mark-p
+                                                               (string-glyph-decompose s)))))
+               (cl-replace (title pair) (replace-regexp-in-string (car pair) (cdr pair) title)))
+      (let* ((pairs `(("[^[:alnum:][:digit:]]" . "_") ;; convert anything not alphanumeric
+                      ("__*" . "_")                   ;; remove sequential underscores
+                      ("^_" . "")                     ;; remove starting underscore
+                      ("_$" . "")))                   ;; remove ending underscore
+             (slug (-reduce-from #'cl-replace (strip-nonspacing-marks title) pairs)))
+        (downcase slug)))))
+
 ;; I think this always assumes output
 (defun pen-sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
   "Runs command in shell and return the result.
@@ -725,7 +763,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
   (let ((output)
         (tf_output)
-        (tf_input))
+        (tf_input)
+        (slug (eslugify (concat "elisp_bash_" shell-cmd " detach:" (str detach)))))
     (if (not shell-cmd)
         (setq shell-cmd "false"))
 
@@ -755,8 +794,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
       (setq shell-cmd (concat ". $HOME/.shellrc; " shell-cmd))
 
-      (setq tf_output (make-temp-file "elisp_bash_output"))
-      (setq tf_exit_code (make-temp-file "elisp_bash_exit_code"))
+      (setq tf_output (make-temp-file (concat slug "_output_") nil ".txt"))
+      (setq tf_exit_code (make-temp-file (concat slug "_exit_code_") nil ".txt"))
 
       (let ((exps
              (sh-construct-exports
@@ -778,8 +817,8 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
         (if (and detach
                  stdin)
             (progn
-              (setq tf_input (make-temp-file "elisp_bash_input"))
-              (write-to-file stdin tf_input)
+              (setq tf_input (make-temp-file (concat slug "_input_") nil ".txt"))
+              (shut-up-c (write-to-file stdin tf_input))
               (setq shell-cmd (concat "exec < <(cat " (pen-q tf_input) "); " shell-cmd))))
 
         (if (not (string-match "[&;]$" shell-cmd))
